@@ -344,7 +344,7 @@ export default function HomePage() {
               </p>
               <p className="mt-6 text-sm text-[var(--muted)]">All initial conversations are confidential and carry no obligation.</p>
             </div>
-            <div className="card-flat p-5 sm:p-8">
+            <div className="card-flat p-6 sm:p-8 lg:p-10">
               <LeadForm submitLabel="Send enquiry" />
             </div>
           </div>

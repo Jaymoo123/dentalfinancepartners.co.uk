@@ -15,13 +15,13 @@ export default function ContactPage() {
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
         New enquiries by form, phone, or email. We aim to reply within one working day.
       </p>
-      <div className="mt-8 grid gap-6 lg:grid-cols-2 lg:gap-8">
-        <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 sm:p-6">
+      <div className="mt-10 grid gap-8 sm:mt-12 lg:grid-cols-[1fr_1.5fr] lg:gap-10 xl:gap-12">
+        <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
           <h2 className="font-serif text-lg font-semibold text-[var(--ink)]">Direct details</h2>
-          <dl className="mt-4 space-y-4 text-sm">
+          <dl className="mt-6 space-y-5 text-sm">
             <div>
               <dt className="font-medium text-[var(--ink)]">Email</dt>
-              <dd className="mt-1">
+              <dd className="mt-2">
                 <a
                   className={`inline-flex min-h-10 items-center text-[var(--accent-strong)] underline ${focusRing} rounded`}
                   href={`mailto:${siteConfig.contact.email}`}
@@ -32,7 +32,7 @@ export default function ContactPage() {
             </div>
             <div>
               <dt className="font-medium text-[var(--ink)]">Phone</dt>
-              <dd className="mt-1">
+              <dd className="mt-2">
                 <a
                   className={`inline-flex min-h-10 items-center text-[var(--accent-strong)] underline ${focusRing} rounded`}
                   href={`tel:${siteConfig.contact.phone.replace(/\s/g, "")}`}
@@ -43,7 +43,7 @@ export default function ContactPage() {
             </div>
           </dl>
         </div>
-        <div className="rounded-2xl border border-[var(--border)] bg-[var(--background)] p-4 sm:p-6">
+        <div className="rounded-2xl border border-[var(--border)] bg-[var(--background)] p-6 sm:p-8">
           <LeadForm redirectOnSuccess submitLabel="Send enquiry" />
         </div>
       </div>

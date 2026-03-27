@@ -139,7 +139,7 @@ export function LeadForm({
   return (
     <form
       onSubmit={onSubmit}
-      className="space-y-5"
+      className="space-y-6"
       noValidate
       aria-busy={status === "loading" ? "true" : "false"}
     >
