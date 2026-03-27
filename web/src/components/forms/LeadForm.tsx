@@ -40,10 +40,8 @@ export function LeadForm({
     }
   }, []);
 
-  const endpoint =
-    typeof process !== "undefined"
-      ? process.env.NEXT_PUBLIC_GOOGLE_APPS_SCRIPT_URL
-      : undefined;
+  const supabaseUrl = typeof process !== "undefined" ? process.env.NEXT_PUBLIC_SUPABASE_URL : undefined;
+  const supabaseKey = typeof process !== "undefined" ? process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY : undefined;
 
   const validate = useCallback((data: FormData) => {
     const errs: Record<string, string> = {};
@@ -81,7 +79,7 @@ export function LeadForm({
     setFieldErrors(errs);
     if (Object.keys(errs).length > 0) return;
 
-    if (!endpoint) {
+    if (!supabaseUrl || !supabaseKey) {
       setStatus("error");
       setErrorMessage(
         "This form is not connected yet. Email us using the address on this page — we will pick it up the same day.",
@@ -91,21 +89,25 @@ export function LeadForm({
 
     setStatus("loading");
     const payload = {
-      fullName: String(data.get("fullName") || "").trim(),
+      full_name: String(data.get("fullName") || "").trim(),
       email: String(data.get("email") || "").trim(),
       phone: String(data.get("phone") || "").trim(),
       role: String(data.get("role") || "").trim(),
-      practiceName: String(data.get("practiceName") || "").trim() || "—",
+      practice_name: String(data.get("practiceName") || "").trim() || "—",
       message: String(data.get("message") || "").trim(),
-      sourceUrl: sourceUrl || String(data.get("sourceUrl") || "").trim(),
-      submittedAt: new Date().toISOString(),
+      source_url: sourceUrl || String(data.get("sourceUrl") || "").trim(),
+      submitted_at: new Date().toISOString(),
     };
 
     try {
-      const res = await fetch(endpoint, {
+      const res = await fetch(`${supabaseUrl}/rest/v1/leads`, {
         method: "POST",
-        mode: "cors",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "apikey": supabaseKey,
+          "Authorization": `Bearer ${supabaseKey}`,
+          "Prefer": "return=minimal"
+        },
         body: JSON.stringify(payload),
       });
 
@@ -115,8 +117,7 @@ export function LeadForm({
         throw new Error(`Request failed (${res.status})`);
       }
 
-      const result = await res.json().catch(() => ({}));
-      console.log("Form submission success:", result);
+      console.log("Form submission success");
 
       setStatus("success");
       form.reset();
