@@ -110,17 +110,26 @@ export function LeadForm({
       });
 
       if (!res.ok) {
+        const errorText = await res.text().catch(() => "");
+        console.error("Form submission failed:", res.status, errorText);
         throw new Error(`Request failed (${res.status})`);
       }
+
+      const result = await res.json().catch(() => ({}));
+      console.log("Form submission success:", result);
 
       setStatus("success");
       form.reset();
       if (redirectOnSuccess) {
         router.push("/thank-you");
       }
-    } catch {
+    } catch (err) {
+      console.error("Form submission error:", err);
       setStatus("error");
-      setErrorMessage("That did not go through. Try again, or email us — either works.");
+      const errMsg = err instanceof Error ? err.message : String(err);
+      setErrorMessage(
+        `That did not go through (${errMsg}). Try again, or email us — either works.`
+      );
     }
   }
 
