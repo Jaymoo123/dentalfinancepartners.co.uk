@@ -17,7 +17,7 @@ Your blog generation system is **fully configured and working**.
 
 ```bash
 cd "c:\Users\user\Documents\Accounting\BA NEXT JS SITE"
-$env:ANTHROPIC_API_KEY="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"
+$env:ANTHROPIC_API_KEY="your-anthropic-api-key-here"
 python generate_blog_supabase.py
 ```
 

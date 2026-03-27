@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { BlogPost } from "@/types/blog";
 import { CTASection } from "@/components/ui/CTASection";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { buildBlogPostingJsonLd } from "@/lib/schema";
 import { contentNarrow, focusRing } from "@/components/ui/layout-utils";
 
@@ -75,13 +76,16 @@ export function BlogPostRenderer({ post, related = [] }: BlogPostRendererProps) 
         </section>
       ) : null}
 
-      <div className="mt-6">
-        <CTASection
-          title="Want a dental-specific view of your numbers?"
-          description="We help UK practice owners and associates align tax, accounts, and profit extraction with how dentistry actually works."
-          primaryHref="/contact"
-          secondaryHref="/services"
-        />
+      <div className="mt-12 rounded-2xl border border-[var(--border)] bg-[var(--background)] p-6 sm:p-8">
+        <h2 className="font-serif text-xl font-semibold text-[var(--navy)] sm:text-2xl">
+          Get specialist advice for your situation
+        </h2>
+        <p className="mt-3 text-base leading-relaxed text-[var(--muted)]">
+          Every dental practice is different. If you would like to discuss how this applies to your specific circumstances, fill in the form below and we will arrange a short introductory call.
+        </p>
+        <div className="mt-6">
+          <LeadForm redirectOnSuccess={false} submitLabel="Request a callback" />
+        </div>
       </div>
 
       {related.length > 0 ? (
