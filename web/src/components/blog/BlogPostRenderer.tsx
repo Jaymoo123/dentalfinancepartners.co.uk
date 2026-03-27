@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { BlogPost } from "@/types/blog";
-import { CTASection } from "@/components/ui/CTASection";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { buildBlogPostingJsonLd } from "@/lib/schema";
 import { contentNarrow, focusRing } from "@/components/ui/layout-utils";
