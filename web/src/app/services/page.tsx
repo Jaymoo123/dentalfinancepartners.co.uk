@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CTASection } from "@/components/ui/CTASection";
 import { contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Dental practice accounting services",
@@ -35,6 +36,12 @@ const sections = [
 export default function ServicesPage() {
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
+      <Breadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Services" },
+        ]}
+      />
       <h1 className="font-serif text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
         Services for UK dental practices
       </h1>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CTASection } from "@/components/ui/CTASection";
 import { contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Locations",
@@ -18,6 +19,12 @@ const cityLabel: Record<string, string> = {
 export default function LocationsHubPage() {
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
+      <Breadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Locations" },
+        ]}
+      />
       <h1 className="font-serif text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">Locations</h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
         We work with dental practices across the UK. Start from a local page for context — then get in touch for advice

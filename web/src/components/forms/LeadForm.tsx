@@ -119,6 +119,18 @@ export function LeadForm({
 
       console.log("Form submission success");
 
+      // Track conversion in Google Analytics
+      if (typeof window !== "undefined" && "gtag" in window) {
+        const gtag = (window as { gtag?: (...args: unknown[]) => void }).gtag;
+        if (gtag) {
+          gtag("event", "generate_lead", {
+            event_category: "engagement",
+            event_label: payload.role,
+            value: 1,
+          });
+        }
+      }
+
       setStatus("success");
       form.reset();
       if (redirectOnSuccess) {

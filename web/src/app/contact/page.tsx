@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -11,6 +12,12 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
+      <Breadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Contact" },
+        ]}
+      />
       <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Contact</h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
         New enquiries by form, phone, or email. We aim to reply within one working day.

@@ -118,6 +118,20 @@ def export_to_markdown(fields):
     slug = fields.get("slug", "untitled")
     today = datetime.now().strftime("%Y-%m-%d")
     
+    # Build FAQs array for frontmatter
+    faqs = []
+    for i in range(1, 5):
+        question = fields.get(f'faq{i}', '').strip()
+        answer = fields.get(f'faa{i}', '').strip()
+        if question and answer:
+            # Escape quotes in YAML
+            question_escaped = question.replace('"', '\\"')
+            answer_escaped = answer.replace('"', '\\"')
+            faqs.append(f'  - question: "{question_escaped}"\n    answer: "{answer_escaped}"')
+    
+    faqs_yaml = "\n".join(faqs) if faqs else ""
+    faqs_section = f"faqs:\n{faqs_yaml}" if faqs_yaml else "faqs: []"
+    
     front_matter = f"""---
 title: "{fields.get('name', 'Untitled')}"
 slug: "{slug}"
@@ -132,39 +146,10 @@ h1: "{fields.get('h1', fields.get('name', 'Untitled'))}"
 summary: "{fields.get('3_liner', '')}"
 schema: ""
 canonical: ""
+{faqs_section}
 ---
 
 {fields.get('content', '')}
-
-## Frequently Asked Questions
-
-<details>
-<summary>{fields.get('faq1', 'Question 1')}</summary>
-
-{fields.get('faa1', 'Answer 1')}
-
-</details>
-
-<details>
-<summary>{fields.get('faq2', 'Question 2')}</summary>
-
-{fields.get('faa2', 'Answer 2')}
-
-</details>
-
-<details>
-<summary>{fields.get('faq3', 'Question 3')}</summary>
-
-{fields.get('faa3', 'Answer 3')}
-
-</details>
-
-<details>
-<summary>{fields.get('faq4', 'Question 4')}</summary>
-
-{fields.get('faa4', 'Answer 4')}
-
-</details>
 """
     
     os.makedirs(OUTPUT_MD_DIR, exist_ok=True)

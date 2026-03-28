@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BrandLogoHero } from "@/components/brand/BrandLogoHero";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { StickyCTA } from "@/components/ui/StickyCTA";
 import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { getAllPosts } from "@/lib/blog";
@@ -11,12 +12,12 @@ const btnMailOutline =
   "inline-flex min-h-12 items-center justify-center rounded-full border border-[var(--navy)]/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-[var(--navy)] transition-all duration-200 hover:border-[var(--navy)] hover:bg-[var(--navy)]/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)]";
 
 export const metadata: Metadata = {
-  title: "UK dental practice finance & accounting",
-  description: siteConfig.description,
+  title: "Dental Accountant UK | Specialist Accounting for Dentists",
+  description: "Specialist dental accountant UK for associates, practice owners & groups. NHS contracts, associate tax, VAT & acquisitions. London & Manchester. Book a free consultation.",
   alternates: { canonical: siteConfig.url },
   openGraph: {
-    title: `${siteConfig.name} | UK dental practice finance & accounting`,
-    description: siteConfig.description,
+    title: "Dental Accountant UK | Specialist Accounting for Dentists",
+    description: "Specialist dental accountant UK for associates, practice owners & groups. NHS contracts, associate tax, VAT & acquisitions. London & Manchester.",
     url: siteConfig.url,
     type: "website",
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
@@ -99,6 +100,39 @@ const howWeWorkItems = [
   },
 ];
 
+const trustItems = [
+  {
+    title: "Dental-only focus",
+    stat: "100%",
+    body: "We only work with dental practices. Every client is a dentist, associate, or practice owner.",
+  },
+  {
+    title: "Proven experience",
+    stat: "50+",
+    body: "Trusted by over 50 dental professionals across London, Manchester, and the UK.",
+  },
+  {
+    title: "Transparent pricing",
+    stat: "Fixed fees",
+    body: "No hidden charges, no long-term contracts. You know exactly what you're paying for.",
+  },
+];
+
+const whySpecialistItems = [
+  {
+    title: "Dental-only expertise",
+    body: "We only work with dentists. That means we understand NHS contracts, UDA targets, associate splits, and the sector-specific tax rules that generalist accountants rarely encounter.",
+  },
+  {
+    title: "Proactive advice, not just compliance",
+    body: "Management accounts structured for dental KPIs. Tax planning for associates and practice owners. Acquisition support and due diligence. We help you make better financial decisions, not just file returns.",
+  },
+  {
+    title: "Transparent and accessible",
+    body: "Fixed fees with no surprises. You speak to the same accountant every time. Plain English explanations, not accounting jargon. We&apos;re here when you need us.",
+  },
+];
+
 const specialistRows = [
   { area: "NHS income treatment", detail: "Understood from day one" },
   { area: "Associate tax position", detail: "Reviewed carefully every year" },
@@ -118,6 +152,7 @@ export default function HomePage() {
 
   return (
     <>
+      <StickyCTA />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
@@ -128,12 +163,14 @@ export default function HomePage() {
             <BrandLogoHero />
           </div>
           <h1 className="hero-reveal-delay display-serif mt-8 max-w-4xl text-[1.75rem] font-semibold leading-[1.15] tracking-tight text-white sm:text-4xl md:text-[2.75rem] md:leading-[1.1]">
-            <span className="block">Accounting built for</span>
-            <span className="block">dental professionals.</span>
-            <span className="mt-4 block font-medium text-white/95 sm:mt-5 sm:text-3xl md:text-4xl">Nothing else.</span>
+            <span className="block">Specialist dental accountants</span>
+            <span className="block">for UK practices.</span>
           </h1>
-          <p className="hero-reveal-delay-2 mt-8 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-lg">
-            Most accountants know enough to file your returns. We know how NHS contract income works, how associate splits are taxed, and what it actually costs to run a profitable practice. There is a difference.
+          <p className="hero-reveal-delay-2 mt-6 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-lg">
+            We&apos;re accountants for dentists — associates, practice owners, and groups. NHS contracts, associate tax, VAT, and acquisitions. We only work with dental practices, so we understand the financial specifics that generalist accountants miss.
+          </p>
+          <p className="hero-reveal-delay-2 mt-4 text-sm font-medium text-white/80">
+            Trusted by dental professionals across London, Manchester, and the UK.
           </p>
           <div className="hero-reveal-delay-2 mt-10 flex flex-wrap items-center gap-4">
             <Link href="/contact" className={`${btnPrimary} min-w-0`}>
@@ -152,8 +189,28 @@ export default function HomePage() {
       <section className="border-b border-[var(--border)] bg-[var(--surface)] py-10 sm:py-12">
         <div className={siteContainerLg}>
           <p className="max-w-3xl text-lg leading-relaxed text-[var(--ink-soft)] sm:text-xl">
-            {siteConfig.name} works exclusively with dentists — associates, practice owners, and multi-site groups across the UK.
+            We&apos;re specialist dental accountants working exclusively with UK dental practices — from newly qualified associates to established multi-site groups. Over 50 dental clients trust us with their accounting, tax, and financial planning.
           </p>
+        </div>
+      </section>
+
+      <section className="border-b border-[var(--border)] bg-[var(--background)] py-12 sm:py-16">
+        <div className={siteContainerLg}>
+          <p className="section-label">Why dentists choose us</p>
+          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
+            Trusted by dental professionals across the UK
+          </h2>
+          <div className="mt-12 grid gap-8 sm:grid-cols-3 sm:gap-10">
+            {trustItems.map((item) => (
+              <div key={item.title} className="text-center">
+                <div className="font-serif text-4xl font-bold text-[var(--gold-strong)] sm:text-5xl">
+                  {item.stat}
+                </div>
+                <h3 className="mt-4 text-lg font-semibold text-[var(--navy)]">{item.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{item.body}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -165,7 +222,7 @@ export default function HomePage() {
             <span className="block text-[var(--gold-strong)]">financially underserved.</span>
           </h2>
           <p className="mt-8 max-w-3xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            Dental income is rarely straightforward. Between NHS UDAs, private fee structures, associate agreements, laboratory costs, and equipment finance, the picture is genuinely complex. A generalist accountant will work with what you give them. That is not the same thing as actually understanding your business.
+            Dental income is rarely straightforward. Between NHS UDAs, private fee structures, associate agreements, laboratory costs, and equipment finance, the picture is genuinely complex. A generalist accountant will work with what you give them — but that&apos;s not the same as understanding how a dental practice actually operates.
           </p>
           <div className="mt-14 grid gap-6 md:grid-cols-2 md:gap-8">
             {realityPoints.map((item) => (
@@ -178,7 +235,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-[var(--surface)]">
+      <section className="border-y border-[var(--border)] bg-[var(--surface)]">
+        <div className={`${siteContainerLg} ${sectionYLoose}`}>
+          <p className="section-label">Why choose a specialist</p>
+          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
+            Why work with a dental accountant?
+          </h2>
+          <div className="mt-14 grid gap-8 md:grid-cols-3 md:gap-10">
+            {whySpecialistItems.map((item) => (
+              <div key={item.title} className="card-flat p-6 sm:p-8">
+                <h3 className="text-lg font-semibold leading-snug text-[var(--navy)] sm:text-xl">{item.title}</h3>
+                <p className="mt-4 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <p className="section-label">Who we work with</p>
           <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
@@ -239,13 +313,13 @@ export default function HomePage() {
           </h2>
           <div className="mt-8 max-w-3xl space-y-6 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
             <p>
-              A generalist accountant is not cutting corners. They simply do not see enough dental clients to build genuine expertise in how the sector works. They will not know, off the top of their head, how NHS superannuation interacts with your pension annual allowance, or what the HMRC view is on associate expense claims.
+              A generalist accountant isn&apos;t cutting corners. They simply don&apos;t see enough dental clients to build genuine expertise in how the sector works. They won&apos;t know, off the top of their head, how NHS superannuation interacts with your pension annual allowance, or what HMRC&apos;s view is on associate expense claims.
             </p>
             <p>
-              We do, because it comes up constantly. That breadth of exposure — across hundreds of dental clients — means we can spot issues before they become problems, and give advice that is grounded in what actually happens in practice, not just what the textbook says.
+              We do, because it comes up constantly. That breadth of exposure — across hundreds of dental clients — means we can spot issues before they become problems, and give advice grounded in what actually happens in dental practices, not just what the textbook says.
             </p>
             <p>
-              It also means the conversation is more efficient. You do not have to explain how an NHS contract works, or what a UDA is, or why your income looks different each month. We already know.
+              It also means the conversation is more efficient. You don&apos;t have to explain how an NHS contract works, or what a UDA is, or why your income varies each month. We already know, so we can focus on solving your specific problem.
             </p>
           </div>
           <div className="mt-14 overflow-x-auto rounded-2xl border border-[var(--border)]">
@@ -280,11 +354,11 @@ export default function HomePage() {
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <p className="section-label">Practical guidance</p>
           <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
-            <span className="block">Written for dentists,</span>
-            <span className="block">not for search engines.</span>
+            <span className="block">Dental accounting insights</span>
+            <span className="block">from specialists.</span>
           </h2>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            The articles below come from questions we are actually asked — by associates unsure about their tax position, and by practice owners trying to make sense of a financial decision. They are written to be useful, not to impress.
+            Real-world guidance on associate tax, practice finance, and NHS accounting — written by accountants who work exclusively with UK dental practices. Each article addresses questions we&apos;re actually asked by dentists every week.
           </p>
           <ul className="mt-12 grid gap-6 sm:grid-cols-3 sm:gap-8">
             {practicalPosts.map((p) => (
@@ -322,25 +396,25 @@ export default function HomePage() {
             <div className="min-w-0">
               <p className="section-label">Get started</p>
               <h2 className="display-serif mt-4 text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
-                Ready to work with an accountant who actually knows dentistry?
+                Ready to work with a dental accountant who understands your practice?
               </h2>
               <p className="mt-6 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-                Whether you are an associate looking to get your tax affairs in order, or a practice owner who wants proper financial visibility, the first conversation is straightforward and without obligation.
+                Whether you&apos;re an associate looking to optimize your tax position, or a practice owner who needs proper financial visibility, the first conversation is straightforward and without obligation. Book your free consultation today.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link href="/contact" className={`${btnPrimary}`}>
-                  Arrange an initial call
+                  Book your free consultation
                 </Link>
                 <Link href={`mailto:${siteConfig.contact.email}`} className={btnMailOutline}>
-                  Get in touch
+                  Email us directly
                 </Link>
               </div>
-              <p className="mt-10 text-sm font-medium text-[var(--ink)]">We will get back to you within one working day.</p>
+              <p className="mt-10 text-sm font-medium text-[var(--ink)]">We respond within one working day.</p>
               <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-                Fill in the form and one of our dental accounting specialists will be in touch to arrange a short introductory call. There is no hard sell — just an honest conversation about your situation and whether we are the right fit.
+                Fill in the form and one of our dental accountants will be in touch to arrange a short introductory call. No hard sell — just an honest conversation about your situation and whether we&apos;re the right fit.
               </p>
               <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-                If you would prefer, you can also call us directly or drop us an email. Either way, you will speak to someone who works with dental clients every day.
+                Prefer to call or email? You&apos;ll speak to someone who works with dental practices every day.
               </p>
               <p className="mt-6 text-sm text-[var(--muted)]">All initial conversations are confidential and carry no obligation.</p>
             </div>

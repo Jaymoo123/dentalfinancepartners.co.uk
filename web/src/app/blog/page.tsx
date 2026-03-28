@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
 import { getAllPosts } from "@/lib/blog";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -14,6 +15,12 @@ export default function BlogIndexPage() {
 
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
+      <Breadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Blog" },
+        ]}
+      />
       <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Insights for UK dental practices</h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
         Practical notes on tax, accounts, and practice economics — written for dentists and owners, not generic SMEs.

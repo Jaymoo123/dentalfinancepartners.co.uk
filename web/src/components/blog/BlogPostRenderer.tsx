@@ -3,6 +3,7 @@ import type { BlogPost } from "@/types/blog";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { buildBlogPostingJsonLd } from "@/lib/schema";
 import { contentNarrow, focusRing } from "@/components/ui/layout-utils";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -20,6 +21,13 @@ export function BlogPostRenderer({ post, related = [] }: BlogPostRendererProps) 
 
   return (
     <article className={`${contentNarrow} py-10 sm:py-14`}>
+      <Breadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Blog", href: "/blog" },
+          { label: post.title },
+        ]}
+      />
       <header className="border-b border-[var(--border)] pb-6 sm:pb-8">
         <p className="text-sm font-medium uppercase tracking-wide text-[var(--accent-strong)]">
           {post.category}

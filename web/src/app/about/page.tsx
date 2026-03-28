@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CTASection } from "@/components/ui/CTASection";
 import { contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "About us",
@@ -13,6 +14,12 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
+      <Breadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "About" },
+        ]}
+      />
       <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">
         About {siteConfig.name}
       </h1>

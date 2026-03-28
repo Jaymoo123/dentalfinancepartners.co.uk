@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { PageShell } from "@/components/layout/PageShell";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { siteConfig } from "@/config/site";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -32,6 +33,9 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  verification: {
+    google: "6Yl4g8aauEScoYRA4pqJ-d-l_CeAhKUPV1dHvOirf1E",
+  },
   openGraph: {
     type: "website",
     locale: siteConfig.locale,
@@ -50,6 +54,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-GB">
+      <head>
+        <GoogleAnalytics measurementId="G-273RJY0LZQ" />
+      </head>
       <body
         className={`${plusJakarta.variable} ${cormorant.variable} ${plusJakarta.className} antialiased`}
       >
