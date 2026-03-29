@@ -60,11 +60,8 @@ export interface NicheConfig {
 export const niche = nicheConfigJson as NicheConfig;
 
 export function getSiteUrl(): string {
-  if (process.env.VERCEL_ENV === "production") {
-    return `https://${niche.domain}`;
-  }
-  if (process.env.VERCEL_URL) {
-    return `https://${process.env.VERCEL_URL}`;
-  }
-  return process.env.NEXT_PUBLIC_SITE_URL || `http://localhost:3000`;
+  return (
+    (typeof process !== "undefined" && process.env.NEXT_PUBLIC_SITE_URL) ||
+    `https://${niche.domain}`
+  );
 }

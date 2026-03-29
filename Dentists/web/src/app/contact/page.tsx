@@ -7,6 +7,13 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 export const metadata: Metadata = {
   title: "Contact",
   description: `Contact ${siteConfig.name} — enquiries for UK dental practice accounting and tax support.`,
+  alternates: { canonical: `${siteConfig.url}/contact` },
+  openGraph: {
+    title: "Contact",
+    description: `Contact ${siteConfig.name} — enquiries for UK dental practice accounting and tax support.`,
+    url: `${siteConfig.url}/contact`,
+    type: "website",
+  },
 };
 
 export default function ContactPage() {

@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   title: "Dental practice accounting services",
   description:
     "UK dental accounting: year-end compliance, management accounts, tax planning, payroll, VAT, and profit extraction for practices and associates.",
+  alternates: { canonical: `${siteConfig.url}/services` },
+  openGraph: {
+    title: "Dental practice accounting services",
+    description:
+      "UK dental accounting: year-end compliance, management accounts, tax planning, payroll, VAT, and profit extraction for practices and associates.",
+    url: `${siteConfig.url}/services`,
+    type: "website",
+  },
 };
 
 const sections = [

@@ -9,7 +9,13 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 export const metadata: Metadata = {
   title: "Locations | Property Accountants Across the UK",
   description: `${siteConfig.name} — specialist property accountants serving landlords across the UK. Explore our locations.`,
-  alternates: { canonical: `${siteConfig.url.replace(/\/$/, "")}/locations` },
+  alternates: { canonical: `${siteConfig.url}/locations` },
+  openGraph: {
+    title: "Locations | Property Accountants Across the UK",
+    description: `${siteConfig.name} — specialist property accountants serving landlords across the UK. Explore our locations.`,
+    url: `${siteConfig.url}/locations`,
+    type: "website",
+  },
 };
 
 export default function LocationsHubPage() {

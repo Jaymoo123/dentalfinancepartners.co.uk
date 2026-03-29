@@ -11,6 +11,13 @@ export const metadata: Metadata = {
   description:
     "Property tax articles for UK landlords — Section 24, MTD, incorporation, portfolio management. Written by specialist property accountants.",
   alternates: { canonical: `${siteConfig.url}/blog` },
+  openGraph: {
+    title: "Blog | Property Tax Insights for UK Landlords",
+    description:
+      "Property tax articles for UK landlords — Section 24, MTD, incorporation, portfolio management. Written by specialist property accountants.",
+    url: `${siteConfig.url}/blog`,
+    type: "website",
+  },
 };
 
 export default function BlogIndexPage() {

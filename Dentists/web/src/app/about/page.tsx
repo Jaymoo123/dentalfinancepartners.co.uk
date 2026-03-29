@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   title: "About us",
   description:
     "Why we focus on UK dental practices, associates, and owners — specialist accounting without generic SME boilerplate.",
+  alternates: { canonical: `${siteConfig.url}/about` },
+  openGraph: {
+    title: "About us",
+    description:
+      "Why we focus on UK dental practices, associates, and owners — specialist accounting without generic SME boilerplate.",
+    url: `${siteConfig.url}/about`,
+    type: "website",
+  },
 };
 
 export default function AboutPage() {

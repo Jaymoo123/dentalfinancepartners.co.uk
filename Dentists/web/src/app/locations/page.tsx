@@ -8,7 +8,13 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 export const metadata: Metadata = {
   title: "Locations",
   description: `${siteConfig.name} — specialist dental practice finance and accounting across the UK. Explore our locations.`,
-  alternates: { canonical: `${siteConfig.url.replace(/\/$/, "")}/locations` },
+  alternates: { canonical: `${siteConfig.url}/locations` },
+  openGraph: {
+    title: "Locations",
+    description: `${siteConfig.name} — specialist dental practice finance and accounting across the UK. Explore our locations.`,
+    url: `${siteConfig.url}/locations`,
+    type: "website",
+  },
 };
 
 const cityLabel: Record<string, string> = {
