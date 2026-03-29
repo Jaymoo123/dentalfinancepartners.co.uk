@@ -303,7 +303,7 @@ export default function HomePage() {
                 Get your property tax sorted today
               </h2>
               <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-relaxed text-slate-200">
-                Book a free consultation. We'll discuss your situation, model the numbers, and give you clear
+                Book a free consultation. We&apos;ll discuss your situation, model the numbers, and give you clear
                 recommendations.
               </p>
               <div className="mt-8 space-y-4">
@@ -367,7 +367,7 @@ export default function HomePage() {
                     <Link href="#mtd" className="font-bold text-emerald-600 underline underline-offset-2 hover:text-emerald-700">
                       MTD checker
                     </Link>{" "}
-                    to see if you're affected.
+                    to see if you&apos;re affected.
                   </p>
                 </div>
               </details>

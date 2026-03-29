@@ -142,19 +142,19 @@ export default function AboutPage() {
               <div className="border-l-4 border-slate-300 bg-white p-6">
                 <h3 className="text-lg font-bold text-slate-900">No generalists</h3>
                 <p className="mt-2 text-base leading-relaxed text-slate-700">
-                  We don't serve restaurants, retailers, or consultants. 100% of our clients are landlords or property developers. That means every conversation is with someone who understands property accounting deeply.
+                  We don&apos;t serve restaurants, retailers, or consultants. 100% of our clients are landlords or property developers. That means every conversation is with someone who understands property accounting deeply.
                 </p>
               </div>
               <div className="border-l-4 border-slate-300 bg-white p-6">
                 <h3 className="text-lg font-bold text-slate-900">Fixed fees, no surprises</h3>
                 <p className="mt-2 text-base leading-relaxed text-slate-700">
-                  You know what you're paying upfront. No hourly billing, no surprise invoices. If your situation changes mid-year, we'll tell you before any additional fees apply.
+                  You know what you&apos;re paying upfront. No hourly billing, no surprise invoices. If your situation changes mid-year, we&apos;ll tell you before any additional fees apply.
                 </p>
               </div>
               <div className="border-l-4 border-slate-300 bg-white p-6">
                 <h3 className="text-lg font-bold text-slate-900">Same accountant every time</h3>
                 <p className="mt-2 text-base leading-relaxed text-slate-700">
-                  You're not passed around a team. You work with one qualified accountant who knows your portfolio, your goals, and your tax position. They're available when you need them.
+                  You&apos;re not passed around a team. You work with one qualified accountant who knows your portfolio, your goals, and your tax position. They&apos;re available when you need them.
                 </p>
               </div>
             </div>

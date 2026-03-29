@@ -65,7 +65,7 @@ export function TestimonialSlider() {
     <div className="relative">
       <div className="border-l-4 border-emerald-600 bg-white p-8">
         <blockquote className="text-lg leading-relaxed text-slate-700">
-          "{currentTestimonial.quote}"
+          &ldquo;{currentTestimonial.quote}&rdquo;
         </blockquote>
         <div className="mt-6 flex items-center gap-4 border-t border-slate-200 pt-6">
           <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center bg-emerald-600 text-lg font-bold text-white">

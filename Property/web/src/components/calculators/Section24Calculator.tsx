@@ -35,7 +35,7 @@ export function Section24Calculator() {
         </div>
         <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900">Section 24 Tax Calculator</h3>
         <p className="mt-2 text-sm sm:text-base text-slate-600">
-          Calculate how much extra tax you're paying due to Section 24 mortgage interest restriction.
+          Calculate how much extra tax you&apos;re paying due to Section 24 mortgage interest restriction.
         </p>
       </div>
 

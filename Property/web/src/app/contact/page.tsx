@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { LeadForm } from "@/components/forms/LeadForm";
-import { siteContainerLg, focusRing } from "@/components/ui/layout-utils";
+import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
@@ -87,7 +87,7 @@ export default function ContactPage() {
                 <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-slate-200">
                   <li className="flex items-start gap-2 sm:gap-3">
                     <span className="text-emerald-400 font-bold flex-shrink-0 text-base sm:text-lg">✓</span>
-                    <span>We'll respond within 24 hours to confirm receipt</span>
+                    <span>We&apos;ll respond within 24 hours to confirm receipt</span>
                   </li>
                   <li className="flex items-start gap-2 sm:gap-3">
                     <span className="text-emerald-400 font-bold flex-shrink-0 text-base sm:text-lg">✓</span>

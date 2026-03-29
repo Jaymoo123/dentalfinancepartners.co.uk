@@ -124,9 +124,9 @@ export function MTDCheckerCalculator() {
               </div>
             ) : (
               <div className="space-y-2 sm:space-y-3">
-                <p className="text-xs sm:text-sm font-bold text-white">You're currently below the threshold</p>
+                <p className="text-xs sm:text-sm font-bold text-white">You&apos;re currently below the threshold</p>
                 <p className="text-xs sm:text-sm text-white/90 leading-relaxed">
-                  Monitor your income. If you exceed £50,000, you'll need to comply. We recommend preparing early if you're close.
+                  Monitor your income. If you exceed £50,000, you&apos;ll need to comply. We recommend preparing early if you&apos;re close.
                 </p>
               </div>
             )}

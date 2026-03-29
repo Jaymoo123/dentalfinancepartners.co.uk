@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { BrandWordmarkHomeLink } from "@/components/brand/BrandWordmarkHomeLink";
 import { focusRing, siteContainer } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 

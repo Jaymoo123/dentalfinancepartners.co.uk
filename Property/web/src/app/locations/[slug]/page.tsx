@@ -253,7 +253,7 @@ export default async function LocationPage({ params }: Props) {
                 How to get started
               </h2>
               <p className="mt-4 text-base leading-relaxed text-slate-700">
-                Book a free consultation to discuss your property tax situation. We'll give you clear recommendations — no obligation, no hard sell.
+                Book a free consultation to discuss your property tax situation. We&apos;ll give you clear recommendations — no obligation, no hard sell.
               </p>
               <div className="mt-6">
                 <Link href="/contact" className={`${btnPrimary} inline-flex text-base px-8 py-3.5`}>

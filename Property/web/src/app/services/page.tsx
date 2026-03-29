@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Image from "next/image";
 import { CTASection } from "@/components/ui/CTASection";
 import { siteContainerLg } from "@/components/ui/layout-utils";
@@ -138,7 +137,7 @@ export default function ServicesPage() {
       <section className="bg-white py-16 sm:py-20">
         <div className={siteContainerLg}>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl mb-10">What's included</h2>
+            <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl mb-10">What&apos;s included</h2>
             <div className="space-y-6">
               <div className="flex gap-6 border-l-4 border-emerald-600 bg-slate-50 p-6">
                 <div className="flex-shrink-0 w-12 h-12 bg-emerald-600 flex items-center justify-center text-white font-bold text-2xl">
@@ -158,7 +157,7 @@ export default function ServicesPage() {
                 <div>
                   <h3 className="text-xl font-bold text-slate-900">Fixed fees, no surprises</h3>
                   <p className="mt-2 text-base text-slate-700 leading-relaxed">
-                    You know exactly what you're paying upfront. No hourly billing, no hidden charges.
+                    You know exactly what you&apos;re paying upfront. No hourly billing, no hidden charges.
                   </p>
                 </div>
               </div>
@@ -182,7 +181,7 @@ export default function ServicesPage() {
                   <h3 className="text-xl font-bold text-slate-900">Proactive support</h3>
                   <p className="mt-2 text-base text-slate-700 leading-relaxed">
                     We flag opportunities before you miss them. If MTD is approaching or incorporation would save you
-                    money, we'll tell you.
+                    money, we&apos;ll tell you.
                   </p>
                 </div>
               </div>

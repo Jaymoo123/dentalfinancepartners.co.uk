@@ -119,7 +119,7 @@ export default function IncorporationPage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">When incorporation makes sense</h2>
             <div className="mt-8 sm:mt-10 space-y-5 sm:space-y-6">
-              {whenItMakesSense.map((item, idx) => (
+              {whenItMakesSense.map((item) => (
                 <div key={item.title} className="border-l-4 border-emerald-600 bg-slate-50 p-6 sm:p-8">
                   <h3 className="text-lg sm:text-xl font-bold text-slate-900">{item.title}</h3>
                   <p className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-slate-700">{item.body}</p>
@@ -133,9 +133,9 @@ export default function IncorporationPage() {
       <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">When it doesn't make sense</h2>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">When it doesn&apos;t make sense</h2>
             <div className="mt-8 sm:mt-10 space-y-5 sm:space-y-6">
-              {whenItDoesNot.map((item, idx) => (
+              {whenItDoesNot.map((item) => (
                 <div key={item.title} className="border-l-4 border-slate-300 bg-white p-6 sm:p-8">
                   <h3 className="text-lg sm:text-xl font-bold text-slate-900">{item.title}</h3>
                   <p className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-slate-700">{item.body}</p>
@@ -208,7 +208,7 @@ export default function IncorporationPage() {
                 </li>
                 <li className="flex items-start gap-3 sm:gap-4">
                   <span className="text-emerald-400 font-bold flex-shrink-0 text-xl sm:text-2xl">✓</span>
-                  <span>Clear recommendation: incorporate now, wait, or don't incorporate at all</span>
+                  <span>Clear recommendation: incorporate now, wait, or don&apos;t incorporate at all</span>
                 </li>
                 <li className="flex items-start gap-3 sm:gap-4">
                   <span className="text-emerald-400 font-bold flex-shrink-0 text-xl sm:text-2xl">✓</span>

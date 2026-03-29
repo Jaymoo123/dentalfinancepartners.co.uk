@@ -260,7 +260,7 @@ export function LeadForm({
       {status === "success" && !redirectOnSuccess && (
         <div role="status" className="rounded-lg border-2 border-emerald-200 bg-emerald-50 p-4">
           <p className="text-sm font-semibold text-emerald-900">
-            Thanks! We'll be in touch within 24 hours.
+            Thanks! We&apos;ll be in touch within 24 hours.
           </p>
         </div>
       )}

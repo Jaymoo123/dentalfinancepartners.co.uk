@@ -33,7 +33,7 @@ export default function Error({
         </h1>
         
         <p className="mt-4 text-lg text-[var(--muted)]">
-          We encountered an unexpected error. This has been logged and we'll look into it.
+          We encountered an unexpected error. This has been logged and we&apos;ll look into it.
         </p>
 
         {process.env.NODE_ENV === 'development' && error.message && (

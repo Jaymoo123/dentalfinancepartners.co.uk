@@ -41,7 +41,7 @@ export function MTDCountdown() {
           <p className="mt-1.5 sm:mt-2 text-xs sm:text-sm text-slate-200">
             Quarterly digital reporting becomes mandatory for landlords earning £50k+. Are you ready?{" "}
             <Link href="#mtd" className="font-bold text-emerald-400 underline underline-offset-2 hover:text-emerald-300">
-              Check if you're affected
+              Check if you&apos;re affected
             </Link>
           </p>
         </div>
