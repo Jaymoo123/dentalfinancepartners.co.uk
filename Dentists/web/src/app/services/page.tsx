@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CTASection } from "@/components/ui/CTASection";
 import { contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Dental practice accounting services",

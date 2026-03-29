@@ -1,0 +1,5 @@
+Fix TypeScript errors in location pages
+
+- Use siteConfig.contact.email and siteConfig.contact.phone
+- Add missing siteConfig imports to Dentists blog and services pages
+- Hardcode organizationType to "AccountingService" for schema.org

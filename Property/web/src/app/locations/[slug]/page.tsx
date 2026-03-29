@@ -169,11 +169,11 @@ export default async function LocationPage({ params }: Props) {
     description: content.intro,
     url: `${siteConfig.url}/locations/${slug}`,
     logo: siteConfig.publisherLogoUrl,
-    email: siteConfig.email,
-    phone: siteConfig.phone,
+    email: siteConfig.contact.email,
+    phone: siteConfig.contact.phone,
     areaServed: content.areas,
     city: cityName,
-    organizationType: siteConfig.organizationType,
+    organizationType: "AccountingService",
   });
 
   return (

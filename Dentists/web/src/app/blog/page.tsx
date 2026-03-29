@@ -3,6 +3,7 @@ import Link from "next/link";
 import { contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
 import { getAllPosts } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Blog",
