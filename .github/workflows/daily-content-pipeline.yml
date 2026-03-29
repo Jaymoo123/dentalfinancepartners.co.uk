@@ -52,7 +52,7 @@ jobs:
         run: |
           pip install anthropic httpx python-dotenv
       
-      - name: Generate blog for ${{ matrix.niche }}
+      - name: Generate blog content for ${{ matrix.niche }}
         run: python agents/blog_generation_agent.py --niche ${{ matrix.niche }} --max-posts 1
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -60,23 +60,19 @@ jobs:
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
       
-      - name: Commit generated content
+      - name: Deploy content from Supabase to file system
+        run: python agents/deployment_agent.py --niche ${{ matrix.niche }} --max-deployments 10
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+      
+      - name: Commit deployed content
         run: |
           git config user.name "Content Bot"
           git config user.email "bot@dentalfinancepartners.co.uk"
           git add ${{ matrix.niche }}/web/content/blog/
-          git commit -m "Add new blog post for ${{ matrix.niche }}" || echo "No changes to commit"
+          git commit -m "Deploy blog content for ${{ matrix.niche }}" || echo "No changes to commit"
           git pull --rebase
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Install Vercel CLI
-        run: npm install -g vercel
-      
-      - name: Deploy to Vercel
-        run: vercel deploy --prod --cwd ${{ matrix.niche }}/web --token ${{ secrets.VERCEL_TOKEN }} --yes
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}

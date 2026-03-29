@@ -170,15 +170,16 @@ class BlogGenerationAgent:
             
             print(f"Quality check passed: {quality_result.metrics}")
             
-            # 7. Register content for future duplicate checking
+            # 7. STORE CONTENT IN SUPABASE IMMEDIATELY (before deployment)
             with open(content_path, "r", encoding="utf-8") as f:
                 content = f.read()
             
             title_match = re.search(r'title: "([^"]+)"', content)
             title = title_match.group(1) if title_match else slug
             
-            await self.dedup_checker.register_content(
-                niche=self.niche,
+            # Store full content in Supabase for backup and retry capability
+            # This also registers it for deduplication
+            await self._store_content_in_supabase(
                 slug=slug,
                 title=title,
                 topic=topic["topic"],
@@ -186,16 +187,18 @@ class BlogGenerationAgent:
                 word_count=quality_result.metrics.get("word_count", 0)
             )
             
-            # 8. Log cost
+            print(f"Content stored in Supabase: {slug}")
+            
+            # 9. Log cost (only for successful generation + storage)
             await self.cost_tracker.log_cost("blog_generation", self.niche)
             
-            # 9. Complete execution
+            # 10. Complete execution
             await self._complete_execution("completed", {
                 "slug": slug,
                 "quality_metrics": quality_result.metrics
             })
             
-            print(f"✅ Successfully generated and validated: {slug}")
+            print(f"Successfully generated and validated: {slug}")
             return True
             
         except Exception as e:
@@ -218,20 +221,20 @@ class BlogGenerationAgent:
         return topics[0] if topics else None
     
     async def _get_daily_generation_count(self) -> int:
-        """Get number of posts generated today for this niche."""
+        """Get number of posts DEPLOYED today for this niche (not just attempted)."""
         today = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0)
         
-        executions = await self.supabase.select(
-            "agent_executions",
+        # Count successfully deployed content, not just generation attempts
+        deployed = await self.supabase.select(
+            "published_content",
             filters={
-                "agent_type": "blog_generation",
                 "niche": self.niche,
-                "status": "completed",
-                "started_at": f"gte.{today.isoformat()}"
+                "deployment_status": "deployed",
+                "published_at": f"gte.{today.isoformat()}"
             }
         )
         
-        return len(executions)
+        return len(deployed)
     
     async def _start_execution(self) -> str:
         """Start execution record in Supabase."""
@@ -243,6 +246,42 @@ class BlogGenerationAgent:
         })
         
         return result["id"]
+    
+    async def _store_content_in_supabase(self, slug: str, title: str, topic: str, 
+                                          content: str, word_count: int):
+        """Store full blog content in Supabase immediately after generation."""
+        import hashlib
+        
+        content_hash = hashlib.sha256(content.encode()).hexdigest()
+        
+        # Insert or update content in Supabase
+        try:
+            await self.supabase.insert("published_content", {
+                "niche": self.niche,
+                "slug": slug,
+                "title": title,
+                "topic": topic,
+                "full_content": content,
+                "word_count": word_count,
+                "content_hash": content_hash,
+                "deployment_status": "pending",
+                "published_at": datetime.utcnow().isoformat()
+            })
+        except Exception as e:
+            # If already exists (duplicate slug), update it
+            if "duplicate" in str(e).lower():
+                await self.supabase.update(
+                    "published_content",
+                    filters={"niche": self.niche, "slug": slug},
+                    data={
+                        "full_content": content,
+                        "word_count": word_count,
+                        "content_hash": content_hash,
+                        "deployment_status": "pending"
+                    }
+                )
+            else:
+                raise
     
     async def _complete_execution(self, status: str, metrics: dict = None):
         """Complete execution record."""

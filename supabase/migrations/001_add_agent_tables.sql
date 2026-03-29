@@ -73,9 +73,14 @@ CREATE TABLE IF NOT EXISTS published_content (
   slug TEXT NOT NULL,
   title TEXT NOT NULL,
   topic TEXT NOT NULL,
+  full_content TEXT NOT NULL,  -- Store complete markdown content
   published_at TIMESTAMP NOT NULL DEFAULT NOW(),
   word_count INTEGER,
   content_hash TEXT NOT NULL,  -- SHA256 hash for exact duplicate detection
+  deployment_status TEXT DEFAULT 'pending',  -- pending, deployed, failed
+  deployment_url TEXT,  -- Vercel deployment URL
+  last_deployment_attempt TIMESTAMP,
+  deployment_error TEXT,
   UNIQUE(niche, slug)
 );
 
