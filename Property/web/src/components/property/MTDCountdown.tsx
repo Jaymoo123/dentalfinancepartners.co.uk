@@ -30,15 +30,15 @@ export function MTDCountdown() {
   }
 
   return (
-    <div className="flex items-center justify-between gap-6 bg-slate-900 p-6 border-l-4 border-emerald-600">
-      <div className="flex flex-1 items-center gap-6">
-        <div className="flex flex-col items-center bg-emerald-600 px-8 py-4 min-w-[120px]">
-          <div className="text-5xl font-bold text-white font-mono leading-none">{daysUntilMTD}</div>
-          <div className="mt-2 text-xs font-bold text-emerald-100 uppercase tracking-wider">Days</div>
+    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-6 bg-slate-900 p-4 sm:p-6 border-l-4 border-emerald-600">
+      <div className="flex flex-1 items-center gap-4 sm:gap-6 w-full">
+        <div className="flex flex-col items-center bg-emerald-600 px-6 py-3 sm:px-8 sm:py-4 min-w-[100px] sm:min-w-[120px]">
+          <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white font-mono leading-none">{daysUntilMTD}</div>
+          <div className="mt-1.5 sm:mt-2 text-xs font-bold text-emerald-100 uppercase tracking-wider">Days</div>
         </div>
         <div className="flex-1">
-          <h3 className="text-lg font-bold text-white">Making Tax Digital starts 6 April 2026</h3>
-          <p className="mt-2 text-sm text-slate-200">
+          <h3 className="text-base sm:text-lg font-bold text-white">Making Tax Digital starts 6 April 2026</h3>
+          <p className="mt-1.5 sm:mt-2 text-xs sm:text-sm text-slate-200">
             Quarterly digital reporting becomes mandatory for landlords earning £50k+. Are you ready?{" "}
             <Link href="#mtd" className="font-bold text-emerald-400 underline underline-offset-2 hover:text-emerald-300">
               Check if you're affected
@@ -48,7 +48,7 @@ export function MTDCountdown() {
       </div>
       <button
         onClick={handleDismiss}
-        className="flex h-8 w-8 flex-shrink-0 items-center justify-center text-slate-400 transition-colors hover:text-white"
+        className="flex h-11 w-11 flex-shrink-0 items-center justify-center text-slate-400 transition-colors hover:text-white self-start sm:self-center"
         aria-label="Dismiss MTD countdown"
         type="button"
       >

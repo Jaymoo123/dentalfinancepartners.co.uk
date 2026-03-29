@@ -61,7 +61,7 @@ const stats = [
 export default function AboutPage() {
   return (
     <>
-      <section className="relative h-[400px] overflow-hidden">
+      <section className="relative h-[300px] sm:h-[350px] lg:h-[400px] overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=2000&q=85"
           alt="UK property skyline"
@@ -77,10 +77,10 @@ export default function AboutPage() {
                 { label: "About" },
               ]}
             />
-            <h1 className="mt-6 text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+            <h1 className="mt-4 sm:mt-6 text-2xl font-bold leading-tight text-white sm:text-4xl lg:text-6xl">
               About {siteConfig.name}
             </h1>
-            <p className="mt-4 text-xl text-white">
+            <p className="mt-3 sm:mt-4 text-base sm:text-xl text-white">
               Specialist property accountants working exclusively with UK landlords and buy-to-let investors.
             </p>
           </div>
@@ -88,13 +88,13 @@ export default function AboutPage() {
       </section>
 
       {/* Stats Bar */}
-      <section className="bg-emerald-600 py-12">
+      <section className="bg-emerald-600 py-8 sm:py-12">
         <div className={siteContainerLg}>
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-4xl font-bold text-white font-mono">{stat.value}</div>
-                <div className="mt-2 text-sm font-semibold text-emerald-100 uppercase tracking-wider">{stat.label}</div>
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white font-mono">{stat.value}</div>
+                <div className="mt-1.5 sm:mt-2 text-xs sm:text-sm font-semibold text-emerald-100 uppercase tracking-wider">{stat.label}</div>
               </div>
             ))}
           </div>

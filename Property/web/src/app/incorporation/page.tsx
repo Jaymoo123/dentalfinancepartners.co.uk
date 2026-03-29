@@ -79,7 +79,7 @@ const processSteps = [
 export default function IncorporationPage() {
   return (
     <>
-      <section className="relative h-[400px] overflow-hidden">
+      <section className="relative h-[320px] sm:h-[380px] lg:h-[400px] overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=2000&q=85"
           alt="UK residential property"
@@ -95,18 +95,18 @@ export default function IncorporationPage() {
                 { label: "Incorporation" },
               ]}
             />
-            <h1 className="mt-6 text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+            <h1 className="mt-4 sm:mt-6 text-2xl font-bold leading-tight text-white sm:text-4xl lg:text-6xl">
               Should you incorporate your buy-to-let portfolio?
             </h1>
-            <p className="mt-6 text-xl leading-relaxed text-white">
+            <p className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl leading-relaxed text-white">
               Transferring rental property into a limited company can save significant tax — but it triggers Capital
               Gains Tax and Stamp Duty on the same day.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/contact" className={`${btnPrimary} bg-emerald-600 border-emerald-800 text-base px-8 py-3.5`}>
+            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+              <Link href="/contact" className={`${btnPrimary} bg-emerald-600 border-emerald-800 text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-3.5 text-center`}>
                 Book incorporation analysis
               </Link>
-              <Link href="#calculator" className={`${btnSecondary} bg-white/10 border-white text-white hover:bg-white/20 text-base px-8 py-3.5`}>
+              <Link href="#calculator" className={`${btnSecondary} bg-white/10 border-white text-white hover:bg-white/20 text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-3.5 text-center`}>
                 Try calculator
               </Link>
             </div>
@@ -114,15 +114,15 @@ export default function IncorporationPage() {
         </div>
       </section>
 
-      <section className="bg-white py-16 sm:py-20">
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">When incorporation makes sense</h2>
-            <div className="mt-10 space-y-6">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">When incorporation makes sense</h2>
+            <div className="mt-8 sm:mt-10 space-y-5 sm:space-y-6">
               {whenItMakesSense.map((item, idx) => (
-                <div key={item.title} className="border-l-4 border-emerald-600 bg-slate-50 p-8">
-                  <h3 className="text-xl font-bold text-slate-900">{item.title}</h3>
-                  <p className="mt-3 text-base leading-relaxed text-slate-700">{item.body}</p>
+                <div key={item.title} className="border-l-4 border-emerald-600 bg-slate-50 p-6 sm:p-8">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900">{item.title}</h3>
+                  <p className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-slate-700">{item.body}</p>
                 </div>
               ))}
             </div>
@@ -130,15 +130,15 @@ export default function IncorporationPage() {
         </div>
       </section>
 
-      <section className="bg-slate-50 py-16 sm:py-20">
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">When it doesn't make sense</h2>
-            <div className="mt-10 space-y-6">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">When it doesn't make sense</h2>
+            <div className="mt-8 sm:mt-10 space-y-5 sm:space-y-6">
               {whenItDoesNot.map((item, idx) => (
-                <div key={item.title} className="border-l-4 border-slate-300 bg-white p-8">
-                  <h3 className="text-xl font-bold text-slate-900">{item.title}</h3>
-                  <p className="mt-3 text-base leading-relaxed text-slate-700">{item.body}</p>
+                <div key={item.title} className="border-l-4 border-slate-300 bg-white p-6 sm:p-8">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900">{item.title}</h3>
+                  <p className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-slate-700">{item.body}</p>
                 </div>
               ))}
             </div>
@@ -146,16 +146,16 @@ export default function IncorporationPage() {
         </div>
       </section>
 
-      <section id="calculator" className="bg-white py-16 sm:py-20">
+      <section id="calculator" className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-block bg-emerald-600 px-4 py-2 text-xs font-bold text-white uppercase tracking-wider mb-4">
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+            <div className="inline-block bg-emerald-600 px-3 py-1.5 sm:px-4 sm:py-2 text-xs font-bold text-white uppercase tracking-wider mb-3 sm:mb-4">
               Free tool
             </div>
-            <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">
               Calculate your incorporation costs
             </h2>
-            <p className="mt-4 text-lg text-slate-600">
+            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
               Get a quick estimate of upfront costs (CGT + SDLT) and break-even timeline.
             </p>
           </div>
@@ -165,21 +165,21 @@ export default function IncorporationPage() {
         </div>
       </section>
 
-      <section className="bg-slate-50 py-16 sm:py-20">
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl mb-10">Our incorporation process</h2>
-            <div className="space-y-8">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl mb-8 sm:mb-10">Our incorporation process</h2>
+            <div className="space-y-6 sm:space-y-8">
               {processSteps.map((step) => (
-                <div key={step.n} className="flex gap-6 bg-white border-l-4 border-emerald-600 p-8">
+                <div key={step.n} className="flex gap-4 sm:gap-6 bg-white border-l-4 border-emerald-600 p-6 sm:p-8">
                   <div className="flex-shrink-0">
-                    <div className="h-16 w-16 bg-slate-900 flex items-center justify-center text-2xl font-bold text-white font-mono">
+                    <div className="h-12 w-12 sm:h-16 sm:w-16 bg-slate-900 flex items-center justify-center text-xl sm:text-2xl font-bold text-white font-mono">
                       {step.n}
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-900">{step.title}</h3>
-                    <p className="mt-3 text-base leading-relaxed text-slate-700">{step.body}</p>
+                    <h3 className="text-base sm:text-xl font-bold text-slate-900">{step.title}</h3>
+                    <p className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-slate-700">{step.body}</p>
                   </div>
                 </div>
               ))}
@@ -188,30 +188,30 @@ export default function IncorporationPage() {
         </div>
       </section>
 
-      <section className="bg-white py-16 sm:py-20">
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-slate-900 p-10 text-white">
-              <h2 className="text-3xl font-bold text-white mb-6">What you get</h2>
-              <ul className="space-y-4 text-base text-slate-200">
-                <li className="flex items-start gap-4">
-                  <span className="text-emerald-400 font-bold flex-shrink-0 text-2xl">✓</span>
+            <div className="bg-slate-900 p-6 sm:p-10 text-white">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">What you get</h2>
+              <ul className="space-y-3 sm:space-y-4 text-sm sm:text-base text-slate-200">
+                <li className="flex items-start gap-3 sm:gap-4">
+                  <span className="text-emerald-400 font-bold flex-shrink-0 text-xl sm:text-2xl">✓</span>
                   <span>Full CGT and SDLT cost calculation based on your actual property values and purchase prices</span>
                 </li>
-                <li className="flex items-start gap-4">
-                  <span className="text-emerald-400 font-bold flex-shrink-0 text-2xl">✓</span>
+                <li className="flex items-start gap-3 sm:gap-4">
+                  <span className="text-emerald-400 font-bold flex-shrink-0 text-xl sm:text-2xl">✓</span>
                   <span>Annual tax saving comparison: personal vs. company structure</span>
                 </li>
-                <li className="flex items-start gap-4">
-                  <span className="text-emerald-400 font-bold flex-shrink-0 text-2xl">✓</span>
+                <li className="flex items-start gap-3 sm:gap-4">
+                  <span className="text-emerald-400 font-bold flex-shrink-0 text-xl sm:text-2xl">✓</span>
                   <span>Break-even timeline showing when you recover the upfront costs</span>
                 </li>
-                <li className="flex items-start gap-4">
-                  <span className="text-emerald-400 font-bold flex-shrink-0 text-2xl">✓</span>
+                <li className="flex items-start gap-3 sm:gap-4">
+                  <span className="text-emerald-400 font-bold flex-shrink-0 text-xl sm:text-2xl">✓</span>
                   <span>Clear recommendation: incorporate now, wait, or don't incorporate at all</span>
                 </li>
-                <li className="flex items-start gap-4">
-                  <span className="text-emerald-400 font-bold flex-shrink-0 text-2xl">✓</span>
+                <li className="flex items-start gap-3 sm:gap-4">
+                  <span className="text-emerald-400 font-bold flex-shrink-0 text-xl sm:text-2xl">✓</span>
                   <span>Written report you can share with your solicitor or mortgage broker</span>
                 </li>
               </ul>

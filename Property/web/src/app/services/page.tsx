@@ -62,7 +62,7 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
-      <section className="relative h-[350px] overflow-hidden">
+      <section className="relative h-[300px] sm:h-[350px] overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=2000&q=85"
           alt="UK property"
@@ -78,25 +78,25 @@ export default function ServicesPage() {
                 { label: "Services" },
               ]}
             />
-            <h1 className="mt-6 text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+            <h1 className="mt-4 sm:mt-6 text-2xl font-bold leading-tight text-white sm:text-4xl lg:text-6xl">
               Property accounting services for UK landlords
             </h1>
-            <p className="mt-4 text-xl text-white">
+            <p className="mt-3 sm:mt-4 text-base sm:text-xl text-white">
               From free calculators to full-service accounting. Choose your level of support.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="bg-white py-16 sm:py-20">
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">Choose your service tier</h2>
-            <p className="mt-4 text-lg text-slate-600">
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">Choose your service tier</h2>
+            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
               Start with free tools, upgrade to expert review, or let us handle everything. No long-term contracts.
             </p>
           </div>
-          <div className="mt-10">
+          <div className="mt-8 sm:mt-10">
             <ServiceTiers />
           </div>
         </div>

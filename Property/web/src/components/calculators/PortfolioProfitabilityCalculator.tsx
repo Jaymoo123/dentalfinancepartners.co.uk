@@ -49,18 +49,18 @@ export function PortfolioProfitabilityCalculator() {
   const averageNetYield = (totalNetProfit / (properties.length * 250000)) * 100;
 
   return (
-    <div className="bg-white border-l-4 border-emerald-600 p-8 sm:p-10">
-      <div className="mb-8">
-        <div className="inline-block bg-slate-900 px-3 py-1 text-xs font-bold text-white uppercase tracking-wider mb-3">
+    <div className="bg-white border-l-4 border-emerald-600 p-6 sm:p-8 lg:p-10">
+      <div className="mb-6 sm:mb-8">
+        <div className="inline-block bg-slate-900 px-3 py-1 text-xs font-bold text-white uppercase tracking-wider mb-2 sm:mb-3">
           Calculator
         </div>
-        <h3 className="text-3xl font-bold text-slate-900">Portfolio Profitability Calculator</h3>
-        <p className="mt-2 text-base text-slate-600">
+        <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900">Portfolio Profitability Calculator</h3>
+        <p className="mt-2 text-sm sm:text-base text-slate-600">
           Analyse property-level profitability across your portfolio. Assumes £250k property value for yield calculations.
         </p>
       </div>
 
-      <div className="space-y-6">
+      <div className="space-y-5 sm:space-y-6">
         {properties.map((prop, idx) => {
           const metrics = calculateMetrics(prop);
           return (
@@ -89,7 +89,7 @@ export function PortfolioProfitabilityCalculator() {
                     Rental income
                   </label>
                   <div className="flex items-center gap-2">
-                    <span className="text-lg font-bold text-slate-900">£</span>
+                    <span className="text-base sm:text-lg font-bold text-slate-900">£</span>
                     <input
                       id={`rental-${prop.id}`}
                       type="number"
@@ -97,7 +97,7 @@ export function PortfolioProfitabilityCalculator() {
                       step="1000"
                       value={prop.rentalIncome}
                       onChange={(e) => updateProperty(prop.id, "rentalIncome", Number(e.target.value))}
-                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors"
+                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-base sm:text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
                     />
                   </div>
                 </div>
@@ -107,7 +107,7 @@ export function PortfolioProfitabilityCalculator() {
                     Mortgage interest
                   </label>
                   <div className="flex items-center gap-2">
-                    <span className="text-lg font-bold text-slate-900">£</span>
+                    <span className="text-base sm:text-lg font-bold text-slate-900">£</span>
                     <input
                       id={`mortgage-${prop.id}`}
                       type="number"
@@ -115,7 +115,7 @@ export function PortfolioProfitabilityCalculator() {
                       step="1000"
                       value={prop.mortgageInterest}
                       onChange={(e) => updateProperty(prop.id, "mortgageInterest", Number(e.target.value))}
-                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors"
+                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-base sm:text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
                     />
                   </div>
                 </div>
@@ -125,7 +125,7 @@ export function PortfolioProfitabilityCalculator() {
                     Other expenses
                   </label>
                   <div className="flex items-center gap-2">
-                    <span className="text-lg font-bold text-slate-900">£</span>
+                    <span className="text-base sm:text-lg font-bold text-slate-900">£</span>
                     <input
                       id={`expenses-${prop.id}`}
                       type="number"
@@ -133,17 +133,17 @@ export function PortfolioProfitabilityCalculator() {
                       step="1000"
                       value={prop.otherExpenses}
                       onChange={(e) => updateProperty(prop.id, "otherExpenses", Number(e.target.value))}
-                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors"
+                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-base sm:text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
                     />
                   </div>
                 </div>
               </div>
 
-              <div className="grid grid-cols-3 gap-4 bg-white p-4 border-l-4 border-slate-300">
+              <div className="grid grid-cols-3 gap-2 sm:gap-4 bg-white p-3 sm:p-4 text-center border-l-4 border-slate-300">
                 <div>
                   <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">Net profit</div>
                   <div
-                    className={`mt-1 font-mono text-xl font-bold ${
+                    className={`mt-1 font-mono text-base sm:text-xl font-bold ${
                       metrics.netProfit >= 0 ? "text-emerald-600" : "text-red-600"
                     }`}
                   >
@@ -152,14 +152,14 @@ export function PortfolioProfitabilityCalculator() {
                 </div>
                 <div>
                   <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">Gross yield</div>
-                  <div className="mt-1 font-mono text-xl font-bold text-slate-900">
+                  <div className="mt-1 font-mono text-base sm:text-xl font-bold text-slate-900">
                     {metrics.grossYield.toFixed(1)}%
                   </div>
                 </div>
                 <div>
                   <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">Net yield</div>
                   <div
-                    className={`mt-1 font-mono text-xl font-bold ${
+                    className={`mt-1 font-mono text-base sm:text-xl font-bold ${
                       metrics.netYield >= 0 ? "text-emerald-600" : "text-red-600"
                     }`}
                   >
@@ -173,25 +173,25 @@ export function PortfolioProfitabilityCalculator() {
 
         <button
           onClick={addProperty}
-          className="w-full border-2 border-dashed border-slate-300 bg-slate-50 py-4 text-base font-bold text-slate-700 transition-colors hover:border-emerald-600 hover:bg-emerald-50 hover:text-emerald-700"
+          className="w-full border-2 border-dashed border-slate-300 bg-slate-50 py-3 sm:py-4 text-sm sm:text-base font-bold text-slate-700 transition-colors hover:border-emerald-600 hover:bg-emerald-50 hover:text-emerald-700 min-h-[44px]"
         >
           + Add another property
         </button>
       </div>
 
-      <div className="mt-10 bg-slate-900 p-8 text-white">
-        <h4 className="text-lg font-bold text-white mb-6 uppercase tracking-wider">Portfolio summary</h4>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-8 sm:mt-10 bg-slate-900 p-6 sm:p-8 text-white">
+        <h4 className="text-base sm:text-lg font-bold text-white mb-4 sm:mb-6 uppercase tracking-wider">Portfolio summary</h4>
+        <div className="grid gap-4 sm:gap-6 grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Total income</div>
-            <div className="font-mono text-2xl font-bold text-white">
+            <div className="font-mono text-lg sm:text-2xl font-bold text-white">
               £{totalRentalIncome.toLocaleString("en-GB", { maximumFractionDigits: 0 })}
             </div>
           </div>
           <div>
             <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Total profit</div>
             <div
-              className={`font-mono text-2xl font-bold ${
+              className={`font-mono text-lg sm:text-2xl font-bold ${
                 totalNetProfit >= 0 ? "text-emerald-400" : "text-red-400"
               }`}
             >
@@ -200,12 +200,12 @@ export function PortfolioProfitabilityCalculator() {
           </div>
           <div>
             <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Avg gross yield</div>
-            <div className="font-mono text-2xl font-bold text-white">{averageGrossYield.toFixed(1)}%</div>
+            <div className="font-mono text-lg sm:text-2xl font-bold text-white">{averageGrossYield.toFixed(1)}%</div>
           </div>
           <div>
             <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Avg net yield</div>
             <div
-              className={`font-mono text-2xl font-bold ${
+              className={`font-mono text-lg sm:text-2xl font-bold ${
                 averageNetYield >= 0 ? "text-emerald-400" : "text-red-400"
               }`}
             >

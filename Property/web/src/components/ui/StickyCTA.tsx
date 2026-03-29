@@ -31,26 +31,26 @@ export function StickyCTA() {
         visible ? "translate-y-0" : "translate-y-full"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
-        <div className="min-w-0 flex-1 border-l-2 border-emerald-600 pl-4">
-          <p className="text-sm font-bold text-white sm:text-base">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 sm:gap-4 px-4 py-3 sm:py-4 sm:px-6 lg:px-8">
+        <div className="min-w-0 flex-1 border-l-2 border-emerald-600 pl-3 sm:pl-4">
+          <p className="text-xs sm:text-sm font-bold text-white lg:text-base">
             {niche.cta.sticky_primary}
           </p>
           <p className="mt-0.5 hidden text-xs text-slate-300 sm:block">
             {niche.cta.sticky_secondary}
           </p>
         </div>
-        <div className="flex items-center gap-3">
-          <Link href="/contact" className={`${btnPrimary} text-sm bg-emerald-600 border-emerald-800`}>
+        <div className="flex items-center gap-2 sm:gap-3">
+          <Link href="/contact" className={`${btnPrimary} text-xs sm:text-sm bg-emerald-600 border-emerald-800 px-4 py-2 sm:px-6 sm:py-3 min-h-[44px] flex items-center`}>
             {niche.cta.sticky_button}
           </Link>
           <button
             onClick={() => setDismissed(true)}
-            className="flex h-8 w-8 items-center justify-center text-slate-400 transition-colors hover:text-white"
+            className="flex h-11 w-11 items-center justify-center text-slate-400 transition-colors hover:text-white flex-shrink-0"
             aria-label="Dismiss"
             type="button"
           >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>

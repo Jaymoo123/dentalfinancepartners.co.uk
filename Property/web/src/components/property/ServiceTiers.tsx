@@ -53,7 +53,7 @@ const tiers = [
 
 export function ServiceTiers() {
   return (
-    <div className="grid gap-8 md:grid-cols-3 items-start">
+    <div className="grid gap-6 sm:gap-8 md:grid-cols-3 items-start">
       {tiers.map((tier) => (
         <div
           key={tier.name}
@@ -65,27 +65,27 @@ export function ServiceTiers() {
         >
           {tier.featured && (
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-              <div className="bg-emerald-600 px-6 py-1.5 text-xs font-bold text-white uppercase tracking-wider whitespace-nowrap">
+              <div className="bg-emerald-600 px-4 sm:px-6 py-1.5 text-xs font-bold text-white uppercase tracking-wider whitespace-nowrap">
                 Most Popular
               </div>
             </div>
           )}
-          <div className={`p-8 flex flex-col h-full ${tier.featured ? "pt-10" : ""}`}>
-            <div className="text-center mb-6">
-              <div className="text-3xl font-bold text-slate-900">{tier.name}</div>
-              <p className="mt-3 text-sm text-slate-600 leading-relaxed">{tier.description}</p>
+          <div className={`p-6 sm:p-8 flex flex-col h-full ${tier.featured ? "pt-8 sm:pt-10" : ""}`}>
+            <div className="text-center mb-4 sm:mb-6">
+              <div className="text-2xl sm:text-3xl font-bold text-slate-900">{tier.name}</div>
+              <p className="mt-2 sm:mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">{tier.description}</p>
             </div>
-            <ul className="flex-1 space-y-3 mb-8">
+            <ul className="flex-1 space-y-2 sm:space-y-3 mb-6 sm:mb-8">
               {tier.features.map((feature, idx) => (
-                <li key={idx} className="flex items-start gap-3 text-sm text-slate-700">
-                  <span className="text-emerald-600 font-bold flex-shrink-0 text-lg">✓</span>
+                <li key={idx} className="flex items-start gap-2 sm:gap-3 text-xs sm:text-sm text-slate-700">
+                  <span className="text-emerald-600 font-bold flex-shrink-0 text-base sm:text-lg">✓</span>
                   <span className={feature.endsWith(":") ? "font-bold text-slate-900" : ""}>{feature}</span>
                 </li>
               ))}
             </ul>
             <Link
               href={tier.ctaHref}
-              className={`block w-full text-center px-8 py-4 text-base font-bold transition-all border-t-4 mt-auto ${
+              className={`block w-full text-center px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-bold transition-all border-t-4 mt-auto min-h-[44px] flex items-center justify-center ${
                 tier.featured
                   ? "bg-emerald-600 border-emerald-800 text-white hover:bg-emerald-700 active:border-t-2 active:translate-y-0.5"
                   : "bg-slate-50 border-slate-300 text-slate-900 hover:bg-slate-100 hover:border-emerald-600 active:border-t-2 active:translate-y-0.5"
