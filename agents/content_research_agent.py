@@ -15,13 +15,9 @@ from anthropic import Anthropic
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 from agents.config.agent_config import NICHE_CONFIG, ACTIVE_NICHES
-from agents.config.cost_limits import RATE_LIMITS
-from agents.config.research_sources import REDDIT_CONFIG, GOOGLE_TRENDS_CONFIG
 from agents.utils.supabase_client import SupabaseClient
 from agents.utils.cost_tracker import CostTracker
 from agents.utils.error_handler import ErrorHandler
-from agents.utils.deduplication_checker import DeduplicationChecker
-from agents.utils.alerting import send_alert
 from shared_supabase_config import SUPABASE_URL, SUPABASE_KEY
 
 class ContentResearchAgent:
@@ -33,11 +29,6 @@ class ContentResearchAgent:
         self.supabase = SupabaseClient(SUPABASE_URL, SUPABASE_KEY)
         self.cost_tracker = CostTracker(self.supabase)
         self.error_handler = ErrorHandler(self.supabase)
-        self.anthropic = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
-        self.dedup_checker = DeduplicationChecker(
-            self.supabase,
-            os.getenv("ANTHROPIC_API_KEY")
-        )
         
         self.execution_id = None
     
