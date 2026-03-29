@@ -1,5 +1,4 @@
-Fix TypeScript errors in location pages
+Remove ssr: false from dynamic imports in Next.js 15
 
-- Use siteConfig.contact.email and siteConfig.contact.phone
-- Add missing siteConfig imports to Dentists blog and services pages
-- Hardcode organizationType to "AccountingService" for schema.org
+Next.js 15 doesn't allow ssr: false in Server Components with next/dynamic.
+The calculators are already client components, so SSR is disabled by default.

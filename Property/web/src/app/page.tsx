@@ -13,22 +13,22 @@ import { ServiceTiers } from "@/components/property/ServiceTiers";
 // Lazy load calculators (below the fold, client-only)
 const Section24Calculator = dynamic(
   () => import("@/components/calculators/Section24Calculator").then(mod => ({ default: mod.Section24Calculator })),
-  { ssr: false, loading: () => <div className="bg-white border-l-4 border-emerald-600 p-6 sm:p-8 lg:p-10 animate-pulse"><div className="h-96 bg-slate-100 rounded"></div></div> }
+  { loading: () => <div className="bg-white border-l-4 border-emerald-600 p-6 sm:p-8 lg:p-10 animate-pulse"><div className="h-96 bg-slate-100 rounded"></div></div> }
 );
 
 const IncorporationCostCalculator = dynamic(
   () => import("@/components/calculators/IncorporationCostCalculator").then(mod => ({ default: mod.IncorporationCostCalculator })),
-  { ssr: false, loading: () => <div className="bg-white border-l-4 border-amber-600 p-6 sm:p-8 lg:p-10 animate-pulse"><div className="h-96 bg-slate-100 rounded"></div></div> }
+  { loading: () => <div className="bg-white border-l-4 border-amber-600 p-6 sm:p-8 lg:p-10 animate-pulse"><div className="h-96 bg-slate-100 rounded"></div></div> }
 );
 
 const MTDCheckerCalculator = dynamic(
   () => import("@/components/calculators/MTDCheckerCalculator").then(mod => ({ default: mod.MTDCheckerCalculator })),
-  { ssr: false, loading: () => <div className="bg-white border-l-4 border-amber-600 p-6 sm:p-8 lg:p-10 animate-pulse"><div className="h-64 bg-slate-100 rounded"></div></div> }
+  { loading: () => <div className="bg-white border-l-4 border-amber-600 p-6 sm:p-8 lg:p-10 animate-pulse"><div className="h-64 bg-slate-100 rounded"></div></div> }
 );
 
 const PortfolioProfitabilityCalculator = dynamic(
   () => import("@/components/calculators/PortfolioProfitabilityCalculator").then(mod => ({ default: mod.PortfolioProfitabilityCalculator })),
-  { ssr: false, loading: () => <div className="bg-white border-l-4 border-emerald-600 p-6 sm:p-8 lg:p-10 animate-pulse"><div className="h-96 bg-slate-100 rounded"></div></div> }
+  { loading: () => <div className="bg-white border-l-4 border-emerald-600 p-6 sm:p-8 lg:p-10 animate-pulse"><div className="h-96 bg-slate-100 rounded"></div></div> }
 );
 
 export const metadata: Metadata = {
