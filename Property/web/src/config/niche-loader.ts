@@ -1,4 +1,4 @@
-import nicheConfigJson from "../../../../niche.config.json";
+import nicheConfigJson from "../../../niche.config.json";
 
 export interface NicheConfig {
   niche_id: string;
