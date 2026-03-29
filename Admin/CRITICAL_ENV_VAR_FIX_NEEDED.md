@@ -22,6 +22,20 @@ SUPABASE_KEY=eyJhbGci...  # This should be the SERVICE_ROLE key
 
 ## 🔍 Why This Matters
 
+### Why Agents Need a Key (Not MCP)
+
+**Your agents use direct HTTP calls to Supabase:**
+- They use `httpx` library to call Supabase REST API directly
+- They do NOT use the Supabase MCP server
+- MCP is only for the AI assistant (me) to interact with your database
+- Agents read `SUPABASE_KEY` from `.env` and pass it in HTTP headers
+
+**Architecture:**
+```
+AI Assistant → Supabase MCP → Your database
+Python Agents → httpx + REST API + key from .env → Your database
+```
+
 ### Anon Key (What you have now)
 - ✅ Used by browsers/frontend
 - ✅ Limited permissions (INSERT leads only after RLS)
