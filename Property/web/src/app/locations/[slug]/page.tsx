@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { CTASection } from "@/components/ui/CTASection";
-import { btnPrimary, contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
+import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { getAllPosts } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -22,12 +23,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cityName = slug.charAt(0).toUpperCase() + slug.slice(1);
   const canonical = `${siteConfig.url}/locations/${loc.slug}`;
   return {
-    title: `Dental Accountant ${cityName} | ${siteConfig.name}`,
-    description: `Specialist dental accountant in ${cityName} for associates, practice owners & groups. NHS contracts, tax planning, VAT & acquisitions. Book a free consultation.`,
+    title: `Property Accountant ${cityName} | ${siteConfig.name}`,
+    description: `Specialist property accountant in ${cityName} for landlords and investors. Section 24 planning, MTD compliance, incorporation analysis. Book a free consultation.`,
     alternates: { canonical },
     openGraph: {
-      title: `Dental Accountant ${cityName} | ${siteConfig.name}`,
-      description: `Specialist dental accountant in ${cityName} for associates, practice owners & groups. NHS contracts, tax planning, VAT & acquisitions.`,
+      title: `Property Accountant ${cityName} | ${siteConfig.name}`,
+      description: `Specialist property accountant in ${cityName} for landlords and investors. Section 24, MTD, incorporation.`,
       url: canonical,
       type: "website",
     },
@@ -41,40 +42,97 @@ const cityContent: Record<string, {
   services: { title: string; desc: string }[];
 }> = {
   london: {
-    intro: "We're specialist dental accountants serving dental practices, associates, and owners across London. Whether you're based in the City, West End, Canary Wharf, or anywhere across Greater London, we provide expert accounting and tax services tailored specifically to the dental sector.",
-    areas: "We work with dental professionals across Central London, North London, South London, East London, and West London — including the City of London, Westminster, Camden, Islington, Hackney, Tower Hamlets, Southwark, Lambeth, Wandsworth, Hammersmith & Fulham, Kensington & Chelsea, and surrounding boroughs.",
-    whyLocal: "London has one of the highest concentrations of dental practices in the UK, from single-chair private practices in Harley Street to large NHS-focused clinics in outer boroughs. We understand the local market, the competitive landscape, and the specific challenges London-based dentists face — from higher operating costs to complex mixed-income structures.",
+    intro: "Specialist property accountants serving landlords and investors across London. Whether you're based in Central London, Zone 2-6, or Greater London, we provide expert accounting and tax services tailored specifically to property investors.",
+    areas: "We work with landlords across all London boroughs — from Central London (Westminster, City, Camden) to North (Barnet, Enfield), South (Croydon, Bromley), East (Tower Hamlets, Newham), and West London (Ealing, Hounslow).",
+    whyLocal: "London has the UK's most active property market, with unique challenges: high property values, complex Section 24 implications, and significant incorporation costs due to CGT and SDLT. We understand the London market dynamics and help you make informed decisions.",
     services: [
       {
-        title: "Associate dentist tax & self assessment",
-        desc: "Most associates in London are self-employed. We handle your self assessment, ensure all legitimate expenses are claimed, and advise on when incorporation makes sense as your income grows.",
+        title: "Section 24 tax planning",
+        desc: "London landlords are hit hardest by Section 24 due to high property values and mortgage levels. We calculate your specific impact and model whether incorporation makes financial sense.",
       },
       {
-        title: "Practice owner accounting & tax planning",
-        desc: "For London practice owners, we provide year-end accounts, corporation tax returns, VAT advice, and strategic tax planning to optimize profit extraction and minimize your tax burden.",
+        title: "MTD compliance (April 2026)",
+        desc: "Quarterly digital reporting becomes mandatory from 6 April 2026. We set you up with the right software and handle submissions so you avoid penalties.",
       },
       {
-        title: "Practice acquisition & due diligence",
-        desc: "Buying a practice in London is a significant investment. We provide pre-purchase financial due diligence, help you understand the true profitability, and advise on structuring the acquisition.",
+        title: "Incorporation feasibility",
+        desc: "Transferring London properties to a limited company triggers significant CGT and SDLT. We model the upfront costs vs. long-term savings and give you a clear recommendation.",
       },
     ],
   },
   manchester: {
-    intro: "We're specialist dental accountants serving dental practices, associates, and owners across Manchester. Whether you're based in the City Centre, Salford, Trafford, or anywhere across Greater Manchester, we provide expert accounting and tax services tailored specifically to the dental sector.",
-    areas: "We work with dental professionals across Manchester City Centre, Salford, Trafford, Stockport, Oldham, Rochdale, Bury, Bolton, Wigan, and surrounding areas of Greater Manchester.",
-    whyLocal: "Manchester's dental sector is diverse, with a strong mix of NHS and private practices. We understand the local market dynamics, from high-street mixed practices to specialist referral clinics, and the financial challenges Manchester-based dentists face — including NHS contract management and associate recruitment.",
+    intro: "Specialist property accountants serving landlords and investors across Manchester. Whether you're based in the City Centre, Salford, Trafford, or Greater Manchester, we provide expert accounting and tax services tailored specifically to property investors.",
+    areas: "We work with landlords across Manchester City Centre, Salford, Trafford, Stockport, Oldham, Rochdale, Bury, Bolton, Wigan, and surrounding areas of Greater Manchester.",
+    whyLocal: "Manchester's property market offers strong rental yields and growing capital appreciation. We help Manchester landlords navigate Section 24, MTD compliance, and incorporation decisions specific to the local market dynamics.",
     services: [
       {
-        title: "Associate dentist tax & self assessment",
-        desc: "Most associates in Manchester are self-employed. We handle your self assessment, ensure all legitimate expenses are claimed, and advise on when incorporation makes sense as your income grows.",
+        title: "Section 24 tax planning",
+        desc: "Calculate your Section 24 impact and explore ways to reduce the tax hit. We model your specific situation and recommend the most tax-efficient structure.",
       },
       {
-        title: "Practice owner accounting & tax planning",
-        desc: "For Manchester practice owners, we provide year-end accounts, corporation tax returns, VAT advice, and strategic tax planning to optimize profit extraction and minimize your tax burden.",
+        title: "MTD compliance (April 2026)",
+        desc: "Get ready for Making Tax Digital quarterly reporting. We handle software setup, quarterly submissions, and ensure you're compliant before the deadline.",
       },
       {
-        title: "Practice acquisition & due diligence",
-        desc: "Buying a practice in Manchester requires careful financial analysis. We provide pre-purchase due diligence, help you understand the true profitability, and advise on structuring the acquisition.",
+        title: "Portfolio accounting",
+        desc: "Track profitability property-by-property. We produce quarterly reports showing which properties are making money and which need attention.",
+      },
+    ],
+  },
+  birmingham: {
+    intro: "Specialist property accountants serving landlords and investors across Birmingham. Whether you're based in the City Centre, Edgbaston, Solihull, or anywhere across the West Midlands, we provide expert accounting and tax services tailored specifically to property investors.",
+    areas: "We work with landlords across Birmingham City Centre, Edgbaston, Harborne, Solihull, Sutton Coldfield, and surrounding areas of the West Midlands.",
+    whyLocal: "Birmingham's property market offers excellent value for buy-to-let investors. We help Birmingham landlords with Section 24 planning, MTD compliance, and incorporation analysis.",
+    services: [
+      {
+        title: "Section 24 tax planning",
+        desc: "Calculate your Section 24 impact and explore tax-efficient structures for your Birmingham portfolio.",
+      },
+      {
+        title: "MTD compliance",
+        desc: "Quarterly digital reporting from April 2026. We handle setup and submissions.",
+      },
+      {
+        title: "Incorporation analysis",
+        desc: "Model the costs and benefits of transferring your Birmingham properties to a limited company.",
+      },
+    ],
+  },
+  leeds: {
+    intro: "Specialist property accountants serving landlords and investors across Leeds. Whether you're based in the City Centre, Headingley, Chapel Allerton, or anywhere across West Yorkshire, we provide expert accounting and tax services tailored specifically to property investors.",
+    areas: "We work with landlords across Leeds City Centre, Headingley, Chapel Allerton, Roundhay, Horsforth, and surrounding areas of West Yorkshire.",
+    whyLocal: "Leeds has a strong rental market driven by students and young professionals. We help Leeds landlords navigate Section 24, MTD, and incorporation decisions.",
+    services: [
+      {
+        title: "Section 24 tax planning",
+        desc: "Calculate your Section 24 impact for your Leeds portfolio and explore mitigation strategies.",
+      },
+      {
+        title: "MTD compliance",
+        desc: "Get ready for quarterly digital reporting from April 2026.",
+      },
+      {
+        title: "Portfolio management",
+        desc: "Track profitability across your Leeds properties with property-level reporting.",
+      },
+    ],
+  },
+  bristol: {
+    intro: "Specialist property accountants serving landlords and investors across Bristol. Whether you're based in the City Centre, Clifton, Redland, or anywhere across the South West, we provide expert accounting and tax services tailored specifically to property investors.",
+    areas: "We work with landlords across Bristol City Centre, Clifton, Redland, Southville, Bedminster, and surrounding areas of the South West.",
+    whyLocal: "Bristol's property market combines strong capital growth with solid rental yields. We help Bristol landlords with Section 24 planning, MTD compliance, and strategic tax advice.",
+    services: [
+      {
+        title: "Section 24 tax planning",
+        desc: "Calculate your Section 24 impact for your Bristol portfolio and model tax-efficient structures.",
+      },
+      {
+        title: "MTD compliance",
+        desc: "Quarterly digital reporting from April 2026. We handle the setup and submissions.",
+      },
+      {
+        title: "Incorporation feasibility",
+        desc: "Model whether transferring your Bristol properties to a limited company makes financial sense.",
       },
     ],
   },
@@ -88,86 +146,124 @@ export default async function LocationPage({ params }: Props) {
   }
 
   const content = cityContent[slug];
+  if (!content) {
+    notFound();
+  }
+
   const cityName = slug.charAt(0).toUpperCase() + slug.slice(1);
-  const posts = getAllPosts().slice(0, 3);
+  const posts = getAllPosts()
+    .filter((p) => p.category?.toLowerCase().includes("property") || p.category?.toLowerCase().includes("landlord"))
+    .slice(0, 5);
 
   return (
-    <div className={`${contentNarrow} ${sectionY}`}>
-      <Breadcrumb
-        items={[
-          { label: "Home", href: "/" },
-          { label: "Locations", href: "/locations" },
-          { label: cityName },
-        ]}
-      />
-      <h1 className="font-serif text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
-        Dental accountant {cityName}
-      </h1>
-      <p className="mt-6 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-        {content.intro}
-      </p>
-
-      <h2 className="mt-12 font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
-        Specialist dental accounting services in {cityName}
-      </h2>
-      <div className="mt-8 space-y-8">
-        {content.services.map((service) => (
-          <div key={service.title} className="card-flat p-6 sm:p-8">
-            <h3 className="text-lg font-semibold text-[var(--navy)] sm:text-xl">{service.title}</h3>
-            <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{service.desc}</p>
-          </div>
-        ))}
-      </div>
-
-      <h2 className="mt-12 font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
-        Areas we serve in {cityName}
-      </h2>
-      <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-        {content.areas}
-      </p>
-
-      <h2 className="mt-12 font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
-        Why choose a {cityName}-based dental accountant?
-      </h2>
-      <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-        {content.whyLocal}
-      </p>
-      <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-        We work with dental practices across the UK, but we understand the specific dynamics of the {cityName} market. Whether you need face-to-face meetings or prefer remote support, we&apos;re here to help.
-      </p>
-
-      <h2 className="mt-12 font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
-        How to get started
-      </h2>
-      <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-        Book a free consultation to discuss your accounting needs. We&apos;ll arrange a short introductory call to understand your practice structure, current challenges, and how we can help. No obligation, no hard sell.
-      </p>
-      <div className="mt-8">
-        <Link href="/contact" className={`${btnPrimary} inline-flex`}>
-          Book your free consultation
-        </Link>
-      </div>
-
-      <h2 className="mt-12 font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">Related articles</h2>
-      <ul className="mt-6 space-y-3">
-        {posts.map((p) => (
-          <li key={p.slug}>
-            <Link
-              href={`/blog/${p.slug}`}
-              className={`inline-flex min-h-10 items-center text-[var(--accent-strong)] underline ${focusRing} rounded`}
-            >
-              {p.title}
-            </Link>
-          </li>
-        ))}
-      </ul>
-
-      <div className="mt-12">
-        <CTASection
-          title={`Speak to a dental accountant in ${cityName}`}
-          description="Tell us about your practice structure and we'll explain how we can help with your accounting, tax, and financial planning."
+    <>
+      <section className="relative h-[350px] overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=2000&q=85"
+          alt={`${cityName} property`}
+          fill
+          className="object-cover brightness-75"
         />
-      </div>
-    </div>
+        <div className="absolute inset-0 bg-slate-900/85" />
+        <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
+          <div className="max-w-3xl">
+            <Breadcrumb
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Locations", href: "/locations" },
+                { label: cityName },
+              ]}
+            />
+            <h1 className="mt-6 text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
+              Property accountant {cityName}
+            </h1>
+            <p className="mt-4 text-xl text-white">
+              Specialist property accountants serving landlords across {cityName}.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg leading-relaxed text-slate-700">
+              {content.intro}
+            </p>
+
+            <h2 className="mt-12 text-3xl font-bold text-slate-900">
+              Specialist property accounting services in {cityName}
+            </h2>
+            <div className="mt-8 space-y-6">
+              {content.services.map((service) => (
+                <div key={service.title} className="border-l-4 border-emerald-600 bg-slate-50 p-8">
+                  <h3 className="text-xl font-bold text-slate-900">{service.title}</h3>
+                  <p className="mt-3 text-base leading-relaxed text-slate-700">{service.desc}</p>
+                </div>
+              ))}
+            </div>
+
+            <h2 className="mt-16 text-3xl font-bold text-slate-900">
+              Areas we serve in {cityName}
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-700">
+              {content.areas}
+            </p>
+
+            <h2 className="mt-16 text-3xl font-bold text-slate-900">
+              Why choose a {cityName}-based property accountant?
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-700">
+              {content.whyLocal}
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-slate-700">
+              We work with landlords across the UK, but we understand the specific dynamics of the {cityName} property market. Remote support with local market knowledge.
+            </p>
+
+            <div className="mt-12 bg-emerald-50 border-l-4 border-emerald-600 p-8">
+              <h2 className="text-2xl font-bold text-slate-900">
+                How to get started
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-slate-700">
+                Book a free consultation to discuss your property tax situation. We'll give you clear recommendations — no obligation, no hard sell.
+              </p>
+              <div className="mt-6">
+                <Link href="/contact" className={`${btnPrimary} inline-flex text-base px-8 py-3.5`}>
+                  Book your free consultation
+                </Link>
+              </div>
+            </div>
+
+            {posts.length > 0 && (
+              <>
+                <h2 className="mt-16 text-3xl font-bold text-slate-900">Related articles</h2>
+                <ul className="mt-8 space-y-4">
+                  {posts.map((p) => (
+                    <li key={p.slug}>
+                      <Link
+                        href={`/blog/${p.slug}`}
+                        className="block border-l-4 border-slate-300 bg-slate-50 p-6 transition-all hover:border-emerald-600 hover:bg-white hover:shadow-md"
+                      >
+                        <h3 className="text-lg font-bold text-slate-900">{p.title}</h3>
+                        <p className="mt-2 text-sm text-slate-600">{p.summary}</p>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-slate-50 py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <CTASection
+            title={`Speak to a property accountant in ${cityName}`}
+            description="Tell us about your portfolio and we'll explain how we can help with Section 24, MTD, and incorporation planning."
+          />
+        </div>
+      </section>
+    </>
   );
 }

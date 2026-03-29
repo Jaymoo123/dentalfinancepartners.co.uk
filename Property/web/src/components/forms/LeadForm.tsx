@@ -3,14 +3,15 @@
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
+import { niche } from "@/config/niche-loader";
+import { submitLead, getSupabaseConfig } from "@/lib/supabase-client";
 
 const fieldClass =
-  "mt-1 w-full min-h-12 touch-manipulation rounded-lg border border-[var(--border)] bg-[var(--surface)] px-3.5 py-3 text-base text-[var(--ink)] shadow-sm focus:border-[var(--accent)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/25";
+  "mt-1 w-full min-h-12 touch-manipulation rounded-lg border-2 border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 shadow-sm focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-600/25 transition-colors";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
 const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-// UK phone: at least 10 digits total (ignoring spaces, dashes, parens, +)
 const ukPhoneRe = /^[\d\s+().-]{10,}$/;
 
 function hasMinDigits(phone: string, min: number): boolean {
@@ -19,7 +20,6 @@ function hasMinDigits(phone: string, min: number): boolean {
 }
 
 type LeadFormProps = {
-  /** When false, successful submit shows inline message instead of redirecting */
   redirectOnSuccess?: boolean;
   submitLabel?: string;
 };
@@ -40,8 +40,7 @@ export function LeadForm({
     }
   }, []);
 
-  const supabaseUrl = typeof process !== "undefined" ? process.env.NEXT_PUBLIC_SUPABASE_URL : undefined;
-  const supabaseKey = typeof process !== "undefined" ? process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY : undefined;
+  const { supabaseUrl, supabaseKey } = getSupabaseConfig();
 
   const validate = useCallback((data: FormData) => {
     const errs: Record<string, string> = {};
@@ -54,17 +53,16 @@ export function LeadForm({
     if (fullName.length < 2) errs.fullName = "Enter your name.";
     if (!emailRe.test(email)) errs.email = "Enter a valid email address.";
     
-    // Phone: must have at least 10 digits and only allowed chars
     if (!ukPhoneRe.test(phone)) {
-      errs.phone = "Use only digits, spaces, +, -, ( ) — e.g. 07700 900123 or +44 20 1234 5678";
+      errs.phone = "Use only digits, spaces, +, -, ( ) — e.g. 07700 900123";
     } else if (!hasMinDigits(phone, 10)) {
       errs.phone = "Enter at least 10 digits.";
     }
     
-    if (!role) errs.role = "Tell us whether you are an associate, owner, or group.";
+    if (!role) errs.role = "Select your landlord type.";
 
     if (message.length > 0 && message.length < 10) {
-      errs.message = "If you add a note, a sentence or two is enough — but not just a word or two.";
+      errs.message = "Add a sentence or two if you have a specific question.";
     }
 
     return errs;
@@ -82,7 +80,7 @@ export function LeadForm({
     if (!supabaseUrl || !supabaseKey) {
       setStatus("error");
       setErrorMessage(
-        "This form is not connected yet. Email us using the address on this page — we will pick it up the same day.",
+        "Form not connected. Email us directly — we respond same day.",
       );
       return;
     }
@@ -93,215 +91,179 @@ export function LeadForm({
       email: String(data.get("email") || "").trim(),
       phone: String(data.get("phone") || "").trim(),
       role: String(data.get("role") || "").trim(),
-      practice_name: String(data.get("practiceName") || "").trim() || "—",
+      practice_name: "—",
       message: String(data.get("message") || "").trim(),
+      source: niche.content_strategy.source_identifier,
       source_url: sourceUrl || String(data.get("sourceUrl") || "").trim(),
       submitted_at: new Date().toISOString(),
     };
 
-    try {
-      const res = await fetch(`${supabaseUrl}/rest/v1/leads`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "apikey": supabaseKey,
-          "Authorization": `Bearer ${supabaseKey}`,
-          "Prefer": "return=minimal"
-        },
-        body: JSON.stringify(payload),
-      });
+    const result = await submitLead(payload, supabaseUrl, supabaseKey);
 
-      if (!res.ok) {
-        const errorText = await res.text().catch(() => "");
-        console.error("Form submission failed:", res.status, errorText);
-        throw new Error(`Request failed (${res.status})`);
-      }
-
-      console.log("Form submission success");
-
-      // Track conversion in Google Analytics
-      if (typeof window !== "undefined" && "gtag" in window) {
-        const gtag = (window as { gtag?: (...args: unknown[]) => void }).gtag;
-        if (gtag) {
-          gtag("event", "generate_lead", {
-            event_category: "engagement",
-            event_label: payload.role,
-            value: 1,
-          });
-        }
-      }
-
-      setStatus("success");
-      form.reset();
-      if (redirectOnSuccess) {
-        router.push("/thank-you");
-      }
-    } catch (err) {
-      console.error("Form submission error:", err);
+    if (!result.success) {
       setStatus("error");
-      const errMsg = err instanceof Error ? err.message : String(err);
-      setErrorMessage(
-        `That did not go through (${errMsg}). Try again, or email us — either works.`
-      );
+      setErrorMessage(result.error || "Something went wrong. Please try again or email us directly.");
+      return;
+    }
+
+    // Track conversion in Google Analytics
+    if (typeof window !== "undefined" && "gtag" in window) {
+      const gtag = (window as { gtag?: (...args: unknown[]) => void }).gtag;
+      if (gtag) {
+        gtag("event", "generate_lead", {
+          event_category: "engagement",
+          event_label: `${niche.niche_id}_${payload.role}`,
+          value: 1,
+        });
+      }
+    }
+
+    setStatus("success");
+    form.reset();
+
+    if (redirectOnSuccess) {
+      setTimeout(() => {
+        router.push("/thank-you");
+      }, 800);
     }
   }
 
-  if (status === "success" && !redirectOnSuccess) {
-    return (
-      <div
-        className="rounded-xl border border-emerald-200 bg-emerald-50 p-6 text-emerald-900"
-        role="status"
-      >
-        <p className="font-semibold">Thank you — we have your message.</p>
-        <p className="mt-2 text-sm">We will come back within one working day.</p>
-      </div>
-    );
-  }
-
   return (
-    <form
-      onSubmit={onSubmit}
-      className="space-y-6"
-      noValidate
-      aria-busy={status === "loading" ? "true" : "false"}
-    >
-      <input type="hidden" name="sourceUrl" value={sourceUrl} readOnly />
-      <input type="hidden" name="practiceName" value="" readOnly />
+    <form onSubmit={onSubmit} className="space-y-5">
+      <input type="hidden" name="sourceUrl" value={sourceUrl} />
 
       <div>
-        <label htmlFor="fullName" className="block text-sm font-medium text-[var(--ink)]">
-          Your name
-        </label>
-        <input
-          id="fullName"
-          name="fullName"
-          type="text"
-          autoComplete="name"
-          required
-          placeholder="Dr Sarah Patel"
-          className={fieldClass}
-          aria-invalid={fieldErrors.fullName ? "true" : "false"}
-          aria-describedby={fieldErrors.fullName ? "err-fullName" : undefined}
-        />
-        {fieldErrors.fullName ? (
-          <p id="err-fullName" className="mt-1 text-sm text-red-700">
-            {fieldErrors.fullName}
-          </p>
-        ) : null}
-      </div>
-
-      <div className="grid gap-5 sm:grid-cols-2">
-        <div>
-          <label htmlFor="email" className="block text-sm font-medium text-[var(--ink)]">
-            Email address
-          </label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            autoComplete="email"
-            required
-            placeholder="sarah@example.com"
-            className={fieldClass}
-            aria-invalid={fieldErrors.email ? "true" : "false"}
-            aria-describedby={fieldErrors.email ? "err-email" : undefined}
-          />
-          {fieldErrors.email ? (
-            <p id="err-email" className="mt-1 text-sm text-red-700">
-              {fieldErrors.email}
-            </p>
-          ) : null}
-        </div>
-        <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-[var(--ink)]">
-            Phone number
-          </label>
-          <input
-            id="phone"
-            name="phone"
-            type="tel"
-            autoComplete="tel"
-            required
-            placeholder="07700 000000"
-            className={fieldClass}
-            aria-invalid={fieldErrors.phone ? "true" : "false"}
-            aria-describedby={fieldErrors.phone ? "err-phone" : undefined}
-          />
-          {fieldErrors.phone ? (
-            <p id="err-phone" className="mt-1 text-sm text-red-700">
-              {fieldErrors.phone}
-            </p>
-          ) : null}
-        </div>
-      </div>
-
-      <div>
-        <label htmlFor="role" className="block text-sm font-medium text-[var(--ink)]">
-          I am a…
+        <label htmlFor="role" className="block text-sm font-semibold text-slate-900">
+          {niche.lead_form.role_label}
         </label>
         <select
           id="role"
           name="role"
-          required
-          defaultValue=""
           className={fieldClass}
-          aria-invalid={fieldErrors.role ? "true" : "false"}
-          aria-describedby={fieldErrors.role ? "err-role" : undefined}
+          aria-invalid={!!fieldErrors.role}
+          aria-describedby={fieldErrors.role ? "role-error" : undefined}
         >
-          <option value="" disabled>
-            Please select
-          </option>
-          <option value="Associate dentist">Associate dentist</option>
-          <option value="Practice owner">Practice owner</option>
-          <option value="Multi-practice group">Multi-practice group</option>
-          <option value="Other">Other</option>
+          <option value="">Select...</option>
+          {niche.lead_form.role_options.map((opt) => (
+            <option key={opt.value} value={opt.value}>
+              {opt.label}
+            </option>
+          ))}
         </select>
-        {fieldErrors.role ? (
-          <p id="err-role" className="mt-1 text-sm text-red-700">
+        {fieldErrors.role && (
+          <p id="role-error" className="mt-1.5 text-xs font-medium text-red-600">
             {fieldErrors.role}
           </p>
-        ) : null}
+        )}
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-[var(--ink)]">
-          What&apos;s on your mind?{" "}
-          <span className="font-normal text-[var(--muted)]">(optional)</span>
+        <label htmlFor="fullName" className="block text-sm font-semibold text-slate-900">
+          Full name
+        </label>
+        <input
+          type="text"
+          id="fullName"
+          name="fullName"
+          placeholder={niche.lead_form.placeholders.name}
+          className={fieldClass}
+          aria-invalid={!!fieldErrors.fullName}
+          aria-describedby={fieldErrors.fullName ? "fullName-error" : undefined}
+        />
+        {fieldErrors.fullName && (
+          <p id="fullName-error" className="mt-1.5 text-xs font-medium text-red-600">
+            {fieldErrors.fullName}
+          </p>
+        )}
+      </div>
+
+      <div className="grid gap-5 sm:grid-cols-2">
+        <div>
+          <label htmlFor="email" className="block text-sm font-semibold text-slate-900">
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder={niche.lead_form.placeholders.email}
+            className={fieldClass}
+            aria-invalid={!!fieldErrors.email}
+            aria-describedby={fieldErrors.email ? "email-error" : undefined}
+          />
+          {fieldErrors.email && (
+            <p id="email-error" className="mt-1.5 text-xs font-medium text-red-600">
+              {fieldErrors.email}
+            </p>
+          )}
+        </div>
+
+        <div>
+          <label htmlFor="phone" className="block text-sm font-semibold text-slate-900">
+            Phone
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder={niche.lead_form.placeholders.phone}
+            className={fieldClass}
+            aria-invalid={!!fieldErrors.phone}
+            aria-describedby={fieldErrors.phone ? "phone-error" : undefined}
+          />
+          {fieldErrors.phone && (
+            <p id="phone-error" className="mt-1.5 text-xs font-medium text-red-600">
+              {fieldErrors.phone}
+            </p>
+          )}
+        </div>
+      </div>
+
+      <div>
+        <label htmlFor="message" className="block text-sm font-semibold text-slate-900">
+          Message <span className="font-normal text-slate-500">(optional)</span>
         </label>
         <textarea
           id="message"
           name="message"
           rows={4}
-          className={`${fieldClass} min-h-[9rem] resize-y py-3`}
-          placeholder="e.g. I'm not sure if I should incorporate my practice, or I'd like help with my self assessment…"
-          aria-invalid={fieldErrors.message ? "true" : "false"}
-          aria-describedby={fieldErrors.message ? "err-message" : undefined}
+          placeholder={niche.lead_form.placeholders.message}
+          className={fieldClass}
+          aria-invalid={!!fieldErrors.message}
+          aria-describedby={fieldErrors.message ? "message-error" : undefined}
         />
-        {fieldErrors.message ? (
-          <p id="err-message" className="mt-1 text-sm text-red-700">
+        {fieldErrors.message && (
+          <p id="message-error" className="mt-1.5 text-xs font-medium text-red-600">
             {fieldErrors.message}
           </p>
-        ) : null}
+        )}
       </div>
 
-      {status === "error" && errorMessage ? (
-        <div
-          className="rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-900"
-          role="alert"
-        >
-          {errorMessage}
+      {errorMessage && (
+        <div className="rounded-lg border-2 border-red-200 bg-red-50 p-4">
+          <p className="text-sm font-medium text-red-800">{errorMessage}</p>
         </div>
-      ) : null}
+      )}
+
+      {status === "success" && !redirectOnSuccess && (
+        <div className="rounded-lg border-2 border-emerald-200 bg-emerald-50 p-4">
+          <p className="text-sm font-semibold text-emerald-900">
+            Thanks! We'll be in touch within 24 hours.
+          </p>
+        </div>
+      )}
 
       <button
         type="submit"
-        disabled={status === "loading"}
-        className={`${btnPrimary} w-full min-w-0 sm:min-w-[12rem]`}
+        disabled={status === "loading" || status === "success"}
+        className={`${btnPrimary} w-full`}
       >
-        {status === "loading" ? "Sending…" : submitLabel}
+        {status === "loading" ? "Sending..." : status === "success" ? "Sent!" : submitLabel}
       </button>
 
-      <p className="text-xs leading-relaxed text-[var(--muted)]">We do not share your details with third parties.</p>
+      <p className="text-xs leading-relaxed text-slate-500">
+        We respond within 24 hours. Your details are stored securely and never shared.
+      </p>
     </form>
   );
 }

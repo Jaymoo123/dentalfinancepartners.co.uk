@@ -19,22 +19,24 @@ const cormorant = Cormorant_Garamond({
 
 const siteUrl = siteConfig.url;
 
+import { niche } from "@/config/niche-loader";
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
-  themeColor: "#001B3D",
+  themeColor: niche.seo.theme_color,
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${siteConfig.name} | UK dental practice finance & accounting`,
+    default: `${siteConfig.name} | ${siteConfig.tagline}`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   verification: {
-    google: "6Yl4g8aauEScoYRA4pqJ-d-l_CeAhKUPV1dHvOirf1E",
+    google: niche.seo.google_site_verification,
   },
   openGraph: {
     type: "website",
@@ -55,7 +57,7 @@ export default function RootLayout({
   return (
     <html lang="en-GB">
       <head>
-        <GoogleAnalytics measurementId="G-273RJY0LZQ" />
+        <GoogleAnalytics measurementId={niche.seo.google_analytics_id} />
       </head>
       <body
         className={`${plusJakarta.variable} ${cormorant.variable} ${plusJakarta.className} antialiased`}

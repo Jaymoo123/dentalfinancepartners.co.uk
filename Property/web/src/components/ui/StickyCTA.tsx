@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { btnPrimary } from "./layout-utils";
+import { niche } from "@/config/niche-loader";
 
 export function StickyCTA() {
   const [visible, setVisible] = useState(false);
@@ -26,30 +27,31 @@ export function StickyCTA() {
 
   return (
     <div
-      className={`fixed bottom-0 left-0 right-0 z-50 transform border-t border-[var(--border)] bg-white/95 shadow-lg backdrop-blur-sm transition-transform duration-300 ${
+      className={`fixed bottom-0 left-0 right-0 z-50 transform border-t-4 border-emerald-600 bg-slate-900 shadow-2xl transition-transform duration-300 ${
         visible ? "translate-y-0" : "translate-y-full"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <div className="min-w-0 flex-1">
-          <p className="text-sm font-semibold text-[var(--navy)] sm:text-base">
-            Ready to work with a specialist dental accountant?
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+        <div className="min-w-0 flex-1 border-l-2 border-emerald-600 pl-4">
+          <p className="text-sm font-bold text-white sm:text-base">
+            {niche.cta.sticky_primary}
           </p>
-          <p className="mt-0.5 hidden text-xs text-[var(--muted)] sm:block">
-            Book your free consultation today
+          <p className="mt-0.5 hidden text-xs text-slate-300 sm:block">
+            {niche.cta.sticky_secondary}
           </p>
         </div>
         <div className="flex items-center gap-3">
-          <Link href="/contact" className={`${btnPrimary} text-sm`}>
-            Get started
+          <Link href="/contact" className={`${btnPrimary} text-sm bg-emerald-600 border-emerald-800`}>
+            {niche.cta.sticky_button}
           </Link>
           <button
             onClick={() => setDismissed(true)}
-            className="flex h-8 w-8 items-center justify-center rounded-full text-[var(--muted)] transition-colors hover:bg-[var(--surface)] hover:text-[var(--ink)]"
+            className="flex h-8 w-8 items-center justify-center text-slate-400 transition-colors hover:text-white"
             aria-label="Dismiss"
+            type="button"
           >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         </div>

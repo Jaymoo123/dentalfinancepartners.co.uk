@@ -1,0 +1,128 @@
+{
+  "niche_id": "dentists",
+  "display_name": "Dental Finance Partners",
+  "legal_name": "Dental Finance Partners Ltd",
+  "domain": "dentalfinancepartners.co.uk",
+  "tagline": "Accounting for UK dentists \u00e2\u20ac\u201d nothing else",
+  "description": "Dental accountants for associates, practice owners, and multi-site groups. NHS contracts, associate tax, VAT in a practice, and acquisitions \u00e2\u20ac\u201d we only work with dentists.",
+  "brand": {
+    "primary_color": "#2563eb",
+    "logo_path": "/brand/logo.png",
+    "publisher_logo_url": "/og-placeholder.svg"
+  },
+  "contact": {
+    "email": "hello@dentalfinancepartners.co.uk",
+    "phone": "+44 20 0000 0000"
+  },
+  "navigation": [
+    {
+      "label": "Services",
+      "href": "/services"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "footer_links": [
+    {
+      "label": "Locations",
+      "href": "/locations"
+    },
+    {
+      "label": "Privacy policy",
+      "href": "/privacy-policy"
+    },
+    {
+      "label": "Terms",
+      "href": "/terms"
+    },
+    {
+      "label": "Cookie policy",
+      "href": "/cookie-policy"
+    }
+  ],
+  "locations": [
+    {
+      "slug": "london",
+      "title": "Dental finance & accounting in London"
+    },
+    {
+      "slug": "manchester",
+      "title": "Dental finance & accounting in Manchester"
+    }
+  ],
+  "content_strategy": {
+    "audience": "UK dental practice owners and associate dentists",
+    "categories": [
+      "Practice accounting",
+      "Associate tax",
+      "Buying a practice",
+      "Practice finance",
+      "VAT & compliance"
+    ],
+    "supabase_table": "blog_topics",
+    "source_identifier": "dentists"
+  },
+  "seo": {
+    "locale": "en-GB",
+    "organization_type": "ProfessionalService",
+    "service_areas": [
+      "London",
+      "Manchester",
+      "Birmingham",
+      "Leeds",
+      "Bristol"
+    ],
+    "google_analytics_id": "G-273RJY0LZQ",
+    "google_site_verification": "6Yl4g8aauEScoYRA4pqJ-d-l_CeAhKUPV1dHvOirf1E",
+    "theme_color": "#001B3D"
+  },
+  "lead_form": {
+    "role_label": "I am a\u00e2\u20ac\u00a6",
+    "role_options": [
+      {
+        "value": "Associate dentist",
+        "label": "Associate dentist"
+      },
+      {
+        "value": "Practice owner",
+        "label": "Practice owner"
+      },
+      {
+        "value": "Multi-practice group",
+        "label": "Multi-practice group"
+      },
+      {
+        "value": "Other",
+        "label": "Other"
+      }
+    ],
+    "placeholders": {
+      "name": "Dr Sarah Patel",
+      "email": "sarah@example.com",
+      "phone": "07700 000000",
+      "message": "e.g. I'm not sure if I should incorporate my practice, or I'd like help with my self assessment\u00e2\u20ac\u00a6"
+    }
+  },
+  "cta": {
+    "sticky_primary": "Ready to work with a specialist dental accountant?",
+    "sticky_secondary": "Book your free consultation today",
+    "sticky_button": "Get started"
+  },
+  "blog": {
+    "cta_heading": "Get specialist advice for your situation",
+    "cta_body": "Every dental practice is different. If you would like to discuss how this applies to your specific circumstances, fill in the form below and we will arrange a short introductory call.",
+    "cta_button": "Request a callback"
+  },
+  "shared_components_version": "1.0.0",
+  "last_sync": "2026-03-29T13:55:26.408391"
+}

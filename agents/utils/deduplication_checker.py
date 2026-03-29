@@ -93,12 +93,22 @@ class DeduplicationChecker:
 Topic 1: {topic1}
 Topic 2: {topic2}
 
-Consider them duplicates if they cover the same core subject, even with different wording.
+IMPORTANT: Topics are duplicates ONLY if they serve the SAME user search intent and cover the SAME specific angle.
 
-Examples:
-- "Dental practice tax planning" vs "Tax planning for dental practices" = 0.95 (duplicate)
-- "Associate dentist expenses" vs "Practice owner expenses" = 0.60 (different audience)
-- "Landlord tax return" vs "Property capital gains tax" = 0.40 (different topics)
+Topics covering the same broad subject but with different angles, audiences, formats, or use cases are NOT duplicates.
+
+Examples of TRUE duplicates (score 0.95+):
+- "Dental practice tax planning" vs "Tax planning for dental practices" = 0.95
+- "Section 24 calculator" vs "Calculate Section 24 costs" = 0.98
+
+Examples of RELATED but NOT duplicates (score 0.70-0.85):
+- "Section 24 calculator" vs "Section 24 for basic rate taxpayers" = 0.75 (calculator vs audience guide)
+- "MTD software comparison" vs "MTD threshold and exemptions" = 0.70 (software vs compliance)
+- "Incorporation case study" vs "Incorporation phased approach" = 0.80 (case study vs implementation guide)
+
+Examples of DIFFERENT topics (score <0.60):
+- "Associate dentist expenses" vs "Practice owner expenses" = 0.60
+- "Landlord tax return" vs "Property capital gains tax" = 0.40
 
 Return ONLY a number between 0.0 and 1.0, nothing else."""
 

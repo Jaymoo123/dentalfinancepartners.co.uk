@@ -1,5 +1,5 @@
 """
-Configuration for Property/Landlord niche blog generation using Anthropic + Supabase.
+Configuration for Property niche blog generation using Anthropic + Supabase.
 """
 import os
 import sys
@@ -14,10 +14,10 @@ from shared_supabase_config import SUPABASE_URL, SUPABASE_KEY
 OUTPUT_MD_DIR = os.path.join(os.path.dirname(__file__), "web/content/blog")
 
 # ============================================================================
-# SITE CONFIG (Property/Landlord-specific)
+# SITE CONFIG (Property-specific)
 # ============================================================================
-SITE_BASE_URL = "https://propertyaccountants.co.uk"  # TODO: Update with actual domain
-AUTHOR_NAME = "Property Finance Partners"  # TODO: Update with actual brand name
+SITE_BASE_URL = "https://propertytaxpartners.co.uk"
+AUTHOR_NAME = "Property Tax Partners"
 
 # ============================================================================
 # ANTHROPIC CONFIG
@@ -25,53 +25,51 @@ AUTHOR_NAME = "Property Finance Partners"  # TODO: Update with actual brand name
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 
 # ============================================================================
-# BLOG CATEGORIES (Property/Landlord-specific)
+# BLOG CATEGORIES
 # ============================================================================
 POST_CATEGORIES = [
-    "Landlord tax",
-    "Property finance",
-    "Buy-to-let accounting",
-    "Capital gains tax",
-    "Property compliance",
+    "Section 24 & Tax Relief",
+    "Incorporation & Company Structures",
+    "Making Tax Digital (MTD)",
+    "Capital Gains Tax",
+    "Portfolio Management",
 ]
 
 # ============================================================================
-# INTERNAL LINKS (Property-specific)
+# INTERNAL LINKS
 # ============================================================================
 INTERNAL_LINK_SLUGS = [
     "/services",
     "/about",
     "/contact",
-    "/blog/landlord-tax-return-uk",
-    "/blog/property-portfolio-accounting",
-    "/blog/buy-to-let-mortgage-interest-relief",
-    "/blog/capital-gains-tax-property-sale",
+    "/incorporation",
+    "/calculators",
 ]
 
 def get_relevant_audience_link(topic: str) -> str:
     """Map blog topic to the most relevant audience page."""
     topic_lower = topic.lower()
-    if "landlord" in topic_lower or "rental" in topic_lower:
+    if "incorporation" in topic_lower or "limited company" in topic_lower:
+        return "/incorporation"
+    elif "section 24" in topic_lower or "calculator" in topic_lower:
+        return "/calculators"
+    elif "mtd" in topic_lower or "making tax digital" in topic_lower:
         return "/services"
-    elif "portfolio" in topic_lower or "property" in topic_lower:
-        return "/services"
-    elif "capital gains" in topic_lower or "selling" in topic_lower:
-        return "/contact"
     else:
         return "/services"
 
 # ============================================================================
-# BLOG SYSTEM PROMPT (Property/Landlord-specific)
+# BLOG SYSTEM PROMPT
 # ============================================================================
-BLOG_SYSTEM_PROMPT = """You are a specialist UK property accountant writing blog content for Property Finance Partners.
+BLOG_SYSTEM_PROMPT = """You are a specialist UK property accountant writing blog content for Property Tax Partners.
 
-AUDIENCE: UK landlords (individual landlords, portfolio owners, property investors).
+AUDIENCE: UK landlords and property investors (individual landlords, portfolio owners, property developers).
 
 TONE:
 - Direct, professional, no fluff.
-- Plain English — avoid jargon unless it is standard in UK property investment (e.g. BTL, HMO, Section 24, Capital Allowances).
+- Plain English — avoid jargon unless it is standard in UK property (e.g. BTL, SPV, Section 24, MTD).
 - Practical and grounded — not promotional or over-confident.
-- Write as if you are explaining something to a colleague who knows property investment but not accounting.
+- Write as if you are explaining something to a colleague who knows property but not accounting.
 
 CONTENT STRUCTURE:
 - Use <h2> for main sections, <h3> for subsections if needed.
@@ -90,6 +88,14 @@ SEO:
 - Use secondary keywords 4-5 times each (where relevant).
 - Write for humans first — keyword density is secondary to clarity.
 
+UK CONTEXT:
+- Reference current tax years (2025/26, 2026/27)
+- Use UK terminology: buy-to-let (BTL), landlord, property portfolio, SPV
+- Include specific examples with UK tax bands and allowances
+- Mention Section 24 mortgage interest restriction where relevant
+- Reference MTD for Income Tax Property (ITSA) starting 6 April 2026
+- Use London/Manchester/Birmingham examples for local relevance
+
 COMPLIANCE:
 - All tax/legal statements should be framed as general guidance, not personal advice.
 - Use "typically", "often", "in most cases" where appropriate.
@@ -105,7 +111,7 @@ Return the following fields exactly as shown:
 [URL-safe slug]
 
 ==category==
-[One of: Landlord tax, Property finance, Buy-to-let accounting, Capital gains tax, Property compliance]
+[One of: Section 24 & Tax Relief, Incorporation & Company Structures, Making Tax Digital (MTD), Capital Gains Tax, Portfolio Management]
 
 ==h1==
 [Page heading]
@@ -123,7 +129,7 @@ Return the following fields exactly as shown:
 [Image alt text if an image were used]
 
 ==image-prompt==
-[DALL-E prompt for a relevant image — professional, UK property/landlord context]
+[DALL-E prompt for a relevant image — professional, UK property context]
 
 ==content==
 [Full HTML article body — structured with <h2>, <p>, <ul>, etc.]

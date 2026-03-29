@@ -6,33 +6,53 @@ import { siteConfig } from "@/config/site";
 export function SiteFooter() {
   const year = new Date().getFullYear();
   return (
-    <footer className="border-t border-[var(--navy)] bg-[var(--navy)] text-slate-100">
-      <div className={`${siteContainer} py-10 sm:py-14`}>
-        <div className="grid gap-10 min-[480px]:grid-cols-2 md:gap-12">
+    <footer className="border-t-4 border-emerald-600 bg-slate-900 text-white">
+      <div className={`${siteContainer} py-12 sm:py-16`}>
+        <div className="grid gap-10 md:grid-cols-[1.5fr_1fr] md:gap-16">
           <div className="min-w-0">
-            <div className="inline-block rounded-lg bg-white px-4 py-2.5 shadow-sm sm:px-5 sm:py-3">
-              <BrandWordmarkHomeLink size="footer" />
+            <div className="text-2xl font-bold text-white mb-2">Property Accountants UK</div>
+            <p className="mt-3 max-w-md text-sm leading-relaxed text-slate-300">
+              {siteConfig.description}
+            </p>
+            <div className="mt-6 flex flex-col gap-3 text-sm border-l-2 border-emerald-600 pl-4">
+              <a 
+                href={`mailto:${siteConfig.contact.email}`}
+                className="font-bold text-emerald-400 hover:text-emerald-300 transition-colors"
+              >
+                {siteConfig.contact.email}
+              </a>
+              <a 
+                href={`tel:${siteConfig.contact.phone.replace(/\s/g, '')}`}
+                className="font-bold text-emerald-400 hover:text-emerald-300 transition-colors"
+              >
+                {siteConfig.contact.phone}
+              </a>
             </div>
-            <p className="mt-4 max-w-md text-sm leading-relaxed text-slate-300">{siteConfig.description}</p>
           </div>
-          <div className="flex flex-col gap-5 min-[480px]:items-end">
-            <ul className="flex flex-col gap-1 min-[480px]:flex-row min-[480px]:flex-wrap min-[480px]:justify-end min-[480px]:gap-x-5 min-[480px]:gap-y-2">
+          
+          <div className="min-w-0">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">
+              Quick Links
+            </h3>
+            <ul className="grid grid-cols-2 gap-x-6 gap-y-3">
               {siteConfig.footer.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={`inline-flex min-h-11 items-center text-sm font-medium text-slate-300 underline decoration-[var(--gold)] decoration-1 underline-offset-4 hover:text-[var(--gold)] ${focusRing} rounded`}
+                    className={`inline-flex items-center text-sm font-semibold text-slate-300 hover:text-emerald-400 transition-colors border-b border-transparent hover:border-emerald-400 ${focusRing}`}
                   >
                     {item.label}
                   </Link>
                 </li>
               ))}
             </ul>
-            <p className="text-xs leading-relaxed text-slate-400 min-[480px]:text-right">
-              © {year} {siteConfig.legalName}. Registered in England and Wales.
-              <span className="mt-1 block text-slate-500">{siteConfig.domain}</span>
-            </p>
           </div>
+        </div>
+        
+        <div className="mt-10 pt-6 border-t border-slate-700">
+          <p className="text-xs leading-relaxed text-slate-400">
+            © {year} {siteConfig.legalName}. Registered in England and Wales.
+          </p>
         </div>
       </div>
     </footer>

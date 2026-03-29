@@ -10,7 +10,7 @@ import { siteConfig } from "@/config/site";
 function MenuIcon({ open }: { open: boolean }) {
   return (
     <svg
-      className="h-6 w-6 text-[var(--navy)]"
+      className="h-6 w-6 text-slate-900"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -51,19 +51,19 @@ export function SiteHeader() {
 
   return (
     <header
-      className="sticky top-0 z-40 border-b border-[var(--border)]/80 bg-[var(--surface)]/90 backdrop-blur-xl supports-[backdrop-filter]:bg-[var(--surface)]/85"
+      className="sticky top-0 z-40 border-b border-slate-200 bg-white shadow-sm"
       style={{
         paddingTop: "max(0px, env(safe-area-inset-top))",
       }}
     >
       <div
-        className={`${siteContainer} flex min-h-[3.25rem] items-center justify-between gap-3 py-2.5 sm:min-h-14 sm:gap-4 sm:py-3`}
+        className={`${siteContainer} flex min-h-[3.25rem] items-center justify-between gap-3 py-3 sm:min-h-16 sm:gap-4`}
       >
         <BrandWordmarkHomeLink />
 
         <nav
           aria-label="Primary"
-          className="hidden min-w-0 items-center gap-0.5 md:flex lg:gap-1"
+          className="hidden min-w-0 items-center gap-1 md:flex"
         >
           {siteConfig.nav.map((item) => {
             const active = pathname === item.href || pathname.startsWith(`${item.href}/`);
@@ -71,10 +71,10 @@ export function SiteHeader() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`rounded-full px-3 py-2 text-sm font-medium tracking-tight transition-colors ${focusRing} ${
+                className={`px-4 py-2 text-sm font-bold transition-colors border-b-2 ${focusRing} ${
                   active
-                    ? "bg-[var(--gold-soft)] text-[var(--navy)]"
-                    : "text-[var(--muted)] hover:text-[var(--navy)]"
+                    ? "border-emerald-600 text-emerald-700"
+                    : "border-transparent text-slate-600 hover:text-slate-900 hover:border-slate-300"
                 }`}
               >
                 {item.label}
@@ -86,14 +86,14 @@ export function SiteHeader() {
         <div className="flex shrink-0 items-center gap-2">
           <Link
             href="/contact"
-            className={`${btnPrimary} hidden min-h-11 min-w-0 px-4 sm:inline-flex md:min-h-12`}
+            className={`${btnPrimary} hidden min-h-10 min-w-0 px-6 py-2 text-sm sm:inline-flex`}
           >
-            Book a call
+            Book consultation
           </Link>
 
           <button
             type="button"
-            className={`flex h-12 w-12 touch-manipulation items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--navy)] hover:bg-[var(--surface-elevated)] md:hidden ${focusRing}`}
+            className={`flex h-12 w-12 touch-manipulation items-center justify-center border-2 border-slate-200 bg-white text-slate-900 hover:bg-slate-50 hover:border-slate-300 md:hidden ${focusRing}`}
             aria-expanded={open}
             aria-controls={panelId}
             aria-label={open ? "Close menu" : "Open menu"}
@@ -113,26 +113,26 @@ export function SiteHeader() {
         >
           <button
             type="button"
-            className="absolute inset-0 bg-[var(--navy)]/50 backdrop-blur-[2px]"
+            className="absolute inset-0 bg-slate-900/50 backdrop-blur-[2px]"
             aria-label="Close menu"
             onClick={() => setOpen(false)}
           />
           <div
             id={panelId}
-            className="absolute right-0 top-0 flex h-[100dvh] w-[min(20rem,92vw)] flex-col border-l border-[var(--border)] bg-[var(--surface)] shadow-2xl shadow-[var(--navy)]/15"
+            className="absolute right-0 top-0 flex h-[100dvh] w-[min(20rem,92vw)] flex-col border-l-4 border-emerald-600 bg-white shadow-2xl"
             style={{
               paddingTop: "max(1rem, env(safe-area-inset-top))",
               paddingBottom: "max(1rem, env(safe-area-inset-bottom))",
             }}
           >
-            <div className="flex flex-col gap-3 border-b border-[var(--border)] px-4 py-3">
+            <div className="flex flex-col gap-3 border-b border-slate-200 px-4 py-4">
               <div className="flex items-center justify-between gap-2">
-                <p id={`${panelId}-title`} className="text-sm font-bold uppercase tracking-wider text-[var(--navy)]">
+                <p id={`${panelId}-title`} className="text-xs font-bold uppercase tracking-wider text-slate-900">
                   Menu
                 </p>
                 <button
                   type="button"
-                  className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[var(--border)] ${focusRing}`}
+                  className={`flex h-11 w-11 shrink-0 items-center justify-center border-2 border-slate-200 ${focusRing}`}
                   aria-label="Close menu"
                   onClick={() => setOpen(false)}
                 >
@@ -148,10 +148,10 @@ export function SiteHeader() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`rounded-xl px-4 py-3.5 text-base font-semibold ${focusRing} ${
+                    className={`border-l-4 px-4 py-3.5 text-base font-bold ${focusRing} ${
                       active
-                        ? "bg-[var(--gold-soft)] text-[var(--navy)]"
-                        : "text-[var(--navy)] hover:bg-[var(--surface-elevated)]"
+                        ? "border-emerald-600 bg-emerald-50 text-emerald-900"
+                        : "border-transparent text-slate-900 hover:border-slate-300 hover:bg-slate-50"
                     }`}
                     onClick={() => setOpen(false)}
                   >
@@ -160,13 +160,13 @@ export function SiteHeader() {
                 );
               })}
             </nav>
-            <div className="border-t border-[var(--border)] p-3">
+            <div className="border-t border-slate-200 p-3">
               <Link
                 href="/contact"
                 className={`${btnPrimary} w-full`}
                 onClick={() => setOpen(false)}
               >
-                Book a call
+                Book consultation
               </Link>
             </div>
           </div>

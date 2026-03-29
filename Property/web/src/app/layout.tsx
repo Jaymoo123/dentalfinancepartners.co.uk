@@ -1,20 +1,15 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { PageShell } from "@/components/layout/PageShell";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { siteConfig } from "@/config/site";
+import { niche } from "@/config/niche-loader";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 const siteUrl = siteConfig.url;
@@ -23,18 +18,18 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
-  themeColor: "#001B3D",
+  themeColor: niche.seo.theme_color,
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${siteConfig.name} | UK dental practice finance & accounting`,
+    default: `${siteConfig.name} | ${siteConfig.tagline}`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   verification: {
-    google: "6Yl4g8aauEScoYRA4pqJ-d-l_CeAhKUPV1dHvOirf1E",
+    google: niche.seo.google_site_verification,
   },
   openGraph: {
     type: "website",
@@ -55,10 +50,10 @@ export default function RootLayout({
   return (
     <html lang="en-GB">
       <head>
-        <GoogleAnalytics measurementId="G-273RJY0LZQ" />
+        <GoogleAnalytics measurementId={niche.seo.google_analytics_id} />
       </head>
       <body
-        className={`${plusJakarta.variable} ${cormorant.variable} ${plusJakarta.className} antialiased`}
+        className={`${plusJakarta.variable} ${plusJakarta.className} antialiased`}
       >
         <PageShell>{children}</PageShell>
       </body>

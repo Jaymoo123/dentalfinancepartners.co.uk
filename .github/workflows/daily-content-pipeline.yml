@@ -60,17 +60,22 @@ jobs:
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
       
+      - name: Sync shared components to ${{ matrix.niche }}
+        run: python scripts/sync_shared_components.py --niche ${{ matrix.niche }}
+      
       - name: Deploy content from Supabase to file system
         run: python agents/deployment_agent.py --niche ${{ matrix.niche }} --max-deployments 10
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
       
-      - name: Commit deployed content
+      - name: Commit deployed content and synced components
         run: |
           git config user.name "Content Bot"
           git config user.email "bot@dentalfinancepartners.co.uk"
           git add ${{ matrix.niche }}/web/content/blog/
+          git add ${{ matrix.niche }}/web/src/
+          git add ${{ matrix.niche }}/niche.config.json
           git commit -m "Deploy blog content for ${{ matrix.niche }}" || echo "No changes to commit"
           git pull --rebase
           git push

@@ -1,450 +1,398 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BrandLogoHero } from "@/components/brand/BrandLogoHero";
+import Image from "next/image";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { StickyCTA } from "@/components/ui/StickyCTA";
-import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
+import { btnPrimary, btnSecondary, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
-import { getAllPosts } from "@/lib/blog";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
-
-const btnMailOutline =
-  "inline-flex min-h-12 items-center justify-center rounded-full border border-[var(--navy)]/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-[var(--navy)] transition-all duration-200 hover:border-[var(--navy)] hover:bg-[var(--navy)]/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)]";
+import { MTDCountdown } from "@/components/property/MTDCountdown";
+import { ServiceTiers } from "@/components/property/ServiceTiers";
+import { Section24Calculator } from "@/components/calculators/Section24Calculator";
+import { IncorporationCostCalculator } from "@/components/calculators/IncorporationCostCalculator";
+import { MTDCheckerCalculator } from "@/components/calculators/MTDCheckerCalculator";
+import { PortfolioProfitabilityCalculator } from "@/components/calculators/PortfolioProfitabilityCalculator";
 
 export const metadata: Metadata = {
-  title: "Dental Accountant UK | Specialist Accounting for Dentists",
-  description: "Specialist dental accountant UK for associates, practice owners & groups. NHS contracts, associate tax, VAT & acquisitions. London & Manchester. Book a free consultation.",
+  title: "Landlord Accountant UK | Section 24, MTD & Incorporation Specialists",
+  description:
+    "Specialist property accountants for UK landlords. Section 24 planning, MTD compliance, incorporation analysis. Fixed fees, 24hr response. Free calculators.",
   alternates: { canonical: siteConfig.url },
   openGraph: {
-    title: "Dental Accountant UK | Specialist Accounting for Dentists",
-    description: "Specialist dental accountant UK for associates, practice owners & groups. NHS contracts, associate tax, VAT & acquisitions. London & Manchester.",
+    title: "Landlord Accountant UK | Property Tax Specialists",
+    description:
+      "Get your property tax sorted. Section 24, MTD, incorporation. Trusted by 100+ landlords. Free calculators.",
     url: siteConfig.url,
     type: "website",
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
   },
 };
 
-const PRACTICAL_SLUGS = [
-  "associate-dentist-tax-self-assessment-uk",
-  "dental-practice-profit-extraction-uk",
-  "practice-acquisition-financial-due-diligence",
-] as const;
-
-const realityPoints = [
+const services = [
   {
-    title: "Mixed NHS and private income",
-    body: "Reconciling NHS contract payments alongside private fee income and capitation plans — and understanding what each actually contributes to your profit — is something most generalist accountants simply do not encounter. We do, regularly.",
+    title: "Section 24 Planning",
+    description: "Calculate your tax hit and explore mitigation strategies",
+    icon: "📊",
   },
   {
-    title: "Self assessment confusion for associates",
-    body: "Associate dentists are almost always self-employed, but many are not clear on what they can legitimately claim, when to register for VAT, or how their income interacts with pension contributions and higher-rate tax. These things matter.",
+    title: "MTD Compliance",
+    description: "Quarterly digital reporting from April 2026",
+    icon: "📅",
   },
   {
-    title: "No useful management information",
-    body: "Year-end accounts tell you what happened. They rarely help you make decisions. Practice owners who want to understand their cost per surgery, chair utilisation, or associate versus principal profitability need something more structured.",
+    title: "Incorporation Analysis",
+    description: "Full feasibility modeling: CGT, SDLT, break-even",
+    icon: "🏢",
   },
   {
-    title: "Growth without a financial plan",
-    body: "Buying a second site or taking on an associate feels like the right move — but without proper cash flow modelling and an understanding of how that changes your tax position, it can create as many problems as it solves.",
+    title: "Portfolio Reporting",
+    description: "Property-by-property profitability tracking",
+    icon: "💼",
   },
 ];
 
-const whoWeWorkWith = [
+const whoWeHelp = [
   {
-    title: "Associate Dentists",
-    subtitle: "Self-employed · NHS & private",
-    body: "If you are working as an associate, you are running a small business — whether it feels like it or not. Self assessment, allowable expenses, pension planning, and knowing when incorporation makes sense are all things you should have clear answers on. We handle the compliance and make sure you are not overpaying tax through simple oversights.",
+    title: "Individual Landlords",
+    subtitle: "1-3 properties",
+    points: [
+      "Self Assessment with rental schedules",
+      "Section 24 tax planning",
+      "MTD compliance support",
+      "Incorporation feasibility",
+    ],
   },
   {
-    title: "Practice Owners",
-    subtitle: "Sole trader · Limited company · Partnership",
-    body: "Owning a practice brings a different set of financial questions — payroll for staff and associates, VAT on dental and non-dental income, equipment finance, goodwill, and profit extraction from a limited company. We prepare accounts that are useful, not just compliant, and advise on structure as the practice grows.",
+    title: "Portfolio Owners",
+    subtitle: "4-10 properties",
+    points: [
+      "Management accounts",
+      "Property-by-property reporting",
+      "Limited company accounts",
+      "Acquisition support",
+    ],
   },
   {
-    title: "Multi-Practice Groups",
-    subtitle: "Group structures · Acquisition support",
-    body: "Running multiple sites introduces complexity around inter-company transactions, group reporting, and acquisition accounting. We work with dentists who are building a group — whether that is two practices or ten — and can support with due diligence, restructuring, and ongoing financial management across the portfolio.",
-  },
-];
-
-const howWeWorkItems = [
-  {
-    n: "01",
-    title: "Annual accounts and corporation tax",
-    body: "Prepared accurately, filed on time, and reviewed with you properly — not just emailed over as a PDF you will never open. We explain what the numbers mean for your business.",
-  },
-  {
-    n: "02",
-    title: "Self assessment and personal tax",
-    body: "For associates and practice owners alike. We make sure all legitimate expenses are claimed, that your payment on account position is managed, and that you are not hit with an unexpected HMRC bill.",
-  },
-  {
-    n: "03",
-    title: "Payroll and associate payments",
-    body: "Running payroll for a dental practice has its own quirks — particularly where associates are paid on a percentage split. We handle this cleanly and make sure the treatment of self-employed associates holds up to scrutiny.",
-  },
-  {
-    n: "04",
-    title: "VAT and mixed-supply advice",
-    body: "Dental practices often supply a mix of exempt and standard-rated services. Getting this wrong creates problems. We review your VAT position and advise accordingly — particularly relevant for practices with significant laboratory or facial aesthetics income.",
-  },
-  {
-    n: "05",
-    title: "Management accounts and reporting",
-    body: "For practice owners who want to make informed decisions throughout the year, not just at year-end. We produce monthly or quarterly management accounts structured around how a dental practice actually generates profit.",
-  },
-  {
-    n: "06",
-    title: "Practice acquisition and structuring",
-    body: "Buying a practice is one of the most significant financial decisions you will make. We support with pre-purchase due diligence, advise on how to structure the acquisition, and help you understand the financial position you are taking on.",
+    title: "Large Portfolios",
+    subtitle: "10+ properties",
+    points: [
+      "Group accounting",
+      "Corporation tax planning",
+      "Disposal planning (CGT)",
+      "Portfolio restructuring",
+    ],
   },
 ];
 
-const trustItems = [
-  {
-    title: "Dental-only focus",
-    stat: "100%",
-    body: "We only work with dental practices. Every client is a dentist, associate, or practice owner.",
-  },
-  {
-    title: "Proven experience",
-    stat: "50+",
-    body: "Trusted by over 50 dental professionals across London, Manchester, and the UK.",
-  },
-  {
-    title: "Transparent pricing",
-    stat: "Fixed fees",
-    body: "No hidden charges, no long-term contracts. You know exactly what you're paying for.",
-  },
-];
-
-const whySpecialistItems = [
-  {
-    title: "Dental-only expertise",
-    body: "We only work with dentists. That means we understand NHS contracts, UDA targets, associate splits, and the sector-specific tax rules that generalist accountants rarely encounter.",
-  },
-  {
-    title: "Proactive advice, not just compliance",
-    body: "Management accounts structured for dental KPIs. Tax planning for associates and practice owners. Acquisition support and due diligence. We help you make better financial decisions, not just file returns.",
-  },
-  {
-    title: "Transparent and accessible",
-    body: "Fixed fees with no surprises. You speak to the same accountant every time. Plain English explanations, not accounting jargon. We&apos;re here when you need us.",
-  },
-];
-
-const specialistRows = [
-  { area: "NHS income treatment", detail: "Understood from day one" },
-  { area: "Associate tax position", detail: "Reviewed carefully every year" },
-  { area: "Mixed VAT supply", detail: "Assessed correctly" },
-  { area: "Practice acquisition", detail: "Sector-specific due diligence" },
-  { area: "Pension & superannuation", detail: "Dental-aware planning" },
-  { area: "Management accounts", detail: "Structured for dental KPIs" },
+const trustBadges = [
+  "Property-only specialists",
+  "24hr response time",
+  "Fixed fees",
+  "MTD ready",
+  "100+ landlords",
 ];
 
 export default function HomePage() {
-  const allPosts = getAllPosts();
-  const practicalPosts = PRACTICAL_SLUGS.map((slug) => allPosts.find((p) => p.slug === slug)).filter(
-    (p): p is NonNullable<typeof p> => Boolean(p),
-  );
-
   const orgSchema = buildOrganizationJsonLd();
 
   return (
     <>
       <StickyCTA />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
-      />
-      <section className="hero-brand border-b border-white/10">
-        <div className={`hero-inner ${siteContainerLg} ${sectionYLoose}`}>
-          <div className="hero-reveal">
-            <BrandLogoHero />
-          </div>
-          <h1 className="hero-reveal-delay display-serif mt-8 max-w-4xl text-[1.75rem] font-semibold leading-[1.15] tracking-tight text-white sm:text-4xl md:text-[2.75rem] md:leading-[1.1]">
-            <span className="block">Specialist dental accountants</span>
-            <span className="block">for UK practices.</span>
-          </h1>
-          <p className="hero-reveal-delay-2 mt-6 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-lg">
-            We&apos;re accountants for dentists — associates, practice owners, and groups. NHS contracts, associate tax, VAT, and acquisitions. We only work with dental practices, so we understand the financial specifics that generalist accountants miss.
-          </p>
-          <p className="hero-reveal-delay-2 mt-4 text-sm font-medium text-white/80">
-            Trusted by dental professionals across London, Manchester, and the UK.
-          </p>
-          <div className="hero-reveal-delay-2 mt-10 flex flex-wrap items-center gap-4">
-            <Link href="/contact" className={`${btnPrimary} min-w-0`}>
-              Speak to a dental accountant
-            </Link>
-            <Link
-              href="#how-we-work"
-              className={`inline-flex min-h-12 items-center text-sm font-semibold text-white/90 underline decoration-[var(--gold)] decoration-2 underline-offset-4 transition-colors hover:text-white ${focusRing} rounded-full px-2`}
-            >
-              How we work →
-            </Link>
-          </div>
-        </div>
-      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
 
-      <section className="border-b border-[var(--border)] bg-[var(--surface)] py-10 sm:py-12">
-        <div className={siteContainerLg}>
-          <p className="max-w-3xl text-lg leading-relaxed text-[var(--ink-soft)] sm:text-xl">
-            We&apos;re specialist dental accountants working exclusively with UK dental practices — from newly qualified associates to established multi-site groups. Over 50 dental clients trust us with their accounting, tax, and financial planning.
-          </p>
-        </div>
-      </section>
-
-      <section className="border-b border-[var(--border)] bg-[var(--background)] py-12 sm:py-16">
-        <div className={siteContainerLg}>
-          <p className="section-label">Why dentists choose us</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
-            Trusted by dental professionals across the UK
-          </h2>
-          <div className="mt-12 grid gap-8 sm:grid-cols-3 sm:gap-10">
-            {trustItems.map((item) => (
-              <div key={item.title} className="text-center">
-                <div className="font-serif text-4xl font-bold text-[var(--gold-strong)] sm:text-5xl">
-                  {item.stat}
+      {/* Hero Section with Large Property Image */}
+      <section className="relative h-[600px] sm:h-[700px] overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=2000&q=85"
+          alt="UK residential property"
+          fill
+          className="object-cover brightness-75"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/90 to-slate-900/70" />
+        <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
+          <div className="max-w-3xl">
+            <div className="inline-block bg-emerald-600 px-4 py-2 text-sm font-bold text-white uppercase tracking-wider mb-6 shadow-lg">
+              MTD starts 6 April 2026
+            </div>
+            <h1 className="text-5xl font-bold leading-[1.1] text-white sm:text-6xl lg:text-7xl">
+              Property tax sorted.
+              <br />
+              Your way.
+            </h1>
+            <p className="mt-6 text-xl leading-relaxed text-white sm:text-2xl max-w-2xl">
+              Whether you need to get ready for Making Tax Digital, run a limited company, or get tax advice from property specialists.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Link href="/contact" className={`${btnPrimary} bg-emerald-600 border-emerald-800 text-lg px-10 py-4`}>
+                Book free consultation
+              </Link>
+              <Link href="#calculators" className={`${btnSecondary} bg-white/10 border-white text-white hover:bg-white/20 text-lg px-10 py-4`}>
+                Try free calculators
+              </Link>
+            </div>
+            <div className="mt-8 flex flex-wrap gap-6 text-sm text-slate-200">
+              {trustBadges.map((badge) => (
+                <div key={badge} className="flex items-center gap-2">
+                  <div className="h-1.5 w-1.5 bg-emerald-400" />
+                  <span className="font-semibold">{badge}</span>
                 </div>
-                <h3 className="mt-4 text-lg font-semibold text-[var(--navy)]">{item.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{item.body}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-[var(--background)]">
-        <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <p className="section-label">The reality</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl md:text-[2.5rem]">
-            <span className="block">Most dentists are</span>
-            <span className="block text-[var(--gold-strong)]">financially underserved.</span>
-          </h2>
-          <p className="mt-8 max-w-3xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            Dental income is rarely straightforward. Between NHS UDAs, private fee structures, associate agreements, laboratory costs, and equipment finance, the picture is genuinely complex. A generalist accountant will work with what you give them — but that&apos;s not the same as understanding how a dental practice actually operates.
-          </p>
-          <div className="mt-14 grid gap-6 md:grid-cols-2 md:gap-8">
-            {realityPoints.map((item) => (
-              <article key={item.title} className="card-flat p-6 sm:p-8">
-                <h3 className="text-lg font-semibold leading-snug text-[var(--navy)] sm:text-xl">{item.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{item.body}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-[var(--border)] bg-[var(--surface)]">
-        <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <p className="section-label">Why choose a specialist</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
-            Why work with a dental accountant?
-          </h2>
-          <div className="mt-14 grid gap-8 md:grid-cols-3 md:gap-10">
-            {whySpecialistItems.map((item) => (
-              <div key={item.title} className="card-flat p-6 sm:p-8">
-                <h3 className="text-lg font-semibold leading-snug text-[var(--navy)] sm:text-xl">{item.title}</h3>
-                <p className="mt-4 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{item.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[var(--background)]">
-        <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <p className="section-label">Who we work with</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
-            <span className="block">We work with dentists</span>
-            <span className="block">at every stage.</span>
-          </h2>
-          <div className="mt-14 grid gap-12 md:grid-cols-3 md:gap-10">
-            {whoWeWorkWith.map((block) => (
-              <div key={block.title} className="min-w-0">
-                <h3 className="text-xl font-semibold text-[var(--navy)]">{block.title}</h3>
-                <p className="mt-1 text-sm font-medium text-[var(--gold-strong)]">{block.subtitle}</p>
-                <p className="mt-4 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{block.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="how-we-work" className="scroll-mt-24 border-y border-[var(--border)] bg-[var(--background)]">
-        <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <p className="section-label">How we work</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
-            <span className="block">What we actually do,</span>
-            <span className="block">and how we do it.</span>
-          </h2>
-          <p className="mt-8 max-w-3xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            We do not hand you a services brochure and ask you to pick a package. Most clients come to us with a specific problem, and we start from there. What follows is what ongoing support typically looks like once we are working together.
-          </p>
-          <ol className="mt-14 grid list-none gap-10 pl-0 sm:gap-12 lg:grid-cols-2">
-            {howWeWorkItems.map((item) => (
-              <li key={item.n} className="flex gap-5 sm:gap-6">
-                <span
-                  className="font-serif text-3xl font-semibold tabular-nums leading-none text-[var(--gold)] sm:text-4xl"
-                  aria-hidden
-                >
-                  {item.n}
-                </span>
-                <div className="min-w-0">
-                  <h3 className="text-lg font-semibold text-[var(--navy)] sm:text-xl">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{item.body}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
-          <div className="mt-14">
-            <Link href="/contact" className={`${btnPrimary} inline-flex`}>
-              Arrange an initial call
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[var(--surface)]">
-        <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <p className="section-label">Why it matters</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
-            The difference a specialist makes is not theoretical.
-          </h2>
-          <div className="mt-8 max-w-3xl space-y-6 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            <p>
-              A generalist accountant isn&apos;t cutting corners. They simply don&apos;t see enough dental clients to build genuine expertise in how the sector works. They won&apos;t know, off the top of their head, how NHS superannuation interacts with your pension annual allowance, or what HMRC&apos;s view is on associate expense claims.
-            </p>
-            <p>
-              We do, because it comes up constantly. That breadth of exposure — across hundreds of dental clients — means we can spot issues before they become problems, and give advice grounded in what actually happens in dental practices, not just what the textbook says.
-            </p>
-            <p>
-              It also means the conversation is more efficient. You don&apos;t have to explain how an NHS contract works, or what a UDA is, or why your income varies each month. We already know, so we can focus on solving your specific problem.
-            </p>
-          </div>
-          <div className="mt-14 overflow-x-auto rounded-2xl border border-[var(--border)]">
-            <table className="w-full min-w-[32rem] text-left text-sm sm:text-base">
-              <caption className="sr-only">How {siteConfig.name} handles typical dental accounting areas</caption>
-              <thead>
-                <tr className="border-b border-[var(--border)] bg-[var(--surface-elevated)]">
-                  <th scope="col" className="px-4 py-3 font-semibold text-[var(--navy)] sm:px-6 sm:py-4">
-                    Area
-                  </th>
-                  <th scope="col" className="px-4 py-3 font-semibold text-[var(--navy)] sm:px-6 sm:py-4">
-                    {siteConfig.name}
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {specialistRows.map((row) => (
-                  <tr key={row.area} className="border-b border-[var(--border)] last:border-0">
-                    <th scope="row" className="px-4 py-3.5 font-medium text-[var(--ink)] sm:px-6 sm:py-4">
-                      {row.area}
-                    </th>
-                    <td className="px-4 py-3.5 text-[var(--muted)] sm:px-6 sm:py-4">{row.detail}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-t border-[var(--border)] bg-[var(--background)]">
-        <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <p className="section-label">Practical guidance</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
-            <span className="block">Dental accounting insights</span>
-            <span className="block">from specialists.</span>
-          </h2>
-          <p className="mt-6 max-w-3xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            Real-world guidance on associate tax, practice finance, and NHS accounting — written by accountants who work exclusively with UK dental practices. Each article addresses questions we&apos;re actually asked by dentists every week.
-          </p>
-          <ul className="mt-12 grid gap-6 sm:grid-cols-3 sm:gap-8">
-            {practicalPosts.map((p) => (
-              <li key={p.slug}>
-                <Link
-                  href={`/blog/${p.slug}`}
-                  className={`card-premium group flex h-full flex-col p-6 transition-shadow duration-300 hover:shadow-lg hover:shadow-[rgba(0,27,61,0.08)] ${focusRing}`}
-                >
-                  <span className="text-xs font-semibold uppercase tracking-wider text-[var(--gold-strong)]">
-                    {p.category}
-                  </span>
-                  <span className="mt-3 font-serif text-lg font-semibold leading-snug text-[var(--navy)] group-hover:underline group-hover:decoration-[var(--gold)] group-hover:underline-offset-4">
-                    {p.title}
-                  </span>
-                  <span className="mt-2 flex-1 text-sm leading-relaxed text-[var(--muted)]">{p.summary}</span>
-                  <span className="mt-4 text-sm font-semibold text-[var(--navy-soft)]">Read more →</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-10">
-            <Link
-              href="/blog"
-              className={`inline-flex min-h-11 items-center text-sm font-semibold text-[var(--navy)] underline decoration-[var(--gold)] decoration-2 underline-offset-4 ${focusRing} rounded`}
-            >
-              View all articles
-            </Link>
-          </p>
-        </div>
-      </section>
-
-      <section className="bg-[var(--surface)]">
+      {/* MTD Urgent Banner */}
+      <section className="border-y-2 border-slate-200">
         <div className={siteContainerLg}>
-          <div className={`${sectionYLoose} grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-16`}>
-            <div className="min-w-0">
-              <p className="section-label">Get started</p>
-              <h2 className="display-serif mt-4 text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
-                Ready to work with a dental accountant who understands your practice?
+          <MTDCountdown />
+        </div>
+      </section>
+
+      {/* Core Services - Visual Grid */}
+      <section className="bg-white py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-4xl font-bold text-slate-900 sm:text-5xl">
+              What we specialise in
+            </h2>
+            <p className="mt-4 text-lg text-slate-600">
+              Property-only focus means we understand Section 24, MTD, and incorporation inside out.
+            </p>
+          </div>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {services.map((service) => (
+              <div key={service.title} className="text-center group">
+                <div className="mx-auto flex h-20 w-20 items-center justify-center bg-gradient-to-br from-emerald-500 to-emerald-700 text-4xl mb-4 shadow-lg hover:shadow-xl transition-all hover:scale-105 backdrop-blur-sm border border-emerald-400/20">
+                  {service.icon}
+                </div>
+                <h3 className="text-lg font-bold text-slate-900">{service.title}</h3>
+                <p className="mt-2 text-sm text-slate-600">{service.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Service Tiers */}
+      <section className="bg-slate-50 py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-4xl font-bold text-slate-900 sm:text-5xl">
+              Choose your level of support
+            </h2>
+            <p className="mt-4 text-lg text-slate-600">
+              From free calculators to full-service accounting. Start with DIY tools, upgrade when you need expert help.
+            </p>
+          </div>
+          <ServiceTiers />
+        </div>
+      </section>
+
+      {/* Calculators Section */}
+      <section id="calculators" className="bg-white py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="inline-block bg-emerald-600 px-4 py-2 text-xs font-bold text-white uppercase tracking-wider mb-4">
+              Free tools
+            </div>
+            <h2 className="text-4xl font-bold text-slate-900 sm:text-5xl">
+              Calculate your property tax position
+            </h2>
+            <p className="mt-4 text-lg text-slate-600">
+              Get instant answers on Section 24, incorporation costs, MTD compliance, and portfolio profitability.
+            </p>
+          </div>
+          <div className="space-y-16">
+            <div id="section24">
+              <Section24Calculator />
+            </div>
+            <div id="incorporation">
+              <IncorporationCostCalculator />
+            </div>
+            <div id="mtd">
+              <MTDCheckerCalculator />
+            </div>
+            <div id="portfolio">
+              <PortfolioProfitabilityCalculator />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Property Image Section */}
+      <section className="relative h-96 overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=2000&q=85"
+          alt="UK property portfolio"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-slate-900/70" />
+        <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
+          <div className="max-w-2xl">
+            <h2 className="text-4xl font-bold text-white sm:text-5xl">
+              Landlords at every scale
+            </h2>
+            <p className="mt-4 text-xl text-slate-200">
+              From individual landlords to large portfolio owners. We understand property accounting.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Who We Help */}
+      <section className="bg-white py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <div className="grid gap-8 md:grid-cols-3">
+            {whoWeHelp.map((segment) => (
+              <div key={segment.title} className="bg-slate-50 p-8 border-l-4 border-emerald-600">
+                <h3 className="text-2xl font-bold text-slate-900">{segment.title}</h3>
+                <p className="mt-2 text-sm font-bold text-emerald-700 uppercase tracking-wider">{segment.subtitle}</p>
+                <ul className="mt-6 space-y-3">
+                  {segment.points.map((point, idx) => (
+                    <li key={idx} className="flex items-start gap-3 text-base text-slate-700">
+                      <span className="text-emerald-600 font-bold flex-shrink-0 text-lg">✓</span>
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact CTA with Image */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=2000&q=85"
+            alt="London property skyline"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-slate-900/90" />
+        </div>
+        <div className={`${siteContainerLg} relative z-10 py-20 sm:py-24`}>
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+            <div>
+              <div className="inline-block bg-emerald-600 px-4 py-2 text-xs font-bold text-white uppercase tracking-wider mb-6">
+                Get started
+              </div>
+              <h2 className="text-4xl font-bold text-white sm:text-5xl">
+                Get your property tax sorted today
               </h2>
-              <p className="mt-6 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-                Whether you&apos;re an associate looking to optimize your tax position, or a practice owner who needs proper financial visibility, the first conversation is straightforward and without obligation. Book your free consultation today.
+              <p className="mt-6 text-xl leading-relaxed text-slate-200">
+                Book a free consultation. We'll discuss your situation, model the numbers, and give you clear
+                recommendations.
               </p>
-              <div className="mt-8 flex flex-wrap gap-4">
-                <Link href="/contact" className={`${btnPrimary}`}>
-                  Book your free consultation
-                </Link>
-                <Link href={`mailto:${siteConfig.contact.email}`} className={btnMailOutline}>
-                  Email us directly
-                </Link>
+              <div className="mt-8 space-y-4">
+                <div className="flex items-center gap-4 text-slate-200">
+                  <div className="h-12 w-12 flex items-center justify-center bg-emerald-600 text-white font-bold text-xl">
+                    ✓
+                  </div>
+                  <div>
+                    <div className="font-bold text-white">24-hour response time</div>
+                    <div className="text-sm text-slate-300">Usually same day</div>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 text-slate-200">
+                  <div className="h-12 w-12 flex items-center justify-center bg-emerald-600 text-white font-bold text-xl">
+                    ✓
+                  </div>
+                  <div>
+                    <div className="font-bold text-white">Fixed fees, no surprises</div>
+                    <div className="text-sm text-slate-300">Transparent pricing</div>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 text-slate-200">
+                  <div className="h-12 w-12 flex items-center justify-center bg-emerald-600 text-white font-bold text-xl">
+                    ✓
+                  </div>
+                  <div>
+                    <div className="font-bold text-white">Property-only specialists</div>
+                    <div className="text-sm text-slate-300">We only work with landlords</div>
+                  </div>
+                </div>
               </div>
-              <p className="mt-10 text-sm font-medium text-[var(--ink)]">We respond within one working day.</p>
-              <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-                Fill in the form and one of our dental accountants will be in touch to arrange a short introductory call. No hard sell — just an honest conversation about your situation and whether we&apos;re the right fit.
-              </p>
-              <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-                Prefer to call or email? You&apos;ll speak to someone who works with dental practices every day.
-              </p>
-              <p className="mt-6 text-sm text-[var(--muted)]">All initial conversations are confidential and carry no obligation.</p>
             </div>
-            <div className="card-flat p-6 sm:p-8 lg:p-10">
-              <LeadForm submitLabel="Send enquiry" />
+
+            <div className="bg-white p-8 sm:p-10">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">Book your free consultation</h3>
+              <LeadForm submitLabel="Request callback" />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="border-t border-[var(--border)] bg-[var(--background)]">
-        <div className={`${siteContainerLg} ${sectionY}`}>
-          <p className="section-label">Common questions</p>
-          <h2 className="display-serif mt-3 text-2xl font-semibold text-[var(--navy)] sm:text-3xl">Frequently asked.</h2>
-          <div className="mt-8 max-w-3xl">
-            <details className="group card-flat open:shadow-md">
-              <summary className="cursor-pointer list-none px-5 py-4 font-semibold text-[var(--navy)] sm:px-6 sm:py-5 sm:text-lg [&::-webkit-details-marker]:hidden">
-                <span className="flex items-center justify-between gap-4">
-                  Do I need a specialist accountant as a dentist?
-                  <span className="text-[var(--gold-strong)] transition-transform group-open:rotate-45" aria-hidden>
-                    +
+      {/* FAQ */}
+      <section className="bg-white py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-slate-900 text-center mb-12">Common questions</h2>
+            <div className="space-y-4">
+              <details className="group bg-slate-50 border-l-4 border-slate-300 hover:border-emerald-600 transition-all">
+                <summary className="cursor-pointer list-none px-6 py-5 font-bold text-slate-900 hover:bg-slate-100 transition-colors [&::-webkit-details-marker]:hidden">
+                  <span className="flex items-center justify-between gap-4">
+                    Do I need Making Tax Digital from April 2026?
+                    <span className="text-emerald-600 text-2xl font-bold transition-transform group-open:rotate-45">
+                      +
+                    </span>
                   </span>
-                </span>
-              </summary>
-              <div className="border-t border-[var(--border)] px-5 py-4 text-sm leading-relaxed text-[var(--muted)] sm:px-6 sm:py-5 sm:text-base">
-                <p>
-                  Not strictly — but the question is whether a generalist accountant can give you genuinely useful advice on the financial specifics of dentistry. In our experience, the gap shows most clearly around NHS income, VAT on mixed dental supplies, associate expenses, and practice acquisition. A competent generalist can handle your compliance. A dental specialist can do that and help you make better financial decisions.
-                </p>
-              </div>
-            </details>
+                </summary>
+                <div className="border-t border-slate-200 bg-white px-6 py-5 text-base leading-relaxed text-slate-700">
+                  <p>
+                    If your combined property and self-employment income exceeds £50,000, yes. You must submit quarterly
+                    digital reports to HMRC from 6 April 2026. Use our{" "}
+                    <Link href="#mtd" className="font-bold text-emerald-600 underline underline-offset-2 hover:text-emerald-700">
+                      MTD checker
+                    </Link>{" "}
+                    to see if you're affected.
+                  </p>
+                </div>
+              </details>
+
+              <details className="group bg-slate-50 border-l-4 border-slate-300 hover:border-emerald-600 transition-all">
+                <summary className="cursor-pointer list-none px-6 py-5 font-bold text-slate-900 hover:bg-slate-100 transition-colors [&::-webkit-details-marker]:hidden">
+                  <span className="flex items-center justify-between gap-4">
+                    Should I incorporate my buy-to-let portfolio?
+                    <span className="text-emerald-600 text-2xl font-bold transition-transform group-open:rotate-45">
+                      +
+                    </span>
+                  </span>
+                </summary>
+                <div className="border-t border-slate-200 bg-white px-6 py-5 text-base leading-relaxed text-slate-700">
+                  <p>
+                    It depends on your mortgage levels, tax bracket, and holding period. Incorporation triggers CGT and
+                    SDLT — upfront costs can exceed £50,000. Use our{" "}
+                    <Link href="#incorporation" className="font-bold text-emerald-600 underline underline-offset-2 hover:text-emerald-700">
+                      incorporation calculator
+                    </Link>{" "}
+                    for a quick estimate.
+                  </p>
+                </div>
+              </details>
+
+              <details className="group bg-slate-50 border-l-4 border-slate-300 hover:border-emerald-600 transition-all">
+                <summary className="cursor-pointer list-none px-6 py-5 font-bold text-slate-900 hover:bg-slate-100 transition-colors [&::-webkit-details-marker]:hidden">
+                  <span className="flex items-center justify-between gap-4">
+                    Do I need a specialist property accountant?
+                    <span className="text-emerald-600 text-2xl font-bold transition-transform group-open:rotate-45">
+                      +
+                    </span>
+                  </span>
+                </summary>
+                <div className="border-t border-slate-200 bg-white px-6 py-5 text-base leading-relaxed text-slate-700">
+                  <p>
+                    Not strictly — but the question is whether a generalist can give you useful advice on Section 24,
+                    MTD, and incorporation. A specialist helps you make better financial decisions around incorporation
+                    feasibility, MTD quarterly reporting, and portfolio-level profitability.
+                  </p>
+                </div>
+              </details>
+            </div>
           </div>
         </div>
       </section>

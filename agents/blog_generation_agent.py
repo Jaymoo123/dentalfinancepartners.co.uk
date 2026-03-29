@@ -95,6 +95,14 @@ class BlogGenerationAgent:
             
             if is_duplicate:
                 print(f"Duplicate detected (similar to: {similar_slug}). Skipping.")
+                
+                # Mark topic as used so it won't be selected again
+                await self.supabase.update(
+                    self.niche_config["blog_topics_table"],
+                    filters={"id": topic["id"]},
+                    data={"used": True, "used_at": datetime.utcnow().isoformat()}
+                )
+                
                 await self.error_handler.log_skipped("duplicate", {
                     "agent_type": "blog_generation",
                     "niche": self.niche,
@@ -112,6 +120,14 @@ class BlogGenerationAgent:
             
             if recent_use:
                 print(f"Topic used recently. Skipping.")
+                
+                # Mark topic as used so it won't be selected again
+                await self.supabase.update(
+                    self.niche_config["blog_topics_table"],
+                    filters={"id": topic["id"]},
+                    data={"used": True, "used_at": datetime.utcnow().isoformat()}
+                )
+                
                 await self.error_handler.log_skipped("recently_used", {
                     "agent_type": "blog_generation",
                     "niche": self.niche,

@@ -1,43 +1,24 @@
 /**
- * Dental Finance Partners — UK dental practice finance & accounting.
- * Production: set NEXT_PUBLIC_SITE_URL=https://dentalfinancepartners.co.uk (no trailing slash)
+ * Site Config - Now loaded dynamically from niche.config.json
+ * This allows centralized management while keeping niche-specific settings.
  */
+import { niche, getSiteUrl } from "./niche-loader";
+
 export const siteConfig = {
-  name: "Dental Finance Partners",
-  legalName: "Dental Finance Partners Ltd",
-  domain: "dentalfinancepartners.co.uk",
-  tagline: "Accounting for UK dentists — nothing else",
-  description:
-    "Dental accountants for associates, practice owners, and multi-site groups. NHS contracts, associate tax, VAT in a practice, and acquisitions — we only work with dentists.",
-  locale: "en-GB",
+  name: niche.display_name,
+  legalName: niche.legal_name,
+  domain: niche.domain,
+  tagline: niche.tagline,
+  description: niche.description,
+  locale: niche.seo.locale,
   get url() {
-    return (
-      (typeof process !== "undefined" && process.env.NEXT_PUBLIC_SITE_URL) ||
-      "http://localhost:3000"
-    );
+    return getSiteUrl();
   },
-  /** Social / JSON-LD logo; on-page hero/footer use text marks. Add `/public/brand/logo.png` anytime and point this there. */
-  publisherLogoUrl: "/og-placeholder.svg",
-  contact: {
-    email: "hello@dentalfinancepartners.co.uk",
-    phone: "+44 20 0000 0000",
-  },
-  nav: [
-    { label: "Services", href: "/services" },
-    { label: "About", href: "/about" },
-    { label: "Blog", href: "/blog" },
-    { label: "Contact", href: "/contact" },
-  ],
-  footer: [
-    { label: "Locations", href: "/locations" },
-    { label: "Privacy policy", href: "/privacy-policy" },
-    { label: "Terms", href: "/terms" },
-    { label: "Cookie policy", href: "/cookie-policy" },
-  ],
-  locations: [
-    { slug: "london", title: "Dental finance & accounting in London" },
-    { slug: "manchester", title: "Dental finance & accounting in Manchester" },
-  ],
+  publisherLogoUrl: niche.brand.publisher_logo_url,
+  contact: niche.contact,
+  nav: niche.navigation,
+  footer: niche.footer_links,
+  locations: niche.locations,
 } as const;
 
 export type LocationEntry = (typeof siteConfig.locations)[number];

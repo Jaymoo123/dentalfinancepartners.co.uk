@@ -20,20 +20,16 @@ export function CTASection({
 }: CTASectionProps) {
   return (
     <section
-      className="relative overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-10"
+      className="border-l-4 border-emerald-600 bg-emerald-50 p-8 sm:p-12"
       aria-labelledby="cta-heading"
     >
-      <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[var(--gold)]/50 to-transparent"
-        aria-hidden
-      />
       <h2
         id="cta-heading"
-        className="display-serif max-w-2xl text-2xl font-semibold leading-tight tracking-tight text-[var(--navy)] sm:text-3xl"
+        className="max-w-2xl text-2xl font-bold leading-tight text-slate-900 sm:text-3xl"
       >
         {title}
       </h2>
-      <p className="mt-4 max-w-2xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+      <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-700">
         {description}
       </p>
       <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">

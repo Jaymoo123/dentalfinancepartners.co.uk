@@ -63,8 +63,7 @@ def mark_topic_used(topic_id, slug):
     params = {"id": f"eq.{topic_id}"}
     payload = {
         "used": True,
-        "generated_slug": slug,
-        "generated_at": datetime.utcnow().isoformat()
+        "used_at": datetime.utcnow().isoformat()
     }
     
     response = httpx.patch(url, headers=headers, params=params, json=payload)
@@ -77,7 +76,7 @@ def generate_content(topic, secondary_keywords):
     
     keywords_text = ", ".join([k for k in secondary_keywords if k]) if secondary_keywords else ""
     
-    user_prompt = f"""Generate a comprehensive blog post for UK dentists.
+    user_prompt = f"""Generate a comprehensive blog post for UK landlords and property investors.
 
 Primary topic: {topic}
 Secondary keywords: {keywords_text}
@@ -137,7 +136,7 @@ title: "{fields.get('name', 'Untitled')}"
 slug: "{slug}"
 date: "{today}"
 author: "{AUTHOR_NAME}"
-category: "{fields.get('category', 'Practice accounting')}"
+category: "{fields.get('category', 'Section 24 & Tax Relief')}"
 metaTitle: "{fields.get('meta_title', fields.get('name', 'Untitled'))}"
 metaDescription: "{fields.get('meta_description', '')}"
 altText: "{fields.get('alt_tag', '')}"

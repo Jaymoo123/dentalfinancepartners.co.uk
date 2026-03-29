@@ -1,40 +1,63 @@
-/* Tailwind source("..") scans from src/ relative to this file, not process cwd (fixes wrong cwd). */
+/* Tailwind source("..") scans from src/ relative to this file */
 @import "tailwindcss" source("..");
 
-/*
-  UI ground rules (mobile-first) — Dental Finance Partners
-  - Navy + gold brand; light surfaces, high-contrast type.
-  - Touch targets ≥44px; no horizontal bleed; form inputs 16px on mobile.
-*/
+/* ============================================================
+   PROPERTY ACCOUNTANTS UK - DESIGN SYSTEM
+   Professional, minimal, data-driven aesthetic
+   ============================================================ */
 
 :root {
-  --navy: #001b3d;
-  --navy-soft: #0d2d52;
-  --navy-muted: #1a3a5c;
-  --gold: #b8975d;
-  --gold-strong: #9e7f4a;
-  --gold-soft: rgba(184, 151, 93, 0.14);
-  /* Cleaner, consultancy-style neutrals */
-  --background: #f4f6f9;
-  --surface: #ffffff;
-  --surface-elevated: #eef1f6;
-  --ink: #001b3d;
-  --ink-soft: #2d3f5c;
-  --muted: #5c6b80;
+  /* Brand Colors - Emerald & Slate */
+  --emerald-50: #ecfdf5;
+  --emerald-100: #d1fae5;
+  --emerald-600: #059669;
+  --emerald-700: #047857;
+  --emerald-800: #065f46;
+  --emerald-900: #064e3b;
+  
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-900: #0f172a;
+  
+  --amber-400: #fbbf24;
+  --amber-500: #f59e0b;
+  --amber-600: #d97706;
+  --amber-700: #b45309;
+  
+  /* Semantic tokens */
+  --background: #ffffff;
+  --surface: #f8fafc;
+  --surface-elevated: #ffffff;
+  --ink: #0f172a;
+  --ink-soft: #334155;
+  --muted: #475569;
   --border: #e2e8f0;
-  /* Semantic aliases */
-  --accent: var(--gold);
-  --accent-strong: var(--gold-strong);
-  --accent-soft: var(--gold-soft);
-  --ring-offset: var(--background);
+  
+  /* Brand semantic */
+  --primary: #059669;
+  --primary-hover: #047857;
+  --accent: #059669;
+  --accent-strong: #047857;
+  
+  /* Legacy aliases for backwards compatibility */
+  --navy: #0f172a;
+  --gold: #059669;
+  --gold-strong: #047857;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--ink);
   --font-sans: var(--font-plus-jakarta);
-  --font-serif: var(--font-cormorant);
 }
+
+/* ============================================================
+   BASE STYLES
+   ============================================================ */
 
 *,
 *::before,
@@ -45,222 +68,192 @@
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+  padding: 0;
   min-height: 100dvh;
-  min-width: 0;
-  overflow-x: hidden;
-  background: var(--background);
+  background: white;
   color: var(--ink);
-  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-article,
-main {
-  min-width: 0;
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
-/* Hero — deep navy with soft light drift (clean, not busy) */
-.hero-brand {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(160deg, #00132e 0%, var(--navy) 38%, #0a2544 100%);
-  color: #f8fafc;
-}
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
 
-.hero-brand::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background:
-    radial-gradient(ellipse 80% 55% at 100% 0%, rgba(184, 151, 93, 0.12), transparent 55%),
-    radial-gradient(ellipse 50% 40% at 0% 100%, rgba(255, 255, 255, 0.06), transparent 50%);
-}
-
-.hero-brand::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.4;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.04'%3E%3Cpath d='M28 0v56M0 28h56'/%3E%3C/g%3E%3C/svg%3E");
-}
-
-.hero-brand > .hero-inner {
-  position: relative;
-  z-index: 1;
-}
-
-/* Transform-only motion — no opacity keyframes (avoids invisible hero on first paint / SSR). */
-@media (prefers-reduced-motion: no-preference) {
-  .hero-reveal,
-  .hero-reveal-delay,
-  .hero-reveal-delay-2 {
-    transform: translateY(12px);
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-
-  .hero-reveal {
-    animation: hero-reveal 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-  }
-
-  .hero-reveal-delay {
-    animation: hero-reveal 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.1s forwards;
-  }
-
-  .hero-reveal-delay-2 {
-    animation: hero-reveal 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.18s forwards;
-  }
-}
-
-@keyframes hero-reveal {
   to {
+    opacity: 1;
     transform: translateY(0);
   }
 }
 
-.eyebrow-gold {
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--gold);
+.hero-reveal {
+  animation: fadeInUp 0.6s ease-out;
 }
 
-@media (min-width: 640px) {
-  .eyebrow-gold {
-    font-size: 0.75rem;
-  }
+.hero-reveal-delay {
+  animation: fadeInUp 0.8s ease-out;
 }
 
-.rule-gold {
-  height: 2px;
-  width: 3rem;
-  border-radius: 9999px;
-  background: linear-gradient(90deg, var(--gold), rgba(184, 151, 93, 0.35));
-}
+/* ============================================================
+   BLOG CONTENT STYLING
+   ============================================================ */
 
-.display-serif {
-  font-family: var(--font-cormorant), ui-serif, "Times New Roman", serif;
-}
-
-.card-premium {
-  border: 1px solid var(--border);
-  background: var(--surface);
-  border-radius: 1rem;
-  box-shadow: 0 1px 0 rgba(0, 27, 61, 0.04);
-}
-
-/* Flat panel — Sidekick-style list rows */
-.card-flat {
-  border: 1px solid var(--border);
-  background: var(--surface);
-  border-radius: 1rem;
-}
-
-/* Hero glass tiles */
-.hero-glass {
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-radius: 1rem;
-}
-
-.section-label {
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--gold-strong);
-}
-
-.article-body.prose-blog {
-  line-height: 1.65;
-  font-size: 1rem;
-  overflow-wrap: anywhere;
-  word-wrap: break-word;
-}
-
-@media (min-width: 640px) {
-  .article-body.prose-blog {
-    font-size: 1.0625rem;
-    line-height: 1.7;
-  }
-}
-
-.article-body.prose-blog h2 {
-  margin-top: 1.75rem;
-  margin-bottom: 0.65rem;
-  font-family: var(--font-cormorant), ui-serif, Georgia, serif;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--ink);
-  line-height: 1.3;
-}
-
-@media (min-width: 640px) {
-  .article-body.prose-blog h2 {
-    margin-top: 2rem;
-    font-size: 1.5rem;
-  }
-}
-
-.article-body.prose-blog h3 {
-  margin-top: 1.35rem;
-  margin-bottom: 0.45rem;
+.prose-blog {
+  max-width: 65ch;
+  color: var(--slate-700);
   font-size: 1.0625rem;
-  font-weight: 600;
-  color: var(--ink-soft);
-  line-height: 1.35;
+  line-height: 1.75;
 }
 
-.article-body.prose-blog p {
+.prose-blog h2 {
+  margin-top: 2.5rem;
   margin-bottom: 1rem;
-  color: var(--ink-soft);
+  padding-left: 1rem;
+  border-left: 4px solid var(--emerald-600);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--slate-900);
 }
 
-.article-body.prose-blog ul,
-.article-body.prose-blog ol {
-  margin: 1rem 0 1rem 1.1rem;
-  padding-left: 0.35rem;
-  color: var(--ink-soft);
+.prose-blog h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--slate-900);
 }
 
-@media (min-width: 640px) {
-  .article-body.prose-blog ul,
-  .article-body.prose-blog ol {
-    margin-left: 1.25rem;
-  }
+.prose-blog p {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
-.article-body.prose-blog li {
+.prose-blog a {
+  color: var(--emerald-700);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s;
+}
+
+.prose-blog a:hover {
+  color: var(--emerald-600);
+}
+
+.prose-blog ul,
+.prose-blog ol {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.prose-blog li {
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.article-body.prose-blog a {
-  color: var(--navy-soft);
-  font-weight: 500;
-  text-decoration: underline;
-  text-decoration-color: rgba(184, 151, 93, 0.7);
-  text-underline-offset: 3px;
+.prose-blog strong {
+  font-weight: 700;
+  color: var(--slate-900);
 }
 
-.article-body.prose-blog a:hover {
-  color: var(--gold-strong);
-  text-decoration-color: var(--gold);
+.prose-blog table {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border);
+  border-collapse: collapse;
+  font-size: 0.9375rem;
 }
 
-.article-body.prose-blog strong {
-  color: var(--ink);
-  font-weight: 600;
+.prose-blog th {
+  background: var(--slate-900);
+  color: white;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-.article-body.prose-blog blockquote {
-  margin: 1.25rem 0;
-  border-left: 4px solid var(--gold);
-  padding-left: 0.9rem;
-  color: var(--muted);
+.prose-blog td {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.prose-blog tr:nth-child(even) {
+  background: var(--slate-50);
+}
+
+/* ============================================================
+   UTILITY CLASSES
+   ============================================================ */
+
+.section-label {
+  display: inline-block;
+  background: var(--emerald-600);
+  color: white;
+  padding: 0.375rem 0.875rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ============================================================
+   FOCUS & INTERACTION STATES
+   ============================================================ */
+
+.focus-ring-emerald:focus-visible {
+  outline: 2px solid var(--emerald-600);
+  outline-offset: 2px;
+}
+
+button:disabled,
+input:disabled,
+select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ============================================================
+   FORM ELEMENTS
+   ============================================================ */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
 }

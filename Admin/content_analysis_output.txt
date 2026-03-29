@@ -1,0 +1,118 @@
+﻿python : C:\Users\user\Documents\Accounting\agents\utils\content_analyzer.py:61: DeprecationWarning: 
+datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to 
+represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+At C:\Users\user\AppData\Local\Temp\ps-script-403714e6-4417-40f9-afec-9d536777b78a.ps1:83 char:41
++ ... nts\Accounting ; python agents/utils/content_analyzer.py 2>&1 | Out-F ...
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\user\D...(datetime.UTC).:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  "generated_at": datetime.utcnow().isoformat()
+=== Content Strategy Analyzer ===
+
+Analyzing 59 topics...
+
+
+================================================================================
+CONTENT STRATEGY ANALYSIS REPORT
+================================================================================
+
+Total Topics: 59
+Used: 48 | Unused: 11
+
+--------------------------------------------------------------------------------
+CONTENT BRANCHES (Thematic Clusters)
+--------------------------------------------------------------------------------
+
+Tax Planning & Compliance (Coverage: 9/10, Value: high)
+  Tax obligations, reliefs, and compliance requirements for dental practices and associates
+  Topics: 11
+    - Dental practice software and digital systems: accounting treatment and tax relief
+    - Dental practice lease vs buy decisions: financial impact and tax considerations
+    - Dental practice corporation tax rates 2026: small profits rate vs main rate
+    ... and 8 more
+
+Associate Dentist Finances (Coverage: 8/10, Value: high)
+  Financial planning, expenses, and employment matters for associate dentists
+  Topics: 6
+    - Associate dentist pension contributions: workplace vs SIPP options for 2026
+    - Associate dentist expense claims: what HMRC allows and common mistakes
+    - Moving from associate to practice owner: financial planning guide
+    ... and 3 more
+
+Practice Acquisition & Valuation (Coverage: 6/10, Value: high)
+  Buying, selling, and valuing dental practices including due diligence processes
+  Topics: 3
+    - Dental practice goodwill valuation methods: earnings vs asset-based approaches
+    - Dental practice due diligence checklist for buyers
+    - Dental practice exit planning: when to start and what to consider
+
+Practice Management & Operations (Coverage: 7/10, Value: medium)
+  Day-to-day financial management, cash flow, and operational considerations
+  Topics: 6
+    - Dental practice cash flow forecasting: monthly vs quarterly planning templates
+    - Dental practice benchmarking: are you profitable?
+    - Hiring your first associate: what it costs and how to structure it
+    ... and 3 more
+
+Business Structure & Partnerships (Coverage: 4/10, Value: high)
+  Partnership agreements, group structures, and profit sharing arrangements
+  Topics: 2
+    - Dental practice partnership agreements: tax implications and profit sharing structures
+    - Inter-company loans and dividends in a dental group structure
+
+Professional Services Marketing (Coverage: 3/10, Value: high)
+  Location-specific accountancy services and specialist knowledge positioning
+  Topics: 2
+    - Dental accountant Manchester: why specialist knowledge matters
+    - Dental accountant London: how to choose a specialist
+
+--------------------------------------------------------------------------------
+CONTENT GAPS (Missing Topics)
+--------------------------------------------------------------------------------
+  - Dental practice financing and loan options
+  - Private vs NHS contract considerations
+  - Dental practice succession planning for family businesses
+  - Employment law for dental practices
+  - Corporate structure optimization (limited company vs partnership)
+
+--------------------------------------------------------------------------------
+POTENTIAL DUPLICATES
+--------------------------------------------------------------------------------
+
+  Similarity: 0.80
+    1. Dental practice software and digital systems: accounting treatment and tax relief
+    2. Dental practice lease vs buy decisions: financial impact and tax considerations
+    > Consider merging or removing one
+
+  Similarity: 0.75
+    1. Dental practice software and digital systems: accounting treatment and tax relief
+    2. Dental practice cash flow forecasting: monthly vs quarterly planning templates
+    > Consider merging or removing one
+
+--------------------------------------------------------------------------------
+CATEGORY DISTRIBUTION
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\user\Documents\Accounting\agents\utils\content_analyzer.py", line 306, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python313\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\user\Documents\Accounting\agents\utils\content_analyzer.py", line 291, in main
+    analyzer.print_report(report)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\user\Documents\Accounting\agents\utils\content_analyzer.py", line 273, in print_report
+    print(f"  {cat:30s} {bar} {count}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 33-41: character maps to <undefined>

@@ -46,7 +46,7 @@ COST_PER_OPERATION = {
 QUALITY_THRESHOLDS = {
     "min_word_count": 1000,
     "max_keyword_density": 0.03,  # 3%
-    "duplicate_similarity_threshold": 0.80,  # 80% = duplicate
+    "duplicate_similarity_threshold": 0.92,  # 92% = duplicate (allows related topics)
     "content_similarity_threshold": 0.80,  # 80% = too similar
     "recent_topic_days": 90,  # Don't reuse topics within 90 days
 }

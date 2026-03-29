@@ -1,61 +1,74 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { CTASection } from "@/components/ui/CTASection";
-import { contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
+import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Locations",
-  description: `${siteConfig.name} — specialist dental practice finance and accounting across the UK. Explore our locations.`,
+  title: "Locations | Property Accountants Across the UK",
+  description: `${siteConfig.name} — specialist property accountants serving landlords across the UK. Explore our locations.`,
   alternates: { canonical: `${siteConfig.url.replace(/\/$/, "")}/locations` },
-};
-
-const cityLabel: Record<string, string> = {
-  london: "London",
-  manchester: "Manchester",
 };
 
 export default function LocationsHubPage() {
   return (
-    <div className={`${contentNarrow} ${sectionY}`}>
-      <Breadcrumb
-        items={[
-          { label: "Home", href: "/" },
-          { label: "Locations" },
-        ]}
-      />
-      <h1 className="font-serif text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">Locations</h1>
-      <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-        We work with dental practices across the UK. Start from a local page for context — then get in touch for advice
-        tailored to your structure.
-      </p>
-
-      <ul className="mt-10 grid list-none gap-4 pl-0 sm:mt-12 sm:grid-cols-2 sm:gap-6">
-        {siteConfig.locations.map((loc) => (
-          <li key={loc.slug}>
-            <Link
-              href={`/locations/${loc.slug}`}
-              className={`card-premium block rounded-xl p-6 no-underline shadow-sm transition-shadow hover:shadow-md ${focusRing}`}
-            >
-              <span className="font-serif text-xl font-semibold text-[var(--ink)]">
-                {cityLabel[loc.slug] ?? loc.slug}
-              </span>
-              <span className="mt-2 block text-sm leading-relaxed text-[var(--muted)]">{loc.title}</span>
-              <span className="mt-4 inline-flex min-h-10 items-center text-sm font-semibold text-[var(--accent-strong)]">
-                View local page →
-              </span>
-            </Link>
-          </li>
-        ))}
-      </ul>
-
-      <div className="mt-12">
-        <CTASection
-          title="Not sure which page fits?"
-          description="Tell us where you are based and whether you are an associate or owner — we will point you to the right next step."
+    <>
+      <section className="relative h-[350px] overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=2000&q=85"
+          alt="UK cities"
+          fill
+          className="object-cover brightness-75"
         />
-      </div>
-    </div>
+        <div className="absolute inset-0 bg-slate-900/85" />
+        <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
+          <div className="max-w-3xl">
+            <Breadcrumb
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Locations" },
+              ]}
+            />
+            <h1 className="mt-6 text-4xl font-bold text-white sm:text-5xl lg:text-6xl">Locations</h1>
+            <p className="mt-4 text-xl text-white">
+              We work with landlords across the UK. Find your local area for context.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {siteConfig.locations.map((loc) => (
+              <Link
+                key={loc.slug}
+                href={`/locations/${loc.slug}`}
+                className="group bg-slate-50 border-l-4 border-slate-300 p-8 transition-all hover:border-emerald-600 hover:bg-white hover:shadow-md"
+              >
+                <span className="text-2xl font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
+                  {loc.title}
+                </span>
+                <span className="mt-4 flex items-center gap-2 text-sm font-bold text-emerald-700 uppercase tracking-wider">
+                  View local page
+                  <span className="text-lg">→</span>
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-slate-50 py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <CTASection
+            title="Not sure which page fits?"
+            description="Tell us where you are based and we'll point you to the right next step."
+          />
+        </div>
+      </section>
+    </>
   );
 }
