@@ -1,35 +1,3 @@
-# Dependencies
-node_modules/
-.pnp
-.pnp.js
-
-# Testing
-coverage/
-
-# Next.js
-.next/
-out/
-build/
-dist/
-
-# Production
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Misc
-.DS_Store
-*.pem
-
-# Debug
-.vscode/
-.idea/
-
-# Local env files
-.env*.local
-.env
-
 # Python
 __pycache__/
 *.py[cod]
@@ -39,13 +7,57 @@ __pycache__/
 env/
 venv/
 ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
 *.egg-info/
+.installed.cfg
+*.egg
 
-# Secrets
-service-account.json
-*.key
-*.pem
-credentials.json
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+agents/docs/logs/*.log
+
+# Node.js (for Next.js sites)
+node_modules/
+.next/
+out/
+*.tsbuildinfo
 
 # Vercel
 .vercel
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Documentation (keep in repo but ignore editor temp files)
+.docs/*.tmp
+
+# Admin documentation
+# Admin/*.md files are kept in repo for project documentation

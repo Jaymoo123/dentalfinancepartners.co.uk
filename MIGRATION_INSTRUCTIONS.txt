@@ -1,0 +1,35 @@
+================================================================================
+DATABASE MIGRATION - QUICK GUIDE
+================================================================================
+
+I've opened two windows for you:
+1. Supabase SQL Editor (in your browser)
+2. Migration SQL file (in Notepad)
+
+STEPS (2 minutes):
+
+1. In Notepad: Press Ctrl+A (select all), then Ctrl+C (copy)
+
+2. In Browser (Supabase SQL Editor):
+   - Click in the SQL editor area
+   - Press Ctrl+V (paste)
+   - Click the "RUN" button (or press Ctrl+Enter)
+
+3. Wait for "Success. No rows returned" message
+
+4. Come back here - I'll continue testing automatically!
+
+================================================================================
+
+WHAT THIS CREATES:
+- agent_executions table (tracks all agent runs)
+- agent_costs table (tracks API spending)
+- published_content table (prevents duplicates)
+- niche_metrics table (performance tracking)
+- seo_rankings table (SEO monitoring)
+- Helper functions for cost tracking
+- Cleanup function for 90-day retention
+
+================================================================================
+
+Once you've run the migration, just let me know and I'll continue the test!

@@ -1,0 +1,48 @@
+name: Weekly Data Cleanup
+
+on:
+  schedule:
+    - cron: '0 2 * * 0'  # 2 AM UTC every Sunday
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    name: Clean Up Old Logs (90+ days)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install httpx python-dotenv
+      
+      - name: Run cleanup function
+        run: |
+          python -c "
+          import asyncio
+          import httpx
+          import os
+          
+          async def cleanup():
+              url = os.getenv('SUPABASE_URL') + '/rest/v1/rpc/cleanup_old_logs'
+              headers = {
+                  'apikey': os.getenv('SUPABASE_KEY'),
+                  'Authorization': f'Bearer {os.getenv(\"SUPABASE_KEY\")}',
+                  'Content-Type': 'application/json'
+              }
+              
+              async with httpx.AsyncClient() as client:
+                  response = await client.post(url, headers=headers, json={})
+                  response.raise_for_status()
+                  print('Cleanup completed successfully')
+          
+          asyncio.run(cleanup())
+          "
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}

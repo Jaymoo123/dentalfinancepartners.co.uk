@@ -1,0 +1,33 @@
+name: Weekly Performance Report
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'  # 9 AM UTC every Monday
+  workflow_dispatch:
+
+jobs:
+  generate-report:
+    name: Generate Weekly Analytics Report
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install anthropic httpx python-dotenv google-analytics-data google-auth
+      
+      - name: Generate and send report
+        run: python agents/analytics_optimization_agent.py --mode weekly-report
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          GA4_CREDENTIALS: ${{ secrets.GA4_CREDENTIALS }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}

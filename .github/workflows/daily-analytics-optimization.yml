@@ -1,0 +1,43 @@
+name: Daily Analytics Optimization
+
+on:
+  schedule:
+    - cron: '0 8 * * *'  # 8 AM UTC daily (after content generation)
+  workflow_dispatch:
+
+jobs:
+  analyze-and-optimize:
+    name: Analyze GA4 and Optimize Content
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install anthropic httpx python-dotenv google-analytics-data google-auth
+      
+      - name: Run Analytics Optimization Agent
+        run: python agents/analytics_optimization_agent.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          GA4_CREDENTIALS: ${{ secrets.GA4_CREDENTIALS }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      
+      - name: Commit optimizations
+        run: |
+          git config user.name "Analytics Bot"
+          git config user.email "bot@dentalfinancepartners.co.uk"
+          git add .
+          git commit -m "Auto-optimize content based on GA4 data" || echo "No optimizations"
+          git pull --rebase
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

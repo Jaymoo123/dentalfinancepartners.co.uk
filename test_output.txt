@@ -1,0 +1,28 @@
+﻿python : C:\Users\user\Documents\Accounting\agents\blog_generation_agent.py:222: DeprecationWarning: 
+datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to 
+represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+At C:\Users\user\AppData\Local\Temp\ps-script-9e446464-cd96-447c-9f72-5dc5b8cbb16c.ps1:82 char:246
++ ... lor Green ; python agents/blog_generation_agent.py --niche Dentists - ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\user\D...(datetime.UTC).:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  today = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0)
+C:\Users\user\Documents\Accounting\agents\blog_generation_agent.py:242: DeprecationWarning: datetime.datetime.utcnow() 
+is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: 
+datetime.datetime.now(datetime.UTC).
+  "started_at": datetime.utcnow().isoformat()
+C:\Users\user\Documents\Accounting\agents\blog_generation_agent.py:257: DeprecationWarning: datetime.datetime.utcnow() 
+is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: 
+datetime.datetime.now(datetime.UTC).
+  "completed_at": datetime.utcnow().isoformat(),
+=== Blog Generation Agent: Dentists ===
+Processing topic: Is dental treatment VAT exempt? A clear guide for practice owners
+Calling generate_blog_supabase.py...
+Generated: dental-treatment-vat-exempt-guide-practice-owners
+Quality check passed: {'word_count': 1082, 'faq_count': 4, 'internal_links': 2, 'keyword_density': 0.0027726432532347504}
+[2026-03-29 03:35:34] [HIGH] Agent Failed: blog_generation
+Niche: Dentists
+Error: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+Time: 2026-03-29 03:35:34
+Generated 0 posts for Dentists

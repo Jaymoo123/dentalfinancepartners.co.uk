@@ -1,0 +1,79 @@
+name: Daily Content Pipeline
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # 6 AM UTC daily
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  research-topics:
+    name: Research Blog Topics
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install anthropic httpx python-dotenv
+      
+      - name: Run Content Research Agent
+        run: python agents/content_research_agent.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
+  generate-blogs:
+    name: Generate Blogs
+    needs: research-topics
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        niche: [Dentists, Property]
+      max-parallel: 1  # Sequential execution to avoid API rate limits
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install anthropic httpx python-dotenv
+      
+      - name: Generate blog for ${{ matrix.niche }}
+        run: python agents/blog_generation_agent.py --niche ${{ matrix.niche }} --max-posts 1
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      
+      - name: Commit generated content
+        run: |
+          git config user.name "Content Bot"
+          git config user.email "bot@dentalfinancepartners.co.uk"
+          git add ${{ matrix.niche }}/web/content/blog/
+          git commit -m "Add new blog post for ${{ matrix.niche }}" || echo "No changes to commit"
+          git pull --rebase
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Install Vercel CLI
+        run: npm install -g vercel
+      
+      - name: Deploy to Vercel
+        run: vercel deploy --prod --cwd ${{ matrix.niche }}/web --token ${{ secrets.VERCEL_TOKEN }} --yes
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}

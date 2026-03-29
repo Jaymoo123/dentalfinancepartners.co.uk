@@ -1,0 +1,210 @@
+# Accounting Lead Generation Platform - AI Context
+
+## Project Overview
+Multi-niche lead generation platform for UK accounting services. Currently targeting:
+- **Dentists** (dentalfinancepartners.co.uk)
+- **Property/Landlords** (propertyaccountants.co.uk)
+
+Each niche has its own Next.js website with automated blog content generation powered by AI agents.
+
+## Architecture
+
+### Directory Structure
+```
+Accounting/
+├── Dentists/               # Dentist niche
+│   ├── web/               # Next.js site
+│   ├── config_supabase.py # Niche-specific config
+│   └── generate_blog_supabase.py
+├── Property/              # Property/Landlord niche
+│   ├── web/               # Next.js site
+│   ├── config_supabase.py
+│   └── generate_blog_supabase.py
+├── agents/                # AI Agent System (autonomous)
+│   ├── coordinator.py     # Central orchestrator
+│   ├── blog_generation_agent.py
+│   ├── content_research_agent.py
+│   ├── analytics_optimization_agent.py
+│   ├── config/            # Agent configuration
+│   ├── utils/             # Shared utilities
+│   └── docs/              # All documentation here
+├── shared_supabase_config.py  # Shared Supabase credentials
+└── supabase/migrations/   # Database schema
+```
+
+### Key Components
+
+1. **Shared Configuration** (`shared_supabase_config.py`)
+   - Supabase URL, API key
+   - Shared table names (leads, blog_topics_*)
+   - Source identifiers for each niche
+
+2. **Niche-Specific Config** (`{Niche}/config_supabase.py`)
+   - Imports shared config
+   - Defines niche-specific settings (site URL, author, categories, prompts)
+   - Output paths relative to niche subfolder
+
+3. **Blog Generation** (`{Niche}/generate_blog_supabase.py`)
+   - Fetches unused topics from Supabase
+   - Generates blog content using Claude Sonnet 4
+   - Outputs markdown to `{Niche}/web/content/blog/`
+   - Marks topics as used
+
+4. **AI Agent System** (`agents/`)
+   - **Content Research Agent**: Discovers trending topics using Claude
+   - **Blog Generation Agent**: Wraps existing blog scripts with quality controls
+   - **Analytics Optimization Agent**: Uses GA4 data to improve content
+   - **Coordinator**: Orchestrates all agents sequentially
+   - **Monitoring Dashboard**: Real-time status and cost tracking
+
+### Database (Supabase)
+
+**Shared Tables:**
+- `leads` - All lead submissions (with `source` column: 'dentists', 'property')
+- `agent_executions` - Agent run tracking
+- `agent_costs` - Cost monitoring
+- `published_content` - Deduplication tracking
+- `niche_metrics` - Performance metrics
+- `seo_rankings` - SEO tracking
+
+**Niche-Specific Tables:**
+- `blog_topics` (Dentists)
+- `blog_topics_property` (Property)
+
+### Automation (GitHub Actions)
+
+**Daily (6 AM UTC):**
+1. Research topics for all niches
+2. Generate 1 blog per niche (sequential)
+3. Commit and deploy to Vercel
+
+**Daily (8 AM UTC):**
+- Analyze GA4 data and optimize content
+
+**Weekly (Sunday 2 AM):**
+- Clean up logs older than 90 days
+
+**Weekly (Monday 9 AM):**
+- Generate performance report
+
+## Cost Controls
+
+**Hard Limits:**
+- Monthly budget: $200
+- Daily budget: $10
+- Rate limits: 1 blog/niche/day, 3 optimizations/day
+
+**Features:**
+- Pre-flight budget checks
+- Real-time cost tracking
+- Alert at 80% threshold
+- No automatic retries (prevents cost spiral)
+
+## Quality Controls
+
+**Pre-Generation:**
+- Semantic similarity check (80% threshold = duplicate)
+- Recent topic check (90 days)
+- Budget verification
+
+**Post-Generation:**
+- Minimum 1000 words
+- Proper HTML structure (h2, p, ul)
+- 4+ FAQ questions
+- Internal links present
+- Keyword density < 3%
+- Valid front matter
+
+**On Failure:**
+- Delete low-quality content
+- Send alert
+- Don't retry (alert only)
+
+## Environment Variables
+
+Required in GitHub Actions secrets:
+- `ANTHROPIC_API_KEY` - Claude API key
+- `SUPABASE_URL` - https://dhlxwmvmkrfnmcgjbntk.supabase.co
+- `SUPABASE_KEY` - Service role key
+- `VERCEL_TOKEN` - Vercel deployment token
+- `VERCEL_ORG_ID` - Vercel organization ID
+- `VERCEL_PROJECT_ID` - Vercel project ID (per niche)
+- `GA4_PROPERTY_ID` - G-273RJY0LZQ
+- `GA4_CREDENTIALS` - Service account JSON
+- `SLACK_WEBHOOK` - (optional) Slack notifications
+- `DISCORD_WEBHOOK` - (optional) Discord notifications
+
+## Adding a New Niche
+
+1. Create `{NicheName}/` folder
+2. Copy `config_supabase.py` and `generate_blog_supabase.py` from existing niche
+3. Customize config (site URL, author, categories, prompts)
+4. Copy `web/` folder and update branding
+5. Create `blog_topics_{niche}` table in Supabase
+6. Add niche to `agents/config/agent_config.py` NICHE_CONFIG
+7. Add source identifier to `shared_supabase_config.py`
+8. Update GitHub Actions matrix to include new niche
+9. Deploy to Vercel
+
+## Development Commands
+
+**Local Testing:**
+```bash
+# Test blog generation for a niche
+cd Dentists
+python generate_blog_supabase.py
+
+# Run content research agent
+python agents/content_research_agent.py --niche Dentists
+
+# Run blog generation agent
+python agents/blog_generation_agent.py --niche Dentists --max-posts 1
+
+# Run analytics optimization
+python agents/analytics_optimization_agent.py
+
+# Run full daily pipeline
+python agents/coordinator.py daily-pipeline
+
+# Check system status
+python agents/monitoring_dashboard.py status
+```
+
+**Local Development Server:**
+```bash
+cd Dentists/web
+npm run dev
+# Visit http://localhost:3000
+```
+
+## Important Notes
+
+1. **Never commit secrets** - All API keys must be in environment variables
+2. **Sequential execution** - Agents run one at a time to avoid rate limits
+3. **No auto-retry** - Failures alert only, preventing cost spirals
+4. **90-day retention** - Logs auto-delete after 90 days
+5. **Quality first** - Low-quality content is deleted, not published
+6. **Deduplication** - Semantic similarity checks prevent duplicate topics
+7. **Budget enforcement** - Hard stops at daily/monthly limits
+8. **Existing scripts** - Agents wrap existing `generate_blog_supabase.py`, don't replace it
+
+## Git Workflow
+
+- Main branch: `main`
+- All agent changes auto-commit with descriptive messages
+- GitHub push protection is active (blocks secrets)
+- Vercel deploys from GitHub on push
+
+## Monitoring
+
+- View dashboard: `python agents/monitoring_dashboard.py status`
+- Check Supabase tables: `agent_executions`, `agent_costs`
+- Slack/Discord alerts for failures and budget warnings
+- Weekly performance reports
+
+## Future Enhancements
+
+- Niche Expansion Agent (auto-discover and validate new niches)
+- Advanced content optimization (A/B testing, personalization)
+- Lead scoring and nurturing automation
+- Multi-channel marketing (social media, email)

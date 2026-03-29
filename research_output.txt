@@ -1,0 +1,22 @@
+﻿python : C:\Users\user\Documents\Accounting\agents\content_research_agent.py:236: DeprecationWarning: 
+datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to 
+represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+At C:\Users\user\AppData\Local\Temp\ps-script-c2b3f77e-a543-42aa-bbf7-650c93d15b4e.ps1:82 char:177
++ ... ccounting ; python agents/content_research_agent.py --niche Dentists  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\user\D...(datetime.UTC).:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  "started_at": datetime.utcnow().isoformat()
+C:\Users\user\Documents\Accounting\agents\content_research_agent.py:212: DeprecationWarning: 
+datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to 
+represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "created_at": datetime.utcnow().isoformat()
+=== Content Research Agent: Dentists ===
+Current unused topics: 0
+Researching trending topics...
+Filtering and inserting 5 topics...
+[2026-03-29 03:38:33] [HIGH] Agent Failed: content_research
+Niche: Dentists
+Error: 'charmap' codec can't encode character '\u274c' in position 3: character maps to <undefined>
+Time: 2026-03-29 03:38:33
