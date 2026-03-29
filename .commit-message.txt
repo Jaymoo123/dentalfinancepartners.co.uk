@@ -1,4 +1,0 @@
-Remove ssr: false from dynamic imports in Next.js 15
-
-Next.js 15 doesn't allow ssr: false in Server Components with next/dynamic.
-The calculators are already client components, so SSR is disabled by default.
