@@ -70,7 +70,7 @@
 
 ```bash
 # Open Supabase SQL Editor
-# URL: https://supabase.com/dashboard/project/dhlxwmvmkrfnmcgjbntk/sql
+# URL: https://supabase.com/dashboard/project/YOUR_PROJECT_ID/sql
 
 # Copy and paste entire contents of:
 # supabase/migrations/001_add_agent_tables.sql
@@ -140,7 +140,7 @@ pip install -r requirements.txt
 **Required environment variables:**
 ```
 ANTHROPIC_API_KEY=sk-ant-...
-SUPABASE_URL=https://dhlxwmvmkrfnmcgjbntk.supabase.co
+SUPABASE_URL=https://YOUR_PROJECT.supabase.co
 SUPABASE_KEY=eyJhbGci...
 ```
 
@@ -364,7 +364,7 @@ Add these secrets:
 
 ```
 ANTHROPIC_API_KEY=sk-ant-...
-SUPABASE_URL=https://dhlxwmvmkrfnmcgjbntk.supabase.co
+SUPABASE_URL=https://YOUR_PROJECT.supabase.co
 SUPABASE_KEY=eyJhbGci...
 VERCEL_TOKEN=[from Vercel]
 VERCEL_ORG_ID=[from Vercel]

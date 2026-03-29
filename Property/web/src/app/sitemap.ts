@@ -14,7 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/calculators",
     "/locations",
     "/blog",
-    "/thank-you",
     "/privacy-policy",
     "/terms",
     "/cookie-policy",

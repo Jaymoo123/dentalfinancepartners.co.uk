@@ -46,8 +46,9 @@ export function StickyCTA() {
           </Link>
           <button
             onClick={() => setDismissed(true)}
-            className="flex h-8 w-8 items-center justify-center rounded-full text-[var(--muted)] transition-colors hover:bg-[var(--surface)] hover:text-[var(--ink)]"
+            className="flex h-8 w-8 items-center justify-center rounded-full text-[var(--muted)] transition-colors hover:bg-[var(--surface)] hover:text-[var(--ink)] focus:outline-none focus:ring-2 focus:ring-[var(--gold)] focus:ring-offset-2"
             aria-label="Dismiss"
+            type="button"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

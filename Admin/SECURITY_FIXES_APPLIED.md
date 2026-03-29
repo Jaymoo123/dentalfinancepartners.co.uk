@@ -75,7 +75,7 @@ git commit -m "Security: Move credentials to environment variables"
 ### Before (INSECURE):
 ```python
 # shared_supabase_config.py
-SUPABASE_URL = "https://dhlxwmvmkrfnmcgjbntk.supabase.co"
+SUPABASE_URL = "https://YOUR_PROJECT.supabase.co"
 SUPABASE_KEY = "eyJhbGci..." # Hardcoded in Git!
 ```
 

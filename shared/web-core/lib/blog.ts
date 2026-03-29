@@ -1,4 +1,4 @@
-﻿import fs from "fs";
+import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import type { BlogFrontmatter, BlogPost } from "@/types/blog";
@@ -59,7 +59,29 @@ export function getRelatedPosts(
   category: string,
   limit = 3,
 ): BlogPost[] {
-  return getAllPosts()
-    .filter((p) => p.slug !== currentSlug && p.category === category)
-    .slice(0, limit);
+  if (!fs.existsSync(postsDirectory)) {
+    return [];
+  }
+  
+  const files = fs.readdirSync(postsDirectory).filter((f) => f.endsWith(".md"));
+  const relatedPosts: BlogPost[] = [];
+  
+  for (const file of files) {
+    if (relatedPosts.length >= limit) break;
+    
+    const filePath = path.join(postsDirectory, file);
+    const raw = fs.readFileSync(filePath, "utf8");
+    const { data } = matter(raw);
+    const fm = data as Partial<BlogFrontmatter>;
+    
+    if (fm.slug === currentSlug) continue;
+    if (fm.category !== category) continue;
+    if (!fm.slug || !fm.title) continue;
+    
+    relatedPosts.push(parsePostFile(filePath));
+  }
+  
+  return relatedPosts.sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
 }

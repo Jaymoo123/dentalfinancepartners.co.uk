@@ -17,6 +17,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {};
   }
   const canonical = post.canonical ?? `${siteConfig.url}/blog/${post.slug}`;
+  const ogImage = post.image || siteConfig.publisherLogoUrl;
+  
   return {
     title: post.metaTitle,
     description: post.metaDescription,
@@ -27,6 +29,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: canonical,
       type: "article",
       publishedTime: post.date,
+      images: [{ url: ogImage, alt: post.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.metaTitle,
+      description: post.metaDescription,
+      images: [ogImage],
     },
   };
 }

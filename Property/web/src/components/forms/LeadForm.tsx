@@ -129,7 +129,7 @@ export function LeadForm({
   }
 
   return (
-    <form onSubmit={onSubmit} className="space-y-5">
+    <form onSubmit={onSubmit} className="space-y-5" noValidate aria-busy={status === "loading"}>
       <input type="hidden" name="sourceUrl" value={sourceUrl} />
 
       <div>
@@ -139,6 +139,8 @@ export function LeadForm({
         <select
           id="role"
           name="role"
+          required
+          autoComplete="off"
           className={fieldClass}
           aria-invalid={!!fieldErrors.role}
           aria-describedby={fieldErrors.role ? "role-error" : undefined}
@@ -165,6 +167,9 @@ export function LeadForm({
           type="text"
           id="fullName"
           name="fullName"
+          required
+          autoComplete="name"
+          maxLength={100}
           placeholder={niche.lead_form.placeholders.name}
           className={fieldClass}
           aria-invalid={!!fieldErrors.fullName}
@@ -186,6 +191,9 @@ export function LeadForm({
             type="email"
             id="email"
             name="email"
+            required
+            autoComplete="email"
+            maxLength={100}
             placeholder={niche.lead_form.placeholders.email}
             className={fieldClass}
             aria-invalid={!!fieldErrors.email}
@@ -206,6 +214,9 @@ export function LeadForm({
             type="tel"
             id="phone"
             name="phone"
+            required
+            autoComplete="tel"
+            maxLength={20}
             placeholder={niche.lead_form.placeholders.phone}
             className={fieldClass}
             aria-invalid={!!fieldErrors.phone}
@@ -227,6 +238,7 @@ export function LeadForm({
           id="message"
           name="message"
           rows={4}
+          maxLength={1000}
           placeholder={niche.lead_form.placeholders.message}
           className={fieldClass}
           aria-invalid={!!fieldErrors.message}
@@ -240,13 +252,13 @@ export function LeadForm({
       </div>
 
       {errorMessage && (
-        <div className="rounded-lg border-2 border-red-200 bg-red-50 p-4">
+        <div role="alert" className="rounded-lg border-2 border-red-200 bg-red-50 p-4">
           <p className="text-sm font-medium text-red-800">{errorMessage}</p>
         </div>
       )}
 
       {status === "success" && !redirectOnSuccess && (
-        <div className="rounded-lg border-2 border-emerald-200 bg-emerald-50 p-4">
+        <div role="status" className="rounded-lg border-2 border-emerald-200 bg-emerald-50 p-4">
           <p className="text-sm font-semibold text-emerald-900">
             Thanks! We'll be in touch within 24 hours.
           </p>

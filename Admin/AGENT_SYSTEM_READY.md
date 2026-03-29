@@ -26,7 +26,7 @@ A fully autonomous AI agent system that:
 ### Step 1: Run Database Migration
 
 1. Open Supabase SQL Editor:  
-   https://supabase.com/dashboard/project/dhlxwmvmkrfnmcgjbntk/sql
+   https://supabase.com/dashboard/project/YOUR_PROJECT_ID/sql
 
 2. Copy and paste the entire contents of:  
    `supabase/migrations/001_add_agent_tables.sql`
@@ -41,7 +41,7 @@ Add these secrets:
 
 ```
 ANTHROPIC_API_KEY=sk-ant-...
-SUPABASE_URL=https://dhlxwmvmkrfnmcgjbntk.supabase.co
+SUPABASE_URL=https://YOUR_PROJECT.supabase.co
 SUPABASE_KEY=eyJhbGci...
 VERCEL_TOKEN=...
 VERCEL_ORG_ID=...

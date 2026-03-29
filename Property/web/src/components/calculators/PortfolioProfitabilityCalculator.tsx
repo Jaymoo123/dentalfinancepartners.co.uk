@@ -70,12 +70,13 @@ export function PortfolioProfitabilityCalculator() {
                   type="text"
                   value={prop.name}
                   onChange={(e) => updateProperty(prop.id, "name", e.target.value)}
-                  className="border-0 bg-transparent text-xl font-bold text-slate-900 focus:outline-none"
+                  className="border-0 bg-transparent text-xl font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 rounded px-1"
+                  aria-label={`Property ${idx + 1} name`}
                 />
                 {properties.length > 1 && (
                   <button
                     onClick={() => removeProperty(prop.id)}
-                    className="text-xs font-bold text-red-600 hover:text-red-700 uppercase tracking-wider"
+                    className="text-xs font-bold text-red-600 hover:text-red-700 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 rounded px-2 py-1 uppercase tracking-wider"
                     aria-label={`Remove ${prop.name}`}
                   >
                     Remove

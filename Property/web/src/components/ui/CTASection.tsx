@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useId } from "react";
 import { btnPrimary, btnSecondary } from "@/components/ui/layout-utils";
 
 type CTASectionProps = {
@@ -18,13 +21,15 @@ export function CTASection({
   secondaryHref = "/services",
   secondaryLabel = "View services",
 }: CTASectionProps) {
+  const headingId = useId();
+  
   return (
     <section
       className="border-l-4 border-emerald-600 bg-emerald-50 p-8 sm:p-12"
-      aria-labelledby="cta-heading"
+      aria-labelledby={headingId}
     >
       <h2
-        id="cta-heading"
+        id={headingId}
         className="max-w-2xl text-2xl font-bold leading-tight text-slate-900 sm:text-3xl"
       >
         {title}

@@ -7,6 +7,7 @@ import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { getAllPosts } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { buildLocalBusinessJsonLd } from "@/lib/local-business-schema";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -31,6 +32,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: `Specialist property accountant in ${cityName} for landlords and investors. Section 24, MTD, incorporation.`,
       url: canonical,
       type: "website",
+      images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `Property Accountant ${cityName}`,
+      description: `Specialist property accountant in ${cityName} for landlords. Section 24, MTD, incorporation.`,
+      images: [siteConfig.publisherLogoUrl],
     },
   };
 }
@@ -155,13 +163,33 @@ export default async function LocationPage({ params }: Props) {
     .filter((p) => p.category?.toLowerCase().includes("property") || p.category?.toLowerCase().includes("landlord"))
     .slice(0, 5);
 
+  const localBusinessSchema = buildLocalBusinessJsonLd({
+    name: siteConfig.name,
+    legalName: siteConfig.legalName,
+    description: content.intro,
+    url: `${siteConfig.url}/locations/${slug}`,
+    logo: siteConfig.publisherLogoUrl,
+    email: siteConfig.email,
+    phone: siteConfig.phone,
+    areaServed: content.areas,
+    city: cityName,
+    organizationType: siteConfig.organizationType,
+  });
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: localBusinessSchema }}
+      />
+      
       <section className="relative h-[350px] overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=2000&q=85"
+          src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1200&q=85"
           alt={`${cityName} property`}
           fill
+          priority
+          sizes="100vw"
           className="object-cover brightness-75"
         />
         <div className="absolute inset-0 bg-slate-900/85" />

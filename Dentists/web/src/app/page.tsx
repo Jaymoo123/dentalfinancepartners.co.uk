@@ -5,7 +5,7 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { StickyCTA } from "@/components/ui/StickyCTA";
 import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
-import { getAllPosts } from "@/lib/blog";
+import { getPostBySlug } from "@/lib/blog";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 
 const btnMailOutline =
@@ -143,8 +143,7 @@ const specialistRows = [
 ];
 
 export default function HomePage() {
-  const allPosts = getAllPosts();
-  const practicalPosts = PRACTICAL_SLUGS.map((slug) => allPosts.find((p) => p.slug === slug)).filter(
+  const practicalPosts = PRACTICAL_SLUGS.map((slug) => getPostBySlug(slug)).filter(
     (p): p is NonNullable<typeof p> => Boolean(p),
   );
 

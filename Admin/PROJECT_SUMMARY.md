@@ -77,7 +77,7 @@ Build a **production-ready lead generation website** for Dental Finance Partners
 - Redirect to `/thank-you` on homepage/contact page
 
 **Lead Storage:**
-View at: https://supabase.com/dashboard/project/dhlxwmvmkrfnmcgjbntk/editor (table: `leads`)
+View at: https://supabase.com/dashboard/project/YOUR_PROJECT_ID/editor (table: `leads`)
 
 ---
 
@@ -160,7 +160,7 @@ View at: https://supabase.com/dashboard/project/dhlxwmvmkrfnmcgjbntk/editor (tab
 
 **Environment Variables (Production):**
 - `NEXT_PUBLIC_SITE_URL` = https://dentalfinancepartners.co.uk
-- `NEXT_PUBLIC_SUPABASE_URL` = https://dhlxwmvmkrfnmcgjbntk.supabase.co
+- `NEXT_PUBLIC_SUPABASE_URL` = https://YOUR_PROJECT.supabase.co
 - `NEXT_PUBLIC_SUPABASE_ANON_KEY` = (configured)
 
 **DNS Status:**
@@ -683,7 +683,7 @@ vercel --prod
 **Email:** hello@dentalfinancepartners.co.uk  
 **Phone:** +44 20 0000 0000  
 
-**Supabase Dashboard:** https://supabase.com/dashboard/project/dhlxwmvmkrfnmcgjbntk  
+**Supabase Dashboard:** https://supabase.com/dashboard/project/YOUR_PROJECT_ID  
 **Vercel Dashboard:** https://vercel.com/sitenudge-projects/web  
 **GitHub Repo:** https://github.com/Jaymoo123/dentalfinancepartners.co.uk  
 

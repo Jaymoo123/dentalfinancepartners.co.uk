@@ -36,6 +36,9 @@ class SupabaseClient:
                 # If value already contains an operator (gte., lt., etc), use as-is
                 if isinstance(value, str) and any(op in value for op in ['gte.', 'lte.', 'gt.', 'lt.', 'neq.', 'like.', 'ilike.']):
                     params[key] = value
+                # Handle boolean values - PostgREST expects lowercase 'true'/'false'
+                elif isinstance(value, bool):
+                    params[key] = f"eq.{str(value).lower()}"
                 else:
                     params[key] = f"eq.{value}"
         
@@ -53,7 +56,13 @@ class SupabaseClient:
     async def update(self, table: str, filters: Dict, data: Dict) -> Dict:
         """Update rows in a table."""
         url = f"{self.url}/rest/v1/{table}"
-        params = {k: f"eq.{v}" for k, v in filters.items()}
+        # Handle boolean values properly in filters
+        params = {}
+        for k, v in filters.items():
+            if isinstance(v, bool):
+                params[k] = f"eq.{str(v).lower()}"
+            else:
+                params[k] = f"eq.{v}"
         headers = {**self.headers, "Prefer": "return=representation"}
         
         async with httpx.AsyncClient() as client:
@@ -64,7 +73,13 @@ class SupabaseClient:
     async def delete(self, table: str, filters: Dict) -> None:
         """Delete rows from a table."""
         url = f"{self.url}/rest/v1/{table}"
-        params = {k: f"eq.{v}" for k, v in filters.items()}
+        # Handle boolean values properly in filters
+        params = {}
+        for k, v in filters.items():
+            if isinstance(v, bool):
+                params[k] = f"eq.{str(v).lower()}"
+            else:
+                params[k] = f"eq.{v}"
         
         async with httpx.AsyncClient() as client:
             response = await client.delete(url, headers=self.headers, params=params)

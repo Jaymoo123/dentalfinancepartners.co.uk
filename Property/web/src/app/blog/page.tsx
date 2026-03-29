@@ -27,9 +27,11 @@ export default function BlogIndexPage() {
     <>
       <section className="relative h-[350px] overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=2000&q=85"
+          src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1200&q=85"
           alt="UK property"
           fill
+          priority
+          sizes="100vw"
           className="object-cover brightness-75"
         />
         <div className="absolute inset-0 bg-slate-900/85" />

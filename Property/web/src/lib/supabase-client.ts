@@ -34,14 +34,20 @@ export async function submitLead(
 
     if (!res.ok) {
       const errorText = await res.text().catch(() => "");
-      console.error("Lead submission failed:", res.status, errorText);
+      if (process.env.NODE_ENV === 'development') {
+        console.error("Lead submission failed:", res.status, errorText);
+      }
       return { success: false, error: `Request failed (${res.status})` };
     }
 
-    console.log("Lead submission success");
+    if (process.env.NODE_ENV === 'development') {
+      console.log("Lead submission success");
+    }
     return { success: true };
   } catch (err) {
-    console.error("Lead submission error:", err);
+    if (process.env.NODE_ENV === 'development') {
+      console.error("Lead submission error:", err);
+    }
     return { success: false, error: err instanceof Error ? err.message : "Unknown error" };
   }
 }

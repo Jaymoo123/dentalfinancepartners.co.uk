@@ -47,14 +47,17 @@ const testimonials = [
 
 export function TestimonialSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
+    if (isPaused) return;
+    
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % testimonials.length);
     }, 8000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [isPaused]);
 
   const currentTestimonial = testimonials[currentIndex];
 
@@ -79,18 +82,42 @@ export function TestimonialSlider() {
           </div>
         )}
       </div>
-      <div className="mt-6 flex justify-center gap-2">
-        {testimonials.map((_, idx) => (
-          <button
-            key={idx}
-            onClick={() => setCurrentIndex(idx)}
-            className={`h-1 transition-all duration-200 ${
-              idx === currentIndex ? "w-12 bg-emerald-600" : "w-8 bg-slate-300 hover:bg-slate-400"
-            }`}
-            aria-label={`Go to testimonial ${idx + 1}`}
-            type="button"
-          />
-        ))}
+      
+      <div className="mt-6 flex items-center justify-center gap-4">
+        <button
+          onClick={() => setIsPaused(!isPaused)}
+          className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100 text-slate-700 transition-colors hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2"
+          aria-label={isPaused ? "Resume auto-rotation" : "Pause auto-rotation"}
+          type="button"
+        >
+          {isPaused ? (
+            <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          ) : (
+            <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+            </svg>
+          )}
+        </button>
+        
+        <div className="flex gap-2">
+          {testimonials.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => {
+                setCurrentIndex(idx);
+                setIsPaused(true);
+              }}
+              className={`h-3 w-3 rounded-full transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 ${
+                idx === currentIndex ? "bg-emerald-600 scale-125" : "bg-slate-300 hover:bg-slate-400"
+              }`}
+              aria-label={`Go to testimonial ${idx + 1}`}
+              aria-current={idx === currentIndex ? "true" : "false"}
+              type="button"
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

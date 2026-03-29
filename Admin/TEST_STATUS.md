@@ -77,7 +77,7 @@ The agent system needs 5 new database tables. Supabase requires these to be crea
 ### Error Encountered:
 ```
 httpx.HTTPStatusError: Client error '404 Not Found' for url 
-'https://dhlxwmvmkrfnmcgjbntk.supabase.co/rest/v1/agent_executions'
+'https://YOUR_PROJECT.supabase.co/rest/v1/agent_executions'
 ```
 
 **Translation:** "The `agent_executions` table doesn't exist yet"
@@ -128,7 +128,7 @@ Once you run the migration, I will automatically:
 5. I continue testing automatically
 
 ### PATH B: I Run Migration (5 minutes total)
-1. You get service_role key from: https://supabase.com/dashboard/project/dhlxwmvmkrfnmcgjbntk/settings/api
+1. You get service_role key from: https://supabase.com/dashboard/project/YOUR_PROJECT_ID/settings/api
 2. You set: `$env:SUPABASE_SERVICE_KEY='key-here'`
 3. I run migration programmatically
 4. I continue testing automatically

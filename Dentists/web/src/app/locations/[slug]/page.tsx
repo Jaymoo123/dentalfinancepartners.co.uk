@@ -6,6 +6,7 @@ import { btnPrimary, contentNarrow, focusRing, sectionY } from "@/components/ui/
 import { siteConfig } from "@/config/site";
 import { getAllPosts } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { buildLocalBusinessJsonLd } from "@/lib/local-business-schema";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -30,6 +31,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: `Specialist dental accountant in ${cityName} for associates, practice owners & groups. NHS contracts, tax planning, VAT & acquisitions.`,
       url: canonical,
       type: "website",
+      images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `Dental Accountant ${cityName}`,
+      description: `Specialist dental accountant in ${cityName} for associates, practice owners & groups.`,
+      images: [siteConfig.publisherLogoUrl],
     },
   };
 }
@@ -91,8 +99,26 @@ export default async function LocationPage({ params }: Props) {
   const cityName = slug.charAt(0).toUpperCase() + slug.slice(1);
   const posts = getAllPosts().slice(0, 3);
 
+  const localBusinessSchema = buildLocalBusinessJsonLd({
+    name: siteConfig.name,
+    legalName: siteConfig.legalName,
+    description: content.intro,
+    url: `${siteConfig.url}/locations/${slug}`,
+    logo: siteConfig.publisherLogoUrl,
+    email: siteConfig.email,
+    phone: siteConfig.phone,
+    areaServed: content.areas,
+    city: cityName,
+    organizationType: siteConfig.organizationType,
+  });
+
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: localBusinessSchema }}
+      />
+      
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

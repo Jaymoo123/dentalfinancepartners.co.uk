@@ -103,8 +103,8 @@ The Property Tax Partners lead form is not working after deployment to Vercel, d
 - Option A: Use Vercel dashboard UI directly (manual verification)
 - Option B: Link `Property/web` to correct project first, then run `vercel env ls`
 **Success Criteria**: 
-- `NEXT_PUBLIC_SUPABASE_URL` = `https://dhlxwmvmkrfnmcgjbntk.supabase.co`
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY` = (correct anon key)
+- `NEXT_PUBLIC_SUPABASE_URL` = `https://YOUR_PROJECT.supabase.co`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY` = (correct anon key from Supabase dashboard)
 - `NEXT_PUBLIC_SITE_URL` = `https://propertytaxpartners.co.uk`
 - All set for Production, Preview, and Development environments
 
@@ -148,10 +148,10 @@ npm run dev
 ```bash
 cd Property/web
 vercel env add NEXT_PUBLIC_SUPABASE_URL production
-# Enter: https://dhlxwmvmkrfnmcgjbntk.supabase.co
+# Enter: https://YOUR_PROJECT.supabase.co
 
 vercel env add NEXT_PUBLIC_SUPABASE_ANON_KEY production
-# Enter: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRobHh3bXZta3Jmbm1jZ2pibnRrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg0ODM0NjMsImV4cCI6MjA3NDA1OTQ2M30.hwUgd2x91wFqX8HKENztrXtGkabR21LPKhC-oxzuOA8
+# Enter: eyJhbGci...YOUR_ANON_KEY
 
 vercel env add NEXT_PUBLIC_SITE_URL production
 # Enter: https://propertytaxpartners.co.uk

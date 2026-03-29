@@ -21,7 +21,7 @@
 - **Functions Created:** `cleanup_old_logs()`, `get_monthly_spend()`, `get_daily_spend()`, `get_unused_topic_count()`
 
 ### 2. Supabase Connection ✅
-- **URL:** https://dhlxwmvmkrfnmcgjbntk.supabase.co
+- **URL:** https://YOUR_PROJECT.supabase.co
 - **Authentication:** Working (anon key)
 - **Read Access:** Verified on all tables
 - **Write Access:** Verified (RLS disabled on agent tables)

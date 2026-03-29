@@ -50,8 +50,8 @@ Add these variables for **Production**:
 
 ```
 NEXT_PUBLIC_SITE_URL=https://propertytaxpartners.co.uk
-NEXT_PUBLIC_SUPABASE_URL=https://dhlxwmvmkrfnmcgjbntk.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRobHh3bXZta3Jmbm1jZ2pibnRrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg0ODM0NjMsImV4cCI6MjA3NDA1OTQ2M30.hwUgd2x91wFqX8HKENztrXtGkabR21LPKhC-oxzuOA8
+NEXT_PUBLIC_SUPABASE_URL=https://YOUR_PROJECT.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGci...YOUR_ANON_KEY
 ```
 
 ### 3. Configure Custom Domain
@@ -264,7 +264,7 @@ npm run start
 
 ### Supabase
 - Dashboard: https://supabase.com/dashboard
-- Project: dhlxwmvmkrfnmcgjbntk
+- Project: YOUR_PROJECT_ID
 - Check `leads` table for submissions
 
 ---

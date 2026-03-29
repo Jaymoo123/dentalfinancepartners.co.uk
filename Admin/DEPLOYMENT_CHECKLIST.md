@@ -9,7 +9,7 @@ Use this checklist to deploy the autonomous agent system step by step.
 ### 1.1 Run Database Migration
 
 - [ ] Open Supabase SQL Editor:  
-      https://supabase.com/dashboard/project/dhlxwmvmkrfnmcgjbntk/sql
+      https://supabase.com/dashboard/project/YOUR_PROJECT_ID/sql
 
 - [ ] Copy entire contents of: `supabase/migrations/001_add_agent_tables.sql`
 
@@ -76,7 +76,7 @@ Go to: Repository Settings > Secrets and variables > Actions
 Add these secrets:
 
 - [ ] `ANTHROPIC_API_KEY` - Your Claude API key
-- [ ] `SUPABASE_URL` - https://dhlxwmvmkrfnmcgjbntk.supabase.co
+- [ ] `SUPABASE_URL` - https://YOUR_PROJECT.supabase.co
 - [ ] `SUPABASE_KEY` - Your Supabase service role key
 - [ ] `VERCEL_TOKEN` - Generate at https://vercel.com/account/tokens
 - [ ] `VERCEL_ORG_ID` - From Vercel project settings

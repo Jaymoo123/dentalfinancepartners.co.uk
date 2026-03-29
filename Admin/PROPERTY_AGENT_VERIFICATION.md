@@ -252,7 +252,7 @@ python check_property_topics.py
 ### Check Supabase Directly
 
 1. Go to https://supabase.com/dashboard
-2. Project: dhlxwmvmkrfnmcgjbntk
+2. Project: YOUR_PROJECT_ID
 3. Check tables:
    - `blog_topics` (Dentists)
    - `blog_topics_property` (Property)

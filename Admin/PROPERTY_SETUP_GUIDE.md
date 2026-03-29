@@ -141,8 +141,8 @@ The Property niche is **architecturally complete** and ready for deployment. Her
 4. **Add Environment Variables**
    - Go to Project Settings → Environment Variables
    - Add the following (same values as Dentists):
-     - `SUPABASE_URL` = `https://dhlxwmvmkrfnmcgjbntk.supabase.co`
-     - `SUPABASE_KEY` = `[Your Supabase anon key]`
+     - `SUPABASE_URL` = `https://YOUR_PROJECT.supabase.co`
+     - `SUPABASE_KEY` = `[Your Supabase anon key from dashboard]`
      - `NEXT_PUBLIC_SITE_URL` = `https://propertyaccountants.co.uk` (optional)
 
 5. **Connect Domain**

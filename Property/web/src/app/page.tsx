@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { StickyCTA } from "@/components/ui/StickyCTA";
 import { btnPrimary, btnSecondary, siteContainerLg } from "@/components/ui/layout-utils";
@@ -8,10 +9,27 @@ import { siteConfig } from "@/config/site";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 import { MTDCountdown } from "@/components/property/MTDCountdown";
 import { ServiceTiers } from "@/components/property/ServiceTiers";
-import { Section24Calculator } from "@/components/calculators/Section24Calculator";
-import { IncorporationCostCalculator } from "@/components/calculators/IncorporationCostCalculator";
-import { MTDCheckerCalculator } from "@/components/calculators/MTDCheckerCalculator";
-import { PortfolioProfitabilityCalculator } from "@/components/calculators/PortfolioProfitabilityCalculator";
+
+// Lazy load calculators (below the fold, client-only)
+const Section24Calculator = dynamic(
+  () => import("@/components/calculators/Section24Calculator").then(mod => ({ default: mod.Section24Calculator })),
+  { ssr: false, loading: () => <div className="bg-white border-l-4 border-emerald-600 p-6 sm:p-8 lg:p-10 animate-pulse"><div className="h-96 bg-slate-100 rounded"></div></div> }
+);
+
+const IncorporationCostCalculator = dynamic(
+  () => import("@/components/calculators/IncorporationCostCalculator").then(mod => ({ default: mod.IncorporationCostCalculator })),
+  { ssr: false, loading: () => <div className="bg-white border-l-4 border-amber-600 p-6 sm:p-8 lg:p-10 animate-pulse"><div className="h-96 bg-slate-100 rounded"></div></div> }
+);
+
+const MTDCheckerCalculator = dynamic(
+  () => import("@/components/calculators/MTDCheckerCalculator").then(mod => ({ default: mod.MTDCheckerCalculator })),
+  { ssr: false, loading: () => <div className="bg-white border-l-4 border-amber-600 p-6 sm:p-8 lg:p-10 animate-pulse"><div className="h-64 bg-slate-100 rounded"></div></div> }
+);
+
+const PortfolioProfitabilityCalculator = dynamic(
+  () => import("@/components/calculators/PortfolioProfitabilityCalculator").then(mod => ({ default: mod.PortfolioProfitabilityCalculator })),
+  { ssr: false, loading: () => <div className="bg-white border-l-4 border-emerald-600 p-6 sm:p-8 lg:p-10 animate-pulse"><div className="h-96 bg-slate-100 rounded"></div></div> }
+);
 
 export const metadata: Metadata = {
   title: "Landlord Accountant UK | Section 24, MTD & Incorporation Specialists",

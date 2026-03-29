@@ -40,6 +40,12 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [siteConfig.publisherLogoUrl],
+  },
 };
 
 export default function RootLayout({
