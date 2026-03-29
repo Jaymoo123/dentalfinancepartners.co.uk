@@ -20,7 +20,6 @@ from agents.utils.supabase_client import SupabaseClient
 from agents.utils.cost_tracker import CostTracker
 from agents.utils.error_handler import ErrorHandler
 from agents.utils.quality_checker import QualityChecker
-from agents.utils.deduplication_checker import DeduplicationChecker
 from agents.utils.alerting import send_alert
 from shared_supabase_config import SUPABASE_URL, SUPABASE_KEY
 
@@ -35,10 +34,6 @@ class BlogGenerationAgent:
         self.cost_tracker = CostTracker(self.supabase)
         self.error_handler = ErrorHandler(self.supabase)
         self.quality_checker = QualityChecker()
-        self.dedup_checker = DeduplicationChecker(
-            self.supabase, 
-            os.getenv("ANTHROPIC_API_KEY")
-        )
         
         self.execution_id = None
     
@@ -81,62 +76,16 @@ class BlogGenerationAgent:
                 return False
             
             print(f"Processing topic: {topic['topic']}")
+            if topic.get("primary_keyword"):
+                print(f"  Keyword: {topic['primary_keyword']} (priority: {topic.get('publish_priority', 'N/A')}, difficulty: {topic.get('keyword_difficulty', 'N/A')})")
             
             # 2. Check budget
             if not await self.cost_tracker.check_budget("blog_generation"):
                 await self._complete_execution("budget_exceeded")
                 return False
             
-            # 3. PRE-GENERATION: Check for duplicates
-            is_duplicate, similar_slug = await self.dedup_checker.check_duplicate_topic(
-                topic["topic"],
-                self.niche
-            )
-            
-            if is_duplicate:
-                print(f"Duplicate detected (similar to: {similar_slug}). Skipping.")
-                
-                # Mark topic as used so it won't be selected again
-                await self.supabase.update(
-                    self.niche_config["blog_topics_table"],
-                    filters={"id": topic["id"]},
-                    data={"used": True, "used_at": datetime.utcnow().isoformat()}
-                )
-                
-                await self.error_handler.log_skipped("duplicate", {
-                    "agent_type": "blog_generation",
-                    "niche": self.niche,
-                    "metrics": {"topic": topic["topic"], "similar_to": similar_slug}
-                })
-                await self._complete_execution("skipped_duplicate")
-                return False
-            
-            # 4. Check recent use
-            recent_use = await self.dedup_checker.check_recent_use(
-                topic["topic"],
-                self.niche,
-                days=QUALITY_THRESHOLDS["recent_topic_days"]
-            )
-            
-            if recent_use:
-                print(f"Topic used recently. Skipping.")
-                
-                # Mark topic as used so it won't be selected again
-                await self.supabase.update(
-                    self.niche_config["blog_topics_table"],
-                    filters={"id": topic["id"]},
-                    data={"used": True, "used_at": datetime.utcnow().isoformat()}
-                )
-                
-                await self.error_handler.log_skipped("recently_used", {
-                    "agent_type": "blog_generation",
-                    "niche": self.niche,
-                    "metrics": {"topic": topic["topic"]}
-                })
-                await self._complete_execution("skipped_recent")
-                return False
-            
-            # 5. GENERATE: Call existing generate_blog_supabase.py
+            # 3. GENERATE: Call existing generate_blog_supabase.py
+            # NOTE: Duplicate checks removed - topics are pre-filtered by keyword tree builder
             print("Calling generate_blog_supabase.py...")
             result = subprocess.run(
                 [sys.executable, "generate_blog_supabase.py"],
@@ -226,11 +175,14 @@ class BlogGenerationAgent:
             return False
     
     async def _get_next_topic(self):
-        """Get next unused topic from Supabase."""
+        """
+        Get next unused topic from Supabase using priority-based selection.
+        Prioritizes: high publish_priority, low keyword_difficulty (easy wins first).
+        """
         topics = await self.supabase.select(
             self.niche_config["blog_topics_table"],
             filters={"used": False},
-            order="priority.desc,created_at.asc",
+            order="publish_priority.desc,keyword_difficulty.asc,created_at.asc",
             limit=1
         )
         

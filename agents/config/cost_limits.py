@@ -8,7 +8,8 @@ Adjust these values to control spending and generation rates.
 # ============================================================================
 RATE_LIMITS = {
     "daily_blog_posts_per_niche": 1,  # Max 1 blog per niche per day
-    "daily_content_research_calls": 5,  # Max 5 topic research calls per day
+    "daily_content_research_calls": 0,  # Disabled - use monthly keyword refresh
+    "monthly_keyword_refresh": 1,  # Max 1 keyword tree rebuild per month
     "daily_optimization_updates": 3,  # Max 3 content optimizations per day
     "max_parallel_operations": 1,  # Sequential execution only
 }
@@ -35,9 +36,10 @@ API_LIMITS = {
 # ============================================================================
 COST_PER_OPERATION = {
     "blog_generation": 0.03,  # Claude Sonnet 4 ~4k tokens
-    "topic_research": 0.035,  # Increased: includes 5 duplicate checks (~$0.025)
+    "topic_research": 0.00,  # Deprecated - use keyword_tree_build
+    "keyword_tree_build": 0.15,  # Monthly keyword tree generation (larger prompt)
     "content_optimization": 0.02,  # Medium prompt
-    "similarity_check": 0.005,  # Very small prompt
+    "similarity_check": 0.00,  # No longer needed (topics pre-filtered)
 }
 
 # ============================================================================

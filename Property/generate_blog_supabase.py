@@ -29,7 +29,10 @@ except ImportError:
     sys.exit(1)
 
 def fetch_unused_topic():
-    """Fetch the first unused topic from Supabase."""
+    """
+    Fetch the highest priority unused topic from Supabase.
+    Priority-based selection: highest publish_priority first, then easiest keyword_difficulty.
+    """
     url = f"{SUPABASE_URL}/rest/v1/blog_topics_property"
     headers = {
         "apikey": SUPABASE_KEY,
@@ -37,7 +40,7 @@ def fetch_unused_topic():
     }
     params = {
         "used": "eq.false",
-        "order": "priority.desc,created_at.asc",
+        "order": "publish_priority.desc.nullslast,keyword_difficulty.asc.nullslast,created_at.asc",
         "limit": "1"
     }
     
@@ -49,7 +52,11 @@ def fetch_unused_topic():
         print("No unused topics found in Supabase.")
         return None
     
-    return topics[0]
+    topic = topics[0]
+    
+    print(f"Selected topic (priority {topic.get('publish_priority', 'N/A')}, difficulty {topic.get('keyword_difficulty', 'N/A')}): {topic['topic']}")
+    
+    return topic
 
 def mark_topic_used(topic_id, slug):
     """Mark topic as used in Supabase."""
@@ -70,16 +77,37 @@ def mark_topic_used(topic_id, slug):
     response.raise_for_status()
     print(f"[OK] Marked topic {topic_id} as used")
 
-def generate_content(topic, secondary_keywords):
-    """Generate blog content using Anthropic."""
+def generate_content(topic_data):
+    """Generate blog content using Anthropic with keyword optimization."""
     client = Anthropic(api_key=ANTHROPIC_API_KEY)
     
-    keywords_text = ", ".join([k for k in secondary_keywords if k]) if secondary_keywords else ""
+    topic = topic_data["topic"]
+    primary_keyword = topic_data.get("primary_keyword", topic)
+    secondary_keywords = topic_data.get("secondary_keywords", [])
+    user_intent = topic_data.get("user_intent", "informational")
+    search_volume = topic_data.get("target_search_volume", "unknown")
+    content_tier = topic_data.get("content_tier", "cluster")
+    
+    keywords_text = ", ".join([k for k in secondary_keywords if k]) if secondary_keywords else "none"
+    
+    seo_guidance = f"""
+SEO OPTIMIZATION REQUIREMENTS:
+- Primary keyword: "{primary_keyword}" (search volume: {search_volume}/month)
+- Secondary keywords: {keywords_text}
+- Search intent: {user_intent}
+- Content type: {content_tier}
+
+KEYWORD USAGE:
+- Use primary keyword in: title (H1), first paragraph, and 2-3 times naturally throughout
+- Include secondary keywords naturally in subheadings and body content
+- Optimize for {user_intent} intent ({"provide comprehensive information" if user_intent == "informational" else "guide users to take action" if user_intent == "transactional" else "help users navigate to resources"})
+- Natural language - avoid keyword stuffing
+"""
     
     user_prompt = f"""Generate a comprehensive blog post for UK landlords and property investors.
 
 Primary topic: {topic}
-Secondary keywords: {keywords_text}
+{seo_guidance}
 
 Available internal links you can reference naturally:
 {chr(10).join(f"- {link}" for link in INTERNAL_LINK_SLUGS)}
@@ -89,6 +117,8 @@ Categories to choose from: {", ".join(POST_CATEGORIES)}
 Generate the content following the exact format specified in your system prompt."""
 
     print(f"Generating content for: {topic}")
+    print(f"  Primary keyword: {primary_keyword}")
+    print(f"  Intent: {user_intent}, Volume: {search_volume}, Tier: {content_tier}")
     
     message = client.messages.create(
         model="claude-sonnet-4-20250514",
@@ -174,18 +204,15 @@ def main():
         return
     
     topic_id = topic_row["id"]
-    topic = topic_row["topic"]
-    secondary_keywords = [
-        topic_row.get(f"secondary_keyword_{i}")
-        for i in range(1, 11)
-        if topic_row.get(f"secondary_keyword_{i}")
-    ]
     
-    print(f"[OK] Found topic: {topic}")
+    print(f"[OK] Found topic: {topic_row['topic']}")
+    if topic_row.get("primary_keyword"):
+        print(f"     Primary keyword: {topic_row['primary_keyword']}")
+        print(f"     Priority: {topic_row.get('publish_priority', 'N/A')}, Difficulty: {topic_row.get('keyword_difficulty', 'N/A')}")
     
     # 2. Generate content
     print("\n[2/4] Generating content with Anthropic...")
-    raw_content = generate_content(topic, secondary_keywords)
+    raw_content = generate_content(topic_row)
     print(f"[OK] Generated {len(raw_content)} characters")
     
     # 3. Parse output

@@ -2,16 +2,28 @@ name: Daily Content Pipeline
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # 6 AM UTC daily
+    - cron: '0 6 * * *'  # 6 AM UTC daily (blog generation only)
+    - cron: '0 2 1 * *'  # 2 AM UTC on 1st of month (keyword refresh)
   workflow_dispatch:  # Manual trigger
+    inputs:
+      refresh_keywords:
+        description: 'Refresh keyword topic tree'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
 
 jobs:
-  research-topics:
-    name: Research Blog Topics
+  refresh-keyword-tree:
+    name: Refresh Keyword Topic Tree (Monthly)
     runs-on: ubuntu-latest
+    if: github.event.schedule == '0 2 1 * *' || github.event.inputs.refresh_keywords == 'true'
+    strategy:
+      matrix:
+        niche: [Dentists, Property]
+      max-parallel: 1
     steps:
       - uses: actions/checkout@v4
       
@@ -24,8 +36,8 @@ jobs:
         run: |
           pip install anthropic httpx python-dotenv
       
-      - name: Run Content Research Agent
-        run: python agents/content_research_agent.py
+      - name: Run Keyword Topic Tree Builder for ${{ matrix.niche }}
+        run: python agents/keyword_topic_tree_builder.py --niche ${{ matrix.niche }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
@@ -34,7 +46,6 @@ jobs:
 
   generate-blogs:
     name: Generate Blogs
-    needs: research-topics
     runs-on: ubuntu-latest
     strategy:
       matrix:

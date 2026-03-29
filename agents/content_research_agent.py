@@ -8,7 +8,7 @@ import asyncio
 import argparse
 import re
 from datetime import datetime
-from typing import List, Dict
+from typing import List, Dict, Optional
 from anthropic import Anthropic
 
 # Add parent directory to path
@@ -42,55 +42,45 @@ class ContentResearchAgent:
         self.execution_id = None
     
     async def research_topics(self):
-        """Research and populate blog topics for this niche."""
+        """
+        DEPRECATED: This agent now only triggers keyword tree rebuild when needed.
+        Daily reactive research has been replaced with monthly keyword-driven strategy.
+        """
         print(f"=== Content Research Agent: {self.niche} ===")
+        print("NOTE: This agent is deprecated. Use keyword_topic_tree_builder.py for topic management.")
         
         try:
-            # Create execution record
             self.execution_id = await self._start_execution()
             
-            # 1. Check current topic inventory
             unused_count = await self._get_unused_topic_count()
             print(f"Current unused topics: {unused_count}")
             
-            if unused_count >= 10:
-                print("Sufficient topics available. Skipping research.")
+            if unused_count >= 5:
+                print("Topic inventory sufficient. Skipping research.")
                 await self._complete_execution("skipped_sufficient_topics", {
-                    "unused_count": unused_count
+                    "unused_count": unused_count,
+                    "note": "Use keyword_topic_tree_builder.py for monthly refresh"
                 })
                 return
             
-            # 2. Check budget
-            if not await self.cost_tracker.check_budget("topic_research"):
-                await self._complete_execution("budget_exceeded")
-                return
+            last_refresh = await self._get_last_keyword_refresh_date()
+            if last_refresh:
+                days_since = (datetime.now() - last_refresh).days
+                if days_since < 30:
+                    print(f"Monthly keyword refresh not due yet ({days_since} days since last refresh)")
+                    await self._complete_execution("skipped_not_due", {
+                        "days_since_refresh": days_since,
+                        "unused_count": unused_count
+                    })
+                    return
             
-            # 3. Research trending topics
-            print("Researching trending topics...")
-            topics = await self._research_topics_with_claude()
+            print("CRITICAL: Topic inventory low and refresh due.")
+            print("ACTION REQUIRED: Run 'python agents/keyword_topic_tree_builder.py --niche {self.niche}'")
             
-            if not topics:
-                print("No topics generated")
-                await self._complete_execution("completed", {"topics_generated": 0})
-                return
-            
-            # 4. Insert topics into Supabase (with duplicate filtering)
-            print(f"Filtering and inserting {len(topics)} topics...")
-            inserted_count, duplicate_count = await self._insert_topics(topics)
-            
-            # 5. Log cost (includes duplicate checks)
-            await self.cost_tracker.log_cost("topic_research", self.niche)
-            
-            # 6. Complete execution
-            await self._complete_execution("completed", {
-                "topics_generated": len(topics),
-                "topics_inserted": inserted_count,
-                "duplicates_filtered": duplicate_count,
-                "unused_before": unused_count,
-                "unused_after": unused_count + inserted_count
+            await self._complete_execution("manual_action_required", {
+                "unused_count": unused_count,
+                "action": f"Run keyword_topic_tree_builder.py --niche {self.niche}"
             })
-            
-            print(f"SUCCESS: Researched and added {inserted_count} topics ({duplicate_count} duplicates filtered)")
             
         except Exception as e:
             await self.error_handler.handle_error(e, {
@@ -226,6 +216,19 @@ Return ONLY valid JSON in this exact format:
             filters={"used": False}
         )
         return len(topics)
+    
+    async def _get_last_keyword_refresh_date(self) -> Optional[datetime]:
+        """Get date of last keyword tree build."""
+        executions = await self.supabase.select(
+            "agent_executions",
+            filters={"agent_type": "keyword_tree_builder", "niche": self.niche},
+            order="started_at.desc",
+            limit=1
+        )
+        
+        if executions and executions[0].get("started_at"):
+            return datetime.fromisoformat(executions[0]["started_at"].replace('Z', '+00:00'))
+        return None
     
     async def _start_execution(self) -> str:
         """Start execution record."""
