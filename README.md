@@ -1,10 +1,16 @@
-# Admin Documentation
+# Multi-Niche Accounting Platform
 
-This folder contains all administrative documentation, implementation notes, and system guides for the AI Agent Automation System.
+AI-powered accounting websites for UK niche markets. Automated content generation, SEO optimization, and lead capture.
 
-## 📁 Folder Purpose
+## 🚀 Active Niches
 
-All `.md` documentation files are stored here to keep the root directory clean. This includes:
+- **Dentists** - Dental Finance Partners ([dentalfinancepartners.co.uk](https://www.dentalfinancepartners.co.uk))
+- **Property** - Property Tax Partners ([propertytaxpartners.co.uk](https://www.propertytaxpartners.co.uk))
+- **Medical** - Medical Accountants UK (in development)
+
+## 📁 Documentation
+
+All administrative documentation is in the `Admin/` folder:
 - Implementation summaries
 - Deployment checklists
 - Security documentation
@@ -34,4 +40,17 @@ All future administrative `.md` files should be created in this folder to mainta
 
 ---
 
-**Last Updated:** March 29, 2026
+## 🤖 Niche Generator
+
+Generate a complete niche site in 1-2 hours:
+
+```bash
+python agents/generate_niche.py \
+  --niche-id pharmacy \
+  --display-name "Pharmacy Accountants UK" \
+  --target-keyword "pharmacy accountant"
+```
+
+See `Admin/NICHE_GENERATOR_GUIDE.md` for details.
+
+**Last Updated:** March 30, 2026

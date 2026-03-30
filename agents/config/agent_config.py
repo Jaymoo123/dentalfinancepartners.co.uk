@@ -16,7 +16,7 @@ AGENT_CONFIG = {
 # ============================================================================
 # NICHE CONFIGURATION
 # ============================================================================
-ACTIVE_NICHES = ["Dentists", "Property"]
+ACTIVE_NICHES = ["Dentists", "Property", "Medical"]
 
 NICHE_CONFIG = {
     "Dentists": {
@@ -34,6 +34,14 @@ NICHE_CONFIG = {
         "source_identifier": "property",
         "ga4_measurement_id": "G-B5MCP5NGMY",
         "ga4_property_id": "14279101919",  # From your screenshot: Stream ID 14279101919
+    },
+    "Medical": {
+        "enabled": False,  # Enable after GA4 setup
+        "blog_topics_table": "blog_topics_medical",
+        "web_path": "Medical/web",
+        "source_identifier": "medical",
+        "ga4_measurement_id": "G-MEDICAL-PLACEHOLDER",
+        "ga4_property_id": "000000000",  # Add after GA4 property creation
     },
 }
 
