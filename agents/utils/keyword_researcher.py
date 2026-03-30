@@ -279,7 +279,26 @@ class KeywordResearcher:
         """
         Analyze all keywords with ONE Claude call.
         Cost: $0.50-1.00
+        Handles up to 200 keywords per batch.
         """
+        
+        # Process in batches if needed
+        batch_size = 150
+        all_analyzed = []
+        
+        for i in range(0, len(keywords), batch_size):
+            batch = keywords[i:i+batch_size]
+            
+            print(f"  Analyzing batch {i//batch_size + 1} ({len(batch)} keywords)...")
+            
+            analyzed = await self._analyze_batch(batch, niche_type, target_keyword)
+            all_analyzed.extend(analyzed)
+        
+        return all_analyzed
+    
+    async def _analyze_batch(self, keywords: List[str], niche_type: str, 
+                            target_keyword: str) -> List[Dict]:
+        """Analyze a single batch of keywords."""
         
         prompt = f"""Analyze these {len(keywords)} keywords for a {niche_type} accounting niche in the UK.
 
@@ -287,7 +306,7 @@ TARGET KEYWORD: {target_keyword}
 NICHE TYPE: {niche_type}
 
 KEYWORDS TO ANALYZE:
-{json.dumps(keywords[:200])}  # Cap at 200 for comprehensive analysis
+{json.dumps(keywords)}
 
 For each keyword, provide:
 1. search_volume: Estimate as integer (high=1000+, medium=500-1000, low=100-500, very_low=<100)
@@ -309,24 +328,25 @@ SCORING GUIDELINES:
 - Transactional intent keywords are more valuable
 - Keywords with location modifiers (UK, London) are easier to rank
 
-Return ONLY valid JSON array (no other text):
+CRITICAL: Return ONLY valid JSON array. No markdown, no explanation, no extra text.
+Start with [ and end with ]. Ensure all strings are properly escaped.
+
 [
   {{
     "keyword": "gp accountant",
     "search_volume": 1800,
     "competition": "medium",
     "difficulty": 38,
-    "intent": "informational",
+    "intent": "transactional",
     "category": "GP Tax",
     "notes": "Core high-volume query"
-  }},
-  ...
+  }}
 ]"""
         
         try:
             message = self.anthropic.messages.create(
                 model="claude-sonnet-4-20250514",
-                max_tokens=8000,
+                max_tokens=16000,  # Increased for larger responses
                 messages=[{"role": "user", "content": prompt}]
             )
             
@@ -340,7 +360,23 @@ Return ONLY valid JSON array (no other text):
             if response_text.endswith("```"):
                 response_text = response_text[:-3]
             
-            keywords_analyzed = json.loads(response_text.strip())
+            response_text = response_text.strip()
+            
+            # Find JSON array boundaries
+            start_idx = response_text.find('[')
+            end_idx = response_text.rfind(']')
+            
+            if start_idx == -1 or end_idx == -1:
+                raise ValueError("No JSON array found in response")
+            
+            json_text = response_text[start_idx:end_idx+1]
+            
+            # Clean common JSON issues
+            json_text = json_text.replace('\n', ' ')  # Remove newlines in strings
+            json_text = re.sub(r',\s*]', ']', json_text)  # Remove trailing commas
+            json_text = re.sub(r',\s*}', '}', json_text)  # Remove trailing commas in objects
+            
+            keywords_analyzed = json.loads(json_text)
             
             # Ensure target keyword is included and prioritized
             target_exists = any(k["keyword"] == target_keyword for k in keywords_analyzed)
