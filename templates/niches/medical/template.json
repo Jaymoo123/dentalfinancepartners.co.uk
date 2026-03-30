@@ -1,0 +1,157 @@
+{
+  "niche_id": "medical",
+  "display_name": "Medical Accountants UK",
+  "legal_name": "Medical Accountants UK Ltd",
+  "domain": "www.medicalaccountantsuk.co.uk",
+  "tagline": "Specialist accounting for UK medical professionals",
+  "description": "Expert accountants for GPs, consultants, and medical practices. NHS pension advice, locum tax, private practice incorporation, and medical expense claims. Trusted by doctors across the UK.",
+  "brand": {
+    "primary_color": "#0891b2",
+    "logo_path": "/brand/logo.png",
+    "publisher_logo_url": "/og-placeholder.svg"
+  },
+  "contact": {
+    "email": "hello@medicalaccountantsuk.co.uk",
+    "phone": "+44 20 0000 0000"
+  },
+  "navigation": [
+    {
+      "label": "Services",
+      "href": "/services"
+    },
+    {
+      "label": "NHS Pension",
+      "href": "/nhs-pension"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "footer_links": [
+    {
+      "label": "Locations",
+      "href": "/locations"
+    },
+    {
+      "label": "Privacy policy",
+      "href": "/privacy-policy"
+    },
+    {
+      "label": "Terms",
+      "href": "/terms"
+    },
+    {
+      "label": "Cookie policy",
+      "href": "/cookie-policy"
+    }
+  ],
+  "locations": [
+    {
+      "slug": "london",
+      "title": "Medical accountants in London"
+    },
+    {
+      "slug": "manchester",
+      "title": "Medical accountants in Manchester"
+    },
+    {
+      "slug": "birmingham",
+      "title": "Medical accountants in Birmingham"
+    },
+    {
+      "slug": "leeds",
+      "title": "Medical accountants in Leeds"
+    },
+    {
+      "slug": "bristol",
+      "title": "Medical accountants in Bristol"
+    }
+  ],
+  "content_strategy": {
+    "audience": "UK GPs, hospital consultants, private practice owners, and locum doctors",
+    "categories": [
+      "GP Tax & Accounts",
+      "NHS Pension Planning",
+      "Locum Tax",
+      "Private Practice",
+      "Medical Expenses",
+      "Incorporation & Company Structures",
+      "Consultant Tax"
+    ],
+    "supabase_table": "blog_topics_medical",
+    "source_identifier": "medical"
+  },
+  "seo": {
+    "locale": "en-GB",
+    "organization_type": "ProfessionalService",
+    "service_areas": [
+      "London",
+      "Manchester",
+      "Birmingham",
+      "Leeds",
+      "Bristol"
+    ],
+    "google_analytics_id": "G-MEDICAL-PLACEHOLDER",
+    "google_site_verification": "MEDICAL-VERIFICATION-PLACEHOLDER",
+    "theme_color": "#0891b2",
+    "homepage_title": "GP Accountants UK | Medical Tax Specialists for Doctors",
+    "homepage_h1": "Specialist Accountants for GPs & Medical Professionals",
+    "homepage_description": "Expert accounting for GPs, consultants & medical practices. NHS pension advice, locum tax planning, private practice incorporation. Book free consultation."
+  },
+  "lead_form": {
+    "role_label": "I am a...",
+    "role_options": [
+      {
+        "value": "GP (salaried)",
+        "label": "GP (salaried)"
+      },
+      {
+        "value": "GP (partner)",
+        "label": "GP (partner)"
+      },
+      {
+        "value": "Locum doctor",
+        "label": "Locum doctor"
+      },
+      {
+        "value": "Hospital consultant",
+        "label": "Hospital consultant"
+      },
+      {
+        "value": "Private practice owner",
+        "label": "Private practice owner"
+      },
+      {
+        "value": "Other",
+        "label": "Other"
+      }
+    ],
+    "placeholders": {
+      "name": "Dr Sarah Ahmed",
+      "email": "sarah@example.com",
+      "phone": "07700 000000",
+      "message": "e.g. I need help with my NHS pension annual allowance, or I'm considering incorporating my private practice..."
+    }
+  },
+  "cta": {
+    "sticky_primary": "Ready to work with a medical accountant?",
+    "sticky_secondary": "Book your free consultation today",
+    "sticky_button": "Get started"
+  },
+  "blog": {
+    "cta_heading": "Get specialist advice for your situation",
+    "cta_body": "Every medical professional's tax situation is different. If you would like to discuss how this applies to your specific circumstances, fill in the form below and we will arrange a short introductory call.",
+    "cta_button": "Request a callback"
+  },
+  "shared_components_version": "1.0.0",
+  "notes": "Pre-researched template for Medical (GP) niche. Key differentiators: NHS pension expertise, locum tax, private practice incorporation, medical expense claims (BMA subscriptions, indemnity, CPD)."
+}

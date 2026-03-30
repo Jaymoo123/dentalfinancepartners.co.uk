@@ -16,6 +16,7 @@ This folder contains active documentation and archived historical records.
 - `AUDIT_IMPLEMENTATION_IMPACT_ASSESSMENT.md` - Impact assessment of audit changes
 
 ### Deployment & Operations
+- `NICHE_GENERATOR_GUIDE.md` - **NEW**: Automated niche generation system (2026-03-30)
 - `PROPERTY_DEPLOYMENT_GUIDE.md` - Property niche deployment guide
 - `DEPLOYMENT_STRATEGY_UPDATE.md` - Deployment strategy
 - `GITHUB_SECRETS_SETUP.md` - GitHub secrets configuration
@@ -64,6 +65,7 @@ These are kept for reference but represent completed work.
 
 ## Quick Links
 
+**Niche Generator**: `NICHE_GENERATOR_GUIDE.md` 🚀 **NEW - Generate niches in 1-2 hours**  
 **Deployment Checklist**: `DEPLOYMENT_CHECKLIST.md` ⭐ **USE THIS FOR ALL DEPLOYMENTS**  
 **Latest System Health**: `SYSTEM_HEALTH_CHECK_2026-03-30.md` ✅  
 **Analytics Health**: `ANALYTICS_HEALTH_CHECK_2026-03-30.md` ⚠️  

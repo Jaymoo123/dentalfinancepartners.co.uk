@@ -123,7 +123,13 @@ Generate the content following the exact format specified in your system prompt.
     message = client.messages.create(
         model="claude-sonnet-4-20250514",
         max_tokens=4096,
-        system=BLOG_SYSTEM_PROMPT,
+        system=[
+            {
+                "type": "text",
+                "text": BLOG_SYSTEM_PROMPT,
+                "cache_control": {"type": "ephemeral"}
+            }
+        ],
         messages=[{"role": "user", "content": user_prompt}]
     )
     

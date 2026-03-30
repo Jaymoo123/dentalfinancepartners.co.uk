@@ -35,11 +35,12 @@ API_LIMITS = {
 # COST PER OPERATION (USD)
 # ============================================================================
 COST_PER_OPERATION = {
-    "blog_generation": 0.03,  # Claude Sonnet 4 ~4k tokens
+    "blog_generation": 0.06,  # Claude Sonnet 4 with prompt caching (corrected from 0.03)
     "topic_research": 0.00,  # Deprecated - use keyword_tree_build
     "keyword_tree_build": 0.15,  # Monthly keyword tree generation (larger prompt)
     "content_optimization": 0.02,  # Medium prompt
     "similarity_check": 0.00,  # No longer needed (topics pre-filtered)
+    "niche_generation": 2.00,  # One-time niche setup cost
 }
 
 # ============================================================================
