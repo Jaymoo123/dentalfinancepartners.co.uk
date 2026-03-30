@@ -22,17 +22,34 @@ from agents.analytics.ga4_client import GA4Client
 from shared_supabase_config import SUPABASE_URL, SUPABASE_KEY
 
 class AnalyticsOptimizationAgent:
-    def __init__(self):
+    def __init__(self, niche: str = None):
         # Initialize utilities
+        self.niche = niche
         self.supabase = SupabaseClient(SUPABASE_URL, SUPABASE_KEY)
         self.cost_tracker = CostTracker(self.supabase)
         self.error_handler = ErrorHandler(self.supabase)
         self.anthropic = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
         
-        # Initialize GA4 client
-        ga4_property_id = os.getenv("GA4_PROPERTY_ID", "G-273RJY0LZQ")
+        # Initialize GA4 clients for each niche
         ga4_credentials = os.getenv("GA4_CREDENTIALS")
-        self.ga4 = GA4Client(ga4_property_id, ga4_credentials)
+        self.ga4_clients = {}
+        
+        if niche:
+            # Single niche mode
+            niche_config = NICHE_CONFIG.get(niche)
+            if niche_config and "ga4_property_id" in niche_config:
+                self.ga4_clients[niche] = GA4Client(
+                    niche_config["ga4_property_id"], 
+                    ga4_credentials
+                )
+        else:
+            # Multi-niche mode - initialize all
+            for niche_name, config in NICHE_CONFIG.items():
+                if config.get("enabled") and "ga4_property_id" in config:
+                    self.ga4_clients[niche_name] = GA4Client(
+                        config["ga4_property_id"],
+                        ga4_credentials
+                    )
         
         self.execution_id = None
     
@@ -44,24 +61,33 @@ class AnalyticsOptimizationAgent:
             # Create execution record
             self.execution_id = await self._start_execution()
             
-            # 1. Fetch GA4 data (last 30 days)
-            print("Fetching GA4 data...")
-            pages = await self.ga4.get_page_analytics(days=30)
+            # Process each niche with GA4 configured
+            all_pages = []
+            for niche_name, ga4_client in self.ga4_clients.items():
+                print(f"\nFetching GA4 data for {niche_name}...")
+                niche_pages = await ga4_client.get_page_analytics(days=30)
+                
+                if niche_pages:
+                    # Tag pages with niche for later processing
+                    for page in niche_pages:
+                        page["niche"] = niche_name
+                    all_pages.extend(niche_pages)
+                    print(f"  Found {len(niche_pages)} pages for {niche_name}")
             
-            if not pages:
+            if not all_pages:
                 print("No analytics data available")
                 await self._complete_execution("completed", {"pages_analyzed": 0})
                 return
             
-            print(f"Analyzed {len(pages)} pages")
+            print(f"\nTotal analyzed: {len(all_pages)} pages across {len(self.ga4_clients)} niches")
             
             # 2. Identify optimization opportunities
-            opportunities = self._identify_opportunities(pages)
+            opportunities = self._identify_opportunities(all_pages)
             print(f"Found {len(opportunities)} optimization opportunities")
             
             if not opportunities:
                 await self._complete_execution("completed", {
-                    "pages_analyzed": len(pages),
+                    "pages_analyzed": len(all_pages),
                     "opportunities_found": 0
                 })
                 return
@@ -90,11 +116,11 @@ class AnalyticsOptimizationAgent:
                     optimized_count += 1
             
             # 5. Store metrics in Supabase
-            await self._store_metrics(pages)
+            await self._store_metrics(all_pages)
             
             # 6. Complete execution
             await self._complete_execution("completed", {
-                "pages_analyzed": len(pages),
+                "pages_analyzed": len(all_pages),
                 "opportunities_found": len(opportunities),
                 "optimizations_applied": optimized_count
             })
@@ -167,8 +193,8 @@ class AnalyticsOptimizationAgent:
     async def _store_metrics(self, pages: List[Dict]):
         """Store analytics metrics in Supabase."""
         for page in pages:
-            # Determine niche from URL
-            niche = "Dentists" if "dentalfinancepartners" in page["page_url"] else "Property"
+            # Niche is now tagged on each page
+            niche = page.get("niche", "Unknown")
             
             await self.supabase.insert("seo_rankings", {
                 "niche": niche,
@@ -224,9 +250,21 @@ class AnalyticsOptimizationAgent:
         """Generate weekly performance report."""
         print("=== Weekly Performance Report ===")
         
-        # Fetch 7 days of data
-        pages = await self.ga4.get_page_analytics(days=7)
-        traffic_sources = await self.ga4.get_traffic_sources(days=7)
+        # Fetch 7 days of data for all niches
+        all_pages = []
+        all_traffic_sources = {}
+        
+        for niche_name, ga4_client in self.ga4_clients.items():
+            print(f"\nFetching data for {niche_name}...")
+            niche_pages = await ga4_client.get_page_analytics(days=7)
+            niche_traffic = await ga4_client.get_traffic_sources(days=7)
+            
+            if niche_pages:
+                for page in niche_pages:
+                    page["niche"] = niche_name
+                all_pages.extend(niche_pages)
+            
+            all_traffic_sources[niche_name] = niche_traffic
         
         # Get cost data
         monthly_spend = await self.cost_tracker.get_monthly_spend()
@@ -240,15 +278,25 @@ Date: {datetime.now().strftime('%Y-%m-%d')}
 - Monthly spend: ${monthly_spend:.2f}
 - Budget remaining: ${200 - monthly_spend:.2f}
 
-📈 Traffic:
-- Total pages tracked: {len(pages)}
-- Top traffic sources: {', '.join(f'{k}: {v*100:.0f}%' for k, v in list(traffic_sources.items())[:3])}
+📈 Traffic Overview:
+- Total pages tracked: {len(all_pages)}
+- Niches: {', '.join(self.ga4_clients.keys())}
 
-🎯 Top Performing Pages:
 """
         
-        for page in pages[:5]:
-            report += f"\n- {page['page_title']}: {page['views']} views, {page['conversion_rate']*100:.1f}% conversion"
+        # Per-niche breakdown
+        for niche_name, traffic_sources in all_traffic_sources.items():
+            niche_pages = [p for p in all_pages if p.get("niche") == niche_name]
+            report += f"\n🏢 {niche_name}:"
+            report += f"\n- Pages: {len(niche_pages)}"
+            if traffic_sources:
+                top_sources = ', '.join(f'{k}: {v*100:.0f}%' for k, v in list(traffic_sources.items())[:3])
+                report += f"\n- Top sources: {top_sources}"
+        
+        report += "\n\n🎯 Top Performing Pages (All Niches):\n"
+        
+        for page in sorted(all_pages, key=lambda x: x['views'], reverse=True)[:5]:
+            report += f"\n- [{page.get('niche', 'Unknown')}] {page['page_title']}: {page['views']} views, {page['conversion_rate']*100:.1f}% conversion"
         
         # Send report
         await send_alert(report, priority="low")
@@ -258,9 +306,12 @@ Date: {datetime.now().strftime('%Y-%m-%d')}
 async def main():
     parser = argparse.ArgumentParser(description="Analytics Optimization Agent")
     parser.add_argument("--mode", choices=["optimize", "weekly-report"], default="optimize")
+    parser.add_argument("--niche", choices=["Dentists", "Property", "all"], default="all",
+                       help="Which niche to analyze (default: all)")
     args = parser.parse_args()
     
-    agent = AnalyticsOptimizationAgent()
+    niche = None if args.niche == "all" else args.niche
+    agent = AnalyticsOptimizationAgent(niche=niche)
     
     if args.mode == "weekly-report":
         await agent.weekly_report()

@@ -8,74 +8,18 @@ Quick reference for completing the analytics configuration.
 
 ✅ **Working Now**:
 - Dentists website: Tracking live with GA4 ID `G-273RJY0LZQ`
+- Property website: Tracking live with GA4 ID `G-B5MCP5NGMY`
 - Lead form conversion tracking on both sites
 - Privacy policies and cookie notices
 - Database schema ready
+- Multi-niche analytics agent configured
 
 ⚠️ **Needs Setup**:
-- Property website: Replace placeholder GA4 ID
-- Backend analytics: Add GA4 API credentials
+- Backend analytics: Add GA4 API credentials for automated data collection
 
 ---
 
-## Task 1: Property GA4 Setup (5 minutes)
-
-### Step 1: Create GA4 Property
-
-1. Go to [Google Analytics](https://analytics.google.com)
-2. Click **Admin** (gear icon, bottom left)
-3. Click **Create Property**
-4. Enter details:
-   - **Property name**: Property Tax Partners
-   - **Timezone**: United Kingdom
-   - **Currency**: Pound Sterling (£)
-5. Click **Next** → Complete business details → Click **Create**
-
-### Step 2: Add Data Stream
-
-1. Click **Data Streams**
-2. Click **Add stream** → **Web**
-3. Enter:
-   - **Website URL**: `https://propertytaxpartners.co.uk`
-   - **Stream name**: Property Tax Partners Website
-4. Click **Create stream**
-5. **Copy the Measurement ID** (format: `G-XXXXXXXXXX`)
-
-### Step 3: Update Configuration Files
-
-Edit these two files and replace `G-PROPERTY-PLACEHOLDER`:
-
-**File 1**: `Property/niche.config.json`
-```json
-{
-  "seo": {
-    "google_analytics_id": "G-XXXXXXXXXX"  // ← Replace with your ID
-  }
-}
-```
-
-**File 2**: `Property/web/niche.config.json`
-```json
-{
-  "seo": {
-    "google_analytics_id": "G-XXXXXXXXXX"  // ← Replace with your ID
-  }
-}
-```
-
-### Step 4: Deploy
-
-```bash
-git add Property/niche.config.json Property/web/niche.config.json
-git commit -m "Add Property GA4 measurement ID"
-git push
-```
-
-✅ **Done!** Property website will now track analytics.
-
----
-
-## Task 2: Backend Analytics API Setup (30 minutes)
+## Backend Analytics API Setup (30 minutes)
 
 This enables automated content optimization and weekly reports.
 
@@ -118,19 +62,27 @@ This enables automated content optimization and weekly reports.
 4. Select **JSON** → Click **Create**
 5. **Save the downloaded JSON file** (keep it secure!)
 
-### Step 5: Grant GA4 Access
+### Step 5: Grant GA4 Access to BOTH Properties
+
+**IMPORTANT**: The service account needs access to BOTH GA4 properties.
 
 1. Go back to [Google Analytics](https://analytics.google.com)
-2. Click **Admin** (gear icon)
-3. Under **Property**, click **Property Access Management**
-4. Click **+** (top right) → **Add users**
-5. Enter the service account email:
-   - Format: `analytics-optimization-agent@PROJECT-ID.iam.gserviceaccount.com`
-   - Find it in the JSON file under `"client_email"`
-6. Select role: **Viewer**
-7. Click **Add**
-
-**Repeat for both GA4 properties** (Dentists and Property)
+2. For **Dentists Property** (G-273RJY0LZQ):
+   - Click **Admin** (gear icon)
+   - Select the Dentists property from dropdown
+   - Under **Property**, click **Property Access Management**
+   - Click **+** (top right) → **Add users**
+   - Enter the service account email (from JSON: `"client_email"`)
+   - Select role: **Viewer**
+   - Click **Add**
+3. For **Property Tax Partners** (G-B5MCP5NGMY):
+   - Click **Admin** (gear icon)
+   - Select the Property property from dropdown
+   - Under **Property**, click **Property Access Management**
+   - Click **+** (top right) → **Add users**
+   - Enter the same service account email
+   - Select role: **Viewer**
+   - Click **Add**
 
 ### Step 6: Add Credentials to Environment
 
@@ -141,12 +93,13 @@ Edit `.env` file in project root:
 ```bash
 # Copy the entire JSON file content as a single line
 GA4_CREDENTIALS='{"type":"service_account","project_id":"your-project","private_key_id":"...","private_key":"-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n","client_email":"...","client_id":"...","auth_uri":"...","token_uri":"...","auth_provider_x509_cert_url":"...","client_x509_cert_url":"..."}'
-
-# Use the numeric property ID (find in GA4 Admin → Property Settings)
-GA4_PROPERTY_ID=123456789
 ```
 
 **Important**: The JSON must be on a single line with escaped quotes.
+
+**Note**: Property IDs are now configured per-niche in `agents/config/agent_config.py`:
+- Dentists: `464353754` (numeric property ID)
+- Property: `14279101919` (numeric stream ID from GA4)
 
 #### For GitHub Actions
 
@@ -158,23 +111,31 @@ GA4_PROPERTY_ID=123456789
    - **Value**: Paste the entire JSON file content (can be multi-line here)
 5. Click **Add secret**
 
-The `GA4_PROPERTY_ID` secret should already exist. If not, add it with the numeric property ID.
-
 ### Step 7: Test
 
 ```bash
-# Test weekly report generation
-python agents/analytics_optimization_agent.py --mode weekly-report
+# Test weekly report generation (all niches)
+python agents/analytics_optimization_agent.py --mode weekly-report --niche all
 
-# Test daily optimization
-python agents/analytics_optimization_agent.py
+# Test daily optimization (all niches)
+python agents/analytics_optimization_agent.py --niche all
+
+# Test single niche
+python agents/analytics_optimization_agent.py --niche Dentists
+python agents/analytics_optimization_agent.py --niche Property
 ```
 
 If successful, you'll see:
 ```
-=== Weekly Performance Report ===
-Fetching GA4 data...
-Analyzed X pages
+=== Analytics Optimization Agent ===
+
+Fetching GA4 data for Dentists...
+  Found X pages for Dentists
+
+Fetching GA4 data for Property...
+  Found Y pages for Property
+
+Total analyzed: Z pages across 2 niches
 ...
 ```
 

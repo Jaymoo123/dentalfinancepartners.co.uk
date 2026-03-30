@@ -24,12 +24,16 @@ NICHE_CONFIG = {
         "blog_topics_table": "blog_topics",
         "web_path": "Dentists/web",
         "source_identifier": "dentists",
+        "ga4_measurement_id": "G-273RJY0LZQ",
+        "ga4_property_id": "464353754",  # Numeric property ID from GA4 Admin → Property Settings
     },
     "Property": {
         "enabled": True,
         "blog_topics_table": "blog_topics_property",
         "web_path": "Property/web",
         "source_identifier": "property",
+        "ga4_measurement_id": "G-B5MCP5NGMY",
+        "ga4_property_id": "14279101919",  # From your screenshot: Stream ID 14279101919
     },
 }
 
@@ -46,8 +50,7 @@ LOGS_DIR = os.path.join(AGENTS_DIR, "docs/logs")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 SUPABASE_URL = os.getenv("SUPABASE_URL", "https://dhlxwmvmkrfnmcgjbntk.supabase.co")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
-GA4_PROPERTY_ID = os.getenv("GA4_PROPERTY_ID", "G-273RJY0LZQ")
-GA4_CREDENTIALS = os.getenv("GA4_CREDENTIALS")  # Service account JSON
+GA4_CREDENTIALS = os.getenv("GA4_CREDENTIALS")  # Service account JSON (shared across all properties)
 SLACK_WEBHOOK = os.getenv("SLACK_WEBHOOK")
 DISCORD_WEBHOOK = os.getenv("DISCORD_WEBHOOK")
 VERCEL_TOKEN = os.getenv("VERCEL_TOKEN")

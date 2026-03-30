@@ -14,6 +14,8 @@ You're receiving GitHub emails about failed workflows:
 
 Both are failing with the **exact same error**: Missing GA4 credentials.
 
+**UPDATE (2026-03-30)**: System has been updated to support both GA4 properties (Dentists and Property). Once credentials are added, both sites will be analyzed automatically.
+
 ---
 
 ## Why It's Failing
@@ -21,9 +23,10 @@ Both are failing with the **exact same error**: Missing GA4 credentials.
 The workflows are trying to run but can't access Google Analytics data because:
 
 ```
-GA4_PROPERTY_ID: (empty)
 GA4_CREDENTIALS: (empty)
 ```
+
+**Note**: Property IDs are now hardcoded in `agent_config.py` for both niches.
 
 **Error Message**:
 ```
