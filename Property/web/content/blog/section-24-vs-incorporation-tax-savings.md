@@ -1,142 +1,125 @@
 ---
-title: "Section 24 vs Incorporation: Which Saves More Tax for UK Landlords?"
+title: "Section 24 vs. Incorporation: Which Strategy Saves More Tax for UK Landlords?"
 slug: "section-24-vs-incorporation-tax-savings"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"
-metaTitle: "Section 24 vs Incorporation: Tax Savings for UK Landlords"
-metaDescription: "Compare Section 24 mortgage interest restriction with property company incorporation. Real examples showing which option saves more tax for UK landlords."
-altText: "UK landlord reviewing tax calculations comparing Section 24 restrictions with company incorporation options"
+metaTitle: "Section 24 vs. Incorporation: Which Saves More Tax? | PTP"
+metaDescription: "Compare Section 24 mortgage interest restrictions vs. incorporation for UK landlords. Real examples show which strategy saves more tax in 2025/26."
+altText: "UK landlord comparing Section 24 tax implications with property company incorporation options on calculator"
 image: ""
-h1: "Section 24 vs Incorporation: Which Saves More Tax for UK Landlords?"
-summary: "Section 24 restricts mortgage interest relief for individual landlords, but incorporation isn't always the answer. We compare both options with real numbers to show which saves more tax."
+h1: "Section 24 vs. Incorporation: Which Strategy Saves More Tax for UK Landlords?"
+summary: "Section 24 restricts mortgage interest relief for individual landlords, while incorporation can restore full tax relief. We compare both strategies with real examples to show which saves more tax."
 schema: ""
 canonical: ""
 faqs:
-  - question: "How much tax can I save by incorporating my property business?"
-    answer: "Tax savings from incorporation depend on your income tax rate and mortgage interest levels. Higher-rate taxpayers with substantial mortgage costs typically save the most. For example, a 40% taxpayer with £25,000 mortgage interest could save around £7,500 annually, but basic rate taxpayers might save very little and not cover the additional costs of running a company."
-  - question: "Do I pay capital gains tax when transferring properties to a company?"
-    answer: "Yes, transferring existing properties to a company is treated as a disposal for capital gains tax purposes, even if you own 100% of the company. You'll pay CGT on any gain since you purchased the properties. This upfront cost needs to be weighed against future tax savings when considering incorporation."
-  - question: "Can I still claim mortgage interest relief as an individual landlord?"
-    answer: "Individual landlords can only claim 20% tax relief on mortgage interest since Section 24 was fully implemented in April 2020. This is given as a tax credit rather than a deduction, meaning you pay income tax on your full rental profits but get 20% of your mortgage interest back as a credit against your total tax bill."
-  - question: "Is incorporation always better for higher-rate taxpayers?"
-    answer: "Not always. While higher-rate taxpayers typically benefit most from incorporation due to Section 24 restrictions, you need to consider setup costs, ongoing compliance costs, capital gains tax on property transfers, and your profit extraction needs. The break-even point varies, but portfolios with substantial mortgage interest and values over £500,000 usually see the greatest benefit."
+  - question: "How much rental income makes incorporation worthwhile despite Section 24?"
+    answer: "Incorporation typically becomes worthwhile around £75,000-£100,000 annual rental income for higher-rate taxpayers with significant mortgage interest. The exact threshold depends on your mortgage levels, other income, and personal circumstances. Basic-rate taxpayers might need higher rental income levels to justify incorporation costs."
+  - question: "Can I incorporate some properties but keep others personally?"
+    answer: "Yes, you can have a mixed structure with some properties owned personally and others in a company. This allows you to test company ownership or incorporate new acquisitions while keeping existing properties personal. However, this creates additional complexity in accounting and tax compliance."
+  - question: "What happens to Section 24 if mortgage rates fall significantly?"
+    answer: "Section 24's impact reduces as mortgage interest decreases, but the restriction remains. Lower rates mean less interest to restrict, reducing the tax penalty. However, even with lower rates, higher-rate taxpayers still face the 20% vs 40% relief difference on remaining mortgage interest."
+  - question: "Do I pay capital gains tax immediately when incorporating existing properties?"
+    answer: "Usually yes, transferring properties to a company triggers capital gains tax on any increase in value since acquisition. However, holdover relief might defer the charge in some circumstances. The CGT cost often needs factoring into incorporation decisions, making it more attractive for new acquisitions than existing portfolios."
 ---
 
-<p>Section 24 has fundamentally changed the tax landscape for UK landlords. Since April 2020, individual landlords can only claim 20% tax relief on mortgage interest, regardless of their income tax rate. This has pushed many towards incorporation, but is setting up a property company always the better option?</p>
+<p>Section 24 has fundamentally changed the tax landscape for UK landlords since its full implementation in 2020/21. The restriction on mortgage interest relief pushes many landlords into higher tax brackets, while <a href="/incorporation">incorporation</a> offers a potential escape route.</p>
 
-<p>The answer depends on your specific circumstances. Let's examine both approaches with real numbers to help you make an informed decision.</p>
+<p>But which strategy actually saves more tax? The answer depends on your rental income, mortgage levels, and personal circumstances.</p>
 
-<h2>Understanding Section 24 Mortgage Interest Restriction</h2>
+<h2>Understanding Section 24's Impact</h2>
 
-<p>Section 24 replaced full mortgage interest deductions with a 20% tax credit. For higher-rate taxpayers, this represents a significant tax increase. The restriction applies to all finance costs, including mortgage interest, arrangement fees, and interest on loans for property improvements.</p>
+<p>Section 24 restricts mortgage interest relief to 20% for individual landlords. Previously, you could deduct full mortgage interest from rental income before calculating tax. Now, you pay tax on gross rental income and receive a 20% tax credit.</p>
 
-<p>Here's how it works in practice. A landlord earning £60,000 from employment with £20,000 rental profit and £15,000 mortgage interest would previously deduct the full £15,000, leaving £5,000 taxable rental profit. Now, they pay tax on the full £20,000 rental profit and receive a 20% credit (£3,000) against their total tax bill.</p>
+<p>For a higher-rate taxpayer, this creates an effective tax rate of 32% on mortgage interest (40% tax minus 20% credit). Additional-rate taxpayers face 45% tax with only 20% relief.</p>
 
-<p>The problem? Their total income is now £80,000, pushing them into the 40% tax band. They pay 40% tax on rental profits but only get 20% relief on mortgage costs.</p>
-
-<h2>Property Company Incorporation: The Alternative Approach</h2>
-
-<p>Companies can still deduct mortgage interest in full when calculating corporation tax. This makes <a href="/incorporation">incorporation</a> attractive for landlords with substantial mortgage costs.</p>
-
-<p>A property company pays 19% corporation tax on profits (25% on profits over £50,000 from April 2026). Directors can extract profits through salary and dividends, potentially achieving a lower overall tax rate than personal ownership.</p>
-
-<p>However, incorporation isn't without costs. You'll face capital gains tax on transferring existing properties, ongoing accountancy fees, and additional compliance requirements including corporation tax returns and confirmation statements.</p>
-
-<h2>Comparing Tax Liabilities: Real Examples</h2>
-
-<p><strong>Example 1: Higher Rate Taxpayer</strong></p>
-
-<p>Sarah owns three BTL properties generating £45,000 rental income with £25,000 mortgage interest. She has employment income of £55,000.</p>
-
-<p>Personal ownership (Section 24):</p>
+<p><strong>Example:</strong> A landlord with £50,000 rental income and £30,000 mortgage interest:</p>
 <ul>
-<li>Total income: £100,000 (£55k employment + £45k rental)</li>
-<li>Tax on rental profit: £45,000 × 40% = £18,000</li>
-<li>Mortgage interest credit: £25,000 × 20% = £5,000</li>
-<li>Net rental tax: £13,000</li>
+<li>Pre-Section 24: Tax on £20,000 profit at 40% = £8,000</li>
+<li>Post-Section 24: Tax on £50,000 at 40% minus £6,000 credit = £14,000</li>
+<li>Additional tax burden: £6,000 annually</li>
 </ul>
 
-<p>Company ownership:</p>
+<h2>How Incorporation Changes the Game</h2>
+
+<p>Property companies aren't subject to Section 24. They can still deduct full mortgage interest against rental income, paying corporation tax only on actual profits.</p>
+
+<p>However, incorporation isn't free. You'll face costs for setup, ongoing compliance, and potential capital gains tax on transfer. There's also corporation tax at 19-25% plus additional tax when extracting profits.</p>
+
+<p><strong>Key incorporation benefits:</strong></p>
 <ul>
-<li>Rental profit after interest: £20,000</li>
-<li>Corporation tax (19%): £3,800</li>
-<li>After-tax profit: £16,200</li>
-<li>Dividend extraction (8.75% rate): £1,418</li>
-<li>Total company tax: £5,218</li>
+<li>Full mortgage interest relief restored</li>
+<li>Lower corporation tax rates on retained profits</li>
+<li>More flexible profit extraction strategies</li>
+<li>Easier succession planning</li>
 </ul>
 
-<p>The company saves Sarah approximately £7,780 annually in this scenario.</p>
+<h2>Real-World Comparison: £100,000 Portfolio</h2>
 
-<p><strong>Example 2: Basic Rate Taxpayer</strong></p>
+<p>Let's compare a landlord with £100,000 annual rental income, £60,000 mortgage interest, and £10,000 other expenses. Assume they're a 40% taxpayer with £50,000 other income.</p>
 
-<p>John has employment income of £25,000 and rental profits of £18,000 with £8,000 mortgage interest.</p>
+<h3>Individual Ownership (Section 24)</h3>
+<p>Taxable rental income: £100,000 - £10,000 = £90,000<br>
+Tax at 40%: £36,000<br>
+Less 20% mortgage interest credit: £12,000<br>
+Net tax: £24,000<br>
+After-tax profit: £30,000 - £24,000 = £6,000</p>
 
-<p>Personal ownership:</p>
-<ul>
-<li>Total income: £43,000</li>
-<li>Tax on rental profit: £18,000 × 20% = £3,600</li>
-<li>Mortgage interest credit: £8,000 × 20% = £1,600</li>
-<li>Net rental tax: £2,000</li>
-</ul>
+<h3>Company Ownership</h3>
+<p>Company profit: £100,000 - £60,000 - £10,000 = £30,000<br>
+Corporation tax at 25%: £7,500<br>
+Available for distribution: £22,500</p>
 
-<p>Company ownership:</p>
-<ul>
-<li>Rental profit after interest: £10,000</li>
-<li>Corporation tax: £1,900</li>
-<li>After-tax profit: £8,100</li>
-<li>No dividend tax (under personal allowance)</li>
-<li>Total tax: £1,900</li>
-</ul>
+<p>If extracted as dividend:<br>
+Dividend tax at 33.75%: £7,594<br>
+Net after-tax: £14,906</p>
 
-<p>The saving is smaller (£100) and may not justify incorporation costs.</p>
+<p><strong>Incorporation advantage: £8,906 annually (£14,906 vs £6,000)</strong></p>
 
-<h2>Beyond Pure Tax Savings</h2>
+<h2>When Section 24 Might Be Preferable</h2>
 
-<p>Tax isn't the only consideration. Companies offer other potential advantages:</p>
+<p>Section 24 vs incorporation isn't always clear-cut. Individual ownership might be better when:</p>
 
 <ul>
-<li>Easier portfolio expansion through retained profits</li>
-<li>Simplified succession planning</li>
-<li>Professional image when dealing with agents and lenders</li>
-<li>Potential protection from future tax changes</li>
+<li>Low mortgage levels reduce Section 24's impact</li>
+<li>You're a basic-rate taxpayer with no other income</li>
+<li>Portfolio value is modest (under £500,000)</li>
+<li>You plan to sell properties soon (avoiding CGT on incorporation)</li>
 </ul>
 
-<p>However, there are downsides:</p>
+<p>A landlord with £30,000 rental income, £10,000 mortgage interest, and basic-rate tax status faces minimal Section 24 impact. Incorporation costs might outweigh benefits.</p>
+
+<h2>Incorporation Considerations Beyond Tax</h2>
+
+<p>Tax savings drive most incorporation decisions, but consider these factors:</p>
+
+<p><strong>Setup and ongoing costs:</strong> Legal fees, accountancy, and annual compliance typically cost £3,000-£5,000 initially, plus £2,000-£3,000 annually.</p>
+
+<p><strong>Capital gains on transfer:</strong> Moving properties into a company usually triggers CGT. Holdover relief might apply, but specialist advice is essential.</p>
+
+<p><strong>Mortgage restrictions:</strong> Buy-to-let mortgages for companies often have higher rates and smaller loan-to-value ratios.</p>
+
+<p><strong>Personal guarantees:</strong> Lenders typically require directors to guarantee company mortgages, reducing limited liability benefits.</p>
+
+<h2>Timing Your Decision</h2>
+
+<p>With <a href="/services">Making Tax Digital for Income Tax Property</a> starting 6 April 2026, now is an ideal time to review your structure. The additional compliance burden might tip the balance toward incorporation for larger portfolios.</p>
+
+<p>Consider incorporating before acquiring new properties rather than transferring existing ones. This avoids immediate CGT while securing future tax benefits.</p>
+
+<h2>Making the Right Choice</h2>
+
+<p>Section 24 vs incorporation depends on your specific circumstances. Generally, incorporation becomes more attractive as:</p>
 
 <ul>
-<li>Higher setup and ongoing compliance costs</li>
-<li>Less flexibility in extracting profits</li>
-<li>Capital gains tax on property transfers</li>
-<li>Potential mortgage rate premiums for SPV lending</li>
+<li>Rental income increases</li>
+<li>Mortgage interest levels rise</li>
+<li>Your marginal tax rate increases</li>
+<li>Portfolio size grows</li>
 </ul>
 
-<h2>When Incorporation Makes Sense</h2>
+<p>The tipping point often occurs around £75,000-£100,000 annual rental income for higher-rate taxpayers with significant mortgage interest.</p>
 
-<p>Incorporation typically benefits landlords who:</p>
+<p>However, tax isn't everything. Consider your long-term plans, risk tolerance, and administrative preferences. Some landlords prefer the simplicity of individual ownership despite higher tax costs.</p>
 
-<ul>
-<li>Are higher-rate taxpayers with substantial mortgage interest</li>
-<li>Plan to retain profits for portfolio expansion</li>
-<li>Have portfolios worth over £500,000</li>
-<li>Want to involve family members in the business</li>
-</ul>
-
-<p>It's usually less beneficial for:</p>
-
-<ul>
-<li>Basic rate taxpayers</li>
-<li>Landlords needing immediate income extraction</li>
-<li>Small portfolios with minimal mortgage debt</li>
-<li>Those planning to sell properties soon</li>
-</ul>
-
-<h2>Making the Right Decision</h2>
-
-<p>The choice between accepting Section 24 restrictions and incorporation depends on your complete financial picture. Consider your income tax rate, mortgage levels, profit extraction needs, and long-term plans.</p>
-
-<p>Many landlords benefit from running detailed projections covering both current tax savings and future scenarios. Our <a href="/calculators">tax calculators</a> can help with initial comparisons, but complex cases require professional analysis.</p>
-
-<p>Remember that tax rules change regularly. What works today might not work tomorrow, so any decision should consider potential future developments.</p>
-
-<p>If you're weighing up Section 24 versus incorporation, it's worth speaking to a specialist who can model your specific circumstances. The tax savings can be substantial, but getting the analysis wrong could prove expensive.</p>
+<p>Before making any decision, model your specific situation using our <a href="/calculators">property tax calculators</a> or speak to a specialist who can analyze your complete financial picture.</p>
