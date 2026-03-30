@@ -23,14 +23,27 @@ from agents.utils.page_generator import PageGenerator
 from agents.utils.brand_generator import BrandGenerator
 from agents.utils.database_setup import DatabaseSetup
 from agents.utils.verifiers import VerificationPipeline
-from agents.config.cost_tracker import CostTracker
+from agents.config.cost_limits import COST_PER_OPERATION
+
+
+class SimpleCostTracker:
+    """Simple cost tracker for niche generation (no database)."""
+    def __init__(self):
+        self.total_cost = 0.0
+    
+    def track_operation(self, operation: str, multiplier: float = 1.0):
+        cost = COST_PER_OPERATION.get(operation, 0) * multiplier
+        self.total_cost += cost
+    
+    def get_total_cost(self) -> float:
+        return self.total_cost
 
 
 class NicheGenerator:
     def __init__(self, anthropic_api_key: str, dry_run: bool = False):
         self.anthropic_api_key = anthropic_api_key
         self.dry_run = dry_run
-        self.cost_tracker = CostTracker()
+        self.cost_tracker = SimpleCostTracker()
         
         # Initialize utilities
         self.keyword_researcher = KeywordResearcher(anthropic_api_key)

@@ -108,7 +108,7 @@ REQUIREMENTS:
    - Secondary CTA: Anchor link to #how-we-work
 
 3. **Trust Section**:
-   - 3 trust indicators (e.g., "100% {niche_type} focus", "50+ clients", "Fixed fees")
+   - 3 trust indicators (e.g., "100% medical focus", "50+ clients", "Fixed fees")
    - Use niche-specific stats and language
 
 4. **Reality Section**:
@@ -221,7 +221,7 @@ REQUIREMENTS:
 
 2. **Page Header**:
    - Breadcrumb: Home > Services
-   - H1: "Services for UK {niche_type}s"
+   - H1: "Services for UK [niche professionals]"
    - Intro paragraph (2-3 sentences)
 
 3. **Services List**:

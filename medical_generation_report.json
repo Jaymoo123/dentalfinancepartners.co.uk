@@ -1,0 +1,75 @@
+{
+  "success": true,
+  "niche_id": "medical",
+  "display_name": "Medical Accountants UK",
+  "target_keyword": "gp accountant",
+  "files_created": [
+    "medical_keywords.csv",
+    "Medical\\niche.config.json",
+    "Medical\\web\\niche.config.json",
+    "Medical\\web\\src\\app\\page.tsx",
+    "Medical\\web\\src\\app\\services\\page.tsx",
+    "Medical\\web\\src\\app\\about\\page.tsx",
+    "Medical\\web\\src\\components\\brand\\BrandWordmarkHomeLink.tsx",
+    "Medical\\web\\src\\components\\brand\\BrandLogoHero.tsx",
+    ".\\supabase\\migrations\\20260330164916_create_blog_topics_medical.sql"
+  ],
+  "verification_results": {
+    "keywords": {
+      "passed": true,
+      "errors": [],
+      "warnings": []
+    },
+    "config": {
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "homepage_title too long (61 chars, max 60)"
+      ]
+    },
+    "topics": {
+      "passed": true,
+      "errors": [],
+      "warnings": []
+    },
+    "pages": {
+      "passed": true,
+      "errors": [],
+      "warnings": []
+    },
+    "build": {
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "Build verification skipped"
+      ]
+    },
+    "database": {
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "Database verification skipped"
+      ]
+    },
+    "integration": {
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "'medical' not in agent_config.py - needs manual update",
+        "'medical' not in daily-content-pipeline.yml - needs manual update",
+        "'medical' not in daily-analytics-optimization.yml - needs manual update",
+        "'Medical Accountants UK' not in README.md - needs manual update"
+      ]
+    },
+    "final": {
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "Config contains 'PLACEHOLDER' - may need manual update"
+      ]
+    }
+  },
+  "cost": 1.7999999999999998,
+  "duration_seconds": 179.02868723869324,
+  "timestamp": "2026-03-30T17:49:16.198544"
+}

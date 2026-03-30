@@ -241,7 +241,7 @@ Return ONLY valid JSON array (no other text):
             writer.writeheader()
             writer.writerows(keywords)
         
-        print(f"\n✓ Exported {len(keywords)} keywords to {output_path}")
+        print(f"\n[OK] Exported {len(keywords)} keywords to {output_path}")
     
     async def close(self):
         """Close HTTP client."""
@@ -272,9 +272,9 @@ async def main():
         
         if keywords:
             researcher.export_to_csv(keywords, args.output)
-            print(f"\n✓ SUCCESS: Researched {len(keywords)} keywords")
+            print(f"\n[SUCCESS] Researched {len(keywords)} keywords")
         else:
-            print("\n✗ FAILED: No keywords generated")
+            print("\n[FAILED] No keywords generated")
     
     finally:
         await researcher.close()
