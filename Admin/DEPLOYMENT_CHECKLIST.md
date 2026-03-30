@@ -199,7 +199,6 @@ CNAME   www     cname.vercel-dns.com    Auto
 ANTHROPIC_API_KEY=sk-ant-api03-...
 SUPABASE_URL=https://yourproject.supabase.co
 SUPABASE_KEY=eyJhbGci...
-GA4_PROPERTY_ID=123456789  (numeric ID, not G-XXXXXX)
 GA4_CREDENTIALS={"type":"service_account",...}  (optional, for analytics automation)
 SLACK_WEBHOOK=https://hooks.slack.com/...  (optional)
 ```
@@ -333,7 +332,8 @@ curl https://www.yourdomain.co.uk/sitemap.xml | grep "<loc>" | head -5
 | Item | Dentists | Property | Notes |
 |------|----------|----------|-------|
 | Domain (www) | ✅ www.dentalfinancepartners.co.uk | ✅ www.propertytaxpartners.co.uk | Fixed 2026-03-30 |
-| GA4 ID | ✅ G-273RJY0LZQ | ❌ G-PROPERTY-PLACEHOLDER | Need to create |
+| GA4 ID (Frontend) | ✅ G-273RJY0LZQ | ✅ G-B5MCP5NGMY | Both configured |
+| GA4 ID (Backend) | ✅ 464353754 | ✅ 14279101919 | Both in agent_config.py |
 | GSC Verification | ✅ Verified | ⚠️ Added, not verified | Need to verify |
 | Site Live | ✅ Live | ⚠️ Deployed but not accessible | Check DNS/Vercel |
 | Vercel NEXT_PUBLIC_SITE_URL | ✅ Set with www | ⚠️ Check value | Must include www |
@@ -350,7 +350,8 @@ curl https://www.yourdomain.co.uk/sitemap.xml | grep "<loc>" | head -5
 
 **Property**:
 - [x] Update domain to include www
-- [ ] Create GA4 property and get real ID
+- [x] Create GA4 property and get real ID
+- [x] Configure backend analytics agent
 - [ ] Verify site is accessible
 - [ ] Verify GSC ownership
 - [ ] Submit sitemap to GSC
