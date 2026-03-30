@@ -4,135 +4,141 @@ slug: "capital-gains-tax-property-sale-uk-2026"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Capital Gains Tax"
-metaTitle: "Capital Gains Tax on Property Sale UK 2026: Rates & Allowances"
-metaDescription: "Complete guide to capital gains tax on property sales in 2026. Current rates, allowances, and essential planning tips for UK landlords and property investors."
-altText: "UK property investor reviewing capital gains tax calculations on laptop with property documents"
+metaTitle: "CGT Property Sale UK 2026: Rates, Allowances & Calculations"
+metaDescription: "Complete guide to capital gains tax on property sales in 2026. Current rates, annual exemptions, and key changes for UK landlords and property investors."
+altText: "UK property investor reviewing capital gains tax calculations on property sale with calculator and documents"
 image: ""
 h1: "Capital Gains Tax on Property Sale UK 2026: Rates and Allowances"
-summary: "Capital gains tax rules for property sales continue to evolve. Here's what UK landlords need to know about rates, allowances, and planning strategies for 2026."
+summary: "Capital gains tax rules for property sales continue to evolve in 2026. Understanding current rates, allowances, and timing strategies can significantly impact your tax bill when selling investment property."
 schema: ""
 canonical: ""
 faqs:
   - question: "What is the capital gains tax rate on property sales in 2026?"
-    answer: "For 2025/26, capital gains tax on residential property is charged at 18% for basic rate taxpayers and 24% for higher/additional rate taxpayers. These rates apply after deducting the £3,000 annual exempt amount and allowable costs."
-  - question: "How much capital gains tax will I pay on a £100,000 property gain?"
-    answer: "After the £3,000 annual exemption, you'd pay tax on £97,000. A basic rate taxpayer would pay £17,460 (18%), while a higher rate taxpayer would pay £23,280 (24%). The actual rate depends on your total income for the tax year."
-  - question: "Do I need to report property sales immediately to HMRC?"
-    answer: "Yes, you must report UK residential property sales within 60 days of completion if you have any capital gains tax to pay. This applies even if you normally file self-assessment returns. Late reporting can result in penalties."
-  - question: "Can I reduce capital gains tax by transferring property to my spouse?"
-    answer: "Transfers between spouses/civil partners are generally tax-free, allowing you to optimize which spouse sells the property based on their tax rates and available annual exemptions. However, both names need to be on the property title for this to work effectively."
+    answer: "For residential property, basic rate taxpayers pay 18% capital gains tax while higher and additional rate taxpayers pay 28%. The rate depends on your total taxable income, and you may pay both rates if the gain pushes you into the higher rate band. Non-residential property has lower rates of 10% and 20% respectively."
+  - question: "How much is the capital gains tax allowance in 2026?"
+    answer: "The annual exempt amount for capital gains tax is £3,000 per person in the 2025/26 tax year. This means you can make capital gains of up to £3,000 without paying tax. Married couples and civil partners each get their own £3,000 allowance, potentially providing £6,000 combined exemption."
+  - question: "When do I need to pay capital gains tax on property sales?"
+    answer: "For UK residential property, you must report the sale and pay any capital gains tax within 60 days of completion. This applies to both UK residents and non-residents. You submit a residential property return online even if you also report the gain on your annual Self Assessment. Non-residential property gains are reported through Self Assessment with payment due by 31 January."
+  - question: "Can I reduce capital gains tax if I used to live in the rental property?"
+    answer: "Yes, through Principal Private Residence Relief. This exempts periods when the property was your main home from capital gains tax. You also get relief for the final 9 months of ownership and certain periods of absence like working away. This relief can significantly reduce your capital gains tax if you previously lived in the property before renting it out."
 ---
 
-<p>Capital gains tax on property sales remains one of the most significant costs for UK landlords when disposing of rental properties. With ongoing changes to rates and allowances, understanding your potential liability for 2026 is crucial for effective portfolio planning.</p>
+<p>Capital gains tax on property sales remains one of the most significant costs for UK landlords and property investors. With rates potentially reaching 28% for higher-rate taxpayers, understanding the 2026 rules is essential for anyone planning to sell investment property.</p>
 
-<p>The capital gains tax landscape has shifted considerably in recent years. From reduced annual exempt amounts to higher rates on residential property, landlords face an increasingly complex tax environment when selling buy-to-let properties.</p>
+<p>This guide covers the current capital gains tax rates, annual allowances, and practical strategies to help you minimise your tax liability when selling property in 2026.</p>
 
-<h2>Current Capital Gains Tax Rates for Property 2026</h2>
+<h2>Capital Gains Tax Rates on Property 2026</h2>
 
-<p>For the 2025/26 tax year, capital gains tax on residential property sales follows a tiered structure based on your total income and gains:</p>
+<p>The capital gains tax rates for residential property sales in 2026 depend on your total taxable income and the size of your gain:</p>
 
-<p><strong>Basic rate taxpayers (total income up to £50,270):</strong></p>
 <ul>
-<li>18% on residential property gains</li>
-<li>10% on other assets (shares, commercial property)</li>
+<li><strong>Basic rate taxpayers:</strong> 18% on residential property gains</li>
+<li><strong>Higher and additional rate taxpayers:</strong> 28% on residential property gains</li>
+<li><strong>Non-residential property:</strong> 10% (basic rate) or 20% (higher/additional rate)</li>
 </ul>
 
-<p><strong>Higher and additional rate taxpayers:</strong></p>
+<p>If your gain pushes you into the higher rate tax band, you'll pay 18% on the portion within the basic rate band and 28% on the remainder. For example, a basic rate taxpayer with a £60,000 property gain might pay 18% on £50,000 and 28% on £10,000 if it takes them over the higher rate threshold.</p>
+
+<p>Non-UK residents face an additional 2% surcharge on residential property gains, making their rates 20% and 30% respectively.</p>
+
+<h2>Annual Exempt Amount 2026</h2>
+
+<p>The capital gains tax annual exempt amount (previously called the annual exemption) was significantly reduced in recent years. For the 2025/26 tax year, the annual exempt amount is £3,000 per person.</p>
+
+<p>This means you can make capital gains of up to £3,000 in a tax year without paying capital gains tax. For married couples and civil partners, each person gets their own £3,000 allowance, potentially providing £6,000 of combined exemption.</p>
+
+<p>The reduction from previous higher exemption levels means careful planning is now more important than ever when timing property sales.</p>
+
+<h2>Calculating Your Capital Gains Tax on Property</h2>
+
+<p>Your capital gains tax liability depends on several factors beyond the basic rates. Here's how the calculation typically works:</p>
+
+<h3>Step 1: Calculate Your Gain</h3>
+<p>Your gain is the difference between your sale price and your total cost basis, which includes:</p>
+
 <ul>
-<li>24% on residential property gains</li>
-<li>20% on other assets</li>
+<li>Original purchase price</li>
+<li>Stamp duty and legal fees on purchase</li>
+<li>Estate agent fees and legal costs on sale</li>
+<li>Capital improvements (not repairs or maintenance)</li>
 </ul>
 
-<p>These rates apply after deducting your annual exempt amount and any allowable costs. The key point for landlords is that residential buy-to-let properties face the higher rates of 18% and 24%, not the standard 10% and 20% rates.</p>
+<h3>Step 2: Apply Reliefs and Exemptions</h3>
+<p>Several reliefs can reduce your taxable gain:</p>
 
-<h2>Annual Exempt Amount and Allowances</h2>
-
-<p>The annual exempt amount for capital gains tax has been significantly reduced in recent years. For 2025/26, individuals can make capital gains of up to £3,000 without paying tax.</p>
-
-<p>This reduction from previous levels means more landlords will face capital gains tax liability on property sales. For a landlord selling a BTL property with a £50,000 gain, only £3,000 is exempt, leaving £47,000 subject to tax.</p>
-
-<p><strong>Allowable deductions include:</strong></p>
 <ul>
-<li>Purchase price and associated costs (solicitor fees, stamp duty, surveys)</li>
-<li>Improvement costs (extensions, conversions, not repairs)</li>
-<li>Selling costs (estate agent fees, solicitor fees, marketing)</li>
-<li>Incidental costs of disposal</li>
+<li>Principal Private Residence Relief (if you lived in the property)</li>
+<li>Lettings Relief (limited scope from April 2020)</li>
+<li>Annual exempt amount (£3,000 in 2025/26)</li>
 </ul>
 
-<h2>Calculating Your Capital Gains Tax Liability</h2>
+<h3>Step 3: Calculate Tax Due</h3>
+<p>Apply the appropriate rate (18% or 28%) to your net taxable gain, considering your total income for the year.</p>
 
-<p>The calculation follows a straightforward process, but the details matter significantly for your final tax bill:</p>
+<h2>Principal Private Residence Relief</h2>
 
-<p><strong>Step 1: Calculate the gain</strong><br>
-Sale price minus purchase price and allowable costs equals your capital gain.</p>
+<p>If you lived in the property as your main home at any point, you might qualify for Principal Private Residence Relief. This relief exempts the periods when the property was your main residence from capital gains tax.</p>
 
-<p><strong>Step 2: Apply exemptions</strong><br>
-Deduct your annual exempt amount (£3,000 for 2025/26) and any other reliefs.</p>
+<p>You also get relief for the final 9 months of ownership (regardless of whether you lived there) and certain periods of absence, such as working away from home or living in job-related accommodation.</p>
 
-<p><strong>Step 3: Determine your tax rate</strong><br>
-Your rate depends on your total taxable income for the year. If adding the gain pushes you into a higher tax band, you may pay different rates on different portions.</p>
+<p>For landlords who previously lived in their rental property, this relief can significantly reduce capital gains tax liability.</p>
 
-<p>For example, a landlord with £45,000 employment income selling a property with a £30,000 gain would pay 18% on £20,270 of the gain and 24% on the remainder after the £3,000 exemption.</p>
+<h2>Reporting and Payment Deadlines</h2>
 
-<h2>Property-Specific Considerations</h2>
+<p>Capital gains tax on UK residential property must be reported and paid within 60 days of completion. This applies to both UK residents and non-residents selling UK residential property.</p>
 
-<p>Several factors can significantly impact your capital gains tax liability on property sales:</p>
+<p>You must submit a residential property return online and pay the tax due, even if you expect to claim the gain on your annual Self Assessment return. Failure to meet the 60-day deadline results in penalties and interest charges.</p>
 
-<h3>Principal Private Residence Relief</h3>
+<p>For non-residential property, you report gains through your annual Self Assessment return, with payment due by 31 January following the tax year of disposal.</p>
 
-<p>If you've lived in the property as your main home at any point, you may qualify for partial relief. The final 9 months of ownership always qualify for relief, regardless of whether you're living there.</p>
+<h2>Tax Planning Strategies for 2026</h2>
 
-<h3>Letting Relief</h3>
+<p>Several strategies can help minimise your capital gains tax on property sales:</p>
 
-<p>This relief was significantly restricted from April 2020. Now it only applies if you're selling a property that was your main home and you let it out while also living there. Most BTL properties no longer qualify.</p>
+<h3>Timing Your Sale</h3>
+<p>Consider spreading sales across tax years to use multiple annual exempt amounts. With only £3,000 available each year, this strategy has limited impact but can still save tax for smaller gains.</p>
 
-<h3>Business Asset Disposal Relief</h3>
+<h3>Using Spouse's Allowances</h3>
+<p>Transferring property to a spouse or civil partner before sale can utilise their capital gains tax allowances and potentially lower tax rates if they're in a different income tax band.</p>
 
-<p>This relief (formerly Entrepreneurs' Relief) doesn't typically apply to standard residential buy-to-let properties. However, it might apply to furnished holiday lets or commercial property in certain circumstances.</p>
+<h3>Offsetting Losses</h3>
+<p>Capital losses from other assets can reduce your property gains. Consider realising losses in the same tax year as your property sale to minimise overall capital gains tax.</p>
 
-<h2>Payment and Reporting Requirements</h2>
+<h3>Company Ownership</h3>
+<p>Holding property through a company structure changes the tax treatment entirely. Companies pay corporation tax on gains rather than capital gains tax, though this involves different considerations around <a href="/incorporation">incorporation</a> and ongoing compliance.</p>
 
-<p>Since April 2020, UK residents must report and pay capital gains tax on UK residential property within 60 days of completion. This applies even if you normally complete a self-assessment return.</p>
+<h2>Special Considerations for Portfolio Landlords</h2>
 
-<p>The reporting requirement covers sales where you have any capital gains tax to pay, not just where the gain exceeds the annual exempt amount. Late reporting can result in penalties and interest charges.</p>
+<p>If you own multiple properties, careful planning becomes even more important. Consider:</p>
 
-<p>You'll need to complete the residential property return online and pay any tax due. This is separate from your annual self-assessment, though you must also report the disposal there.</p>
-
-<h2>Planning Strategies for 2026</h2>
-
-<p>With higher rates and reduced allowances, tax planning becomes increasingly valuable for property investors:</p>
-
-<h3>Timing Disposals</h3>
-
-<p>Consider spreading sales across tax years to use multiple annual exempt amounts. For couples, consider which spouse should own properties to optimize tax rates.</p>
-
-<h3>Loss Harvesting</h3>
-
-<p>Capital losses can offset capital gains in the same tax year or be carried forward. If you have underperforming properties, timing their disposal alongside profitable sales can reduce your overall liability.</p>
-
-<h3>Incorporation Timing</h3>
-
-<p>Moving properties into a company structure affects future capital gains tax treatment. While companies pay corporation tax on gains (currently 25% for large companies), this might be preferable to personal rates of 24%. However, <a href="/incorporation">incorporation</a> has complex implications requiring specialist advice.</p>
-
-<h2>Record Keeping and Documentation</h2>
-
-<p>Maintaining comprehensive records is essential for accurate capital gains tax calculations and HMRC compliance:</p>
-
-<p><strong>Essential documentation includes:</strong></p>
 <ul>
-<li>Original purchase contracts and completion statements</li>
-<li>All improvement invoices and receipts</li>
-<li>Estate agent and solicitor bills for both purchase and sale</li>
-<li>Evidence of any periods of personal occupation</li>
-<li>Details of any business use or letting arrangements</li>
+<li>Which properties to sell in which tax years</li>
+<li>The interaction between capital gains and income tax on rental profits</li>
+<li>Whether corporate ownership makes sense for future acquisitions</li>
+<li>The impact of Section 24 mortgage interest restrictions on your overall tax position</li>
 </ul>
 
-<p>Poor record keeping can result in higher tax bills if you cannot prove allowable deductions or qualification for reliefs.</p>
+<p>Portfolio landlords should consider professional advice to optimise their disposal strategy across their entire property portfolio.</p>
 
-<h2>Looking Ahead to Future Changes</h2>
+<h2>Changes and Future Outlook</h2>
 
-<p>Capital gains tax policy continues to evolve, with ongoing discussions about further changes to rates and reliefs. The reduced annual exempt amount represents a significant shift towards bringing more transactions into the tax net.</p>
+<p>Capital gains tax rules continue to evolve. Recent changes include the significant reduction in annual exempt amounts and the introduction of 60-day reporting for residential property.</p>
 
-<p>For landlords planning disposals in 2026 and beyond, staying informed about potential changes is crucial. Consider how policy shifts might affect your portfolio strategy and disposal timing.</p>
+<p>The government has signalled ongoing review of capital gains tax as part of broader tax policy. Landlords should stay informed about potential changes and consider how these might affect their long-term property strategy.</p>
 
-<p>Given the complexity of capital gains tax on property and the significant amounts often involved, professional advice is typically worthwhile. Our <a href="/services">specialist services</a> include capital gains tax planning and compliance support for property investors.</p>
+<p>With Making Tax Digital expanding to include rental income from April 2026, landlords will need to maintain more detailed records that will also help with accurate capital gains tax calculations.</p>
+
+<h2>Professional Advice and Compliance</h2>
+
+<p>Capital gains tax calculations can be complex, particularly for properties with mixed use periods, substantial improvements, or where multiple reliefs apply. The 60-day reporting requirement also creates tight deadlines that require advance planning.</p>
+
+<p>Professional advice is particularly valuable for:</p>
+
+<ul>
+<li>Complex ownership structures or property histories</li>
+<li>High-value disposals where small percentage savings mean significant money</li>
+<li>Portfolio disposals requiring coordination across multiple properties</li>
+<li>Non-resident sellers facing additional compliance requirements</li>
+</ul>
+
+<p>Getting specialist advice early in your disposal planning can identify opportunities and ensure compliance with all relevant deadlines and requirements.</p>
