@@ -64,6 +64,10 @@ These are kept for reference but represent completed work.
 
 ## Quick Links
 
+**Latest System Health**: `SYSTEM_HEALTH_CHECK_2026-03-30.md` ✅  
+**Analytics Health**: `ANALYTICS_HEALTH_CHECK_2026-03-30.md` ⚠️  
+**GitHub Workflow Failures**: `GITHUB_WORKFLOW_FAILURES_2026-03-30.md` ⚠️  
+**Analytics Setup Guide**: `ANALYTICS_SETUP_GUIDE.md`  
 **Latest System Status**: `KEYWORD_STRATEGY_IMPLEMENTATION.md`  
 **Architecture Guide**: `CENTRALIZED_ARCHITECTURE_IMPLEMENTATION.md`  
 **Deployment Guide**: `PROPERTY_DEPLOYMENT_GUIDE.md`  
@@ -71,4 +75,4 @@ These are kept for reference but represent completed work.
 
 ---
 
-Last updated: 2026-03-29
+Last updated: 2026-03-30
