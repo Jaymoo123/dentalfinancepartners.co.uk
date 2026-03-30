@@ -17,36 +17,52 @@ class KeywordResearcher:
     
     async def research_keywords(self, target_keyword: str, niche_type: str) -> List[Dict]:
         """
-        Research keywords for a niche using FREE sources + ONE AI call.
+        ENHANCED: Comprehensive keyword research with location matrix.
         Cost: $0.50-1.00 (one-time per niche)
+        Result: 350-500 keywords (vs 52)
         """
         
-        print(f"\n=== Keyword Research: {niche_type} ===")
+        print(f"\n=== ENHANCED Keyword Research: {niche_type} ===")
         print(f"Target keyword: {target_keyword}")
         
-        # 1. Google Autocomplete (FREE)
-        print("\n[1/4] Fetching Google Autocomplete suggestions...")
+        # 1. Base Autocomplete (FREE)
+        print("\n[1/6] Fetching base Google Autocomplete suggestions...")
         autocomplete_keywords = await self._get_autocomplete_suggestions(target_keyword)
-        print(f"  Found {len(autocomplete_keywords)} autocomplete suggestions")
+        print(f"  Found {len(autocomplete_keywords)} base suggestions")
         
-        # 2. Related searches (FREE)
-        print("\n[2/4] Extracting related searches...")
+        # 2. Location Matrix (FREE - NEW!)
+        print("\n[2/6] Generating location-based keywords...")
+        location_keywords = await self._get_location_keywords(target_keyword, niche_type)
+        print(f"  Found {len(location_keywords)} location variations")
+        
+        # 3. Question Keywords (FREE - NEW!)
+        print("\n[3/6] Extracting question keywords...")
+        question_keywords = await self._get_question_keywords(target_keyword)
+        print(f"  Found {len(question_keywords)} question keywords")
+        
+        # 4. Related searches (FREE)
+        print("\n[4/6] Extracting related searches...")
         related_keywords = await self._get_related_searches(target_keyword)
         print(f"  Found {len(related_keywords)} related searches")
         
-        # 3. Competitor keywords (FREE)
-        print("\n[3/4] Analyzing competitor keywords...")
+        # 5. Competitor keywords (FREE)
+        print("\n[5/6] Analyzing competitor keywords...")
         competitor_keywords = await self._get_competitor_keywords(target_keyword)
         print(f"  Found {len(competitor_keywords)} competitor keywords")
         
-        # 4. Combine and deduplicate
+        # 6. Combine and deduplicate
         all_keywords = list(set(
-            autocomplete_keywords + related_keywords + competitor_keywords + [target_keyword]
+            autocomplete_keywords + 
+            location_keywords + 
+            question_keywords + 
+            related_keywords + 
+            competitor_keywords + 
+            [target_keyword]
         ))
         print(f"\n  Total unique keywords: {len(all_keywords)}")
         
-        # 5. AI analysis (PAID: $0.50-1.00)
-        print("\n[4/4] Analyzing keywords with Claude...")
+        # 7. AI analysis (PAID: $0.50-1.00)
+        print("\n[6/6] Analyzing keywords with Claude...")
         scored_keywords = await self._analyze_with_claude(all_keywords, niche_type, target_keyword)
         print(f"  Analyzed and scored {len(scored_keywords)} keywords")
         
@@ -87,6 +103,123 @@ class KeywordResearcher:
                 continue
         
         return list(set(suggestions))
+    
+    async def _get_location_keywords(self, keyword: str, niche_type: str) -> List[str]:
+        """
+        Generate location-based keyword variations (FREE).
+        Example: "gp accountant" -> "gp accountant manchester", "manchester gp accountant"
+        """
+        
+        # Major UK cities (15 locations)
+        locations = [
+            "london", "manchester", "birmingham", "leeds", "bristol",
+            "glasgow", "edinburgh", "liverpool", "newcastle", "nottingham",
+            "sheffield", "cardiff", "leicester", "coventry", "bradford"
+        ]
+        
+        location_variations = []
+        
+        # Pattern 1: "{keyword} {location}"
+        for location in locations:
+            location_variations.append(f"{keyword} {location}")
+        
+        # Pattern 2: "{location} {keyword}"
+        for location in locations:
+            location_variations.append(f"{location} {keyword}")
+        
+        # Pattern 3: "{keyword} near me"
+        location_variations.append(f"{keyword} near me")
+        
+        # Pattern 4: "best {keyword} {location}"
+        for location in ["london", "manchester", "birmingham"]:  # Top 3 cities
+            location_variations.append(f"best {keyword} {location}")
+        
+        # Pattern 5: Niche-specific location keywords
+        # Extract base profession from keyword (e.g., "gp" from "gp accountant")
+        base_terms = keyword.split()
+        if len(base_terms) >= 2:
+            profession = base_terms[0]  # e.g., "gp", "property", "dental"
+            
+            for location in ["london", "manchester", "birmingham", "leeds", "bristol"]:
+                # "{profession} accountant {location}"
+                location_variations.append(f"{profession} accountant {location}")
+                # "{profession} tax accountant {location}"
+                location_variations.append(f"{profession} tax accountant {location}")
+        
+        # Get autocomplete for top location variations
+        print(f"  Fetching autocomplete for location keywords...")
+        for loc_keyword in location_variations[:20]:  # Top 20 location keywords
+            try:
+                url = "http://suggestqueries.google.com/complete/search"
+                params = {
+                    "client": "firefox",
+                    "q": loc_keyword,
+                    "hl": "en-GB"
+                }
+                
+                response = await self.http_client.get(url, params=params)
+                if response.status_code == 200:
+                    data = response.json()
+                    if len(data) > 1 and isinstance(data[1], list):
+                        location_variations.extend(data[1])
+            
+            except Exception:
+                continue
+        
+        return list(set(location_variations))
+    
+    async def _get_question_keywords(self, keyword: str) -> List[str]:
+        """
+        Generate question-based keywords (FREE).
+        Example: "how much does a gp accountant cost", "what is a gp accountant"
+        """
+        
+        question_keywords = []
+        
+        # Question prefixes
+        prefixes = ["how", "what", "why", "when", "where", "who", "which"]
+        
+        for prefix in prefixes:
+            # Query autocomplete for each question prefix
+            query = f"{prefix} {keyword}"
+            
+            try:
+                url = "http://suggestqueries.google.com/complete/search"
+                params = {
+                    "client": "firefox",
+                    "q": query,
+                    "hl": "en-GB"
+                }
+                
+                response = await self.http_client.get(url, params=params)
+                if response.status_code == 200:
+                    data = response.json()
+                    if len(data) > 1 and isinstance(data[1], list):
+                        question_keywords.extend(data[1])
+            
+            except Exception:
+                continue
+        
+        # Common question patterns
+        base_terms = keyword.split()
+        if len(base_terms) >= 2:
+            profession = base_terms[0]
+            
+            question_patterns = [
+                f"how much does a {keyword} cost",
+                f"how to find a {keyword}",
+                f"what does a {keyword} do",
+                f"why use a {keyword}",
+                f"when to hire a {keyword}",
+                f"how to choose a {keyword}",
+                f"what is the best {keyword}",
+                f"how much is a {keyword}",
+                f"do i need a {keyword}",
+            ]
+            
+            question_keywords.extend(question_patterns)
+        
+        return list(set(question_keywords))
     
     async def _get_related_searches(self, keyword: str) -> List[str]:
         """Extract related searches from Google SERP (FREE)."""
@@ -154,7 +287,7 @@ TARGET KEYWORD: {target_keyword}
 NICHE TYPE: {niche_type}
 
 KEYWORDS TO ANALYZE:
-{json.dumps(keywords[:150])}  # Cap at 150 to avoid huge prompts
+{json.dumps(keywords[:200])}  # Cap at 200 for comprehensive analysis
 
 For each keyword, provide:
 1. search_volume: Estimate as integer (high=1000+, medium=500-1000, low=100-500, very_low=<100)

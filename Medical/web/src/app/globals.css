@@ -1,0 +1,266 @@
+/* Tailwind source("..") scans from src/ relative to this file, not process cwd (fixes wrong cwd). */
+@import "tailwindcss" source("..");
+
+/*
+  UI ground rules (mobile-first) — Dental Finance Partners
+  - Navy + gold brand; light surfaces, high-contrast type.
+  - Touch targets ≥44px; no horizontal bleed; form inputs 16px on mobile.
+*/
+
+:root {
+  --navy: #001b3d;
+  --navy-soft: #0d2d52;
+  --navy-muted: #1a3a5c;
+  --gold: #b8975d;
+  --gold-strong: #9e7f4a;
+  --gold-soft: rgba(184, 151, 93, 0.14);
+  /* Cleaner, consultancy-style neutrals */
+  --background: #f4f6f9;
+  --surface: #ffffff;
+  --surface-elevated: #eef1f6;
+  --ink: #001b3d;
+  --ink-soft: #2d3f5c;
+  --muted: #5c6b80;
+  --border: #e2e8f0;
+  /* Semantic aliases */
+  --accent: var(--gold);
+  --accent-strong: var(--gold-strong);
+  --accent-soft: var(--gold-soft);
+  --ring-offset: var(--background);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--ink);
+  --font-sans: var(--font-plus-jakarta);
+  --font-serif: var(--font-cormorant);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  min-width: 0;
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--ink);
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+article,
+main {
+  min-width: 0;
+}
+
+/* Hero — deep navy with soft light drift (clean, not busy) */
+.hero-brand {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(160deg, #00132e 0%, var(--navy) 38%, #0a2544 100%);
+  color: #f8fafc;
+}
+
+.hero-brand::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 80% 55% at 100% 0%, rgba(184, 151, 93, 0.12), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 0% 100%, rgba(255, 255, 255, 0.06), transparent 50%);
+}
+
+.hero-brand::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.04'%3E%3Cpath d='M28 0v56M0 28h56'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hero-brand > .hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* Transform-only motion — no opacity keyframes (avoids invisible hero on first paint / SSR). */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-reveal,
+  .hero-reveal-delay,
+  .hero-reveal-delay-2 {
+    transform: translateY(12px);
+  }
+
+  .hero-reveal {
+    animation: hero-reveal 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .hero-reveal-delay {
+    animation: hero-reveal 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.1s forwards;
+  }
+
+  .hero-reveal-delay-2 {
+    animation: hero-reveal 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.18s forwards;
+  }
+}
+
+@keyframes hero-reveal {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.eyebrow-gold {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+@media (min-width: 640px) {
+  .eyebrow-gold {
+    font-size: 0.75rem;
+  }
+}
+
+.rule-gold {
+  height: 2px;
+  width: 3rem;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, var(--gold), rgba(184, 151, 93, 0.35));
+}
+
+.display-serif {
+  font-family: var(--font-cormorant), ui-serif, "Times New Roman", serif;
+}
+
+.card-premium {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 1rem;
+  box-shadow: 0 1px 0 rgba(0, 27, 61, 0.04);
+}
+
+/* Flat panel — Sidekick-style list rows */
+.card-flat {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 1rem;
+}
+
+/* Hero glass tiles */
+.hero-glass {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+}
+
+.section-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-strong);
+}
+
+.article-body.prose-blog {
+  line-height: 1.65;
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+}
+
+@media (min-width: 640px) {
+  .article-body.prose-blog {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+}
+
+.article-body.prose-blog h2 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.65rem;
+  font-family: var(--font-cormorant), ui-serif, Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+@media (min-width: 640px) {
+  .article-body.prose-blog h2 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+.article-body.prose-blog h3 {
+  margin-top: 1.35rem;
+  margin-bottom: 0.45rem;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  line-height: 1.35;
+}
+
+.article-body.prose-blog p {
+  margin-bottom: 1rem;
+  color: var(--ink-soft);
+}
+
+.article-body.prose-blog ul,
+.article-body.prose-blog ol {
+  margin: 1rem 0 1rem 1.1rem;
+  padding-left: 0.35rem;
+  color: var(--ink-soft);
+}
+
+@media (min-width: 640px) {
+  .article-body.prose-blog ul,
+  .article-body.prose-blog ol {
+    margin-left: 1.25rem;
+  }
+}
+
+.article-body.prose-blog li {
+  margin-bottom: 0.5rem;
+}
+
+.article-body.prose-blog a {
+  color: var(--navy-soft);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: rgba(184, 151, 93, 0.7);
+  text-underline-offset: 3px;
+}
+
+.article-body.prose-blog a:hover {
+  color: var(--gold-strong);
+  text-decoration-color: var(--gold);
+}
+
+.article-body.prose-blog strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.article-body.prose-blog blockquote {
+  margin: 1.25rem 0;
+  border-left: 4px solid var(--gold);
+  padding-left: 0.9rem;
+  color: var(--muted);
+}
