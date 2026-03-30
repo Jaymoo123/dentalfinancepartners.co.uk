@@ -9,12 +9,12 @@
 ## ✅ CONFIGURATION UPDATED
 
 ### Domain & Branding
-- ✅ Domain: `propertytaxpartners.co.uk`
+- ✅ Domain: `www.propertytaxpartners.co.uk` (UPDATED 2026-03-30 - includes www)
 - ✅ Display name: `Property Tax Partners`
 - ✅ Legal name: `Property Tax Partners Ltd`
 - ✅ Email: `hello@propertytaxpartners.co.uk`
 - ✅ Phone: `+44 20 3026 1111`
-- ✅ Site URL: `https://propertytaxpartners.co.uk`
+- ✅ Site URL: `https://www.propertytaxpartners.co.uk` (UPDATED 2026-03-30 - includes www)
 
 ---
 
@@ -49,10 +49,12 @@ Go to Vercel Dashboard → Project Settings → Environment Variables
 Add these variables for **Production**:
 
 ```
-NEXT_PUBLIC_SITE_URL=https://propertytaxpartners.co.uk
-NEXT_PUBLIC_SUPABASE_URL=https://YOUR_PROJECT.supabase.co
+NEXT_PUBLIC_SITE_URL=https://www.propertytaxpartners.co.uk
+NEXT_PUBLIC_SUPABASE_URL=https://dhlxwmvmkrfnmcgjbntk.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGci...YOUR_ANON_KEY
 ```
+
+**CRITICAL**: NEXT_PUBLIC_SITE_URL MUST include www subdomain to prevent robots.txt line breaks!
 
 ### 3. Configure Custom Domain
 

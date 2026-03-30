@@ -64,6 +64,7 @@ These are kept for reference but represent completed work.
 
 ## Quick Links
 
+**Deployment Checklist**: `DEPLOYMENT_CHECKLIST.md` ⭐ **USE THIS FOR ALL DEPLOYMENTS**  
 **Latest System Health**: `SYSTEM_HEALTH_CHECK_2026-03-30.md` ✅  
 **Analytics Health**: `ANALYTICS_HEALTH_CHECK_2026-03-30.md` ⚠️  
 **GitHub Workflow Failures**: `GITHUB_WORKFLOW_FAILURES_2026-03-30.md` ⚠️  
