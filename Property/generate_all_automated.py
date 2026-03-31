@@ -9,14 +9,15 @@ import time
 import re
 import httpx
 
-# Supabase config
-SUPABASE_URL = os.getenv("SUPABASE_URL", "https://dhlxwmvmkrfnmcgjbntk.supabase.co")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY", "")
+# Import shared config
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+from shared_supabase_config import SUPABASE_URL, SUPABASE_KEY
+
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 
 def get_unused_count():
     """Get count of unused topics."""
-    url = f"{SUPABASE_URL}/rest/v1/blog_topics"
+    url = f"{SUPABASE_URL}/rest/v1/blog_topics_property"
     headers = {"apikey": SUPABASE_KEY, "Authorization": f"Bearer {SUPABASE_KEY}"}
     params = {"used": "eq.false", "select": "id"}
     response = httpx.get(url, headers=headers, params=params)
@@ -25,11 +26,11 @@ def get_unused_count():
 
 def get_next_topic():
     """Fetch the next unused topic."""
-    url = f"{SUPABASE_URL}/rest/v1/blog_topics"
+    url = f"{SUPABASE_URL}/rest/v1/blog_topics_property"
     headers = {"apikey": SUPABASE_KEY, "Authorization": f"Bearer {SUPABASE_KEY}"}
     params = {
         "used": "eq.false",
-        "order": "priority.desc,created_at.asc",
+        "order": "publish_priority.desc.nullslast,keyword_difficulty.asc.nullslast,created_at.asc",
         "limit": "1"
     }
     response = httpx.get(url, headers=headers, params=params)

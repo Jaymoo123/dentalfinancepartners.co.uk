@@ -1,0 +1,31 @@
+priority,title,keyword,slug,category,search_volume,difficulty,intent,notes
+3,GP Accounting: Professional Services,gp accounting,gp-accounting,Medical Expenses,1400,60,transactional,Broad accounting service term
+3,GP Accountant: Professional Services,gp accountant,gp-accountant,Core Service,1400,60,transactional,Primary target keyword
+2,Affordable GP Accountant: Professional Services,affordable gp accountant,affordable-gp-accountant,Pricing,560,35,transactional,Budget-conscious client query
+3,GP Tax Advice: Professional Services,gp tax advice,gp-tax-advice,GP Tax,560,40,transactional,Core tax service for GPs
+3,GP Accounting Software: Professional Services,gp accounting software,gp-accounting-software,Medical Expenses,560,40,transactional,Software solution for practice management
+3,GP Payroll Services: Professional Services,gp payroll services,gp-payroll-services,Medical Expenses,560,40,transactional,Payroll for practice staff
+3,GP Accountant Cost: Professional Services,gp accountant cost,gp-accountant-cost,Pricing,560,40,transactional,Direct pricing query
+3,GP Corporation Tax: Professional Services,gp corporation tax,gp-corporation-tax,GP Tax,560,40,transactional,Specific corporate tax for GPs
+3,GP Financial Planning: Professional Services,gp financial planning,gp-financial-planning,Medical Expenses,560,40,transactional,Broader financial advisory service
+3,GP Accountant Services: Professional Services,gp accountant services,gp-accountant-services,Core Service,560,40,transactional,Service listing query
+3,GP Accountant Access: Professional Services,gp accountant access,gp-accountant-access,Core Service,560,40,transactional,Service availability query
+3,Specialist GP Accountant: Professional Services,specialist gp accountant,specialist-gp-accountant,Core Service,560,40,transactional,High-intent specialist query
+3,Local GP Accountant: Professional Services,local gp accountant,local-gp-accountant,Location-Based,560,40,transactional,Geographic service query
+3,GP Accounting System: Professional Services,gp accounting system,gp-accounting-system,Medical Expenses,560,40,transactional,Software or process query
+3,GP Tax Return: Professional Services,gp tax return,gp-tax-return,GP Tax,560,40,transactional,Core tax filing service
+3,Accountant Financial Planning: Professional Services,accountant financial planning,accountant-financial-planning,Financial Planning,560,40,transactional,Broad financial services query
+3,Accountant Payroll Services: Professional Services,accountant payroll services,accountant-payroll-services,Payroll Services,560,40,transactional,Broad payroll services query
+3,Accountant VAT Registration: Professional Services,accountant vat registration,accountant-vat-registration,VAT Services,560,40,transactional,Specific VAT service query
+3,GP Bookkeeping: Professional Services,gp bookkeeping,gp-bookkeeping,GP Tax,560,40,transactional,Specific GP bookkeeping service query
+3,GP VAT Registration: Professional Services,gp vat registration,gp-vat-registration,VAT Services,560,40,transactional,Specific GP VAT service query
+3,Accountant Corporation Tax: Professional Services,accountant corporation tax,accountant-corporation-tax,GP Tax,560,50,transactional,General corporate tax service
+3,Accountant Tax Planning: Professional Services,accountant tax planning,accountant-tax-planning,GP Tax,560,50,transactional,Advanced tax strategy service
+3,Accountant Tax Advice: Professional Services,accountant tax advice,accountant-tax-advice,GP Tax,560,50,transactional,General tax advisory service
+3,Accountant Bookkeeping: Professional Services,accountant bookkeeping,accountant-bookkeeping,Medical Expenses,560,50,transactional,General bookkeeping service
+3,Accountant Self Assessment: Professional Services,accountant self assessment,accountant-self-assessment,General Accounting,560,50,transactional,"High volume, generic tax service need"
+3,Accountant Accounting Services: Professional Services,accountant accounting services,accountant-accounting-services,General Accounting,560,50,transactional,"Very generic, high competition"
+3,Accountant Tax Return: Professional Services,accountant tax return,accountant-tax-return,General Accounting,560,50,transactional,"High volume, generic tax service"
+2,Best GP Accountant Manchester,best gp accountant manchester,best-gp-accountant-manchester,Location-Based,392,25,transactional,Manchester local recommendation query
+2,GP Tax Accountant Bristol: Professional Services,gp tax accountant bristol,gp-tax-accountant-bristol,Location-Based,392,30,transactional,Local Bristol tax specialist
+2,Nottingham GP Accountant: Professional Services,nottingham gp accountant,nottingham-gp-accountant,Location-Based,392,30,transactional,Local Nottingham market opportunity

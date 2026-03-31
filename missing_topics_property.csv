@@ -1,0 +1,15 @@
+priority,title,keyword,slug,category,search_volume,difficulty,intent,notes
+2,What Does a Property Accountant Do,what does a property accountant do,what-does-a-property-accountant-do,General Services,400,20,informational,Educational content opportunity
+3,How to Find a Property Accountant,how to find a property accountant,how-to-find-a-property-accountant,General Services,200,20,informational,Guide content opportunity
+3,How to Choose a Property Accountant,how to choose a property accountant,how-to-choose-a-property-accountant,General Services,150,18,informational,Selection guide content
+3,When to Hire a Property Accountant,when to hire a property accountant,when-to-hire-a-property-accountant,General Services,120,16,informational,Timing guidance query
+3,Do I Need a Property Accountant: Complete Guide,do i need a property accountant,do-i-need-a-property-accountant,General Services,200,18,informational,Decision making query
+3,Property Accountant Cost: Complete Guide,property accountant cost,property-accountant-cost,Pricing,300,28,informational,Cost research query
+3,Property Accountant Fees: Complete Guide,property accountant fees,property-accountant-fees,Pricing,250,26,informational,Fee structure inquiry
+3,Best Property Accountant,best property accountant,best-property-accountant,General Services,800,42,transactional,High commercial intent with comparison element
+3,Property Accountant Near Me,property accountant near me,property-accountant-near-me,General Services,800,42,transactional,High volume local search
+3,Property Accountants Near Me,property accountants near me,property-accountants-near-me,General Services,900,45,transactional,High intent local search
+3,Property Tax Advice: Expert Services,property tax advice,property-tax-advice,Tax Planning,1200,40,transactional,High volume tax guidance search
+2,Property Accountant UK: Expert Services,property accountant uk,property-accountant-uk,General Services,600,35,transactional,National UK search
+3,Property Accountant Services: Expert Services,property accountant services,property-accountant-services,General Services,300,32,transactional,Service-focused search
+3,Why Use a Property Accountant: Complete Guide,why use a property accountant,why-use-a-property-accountant,General Services,150,18,informational,Benefits explanation search
