@@ -3,10 +3,10 @@
   "display_name": "Medical Accountants UK",
   "legal_name": "Medical Accountants UK Ltd",
   "domain": "www.medicalaccountantsuk.co.uk",
-  "tagline": "Specialist accounting for UK medical professionals",
-  "description": "Expert accountants for GPs, consultants, and medical practices. NHS pension advice, locum tax, private practice incorporation, and medical expense claims. Trusted by doctors across the UK.",
+  "tagline": "Specialist accountants for UK medical professionals",
+  "description": "Expert accounting for GPs, consultants and medical practices. NHS pension advice, locum tax planning, private practice incorporation and expense claims.",
   "brand": {
-    "primary_color": "#dc2626",
+    "primary_color": "#0891b2",
     "logo_path": "/brand/logo.png",
     "publisher_logo_url": "/og-placeholder.svg"
   },
@@ -57,27 +57,27 @@
   "locations": [
     {
       "slug": "london",
-      "title": "Medical accountants in London"
+      "title": "GP accountants in London"
     },
     {
       "slug": "manchester",
-      "title": "Medical accountants in Manchester"
+      "title": "GP accountants in Manchester"
     },
     {
       "slug": "birmingham",
-      "title": "Medical accountants in Birmingham"
+      "title": "GP accountants in Birmingham"
     },
     {
       "slug": "leeds",
-      "title": "Medical accountants in Leeds"
+      "title": "GP accountants in Leeds"
     },
     {
       "slug": "bristol",
-      "title": "Medical accountants in Bristol"
+      "title": "GP accountants in Bristol"
     }
   ],
   "content_strategy": {
-    "audience": "UK GPs, hospital consultants, private practice owners, and locum doctors",
+    "audience": "UK GPs, hospital consultants, private practice owners and locum doctors",
     "categories": [
       "GP Tax & Accounts",
       "NHS Pension Planning",
@@ -102,10 +102,10 @@
     ],
     "google_analytics_id": "G-MEDICAL-PLACEHOLDER",
     "google_site_verification": "MEDICAL-VERIFICATION-PLACEHOLDER",
-    "theme_color": "#dc2626",
-    "homepage_title": "GP Accountants UK | Medical Tax Specialists",
+    "theme_color": "#0891b2",
+    "homepage_title": "GP Accountants UK | Tax Specialists for Doctors",
     "homepage_h1": "Specialist Accountants for GPs & Medical Professionals",
-    "homepage_description": "Expert accounting for GPs, consultants & medical practices. NHS pension advice, locum tax planning, private practice incorporation. Book free consultation."
+    "homepage_description": "Medical accounting specialists for UK doctors. NHS pension optimization, locum tax returns, practice incorporation, and medical expense claims. Free consultation for GPs and consultants."
   },
   "lead_form": {
     "role_label": "I am a...",
@@ -153,5 +153,5 @@
     "cta_button": "Request a callback"
   },
   "shared_components_version": "1.0.0",
-  "last_sync": "2024-12-19T10:30:00.000Z"
+  "last_sync": "2026-03-30T07:20:40.710812"
 }

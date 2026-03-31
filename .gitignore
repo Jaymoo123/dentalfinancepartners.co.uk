@@ -29,6 +29,14 @@ wheels/
 .env.local
 .env.*.local
 
+# Secrets (API keys, service accounts)
+secrets/
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!niche.config.json
+
 # Logs
 *.log
 agents/docs/logs/*.log

@@ -40,15 +40,24 @@ class SimpleCostTracker:
 
 
 class NicheGenerator:
-    def __init__(self, anthropic_api_key: str, dry_run: bool = False):
-        self.anthropic_api_key = anthropic_api_key
+    def __init__(self, api_key: str, dry_run: bool = False, use_deepseek: bool = True):
+        """
+        Initialize niche generator.
+        
+        Args:
+            api_key: DeepSeek or Anthropic API key
+            dry_run: If True, skip actual file writes
+            use_deepseek: If True, use DeepSeek (default). If False, use Anthropic.
+        """
+        self.api_key = api_key
         self.dry_run = dry_run
+        self.use_deepseek = use_deepseek
         self.cost_tracker = SimpleCostTracker()
         
-        # Initialize utilities
-        self.keyword_researcher = KeywordResearcher(anthropic_api_key)
-        self.config_generator = ConfigGenerator(anthropic_api_key)
-        self.page_generator = PageGenerator(anthropic_api_key)
+        # Initialize utilities with DeepSeek support
+        self.keyword_researcher = KeywordResearcher(api_key, use_deepseek=use_deepseek)
+        self.config_generator = ConfigGenerator(api_key, use_deepseek=use_deepseek)
+        self.page_generator = PageGenerator(api_key, use_deepseek=use_deepseek)
         self.brand_generator = BrandGenerator()
         self.database_setup = DatabaseSetup(".")
         self.verification_pipeline = VerificationPipeline()
@@ -290,8 +299,11 @@ async def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Generate Medical niche from scratch
+  # Generate Medical niche with DeepSeek (default, cheap)
   python agents/generate_niche.py --niche-id medical --display-name "Medical Accountants UK" --target-keyword "gp accountant"
+  
+  # Generate with Claude (higher quality, more expensive)
+  python agents/generate_niche.py --niche-id pharmacy --display-name "Pharmacy Accountants UK" --target-keyword "pharmacy accountant" --model claude
   
   # Generate with template and full verification
   python agents/generate_niche.py --niche-id pharmacy --display-name "Pharmacy Accountants UK" --target-keyword "pharmacy accountant" --template templates/niches/pharmacy/template.json --verify-build
@@ -305,20 +317,31 @@ Examples:
     parser.add_argument("--display-name", required=True, help="Brand display name")
     parser.add_argument("--target-keyword", required=True, help="Primary target keyword")
     parser.add_argument("--template", help="Optional template JSON path")
+    parser.add_argument("--model", default="deepseek", choices=["deepseek", "claude"], help="AI model to use (default: deepseek)")
     parser.add_argument("--verify-build", action="store_true", help="Run Next.js build verification (slow)")
     parser.add_argument("--apply-migrations", action="store_true", help="Apply database migrations immediately")
     parser.add_argument("--dry-run", action="store_true", help="Dry run (no file creation)")
     
     args = parser.parse_args()
     
-    # Check API key
-    api_key = os.getenv("ANTHROPIC_API_KEY")
-    if not api_key:
-        print("ERROR: ANTHROPIC_API_KEY environment variable not set")
-        sys.exit(1)
+    # Check API key based on model
+    if args.model == "deepseek":
+        api_key = os.getenv("DEEPSEEK_API_KEY")
+        if not api_key:
+            print("ERROR: DEEPSEEK_API_KEY environment variable not set")
+            sys.exit(1)
+        use_deepseek = True
+        print(f"Using DeepSeek API (cost: ~$0.10-0.15 per niche)")
+    else:
+        api_key = os.getenv("ANTHROPIC_API_KEY")
+        if not api_key:
+            print("ERROR: ANTHROPIC_API_KEY environment variable not set")
+            sys.exit(1)
+        use_deepseek = False
+        print(f"Using Claude API (cost: ~$1.80 per niche)")
     
     # Generate niche
-    generator = NicheGenerator(api_key, dry_run=args.dry_run)
+    generator = NicheGenerator(api_key, dry_run=args.dry_run, use_deepseek=use_deepseek)
     
     report = await generator.generate(
         niche_id=args.niche_id,

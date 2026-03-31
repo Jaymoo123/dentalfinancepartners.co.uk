@@ -12,7 +12,7 @@
     "Medical\\web\\src\\app\\about\\page.tsx",
     "Medical\\web\\src\\components\\brand\\BrandWordmarkHomeLink.tsx",
     "Medical\\web\\src\\components\\brand\\BrandLogoHero.tsx",
-    ".\\supabase\\migrations\\20260330164916_create_blog_topics_medical.sql"
+    ".\\supabase\\migrations\\20260330184532_create_blog_topics_medical.sql"
   ],
   "verification_results": {
     "keywords": {
@@ -37,6 +37,17 @@
       "errors": [],
       "warnings": []
     },
+    "quality": {
+      "passed": false,
+      "errors": [
+        "homepage_title too long (61 chars, max 60)",
+        "homepage_h1 from config not found in homepage TSX"
+      ],
+      "warnings": [
+        "Found US spelling 'organization' (should be 'organisation')",
+        "Target keyword '' appears 25535 times in homepage (may be over-optimized)"
+      ]
+    },
     "build": {
       "passed": true,
       "errors": [],
@@ -55,10 +66,8 @@
       "passed": true,
       "errors": [],
       "warnings": [
-        "'medical' not in agent_config.py - needs manual update",
         "'medical' not in daily-content-pipeline.yml - needs manual update",
-        "'medical' not in daily-analytics-optimization.yml - needs manual update",
-        "'Medical Accountants UK' not in README.md - needs manual update"
+        "'medical' not in daily-analytics-optimization.yml - needs manual update"
       ]
     },
     "final": {
@@ -69,7 +78,7 @@
       ]
     }
   },
-  "cost": 1.7999999999999998,
-  "duration_seconds": 179.02868723869324,
-  "timestamp": "2026-03-30T17:49:16.198544"
+  "cost": 0.135,
+  "duration_seconds": 462.5709249973297,
+  "timestamp": "2026-03-30T19:45:32.331293"
 }

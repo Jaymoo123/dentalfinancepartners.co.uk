@@ -8,12 +8,12 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 export const metadata: Metadata = {
   title: "About us",
   description:
-    "Why we focus on UK medical professionals — specialist accounting for GPs, consultants, and practice owners without generic SME advice.",
+    "Why we focus exclusively on UK medical professionals — specialist accounting for GPs, consultants and practices, not generic SME advice.",
   alternates: { canonical: `${siteConfig.url}/about` },
   openGraph: {
     title: "About us",
     description:
-      "Why we focus on UK medical professionals — specialist accounting for GPs, consultants, and practice owners without generic SME advice.",
+      "Why we focus exclusively on UK medical professionals — specialist accounting for GPs, consultants and practices, not generic SME advice.",
     url: `${siteConfig.url}/about`,
     type: "website",
   },
@@ -32,14 +32,14 @@ export default function AboutPage() {
         About Medical Accountants UK
       </h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-        We built our practice specifically for UK medical professionals — GPs, consultants, locums, and practice owners who need more than generic small business advice. From NHS pension annual allowances to private practice incorporation, we understand the unique challenges facing doctors today.
+        We built a specialist accounting practice to serve the unique financial landscape of UK medicine — from NHS pension complexities and locum tax planning to private practice incorporation. We understand that your financial needs are distinct from generic small businesses.
       </p>
       <h2 className="mt-10 font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">How we work</h2>
       <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
-        <li>Clear, medical-focused advice without SME boilerplate.</li>
-        <li>Proactive planning for NHS pensions, locum structures, and private practice growth.</li>
-        <li>Year-round support, not just Self Assessment season.</li>
-        <li>Tax strategies that work with medical career progression and changing roles.</li>
+        <li>Partner-led advice tailored to GPs, consultants and medical practice owners.</li>
+        <li>Proactive, year-round tax planning, not just a year-end compliance rush.</li>
+        <li>Clear guidance on NHS pension annual allowance and lifetime allowance issues.</li>
+        <li>Structured advice that withstands scrutiny from HMRC, lenders, or practice partners.</li>
       </ul>
       <h2 className="mt-10 font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">Evidence-led content</h2>
       <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
@@ -47,26 +47,26 @@ export default function AboutPage() {
         <Link href="/blog" className={`text-[var(--accent-strong)] underline ${focusRing} rounded`}>
           blog
         </Link>{" "}
-        is written for medical professionals who need UK-specific guidance — not generic tax tips. Start with{" "}
+        is written for medical professionals who need UK-specific tax insights — not generic financial tips. Start with{" "}
         <Link
-          href="/blog/nhs-pension-annual-allowance-doctors-guide"
+          href="/blog/nhs-pension-annual-allowance-planning"
           className={`text-[var(--accent-strong)] underline ${focusRing} rounded`}
         >
-          NHS pension planning
+          NHS pension annual allowance planning
         </Link>{" "}
         or{" "}
         <Link
-          href="/blog/locum-doctor-tax-guide-self-employment"
+          href="/blog/locum-doctor-tax-deductions-uk"
           className={`text-[var(--accent-strong)] underline ${focusRing} rounded`}
         >
-          locum tax essentials
+          locum doctor tax deductions
         </Link>
         .
       </p>
       <div className="mt-10 sm:mt-12">
         <CTASection
           title="See if we are a fit"
-          description="Tell us about your medical role — GP, consultant, or locum — and what financial challenges you want to solve."
+          description="Tell us about your role — GP, consultant, locum or practice owner — and your key financial priorities for the coming year."
         />
       </div>
     </div>

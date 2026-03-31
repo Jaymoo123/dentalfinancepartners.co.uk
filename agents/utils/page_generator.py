@@ -1,17 +1,30 @@
 """
 Page Generator - AI-powered generation of homepage, services, and about pages.
-Uses Claude to generate TSX pages with niche-specific content.
+Now powered by DeepSeek for 15x cost reduction.
 """
 import json
 import os
 import re
 from typing import Dict, List, Optional
-from anthropic import Anthropic
+from agents.utils.deepseek_client import DeepSeekClient
 
 
 class PageGenerator:
-    def __init__(self, anthropic_api_key: str):
-        self.anthropic = Anthropic(api_key=anthropic_api_key)
+    def __init__(self, api_key: str, use_deepseek: bool = True):
+        """
+        Initialize page generator.
+        
+        Args:
+            api_key: DeepSeek or Anthropic API key
+            use_deepseek: If True, use DeepSeek (default). If False, use Anthropic.
+        """
+        self.use_deepseek = use_deepseek
+        
+        if use_deepseek:
+            self.client = DeepSeekClient(api_key)
+        else:
+            from anthropic import Anthropic
+            self.anthropic = Anthropic(api_key=api_key)
     
     def generate_pages(self, 
                       niche_id: str,
@@ -82,7 +95,9 @@ class PageGenerator:
                 categories[cat] = []
             categories[cat].append(kw)
         
-        prompt = f"""Generate a complete Next.js homepage (page.tsx) for {config['display_name']}.
+        prompt = f"""Act as: Expert Next.js developer specializing in UK accounting websites
+Goal: Generate production-ready homepage (page.tsx) with niche-specific content
+Context: Building for {config['display_name']}, have config and {len([k for kws in categories.values() for k in kws])} keywords
 
 NICHE CONFIG:
 {json.dumps(config, indent=2)}
@@ -90,10 +105,12 @@ NICHE CONFIG:
 TOP KEYWORDS BY CATEGORY:
 {json.dumps({cat: [k['keyword'] for k in kws[:5]] for cat, kws in categories.items()}, indent=2)}
 
-REFERENCE HOMEPAGE (Dentists - for structure/style):
+REFERENCE HOMEPAGE (match this structure exactly):
 {reference_homepage}
 
-REQUIREMENTS:
+Deliverable: Complete TSX file with imports, metadata, components
+
+Rules (CRITICAL - follow precisely):
 
 1. **Metadata**:
    - title: Use config.seo.homepage_title
@@ -147,30 +164,51 @@ REQUIREMENTS:
     - Niche-specific question
 
 STYLE:
-- Match Dentists homepage structure and tone
-- UK English, professional, trustworthy
-- Use same imports and components
-- Use same CSS utility classes (siteContainerLg, sectionY, etc.)
+- Match reference homepage structure exactly
+- UK English spelling (specialise, optimise, organisation)
+- Professional, trustworthy tone (no hype)
+- Use same imports and components as reference
+- Use same CSS classes (siteContainerLg, sectionY, etc.)
 - Include StickyCTA component
 - Include organization schema
 
-Return ONLY the complete TSX file (no markdown, no explanation):"""
+Output Format (CRITICAL):
+- Return ONLY the complete TSX file
+- No markdown markers (no ```)
+- No explanation or commentary
+- Valid TypeScript syntax
+- All imports must be correct
+- No placeholder values (use config data)
+
+Verify before responding:
+1. Are all imports valid?
+2. Is TypeScript syntax correct?
+3. Are all config values used (no hardcoded placeholders)?
+4. Does it match reference structure?
+5. Is UK English used throughout?"""
         
         try:
-            message = self.anthropic.messages.create(
-                model="claude-sonnet-4-20250514",
-                max_tokens=8000,
-                system=[
-                    {
-                        "type": "text",
-                        "text": "You are an expert Next.js/React developer specializing in UK accounting websites. Generate production-ready TSX code.",
-                        "cache_control": {"type": "ephemeral"}
-                    }
-                ],
-                messages=[{"role": "user", "content": prompt}]
-            )
-            
-            tsx_code = message.content[0].text.strip()
+            if self.use_deepseek:
+                tsx_code = self.client.generate_creative(
+                    prompt=prompt,
+                    system="You are an expert Next.js/React developer specializing in UK accounting websites. Generate production-ready TSX code. Return ONLY the TSX file with no markdown markers.",
+                    temperature=0.7,
+                    max_tokens=8000
+                )
+            else:
+                message = self.anthropic.messages.create(
+                    model="claude-sonnet-4-20250514",
+                    max_tokens=8000,
+                    system=[
+                        {
+                            "type": "text",
+                            "text": "You are an expert Next.js/React developer specializing in UK accounting websites. Generate production-ready TSX code.",
+                            "cache_control": {"type": "ephemeral"}
+                        }
+                    ],
+                    messages=[{"role": "user", "content": prompt}]
+                )
+                tsx_code = message.content[0].text.strip()
             
             # Clean code markers
             if tsx_code.startswith("```tsx"):
@@ -201,18 +239,22 @@ Return ONLY the complete TSX file (no markdown, no explanation):"""
         # Extract categories
         categories = list(set(k.get("category", "General") for k in keywords if k.get("category")))
         
-        prompt = f"""Generate a complete Next.js services page (services/page.tsx) for {config['display_name']}.
+        prompt = f"""Act as: Expert Next.js developer specializing in UK accounting websites
+Goal: Generate production-ready services page with niche-specific content
+Context: Building for {config['display_name']}, {len(categories)} service categories identified
 
 NICHE CONFIG:
 {json.dumps(config, indent=2)}
 
-CONTENT CATEGORIES:
+CATEGORIES:
 {json.dumps(categories, indent=2)}
 
-REFERENCE SERVICES PAGE (Dentists - for structure/style):
+REFERENCE PAGE (match this structure exactly):
 {reference_services}
 
-REQUIREMENTS:
+Deliverable: Complete TSX file with imports, metadata, components
+
+Rules (CRITICAL - follow precisely):
 
 1. **Metadata**:
    - title: "{config['display_name']} services"
@@ -239,29 +281,50 @@ REQUIREMENTS:
    - Use CTASection component
 
 STYLE:
-- Match Dentists services page structure
-- UK English, professional tone
-- Use same imports and components
+- Match reference page structure exactly
+- UK English spelling (specialise, optimise, organisation)
+- Professional tone, no jargon
+- Use same imports and components as reference
 - Use contentNarrow, sectionY utilities
 - Include Breadcrumb component
 
-Return ONLY the complete TSX file (no markdown, no explanation):"""
+Output Format (CRITICAL):
+- Return ONLY the complete TSX file
+- No markdown markers (no ```)
+- No explanation or commentary
+- Valid TypeScript syntax
+- All imports correct
+- No placeholder values
+
+Verify before responding:
+1. Are all imports valid?
+2. Is TypeScript syntax correct?
+3. Are services derived from categories?
+4. Does it match reference structure?
+5. Is UK English used throughout?"""
         
         try:
-            message = self.anthropic.messages.create(
-                model="claude-sonnet-4-20250514",
-                max_tokens=4096,
-                system=[
-                    {
-                        "type": "text",
-                        "text": "You are an expert Next.js/React developer specializing in UK accounting websites. Generate production-ready TSX code.",
-                        "cache_control": {"type": "ephemeral"}
-                    }
-                ],
-                messages=[{"role": "user", "content": prompt}]
-            )
-            
-            tsx_code = message.content[0].text.strip()
+            if self.use_deepseek:
+                tsx_code = self.client.generate_creative(
+                    prompt=prompt,
+                    system="You are an expert Next.js/React developer specializing in UK accounting websites. Generate production-ready TSX code. Return ONLY the TSX file with no markdown markers.",
+                    temperature=0.7,
+                    max_tokens=6000
+                )
+            else:
+                message = self.anthropic.messages.create(
+                    model="claude-sonnet-4-20250514",
+                    max_tokens=4096,
+                    system=[
+                        {
+                            "type": "text",
+                            "text": "You are an expert Next.js/React developer specializing in UK accounting websites. Generate production-ready TSX code.",
+                            "cache_control": {"type": "ephemeral"}
+                        }
+                    ],
+                    messages=[{"role": "user", "content": prompt}]
+                )
+                tsx_code = message.content[0].text.strip()
             
             # Clean code markers
             if tsx_code.startswith("```tsx"):
@@ -289,15 +352,19 @@ Return ONLY the complete TSX file (no markdown, no explanation):"""
             with open(dentists_about_path, "r", encoding="utf-8") as f:
                 reference_about = f.read()
         
-        prompt = f"""Generate a complete Next.js about page (about/page.tsx) for {config['display_name']}.
+        prompt = f"""Act as: Expert Next.js developer specializing in UK accounting websites
+Goal: Generate production-ready about page with niche-specific content
+Context: Building for {config['display_name']}, concise page explaining mission and approach
 
 NICHE CONFIG:
 {json.dumps(config, indent=2)}
 
-REFERENCE ABOUT PAGE (Dentists - for structure/style):
+REFERENCE PAGE (match this structure exactly):
 {reference_about}
 
-REQUIREMENTS:
+Deliverable: Complete TSX file with imports, metadata, components
+
+Rules (CRITICAL - follow precisely):
 
 1. **Metadata**:
    - title: "About us"
@@ -324,29 +391,49 @@ REQUIREMENTS:
    - Link to /contact
 
 STYLE:
-- Match Dentists about page structure
-- UK English, professional tone
-- Keep it concise (shorter than services page)
+- Match reference page structure exactly
+- UK English spelling (specialise, optimise, organisation)
+- Professional tone, concise
 - Use contentNarrow, sectionY utilities
 - Include Breadcrumb and CTASection components
 
-Return ONLY the complete TSX file (no markdown, no explanation):"""
+Output Format (CRITICAL):
+- Return ONLY the complete TSX file
+- No markdown markers (no ```)
+- No explanation or commentary
+- Valid TypeScript syntax
+- All imports correct
+- No placeholder values
+
+Verify before responding:
+1. Are all imports valid?
+2. Is TypeScript syntax correct?
+3. Does it match reference structure?
+4. Is UK English used throughout?
+5. Is content concise and professional?"""
         
         try:
-            message = self.anthropic.messages.create(
-                model="claude-sonnet-4-20250514",
-                max_tokens=3000,
-                system=[
-                    {
-                        "type": "text",
-                        "text": "You are an expert Next.js/React developer specializing in UK accounting websites. Generate production-ready TSX code.",
-                        "cache_control": {"type": "ephemeral"}
-                    }
-                ],
-                messages=[{"role": "user", "content": prompt}]
-            )
-            
-            tsx_code = message.content[0].text.strip()
+            if self.use_deepseek:
+                tsx_code = self.client.generate_creative(
+                    prompt=prompt,
+                    system="You are an expert Next.js/React developer specializing in UK accounting websites. Generate production-ready TSX code. Return ONLY the TSX file with no markdown markers.",
+                    temperature=0.7,
+                    max_tokens=4096
+                )
+            else:
+                message = self.anthropic.messages.create(
+                    model="claude-sonnet-4-20250514",
+                    max_tokens=3000,
+                    system=[
+                        {
+                            "type": "text",
+                            "text": "You are an expert Next.js/React developer specializing in UK accounting websites. Generate production-ready TSX code.",
+                            "cache_control": {"type": "ephemeral"}
+                        }
+                    ],
+                    messages=[{"role": "user", "content": prompt}]
+                )
+                tsx_code = message.content[0].text.strip()
             
             # Clean code markers
             if tsx_code.startswith("```tsx"):

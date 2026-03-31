@@ -1,18 +1,33 @@
 """
 Keyword Research Automation - ONE-TIME research per niche using free sources + AI.
 Uses Google Autocomplete, related searches, and competitor analysis.
+Now powered by DeepSeek for 15x cost reduction.
 """
 import json
 import re
 import asyncio
 from typing import List, Dict, Optional
-from anthropic import Anthropic
+from agents.utils.deepseek_client import DeepSeekClient
 import httpx
 
 
 class KeywordResearcher:
-    def __init__(self, anthropic_api_key: str):
-        self.anthropic = Anthropic(api_key=anthropic_api_key)
+    def __init__(self, api_key: str, use_deepseek: bool = True):
+        """
+        Initialize keyword researcher.
+        
+        Args:
+            api_key: DeepSeek or Anthropic API key
+            use_deepseek: If True, use DeepSeek (default). If False, use Anthropic.
+        """
+        self.use_deepseek = use_deepseek
+        
+        if use_deepseek:
+            self.client = DeepSeekClient(api_key)
+        else:
+            from anthropic import Anthropic
+            self.anthropic = Anthropic(api_key=api_key)
+        
         self.http_client = httpx.AsyncClient(timeout=30.0)
     
     async def research_keywords(self, target_keyword: str, niche_type: str) -> List[Dict]:
@@ -283,7 +298,9 @@ class KeywordResearcher:
         """
         
         # Process in batches if needed
-        batch_size = 150
+        # DeepSeek: Use smaller batches (50) due to 8K token limit
+        # Claude: Can handle larger batches (150)
+        batch_size = 50 if self.use_deepseek else 150
         all_analyzed = []
         
         for i in range(0, len(keywords), batch_size):
@@ -298,59 +315,80 @@ class KeywordResearcher:
     
     async def _analyze_batch(self, keywords: List[str], niche_type: str, 
                             target_keyword: str) -> List[Dict]:
-        """Analyze a single batch of keywords."""
+        """Analyze a single batch of keywords using DeepSeek-optimized prompt."""
         
-        prompt = f"""Analyze these {len(keywords)} keywords for a {niche_type} accounting niche in the UK.
-
-TARGET KEYWORD: {target_keyword}
-NICHE TYPE: {niche_type}
+        prompt = f"""Act as: UK SEO specialist for accounting niches with 10+ years experience
+Goal: Score and categorize {len(keywords)} keywords for search intent, volume, and ranking difficulty
+Context: Target keyword is "{target_keyword}", niche is "{niche_type} accounting", market is UK
 
 KEYWORDS TO ANALYZE:
 {json.dumps(keywords)}
 
-For each keyword, provide:
-1. search_volume: Estimate as integer (high=1000+, medium=500-1000, low=100-500, very_low=<100)
-2. competition: "high", "medium", or "low"
-3. difficulty: Score 1-100 (higher = harder to rank)
-   - Consider: keyword length, commercial intent, competition level
+Deliverable: JSON array with EXACT schema below
+
+Rules (CRITICAL - follow precisely):
+1. search_volume: Integer estimate
+   - Long-tail (4+ words) = 50-200
+   - Medium-tail (2-3 words) = 200-800
+   - Short-tail (1-2 words) = 800-2000
+   - Location keywords = -30% volume
+   - Question keywords = -40% volume
+
+2. competition: "low", "medium", or "high"
+   - Location keywords = "low" or "medium"
+   - Question keywords = "low"
+   - Generic keywords = "medium" or "high"
+
+3. difficulty: Integer 1-100
    - Long-tail (4+ words) = 20-35
    - Medium-tail (2-3 words) = 35-50
-   - Short-tail (1 word) = 50-70
-   - Branded/commercial = +10-15
-4. intent: "informational", "transactional", or "navigational"
-5. category: Group into 5-7 logical categories for {niche_type} accounting
-   - Examples for medical: "NHS Pension", "Private Practice Tax", "Locum Tax", "Medical Incorporation", "Expenses"
-6. notes: Brief note on why this keyword matters (optional)
+   - Short-tail (1-2 words) = 50-70
+   - Location modifier = -10 points
+   - Question format = -5 points
+   - "Best", "affordable" = -5 points
 
-SCORING GUIDELINES:
-- Prioritize keywords with medium difficulty (35-45) and medium-high volume
-- Long-tail keywords (4+ words) should have lower difficulty
-- Transactional intent keywords are more valuable
-- Keywords with location modifiers (UK, London) are easier to rank
+4. intent: MUST be "informational", "transactional", or "navigational"
+   - "how", "what", "why" = informational
+   - "accountant", "services", "cost" = transactional
+   - "login", "portal" = navigational
 
-CRITICAL: Return ONLY valid JSON array. No markdown, no explanation, no extra text.
-Start with [ and end with ]. Ensure all strings are properly escaped.
+5. category: Group into 5-7 logical categories
+   - For medical: "GP Tax", "NHS Pension", "Locum Tax", "Private Practice", "Medical Expenses", "Location-Based"
+   - For property: "Landlord Tax", "Section 24", "Incorporation", "MTD", "Location-Based"
+   - Use "Location-Based" for all city-specific keywords
 
+6. notes: One sentence (max 10 words) explaining value
+
+EXAMPLE OUTPUT:
 [
-  {{
-    "keyword": "gp accountant",
-    "search_volume": 1800,
-    "competition": "medium",
-    "difficulty": 38,
-    "intent": "transactional",
-    "category": "GP Tax",
-    "notes": "Core high-volume query"
-  }}
-]"""
+  {{"keyword": "gp accountant manchester", "search_volume": 180, "competition": "low", "difficulty": 28, "intent": "transactional", "category": "Location-Based", "notes": "Manchester local market opportunity"}},
+  {{"keyword": "how much does gp accountant cost", "search_volume": 120, "competition": "low", "difficulty": 22, "intent": "informational", "category": "Pricing", "notes": "Cost research query"}}
+]
+
+Output Format (CRITICAL):
+- Return ONLY valid JSON array
+- Start with [ and end with ]
+- No markdown, no explanation, no extra text
+- Escape all quotes in strings
+- Include ALL {len(keywords)} keywords
+
+Verify before responding: Is JSON valid? Are all keywords included?"""
         
         try:
-            message = self.anthropic.messages.create(
-                model="claude-sonnet-4-20250514",
-                max_tokens=16000,  # Increased for larger responses
-                messages=[{"role": "user", "content": prompt}]
-            )
-            
-            response_text = message.content[0].text.strip()
+            if self.use_deepseek:
+                response_text = self.client.generate_structured(
+                    prompt=prompt,
+                    system="You are a UK SEO specialist for accounting niches. Analyze keywords and return ONLY valid JSON arrays.",
+                    temperature=0.2,
+                    max_tokens=8000
+                )
+            else:
+                message = self.anthropic.messages.create(
+                    model="claude-sonnet-4-20250514",
+                    max_tokens=16000,
+                    messages=[{"role": "user", "content": prompt}]
+                )
+                response_text = message.content[0].text.strip()
             
             # Clean JSON markers
             if response_text.startswith("```json"):

@@ -1,53 +1,120 @@
 keyword,search_volume,competition,difficulty,intent,category,notes
-gp accountant,1800,medium,42,transactional,GP Accounting Services,Core high-volume query
-medical accountant uk,1200,medium,38,transactional,Medical Accounting Services,Strong UK-focused keyword
-gp accountant near me,950,low,32,transactional,Local GP Services,Local search with buying intent
-gp tax return,850,medium,35,transactional,GP Tax,Specific service need
-gp self assessment,750,medium,36,transactional,GP Tax,High-value tax service
-gp accountant london,650,medium,34,transactional,Local GP Services,Location-specific opportunity
-medical accountant near me,580,low,30,transactional,Local Medical Services,Local medical accounting search
-gp accounting,520,medium,40,informational,GP Accounting Services,General service category
-gp accountant cost,480,low,28,transactional,GP Accounting Services,Price comparison intent
-gp accountant services,420,medium,33,transactional,GP Accounting Services,Service discovery query
-gp tax planning,380,medium,37,transactional,GP Tax,Strategic tax service
-gp accounting services,350,medium,35,transactional,GP Accounting Services,Comprehensive service search
-best gp accountant,320,low,29,transactional,GP Accounting Services,Quality-focused search
-gp accountant uk,280,medium,36,transactional,GP Accounting Services,UK-specific GP accounting
-specialist gp accountant,260,low,27,transactional,GP Accounting Services,Specialization emphasis
-gp vat registration,240,medium,34,transactional,GP Tax,VAT compliance service
-medical accountant london,220,medium,33,transactional,Local Medical Services,London medical accounting
-gp corporation tax,200,medium,38,transactional,GP Tax,Corporate structure tax
-affordable gp accountant,180,low,25,transactional,GP Accounting Services,Budget-conscious search
-local gp accountant,160,low,26,transactional,Local GP Services,Local service preference
-gp accountant help,150,low,24,transactional,GP Accounting Services,Help-seeking query
-gp tax advice,140,medium,32,transactional,GP Tax,Advisory service need
-experienced gp accountant,130,low,23,transactional,GP Accounting Services,Experience-focused search
-gp accountant fees,120,low,25,transactional,GP Accounting Services,Fee structure inquiry
-gp financial planning,110,medium,36,transactional,GP Financial Planning,Wealth management service
-gp accountant advice,95,low,22,transactional,GP Accounting Services,Advisory consultation
-gp accounting software,90,medium,39,informational,GP Practice Management,Software solution search
-gp bookkeeping,85,low,31,transactional,GP Bookkeeping,Basic accounting service
-gp payroll services,80,medium,35,transactional,GP Practice Management,Staff payroll management
-gp accounting system,75,medium,37,informational,GP Practice Management,System implementation
-gp accounting meaning,70,low,18,informational,GP Accounting Services,Educational query
-what is gp in accounting,65,low,16,informational,GP Accounting Services,Definition search
-gp accounting & tax services,60,low,20,transactional,GP Accounting Services,Combined service offering
-gp audit examples,55,low,22,informational,GP Practice Management,Audit guidance search
-gp accountant jobs,50,medium,34,navigational,GP Accounting Services,Employment search
-gp accountant access,45,low,21,transactional,GP Accounting Services,Service accessibility
-medical accountant jobs near me,40,low,19,navigational,Local Medical Services,Employment opportunity
-accountant payroll services,35,high,55,transactional,General Accounting,Broad payroll service
-accountant vat registration,30,high,52,transactional,General Accounting,General VAT service
-accountant self assessment,25,high,58,transactional,General Accounting,Broad tax service
-accountant tax advice,20,high,56,transactional,General Accounting,General tax advisory
-accountant bookkeeping,18,high,54,transactional,General Accounting,General bookkeeping
-accountant accounting services,15,high,59,transactional,General Accounting,Broad accounting services
-accountant corporation tax,12,high,57,transactional,General Accounting,General corporation tax
-accountant tax return,10,high,53,transactional,General Accounting,General tax returns
-accountant tax planning,8,high,55,transactional,General Accounting,General tax planning
-accountant financial planning,6,high,58,transactional,General Accounting,General financial planning
-find the gp near me,5,low,15,navigational,Local GP Services,Medical practice search
-gp boyle accountants newry,3,low,12,navigational,Local GP Services,Specific firm search
-gp accountants adviseurs,2,low,10,navigational,GP Accounting Services,Foreign language variant
-gp accountants schagen,1,low,8,navigational,Local GP Services,Specific location firm
-what qualifications do i need to become an accountant in the uk,95,low,24,informational,General Accounting,Career guidance query
+gp tax advice,560,medium,40,transactional,GP Tax,Core tax service for GPs
+gp accounting software,560,medium,40,transactional,Medical Expenses,Software solution for practice management
+accountant corporation tax,560,high,50,transactional,GP Tax,General corporate tax service
+gp payroll services,560,medium,40,transactional,Medical Expenses,Payroll for practice staff
+gp tax accountant bristol,392,low,30,transactional,Location-Based,Local Bristol tax specialist
+accountant tax planning,560,high,50,transactional,GP Tax,Advanced tax strategy service
+nottingham gp accountant,392,low,30,transactional,Location-Based,Local Nottingham market opportunity
+gp tax accountant birmingham,392,low,30,transactional,Location-Based,Local Birmingham tax specialist
+gp accountant cost,560,medium,40,transactional,Pricing,Direct pricing query
+how to choose a gp accountant,120,low,30,informational,Informational,Educational research query
+medical accountant nottingham,392,low,30,transactional,Location-Based,Local Nottingham medical specialist
+medical accountant cardiff,392,low,30,transactional,Location-Based,Local Cardiff medical specialist
+gp accountant edinburgh,392,low,30,transactional,Location-Based,Local Edinburgh market opportunity
+accountant tax advice,560,high,50,transactional,GP Tax,General tax advisory service
+gp accountant bristol,392,low,30,transactional,Location-Based,Local Bristol market opportunity
+gp accountant sheffield,392,low,30,transactional,Location-Based,Local Sheffield market opportunity
+newcastle gp accountant,392,low,30,transactional,Location-Based,Local Newcastle market opportunity
+what does a gp accountant do,120,low,30,informational,Informational,Explains service scope
+how to register with a gp in cardiff,72,low,25,informational,Informational,"Patient registration query, low relevance"
+gp corporation tax,560,medium,40,transactional,GP Tax,Specific corporate tax for GPs
+average accountant salary manchester,120,low,30,informational,Informational,"Job market query, low relevance"
+gp accounting,1400,high,60,transactional,Medical Expenses,Broad accounting service term
+best gp accountant manchester,392,low,25,transactional,Location-Based,Manchester local recommendation query
+gp accountants adviseurs,50,low,20,navigational,Informational,"Likely brand name, low volume"
+gp accountant manchester,392,low,30,transactional,Location-Based,Manchester local market opportunity
+medical accountant manchester,392,low,30,transactional,Location-Based,Local Manchester medical specialist
+affordable gp accountant,560,medium,35,transactional,Pricing,Budget-conscious client query
+gp accountant,1400,high,60,transactional,Core Service,Primary target keyword
+gp accountant leeds,392,low,30,transactional,Location-Based,Local Leeds market opportunity
+bristol gp accountant,392,low,30,transactional,Location-Based,Local Bristol market opportunity
+gp tax accountant leeds,392,low,30,transactional,Location-Based,Local Leeds tax specialist
+gp financial planning,560,medium,40,transactional,Medical Expenses,Broader financial advisory service
+how much is a gp accountant,120,low,30,informational,Pricing,Cost research query
+gp accountants schagen,50,low,20,navigational,Informational,"Likely brand name, low volume"
+why use a gp accountant,120,low,30,informational,Informational,Persuasive educational query
+gp accountant services,560,medium,40,transactional,Core Service,Service listing query
+leeds gp accountant,392,low,30,transactional,Location-Based,Local Leeds market opportunity
+coventry gp accountant,392,low,30,transactional,Location-Based,Local Coventry market opportunity
+how to register with a gp in manchester,72,low,25,informational,Informational,"Patient registration query, low relevance"
+medical accountant leeds,392,low,30,transactional,Location-Based,Local Leeds medical specialist
+gp accountant access,560,medium,40,transactional,Core Service,Service availability query
+specialist gp accountant,560,medium,40,transactional,Core Service,High-intent specialist query
+accountant bookkeeping,560,high,50,transactional,Medical Expenses,General bookkeeping service
+local gp accountant,560,medium,40,transactional,Location-Based,Geographic service query
+gp accountant nottingham,392,low,30,transactional,Location-Based,Local Nottingham market opportunity
+sheffield gp accountant,392,low,30,transactional,Location-Based,Local Sheffield market opportunity
+how much does a gp accountant cost,120,low,30,informational,Pricing,Detailed cost research query
+gp accounting system,560,medium,40,transactional,Medical Expenses,Software or process query
+gp tax return,560,medium,40,transactional,GP Tax,Core tax filing service
+gp accountant coventry,392,low,30,transactional,Location-Based,Local Coventry market opportunity
+gp accountant,1500,medium,40,transactional,General,Primary target keyword
+gp accountant birmingham,140,low,25,transactional,Location-Based,Birmingham local market opportunity
+what qualifications do i need to become an accountant in the uk,120,low,30,informational,General Accounting,"Career advice query, low commercial intent"
+gp accountant help,280,medium,40,transactional,GP Tax,Direct service-seeking intent
+manchester gp accountant,140,low,25,transactional,Location-Based,Manchester local market opportunity
+accountant self assessment,560,high,50,transactional,General Accounting,"High volume, generic tax service need"
+how to register with a gp in sheffield,120,low,30,informational,General Medical,"Medical admin query, off-topic"
+medical accountant glasgow,140,low,25,transactional,Location-Based,Glasgow medical accounting niche
+gp accountant jobs,200,medium,40,informational,General Accounting,"Job search, not client acquisition"
+accountant accounting services,560,high,50,transactional,General Accounting,"Very generic, high competition"
+birmingham gp accountant,140,low,25,transactional,Location-Based,Birmingham local market opportunity
+how to register with a gp in liverpool,120,low,30,informational,General Medical,"Medical admin query, off-topic"
+what is gp in accounting,120,low,30,informational,GP Tax,Definitional query for GP accounting
+medical accountant jobs near me,120,low,30,informational,General Accounting,"Job search, not client acquisition"
+gp accountant glasgow,140,low,25,transactional,Location-Based,Glasgow local market opportunity
+gp accountant uk,280,medium,40,transactional,GP Tax,National GP accounting service search
+gp tax planning,200,medium,40,transactional,GP Tax,"Specific, high-value service intent"
+experienced gp accountant,200,medium,35,transactional,GP Tax,Qualifier indicates serious buyer
+best gp accountant london,140,medium,30,transactional,Location-Based,London market with 'best' qualifier
+when to hire a gp accountant,120,low,30,informational,GP Tax,Early-stage research for hiring
+gp accounting services,280,medium,40,transactional,GP Tax,Direct service-seeking intent
+gp self assessment,280,medium,40,transactional,GP Tax,Specific tax service for GPs
+gp accountant newcastle,140,low,25,transactional,Location-Based,Newcastle local market opportunity
+gp boyle accountants newry,50,low,20,navigational,Location-Based,"Branded, specific firm search"
+medical accountant london,140,low,25,transactional,Location-Based,London medical accounting niche
+how to register with a gp in bristol,120,low,30,informational,General Medical,"Medical admin query, off-topic"
+glasgow gp near me,120,low,30,informational,General Medical,"Medical practice search, off-topic"
+bradford gp accountant,140,low,25,transactional,Location-Based,Bradford local market opportunity
+how to find a gp accountant,120,low,30,informational,GP Tax,Research query for finding services
+gp tax accountant london,140,medium,30,transactional,Location-Based,London-specific GP tax specialist
+gp accountant fees,200,medium,40,transactional,GP Tax,Price-sensitive service research
+do i need a gp accountant,120,low,30,informational,GP Tax,Early-stage need assessment
+glasgow gp jobs,120,low,30,informational,General Medical,"Medical job search, off-topic"
+medical accountant near me,200,medium,40,transactional,Medical Expenses,Local medical accountant search
+gp accounting meaning,120,low,30,informational,GP Tax,Definitional query for GP accounting
+accountant tax return,560,high,50,transactional,General Accounting,"High volume, generic tax service"
+gp audit examples,120,low,30,informational,GP Tax,Specific informational query on audits
+gp accounting & tax services,200,medium,40,transactional,GP Tax,Full-service offering intent
+medical accountant uk,280,medium,40,transactional,Medical Expenses,National medical accounting service search
+leicester gp accountant,140,low,25,transactional,Location-Based,Leicester local market opportunity
+find the gp near me,120,low,30,informational,General Medical,"Medical practice search, off-topic"
+gp accountant leicester,140,low,25,transactional,Location-Based,Leicester local market opportunity
+how to register with a gp glasgow,120,low,30,informational,General Medical,"Medical admin query, off-topic"
+best gp accountant,280,medium,35,transactional,GP Tax,Qualifier indicates comparison shopping
+london gp accountant,140,medium,30,transactional,Location-Based,London local market opportunity
+medical accountant newcastle,140,low,25,transactional,Location-Based,Newcastle medical accounting niche
+gp tax accountant manchester,140,low,25,transactional,Location-Based,Manchester-specific GP tax specialist
+gp accountant liverpool,140,low,25,transactional,Location-Based,Liverpool local market opportunity
+glasgow gp accountant,140,low,25,transactional,Location-Based,Glasgow local market opportunity
+gp accountant advice,200,medium,40,transactional,GP Tax,Seeking expert guidance
+medical accountant bristol,140,low,25,transactional,Location-Based,Bristol medical accounting niche
+gp accountant,1500,medium,40,transactional,General,Primary target keyword
+what is the best gp accountant,120,low,25,informational,GP Tax,High-intent informational query
+can an accountant become a doctor,120,low,20,informational,Informational,Off-topic informational query
+edinburgh gp accountant,140,low,25,transactional,Location-Based,Edinburgh local market opportunity
+medical accountant sheffield,140,low,25,transactional,Location-Based,Sheffield local market opportunity
+accountant financial planning,560,medium,40,transactional,Financial Planning,Broad financial services query
+gp accountant cardiff,140,low,25,transactional,Location-Based,Cardiff local market opportunity
+gp accountant london,140,medium,25,transactional,Location-Based,Competitive London market opportunity
+cardiff gp accountant,140,low,25,transactional,Location-Based,Cardiff local market opportunity
+medical accountant liverpool,140,low,25,transactional,Location-Based,Liverpool local market opportunity
+accountant payroll services,560,medium,40,transactional,Payroll Services,Broad payroll services query
+gp accountant near me,140,low,25,transactional,Location-Based,High-intent local search query
+accountant vat registration,560,medium,40,transactional,VAT Services,Specific VAT service query
+gp accountant bradford,140,low,25,transactional,Location-Based,Bradford local market opportunity
+gp bookkeeping,560,medium,40,transactional,GP Tax,Specific GP bookkeeping service query
+best gp accountant birmingham,140,low,20,transactional,Location-Based,High-intent Birmingham local query
+liverpool gp accountant,140,low,25,transactional,Location-Based,Liverpool local market opportunity
+gp vat registration,560,medium,40,transactional,VAT Services,Specific GP VAT service query

@@ -466,6 +466,103 @@ class FinalVerifier:
         return VerificationResult(passed, errors, warnings)
 
 
+class QualityVerifier:
+    """Gate 9: Verify SEO and content quality."""
+    
+    def verify(self, config: Dict, pages: Dict[str, str], keywords: List[Dict]) -> VerificationResult:
+        """
+        Verify SEO optimization and content quality.
+        
+        Checks:
+        - Target keyword in homepage title
+        - SEO field lengths optimal
+        - Homepage description has CTA
+        - UK English spelling
+        - Professional tone (no hype words)
+        - Keyword density in pages
+        """
+        
+        errors = []
+        warnings = []
+        
+        target_keyword = config.get("target_keyword", "").lower()
+        seo = config.get("seo", {})
+        
+        # Check 1: Target keyword in title
+        homepage_title = seo.get("homepage_title", "")
+        if target_keyword and target_keyword not in homepage_title.lower():
+            errors.append(f"Target keyword '{target_keyword}' not in homepage_title")
+        
+        # Check 2: Title length optimal (50-60)
+        title_len = len(homepage_title)
+        if title_len < 50:
+            warnings.append(f"homepage_title short ({title_len} chars, optimal 50-60)")
+        elif title_len > 60:
+            errors.append(f"homepage_title too long ({title_len} chars, max 60)")
+        
+        # Check 3: Description has CTA
+        description = seo.get("homepage_description", "")
+        cta_words = ["book", "call", "consultation", "contact", "free", "get", "speak"]
+        has_cta = any(word in description.lower() for word in cta_words)
+        
+        if not has_cta:
+            warnings.append("homepage_description missing clear CTA")
+        
+        # Check 4: Description length optimal (150-160)
+        desc_len = len(description)
+        if desc_len < 150:
+            warnings.append(f"homepage_description short ({desc_len} chars, optimal 150-160)")
+        elif desc_len > 160:
+            errors.append(f"homepage_description too long ({desc_len} chars, max 160)")
+        
+        # Check 5: UK English spelling in config
+        uk_checks = [
+            ("specialise", "specialize"),
+            ("optimise", "optimize"),
+            ("organisation", "organization"),
+        ]
+        
+        config_text = json.dumps(config).lower()
+        for uk_spelling, us_spelling in uk_checks:
+            if us_spelling in config_text and uk_spelling not in config_text:
+                warnings.append(f"Found US spelling '{us_spelling}' (should be '{uk_spelling}')")
+        
+        # Check 6: No hype words
+        hype_words = ["amazing", "incredible", "revolutionary", "game-changing", "best ever"]
+        for hype_word in hype_words:
+            if hype_word in config_text:
+                warnings.append(f"Config contains hype word '{hype_word}' (avoid)")
+        
+        # Check 7: Keyword density in homepage
+        if "homepage" in pages:
+            homepage_path = pages["homepage"]
+            if os.path.exists(homepage_path):
+                with open(homepage_path, "r", encoding="utf-8") as f:
+                    homepage_content = f.read().lower()
+                
+                # Count target keyword occurrences
+                keyword_count = homepage_content.count(target_keyword)
+                
+                if keyword_count < 3:
+                    warnings.append(f"Target keyword '{target_keyword}' appears only {keyword_count} times in homepage (recommend 3-8)")
+                elif keyword_count > 15:
+                    warnings.append(f"Target keyword '{target_keyword}' appears {keyword_count} times in homepage (may be over-optimized)")
+        
+        # Check 8: H1 matches config
+        homepage_h1 = seo.get("homepage_h1", "")
+        if "homepage" in pages:
+            homepage_path = pages["homepage"]
+            if os.path.exists(homepage_path):
+                with open(homepage_path, "r", encoding="utf-8") as f:
+                    homepage_content = f.read()
+                
+                if homepage_h1 and homepage_h1 not in homepage_content:
+                    errors.append(f"homepage_h1 from config not found in homepage TSX")
+        
+        passed = len(errors) == 0
+        return VerificationResult(passed, errors, warnings)
+
+
 class VerificationPipeline:
     """Run all verification gates in sequence."""
     
@@ -475,6 +572,7 @@ class VerificationPipeline:
             "config": ConfigVerifier(),
             "topics": TopicTreeVerifier(),
             "pages": PageVerifier(),
+            "quality": QualityVerifier(),
             "build": BuildVerifier(),
             "database": DatabaseVerifier(),
             "integration": IntegrationVerifier(),
@@ -526,26 +624,35 @@ class VerificationPipeline:
         print(results["topics"])
         
         # Gate 4: Pages
-        print("\n[Gate 4/8] Verifying pages...")
+        print("\n[Gate 4/9] Verifying pages...")
         results["pages"] = self.verifiers["pages"].verify(
             context["pages"]
         )
         print(results["pages"])
         
-        # Gate 5: Build (optional - slow)
+        # Gate 5: Quality (NEW)
+        print("\n[Gate 5/9] Verifying SEO and content quality...")
+        results["quality"] = self.verifiers["quality"].verify(
+            context["config"],
+            context["pages"],
+            context["keywords"]
+        )
+        print(results["quality"])
+        
+        # Gate 6: Build (optional - slow)
         if context.get("verify_build", False):
-            print("\n[Gate 5/8] Verifying build...")
+            print("\n[Gate 6/9] Verifying build...")
             results["build"] = self.verifiers["build"].verify(
                 context["niche_dir"]
             )
             print(results["build"])
         else:
-            print("\n[Gate 5/8] Skipping build verification (set verify_build=True to enable)")
+            print("\n[Gate 6/9] Skipping build verification (set verify_build=True to enable)")
             results["build"] = VerificationResult(True, warnings=["Build verification skipped"])
         
-        # Gate 6: Database (optional - requires credentials)
+        # Gate 7: Database (optional - requires credentials)
         if context.get("supabase_url") and context.get("supabase_key"):
-            print("\n[Gate 6/8] Verifying database...")
+            print("\n[Gate 7/9] Verifying database...")
             results["database"] = self.verifiers["database"].verify(
                 context["niche_id"],
                 context["supabase_url"],
@@ -553,19 +660,19 @@ class VerificationPipeline:
             )
             print(results["database"])
         else:
-            print("\n[Gate 6/8] Skipping database verification (credentials not provided)")
+            print("\n[Gate 7/9] Skipping database verification (credentials not provided)")
             results["database"] = VerificationResult(True, warnings=["Database verification skipped"])
         
-        # Gate 7: Integration
-        print("\n[Gate 7/8] Verifying integration...")
+        # Gate 8: Integration
+        print("\n[Gate 8/9] Verifying integration...")
         results["integration"] = self.verifiers["integration"].verify(
             context["niche_id"],
             context["config"]
         )
         print(results["integration"])
         
-        # Gate 8: Final
-        print("\n[Gate 8/8] Final verification...")
+        # Gate 9: Final
+        print("\n[Gate 9/9] Final verification...")
         results["final"] = self.verifiers["final"].verify(
             context["niche_id"]
         )
@@ -579,9 +686,9 @@ class VerificationPipeline:
         print(f"Passed: {passed}/{total}")
         
         if passed == total:
-            print("✓ ALL GATES PASSED")
+            print("[OK] ALL GATES PASSED")
         else:
             failed = [name for name, result in results.items() if not result.passed]
-            print(f"✗ FAILED GATES: {', '.join(failed)}")
+            print(f"[FAILED] FAILED GATES: {', '.join(failed)}")
         
         return results

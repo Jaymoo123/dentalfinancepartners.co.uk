@@ -1,16 +1,29 @@
 """
 Niche Config Generator - AI-powered niche.config.json generation.
-Uses Claude to generate complete config from minimal input + keyword research.
+Now powered by DeepSeek for 15x cost reduction.
 """
 import json
 import os
 from typing import Dict, List, Optional
-from anthropic import Anthropic
+from agents.utils.deepseek_client import DeepSeekClient
 
 
 class ConfigGenerator:
-    def __init__(self, anthropic_api_key: str):
-        self.anthropic = Anthropic(api_key=anthropic_api_key)
+    def __init__(self, api_key: str, use_deepseek: bool = True):
+        """
+        Initialize config generator.
+        
+        Args:
+            api_key: DeepSeek or Anthropic API key
+            use_deepseek: If True, use DeepSeek (default). If False, use Anthropic.
+        """
+        self.use_deepseek = use_deepseek
+        
+        if use_deepseek:
+            self.client = DeepSeekClient(api_key)
+        else:
+            from anthropic import Anthropic
+            self.anthropic = Anthropic(api_key=api_key)
     
     def generate_config(self, 
                        niche_id: str,
@@ -84,26 +97,30 @@ class ConfigGenerator:
             with open(property_config_path, "r", encoding="utf-8") as f:
                 reference_configs += f"\n\nPROPERTY CONFIG:\n{f.read()}"
         
-        prompt = f"""Generate a complete niche.config.json for a new accounting niche website.
+        prompt = f"""Act as: UK accounting website strategist and conversion copywriter with SEO expertise
+Goal: Generate complete niche.config.json with SEO-optimized homepage metadata
+Context: Creating config for {niche_id} niche, target keyword "{target_keyword}", {len(keywords)} keywords researched
 
 NICHE DETAILS:
 - niche_id: {niche_id}
 - display_name: {display_name}
 - target_keyword: {target_keyword}
 
-TOP KEYWORDS (for SEO strategy):
+TOP KEYWORDS:
 {json.dumps(keywords[:10], indent=2)}
 
-CONTENT CATEGORIES:
+CATEGORIES:
 {json.dumps(categories, indent=2)}
 
-TEMPLATE (if provided):
-{json.dumps(template, indent=2) if template else "None - generate from scratch"}
+TEMPLATE:
+{json.dumps(template, indent=2) if template else "None"}
 
-REFERENCE CONFIGS (for structure/style):
+REFERENCE CONFIGS:
 {reference_configs}
 
-REQUIREMENTS:
+Deliverable: Valid JSON config object
+
+Rules (CRITICAL - follow precisely):
 
 1. **Homepage SEO** (CRITICAL):
    - homepage_title: SEO-optimized title tag (55-60 chars, include target keyword + location)
@@ -163,35 +180,50 @@ REQUIREMENTS:
     - last_sync: Current ISO timestamp
 
 STYLE GUIDELINES:
-- Professional, trustworthy tone
-- UK English spelling
-- Avoid jargon, use clear language
-- Focus on benefits, not features
-- Include specific niche terminology from keywords
-- Make it distinct from Dentists and Property niches
+- Professional, trustworthy tone (avoid hype words like "amazing", "incredible")
+- UK English spelling (specialise, optimise, organisation, colour)
+- Clear language, no jargon
+- Benefits-focused, specific claims
+- Use niche terminology from keywords
+- Distinct from Dentists (blue #2563eb) and Property (green #047857)
 
-Return ONLY valid JSON (no markdown, no other text):
-{{
-  "niche_id": "...",
-  "display_name": "...",
-  ...
-}}"""
+Output Format (CRITICAL):
+- Return ONLY valid JSON object
+- No markdown markers (no ```)
+- No explanation or commentary
+- Start with {{ and end with }}
+- All strings properly escaped
+- Include ALL required fields from requirements above
+
+Verify before responding:
+1. Is JSON valid and parseable?
+2. Are homepage_title, homepage_h1, homepage_description present in seo object?
+3. Are SEO field lengths correct (title 50-60, description 150-160)?
+4. Is UK English used throughout?
+5. Are all required top-level fields present?"""
         
         try:
-            message = self.anthropic.messages.create(
-                model="claude-sonnet-4-20250514",
-                max_tokens=4096,
-                system=[
-                    {
-                        "type": "text",
-                        "text": "You are a specialist in UK accounting niche marketing and SEO. Generate professional, conversion-optimized website configurations.",
-                        "cache_control": {"type": "ephemeral"}
-                    }
-                ],
-                messages=[{"role": "user", "content": prompt}]
-            )
-            
-            response_text = message.content[0].text.strip()
+            if self.use_deepseek:
+                response_text = self.client.generate_structured(
+                    prompt=prompt,
+                    system="You are a UK accounting website strategist and SEO specialist. Generate professional, conversion-optimized website configurations. Return ONLY valid JSON.",
+                    temperature=0.3,
+                    max_tokens=8000
+                )
+            else:
+                message = self.anthropic.messages.create(
+                    model="claude-sonnet-4-20250514",
+                    max_tokens=4096,
+                    system=[
+                        {
+                            "type": "text",
+                            "text": "You are a specialist in UK accounting niche marketing and SEO. Generate professional, conversion-optimized website configurations.",
+                            "cache_control": {"type": "ephemeral"}
+                        }
+                    ],
+                    messages=[{"role": "user", "content": prompt}]
+                )
+                response_text = message.content[0].text.strip()
             
             # Clean JSON markers
             if response_text.startswith("```json"):

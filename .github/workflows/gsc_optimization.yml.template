@@ -1,0 +1,119 @@
+# GSC Smart Content Optimization - Daily Automation
+# 
+# This workflow runs the GSC optimization cycle daily for all enabled sites.
+# 
+# To enable:
+# 1. Rename this file to gsc_optimization.yml (remove .template)
+# 2. Add secrets to GitHub repository settings:
+#    - SUPABASE_URL
+#    - SUPABASE_KEY
+#    - ANTHROPIC_API_KEY
+#    - OPENAI_API_KEY
+# 3. Ensure GSC OAuth token is valid (refresh tokens expire after 6 months)
+# 
+# Note: This workflow only ANALYZES opportunities. Manual approval still required.
+
+name: GSC Optimization Cycle
+
+on:
+  # Run daily at 9:00 AM UTC
+  schedule:
+    - cron: '0 9 * * *'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      niche:
+        description: 'Specific niche to run (leave empty for all)'
+        required: false
+        type: choice
+        options:
+          - ''
+          - property
+          - dentists
+          - medical
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+      
+      - name: Configure environment
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          echo "SUPABASE_URL=$SUPABASE_URL" >> .env
+          echo "SUPABASE_KEY=$SUPABASE_KEY" >> .env
+          echo "ANTHROPIC_API_KEY=$ANTHROPIC_API_KEY" >> .env
+          echo "OPENAI_API_KEY=$OPENAI_API_KEY" >> .env
+      
+      - name: Run optimization cycle
+        run: |
+          if [ -z "${{ github.event.inputs.niche }}" ]; then
+            python agents/run_gsc_optimization_cycle.py
+          else
+            python agents/run_gsc_optimization_cycle.py ${{ github.event.inputs.niche }}
+          fi
+      
+      - name: Check for rollback candidates
+        run: |
+          python -c "
+          import sys
+          sys.path.append('agents')
+          from utils.performance_tracker import PerformanceTracker
+          import httpx
+          import os
+          
+          # Query for negative verdicts
+          url = f\"{os.getenv('SUPABASE_URL')}/rest/v1/blog_optimizations\"
+          headers = {
+              'apikey': os.getenv('SUPABASE_KEY'),
+              'Authorization': f\"Bearer {os.getenv('SUPABASE_KEY')}\",
+          }
+          params = {
+              'impact_verdict': 'eq.negative',
+              'rolled_back': 'eq.false',
+          }
+          
+          response = httpx.get(url, headers=headers, params=params, timeout=10.0)
+          candidates = response.json()
+          
+          if candidates:
+              print(f'::warning::Found {len(candidates)} rollback candidates. Review immediately.')
+              for candidate in candidates:
+                  print(f\"::warning::Rollback candidate: {candidate['existing_slug']} ({candidate['niche']})\")
+          "
+      
+      - name: Summary
+        run: |
+          echo "Cycle complete. Check Actions output for details."
+          echo "To review opportunities: python agents/review_gsc_opportunities.py"
+
+# Optional: Send notifications
+# Uncomment and configure if you want Slack/email alerts
+#
+#      - name: Send notification
+#        if: success()
+#        uses: slackapi/slack-github-action@v1
+#        with:
+#          webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+#          payload: |
+#            {
+#              "text": "GSC optimization cycle completed for all sites"
+#            }

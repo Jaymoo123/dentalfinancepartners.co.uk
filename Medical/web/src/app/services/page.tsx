@@ -7,13 +7,11 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Medical Accountants UK services",
-  description:
-    "UK medical accounting: NHS pension planning, locum tax, private practice incorporation, GP accounts, and specialist tax advice for doctors.",
+  description: "Specialist accounting for UK medical professionals: GP tax, NHS pension planning, locum tax, private practice incorporation, and expense claims.",
   alternates: { canonical: `${siteConfig.url}/services` },
   openGraph: {
     title: "Medical Accountants UK services",
-    description:
-      "UK medical accounting: NHS pension planning, locum tax, private practice incorporation, GP accounts, and specialist tax advice for doctors.",
+    description: "Specialist accounting for UK medical professionals: GP tax, NHS pension planning, locum tax, private practice incorporation, and expense claims.",
     url: `${siteConfig.url}/services`,
     type: "website",
   },
@@ -21,34 +19,34 @@ export const metadata: Metadata = {
 
 const sections = [
   {
-    title: "GP tax & accounting services",
-    body: "Comprehensive accounts for salaried GPs and practice partners, handling NHS income, private work, and complex partnership structures — with clear reporting that shows where your income actually comes from.",
-    links: [{ href: "/blog/gp-partner-vs-salaried-tax-differences", label: "GP partner vs salaried tax" }],
+    title: "GP Tax & Accounts",
+    body: "Year-end accounts and tax returns tailored for GPs, whether salaried or partners. We handle NHS and private income splits, partnership profit shares, and ensure full compliance with HMRC and NHS pension reporting.",
+    links: [{ href: "/blog/gp-partnership-accounts-tax-uk", label: "GP partnership accounts" }],
   },
   {
-    title: "NHS pension planning & annual allowance",
-    body: "Expert guidance on NHS pension contributions, annual allowance charges, carry forward rules, and retirement planning strategies — helping you maximise your pension whilst avoiding unexpected tax bills.",
-    links: [{ href: "/blog/nhs-pension-annual-allowance-guide", label: "NHS pension annual allowance" }],
+    title: "NHS Pension Planning",
+    body: "Expert advice on NHS pension contributions, annual allowance issues, and lifetime allowance planning. We help you optimise your pension growth while managing tax implications effectively.",
+    links: [{ href: "/blog/nhs-pension-annual-allowance-advice", label: "Annual allowance guidance" }],
   },
   {
-    title: "Locum doctor tax & expenses",
-    body: "Specialist tax advice for locum doctors including allowable expenses, IR35 compliance, contractor vs employee status, and efficient record keeping — structured for the realities of locum work patterns.",
-    links: [{ href: "/blog/locum-doctor-tax-expenses-uk", label: "Locum tax & expenses guide" }],
+    title: "Locum Tax & Compliance",
+    body: "Tax planning and Self Assessment support for locum doctors. We specialise in managing multiple income streams, claiming professional expenses correctly, and ensuring efficient tax payments across engagements.",
+    links: [{ href: "/blog/locum-doctor-expenses-tax-uk", label: "Locum expenses guide" }],
   },
   {
-    title: "Private practice incorporation & company structures",
-    body: "Support for doctors incorporating private practice work, choosing the right company structure, and managing the transition from sole trader — with clear guidance on profit extraction and tax efficiency.",
-    links: [{ href: "/blog/medical-private-practice-incorporation-uk", label: "Private practice incorporation" }],
+    title: "Private Practice Incorporation",
+    body: "Structured advice on setting up a limited company for your private practice. We cover profit extraction, corporation tax planning, and maintaining optimal tax efficiency between personal and business finances.",
+    links: [{ href: "/blog/private-practice-incorporation-uk", label: "Incorporation pros and cons" }],
   },
   {
-    title: "Hospital consultant tax planning",
-    body: "Tax planning for NHS consultants with private practice income, managing complex pay structures, merit awards, and clinical excellence awards — ensuring compliance across all income streams.",
-    links: [{ href: "/blog/consultant-private-practice-tax-planning", label: "Consultant tax planning" }],
+    title: "Medical Expense Claims",
+    body: "Maximising legitimate expense claims for medical professionals, including professional subscriptions, indemnity insurance, equipment, and travel. We ensure claims are robust and fully compliant with HMRC rules.",
+    links: [],
   },
   {
-    title: "Medical expenses & professional costs",
-    body: "Maximising allowable deductions for medical professionals including GMC fees, medical indemnity, CPD costs, equipment purchases, and travel expenses — with proper documentation and HMRC compliance.",
-    links: [{ href: "/blog/medical-professional-tax-deductions-uk", label: "Medical expense claims" }],
+    title: "Consultant Tax Planning",
+    body: "Comprehensive tax services for hospital consultants balancing NHS work, private practice, and additional roles. We coordinate multiple income sources, pension contributions, and personal tax liabilities.",
+    links: [{ href: "/blog/consultant-tax-planning-uk", label: "Consultant tax strategies" }],
   },
 ];
 
@@ -65,8 +63,7 @@ export default function ServicesPage() {
         Services for UK medical professionals
       </h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-        Specialist accounting and tax support for GPs, consultants, and medical practitioners — from NHS pension planning
-        to private practice incorporation and locum tax compliance.
+        Specialist accounting and tax support for GPs, consultants, locums and practice owners. From essential compliance to strategic planning, our services are designed specifically for the medical sector.
       </p>
 
       <ol className="mt-10 list-none space-y-10 pl-0 sm:mt-12 sm:space-y-12">
@@ -108,14 +105,14 @@ export default function ServicesPage() {
       <div className="mt-12 space-y-8 sm:mt-16 sm:space-y-10">
         <CTASection
           title="Book a short scoping call"
-          description="Tell us about your medical practice structure — whether you're a GP partner, consultant, or locum — and what you need help with this year."
+          description="Walk us through your professional structure — NHS commitments, private practice, and your financial goals for the year ahead."
           primaryHref="/contact"
           secondaryHref="/blog"
           secondaryLabel="Read related articles"
         />
         <CTASection
           title="Prefer to start with content?"
-          description="Our articles are written specifically for UK medical professionals — practical advice on NHS pensions, locum tax, and private practice planning."
+          description="Our articles are written for UK medical professionals — practical, sector-specific, and free of generic tax advice."
           primaryHref="/blog"
           primaryLabel="Open the blog"
           secondaryHref="/about"

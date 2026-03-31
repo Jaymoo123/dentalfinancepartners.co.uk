@@ -9,15 +9,15 @@ import { getPostBySlug } from "@/lib/blog";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 
 const btnMailOutline =
-  "inline-flex min-h-12 items-center justify-center rounded-full border border-[var(--navy)]/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-[var(--navy)] transition-all duration-200 hover:border-[var(--navy)] hover:bg-[var(--navy)]/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)]";
+  "inline-flex min-h-12 items-center justify-center rounded-full border border-[var(--medical-teal)]/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-[var(--medical-teal)] transition-all duration-200 hover:border-[var(--medical-teal)] hover:bg-[var(--medical-teal)]/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--coral)]";
 
 export const metadata: Metadata = {
-  title: "GP Accountants UK | Tax Specialists for Medical Professionals",
-  description: "Expert accounting for GPs, consultants & medical practices. NHS pension advice, locum tax planning, private practice incorporation. Book free consultation.",
+  title: "GP Accountants UK | Tax Specialists for Doctors",
+  description: "Medical accounting specialists for UK doctors. NHS pension optimization, locum tax returns, practice incorporation, and medical expense claims. Free consultation for GPs and consultants.",
   alternates: { canonical: siteConfig.url },
   openGraph: {
-    title: "GP Accountants UK | Medical Tax Specialists",
-    description: "Expert accounting for GPs, consultants & medical practices. NHS pension advice, locum tax planning, private practice incorporation. Book free consultation.",
+    title: "GP Accountants UK | Tax Specialists for Doctors",
+    description: "Medical accounting specialists for UK doctors. NHS pension optimization, locum tax returns, practice incorporation, and medical expense claims. Free consultation for GPs and consultants.",
     url: siteConfig.url,
     type: "website",
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
@@ -25,78 +25,78 @@ export const metadata: Metadata = {
 };
 
 const PRACTICAL_SLUGS = [
-  "gp-tax-return-self-assessment-uk",
   "nhs-pension-annual-allowance-gp",
-  "locum-doctor-tax-planning-uk",
+  "locum-doctor-tax-self-assessment-uk",
+  "incorporating-private-practice-uk",
 ] as const;
 
 const realityPoints = [
   {
-    title: "Complex NHS pension calculations",
-    body: "Annual allowance charges, lifetime allowance planning, and pension input periods create genuine complexity. Most accountants see this once a year. We handle it constantly and know exactly how your NHS pension interacts with your overall tax position.",
+    title: "Complex NHS and private income mix",
+    body: "Reconciling NHS pension contributions, practice income, and private patient fees requires specific knowledge of medical sector accounting. Generalist accountants often miss the nuances of superannuation and expense allocations.",
   },
   {
-    title: "Locum income and expenses confusion",
-    body: "Working across multiple locations, travel expenses, professional fees, and understanding when incorporation makes sense — locum doctors face unique tax challenges that require specialist knowledge of the medical sector.",
+    title: "NHS pension annual allowance traps",
+    body: "Many GPs and consultants face unexpected tax charges due to the NHS pension's annual allowance. Without specialist advice, these complex calculations can lead to significant, avoidable tax bills.",
   },
   {
-    title: "Private practice structure decisions",
-    body: "Whether to operate through a limited company or as a sole trader depends on your income level, NHS commitments, and personal circumstances. Getting this wrong can cost thousands in unnecessary tax.",
+    title: "Locum tax confusion and compliance",
+    body: "Locum doctors managing multiple engagements often struggle with self-assessment, allowable expense claims, and VAT registration thresholds. This leads to compliance risks and potential overpayment of tax.",
   },
   {
-    title: "Medical expense claims overlooked",
-    body: "Professional subscriptions, conferences, equipment, indemnity insurance — medical professionals have extensive allowable expenses that generalist accountants often miss or undervalue, leading to overpaid tax.",
+    title: "Inefficient practice structures",
+    body: "Medical practices operating without optimal company structures or clear partnership agreements miss opportunities for tax efficiency, asset protection, and smooth succession planning.",
   },
 ];
 
 const whoWeWorkWith = [
   {
-    title: "GP Partners",
-    subtitle: "Practice owners · NHS contracts · Private income",
-    body: "Running a GP practice involves complex partnership accounts, NHS contract income, and often mixed private work. We handle the compliance requirements while providing management information that helps you understand practice profitability and plan for the future.",
-  },
-  {
-    title: "Locum Doctors",
-    subtitle: "Self-employed · Multiple locations · Variable income",
-    body: "Locum work creates unique tax challenges around travel expenses, professional costs, and irregular income. We ensure you claim all allowable expenses, manage your tax payments efficiently, and advise on whether incorporation would benefit your situation.",
+    title: "GP Partners & Salaried GPs",
+    subtitle: "Practice income · NHS pension · GP tax advice",
+    body: "From partnership accounts and profit-sharing to individual tax returns and pension planning. Our GP accountants ensure your practice finances are structured efficiently and your personal tax position is optimised, particularly around NHS superannuation and GP tax planning.",
   },
   {
     title: "Hospital Consultants",
-    subtitle: "NHS employment · Private practice · Pension planning",
-    body: "Balancing NHS employment with private practice income requires careful tax planning and pension management. We help you optimise your structure, manage annual allowance charges, and ensure your private practice is tax-efficient.",
+    subtitle: "NHS & private practice · Consultant accountant",
+    body: "Managing a mix of NHS salary, private patient fees, and medico-legal work creates a complex tax picture. Our medical accountants provide clarity on income splitting, legitimate expense claims, and long-term pension strategy to protect your wealth.",
+  },
+  {
+    title: "Locum Doctors",
+    subtitle: "Locum accountant · Self-assessment · IR35",
+    body: "If you're working through agencies or directly with practices, you're running a business. Our locum accountants handle your self-assessment, advise on allowable expenses, manage your VAT position, and ensure you're compliant and tax-efficient with specialist locum tax advice.",
   },
 ];
 
 const howWeWorkItems = [
   {
     n: "01",
-    title: "GP practice accounts and partnership returns",
-    body: "Complete partnership accounting for GP practices, including NHS contract income analysis, profit allocation, and individual partner returns. We ensure compliance while providing insights into practice performance.",
+    title: "GP and practice accounts",
+    body: "Accurate preparation and timely filing of partnership and limited company accounts for medical practices. We ensure compliance while providing insights into practice profitability and financial health.",
   },
   {
     n: "02",
-    title: "NHS pension planning and annual allowance",
-    body: "Specialist advice on NHS pension schemes, annual allowance calculations, and lifetime allowance planning. We help you navigate complex pension rules and minimise tax charges on pension growth.",
+    title: "NHS pension advice & planning",
+    body: "Specialist guidance on NHS superannuation, including annual allowance calculations, lifetime allowance planning, and the implications of pension growth on your personal tax position.",
   },
   {
     n: "03",
-    title: "Locum tax returns and expense planning",
-    body: "Comprehensive self-assessment for locum doctors, ensuring all travel expenses, professional costs, and equipment purchases are correctly claimed. We also advise on payment on account management and incorporation timing.",
+    title: "Locum doctor tax & self-assessment",
+    body: "Complete handling of self-assessment tax returns for locums, ensuring all legitimate expenses are claimed and your tax liability is calculated correctly across multiple income sources.",
   },
   {
     n: "04",
-    title: "Private practice incorporation and structure",
-    body: "Advice on whether to incorporate your private practice, including company formation, profit extraction strategies, and ongoing compliance. We help you choose the most tax-efficient structure for your circumstances.",
+    title: "Private practice incorporation",
+    body: "Advising on the tax and legal implications of incorporating your private practice, including share structures, profit extraction strategies, and ongoing company compliance.",
   },
   {
     n: "05",
-    title: "Medical expense claims and allowances",
-    body: "Detailed review of all professional expenses including GMC fees, medical defence subscriptions, conference costs, equipment, and continuing professional development. We ensure nothing is missed.",
+    title: "Medical expense claims & optimisation",
+    body: "Expert review of claimable expenses for medical professionals, including professional subscriptions, indemnity insurance, travel, and equipment, ensuring you maximise your allowable deductions.",
   },
   {
     n: "06",
-    title: "Consultant tax advice and compliance",
-    body: "Specialist support for hospital consultants managing both NHS employment and private practice income, including IR35 considerations, pension planning, and optimising your overall tax position.",
+    title: "Tax planning & advisory",
+    body: "Proactive advice on income tax, corporation tax, and VAT planning tailored to the unique financial situations of GPs, consultants, and practice owners.",
   },
 ];
 
@@ -104,42 +104,42 @@ const trustItems = [
   {
     title: "Medical-only focus",
     stat: "100%",
-    body: "We only work with medical professionals. Every client is a GP, consultant, locum, or medical practice.",
+    body: "100% medical focus. Every GP accountant on our team works exclusively with GPs, consultants, locums, and practice owners.",
   },
   {
     title: "Proven experience",
-    stat: "200+",
-    body: "Trusted by over 200 medical professionals across London, Manchester, and the UK.",
+    stat: "50+",
+    body: "50+ doctors and medical practices across London, Manchester, Birmingham, and major UK cities.",
   },
   {
     title: "Transparent pricing",
     stat: "Fixed fees",
-    body: "No hidden charges, no long-term contracts. You know exactly what you're paying for.",
+    body: "Clear, agreed fees with no hidden charges. You know exactly what you're paying for.",
   },
 ];
 
 const whySpecialistItems = [
   {
-    title: "Medical-only expertise",
-    body: "We only work with medical professionals. That means we understand NHS contracts, pension schemes, locum arrangements, and the sector-specific tax rules that generalist accountants rarely encounter.",
+    title: "GP accountant expertise",
+    body: "Every medical accountant on our team specializes in GP accounting, NHS pension annual allowance calculations, locum IR35 compliance, medical partnership structures, and healthcare-specific accounting regulations.",
   },
   {
-    title: "Proactive advice, not just compliance",
-    body: "NHS pension planning structured for medical careers. Tax planning for locums and private practice. Practice incorporation support. We help you make better financial decisions, not just file returns.",
+    title: "Proactive GP tax planning",
+    body: "Beyond compliance, our GP accountants provide strategic tax planning, NHS pension modelling, and practice structure advice. We help medical professionals make informed financial decisions to protect and grow your wealth.",
   },
   {
-    title: "Transparent and accessible",
-    body: "Fixed fees with no surprises. You speak to the same accountant every time. Plain English explanations, not accounting jargon. We're here when you need us.",
+    title: "Clear, accessible service",
+    body: "Fixed fees, no jargon, and direct access to your dedicated GP accountant. We're here to provide clarity and support whenever you need it.",
   },
 ];
 
 const specialistRows = [
-  { area: "NHS pension planning", detail: "Annual allowance calculations done correctly" },
-  { area: "Locum expense claims", detail: "All allowable travel and professional costs" },
-  { area: "Practice partnership accounts", detail: "NHS contract income properly analysed" },
-  { area: "Private practice structure", detail: "Incorporation advice when it makes sense" },
-  { area: "Medical expense planning", detail: "Professional subscriptions never missed" },
-  { area: "Consultant tax position", detail: "NHS/private income optimised" },
+  { area: "NHS pension calculations", detail: "Handled with specialist knowledge" },
+  { area: "Locum tax position", detail: "Reviewed and optimised annually" },
+  { area: "Practice partnership accounts", detail: "Prepared accurately" },
+  { area: "Private practice incorporation", detail: "Sector-specific structuring advice" },
+  { area: "Medical expense claims", detail: "Maximised correctly" },
+  { area: "Mixed NHS/private income", detail: "Reconciled and reported properly" },
 ];
 
 export default function HomePage() {
@@ -162,14 +162,14 @@ export default function HomePage() {
             <BrandLogoHero />
           </div>
           <h1 className="hero-reveal-delay display-serif mt-8 max-w-4xl text-[1.75rem] font-semibold leading-[1.15] tracking-tight text-white sm:text-4xl md:text-[2.75rem] md:leading-[1.1]">
-            <span className="block">Specialist Accountants for GPs</span>
-            <span className="block">& Medical Professionals</span>
+            <span className="block">Specialist Accountants for GPs & Medical Professionals</span>
+            <span className="block">UK medical professionals.</span>
           </h1>
           <p className="hero-reveal-delay-2 mt-6 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-lg">
-            Expert accountants for GPs, consultants, and medical practices. NHS pension advice, locum tax planning, private practice incorporation, and medical expense claims. We understand the financial complexities that medical professionals face.
+            GP accountants and medical accounting specialists exclusively for UK doctors. We handle NHS pension complexities, locum tax returns, private practice structures, and medical expense claims. Our entire client base is medical—GPs, consultants, and practice owners who need a specialist GP accountant with sector-specific financial expertise.
           </p>
           <p className="hero-reveal-delay-2 mt-4 text-sm font-medium text-white/80">
-            Trusted by doctors across London, Manchester, and the UK.
+            Serving GPs, consultants, and locum doctors in London, Manchester, Birmingham, Leeds, and Bristol.
           </p>
           <div className="hero-reveal-delay-2 mt-10 flex flex-wrap items-center gap-4">
             <Link href="/contact" className={`${btnPrimary} min-w-0`}>
@@ -177,7 +177,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="#how-we-work"
-              className={`inline-flex min-h-12 items-center text-sm font-semibold text-white/90 underline decoration-[var(--gold)] decoration-2 underline-offset-4 transition-colors hover:text-white ${focusRing} rounded-full px-2`}
+              className={`inline-flex min-h-12 items-center text-sm font-semibold text-white/90 underline decoration-[var(--coral)] decoration-2 underline-offset-4 transition-colors hover:text-white ${focusRing} rounded-full px-2`}
             >
               How we work →
             </Link>
@@ -188,24 +188,24 @@ export default function HomePage() {
       <section className="border-b border-[var(--border)] bg-[var(--surface)] py-10 sm:py-12">
         <div className={siteContainerLg}>
           <p className="max-w-3xl text-lg leading-relaxed text-[var(--ink-soft)] sm:text-xl">
-            We're specialist medical accountants working exclusively with UK GPs, consultants, locum doctors, and medical practices. Over 200 medical professionals trust us with their accounting, tax planning, and NHS pension advice.
+            GP accountants and medical accounting specialists serving UK doctors exclusively. Our client base includes GP partners, salaried GPs, hospital consultants, private practice owners, and locum doctors. Over 50 medical professionals rely on our GP accountant team for NHS pension planning, tax optimization, and practice financial management.
           </p>
         </div>
       </section>
 
       <section className="border-b border-[var(--border)] bg-[var(--background)] py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <p className="section-label">Why medical professionals choose us</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
-            Trusted by doctors across the UK
+          <p className="section-label">What sets us apart</p>
+          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--medical-teal-dark)] sm:text-4xl">
+            Built for the medical profession
           </h2>
           <div className="mt-12 grid gap-8 sm:grid-cols-3 sm:gap-10">
             {trustItems.map((item) => (
               <div key={item.title} className="text-center">
-                <div className="font-serif text-4xl font-bold text-[var(--gold-strong)] sm:text-5xl">
+                <div className="font-serif text-4xl font-bold text-[var(--coral)] sm:text-5xl">
                   {item.stat}
                 </div>
-                <h3 className="mt-4 text-lg font-semibold text-[var(--navy)]">{item.title}</h3>
+                <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">{item.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{item.body}</p>
               </div>
             ))}
@@ -215,18 +215,18 @@ export default function HomePage() {
 
       <section className="bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <p className="section-label">The reality</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl md:text-[2.5rem]">
-            <span className="block">Most medical professionals are</span>
-            <span className="block text-[var(--gold-strong)]">financially underserved.</span>
+          <p className="section-label">Common challenges</p>
+          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl md:text-[2.5rem]">
+            <span className="block">Most GPs and consultants face</span>
+            <span className="block text-[var(--coral-strong)]">avoidable tax complications.</span>
           </h2>
           <p className="mt-8 max-w-3xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            Medical income structures are genuinely complex. Between NHS contracts, pension schemes, locum arrangements, private practice income, and professional expenses, the financial picture requires specialist knowledge. A generalist accountant will handle the basics — but that's not the same as understanding how medical careers actually work.
+            Medical finances are uniquely complex. Between NHS pensions, mixed NHS and private income, locum engagements, practice partnerships, and professional expenses, the picture requires specialist understanding. A generalist accountant will process what you give them — but that's not the same as understanding how a medical professional's finances actually work.
           </p>
           <div className="mt-14 grid gap-6 md:grid-cols-2 md:gap-8">
             {realityPoints.map((item) => (
               <article key={item.title} className="card-flat p-6 sm:p-8">
-                <h3 className="text-lg font-semibold leading-snug text-[var(--navy)] sm:text-xl">{item.title}</h3>
+                <h3 className="text-lg font-semibold leading-snug text-[var(--ink)] sm:text-xl">{item.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{item.body}</p>
               </article>
             ))}
@@ -236,14 +236,14 @@ export default function HomePage() {
 
       <section className="border-y border-[var(--border)] bg-[var(--surface)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <p className="section-label">Why choose a specialist</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
-            Why work with a medical accountant?
+          <p className="section-label">Medical sector expertise</p>
+          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+            Why GPs choose specialist medical accountants
           </h2>
           <div className="mt-14 grid gap-8 md:grid-cols-3 md:gap-10">
             {whySpecialistItems.map((item) => (
               <div key={item.title} className="card-flat p-6 sm:p-8">
-                <h3 className="text-lg font-semibold leading-snug text-[var(--navy)] sm:text-xl">{item.title}</h3>
+                <h3 className="text-lg font-semibold leading-snug text-[var(--ink)] sm:text-xl">{item.title}</h3>
                 <p className="mt-4 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{item.body}</p>
               </div>
             ))}
@@ -253,16 +253,16 @@ export default function HomePage() {
 
       <section className="bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <p className="section-label">Who we work with</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
-            <span className="block">We work with medical professionals</span>
+          <p className="section-label">Client types</p>
+          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+            <span className="block">GPs, consultants, and locum doctors</span>
             <span className="block">at every career stage.</span>
           </h2>
           <div className="mt-14 grid gap-12 md:grid-cols-3 md:gap-10">
             {whoWeWorkWith.map((block) => (
               <div key={block.title} className="min-w-0">
-                <h3 className="text-xl font-semibold text-[var(--navy)]">{block.title}</h3>
-                <p className="mt-1 text-sm font-medium text-[var(--gold-strong)]">{block.subtitle}</p>
+                <h3 className="text-xl font-semibold text-[var(--ink)]">{block.title}</h3>
+                <p className="mt-1 text-sm font-medium text-[var(--coral)]">{block.subtitle}</p>
                 <p className="mt-4 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{block.body}</p>
               </div>
             ))}
@@ -272,25 +272,25 @@ export default function HomePage() {
 
       <section id="how-we-work" className="scroll-mt-24 border-y border-[var(--border)] bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <p className="section-label">How we work</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
-            <span className="block">What we actually do,</span>
-            <span className="block">and how we do it.</span>
+          <p className="section-label">Our approach</p>
+          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+            <span className="block">Medical accounting services</span>
+            <span className="block">tailored to your practice.</span>
           </h2>
           <p className="mt-8 max-w-3xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            We don't hand you a services brochure and ask you to pick a package. Most medical professionals come to us with a specific challenge around tax, pensions, or practice structure. What follows is what ongoing support typically looks like once we're working together.
+            No generic packages or one-size-fits-all solutions. Our GP accountants start with your specific situation—whether it's NHS pension planning, locum tax returns, or practice incorporation—and build a service around your needs. Here's what ongoing support from a medical accountant looks like for GPs and consultants.
           </p>
           <ol className="mt-14 grid list-none gap-10 pl-0 sm:gap-12 lg:grid-cols-2">
             {howWeWorkItems.map((item) => (
               <li key={item.n} className="flex gap-5 sm:gap-6">
                 <span
-                  className="font-serif text-3xl font-semibold tabular-nums leading-none text-[var(--gold)] sm:text-4xl"
+                  className="font-serif text-3xl font-semibold tabular-nums leading-none text-[var(--coral)] sm:text-4xl"
                   aria-hidden
                 >
                   {item.n}
                 </span>
                 <div className="min-w-0">
-                  <h3 className="text-lg font-semibold text-[var(--navy)] sm:text-xl">{item.title}</h3>
+                  <h3 className="text-lg font-semibold text-[var(--ink)] sm:text-xl">{item.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{item.body}</p>
                 </div>
               </li>
@@ -306,19 +306,19 @@ export default function HomePage() {
 
       <section className="bg-[var(--surface)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <p className="section-label">Why it matters</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
-            The difference a specialist makes is not theoretical.
+          <p className="section-label">Specialist advantage</p>
+          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+            Medical specialists deliver measurably better outcomes.
           </h2>
           <div className="mt-8 max-w-3xl space-y-6 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
             <p>
-              A generalist accountant isn't cutting corners. They simply don't see enough medical clients to build genuine expertise in how the NHS works, how medical careers develop, or how pension schemes interact with private practice income. They won't know, off the top of their head, how annual allowance charges work or what expenses locum doctors can legitimately claim.
+              Generalist accountants aren't incompetent—they simply lack exposure to GP accounting and medical sector nuances. A specialist GP accountant will immediately recognize NHS pension annual allowance traps, understand locum IR35 status implications, and know HMRC's current stance on medical expense claims for conferences and journals.
             </p>
             <p>
-              We do, because it comes up constantly. That breadth of exposure — across hundreds of medical clients — means we can spot issues before they become problems, and give advice grounded in what actually happens in medical practices, not just what the tax manual says.
+              GP accountants and medical specialists encounter these scenarios weekly. This concentrated experience means proactive identification of tax-saving opportunities specific to doctors—pension carry-forward claims, optimal practice structure for consultants with private work, or locum expense optimization strategies that generalists simply won't consider.
             </p>
             <p>
-              It also means the conversation is more efficient. You don't have to explain how an NHS contract works, or what a UDA means, or why your pension contributions vary. We already know, so we can focus on solving your specific situation.
+              Efficiency matters too. You won't spend time explaining NHS superannuation mechanics, BMA contract structures, or medical indemnity insurance. We already understand the medical profession's financial landscape, allowing immediate focus on your specific tax position and planning opportunities.
             </p>
           </div>
           <div className="mt-14 overflow-x-auto rounded-2xl border border-[var(--border)]">
@@ -326,10 +326,10 @@ export default function HomePage() {
               <caption className="sr-only">How {siteConfig.name} handles typical medical accounting areas</caption>
               <thead>
                 <tr className="border-b border-[var(--border)] bg-[var(--surface-elevated)]">
-                  <th scope="col" className="px-4 py-3 font-semibold text-[var(--navy)] sm:px-6 sm:py-4">
+                  <th scope="col" className="px-4 py-3 font-semibold text-[var(--ink)] sm:px-6 sm:py-4">
                     Area
                   </th>
-                  <th scope="col" className="px-4 py-3 font-semibold text-[var(--navy)] sm:px-6 sm:py-4">
+                  <th scope="col" className="px-4 py-3 font-semibold text-[var(--ink)] sm:px-6 sm:py-4">
                     {siteConfig.name}
                   </th>
                 </tr>
@@ -351,13 +351,13 @@ export default function HomePage() {
 
       <section className="border-t border-[var(--border)] bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <p className="section-label">Practical guidance</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
-            <span className="block">Medical accounting insights</span>
-            <span className="block">from specialists.</span>
+          <p className="section-label">Resources for doctors</p>
+          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+            <span className="block">NHS pension, locum tax, and</span>
+            <span className="block">practice finance guidance.</span>
           </h2>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            Real-world guidance on GP tax, NHS pension planning, and locum accounting — written by accountants who work exclusively with UK medical professionals. Each article addresses questions we're actually asked by doctors every week.
+            Practical advice on medical tax planning, NHS pension optimization, locum compliance, and practice structures. Written by accountants serving UK doctors exclusively. Each guide answers real questions from GPs, consultants, and locum doctors navigating complex financial decisions.
           </p>
           <ul className="mt-12 grid gap-6 sm:grid-cols-3 sm:gap-8">
             {practicalPosts.map((p) => (
@@ -366,14 +366,14 @@ export default function HomePage() {
                   href={`/blog/${p.slug}`}
                   className={`card-premium group flex h-full flex-col p-6 transition-shadow duration-300 hover:shadow-lg hover:shadow-[rgba(0,27,61,0.08)] ${focusRing}`}
                 >
-                  <span className="text-xs font-semibold uppercase tracking-wider text-[var(--gold-strong)]">
+                  <span className="text-xs font-semibold uppercase tracking-wider text-[var(--coral)]">
                     {p.category}
                   </span>
-                  <span className="mt-3 font-serif text-lg font-semibold leading-snug text-[var(--navy)] group-hover:underline group-hover:decoration-[var(--gold)] group-hover:underline-offset-4">
+                  <span className="mt-3 font-serif text-lg font-semibold leading-snug text-[var(--ink)] group-hover:underline group-hover:decoration-[var(--coral)] group-hover:underline-offset-4">
                     {p.title}
                   </span>
                   <span className="mt-2 flex-1 text-sm leading-relaxed text-[var(--muted)]">{p.summary}</span>
-                  <span className="mt-4 text-sm font-semibold text-[var(--navy-soft)]">Read more →</span>
+                  <span className="mt-4 text-sm font-semibold text-[var(--medical-teal)]">Read more →</span>
                 </Link>
               </li>
             ))}
@@ -381,7 +381,7 @@ export default function HomePage() {
           <p className="mt-10">
             <Link
               href="/blog"
-              className={`inline-flex min-h-11 items-center text-sm font-semibold text-[var(--navy)] underline decoration-[var(--gold)] decoration-2 underline-offset-4 ${focusRing} rounded`}
+              className={`inline-flex min-h-11 items-center text-sm font-semibold text-[var(--medical-teal)] underline decoration-[var(--coral)] decoration-2 underline-offset-4 ${focusRing} rounded`}
             >
               View all articles
             </Link>
@@ -394,11 +394,11 @@ export default function HomePage() {
           <div className={`${sectionYLoose} grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-16`}>
             <div className="min-w-0">
               <p className="section-label">Get started</p>
-              <h2 className="display-serif mt-4 text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
-                Ready to work with a medical accountant who understands your practice?
+              <h2 className="display-serif mt-4 text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+                Speak with GP accountants who specialize in the medical profession
               </h2>
               <p className="mt-6 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-                Whether you're a GP looking to optimise your tax position, a locum doctor managing complex expenses, or a consultant planning your NHS pension, the first conversation is straightforward and without obligation. Book your free consultation today.
+                GP partners, salaried GPs, hospital consultants, or locum doctors—our GP accountants handle NHS pension planning, mixed income tax optimization, and practice financial structures. Initial consultation with a medical accountant is free and obligation-free. Discuss your specific situation with GP accounting specialists.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link href="/contact" className={`${btnPrimary}`}>
@@ -426,21 +426,21 @@ export default function HomePage() {
 
       <section className="border-t border-[var(--border)] bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionY}`}>
-          <p className="section-label">Common questions</p>
-          <h2 className="display-serif mt-3 text-2xl font-semibold text-[var(--navy)] sm:text-3xl">Frequently asked.</h2>
+          <p className="section-label">Questions from doctors</p>
+          <h2 className="display-serif mt-3 text-2xl font-semibold text-[var(--ink)] sm:text-3xl">Common questions from medical professionals.</h2>
           <div className="mt-8 max-w-3xl">
             <details className="group card-flat open:shadow-md">
-              <summary className="cursor-pointer list-none px-5 py-4 font-semibold text-[var(--navy)] sm:px-6 sm:py-5 sm:text-lg [&::-webkit-details-marker]:hidden">
+              <summary className="cursor-pointer list-none px-5 py-4 font-semibold text-[var(--ink)] sm:px-6 sm:py-5 sm:text-lg [&::-webkit-details-marker]:hidden">
                 <span className="flex items-center justify-between gap-4">
                   Do I need a specialist accountant as a medical professional?
-                  <span className="text-[var(--gold-strong)] transition-transform group-open:rotate-45" aria-hidden>
+                  <span className="text-[var(--coral)] transition-transform group-open:rotate-45" aria-hidden>
                     +
                   </span>
                 </span>
               </summary>
               <div className="border-t border-[var(--border)] px-5 py-4 text-sm leading-relaxed text-[var(--muted)] sm:px-6 sm:py-5 sm:text-base">
                 <p>
-                  Not strictly — but the question is whether a generalist accountant can give you genuinely useful advice on NHS pensions, locum expenses, or private practice structuring. In our experience, the gap shows most clearly around annual allowance calculations, legitimate medical expense claims, and knowing when incorporation makes sense for your situation. A competent generalist can handle basic compliance. A medical specialist can do that and help you make better financial decisions throughout your career.
+                  Not strictly — but the question is whether a generalist accountant can give you genuinely useful advice on the financial specifics of the medical sector. In our experience, the gap shows most clearly around NHS pension planning, locum tax rules, mixed NHS/private income, and practice partnership structures. A competent generalist can handle your compliance. A medical specialist can do that and help you make better financial decisions that protect your wealth.
                 </p>
               </div>
             </details>
