@@ -9,9 +9,10 @@ import time
 import re
 import httpx
 
-# Supabase config
-SUPABASE_URL = os.getenv("SUPABASE_URL", "https://dhlxwmvmkrfnmcgjbntk.supabase.co")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY", "")
+# Import shared config
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+from shared_supabase_config import SUPABASE_URL, SUPABASE_KEY
+
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 
 def get_unused_count():
