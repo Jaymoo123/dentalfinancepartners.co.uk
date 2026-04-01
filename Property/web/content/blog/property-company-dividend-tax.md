@@ -1,6 +1,7 @@
 ---
 title: "Property Company Dividend Tax: How Much Will I Pay?"
 slug: "property-company-dividend-tax"
+canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/property-company-dividend-tax"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

@@ -1,6 +1,7 @@
 ---
 title: "Accountant Tax Return Services for UK Property Investors"
 slug: "accountant-tax-return-services"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/accountant-tax-return-services"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

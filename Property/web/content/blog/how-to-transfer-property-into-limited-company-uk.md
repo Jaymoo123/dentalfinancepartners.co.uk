@@ -1,6 +1,7 @@
 ---
 title: "How to Transfer Property Into a Limited Company UK: Complete Guide for Landlords"
 slug: "how-to-transfer-property-into-limited-company-uk"
+canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

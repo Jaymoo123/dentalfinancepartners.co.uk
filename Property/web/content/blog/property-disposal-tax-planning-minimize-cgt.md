@@ -1,6 +1,7 @@
 ---
 title: "Property Disposal Tax Planning: A Guide to Minimizing CGT for UK Landlords"
 slug: "property-disposal-tax-planning-minimize-cgt"
+canonical: "https://accountsforproperty.co.uk/blog/capital-gains-tax/property-disposal-tax-planning-minimize-cgt"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Capital Gains Tax"

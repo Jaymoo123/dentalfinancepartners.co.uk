@@ -1,6 +1,7 @@
 ---
 title: "How Section 24 Affects Higher-Rate Taxpayer Landlords in 2026"
 slug: "section-24-higher-rate-taxpayers-2026"
+canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/section-24-higher-rate-taxpayers-2026"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

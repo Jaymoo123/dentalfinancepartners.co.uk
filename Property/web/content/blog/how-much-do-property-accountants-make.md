@@ -1,6 +1,7 @@
 ---
 title: "How Much Do Property Accountants Make in the UK?"
 slug: "how-much-do-property-accountants-make"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/how-much-do-property-accountants-make"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

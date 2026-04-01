@@ -1,6 +1,7 @@
 ---
 title: "Property Company Profit Extraction: Salary vs Dividends"
 slug: "property-company-profit-extraction-salary-vs-dividends"
+canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/property-company-profit-extraction-salary-vs-dividends"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

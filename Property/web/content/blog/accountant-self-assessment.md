@@ -1,6 +1,7 @@
 ---
 title: "Accountant Self Assessment Services for UK Property Investors"
 slug: "accountant-self-assessment"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/accountant-self-assessment"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

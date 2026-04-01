@@ -1,6 +1,7 @@
 ---
 title: "Rental Income Tax Calculator: Work Out Your Tax"
 slug: "rental-income-tax-calculator"
+canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/rental-income-tax-calculator"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

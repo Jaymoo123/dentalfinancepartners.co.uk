@@ -1,6 +1,7 @@
 ---
 title: "Rental Income Tax UK: Complete Guide for Landlords 2025"
 slug: "rental-income-tax-uk-complete-guide-landlords"
+canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

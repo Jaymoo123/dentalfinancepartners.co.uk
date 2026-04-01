@@ -1,6 +1,7 @@
 ---
 title: "CGT Payment Deadlines for Property Sales 2026: What Landlords Need to Know"
 slug: "cgt-payment-deadlines-property-sales-2026"
+canonical: "https://accountsforproperty.co.uk/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Capital Gains Tax"

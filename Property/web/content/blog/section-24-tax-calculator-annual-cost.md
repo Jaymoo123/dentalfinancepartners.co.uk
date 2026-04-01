@@ -1,6 +1,7 @@
 ---
 title: "Section 24 Tax Calculator: Work Out Your Annual Cost"
 slug: "section-24-tax-calculator-annual-cost"
+canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/section-24-tax-calculator-annual-cost"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

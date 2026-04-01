@@ -1,6 +1,7 @@
 ---
 title: "Stamp Duty on Buy-to-Let: 5% Surcharge Explained"
 slug: "stamp-duty-buy-to-let-surcharge-explained"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/stamp-duty-buy-to-let-surcharge-explained"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

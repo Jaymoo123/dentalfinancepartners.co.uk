@@ -15,6 +15,11 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/contact`,
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Property Accountants UK",
+    description: "Book free consultation for landlord accounting. 24-hour response time.",
+  },
 };
 
 export default function ContactPage() {

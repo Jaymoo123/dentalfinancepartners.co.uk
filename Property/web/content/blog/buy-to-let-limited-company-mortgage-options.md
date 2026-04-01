@@ -1,6 +1,7 @@
 ---
 title: "Buy-to-Let Limited Company Mortgage Options: Complete Guide for UK Property Investors"
 slug: "buy-to-let-limited-company-mortgage-options"
+canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/buy-to-let-limited-company-mortgage-options"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

@@ -1,6 +1,7 @@
 ---
 title: "When to Hire a Property Accountant: A UK Landlord's Guide"
 slug: "when-to-hire-property-accountant"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/when-to-hire-property-accountant"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Portfolio Management"

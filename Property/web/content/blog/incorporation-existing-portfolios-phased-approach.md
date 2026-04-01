@@ -1,6 +1,7 @@
 ---
 title: "Incorporation for Existing Portfolios: A Phased Approach Guide"
 slug: "incorporation-existing-portfolios-phased-approach"
+canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/incorporation-existing-portfolios-phased-approach"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

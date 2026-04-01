@@ -1,6 +1,7 @@
 ---
 title: "Property Accountant Leicester: Expert Tax Services for UK Landlords"
 slug: "property-accountant-leicester"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-accountant-leicester"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

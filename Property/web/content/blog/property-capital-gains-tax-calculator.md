@@ -1,6 +1,7 @@
 ---
 title: "Property Capital Gains Tax Calculator: Complete Guide for UK Landlords"
 slug: "property-capital-gains-tax-calculator"
+canonical: "https://accountsforproperty.co.uk/blog/capital-gains-tax/property-capital-gains-tax-calculator"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Capital Gains Tax"

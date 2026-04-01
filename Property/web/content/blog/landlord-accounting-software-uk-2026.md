@@ -1,6 +1,7 @@
 ---
 title: "Landlord Accounting Software UK: Best Options 2026"
 slug: "landlord-accounting-software-uk-2026"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/landlord-accounting-software-uk-2026"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Portfolio Management"

@@ -1,6 +1,7 @@
 ---
 title: "Capital Gains Tax on Property: Complete Guide UK"
 slug: "capital-gains-tax-property-complete-guide-uk"
+canonical: "https://accountsforproperty.co.uk/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Capital Gains Tax"

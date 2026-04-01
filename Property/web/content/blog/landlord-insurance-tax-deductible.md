@@ -1,6 +1,7 @@
 ---
 title: "Landlord Insurance Tax Deductible: What Can You Claim?"
 slug: "landlord-insurance-tax-deductible"
+canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/landlord-insurance-tax-deductible"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

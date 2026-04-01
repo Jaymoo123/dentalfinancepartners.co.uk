@@ -1,6 +1,7 @@
 ---
 title: "Director Loans in Property Companies: Tax Rules and Implications"
 slug: "director-loan-property-company"
+canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/director-loan-property-company"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

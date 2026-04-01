@@ -1,6 +1,7 @@
 ---
 title: "Rental Yield Calculator Guide for UK Landlords"
 slug: "rental-yield-calculator-guide-uk-landlords"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/rental-yield-calculator-guide-uk-landlords"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

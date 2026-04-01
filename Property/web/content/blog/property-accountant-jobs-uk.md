@@ -1,6 +1,7 @@
 ---
 title: "Property Accountant Jobs UK: Career Guide for Tax and Property Professionals"
 slug: "property-accountant-jobs-uk"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-accountant-jobs-uk"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

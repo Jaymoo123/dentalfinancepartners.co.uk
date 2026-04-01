@@ -1,6 +1,7 @@
 ---
 title: "Property Investment Tax UK: Complete Guide 2026"
 slug: "property-investment-tax-uk-complete-guide-2026"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-investment-tax-uk-complete-guide-2026"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

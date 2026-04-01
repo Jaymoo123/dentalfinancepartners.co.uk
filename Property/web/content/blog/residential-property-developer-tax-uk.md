@@ -1,6 +1,7 @@
 ---
 title: "Residential Property Developer Tax UK: Complete Guide for 2025"
 slug: "residential-property-developer-tax-uk"
+canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/residential-property-developer-tax-uk"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

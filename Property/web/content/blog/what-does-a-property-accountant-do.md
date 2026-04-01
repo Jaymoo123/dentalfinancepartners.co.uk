@@ -1,6 +1,7 @@
 ---
 title: "What Does a Property Accountant Do? Essential Services for UK Landlords"
 slug: "what-does-a-property-accountant-do"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/what-does-a-property-accountant-do"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Portfolio Management"

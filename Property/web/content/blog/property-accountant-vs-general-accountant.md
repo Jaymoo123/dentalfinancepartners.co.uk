@@ -1,6 +1,7 @@
 ---
 title: "Property Accountant vs General Accountant: What's the Difference?"
 slug: "property-accountant-vs-general-accountant"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-accountant-vs-general-accountant"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Portfolio Management"

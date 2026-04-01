@@ -1,6 +1,7 @@
 ---
 title: "Professional Accountant Bookkeeping Services for Property Investors"
 slug: "accountant-bookkeeping-services"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/accountant-bookkeeping-services"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

@@ -1,6 +1,7 @@
 ---
 title: "Landlord Capital Allowances: A Complete Guide to Tax Relief"
 slug: "landlord-capital-allowances-tax-relief"
+canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/landlord-capital-allowances-tax-relief"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

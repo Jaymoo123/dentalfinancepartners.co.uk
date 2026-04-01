@@ -1,6 +1,7 @@
 ---
 title: "Property Accountant Salary London: Complete Guide"
 slug: "property-accountant-salary-london"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-accountant-salary-london"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

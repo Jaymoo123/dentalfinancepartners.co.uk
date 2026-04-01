@@ -1,6 +1,7 @@
 ---
 title: "Do I Need a Property Accountant: Complete Guide"
 slug: "do-i-need-a-property-accountant-complete-guide"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/do-i-need-a-property-accountant-complete-guide"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Portfolio Management"

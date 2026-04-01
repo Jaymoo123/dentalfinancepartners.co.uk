@@ -18,6 +18,11 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/incorporation`,
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Buy-to-Let Incorporation Planning | Cost vs. Savings Analysis",
+    description: "Full feasibility modeling: CGT, SDLT costs vs. long-term tax savings. For UK landlords only.",
+  },
 };
 
 const whenItMakesSense = [

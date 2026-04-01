@@ -1,6 +1,7 @@
 ---
 title: "Property Accountant Jobs Remote: Career Opportunities in UK Property Finance"
 slug: "property-accountant-jobs-remote"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-accountant-jobs-remote"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

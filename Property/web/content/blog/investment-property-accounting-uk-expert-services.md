@@ -1,6 +1,7 @@
 ---
 title: "Investment Property Accounting UK: Expert Services for Landlords"
 slug: "investment-property-accounting-uk-expert-services"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/investment-property-accounting-uk-expert-services"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

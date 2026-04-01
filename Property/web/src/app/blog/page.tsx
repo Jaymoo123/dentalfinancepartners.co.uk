@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { siteContainerLg } from "@/components/ui/layout-utils";
-import { getAllPosts } from "@/lib/blog";
+import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
+import { BlogListWithSearch } from "@/components/blog/BlogListWithSearch";
+import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Blog | Property Tax Insights for UK Landlords",
@@ -22,6 +24,12 @@ export const metadata: Metadata = {
 
 export default function BlogIndexPage() {
   const posts = getAllPosts();
+  const categories = getAllCategories();
+
+  const postsWithCategorySlug = posts.map((post) => ({
+    ...post,
+    categorySlug: getCategorySlug(post),
+  }));
 
   return (
     <>
@@ -51,40 +59,41 @@ export default function BlogIndexPage() {
         </div>
       </section>
 
+      <section className="bg-slate-50 py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 mb-8">
+              Comprehensive Guides by Topic
+            </h2>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {categories.map((cat) => (
+                <Link
+                  key={cat.slug}
+                  href={`/blog/${cat.slug}`}
+                  className="group block bg-white rounded-lg border border-slate-200 p-6 shadow-sm hover:shadow-md hover:border-emerald-600 transition-all"
+                >
+                  <h3 className="text-xl font-semibold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                    {cat.name}
+                  </h3>
+                  <p className="mt-2 text-sm text-slate-600">
+                    {cat.count} {cat.count === 1 ? "article" : "articles"}
+                  </p>
+                  <div className="mt-4 flex items-center text-emerald-600 font-medium text-sm">
+                    Explore guides
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-white py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl mx-auto">
-            <ul className="space-y-6">
-              {posts.map((p) => (
-                <li key={p.slug}>
-                  <article className="border-l-4 border-slate-300 bg-slate-50 p-8 transition-all hover:border-emerald-600 hover:bg-white hover:shadow-md">
-                    <p className="text-xs font-bold uppercase tracking-wider text-emerald-700">
-                      {p.category}
-                    </p>
-                    <h2 className="mt-3 text-2xl font-bold text-slate-900">
-                      <Link
-                        href={`/blog/${p.slug}`}
-                        className="hover:text-emerald-700 transition-colors"
-                      >
-                        {p.title}
-                      </Link>
-                    </h2>
-                    <p className="mt-3 text-base leading-relaxed text-slate-700">{p.summary}</p>
-                    {p.date && (
-                      <p className="mt-4 text-sm text-slate-500">
-                        <time dateTime={p.date}>
-                          {new Intl.DateTimeFormat("en-GB", {
-                            day: "numeric",
-                            month: "long",
-                            year: "numeric",
-                          }).format(new Date(p.date))}
-                        </time>
-                      </p>
-                    )}
-                  </article>
-                </li>
-              ))}
-            </ul>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 mb-8">All Articles</h2>
+            <BlogListWithSearch posts={postsWithCategorySlug} />
           </div>
         </div>
       </section>

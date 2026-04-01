@@ -1,6 +1,7 @@
 ---
 title: "Accountants That Specialise in Property: Expert Services for UK Landlords"
 slug: "accountants-that-specialise-in-property"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/accountants-that-specialise-in-property"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

@@ -1,6 +1,7 @@
 ---
 title: "How to Incorporate Rental Property Without Triggering CGT"
 slug: "incorporate-rental-property-without-cgt"
+canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/incorporate-rental-property-without-cgt"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

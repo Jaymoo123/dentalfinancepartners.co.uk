@@ -1,6 +1,7 @@
 ---
 title: "How to Find a Property Accountant: A Guide for UK Landlords"
 slug: "how-to-find-a-property-accountant"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/how-to-find-a-property-accountant"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Portfolio Management"

@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import type { BlogFrontmatter, BlogPost } from "@/types/blog";
+import { addHeadingIds } from "./markdown-utils";
 
 const postsDirectory = path.join(process.cwd(), "content", "blog");
 
@@ -13,6 +14,8 @@ function parsePostFile(filePath: string): BlogPost {
   if (!fm.slug || !fm.title) {
     throw new Error(`Invalid blog frontmatter in ${filePath}`);
   }
+
+  const contentWithIds = addHeadingIds(content.trim());
 
   return {
     title: fm.title,
@@ -29,7 +32,7 @@ function parsePostFile(filePath: string): BlogPost {
     schema: fm.schema,
     canonical: fm.canonical,
     faqs: fm.faqs,
-    contentHtml: content.trim(),
+    contentHtml: contentWithIds,
   };
 }
 
@@ -84,4 +87,56 @@ export function getRelatedPosts(
   return relatedPosts.sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
+}
+
+export function slugifyCategory(category: string): string {
+  return category
+    .toLowerCase()
+    .replace(/[()]/g, "")
+    .replace(/&/g, "and")
+    .replace(/\s+/g, "-")
+    .replace(/--+/g, "-")
+    .trim();
+}
+
+export function getCategorySlug(post: BlogPost): string {
+  return slugifyCategory(post.category);
+}
+
+export function getPostByCategoryAndSlug(
+  categorySlug: string,
+  articleSlug: string,
+): BlogPost | null {
+  const post = getPostBySlug(articleSlug);
+  if (!post) return null;
+  
+  const postCategorySlug = getCategorySlug(post);
+  if (postCategorySlug !== categorySlug) return null;
+  
+  return post;
+}
+
+export function getAllCategories(): Array<{ slug: string; name: string; count: number }> {
+  const posts = getAllPosts();
+  const categoryMap = new Map<string, { name: string; count: number }>();
+  
+  for (const post of posts) {
+    const slug = getCategorySlug(post);
+    if (categoryMap.has(slug)) {
+      categoryMap.get(slug)!.count++;
+    } else {
+      categoryMap.set(slug, { name: post.category, count: 1 });
+    }
+  }
+  
+  return Array.from(categoryMap.entries())
+    .map(([slug, data]) => ({ slug, name: data.name, count: data.count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function calculateReadTime(html: string): number {
+  const text = html.replace(/<[^>]*>/g, "");
+  const words = text.trim().split(/\s+/).length;
+  const minutes = Math.ceil(words / 200);
+  return minutes;
 }

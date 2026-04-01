@@ -1,6 +1,7 @@
 ---
 title: "Property Accountant Jobs London: Career Guide for UK Property Specialists"
 slug: "property-accountant-jobs-london"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-accountant-jobs-london"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

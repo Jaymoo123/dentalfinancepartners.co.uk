@@ -1,6 +1,7 @@
 ---
 title: "Birmingham Property Accountant: Expert Services for Local Landlords"
 slug: "birmingham-property-accountant"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/birmingham-property-accountant"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

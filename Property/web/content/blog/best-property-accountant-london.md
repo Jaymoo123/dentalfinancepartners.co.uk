@@ -1,6 +1,7 @@
 ---
 title: "Finding the Best Property Accountant in London: A Landlord's Guide"
 slug: "best-property-accountant-london"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/best-property-accountant-london"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

@@ -1,89 +1,197 @@
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 
-// Simple in-memory rate limiter for lead submissions
-// For production, consider using Upstash Redis or Vercel KV
-const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
-
-const RATE_LIMIT_WINDOW = 60 * 1000; // 1 minute
-const MAX_REQUESTS = 5; // 5 requests per minute per IP
-
-function getRateLimitKey(request: NextRequest): string {
-  // Use IP address as the rate limit key
-  const forwarded = request.headers.get('x-forwarded-for');
-  const ip = forwarded ? forwarded.split(',')[0].trim() : 'unknown';
-  return `ratelimit:${ip}`;
-}
-
-function checkRateLimit(key: string): { allowed: boolean; remaining: number } {
-  const now = Date.now();
-  const record = rateLimitMap.get(key);
-
-  // Clean up expired entries periodically
-  if (rateLimitMap.size > 1000) {
-    for (const [k, v] of rateLimitMap.entries()) {
-      if (v.resetTime < now) {
-        rateLimitMap.delete(k);
-      }
-    }
-  }
-
-  if (!record || record.resetTime < now) {
-    // New window
-    rateLimitMap.set(key, { count: 1, resetTime: now + RATE_LIMIT_WINDOW });
-    return { allowed: true, remaining: MAX_REQUESTS - 1 };
-  }
-
-  if (record.count >= MAX_REQUESTS) {
-    return { allowed: false, remaining: 0 };
-  }
-
-  record.count++;
-  return { allowed: true, remaining: MAX_REQUESTS - record.count };
-}
+const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
+  "accountant-accounting-services": "portfolio-management",
+  "accountant-bookkeeping-services": "portfolio-management",
+  "accountant-corporation-tax-property-companies": "incorporation-and-company-structures",
+  "accountant-financial-planning-property-investors": "portfolio-management",
+  "accountant-payroll-services": "incorporation-and-company-structures",
+  "accountant-self-assessment": "portfolio-management",
+  "accountant-tax-advice-property-investors": "portfolio-management",
+  "accountant-tax-planning-services": "portfolio-management",
+  "accountant-tax-return-services": "portfolio-management",
+  "accountant-vat-registration-expert-services": "portfolio-management",
+  "accountants-that-specialise-in-property": "portfolio-management",
+  "average-accountant-salary-manchester": "portfolio-management",
+  "best-mtd-software-landlords-2026": "making-tax-digital-mtd",
+  "best-property-accountant": "portfolio-management",
+  "best-property-accountant-london": "portfolio-management",
+  "best-property-accountant-near-me": "portfolio-management",
+  "best-property-accountants-london": "portfolio-management",
+  "best-property-accountants-uk": "portfolio-management",
+  "birmingham-property-accountant": "portfolio-management",
+  "bristol-property-accountant": "portfolio-management",
+  "buy-to-let-limited-company-complete-guide-uk": "incorporation-and-company-structures",
+  "buy-to-let-limited-company-mortgage": "incorporation-and-company-structures",
+  "buy-to-let-limited-company-mortgage-options": "incorporation-and-company-structures",
+  "buy-to-let-refinancing-when-does-it-make-sense": "section-24-and-tax-relief",
+  "capital-gains-tax-property-complete-guide-uk": "capital-gains-tax",
+  "capital-gains-tax-property-sale-uk-2026": "capital-gains-tax",
+  "capital-gains-tax-property-sale-uk-2026-rates-allowances": "capital-gains-tax",
+  "cgt-payment-deadlines-property-sales-2026": "capital-gains-tax",
+  "cgt-property-transfer-limited-company-calculate": "capital-gains-tax",
+  "cgt-property-transfer-spouse": "capital-gains-tax",
+  "cgt-property-transfer-spouse-exempt": "capital-gains-tax",
+  "coventry-property-accountant": "portfolio-management",
+  "director-loan-property-company": "incorporation-and-company-structures",
+  "do-i-need-a-property-accountant-complete-guide": "portfolio-management",
+  "furnished-holiday-let-tax-rules-exemptions": "section-24-and-tax-relief",
+  "hmo-landlord-accounting-multi-tenant-property-tax": "portfolio-management",
+  "how-much-do-accountants-make-in-london": "portfolio-management",
+  "how-much-do-property-accountants-make": "portfolio-management",
+  "how-much-does-a-property-accountant-cost": "portfolio-management",
+  "how-much-does-property-accountant-cost-uk": "portfolio-management",
+  "how-much-is-a-property-accountant": "portfolio-management",
+  "how-to-become-property-accountant": "portfolio-management",
+  "how-to-choose-a-property-accountant": "portfolio-management",
+  "how-to-choose-property-accountant": "portfolio-management",
+  "how-to-find-a-property-accountant": "portfolio-management",
+  "how-to-transfer-property-into-limited-company-uk": "incorporation-and-company-structures",
+  "incorporate-rental-property-without-cgt": "incorporation-and-company-structures",
+  "incorporation-case-study-5-property-portfolio-analysis": "incorporation-and-company-structures",
+  "incorporation-cost-calculator-cgt-sdlt-implications": "incorporation-and-company-structures",
+  "incorporation-existing-portfolios-phased-approach": "incorporation-and-company-structures",
+  "incorporation-holdover-relief-property": "incorporation-and-company-structures",
+  "incorporation-timing-when-to-incorporate-property-portfolio": "incorporation-and-company-structures",
+  "investment-property-accountant-near-me": "portfolio-management",
+  "investment-property-accounting-uk-expert-services": "portfolio-management",
+  "landlord-accounting-software-uk-2026": "portfolio-management",
+  "landlord-accounting-software-uk-best-options-2026": "making-tax-digital-mtd",
+  "landlord-capital-allowances-maximizing-tax-relief": "section-24-and-tax-relief",
+  "landlord-capital-allowances-tax-relief": "section-24-and-tax-relief",
+  "landlord-incorporation-step-by-step-guide-uk": "incorporation-and-company-structures",
+  "landlord-insurance-tax-deductible": "section-24-and-tax-relief",
+  "landlord-insurance-tax-deductible-what-can-you-claim": "section-24-and-tax-relief",
+  "landlord-tax-accountant-when-you-need-professional-help": "portfolio-management",
+  "landlord-tax-deductions-uk-2026-complete-list": "section-24-and-tax-relief",
+  "landlord-tax-return-complete-guide-2026": "portfolio-management",
+  "landlord-tax-return-deadline-2026": "making-tax-digital-mtd",
+  "landlord-tax-return-self-assessment": "section-24-and-tax-relief",
+  "landlord-vat-registration-when-required": "portfolio-management",
+  "limited-company-vs-personal-ownership-tax-comparison-2026": "incorporation-and-company-structures",
+  "local-property-accountant": "portfolio-management",
+  "local-property-accountant-expert-services": "portfolio-management",
+  "london-property-accountant": "portfolio-management",
+  "london-property-accountants-expert-services": "portfolio-management",
+  "making-tax-digital-landlords-april-2026": "making-tax-digital-mtd",
+  "making-tax-digital-landlords-april-2026-deadline": "making-tax-digital-mtd",
+  "manchester-property-accountant": "portfolio-management",
+  "mortgage-interest-tax-relief-changes-landlords": "section-24-and-tax-relief",
+  "mtd-rental-income-threshold-exemptions": "making-tax-digital-mtd",
+  "principal-private-residence-relief-landlords": "capital-gains-tax",
+  "property-accountant-advice-complete-guide": "portfolio-management",
+  "property-accountant-birmingham": "portfolio-management",
+  "property-accountant-bristol": "portfolio-management",
+  "property-accountant-cost-complete-guide": "portfolio-management",
+  "property-accountant-cost-guide": "portfolio-management",
+  "property-accountant-fees-complete-guide": "portfolio-management",
+  "property-accountant-fees-guide": "portfolio-management",
+  "property-accountant-glasgow": "portfolio-management",
+  "property-accountant-help": "portfolio-management",
+  "property-accountant-job-description": "portfolio-management",
+  "property-accountant-jobs": "portfolio-management",
+  "property-accountant-jobs-london": "portfolio-management",
+  "property-accountant-jobs-manchester": "portfolio-management",
+  "property-accountant-jobs-near-me": "portfolio-management",
+  "property-accountant-jobs-remote": "portfolio-management",
+  "property-accountant-jobs-uk": "portfolio-management",
+  "property-accountant-leicester": "portfolio-management",
+  "property-accountant-london-expert-services": "portfolio-management",
+  "property-accountant-london-jobs": "portfolio-management",
+  "property-accountant-near-me": "portfolio-management",
+  "property-accountant-responsibilities-complete-guide": "portfolio-management",
+  "property-accountant-salary-complete-guide": "portfolio-management",
+  "property-accountant-salary-london": "portfolio-management",
+  "property-accountant-salary-uk-guide": "portfolio-management",
+  "property-accountant-services": "portfolio-management",
+  "property-accountant-services-expert-solutions": "portfolio-management",
+  "property-accountant-vs-general-accountant": "portfolio-management",
+  "property-accountants-manchester": "portfolio-management",
+  "property-accountants-near-me": "portfolio-management",
+  "property-accounting-course-uk-expert-services": "portfolio-management",
+  "property-accounting-services": "portfolio-management",
+  "property-accounting-services-london": "portfolio-management",
+  "property-bookkeeping-services": "portfolio-management",
+  "property-business-rates-council-tax-landlords": "portfolio-management",
+  "property-capital-gains-tax-calculator": "capital-gains-tax",
+  "property-company-dividend-tax": "incorporation-and-company-structures",
+  "property-company-profit-extraction-salary-vs-dividends": "incorporation-and-company-structures",
+  "property-disposal-tax-planning-minimize-cgt": "capital-gains-tax",
+  "property-financial-planning-expert-services": "portfolio-management",
+  "property-investment-company-structure-planning": "incorporation-and-company-structures",
+  "property-investment-tax-uk-complete-guide-2026": "portfolio-management",
+  "property-jobs-in-manchester": "portfolio-management",
+  "property-management-accounting-services": "portfolio-management",
+  "property-management-accounts-monthly-tracking": "portfolio-management",
+  "property-payroll-services": "incorporation-and-company-structures",
+  "property-portfolio-accounting-monthly-tracking": "portfolio-management",
+  "property-portfolio-accounting-tracking-profitability": "portfolio-management",
+  "property-self-assessment-expert-services": "portfolio-management",
+  "property-specialist-accountant-near-me": "portfolio-management",
+  "property-specialist-tax-accountant-uk": "portfolio-management",
+  "property-tax-accountant-birmingham": "portfolio-management",
+  "property-tax-accountant-london": "portfolio-management",
+  "property-tax-accountant-manchester": "portfolio-management",
+  "property-tax-accountant-near-me": "portfolio-management",
+  "property-tax-advice-expert-services": "portfolio-management",
+  "property-tax-planning-expert-services": "portfolio-management",
+  "property-tax-return-expert-services": "portfolio-management",
+  "property-vat-registration-expert-services": "portfolio-management",
+  "reduce-cgt-property-disposal-uk": "capital-gains-tax",
+  "rental-income-tax-calculator": "section-24-and-tax-relief",
+  "rental-income-tax-uk-complete-guide-landlords": "section-24-and-tax-relief",
+  "rental-property-accountant-near-me": "portfolio-management",
+  "rental-yield-calculation-gross-vs-net-yield": "portfolio-management",
+  "rental-yield-calculator-guide-uk-landlords": "portfolio-management",
+  "residential-property-developer-tax-uk": "incorporation-and-company-structures",
+  "sdlt-incorporation-stamp-duty-twice": "incorporation-and-company-structures",
+  "section-24-basic-rate-taxpayer-affected": "section-24-and-tax-relief",
+  "section-24-basic-rate-taxpayers": "section-24-and-tax-relief",
+  "section-24-calculator": "section-24-and-tax-relief",
+  "section-24-case-study-100k-rental-income-portfolio": "section-24-and-tax-relief",
+  "section-24-higher-rate-taxpayers-2026": "section-24-and-tax-relief",
+  "section-24-mortgage-interest-restriction-explained": "section-24-and-tax-relief",
+  "section-24-mortgage-interest-restriction-uk-landlords": "section-24-and-tax-relief",
+  "section-24-pension-contributions-tax-planning": "section-24-and-tax-relief",
+  "section-24-relief-how-much-can-i-claim-2026": "section-24-and-tax-relief",
+  "section-24-repeal-future-reversed": "section-24-and-tax-relief",
+  "section-24-tax-calculator-annual-cost": "section-24-and-tax-relief",
+  "section-24-tax-relief-complete-guide": "section-24-and-tax-relief",
+  "section-24-vs-incorporation-tax-savings": "section-24-and-tax-relief",
+  "section-24-vs-incorporation-which-saves-more-tax": "section-24-and-tax-relief",
+  "senior-property-accountant-london": "portfolio-management",
+  "should-i-incorporate-buy-to-let-portfolio-2026": "incorporation-and-company-structures",
+  "stamp-duty-buy-to-let-surcharge": "portfolio-management",
+  "stamp-duty-buy-to-let-surcharge-explained": "portfolio-management",
+  "uk-property-accountants-london-expert-services": "portfolio-management",
+  "what-does-a-property-accountant-do": "portfolio-management",
+  "when-to-hire-property-accountant": "portfolio-management",
+  "when-to-incorporate-property-portfolio-timing": "incorporation-and-company-structures",
+  "why-do-we-need-accountants-property-investors": "portfolio-management",
+};
 
 export function middleware(request: NextRequest) {
-  // Only rate limit POST requests to prevent form spam
-  if (request.method === 'POST') {
-    const key = getRateLimitKey(request);
-    const { allowed, remaining } = checkRateLimit(key);
+  const { pathname } = request.nextUrl;
 
-    if (!allowed) {
-      return NextResponse.json(
-        { error: 'Too many requests. Please try again in a minute.' },
-        { 
-          status: 429,
-          headers: {
-            'Retry-After': '60',
-            'X-RateLimit-Limit': String(MAX_REQUESTS),
-            'X-RateLimit-Remaining': '0',
-          }
-        }
-      );
+  const oldBlogMatch = pathname.match(/^\/blog\/([^\/]+)$/);
+  if (oldBlogMatch) {
+    const slug = oldBlogMatch[1];
+    const categorySlug = SLUG_TO_CATEGORY_MAP[slug];
+    if (categorySlug) {
+      return NextResponse.redirect(new URL(`/blog/${categorySlug}/${slug}`, request.url), 301);
     }
+  }
 
-    // Add rate limit headers to response
-    const response = NextResponse.next();
-    response.headers.set('X-RateLimit-Limit', String(MAX_REQUESTS));
-    response.headers.set('X-RateLimit-Remaining', String(remaining));
-    return response;
+  const oldCategoryMatch = pathname.match(/^\/blog\/category\/([^\/]+)$/);
+  if (oldCategoryMatch) {
+    const categorySlug = oldCategoryMatch[1];
+    return NextResponse.redirect(new URL(`/blog/${categorySlug}`, request.url), 301);
   }
 
   return NextResponse.next();
 }
 
-// Only run middleware on API routes and form submissions
-// Since we're using client-side Supabase, this mainly protects against
-// automated POST spam to our pages
 export const config = {
-  matcher: [
-    /*
-     * Match all request paths except for the ones starting with:
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico (favicon file)
-     * - public files (images, etc.)
-     */
-    '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
-  ],
+  matcher: ["/blog/:path*"],
 };

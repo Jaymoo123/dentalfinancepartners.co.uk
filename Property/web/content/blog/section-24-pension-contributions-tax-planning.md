@@ -1,6 +1,7 @@
 ---
 title: "Section 24 and Pension Contributions: Tax Planning Strategies for Landlords"
 slug: "section-24-pension-contributions-tax-planning"
+canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/section-24-pension-contributions-tax-planning"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

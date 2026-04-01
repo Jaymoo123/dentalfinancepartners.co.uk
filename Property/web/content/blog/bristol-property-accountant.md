@@ -1,6 +1,7 @@
 ---
 title: "Bristol Property Accountant: Expert Services for Local Landlords"
 slug: "bristol-property-accountant"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/bristol-property-accountant"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

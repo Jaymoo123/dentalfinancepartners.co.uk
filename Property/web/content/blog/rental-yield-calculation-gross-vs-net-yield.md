@@ -1,6 +1,7 @@
 ---
 title: "Rental Yield Calculation: Gross vs Net Yield Explained"
 slug: "rental-yield-calculation-gross-vs-net-yield"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/rental-yield-calculation-gross-vs-net-yield"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Portfolio Management"

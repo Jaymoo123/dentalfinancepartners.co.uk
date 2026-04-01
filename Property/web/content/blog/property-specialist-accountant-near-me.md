@@ -1,6 +1,7 @@
 ---
 title: "Finding the Right Property Specialist Accountant Near You"
 slug: "property-specialist-accountant-near-me"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-specialist-accountant-near-me"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

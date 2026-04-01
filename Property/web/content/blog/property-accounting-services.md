@@ -1,6 +1,7 @@
 ---
 title: "Property Accounting Services: Expert Support for UK Landlords"
 slug: "property-accounting-services"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-accounting-services"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

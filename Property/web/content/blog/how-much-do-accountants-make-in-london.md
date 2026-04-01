@@ -1,6 +1,7 @@
 ---
 title: "How Much Do Accountants Make in London: Property Sector Focus"
 slug: "how-much-do-accountants-make-in-london"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/how-much-do-accountants-make-in-london"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

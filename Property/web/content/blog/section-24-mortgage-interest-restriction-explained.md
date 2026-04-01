@@ -1,6 +1,7 @@
 ---
 title: "Section 24 Mortgage Interest Restriction Explained for UK Landlords"
 slug: "section-24-mortgage-interest-restriction-explained"
+canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-explained"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

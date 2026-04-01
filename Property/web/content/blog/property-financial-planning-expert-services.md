@@ -1,6 +1,7 @@
 ---
 title: "Property Financial Planning: Expert Services for UK Landlords"
 slug: "property-financial-planning-expert-services"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-financial-planning-expert-services"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

@@ -1,6 +1,7 @@
 ---
 title: "Section 24 Basic Rate Taxpayer: Are You Affected?"
 slug: "section-24-basic-rate-taxpayer-affected"
+canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/section-24-basic-rate-taxpayer-affected"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

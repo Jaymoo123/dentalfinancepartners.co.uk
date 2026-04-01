@@ -1,6 +1,7 @@
 ---
 title: "Should I Incorporate My Buy-to-Let Portfolio in 2026?"
 slug: "should-i-incorporate-buy-to-let-portfolio-2026"
+canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/should-i-incorporate-buy-to-let-portfolio-2026"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

@@ -1,6 +1,7 @@
 ---
 title: "Incorporation Cost Calculator: Understanding CGT and SDLT Implications for UK Landlords"
 slug: "incorporation-cost-calculator-cgt-sdlt-implications"
+canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/incorporation-cost-calculator-cgt-sdlt-implications"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

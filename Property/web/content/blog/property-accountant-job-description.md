@@ -1,6 +1,7 @@
 ---
 title: "Property Accountant Job Description: Complete Guide for UK Landlords"
 slug: "property-accountant-job-description"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-accountant-job-description"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

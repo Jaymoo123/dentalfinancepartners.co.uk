@@ -1,6 +1,7 @@
 ---
 title: "Buy-to-Let Limited Company Mortgage: What You Need to Know"
 slug: "buy-to-let-limited-company-mortgage"
+canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/buy-to-let-limited-company-mortgage"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

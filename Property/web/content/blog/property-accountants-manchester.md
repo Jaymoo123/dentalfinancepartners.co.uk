@@ -1,6 +1,7 @@
 ---
 title: "Property Accountants Manchester: Expert Services for UK Landlords"
 slug: "property-accountants-manchester"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-accountants-manchester"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

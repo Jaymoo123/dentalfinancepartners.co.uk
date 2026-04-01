@@ -16,6 +16,11 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/about`,
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Property Accountants UK",
+    description: "Specialist property accountants serving 100+ UK landlords. Property-only focus since 2020.",
+  },
 };
 
 const whyWeExist = [

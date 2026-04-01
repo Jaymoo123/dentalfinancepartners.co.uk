@@ -1,6 +1,7 @@
 ---
 title: "Property Payroll Services: Expert Accounting for UK Landlords"
 slug: "property-payroll-services"
+canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/property-payroll-services"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

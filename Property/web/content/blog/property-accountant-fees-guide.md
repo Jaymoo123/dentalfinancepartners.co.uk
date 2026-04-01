@@ -1,6 +1,7 @@
 ---
 title: "Property Accountant Fees: Complete Guide for UK Landlords"
 slug: "property-accountant-fees-guide"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-accountant-fees-guide"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Portfolio Management"

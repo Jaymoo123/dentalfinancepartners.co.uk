@@ -1,6 +1,7 @@
 ---
 title: "How to Reduce CGT on Property Disposal in the UK: A Practical Guide for Landlords"
 slug: "reduce-cgt-property-disposal-uk"
+canonical: "https://accountsforproperty.co.uk/blog/capital-gains-tax/reduce-cgt-property-disposal-uk"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Capital Gains Tax"

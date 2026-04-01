@@ -1,6 +1,7 @@
 ---
 title: "Landlord Tax Return Deadline 2026: Key Dates & Tax Band Changes"
 slug: "landlord-tax-return-deadline-2026"
+canonical: "https://accountsforproperty.co.uk/blog/making-tax-digital-mtd/landlord-tax-return-deadline-2026"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Making Tax Digital (MTD)"

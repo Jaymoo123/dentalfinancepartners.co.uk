@@ -1,6 +1,7 @@
 ---
 title: "Property Self Assessment: Expert Services for UK Landlords"
 slug: "property-self-assessment-expert-services"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-self-assessment-expert-services"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

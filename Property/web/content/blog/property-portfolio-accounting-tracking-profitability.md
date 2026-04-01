@@ -1,6 +1,7 @@
 ---
 title: "Property Portfolio Accounting: Tracking Profitability by Property"
 slug: "property-portfolio-accounting-tracking-profitability"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-portfolio-accounting-tracking-profitability"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Portfolio Management"

@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   title: "Cookie policy",
   description: `How ${siteConfig.name} uses cookies and similar technologies. Google Analytics cookies explained.`,
   alternates: { canonical: `${siteConfig.url}/cookie-policy` },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cookie policy",
+    description: `How ${siteConfig.name} uses cookies and similar technologies. Google Analytics cookies explained.`,
+  },
 };
 
 export default function CookiePolicyPage() {

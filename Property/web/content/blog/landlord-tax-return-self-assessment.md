@@ -1,6 +1,7 @@
 ---
 title: "Landlord Tax Returns & Self Assessment: Complete Guide"
 slug: "landlord-tax-return-self-assessment"
+canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/landlord-tax-return-self-assessment"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

@@ -1,6 +1,7 @@
 ---
 title: "Furnished Holiday Let Tax: Rules and Exemptions for UK Landlords"
 slug: "furnished-holiday-let-tax-rules-exemptions"
+canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/furnished-holiday-let-tax-rules-exemptions"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

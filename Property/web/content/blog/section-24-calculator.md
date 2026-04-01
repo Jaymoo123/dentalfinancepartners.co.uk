@@ -1,6 +1,7 @@
 ---
 title: "Section 24 Calculator: Calculate Your Tax Impact"
 slug: "section-24-calculator"
+canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/section-24-calculator"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

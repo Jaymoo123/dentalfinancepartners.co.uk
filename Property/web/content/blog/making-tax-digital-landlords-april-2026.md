@@ -1,6 +1,7 @@
 ---
 title: "Making Tax Digital for Landlords: April 2026 Deadline"
 slug: "making-tax-digital-landlords-april-2026"
+canonical: "https://accountsforproperty.co.uk/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Making Tax Digital (MTD)"

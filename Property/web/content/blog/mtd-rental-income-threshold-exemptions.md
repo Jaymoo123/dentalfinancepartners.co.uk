@@ -1,6 +1,7 @@
 ---
 title: "Do I Need MTD for My Rental Income? Threshold and Exemptions Explained"
 slug: "mtd-rental-income-threshold-exemptions"
+canonical: "https://accountsforproperty.co.uk/blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Making Tax Digital (MTD)"

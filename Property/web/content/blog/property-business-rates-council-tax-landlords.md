@@ -1,6 +1,7 @@
 ---
 title: "Property Business Rates vs Council Tax: What UK Landlords Need to Know"
 slug: "property-business-rates-council-tax-landlords"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-business-rates-council-tax-landlords"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Portfolio Management"

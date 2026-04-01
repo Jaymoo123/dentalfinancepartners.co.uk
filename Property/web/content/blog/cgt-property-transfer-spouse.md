@@ -1,6 +1,7 @@
 ---
 title: "CGT on Property Transfer to Spouse: Is It Exempt?"
 slug: "cgt-property-transfer-spouse"
+canonical: "https://accountsforproperty.co.uk/blog/capital-gains-tax/cgt-property-transfer-spouse"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Capital Gains Tax"

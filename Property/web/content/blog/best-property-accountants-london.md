@@ -1,6 +1,7 @@
 ---
 title: "Best Property Accountants London: Finding the Right Specialist for Your Portfolio"
 slug: "best-property-accountants-london"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/best-property-accountants-london"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

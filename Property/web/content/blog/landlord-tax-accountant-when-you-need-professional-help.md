@@ -1,6 +1,7 @@
 ---
 title: "Landlord Tax Accountant: When You Need Professional Help"
 slug: "landlord-tax-accountant-when-you-need-professional-help"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/landlord-tax-accountant-when-you-need-professional-help"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Portfolio Management"

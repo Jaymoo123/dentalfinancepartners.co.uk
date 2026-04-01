@@ -1,6 +1,7 @@
 ---
 title: "How to Choose the Best Property Accountant for UK Landlords"
 slug: "best-property-accountant"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/best-property-accountant"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Portfolio Management"

@@ -1,6 +1,7 @@
 ---
 title: "How to Choose a Property Accountant: Complete Guide for UK Landlords"
 slug: "how-to-choose-a-property-accountant"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/how-to-choose-a-property-accountant"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Portfolio Management"

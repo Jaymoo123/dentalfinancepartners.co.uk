@@ -1,6 +1,7 @@
 ---
 title: "Property Tax Advice: Expert Services for UK Landlords"
 slug: "property-tax-advice-expert-services"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-tax-advice-expert-services"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Portfolio Management"

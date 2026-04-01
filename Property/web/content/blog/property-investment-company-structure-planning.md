@@ -1,6 +1,7 @@
 ---
 title: "Property Investment Company Structure Planning: A Complete Guide for UK Landlords"
 slug: "property-investment-company-structure-planning"
+canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/property-investment-company-structure-planning"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

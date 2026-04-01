@@ -1,6 +1,7 @@
 ---
 title: "How Much Does a Property Accountant Cost: UK Pricing Guide 2025"
 slug: "how-much-does-a-property-accountant-cost"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/how-much-does-a-property-accountant-cost"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

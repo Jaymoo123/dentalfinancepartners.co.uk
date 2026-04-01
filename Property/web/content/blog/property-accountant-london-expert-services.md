@@ -1,6 +1,7 @@
 ---
 title: "Property Accountant London: Expert Services for UK Landlords"
 slug: "property-accountant-london-expert-services"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-accountant-london-expert-services"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

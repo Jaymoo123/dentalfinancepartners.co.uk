@@ -1,6 +1,7 @@
 ---
 title: "Buy-to-Let Refinancing: When Does It Make Sense?"
 slug: "buy-to-let-refinancing-when-does-it-make-sense"
+canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/buy-to-let-refinancing-when-does-it-make-sense"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

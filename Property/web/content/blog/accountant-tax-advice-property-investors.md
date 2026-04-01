@@ -1,6 +1,7 @@
 ---
 title: "Professional Accountant Tax Advice for UK Property Investors"
 slug: "accountant-tax-advice-property-investors"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/accountant-tax-advice-property-investors"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

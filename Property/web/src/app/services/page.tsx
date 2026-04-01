@@ -17,6 +17,11 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/services`,
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Property Accounting Services for UK Landlords",
+    description: "Section 24 planning, MTD compliance, incorporation analysis. Fixed fees, 24hr response.",
+  },
 };
 
 const services = [

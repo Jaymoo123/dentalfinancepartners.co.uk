@@ -19,6 +19,11 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/calculators`,
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Free Property Tax Calculators for UK Landlords",
+    description: "Calculate Section 24 impact, incorporation costs, MTD compliance, and rental yield. 2026/27 rates.",
+  },
 };
 
 export default function CalculatorsPage() {

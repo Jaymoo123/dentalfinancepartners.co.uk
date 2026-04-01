@@ -1,6 +1,7 @@
 ---
 title: "Why Do We Need Accountants: Complete Guide for Property Investors"
 slug: "why-do-we-need-accountants-property-investors"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/why-do-we-need-accountants-property-investors"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

@@ -1,6 +1,7 @@
 ---
 title: "Section 24 Tax Relief for Landlords: Complete Guide"
 slug: "section-24-tax-relief-complete-guide"
+canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

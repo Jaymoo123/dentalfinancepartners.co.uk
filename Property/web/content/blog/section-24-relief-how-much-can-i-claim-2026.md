@@ -1,6 +1,7 @@
 ---
 title: "Section 24 Relief: How Much Can I Claim in 2026?"
 slug: "section-24-relief-how-much-can-i-claim-2026"
+canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/section-24-relief-how-much-can-i-claim-2026"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

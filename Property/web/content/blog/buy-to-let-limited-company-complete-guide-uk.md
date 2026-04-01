@@ -1,6 +1,7 @@
 ---
 title: "Buy-to-Let Limited Company: Complete Guide UK"
 slug: "buy-to-let-limited-company-complete-guide-uk"
+canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

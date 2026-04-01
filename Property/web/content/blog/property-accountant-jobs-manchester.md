@@ -1,6 +1,7 @@
 ---
 title: "Property Accountant Jobs Manchester: Career Guide for Property Tax Specialists"
 slug: "property-accountant-jobs-manchester"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-accountant-jobs-manchester"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

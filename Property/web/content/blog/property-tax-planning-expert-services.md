@@ -1,6 +1,7 @@
 ---
 title: "Professional Property Tax Planning Services for UK Landlords"
 slug: "property-tax-planning-expert-services"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-tax-planning-expert-services"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

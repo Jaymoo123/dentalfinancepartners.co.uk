@@ -1,6 +1,7 @@
 ---
 title: "Section 24 vs. Incorporation: Which Strategy Saves More Tax for UK Landlords?"
 slug: "section-24-vs-incorporation-tax-savings"
+canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/section-24-vs-incorporation-tax-savings"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

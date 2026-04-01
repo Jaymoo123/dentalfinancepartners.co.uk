@@ -1,6 +1,7 @@
 ---
 title: "Incorporation Holdover Relief for Property: Complete UK Guide"
 slug: "incorporation-holdover-relief-property"
+canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/incorporation-holdover-relief-property"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

@@ -1,6 +1,7 @@
 ---
 title: "Average Accountant Salary Manchester: Complete Guide for Property Investors"
 slug: "average-accountant-salary-manchester"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/average-accountant-salary-manchester"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

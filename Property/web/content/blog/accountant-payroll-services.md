@@ -1,6 +1,7 @@
 ---
 title: "Accountant Payroll Services for Property Investors"
 slug: "accountant-payroll-services"
+canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/accountant-payroll-services"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

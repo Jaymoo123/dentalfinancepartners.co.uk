@@ -1,6 +1,7 @@
 ---
 title: "Incorporation Timing: When is the Right Time to Incorporate Your Property Portfolio?"
 slug: "incorporation-timing-when-to-incorporate-property-portfolio"
+canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

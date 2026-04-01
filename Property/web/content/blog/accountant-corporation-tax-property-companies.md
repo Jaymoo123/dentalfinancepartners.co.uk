@@ -1,6 +1,7 @@
 ---
 title: "Corporation Tax Accountants for UK Property Companies"
 slug: "accountant-corporation-tax-property-companies"
+canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/accountant-corporation-tax-property-companies"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

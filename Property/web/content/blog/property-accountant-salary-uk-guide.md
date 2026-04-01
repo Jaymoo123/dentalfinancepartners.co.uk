@@ -1,6 +1,7 @@
 ---
 title: "Property Accountant Salary UK: Complete Guide for 2025"
 slug: "property-accountant-salary-uk-guide"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-accountant-salary-uk-guide"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

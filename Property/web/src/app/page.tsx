@@ -9,6 +9,8 @@ import { siteConfig } from "@/config/site";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 import { MTDCountdown } from "@/components/property/MTDCountdown";
 import { ServiceTiers } from "@/components/property/ServiceTiers";
+import { getAllPosts, getCategorySlug } from "@/lib/blog";
+import { ArrowRight } from "lucide-react";
 
 // Lazy load calculators (below the fold, client-only)
 const Section24Calculator = dynamic(
@@ -43,6 +45,12 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     type: "website",
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Landlord Accountant UK | Property Tax Specialists",
+    description:
+      "Get your property tax sorted. Section 24, MTD, incorporation. Trusted by 100+ landlords. Free calculators.",
   },
 };
 
@@ -112,6 +120,10 @@ const trustBadges = [
 
 export default function HomePage() {
   const orgSchema = buildOrganizationJsonLd();
+  const recentPosts = getAllPosts().slice(0, 3).map((post) => ({
+    ...post,
+    categorySlug: getCategorySlug(post),
+  }));
 
   return (
     <>
@@ -278,6 +290,60 @@ export default function HomePage() {
                 </ul>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Latest Insights */}
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
+                Latest property tax insights
+              </h2>
+              <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
+                Practical guidance on Section 24, MTD, incorporation, and portfolio management
+              </p>
+            </div>
+            <div className="grid gap-6 sm:gap-8 md:grid-cols-3">
+              {recentPosts.map((post) => (
+                <article
+                  key={post.slug}
+                  className="bg-white rounded-lg border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden group"
+                >
+                  <Link
+                    href={`/blog/${post.categorySlug}/${post.slug}`}
+                    className="block p-6 h-full flex flex-col"
+                  >
+                    <div className="text-xs font-bold uppercase tracking-wider text-emerald-700 mb-3">
+                      {post.category}
+                    </div>
+                    <h3 className="text-xl font-semibold text-slate-900 mb-3 group-hover:text-emerald-600 transition-colors">
+                      {post.title}
+                    </h3>
+                    {post.summary && (
+                      <p className="text-slate-600 mb-4 flex-grow line-clamp-3 text-sm sm:text-base">
+                        {post.summary}
+                      </p>
+                    )}
+                    <div className="flex items-center text-emerald-600 font-medium text-sm mt-auto">
+                      Read article
+                      <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </Link>
+                </article>
+              ))}
+            </div>
+            <div className="text-center mt-8 sm:mt-12">
+              <Link
+                href="/blog"
+                className="inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-700 font-semibold text-base sm:text-lg transition-colors"
+              >
+                View all articles
+                <ArrowRight className="h-5 w-5" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

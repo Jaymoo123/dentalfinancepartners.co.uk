@@ -1,6 +1,7 @@
 ---
 title: "How to Find the Best Property Accountant Near Me: A UK Landlord's Guide"
 slug: "best-property-accountant-near-me"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/best-property-accountant-near-me"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

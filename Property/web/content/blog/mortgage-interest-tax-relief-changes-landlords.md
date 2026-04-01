@@ -1,6 +1,7 @@
 ---
 title: "Mortgage Interest Tax Relief Changes: What Landlords Need to Know"
 slug: "mortgage-interest-tax-relief-changes-landlords"
+canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/mortgage-interest-tax-relief-changes-landlords"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

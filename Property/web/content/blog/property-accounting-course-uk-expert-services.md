@@ -1,6 +1,7 @@
 ---
 title: "Property Accounting Course UK: Expert Services & Training Options"
 slug: "property-accounting-course-uk-expert-services"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-accounting-course-uk-expert-services"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

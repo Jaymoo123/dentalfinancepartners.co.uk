@@ -1,6 +1,7 @@
 ---
 title: "Property Management Accounts: What to Track Monthly"
 slug: "property-management-accounts-monthly-tracking"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-management-accounts-monthly-tracking"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Portfolio Management"

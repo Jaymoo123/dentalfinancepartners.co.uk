@@ -1,6 +1,7 @@
 ---
 title: "Property Accountant Responsibilities: Complete Guide for UK Landlords"
 slug: "property-accountant-responsibilities-complete-guide"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-accountant-responsibilities-complete-guide"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

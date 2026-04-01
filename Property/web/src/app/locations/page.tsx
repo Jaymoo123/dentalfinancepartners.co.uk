@@ -16,6 +16,11 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/locations`,
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Locations | Property Accountants Across the UK",
+    description: `${siteConfig.name} — specialist property accountants serving landlords across the UK. Explore our locations.`,
+  },
 };
 
 export default function LocationsHubPage() {

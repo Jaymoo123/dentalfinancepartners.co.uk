@@ -1,6 +1,7 @@
 ---
 title: "Best MTD Software for UK Landlords in 2026: Complete Guide"
 slug: "best-mtd-software-landlords-2026"
+canonical: "https://accountsforproperty.co.uk/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Making Tax Digital (MTD)"

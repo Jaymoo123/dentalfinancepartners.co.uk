@@ -1,6 +1,7 @@
 ---
 title: "Landlord Incorporation: Step-by-Step Guide UK"
 slug: "landlord-incorporation-step-by-step-guide-uk"
+canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/landlord-incorporation-step-by-step-guide-uk"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

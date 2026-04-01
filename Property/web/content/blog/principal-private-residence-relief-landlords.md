@@ -1,6 +1,7 @@
 ---
 title: "Principal Private Residence Relief for Landlords: Complete UK Guide"
 slug: "principal-private-residence-relief-landlords"
+canonical: "https://accountsforproperty.co.uk/blog/capital-gains-tax/principal-private-residence-relief-landlords"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Capital Gains Tax"

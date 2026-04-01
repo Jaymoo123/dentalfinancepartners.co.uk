@@ -1,6 +1,7 @@
 ---
 title: "Finding a Senior Property Accountant in London: What UK Landlords Need to Know"
 slug: "senior-property-accountant-london"
+canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/senior-property-accountant-london"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"
