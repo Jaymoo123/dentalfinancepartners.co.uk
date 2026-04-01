@@ -11,7 +11,7 @@ image: ""
 h1: "Private Dental Practice Tax: Complete Financial Guide"
 summary: "A comprehensive guide covering all aspects of private dental practice tax in the UK, from corporation tax and VAT to profit extraction strategies and compliance requirements."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/private-dental-practice-tax-complete-financial-guide"
 faqs:
   - question: "What corporation tax rate applies to private dental practices?"
     answer: "Private dental practices pay corporation tax at 19% on profits up to £50,000, 25% on profits over £250,000, with marginal relief applying to profits between these thresholds. Most practices with profits around £150,000 pay an effective rate of approximately 20.8%."

@@ -11,7 +11,7 @@ image: ""
 h1: "Dentist Student Loan Repayment: Tax Implications & Planning"
 summary: "Student loan repayments have significant tax implications for UK dentists. Understanding how different loan types work and planning around them can save you thousands."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dentist-student-loan-repayment-tax-implications"
 faqs:
   - question: "How much will I pay in student loan repayments as a dentist?"
     answer: "This depends on your loan type and income. Plan 2 loans require 9% of income above £27,295, so an associate earning £60,000 would pay around £2,943 per year. Postgraduate loans add another 6% on income above £21,000. The total burden can be significant for higher earners."

@@ -11,7 +11,7 @@ image: ""
 h1: "Dental Practice Corporation Tax Rates 2026: Small Profits Rate vs Main Rate"
 summary: "Corporation tax rates for dental practices remain split in 2026, with a 19% small profits rate and 25% main rate. Understanding which applies to your practice is crucial for tax planning."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-practice-corporation-tax-rates-2026-small-profits-main-rate"
 faqs:
   - question: "What corporation tax rate does my dental practice pay in 2026?"
     answer: "Your dental practice corporation tax rate depends on annual profits: 19% for profits up to £50,000, 25% for profits over £250,000, with marginal relief providing a gradual increase between these thresholds. The rate applies to your practice's total annual profit, not per dentist."

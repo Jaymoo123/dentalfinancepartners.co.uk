@@ -11,7 +11,7 @@ image: ""
 h1: "Associate Dentist Tax Calculator: Calculate Your Tax Liability"
 summary: "Calculate your tax liability as an associate dentist with our comprehensive guide. Covers income tax rates, National Insurance, and key deductions for UK dental associates."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/associate-dentist-tax-calculator-uk"
 faqs:
   - question: "How much tax does an associate dentist pay in the UK?"
     answer: "This depends on your income and expenses. An associate earning £60,000 with £5,000 expenses typically pays around £13,500 in income tax and National Insurance combined. Higher earners face 40% income tax on income above £50,270."

@@ -11,7 +11,7 @@ image: ""
 h1: "NHS Superannuation and Your Pension Annual Allowance: What UK Dentists Need to Know"
 summary: "UK dentists in the NHS pension scheme need to understand how pension annual allowance works to avoid unexpected tax charges. This guide covers contribution limits, carry forward rules, and practical planning strategies."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/nhs-superannuation-pension-annual-allowance-uk-dentists"
 faqs:
   - question: "What happens if I exceed my NHS pension annual allowance?"
     answer: "If you exceed your pension annual allowance, you'll face an annual allowance charge on the excess amount. This charge is at your marginal rate of income tax and must be paid by 31 January following the tax year. You can use carry forward from previous years to reduce the charge, or ask NHS Pensions to pay it via 'scheme pays' from your future benefits."

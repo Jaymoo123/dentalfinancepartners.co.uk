@@ -11,7 +11,7 @@ image: ""
 h1: "Maternity and Paternity Leave for Associate Dentists: What You Need to Know"
 summary: "Associate dentists face unique challenges with maternity and paternity leave due to their self-employed status. Understanding your rights and planning ahead financially is crucial."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/maternity-paternity-leave-associate-dentists-uk"
 faqs:
   - question: "Can self-employed associate dentists get maternity pay?"
     answer: "Self-employed associates don't get statutory maternity pay (SMP) but may qualify for Maternity Allowance from the government, providing up to £184.03 per week for 39 weeks. You need to have paid Class 2 National Insurance for at least 13 of the 66 weeks before your due date."

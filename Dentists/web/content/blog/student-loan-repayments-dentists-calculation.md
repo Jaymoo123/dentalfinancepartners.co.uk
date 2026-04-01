@@ -11,7 +11,7 @@ image: ""
 h1: "Student Loan Repayments for Dentists: How They Are Calculated"
 summary: "Many UK dentists carry significant student debt from their training. Understanding how repayments are calculated helps with financial planning and tax efficiency."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/student-loan-repayments-dentists-calculation"
 faqs:
   - question: "How much will I pay in student loan repayments as a UK dentist?"
     answer: "Your repayment depends on your total annual income. On Plan 2 loans, you pay 9% of income above £27,295 (2024/25 threshold). For example, earning £60,000 means paying 9% of £32,705 = £2,943 annually. Higher earners pay proportionally more — someone earning £80,000 pays £4,743 per year."

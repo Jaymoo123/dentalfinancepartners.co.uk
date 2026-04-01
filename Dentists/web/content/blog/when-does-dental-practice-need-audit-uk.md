@@ -11,7 +11,7 @@ image: ""
 h1: "When Does a Dental Practice Need an Audit? UK Requirements Explained"
 summary: "UK dental practices must have a statutory audit if they exceed certain financial thresholds under the Companies Act. Understanding these requirements helps avoid compliance issues and unnecessary costs."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/when-does-dental-practice-need-audit-uk"
 faqs:
   - question: "Do all dental practices need an audit?"
     answer: "No, most dental practices don't need a statutory audit. The requirement only applies to companies exceeding two of three thresholds: £10.2m turnover, £5.1m balance sheet total, or 50 employees. Most single-site practices are well below these limits and qualify for small company audit exemption."

@@ -11,7 +11,7 @@ image: ""
 h1: "Pension Contributions for Dentists: Tax Relief and Annual Allowance"
 summary: "Understanding pension contributions and tax relief can save UK dentists thousands in tax. This guide covers annual allowances, tapering rules, and practical strategies for both associates and practice owners."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/pension-contributions-dentists-tax-relief-annual-allowance"
 faqs:
   - question: "What is the annual allowance for pension contributions in 2024/25?"
     answer: "The standard annual allowance for 2024/25 is £60,000. This includes both employee and employer contributions. High earners may face a reduced allowance through the tapered annual allowance rules, with the minimum allowance being £10,000."

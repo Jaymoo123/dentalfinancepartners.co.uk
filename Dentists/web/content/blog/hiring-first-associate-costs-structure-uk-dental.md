@@ -11,7 +11,7 @@ image: ""
 h1: "Hiring Your First Associate: What It Costs and How to Structure It"
 summary: "Hiring your first associate is a major milestone for UK dental practices. Understanding the true costs and how to structure the arrangement properly is crucial for success."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/hiring-first-associate-costs-structure-uk-dental"
 faqs:
   - question: "How much does it really cost to hire your first associate?"
     answer: "Total first-year costs typically range from £60,000-£100,000 including setup, recruitment, additional overheads, and working capital. This includes surgery equipment (£15,000-£30,000), nursing cover (£20,000-£25,000), employment costs if applicable (£8,000-£10,000), and 3-6 months of negative cash flow while they build their patient base."

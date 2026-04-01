@@ -11,7 +11,7 @@ image: ""
 h1: "Dental Practice Overhead Costs: Management & Control Strategies"
 summary: "Understanding and controlling overhead costs is crucial for practice profitability. This guide covers key ratios, benchmarking, and practical strategies to manage your practice expenses effectively."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-practice-overhead-costs-management-control"
 faqs:
   - question: "What is a good overhead percentage for a UK dental practice?"
     answer: "For UK dental practices, healthy overhead ratios typically range from 65-75% for NHS practices and 60-70% for private practices. Specialist practices often achieve 55-65%. Your specific target depends on your location, service mix, and practice model."

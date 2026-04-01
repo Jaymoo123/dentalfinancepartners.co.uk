@@ -11,7 +11,7 @@ image: ""
 h1: "Management Accounts for Dental Practices: What to Track"
 summary: "Management accounts give dental practice owners the financial insight needed to make informed decisions. Here's what metrics actually matter and how to track them effectively."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-practice-management-accounts-metrics-tracking"
 faqs:
   - question: "How often should dental practices produce management accounts?"
     answer: "Monthly management accounts work best for most practices. This provides timely data for decision making while being manageable to produce. Smaller practices might manage quarterly reports, while multi-site groups often need weekly dashboards for key metrics alongside monthly detailed reports."

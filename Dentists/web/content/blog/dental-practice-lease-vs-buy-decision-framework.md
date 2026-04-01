@@ -11,7 +11,7 @@ image: ""
 h1: "Dental Practice Lease vs Buy: Financial Decision Framework"
 summary: "Comprehensive guide to help UK dentists evaluate whether to lease or purchase practice premises, covering financial implications, tax considerations, and decision criteria."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-lease-vs-buy-decision-framework"
 faqs:
   - question: "Should I buy or lease my dental practice premises?"
     answer: "The decision depends on your available capital, long-term plans, and risk tolerance. Buying typically requires £100,000+ upfront but builds long-term wealth, while leasing preserves capital but offers less long-term financial benefit. Consider staying power (7+ years favors buying), cash flow needs, and local market conditions."

@@ -11,7 +11,7 @@ image: ""
 h1: "Dental Practice Benchmarking: Are You Profitable?"
 summary: "Most practice owners know their turnover but struggle to understand if they're truly profitable compared to similar practices. Proper benchmarking reveals where you stand and what needs fixing."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-practice-benchmarking-profitable"
 faqs:
   - question: "What's a good profit margin for a UK dental practice?"
     answer: "Net profit margins vary significantly by practice type. Mixed NHS/private practices typically achieve 15-25%, predominantly private practices 20-30%, and NHS-heavy practices 10-20%. However, the trend matters more than hitting exact percentages — consistent improvement is the key indicator of practice health."

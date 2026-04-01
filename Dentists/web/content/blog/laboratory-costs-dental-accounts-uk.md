@@ -11,7 +11,7 @@ image: ""
 h1: "Laboratory Costs in Dental Accounts: How to Account for Lab Expenses"
 summary: "Laboratory costs are often one of the largest expenses in dental practice accounts. Understanding how to account for them correctly affects your tax liability and business reporting."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/laboratory-costs-dental-accounts-uk"
 faqs:
   - question: "Should laboratory costs be treated as cost of sales or expenses?"
     answer: "Laboratory costs for patient-specific treatments should typically be classified as cost of sales, not general expenses. This gives you accurate gross profit margins and better matches costs with related revenue. General lab expenses like equipment maintenance remain as practice overheads."

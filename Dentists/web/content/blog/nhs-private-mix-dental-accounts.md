@@ -11,7 +11,7 @@ image: ""
 h1: "NHS and private mix: accounts that help you run the practice, not just file tax"
 summary: "Why a blended NHS/private model needs reporting that reflects dentistry — and how that feeds year-end tax work."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/nhs-private-mix-dental-accounts"
 ---
 
 <h2>Why blended practices need blended reporting</h2>

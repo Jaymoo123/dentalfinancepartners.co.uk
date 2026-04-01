@@ -11,7 +11,7 @@ image: ""
 h1: "Should I Register for VAT as an Associate Dentist?"
 summary: "Most associate dentists don't need to register for VAT, but voluntary registration can sometimes reduce your tax bill. Here's when it makes sense and when it doesn't."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-compliance/associate-dentist-vat-registration-uk"
 faqs:
   - question: "Do I have to register for VAT as an associate dentist?"
     answer: "You must register for VAT if your taxable turnover exceeds £85,000 in any 12-month period. Below this threshold, VAT registration is voluntary. Most associates earning under this amount don't need to register unless they have significant VAT-able expenses."

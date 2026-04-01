@@ -11,7 +11,7 @@ image: ""
 h1: "Making Tax Digital for Dental Practices: Complete MTD Compliance Guide"
 summary: "Making Tax Digital affects all VAT-registered dental practices from April 2024. This guide covers compliance requirements and practical implementation steps for MTD."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-compliance/making-tax-digital-dental-practices-mtd-compliance"
 faqs:
   - question: "When does Making Tax Digital apply to dental practices?"
     answer: "MTD for VAT applies to all VAT-registered dental practices since April 2019. MTD for Income Tax affects sole trader associates and partnerships earning over £10,000 annually from April 2024. Most dental practices fall under these requirements due to their turnover levels."

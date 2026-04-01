@@ -11,7 +11,7 @@ image: ""
 h1: "The Real Cost of Setting Up a Dental Practice from Scratch in the UK"
 summary: "Setting up a new dental practice typically costs £300,000-£600,000, covering everything from equipment and fit-out to legal fees and working capital."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/cost-setting-up-dental-practice-uk"
 faqs:
   - question: "How much does it cost to set up a small dental practice in the UK?"
     answer: "A small dental practice with 2-3 surgeries typically costs £300,000-£500,000 to set up from scratch. This includes equipment (£120,000-£180,000), fit-out costs (£80,000-£150,000), professional fees (£15,000-£25,000), and working capital for the first 6-12 months. Location significantly affects these costs, with London practices requiring substantially more capital."

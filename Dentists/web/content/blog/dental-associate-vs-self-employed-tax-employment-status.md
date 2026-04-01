@@ -11,7 +11,7 @@ image: ""
 h1: "Dental Associate vs Self Employed: Understanding Your Tax and Employment Status"
 summary: "The distinction between associate and self-employed dentist status affects your tax obligations, employment rights, and financial planning. Understanding these differences is crucial for compliance and optimising your position."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dental-associate-vs-self-employed-tax-employment-status"
 faqs:
   - question: "How do I know if I'm genuinely self-employed as a dental associate?"
     answer: "Look at the reality of your working relationship, not just your contract. If you have control over how and when you work, bear financial risk, can substitute others, and aren't integrated into the practice as an employee would be, you're likely genuinely self-employed. However, many \"self-employed associates\" are actually employees for tax purposes."

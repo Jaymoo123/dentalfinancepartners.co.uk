@@ -11,7 +11,7 @@ image: ""
 h1: "Associate Dentist Maternity Leave: Financial Planning Guide"
 summary: "Planning associate dentist maternity leave requires careful financial preparation, from understanding statutory maternity pay to arranging income protection and managing self-employed tax obligations."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/associate-dentist-maternity-leave-financial-planning"
 faqs:
   - question: "Am I entitled to statutory maternity pay as a dental associate?"
     answer: "This depends on your employment status. If you're classified as an employee for employment law purposes (regardless of tax treatment), you may qualify for statutory maternity pay. However, many dental associates are self-employed and instead qualify for Maternity Allowance. Professional advice can help determine your specific entitlements."

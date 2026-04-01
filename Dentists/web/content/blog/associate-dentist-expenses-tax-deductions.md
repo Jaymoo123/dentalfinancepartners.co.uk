@@ -11,7 +11,7 @@ image: ""
 h1: "Associate Dentist Expenses: What You Can Claim Against Tax"
 summary: "As an associate dentist, you can claim legitimate business expenses against your tax bill to reduce what you owe HMRC. Understanding which expenses qualify can save you hundreds or thousands of pounds each year."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/associate-dentist-expenses-tax-deductions"
 faqs:
   - question: "What is the most common expense associate dentists can claim?"
     answer: "CPD courses and professional development are typically the largest claimable expenses for associate dentists. Most associates spend £2,000-£4,000 annually on training, conferences, and continuing education, all of which are fully deductible against tax as they're essential for maintaining GDC registration and improving clinical skills."

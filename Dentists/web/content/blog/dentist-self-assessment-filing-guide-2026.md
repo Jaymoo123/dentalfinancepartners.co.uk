@@ -11,7 +11,7 @@ image: ""
 h1: "Dentist Self Assessment: Complete Filing Guide 2026"
 summary: "Essential guide covering everything UK dentists need to know about filing their Self Assessment tax return, including key deadlines and allowable expenses."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dentist-self-assessment-filing-guide-2026"
 faqs:
   - question: "When is the dentist self assessment deadline for 2026?"
     answer: "The deadline for filing your 2024-25 dentist self assessment is 31st January 2026. This is also when any outstanding tax balance must be paid. If you owe over £1,000, you'll also need to make your first payment on account for 2025-26 on this date."

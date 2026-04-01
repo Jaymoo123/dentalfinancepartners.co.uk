@@ -11,7 +11,7 @@ image: ""
 h1: "Making Tax Digital for Dental Practices: Complete MTD Guide"
 summary: "Making Tax Digital is mandatory for most UK dental practices. This guide covers MTD compliance requirements, approved software, and practical steps for implementation."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-compliance/making-tax-digital-dental-practices-mtd-guide"
 faqs:
   - question: "Is Making Tax Digital mandatory for all dental practices?"
     answer: "Making Tax Digital is mandatory for VAT-registered businesses with turnover above £85,000. This includes most established dental practices, whether NHS, private, or mixed. Smaller practices below the VAT threshold aren't currently required to comply with MTD, but may choose to for the benefits of digital accounting systems."

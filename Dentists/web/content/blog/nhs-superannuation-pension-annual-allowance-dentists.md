@@ -11,7 +11,7 @@ image: ""
 h1: "NHS Superannuation and Pension Annual Allowance: What UK Dentists Need to Know"
 summary: "NHS superannuation contributions can push dentists over the pension annual allowance, triggering significant tax charges. Understanding how your NHS pension interacts with the annual allowance is crucial for effective pension planning."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/nhs-superannuation-pension-annual-allowance-dentists"
 faqs:
   - question: "How is my NHS pension annual allowance calculated?"
     answer: "For NHS superannuation, the annual allowance test measures the increase in capital value of your pension benefits. This is calculated by multiplying the increase in your annual pension by 16, then adding any increase in your lump sum. The result is your 'pension input amount' that counts against your £40,000 annual allowance."

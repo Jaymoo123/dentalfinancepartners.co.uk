@@ -11,7 +11,7 @@ image: ""
 h1: "Equipment Finance for Dental Practices: What Are the Tax Implications?"
 summary: "Understanding the tax implications of different equipment finance options can save your dental practice thousands in tax. We compare leasing, hire purchase, and outright purchase."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/equipment-finance-dental-practices-tax-implications"
 faqs:
   - question: "Can I claim capital allowances on leased dental equipment?"
     answer: "Only if it's a finance lease where you effectively own the equipment. With operating leases, you cannot claim capital allowances, but your monthly lease payments are fully tax-deductible as business expenses."

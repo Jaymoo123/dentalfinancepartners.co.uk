@@ -11,7 +11,7 @@ image: ""
 h1: "What can associate dentists claim as expenses?"
 summary: "A practical guide to allowable expenses for self-employed associates — from indemnity fees to instrument purchases."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/associate-dentist-tax-self-assessment-uk"
 faqs:
   - question: "Do all associate dentists need to file a Self Assessment?"
     answer: "Not always — it depends on your income sources and whether tax is fully collected via PAYE. Mixed income, significant private fees, or other untaxed income often means a return is required."

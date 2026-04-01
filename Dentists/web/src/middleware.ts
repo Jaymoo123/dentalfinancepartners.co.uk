@@ -1,89 +1,100 @@
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 
-// Simple in-memory rate limiter for lead submissions
-// For production, consider using Upstash Redis or Vercel KV
-const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
-
-const RATE_LIMIT_WINDOW = 60 * 1000; // 1 minute
-const MAX_REQUESTS = 5; // 5 requests per minute per IP
-
-function getRateLimitKey(request: NextRequest): string {
-  // Use IP address as the rate limit key
-  const forwarded = request.headers.get('x-forwarded-for');
-  const ip = forwarded ? forwarded.split(',')[0].trim() : 'unknown';
-  return `ratelimit:${ip}`;
-}
-
-function checkRateLimit(key: string): { allowed: boolean; remaining: number } {
-  const now = Date.now();
-  const record = rateLimitMap.get(key);
-
-  // Clean up expired entries periodically
-  if (rateLimitMap.size > 1000) {
-    for (const [k, v] of rateLimitMap.entries()) {
-      if (v.resetTime < now) {
-        rateLimitMap.delete(k);
-      }
-    }
-  }
-
-  if (!record || record.resetTime < now) {
-    // New window
-    rateLimitMap.set(key, { count: 1, resetTime: now + RATE_LIMIT_WINDOW });
-    return { allowed: true, remaining: MAX_REQUESTS - 1 };
-  }
-
-  if (record.count >= MAX_REQUESTS) {
-    return { allowed: false, remaining: 0 };
-  }
-
-  record.count++;
-  return { allowed: true, remaining: MAX_REQUESTS - record.count };
-}
+const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
+  "associate-dentist-agreements-financial-clauses": "associate-tax",
+  "associate-dentist-expenses-tax-deductions": "associate-tax",
+  "associate-dentist-maternity-leave-financial-planning": "associate-tax",
+  "associate-dentist-tax-calculator-uk": "associate-tax",
+  "associate-dentist-tax-guide-uk": "associate-tax",
+  "associate-dentist-tax-self-assessment-uk": "associate-tax",
+  "associate-dentist-vat-registration-uk": "vat-compliance",
+  "associate-to-practice-owner-financial-planning-uk": "buying-a-practice",
+  "associate-to-practice-owner-financial-transition-guide": "buying-a-practice",
+  "business-asset-disposal-relief-dentists-what-qualifies": "practice-finance",
+  "capital-allowances-dental-equipment-tax-relief-guide-2026": "practice-accounting",
+  "capital-gains-tax-selling-dental-practice-uk": "practice-finance",
+  "corporation-tax-dental-limited-companies-guide": "practice-accounting",
+  "cost-setting-up-dental-practice-uk": "practice-finance",
+  "cqc-inspection-costs-tax-deductible-expenses-uk-dentists": "vat-compliance",
+  "dental-accountant-london-how-to-choose-specialist": "practice-accounting",
+  "dental-accountant-manchester-specialist-knowledge": "practice-accounting",
+  "dental-associate-vs-self-employed-tax-employment-status": "associate-tax",
+  "dental-group-structure-multiple-sites-uk": "practice-finance",
+  "dental-practice-accountant-manchester": "practice-accounting",
+  "dental-practice-benchmarking-profitable": "practice-finance",
+  "dental-practice-corporation-tax-rates-2026-small-profits-main-rate": "practice-accounting",
+  "dental-practice-exit-planning-uk": "practice-finance",
+  "dental-practice-financial-planning-strategic-management-guide": "practice-finance",
+  "dental-practice-goodwill-buying-selling": "buying-a-practice",
+  "dental-practice-insurance-business-expense-claims": "practice-accounting",
+  "dental-practice-insurance-tax-deductible-expenses-guide": "practice-accounting",
+  "dental-practice-lease-vs-buy-decision-framework": "buying-a-practice",
+  "dental-practice-management-accounts-metrics-tracking": "practice-accounting",
+  "dental-practice-overhead-costs-management-control": "practice-finance",
+  "dental-practice-profit-extraction-uk": "practice-finance",
+  "dental-practice-profit-margin-benchmarking-optimization-uk": "practice-finance",
+  "dental-practice-rd-tax-credits-eligibility-claims": "practice-accounting",
+  "dental-practice-software-accounting-integration": "practice-accounting",
+  "dental-practice-valuation-methods-uk": "buying-a-practice",
+  "dental-practice-vat-compliance-guide-uk": "vat-compliance",
+  "dental-practice-vat-registration-threshold-changes-2026": "vat-compliance",
+  "dental-practice-vat-registration-threshold-requirements": "vat-compliance",
+  "dentist-pension-contributions-tax-relief-uk": "associate-tax",
+  "dentist-self-assessment-filing-guide-2026": "associate-tax",
+  "dentist-student-loan-repayment-tax-implications": "associate-tax",
+  "equipment-finance-dental-practices-tax-implications": "practice-finance",
+  "facial-aesthetics-vat-uk-dental-practices": "vat-compliance",
+  "hiring-associate-dentist-costs-uk-financial-planning": "practice-finance",
+  "hiring-first-associate-costs-structure-uk-dental": "practice-finance",
+  "how-to-choose-dental-accountant-uk": "practice-accounting",
+  "how-to-pay-yourself-dental-practice-owner-uk": "practice-finance",
+  "inter-company-loans-dividends-dental-groups-uk": "practice-accounting",
+  "ir35-dentists-associate-agreements-uk": "associate-tax",
+  "laboratory-costs-dental-accounts-uk": "practice-accounting",
+  "making-tax-digital-dental-practices-mtd-compliance": "vat-compliance",
+  "making-tax-digital-dental-practices-mtd-guide": "vat-compliance",
+  "maternity-paternity-leave-associate-dentists-uk": "associate-tax",
+  "nhs-contract-payments-accounting-uk-dentists": "practice-accounting",
+  "nhs-dental-contract-accounting-payment-processing": "practice-accounting",
+  "nhs-private-mix-dental-accounts": "practice-accounting",
+  "nhs-superannuation-pension-annual-allowance-dentists": "associate-tax",
+  "nhs-superannuation-pension-annual-allowance-uk-dentists": "associate-tax",
+  "nhs-uda-rates-2026-27-practice-finances": "practice-finance",
+  "payment-on-account-uk-dentists-guide": "associate-tax",
+  "pension-contributions-dentists-tax-relief-annual-allowance": "associate-tax",
+  "practice-acquisition-financial-due-diligence": "buying-a-practice",
+  "private-dental-practice-tax-complete-financial-guide": "practice-accounting",
+  "r-and-d-tax-credits-dental-practices-eligibility-uk": "practice-accounting",
+  "reading-dental-practice-profit-loss-account-uk": "practice-accounting",
+  "reasonable-profit-margin-dental-practice-uk": "practice-finance",
+  "self-assessment-registration-dentist-uk": "associate-tax",
+  "sole-trader-vs-limited-company-dentists-uk": "practice-finance",
+  "student-loan-repayments-dentists-calculation": "associate-tax",
+  "when-does-dental-practice-need-audit-uk": "practice-accounting",
+};
 
 export function middleware(request: NextRequest) {
-  // Only rate limit POST requests to prevent form spam
-  if (request.method === 'POST') {
-    const key = getRateLimitKey(request);
-    const { allowed, remaining } = checkRateLimit(key);
+  const { pathname } = request.nextUrl;
 
-    if (!allowed) {
-      return NextResponse.json(
-        { error: 'Too many requests. Please try again in a minute.' },
-        { 
-          status: 429,
-          headers: {
-            'Retry-After': '60',
-            'X-RateLimit-Limit': String(MAX_REQUESTS),
-            'X-RateLimit-Remaining': '0',
-          }
-        }
-      );
+  const oldBlogMatch = pathname.match(/^\/blog\/([^\/]+)$/);
+  if (oldBlogMatch) {
+    const slug = oldBlogMatch[1];
+    const categorySlug = SLUG_TO_CATEGORY_MAP[slug];
+    if (categorySlug) {
+      return NextResponse.redirect(new URL(`/blog/${categorySlug}/${slug}`, request.url), 301);
     }
+  }
 
-    // Add rate limit headers to response
-    const response = NextResponse.next();
-    response.headers.set('X-RateLimit-Limit', String(MAX_REQUESTS));
-    response.headers.set('X-RateLimit-Remaining', String(remaining));
-    return response;
+  const oldCategoryMatch = pathname.match(/^\/blog\/category\/([^\/]+)$/);
+  if (oldCategoryMatch) {
+    const categorySlug = oldCategoryMatch[1];
+    return NextResponse.redirect(new URL(`/blog/${categorySlug}`, request.url), 301);
   }
 
   return NextResponse.next();
 }
 
-// Only run middleware on API routes and form submissions
-// Since we're using client-side Supabase, this mainly protects against
-// automated POST spam to our pages
 export const config = {
-  matcher: [
-    /*
-     * Match all request paths except for the ones starting with:
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico (favicon file)
-     * - public files (images, etc.)
-     */
-    '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
-  ],
+  matcher: ["/blog/:path*"],
 };

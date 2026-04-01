@@ -11,7 +11,7 @@ image: ""
 h1: "NHS Dental Contract Accounting: Payment Processing & Management"
 summary: "NHS dental contract accounting involves complex payment structures and reporting requirements that differ significantly from private dentistry. Understanding UDA calculations, clawback provisions, and monthly reconciliation is essential for proper financial management."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/nhs-dental-contract-accounting-payment-processing"
 faqs:
   - question: "How often should I reconcile my NHS dental contract accounts?"
     answer: "You should perform basic UDA tracking monthly and comprehensive reconciliations quarterly. Monthly tracking helps identify delivery issues early, while quarterly reconciliations provide detailed financial position updates. Year-end reconciliation is essential for final contract settlement with NHS England."

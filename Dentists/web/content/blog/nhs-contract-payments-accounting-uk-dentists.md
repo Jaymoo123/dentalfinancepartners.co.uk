@@ -11,7 +11,7 @@ image: ""
 h1: "How NHS Contract Payments Work and How to Account for Them"
 summary: "NHS contract payments form the backbone of many UK dental practices, but understanding how they work and accounting for them properly can be complex. This guide explains BSA payments, reconciliation processes, and key accounting considerations."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/nhs-contract-payments-accounting-uk-dentists"
 faqs:
   - question: "How often does NHS BSA pay dental practices?"
     answer: "NHS BSA typically pays dental practices monthly, with payments usually arriving around the 15th of each month. These are advance payments representing one-twelfth of your annual contract value. Additional payments for specific treatments like domiciliary visits or sedation may arrive separately, often a month or two after the work was completed."

@@ -11,7 +11,7 @@ image: ""
 h1: "Payment on Account: What UK Dentists Need to Know"
 summary: "Payment on account requires UK dentists to pay tax in advance based on previous year's liability. Understanding POA rules helps avoid penalties and manage cash flow effectively."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/payment-on-account-uk-dentists-guide"
 faqs:
   - question: "Do all dentists have to make payment on account?"
     answer: "No, payment on account only applies when your Self Assessment tax bill exceeds £1,000 and less than 80% was collected through PAYE or other deductions. Many employed dentists with small amounts of private work won't reach these thresholds."

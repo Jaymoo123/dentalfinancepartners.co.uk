@@ -11,7 +11,7 @@ image: ""
 h1: "How to Read a Dental Practice Profit and Loss Account"
 summary: "Your practice P&L tells the story of your financial performance, but knowing what to look for is crucial. We explain the key figures and ratios that matter most to UK dental practices."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/reading-dental-practice-profit-loss-account-uk"
 faqs:
   - question: "What should a dental practice gross profit margin be?"
     answer: "A healthy dental practice should typically achieve a gross profit margin of 60-70%. This is calculated as total income minus direct costs (associate fees, lab bills, materials) divided by total income. If your gross profit is below 55%, you may have issues with associate fee structures, high laboratory costs, or inefficient purchasing that need addressing."

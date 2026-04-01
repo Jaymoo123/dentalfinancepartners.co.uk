@@ -11,7 +11,7 @@ image: ""
 h1: "Dental Practice Insurance: Tax Deductible Expenses Guide"
 summary: "Most dental practice insurance premiums qualify as tax deductible business expenses, including professional indemnity and building cover. Understanding which policies qualify can reduce your tax bill significantly."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-practice-insurance-tax-deductible-expenses-guide"
 faqs:
   - question: "Can I claim all dental practice insurance as tax deductible expenses?"
     answer: "Most dental practice insurance premiums are fully tax deductible, including professional indemnity, building insurance, contents cover, and public liability insurance. However, personal insurance policies like personal life insurance or home insurance cannot be claimed as business expenses."

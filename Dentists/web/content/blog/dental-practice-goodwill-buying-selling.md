@@ -11,7 +11,7 @@ image: ""
 h1: "Understanding Goodwill When Buying or Selling a Dental Practice"
 summary: "Goodwill represents the intangible value of a dental practice beyond its physical assets. Understanding how it's calculated and taxed is crucial for both buyers and sellers."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-goodwill-buying-selling"
 faqs:
   - question: "How much goodwill should I pay when buying a dental practice?"
     answer: "Goodwill typically ranges from 0.7 to 1.2 times annual profit for UK dental practices, depending on factors like patient retention, location, and growth potential. The key is ensuring projected returns justify the premium you pay above tangible asset values."

@@ -11,7 +11,7 @@ image: ""
 h1: "Inter-Company Loans and Dividends in UK Dental Groups"
 summary: "Multi-site dental groups must navigate complex rules around inter-company loans and dividend distributions. Getting the structure wrong can trigger unexpected tax charges and compliance issues."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/inter-company-loans-dividends-dental-groups-uk"
 faqs:
   - question: "Can I move money between my dental practice companies without tax implications?"
     answer: "Moving money between group companies through inter-company loans typically doesn't create immediate tax charges, but interest on loans is taxable. Dividends between UK group companies are usually exempt from corporation tax if proper conditions are met. However, both require proper documentation and compliance with transfer pricing rules."

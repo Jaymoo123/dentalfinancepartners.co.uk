@@ -11,7 +11,7 @@ image: ""
 h1: "Dentist Pension Contributions: Tax Relief & Annual Allowance Guide"
 summary: "Understanding pension contributions and tax relief can significantly reduce your tax bill as a dentist. This guide covers annual allowance limits, NHS pension implications, and strategies for maximising tax efficiency."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dentist-pension-contributions-tax-relief-uk"
 faqs:
   - question: "What is the maximum pension contribution I can make as a dentist in 2024/25?"
     answer: "The standard annual allowance is £60,000 for 2024/25. However, if your adjusted income exceeds £260,000, this reduces under the tapered annual allowance rules, potentially down to £10,000. You can also carry forward unused allowance from the previous three tax years, potentially allowing much larger contributions in the right circumstances."

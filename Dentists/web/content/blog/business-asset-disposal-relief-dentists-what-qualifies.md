@@ -11,7 +11,7 @@ image: ""
 h1: "Business Asset Disposal Relief for Dentists: What Qualifies?"
 summary: "Business Asset Disposal Relief can reduce your Capital Gains Tax from 20% to 10% when selling a dental practice. Understanding the qualification criteria is crucial for maximising tax savings."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/business-asset-disposal-relief-dentists-what-qualifies"
 faqs:
   - question: "How much can I save with Business Asset Disposal Relief?"
     answer: "BADR reduces Capital Gains Tax from 20% to 10% on qualifying gains up to £1 million over your lifetime. For a practice sale generating £300,000 in capital gains, this saves £30,000 in tax. The relief can only be used once per business disposal."

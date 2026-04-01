@@ -11,7 +11,7 @@ image: ""
 h1: "NHS UDA Rates 2026/27: What They Mean for Your Practice Finances"
 summary: "The NHS UDA rates for 2026/27 will significantly impact practice finances and associate earnings. Understanding these changes is crucial for financial planning and contract negotiations."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/nhs-uda-rates-2026-27-practice-finances"
 faqs:
   - question: "What is the NHS UDA rate for 2026/27?"
     answer: "The standard NHS UDA rate for 2026/27 is £25.20 per UDA. However, this can vary depending on your specific contract terms, regional supplements, and whether your practice qualifies for any high-need area payments. Check your contract details for your exact rate."

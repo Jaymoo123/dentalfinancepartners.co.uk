@@ -11,7 +11,7 @@ image: ""
 h1: "R&D Tax Credits for Dental Practices: Are You Eligible?"
 summary: "Many UK dental practices unknowingly qualify for R&D tax credits worth thousands. From new treatment protocols to digital dentistry innovations, your practice might be eligible for significant tax relief."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/r-and-d-tax-credits-dental-practices-eligibility-uk"
 faqs:
   - question: "Do NHS dental practices qualify for R&D tax credits?"
     answer: "Yes, NHS practices can claim R&D tax credits on qualifying research and development activities, just like private practices. The source of your income doesn't affect eligibility — what matters is whether you're conducting genuine R&D work that seeks scientific or technological advances."

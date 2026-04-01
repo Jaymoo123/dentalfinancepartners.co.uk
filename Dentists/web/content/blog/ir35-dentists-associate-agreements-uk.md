@@ -11,7 +11,7 @@ image: ""
 h1: "IR35 and Dentists: Does It Apply to Associate Agreements?"
 summary: "IR35 off-payroll working rules can impact dental associates operating through limited companies. Understanding when these rules apply to associate agreements is crucial for tax compliance."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/ir35-dentists-associate-agreements-uk"
 faqs:
   - question: "Does IR35 automatically apply to all dental associates working through limited companies?"
     answer: "No, IR35 doesn't automatically apply to all dental associates with limited companies. It depends on your actual working relationship with the practice. Associates who work like employees (fixed hours, detailed control, no genuine business risk) are likely caught by IR35, while those operating genuine businesses across multiple practices may fall outside the rules."

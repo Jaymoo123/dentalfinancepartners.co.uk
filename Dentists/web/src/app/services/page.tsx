@@ -17,23 +17,29 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/services`,
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dental practice accounting services",
+    description:
+      "UK dental accounting: year-end compliance, management accounts, tax planning, payroll, VAT, and profit extraction for practices and associates.",
+  },
 };
 
 const sections = [
   {
     title: "Dental practice accounting & reporting",
     body: "Month-end and year-end accounts that reflect NHS and private mixes, associate costs, labs, and equipment — so you can see where profit really comes from.",
-    links: [{ href: "/blog/nhs-private-mix-dental-accounts", label: "NHS & private reporting" }],
+    links: [{ href: "/blog/practice-accounting/nhs-private-mix-dental-accounts", label: "NHS & private reporting" }],
   },
   {
     title: "Tax planning & compliance",
     body: "Corporation tax, Self Assessment for directors and associates, and sensible timing of decisions across tax years — framed for UK rules, not US-style advice.",
-    links: [{ href: "/blog/associate-dentist-tax-self-assessment-uk", label: "Associate expenses & tax" }],
+    links: [{ href: "/blog/associate-tax/associate-dentist-tax-self-assessment-uk", label: "Associate expenses & tax" }],
   },
   {
     title: "Profit extraction & owner remuneration",
     body: "Salary, dividends, pensions, and director accounts structured with clear governance — avoiding informal drawings that create HMRC risk.",
-    links: [{ href: "/blog/dental-practice-profit-extraction-uk", label: "Limited company & extraction" }],
+    links: [{ href: "/blog/practice-finance/dental-practice-profit-extraction-uk", label: "Limited company & extraction" }],
   },
   {
     title: "Payroll, pensions, and staff costs",

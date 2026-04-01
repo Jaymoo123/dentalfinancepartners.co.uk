@@ -11,7 +11,7 @@ image: ""
 h1: "Should your dental practice be a limited company?"
 summary: "Incorporation is not always the right answer. Here is what to consider before making the switch."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-practice-profit-extraction-uk"
 faqs:
   - question: "Is there a single best way to take money out of a dental practice?"
     answer: "No — the right mix depends on your company profit, personal allowances, pension strategy, and long-term exit plans. What is “tax-efficient” in one year can be the wrong answer after a big capital spend or refinance."

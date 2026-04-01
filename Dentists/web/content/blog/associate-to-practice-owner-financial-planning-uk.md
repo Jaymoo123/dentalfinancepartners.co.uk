@@ -11,7 +11,7 @@ image: ""
 h1: "Moving from Associate to Practice Owner: Financial Planning Guide"
 summary: "A comprehensive guide covering the financial planning essentials when transitioning from associate to practice owner, including funding options, tax implications, and business planning considerations."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/associate-to-practice-owner-financial-planning-uk"
 faqs:
   - question: "How much money do I need to buy a dental practice?"
     answer: "Most practice acquisitions require a deposit of 10-30% of the purchase price, plus additional working capital. For a £400,000 practice, expect to need £40,000-£120,000 as a deposit plus £20,000-£30,000 for working capital and professional fees. The exact amount depends on the practice value, your borrowing capacity, and lender requirements."

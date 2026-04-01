@@ -11,7 +11,7 @@ image: ""
 h1: "Dental Practice Financial Planning: Strategic Management Guide"
 summary: "Strategic financial planning transforms dental practices from reactive to proactive businesses. This guide covers budgeting, cash flow management, and long-term growth planning specifically for UK dental practices."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-practice-financial-planning-strategic-management-guide"
 faqs:
   - question: "How often should I review my dental practice financial plan?"
     answer: "Review your financial plan monthly for short-term elements like cash flow and KPIs, quarterly for budget performance, and annually for strategic planning. Major changes in your practice or market conditions may require additional reviews between scheduled times."

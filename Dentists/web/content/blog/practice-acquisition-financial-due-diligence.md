@@ -11,7 +11,7 @@ image: ""
 h1: "The financial due diligence checklist for practice acquisition"
 summary: "What to look at — and what to watch out for — before you commit to buying a dental practice."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/practice-acquisition-financial-due-diligence"
 ---
 
 <h2>Start with what the seller is actually selling</h2>

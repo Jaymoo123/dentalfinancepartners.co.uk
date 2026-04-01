@@ -11,7 +11,7 @@ image: ""
 h1: "How to Pay Yourself as a Dental Practice Owner: Salary vs Dividend Guide"
 summary: "Learn the most tax-efficient ways to pay yourself as a dental practice owner, including salary vs dividend strategies and profit extraction methods that comply with HMRC rules."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/how-to-pay-yourself-dental-practice-owner-uk"
 faqs:
   - question: "What's the most tax-efficient salary for a dental practice owner?"
     answer: "Most dental practice owners pay themselves a salary at the National Insurance threshold (£12,570 for 2024/25). This preserves your state pension record without triggering National Insurance contributions. Some go slightly higher for pension contribution purposes, but the NI threshold is typically optimal for pure tax efficiency."

@@ -5,7 +5,7 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { StickyCTA } from "@/components/ui/StickyCTA";
 import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
-import { getPostBySlug } from "@/lib/blog";
+import { getPostBySlug, getCategorySlug } from "@/lib/blog";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 
 const btnMailOutline =
@@ -360,23 +360,26 @@ export default function HomePage() {
             Real-world guidance on associate tax, practice finance, and NHS accounting — written by accountants who work exclusively with UK dental practices. Each article addresses questions we&apos;re actually asked by dentists every week.
           </p>
           <ul className="mt-12 grid gap-6 sm:grid-cols-3 sm:gap-8">
-            {practicalPosts.map((p) => (
-              <li key={p.slug}>
-                <Link
-                  href={`/blog/${p.slug}`}
-                  className={`card-premium group flex h-full flex-col p-6 transition-shadow duration-300 hover:shadow-lg hover:shadow-[rgba(0,27,61,0.08)] ${focusRing}`}
-                >
-                  <span className="text-xs font-semibold uppercase tracking-wider text-[var(--gold-strong)]">
-                    {p.category}
-                  </span>
-                  <span className="mt-3 font-serif text-lg font-semibold leading-snug text-[var(--navy)] group-hover:underline group-hover:decoration-[var(--gold)] group-hover:underline-offset-4">
-                    {p.title}
-                  </span>
-                  <span className="mt-2 flex-1 text-sm leading-relaxed text-[var(--muted)]">{p.summary}</span>
-                  <span className="mt-4 text-sm font-semibold text-[var(--navy-soft)]">Read more →</span>
-                </Link>
-              </li>
-            ))}
+            {practicalPosts.map((p) => {
+              const categorySlug = getCategorySlug(p);
+              return (
+                <li key={p.slug}>
+                  <Link
+                    href={`/blog/${categorySlug}/${p.slug}`}
+                    className={`card-premium group flex h-full flex-col p-6 transition-shadow duration-300 hover:shadow-lg hover:shadow-[rgba(0,27,61,0.08)] ${focusRing}`}
+                  >
+                    <span className="text-xs font-semibold uppercase tracking-wider text-[var(--gold-strong)]">
+                      {p.category}
+                    </span>
+                    <span className="mt-3 font-serif text-lg font-semibold leading-snug text-[var(--navy)] group-hover:underline group-hover:decoration-[var(--gold)] group-hover:underline-offset-4">
+                      {p.title}
+                    </span>
+                    <span className="mt-2 flex-1 text-sm leading-relaxed text-[var(--muted)]">{p.summary}</span>
+                    <span className="mt-4 text-sm font-semibold text-[var(--navy-soft)]">Read more →</span>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
           <p className="mt-10">
             <Link

@@ -11,7 +11,7 @@ image: ""
 h1: "What is a Reasonable Profit Margin for a Dental Practice?"
 summary: "Understanding what constitutes a reasonable profit margin helps practice owners benchmark their performance and identify improvement opportunities."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/reasonable-profit-margin-dental-practice-uk"
 faqs:
   - question: "What profit margin should I expect from my dental practice?"
     answer: "Most successful UK dental practices achieve profit margins between 15-35% of gross revenue. NHS-heavy practices typically see 15-25%, while private practices often achieve 25-35% or higher. Your specific margin depends on your patient mix, overhead management, and operational efficiency."

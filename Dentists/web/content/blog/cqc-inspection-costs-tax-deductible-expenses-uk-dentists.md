@@ -11,7 +11,7 @@ image: ""
 h1: "CQC Inspection Costs: Can UK Dentists Claim Them as Tax-Deductible Expenses?"
 summary: "CQC inspection costs and compliance fees are generally tax-deductible business expenses for UK dental practices. Understanding what you can claim helps reduce your tax bill while staying compliant."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-compliance/cqc-inspection-costs-tax-deductible-expenses-uk-dentists"
 faqs:
   - question: "Are CQC registration fees tax-deductible for dental practices?"
     answer: "Yes, CQC registration and annual fees are typically tax-deductible business expenses for dental practices. These are necessary regulatory costs for operating a dental practice in the UK, so HMRC generally allows them as deductions against practice profits."

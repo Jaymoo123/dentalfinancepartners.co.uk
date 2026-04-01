@@ -11,7 +11,7 @@ image: ""
 h1: "R&D Tax Credits for Dental Practices: Eligibility & Claims"
 summary: "Many dental practices can claim R&D tax credits for innovation projects but don't realise they qualify. This guide explains eligibility criteria and the claiming process."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-practice-rd-tax-credits-eligibility-claims"
 faqs:
   - question: "What types of dental innovations qualify for R&D tax credits?"
     answer: "Qualifying activities include developing new treatment techniques, creating custom software or digital workflows, adapting equipment for specific applications, researching improved materials or processes, and any systematic investigation that advances dental science. Routine treatment delivery or following established protocols typically won't qualify - there must be genuine scientific or technological uncertainty being resolved."

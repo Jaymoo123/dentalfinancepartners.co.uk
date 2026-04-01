@@ -11,7 +11,7 @@ image: ""
 h1: "Dental Practice VAT Registration: Threshold & Requirements 2026"
 summary: "UK dental practices must register for VAT when turnover exceeds £90,000 over 12 months. Understanding the requirements and timing is crucial for compliance."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-compliance/dental-practice-vat-registration-threshold-requirements"
 faqs:
   - question: "What is the VAT registration threshold for dental practices in 2026?"
     answer: "The VAT registration threshold for dental practices is £90,000 of taxable turnover in any rolling 12-month period. This applies to all businesses, including dental practices, and you must register within 30 days of exceeding this threshold."

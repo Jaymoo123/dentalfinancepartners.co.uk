@@ -11,7 +11,7 @@ image: ""
 h1: "Sole Trader vs Limited Company for Dentists: Which is Right for You?"
 summary: "Choosing between sole trader and limited company status affects your tax bill, admin burden, and future flexibility. We break down the key differences for UK dentists."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/sole-trader-vs-limited-company-dentists-uk"
 faqs:
   - question: "When should a dentist consider switching from sole trader to limited company?"
     answer: "Consider switching when your annual profits consistently exceed £50,000-£60,000, you want to retain profits in the business for investment, or you're planning expansion. The tax savings typically outweigh additional costs at this level, but get professional advice to model your specific situation."

@@ -11,7 +11,7 @@ image: ""
 h1: "Dental Practice Valuation Methods Explained for UK Dentists"
 summary: "Understanding how dental practices are valued is crucial whether you're buying, selling, or simply want to know your practice worth. We explain the main valuation methods used in the UK market."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-valuation-methods-uk"
 faqs:
   - question: "What's the most common dental practice valuation method in the UK?"
     answer: "The EBITDA multiple method is most commonly used for established UK dental practices. This involves multiplying the practice's annual earnings (before interest, tax, depreciation, and amortisation) by a factor typically ranging from 2-4, depending on factors like location, patient mix, and growth potential."

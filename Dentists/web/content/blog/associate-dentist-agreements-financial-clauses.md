@@ -11,7 +11,7 @@ image: ""
 h1: "Associate Dentist Agreements: The Financial Clauses That Matter"
 summary: "Your associate agreement determines how much you earn and what you pay for. Understanding the key financial clauses can save you thousands."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/associate-dentist-agreements-financial-clauses"
 faqs:
   - question: "What's a typical percentage split for UK dental associates?"
     answer: "Percentage splits typically range from 40% to 55% for associates, with 45-50% being most common. However, the expenses deducted from your percentage are often more important than the headline rate. Always check what costs are charged to your share before comparing different offers."

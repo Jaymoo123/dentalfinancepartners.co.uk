@@ -11,7 +11,7 @@ image: ""
 h1: "How to Structure a Dental Group Across Multiple Sites"
 summary: "Expanding to multiple dental practices requires careful structural planning to optimise tax, manage risk, and maintain compliance across sites."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-group-structure-multiple-sites-uk"
 faqs:
   - question: "What's the best legal structure for a 3-site dental group?"
     answer: "A subsidiary structure with each practice as a separate limited company owned by a holding company typically works best. This provides risk isolation between sites while maintaining operational flexibility and tax efficiency. However, the optimal structure depends on your specific circumstances, ownership arrangements, and growth plans."

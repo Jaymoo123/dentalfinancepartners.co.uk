@@ -17,6 +17,12 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/about`,
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "About us",
+    description:
+      "Why we focus on UK dental practices, associates, and owners — specialist accounting without generic SME boilerplate.",
+  },
 };
 
 export default function AboutPage() {
@@ -50,14 +56,14 @@ export default function AboutPage() {
         </Link>{" "}
         is written for dentists and practice managers who need UK context — not recycled US tax tips. Start with{" "}
         <Link
-          href="/blog/nhs-private-mix-dental-accounts"
+          href="/blog/practice-accounting/nhs-private-mix-dental-accounts"
           className={`text-[var(--accent-strong)] underline ${focusRing} rounded`}
         >
           NHS/private reporting
         </Link>{" "}
         or{" "}
         <Link
-          href="/blog/associate-dentist-tax-self-assessment-uk"
+          href="/blog/associate-tax/associate-dentist-tax-self-assessment-uk"
           className={`text-[var(--accent-strong)] underline ${focusRing} rounded`}
         >
           associate Self Assessment

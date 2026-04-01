@@ -11,7 +11,7 @@ image: ""
 h1: "Capital Allowances on Dental Equipment: Tax Relief Guide 2026"
 summary: "Capital allowances let UK dental practices claim tax relief on equipment purchases, potentially saving thousands in corporation tax. Understanding the rules helps you time purchases and maximise relief."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/capital-allowances-dental-equipment-tax-relief-guide-2026"
 faqs:
   - question: "What dental equipment qualifies for capital allowances?"
     answer: "Most dental equipment qualifies, including dental chairs, X-ray machines, computers, sterilisation equipment, and practice management software. The key test is whether you'll use the item for more than one year in your dental practice. Items must be used for business purposes and be capital rather than revenue expenditure."

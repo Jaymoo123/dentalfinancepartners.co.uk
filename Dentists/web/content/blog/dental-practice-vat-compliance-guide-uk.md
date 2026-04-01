@@ -11,7 +11,7 @@ image: ""
 h1: "Dental Practice VAT & Compliance: Complete Guide for UK Dentists"
 summary: "Everything UK practice owners need to know about VAT registration, rates and compliance requirements for dental practices."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-compliance/dental-practice-vat-compliance-guide-uk"
 faqs:
   - question: "Do I need to register for VAT if my dental practice only does NHS work?"
     answer: "NHS contract payments count towards the VAT registration threshold, so you'll need to register once your total practice turnover exceeds £85,000. However, NHS dental treatment is exempt from VAT, so you won't charge VAT to patients but still need to comply with VAT registration and reporting requirements."

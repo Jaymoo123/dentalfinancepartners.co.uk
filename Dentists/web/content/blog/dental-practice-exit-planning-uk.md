@@ -11,7 +11,7 @@ image: ""
 h1: "Dental Practice Exit Planning: When to Start and What to Consider"
 summary: "Most dental practice owners wait too long before starting their exit planning, missing opportunities to maximise value. The best time to plan your exit is typically 5-7 years before you want to sell."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-practice-exit-planning-uk"
 faqs:
   - question: "When should I start planning my dental practice exit?"
     answer: "Start your dental practice exit planning 5-7 years before you want to sell. This gives you time to address valuation issues, implement tax-efficient strategies, and develop multiple exit options. Even if you're not planning to sell soon, understanding what affects practice value helps you make better business decisions."

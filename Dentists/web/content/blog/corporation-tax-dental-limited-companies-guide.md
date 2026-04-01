@@ -11,7 +11,7 @@ image: ""
 h1: "Corporation Tax for Dental Limited Companies: A Plain-English Guide"
 summary: "Understanding corporation tax is crucial for dental limited companies. This guide covers CT600 filing requirements, current rates, deadlines, and how corporation tax affects your profit extraction strategy."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/corporation-tax-dental-limited-companies-guide"
 faqs:
   - question: "What is the current corporation tax rate for dental limited companies?"
     answer: "Dental limited companies pay 19% corporation tax on profits up to £50,000, with a tapered rate between £50,000-£250,000, and 25% on profits over £250,000. The exact rate depends on your company's total profits for the accounting period."

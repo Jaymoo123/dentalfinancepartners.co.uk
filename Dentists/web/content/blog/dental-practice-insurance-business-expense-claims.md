@@ -11,7 +11,7 @@ image: ""
 h1: "Dental Practice Insurance: What Can You Claim as a Business Expense?"
 summary: "Most dental practice insurance premiums are tax-deductible business expenses, but the rules vary by type of cover and how you structure your practice."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-practice-insurance-business-expense-claims"
 faqs:
   - question: "Can dental associates claim professional indemnity insurance as a business expense?"
     answer: "Yes, if you pay for your own professional indemnity insurance as an associate, you can typically claim it as a business expense on your Self Assessment. However, if your practice pays for it, this may create a taxable benefit for you personally."

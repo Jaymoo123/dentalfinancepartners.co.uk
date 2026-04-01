@@ -11,7 +11,7 @@ image: ""
 h1: "Do I Need to Register for Self Assessment as a Dentist?"
 summary: "Most UK dentists need to register for Self Assessment, but the requirements vary depending on your employment status and income sources."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/self-assessment-registration-dentist-uk"
 faqs:
   - question: "Do I need to register for Self Assessment if I'm a fully employed dentist?"
     answer: "Not usually, but you must register if you have any additional income sources (like private work or teaching) or earn over £100,000 annually. Check your employment contract to confirm your status — many dental positions that seem like employment are actually self-employed arrangements."

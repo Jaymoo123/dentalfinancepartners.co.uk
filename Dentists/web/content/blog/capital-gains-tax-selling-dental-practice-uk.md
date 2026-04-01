@@ -11,7 +11,7 @@ image: ""
 h1: "Capital Gains Tax When Selling a Dental Practice: What UK Dentists Need to Know"
 summary: "Selling your dental practice triggers capital gains tax on the profit. Understanding CGT rates, available reliefs, and timing strategies can significantly reduce your tax bill."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/capital-gains-tax-selling-dental-practice-uk"
 faqs:
   - question: "What is the capital gains tax rate on dental practice sales?"
     answer: "CGT rates for 2024-25 are 10% for basic rate taxpayers and 20% for higher rate taxpayers. However, Business Asset Disposal Relief can reduce the rate to 10% on qualifying business disposals up to £1 million lifetime limit."

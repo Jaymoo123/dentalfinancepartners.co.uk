@@ -11,7 +11,7 @@ image: ""
 h1: "Dental Practice VAT Registration: What the 2026 Threshold Changes Mean for You"
 summary: "The VAT registration threshold is set to change in 2026, affecting when dental practices must register for VAT. Understanding these changes is crucial for planning your practice finances and ensuring compliance."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-compliance/dental-practice-vat-registration-threshold-changes-2026"
 faqs:
   - question: "When will the new VAT registration threshold for dental practices take effect?"
     answer: "The new VAT registration threshold is planned to take effect from April 2026. While the exact threshold amount hasn't been finalised, it's expected to increase from the current £85,000 to approximately £90,000-£95,000 annually."

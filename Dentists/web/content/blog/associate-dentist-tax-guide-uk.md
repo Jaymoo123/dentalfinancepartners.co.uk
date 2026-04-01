@@ -11,7 +11,7 @@ image: ""
 h1: "Associate Dentist Tax Guide: Self Assessment, Expenses & Deductions"
 summary: "Essential tax guidance for UK associate dentists covering Self Assessment requirements, allowable expenses, and key deductions to minimise your tax bill legally."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/associate-dentist-tax-guide-uk"
 faqs:
   - question: "Do associate dentists need to complete Self Assessment?"
     answer: "Yes, most associate dentists must complete Self Assessment as they're typically classified as self-employed. You must register if your dental income exceeds £1,000 per year, even if you only work part-time or in one practice."

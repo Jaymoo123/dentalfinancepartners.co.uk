@@ -11,7 +11,7 @@ image: ""
 h1: "Facial Aesthetics and VAT: What UK Dental Practices Need to Know"
 summary: "Facial aesthetics services have different VAT rules than traditional dentistry. Understanding these rules is crucial for practices offering botox, fillers, and other cosmetic treatments."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-compliance/facial-aesthetics-vat-uk-dental-practices"
 faqs:
   - question: "Do I need to register for VAT if I only do a small amount of facial aesthetics?"
     answer: "You need to register for VAT if your total standard-rated income (including facial aesthetics) exceeds £85,000 in a 12-month period. Even small amounts of aesthetic work count towards this threshold, as they're standard-rated at 20% unlike most dental treatments which are VAT-exempt."
