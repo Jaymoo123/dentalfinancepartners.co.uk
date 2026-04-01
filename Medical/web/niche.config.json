@@ -1,8 +1,8 @@
 {
   "niche_id": "medical",
-  "display_name": "Medical Accountants UK",
-  "legal_name": "Medical Accountants UK Ltd",
-  "domain": "www.medicalaccountantsuk.co.uk",
+  "display_name": "Medical Accounts",
+  "legal_name": "Medical Accounts Ltd",
+  "domain": "www.medicalaccounts.co.uk",
   "tagline": "Specialist accountants for UK medical professionals",
   "description": "Expert accounting for GPs, consultants and medical practices. NHS pension advice, locum tax planning, private practice incorporation and expense claims.",
   "brand": {
@@ -11,7 +11,7 @@
     "publisher_logo_url": "/og-placeholder.svg"
   },
   "contact": {
-    "email": "hello@medicalaccountantsuk.co.uk",
+    "email": "hello@medicalaccounts.co.uk",
     "phone": "+44 20 0000 0000"
   },
   "navigation": [
@@ -102,7 +102,7 @@
     ],
     "google_analytics_id": "G-MEDICAL-PLACEHOLDER",
     "google_site_verification": "MEDICAL-VERIFICATION-PLACEHOLDER",
-    "theme_color": "#0891b2",
+    "theme_color": "#b87333",
     "homepage_title": "GP Accountants UK | Tax Specialists for Doctors",
     "homepage_h1": "Specialist Accountants for GPs & Medical Professionals",
     "homepage_description": "Medical accounting specialists for UK doctors. NHS pension optimization, locum tax returns, practice incorporation, and medical expense claims. Free consultation for GPs and consultants."

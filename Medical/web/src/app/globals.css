@@ -9,33 +9,44 @@
 */
 
 :root {
-  /* Medical brand - teal/cyan (clinical, trustworthy, modern) */
-  --medical-teal: #0891b2;
-  --medical-teal-dark: #0e7490;
-  --medical-teal-light: #06b6d4;
+  /* Medical brand - deep navy (authority, trust, professionalism) */
+  --navy: #001b3d;
+  --navy-soft: #0d2d52;
+  --navy-muted: #1a3a5c;
+  --navy-light: #2d4a6f;
   
-  /* Accent - warm coral (approachable, human) */
-  --coral: #f97316;
-  --coral-strong: #ea580c;
-  --coral-soft: rgba(249, 115, 22, 0.12);
+  /* Accent - warm copper/bronze (premium, medical, distinctive) */
+  --copper: #b87333;
+  --copper-strong: #a0622b;
+  --copper-soft: rgba(184, 115, 51, 0.14);
+  --copper-light: #cd8e5a;
   
-  /* Clean neutrals - lighter and more open than Dentists */
-  --background: #f8fafc;
+  /* Professional neutrals */
+  --background: #f4f6f9;
   --surface: #ffffff;
-  --surface-elevated: #f1f5f9;
-  --ink: #0f172a;
-  --ink-soft: #334155;
-  --muted: #64748b;
+  --surface-elevated: #eef1f6;
+  --ink: #001b3d;
+  --ink-soft: #2d3f5c;
+  --muted: #5c6b80;
   --border: #e2e8f0;
   
   /* Semantic aliases */
-  --primary: var(--medical-teal);
-  --primary-dark: var(--medical-teal-dark);
-  --primary-light: var(--medical-teal-light);
-  --accent: var(--coral);
-  --accent-strong: var(--coral-strong);
-  --accent-soft: var(--coral-soft);
+  --primary: var(--navy);
+  --primary-soft: var(--navy-soft);
+  --primary-light: var(--navy-light);
+  --accent: var(--copper);
+  --accent-strong: var(--copper-strong);
+  --accent-soft: var(--copper-soft);
   --ring-offset: var(--background);
+  
+  /* Legacy medical aliases for backward compatibility */
+  --medical-teal: var(--navy);
+  --medical-teal-dark: var(--navy-soft);
+  --coral: var(--copper);
+  --coral-strong: var(--copper-strong);
+  --gold: var(--copper);
+  --gold-strong: var(--copper-strong);
+  --gold-soft: var(--copper-soft);
 }
 
 @theme inline {
@@ -72,11 +83,11 @@ main {
   min-width: 0;
 }
 
-/* Hero — clean teal gradient (clinical, modern, lighter than Dentists) */
+/* Hero — sophisticated navy gradient (professional, authoritative) */
 .hero-brand {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #0c4a6e 0%, var(--medical-teal) 50%, #0891b2 100%);
+  background: linear-gradient(135deg, #000d1f 0%, var(--navy) 50%, var(--navy-soft) 100%);
   color: #ffffff;
 }
 
@@ -86,8 +97,8 @@ main {
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 70% 50% at 20% 0%, rgba(6, 182, 212, 0.15), transparent 60%),
-    radial-gradient(ellipse 60% 45% at 80% 100%, rgba(249, 115, 22, 0.08), transparent 55%);
+    radial-gradient(ellipse 70% 50% at 20% 0%, rgba(184, 115, 51, 0.10), transparent 60%),
+    radial-gradient(ellipse 60% 45% at 80% 100%, rgba(184, 115, 51, 0.08), transparent 55%);
 }
 
 /* Subtle grid pattern - more clinical/technical than Dentists */
@@ -134,50 +145,50 @@ main {
 
 /* Focus rings */
 *:focus-visible {
-  outline: 2px solid var(--coral);
+  outline: 2px solid var(--copper);
   outline-offset: 2px;
 }
 
 /* Selection */
 ::selection {
-  background-color: var(--coral-soft);
+  background-color: var(--copper-soft);
   color: var(--ink);
 }
 
 /* Links */
 a {
-  color: var(--medical-teal);
+  color: var(--navy);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 a:hover {
-  color: var(--medical-teal-dark);
+  color: var(--copper-strong);
 }
 
-/* Buttons - teal primary, coral secondary */
+/* Buttons - copper primary, navy secondary */
 .btn-primary {
-  background: var(--medical-teal);
+  background: var(--copper);
   color: white;
   border: none;
 }
 
 .btn-primary:hover {
-  background: var(--medical-teal-dark);
+  background: var(--copper-strong);
 }
 
 .btn-secondary {
   background: transparent;
-  color: var(--medical-teal);
-  border: 1px solid var(--medical-teal);
+  color: var(--navy);
+  border: 1px solid var(--navy);
 }
 
 .btn-secondary:hover {
-  background: var(--medical-teal);
+  background: var(--navy);
   color: white;
 }
 
-/* Cards - cleaner, more minimal than Dentists */
+/* Cards - professional and refined */
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -187,13 +198,13 @@ a:hover {
 }
 
 .card:hover {
-  border-color: var(--medical-teal-light);
-  box-shadow: 0 4px 12px rgba(8, 145, 178, 0.08);
+  border-color: var(--copper);
+  box-shadow: 0 4px 12px rgba(184, 115, 51, 0.15);
 }
 
-/* Stats/numbers - coral accent */
+/* Stats/numbers - copper accent */
 .stat-number {
-  color: var(--coral);
+  color: var(--copper);
   font-weight: 700;
 }
 
@@ -202,9 +213,9 @@ a:hover {
   background: var(--surface-elevated);
 }
 
-/* Trust indicators - teal icons */
+/* Trust indicators - copper icons */
 .trust-icon {
-  color: var(--medical-teal);
+  color: var(--copper);
 }
 
 /* Form inputs - clean, clinical */
@@ -221,9 +232,9 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: var(--medical-teal);
+  border-color: var(--copper);
   outline: none;
-  box-shadow: 0 0 0 3px var(--coral-soft);
+  box-shadow: 0 0 0 3px var(--copper-soft);
 }
 
 /* Tables - for comparison sections */
@@ -238,7 +249,7 @@ th {
   font-weight: 600;
   text-align: left;
   padding: 0.75rem 1rem;
-  border-bottom: 2px solid var(--medical-teal);
+  border-bottom: 2px solid var(--copper);
 }
 
 td {
@@ -258,29 +269,29 @@ tr:hover {
 
 .prose h2 {
   color: var(--ink);
-  border-bottom: 2px solid var(--medical-teal);
+  border-bottom: 2px solid var(--copper);
   padding-bottom: 0.5rem;
   margin-top: 2rem;
 }
 
 .prose h3 {
-  color: var(--medical-teal-dark);
+  color: var(--navy-soft);
 }
 
 .prose a {
-  color: var(--medical-teal);
+  color: var(--navy);
   text-decoration: underline;
-  text-decoration-color: var(--coral-soft);
+  text-decoration-color: var(--copper-soft);
 }
 
 .prose a:hover {
-  text-decoration-color: var(--coral);
+  text-decoration-color: var(--copper);
 }
 
-/* Code blocks - clinical monospace */
+/* Code blocks - professional monospace */
 .prose code {
   background: var(--surface-elevated);
-  color: var(--medical-teal-dark);
+  color: var(--navy-soft);
   padding: 0.2em 0.4em;
   border-radius: 4px;
   font-size: 0.9em;
@@ -311,12 +322,12 @@ tr:hover {
 }
 
 .prose li::marker {
-  color: var(--coral);
+  color: var(--copper);
 }
 
 /* Blockquotes */
 .prose blockquote {
-  border-left: 4px solid var(--medical-teal);
+  border-left: 4px solid var(--copper);
   padding-left: 1rem;
   margin-left: 0;
   font-style: italic;
@@ -342,15 +353,15 @@ tr:hover {
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background: var(--coral-soft);
-  color: var(--coral-strong);
+  background: var(--copper-soft);
+  color: var(--copper-strong);
   border-radius: 9999px;
   font-size: 0.875rem;
   font-weight: 600;
 }
 
 .medical-highlight {
-  background: linear-gradient(120deg, var(--coral-soft) 0%, transparent 100%);
+  background: linear-gradient(120deg, var(--copper-soft) 0%, transparent 100%);
   padding: 0.125rem 0.25rem;
   border-radius: 4px;
 }

@@ -34,7 +34,7 @@ export function CTASection({
       />
       <h2
         id={headingId}
-        className="display-serif max-w-2xl text-2xl font-semibold leading-tight tracking-tight text-[var(--navy)] sm:text-3xl"
+        className="display-serif max-w-2xl text-2xl font-semibold leading-tight tracking-tight text-[var(--ink)] sm:text-3xl"
       >
         {title}
       </h2>

@@ -1,8 +1,7 @@
-﻿import type { BlogPost } from "@/types/blog";
+import type { BlogPost } from "@/types/blog";
 import { siteConfig } from "@/config/site";
 import type { BreadcrumbItem } from "@/components/ui/Breadcrumb";
 
-/** Build BreadcrumbList JSON-LD schema */
 export function buildBreadcrumbJsonLd(items: BreadcrumbItem[]) {
   return JSON.stringify({
     "@context": "https://schema.org",
@@ -16,7 +15,6 @@ export function buildBreadcrumbJsonLd(items: BreadcrumbItem[]) {
   });
 }
 
-/** Fallback BlogPosting + FAQPage JSON-LD when Python `schema` frontmatter is absent */
 export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
   const url = `${siteConfig.url}${path}`;
   const faq =
