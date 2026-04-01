@@ -12,7 +12,6 @@ image: ""
 h1: "How Much Does a Property Accountant Cost in the UK?"
 summary: "Property accountant fees vary significantly based on portfolio size and complexity, typically ranging from £500-£3,000+ annually for UK landlords."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much should I expect to pay for a property accountant as a new landlord?"
     answer: "New landlords with 1-2 properties typically pay £500-£1,200 annually for basic compliance services including self-assessment preparation. If you need tax planning advice for Section 24 or property company structures, expect £800-£2,000 per year. One-off self-assessment preparation alone costs £300-£600."

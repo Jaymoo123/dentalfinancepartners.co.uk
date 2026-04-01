@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Glasgow: Expert Tax Services for UK Landlords"
 summary: "Finding the right property accountant in Glasgow is crucial for UK landlords managing tax obligations and compliance. We provide specialist services for property investors across Scotland."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I need a specialist property accountant in Glasgow for just one rental property?"
     answer: "Even with one property, specialist advice can be valuable, especially if you're a higher-rate taxpayer affected by Section 24. A property accountant can ensure you're claiming all available expenses and help with tax planning as you consider expanding your portfolio."

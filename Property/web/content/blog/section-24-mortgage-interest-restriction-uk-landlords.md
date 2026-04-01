@@ -12,7 +12,6 @@ image: ""
 h1: "Section 24 Mortgage Interest Restriction: Complete Guide for UK Landlords"
 summary: "Section 24 restricts mortgage interest relief for individual landlords to basic rate tax only. This comprehensive guide explains how it works and what you can do about it."
 schema: ""
-canonical: ""
 faqs:
   - question: "Does Section 24 apply to all rental properties?"
     answer: "No, Section 24 only applies to residential rental properties owned by individuals. It doesn't affect commercial properties, furnished holiday lets, or properties owned through limited companies. The restriction is specific to residential buy-to-let mortgages."

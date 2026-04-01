@@ -12,7 +12,6 @@ image: ""
 h1: "Professional Accounting Services for UK Property Investors"
 summary: "Specialist accounting services designed for UK property investors, covering tax compliance, strategic planning, and portfolio optimisation from qualified property accountants."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much do professional property accounting services cost?"
     answer: "Professional accountant accounting services for property investors typically range from £1,000-£3,000 annually for straightforward portfolios. Costs increase for complex structures, large portfolios, or additional services like incorporation planning. Many landlords find the tax savings exceed the service costs."

@@ -12,7 +12,6 @@ image: ""
 h1: "London Property Accountants: Expert Services for UK Landlords"
 summary: "London landlords need specialist property accountants who understand BTL complexities. From Section 24 to incorporation, get expert guidance tailored to the capital's property market."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much do London property accountants typically charge?"
     answer: "Fees vary based on portfolio complexity, but expect £1,500-£3,000 annually for a straightforward BTL portfolio. London rates are typically 20-30% higher than regional firms due to overheads, but the expertise often justifies the premium. Many firms offer fixed-fee packages that include annual accounts, tax returns, and basic advisory work."

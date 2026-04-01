@@ -12,7 +12,6 @@ image: ""
 h1: "Incorporation for Existing Portfolios: A Phased Approach Guide"
 summary: "Moving an existing property portfolio into a company structure doesn't have to happen overnight. A phased incorporation approach can help manage tax liabilities and cash flow while transitioning to more tax-efficient ownership."
 schema: ""
-canonical: ""
 faqs:
   - question: "How long should a phased incorporation take?"
     answer: "Most phased incorporations take 2-4 years, depending on portfolio size and tax planning objectives. The key is balancing CGT management with the benefits of company ownership. Some landlords take longer to spread CGT liability, while others move faster to access corporation tax benefits sooner."

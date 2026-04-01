@@ -12,7 +12,6 @@ image: ""
 h1: "Property Tax Accountant Manchester: Expert Services for UK Landlords"
 summary: "Specialist property tax accountant services in Manchester for landlords, BTL investors and property developers. Expert guidance on Section 24, incorporation and tax planning."
 schema: ""
-canonical: ""
 faqs:
   - question: "What makes a property tax accountant different from a general accountant?"
     answer: "Property tax accountants specialise in the complex rules affecting rental income, capital gains on property disposals, and property-specific reliefs. They understand Section 24 restrictions, incorporation benefits, and property investment structures in detail — knowledge that general accountants may lack."

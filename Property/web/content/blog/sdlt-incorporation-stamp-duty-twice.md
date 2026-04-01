@@ -12,7 +12,6 @@ image: ""
 h1: "SDLT on Incorporation: Do I Pay Stamp Duty Twice?"
 summary: "Many landlords worry about paying stamp duty twice when transferring properties to a company. Understanding SDLT on incorporation can save you thousands and help you plan your property restructuring effectively."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I always pay SDLT when incorporating my property portfolio?"
     answer: "Not necessarily. If you qualify for reconstruction relief, you can eliminate SDLT entirely on incorporation. This relief applies when you hold at least 75% of the new company shares and the transfer is for genuine commercial reasons. Most straightforward incorporations qualify for this relief."

@@ -12,7 +12,6 @@ image: ""
 h1: "Rental Income Tax Calculator: Work Out Your Tax"
 summary: "Calculate your rental income tax liability with our comprehensive guide covering Section 24 restrictions, allowable deductions, and current tax rates for UK landlords."
 schema: ""
-canonical: ""
 faqs:
   - question: "How do I calculate rental income tax with Section 24?"
     answer: "Add your mortgage interest back to your rental profit, pay tax on the higher figure at your marginal rate, then claim 20% relief on the mortgage interest. This often results in higher tax than the old system, especially for higher-rate taxpayers."

@@ -12,7 +12,6 @@ image: ""
 h1: "How to Reduce CGT on Property Disposal in the UK"
 summary: "Capital gains tax on property disposals can significantly impact your returns. Understanding the available strategies and reliefs can help reduce your CGT liability legally and effectively."
 schema: ""
-canonical: ""
 faqs:
   - question: "What is the CGT rate on property disposal in the UK?"
     answer: "For residential property disposals, CGT rates are 18% for basic rate taxpayers and 24% for higher rate taxpayers in 2025/26. Your total income plus gains determines which rate applies. Commercial property is subject to standard CGT rates of 10% and 20%."

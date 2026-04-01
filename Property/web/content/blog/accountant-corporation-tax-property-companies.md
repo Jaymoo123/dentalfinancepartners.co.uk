@@ -12,7 +12,6 @@ image: ""
 h1: "Corporation Tax Accountants for UK Property Companies"
 summary: "Specialist corporation tax services for property companies and SPVs. Expert compliance, planning and advice from qualified property tax accountants."
 schema: ""
-canonical: ""
 faqs:
   - question: "What corporation tax rate do property companies pay?"
     answer: "Property companies pay the standard corporation tax rates: 19% on profits up to £50,000 and 25% on profits over £250,000 for 2025/26. Marginal relief applies between these thresholds. Unlike individual landlords, companies don't face Section 24 mortgage interest restrictions."

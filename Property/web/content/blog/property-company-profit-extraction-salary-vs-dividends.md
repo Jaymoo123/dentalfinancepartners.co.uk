@@ -12,7 +12,6 @@ image: ""
 h1: "Property Company Profit Extraction: Salary vs Dividends"
 summary: "Property company owners face a key decision on how to extract profits. Understanding the tax implications of salary versus dividends is crucial for maximising your take-home income."
 schema: ""
-canonical: ""
 faqs:
   - question: "What is the most tax-efficient salary level for property company directors?"
     answer: "For most property company directors, setting salary at the National Insurance threshold (£12,570 for 2025/26) is optimal. This preserves your National Insurance record for state pension purposes while avoiding income tax and minimising National Insurance costs. Higher salaries may be beneficial if you need pension contribution capacity or consistent income for mortgage applications."

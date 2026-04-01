@@ -12,7 +12,6 @@ image: ""
 h1: "How Section 24 Affects Higher-Rate Taxpayers: The Complete 2026 Guide for UK Landlords"
 summary: "Section 24 hits higher-rate taxpayers hardest, reducing mortgage interest relief to just 20%. This guide shows the real impact on landlords earning over £50,270 and practical strategies to manage the burden."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much extra tax do higher-rate taxpayers pay under Section 24?"
     answer: "Higher-rate taxpayers typically pay 20% more tax on their mortgage interest. For every £1,000 of annual mortgage interest, they lose £200 in tax relief (40% relief reduced to 20% credit). The actual impact depends on total income and other tax interactions."

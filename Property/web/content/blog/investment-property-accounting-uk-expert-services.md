@@ -12,7 +12,6 @@ image: ""
 h1: "Investment Property Accounting UK: Expert Services for Landlords"
 summary: "Specialist investment property accounting services designed for UK landlords and property investors. Expert guidance on tax compliance, portfolio management, and business growth strategies."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much do investment property accounting services cost?"
     answer: "Property accounting fees vary based on portfolio size and complexity. Typical costs range from £500-1,500 annually for basic portfolios, with larger or more complex holdings costing more. Many accountants offer fixed-fee packages that include tax returns, basic bookkeeping, and telephone support."

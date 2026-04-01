@@ -12,7 +12,6 @@ image: ""
 h1: "Professional Accountant Tax Advice for UK Property Investors"
 summary: "Professional accountant tax advice helps UK property investors navigate complex tax rules, from Section 24 restrictions to incorporation decisions and MTD compliance."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much does professional property tax advice typically cost?"
     answer: "Costs vary based on portfolio complexity and service level. Simple BTL advice might cost £500-1,500 annually, while complex portfolio management can range from £2,000-10,000+. Most specialist advisers offer fixed-fee arrangements so you know costs upfront."

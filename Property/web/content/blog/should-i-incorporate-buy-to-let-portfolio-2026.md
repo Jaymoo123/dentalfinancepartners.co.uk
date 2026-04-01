@@ -12,7 +12,6 @@ image: ""
 h1: "Should I Incorporate My Buy-to-Let Portfolio in 2026?"
 summary: "With Section 24 restrictions and MTD for Income Tax starting in April 2026, many landlords are considering incorporation. Here's what you need to know about the tax implications."
 schema: ""
-canonical: ""
 faqs:
   - question: "What is the main tax benefit of incorporating my buy-to-let portfolio?"
     answer: "The primary benefit is avoiding Section 24 mortgage interest restrictions. Companies can deduct mortgage interest in full as a business expense, while individual landlords are limited to basic rate (20%) tax relief. For higher-rate taxpayers with significant mortgage debt, this can create substantial tax savings."

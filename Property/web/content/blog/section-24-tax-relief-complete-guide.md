@@ -12,7 +12,6 @@ image: ""
 h1: "Section 24 Tax Relief for Landlords: Complete Guide"
 summary: "Section 24 restricts mortgage interest tax relief to the basic rate for individual landlords. This comprehensive guide explains how it works and what it means for your property portfolio."
 schema: ""
-canonical: ""
 faqs:
   - question: "What is Section 24 and how does it affect landlords?"
     answer: "Section 24 restricts mortgage interest tax relief for individual landlords to the basic rate (20%), regardless of their marginal tax rate. Previously, higher-rate taxpayers could claim relief at 40% or 45%. This creates higher tax bills for landlords in higher tax brackets."

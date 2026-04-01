@@ -12,7 +12,6 @@ image: ""
 h1: "How Much Does a Property Accountant Cost in 2025?"
 summary: "Property accountant fees typically range from £500-£3,000+ annually depending on your portfolio size and complexity. Understanding the cost structure helps you budget effectively for professional support."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much does a property accountant charge per year?"
     answer: "Property accountant fees typically range from £500-£800 for a single BTL property up to £3,000+ for larger portfolios. The exact cost depends on your portfolio size, complexity, and the level of service required."

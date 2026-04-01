@@ -12,7 +12,6 @@ image: ""
 h1: "Property Investment Company Structure Planning: A Complete Guide for UK Landlords"
 summary: "Planning the right company structure for property investment requires careful consideration of tax efficiency, flexibility, and long-term goals."
 schema: ""
-canonical: ""
 faqs:
   - question: "When should I consider incorporating my property portfolio?"
     answer: "Consider incorporation when you're a higher-rate taxpayer, have significant mortgage interest (affected by Section 24), plan to reinvest profits rather than extract them immediately, or want to involve family members in the business. Generally, portfolios generating over £20,000 annual profit often benefit from incorporation, but this depends on your specific circumstances and future plans."

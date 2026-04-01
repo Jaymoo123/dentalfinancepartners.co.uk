@@ -12,7 +12,6 @@ image: ""
 h1: "Mortgage Interest Tax Relief Changes: What Landlords Need to Know"
 summary: "Section 24 mortgage interest restriction limits tax relief to 20% for individual landlords. Understanding these changes is crucial for protecting your property portfolio profits."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do mortgage interest tax relief changes apply to all landlords?"
     answer: "No, Section 24 mortgage interest restrictions only apply to individual landlords and partnerships. Property companies (SPVs) can still deduct mortgage interest as a business expense before calculating corporation tax."

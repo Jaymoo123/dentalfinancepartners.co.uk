@@ -12,7 +12,6 @@ image: ""
 h1: "Landlord Tax Deductions UK 2026: Complete List of Allowable Expenses"
 summary: "Complete guide to all allowable landlord tax deductions in the UK for 2026/27. Covers property expenses, repairs, management costs and Section 24 mortgage interest rules."
 schema: ""
-canonical: ""
 faqs:
   - question: "What expenses can landlords claim on tax UK 2026?"
     answer: "UK landlords can claim property running costs, repairs and maintenance, professional fees, advertising costs, travel expenses, office costs, and replacement furniture. Individual landlords get 20% tax credit on mortgage interest, while companies can fully deduct finance costs as expenses."

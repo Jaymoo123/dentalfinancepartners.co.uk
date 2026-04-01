@@ -12,7 +12,6 @@ image: ""
 h1: "Property Company Dividend Tax: How Much Will I Pay?"
 summary: "Property company dividends are taxed differently from salary, with rates ranging from 0% to 39.35% depending on your total income. Understanding these rates is crucial for effective tax planning."
 schema: ""
-canonical: ""
 faqs:
   - question: "What is the dividend tax rate for property companies in 2025/26?"
     answer: "Dividend tax rates for 2025/26 are: 0% on the first £500 (dividend allowance), 8.75% on dividends within the basic rate band, 33.75% on higher rate dividends, and 39.35% on additional rate dividends above £125,140. These rates apply to the gross dividend amount."

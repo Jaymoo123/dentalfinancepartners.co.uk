@@ -12,7 +12,6 @@ image: ""
 h1: "Property Investment Tax UK: Complete Guide 2026"
 summary: "Everything UK landlords need to know about property investment tax in 2026, from income tax and Section 24 to capital gains and MTD compliance requirements."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much tax do I pay on UK property investment income?"
     answer: "Property investment income is taxed as rental profit at your marginal income tax rate - 20% for basic rate, 40% for higher rate, or 45% for additional rate taxpayers in 2025/26. However, Section 24 restrictions mean individual landlords can only claim 20% tax relief on mortgage interest, potentially increasing the effective tax rate for leveraged properties."

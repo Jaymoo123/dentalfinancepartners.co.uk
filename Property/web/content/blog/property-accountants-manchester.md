@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountants Manchester: Expert Services for UK Landlords"
 summary: "Manchester-based property accountants providing specialist tax advice for UK landlords, from BTL compliance to Section 24 planning and company incorporation strategies."
 schema: ""
-canonical: ""
 faqs:
   - question: "What makes property accountants different from general accountants in Manchester?"
     answer: "Property accountants specialise in landlord tax issues like Section 24 mortgage interest restrictions, capital allowances on furnished properties, and incorporation decisions. They understand Manchester's rental market and can provide property-specific tax planning that general accountants often miss."

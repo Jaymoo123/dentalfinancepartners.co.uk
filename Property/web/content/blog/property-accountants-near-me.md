@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountants Near Me: Finding the Right Specialist for Your Portfolio"
 summary: "Finding the right property accountant can transform your tax efficiency and compliance. We explain what to look for in a specialist and how to choose the best fit for your portfolio."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I need to use property accountants near me geographically?"
     answer: "No, location is less important than expertise. Most property accounting work is done remotely using digital documents. A specialist property accountant can serve you effectively regardless of location, and you'll often get better service from an expert who works remotely than a generalist nearby."

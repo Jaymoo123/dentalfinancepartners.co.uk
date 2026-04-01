@@ -12,7 +12,6 @@ image: ""
 h1: "Do I Need MTD for My Rental Income? Threshold and Exemptions Explained"
 summary: "MTD for Income Tax Property starts 6 April 2026 for landlords with gross rental income over £10,000. Understanding thresholds and exemptions helps you prepare for digital record-keeping requirements."
 schema: ""
-canonical: ""
 faqs:
   - question: "What happens if my rental income fluctuates around £10,000?"
     answer: "If your rental income varies year to year, you need MTD in any tax year where gross rental income exceeds £10,000. You can't average across years or use previous year figures. Each tax year is assessed separately."

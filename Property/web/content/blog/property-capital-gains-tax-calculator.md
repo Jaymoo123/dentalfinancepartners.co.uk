@@ -12,7 +12,6 @@ image: ""
 h1: "Property Capital Gains Tax Calculator: Complete Guide for UK Landlords"
 summary: "Learn how to calculate capital gains tax on property sales with our comprehensive guide for UK landlords and property investors."
 schema: ""
-canonical: ""
 faqs:
   - question: "How accurate is a property capital gains tax calculator?"
     answer: "A good property capital gains tax calculator gives you a reliable estimate for straightforward property sales. However, it may not account for complex situations like principal residence relief, business asset disposal relief, or properties held in companies. For accurate calculations on complex sales, speak to a property tax specialist."

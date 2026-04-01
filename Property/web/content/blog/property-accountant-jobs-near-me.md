@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Jobs Near Me: Finding the Right Specialist for Your Portfolio"
 summary: "Whether you're searching for property accountant jobs or need to hire a specialist for your portfolio, this guide covers what to look for in UK property tax professionals."
 schema: ""
-canonical: ""
 faqs:
   - question: "What qualifications do I need for property accountant jobs?"
     answer: "Most property accountant positions require professional qualifications like ACA, ACCA, or CIMA, plus specific experience with property taxation. Knowledge of Section 24, capital gains tax, and company formations is often essential. Some firms will consider part-qualified candidates with relevant property experience."

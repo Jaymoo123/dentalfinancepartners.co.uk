@@ -12,7 +12,6 @@ image: ""
 h1: "Buy-to-Let Limited Company Mortgage Options: Complete Guide for UK Property Investors"
 summary: "Understanding your mortgage options when buying property through a limited company is crucial for maximising returns and managing tax efficiently."
 schema: ""
-canonical: ""
 faqs:
   - question: "What deposit do I need for a limited company buy-to-let mortgage?"
     answer: "Most lenders require a minimum 25% deposit for limited company mortgages, though some accept 20% for experienced investors. The maximum loan-to-value is typically 75%, compared to 80-85% available on personal BTL mortgages."

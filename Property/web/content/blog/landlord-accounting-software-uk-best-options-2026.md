@@ -12,7 +12,6 @@ image: ""
 h1: "Landlord Accounting Software UK: Best Options 2026"
 summary: "MTD requirements mean UK landlords need compliant accounting software from April 2026. We compare the best options for property management accounts and tax compliance."
 schema: ""
-canonical: ""
 faqs:
   - question: "What happens if I don't use MTD-compatible landlord accounting software?"
     answer: "From April 2026, landlords with property income above £10,000 face £200 penalties per quarter for late submissions if not using MTD-compatible software. Repeated failures can result in daily penalties of £10-60."

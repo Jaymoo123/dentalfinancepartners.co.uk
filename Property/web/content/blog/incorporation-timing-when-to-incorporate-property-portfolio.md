@@ -12,7 +12,6 @@ image: ""
 h1: "Incorporation Timing: When is the Right Time to Incorporate Your Property Portfolio?"
 summary: "Getting incorporation timing right can save thousands in tax and avoid costly mistakes. The decision depends on your rental income, mortgage debt, and future plans."
 schema: ""
-canonical: ""
 faqs:
   - question: "At what rental income level should I consider incorporation?"
     answer: "Most landlords should seriously consider incorporation when rental profits reach £40,000-£50,000 annually, especially if they have significant mortgage debt. Below £30,000 profit, the administrative costs often outweigh tax savings. Above £60,000, incorporation usually makes clear financial sense for higher-rate taxpayers."

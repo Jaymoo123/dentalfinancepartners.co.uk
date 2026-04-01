@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Advice: Complete Guide for UK Landlords"
 summary: "A comprehensive guide covering when UK landlords need specialist property accountant advice, from basic tax compliance to complex portfolio management strategies."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much should I expect to pay for property accountant advice?"
     answer: "Fees typically range from £500-£1,500 annually for straightforward BTL portfolios, up to £2,000-£5,000+ for complex structures. The investment often pays for itself through tax savings and avoiding compliance errors."

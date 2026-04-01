@@ -12,7 +12,6 @@ image: ""
 h1: "Section 24 and Pension Contributions: Tax Planning Strategies for Landlords"
 summary: "Section 24 mortgage interest restrictions have changed how landlords should approach pension planning. Strategic pension contributions can help offset higher tax bills while building retirement funds."
 schema: ""
-canonical: ""
 faqs:
   - question: "Can pension contributions offset Section 24 tax increases?"
     answer: "Yes, pension contributions can help offset Section 24 tax increases. Unlike mortgage interest which now only receives basic rate relief, pension contributions still get full tax relief at your marginal rate. Higher-rate taxpayers can save 40% tax on pension contributions, potentially offsetting some of the additional tax burden from Section 24 restrictions."

@@ -12,7 +12,6 @@ image: ""
 h1: "London Property Accountant: Expert Services for Property Investors"
 summary: "Specialist property accounting services for London landlords and investors, covering everything from basic compliance to complex portfolio restructuring and tax planning."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much does a London property accountant typically charge?"
     answer: "Fees vary based on portfolio complexity but typically range from £500-1,500 annually for straightforward rental property tax returns. Complex portfolios with multiple companies or commercial properties may cost £2,000-5,000+ annually. Most specialists offer fixed fee arrangements for predictable costs."

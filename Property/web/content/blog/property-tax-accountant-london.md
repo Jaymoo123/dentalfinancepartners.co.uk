@@ -12,7 +12,6 @@ image: ""
 h1: "Property Tax Accountant London: Expert Services for Landlords and Investors"
 summary: "Looking for a property tax accountant in London? We provide specialist services for landlords and property investors across the capital."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much does a property tax accountant in London typically cost?"
     answer: "Fees vary based on portfolio complexity and services required. Basic compliance might cost £1,500-£3,000 annually, while comprehensive planning and incorporation advice can be £3,000-£8,000+. Many landlords find the tax savings exceed accounting costs, especially for larger portfolios or complex structures."

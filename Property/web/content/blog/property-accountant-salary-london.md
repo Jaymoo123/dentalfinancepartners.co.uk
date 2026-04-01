@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Salary London: Complete Guide"
 summary: "Essential salary guide for property accountants in London covering all experience levels, from trainee positions to senior roles, plus key factors affecting compensation."
 schema: ""
-canonical: ""
 faqs:
   - question: "What is the average property accountant salary in London?"
     answer: "The average property accountant salary in London ranges from £25,000 for graduates to £95,000 for senior managers. Qualified professionals with 2-5 years experience typically earn £40,000-£55,000, while experienced seniors earn £55,000-£75,000. Professional qualifications like ACA or ACCA typically add £8,000-£12,000 to base salaries."

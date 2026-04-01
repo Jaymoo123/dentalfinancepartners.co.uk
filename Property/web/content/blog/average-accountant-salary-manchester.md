@@ -12,7 +12,6 @@ image: ""
 h1: "Average Accountant Salary Manchester: Complete Guide for Property Investors"
 summary: "Understanding accountant salaries in Manchester helps property investors budget for professional services and know what rates to expect when hiring specialist help."
 schema: ""
-canonical: ""
 faqs:
   - question: "What is the average salary for accountants in Manchester?"
     answer: "Accountant salaries in Manchester typically range from £22,000 for graduates to £70,000+ for senior professionals. Property tax specialists often earn £45,000-£80,000 due to their specialist knowledge of BTL taxation and capital gains rules."

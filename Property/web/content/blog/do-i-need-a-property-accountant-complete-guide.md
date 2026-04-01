@@ -12,7 +12,6 @@ image: ""
 h1: "Do I Need a Property Accountant: Complete Guide"
 summary: "Not sure if you need a property accountant? This guide helps UK landlords understand when specialist property accounting makes sense for their portfolio."
 schema: ""
-canonical: ""
 faqs:
   - question: "At what point do I definitely need a property accountant?"
     answer: "You likely need a property accountant once you own 3+ properties, earn over £30,000 annual rental income, or face Section 24 mortgage interest restrictions as a higher-rate taxpayer. MTD compliance requirements from April 2026 also make specialist support valuable for larger portfolios."

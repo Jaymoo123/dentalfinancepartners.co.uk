@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accounting Services: Expert Support for UK Landlords"
 summary: "Specialist property accounting services help UK landlords navigate complex tax obligations, from Section 24 restrictions to MTD compliance and incorporation decisions."
 schema: ""
-canonical: ""
 faqs:
   - question: "What services do property accountants provide that general accountants don't?"
     answer: "Property accountants specialise in complex areas like Section 24 mortgage interest restrictions, capital allowances on fixtures and fittings, incorporation timing decisions, and property-specific tax reliefs. They understand letting regulations, property management expenses, and the interaction between rental income and capital gains tax. General accountants may miss these property-specific opportunities and requirements."

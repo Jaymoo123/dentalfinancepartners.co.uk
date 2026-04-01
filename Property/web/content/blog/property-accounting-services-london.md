@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accounting Services in London: Expert Support for Landlords"
 summary: "Specialist property accounting services in London designed for landlords and property investors. Expert support with tax compliance, portfolio management, and Making Tax Digital preparation."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much do property accounting services cost in London?"
     answer: "Property accounting fees in London typically range from £800-£2,500 annually for individual landlords, depending on portfolio size and complexity. Limited company structures generally cost £1,500-£4,000 due to additional compliance requirements. Many firms offer fixed fee arrangements that provide cost certainty and often prove more economical than hourly billing."

@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant London: Expert Services for UK Landlords"
 summary: "Finding the right property accountant in London can transform your property business. We break down what to look for and how specialist expertise saves you money."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much does a property accountant in London typically charge?"
     answer: "London property accountants typically charge £1,500-£4,000 annually for basic compliance services, depending on portfolio complexity. Incorporation advice and strategic planning usually cost £2,000-£5,000 as one-off projects. Hourly rates range from £200-£400 for qualified property specialists."

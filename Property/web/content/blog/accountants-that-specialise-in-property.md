@@ -12,7 +12,6 @@ image: ""
 h1: "Accountants That Specialise in Property: Expert Services for UK Landlords"
 summary: "Property specialist accountants offer targeted expertise for landlords facing Section 24, MTD compliance, and complex portfolio structures. The right accountant can save significant tax and reduce compliance burdens."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much do accountants that specialise in property charge?"
     answer: "Property specialist accountants typically charge £800-1,500 annually for basic BTL landlords, rising to £3,000-8,000 for complex portfolios with multiple SPVs. The cost reflects their specialist expertise and the complexity of property tax rules, but often delivers tax savings that exceed the additional fees."

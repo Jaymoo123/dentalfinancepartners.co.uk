@@ -12,7 +12,6 @@ image: ""
 h1: "Property Management Accounting Services: Expert Support for UK Landlords"
 summary: "Specialist property management accounting services help UK landlords navigate complex tax rules, MTD compliance, and portfolio growth strategies with expert guidance."
 schema: ""
-canonical: ""
 faqs:
   - question: "What services do property management accountants provide?"
     answer: "Property management accountants provide specialist services including annual tax return preparation, quarterly bookkeeping, MTD compliance support, capital gains tax planning, incorporation advice, and strategic portfolio planning. They understand property-specific tax rules like Section 24 and help maximise allowable deductions while ensuring full compliance."

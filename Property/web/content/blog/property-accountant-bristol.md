@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Bristol: Expert Services for UK Landlords"
 summary: "Find expert property accounting services in Bristol for landlords and property investors. Specialising in tax compliance, incorporation advice, and portfolio management."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much should I expect to pay for a property accountant in Bristol?"
     answer: "Fees typically range from £800-£1,500 annually for basic portfolio compliance, with additional costs for complex planning work like incorporation advice (£2,000-£4,000). The investment often pays for itself through tax savings and improved compliance."

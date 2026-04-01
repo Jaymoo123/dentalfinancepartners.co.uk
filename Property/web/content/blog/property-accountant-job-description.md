@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Job Description: Complete Guide for UK Landlords"
 summary: "Understanding what a property accountant does helps landlords make better hiring decisions and set clear expectations for their accounting support."
 schema: ""
-canonical: ""
 faqs:
   - question: "What qualifications should a property accountant have?"
     answer: "Property accountants should have AAT Level 4 as a minimum, with ACA, ACCA or CIMA preferred for senior roles. Specific property taxation training is essential, plus experience with Making Tax Digital compliance and property accounting software."

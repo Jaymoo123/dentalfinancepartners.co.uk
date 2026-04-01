@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Services: Expert Tax Solutions for UK Landlords"
 summary: "Specialist property accountant services designed for UK landlords and investors, covering everything from basic compliance to complex portfolio restructuring."
 schema: ""
-canonical: ""
 faqs:
   - question: "What makes property accountant services different from regular accounting?"
     answer: "Property accountants specialise in landlord-specific issues like Section 24 mortgage interest restrictions, incorporation planning, and property-specific tax reliefs. They understand rental income patterns, capital allowances for furnished properties, and the interplay between property income and personal tax planning. General accountants often lack this sector expertise."

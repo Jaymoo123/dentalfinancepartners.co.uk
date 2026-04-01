@@ -12,7 +12,6 @@ image: ""
 h1: "Incorporation Cost Calculator: CGT and SDLT Implications for UK Landlords"
 summary: "Property incorporation involves complex CGT and SDLT calculations that can significantly impact your decision. Understanding these costs upfront is crucial for UK landlords considering company structures."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much does it typically cost to incorporate a property portfolio?"
     answer: "Costs vary significantly based on portfolio value and structure. For a £500,000 portfolio, expect £20,000-50,000 in CGT and SDLT combined, plus £5,000-10,000 in professional fees. Higher value portfolios face proportionally higher costs due to SDLT bands and capital gains."

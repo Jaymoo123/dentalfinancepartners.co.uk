@@ -12,7 +12,6 @@ image: ""
 h1: "Property Tax Advice: Expert Services for UK Landlords"
 summary: "Specialist property tax advice helps UK landlords navigate complex regulations, maximise tax efficiency, and avoid costly mistakes in an evolving tax landscape."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much does property tax advice cost for UK landlords?"
     answer: "Property tax advice costs vary widely depending on your portfolio size and needs. Basic annual compliance for small portfolios typically costs £1,000-£2,000, while complex incorporation advice might cost £3,000-£5,000. Many advisors offer fixed-fee packages for standard services, with hourly rates of £150-£400 for specialist work. The investment often pays for itself through tax savings and penalty avoidance."

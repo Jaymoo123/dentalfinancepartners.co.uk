@@ -12,7 +12,6 @@ image: ""
 h1: "Accountant Tax Return Services for UK Property Investors"
 summary: "Professional accountant tax return services designed specifically for UK property investors, ensuring compliance and maximising tax efficiency across your property portfolio."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much does a property specialist accountant cost for tax returns?"
     answer: "Property specialist accountant fees typically range from £500-£1,500 annually depending on portfolio size and complexity. For most landlords with 2-5 properties, expect to pay £600-£900 per year. The tax savings usually exceed the professional fees, especially with proper Section 24 planning and capital allowances claims."

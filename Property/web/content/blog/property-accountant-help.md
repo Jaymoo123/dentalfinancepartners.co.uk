@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Help: Expert Services for UK Landlords"
 summary: "Professional property accountant help for UK landlords covering tax planning, Section 24 relief, incorporation decisions, and MTD compliance. Expert guidance tailored to your property portfolio needs."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much should I expect to pay for property accountant help?"
     answer: "Fees typically range from £800-£1,500 annually for landlords with 2-3 BTL properties, rising for larger portfolios or complex structures. The cost often represents good value when compared to potential tax savings and compliance peace of mind."

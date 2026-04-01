@@ -12,7 +12,6 @@ image: ""
 h1: "Property Bookkeeping: Expert Services for UK Landlords"
 summary: "Professional property bookkeeping services tailored for UK landlords and property investors. Expert record keeping, tax compliance support, and preparation for Making Tax Digital requirements."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much do property bookkeeping services typically cost?"
     answer: "Property bookkeeping services typically cost £150-£500 per month, depending on your portfolio size and complexity. Single property landlords might pay £150-£250 monthly, while larger portfolios with 10+ properties could cost £400-£500. The investment often pays for itself through better tax relief claims and time savings."

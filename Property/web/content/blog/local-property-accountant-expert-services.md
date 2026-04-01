@@ -12,7 +12,6 @@ image: ""
 h1: "Local Property Accountant: Expert Services for UK Landlords"
 summary: "Choosing the right local property accountant can save UK landlords thousands in tax and compliance costs. Here's what to look for in a specialist property tax advisor."
 schema: ""
-canonical: ""
 faqs:
   - question: "How do I find a qualified local property accountant near me?"
     answer: "Look for accountants who specifically advertise property or landlord services, check professional body directories (ICAEW, ACCA), and ask for referrals from other landlords. Verify they have experience with rental property taxation, not just general accounting."

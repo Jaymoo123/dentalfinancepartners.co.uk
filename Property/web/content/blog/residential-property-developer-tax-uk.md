@@ -12,7 +12,6 @@ image: ""
 h1: "Residential Property Developer Tax UK: Complete Guide for 2025"
 summary: "UK residential property developers face different tax rules than buy-to-let landlords, with profits taxed as income rather than capital gains. Understanding developer status is crucial for tax planning."
 schema: ""
-canonical: ""
 faqs:
   - question: "Am I a property developer or investor for tax purposes?"
     answer: "HMRC considers factors like frequency of transactions, length of ownership, reason for purchase, and development work undertaken. If you regularly buy, develop, and sell properties quickly, you're likely trading as a developer. Holding properties long-term for rental income suggests investment activity instead."

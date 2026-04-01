@@ -12,7 +12,6 @@ image: ""
 h1: "Property Disposal Tax Planning: Minimizing CGT on Your Property Sales"
 summary: "Strategic property disposal tax planning can significantly reduce your Capital Gains Tax liability when selling rental properties. This guide covers timing, reliefs, and practical strategies for UK landlords."
 schema: ""
-canonical: ""
 faqs:
   - question: "When should I start planning for property disposal tax?"
     answer: "Start property disposal tax planning at least 12 months before you intend to sell. Many strategies, such as transferring ownership between spouses or relocating to claim PPR relief, need time to implement effectively. Early planning gives you more options to minimize CGT."

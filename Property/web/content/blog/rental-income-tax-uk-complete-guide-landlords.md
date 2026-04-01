@@ -12,7 +12,6 @@ image: ""
 h1: "Rental Income Tax UK: Complete Guide for Landlords 2025"
 summary: "Understanding rental income tax is essential for UK landlords. This guide covers tax rates, allowable expenses, Section 24 restrictions, and practical examples."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much tax do I pay on rental income in the UK?"
     answer: "Rental income tax is charged at your marginal rate: 20% for basic rate taxpayers, 40% for higher rate, and 45% for additional rate. You pay tax on your net rental profit after deducting allowable expenses. Mortgage interest receives a 20% tax credit rather than being deductible for individual landlords."

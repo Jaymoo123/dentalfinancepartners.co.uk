@@ -12,7 +12,6 @@ image: ""
 h1: "CGT Payment Deadlines for Property Sales 2026: What Landlords Need to Know"
 summary: "CGT payment deadlines for property sales in 2026 remain critical for landlords to avoid penalties. Key dates include 60-day reporting and January 31st payment deadlines."
 schema: ""
-canonical: ""
 faqs:
   - question: "What happens if I miss the 60-day CGT reporting deadline?"
     answer: "You face automatic penalties starting at £100 for up to 3 months late, escalating to £300 for each additional 3-month period. After 12 months, penalties can reach up to 100% of the tax due. Interest also runs from the original deadline at current rates."

@@ -12,7 +12,6 @@ image: ""
 h1: "Property Tax Return: Expert Services for UK Landlords"
 summary: "Professional property tax return preparation and compliance support for UK landlords and property investors."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much do property tax return services typically cost?"
     answer: "Costs vary depending on portfolio complexity, but typically range from £300-500 for a simple BTL property to £800-1,500+ for larger portfolios. Many landlords find the tax savings and time benefits justify the cost."

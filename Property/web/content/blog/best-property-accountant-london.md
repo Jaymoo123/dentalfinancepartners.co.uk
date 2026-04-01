@@ -12,7 +12,6 @@ image: ""
 h1: "Finding the Best Property Accountant in London: A Landlord's Guide"
 summary: "London landlords need specialist property accountants who understand Section 24, MTD, and property tax complexities. Here's what to look for when choosing the right professional for your portfolio."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much should I expect to pay a property accountant in London?"
     answer: "Property accountancy fees in London typically range from £500-£1,500 annually for basic BTL compliance, rising to £3,000+ for complex portfolios. The cost depends on your number of properties, structure complexity, and additional services required. A good property accountant often saves more in tax than their fees cost."

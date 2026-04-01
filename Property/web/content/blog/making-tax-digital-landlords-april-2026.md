@@ -12,7 +12,6 @@ image: ""
 h1: "Making Tax Digital for Landlords: What You Need to Know Before April 2026"
 summary: "Making Tax Digital for landlords becomes mandatory from April 2026. All property investors earning over £10,000 annually must submit quarterly returns digitally."
 schema: ""
-canonical: ""
 faqs:
   - question: "When does Making Tax Digital start for landlords?"
     answer: "Making Tax Digital for landlords starts on 6 April 2026. All landlords with gross annual rental income above £10,000 must submit quarterly digital returns from this date, with the first quarterly submission due by 5 July 2026 covering the April-June period."

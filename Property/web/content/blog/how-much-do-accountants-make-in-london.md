@@ -12,7 +12,6 @@ image: ""
 h1: "How Much Do Accountants Make in London: Property Sector Specialist Salaries"
 summary: "London accountant salaries vary significantly by experience and specialisation. Property sector specialists typically earn £35k-£150k+ depending on their role and expertise."
 schema: ""
-canonical: ""
 faqs:
   - question: "What qualifications do property accountants in London typically need?"
     answer: "Most property accountants in London hold ACA, ACCA, or CIMA qualifications. Senior positions often require CTA (Chartered Tax Adviser) credentials. Many start with AAT qualifications and progress through study while working. Experience with property-specific software and understanding of UK property legislation is equally important."

@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Responsibilities: Complete Guide for UK Landlords"
 summary: "Property accountants handle far more than basic bookkeeping for UK landlords. This guide explains their key responsibilities from tax compliance to strategic planning."
 schema: ""
-canonical: ""
 faqs:
   - question: "What are the main property accountant responsibilities for UK landlords?"
     answer: "Property accountants handle tax compliance (income tax, corporation tax, capital gains tax), MTD compliance, financial reporting, strategic tax planning, regulatory monitoring, and portfolio performance analysis. They also manage accounting systems and provide ongoing advisory services for property investment decisions."

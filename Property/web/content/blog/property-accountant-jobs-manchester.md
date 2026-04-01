@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Jobs Manchester: Your Career Guide"
 summary: "Manchester's property market offers excellent opportunities for accounting professionals. Here's what you need to know about property accountant jobs in Manchester and how to build a successful career in property tax."
 schema: ""
-canonical: ""
 faqs:
   - question: "What qualifications do I need for property accountant jobs in Manchester?"
     answer: "Most positions require a recognised accounting qualification (ACA, ACCA, or CIMA) plus property tax specialisation knowledge. Experience with rental income calculations, capital allowances, and Section 24 restrictions is highly valued. Additional property taxation qualifications like the ICAEW Advanced Property Taxation certificate can strengthen applications."

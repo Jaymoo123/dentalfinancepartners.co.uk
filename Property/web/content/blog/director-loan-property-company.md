@@ -12,7 +12,6 @@ image: ""
 h1: "Director Loan Property Company: Understanding Tax Implications"
 summary: "Director loan accounts in property companies carry specific tax rules that can catch landlords off guard. Understanding the implications helps avoid unexpected tax charges."
 schema: ""
-canonical: ""
 faqs:
   - question: "What happens if my director loan exceeds £10,000?"
     answer: "If you owe your property company more than £10,000, the company must pay 33.75% tax on the loan amount. You'll also face a benefit in kind charge if the company charges below market interest rates. Both charges apply even if the loan is temporary."

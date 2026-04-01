@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Jobs London: Your Career Guide to UK Property Finance Roles"
 summary: "The London property accounting market offers diverse career opportunities for finance professionals specialising in UK property taxation and compliance."
 schema: ""
-canonical: ""
 faqs:
   - question: "What qualifications do I need for property accountant jobs in London?"
     answer: "Most property accountant jobs London require ACA, ACCA, or CIMA qualification with 2-5 years post-qualified experience. Strong understanding of UK property taxation, including Section 24 restrictions and capital gains tax rules, is essential. Some firms accept part-qualified candidates with substantial property experience."

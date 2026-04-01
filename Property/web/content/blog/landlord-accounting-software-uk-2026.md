@@ -12,7 +12,6 @@ image: ""
 h1: "Landlord Accounting Software UK: Best Options for 2026"
 summary: "Choosing the right landlord accounting software UK becomes critical with MTD requirements starting April 2026. We compare the leading options for property investors."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I need MTD-compliant landlord accounting software from April 2026?"
     answer: "Yes, if your total property rental income exceeds £10,000 annually, you'll need MTD-compatible software from 6 April 2026. This applies to gross rental income before expenses, and includes income from furnished holiday lets and overseas properties."

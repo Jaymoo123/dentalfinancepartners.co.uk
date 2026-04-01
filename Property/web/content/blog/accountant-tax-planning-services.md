@@ -12,7 +12,6 @@ image: ""
 h1: "Professional Accountant Tax Planning Services for UK Property Investors"
 summary: "Professional accountant tax planning services designed specifically for UK property investors. Expert guidance on tax efficiency, compliance, and strategic planning for landlords."
 schema: ""
-canonical: ""
 faqs:
   - question: "What does professional accountant tax planning include for property investors?"
     answer: "Professional accountant tax planning for property investors includes strategic tax advice, Section 24 impact assessment, Making Tax Digital compliance preparation, corporate structure planning, capital gains tax optimisation, and ongoing compliance management. Services are tailored to your specific property portfolio and investment goals."

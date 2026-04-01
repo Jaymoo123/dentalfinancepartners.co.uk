@@ -12,7 +12,6 @@ image: ""
 h1: "Finding a Property Specialist Accountant Near Me: What UK Landlords Need to Know"
 summary: "Choosing the right property specialist accountant can save you thousands in tax and compliance costs. Location matters less than expertise in today's digital world."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I need to meet my property accountant face-to-face?"
     answer: "Not necessarily. Many property specialists work effectively with clients remotely using video calls, cloud software, and digital document sharing. Face-to-face meetings can be valuable for complex situations or building initial trust, but shouldn't be a deciding factor if you find a specialist with the right expertise elsewhere."

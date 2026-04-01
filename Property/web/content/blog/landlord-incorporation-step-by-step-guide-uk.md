@@ -12,7 +12,6 @@ image: ""
 h1: "Landlord Incorporation: Step-by-Step Guide UK"
 summary: "A comprehensive guide covering the complete process of landlord incorporation, from initial planning to company setup and property transfer."
 schema: ""
-canonical: ""
 faqs:
   - question: "How long does landlord incorporation take?"
     answer: "The complete landlord incorporation process typically takes 8-16 weeks. Company formation takes 1-2 days, but property transfers, mortgage arrangements, and legal work require several months. Complex portfolios or difficult lenders can extend this timeline significantly."

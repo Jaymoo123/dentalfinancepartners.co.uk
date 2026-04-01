@@ -12,7 +12,6 @@ image: ""
 h1: "Bristol Property Accountant: Expert Services for Local Landlords"
 summary: "Professional property accounting services for Bristol landlords and investors, covering tax compliance, Section 24 planning, and business structuring."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I need a Bristol-based property accountant for my local portfolio?"
     answer: "While location isn't essential, a Bristol property accountant understands local market dynamics, property types, and common issues facing landlords in the area. This local knowledge, combined with specialist property tax expertise, often provides better value than a general accountant without property focus."

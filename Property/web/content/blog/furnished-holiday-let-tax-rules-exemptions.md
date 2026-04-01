@@ -12,7 +12,6 @@ image: ""
 h1: "Furnished Holiday Let Tax: Rules and Exemptions for UK Landlords"
 summary: "Furnished Holiday Lets offer significant tax advantages over standard buy-to-let properties, including mortgage interest relief and CGT benefits. However, strict qualification rules apply."
 schema: ""
-canonical: ""
 faqs:
   - question: "What is the difference between furnished holiday let tax and normal rental property tax?"
     answer: "Furnished holiday lets are treated as trading businesses for tax purposes, allowing full mortgage interest deduction, capital allowances on furniture, and access to business reliefs like Business Asset Disposal Relief for CGT. Standard rental properties face Section 24 mortgage interest restrictions and don't qualify for business tax reliefs."

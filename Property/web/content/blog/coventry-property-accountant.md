@@ -12,7 +12,6 @@ image: ""
 h1: "Coventry Property Accountant: Expert Services for Local Landlords"
 summary: "Local Coventry landlords need specialist property tax expertise to navigate complex regulations and maximise returns. Professional accountancy support helps manage compliance while identifying tax-efficient strategies."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I need a specialist property accountant in Coventry?"
     answer: "If you own rental property in Coventry, a specialist property accountant can help navigate complex tax rules like Section 24, prepare for Making Tax Digital requirements, and optimise your tax position. General accountants may lack the specific property tax expertise needed for effective planning."

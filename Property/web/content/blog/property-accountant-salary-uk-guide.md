@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Salary UK: Complete Guide for 2025"
 summary: "Understanding property accountant salaries helps landlords budget for professional services and career changers evaluate opportunities in this growing sector."
 schema: ""
-canonical: ""
 faqs:
   - question: "What is the average property accountant salary in the UK?"
     answer: "Property accountant salaries in the UK typically range from £22,000 for graduates to £150,000+ for senior partners. Mid-level qualified accountants with 3-5 years experience usually earn £35,000-£48,000, while experienced specialists can earn £60,000-£85,000. London salaries are typically 20-30% higher but with corresponding increases in living costs."

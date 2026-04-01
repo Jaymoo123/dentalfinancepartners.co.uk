@@ -12,7 +12,6 @@ image: ""
 h1: "How to Choose a Property Accountant: Complete Guide for UK Landlords"
 summary: "Choosing the right property accountant can save you thousands in tax and compliance costs. This guide covers qualifications, fees, services and key questions to ask before hiring."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much should I expect to pay for a property accountant?"
     answer: "Property accountant fees typically range from £800-2,500 annually for basic BTL portfolio compliance, with complex portfolios or strategic planning costing more. Hourly rates are usually £150-400. The key is ensuring the value exceeds the cost through tax savings and avoided penalties."

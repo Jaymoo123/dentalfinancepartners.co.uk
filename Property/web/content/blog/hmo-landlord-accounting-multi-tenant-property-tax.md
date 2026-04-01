@@ -12,7 +12,6 @@ image: ""
 h1: "HMO Landlord Accounting: Multi-Tenant Property Tax Guide"
 summary: "HMO landlords face unique accounting challenges with multiple tenants, room-by-room income tracking, and complex expense allocation across shared spaces."
 schema: ""
-canonical: ""
 faqs:
   - question: "How do I allocate expenses between rooms in an HMO property?"
     answer: "Use a consistent method such as equal allocation across all rooms (e.g., 20% each for a 5-room HMO) or proportional allocation based on room size or rental value. Room-specific expenses like individual repairs go directly to that room, while shared area costs (kitchen, communal bathrooms) get allocated across all rooms. Document your method and apply it consistently year-on-year."

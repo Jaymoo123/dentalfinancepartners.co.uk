@@ -12,7 +12,6 @@ image: ""
 h1: "Principal Private Residence Relief for Landlords: Complete UK Guide"
 summary: "Principal private residence relief can significantly reduce capital gains tax for landlords who previously lived in their rental property. Understanding the rules and calculations is crucial for maximising your tax savings."
 schema: ""
-canonical: ""
 faqs:
   - question: "Can I claim principal private residence relief on a buy-to-let property?"
     answer: "You can only claim principal private residence relief if the property was genuinely your main home at some point during ownership. A property that was always buy-to-let from purchase won't qualify. However, if you previously lived in the property as your main residence before renting it out, you can claim relief for the occupation period plus the final 9 months of ownership."

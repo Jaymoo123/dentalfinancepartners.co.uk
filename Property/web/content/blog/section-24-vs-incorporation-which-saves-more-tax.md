@@ -12,7 +12,6 @@ image: ""
 h1: "Section 24 vs. Incorporation: Which Saves More Tax for UK Landlords?"
 summary: "Section 24 mortgage interest restrictions hit landlords hard, but incorporation isn't always the answer. We compare both options with real examples to show which saves more tax."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much tax can I save by incorporating my property portfolio?"
     answer: "Tax savings depend on your personal tax rate and mortgage interest levels. Higher rate taxpayers with significant leverage typically save £10,000-£40,000+ annually. Basic rate taxpayers see smaller savings, often £1,000-£5,000 per year. The exact amount depends on your rental income, mortgage interest, and personal circumstances."

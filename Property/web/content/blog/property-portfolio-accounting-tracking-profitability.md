@@ -12,7 +12,6 @@ image: ""
 h1: "Property Portfolio Accounting: How to Track Profitability by Individual Property"
 summary: "Effective property portfolio accounting requires tracking each property's individual performance. This guide shows UK landlords how to monitor profitability across their portfolio using proven accounting methods."
 schema: ""
-canonical: ""
 faqs:
   - question: "What's the minimum portfolio size where individual property tracking becomes worthwhile?"
     answer: "Individual property tracking adds value from your second property onwards. Even with 2-3 properties, understanding which performs best helps with refinancing and future investment decisions. The administrative overhead is minimal with modern accounting tools, while the insights can be significant for portfolio strategy."

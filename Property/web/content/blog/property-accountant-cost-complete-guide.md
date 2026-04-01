@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Cost: Complete Guide for UK Landlords"
 summary: "Understanding property accountant costs helps you budget effectively and choose the right professional for your portfolio. Fees typically range from £500-£3,000+ annually depending on complexity and services required."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much should I budget for property accounting services?"
     answer: "Most UK landlords spend £500-£3,000 annually on property accounting services, depending on portfolio size and complexity. Single property owners typically pay £300-£800, while those with 6-15 properties usually pay £1,200-£3,000. Company structures and complex arrangements increase these costs."

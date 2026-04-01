@@ -12,7 +12,6 @@ image: ""
 h1: "When to Hire a Property Accountant: A UK Landlord's Guide"
 summary: "Knowing when to hire a property accountant can save UK landlords thousands in tax and compliance costs. The right timing depends on portfolio size, complexity, and upcoming regulatory changes."
 schema: ""
-canonical: ""
 faqs:
   - question: "At what portfolio size should I hire a property accountant?"
     answer: "Most UK landlords benefit from professional help once they reach £50,000 annual rental income or hold 3-4 properties. This is typically when tax implications become complex enough that professional advice pays for itself, and it's also the threshold for Making Tax Digital requirements from 2026."

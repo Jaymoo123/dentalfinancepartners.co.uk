@@ -12,7 +12,6 @@ image: ""
 h1: "Accountant VAT Registration: Expert Services for Property Investors"
 summary: "Professional VAT registration services designed specifically for property investors and landlords, ensuring compliance while maximising tax efficiency."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I need to register for VAT as a buy-to-let landlord?"
     answer: "Most buy-to-let landlords don't need VAT registration as residential rental income is VAT-exempt and doesn't count towards the £90,000 registration threshold. However, if you provide significant additional services or have commercial properties, this may change your position."

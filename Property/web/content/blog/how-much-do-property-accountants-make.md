@@ -12,7 +12,6 @@ image: ""
 h1: "How Much Do Property Accountants Make in the UK?"
 summary: "Property accountants in the UK can earn between £30,000-£100,000+ depending on experience and firm size. Senior partners at specialist property firms often exceed six figures."
 schema: ""
-canonical: ""
 faqs:
   - question: "What qualifications do I need to become a property accountant?"
     answer: "You'll typically need ACA or ACCA qualification plus specific property tax knowledge. Many property accountants start in general practice before specialising. Some firms offer training routes that combine general accounting with property specialisation from the start."

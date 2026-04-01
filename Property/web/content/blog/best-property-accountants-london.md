@@ -12,7 +12,6 @@ image: ""
 h1: "Best Property Accountants London: Finding the Right Specialist for Your Portfolio"
 summary: "Choosing the right property accountant in London can save you thousands in tax and compliance costs. Here's how to find specialists who understand BTL portfolios and property taxation."
 schema: ""
-canonical: ""
 faqs:
   - question: "What should I expect to pay for property accounting services in London?"
     answer: "London property accounting fees typically range from £1,500-£5,000 annually for individual landlords, depending on portfolio complexity. SPV structures and multiple properties increase costs, but specialist knowledge often saves more in tax than the additional fees. Always clarify what's included in quoted fees."

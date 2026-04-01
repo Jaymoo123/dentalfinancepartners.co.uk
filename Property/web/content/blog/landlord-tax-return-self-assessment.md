@@ -12,7 +12,6 @@ image: ""
 h1: "Landlord Tax Returns & Self Assessment: Complete Guide"
 summary: "Everything UK landlords need to know about filing their self assessment tax return, from rental income reporting to claiming allowable expenses and meeting HMRC deadlines."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I need to file self assessment if I only earn £800 rental income per year?"
     answer: "No, you don't need to register for self assessment if your gross rental income is £1,000 or less per tax year. However, if you have other income requiring self assessment (like self-employment), you should still declare the rental income on your return."

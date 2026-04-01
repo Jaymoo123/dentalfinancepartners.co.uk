@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Jobs UK: Career Opportunities in Property Tax and Accounting"
 summary: "The UK property accountant jobs market offers diverse opportunities from practice roles to in-house positions. Strong demand exists for specialists who understand property taxation and MTD compliance."
 schema: ""
-canonical: ""
 faqs:
   - question: "What qualifications do I need for property accountant jobs UK?"
     answer: "You typically need an accounting qualification (ACA, ACCA, or CIMA) plus strong UK tax knowledge. Property sector experience is valuable but not always essential - many firms will train the right candidate in property-specific areas like Section 24 and incorporation planning."

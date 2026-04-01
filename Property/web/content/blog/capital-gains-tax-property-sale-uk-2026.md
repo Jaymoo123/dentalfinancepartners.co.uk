@@ -12,7 +12,6 @@ image: ""
 h1: "Capital Gains Tax on Property Sale UK 2026: Rates and Allowances"
 summary: "Capital gains tax rules for property sales continue to evolve in 2026. Understanding current rates, allowances, and timing strategies can significantly impact your tax bill when selling investment property."
 schema: ""
-canonical: ""
 faqs:
   - question: "What is the capital gains tax rate on property sales in 2026?"
     answer: "For residential property, basic rate taxpayers pay 18% capital gains tax while higher and additional rate taxpayers pay 28%. The rate depends on your total taxable income, and you may pay both rates if the gain pushes you into the higher rate band. Non-residential property has lower rates of 10% and 20% respectively."

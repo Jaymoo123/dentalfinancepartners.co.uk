@@ -12,7 +12,6 @@ image: ""
 h1: "CGT on Property Transfer to Spouse: Is It Exempt?"
 summary: "Transferring property between spouses is typically exempt from CGT under the 'no gain, no loss' rule. However, there are important exceptions for separated couples and non-resident spouses."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I need to pay CGT when transferring property to my spouse?"
     answer: "No, transfers between spouses and civil partners who live together are exempt from CGT under the 'no gain, no loss' rule. However, this exemption doesn't apply if you're separated or if your spouse is non-UK resident."

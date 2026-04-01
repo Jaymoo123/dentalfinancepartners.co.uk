@@ -12,7 +12,6 @@ image: ""
 h1: "Capital Gains Tax on Property Sale UK 2026: Rates and Allowances"
 summary: "Capital gains tax on property sale UK 2026 follows established rates but with reduced annual exemptions. Understanding the rules and available reliefs can significantly reduce your tax liability when disposing of investment properties."
 schema: ""
-canonical: ""
 faqs:
   - question: "What is the capital gains tax rate on property sales in 2026?"
     answer: "For residential property sales in 2025/26, CGT rates are 18% for basic rate taxpayers and 24% for higher/additional rate taxpayers. These rates apply to gains after deducting the £3,000 annual exempt amount and allowable costs."

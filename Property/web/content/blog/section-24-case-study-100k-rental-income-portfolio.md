@@ -12,7 +12,6 @@ image: ""
 h1: "Section 24 Case Study: How £100k Rental Income Portfolio Faces £12k Tax Hit"
 summary: "A detailed case study examining how Section 24 mortgage interest restrictions impact a landlord with £100k annual rental income, including full tax calculations and strategic options."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much extra tax will Section 24 cost on £100k rental income?"
     answer: "For a highly mortgaged portfolio with £100k rental income, Section 24 can increase annual tax bills by £15k-£25k depending on mortgage levels, other income, and personal circumstances. The example in our case study shows a £23k annual increase including all knock-on effects."

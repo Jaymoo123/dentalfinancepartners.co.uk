@@ -12,7 +12,6 @@ image: ""
 h1: "Property Tax Planning: Expert Services for UK Landlords and Investors"
 summary: "Professional property tax planning can save UK landlords thousands in tax while ensuring full compliance. Our expert services help you navigate Section 24, incorporation decisions, and MTD requirements."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much can professional property tax planning save UK landlords?"
     answer: "Savings vary significantly based on portfolio size and structure, but higher-rate taxpayers with substantial mortgage debt often save £5,000-£15,000 annually through proper planning. For larger portfolios, savings can reach tens of thousands per year. The key is getting advice early - reactive planning after problems arise is far less effective."

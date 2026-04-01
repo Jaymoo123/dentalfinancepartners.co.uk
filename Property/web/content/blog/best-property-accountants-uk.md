@@ -12,7 +12,6 @@ image: ""
 h1: "How to Find the Best Property Accountants in the UK for Landlords"
 summary: "Finding the right property accountant can save thousands in tax and compliance costs. This guide covers what to look for in specialist property accountants across the UK."
 schema: ""
-canonical: ""
 faqs:
   - question: "What qualifications should the best property accountants UK have?"
     answer: "Look for qualified accountants (ACA, ACCA, or CIMA) with demonstrable property experience. Membership of property-focused organizations or additional qualifications in property taxation are positive signs, but practical experience with landlords is most important."

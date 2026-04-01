@@ -12,7 +12,6 @@ image: ""
 h1: "Local Property Accountant: Expert Services for UK Landlords"
 summary: "Property Tax Partners provides specialist accounting services for UK landlords and property investors, combining local knowledge with expert property tax advice."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much should I expect to pay a local property accountant?"
     answer: "Fees typically range from £800-£1,500 annually for landlords with 2-3 properties, rising to £2,000-£5,000+ for larger portfolios or complex structures. Most specialists offer fixed-fee arrangements that include annual accounts, Self Assessment, and basic planning advice. The tax savings usually exceed the fees by a significant margin."

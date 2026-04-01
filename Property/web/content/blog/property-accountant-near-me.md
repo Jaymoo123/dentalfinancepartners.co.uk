@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Near Me: Finding the Right UK Property Tax Specialist"
 summary: "Choosing between local and national property accountants for your UK rental business. What matters most isn't location—it's expertise and value."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I need a property accountant near my location?"
     answer: "Not necessarily. Modern property accounting works effectively online with cloud systems and digital communication. What matters most is finding an accountant with strong property expertise, not one in your local area. Many successful property investors work with national specialists who understand complex portfolio taxation better than generalist local accountants."

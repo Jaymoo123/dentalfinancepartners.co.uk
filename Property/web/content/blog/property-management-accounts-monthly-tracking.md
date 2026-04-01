@@ -12,7 +12,6 @@ image: ""
 h1: "Property Management Accounts: What to Track Monthly"
 summary: "Proper monthly tracking of property management accounts is crucial for UK landlords to stay compliant with tax obligations and maintain profitable portfolios."
 schema: ""
-canonical: ""
 faqs:
   - question: "How often should I update my property management accounts?"
     answer: "Monthly updates are recommended for effective property management accounts. This frequency allows you to spot issues early, maintain cash flow control, and prepare for quarterly MTD submissions from April 2026. Weekly updates work well if you have multiple properties with frequent transactions."

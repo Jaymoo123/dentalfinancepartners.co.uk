@@ -12,7 +12,6 @@ image: ""
 h1: "Section 24 and Basic Rate Taxpayers: Are You Affected?"
 summary: "Many basic rate taxpayers assume Section 24 doesn't affect them. This isn't always true — the mortgage interest restriction can push you into higher tax brackets and reduce your take-home rental income."
 schema: ""
-canonical: ""
 faqs:
   - question: "Does Section 24 affect me if I only pay basic rate tax?"
     answer: "Yes, Section 24 can still affect basic rate taxpayers. Adding back mortgage interest to your taxable income can push you over the higher rate threshold (£50,270), trigger child benefit clawback, or increase student loan repayments, even if you ultimately get 20% tax relief."

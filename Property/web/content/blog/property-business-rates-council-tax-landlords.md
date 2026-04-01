@@ -12,7 +12,6 @@ image: ""
 h1: "Property Business Rates vs Council Tax: What UK Landlords Need to Know"
 summary: "Many landlords are unclear about when their rental properties are liable for business rates instead of council tax. Understanding the rules can prevent unexpected bills and compliance issues."
 schema: ""
-canonical: ""
 faqs:
   - question: "When do rental properties pay business rates instead of council tax?"
     answer: "Rental properties pay business rates when classified as non-domestic properties, typically including HMOs with shared facilities, some student accommodation, serviced apartments, and properties with mixed residential/commercial use. The key factor is usually whether tenants share common facilities or the property provides services beyond basic letting."

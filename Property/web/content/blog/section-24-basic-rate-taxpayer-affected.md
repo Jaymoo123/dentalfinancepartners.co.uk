@@ -12,7 +12,6 @@ image: ""
 h1: "Section 24 Basic Rate Taxpayer: Are You Affected?"
 summary: "Section 24 restricts mortgage interest deductions for landlords, but basic rate taxpayers face different impacts than higher rate taxpayers. Understanding your position is crucial for tax planning."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do Section 24 rules affect me if I'm a basic rate taxpayer?"
     answer: "Yes, Section 24 affects all landlords with buy-to-let mortgages, including basic rate taxpayers. While the impact may be smaller than for higher rate taxpayers, you still lose the ability to deduct mortgage interest from rental income. Instead, you receive a 20% tax credit, and your gross rental income (before mortgage interest) is used to determine your tax band, potentially pushing you into higher rate tax."

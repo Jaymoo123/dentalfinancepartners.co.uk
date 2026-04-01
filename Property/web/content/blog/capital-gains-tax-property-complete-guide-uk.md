@@ -12,7 +12,6 @@ image: ""
 h1: "Capital Gains Tax on Property: Complete Guide for UK Landlords & Investors"
 summary: "Understanding capital gains tax property rules is crucial for UK landlords and investors when selling rental properties or second homes."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I pay capital gains tax if I sell my buy-to-let property?"
     answer: "Yes, you'll typically pay capital gains tax on any profit from selling a buy-to-let property. The rate is 18% for basic rate taxpayers or 28% for higher rate taxpayers. You can deduct your annual exempt amount (£3,000 for 2025/26) and allowable costs like purchase fees and improvements."

@@ -12,7 +12,6 @@ image: ""
 h1: "Property Tax Accountant Near Me: Finding the Right Specialist for Your Portfolio"
 summary: "Finding a specialist property tax accountant can transform how you manage your rental portfolio. Here's what UK landlords need to know about choosing the right tax professional."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I need a property tax accountant near my location?"
     answer: "Not necessarily. While some landlords prefer local accountants for face-to-face meetings, property tax work is mostly done digitally. Expertise in property taxation is more important than physical proximity. Many successful landlords work with specialist accountants hundreds of miles away who deliver better results than local generalists."

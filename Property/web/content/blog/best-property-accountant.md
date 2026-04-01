@@ -12,7 +12,6 @@ image: ""
 h1: "How to Choose the Best Property Accountant for UK Landlords"
 summary: "Choosing the right property accountant can save thousands in tax and compliance costs. Here's what UK landlords need to know when selecting specialist property tax advice."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much should I expect to pay for a specialist property accountant?"
     answer: "Property accountant fees typically range from £1,500-£5,000 annually for established portfolios, depending on complexity and service level. Simple BTL portfolios cost less than mixed commercial/residential properties or those requiring incorporation advice. Consider the value of tax savings and strategic guidance, not just the base fee."

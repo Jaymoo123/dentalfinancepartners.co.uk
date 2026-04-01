@@ -12,7 +12,6 @@ image: ""
 h1: "Best MTD Software for UK Landlords in 2026: Complete Guide"
 summary: "MTD for Income Tax Property starts 6 April 2026 for landlords earning over £50k from property. We compare the leading software options to help you choose the right platform."
 schema: ""
-canonical: ""
 faqs:
   - question: "When does MTD for property income become mandatory for UK landlords?"
     answer: "MTD for Income Tax Property becomes mandatory from 6 April 2026 for landlords with gross rental income exceeding £50,000 per year. This applies to individuals, partnerships, and trusts with UK property income."

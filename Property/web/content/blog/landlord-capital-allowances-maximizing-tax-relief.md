@@ -12,7 +12,6 @@ image: ""
 h1: "Landlord Capital Allowances: Maximizing Tax Relief on Property Investments"
 summary: "Capital allowances let landlords claim tax relief on fixtures, equipment and improvements rather than treating them as business expenses. Understanding what qualifies can significantly reduce your annual tax liability."
 schema: ""
-canonical: ""
 faqs:
   - question: "What's the difference between capital allowances and claiming repairs as expenses?"
     answer: "Repairs restore a property to its original condition and can be claimed immediately against rental income. Capital allowances apply to improvements that enhance the property beyond its original state - these are claimed through allowances over time, though the Annual Investment Allowance often provides 100% relief in year one for qualifying items up to £1 million."

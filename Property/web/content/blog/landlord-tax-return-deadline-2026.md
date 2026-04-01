@@ -12,7 +12,6 @@ image: ""
 h1: "Landlord Tax Return Deadline 2026: Key Dates & Tax Band Changes"
 summary: "The landlord tax return deadline for 2025/26 remains 31 January 2027, but 2026 brings significant changes with MTD property starting 6 April 2026 for eligible landlords."
 schema: ""
-canonical: ""
 faqs:
   - question: "What is the landlord tax return deadline for 2026?"
     answer: "The landlord tax return deadline for the 2025/26 tax year is 31 January 2027 for online submissions. Paper returns must be filed by 31 October 2026. However, from 6 April 2026, eligible landlords must also comply with Making Tax Digital property requirements, which involve quarterly digital submissions."

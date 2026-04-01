@@ -12,7 +12,6 @@ image: ""
 h1: "Landlord Insurance Tax Deductible: What Can You Claim?"
 summary: "Most landlord insurance premiums are tax deductible as allowable expenses against rental income. Understanding which types of cover qualify can reduce your tax bill significantly."
 schema: ""
-canonical: ""
 faqs:
   - question: "Can I claim buildings insurance if my mortgage lender requires it?"
     answer: "Yes, buildings insurance remains tax deductible even when required by your mortgage lender. The business purpose test focuses on protecting your rental property, not who mandated the cover. Keep records showing the insurance protects your rental business asset."

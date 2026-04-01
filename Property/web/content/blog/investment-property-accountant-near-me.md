@@ -12,7 +12,6 @@ image: ""
 h1: "How to Find the Right Investment Property Accountant Near You"
 summary: "Choosing the right accountant for your property portfolio doesn't have to mean finding someone locally. Here's how to evaluate your options and pick the best fit."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I need to find an investment property accountant near me?"
     answer: "Not necessarily. While local access can be convenient, expertise matters more than location for property investors. Many successful landlords work with specialist property accountants remotely, using video calls and secure document sharing. The key is finding someone who understands property taxation, not someone who happens to be nearby."

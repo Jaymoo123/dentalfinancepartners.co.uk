@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Leicester: Expert Tax Services for UK Landlords"
 summary: "Professional property accounting services in Leicester for UK landlords and property investors. Expert guidance on tax planning, compliance, and property portfolio management."
 schema: ""
-canonical: ""
 faqs:
   - question: "What makes a property accountant different from a general accountant in Leicester?"
     answer: "Property accountants specialise specifically in UK property taxation, including Section 24, capital gains planning, and incorporation strategies. They understand Leicester's property market dynamics and can provide targeted advice for landlords and property investors that general accountants typically cannot match."

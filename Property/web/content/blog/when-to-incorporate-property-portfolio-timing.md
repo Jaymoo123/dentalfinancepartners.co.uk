@@ -12,7 +12,6 @@ image: ""
 h1: "When Is the Right Time to Incorporate Your Property Portfolio?"
 summary: "Deciding when to incorporate your property portfolio depends on rental income levels, Section 24 impact, and expansion plans. Getting the timing right can save thousands in tax."
 schema: ""
-canonical: ""
 faqs:
   - question: "What rental income level makes incorporation worthwhile?"
     answer: "Most landlords benefit from incorporation when rental profits reach £40,000-50,000 annually, particularly if they're higher rate taxpayers affected by Section 24. However, timing depends on your personal tax position, expansion plans, and property values, not just income level alone."

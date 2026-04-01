@@ -12,7 +12,6 @@ image: ""
 h1: "How Much Does a Property Accountant Cost? UK Fees and Pricing Guide"
 summary: "Property accountant costs vary significantly depending on your portfolio size and service needs. Understanding typical fee structures helps you budget properly and choose the right level of support."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much should I expect to pay for a basic property tax return?"
     answer: "For a basic property tax return covering 1-3 properties, expect to pay £300-£800 annually. This typically includes preparing your property pages for Self Assessment but excludes ongoing bookkeeping or detailed tax planning advice."

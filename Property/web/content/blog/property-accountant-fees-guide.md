@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Fees: Complete Guide for UK Landlords"
 summary: "Understanding property accountant fees helps UK landlords budget effectively and choose the right professional support. This guide covers typical costs, pricing structures, and what to expect when hiring a property specialist."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much should I expect to pay for a property accountant?"
     answer: "Property accountant fees typically range from £200-£500 annually for a single BTL property, up to £1,500-£3,000+ for larger portfolios. The exact cost depends on your portfolio size, complexity, and the services you need. Most landlords with 2-5 properties pay £400-£800 per year for basic services including Self Assessment preparation and simple tax planning."

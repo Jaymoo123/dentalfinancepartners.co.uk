@@ -12,7 +12,6 @@ image: ""
 h1: "Section 24 Tax Calculator: Work Out Your Annual Cost"
 summary: "Section 24 has fundamentally changed how mortgage interest is treated for buy-to-let landlords. Our calculator helps you work out the true annual cost of these restrictions."
 schema: ""
-canonical: ""
 faqs:
   - question: "How do I calculate my annual Section 24 tax cost?"
     answer: "Calculate your annual mortgage interest, determine your marginal tax rate, then use this formula: (Your tax rate - 20%) × Annual mortgage interest. For example, a higher-rate taxpayer with £12,000 mortgage interest pays an extra £2,400 annually ((40% - 20%) × £12,000)."

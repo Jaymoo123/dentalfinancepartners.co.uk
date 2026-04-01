@@ -12,7 +12,6 @@ image: ""
 h1: "Accountant Self Assessment: Expert Services for Property Investors"
 summary: "Professional accountant self assessment services designed specifically for UK property investors, covering rental income, allowable expenses, and tax compliance requirements."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I need a specialist accountant for property self assessment?"
     answer: "While any qualified accountant can prepare a self assessment, property investment involves specific rules around Section 24, capital allowances, and rental income calculations that general practitioners often miss. Specialist property accountants typically identify additional deductions and ensure compliance with property-specific legislation, often saving more than their fees in reduced tax liabilities."

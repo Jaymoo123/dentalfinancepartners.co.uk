@@ -12,7 +12,6 @@ image: ""
 h1: "Landlord Tax Return: Complete Guide 2026"
 summary: "A comprehensive guide covering everything UK landlords need to know about completing their tax returns for 2026, including forms, deadlines, and allowable expenses."
 schema: ""
-canonical: ""
 faqs:
   - question: "When is the deadline for my landlord tax return in 2026?"
     answer: "For the 2025/26 tax year, your Self Assessment return must be submitted by 31st January 2027 if filing online, or 31st October 2026 if filing by paper. From April 2026, landlords with income above £10,000 will also need to submit quarterly MTD updates."

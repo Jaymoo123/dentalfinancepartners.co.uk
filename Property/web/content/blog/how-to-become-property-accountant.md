@@ -12,7 +12,6 @@ image: ""
 h1: "How to Become a Property Accountant: Complete UK Career Guide"
 summary: "Property accounting is a specialized field combining real estate knowledge with tax expertise. This guide covers qualifications, skills, and career paths needed to become a property accountant in the UK."
 schema: ""
-canonical: ""
 faqs:
   - question: "What qualifications do I need to become a property accountant?"
     answer: "The most common route is to complete a professional accounting qualification such as ACCA or ICAEW, which typically takes 2-4 years while working. You can start with AAT for entry-level roles, or if you're already qualified in general accounting, focus on gaining property-specific experience and knowledge through specialized training courses."

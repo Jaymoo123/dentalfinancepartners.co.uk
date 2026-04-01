@@ -12,7 +12,6 @@ image: ""
 h1: "Limited Company vs. Personal Ownership: UK Property Tax Comparison 2026"
 summary: "A detailed comparison of the tax implications for UK landlords choosing between limited company and personal property ownership in 2026, including Section 24 restrictions and practical examples."
 schema: ""
-canonical: ""
 faqs:
   - question: "Is it always better tax-wise to own rental property through a limited company in 2026?"
     answer: "No, it depends on your tax rate and circumstances. Higher-rate taxpayers with mortgages typically benefit from limited companies due to Section 24 restrictions, but basic-rate taxpayers or those with minimal borrowing may find personal ownership more tax-efficient. The company structure also involves additional costs and administration."

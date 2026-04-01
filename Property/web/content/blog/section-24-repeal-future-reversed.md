@@ -12,7 +12,6 @@ image: ""
 h1: "Future of Section 24: Will It Be Reversed?"
 summary: "Section 24 has fundamentally changed UK property investment since 2017. We examine the political and economic factors that could lead to its repeal."
 schema: ""
-canonical: ""
 faqs:
   - question: "Will the Conservative Party reverse Section 24?"
     answer: "The Conservative Party introduced Section 24 and has not committed to reversing it. They defended the measure as improving tax fairness and generating necessary revenue. Current Conservative policy does not indicate plans for reversal."

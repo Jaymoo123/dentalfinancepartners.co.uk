@@ -12,7 +12,6 @@ image: ""
 h1: "How to Transfer Property Into a Limited Company UK"
 summary: "Transferring property into a limited company can provide tax benefits but involves complex legal and tax considerations including stamp duty and capital gains tax."
 schema: ""
-canonical: ""
 faqs:
   - question: "Can I transfer just one property into a limited company?"
     answer: "Yes, you can transfer individual properties, but you won't qualify for incorporation relief which requires transferring your entire property business. This means you'll face capital gains tax on any profit and the company will pay full stamp duty including the 3% surcharge."

@@ -12,7 +12,6 @@ image: ""
 h1: "Buy-to-Let Refinancing: When Does It Make Sense?"
 summary: "BTL refinancing can offer better rates and improved cash flow, but the tax implications need careful consideration. Understanding when refinancing makes financial sense is crucial for portfolio growth."
 schema: ""
-canonical: ""
 faqs:
   - question: "Can I claim tax relief on refinanced BTL mortgage interest?"
     answer: "Yes, but only at the basic rate (20%) under Section 24 rules. If you release equity through refinancing, you can only claim relief on interest attributable to funds used for property investment purposes."

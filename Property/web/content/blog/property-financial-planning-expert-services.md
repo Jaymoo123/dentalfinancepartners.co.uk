@@ -12,7 +12,6 @@ image: ""
 h1: "Property Financial Planning: Expert Services for UK Landlords"
 summary: "Strategic financial planning is essential for successful property investment. Our specialist services help landlords optimise tax efficiency, structure portfolios effectively, and plan for long-term growth."
 schema: ""
-canonical: ""
 faqs:
   - question: "When should I consider professional property financial planning?"
     answer: "Consider professional planning when you have three or more rental properties, annual property income over £30,000, are considering incorporation, or facing major life changes. The complexity and potential tax savings typically justify the cost at these levels."

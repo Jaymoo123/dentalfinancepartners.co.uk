@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant vs General Accountant: What's the Difference?"
 summary: "Property accountants specialise in UK rental property tax, Section 24, and incorporation strategies that general accountants often lack. The right specialist can save landlords thousands in tax and compliance costs."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much more do property accountants typically charge than general accountants?"
     answer: "Property accountants typically charge 20-30% more than general practices for basic compliance work. However, this premium often pays for itself through better tax planning and optimisation strategies that can save thousands annually, especially for higher-rate taxpayers and portfolio landlords."

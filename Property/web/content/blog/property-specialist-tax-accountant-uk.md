@@ -12,7 +12,6 @@ image: ""
 h1: "Property Specialist Tax Accountant UK: Expert Services for Landlords"
 summary: "Finding the right property specialist tax accountant UK can transform your property investment returns. We explain what to look for and how specialist property accountants add value beyond general accountancy."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much should I expect to pay a property specialist tax accountant UK?"
     answer: "Property specialist fees typically range from £500-2,000 annually for basic landlord services, rising to £3,000+ for complex portfolios with multiple properties or limited companies. However, good specialists often save more than their fees through proper tax planning and Section 24 mitigation strategies."

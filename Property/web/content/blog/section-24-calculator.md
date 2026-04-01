@@ -12,7 +12,6 @@ image: ""
 h1: "Section 24 Calculator: Calculate Your Tax Impact"
 summary: "Calculate exactly how Section 24 mortgage interest restrictions impact your property tax bill with our comprehensive calculator guide."
 schema: ""
-canonical: ""
 faqs:
   - question: "How accurate are online Section 24 calculators?"
     answer: "Online Section 24 calculators provide reasonable estimates for straightforward BTL portfolios but have limitations. They typically use simplified assumptions and may not account for all allowable expenses, complex income structures, or tax planning opportunities. For portfolios over £500,000 or complex situations, professional calculations usually provide more accurate results."

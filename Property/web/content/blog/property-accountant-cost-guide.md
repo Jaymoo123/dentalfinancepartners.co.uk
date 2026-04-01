@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Cost: Complete Guide for UK Landlords"
 summary: "Understanding property accountant costs helps UK landlords budget effectively and find the right professional support. Fees vary significantly based on portfolio size, complexity, and services required."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much should I expect to pay for property accounting services?"
     answer: "Property accountant costs typically range from £300-£800 for basic services up to £2,500-£6,000+ for complex portfolios. Most landlords with moderate-sized portfolios pay £800-£2,000 annually. The exact cost depends on your portfolio size, business structure, and service level required."

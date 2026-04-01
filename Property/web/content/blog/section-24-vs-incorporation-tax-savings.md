@@ -12,7 +12,6 @@ image: ""
 h1: "Section 24 vs. Incorporation: Which Strategy Saves More Tax for UK Landlords?"
 summary: "Section 24 restricts mortgage interest relief for individual landlords, while incorporation can restore full tax relief. We compare both strategies with real examples to show which saves more tax."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much rental income makes incorporation worthwhile despite Section 24?"
     answer: "Incorporation typically becomes worthwhile around £75,000-£100,000 annual rental income for higher-rate taxpayers with significant mortgage interest. The exact threshold depends on your mortgage levels, other income, and personal circumstances. Basic-rate taxpayers might need higher rental income levels to justify incorporation costs."

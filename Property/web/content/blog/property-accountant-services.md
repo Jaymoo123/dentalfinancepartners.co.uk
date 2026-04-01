@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Services: Expert Tax and Advisory Solutions for UK Landlords"
 summary: "Specialist property accountant services designed for UK landlords and property investors. Expert tax planning, compliance support, and strategic advice to optimise your property portfolio returns."
 schema: ""
-canonical: ""
 faqs:
   - question: "What services do property accountants typically provide?"
     answer: "Property accountants provide tax return preparation, Section 24 advice, incorporation analysis, capital gains tax planning, MTD compliance support, and ongoing bookkeeping. They focus specifically on the unique tax challenges facing UK landlords and property investors."

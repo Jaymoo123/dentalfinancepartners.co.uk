@@ -12,7 +12,6 @@ image: ""
 h1: "Buy-to-Let Limited Company Mortgage: What You Need to Know"
 summary: "Many landlords are switching to limited company structures for their BTL portfolios, but company mortgages work differently to personal lending."
 schema: ""
-canonical: ""
 faqs:
   - question: "Are buy-to-let limited company mortgage rates higher than personal BTL rates?"
     answer: "Yes, company mortgage rates are typically 0.25% to 0.75% higher than personal BTL rates. However, the tax savings from company ownership often outweigh the additional mortgage costs, particularly for higher-rate taxpayers affected by Section 24."

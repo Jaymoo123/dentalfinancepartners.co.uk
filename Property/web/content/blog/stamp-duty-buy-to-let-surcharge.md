@@ -12,7 +12,6 @@ image: ""
 h1: "Stamp Duty on Buy-to-Let: 5% Surcharge Explained"
 summary: "UK landlords pay an extra 5% stamp duty surcharge on buy-to-let properties. This guide explains the current rates, exemptions, and how the additional charge affects property investment returns."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I pay the 5% stamp duty surcharge on my first buy-to-let property?"
     answer: "Yes, if you already own your main residence. The 5% surcharge applies to any additional residential property purchase, even if it's your first rental property. The only exception is if you're a first-time buyer purchasing your main residence."

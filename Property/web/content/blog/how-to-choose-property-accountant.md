@@ -12,7 +12,6 @@ image: ""
 h1: "How to Choose a Property Accountant for Your Property Business"
 summary: "Choosing the right property accountant can save you thousands in tax and compliance costs. This guide covers the essential factors UK landlords should consider when selecting professional accounting help."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much should I expect to pay for a property accountant?"
     answer: "Property accounting fees typically range from £500-£2,000+ annually depending on portfolio size and complexity. A landlord with 2-3 properties might pay £800-£1,200, while larger portfolios require higher fees. Always clarify what services are included and ask about additional charges for tax planning advice or MTD preparation."

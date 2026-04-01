@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant London Jobs: Career Opportunities in UK Property Tax"
 summary: "Property accountant London jobs are growing as UK property tax becomes more complex. Specialising in property tax offers strong career prospects in an expanding market."
 schema: ""
-canonical: ""
 faqs:
   - question: "What qualifications do I need for property accountant London jobs?"
     answer: "Most property accountant roles require professional accounting qualifications (ACA, ACCA, or CIMA). Some positions accept part-qualified candidates with relevant property experience. Additional knowledge of UK property taxation, Section 24 rules, and property investment structures is highly valued."

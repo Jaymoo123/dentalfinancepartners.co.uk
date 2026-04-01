@@ -12,7 +12,6 @@ image: ""
 h1: "Rental Yield Calculation: Gross vs Net Yield Explained"
 summary: "Master rental yield calculations with our practical guide covering gross vs net yield, including real UK property examples and tax considerations."
 schema: ""
-canonical: ""
 faqs:
   - question: "What's the difference between gross and net rental yield?"
     answer: "Gross rental yield uses total rental income before expenses, while net rental yield deducts all property costs including mortgage interest, management fees, insurance, and maintenance. Net yield gives you the true return on investment, typically 2-4 percentage points lower than gross yield."

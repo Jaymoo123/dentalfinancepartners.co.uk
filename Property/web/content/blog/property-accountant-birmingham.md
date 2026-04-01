@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Birmingham: Expert Services for UK Landlords"
 summary: "Professional property accounting services in Birmingham for landlords and investors. Expert guidance on tax compliance, portfolio management, and property investment structures."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I need a local property accountant in Birmingham?"
     answer: "Not necessarily. While local knowledge can be helpful, property tax rules are national, and many specialist property accountants work effectively with clients remotely. The key is finding someone who specialises in property rather than general accounting, regardless of their location."

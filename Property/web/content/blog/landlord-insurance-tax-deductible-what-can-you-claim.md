@@ -12,7 +12,6 @@ image: ""
 h1: "Landlord Insurance Tax Deductible: What Can You Claim?"
 summary: "Most landlord insurance premiums are fully tax deductible against rental income, but knowing exactly which policies qualify and how to claim them correctly can save you hundreds in tax each year."
 schema: ""
-canonical: ""
 faqs:
   - question: "Can I claim landlord insurance if I pay monthly premiums?"
     answer: "Yes, monthly landlord insurance premiums are fully tax deductible. Claim the total amount paid during each tax year, regardless of whether you pay annually, monthly, or quarterly. Keep records of all payments and ensure you only claim premiums for periods when the property was available for rental."

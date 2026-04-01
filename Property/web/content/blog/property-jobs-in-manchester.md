@@ -12,7 +12,6 @@ image: ""
 h1: "Property Jobs in Manchester: Tax and Accounting Career Opportunities for Property Professionals"
 summary: "Manchester's thriving property market creates significant demand for specialist tax and accounting professionals. Discover career opportunities in property tax advisory roles."
 schema: ""
-canonical: ""
 faqs:
   - question: "What qualifications do I need for property tax jobs in Manchester?"
     answer: "Most positions require accounting qualifications (ACA, ACCA) or tax qualifications (CTA, ATT). Property-specific training or experience is highly valued. Some entry-level positions accept relevant degrees with strong numerical skills, providing training opportunities."

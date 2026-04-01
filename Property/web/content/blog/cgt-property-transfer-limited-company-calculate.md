@@ -12,7 +12,6 @@ image: ""
 h1: "CGT on Property Transfer to Limited Company: How to Calculate"
 summary: "Transferring property to a limited company triggers CGT on the gain made since you bought the property. Understanding the calculation helps you plan the tax bill and decide if incorporation makes financial sense."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I pay CGT even if no money changes hands when transferring to my company?"
     answer: "Yes, HMRC treats the transfer as a disposal at market value regardless of whether money actually changes hands. You're deemed to have sold the property to your company at current market value, triggering CGT on any gain since you originally bought it."

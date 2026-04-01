@@ -12,7 +12,6 @@ image: ""
 h1: "Property Accountant Jobs Remote: Career Opportunities in UK Property Finance"
 summary: "Remote property accountant jobs offer flexibility in the growing UK property finance sector. We explore career paths, qualifications, and opportunities in property accounting."
 schema: ""
-canonical: ""
 faqs:
   - question: "What qualifications do I need for remote property accountant jobs?"
     answer: "Most remote property accountant positions require professional qualifications like ACA, ACCA, or CIMA. Some entry-level roles accept AAT qualifications combined with property experience. Knowledge of UK property taxation, rental income rules, and capital gains tax is essential for success in these roles."

@@ -12,7 +12,6 @@ image: ""
 h1: "Holdover Relief Property: How It Works for UK Property Incorporation"
 summary: "Holdover relief can defer CGT when transferring property to a company, but strict conditions apply. Understanding these rules is crucial before incorporating your property portfolio."
 schema: ""
-canonical: ""
 faqs:
   - question: "Can I use holdover relief when transferring rental properties to my limited company?"
     answer: "Possibly, but it depends on your specific circumstances. Incorporation relief (Section 162) is more commonly used for property business transfers to companies, while standard holdover relief has stricter conditions. Both require meeting specific criteria about business transfers and may not apply to simple property transfers. Professional advice is essential to determine which reliefs apply to your situation."

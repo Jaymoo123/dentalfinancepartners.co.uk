@@ -12,7 +12,6 @@ image: ""
 h1: "Section 24 Mortgage Interest Restriction: What UK Landlords Need to Know"
 summary: "Section 24 restricts mortgage interest tax relief for UK landlords to 20%, significantly increasing tax bills for higher-rate taxpayers."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much extra tax will Section 24 cost me?"
     answer: "The cost depends on your tax rate and mortgage interest. Higher rate taxpayers typically pay an extra 20% tax on their mortgage interest payments. For example, £10,000 annual mortgage interest costs an additional £2,000 in tax for higher rate taxpayers."

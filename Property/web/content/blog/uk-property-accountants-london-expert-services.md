@@ -12,7 +12,6 @@ image: ""
 h1: "UK Property Accountants London: Expert Services for Landlords and Investors"
 summary: "Finding the right property accountant in London can transform your investment returns and compliance burden. We explore what specialist UK property accountants offer and how to choose the right firm."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much do UK property accountants in London typically charge?"
     answer: "Fees vary significantly based on portfolio complexity and services required. Simple BTL tax returns might cost £300-600 annually, while comprehensive tax planning for larger portfolios can range from £1,500-5,000+. Many firms offer fixed-fee packages for standard services, with additional charges for complex planning work or incorporation advice."

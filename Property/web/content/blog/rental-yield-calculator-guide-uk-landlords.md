@@ -12,7 +12,6 @@ image: ""
 h1: "Rental Yield Calculator: Complete Guide for UK Property Investors"
 summary: "Understanding how to calculate rental yield is crucial for making informed property investment decisions. This guide covers everything from basic calculations to advanced yield optimization strategies."
 schema: ""
-canonical: ""
 faqs:
   - question: "What's the difference between gross and net rental yield?"
     answer: "Gross rental yield is calculated using total rental income before any expenses, while net rental yield deducts all property-related costs including mortgage interest, maintenance, insurance, and void periods. Net yield gives you a more accurate picture of your actual investment return, typically 3-5 percentage points lower than gross yield."

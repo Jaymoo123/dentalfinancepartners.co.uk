@@ -12,7 +12,6 @@ image: ""
 h1: "Incorporation Case Study: 5-Property Portfolio Analysis"
 summary: "A detailed analysis of whether a landlord with 5 BTL properties should incorporate, comparing personal ownership vs company structure including Section 24 implications."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much does it cost to incorporate a 5-property portfolio?"
     answer: "Typical incorporation costs for a 5-property portfolio range from £20,000-£30,000, including stamp duty (around £13,500), legal fees (£8,000-£12,000), and professional advice (£3,000-£5,000). Ongoing annual costs add £1,500-£2,500 for additional accountancy and compliance requirements."

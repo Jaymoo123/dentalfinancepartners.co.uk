@@ -12,7 +12,6 @@ image: ""
 h1: "Stamp Duty on Buy-to-Let: Complete Guide to the 5% Surcharge"
 summary: "UK landlords face a 5% stamp duty surcharge on buy-to-let properties. This guide explains the rates, exemptions and planning strategies to minimise your tax liability."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much is stamp duty on a £400,000 buy-to-let property?"
     answer: "On a £400,000 buy-to-let property, you'd pay £21,500 in stamp duty. This breaks down as: £20,000 (8%) on the first £250,000, plus £19,500 (13%) on the remaining £150,000. The total includes the 5% surcharge applied to investment properties."

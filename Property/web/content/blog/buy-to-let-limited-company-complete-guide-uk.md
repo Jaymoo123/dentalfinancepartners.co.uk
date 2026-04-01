@@ -12,7 +12,6 @@ image: ""
 h1: "Buy-to-Let Limited Company: Complete Guide UK"
 summary: "A comprehensive guide covering everything UK landlords need to know about operating through a buy-to-let limited company, including tax benefits and setup requirements."
 schema: ""
-canonical: ""
 faqs:
   - question: "What are the main tax benefits of a buy-to-let limited company?"
     answer: "The primary benefits include full mortgage interest relief (avoiding Section 24 restrictions), lower corporation tax rates (19-25% vs up to 45% income tax), and the ability to retain profits within the company for reinvestment. Companies also offer more flexibility for profit extraction through dividends and salaries."

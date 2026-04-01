@@ -12,7 +12,6 @@ image: ""
 h1: "Accountant Financial Planning: Expert Services for UK Property Investors"
 summary: "Professional accountant financial planning helps UK property investors navigate complex tax rules, optimise structures, and build wealth efficiently."
 schema: ""
-canonical: ""
 faqs:
   - question: "When should property investors start professional financial planning?"
     answer: "Start planning before you complete your second property purchase. Early planning prevents costly structural mistakes and ensures you build your portfolio tax-efficiently from the beginning. Waiting until you have multiple properties often means expensive restructuring later."

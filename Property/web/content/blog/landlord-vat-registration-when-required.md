@@ -12,7 +12,6 @@ image: ""
 h1: "Landlord VAT Registration: When Is It Required?"
 summary: "Most UK landlords don't need VAT registration as residential rent is exempt. However, commercial properties, furnished holiday lets, and certain services may trigger registration requirements."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I need VAT registration for buy-to-let properties?"
     answer: "No, standard residential buy-to-let rental income is VAT-exempt, so it doesn't count towards the £90,000 VAT registration threshold. You only need to consider VAT registration if you provide additional taxable services or operate commercial properties."

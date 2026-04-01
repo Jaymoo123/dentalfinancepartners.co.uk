@@ -12,7 +12,6 @@ image: ""
 h1: "Landlord Capital Allowances: Maximizing Tax Relief on Property Equipment"
 summary: "Landlord capital allowances can provide significant tax relief on equipment and fixtures in rental properties. Understanding what qualifies and how to claim properly can reduce your tax bill substantially."
 schema: ""
-canonical: ""
 faqs:
   - question: "What is the difference between capital allowances and claiming repairs as expenses?"
     answer: "Repairs that restore items to their original condition can be claimed as immediate expenses against rental income. Capital allowances apply to improvements, replacements that enhance the property, or new equipment purchases. For example, fixing a broken boiler is a repair expense, but installing a new, more efficient boiler system would qualify for capital allowances."

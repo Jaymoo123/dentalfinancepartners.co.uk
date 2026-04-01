@@ -12,7 +12,6 @@ image: ""
 h1: "How to Incorporate Rental Property Without Triggering CGT"
 summary: "UK landlords can transfer properties to limited companies without immediate CGT using incorporation relief, though strict conditions apply and the gain is deferred rather than eliminated."
 schema: ""
-canonical: ""
 faqs:
   - question: "What is incorporation relief and how does it help landlords avoid CGT?"
     answer: "Incorporation relief allows landlords to transfer rental properties to a limited company without triggering immediate Capital Gains Tax. The relief defers the CGT liability until the company shares are sold or the properties are disposed of. However, your rental activity must qualify as a business and meet strict HMRC conditions, including transferring the entire business for shares only."

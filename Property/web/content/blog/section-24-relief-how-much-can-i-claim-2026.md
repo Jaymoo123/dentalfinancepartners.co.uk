@@ -12,7 +12,6 @@ image: ""
 h1: "Section 24 Relief: How Much Can I Claim in 2026?"
 summary: "Section 24 restricts mortgage interest relief to 20% for individual landlords. Understanding the 2026/27 rules helps you calculate your actual tax relief and plan accordingly."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much Section 24 relief can I claim in 2026?"
     answer: "You can claim 20% tax relief on mortgage interest and other finance costs. This applies as a tax credit, not a deduction from rental income. For example, £15,000 annual mortgage interest gives you £3,000 tax relief regardless of your tax band."

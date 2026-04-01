@@ -12,7 +12,6 @@ image: ""
 h1: "Property Payroll Services: Expert Accounting for UK Landlords"
 summary: "Specialist payroll services designed for property landlords and companies, handling everything from property management staff wages to PAYE compliance."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much do property payroll services typically cost?"
     answer: "Property payroll services typically charge £8-15 per employee per month, plus a base fee of £20-40. A property business with 3 employees might pay £60-85 monthly. Costs vary based on complexity, integration requirements, and additional services like CIS handling or benefits administration."

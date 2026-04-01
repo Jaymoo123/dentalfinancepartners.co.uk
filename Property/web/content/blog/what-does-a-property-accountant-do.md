@@ -12,7 +12,6 @@ image: ""
 h1: "What Does a Property Accountant Do? Essential Services for UK Landlords"
 summary: "Property accountants specialise in helping UK landlords navigate complex tax rules, file accurate returns, and structure their portfolios efficiently. They handle everything from basic bookkeeping to advanced tax planning and MTD compliance."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much does a property accountant typically charge UK landlords?"
     answer: "Property accountant fees vary based on portfolio size and complexity. For basic Self Assessment returns, expect £300-800 annually. Larger portfolios with multiple properties might pay £1,000-3,000+ per year. Many property accountants offer fixed-fee packages rather than hourly billing, making costs predictable. The investment often pays for itself through tax savings and avoiding penalties."

@@ -12,7 +12,6 @@ image: ""
 h1: "Landlord Tax Accountant: When You Need Professional Help"
 summary: "Property tax rules are complex and getting more challenging. Knowing when to engage a specialist landlord tax accountant can save you money and avoid costly mistakes."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much does a landlord tax accountant cost compared to a general accountant?"
     answer: "Specialist landlord tax accountants typically charge 20-50% more than general accountants, but this additional cost is often recovered through better tax planning and compliance. Expect to pay £800-£2,000 annually for a small portfolio, rising to £3,000+ for complex multi-property portfolios. The key is ensuring the tax savings exceed the additional fees."

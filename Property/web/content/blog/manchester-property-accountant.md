@@ -12,7 +12,6 @@ image: ""
 h1: "Manchester Property Accountant: Expert Services for UK Landlords"
 summary: "Property Tax Partners provides specialist accounting services for Manchester landlords and property investors, offering expert tax advice and compliance support."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I need a specialist Manchester property accountant or will any accountant do?"
     answer: "While any qualified accountant can prepare basic property tax returns, a specialist understands Manchester's property market nuances, current property tax legislation, and opportunities specific to buy-to-let investors. This expertise often identifies savings that offset the accountant's fees many times over."

@@ -12,7 +12,6 @@ image: ""
 h1: "Professional Accountant Bookkeeping Services for Property Investors"
 summary: "Professional accountant bookkeeping services designed specifically for UK property investors, combining expert knowledge of property taxation with comprehensive financial management."
 schema: ""
-canonical: ""
 faqs:
   - question: "What's the difference between regular bookkeeping and accountant bookkeeping for property investors?"
     answer: "Accountant bookkeeping combines qualified accounting expertise with property-specific knowledge. While regular bookkeeping records transactions, accountant bookkeeping ensures proper tax treatment of property income and expenses, handles Section 24 restrictions, prepares for MTD compliance, and provides strategic financial analysis for portfolio growth."

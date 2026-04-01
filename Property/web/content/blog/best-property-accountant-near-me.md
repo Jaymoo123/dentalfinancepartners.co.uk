@@ -12,7 +12,6 @@ image: ""
 h1: "How to Find the Best Property Accountant Near Me: A UK Landlord's Guide"
 summary: "Choosing the right property accountant can save you thousands. Here's how to find qualified specialists who understand UK property tax rules, whether local or nationwide."
 schema: ""
-canonical: ""
 faqs:
   - question: "Should I choose a local accountant or property specialist?"
     answer: "Choose based on expertise rather than location. A local accountant works well if they specialize in property and understand current rules like Section 24. However, a property-focused specialist firm often provides better value even if they're not local, especially for complex portfolios or tax planning."

@@ -12,7 +12,6 @@ image: ""
 h1: "Finding a Senior Property Accountant in London: What UK Landlords Need to Know"
 summary: "London's competitive property market demands specialist accounting expertise. This guide helps landlords choose the right senior property accountant for complex portfolios and tax planning needs."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much should I expect to pay a senior property accountant in London?"
     answer: "Senior property accountants in London typically charge £150-300 per hour or £3,000-8,000 annually for a portfolio of 5-10 properties. Larger or more complex portfolios may require £10,000+ annually. Consider this against potential tax savings - many London landlords save significantly more than they pay in fees."

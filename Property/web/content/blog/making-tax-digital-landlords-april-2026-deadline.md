@@ -12,7 +12,6 @@ image: ""
 h1: "Making Tax Digital for Landlords: April 2026 Deadline Explained"
 summary: "Making Tax Digital for Income Tax Property becomes mandatory for eligible landlords from April 2026. This guide explains who's affected and what you need to do."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do all UK landlords need to use Making Tax Digital from April 2026?"
     answer: "No, only landlords with UK property income over £10,000 per year must use MTD from April 2026. This threshold applies to gross rental income before expenses. Landlords below this threshold can continue using traditional self assessment, though they may choose to join MTD voluntarily."

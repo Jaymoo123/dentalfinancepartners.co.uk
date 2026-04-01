@@ -12,7 +12,6 @@ image: ""
 h1: "Accountant Payroll Services: Expert Support for Property Companies"
 summary: "Property companies need specialist payroll support to handle employee tax obligations, pension contributions and statutory compliance requirements correctly."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do property companies need professional payroll services for just the director?"
     answer: "Yes, even single-director property companies benefit from professional payroll services. They ensure optimal salary levels, handle PAYE compliance, and maintain proper employment records. The cost is typically £15-25 monthly and often saves more in tax efficiency and penalty avoidance."

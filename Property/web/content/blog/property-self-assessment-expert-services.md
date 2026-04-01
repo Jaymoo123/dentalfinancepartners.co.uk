@@ -12,7 +12,6 @@ image: ""
 h1: "Property Self Assessment: Expert Services for UK Landlords"
 summary: "Professional property self assessment services help UK landlords navigate complex tax obligations while maximising allowable deductions and ensuring compliance."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much does professional property self assessment cost?"
     answer: "Costs vary depending on portfolio size and complexity, typically ranging from £300-500 for a single property to £1,000+ for larger portfolios. The investment often pays for itself through tax savings and reduced compliance risk."

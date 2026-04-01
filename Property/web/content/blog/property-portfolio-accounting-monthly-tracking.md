@@ -12,7 +12,6 @@ image: ""
 h1: "Property Portfolio Accounting: What to Track Monthly"
 summary: "Monthly tracking is crucial for successful property portfolio accounting. This guide covers the essential income, expenses, and performance metrics every UK landlord should monitor regularly."
 schema: ""
-canonical: ""
 faqs:
   - question: "What's the minimum I need to track monthly for my property portfolio?"
     answer: "Track rental income received per property, mortgage payments, major repairs and maintenance costs, letting agent fees, and insurance payments. Keep all receipts and maintain separate records for each property. This basic tracking covers most tax requirements and helps monitor cash flow."
