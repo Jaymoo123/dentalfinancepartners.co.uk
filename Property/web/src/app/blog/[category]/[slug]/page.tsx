@@ -4,6 +4,7 @@ import {
   getAllPosts,
   getPostByCategoryAndSlug,
   getCategorySlug,
+  getRelatedPosts,
 } from "@/lib/blog";
 import BlogPostRenderer from "@/components/blog/BlogPostRenderer";
 
@@ -59,6 +60,12 @@ export default async function BlogPostPage({ params }: Props) {
   }
 
   const categorySlug = getCategorySlug(post);
+  const related = getRelatedPosts(post.slug, post.category, 3).map((r) => ({
+    slug: r.slug,
+    title: r.title,
+    summary: r.summary,
+    categorySlug: getCategorySlug(r),
+  }));
 
-  return <BlogPostRenderer post={post} categorySlug={categorySlug} />;
+  return <BlogPostRenderer post={post} categorySlug={categorySlug} related={related} />;
 }
