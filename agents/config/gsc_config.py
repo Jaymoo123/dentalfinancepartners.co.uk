@@ -102,6 +102,38 @@ GSC_CONFIG = {
         "enabled": False,  # Not live yet
         "start_date": None,
     },
+    
+    "solicitors": {
+        # GSC settings
+        "site_url": "sc-domain:accountsforlawyers.co.uk",
+        "property_type": "domain",
+        
+        # Database
+        "blog_topics_table": "blog_topics_solicitors",
+        
+        # File paths
+        "content_dir": "Solicitors/web/content/blog",
+        "git_repo_path": "Solicitors/web",
+        
+        # Site-specific thresholds (lower for new site with less traffic)
+        "min_impressions_baseline": 5,
+        "verdict_thresholds": {
+            "week1": {
+                "impressions_per_day": 5,
+                "position_improvement": 3,
+                "clicks_per_day": 0.5,
+            },
+            "cumulative": {
+                "impressions_per_day": 3,
+                "position_improvement": 2,
+                "clicks_per_day": 0.3,
+            },
+        },
+        
+        # Active status
+        "enabled": False,  # Enable after GSC verification and domain setup
+        "start_date": None,
+    },
 }
 
 # Global settings (apply to all sites unless overridden)

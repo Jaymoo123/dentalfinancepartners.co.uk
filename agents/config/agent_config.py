@@ -16,7 +16,7 @@ AGENT_CONFIG = {
 # ============================================================================
 # NICHE CONFIGURATION
 # ============================================================================
-ACTIVE_NICHES = ["Dentists", "Property", "Medical"]
+ACTIVE_NICHES = ["Dentists", "Property", "Medical", "Solicitors"]
 
 NICHE_CONFIG = {
     "Dentists": {
@@ -41,6 +41,14 @@ NICHE_CONFIG = {
         "web_path": "Medical/web",
         "source_identifier": "medical",
         "ga4_measurement_id": "G-MEDICAL-PLACEHOLDER",
+        "ga4_property_id": "000000000",  # Add after GA4 property creation
+    },
+    "Solicitors": {
+        "enabled": False,  # Enable after GA4 setup and initial deployment
+        "blog_topics_table": "blog_topics_solicitors",
+        "web_path": "Solicitors/web",
+        "source_identifier": "solicitors",
+        "ga4_measurement_id": "G-SOLICITORS-PLACEHOLDER",
         "ga4_property_id": "000000000",  # Add after GA4 property creation
     },
 }

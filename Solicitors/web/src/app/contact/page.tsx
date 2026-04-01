@@ -6,12 +6,12 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 
 export const metadata: Metadata = {
-  title: "Contact Medical Accountants UK | Book Free Consultation",
-  description: `Contact ${siteConfig.name} for GP accounting and medical tax enquiries. NHS pension planning, locum tax, private practice advice. 24-hour response.`,
+  title: "Contact Accounts for Lawyers | Book Free Consultation",
+  description: `Contact ${siteConfig.name} for solicitor accounting and law firm tax enquiries. SRA compliance, partnership tax, LLP conversion advice. 24-hour response.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
-    title: "Contact Medical Accountants UK",
-    description: "Book free consultation for GP accounting and medical tax advice. 24-hour response time.",
+    title: "Contact Accounts for Lawyers",
+    description: "Book free consultation for solicitor accounting and law firm tax advice. 24-hour response time.",
     url: `${siteConfig.url}/contact`,
     type: "website",
   },
@@ -35,7 +35,7 @@ export default function ContactPage() {
       />
       <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Contact us</h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-        Whether you're a GP partner navigating NHS pension complexities, a locum doctor managing multiple income streams, or a consultant considering private practice incorporation, we're here to help. Fill in the form below or contact us directly.
+        Whether you're a sole practitioner managing SRA compliance, a law firm partner navigating LLP conversion, or a COFA ensuring client money rules are met, we're here to help. Fill in the form below or contact us directly.
       </p>
       
       <div className="mt-10 grid gap-8 sm:mt-12 lg:grid-cols-[1fr_1.5fr] lg:gap-10 xl:gap-12">
@@ -74,19 +74,19 @@ export default function ContactPage() {
             </dl>
           </div>
 
-          <div className="rounded-2xl border border-[var(--medical-teal)]/20 bg-gradient-to-br from-[var(--medical-teal)]/5 to-transparent p-6 sm:p-8">
+          <div className="rounded-2xl border border-[var(--primary)]/20 bg-gradient-to-br from-[var(--primary)]/5 to-transparent p-6 sm:p-8">
             <h3 className="font-serif text-base font-semibold text-[var(--ink)] sm:text-lg">What happens next?</h3>
             <ul className="mt-4 space-y-3 text-sm text-[var(--ink-soft)]">
               <li className="flex items-start gap-3">
-                <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[var(--coral)] text-xs font-bold text-white">1</span>
+                <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[var(--accent)] text-xs font-bold text-[var(--primary)]">1</span>
                 <span>We'll review your enquiry and respond within 24 hours</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[var(--coral)] text-xs font-bold text-white">2</span>
-                <span>Brief introductory call to understand your medical practice structure and tax situation</span>
+                <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[var(--accent)] text-xs font-bold text-[var(--primary)]">2</span>
+                <span>Brief introductory call to understand your practice structure and compliance needs</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[var(--coral)] text-xs font-bold text-white">3</span>
+                <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[var(--accent)] text-xs font-bold text-[var(--primary)]">3</span>
                 <span>Clear recommendations with fixed-fee quote if you choose to proceed</span>
               </li>
             </ul>
@@ -108,27 +108,27 @@ export default function ContactPage() {
         <h2 className="font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">Common enquiries</h2>
         <div className="mt-6 grid gap-6 sm:grid-cols-2 sm:gap-8">
           <div>
-            <h3 className="text-sm font-semibold text-[var(--medical-teal-dark)]">NHS Pension Annual Allowance</h3>
+            <h3 className="text-sm font-semibold text-[var(--primary)]">SRA Accounts Rules Compliance</h3>
             <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
-              Managing unexpected tax charges from NHS pension growth. We help GPs and consultants navigate annual allowance calculations and scheme pays elections.
+              Client money handling, trust accounting, 5-week reconciliations, and annual Accountant's Reports. We help solicitors meet SRA requirements and avoid breaches.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[var(--medical-teal-dark)]">Locum Tax Returns</h3>
+            <h3 className="text-sm font-semibold text-[var(--primary)]">Partnership & LLP Tax</h3>
             <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
-              Self Assessment for locum doctors working across multiple practices. Expense claims, payment on account, and quarterly tax planning.
+              Partnership tax returns, LLP member allocations, profit extraction strategies, and Basis Period Reform navigation for law firm partners.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[var(--medical-teal-dark)]">Private Practice Incorporation</h3>
+            <h3 className="text-sm font-semibold text-[var(--primary)]">LLP Conversion</h3>
             <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
-              Structuring your private work through a limited company. Corporation tax planning, profit extraction, and ongoing compliance.
+              Tax implications of converting from partnership to LLP. Structure analysis, conversion planning, and ongoing compliance for law firms.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[var(--medical-teal-dark)]">GP Partnership Accounts</h3>
+            <h3 className="text-sm font-semibold text-[var(--primary)]">Practice Succession Planning</h3>
             <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
-              Partnership tax returns, profit allocation, and financial reporting for GP practices. NHS and private income reconciliation.
+              Practice valuations, goodwill calculations, partner retirement planning, and practice sale tax implications for legal practices.
             </p>
           </div>
         </div>
