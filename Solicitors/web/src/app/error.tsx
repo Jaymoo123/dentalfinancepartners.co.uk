@@ -29,7 +29,7 @@ export default function Error({
           </div>
         </div>
         
-        <h1 className="font-serif text-3xl font-semibold text-[var(--navy)] sm:text-4xl">
+        <h1 className="font-serif text-3xl font-semibold text-[var(--primary)] sm:text-4xl">
           Something went wrong
         </h1>
         
@@ -54,7 +54,7 @@ export default function Error({
           </button>
           <Link
             href="/"
-            className="inline-flex items-center justify-center rounded-lg border-2 border-[var(--border)] bg-white px-6 py-3 text-base font-semibold text-[var(--navy)] transition-colors hover:bg-[var(--surface)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)] focus:ring-offset-2"
+            className="inline-flex items-center justify-center rounded-lg border-2 border-[var(--border)] bg-white px-6 py-3 text-base font-semibold text-[var(--primary)] transition-colors hover:bg-[var(--surface)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-offset-2"
           >
             Go home
           </Link>

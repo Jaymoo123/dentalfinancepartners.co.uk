@@ -33,7 +33,7 @@ export function StickyCTA() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <div className="min-w-0 flex-1">
-          <p className="text-sm font-semibold text-[var(--navy)] sm:text-base">
+          <p className="text-sm font-semibold text-[var(--primary)] sm:text-base">
             {niche.cta.sticky_primary}
           </p>
           <p className="mt-0.5 hidden text-xs text-[var(--muted)] sm:block">
@@ -46,7 +46,7 @@ export function StickyCTA() {
           </Link>
           <button
             onClick={() => setDismissed(true)}
-            className="flex h-8 w-8 items-center justify-center rounded-full text-[var(--muted)] transition-colors hover:bg-[var(--surface)] hover:text-[var(--ink)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)] focus:ring-offset-2"
+            className="flex h-8 w-8 items-center justify-center rounded-full text-[var(--muted)] transition-colors hover:bg-[var(--surface)] hover:text-[var(--ink)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-offset-2"
             aria-label="Dismiss"
             type="button"
           >

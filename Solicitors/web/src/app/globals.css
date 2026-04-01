@@ -9,35 +9,47 @@
 */
 
 :root {
-  /* Solicitors brand - deep burgundy (authority, tradition, legal professionalism) */
-  --burgundy: #7c2d37;
-  --burgundy-soft: #9a3d48;
-  --burgundy-muted: #b05060;
-  --burgundy-light: #c46575;
+  /* Solicitors brand - modern crimson (authority, contemporary, legal professionalism) */
+  --crimson: #c41e3a;
+  --crimson-soft: #d63851;
+  --crimson-muted: #e05268;
+  --crimson-light: #eb6c7f;
+  --crimson-dark: #a01829;
   
-  /* Accent - warm gold (premium, established, trustworthy) */
-  --gold: #d4af37;
-  --gold-strong: #b8941f;
-  --gold-soft: rgba(212, 175, 55, 0.14);
-  --gold-light: #e6c45c;
+  /* Accent - sophisticated slate blue (professional, trustworthy, modern) */
+  --slate-blue: #475569;
+  --slate-blue-strong: #334155;
+  --slate-blue-soft: rgba(71, 85, 105, 0.12);
+  --slate-blue-light: #64748b;
   
   /* Professional neutrals */
-  --background: #f8f9fa;
+  --background: #f8fafc;
   --surface: #ffffff;
-  --surface-elevated: #f1f3f5;
-  --ink: #1a1a1a;
-  --ink-soft: #4a4a4a;
-  --muted: #6c757d;
-  --border: #dee2e6;
+  --surface-elevated: #f1f5f9;
+  --ink: #0f172a;
+  --ink-soft: #334155;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  
+  /* Footer - softer slate for better readability */
+  --footer-bg: #1e293b;
+  --footer-text: #e2e8f0;
+  --footer-muted: #cbd5e1;
   
   /* Semantic aliases */
-  --primary: var(--burgundy);
-  --primary-soft: var(--burgundy-soft);
-  --primary-light: var(--burgundy-light);
-  --accent: var(--gold);
-  --accent-strong: var(--gold-strong);
-  --accent-soft: var(--gold-soft);
+  --primary: var(--crimson);
+  --primary-soft: var(--crimson-soft);
+  --primary-light: var(--crimson-light);
+  --primary-dark: var(--crimson-dark);
+  --accent: var(--slate-blue);
+  --accent-strong: var(--slate-blue-strong);
+  --accent-soft: var(--slate-blue-soft);
   --ring-offset: var(--background);
+  
+  /* Legacy aliases for components that reference old colors */
+  --navy: var(--crimson-dark);
+  --copper: var(--slate-blue);
+  --copper-soft: var(--slate-blue-soft);
 }
 
 @theme inline {
@@ -336,4 +348,169 @@ details summary::-webkit-details-marker {
   margin-right: 0;
   font-style: italic;
   color: var(--ink-soft);
+}
+
+/* ============================================================
+   BLOG CONTENT STYLING
+   ============================================================ */
+
+.article-body.prose-blog {
+  max-width: 68ch;
+  color: var(--ink-soft);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
+@media (min-width: 768px) {
+  .article-body.prose-blog {
+    font-size: 1.125rem;
+  }
+}
+
+.article-body.prose-blog h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--primary);
+  font-family: var(--font-cormorant), serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .article-body.prose-blog h2 {
+    font-size: 2rem;
+  }
+}
+
+.article-body.prose-blog h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.article-body.prose-blog p {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.75;
+}
+
+.article-body.prose-blog ul,
+.article-body.prose-blog ol {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding-left: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .article-body.prose-blog ul,
+  .article-body.prose-blog ol {
+    padding-left: 2rem;
+  }
+}
+
+.article-body.prose-blog li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.75;
+}
+
+.article-body.prose-blog a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s;
+}
+
+.article-body.prose-blog a:hover {
+  color: var(--primary-soft);
+}
+
+.article-body.prose-blog strong {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.article-body.prose-blog blockquote {
+  border-left: 4px solid var(--accent);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.article-body.prose-blog table {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border);
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.article-body.prose-blog th {
+  background: var(--primary);
+  color: white;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.article-body.prose-blog td {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.article-body.prose-blog tr:nth-child(even) {
+  background: var(--surface-elevated);
+}
+
+.article-body.prose-blog hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0;
+}
+
+.article-body.prose-blog img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+  border: 1px solid var(--border);
+}
+
+.article-body.prose-blog code {
+  background: var(--surface-elevated);
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+  font-family: ui-monospace, 'Cascadia Code', monospace;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.article-body.prose-blog pre {
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.article-body.prose-blog pre code {
+  background: transparent;
+  padding: 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--ink);
+  font-weight: 400;
 }

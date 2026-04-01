@@ -73,7 +73,7 @@ export default function SRACompliancePage() {
       <section
         className={sectionY}
         style={{
-          background: "linear-gradient(135deg, var(--primary) 0%, var(--primary-soft) 100%)",
+          background: "linear-gradient(135deg, rgba(196, 30, 58, 0.75) 0%, rgba(160, 24, 41, 0.80) 100%), url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070') center/cover",
           color: "white",
         }}
       >
@@ -90,7 +90,7 @@ export default function SRACompliancePage() {
               Expert client money management, trust accounting, and SRA compliance for solicitors and law firms. We ensure your client accounts meet regulatory standards and protect your practicing certificate.
             </p>
             <div className="mt-10">
-              <Link href="/contact" className={btnPrimary} style={{ background: "var(--accent)", borderColor: "var(--accent)", color: "var(--primary)" }}>
+              <Link href="/contact" className={btnPrimary} style={{ background: "white", borderColor: "white", color: "var(--primary)" }}>
                 Book free compliance review
               </Link>
             </div>

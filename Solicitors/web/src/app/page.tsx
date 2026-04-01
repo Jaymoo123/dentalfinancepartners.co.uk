@@ -148,7 +148,7 @@ export default function HomePage() {
       <section
         className={sectionYLoose}
         style={{
-          background: "linear-gradient(135deg, var(--primary) 0%, var(--primary-soft) 100%)",
+          background: "linear-gradient(135deg, rgba(196, 30, 58, 0.75) 0%, rgba(160, 24, 41, 0.80) 100%), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070') center/cover",
           color: "white",
         }}
       >
@@ -159,10 +159,10 @@ export default function HomePage() {
               {siteConfig.tagline}
             </p>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/80 md:text-lg">
-              Specialist accountants for UK solicitors and law firms. SRA Accounts Rules compliance, trust accounting, partnership tax, LLP conversion, and practice succession planning.
+              SRA Accounts Rules compliance, trust accounting, partnership tax, LLP conversion, and practice succession planning. We understand the unique challenges facing legal practices.
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-              <Link href="/contact" className={btnPrimary} style={{ background: "var(--accent)", borderColor: "var(--accent)", color: "var(--primary)" }}>
+              <Link href="/contact" className={btnPrimary} style={{ background: "white", borderColor: "white", color: "var(--primary)" }}>
                 Book free consultation
               </Link>
               <Link href="/services" className={btnMailOutline}>

@@ -38,8 +38,8 @@ export function BlogPostRenderer({ post, related = [] }: BlogPostRendererProps) 
                 { label: post.title },
               ]}
             />
-            <header className="border-l-4 border-[var(--medical-teal)] bg-[var(--surface)] p-8 mt-6">
-              <p className="text-xs font-bold uppercase tracking-wider text-[var(--coral)]">
+            <header className="border-l-4 border-[var(--primary)] bg-[var(--surface)] p-8 mt-6">
+              <p className="text-xs font-bold uppercase tracking-wider text-[var(--accent)]">
                 {post.category}
               </p>
               <h1 className="mt-3 text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl md:text-5xl">
@@ -83,7 +83,7 @@ export function BlogPostRenderer({ post, related = [] }: BlogPostRendererProps) 
                 </h2>
                 <dl className="space-y-4">
                   {post.faqs.map((faq, i) => (
-                    <div key={i} className="border-l-4 border-[var(--medical-teal)] bg-[var(--surface)] p-6">
+                    <div key={i} className="border-l-4 border-[var(--primary)] bg-[var(--surface)] p-6">
                       <dt className="text-lg font-bold text-[var(--ink)]">{faq.question}</dt>
                       <dd className="mt-3 text-base text-[var(--ink-soft)] leading-relaxed">{faq.answer}</dd>
                     </div>
@@ -92,11 +92,11 @@ export function BlogPostRenderer({ post, related = [] }: BlogPostRendererProps) 
               </section>
             ) : null}
 
-            <div className="mt-16 bg-[var(--medical-teal)] p-8 sm:p-10 text-white rounded-2xl">
-              <h2 className="text-2xl font-bold text-white sm:text-3xl">
+            <div className="mt-16 border-2 border-[var(--primary)]/20 bg-gradient-to-br from-[var(--primary)]/5 to-[var(--accent)]/5 p-8 sm:p-10 rounded-2xl">
+              <h2 className="text-2xl font-bold text-[var(--primary)] sm:text-3xl">
                 {niche.blog.cta_heading}
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-white/90">
+              <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)]">
                 {niche.blog.cta_body}
               </p>
               <div className="mt-8">
@@ -114,7 +114,7 @@ export function BlogPostRenderer({ post, related = [] }: BlogPostRendererProps) 
                     <li key={r.slug}>
                       <Link
                         href={`/blog/${r.slug}`}
-                        className="block border-l-4 border-[var(--border)] bg-[var(--surface)] p-6 transition-all hover:border-[var(--medical-teal)] hover:bg-white hover:shadow-md"
+                        className="block border-l-4 border-[var(--border)] bg-[var(--surface)] p-6 transition-all hover:border-[var(--primary)] hover:bg-white hover:shadow-md"
                       >
                         <h3 className="text-lg font-bold text-[var(--ink)]">{r.title}</h3>
                         <p className="mt-2 text-sm text-[var(--muted)]">{r.summary}</p>

@@ -6,8 +6,8 @@
   "tagline": "Specialist accounting for UK solicitors and law firms",
   "description": "Expert accountants for solicitors, law firms, and legal practitioners. SRA Accounts Rules compliance, trust accounting, partnership tax, LLP conversion, and practice succession planning. Trusted by legal professionals across the UK.",
   "brand": {
-    "primary_color": "#7c2d37",
-    "accent_color": "#d4af37",
+    "primary_color": "#c41e3a",
+    "accent_color": "#475569",
     "logo_path": "/brand/logo.png",
     "publisher_logo_url": "/og-placeholder.svg"
   },
@@ -113,7 +113,7 @@
     ],
     "google_analytics_id": "G-SOLICITORS-PLACEHOLDER",
     "google_site_verification": "SOLICITORS-VERIFICATION-PLACEHOLDER",
-    "theme_color": "#7c2d37",
+    "theme_color": "#c41e3a",
     "homepage_title": "Accountant for Solicitors UK | Specialist Law Firm Accountants",
     "homepage_h1": "Specialist Accountants for Solicitors & Law Firms",
     "homepage_description": "Expert accounting for UK solicitors and law firms. SRA compliance, trust accounting, partnership tax, LLP conversion advice. Book free consultation with legal sector specialists."

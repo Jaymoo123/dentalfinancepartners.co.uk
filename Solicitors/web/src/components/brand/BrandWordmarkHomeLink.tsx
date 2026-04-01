@@ -20,14 +20,14 @@ export function BrandWordmarkHomeLink({ className = "", size = "header" }: Brand
       } ${className}`.trim()}
     >
       <span
-        className={`font-bold uppercase tracking-[0.18em] text-[var(--navy)] sm:tracking-[0.2em] ${
+        className={`font-bold uppercase tracking-[0.18em] text-[var(--primary)] sm:tracking-[0.2em] ${
           isFooter ? "text-xs sm:text-sm" : "text-[0.65rem] sm:text-xs"
         }`}
       >
-        Medical Accountants
+        Accounts for Lawyers
       </span>
       <span
-        className={`mt-0.5 border-t-2 border-[var(--copper)] font-semibold uppercase text-[var(--navy)] ${
+        className={`mt-0.5 border-t-2 border-[var(--accent)] font-semibold uppercase text-[var(--primary)] ${
           isFooter
             ? "pt-1.5 text-[0.65rem] tracking-[0.32em] sm:pt-2 sm:text-xs sm:tracking-[0.38em]"
             : "pt-1 text-[0.6rem] tracking-[0.32em] sm:text-[0.65rem] sm:tracking-[0.38em]"

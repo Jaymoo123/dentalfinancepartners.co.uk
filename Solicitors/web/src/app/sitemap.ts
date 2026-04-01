@@ -8,8 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPaths = [
     "",
     "/services",
-    "/nhs-pension",
-    "/calculators",
+    "/sra-compliance",
     "/about",
     "/contact",
     "/locations",

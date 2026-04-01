@@ -10,7 +10,7 @@ import { siteConfig } from "@/config/site";
 function MenuIcon({ open }: { open: boolean }) {
   return (
     <svg
-      className="h-6 w-6 text-[var(--navy)]"
+      className="h-6 w-6 text-[var(--primary)]"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -73,8 +73,8 @@ export function SiteHeader() {
                 href={item.href}
                 className={`rounded-full px-3 py-2 text-sm font-medium tracking-tight transition-colors ${focusRing} ${
                   active
-                    ? "bg-[var(--copper-soft)] text-[var(--navy)]"
-                    : "text-[var(--muted)] hover:text-[var(--navy)]"
+                    ? "bg-[var(--accent-soft)] text-[var(--primary)]"
+                    : "text-[var(--muted)] hover:text-[var(--primary)]"
                 }`}
               >
                 {item.label}
@@ -86,14 +86,14 @@ export function SiteHeader() {
         <div className="flex shrink-0 items-center gap-2">
           <Link
             href="/contact"
-            className={`${btnPrimary} hidden min-h-11 min-w-0 px-4 sm:inline-flex md:min-h-12`}
+            className="hidden min-h-11 min-w-0 px-5 sm:inline-flex md:min-h-12 items-center justify-center rounded-full border-2 border-[var(--primary)] bg-white text-sm font-semibold tracking-tight text-[var(--primary)] transition-all duration-200 hover:bg-[var(--primary)] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]"
           >
             Book a call
           </Link>
 
           <button
             type="button"
-            className={`flex h-12 w-12 touch-manipulation items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--navy)] hover:bg-[var(--surface-elevated)] md:hidden ${focusRing}`}
+            className={`flex h-12 w-12 touch-manipulation items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--primary)] hover:bg-[var(--surface-elevated)] md:hidden ${focusRing}`}
             aria-expanded={open}
             aria-controls={panelId}
             aria-label={open ? "Close menu" : "Open menu"}
@@ -113,13 +113,13 @@ export function SiteHeader() {
         >
           <button
             type="button"
-            className="absolute inset-0 bg-[var(--navy)]/50 backdrop-blur-[2px]"
+            className="absolute inset-0 bg-[var(--primary)]/50 backdrop-blur-[2px]"
             aria-label="Close menu"
             onClick={() => setOpen(false)}
           />
           <div
             id={panelId}
-            className="absolute right-0 top-0 flex h-[100dvh] w-[min(20rem,92vw)] flex-col border-l border-[var(--border)] bg-[var(--surface)] shadow-2xl shadow-[var(--navy)]/15"
+            className="absolute right-0 top-0 flex h-[100dvh] w-[min(20rem,92vw)] flex-col border-l border-[var(--border)] bg-[var(--surface)] shadow-2xl shadow-[var(--primary)]/15"
             style={{
               paddingTop: "max(1rem, env(safe-area-inset-top))",
               paddingBottom: "max(1rem, env(safe-area-inset-bottom))",
@@ -127,7 +127,7 @@ export function SiteHeader() {
           >
             <div className="flex flex-col gap-3 border-b border-[var(--border)] px-4 py-3">
               <div className="flex items-center justify-between gap-2">
-                <p id={`${panelId}-title`} className="text-sm font-bold uppercase tracking-wider text-[var(--navy)]">
+                <p id={`${panelId}-title`} className="text-sm font-bold uppercase tracking-wider text-[var(--primary)]">
                   Menu
                 </p>
                 <button
@@ -150,8 +150,8 @@ export function SiteHeader() {
                     href={item.href}
                     className={`rounded-xl px-4 py-3.5 text-base font-semibold ${focusRing} ${
                       active
-                        ? "bg-[var(--copper-soft)] text-[var(--navy)]"
-                        : "text-[var(--navy)] hover:bg-[var(--surface-elevated)]"
+                        ? "bg-[var(--accent-soft)] text-[var(--primary)]"
+                        : "text-[var(--primary)] hover:bg-[var(--surface-elevated)]"
                     }`}
                     onClick={() => setOpen(false)}
                   >
@@ -163,7 +163,7 @@ export function SiteHeader() {
             <div className="border-t border-[var(--border)] p-3">
               <Link
                 href="/contact"
-                className={`${btnPrimary} w-full`}
+                className="w-full inline-flex items-center justify-center rounded-full border-2 border-[var(--primary)] bg-white px-6 py-3 text-sm font-semibold tracking-tight text-[var(--primary)] transition-all duration-200 hover:bg-[var(--primary)] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]"
                 onClick={() => setOpen(false)}
               >
                 Book a call
