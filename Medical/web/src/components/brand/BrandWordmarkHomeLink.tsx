@@ -27,7 +27,7 @@ export function BrandWordmarkHomeLink({ className = "", size = "header" }: Brand
         Medical Accountants
       </span>
       <span
-        className={`mt-0.5 border-t-2 border-[var(--gold)] font-semibold uppercase text-[var(--navy)] ${
+        className={`mt-0.5 border-t-2 border-[var(--copper)] font-semibold uppercase text-[var(--navy)] ${
           isFooter
             ? "pt-1.5 text-[0.65rem] tracking-[0.32em] sm:pt-2 sm:text-xs sm:tracking-[0.38em]"
             : "pt-1 text-[0.6rem] tracking-[0.32em] sm:text-[0.65rem] sm:tracking-[0.38em]"

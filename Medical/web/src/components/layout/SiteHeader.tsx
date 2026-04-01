@@ -73,7 +73,7 @@ export function SiteHeader() {
                 href={item.href}
                 className={`rounded-full px-3 py-2 text-sm font-medium tracking-tight transition-colors ${focusRing} ${
                   active
-                    ? "bg-[var(--gold-soft)] text-[var(--navy)]"
+                    ? "bg-[var(--copper-soft)] text-[var(--navy)]"
                     : "text-[var(--muted)] hover:text-[var(--navy)]"
                 }`}
               >
@@ -150,7 +150,7 @@ export function SiteHeader() {
                     href={item.href}
                     className={`rounded-xl px-4 py-3.5 text-base font-semibold ${focusRing} ${
                       active
-                        ? "bg-[var(--gold-soft)] text-[var(--navy)]"
+                        ? "bg-[var(--copper-soft)] text-[var(--navy)]"
                         : "text-[var(--navy)] hover:bg-[var(--surface-elevated)]"
                     }`}
                     onClick={() => setOpen(false)}

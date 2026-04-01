@@ -8,7 +8,7 @@ import os
 from datetime import datetime
 
 # Calculate how many posts we need
-CURRENT_POSTS = 116  # Current count
+CURRENT_POSTS = 117  # Current count
 TARGET_POSTS = 169   # Total target
 REMAINING = TARGET_POSTS - CURRENT_POSTS
 

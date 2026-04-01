@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import { btnPrimary, siteContainer } from "@/components/ui/layout-utils";
+import { siteConfig } from "@/config/site";
 
 export default function Error({
   error,
@@ -53,7 +54,7 @@ export default function Error({
           </button>
           <Link
             href="/"
-            className="inline-flex items-center justify-center rounded-lg border-2 border-[var(--border)] bg-white px-6 py-3 text-base font-semibold text-[var(--navy)] transition-colors hover:bg-[var(--surface)] focus:outline-none focus:ring-2 focus:ring-[var(--gold)] focus:ring-offset-2"
+            className="inline-flex items-center justify-center rounded-lg border-2 border-[var(--border)] bg-white px-6 py-3 text-base font-semibold text-[var(--navy)] transition-colors hover:bg-[var(--surface)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)] focus:ring-offset-2"
           >
             Go home
           </Link>
@@ -61,8 +62,8 @@ export default function Error({
 
         <p className="mt-8 text-sm text-[var(--muted)]">
           Need help? Email us at{" "}
-          <a href="mailto:hello@dentalfinancepartners.co.uk" className="font-semibold text-[var(--accent-strong)] hover:text-[var(--accent)]">
-            hello@dentalfinancepartners.co.uk
+          <a href={`mailto:${siteConfig.contact.email}`} className="font-semibold text-[var(--accent-strong)] hover:text-[var(--accent)]">
+            {siteConfig.contact.email}
           </a>
         </p>
       </div>

@@ -16,7 +16,7 @@ export function BrandLogoHero() {
         <span className="text-base font-bold uppercase tracking-[0.2em] text-white sm:text-lg md:text-xl">
           Medical Accountants
         </span>
-        <span className="mt-2 border-t-2 border-[var(--gold)] pt-2 text-sm font-semibold uppercase tracking-[0.34em] text-white sm:mt-2.5 sm:pt-2.5 sm:text-base sm:tracking-[0.38em] md:text-lg">
+        <span className="mt-2 border-t-2 border-[var(--copper)] pt-2 text-sm font-semibold uppercase tracking-[0.34em] text-white sm:mt-2.5 sm:pt-2.5 sm:text-base sm:tracking-[0.38em] md:text-lg">
           UK
         </span>
         <span className="sr-only"> — {siteConfig.tagline}</span>

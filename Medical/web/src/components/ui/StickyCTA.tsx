@@ -46,7 +46,7 @@ export function StickyCTA() {
           </Link>
           <button
             onClick={() => setDismissed(true)}
-            className="flex h-8 w-8 items-center justify-center rounded-full text-[var(--muted)] transition-colors hover:bg-[var(--surface)] hover:text-[var(--ink)] focus:outline-none focus:ring-2 focus:ring-[var(--gold)] focus:ring-offset-2"
+            className="flex h-8 w-8 items-center justify-center rounded-full text-[var(--muted)] transition-colors hover:bg-[var(--surface)] hover:text-[var(--ink)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)] focus:ring-offset-2"
             aria-label="Dismiss"
             type="button"
           >

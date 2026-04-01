@@ -21,7 +21,7 @@ export function SiteFooter() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={`inline-flex min-h-11 items-center text-sm font-medium text-slate-300 underline decoration-[var(--gold)] decoration-1 underline-offset-4 hover:text-[var(--gold)] ${focusRing} rounded`}
+                    className={`inline-flex min-h-11 items-center text-sm font-medium text-slate-300 underline decoration-[var(--copper)] decoration-1 underline-offset-4 hover:text-[var(--copper)] ${focusRing} rounded`}
                   >
                     {item.label}
                   </Link>

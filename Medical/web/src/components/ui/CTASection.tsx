@@ -29,7 +29,7 @@ export function CTASection({
       aria-labelledby={headingId}
     >
       <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[var(--gold)]/50 to-transparent"
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[var(--copper)]/50 to-transparent"
         aria-hidden
       />
       <h2

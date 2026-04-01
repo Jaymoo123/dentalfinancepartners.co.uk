@@ -5,7 +5,7 @@
   UI ground rules (mobile-first) — Medical Accountants UK
   - Teal + coral brand; clean clinical aesthetic, high-contrast type.
   - Touch targets ≥44px; no horizontal bleed; form inputs 16px on mobile.
-  - More minimalist and modern vs Dentists (less decorative)
+  - Professional, clinical aesthetic for medical sector
 */
 
 :root {
@@ -101,7 +101,7 @@ main {
     radial-gradient(ellipse 60% 45% at 80% 100%, rgba(184, 115, 51, 0.08), transparent 55%);
 }
 
-/* Subtle grid pattern - more clinical/technical than Dentists */
+/* Subtle grid pattern - clinical/technical professional aesthetic */
 .hero-brand::after {
   content: "";
   position: absolute;
@@ -136,7 +136,7 @@ main {
   }
 }
 
-/* Display serif for headings - less prominent than Dentists */
+/* Display serif for headings - refined professional style */
 .display-serif {
   font-family: var(--font-cormorant), Georgia, serif;
   font-weight: 600;

@@ -1,4 +1,4 @@
-/** Shared layout primitives — mobile-first, Dental Finance Partners */
+/** Shared layout primitives — mobile-first, Medical Accounts */
 export const siteContainer =
   "mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8 min-w-0";
 
@@ -26,4 +26,4 @@ export const btnSecondary =
 
 /** Ghost / on-dark: light border */
 export const btnOnDark =
-  "inline-flex min-h-12 items-center justify-center rounded-full border border-white/40 bg-white/5 px-6 py-3 text-sm font-semibold tracking-tight text-white backdrop-blur-sm transition-all duration-200 hover:border-white/60 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)]";
+  "inline-flex min-h-12 items-center justify-center rounded-full border border-white/40 bg-white/5 px-6 py-3 text-sm font-semibold tracking-tight text-white backdrop-blur-sm transition-all duration-200 hover:border-white/60 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--copper)]";
