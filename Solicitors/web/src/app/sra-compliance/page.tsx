@@ -80,7 +80,6 @@ export default function SRACompliancePage() {
         <div className={siteContainerLg}>
           <Breadcrumb
             items={[{ label: "SRA Compliance", href: "/sra-compliance" }]}
-            isDark
           />
 
           <div className="mx-auto mt-8 max-w-3xl text-center">
@@ -192,7 +191,10 @@ export default function SRACompliancePage() {
         </div>
       </section>
 
-      <CTASection />
+      <CTASection 
+        title="Ensure your SRA compliance is watertight"
+        description="Book a free compliance review to identify any gaps in your client money procedures."
+      />
     </>
   );
 }

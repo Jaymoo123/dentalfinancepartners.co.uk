@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { CTASection } from "@/components/ui/CTASection";
-import { sectionY, siteContainerLg } from "@/components/ui/layout-utils";
+import { btnPrimary, sectionY, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -163,7 +163,10 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <CTASection />
+      <CTASection 
+        title="Need specialist accounting advice?"
+        description="Every legal practice has unique accounting needs. Book a free consultation to discuss your specific situation."
+      />
     </>
   );
 }

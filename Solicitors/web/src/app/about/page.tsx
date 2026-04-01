@@ -118,7 +118,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <CTASection />
+      <CTASection 
+        title="Ready to work with specialist solicitor accountants?"
+        description="Book a free consultation to discuss your practice's accounting needs. We'll provide clear advice with no obligation."
+      />
     </>
   );
 }
