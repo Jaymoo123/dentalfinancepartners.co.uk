@@ -6,7 +6,7 @@ import {
   getCategorySlug,
   getRelatedPosts,
 } from "@/lib/blog";
-import BlogPostRenderer from "@/components/blog/BlogPostRenderer";
+import { BlogPostRenderer } from "@/components/blog/BlogPostRenderer";
 
 type Props = {
   params: Promise<{ category: string; slug: string }>;

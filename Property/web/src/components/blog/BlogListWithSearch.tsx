@@ -16,9 +16,9 @@ type SortOption = "date-desc" | "date-asc" | "title-asc" | "title-desc";
 
 export function BlogListWithSearch({
   posts,
-  categories,
+  categories: _categories,
   readTimes,
-  activeCategory,
+  activeCategory: _activeCategory,
 }: BlogListWithSearchProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState<SortOption>("date-desc");

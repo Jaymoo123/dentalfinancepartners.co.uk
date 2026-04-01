@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { siteContainerLg } from "@/components/ui/layout-utils";
-import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
+import { getAllPosts, getAllCategories, getCategorySlug, calculateReadTime } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { BlogListWithSearch } from "@/components/blog/BlogListWithSearch";
@@ -25,6 +25,7 @@ export const metadata: Metadata = {
 export default function BlogIndexPage() {
   const posts = getAllPosts();
   const categories = getAllCategories();
+  const readTimes = new Map(posts.map((p) => [p.slug, calculateReadTime(p.contentHtml)]));
 
   const postsWithCategorySlug = posts.map((post) => ({
     ...post,
@@ -93,7 +94,7 @@ export default function BlogIndexPage() {
         <div className={siteContainerLg}>
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-8">All Articles</h2>
-            <BlogListWithSearch posts={postsWithCategorySlug} />
+            <BlogListWithSearch posts={postsWithCategorySlug} categories={categories} readTimes={readTimes} />
           </div>
         </div>
       </section>
