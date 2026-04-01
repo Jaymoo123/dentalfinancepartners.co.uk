@@ -53,7 +53,7 @@ export default function AssociateTaxPillarPage() {
         <section>
           <h2 className="text-2xl font-bold text-[var(--ink)] mb-4">Understanding Associate Tax Status</h2>
           <p className="text-base leading-relaxed text-[var(--ink-soft)] mb-4">
-            Associate dentists typically operate as self-employed professionals, which means you're responsible for managing your own tax affairs. This status brings both flexibility and responsibility. Unlike employed dentists, you must register for self-assessment, track your income and expenses, and submit annual tax returns.
+            Associate dentists typically operate as self-employed professionals, which means you&apos;re responsible for managing your own tax affairs. This status brings both flexibility and responsibility. Unlike employed dentists, you must register for self-assessment, track your income and expenses, and submit annual tax returns.
           </p>
           <p className="text-base leading-relaxed text-[var(--ink-soft)]">
             Your tax position depends on your working arrangements. Most associates work under self-employed contracts, but some arrangements may create employed status. Understanding your correct status is crucial for compliance and tax efficiency.

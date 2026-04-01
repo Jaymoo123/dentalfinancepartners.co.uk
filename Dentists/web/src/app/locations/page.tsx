@@ -15,6 +15,11 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/locations`,
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Locations",
+    description: `${siteConfig.name} — specialist dental practice finance and accounting across the UK. Explore our locations.`,
+  },
 };
 
 const cityLabel: Record<string, string> = {

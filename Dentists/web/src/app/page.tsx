@@ -22,6 +22,12 @@ export const metadata: Metadata = {
     type: "website",
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dental Accountant UK | Specialist Accounting for Dentists",
+    description: "Specialist dental accountant UK for associates, practice owners & groups. NHS contracts, associate tax, VAT & acquisitions. London & Manchester.",
+    images: [siteConfig.publisherLogoUrl],
+  },
 };
 
 const PRACTICAL_SLUGS = [
@@ -213,6 +219,49 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="border-t border-[var(--border)] bg-[var(--background)]">
+        <div className={`${siteContainerLg} ${sectionYLoose}`}>
+          <p className="section-label">Practical guidance</p>
+          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
+            <span className="block">Dental accounting insights</span>
+            <span className="block">from specialists.</span>
+          </h2>
+          <p className="mt-6 max-w-3xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+            Real-world guidance on associate tax, practice finance, and NHS accounting — written by accountants who work exclusively with UK dental practices. Each article addresses questions we&apos;re actually asked by dentists every week.
+          </p>
+          <ul className="mt-12 grid gap-6 sm:grid-cols-3 sm:gap-8">
+            {practicalPosts.map((p) => {
+              const categorySlug = getCategorySlug(p);
+              return (
+                <li key={p.slug}>
+                  <Link
+                    href={`/blog/${categorySlug}/${p.slug}`}
+                    className={`card-premium group flex h-full flex-col p-6 transition-shadow duration-300 hover:shadow-lg hover:shadow-[rgba(0,27,61,0.08)] ${focusRing}`}
+                  >
+                    <span className="text-xs font-semibold uppercase tracking-wider text-[var(--gold-strong)]">
+                      {p.category}
+                    </span>
+                    <span className="mt-3 font-serif text-lg font-semibold leading-snug text-[var(--navy)] group-hover:underline group-hover:decoration-[var(--gold)] group-hover:underline-offset-4">
+                      {p.title}
+                    </span>
+                    <span className="mt-2 flex-1 text-sm leading-relaxed text-[var(--muted)]">{p.summary}</span>
+                    <span className="mt-4 text-sm font-semibold text-[var(--navy-soft)]">Read more →</span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+          <p className="mt-10">
+            <Link
+              href="/blog"
+              className={`inline-flex min-h-11 items-center text-sm font-semibold text-[var(--navy)] underline decoration-[var(--gold)] decoration-2 underline-offset-4 ${focusRing} rounded`}
+            >
+              View all articles
+            </Link>
+          </p>
+        </div>
+      </section>
+
       <section className="bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <p className="section-label">The reality</p>
@@ -346,49 +395,6 @@ export default function HomePage() {
               </tbody>
             </table>
           </div>
-        </div>
-      </section>
-
-      <section className="border-t border-[var(--border)] bg-[var(--background)]">
-        <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <p className="section-label">Practical guidance</p>
-          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
-            <span className="block">Dental accounting insights</span>
-            <span className="block">from specialists.</span>
-          </h2>
-          <p className="mt-6 max-w-3xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            Real-world guidance on associate tax, practice finance, and NHS accounting — written by accountants who work exclusively with UK dental practices. Each article addresses questions we&apos;re actually asked by dentists every week.
-          </p>
-          <ul className="mt-12 grid gap-6 sm:grid-cols-3 sm:gap-8">
-            {practicalPosts.map((p) => {
-              const categorySlug = getCategorySlug(p);
-              return (
-                <li key={p.slug}>
-                  <Link
-                    href={`/blog/${categorySlug}/${p.slug}`}
-                    className={`card-premium group flex h-full flex-col p-6 transition-shadow duration-300 hover:shadow-lg hover:shadow-[rgba(0,27,61,0.08)] ${focusRing}`}
-                  >
-                    <span className="text-xs font-semibold uppercase tracking-wider text-[var(--gold-strong)]">
-                      {p.category}
-                    </span>
-                    <span className="mt-3 font-serif text-lg font-semibold leading-snug text-[var(--navy)] group-hover:underline group-hover:decoration-[var(--gold)] group-hover:underline-offset-4">
-                      {p.title}
-                    </span>
-                    <span className="mt-2 flex-1 text-sm leading-relaxed text-[var(--muted)]">{p.summary}</span>
-                    <span className="mt-4 text-sm font-semibold text-[var(--navy-soft)]">Read more →</span>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-          <p className="mt-10">
-            <Link
-              href="/blog"
-              className={`inline-flex min-h-11 items-center text-sm font-semibold text-[var(--navy)] underline decoration-[var(--gold)] decoration-2 underline-offset-4 ${focusRing} rounded`}
-            >
-              View all articles
-            </Link>
-          </p>
         </div>
       </section>
 

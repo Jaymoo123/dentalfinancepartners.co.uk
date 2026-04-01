@@ -14,6 +14,11 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/contact`,
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact",
+    description: `Contact ${siteConfig.name} — enquiries for UK dental practice accounting and tax support.`,
+  },
 };
 
 export default function ContactPage() {
