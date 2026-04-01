@@ -29,7 +29,7 @@ for run in range(1, NUM_RUNS + 1):
     
     try:
         result = subprocess.run(
-            ["python", "generate_all_automated.py"],
+            ["python", "Property/generate_all_automated.py"],
             capture_output=False,
             text=True,
             timeout=7200  # 2 hours max per run

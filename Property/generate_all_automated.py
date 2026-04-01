@@ -80,7 +80,7 @@ def main():
             env["ANTHROPIC_API_KEY"] = ANTHROPIC_API_KEY
             
             result = subprocess.run(
-                ["python", "generate_blog_supabase.py"],
+                ["python", "Property/generate_blog_supabase.py"],
                 capture_output=True,
                 text=True,
                 env=env,
