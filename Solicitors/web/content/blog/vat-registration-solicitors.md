@@ -11,7 +11,7 @@ image: ""
 h1: "VAT Registration for Solicitors: When and How to Register Your Legal Practice"
 summary: "UK solicitors must register for VAT when turnover exceeds £90,000. Understanding registration requirements, timing, and compliance obligations is crucial for legal practice management."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/vat-compliance/vat-registration-solicitors"
 faqs:
   - question: "When must solicitors register for VAT?"
     answer: "Solicitors must register for VAT when their taxable turnover exceeds £90,000 in any consecutive 12-month period, or when they expect to exceed this threshold in the next 30 days. Registration must be completed within 30 days of crossing the threshold to avoid penalties."
@@ -98,3 +98,9 @@ faqs:
 <p>A specialist accountant experienced with legal practices can help navigate registration decisions, establish compliant systems, and provide ongoing support for VAT returns and HMRC queries.</p>
 
 <p>Consider professional support particularly important if you're approaching the registration threshold, considering voluntary registration, or dealing with complex international or property-related legal services.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to VAT compliance, disbursements, and counsel fees.</p>
+<p><a href="/blog/vat-compliance" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete VAT Guide →</a></p>
+</div>

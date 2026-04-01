@@ -11,7 +11,7 @@ image: ""
 h1: "Law Firm Bookkeeping Services: What UK Solicitors Need to Know"
 summary: "Law firm bookkeeping services require specialist knowledge of SRA rules, client money regulations, and legal sector accounting. This guide covers what UK solicitors need to know when choosing bookkeeping support."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/law-firm-bookkeeping-services-uk-guide"
 faqs:
   - question: "What makes law firm bookkeeping different from general business bookkeeping?"
     answer: "Law firm bookkeeping must comply with SRA Accounts Rules, including strict client money handling requirements, trust accounting, and three-way reconciliations. Legal practices also face unique VAT treatments for disbursements and specific reporting requirements that general bookkeepers often don't understand."
@@ -114,3 +114,9 @@ faqs:
 <p>Most professional services start with a practice review to understand your current systems, identify any issues, and recommend improvements. This initial assessment helps ensure the service meets your specific needs.</p>
 
 <p>For practices considering external bookkeeping support, particularly around <a href="/sra-compliance">SRA compliance</a> matters, it's worth discussing requirements with specialist advisers who understand both the regulatory and practical aspects of legal practice accounting.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to cash flow management, lock-up reduction, and working capital.</p>
+<p><a href="/blog/practice-finance-cash-flow" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Finance Guide →</a></p>
+</div>

@@ -11,7 +11,7 @@ image: ""
 h1: "Law Firm Cash Flow Forecasting: Essential Guide for UK Legal Practices"
 summary: "Effective cash flow forecasting helps law firms anticipate financial challenges and opportunities. This guide covers practical forecasting methods specifically designed for UK legal practices."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/law-firm-cash-flow-forecasting-guide"
 faqs:
   - question: "How often should law firms update their cash flow forecasts?"
     answer: "Law firms should update short-term (13-week) cash flow forecasts weekly, and longer-term (12-month) forecasts monthly. Weekly updates help track actual vs. predicted receipts and payments, while monthly reviews allow for strategic adjustments based on new matter wins, completion delays, and seasonal variations. Practices with volatile income streams may benefit from more frequent updates during busy periods."
@@ -209,3 +209,9 @@ faqs:
 </ul>
 
 <p>For personalised advice on implementing law firm cash flow forecasting systems suited to your practice, consider speaking with <a href="/about">specialist legal sector accountants</a> who understand the unique challenges facing UK law firms.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to cash flow management, lock-up reduction, and working capital.</p>
+<p><a href="/blog/practice-finance-cash-flow" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Finance Guide →</a></p>
+</div>

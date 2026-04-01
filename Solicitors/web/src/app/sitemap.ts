@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
-import { getAllPosts } from "@/lib/blog";
+import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
@@ -34,9 +34,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
-  for (const post of getAllPosts()) {
+  const categories = getAllCategories();
+  for (const cat of categories) {
     entries.push({
-      url: `${base}/blog/${post.slug}`,
+      url: `${base}/blog/${cat.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.75,
+    });
+  }
+
+  const allPosts = getAllPosts();
+  for (const post of allPosts) {
+    const categorySlug = getCategorySlug(post);
+    entries.push({
+      url: `${base}/blog/${categorySlug}/${post.slug}`,
       lastModified: post.date ? new Date(post.date) : new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

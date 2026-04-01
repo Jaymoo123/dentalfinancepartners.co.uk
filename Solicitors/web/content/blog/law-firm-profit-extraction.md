@@ -11,7 +11,7 @@ image: ""
 h1: "Law Firm Profit Extraction: Tax-Efficient Strategies for UK Legal Practices"
 summary: "Law firm profit extraction requires careful planning to minimise tax while maintaining compliance. Different legal structures offer varying opportunities for tax-efficient extraction."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/partnership-llp-accounting/law-firm-profit-extraction"
 faqs:
   - question: "What's the most tax-efficient way to extract profits from my law firm?"
     answer: "The most tax-efficient method depends on your practice structure and profit levels. Partnership/LLP structures typically use profit allocations subject to income tax and National Insurance. Corporate firms often benefit from salary/dividend combinations, taking salary up to the National Insurance threshold and extracting remaining profits as dividends. High earners should consider pension contributions for additional tax relief."
@@ -100,3 +100,9 @@ faqs:
 <p>Consider cash flow implications alongside tax efficiency. Deferred profit extraction may save tax but could create working capital pressures during busy periods or when facing unexpected costs.</p>
 
 <p>Regular reviews ensure strategies remain optimal as tax rates, allowances, and business circumstances evolve. What works for a 2-partner firm with £300,000 profits may be inappropriate for a 10-partner practice generating £2 million annually.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to partnership taxation, LLP conversion, and profit allocation.</p>
+<p><a href="/blog/partnership-llp-accounting" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Partnership & LLP Tax Guide →</a></p>
+</div>

@@ -11,7 +11,7 @@ image: ""
 h1: "Law Firm Partnership Tax: Essential Guide for UK Legal Partnerships"
 summary: "Understanding partnership taxation is crucial for law firm partners. This guide covers profit allocation, tax obligations, and compliance requirements specific to UK legal partnerships."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/partnership-llp-accounting/law-firm-partnership-tax-guide"
 faqs:
   - question: "How are law firm partners taxed on partnership profits?"
     answer: "Partners are taxed individually on their allocated share of partnership profits, regardless of actual drawings. The partnership files a Partnership Return showing profit allocation, and each partner includes their share on their personal Self Assessment return, paying income tax and National Insurance as self-employed individuals."
@@ -128,3 +128,9 @@ faqs:
 <p>A qualified solicitor accountant understands both the legal and tax aspects of partnership structures. They can help with tax planning, compliance requirements, and ensuring your partnership structure supports your business objectives while minimizing tax liabilities.</p>
 
 <p>Consider professional advice when admitting new partners, planning retirement strategies, or implementing significant practice changes. The cost of specialist advice is typically much lower than the potential tax savings or penalty avoidance it provides.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to partnership taxation, LLP conversion, and profit allocation.</p>
+<p><a href="/blog/partnership-llp-accounting" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Partnership & LLP Tax Guide →</a></p>
+</div>

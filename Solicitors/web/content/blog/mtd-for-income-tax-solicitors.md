@@ -11,7 +11,7 @@ image: ""
 h1: "Making Tax Digital for Income Tax: Essential Guide for UK Solicitors"
 summary: "Making Tax Digital for Income Tax becomes mandatory for most UK solicitors from April 2026. This affects sole practitioners and partners earning over £30,000 annually."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/sole-practitioner-tax/mtd-for-income-tax-solicitors"
 faqs:
   - question: "When does MTD for Income Tax become mandatory for solicitors?"
     answer: "MTD for Income Tax becomes mandatory from April 2026 for individuals with business or property income over £30,000 annually. This includes most sole practitioners, partners, and LLP members whose income from legal practice exceeds this threshold."
@@ -106,3 +106,9 @@ faqs:
 <p>Given the complexity of MTD for income tax solicitors, many practitioners benefit from specialist advice. A solicitor accountant can help you choose appropriate software, establish compliant processes, and integrate MTD with your existing practice systems.</p>
 
 <p>Consider seeking advice early in 2025 to ensure you're ready for the April 2026 implementation date.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to sole practitioner taxation, self-assessment, and Making Tax Digital.</p>
+<p><a href="/blog/sole-practitioner-tax" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Sole Practitioner Tax Guide →</a></p>
+</div>

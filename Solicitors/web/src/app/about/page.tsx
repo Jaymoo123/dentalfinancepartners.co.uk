@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/about`,
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `About | ${siteConfig.name}`,
+    description: "Specialist accountants for UK solicitors and law firms. SRA compliance expertise, partnership tax knowledge, and practice succession planning.",
+    images: [siteConfig.publisherLogoUrl],
+  },
 };
 
 export default function AboutPage() {
@@ -22,7 +28,7 @@ export default function AboutPage() {
     <>
       <section className={sectionY}>
         <div className={siteContainerLg}>
-          <Breadcrumb items={[{ label: "About", href: "/about" }]} />
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "About" }]} />
 
           <div className="mx-auto mt-8 max-w-3xl">
             <h1 className="font-serif text-4xl font-bold leading-tight text-[var(--primary)] md:text-5xl">

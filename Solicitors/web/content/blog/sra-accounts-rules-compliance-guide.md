@@ -11,7 +11,7 @@ image: ""
 h1: "SRA Accounts Rules Compliance: Essential Guide for UK Law Firms"
 summary: "Understanding SRA accounts rules compliance is crucial for UK law firms handling client money. This guide covers trust accounting requirements, compliance obligations, and practical steps to maintain SRA standards."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/sra-accounts-rules-compliance-guide"
 faqs:
   - question: "What is considered client money under SRA accounts rules?"
     answer: "Client money includes advance payments for costs, money held as agent or stakeholder, settlement funds, and money received for a client's benefit. It does not include fees properly earned, disbursements paid on a client's behalf using firm money, or money held in a capacity other than as a solicitor."
@@ -125,3 +125,9 @@ faqs:
 <p>Regular training sessions should cover rule changes, common mistakes, and proper procedures for different transaction types. Document all training provided, as the SRA may request evidence of competence development.</p>
 
 <p>New staff require comprehensive induction training before handling any client money. Supervision arrangements should ensure experienced personnel review their work until competence is established.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to SRA Accounts Rules compliance, client money handling, and trust accounting.</p>
+<p><a href="/blog/sra-compliance-trust-accounting" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete SRA Compliance Guide →</a></p>
+</div>

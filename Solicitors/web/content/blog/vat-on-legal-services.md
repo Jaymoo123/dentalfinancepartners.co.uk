@@ -11,7 +11,7 @@ image: ""
 h1: "VAT on Legal Services: A Complete Guide for UK Solicitors"
 summary: "Understanding VAT on legal services is crucial for UK law firms. Most legal services are standard-rated, but important exemptions and special rules apply for disbursements and specific service types."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/vat-compliance/vat-on-legal-services"
 faqs:
   - question: "Do I have to charge VAT on all legal services?"
     answer: "No. Most legal services are standard-rated at 20%, but some are exempt (mainly insurance-related work) and a few qualify for zero-rating. True agency disbursements like court fees are outside the scope of VAT entirely."
@@ -150,3 +150,9 @@ faqs:
 <p>Regular review of your VAT procedures helps ensure ongoing compliance. Professional advice becomes particularly important when establishing new service lines or encountering unusual fact patterns.</p>
 
 <p>Consider specialist <a href="/services">professional support</a> for complex VAT issues, particularly around agency relationships and exempt supplies.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to VAT compliance, disbursements, and counsel fees.</p>
+<p><a href="/blog/vat-compliance" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete VAT Guide →</a></p>
+</div>

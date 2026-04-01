@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
-import { getAllPosts } from "@/lib/blog";
+import { contentNarrow, sectionY, focusRing } from "@/components/ui/layout-utils";
+import { getAllPosts, getAllCategories, calculateReadTime, getCategorySlug } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
+import { BlogListWithSearch } from "@/components/blog/BlogListWithSearch";
 
 export const metadata: Metadata = {
   title: "Legal Sector Accounting Blog | Solicitor Tax & SRA Compliance Advice",
@@ -21,6 +22,12 @@ export const metadata: Metadata = {
 
 export default function BlogIndexPage() {
   const posts = getAllPosts();
+  const postsWithCategorySlug = posts.map((p) => ({
+    ...p,
+    categorySlug: getCategorySlug(p),
+  }));
+  const categories = getAllCategories();
+  const readTimes = new Map(posts.map((p) => [p.slug, calculateReadTime(p.contentHtml)]));
 
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
@@ -36,43 +43,37 @@ export default function BlogIndexPage() {
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
         In-depth guidance on SRA Accounts Rules compliance, partnership tax planning, LLP conversion, and practice succession. Written specifically for solicitors and law firms navigating UK tax regulations and legal sector accounting.
       </p>
-      {posts.length === 0 ? (
-        <div className="mt-8 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-8 text-center">
-          <p className="text-base text-[var(--muted)]">Articles coming soon. Check back shortly.</p>
-        </div>
-      ) : (
-        <ul className="mt-8 space-y-4 sm:mt-10 sm:space-y-5">
-          {posts.map((p) => (
-            <li key={p.slug}>
-              <article className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm transition-shadow hover:shadow-md sm:p-6">
-                <p className="text-[11px] font-semibold uppercase tracking-wide text-[var(--accent-strong)] sm:text-xs">
-                  {p.category}
-                </p>
-                <h2 className="mt-2 font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">
-                  <Link
-                    href={`/blog/${p.slug}`}
-                    className={`hover:text-[var(--accent-strong)] transition-colors ${focusRing} rounded`}
-                  >
-                    {p.title}
-                  </Link>
-                </h2>
-                <p className="mt-2 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{p.summary}</p>
-                <p className="mt-4 text-sm text-[var(--muted)]">
-                  {p.date ? (
-                    <time dateTime={p.date}>
-                      {new Intl.DateTimeFormat("en-GB", {
-                        day: "numeric",
-                        month: "long",
-                        year: "numeric",
-                      }).format(new Date(p.date))}
-                    </time>
-                  ) : null}
-                </p>
-              </article>
-            </li>
+
+      {/* Featured Category Guides */}
+      <section className="mt-8 sm:mt-12">
+        <h2 className="text-xl sm:text-2xl font-bold text-[var(--ink)] mb-4 sm:mb-6">Comprehensive Guides by Topic</h2>
+        <div className="grid gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {categories.map((cat) => (
+            <Link
+              key={cat.slug}
+              href={`/blog/${cat.slug}`}
+              className={`block min-h-[120px] p-5 sm:p-6 rounded-xl border-2 border-[var(--border)] bg-[var(--surface)] transition-all hover:border-[var(--primary)] hover:shadow-lg active:scale-[0.98] ${focusRing}`}
+            >
+              <h3 className="text-base sm:text-lg font-bold text-[var(--ink)] mb-2">{cat.name}</h3>
+              <p className="text-sm text-[var(--muted)] mb-3">
+                {cat.count} article{cat.count !== 1 ? 's' : ''}
+              </p>
+              <span className="inline-flex items-center text-sm font-medium text-[var(--primary)]">
+                View guide
+                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </Link>
           ))}
-        </ul>
-      )}
+        </div>
+      </section>
+
+      {/* All Articles */}
+      <section className="mt-10 sm:mt-12">
+        <h2 className="text-xl sm:text-2xl font-bold text-[var(--ink)] mb-4 sm:mb-6">All Articles</h2>
+        <BlogListWithSearch posts={postsWithCategorySlug} categories={categories} readTimes={readTimes} />
+      </section>
     </div>
   );
 }

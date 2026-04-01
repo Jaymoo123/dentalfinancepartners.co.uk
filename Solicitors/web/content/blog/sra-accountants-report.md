@@ -11,7 +11,7 @@ image: ""
 h1: "SRA Accountants Report: What Every Law Firm Needs to Know"
 summary: "The SRA accountants report is a mandatory annual compliance requirement for solicitors handling client money. Understanding the process, deadlines, and potential issues can save your practice significant problems with the SRA."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/sra-accountants-report"
 faqs:
   - question: "What is the deadline for submitting my SRA accountants report?"
     answer: "Your SRA accountants report must be submitted within six months of your accounting period end. For example, if your year-end is 31 March, the report must reach the SRA by 30 September. This deadline is absolute with no automatic extensions available."
@@ -125,3 +125,9 @@ faqs:
 <p>Start the process early. Most reporting accountants need 4-8 weeks to complete the work, depending on your records' quality and any issues discovered.</p>
 
 <p>Book your reporting accountant in advance. The months leading up to common deadlines (September/October) see high demand for specialist services.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to SRA Accounts Rules compliance, client money handling, and trust accounting.</p>
+<p><a href="/blog/sra-compliance-trust-accounting" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete SRA Compliance Guide →</a></p>
+</div>

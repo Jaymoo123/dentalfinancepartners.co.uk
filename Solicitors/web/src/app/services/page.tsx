@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/services`,
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `Services | ${siteConfig.name}`,
+    description: "Comprehensive accounting services for UK solicitors and law firms. SRA compliance, trust accounting, partnership tax, LLP conversion.",
+    images: [siteConfig.publisherLogoUrl],
+  },
 };
 
 const services = [

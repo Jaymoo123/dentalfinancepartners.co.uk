@@ -11,7 +11,7 @@ image: ""
 h1: "Solicitor Tax Return: Essential Guide for UK Legal Practitioners"
 summary: "UK solicitors face specific tax return requirements depending on their practice structure. Understanding self-assessment obligations, allowable deductions, and compliance deadlines is crucial for legal practitioners."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/sole-practitioner-tax/solicitor-tax-return-guide"
 faqs:
   - question: "Do all solicitors need to complete a tax return?"
     answer: "Most solicitors must complete a self-assessment tax return. This includes all sole practitioners, partners, and LLP members regardless of income level. Employed solicitors may also need to file if they have additional income over £1,000 or total income exceeds £100,000."
@@ -130,3 +130,9 @@ faqs:
 <p>Many solicitors choose to work with accountants who specialise in legal practice taxation. The complexity of partnership taxation, SRA compliance requirements, and changing regulations often justify the cost of professional assistance.</p>
 
 <p>A specialist can help optimise your tax position, ensure compliance with all deadlines, and provide strategic advice on practice structure and succession planning.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to sole practitioner taxation, self-assessment, and Making Tax Digital.</p>
+<p><a href="/blog/sole-practitioner-tax" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Sole Practitioner Tax Guide →</a></p>
+</div>

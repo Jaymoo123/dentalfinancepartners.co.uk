@@ -11,7 +11,7 @@ image: ""
 h1: "Law Firm Succession Planning: A Complete Guide for UK Legal Practices"
 summary: "Law firm succession planning requires careful consideration of partnership structures, goodwill valuation, tax implications, and SRA compliance. Getting it right protects both retiring partners and the continuing practice."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-succession-sale/law-firm-succession-planning-guide-uk"
 faqs:
   - question: "How long does law firm succession planning typically take?"
     answer: "Law firm succession planning typically requires 5-7 years minimum. This allows time to develop junior partners, build practice goodwill, structure tax-efficient arrangements, and ensure smooth client transitions. Rushed succession planning often results in reduced valuations and higher tax liabilities."
@@ -215,3 +215,9 @@ faqs:
 <p><strong>Professional advice:</strong> Succession planning involves complex interactions between tax, corporate, and regulatory law. Specialist advice is essential to avoid costly mistakes.</p>
 
 <p>The legal landscape continues evolving, with new regulatory requirements, tax changes, and market pressures affecting succession planning strategies. Firms that address these challenges proactively protect both their retiring partners' interests and their own long-term sustainability.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to succession planning, practice valuation, and exit strategies.</p>
+<p><a href="/blog/practice-succession-sale" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Succession Guide →</a></p>
+</div>

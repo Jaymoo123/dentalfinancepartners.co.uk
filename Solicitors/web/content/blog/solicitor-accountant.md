@@ -11,7 +11,7 @@ image: ""
 h1: "Why UK Law Firms Need a Specialist Solicitor Accountant"
 summary: "A specialist solicitor accountant understands the unique challenges facing UK law firms, from SRA compliance to partnership taxation and client money handling."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/solicitor-accountant"
 faqs:
   - question: "What's the difference between a general accountant and a solicitor accountant?"
     answer: "A solicitor accountant specialises in legal practices and understands SRA compliance, client money rules, legal sector taxation, and the unique commercial challenges facing law firms. General accountants often lack this specialist knowledge and may provide inappropriate advice for legal practices."
@@ -84,3 +84,9 @@ faqs:
 <p>The right <strong>solicitor accountant</strong> should be able to explain complex issues in practical terms, provide proactive advice, and understand how their recommendations affect both your compliance obligations and commercial objectives.</p>
 
 <p>If you're looking for specialist support that understands the unique challenges facing UK legal practices, consider speaking with accountants who focus exclusively on the legal sector. The investment in specialist expertise typically pays for itself through better tax planning, improved compliance, and more effective practice management.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to cash flow management, lock-up reduction, and working capital.</p>
+<p><a href="/blog/practice-finance-cash-flow" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Finance Guide →</a></p>
+</div>

@@ -5,10 +5,14 @@ import { buildBlogPostingJsonLd } from "@/lib/schema";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { niche } from "@/config/niche-loader";
+import { TableOfContents } from "./TableOfContents";
+import { ReadingProgress } from "./ReadingProgress";
+import { calculateReadTime } from "@/lib/blog";
 
 type BlogPostRendererProps = {
   post: BlogPost;
-  related?: { slug: string; title: string; summary: string }[];
+  categorySlug: string;
+  related?: { slug: string; title: string; summary: string; category: string; categorySlug: string }[];
 };
 
 function formatUkDate(isoDate: string): string {
@@ -16,13 +20,15 @@ function formatUkDate(isoDate: string): string {
   return d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
 }
 
-export function BlogPostRenderer({ post, related = [] }: BlogPostRendererProps) {
+export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostRendererProps) {
   const jsonLd =
     post.schema?.trim() ||
-    buildBlogPostingJsonLd(post, `/blog/${post.slug}`);
+    buildBlogPostingJsonLd(post, `/blog/${categorySlug}/${post.slug}`);
+  const readTime = calculateReadTime(post.contentHtml);
 
   return (
     <>
+      <ReadingProgress />
       <article className="bg-white py-12 sm:py-16">
         <script
           type="application/ld+json"
@@ -35,6 +41,7 @@ export function BlogPostRenderer({ post, related = [] }: BlogPostRendererProps) 
               items={[
                 { label: "Home", href: "/" },
                 { label: "Blog", href: "/blog" },
+                { label: post.category, href: `/blog/${categorySlug}` },
                 { label: post.title },
               ]}
             />
@@ -45,17 +52,19 @@ export function BlogPostRenderer({ post, related = [] }: BlogPostRendererProps) 
               <h1 className="mt-3 text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl md:text-5xl">
                 {post.h1}
               </h1>
-              <p className="mt-3 text-sm text-[var(--muted)]">
+              <div className="mt-3 flex items-center gap-3 text-sm text-[var(--muted)]">
                 {post.date && (
                   <time dateTime={post.date}>{formatUkDate(post.date)}</time>
                 )}
-                {post.author ? (
+                {post.author && (
                   <>
-                    {" · "}
+                    <span>•</span>
                     <span>{post.author}</span>
                   </>
-                ) : null}
-              </p>
+                )}
+                <span>•</span>
+                <span>{readTime} min read</span>
+              </div>
               {post.summary ? (
                 <p className="mt-4 text-lg text-[var(--ink-soft)] leading-relaxed">{post.summary}</p>
               ) : null}
@@ -71,10 +80,19 @@ export function BlogPostRenderer({ post, related = [] }: BlogPostRendererProps) 
               />
             ) : null}
 
-            <div
-              className="article-body prose-blog mt-10"
-              dangerouslySetInnerHTML={{ __html: post.contentHtml }}
-            />
+            <div className="mt-10">
+              <TableOfContents content={post.contentHtml} />
+              
+              <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-8">
+                <div
+                  className="article-body prose-blog"
+                  dangerouslySetInnerHTML={{ __html: post.contentHtml }}
+                />
+                <aside className="hidden lg:block">
+                  <TableOfContents content={post.contentHtml} />
+                </aside>
+              </div>
+            </div>
 
             {post.faqs && post.faqs.length > 0 ? (
               <section className="mt-16" aria-labelledby="faq-heading">
@@ -113,7 +131,7 @@ export function BlogPostRenderer({ post, related = [] }: BlogPostRendererProps) 
                   {related.map((r) => (
                     <li key={r.slug}>
                       <Link
-                        href={`/blog/${r.slug}`}
+                        href={`/blog/${r.categorySlug}/${r.slug}`}
                         className="block border-l-4 border-[var(--border)] bg-[var(--surface)] p-6 transition-all hover:border-[var(--primary)] hover:bg-white hover:shadow-md"
                       >
                         <h3 className="text-lg font-bold text-[var(--ink)]">{r.title}</h3>

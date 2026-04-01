@@ -11,7 +11,7 @@ image: ""
 h1: "Sole Practitioner Solicitor Tax: Complete Guide for 2025/26"
 summary: "Comprehensive guide covering all tax obligations for sole practitioner solicitors, including self-assessment requirements, Making Tax Digital compliance, and practical tax planning strategies."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/sole-practitioner-tax/sole-practitioner-solicitor-tax-guide"
 faqs:
   - question: "When do sole practitioner solicitors need to register for VAT?"
     answer: "VAT registration becomes mandatory when taxable turnover exceeds £90,000 in any 12-month rolling period. Many sole practitioners register voluntarily below this threshold to recover VAT on business expenses like office rent, equipment, and professional services. Legal services are standard-rated at 20%, but some disbursements may qualify for different VAT treatment."
@@ -183,3 +183,9 @@ faqs:
 <p>The cost of professional accounting support is fully allowable as a business expense and typically pays for itself through improved compliance and tax efficiency.</p>
 
 <p>For specialist guidance on sole practitioner solicitor tax planning and compliance, consider consulting with accountants who understand the unique challenges of legal practice management and SRA requirements.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to sole practitioner taxation, self-assessment, and Making Tax Digital.</p>
+<p><a href="/blog/sole-practitioner-tax" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Sole Practitioner Tax Guide →</a></p>
+</div>

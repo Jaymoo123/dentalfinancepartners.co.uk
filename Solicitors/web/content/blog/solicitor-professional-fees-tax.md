@@ -11,7 +11,7 @@ image: ""
 h1: "Solicitor Professional Fees Tax: Complete Guide for Legal Practitioners"
 summary: "Understanding how professional fees are taxed is essential for all UK solicitors. This guide covers the tax treatment across different practice structures with practical examples."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/sole-practitioner-tax/solicitor-professional-fees-tax"
 faqs:
   - question: "How are professional fees taxed for sole practitioner solicitors?"
     answer: "Sole practitioner solicitors pay income tax and Class 2/Class 4 National Insurance on their professional fees as trading income. Tax is due on fees when earned (accruals basis) or received (cash basis if eligible), with payments through self-assessment by 31 January following the tax year."
@@ -140,3 +140,9 @@ faqs:
 <p>Solicitor professional fees tax involves complex interactions between tax law, professional regulation, and practice management. The implications vary significantly based on your specific circumstances, practice structure, and fee arrangements.</p>
 
 <p>Given the complexity and potential for significant tax liabilities, most practitioners benefit from specialist advice tailored to their situation. A solicitor accountant can help optimize your approach while ensuring compliance with both tax law and SRA requirements.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to sole practitioner taxation, self-assessment, and Making Tax Digital.</p>
+<p><a href="/blog/sole-practitioner-tax" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Sole Practitioner Tax Guide →</a></p>
+</div>

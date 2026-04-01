@@ -11,7 +11,7 @@ image: ""
 h1: "Law Firm Cash Flow Management: Essential Strategies for UK Legal Practices"
 summary: "Effective cash flow management is critical for UK law firm survival and growth. This guide covers practical strategies to reduce lock-up periods, improve collections, and maintain healthy practice finances."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/law-firm-cash-flow-management"
 faqs:
   - question: "How long should law firm lock-up periods be?"
     answer: "Best practice lock-up periods are 30-45 days for most legal work. This means billing regularly (monthly interim bills), issuing bills immediately work completes, and achieving payment within 14-30 days. Many firms achieve 60-90 day lock-up, but this significantly impacts cash flow and should be reduced where possible."
@@ -124,3 +124,9 @@ faqs:
 <p>Consider monthly management accounts, cash flow forecasting services, and regular financial health checks. The cost is typically far less than the problems poor cash flow creates.</p>
 
 <p>If your practice experiences persistent cash flow problems despite profitable operations, seek professional advice promptly. Early intervention often prevents more serious difficulties.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to cash flow management, lock-up reduction, and working capital.</p>
+<p><a href="/blog/practice-finance-cash-flow" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Finance Guide →</a></p>
+</div>

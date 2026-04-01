@@ -11,7 +11,7 @@ image: ""
 h1: "Law Firm Debt Management: Essential Strategies for UK Legal Practices"
 summary: "Effective debt management is crucial for law firm profitability and cash flow. Learn practical strategies to reduce bad debt and manage outstanding fees."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/law-firm-debt-management"
 faqs:
   - question: "What are typical debtor days for UK law firms?"
     answer: "UK law firms typically experience debtor days between 60-90 days, though this varies significantly by practice area. Commercial litigation firms often see longer collection periods due to case complexity, while residential conveyancing typically achieves faster payment. Effective debt management can reduce debtor days to 45-60 days."
@@ -154,3 +154,9 @@ faqs:
 </ul>
 
 <p>A specialist solicitor accountant can provide guidance on structuring debt recovery procedures while maintaining <a href="/sra-compliance">SRA compliance</a> and optimizing tax implications.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to cash flow management, lock-up reduction, and working capital.</p>
+<p><a href="/blog/practice-finance-cash-flow" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Finance Guide →</a></p>
+</div>

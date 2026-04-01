@@ -11,7 +11,7 @@ image: ""
 h1: "Solicitor Practice Valuation: Complete Guide for UK Law Firms"
 summary: "Understanding how to value a solicitor practice is crucial for retirement planning, partnership changes, or potential sales. This guide covers the key valuation methods and factors that determine what your law firm is worth."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-succession-sale/solicitor-practice-valuation-guide"
 faqs:
   - question: "How much is my solicitor practice worth?"
     answer: "Practice values typically range from 1-3 times annual net profit, but depend heavily on factors like client concentration, practice area, profitability trends, and market position. A formal valuation from a qualified professional provides the most accurate assessment."
@@ -115,3 +115,9 @@ faqs:
 <p>Choose valuers with specific legal sector experience who understand SRA requirements, client money regulations, and the unique risks facing UK law firms. Generic business valuers often miss critical factors that affect legal practice values.</p>
 
 <p>Professional valuations typically cost £2,000-£10,000 depending on practice size and complexity, but provide essential protection in formal transactions or disputes.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to succession planning, practice valuation, and exit strategies.</p>
+<p><a href="/blog/practice-succession-sale" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Succession Guide →</a></p>
+</div>

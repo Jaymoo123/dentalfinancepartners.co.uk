@@ -11,7 +11,7 @@ image: ""
 h1: "Law Firm Payroll Services: Complete Guide for UK Legal Practices"
 summary: "Specialist law firm payroll services designed for UK legal practices, handling everything from partner distributions to associate salaries with full SRA compliance support."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/law-firm-payroll-services"
 faqs:
   - question: "What makes law firm payroll different from standard business payroll?"
     answer: "Law firm payroll involves unique structures like partner profit distributions, variable associate bonuses tied to billing targets, and complex compensation arrangements that standard payroll systems cannot handle effectively. Legal practices also need providers who understand SRA compliance requirements and legal sector regulations."
@@ -134,3 +134,9 @@ faqs:
 <p>For practices considering outsourcing payroll, start by documenting your current processes and identifying pain points. This helps potential providers understand your needs and propose appropriate solutions.</p>
 
 <p>If you're evaluating payroll options for your legal practice, <a href="/contact">speak to our specialist team</a> who can assess your requirements and explain how professional services could benefit your firm.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to cash flow management, lock-up reduction, and working capital.</p>
+<p><a href="/blog/practice-finance-cash-flow" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Finance Guide →</a></p>
+</div>

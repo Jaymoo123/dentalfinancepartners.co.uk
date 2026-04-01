@@ -11,7 +11,7 @@ image: ""
 h1: "LLP Member Taxation: A Complete Guide for UK Law Firms"
 summary: "LLP member taxation differs significantly from employee taxation, with members treated as self-employed for tax purposes. Understanding profit allocations, Class 2 NICs, and self-assessment obligations is crucial for law firm partners."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/partnership-llp-accounting/llp-member-taxation-guide-uk-law-firms"
 faqs:
   - question: "Are LLP members treated as employees for tax purposes?"
     answer: "No, LLP members are generally treated as self-employed for tax purposes. However, salaried members who fail HMRC's three-part test may be treated as employees, paying income tax and employee NICs through PAYE rather than completing self-assessment returns."
@@ -90,3 +90,9 @@ faqs:
 <p>Making Tax Digital implementation will require significant system changes for many law firms. Members will need robust bookkeeping systems to meet quarterly reporting obligations from 2026.</p>
 
 <p>Basis Period Reform, while primarily affecting partnerships, may have implications for how LLP profits are allocated and taxed in transition years.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to partnership taxation, LLP conversion, and profit allocation.</p>
+<p><a href="/blog/partnership-llp-accounting" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Partnership & LLP Tax Guide →</a></p>
+</div>

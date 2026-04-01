@@ -11,7 +11,7 @@ image: ""
 h1: "Basis Period Reform for Law Firms: Complete Guide for Partners and Practice Managers"
 summary: "Basis period reform fundamentally changes how law firm partnerships and LLPs report tax. The 2024/25 transition affects profit allocation and could create significant tax bills for partners."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/partnership-llp-accounting/basis-period-reform-law-firms"
 faqs:
   - question: "When does basis period reform affect law firm partnerships?"
     answer: "Basis period reform applies to all law firm partnerships and LLPs from the 2024/25 tax year onwards. The transition year (2024/25) may result in partners paying tax on more than 12 months of profits, depending on the practice's accounting year end date."
@@ -113,3 +113,9 @@ faqs:
 <p>A specialist <a href="/services">solicitor accountant</a> can help calculate the exact impact on each partner, plan cash flow strategies, and ensure compliance with both tax and SRA requirements during this transition period.</p>
 
 <p>The stakes are high—getting basis period reform wrong could result in significant overpayments, underpayments, or compliance issues that affect both partners personally and the practice's regulatory standing.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to partnership taxation, LLP conversion, and profit allocation.</p>
+<p><a href="/blog/partnership-llp-accounting" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Partnership & LLP Tax Guide →</a></p>
+</div>

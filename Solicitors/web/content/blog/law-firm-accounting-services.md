@@ -11,7 +11,7 @@ image: ""
 h1: "Law Firm Accounting Services: Complete Guide for UK Legal Practices"
 summary: "Specialist law firm accounting services help UK solicitors manage complex compliance requirements, from SRA trust accounting to tax planning and practice growth."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/law-firm-accounting-services"
 faqs:
   - question: "What makes law firm accounting different from general business accounting?"
     answer: "Law firm accounting requires specialist knowledge of SRA Accounts Rules, trust accounting, client money handling, and legal sector tax issues. General accountants often lack experience with three-way reconciliations, partnership profit allocations in legal contexts, and the specific compliance requirements that solicitors face."
@@ -101,3 +101,9 @@ faqs:
 <p>Remember that accounting problems in legal practice can trigger SRA involvement, making the cost of proper professional support relatively small compared to potential regulatory consequences.</p>
 
 <p>For comprehensive support tailored to your practice needs, contact specialist legal sector accountants who understand both your compliance obligations and business development goals. Professional law firm accounting services provide the foundation for sustainable practice growth while maintaining regulatory compliance.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to cash flow management, lock-up reduction, and working capital.</p>
+<p><a href="/blog/practice-finance-cash-flow" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Finance Guide →</a></p>
+</div>

@@ -6,6 +6,7 @@ import { StickyCTA } from "@/components/ui/StickyCTA";
 import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
+import { getAllPosts, getCategorySlug, calculateReadTime } from "@/lib/blog";
 
 const btnMailOutline =
   "inline-flex min-h-12 items-center justify-center rounded-full border border-white/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-white transition-all duration-200 hover:border-white/50 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]";
@@ -137,6 +138,8 @@ const specialistRows = [
 
 export default function HomePage() {
   const orgSchema = buildOrganizationJsonLd();
+  const allPosts = getAllPosts();
+  const recentPosts = allPosts.slice(0, 3);
 
   return (
     <>
@@ -200,6 +203,81 @@ export default function HomePage() {
       </section>
 
       <section className={sectionY}>
+        <div className={siteContainerLg}>
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
+              Latest insights
+            </p>
+            <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
+              Expert guidance for UK solicitors
+            </h2>
+            <p className="mt-4 text-lg leading-relaxed text-[var(--ink-soft)]">
+              Stay informed with our latest articles on SRA compliance, tax planning, and practice management.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-3">
+            {recentPosts.map((post) => {
+              const categorySlug = getCategorySlug(post);
+              const readTime = calculateReadTime(post.contentHtml);
+              return (
+                <article key={post.slug} className="card-flat group">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-[var(--accent)]">
+                    {post.category}
+                  </p>
+                  <h3 className="mt-3 font-serif text-lg font-semibold text-[var(--primary)] leading-tight">
+                    <Link
+                      href={`/blog/${categorySlug}/${post.slug}`}
+                      className={`hover:text-[var(--accent-strong)] transition-colors ${focusRing} rounded`}
+                    >
+                      {post.title}
+                    </Link>
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] line-clamp-3">
+                    {post.summary}
+                  </p>
+                  <div className="mt-4 flex items-center gap-3 text-xs text-[var(--muted)]">
+                    {post.date && (
+                      <time dateTime={post.date}>
+                        {new Intl.DateTimeFormat("en-GB", {
+                          day: "numeric",
+                          month: "short",
+                          year: "numeric",
+                        }).format(new Date(post.date))}
+                      </time>
+                    )}
+                    <span>•</span>
+                    <span>{readTime} min read</span>
+                  </div>
+                  <Link
+                    href={`/blog/${categorySlug}/${post.slug}`}
+                    className={`mt-4 inline-flex items-center text-sm font-medium text-[var(--primary)] hover:text-[var(--accent-strong)] transition-colors ${focusRing} rounded`}
+                  >
+                    Read article
+                    <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </article>
+              );
+            })}
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link
+              href="/blog"
+              className={`inline-flex items-center min-h-[48px] px-6 py-3 rounded-lg border-2 border-[var(--primary)] bg-transparent text-[var(--primary)] font-medium transition-all hover:bg-[var(--primary)] hover:text-white ${focusRing}`}
+            >
+              View all articles
+              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className={sectionY} style={{ background: "var(--surface-elevated)" }}>
         <div className={siteContainerLg}>
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
@@ -356,6 +434,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
 
       <section className={sectionY}>
         <div className={siteContainerLg}>

@@ -11,7 +11,7 @@ image: ""
 h1: "Partner Retirement Planning: Tax and Financial Strategies for UK Law Firms"
 summary: "Partner retirement planning requires careful consideration of tax implications, pension contributions, and succession strategies. The right approach can significantly impact both the retiring partner's financial position and the firm's ongoing operations."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/partnership-llp-accounting/partner-retirement-planning-tax-financial-strategies"
 faqs:
   - question: "When should I start planning for retirement as a law firm partner?"
     answer: "You should ideally start partner retirement planning 5-10 years before your intended retirement date. This allows time to maximise pension contributions, implement tax-efficient strategies, and arrange succession planning. Early planning also helps your firm prepare for the transition and maintain client relationships effectively."
@@ -102,3 +102,9 @@ faqs:
 <p>Early planning enables partners to maximise pension contributions during high-earning years and structure affairs to minimise tax on retirement payments. It also allows firms to develop succession plans and maintain client relationships.</p>
 
 <p>Professional advice from specialist solicitor accountants is essential given the complexity of partnership taxation and retirement arrangements. Expert guidance helps navigate the various options and optimise the overall outcome for both the retiring partner and the firm.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to partnership taxation, LLP conversion, and profit allocation.</p>
+<p><a href="/blog/partnership-llp-accounting" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Partnership & LLP Tax Guide →</a></p>
+</div>

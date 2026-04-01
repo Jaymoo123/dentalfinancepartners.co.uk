@@ -11,7 +11,7 @@ image: ""
 h1: "Solicitor Trust Accounting: Complete Guide to SRA Accounts Rules Compliance"
 summary: "Essential guide covering solicitor trust accounting requirements under SRA Accounts Rules, including client money handling, reconciliations, and compliance obligations for UK law firms."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/solicitor-trust-accounting-guide"
 faqs:
   - question: "What happens if I accidentally mix client money with business money?"
     answer: "If you discover mixed funds, separate them immediately using your business money to cover any shortfall. Document the error, investigate how it happened, and strengthen procedures to prevent recurrence. Consider notifying your professional indemnity insurers and seek advice on whether SRA notification is required. The key is acting quickly once you discover the problem."
@@ -167,3 +167,9 @@ faqs:
 <p>Professional help is particularly valuable for setting up new systems, training staff, resolving compliance issues, and preparing for SRA inspections. The cost of good advice is minimal compared to the potential consequences of getting it wrong.</p>
 
 <p>For more information about specialist legal accounting services, visit our <a href="/services">services page</a> or <a href="/contact">contact us</a> directly.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to SRA Accounts Rules compliance, client money handling, and trust accounting.</p>
+<p><a href="/blog/sra-compliance-trust-accounting" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete SRA Compliance Guide →</a></p>
+</div>

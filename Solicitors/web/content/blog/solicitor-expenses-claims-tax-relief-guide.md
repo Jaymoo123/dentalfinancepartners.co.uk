@@ -11,7 +11,7 @@ image: ""
 h1: "Solicitor Expenses Claims: Complete Tax Relief Guide for UK Legal Practices"
 summary: "UK solicitors can claim significant tax relief on legitimate business expenses, but the rules are complex and mistakes costly. Understanding what qualifies and proper record-keeping is essential."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/sole-practitioner-tax/solicitor-expenses-claims-tax-relief-guide"
 faqs:
   - question: "What expenses can solicitors claim for tax relief?"
     answer: "Solicitors can claim tax relief on expenses wholly and exclusively for business purposes, including SRA fees, professional indemnity insurance, CPD courses, office costs, business travel, and equipment. Mixed-use expenses like home office costs can be claimed proportionally. You must maintain proper records and receipts for all claims."
@@ -170,3 +170,9 @@ faqs:
 <p>Maintain conservative, well-documented claims rather than aggressive interpretations that might trigger enquiries.</p>
 
 <p>For complex situations or significant expense claims, professional advice can help ensure compliance while maximising your tax efficiency. Consider discussing your specific circumstances with specialists who understand both legal practice requirements and tax compliance.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to sole practitioner taxation, self-assessment, and Making Tax Digital.</p>
+<p><a href="/blog/sole-practitioner-tax" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Sole Practitioner Tax Guide →</a></p>
+</div>

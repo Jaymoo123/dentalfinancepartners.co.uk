@@ -11,7 +11,7 @@ image: ""
 h1: "Accountant for Solicitors: What UK Law Firms Need to Know"
 summary: "Not all accountants understand the unique challenges facing UK solicitors. From SRA compliance to trust accounting, choosing the right accountant for solicitors can make the difference between regulatory headaches and smooth practice management."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/accountant-for-solicitors"
 faqs:
   - question: "What makes an accountant suitable for solicitors different from a general accountant?"
     answer: "A specialist accountant for solicitors understands SRA Accounts Rules, trust accounting requirements, and legal sector tax issues. They know how to handle client money properly, prepare compliant accountant's reports, and provide relevant business advice. General accountants typically lack this specialized knowledge, which can lead to compliance issues and missed opportunities."
@@ -120,3 +120,9 @@ faqs:
 <p>Take time to evaluate potential accountants properly. Meet them in person, check their references, and ensure they understand your specific needs. Your practice's financial health and regulatory compliance depend on making the right choice.</p>
 
 <p>If you're looking for specialist support, consider speaking with accountants who focus exclusively on legal practices. Their expertise in <a href="/sra-compliance">SRA compliance</a> and understanding of practice management challenges can provide the foundation for long-term success.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to cash flow management, lock-up reduction, and working capital.</p>
+<p><a href="/blog/practice-finance-cash-flow" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Finance Guide →</a></p>
+</div>

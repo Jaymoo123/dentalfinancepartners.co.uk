@@ -11,7 +11,7 @@ image: ""
 h1: "Sole Practitioner Tax Deductions: Complete Guide for UK Solicitors"
 summary: "Comprehensive guide covering all allowable tax deductions for sole practitioner solicitors, from professional fees to office costs and equipment purchases."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/sole-practitioner-tax/sole-practitioner-tax-deductions-guide"
 faqs:
   - question: "What expenses can sole practitioner solicitors claim as tax deductions?"
     answer: "Sole practitioners can claim professional fees (SRA, Law Society), office costs (rent, utilities, home office), equipment and technology, business travel, professional development, marketing costs, stationery, and bank charges. All expenses must be wholly and exclusively for business purposes with proper documentation."
@@ -138,3 +138,9 @@ faqs:
 <p>Tax rules for sole practitioners are complex and change regularly. Consider working with a specialist solicitor accountant who understands both legal practice requirements and current tax legislation.</p>
 
 <p>Professional advice can often identify additional allowable deductions and ensure your claims are robust if challenged by HMRC. The cost of professional accounting services is itself an allowable business expense.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to sole practitioner taxation, self-assessment, and Making Tax Digital.</p>
+<p><a href="/blog/sole-practitioner-tax" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Sole Practitioner Tax Guide →</a></p>
+</div>

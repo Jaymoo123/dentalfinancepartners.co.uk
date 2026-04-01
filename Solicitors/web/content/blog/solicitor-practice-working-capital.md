@@ -11,7 +11,7 @@ image: ""
 h1: "Solicitor Practice Working Capital: Managing Cash Flow in UK Law Firms"
 summary: "Working capital management is crucial for law firm sustainability. This guide covers calculation methods, optimisation strategies, and practical solutions for maintaining healthy cash flow."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/solicitor-practice-working-capital"
 faqs:
   - question: "What is a healthy working capital ratio for a solicitor practice?"
     answer: "A healthy working capital ratio (current assets ÷ current liabilities) for a law firm is typically 1.5-2.0. This means having £1.50-£2.00 of current assets for every £1.00 of current liabilities. However, the quality matters more than quantity - work in progress and slow-paying debtors are less valuable than cash despite being current assets."
@@ -183,3 +183,9 @@ faqs:
 <p>Automated billing systems can render bills more frequently and consistently, improving cash flow timing. Client portals that facilitate online payment reduce collection periods.</p>
 
 <p>Integration between time recording, billing, and accounting systems eliminates delays in converting work in progress into billed debtors.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to cash flow management, lock-up reduction, and working capital.</p>
+<p><a href="/blog/practice-finance-cash-flow" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Finance Guide →</a></p>
+</div>

@@ -11,7 +11,7 @@ image: ""
 h1: "Partner Retirement Planning: A Complete Guide for UK Law Firms"
 summary: "Partner retirement planning requires careful coordination of tax strategy, pension arrangements, and practice succession. This guide covers the key considerations for law firm partners preparing for retirement."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-succession-sale/partner-retirement-planning-guide-uk-law-firms"
 faqs:
   - question: "When should law firm partners start retirement planning?"
     answer: "Partners should begin retirement planning 5-10 years before intended retirement. This allows time for tax-efficient pension contributions, gradual client relationship transfers, and negotiation of retirement terms with continuing partners. Early planning typically results in significantly better financial outcomes."
@@ -82,3 +82,9 @@ faqs:
 <p>Implementation typically requires 18-24 months of advance planning to optimize tax positions, arrange necessary valuations, and ensure smooth client transitions. Partners who leave retirement planning until the final year often face suboptimal outcomes and unnecessary stress.</p>
 
 <p>If you're a law firm partner considering retirement within the next decade, speak to a specialist solicitor accountant to review your current position and develop a comprehensive retirement strategy that maximizes your financial outcomes while supporting practice continuity.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to succession planning, practice valuation, and exit strategies.</p>
+<p><a href="/blog/practice-succession-sale" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Succession Guide →</a></p>
+</div>

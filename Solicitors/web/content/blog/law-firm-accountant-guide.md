@@ -11,7 +11,7 @@ image: ""
 h1: "Law Firm Accountant: Essential Guide for UK Legal Practices"
 summary: "A specialist law firm accountant provides essential support for SRA compliance, trust accounting, and tax planning. This guide covers what to look for and key services your practice needs."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/law-firm-accountant-guide"
 faqs:
   - question: "What's the difference between a general accountant and a law firm accountant?"
     answer: "A law firm accountant specializes in legal sector requirements including SRA Accounts Rules, trust accounting, client money handling, and partnership taxation. They understand legal practice cash flows, work-in-progress valuations, and regulatory compliance requirements that general accountants typically lack expertise in."
@@ -86,3 +86,9 @@ faqs:
 <p>Tax compliance failures can be expensive. HMRC penalties for late filings or incorrect returns add unnecessary costs. Partnership tax elections missed or incorrectly applied can create long-term problems.</p>
 
 <p>Poor financial management affects practice performance. Without proper management accounts and cash flow planning, you're flying blind. This impacts partner drawings, growth planning, and strategic decisions.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to cash flow management, lock-up reduction, and working capital.</p>
+<p><a href="/blog/practice-finance-cash-flow" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Finance Guide →</a></p>
+</div>

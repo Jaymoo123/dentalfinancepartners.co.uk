@@ -11,7 +11,7 @@ image: ""
 h1: "Sole Practitioner Solicitor Tax: Complete Guide for 2025/26"
 summary: "Essential tax guidance for sole practitioner solicitors covering self-assessment obligations, allowable expenses, and MTD compliance requirements."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/sole-practitioner-tax/sole-practitioner-solicitor-tax-guide-2025"
 faqs:
   - question: "What tax do sole practitioner solicitors pay?"
     answer: "Sole practitioner solicitors pay Income Tax on practice profits at rates of 20% (£12,570-£50,270), 40% (£50,270-£125,140), and 45% above £125,140 for 2025/26. They also pay Class 2 National Insurance (£3.45 weekly if profits exceed £6,515) and Class 4 National Insurance at 6% on profits between £12,570 and £50,270. Unlike employed solicitors, they're not subject to PAYE deductions."
@@ -133,3 +133,9 @@ faqs:
 <p>Many sole practitioners benefit from working with accountants who understand legal practice complexities. This becomes particularly valuable as Making Tax Digital requirements approach and practice income grows toward incorporation thresholds.</p>
 
 <p>Regular reviews ensure you're maximising allowable deductions while maintaining full compliance with both HMRC and SRA requirements. Professional guidance can identify tax planning opportunities and help navigate the increasing complexity of self-employment taxation.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to sole practitioner taxation, self-assessment, and Making Tax Digital.</p>
+<p><a href="/blog/sole-practitioner-tax" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Sole Practitioner Tax Guide →</a></p>
+</div>

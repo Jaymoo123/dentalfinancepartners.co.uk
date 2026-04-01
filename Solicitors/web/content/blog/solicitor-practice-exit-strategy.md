@@ -11,7 +11,7 @@ image: ""
 h1: "Solicitor Practice Exit Strategy: Complete Guide for UK Law Firms"
 summary: "A comprehensive guide covering exit strategy options for UK solicitors, from practice sales to succession planning, including tax implications and valuation considerations."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-succession-sale/solicitor-practice-exit-strategy"
 faqs:
   - question: "When should I start planning my solicitor practice exit strategy?"
     answer: "Start planning your exit strategy 5-7 years before your intended retirement or exit date. This timeframe allows for practice improvements, staff development, client relationship strengthening, and tax planning that can significantly enhance your practice value and ensure a smooth transition."
@@ -111,3 +111,9 @@ faqs:
 <p>Independent practice valuations provide realistic expectations and support negotiations. Business brokers specialising in legal practices can identify suitable buyers and manage the sale process professionally.</p>
 
 <p>Early engagement with <a href="/services">specialist solicitor accountants</a> ensures tax-efficient structuring and compliance with all regulatory requirements throughout the exit process.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to succession planning, practice valuation, and exit strategies.</p>
+<p><a href="/blog/practice-succession-sale" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Succession Guide →</a></p>
+</div>

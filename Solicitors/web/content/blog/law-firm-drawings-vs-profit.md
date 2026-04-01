@@ -11,7 +11,7 @@ image: ""
 h1: "Law Firm Drawings vs Profit: Understanding the Key Differences for UK Partners"
 summary: "Many law firm partners confuse drawings with profit, creating tax and cash flow issues. Understanding the difference is essential for effective financial planning and tax compliance."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/partnership-llp-accounting/law-firm-drawings-vs-profit"
 faqs:
   - question: "What is the difference between law firm drawings and profit?"
     answer: "Drawings are the cash payments you take from your law firm during the year, while profit is your allocated share of the firm's annual profit. You pay tax on your profit allocation, not your drawings. Drawings are advances against expected profit, recorded as reductions in your capital account."
@@ -108,3 +108,9 @@ faqs:
 <p>Working with accountants who understand legal practices helps ensure your drawing policy supports both personal financial goals and firm cash flow needs. This becomes particularly important during periods of growth or when planning major personal expenditure.</p>
 
 <p>For specific guidance on your situation, consider speaking with a <a href="/services">specialist solicitor accountant</a> who can review your partnership agreement and tax planning strategy.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to partnership taxation, LLP conversion, and profit allocation.</p>
+<p><a href="/blog/partnership-llp-accounting" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Partnership & LLP Tax Guide →</a></p>
+</div>

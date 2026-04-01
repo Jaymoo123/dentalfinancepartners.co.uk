@@ -11,7 +11,7 @@ image: ""
 h1: "Xero for Solicitors: Complete Setup and Compliance Guide"
 summary: "Essential guide for solicitors considering Xero accounting software. Covers setup, SRA compliance requirements, and trust accounting functionality for UK legal practices."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/xero-for-solicitors"
 faqs:
   - question: "Can Xero handle SRA Accounts Rules compliance for solicitors?"
     answer: "Yes, Xero can meet SRA Accounts Rules requirements when properly configured. You need to set up separate tracking categories for client money and office money, use appropriate chart of accounts, and maintain proper audit trails. However, the software requires careful setup and ongoing management to ensure compliance."
@@ -114,3 +114,9 @@ faqs:
 <p>Review your chart of accounts periodically to ensure it still meets your practice's needs. As your firm grows, you may need additional tracking categories or more detailed expense codes.</p>
 
 <p>Keep your software updated and review user access regularly. Remove access for departed staff members and ensure current users have appropriate permission levels for their roles.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to cash flow management, lock-up reduction, and working capital.</p>
+<p><a href="/blog/practice-finance-cash-flow" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Finance Guide →</a></p>
+</div>

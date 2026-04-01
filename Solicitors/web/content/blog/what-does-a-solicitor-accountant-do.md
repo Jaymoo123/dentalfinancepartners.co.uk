@@ -11,7 +11,7 @@ image: ""
 h1: "What Does a Solicitor Accountant Do? A Complete Guide for UK Law Firms"
 summary: "Solicitor accountants provide specialist accounting and compliance services tailored to UK law firms, combining legal sector expertise with financial management."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/what-does-a-solicitor-accountant-do"
 faqs:
   - question: "What's the difference between a general accountant and a solicitor accountant?"
     answer: "A solicitor accountant specialises exclusively in legal practices and understands SRA Accounts Rules, client money handling, trust accounting, and legal sector tax issues. General accountants typically lack this specialist knowledge and may miss compliance requirements or tax planning opportunities specific to law firms."
@@ -114,3 +114,9 @@ faqs:
 <p>The right specialist will understand your practice's specific challenges and provide proactive advice rather than simply responding to compliance requirements. They should offer <a href="/services">comprehensive services</a> tailored to legal practices and maintain current knowledge of regulatory developments.</p>
 
 <p>For most practices, the investment in specialist accounting support pays for itself through improved compliance, tax savings, and better financial management. The key is finding an accountant who truly understands what solicitors need to succeed.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to SRA Accounts Rules compliance, client money handling, and trust accounting.</p>
+<p><a href="/blog/sra-compliance-trust-accounting" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete SRA Compliance Guide →</a></p>
+</div>

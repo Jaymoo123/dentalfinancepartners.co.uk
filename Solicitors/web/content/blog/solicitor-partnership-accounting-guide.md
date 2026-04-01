@@ -11,7 +11,7 @@ image: ""
 h1: "Solicitor Partnership Accounting: Complete Guide for Legal Partnerships"
 summary: "Essential guide covering partnership tax obligations, profit allocation, accounts preparation and compliance requirements for UK legal partnerships."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/partnership-llp-accounting/solicitor-partnership-accounting-guide"
 faqs:
   - question: "How are partnership profits taxed for solicitors?"
     answer: "Partnership profits are taxed as income in the hands of individual partners, not at partnership level. Each partner pays Income Tax and National Insurance on their profit share, regardless of whether profits are withdrawn. Partners must complete self-assessment returns declaring their share of partnership income."
@@ -104,3 +104,9 @@ faqs:
 <p>Regular review of partnership structures ensures arrangements remain tax-efficient and compliant with changing regulations. This is particularly important given recent changes to partnership taxation and upcoming MTD requirements.</p>
 
 <p>Partnerships should maintain professional relationships with solicitor accountants who understand both legal sector requirements and partnership taxation complexities. This investment typically pays for itself through improved compliance and tax efficiency.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to partnership taxation, LLP conversion, and profit allocation.</p>
+<p><a href="/blog/partnership-llp-accounting" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Partnership & LLP Tax Guide →</a></p>
+</div>

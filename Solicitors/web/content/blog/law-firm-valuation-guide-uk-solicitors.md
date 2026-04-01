@@ -11,7 +11,7 @@ image: ""
 h1: "Law Firm Valuation: A Complete Guide for UK Solicitors"
 summary: "Understanding law firm valuation is crucial for practice succession planning, partner buyouts, and practice sales. This guide covers the key valuation methods and factors that determine your firm's worth."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-succession-sale/law-firm-valuation-guide-uk-solicitors"
 faqs:
   - question: "How often should I get my law firm valued?"
     answer: "Most UK law firms benefit from professional valuation every 3-5 years for strategic planning, or whenever considering significant changes like partner succession, practice sale, or merger opportunities."
@@ -150,3 +150,9 @@ faqs:
 <p>Consider engaging specialist advisors who understand both legal practice operations and valuation methodology. Their expertise can identify value enhancement opportunities and potential obstacles.</p>
 
 <p>For specific guidance on your practice valuation needs, <a href="/contact">speak to a specialist solicitor accountant</a> who can provide tailored advice for your situation.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to succession planning, practice valuation, and exit strategies.</p>
+<p><a href="/blog/practice-succession-sale" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Succession Guide →</a></p>
+</div>

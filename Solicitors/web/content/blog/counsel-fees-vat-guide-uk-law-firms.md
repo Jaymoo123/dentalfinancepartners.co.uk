@@ -11,7 +11,7 @@ image: ""
 h1: "Counsel Fees VAT: Complete Guide for UK Law Firms"
 summary: "Understanding counsel fees VAT is crucial for law firms managing cash flow and client billing. The VAT treatment depends on whether counsel services are disbursements or supplies to your firm."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/vat-compliance/counsel-fees-vat-guide-uk-law-firms"
 faqs:
   - question: "Can I recover VAT on counsel fees if my law firm is VAT registered?"
     answer: "Yes, if counsel services are treated as supplies to your firm (which is usually the case), you can recover the VAT as input tax provided you have valid VAT invoices and use the services for business purposes. The VAT must be recovered through your VAT return, which may create temporary cash flow implications."
@@ -133,3 +133,9 @@ faqs:
 </ul>
 
 <p>Given the complexity of VAT rules around counsel services, most firms benefit from specialist advice on their specific arrangements and client base.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to VAT compliance, disbursements, and counsel fees.</p>
+<p><a href="/blog/vat-compliance" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete VAT Guide →</a></p>
+</div>

@@ -11,7 +11,7 @@ image: ""
 h1: "Solicitor Practice Sale: Complete Guide for UK Law Firms"
 summary: "Selling a solicitor practice involves complex valuation, compliance, and tax considerations. This guide covers the complete process from initial preparation to completion."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-succession-sale/solicitor-practice-sale-guide"
 faqs:
   - question: "How long does it typically take to sell a solicitor practice?"
     answer: "A solicitor practice sale typically takes 6-12 months from initial marketing to completion. This includes 2-3 months for preparation and marketing, 2-4 months for buyer identification and initial negotiations, 4-8 weeks for due diligence, and 4-6 weeks for legal documentation and completion. Complex transactions or difficult market conditions may extend these timelines."
@@ -136,3 +136,9 @@ faqs:
 <p>Inadequate preparation is another frequent issue. Buyers expect comprehensive, well-organised documentation. Practices that can't demonstrate strong financial controls, compliance systems, or client relationships will struggle to achieve premium valuations.</p>
 
 <p>Poor timing can also impact outcomes. Market conditions, interest rates, and buyer appetite vary over time. Consider whether current market conditions favour sellers or if waiting might improve prospects.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to succession planning, practice valuation, and exit strategies.</p>
+<p><a href="/blog/practice-succession-sale" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Succession Guide →</a></p>
+</div>

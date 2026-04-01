@@ -11,7 +11,7 @@ image: ""
 h1: "Law Firm Lock-Up Reduction: Essential Strategies for UK Legal Practices"
 summary: "Law firm lock-up reduction is essential for maintaining healthy cash flow in UK legal practices. Effective strategies can significantly improve working capital and financial stability."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/law-firm-lock-up-reduction"
 faqs:
   - question: "What is a typical law firm lock-up level for UK practices?"
     answer: "Most successful UK law firms maintain lock-up between 60-90 days of annual turnover. Lock-up exceeding 120 days typically indicates billing or collection problems that need addressing. Commercial practices often run higher than private client work due to matter complexity and billing cycles."
@@ -153,3 +153,9 @@ faqs:
 <p>Many UK legal practices benefit from specialist accounting support for lock-up management. <a href="/services">Professional guidance</a> can help identify specific areas for improvement and implement effective systems.</p>
 
 <p>Consider professional help if your practice experiences persistent cash flow problems, has lock-up exceeding 120 days of turnover, or lacks internal expertise in financial management.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to cash flow management, lock-up reduction, and working capital.</p>
+<p><a href="/blog/practice-finance-cash-flow" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Finance Guide →</a></p>
+</div>

@@ -11,7 +11,7 @@ image: ""
 h1: "Law Firm Goodwill Valuation: A Comprehensive Guide for UK Solicitors"
 summary: "Understanding law firm goodwill valuation is crucial for practice sales, mergers, and succession planning. This guide covers valuation methods, key factors, and practical considerations for UK solicitors."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-succession-sale/law-firm-goodwill-valuation"
 faqs:
   - question: "What factors most significantly impact law firm goodwill valuation?"
     answer: "Client retention rates, practice area specialization, and financial stability represent the most critical factors. Practices with 80%+ client retention, specialized expertise, and consistent profitability typically achieve higher goodwill valuations than general practices with variable client relationships."
@@ -114,3 +114,9 @@ faqs:
 <p>Law firm goodwill valuation involves complex interactions between tax, regulatory, and commercial considerations. Professional guidance helps ensure valuations reflect current market conditions while optimizing tax outcomes.</p>
 
 <p>Working with specialists who understand both legal practice dynamics and valuation methodology provides the foundation for successful practice transactions and succession planning.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to succession planning, practice valuation, and exit strategies.</p>
+<p><a href="/blog/practice-succession-sale" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Succession Guide →</a></p>
+</div>

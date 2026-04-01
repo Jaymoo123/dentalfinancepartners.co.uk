@@ -11,7 +11,7 @@ image: ""
 h1: "Solicitor Expenses Claims: Tax Deductions & Compliance for UK Legal Practices"
 summary: "UK solicitors can claim various business expenses against tax, but strict rules apply. Understanding what qualifies and maintaining proper records is essential for compliance."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/sole-practitioner-tax/solicitor-expenses-claims"
 faqs:
   - question: "What expenses can solicitors claim against tax?"
     answer: "Solicitors can claim expenses incurred wholly and exclusively for business purposes, including professional subscriptions, SRA fees, office costs, equipment, business travel, training courses, legal software, and professional indemnity insurance. Home office costs can be claimed if space is used exclusively for business."
@@ -97,3 +97,9 @@ faqs:
 <p>For practices subject to <a href="/sra-compliance">SRA compliance</a> requirements, ensure expense policies don't conflict with professional conduct rules, particularly around client money handling and transparency.</p>
 
 <p>Regular review of expense policies helps identify missed opportunities and ensures continued compliance as rules evolve. Many practices benefit from quarterly reviews with their accountant to optimise both the types of expenses claimed and the timing of purchases.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to sole practitioner taxation, self-assessment, and Making Tax Digital.</p>
+<p><a href="/blog/sole-practitioner-tax" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Sole Practitioner Tax Guide →</a></p>
+</div>

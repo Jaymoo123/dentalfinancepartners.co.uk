@@ -11,7 +11,7 @@ image: ""
 h1: "LLP Conversion Tax: Essential Guide for UK Law Firms"
 summary: "Converting your law firm partnership to an LLP triggers specific tax consequences that require careful planning. Understanding the capital gains, income tax and stamp duty implications is essential for a successful conversion."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/structure-incorporation/llp-conversion-tax-guide-uk-law-firms"
 faqs:
   - question: "What are the main tax consequences of converting a law firm partnership to an LLP?"
     answer: "The main tax consequences include potential capital gains tax on deemed disposal of partnership interests, income tax on work in progress transfers, stamp duty land tax on property transfers, and VAT registration changes. However, various reliefs like incorporation relief can defer or eliminate many of these charges when properly planned."

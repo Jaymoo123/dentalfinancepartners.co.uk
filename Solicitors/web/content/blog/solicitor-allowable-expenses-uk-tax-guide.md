@@ -11,7 +11,7 @@ image: ""
 h1: "Solicitor Allowable Expenses: Complete Tax Guide for UK Legal Practices"
 summary: "Understanding which expenses you can claim against your tax liability is crucial for managing your practice finances effectively. This guide covers all allowable expenses for solicitors."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/sole-practitioner-tax/solicitor-allowable-expenses-uk-tax-guide"
 faqs:
   - question: "What home office expenses can I claim as a sole practitioner solicitor?"
     answer: "You can claim a proportion of household expenses including mortgage interest, rent, council tax, utilities, insurance, and repairs. Calculate the business proportion based on the area used exclusively for work or the time spent working from home. Keep records to justify your calculation method."
@@ -167,3 +167,9 @@ faqs:
 <p>A specialist solicitor accountant can help ensure you're claiming all legitimate expenses while avoiding issues with HMRC. They can also advise on tax-efficient ways to structure expenses and whether changing your practice structure might offer tax advantages.</p>
 
 <p>For complex situations or if you're unsure about specific expenses, professional advice is typically cost-effective given the potential tax savings involved.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to sole practitioner taxation, self-assessment, and Making Tax Digital.</p>
+<p><a href="/blog/sole-practitioner-tax" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Sole Practitioner Tax Guide →</a></p>
+</div>

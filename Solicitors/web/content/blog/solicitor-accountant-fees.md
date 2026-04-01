@@ -11,7 +11,7 @@ image: ""
 h1: "Solicitor Accountant Fees: What UK Law Firms Should Expect to Pay"
 summary: "Understanding solicitor accountant fees helps law firms budget effectively and choose the right specialist. Costs vary significantly based on practice size, complexity, and services required."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/solicitor-accountant-fees"
 faqs:
   - question: "How much should a sole practitioner expect to pay for solicitor accountant fees?"
     answer: "Sole practitioners typically pay £2,500-£5,000 annually for core compliance services including accounts preparation, tax returns, and basic SRA support. The exact cost depends on practice turnover, complexity, and the level of service required. Higher-turnover practices or those needing additional advisory services will be at the upper end of this range."
@@ -180,3 +180,9 @@ faqs:
 <p>Consider the total cost of ownership, not just the annual fee. A proactive accountant who helps you avoid problems or identify opportunities may cost more initially but save money overall.</p>
 
 <p>Regular communication helps identify and address issues before they become expensive problems requiring urgent attention.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to cash flow management, lock-up reduction, and working capital.</p>
+<p><a href="/blog/practice-finance-cash-flow" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Finance Guide →</a></p>
+</div>

@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/sra-compliance`,
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `SRA Compliance & Trust Accounting | ${siteConfig.name}`,
+    description: "Expert SRA Accounts Rules compliance for solicitors. Client money handling, trust accounting, 5-week reconciliations.",
+    images: [siteConfig.publisherLogoUrl],
+  },
 };
 
 const complianceAreas = [

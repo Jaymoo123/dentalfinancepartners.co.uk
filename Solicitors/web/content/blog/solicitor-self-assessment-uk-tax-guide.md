@@ -11,7 +11,7 @@ image: ""
 h1: "Solicitor Self Assessment: Complete UK Tax Guide for Legal Professionals"
 summary: "Understanding solicitor self assessment requirements is essential for sole practitioners and partners. This guide covers tax obligations, deadlines, allowable expenses and compliance requirements for UK legal professionals."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/sole-practitioner-tax/solicitor-self-assessment-uk-tax-guide"
 faqs:
   - question: "When is the deadline for solicitor self assessment submission?"
     answer: "The deadline for online solicitor self assessment submission is 31 January following the end of the tax year. For the 2024/25 tax year, the deadline is 31 January 2026. This is also the deadline for paying any outstanding tax owed."
@@ -167,3 +167,9 @@ faqs:
 </ul>
 
 <p>A specialist solicitor accountant understands both legal practice requirements and tax optimization strategies, ensuring your returns are accurate and compliant.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to sole practitioner taxation, self-assessment, and Making Tax Digital.</p>
+<p><a href="/blog/sole-practitioner-tax" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Sole Practitioner Tax Guide →</a></p>
+</div>

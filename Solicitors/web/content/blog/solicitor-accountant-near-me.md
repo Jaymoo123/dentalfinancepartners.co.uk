@@ -11,7 +11,7 @@ image: ""
 h1: "How to Find a Solicitor Accountant Near You: A Complete Guide"
 summary: "Finding the right solicitor accountant near you requires understanding specialist legal sector expertise. This guide covers what to look for and how to choose the best accountant for your legal practice."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/solicitor-accountant-near-me"
 faqs:
   - question: "How much does a solicitor accountant cost?"
     answer: "Solicitor accountant fees typically range from £2,000-£8,000 annually for sole practitioners and small partnerships, with larger practices paying £10,000+ depending on complexity. Hourly rates range from £150-£400. Always get a detailed quote covering your specific requirements and ask what additional services might incur extra charges."
@@ -178,3 +178,9 @@ faqs:
 <p>The right solicitor accountant becomes a trusted advisor, not just a compliance necessity. Choose someone who understands your practice goals and can support your growth plans.</p>
 
 <p>If you're looking for specialist support, <a href="/services">explore our comprehensive services</a> for legal practices or <a href="/contact">get in touch</a> to discuss your specific requirements.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to cash flow management, lock-up reduction, and working capital.</p>
+<p><a href="/blog/practice-finance-cash-flow" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Finance Guide →</a></p>
+</div>

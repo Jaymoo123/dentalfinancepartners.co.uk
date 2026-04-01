@@ -11,7 +11,7 @@ image: ""
 h1: "How to Find a Solicitor Accountant: A Complete Guide for UK Law Firms"
 summary: "Finding the right solicitor accountant is crucial for legal practice compliance and financial management. This guide covers what to look for, key questions to ask, and how to avoid common pitfalls."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/how-to-find-a-solicitor-accountant"
 faqs:
   - question: "What qualifications should I look for in a solicitor accountant?"
     answer: "Look for qualified accountants (ICAEW, ACCA, or CIMA) with specific experience in legal practices. They should understand SRA Accounts Rules, client money handling, and legal practice structures. Ask how many law firms they serve and request references from similar practices."
@@ -109,3 +109,9 @@ faqs:
 <p>Don't base your decision solely on price. The cheapest option often proves more expensive if it leads to compliance issues or poor advice. Focus on value and the quality of service provided.</p>
 
 <p>Once you've made your decision, establish clear expectations about communication, deadlines, and service levels. A good working relationship with your solicitor accountant becomes invaluable as your practice grows.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to cash flow management, lock-up reduction, and working capital.</p>
+<p><a href="/blog/practice-finance-cash-flow" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Finance Guide →</a></p>
+</div>

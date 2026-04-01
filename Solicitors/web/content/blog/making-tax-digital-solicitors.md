@@ -11,7 +11,7 @@ image: ""
 h1: "Making Tax Digital for Solicitors: What You Need to Know"
 summary: "Making Tax Digital affects all UK solicitors through VAT, Income Tax, and Corporation Tax requirements. This guide explains compliance deadlines, software requirements, and practical steps for law firms."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/sole-practitioner-tax/making-tax-digital-solicitors"
 faqs:
   - question: "When does Making Tax Digital apply to solicitors?"
     answer: "MTD for VAT already applies to most law firms with turnover over £85,000. Income Tax MTD starts April 2026 for sole practitioners and partners with business income over £50,000. Corporation Tax MTD begins April 2026 for incorporated firms with turnover exceeding £10.2 million."
@@ -140,3 +140,9 @@ faqs:
 <p>Look for accountants who understand both MTD requirements and legal practice regulations. Generic MTD advice doesn't address client money handling, partnership taxation, or SRA compliance issues.</p>
 
 <p>Early preparation reduces implementation stress and helps identify potential problems before deadlines. Consider <a href="/services">specialist accounting support</a> to ensure smooth compliance across all MTD requirements.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to sole practitioner taxation, self-assessment, and Making Tax Digital.</p>
+<p><a href="/blog/sole-practitioner-tax" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Sole Practitioner Tax Guide →</a></p>
+</div>

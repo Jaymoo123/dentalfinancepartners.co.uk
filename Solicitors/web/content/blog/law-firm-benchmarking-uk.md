@@ -11,7 +11,7 @@ image: ""
 h1: "Law Firm Benchmarking UK: Essential KPIs and Performance Metrics for Legal Practices"
 summary: "Understanding where your practice stands against UK legal sector benchmarks is crucial for strategic planning and identifying improvement opportunities."
 schema: ""
-canonical: ""
+canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/law-firm-benchmarking-uk"
 faqs:
   - question: "What are the most important law firm benchmarking metrics in the UK?"
     answer: "Key metrics include profit per equity partner (typically £80k-£300k+), revenue per lawyer (£150k-£500k+ depending on sector), utilisation rates (target 75-85%), and net profit margins (20-40%). Lock-up periods, client retention rates, and WIP as percentage of turnover are also crucial indicators of practice health."
@@ -94,3 +94,9 @@ faqs:
 <p>Regular benchmarking helps track progress over time and measure the impact of strategic initiatives. Quarterly reviews allow for course corrections before issues significantly impact performance.</p>
 
 <p>Consider engaging specialists who understand both legal sector dynamics and <a href="/sra-compliance">regulatory requirements</a> when interpreting benchmarking data and developing improvement strategies.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to cash flow management, lock-up reduction, and working capital.</p>
+<p><a href="/blog/practice-finance-cash-flow" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Finance Guide →</a></p>
+</div>

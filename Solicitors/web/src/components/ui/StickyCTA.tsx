@@ -41,8 +41,11 @@ export function StickyCTA() {
           </p>
         </div>
         <div className="flex items-center gap-3">
-          <Link href="/contact" className={`${btnPrimary} text-sm`}>
-            {niche.cta.sticky_button}
+          <Link 
+            href="/contact" 
+            className="inline-flex items-center justify-center min-h-[44px] rounded-full border-2 border-[var(--primary)] bg-white px-5 text-sm font-semibold tracking-tight text-[var(--primary)] transition-all duration-200 hover:bg-[var(--primary)] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]"
+          >
+            Book a call
           </Link>
           <button
             onClick={() => setDismissed(true)}
