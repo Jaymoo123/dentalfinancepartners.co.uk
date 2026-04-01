@@ -151,7 +151,7 @@ export default function HomePage() {
       <section
         className={sectionYLoose}
         style={{
-          background: "linear-gradient(135deg, rgba(196, 30, 58, 0.75) 0%, rgba(160, 24, 41, 0.80) 100%), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070') center/cover",
+          background: "linear-gradient(135deg, rgba(196, 30, 58, 0.75) 0%, rgba(160, 24, 41, 0.80) 100%), url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070') center/cover",
           color: "white",
         }}
       >
