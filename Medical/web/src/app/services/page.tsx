@@ -23,32 +23,32 @@ const sections = [
   {
     title: "GP Tax & Accounts",
     body: "Year-end accounts and tax returns tailored for GPs, whether salaried or partners. We handle NHS and private income splits, partnership profit shares, and ensure full compliance with HMRC and NHS pension reporting.",
-    links: [{ href: "/blog/gp-partnership-accounts-tax-uk", label: "GP partnership accounts" }],
+    links: [{ href: "/blog/gp-partnership-tax-complete-guide", label: "GP partnership tax guide" }],
   },
   {
     title: "NHS Pension Planning",
     body: "Expert advice on NHS pension contributions, annual allowance issues, and lifetime allowance planning. We help you optimise your pension growth while managing tax implications effectively.",
-    links: [{ href: "/blog/nhs-pension-annual-allowance-advice", label: "Annual allowance guidance" }],
+    links: [{ href: "/blog/nhs-pension-annual-allowance-complete-guide", label: "Annual allowance guidance" }],
   },
   {
     title: "Locum Tax & Compliance",
     body: "Tax planning and Self Assessment support for locum doctors. We specialise in managing multiple income streams, claiming professional expenses correctly, and ensuring efficient tax payments across engagements.",
-    links: [{ href: "/blog/locum-doctor-expenses-tax-uk", label: "Locum expenses guide" }],
+    links: [{ href: "/blog/locum-doctor-expenses-what-you-can-claim", label: "Locum expenses guide" }],
   },
   {
     title: "Private Practice Incorporation",
     body: "Structured advice on setting up a limited company for your private practice. We cover profit extraction, corporation tax planning, and maintaining optimal tax efficiency between personal and business finances.",
-    links: [{ href: "/blog/private-practice-incorporation-uk", label: "Incorporation pros and cons" }],
+    links: [{ href: "/blog/private-practice-incorporation-complete-guide", label: "Incorporation guide" }],
   },
   {
     title: "Medical Expense Claims",
     body: "Maximising legitimate expense claims for medical professionals, including professional subscriptions, indemnity insurance, equipment, and travel. We ensure claims are robust and fully compliant with HMRC rules.",
-    links: [],
+    links: [{ href: "/blog/medical-professional-expenses-what-is-claimable", label: "Claimable expenses" }],
   },
   {
     title: "Consultant Tax Planning",
     body: "Comprehensive tax services for hospital consultants balancing NHS work, private practice, and additional roles. We coordinate multiple income sources, pension contributions, and personal tax liabilities.",
-    links: [{ href: "/blog/consultant-tax-planning-uk", label: "Consultant tax strategies" }],
+    links: [],
   },
 ];
 

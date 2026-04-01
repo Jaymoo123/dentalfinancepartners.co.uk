@@ -25,9 +25,9 @@ export const metadata: Metadata = {
 };
 
 const PRACTICAL_SLUGS = [
-  "nhs-pension-annual-allowance-gp",
-  "locum-doctor-tax-self-assessment-uk",
-  "incorporating-private-practice-uk",
+  "nhs-pension-annual-allowance-complete-guide",
+  "locum-doctor-tax-complete-guide",
+  "private-practice-incorporation-complete-guide",
 ] as const;
 
 const realityPoints = [
@@ -162,8 +162,8 @@ export default function HomePage() {
             <BrandLogoHero />
           </div>
           <h1 className="hero-reveal-delay display-serif mt-8 max-w-4xl text-[1.75rem] font-semibold leading-[1.15] tracking-tight text-white sm:text-4xl md:text-[2.75rem] md:leading-[1.1]">
-            <span className="block">Specialist Accountants for GPs & Medical Professionals</span>
-            <span className="block">UK medical professionals.</span>
+            <span className="block">Specialist Accountants for</span>
+            <span className="block">GPs & Medical Professionals</span>
           </h1>
           <p className="hero-reveal-delay-2 mt-6 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-lg">
             GP accountants and medical accounting specialists exclusively for UK doctors. We handle NHS pension complexities, locum tax returns, private practice structures, and medical expense claims. Our entire client base is medical—GPs, consultants, and practice owners who need a specialist GP accountant with sector-specific financial expertise.

@@ -74,17 +74,17 @@ export default function AboutPage() {
         </Link>{" "}
         is written specifically for medical professionals who need UK-specific tax insights and medical accounting guidance — not generic financial tips. Every article is researched, fact-checked, and written by accountants who work with doctors daily. Topics include NHS pension annual allowance planning, locum tax deductions, private practice incorporation, medical expense claims, and GP partnership accounting. Start with our foundational guides on{" "}
         <Link
-          href="/blog/nhs-pension-annual-allowance-planning"
+          href="/blog/nhs-pension-annual-allowance-complete-guide"
           className={`text-[var(--accent-strong)] underline ${focusRing} rounded`}
         >
           NHS pension annual allowance planning
         </Link>{" "}
         or{" "}
         <Link
-          href="/blog/locum-doctor-tax-deductions-uk"
+          href="/blog/locum-doctor-tax-complete-guide"
           className={`text-[var(--accent-strong)] underline ${focusRing} rounded`}
         >
-          locum doctor tax deductions
+          locum doctor tax guide
         </Link>
         .
       </p>
