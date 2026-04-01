@@ -23,20 +23,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cityName = slug.charAt(0).toUpperCase() + slug.slice(1);
   const canonical = `${siteConfig.url}/locations/${loc.slug}`;
   return {
-    title: `GP Accountant ${cityName} | Medical Accountants UK`,
-    description: `Specialist GP accountant in ${cityName} for doctors, consultants & medical practices. NHS pension planning, locum tax, private practice incorporation. Book free consultation.`,
+    title: `Solicitor Accountant ${cityName} | Law Firm Accountants UK`,
+    description: `Specialist solicitor accountant in ${cityName} for law firms, sole practitioners & legal practices. SRA compliance, partnership tax, LLP conversion. Book free consultation.`,
     alternates: { canonical },
     openGraph: {
-      title: `GP Accountant ${cityName} | Medical Accountants UK`,
-      description: `Specialist GP accountant in ${cityName}. NHS pension planning, locum tax, private practice advice.`,
+      title: `Solicitor Accountant ${cityName} | Accounts for Lawyers`,
+      description: `Specialist solicitor accountant in ${cityName}. SRA compliance, partnership tax, practice succession advice.`,
       url: canonical,
       type: "website",
       images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
     },
     twitter: {
       card: "summary_large_image",
-      title: `GP Accountant ${cityName}`,
-      description: `Specialist GP accountant in ${cityName} for medical professionals.`,
+      title: `Solicitor Accountant ${cityName}`,
+      description: `Specialist solicitor accountant in ${cityName} for legal professionals.`,
       images: [siteConfig.publisherLogoUrl],
     },
   };
@@ -49,97 +49,97 @@ const cityContent: Record<string, {
   services: { title: string; desc: string }[];
 }> = {
   london: {
-    intro: "We're specialist medical accountants serving GPs, consultants, and medical practice owners across London. Whether you're based in Harley Street, the City, Canary Wharf, or anywhere across Greater London, we provide expert GP accounting and tax services tailored to medical professionals.",
-    areas: "We work with doctors across Central London, North London, South London, East London, and West London — including Westminster, Camden, Islington, Hackney, Tower Hamlets, Southwark, Lambeth, Wandsworth, Hammersmith & Fulham, Kensington & Chelsea, and surrounding boroughs.",
-    whyLocal: "London has the highest concentration of medical professionals in the UK, from GP surgeries in every borough to major teaching hospitals and private consulting rooms. We understand the London medical landscape, including higher practice costs, competitive private markets, and the complex mix of NHS and private income streams.",
+    intro: "We're specialist solicitor accountants serving law firms, sole practitioners, and legal practice owners across London. Whether you're based in the City, West End, Canary Wharf, or anywhere across Greater London, we provide expert legal sector accounting and tax services.",
+    areas: "We work with solicitors across Central London, North London, South London, East London, and West London — including the City, Westminster, Camden, Islington, Southwark, Lambeth, Wandsworth, and surrounding boroughs.",
+    whyLocal: "London has the highest concentration of law firms in the UK, from Magic Circle firms in the City to high street practices in every borough. We understand the London legal landscape, including complex partnership structures, high practice costs, and the competitive market for legal services.",
     services: [
       {
-        title: "GP partnership accounting",
-        desc: "London GP practices often have complex partnership structures with multiple partners and salaried GPs. We handle partnership accounts, profit allocation, tax returns, and NHS pension reconciliation.",
+        title: "SRA compliance & trust accounting",
+        desc: "London law firms need rigorous client money handling and SRA Accounts Rules compliance. We provide 5-week reconciliations, Accountant's Reports, and COFA support for practices of all sizes.",
       },
       {
-        title: "Consultant tax planning",
-        desc: "For London consultants balancing NHS hospital work with private practice, we manage your mixed income streams, optimize tax efficiency, and handle NHS pension annual allowance complexities.",
+        title: "Partnership & LLP tax",
+        desc: "For London law firms with complex partnership structures or considering LLP conversion, we handle partnership tax returns, profit allocations, and structure optimization advice.",
       },
       {
-        title: "Locum doctor tax returns",
-        desc: "London locums working across multiple practices need specialist tax support. We handle self assessment, expense claims, payment on account, and advise on VAT registration thresholds.",
+        title: "Practice succession planning",
+        desc: "London practices need expert succession planning for partner retirements and practice sales. We provide valuations, tax planning, and exit strategy advice.",
       },
     ],
   },
   manchester: {
-    intro: "We're specialist medical accountants serving GPs, consultants, and medical practice owners across Manchester. Whether you're based in the City Centre, Salford, Trafford, or anywhere across Greater Manchester, we provide expert GP accounting and tax services for medical professionals.",
-    areas: "We work with doctors across Manchester City Centre, Salford, Trafford, Stockport, Oldham, Rochdale, Bury, Bolton, Wigan, and surrounding areas of Greater Manchester.",
-    whyLocal: "Manchester's medical sector is thriving, with a strong mix of NHS GP surgeries, private clinics, and teaching hospitals. We understand the local healthcare landscape and the specific financial challenges Manchester-based doctors face, from practice management to private work alongside NHS commitments.",
+    intro: "We're specialist solicitor accountants serving law firms, sole practitioners, and legal practice owners across Manchester. Whether you're based in Spinningfields, the City Centre, or anywhere across Greater Manchester, we provide expert legal sector accounting and tax services.",
+    areas: "We work with solicitors across Manchester City Centre, Salford, Trafford, Stockport, Oldham, Rochdale, Bury, Bolton, Wigan, and surrounding areas of Greater Manchester.",
+    whyLocal: "Manchester's legal sector is thriving, with major commercial firms in Spinningfields and established high street practices throughout the region. We understand the local legal market and the specific financial challenges Manchester-based solicitors face.",
     services: [
       {
-        title: "GP partnership accounting",
-        desc: "Manchester GP practices range from small partnerships to large multi-site operations. We handle partnership accounts, profit shares, tax returns, and NHS pension reporting.",
+        title: "SRA compliance & trust accounting",
+        desc: "Manchester law firms require expert client money handling and SRA compliance. We provide reconciliations, Accountant's Reports, and regulatory support.",
       },
       {
-        title: "Consultant tax planning",
-        desc: "For Manchester consultants with NHS and private income, we manage your tax position, optimize pension contributions, and handle annual allowance calculations.",
+        title: "Partnership & LLP tax",
+        desc: "For Manchester law firms navigating partnership taxation or LLP conversion, we handle tax returns, profit allocations, and structure advice.",
       },
       {
-        title: "Locum doctor tax returns",
-        desc: "Manchester locums need reliable tax support for multiple income sources. We handle self assessment, expense optimization, and quarterly tax planning.",
+        title: "Sole practitioner tax",
+        desc: "Manchester sole practitioners need reliable self-assessment and MTD compliance support. We handle tax returns, expense optimization, and quarterly submissions.",
       },
     ],
   },
   birmingham: {
-    intro: "We're specialist medical accountants serving GPs, consultants, and medical practice owners across Birmingham. Whether you're in the City Centre, Edgbaston, Solihull, or anywhere across the West Midlands, we provide expert GP accounting and tax services for medical professionals.",
-    areas: "We work with doctors across Birmingham City Centre, Edgbaston, Solihull, Sutton Coldfield, Dudley, Sandwell, Walsall, Wolverhampton, and the wider West Midlands region.",
-    whyLocal: "Birmingham is a major medical hub with diverse GP practices, teaching hospitals, and private clinics. We understand the local healthcare economy and the financial needs of Birmingham-based doctors, from NHS contract management to private practice growth.",
+    intro: "We're specialist solicitor accountants serving law firms, sole practitioners, and legal practice owners across Birmingham. Whether you're in Colmore Row, the City Centre, or anywhere across the West Midlands, we provide expert legal sector accounting and tax services.",
+    areas: "We work with solicitors across Birmingham City Centre, Colmore Row, Edgbaston, Solihull, Sutton Coldfield, Dudley, Sandwell, Walsall, Wolverhampton, and the wider West Midlands region.",
+    whyLocal: "Birmingham is a major legal hub with diverse law firms from large commercial practices to established high street firms. We understand the West Midlands legal market and the financial needs of Birmingham-based solicitors.",
     services: [
       {
-        title: "GP partnership accounting",
-        desc: "Birmingham GP practices need specialist accounting for partnership structures, profit allocation, and NHS pension reconciliation. We provide year-round support and strategic tax advice.",
+        title: "SRA compliance & trust accounting",
+        desc: "Birmingham law firms need rigorous SRA Accounts Rules compliance and client money handling. We provide reconciliations, Accountant's Reports, and COFA support.",
       },
       {
-        title: "Consultant tax planning",
-        desc: "For Birmingham consultants managing NHS and private work, we handle tax returns, pension planning, and income optimization across multiple revenue streams.",
+        title: "Partnership & LLP tax",
+        desc: "For Birmingham law firms with partnership or LLP structures, we handle tax returns, profit allocations, and structure optimization advice.",
       },
       {
-        title: "Locum doctor tax returns",
-        desc: "Birmingham locums working across the West Midlands need expert tax support. We manage self assessment, expense claims, and tax efficiency strategies.",
+        title: "Practice finance & cash flow",
+        desc: "Birmingham practices need expert cash flow management and lock-up reduction strategies. We provide working capital advice and partner drawings planning.",
       },
     ],
   },
   leeds: {
-    intro: "We're specialist medical accountants serving GPs, consultants, and medical practice owners across Leeds. Whether you're in the City Centre, Chapel Allerton, Roundhay, or anywhere across West Yorkshire, we provide expert GP accounting and tax services for medical professionals.",
-    areas: "We work with doctors across Leeds City Centre, Chapel Allerton, Roundhay, Headingley, Horsforth, Wetherby, and the wider West Yorkshire region including Bradford, Wakefield, and Huddersfield.",
-    whyLocal: "Leeds has a strong medical sector with established GP practices, teaching hospitals, and growing private healthcare provision. We understand the Yorkshire healthcare landscape and the financial priorities of Leeds-based doctors.",
+    intro: "We're specialist solicitor accountants serving law firms, sole practitioners, and legal practice owners across Leeds. Whether you're in the City Centre, Chapel Allerton, or anywhere across West Yorkshire, we provide expert legal sector accounting and tax services.",
+    areas: "We work with solicitors across Leeds City Centre, Chapel Allerton, Headingley, Horsforth, Wetherby, and the wider West Yorkshire region including Bradford, Wakefield, and Huddersfield.",
+    whyLocal: "Leeds has a strong legal sector with established commercial firms and thriving high street practices. We understand the Yorkshire legal market and the financial priorities of Leeds-based solicitors.",
     services: [
       {
-        title: "GP partnership accounting",
-        desc: "Leeds GP practices benefit from specialist accounting for partnership structures, NHS contract management, and tax-efficient profit extraction. We provide comprehensive year-round support.",
+        title: "SRA compliance & trust accounting",
+        desc: "Leeds law firms require expert SRA Accounts Rules compliance and client money management. We provide reconciliations, Accountant's Reports, and regulatory guidance.",
       },
       {
-        title: "Consultant tax planning",
-        desc: "For Leeds consultants with NHS hospital roles and private practice work, we manage your tax position, pension contributions, and annual allowance calculations.",
+        title: "Partnership & LLP tax",
+        desc: "For Leeds law firms with partnership structures or considering LLP conversion, we handle tax returns, profit allocations, and structure advice.",
       },
       {
-        title: "Locum doctor tax returns",
-        desc: "Leeds locums need reliable tax support for multiple engagements. We handle self assessment, expense optimization, and payment on account management.",
+        title: "Sole practitioner tax",
+        desc: "Leeds sole practitioners benefit from specialist self-assessment, MTD compliance, and tax planning support tailored to legal professionals.",
       },
     ],
   },
   bristol: {
-    intro: "We're specialist medical accountants serving GPs, consultants, and medical practice owners across Bristol. Whether you're in Clifton, the City Centre, or anywhere across the South West, we provide expert GP accounting and tax services for medical professionals.",
-    areas: "We work with doctors across Bristol City Centre, Clifton, Redland, Westbury-on-Trym, and the wider South West region including Bath, Gloucester, Cheltenham, and Exeter.",
-    whyLocal: "Bristol's medical sector combines established GP practices with innovative private healthcare providers. We understand the South West healthcare market and the financial needs of Bristol-based doctors, from practice management to private work expansion.",
+    intro: "We're specialist solicitor accountants serving law firms, sole practitioners, and legal practice owners across Bristol. Whether you're in the City Centre, Clifton, or anywhere across the South West, we provide expert legal sector accounting and tax services.",
+    areas: "We work with solicitors across Bristol City Centre, Clifton, Redland, Westbury-on-Trym, and the wider South West region including Bath, Gloucester, Cheltenham, and Exeter.",
+    whyLocal: "Bristol's legal sector combines established commercial firms with innovative high street practices. We understand the South West legal market and the financial needs of Bristol-based solicitors, from SRA compliance to practice growth.",
     services: [
       {
-        title: "GP partnership accounting",
-        desc: "Bristol GP practices need specialist support for partnership accounts, profit allocation, and NHS pension planning. We provide strategic tax advice and year-round financial guidance.",
+        title: "SRA compliance & trust accounting",
+        desc: "Bristol law firms need rigorous client money handling and SRA compliance. We provide 5-week reconciliations, Accountant's Reports, and COFA support.",
       },
       {
-        title: "Consultant tax planning",
-        desc: "For Bristol consultants managing NHS and private income, we handle tax returns, pension optimization, and income structuring across multiple roles.",
+        title: "Partnership & LLP tax",
+        desc: "For Bristol law firms managing partnership taxation or LLP structures, we handle tax returns, profit allocations, and structure optimization.",
       },
       {
-        title: "Locum doctor tax returns",
-        desc: "Bristol locums working across the South West need expert tax management. We handle self assessment, expense claims, and tax efficiency planning.",
+        title: "Practice succession planning",
+        desc: "Bristol practices need expert succession planning for partner retirements and practice transitions. We provide valuations, tax planning, and exit strategies.",
       },
     ],
   },
@@ -148,32 +148,41 @@ const cityContent: Record<string, {
 export default async function LocationPage({ params }: Props) {
   const { slug } = await params;
   const loc = siteConfig.locations.find((l) => l.slug === slug);
+  
   if (!loc) {
     notFound();
   }
-
-  const content = cityContent[slug];
+  
   const cityName = slug.charAt(0).toUpperCase() + slug.slice(1);
-  const posts = getAllPosts().slice(0, 3);
-
-  const jsonLd = buildLocalBusinessJsonLd({
+  const content = cityContent[slug];
+  
+  if (!content) {
+    notFound();
+  }
+  
+  const allPosts = getAllPosts();
+  const localPosts = allPosts.filter((p) =>
+    p.slug.toLowerCase().includes(slug) || p.title.toLowerCase().includes(cityName.toLowerCase())
+  );
+  
+  const localBusinessSchema = buildLocalBusinessJsonLd({
     name: siteConfig.name,
     legalName: siteConfig.legalName,
     description: siteConfig.description,
-    city: cityName,
     url: `${siteConfig.url}/locations/${slug}`,
-    logo: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
+    logo: siteConfig.publisherLogoUrl,
     email: siteConfig.contact.email,
     phone: siteConfig.contact.phone,
-    areaServed: cityName,
+    areaServed: content.areas,
+    city: cityName,
     organizationType: "ProfessionalService",
   });
-
+  
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: jsonLd }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       <div className={`${contentNarrow} ${sectionY}`}>
         <Breadcrumb
@@ -183,75 +192,93 @@ export default async function LocationPage({ params }: Props) {
             { label: cityName },
           ]}
         />
+        
         <h1 className="font-serif text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
-          GP Accountant {cityName}
+          {loc.title}
         </h1>
+        
         <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
           {content.intro}
         </p>
-
-        <div className="mt-10 rounded-2xl border border-[var(--medical-teal)]/20 bg-gradient-to-br from-[var(--medical-teal)]/5 to-transparent p-6 sm:mt-12 sm:p-8">
+        
+        <div className="mt-10 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
           <h2 className="font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">
-            Areas we serve in {cityName}
+            Areas we cover
           </h2>
-          <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
+          <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
             {content.areas}
           </p>
         </div>
-
-        <section className="mt-12 sm:mt-16">
+        
+        <div className="mt-10">
           <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
-            Medical accounting services in {cityName}
+            Why choose a specialist solicitor accountant in {cityName}?
           </h2>
           <p className="mt-4 text-base leading-relaxed text-[var(--muted)]">
             {content.whyLocal}
           </p>
-          <div className="mt-8 space-y-6 sm:mt-10">
-            {content.services.map((service) => (
-              <div key={service.title} className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
-                <h3 className="font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">
+        </div>
+        
+        <div className="mt-10">
+          <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+            Services for {cityName} solicitors
+          </h2>
+          <div className="mt-6 space-y-6">
+            {content.services.map((service, i) => (
+              <div key={i} className="card-flat">
+                <h3 className="text-lg font-semibold text-[var(--primary)]">
                   {service.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
+                <p className="mt-2 text-sm leading-relaxed text-[var(--ink-soft)]">
                   {service.desc}
                 </p>
               </div>
             ))}
           </div>
-        </section>
-
-        {posts.length > 0 && (
-          <section className="mt-12 sm:mt-16">
-            <h2 className="font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">
-              Related articles
+        </div>
+        
+        {localPosts.length > 0 && (
+          <div className="mt-12">
+            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+              {cityName} solicitor accounting guides
             </h2>
-            <ul className="mt-6 space-y-4">
-              {posts.map((p) => (
-                <li key={p.slug}>
-                  <article className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 sm:p-6">
-                    <p className="text-xs font-semibold uppercase tracking-wide text-[var(--accent-strong)]">
-                      {p.category}
-                    </p>
-                    <h3 className="mt-2 font-serif text-base font-semibold text-[var(--ink)] sm:text-lg">
-                      <Link
-                        href={`/blog/${p.slug}`}
-                        className={`hover:text-[var(--accent-strong)] transition-colors ${focusRing} rounded`}
-                      >
-                        {p.title}
-                      </Link>
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">{p.summary}</p>
-                  </article>
+            <ul className="mt-6 space-y-4 pl-0">
+              {localPosts.slice(0, 5).map((post) => (
+                <li key={post.slug} className="list-none">
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className={`card-flat block rounded-lg p-4 no-underline transition-shadow hover:shadow-md ${focusRing}`}
+                  >
+                    <span className="font-semibold text-[var(--primary)]">{post.title}</span>
+                    {post.summary && (
+                      <span className="mt-2 block text-sm text-[var(--muted)]">{post.summary}</span>
+                    )}
+                  </Link>
                 </li>
               ))}
             </ul>
-          </section>
+          </div>
         )}
-
-        <div className="mt-12 sm:mt-16">
+        
+        <div className="mt-12 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
+          <h2 className="font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">
+            Remote service for {cityName} solicitors
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
+            While we work with many {cityName}-based solicitors and law firms, all our services are available remotely. SRA compliance reviews, partnership tax returns, and practice succession planning can be handled efficiently with secure document sharing and video calls. You don't need to be based in {cityName} to benefit from specialist legal sector accounting.
+          </p>
+        </div>
+        
+        <div className="mt-10 text-center">
+          <Link href="/contact" className={btnPrimary}>
+            Book free consultation
+          </Link>
+        </div>
+        
+        <div className="mt-12">
           <CTASection
-            title={`Book a consultation with a ${cityName} medical accountant`}
-            description="Tell us about your role and financial priorities. We'll arrange a short introductory call to discuss how we can support your medical practice."
+            title={`Ready to work with a specialist solicitor accountant in ${cityName}?`}
+            description="Book a free consultation to discuss your practice's accounting needs. We'll provide clear advice with no obligation."
           />
         </div>
       </div>

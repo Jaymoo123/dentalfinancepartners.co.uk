@@ -7,12 +7,12 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 
 export const metadata: Metadata = {
-  title: "GP Accountants by Location | Medical Accounting Specialists UK",
-  description: `${siteConfig.name} — specialist GP accounting and medical tax services across major UK cities. Find your local medical accountant.`,
+  title: "Solicitor Accountants by Location | Law Firm Accounting Specialists UK",
+  description: `${siteConfig.name} — specialist solicitor accounting and law firm tax services across major UK cities. Find your local legal sector accountant.`,
   alternates: { canonical: `${siteConfig.url}/locations` },
   openGraph: {
-    title: "GP Accountants by Location | UK Medical Accounting",
-    description: `Specialist GP accounting and medical tax services across major UK cities. NHS pension planning, locum tax, private practice advice.`,
+    title: "Solicitor Accountants by Location | UK Legal Sector Accounting",
+    description: `Specialist solicitor accounting and law firm tax services across major UK cities. SRA compliance, partnership tax, LLP conversion advice.`,
     url: `${siteConfig.url}/locations`,
     type: "website",
   },
@@ -43,10 +43,10 @@ export default function LocationsHubPage() {
         ]}
       />
       <h1 className="font-serif text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
-        GP accountants across the UK
+        Solicitor accountants across the UK
       </h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-        We work with GPs, consultants, and locum doctors throughout the UK. Explore location-specific pages for context on local medical accounting services, then contact us to discuss your specific needs.
+        We work with solicitors, law firm partners, and legal practitioners throughout the UK. Explore location-specific pages for context on local legal sector accounting services, then contact us to discuss your specific needs.
       </p>
 
       <ul className="mt-10 grid list-none gap-4 pl-0 sm:mt-12 sm:grid-cols-2 sm:gap-6">
@@ -70,17 +70,17 @@ export default function LocationsHubPage() {
 
       <div className="mt-12 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
         <h2 className="font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">
-          Remote service for all UK doctors
+          Remote service for all UK solicitors
         </h2>
         <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
-          While we highlight major cities, we work with medical professionals throughout England, Scotland, Wales, and Northern Ireland. NHS pension planning, locum tax returns, and private practice accounting can all be handled remotely with secure document sharing and video calls.
+          While we highlight major cities, we work with solicitors and law firms throughout England and Wales. SRA compliance, partnership tax returns, and practice succession planning can all be handled remotely with secure document sharing and video calls.
         </p>
       </div>
 
       <div className="mt-12">
         <CTASection
           title="Not based in these cities?"
-          description="We work with GPs and consultants nationwide. Contact us to discuss your medical accounting needs regardless of location."
+          description="We work with solicitors and law firms nationwide. Contact us to discuss your legal practice accounting needs regardless of location."
         />
       </div>
     </div>

@@ -6,14 +6,14 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Medical Accounting Blog | GP Tax & NHS Pension Advice",
+  title: "Legal Sector Accounting Blog | Solicitor Tax & SRA Compliance Advice",
   description:
-    "Expert articles on GP tax planning, NHS pension annual allowance, locum tax returns, and private practice accounting. Written by medical accounting specialists for UK doctors.",
+    "Expert articles on SRA compliance, partnership tax, LLP conversion, and practice succession. Written by solicitor accounting specialists for UK law firms.",
   alternates: { canonical: `${siteConfig.url}/blog` },
   openGraph: {
-    title: "Medical Accounting Blog | GP Tax & NHS Pension Advice",
+    title: "Legal Sector Accounting Blog | Solicitor Tax & SRA Compliance Advice",
     description:
-      "Expert articles on GP tax planning, NHS pension annual allowance, locum tax returns, and private practice accounting for UK doctors.",
+      "Expert articles on SRA compliance, partnership tax, LLP conversion, and practice succession for UK solicitors and law firms.",
     url: `${siteConfig.url}/blog`,
     type: "website",
   },
@@ -31,10 +31,10 @@ export default function BlogIndexPage() {
         ]}
       />
       <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">
-        Medical accounting insights for UK doctors
+        Legal sector accounting insights for UK solicitors
       </h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-        In-depth guidance on GP tax planning, NHS pension complexities, locum tax returns, and private practice structures. Written specifically for medical professionals navigating UK tax regulations.
+        In-depth guidance on SRA Accounts Rules compliance, partnership tax planning, LLP conversion, and practice succession. Written specifically for solicitors and law firms navigating UK tax regulations and legal sector accounting.
       </p>
       {posts.length === 0 ? (
         <div className="mt-8 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-8 text-center">

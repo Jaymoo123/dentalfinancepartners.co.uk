@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
         <p>We may collect the following types of personal information:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>
-            <strong>Contact form submissions:</strong> When you submit an enquiry through our contact form, we collect your full name, email address, phone number, role (e.g., GP partner, locum doctor, consultant), practice name (optional), message content, and the URL of the page you submitted from.
+            <strong>Contact form submissions:</strong> When you submit an enquiry through our contact form, we collect your full name, email address, phone number, role (e.g., sole practitioner, law firm partner, practice manager), practice name (optional), message content, and the URL of the page you submitted from.
           </li>
           <li>
             <strong>Analytics data:</strong> We use Google Analytics to understand how visitors use our Site. This includes your IP address (anonymized), browser type, device type, pages visited, time spent on pages, and referral source. Google Analytics uses cookies to collect this information.
