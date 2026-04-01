@@ -40,12 +40,12 @@ def run_generation(count: int, delay_seconds: int = 5):
             )
             
             if result.returncode == 0:
+                if "No unused topics found" in result.stdout or "No topics available" in result.stdout:
+                    print("[INFO] No more topics available - stopping generation")
+                    break
+                
                 successful += 1
                 print(f"[OK] Post {i} generated successfully")
-                
-                if "No unused topics found" in result.stdout:
-                    print("[INFO] No more topics available")
-                    break
             else:
                 failed += 1
                 print(f"[ERROR] Post {i} failed")

@@ -1,4 +1,4 @@
-﻿"""
+"""
 Batch generate remaining Medical blog posts (Phase 2 specialized content).
 """
 import subprocess
@@ -17,12 +17,16 @@ for i in range(BATCH_SIZE):
         result = subprocess.run(
             ['python', 'Medical/generate_blog_supabase.py'],
             cwd='.',
-            capture_output=False,
+            capture_output=True,
             text=True,
             timeout=120
         )
         
         if result.returncode == 0:
+            if "No unused topics found" in result.stdout or "No topics available" in result.stdout:
+                print(f'[{i+1}/{BATCH_SIZE}] No more topics available - stopping generation')
+                break
+            
             print(f'[{i+1}/{BATCH_SIZE}] SUCCESS')
         else:
             print(f'[{i+1}/{BATCH_SIZE}] FAILED with return code {result.returncode}')
