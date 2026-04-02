@@ -1,0 +1,124 @@
+---
+description: Full project context for the Accounting monorepo - 4 niche accountancy sites
+alwaysApply: true
+---
+
+# Project Context
+
+Monorepo containing 4 UK niche accountancy websites. All live, deployed on Vercel, sharing a common architecture.
+
+## Sites
+
+| Site | Domain | niche_id | Blog URL pattern | Posts |
+|------|--------|----------|-----------------|-------|
+| Property Tax Partners | propertytaxpartners.co.uk | property | /blog/{category}/{slug} | 85 |
+| Dental Finance Partners | dentalfinancepartners.co.uk | dentists | /blog/{category}/{slug} | 55 |
+| Medical Accountants UK | medicalaccountantsuk.co.uk | medical | /blog/{slug} (flat) | 46 |
+| Accounts for Lawyers | accountsforlawyers.co.uk | solicitors | /blog/{category}/{slug} | 50 |
+
+Medical uses flat blog URLs. The other 3 use /blog/{category-slug}/{post-slug}.
+
+## Tech Stack
+
+- Next.js 15 + React 19 + TypeScript + Tailwind 4
+- App Router (src/app/)
+- Supabase (leads, blog topics)
+- Vercel deployment
+- Python (Anthropic API) for blog content generation
+- GSC/GA4 integration via agents/
+
+## Folder Structure
+
+```
+Accounting/
+├── Property/              # Each site follows this pattern:
+│   ├── niche.config.json  #   Site config (domain, brand, categories, SEO)
+│   ├── web/               #   Next.js app
+│   │   ├── src/app/       #     Pages (App Router)
+│   │   ├── src/lib/       #     blog.ts, schema.ts, local-business-schema.ts
+│   │   ├── src/config/    #     site.ts, niche-loader.ts
+│   │   ├── src/components/#     UI components
+│   │   └── content/blog/  #     Markdown blog posts with YAML front matter
+│   └── pipeline/          #   Python blog generation scripts
+├── Dentists/              # Same structure as Property
+├── Medical/               # Same structure (flat blog URLs, no category in path)
+├── Solicitors/            # Same structure as Property
+├── shared/
+│   └── web-core/          #   Shared TS: schema.ts, blog.ts, components
+├── agents/                # Python agent system (GSC, blog gen, analytics)
+├── scripts/               # Utility scripts (Batch/Canonicals/Database/Generation/Import/Migration/Monitoring/Testing)
+├── supabase/              # DB migrations + applied SQL
+├── Admin/                 # Audit doc + Topics (keyword CSVs) + archive
+├── secrets/               # GSC credentials (gitignored)
+├── templates/             # Niche generation templates
+├── shared_supabase_config.py  # Shared Python DB config (must stay at root - 22 scripts depend on it via sys.path)
+└── .env / .env.local      # Environment variables (gitignored)
+```
+
+## Critical: slugifyCategory Differences
+
+**Property & Dentists** replace `&` with `and`:
+```
+"Section 24 & Tax Relief" → "section-24-and-tax-relief"
+"VAT & compliance" → "vat-and-compliance"
+```
+
+**Solicitors** strips `&` entirely:
+```
+"SRA Compliance & Trust Accounting" → "sra-compliance-trust-accounting"
+"VAT & Compliance" → "vat-compliance"
+```
+
+**Medical** does not use category slugs in URLs (flat /blog/{slug}).
+
+## Blog Post Front Matter
+
+Markdown files in `{Site}/web/content/blog/*.md`:
+```yaml
+title: "Post Title"
+slug: "post-slug"
+canonical: "https://domain/blog/[category-slug/]slug"
+metaTitle: "SEO Title | Brand"
+metaDescription: "Description"
+category: "Category Name"
+date: "2026-04-01"
+author: "Brand Editorial Team"
+image: ""
+faqs: [{q: "...", a: "..."}]
+schema: "BlogPosting"
+```
+
+## Key Files Per Site
+
+- `niche.config.json` — loaded by web via `src/config/niche-loader.ts` (import from `../../../niche.config.json`)
+- `src/lib/blog.ts` — getAllPosts(), getPostBySlug(), slugifyCategory(), getCategorySlug()
+- `src/lib/schema.ts` — buildBlogPostingJsonLd(), buildOgImageUrl() (Person author, dynamic OG images)
+- `src/lib/local-business-schema.ts` — buildLocalBusinessJsonLd() for location pages
+- `src/app/blog/[category]/[slug]/page.tsx` — blog post pages (Property/Dentists/Solicitors)
+- `src/app/blog/[slug]/page.tsx` — blog post pages (Medical only)
+- `src/app/blog/{category-slug}/page.tsx` — category hub pages (static)
+- `src/app/locations/[slug]/page.tsx` — location pages with LocalBusiness schema
+- `src/app/api/og/route.tsx` — dynamic OG image generation (edge runtime)
+- `src/middleware.ts` — redirects for old flat /blog/{slug} URLs to /blog/{category}/{slug}
+
+## Categories
+
+**Property**: Section 24 & Tax Relief, Incorporation & Company Structures, Making Tax Digital (MTD), Capital Gains Tax, Portfolio Management, Property Accountant Services, Landlord Tax Essentials
+
+**Dentists**: Practice accounting, Associate tax, Buying a practice, Practice finance, VAT & compliance
+
+**Medical**: GP Tax & Accounts, GP Accountant Services, GP Practice Management, NHS Pension Planning, Locum Tax, Private Practice, Medical Expenses, Incorporation & Company Structures, Consultant Tax
+
+**Solicitors**: SRA Compliance & Trust Accounting, Sole Practitioner Tax, Partnership & LLP Accounting, VAT & Compliance, Practice Finance & Cash Flow, Practice Succession & Sale, Structure & Incorporation
+
+## Redirect Pattern
+
+Property/Dentists/Solicitors have `permanentRedirect` logic in `[category]/[slug]/page.tsx`: if a slug exists under a different category than the URL, it 301-redirects to the correct URL. Dentists also has `middleware.ts` mapping old flat URLs to category URLs.
+
+## Python Pipeline
+
+Each site's `pipeline/` folder contains blog generation scripts. They use `config_supabase.py` which adds the repo root to `sys.path` to import `shared_supabase_config.py`. The `OUTPUT_MD_DIR` paths are relative to the script location, pointing to `../web/content/blog/`.
+
+## Schema
+
+All sites use Person author type: `"{Brand} Editorial Team"`. BlogPosting schema includes image (falls back to dynamic OG URL), absolute publisher logo, FAQ schema when faqs present. Location pages have LocalBusiness schema with absolute logo URL.
