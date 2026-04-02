@@ -18,30 +18,30 @@ export function SiteFooter() {
           <h2 className="text-lg font-semibold text-white mb-4">Our Specialist Accounting Services</h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <a
-              href="https://accountsfordentists.co.uk"
+              href="https://www.dentalfinancepartners.co.uk"
               target="_blank"
               rel="noopener noreferrer"
               className={`block p-4 rounded-lg bg-white/10 border border-white/20 transition-all hover:bg-white/15 hover:border-white/30 ${focusRing}`}
             >
-              <h3 className="font-semibold text-white">Accounts for Dentists</h3>
+              <h3 className="font-semibold text-white">Dental Finance Partners</h3>
               <p className="mt-1 text-sm text-white/70">Specialist accounting for dental practices</p>
             </a>
             <a
-              href="https://accountsforproperty.co.uk"
+              href="https://www.propertytaxpartners.co.uk"
               target="_blank"
               rel="noopener noreferrer"
               className={`block p-4 rounded-lg bg-white/10 border border-white/20 transition-all hover:bg-white/15 hover:border-white/30 ${focusRing}`}
             >
-              <h3 className="font-semibold text-white">Accounts for Property</h3>
+              <h3 className="font-semibold text-white">Property Tax Partners</h3>
               <p className="mt-1 text-sm text-white/70">Property investor & landlord accounting</p>
             </a>
             <a
-              href="https://medicalaccountants.co.uk"
+              href="https://www.medicalaccountantsuk.co.uk"
               target="_blank"
               rel="noopener noreferrer"
               className={`block p-4 rounded-lg bg-white/10 border border-white/20 transition-all hover:bg-white/15 hover:border-white/30 ${focusRing}`}
             >
-              <h3 className="font-semibold text-white">Medical Accountants</h3>
+              <h3 className="font-semibold text-white">Medical Accountants UK</h3>
               <p className="mt-1 text-sm text-white/70">Accounting for GPs, consultants & medical professionals</p>
             </a>
           </div>

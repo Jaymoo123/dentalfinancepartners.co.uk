@@ -85,3 +85,41 @@ export function getRelatedPosts(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
 }
+
+export function slugifyCategory(category: string): string {
+  return category
+    .toLowerCase()
+    .replace(/[()]/g, "")
+    .replace(/&/g, "and")
+    .replace(/\s+/g, "-")
+    .replace(/--+/g, "-")
+    .trim();
+}
+
+export function getCategorySlug(post: BlogPost): string {
+  return slugifyCategory(post.category);
+}
+
+export function getAllCategories(): Array<{ slug: string; name: string; count: number }> {
+  const posts = getAllPosts();
+  const categoryMap = new Map<string, { name: string; count: number }>();
+
+  for (const post of posts) {
+    const slug = getCategorySlug(post);
+    if (categoryMap.has(slug)) {
+      categoryMap.get(slug)!.count++;
+    } else {
+      categoryMap.set(slug, { name: post.category, count: 1 });
+    }
+  }
+
+  return Array.from(categoryMap.entries())
+    .map(([slug, data]) => ({ slug, name: data.name, count: data.count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function calculateReadTime(html: string): number {
+  const text = html.replace(/<[^>]*>/g, "");
+  const words = text.trim().split(/\s+/).length;
+  return Math.ceil(words / 200);
+}
