@@ -1,6 +1,7 @@
 ---
 title: "NHS Pension Annual Allowance Complete Guide for Medical Professionals"
 slug: "nhs-pension-annual-allowance-complete-guide"
+canonical: ""
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "NHS Pension Planning"
@@ -11,14 +12,11 @@ image: ""
 h1: "NHS Pension Annual Allowance: Complete Guide for UK Medical Professionals"
 summary: "The NHS pension annual allowance limits how much your pension can grow tax-free each year. Understanding these rules is crucial for avoiding unexpected tax charges."
 schema: ""
-canonical: ""
 faqs:
   - question: "What happens if I exceed the NHS pension annual allowance?"
     answer: "You'll face an annual allowance charge taxed at your marginal rate (20%, 40%, or 45%) on the excess amount. If the charge exceeds £2,000, you can elect for the NHS scheme to pay it on your behalf, which is then deducted from your future pension benefits."
   - question: "How is my NHS pension growth calculated for the annual allowance?"
     answer: "Your pension input amount includes increases in annual pension entitlement (multiplied by 16), any lump sum increases, and member contributions paid. For example, a £2,000 increase in annual pension equals £32,000 toward your annual allowance."
-  - question: "What is the tapered annual allowance for high earners?"
-    answer: "If your threshold income exceeds £200,000 and adjusted income exceeds £260,000, your annual allowance reduces by £1 for every £2 of excess adjusted income, down to a minimum of £10,000. This affects many consultants and successful GP partners."
   - question: "Can I use previous years' unused annual allowance?"
     answer: "Yes, through \"carry forward\" you can use unused annual allowance from the previous three tax years to offset current year excesses. This requires careful record-keeping of your allowances and pension growth for each year."
 ---
@@ -26,32 +24,6 @@ faqs:
 <p>The NHS pension annual allowance is one of the most complex tax rules affecting UK medical professionals. This <strong>NHS pension annual allowance complete guide</strong> explains how these limits work, when they apply, and what you can do to manage potential tax charges.</p>
 
 <p>As a GP partner, consultant, or salaried doctor, understanding these rules could save you thousands in unexpected tax bills.</p>
-
-<h2>What is the NHS Pension Annual Allowance?</h2>
-
-<p>The annual allowance limits how much your pension can grow in value each year without triggering a tax charge. For 2025/26, the standard annual allowance is £60,000.</p>
-
-<p>This isn't about how much you contribute to your pension. It's about the total growth in your pension benefits, measured as the "pension input amount" (PIA).</p>
-
-<p>For NHS Pension Scheme members, the PIA calculation includes:</p>
-<ul>
-<li>Increases in your annual pension entitlement (multiplied by 16)</li>
-<li>Any lump sum increases (multiplied by 1)</li>
-<li>Member contributions you've paid</li>
-</ul>
-
-<h2>How the NHS Pension Growth is Calculated</h2>
-
-<p>The NHS uses a specific formula to work out your pension input amount. Here's a simplified example:</p>
-
-<p>Dr Smith, a GP partner, sees her annual pension entitlement increase by £2,000 during 2025/26. Her pension input amount would be:</p>
-<ul>
-<li>Pension increase: £2,000 × 16 = £32,000</li>
-<li>Plus any additional lump sum increases</li>
-<li>Plus member contributions paid</li>
-</ul>
-
-<p>If her total PIA exceeds £60,000, she faces an annual allowance charge on the excess.</p>
 
 <h2>The Tapered Annual Allowance</h2>
 
@@ -71,15 +43,18 @@ faqs:
 
 <p>For every £2 your adjusted income exceeds £260,000, your annual allowance reduces by £1. The minimum allowance is £10,000.</p>
 
-<h2>Annual Allowance Charges</h2>
+<h2>How the NHS Pension Growth is Calculated</h2>
 
-<p>If you exceed your annual allowance, you pay tax on the excess at your marginal rate (20%, 40%, or 45%). The charge applies to the pension scheme member, not the employer.</p>
+<p>The NHS uses a specific formula to work out your pension input amount. Here's a simplified example:</p>
 
-<p>Example: A consultant with £80,000 pension growth and a £60,000 allowance faces a charge on £20,000. At 40% tax rate, that's an £8,000 bill.</p>
+<p>Dr Smith, a GP partner, sees her annual pension entitlement increase by £2,000 during 2025/26. Her pension input amount would be:</p>
+<ul>
+<li>Pension increase: £2,000 × 16 = £32,000</li>
+<li>Plus any additional lump sum increases</li>
+<li>Plus member contributions paid</li>
+</ul>
 
-<h3>Scheme Pays Elections</h3>
-
-<p>If your annual allowance charge exceeds £2,000, you can ask the NHS Pension Scheme to pay the charge on your behalf through "Scheme Pays". The amount paid (plus interest) is then deducted from your future pension benefits.</p>
+<p>If her total PIA exceeds £60,000, she faces an annual allowance charge on the excess.</p>
 
 <h2>Planning Strategies</h2>
 

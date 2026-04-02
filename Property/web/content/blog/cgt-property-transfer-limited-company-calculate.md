@@ -1,7 +1,7 @@
 ---
 title: "CGT on Property Transfer to Limited Company: How to Calculate"
 slug: "cgt-property-transfer-limited-company-calculate"
-canonical: "https://accountsforproperty.co.uk/blog/capital-gains-tax/cgt-property-transfer-limited-company-calculate"
+canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/cgt-property-transfer-limited-company-calculate"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Capital Gains Tax"

@@ -1,12 +1,12 @@
 ---
 title: "Stamp Duty on Buy-to-Let: 5% Surcharge Explained"
 slug: "stamp-duty-buy-to-let-surcharge"
-canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/stamp-duty-buy-to-let-surcharge"
+canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/stamp-duty-buy-to-let-surcharge"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"
 metaTitle: "Stamp Duty Buy to Let: 5% Surcharge Rules & Rates 2025"
-metaDescription: "Complete guide to stamp duty buy to let surcharge rules. Learn the 5% additional rate, exemptions, and how it affects property investment in 2025."
+metaDescription: "Complete guide to stamp duty buy to let surcharge rules. Learn the 5% additional rate, exemptions, and how it affects property investment in 2026."
 altText: "UK property investor calculating stamp duty costs on buy-to-let property purchase"
 image: ""
 h1: "Stamp Duty on Buy-to-Let: 5% Surcharge Explained"
@@ -64,18 +64,6 @@ faqs:
 </ul>
 
 <p>The main residence replacement exemption allows you to complete your purchase first, then sell your existing home within 36 months to claim a refund of the surcharge.</p>
-
-<h2>Calculating Stamp Duty on Buy-to-Let Properties</h2>
-
-<p>Here's how the calculation works for a £400,000 buy-to-let property:</p>
-
-<ul>
-<li><strong>First £250,000:</strong> £250,000 × 8% = £20,000</li>
-<li><strong>Remaining £150,000:</strong> £150,000 × 13% = £19,500</li>
-<li><strong>Total stamp duty:</strong> £39,500</li>
-</ul>
-
-<p>Compare this to the same property as a main residence: £15,000 in stamp duty. The <strong>stamp duty buy to let</strong> surcharge adds £24,500 to your purchase costs.</p>
 
 <h2>Impact on Property Investment Returns</h2>
 

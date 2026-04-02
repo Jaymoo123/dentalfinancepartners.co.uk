@@ -7,16 +7,16 @@ const categoryName = "Capital Gains Tax";
 const categorySlug = "capital-gains-tax";
 
 export const metadata: Metadata = {
-  title: `${categoryName} for Property Investors | Accounts for Property`,
+  title: `${categoryName} for Property Investors | Property Tax Partners`,
   description: `Expert guidance on ${categoryName.toLowerCase()} for UK property investors. Practical advice, tax planning strategies, and compliance insights.`,
   alternates: {
-    canonical: `https://accountsforproperty.co.uk/blog/${categorySlug}`,
+    canonical: `https://www.propertytaxpartners.co.uk/blog/${categorySlug}`,
   },
   openGraph: {
     title: `${categoryName} for Property Investors`,
     description: `Expert guidance on ${categoryName.toLowerCase()} for UK property investors.`,
-    url: `https://accountsforproperty.co.uk/blog/${categorySlug}`,
-    siteName: "Accounts for Property",
+    url: `https://www.propertytaxpartners.co.uk/blog/${categorySlug}`,
+    siteName: "Property Tax Partners",
     type: "website",
   },
   twitter: {
@@ -38,8 +38,8 @@ export default function CapitalGainsTaxPage() {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://accountsforproperty.co.uk" },
-          { "@type": "ListItem", position: 2, name: "Blog", item: "https://accountsforproperty.co.uk/blog" },
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.propertytaxpartners.co.uk" },
+          { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.propertytaxpartners.co.uk/blog" },
           { "@type": "ListItem", position: 3, name: categoryName },
         ],
       },
@@ -47,7 +47,7 @@ export default function CapitalGainsTaxPage() {
         "@type": "CollectionPage",
         name: `${categoryName} for Property Investors`,
         description: metadata.description,
-        url: `https://accountsforproperty.co.uk/blog/${categorySlug}`,
+        url: `https://www.propertytaxpartners.co.uk/blog/${categorySlug}`,
       },
     ],
   };

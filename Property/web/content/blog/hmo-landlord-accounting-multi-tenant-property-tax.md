@@ -1,11 +1,11 @@
 ---
 title: "HMO Landlord Accounting: Multi-Tenant Property Tax Guide"
 slug: "hmo-landlord-accounting-multi-tenant-property-tax"
-canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/hmo-landlord-accounting-multi-tenant-property-tax"
+canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/hmo-landlord-accounting-multi-tenant-property-tax"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Portfolio Management"
-metaTitle: "HMO Landlord Accounting: Multi-Tenant Property Tax Guide 2025"
+metaTitle: "HMO Landlord Accounting: Multi-Tenant Property Tax Guide 2026"
 metaDescription: "Complete guide to HMO landlord accounting and multi-tenant property tax. Room-by-room rental income, expense allocation, and MTD compliance for HMO portfolios."
 altText: "UK HMO property with multiple bedroom doors showing multi-tenant rental accounting complexity"
 image: ""

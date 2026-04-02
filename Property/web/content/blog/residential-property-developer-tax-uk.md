@@ -1,15 +1,15 @@
 ---
-title: "Residential Property Developer Tax UK: Complete Guide for 2025"
+title: "Residential Property Developer Tax UK: Complete Guide for 2026"
 slug: "residential-property-developer-tax-uk"
-canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/residential-property-developer-tax-uk"
+canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/residential-property-developer-tax-uk"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"
-metaTitle: "Residential Property Developer Tax UK Guide 2025 | Tax Rules"
+metaTitle: "Residential Property Developer Tax UK Guide 2026 | Tax Rules"
 metaDescription: "Complete guide to UK residential property developer tax rules, rates, and planning strategies. Learn about trading vs investment status and incorporation benefits."
 altText: "UK residential property developer reviewing tax documents and building plans on desk"
 image: ""
-h1: "Residential Property Developer Tax UK: Complete Guide for 2025"
+h1: "Residential Property Developer Tax UK: Complete Guide for 2026"
 summary: "UK residential property developers face different tax rules than buy-to-let landlords, with profits taxed as income rather than capital gains. Understanding developer status is crucial for tax planning."
 schema: ""
 faqs:
@@ -42,35 +42,6 @@ faqs:
 
 <p>For example, if you buy a house for £200k, spend £50k on a rear extension, and sell for £320k within 12 months, HMRC will likely view this as trading rather than investment.</p>
 
-<h2>Residential Property Developer Tax Rates</h2>
-
-<p>As a property developer, your profits are subject to income tax rather than capital gains tax. For the 2025/26 tax year, this means:</p>
-
-<ul>
-<li><strong>Basic rate taxpayers:</strong> 20% on profits up to £37,700</li>
-<li><strong>Higher rate taxpayers:</strong> 40% on profits between £37,700 and £125,140</li>
-<li><strong>Additional rate taxpayers:</strong> 45% on profits above £125,140</li>
-</ul>
-
-<p>You'll also pay Class 2 National Insurance (£3.45 per week if profits exceed £6,515) and Class 4 National Insurance (9% on profits between £12,570 and £50,270, then 2% above).</p>
-
-<p>This contrasts with capital gains tax rates of 18% (basic rate) or 24% (higher rate) that apply to property investors.</p>
-
-<h2>Allowable Deductions for Property Developers</h2>
-
-<p>The good news is that property developers can claim more expenses than landlords:</p>
-
-<ul>
-<li><strong>Purchase costs:</strong> Legal fees, stamp duty, survey costs</li>
-<li><strong>Development costs:</strong> Materials, labour, planning fees, building control</li>
-<li><strong>Finance costs:</strong> Full mortgage interest and loan charges (no Section 24 restriction)</li>
-<li><strong>Professional fees:</strong> Architects, quantity surveyors, project managers</li>
-<li><strong>Marketing costs:</strong> Estate agent fees, advertising, show home costs</li>
-<li><strong>Overheads:</strong> Office costs, insurance, utilities for the business</li>
-</ul>
-
-<p>Unlike landlords affected by Section 24, developers can claim full mortgage interest relief as a business expense.</p>
-
 <h2>Incorporation for Property Developers</h2>
 
 <p>Many residential property developers consider <a href="/incorporation">incorporation</a> to reduce their tax burden. A limited company structure can offer several advantages:</p>
@@ -83,19 +54,6 @@ faqs:
 </ul>
 
 <p>However, incorporation also brings additional compliance costs and complexity. A developer making £80k profit annually might save around £8k in tax through incorporation, but this depends on personal circumstances.</p>
-
-<h2>VAT Considerations for Property Developers</h2>
-
-<p>Residential property development has specific VAT rules that can significantly impact profitability:</p>
-
-<ul>
-<li><strong>New builds:</strong> Generally zero-rated for VAT</li>
-<li><strong>Renovations:</strong> Usually standard-rated at 20%</li>
-<li><strong>Conversions:</strong> May qualify for reduced rate (5%)</li>
-<li><strong>Input VAT:</strong> Can often be reclaimed on development costs</li>
-</ul>
-
-<p>You must register for VAT if your turnover exceeds £85k annually. Many developers register voluntarily to reclaim input VAT on development costs.</p>
 
 <h2>Record Keeping and Compliance</h2>
 

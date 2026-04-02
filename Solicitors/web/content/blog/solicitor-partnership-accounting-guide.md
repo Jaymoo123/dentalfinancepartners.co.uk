@@ -11,7 +11,7 @@ image: ""
 h1: "Solicitor Partnership Accounting: Complete Guide for Legal Partnerships"
 summary: "Essential guide covering partnership tax obligations, profit allocation, accounts preparation and compliance requirements for UK legal partnerships."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/partnership-llp-accounting/solicitor-partnership-accounting-guide"
+canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting/solicitor-partnership-accounting-guide"
 faqs:
   - question: "How are partnership profits taxed for solicitors?"
     answer: "Partnership profits are taxed as income in the hands of individual partners, not at partnership level. Each partner pays Income Tax and National Insurance on their profit share, regardless of whether profits are withdrawn. Partners must complete self-assessment returns declaring their share of partnership income."

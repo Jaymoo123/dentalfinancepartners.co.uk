@@ -1,6 +1,7 @@
 ---
 title: "Law Firm Goodwill Valuation: Complete Guide for Solicitors"
 slug: "law-firm-goodwill-valuation"
+canonical: "https://www.accountsforlawyers.co.uk/blog/practice-succession-sale/law-firm-goodwill-valuation"
 date: "2026-04-01"
 author: "Accounts for Lawyers"
 category: "Practice Succession & Sale"
@@ -11,7 +12,6 @@ image: ""
 h1: "Law Firm Goodwill Valuation: A Comprehensive Guide for UK Solicitors"
 summary: "Understanding law firm goodwill valuation is crucial for practice sales, mergers, and succession planning. This guide covers valuation methods, key factors, and practical considerations for UK solicitors."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/practice-succession-sale/law-firm-goodwill-valuation"
 faqs:
   - question: "What factors most significantly impact law firm goodwill valuation?"
     answer: "Client retention rates, practice area specialization, and financial stability represent the most critical factors. Practices with 80%+ client retention, specialized expertise, and consistent profitability typically achieve higher goodwill valuations than general practices with variable client relationships."
@@ -100,14 +100,6 @@ faqs:
 <p>Complex law firm goodwill valuation often requires specialist expertise combining legal sector knowledge with valuation methodology. Professional valuers familiar with legal practices can provide defensible valuations for transaction and tax purposes.</p>
 
 <p>When selecting valuation specialists, ensure they understand SRA requirements, client money implications, and the unique characteristics of legal service businesses.</p>
-
-<h2>Common Valuation Challenges</h2>
-
-<p>Personal goodwill versus practice goodwill presents ongoing challenges in law firm valuations. Where clients follow individual lawyers rather than instructing the firm, goodwill value may be significantly reduced.</p>
-
-<p>Regulatory constraints also affect valuations. SRA ownership rules, client money requirements, and professional indemnity considerations all impact what buyers can acquire and how transactions are structured.</p>
-
-<p>Market conditions significantly influence law firm goodwill valuation outcomes. Economic uncertainty, regulatory changes, and sector consolidation all affect buyer appetite and achievable multiples.</p>
 
 <h2>Getting Professional Support</h2>
 

@@ -1,6 +1,7 @@
 ---
 title: "Facial Aesthetics and VAT: What UK Dental Practices Need to Know"
 slug: "facial-aesthetics-vat-uk-dental-practices"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-compliance/facial-aesthetics-vat-uk-dental-practices"
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "VAT & compliance"
@@ -11,16 +12,13 @@ image: ""
 h1: "Facial Aesthetics and VAT: What UK Dental Practices Need to Know"
 summary: "Facial aesthetics services have different VAT rules than traditional dentistry. Understanding these rules is crucial for practices offering botox, fillers, and other cosmetic treatments."
 schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-compliance/facial-aesthetics-vat-uk-dental-practices"
 faqs:
-  - question: "Do I need to register for VAT if I only do a small amount of facial aesthetics?"
-    answer: "You need to register for VAT if your total standard-rated income (including facial aesthetics) exceeds £85,000 in a 12-month period. Even small amounts of aesthetic work count towards this threshold, as they're standard-rated at 20% unlike most dental treatments which are VAT-exempt."
+  - question: "What records do I need to keep for facial aesthetics VAT compliance?"
+    answer: "Keep detailed treatment records showing the primary purpose of each procedure, separate accounting for aesthetic income, proper VAT invoices for standard-rated treatments, and documentation of any professional advice received. This evidence supports your VAT treatment decisions if HMRC ever queries your compliance."
   - question: "Can I charge VAT-exempt rates for botox if it's for medical reasons?"
     answer: "Potentially, but only if the primary purpose is treating a genuine medical condition like hyperhidrosis or chronic migraines. The treatment must be medically necessary rather than cosmetic. When in doubt, it's safer to charge standard rate VAT and seek specific professional advice for your situation."
   - question: "How do I calculate partial exemption when I offer both dental and aesthetic services?"
     answer: "Partial exemption calculations typically use the proportion of standard-rated income to total income. If 30% of your revenue comes from aesthetics, you can usually recover 30% of VAT on shared expenses like rent and utilities. However, the rules can be complex, so accurate record-keeping and professional advice are essential."
-  - question: "What records do I need to keep for facial aesthetics VAT compliance?"
-    answer: "Keep detailed treatment records showing the primary purpose of each procedure, separate accounting for aesthetic income, proper VAT invoices for standard-rated treatments, and documentation of any professional advice received. This evidence supports your VAT treatment decisions if HMRC ever queries your compliance."
 ---
 
 <p>Many UK dental practices now offer facial aesthetics alongside traditional dentistry. But the VAT treatment of these services differs significantly from standard dental care, and getting it wrong can be costly.</p>

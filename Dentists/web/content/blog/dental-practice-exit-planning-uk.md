@@ -1,6 +1,7 @@
 ---
 title: "Dental Practice Exit Planning: When to Start and What to Consider"
 slug: "dental-practice-exit-planning-uk"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-practice-exit-planning-uk"
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "Practice finance"
@@ -11,14 +12,11 @@ image: ""
 h1: "Dental Practice Exit Planning: When to Start and What to Consider"
 summary: "Most dental practice owners wait too long before starting their exit planning, missing opportunities to maximise value. The best time to plan your exit is typically 5-7 years before you want to sell."
 schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental-practice-exit-planning-uk"
 faqs:
   - question: "When should I start planning my dental practice exit?"
     answer: "Start your dental practice exit planning 5-7 years before you want to sell. This gives you time to address valuation issues, implement tax-efficient strategies, and develop multiple exit options. Even if you're not planning to sell soon, understanding what affects practice value helps you make better business decisions."
   - question: "What's the biggest factor affecting dental practice valuations?"
     answer: "Financial performance and trends typically have the biggest impact on valuations. Buyers focus on normalised EBITDA and look for stable or growing profits over 2-3 years. Other key factors include NHS contract stability, systems independence from the owner, and local market conditions."
-  - question: "Should I incorporate my practice before selling?"
-    answer: "Incorporation timing affects both ongoing tax efficiency and exit planning options. The decision depends on your personal tax position, exit timeline, and the structure buyers prefer in your market. This requires specialist advice as the optimal timing varies significantly between situations."
   - question: "How do I know what my dental practice is worth?"
     answer: "Modern dental practice valuations consider multiple factors including normalised EBITDA, patient list stability, contract mix, and local market conditions. Valuations typically use multiples of adjusted profits, but these vary significantly by practice type and location. Consider getting a professional valuation as part of your exit planning process."
 ---

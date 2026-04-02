@@ -1,6 +1,7 @@
 ---
 title: "Locum Doctor IR35: What You Need to Know"
 slug: "locum-doctor-ir35-what-you-need-to-know"
+canonical: ""
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "Locum Tax"
@@ -11,7 +12,6 @@ image: ""
 h1: "Locum Doctor IR35: What You Need to Know"
 summary: "IR35 rules determine how locum doctors are taxed - whether as employees or contractors. Understanding these rules is crucial for managing your tax position and compliance requirements."
 schema: ""
-canonical: ""
 faqs:
   - question: "How do I know if my locum work is inside or outside IR35?"
     answer: "For NHS work, the trust or hospital will provide a Status Determination Statement telling you their decision. This is based on factors like control over your work, substitution rights, and mutuality of obligation. You can challenge their determination if you disagree with their assessment."
@@ -61,19 +61,6 @@ faqs:
 <p>Is there an ongoing obligation for the client to provide work and for you to accept it? Employment relationships typically involve mutual obligations beyond individual assignments.</p>
 
 <p>Short-term locum assignments often lack ongoing mutual obligations, which can support outside IR35 status. However, regular ongoing arrangements may suggest employment-like relationships.</p>
-
-<h2>Practical Impact for Locum Doctors</h2>
-
-<p>When your locum work falls inside IR35, the financial impact can be significant:</p>
-
-<ul>
-<li><strong>Income tax and National Insurance</strong> deducted at source through PAYE</li>
-<li><strong>No corporation tax benefits</strong> from working through your company</li>
-<li><strong>Limited expense deductions</strong> compared to outside IR35 arrangements</li>
-<li><strong>Employer's National Insurance</strong> costs passed back to you through reduced fees</li>
-</ul>
-
-<p>For example, a locum doctor earning £150,000 annually might see their net income reduce by £15,000-£25,000 when moving from outside to inside IR35, depending on their company structure and expense claims.</p>
 
 <h2>Working Through Agencies</h2>
 

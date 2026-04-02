@@ -1,7 +1,7 @@
 ---
 title: "Incorporation for Existing Portfolios: A Phased Approach Guide"
 slug: "incorporation-existing-portfolios-phased-approach"
-canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/incorporation-existing-portfolios-phased-approach"
+canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/incorporation-existing-portfolios-phased-approach"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"
@@ -57,29 +57,6 @@ faqs:
 <h3>Income Tax Implications</h3>
 
 <p>During the transition period, you'll have rental income from both personal ownership and company ownership. This creates complexity but also opportunities to manage your overall tax position across both structures.</p>
-
-<h2>Selecting Properties for Each Phase</h2>
-
-<p>Strategic selection can maximise the benefits of phased incorporation:</p>
-
-<h3>Phase 1: Test Properties</h3>
-<ul>
-<li>Properties with lower capital gains to minimise initial CGT</li>
-<li>Properties due for remortgaging (where you'd incur legal costs anyway)</li>
-<li>Vacant properties between tenancies</li>
-</ul>
-
-<h3>Phase 2: High-Yield Properties</h3>
-<ul>
-<li>Properties with strong rental yields that benefit most from corporation tax rates</li>
-<li>Properties in areas with high rental demand</li>
-</ul>
-
-<h3>Phase 3: Remaining Portfolio</h3>
-<ul>
-<li>Properties with higher capital gains once you're comfortable with the company structure</li>
-<li>Properties requiring significant capital expenditure</li>
-</ul>
 
 <h2>Financing Considerations</h2>
 

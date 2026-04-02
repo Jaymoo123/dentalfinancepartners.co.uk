@@ -1,7 +1,7 @@
 ---
 title: "CGT on Property Transfer to Spouse: Is It Exempt?"
 slug: "cgt-property-transfer-spouse"
-canonical: "https://accountsforproperty.co.uk/blog/capital-gains-tax/cgt-property-transfer-spouse"
+canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/cgt-property-transfer-spouse"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Capital Gains Tax"
@@ -15,12 +15,8 @@ schema: ""
 faqs:
   - question: "Is CGT on property transfer to spouse always exempt?"
     answer: "No, while transfers between spouses are typically exempt under 'no gain no loss' rules, important exceptions apply including when couples are separated, when one spouse is non-UK resident, or for mixed-use properties. The exemption only applies to couples living together."
-  - question: "What happens to the original purchase price when I transfer property to my spouse?"
-    answer: "Your spouse inherits your original purchase price (base cost) and purchase date for CGT purposes. This means when they eventually sell the property, CGT will be calculated based on your original figures, not the market value at the time of transfer."
   - question: "Can I transfer property to my spouse after we've separated?"
     answer: "Transfers in the tax year of separation remain exempt, but transfers in subsequent tax years while separated will trigger CGT charges. Once separated with intention of permanent separation, the spousal exemption no longer applies and transfers are treated as disposals at market value."
-  - question: "Do I need to report a property transfer to my spouse to HMRC?"
-    answer: "Generally, exempt spousal transfers don't need to be reported to HMRC as there's no gain or loss to declare. However, you must complete the legal transfer process through a solicitor and maintain detailed records for future CGT calculations when the property is eventually sold."
 ---
 
 <p>When considering <strong>cgt property transfer spouse</strong> arrangements, most UK landlords assume these transfers are automatically tax-free. While this is often true, the rules around spousal property transfers contain several important exceptions that could leave you with an unexpected tax bill.</p>

@@ -1,7 +1,7 @@
 ---
 title: "How Section 24 Affects Higher-Rate Taxpayer Landlords in 2026"
 slug: "section-24-higher-rate-taxpayers-2026"
-canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/section-24-higher-rate-taxpayers-2026"
+canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-higher-rate-taxpayers-2026"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"
@@ -27,13 +27,29 @@ faqs:
 
 <p>If you're a landlord earning over £50,270 in the 2025/26 tax year, understanding Section 24's impact on your portfolio is crucial for tax planning and future investment decisions.</p>
 
-<h2>What Section 24 Means for Higher-Rate Taxpayers</h2>
+<h2>Strategic Options for Higher-Rate Taxpayers</h2>
 
-<p>Before Section 24, landlords could deduct mortgage interest as a business expense against their rental income. A higher-rate taxpayer paying 40% tax would effectively get 40% relief on their mortgage payments.</p>
+<p>Several strategies can help mitigate Section 24's impact, though each requires careful consideration of your specific circumstances.</p>
 
-<p>Now, mortgage interest is treated as a tax credit at the basic rate of 20% only. This creates a significant tax increase for anyone earning enough to push them into higher-rate brackets.</p>
+<h3>Property Company Structure</h3>
 
-<p>The restriction applies to residential property only — commercial property investments remain unaffected.</p>
+<p>Many higher-rate taxpayers are exploring <a href="/incorporation">incorporation</a> as a way to avoid Section 24 entirely. Companies aren't subject to the restriction and can still claim full mortgage interest relief.</p>
+
+<p>However, incorporation brings corporation tax, dividend taxes, and additional compliance costs. It works best for landlords planning significant expansion or those with substantial mortgage interest relative to rental profits.</p>
+
+<h3>Portfolio Restructuring</h3>
+
+<p>Some landlords are reducing their BTL mortgages to minimize Section 24's impact. This might involve:</p>
+
+<ul>
+<li>Selling highly mortgaged properties</li>
+<li>Using proceeds to buy cash purchases</li>
+<li>Focusing on commercial property (not subject to Section 24)</li>
+</ul>
+
+<h3>Income Splitting</h3>
+
+<p>Married couples can potentially reduce Section 24's impact by ensuring properties are owned by the spouse with lower overall income. This requires careful consideration of capital gains tax implications when transferring properties.</p>
 
 <h2>Real Impact: Higher-Rate Taxpayer Example</h2>
 
@@ -76,40 +92,6 @@ faqs:
 </ul>
 
 <p>James is now pushed £12,730 into the higher-rate tax band, paying 40% tax on income that previously attracted 20% tax. The 20% tax credit on his £10,000 mortgage interest only provides £2,000 relief — far less than the additional tax burden.</p>
-
-<h2>Additional Complications for Higher-Rate Taxpayers</h2>
-
-<p>Section 24 can trigger other tax consequences that disproportionately affect higher earners:</p>
-
-<p><strong>Child Benefit Charge:</strong> If your adjusted net income exceeds £50,000, you face the High Income Child Benefit Charge. Section 24 can push rental income above this threshold.</p>
-
-<p><strong>Personal Allowance Restriction:</strong> Taxpayers with income over £100,000 lose £1 of personal allowance for every £2 of income. Higher rental profits from Section 24 can accelerate this restriction.</p>
-
-<p><strong>Pension Annual Allowance:</strong> High earners face reduced pension contribution limits. Section 24 can push income above the £240,000 threshold where allowances start tapering.</p>
-
-<h2>Strategic Options for Higher-Rate Taxpayers</h2>
-
-<p>Several strategies can help mitigate Section 24's impact, though each requires careful consideration of your specific circumstances.</p>
-
-<h3>Property Company Structure</h3>
-
-<p>Many higher-rate taxpayers are exploring <a href="/incorporation">incorporation</a> as a way to avoid Section 24 entirely. Companies aren't subject to the restriction and can still claim full mortgage interest relief.</p>
-
-<p>However, incorporation brings corporation tax, dividend taxes, and additional compliance costs. It works best for landlords planning significant expansion or those with substantial mortgage interest relative to rental profits.</p>
-
-<h3>Portfolio Restructuring</h3>
-
-<p>Some landlords are reducing their BTL mortgages to minimize Section 24's impact. This might involve:</p>
-
-<ul>
-<li>Selling highly mortgaged properties</li>
-<li>Using proceeds to buy cash purchases</li>
-<li>Focusing on commercial property (not subject to Section 24)</li>
-</ul>
-
-<h3>Income Splitting</h3>
-
-<p>Married couples can potentially reduce Section 24's impact by ensuring properties are owned by the spouse with lower overall income. This requires careful consideration of capital gains tax implications when transferring properties.</p>
 
 <h2>Planning for 2026 and Beyond</h2>
 

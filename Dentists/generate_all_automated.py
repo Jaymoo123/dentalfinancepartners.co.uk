@@ -17,7 +17,7 @@ ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 
 def get_unused_count():
     """Get count of unused topics."""
-    url = f"{SUPABASE_URL}/rest/v1/blog_topics"
+    url = f"{SUPABASE_URL}/rest/v1/blog_topics_dentists"
     headers = {"apikey": SUPABASE_KEY, "Authorization": f"Bearer {SUPABASE_KEY}"}
     params = {"used": "eq.false", "select": "id"}
     response = httpx.get(url, headers=headers, params=params)
@@ -26,7 +26,7 @@ def get_unused_count():
 
 def get_next_topic():
     """Fetch the next unused topic."""
-    url = f"{SUPABASE_URL}/rest/v1/blog_topics"
+    url = f"{SUPABASE_URL}/rest/v1/blog_topics_dentists"
     headers = {"apikey": SUPABASE_KEY, "Authorization": f"Bearer {SUPABASE_KEY}"}
     params = {
         "used": "eq.false",
@@ -43,7 +43,7 @@ def mark_used_via_file(topic_id, slug):
     Mark topic as used by writing SQL to a temp file for manual execution.
     This is a workaround since anon key doesn't have UPDATE permissions.
     """
-    sql = f"UPDATE blog_topics SET used = true, generated_slug = '{slug}', generated_at = NOW() WHERE id = '{topic_id}';\n"
+    sql = f"UPDATE blog_topics_dentists SET used = true, generated_slug = '{slug}', generated_at = NOW() WHERE id = '{topic_id}';\n"
     with open("mark_used.sql", "a", encoding="utf-8") as f:
         f.write(sql)
 

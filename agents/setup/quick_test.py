@@ -43,10 +43,10 @@ async def main():
         print(f"   FAILED: {e}")
         return False
     
-    # Test 4: Check blog_topics
-    print("4. Checking blog_topics...")
+    # Test 4: Check blog_topics_dentists
+    print("4. Checking blog_topics_dentists...")
     try:
-        result = await client.select("blog_topics", filters={"used": False}, limit=5)
+        result = await client.select("blog_topics_dentists", filters={"used": False}, limit=5)
         print(f"   SUCCESS: Found {len(result)} unused topics")
     except Exception as e:
         print(f"   FAILED: {e}")

@@ -1,6 +1,7 @@
 ---
 title: "IR35 and Dentists: Does It Apply to Associate Agreements?"
 slug: "ir35-dentists-associate-agreements-uk"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/ir35-dentists-associate-agreements-uk"
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "Associate tax"
@@ -11,14 +12,11 @@ image: ""
 h1: "IR35 and Dentists: Does It Apply to Associate Agreements?"
 summary: "IR35 off-payroll working rules can impact dental associates operating through limited companies. Understanding when these rules apply to associate agreements is crucial for tax compliance."
 schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/ir35-dentists-associate-agreements-uk"
 faqs:
   - question: "Does IR35 automatically apply to all dental associates working through limited companies?"
     answer: "No, IR35 doesn't automatically apply to all dental associates with limited companies. It depends on your actual working relationship with the practice. Associates who work like employees (fixed hours, detailed control, no genuine business risk) are likely caught by IR35, while those operating genuine businesses across multiple practices may fall outside the rules."
   - question: "Can I avoid IR35 by changing my associate agreement contract terms?"
     answer: "Simply changing contract terms isn't enough to avoid IR35. HMRC looks at the reality of your working relationship, not just what's written in contracts. You need genuine changes to how you work – real business risk, multiple clients, investment in equipment, and genuine commercial independence – not just different contract wording."
-  - question: "What happens if HMRC decides my associate arrangement falls within IR35?"
-    answer: "If caught by IR35, you'll pay income tax and National Insurance as if employed, removing most limited company tax advantages. HMRC can investigate retrospectively, potentially leading to additional tax bills, penalties, and interest. This is why getting professional advice on your IR35 status is important before problems arise."
   - question: "Should I abandon my limited company if my associate work falls within IR35?"
     answer: "Not necessarily. Even within IR35, limited companies can offer advantages for pension contributions, business expenses, and income timing. The key is understanding your position and planning accordingly. Consider getting specialist advice to evaluate whether your current structure remains beneficial given your specific circumstances."
 ---

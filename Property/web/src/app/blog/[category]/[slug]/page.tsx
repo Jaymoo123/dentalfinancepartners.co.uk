@@ -6,6 +6,7 @@ import {
   getCategorySlug,
   getRelatedPosts,
 } from "@/lib/blog";
+import { siteConfig } from "@/config/site";
 import { BlogPostRenderer } from "@/components/blog/BlogPostRenderer";
 
 type Props = {
@@ -41,12 +42,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.metaDescription,
       type: "article",
       url: post.canonical,
-      siteName: "Accounts for Property",
+      siteName: "Property Tax Partners",
+      images: [
+        {
+          url: post.image || `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
+          width: 1200,
+          height: 630,
+          alt: post.altText || post.title,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: post.metaTitle,
       description: post.metaDescription,
+      images: [post.image || `${siteConfig.url}${siteConfig.publisherLogoUrl}`],
     },
   };
 }

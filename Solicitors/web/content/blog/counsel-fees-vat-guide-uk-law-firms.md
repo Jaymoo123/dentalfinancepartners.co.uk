@@ -1,6 +1,7 @@
 ---
 title: "Counsel Fees VAT: Complete Guide for UK Law Firms"
 slug: "counsel-fees-vat-guide-uk-law-firms"
+canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/counsel-fees-vat-guide-uk-law-firms"
 date: "2026-04-01"
 author: "Accounts for Lawyers"
 category: "VAT & Compliance"
@@ -11,7 +12,6 @@ image: ""
 h1: "Counsel Fees VAT: Complete Guide for UK Law Firms"
 summary: "Understanding counsel fees VAT is crucial for law firms managing cash flow and client billing. The VAT treatment depends on whether counsel services are disbursements or supplies to your firm."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/vat-compliance/counsel-fees-vat-guide-uk-law-firms"
 faqs:
   - question: "Can I recover VAT on counsel fees if my law firm is VAT registered?"
     answer: "Yes, if counsel services are treated as supplies to your firm (which is usually the case), you can recover the VAT as input tax provided you have valid VAT invoices and use the services for business purposes. The VAT must be recovered through your VAT return, which may create temporary cash flow implications."
@@ -27,17 +27,22 @@ faqs:
 
 <p>The VAT rules around counsel fees have specific requirements that differ from standard supplier relationships. Getting this wrong can lead to cash flow problems, incorrect client billing, and potential compliance issues.</p>
 
-<h2>VAT on Counsel Services: The Basic Rules</h2>
+<h2>VAT Recovery on Counsel Fees</h2>
 
-<p>Barristers and counsel who are VAT registered must charge VAT on their services at the standard rate of 20%. This applies to all professional services including advice, drafting, and court representation.</p>
-
-<p>However, the key question for your firm is whether these counsel fees VAT charges represent:</p>
+<p>If your law firm is VAT registered, you can typically recover counsel fees VAT as input tax. This requires:</p>
 <ul>
-<li><strong>A supply to your client</strong> (making you an agent)</li>
-<li><strong>A supply to your firm</strong> (making counsel your supplier)</li>
+<li>A valid VAT invoice from counsel</li>
+<li>The services being used for business purposes</li>
+<li>Your firm making taxable supplies</li>
 </ul>
 
-<p>This distinction determines how you handle the VAT, your recovery rights, and your billing to clients.</p>
+<p>The recovery is subject to normal VAT rules, including any partial exemption restrictions if your firm handles both taxable and exempt supplies.</p>
+
+<h3>Cash Flow Considerations</h3>
+
+<p>VAT recovery timing can impact cash flow significantly. You typically pay counsel fees VAT upfront but only recover it when you submit your VAT return. For a £10,000 counsel fee, this represents £2,000 tied up for potentially several months.</p>
+
+<p>Some firms address this by including VAT recovery timing in their <a href="/services">cash flow management strategies</a>, particularly for larger cases with substantial counsel costs.</p>
 
 <h2>Disbursements vs Supplies: The Critical Distinction</h2>
 
@@ -59,33 +64,6 @@ faqs:
 <li>You make an onward supply of legal services to your client</li>
 <li>You charge VAT on your total fee (including the element covering counsel costs)</li>
 </ul>
-
-<h2>VAT Recovery on Counsel Fees</h2>
-
-<p>If your law firm is VAT registered, you can typically recover counsel fees VAT as input tax. This requires:</p>
-<ul>
-<li>A valid VAT invoice from counsel</li>
-<li>The services being used for business purposes</li>
-<li>Your firm making taxable supplies</li>
-</ul>
-
-<p>The recovery is subject to normal VAT rules, including any partial exemption restrictions if your firm handles both taxable and exempt supplies.</p>
-
-<h3>Cash Flow Considerations</h3>
-
-<p>VAT recovery timing can impact cash flow significantly. You typically pay counsel fees VAT upfront but only recover it when you submit your VAT return. For a £10,000 counsel fee, this represents £2,000 tied up for potentially several months.</p>
-
-<p>Some firms address this by including VAT recovery timing in their <a href="/services">cash flow management strategies</a>, particularly for larger cases with substantial counsel costs.</p>
-
-<h2>Client Billing and Counsel Fees VAT</h2>
-
-<p>When billing clients for matters involving counsel, you have two main approaches:</p>
-
-<h3>Inclusive Billing</h3>
-<p>Include counsel costs within your overall legal fee and charge VAT on the total amount. This is simpler administratively but may result in higher VAT charges to clients who cannot recover VAT.</p>
-
-<h3>Separate Disbursement Billing</h3>
-<p>If counsel services genuinely qualify as disbursements, you can bill them separately without adding your own VAT. However, you must meet the strict HMRC criteria and cannot recover the VAT as input tax.</p>
 
 <h2>Record Keeping Requirements</h2>
 

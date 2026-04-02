@@ -1,7 +1,7 @@
 ---
 title: "SDLT on Incorporation: Do I Pay Stamp Duty Twice?"
 slug: "sdlt-incorporation-stamp-duty-twice"
-canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice"
+canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

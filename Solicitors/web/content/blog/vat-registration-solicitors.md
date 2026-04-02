@@ -1,6 +1,7 @@
 ---
 title: "VAT Registration for Solicitors: When and How to Register Your Legal Practice"
 slug: "vat-registration-solicitors"
+canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/vat-registration-solicitors"
 date: "2026-04-01"
 author: "Accounts for Lawyers"
 category: "VAT & Compliance"
@@ -11,14 +12,11 @@ image: ""
 h1: "VAT Registration for Solicitors: When and How to Register Your Legal Practice"
 summary: "UK solicitors must register for VAT when turnover exceeds £90,000. Understanding registration requirements, timing, and compliance obligations is crucial for legal practice management."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/vat-compliance/vat-registration-solicitors"
 faqs:
-  - question: "When must solicitors register for VAT?"
-    answer: "Solicitors must register for VAT when their taxable turnover exceeds £90,000 in any consecutive 12-month period, or when they expect to exceed this threshold in the next 30 days. Registration must be completed within 30 days of crossing the threshold to avoid penalties."
-  - question: "Do disbursements count towards the VAT registration threshold?"
-    answer: "Only some disbursements count towards VAT registration. Genuine third-party payments where you act purely as an agent (like Land Registry fees paid directly to the registry) don't count. However, services you provide like photocopying, travel expenses, or administrative charges do count towards the £90,000 threshold."
   - question: "Can solicitors register for VAT voluntarily below the threshold?"
     answer: "Yes, solicitors can register for VAT voluntarily even with turnover below £90,000. This might benefit practices with high VAT on expenses (rent, equipment, professional services) as you can recover input VAT. However, you must then charge VAT to clients, potentially increasing costs by 20%."
+  - question: "Do disbursements count towards the VAT registration threshold?"
+    answer: "Only some disbursements count towards VAT registration. Genuine third-party payments where you act purely as an agent (like Land Registry fees paid directly to the registry) don't count. However, services you provide like photocopying, travel expenses, or administrative charges do count towards the £90,000 threshold."
   - question: "What are the main compliance obligations after VAT registration?"
     answer: "VAT-registered solicitors must submit quarterly VAT returns (due one month and seven days after quarter end), maintain digital records under Making Tax Digital rules, and use compatible software for submissions. You must also charge VAT on services, issue VAT invoices, and keep detailed records of all transactions."
 ---
@@ -27,13 +25,13 @@ faqs:
 
 <p>The current VAT registration threshold is £90,000 of taxable turnover in a 12-month period. For legal practices, this includes fees for legal services, but excludes certain disbursements that qualify as "out of scope" payments made on behalf of clients.</p>
 
-<h2>Mandatory VAT Registration Thresholds</h2>
+<h2>Voluntary VAT Registration</h2>
 
-<p>Solicitors must register for VAT in two main scenarios. First, when your taxable turnover exceeds £90,000 in any consecutive 12-month period. Second, when you expect your turnover to exceed £90,000 in the next 30 days.</p>
+<p>Solicitors can register voluntarily even below the £90,000 threshold. This might benefit practices that incur significant VAT on expenses, such as office rent, equipment purchases, or professional services, as you can recover input VAT.</p>
 
-<p>The 12-month period is calculated on a rolling basis, not the tax year. For example, if a sole practitioner's turnover reaches £91,000 from March 2024 to February 2025, registration is required even if their annual accounts show lower figures.</p>
+<p>Voluntary registration requires careful consideration. While you can reclaim VAT on business expenses, you must charge VAT to clients, potentially making your services 20% more expensive unless clients can recover VAT themselves.</p>
 
-<p>You must register within 30 days of exceeding the threshold. Late registration can result in penalties and interest charges on VAT that should have been collected from clients.</p>
+<p>The decision often depends on your client base. If most clients are VAT-registered businesses, charging VAT may have minimal impact. However, private clients and smaller businesses typically view VAT as an additional cost.</p>
 
 <h2>What Counts Towards the VAT Threshold</h2>
 
@@ -42,14 +40,6 @@ faqs:
 <p>Disbursements that don't count towards VAT registration include genuine third-party payments where you act purely as an agent. Examples include Land Registry fees, court fees paid directly to courts, and search fees paid to third parties - provided you simply recover the exact amount from your client.</p>
 
 <p>Travel expenses, photocopying charges, and telephone costs typically count towards the threshold as they represent services provided by your practice rather than pure agency arrangements.</p>
-
-<h2>Voluntary VAT Registration</h2>
-
-<p>Solicitors can register voluntarily even below the £90,000 threshold. This might benefit practices that incur significant VAT on expenses, such as office rent, equipment purchases, or professional services, as you can recover input VAT.</p>
-
-<p>Voluntary registration requires careful consideration. While you can reclaim VAT on business expenses, you must charge VAT to clients, potentially making your services 20% more expensive unless clients can recover VAT themselves.</p>
-
-<p>The decision often depends on your client base. If most clients are VAT-registered businesses, charging VAT may have minimal impact. However, private clients and smaller businesses typically view VAT as an additional cost.</p>
 
 <h2>Registration Process and Timing</h2>
 

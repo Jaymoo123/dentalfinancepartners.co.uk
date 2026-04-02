@@ -27,7 +27,7 @@ class ContentAnalyzer:
         
         # Get all topics
         all_topics = await self.supabase.select(
-            "blog_topics",
+            "blog_topics_dentists",
             order="created_at.desc"
         )
         

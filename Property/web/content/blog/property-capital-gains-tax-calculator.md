@@ -1,7 +1,7 @@
 ---
 title: "Property Capital Gains Tax Calculator: Complete Guide for UK Landlords"
 slug: "property-capital-gains-tax-calculator"
-canonical: "https://accountsforproperty.co.uk/blog/capital-gains-tax/property-capital-gains-tax-calculator"
+canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/property-capital-gains-tax-calculator"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Capital Gains Tax"
@@ -19,8 +19,6 @@ faqs:
     answer: "Yes, several strategies can reduce your CGT liability: claim all allowable costs including improvements and selling expenses, use your annual CGT allowance, consider the timing of sales across tax years, and explore reliefs like principal residence relief if you lived in the property. Married couples can also transfer properties to utilize both spouses' allowances and tax rates."
   - question: "Do I need to pay capital gains tax immediately after selling?"
     answer: "You must report the gain to HMRC within 60 days of completion and pay any CGT due. However, you can also wait until your self-assessment deadline (31 January following the tax year of sale). If you report early, you can still adjust the figures in your annual tax return if needed."
-  - question: "What costs can I deduct when calculating capital gains tax on property?"
-    answer: "You can deduct your original purchase price, purchase costs (stamp duty, legal fees, surveys), genuine improvement costs (not repairs), and selling expenses (estate agent fees, legal costs). Keep all receipts as evidence. Regular maintenance and repairs cannot be deducted, only improvements that add lasting value to the property."
 ---
 
 <p>When you sell a rental property, working out your capital gains tax liability can feel overwhelming. A property capital gains tax calculator helps you estimate what you'll owe HMRC, but understanding how the calculations work is crucial for accurate planning.</p>

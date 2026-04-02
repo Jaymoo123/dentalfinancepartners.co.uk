@@ -1,7 +1,7 @@
 ---
 title: "Landlord Tax Return Deadline 2026: Key Dates & Tax Band Changes"
 slug: "landlord-tax-return-deadline-2026"
-canonical: "https://accountsforproperty.co.uk/blog/making-tax-digital-mtd/landlord-tax-return-deadline-2026"
+canonical: "https://www.propertytaxpartners.co.uk/blog/making-tax-digital-mtd/landlord-tax-return-deadline-2026"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Making Tax Digital (MTD)"
@@ -13,14 +13,12 @@ h1: "Landlord Tax Return Deadline 2026: Key Dates & Tax Band Changes"
 summary: "The landlord tax return deadline for 2025/26 remains 31 January 2027, but 2026 brings significant changes with MTD property starting 6 April 2026 for eligible landlords."
 schema: ""
 faqs:
-  - question: "What is the landlord tax return deadline for 2026?"
-    answer: "The landlord tax return deadline for the 2025/26 tax year is 31 January 2027 for online submissions. Paper returns must be filed by 31 October 2026. However, from 6 April 2026, eligible landlords must also comply with Making Tax Digital property requirements, which involve quarterly digital submissions."
+  - question: "What happens if I miss the landlord tax return deadline?"
+    answer: "Missing the 31 January deadline triggers automatic penalties. HMRC charges £100 for late submission even if no tax is owed, plus daily penalties of £10 after three months if returns remain outstanding. Interest applies to any unpaid tax from the deadline date. Additional penalties increase for longer delays."
   - question: "Do all landlords need to join MTD property from April 2026?"
     answer: "No, only landlords with rental income above £10,000 annually must join MTD for Income Tax Property from 6 April 2026. Landlords earning below this threshold can voluntarily join or continue filing annual Self Assessment returns. The £10,000 threshold applies to total rental income from all UK properties."
   - question: "How do the 2026 tax bands affect landlords?"
     answer: "Landlord tax bands 2026 follow standard income tax rates: 20% basic rate up to £50,270, 40% higher rate up to £125,140, then 45% additional rate. Rental income combines with other income to determine your tax band. Section 24 restrictions mean mortgage interest receives 20% tax credit regardless of your actual tax rate."
-  - question: "What happens if I miss the landlord tax return deadline?"
-    answer: "Missing the 31 January deadline triggers automatic penalties. HMRC charges £100 for late submission even if no tax is owed, plus daily penalties of £10 after three months if returns remain outstanding. Interest applies to any unpaid tax from the deadline date. Additional penalties increase for longer delays."
 ---
 
 <p>The <strong>landlord tax return deadline</strong> for the 2025/26 tax year is 31 January 2027. However, 2026 marks a pivotal year for UK landlords with the introduction of Making Tax Digital for Income Tax Property (MTD ITSA) starting 6 April 2026.</p>

@@ -1,6 +1,7 @@
 ---
 title: "NHS Pension for Locums: Form A and Form B Guide"
 slug: "nhs-pension-for-locums-form-a-form-b"
+canonical: ""
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "NHS Pension Planning"
@@ -11,7 +12,6 @@ image: ""
 h1: "NHS Pension for Locums: Understanding Form A and Form B Requirements"
 summary: "Locum doctors can access the NHS pension scheme through Form A or Form B applications. Understanding the differences and requirements is crucial for securing your pension benefits."
 schema: ""
-canonical: ""
 faqs:
   - question: "Which form should I use as a locum doctor - Form A or Form B?"
     answer: "Use Form A if you're starting straightforward NHS employment where your employer will make pension contributions. Use Form B for complex situations like agency work, disputed eligibility, or unusual employment arrangements. Your employing organisation can often advise which form applies to your situation."
@@ -52,25 +52,6 @@ faqs:
 <li>Moving from agency work to direct NHS contracts</li>
 <li>Returning to NHS work after a career break</li>
 <li>Joining the pension scheme for the first time</li>
-</ul>
-
-<h2>Understanding Form B Applications</h2>
-
-<p>Form B serves a different purpose in the <strong>NHS pension for locums form A form B</strong> system. It's used for more complex situations, particularly when your employment status or pension eligibility isn't straightforward.</p>
-
-<p>This form is often required when you're working through agencies, have mixed employment patterns, or need to clarify your pension status. Form B applications typically take longer to process and require more detailed documentation.</p>
-
-<p>The form asks for comprehensive employment history, details of all income sources, and evidence of your working arrangements. This helps NHS Pensions determine whether your work qualifies for pension benefits.</p>
-
-<h3>When to Use Form B</h3>
-
-<p>Form B is typically required for:</p>
-
-<ul>
-<li>Agency locum work with uncertain employment status</li>
-<li>Complex employment arrangements involving multiple organisations</li>
-<li>Disputes about pension eligibility</li>
-<li>Retrospective pension applications</li>
 </ul>
 
 <h2>Documentation Requirements</h2>

@@ -34,7 +34,7 @@ if not SUPABASE_KEY:
 LEADS_TABLE = "leads"
 
 # Each niche has its own blog topics table
-BLOG_TOPICS_DENTISTS = "blog_topics"
+BLOG_TOPICS_DENTISTS = "blog_topics_dentists"
 BLOG_TOPICS_PROPERTY = "blog_topics_property"
 
 # ============================================================================

@@ -1,7 +1,7 @@
 ---
 title: "Property Management Accounting Services: Expert Support for UK Landlords"
 slug: "property-management-accounting-services"
-canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-management-accounting-services"
+canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/property-management-accounting-services"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"
@@ -15,8 +15,6 @@ schema: ""
 faqs:
   - question: "What services do property management accountants provide?"
     answer: "Property management accountants provide specialist services including annual tax return preparation, quarterly bookkeeping, MTD compliance support, capital gains tax planning, incorporation advice, and strategic portfolio planning. They understand property-specific tax rules like Section 24 and help maximise allowable deductions while ensuring full compliance."
-  - question: "How much do property management accounting services cost?"
-    answer: "Fees typically range from £1,000-£2,500 annually for small portfolios of 2-3 properties, with larger or more complex portfolios commanding higher fees. The investment usually pays for itself through tax savings, claimed expenses, and time savings. Initial consultations help determine appropriate service levels and costs for your specific situation."
   - question: "Do I need specialist property accounting or can I use a general accountant?"
     answer: "While general accountants can handle basic tax returns, property specialists understand the unique challenges landlords face, including Section 24 restrictions, capital vs revenue distinctions, and incorporation strategies. They typically identify more allowable deductions and provide better strategic advice, often saving more than their additional cost."
   - question: "When should I engage property management accounting services?"

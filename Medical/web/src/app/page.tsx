@@ -7,6 +7,7 @@ import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from 
 import { siteConfig } from "@/config/site";
 import { getPostBySlug } from "@/lib/blog";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
+import { TestimonialSlider } from "@/components/medical/TestimonialSlider";
 
 const btnMailOutline =
   "inline-flex min-h-12 items-center justify-center rounded-full border border-[var(--medical-teal)]/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-[var(--medical-teal)] transition-all duration-200 hover:border-[var(--medical-teal)] hover:bg-[var(--medical-teal)]/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--coral)]";
@@ -386,6 +387,18 @@ export default function HomePage() {
               View all articles
             </Link>
           </p>
+        </div>
+      </section>
+
+      <section className="bg-white py-12 sm:py-16">
+        <div className={siteContainerLg}>
+          <p className="section-label">What our clients say</p>
+          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
+            Real results for medical professionals
+          </h2>
+          <div className="mt-10 max-w-3xl">
+            <TestimonialSlider />
+          </div>
         </div>
       </section>
 

@@ -1,7 +1,7 @@
 ---
 title: "Property Business Rates vs Council Tax: What UK Landlords Need to Know"
 slug: "property-business-rates-council-tax-landlords"
-canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-business-rates-council-tax-landlords"
+canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/property-business-rates-council-tax-landlords"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Portfolio Management"
@@ -63,14 +63,6 @@ faqs:
 </ul>
 
 <p>Many landlords specify in tenancy agreements who will pay business rates. However, legal liability cannot be transferred entirely - the landlord remains ultimately responsible if tenants default.</p>
-
-<h2>Calculating Business Rates vs Council Tax Costs</h2>
-
-<p>Business rates often cost more than council tax, impacting property investment returns. The calculation uses rateable value multiplied by the national non-domestic rating multiplier, currently 51.2p in the pound for 2024/25.</p>
-
-<p>A property with a £10,000 rateable value would face annual business rates of approximately £5,120, before any reliefs. Compare this to council tax, which ranges from roughly £1,000-£3,000 annually for most residential properties.</p>
-
-<p>Small business rate relief may apply if the rateable value is below £15,000, potentially reducing liability significantly. Properties with rateable values under £12,000 may qualify for 100% relief.</p>
 
 <h2>Student Accommodation Special Rules</h2>
 

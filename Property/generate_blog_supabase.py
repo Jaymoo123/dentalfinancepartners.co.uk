@@ -206,7 +206,7 @@ def main():
     print("\n[1/4] Fetching unused topic from Supabase...")
     topic_row = fetch_unused_topic()
     if not topic_row:
-        print("No topics to process. Add topics to the blog_topics table.")
+        print("No topics to process. Add topics to the blog_topics_property table.")
         return
     
     topic_id = topic_row["id"]

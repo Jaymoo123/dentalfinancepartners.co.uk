@@ -1,6 +1,7 @@
 ---
 title: "Xero for Solicitors: Complete Setup and Compliance Guide"
 slug: "xero-for-solicitors"
+canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/xero-for-solicitors"
 date: "2026-04-01"
 author: "Accounts for Lawyers"
 category: "Practice Finance & Cash Flow"
@@ -11,7 +12,6 @@ image: ""
 h1: "Xero for Solicitors: Complete Setup and Compliance Guide"
 summary: "Essential guide for solicitors considering Xero accounting software. Covers setup, SRA compliance requirements, and trust accounting functionality for UK legal practices."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/xero-for-solicitors"
 faqs:
   - question: "Can Xero handle SRA Accounts Rules compliance for solicitors?"
     answer: "Yes, Xero can meet SRA Accounts Rules requirements when properly configured. You need to set up separate tracking categories for client money and office money, use appropriate chart of accounts, and maintain proper audit trails. However, the software requires careful setup and ongoing management to ensure compliance."
@@ -82,14 +82,6 @@ faqs:
 <p>Create custom report templates that show client money balances by matter, outstanding client money liabilities, and cash flow forecasts. These reports are essential for practice management and SRA compliance.</p>
 
 <p>Monthly partner reports should include profit and loss by department, cash flow analysis, and work-in-progress summaries. Xero's dashboard can display key metrics like average lock-up days and collection rates.</p>
-
-<h2>VAT Considerations for Legal Practices</h2>
-
-<p>Legal services have specific VAT rules that Xero for solicitors must handle correctly. Most legal services are standard-rated, but some disbursements are exempt or zero-rated.</p>
-
-<p>Set up VAT codes correctly for different types of income and expenses. Court fees are typically exempt from VAT, while expert witness fees are standard-rated. Getting this wrong can cause significant compliance issues.</p>
-
-<p>Xero's VAT reporting functionality works well for legal practices, but ensure your chart of accounts reflects the different VAT treatments you encounter regularly.</p>
 
 <h2>Making Tax Digital Compliance</h2>
 

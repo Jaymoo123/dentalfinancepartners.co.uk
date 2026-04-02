@@ -45,7 +45,7 @@ GSC_CONFIG = {
         "property_type": "url-prefix",
         
         # Database
-        "blog_topics_table": "blog_topics",
+        "blog_topics_table": "blog_topics_dentists",
         
         # File paths
         "content_dir": "Dentists/web/src/content/blog",

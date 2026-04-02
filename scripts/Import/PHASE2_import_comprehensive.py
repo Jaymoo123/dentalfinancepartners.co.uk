@@ -146,7 +146,7 @@ if proceed == 'yes':
     # Import Dentists comprehensive
     d_imported, d_skipped, d_errors = import_topics(
         'PHASE2_COMPREHENSIVE_dentists.csv',
-        'blog_topics',
+        'blog_topics_dentists',
         'Dentists'
     )
     

@@ -17,6 +17,27 @@ export function buildBreadcrumbJsonLd(items: BreadcrumbItem[]) {
 
 export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
   const url = `${siteConfig.url}${path}`;
+
+  const authorOrg = {
+    "@type": "Organization" as const,
+    "@id": `${siteConfig.url}#organization`,
+    name: siteConfig.name,
+    legalName: siteConfig.legalName,
+    url: siteConfig.url,
+    description: siteConfig.description,
+    logo: {
+      "@type": "ImageObject" as const,
+      url: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
+    },
+    contactPoint: {
+      "@type": "ContactPoint" as const,
+      email: siteConfig.contact.email,
+      telephone: siteConfig.contact.phone,
+      contactType: "customer service",
+      availableLanguage: "English",
+    },
+  };
+
   const faq =
     post.faqs && post.faqs.length > 0
       ? {
@@ -41,20 +62,8 @@ export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
     description: post.metaDescription,
     datePublished: post.date,
     dateModified: post.date,
-    author: {
-      "@type": "Organization",
-      name: siteConfig.name,
-      url: siteConfig.url,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: siteConfig.name,
-      url: siteConfig.url,
-      logo: {
-        "@type": "ImageObject",
-        url: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
-      },
-    },
+    author: authorOrg,
+    publisher: authorOrg,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": url,

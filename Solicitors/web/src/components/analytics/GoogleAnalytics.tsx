@@ -5,6 +5,8 @@ type GoogleAnalyticsProps = {
 };
 
 export function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps) {
+  if (!measurementId || !/^G-[A-Z0-9]{6,}$/.test(measurementId)) return null;
+
   return (
     <>
       <Script

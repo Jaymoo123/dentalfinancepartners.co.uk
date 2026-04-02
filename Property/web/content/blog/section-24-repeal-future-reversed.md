@@ -1,7 +1,7 @@
 ---
 title: "Future of Section 24: Will It Be Reversed?"
 slug: "section-24-repeal-future-reversed"
-canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/section-24-repeal-future-reversed"
+canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-repeal-future-reversed"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

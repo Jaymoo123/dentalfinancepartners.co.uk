@@ -1,17 +1,17 @@
 ---
 title: "SRA Accountants Report: Essential Guide for Law Firms"
 slug: "sra-accountants-report"
+canonical: "https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/sra-accountants-report"
 date: "2026-04-01"
 author: "Accounts for Lawyers"
 category: "SRA Compliance & Trust Accounting"
-metaTitle: "SRA Accountants Report Guide for UK Law Firms | 2025"
+metaTitle: "SRA Accountants Report Guide for UK Law Firms | 2026"
 metaDescription: "Complete guide to SRA accountants reports for UK solicitors. Understand requirements, deadlines, qualified vs unqualified reports, and compliance obligations."
 altText: "UK solicitor reviewing SRA accountants report with calculator and legal documents on desk"
 image: ""
 h1: "SRA Accountants Report: What Every Law Firm Needs to Know"
 summary: "The SRA accountants report is a mandatory annual compliance requirement for solicitors handling client money. Understanding the process, deadlines, and potential issues can save your practice significant problems with the SRA."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/sra-accountants-report"
 faqs:
   - question: "What is the deadline for submitting my SRA accountants report?"
     answer: "Your SRA accountants report must be submitted within six months of your accounting period end. For example, if your year-end is 31 March, the report must reach the SRA by 30 September. This deadline is absolute with no automatic extensions available."
@@ -27,35 +27,17 @@ faqs:
 
 <p>Getting your SRA accountants report wrong can trigger regulatory investigations, disciplinary action, and significant costs. Yet many solicitors remain unclear about the requirements, deadlines, and implications of this essential compliance tool.</p>
 
-<h2>What is an SRA Accountants Report?</h2>
+<h2>Preparing for Your SRA Accountants Report</h2>
 
-<p>An <strong>SRA accountants report</strong> is an independent examination of your firm's client money handling and compliance with the SRA Accounts Rules. The report must be prepared by a qualified accountant and submitted annually to the SRA.</p>
+<p>Good preparation reduces the risk of qualification and makes the process more efficient:</p>
 
-<p>The report covers your firm's client account operations, including how you handle client money, maintain accounting records, and comply with the SRA Accounts Rules. It's not just a box-ticking exercise — it provides the SRA with assurance that client money is properly protected.</p>
+<p><strong>Maintain Monthly Reconciliations:</strong> Complete client money reconciliations every month without fail. Address discrepancies immediately and document your resolution.</p>
 
-<p>For example, a Manchester commercial law firm with £2.3 million in annual client money receipts would need their reporting accountant to examine all client account transactions, reconciliations, and compliance procedures over the accounting period.</p>
+<p><strong>Document Client Money Movements:</strong> Every client money receipt and payment needs proper authorisation and documentation. This includes client instructions, bills, and settlement statements.</p>
 
-<h2>Who Needs to Submit an SRA Accountants Report?</h2>
+<p><strong>Separate Office and Client Money:</strong> Never allow office money to enter client accounts, even temporarily. Use office money to pay bank charges and ensure VAT on disbursements is handled correctly.</p>
 
-<p>You must submit an SRA accountants report if your firm:</p>
-
-<ul>
-<li>Holds or receives client money during the accounting period</li>
-<li>Operates as a sole practitioner, partnership, or LLP handling client funds</li>
-<li>Has been required by the SRA to deliver a report (even without client money)</li>
-</ul>
-
-<p>The key threshold is handling client money, not the amount. Even if you only held £500 in client money for a single transaction, you'll typically need to submit a report.</p>
-
-<p>Some firms mistakenly believe they're exempt because they handle "minimal" client money. A Birmingham family law sole practitioner holding just £1,000 in matrimonial deposits still requires an SRA accountants report if they received client money during the accounting period.</p>
-
-<h2>SRA Accountants Report Deadlines</h2>
-
-<p>Your <strong>SRA accountants report</strong> must be delivered to the SRA within six months of your accounting period end. This deadline is absolute — there are no automatic extensions.</p>
-
-<p>For firms with a 31 March year-end, the report must reach the SRA by 30 September. If your accounting period ends on 30 April, you have until 31 October.</p>
-
-<p>Missing the deadline triggers automatic regulatory action. The SRA will impose conditions on your practising certificate and may require you to cease holding client money until compliance is restored.</p>
+<p><strong>Regular Training:</strong> Ensure all staff handling client money understand the SRA Accounts Rules. Regular training reduces the risk of inadvertent breaches.</p>
 
 <h2>Qualified vs Unqualified SRA Accountants Reports</h2>
 
@@ -80,16 +62,6 @@ faqs:
 
 <p>Qualified reports trigger enhanced SRA scrutiny. You'll need to explain the breaches and demonstrate corrective action. In serious cases, the SRA may impose conditions on your practice or investigate further.</p>
 
-<h2>Common SRA Accountants Report Issues</h2>
-
-<p>Several issues repeatedly cause problems in SRA accountants reports:</p>
-
-<p><strong>Client Money Reconciliation Failures:</strong> Your client money reconciliations must be completed monthly and identify all discrepancies. A London personal injury firm might handle 200+ client matters annually — without proper reconciliation controls, errors inevitably emerge.</p>
-
-<p><strong>Office Money in Client Account:</strong> Even temporary mixing of office and client money can qualify a report. This includes bank charges on client accounts or VAT on disbursements incorrectly charged to client money.</p>
-
-<p><strong>Client Money Withdrawal Irregularities:</strong> You can only withdraw client money in specific circumstances defined by the SRA Accounts Rules. Premature withdrawal — even with client consent — may breach the rules.</p>
-
 <h2>Choosing Your Reporting Accountant</h2>
 
 <p>Your reporting accountant must hold specific qualifications recognised by the SRA. They need detailed knowledge of the SRA Accounts Rules and legal sector compliance requirements.</p>
@@ -105,18 +77,6 @@ faqs:
 <p>Qualified reports or reports from new firms may trigger further investigation. The SRA might request additional information, impose practice conditions, or schedule a compliance visit.</p>
 
 <p>For serious breaches, the SRA may refer matters to the Solicitors Disciplinary Tribunal. This can result in fines, practice restrictions, or in extreme cases, striking off.</p>
-
-<h2>Preparing for Your SRA Accountants Report</h2>
-
-<p>Good preparation reduces the risk of qualification and makes the process more efficient:</p>
-
-<p><strong>Maintain Monthly Reconciliations:</strong> Complete client money reconciliations every month without fail. Address discrepancies immediately and document your resolution.</p>
-
-<p><strong>Document Client Money Movements:</strong> Every client money receipt and payment needs proper authorisation and documentation. This includes client instructions, bills, and settlement statements.</p>
-
-<p><strong>Separate Office and Client Money:</strong> Never allow office money to enter client accounts, even temporarily. Use office money to pay bank charges and ensure VAT on disbursements is handled correctly.</p>
-
-<p><strong>Regular Training:</strong> Ensure all staff handling client money understand the SRA Accounts Rules. Regular training reduces the risk of inadvertent breaches.</p>
 
 <h2>Costs and Timing</h2>
 

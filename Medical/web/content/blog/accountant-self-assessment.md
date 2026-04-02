@@ -1,6 +1,7 @@
 ---
 title: "Accountant Self Assessment for UK Medical Professionals: Complete Guide"
 slug: "accountant-self-assessment"
+canonical: ""
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "GP Tax & Accounts"
@@ -11,7 +12,6 @@ image: ""
 h1: "Accountant Self Assessment for UK Medical Professionals"
 summary: "Understanding when to use an accountant for self assessment can save UK medical professionals thousands in tax and hours of stress. This guide covers costs, benefits, and how to choose the right specialist."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much does accountant self assessment cost for doctors?"
     answer: "Accountant self assessment fees for UK medical professionals typically range from £400-1,500 depending on complexity. Simple salaried GP returns cost £400-600, while complex cases involving partnerships, locum work, and private practice can cost £900-1,500. These fees are tax-deductible, reducing the actual cost by 20-45% depending on your tax rate."
@@ -19,8 +19,6 @@ faqs:
     answer: "Yes, medical professionals benefit significantly from specialist accountants who understand NHS pension rules, GP partnership taxation, locum IR35 issues, and medical expense claims. Generic accountants often miss valuable tax savings opportunities specific to medical careers. Specialists typically save clients more than their fees through better tax planning."
   - question: "When should doctors switch from DIY to professional self assessment help?"
     answer: "Consider professional accountant self assessment help when you become a GP partner, earn over £100k, have significant locum income, face NHS pension allowance issues, or add private practice work. The complexity of medical taxation often justifies professional support even for seemingly straightforward cases, especially given doctors' high hourly value."
-  - question: "What documents do I need for accountant self assessment services?"
-    answer: "Gather P60s from all employers, P45s for job changes, bank statements showing professional expenses, NHS pension statements, locum payment records, and private practice income documentation. Start collecting these in August/September as good medical accountants book up quickly approaching the January deadline."
 ---
 
 <p>As a UK medical professional, deciding whether to handle your own self assessment or hire an accountant can significantly impact both your tax bill and your time. With complex income streams from NHS work, locum positions, and private practice, most doctors benefit from professional <strong>accountant self assessment</strong> services.</p>
@@ -43,31 +41,6 @@ faqs:
 </ul>
 
 <p>For example, a GP partner earning £120k from the practice plus £30k locum work faces complex basis period calculations, pension allowance tapering, and expense allocation between different income streams.</p>
-
-<h2>Cost of Accountant Self Assessment Services</h2>
-
-<p>Professional <strong>accountant self assessment</strong> fees for medical professionals typically range from £400 to £1,500, depending on complexity:</p>
-
-<ul>
-<li><strong>Simple cases:</strong> £400-600 (salaried GP with basic expenses)</li>
-<li><strong>Standard complexity:</strong> £600-900 (GP partner or consultant with standard income)</li>
-<li><strong>Complex cases:</strong> £900-1,500 (multiple income sources, pension issues, private practice)</li>
-</ul>
-
-<p>These fees are tax-deductible professional expenses, reducing the actual cost. A £800 fee costs £640 after basic rate tax relief, or £520 for higher rate taxpayers.</p>
-
-<h3>What's Included in Professional Services</h3>
-
-<p>Quality medical accounting firms provide comprehensive support beyond just completing forms:</p>
-
-<ul>
-<li>Tax return preparation and submission</li>
-<li>Tax planning advice for the following year</li>
-<li>NHS pension annual allowance calculations</li>
-<li>Expense optimization and record-keeping guidance</li>
-<li>HMRC correspondence handling</li>
-<li>Quarterly check-ins for estimated tax calculations</li>
-</ul>
 
 <h2>Benefits of Professional Accountant Self Assessment</h2>
 
@@ -117,20 +90,6 @@ faqs:
 <li>What's your experience with tapered allowance cases?</li>
 <li>Do you provide year-round support or just annual returns?</li>
 </ul>
-
-<h2>Self Assessment vs Professional Help: When to Make the Switch</h2>
-
-<p>Many medical professionals start with DIY self assessment but switch to professional help as their careers progress. Key trigger points include:</p>
-
-<ul>
-<li>Becoming a GP partner</li>
-<li>Starting significant locum work</li>
-<li>Reaching higher rate tax thresholds</li>
-<li>Developing pension allowance issues</li>
-<li>Adding private practice income</li>
-</ul>
-
-<p>The complexity of medical taxation often justifies professional <strong>accountant self assessment</strong> support even for relatively straightforward cases.</p>
 
 <h2>Getting Started with Professional Self Assessment Help</h2>
 

@@ -1,7 +1,7 @@
 ---
 title: "Corporation Tax Accountants for UK Property Companies"
 slug: "accountant-corporation-tax-property-companies"
-canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/accountant-corporation-tax-property-companies"
+canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/accountant-corporation-tax-property-companies"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"
@@ -27,25 +27,6 @@ faqs:
 
 <p>Corporation tax rates and rules change frequently, with property-specific implications that generalist accountants often miss. Working with a specialist property tax accountant helps you navigate these complexities effectively.</p>
 
-<h2>Corporation Tax Rates for Property Companies</h2>
-
-<p>Property companies pay corporation tax on their profits at the standard corporate rates. For 2025/26, the main rate is 25% for companies with profits over £250,000, with a small profits rate of 19% for profits up to £50,000.</p>
-
-<p>Marginal relief applies between £50,000 and £250,000, creating an effective rate between 19% and 25%. A specialist <strong>accountant corporation tax</strong> service calculates these rates accurately and identifies planning opportunities around the thresholds.</p>
-
-<h2>Property-Specific Corporation Tax Issues</h2>
-
-<p>Property companies encounter unique corporation tax challenges that require specialist knowledge:</p>
-
-<ul>
-<li><strong>Rental income timing</strong> - Rent received in advance creates specific corporation tax obligations</li>
-<li><strong>Capital allowances</strong> - Plant and machinery within rental properties qualify for tax relief</li>
-<li><strong>Interest deductibility</strong> - No Section 24 restrictions apply to companies, but other anti-avoidance rules may</li>
-<li><strong>Pre-trading expenses</strong> - Property acquisition costs may qualify for relief against future profits</li>
-</ul>
-
-<p>These issues require careful consideration in your corporation tax computation. An experienced property <strong>accountant corporation tax</strong> specialist ensures nothing is overlooked.</p>
-
 <h2>Corporation Tax Planning for Property Portfolios</h2>
 
 <p>Effective corporation tax planning goes beyond basic compliance. Strategic planning opportunities include:</p>
@@ -61,6 +42,19 @@ faqs:
 <h3>Dividend Planning</h3>
 
 <p>Property company profits distributed as dividends avoid the additional corporation tax charges. However, dividend planning requires careful coordination with personal tax positions of shareholders.</p>
+
+<h2>Property-Specific Corporation Tax Issues</h2>
+
+<p>Property companies encounter unique corporation tax challenges that require specialist knowledge:</p>
+
+<ul>
+<li><strong>Rental income timing</strong> - Rent received in advance creates specific corporation tax obligations</li>
+<li><strong>Capital allowances</strong> - Plant and machinery within rental properties qualify for tax relief</li>
+<li><strong>Interest deductibility</strong> - No Section 24 restrictions apply to companies, but other anti-avoidance rules may</li>
+<li><strong>Pre-trading expenses</strong> - Property acquisition costs may qualify for relief against future profits</li>
+</ul>
+
+<p>These issues require careful consideration in your corporation tax computation. An experienced property <strong>accountant corporation tax</strong> specialist ensures nothing is overlooked.</p>
 
 <h2>Compliance and Filing Requirements</h2>
 

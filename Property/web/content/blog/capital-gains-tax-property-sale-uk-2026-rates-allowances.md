@@ -1,7 +1,7 @@
 ---
 title: "Capital Gains Tax on Property Sale UK 2026: Rates and Allowances"
 slug: "capital-gains-tax-property-sale-uk-2026-rates-allowances"
-canonical: "https://accountsforproperty.co.uk/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances"
+canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Capital Gains Tax"

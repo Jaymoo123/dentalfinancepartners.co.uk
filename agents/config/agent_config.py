@@ -21,7 +21,7 @@ ACTIVE_NICHES = ["Dentists", "Property", "Medical", "Solicitors"]
 NICHE_CONFIG = {
     "Dentists": {
         "enabled": True,
-        "blog_topics_table": "blog_topics",
+        "blog_topics_table": "blog_topics_dentists",
         "web_path": "Dentists/web",
         "source_identifier": "dentists",
         "ga4_measurement_id": "G-273RJY0LZQ",

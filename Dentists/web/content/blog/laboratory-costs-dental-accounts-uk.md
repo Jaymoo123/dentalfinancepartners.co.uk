@@ -1,6 +1,7 @@
 ---
 title: "Laboratory Costs in Dental Accounts: A UK Guide"
 slug: "laboratory-costs-dental-accounts-uk"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/laboratory-costs-dental-accounts-uk"
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "Practice accounting"
@@ -11,7 +12,6 @@ image: ""
 h1: "Laboratory Costs in Dental Accounts: How to Account for Lab Expenses"
 summary: "Laboratory costs are often one of the largest expenses in dental practice accounts. Understanding how to account for them correctly affects your tax liability and business reporting."
 schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/laboratory-costs-dental-accounts-uk"
 faqs:
   - question: "Should laboratory costs be treated as cost of sales or expenses?"
     answer: "Laboratory costs for patient-specific treatments should typically be classified as cost of sales, not general expenses. This gives you accurate gross profit margins and better matches costs with related revenue. General lab expenses like equipment maintenance remain as practice overheads."
@@ -48,24 +48,6 @@ faqs:
 
 <p>The distinction matters because cost of sales affects your gross profit calculation, while general expenses impact your net profit after all overheads.</p>
 
-<h2>VAT Treatment of Laboratory Costs</h2>
-
-<p>Most UK dental laboratories are VAT registered, so you'll pay VAT on their invoices. This VAT is typically recoverable if your practice is VAT registered, regardless of whether the patient treatment was NHS or private.</p>
-
-<p>For NHS work, you can still recover the VAT on <strong>lab costs</strong> even though NHS patient charges are exempt from VAT. The laboratory expense is an input cost to your business operations.</p>
-
-<p>Private work involves charging VAT to patients, so the lab VAT becomes part of your standard VAT accounting cycle.</p>
-
-<h2>Timing of Laboratory Cost Recognition</h2>
-
-<p>The timing of when you account for <strong>laboratory costs</strong> depends on your accounting method:</p>
-
-<p><strong>Cash basis:</strong> Record the expense when you pay the lab invoice. Most smaller practices use this method as it's simpler and matches cash flow.</p>
-
-<p><strong>Accruals basis:</strong> Record the expense when you receive the lab work, regardless of payment timing. This gives better matching with patient revenue but requires more detailed records.</p>
-
-<p>Practices with turnover over £150,000 must use accruals basis. Those below can choose either method, but should stick with it consistently.</p>
-
 <h2>Record Keeping for Lab Expenses</h2>
 
 <p>Proper records for <strong>laboratory expenses</strong> should include:</p>
@@ -94,5 +76,26 @@ faqs:
 <p>For significant outstanding lab work, your accountant may need to accrue estimated costs to match them with related patient revenue.</p>
 
 <p>If you're considering <a href="/blog/practice-acquisition-financial-due-diligence">practice acquisition financial due diligence</a>, accurate lab cost accounting becomes crucial for potential buyers assessing your true profit margins.</p>
+
+<h2>VAT Treatment of Laboratory Costs</h2>
+
+<p>VAT on dental laboratory costs requires careful handling. Dental treatment itself is VAT-exempt, but the lab work you purchase is a standard-rated input. If your practice is VAT registered — typically because you offer facial aesthetics or other taxable services — you can recover VAT on lab costs through your VAT return.</p>
+
+<p>Practices that aren't VAT registered absorb the VAT as part of the cost. This makes the gross lab invoice the relevant figure for your accounts. When comparing costs between labs, always compare VAT-inclusive prices if you can't reclaim.</p>
+
+<p>For practices with mixed NHS and private work, ensure your accountant applies the correct partial exemption method if you're VAT registered. This determines what proportion of input VAT on shared costs (including lab work) you can recover.</p>
+
+<h2>Choosing Between In-House and External Labs</h2>
+
+<p>Some practices invest in in-house laboratory facilities, particularly for same-day restorations using CAD/CAM technology. The accounting treatment differs significantly from external lab costs:</p>
+
+<ul>
+<li><strong>Equipment</strong> — capitalised and depreciated, with capital allowances claimed over the asset's life.</li>
+<li><strong>Materials</strong> — treated as consumables and expensed when used.</li>
+<li><strong>Technician salaries</strong> — staff costs, not cost of sales.</li>
+<li><strong>Maintenance</strong> — general practice expenses.</li>
+</ul>
+
+<p>The financial case for in-house lab work depends on volume. Practices producing 15+ units per week often break even compared to external costs, with higher volumes generating clear savings. Below that threshold, external labs usually offer better value.</p>
 
 <p>Laboratory cost accounting might seem straightforward, but proper classification and timing can significantly impact your financial reporting and tax position. When in doubt, speak to a specialist dental accountant who understands the nuances of practice-specific expenses.</p>

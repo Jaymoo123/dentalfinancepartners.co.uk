@@ -1,7 +1,7 @@
 ---
 title: "Property Company Profit Extraction: Salary vs Dividends"
 slug: "property-company-profit-extraction-salary-vs-dividends"
-canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/property-company-profit-extraction-salary-vs-dividends"
+canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/property-company-profit-extraction-salary-vs-dividends"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"
@@ -15,12 +15,10 @@ schema: ""
 faqs:
   - question: "What is the most tax-efficient salary level for property company directors?"
     answer: "For most property company directors, setting salary at the National Insurance threshold (£12,570 for 2025/26) is optimal. This preserves your National Insurance record for state pension purposes while avoiding income tax and minimising National Insurance costs. Higher salaries may be beneficial if you need pension contribution capacity or consistent income for mortgage applications."
-  - question: "Can I pay dividends if my property company makes a loss?"
-    answer: "No, dividends can only be legally paid from accumulated profits after corporation tax. If your property company makes a loss in the current year, you can only pay dividends if you have sufficient retained profits from previous years. Paying dividends without adequate profits is illegal and can result in personal liability to repay the amounts."
-  - question: "How do dividend tax rates compare to salary for higher rate taxpayers?"
-    answer: "Higher rate taxpayers pay 33.75% dividend tax compared to 40% income tax on salary. However, dividends come from post-corporation tax profits, so the effective rate is higher. Additionally, dividends don't attract National Insurance. For higher rate taxpayers, the optimal mix typically involves minimal salary and dividend extraction, but professional advice is essential for accurate calculations."
   - question: "Can my spouse receive dividends from our property company?"
     answer: "Yes, if your spouse is a genuine shareholder in the property company, they can receive dividends proportionate to their shareholding. This can be tax-efficient if they have unused personal allowance or basic rate band capacity. However, the shareholding must be genuine, and dividends must be paid in proportion to share ownership to comply with tax rules."
+  - question: "How do dividend tax rates compare to salary for higher rate taxpayers?"
+    answer: "Higher rate taxpayers pay 33.75% dividend tax compared to 40% income tax on salary. However, dividends come from post-corporation tax profits, so the effective rate is higher. Additionally, dividends don't attract National Insurance. For higher rate taxpayers, the optimal mix typically involves minimal salary and dividend extraction, but professional advice is essential for accurate calculations."
 ---
 
 <p>Once you've incorporated your property business, the next critical decision is how to extract profits from your company. The two main options are taking a salary or paying dividends, each with different tax implications that can significantly impact your net income.</p>
@@ -54,22 +52,6 @@ faqs:
 </ul>
 
 <p>The sweet spot for many property company directors is setting salary at the National Insurance threshold (£12,570 for 2025/26). This preserves your National Insurance record for state pension purposes while minimising tax costs.</p>
-
-<h2>How Dividend Extraction Works</h2>
-
-<p>Dividends can only be paid from company profits after corporation tax has been deducted. Your property company pays 25% corporation tax on profits above £250,000, or 19% on profits below this threshold.</p>
-
-<h3>Dividend Tax Rates</h3>
-
-<p>For 2025/26, dividend tax rates are:</p>
-
-<ul>
-<li><strong>Basic rate:</strong> 8.75% (on dividends within the basic rate band)</li>
-<li><strong>Higher rate:</strong> 33.75% (on dividends within the higher rate band)</li>
-<li><strong>Additional rate:</strong> 39.35% (on dividends above £125,140)</li>
-</ul>
-
-<p>You also receive a dividend allowance of £1,000 per year, meaning the first £1,000 of dividends are tax-free.</p>
 
 <h2>Comparing the Tax Burden</h2>
 

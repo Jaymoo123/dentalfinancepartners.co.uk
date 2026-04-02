@@ -1,6 +1,7 @@
 ---
 title: "Associate vs Self Employed Dentist: Tax & Employment Status Guide"
 slug: "dental-associate-vs-self-employed-tax-employment-status"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dental-associate-vs-self-employed-tax-employment-status"
 date: "2026-03-31"
 author: "Dental Finance Partners"
 category: "Associate tax"
@@ -11,7 +12,6 @@ image: ""
 h1: "Dental Associate vs Self Employed: Understanding Your Tax and Employment Status"
 summary: "The distinction between associate and self-employed dentist status affects your tax obligations, employment rights, and financial planning. Understanding these differences is crucial for compliance and optimising your position."
 schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dental-associate-vs-self-employed-tax-employment-status"
 faqs:
   - question: "How do I know if I'm genuinely self-employed as a dental associate?"
     answer: "Look at the reality of your working relationship, not just your contract. If you have control over how and when you work, bear financial risk, can substitute others, and aren't integrated into the practice as an employee would be, you're likely genuinely self-employed. However, many \"self-employed associates\" are actually employees for tax purposes."
@@ -67,35 +67,6 @@ faqs:
 </ul>
 
 <p>Your employer handles tax deductions, but you'll still need to complete a Self Assessment if you have other income or claimable expenses. For detailed guidance on this process, see our guide on <a href="/blog/associate-dentist-tax-self-assessment-uk">associate dentist tax and Self Assessment</a>.</p>
-
-<h2>Self-Employed Dentist Status</h2>
-
-<p>True self-employment in dentistry typically involves:</p>
-
-<ul>
-<li>Running your own dental business</li>
-<li>Bearing financial risk (you could make a loss)</li>
-<li>Having multiple clients or practices</li>
-<li>Controlling how and when you work</li>
-<li>Providing your own equipment or materials</li>
-<li>Being able to substitute someone else to do the work</li>
-</ul>
-
-<p>This might apply to dentists who work across multiple practices, provide specialist services to various clients, or operate mobile dental services.</p>
-
-<h3>Tax Obligations for Self-Employed Dentists</h3>
-
-<p>Self-employed dentists must:</p>
-
-<ul>
-<li>Register for Self Assessment with HMRC</li>
-<li>Keep detailed business records</li>
-<li>File annual tax returns</li>
-<li>Pay income tax and Class 2/Class 4 National Insurance</li>
-<li>Make payments on account for the following year</li>
-</ul>
-
-<p>You can deduct legitimate business expenses from your income, potentially including equipment, training, professional memberships, and travel costs.</p>
 
 <h2>The Grey Area: Associate vs Self Employed Confusion</h2>
 

@@ -128,7 +128,7 @@ p_imported, p_skipped, p_errors = import_topics(
 # Import Dentists comprehensive
 d_imported, d_skipped, d_errors = import_topics(
     'PHASE2_COMPREHENSIVE_dentists.csv',
-    'blog_topics',
+    'blog_topics_dentists',
     'Dentists',
     priority=9
 )

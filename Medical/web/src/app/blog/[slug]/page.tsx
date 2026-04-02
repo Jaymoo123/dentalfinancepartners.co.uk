@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) {
     return {};
   }
-  const canonical = post.canonical ?? `${siteConfig.url}/blog/${post.slug}`;
+  const canonical = post.canonical || `${siteConfig.url}/blog/${post.slug}`;
   const ogImage = post.image || siteConfig.publisherLogoUrl;
   
   return {

@@ -1,6 +1,7 @@
 ---
 title: "Dental Practice VAT & Compliance: Complete Guide for UK Dentists"
 slug: "dental-practice-vat-compliance-guide-uk"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-compliance/dental-practice-vat-compliance-guide-uk"
 date: "2026-04-01"
 author: "Dental Finance Partners"
 category: "VAT & compliance"
@@ -11,7 +12,6 @@ image: ""
 h1: "Dental Practice VAT & Compliance: Complete Guide for UK Dentists"
 summary: "Everything UK practice owners need to know about VAT registration, rates and compliance requirements for dental practices."
 schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-compliance/dental-practice-vat-compliance-guide-uk"
 faqs:
   - question: "Do I need to register for VAT if my dental practice only does NHS work?"
     answer: "NHS contract payments count towards the VAT registration threshold, so you'll need to register once your total practice turnover exceeds £85,000. However, NHS dental treatment is exempt from VAT, so you won't charge VAT to patients but still need to comply with VAT registration and reporting requirements."
@@ -19,8 +19,6 @@ faqs:
     answer: "If your practice only provides exempt dental services, you typically cannot reclaim VAT on equipment or other purchases. Only practices that provide standard-rated (taxable) services can reclaim input VAT, and only in proportion to their taxable supplies."
   - question: "How do I determine if dental treatment is exempt or standard-rated for VAT?"
     answer: "Treatment that restores normal oral function or treats disease is typically exempt from VAT. Purely cosmetic procedures are usually standard-rated at 20%. For mixed treatments, look at the predominant purpose and keep detailed clinical notes justifying your VAT treatment decisions."
-  - question: "What happens if I get my dental practice VAT calculations wrong?"
-    answer: "VAT errors can result in penalties, interest charges, and demands for unpaid VAT dating back up to four years. Common issues include incorrect classification of treatments and partial exemption calculations. It's worth getting regular VAT reviews from a specialist to avoid costly mistakes."
 ---
 
 <p>Understanding <strong>dental practice VAT</strong> is crucial for every UK practice owner. VAT affects your pricing, cash flow, and compliance obligations in ways that can significantly impact your practice's finances.</p>
@@ -38,30 +36,6 @@ faqs:
 <p>Some practices benefit from voluntary VAT registration before hitting the threshold. This might make sense if you're making significant purchases of equipment or practice improvements, as you can reclaim VAT on these costs.</p>
 
 <p>However, voluntary registration means charging VAT to private patients, which can affect your competitive position. Consider this carefully before making the decision.</p>
-
-<h2>VAT Rates for Dental Services</h2>
-
-<p><strong>Dental practice VAT</strong> involves several different rates depending on the type of service you provide.</p>
-
-<h3>Exempt Services (0% VAT)</h3>
-
-<ul>
-<li>NHS dental treatment under contract</li>
-<li>Private dental treatment that would be available on the NHS</li>
-<li>Orthodontic treatment (in most cases)</li>
-<li>Oral surgery performed by registered dentists</li>
-</ul>
-
-<h3>Standard Rate Services (20% VAT)</h3>
-
-<ul>
-<li>Cosmetic dentistry (teeth whitening, veneers for appearance)</li>
-<li>Implants (unless replacing lost teeth for medical reasons)</li>
-<li>Some advanced restorative work</li>
-<li>Hygienist services in some circumstances</li>
-</ul>
-
-<p>The distinction between exempt and standard rate can be complex. Treatment that restores normal function is typically exempt, while purely cosmetic procedures are standard rated.</p>
 
 <h2>Mixed Supply Challenges</h2>
 

@@ -1,12 +1,12 @@
 ---
 title: "Landlord VAT Registration: When Is It Required?"
 slug: "landlord-vat-registration-when-required"
-canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/landlord-vat-registration-when-required"
+canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/landlord-vat-registration-when-required"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Portfolio Management"
 metaTitle: "Landlord VAT Registration: When Required & How to Register"
-metaDescription: "Find out when UK landlords need VAT registration, current thresholds, and how property business rates affect your obligations. Complete guide for 2025/26."
+metaDescription: "Find out when UK landlords need VAT registration, current thresholds, and how property business rates affect your obligations. Complete guide for 2026/26."
 altText: "UK landlord reviewing VAT registration documents with calculator and property paperwork"
 image: ""
 h1: "Landlord VAT Registration: When Is It Required?"
@@ -27,7 +27,7 @@ faqs:
 
 <p>However, the picture becomes more complex if you're renting commercial properties, providing furnished holiday accommodation, or offering additional services to tenants. Understanding when VAT registration becomes mandatory can save you from unexpected penalties and compliance issues.</p>
 
-<h2>VAT Registration Thresholds for 2025/26</h2>
+<h2>VAT Registration Thresholds for 2026/26</h2>
 
 <p>The current VAT registration threshold is £90,000 for the 2025/26 tax year. This means if your <strong>taxable supplies</strong> exceed this amount in any 12-month period, you must register for VAT within 30 days.</p>
 
@@ -89,19 +89,6 @@ faqs:
 <p>Your property business incurs significant VAT on expenses like renovation costs, professional fees, or maintenance. Registration allows you to reclaim input VAT on these costs, potentially generating cash flow benefits.</p>
 
 <p>However, voluntary registration also means charging 20% VAT on taxable supplies, which could make your commercial properties less competitive unless your tenants can reclaim the VAT themselves.</p>
-
-<h2>VAT Registration Process for Landlords</h2>
-
-<p>If you determine that VAT registration is required, the process involves:</p>
-
-<ol>
-<li>Registering online through HMRC's VAT registration service</li>
-<li>Providing details of your property business activities</li>
-<li>Specifying which supplies are taxable vs exempt</li>
-<li>Setting up VAT accounting procedures</li>
-</ol>
-
-<p>Once registered, you'll need to submit quarterly VAT returns and maintain detailed records of all transactions. This adds administrative burden but ensures compliance with HMRC requirements.</p>
 
 <h2>Record Keeping Requirements</h2>
 

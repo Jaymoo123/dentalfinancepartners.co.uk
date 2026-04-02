@@ -1,7 +1,7 @@
 ---
 title: "Rental Income Tax UK: Complete Guide for Landlords 2025"
 slug: "rental-income-tax-uk-complete-guide-landlords"
-canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords"
+canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"
@@ -106,21 +106,6 @@ faqs:
 <h3>Rent-a-Room Relief</h3>
 
 <p>If you rent out a room in your main home, you can earn up to £7,500 per year tax-free under rent-a-room relief. This applies to live-in arrangements only.</p>
-
-<h2>Calculating Your Rental Income Tax</h2>
-
-<p>Follow these steps to calculate your rental income tax liability:</p>
-
-<ol>
-<li>Add up all rental income received during the tax year</li>
-<li>Deduct all allowable expenses (except mortgage interest for individuals)</li>
-<li>Calculate your net rental profit</li>
-<li>Add this to your other income to find your total income</li>
-<li>Apply the appropriate tax rates</li>
-<li>Deduct any basic rate credit for mortgage interest (individuals only)</li>
-</ol>
-
-<p>For complex calculations involving multiple properties or significant expenses, consider using professional <a href="/calculators">calculators</a> or seeking specialist advice.</p>
 
 <h2>Record Keeping and Compliance</h2>
 

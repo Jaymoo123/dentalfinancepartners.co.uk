@@ -1,6 +1,7 @@
 ---
 title: "Locum Doctor Limited Company: Pros and Cons Explained"
 slug: "locum-doctor-limited-company-pros-and-cons"
+canonical: ""
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "Locum Tax"
@@ -11,14 +12,11 @@ image: ""
 h1: "Locum Doctor Limited Company: Pros and Cons Explained"
 summary: "Deciding whether to operate through a limited company as a locum doctor? We examine the key pros and cons, from tax efficiency to IR35 compliance requirements."
 schema: ""
-canonical: ""
 faqs:
   - question: "What are the main tax advantages of a locum doctor limited company?"
     answer: "The main tax advantages include potential corporation tax savings (19-25% vs 40-45% income tax), dividend extraction strategies, broader business expense deductions, and flexible profit timing. However, IR35 rules significantly impact these benefits for most NHS locum work."
   - question: "How does IR35 affect locum doctor limited companies?"
     answer: "IR35 determines whether locum work is treated as employment or genuine contracting. Most NHS trusts now apply blanket IR35 determinations, treating locums as employees for tax purposes. This eliminates company tax advantages while retaining administrative burdens and costs."
-  - question: "What are the typical running costs of a locum doctor limited company?"
-    answer: "Annual costs typically include £1,500-3,000 for professional accounting, £500-800 for company secretarial services, professional indemnity insurance, and potential VAT registration fees. Total running costs often exceed £3,000 annually before considering time commitments."
   - question: "At what income level does a limited company become worthwhile for locum doctors?"
     answer: "Limited companies typically become cost-effective above £60,000-70,000 annual earnings, assuming favorable IR35 status. Below this threshold, administrative costs often exceed tax savings. The exact break-even point depends on individual circumstances and contract types."
 ---
@@ -26,32 +24,6 @@ faqs:
 <p>Many locum doctors consider setting up a limited company to manage their medical work, but understanding the <strong>locum doctor limited company pros and cons</strong> is essential before making this decision. The tax landscape for locums has become increasingly complex, particularly with IR35 legislation affecting how medical professionals can structure their work arrangements.</p>
 
 <p>This guide examines the key advantages and disadvantages of operating as a limited company, helping you make an informed decision about the most suitable structure for your locum practice.</p>
-
-<h2>Advantages of a Locum Doctor Limited Company</h2>
-
-<h3>Tax Efficiency Potential</h3>
-
-<p>The primary attraction of a limited company is potential tax savings through profit extraction strategies. Corporation tax rates (25% for profits over £250k, 19% for smaller companies) can be lower than higher rate income tax (40%) and additional rate tax (45%).</p>
-
-<p>A locum earning £80,000 annually might save £3,000-5,000 per year through dividend extraction, depending on their total income and personal circumstances. However, these savings depend heavily on IR35 status and total income levels.</p>
-
-<h3>Professional Credibility</h3>
-
-<p>Operating through a limited company can enhance professional standing with some healthcare providers and agencies. It demonstrates business acumen and may open doors to higher-value contracts or direct relationships with trusts.</p>
-
-<p>Many private hospitals and healthcare groups prefer working with incorporated professionals, viewing it as a sign of established practice and professional commitment.</p>
-
-<h3>Business Expense Deductions</h3>
-
-<p>Limited companies can claim a broader range of business expenses against corporation tax. This includes professional development costs, travel between assignments, professional indemnity insurance, and equipment purchases.</p>
-
-<p>The company structure also allows for more sophisticated expense planning, including pension contributions up to the annual allowance limits.</p>
-
-<h3>Continuity and Succession Planning</h3>
-
-<p>A company structure provides continuity beyond individual involvement. This becomes important if you plan to build a larger locum business, take on associates, or eventually sell the practice.</p>
-
-<p>The corporate structure also facilitates business banking relationships and can make it easier to secure professional loans or equipment finance.</p>
 
 <h2>Disadvantages of Operating Through a Limited Company</h2>
 

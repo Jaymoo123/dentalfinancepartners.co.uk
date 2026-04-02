@@ -11,7 +11,7 @@ image: ""
 h1: "Solicitor VAT Accounting: A Complete Guide for UK Law Firms"
 summary: "VAT accounting for solicitors involves specific rules around legal services, disbursement treatment, and client money handling. Understanding these requirements is essential for compliance and cash flow management."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/vat-compliance/solicitor-vat-accounting-guide"
+canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/solicitor-vat-accounting-guide"
 faqs:
   - question: "Do all solicitors need to register for VAT?"
     answer: "Only if annual taxable turnover exceeds £90,000. However, many solicitors voluntarily register below this threshold to recover VAT on business expenses and appear more established to clients."

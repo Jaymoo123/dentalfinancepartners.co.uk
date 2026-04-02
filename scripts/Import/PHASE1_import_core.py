@@ -68,7 +68,7 @@ def import_topics(csv_path, table_name, site_name):
                 'slug': topic['slug'],
                 'used': False
             }
-        else:  # blog_topics
+        else:  # blog_topics_dentists
             data = {
                 'topic': topic['title'],
                 'category': topic['category'],
@@ -145,7 +145,7 @@ p_imported, p_skipped, p_errors = import_topics(
 # Import Dentists
 d_imported, d_skipped, d_errors = import_topics(
     'PHASE1_CORE_dentists.csv',
-    'blog_topics',
+    'blog_topics_dentists',
     'Dentists'
 )
 

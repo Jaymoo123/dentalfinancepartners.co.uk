@@ -123,7 +123,7 @@ class MonitoringDashboard:
             )
             
             # Get unused topics
-            table_name = "blog_topics" if niche == "Dentists" else "blog_topics_property"
+            table_name = "blog_topics_dentists" if niche == "Dentists" else "blog_topics_property"
             unused_topics = await self.supabase.select(
                 table_name,
                 filters={"used": False}

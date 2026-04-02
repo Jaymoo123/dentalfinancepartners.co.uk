@@ -1,11 +1,11 @@
 ---
 title: "Landlord Insurance Tax Deductible: What Can You Claim?"
 slug: "landlord-insurance-tax-deductible"
-canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/landlord-insurance-tax-deductible"
+canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/landlord-insurance-tax-deductible"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"
-metaTitle: "Landlord Insurance Tax Deductible: Complete Guide 2025"
+metaTitle: "Landlord Insurance Tax Deductible: Complete Guide 2026"
 metaDescription: "Discover which landlord insurance premiums are tax deductible. Complete guide to claiming building insurance, liability cover and more on your UK property tax return."
 altText: "UK property insurance documents and calculator showing tax deductible landlord insurance claims"
 image: ""
@@ -27,23 +27,15 @@ faqs:
 
 <p>For most landlords, insurance costs typically range from £200 to £800 per property annually. On a portfolio of five BTL properties, this could mean £1,000 to £4,000 in tax-deductible expenses each year.</p>
 
-<h2>Which Landlord Insurance is Tax Deductible?</h2>
+<h2>When Landlord Insurance Isn't Tax Deductible</h2>
 
-<p>HMRC allows you to deduct insurance premiums that are "wholly and exclusively" for your rental business. This covers most standard landlord insurance policies.</p>
+<p>Some insurance types don't qualify for tax relief, even when connected to property.</p>
 
-<p><strong>Fully deductible insurance types include:</strong></p>
+<p><strong>Life insurance</strong> premiums aren't allowable, even if intended to cover mortgage payments on rental properties. HMRC treats these as personal expenses regardless of the underlying purpose.</p>
 
-<ul>
-<li>Buildings insurance for rental properties</li>
-<li>Contents insurance (for furnished lettings)</li>
-<li>Landlord liability insurance</li>
-<li>Legal expenses insurance</li>
-<li>Rent guarantee insurance</li>
-<li>Malicious damage cover</li>
-<li>Loss of rent insurance</li>
-</ul>
+<p><strong>Income protection insurance</strong> follows similar rules. While it might replace rental income if you're unable to work, the premiums aren't considered business expenses.</p>
 
-<p>These premiums can be claimed in full against your rental income, reducing your taxable profit pound for pound.</p>
+<p><strong>Motor insurance</strong> requires apportionment. If you use your car 20% for property business (viewing tenants, maintenance visits), you can claim 20% of the annual premium.</p>
 
 <h2>Buildings and Contents Insurance</h2>
 
@@ -70,16 +62,6 @@ faqs:
 <p>For example, if you live in a house and rent out a self-contained flat representing 40% of the property value, you can claim 40% of the buildings insurance premium.</p>
 
 <p>Holiday lets that you also use personally follow similar rules. If you use the property for two weeks annually and rent it out for 50 weeks, you might claim 50/52 of the insurance costs.</p>
-
-<h2>When Landlord Insurance Isn't Tax Deductible</h2>
-
-<p>Some insurance types don't qualify for tax relief, even when connected to property.</p>
-
-<p><strong>Life insurance</strong> premiums aren't allowable, even if intended to cover mortgage payments on rental properties. HMRC treats these as personal expenses regardless of the underlying purpose.</p>
-
-<p><strong>Income protection insurance</strong> follows similar rules. While it might replace rental income if you're unable to work, the premiums aren't considered business expenses.</p>
-
-<p><strong>Motor insurance</strong> requires apportionment. If you use your car 20% for property business (viewing tenants, maintenance visits), you can claim 20% of the annual premium.</p>
 
 <h2>Claiming Insurance on Your Tax Return</h2>
 

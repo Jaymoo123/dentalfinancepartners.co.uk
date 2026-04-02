@@ -1,11 +1,11 @@
 ---
 title: "Incorporation Holdover Relief for Property: Complete UK Guide"
 slug: "incorporation-holdover-relief-property"
-canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/incorporation-holdover-relief-property"
+canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/incorporation-holdover-relief-property"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"
-metaTitle: "Holdover Relief Property: UK Incorporation Guide 2025"
+metaTitle: "Holdover Relief Property: UK Incorporation Guide 2026"
 metaDescription: "Discover how holdover relief property rules work for UK landlords incorporating their portfolios. Complete guide to CGT deferral and incorporation relief."
 altText: "UK landlord reviewing property incorporation documents with holdover relief calculations"
 image: ""
@@ -27,13 +27,32 @@ faqs:
 
 <p>Many landlords assume that transferring property to a company automatically qualifies for holdover relief. This isn't always the case. The rules are complex and depend on specific circumstances that many property investors overlook.</p>
 
-<h2>What Is Holdover Relief for Property?</h2>
+<h2>Conditions for Holdover Relief Property Transfers</h2>
 
-<p>Holdover relief allows you to defer CGT when disposing of certain assets. Instead of paying CGT immediately, the gain is "held over" and deducted from the recipient's base cost. This means the tax is deferred until the recipient eventually sells the asset.</p>
+<p>To qualify for any form of holdover relief property transfer, strict conditions must be met. Missing even one requirement can invalidate the entire claim.</p>
 
-<p>For property investors, this could mean transferring a buy-to-let portfolio to a company without triggering an immediate CGT charge. The company would inherit the properties at your original purchase price (minus the held-over gain), creating a potential future tax liability.</p>
+<h3>Business Transfer Requirements</h3>
 
-<p>However, holdover relief property transfers to companies face significant restrictions that many landlords don't initially understand.</p>
+<p>For incorporation relief, HMRC requires evidence of a genuine business transfer:</p>
+
+<ul>
+<li>Business records showing rental activity</li>
+<li>Evidence of active management and decision-making</li>
+<li>Transfer of business assets, not just properties</li>
+<li>Continuation of the business within the company</li>
+</ul>
+
+<p>A landlord with 2 properties rented to family members might struggle to demonstrate a qualifying business, while someone with 10 properties, active tenant management, and regular maintenance programs would have stronger grounds.</p>
+
+<h3>Timing and Elections</h3>
+
+<p>Critical deadlines apply to holdover relief property claims:</p>
+
+<ul>
+<li>Incorporation relief is automatic if conditions are met</li>
+<li>Elections for other reliefs must be made within specified time limits</li>
+<li>Professional advice should be taken before the transfer</li>
+</ul>
 
 <h2>Does Holdover Relief Apply to Property Incorporation?</h2>
 
@@ -81,33 +100,6 @@ faqs:
 <li>Corporation tax rates on gains may differ from personal CGT rates</li>
 <li>Future tax planning becomes more complex</li>
 <li>Exit strategies are affected by the deferred gain</li>
-</ul>
-
-<h2>Conditions for Holdover Relief Property Transfers</h2>
-
-<p>To qualify for any form of holdover relief property transfer, strict conditions must be met. Missing even one requirement can invalidate the entire claim.</p>
-
-<h3>Business Transfer Requirements</h3>
-
-<p>For incorporation relief, HMRC requires evidence of a genuine business transfer:</p>
-
-<ul>
-<li>Business records showing rental activity</li>
-<li>Evidence of active management and decision-making</li>
-<li>Transfer of business assets, not just properties</li>
-<li>Continuation of the business within the company</li>
-</ul>
-
-<p>A landlord with 2 properties rented to family members might struggle to demonstrate a qualifying business, while someone with 10 properties, active tenant management, and regular maintenance programs would have stronger grounds.</p>
-
-<h3>Timing and Elections</h3>
-
-<p>Critical deadlines apply to holdover relief property claims:</p>
-
-<ul>
-<li>Incorporation relief is automatic if conditions are met</li>
-<li>Elections for other reliefs must be made within specified time limits</li>
-<li>Professional advice should be taken before the transfer</li>
 </ul>
 
 <h2>Alternative Strategies</h2>

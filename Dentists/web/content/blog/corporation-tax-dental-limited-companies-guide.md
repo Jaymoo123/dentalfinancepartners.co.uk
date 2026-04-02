@@ -1,6 +1,7 @@
 ---
 title: "Corporation Tax for Dental Limited Companies: A Plain-English Guide"
 slug: "corporation-tax-dental-limited-companies-guide"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/corporation-tax-dental-limited-companies-guide"
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "Practice accounting"
@@ -11,7 +12,6 @@ image: ""
 h1: "Corporation Tax for Dental Limited Companies: A Plain-English Guide"
 summary: "Understanding corporation tax is crucial for dental limited companies. This guide covers CT600 filing requirements, current rates, deadlines, and how corporation tax affects your profit extraction strategy."
 schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/corporation-tax-dental-limited-companies-guide"
 faqs:
   - question: "What is the current corporation tax rate for dental limited companies?"
     answer: "Dental limited companies pay 19% corporation tax on profits up to £50,000, with a tapered rate between £50,000-£250,000, and 25% on profits over £250,000. The exact rate depends on your company's total profits for the accounting period."
@@ -27,11 +27,15 @@ faqs:
 
 <p>This guide explains how corporation tax works for dental limited companies, covering rates, deadlines, and the CT600 filing process.</p>
 
-<h2>What is Corporation Tax?</h2>
+<h2>When Corporation Tax is Due</h2>
 
-<p>Corporation tax is the tax that limited companies pay on their taxable profits. For dental practices, this includes profits from both NHS and private work, minus allowable business expenses.</p>
+<p>Corporation tax must be paid within nine months and one day of your company's year-end. If your accounting period ends on 31 March, payment is due by 1 January the following year.</p>
 
-<p>Your company pays corporation tax before you extract any profits as dividends or salary. This is different from sole traders or partnerships, where profits are taxed as personal income.</p>
+<p>Large companies (profits over £1.5 million) must pay quarterly instalments, but this rarely affects dental practices.</p>
+
+<h3>Late Payment Penalties</h3>
+
+<p>HMRC charges interest on late corporation tax payments from the day after the due date. Current rates are typically 7-8% annually, making prompt payment essential.</p>
 
 <h2>Current Corporation Tax Rates</h2>
 
@@ -46,16 +50,6 @@ faqs:
 <p>For example, a single-dentist practice making £80,000 profit would pay 19% corporation tax on the first £50,000 and a marginal rate on the remaining £30,000.</p>
 
 <p>These rates apply to accounting periods starting from 1 April 2023. Earlier periods may use different rates.</p>
-
-<h2>When Corporation Tax is Due</h2>
-
-<p>Corporation tax must be paid within nine months and one day of your company's year-end. If your accounting period ends on 31 March, payment is due by 1 January the following year.</p>
-
-<p>Large companies (profits over £1.5 million) must pay quarterly instalments, but this rarely affects dental practices.</p>
-
-<h3>Late Payment Penalties</h3>
-
-<p>HMRC charges interest on late corporation tax payments from the day after the due date. Current rates are typically 7-8% annually, making prompt payment essential.</p>
 
 <h2>The CT600 Company Tax Return</h2>
 
@@ -112,20 +106,6 @@ faqs:
 
 <p>The optimal mix depends on your personal circumstances and other income sources.</p>
 
-<h2>Record Keeping for Corporation Tax</h2>
-
-<p>Dental limited companies must maintain detailed records for corporation tax purposes. HMRC requires you to keep records for six years from the end of the accounting period.</p>
-
-<p>Essential records include:</p>
-
-<ul>
-<li>All income records (NHS statements, private receipts)</li>
-<li>Expense receipts and invoices</li>
-<li>Bank statements and accounting records</li>
-<li>Equipment purchase documentation</li>
-<li>VAT records if VAT registered</li>
-</ul>
-
 <h2>Common Corporation Tax Issues for Dental Practices</h2>
 
 <p>Dental limited companies often face specific corporation tax challenges:</p>
@@ -141,21 +121,6 @@ faqs:
 <h3>Professional Indemnity and Insurance</h3>
 
 <p>Insurance premiums for dental practices are allowable expenses, reducing your corporation tax bill. This includes professional indemnity, public liability, and building insurance.</p>
-
-<h2>Corporation Tax Planning for Dental Companies</h2>
-
-<p>Effective corporation tax planning can reduce your overall tax burden while maintaining cash flow. Key strategies include:</p>
-
-<ul>
-<li>Timing equipment purchases to maximise capital allowances</li>
-<li>Managing profit extraction to optimise total tax costs</li>
-<li>Considering pension contributions to reduce corporation tax</li>
-<li>Planning major expenses around year-end timing</li>
-</ul>
-
-<h3>Year-End Planning</h3>
-
-<p>The months before your accounting year-end offer corporation tax planning opportunities. Bringing forward planned equipment purchases or delaying certain income can help manage your tax position.</p>
 
 <h2>Getting Professional Help</h2>
 

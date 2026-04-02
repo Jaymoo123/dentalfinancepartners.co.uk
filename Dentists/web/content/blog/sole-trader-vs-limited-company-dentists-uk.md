@@ -1,6 +1,7 @@
 ---
 title: "Sole Trader vs Limited Company for Dentists: Which is Right for You?"
 slug: "sole-trader-vs-limited-company-dentists-uk"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/sole-trader-vs-limited-company-dentists-uk"
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "Practice finance"
@@ -11,14 +12,11 @@ image: ""
 h1: "Sole Trader vs Limited Company for Dentists: Which is Right for You?"
 summary: "Choosing between sole trader and limited company status affects your tax bill, admin burden, and future flexibility. We break down the key differences for UK dentists."
 schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/sole-trader-vs-limited-company-dentists-uk"
 faqs:
   - question: "When should a dentist consider switching from sole trader to limited company?"
     answer: "Consider switching when your annual profits consistently exceed £50,000-£60,000, you want to retain profits in the business for investment, or you're planning expansion. The tax savings typically outweigh additional costs at this level, but get professional advice to model your specific situation."
   - question: "What are the main costs of running a limited company vs sole trader?"
     answer: "Limited companies typically cost £1,500-£3,500 annually in accounting fees vs £500-£1,500 for sole traders. Add incorporation costs of £1,000-£3,000 if switching, plus ongoing compliance requirements like filing accounts at Companies House and maintaining statutory records."
-  - question: "Can I change from sole trader to limited company later?"
-    answer: "Yes, this process is called incorporation. HMRC offers incorporation relief to defer some tax charges, but timing matters. Existing contracts may need updating, and there are professional fees involved. It's often easier to start with the structure you'll need long-term."
   - question: "Does a limited company really protect my personal assets?"
     answer: "Generally yes, but protection has limits. Directors can face personal liability in certain circumstances, and you'll likely need personal guarantees for major loans or leases. Professional indemnity insurance remains essential regardless of your business structure."
 ---

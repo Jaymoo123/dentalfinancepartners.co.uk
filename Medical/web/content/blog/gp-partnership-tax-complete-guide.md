@@ -1,17 +1,17 @@
 ---
-title: "GP Partnership Tax: Complete Guide for 2025/26"
+title: "GP Partnership Tax: Complete Guide for 2026/26"
 slug: "gp-partnership-tax-complete-guide"
+canonical: ""
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "GP Tax & Accounts"
-metaTitle: "GP Partnership Tax Complete Guide 2025/26 | Medical Accounts"
-metaDescription: "Complete GP partnership tax guide covering profit sharing, basis period reform, expenses, NHS pension implications and tax planning strategies for 2025/26."
+metaTitle: "GP Partnership Tax Complete Guide 2026/26 | Medical Accounts"
+metaDescription: "Complete GP partnership tax guide covering profit sharing, basis period reform, expenses, NHS pension implications and tax planning strategies for 2026/26."
 altText: "GP partners reviewing partnership tax documents and financial statements"
 image: ""
-h1: "GP Partnership Tax: Complete Guide for 2025/26"
+h1: "GP Partnership Tax: Complete Guide for 2026/26"
 summary: "Understanding GP partnership tax can be complex with profit sharing rules, basis period changes, and NHS pension interactions. This complete guide covers everything you need to know about tax obligations and planning opportunities for GP partners."
 schema: ""
-canonical: ""
 faqs:
   - question: "How is my GP partnership profit calculated for tax purposes?"
     answer: "Your taxable partnership profit is calculated by taking your percentage share of the practice's total taxable profits, not your drawings. This includes your share of GMS/PMS income, private work, property income, less allowable expenses and capital allowances. For example, if the partnership makes £500k profit and you have a 25% share, you're taxed on £125k regardless of how much you actually withdrew during the year."
@@ -56,20 +56,25 @@ faqs:
 
 <p>The transition may result in higher tax bills in 2024/25, though spreading relief is available over five years for the additional charge. Your <a href="/services">specialist medical accountant</a> can calculate the impact for your specific situation.</p>
 
-<h2>Tax Rates and National Insurance for GP Partners</h2>
+<h2>Tax Planning Strategies for GP Partners</h2>
 
-<p>GP partners pay income tax at the standard rates on their profit share:</p>
+<p>Several planning opportunities can help manage your tax position as detailed in this <strong>GP partnership tax complete guide</strong>:</p>
 
-<ul>
-<li>Personal allowance: £12,570 (2025/26)</li>
-<li>Basic rate (20%): £12,571 to £50,270</li>
-<li>Higher rate (40%): £50,271 to £125,140</li>
-<li>Additional rate (45%): above £125,140</li>
-</ul>
+<h3>Pension Contributions</h3>
 
-<p>Class 2 National Insurance applies at £3.45 per week if profits exceed £6,515. Class 4 National Insurance is charged at 8% on profits between £12,570 and £50,270, then 2% on profits above £50,270.</p>
+<p>Additional voluntary contributions to the NHS pension or personal pensions provide tax relief at your marginal rate. Higher rate taxpayers get 40% relief, making pensions particularly attractive for partners with profits above £50,270.</p>
 
-<p>Most GP partners earning typical partnership profits of £120k-200k will pay higher rate tax plus Class 4 NI, resulting in a marginal rate of 42% on income between £50,270 and £125,140.</p>
+<h3>Timing of Partnership Changes</h3>
+
+<p>Changes to profit sharing agreements should consider tax implications. Increasing your share when practice profits are lower, or decreasing it when profits are higher, can smooth your tax position over time.</p>
+
+<h3>Equipment Investment</h3>
+
+<p>The Annual Investment Allowance encourages equipment purchases by providing immediate tax relief. Consider timing major purchases to manage profit levels across tax years.</p>
+
+<h3>Incorporation Consideration</h3>
+
+<p>Some GP partnerships consider incorporating their practice or establishing service companies for private work. This requires careful analysis of tax implications, NHS contract requirements, and ongoing compliance costs.</p>
 
 <h2>NHS Pension Implications for Partnership Profits</h2>
 
@@ -109,26 +114,6 @@ faqs:
 </ul>
 
 <p>Car expenses can be claimed using either actual costs (with business use percentage) or HMRC's approved mileage rates (45p per mile for first 10,000 business miles, then 25p per mile).</p>
-
-<h2>Tax Planning Strategies for GP Partners</h2>
-
-<p>Several planning opportunities can help manage your tax position as detailed in this <strong>GP partnership tax complete guide</strong>:</p>
-
-<h3>Pension Contributions</h3>
-
-<p>Additional voluntary contributions to the NHS pension or personal pensions provide tax relief at your marginal rate. Higher rate taxpayers get 40% relief, making pensions particularly attractive for partners with profits above £50,270.</p>
-
-<h3>Timing of Partnership Changes</h3>
-
-<p>Changes to profit sharing agreements should consider tax implications. Increasing your share when practice profits are lower, or decreasing it when profits are higher, can smooth your tax position over time.</p>
-
-<h3>Equipment Investment</h3>
-
-<p>The Annual Investment Allowance encourages equipment purchases by providing immediate tax relief. Consider timing major purchases to manage profit levels across tax years.</p>
-
-<h3>Incorporation Consideration</h3>
-
-<p>Some GP partnerships consider incorporating their practice or establishing service companies for private work. This requires careful analysis of tax implications, NHS contract requirements, and ongoing compliance costs.</p>
 
 <h2>Record Keeping and Compliance</h2>
 

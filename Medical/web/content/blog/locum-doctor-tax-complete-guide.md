@@ -1,17 +1,17 @@
 ---
 title: "Locum Doctor Tax Complete Guide: Everything You Need to Know"
 slug: "locum-doctor-tax-complete-guide"
+canonical: ""
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "Locum Tax"
-metaTitle: "Locum Doctor Tax Complete Guide 2025 | Medical Accounts"
+metaTitle: "Locum Doctor Tax Complete Guide 2026 | Medical Accounts"
 metaDescription: "Complete tax guide for UK locum doctors covering IR35, expenses, record keeping, and planning strategies. Everything locums need to know about tax compliance."
 altText: "UK locum doctor reviewing tax documents and calculator on desk"
 image: ""
 h1: "Locum Doctor Tax Complete Guide: Everything You Need to Know"
 summary: "A comprehensive guide covering everything UK locum doctors need to know about tax compliance, from IR35 rules to expense claims and record keeping requirements."
 schema: ""
-canonical: ""
 faqs:
   - question: "Do I need to register for self-assessment as a locum doctor?"
     answer: "Yes, most locum doctors need to register for self-assessment, even if working through agencies. You must register if you have untaxed income over £1,000, work through a limited company, or have expenses to claim. Register by 5 October following your first tax year of locum work to avoid penalties."
@@ -26,28 +26,6 @@ faqs:
 <p>Working as a locum doctor in the UK brings unique tax challenges that permanent NHS staff never face. This <strong>locum doctor tax complete guide</strong> covers everything from IR35 compliance to expense claims, helping you navigate the complex tax rules that apply to medical professionals working on a contract basis.</p>
 
 <p>Whether you're a newly qualified doctor considering locum work or an experienced locum looking to optimise your tax position, understanding these rules is essential for both compliance and maximising your take-home pay.</p>
-
-<h2>Understanding IR35 for Locum Doctors</h2>
-
-<p>IR35 is the single most important tax rule affecting locum doctors. These off-payroll working rules determine whether you're treated as an employee or genuine contractor for tax purposes.</p>
-
-<p>If you're caught by IR35, you pay tax and National Insurance as if you were an employee, but without employment rights like sick pay or pension contributions. If you're outside IR35, you can use your limited company to potentially reduce your tax burden.</p>
-
-<h3>IR35 Determination Process</h3>
-
-<p>Since April 2021, large organisations (including most NHS trusts) must make the IR35 determination themselves. However, smaller GP practices typically leave this decision to you as the contractor.</p>
-
-<p>The key factors NHS organisations consider include:</p>
-
-<ul>
-<li>Control over how, when, and where you work</li>
-<li>Whether you can send a substitute</li>
-<li>Financial risk and opportunity for profit</li>
-<li>Whether you're integrated into the organisation</li>
-<li>Provision of equipment and premises</li>
-</ul>
-
-<p>Most NHS locum roles are likely to be inside IR35 due to the controlled nature of medical work and integration requirements. GP practice locum work may offer more flexibility to be outside IR35.</p>
 
 <h2>Employment Structures for Locum Doctors</h2>
 
@@ -70,41 +48,6 @@ faqs:
 <p>Most established locum doctors use a limited company (personal service company) for contracting. This offers the greatest tax efficiency when outside IR35, but requires more administration.</p>
 
 <p>You take a small salary (typically £12,570 to maximise NI efficiency) and extract remaining profits as dividends. This can save significant tax compared to employment, particularly for higher earners.</p>
-
-<h2>Expense Claims for Locum Doctors</h2>
-
-<p>Locum doctors can claim various professional expenses, but the rules vary depending on your working structure and IR35 status.</p>
-
-<h3>Allowable Expenses</h3>
-
-<p>Common expenses you can typically claim include:</p>
-
-<ul>
-<li>GMC annual retention fee and specialist registration</li>
-<li>Professional indemnity insurance (MDU, MPS, MDDUS)</li>
-<li>BMA membership fees</li>
-<li>Continuing Professional Development costs</li>
-<li>Professional journals and subscriptions</li>
-<li>Travel between different workplaces (not home to work)</li>
-<li>Professional equipment and instruments</li>
-<li>Accountancy fees</li>
-</ul>
-
-<h3>Travel Expenses</h3>
-
-<p>Travel rules are complex for locum doctors. You cannot claim home-to-work travel for regular workplaces, but can claim:</p>
-
-<ul>
-<li>Travel between different client sites on the same day</li>
-<li>Additional travel costs when working at temporary workplaces</li>
-<li>Travel to training courses and professional meetings</li>
-</ul>
-
-<p>Keep detailed mileage logs and retain all receipts. The current HMRC mileage rate is 45p per mile for the first 10,000 business miles.</p>
-
-<h3>Home Office Expenses</h3>
-
-<p>If you use your home for business purposes (admin, CPD, client calls), you can claim a proportion of running costs. HMRC's simplified method allows £6 per week for up to 25 hours' use, or £18 per week for 51+ hours.</p>
 
 <h2>Tax Planning Strategies</h2>
 
@@ -151,30 +94,6 @@ faqs:
 <p>From April 2026, Making Tax Digital rules will likely extend to more businesses. Start using cloud-based accounting software now to stay ahead of requirements and simplify your bookkeeping.</p>
 
 <p>Popular options for medical professionals include Xero, QuickBooks, and FreeAgent. These integrate with banking and can automatically categorise common medical expenses.</p>
-
-<h2>Self-Assessment for Locum Doctors</h2>
-
-<p>Most locum doctors must complete annual self-assessment returns, regardless of their working structure.</p>
-
-<h3>Key Deadlines</h3>
-
-<ul>
-<li>31 October: Paper return deadline</li>
-<li>31 January: Online return and balance payment deadline</li>
-<li>31 July: Second payment on account due (if applicable)</li>
-</ul>
-
-<h3>Common Mistakes to Avoid</h3>
-
-<p>Typical errors we see in locum doctor returns include:</p>
-
-<ul>
-<li>Incorrect IR35 treatment</li>
-<li>Missing expense claims</li>
-<li>Incorrect travel expense calculations</li>
-<li>Failing to report all income sources</li>
-<li>Inadequate record keeping</li>
-</ul>
 
 <h2>Getting Professional Help</h2>
 

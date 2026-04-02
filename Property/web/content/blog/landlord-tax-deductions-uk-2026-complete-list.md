@@ -1,7 +1,7 @@
 ---
 title: "Landlord Tax Deductions UK 2026: Complete List"
 slug: "landlord-tax-deductions-uk-2026-complete-list"
-canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list"
+canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

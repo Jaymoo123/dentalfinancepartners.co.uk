@@ -114,6 +114,22 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
               </section>
             ) : null}
 
+            <aside className="mt-16 flex gap-5 items-start bg-[var(--surface)] border border-[var(--border)] p-6 sm:p-8 rounded-lg">
+              <div className="hidden sm:block shrink-0 w-14 h-14 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center">
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+              <div>
+                <p className="text-sm font-bold uppercase tracking-wider text-[var(--primary)]">About the author</p>
+                <p className="mt-1 text-lg font-bold text-[var(--ink)]">{niche.display_name}</p>
+                <p className="mt-2 text-sm text-[var(--ink-soft)] leading-relaxed">{niche.description}</p>
+                <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-[var(--primary)] hover:underline">
+                  Learn more about our team →
+                </Link>
+              </div>
+            </aside>
+
             <div className="mt-16 border-2 border-[var(--primary)]/20 bg-gradient-to-br from-[var(--primary)]/5 to-[var(--accent)]/5 p-8 sm:p-10 rounded-2xl">
               <h2 className="text-2xl font-bold text-[var(--primary)] sm:text-3xl">
                 {niche.blog.cta_heading}

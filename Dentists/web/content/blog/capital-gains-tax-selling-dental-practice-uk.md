@@ -1,6 +1,7 @@
 ---
 title: "Capital Gains Tax When Selling a Dental Practice: UK Guide"
 slug: "capital-gains-tax-selling-dental-practice-uk"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/capital-gains-tax-selling-dental-practice-uk"
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "Practice finance"
@@ -11,7 +12,6 @@ image: ""
 h1: "Capital Gains Tax When Selling a Dental Practice: What UK Dentists Need to Know"
 summary: "Selling your dental practice triggers capital gains tax on the profit. Understanding CGT rates, available reliefs, and timing strategies can significantly reduce your tax bill."
 schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/capital-gains-tax-selling-dental-practice-uk"
 faqs:
   - question: "What is the capital gains tax rate on dental practice sales?"
     answer: "CGT rates for 2024-25 are 10% for basic rate taxpayers and 20% for higher rate taxpayers. However, Business Asset Disposal Relief can reduce the rate to 10% on qualifying business disposals up to £1 million lifetime limit."
@@ -74,14 +74,6 @@ faqs:
 <p>Asset sales are generally straightforward for CGT purposes. Each asset is treated separately, with different acquisition costs and potential reliefs applying. Share sales can be more tax-efficient in some cases but are less common in dental practice transactions.</p>
 
 <p>The structure affects not just your CGT position but also the buyer's position for tax depreciation and reliefs. Your accountant should model different structures before agreeing terms.</p>
-
-<h2>Partnership Practice Sales</h2>
-
-<p>If you're selling your share of a partnership practice, the CGT calculation applies to your proportion of the sale proceeds. Each partner's gain is calculated separately based on their original investment and profit share.</p>
-
-<p>Partnership asset disposals can be more complex to value, particularly where partners have different profit shares or capital contributions. Professional valuations and clear sale agreements are essential.</p>
-
-<p>Retiring partners should consider whether they're disposing of their entire interest or retaining some involvement, as this affects Business Asset Disposal Relief eligibility.</p>
 
 <h2>Reducing Your CGT Bill</h2>
 

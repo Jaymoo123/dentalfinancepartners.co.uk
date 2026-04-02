@@ -1,6 +1,7 @@
 ---
 title: "Equipment Finance for Dental Practices: Tax Implications Guide"
 slug: "equipment-finance-dental-practices-tax-implications"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/equipment-finance-dental-practices-tax-implications"
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "Practice finance"
@@ -11,16 +12,13 @@ image: ""
 h1: "Equipment Finance for Dental Practices: What Are the Tax Implications?"
 summary: "Understanding the tax implications of different equipment finance options can save your dental practice thousands in tax. We compare leasing, hire purchase, and outright purchase."
 schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/equipment-finance-dental-practices-tax-implications"
 faqs:
-  - question: "Can I claim capital allowances on leased dental equipment?"
-    answer: "Only if it's a finance lease where you effectively own the equipment. With operating leases, you cannot claim capital allowances, but your monthly lease payments are fully tax-deductible as business expenses."
+  - question: "When can I claim capital allowances on new dental equipment?"
+    answer: "You can claim capital allowances when the equipment is \"brought into use\" for business purposes, not necessarily when you pay for it. Most dental equipment qualifies for Annual Investment Allowance, allowing 100% tax relief in the first year."
   - question: "Is hire purchase or leasing better for tax purposes?"
     answer: "Hire purchase often provides better tax benefits as you can claim immediate capital allowances on the full purchase price plus deduct interest charges. However, the best option depends on your practice's specific tax position and cash flow requirements."
   - question: "How does VAT work with different equipment financing methods?"
     answer: "With purchase or hire purchase, VAT is typically charged upfront on the full amount. With leasing, VAT is charged on each monthly payment. VAT-registered practices can usually reclaim the VAT, but the timing differs between methods."
-  - question: "When can I claim capital allowances on new dental equipment?"
-    answer: "You can claim capital allowances when the equipment is \"brought into use\" for business purposes, not necessarily when you pay for it. Most dental equipment qualifies for Annual Investment Allowance, allowing 100% tax relief in the first year."
 ---
 
 <p>When you need new equipment for your dental practice, the financing method you choose has significant tax implications. Whether you're buying a new chair, installing digital X-ray equipment, or upgrading your practice management system, understanding these tax consequences can save you thousands of pounds.</p>

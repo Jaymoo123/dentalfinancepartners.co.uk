@@ -11,7 +11,7 @@ image: ""
 h1: "LEAP Accounting Integration: Complete Guide for UK Law Firms"
 summary: "LEAP accounting integration connects your practice management system with specialist accounting software. This guide covers integration options, compliance benefits and implementation considerations for UK solicitors."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/leap-accounting-integration-guide"
+canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/leap-accounting-integration-guide"
 faqs:
   - question: "How long does LEAP accounting integration take to implement?"
     answer: "LEAP accounting integration typically takes 2-4 weeks to implement fully. This includes system configuration, data migration, testing and staff training. Complex practices or those requiring significant data cleanup may need longer implementation periods. Planning phase duration depends on your current accounting processes and integration requirements."

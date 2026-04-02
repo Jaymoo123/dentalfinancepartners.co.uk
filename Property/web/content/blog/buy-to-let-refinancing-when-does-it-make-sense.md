@@ -1,11 +1,11 @@
 ---
 title: "Buy-to-Let Refinancing: When Does It Make Sense?"
 slug: "buy-to-let-refinancing-when-does-it-make-sense"
-canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/buy-to-let-refinancing-when-does-it-make-sense"
+canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/buy-to-let-refinancing-when-does-it-make-sense"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"
-metaTitle: "Buy to Let Refinancing Tax: When Does It Make Sense? | 2025"
+metaTitle: "Buy to Let Refinancing Tax: When Does It Make Sense? | 2026"
 metaDescription: "Understand the tax implications of BTL refinancing. When does it make financial sense for UK landlords? Expert guidance on mortgage relief and timing."
 altText: "UK landlord reviewing buy-to-let refinancing documents with calculator and property portfolio papers"
 image: ""
@@ -57,22 +57,6 @@ faqs:
 
 <p>This approach allows portfolio expansion without requiring significant additional capital, though you need to ensure rental income covers the increased debt service across your portfolio.</p>
 
-<h2>Timing Considerations for BTL Refinancing</h2>
-
-<p>Market timing affects both mortgage rates and property values. Refinancing when property values are high gives you more equity to work with, while refinancing during low rate periods reduces borrowing costs.</p>
-
-<p>Consider your existing mortgage's early repayment charges (ERCs). These can be substantial, particularly in the first few years of a fixed-rate deal. Calculate whether interest savings over the remaining mortgage term exceed the ERC penalty.</p>
-
-<p>Tax year timing can also matter for buy to let refinancing tax planning. If you're releasing equity, the timing might affect your overall tax position, particularly if you're close to higher rate thresholds.</p>
-
-<h2>Refinancing vs Other Strategies</h2>
-
-<p>Before committing to refinancing, consider alternative approaches that might achieve similar goals with better tax outcomes.</p>
-
-<p><a href="/incorporation">Incorporation</a> into a limited company structure can provide better tax treatment for mortgage interest, especially for higher-rate taxpayers. While this involves more complexity, it might deliver better long-term tax efficiency than simply refinancing.</p>
-
-<p>Portfolio restructuring might also be worth considering. Selling lower-performing properties and buying better assets with the proceeds could improve returns more than refinancing existing borrowing.</p>
-
 <h2>Practical Steps for BTL Refinancing</h2>
 
 <p>Start by calculating your potential savings after accounting for refinancing costs, which typically include arrangement fees, valuation costs, and legal fees. These can easily reach £2-3k per property.</p>
@@ -82,6 +66,14 @@ faqs:
 <p>Review your overall tax position before proceeding. If refinancing changes your mortgage interest deductions significantly, model the impact on your annual tax liability.</p>
 
 <p>Consider the administrative burden. Refinancing multiple properties simultaneously can be complex and time-consuming, especially if different lenders are involved.</p>
+
+<h2>Refinancing vs Other Strategies</h2>
+
+<p>Before committing to refinancing, consider alternative approaches that might achieve similar goals with better tax outcomes.</p>
+
+<p><a href="/incorporation">Incorporation</a> into a limited company structure can provide better tax treatment for mortgage interest, especially for higher-rate taxpayers. While this involves more complexity, it might deliver better long-term tax efficiency than simply refinancing.</p>
+
+<p>Portfolio restructuring might also be worth considering. Selling lower-performing properties and buying better assets with the proceeds could improve returns more than refinancing existing borrowing.</p>
 
 <h2>Red Flags: When Not to Refinance</h2>
 

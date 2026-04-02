@@ -6,6 +6,7 @@ import { StickyCTA } from "@/components/ui/StickyCTA";
 import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
+import { TestimonialSlider } from "@/components/solicitors/TestimonialSlider";
 import { getAllPosts, getCategorySlug, calculateReadTime } from "@/lib/blog";
 
 const btnMailOutline =
@@ -198,6 +199,22 @@ export default function HomePage() {
                 <p className="mt-2 text-sm leading-relaxed text-[var(--ink-soft)]">{item.body}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-12 sm:py-16">
+        <div className={siteContainerLg}>
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
+              What our clients say
+            </p>
+            <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
+              Real results for law firms
+            </h2>
+          </div>
+          <div className="mt-10 max-w-3xl mx-auto">
+            <TestimonialSlider />
           </div>
         </div>
       </section>

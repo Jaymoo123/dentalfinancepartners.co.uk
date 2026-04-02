@@ -1,7 +1,7 @@
 ---
 title: "Do I Need MTD for My Rental Income? Threshold and Exemptions Explained"
 slug: "mtd-rental-income-threshold-exemptions"
-canonical: "https://accountsforproperty.co.uk/blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions"
+canonical: "https://www.propertytaxpartners.co.uk/blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Making Tax Digital (MTD)"
@@ -27,19 +27,18 @@ faqs:
 
 <p>The answer depends on your total gross rental income and specific circumstances. This guide explains the threshold, exemptions, and what you need to know to prepare.</p>
 
-<h2>The £10,000 Rental Income Threshold</h2>
+<h2>Calculating Your Rental Income Threshold</h2>
 
-<p>You must use MTD for your rental income if your gross annual rental income exceeds <strong>£10,000</strong> in the tax year. This threshold applies from 6 April 2026.</p>
+<p>Many landlords find the threshold calculation straightforward, but some situations need careful consideration:</p>
 
-<p>Gross rental income means your total rental receipts before deducting any expenses, mortgage interest, or allowances. For example, if you collect £900 per month from a single BTL property, your gross annual income is £10,800 — putting you above the threshold.</p>
+<h3>Single Property Example</h3>
+<p>A landlord rents out one property in Manchester for £850 per month. Their gross annual income is £10,200, putting them just above the £10,000 threshold and requiring MTD compliance.</p>
 
-<p>The £10,000 limit applies to your combined rental income from all sources, including:</p>
-<ul>
-<li>UK residential buy-to-let properties</li>
-<li>UK commercial property rentals</li>
-<li>Holiday lets and short-term rentals</li>
-<li>Room rentals (above the rent-a-room allowance)</li>
-</ul>
+<h3>Multiple Properties Example</h3>
+<p>A portfolio owner has three properties generating £400, £350, and £300 monthly respectively. Total gross income: £12,600 annually. They must use MTD from April 2026.</p>
+
+<h3>Part-Year Rentals</h3>
+<p>If you start letting property mid-year, calculate the annual equivalent. A property generating £1,200 per month from October to March (6 months) would produce £14,400 annually — above the threshold.</p>
 
 <h2>Who Is Exempt from MTD for Rental Income?</h2>
 
@@ -53,19 +52,6 @@ faqs:
 </ul>
 
 <p>Additionally, if your only rental income comes from properties held in a limited company structure, MTD for Income Tax Property doesn't apply to you personally. Company rental income falls under different MTD rules for Corporation Tax.</p>
-
-<h2>Calculating Your Rental Income Threshold</h2>
-
-<p>Many landlords find the threshold calculation straightforward, but some situations need careful consideration:</p>
-
-<h3>Single Property Example</h3>
-<p>A landlord rents out one property in Manchester for £850 per month. Their gross annual income is £10,200, putting them just above the £10,000 threshold and requiring MTD compliance.</p>
-
-<h3>Multiple Properties Example</h3>
-<p>A portfolio owner has three properties generating £400, £350, and £300 monthly respectively. Total gross income: £12,600 annually. They must use MTD from April 2026.</p>
-
-<h3>Part-Year Rentals</h3>
-<p>If you start letting property mid-year, calculate the annual equivalent. A property generating £1,200 per month from October to March (6 months) would produce £14,400 annually — above the threshold.</p>
 
 <h2>Rent-a-Room and Holiday Lets</h2>
 

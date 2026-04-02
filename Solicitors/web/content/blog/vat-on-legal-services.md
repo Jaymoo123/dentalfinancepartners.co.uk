@@ -1,6 +1,7 @@
 ---
 title: "VAT on Legal Services: A Complete Guide for UK Solicitors"
 slug: "vat-on-legal-services"
+canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/vat-on-legal-services"
 date: "2026-04-01"
 author: "Accounts for Lawyers"
 category: "VAT & Compliance"
@@ -11,7 +12,6 @@ image: ""
 h1: "VAT on Legal Services: A Complete Guide for UK Solicitors"
 summary: "Understanding VAT on legal services is crucial for UK law firms. Most legal services are standard-rated, but important exemptions and special rules apply for disbursements and specific service types."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/vat-compliance/vat-on-legal-services"
 faqs:
   - question: "Do I have to charge VAT on all legal services?"
     answer: "No. Most legal services are standard-rated at 20%, but some are exempt (mainly insurance-related work) and a few qualify for zero-rating. True agency disbursements like court fees are outside the scope of VAT entirely."
@@ -19,29 +19,11 @@ faqs:
     answer: "Counsel's fees are typically principal disbursements subject to VAT. You can usually recover VAT paid to counsel (if VAT-registered) and must charge VAT when billing these costs to clients, unless your legal services are exempt."
   - question: "Can I register for VAT if my turnover is below £90,000?"
     answer: "Yes, voluntary registration is allowed and often beneficial for law firms. It allows you to recover VAT on setup costs and ongoing expenses, which can provide significant cash flow advantages in the early years of practice."
-  - question: "Are court fees subject to VAT when I bill clients?"
-    answer: "Court fees are typically true agency disbursements, meaning they're outside the scope of VAT. You cannot recover VAT on court fees paid, but you don't charge VAT when billing them to clients."
 ---
 
 <p>VAT on legal services can be complex for UK law firms, with different rates applying to different types of work. Understanding these rules is essential for proper compliance and accurate client billing.</p>
 
 <p>Most legal services in the UK are subject to standard-rate VAT at 20%, but important exemptions exist for certain types of work, and special rules apply to disbursements and court fees.</p>
-
-<h2>Standard-Rated Legal Services</h2>
-
-<p>The majority of legal work falls under standard-rate VAT at 20%. This includes:</p>
-
-<ul>
-<li>Commercial litigation and dispute resolution</li>
-<li>Employment law advice and tribunal representation</li>
-<li>Contract drafting and commercial advice</li>
-<li>Debt recovery services</li>
-<li>Immigration advice (in most cases)</li>
-<li>Personal injury claims</li>
-<li>Criminal defence work</li>
-</ul>
-
-<p>For example, if you charge £1,000 for commercial contract advice, you must add £200 VAT, making the total bill £1,200.</p>
 
 <h2>Exempt Legal Services</h2>
 
@@ -54,12 +36,6 @@ faqs:
 </ul>
 
 <p>The exemption for insurance work is narrow and technical. It typically applies only where you're providing services directly to an insurer as part of their insurance business, not where you're instructed by an insurer to act for an insured party.</p>
-
-<h2>Zero-Rated Legal Services</h2>
-
-<p>Very few legal services qualify for zero-rating. The main exception is certain work related to the export of goods or services, where the legal advice directly facilitates an export transaction.</p>
-
-<p>Zero-rating allows you to charge 0% VAT while still recovering input VAT on costs, making it more favourable than exemption.</p>
 
 <h2>Disbursements and VAT Treatment</h2>
 
@@ -109,19 +85,6 @@ faqs:
 <h3>Probate and Estate Administration</h3>
 
 <p>Probate services are standard-rated. Probate court fees are agency disbursements, but valuations you commission are typically principal supplies subject to VAT.</p>
-
-<h2>VAT on Legal Services: Record Keeping</h2>
-
-<p>Proper records are essential for VAT compliance. You must maintain:</p>
-
-<ul>
-<li>Detailed time records showing VAT treatment by matter type</li>
-<li>Clear distinction between taxable supplies and disbursements</li>
-<li>Supporting documentation for agency disbursement claims</li>
-<li>VAT invoices for all input VAT claimed</li>
-</ul>
-
-<p>Many practice management systems can automate VAT calculations, but you must ensure correct setup and regular review.</p>
 
 <h2>Making Tax Digital Impact</h2>
 

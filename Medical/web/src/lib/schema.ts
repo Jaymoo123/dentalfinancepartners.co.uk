@@ -33,6 +33,26 @@ export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
         }
       : null;
 
+  const authorOrg = {
+    "@type": "Organization" as const,
+    "@id": `${siteConfig.url}#organization`,
+    name: siteConfig.name,
+    legalName: siteConfig.legalName,
+    url: siteConfig.url,
+    description: siteConfig.description,
+    logo: {
+      "@type": "ImageObject" as const,
+      url: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
+    },
+    contactPoint: {
+      "@type": "ContactPoint" as const,
+      email: siteConfig.contact.email,
+      telephone: siteConfig.contact.phone,
+      contactType: "customer service",
+      availableLanguage: "English",
+    },
+  };
+
   const article = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -41,20 +61,8 @@ export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
     description: post.metaDescription,
     datePublished: post.date,
     dateModified: post.date,
-    author: {
-      "@type": "Organization",
-      name: siteConfig.name,
-      url: siteConfig.url,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: siteConfig.name,
-      url: siteConfig.url,
-      logo: {
-        "@type": "ImageObject",
-        url: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
-      },
-    },
+    author: authorOrg,
+    publisher: authorOrg,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": url,

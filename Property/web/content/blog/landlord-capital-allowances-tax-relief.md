@@ -1,7 +1,7 @@
 ---
 title: "Landlord Capital Allowances: A Complete Guide to Tax Relief"
 slug: "landlord-capital-allowances-tax-relief"
-canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/landlord-capital-allowances-tax-relief"
+canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/landlord-capital-allowances-tax-relief"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"
@@ -19,21 +19,15 @@ faqs:
     answer: "No, you can only claim capital allowances on furniture and equipment that you provide as part of the rental business. In unfurnished lettings, this typically means items like boilers, fitted kitchens, and carpets that you install for tenants' use. Personal furniture that tenants bring themselves doesn't qualify for your capital allowances."
   - question: "What happens to capital allowances when I sell a rental property?"
     answer: "When you sell a rental property, you may need to account for disposal of assets you've claimed capital allowances on. If you sell equipment for more than its written-down value, you may face a balancing charge (additional tax). If you sell for less, you may get a balancing allowance (additional relief). The property sale itself doesn't directly affect your capital allowances claims."
-  - question: "Can I claim capital allowances on renovations when I first buy a rental property?"
-    answer: "You can claim capital allowances on qualifying equipment and fixtures installed during renovations, such as new boilers, kitchen appliances, bathroom suites, and carpets. However, structural work like new roofs, walls, or windows doesn't qualify. The key test is whether items can be removed without damaging the building's structure."
+  - question: "How do capital allowances work with the Section 24 mortgage interest restriction?"
+    answer: "Capital allowances provide full relief against rental profits, unlike mortgage interest which is now restricted to 20% tax relief for individual landlords. This makes capital allowances more valuable than before, particularly for higher-rate taxpayers who can still get full relief on qualifying capital expenditure."
+  - question: "What records do I need to keep for capital allowances claims?"
+    answer: "Keep detailed invoices showing exactly what was purchased and installed, photographs of the work, evidence of when assets were brought into use, and clear separation between capital improvements and repairs. With MTD coming in 2026, digital record-keeping systems that can categorise expenditure properly will become essential."
 ---
 
 <p><strong>Landlord capital allowances</strong> are often overlooked by UK property investors, yet they represent one of the most effective ways to reduce your tax bill. These allowances let you claim tax relief on equipment and fixtures in your rental properties, but many landlords miss out because they don't understand what qualifies or how to claim properly.</p>
 
 <p>In this guide, we'll explain exactly how landlord capital allowances work, what equipment qualifies, and how to maximize your tax relief for the 2025/26 tax year and beyond.</p>
-
-<h2>What Are Landlord Capital Allowances?</h2>
-
-<p>Capital allowances are tax deductions that let you write off the cost of business equipment against your rental income. Unlike regular expenses that you can claim in full each year, capital allowances spread the tax relief over several years.</p>
-
-<p>For landlords, this means you can claim tax relief on items like boilers, kitchen appliances, carpets, and furniture that you provide for tenants. The key distinction is between items that are part of the property structure (which don't qualify) and moveable equipment or fixtures (which typically do).</p>
-
-<p>The most common type for landlords is the Annual Investment Allowance (AIA), which currently allows you to claim 100% of qualifying costs up to £1 million per year.</p>
 
 <h2>What Equipment Qualifies for Capital Allowances?</h2>
 
@@ -105,13 +99,26 @@ faqs:
 
 <p>With Making Tax Digital for Income Tax starting in April 2026, maintaining digital records of your capital allowances will become mandatory for many landlords.</p>
 
-<h2>Capital Allowances vs Revenue Expenses</h2>
+<h2>Capital Allowances vs Repairs and Maintenance</h2>
+<p>One of the biggest challenges in claiming <strong>landlord capital allowances</strong> is distinguishing between capital improvements and repairs. This distinction affects both immediate tax relief and long-term capital gains implications.</p>
 
-<p>One key aspect of landlord tax planning strategies is understanding when to treat costs as revenue expenses (claimable in full immediately) versus capital expenditure (claimed through allowances).</p>
+<h3>Repairs (Immediate Tax Relief)</h3>
+<ul>
+<li>Fixing a broken boiler with like-for-like replacement</li>
+<li>Repainting walls in the same colour</li>
+<li>Replacing broken tiles with identical ones</li>
+<li>Unblocking drains or fixing leaks</li>
+</ul>
 
-<p>Revenue expenses include repairs and maintenance that restore items to their original condition. Capital expenditure includes improvements or replacements that enhance the property.</p>
+<h3>Improvements (Capital Allowances)</h3>
+<ul>
+<li>Upgrading to a more efficient boiler system</li>
+<li>Installing central heating where none existed</li>
+<li>Adding an extension or converting a loft</li>
+<li>Installing double glazing to replace single glazing</li>
+</ul>
 
-<p>For example, replacing a broken boiler with an identical model is typically a revenue expense. Upgrading to a more efficient boiler system would be capital expenditure eligible for capital allowances.</p>
+<p>The 'improvement vs repair' test considers whether you're restoring the property to its previous condition or enhancing it beyond its original state.</p>
 
 <h2>Special Considerations for Different Property Types</h2>
 
@@ -161,3 +168,40 @@ faqs:
 <p>Our <a href="/services">specialist property tax services</a> can help you identify all eligible allowances and structure your claims for maximum tax efficiency. We regularly help landlords recover thousands in tax relief they didn't know they could claim.</p>
 
 <p><strong>Landlord capital allowances</strong> represent a significant opportunity for tax savings that too many property investors miss. By understanding what qualifies, maintaining proper records, and timing your expenditure strategically, you can substantially reduce your tax bill while improving your properties for tenants.</p>
+
+<h2>Integration with Other Tax Strategies</h2>
+<p>Effective use of <strong>landlord capital allowances</strong> should integrate with your broader tax planning approach. Consider these interactions:</p>
+
+<h3>Section 24 Mortgage Interest Restriction</h3>
+<p>With mortgage interest relief restricted to 20% for individual landlords, capital allowances become more valuable as they provide full relief against rental profits. This makes the timing of capital improvements particularly important.</p>
+
+<h3>Incorporation Timing</h3>
+<p>If you're considering moving properties into a company structure, unclaimed capital allowances can be factored into the <a href="/incorporation">incorporation</a> decision. Companies can claim capital allowances against corporation tax, potentially at higher effective rates.</p>
+
+<h3>Portfolio Expansion</h3>
+<p>The £1 million annual investment allowance applies across your entire property business. Landlords with multiple properties can aggregate qualifying expenditure across their portfolio for maximum relief.</p>
+
+<h2>Future Planning and MTD Implications</h2>
+<p>With Making Tax Digital for Income Tax Property (ITSA) starting 6 April 2026 for landlords with property income over £10,000, digital record-keeping becomes mandatory. This actually supports better capital allowances planning:</p>
+
+<ul>
+<li>Digital records make it easier to track and categorise capital expenditure</li>
+<li>Quarterly reporting may provide earlier visibility of tax positions</li>
+<li>Better integration between purchase records and tax calculations</li>
+</ul>
+
+<p>Landlords should start preparing digital systems now that can properly categorise capital and revenue expenditure from the outset.</p>
+
+<h2>When to Seek Professional Advice</h2>
+<p>While basic capital allowances principles are straightforward, the detailed rules can be complex. Consider professional advice when:</p>
+
+<ul>
+<li>Undertaking major refurbishments or developments</li>
+<li>Buying properties with significant existing fixtures</li>
+<li>Planning incorporation or other structural changes</li>
+<li>Dealing with mixed-use or commercial property elements</li>
+</ul>
+
+<p>The potential tax savings often justify professional fees, particularly for higher-rate taxpayers or those with substantial property portfolios.</p>
+
+<p><strong>Landlord capital allowances</strong> represent a significant but often underutilised opportunity for UK property investors. By understanding what qualifies, maintaining proper records, and integrating allowances planning with broader tax strategies, landlords can substantially reduce their annual tax liability while investing in property improvements that enhance rental yields and capital values.</p>

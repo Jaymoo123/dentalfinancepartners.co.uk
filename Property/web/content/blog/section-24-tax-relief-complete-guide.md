@@ -1,7 +1,7 @@
 ---
 title: "Section 24 Tax Relief for Landlords: Complete Guide"
 slug: "section-24-tax-relief-complete-guide"
-canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide"
+canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"
@@ -34,23 +34,6 @@ faqs:
 <p>Now, mortgage interest on residential buy-to-let properties is treated as a tax credit at the basic rate (20%) rather than a deduction. This means regardless of your marginal tax rate, you only get relief at 20%.</p>
 
 <p>The change applies to individual landlords and partnerships, but not to companies. This difference has led many landlords to consider <a href="/incorporation">incorporating their property business</a>.</p>
-
-<h2>How Section 24 Tax Relief Works</h2>
-
-<p>Under section 24 tax relief, the calculation works in two stages:</p>
-
-<ul>
-<li><strong>Step 1:</strong> Calculate your rental profit without deducting mortgage interest</li>
-<li><strong>Step 2:</strong> Apply a 20% tax credit based on your mortgage interest payments</li>
-</ul>
-
-<p>For example, if you have £30,000 rental income, £8,000 other allowable expenses, and £15,000 mortgage interest:</p>
-
-<ul>
-<li>Rental profit before mortgage interest: £22,000 (£30,000 - £8,000)</li>
-<li>Tax credit available: £3,000 (£15,000 × 20%)</li>
-<li>If you're a higher-rate taxpayer, you'll pay 40% tax on the full £22,000, then claim back £3,000</li>
-</ul>
 
 <h2>Impact on Different Tax Brackets</h2>
 

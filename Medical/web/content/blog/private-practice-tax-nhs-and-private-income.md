@@ -1,6 +1,7 @@
 ---
 title: "Private Practice Tax: Managing NHS and Private Income"
 slug: "private-practice-tax-nhs-and-private-income"
+canonical: ""
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "Private Practice"
@@ -11,14 +12,11 @@ image: ""
 h1: "Private Practice Tax: Managing NHS and Private Income"
 summary: "Understanding private practice tax alongside NHS income is crucial for maximizing your earnings and avoiding costly mistakes. This guide covers everything from income allocation to pension planning."
 schema: ""
-canonical: ""
 faqs:
   - question: "How is private practice income taxed alongside NHS employment?"
     answer: "Private practice income is typically treated as self-employment income, added to your NHS employment income to determine your overall tax band. This combined income determines whether you pay basic rate (20%), higher rate (40%), or additional rate (45%) tax. NHS income uses PAYE, while private practice income requires self-assessment and may need payments on account."
   - question: "Should I incorporate my private practice or remain as a sole trader?"
     answer: "This depends on your private practice income level and overall circumstances. Sole trader status works well for smaller amounts (typically under £50,000 annually), while incorporation may provide tax advantages for higher earners. Consider corporation tax rates versus personal tax rates, admin costs, pension implications, and your NHS pension status before deciding."
-  - question: "How does private practice income affect my NHS pension annual allowance?"
-    answer: "Private practice income contributes to your total income for tapered annual allowance calculations. If your threshold income exceeds £200,000 and adjusted income exceeds £260,000, your £60,000 annual allowance reduces by £1 for every £2 of excess income, down to a minimum of £10,000. This can create annual allowance charges on pension growth."
   - question: "Can I offset private practice expenses against my NHS income?"
     answer: "No, private practice expenses can only be offset against private practice income, not NHS employment income. However, some expenses like professional indemnity or GMC fees that cover both NHS and private work can be apportioned appropriately. Keep detailed records to separate business and employment-related costs correctly."
 ---

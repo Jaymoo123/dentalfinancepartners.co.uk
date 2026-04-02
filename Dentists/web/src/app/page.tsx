@@ -7,6 +7,7 @@ import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from 
 import { siteConfig } from "@/config/site";
 import { getPostBySlug, getCategorySlug } from "@/lib/blog";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
+import { TestimonialSlider } from "@/components/dentists/TestimonialSlider";
 
 const btnMailOutline =
   "inline-flex min-h-12 items-center justify-center rounded-full border border-[var(--navy)]/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-[var(--navy)] transition-all duration-200 hover:border-[var(--navy)] hover:bg-[var(--navy)]/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)]";
@@ -215,6 +216,18 @@ export default function HomePage() {
                 <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{item.body}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-[var(--border)] bg-white py-12 sm:py-16">
+        <div className={siteContainerLg}>
+          <p className="section-label">What our clients say</p>
+          <h2 className="display-serif mt-4 max-w-3xl text-3xl font-semibold leading-tight text-[var(--navy)] sm:text-4xl">
+            Real results for dental practices
+          </h2>
+          <div className="mt-10 max-w-3xl">
+            <TestimonialSlider />
           </div>
         </div>
       </section>

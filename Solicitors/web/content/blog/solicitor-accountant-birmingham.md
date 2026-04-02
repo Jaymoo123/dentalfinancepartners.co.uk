@@ -11,7 +11,7 @@ image: ""
 h1: "Solicitor Accountants in Birmingham: Your Complete Guide"
 summary: "Birmingham law firms need specialist accountants who understand legal practice requirements. This guide covers what to look for and why specialist knowledge matters."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/solicitor-accountant-birmingham"
+canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/solicitor-accountant-birmingham"
 faqs:
   - question: "How much should a Birmingham law firm expect to pay for solicitor accounting services?"
     answer: "Costs vary by practice size and complexity. Birmingham sole practitioners typically pay £2,000-£4,000 annually for compliance services, while partnerships might pay £5,000-£15,000 depending on partner numbers and transaction volumes. Monthly retainers for ongoing support range from £300-£1,500. Always request detailed quotes covering specific services needed."

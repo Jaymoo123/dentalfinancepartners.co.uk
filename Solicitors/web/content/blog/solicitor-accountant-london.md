@@ -11,7 +11,7 @@ image: ""
 h1: "Solicitor Accountant London: Expert Guidance for Legal Practices"
 summary: "London's legal practices need specialist accounting expertise to navigate SRA compliance, partnership taxation, and practice finance complexities. The right solicitor accountant provides targeted support that general accountants simply cannot match."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/partnership-llp-accounting/solicitor-accountant-london"
+canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting/solicitor-accountant-london"
 faqs:
   - question: "What makes a solicitor accountant different from a general accountant?"
     answer: "Solicitor accountants specialise in legal practice requirements including SRA compliance, client money regulations, partnership taxation, and practice-specific issues like lock-up management. General accountants typically lack this specialist knowledge, which can lead to compliance problems or missed opportunities."

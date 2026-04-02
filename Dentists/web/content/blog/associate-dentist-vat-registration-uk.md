@@ -1,6 +1,7 @@
 ---
 title: "Should I Register for VAT as an Associate Dentist?"
 slug: "associate-dentist-vat-registration-uk"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-compliance/associate-dentist-vat-registration-uk"
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "VAT & compliance"
@@ -11,7 +12,6 @@ image: ""
 h1: "Should I Register for VAT as an Associate Dentist?"
 summary: "Most associate dentists don't need to register for VAT, but voluntary registration can sometimes reduce your tax bill. Here's when it makes sense and when it doesn't."
 schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-compliance/associate-dentist-vat-registration-uk"
 faqs:
   - question: "Do I have to register for VAT as an associate dentist?"
     answer: "You must register for VAT if your taxable turnover exceeds £85,000 in any 12-month period. Below this threshold, VAT registration is voluntary. Most associates earning under this amount don't need to register unless they have significant VAT-able expenses."
@@ -26,14 +26,6 @@ faqs:
 <p>Most associate dentists in the UK don't need to register for VAT — and many shouldn't. But there are specific situations where voluntary VAT registration can actually save you money.</p>
 
 <p>The decision depends on your income level, business expenses, and whether you work NHS, private, or a mix of both. Let's break down when VAT registration makes sense for associates.</p>
-
-<h2>VAT Registration Threshold for Associates</h2>
-
-<p>As an associate dentist, you must register for VAT if your taxable turnover exceeds £85,000 in any 12-month period (2024/25 threshold). This applies whether you're earning from NHS work, private patients, or both.</p>
-
-<p>Your "taxable turnover" is your gross income before expenses. So an associate earning £90,000 with £10,000 in allowable expenses would need to register for VAT.</p>
-
-<p>Most associates earning below this threshold can choose whether to register voluntarily. This is where the decision gets more complex.</p>
 
 <h2>When Voluntary VAT Registration Helps Associates</h2>
 
@@ -75,19 +67,6 @@ faqs:
 <p>Associates working both NHS and private face partial exemption rules. This adds complexity but can still be worthwhile if your VAT-able expenses are high enough.</p>
 
 <p>Understanding how this interacts with your <a href="/blog/nhs-private-mix-dental-accounts">NHS and private income mix</a> is crucial for making the right decision.</p>
-
-<h2>VAT Registration Process for Associates</h2>
-
-<p>If you decide to register for VAT, the process is relatively straightforward:</p>
-
-<ul>
-<li>Register online via HMRC's website</li>
-<li>Choose your VAT accounting scheme (usually standard or flat rate)</li>
-<li>Set up systems for recording VAT on income and expenses</li>
-<li>Submit quarterly VAT returns</li>
-</ul>
-
-<p>You can register up to 30 days before you expect to exceed the threshold, or at any time for voluntary registration.</p>
 
 <h2>Flat Rate Scheme for Associate Dentists</h2>
 

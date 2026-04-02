@@ -1,6 +1,7 @@
 ---
 title: "Law Firm Profit Extraction: Tax-Efficient Strategies for UK Legal Practices"
 slug: "law-firm-profit-extraction"
+canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting/law-firm-profit-extraction"
 date: "2026-04-01"
 author: "Accounts for Lawyers"
 category: "Partnership & LLP Accounting"
@@ -11,7 +12,6 @@ image: ""
 h1: "Law Firm Profit Extraction: Tax-Efficient Strategies for UK Legal Practices"
 summary: "Law firm profit extraction requires careful planning to minimise tax while maintaining compliance. Different legal structures offer varying opportunities for tax-efficient extraction."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/partnership-llp-accounting/law-firm-profit-extraction"
 faqs:
   - question: "What's the most tax-efficient way to extract profits from my law firm?"
     answer: "The most tax-efficient method depends on your practice structure and profit levels. Partnership/LLP structures typically use profit allocations subject to income tax and National Insurance. Corporate firms often benefit from salary/dividend combinations, taking salary up to the National Insurance threshold and extracting remaining profits as dividends. High earners should consider pension contributions for additional tax relief."
@@ -27,13 +27,19 @@ faqs:
 
 <p>Understanding the various approaches to law firm profit extraction helps you make informed decisions that benefit both your practice and your personal financial position. Each extraction method carries different tax implications and timing considerations.</p>
 
-<h2>Partnership Profit Extraction</h2>
+<h2>Planning for Law Firm Profit Extraction</h2>
 
-<p>Traditional law firm partnerships distribute profits as partnership draws rather than salaries or dividends. Partners are taxed on their profit share regardless of whether they actually withdraw the funds from the practice.</p>
+<p>Effective law firm profit extraction requires ongoing review as circumstances change. Annual profit forecasting helps optimise extraction timing and methods.</p>
 
-<p>For the 2025/26 tax year, partnership profits are subject to income tax at 20%, 40%, or 45% depending on the partner's total income. Class 2 and Class 4 National Insurance also apply, with Class 4 at 9% on profits between £12,570 and £50,270, then 2% above this threshold.</p>
+<p>Consider cash flow implications alongside tax efficiency. Deferred profit extraction may save tax but could create working capital pressures during busy periods or when facing unexpected costs.</p>
 
-<p>A partner in a firm generating £80,000 annual profit would typically pay around £22,000 in income tax and National Insurance combined. The exact figure depends on other income sources and available reliefs.</p>
+<p>Regular reviews ensure strategies remain optimal as tax rates, allowances, and business circumstances evolve. What works for a 2-partner firm with £300,000 profits may be inappropriate for a 10-partner practice generating £2 million annually.</p>
+
+<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
+<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to partnership taxation, LLP conversion, and profit allocation.</p>
+<p><a href="/blog/partnership-llp-accounting" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Partnership & LLP Tax Guide →</a></p>
+</div>
 
 <h2>LLP Member Profit Allocation</h2>
 
@@ -61,14 +67,6 @@ faqs:
 
 <p>However, incorporation brings additional compliance costs and complexity that must be weighed against tax savings.</p>
 
-<h2>Pension Contributions and Profit Extraction</h2>
-
-<p>Pension contributions offer tax-efficient law firm profit extraction opportunities. Partners and LLP members can make contributions up to 100% of relevant earnings or £60,000 annually (whichever is lower).</p>
-
-<p>High earners face tapered annual allowances, potentially reducing the £60,000 limit to £10,000 for those with adjusted income over £260,000.</p>
-
-<p>Corporate law firms can make employer pension contributions, providing corporation tax relief while avoiding income tax and National Insurance for the recipient.</p>
-
 <h2>Capital vs Revenue Extraction</h2>
 
 <p>Law firm profit extraction isn't limited to revenue distributions. Capital extraction through goodwill sales, partnership asset distributions, or share sales can offer significant tax advantages.</p>
@@ -92,17 +90,3 @@ faqs:
 <p>HMRC scrutinises profit extraction arrangements, particularly where they appear designed primarily for tax avoidance rather than commercial purposes. Ensure any strategy has genuine business rationale beyond tax savings.</p>
 
 <p>Professional indemnity insurance and practice compliance requirements may influence extraction timing and methods. Maintain adequate working capital to meet regulatory and operational needs.</p>
-
-<h2>Planning for Law Firm Profit Extraction</h2>
-
-<p>Effective law firm profit extraction requires ongoing review as circumstances change. Annual profit forecasting helps optimise extraction timing and methods.</p>
-
-<p>Consider cash flow implications alongside tax efficiency. Deferred profit extraction may save tax but could create working capital pressures during busy periods or when facing unexpected costs.</p>
-
-<p>Regular reviews ensure strategies remain optimal as tax rates, allowances, and business circumstances evolve. What works for a 2-partner firm with £300,000 profits may be inappropriate for a 10-partner practice generating £2 million annually.</p>
-
-<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
-<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
-<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to partnership taxation, LLP conversion, and profit allocation.</p>
-<p><a href="/blog/partnership-llp-accounting" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Partnership & LLP Tax Guide →</a></p>
-</div>

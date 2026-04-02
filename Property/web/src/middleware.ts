@@ -171,9 +171,95 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
   "why-do-we-need-accountants-property-investors": "portfolio-management",
 };
 
+const DUPLICATE_REDIRECTS: Record<string, string> = {
+  "accountants-that-specialise-in-property": "/blog/portfolio-management/property-accountant-vs-general-accountant",
+  "average-accountant-salary-manchester": "/blog/portfolio-management/property-accountant-salary-complete-guide",
+  "best-property-accountant-near-me": "/blog/portfolio-management/best-property-accountant",
+  "best-property-accountants-london": "/blog/portfolio-management/best-property-accountant-london",
+  "best-property-accountants-uk": "/blog/portfolio-management/best-property-accountant",
+  "buy-to-let-limited-company-mortgage": "/blog/incorporation-and-company-structures/buy-to-let-limited-company-mortgage-options",
+  "capital-gains-tax-property-sale-uk-2026": "/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances",
+  "cgt-property-transfer-spouse-exempt": "/blog/capital-gains-tax/cgt-property-transfer-spouse",
+  "do-i-need-a-property-accountant-complete-guide": "/blog/portfolio-management/when-to-hire-property-accountant",
+  "how-much-do-accountants-make-in-london": "/blog/portfolio-management/property-accountant-salary-complete-guide",
+  "how-much-do-property-accountants-make": "/blog/portfolio-management/property-accountant-salary-complete-guide",
+  "how-much-does-property-accountant-cost-uk": "/blog/portfolio-management/how-much-does-a-property-accountant-cost",
+  "how-much-is-a-property-accountant": "/blog/portfolio-management/how-much-does-a-property-accountant-cost",
+  "how-to-choose-property-accountant": "/blog/portfolio-management/how-to-choose-a-property-accountant",
+  "how-to-find-a-property-accountant": "/blog/portfolio-management/how-to-choose-a-property-accountant",
+  "investment-property-accountant-near-me": "/blog/portfolio-management/property-accountant-near-me",
+  "investment-property-accounting-uk-expert-services": "/blog/portfolio-management/property-accountant-services",
+  "landlord-accounting-software-uk-2026": "/blog/making-tax-digital-mtd/landlord-accounting-software-uk-best-options-2026",
+  "landlord-capital-allowances-maximizing-tax-relief": "/blog/section-24-and-tax-relief/landlord-capital-allowances-tax-relief",
+  "landlord-insurance-tax-deductible-what-can-you-claim": "/blog/section-24-and-tax-relief/landlord-insurance-tax-deductible",
+  "landlord-tax-accountant-when-you-need-professional-help": "/blog/portfolio-management/when-to-hire-property-accountant",
+  "landlord-tax-return-self-assessment": "/blog/portfolio-management/landlord-tax-return-complete-guide-2026",
+  "local-property-accountant-expert-services": "/blog/portfolio-management/local-property-accountant",
+  "london-property-accountants-expert-services": "/blog/portfolio-management/london-property-accountant",
+  "making-tax-digital-landlords-april-2026": "/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline",
+  "mortgage-interest-tax-relief-changes-landlords": "/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords",
+  "property-accountant-advice-complete-guide": "/blog/portfolio-management/what-does-a-property-accountant-do",
+  "property-accountant-birmingham": "/blog/portfolio-management/birmingham-property-accountant",
+  "property-accountant-bristol": "/blog/portfolio-management/bristol-property-accountant",
+  "property-accountant-cost-complete-guide": "/blog/portfolio-management/how-much-does-a-property-accountant-cost",
+  "property-accountant-cost-guide": "/blog/portfolio-management/how-much-does-a-property-accountant-cost",
+  "property-accountant-fees-complete-guide": "/blog/portfolio-management/how-much-does-a-property-accountant-cost",
+  "property-accountant-fees-guide": "/blog/portfolio-management/how-much-does-a-property-accountant-cost",
+  "property-accountant-help": "/blog/portfolio-management/what-does-a-property-accountant-do",
+  "property-accountant-job-description": "/blog/portfolio-management/property-accountant-jobs-uk",
+  "property-accountant-jobs": "/blog/portfolio-management/property-accountant-jobs-uk",
+  "property-accountant-jobs-london": "/blog/portfolio-management/property-accountant-jobs-uk",
+  "property-accountant-jobs-manchester": "/blog/portfolio-management/property-accountant-jobs-uk",
+  "property-accountant-jobs-near-me": "/blog/portfolio-management/property-accountant-jobs-uk",
+  "property-accountant-jobs-remote": "/blog/portfolio-management/property-accountant-jobs-uk",
+  "property-accountant-london-expert-services": "/blog/portfolio-management/london-property-accountant",
+  "property-accountant-london-jobs": "/blog/portfolio-management/property-accountant-jobs-uk",
+  "property-accountant-responsibilities-complete-guide": "/blog/portfolio-management/what-does-a-property-accountant-do",
+  "property-accountant-salary-london": "/blog/portfolio-management/property-accountant-salary-complete-guide",
+  "property-accountant-salary-uk-guide": "/blog/portfolio-management/property-accountant-salary-complete-guide",
+  "property-accountant-services-expert-solutions": "/blog/portfolio-management/property-accountant-services",
+  "property-accountants-manchester": "/blog/portfolio-management/manchester-property-accountant",
+  "property-accountants-near-me": "/blog/portfolio-management/property-accountant-near-me",
+  "property-accounting-course-uk-expert-services": "/blog/portfolio-management/how-to-become-property-accountant",
+  "property-accounting-services": "/blog/portfolio-management/property-accountant-services",
+  "property-accounting-services-london": "/blog/portfolio-management/london-property-accountant",
+  "property-bookkeeping-services": "/blog/portfolio-management/accountant-bookkeeping-services",
+  "property-disposal-tax-planning-minimize-cgt": "/blog/capital-gains-tax/reduce-cgt-property-disposal-uk",
+  "property-financial-planning-expert-services": "/blog/portfolio-management/accountant-financial-planning-property-investors",
+  "property-jobs-in-manchester": "/blog/portfolio-management/property-accountant-jobs-uk",
+  "property-management-accounts-monthly-tracking": "/blog/portfolio-management/property-portfolio-accounting-tracking-profitability",
+  "property-payroll-services": "/blog/incorporation-and-company-structures/accountant-payroll-services",
+  "property-portfolio-accounting-monthly-tracking": "/blog/portfolio-management/property-portfolio-accounting-tracking-profitability",
+  "property-self-assessment-expert-services": "/blog/portfolio-management/accountant-self-assessment",
+  "property-specialist-accountant-near-me": "/blog/portfolio-management/property-accountant-near-me",
+  "property-specialist-tax-accountant-uk": "/blog/portfolio-management/property-accountant-vs-general-accountant",
+  "property-tax-accountant-birmingham": "/blog/portfolio-management/birmingham-property-accountant",
+  "property-tax-accountant-london": "/blog/portfolio-management/london-property-accountant",
+  "property-tax-accountant-manchester": "/blog/portfolio-management/manchester-property-accountant",
+  "property-tax-accountant-near-me": "/blog/portfolio-management/property-accountant-near-me",
+  "property-tax-advice-expert-services": "/blog/portfolio-management/accountant-tax-advice-property-investors",
+  "property-tax-planning-expert-services": "/blog/portfolio-management/accountant-tax-planning-services",
+  "property-tax-return-expert-services": "/blog/portfolio-management/accountant-tax-return-services",
+  "property-vat-registration-expert-services": "/blog/portfolio-management/accountant-vat-registration-expert-services",
+  "rental-property-accountant-near-me": "/blog/portfolio-management/property-accountant-near-me",
+  "rental-yield-calculation-gross-vs-net-yield": "/blog/portfolio-management/rental-yield-calculator-guide-uk-landlords",
+  "section-24-basic-rate-taxpayer-affected": "/blog/section-24-and-tax-relief/section-24-basic-rate-taxpayers",
+  "section-24-mortgage-interest-restriction-explained": "/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords",
+  "section-24-relief-how-much-can-i-claim-2026": "/blog/section-24-and-tax-relief/section-24-calculator",
+  "section-24-tax-calculator-annual-cost": "/blog/section-24-and-tax-relief/section-24-calculator",
+  "section-24-vs-incorporation-tax-savings": "/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax",
+  "senior-property-accountant-london": "/blog/portfolio-management/property-accountant-jobs-uk",
+  "should-i-incorporate-buy-to-let-portfolio-2026": "/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio",
+  "stamp-duty-buy-to-let-surcharge-explained": "/blog/portfolio-management/stamp-duty-buy-to-let-surcharge",
+  "uk-property-accountants-london-expert-services": "/blog/portfolio-management/london-property-accountant",
+  "when-to-incorporate-property-portfolio-timing": "/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio",
+  "why-do-we-need-accountants-property-investors": "/blog/portfolio-management/when-to-hire-property-accountant",
+};
+
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  // Redirect old flat /blog/[slug] to nested /blog/[category]/[slug]
   const oldBlogMatch = pathname.match(/^\/blog\/([^\/]+)$/);
   if (oldBlogMatch) {
     const slug = oldBlogMatch[1];
@@ -183,10 +269,21 @@ export function middleware(request: NextRequest) {
     }
   }
 
+  // Redirect old /blog/category/[slug] format
   const oldCategoryMatch = pathname.match(/^\/blog\/category\/([^\/]+)$/);
   if (oldCategoryMatch) {
     const categorySlug = oldCategoryMatch[1];
     return NextResponse.redirect(new URL(`/blog/${categorySlug}`, request.url), 301);
+  }
+
+  // Redirect consolidated duplicate posts to their keeper
+  const nestedMatch = pathname.match(/^\/blog\/[^\/]+\/([^\/]+)$/);
+  if (nestedMatch) {
+    const slug = nestedMatch[1];
+    const target = DUPLICATE_REDIRECTS[slug];
+    if (target) {
+      return NextResponse.redirect(new URL(target, request.url), 301);
+    }
   }
 
   return NextResponse.next();

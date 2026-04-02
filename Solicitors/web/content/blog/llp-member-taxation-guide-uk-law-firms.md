@@ -1,6 +1,7 @@
 ---
 title: "LLP Member Taxation: A Complete Guide for UK Law Firms"
 slug: "llp-member-taxation-guide-uk-law-firms"
+canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting/llp-member-taxation-guide-uk-law-firms"
 date: "2026-04-01"
 author: "Accounts for Lawyers"
 category: "Partnership & LLP Accounting"
@@ -11,14 +12,11 @@ image: ""
 h1: "LLP Member Taxation: A Complete Guide for UK Law Firms"
 summary: "LLP member taxation differs significantly from employee taxation, with members treated as self-employed for tax purposes. Understanding profit allocations, Class 2 NICs, and self-assessment obligations is crucial for law firm partners."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/partnership-llp-accounting/llp-member-taxation-guide-uk-law-firms"
 faqs:
   - question: "Are LLP members treated as employees for tax purposes?"
     answer: "No, LLP members are generally treated as self-employed for tax purposes. However, salaried members who fail HMRC's three-part test may be treated as employees, paying income tax and employee NICs through PAYE rather than completing self-assessment returns."
   - question: "When do LLP members pay tax on their profit allocations?"
     answer: "LLP members pay tax on their allocated profits through self-assessment, with payments typically due on 31 January and 31 July. Tax is payable on allocated profits regardless of whether cash has been drawn from the LLP, which can create cash flow challenges."
-  - question: "What National Insurance do LLP members pay?"
-    answer: "LLP members pay Class 2 NICs (£3.45 per week for 2024/25) if profits exceed £6,515, plus Class 4 NICs at 9% on profits between £12,570 and £50,270, then 2% above this threshold. These are in addition to income tax on their profit allocation."
   - question: "Can LLP members claim business expenses against their tax bill?"
     answer: "Yes, LLP members can claim legitimate business expenses against their profit allocation, including professional subscriptions, training costs, business use of home, and travel expenses. This is an advantage over employee status where expense claims are more restricted."
 ---

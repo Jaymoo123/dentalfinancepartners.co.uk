@@ -1,7 +1,7 @@
 ---
 title: "Landlord Tax Return: Complete Guide 2026"
 slug: "landlord-tax-return-complete-guide-2026"
-canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/landlord-tax-return-complete-guide-2026"
+canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/landlord-tax-return-complete-guide-2026"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"
@@ -21,19 +21,15 @@ faqs:
     answer: "If your annual rental income is £1,000 or less, you can claim the property allowance and don't need to complete a tax return. However, if you have other income that requires a Self Assessment, you should still declare the rental income but can choose between claiming actual expenses or the £1,000 allowance."
   - question: "How will Making Tax Digital affect my landlord tax return from 2026?"
     answer: "From April 2026, landlords with gross rental income above £10,000 must use MTD-compatible software to submit quarterly updates to HMRC, rather than just an annual Self Assessment. You'll need to report income and expenses within one month of each quarter end, requiring much more regular record-keeping."
+  - question: "What's the difference between repairs and improvements for tax purposes?"
+    answer: "Repairs restore a property to its original condition and are tax-deductible expenses. Improvements enhance the property beyond its original state and must be treated as capital expenditure. For example, fixing a broken window is a repair, but installing double glazing where there wasn't any before is an improvement."
+  - question: "When do I need to start using Making Tax Digital for my rental property?"
+    answer: "Making Tax Digital for Income Tax Property (ITSA) becomes mandatory from 6 April 2026 for landlords with total income over £50,000. This requires quarterly digital reporting and compatible software. If your income is below this threshold, you can continue with annual self assessment returns."
 ---
 
 <p>Completing your <strong>landlord tax return</strong> correctly is essential for staying compliant with HMRC and minimising your tax bill. With Making Tax Digital for Income Tax starting in April 2026, the way landlords report rental income is changing significantly.</p>
 
 <p>This guide covers everything you need to know about filing your landlord tax return for the 2025/26 tax year and preparing for the digital requirements ahead.</p>
-
-<h2>Understanding Your Landlord Tax Return Obligations</h2>
-
-<p>As a UK landlord, you must report your rental income and expenses to HMRC annually. The specific form you use depends on your circumstances and the amount of rental income you receive.</p>
-
-<p>If your annual rental income exceeds £1,000, you need to complete either a Self Assessment tax return or register for Making Tax Digital for Income Tax Property (ITSA) from April 2026.</p>
-
-<p>Individual landlords with rental income below £10,000 per year can often use the simpler SA105 property pages within their Self Assessment. Those with higher income or more complex affairs typically need the full SA105 property supplement.</p>
 
 <h2>Key Deadlines for Your Landlord Tax Return</h2>
 
@@ -108,22 +104,6 @@ faqs:
 <li><strong>SA109:</strong> Residence and remittance basis (for non-UK residents)</li>
 </ul>
 
-<h2>Common Landlord Tax Return Mistakes</h2>
-
-<p>Avoiding these frequent errors can save you penalties and reduce the likelihood of HMRC enquiries into your affairs.</p>
-
-<h3>Incorrect Expense Claims</h3>
-
-<p>Many landlords claim capital improvements as revenue expenses. Remember that replacing a broken boiler is a repair (allowable), but upgrading to a more expensive model is partly an improvement (not fully allowable).</p>
-
-<h3>Missing the Property Allowance</h3>
-
-<p>If your rental income is below £1,000, you can claim the property allowance instead of actual expenses. This can sometimes be more beneficial than claiming small amounts of actual costs.</p>
-
-<h3>Incorrect Treatment of Deposits</h3>
-
-<p>Tenant deposits held in a protection scheme shouldn't be included as rental income. Only include deposits if you've legitimately kept them for damage or unpaid rent.</p>
-
 <h2>Preparing for Making Tax Digital</h2>
 
 <p>With MTD for Income Tax Property starting in April 2026, now is the time to prepare your record-keeping systems and choose appropriate software.</p>
@@ -147,3 +127,100 @@ faqs:
 <p>Keep detailed records of all rental income, including the dates received and which properties generated the income. Similarly, retain receipts for all expenses, with clear notes about what each cost relates to.</p>
 
 <p>Digital record-keeping is becoming increasingly important with MTD approaching. Consider scanning physical receipts and storing them securely in the cloud, organised by tax year and property.</p>
+
+<h2>When Do Landlords Need to File Self Assessment?</h2>
+<p>You must register for self assessment and file a tax return if your gross rental income exceeds £1,000 in a tax year. This threshold applies before deducting any expenses or allowances.</p>
+
+<p>For example, if you rent out a property for £1,200 per year, you need to file a return even if your profit after expenses is minimal. The £1,000 property allowance can cover your expenses if they're below this amount, but you still need to declare the income.</p>
+
+<p>You also need to file if you have other income sources that require self assessment, such as self-employment income, untaxed investment income over £10,000, or capital gains above the annual exempt amount.</p>
+
+<h2>What Forms Do Landlords Use?</h2>
+<p>Most landlords complete the UK Property section of their self assessment return. This covers rental income from residential and commercial properties in the UK.</p>
+
+<p>The main sections include:</p>
+
+<ul>
+<li>Total rental income received</li>
+<li>Allowable expenses and deductions</li>
+<li>Capital allowances on equipment</li>
+<li>Profit or loss calculation</li>
+</ul>
+
+<p>If you own overseas property, you'll need additional pages for foreign property income. Furnished holiday let properties also require separate reporting in most cases.</p>
+
+<h2>Rental Income: What to Include</h2>
+<p>Report all rental income received during the tax year, including:</p>
+
+<ul>
+<li>Monthly rent payments</li>
+<li>Deposits retained for damages</li>
+<li>Insurance payouts for lost rent</li>
+<li>Income from services provided to tenants</li>
+<li>Reverse premiums or other incentive payments</li>
+</ul>
+
+<p>Use the cash basis unless you've opted for accruals accounting. Under cash basis, you report income when received and expenses when paid, not when due.</p>
+
+<p>For example, if your December 2024 rent was paid in January 2025, it counts toward your 2025/26 tax return, not 2024/25.</p>
+
+<h2>Allowable Expenses and Deductions</h2>
+<p>Claiming the right expenses significantly reduces your tax bill. Common allowable expenses include:</p>
+
+<ul>
+<li>Mortgage interest (subject to Section 24 restrictions for individual landlords)</li>
+<li>Letting agent fees and management charges</li>
+<li>Property insurance premiums</li>
+<li>Repairs and maintenance (not improvements)</li>
+<li>Professional fees for accounts, legal advice</li>
+<li>Advertising for tenants</li>
+<li>Travel costs for property management</li>
+</ul>
+
+<p>The £1,000 property allowance can replace these expenses if they're lower. You can't claim both the allowance and actual expenses.</p>
+
+<h3>Section 24 Mortgage Interest Restriction</h3>
+
+<p>Individual landlords face restrictions on mortgage interest deductions. You can't deduct mortgage interest as an expense anymore. Instead, you get a basic rate tax credit (currently 20%) on your mortgage interest costs.</p>
+
+<p>This means higher-rate taxpayers effectively lose tax relief on 20% of their mortgage interest. For example, a 40% taxpayer with £10,000 mortgage interest gets £2,000 tax credit rather than £4,000 expense deduction.</p>
+
+<p>Many landlords consider <a href="/incorporation">incorporation</a> to avoid Section 24 restrictions, as companies can still deduct mortgage interest fully.</p>
+
+<h2>Capital Allowances on Equipment</h2>
+<p>You can claim capital allowances on equipment and fixtures in rental properties:</p>
+
+<ul>
+<li>Furniture in furnished lets</li>
+<li>Kitchen appliances</li>
+<li>Carpets and curtains</li>
+<li>Office equipment for property management</li>
+</ul>
+
+<p>The annual investment allowance lets you deduct up to £1 million of qualifying expenditure in 2025/26. Most landlords won't reach this limit, so you can typically claim full relief in the year of purchase.</p>
+
+<h2>Record Keeping Requirements</h2>
+<p>HMRC requires landlords to keep detailed records for at least 5 years after the filing deadline. Essential records include:</p>
+
+<ul>
+<li>Rental income receipts and bank statements</li>
+<li>Receipts for all allowable expenses</li>
+<li>Mortgage statements and loan documentation</li>
+<li>Property purchase and improvement records</li>
+<li>Tenancy agreements and deposit records</li>
+</ul>
+
+<p>Digital records are acceptable, but ensure they're backed up securely. Poor record keeping leads to enquiries and potential penalties.</p>
+
+<h2>Common Mistakes to Avoid</h2>
+<p>These errors frequently trigger HMRC enquiries:</p>
+
+<ul>
+<li>Claiming capital improvements as repairs</li>
+<li>Mixing personal and rental expenses</li>
+<li>Incorrectly applying Section 24 rules</li>
+<li>Using the wrong accounting basis</li>
+<li>Forgetting to report rental deposits retained</li>
+</ul>
+
+<p>The difference between repairs and improvements is crucial. Fixing a broken boiler is a repair, but installing a new heating system in a property that didn't have one is an improvement.</p>

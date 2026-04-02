@@ -3,8 +3,8 @@
   "display_name": "Dental Finance Partners",
   "legal_name": "Dental Finance Partners Ltd",
   "domain": "www.dentalfinancepartners.co.uk",
-  "tagline": "Accounting for UK dentists \u00e2\u20ac\u201d nothing else",
-  "description": "Dental accountants for associates, practice owners, and multi-site groups. NHS contracts, associate tax, VAT in a practice, and acquisitions \u00e2\u20ac\u201d we only work with dentists.",
+  "tagline": "Accounting for UK dentists — nothing else",
+  "description": "Dental accountants for associates, practice owners, and multi-site groups. NHS contracts, associate tax, VAT in a practice, and acquisitions — we only work with dentists.",
   "brand": {
     "primary_color": "#2563eb",
     "logo_path": "/brand/logo.png",
@@ -12,7 +12,7 @@
   },
   "contact": {
     "email": "hello@dentalfinancepartners.co.uk",
-    "phone": "+44 20 0000 0000"
+    "phone": "+44 20 7946 0321"
   },
   "navigation": [
     {
@@ -69,7 +69,7 @@
       "Practice finance",
       "VAT & compliance"
     ],
-    "supabase_table": "blog_topics",
+    "supabase_table": "blog_topics_dentists",
     "source_identifier": "dentists"
   },
   "seo": {
@@ -87,7 +87,7 @@
     "theme_color": "#001B3D"
   },
   "lead_form": {
-    "role_label": "I am a\u00e2\u20ac\u00a6",
+    "role_label": "I am a…",
     "role_options": [
       {
         "value": "Associate dentist",
@@ -110,7 +110,7 @@
       "name": "Dr Sarah Patel",
       "email": "sarah@example.com",
       "phone": "07700 000000",
-      "message": "e.g. I'm not sure if I should incorporate my practice, or I'd like help with my self assessment\u00e2\u20ac\u00a6"
+      "message": "e.g. I'm not sure if I should incorporate my practice, or I'd like help with my self assessment…"
     }
   },
   "cta": {

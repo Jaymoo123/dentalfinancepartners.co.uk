@@ -1,11 +1,11 @@
 ---
 title: "Buy-to-Let Limited Company: Complete Guide UK"
 slug: "buy-to-let-limited-company-complete-guide-uk"
-canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk"
+canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"
-metaTitle: "Buy-to-Let Limited Company Guide UK 2025 | Tax Benefits & Setup"
+metaTitle: "Buy-to-Let Limited Company Guide UK 2026 | Tax Benefits & Setup"
 metaDescription: "Complete guide to buy-to-let limited companies in the UK. Tax benefits, setup costs, Section 24 relief, and when incorporation makes sense for landlords."
 altText: "UK landlord reviewing buy-to-let limited company paperwork at desk with property documents"
 image: ""

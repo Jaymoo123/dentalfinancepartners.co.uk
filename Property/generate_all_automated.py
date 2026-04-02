@@ -43,7 +43,7 @@ def mark_used_via_file(topic_id, slug):
     Mark topic as used by writing SQL to a temp file for manual execution.
     This is a workaround since anon key doesn't have UPDATE permissions.
     """
-    sql = f"UPDATE blog_topics SET used = true, generated_slug = '{slug}', generated_at = NOW() WHERE id = '{topic_id}';\n"
+    sql = f"UPDATE blog_topics_property SET used = true, generated_slug = '{slug}', generated_at = NOW() WHERE id = '{topic_id}';\n"
     with open("mark_used.sql", "a", encoding="utf-8") as f:
         f.write(sql)
 

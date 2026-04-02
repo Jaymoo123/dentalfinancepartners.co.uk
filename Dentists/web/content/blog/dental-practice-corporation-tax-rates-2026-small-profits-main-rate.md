@@ -1,6 +1,7 @@
 ---
 title: "Dental Practice Corporation Tax Rates 2026: Small Profits Rate vs Main Rate"
 slug: "dental-practice-corporation-tax-rates-2026-small-profits-main-rate"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-practice-corporation-tax-rates-2026-small-profits-main-rate"
 date: "2026-03-29"
 author: "Dental Finance Partners"
 category: "Practice accounting"
@@ -11,7 +12,6 @@ image: ""
 h1: "Dental Practice Corporation Tax Rates 2026: Small Profits Rate vs Main Rate"
 summary: "Corporation tax rates for dental practices remain split in 2026, with a 19% small profits rate and 25% main rate. Understanding which applies to your practice is crucial for tax planning."
 schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-practice-corporation-tax-rates-2026-small-profits-main-rate"
 faqs:
   - question: "What corporation tax rate does my dental practice pay in 2026?"
     answer: "Your dental practice corporation tax rate depends on annual profits: 19% for profits up to £50,000, 25% for profits over £250,000, with marginal relief providing a gradual increase between these thresholds. The rate applies to your practice's total annual profit, not per dentist."
@@ -46,19 +46,6 @@ faqs:
 <p>For example, a single-dentist practice generating £45,000 in annual profit would pay £8,550 in corporation tax (19% of £45,000). This rate is particularly relevant for newer practices or those operating with lower overhead structures.</p>
 
 <p>Many associate-owned practices fall into this category, especially those operating part-time or focusing on specific treatment areas with controlled expenses.</p>
-
-<h2>Main Rate Application for Larger Dental Practices</h2>
-
-<p>Dental practices with profits exceeding £250,000 pay the main rate of 25% on their entire profit. This typically includes:</p>
-
-<ul>
-<li>Multi-surgery practices with several associates</li>
-<li>High-turnover private practices</li>
-<li>Dental groups with multiple locations</li>
-<li>Practices with significant specialist income</li>
-</ul>
-
-<p>A practice earning £300,000 profit would pay £75,000 in corporation tax (25% of £300,000). The jump from 19% to 25% represents a substantial increase in tax liability, making profit management strategies increasingly important.</p>
 
 <h2>Understanding Marginal Relief for Dental Practices</h2>
 

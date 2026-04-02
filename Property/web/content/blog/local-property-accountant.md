@@ -1,7 +1,7 @@
 ---
 title: "Local Property Accountant: Expert Services for UK Landlords"
 slug: "local-property-accountant"
-canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/local-property-accountant"
+canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/local-property-accountant"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"
@@ -13,14 +13,12 @@ h1: "Local Property Accountant: Expert Services for UK Landlords"
 summary: "Property Tax Partners provides specialist accounting services for UK landlords and property investors, combining local knowledge with expert property tax advice."
 schema: ""
 faqs:
-  - question: "How much should I expect to pay a local property accountant?"
-    answer: "Fees typically range from £800-£1,500 annually for landlords with 2-3 properties, rising to £2,000-£5,000+ for larger portfolios or complex structures. Most specialists offer fixed-fee arrangements that include annual accounts, Self Assessment, and basic planning advice. The tax savings usually exceed the fees by a significant margin."
+  - question: "When should I switch from my current accountant to a property specialist?"
+    answer: "Consider switching if you own multiple properties, face significant Section 24 restrictions, are considering incorporation, or need Making Tax Digital preparation. If your current accountant doesn't proactively discuss property tax strategies or seems unfamiliar with current legislation, it's time to find a specialist. The transition is usually straightforward and often pays for itself quickly."
   - question: "What's the difference between a general accountant and a property specialist?"
     answer: "Property specialists understand the complexities of Section 24 mortgage interest restrictions, incorporation decisions, capital gains strategies, and Making Tax Digital requirements for landlords. They provide proactive tax planning rather than just compliance, often identifying savings that general accountants miss. They also understand property market dynamics and investment structures."
   - question: "Do I need a local property accountant or can I use someone remote?"
     answer: "While remote working is common, a local accountant offers advantages like face-to-face meetings for complex matters, understanding of local property markets, and knowledge of regional variations in property taxation. However, expertise matters more than location - a specialist property accountant elsewhere may be better than a general local accountant."
-  - question: "When should I switch from my current accountant to a property specialist?"
-    answer: "Consider switching if you own multiple properties, face significant Section 24 restrictions, are considering incorporation, or need Making Tax Digital preparation. If your current accountant doesn't proactively discuss property tax strategies or seems unfamiliar with current legislation, it's time to find a specialist. The transition is usually straightforward and often pays for itself quickly."
 ---
 
 <p>Finding the right <strong>local property accountant</strong> can make the difference between maximising your rental profits and missing crucial tax opportunities. As a UK landlord or property investor, you need specialist expertise that understands both property taxation and local market conditions.</p>

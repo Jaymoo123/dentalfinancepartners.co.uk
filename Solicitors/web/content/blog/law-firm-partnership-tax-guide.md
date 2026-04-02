@@ -1,17 +1,17 @@
 ---
 title: "Law Firm Partnership Tax: Essential Guide for UK Legal Partnerships"
 slug: "law-firm-partnership-tax-guide"
+canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting/law-firm-partnership-tax-guide"
 date: "2026-04-01"
 author: "Accounts for Lawyers"
 category: "Partnership & LLP Accounting"
-metaTitle: "Law Firm Partnership Tax Guide 2025 | UK Legal Partnerships"
+metaTitle: "Law Firm Partnership Tax Guide 2026 | UK Legal Partnerships"
 metaDescription: "Complete guide to law firm partnership tax in the UK. Understand partnership taxation, profit allocation, and compliance requirements for legal practices."
 altText: "UK solicitors reviewing partnership tax documents and financial statements in a law firm office"
 image: ""
 h1: "Law Firm Partnership Tax: Essential Guide for UK Legal Partnerships"
 summary: "Understanding partnership taxation is crucial for law firm partners. This guide covers profit allocation, tax obligations, and compliance requirements specific to UK legal partnerships."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/partnership-llp-accounting/law-firm-partnership-tax-guide"
 faqs:
   - question: "How are law firm partners taxed on partnership profits?"
     answer: "Partners are taxed individually on their allocated share of partnership profits, regardless of actual drawings. The partnership files a Partnership Return showing profit allocation, and each partner includes their share on their personal Self Assessment return, paying income tax and National Insurance as self-employed individuals."
@@ -19,8 +19,6 @@ faqs:
     answer: "No, UK law firm partnerships don't pay corporation tax. The partnership is \"tax transparent\" - profits pass through to individual partners who pay income tax and National Insurance on their allocated shares. Only the individual partners have tax liabilities, not the partnership entity itself."
   - question: "What happens when a new partner joins a law firm partnership?"
     answer: "New partners start being taxed on their profit share from their admission date. If they pay for goodwill or partnership assets, this might create capital gains for existing partners. The partnership agreement should specify how profits are allocated in the admission year and any capital arrangements."
-  - question: "How does Making Tax Digital affect law firm partnerships?"
-    answer: "From April 2026, partnerships with income above £50,000 must comply with Making Tax Digital for Income Tax. This requires digital record-keeping and quarterly updates to HMRC. Most law firm partnerships will need to upgrade their accounting systems and processes to meet these requirements."
 ---
 
 <p>Law firm partnership tax can be complex, particularly with recent changes to partnership taxation rules and the ongoing rollout of Making Tax Digital. Understanding how partnership taxation works is essential for law firm partners to manage their tax obligations effectively and ensure compliance with HMRC requirements.</p>

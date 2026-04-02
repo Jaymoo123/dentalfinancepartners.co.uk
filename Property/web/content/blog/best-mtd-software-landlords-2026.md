@@ -1,7 +1,7 @@
 ---
 title: "Best MTD Software for UK Landlords in 2026: Complete Guide"
 slug: "best-mtd-software-landlords-2026"
-canonical: "https://accountsforproperty.co.uk/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026"
+canonical: "https://www.propertytaxpartners.co.uk/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Making Tax Digital (MTD)"
@@ -26,27 +26,6 @@ faqs:
 <p>Making Tax Digital for Income Tax Property (ITSA) becomes mandatory from 6 April 2026 for UK landlords with gross property income exceeding £50,000. This means quarterly digital submissions and end-of-period statements through MTD-compatible software.</p>
 
 <p>Choosing the right MTD software is crucial for compliance and efficiency. The wrong choice can mean extra work, higher costs, or compliance headaches down the line.</p>
-
-<h2>What MTD Software Must Do for Landlords</h2>
-
-<p>MTD software for property landlords must handle several specific requirements that standard accounting software often misses.</p>
-
-<p><strong>Core MTD requirements:</strong></p>
-<ul>
-<li>Quarterly submission of income and expenses to HMRC</li>
-<li>End of Period Statements (EOPS) submission</li>
-<li>Final declaration through Self Assessment</li>
-<li>Digital record keeping with audit trails</li>
-</ul>
-
-<p><strong>Property-specific features needed:</strong></p>
-<ul>
-<li>Multiple property tracking with individual P&L</li>
-<li>Mortgage interest calculations (Section 24 compliance)</li>
-<li>Capital allowances for furnishings and equipment</li>
-<li>Void period tracking</li>
-<li>Tenant deposit handling</li>
-</ul>
 
 <h2>Top MTD Software Options for Landlords in 2026</h2>
 

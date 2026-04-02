@@ -1,7 +1,7 @@
 ---
 title: "Property Accountant Glasgow: Expert Tax Services for Landlords"
 slug: "property-accountant-glasgow"
-canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-accountant-glasgow"
+canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/property-accountant-glasgow"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"

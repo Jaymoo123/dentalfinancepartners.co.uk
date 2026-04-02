@@ -1,6 +1,7 @@
 ---
 title: "Solicitor Practice Working Capital: A Complete Guide for UK Law Firms"
 slug: "solicitor-practice-working-capital"
+canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/solicitor-practice-working-capital"
 date: "2026-04-01"
 author: "Accounts for Lawyers"
 category: "Practice Finance & Cash Flow"
@@ -11,7 +12,6 @@ image: ""
 h1: "Solicitor Practice Working Capital: Managing Cash Flow in UK Law Firms"
 summary: "Working capital management is crucial for law firm sustainability. This guide covers calculation methods, optimisation strategies, and practical solutions for maintaining healthy cash flow."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/solicitor-practice-working-capital"
 faqs:
   - question: "What is a healthy working capital ratio for a solicitor practice?"
     answer: "A healthy working capital ratio (current assets ÷ current liabilities) for a law firm is typically 1.5-2.0. This means having £1.50-£2.00 of current assets for every £1.00 of current liabilities. However, the quality matters more than quantity - work in progress and slow-paying debtors are less valuable than cash despite being current assets."
@@ -27,29 +27,27 @@ faqs:
 
 <p>For UK law firms, managing working capital effectively determines whether you can pay staff salaries, cover office rent, and maintain operations while waiting for client payments. Poor working capital management has forced many profitable firms into administration.</p>
 
-<h2>What Is Solicitor Practice Working Capital?</h2>
+<h2>Optimising Solicitor Practice Working Capital</h2>
 
-<p>Working capital in a legal practice context includes several key components that differ from other businesses due to the unique nature of legal work and client money handling.</p>
+<p>Several strategies can improve your working capital position and reduce cash flow volatility:</p>
 
-<p><strong>Current Assets typically include:</strong></p>
-<ul>
-<li>Work in progress (unbilled time and expenses)</li>
-<li>Debtors (outstanding client invoices)</li>
-<li>Office account cash</li>
-<li>Prepaid expenses (insurance, rent deposits)</li>
-<li>Stock (stationery, forms, minor equipment)</li>
-</ul>
+<h3>Billing and Collection Improvements</h3>
 
-<p><strong>Current Liabilities typically include:</strong></p>
-<ul>
-<li>Trade creditors (suppliers, barristers' fees)</li>
-<li>Accrued expenses (unpaid staff costs, utilities)</li>
-<li>VAT liability</li>
-<li>PAYE and National Insurance due</li>
-<li>Short-term loans or overdrafts</li>
-</ul>
+<p>Regular interim billing transforms work in progress into debtors more quickly. Instead of waiting until matter completion, bill monthly for ongoing litigation or quarterly for long-term commercial matters.</p>
 
-<p>Client money held in trust accounts does not form part of your solicitor practice working capital as these funds belong to clients and must be kept separate under SRA Accounts Rules.</p>
+<p>Implement clear payment terms and follow up promptly on overdue accounts. Consider offering early payment discounts (2% for payment within 10 days) to accelerate cash collection.</p>
+
+<h3>Retainer and Payment on Account Policies</h3>
+
+<p>Requiring retainers upfront improves working capital by providing cash before work commences. A £5k retainer for employment tribunal representation immediately improves your cash position.</p>
+
+<p>For ongoing matters, establish payment on account arrangements where clients pay estimated costs monthly. This approach works particularly well for commercial clients with regular legal requirements.</p>
+
+<h3>Expense Management</h3>
+
+<p>Review payment terms with suppliers to optimise cash outflow timing. Negotiate 30-day terms with stationers and service providers while maintaining good relationships.</p>
+
+<p>Consider the timing of major purchases. Buying new IT equipment or office furniture just before a predicted cash flow squeeze compounds working capital pressures.</p>
 
 <h2>Calculating Working Capital Requirements</h2>
 
@@ -106,28 +104,6 @@ faqs:
 
 <p>Partners often want consistent monthly drawings regardless of cash flow cycles. This creates tension between partnership expectations and available working capital, particularly in smaller firms.</p>
 
-<h2>Optimising Solicitor Practice Working Capital</h2>
-
-<p>Several strategies can improve your working capital position and reduce cash flow volatility:</p>
-
-<h3>Billing and Collection Improvements</h3>
-
-<p>Regular interim billing transforms work in progress into debtors more quickly. Instead of waiting until matter completion, bill monthly for ongoing litigation or quarterly for long-term commercial matters.</p>
-
-<p>Implement clear payment terms and follow up promptly on overdue accounts. Consider offering early payment discounts (2% for payment within 10 days) to accelerate cash collection.</p>
-
-<h3>Retainer and Payment on Account Policies</h3>
-
-<p>Requiring retainers upfront improves working capital by providing cash before work commences. A £5k retainer for employment tribunal representation immediately improves your cash position.</p>
-
-<p>For ongoing matters, establish payment on account arrangements where clients pay estimated costs monthly. This approach works particularly well for commercial clients with regular legal requirements.</p>
-
-<h3>Expense Management</h3>
-
-<p>Review payment terms with suppliers to optimise cash outflow timing. Negotiate 30-day terms with stationers and service providers while maintaining good relationships.</p>
-
-<p>Consider the timing of major purchases. Buying new IT equipment or office furniture just before a predicted cash flow squeeze compounds working capital pressures.</p>
-
 <h2>Working Capital Funding Solutions</h2>
 
 <p>When organic improvements aren't sufficient, external funding can bridge working capital gaps:</p>
@@ -175,17 +151,3 @@ faqs:
 <p>Consider whether partnership agreements adequately address working capital contributions, particularly for seasonal variations or growth funding requirements.</p>
 
 <p>Partners leaving the practice can create sudden working capital demands if capital withdrawal provisions aren't carefully structured.</p>
-
-<h2>Technology and Working Capital Management</h2>
-
-<p>Modern practice management systems provide real-time visibility into work in progress, billing status, and debtor positions. This information enables proactive working capital management rather than reactive crisis response.</p>
-
-<p>Automated billing systems can render bills more frequently and consistently, improving cash flow timing. Client portals that facilitate online payment reduce collection periods.</p>
-
-<p>Integration between time recording, billing, and accounting systems eliminates delays in converting work in progress into billed debtors.</p>
-
-<div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
-<p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>
-<p style="color: var(--muted); margin-bottom: 1rem;">Explore our comprehensive guide to cash flow management, lock-up reduction, and working capital.</p>
-<p><a href="/blog/practice-finance-cash-flow" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Read the Complete Practice Finance Guide →</a></p>
-</div>

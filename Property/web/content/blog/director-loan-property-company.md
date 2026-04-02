@@ -1,11 +1,11 @@
 ---
 title: "Director Loans in Property Companies: Tax Rules and Implications"
 slug: "director-loan-property-company"
-canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/director-loan-property-company"
+canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/director-loan-property-company"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"
-metaTitle: "Director Loan Property Company Tax Rules | UK Guide 2025"
+metaTitle: "Director Loan Property Company Tax Rules | UK Guide 2026"
 metaDescription: "Complete guide to director loan accounts in property companies. Tax implications, benefits in kind, and compliance rules for UK landlords."
 altText: "UK property company director reviewing loan account statements and tax documents"
 image: ""

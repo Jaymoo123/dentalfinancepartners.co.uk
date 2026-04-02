@@ -1,6 +1,7 @@
 ---
 title: "The Real Cost of Setting Up a Dental Practice from Scratch in the UK"
 slug: "cost-setting-up-dental-practice-uk"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/cost-setting-up-dental-practice-uk"
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "Practice finance"
@@ -11,14 +12,11 @@ image: ""
 h1: "The Real Cost of Setting Up a Dental Practice from Scratch in the UK"
 summary: "Setting up a new dental practice typically costs £300,000-£600,000, covering everything from equipment and fit-out to legal fees and working capital."
 schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/cost-setting-up-dental-practice-uk"
 faqs:
   - question: "How much does it cost to set up a small dental practice in the UK?"
     answer: "A small dental practice with 2-3 surgeries typically costs £300,000-£500,000 to set up from scratch. This includes equipment (£120,000-£180,000), fit-out costs (£80,000-£150,000), professional fees (£15,000-£25,000), and working capital for the first 6-12 months. Location significantly affects these costs, with London practices requiring substantially more capital."
   - question: "What are the biggest unexpected costs when opening a new dental practice?"
     answer: "The biggest unexpected costs are usually building work overruns (often 20-30% above estimates), utility connections and upgrades (£2,000-£5,000), extended pre-opening periods requiring additional working capital, and higher than expected professional fees. Many new owners also underestimate the cost of initial marketing and staff recruitment."
-  - question: "How long does it take for a new dental practice to become profitable?"
-    answer: "Most new dental practices take 12-18 months to reach profitability, depending on location, patient mix, and marketing effectiveness. You should budget for at least 6-12 months of operating expenses as working capital. Practices in established areas with good NHS contracts may break even sooner, while those relying purely on private patients often take longer."
   - question: "Can you open a dental practice with no money down?"
     answer: "No, opening a dental practice requires substantial personal investment. Most lenders require 20-30% of total costs as a personal contribution (typically £60,000-£150,000). While some equipment can be 100% financed, banks want to see significant personal commitment. Some dentists partner with established practices or investors, but this involves giving up equity or profit share."
 ---

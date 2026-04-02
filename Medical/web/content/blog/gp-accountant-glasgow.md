@@ -1,6 +1,7 @@
 ---
 title: "GP Accountant Glasgow: Specialist Tax and Financial Services for Medical Professionals"
 slug: "gp-accountant-glasgow"
+canonical: ""
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "GP Tax & Accounts"
@@ -11,14 +12,11 @@ image: ""
 h1: "GP Accountant Glasgow: Specialist Medical Accounting Services"
 summary: "Looking for a specialist GP accountant in Glasgow? Get expert medical accounting services, tax planning, and NHS pension advice tailored to your practice needs."
 schema: ""
-canonical: ""
 faqs:
   - question: "How much does a GP accountant cost in Glasgow?"
     answer: "GP accountant fees in Glasgow typically range from £2,000-£4,000 for sole practitioners' annual accounts and tax returns, while GP partnership services cost £5,000-£15,000 depending on complexity. Monthly bookkeeping services range from £300-£800. The investment often pays for itself through tax savings and professional financial planning."
   - question: "What makes a medical accountant different from a general accountant?"
     answer: "Medical accountants specialize in healthcare sector finances including NHS pension annual allowance planning, GP partnership profit sharing, locum IR35 compliance, and professional expense optimization. They understand medical income structures, regulatory requirements, and tax planning opportunities that general accountants often miss."
-  - question: "Do I need a specialist accountant for my GP practice in Glasgow?"
-    answer: "While not legally required, a specialist medical accountant provides significant value for GP practices. They understand NHS pension complexities, partnership taxation, basis period reform changes, and medical expense deductions. For most GPs earning over £100k, specialist advice typically saves more in tax than the additional fees cost."
   - question: "When should I change to a medical specialist accountant?"
     answer: "Consider switching if your current accountant doesn't understand NHS pensions, struggles with medical partnership accounts, or misses common medical expense deductions. Warning signs include basic errors on partnership returns, lack of proactive tax planning, or inability to advise on medical-specific issues like annual allowance planning or locum IR35 status."
 ---
@@ -79,20 +77,6 @@ faqs:
 <li><strong>Technology Integration:</strong> Modern practices require cloud accounting systems and digital bookkeeping solutions</li>
 <li><strong>Local Knowledge:</strong> Understanding of Glasgow's medical sector and local business environment</li>
 </ul>
-
-<h2>Cost of Medical Accounting Services in Glasgow</h2>
-
-<p>Medical accounting fees in Glasgow typically vary based on practice complexity and service requirements:</p>
-
-<ul>
-<li>Sole practitioner annual accounts and tax returns: £2,000-£4,000</li>
-<li>GP partnership accounts and returns: £5,000-£15,000 depending on partner numbers</li>
-<li>Monthly bookkeeping and management accounts: £300-£800 per month</li>
-<li>NHS pension planning consultation: £500-£1,500</li>
-<li>Private practice incorporation: £2,000-£5,000</li>
-</ul>
-
-<p>While specialist medical accounting services may cost more than general accountants, the tax savings and professional advice typically provide significant value.</p>
 
 <h2>Getting Started with a Medical Accountant</h2>
 

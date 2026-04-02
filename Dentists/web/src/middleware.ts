@@ -74,6 +74,25 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
   "when-does-dental-practice-need-audit-uk": "practice-accounting",
 };
 
+const DUPLICATE_REDIRECTS: Record<string, string> = {
+  "associate-dentist-expenses-tax-deductions": "/blog/associate-tax/associate-dentist-tax-guide-uk",
+  "associate-dentist-maternity-leave-financial-planning": "/blog/associate-tax/maternity-paternity-leave-associate-dentists-uk",
+  "associate-dentist-tax-self-assessment-uk": "/blog/associate-tax/associate-dentist-tax-guide-uk",
+  "associate-to-practice-owner-financial-planning-uk": "/blog/buying-a-practice/associate-to-practice-owner-financial-transition-guide",
+  "dental-practice-accountant-manchester": "/blog/practice-accounting/dental-accountant-manchester-specialist-knowledge",
+  "dental-practice-benchmarking-profitable": "/blog/practice-finance/dental-practice-profit-margin-benchmarking-optimization-uk",
+  "dental-practice-insurance-business-expense-claims": "/blog/practice-accounting/dental-practice-insurance-tax-deductible-expenses-guide",
+  "dental-practice-vat-registration-threshold-changes-2026": "/blog/vat-and-compliance/dental-practice-vat-registration-threshold-requirements",
+  "dentist-student-loan-repayment-tax-implications": "/blog/associate-tax/student-loan-repayments-dentists-calculation",
+  "hiring-associate-dentist-costs-uk-financial-planning": "/blog/practice-finance/hiring-first-associate-costs-structure-uk-dental",
+  "making-tax-digital-dental-practices-mtd-compliance": "/blog/vat-and-compliance/making-tax-digital-dental-practices-mtd-guide",
+  "nhs-dental-contract-accounting-payment-processing": "/blog/practice-accounting/nhs-contract-payments-accounting-uk-dentists",
+  "nhs-superannuation-pension-annual-allowance-dentists": "/blog/associate-tax/nhs-superannuation-pension-annual-allowance-uk-dentists",
+  "pension-contributions-dentists-tax-relief-annual-allowance": "/blog/associate-tax/dentist-pension-contributions-tax-relief-uk",
+  "r-and-d-tax-credits-dental-practices-eligibility-uk": "/blog/practice-accounting/dental-practice-rd-tax-credits-eligibility-claims",
+  "reasonable-profit-margin-dental-practice-uk": "/blog/practice-finance/dental-practice-profit-margin-benchmarking-optimization-uk",
+};
+
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
@@ -90,6 +109,15 @@ export function middleware(request: NextRequest) {
   if (oldCategoryMatch) {
     const categorySlug = oldCategoryMatch[1];
     return NextResponse.redirect(new URL(`/blog/${categorySlug}`, request.url), 301);
+  }
+
+  const nestedMatch = pathname.match(/^\/blog\/[^\/]+\/([^\/]+)$/);
+  if (nestedMatch) {
+    const slug = nestedMatch[1];
+    const target = DUPLICATE_REDIRECTS[slug];
+    if (target) {
+      return NextResponse.redirect(new URL(target, request.url), 301);
+    }
   }
 
   return NextResponse.next();

@@ -25,9 +25,9 @@ async def setup():
     
     try:
         # Try to query existing tables
-        result = await supabase.select("blog_topics", limit=1)
+        result = await supabase.select("blog_topics_dentists", limit=1)
         print("✅ Connection successful!")
-        print(f"   Found {len(result)} topics in blog_topics table")
+        print(f"   Found {len(result)} topics in blog_topics_dentists table")
     except Exception as e:
         print(f"❌ Connection failed: {e}")
         return

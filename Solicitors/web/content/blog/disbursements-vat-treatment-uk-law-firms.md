@@ -11,7 +11,7 @@ image: ""
 h1: "Disbursements VAT Treatment: A Complete Guide for UK Law Firms"
 summary: "Understanding disbursements VAT treatment is essential for law firms to ensure compliance and accurate client billing. Get clear guidance on when VAT applies to different types of disbursements."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/vat-compliance/disbursements-vat-treatment-uk-law-firms"
+canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/disbursements-vat-treatment-uk-law-firms"
 faqs:
   - question: "What's the difference between a disbursement and a cost for VAT purposes?"
     answer: "A true disbursement is a payment where you act purely as the client's agent, meeting specific HMRC criteria including client authority and liability. The client must know the exact amount and you recover only what you paid. A cost is any other payment you make in providing your services, which typically requires you to charge VAT when billing the client."

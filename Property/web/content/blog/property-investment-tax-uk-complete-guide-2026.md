@@ -1,7 +1,7 @@
 ---
 title: "Property Investment Tax UK: Complete Guide 2026"
 slug: "property-investment-tax-uk-complete-guide-2026"
-canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-investment-tax-uk-complete-guide-2026"
+canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/property-investment-tax-uk-complete-guide-2026"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"
@@ -56,24 +56,6 @@ faqs:
 </ul>
 
 <p>Capital improvements like new kitchens or extensions aren't deductible expenses. These costs can reduce capital gains tax when you sell the property.</p>
-
-<h2>Capital Gains Tax on Property Investment</h2>
-
-<p>When you sell an investment property, you'll typically pay capital gains tax on any profit. For 2025/26, rates are 18% (basic rate taxpayers) or 24% (higher/additional rate taxpayers) on residential property gains.</p>
-
-<p>Calculate your gain by subtracting the original purchase price, buying costs, selling costs, and qualifying capital improvements from the sale price.</p>
-
-<h3>Capital Gains Tax Reliefs</h3>
-
-<p>Several reliefs can reduce your capital gains tax liability:</p>
-
-<ul>
-<li><strong>Annual exempt amount</strong> - £3,000 for 2025/26 (reduced from previous years)</li>
-<li><strong>Private residence relief</strong> - if you lived in the property as your main home</li>
-<li><strong>Lettings relief</strong> - now limited to properties where you shared occupancy with tenants</li>
-</ul>
-
-<p>Property held in companies faces corporation tax on gains at 25% (or 19% on profits up to £50,000), potentially offering savings for higher rate taxpayers.</p>
 
 <h2>Making Tax Digital Requirements</h2>
 

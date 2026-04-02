@@ -1,6 +1,7 @@
 ---
 title: "Understanding Goodwill When Buying or Selling a Dental Practice"
 slug: "dental-practice-goodwill-buying-selling"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-goodwill-buying-selling"
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "Buying a practice"
@@ -11,12 +12,9 @@ image: ""
 h1: "Understanding Goodwill When Buying or Selling a Dental Practice"
 summary: "Goodwill represents the intangible value of a dental practice beyond its physical assets. Understanding how it's calculated and taxed is crucial for both buyers and sellers."
 schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental-practice-goodwill-buying-selling"
 faqs:
   - question: "How much goodwill should I pay when buying a dental practice?"
     answer: "Goodwill typically ranges from 0.7 to 1.2 times annual profit for UK dental practices, depending on factors like patient retention, location, and growth potential. The key is ensuring projected returns justify the premium you pay above tangible asset values."
-  - question: "Can I claim tax relief on goodwill when buying a practice?"
-    answer: "Tax relief depends on your business structure. Sole traders typically cannot claim immediate relief, while limited companies can often claim amortisation relief over several years. Professional advice is essential to structure the purchase tax-efficiently."
   - question: "What happens to goodwill if patients leave after I buy the practice?"
     answer: "Patient loss reduces the value you have received for your goodwill payment. This is why due diligence on patient retention rates is crucial, and why some deals include earn-out clauses linking goodwill payments to future performance."
   - question: "Do I need to pay Capital Gains Tax when selling practice goodwill?"
@@ -26,14 +24,6 @@ faqs:
 <p>When buying or selling a dental practice, goodwill often represents the largest component of the transaction value. Yet many dentists struggle to understand what it actually means and how it affects their deal.</p>
 
 <p>Goodwill is the premium paid above the value of tangible assets — it represents everything that makes your practice valuable beyond the chairs, equipment, and premises.</p>
-
-<h2>What Is Dental Practice Goodwill?</h2>
-
-<p>Dental practice goodwill captures the intangible assets that generate future profits. This includes your patient list, reputation, location advantages, and the systems that keep patients coming back.</p>
-
-<p>For example, if a practice has equipment worth £100k but sells for £400k, the goodwill is typically £300k. This premium reflects the buyer's expectation of ongoing patient revenue and profit.</p>
-
-<p>Goodwill differs from other intangible assets like brand names or patents because it represents the overall business value that cannot be separately identified or sold.</p>
 
 <h2>How Is Goodwill Valued in Dental Practices?</h2>
 
@@ -64,14 +54,6 @@ faqs:
 </ul>
 
 <p>Your <a href="/blog/nhs-private-mix-dental-accounts">NHS-private patient mix</a> particularly impacts goodwill valuation, as private income streams are often valued more highly.</p>
-
-<h2>Goodwill Tax Implications for Sellers</h2>
-
-<p>Goodwill sales typically qualify for Business Asset Disposal Relief (formerly Entrepreneurs' Relief), reducing Capital Gains Tax to 10% on the first £1 million of gains over your career.</p>
-
-<p>However, you must meet specific criteria including owning the business for at least two years and holding at least 5% of shares (for limited companies).</p>
-
-<p>The tax treatment can be complex, particularly if you are selling premises alongside goodwill or if the practice operates through a company structure. Professional advice is essential to ensure you claim all available reliefs.</p>
 
 <h2>Goodwill Tax Implications for Buyers</h2>
 

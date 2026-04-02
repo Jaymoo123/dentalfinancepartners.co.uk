@@ -11,7 +11,7 @@ image: ""
 h1: "Client Money Accounting for Solicitors: Essential SRA Compliance Guide"
 summary: "Essential guide covering SRA Accounts Rules compliance for client money handling, trust accounting requirements, and practical steps to avoid regulatory breaches."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/client-money-accounting-solicitors"
+canonical: "https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/client-money-accounting-solicitors"
 faqs:
   - question: "What happens if I mix client money with practice money?"
     answer: "Mixing client and practice money breaches SRA Accounts Rules and can result in regulatory action including practice intervention, fines, and restriction of your practising certificate. You must immediately separate the funds and report the breach if material. Even minor mixing requires investigation and correction to prevent future occurrences."

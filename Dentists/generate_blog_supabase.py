@@ -33,7 +33,7 @@ def fetch_unused_topic():
     Fetch the highest priority unused topic from Supabase.
     Priority-based selection: highest publish_priority first, then easiest keyword_difficulty.
     """
-    url = f"{SUPABASE_URL}/rest/v1/blog_topics"
+    url = f"{SUPABASE_URL}/rest/v1/blog_topics_dentists"
     headers = {
         "apikey": SUPABASE_KEY,
         "Authorization": f"Bearer {SUPABASE_KEY}",
@@ -60,7 +60,7 @@ def fetch_unused_topic():
 
 def mark_topic_used(topic_id, slug):
     """Mark topic as used in Supabase."""
-    url = f"{SUPABASE_URL}/rest/v1/blog_topics"
+    url = f"{SUPABASE_URL}/rest/v1/blog_topics_dentists"
     headers = {
         "apikey": SUPABASE_KEY,
         "Authorization": f"Bearer {SUPABASE_KEY}",
@@ -212,7 +212,7 @@ def main():
     print("\n[1/4] Fetching unused topic from Supabase...")
     topic_row = fetch_unused_topic()
     if not topic_row:
-        print("No topics to process. Add topics to the blog_topics table.")
+        print("No topics to process. Add topics to the blog_topics_dentists table.")
         return
     
     topic_id = topic_row["id"]

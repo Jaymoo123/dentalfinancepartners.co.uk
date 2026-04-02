@@ -1,11 +1,11 @@
 ---
 title: "How to Transfer Property Into a Limited Company UK: Complete Guide for Landlords"
 slug: "how-to-transfer-property-into-limited-company-uk"
-canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk"
+canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"
-metaTitle: "How to Transfer Property Into Company UK | Complete Guide 2025"
+metaTitle: "How to Transfer Property Into Company UK | Complete Guide 2026"
 metaDescription: "Complete guide on transferring property into a limited company in the UK. Learn about incorporation relief, stamp duty, CGT and the step-by-step process."
 altText: "UK property transfer documents and keys representing property incorporation process"
 image: ""
@@ -26,18 +26,6 @@ faqs:
 <p>Many UK landlords consider transferring their buy-to-let properties into a limited company to reduce their tax burden, particularly following Section 24 mortgage interest restrictions. However, this process involves significant legal, tax and practical considerations that require careful planning.</p>
 
 <p>This guide explains how to transfer property into a limited company UK, covering the key steps, costs, and tax implications you need to understand before making this decision.</p>
-
-<h2>Why Transfer Property Into a Limited Company?</h2>
-
-<p>The main reasons landlords choose to transfer property into a limited company include:</p>
-
-<ul>
-<li><strong>Corporation tax benefits:</strong> Companies pay corporation tax (19-25%) instead of income tax (up to 45%)</li>
-<li><strong>Mortgage interest relief:</strong> Companies can still deduct full mortgage interest against rental income</li>
-<li><strong>Tax-efficient profit extraction:</strong> Dividends may be taxed more favourably than rental income</li>
-<li><strong>Succession planning:</strong> Easier to pass shares to family members</li>
-<li><strong>Professional credibility:</strong> Some lenders and agents prefer dealing with companies</li>
-</ul>
 
 <h2>Methods for Transferring Property Into a Company</h2>
 

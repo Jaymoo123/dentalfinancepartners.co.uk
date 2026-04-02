@@ -1,7 +1,7 @@
 ---
 title: "How to Incorporate Rental Property Without Triggering CGT"
 slug: "incorporate-rental-property-without-cgt"
-canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/incorporate-rental-property-without-cgt"
+canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/incorporate-rental-property-without-cgt"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"
@@ -26,14 +26,6 @@ faqs:
 <p>Many UK landlords consider moving their rental properties into a limited company to benefit from corporation tax rates and avoid Section 24 mortgage interest restrictions. The main concern is usually Capital Gains Tax (CGT) — transferring properties at current market value could trigger a substantial tax bill.</p>
 
 <p>Fortunately, there are legitimate ways to <strong>incorporate rental properties without triggering immediate CGT</strong>. The key is understanding incorporation relief and planning your transfer carefully.</p>
-
-<h2>Understanding Incorporation Relief</h2>
-
-<p>Incorporation relief allows you to transfer a business (including rental properties) to a company without immediate CGT liability. The relief works by deferring the gain rather than eliminating it entirely.</p>
-
-<p>When you transfer properties under incorporation relief, you receive shares in the company instead of cash. The CGT liability remains dormant until you sell those shares or the company disposes of the properties.</p>
-
-<p>For example, if you transfer a property worth £300,000 (originally bought for £200,000) to your company, the £100,000 gain isn't immediately taxable. Instead, it's held over until a future disposal event.</p>
 
 <h2>Key Conditions for Incorporation Relief</h2>
 

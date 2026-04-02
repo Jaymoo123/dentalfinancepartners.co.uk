@@ -1,7 +1,7 @@
 ---
 title: "Principal Private Residence Relief for Landlords: Complete UK Guide"
 slug: "principal-private-residence-relief-landlords"
-canonical: "https://accountsforproperty.co.uk/blog/capital-gains-tax/principal-private-residence-relief-landlords"
+canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/principal-private-residence-relief-landlords"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Capital Gains Tax"
@@ -19,8 +19,6 @@ faqs:
     answer: "There's no minimum occupation period for principal private residence relief. Even short periods of genuine occupation as your main home can qualify. However, HMRC will scrutinise very short periods to ensure the occupation was genuine rather than a tax avoidance arrangement. The relief is calculated proportionally based on the occupation period relative to total ownership."
   - question: "What happens if I rent out part of my home while living there?"
     answer: "If you rent out part of your main residence while continuing to live there, the property can still qualify for principal private residence relief. The rental income part may be subject to capital gains tax on disposal, but this is often covered by letting relief (up to £40,000). Renting out a room under the rent-a-room scheme typically doesn't affect PPR relief for the whole property."
-  - question: "Can I get PPR relief on a property I inherited?"
-    answer: "You can't get principal private residence relief for periods before you inherited the property, even if the deceased lived there. However, if you move into the inherited property and make it your main residence, you'll start building up PPR relief from that point. The period of your occupation will qualify for relief when you eventually sell the property."
 ---
 
 <p>Principal private residence relief is one of the most valuable capital gains tax reliefs available to UK property investors. If you've ever lived in a property that you later rent out, this relief could save you thousands in CGT when you sell.</p>

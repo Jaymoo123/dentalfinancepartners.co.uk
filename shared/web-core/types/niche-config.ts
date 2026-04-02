@@ -14,6 +14,7 @@ export interface NicheConfig {
     primary_color: string;
     logo_path: string;
     publisher_logo_url: string;
+    accent_color?: string;
   };
   contact: {
     email: string;
@@ -30,6 +31,8 @@ export interface NicheConfig {
   locations: Array<{
     slug: string;
     title: string;
+    name?: string;
+    county?: string;
   }>;
   content_strategy: {
     audience: string;
@@ -44,6 +47,9 @@ export interface NicheConfig {
     google_analytics_id: string;
     google_site_verification: string;
     theme_color: string;
+    homepage_title?: string;
+    homepage_h1?: string;
+    homepage_description?: string;
   };
   lead_form: {
     role_label: string;

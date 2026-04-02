@@ -1,7 +1,7 @@
 ---
 title: "Incorporation Case Study: 5-Property Portfolio Analysis"
 slug: "incorporation-case-study-5-property-portfolio-analysis"
-canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/incorporation-case-study-5-property-portfolio-analysis"
+canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/incorporation-case-study-5-property-portfolio-analysis"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

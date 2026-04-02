@@ -1,7 +1,7 @@
 ---
 title: "Property Accountant Leicester: Expert Tax Services for UK Landlords"
 slug: "property-accountant-leicester"
-canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/property-accountant-leicester"
+canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/property-accountant-leicester"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"
@@ -15,8 +15,6 @@ schema: ""
 faqs:
   - question: "What makes a property accountant different from a general accountant in Leicester?"
     answer: "Property accountants specialise specifically in UK property taxation, including Section 24, capital gains planning, and incorporation strategies. They understand Leicester's property market dynamics and can provide targeted advice for landlords and property investors that general accountants typically cannot match."
-  - question: "How much does a property accountant cost in Leicester?"
-    answer: "Costs vary depending on portfolio size and complexity, but typically range from £500-2000 annually for basic compliance, with additional charges for incorporation, tax planning, or complex transactions. The investment usually pays for itself through tax savings and improved financial management."
   - question: "Do I need a Leicester-based property accountant or can I use someone remote?"
     answer: "While many property accounting services can be delivered remotely, a Leicester-based accountant offers advantages including local market knowledge, face-to-face meetings when needed, and understanding of specific Leicester property investment opportunities and challenges."
   - question: "When should Leicester landlords start working with a property accountant?"

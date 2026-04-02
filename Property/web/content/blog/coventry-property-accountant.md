@@ -1,7 +1,7 @@
 ---
 title: "Coventry Property Accountant: Expert Services for Local Landlords"
 slug: "coventry-property-accountant"
-canonical: "https://accountsforproperty.co.uk/blog/portfolio-management/coventry-property-accountant"
+canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/coventry-property-accountant"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Portfolio Management"
@@ -15,10 +15,6 @@ schema: ""
 faqs:
   - question: "Do I need a specialist property accountant in Coventry?"
     answer: "If you own rental property in Coventry, a specialist property accountant can help navigate complex tax rules like Section 24, prepare for Making Tax Digital requirements, and optimise your tax position. General accountants may lack the specific property tax expertise needed for effective planning."
-  - question: "How much does a property accountant cost in Coventry?"
-    answer: "Costs vary depending on portfolio size and service requirements. Basic tax return preparation might start around £300-500 annually, while comprehensive tax planning and compliance support typically ranges from £1,000-3,000+ per year. The tax savings often exceed the professional fees."
-  - question: "What should I bring to my first meeting with a Coventry property accountant?"
-    answer: "Bring recent tax returns, property income and expense records, mortgage statements, and details of your current portfolio. Include any correspondence from HMRC and information about your future property investment plans. This helps the accountant understand your specific situation."
   - question: "When should Coventry landlords consider incorporating their property business?"
     answer: "Consider incorporation when Section 24 restrictions significantly impact your tax position, you're a higher-rate taxpayer with substantial rental income, or planning portfolio expansion. Professional analysis of your specific circumstances determines if incorporation benefits outweigh the additional compliance costs."
 ---

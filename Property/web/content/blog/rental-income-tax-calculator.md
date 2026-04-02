@@ -1,7 +1,7 @@
 ---
 title: "Rental Income Tax Calculator: Work Out Your Tax"
 slug: "rental-income-tax-calculator"
-canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/rental-income-tax-calculator"
+canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/rental-income-tax-calculator"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"
@@ -21,23 +21,15 @@ faqs:
     answer: "Yes, especially with multiple properties. You need to combine all rental income, pool allowable expenses, and calculate Section 24 relief on total mortgage interest. The calculations become more complex and the tax impact can be significant."
   - question: "When should I use professional help instead of a calculator?"
     answer: "Consider professional help if you have multiple properties, mixed property types, company ownership structures, or significant capital gains. Complex portfolios need detailed tax planning beyond what basic calculators can provide."
+  - question: "Does rental income tax change depending on my employment income?"
+    answer: "Yes — rental income is added to your employment income to determine your overall tax band. If your salary is £40,000 and rental profit is £15,000, your combined income of £55,000 pushes some earnings into the higher-rate band at 40%, significantly increasing the tax on your rental income."
+  - question: "How does Making Tax Digital affect rental income tax reporting?"
+    answer: "From April 2026, landlords with property income over £50,000 must keep digital records and submit quarterly updates to HMRC. This doesn't change how tax is calculated but requires more frequent reporting. Choose MTD-compatible software and set up digital record-keeping well before the deadline."
 ---
 
 <p>Working out your rental income tax can feel overwhelming, especially with Section 24 mortgage interest restrictions and various allowable deductions to consider. A <strong>rental income tax calculator</strong> helps you understand your tax liability and plan your finances effectively.</p>
 
 <p>This guide explains how to calculate your rental income tax, what deductions you can claim, and how Section 24 affects your final tax bill.</p>
-
-<h2>How Rental Income Tax Works</h2>
-
-<p>Your rental income is added to your other income and taxed at your marginal rate. For 2025/26, the tax bands are:</p>
-
-<ul>
-<li>Basic rate: 20% on income between £12,570 and £50,270</li>
-<li>Higher rate: 40% on income between £50,271 and £125,140</li>
-<li>Additional rate: 45% on income above £125,140</li>
-</ul>
-
-<p>The challenge comes with Section 24, which restricts mortgage interest relief to basic rate (20%) regardless of your actual tax band.</p>
 
 <h2>Using a Rental Income Tax Calculator</h2>
 
@@ -67,30 +59,6 @@ faqs:
 <li>Pay tax on the higher figure</li>
 <li>Claim 20% tax relief on the mortgage interest</li>
 </ul>
-
-<h2>Worked Example: Rental Income Tax Calculator</h2>
-
-<p>Here's how a <strong>rental income tax calculator</strong> would work for a higher-rate taxpayer with one BTL property:</p>
-
-<p><strong>Property Details:</strong></p>
-<ul>
-<li>Annual rent: £18,000</li>
-<li>Allowable expenses: £2,000</li>
-<li>Mortgage interest: £8,000</li>
-<li>Other income: £55,000 (higher rate taxpayer)</li>
-</ul>
-
-<p><strong>Calculation:</strong></p>
-<ul>
-<li>Gross rental income: £18,000</li>
-<li>Less allowable expenses: £2,000</li>
-<li>Net rental profit: £16,000</li>
-<li>Tax at 40%: £6,400</li>
-<li>Less Section 24 relief (20% × £8,000): £1,600</li>
-<li>Total tax due: £4,800</li>
-</ul>
-
-<p>Without Section 24, this landlord would have paid tax on just £8,000 profit (£16,000 - £8,000 interest), costing £3,200. The restriction adds £1,600 to their tax bill.</p>
 
 <h2>Multiple Property Calculations</h2>
 
@@ -130,7 +98,7 @@ faqs:
 
 <p>Our <a href="/services">property tax specialists</a> can provide detailed calculations and tax planning strategies tailored to your portfolio.</p>
 
-<h2>Planning Ahead for 2025/26</h2>
+<h2>Planning Ahead for 2026/26</h2>
 
 <p>Remember that Making Tax Digital for Income Tax Property starts from April 2026 for landlords with property income above £50,000. This means quarterly reporting and more detailed record-keeping.</p>
 
@@ -144,3 +112,15 @@ faqs:
 </ul>
 
 <p>Start calculating your rental income tax early in the year. Don't wait until January 31st to discover an unexpected tax bill that could have been better managed with proper planning.</p>
+
+<h2>Common Calculation Mistakes</h2>
+
+<p>Several errors frequently lead landlords to miscalculate their rental income tax:</p>
+
+<p><strong>Forgetting to add back mortgage interest:</strong> Under Section 24, mortgage interest is not deducted from rental income before calculating tax. You must calculate tax on the full rental profit, then apply the 20% tax credit separately. Many landlords still deduct mortgage interest as an expense, underestimating their tax bill significantly.</p>
+
+<p><strong>Mixing capital and revenue expenditure:</strong> A new kitchen in a rental property is a repair (revenue expense, fully deductible) if it replaces an existing kitchen of similar standard. But an extension or conversion is capital expenditure, which can only be offset against capital gains when you sell. Getting this wrong either inflates your tax bill or triggers HMRC queries.</p>
+
+<p><strong>Ignoring the interaction with personal income:</strong> Rental profit is added to your employment or pension income. A landlord earning £45,000 from their job who adds £10,000 rental profit pushes £5,000 into the higher-rate band at 40% — doubling the tax rate on that portion compared to what they expected.</p>
+
+<p><strong>Not claiming all allowable expenses:</strong> Travel to inspect properties, landlord insurance, ground rent, service charges, and professional fees are all deductible. Many landlords claim only mortgage interest and letting agent fees, missing thousands in legitimate deductions that reduce their tax liability.</p>

@@ -1,24 +1,20 @@
 ---
 title: "GP Home Office Expenses Tax Relief: Complete Guide for Medical Professionals"
 slug: "gp-home-office-expenses-tax-relief"
+canonical: ""
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "GP Tax & Accounts"
-metaTitle: "GP Home Office Expenses Tax Relief - Complete UK Guide 2025"
+metaTitle: "GP Home Office Expenses Tax Relief - Complete UK Guide 2026"
 metaDescription: "Complete guide to claiming GP home office expenses tax relief. Learn what you can claim, how to calculate costs, and maximise your tax savings as a UK medical professional."
 altText: "UK GP working from home office with medical documents and computer showing tax relief calculations"
 image: ""
 h1: "GP Home Office Expenses Tax Relief: Complete Guide for Medical Professionals"
 summary: "Learn how to claim tax relief on your home office expenses as a GP or medical professional. Our guide covers eligible costs, calculation methods, and maximising your tax savings."
 schema: ""
-canonical: ""
 faqs:
-  - question: "How much can I claim for GP home office expenses tax relief?"
-    answer: "Using HMRC's simplified method, you can claim £10-26 per month depending on hours worked from home. However, calculating actual costs often gives better relief - many GPs can claim £1,000-3,000 annually, saving £400-1,200 in tax at higher rates."
   - question: "Can I claim home office expenses if I'm a salaried GP?"
     answer: "Yes, salaried GPs can claim home office expenses through Self Assessment as employment expenses, provided your employer doesn't reimburse these costs. You need to show the expenses are necessary for your employment and used wholly and exclusively for work."
-  - question: "Do I need a dedicated room to claim home office tax relief?"
-    answer: "No, you don't need a separate room. You can claim for any area used wholly and exclusively for work - even a desk in your living room qualifies if it's only used for work purposes. However, you can only claim for the time and space used exclusively for work."
   - question: "What records do I need to keep for my home office claim?"
     answer: "Keep utility bills, council tax statements, receipts for office equipment, floor plans showing work areas, work diaries documenting home working hours, and mortgage/rental statements. Maintain these records for at least five years after the relevant tax year deadline."
 ---
@@ -26,19 +22,6 @@ faqs:
 <p>Many UK medical professionals work from home regularly — reviewing patient notes, completing administrative tasks, or running telehealth consultations. If you're a GP, consultant, or locum doctor using your home for work purposes, you may be entitled to <strong>GP home office expenses tax relief</strong>.</p>
 
 <p>Understanding what you can claim and how to calculate your relief can reduce your tax bill significantly. This guide explains the rules, eligible expenses, and practical steps to claim your home office tax relief.</p>
-
-<h2>Who Can Claim GP Home Office Expenses Tax Relief?</h2>
-
-<p>You can claim home office tax relief if you regularly work from home as part of your medical practice. This includes:</p>
-
-<ul>
-<li><strong>GP partners</strong> — Administrative work, patient record reviews, clinical research</li>
-<li><strong>Salaried GPs</strong> — Telehealth consultations, continuing professional development</li>
-<li><strong>Locum doctors</strong> — Between assignments, administrative tasks, training</li>
-<li><strong>Hospital consultants</strong> — Private practice work, research, clinical administration</li>
-</ul>
-
-<p>The key test is whether you use your home "wholly and exclusively" for work purposes, or you can identify a specific portion used for work. You don't need to use a dedicated room — a desk in your living room that's used solely for work can qualify.</p>
 
 <h2>What Home Office Expenses Can You Claim?</h2>
 
@@ -128,16 +111,6 @@ faqs:
 <p><strong>Capital vs revenue:</strong> Don't claim for permanent home improvements. A new boiler serves the whole house, not just your office.</p>
 
 <p><strong>Employer reimbursement:</strong> You cannot claim tax relief if your employer or practice already reimburses home office costs.</p>
-
-<h2>Maximising Your Tax Relief</h2>
-
-<p>Several strategies can help maximize your home office tax savings:</p>
-
-<p><strong>Track your time:</strong> Document hours worked from home to support your claim and determine whether actual costs or fixed rates give better relief.</p>
-
-<p><strong>Separate business use:</strong> If possible, designate specific areas or equipment for work use only to strengthen your "wholly and exclusively" claim.</p>
-
-<p><strong>Consider timing:</strong> Coordinate equipment purchases with years when you have higher income to maximize tax relief at higher rates.</p>
 
 <h2>Getting Professional Advice</h2>
 

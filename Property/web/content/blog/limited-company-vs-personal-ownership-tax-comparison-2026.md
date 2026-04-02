@@ -1,7 +1,7 @@
 ---
 title: "Limited Company vs. Personal Ownership: UK Property Tax Comparison 2026"
 slug: "limited-company-vs-personal-ownership-tax-comparison-2026"
-canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/limited-company-vs-personal-ownership-tax-comparison-2026"
+canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/limited-company-vs-personal-ownership-tax-comparison-2026"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"

@@ -1,5 +1,5 @@
 """
-Bulk add blog topics to Supabase blog_topics table.
+Bulk add blog topics to Supabase blog_topics_dentists table.
 """
 import httpx
 from config_supabase import SUPABASE_URL, SUPABASE_KEY
@@ -439,8 +439,8 @@ gap_topics = [
 ]
 
 def add_topics_to_supabase(topics):
-    """Add topics to Supabase blog_topics table."""
-    url = f"{SUPABASE_URL}/rest/v1/blog_topics"
+    """Add topics to Supabase blog_topics_dentists table."""
+    url = f"{SUPABASE_URL}/rest/v1/blog_topics_dentists"
     headers = {
         "apikey": SUPABASE_KEY,
         "Authorization": f"Bearer {SUPABASE_KEY}",

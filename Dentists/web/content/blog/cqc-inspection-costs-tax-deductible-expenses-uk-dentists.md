@@ -1,6 +1,7 @@
 ---
 title: "CQC Inspection Costs: Can UK Dentists Claim Them as Tax-Deductible Expenses?"
 slug: "cqc-inspection-costs-tax-deductible-expenses-uk-dentists"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-compliance/cqc-inspection-costs-tax-deductible-expenses-uk-dentists"
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "VAT & compliance"
@@ -11,7 +12,6 @@ image: ""
 h1: "CQC Inspection Costs: Can UK Dentists Claim Them as Tax-Deductible Expenses?"
 summary: "CQC inspection costs and compliance fees are generally tax-deductible business expenses for UK dental practices. Understanding what you can claim helps reduce your tax bill while staying compliant."
 schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-compliance/cqc-inspection-costs-tax-deductible-expenses-uk-dentists"
 faqs:
   - question: "Are CQC registration fees tax-deductible for dental practices?"
     answer: "Yes, CQC registration and annual fees are typically tax-deductible business expenses for dental practices. These are necessary regulatory costs for operating a dental practice in the UK, so HMRC generally allows them as deductions against practice profits."
@@ -81,27 +81,6 @@ faqs:
 
 <p>Keep detailed records of all CQC-related expenses, including invoices that clearly show the VAT element. This documentation supports both your corporation tax deductions and VAT reclaims.</p>
 
-<h2>Record-Keeping for CQC Costs</h2>
-
-<p>Maintaining clear records helps ensure you claim all allowable CQC costs while satisfying HMRC requirements.</p>
-
-<p><strong>Essential documentation includes:</strong></p>
-<ul>
-<li>CQC fee invoices and payment receipts</li>
-<li>Consultancy agreements and invoices</li>
-<li>Training course receipts and certificates</li>
-<li>Travel expense receipts for CQC meetings</li>
-<li>Time records for staff involved in preparation</li>
-</ul>
-
-<p>Create a separate file for CQC-related expenses to simplify year-end accounting and ensure nothing gets missed.</p>
-
-<h2>Multi-Site Practices and CQC Costs</h2>
-
-<p>Practices operating multiple sites face CQC registration fees for each location. These costs are fully deductible, but proper allocation between sites helps with management accounting and performance analysis.</p>
-
-<p>Shared costs like group training sessions or consultancy fees should be allocated fairly between locations based on factors like patient numbers or revenue contribution.</p>
-
 <h2>Planning for CQC Costs</h2>
 
 <p>CQC costs are predictable and should be factored into your annual budgeting. Regular expenses like annual fees and periodic training can be spread evenly throughout the year for cash flow purposes.</p>
@@ -109,6 +88,12 @@ faqs:
 <p>However, one-off inspection costs or required improvements can create significant expense spikes. Building a compliance reserve helps manage these peaks without impacting day-to-day operations.</p>
 
 <p>For practices considering expansion or acquisition, CQC compliance costs should form part of your financial planning. Our <a href="/blog/practice-acquisition-financial-due-diligence">practice acquisition guide</a> covers compliance considerations in detail.</p>
+
+<h2>Multi-Site Practices and CQC Costs</h2>
+
+<p>Practices operating multiple sites face CQC registration fees for each location. These costs are fully deductible, but proper allocation between sites helps with management accounting and performance analysis.</p>
+
+<p>Shared costs like group training sessions or consultancy fees should be allocated fairly between locations based on factors like patient numbers or revenue contribution.</p>
 
 <h2>When to Seek Professional Advice</h2>
 

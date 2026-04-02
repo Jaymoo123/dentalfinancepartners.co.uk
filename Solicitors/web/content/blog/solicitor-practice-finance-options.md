@@ -11,7 +11,7 @@ image: ""
 h1: "Solicitor Practice Finance Options: A Comprehensive Guide for UK Law Firms"
 summary: "UK law firms have numerous financing options beyond traditional bank loans, from asset-based lending to litigation funding. Understanding the pros and cons of each option helps you choose the right funding mix for your practice's specific needs and growth plans."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/solicitor-practice-finance-options"
+canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/solicitor-practice-finance-options"
 faqs:
   - question: "What is the most cost-effective financing option for solicitor practices?"
     answer: "The most cost-effective option depends on your specific needs and circumstances. Bank overdrafts typically offer the lowest rates (2-5% above base) for short-term needs, while term loans provide better rates for longer-term funding. However, asset-based lending like invoice discounting may be more cost-effective when you factor in improved cash flow and reduced bad debts, despite higher headline rates."

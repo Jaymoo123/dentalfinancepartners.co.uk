@@ -1,11 +1,11 @@
 ---
 title: "Landlord Incorporation: Step-by-Step Guide UK"
 slug: "landlord-incorporation-step-by-step-guide-uk"
-canonical: "https://accountsforproperty.co.uk/blog/incorporation-and-company-structures/landlord-incorporation-step-by-step-guide-uk"
+canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/landlord-incorporation-step-by-step-guide-uk"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"
-metaTitle: "Landlord Incorporation: Step-by-Step Guide UK 2025"
+metaTitle: "Landlord Incorporation: Step-by-Step Guide UK 2026"
 metaDescription: "Complete step-by-step guide to landlord incorporation in the UK. Learn the process, costs, timing and tax implications for property investors."
 altText: "UK landlord reviewing incorporation documents and property portfolio paperwork"
 image: ""

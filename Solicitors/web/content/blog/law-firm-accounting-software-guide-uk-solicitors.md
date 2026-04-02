@@ -11,7 +11,7 @@ image: ""
 h1: "Law Firm Accounting Software: Essential Guide for UK Solicitors"
 summary: "Choosing the right law firm accounting software is crucial for SRA compliance and efficient practice management. This guide covers essential features, compliance requirements, and selection criteria for UK solicitors."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/law-firm-accounting-software-guide-uk-solicitors"
+canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/law-firm-accounting-software-guide-uk-solicitors"
 faqs:
   - question: "What makes law firm accounting software different from standard business accounting software?"
     answer: "Law firm accounting software includes specialist features for SRA compliance, client money management, trust accounting, and matter-based financial tracking. It handles the segregation of client and office money, produces required regulatory reports, and integrates with legal practice management systems — features that standard business accounting software lacks."

@@ -1,65 +1,31 @@
 ---
 title: "Capital Gains Tax on Property: Complete Guide UK"
 slug: "capital-gains-tax-property-complete-guide-uk"
-canonical: "https://accountsforproperty.co.uk/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk"
+canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk"
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Capital Gains Tax"
-metaTitle: "Capital Gains Tax on Property UK: Complete Guide 2025"
-metaDescription: "Complete guide to capital gains tax property rules in the UK. Rates, reliefs, exemptions and strategies for landlords and property investors in 2025/26."
+metaTitle: "Capital Gains Tax on Property UK: Complete Guide 2026"
+metaDescription: "Complete guide to capital gains tax property rules in the UK. Rates, reliefs, exemptions and strategies for landlords and property investors in 2026/26."
 altText: "UK property documents with calculator showing capital gains tax calculations for landlords"
 image: ""
 h1: "Capital Gains Tax on Property: Complete Guide for UK Landlords & Investors"
 summary: "Understanding capital gains tax property rules is crucial for UK landlords and investors when selling rental properties or second homes."
 schema: ""
 faqs:
-  - question: "Do I pay capital gains tax if I sell my buy-to-let property?"
-    answer: "Yes, you'll typically pay capital gains tax on any profit from selling a buy-to-let property. The rate is 18% for basic rate taxpayers or 28% for higher rate taxpayers. You can deduct your annual exempt amount (£3,000 for 2025/26) and allowable costs like purchase fees and improvements."
-  - question: "When do I need to pay capital gains tax on property?"
-    answer: "You must notify HMRC and pay any CGT due within 30 days of completing the property sale. This is much earlier than the usual 31 January self-assessment deadline. You'll also need to report the disposal in your self-assessment return to confirm the figures."
   - question: "Can I avoid capital gains tax on property?"
     answer: "You can reduce CGT through legitimate planning like using annual exempt amounts, transferring to spouses to use their allowances, or claiming reliefs like Principal Private Residence Relief if you lived in the property. However, you cannot completely avoid CGT on investment property profits."
-  - question: "What costs can I deduct from my capital gains tax calculation?"
-    answer: "You can deduct purchase costs (solicitor fees, stamp duty, surveys), sale costs (estate agent fees, legal fees), and enhancement costs (extensions, new kitchens). Regular maintenance and repairs don't count - only costs that improve the property's value or were necessary for the sale."
+  - question: "What is the current CGT rate on residential property in the UK?"
+    answer: "For 2025/26, the CGT rate on residential property is 18% for basic rate taxpayers and 24% for higher and additional rate taxpayers. These rates are higher than CGT on other assets. Your rate depends on your total taxable income plus the gain — if the gain pushes you into a higher band, part is taxed at 18% and part at 24%."
+  - question: "Do I need to report property CGT within 60 days?"
+    answer: "Yes, UK residents who sell residential property at a gain must report and pay CGT within 60 days of completion. This applies to rental properties and second homes but not your main residence. Late reporting can result in penalties starting at £100, plus interest on any unpaid tax."
+  - question: "How do I calculate the capital gain on a rental property?"
+    answer: "Subtract the original purchase price plus allowable costs (stamp duty, legal fees, improvement costs) from the sale price minus selling costs. Then deduct your annual exempt amount. The result is your taxable gain. Improvement costs that add value count, but routine maintenance and repairs do not."
 ---
 
 <p>Capital gains tax property rules affect every UK landlord and property investor who sells a rental property or second home. Whether you're disposing of a single buy-to-let or part of a larger portfolio, understanding how capital gains tax works can save you thousands of pounds.</p>
 
 <p>This guide covers everything you need to know about capital gains tax on property sales, from basic rates to advanced planning strategies.</p>
-
-<h2>What is Capital Gains Tax on Property?</h2>
-
-<p>Capital gains tax (CGT) is charged on the profit you make when you dispose of a property that isn't your main residence. The tax applies to the gain — the difference between what you paid for the property (plus allowable costs) and what you sell it for.</p>
-
-<p>For example, if you bought a buy-to-let property for £200,000 in 2018 and sell it for £280,000 in 2025, your capital gain is £80,000 (before deducting allowable costs).</p>
-
-<p>Most property disposals are subject to capital gains tax property rules, including:</p>
-<ul>
-<li>Buy-to-let properties</li>
-<li>Second homes and holiday cottages</li>
-<li>Commercial property</li>
-<li>Gifted properties (except to spouses)</li>
-<li>Properties inherited and later sold</li>
-</ul>
-
-<h2>Capital Gains Tax Rates on Property 2025/26</h2>
-
-<p>CGT rates on property are higher than rates on other assets. For the 2025/26 tax year, the rates are:</p>
-
-<ul>
-<li><strong>Basic rate taxpayers:</strong> 18% on property gains</li>
-<li><strong>Higher and additional rate taxpayers:</strong> 28% on property gains</li>
-</ul>
-
-<p>Your CGT rate depends on your total taxable income for the year. If adding the capital gain to your other income pushes you into the higher rate band, you'll pay 18% on the portion within the basic rate and 28% on the remainder.</p>
-
-<p>For example, a landlord with £35,000 salary who makes a £60,000 capital gain would pay 18% on £15,270 (remaining basic rate band) and 28% on £44,730.</p>
-
-<h2>Annual Exempt Amount</h2>
-
-<p>Each individual has an annual exempt amount (annual allowance) that reduces their taxable capital gains. For 2025/26, this is £3,000 per person.</p>
-
-<p>Married couples and civil partners can each use their annual exempt amount, potentially sheltering £6,000 of gains from tax. This makes joint ownership of investment properties attractive for CGT planning.</p>
 
 <h2>Calculating Capital Gains Tax on Property</h2>
 
@@ -89,17 +55,11 @@ Less: Annual exempt amount<br>
 
 <p>The relief covers periods when the property was your main home, plus the final nine months of ownership (regardless of use). Additional periods may qualify if you were absent for specific reasons like work relocation.</p>
 
-<h2>When to Pay Capital Gains Tax Property</h2>
+<h2>Annual Exempt Amount</h2>
 
-<p>Property CGT payment deadlines are strict:</p>
+<p>Each individual has an annual exempt amount (annual allowance) that reduces their taxable capital gains. For 2025/26, this is £3,000 per person.</p>
 
-<ul>
-<li><strong>Disposal notification:</strong> Within 30 days of completion</li>
-<li><strong>Tax payment:</strong> Within 30 days of completion (not 31 January)</li>
-<li><strong>Self Assessment:</strong> Confirm the figures by 31 January following the tax year</li>
-</ul>
-
-<p>This 30-day rule applies to UK residents disposing of UK residential property. Missing these deadlines triggers automatic penalties.</p>
+<p>Married couples and civil partners can each use their annual exempt amount, potentially sheltering £6,000 of gains from tax. This makes joint ownership of investment properties attractive for CGT planning.</p>
 
 <h2>CGT Planning Strategies</h2>
 

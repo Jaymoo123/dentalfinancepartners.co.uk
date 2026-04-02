@@ -1,6 +1,7 @@
 ---
 title: "Payment on Account: What UK Dentists Need to Know"
 slug: "payment-on-account-uk-dentists-guide"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/payment-on-account-uk-dentists-guide"
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "Associate tax"
@@ -11,12 +12,9 @@ image: ""
 h1: "Payment on Account: What UK Dentists Need to Know"
 summary: "Payment on account requires UK dentists to pay tax in advance based on previous year's liability. Understanding POA rules helps avoid penalties and manage cash flow effectively."
 schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/payment-on-account-uk-dentists-guide"
 faqs:
   - question: "Do all dentists have to make payment on account?"
     answer: "No, payment on account only applies when your Self Assessment tax bill exceeds £1,000 and less than 80% was collected through PAYE or other deductions. Many employed dentists with small amounts of private work won't reach these thresholds."
-  - question: "What happens if I can't afford my payment on account?"
-    answer: "Contact HMRC immediately to discuss payment arrangements. They may allow instalments, but interest and penalties will still apply. It's better to communicate early rather than simply missing the deadline."
   - question: "Can I reduce my payment on account if my income drops?"
     answer: "Yes, you can claim a reduction if you expect your current year's tax bill to be lower than last year's. Submit the claim through your Self Assessment account or call HMRC, but ensure your projections are realistic to avoid penalties."
   - question: "When do I stop making payment on account payments?"
@@ -26,50 +24,6 @@ faqs:
 <p>Payment on account (POA) catches many UK dentists off guard. This advance tax system requires you to pay HMRC in instalments based on your previous year's tax bill, rather than waiting until after you've filed your Self Assessment.</p>
 
 <p>Whether you're an associate dentist with growing income or a practice owner managing multiple revenue streams, understanding payment on account rules is essential for proper tax planning and cash flow management.</p>
-
-<h2>When Payment on Account Applies</h2>
-
-<p>HMRC triggers payment on account when your Self Assessment tax bill exceeds £1,000 and less than 80% of that tax was collected through PAYE or other deductions.</p>
-
-<p>For most dentists, this happens when:</p>
-
-<ul>
-<li>Your self-employed income grows significantly</li>
-<li>You start earning substantial private work alongside NHS contracts</li>
-<li>You begin receiving practice profits as a partner or owner</li>
-<li>You have investment income or rental properties</li>
-</ul>
-
-<p>An associate earning £45,000 PAYE plus £35,000 self-employed income will likely face payment on account requirements. The self-employed element generates a tax bill that PAYE doesn't cover.</p>
-
-<h2>How Payment on Account Works</h2>
-
-<p>Payment on account splits your previous year's tax bill into two equal instalments, paid on 31 January and 31 July.</p>
-
-<p>Here's the timeline:</p>
-
-<ul>
-<li><strong>31 January:</strong> First payment on account plus any balancing payment for the previous tax year</li>
-<li><strong>31 July:</strong> Second payment on account</li>
-<li><strong>Following 31 January:</strong> Final balancing payment (if needed) plus first payment for the new cycle</li>
-</ul>
-
-<p>If your 2022-23 tax bill was £8,000, HMRC expects £4,000 on 31 January 2024 and £4,000 on 31 July 2024 as advance payments for 2023-24.</p>
-
-<h2>Calculating Your POA Payments</h2>
-
-<p>Each payment on account equals 50% of your previous year's Income Tax and Class 4 National Insurance. Capital Gains Tax and Class 2 National Insurance are excluded from the calculation.</p>
-
-<p>HMRC calculates this automatically, but you can estimate your liability:</p>
-
-<ul>
-<li>Take last year's total Income Tax</li>
-<li>Add last year's Class 4 National Insurance</li>
-<li>Subtract any tax already deducted (PAYE, dividends, etc.)</li>
-<li>Divide the result by two</li>
-</ul>
-
-<p>A practice owner with £12,000 annual tax liability would face POA payments of £6,000 each on 31 January and 31 July.</p>
 
 <h2>Reducing Payment on Account</h2>
 
@@ -85,6 +39,21 @@ faqs:
 <p>Submit a reduction claim through your online Self Assessment account or by calling HMRC. You'll need to justify the reduction with realistic income projections.</p>
 
 <p>Be cautious with reductions. If you underestimate and still owe more than £1,000, HMRC charges interest on the underpayment from the original due dates.</p>
+
+<h2>Calculating Your POA Payments</h2>
+
+<p>Each payment on account equals 50% of your previous year's Income Tax and Class 4 National Insurance. Capital Gains Tax and Class 2 National Insurance are excluded from the calculation.</p>
+
+<p>HMRC calculates this automatically, but you can estimate your liability:</p>
+
+<ul>
+<li>Take last year's total Income Tax</li>
+<li>Add last year's Class 4 National Insurance</li>
+<li>Subtract any tax already deducted (PAYE, dividends, etc.)</li>
+<li>Divide the result by two</li>
+</ul>
+
+<p>A practice owner with £12,000 annual tax liability would face POA payments of £6,000 each on 31 January and 31 July.</p>
 
 <h2>Managing POA Cash Flow</h2>
 
@@ -131,3 +100,17 @@ faqs:
 </ul>
 
 <p>Professional guidance helps ensure you meet obligations while optimising cash flow and avoiding unnecessary penalties.</p>
+
+<h2>Payment on Account for New Associates</h2>
+
+<p>The first year of self-employment brings a particularly harsh cash flow shock. In your second January filing, you face three payments simultaneously: the balancing payment for your first tax year, plus the first POA for your second year. For an associate earning £80,000 self-employed income, this "triple hit" can exceed £25,000 in a single month.</p>
+
+<p>Smart planning starts from day one. Set aside 30-35% of net income monthly into a dedicated tax savings account. This covers not just the first-year bill but builds the reserve needed for ongoing POA payments.</p>
+
+<p>If you're transitioning from an employed position (such as a hospital training role) to self-employed associate work, the jump in tax administration is significant. Consider engaging a specialist dental accountant before your first full year of self-employment ends, not after — by then, the first POA payments are already calculated.</p>
+
+<h2>POA and Practice Ownership Transitions</h2>
+
+<p>Practice owners going through transitions — buying in, selling out, or merging — face additional POA complexity. A significant change in income structure means the previous year's liability no longer represents a reasonable estimate of current tax.</p>
+
+<p>Submit a reduction claim as soon as you know your income will change materially. Back it up with projections from your accountant showing the expected new income level. HMRC is generally reasonable about legitimate reductions, but underpaying without a formal claim triggers automatic interest charges.</p>

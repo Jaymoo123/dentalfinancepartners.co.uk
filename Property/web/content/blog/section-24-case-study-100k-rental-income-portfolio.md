@@ -1,7 +1,7 @@
 ---
 title: "Section 24 Case Study: £100k Rental Income Portfolio"
 slug: "section-24-case-study-100k-rental-income-portfolio"
-canonical: "https://accountsforproperty.co.uk/blog/section-24-and-tax-relief/section-24-case-study-100k-rental-income-portfolio"
+canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-case-study-100k-rental-income-portfolio"
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"

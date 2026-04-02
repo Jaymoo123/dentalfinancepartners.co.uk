@@ -1,6 +1,7 @@
 ---
 title: "Law Firm Lock-Up Reduction: Practical Strategies for UK Legal Practices"
 slug: "law-firm-lock-up-reduction"
+canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/law-firm-lock-up-reduction"
 date: "2026-04-01"
 author: "Accounts for Lawyers"
 category: "Practice Finance & Cash Flow"
@@ -11,7 +12,6 @@ image: ""
 h1: "Law Firm Lock-Up Reduction: Essential Strategies for UK Legal Practices"
 summary: "Law firm lock-up reduction is essential for maintaining healthy cash flow in UK legal practices. Effective strategies can significantly improve working capital and financial stability."
 schema: ""
-canonical: "https://accountsforlawyers.co.uk/blog/practice-finance-cash-flow/law-firm-lock-up-reduction"
 faqs:
   - question: "What is a typical law firm lock-up level for UK practices?"
     answer: "Most successful UK law firms maintain lock-up between 60-90 days of annual turnover. Lock-up exceeding 120 days typically indicates billing or collection problems that need addressing. Commercial practices often run higher than private client work due to matter complexity and billing cycles."
@@ -26,18 +26,6 @@ faqs:
 <p>Law firm lock-up reduction represents one of the most critical financial challenges facing UK legal practices today. Lock-up — the total value of unbilled time, unpaid bills, and work in progress — directly impacts your practice's cash flow and financial stability.</p>
 
 <p>For many UK law firms, lock-up can represent 3-6 months of revenue tied up in the billing cycle. A Manchester commercial firm with £800k annual turnover might have £200k-400k locked up at any given time. This creates significant cash flow pressures and limits growth opportunities.</p>
-
-<h2>Understanding Law Firm Lock-Up Components</h2>
-
-<p>Lock-up consists of three key elements that UK solicitors need to manage effectively:</p>
-
-<ul>
-<li><strong>Work in Progress (WIP):</strong> Unbilled time and costs incurred but not yet invoiced to clients</li>
-<li><strong>Debtors:</strong> Invoiced amounts awaiting payment from clients</li>
-<li><strong>Accrued costs:</strong> Third-party costs paid but not yet billed to clients</li>
-</ul>
-
-<p>The typical breakdown varies by practice area. Commercial property firms often see higher WIP due to transaction-based billing, while litigation practices may struggle more with aged debtors due to funding arrangements.</p>
 
 <h2>Key Strategies for Law Firm Lock-Up Reduction</h2>
 

@@ -1,6 +1,6 @@
 """
 Import missing topics to Supabase
-Reads CSV files and inserts to appropriate blog_topics tables
+Reads CSV files and inserts to appropriate blog_topics_* tables
 """
 
 from dotenv import load_dotenv
@@ -81,13 +81,13 @@ def import_dentists_topics():
     
     print(f"\nFound {len(topics)} topics to import")
     
-    url = f"{url_base}/rest/v1/blog_topics"
+    url = f"{url_base}/rest/v1/blog_topics_dentists"
     
     imported = 0
     errors = []
     
     for i, topic in enumerate(topics, 1):
-        # Map CSV columns to database columns (blog_topics has different schema)
+        # Map CSV columns to database columns (blog_topics_dentists has different schema)
         data = {
             'topic': topic['title'],
             'category': topic['category'],

@@ -1,6 +1,7 @@
 ---
 title: "R&D Tax Credits for Dental Practices: Eligibility & Claims"
 slug: "dental-practice-rd-tax-credits-eligibility-claims"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-practice-rd-tax-credits-eligibility-claims"
 date: "2026-04-01"
 author: "Dental Finance Partners"
 category: "Practice accounting"
@@ -11,14 +12,11 @@ image: ""
 h1: "R&D Tax Credits for Dental Practices: Eligibility & Claims"
 summary: "Many dental practices can claim R&D tax credits for innovation projects but don't realise they qualify. This guide explains eligibility criteria and the claiming process."
 schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-practice-rd-tax-credits-eligibility-claims"
 faqs:
   - question: "What types of dental innovations qualify for R&D tax credits?"
     answer: "Qualifying activities include developing new treatment techniques, creating custom software or digital workflows, adapting equipment for specific applications, researching improved materials or processes, and any systematic investigation that advances dental science. Routine treatment delivery or following established protocols typically won't qualify - there must be genuine scientific or technological uncertainty being resolved."
   - question: "Can dental associates or partnerships claim R&D tax credits?"
     answer: "No, only limited companies can claim R&D tax credits directly. Sole traders and partnerships cannot access this relief. If you operate as an associate or in partnership, you'd need to incorporate to benefit from R&D tax credits. However, if you're employed and contributing to qualifying R&D activities, your employer (if a limited company) may be able to include your salary costs in their claim."
-  - question: "How much can dental practices save through R&D tax credits?"
-    answer: "Under the SME scheme (which applies to most dental practices), you can deduct 230% of qualifying R&D costs from taxable profits. For example, £20,000 of R&D expenditure provides tax relief on £46,000, saving £11,500 at 25% corporation tax. If your practice makes a loss, you can claim a cash credit of 14.5% of enhanced expenditure instead."
   - question: "What records do I need to support an R&D tax credit claim?"
     answer: "You need comprehensive documentation including a technical report explaining the scientific challenge, systematic approach, and outcomes; detailed expenditure records clearly attributable to R&D activities; time sheets showing staff involvement in qualifying work; and evidence of the innovation process such as project notes, test results, or development records. Contemporary documentation is much stronger than retrospective reconstruction."
 ---
@@ -185,3 +183,57 @@ faqs:
 <p>For practices considering broader strategic changes, R&D capabilities might influence decisions around practice structure, acquisition strategies, or expansion plans. Our <a href="/blog/practice-acquisition-financial-due-diligence">practice acquisition due diligence</a> guidance covers how innovation capabilities can impact practice valuations.</p>
 
 <p>R&D tax credits represent a valuable but often overlooked opportunity for dental practices engaged in genuine innovation. With proper understanding and professional support, they can provide significant financial benefits while encouraging continued advancement in dental care.</p>
+
+<h2>Common Dental R&D Projects</h2>
+<p>These real-world examples help illustrate what typically qualifies for <strong>dental R&D</strong> relief:</p>
+
+<h3>Digital Workflow Development</h3>
+
+<p>A practice spent six months developing an integrated digital workflow connecting intraoral scanners, milling machines, and patient records. The project involved significant trial and error to overcome compatibility issues and optimise treatment times. The development costs qualified for R&D relief.</p>
+
+<h3>Implant Protocol Innovation</h3>
+
+<p>An oral surgery practice developed a new protocol for immediate implant placement in compromised bone sites. The research involved systematic testing of different approaches, detailed outcome tracking, and protocol refinement. Both the research time and materials qualified.</p>
+
+<h3>Orthodontic Treatment Systems</h3>
+
+<p>A specialist practice created custom software to predict treatment outcomes using AI analysis of patient photos. The development process, including failed attempts and iterative improvements, qualified for <strong>innovation relief</strong>.</p>
+
+<h2>Qualifying Costs and Documentation</h2>
+<p>Understanding which costs qualify is crucial for maximising your <strong>research and development</strong> claim.</p>
+
+<h3>Staff Costs</h3>
+
+<p>Time spent by dentists, nurses, and practice managers on R&D projects typically represents the largest qualifying expense. This includes:</p>
+
+<ul>
+<li>Research and planning time</li>
+<li>Testing and experimentation</li>
+<li>Data analysis and outcome assessment</li>
+<li>Protocol development and refinement</li>
+</ul>
+
+<p>Keep detailed time records showing who worked on projects and for how long. A principal dentist earning £150,000 spending 10% of their time on qualifying R&D could contribute £15,000 to the claim.</p>
+
+<h3>Materials and Equipment</h3>
+
+<p>Consumable materials used in R&D projects qualify fully. Equipment and software qualify proportionally based on R&D use. If you buy a £50,000 CBCT scanner and use it 20% for R&D, you can claim £10,000.</p>
+
+<h3>Documentation Requirements</h3>
+
+<p>HMRC requires comprehensive records proving the R&D nature of your work. Essential documentation includes:</p>
+
+<ul>
+<li>Project plans outlining scientific objectives</li>
+<li>Time sheets showing staff involvement</li>
+<li>Technical reports documenting challenges and solutions</li>
+<li>Evidence of scientific uncertainty and how it was addressed</li>
+<li>Financial records linking costs to specific projects</li>
+</ul>
+
+<h2>Working with Specialists</h2>
+<p>R&D tax credit claims require specialist knowledge of both HMRC requirements and dental practice operations. Consider professional support particularly for first-time claims or complex projects.</p>
+
+<p>A qualified advisor can help identify qualifying activities you might have missed, ensure proper documentation, and maximise claim values while reducing audit risk. Given the potential returns, specialist fees typically represent excellent value.</p>
+
+<p>For practices considering significant innovation investments, early consultation can help structure projects to optimise R&D eligibility while achieving clinical objectives.</p>

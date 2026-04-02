@@ -1,6 +1,7 @@
 ---
 title: "How to Choose a Dental Accountant in London: A Specialist Guide"
 slug: "dental-accountant-london-how-to-choose-specialist"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-accountant-london-how-to-choose-specialist"
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "Practice accounting"
@@ -11,7 +12,6 @@ image: ""
 h1: "How to Choose a Dental Accountant in London: A Specialist Guide"
 summary: "Finding the right dental accountant in London requires more than just looking at fees. This guide covers what makes a good specialist accountant and the key questions to ask."
 schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-accountant-london-how-to-choose-specialist"
 faqs:
   - question: "How much should I expect to pay for a dental accountant in London?"
     answer: "Fees typically range from £1,500-£3,000 annually for associates and £3,000-£8,000+ for practice owners, depending on complexity. London rates are generally 10-20% higher than national averages, but good value comes from specialist expertise rather than low fees."
@@ -19,8 +19,6 @@ faqs:
     answer: "While location isn't critical in the digital age, a London-based dental accountant better understands local market conditions, practice values, and London-specific tax implications. They're also easier to meet face-to-face when needed."
   - question: "What's the difference between a general accountant and a dental specialist?"
     answer: "A dental specialist understands NHS contracts, UDA valuations, practice acquisition structures, and dental-specific expenses. They can spot tax planning opportunities and compliance issues that general accountants typically miss, often saving more than their additional fees."
-  - question: "When should I start looking for a new dental accountant?"
-    answer: "Start looking 3-4 months before your current arrangement ends, or immediately if you're unhappy with service. This gives time for proper handover and ensures no disruption to year-end accounts or Self Assessment deadlines."
 ---
 
 <p>Choosing a dental accountant in London is one of the most important financial decisions you'll make as a dentist. Whether you're an associate dealing with <a href="/blog/associate-dentist-tax-self-assessment-uk">Self Assessment</a> or a practice owner managing complex accounts, the right specialist accountant can save you thousands and help grow your practice.</p>

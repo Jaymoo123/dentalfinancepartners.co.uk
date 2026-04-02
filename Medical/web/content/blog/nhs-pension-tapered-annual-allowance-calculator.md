@@ -1,6 +1,7 @@
 ---
 title: "NHS Pension Tapered Annual Allowance Calculator: Complete Guide for UK Doctors"
 slug: "nhs-pension-tapered-annual-allowance-calculator"
+canonical: ""
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "NHS Pension Planning"
@@ -11,7 +12,6 @@ image: ""
 h1: "NHS Pension Tapered Annual Allowance Calculator: Complete Guide for UK Doctors"
 summary: "The NHS pension tapered annual allowance reduces pension contribution limits for high-earning doctors. Understanding the calculation is crucial to avoid unexpected tax charges."
 schema: ""
-canonical: ""
 faqs:
   - question: "How do I calculate my NHS pension tapered annual allowance?"
     answer: "Calculate your threshold income (total taxable income before pension contributions) and adjusted income (including employer contributions). If threshold income exceeds £200,000 and adjusted income exceeds £260,000, your allowance reduces by £1 for every £2 above £260,000, minimum £10,000. Professional calculation tools provide accurate results for complex situations."
@@ -19,26 +19,11 @@ faqs:
     answer: "Threshold income includes NHS salary, private practice income, locum work, investment returns, and partnership profits, but excludes your own pension contributions. Adjusted income adds employer NHS pension contributions (typically 23.7% of pensionable pay). All taxable income sources must be included in the calculation."
   - question: "Can I use previous years' unused annual allowance to reduce charges?"
     answer: "Yes, you can carry forward unused annual allowance from the previous three years, but this requires complex calculations. You must use the current year's allowance first, then carry forward in chronological order. The carried forward amount maintains the allowance level from the original year, so tapered amounts may apply."
-  - question: "What happens if I exceed my tapered annual allowance?"
-    answer: "You'll face annual allowance charges at your marginal tax rate (40% or 45%) on the excess pension growth. You can either pay the charge directly or use scheme pays through the NHS pension scheme, where they settle the charge by reducing your future benefits. Professional advice helps choose the optimal approach."
 ---
 
 <p>The <strong>NHS pension tapered annual allowance calculator</strong> has become essential for UK doctors as increasing numbers face reduced pension contribution limits. This complex calculation affects consultants, GP partners, and salaried doctors earning over £200,000, potentially creating significant tax charges.</p>
 
 <p>Understanding how the tapered annual allowance works protects your pension growth and helps avoid unexpected bills from HMRC. Many doctors discover they've exceeded their allowance only when completing their tax return—often too late to take corrective action.</p>
-
-<h2>What Is the Tapered Annual Allowance?</h2>
-
-<p>The tapered annual allowance reduces your pension annual allowance from the standard £60,000 for 2025/26. It applies when your total income exceeds certain thresholds, potentially reducing your allowance to as little as £10,000.</p>
-
-<p>The calculation involves two income measures:</p>
-
-<ul>
-<li><strong>Threshold income:</strong> Your total taxable income before pension contributions</li>
-<li><strong>Adjusted income:</strong> Your total income including employer pension contributions</li>
-</ul>
-
-<p>For the tapered allowance to apply, your threshold income must exceed £200,000 and your adjusted income must exceed £260,000.</p>
 
 <h2>How the NHS Pension Tapered Annual Allowance Calculator Works</h2>
 

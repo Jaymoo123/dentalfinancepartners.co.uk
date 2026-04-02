@@ -1,6 +1,7 @@
 ---
 title: "How to Read a Dental Practice Profit and Loss Account: A UK Dentist's Guide"
 slug: "reading-dental-practice-profit-loss-account-uk"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/reading-dental-practice-profit-loss-account-uk"
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "Practice accounting"
@@ -11,14 +12,11 @@ image: ""
 h1: "How to Read a Dental Practice Profit and Loss Account"
 summary: "Your practice P&L tells the story of your financial performance, but knowing what to look for is crucial. We explain the key figures and ratios that matter most to UK dental practices."
 schema: ""
-canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/reading-dental-practice-profit-loss-account-uk"
 faqs:
   - question: "What should a dental practice gross profit margin be?"
     answer: "A healthy dental practice should typically achieve a gross profit margin of 60-70%. This is calculated as total income minus direct costs (associate fees, lab bills, materials) divided by total income. If your gross profit is below 55%, you may have issues with associate fee structures, high laboratory costs, or inefficient purchasing that need addressing."
   - question: "How often should I review my practice P&L account?"
     answer: "While annual accounts are essential, successful practice owners review monthly management accounts to spot trends early. Monthly reviews help identify seasonal patterns, cash flow issues, and performance changes before they become significant problems. This allows for timely business decisions and course corrections."
-  - question: "What percentage of income should staff costs represent in a dental practice?"
-    answer: "Staff costs (excluding associates) should typically represent 15-25% of total practice income. If your staff costs exceed 25%, you may be overstaffed, paying above-market salaries, or need to increase income per team member. This percentage can vary based on practice type and local market conditions."
   - question: "How do I know if my associate fee percentages are too high?"
     answer: "Associate fees typically range from 45-50% of the income they generate. If you're paying above 50% consistently, your practice profitability may be under pressure. However, consider the total picture - a highly productive associate on 48% might be more profitable than a less busy associate on 45%. Review both percentage rates and absolute contribution to practice profits."
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Landlord Accounting Software UK: Best Options 2026"
 slug: "landlord-accounting-software-uk-best-options-2026"
-canonical: "https://accountsforproperty.co.uk/blog/making-tax-digital-mtd/landlord-accounting-software-uk-best-options-2026"
+canonical: "https://www.propertytaxpartners.co.uk/blog/making-tax-digital-mtd/landlord-accounting-software-uk-best-options-2026"
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Making Tax Digital (MTD)"
