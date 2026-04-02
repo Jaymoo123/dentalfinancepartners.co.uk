@@ -87,7 +87,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services)
+- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
 - [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
 
 <p>If you're looking for expert medical accounting support in Sheffield, our team specialises in helping medical professionals optimise their financial position. <a href="/contact">Contact us</a> to discuss how we can support your practice's accounting needs.</p>

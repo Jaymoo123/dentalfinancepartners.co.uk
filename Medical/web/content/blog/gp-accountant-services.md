@@ -1,6 +1,6 @@
 ---
 title: "GP Accountant Services: Complete Guide for Medical Professionals"
-slug: "gp-accountant-services"
+slug: "gp-accountant-services-complete-guide"
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "GP Accountant Services"
@@ -11,7 +11,7 @@ image: ""
 h1: "GP Accountant Services: Complete Guide for Medical Professionals"
 summary: "Specialist GP accountant services designed for UK medical professionals. From partnership accounts to NHS pension planning, we understand the unique challenges doctors face."
 schema: ""
-canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-services"
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-services-complete-guide"
 faqs:
   - question: "How much do GP accountant services typically cost?"
     answer: "Professional GP accountant services typically cost £2,000-4,000 annually for comprehensive support including partnership accounts, personal tax returns, and ongoing advice. Fees vary based on practice size, complexity, and service level required. The investment usually pays for itself through tax savings and penalty avoidance."

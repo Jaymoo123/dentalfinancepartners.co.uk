@@ -117,7 +117,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services)
+- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
 - [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
 
 <p>The city's medical professionals increasingly recognize the value of working with accountants who understand their unique challenges and can provide tailored solutions.</p>

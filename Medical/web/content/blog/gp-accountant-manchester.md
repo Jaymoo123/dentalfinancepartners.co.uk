@@ -197,7 +197,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services)
+- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
 - [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
 
 <p>Schedule consultations with 2-3 specialist medical accountants in Manchester. The right fit will be obvious from their questions and understanding of your situation.</p>

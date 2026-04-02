@@ -101,7 +101,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services)
+- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
 - [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
 
 <p>If you're looking for specialist medical accounting services in London, we provide comprehensive <a href="/services">services</a> tailored specifically for GP practices across the capital. Our team understands the unique challenges London GPs face and can help optimise your practice finances effectively.</p>

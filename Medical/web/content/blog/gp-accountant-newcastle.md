@@ -85,7 +85,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services)
+- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
 - [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
 
 <p>For Newcastle GPs seeking specialist medical accounting support, the key is finding an accountant who understands both the medical profession's unique requirements and the local medical community's specific needs.</p>

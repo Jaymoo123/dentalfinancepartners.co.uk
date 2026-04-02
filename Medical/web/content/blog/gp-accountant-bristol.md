@@ -110,7 +110,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services)
+- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
 - [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
 
 <p>Our team stays current with medical taxation developments, from basis period reform implementation to NHS pension scheme changes, ensuring Bristol doctors receive up-to-date guidance.</p>

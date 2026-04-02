@@ -114,7 +114,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services)
+- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
 - [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
 
 <p>If you're a GP, consultant, or medical professional in Leeds looking for specialist accounting support, consider speaking to an expert who understands the unique challenges of medical practice in today's complex tax environment.</p>

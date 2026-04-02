@@ -184,7 +184,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services)
+- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
 - [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
 
 <p>To discuss your specific requirements, <a href="/contact">contact</a> our team for an initial consultation. We understand the unique challenges facing Nottingham medical professionals and can help you optimise your financial position while ensuring full compliance with all regulations.</p>

@@ -95,7 +95,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services)
+- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
 - [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
 
 <p>If you're ready to optimize your medical practice finances with specialist expertise, <a href="/contact">get in touch</a> to discuss your requirements with our team of qualified medical accountants.</p>

@@ -150,7 +150,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services)
+- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
 - [Why Every GP Needs a Specialist Accountant](/blog/gp-accountant)
 
 <p>Remember that accounting fees are tax-deductible professional expenses, reducing the net cost by your marginal tax rate.</p>
