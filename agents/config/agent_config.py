@@ -36,12 +36,12 @@ NICHE_CONFIG = {
         "ga4_property_id": "14279101919",  # From your screenshot: Stream ID 14279101919
     },
     "Medical": {
-        "enabled": False,  # Enable after GA4 setup
+        "enabled": True,
         "blog_topics_table": "blog_topics_medical",
         "web_path": "Medical/web",
         "source_identifier": "medical",
-        "ga4_measurement_id": "G-MEDICAL-PLACEHOLDER",
-        "ga4_property_id": "000000000",  # Add after GA4 property creation
+        "ga4_measurement_id": "G-CQF7KFZ1P6",
+        "ga4_property_id": "000000000",  # Update with numeric property ID from GA4 Admin
     },
     "Solicitors": {
         "enabled": True,

@@ -203,7 +203,7 @@ cat Medical/web/src/app/page.tsx
 NICHE_CONFIG = {
     "medical": {
         "enabled": True,
-        "ga4_measurement_id": "G-MEDICAL-PLACEHOLDER",
+        "ga4_measurement_id": "G-CQF7KFZ1P6",
         "ga4_property_id": "000000000",  # Add real ID later
     }
 }

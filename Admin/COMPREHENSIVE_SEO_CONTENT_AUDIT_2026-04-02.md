@@ -202,7 +202,7 @@ They stay and convert based on:
 |---|-------|--------|---------|
 | M1 | **CONFLICTING domains in two config files** | Site would display wrong branding depending on which config loads | Root: `medicalaccountantsuk.co.uk`, web: `medicalaccounts.co.uk` — completely different brands |
 | M2 | **ALL 62 posts have `canonical: ""`** | Empty canonical tag renders as `href=""` | `??` operator in generateMetadata doesn't catch empty string, only null/undefined |
-| M3 | **Placeholder GA ID** | Zero analytics | `G-MEDICAL-PLACEHOLDER` |
+| M3 | ~~**Placeholder GA ID**~~ ✅ FIXED | Now tracking | `G-CQF7KFZ1P6` |
 | M4 | **Placeholder Google verification** | Can't verify GSC | `MEDICAL-VERIFICATION-PLACEHOLDER` |
 | M5 | **`public/robots.txt` conflicts with `robots.ts` AND has wrong domain** | Confusing signals to crawlers | Static file points to `medicalaccounts.co.uk` but dynamic robots.ts exists |
 
@@ -245,7 +245,7 @@ They stay and convert based on:
 |---|-------|--------|---------|
 | S1 | **www/non-www canonical mismatch on ALL 70 posts** | Split SEO signals between www and non-www | Canonicals: `accountsforlawyers.co.uk` (no www), config: `www.accountsforlawyers.co.uk` |
 | S2 | ~~**Placeholder GA ID**~~ ✅ FIXED | Now tracking | `G-N6ZPRB3DSQ` |
-| S3 | **Placeholder Google verification** | Can't verify GSC | `SOLICITORS-VERIFICATION-PLACEHOLDER` |
+| S3 | ~~**Placeholder Google verification**~~ ✅ VERIFIED | GSC verified | Verified via Google Search Console |
 | S4 | **`public/robots.txt` points to MEDICAL domain** | Completely wrong domain | Contains `Sitemap: https://www.medicalaccounts.co.uk/sitemap.xml` — copy-paste error |
 | S5 | **Placeholder phone number** | No real contact | `+44 20 0000 0000` |
 
@@ -297,7 +297,7 @@ They stay and convert based on:
 | Dentists | ✅ Real | `6Yl4g8aauEScoYRA4pqJ...` |
 | Property | ❌ Placeholder | `PROPERTY-VERIFICATION-PLACEHOLDER` |
 | Medical | ❌ Placeholder | `MEDICAL-VERIFICATION-PLACEHOLDER` |
-| Solicitors | ❌ Placeholder | `SOLICITORS-VERIFICATION-PLACEHOLDER` |
+| Solicitors | ✅ Verified | GSC verified |
 
 ### 4.3 Google Analytics Status
 
@@ -305,7 +305,7 @@ They stay and convert based on:
 |------|--------|----|
 | Dentists | ✅ Live | `G-273RJY0LZQ` |
 | Property | ⚠️ Verify | `G-B5MCP5NGMY` (may be real) |
-| Medical | ❌ Placeholder | `G-MEDICAL-PLACEHOLDER` |
+| Medical | ✅ Live | `G-CQF7KFZ1P6` |
 | Solicitors | ✅ Live | `G-N6ZPRB3DSQ` |
 
 ### 4.4 robots.txt Conflicts

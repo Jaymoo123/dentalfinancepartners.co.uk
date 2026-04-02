@@ -364,8 +364,7 @@ All blog posts include:
 
 3. **Google Analytics:**
    - Create GA4 property
-   - Update `niche.config.json` with measurement ID
-   - Replace `G-MEDICAL-PLACEHOLDER`
+   - ✅ `niche.config.json` updated with measurement ID `G-CQF7KFZ1P6`
 
 4. **Google Site Verification:**
    - Get verification code

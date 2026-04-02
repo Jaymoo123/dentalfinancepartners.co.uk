@@ -10,13 +10,14 @@ Quick reference for completing the analytics configuration.
 - Dentists website: Tracking live with GA4 ID `G-273RJY0LZQ`
 - Property website: Tracking live with GA4 ID `G-B5MCP5NGMY`
 - Solicitors website: Tracking live with GA4 ID `G-N6ZPRB3DSQ` (Stream ID: `14301281732`)
+- Medical website: Tracking live with GA4 ID `G-CQF7KFZ1P6`
 - Lead form conversion tracking on all active sites
 - Privacy policies and cookie notices
 - Database schema ready
 - Multi-niche analytics agent configured
 
 ⚠️ **Needs Setup**:
-- Medical website: Still using placeholder `G-MEDICAL-PLACEHOLDER` — needs GA4 property creation
+- Medical website: GA4 property ID (numeric) still needed in `agent_config.py` for backend analytics
 - Backend analytics: Add GA4 API credentials for automated data collection
 
 ---
