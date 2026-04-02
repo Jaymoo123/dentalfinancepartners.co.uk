@@ -21,7 +21,7 @@ faqs:
     answer: "Corporation tax is paid by your property company before dividends are distributed, but dividend tax is calculated on the gross dividend you receive. The company pays 19% corporation tax on profits (25% on profits over £250,000), then you pay dividend tax on what you receive personally."
 ---
 
-<p>If you own property through a limited company, understanding <strong>property company dividend tax</strong> is essential for managing your tax liability. Unlike salary, dividends receive different tax treatment that can significantly impact your take-home income.</p>
+<p>If you own property through a <a href="/blog/incorporation-and-company-structures/limited-company-vs-personal-ownership-tax-comparison-2026">limited company</a>, understanding <strong>property company dividend tax</strong> is essential for managing your tax liability. Unlike <a href="/blog/incorporation-and-company-structures/property-company-profit-extraction-salary-vs-dividends">salary</a>, dividends receive different tax treatment that can significantly impact your take-home income.</p>
 
 <p>This guide explains exactly how much dividend tax you'll pay as a property investor, including current rates and practical examples to help you plan effectively.</p>
 
@@ -118,3 +118,9 @@ faqs:
 </ul>
 
 <p>Proper record-keeping and forward planning help avoid these pitfalls.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/accountant-corporation-tax-property-companies">Corporation Tax Accountants for UK Property Companies</a></li>
+</ul>

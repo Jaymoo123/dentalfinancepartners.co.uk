@@ -27,7 +27,7 @@ faqs:
     answer: "Property specialists can maximise remaining tax relief, plan incorporation timing to mitigate Section 24 impact, and structure property investments to optimise tax efficiency. They understand the 25% basic rate restriction and can model different scenarios to minimise your tax liability."
 ---
 
-<p>Choosing the right accountant can make or break your property investment returns. While any qualified accountant can handle basic bookkeeping, property investment brings unique tax challenges that require specialist knowledge.</p>
+<p><a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">Choosing</a> the right accountant can make or break your property investment returns. While any qualified accountant can handle basic bookkeeping, property investment brings unique tax challenges that require specialist knowledge.</p>
 
 <p>The difference between a property accountant and general accountant goes far beyond familiarity with rental income forms. It's about understanding Section 24 mortgage interest restrictions, <a href="/incorporation">incorporation timing</a>, and the dozens of property-specific reliefs that general accountants often miss.</p>
 
@@ -197,3 +197,10 @@ faqs:
 <p>Consider visiting our <a href="/services">services</a> page to understand the full range of property tax support available, or use our <a href="/calculators">calculators</a> to estimate potential tax liabilities before your consultation.</p>
 
 <p>The right <strong>property specialist tax accountant UK</strong> becomes a valuable long-term partner in building and maintaining your property wealth. Take time to choose wisely rather than rushing into the first option you find.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/property-accountant-services/when-to-hire-property-accountant">When to Hire a Property Accountant: A UK Landlord's Guide</a></li>
+<li><a href="/blog/property-accountant-services/property-accountant-services">Property Accountant Services: Expert Tax and Advisory Solutions for UK Landlords</a></li>
+</ul>

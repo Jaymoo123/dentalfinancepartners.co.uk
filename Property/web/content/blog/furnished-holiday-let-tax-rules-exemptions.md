@@ -65,7 +65,7 @@ faqs:
 
 <h3>Capital Allowances</h3>
 
-<p>You can claim capital allowances on furniture, equipment, and fixtures. The Annual Investment Allowance allows you to deduct up to £1 million of qualifying expenditure in the year of purchase, providing immediate tax relief rather than spreading deductions over several years.</p>
+<p>You can claim <a href="/blog/section-24-and-tax-relief/landlord-capital-allowances-tax-relief">capital allowances</a> on furniture, equipment, and fixtures. The Annual Investment Allowance allows you to deduct up to £1 million of qualifying expenditure in the year of purchase, providing immediate tax relief rather than spreading deductions over several years.</p>
 
 <h2>Common Exemptions and Pitfalls</h2>
 
@@ -121,3 +121,10 @@ faqs:
 <p>The tax advantages of furnished holiday lets remain significant, but the qualification criteria are strict and penalties for non-compliance can be severe. If you're operating or considering holiday let properties, specialist advice is essential to ensure you maximize the benefits while maintaining compliance.</p>
 
 <p>For complex situations involving multiple properties or incorporation planning, <a href="/services">professional guidance</a> can help you navigate the rules and optimize your tax position effectively.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">Landlord Tax Deductions UK 2026: Complete List</a></li>
+<li><a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital Gains Tax on Property: Complete Guide UK</a></li>
+</ul>

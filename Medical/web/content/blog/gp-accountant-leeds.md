@@ -6,7 +6,7 @@ date: "2026-04-01"
 author: "Medical Accounts"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Leeds | Specialist Medical Tax Services"
-metaDescription: "Expert GP accountant in Leeds offering specialist medical tax, NHS pension planning, and practice accounting services. Free consultation for Leeds GPs."
+metaDescription: "Leeds GP accountant for partners, salaried GPs, and locums. NHS pension planning, practice accounting, and medical tax services across Yorkshire."
 altText: "Leeds GP surgery with medical professionals discussing financial planning"
 image: ""
 h1: "GP Accountant Leeds: Expert Medical Tax & Accounting Services"
@@ -111,5 +111,10 @@ faqs:
 </ul>
 
 <p>Many Leeds medical professionals are surprised by the potential savings available through specialist advice. Whether it's optimising pension contributions, claiming overlooked expenses, or structuring locum income efficiently, the right accountant pays for themselves many times over.</p>
+
+<h2>Related Reading</h2>
+
+- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services)
+- [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
 
 <p>If you're a GP, consultant, or medical professional in Leeds looking for specialist accounting support, consider speaking to an expert who understands the unique challenges of medical practice in today's complex tax environment.</p>

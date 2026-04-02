@@ -23,11 +23,11 @@ faqs:
     answer: "Companies pay higher SDLT rates: 3% on the first £250,000, 8% on £250,001-£925,000, 13% on £925,001-£1.5m, and 15% above £1.5m. This is typically 2-3% higher than individual rates, so factor this into your long-term acquisition plans."
 ---
 
-<p>One of the biggest concerns for landlords considering <a href="/incorporation">incorporation</a> is whether they'll face a double stamp duty charge. The short answer is: it depends on your circumstances, but there are ways to minimise or avoid additional SDLT costs.</p>
+<p>One of the biggest concerns for landlords considering <a href="/incorporation">incorporation</a> is whether they'll face a double stamp duty charge. The short answer is: it depends on your circumstances, but there are ways to minimise or avoid additional SDLT <a href="/blog/incorporation-and-company-structures/incorporation-cost-calculator-cgt-sdlt-implications">costs</a>.</p>
 
 <h2>When SDLT on Incorporation Applies</h2>
 
-<p>SDLT on incorporation becomes payable when you transfer properties from your personal name to a company structure. HMRC treats this as a disposal and acquisition, potentially triggering stamp duty based on the property's current market value — not what you originally paid.</p>
+<p>SDLT on incorporation becomes payable when you <a href="/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk">transfer properties</a> from your personal name to a company structure. HMRC treats this as a disposal and acquisition, potentially triggering stamp duty based on the property's current market value — not what you originally paid.</p>
 
 <p>For example, if you bought a BTL property for £200,000 in 2020 and it's now worth £280,000, the SDLT calculation would be based on the £280,000 current value. At current rates, this could mean £8,400 in stamp duty (3% on the first £250,000, then 5% on the remaining £30,000).</p>
 
@@ -119,3 +119,9 @@ faqs:
 <p>The interaction between SDLT relief and other taxes (particularly capital gains tax and corporation tax) requires careful consideration to ensure your incorporation delivers the intended benefits.</p>
 
 <p>For many landlords, the SDLT cost of incorporation is a one-off expense that unlocks significant long-term tax advantages. With proper planning and the right relief claims, you can often avoid paying stamp duty twice while positioning your property business for future growth and tax efficiency.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/landlord-tax-essentials/stamp-duty-buy-to-let-surcharge">Stamp Duty on Buy-to-Let: 5% Surcharge Explained</a></li>
+</ul>

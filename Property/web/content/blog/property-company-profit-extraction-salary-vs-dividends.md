@@ -31,7 +31,7 @@ faqs:
 
 <ul>
 <li><strong>Salary:</strong> Treated as employment income, subject to income tax and National Insurance</li>
-<li><strong>Dividends:</strong> Distributions of after-tax company profits, subject to dividend tax rates</li>
+<li><strong>Dividends:</strong> Distributions of after-tax company profits, subject to <a href="/blog/incorporation-and-company-structures/property-company-dividend-tax">dividend tax</a> rates</li>
 <li><strong>Combination:</strong> A mix of both salary and dividends</li>
 </ul>
 
@@ -139,3 +139,10 @@ faqs:
 <p>Property company profit extraction involves complex tax calculations that vary significantly based on individual circumstances. Consider <a href="/incorporation">professional advice on incorporation structures</a> and ongoing tax planning to optimise your position.</p>
 
 <p>The wrong approach can cost thousands in unnecessary tax, while the right strategy maximises your take-home income from property investments.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/director-loan-property-company">Director Loans in Property Companies: Tax Rules and Implications</a></li>
+<li><a href="/blog/incorporation-and-company-structures/accountant-corporation-tax-property-companies">Corporation Tax Accountants for UK Property Companies</a></li>
+</ul>

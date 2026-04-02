@@ -125,7 +125,7 @@ faqs:
 
 <h3>Option 2: Incorporation</h3>
 
-<p>Moving the properties into a company structure could provide relief. Our <a href="/calculators">calculators</a> suggest potential savings, but incorporation involves:</p>
+<p>Moving the properties into a company structure could provide relief. Our <a href="/calculators">calculators</a> suggest potential savings, but <a href="/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax">incorporation</a> involves:</p>
 
 <ul>
 <li>Stamp duty on property transfers (typically 3-5%)</li>
@@ -171,3 +171,10 @@ faqs:
 <p>However, each situation requires individual analysis. What works for Sarah might not suit another landlord with different circumstances, property types, or long-term goals.</p>
 
 <p>If you're facing similar challenges with a substantial property portfolio, consider speaking to specialists who understand both the tax implications and practical solutions. Our <a href="/services">services</a> include detailed Section 24 impact assessments and incorporation feasibility studies.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/section-24-and-tax-relief/section-24-calculator">Section 24 Calculator: Calculate Your Tax Impact</a></li>
+<li><a href="/blog/section-24-and-tax-relief/section-24-higher-rate-taxpayers-2026">How Section 24 Affects Higher-Rate Taxpayer Landlords in 2026</a></li>
+</ul>

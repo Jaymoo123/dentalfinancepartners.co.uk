@@ -133,7 +133,7 @@ faqs:
 <p>These costs aren't always included in standard service packages, so clarify what's covered upfront.</p>
 
 <h2>What Influences Property Accountant Fees</h2>
-<p>Several factors affect how much you'll pay for property accounting services. Understanding these helps you anticipate costs and choose appropriate service levels.</p>
+<p>Several factors affect how much you'll pay for property accounting services. Understanding these helps you anticipate costs and <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">choose</a> appropriate service levels.</p>
 
 <h3>Portfolio Size and Complexity</h3>
 <p>A landlord with one Buy-to-Let property will pay significantly less than someone managing 20 HMOs across multiple companies. Complex arrangements like joint ownership, partnerships, or mixed-use properties increase the time required and therefore the fees.</p>
@@ -398,3 +398,10 @@ faqs:
 </ul>
 
 <p>These services often provide significant value. For example, incorporation advice might cost £800 but save thousands annually in tax for larger portfolios.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/property-accountant-services/property-accountant-services">Property Accountant Services: Expert Tax and Advisory Solutions for UK Landlords</a></li>
+<li><a href="/blog/property-accountant-services/when-to-hire-property-accountant">When to Hire a Property Accountant: A UK Landlord's Guide</a></li>
+</ul>

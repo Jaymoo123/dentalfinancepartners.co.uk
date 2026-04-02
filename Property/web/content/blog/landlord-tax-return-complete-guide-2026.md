@@ -33,7 +33,7 @@ faqs:
 
 <h2>Key Deadlines for Your Landlord Tax Return</h2>
 
-<p>Missing tax return deadlines can result in automatic penalties, so understanding the timeline is crucial for every property investor.</p>
+<p>Missing tax return <a href="/blog/making-tax-digital-mtd/landlord-tax-return-deadline-2026">deadlines</a> can result in automatic penalties, so understanding the timeline is crucial for every property investor.</p>
 
 <h3>Self Assessment Deadlines</h3>
 
@@ -142,7 +142,7 @@ faqs:
 
 <ul>
 <li>Total rental income received</li>
-<li>Allowable expenses and deductions</li>
+<li><a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">Allowable expenses</a> and deductions</li>
 <li>Capital allowances on equipment</li>
 <li>Profit or loss calculation</li>
 </ul>
@@ -224,3 +224,9 @@ faqs:
 </ul>
 
 <p>The difference between repairs and improvements is crucial. Fixing a broken boiler is a repair, but installing a new heating system in a property that didn't have one is an improvement.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Landlords: April 2026 Deadline Explained</a></li>
+</ul>

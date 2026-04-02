@@ -5,8 +5,8 @@ canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-tax-return"
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "GP Tax & Accounts"
-metaTitle: "GP Tax Return Guide: Filing Requirements for UK GPs"
-metaDescription: "Complete guide to GP tax returns for UK general practitioners. Covering self-assessment, partnership returns, and key deadlines for medical professionals."
+metaTitle: "GP Tax Return 2026/27: Filing Guide for UK GPs"
+metaDescription: "GP partners must file self-assessment; salaried GPs may need to as well. Deadlines, partnership returns, and medical-specific filing tips for 2026/27."
 altText: "UK GP reviewing tax documents and self-assessment forms at desk"
 image: ""
 h1: "GP Tax Return: Complete Guide for UK General Practitioners"
@@ -48,7 +48,7 @@ faqs:
 
 <h2>GP Partnership Tax Returns</h2>
 
-<p>GP partnerships face unique tax return obligations. The practice itself must file a partnership tax return (SA800), while each partner completes their individual return (SA100).</p>
+<p>GP partnerships face unique [tax return obligations](/blog/gp-partnership-tax-complete-guide). The practice itself must file a partnership tax return (SA800), while each partner completes their individual return (SA100).</p>
 
 <h3>Partnership Return Requirements</h3>
 
@@ -166,8 +166,13 @@ faqs:
 <ul>
 <li><strong>Incorrect NHS pension calculations</strong> — missing annual allowance relief or miscalculating tapered allowances</li>
 <li><strong>Mixed-up income classification</strong> — treating employment income as self-employment or vice versa</li>
-<li><strong>Missed professional expenses</strong> — not claiming legitimate costs like professional development or equipment</li>
+<li><strong>Missed professional expenses</strong> — not claiming legitimate costs like professional development or equipment (see our [complete deductions list](/blog/gp-tax-deductions-complete-list-2026))</li>
 <li><strong>Basis period confusion</strong> — GP partners struggling with the recent basis period reform changes</li>
 </ul>
+
+<h2>Related Reading</h2>
+
+- [GP Tax Deductions Complete List 2026](/blog/gp-tax-deductions-complete-list-2026)
+- [NHS Pension Annual Allowance Complete Guide](/blog/nhs-pension-annual-allowance-complete-guide)
 
 <p>A specialist accountant prevents these errors while often identifying additional legitimate deductions you might have missed.</p>

@@ -1,0 +1,24 @@
+# Dental Finance Partners
+
+> Specialist UK accountants for dentists, dental associates, and dental practice owners.
+
+## About
+Dental Finance Partners provides specialist accounting, tax planning, and financial advisory services for UK dental professionals. We cover practice accounting, associate tax, practice acquisition, VAT compliance, and financial planning for dental practices.
+
+## Key Pages
+- Homepage: https://www.dentalfinancepartners.co.uk/
+- Services: https://www.dentalfinancepartners.co.uk/services
+- About: https://www.dentalfinancepartners.co.uk/about
+- Blog: https://www.dentalfinancepartners.co.uk/blog
+- Contact: https://www.dentalfinancepartners.co.uk/contact
+- Locations: https://www.dentalfinancepartners.co.uk/locations
+
+## Blog Categories
+- Practice Accounting: /blog/practice-accounting
+- Associate Tax: /blog/associate-tax
+- Buying a Practice: /blog/buying-a-practice
+- Practice Finance: /blog/practice-finance
+- VAT & Compliance: /blog/vat-and-compliance
+
+## Sitemap
+https://www.dentalfinancepartners.co.uk/sitemap.xml

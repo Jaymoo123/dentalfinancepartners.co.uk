@@ -21,7 +21,7 @@ faqs:
     answer: "Landlord tax bands 2026 follow standard income tax rates: 20% basic rate up to £50,270, 40% higher rate up to £125,140, then 45% additional rate. Rental income combines with other income to determine your tax band. Section 24 restrictions mean mortgage interest receives 20% tax credit regardless of your actual tax rate."
 ---
 
-<p>The <strong>landlord tax return deadline</strong> for the 2025/26 tax year is 31 January 2027. However, 2026 marks a pivotal year for UK landlords with the introduction of Making Tax Digital for Income Tax Property (MTD ITSA) starting 6 April 2026.</p>
+<p>The <strong>landlord tax return deadline</strong> for the 2025/26 tax year is 31 January 2027. However, 2026 marks a pivotal year for UK landlords with the introduction of <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital</a> for Income Tax Property (MTD ITSA) starting 6 April 2026.</p>
 
 <p>This guide covers the critical dates every landlord needs to know, from Self Assessment deadlines to new MTD property requirements, plus how the updated tax bands affect your rental income.</p>
 
@@ -31,7 +31,7 @@ faqs:
 
 <ul>
 <li><strong>6 April 2026:</strong> MTD for Income Tax Property starts for eligible landlords</li>
-<li><strong>31 October 2026:</strong> Paper tax return deadline for 2025/26</li>
+<li><strong>31 October 2026:</strong> Paper <a href="/blog/landlord-tax-essentials/landlord-tax-return-complete-guide-2026">tax return</a> deadline for 2025/26</li>
 <li><strong>31 January 2027:</strong> Online Self Assessment deadline for 2025/26</li>
 <li><strong>31 January 2027:</strong> Final date to pay any tax owed for 2025/26</li>
 </ul>
@@ -108,3 +108,9 @@ faqs:
 <p>The <strong>landlord tax bands 2026</strong> changes also affect tax planning strategies. Higher-rate taxpayers might consider incorporation to access corporation tax rates, while basic-rate landlords could focus on maximizing allowable expenses.</p>
 
 <p>For complex situations involving multiple properties, significant rental income, or incorporation decisions, professional advice ensures compliance with both traditional deadlines and new MTD requirements. Our <a href="/services">specialist property tax services</a> help landlords navigate these changing obligations efficiently.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions">Do I Need MTD for My Rental Income? Threshold and Exemptions Explained</a></li>
+</ul>

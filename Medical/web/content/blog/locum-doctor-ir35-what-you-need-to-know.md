@@ -5,8 +5,8 @@ canonical: "https://www.medicalaccountantsuk.co.uk/blog/locum-doctor-ir35-what-y
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "Locum Tax"
-metaTitle: "Locum Doctor IR35: What You Need to Know | Medical Accounts"
-metaDescription: "Essential guide to IR35 rules for locum doctors. Understand off-payroll working, inside/outside determinations, and tax implications for medical locums."
+metaTitle: "Locum Doctor IR35 Explained | Medical Accountants UK"
+metaDescription: "Most NHS locum roles fall inside IR35, eliminating company tax benefits. How off-payroll rules affect your status, pay, and compliance obligations."
 altText: "UK locum doctor reviewing IR35 tax documentation and contracts on desk"
 image: ""
 h1: "Locum Doctor IR35: What You Need to Know"
@@ -31,7 +31,7 @@ faqs:
 
 <p>IR35, formally known as the off-payroll working rules, determines whether a locum doctor working through a company should be taxed as if they were an employee of the end client (typically an NHS trust or private hospital).</p>
 
-<p>The rules apply when you provide services through an intermediary - usually your own limited company - rather than working directly as an employee. For locum doctors, this typically means working through a personal service company or umbrella company arrangement.</p>
+<p>The rules apply when you provide services through an intermediary - usually your own [limited company](/blog/locum-doctor-limited-company-pros-and-cons) - rather than working directly as an employee. For locum doctors, this typically means working through a personal service company or umbrella company arrangement.</p>
 
 <p>If your engagement falls "inside IR35", you'll pay income tax and National Insurance as if you were an employed doctor. If it's "outside IR35", you can take advantage of corporation tax rates and dividend taxation, which can be more tax-efficient.</p>
 
@@ -68,7 +68,7 @@ faqs:
 
 <p>If you're inside IR35, the agency becomes the "fee payer" responsible for operating PAYE and deducting income tax and National Insurance. They'll typically reduce your gross fee to cover the employer's National Insurance costs.</p>
 
-<p>Some agencies offer umbrella company arrangements that handle the PAYE obligations on your behalf. While this simplifies administration, you're still effectively taxed as an employee for inside IR35 work.</p>
+<p>Some agencies offer [umbrella company arrangements](/blog/locum-doctor-umbrella-company-2026-reforms) that handle the PAYE obligations on your behalf. While this simplifies administration, you're still effectively taxed as an employee for inside IR35 work.</p>
 
 <h2>Common Scenarios in Medical Locum Work</h2>
 
@@ -100,5 +100,10 @@ faqs:
 <p>Given the complexity of IR35 rules and their significant financial impact, most locum doctors benefit from professional advice. <a href="/services">Specialist medical accountants</a> can help you understand your position, challenge incorrect determinations, and structure your affairs tax-efficiently.</p>
 
 <p>The rules continue to evolve, and HMRC's approach to medical professionals remains under scrutiny. Regular review of your arrangements ensures you remain compliant while optimising your tax position.</p>
+
+<h2>Related Reading</h2>
+
+- [Locum Doctor Tax Complete Guide](/blog/locum-doctor-tax-complete-guide)
+- [Locum Doctor Self Assessment Filing Guide](/blog/locum-doctor-self-assessment-filing-guide)
 
 <p>For locum doctors navigating these complex rules, understanding <strong>locum doctor IR35 what you need to know</strong> is the first step towards making informed decisions about your working arrangements and tax planning.</p>

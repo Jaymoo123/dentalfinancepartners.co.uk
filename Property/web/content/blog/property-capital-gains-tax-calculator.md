@@ -21,9 +21,9 @@ faqs:
     answer: "You must report the gain to HMRC within 60 days of completion and pay any CGT due. However, you can also wait until your self-assessment deadline (31 January following the tax year of sale). If you report early, you can still adjust the figures in your annual tax return if needed."
 ---
 
-<p>When you sell a rental property, working out your capital gains tax liability can feel overwhelming. A property capital gains tax calculator helps you estimate what you'll owe HMRC, but understanding how the calculations work is crucial for accurate planning.</p>
+<p>When you sell a rental property, working out your <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax</a> liability can feel overwhelming. A property capital gains tax calculator helps you estimate what you'll owe HMRC, but understanding how the calculations work is crucial for accurate planning.</p>
 
-<p>This guide walks you through everything UK landlords need to know about calculating CGT on property sales, from basic rates to complex scenarios involving multiple properties.</p>
+<p>This guide walks you through everything UK landlords need to know about calculating CGT on property sales, from basic <a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">rates</a> to complex scenarios involving multiple properties.</p>
 
 <h2>How Property Capital Gains Tax Works</h2>
 
@@ -128,3 +128,9 @@ faqs:
 <p>HMRC expects you to report gains within 60 days of completion. Having organized records makes this process much smoother.</p>
 
 <p>For personalized advice on your property portfolio's CGT position, <a href="/contact">get in touch with our team</a> of specialist property accountants.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/capital-gains-tax/reduce-cgt-property-disposal-uk">How to Reduce CGT on Property Disposal in the UK: A Practical Guide for Landlords</a></li>
+</ul>

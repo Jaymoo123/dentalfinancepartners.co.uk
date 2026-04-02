@@ -31,7 +31,7 @@ faqs:
     answer: "Property accountant jobs London include practice-based roles serving landlord clients, corporate positions with property investment companies, and specialist advisory roles. Work involves rental income compliance, Section 24 planning, capital gains tax advice, MTD preparations, and property portfolio management."
 ---
 
-<p>The property accountant jobs UK market has grown significantly as property portfolios become more complex and tax regulations tighten. Whether you're an experienced accountant looking to specialise or a property professional considering a career shift, understanding the landscape is crucial.</p>
+<p>The property accountant jobs UK market has grown significantly as property portfolios <a href="/blog/property-accountant-services/how-to-become-property-accountant">become</a> more complex and tax regulations tighten. Whether you're an experienced accountant looking to specialise or a property professional considering a career shift, understanding the landscape is crucial.</p>
 
 <p>This sector offers roles ranging from practice-based positions serving multiple landlords to in-house roles with large property developers and investment companies.</p>
 
@@ -95,7 +95,7 @@ faqs:
 
 <h3>Practice Roles</h3>
 
-<p>Typical salary ranges include:</p>
+<p>Typical <a href="/blog/property-accountant-services/property-accountant-salary-complete-guide">salary</a> ranges include:</p>
 
 <ul>
 <li>Newly qualified property accountants: £35,000-£45,000</li>
@@ -435,3 +435,9 @@ faqs:
 <p>Property taxation changes frequently, and accountants must stay current with new rules and regulations. Recent changes include the reduction in mortgage interest relief, changes to wear and tear allowances, and upcoming MTD requirements.</p>
 
 <p>A good property accountant monitors HMRC guidance updates, attends relevant training, and communicates changes that affect their clients' tax positions. This ongoing education requirement should be explicit in the <strong>property accountant job description</strong>.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">What Does a Property Accountant Do? Essential Services for UK Landlords</a></li>
+</ul>

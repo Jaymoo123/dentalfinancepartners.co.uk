@@ -67,7 +67,7 @@ faqs:
 
 <h2>Property Business Rates and VAT Implications</h2>
 
-<p>Understanding how <strong>property business rates</strong> interact with VAT obligations is crucial for commercial property owners. Business rates are a separate local authority charge that doesn't affect your VAT position directly.</p>
+<p>Understanding how <strong>property business rates</strong> interact with VAT obligations is crucial for commercial property owners. <a href="/blog/landlord-tax-essentials/property-business-rates-council-tax-landlords">Business rates</a> are a separate local authority charge that doesn't affect your VAT position directly.</p>
 
 <p>However, if you're charging tenants for services that help them manage their business rates or <strong>council tax</strong> obligations—such as property management services—these could be taxable supplies counting towards your VAT threshold.</p>
 
@@ -86,7 +86,7 @@ faqs:
 
 <p>Some landlords choose voluntary <strong>landlord VAT registration</strong> even below the threshold. This can be beneficial if:</p>
 
-<p>Your property business incurs significant VAT on expenses like renovation costs, professional fees, or maintenance. Registration allows you to reclaim input VAT on these costs, potentially generating cash flow benefits.</p>
+<p>Your property business incurs significant VAT on expenses like renovation costs, <a href="/blog/landlord-tax-essentials/accountant-vat-registration-expert-services">professional</a> fees, or maintenance. Registration allows you to reclaim input VAT on these costs, potentially generating cash flow benefits.</p>
 
 <p>However, voluntary registration also means charging 20% VAT on taxable supplies, which could make your commercial properties less competitive unless your tenants can reclaim the VAT themselves.</p>
 
@@ -110,3 +110,9 @@ faqs:
 <p>Speaking with a specialist property accountant can help you understand your specific obligations and identify opportunities for tax efficiency. They can also assist with the registration process and ongoing compliance requirements.</p>
 
 <p>If you're unsure about your VAT position or need help with property tax planning, our <a href="/services">specialist services</a> can provide the guidance you need to stay compliant while optimizing your tax position.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/section-24-and-tax-relief/furnished-holiday-let-tax-rules-exemptions">Furnished Holiday Let Tax: Rules and Exemptions for UK Landlords</a></li>
+</ul>

@@ -25,7 +25,7 @@ faqs:
 
 <p>Landlord incorporation has become increasingly popular since the introduction of Section 24 mortgage interest restrictions. This guide walks you through the complete process of setting up a property company and transferring your portfolio.</p>
 
-<p>The decision to incorporate affects your tax position, financing options, and long-term investment strategy. Understanding each step helps you plan effectively and avoid costly mistakes.</p>
+<p>The decision to incorporate affects your tax position, financing options, and long-term investment strategy. Understanding each step helps you plan effectively and avoid <a href="/blog/incorporation-and-company-structures/incorporation-cost-calculator-cgt-sdlt-implications">costly</a> mistakes.</p>
 
 <h2>Why Consider Landlord Incorporation</h2>
 
@@ -69,7 +69,7 @@ faqs:
 
 <h2>Step 5: Property Transfer Process</h2>
 
-<p>Transferring properties to your company triggers several tax implications. The transfer typically occurs at market value, potentially creating capital gains liability for the individual.</p>
+<p><a href="/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk">Transferring properties</a> to your company triggers several tax implications. The transfer typically occurs at market value, potentially creating capital gains liability for the individual.</p>
 
 <p>Stamp Duty Land Tax applies on transfers over £150,000, though incorporation relief may be available if you transfer your entire property business and receive only shares in return.</p>
 
@@ -124,3 +124,9 @@ faqs:
 <p>Choose advisers experienced in property investment. Generic business advisers may not understand the specific challenges of property portfolios and BTL financing.</p>
 
 <p>Consider engaging all advisers early in the process. Coordinated advice prevents conflicts and ensures optimal timing of each step.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio">Incorporation Timing: When is the Right Time to Incorporate Your Property Portfolio?</a></li>
+</ul>

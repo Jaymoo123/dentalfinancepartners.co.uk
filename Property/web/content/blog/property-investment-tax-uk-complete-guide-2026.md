@@ -23,7 +23,7 @@ faqs:
     answer: "Limited companies can deduct full mortgage interest and pay corporation tax (19-25%) instead of income tax rates up to 45%. However, you'll face additional tax when extracting profits through dividends or salary, plus increased administration costs. The benefit depends on your income level, leverage, and long-term plans - professional advice is recommended for your specific situation."
 ---
 
-<p>Property investment tax UK rules continue to evolve, with significant changes affecting landlords in 2026. From Section 24 mortgage interest restrictions to new Making Tax Digital requirements, understanding your tax obligations is crucial for maintaining a profitable property portfolio.</p>
+<p>Property investment tax UK rules continue to evolve, with significant changes affecting landlords in 2026. From <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24</a> mortgage interest restrictions to new Making Tax Digital requirements, understanding your tax obligations is crucial for maintaining a profitable property portfolio.</p>
 
 <p>This guide covers everything you need to know about property investment tax UK, including income tax calculations, capital gains implications, and practical strategies to minimise your tax burden legally.</p>
 
@@ -55,7 +55,7 @@ faqs:
 <li><strong>Travel costs</strong> - visiting properties for management purposes</li>
 </ul>
 
-<p>Capital improvements like new kitchens or extensions aren't deductible expenses. These costs can reduce capital gains tax when you sell the property.</p>
+<p>Capital improvements like new kitchens or extensions aren't deductible expenses. These costs can reduce <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax</a> when you sell the property.</p>
 
 <h2>Making Tax Digital Requirements</h2>
 
@@ -123,3 +123,9 @@ faqs:
 <p>Specialist property tax advisers can help optimise your structure, ensure compliance, and identify opportunities you might miss. The cost of professional advice typically pays for itself through tax savings and avoided penalties.</p>
 
 <p>For complex portfolios or significant property transactions, getting expert guidance on your specific circumstances is essential for effective tax planning.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Landlords: April 2026 Deadline Explained</a></li>
+</ul>

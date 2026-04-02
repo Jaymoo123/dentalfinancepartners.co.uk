@@ -23,7 +23,7 @@ faqs:
     answer: "Only UK rental income counts toward the £10,000 threshold for MTD purposes. However, if you're a UK tax resident, you still need to declare overseas rental income on your self-assessment, just not through MTD quarterly updates."
 ---
 
-<p>Making Tax Digital for Income Tax Property (MTD ITSA) becomes mandatory from 6 April 2026 for many UK landlords. The key question most property investors ask is whether their rental income puts them above the threshold requiring MTD compliance.</p>
+<p><a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital</a> for Income Tax Property (MTD ITSA) becomes mandatory from 6 April 2026 for many UK landlords. The key question most property investors ask is whether their rental income puts them above the threshold requiring MTD compliance.</p>
 
 <p>The answer depends on your total gross rental income and specific circumstances. This guide explains the threshold, exemptions, and what you need to know to prepare.</p>
 
@@ -66,7 +66,7 @@ faqs:
 <p>Once you're above the threshold, you must:</p>
 
 <ul>
-<li>Keep digital records using MTD-compatible software</li>
+<li>Keep digital records using MTD-compatible <a href="/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026">software</a></li>
 <li>Submit quarterly updates to HMRC (every three months)</li>
 <li>Make an annual declaration by 31 January following the tax year</li>
 <li>Ensure your software can link directly to HMRC systems</li>
@@ -99,3 +99,9 @@ faqs:
 <p>The transition affects not just your tax filing but your entire approach to rental property record-keeping. Early preparation helps avoid compliance issues and potential penalties.</p>
 
 <p>If you're unsure about your MTD obligations or need help preparing for the changes, consider speaking with property tax specialists who understand both the technical requirements and practical implications for UK landlords.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/making-tax-digital-mtd/landlord-tax-return-deadline-2026">Landlord Tax Return Deadline 2026: Key Dates & Tax Band Changes</a></li>
+</ul>

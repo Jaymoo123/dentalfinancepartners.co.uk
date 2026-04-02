@@ -5,7 +5,7 @@ date: "2026-04-01"
 author: "Medical Accounts"
 category: "Medical Expenses"
 metaTitle: "Medical Professional Expenses: What Is Claimable | UK Guide"
-metaDescription: "Complete guide to claimable medical professional expenses for UK GPs, consultants and locum doctors. Professional indemnity, GMC fees, training costs and more."
+metaDescription: "GMC fees, medical indemnity, CPD courses, and travel — UK doctors can claim thousands annually. Claimable expenses for GPs, consultants, and locums."
 altText: "UK medical professional reviewing claimable expenses including stethoscope, calculator and tax documents"
 image: ""
 h1: "Medical Professional Expenses: What Is Claimable for UK Doctors"
@@ -106,7 +106,7 @@ faqs:
 <li><strong>Cleaning and maintenance</strong> - Professional premises upkeep</li>
 </ul>
 
-<p>Home office expenses can be claimed using HMRC's simplified method (£6 per week for 25+ hours use) or actual costs apportioned by professional use.</p>
+<p>[Home office expenses](/blog/gp-home-office-expenses-tax-relief) can be claimed using HMRC's simplified method (£6 per week for 25+ hours use) or actual costs apportioned by professional use.</p>
 
 <h2>What Is Not Claimable</h2>
 
@@ -134,7 +134,7 @@ faqs:
 <p>Claim through employment pages of self-assessment tax returns. Some expenses may be claimable through PAYE if your employer operates a dispensation scheme.</p>
 
 <h3>Locum Doctors</h3>
-<p>Include all professional expenses on self-assessment returns. If operating through a limited company, claim as business expenses against corporation tax.</p>
+<p>Include all professional expenses on self-assessment returns — see our detailed [locum doctor expenses guide](/blog/locum-doctor-expenses-what-you-can-claim). If operating through a limited company, claim as business expenses against corporation tax.</p>
 
 <h2>Record Keeping Requirements</h2>
 
@@ -153,5 +153,10 @@ faqs:
 <h2>Getting Professional Advice</h2>
 
 <p>Medical professionals often have complex expense situations requiring specialist guidance. A qualified medical accountant can help identify all claimable expenses, ensure compliance with tax rules, and maximise your available reliefs.</p>
+
+<h2>Related Reading</h2>
+
+- [GP Tax Deductions Complete List 2026](/blog/gp-tax-deductions-complete-list-2026)
+- [GP Home Office Expenses Tax Relief](/blog/gp-home-office-expenses-tax-relief)
 
 <p>Consider professional advice particularly if you have mixed NHS and private income, operate through a limited company, or have significant equipment purchases. Our <a href="/services">specialist medical accounting services</a> help doctors across the UK optimise their tax position while maintaining full compliance.</p>

@@ -124,7 +124,7 @@ faqs:
 
 <h3>Furnished Holiday Lets</h3>
 
-<p>Furnished Holiday Let properties can claim capital allowances on furniture and equipment, similar to other rental properties. However, they may also qualify for additional reliefs not available to standard BTL properties.</p>
+<p><a href="/blog/section-24-and-tax-relief/furnished-holiday-let-tax-rules-exemptions">Furnished Holiday Let</a> properties can claim capital allowances on furniture and equipment, similar to other rental properties. However, they may also qualify for additional reliefs not available to standard BTL properties.</p>
 
 <h3>Commercial Properties</h3>
 
@@ -205,3 +205,10 @@ faqs:
 <p>The potential tax savings often justify professional fees, particularly for higher-rate taxpayers or those with substantial property portfolios.</p>
 
 <p><strong>Landlord capital allowances</strong> represent a significant but often underutilised opportunity for UK property investors. By understanding what qualifies, maintaining proper records, and integrating allowances planning with broader tax strategies, landlords can substantially reduce their annual tax liability while investing in property improvements that enhance rental yields and capital values.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">Landlord Tax Deductions UK 2026: Complete List</a></li>
+<li><a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">Rental Income Tax UK: Complete Guide for Landlords 2025</a></li>
+</ul>

@@ -106,3 +106,11 @@ faqs:
 <p>Use our <a href="/calculators">tax calculators</a> to model different scenarios and understand how Section 24 might affect your specific situation. Remember that tax planning works best when done proactively rather than reactively.</p>
 
 <p>Don't assume that being a basic rate taxpayer protects you from Section 24's impact. The mortgage interest restriction can affect your finances in unexpected ways, even if your marginal tax rate appears unchanged.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 Tax Relief for Landlords: Complete Guide</a></li>
+<li><a href="/blog/section-24-and-tax-relief/section-24-higher-rate-taxpayers-2026">How Section 24 Affects Higher-Rate Taxpayer Landlords in 2026</a></li>
+<li><a href="/blog/section-24-and-tax-relief/rental-income-tax-calculator">Rental Income Tax Calculator: Work Out Your Tax</a></li>
+</ul>

@@ -6,7 +6,7 @@ date: "2026-04-01"
 author: "Medical Accounts"
 category: "Locum Tax"
 metaTitle: "Locum Doctor Limited Company Pros and Cons | Medical Tax"
-metaDescription: "Comprehensive guide to locum doctor limited company pros and cons. Tax savings, IR35 compliance, and key considerations for UK medical professionals."
+metaDescription: "IR35 often eliminates company tax savings for NHS locums. A realistic breakdown of the pros, cons, and when incorporation actually pays off."
 altText: "UK locum doctor reviewing limited company structure documents with calculator and medical equipment"
 image: ""
 h1: "Locum Doctor Limited Company: Pros and Cons Explained"
@@ -29,7 +29,7 @@ faqs:
 
 <h3>IR35 Compliance Complexity</h3>
 
-<p>The most significant challenge facing locum doctor limited companies is IR35 legislation. Off-payroll working rules require careful assessment of each contract to determine whether you're operating as a "disguised employee" or genuine contractor.</p>
+<p>The most significant challenge facing locum doctor limited companies is [IR35 legislation](/blog/locum-doctor-ir35-what-you-need-to-know). Off-payroll working rules require careful assessment of each contract to determine whether you're operating as a "disguised employee" or genuine contractor.</p>
 
 <p>Many NHS trusts now apply IR35 blanket determinations, treating most locum arrangements as inside IR35. This eliminates many tax advantages while retaining company administrative burdens.</p>
 
@@ -81,7 +81,7 @@ faqs:
 
 <h3>Umbrella Company Arrangements</h3>
 
-<p>Umbrella companies handle payroll and administrative requirements while providing employee benefits. This can suit locums wanting simplicity without full incorporation complexity.</p>
+<p>[Umbrella companies](/blog/locum-doctor-umbrella-company-2026-reforms) handle payroll and administrative requirements while providing employee benefits. This can suit locums wanting simplicity without full incorporation complexity.</p>
 
 <p>However, umbrella arrangements typically result in higher overall tax and National Insurance costs compared to other structures.</p>
 
@@ -92,3 +92,8 @@ faqs:
 <p>Before making any decision, model the tax implications under different scenarios and consider both current and future work arrangements. Professional advice is essential given the complexity of IR35 rules and their interaction with medical professional requirements.</p>
 
 <p>Our <a href="/services">specialist medical accountants</a> regularly help locum doctors evaluate their options and choose the most appropriate structure for their circumstances. The right decision depends on careful analysis of your specific situation rather than general rules about company benefits.</p>
+
+<h2>Related Reading</h2>
+
+- [Locum Doctor Tax Complete Guide](/blog/locum-doctor-tax-complete-guide)
+- [Locum Doctor Expenses: What You Can Claim](/blog/locum-doctor-expenses-what-you-can-claim)

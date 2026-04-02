@@ -41,7 +41,7 @@ faqs:
 
 <h3>Dividend Planning</h3>
 
-<p>Property company profits distributed as dividends avoid the additional corporation tax charges. However, dividend planning requires careful coordination with personal tax positions of shareholders.</p>
+<p>Property company profits distributed as <a href="/blog/incorporation-and-company-structures/property-company-dividend-tax">dividends</a> avoid the additional corporation tax charges. However, dividend planning requires careful coordination with personal tax positions of shareholders.</p>
 
 <h2>Property-Specific Corporation Tax Issues</h2>
 
@@ -97,3 +97,10 @@ faqs:
 </ul>
 
 <p>The right specialist becomes a valuable business partner, not just a compliance necessity. They help structure your property business for long-term tax efficiency while ensuring you meet all obligations.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/property-company-profit-extraction-salary-vs-dividends">Property Company Profit Extraction: Salary vs Dividends</a></li>
+<li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Buy-to-Let Limited Company: Complete Guide UK</a></li>
+</ul>

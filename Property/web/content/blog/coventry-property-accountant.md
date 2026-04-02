@@ -113,3 +113,11 @@ faqs:
 <p>Consider booking an initial consultation to discuss your property portfolio, current compliance approach, and strategic objectives. This helps determine the most appropriate support level for your circumstances.</p>
 
 <p>For more information about our specialist property accountancy services, visit our <a href="/about">about page</a> or <a href="/contact">get in touch</a> to discuss your specific requirements.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/property-accountant-services/best-property-accountant">How to Choose the Best Property Accountant for UK Landlords</a></li>
+<li><a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">How to Choose a Property Accountant: Complete Guide for UK Landlords</a></li>
+<li><a href="/blog/property-accountant-services/property-accountant-near-me">Property Accountant Near Me: Finding the Right UK Property Tax Specialist</a></li>
+</ul>

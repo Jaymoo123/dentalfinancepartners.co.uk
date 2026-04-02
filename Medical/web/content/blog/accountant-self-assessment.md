@@ -5,8 +5,8 @@ canonical: "https://www.medicalaccountantsuk.co.uk/blog/accountant-self-assessme
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "GP Accountant Services"
-metaTitle: "Accountant Self Assessment Guide for UK Doctors & GPs"
-metaDescription: "Expert guide to accountant self assessment for UK medical professionals. Learn when you need professional help with tax returns, costs, and choosing the right specialist."
+metaTitle: "Self Assessment for Doctors 2026/27 | Medical Accountants UK"
+metaDescription: "Most GPs overpay tax by filing self assessment alone. When to get specialist help, typical costs, and how medical accountants save you more than their fees."
 altText: "UK medical professional reviewing tax documents with specialist accountant"
 image: ""
 h1: "Accountant Self Assessment for UK Medical Professionals"
@@ -40,7 +40,7 @@ faqs:
 <li>Property rental income from medical premises</li>
 </ul>
 
-<p>For example, a GP partner earning £120k from the practice plus £30k locum work faces complex basis period calculations, pension allowance tapering, and expense allocation between different income streams.</p>
+<p>For example, a GP partner earning £120k from the practice plus £30k locum work faces complex basis period calculations, pension allowance tapering, and expense allocation between different income streams. See our [GP tax return guide](/blog/gp-tax-return) for a detailed walkthrough.</p>
 
 <h2>Benefits of Professional Accountant Self Assessment</h2>
 
@@ -107,5 +107,10 @@ faqs:
 </ul>
 
 <p>Most specialists offer initial consultations to assess your needs and provide fee estimates. This helps you understand whether professional help offers value in your specific situation.</p>
+
+<h2>Related Reading</h2>
+
+- [Locum Doctor Self Assessment Filing Guide](/blog/locum-doctor-self-assessment-filing-guide)
+- [GP Accountant Cost: What UK Professionals Pay](/blog/gp-accountant-cost)
 
 <p>For complex cases involving multiple income streams or pension allowance issues, professional support often pays for itself through better tax planning and peace of mind.</p>

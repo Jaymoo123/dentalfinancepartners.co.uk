@@ -23,7 +23,7 @@ faqs:
     answer: "Commercial property sales over £2 million follow the same 60-day reporting rule as residential property. Sales under £2 million are only reported on your Self Assessment return with payment due by 31 January following the tax year end."
 ---
 
-<p>Capital Gains Tax deadlines for property sales remain one of the most critical compliance areas for UK landlords in 2026. Miss these dates and you face automatic penalties that can quickly escalate into significant costs.</p>
+<p><a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital Gains Tax</a> deadlines for property sales remain one of the most critical compliance areas for UK landlords in 2026. Miss these dates and you face automatic penalties that can quickly escalate into significant costs.</p>
 
 <p>The dual reporting system for property CGT creates confusion for many investors. You have both immediate reporting requirements and annual payment deadlines to manage simultaneously.</p>
 
@@ -80,7 +80,7 @@ faqs:
 <li><strong>Over 12 months:</strong> Up to 100% of the tax due</li>
 </ul>
 
-<p>Late payment interest runs from the original due date at current rates (7.75% as of 2026).</p>
+<p>Late payment interest runs from the original due date at current <a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">rates</a> (7.75% as of 2026).</p>
 
 <h3>Self Assessment Penalties</h3>
 
@@ -117,3 +117,9 @@ faqs:
 <p>Getting specialist advice early in the disposal process helps ensure accurate calculations and timely compliance. Our <a href="/services">services</a> include CGT planning and compliance support for property investors.</p>
 
 <p>Don't leave CGT compliance to chance. Missing deadlines creates immediate penalties and ongoing interest charges that erode your property profits unnecessarily.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/capital-gains-tax/reduce-cgt-property-disposal-uk">How to Reduce CGT on Property Disposal in the UK: A Practical Guide for Landlords</a></li>
+</ul>

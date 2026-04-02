@@ -33,7 +33,7 @@ faqs:
 <p>Managing property VAT registration requires specialist knowledge of property tax legislation and HMRC requirements. Professional services typically include:</p>
 
 <ul>
-<li>VAT threshold monitoring and registration timing advice</li>
+<li><a href="/blog/landlord-tax-essentials/landlord-vat-registration-when-required">VAT threshold</a> monitoring and registration timing advice</li>
 <li>Assessment of whether your property activities require VAT registration</li>
 <li>Completion of VAT registration applications</li>
 <li>Ongoing VAT return preparation and submission</li>
@@ -126,3 +126,10 @@ faqs:
 <p>Professional advice ensures you register at the right time, claim all available input tax, and structure your property activities tax-efficiently. The wrong approach to property VAT registration can be costly in both immediate cash flow and long-term tax efficiency.</p>
 
 <p>For specialist advice on property VAT registration and ongoing compliance, experienced property tax advisers can help you navigate these requirements while optimising your overall tax position.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/landlord-tax-essentials/accountant-tax-advice-property-investors">Professional Accountant Tax Advice for UK Property Investors</a></li>
+<li><a href="/blog/landlord-tax-essentials/property-business-rates-council-tax-landlords">Property Business Rates vs Council Tax: What UK Landlords Need to Know</a></li>
+</ul>

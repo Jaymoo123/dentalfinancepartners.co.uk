@@ -95,7 +95,7 @@ faqs:
 
 <p>Property companies face more complexity. Directors need optimised salary levels to minimise National Insurance while maintaining sufficient earnings for mortgage applications. Employee benefits like company cars or medical insurance require careful P11D reporting.</p>
 
-<p>A property company with rental income of £200,000 might pay its director a salary of £12,570 (the personal allowance) plus dividends, saving significant National Insurance contributions. Getting this balance right requires specialist property payroll services.</p>
+<p>A property company with rental income of £200,000 might pay its director a <a href="/blog/incorporation-and-company-structures/property-company-profit-extraction-salary-vs-dividends">salary of £12,570 (the personal allowance) plus dividends</a>, saving significant National Insurance contributions. Getting this balance right requires specialist property payroll services.</p>
 
 <h2>Compliance and Risk Management</h2>
 <p>HMRC penalties for payroll errors can be substantial. Late RTI submissions trigger automatic penalties — £100 per month for small employers, rising to £400 for larger operations.</p>
@@ -110,3 +110,10 @@ faqs:
 <p>This integration is particularly valuable for portfolio landlords tracking costs across multiple properties. Staff time can be allocated to specific properties, providing accurate profit and loss reporting for each asset.</p>
 
 <p>Property payroll services should also coordinate with your accountant for year-end reporting and tax planning. Salary levels, bonus timing, and benefit structures all impact your overall tax position.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/accountant-corporation-tax-property-companies">Corporation Tax Accountants for UK Property Companies</a></li>
+<li><a href="/blog/incorporation-and-company-structures/director-loan-property-company">Director Loans in Property Companies: Tax Rules and Implications</a></li>
+</ul>

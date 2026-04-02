@@ -29,7 +29,7 @@ faqs:
 
 <h2>Why Property Investment Company Structure Matters</h2>
 
-<p>Your property investment company structure determines how much tax you pay, how easily you can access profits, and what options you have for future growth. Many landlords start investing personally, then realise they need a company structure when their portfolio grows or tax rules change.</p>
+<p>Your property investment company structure determines how much tax you pay, how easily you can access profits, and what options you have for future growth. Many landlords start investing <a href="/blog/incorporation-and-company-structures/limited-company-vs-personal-ownership-tax-comparison-2026">personally</a>, then realise they need a company structure when their portfolio grows or tax rules change.</p>
 
 <p>The most common trigger is Section 24, which restricts mortgage interest relief for personal landlords to basic rate tax relief only. A landlord with £100,000 rental income and £40,000 mortgage interest could face an additional tax bill of £8,000 per year compared to holding the same properties in a company.</p>
 
@@ -98,3 +98,10 @@ faqs:
 <p>The calculation tools and general guidance available online can give you a starting point, but they can't account for your specific situation or future plans. Professional advice typically pays for itself through better structure design and avoiding costly mistakes.</p>
 
 <p>When choosing an advisor, look for someone with specific experience in property investment structures rather than general accountants. The nuances of property taxation and the interaction between different structure options require specialist knowledge.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Buy-to-Let Limited Company: Complete Guide UK</a></li>
+<li><a href="/blog/incorporation-and-company-structures/property-company-dividend-tax">Property Company Dividend Tax: How Much Will I Pay?</a></li>
+</ul>

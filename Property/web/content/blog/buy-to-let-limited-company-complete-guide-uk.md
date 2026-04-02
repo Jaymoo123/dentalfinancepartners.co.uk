@@ -23,7 +23,7 @@ faqs:
     answer: "Companies may not be worthwhile for basic rate taxpayers with low borrowings, those wanting to extract all profits immediately, or landlords with only 1-2 properties. The additional compliance costs and complexity can outweigh the tax benefits in these situations."
 ---
 
-<p>Operating a <strong>buy to let limited company</strong> has become increasingly popular among UK landlords since the introduction of Section 24 mortgage interest restrictions. This comprehensive guide explains when incorporation makes sense, the tax benefits available, and the practical steps involved.</p>
+<p>Operating a <strong>buy to let limited company</strong> has become increasingly popular among UK landlords since the introduction of Section 24 <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-mortgage-options">mortgage</a> interest restrictions. This comprehensive guide explains when incorporation makes sense, the tax benefits available, and the practical steps involved.</p>
 
 <p>For many property investors, the decision to operate through a company structure rather than as an individual can significantly reduce their overall tax burden. However, it's not the right choice for everyone.</p>
 
@@ -173,3 +173,10 @@ faqs:
 <p>Professional advice is essential to ensure you choose the right structure and comply with all requirements. Our team specialises in helping property investors navigate these decisions. Contact us through our <a href="/services">services page</a> to discuss your specific situation.</p>
 
 <p>Remember that tax rules change regularly, and what works today may not be optimal in future years. Regular reviews of your structure ensure you continue to operate efficiently as your portfolio grows.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/limited-company-vs-personal-ownership-tax-comparison-2026">Limited Company vs. Personal Ownership: UK Property Tax Comparison 2026</a></li>
+<li><a href="/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio">Incorporation Timing: When is the Right Time to Incorporate Your Property Portfolio?</a></li>
+</ul>

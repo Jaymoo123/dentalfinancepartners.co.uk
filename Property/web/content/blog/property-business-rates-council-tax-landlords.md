@@ -109,3 +109,11 @@ faqs:
 <p>Keep detailed records of property use, tenancy arrangements, and any changes that might affect liability. Local authorities can backdate assessments, so documentation proving the nature of your letting business is valuable.</p>
 
 <p>If you're considering <a href="/incorporation">incorporating your property business</a>, remember that business rates treatment doesn't change based on ownership structure - it depends on property use and tenancy arrangements.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/landlord-tax-essentials/landlord-vat-registration-when-required">Landlord VAT Registration: When Is It Required?</a></li>
+<li><a href="/blog/landlord-tax-essentials/stamp-duty-buy-to-let-surcharge">Stamp Duty on Buy-to-Let: 5% Surcharge Explained</a></li>
+<li><a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">Landlord Tax Deductions UK 2026: Complete List</a></li>
+</ul>

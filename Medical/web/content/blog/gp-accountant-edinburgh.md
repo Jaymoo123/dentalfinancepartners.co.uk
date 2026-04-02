@@ -5,7 +5,7 @@ date: "2026-04-01"
 author: "Medical Accounts"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Edinburgh | Specialist Medical Tax Services"
-metaDescription: "Expert GP accountant in Edinburgh providing specialist tax, pension and financial services for GPs, consultants and locum doctors across Scotland."
+metaDescription: "Edinburgh GP accountant for partners, salaried GPs, and locums. Scottish tax rates, NHS pension planning, and practice accounts across Scotland."
 altText: "Edinburgh GP accountant providing specialist medical tax services"
 image: ""
 h1: "GP Accountant Edinburgh: Expert Tax Services for Medical Professionals"
@@ -92,5 +92,10 @@ faqs:
 <p>Don't wait until year-end to engage with a medical accountant. Tax planning is most effective when done proactively throughout the year. This is particularly important for managing NHS pension annual allowance charges and partnership profit timing.</p>
 
 <p>Consider scheduling regular reviews to discuss your financial position, especially if you're considering career changes like partnership opportunities or private practice development.</p>
+
+<h2>Related Reading</h2>
+
+- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services)
+- [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
 
 <p>For complex situations involving multiple income streams, pension planning, or practice ownership, specialist medical accounting advice is essential rather than optional.</p>

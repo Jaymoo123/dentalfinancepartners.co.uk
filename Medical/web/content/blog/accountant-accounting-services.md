@@ -5,8 +5,8 @@ canonical: "https://www.medicalaccountantsuk.co.uk/blog/accountant-accounting-se
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "GP Accountant Services"
-metaTitle: "Accountant Accounting Services for Medical Professionals UK"
-metaDescription: "Specialist accountant accounting services for GPs, consultants and locum doctors. Expert tax planning, NHS pension advice, and compliance support."
+metaTitle: "Accounting Services for Doctors | Medical Accountants UK"
+metaDescription: "UK doctors need accountants who understand NHS pensions, partnership tax, and IR35. How specialist medical accounting differs from high-street firms."
 altText: "Professional accountant working with medical client on tax planning and NHS pension calculations"
 image: ""
 h1: "Accountant Accounting Services for Medical Professionals"
@@ -33,7 +33,7 @@ faqs:
 
 <ul>
 <li>NHS pension annual allowance calculations and tapered allowance thresholds</li>
-<li>GP partnership profit sharing and basis period reform changes</li>
+<li>[GP partnership profit sharing](/blog/gp-partnership-tax-complete-guide) and basis period reform changes</li>
 <li>IR35 compliance for locum doctors and complex employment structures</li>
 <li>Mixed NHS and private income allocation strategies</li>
 <li>Professional expense claims (GMC, indemnity, BMA, CPD costs)</li>
@@ -136,5 +136,10 @@ faqs:
 </ul>
 
 <p>For busy medical professionals, the combination of expertise and time savings makes specialist services a worthwhile investment.</p>
+
+<h2>Related Reading</h2>
+
+- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services)
+- [GP Tax Advice: Essential Tax Planning](/blog/gp-tax-advice)
 
 <p>The right <strong>accountant accounting services</strong> provider becomes a long-term partner in your financial success, adapting their advice as your career progresses and tax rules evolve.</p>

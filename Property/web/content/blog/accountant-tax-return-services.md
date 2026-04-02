@@ -27,7 +27,7 @@ faqs:
     answer: "Yes, specialists can prepare amended returns if you've missed claims or made errors. They can typically go back four years to claim missed reliefs, though penalties may apply for late filing."
 ---
 
-<p>Managing property tax returns as a UK landlord can be complex, especially as your portfolio grows. An expert <strong>accountant tax return</strong> service ensures you stay compliant with HMRC while maximising your tax efficiency across all your property investments.</p>
+<p>Managing property <a href="/blog/landlord-tax-essentials/landlord-tax-return-complete-guide-2026">tax returns</a> as a UK landlord can be complex, especially as your portfolio grows. An expert <strong>accountant tax return</strong> service ensures you stay compliant with HMRC while maximising your tax efficiency across all your property investments.</p>
 
 <p>Property investors face unique tax challenges that general accountants often overlook. From Section 24 mortgage interest restrictions to capital allowances and Making Tax Digital requirements, specialist knowledge makes the difference between paying the right amount of tax and overpaying.</p>
 
@@ -99,3 +99,10 @@ faqs:
 <p>Consider expert services if you have multiple properties, significant mortgage interest restrictions, capital gains from property sales, or complex expense situations. Professional help is also worthwhile if property taxation isn't your area of expertise and you want to ensure compliance while optimising your position.</p>
 
 <p>The investment in professional property tax return services often pays for itself through better tax outcomes and reduced compliance risks.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/landlord-tax-essentials/accountant-self-assessment">Accountant Self Assessment Services for UK Property Investors</a></li>
+<li><a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Landlords: April 2026 Deadline Explained</a></li>
+</ul>

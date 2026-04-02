@@ -277,3 +277,11 @@ Mortgage interest (£18,000) × 20% = £3,600 tax credit</p>
 <p>The key is understanding exactly how Section 24 affects your specific situation and exploring legitimate strategies to minimise its impact. Whether that's through spousal transfers, incorporation, or careful timing of income and expenses, proper planning can significantly reduce the Section 24 tax burden.</p>
 
 <p>Remember that tax legislation can change, and individual circumstances vary considerably. What works for one landlord may not suit another, making professional advice valuable for anyone with a substantial property portfolio affected by these restrictions.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 Tax Relief for Landlords: Complete Guide</a></li>
+<li><a href="/blog/section-24-and-tax-relief/section-24-case-study-100k-rental-income-portfolio">Section 24 Case Study: £100k Rental Income Portfolio</a></li>
+<li><a href="/blog/section-24-and-tax-relief/rental-income-tax-calculator">Rental Income Tax Calculator: Work Out Your Tax</a></li>
+</ul>

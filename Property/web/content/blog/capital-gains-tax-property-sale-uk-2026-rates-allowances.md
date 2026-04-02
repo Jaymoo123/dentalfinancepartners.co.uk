@@ -23,7 +23,7 @@ faqs:
     answer: "You must report property disposals to HMRC within 60 days of completion and make a payment on account. The final tax calculation is due by 31 January following the tax year, with any additional tax or refunds settled then."
 ---
 
-<p>Capital gains tax on property sale UK 2026 remains a significant consideration for landlords and property investors. With the annual exempt amount continuing its reduction and property values remaining high, understanding your CGT liability is crucial when planning property disposals.</p>
+<p><a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital gains tax</a> on property sale UK 2026 remains a significant consideration for landlords and property investors. With the annual exempt amount continuing its reduction and property values remaining high, understanding your CGT liability is crucial when planning property disposals.</p>
 
 <p>The rules around capital gains tax can significantly impact your net proceeds from a property sale. Getting the calculations wrong or missing available reliefs could cost thousands in unnecessary tax.</p>
 
@@ -112,7 +112,7 @@ faqs:
 
 <h2>Reporting and Payment Deadlines</h2>
 
-<p>Capital gains tax on property sale UK 2026 must be reported within strict deadlines:</p>
+<p>Capital gains tax on property sale UK 2026 must be reported within strict <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">deadlines</a>:</p>
 
 <ul>
 <li><strong>60 days</strong> from completion to report the disposal</li>
@@ -149,3 +149,9 @@ faqs:
 <p>Given the complexity and potential costs involved, consider seeking specialist advice. Our <a href="/services">services</a> include CGT planning and compliance support for property investors.</p>
 
 <p>The interaction between various reliefs, timing considerations, and structural options means professional guidance often saves more than it costs.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/capital-gains-tax/reduce-cgt-property-disposal-uk">How to Reduce CGT on Property Disposal in the UK: A Practical Guide for Landlords</a></li>
+</ul>

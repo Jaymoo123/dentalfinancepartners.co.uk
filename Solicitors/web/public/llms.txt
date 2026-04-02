@@ -1,0 +1,26 @@
+# Accounts for Lawyers
+
+> Specialist UK accountants for solicitors, law firms, and legal practices.
+
+## About
+Accounts for Lawyers provides specialist accounting, tax planning, and compliance services for UK solicitors and law firms. We cover SRA compliance, trust accounting, partnership and LLP accounting, VAT, practice finance, succession planning, and incorporation.
+
+## Key Pages
+- Homepage: https://www.accountsforlawyers.co.uk/
+- Services: https://www.accountsforlawyers.co.uk/services
+- About: https://www.accountsforlawyers.co.uk/about
+- Blog: https://www.accountsforlawyers.co.uk/blog
+- Contact: https://www.accountsforlawyers.co.uk/contact
+- Locations: https://www.accountsforlawyers.co.uk/locations
+
+## Blog Categories
+- SRA Compliance & Trust Accounting: /blog/sra-compliance-trust-accounting
+- Sole Practitioner Tax: /blog/sole-practitioner-tax
+- Partnership & LLP Accounting: /blog/partnership-llp-accounting
+- VAT & Compliance: /blog/vat-compliance
+- Practice Finance & Cash Flow: /blog/practice-finance-cash-flow
+- Practice Succession & Sale: /blog/practice-succession-sale
+- Structure & Incorporation: /blog/structure-incorporation
+
+## Sitemap
+https://www.accountsforlawyers.co.uk/sitemap.xml

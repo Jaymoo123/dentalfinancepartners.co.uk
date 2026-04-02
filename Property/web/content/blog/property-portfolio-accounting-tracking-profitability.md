@@ -54,7 +54,7 @@ faqs:
 
 <h3>Choose Your Method</h3>
 
-<p>You have three main options for property portfolio accounting: spreadsheets, property-specific software, or cloud accounting platforms. Each has merits depending on your portfolio size and complexity.</p>
+<p>You have three main options for property portfolio accounting: spreadsheets, property-specific <a href="/blog/making-tax-digital-mtd/landlord-accounting-software-uk-best-options-2026">software</a>, or cloud accounting platforms. Each has merits depending on your portfolio size and complexity.</p>
 
 <p>Spreadsheets work well for portfolios under 10 properties. Property management software like Property Hub or Landlord Studio offers more automation. Cloud accounting platforms like Xero or QuickBooks provide the most comprehensive features but require more setup.</p>
 
@@ -107,7 +107,7 @@ faqs:
 
 <h3>Net Rental Yield</h3>
 
-<p>Calculate net rental yield as: (Annual rental income - Annual costs) ÷ Property value × 100</p>
+<p>Calculate net <a href="/blog/landlord-tax-essentials/rental-yield-calculator-guide-uk-landlords">rental yield</a> as: (Annual rental income - Annual costs) ÷ Property value × 100</p>
 
 <p>A property worth £200,000 generating £12,000 rent with £4,000 costs produces a 4% net yield. Compare this across your portfolio to identify best performers.</p>
 
@@ -283,3 +283,9 @@ faqs:
 <p>For 2025/26, the basic rate tax band runs up to £37,700 (plus personal allowance). A landlord with £30,000 employment income has limited scope for additional rental profit at basic rate.</p>
 
 <p>Consider whether <a href="/incorporation">incorporation</a> might benefit your tax position as your portfolio grows. Monthly tracking provides the data needed for incorporation analysis and timing decisions.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/property-accountant-services/property-management-accounting-services">Property Management Accounting Services: Expert Support for UK Landlords</a></li>
+</ul>

@@ -25,7 +25,7 @@ faqs:
 
 <p>Capital gains tax property rules affect every UK landlord and property investor who sells a rental property or second home. Whether you're disposing of a single buy-to-let or part of a larger portfolio, understanding how capital gains tax works can save you thousands of pounds.</p>
 
-<p>This guide covers everything you need to know about capital gains tax on property sales, from basic rates to advanced planning strategies.</p>
+<p>This guide covers everything you need to know about capital gains tax on property sales, from basic rates to advanced planning <a href="/blog/capital-gains-tax/reduce-cgt-property-disposal-uk">strategies</a>.</p>
 
 <h2>Calculating Capital Gains Tax on Property</h2>
 
@@ -119,3 +119,10 @@ Less: Annual exempt amount<br>
 </ul>
 
 <p>The cost of professional advice is usually modest compared to potential CGT savings. If you're planning property disposals or need help with CGT calculations, consider speaking to a specialist who understands the intricacies of capital gains tax property rules.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">Capital Gains Tax on Property Sale UK 2026: Rates and Allowances</a></li>
+<li><a href="/blog/capital-gains-tax/property-capital-gains-tax-calculator">Property Capital Gains Tax Calculator: Complete Guide for UK Landlords</a></li>
+</ul>

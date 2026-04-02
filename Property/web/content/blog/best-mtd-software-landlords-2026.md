@@ -23,7 +23,7 @@ faqs:
     answer: "Companies with property income don't need MTD for Income Tax Property compliance — this only applies to individuals, partnerships and trusts. However, companies may still benefit from property-specific accounting software for Corporation Tax compliance and business management."
 ---
 
-<p>Making Tax Digital for Income Tax Property (ITSA) becomes mandatory from 6 April 2026 for UK landlords with gross property income exceeding £50,000. This means quarterly digital submissions and end-of-period statements through MTD-compatible software.</p>
+<p>Making Tax Digital for Income Tax Property (ITSA) becomes mandatory from 6 <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">April 2026</a> for UK landlords with gross property income exceeding £50,000. This means quarterly digital submissions and end-of-period statements through MTD-compatible software.</p>
 
 <p>Choosing the right MTD software is crucial for compliance and efficiency. The wrong choice can mean extra work, higher costs, or compliance headaches down the line.</p>
 
@@ -96,3 +96,10 @@ faqs:
 <p>Many landlords benefit from professional guidance, especially those with complex portfolios or specific requirements. Our team at <a href="/services">Property Tax Partners</a> helps landlords evaluate software options alongside broader tax planning strategies.</p>
 
 <p>Consider professional advice if you have mixed commercial and residential properties, operate through companies, or need to integrate MTD with existing business systems.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/making-tax-digital-mtd/landlord-accounting-software-uk-best-options-2026">Landlord Accounting Software UK: Best Options 2026</a></li>
+<li><a href="/blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions">Do I Need MTD for My Rental Income? Threshold and Exemptions Explained</a></li>
+</ul>

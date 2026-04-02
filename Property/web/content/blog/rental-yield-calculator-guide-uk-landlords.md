@@ -27,7 +27,7 @@ faqs:
     answer: "Use gross yield for initial property screening and quick comparisons, but focus on net rental yield for actual investment decisions. Net yield reflects true profitability after all costs and gives you realistic cash flow expectations for your property portfolio."
 ---
 
-<p>A <strong>rental yield calculator</strong> is an essential tool for any UK property investor looking to evaluate investment opportunities and track portfolio performance. Whether you're considering your first buy-to-let property or managing multiple investments, understanding yield calculations helps you make informed decisions and maximize returns.</p>
+<p>A <strong>rental yield calculator</strong> is an essential tool for any UK property investor looking to evaluate investment opportunities and track <a href="/blog/portfolio-management/property-portfolio-accounting-tracking-profitability">portfolio</a> performance. Whether you're considering your first buy-to-let property or managing multiple investments, understanding yield calculations helps you make informed decisions and maximize returns.</p>
 
 <p>This comprehensive guide walks you through everything you need to know about calculating rental yields, from basic formulas to advanced optimization strategies.</p>
 
@@ -312,3 +312,10 @@ faqs:
 <p>For new investments, always calculate both gross and net yields, factor in realistic expenses, and consider the broader investment context including tax efficiency and capital growth potential.</p>
 
 <p>If you need help with complex calculations or tax-efficient structuring, <a href="/contact">speak to a specialist</a> who can provide tailored advice for your specific situation.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">Rental Income Tax UK: Complete Guide for Landlords 2025</a></li>
+<li><a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">Property Investment Tax UK: Complete Guide 2026</a></li>
+</ul>

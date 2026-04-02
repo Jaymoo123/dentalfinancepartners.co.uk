@@ -34,7 +34,7 @@ faqs:
 <ul>
 <li><strong>Market value at transfer</strong> (what the property is worth now)</li>
 <li><strong>Minus:</strong> Original purchase price</li>
-<li><strong>Minus:</strong> Allowable costs (legal fees, stamp duty, improvement costs)</li>
+<li><strong>Minus:</strong> Allowable costs (legal fees, <a href="/blog/incorporation-and-company-structures/incorporation-cost-calculator-cgt-sdlt-implications">stamp duty</a>, improvement costs)</li>
 <li><strong>Minus:</strong> Annual CGT allowance (£3,000 for 2025/26)</li>
 <li><strong>Equals:</strong> Chargeable gain</li>
 </ul>
@@ -112,7 +112,7 @@ If she's a higher rate taxpayer: £94,500 × 28% = £26,460</p>
 
 <h2>Company Purchase vs Transfer</h2>
 
-<p>Remember that you don't have to transfer existing properties to benefit from company ownership. Having your company purchase new properties avoids CGT entirely on future acquisitions.</p>
+<p>Remember that you don't have to transfer existing properties to benefit from company ownership. Having your company purchase new properties <a href="/blog/incorporation-and-company-structures/incorporate-rental-property-without-cgt">avoids</a> CGT entirely on future acquisitions.</p>
 
 <p>Many landlords keep existing properties personally and use companies for new purchases, especially when the CGT bill would be substantial.</p>
 
@@ -121,3 +121,9 @@ If she's a higher rate taxpayer: £94,500 × 28% = £26,460</p>
 <p>CGT calculations can become complex, particularly with multiple properties or when planning timing strategies. The interaction between income tax, CGT, and company tax rules requires careful analysis.</p>
 
 <p>Consider speaking to a specialist property accountant who can model different scenarios and help you understand the full tax implications before making any transfers.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital Gains Tax on Property: Complete Guide UK</a></li>
+</ul>

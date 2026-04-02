@@ -27,7 +27,7 @@ faqs:
 
 <p>Property investment in the UK comes with complex tax implications that can significantly impact your returns. Professional accountant tax advice ensures you navigate these challenges effectively while maximising your after-tax income.</p>
 
-<p>The landscape has changed dramatically in recent years. Section 24 mortgage interest restrictions, Making Tax Digital requirements, and evolving capital gains rules mean that DIY approaches often leave money on the table or create compliance risks.</p>
+<p>The landscape has changed dramatically in recent years. <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24</a> mortgage interest restrictions, Making Tax Digital requirements, and evolving capital gains rules mean that DIY approaches often leave money on the table or create compliance risks.</p>
 
 <h2>When You Need Property Tax Advice</h2>
 <p>Several situations typically trigger the need for professional property tax advice. Portfolio expansion is one key trigger — when you move from one or two properties to a larger portfolio, the complexity increases dramatically.</p>
@@ -36,7 +36,7 @@ faqs:
 
 <p>Making Tax Digital for Income Tax Property starts 6 April 2026 for landlords earning over £10k annually from property. This means quarterly digital reporting and significant changes to record-keeping. Early preparation prevents last-minute scrambling.</p>
 
-<p>Capital gains tax planning becomes crucial when selling properties or transferring ownership. CGT rates of 18% or 28% on property gains mean proper planning saves substantial sums.</p>
+<p>Capital gains <a href="/blog/landlord-tax-essentials/accountant-tax-planning-services">tax planning</a> becomes crucial when selling properties or transferring ownership. CGT rates of 18% or 28% on property gains mean proper planning saves substantial sums.</p>
 
 <h2>Core Areas Where Professional Tax Advice Adds Value</h2>
 
@@ -133,3 +133,9 @@ faqs:
 <p>Ask specific questions about areas that concern you. Rather than general discussions, focus on particular challenges you face or opportunities you want to explore.</p>
 
 <p>Professional property tax advice is an investment in your property business. The complexity of UK property taxation makes specialist guidance essential for most landlords, and the potential savings typically far exceed the costs involved.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">Property Investment Tax UK: Complete Guide 2026</a></li>
+</ul>

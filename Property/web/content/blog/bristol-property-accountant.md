@@ -53,7 +53,7 @@ faqs:
 
 <h3>Making Tax Digital Preparation</h3>
 
-<p>From April 2026, property landlords with income over £10,000 must use MTD-compatible software for quarterly reporting. As your <strong>Bristol property accountant</strong>, we'll help you choose the right system and ensure you're ready for the transition.</p>
+<p>From April 2026, property landlords with income over £10,000 must use MTD-compatible software for quarterly reporting. As your <strong>Bristol property accountant</strong>, we'll help you <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">choose</a> the right system and ensure you're ready for the transition.</p>
 
 <h3>Company Formation and Structure</h3>
 
@@ -84,3 +84,10 @@ faqs:
 <p>Our <a href="/calculators">online calculators</a> can help you understand potential tax savings, while our initial consultation explores your specific circumstances and objectives.</p>
 
 <p>Contact our team to discuss how we can support your Bristol property investment journey with expert accounting and tax planning services tailored to the local market.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/property-accountant-services/best-property-accountant">How to Choose the Best Property Accountant for UK Landlords</a></li>
+<li><a href="/blog/property-accountant-services/property-accountant-near-me">Property Accountant Near Me: Finding the Right UK Property Tax Specialist</a></li>
+</ul>

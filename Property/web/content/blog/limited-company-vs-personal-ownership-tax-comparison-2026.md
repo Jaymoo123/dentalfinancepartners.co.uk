@@ -23,7 +23,7 @@ faqs:
     answer: "Companies face the same 3% SDLT surcharge as individuals buying additional residential properties. However, companies cannot benefit from first-time buyer relief or main residence exemptions. The surcharge applies to both structures for typical buy-to-let purchases, so there's usually no difference in SDLT costs."
 ---
 
-<p>The choice between owning property through a limited company or personally remains one of the most significant decisions facing UK landlords in 2026. With Section 24 mortgage interest restrictions now fully implemented and corporation tax rates changing, the tax implications can vary dramatically depending on your circumstances.</p>
+<p>The choice between owning property through a limited company or personally remains one of the most significant decisions facing UK landlords in 2026. With <a href="/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax">Section 24</a> mortgage interest restrictions now fully implemented and corporation tax rates changing, the tax implications can vary dramatically depending on your circumstances.</p>
 
 <h2>Section 24 Impact on Personal Ownership</h2>
 
@@ -136,3 +136,10 @@ faqs:
 <p>Before making incorporation decisions, speak to a specialist property accountant who can model the tax implications based on your specific portfolio and circumstances. Our <a href="/calculators">tax calculators</a> can provide initial estimates, but professional advice is essential for significant structural decisions.</p>
 
 <p>The 2026 tax landscape heavily favours limited company structures for most higher-rate taxpayer landlords, but the decision requires careful analysis of both immediate tax implications and long-term strategic considerations.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Buy-to-Let Limited Company: Complete Guide UK</a></li>
+<li><a href="/blog/incorporation-and-company-structures/property-company-profit-extraction-salary-vs-dividends">Property Company Profit Extraction: Salary vs Dividends</a></li>
+</ul>

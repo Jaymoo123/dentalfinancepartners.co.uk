@@ -144,3 +144,11 @@ faqs:
 </ul>
 
 <p>The best outcomes come from establishing relationships with advisers who understand your long-term property investment goals and can provide strategic guidance over time.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/landlord-tax-essentials/accountant-tax-advice-property-investors">Professional Accountant Tax Advice for UK Property Investors</a></li>
+<li><a href="/blog/landlord-tax-essentials/accountant-financial-planning-property-investors">Accountant Financial Planning for UK Property Investors</a></li>
+<li><a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">Property Investment Tax UK: Complete Guide 2026</a></li>
+</ul>

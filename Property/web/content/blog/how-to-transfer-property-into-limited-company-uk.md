@@ -33,7 +33,7 @@ faqs:
 
 <h3>1. Direct Sale at Market Value</h3>
 
-<p>The simplest approach involves selling the property to your company at full market value. The company pays stamp duty on the purchase, while you may face capital gains tax on any profit since you bought the property.</p>
+<p>The simplest approach involves selling the property to your company at full market value. The company pays <a href="/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice">stamp duty</a> on the purchase, while you may face capital gains tax on any profit since you bought the property.</p>
 
 <p>This method provides a clean break but can be expensive due to stamp duty costs and potential CGT liability.</p>
 
@@ -157,3 +157,10 @@ faqs:
 <p>Before proceeding, get advice from specialists who understand both property taxation and company structures. They can model the long-term implications and ensure you choose the most tax-efficient approach.</p>
 
 <p>Consider using online <a href="/calculators">incorporation calculators</a> for initial assessments, but remember these can't replace detailed professional analysis of your specific situation.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/incorporate-rental-property-without-cgt">How to Incorporate Rental Property Without Triggering CGT</a></li>
+<li><a href="/blog/incorporation-and-company-structures/incorporation-cost-calculator-cgt-sdlt-implications">Incorporation Cost Calculator: Understanding CGT and SDLT Implications for UK Landlords</a></li>
+</ul>

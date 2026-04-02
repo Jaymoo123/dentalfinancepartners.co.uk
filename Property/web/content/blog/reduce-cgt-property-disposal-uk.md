@@ -29,7 +29,7 @@ faqs:
     answer: "Properties held in companies face Corporation Tax on gains rather than CGT. While rates may be different, companies offer more flexibility in timing disposals and potentially qualifying for Business Asset Disposal Relief on share sales. The optimal structure depends on your overall tax position and exit strategy."
 ---
 
-<p>When you dispose of a property in the UK, you'll typically face capital gains tax on any profit. For residential property, the rates are 18% for basic rate taxpayers and 24% for higher rate taxpayers. With property values having risen substantially over recent years, many landlords are looking at significant CGT bills.</p>
+<p>When you dispose of a property in the UK, you'll typically face <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax</a> on any profit. For residential property, the rates are 18% for basic rate taxpayers and 24% for higher rate taxpayers. With property values having risen substantially over recent years, many landlords are looking at significant CGT bills.</p>
 
 <p>The good news is there are legitimate ways to reduce CGT on property disposal in the UK. Some strategies require forward planning, while others can be applied when you're ready to sell.</p>
 
@@ -81,7 +81,7 @@ faqs:
 <p>Note that routine maintenance and repairs don't count, but genuine improvements do. Converting a loft or adding a conservatory would qualify, but repairing a roof wouldn't.</p>
 
 <h2>Principal Private Residence Relief</h2>
-<p>If you lived in the property as your main home at any point, you may qualify for Principal Private Residence (PPR) relief. This can eliminate CGT on periods when the property was your main residence, plus certain deemed periods of occupation.</p>
+<p>If you lived in the property as your main home at any point, you may qualify for <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">Principal Private Residence</a> (PPR) relief. This can eliminate CGT on periods when the property was your main residence, plus certain deemed periods of occupation.</p>
 
 <p>The final 9 months of ownership always qualify for PPR relief, regardless of whether you lived there. For properties owned before April 2014, you may also benefit from more generous lettings relief rules that applied to earlier disposals.</p>
 
@@ -153,3 +153,9 @@ faqs:
 <p>Documentation of any periods when the property was your main residence, or when you were unable to occupy it due to work requirements, supports PPR relief claims.</p>
 
 <p>With Making Tax Digital expanding, maintaining digital records becomes increasingly important for audit trails and compliance requirements.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/capital-gains-tax/cgt-property-transfer-spouse">CGT on Property Transfer to Spouse: Is It Exempt?</a></li>
+</ul>

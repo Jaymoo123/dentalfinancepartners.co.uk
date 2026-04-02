@@ -4,8 +4,8 @@ slug: "gp-tax-deductions-complete-list-2026"
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "GP Tax & Accounts"
-metaTitle: "GP Tax Deductions Complete List 2026 | Medical Accounts"
-metaDescription: "Complete guide to GP tax deductions for 2026. Learn what expenses you can claim as a GP partner, salaried GP, or locum doctor with real examples and rates."
+metaTitle: "GP Tax Deductions 2026/27: Full List of Allowable Claims"
+metaDescription: "GMC fees, indemnity, CPD, mileage, home office — GPs can claim thousands. Every allowable deduction for partners, salaried GPs, and locums in 2026/27."
 altText: "UK GP reviewing tax deduction paperwork and receipts for 2026 tax return"
 image: ""
 h1: "GP Tax Deductions Complete List 2026: What You Can and Cannot Claim"
@@ -86,7 +86,7 @@ faqs:
 <h3>Home Office Deductions</h3>
 
 <ul>
-<li><strong>Simplified method:</strong> £6 per week (£312 annually) for occasional use</li>
+<li><strong>Simplified method:</strong> £6 per week (£312 annually) for occasional use (see our detailed [home office expenses guide](/blog/gp-home-office-expenses-tax-relief))</li>
 <li><strong>Actual costs method:</strong> Proportion of utilities, council tax, insurance</li>
 <li><strong>Equipment purchases:</strong> Computers, printers, medical equipment</li>
 <li><strong>Internet and phone:</strong> Business proportion of costs</li>
@@ -177,6 +177,11 @@ faqs:
 
 <p>Tax rules for medical professionals are complex and change regularly. Consider seeking advice from accountants who specialize in medical practices.</p>
 
-<p>Professional advice becomes particularly valuable for GP partners managing partnership taxation, or when dealing with mixed NHS and private practice income.</p>
+<p>Professional advice becomes particularly valuable for GP partners managing [partnership taxation](/blog/gp-partnership-tax-complete-guide), or when dealing with mixed NHS and private practice income.</p>
 
 <p>The investment in professional <a href="/services">accounting services</a> often pays for itself through optimized tax planning and ensuring you claim all allowable deductions correctly.</p>
+
+<h2>Related Reading</h2>
+
+- [Medical Professional Expenses: What Is Claimable](/blog/medical-professional-expenses-what-is-claimable)
+- [GP Tax Return: Complete Guide](/blog/gp-tax-return)

@@ -33,7 +33,7 @@ faqs:
 
 <p>Deciding when to hire a property accountant is one of the most important financial decisions UK landlords make. Get it right, and professional expertise can save you thousands while ensuring compliance. Get it wrong, and you might overpay for services you don't need yet — or worse, face penalties for mistakes you could have avoided.</p>
 
-<p>The question isn't whether property accountants add value (they do), but whether that value justifies the cost at your current stage. Here's how to make that call.</p>
+<p>The question isn't whether property accountants add value (they do), but whether that value justifies the <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">cost</a> at your current stage. Here's how to make that call.</p>
 
 <h2>Portfolio Size: The £50k Rental Income Threshold</h2>
 
@@ -323,3 +323,10 @@ faqs:
 <p>A typical property accountant might charge £2,000-£4,000 annually for a moderate portfolio, but good ones save clients multiples of their fees through proper tax planning and avoiding costly errors.</p>
 
 <p>Why do we need accountants in property investment? Because in an increasingly complex regulatory environment, professional expertise isn't a luxury — it's essential for sustainable, profitable property investment.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">How to Choose a Property Accountant: Complete Guide for UK Landlords</a></li>
+<li><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">What Does a Property Accountant Do? Essential Services for UK Landlords</a></li>
+</ul>

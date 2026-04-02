@@ -35,7 +35,7 @@ faqs:
 
 <p>Many higher-rate taxpayers are exploring <a href="/incorporation">incorporation</a> as a way to avoid Section 24 entirely. Companies aren't subject to the restriction and can still claim full mortgage interest relief.</p>
 
-<p>However, incorporation brings corporation tax, dividend taxes, and additional compliance costs. It works best for landlords planning significant expansion or those with substantial mortgage interest relative to rental profits.</p>
+<p>However, <a href="/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax">incorporation</a> brings corporation tax, dividend taxes, and additional compliance costs. It works best for landlords planning significant expansion or those with substantial mortgage interest relative to rental profits.</p>
 
 <h3>Portfolio Restructuring</h3>
 
@@ -106,3 +106,10 @@ faqs:
 <p>Most higher-rate taxpayers benefit from specialist advice to model different approaches and understand the long-term implications of various strategies. Our <a href="/services">services</a> include detailed Section 24 analysis and restructuring advice tailored to your specific situation.</p>
 
 <p>The rules are here to stay, but with proper planning, higher-rate taxpayers can still build profitable property portfolios despite Section 24's restrictions.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 Tax Relief for Landlords: Complete Guide</a></li>
+<li><a href="/blog/section-24-and-tax-relief/section-24-pension-contributions-tax-planning">Section 24 and Pension Contributions: Tax Planning Strategies for Landlords</a></li>
+</ul>

@@ -5,8 +5,8 @@ canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-home-office-expenses-
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "GP Tax & Accounts"
-metaTitle: "GP Home Office Expenses Tax Relief - Complete UK Guide 2026"
-metaDescription: "Complete guide to claiming GP home office expenses tax relief. Learn what you can claim, how to calculate costs, and maximise your tax savings as a UK medical professional."
+metaTitle: "GP Home Office Tax Relief 2026/27 | What You Can Claim"
+metaDescription: "GPs can claim £6/week flat rate or actual proportional costs for home working. Eligible expenses, calculation methods, and how to maximise your relief."
 altText: "UK GP working from home office with medical documents and computer showing tax relief calculations"
 image: ""
 h1: "GP Home Office Expenses Tax Relief: Complete Guide for Medical Professionals"
@@ -86,7 +86,7 @@ faqs:
 
 <p><strong>Salaried GPs and consultants:</strong> Claim as employment expenses on your Self Assessment, provided your employer doesn't reimburse these costs.</p>
 
-<p><strong>Locum doctors:</strong> Include in your business expenses if operating as a sole trader, or claim against employment income if working under IR35.</p>
+<p><strong>Locum doctors:</strong> Include in your [business expenses](/blog/locum-doctor-expenses-what-you-can-claim) if operating as a sole trader, or claim against employment income if working under IR35.</p>
 
 <h2>Record Keeping Requirements</h2>
 
@@ -115,5 +115,10 @@ faqs:
 <h2>Getting Professional Advice</h2>
 
 <p>Home office tax relief can become complex, especially for GP partners with practice premises or consultants with mixed NHS and private work. The interaction with <a href="/nhs-pension">NHS pension planning</a> and other medical expenses can affect your overall tax strategy.</p>
+
+<h2>Related Reading</h2>
+
+- [GP Tax Deductions Complete List 2026](/blog/gp-tax-deductions-complete-list-2026)
+- [Medical Professional Expenses: What Is Claimable](/blog/medical-professional-expenses-what-is-claimable)
 
 <p>If you're unsure about your eligibility or want to maximize your relief, speak to a specialist medical accountant who understands the unique aspects of GP and consultant taxation.</p>

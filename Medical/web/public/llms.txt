@@ -1,0 +1,22 @@
+# Medical Accountants UK
+
+> Specialist UK accountants for GPs, medical professionals, and NHS practices.
+
+## About
+Medical Accountants UK provides specialist accounting, tax planning, and NHS pension advisory services for UK medical professionals. We cover GP tax and accounts, NHS pension planning, locum tax, private practice tax, medical expenses, and incorporation strategies.
+
+## Key Pages
+- Homepage: https://www.medicalaccountantsuk.co.uk/
+- Services: https://www.medicalaccountantsuk.co.uk/services
+- About: https://www.medicalaccountantsuk.co.uk/about
+- Blog: https://www.medicalaccountantsuk.co.uk/blog
+- Contact: https://www.medicalaccountantsuk.co.uk/contact
+- Locations: https://www.medicalaccountantsuk.co.uk/locations
+- NHS Pension: https://www.medicalaccountantsuk.co.uk/nhs-pension
+- Calculators: https://www.medicalaccountantsuk.co.uk/calculators
+
+## Blog Topics
+GP tax, self-assessment, partnership accounting, NHS pension annual allowance, locum doctor tax, private practice tax, medical expenses and deductions, practice incorporation, consultant tax planning.
+
+## Sitemap
+https://www.medicalaccountantsuk.co.uk/sitemap.xml

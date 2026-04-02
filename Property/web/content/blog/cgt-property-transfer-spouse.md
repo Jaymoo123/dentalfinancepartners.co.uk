@@ -25,7 +25,7 @@ faqs:
 
 <h2>The General Rule: No Gain No Loss</h2>
 
-<p>Under normal circumstances, <strong>cgt property transfer spouse</strong> transactions are exempt from Capital Gains Tax. This is known as the 'no gain no loss' rule, found in Section 58 of the Taxation of Chargeable Gains Act 1992.</p>
+<p>Under normal circumstances, <strong>cgt property transfer spouse</strong> transactions are exempt from <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital Gains Tax</a>. This is known as the 'no gain no loss' rule, found in Section 58 of the Taxation of Chargeable Gains Act 1992.</p>
 
 <p>When you transfer a property to your spouse or civil partner, HMRC treats the disposal as taking place at no gain and no loss. This means:</p>
 
@@ -72,7 +72,7 @@ faqs:
 
 <p>Remember that transferring rental properties also shifts the rental income. This could help balance income tax burdens, particularly relevant given Section 24 mortgage interest restrictions.</p>
 
-<p>A landlord in the higher rate tax band might transfer properties to a spouse in the basic rate band to reduce overall income tax, while maintaining the family's property portfolio.</p>
+<p>A landlord in the higher rate tax band might transfer properties to a spouse in the basic rate band to <a href="/blog/capital-gains-tax/reduce-cgt-property-disposal-uk">reduce</a> overall income tax, while maintaining the family's property portfolio.</p>
 
 <h2>Documentation and Compliance</h2>
 
@@ -148,3 +148,9 @@ faqs:
 <p>While focusing on CGT exemption, don't overlook how rental income redistribution affects your overall tax position, particularly with Section 24 restrictions.</p>
 
 <p>Planning property transfers between spouses requires careful consideration of both current exemptions and future tax implications. While the rules generally favor such transfers, understanding the exceptions and planning opportunities ensures you make the most of these arrangements within your property investment strategy.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">Principal Private Residence Relief for Landlords: Complete UK Guide</a></li>
+</ul>

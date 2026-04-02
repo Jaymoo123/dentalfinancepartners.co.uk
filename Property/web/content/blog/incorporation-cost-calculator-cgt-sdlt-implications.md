@@ -23,7 +23,7 @@ faqs:
     answer: "For portfolios under £300,000 or landlords with minimal rental profits, incorporation costs often exceed medium-term tax savings. The higher the proportion of debt financing and the lower the capital gains, the less attractive incorporation typically becomes."
 ---
 
-<p>Transferring your property portfolio to a limited company isn't just about ongoing tax benefits. The upfront costs—particularly Capital Gains Tax (CGT) and Stamp Duty Land Tax (SDLT)—can be substantial and often catch landlords off guard.</p>
+<p>Transferring your property portfolio to a limited company isn't just about ongoing tax benefits. The upfront costs—particularly <a href="/blog/capital-gains-tax/cgt-property-transfer-limited-company-calculate">Capital Gains</a> Tax (CGT) and <a href="/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice">Stamp Duty</a> Land Tax (SDLT)—can be substantial and often catch landlords off guard.</p>
 
 <p>An incorporation cost calculator helps you model these expenses before making the switch. Without proper calculation, you might find the transition costs outweigh the long-term benefits, especially for smaller portfolios.</p>
 
@@ -149,3 +149,9 @@ faqs:
 <p>The key is running accurate calculations based on your specific circumstances rather than general rules of thumb. Property portfolios, tax positions, and investment strategies vary significantly between landlords.</p>
 
 <p>Given the complexity and high stakes involved, we typically recommend professional modeling before making incorporation decisions. The upfront investment in quality advice often saves multiples of the cost through optimized structures and timing.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk">How to Transfer Property Into a Limited Company UK: Complete Guide for Landlords</a></li>
+</ul>

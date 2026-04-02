@@ -1,0 +1,25 @@
+# Property Tax Partners
+
+> Specialist UK property tax accountants for landlords and property investors.
+
+## About
+Property Tax Partners provides specialist accounting, tax planning, and compliance services for UK landlords and property investors. We cover Section 24 tax relief, incorporation strategies, capital gains tax, Making Tax Digital, and portfolio management.
+
+## Key Pages
+- Homepage: https://www.propertytaxpartners.co.uk/
+- Services: https://www.propertytaxpartners.co.uk/services
+- About: https://www.propertytaxpartners.co.uk/about
+- Blog: https://www.propertytaxpartners.co.uk/blog
+- Contact: https://www.propertytaxpartners.co.uk/contact
+- Locations: https://www.propertytaxpartners.co.uk/locations
+
+## Blog Categories
+- Section 24 & Tax Relief: /blog/section-24-and-tax-relief
+- Incorporation & Company Structures: /blog/incorporation-and-company-structures
+- Making Tax Digital (MTD): /blog/making-tax-digital-mtd
+- Capital Gains Tax: /blog/capital-gains-tax
+- Property Accountant Services: /blog/property-accountant-services
+- Landlord Tax Essentials: /blog/landlord-tax-essentials
+
+## Sitemap
+https://www.propertytaxpartners.co.uk/sitemap.xml

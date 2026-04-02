@@ -23,7 +23,7 @@ faqs:
     answer: "A phased approach often works best, particularly when dealing with mortgage restrictions. Start with properties that have flexible financing or are coming up for remortgage. This allows you to capture tax benefits immediately while managing practical challenges and costs over time."
 ---
 
-<p>Understanding whether to incorporate your property portfolio requires more than theoretical calculations. This case study examines a real 5-property portfolio to demonstrate the practical considerations and tax implications of <a href="/incorporation">incorporation</a>.</p>
+<p>Understanding whether to incorporate your property portfolio requires more than theoretical <a href="/blog/incorporation-and-company-structures/incorporation-cost-calculator-cgt-sdlt-implications">calculations</a>. This case study examines a real 5-property portfolio to demonstrate the practical considerations and tax implications of <a href="/incorporation">incorporation</a>.</p>
 
 <h2>The Portfolio Profile</h2>
 
@@ -38,7 +38,7 @@ faqs:
 <li>Combined property equity: £450,000</li>
 </ul>
 
-<p>Sarah's properties were purchased between 2018-2022, meaning she faces the full impact of Section 24 mortgage interest restrictions from the 2020/21 tax year onwards.</p>
+<p>Sarah's properties were purchased between 2018-2022, meaning she faces the full impact of <a href="/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax">Section 24</a> mortgage interest restrictions from the 2020/21 tax year onwards.</p>
 
 <h2>Current Tax Position (Personal Ownership)</h2>
 
@@ -172,3 +172,9 @@ faqs:
 </ul>
 
 <p>For landlords with similar portfolios, professional analysis using <a href="/calculators">incorporation calculators</a> and specialist advice remains essential before making structuring decisions.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio">Incorporation Timing: When is the Right Time to Incorporate Your Property Portfolio?</a></li>
+</ul>

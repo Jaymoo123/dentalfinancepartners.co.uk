@@ -4,8 +4,8 @@ slug: "locum-doctor-self-assessment-filing-guide"
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "Locum Tax"
-metaTitle: "Locum Doctor Self Assessment Filing Guide | Medical Accounts"
-metaDescription: "Complete locum doctor self assessment filing guide. Step-by-step process for UK locum GPs and consultants. Deadlines, forms, and common mistakes to avoid."
+metaTitle: "Locum Doctor Self Assessment 2026/27 | Filing Guide"
+metaDescription: "Missing the 31 January deadline triggers automatic penalties. Step-by-step self assessment filing for UK locum GPs and consultants in 2026/27."
 altText: "UK locum doctor reviewing self assessment tax forms and documents on desk"
 image: ""
 h1: "Locum Doctor Self Assessment Filing Guide: Complete Step-by-Step Process"
@@ -108,7 +108,7 @@ faqs:
 <p>Locum doctors can claim legitimate business expenses against their self-employed income:</p>
 
 <ul>
-<li><strong>Professional fees:</strong> GMC, royal college, indemnity insurance</li>
+<li><strong>Professional fees:</strong> GMC, royal college, indemnity insurance (see our full [locum doctor expenses guide](/blog/locum-doctor-expenses-what-you-can-claim))</li>
 <li><strong>Travel:</strong> Between different work locations (not home to regular workplace)</li>
 <li><strong>Training:</strong> CPD, courses, conferences directly related to work</li>
 <li><strong>Equipment:</strong> Stethoscopes, medical bags, professional clothing</li>
@@ -139,7 +139,7 @@ faqs:
 
 <h2>IR35 Considerations for Locum Doctors</h2>
 
-<p>IR35 rules determine whether your locum work is treated as employment or genuine self-employment for tax purposes. This affects both your tax liability and how you complete your return.</p>
+<p>[IR35 rules](/blog/locum-doctor-ir35-what-you-need-to-know) determine whether your locum work is treated as employment or genuine self-employment for tax purposes. This affects both your tax liability and how you complete your return.</p>
 
 <p>If caught by IR35, you cannot claim business expenses and must treat the income as employment income, even though you're technically self-employed. The end client (practice or trust) should make this determination, but you remain responsible for correct reporting.</p>
 
@@ -182,5 +182,10 @@ faqs:
 <p>Once submitted, HMRC will send a calculation showing any tax due. Pay this by 31 January to avoid interest and penalties. Keep a copy of your return and payment confirmation.</p>
 
 <p>HMRC may open an enquiry into your return within 12 months of submission. This doesn't necessarily indicate problems, but good record keeping makes the process straightforward if selected.</p>
+
+<h2>Related Reading</h2>
+
+- [Locum Doctor Tax Complete Guide](/blog/locum-doctor-tax-complete-guide)
+- [Locum Doctor IR35: What You Need to Know](/blog/locum-doctor-ir35-what-you-need-to-know)
 
 <p>Start preparing for next year's return immediately by setting up proper record-keeping systems and saving appropriate amounts for your tax liability.</p>

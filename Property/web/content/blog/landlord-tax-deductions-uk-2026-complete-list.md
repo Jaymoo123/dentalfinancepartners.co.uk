@@ -36,7 +36,7 @@ faqs:
 <li>Gas and electricity bills (if landlord pays)</li>
 <li>Water rates and sewerage charges</li>
 <li>Council tax (when property is vacant or landlord liable)</li>
-<li>Building and contents insurance premiums</li>
+<li>Building and contents <a href="/blog/section-24-and-tax-relief/landlord-insurance-tax-deductible">insurance</a> premiums</li>
 <li>Ground rent and service charges</li>
 </ul>
 
@@ -220,3 +220,10 @@ faqs:
 <p>Tax rules for landlords are complex and frequently changing. Professional advice ensures you maximise legitimate deductions while staying compliant with HMRC requirements.</p>
 
 <p>Our <a href="/services">specialist property tax services</a> help landlords optimise their tax position and prepare for MTD compliance. <a href="/contact">Contact us</a> for guidance on your specific situation.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/section-24-and-tax-relief/landlord-capital-allowances-tax-relief">Landlord Capital Allowances: A Complete Guide to Tax Relief</a></li>
+<li><a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">Rental Income Tax UK: Complete Guide for Landlords 2025</a></li>
+</ul>

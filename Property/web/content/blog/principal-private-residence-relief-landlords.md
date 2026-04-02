@@ -21,7 +21,7 @@ faqs:
     answer: "If you rent out part of your main residence while continuing to live there, the property can still qualify for principal private residence relief. The rental income part may be subject to capital gains tax on disposal, but this is often covered by letting relief (up to £40,000). Renting out a room under the rent-a-room scheme typically doesn't affect PPR relief for the whole property."
 ---
 
-<p>Principal private residence relief is one of the most valuable capital gains tax reliefs available to UK property investors. If you've ever lived in a property that you later rent out, this relief could save you thousands in CGT when you sell.</p>
+<p>Principal private residence relief is one of the most valuable <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax</a> reliefs available to UK property investors. If you've ever lived in a property that you later rent out, this relief could save you thousands in CGT when you sell.</p>
 
 <p>The relief works by exempting periods when the property was your main home from capital gains tax. However, the rules are complex and landlords often miss opportunities to maximise their relief.</p>
 
@@ -174,3 +174,10 @@ faqs:
 </ul>
 
 <p>Getting the calculation wrong can be expensive. Professional advice often pays for itself through optimised relief claims and proper planning for future disposals.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/capital-gains-tax/reduce-cgt-property-disposal-uk">How to Reduce CGT on Property Disposal in the UK: A Practical Guide for Landlords</a></li>
+<li><a href="/blog/capital-gains-tax/cgt-property-transfer-spouse">CGT on Property Transfer to Spouse: Is It Exempt?</a></li>
+</ul>

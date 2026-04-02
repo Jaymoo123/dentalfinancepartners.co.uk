@@ -122,3 +122,11 @@ faqs:
 <p>A specialist property accountant can model different incorporation scenarios, ensuring you understand both immediate and long-term implications. They can also help structure the transfer to maximize available reliefs while maintaining compliance with all requirements.</p>
 
 <p>The cost of getting this wrong – through missed deadlines, invalid elections, or unexpected tax charges – far exceeds the cost of proper professional guidance from the outset.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/incorporate-rental-property-without-cgt">How to Incorporate Rental Property Without Triggering CGT</a></li>
+<li><a href="/blog/capital-gains-tax/cgt-property-transfer-limited-company-calculate">CGT on Property Transfer to Limited Company: How to Calculate</a></li>
+<li><a href="/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk">How to Transfer Property Into a Limited Company UK: Complete Guide for Landlords</a></li>
+</ul>

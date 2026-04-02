@@ -46,7 +46,7 @@ faqs:
 
 <h3>Capital Gains Tax Planning</h3>
 
-<p>Each property transfer triggers a disposal for CGT purposes. The key is timing transfers to optimise your position:</p>
+<p>Each property transfer triggers a disposal for CGT purposes. The key is <a href="/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio">timing</a> transfers to optimise your position:</p>
 
 <p>Consider a landlord with four properties, each showing £40,000 gains. Rather than a £160,000 total gain in one year, they could transfer one property annually, using their CGT allowance and potentially staying in lower tax bands.</p>
 
@@ -110,3 +110,10 @@ faqs:
 <p>Phased incorporation involves complex tax planning across multiple years. Each property transfer requires legal work, potential refinancing, and careful tax calculations.</p>
 
 <p>Working with specialists who understand both property tax and company structures ensures you optimise each phase while maintaining compliance. The transition period is when mistakes can be costly, making professional support particularly valuable.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/landlord-incorporation-step-by-step-guide-uk">Landlord Incorporation: Step-by-Step Guide UK</a></li>
+<li><a href="/blog/incorporation-and-company-structures/incorporation-cost-calculator-cgt-sdlt-implications">Incorporation Cost Calculator: Understanding CGT and SDLT Implications for UK Landlords</a></li>
+</ul>

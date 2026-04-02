@@ -90,7 +90,7 @@ faqs:
 
 <h2>Section 24 Impact on HMO Portfolios</h2>
 
-<p>The mortgage interest restriction affects HMO landlords just like other property investors. However, the higher rental yields common with HMOs can make the Section 24 impact more severe.</p>
+<p>The mortgage interest restriction affects HMO landlords just like other property investors. However, the higher <a href="/blog/landlord-tax-essentials/rental-yield-calculator-guide-uk-landlords">rental yields</a> common with HMOs can make the Section 24 impact more severe.</p>
 
 <p>Consider an HMO generating £3,000 monthly rent with a £2,000 monthly mortgage payment. Under Section 24, only 20% of that £24,000 annual mortgage interest gets basic rate tax relief, potentially creating significant tax bills even when cash flow is modest.</p>
 
@@ -140,3 +140,10 @@ faqs:
 <p>Specialist property accountants understand the nuances of <strong>multi-tenant property tax</strong> and can establish systems that work efficiently as portfolios grow. They can also advise on optimal expense allocation methods and ensure MTD compliance.</p>
 
 <p>For landlords considering portfolio expansion or facing complex tax situations, professional guidance helps avoid costly mistakes and optimises long-term tax efficiency.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">Landlord Tax Deductions UK 2026: Complete List</a></li>
+<li><a href="/blog/landlord-tax-essentials/landlord-tax-return-complete-guide-2026">Landlord Tax Return: Complete Guide 2026</a></li>
+</ul>

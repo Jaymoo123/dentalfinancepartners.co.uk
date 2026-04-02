@@ -5,7 +5,7 @@ canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/nhs
 date: "2026-02-18"
 author: "Dental Finance Partners"
 category: "Practice accounting"
-metaTitle: "NHS & private mix: dental accounts that actually help decisions"
+metaTitle: "NHS & Private Mix: Dental Accounts That Help Decisions"
 metaDescription: "How UK dental practices can structure management accounts when NHS UDAs and private fee-per-item sit side by side — for better tax and commercial clarity."
 altText: "Chart comparing NHS and private income streams"
 image: ""

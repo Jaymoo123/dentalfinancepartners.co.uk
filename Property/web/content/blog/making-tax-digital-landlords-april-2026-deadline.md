@@ -47,7 +47,7 @@ faqs:
 </ul>
 
 <h2>Who Must Follow Making Tax Digital Landlords Rules?</h2>
-<p>MTD applies to all UK landlords and property investors earning over £10,000 gross annual rental income. This threshold includes:</p>
+<p>MTD applies to all UK landlords and property investors earning over £10,000 gross annual rental income. This <a href="/blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions">threshold</a> includes:</p>
 
 <ul>
 <li>Individual landlords with BTL properties</li>
@@ -62,7 +62,7 @@ faqs:
 
 <h2>Digital Record Keeping Requirements</h2>
 
-<p>From April 2026, you must maintain digital records of all property-related income and expenses. Paper records and basic spreadsheets won't meet HMRC's requirements — you need MTD-compatible software.</p>
+<p>From April 2026, you must maintain digital records of all property-related income and expenses. Paper records and basic spreadsheets won't meet HMRC's requirements — you need MTD-compatible <a href="/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026">software</a>.</p>
 
 <p>Your digital records must capture:</p>
 
@@ -256,3 +256,9 @@ faqs:
 <p>The April 2026 deadline will arrive faster than expected. Landlords who prepare early will find the transition smoother and less disruptive to their property business operations.</p>
 
 <p>For specific guidance on how MTD affects your particular circumstances, speak with a specialist who understands both property taxation and the technical requirements of the new system.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/making-tax-digital-mtd/landlord-tax-return-deadline-2026">Landlord Tax Return Deadline 2026: Key Dates & Tax Band Changes</a></li>
+</ul>

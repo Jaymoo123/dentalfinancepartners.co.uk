@@ -23,7 +23,7 @@ faqs:
     answer: "Incorporation can offer tax advantages through lower corporation tax rates (19-25%) compared to income tax rates (20-45%), plus flexibility in profit extraction timing. However, it adds compliance costs and complexity, so the decision depends on profit levels and personal circumstances."
 ---
 
-<p>Residential property developer tax UK rules differ significantly from those applying to buy-to-let landlords. If you buy, develop, and sell properties as a trade, you'll face income tax on profits rather than capital gains tax. This distinction can dramatically impact your tax bill.</p>
+<p>Residential property developer tax UK rules differ significantly from those applying to buy-to-let landlords. If you buy, develop, and sell properties as a trade, you'll face income tax on profits rather than <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax</a>. This distinction can dramatically impact your tax bill.</p>
 
 <p>The key difference lies in how HMRC views your property activities. Developers are considered to be trading, while landlords typically hold property as investments. Getting this wrong can result in unexpected tax liabilities and missed planning opportunities.</p>
 
@@ -44,7 +44,7 @@ faqs:
 
 <h2>Incorporation for Property Developers</h2>
 
-<p>Many residential property developers consider <a href="/incorporation">incorporation</a> to reduce their tax burden. A limited company structure can offer several advantages:</p>
+<p>Many residential property developers consider <a href="/incorporation">incorporation</a> to reduce their tax burden. A limited <a href="/blog/incorporation-and-company-structures/property-investment-company-structure-planning">company structure</a> can offer several advantages:</p>
 
 <ul>
 <li><strong>Corporation tax rates:</strong> 19% on profits up to £50k, 25% above £250k</li>
@@ -104,3 +104,9 @@ faqs:
 <p>Consider speaking to a property tax specialist if you're developing multiple properties annually or dealing with projects worth over £100k. The potential tax savings often exceed advisory fees.</p>
 
 <p>For complex situations involving multiple developments or <a href="/incorporation">incorporation decisions</a>, early professional input can save significant tax and avoid compliance issues.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/accountant-corporation-tax-property-companies">Corporation Tax Accountants for UK Property Companies</a></li>
+</ul>

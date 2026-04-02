@@ -4,8 +4,8 @@ slug: "locum-doctor-umbrella-company-2026-reforms"
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "Locum Tax"
-metaTitle: "Locum Doctor Umbrella Company 2026 Reforms | Medical Accounts"
-metaDescription: "Essential guide to 2026 umbrella company reforms for locum doctors. IR35, compliance changes, and tax implications explained by specialist medical accountants."
+metaTitle: "Locum Umbrella Company Reforms 2026 | What's Changing"
+metaDescription: "From April 2026, umbrella companies need government licences. How the new rules affect locum doctor pay, IR35, and your working arrangements."
 altText: "Professional medical documents and calculator showing locum doctor umbrella company tax calculations and compliance requirements"
 image: ""
 h1: "Locum Doctor Umbrella Company 2026 Reforms: What You Need to Know"
@@ -57,7 +57,7 @@ faqs:
 
 <h2>IR35 Implications</h2>
 
-<p>The <strong>locum doctor umbrella company 2026 reforms</strong> will strengthen IR35 compliance monitoring. Umbrella companies must verify that engagements genuinely fall outside IR35 before allowing contractors to work through their structure.</p>
+<p>The <strong>locum doctor umbrella company 2026 reforms</strong> will strengthen [IR35 compliance](/blog/locum-doctor-ir35-what-you-need-to-know) monitoring. Umbrella companies must verify that engagements genuinely fall outside IR35 before allowing contractors to work through their structure.</p>
 
 <p>Most locum doctor positions in the NHS are likely to be caught by IR35 due to the level of control and integration with the hiring organisation. Working through a compliant umbrella company remains a viable option for IR35-caught contracts.</p>
 
@@ -81,7 +81,7 @@ faqs:
 
 <h3>Understand Your Alternatives</h3>
 
-<p>The reforms may make other working arrangements more attractive. Direct engagement with trusts (where IR35 allows), setting up your own limited company, or moving to substantive NHS positions could be worth exploring.</p>
+<p>The reforms may make other working arrangements more attractive. Direct engagement with trusts (where IR35 allows), setting up your own [limited company](/blog/locum-doctor-limited-company-pros-and-cons), or moving to substantive NHS positions could be worth exploring.</p>
 
 <p>Each option has different tax implications and administrative requirements. Speaking to a specialist medical accountant can help you evaluate the best approach for your situation.</p>
 
@@ -104,5 +104,10 @@ faqs:
 <p>These reforms are complex and their full implications won't be clear until detailed regulations are published. The tax and legal landscape for locum doctors is becoming increasingly sophisticated.</p>
 
 <p>Working with accountants who understand medical careers and the latest regulatory changes is more important than ever. Our specialist team at <a href="/services">Medical Accounts</a> can help you navigate these changes and optimise your working arrangements.</p>
+
+<h2>Related Reading</h2>
+
+- [Locum Doctor Tax Complete Guide](/blog/locum-doctor-tax-complete-guide)
+- [Locum Doctor Expenses: What You Can Claim](/blog/locum-doctor-expenses-what-you-can-claim)
 
 <p>Don't wait until 2026 to plan. The best opportunities and compliant arrangements will be available to those who prepare early.</p>

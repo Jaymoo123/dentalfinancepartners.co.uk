@@ -6,7 +6,7 @@ date: "2026-04-01"
 author: "Medical Accounts"
 category: "GP Practice Management"
 metaTitle: "GP Payroll Services | Medical Practice Payroll Solutions UK"
-metaDescription: "Expert GP payroll services for medical practices. PAYE compliance, pension auto-enrolment, RTI submissions. Specialist medical accountants handling complex payroll."
+metaDescription: "GP practices face unique payroll needs — NHS pensions, mixed contracts, and RTI compliance. PAYE, auto-enrolment, and medical-sector requirements covered."
 altText: "Medical practice team reviewing payroll documents and employee records"
 image: ""
 h1: "GP Payroll Services: Complete Guide for Medical Practices"
@@ -44,7 +44,7 @@ faqs:
 <li>Year-end reporting and P11D benefit reporting</li>
 </ul>
 
-<p>Specialist providers understand the complexities of medical practice employment. They handle varying contract types, from full-time salaried GPs to part-time practice nurses and administrative staff.</p>
+<p>Specialist providers understand the complexities of medical practice employment. They handle varying contract types, from full-time salaried GPs to part-time practice nurses and administrative staff. For broader practice financial management, see our [GP accounting guide](/blog/gp-accounting-guide).</p>
 
 <h2>NHS Pension Scheme Integration</h2>
 
@@ -187,6 +187,11 @@ faqs:
 <p>Switching to professional payroll services requires careful planning to ensure continuity. Specialist providers typically offer migration support, transferring historical data and ensuring smooth transition without disrupting staff payments.</p>
 
 <p>Ongoing support should include dedicated account management, regular compliance updates affecting medical practices, and accessibility for urgent queries during payroll processing periods.</p>
+
+<h2>Related Reading</h2>
+
+- [GP Bookkeeping: Essential Guide](/blog/gp-bookkeeping-guide-uk)
+- [GP Accounting Software Guide](/blog/gp-accounting-software)
 
 <p>The best medical payroll services integrate with your practice's broader financial management, providing insights that support strategic decision-making for partners and practice development.</p>
 

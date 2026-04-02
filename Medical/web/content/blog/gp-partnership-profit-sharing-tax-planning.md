@@ -5,8 +5,8 @@ canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-partnership-profit-sh
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "GP Practice Management"
-metaTitle: "GP Partnership Profit Sharing Tax Planning | Medical Accounts"
-metaDescription: "Expert tax planning strategies for GP partnerships. Optimize profit allocation, minimize tax liability, and navigate NHS pension implications in 2026/26."
+metaTitle: "GP Partnership Profit Sharing Tax Planning 2026/27"
+metaDescription: "Profit allocation decisions directly affect each partner's tax bill and NHS pension. Strategies to optimise your GP partnership for 2026/27."
 altText: "GP partners reviewing profit sharing tax planning documents with calculator and financial charts"
 image: ""
 h1: "GP Partnership Profit Sharing Tax Planning: Essential Strategies for 2026/26"
@@ -76,7 +76,7 @@ faqs:
 
 <p>GP partnership profit sharing tax planning must consider NHS pension implications. Higher profits increase NHS pension growth, which can trigger annual allowance charges for high-earning partners.</p>
 
-<p>Partners affected by the tapered annual allowance (threshold income above £200,000) need particularly careful planning. The <a href="/nhs-pension">NHS pension annual allowance</a> can create significant tax charges if not managed properly.</p>
+<p>Partners affected by the [tapered annual allowance](/blog/nhs-pension-tapered-annual-allowance-calculator) (threshold income above £200,000) need particularly careful planning. The [NHS pension annual allowance](/blog/nhs-pension-annual-allowance-complete-guide) can create significant tax charges if not managed properly.</p>
 
 <h2>Common Planning Strategies</h2>
 
@@ -151,6 +151,11 @@ faqs:
 <li>Variations in practice income and patient numbers</li>
 <li>New service developments or contract changes</li>
 </ul>
+
+<h2>Related Reading</h2>
+
+- [GP Partnership Tax: Complete Guide](/blog/gp-partnership-tax-complete-guide)
+- [Becoming a GP Partner: Financial Implications](/blog/becoming-gp-partner-financial-implications)
 
 <p>Regular reviews ensure that profit sharing arrangements remain optimal and compliant. What works today may not be appropriate in future years as circumstances change.</p>
 

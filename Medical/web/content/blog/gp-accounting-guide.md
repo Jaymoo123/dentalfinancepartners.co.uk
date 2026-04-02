@@ -5,7 +5,7 @@ date: "2026-04-01"
 author: "Medical Accounts"
 category: "GP Practice Management"
 metaTitle: "GP Accounting Guide | Medical Practice Tax & Finance"
-metaDescription: "Complete GP accounting guide covering partnership accounts, tax obligations, profit allocation, and NHS pension impacts for UK general practitioners."
+metaDescription: "GP partnerships need specialist accounting — profit allocation, tax obligations, and NHS pension implications differ from standard businesses."
 altText: "UK GP reviewing financial documents and accounting records at medical practice"
 image: ""
 h1: "GP Accounting: Complete Guide for UK General Practitioners"
@@ -71,7 +71,7 @@ faqs:
 <p>The basis period reform from April 2024 means profits are now taxed on a current year basis, ending the previous overlap relief system. This particularly affects new partners and those leaving partnerships.</p>
 
 <h3>Allowable GP Expenses</h3>
-<p>GP accounting must correctly identify allowable expenses to minimise tax liability:</p>
+<p>GP accounting must correctly identify [allowable expenses](/blog/gp-tax-deductions-complete-list-2026) to minimise tax liability:</p>
 
 <ul>
 <li>GMC registration and professional indemnity (MDU/MPS fees)</li>
@@ -123,7 +123,7 @@ faqs:
 <li>Partnership agreements and profit sharing arrangements</li>
 </ul>
 
-<p>Digital record keeping is increasingly common, with cloud-based systems allowing real-time access to financial data.</p>
+<p>Digital record keeping is increasingly common, with [cloud-based accounting systems](/blog/gp-accounting-software) allowing real-time access to financial data.</p>
 
 <h2>Choosing Professional GP Accounting Support</h2>
 
@@ -151,5 +151,10 @@ faqs:
 </ul>
 
 <p>Annual financial planning sessions with your accountant can identify opportunities and risks before they become problems.</p>
+
+<h2>Related Reading</h2>
+
+- [GP Partnership Tax: Complete Guide](/blog/gp-partnership-tax-complete-guide)
+- [GP Bookkeeping: Essential Guide](/blog/gp-bookkeeping-guide-uk)
 
 <p>If you need specialist GP accounting support, our team understands the unique challenges facing UK general practitioners. Contact us to discuss how we can help optimise your practice finances and tax position.</p>

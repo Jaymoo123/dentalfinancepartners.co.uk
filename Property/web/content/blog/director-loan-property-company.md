@@ -60,7 +60,7 @@ faqs:
 <ul>
 <li>Initial property purchase funded from personal resources</li>
 <li>Personal guarantees called in by lenders</li>
-<li>Building up credit through salary/dividend payments deferred</li>
+<li>Building up credit through <a href="/blog/incorporation-and-company-structures/property-company-profit-extraction-salary-vs-dividends">salary/dividend</a> payments deferred</li>
 </ul>
 
 <h2>Director Loan Account Property Rules and Compliance</h2>
@@ -128,7 +128,7 @@ faqs:
 
 <h2>When to Seek Professional Help</h2>
 
-<p>Director loan account planning in property companies involves multiple areas of tax law. The interaction between corporation tax, income tax, and benefits in kind rules creates complexity that catches many investors off guard.</p>
+<p>Director loan account planning in property companies involves multiple areas of tax law. The interaction between <a href="/blog/incorporation-and-company-structures/accountant-corporation-tax-property-companies">corporation tax</a>, income tax, and benefits in kind rules creates complexity that catches many investors off guard.</p>
 
 <p>Consider professional advice if:</p>
 <ul>
@@ -139,3 +139,9 @@ faqs:
 </ul>
 
 <p>Early planning prevents expensive mistakes and ensures your property company structure works efficiently for your long-term goals.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/property-company-dividend-tax">Property Company Dividend Tax: How Much Will I Pay?</a></li>
+</ul>

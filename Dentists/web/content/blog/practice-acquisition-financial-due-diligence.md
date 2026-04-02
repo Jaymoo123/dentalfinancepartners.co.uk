@@ -5,7 +5,7 @@ canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/pract
 date: "2026-03-22"
 author: "Dental Finance Partners"
 category: "Buying a practice"
-metaTitle: "Practice acquisition due diligence (UK dental) | Financial checklist"
+metaTitle: "Buying a Dental Practice: Due Diligence Checklist"
 metaDescription: "What to look at before you buy a dental practice in the UK — numbers, tax, associates, and the things vendors hope you will not ask about."
 altText: "Reviewing practice accounts before an acquisition"
 image: ""

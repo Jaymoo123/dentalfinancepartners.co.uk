@@ -27,7 +27,7 @@ faqs:
     answer: "From April 2026, landlords with property income over £50,000 must keep digital records and submit quarterly updates to HMRC. This doesn't change how tax is calculated but requires more frequent reporting. Choose MTD-compatible software and set up digital record-keeping well before the deadline."
 ---
 
-<p>Working out your rental income tax can feel overwhelming, especially with Section 24 mortgage interest restrictions and various allowable deductions to consider. A <strong>rental income tax calculator</strong> helps you understand your tax liability and plan your finances effectively.</p>
+<p>Working out your <a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">rental income tax</a> can feel overwhelming, especially with <a href="/blog/section-24-and-tax-relief/section-24-calculator">Section 24</a> mortgage interest restrictions and various allowable deductions to consider. A <strong>rental income tax calculator</strong> helps you understand your tax liability and plan your finances effectively.</p>
 
 <p>This guide explains how to calculate your rental income tax, what deductions you can claim, and how Section 24 affects your final tax bill.</p>
 
@@ -124,3 +124,9 @@ faqs:
 <p><strong>Ignoring the interaction with personal income:</strong> Rental profit is added to your employment or pension income. A landlord earning £45,000 from their job who adds £10,000 rental profit pushes £5,000 into the higher-rate band at 40% — doubling the tax rate on that portion compared to what they expected.</p>
 
 <p><strong>Not claiming all allowable expenses:</strong> Travel to inspect properties, landlord insurance, ground rent, service charges, and professional fees are all deductible. Many landlords claim only mortgage interest and letting agent fees, missing thousands in legitimate deductions that reduce their tax liability.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">Landlord Tax Deductions UK 2026: Complete List</a></li>
+</ul>

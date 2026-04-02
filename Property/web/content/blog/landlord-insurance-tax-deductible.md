@@ -23,7 +23,7 @@ faqs:
     answer: "Keep policy documents, premium receipts, and bank statements showing payments. For mixed-use properties, maintain calculations showing business/personal splits. With MTD starting in 2026, digital records become mandatory, so consider using property management software to track expenses automatically."
 ---
 
-<p>Landlord insurance premiums represent one of the most straightforward tax deductions available to UK property investors. However, knowing exactly which types of cover qualify as allowable expenses can make a significant difference to your annual tax bill.</p>
+<p>Landlord insurance premiums represent one of the most straightforward <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">tax deductions</a> available to UK property investors. However, knowing exactly which types of cover qualify as allowable expenses can make a significant difference to your annual tax bill.</p>
 
 <p>For most landlords, insurance costs typically range from £200 to £800 per property annually. On a portfolio of five BTL properties, this could mean £1,000 to £4,000 in tax-deductible expenses each year.</p>
 
@@ -65,7 +65,7 @@ faqs:
 
 <h2>Claiming Insurance on Your Tax Return</h2>
 
-<p>Report landlord insurance premiums in the "other allowable property expenses" section of your tax return. Keep detailed records showing:</p>
+<p>Report landlord insurance premiums in the "other allowable property expenses" section of your <a href="/blog/landlord-tax-essentials/landlord-tax-return-complete-guide-2026">tax return</a>. Keep detailed records showing:</p>
 
 <ul>
 <li>Policy documents with coverage dates</li>
@@ -97,3 +97,9 @@ faqs:
 <p>While landlord insurance deductions are generally straightforward, complex portfolios or unusual circumstances benefit from professional guidance. Mixed-use properties, international landlords, and corporate structures each have specific considerations.</p>
 
 <p>Tax rules change regularly, and insurance products evolve. Professional advice ensures you're claiming all available reliefs while staying compliant with current regulations.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">Rental Income Tax UK: Complete Guide for Landlords 2025</a></li>
+</ul>

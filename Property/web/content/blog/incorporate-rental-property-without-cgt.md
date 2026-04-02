@@ -114,7 +114,7 @@ faqs:
 
 <p>A landlord with £50,000 rental profit might save £2,000 annually in corporation tax versus personal tax rates. However, extracting this profit via dividends could reduce or eliminate these savings.</p>
 
-<p>The calculation becomes more complex with multiple properties, varying profit levels, and personal circumstances. Our <a href="/calculators">calculators</a> can help model different scenarios, though professional advice remains essential.</p>
+<p>The <a href="/blog/capital-gains-tax/cgt-property-transfer-limited-company-calculate">calculation</a> becomes more complex with multiple properties, varying profit levels, and personal circumstances. Our <a href="/calculators">calculators</a> can help model different scenarios, though professional advice remains essential.</p>
 
 <h2>Professional Advice and Next Steps</h2>
 
@@ -125,3 +125,10 @@ faqs:
 <p>If you're considering incorporation, start by documenting your current activities and gathering financial information. The earlier you begin planning, the more options remain available.</p>
 
 <p>For landlords meeting the qualifying conditions, incorporation relief offers a valuable opportunity to restructure without immediate CGT consequences. However, the deferred tax liability and ongoing compliance requirements mean this strategy requires careful consideration of your long-term plans.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/incorporation-holdover-relief-property">Incorporation Holdover Relief for Property: Complete UK Guide</a></li>
+<li><a href="/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk">How to Transfer Property Into a Limited Company UK: Complete Guide for Landlords</a></li>
+</ul>

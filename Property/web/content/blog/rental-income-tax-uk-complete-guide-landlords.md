@@ -25,7 +25,7 @@ faqs:
 
 <p>Rental income tax affects every UK landlord, from those with a single buy-to-let property to large portfolio owners. Understanding how this tax works is crucial for managing your property business effectively and avoiding costly mistakes.</p>
 
-<p>This guide explains everything you need to know about rental income tax in the UK, including current rates, allowable expenses, and the impact of Section 24 mortgage interest restrictions.</p>
+<p>This guide explains everything you need to know about rental income tax in the UK, including current rates, <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">allowable expenses</a>, and the impact of <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24</a> mortgage interest restrictions.</p>
 
 <h2>How Rental Income Tax Works in the UK</h2>
 
@@ -140,3 +140,9 @@ faqs:
 </ul>
 
 <p>Professional <a href="/services">services</a> can often save more in tax than they cost, especially for landlords with substantial portfolios or higher-rate tax exposure.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/section-24-and-tax-relief/rental-income-tax-calculator">Rental Income Tax Calculator: Work Out Your Tax</a></li>
+</ul>

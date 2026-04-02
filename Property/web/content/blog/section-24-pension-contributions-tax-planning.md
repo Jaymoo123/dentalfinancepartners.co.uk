@@ -29,7 +29,7 @@ faqs:
 
 <h2>How Section 24 Affects Your Pension Planning</h2>
 
-<p>Before Section 24, landlords could deduct mortgage interest as a business expense. Now, you receive a basic rate tax credit (20%) instead, regardless of your marginal tax rate. This means higher-rate taxpayers effectively lose 20% tax relief on their mortgage interest.</p>
+<p>Before Section 24, landlords could deduct mortgage interest as a business expense. Now, you receive a basic rate tax credit (20%) instead, regardless of your marginal tax rate. This means <a href="/blog/section-24-and-tax-relief/section-24-higher-rate-taxpayers-2026">higher-rate taxpayers</a> effectively lose 20% tax relief on their mortgage interest.</p>
 
 <p>For a landlord paying 40% tax on £20,000 annual mortgage interest, the old system saved £8,000 in tax. Under Section 24, they only save £4,000 – a difference of £4,000 per year.</p>
 
@@ -102,3 +102,10 @@ faqs:
 <p>Section 24 and pension planning interact in complex ways that require careful analysis of your specific circumstances. Professional advice can help you structure contributions optimally and avoid potential pitfalls.</p>
 
 <p>Consider consulting both a property tax specialist and a pension adviser to ensure your strategy aligns with both your property portfolio and retirement planning objectives. The potential tax savings often justify the advisory costs, especially for landlords with substantial rental incomes.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 Tax Relief for Landlords: Complete Guide</a></li>
+<li><a href="/blog/landlord-tax-essentials/accountant-tax-planning-services">Professional Accountant Tax Planning Services for UK Property Investors</a></li>
+</ul>

@@ -23,7 +23,7 @@ faqs:
     answer: "This depends on your timeline and costs. If incorporation is planned within 12-18 months, it might be worth waiting, as company borrowing has different tax treatment. Professional advice is recommended for complex situations."
 ---
 
-<p>Buy to let refinancing tax considerations have become increasingly complex since Section 24 restrictions were introduced. With mortgage rates fluctuating and tax relief limited to basic rate, many landlords are questioning whether refinancing their BTL properties still makes financial sense.</p>
+<p>Buy to let refinancing tax considerations have become increasingly complex since <a href="/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords">Section 24</a> restrictions were introduced. With mortgage rates fluctuating and tax relief limited to basic rate, many landlords are questioning whether refinancing their BTL properties still makes financial sense.</p>
 
 <p>The decision to refinance isn't just about securing a better interest rate anymore. You need to weigh the immediate costs, ongoing tax implications, and long-term portfolio strategy to determine if refinancing delivers genuine value.</p>
 
@@ -88,3 +88,10 @@ faqs:
 <p>Buy to let refinancing tax implications vary significantly based on individual circumstances. The interaction between mortgage structures, tax relief restrictions, and your broader financial position requires careful analysis.</p>
 
 <p>Consider speaking with a property tax specialist before making refinancing decisions, particularly if you're dealing with multiple properties or considering significant equity release. Professional advice can help identify opportunities and pitfalls that aren't immediately obvious.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-mortgage-options">Buy-to-Let Limited Company Mortgage Options: Complete Guide for UK Property Investors</a></li>
+<li><a href="/blog/section-24-and-tax-relief/rental-income-tax-calculator">Rental Income Tax Calculator: Work Out Your Tax</a></li>
+</ul>

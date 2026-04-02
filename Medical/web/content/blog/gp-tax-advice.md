@@ -6,7 +6,7 @@ date: "2026-04-01"
 author: "Medical Accounts"
 category: "GP Tax & Accounts"
 metaTitle: "GP Tax Advice | UK Tax Planning for General Practitioners"
-metaDescription: "Expert GP tax advice for UK general practitioners. Navigate partnership taxation, NHS pension planning, and tax-efficient strategies. Get professional guidance."
+metaDescription: "GP partners can face marginal tax rates above 60% when pension charges apply. Partnership tax, NHS pension, and planning strategies for UK GPs."
 altText: "UK GP reviewing tax documents with calculator and NHS pension paperwork"
 image: ""
 h1: "GP Tax Advice: Essential Tax Planning for UK General Practitioners"
@@ -48,7 +48,7 @@ faqs:
 
 <p>Partnership profits are typically allocated based on your profit-sharing agreement. For example, if your practice generates £2.4 million profit and you hold a 20% share, you'll be taxed on £480,000 regardless of what you actually draw from the practice.</p>
 
-<p>The basis period reform introduced in 2024/25 affects how partnership profits are taxed, making it essential to get professional advice on timing and cash flow planning.</p>
+<p>The basis period reform introduced in 2024/25 affects how [partnership profits are taxed](/blog/gp-partnership-tax-complete-guide), making it essential to get professional advice on timing and cash flow planning.</p>
 
 <h2>NHS Pension Optimisation Through Professional Tax Planning</h2>
 <p>The NHS pension creates unique tax planning opportunities and challenges. The annual allowance of £60k can be exceeded easily by high-earning medical professionals, triggering tax charges that specialist accountant tax planning can help minimise.</p>
@@ -65,7 +65,7 @@ faqs:
 
 <p><strong>Additional Income:</strong> Many salaried GPs earn extra income from locum work, private practice, or teaching. This creates a mix of employed and self-employed income requiring careful management.</p>
 
-<p><strong>Professional Expenses:</strong> You can claim tax relief on GMC registration, professional indemnity (MDU/MPS), BMA membership, and CPD costs. These often total £2,000-£4,000 annually.</p>
+<p><strong>Professional Expenses:</strong> You can claim tax relief on GMC registration, professional indemnity (MDU/MPS), BMA membership, and CPD costs. These often total £2,000-£4,000 annually — see our [complete deductions list](/blog/gp-tax-deductions-complete-list-2026).</p>
 
 <p><strong>Pension Planning:</strong> While your NHS pension contributions are handled through payroll, you may still face annual allowance issues if you have other pension provision or high earnings.</p>
 
@@ -238,5 +238,10 @@ faqs:
 <p>Medical careers often span decades, requiring long-term accountant tax planning for practice succession and retirement. GP partners need to plan practice goodwill transfers, while consultants might consider phased retirement strategies.</p>
 
 <p>Professional tax planning addresses these transitions by optimising the timing of income recognition, managing capital gains on practice sales, and coordinating NHS pension benefits with other retirement income sources.</p>
+
+<h2>Related Reading</h2>
+
+- [GP Pension Contributions Tax Relief](/blog/gp-pension-contributions-tax-relief)
+- [GP Partner vs Salaried GP Tax Comparison](/blog/gp-partner-vs-salaried-gp-tax-comparison)
 
 <p>Early planning is essential — strategies implemented years before retirement often provide significantly better tax outcomes than last-minute arrangements.</p>

@@ -97,3 +97,11 @@ faqs:
 <p>Keep track of any proposed changes, as they can affect the timing of your purchases. However, don't let potential future changes delay investment decisions indefinitely — the current rules provide certainty for planning purposes.</p>
 
 <p>For complex property investment structures or large portfolios, professional advice helps optimize your approach to stamp duty and broader tax planning. Our <a href="/services">specialist property tax services</a> can help you navigate these rules effectively.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice">SDLT on Incorporation: Do I Pay Stamp Duty Twice?</a></li>
+<li><a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">Property Investment Tax UK: Complete Guide 2026</a></li>
+<li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Buy-to-Let Limited Company: Complete Guide UK</a></li>
+</ul>

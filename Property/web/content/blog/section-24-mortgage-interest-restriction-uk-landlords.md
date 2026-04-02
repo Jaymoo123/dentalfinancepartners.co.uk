@@ -37,7 +37,7 @@ faqs:
 
 <h2>What is Section 24 Mortgage Interest Restriction?</h2>
 
-<p>Section 24 mortgage interest restriction limits the tax relief available on mortgage interest and other finance costs for residential rental properties owned by individuals. Previously, landlords could deduct full mortgage interest as an expense before calculating taxable profit.</p>
+<p>Section 24 mortgage interest restriction limits the tax relief available on mortgage interest and other finance costs for residential rental properties owned by individuals. Previously, landlords could deduct full mortgage interest as an expense before <a href="/blog/section-24-and-tax-relief/section-24-calculator">calculating</a> taxable profit.</p>
 
 <p>Now, mortgage interest is treated as a tax credit rather than a deductible expense. This means you can only reduce your tax bill by 20% of your mortgage interest, regardless of your marginal tax rate.</p>
 
@@ -290,3 +290,10 @@ faqs:
 <p>Understanding these rules and planning accordingly isn't just about minimizing this year's tax bill – it's about ensuring your property portfolio remains viable and profitable in the long term.</p>
 
 <p>Given the complexity of these changes and their interaction with other areas of tax, most landlords benefit from specialist advice tailored to their circumstances. The team at Property Tax Partners works exclusively with property investors and understands the practical challenges these rules create.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 Tax Relief for Landlords: Complete Guide</a></li>
+<li><a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">Landlord Tax Deductions UK 2026: Complete List</a></li>
+</ul>

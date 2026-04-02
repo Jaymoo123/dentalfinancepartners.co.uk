@@ -23,7 +23,7 @@ faqs:
     answer: "Yes, SPV structures need full business accounting software with Corporation Tax features, not just property-focused solutions. Consider Sage, QuickBooks Online, or Xero for limited company property investments."
 ---
 
-<p>With <strong>Making Tax Digital for Income Tax Property</strong> starting 6 April 2026, every UK landlord with property income above £10,000 must use MTD-compatible software. Choosing the right <strong>landlord accounting software UK</strong> solution now will save you significant time and compliance headaches later.</p>
+<p>With <strong>Making Tax Digital for Income Tax Property</strong> starting 6 <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">April 2026</a>, every UK landlord with property income above £10,000 must use <a href="/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026">MTD</a>-compatible software. Choosing the right <strong>landlord accounting software UK</strong> solution now will save you significant time and compliance headaches later.</p>
 
 <p>This isn't just about ticking the MTD box. Good property management accounts software streamlines your entire rental business — from tracking expenses to calculating tax liabilities under Section 24 rules.</p>
 
@@ -169,3 +169,9 @@ faqs:
 <p>If you're unsure which solution suits your property business, or need help with <a href="/incorporation">incorporation decisions</a> that affect your software choice, speaking with property tax specialists can save costly mistakes.</p>
 
 <p>The right <strong>landlord accounting software UK</strong> solution depends on your portfolio size, complexity, and growth plans. Start evaluating options now — April 2026 will arrive faster than you think.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/portfolio-management/property-portfolio-accounting-tracking-profitability">Property Portfolio Accounting: Tracking Profitability by Property</a></li>
+</ul>

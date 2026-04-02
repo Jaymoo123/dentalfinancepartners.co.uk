@@ -29,7 +29,7 @@ faqs:
 
 <p>Property investment success isn't just about finding good deals — it's about structuring your portfolio correctly from day one. Professional <strong>accountant financial planning</strong> helps UK landlords navigate increasingly complex tax rules while building sustainable wealth through property.</p>
 
-<p>The UK property tax landscape has changed dramatically. Section 24 mortgage interest restrictions, Making Tax Digital requirements, and evolving capital gains rules mean landlords need specialist guidance more than ever.</p>
+<p>The UK <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">property tax</a> landscape has changed dramatically. Section 24 mortgage interest restrictions, Making Tax Digital requirements, and evolving capital gains rules mean landlords need specialist guidance more than ever.</p>
 
 <h2>Core Elements of Property Financial Planning</h2>
 
@@ -37,7 +37,7 @@ faqs:
 
 <p>The choice between personal and company ownership isn't straightforward. Higher-rate taxpayers often benefit from incorporation, but basic-rate landlords might not. Professional planning considers your full financial picture, not just current tax rates.</p>
 
-<p>Factors include total income, mortgage arrangements, inheritance tax planning, and future growth plans. A specialist can model different scenarios to show the long-term impact of each structure.</p>
+<p>Factors include total income, mortgage arrangements, inheritance <a href="/blog/landlord-tax-essentials/accountant-tax-planning-services">tax planning</a>, and future growth plans. A specialist can model different scenarios to show the long-term impact of each structure.</p>
 
 <h3>Cash Flow Management</h3>
 
@@ -110,3 +110,9 @@ faqs:
 <p>Consider a landlord with £60,000 annual rental income paying 40% tax. Proper planning might save £5,000-£15,000 annually through structure optimisation, allowable expense maximisation, and strategic timing of transactions.</p>
 
 <p>Beyond immediate tax savings, professional planning provides confidence and clarity. You'll understand your obligations, know your options, and have strategies in place for different scenarios. This peace of mind allows you to focus on what you do best—finding and managing profitable property investments.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/landlord-tax-essentials/accountant-tax-advice-property-investors">Professional Accountant Tax Advice for UK Property Investors</a></li>
+</ul>

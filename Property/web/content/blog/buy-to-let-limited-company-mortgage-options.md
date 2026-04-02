@@ -85,7 +85,7 @@ faqs:
 
 <h2>Refinancing and Portfolio Growth</h2>
 
-<p>Limited company mortgages often have more flexible refinancing options than personal loans. You can typically refinance without triggering Stamp Duty Land Tax, making portfolio optimization more cost-effective.</p>
+<p>Limited company mortgages often have more flexible <a href="/blog/section-24-and-tax-relief/buy-to-let-refinancing-when-does-it-make-sense">refinancing</a> options than personal loans. You can typically refinance without triggering Stamp Duty Land Tax, making portfolio optimization more cost-effective.</p>
 
 <p>Many investors use refinancing to extract equity for further purchases, though lenders typically cap total borrowing at 4-6 times rental income across your portfolio.</p>
 
@@ -177,3 +177,10 @@ faqs:
 <p>However, they're not suitable for everyone. Small-scale landlords or those planning to extract most rental income immediately might find personal ownership more straightforward.</p>
 
 <p>The decision involves balancing higher mortgage costs against tax savings, plus considering the administrative burden of running a limited company.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Buy-to-Let Limited Company: Complete Guide UK</a></li>
+<li><a href="/blog/incorporation-and-company-structures/property-company-profit-extraction-salary-vs-dividends">Property Company Profit Extraction: Salary vs Dividends</a></li>
+</ul>

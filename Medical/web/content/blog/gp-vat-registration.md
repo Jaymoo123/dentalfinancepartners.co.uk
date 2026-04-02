@@ -5,8 +5,8 @@ canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-vat-registration"
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "GP Practice Management"
-metaTitle: "GP VAT Registration Guide - When to Register Your Practice"
-metaDescription: "Complete guide to GP VAT registration for UK medical practices. Learn thresholds, exemptions, and when VAT registration makes sense for your practice."
+metaTitle: "GP VAT Registration 2026: Thresholds & Exemptions"
+metaDescription: "Most GP income is VAT exempt, but private services can trigger registration. Thresholds, exemptions, and when it makes sense for your practice."
 altText: "UK GP practice VAT registration paperwork on desk with calculator and medical stethoscope"
 image: ""
 h1: "GP VAT Registration: When and How to Register Your Medical Practice"
@@ -168,7 +168,7 @@ faqs:
 
 <h3>Locum Doctors</h3>
 
-<p>Locum doctors operating through limited companies face different VAT considerations. If your company invoices exceed £90,000 annually, VAT registration becomes mandatory regardless of employment status determinations.</p>
+<p>Locum doctors operating through [limited companies](/blog/locum-doctor-limited-company-pros-and-cons) face different VAT considerations. If your company invoices exceed £90,000 annually, VAT registration becomes mandatory regardless of employment status determinations.</p>
 
 <h2>Common VAT Registration Mistakes to Avoid</h2>
 <p>Medical professionals often make these costly errors:</p>
@@ -191,5 +191,10 @@ faqs:
 <p>Medical practices have unique VAT considerations that general accountants often miss. Specialist medical accountants understand the complexity of NHS exempt income, private patient billing, and professional expense classifications.</p>
 
 <p>When choosing an accountant for VAT registration, ensure they understand medical practice structures, NHS contracting arrangements, and professional regulatory requirements. This expertise prevents costly compliance errors and optimises your VAT position.</p>
+
+<h2>Related Reading</h2>
+
+- [GP Accounting: Essential Guide](/blog/gp-accounting-guide)
+- [GP Limited Company Tax Benefits and Drawbacks](/blog/gp-limited-company-tax-benefits-drawbacks)
 
 <p>The right <strong>accountant VAT registration</strong> support ensures seamless compliance while maximising your practice's financial efficiency. Getting this right from the start saves significant time and costs later.</p>

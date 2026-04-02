@@ -37,7 +37,7 @@ faqs:
 
 <h2>The Section 24 Trigger Point</h2>
 
-<p>For most landlords, Section 24 mortgage interest restriction creates the primary motivation for incorporation. Once your rental profits push you into the higher-rate tax band (£50,270 for 2025/26), the mortgage interest restriction starts costing real money.</p>
+<p>For most landlords, <a href="/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax">Section 24</a> mortgage interest restriction creates the primary motivation for incorporation. Once your rental profits push you into the higher-rate tax band (£50,270 for 2025/26), the mortgage interest restriction starts costing real money.</p>
 
 <p>Here's a practical example: A landlord with £60,000 rental income and £30,000 mortgage interest payments. Under Section 24, they can only claim 20% tax relief on the mortgage interest, not their marginal rate of 40%. This creates an additional tax cost of around £6,000 annually.</p>
 
@@ -202,3 +202,10 @@ faqs:
 <p>Properties with significant unrealised capital gains may be better held personally if you can utilise reliefs like Principal Private Residence Relief or if the gains would be covered by your CGT allowances over time.</p>
 
 <p>Some mortgage lenders have restrictions on lending to company structures or charge higher rates, which could affect your expansion plans.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/incorporation-and-company-structures/landlord-incorporation-step-by-step-guide-uk">Landlord Incorporation: Step-by-Step Guide UK</a></li>
+<li><a href="/blog/incorporation-and-company-structures/limited-company-vs-personal-ownership-tax-comparison-2026">Limited Company vs. Personal Ownership: UK Property Tax Comparison 2026</a></li>
+</ul>

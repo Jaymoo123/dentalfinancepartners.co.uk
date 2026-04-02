@@ -29,7 +29,7 @@ faqs:
 
 <h2>What is Section 24 Tax Relief?</h2>
 
-<p>Section 24 tax relief replaces the previous system where landlords could deduct mortgage interest as a business expense from their rental income. Under the old rules, if you were a higher-rate taxpayer, mortgage interest effectively reduced your tax at 40% or 45%.</p>
+<p>Section 24 tax relief replaces the previous system where landlords could deduct mortgage interest as a business expense from their rental income. Under the old rules, if you were a <a href="/blog/section-24-and-tax-relief/section-24-higher-rate-taxpayers-2026">higher-rate taxpayer</a>, mortgage interest effectively reduced your tax at 40% or 45%.</p>
 
 <p>Now, mortgage interest on residential buy-to-let properties is treated as a tax credit at the basic rate (20%) rather than a deduction. This means regardless of your marginal tax rate, you only get relief at 20%.</p>
 
@@ -117,3 +117,10 @@ faqs:
 <p>Section 24 tax relief creates complexity that many landlords struggle with. The interaction between rental profits, personal allowances, and tax credits can be intricate.</p>
 
 <p>Professional advice becomes particularly valuable when considering whether to incorporate, planning disposals, or optimizing your overall tax position. Property tax specialists can model different scenarios and help you understand the long-term implications of various strategies.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/section-24-and-tax-relief/section-24-calculator">Section 24 Calculator: Calculate Your Tax Impact</a></li>
+<li><a href="/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax">Section 24 vs. Incorporation: Which Saves More Tax for UK Landlords?</a></li>
+</ul>

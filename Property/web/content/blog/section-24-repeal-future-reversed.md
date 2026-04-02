@@ -43,7 +43,7 @@ faqs:
 <li>Reduced rental supply as landlords exit the market</li>
 <li>Higher rents passed to tenants</li>
 <li>Distortion between individual and corporate property investment</li>
-<li>Administrative burden from forced incorporations</li>
+<li>Administrative burden from forced <a href="/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax">incorporations</a></li>
 </ul>
 
 <p>The National Residential Landlords Association (NRLA) regularly submits evidence to government consultations arguing for reform. However, their influence appears limited when weighed against broader political priorities.</p>
@@ -109,3 +109,10 @@ faqs:
 <p>The 2025/26 tax year will mark five years since Section 24's full implementation. This milestone might prompt policy reviews, though any changes would likely be gradual rather than wholesale reversal.</p>
 
 <p>For most landlords, planning should assume Section 24 remains in place indefinitely. This makes understanding your options under current rules essential rather than waiting for political changes that may never come.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 Tax Relief for Landlords: Complete Guide</a></li>
+<li><a href="/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords">Section 24 Mortgage Interest Restriction: Complete Guide for UK Landlords</a></li>
+</ul>

@@ -120,7 +120,7 @@ faqs:
 <h2>Choosing the Right Property Accountant</h2>
 <p>Not all UK property accountants in London offer the same expertise. Look for firms that specialise exclusively in property taxation. Check they understand your specific situation – student lettings, commercial property, or mixed portfolios all have different considerations.</p>
 
-<p>Ask about their MTD preparations and software recommendations. Enquire about their approach to tax planning versus just compliance work. The best property accountants are proactive, suggesting improvements rather than just filing returns.</p>
+<p>Ask about their MTD preparations and software recommendations. Enquire about their approach to tax planning versus just compliance work. The <a href="/blog/property-accountant-services/best-property-accountant">best property accountants</a> are proactive, suggesting improvements rather than just filing returns.</p>
 
 <p>Consider their fee structure carefully. Some charge fixed fees for standard services, others work on an hourly basis. For complex portfolios, a specialist firm's higher fees often deliver better net outcomes through tax savings.</p>
 
@@ -274,3 +274,10 @@ faqs:
 <p>They calculate your base costs accurately, including purchase costs, improvement expenditure, and indexation allowances for pre-1998 acquisitions. They advise on timing disposals to use annual exemptions effectively.</p>
 
 <p>Principal private residence relief, lettings relief, and business asset disposal relief all have specific rules. Getting these calculations wrong can cost thousands in unnecessary tax.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/property-accountant-services/best-property-accountant-london">Finding the Best Property Accountant in London: A Landlord's Guide</a></li>
+<li><a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">How to Choose a Property Accountant: Complete Guide for UK Landlords</a></li>
+</ul>

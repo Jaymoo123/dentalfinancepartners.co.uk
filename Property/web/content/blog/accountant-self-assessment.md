@@ -120,3 +120,11 @@ faqs:
 <p>Look for accountants who specialise specifically in property taxation rather than general practice firms. Property tax has unique rules and planning opportunities that require focused expertise.</p>
 
 <p>The right specialist should offer proactive tax planning advice, not just compliance services. They should understand your property strategy and provide guidance on timing transactions and structuring your portfolio for maximum tax efficiency.</p>
+
+<h2>Related Reading</h2>
+
+<ul>
+<li><a href="/blog/landlord-tax-essentials/landlord-tax-return-complete-guide-2026">Landlord Tax Return: Complete Guide 2026</a></li>
+<li><a href="/blog/landlord-tax-essentials/accountant-tax-return-services">Accountant Tax Return Services for UK Property Investors</a></li>
+<li><a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">Landlord Tax Deductions UK 2026: Complete List</a></li>
+</ul>
