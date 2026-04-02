@@ -99,7 +99,7 @@ faqs:
 
 <p><strong>Get Professional Advice:</strong> The interaction between Section 24 and other parts of the tax system is complex. Our <a href="/services">specialist property tax services</a> can help you understand your specific situation and explore options like <a href="/incorporation">property company incorporation</a>.</p>
 
-<h2>Planning for 2026/26 and Beyond</h2>
+<h2>Planning for 2026/27 and Beyond</h2>
 
 <p>With Making Tax Digital for Income Tax Property starting in April 2026, now is a good time to review your property tax position. The quarterly reporting requirements will make these Section 24 impacts more visible throughout the year.</p>
 

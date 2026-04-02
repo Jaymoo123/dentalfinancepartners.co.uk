@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"
-metaTitle: "Section 24 Repeal: Will the Mortgage Interest Restriction Be Reversed?"
+metaTitle: "Section 24 Repeal: Will It Be Reversed? | 2026"
 metaDescription: "Analysis of whether Section 24 mortgage interest restrictions could be repealed. Political positions, industry pressure, and what landlords should expect."
 altText: "UK Parliament building with property investment documents, representing Section 24 policy discussions"
 image: ""

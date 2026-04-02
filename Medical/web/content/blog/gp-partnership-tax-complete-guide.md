@@ -1,5 +1,5 @@
 ---
-title: "GP Partnership Tax: Complete Guide for 2026/26"
+title: "GP Partnership Tax: Complete Guide for 2026/27"
 slug: "gp-partnership-tax-complete-guide"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-partnership-tax-complete-guide"
 date: "2026-04-01"
@@ -9,7 +9,7 @@ metaTitle: "GP Partnership Tax Guide 2026/27 | Medical Accountants UK"
 metaDescription: "GP partnership profits are taxed differently from salary. Profit sharing, basis period reform, expenses, and NHS pension impacts for 2026/27."
 altText: "GP partners reviewing partnership tax documents and financial statements"
 image: ""
-h1: "GP Partnership Tax: Complete Guide for 2026/26"
+h1: "GP Partnership Tax: Complete Guide for 2026/27"
 summary: "Understanding GP partnership tax can be complex with profit sharing rules, basis period changes, and NHS pension interactions. This complete guide covers everything you need to know about tax obligations and planning opportunities for GP partners."
 schema: ""
 faqs:

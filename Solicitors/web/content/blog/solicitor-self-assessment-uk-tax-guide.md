@@ -45,7 +45,7 @@ faqs:
 
 <p>Even employed solicitors often find themselves needing to complete returns due to additional income from legal consultancy, writing, or speaking engagements.</p>
 
-<h2>Key Deadlines for Solicitor Self Assessment 2026/26</h2>
+<h2>Key Deadlines for Solicitor Self Assessment 2026/27</h2>
 
 <p>Missing self assessment deadlines triggers automatic penalties. Here are the critical dates:</p>
 
@@ -251,7 +251,7 @@ faqs:
 <li><strong>Late payment penalties:</strong> Missing the 31 January deadline even when no tax is due</li>
 </ul>
 
-<h2>Planning for 2026/26 and Beyond</h2>
+<h2>Planning for 2026/27 and Beyond</h2>
 <p>Looking ahead, several factors will impact solicitor self assessment:</p>
 
 <ul>

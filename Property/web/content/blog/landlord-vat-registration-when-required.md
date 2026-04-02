@@ -6,7 +6,7 @@ date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Landlord Tax Essentials"
 metaTitle: "Landlord VAT Registration: When Required & How to Register"
-metaDescription: "Find out when UK landlords need VAT registration, current thresholds, and how property business rates affect your obligations. Complete guide for 2026/26."
+metaDescription: "Most residential rent is VAT-exempt, but commercial property and FHLs may trigger registration. 2026/27 thresholds and rules for landlords."
 altText: "UK landlord reviewing VAT registration documents with calculator and property paperwork"
 image: ""
 h1: "Landlord VAT Registration: When Is It Required?"
@@ -27,7 +27,7 @@ faqs:
 
 <p>However, the picture becomes more complex if you're renting commercial properties, providing furnished holiday accommodation, or offering additional services to tenants. Understanding when VAT registration becomes mandatory can save you from unexpected penalties and compliance issues.</p>
 
-<h2>VAT Registration Thresholds for 2026/26</h2>
+<h2>VAT Registration Thresholds for 2026/27</h2>
 
 <p>The current VAT registration threshold is £90,000 for the 2025/26 tax year. This means if your <strong>taxable supplies</strong> exceed this amount in any 12-month period, you must register for VAT within 30 days.</p>
 

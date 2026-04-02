@@ -1,5 +1,5 @@
 ---
-title: "GP Partnership Profit Sharing Tax Planning: Essential Strategies for 2026/26"
+title: "GP Partnership Profit Sharing Tax Planning: Essential Strategies for 2026/27"
 slug: "gp-partnership-profit-sharing-tax-planning"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-partnership-profit-sharing-tax-planning"
 date: "2026-04-01"
@@ -9,7 +9,7 @@ metaTitle: "GP Partnership Profit Sharing Tax Planning 2026/27"
 metaDescription: "Profit allocation decisions directly affect each partner's tax bill and NHS pension. Strategies to optimise your GP partnership for 2026/27."
 altText: "GP partners reviewing profit sharing tax planning documents with calculator and financial charts"
 image: ""
-h1: "GP Partnership Profit Sharing Tax Planning: Essential Strategies for 2026/26"
+h1: "GP Partnership Profit Sharing Tax Planning: Essential Strategies for 2026/27"
 summary: "Effective GP partnership profit sharing tax planning can significantly reduce your tax burden while maintaining fair profit allocation. Understanding the rules around profit sharing agreements and their tax implications is crucial for every GP partner."
 schema: ""
 faqs:

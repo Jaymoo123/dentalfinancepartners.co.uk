@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 const PRACTICAL_SLUGS = [
   "nhs-pension-annual-allowance-complete-guide",
   "locum-doctor-tax-complete-guide",
-  "private-practice-incorporation-complete-guide",
+  "medical-practice-incorporation-step-by-step",
 ] as const;
 
 const realityPoints = [

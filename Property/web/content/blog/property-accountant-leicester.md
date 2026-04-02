@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-servi
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Property Accountant Services"
-metaTitle: "Property Accountant Leicester | Expert Tax Services for Landlords"
+metaTitle: "Property Accountant Leicester | Expert Tax Help"
 metaDescription: "Specialist property accountant in Leicester offering expert tax services for UK landlords. Section 24, incorporation advice, MTD compliance & more."
 altText: "Property accountant working with Leicester landlord on tax planning and compliance"
 image: ""

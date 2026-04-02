@@ -98,7 +98,7 @@ faqs:
 
 <p>Our <a href="/services">property tax specialists</a> can provide detailed calculations and tax planning strategies tailored to your portfolio.</p>
 
-<h2>Planning Ahead for 2026/26</h2>
+<h2>Planning Ahead for 2026/27</h2>
 
 <p>Remember that Making Tax Digital for Income Tax Property starts from April 2026 for landlords with property income above £50,000. This means quarterly reporting and more detailed record-keeping.</p>
 

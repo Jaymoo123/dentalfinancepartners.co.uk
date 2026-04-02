@@ -6,7 +6,7 @@ date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Incorporation & Company Structures"
 metaTitle: "Property Company Dividend Tax Rates & Calculator | UK 2026"
-metaDescription: "Complete guide to property company dividend tax rates for UK landlords. Calculate your liability and understand the 2026/26 tax bands."
+metaDescription: "Dividend tax rates range from 8.75% (basic) to 39.35% (additional) for 2026/27. Calculate your property company dividend liability."
 altText: "UK property investor reviewing dividend tax calculations on laptop with property documents"
 image: ""
 h1: "Property Company Dividend Tax: How Much Will I Pay?"
@@ -37,7 +37,7 @@ faqs:
 
 <p>Each situation is different, and specialist advice can help optimise your approach. Our <a href="/services">property tax services</a> include dividend tax planning for property investors.</p>
 
-<h2>Dividend Tax Rates for 2026/26</h2>
+<h2>Dividend Tax Rates for 2026/27</h2>
 
 <p>The current dividend tax rates depend on your total taxable income for the year:</p>
 

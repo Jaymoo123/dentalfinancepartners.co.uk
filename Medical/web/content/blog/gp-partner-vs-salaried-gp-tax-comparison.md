@@ -1,5 +1,5 @@
 ---
-title: "GP Partner vs Salaried GP Tax Comparison: Complete Guide for 2026/26"
+title: "GP Partner vs Salaried GP Tax Comparison: Complete Guide for 2026/27"
 slug: "gp-partner-vs-salaried-gp-tax-comparison"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-partner-vs-salaried-gp-tax-comparison"
 date: "2026-04-01"
@@ -9,7 +9,7 @@ metaTitle: "GP Partner vs Salaried GP Tax Comparison 2026/27"
 metaDescription: "GP partners pay less NI but face self-assessment and business risk. Side-by-side comparison of tax, pension, and take-home pay for 2026/27."
 altText: "UK medical professionals reviewing tax documents comparing GP partner versus salaried GP tax implications"
 image: ""
-h1: "GP Partner vs Salaried GP Tax Comparison: Complete Guide for 2026/26"
+h1: "GP Partner vs Salaried GP Tax Comparison: Complete Guide for 2026/27"
 summary: "Understanding the tax differences between GP partners and salaried GPs is crucial for career decisions and financial planning. This guide breaks down the key tax implications of each role."
 schema: ""
 faqs:

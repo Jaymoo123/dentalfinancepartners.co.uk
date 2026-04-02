@@ -1,5 +1,5 @@
 ---
-title: "Sole Practitioner Solicitor Tax: Complete Guide for 2026/26"
+title: "Sole Practitioner Solicitor Tax: Complete Guide for 2026/27"
 slug: "sole-practitioner-solicitor-tax-guide"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sole-practitioner-tax/sole-practitioner-solicitor-tax-guide"
 date: "2026-04-01"
@@ -9,7 +9,7 @@ metaTitle: "Sole Practitioner Solicitor Tax Guide 2026/27"
 metaDescription: "Self-assessment, Class 2 & 4 NICs, allowable expenses, and MTD obligations for sole practitioner solicitors. Plus tax planning strategies."
 altText: "UK solicitor working on tax documents and self-assessment forms at desk"
 image: ""
-h1: "Sole Practitioner Solicitor Tax: Complete Guide for 2026/26"
+h1: "Sole Practitioner Solicitor Tax: Complete Guide for 2026/27"
 summary: "Comprehensive guide covering all tax obligations for sole practitioner solicitors, including self-assessment requirements, Making Tax Digital compliance, and practical tax planning strategies."
 schema: ""
 faqs:

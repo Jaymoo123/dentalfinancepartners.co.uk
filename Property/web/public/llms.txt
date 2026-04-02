@@ -18,6 +18,7 @@ Property Tax Partners provides specialist accounting, tax planning, and complian
 - Incorporation & Company Structures: /blog/incorporation-and-company-structures
 - Making Tax Digital (MTD): /blog/making-tax-digital-mtd
 - Capital Gains Tax: /blog/capital-gains-tax
+- Portfolio Management: /blog/portfolio-management
 - Property Accountant Services: /blog/property-accountant-services
 - Landlord Tax Essentials: /blog/landlord-tax-essentials
 
