@@ -4,7 +4,7 @@ import { getAllPosts, getCategorySlug } from "@/lib/blog";
 import { ArrowRight } from "lucide-react";
 
 const categoryName = "Incorporation & Company Structures";
-const categorySlug = "incorporation-company-structures";
+const categorySlug = "incorporation-and-company-structures";
 
 export const metadata: Metadata = {
   title: `${categoryName} for Property Investors | Property Tax Partners`,
