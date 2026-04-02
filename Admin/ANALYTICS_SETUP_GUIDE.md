@@ -9,12 +9,14 @@ Quick reference for completing the analytics configuration.
 ✅ **Working Now**:
 - Dentists website: Tracking live with GA4 ID `G-273RJY0LZQ`
 - Property website: Tracking live with GA4 ID `G-B5MCP5NGMY`
-- Lead form conversion tracking on both sites
+- Solicitors website: Tracking live with GA4 ID `G-N6ZPRB3DSQ` (Stream ID: `14301281732`)
+- Lead form conversion tracking on all active sites
 - Privacy policies and cookie notices
 - Database schema ready
 - Multi-niche analytics agent configured
 
 ⚠️ **Needs Setup**:
+- Medical website: Still using placeholder `G-MEDICAL-PLACEHOLDER` — needs GA4 property creation
 - Backend analytics: Add GA4 API credentials for automated data collection
 
 ---
@@ -62,9 +64,9 @@ This enables automated content optimization and weekly reports.
 4. Select **JSON** → Click **Create**
 5. **Save the downloaded JSON file** (keep it secure!)
 
-### Step 5: Grant GA4 Access to BOTH Properties
+### Step 5: Grant GA4 Access to ALL Properties
 
-**IMPORTANT**: The service account needs access to BOTH GA4 properties.
+**IMPORTANT**: The service account needs access to ALL active GA4 properties.
 
 1. Go back to [Google Analytics](https://analytics.google.com)
 2. For **Dentists Property** (G-273RJY0LZQ):
@@ -78,6 +80,14 @@ This enables automated content optimization and weekly reports.
 3. For **Property Tax Partners** (G-B5MCP5NGMY):
    - Click **Admin** (gear icon)
    - Select the Property property from dropdown
+   - Under **Property**, click **Property Access Management**
+   - Click **+** (top right) → **Add users**
+   - Enter the same service account email
+   - Select role: **Viewer**
+   - Click **Add**
+4. For **Accounts for Lawyers** (G-N6ZPRB3DSQ):
+   - Click **Admin** (gear icon)
+   - Select the Solicitors/Lawyers property from dropdown
    - Under **Property**, click **Property Access Management**
    - Click **+** (top right) → **Add users**
    - Enter the same service account email
@@ -100,6 +110,7 @@ GA4_CREDENTIALS='{"type":"service_account","project_id":"your-project","private_
 **Note**: Property IDs are now configured per-niche in `agents/config/agent_config.py`:
 - Dentists: `464353754` (numeric property ID)
 - Property: `14279101919` (numeric stream ID from GA4)
+- Solicitors: `14301281732` (Stream ID from GA4)
 
 #### For GitHub Actions
 
@@ -232,6 +243,6 @@ Total analyzed: Z pages across 2 niches
 
 ---
 
-**Last Updated**: 2026-03-30  
+**Last Updated**: 2026-04-02  
 **Estimated Setup Time**: 35 minutes total  
 **Difficulty**: Beginner-Intermediate

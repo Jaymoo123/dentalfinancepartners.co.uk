@@ -244,7 +244,7 @@ They stay and convert based on:
 | # | Issue | Impact | Details |
 |---|-------|--------|---------|
 | S1 | **www/non-www canonical mismatch on ALL 70 posts** | Split SEO signals between www and non-www | Canonicals: `accountsforlawyers.co.uk` (no www), config: `www.accountsforlawyers.co.uk` |
-| S2 | **Placeholder GA ID** | Zero analytics | `G-SOLICITORS-PLACEHOLDER` |
+| S2 | ~~**Placeholder GA ID**~~ ✅ FIXED | Now tracking | `G-N6ZPRB3DSQ` |
 | S3 | **Placeholder Google verification** | Can't verify GSC | `SOLICITORS-VERIFICATION-PLACEHOLDER` |
 | S4 | **`public/robots.txt` points to MEDICAL domain** | Completely wrong domain | Contains `Sitemap: https://www.medicalaccounts.co.uk/sitemap.xml` — copy-paste error |
 | S5 | **Placeholder phone number** | No real contact | `+44 20 0000 0000` |
@@ -306,7 +306,7 @@ They stay and convert based on:
 | Dentists | ✅ Live | `G-273RJY0LZQ` |
 | Property | ⚠️ Verify | `G-B5MCP5NGMY` (may be real) |
 | Medical | ❌ Placeholder | `G-MEDICAL-PLACEHOLDER` |
-| Solicitors | ❌ Placeholder | `G-SOLICITORS-PLACEHOLDER` |
+| Solicitors | ✅ Live | `G-N6ZPRB3DSQ` |
 
 ### 4.4 robots.txt Conflicts
 
@@ -635,7 +635,7 @@ These are revenue-blocking issues that should be fixed immediately.
 |---|--------|-------|--------|
 | 7.1 | **Deploy Medical** — Vercel project, domain, env vars, GA4, GSC | Medical | Launch new revenue channel |
 | 7.2 | **Deploy Solicitors** — same as Medical | Solicitors | Launch new revenue channel |
-| 7.3 | **Set up real GA4 properties** for Property, Medical, Solicitors | 3 sites | Analytics tracking |
+| 7.3 | **Set up real GA4 properties** for Medical (Solicitors ✅ done: `G-N6ZPRB3DSQ`) | 1 site remaining | Analytics tracking |
 | 7.4 | **Set up GSC verification** for Property, Medical, Solicitors | 3 sites | Search performance data |
 | 7.5 | **Submit sitemaps** to GSC for all sites | ALL | Accelerate indexing |
 

@@ -44,12 +44,12 @@ NICHE_CONFIG = {
         "ga4_property_id": "000000000",  # Add after GA4 property creation
     },
     "Solicitors": {
-        "enabled": False,  # Enable after GA4 setup and initial deployment
+        "enabled": True,
         "blog_topics_table": "blog_topics_solicitors",
         "web_path": "Solicitors/web",
         "source_identifier": "solicitors",
-        "ga4_measurement_id": "G-SOLICITORS-PLACEHOLDER",
-        "ga4_property_id": "000000000",  # Add after GA4 property creation
+        "ga4_measurement_id": "G-N6ZPRB3DSQ",
+        "ga4_property_id": "14301281732",
     },
 }
 
