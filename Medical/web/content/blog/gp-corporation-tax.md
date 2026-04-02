@@ -1,7 +1,7 @@
 ---
 title: "GP Corporation Tax: Complete Guide for UK Medical Professionals"
 slug: "gp-corporation-tax"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-corporation-tax"
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "Incorporation & Company Structures"

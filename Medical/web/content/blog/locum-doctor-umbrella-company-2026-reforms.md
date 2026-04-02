@@ -11,7 +11,7 @@ image: ""
 h1: "Locum Doctor Umbrella Company 2026 Reforms: What You Need to Know"
 summary: "The 2026 umbrella company reforms will significantly impact how locum doctors work through these arrangements. New compliance rules, reporting requirements, and tax changes are coming into effect."
 schema: ""
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/locum-doctor-umbrella-company-2026-reforms"
 faqs:
   - question: "When do the locum doctor umbrella company 2026 reforms take effect?"
     answer: "The umbrella company reforms take effect from April 2026. However, umbrella companies need to start preparing now to obtain their licences, and some may begin implementing changes earlier to ensure compliance."

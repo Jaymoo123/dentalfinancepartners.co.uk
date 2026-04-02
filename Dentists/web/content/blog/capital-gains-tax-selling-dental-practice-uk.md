@@ -5,7 +5,7 @@ canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/capita
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "Practice finance"
-metaTitle: "Capital Gains Tax on Dental Practice Sale UK | CGT Guide 2024"
+metaTitle: "Capital Gains Tax on Dental Practice Sale UK | CGT Guide 2026"
 metaDescription: "Complete guide to capital gains tax when selling your dental practice. CGT rates, reliefs, and strategies to minimise tax on practice sale in the UK."
 altText: "UK dentist reviewing capital gains tax calculations for dental practice sale"
 image: ""

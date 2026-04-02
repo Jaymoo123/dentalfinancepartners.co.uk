@@ -15,6 +15,11 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/contact`,
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Medical Accountants UK",
+    description: "Book free consultation for GP accounting and medical tax advice. 24-hour response time.",
+  },
 };
 
 export default function ContactPage() {

@@ -1,10 +1,10 @@
 ---
 title: "GP Accountant Liverpool: Specialist Tax and Financial Services for Medical Professionals"
 slug: "gp-accountant-liverpool"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-liverpool"
 date: "2026-04-01"
 author: "Medical Accounts"
-category: "GP Tax & Accounts"
+category: "GP Accountant Services"
 metaTitle: "GP Accountant Liverpool | Medical Tax Specialists | Medical Accounts"
 metaDescription: "Expert GP accountant services in Liverpool. Specialist tax advice for GP partners, locums, and consultants. NHS pension planning and medical practice accounts."
 altText: "Liverpool medical professionals reviewing financial documents with specialist GP accountant"

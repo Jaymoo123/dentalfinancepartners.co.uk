@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   title: "Privacy policy",
   description: `How ${siteConfig.name} collects and uses personal data on this website. UK GDPR compliant.`,
   alternates: { canonical: `${siteConfig.url}/privacy-policy` },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy policy",
+    description: `How ${siteConfig.name} collects and uses personal data on this website. UK GDPR compliant.`,
+  },
 };
 
 export default function PrivacyPolicyPage() {

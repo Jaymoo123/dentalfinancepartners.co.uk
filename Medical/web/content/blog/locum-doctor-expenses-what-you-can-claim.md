@@ -1,7 +1,7 @@
 ---
 title: "Locum Doctor Expenses: What You Can Claim - Complete Guide"
 slug: "locum-doctor-expenses-what-you-can-claim"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/locum-doctor-expenses-what-you-can-claim"
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "Locum Tax"

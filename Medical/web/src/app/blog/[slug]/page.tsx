@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BlogPostRenderer } from "@/components/blog/BlogPostRenderer";
 import { siteConfig } from "@/config/site";
+import { buildOgImageUrl } from "@/lib/schema";
 import { getAllPosts, getPostBySlug, getRelatedPosts } from "@/lib/blog";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -17,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {};
   }
   const canonical = post.canonical || `${siteConfig.url}/blog/${post.slug}`;
-  const ogImage = post.image || siteConfig.publisherLogoUrl;
+  const ogImage = post.image || buildOgImageUrl(post.h1, post.category);
   
   return {
     title: post.metaTitle,
@@ -29,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: canonical,
       type: "article",
       publishedTime: post.date,
-      images: [{ url: ogImage, alt: post.title }],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
     },
     twitter: {
       card: "summary_large_image",

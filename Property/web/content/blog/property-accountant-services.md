@@ -1,10 +1,10 @@
 ---
 title: "Property Accountant Services: Expert Tax and Advisory Solutions for UK Landlords"
 slug: "property-accountant-services"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/property-accountant-services"
+canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/property-accountant-services"
 date: "2026-03-31"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Property Accountant Services"
 metaTitle: "Property Accountant Services | Expert UK Property Tax Advice"
 metaDescription: "Specialist property accountant services for UK landlords. Expert tax planning, compliance, and advisory solutions for buy-to-let and property portfolios."
 altText: "UK property accountant working with landlord client reviewing property tax documents and financial statements"
@@ -176,7 +176,7 @@ faqs:
 <h2>What Makes Property Accounting Different</h2>
 <p>Property investment accounting involves unique considerations that general accountants may not fully understand. Rental income, allowable expenses, capital allowances, and mortgage interest restrictions all require specialist knowledge.</p>
 
-<p>For example, a landlord with 3 BTL properties earning £45,000 annual rental income faces different challenges than a typical business owner. Section 24 mortgage interest restrictions, capital gains planning, and the upcoming <a href="/mtd">Making Tax Digital requirements</a> all impact your accounting approach.</p>
+<p>For example, a landlord with 3 BTL properties earning £45,000 annual rental income faces different challenges than a typical business owner. Section 24 mortgage interest restrictions, capital gains planning, and the upcoming <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> all impact your accounting approach.</p>
 
 <p>Property-focused accountants understand these nuances and structure their services accordingly. They know which expenses are allowable, how to claim capital allowances effectively, and when <a href="/incorporation">incorporation might benefit</a> your tax position.</p>
 

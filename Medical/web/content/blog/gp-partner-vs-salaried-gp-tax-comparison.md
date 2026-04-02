@@ -1,11 +1,11 @@
 ---
 title: "GP Partner vs Salaried GP Tax Comparison: Complete Guide for 2026/26"
 slug: "gp-partner-vs-salaried-gp-tax-comparison"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-partner-vs-salaried-gp-tax-comparison"
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "GP Tax & Accounts"
-metaTitle: "GP Partner vs Salaried GP Tax Comparison 2025/26 Guide"
+metaTitle: "GP Partner vs Salaried GP Tax Comparison 2026 Guide"
 metaDescription: "Complete tax comparison between GP partners and salaried GPs. Compare income tax, National Insurance, pension contributions and take-home pay in 2026/26."
 altText: "UK medical professionals reviewing tax documents comparing GP partner versus salaried GP tax implications"
 image: ""

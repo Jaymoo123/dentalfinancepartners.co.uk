@@ -1,7 +1,7 @@
 ---
 title: "Dental Practice VAT & Compliance: Complete Guide for UK Dentists"
 slug: "dental-practice-vat-compliance-guide-uk"
-canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-compliance/dental-practice-vat-compliance-guide-uk"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/dental-practice-vat-compliance-guide-uk"
 date: "2026-04-01"
 author: "Dental Finance Partners"
 category: "VAT & compliance"

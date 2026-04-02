@@ -1,10 +1,10 @@
 ---
 title: "Professional Accountant Tax Planning Services for UK Property Investors"
 slug: "accountant-tax-planning-services"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/accountant-tax-planning-services"
+canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/accountant-tax-planning-services"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Landlord Tax Essentials"
 metaTitle: "Accountant Tax Planning Services | Property Tax Partners"
 metaDescription: "Expert accountant tax planning services for UK landlords and property investors. Maximise tax efficiency and compliance with specialist property accountants."
 altText: "UK property accountant providing tax planning advice to landlord client in professional office setting"

@@ -5,7 +5,7 @@ canonical: "https://www.accountsforlawyers.co.uk/blog/sole-practitioner-tax/maki
 date: "2026-04-01"
 author: "Accounts for Lawyers"
 category: "Sole Practitioner Tax"
-metaTitle: "Making Tax Digital Solicitors Guide | MTD Compliance 2025"
+metaTitle: "Making Tax Digital Solicitors Guide | MTD Compliance 2026"
 metaDescription: "Complete guide to Making Tax Digital for solicitors. VAT, Income Tax, and Corporation Tax requirements for law firms and sole practitioners in 2026/26."
 altText: "UK solicitor working on laptop with Making Tax Digital compliance software for law firm tax obligations"
 image: ""

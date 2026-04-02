@@ -1,10 +1,10 @@
 ---
 title: "How to Become a Property Accountant: Complete UK Career Guide"
 slug: "how-to-become-property-accountant"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/how-to-become-property-accountant"
+canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/how-to-become-property-accountant"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Property Accountant Services"
 metaTitle: "How to Become Property Accountant UK: Career Guide 2026"
 metaDescription: "Complete guide on how to become property accountant in UK. Qualifications, skills, salary expectations & career paths. Start your property accounting career."
 altText: "Professional accountant working on property calculations and tax documents in modern UK office"

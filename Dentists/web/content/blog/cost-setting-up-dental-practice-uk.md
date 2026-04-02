@@ -5,7 +5,7 @@ canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/cost-s
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "Practice finance"
-metaTitle: "Cost of Setting Up a Dental Practice UK | Complete Guide 2024"
+metaTitle: "Cost of Setting Up a Dental Practice UK | Complete Guide 2026"
 metaDescription: "Complete breakdown of startup costs for new dental practices in the UK. Equipment, premises, legal fees and working capital requirements explained."
 altText: "Modern UK dental practice interior showing equipment and treatment rooms representing startup costs"
 image: ""

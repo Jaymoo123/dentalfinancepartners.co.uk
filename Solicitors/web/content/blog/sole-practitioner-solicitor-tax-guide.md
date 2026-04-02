@@ -5,7 +5,7 @@ canonical: "https://www.accountsforlawyers.co.uk/blog/sole-practitioner-tax/sole
 date: "2026-04-01"
 author: "Accounts for Lawyers"
 category: "Sole Practitioner Tax"
-metaTitle: "Sole Practitioner Solicitor Tax Guide 2026/26 | UK Legal"
+metaTitle: "Sole Practitioner Solicitor Tax Guide 2026/27 | UK Legal"
 metaDescription: "Complete guide to sole practitioner solicitor tax obligations, self-assessment, MTD compliance, and tax planning strategies for UK legal practices."
 altText: "UK solicitor working on tax documents and self-assessment forms at desk"
 image: ""

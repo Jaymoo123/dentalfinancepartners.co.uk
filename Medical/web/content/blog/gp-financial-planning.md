@@ -1,10 +1,10 @@
 ---
 title: "GP Financial Planning: A Complete Guide for UK General Practitioners"
 slug: "gp-financial-planning"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-financial-planning"
 date: "2026-04-01"
 author: "Medical Accounts"
-category: "GP Tax & Accounts"
+category: "GP Practice Management"
 metaTitle: "GP Financial Planning Guide 2026 | Medical Accounts"
 metaDescription: "Complete GP financial planning guide covering pensions, tax strategies, insurance, and investments for UK general practitioners. Expert advice for GPs."
 altText: "UK GP reviewing financial planning documents and pension statements"

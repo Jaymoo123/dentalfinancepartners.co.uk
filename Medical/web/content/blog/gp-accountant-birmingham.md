@@ -1,10 +1,10 @@
 ---
 title: "GP Accountant Birmingham: Specialist Medical Accounting Services"
 slug: "gp-accountant-birmingham"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-birmingham"
 date: "2026-04-01"
 author: "Medical Accounts"
-category: "GP Tax & Accounts"
+category: "GP Accountant Services"
 metaTitle: "GP Accountant Birmingham | Medical Accounts Specialists"
 metaDescription: "Expert GP accountant Birmingham services for NHS partners, salaried GPs and locums. Specialist medical accounting, tax planning and NHS pension advice."
 altText: "Professional accountant working with GP practice financial documents in Birmingham office"

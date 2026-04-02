@@ -1,10 +1,10 @@
 ---
 title: "London Property Accountant: Expert Tax Services for Property Investors"
 slug: "london-property-accountant"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/london-property-accountant"
+canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/london-property-accountant"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Property Accountant Services"
 metaTitle: "London Property Accountant | Expert Tax Services | PTP"
 metaDescription: "Specialist London property accountant services for landlords and investors. Expert advice on Section 24, incorporation, MTD compliance, and tax planning."
 altText: "Professional London property accountant reviewing rental property tax returns and financial documents"

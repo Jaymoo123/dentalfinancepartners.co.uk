@@ -11,7 +11,7 @@ image: ""
 h1: "GP Tax Deductions Complete List 2026: What You Can and Cannot Claim"
 summary: "Comprehensive breakdown of all allowable tax deductions for GPs in 2026, covering professional expenses, travel costs, and equipment claims with practical examples."
 schema: ""
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-tax-deductions-complete-list-2026"
 faqs:
   - question: "What expenses can GP partners claim that salaried GPs cannot?"
     answer: "GP partners can claim a much broader range of expenses through their partnership, including practice premises costs, staff wages, equipment purchases, and business development expenses. Salaried GPs are limited to personal professional expenses like GMC fees, CPD costs, and additional work-related travel beyond normal commuting, as their employer should provide basic practice facilities and equipment."

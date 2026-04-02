@@ -5,7 +5,7 @@ canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/payment-o
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "Associate tax"
-metaTitle: "Payment on Account for UK Dentists: POA Tax Guide 2024"
+metaTitle: "Payment on Account for UK Dentists: POA Tax Guide 2026"
 metaDescription: "Complete guide to payment on account for UK dentists. Learn when POA applies, how to calculate payments, and key deadlines for HMRC tax payments."
 altText: "UK dentist reviewing payment on account calculations and HMRC tax deadlines"
 image: ""

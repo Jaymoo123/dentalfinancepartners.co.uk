@@ -1,10 +1,10 @@
 ---
 title: "GP Accountant Leeds: Specialist Medical Accounting Services"
 slug: "gp-accountant-leeds"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-leeds"
 date: "2026-04-01"
 author: "Medical Accounts"
-category: "GP Tax & Accounts"
+category: "GP Accountant Services"
 metaTitle: "GP Accountant Leeds | Specialist Medical Tax Services"
 metaDescription: "Expert GP accountant in Leeds offering specialist medical tax, NHS pension planning, and practice accounting services. Free consultation for Leeds GPs."
 altText: "Leeds GP surgery with medical professionals discussing financial planning"

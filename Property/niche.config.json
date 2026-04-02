@@ -87,7 +87,9 @@
       "Incorporation & Company Structures",
       "Making Tax Digital (MTD)",
       "Capital Gains Tax",
-      "Portfolio Management"
+      "Portfolio Management",
+      "Property Accountant Services",
+      "Landlord Tax Essentials"
     ],
     "supabase_table": "blog_topics_property",
     "source_identifier": "property"
@@ -103,7 +105,7 @@
       "Bristol"
     ],
     "google_analytics_id": "G-B5MCP5NGMY",
-    "google_site_verification": "PROPERTY-VERIFICATION-PLACEHOLDER",
+    "google_site_verification": "",
     "theme_color": "#047857"
   },
   "lead_form": {

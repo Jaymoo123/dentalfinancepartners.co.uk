@@ -1,11 +1,11 @@
 ---
 title: "Facial Aesthetics and VAT: What UK Dental Practices Need to Know"
 slug: "facial-aesthetics-vat-uk-dental-practices"
-canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-compliance/facial-aesthetics-vat-uk-dental-practices"
+canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/facial-aesthetics-vat-uk-dental-practices"
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "VAT & compliance"
-metaTitle: "Facial Aesthetics VAT Guide for UK Dental Practices 2024"
+metaTitle: "Facial Aesthetics VAT Guide for UK Dental Practices 2026"
 metaDescription: "Complete guide to facial aesthetics VAT for UK dentists. Learn about botox VAT, cosmetic treatment VAT rules, and compliance requirements for aesthetic services."
 altText: "UK dental professional administering facial aesthetic treatment in clinical setting"
 image: ""

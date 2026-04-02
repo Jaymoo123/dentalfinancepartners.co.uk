@@ -1,10 +1,10 @@
 ---
 title: "GP Accountant Glasgow: Specialist Tax and Financial Services for Medical Professionals"
 slug: "gp-accountant-glasgow"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-glasgow"
 date: "2026-04-01"
 author: "Medical Accounts"
-category: "GP Tax & Accounts"
+category: "GP Accountant Services"
 metaTitle: "GP Accountant Glasgow | Medical Tax & Accounting Specialists"
 metaDescription: "Find a specialist GP accountant in Glasgow. Expert medical accounting, tax planning, NHS pension advice and practice management for GPs and consultants."
 altText: "Glasgow city skyline with medical professionals discussing financial planning"

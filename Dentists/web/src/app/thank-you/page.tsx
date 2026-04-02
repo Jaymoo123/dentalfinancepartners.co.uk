@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: "Thank you",
   description: "Your enquiry has been received.",
   robots: { index: false, follow: true },
+  twitter: {
+    card: "summary",
+    title: "Thank you",
+    description: "Your enquiry has been received.",
+  },
 };
 
 export default function ThankYouPage() {

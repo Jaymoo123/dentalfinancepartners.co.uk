@@ -15,8 +15,19 @@ export function buildBreadcrumbJsonLd(items: BreadcrumbItem[]) {
   });
 }
 
+/** Build OG image URL for a blog post based on category and title */
+export function buildOgImageUrl(title: string, category?: string) {
+  const params = new URLSearchParams({ title });
+  if (category) params.set("category", category);
+  return `${siteConfig.url}/api/og?${params.toString()}`;
+}
+
 export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
   const url = `${siteConfig.url}${path}`;
+  const imageUrl = post.image
+    ? (post.image.startsWith("http") ? post.image : `${siteConfig.url}${post.image}`)
+    : buildOgImageUrl(post.h1, post.category);
+
   const faq =
     post.faqs && post.faqs.length > 0
       ? {
@@ -33,23 +44,14 @@ export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
         }
       : null;
 
-  const authorOrg = {
+  const publisher = {
     "@type": "Organization" as const,
     "@id": `${siteConfig.url}#organization`,
     name: siteConfig.name,
-    legalName: siteConfig.legalName,
     url: siteConfig.url,
-    description: siteConfig.description,
     logo: {
       "@type": "ImageObject" as const,
       url: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
-    },
-    contactPoint: {
-      "@type": "ContactPoint" as const,
-      email: siteConfig.contact.email,
-      telephone: siteConfig.contact.phone,
-      contactType: "customer service",
-      availableLanguage: "English",
     },
   };
 
@@ -59,10 +61,15 @@ export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
     "@id": `${url}#article`,
     headline: post.h1,
     description: post.metaDescription,
+    image: imageUrl,
     datePublished: post.date,
     dateModified: post.date,
-    author: authorOrg,
-    publisher: authorOrg,
+    author: {
+      "@type": "Person" as const,
+      name: `${siteConfig.name} Editorial Team`,
+      url: `${siteConfig.url}/about`,
+    },
+    publisher,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": url,

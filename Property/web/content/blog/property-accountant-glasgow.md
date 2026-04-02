@@ -1,10 +1,10 @@
 ---
 title: "Property Accountant Glasgow: Expert Tax Services for Landlords"
 slug: "property-accountant-glasgow"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/property-accountant-glasgow"
+canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/property-accountant-glasgow"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Property Accountant Services"
 metaTitle: "Property Accountant Glasgow | UK Landlord Tax Specialists"
 metaDescription: "Expert property accountant Glasgow services for UK landlords. Specialist tax advice, Section 24 planning, MTD compliance & incorporation guidance."
 altText: "Professional property accountant working with Glasgow landlord on tax returns and property investment planning"

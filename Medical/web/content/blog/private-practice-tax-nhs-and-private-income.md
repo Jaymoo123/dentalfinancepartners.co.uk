@@ -1,7 +1,7 @@
 ---
 title: "Private Practice Tax: Managing NHS and Private Income"
 slug: "private-practice-tax-nhs-and-private-income"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/private-practice-tax-nhs-and-private-income"
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "Private Practice"

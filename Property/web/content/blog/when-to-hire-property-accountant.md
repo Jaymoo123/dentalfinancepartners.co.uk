@@ -1,10 +1,10 @@
 ---
 title: "When to Hire a Property Accountant: A UK Landlord's Guide"
 slug: "when-to-hire-property-accountant"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/when-to-hire-property-accountant"
+canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/when-to-hire-property-accountant"
 date: "2026-03-31"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Property Accountant Services"
 metaTitle: "When to Hire a Property Accountant | UK Landlord Guide"
 metaDescription: "Discover the key signs it's time to hire a property accountant. From Section 24 to MTD compliance, learn when professional help pays for itself."
 altText: "UK property accountant reviewing landlord tax documents and rental property financial statements"

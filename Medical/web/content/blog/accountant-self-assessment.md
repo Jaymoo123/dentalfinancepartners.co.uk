@@ -1,10 +1,10 @@
 ---
 title: "Accountant Self Assessment for UK Medical Professionals: Complete Guide"
 slug: "accountant-self-assessment"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/accountant-self-assessment"
 date: "2026-04-01"
 author: "Medical Accounts"
-category: "GP Tax & Accounts"
+category: "GP Accountant Services"
 metaTitle: "Accountant Self Assessment Guide for UK Doctors & GPs"
 metaDescription: "Expert guide to accountant self assessment for UK medical professionals. Learn when you need professional help with tax returns, costs, and choosing the right specialist."
 altText: "UK medical professional reviewing tax documents with specialist accountant"

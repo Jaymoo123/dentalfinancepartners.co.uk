@@ -1,10 +1,10 @@
 ---
 title: "Rental Yield Calculator Guide for UK Landlords"
 slug: "rental-yield-calculator-guide-uk-landlords"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/rental-yield-calculator-guide-uk-landlords"
+canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/rental-yield-calculator-guide-uk-landlords"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Landlord Tax Essentials"
 metaTitle: "Rental Yield Calculator Guide for UK Landlords | 2026"
 metaDescription: "Master rental yield calculations with our comprehensive guide. Learn gross vs net yield, what's a good return, and how to maximize your property investment profits."
 altText: "UK property investor using rental yield calculator on laptop with property documents and keys"

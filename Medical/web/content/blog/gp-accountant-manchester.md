@@ -1,10 +1,10 @@
 ---
 title: "GP Accountant Manchester: Specialist Tax & Financial Services for Medical Professionals"
 slug: "gp-accountant-manchester"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-manchester"
 date: "2026-04-01"
 author: "Medical Accounts"
-category: "GP Tax & Accounts"
+category: "GP Accountant Services"
 metaTitle: "GP Accountant Manchester | Medical Tax Specialists"
 metaDescription: "Leading GP accountant in Manchester. Specialist tax services for GP partners, salaried GPs, and locums. NHS pension planning, practice accounts, and medical compliance."
 altText: "Professional accountant meeting with GP partner in Manchester office discussing tax planning and practice finances"

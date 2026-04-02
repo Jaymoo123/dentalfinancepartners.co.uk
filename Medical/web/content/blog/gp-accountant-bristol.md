@@ -1,10 +1,10 @@
 ---
 title: "GP Accountant Bristol: Specialist Medical Accounting Services"
 slug: "gp-accountant-bristol"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-bristol"
 date: "2026-04-01"
 author: "Medical Accounts"
-category: "GP Tax & Accounts"
+category: "GP Accountant Services"
 metaTitle: "GP Accountant Bristol | Medical Tax Specialists | Medical Accounts"
 metaDescription: "Leading GP accountant Bristol services. NHS pension planning, partnership accounts, locum tax advice. Free consultation for Bristol medical professionals."
 altText: "Bristol GP practice accountant meeting with medical professionals to discuss tax planning and NHS pension optimization"

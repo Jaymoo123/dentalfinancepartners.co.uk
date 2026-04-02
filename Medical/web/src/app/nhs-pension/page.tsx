@@ -18,6 +18,11 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/nhs-pension`,
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "NHS Pension Planning | Annual Allowance & Tax Charge Calculator",
+    description: "Calculate tapered annual allowance and tax charges. Specialist NHS pension advice for UK doctors.",
+  },
 };
 
 const whenYouNeedHelp = [

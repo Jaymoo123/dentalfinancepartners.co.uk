@@ -1,11 +1,11 @@
 ---
 title: "GP Limited Company Tax Benefits and Drawbacks: Complete Guide"
 slug: "gp-limited-company-tax-benefits-drawbacks"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-limited-company-tax-benefits-drawbacks"
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "Incorporation & Company Structures"
-metaTitle: "GP Limited Company Tax Benefits & Drawbacks 2025 Guide"
+metaTitle: "GP Limited Company Tax Benefits & Drawbacks 2026 Guide"
 metaDescription: "Comprehensive guide to GP limited company tax benefits and drawbacks. Expert analysis of incorporation vs partnership for UK medical professionals."
 altText: "UK GP considering limited company incorporation with tax documents and calculator"
 image: ""

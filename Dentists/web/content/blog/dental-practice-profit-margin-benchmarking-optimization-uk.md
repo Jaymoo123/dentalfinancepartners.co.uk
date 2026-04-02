@@ -5,7 +5,7 @@ canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/dental
 date: "2026-04-01"
 author: "Dental Finance Partners"
 category: "Practice finance"
-metaTitle: "Dental Practice Profit Margin: UK Benchmarking Guide 2024"
+metaTitle: "Dental Practice Profit Margin: UK Benchmarking Guide 2026"
 metaDescription: "Discover UK dental practice profit margin benchmarks, optimization strategies, and key metrics to improve your practice's financial performance."
 altText: "UK dental practice owner reviewing financial reports and profit margin analysis on computer screen"
 image: ""

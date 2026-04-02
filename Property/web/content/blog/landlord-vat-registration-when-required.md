@@ -1,10 +1,10 @@
 ---
 title: "Landlord VAT Registration: When Is It Required?"
 slug: "landlord-vat-registration-when-required"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/landlord-vat-registration-when-required"
+canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/landlord-vat-registration-when-required"
 date: "2026-03-31"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Landlord Tax Essentials"
 metaTitle: "Landlord VAT Registration: When Required & How to Register"
 metaDescription: "Find out when UK landlords need VAT registration, current thresholds, and how property business rates affect your obligations. Complete guide for 2026/26."
 altText: "UK landlord reviewing VAT registration documents with calculator and property paperwork"

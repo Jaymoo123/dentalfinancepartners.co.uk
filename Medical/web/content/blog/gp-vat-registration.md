@@ -1,10 +1,10 @@
 ---
 title: "GP VAT Registration: Complete Guide for UK Medical Practices"
 slug: "gp-vat-registration"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-vat-registration"
 date: "2026-04-01"
 author: "Medical Accounts"
-category: "GP Tax & Accounts"
+category: "GP Practice Management"
 metaTitle: "GP VAT Registration Guide - When to Register Your Practice"
 metaDescription: "Complete guide to GP VAT registration for UK medical practices. Learn thresholds, exemptions, and when VAT registration makes sense for your practice."
 altText: "UK GP practice VAT registration paperwork on desk with calculator and medical stethoscope"

@@ -1,10 +1,10 @@
 ---
 title: "Finding the Best Property Accountant in London: A Landlord's Guide"
 slug: "best-property-accountant-london"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/best-property-accountant-london"
+canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/best-property-accountant-london"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Property Accountant Services"
 metaTitle: "Best Property Accountant London | UK Property Tax Partners"
 metaDescription: "Find the best property accountant in London for your rental portfolio. Expert guidance on what to look for, costs, and specialist property tax advice."
 altText: "Professional property accountant working on UK rental property tax calculations in modern London office"

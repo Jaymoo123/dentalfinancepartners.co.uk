@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { CTASection } from "@/components/ui/CTASection";
 import { btnPrimary, contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
-import { getAllPosts } from "@/lib/blog";
+import { getAllPosts, getCategorySlug } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildLocalBusinessJsonLd } from "@/lib/local-business-schema";
 
@@ -104,7 +104,7 @@ export default async function LocationPage({ params }: Props) {
     legalName: siteConfig.legalName,
     description: content.intro,
     url: `${siteConfig.url}/locations/${slug}`,
-    logo: siteConfig.publisherLogoUrl,
+    logo: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
     email: siteConfig.contact.email,
     phone: siteConfig.contact.phone,
     areaServed: content.areas,
@@ -179,7 +179,7 @@ export default async function LocationPage({ params }: Props) {
         {posts.map((p) => (
           <li key={p.slug}>
             <Link
-              href={`/blog/${p.slug}`}
+              href={`/blog/${getCategorySlug(p)}/${p.slug}`}
               className={`inline-flex min-h-10 items-center text-[var(--accent-strong)] underline ${focusRing} rounded`}
             >
               {p.title}

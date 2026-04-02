@@ -5,7 +5,7 @@ canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/nhs-super
 date: "2026-03-28"
 author: "Dental Finance Partners"
 category: "Associate tax"
-metaTitle: "NHS Pension Annual Allowance for UK Dentists | Tax Guide 2024"
+metaTitle: "NHS Pension Annual Allowance for UK Dentists | Tax Guide 2026"
 metaDescription: "Complete guide to NHS superannuation and pension annual allowance for UK dentists. Understand your pension contributions, tax implications, and planning strategies."
 altText: "UK dentist reviewing NHS pension documentation and annual allowance calculations at desk"
 image: ""

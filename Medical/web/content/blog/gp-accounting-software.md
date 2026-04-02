@@ -1,10 +1,10 @@
 ---
 title: "GP Accounting Software: Essential Guide for UK Medical Practices"
 slug: "gp-accounting-software"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accounting-software"
 date: "2026-04-01"
 author: "Medical Accounts"
-category: "GP Tax & Accounts"
+category: "GP Practice Management"
 metaTitle: "GP Accounting Software Guide | UK Medical Practice Finance"
 metaDescription: "Compare GP accounting software options for UK practices. Features, costs, and integration with NHS systems. Expert guidance for practice managers and partners."
 altText: "GP practice manager using accounting software on computer screen showing financial dashboard"

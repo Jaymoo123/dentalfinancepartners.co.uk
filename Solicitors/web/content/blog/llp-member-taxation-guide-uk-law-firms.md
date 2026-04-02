@@ -5,7 +5,7 @@ canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting
 date: "2026-04-01"
 author: "Accounts for Lawyers"
 category: "Partnership & LLP Accounting"
-metaTitle: "LLP Member Taxation: Complete UK Guide for Law Firms 2025"
+metaTitle: "LLP Member Taxation: Complete UK Guide for Law Firms 2026"
 metaDescription: "Essential guide to LLP member taxation for UK law firms. Class 2 NICs, self-assessment, profit allocations and tax planning strategies explained."
 altText: "UK law firm partners discussing LLP member taxation and profit allocations in modern office setting"
 image: ""

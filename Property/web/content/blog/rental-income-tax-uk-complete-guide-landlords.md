@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief
 date: "2026-03-29"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"
-metaTitle: "Rental Income Tax UK: Complete Guide for Landlords 2025"
+metaTitle: "Rental Income Tax UK: Complete Guide for Landlords 2026"
 metaDescription: "Complete guide to UK rental income tax for landlords. Learn about tax rates, allowable expenses, Section 24 rules, and how to calculate your tax liability."
 altText: "UK landlord calculating rental income tax on laptop with property documents and calculator"
 image: ""

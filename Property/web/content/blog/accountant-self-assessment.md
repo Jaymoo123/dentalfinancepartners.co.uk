@@ -1,10 +1,10 @@
 ---
 title: "Accountant Self Assessment Services for UK Property Investors"
 slug: "accountant-self-assessment"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/accountant-self-assessment"
+canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/accountant-self-assessment"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Landlord Tax Essentials"
 metaTitle: "Accountant Self Assessment Services | Property Tax Partners"
 metaDescription: "Professional accountant self assessment services for UK landlords and property investors. Expert guidance on property income, deductions, and tax compliance."
 altText: "UK property accountant reviewing self assessment tax return for landlord client"

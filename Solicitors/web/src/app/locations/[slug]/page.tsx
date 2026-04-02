@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { CTASection } from "@/components/ui/CTASection";
 import { btnPrimary, contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
-import { getAllPosts } from "@/lib/blog";
+import { getAllPosts, getCategorySlug } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildLocalBusinessJsonLd } from "@/lib/local-business-schema";
 
@@ -170,7 +170,7 @@ export default async function LocationPage({ params }: Props) {
     legalName: siteConfig.legalName,
     description: siteConfig.description,
     url: `${siteConfig.url}/locations/${slug}`,
-    logo: siteConfig.publisherLogoUrl,
+    logo: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
     email: siteConfig.contact.email,
     phone: siteConfig.contact.phone,
     areaServed: content.areas,
@@ -182,7 +182,7 @@ export default async function LocationPage({ params }: Props) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        dangerouslySetInnerHTML={{ __html: localBusinessSchema }}
       />
       <div className={`${contentNarrow} ${sectionY}`}>
         <Breadcrumb
@@ -246,7 +246,7 @@ export default async function LocationPage({ params }: Props) {
               {localPosts.slice(0, 5).map((post) => (
                 <li key={post.slug} className="list-none">
                   <Link
-                    href={`/blog/${post.slug}`}
+                    href={`/blog/${getCategorySlug(post)}/${post.slug}`}
                     className={`card-flat block rounded-lg p-4 no-underline transition-shadow hover:shadow-md ${focusRing}`}
                   >
                     <span className="font-semibold text-[var(--primary)]">{post.title}</span>

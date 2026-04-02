@@ -1,10 +1,10 @@
 ---
 title: "Accountant Financial Planning for UK Property Investors"
 slug: "accountant-financial-planning-property-investors"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/accountant-financial-planning-property-investors"
+canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/accountant-financial-planning-property-investors"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Landlord Tax Essentials"
 metaTitle: "Accountant Financial Planning for UK Property Investors"
 metaDescription: "Discover how specialist accountant financial planning services help UK landlords optimise tax efficiency, structure portfolios, and maximise returns."
 altText: "UK property accountant discussing financial planning with landlord client"

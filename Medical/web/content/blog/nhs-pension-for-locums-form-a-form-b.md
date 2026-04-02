@@ -1,7 +1,7 @@
 ---
 title: "NHS Pension for Locums: Form A and Form B Guide"
 slug: "nhs-pension-for-locums-form-a-form-b"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/nhs-pension-for-locums-form-a-form-b"
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "NHS Pension Planning"

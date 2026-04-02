@@ -11,7 +11,7 @@ image: ""
 h1: "Locum Doctor Self Assessment Filing Guide: Complete Step-by-Step Process"
 summary: "Essential step-by-step guide for locum doctors filing self assessment returns. Covers deadlines, required forms, and common mistakes that could trigger HMRC investigations."
 schema: ""
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/locum-doctor-self-assessment-filing-guide"
 faqs:
   - question: "When is the deadline for locum doctor self assessment returns?"
     answer: "The deadline for online self assessment returns is 31 January following the end of the tax year. For the 2024/25 tax year, this means 31 January 2026. Paper returns have an earlier deadline of 31 October. Any tax owed is also due by 31 January to avoid interest charges."

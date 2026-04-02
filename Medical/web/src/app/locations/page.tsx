@@ -16,6 +16,11 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/locations`,
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "GP Accountants by Location | UK Medical Accounting",
+    description: `Specialist GP accounting and medical tax services across major UK cities. NHS pension planning, locum tax, private practice advice.`,
+  },
 };
 
 const cityLabel: Record<string, string> = {

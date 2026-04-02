@@ -1,10 +1,10 @@
 ---
 title: "GP Accountant Newcastle: Specialist Medical Accounting Services"
 slug: "gp-accountant-newcastle"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-newcastle"
 date: "2026-04-01"
 author: "Medical Accounts"
-category: "GP Tax & Accounts"
+category: "GP Accountant Services"
 metaTitle: "GP Accountant Newcastle | Medical Tax & Accounts Specialists"
 metaDescription: "Specialist GP accountant in Newcastle. Expert medical tax advice, NHS pension planning, and partnership accounts for Tyneside doctors. Book consultation today."
 altText: "Newcastle GP surgery exterior showing medical practice with accountant consultation"

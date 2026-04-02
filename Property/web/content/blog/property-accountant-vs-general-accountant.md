@@ -1,10 +1,10 @@
 ---
 title: "Property Accountant vs General Accountant: What's the Difference?"
 slug: "property-accountant-vs-general-accountant"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/property-accountant-vs-general-accountant"
+canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/property-accountant-vs-general-accountant"
 date: "2026-03-29"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Property Accountant Services"
 metaTitle: "Property Accountant vs General Accountant: Key Differences"
 metaDescription: "Discover why UK landlords need specialist property accountants. Learn the key differences in expertise, services, and cost savings compared to general accountants."
 altText: "UK property accountant reviewing rental property tax documents and calculations for landlords"

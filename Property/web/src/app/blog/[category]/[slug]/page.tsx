@@ -1,12 +1,14 @@
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import {
   getAllPosts,
+  getPostBySlug,
   getPostByCategoryAndSlug,
   getCategorySlug,
   getRelatedPosts,
 } from "@/lib/blog";
 import { siteConfig } from "@/config/site";
+import { buildOgImageUrl } from "@/lib/schema";
 import { BlogPostRenderer } from "@/components/blog/BlogPostRenderer";
 
 type Props = {
@@ -26,9 +28,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getPostByCategoryAndSlug(category, slug);
 
   if (!post) {
-    return {
-      title: "Article Not Found",
-    };
+    const bySlug = getPostBySlug(slug);
+    if (bySlug) return {};
+    return { title: "Article Not Found" };
   }
 
   return {
@@ -42,10 +44,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.metaDescription,
       type: "article",
       url: post.canonical,
-      siteName: "Property Tax Partners",
+      siteName: siteConfig.name,
       images: [
         {
-          url: post.image || `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
+          url: post.image || buildOgImageUrl(post.h1, post.category),
           width: 1200,
           height: 630,
           alt: post.altText || post.title,
@@ -56,7 +58,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: post.metaTitle,
       description: post.metaDescription,
-      images: [post.image || `${siteConfig.url}${siteConfig.publisherLogoUrl}`],
+      images: [post.image || buildOgImageUrl(post.h1, post.category)],
     },
   };
 }
@@ -66,6 +68,10 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getPostByCategoryAndSlug(category, slug);
 
   if (!post) {
+    const bySlug = getPostBySlug(slug);
+    if (bySlug) {
+      permanentRedirect(`/blog/${getCategorySlug(bySlug)}/${slug}`);
+    }
     notFound();
   }
 

@@ -1,10 +1,10 @@
 ---
 title: "Accountant VAT Registration: Expert Services for Property Investors"
 slug: "accountant-vat-registration-expert-services"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/accountant-vat-registration-expert-services"
+canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/accountant-vat-registration-expert-services"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Landlord Tax Essentials"
 metaTitle: "Accountant VAT Registration Services | Property Tax Partners"
 metaDescription: "Professional accountant VAT registration services for UK property investors. Expert guidance on VAT thresholds, compliance, and strategic planning."
 altText: "UK property accountant reviewing VAT registration documents at desk"

@@ -11,7 +11,7 @@ image: ""
 h1: "Medical Professional Expenses: What Is Claimable for UK Doctors"
 summary: "UK medical professionals can claim numerous tax-deductible expenses including GMC registration, professional indemnity, training costs, and equipment. Understanding what qualifies helps maximise your tax relief and reduce your overall tax bill."
 schema: ""
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/medical-professional-expenses-what-is-claimable"
 faqs:
   - question: "Can I claim GMC registration fees as a tax-deductible expense?"
     answer: "Yes, GMC registration fees are fully claimable as professional expenses for all UK doctors. The annual retention fee (currently £425) and any specialist registration fees are legitimate business expenses as they're required for professional practice. GP partners include these in practice accounts, while salaried doctors and locums claim them on self-assessment returns."

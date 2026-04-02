@@ -17,6 +17,11 @@ export const metadata: Metadata = {
     type: "website",
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Medical Accounting Services | GP Tax & NHS Pension Planning",
+    description: "Specialist medical accounting services for UK doctors. GP partnership accounts, NHS pension planning, locum tax returns, private practice incorporation, and consultant tax advice.",
+  },
 };
 
 const sections = [

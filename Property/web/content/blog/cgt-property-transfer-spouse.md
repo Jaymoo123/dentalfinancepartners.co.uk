@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/cgt-pro
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Capital Gains Tax"
-metaTitle: "CGT Property Transfer Spouse: Tax Exemption Rules 2025"
+metaTitle: "CGT Property Transfer Spouse: Tax Exemption Rules 2026"
 metaDescription: "Is CGT on property transfer to spouse exempt? Complete guide to spousal transfers, no gain no loss rules, and key exceptions UK landlords must know."
 altText: "UK couple reviewing property transfer documents with CGT exemption paperwork on desk"
 image: ""

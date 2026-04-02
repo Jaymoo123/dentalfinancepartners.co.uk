@@ -1,11 +1,11 @@
 ---
 title: "GP Partnership Tax: Complete Guide for 2026/26"
 slug: "gp-partnership-tax-complete-guide"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-partnership-tax-complete-guide"
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "GP Tax & Accounts"
-metaTitle: "GP Partnership Tax Complete Guide 2026/26 | Medical Accounts"
+metaTitle: "GP Partnership Tax Complete Guide 2026/27 | Medical Accounts"
 metaDescription: "Complete GP partnership tax guide covering profit sharing, basis period reform, expenses, NHS pension implications and tax planning strategies for 2026/26."
 altText: "GP partners reviewing partnership tax documents and financial statements"
 image: ""

@@ -1,10 +1,10 @@
 ---
 title: "Landlord Tax Return: Complete Guide 2026"
 slug: "landlord-tax-return-complete-guide-2026"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/landlord-tax-return-complete-guide-2026"
+canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/landlord-tax-return-complete-guide-2026"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Landlord Tax Essentials"
 metaTitle: "Landlord Tax Return Guide 2026 | UK Property Tax Returns"
 metaDescription: "Complete guide to UK landlord tax returns for 2026. Learn what forms to use, key deadlines, allowable expenses, and how to avoid HMRC penalties."
 altText: "UK landlord reviewing property tax return documents on desk with calculator and property keys"

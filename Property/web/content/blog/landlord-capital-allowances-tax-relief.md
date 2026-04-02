@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief
 date: "2026-03-31"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"
-metaTitle: "Landlord Capital Allowances Guide: Maximize Tax Relief 2025/26"
+metaTitle: "Landlord Capital Allowances Guide: Maximize Tax Relief 2026"
 metaDescription: "Complete guide to landlord capital allowances. Learn what qualifies, how to claim, and maximize tax relief on property equipment and fixtures."
 altText: "UK landlord reviewing capital allowances documentation for rental property equipment"
 image: ""

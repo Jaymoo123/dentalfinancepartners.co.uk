@@ -1,10 +1,10 @@
 ---
 title: "Professional Accountant Tax Advice for UK Property Investors"
 slug: "accountant-tax-advice-property-investors"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/accountant-tax-advice-property-investors"
+canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/accountant-tax-advice-property-investors"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Landlord Tax Essentials"
 metaTitle: "Accountant Tax Advice for UK Property Investors | PTP"
 metaDescription: "Expert accountant tax advice for UK landlords and property investors. Navigate Section 24, MTD, incorporation and capital gains with specialist support."
 altText: "UK property accountant providing tax advice to landlord reviewing financial documents"

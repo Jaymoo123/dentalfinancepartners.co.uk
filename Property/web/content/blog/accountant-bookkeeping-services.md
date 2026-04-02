@@ -1,10 +1,10 @@
 ---
 title: "Professional Accountant Bookkeeping Services for Property Investors"
 slug: "accountant-bookkeeping-services"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/accountant-bookkeeping-services"
+canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/accountant-bookkeeping-services"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Property Accountant Services"
 metaTitle: "Accountant Bookkeeping Services | Property Tax Partners"
 metaDescription: "Professional accountant bookkeeping services for UK landlords and property investors. Expert property accounting, tax compliance, and financial management."
 altText: "Professional accountant working on property bookkeeping with calculator and documents"

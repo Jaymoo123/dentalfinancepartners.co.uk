@@ -23,6 +23,11 @@ export const metadata: Metadata = {
     type: "website",
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "GP Accountants UK | Tax Specialists for Doctors",
+    description: "Medical accounting specialists for UK doctors. NHS pension optimization, locum tax returns, practice incorporation, and medical expense claims. Free consultation for GPs and consultants.",
+  },
 };
 
 const PRACTICAL_SLUGS = [

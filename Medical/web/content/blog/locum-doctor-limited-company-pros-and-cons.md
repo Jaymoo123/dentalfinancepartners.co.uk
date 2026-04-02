@@ -1,7 +1,7 @@
 ---
 title: "Locum Doctor Limited Company: Pros and Cons Explained"
 slug: "locum-doctor-limited-company-pros-and-cons"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/locum-doctor-limited-company-pros-and-cons"
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "Locum Tax"

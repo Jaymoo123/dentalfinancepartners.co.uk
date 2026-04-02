@@ -1,10 +1,10 @@
 ---
 title: "How to Choose a Property Accountant: Complete Guide for UK Landlords"
 slug: "how-to-choose-a-property-accountant"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/how-to-choose-a-property-accountant"
+canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/how-to-choose-a-property-accountant"
 date: "2026-03-31"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Property Accountant Services"
 metaTitle: "How to Choose a Property Accountant | UK Landlord Guide"
 metaDescription: "Essential guide for UK landlords on how to choose a property accountant. Compare fees, qualifications, services and find the right specialist for your portfolio."
 altText: "UK landlord reviewing property accountant qualifications and services on laptop"

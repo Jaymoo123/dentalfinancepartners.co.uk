@@ -19,6 +19,11 @@ export const metadata: Metadata = {
     type: "website",
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Medical Accountants UK | Specialist GP Accountants",
+    description: "Why we focus exclusively on UK medical professionals. Specialist GP accountants serving doctors, consultants, and practice owners with NHS pension expertise and medical tax planning.",
+  },
 };
 
 export default function AboutPage() {

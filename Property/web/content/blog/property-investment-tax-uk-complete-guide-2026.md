@@ -1,10 +1,10 @@
 ---
 title: "Property Investment Tax UK: Complete Guide 2026"
 slug: "property-investment-tax-uk-complete-guide-2026"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/property-investment-tax-uk-complete-guide-2026"
+canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Landlord Tax Essentials"
 metaTitle: "Property Investment Tax UK: Complete Guide 2026"
 metaDescription: "Complete guide to property investment tax UK 2026. Covers income tax, capital gains, Section 24, MTD requirements and tax planning strategies for landlords."
 altText: "UK landlord reviewing property investment tax documents and calculations on desk"

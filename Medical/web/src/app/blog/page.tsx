@@ -18,6 +18,11 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/blog`,
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Medical Accounting Blog | GP Tax & NHS Pension Advice",
+    description: "Expert articles on GP tax planning, NHS pension annual allowance, locum tax returns, and private practice accounting for UK doctors.",
+  },
 };
 
 export default function BlogIndexPage() {

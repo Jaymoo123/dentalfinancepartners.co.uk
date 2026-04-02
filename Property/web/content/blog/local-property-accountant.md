@@ -1,10 +1,10 @@
 ---
 title: "Local Property Accountant: Expert Services for UK Landlords"
 slug: "local-property-accountant"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/local-property-accountant"
+canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/local-property-accountant"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Property Accountant Services"
 metaTitle: "Local Property Accountant Services | Property Tax Partners"
 metaDescription: "Find expert local property accountant services for UK landlords. Specialist tax advice, compliance support, and portfolio management from qualified professionals."
 altText: "UK property accountant reviewing rental property documents and tax forms"

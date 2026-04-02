@@ -1,10 +1,10 @@
 ---
 title: "Why Every GP Needs a Specialist GP Accountant: Expert Tax and Financial Guidance"
 slug: "gp-accountant"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant"
 date: "2026-04-01"
 author: "Medical Accounts"
-category: "GP Tax & Accounts"
+category: "GP Accountant Services"
 metaTitle: "GP Accountant | Specialist Medical Accountants for GPs"
 metaDescription: "Find out why GPs need specialist accountants. Expert guidance on partnership accounts, NHS pension planning, and complex medical tax issues."
 altText: "GP meeting with specialist medical accountant to discuss partnership finances and tax planning"

@@ -1,10 +1,10 @@
 ---
 title: "GP Accountant Cost: What UK Medical Professionals Pay for Accounting Services"
 slug: "gp-accountant-cost"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-cost"
 date: "2026-04-01"
 author: "Medical Accounts"
-category: "GP Tax & Accounts"
+category: "GP Accountant Services"
 metaTitle: "GP Accountant Cost UK: Fees for Medical Accounting Services"
 metaDescription: "Complete guide to GP accountant costs in the UK. Compare fees for different services, understand pricing structures, and find value for money."
 altText: "UK medical professional reviewing accountant fees and services on laptop"

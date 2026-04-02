@@ -1,10 +1,10 @@
 ---
 title: "Birmingham Property Accountant: Expert Services for Local Landlords"
 slug: "birmingham-property-accountant"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/birmingham-property-accountant"
+canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/birmingham-property-accountant"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Property Accountant Services"
 metaTitle: "Birmingham Property Accountant | Expert Tax Services - PTP"
 metaDescription: "Specialist Birmingham property accountant services for landlords and investors. Expert guidance on Section 24, incorporation, MTD compliance and portfolio tax planning."
 altText: "Birmingham property accountant providing specialist tax services to local landlords and property investors"

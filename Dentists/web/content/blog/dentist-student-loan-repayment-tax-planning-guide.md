@@ -11,7 +11,7 @@ image: ""
 h1: "Dentist Student Loan Repayment: Tax & Planning Guide"
 summary: "UK dentists face complex student loan repayment obligations affecting their tax position. Understanding Plan 1, Plan 2, and postgraduate loan rules is essential for effective financial planning."
 schema: ""
-canonical: ""
+canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dentist-student-loan-repayment-tax-planning-guide"
 faqs:
   - question: "When do dentist student loan repayments start?"
     answer: "Student loan repayments start automatically once your income exceeds the relevant threshold for your loan plan. For Plan 2 loans (most current dentists), this is £27,295 annually. Repayments are typically deducted through PAYE for employed associates, or calculated through Self Assessment for self-employed dentists and practice owners."

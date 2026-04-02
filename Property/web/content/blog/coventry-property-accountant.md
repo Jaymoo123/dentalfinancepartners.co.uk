@@ -1,10 +1,10 @@
 ---
 title: "Coventry Property Accountant: Expert Services for Local Landlords"
 slug: "coventry-property-accountant"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/coventry-property-accountant"
+canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/coventry-property-accountant"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Property Accountant Services"
 metaTitle: "Coventry Property Accountant | Expert Tax Services for Landlords"
 metaDescription: "Expert Coventry property accountant services for local landlords. Specialist tax advice, compliance support, and strategic guidance for property investors."
 altText: "Professional accountant working with property tax documents in modern Coventry office"

@@ -1,10 +1,10 @@
 ---
 title: "Bristol Property Accountant: Expert Services for Local Landlords"
 slug: "bristol-property-accountant"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/bristol-property-accountant"
+canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/bristol-property-accountant"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Property Accountant Services"
 metaTitle: "Bristol Property Accountant - Expert Tax & Accounting Services"
 metaDescription: "Specialist Bristol property accountant services for landlords. Expert tax advice, compliance, and MTD support for Bristol property investors."
 altText: "Bristol property accountant working with UK landlord on tax planning and property portfolio management"

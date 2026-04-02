@@ -1,10 +1,10 @@
 ---
 title: "GP Payroll Services: Complete Guide for Medical Practices"
 slug: "gp-payroll-services"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-payroll-services"
 date: "2026-04-01"
 author: "Medical Accounts"
-category: "GP Tax & Accounts"
+category: "GP Practice Management"
 metaTitle: "GP Payroll Services | Medical Practice Payroll Solutions UK"
 metaDescription: "Expert GP payroll services for medical practices. PAYE compliance, pension auto-enrolment, RTI submissions. Specialist medical accountants handling complex payroll."
 altText: "Medical practice team reviewing payroll documents and employee records"

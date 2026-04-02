@@ -1,10 +1,10 @@
 ---
 title: "Accountant Accounting Services for Medical Professionals"
 slug: "accountant-accounting-services"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/accountant-accounting-services"
 date: "2026-04-01"
 author: "Medical Accounts"
-category: "GP Tax & Accounts"
+category: "GP Accountant Services"
 metaTitle: "Accountant Accounting Services for Medical Professionals UK"
 metaDescription: "Specialist accountant accounting services for GPs, consultants and locum doctors. Expert tax planning, NHS pension advice, and compliance support."
 altText: "Professional accountant working with medical client on tax planning and NHS pension calculations"

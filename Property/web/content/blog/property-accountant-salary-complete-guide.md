@@ -1,10 +1,10 @@
 ---
 title: "Property Accountant Salary: Complete Guide for UK Professionals"
 slug: "property-accountant-salary-complete-guide"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/property-accountant-salary-complete-guide"
+canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/property-accountant-salary-complete-guide"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Property Accountant Services"
 metaTitle: "Property Accountant Salary UK: Complete Guide 2026"
 metaDescription: "Explore property accountant salary ranges in the UK. From junior roles to senior positions, discover what property tax specialists earn and career progression paths."
 altText: "UK property accountant reviewing financial documents and tax returns on desk with calculator"

@@ -1,10 +1,10 @@
 ---
 title: "Property Business Rates vs Council Tax: What UK Landlords Need to Know"
 slug: "property-business-rates-council-tax-landlords"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/property-business-rates-council-tax-landlords"
+canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/property-business-rates-council-tax-landlords"
 date: "2026-03-31"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Landlord Tax Essentials"
 metaTitle: "Property Business Rates vs Council Tax for UK Landlords"
 metaDescription: "Understand when your rental property pays business rates instead of council tax. Essential guide for UK landlords on rates liability and tenant responsibilities."
 altText: "UK property tax bills showing business rates and council tax documentation for landlords"

@@ -1,10 +1,10 @@
 ---
 title: "How to Choose the Best Property Accountant for UK Landlords"
 slug: "best-property-accountant"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/best-property-accountant"
+canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/best-property-accountant"
 date: "2026-03-31"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Property Accountant Services"
 metaTitle: "Best Property Accountant for UK Landlords | Property Tax Partners"
 metaDescription: "Find the best property accountant for your UK rental portfolio. Expert guidance on what to look for, questions to ask, and how to maximise your tax efficiency."
 altText: "UK property accountant reviewing rental property tax returns and financial documents for landlord clients"

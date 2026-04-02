@@ -1,10 +1,10 @@
 ---
 title: "Manchester Property Accountant: Expert Services for UK Landlords"
 slug: "manchester-property-accountant"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/manchester-property-accountant"
+canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/manchester-property-accountant"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Property Accountant Services"
 metaTitle: "Manchester Property Accountant | Expert Services | PTP"
 metaDescription: "Specialist Manchester property accountant services for landlords and investors. Expert tax advice, compliance support, and portfolio optimization."
 altText: "Professional Manchester property accountant working with landlord clients on tax planning and compliance"

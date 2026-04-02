@@ -1,7 +1,7 @@
 ---
 title: "GP Pension Contributions Tax Relief: Complete Guide for UK Medical Professionals"
 slug: "gp-pension-contributions-tax-relief"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-pension-contributions-tax-relief"
 date: "2026-04-01"
 author: "Medical Accounts"
 category: "NHS Pension Planning"

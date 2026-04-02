@@ -5,7 +5,7 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief
 date: "2026-04-01"
 author: "Property Tax Partners"
 category: "Section 24 & Tax Relief"
-metaTitle: "Rental Income Tax Calculator UK | Work Out Your Tax 2025/26"
+metaTitle: "Rental Income Tax Calculator UK | Work Out Your Tax 2026"
 metaDescription: "Use our rental income tax calculator to work out your tax liability. Includes Section 24 restrictions, allowable deductions, and tax band calculations."
 altText: "UK landlord using calculator to work out rental income tax on laptop with property documents"
 image: ""

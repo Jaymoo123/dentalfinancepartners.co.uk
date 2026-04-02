@@ -1,10 +1,10 @@
 ---
 title: "Accountant Tax Return Services for UK Property Investors"
 slug: "accountant-tax-return-services"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/accountant-tax-return-services"
+canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/accountant-tax-return-services"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Landlord Tax Essentials"
 metaTitle: "Accountant Tax Return Services | Property Tax Partners"
 metaDescription: "Expert accountant tax return services for UK landlords and property investors. Professional tax preparation, compliance, and strategic advice for property portfolios."
 altText: "UK property accountant preparing tax returns for landlords and property investors"

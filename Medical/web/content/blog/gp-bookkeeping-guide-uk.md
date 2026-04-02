@@ -1,10 +1,10 @@
 ---
 title: "GP Bookkeeping: Essential Guide for UK General Practice Partners"
 slug: "gp-bookkeeping-guide-uk"
-canonical: ""
+canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-bookkeeping-guide-uk"
 date: "2026-04-01"
 author: "Medical Accounts"
-category: "GP Tax & Accounts"
+category: "GP Practice Management"
 metaTitle: "GP Bookkeeping Guide 2026 | Medical Practice Accounts UK"
 metaDescription: "Complete GP bookkeeping guide for UK practice partners. Learn essential record-keeping, expenses, profit sharing and compliance requirements for general practice."
 altText: "GP practice manager working on bookkeeping records with computer and financial documents"

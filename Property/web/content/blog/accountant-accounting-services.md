@@ -1,10 +1,10 @@
 ---
 title: "Professional Accounting Services for UK Property Investors"
 slug: "accountant-accounting-services"
-canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/accountant-accounting-services"
+canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/accountant-accounting-services"
 date: "2026-04-01"
 author: "Property Tax Partners"
-category: "Portfolio Management"
+category: "Property Accountant Services"
 metaTitle: "Accountant Accounting Services | Property Tax Partners"
 metaDescription: "Expert accountant accounting services for UK landlords and property investors. Specialist property tax advice, compliance, and strategic planning."
 altText: "Professional accountant reviewing property investment documents and tax returns for UK landlords"
