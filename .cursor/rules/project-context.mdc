@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Project Context
 
-Monorepo containing 4 UK niche accountancy websites. All live, deployed on Vercel, sharing a common architecture.
+Monorepo containing 4 UK niche accountancy websites. All live, deployed on Vercel, sharing a common architecture. Last updated: 2 April 2026.
 
 ## Sites
 
@@ -16,14 +16,14 @@ Monorepo containing 4 UK niche accountancy websites. All live, deployed on Verce
 | Medical Accountants UK | medicalaccountantsuk.co.uk | medical | /blog/{slug} (flat) | 46 |
 | Accounts for Lawyers | accountsforlawyers.co.uk | solicitors | /blog/{category}/{slug} | 50 |
 
-Medical uses flat blog URLs. The other 3 use /blog/{category-slug}/{post-slug}.
+Medical uses flat blog URLs (no category in path). The other 3 use /blog/{category-slug}/{post-slug}.
 
 ## Tech Stack
 
 - Next.js 15 + React 19 + TypeScript + Tailwind 4
 - App Router (src/app/)
 - Supabase (leads, blog topics)
-- Vercel deployment
+- Vercel deployment (auto-deploys from main branch)
 - Python (Anthropic API) for blog content generation
 - GSC/GA4 integration via agents/
 
@@ -38,7 +38,8 @@ Accounting/
 │   │   ├── src/lib/       #     blog.ts, schema.ts, local-business-schema.ts
 │   │   ├── src/config/    #     site.ts, niche-loader.ts
 │   │   ├── src/components/#     UI components
-│   │   └── content/blog/  #     Markdown blog posts with YAML front matter
+│   │   ├── content/blog/  #     Markdown blog posts with YAML front matter
+│   │   └── public/        #     Static assets (llms.txt, favicon, etc.)
 │   └── pipeline/          #   Python blog generation scripts
 ├── Dentists/              # Same structure as Property
 ├── Medical/               # Same structure (flat blog URLs, no category in path)
@@ -46,6 +47,7 @@ Accounting/
 ├── shared/
 │   └── web-core/          #   Shared TS: schema.ts, blog.ts, components
 ├── agents/                # Python agent system (GSC, blog gen, analytics)
+│   └── docs/              #   GSC system docs (INDEX, QUICK_START, OPTIMIZATION)
 ├── scripts/               # Utility scripts (Batch/Canonicals/Database/Generation/Import/Migration/Monitoring/Testing)
 ├── supabase/              # DB migrations + applied SQL
 ├── Admin/                 # Audit doc + Topics (keyword CSVs) + archive
@@ -78,14 +80,19 @@ Markdown files in `{Site}/web/content/blog/*.md`:
 title: "Post Title"
 slug: "post-slug"
 canonical: "https://domain/blog/[category-slug/]slug"
-metaTitle: "SEO Title | Brand"
-metaDescription: "Description"
+metaTitle: "SEO Title | Brand"         # MUST be under 60 chars
+metaDescription: "Description"         # MUST be under 155 chars
 category: "Category Name"
 date: "2026-04-01"
 author: "Brand Editorial Team"
 image: ""
-faqs: [{q: "...", a: "..."}]
-schema: "BlogPosting"
+altText: "Alt text for images"
+h1: "Page Heading"
+summary: "Brief summary"
+schema: ""
+faqs:
+  - question: "..."
+    answer: "..."
 ```
 
 ## Key Files Per Site
@@ -96,29 +103,68 @@ schema: "BlogPosting"
 - `src/lib/local-business-schema.ts` — buildLocalBusinessJsonLd() for location pages
 - `src/app/blog/[category]/[slug]/page.tsx` — blog post pages (Property/Dentists/Solicitors)
 - `src/app/blog/[slug]/page.tsx` — blog post pages (Medical only)
-- `src/app/blog/{category-slug}/page.tsx` — category hub pages (static)
+- `src/app/blog/{category-slug}/page.tsx` — category hub pages (static, one per category)
 - `src/app/locations/[slug]/page.tsx` — location pages with LocalBusiness schema
-- `src/app/api/og/route.tsx` — dynamic OG image generation (edge runtime)
+- `src/app/api/og/route.tsx` — dynamic OG image generation (edge runtime, branded per site)
+- `src/app/robots.ts` — robots.txt generation (includes AI crawler rules)
 - `src/middleware.ts` — redirects for old flat /blog/{slug} URLs to /blog/{category}/{slug}
+- `web/public/llms.txt` — AI discoverability file (site description, key pages, categories)
 
 ## Categories
 
-**Property**: Section 24 & Tax Relief, Incorporation & Company Structures, Making Tax Digital (MTD), Capital Gains Tax, Portfolio Management, Property Accountant Services, Landlord Tax Essentials
+**Property** (7): Section 24 & Tax Relief, Incorporation & Company Structures, Making Tax Digital (MTD), Capital Gains Tax, Portfolio Management, Property Accountant Services, Landlord Tax Essentials
 
-**Dentists**: Practice accounting, Associate tax, Buying a practice, Practice finance, VAT & compliance
+**Dentists** (5): Practice accounting, Associate tax, Buying a practice, Practice finance, VAT & compliance
 
-**Medical**: GP Tax & Accounts, GP Accountant Services, GP Practice Management, NHS Pension Planning, Locum Tax, Private Practice, Medical Expenses, Incorporation & Company Structures, Consultant Tax
+**Medical** (9): GP Tax & Accounts, GP Accountant Services, GP Practice Management, NHS Pension Planning, Locum Tax, Private Practice, Medical Expenses, Incorporation & Company Structures, Consultant Tax
 
-**Solicitors**: SRA Compliance & Trust Accounting, Sole Practitioner Tax, Partnership & LLP Accounting, VAT & Compliance, Practice Finance & Cash Flow, Practice Succession & Sale, Structure & Incorporation
+**Solicitors** (7): SRA Compliance & Trust Accounting, Sole Practitioner Tax, Partnership & LLP Accounting, VAT & Compliance, Practice Finance & Cash Flow, Practice Succession & Sale, Structure & Incorporation
 
-## Redirect Pattern
+## SEO Implementation Status
 
-Property/Dentists/Solicitors have `permanentRedirect` logic in `[category]/[slug]/page.tsx`: if a slug exists under a different category than the URL, it 301-redirects to the correct URL. Dentists also has `middleware.ts` mapping old flat URLs to category URLs.
+### Metadata (all sites)
+- All 236 posts have populated canonicals matching their URL pattern
+- metaTitles: optimized for CTR, under 60 chars, keyword front-loaded, year references (2026 or 2026/27) on time-sensitive topics
+- metaDescriptions: fact-led openers (no "Complete guide to..." filler), under 155 chars, specific numbers/outcomes
+- openGraph: includes title, description, type, url, siteName, publishedTime, images (dynamic OG fallback)
+- Twitter cards: summary_large_image on all blog posts and static pages
+
+### Schema (JSON-LD)
+- BlogPosting + FAQPage (when faqs present) on all blog posts via `buildBlogPostingJsonLd()`
+- Person author: `"{Brand} Editorial Team"` with /about URL
+- Organization publisher with absolute logo URL
+- BreadcrumbList on blog posts and category pages
+- LocalBusiness on location pages (absolute logo URL)
+- CollectionPage on category hub pages
+
+### Internal Linking
+- Property: 85/85 posts have 2-3 internal links each (255 total: inline contextual + Related Reading sections)
+- Medical: 46/46 posts have 2-3 internal links each (~158 total)
+- Dentists: 44/55 posts have internal links (pre-existing, using flat URLs that redirect via middleware)
+- Solicitors: 47/50 posts have internal links (pre-existing)
+
+### AI Discoverability
+- `llms.txt` in all 4 sites' public/ directories (site description, key pages, categories, sitemap)
+- `robots.ts` explicitly allows GPTBot, ClaudeBot, Google-Extended, PerplexityBot, CCBot on all sites
+
+### Redirects
+- Property/Dentists/Solicitors have `permanentRedirect` logic in `[category]/[slug]/page.tsx`: if a slug exists under a different category than the URL, it 301-redirects to the correct URL
+- Dentists has `middleware.ts` mapping old flat /blog/{slug} URLs to /blog/{category}/{slug}
+
+## Remaining Known Issues
+
+- Dentists: 11/55 posts lack internal blog links; existing links use flat /blog/{slug} URLs (functional via middleware redirects but not canonical nested format)
+- Solicitors: 3/50 posts lack internal blog links
+- Medical: "Consultant Tax" category exists in config but has 0 posts
 
 ## Python Pipeline
 
 Each site's `pipeline/` folder contains blog generation scripts. They use `config_supabase.py` which adds the repo root to `sys.path` to import `shared_supabase_config.py`. The `OUTPUT_MD_DIR` paths are relative to the script location, pointing to `../web/content/blog/`.
 
-## Schema
+## Year/Tax Year Conventions
 
-All sites use Person author type: `"{Brand} Editorial Team"`. BlogPosting schema includes image (falls back to dynamic OG URL), absolute publisher logo, FAQ schema when faqs present. Location pages have LocalBusiness schema with absolute logo URL.
+- UK tax year: 6 April to 5 April (e.g. "2026/27" = 6 April 2026 to 5 April 2027)
+- "2026/26" is INVALID — never use this format
+- Tax year topics (self-assessment, pension, tax rates, allowances): use "2026/27"
+- Calendar year topics (MTD deadline, VAT registration threshold): use "2026"
+- Evergreen topics (how to choose an accountant): no year needed
