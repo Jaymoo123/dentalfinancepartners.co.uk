@@ -71,7 +71,7 @@ Accounting/
 "VAT & Compliance" → "vat-compliance"
 ```
 
-**Medical** does not use category slugs in URLs (flat /blog/{slug}).
+**Medical** replaces `&` with `and` (same as Property/Dentists). Uses flat post URLs (/blog/{slug}) but category hub pages exist at /blog/{category-slug}/.
 
 ## Blog Post Front Matter
 
@@ -103,7 +103,7 @@ faqs:
 - `src/lib/local-business-schema.ts` — buildLocalBusinessJsonLd() for location pages
 - `src/app/blog/[category]/[slug]/page.tsx` — blog post pages (Property/Dentists/Solicitors)
 - `src/app/blog/[slug]/page.tsx` — blog post pages (Medical only)
-- `src/app/blog/{category-slug}/page.tsx` — category hub pages (static, one per category)
+- `src/app/blog/{category-slug}/page.tsx` — category hub pages (static, one per category, rich pillar content + schema + LeadForm)
 - `src/app/locations/[slug]/page.tsx` — location pages with LocalBusiness schema
 - `src/app/api/og/route.tsx` — dynamic OG image generation (edge runtime, branded per site)
 - `src/app/robots.ts` — robots.txt generation (includes AI crawler rules)
@@ -133,9 +133,16 @@ faqs:
 - BlogPosting + FAQPage (when faqs present) on all blog posts via `buildBlogPostingJsonLd()`
 - Person author: `"{Brand} Editorial Team"` with /about URL
 - Organization publisher with absolute logo URL
-- BreadcrumbList on blog posts and category pages
+- BreadcrumbList on blog posts and all category hub pages (all 4 sites)
 - LocalBusiness on location pages (absolute logo URL)
-- CollectionPage on category hub pages
+- CollectionPage on all category hub pages (all 4 sites)
+
+### Category Hub Pages (all 4 sites standardized)
+- Property: 7 hubs with rich pillar content (4-5 H2 sections), CollectionPage + BreadcrumbList schema, LeadForm CTA, article cards with date + read time
+- Dentists: 5 hubs with same structure (rich content, schema, LeadForm, cards)
+- Solicitors: 7 hubs with same structure
+- Medical: 8 hubs (gp-accountant-services, gp-practice-management, gp-tax-and-accounts, locum-tax, nhs-pension-planning, incorporation-and-company-structures, medical-expenses, private-practice). Hub pages link to flat /blog/{slug} post URLs. Blog index tiles are clickable Links to hub pages. Sitemap includes hub URLs.
+- All hubs have: openGraph.type "website", siteName, twitter cards, canonical URLs
 
 ### Internal Linking
 - Property: 85/85 posts have 2-3 internal links each (255 total: inline contextual + Related Reading sections)
@@ -155,7 +162,7 @@ faqs:
 
 - Dentists: 11/55 posts lack internal blog links; existing links use flat /blog/{slug} URLs (functional via middleware redirects but not canonical nested format)
 - Solicitors: 3/50 posts lack internal blog links
-- Medical: "Consultant Tax" category exists in config but has 0 posts
+- Medical: "Consultant Tax" category exists in niche.config.json but has 0 posts (no hub page created for it)
 
 ## Python Pipeline
 
