@@ -16,7 +16,14 @@ export const metadata: Metadata = {
     description:
       "Comprehensive guide to sole practitioner tax, self-assessment, Making Tax Digital, allowable expenses, and tax planning for UK solicitors.",
     url: `${siteConfig.url}/blog/sole-practitioner-tax`,
-    type: "article",
+    type: "website",
+    siteName: siteConfig.name,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Complete Sole Practitioner Tax Guide for UK Solicitors",
+    description:
+      "Comprehensive guide to sole practitioner tax, self-assessment, Making Tax Digital, allowable expenses, and tax planning for UK solicitors.",
   },
 };
 
@@ -24,8 +31,33 @@ export default function SolePractitionerTaxPillarPage() {
   const allPosts = getAllPosts();
   const relatedPosts = allPosts.filter((p) => p.category === "Sole Practitioner Tax");
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+          { "@type": "ListItem", position: 2, name: "Blog", item: `${siteConfig.url}/blog` },
+          { "@type": "ListItem", position: 3, name: "Sole Practitioner Tax" },
+        ],
+      },
+      {
+        "@type": "CollectionPage",
+        name: metadata.title,
+        description: metadata.description,
+        url: `${siteConfig.url}/blog/sole-practitioner-tax`,
+      },
+    ],
+  };
+
   return (
-    <article className={`${contentNarrow} ${sectionY}`}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <article className={`${contentNarrow} ${sectionY}`}>
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },
@@ -159,5 +191,6 @@ export default function SolePractitionerTaxPillarPage() {
         </div>
       </div>
     </article>
+    </>
   );
 }

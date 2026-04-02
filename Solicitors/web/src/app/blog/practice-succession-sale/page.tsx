@@ -16,7 +16,14 @@ export const metadata: Metadata = {
     description:
       "Comprehensive guide to law firm succession planning, practice valuation, sale preparation, and exit strategies for UK solicitors.",
     url: `${siteConfig.url}/blog/practice-succession-sale`,
-    type: "article",
+    type: "website",
+    siteName: siteConfig.name,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Complete Practice Succession Guide for UK Law Firms",
+    description:
+      "Comprehensive guide to law firm succession planning, practice valuation, sale preparation, and exit strategies for UK solicitors.",
   },
 };
 
@@ -24,8 +31,33 @@ export default function PracticeSuccessionPillarPage() {
   const allPosts = getAllPosts();
   const relatedPosts = allPosts.filter((p) => p.category === "Practice Succession & Sale");
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+          { "@type": "ListItem", position: 2, name: "Blog", item: `${siteConfig.url}/blog` },
+          { "@type": "ListItem", position: 3, name: "Practice Succession & Sale" },
+        ],
+      },
+      {
+        "@type": "CollectionPage",
+        name: metadata.title,
+        description: metadata.description,
+        url: `${siteConfig.url}/blog/practice-succession-sale`,
+      },
+    ],
+  };
+
   return (
-    <article className={`${contentNarrow} ${sectionY}`}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <article className={`${contentNarrow} ${sectionY}`}>
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },
@@ -155,5 +187,6 @@ export default function PracticeSuccessionPillarPage() {
         </div>
       </div>
     </article>
+    </>
   );
 }

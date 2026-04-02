@@ -16,7 +16,14 @@ export const metadata: Metadata = {
     description:
       "Comprehensive guide to VAT compliance for UK solicitors. Registration, rates, disbursements, counsel fees, and compliance requirements.",
     url: `${siteConfig.url}/blog/vat-compliance`,
-    type: "article",
+    type: "website",
+    siteName: siteConfig.name,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Complete VAT Guide for UK Law Firms",
+    description:
+      "Comprehensive guide to VAT compliance for UK solicitors. Registration, rates, disbursements, counsel fees, and compliance requirements.",
   },
 };
 
@@ -24,8 +31,33 @@ export default function VATCompliancePillarPage() {
   const allPosts = getAllPosts();
   const relatedPosts = allPosts.filter((p) => p.category === "VAT & Compliance");
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+          { "@type": "ListItem", position: 2, name: "Blog", item: `${siteConfig.url}/blog` },
+          { "@type": "ListItem", position: 3, name: "VAT & Compliance" },
+        ],
+      },
+      {
+        "@type": "CollectionPage",
+        name: metadata.title,
+        description: metadata.description,
+        url: `${siteConfig.url}/blog/vat-compliance`,
+      },
+    ],
+  };
+
   return (
-    <article className={`${contentNarrow} ${sectionY}`}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <article className={`${contentNarrow} ${sectionY}`}>
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },
@@ -155,5 +187,6 @@ export default function VATCompliancePillarPage() {
         </div>
       </div>
     </article>
+    </>
   );
 }

@@ -16,7 +16,8 @@ export const metadata: Metadata = {
     description:
       "Comprehensive guide to dental practice accounting, including bookkeeping, financial reporting, NHS contract accounting, and Making Tax Digital for UK practices.",
     url: `${siteConfig.url}/blog/practice-accounting`,
-    type: "article",
+    type: "website",
+    siteName: siteConfig.name,
   },
   twitter: {
     card: "summary_large_image",
@@ -30,8 +31,33 @@ export default function PracticeAccountingPillarPage() {
   const allPosts = getAllPosts();
   const relatedPosts = allPosts.filter((p) => p.category === "Practice accounting");
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+          { "@type": "ListItem", position: 2, name: "Blog", item: `${siteConfig.url}/blog` },
+          { "@type": "ListItem", position: 3, name: "Practice Accounting" },
+        ],
+      },
+      {
+        "@type": "CollectionPage",
+        name: metadata.title,
+        description: metadata.description,
+        url: `${siteConfig.url}/blog/practice-accounting`,
+      },
+    ],
+  };
+
   return (
-    <article className={`${contentNarrow} ${sectionY}`}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <article className={`${contentNarrow} ${sectionY}`}>
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },
@@ -153,5 +179,6 @@ export default function PracticeAccountingPillarPage() {
         </div>
       </div>
     </article>
+    </>
   );
 }

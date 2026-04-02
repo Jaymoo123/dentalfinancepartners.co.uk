@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
-import { getAllPosts } from "@/lib/blog";
+import { getAllPosts, getAllCategories } from "@/lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
@@ -32,6 +32,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,
+    });
+  }
+
+  for (const cat of getAllCategories()) {
+    entries.push({
+      url: `${base}/blog/${cat.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.75,
     });
   }
 

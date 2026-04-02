@@ -16,7 +16,8 @@ export const metadata: Metadata = {
     description:
       "Comprehensive guide to VAT registration, compliance, exemptions, and Making Tax Digital for UK dental practices.",
     url: `${siteConfig.url}/blog/vat-and-compliance`,
-    type: "article",
+    type: "website",
+    siteName: siteConfig.name,
   },
   twitter: {
     card: "summary_large_image",
@@ -30,8 +31,33 @@ export default function VATCompliancePillarPage() {
   const allPosts = getAllPosts();
   const relatedPosts = allPosts.filter((p) => p.category === "VAT & compliance");
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+          { "@type": "ListItem", position: 2, name: "Blog", item: `${siteConfig.url}/blog` },
+          { "@type": "ListItem", position: 3, name: "VAT & Compliance" },
+        ],
+      },
+      {
+        "@type": "CollectionPage",
+        name: metadata.title,
+        description: metadata.description,
+        url: `${siteConfig.url}/blog/vat-and-compliance`,
+      },
+    ],
+  };
+
   return (
-    <article className={`${contentNarrow} ${sectionY}`}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <article className={`${contentNarrow} ${sectionY}`}>
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },
@@ -157,5 +183,6 @@ export default function VATCompliancePillarPage() {
         </div>
       </div>
     </article>
+    </>
   );
 }

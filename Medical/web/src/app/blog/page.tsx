@@ -50,15 +50,22 @@ export default function BlogIndexPage() {
         <h2 className="text-xl sm:text-2xl font-bold text-[var(--ink)] mb-4 sm:mb-6">Comprehensive Guides by Topic</h2>
         <div className="grid gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {categories.map((cat) => (
-            <div
+            <Link
               key={cat.slug}
-              className="block min-h-[120px] p-5 sm:p-6 rounded-xl border-2 border-[var(--border)] bg-[var(--surface)]"
+              href={`/blog/${cat.slug}`}
+              className={`block min-h-[120px] p-5 sm:p-6 rounded-xl border-2 border-[var(--border)] bg-[var(--surface)] transition-all hover:border-[var(--primary)] hover:shadow-lg active:scale-[0.98] ${focusRing}`}
             >
               <h3 className="text-base sm:text-lg font-bold text-[var(--ink)] mb-2">{cat.name}</h3>
               <p className="text-sm text-[var(--muted)] mb-3">
                 {cat.count} article{cat.count !== 1 ? "s" : ""}
               </p>
-            </div>
+              <span className="inline-flex items-center text-sm font-medium text-[var(--primary)]">
+                View guide
+                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </Link>
           ))}
         </div>
       </section>

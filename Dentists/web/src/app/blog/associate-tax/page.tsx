@@ -16,7 +16,8 @@ export const metadata: Metadata = {
     description:
       "Comprehensive guide to associate dentist tax, self-assessment, expenses, National Insurance, and tax planning strategies for UK dental associates.",
     url: `${siteConfig.url}/blog/associate-tax`,
-    type: "article",
+    type: "website",
+    siteName: siteConfig.name,
   },
   twitter: {
     card: "summary_large_image",
@@ -30,8 +31,33 @@ export default function AssociateTaxPillarPage() {
   const allPosts = getAllPosts();
   const relatedPosts = allPosts.filter((p) => p.category === "Associate tax");
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+          { "@type": "ListItem", position: 2, name: "Blog", item: `${siteConfig.url}/blog` },
+          { "@type": "ListItem", position: 3, name: "Associate Tax" },
+        ],
+      },
+      {
+        "@type": "CollectionPage",
+        name: metadata.title,
+        description: metadata.description,
+        url: `${siteConfig.url}/blog/associate-tax`,
+      },
+    ],
+  };
+
   return (
-    <article className={`${contentNarrow} ${sectionY}`}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <article className={`${contentNarrow} ${sectionY}`}>
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },
@@ -159,5 +185,6 @@ export default function AssociateTaxPillarPage() {
         </div>
       </div>
     </article>
+    </>
   );
 }

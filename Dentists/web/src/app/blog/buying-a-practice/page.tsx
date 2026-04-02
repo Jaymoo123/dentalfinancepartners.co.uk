@@ -16,7 +16,8 @@ export const metadata: Metadata = {
     description:
       "Comprehensive guide to buying a dental practice, including valuations, due diligence, financing options, and legal considerations for UK dentists.",
     url: `${siteConfig.url}/blog/buying-a-practice`,
-    type: "article",
+    type: "website",
+    siteName: siteConfig.name,
   },
   twitter: {
     card: "summary_large_image",
@@ -30,8 +31,33 @@ export default function BuyingPracticePillarPage() {
   const allPosts = getAllPosts();
   const relatedPosts = allPosts.filter((p) => p.category === "Buying a practice");
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+          { "@type": "ListItem", position: 2, name: "Blog", item: `${siteConfig.url}/blog` },
+          { "@type": "ListItem", position: 3, name: "Buying a Practice" },
+        ],
+      },
+      {
+        "@type": "CollectionPage",
+        name: metadata.title,
+        description: metadata.description,
+        url: `${siteConfig.url}/blog/buying-a-practice`,
+      },
+    ],
+  };
+
   return (
-    <article className={`${contentNarrow} ${sectionY}`}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <article className={`${contentNarrow} ${sectionY}`}>
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },
@@ -155,5 +181,6 @@ export default function BuyingPracticePillarPage() {
         </div>
       </div>
     </article>
+    </>
   );
 }
