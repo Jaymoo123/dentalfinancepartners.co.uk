@@ -75,7 +75,7 @@ faqs:
 
 <p>For significant outstanding lab work, your accountant may need to accrue estimated costs to match them with related patient revenue.</p>
 
-<p>If you're considering <a href="/blog/practice-acquisition-financial-due-diligence">practice acquisition financial due diligence</a>, accurate lab cost accounting becomes crucial for potential buyers assessing your true profit margins.</p>
+<p>If you're considering <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">practice acquisition financial due diligence</a>, accurate lab cost accounting becomes crucial for potential buyers assessing your true profit margins.</p>
 
 <h2>VAT Treatment of Laboratory Costs</h2>
 

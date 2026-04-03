@@ -107,7 +107,7 @@ faqs:
 
 <p>The structure you choose affects how easily you can finance expansion and what funding options are available.</p>
 
-<p>Lenders typically prefer holding company structures as they provide cleaner security arrangements and easier monitoring of overall group performance. When considering <a href="/blog/practice-acquisition-financial-due-diligence">practice acquisitions</a>, the existing structure can significantly impact the complexity and cost of the transaction.</p>
+<p>Lenders typically prefer holding company structures as they provide cleaner security arrangements and easier monitoring of overall group performance. When considering <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">practice acquisitions</a>, the existing structure can significantly impact the complexity and cost of the transaction.</p>
 
 <p>Consider whether debt should sit at holding company level or with individual trading companies. Holding company debt can fund multiple acquisitions but may restrict flexibility for disposing of individual practices.</p>
 

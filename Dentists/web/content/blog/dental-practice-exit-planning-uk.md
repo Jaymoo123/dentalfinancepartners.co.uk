@@ -45,11 +45,11 @@ faqs:
 
 <p>Buyers and valuers focus heavily on your practice's financial trajectory. A practice showing declining profits over 2-3 years will face significant valuation challenges, regardless of the reasons behind the decline.</p>
 
-<p>Your <a href="/blog/dental-practice-profit-extraction-uk">profit extraction strategy</a> also matters. If you've been taking minimal profits to reduce tax, this can create artificial suppression of the practice's apparent profitability. Good exit planning involves optimising this balance years in advance.</p>
+<p>Your <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction strategy</a> also matters. If you've been taking minimal profits to reduce tax, this can create artificial suppression of the practice's apparent profitability. Good exit planning involves optimising this balance years in advance.</p>
 
 <h3>NHS Contract Mix and Stability</h3>
 
-<p>The <a href="/blog/nhs-private-mix-dental-accounts">NHS-private mix</a> significantly impacts valuation multiples. Practices with stable NHS contracts typically achieve higher multiples than purely private practices, though this varies by location and buyer appetite.</p>
+<p>The <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">NHS-private mix</a> significantly impacts valuation multiples. Practices with stable NHS contracts typically achieve higher multiples than purely private practices, though this varies by location and buyer appetite.</p>
 
 <p>If you're considering changing your NHS commitment, factor this into your exit planning. Major contract changes in the final years before sale can create uncertainty that affects buyer confidence.</p>
 
@@ -117,7 +117,7 @@ faqs:
 
 <h2>Due Diligence Preparation</h2>
 
-<p>Buyers increasingly conduct thorough <a href="/blog/practice-acquisition-financial-due-diligence">financial due diligence</a> on dental practices. Preparing for this process well in advance prevents delays and reduces the risk of deal failure.</p>
+<p>Buyers increasingly conduct thorough <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">financial due diligence</a> on dental practices. Preparing for this process well in advance prevents delays and reduces the risk of deal failure.</p>
 
 <p>Key preparation areas include:</p>
 

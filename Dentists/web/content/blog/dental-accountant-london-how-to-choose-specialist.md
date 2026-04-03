@@ -31,7 +31,7 @@ faqs:
 
 <p>Consider an associate earning £120,000 annually. A general accountant might miss legitimate expenses like professional indemnity insurance, GDC fees, or training courses. A specialist dental accountant knows these are fully deductible and can structure your affairs to minimise tax legally.</p>
 
-<p>For practice owners, the complexity increases dramatically. You need someone who understands <a href="/blog/dental-practice-profit-extraction-uk">profit extraction strategies</a>, equipment financing, and how to handle the transition from NHS to private work without triggering unexpected tax bills.</p>
+<p>For practice owners, the complexity increases dramatically. You need someone who understands <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction strategies</a>, equipment financing, and how to handle the transition from NHS to private work without triggering unexpected tax bills.</p>
 
 <h2>What to Look for in a London Accountant</h2>
 
@@ -39,7 +39,7 @@ faqs:
 
 <p>Ask how many dental clients they have and what percentage of their practice focuses on dentistry. A good dental accountant should have dozens of dental clients, not just a handful. They should understand terms like UDAs, UOAs, and mixed contracts without explanation.</p>
 
-<p>Experience with your specific situation matters too. If you're an associate, find someone who regularly handles associate tax returns. If you own multiple practices, you need an accountant familiar with group structures and complex <a href="/blog/nhs-private-mix-dental-accounts">NHS-private mix accounting</a>.</p>
+<p>Experience with your specific situation matters too. If you're an associate, find someone who regularly handles associate tax returns. If you own multiple practices, you need an accountant familiar with group structures and complex <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">NHS-private mix accounting</a>.</p>
 
 <h3>Professional Qualifications</h3>
 
@@ -68,7 +68,7 @@ faqs:
 
 <ul>
 <li>Do you handle both personal and practice accounts?</li>
-<li>Can you assist with practice acquisitions and <a href="/blog/practice-acquisition-financial-due-diligence">financial due diligence</a>?</li>
+<li>Can you assist with practice acquisitions and <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">financial due diligence</a>?</li>
 <li>Do you provide management accounts and KPI reporting?</li>
 <li>How do you handle VAT compliance for mixed NHS/private practices?</li>
 </ul>

@@ -41,7 +41,7 @@ faqs:
 
 <h3>Mixed Practice Challenges</h3>
 
-<p>If you run both NHS and private services, your accounts become more complex. A dental accountant Manchester should understand how to separate these income streams properly and optimise your <a href="/blog/nhs-private-mix-dental-accounts">NHS-private mix for maximum profitability</a>.</p>
+<p>If you run both NHS and private services, your accounts become more complex. A dental accountant Manchester should understand how to separate these income streams properly and optimise your <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">NHS-private mix for maximum profitability</a>.</p>
 
 <p>This isn't just about compliance – it's about strategy. The right accountant helps you understand which services generate the best margins and how to structure your practice accordingly.</p>
 
@@ -69,13 +69,13 @@ faqs:
 
 <h3>Tax Planning and Compliance</h3>
 
-<p>Dental practices face unique tax challenges. From understanding how different income streams are taxed to optimising <a href="/blog/dental-practice-profit-extraction-uk">profit extraction strategies</a>, specialist knowledge makes a real difference.</p>
+<p>Dental practices face unique tax challenges. From understanding how different income streams are taxed to optimising <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction strategies</a>, specialist knowledge makes a real difference.</p>
 
 <p>Associate dentists have their own complexities around <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">self-assessment and allowable expenses</a>. The right accountant guides you through these requirements without overpaying tax.</p>
 
 <h3>Practice Acquisition Support</h3>
 
-<p>If you're buying a practice in Manchester, your accountant should understand <a href="/blog/practice-acquisition-financial-due-diligence">dental-specific due diligence requirements</a>. They need to spot red flags that generic accountants might miss – like NHS contract risks or hidden compliance issues.</p>
+<p>If you're buying a practice in Manchester, your accountant should understand <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">dental-specific due diligence requirements</a>. They need to spot red flags that generic accountants might miss – like NHS contract risks or hidden compliance issues.</p>
 
 <p>The Manchester dental market is competitive for acquisitions. Having an accountant who understands practice valuations and can move quickly on opportunities gives you a significant advantage.</p>
 
@@ -104,7 +104,7 @@ faqs:
 
 <h3>Practice Valuations and Acquisitions</h3>
 
-<p>Manchester's dental market is active, with regular practice sales and partnerships forming. <a href="/blog/practice-acquisition-financial-due-diligence">Practice acquisition financial due diligence</a> requires specific expertise in dental cash flows, goodwill valuations, and NHS contract transfers.</p>
+<p>Manchester's dental market is active, with regular practice sales and partnerships forming. <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">Practice acquisition financial due diligence</a> requires specific expertise in dental cash flows, goodwill valuations, and NHS contract transfers.</p>
 
 <p>A specialist can spot red flags in practice accounts — unusual debtor levels, declining UDA delivery, or associate disputes that might not be obvious to generalist accountants.</p>
 
@@ -112,7 +112,7 @@ faqs:
 
 <p>NHS contracts dominate many Manchester practices, but managing them effectively requires constant attention. Your accountant should help with quarterly monitoring, clawback planning, and contract variation applications.</p>
 
-<p>They should also understand how <a href="/blog/nhs-private-mix-dental-accounts">NHS private mix affects your accounts</a> and tax position. Getting this balance right is crucial for both cash flow and long-term profitability.</p>
+<p>They should also understand how <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">NHS private mix affects your accounts</a> and tax position. Getting this balance right is crucial for both cash flow and long-term profitability.</p>
 
 <h3>Associate and Employment Tax</h3>
 
@@ -121,7 +121,7 @@ faqs:
 <p>Your accountant should also help associates with their own <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">Self Assessment requirements</a>, ensuring your practice relationships remain strong.</p>
 
 <h2>Profit Extraction and Tax Planning</h2>
-<p>Once your Manchester practice is profitable, extracting money efficiently becomes crucial. <a href="/blog/dental-practice-profit-extraction-uk">Profit extraction strategies</a> for dental practices differ significantly from other businesses.</p>
+<p>Once your Manchester practice is profitable, extracting money efficiently becomes crucial. <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">Profit extraction strategies</a> for dental practices differ significantly from other businesses.</p>
 
 <p>Should you pay yourself a salary, dividends, or pension contributions? How do you balance personal tax efficiency with practice cash flow needs? These decisions require specialist knowledge of both dental business models and tax law.</p>
 

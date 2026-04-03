@@ -129,7 +129,7 @@ faqs:
 
 <h3>Professional Planning</h3>
 
-<p>Given the complexity of multiple loan plans and varying income streams, most dentists benefit from professional advice. This is particularly important when considering <a href="/blog/dental-practice-profit-extraction-uk">profit extraction strategies</a> or planning major life changes.</p>
+<p>Given the complexity of multiple loan plans and varying income streams, most dentists benefit from professional advice. This is particularly important when considering <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction strategies</a> or planning major life changes.</p>
 
 <h2>Self Assessment and Student Loans</h2>
 

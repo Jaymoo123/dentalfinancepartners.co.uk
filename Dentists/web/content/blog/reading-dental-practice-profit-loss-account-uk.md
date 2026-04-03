@@ -39,7 +39,7 @@ faqs:
 <li><strong>Other income</strong> — hygienist income, laboratory work, sundry items</li>
 </ul>
 
-<p>Look for the <a href="/blog/nhs-private-mix-dental-accounts">NHS to private ratio</a> here. Most successful practices aim for a balanced mix, though this varies significantly by location and practice type.</p>
+<p>Look for the <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">NHS to private ratio</a> here. Most successful practices aim for a balanced mix, though this varies significantly by location and practice type.</p>
 
 <h3>Direct Costs</h3>
 
@@ -168,7 +168,7 @@ faqs:
 
 <p>While understanding your P&L account is important, complex practices benefit from professional analysis. <a href="/services">Specialist dental accountants</a> can provide detailed insights into your financial performance and benchmark comparisons.</p>
 
-<p>Consider professional help if you're planning <a href="/blog/practice-acquisition-financial-due-diligence">practice acquisitions</a>, implementing new fee structures, or if your profits are declining without obvious cause.</p>
+<p>Consider professional help if you're planning <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">practice acquisitions</a>, implementing new fee structures, or if your profits are declining without obvious cause.</p>
 
 <h2>Regular Review Process</h2>
 

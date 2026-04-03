@@ -47,7 +47,7 @@ faqs:
 
 <p>A typical NHS/private mixed practice might generate £600k annually but have costs of £400k, leaving £200k profit before your drawings. This profit needs to cover your personal income, tax provisions, equipment replacement, and practice development.</p>
 
-<p>The <a href="/blog/nhs-private-mix-dental-accounts">NHS/private patient mix</a> significantly impacts both revenue stability and profit margins. Pure NHS practices offer predictable income but lower margins, while private practices can be more profitable but less predictable.</p>
+<p>The <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">NHS/private patient mix</a> significantly impacts both revenue stability and profit margins. Pure NHS practices offer predictable income but lower margins, while private practices can be more profitable but less predictable.</p>
 
 <h2>Funding Your Practice Purchase</h2>
 
@@ -65,7 +65,7 @@ faqs:
 
 <h2>The Due Diligence Process</h2>
 
-<p>Once you find a practice, thorough <a href="/blog/practice-acquisition-financial-due-diligence">financial due diligence</a> is essential. This goes far beyond the asking price — you need to understand the underlying business.</p>
+<p>Once you find a practice, thorough <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">financial due diligence</a> is essential. This goes far beyond the asking price — you need to understand the underlying business.</p>
 
 <p>Key areas to investigate include patient retention rates, associate arrangements, equipment condition, lease terms, and any pending regulatory issues. Most importantly, verify the practice's claimed profit figures through detailed account analysis.</p>
 
@@ -101,7 +101,7 @@ faqs:
 
 <p>Don't try to economise on professional fees during the transition. The cost of quality advice is minimal compared to the financial risks of getting things wrong.</p>
 
-<p>Your accountant will be particularly important for ongoing support with VAT, payroll, corporation tax, and <a href="/blog/dental-practice-profit-extraction-uk">profit extraction planning</a>. Choose someone who understands dental practices specifically.</p>
+<p>Your accountant will be particularly important for ongoing support with VAT, payroll, corporation tax, and <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction planning</a>. Choose someone who understands dental practices specifically.</p>
 
 <h2>Financial Planning for the First Year</h2>
 <p>The first year of practice ownership presents unique financial challenges. Revenue may be lower than expected while you establish relationships with existing patients and build your reputation.</p>
@@ -112,7 +112,7 @@ faqs:
 
 <h3>Managing Mixed Practice Income</h3>
 
-<p>If you're acquiring a mixed NHS and private practice, understanding the <a href="/blog/nhs-private-mix-dental-accounts">financial implications</a> becomes crucial. NHS contract values, UDA rates, and private fee structures all impact your revenue projections.</p>
+<p>If you're acquiring a mixed NHS and private practice, understanding the <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">financial implications</a> becomes crucial. NHS contract values, UDA rates, and private fee structures all impact your revenue projections.</p>
 
 <p>Consider how changes to the NHS contract or private patient numbers might affect your income stability. Diversification across different revenue streams typically provides more financial security.</p>
 
@@ -147,12 +147,12 @@ faqs:
 
 <p>Lenders typically require three years of personal accounts, proof of income, and detailed business plans for the target practice. The stronger your financial position and experience, the better terms you'll typically secure.</p>
 
-<p>Professional <a href="/blog/practice-acquisition-financial-due-diligence">financial due diligence</a> becomes essential when applying for funding. Lenders want to see that you've thoroughly assessed the practice's financial performance and growth potential.</p>
+<p>Professional <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">financial due diligence</a> becomes essential when applying for funding. Lenders want to see that you've thoroughly assessed the practice's financial performance and growth potential.</p>
 
 <h2>Business Structure Considerations</h2>
 <p>Most dental practices operate as limited companies for tax efficiency, but the optimal structure depends on your specific circumstances. As an associate transitioning to practice ownership, you'll need to understand the implications of different business structures.</p>
 
-<p>Limited companies offer opportunities for tax-efficient <a href="/blog/dental-practice-profit-extraction-uk">profit extraction</a> through salary and dividend combinations. However, they also bring additional compliance requirements and administrative costs.</p>
+<p>Limited companies offer opportunities for tax-efficient <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction</a> through salary and dividend combinations. However, they also bring additional compliance requirements and administrative costs.</p>
 
 <p>Some practitioners initially operate as sole traders before incorporating later. This approach can simplify the initial transition but may result in higher tax bills as the practice grows.</p>
 

@@ -38,7 +38,7 @@ faqs:
 <h3>Asset-Based Method</h3>
 <p>This calculates goodwill as the difference between total practice value and net tangible assets. It is useful for verification but rarely the primary valuation method.</p>
 
-<p>The chosen multiple depends on factors like patient retention rates, NHS/private mix, location, and growth potential. <a href="/blog/practice-acquisition-financial-due-diligence">Financial due diligence</a> helps determine which factors apply to your situation.</p>
+<p>The chosen multiple depends on factors like patient retention rates, NHS/private mix, location, and growth potential. <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">Financial due diligence</a> helps determine which factors apply to your situation.</p>
 
 <h2>Factors That Affect Goodwill Value</h2>
 
@@ -53,7 +53,7 @@ faqs:
 <li><strong>Growth potential:</strong> Capacity for expansion or service development increases value</li>
 </ul>
 
-<p>Your <a href="/blog/nhs-private-mix-dental-accounts">NHS-private patient mix</a> particularly impacts goodwill valuation, as private income streams are often valued more highly.</p>
+<p>Your <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">NHS-private patient mix</a> particularly impacts goodwill valuation, as private income streams are often valued more highly.</p>
 
 <h2>Goodwill Tax Implications for Buyers</h2>
 
@@ -89,7 +89,7 @@ faqs:
 <li>Competition analysis and market position</li>
 </ul>
 
-<p><a href="/blog/practice-acquisition-financial-due-diligence">Financial due diligence</a> helps identify factors that support or undermine goodwill values, protecting both parties in the transaction.</p>
+<p><a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">Financial due diligence</a> helps identify factors that support or undermine goodwill values, protecting both parties in the transaction.</p>
 
 <h2>Getting Professional Advice</h2>
 

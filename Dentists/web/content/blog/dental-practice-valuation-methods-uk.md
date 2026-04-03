@@ -75,7 +75,7 @@ faqs:
 
 <p>Valuers look closely at your practice's financial trajectory. Three years of consistent growth will command a premium, while declining revenues or profits will reduce the multiple applied.</p>
 
-<p>This is where good <a href="/blog/nhs-private-mix-dental-accounts">financial record-keeping</a> becomes crucial. Clean, well-presented accounts that clearly show your practice's performance make the valuation process smoother and often more favourable.</p>
+<p>This is where good <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">financial record-keeping</a> becomes crucial. Clean, well-presented accounts that clearly show your practice's performance make the valuation process smoother and often more favourable.</p>
 
 <h3>Patient Base Quality</h3>
 
@@ -117,7 +117,7 @@ faqs:
 
 <h3>Financial Presentation Issues</h3>
 
-<p>Poor financial record-keeping or aggressive <a href="/blog/dental-practice-profit-extraction-uk">profit extraction strategies</a> can artificially depress apparent profitability. This is particularly problematic with EBITDA-based valuations.</p>
+<p>Poor financial record-keeping or aggressive <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction strategies</a> can artificially depress apparent profitability. This is particularly problematic with EBITDA-based valuations.</p>
 
 <p>Sometimes owners extract profits through excessive director's salaries, family member employment, or personal expenses run through the practice. While legitimate, these need proper adjustment during valuation.</p>
 
@@ -162,4 +162,4 @@ faqs:
 
 <p>Remember that valuation is as much art as science. Different valuers might reach different conclusions based on the same information, particularly around the multiples applied and growth assumptions.</p>
 
-<p>If you're planning significant changes to your practice structure or considering a sale, speaking with specialists who understand both the technical aspects of <a href="/blog/practice-acquisition-financial-due-diligence">practice acquisitions</a> and the tax implications can save considerable time and money.</p>
+<p>If you're planning significant changes to your practice structure or considering a sale, speaking with specialists who understand both the technical aspects of <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">practice acquisitions</a> and the tax implications can save considerable time and money.</p>

@@ -31,7 +31,7 @@ faqs:
 
 <p>General accountants handle basic bookkeeping and tax returns competently. However, they typically lack deep knowledge of dental-specific issues that could cost you thousands.</p>
 
-<p>A specialist dental accountant understands NHS UDA accounting, knows how to optimise <a href="/blog/dental-practice-profit-extraction-uk">profit extraction strategies</a> for practice owners, and can navigate the complexities of <a href="/blog/nhs-private-mix-dental-accounts">mixed NHS and private income</a>. They also understand practice valuations, associate contract structures, and dental industry benchmarks.</p>
+<p>A specialist dental accountant understands NHS UDA accounting, knows how to optimise <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction strategies</a> for practice owners, and can navigate the complexities of <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">mixed NHS and private income</a>. They also understand practice valuations, associate contract structures, and dental industry benchmarks.</p>
 
 <p>For associates, this specialisation matters too. A dental accountant knows which expenses are allowable, understands the self-employment vs employment nuances, and can help with <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">Self Assessment preparation</a> specific to dental work patterns.</p>
 
@@ -105,7 +105,7 @@ faqs:
 <li>"Can you provide references from similar dental clients?"</li>
 </ul>
 
-<p>For practice owners considering acquisitions, ask about their experience with <a href="/blog/practice-acquisition-financial-due-diligence">financial due diligence</a> and transaction support.</p>
+<p>For practice owners considering acquisitions, ask about their experience with <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">financial due diligence</a> and transaction support.</p>
 
 <h2>Understanding Fee Structures</h2>
 

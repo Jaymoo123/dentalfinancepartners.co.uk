@@ -157,7 +157,7 @@ faqs:
 
 <p>NHS contract accounting can be complex, particularly for practices with multiple contracts or significant private/NHS mix. Consider working with <a href="/services">specialist dental accountants</a> who understand the intricacies of BSA payments and reconciliation processes.</p>
 
-<p>Professional support becomes particularly valuable during contract transitions, year-end reconciliations, or if you're considering changes to your <a href="/blog/nhs-private-mix-dental-accounts">NHS/private patient mix</a>.</p>
+<p>Professional support becomes particularly valuable during contract transitions, year-end reconciliations, or if you're considering changes to your <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">NHS/private patient mix</a>.</p>
 
 <p>Proper NHS contract accounting forms the foundation of accurate practice financial management. Get this right, and you'll have clarity on your true profitability and cash position. Get it wrong, and you risk nasty surprises when BSA reconciliations arrive.</p>
 

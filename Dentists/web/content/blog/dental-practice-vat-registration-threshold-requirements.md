@@ -30,7 +30,7 @@ faqs:
 <p>Dental practices face unique VAT situations that differ from other businesses:</p>
 
 <h3>NHS vs Private Mix</h3>
-<p>NHS contract income counts toward your VAT threshold, but the way VAT applies can be complex. <a href="/blog/nhs-private-mix-dental-accounts">Understanding your NHS-private mix</a> is crucial for both VAT planning and general practice accounting.</p>
+<p>NHS contract income counts toward your VAT threshold, but the way VAT applies can be complex. <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">Understanding your NHS-private mix</a> is crucial for both VAT planning and general practice accounting.</p>
 
 <h3>Associate vs Practice Owner Transition</h3>
 <p>Associates moving to practice ownership often underestimate how quickly turnover can accumulate. A practice generating £8,000 monthly will hit the threshold in just over 11 months.</p>
@@ -91,7 +91,7 @@ faqs:
 
 <p>Larger practices are typically well above any proposed threshold change. The main consideration here is around practice acquisitions and how separate VAT registrations might be managed during transitions.</p>
 
-<p>If you're planning <a href="/blog/practice-acquisition-financial-due-diligence">practice acquisitions</a>, the timing of threshold changes could affect the VAT treatment of newly acquired sites.</p>
+<p>If you're planning <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">practice acquisitions</a>, the timing of threshold changes could affect the VAT treatment of newly acquired sites.</p>
 
 <h3>Associate-Only Practices</h3>
 
@@ -114,7 +114,7 @@ faqs:
 
 <p>When to register for VAT dental practices is a question that increasingly affects practice valuations. A practice sitting just below the threshold might be valued differently than one that's clearly above it, purely due to the administrative complexity VAT registration brings.</p>
 
-<p>This becomes particularly relevant if you're considering <a href="/blog/dental-practice-profit-extraction-uk">profit extraction strategies</a> or planning an exit in the medium term.</p>
+<p>This becomes particularly relevant if you're considering <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction strategies</a> or planning an exit in the medium term.</p>
 
 <h2>What You Should Do Now</h2>
 <p>Don't wait until 2026 to start planning. Here are the practical steps to take:</p>

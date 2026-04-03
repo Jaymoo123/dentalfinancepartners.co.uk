@@ -67,7 +67,7 @@ faqs:
 <li><strong>P60s:</strong> If you have employed income alongside self-employment</li>
 </ul>
 
-<p>For associates working at multiple practices, maintaining separate records for each location helps identify patterns in your <a href="/blog/nhs-private-mix-dental-accounts">NHS and private income mix</a>.</p>
+<p>For associates working at multiple practices, maintaining separate records for each location helps identify patterns in your <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">NHS and private income mix</a>.</p>
 
 <h2>Step-by-Step Associate Dentist Tax Return Guide</h2>
 
@@ -147,7 +147,7 @@ faqs:
 
 <p>Specialist dental accountants understand the unique aspects of dental income and expenses, often identifying savings that justify their fees.</p>
 
-<p>If you're considering practice ownership, proper tax planning becomes even more critical. Our guides on <a href="/blog/dental-practice-profit-extraction-uk">practice profit extraction</a> and <a href="/blog/practice-acquisition-financial-due-diligence">acquisition due diligence</a> provide valuable insights for dentists taking this step.</p>
+<p>If you're considering practice ownership, proper tax planning becomes even more critical. Our guides on <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">practice profit extraction</a> and <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">acquisition due diligence</a> provide valuable insights for dentists taking this step.</p>
 
 <h2>Planning Ahead for 2026</h2>
 

@@ -56,7 +56,7 @@ faqs:
 <li>Take-home: £74,794</li>
 </ul>
 
-<p>The limited company structure saves approximately £8,000 in this example. However, this calculation assumes optimal <a href="/blog/dental-practice-profit-extraction-uk">profit extraction strategies</a> and doesn't account for additional company costs.</p>
+<p>The limited company structure saves approximately £8,000 in this example. However, this calculation assumes optimal <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction strategies</a> and doesn't account for additional company costs.</p>
 
 <h2>Beyond Tax: Other Key Considerations</h2>
 

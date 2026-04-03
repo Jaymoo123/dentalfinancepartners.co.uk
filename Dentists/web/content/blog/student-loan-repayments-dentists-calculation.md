@@ -127,7 +127,7 @@ faqs:
 
 <h3>Practice Ownership and Student Loans</h3>
 
-<p>If you own a dental practice, your student loan repayments are calculated on your total taxable income, including salary, dividends, and other extractions from the business. This requires careful planning around <a href="/blog/dental-practice-profit-extraction-uk">profit extraction strategies</a> to manage your overall tax efficiency.</p>
+<p>If you own a dental practice, your student loan repayments are calculated on your total taxable income, including salary, dividends, and other extractions from the business. This requires careful planning around <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction strategies</a> to manage your overall tax efficiency.</p>
 
 <h2>Record Keeping and Compliance</h2>
 

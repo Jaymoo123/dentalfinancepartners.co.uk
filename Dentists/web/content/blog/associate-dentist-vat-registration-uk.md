@@ -66,7 +66,7 @@ faqs:
 <h3>Mixed Practice</h3>
 <p>Associates working both NHS and private face partial exemption rules. This adds complexity but can still be worthwhile if your VAT-able expenses are high enough.</p>
 
-<p>Understanding how this interacts with your <a href="/blog/nhs-private-mix-dental-accounts">NHS and private income mix</a> is crucial for making the right decision.</p>
+<p>Understanding how this interacts with your <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">NHS and private income mix</a> is crucial for making the right decision.</p>
 
 <h2>Flat Rate Scheme for Associate Dentists</h2>
 

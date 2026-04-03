@@ -71,7 +71,7 @@ faqs:
 <li>Setting aside funds monthly rather than scrambling at deadlines</li>
 <li>Using separate savings accounts for tax provisions</li>
 <li>Planning major expenses around payment dates</li>
-<li>Considering whether <a href="/blog/dental-practice-profit-extraction-uk">profit extraction timing</a> affects your tax position</li>
+<li>Considering whether <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction timing</a> affects your tax position</li>
 </ul>
 
 <h2>Common POA Mistakes</h2>
@@ -88,7 +88,7 @@ faqs:
 
 <h2>Getting Professional Help</h2>
 
-<p>Payment on account calculations can become complex, particularly for practice owners with multiple income sources or those going through <a href="/blog/practice-acquisition-financial-due-diligence">practice acquisitions</a>.</p>
+<p>Payment on account calculations can become complex, particularly for practice owners with multiple income sources or those going through <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">practice acquisitions</a>.</p>
 
 <p>Consider specialist advice if you're:</p>
 

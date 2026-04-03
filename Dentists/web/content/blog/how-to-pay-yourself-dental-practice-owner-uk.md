@@ -86,7 +86,7 @@ faqs:
 
 <h2>Multiple Income Streams</h2>
 
-<p>Many practice owners have complex income situations. You might have NHS contract income, private income, property investments, or <a href="/blog/nhs-private-mix-dental-accounts">mixed NHS and private work</a>. Each affects your optimal pay strategy.</p>
+<p>Many practice owners have complex income situations. You might have NHS contract income, private income, property investments, or <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">mixed NHS and private work</a>. Each affects your optimal pay strategy.</p>
 
 <p>Higher total income pushes you into higher tax bands sooner, making dividend extraction even more valuable. It's worth reviewing your strategy annually as your income grows.</p>
 

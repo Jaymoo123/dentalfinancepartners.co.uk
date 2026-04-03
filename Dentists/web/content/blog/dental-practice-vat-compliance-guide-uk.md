@@ -90,7 +90,7 @@ faqs:
 
 <p>When selling a dental practice, VAT can complicate the transaction. The sale of a practice as a going concern typically doesn't attract VAT, but this requires meeting specific conditions.</p>
 
-<p>If conditions aren't met, the sale becomes subject to VAT, significantly affecting the price. This is particularly relevant when considering <a href="/blog/practice-acquisition-financial-due-diligence">practice acquisition financial due diligence</a>, as VAT liabilities can impact the deal structure.</p>
+<p>If conditions aren't met, the sale becomes subject to VAT, significantly affecting the price. This is particularly relevant when considering <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">practice acquisition financial due diligence</a>, as VAT liabilities can impact the deal structure.</p>
 
 <h2>Getting Professional Help</h2>
 

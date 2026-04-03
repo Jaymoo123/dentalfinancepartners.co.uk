@@ -87,7 +87,7 @@ faqs:
 
 <p>However, one-off inspection costs or required improvements can create significant expense spikes. Building a compliance reserve helps manage these peaks without impacting day-to-day operations.</p>
 
-<p>For practices considering expansion or acquisition, CQC compliance costs should form part of your financial planning. Our <a href="/blog/practice-acquisition-financial-due-diligence">practice acquisition guide</a> covers compliance considerations in detail.</p>
+<p>For practices considering expansion or acquisition, CQC compliance costs should form part of your financial planning. Our <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">practice acquisition guide</a> covers compliance considerations in detail.</p>
 
 <h2>Multi-Site Practices and CQC Costs</h2>
 

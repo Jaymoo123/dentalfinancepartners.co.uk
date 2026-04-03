@@ -72,7 +72,7 @@ faqs:
 <li><strong>Plan career changes carefully:</strong> Moving between different pension schemes can affect your allowances</li>
 </ul>
 
-<p>For practice owners, the interaction between your NHS pension and practice profits adds another layer of complexity. Your <a href="/blog/dental-practice-profit-extraction-uk">profit extraction strategy</a> needs to consider pension allowance implications.</p>
+<p>For practice owners, the interaction between your NHS pension and practice profits adds another layer of complexity. Your <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction strategy</a> needs to consider pension allowance implications.</p>
 
 <h2>Annual Allowance Statements and Reporting</h2>
 

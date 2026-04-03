@@ -65,7 +65,7 @@ faqs:
 
 <p>Goodwill disposals typically qualify for Business Asset Disposal Relief, provided the other conditions are met. The challenge lies in accurately valuing goodwill separately from other assets, which affects both <strong>CGT relief</strong> calculations and the buyer's tax position.</p>
 
-<p>Professional valuations are often essential, particularly for larger practices or where the sale structure is complex. This links to broader considerations around <a href="/blog/practice-acquisition-financial-due-diligence">financial due diligence</a> that buyers will undertake.</p>
+<p>Professional valuations are often essential, particularly for larger practices or where the sale structure is complex. This links to broader considerations around <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">financial due diligence</a> that buyers will undertake.</p>
 
 <h2>Asset vs Share Sales</h2>
 
@@ -87,7 +87,7 @@ faqs:
 <li><strong>Plan for payment</strong> - Consider whether deferring some consideration might spread the gain</li>
 </ul>
 
-<p>Remember that CGT planning should be integrated with your broader retirement and <a href="/blog/dental-practice-profit-extraction-uk">profit extraction</a> planning. What's optimal for CGT might not be optimal overall.</p>
+<p>Remember that CGT planning should be integrated with your broader retirement and <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction</a> planning. What's optimal for CGT might not be optimal overall.</p>
 
 <h2>Record Keeping and Documentation</h2>
 

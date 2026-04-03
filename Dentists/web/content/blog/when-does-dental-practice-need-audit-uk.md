@@ -67,7 +67,7 @@ faqs:
 
 <h3>Lender Requirements</h3>
 
-<p>Banks and finance providers sometimes require audited accounts as part of loan agreements. This is more common for larger practices or when borrowing significant amounts for <a href="/blog/practice-acquisition-financial-due-diligence">practice acquisitions</a>.</p>
+<p>Banks and finance providers sometimes require audited accounts as part of loan agreements. This is more common for larger practices or when borrowing significant amounts for <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">practice acquisitions</a>.</p>
 
 <p>Check your loan agreements carefully — the requirement might kick in at certain borrowing levels or asset values.</p>
 
@@ -145,4 +145,4 @@ faqs:
 
 <p>A specialist dental accountant can help you understand your obligations and plan for any upcoming requirements. They can also help structure your practice to minimize unnecessary compliance costs while meeting your legal obligations.</p>
 
-<p>If you're considering <a href="/blog/dental-practice-profit-extraction-uk">different ways to extract profits</a> from your practice, this might affect your audit requirements depending on the structure you choose.</p>
+<p>If you're considering <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">different ways to extract profits</a> from your practice, this might affect your audit requirements depending on the structure you choose.</p>

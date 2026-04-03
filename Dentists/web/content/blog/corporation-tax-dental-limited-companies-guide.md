@@ -91,7 +91,7 @@ faqs:
 
 <h2>Corporation Tax and Profit Extraction</h2>
 
-<p>Corporation tax directly affects how efficiently you can extract profits from your dental company. <a href="/blog/dental-practice-profit-extraction-uk">Different profit extraction strategies</a> have varying corporation tax implications.</p>
+<p>Corporation tax directly affects how efficiently you can extract profits from your dental company. <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">Different profit extraction strategies</a> have varying corporation tax implications.</p>
 
 <p>Taking profits as salary avoids corporation tax but creates higher National Insurance costs. Dividends are paid from post-corporation tax profits but face lower personal tax rates.</p>
 
@@ -112,7 +112,7 @@ faqs:
 
 <h3>Mixed NHS and Private Income</h3>
 
-<p>Companies with both NHS contracts and private work need careful record-keeping to ensure all income is captured correctly. <a href="/blog/nhs-private-mix-dental-accounts">Managing mixed NHS and private accounting</a> requires attention to different payment timings and methods.</p>
+<p>Companies with both NHS contracts and private work need careful record-keeping to ensure all income is captured correctly. <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">Managing mixed NHS and private accounting</a> requires attention to different payment timings and methods.</p>
 
 <h3>Laboratory Costs</h3>
 

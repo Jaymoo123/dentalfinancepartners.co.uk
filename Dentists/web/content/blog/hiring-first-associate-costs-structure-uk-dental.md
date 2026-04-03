@@ -148,7 +148,7 @@ faqs:
 
 <h2>Tax and Accounting Considerations</h2>
 
-<p>Hiring an associate affects your <a href="/blog/dental-practice-profit-extraction-uk">practice profit extraction</a> strategy and tax planning.</p>
+<p>Hiring an associate affects your <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">practice profit extraction</a> strategy and tax planning.</p>
 
 <h3>Corporation Tax Impact</h3>
 
@@ -305,7 +305,7 @@ faqs:
 <li><strong>Payback period:</strong> 12-18 months including setup costs</li>
 </ul>
 
-<p>However, these figures depend heavily on your <a href="/blog/nhs-private-mix-dental-accounts">NHS and private patient mix</a>, local market conditions, and the associate's experience level.</p>
+<p>However, these figures depend heavily on your <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">NHS and private patient mix</a>, local market conditions, and the associate's experience level.</p>
 
 <h2>Risk Management and Contingency Planning</h2>
 <p>The final aspect of hiring associate dentist costs involves risk management. Consider:</p>
@@ -319,6 +319,6 @@ faqs:
 
 <p>Building contingency funds of 10-15% of your hiring associate dentist costs helps manage these risks effectively.</p>
 
-<p>For practices considering expansion or acquisition alongside hiring associates, professional guidance on <a href="/blog/practice-acquisition-financial-due-diligence">financial due diligence</a> becomes essential to ensure sustainable growth.</p>
+<p>For practices considering expansion or acquisition alongside hiring associates, professional guidance on <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">financial due diligence</a> becomes essential to ensure sustainable growth.</p>
 
 <p>Understanding the full scope of hiring associate dentist costs enables informed decision-making and sustainable practice growth. While the initial investment is substantial, a well-planned associate hire can significantly increase practice profitability and provide valuable clinical coverage.</p>

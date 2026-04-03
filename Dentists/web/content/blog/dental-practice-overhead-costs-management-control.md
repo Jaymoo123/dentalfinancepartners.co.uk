@@ -64,7 +64,7 @@ faqs:
 <li><strong>Specialist practices:</strong> 55-65% total overheads</li>
 </ul>
 
-<p>Your <a href="/blog/nhs-private-mix-dental-accounts">NHS/private mix</a> significantly impacts these ratios. NHS work often requires higher staff levels relative to revenue, while private work typically generates better margins.</p>
+<p>Your <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">NHS/private mix</a> significantly impacts these ratios. NHS work often requires higher staff levels relative to revenue, while private work typically generates better margins.</p>
 
 <h2>Cost Control Strategies That Work</h2>
 
@@ -114,6 +114,6 @@ faqs:
 
 <p>Your overhead structure will change as your practice evolves. Practice expansion, new services, or significant equipment purchases all impact your ratios.</p>
 
-<p>Budget for these changes rather than reacting to them. If you're considering <a href="/blog/practice-acquisition-financial-due-diligence">acquiring another practice</a>, model the combined overhead structure carefully.</p>
+<p>Budget for these changes rather than reacting to them. If you're considering <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">acquiring another practice</a>, model the combined overhead structure carefully.</p>
 
 <p>Seasonal variations also affect overhead percentages. December typically sees lower revenue but similar fixed costs, temporarily increasing your overhead ratio. Plan for these fluctuations in your cash flow management.</p>

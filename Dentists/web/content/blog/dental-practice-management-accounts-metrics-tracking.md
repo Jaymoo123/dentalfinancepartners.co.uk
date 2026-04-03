@@ -35,7 +35,7 @@ faqs:
 
 <p>Break down your revenue by treatment type, not just NHS versus private. Track implants, orthodontics, routine restorative work, and hygienist appointments separately. This shows you where your money really comes from.</p>
 
-<p>For mixed practices, monitor your <a href="/blog/nhs-private-mix-dental-accounts">NHS-private revenue split</a> monthly. A practice targeting 60% private work needs to know immediately if they're drifting toward 70% NHS — it changes everything from cash flow to profitability.</p>
+<p>For mixed practices, monitor your <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">NHS-private revenue split</a> monthly. A practice targeting 60% private work needs to know immediately if they're drifting toward 70% NHS — it changes everything from cash flow to profitability.</p>
 
 <h3>Gross Profit Margins</h3>
 

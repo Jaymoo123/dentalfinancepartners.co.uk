@@ -103,7 +103,7 @@ faqs:
 <li>Using incorrect tax rates or thresholds</li>
 </ul>
 
-<p>For complex situations involving <a href="/blog/nhs-private-mix-dental-accounts">mixed NHS and private income</a>, consider getting professional help to ensure accuracy.</p>
+<p>For complex situations involving <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">mixed NHS and private income</a>, consider getting professional help to ensure accuracy.</p>
 
 <h2>Getting Professional Help</h2>
 

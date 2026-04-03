@@ -42,6 +42,7 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
   "dental-practice-vat-registration-threshold-requirements": "vat-and-compliance",
   "dentist-pension-contributions-tax-relief-uk": "associate-tax",
   "dentist-self-assessment-filing-guide-2026": "associate-tax",
+  "dentist-student-loan-repayment-tax-planning-guide": "associate-tax",
   "dentist-student-loan-repayment-tax-implications": "associate-tax",
   "equipment-finance-dental-practices-tax-implications": "practice-finance",
   "facial-aesthetics-vat-uk-dental-practices": "vat-and-compliance",

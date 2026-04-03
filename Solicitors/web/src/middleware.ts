@@ -114,26 +114,26 @@ export function middleware(request: NextRequest) {
   }
 
   const DUPLICATE_REDIRECTS: Record<string, string> = {
-    "accountant-for-solicitors": "/blog/practice-finance-and-cash-flow/solicitor-accountant",
-    "best-accountant-for-solicitors": "/blog/practice-finance-and-cash-flow/solicitor-accountant",
-    "how-to-find-a-solicitor-accountant": "/blog/practice-finance-and-cash-flow/solicitor-accountant",
-    "law-firm-accountant-guide": "/blog/practice-finance-and-cash-flow/solicitor-accountant",
-    "law-firm-bookkeeping-services-uk-guide": "/blog/practice-finance-and-cash-flow/law-firm-accounting-services",
-    "law-firm-cash-flow-forecasting-guide": "/blog/practice-finance-and-cash-flow/law-firm-cash-flow-management",
+    "accountant-for-solicitors": "/blog/practice-finance-cash-flow/solicitor-accountant",
+    "best-accountant-for-solicitors": "/blog/practice-finance-cash-flow/solicitor-accountant",
+    "how-to-find-a-solicitor-accountant": "/blog/practice-finance-cash-flow/solicitor-accountant",
+    "law-firm-accountant-guide": "/blog/practice-finance-cash-flow/solicitor-accountant",
+    "law-firm-bookkeeping-services-uk-guide": "/blog/practice-finance-cash-flow/law-firm-accounting-services",
+    "law-firm-cash-flow-forecasting-guide": "/blog/practice-finance-cash-flow/law-firm-cash-flow-management",
     "mtd-for-income-tax-solicitors": "/blog/sole-practitioner-tax/making-tax-digital-solicitors",
     "mtd-income-tax-solicitors": "/blog/sole-practitioner-tax/making-tax-digital-solicitors",
-    "partner-retirement-planning-tax-financial-strategies": "/blog/practice-succession-and-sale/partner-retirement-planning-guide-uk-law-firms",
+    "partner-retirement-planning-tax-financial-strategies": "/blog/practice-succession-sale/partner-retirement-planning-guide-uk-law-firms",
     "sole-practitioner-solicitor-tax-guide-2025": "/blog/sole-practitioner-tax/sole-practitioner-solicitor-tax-guide",
     "sole-practitioner-tax-deductions-guide": "/blog/sole-practitioner-tax/sole-practitioner-solicitor-tax-guide",
-    "solicitor-accountant-cost": "/blog/practice-finance-and-cash-flow/solicitor-accountant-fees",
+    "solicitor-accountant-cost": "/blog/practice-finance-cash-flow/solicitor-accountant-fees",
     "solicitor-allowable-expenses-uk-tax-guide": "/blog/sole-practitioner-tax/solicitor-expenses-claims-tax-relief-guide",
     "solicitor-expenses-claims": "/blog/sole-practitioner-tax/solicitor-expenses-claims-tax-relief-guide",
-    "solicitor-practice-exit-strategy": "/blog/practice-succession-and-sale/law-firm-succession-planning-guide-uk",
-    "solicitor-practice-valuation-guide": "/blog/practice-succession-and-sale/law-firm-valuation-guide-uk-solicitors",
+    "solicitor-practice-exit-strategy": "/blog/practice-succession-sale/law-firm-succession-planning-guide-uk",
+    "solicitor-practice-valuation-guide": "/blog/practice-succession-sale/law-firm-valuation-guide-uk-solicitors",
     "solicitor-professional-fees-tax": "/blog/sole-practitioner-tax/solicitor-expenses-claims-tax-relief-guide",
     "solicitor-self-assessment-guide-uk-legal-professionals": "/blog/sole-practitioner-tax/solicitor-self-assessment-uk-tax-guide",
     "solicitor-tax-return-guide": "/blog/sole-practitioner-tax/solicitor-self-assessment-uk-tax-guide",
-    "what-does-a-solicitor-accountant-do": "/blog/practice-finance-and-cash-flow/solicitor-accountant",
+    "what-does-a-solicitor-accountant-do": "/blog/practice-finance-cash-flow/solicitor-accountant",
   };
 
   const nestedMatch = pathname.match(/^\/blog\/[^\/]+\/([^\/]+)$/);

@@ -164,13 +164,13 @@ faqs:
 
 <p>R&D activities can complement broader practice development strategies. For example, if you're implementing new digital workflows, consider whether elements involve genuine technical innovation that could qualify for relief.</p>
 
-<p>This aligns well with approaches discussed in our guide to <a href="/blog/dental-practice-profit-extraction-uk">dental practice profit extraction</a>, where tax-efficient growth strategies can include innovation-focused activities.</p>
+<p>This aligns well with approaches discussed in our guide to <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">dental practice profit extraction</a>, where tax-efficient growth strategies can include innovation-focused activities.</p>
 
 <h3>Multi-Year Planning</h3>
 
 <p>R&D projects often span multiple accounting periods. Plan your approach to ensure consistent documentation and optimal timing of expenditure recognition.</p>
 
-<p>Consider how R&D activities might integrate with other tax planning strategies, including those covered in our <a href="/blog/nhs-private-mix-dental-accounts">NHS and private mix accounting</a> guidance.</p>
+<p>Consider how R&D activities might integrate with other tax planning strategies, including those covered in our <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">NHS and private mix accounting</a> guidance.</p>
 
 <h2>Professional Support and Next Steps</h2>
 
@@ -180,7 +180,7 @@ faqs:
 
 <p>Start by reviewing your recent innovation activities against the qualifying criteria outlined above. If you identify potential R&D projects, gather supporting documentation and consider seeking specialist advice to quantify the potential benefits.</p>
 
-<p>For practices considering broader strategic changes, R&D capabilities might influence decisions around practice structure, acquisition strategies, or expansion plans. Our <a href="/blog/practice-acquisition-financial-due-diligence">practice acquisition due diligence</a> guidance covers how innovation capabilities can impact practice valuations.</p>
+<p>For practices considering broader strategic changes, R&D capabilities might influence decisions around practice structure, acquisition strategies, or expansion plans. Our <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">practice acquisition due diligence</a> guidance covers how innovation capabilities can impact practice valuations.</p>
 
 <p>R&D tax credits represent a valuable but often overlooked opportunity for dental practices engaged in genuine innovation. With proper understanding and professional support, they can provide significant financial benefits while encouraging continued advancement in dental care.</p>
 

@@ -79,7 +79,7 @@ faqs:
 <li><strong>Marketing and advertising:</strong> £10,000-£20,000 in year one</li>
 </ul>
 
-<p>If you're planning a mixed NHS and private practice, understanding the <a href="/blog/nhs-private-mix-dental-accounts">financial implications of different patient mixes</a> is essential for your cash flow projections.</p>
+<p>If you're planning a mixed NHS and private practice, understanding the <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">financial implications of different patient mixes</a> is essential for your cash flow projections.</p>
 
 <h2>Funding Your New Practice</h2>
 
@@ -117,7 +117,7 @@ faqs:
 
 <p><strong>VAT registration:</strong> You'll likely exceed the VAT threshold quickly, so plan for VAT registration from day one. This affects your cash flow as you'll need to charge VAT but may not reclaim it immediately on all purchases.</p>
 
-<p><strong>Corporation tax planning:</strong> If you're setting up as a limited company, understand the tax implications from the start. Professional advice on <a href="/blog/dental-practice-profit-extraction-uk">profit extraction strategies</a> becomes crucial as your practice grows.</p>
+<p><strong>Corporation tax planning:</strong> If you're setting up as a limited company, understand the tax implications from the start. Professional advice on <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction strategies</a> becomes crucial as your practice grows.</p>
 
 <h2>Cost Control Strategies</h2>
 

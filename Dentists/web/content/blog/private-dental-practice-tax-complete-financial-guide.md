@@ -63,7 +63,7 @@ faqs:
 
 <p>For a practice owner extracting £80,000 annually, the optimal split might be £12,570 salary plus £67,430 in dividends, resulting in total tax and NI of approximately £19,500 compared to £24,000 if taken entirely as salary.</p>
 
-<p>Our detailed guide on <a href="/blog/dental-practice-profit-extraction-uk">dental practice profit extraction</a> explores these strategies in greater depth.</p>
+<p>Our detailed guide on <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">dental practice profit extraction</a> explores these strategies in greater depth.</p>
 
 <h2>Business Expenses and Deductions</h2>
 
@@ -134,7 +134,7 @@ faqs:
 
 <p>If your practice provides both NHS and private treatments, additional complexity arises in calculating VAT partial exemption and allocating expenses correctly between exempt and taxable activities.</p>
 
-<p>This requires careful tracking of income streams and appropriate apportionment methodologies. Our guide on <a href="/blog/nhs-private-mix-dental-accounts">mixed NHS and private practice accounts</a> provides detailed guidance on managing these complexities.</p>
+<p>This requires careful tracking of income streams and appropriate apportionment methodologies. Our guide on <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">mixed NHS and private practice accounts</a> provides detailed guidance on managing these complexities.</p>
 
 <h2>Getting Professional Support</h2>
 

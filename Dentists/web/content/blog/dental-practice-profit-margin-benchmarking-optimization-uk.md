@@ -57,7 +57,7 @@ faqs:
 
 <h3>Revenue Mix and Fee Structures</h3>
 
-<p>Your <a href="/blog/nhs-private-mix-dental-accounts">NHS to private patient ratio</a> significantly impacts profit margins. NHS UDA rates have remained relatively static while costs have risen, compressing margins for NHS-dependent practices.</p>
+<p>Your <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">NHS to private patient ratio</a> significantly impacts profit margins. NHS UDA rates have remained relatively static while costs have risen, compressing margins for NHS-dependent practices.</p>
 
 <p>Private work typically generates higher margins due to better fee control and reduced administrative burden. However, private practices face different challenges, including marketing costs and patient acquisition expenses.</p>
 
@@ -105,7 +105,7 @@ faqs:
 
 <h2>Financial Management and Profit Extraction</h2>
 
-<p>Understanding how to extract profits tax-efficiently is crucial for practice owners. Our guide on <a href="/blog/dental-practice-profit-extraction-uk">dental practice profit extraction</a> covers the various options available, from salary and dividends to pension contributions.</p>
+<p>Understanding how to extract profits tax-efficiently is crucial for practice owners. Our guide on <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">dental practice profit extraction</a> covers the various options available, from salary and dividends to pension contributions.</p>
 
 <p>Consider the timing of major purchases and expenses to optimize tax efficiency. Proper financial planning can improve your effective profit margin through reduced tax liabilities.</p>
 
@@ -119,7 +119,7 @@ faqs:
 <li>Consistently achieving margins below 15%</li>
 <li>Experiencing declining profitability despite stable patient numbers</li>
 <li>Planning significant practice changes or expansion</li>
-<li>Considering <a href="/blog/practice-acquisition-financial-due-diligence">practice acquisition</a> and need benchmark comparisons</li>
+<li>Considering <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">practice acquisition</a> and need benchmark comparisons</li>
 </ul>
 
 <h2>Regular Performance Review</h2>
@@ -209,7 +209,7 @@ faqs:
 
 <p>If your staff costs are 45% of turnover while comparable practices achieve 30%, you have a clear problem to address. But don't slash staff immediately — investigate scheduling efficiency, skill mix, and whether you're undercharging first.</p>
 
-<p>For practices considering expansion or <a href="/blog/practice-acquisition-financial-due-diligence">acquisition</a>, benchmarking helps identify realistic improvement opportunities and their potential value.</p>
+<p>For practices considering expansion or <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">acquisition</a>, benchmarking helps identify realistic improvement opportunities and their potential value.</p>
 
 <h2>The Limits of Benchmarking</h2>
 <p>Numbers don't tell the whole story. A practice with lower profit margins might be investing heavily in new equipment, building patient numbers, or operating in a challenging location.</p>
@@ -225,7 +225,7 @@ faqs:
 
 <p><strong>Private practices</strong> generally achieve higher margins of 25-35%, sometimes more. The ability to set fees and focus on higher-value treatments creates better profitability potential.</p>
 
-<p><strong>Mixed practices</strong> usually fall somewhere in between, with margins of 20-30% depending on their NHS/private split. Understanding your <a href="/blog/nhs-private-mix-dental-accounts">NHS and private mix</a> is essential for realistic benchmarking.</p>
+<p><strong>Mixed practices</strong> usually fall somewhere in between, with margins of 20-30% depending on their NHS/private split. Understanding your <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">NHS and private mix</a> is essential for realistic benchmarking.</p>
 
 <h2>Red Flags and Warning Signs</h2>
 <p>Profit margins consistently below 15% suggest operational issues that need addressing. Common problems include overstaffing, excessive overheads, or poor treatment acceptance rates.</p>

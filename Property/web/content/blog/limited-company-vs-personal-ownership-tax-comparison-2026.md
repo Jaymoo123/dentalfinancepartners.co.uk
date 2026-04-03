@@ -88,7 +88,7 @@ faqs:
 <li>PAYE and dividend administration</li>
 </ul>
 
-<p>Personal property ownership involves simpler Self Assessment returns, though <a href="/making-tax-digital-property">Making Tax Digital for Income Tax</a> from April 2026 will increase record-keeping requirements for both structures.</p>
+<p>Personal property ownership involves simpler Self Assessment returns, though <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> from April 2026 will increase record-keeping requirements for both structures.</p>
 
 <h2>Stamp Duty Land Tax Differences</h2>
 

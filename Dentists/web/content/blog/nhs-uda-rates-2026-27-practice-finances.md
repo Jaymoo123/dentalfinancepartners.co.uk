@@ -33,7 +33,7 @@ faqs:
 
 <p>High-need area supplements may push rates higher, while some older contracts might still operate on different values. The key is understanding exactly what rate applies to your specific NHS contract.</p>
 
-<p>For context, a typical Band 2 treatment (like a filling) generates 3 UDAs. At £25.20 per UDA, that's £75.60 in NHS income. Compare this to private fees, and you'll see why many practices are reviewing their <a href="/blog/nhs-private-mix-dental-accounts">NHS-private patient mix</a>.</p>
+<p>For context, a typical Band 2 treatment (like a filling) generates 3 UDAs. At £25.20 per UDA, that's £75.60 in NHS income. Compare this to private fees, and you'll see why many practices are reviewing their <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">NHS-private patient mix</a>.</p>
 
 <h2>Financial Impact on Practice Owners</h2>
 
@@ -65,7 +65,7 @@ faqs:
 
 <p>Second, model different scenarios for the year ahead. What happens if UDA delivery drops by 10%? How would that affect your cash flow and profitability? These calculations help you plan appropriate financial reserves.</p>
 
-<p>Third, consider how UDA rates affect your practice valuation if you're planning an exit. Potential buyers will scrutinize NHS contract performance and sustainability when considering <a href="/blog/practice-acquisition-financial-due-diligence">practice acquisitions</a>.</p>
+<p>Third, consider how UDA rates affect your practice valuation if you're planning an exit. Potential buyers will scrutinize NHS contract performance and sustainability when considering <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">practice acquisitions</a>.</p>
 
 <h2>Beyond UDA Rates: The Bigger Picture</h2>
 

@@ -25,7 +25,7 @@ faqs:
 
 <p>Dental practice insurance premiums represent a significant cost for most UK practices, but the good news is that most policies qualify as <strong>dental practice insurance tax deductible</strong> expenses. Understanding which insurance costs you can claim against tax — and which you cannot — is essential for managing your practice finances effectively.</p>
 
-<p>This guide covers the main types of insurance UK dental practices need and explains how to treat each one for tax purposes. Whether you're a practice owner or considering <a href="/blog/practice-acquisition-financial-due-diligence">buying a practice</a>, getting this right can save you thousands in tax each year.</p>
+<p>This guide covers the main types of insurance UK dental practices need and explains how to treat each one for tax purposes. Whether you're a practice owner or considering <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">buying a practice</a>, getting this right can save you thousands in tax each year.</p>
 
 <h2>Professional Indemnity Insurance</h2>
 
@@ -101,7 +101,7 @@ faqs:
 <li>Calculations for mixed-use or apportioned claims</li>
 </ul>
 
-<p>For <a href="/blog/nhs-private-mix-dental-accounts">practice accounting</a> purposes, most insurance premiums are claimed as general expenses. Professional indemnity may be categorised separately given its significance.</p>
+<p>For <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">practice accounting</a> purposes, most insurance premiums are claimed as general expenses. Professional indemnity may be categorised separately given its significance.</p>
 
 <h2>Timing of Claims</h2>
 
@@ -119,7 +119,7 @@ faqs:
 
 <p>Insurance requirements and tax rules can be complex, particularly for multi-site practices or those with unusual risk profiles. Consider getting advice from specialists who understand dental practice needs.</p>
 
-<p>This is particularly important when <a href="/blog/practice-acquisition-financial-due-diligence">acquiring a practice</a>, as you'll need to ensure appropriate cover is in place from day one while maximising available tax reliefs.</p>
+<p>This is particularly important when <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">acquiring a practice</a>, as you'll need to ensure appropriate cover is in place from day one while maximising available tax reliefs.</p>
 
 <h2>Practice Structure Considerations</h2>
 <p>How you claim insurance tax deductions depends on your practice structure:</p>
@@ -141,7 +141,7 @@ faqs:
 </ul>
 
 <h2>Planning Your Insurance Strategy</h2>
-<p>Insurance premiums represent a significant expense for most practices, often running to several thousand pounds annually. When planning your <a href="/blog/dental-practice-profit-extraction-uk">profit extraction strategy</a>, factor in these costs and their tax relief.</p>
+<p>Insurance premiums represent a significant expense for most practices, often running to several thousand pounds annually. When planning your <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction strategy</a>, factor in these costs and their tax relief.</p>
 
 <p>Consider the timing of premium payments, especially for larger policies. Paying in March rather than April could bring forward tax relief by a full year, improving your cash flow.</p>
 

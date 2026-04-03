@@ -31,7 +31,7 @@ faqs:
 
 <p>Before diving into planning, you need a clear picture of your current financial position. This means understanding your practice's revenue streams, cost structure, and profitability patterns.</p>
 
-<p>Most UK dental practices operate with mixed revenue streams – NHS contracts, private treatments, and potentially specialist services. Each stream has different margins, payment terms, and growth potential. <a href="/blog/nhs-private-mix-dental-accounts">Understanding your NHS-private mix</a> is crucial for effective planning.</p>
+<p>Most UK dental practices operate with mixed revenue streams – NHS contracts, private treatments, and potentially specialist services. Each stream has different margins, payment terms, and growth potential. <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">Understanding your NHS-private mix</a> is crucial for effective planning.</p>
 
 <p>Your practice likely faces predictable seasonal variations too. January often sees reduced private treatment uptake, while December might bring a surge as patients use remaining insurance benefits. Identifying these patterns helps inform your cash flow planning.</p>
 
@@ -90,7 +90,7 @@ faqs:
 
 <h2>Tax Planning Integration</h2>
 
-<p>Effective <strong>dental practice financial planning</strong> must integrate with your tax strategy. This means coordinating equipment purchases with available capital allowances, timing <a href="/blog/dental-practice-profit-extraction-uk">profit extraction</a> efficiently, and ensuring you're maximizing available reliefs.</p>
+<p>Effective <strong>dental practice financial planning</strong> must integrate with your tax strategy. This means coordinating equipment purchases with available capital allowances, timing <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction</a> efficiently, and ensuring you're maximizing available reliefs.</p>
 
 <p>Corporation tax planning for dental practices often involves balancing salary vs dividend payments, timing major expenditure, and potentially utilizing film investment schemes or pension contributions for tax efficiency.</p>
 

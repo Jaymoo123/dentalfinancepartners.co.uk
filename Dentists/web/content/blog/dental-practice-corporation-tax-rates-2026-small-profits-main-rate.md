@@ -57,7 +57,7 @@ faqs:
 
 <h2>Tax Planning Implications for Different Practice Structures</h2>
 
-<p>The dual-rate system significantly impacts <a href="/blog/dental-practice-profit-extraction-uk">profit extraction strategies</a> for dental practice owners. Practices approaching the £50,000 threshold might consider timing expense purchases or salary adjustments to optimize their tax position.</p>
+<p>The dual-rate system significantly impacts <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">profit extraction strategies</a> for dental practice owners. Practices approaching the £50,000 threshold might consider timing expense purchases or salary adjustments to optimize their tax position.</p>
 
 <p>For practices consistently above £250,000, focus shifts to maximizing allowable expenses and considering alternative profit extraction methods such as pension contributions or dividend planning.</p>
 
@@ -73,7 +73,7 @@ faqs:
 
 <h2>Impact on Practice Valuations and Acquisitions</h2>
 
-<p>Corporation tax rates directly affect net profits available for distribution, impacting practice valuations. When considering <a href="/blog/practice-acquisition-financial-due-diligence">practice acquisitions</a>, buyers must factor these rates into their post-tax return calculations.</p>
+<p>Corporation tax rates directly affect net profits available for distribution, impacting practice valuations. When considering <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">practice acquisitions</a>, buyers must factor these rates into their post-tax return calculations.</p>
 
 <p>A practice generating £200,000 profit faces approximately £44,000 in corporation tax, leaving £156,000 for distribution. This affects both purchase price negotiations and post-acquisition cash flow planning.</p>
 

@@ -63,7 +63,7 @@ faqs:
 
 <p>The NHS scheme uses a "pension input amount" to determine how much of your annual allowance you've used each year. This can be difficult to calculate, particularly in years where you see significant pay rises or benefit improvements.</p>
 
-<p>Associates moving between NHS and private work need to be particularly careful about their annual allowance position, especially when <a href="/blog/nhs-private-mix-dental-accounts">managing mixed NHS and private income</a>.</p>
+<p>Associates moving between NHS and private work need to be particularly careful about their annual allowance position, especially when <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">managing mixed NHS and private income</a>.</p>
 
 <h2>Maximising Pension Contributions as a Practice Owner</h2>
 
@@ -77,7 +77,7 @@ faqs:
 <li>How pension contributions affect profit extraction strategies</li>
 </ul>
 
-<p>This requires careful coordination with your practice's <a href="/blog/dental-practice-profit-extraction-uk">overall profit extraction strategy</a> to ensure maximum tax efficiency.</p>
+<p>This requires careful coordination with your practice's <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">overall profit extraction strategy</a> to ensure maximum tax efficiency.</p>
 
 <h2>Common Pension Contribution Mistakes</h2>
 
@@ -132,7 +132,7 @@ faqs:
 <p>The maximum you can contribute to private pensions is the lower of your relevant UK earnings or the annual allowance (minus NHS scheme contributions).</p>
 
 <h2>Pension Planning for Practice Owners</h2>
-<p>Practice owners have more flexibility but face greater complexity. <a href="/blog/dental-practice-profit-extraction-uk">Profit extraction</a> strategies must consider pension contributions alongside salary and dividend planning.</p>
+<p>Practice owners have more flexibility but face greater complexity. <a href="/blog/practice-finance/dental-practice-profit-extraction-uk">Profit extraction</a> strategies must consider pension contributions alongside salary and dividend planning.</p>
 
 <h3>Employer Contributions</h3>
 
