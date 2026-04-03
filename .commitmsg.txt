@@ -1,0 +1,8 @@
+Fix reading time accuracy and mobile TOC positioning
+
+Reading time: changed from 200 WPM (ceil) to 238 WPM (round, min 1).
+200 WPM was inflating estimates by 15-20%; 238 WPM is the research-backed
+average for non-fiction web content. Also fixes tag stripping to use spaces.
+
+Mobile TOC: changed sticky top-14 to top-16 to properly clear the header
+on all breakpoints (Property header is 64px at sm+).

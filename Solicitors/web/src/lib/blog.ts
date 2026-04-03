@@ -142,8 +142,7 @@ export function getAllCategories(): Array<{
 }
 
 export function calculateReadTime(content: string): number {
-  const wordsPerMinute = 200;
   const text = content.replace(/<[^>]*>/g, " ");
   const words = text.split(/\s+/).filter((w) => w.length > 0).length;
-  return Math.ceil(words / wordsPerMinute);
+  return Math.max(1, Math.round(words / 238));
 }

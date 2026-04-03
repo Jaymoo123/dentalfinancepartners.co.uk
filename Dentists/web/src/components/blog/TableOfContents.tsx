@@ -43,7 +43,7 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
   return (
     <nav aria-label="Table of contents">
       {/* Mobile: Sticky at top, compact */}
-      <div className="lg:hidden sticky top-14 z-30 mb-6 -mx-4 sm:-mx-6">
+      <div className="lg:hidden sticky top-16 z-30 mb-6 -mx-4 sm:-mx-6">
         <div className="bg-[var(--surface)]/95 backdrop-blur-sm border-y border-[var(--border)] px-4 py-3 sm:px-6">
           <details className="group">
             <summary className={`flex items-center justify-between cursor-pointer list-none ${focusRing} rounded`}>

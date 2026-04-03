@@ -122,7 +122,7 @@ export function getAllCategories(): Array<{ slug: string; name: string; count: n
 }
 
 export function calculateReadTime(html: string): number {
-  const text = html.replace(/<[^>]*>/g, "");
-  const words = text.trim().split(/\s+/).length;
-  return Math.ceil(words / 200);
+  const text = html.replace(/<[^>]*>/g, " ");
+  const words = text.split(/\s+/).filter((w) => w.length > 0).length;
+  return Math.max(1, Math.round(words / 238));
 }
