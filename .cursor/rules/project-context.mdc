@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Project Context
 
-Monorepo containing 4 UK niche accountancy websites. All live, deployed on Vercel, sharing a common architecture. Last updated: 2 April 2026.
+Monorepo containing 4 UK niche accountancy websites. All live, deployed on Vercel (auto-deploys from `main` branch), sharing a common architecture. Last updated: 3 April 2026.
 
 ## Sites
 
@@ -23,7 +23,7 @@ Medical uses flat blog URLs (no category in path). The other 3 use /blog/{catego
 - Next.js 15 + React 19 + TypeScript + Tailwind 4
 - App Router (src/app/)
 - Supabase (leads, blog topics)
-- Vercel deployment (auto-deploys from main branch)
+- Vercel deployment (auto-deploys from main branch on git push)
 - Python (Anthropic API) for blog content generation
 - GSC/GA4 integration via agents/
 
@@ -35,10 +35,14 @@ Accounting/
 │   ├── niche.config.json  #   Site config (domain, brand, categories, SEO)
 │   ├── web/               #   Next.js app
 │   │   ├── src/app/       #     Pages (App Router)
-│   │   ├── src/lib/       #     blog.ts, schema.ts, local-business-schema.ts
+│   │   ├── src/lib/       #     blog.ts, schema.ts, markdown-utils.ts, local-business-schema.ts
 │   │   ├── src/config/    #     site.ts, niche-loader.ts
 │   │   ├── src/components/#     UI components
-│   │   ├── content/blog/  #     Markdown blog posts with YAML front matter
+│   │   │   ├── blog/      #       BlogPostRenderer, TableOfContents, ReadingProgress
+│   │   │   ├── forms/     #       LeadForm
+│   │   │   ├── layout/    #       PageShell, SiteHeader, SiteFooter
+│   │   │   └── ui/        #       layout-utils, Breadcrumb, etc.
+│   │   ├── content/blog/  #     Markdown blog posts with YAML front matter + HTML body
 │   │   └── public/        #     Static assets (llms.txt, favicon, etc.)
 │   └── pipeline/          #   Python blog generation scripts
 ├── Dentists/              # Same structure as Property
@@ -57,25 +61,12 @@ Accounting/
 └── .env / .env.local      # Environment variables (gitignored)
 ```
 
-## Critical: slugifyCategory Differences
+## Blog Content Format
 
-**Property & Dentists** replace `&` with `and`:
-```
-"Section 24 & Tax Relief" → "section-24-and-tax-relief"
-"VAT & compliance" → "vat-and-compliance"
-```
+Blog posts are `.md` files with YAML front matter followed by an **HTML body** (not markdown). The body uses raw `<h2>`, `<h3>`, `<p>`, `<a>`, `<strong>`, `<ul>`, `<li>` tags etc. The `blog.ts` `parsePostFile()` function uses `gray-matter` to split front matter from content, then pipes the HTML body through `addHeadingIds()` before storing as `contentHtml`.
 
-**Solicitors** strips `&` entirely:
-```
-"SRA Compliance & Trust Accounting" → "sra-compliance-trust-accounting"
-"VAT & Compliance" → "vat-compliance"
-```
+### Front Matter
 
-**Medical** replaces `&` with `and` (same as Property/Dentists). Uses flat post URLs (/blog/{slug}) but category hub pages exist at /blog/{category-slug}/.
-
-## Blog Post Front Matter
-
-Markdown files in `{Site}/web/content/blog/*.md`:
 ```yaml
 title: "Post Title"
 slug: "post-slug"
@@ -95,12 +86,34 @@ faqs:
     answer: "..."
 ```
 
+## Critical: slugifyCategory Differences
+
+**Property & Dentists** replace `&` with `and`:
+```
+"Section 24 & Tax Relief" → "section-24-and-tax-relief"
+"VAT & compliance" → "vat-and-compliance"
+```
+
+**Solicitors** strips `&` entirely:
+```
+"SRA Compliance & Trust Accounting" → "sra-compliance-trust-accounting"
+"VAT & Compliance" → "vat-compliance"
+```
+
+**Medical** replaces `&` with `and` (same as Property/Dentists). Uses flat post URLs (/blog/{slug}) but category hub pages exist at /blog/{category-slug}/.
+
 ## Key Files Per Site
 
 - `niche.config.json` — loaded by web via `src/config/niche-loader.ts` (import from `../../../niche.config.json`)
-- `src/lib/blog.ts` — getAllPosts(), getPostBySlug(), slugifyCategory(), getCategorySlug()
+- `src/lib/blog.ts` — getAllPosts(), getPostBySlug(), slugifyCategory(), getCategorySlug(), calculateReadTime(), addHeadingIds() import
+- `src/lib/markdown-utils.ts` — addHeadingIds() (injects `id` attrs into `<h2>`/`<h3>` tags), extractHeadings() (parses headings for TOC)
 - `src/lib/schema.ts` — buildBlogPostingJsonLd(), buildOgImageUrl() (Person author, dynamic OG images)
 - `src/lib/local-business-schema.ts` — buildLocalBusinessJsonLd() for location pages
+- `src/components/blog/BlogPostRenderer.tsx` — renders blog posts with 2-column grid layout (content + TOC sidebar)
+- `src/components/blog/TableOfContents.tsx` — client component: responsive TOC (mobile collapsible + desktop sticky sidebar)
+- `src/components/blog/ReadingProgress.tsx` — client component: reading progress bar at top of viewport
+- `src/components/layout/PageShell.tsx` — root layout wrapper (flex column, `overflow-x-clip`, header/main/footer)
+- `src/components/layout/SiteHeader.tsx` — sticky header (`sticky top-0 z-40`)
 - `src/app/blog/[category]/[slug]/page.tsx` — blog post pages (Property/Dentists/Solicitors)
 - `src/app/blog/[slug]/page.tsx` — blog post pages (Medical only)
 - `src/app/blog/{category-slug}/page.tsx` — category hub pages (static, one per category, rich pillar content + schema + LeadForm)
@@ -109,6 +122,40 @@ faqs:
 - `src/app/robots.ts` — robots.txt generation (includes AI crawler rules)
 - `src/middleware.ts` — redirects for old flat /blog/{slug} URLs to /blog/{category}/{slug}
 - `web/public/llms.txt` — AI discoverability file (site description, key pages, categories)
+
+## Blog Post Rendering Pipeline
+
+1. **Content loading** (`blog.ts`): `gray-matter` splits YAML front matter from HTML body content
+2. **Heading IDs** (`blog.ts`): `addHeadingIds()` from `markdown-utils.ts` injects `id` attributes into all `<h2>` and `<h3>` tags (regex: `/<(h[23])>(.*?)<\/\1>/gi`). Stored as `contentHtml`.
+3. **Read time** (`blog.ts`): `calculateReadTime()` strips HTML tags, counts words, divides by 238 WPM, rounds to nearest minute (min 1).
+4. **Page component** (`[slug]/page.tsx`): Server component that loads the post, finds related posts, renders `<BlogPostRenderer>`.
+5. **BlogPostRenderer**: Extracts headings via `extractHeadings(post.contentHtml)`, builds JSON-LD schema, renders the layout.
+6. **Layout**: 2-column grid at `lg` breakpoint: `lg:grid-cols-[1fr_250px]` with `lg:gap-12`.
+   - Left column (`max-w-4xl`): breadcrumb, header (category badge, h1, date/author/read time, summary), mobile TOC (`lg:hidden`), image, article body, FAQs, about author, CTA, related articles.
+   - Right column (`hidden lg:block`): sticky sidebar TOC (`sticky top-24`).
+7. **TableOfContents** (client component): Takes `headings` prop (pre-extracted). Uses `IntersectionObserver` to highlight active heading. Responsive:
+   - Mobile (`lg:hidden`): sticky collapsible `<details>` element at `top-16` (clears header)
+   - Desktop (`hidden lg:block`): sticky sidebar card at `top-24` with heading list
+8. **ReadingProgress** (client component): thin progress bar at very top of viewport (`fixed top-0 z-50`).
+
+### IMPORTANT: overflow-x-clip
+
+All 4 sites use `overflow-x-clip` (NOT `overflow-x-hidden`) on the `PageShell` wrapper div. This is critical because `overflow-x-hidden` causes browsers to implicitly set `overflow-y: auto`, creating a scroll container that **breaks `position: sticky`** on the TOC sidebar and mobile TOC. `overflow-x-clip` prevents horizontal overflow without creating a scroll container.
+
+## CSS & Theming
+
+All 4 sites define CSS custom properties in `globals.css`:
+- `--surface`, `--surface-elevated`, `--ink`, `--ink-soft`, `--muted`, `--border`
+- `--primary`, `--primary-hover`, `--accent`, `--accent-strong`
+- Site-specific: Medical has `--medical-teal`, `--coral`; Property uses emerald-based values
+
+**Property** uses a mix of direct Tailwind classes (`text-emerald-600`, `bg-slate-50`) and CSS variables. **Dentists, Medical, Solicitors** use CSS variables throughout (`text-[var(--primary)]`, `bg-[var(--surface)]`).
+
+Layout utilities in `src/components/ui/layout-utils.ts`:
+- `siteContainer` = `max-w-5xl` centered with responsive padding
+- `siteContainerLg` = `max-w-6xl` centered with responsive padding
+- `contentNarrow` = `max-w-3xl` centered
+- `focusRing` = consistent focus-visible outline style
 
 ## Categories
 
@@ -157,6 +204,33 @@ faqs:
 ### Redirects
 - Property/Dentists/Solicitors have `permanentRedirect` logic in `[category]/[slug]/page.tsx`: if a slug exists under a different category than the URL, it 301-redirects to the correct URL
 - Dentists has `middleware.ts` mapping old flat /blog/{slug} URLs to /blog/{category}/{slug}
+
+## Table of Contents (TOC) System
+
+All 4 sites have a standardized TOC implementation (added 3 April 2026):
+
+**Components** (per site):
+- `src/lib/markdown-utils.ts` — `addHeadingIds()` + `extractHeadings()`
+- `src/components/blog/TableOfContents.tsx` — responsive TOC ("use client")
+- `src/components/blog/ReadingProgress.tsx` — progress bar ("use client")
+
+**How it works**:
+1. `blog.ts` calls `addHeadingIds(content)` during post parsing — injects `id` attrs into bare `<h2>`/`<h3>` tags
+2. `BlogPostRenderer` calls `extractHeadings(post.contentHtml)` — returns `[{ id, text, level }]` array
+3. `TableOfContents` receives `headings` as a prop (NOT raw content) and renders two views:
+   - Mobile (`lg:hidden`): collapsible `<details>` bar, `sticky top-16 z-30`
+   - Desktop (`hidden lg:block`): sticky sidebar card, `sticky top-24`, with `IntersectionObserver` for active heading highlight
+4. Only ONE TOC is ever visible at a time (responsive show/hide)
+
+**Key gotcha**: `PageShell.tsx` MUST use `overflow-x-clip` not `overflow-x-hidden`, otherwise `position: sticky` breaks on all descendants.
+
+## Reading Time
+
+`calculateReadTime()` in each site's `blog.ts`:
+- Strips HTML tags (replaced with spaces to prevent word-joining)
+- Counts words via whitespace split, filtering empty strings
+- Divides by **238 WPM** (research-backed average for non-fiction web content)
+- `Math.round()` with `Math.max(1, ...)` — rounds to nearest minute, minimum 1
 
 ## Remaining Known Issues
 
