@@ -1,0 +1,5 @@
+Fix sticky TOC sidebar: change overflow-x-hidden to overflow-x-clip
+
+overflow-x-hidden on PageShell caused browsers to implicitly set overflow-y:auto,
+creating a scroll container that broke position:sticky on the TOC sidebar.
+overflow-x-clip prevents horizontal overflow without creating a scroll container.
