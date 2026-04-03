@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import type { BlogFrontmatter, BlogPost } from "@/types/blog";
+import { addHeadingIds } from "./markdown-utils";
 
 const postsDirectory = path.join(process.cwd(), "content", "blog");
 
@@ -13,6 +14,8 @@ function parsePostFile(filePath: string): BlogPost {
   if (!fm.slug || !fm.title) {
     throw new Error(`Invalid blog frontmatter in ${filePath}`);
   }
+
+  const contentWithIds = addHeadingIds(content.trim());
 
   return {
     title: fm.title,
@@ -29,7 +32,7 @@ function parsePostFile(filePath: string): BlogPost {
     schema: fm.schema,
     canonical: fm.canonical,
     faqs: fm.faqs,
-    contentHtml: content.trim(),
+    contentHtml: contentWithIds,
   };
 }
 

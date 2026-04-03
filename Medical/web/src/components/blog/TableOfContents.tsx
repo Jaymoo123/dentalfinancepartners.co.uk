@@ -42,7 +42,6 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
 
   return (
     <nav aria-label="Table of contents">
-      {/* Mobile: Sticky at top, compact */}
       <div className="lg:hidden sticky top-14 z-30 mb-6 -mx-4 sm:-mx-6">
         <div className="bg-[var(--surface)]/95 backdrop-blur-sm border-y border-[var(--border)] px-4 py-3 sm:px-6">
           <details className="group">
@@ -82,7 +81,6 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
         </div>
       </div>
 
-      {/* Desktop: Sticky sidebar */}
       <div className="hidden lg:block sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto rounded-lg border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm">
         <h2 className="text-sm font-bold uppercase tracking-wide text-[var(--ink)] mb-4 flex items-center gap-2">
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

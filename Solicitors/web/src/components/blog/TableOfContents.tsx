@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { focusRing } from "@/components/ui/layout-utils";
-import { extractHeadings } from "@/lib/markdown-utils";
 
 type Heading = {
   id: string;
@@ -11,12 +10,10 @@ type Heading = {
 };
 
 type TableOfContentsProps = {
-  content: string;
+  headings: Heading[];
 };
 
-export function TableOfContents({ content }: TableOfContentsProps) {
-  const headings = extractHeadings(content);
-  const [isOpen, setIsOpen] = useState(false);
+export function TableOfContents({ headings }: TableOfContentsProps) {
   const [activeId, setActiveId] = useState<string>("");
 
   useEffect(() => {
