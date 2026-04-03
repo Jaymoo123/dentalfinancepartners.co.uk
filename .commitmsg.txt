@@ -1,6 +1,0 @@
-Standardize Table of Contents across all 4 sites
-
-- Add addHeadingIds() to Property, Dentists, Medical blog.ts so headings get IDs
-- Fix duplicate TOC bug in Dentists/Solicitors BlogPostRenderer (was rendering twice)
-- Add TOC, ReadingProgress, markdown-utils to Medical (had none)
-- All sites now use Property's clean responsive layout: collapsible mobile TOC + sticky desktop sidebar
