@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Project Context — Accounting Monorepo
 
-Last updated: 3 April 2026. Monorepo with 4 UK niche accountancy websites. All live, deployed on Vercel, sharing a common architecture with site-specific differences.
+Last updated: 3 April 2026 (post link/redirect audit). Monorepo with 4 UK niche accountancy websites. All live, deployed on Vercel, sharing a common architecture with site-specific differences.
 
 ---
 
@@ -127,12 +127,14 @@ All sites define in `globals.css`: `--surface`, `--ink`, `--ink-soft`, `--muted`
 
 ### 5d. Middleware Redirects
 
-| Site | `middleware.ts` role |
-|------|---------------------|
-| Property | 301 redirects: flat `/blog/{slug}` → `/blog/{category}/{slug}`; `/blog/category/{x}` → `/blog/{x}` |
-| Dentists | Same flat→nested blog redirects + duplicate handling |
-| Medical | Duplicate slug redirects only (no flat→nested needed — URLs are already flat) |
-| Solicitors | Flat→nested redirects + `GUIDE_TO_CATEGORY_MAP` for legacy URLs |
+| Site | `middleware.ts` role | Map sizes |
+|------|---------------------|-----------|
+| Property | 301 redirects: flat `/blog/{slug}` → `/blog/{category}/{slug}`; `/blog/category/{x}` → `/blog/{x}`; duplicate slug → canonical | 168 slug→category + 83 duplicate redirects |
+| Dentists | Same flat→nested blog redirects + duplicate handling | 75 slug→category + 16 duplicate redirects |
+| Medical | Duplicate slug redirects only (no flat→nested needed — URLs are already flat) | 16 redirect entries |
+| Solicitors | Flat→nested redirects + `GUIDE_TO_CATEGORY_MAP` for legacy `/guides/` URLs; duplicate handling | 70 slug→category + 20 duplicate redirects + 6 guide redirects |
+
+**Audit status (3 Apr 2026):** All middleware verified — every `SLUG_TO_CATEGORY_MAP` entry matches actual post front matter category, every `DUPLICATE_REDIRECTS` target resolves to an existing post with correct category slug. Zero double-301 chains remain.
 
 ---
 
@@ -263,6 +265,8 @@ faqs:
 ### Redirects
 - Property/Dentists/Solicitors: `permanentRedirect` in `[category]/[slug]/page.tsx` if slug found under wrong category
 - All sites have `middleware.ts` (see section 5d)
+- All internal blog links now use canonical nested format (no flat-format links remain in post bodies)
+- All middleware category mappings verified against actual post front matter (3 Apr 2026)
 
 ---
 
@@ -393,13 +397,27 @@ Prints a checklist of manual steps (hub content, location content, page copy, Ve
 
 ## 18. Remaining Known Issues
 
-- Dentists: 11/55 posts lack internal blog links; existing links use flat `/blog/{slug}` URLs (work via middleware redirects but aren't canonical nested format)
+- Dentists: 11/55 posts have zero outbound internal blog links (link dead-ends — they receive links but don't link out)
 - Solicitors: 3/50 posts lack internal blog links
-- Medical: "Consultant Tax" category exists in niche.config.json but has 0 posts (no hub page created)
+- Medical: "Consultant Tax" category in niche.config.json has 0 posts and no hub page
+- All 4 sites: zero external authority links (no outbound links to HMRC, GOV.UK, NHS, SRA etc.) — may want to add for topical authority
+- Property: "Portfolio Management" category hub has only 1 post — consider recategorizing or merging
 
 ---
 
-## 19. Year/Tax Year Conventions
+## 19. Link/Redirect Audit Log
+
+**3 Apr 2026 — Full audit, all clear:**
+- Medical: renamed `gp-accountant-services.md` → `gp-accountant-services-complete-guide.md` to match front matter slug (was 404ing, 14 internal links broken)
+- Property: corrected 36 `SLUG_TO_CATEGORY_MAP` entries (were `portfolio-management`, now correct categories) + 63 `DUPLICATE_REDIRECTS` targets — eliminated double-301 chains
+- Solicitors: fixed 11 `DUPLICATE_REDIRECTS` entries using `practice-finance-and-cash-flow` / `practice-succession-and-sale` → corrected to `practice-finance-cash-flow` / `practice-succession-sale` (Solicitors strips `&`)
+- Dentists: converted 86 flat `/blog/{slug}` links to canonical `/blog/{category}/{slug}` across 38 posts; added missing middleware entry for `dentist-student-loan-repayment-tax-planning-guide`
+- Property: fixed broken static link `/making-tax-digital-property` → `/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline`
+- Content validator: 236 posts, 0 errors, 0 warnings
+
+---
+
+## 20. Year/Tax Year Conventions
 
 - UK tax year: 6 April to 5 April → "2026/27" = 6 April 2026 to 5 April 2027
 - "2026/26" is **INVALID** — never use
