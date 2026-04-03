@@ -3,7 +3,7 @@ title: "GP Accountant Cost: What UK Medical Professionals Pay for Accounting Ser
 slug: "gp-accountant-cost"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-cost"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Cost UK: Fees for Medical Accounting Services"
 metaDescription: "UK GPs typically pay £1,500–£5,000 per year for accounting. Fees by role, what's included, and how to get value from your medical accounting spend."
@@ -47,7 +47,7 @@ faqs:
 <li>Combined service: £2,500-£5,000 per partner annually</li>
 </ul>
 
-<p>GP partners face higher fees because partnership accounting requires detailed profit allocation calculations and complex tax planning around the [NHS pension annual allowance](/blog/nhs-pension-annual-allowance-complete-guide).</p>
+<p>GP partners face higher fees because partnership accounting requires detailed profit allocation calculations and complex tax planning around the <a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS pension annual allowance</a>.</p>
 
 <h3>Locum Doctors</h3>
 <ul>
@@ -150,7 +150,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
-- [Why Every GP Needs a Specialist Accountant](/blog/gp-accountant)
+- <a href="/blog/gp-accountant-services-complete-guide">GP Accountant Services: Complete Guide</a>
+- <a href="/blog/gp-accountant">Why Every GP Needs a Specialist Accountant</a>
 
 <p>Remember that accounting fees are tax-deductible professional expenses, reducing the net cost by your marginal tax rate.</p>

@@ -3,7 +3,7 @@ title: "GP Financial Planning: A Complete Guide for UK General Practitioners"
 slug: "gp-financial-planning"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-financial-planning"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "GP Financial Planning: Pensions, Tax & Investments"
 metaDescription: "GPs face unique financial decisions — from NHS pensions to tax planning and income protection. Key strategies for partners, salaried GPs, and locums."
@@ -35,7 +35,7 @@ faqs:
 
 <p>Your approach to GP financial planning depends heavily on your employment structure. Each arrangement brings different financial considerations and planning opportunities.</p>
 
-<p><strong>GP Partners</strong> receive profit shares from practice performance, creating variable income that requires careful cash flow management. Understanding the [financial implications of becoming a partner](/blog/becoming-gp-partner-financial-implications) is essential for planning tax payments on profits, pension contributions, and potential practice investment requirements.</p>
+<p><strong>GP Partners</strong> receive profit shares from practice performance, creating variable income that requires careful cash flow management. Understanding the <a href="/blog/becoming-gp-partner-financial-implications">financial implications of becoming a partner</a> is essential for planning tax payments on profits, pension contributions, and potential practice investment requirements.</p>
 
 <p><strong>Salaried GPs</strong> have more predictable income but fewer tax planning opportunities. Your focus should be on maximizing pension contributions and building wealth outside the practice structure.</p>
 
@@ -45,7 +45,7 @@ faqs:
 
 <p>The NHS pension scheme forms the cornerstone of most GP retirement planning. Understanding the annual allowance rules is crucial for effective GP financial planning.</p>
 
-<p>The standard annual allowance is £60,000 for 2025/26, but high-earning GPs often face the [tapered allowance](/blog/nhs-pension-tapered-annual-allowance-calculator). If your threshold income exceeds £200,000 and adjusted income exceeds £260,000, your allowance reduces to as little as £10,000.</p>
+<p>The standard annual allowance is £60,000 for 2025/26, but high-earning GPs often face the <a href="/blog/nhs-pension-tapered-annual-allowance-calculator">tapered allowance</a>. If your threshold income exceeds £200,000 and adjusted income exceeds £260,000, your allowance reduces to as little as £10,000.</p>
 
 <p>For GP partners, this creates a particular challenge. Practice profits can push you into tapered allowance territory, while pension growth from both employee and employer contributions counts toward your limit.</p>
 
@@ -195,7 +195,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Tax Advice: Essential Tax Planning](/blog/gp-tax-advice)
-- [GP Pension Contributions Tax Relief](/blog/gp-pension-contributions-tax-relief)
+- <a href="/blog/gp-tax-advice">GP Tax Advice: Essential Tax Planning</a>
+- <a href="/blog/gp-pension-contributions-tax-relief">GP Pension Contributions Tax Relief</a>
 
 <p>Consider engaging professional support when facing major decisions: partnership opportunities, practice structure changes, retirement planning, or significant changes in earnings.</p>

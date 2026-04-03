@@ -3,7 +3,7 @@ title: "Sole Trader vs Limited Company for Dentists: Which is Right for You?"
 slug: "sole-trader-vs-limited-company-dentists-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-finance/sole-trader-vs-limited-company-dentists-uk"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Practice finance"
 metaTitle: "Sole Trader vs Limited Company for Dentists | UK Tax Guide"
 metaDescription: "At £100k profit, a limited company saves over £5,000 in tax vs sole trader. Tax comparison, admin costs, and when to incorporate for UK dentists."
@@ -62,7 +62,7 @@ faqs:
 
 <h3>Administrative Burden</h3>
 
-<p>Sole trader administration is relatively simple. You'll need to complete a <a href="/blog/associate-dentist-tax-self-assessment-uk">Self Assessment</a> return annually and keep records of income and expenses. Most dentists can handle basic bookkeeping themselves, though professional help is recommended.</p>
+<p>Sole trader administration is relatively simple. You'll need to complete a <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">Self Assessment</a> return annually and keep records of income and expenses. Most dentists can handle basic bookkeeping themselves, though professional help is recommended.</p>
 
 <p>Limited companies require more work. You must file annual accounts at Companies House, complete a corporation tax return, maintain statutory registers, and often prepare dividend paperwork. Professional accounting fees are typically higher – expect to pay £1,500-£3,500 annually compared to £500-£1,500 for sole trader accounts.</p>
 

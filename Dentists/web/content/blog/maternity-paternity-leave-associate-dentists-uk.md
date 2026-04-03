@@ -3,7 +3,7 @@ title: "Maternity and Paternity Leave for Associate Dentists: What You Need to K
 slug: "maternity-paternity-leave-associate-dentists-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/maternity-paternity-leave-associate-dentists-uk"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Associate tax"
 metaTitle: "Maternity Leave for Associate Dentists | UK Guide"
 metaDescription: "Self-employed associates can't get SMP but may qualify for Maternity Allowance. Rights, financial planning, and protecting your patient list."
@@ -39,7 +39,7 @@ faqs:
 
 <p>If you're genuinely self-employed, you won't receive statutory maternity pay (SMP) or statutory paternity pay from the practice. Instead, you may qualify for Maternity Allowance from the government - typically lower than SMP but still valuable financial support.</p>
 
-<p>Some associates work under employment contracts, particularly in corporate groups or certain NHS positions. If you're unsure of your status, check your contract or speak with the practice. This distinction affects both your statutory pay entitlements and your <a href="/blog/associate-dentist-tax-self-assessment-uk">tax obligations</a>.</p>
+<p>Some associates work under employment contracts, particularly in corporate groups or certain NHS positions. If you're unsure of your status, check your contract or speak with the practice. This distinction affects both your statutory pay entitlements and your <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">tax obligations</a>.</p>
 
 <h2>Self-Employed Maternity Benefits</h2>
 
@@ -93,7 +93,7 @@ faqs:
 
 <p>Reduced earnings during maternity or paternity leave can significantly affect your tax position. Most associates will drop into lower tax brackets, potentially making this a good time for certain financial decisions.</p>
 
-<p>Maternity Allowance counts as taxable income but is paid gross. You'll account for tax through your <a href="/blog/associate-dentist-tax-self-assessment-uk">Self Assessment</a> return. However, with reduced overall income, many associates pay little or no tax during leave periods.</p>
+<p>Maternity Allowance counts as taxable income but is paid gross. You'll account for tax through your <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">Self Assessment</a> return. However, with reduced overall income, many associates pay little or no tax during leave periods.</p>
 
 <p>Consider pension contributions during low-income periods. The annual allowance rules remain the same, but lower earnings might make it harder to maximize tax-efficient contributions.</p>
 

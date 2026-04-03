@@ -3,7 +3,7 @@ title: "Section 24 and Pension Contributions: Tax Planning Strategies for Landlo
 slug: "section-24-pension-contributions-tax-planning"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-pension-contributions-tax-planning"
 date: "2026-04-01"
-author: "Property Tax Partners"
+author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
 metaTitle: "Section 24 Pension Planning: Tax Strategies for Landlords"
 metaDescription: "How Section 24 affects pension planning for landlords. Tax-efficient strategies combining mortgage interest restrictions with retirement planning."

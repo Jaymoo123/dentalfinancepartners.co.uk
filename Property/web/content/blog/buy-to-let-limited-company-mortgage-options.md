@@ -3,7 +3,7 @@ title: "Buy-to-Let Limited Company Mortgage Options: Complete Guide for UK Prope
 slug: "buy-to-let-limited-company-mortgage-options"
 canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/buy-to-let-limited-company-mortgage-options"
 date: "2026-04-01"
-author: "Property Tax Partners"
+author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Buy-to-Let Limited Company Mortgage Options | Property Guide"
 metaDescription: "SPV mortgage rates are typically 0.5-1% higher than personal BTL rates. Compare lenders, eligibility, and requirements for company purchases."

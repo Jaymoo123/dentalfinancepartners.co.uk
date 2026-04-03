@@ -3,7 +3,7 @@ title: "GP Accountant Birmingham: Specialist Medical Accounting Services"
 slug: "gp-accountant-birmingham"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-birmingham"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Birmingham | Medical Accountants UK"
 metaDescription: "Birmingham GP accountant for NHS partners, salaried GPs, and locums. Tax planning, NHS pension advice, and medical practice accounts across the Midlands."
@@ -84,11 +84,11 @@ faqs:
 <ul>
 <li>Strong private healthcare sector providing opportunities for additional income</li>
 <li>Established medical property market for practice premises and investments</li>
-<li>Active [locum market](/blog/locum-doctor-tax-complete-guide) serving both Birmingham and surrounding areas</li>
+<li>Active <a href="/blog/locum-doctor-tax-complete-guide">locum market</a> serving both Birmingham and surrounding areas</li>
 <li>Multiple CCG/ICB arrangements affecting commissioning and payment timing</li>
 </ul>
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
-- [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
+- <a href="/blog/gp-accountant-services-complete-guide">GP Accountant Services: Complete Guide</a>
+- <a href="/blog/gp-accountant-cost">GP Accountant Cost: What UK Medical Professionals Pay</a>

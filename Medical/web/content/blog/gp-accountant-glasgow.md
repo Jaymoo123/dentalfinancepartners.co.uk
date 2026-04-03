@@ -3,7 +3,7 @@ title: "GP Accountant Glasgow: Specialist Tax and Financial Services for Medical
 slug: "gp-accountant-glasgow"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-glasgow"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Glasgow | Medical Tax & Accounting Specialists"
 metaDescription: "Glasgow GP accountant for partners, salaried GPs, and consultants. Medical tax planning, NHS pension advice, and practice accounts across Scotland."
@@ -95,7 +95,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
-- [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
+- <a href="/blog/gp-accountant-services-complete-guide">GP Accountant Services: Complete Guide</a>
+- <a href="/blog/gp-accountant-cost">GP Accountant Cost: What UK Medical Professionals Pay</a>
 
 <p>If you're ready to optimize your medical practice finances with specialist expertise, <a href="/contact">get in touch</a> to discuss your requirements with our team of qualified medical accountants.</p>

@@ -2,7 +2,7 @@
 title: "LEAP Accounting Integration: Complete Guide for UK Law Firms"
 slug: "leap-accounting-integration-guide"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "LEAP Accounting Integration Guide for UK Solicitors"
 metaDescription: "LEAP integrates with Sage, Xero, and QuickBooks to automate client money tracking and trust accounting. Setup steps, costs, and SRA compliance benefits."

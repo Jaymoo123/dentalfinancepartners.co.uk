@@ -2,7 +2,7 @@
 title: "Client Money Accounting for Solicitors: SRA Rules & Best Practice"
 slug: "client-money-accounting-solicitors"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "SRA Compliance & Trust Accounting"
 metaTitle: "Client Money Accounting for Solicitors | SRA Rules"
 metaDescription: "Mixing client and practice money triggers SRA intervention. Segregation rules, monthly reconciliation, interest duties, and record-keeping explained."

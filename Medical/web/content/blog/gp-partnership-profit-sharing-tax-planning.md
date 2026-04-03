@@ -3,7 +3,7 @@ title: "GP Partnership Profit Sharing Tax Planning: Essential Strategies for 202
 slug: "gp-partnership-profit-sharing-tax-planning"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-partnership-profit-sharing-tax-planning"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "GP Partnership Profit Sharing Tax Planning 2026/27"
 metaDescription: "Profit allocation decisions directly affect each partner's tax bill and NHS pension. Strategies to optimise your GP partnership for 2026/27."
@@ -76,7 +76,7 @@ faqs:
 
 <p>GP partnership profit sharing tax planning must consider NHS pension implications. Higher profits increase NHS pension growth, which can trigger annual allowance charges for high-earning partners.</p>
 
-<p>Partners affected by the [tapered annual allowance](/blog/nhs-pension-tapered-annual-allowance-calculator) (threshold income above £200,000) need particularly careful planning. The [NHS pension annual allowance](/blog/nhs-pension-annual-allowance-complete-guide) can create significant tax charges if not managed properly.</p>
+<p>Partners affected by the <a href="/blog/nhs-pension-tapered-annual-allowance-calculator">tapered annual allowance</a> (threshold income above £200,000) need particularly careful planning. The <a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS pension annual allowance</a> can create significant tax charges if not managed properly.</p>
 
 <h2>Common Planning Strategies</h2>
 
@@ -154,8 +154,8 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Partnership Tax: Complete Guide](/blog/gp-partnership-tax-complete-guide)
-- [Becoming a GP Partner: Financial Implications](/blog/becoming-gp-partner-financial-implications)
+- <a href="/blog/gp-partnership-tax-complete-guide">GP Partnership Tax: Complete Guide</a>
+- <a href="/blog/becoming-gp-partner-financial-implications">Becoming a GP Partner: Financial Implications</a>
 
 <p>Regular reviews ensure that profit sharing arrangements remain optimal and compliant. What works today may not be appropriate in future years as circumstances change.</p>
 

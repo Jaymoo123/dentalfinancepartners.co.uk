@@ -3,7 +3,7 @@ title: "How to Transfer Property Into a Limited Company UK: Complete Guide for L
 slug: "how-to-transfer-property-into-limited-company-uk"
 canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk"
 date: "2026-03-29"
-author: "Property Tax Partners"
+author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "How to Transfer Property Into Company UK | 2026"
 metaDescription: "Transferring property to a company triggers CGT and SDLT — but incorporation relief can defer the gain. Step-by-step UK process explained."

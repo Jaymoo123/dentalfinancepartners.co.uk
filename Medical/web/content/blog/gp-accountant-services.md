@@ -2,7 +2,7 @@
 title: "GP Accountant Services: Complete Guide for Medical Professionals"
 slug: "gp-accountant-services-complete-guide"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Services | Medical Accountants UK"
 metaDescription: "GP accountant services tailored for UK doctors — partnership accounts, NHS pension planning, tax returns, and incorporation advice for all career stages."
@@ -45,7 +45,7 @@ faqs:
 
 <p>GP partnerships have unique accounting requirements. Your accountant should understand profit sharing ratios, drawing accounts, and how different income streams (GMS, QOF, enhanced services) affect partnership allocations.</p>
 
-<p>For example, a four-partner practice earning £800k might allocate profits based on seniority, patient lists, and non-clinical responsibilities — see our [GP partnership tax guide](/blog/gp-partnership-tax-complete-guide). Getting this wrong affects everyone's tax position and NHS pension contributions.</p>
+<p>For example, a four-partner practice earning £800k might allocate profits based on seniority, patient lists, and non-clinical responsibilities — see our <a href="/blog/gp-partnership-tax-complete-guide">GP partnership tax guide</a>. Getting this wrong affects everyone's tax position and NHS pension contributions.</p>
 
 <p>Partnership accounts must also handle capital expenditure, equipment purchases, and premises costs correctly. These decisions impact both current tax liabilities and future profit distributions.</p>
 
@@ -127,7 +127,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
-- [GP Tax Advice: Essential Tax Planning](/blog/gp-tax-advice)
+- <a href="/blog/gp-accountant-cost">GP Accountant Cost: What UK Medical Professionals Pay</a>
+- <a href="/blog/gp-tax-advice">GP Tax Advice: Essential Tax Planning</a>
 
 <p>Quality <strong>GP accountant services</strong> transform financial stress into strategic advantage. They free you to focus on patient care while ensuring your practice finances work as hard as you do.</p>

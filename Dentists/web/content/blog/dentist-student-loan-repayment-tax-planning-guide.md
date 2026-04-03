@@ -2,7 +2,7 @@
 title: "Dentist Student Loan Repayment: Tax & Planning Guide"
 slug: "dentist-student-loan-repayment-tax-planning-guide"
 date: "2026-04-02"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Associate tax"
 metaTitle: "Dentist Student Loan Repayment | Tax Guide 2026/27"
 metaDescription: "Pension contributions can reduce your student loan repayments by hundreds per year. Plan 1, Plan 2, and postgraduate loan rules for UK dentists."
@@ -141,7 +141,7 @@ faqs:
 <li>You're self-employed or a practice owner</li>
 </ul>
 
-<p>The <a href="/blog/associate-dentist-tax-self-assessment-uk">Self Assessment process</a> automatically calculates any additional student loan repayments due based on your total income.</p>
+<p>The <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">Self Assessment process</a> automatically calculates any additional student loan repayments due based on your total income.</p>
 
 <h2>Looking Ahead: Long-Term Planning</h2>
 

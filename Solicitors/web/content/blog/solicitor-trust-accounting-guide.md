@@ -3,7 +3,7 @@ title: "Solicitor Trust Accounting: Complete Guide to SRA Accounts Rules Complia
 slug: "solicitor-trust-accounting-guide"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/solicitor-trust-accounting-guide"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "SRA Compliance & Trust Accounting"
 metaTitle: "Solicitor Trust Accounting: SRA Compliance Guide 2026"
 metaDescription: "Client money must reach a designated client account by the next working day. Monthly reconciliations, segregation rules, and SRA breach reporting."

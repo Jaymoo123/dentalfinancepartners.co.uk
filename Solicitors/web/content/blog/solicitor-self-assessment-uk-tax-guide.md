@@ -3,7 +3,7 @@ title: "Solicitor Self Assessment: Complete UK Tax Guide for Legal Professionals
 slug: "solicitor-self-assessment-uk-tax-guide"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sole-practitioner-tax/solicitor-self-assessment-uk-tax-guide"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "Sole Practitioner Tax"
 metaTitle: "Solicitor Self Assessment Tax Guide 2026/27"
 metaDescription: "31 January deadline, allowable expenses (PII, SRA fees, CPD), and MTD obligations from April 2026. Tax returns for sole practitioners and partners."

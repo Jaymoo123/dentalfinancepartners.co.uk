@@ -2,7 +2,7 @@
 title: "Finding the Right Solicitor Accountant in London: A Guide for Law Firms"
 slug: "solicitor-accountant-london"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Accounting"
 metaTitle: "Solicitor Accountant London | Accounts for Lawyers"
 metaDescription: "London law firms need SRA-specialist accountants for client money compliance, partnership tax, and practice growth. What to look for and typical costs."

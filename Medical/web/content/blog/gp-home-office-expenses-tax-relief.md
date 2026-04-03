@@ -3,7 +3,7 @@ title: "GP Home Office Expenses Tax Relief: Complete Guide for Medical Professio
 slug: "gp-home-office-expenses-tax-relief"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-home-office-expenses-tax-relief"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Tax & Accounts"
 metaTitle: "GP Home Office Tax Relief 2026/27 | What You Can Claim"
 metaDescription: "GPs can claim £6/week flat rate or actual proportional costs for home working. Eligible expenses, calculation methods, and how to maximise your relief."
@@ -86,7 +86,7 @@ faqs:
 
 <p><strong>Salaried GPs and consultants:</strong> Claim as employment expenses on your Self Assessment, provided your employer doesn't reimburse these costs.</p>
 
-<p><strong>Locum doctors:</strong> Include in your [business expenses](/blog/locum-doctor-expenses-what-you-can-claim) if operating as a sole trader, or claim against employment income if working under IR35.</p>
+<p><strong>Locum doctors:</strong> Include in your <a href="/blog/locum-doctor-expenses-what-you-can-claim">business expenses</a> if operating as a sole trader, or claim against employment income if working under IR35.</p>
 
 <h2>Record Keeping Requirements</h2>
 
@@ -118,7 +118,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Tax Deductions Complete List 2026](/blog/gp-tax-deductions-complete-list-2026)
-- [Medical Professional Expenses: What Is Claimable](/blog/medical-professional-expenses-what-is-claimable)
+- <a href="/blog/gp-tax-deductions-complete-list-2026">GP Tax Deductions Complete List 2026</a>
+- <a href="/blog/medical-professional-expenses-what-is-claimable">Medical Professional Expenses: What Is Claimable</a>
 
 <p>If you're unsure about your eligibility or want to maximize your relief, speak to a specialist medical accountant who understands the unique aspects of GP and consultant taxation.</p>

@@ -154,10 +154,54 @@ def parse_llm_output(raw_text):
     
     return fields
 
+def slugify_category(category):
+    """Convert category name to URL slug. Dentists replaces & with and."""
+    return re.sub(r'\s+', '-', re.sub(r'[^a-z0-9\s-]', '', category.lower().replace('&', 'and').replace('(', '').replace(')', ''))).strip('-')
+
+
+def validate_post(fields, slug, canonical):
+    """Validate generated content quality before writing."""
+    issues = []
+    meta_title = fields.get('meta_title', '')
+    meta_desc = fields.get('meta_description', '')
+    content = fields.get('content', '')
+    
+    if not slug or slug == 'untitled':
+        issues.append("Missing or default slug")
+    if not fields.get('name'):
+        issues.append("Missing title")
+    if not fields.get('category'):
+        issues.append("Missing category")
+    if len(meta_title) > 60:
+        issues.append(f"metaTitle too long ({len(meta_title)} chars, max 60)")
+    if len(meta_desc) > 155:
+        issues.append(f"metaDescription too long ({len(meta_desc)} chars, max 155)")
+    if not meta_desc:
+        issues.append("Missing metaDescription")
+    if re.search(r'\[.*?\]\(.*?\)', content):
+        issues.append("Content contains markdown links (should be HTML <a> tags)")
+    if not fields.get('faq1'):
+        issues.append("No FAQs generated")
+    if len(content) < 500:
+        issues.append(f"Content too short ({len(content)} chars)")
+    
+    if issues:
+        print(f"[WARN] Validation issues for {slug}:")
+        for issue in issues:
+            print(f"  - {issue}")
+    else:
+        print(f"[OK] Validation passed for {slug}")
+    
+    return issues
+
+
 def export_to_markdown(fields):
     """Export parsed fields to Markdown file."""
     slug = fields.get("slug", "untitled")
     today = datetime.now().strftime("%Y-%m-%d")
+    category = fields.get('category', 'Practice accounting')
+    category_slug = slugify_category(category)
+    canonical = f"{SITE_BASE_URL}/blog/{category_slug}/{slug}"
     
     # Build FAQs array for frontmatter
     faqs = []
@@ -165,7 +209,6 @@ def export_to_markdown(fields):
         question = fields.get(f'faq{i}', '').strip()
         answer = fields.get(f'faa{i}', '').strip()
         if question and answer:
-            # Escape quotes in YAML
             question_escaped = question.replace('"', '\\"')
             answer_escaped = answer.replace('"', '\\"')
             faqs.append(f'  - question: "{question_escaped}"\n    answer: "{answer_escaped}"')
@@ -173,12 +216,15 @@ def export_to_markdown(fields):
     faqs_yaml = "\n".join(faqs) if faqs else ""
     faqs_section = f"faqs:\n{faqs_yaml}" if faqs_yaml else "faqs: []"
     
+    validate_post(fields, slug, canonical)
+    
     front_matter = f"""---
 title: "{fields.get('name', 'Untitled')}"
 slug: "{slug}"
+canonical: "{canonical}"
 date: "{today}"
 author: "{AUTHOR_NAME}"
-category: "{fields.get('category', 'Practice accounting')}"
+category: "{category}"
 metaTitle: "{fields.get('meta_title', fields.get('name', 'Untitled'))}"
 metaDescription: "{fields.get('meta_description', '')}"
 altText: "{fields.get('alt_tag', '')}"
@@ -186,7 +232,6 @@ image: ""
 h1: "{fields.get('h1', fields.get('name', 'Untitled'))}"
 summary: "{fields.get('3_liner', '')}"
 schema: ""
-canonical: ""
 {faqs_section}
 ---
 

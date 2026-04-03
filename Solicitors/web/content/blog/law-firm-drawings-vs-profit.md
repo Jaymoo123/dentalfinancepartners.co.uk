@@ -3,7 +3,7 @@ title: "Law Firm Drawings vs Profit: Understanding the Key Differences for UK Pa
 slug: "law-firm-drawings-vs-profit"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting/law-firm-drawings-vs-profit"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Accounting"
 metaTitle: "Law Firm Drawings vs Profit: UK Partner Tax Guide 2026"
 metaDescription: "You pay tax on your profit allocation, not your drawings. Why the difference matters for self-assessment, cash flow planning, and partner capital accounts."

@@ -3,7 +3,7 @@ title: "GP Accountant Bristol: Specialist Medical Accounting Services"
 slug: "gp-accountant-bristol"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-bristol"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Bristol | Medical Accountants UK"
 metaDescription: "Bristol GP accountant for partners, salaried GPs, and locums. NHS pension planning, partnership accounts, and locum tax advice. Free initial consultation."
@@ -110,7 +110,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
-- [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
+- <a href="/blog/gp-accountant-services-complete-guide">GP Accountant Services: Complete Guide</a>
+- <a href="/blog/gp-accountant-cost">GP Accountant Cost: What UK Medical Professionals Pay</a>
 
 <p>Our team stays current with medical taxation developments, from basis period reform implementation to NHS pension scheme changes, ensuring Bristol doctors receive up-to-date guidance.</p>

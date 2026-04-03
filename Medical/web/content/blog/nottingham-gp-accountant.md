@@ -2,7 +2,7 @@
 title: "Nottingham GP Accountant: Specialist Tax and Accounting Services"
 slug: "nottingham-gp-accountant"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "Nottingham GP Accountant | Medical Tax Specialists"
 metaDescription: "Nottingham GP accountant for NHS partners, salaried GPs, and locums. Tax planning, NHS pension advice, and practice accounts across the East Midlands."
@@ -184,7 +184,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
-- [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
+- <a href="/blog/gp-accountant-services-complete-guide">GP Accountant Services: Complete Guide</a>
+- <a href="/blog/gp-accountant-cost">GP Accountant Cost: What UK Medical Professionals Pay</a>
 
 <p>To discuss your specific requirements, <a href="/contact">contact</a> our team for an initial consultation. We understand the unique challenges facing Nottingham medical professionals and can help you optimise your financial position while ensuring full compliance with all regulations.</p>

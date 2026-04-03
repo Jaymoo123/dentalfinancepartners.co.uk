@@ -2,7 +2,7 @@
 title: "Dentist Self Assessment: Complete Filing Guide 2026"
 slug: "dentist-self-assessment-filing-guide-2026"
 date: "2026-03-31"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Associate tax"
 metaTitle: "Dentist Self Assessment Guide 2026 | UK Tax Filing"
 metaDescription: "31 January deadline, £100 automatic late penalty, and allowable expenses from CPD to GDC fees. Step-by-step filing for associates and practice owners."
@@ -121,7 +121,7 @@ faqs:
 <li><strong>Late payment penalties:</strong> Set up direct debits for payment on account dates</li>
 </ul>
 
-<p>For detailed guidance on specific expense categories, our <a href="/blog/associate-dentist-tax-self-assessment-uk">associate dentist tax guide</a> covers allowable deductions in depth.</p>
+<p>For detailed guidance on specific expense categories, our <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">associate dentist tax guide</a> covers allowable deductions in depth.</p>
 
 <h2>Payment on Account Explained</h2>
 

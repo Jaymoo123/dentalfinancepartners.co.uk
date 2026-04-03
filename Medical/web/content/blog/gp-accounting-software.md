@@ -3,7 +3,7 @@ title: "GP Accounting Software: Essential Guide for UK Medical Practices"
 slug: "gp-accounting-software"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accounting-software"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "GP Accounting Software Guide | UK Medical Practice Finance"
 metaDescription: "Compare GP accounting software for UK practices — features, costs, and NHS system integration. Find the right tool for partnership accounts and reporting."
@@ -43,7 +43,7 @@ faqs:
 
 <h3>Partnership Accounting</h3>
 
-<p>Most GP practices operate as partnerships, requiring software that can handle [profit sharing](/blog/gp-partnership-profit-sharing-tax-planning), drawings tracking, and individual partner capital accounts. The system should automatically calculate each partner's share of profits based on your partnership agreement percentages.</p>
+<p>Most GP practices operate as partnerships, requiring software that can handle <a href="/blog/gp-partnership-profit-sharing-tax-planning">profit sharing</a>, drawings tracking, and individual partner capital accounts. The system should automatically calculate each partner's share of profits based on your partnership agreement percentages.</p>
 
 <p>Partnership features should include automated equity partner drawings limits, tracking of current account balances, and end-of-year profit allocation. This eliminates manual calculations and reduces errors in partner distributions.</p>
 
@@ -111,8 +111,8 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accounting: Essential Guide](/blog/gp-accounting-guide)
-- [GP Bookkeeping: Essential Guide](/blog/gp-bookkeeping-guide-uk)
+- <a href="/blog/gp-accounting-guide">GP Accounting: Essential Guide</a>
+- <a href="/blog/gp-bookkeeping-guide-uk">GP Bookkeeping: Essential Guide</a>
 
 <p>The right accounting software becomes the financial backbone of your practice, supporting everything from daily transactions to annual tax returns. Investing time in proper selection and implementation pays dividends in improved efficiency and reduced compliance risk.</p>
 

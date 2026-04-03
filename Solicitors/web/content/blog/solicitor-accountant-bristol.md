@@ -3,7 +3,7 @@ title: "Solicitor Accountant Bristol: Professional Accounting for Legal Practice
 slug: "solicitor-accountant-bristol"
 canonical: "https://www.accountsforlawyers.co.uk/blog/partnership-llp-accounting/solicitor-accountant-bristol"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Accounting"
 metaTitle: "Solicitor Accountant Bristol | Accounts for Lawyers"
 metaDescription: "Bristol law firms need SRA-specialist accountants for client money compliance, partnership tax, and practice growth. What to look for and typical costs."

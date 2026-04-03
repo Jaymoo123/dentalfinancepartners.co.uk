@@ -3,7 +3,7 @@ title: "VAT Registration for Solicitors: When and How to Register Your Legal Pra
 slug: "vat-registration-solicitors"
 canonical: "https://www.accountsforlawyers.co.uk/blog/vat-compliance/vat-registration-solicitors"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "VAT Registration Solicitors: When to Register Your Law Firm"
 metaDescription: "Solicitors must register for VAT when turnover hits £90,000. Thresholds, voluntary registration, disbursement rules, and MTD requirements explained."

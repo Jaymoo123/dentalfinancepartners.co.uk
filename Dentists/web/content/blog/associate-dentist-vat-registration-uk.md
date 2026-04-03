@@ -3,7 +3,7 @@ title: "Should I Register for VAT as an Associate Dentist?"
 slug: "associate-dentist-vat-registration-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/associate-dentist-vat-registration-uk"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "VAT & compliance"
 metaTitle: "Associate Dentist VAT Registration: When & Why to Register"
 metaDescription: "Most associates don't need VAT registration — but it can save money if you have high equipment or travel costs. Thresholds, benefits, and pitfalls."
@@ -95,7 +95,7 @@ faqs:
 
 <p>Before making a decision, speak to an accountant who understands dental practice structures. They can model the financial impact based on your specific circumstances.</p>
 
-<p>Many associates benefit from discussing this alongside their <a href="/blog/associate-dentist-tax-self-assessment-uk">broader tax planning</a>, as VAT registration affects your overall tax position.</p>
+<p>Many associates benefit from discussing this alongside their <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">broader tax planning</a>, as VAT registration affects your overall tax position.</p>
 
 <h2>Key Takeaways</h2>
 

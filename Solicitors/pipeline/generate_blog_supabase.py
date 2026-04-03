@@ -26,7 +26,7 @@ except ImportError:
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 OUTPUT_MD_DIR = os.path.join(os.path.dirname(__file__), "..", "web", "content", "blog")
 SITE_BASE_URL = f"https://{NICHE_CONFIG['domain']}"
-AUTHOR_NAME = NICHE_CONFIG['display_name']
+AUTHOR_NAME = f"{NICHE_CONFIG['display_name']} Editorial Team"
 
 POST_CATEGORIES = [
     "SRA Compliance & Trust Accounting",
@@ -220,18 +220,27 @@ def generate_content(topic_data):
     
     topic = topic_data["keyword"]
     primary_keyword = topic_data.get("keyword", topic)
+    secondary_keywords = [
+        topic_data.get(f"secondary_keyword_{i}")
+        for i in range(1, 11)
+        if topic_data.get(f"secondary_keyword_{i}")
+    ] or topic_data.get("secondary_keywords", [])
     user_intent = topic_data.get("intent", "informational")
     search_volume = topic_data.get("search_volume", "unknown")
     content_tier = "foundational" if topic_data.get("priority", 50) <= 3 else "cluster"
     
+    keywords_text = ", ".join([k for k in secondary_keywords if k]) if secondary_keywords else "none"
+    
     seo_guidance = f"""
 SEO OPTIMIZATION REQUIREMENTS:
 - Primary keyword: "{primary_keyword}" (search volume: {search_volume}/month)
+- Secondary keywords: {keywords_text}
 - Search intent: {user_intent}
 - Content type: {content_tier}
 
 KEYWORD USAGE:
 - Use primary keyword in: title (H1), first paragraph, and 2-3 times naturally throughout
+- Include secondary keywords naturally in subheadings and body content
 - Optimize for {user_intent} intent ({"provide comprehensive information" if user_intent == "informational" else "guide users to take action" if user_intent == "transactional" else "help users navigate to resources"})
 - Natural language - avoid keyword stuffing
 """
@@ -280,10 +289,54 @@ def parse_llm_output(raw_text):
     
     return fields
 
+def slugify_category(category):
+    """Convert category name to URL slug. Solicitors strips & entirely."""
+    return re.sub(r'\s+', '-', re.sub(r'[^a-z0-9\s-]', '', category.lower().replace('(', '').replace(')', ''))).strip('-')
+
+
+def validate_post(fields, slug, canonical):
+    """Validate generated content quality before writing."""
+    issues = []
+    meta_title = fields.get('meta_title', '')
+    meta_desc = fields.get('meta_description', '')
+    content = fields.get('content', '')
+    
+    if not slug or slug == 'untitled':
+        issues.append("Missing or default slug")
+    if not fields.get('name'):
+        issues.append("Missing title")
+    if not fields.get('category'):
+        issues.append("Missing category")
+    if len(meta_title) > 60:
+        issues.append(f"metaTitle too long ({len(meta_title)} chars, max 60)")
+    if len(meta_desc) > 155:
+        issues.append(f"metaDescription too long ({len(meta_desc)} chars, max 155)")
+    if not meta_desc:
+        issues.append("Missing metaDescription")
+    if re.search(r'\[.*?\]\(.*?\)', content):
+        issues.append("Content contains markdown links (should be HTML <a> tags)")
+    if not fields.get('faq1'):
+        issues.append("No FAQs generated")
+    if len(content) < 500:
+        issues.append(f"Content too short ({len(content)} chars)")
+    
+    if issues:
+        print(f"[WARN] Validation issues for {slug}:")
+        for issue in issues:
+            print(f"  - {issue}")
+    else:
+        print(f"[OK] Validation passed for {slug}")
+    
+    return issues
+
+
 def export_to_markdown(fields):
     """Export parsed fields to Markdown file."""
     slug = fields.get("slug", "untitled")
     today = datetime.now().strftime("%Y-%m-%d")
+    category = fields.get('category', 'SRA Compliance & Trust Accounting')
+    category_slug = slugify_category(category)
+    canonical = f"{SITE_BASE_URL}/blog/{category_slug}/{slug}"
     
     faqs = []
     for i in range(1, 5):
@@ -297,12 +350,15 @@ def export_to_markdown(fields):
     faqs_yaml = "\n".join(faqs) if faqs else ""
     faqs_section = f"faqs:\n{faqs_yaml}" if faqs_yaml else "faqs: []"
     
+    validate_post(fields, slug, canonical)
+    
     front_matter = f"""---
 title: "{fields.get('name', 'Untitled')}"
 slug: "{slug}"
+canonical: "{canonical}"
 date: "{today}"
 author: "{AUTHOR_NAME}"
-category: "{fields.get('category', 'SRA Compliance & Trust Accounting')}"
+category: "{category}"
 metaTitle: "{fields.get('meta_title', fields.get('name', 'Untitled'))}"
 metaDescription: "{fields.get('meta_description', '')}"
 altText: "{fields.get('alt_tag', '')}"
@@ -310,7 +366,6 @@ image: ""
 h1: "{fields.get('h1', fields.get('name', 'Untitled'))}"
 summary: "{fields.get('3_liner', '')}"
 schema: ""
-canonical: ""
 {faqs_section}
 ---
 

@@ -3,7 +3,7 @@ title: "How to Read a Dental Practice Profit and Loss Account: A UK Dentist's Gu
 slug: "reading-dental-practice-profit-loss-account-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/reading-dental-practice-profit-loss-account-uk"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Practice accounting"
 metaTitle: "How to Read Dental Practice P&L Accounts | UK Guide"
 metaDescription: "Gross profit should be 60–70% for a healthy practice. Key P&L figures, ratios, and red flags that UK dental practice owners need to watch."

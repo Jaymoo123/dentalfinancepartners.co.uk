@@ -3,7 +3,7 @@ title: "GP Accountant Newcastle: Specialist Medical Accounting Services"
 slug: "gp-accountant-newcastle"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-newcastle"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Newcastle | Medical Tax & Accounts Specialists"
 metaDescription: "GP accountant in Newcastle for Tyneside doctors. Tax planning, NHS pension advice, and partnership accounts from medical accounting specialists."
@@ -85,7 +85,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
-- [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
+- <a href="/blog/gp-accountant-services-complete-guide">GP Accountant Services: Complete Guide</a>
+- <a href="/blog/gp-accountant-cost">GP Accountant Cost: What UK Medical Professionals Pay</a>
 
 <p>For Newcastle GPs seeking specialist medical accounting support, the key is finding an accountant who understands both the medical profession's unique requirements and the local medical community's specific needs.</p>

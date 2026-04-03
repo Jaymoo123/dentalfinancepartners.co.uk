@@ -1,6 +1,6 @@
 """
-Configuration for the BA NEXT JS SITE blog generation pipeline.
-Outputs Markdown to ../web/content/blog for the Dental Finance Partners Next.js site.
+Configuration for the Property blog generation pipeline (legacy path).
+Outputs Markdown to ../web/content/blog for the Property Tax Partners Next.js site.
 """
 import os
 
@@ -12,15 +12,15 @@ OUTPUT_MD_DIR = os.path.join(os.path.dirname(__file__), "..", "web", "content", 
 # ============================================================================
 # SITE CONFIG
 # ============================================================================
-SITE_BASE_URL = "https://dentalfinancepartners.co.uk"
-AUTHOR_NAME = "Dental Finance Partners"
+SITE_BASE_URL = "https://propertytaxpartners.co.uk"
+AUTHOR_NAME = "Property Tax Partners Editorial Team"
 
 # ============================================================================
 # GOOGLE SHEETS (for blog topic queue)
 # ============================================================================
 # Place your service account JSON in this folder and update the filename:
 GOOGLE_SERVICE_ACCOUNT_FILE = os.path.join(os.path.dirname(__file__), "service-account.json")
-TOPICS_SPREADSHEET_NAME = "Dental Blog Topics"  # Your Google Sheet name
+TOPICS_SPREADSHEET_NAME = "Property Blog Topics"  # Your Google Sheet name
 TOPICS_WORKSHEET_NAME = "Sheet1"  # Tab name
 
 # ============================================================================
@@ -33,11 +33,13 @@ LLM_BASE_URL = "https://api.deepseek.com"  # or "https://api.openai.com/v1" for 
 # BLOG CATEGORIES (used by 02_blog_generator.py)
 # ============================================================================
 POST_CATEGORIES = [
-    "Associate tax",
-    "Practice finance",
-    "Buying a practice",
-    "Practice accounting",
-    "VAT & compliance",
+    "Section 24 & Tax Relief",
+    "Incorporation & Company Structures",
+    "Making Tax Digital (MTD)",
+    "Capital Gains Tax",
+    "Portfolio Management",
+    "Property Accountant Services",
+    "Landlord Tax Essentials",
 ]
 
 # ============================================================================
@@ -47,10 +49,8 @@ INTERNAL_LINK_SLUGS = [
     "/services",
     "/about",
     "/contact",
-    "/blog/associate-dentist-tax-self-assessment-uk",
-    "/blog/dental-practice-profit-extraction-uk",
-    "/blog/nhs-private-mix-dental-accounts",
-    "/blog/practice-acquisition-financial-due-diligence",
+    "/incorporation",
+    "/calculators",
 ]
 
 def get_relevant_audience_link(topic: str) -> str:
@@ -59,34 +59,34 @@ def get_relevant_audience_link(topic: str) -> str:
     Used by 02_blog_generator.py to inject a priority internal link.
     """
     topic_lower = topic.lower()
-    if "associate" in topic_lower:
+    if "incorporation" in topic_lower or "limited company" in topic_lower:
+        return "/incorporation"
+    elif "section 24" in topic_lower or "calculator" in topic_lower:
+        return "/calculators"
+    elif "mtd" in topic_lower or "making tax digital" in topic_lower:
         return "/services"
-    elif "owner" in topic_lower or "practice" in topic_lower:
-        return "/services"
-    elif "acquisition" in topic_lower or "buying" in topic_lower:
-        return "/contact"
     else:
         return "/services"
 
 # ============================================================================
 # BLOG SYSTEM PROMPT (used by 02_blog_generator.py)
 # ============================================================================
-BLOG_SYSTEM_PROMPT = """You are a specialist UK dental accountant writing blog content for Dental Finance Partners.
+BLOG_SYSTEM_PROMPT = """You are a specialist UK property accountant writing blog content for Property Tax Partners.
 
-AUDIENCE: UK dentists (associates, practice owners, multi-site groups).
+AUDIENCE: UK landlords and property investors (individual landlords, portfolio owners, property developers).
 
 TONE:
 - Direct, professional, no fluff.
-- Plain English — avoid jargon unless it is standard in UK dentistry (e.g. UDA, NHS contract, Self Assessment).
+- Plain English — avoid jargon unless it is standard in UK property (e.g. BTL, SPV, Section 24, MTD).
 - Practical and grounded — not promotional or over-confident.
-- Write as if you are explaining something to a colleague who knows dentistry but not accounting.
+- Write as if you are explaining something to a colleague who knows property but not accounting.
 
 CONTENT STRUCTURE:
 - Use <h2> for main sections, <h3> for subsections if needed.
 - Use <p> for paragraphs, <ul>/<li> for lists, <strong> for emphasis.
 - NO markdown — output raw HTML only.
 - Keep paragraphs short (2-4 sentences).
-- Use real examples where helpful (e.g. "an associate earning £80k with £6k in expenses").
+- Use real examples where helpful (e.g. "a landlord with 3 BTL properties earning £45k rental income").
 
 INTERNAL LINKING:
 - Link naturally to relevant pages when the context supports it.
@@ -113,7 +113,7 @@ Return the following fields exactly as shown:
 [URL-safe slug]
 
 ==category==
-[One of: Associate tax, Practice finance, Buying a practice, Practice accounting, VAT & compliance]
+[One of: Section 24 & Tax Relief, Incorporation & Company Structures, Making Tax Digital (MTD), Capital Gains Tax, Portfolio Management, Property Accountant Services, Landlord Tax Essentials]
 
 ==h1==
 [Page heading]
@@ -131,7 +131,7 @@ Return the following fields exactly as shown:
 [Image alt text if an image were used]
 
 ==image-prompt==
-[DALL-E prompt for a relevant image — professional, UK dental context]
+[DALL-E prompt for a relevant image — professional, UK property context]
 
 ==content==
 [Full HTML article body — structured with <h2>, <p>, <ul>, etc.]

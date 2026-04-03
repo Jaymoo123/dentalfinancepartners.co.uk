@@ -2,7 +2,7 @@
 title: "Dental Practice Software & Accounting: Systems Integration Guide"
 slug: "dental-practice-software-accounting-integration"
 date: "2026-03-31"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Practice accounting"
 metaTitle: "Dental Practice Software & Accounting Integration Guide UK"
 metaDescription: "Dentally, SOE, and Exact can all connect to Xero or QuickBooks — saving 10–20 hours monthly. Setup costs, integration options, and troubleshooting."

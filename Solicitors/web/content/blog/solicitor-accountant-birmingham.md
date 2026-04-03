@@ -2,7 +2,7 @@
 title: "Solicitor Accountants in Birmingham: Complete Guide for UK Law Firms"
 slug: "solicitor-accountant-birmingham"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Solicitor Accountant Birmingham | Accounts for Lawyers"
 metaDescription: "Birmingham law firms need SRA-specialist accountants for client money compliance, partnership tax, and practice growth. What to look for and typical costs."

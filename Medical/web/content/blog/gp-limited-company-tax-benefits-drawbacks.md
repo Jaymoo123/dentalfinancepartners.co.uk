@@ -3,7 +3,7 @@ title: "GP Limited Company Tax Benefits and Drawbacks: Complete Guide"
 slug: "gp-limited-company-tax-benefits-drawbacks"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-limited-company-tax-benefits-drawbacks"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "GP Limited Company: Tax Benefits & Drawbacks 2026/27"
 metaDescription: "Corporation tax savings look appealing, but NHS pension loss and IR35 can wipe out gains. A realistic breakdown for GPs considering incorporation."
@@ -30,7 +30,7 @@ faqs:
 <h2>Key Tax Benefits of GP Limited Company Structure</h2>
 
 <h3>Lower Corporation Tax Rates</h3>
-<p>Limited companies pay [corporation tax](/blog/gp-corporation-tax) on profits rather than income tax and National Insurance. For 2025/26, corporation tax rates are 19% on profits up to £50,000 and 25% on profits over £250,000, with marginal relief between these thresholds.</p>
+<p>Limited companies pay <a href="/blog/gp-corporation-tax">corporation tax</a> on profits rather than income tax and National Insurance. For 2025/26, corporation tax rates are 19% on profits up to £50,000 and 25% on profits over £250,000, with marginal relief between these thresholds.</p>
 
 <p>Compare this to a GP partner paying 40% income tax plus 2% National Insurance on earnings over £50,270, and the potential savings become clear. A GP partnership generating £200,000 profit could save significant tax through incorporation.</p>
 
@@ -71,7 +71,7 @@ faqs:
 
 <h2>The IR35 Factor for GP Companies</h2>
 
-<p>[IR35 legislation](/blog/locum-doctor-ir35-what-you-need-to-know) is the single biggest risk to GP limited company tax benefits. If HMRC determines that your working relationship with the NHS or a practice resembles employment rather than genuine self-employment, your company income is taxed as employment income — eliminating the dividend and corporation tax advantages entirely.</p>
+<p><a href="/blog/locum-doctor-ir35-what-you-need-to-know">IR35 legislation</a> is the single biggest risk to GP limited company tax benefits. If HMRC determines that your working relationship with the NHS or a practice resembles employment rather than genuine self-employment, your company income is taxed as employment income — eliminating the dividend and corporation tax advantages entirely.</p>
 
 <p>Key factors that bring GP work within IR35 include regular sessions at the same practice, use of practice equipment and staff, limited substitution rights, and clinical governance oversight. Most regular NHS sessional work falls within IR35, making incorporation ineffective for this income stream.</p>
 
@@ -93,7 +93,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [Medical Practice Incorporation Step by Step](/blog/medical-practice-incorporation-step-by-step)
-- [GP Corporation Tax: Complete Guide](/blog/gp-corporation-tax)
+- <a href="/blog/medical-practice-incorporation-step-by-step">Medical Practice Incorporation Step by Step</a>
+- <a href="/blog/gp-corporation-tax">GP Corporation Tax: Complete Guide</a>
 
 <p>Professional advice from specialists experienced with medical practice structures is crucial. The wrong decision could cost significant money in both tax efficiency and pension benefits over your career.</p>

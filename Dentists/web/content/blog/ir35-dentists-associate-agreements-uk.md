@@ -3,7 +3,7 @@ title: "IR35 and Dentists: Does It Apply to Associate Agreements?"
 slug: "ir35-dentists-associate-agreements-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/ir35-dentists-associate-agreements-uk"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Associate tax"
 metaTitle: "IR35 for Dentists: Associate Agreements & Off-Payroll Rules"
 metaDescription: "Many dental associate arrangements fall within IR35 — but not all. Key status tests, contract pitfalls, and what to do if your role is caught."
@@ -79,7 +79,7 @@ faqs:
 
 <p>If your arrangement clearly falls within IR35, consider whether operating through a limited company still makes sense. Sometimes, direct employment or genuine self-employment through a partnership might be more tax-efficient.</p>
 
-<p>Remember that <a href="/blog/associate-dentist-tax-self-assessment-uk">associate tax planning</a> involves more than just your employment status – pension contributions, expenses, and timing of income all matter.</p>
+<p>Remember that <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">associate tax planning</a> involves more than just your employment status – pension contributions, expenses, and timing of income all matter.</p>
 
 <h3>Documentation and Evidence</h3>
 

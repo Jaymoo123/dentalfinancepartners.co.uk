@@ -3,7 +3,7 @@ title: "CGT Payment Deadlines for Property Sales 2026: What Landlords Need to Kn
 slug: "cgt-payment-deadlines-property-sales-2026"
 canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026"
 date: "2026-03-29"
-author: "Property Tax Partners"
+author: "Property Tax Partners Editorial Team"
 category: "Capital Gains Tax"
 metaTitle: "CGT Payment Deadlines Property Sales 2026 | UK"
 metaDescription: "UK landlords must report and pay property CGT within 60 days of completion. 2026 deadlines, penalties, and how to file correctly."

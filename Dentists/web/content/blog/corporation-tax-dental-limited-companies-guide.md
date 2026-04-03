@@ -3,7 +3,7 @@ title: "Corporation Tax for Dental Limited Companies: A Plain-English Guide"
 slug: "corporation-tax-dental-limited-companies-guide"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/corporation-tax-dental-limited-companies-guide"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Practice accounting"
 metaTitle: "Corporation Tax for Dental Companies 2026/27 | UK"
 metaDescription: "19% on profits up to £50k, 25% above £250k, with marginal relief between. CT600 deadlines, payment dates, and profit extraction for dental practices."
@@ -23,7 +23,7 @@ faqs:
     answer: "Dividends are paid from profits after corporation tax has been deducted. If your company pays 19% corporation tax, only 81p of each pound of profit is available for dividends. However, dividend tax rates are often lower than salary tax rates, making this an efficient profit extraction method for many dental practice owners."
 ---
 
-<p>If you operate your dental practice through a limited company, corporation tax is one of your key tax obligations. Unlike <a href="/blog/associate-dentist-tax-self-assessment-uk">associate dentists who pay income tax through Self Assessment</a>, limited companies pay corporation tax on their profits.</p>
+<p>If you operate your dental practice through a limited company, corporation tax is one of your key tax obligations. Unlike <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">associate dentists who pay income tax through Self Assessment</a>, limited companies pay corporation tax on their profits.</p>
 
 <p>This guide explains how corporation tax works for dental limited companies, covering rates, deadlines, and the CT600 filing process.</p>
 

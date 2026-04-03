@@ -2,7 +2,7 @@
 title: "When Does a Dental Practice Need an Audit? UK Requirements Explained"
 slug: "when-does-dental-practice-need-audit-uk"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Practice accounting"
 metaTitle: "When Does a Dental Practice Need an Audit? UK Guide"
 metaDescription: "Most dental practices qualify for audit exemption. Thresholds (£10.2m turnover, £5.1m balance sheet, 50 staff) and when shareholders can demand one."

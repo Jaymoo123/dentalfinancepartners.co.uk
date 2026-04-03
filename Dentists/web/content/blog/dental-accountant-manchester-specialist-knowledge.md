@@ -3,7 +3,7 @@ title: "Dental Accountant Manchester: Why Specialist Knowledge Matters"
 slug: "dental-accountant-manchester-specialist-knowledge"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-accountant-manchester-specialist-knowledge"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Practice accounting"
 metaTitle: "Dental Accountant Manchester | Specialist Dental Accounting"
 metaDescription: "Specialist dental accountants understand NHS contracts, UDA tracking, and tax reliefs that generalists miss. How to choose the right one in Manchester."
@@ -71,7 +71,7 @@ faqs:
 
 <p>Dental practices face unique tax challenges. From understanding how different income streams are taxed to optimising <a href="/blog/dental-practice-profit-extraction-uk">profit extraction strategies</a>, specialist knowledge makes a real difference.</p>
 
-<p>Associate dentists have their own complexities around <a href="/blog/associate-dentist-tax-self-assessment-uk">self-assessment and allowable expenses</a>. The right accountant guides you through these requirements without overpaying tax.</p>
+<p>Associate dentists have their own complexities around <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">self-assessment and allowable expenses</a>. The right accountant guides you through these requirements without overpaying tax.</p>
 
 <h3>Practice Acquisition Support</h3>
 
@@ -118,7 +118,7 @@ faqs:
 
 <p>Manchester practices increasingly use complex staffing arrangements. Associates might be employed, self-employed, or operating under corporate structures. Each has different tax implications and compliance requirements.</p>
 
-<p>Your accountant should also help associates with their own <a href="/blog/associate-dentist-tax-self-assessment-uk">Self Assessment requirements</a>, ensuring your practice relationships remain strong.</p>
+<p>Your accountant should also help associates with their own <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">Self Assessment requirements</a>, ensuring your practice relationships remain strong.</p>
 
 <h2>Profit Extraction and Tax Planning</h2>
 <p>Once your Manchester practice is profitable, extracting money efficiently becomes crucial. <a href="/blog/dental-practice-profit-extraction-uk">Profit extraction strategies</a> for dental practices differ significantly from other businesses.</p>

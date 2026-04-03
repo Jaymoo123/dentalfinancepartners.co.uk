@@ -2,7 +2,7 @@
 title: "Locum Doctor Self Assessment Filing Guide: Complete Step-by-Step Process"
 slug: "locum-doctor-self-assessment-filing-guide"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "Locum Tax"
 metaTitle: "Locum Doctor Self Assessment 2026/27 | Filing Guide"
 metaDescription: "Missing the 31 January deadline triggers automatic penalties. Step-by-step self assessment filing for UK locum GPs and consultants in 2026/27."
@@ -108,7 +108,7 @@ faqs:
 <p>Locum doctors can claim legitimate business expenses against their self-employed income:</p>
 
 <ul>
-<li><strong>Professional fees:</strong> GMC, royal college, indemnity insurance (see our full [locum doctor expenses guide](/blog/locum-doctor-expenses-what-you-can-claim))</li>
+<li><strong>Professional fees:</strong> GMC, royal college, indemnity insurance (see our full <a href="/blog/locum-doctor-expenses-what-you-can-claim">locum doctor expenses guide</a>)</li>
 <li><strong>Travel:</strong> Between different work locations (not home to regular workplace)</li>
 <li><strong>Training:</strong> CPD, courses, conferences directly related to work</li>
 <li><strong>Equipment:</strong> Stethoscopes, medical bags, professional clothing</li>
@@ -139,7 +139,7 @@ faqs:
 
 <h2>IR35 Considerations for Locum Doctors</h2>
 
-<p>[IR35 rules](/blog/locum-doctor-ir35-what-you-need-to-know) determine whether your locum work is treated as employment or genuine self-employment for tax purposes. This affects both your tax liability and how you complete your return.</p>
+<p><a href="/blog/locum-doctor-ir35-what-you-need-to-know">IR35 rules</a> determine whether your locum work is treated as employment or genuine self-employment for tax purposes. This affects both your tax liability and how you complete your return.</p>
 
 <p>If caught by IR35, you cannot claim business expenses and must treat the income as employment income, even though you're technically self-employed. The end client (practice or trust) should make this determination, but you remain responsible for correct reporting.</p>
 
@@ -185,7 +185,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [Locum Doctor Tax Complete Guide](/blog/locum-doctor-tax-complete-guide)
-- [Locum Doctor IR35: What You Need to Know](/blog/locum-doctor-ir35-what-you-need-to-know)
+- <a href="/blog/locum-doctor-tax-complete-guide">Locum Doctor Tax Complete Guide</a>
+- <a href="/blog/locum-doctor-ir35-what-you-need-to-know">Locum Doctor IR35: What You Need to Know</a>
 
 <p>Start preparing for next year's return immediately by setting up proper record-keeping systems and saving appropriate amounts for your tax liability.</p>

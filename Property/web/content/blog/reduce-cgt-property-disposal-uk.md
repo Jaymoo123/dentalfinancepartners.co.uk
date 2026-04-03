@@ -3,7 +3,7 @@ title: "How to Reduce CGT on Property Disposal in the UK: A Practical Guide for 
 slug: "reduce-cgt-property-disposal-uk"
 canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/reduce-cgt-property-disposal-uk"
 date: "2026-03-29"
-author: "Property Tax Partners"
+author: "Property Tax Partners Editorial Team"
 category: "Capital Gains Tax"
 metaTitle: "How to Reduce CGT on Property Disposal UK - Tax Strategies"
 metaDescription: "Timing, PPR relief, annual exemptions, and spouse transfers can cut your CGT bill on property disposals. Key strategies for UK landlords."

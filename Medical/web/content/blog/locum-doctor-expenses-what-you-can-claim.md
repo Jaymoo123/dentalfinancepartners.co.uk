@@ -3,7 +3,7 @@ title: "Locum Doctor Expenses: What You Can Claim - Complete Guide"
 slug: "locum-doctor-expenses-what-you-can-claim"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/locum-doctor-expenses-what-you-can-claim"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "Locum Tax"
 metaTitle: "Locum Doctor Expenses You Can Claim | Tax Guide"
 metaDescription: "Travel, accommodation, GMC fees, indemnity — locum doctors can claim thousands in tax deductions. Full list of allowable expenses and HMRC rules."
@@ -157,12 +157,12 @@ faqs:
 
 <h2>Getting Professional Help</h2>
 
-<p>Tax rules for locum doctors can be complex, especially when combined with [NHS pension considerations](/blog/nhs-pension-for-locums-form-a-form-b) and [IR35 regulations](/blog/locum-doctor-ir35-what-you-need-to-know). Many locum doctors find specialist advice pays for itself through optimized expense claims and tax planning.</p>
+<p>Tax rules for locum doctors can be complex, especially when combined with <a href="/blog/nhs-pension-for-locums-form-a-form-b">NHS pension considerations</a> and <a href="/blog/locum-doctor-ir35-what-you-need-to-know">IR35 regulations</a>. Many locum doctors find specialist advice pays for itself through optimized expense claims and tax planning.</p>
 
 <h2>Related Reading</h2>
 
-- [Locum Doctor Tax Complete Guide](/blog/locum-doctor-tax-complete-guide)
-- [Locum Doctor Self Assessment Filing Guide](/blog/locum-doctor-self-assessment-filing-guide)
-- [Medical Professional Expenses: What Is Claimable](/blog/medical-professional-expenses-what-is-claimable)
+- <a href="/blog/locum-doctor-tax-complete-guide">Locum Doctor Tax Complete Guide</a>
+- <a href="/blog/locum-doctor-self-assessment-filing-guide">Locum Doctor Self Assessment Filing Guide</a>
+- <a href="/blog/medical-professional-expenses-what-is-claimable">Medical Professional Expenses: What Is Claimable</a>
 
 <p>A qualified medical accountant can help identify all allowable expenses, ensure proper record keeping, and maximize your tax relief while keeping you compliant with HMRC requirements.</p>

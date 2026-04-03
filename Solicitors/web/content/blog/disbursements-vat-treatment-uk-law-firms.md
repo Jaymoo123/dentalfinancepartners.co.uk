@@ -2,7 +2,7 @@
 title: "Disbursements VAT Treatment: A Complete Guide for UK Law Firms"
 slug: "disbursements-vat-treatment-uk-law-firms"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "Disbursements VAT Treatment for UK Law Firms | Guide"
 metaDescription: "Court fees and Land Registry searches are true disbursements; expert witness fees aren't. HMRC criteria, documentation, and common billing mistakes."

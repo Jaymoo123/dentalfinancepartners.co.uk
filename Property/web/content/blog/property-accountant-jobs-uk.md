@@ -3,7 +3,7 @@ title: "Property Accountant Jobs UK: Career Guide for Tax and Property Professio
 slug: "property-accountant-jobs-uk"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/property-accountant-jobs-uk"
 date: "2026-04-01"
-author: "Property Tax Partners"
+author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "Property Accountant Jobs UK | Career Guide & Opportunities"
 metaDescription: "Explore property accountant jobs UK market. Career paths, qualifications, salary expectations and opportunities in property tax accounting for 2026."

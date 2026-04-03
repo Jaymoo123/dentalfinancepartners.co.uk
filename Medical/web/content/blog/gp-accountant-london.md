@@ -2,7 +2,7 @@
 title: "Finding the Right GP Accountant in London: Your Complete Guide"
 slug: "gp-accountant-london"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant London | Medical Accountants UK"
 metaDescription: "London GPs face high earnings and tapered pension allowances. Partnership tax, NHS pension planning, and practice accounts from medical specialists."
@@ -101,7 +101,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
-- [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
+- <a href="/blog/gp-accountant-services-complete-guide">GP Accountant Services: Complete Guide</a>
+- <a href="/blog/gp-accountant-cost">GP Accountant Cost: What UK Medical Professionals Pay</a>
 
 <p>If you're looking for specialist medical accounting services in London, we provide comprehensive <a href="/services">services</a> tailored specifically for GP practices across the capital. Our team understands the unique challenges London GPs face and can help optimise your practice finances effectively.</p>

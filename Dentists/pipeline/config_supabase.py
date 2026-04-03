@@ -17,7 +17,7 @@ OUTPUT_MD_DIR = os.path.join(os.path.dirname(__file__), "..", "web", "content", 
 # SITE CONFIG (Dentist-specific)
 # ============================================================================
 SITE_BASE_URL = "https://dentalfinancepartners.co.uk"
-AUTHOR_NAME = "Dental Finance Partners"
+AUTHOR_NAME = "Dental Finance Partners Editorial Team"
 
 # ============================================================================
 # ANTHROPIC CONFIG
@@ -42,7 +42,7 @@ INTERNAL_LINK_SLUGS = [
     "/services",
     "/about",
     "/contact",
-    "/blog/associate-dentist-tax-self-assessment-uk",
+    "/blog/associate-tax/associate-dentist-tax-guide-uk",
     "/blog/dental-practice-profit-extraction-uk",
     "/blog/nhs-private-mix-dental-accounts",
     "/blog/practice-acquisition-financial-due-diligence",

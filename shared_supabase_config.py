@@ -36,6 +36,8 @@ LEADS_TABLE = "leads"
 # Each niche has its own blog topics table
 BLOG_TOPICS_DENTISTS = "blog_topics_dentists"
 BLOG_TOPICS_PROPERTY = "blog_topics_property"
+BLOG_TOPICS_MEDICAL = "blog_topics_medical"
+BLOG_TOPICS_SOLICITORS = "blog_topics_solicitors"
 
 # ============================================================================
 # NICHE SOURCE IDENTIFIERS
@@ -43,3 +45,5 @@ BLOG_TOPICS_PROPERTY = "blog_topics_property"
 # These are used in the 'source' column of the leads table
 SOURCE_DENTISTS = "dentists"
 SOURCE_PROPERTY = "property"
+SOURCE_MEDICAL = "medical"
+SOURCE_SOLICITORS = "solicitors"

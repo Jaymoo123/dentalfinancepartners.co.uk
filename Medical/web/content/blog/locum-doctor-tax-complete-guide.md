@@ -3,7 +3,7 @@ title: "Locum Doctor Tax Complete Guide: Everything You Need to Know"
 slug: "locum-doctor-tax-complete-guide"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/locum-doctor-tax-complete-guide"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "Locum Tax"
 metaTitle: "Locum Doctor Tax Guide 2026/27 | Medical Accountants UK"
 metaDescription: "Locum doctors face IR35, self-assessment, and complex expense rules. Tax structures, allowable claims, and planning strategies to maximise take-home pay."
@@ -45,7 +45,7 @@ faqs:
 
 <h3>Limited Company Structure</h3>
 
-<p>Most established locum doctors use a [limited company](/blog/locum-doctor-limited-company-pros-and-cons) for contracting. This offers the greatest tax efficiency when outside [IR35](/blog/locum-doctor-ir35-what-you-need-to-know), but requires more administration.</p>
+<p>Most established locum doctors use a <a href="/blog/locum-doctor-limited-company-pros-and-cons">limited company</a> for contracting. This offers the greatest tax efficiency when outside <a href="/blog/locum-doctor-ir35-what-you-need-to-know">IR35</a>, but requires more administration.</p>
 
 <p>You take a small salary (typically £12,570 to maximise NI efficiency) and extract remaining profits as dividends. This can save significant tax compared to employment, particularly for higher earners.</p>
 
@@ -109,9 +109,9 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [Locum Doctor Expenses: What You Can Claim](/blog/locum-doctor-expenses-what-you-can-claim)
-- [Locum Doctor Self Assessment Filing Guide](/blog/locum-doctor-self-assessment-filing-guide)
-- [NHS Pension for Locums: Form A and Form B Guide](/blog/nhs-pension-for-locums-form-a-form-b)
+- <a href="/blog/locum-doctor-expenses-what-you-can-claim">Locum Doctor Expenses: What You Can Claim</a>
+- <a href="/blog/locum-doctor-self-assessment-filing-guide">Locum Doctor Self Assessment Filing Guide</a>
+- <a href="/blog/nhs-pension-for-locums-form-a-form-b">NHS Pension for Locums: Form A and Form B Guide</a>
 
 <p>This <strong>locum doctor tax complete guide</strong> covers the essentials, but every locum's situation is unique. Consider seeking advice from accountants who specialise in working with medical professionals and understand the specific challenges you face.</p>
 

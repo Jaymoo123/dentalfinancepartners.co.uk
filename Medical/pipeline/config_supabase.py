@@ -14,10 +14,10 @@ from shared_supabase_config import SUPABASE_URL, SUPABASE_KEY
 OUTPUT_MD_DIR = os.path.join(os.path.dirname(__file__), "..", "web", "content", "blog")
 
 # ============================================================================
-# SITE CONFIG (Property-specific)
+# SITE CONFIG (Medical-specific)
 # ============================================================================
-SITE_BASE_URL = "https://www.medicalaccounts.co.uk"
-AUTHOR_NAME = "Medical Accounts"
+SITE_BASE_URL = "https://medicalaccountantsuk.co.uk"
+AUTHOR_NAME = "Medical Accountants UK Editorial Team"
 
 # ============================================================================
 # ANTHROPIC CONFIG
@@ -29,6 +29,8 @@ ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 # ============================================================================
 POST_CATEGORIES = [
     "GP Tax & Accounts",
+    "GP Accountant Services",
+    "GP Practice Management",
     "NHS Pension Planning",
     "Locum Tax",
     "Private Practice",
@@ -141,7 +143,7 @@ Return the following fields exactly as shown:
 [Image alt text if an image were used]
 
 ==image-prompt==
-[DALL-E prompt for a relevant image — professional, UK property context]
+[DALL-E prompt for a relevant image — professional, UK medical context]
 
 ==content==
 [Full HTML article body — structured with <h2>, <p>, <ul>, etc.]

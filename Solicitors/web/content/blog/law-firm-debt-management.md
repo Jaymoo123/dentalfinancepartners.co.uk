@@ -2,7 +2,7 @@
 title: "Law Firm Debt Management: Essential Strategies for UK Legal Practices"
 slug: "law-firm-debt-management"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Law Firm Debt Management: UK Legal Practice Guide"
 metaDescription: "Average debtor days in the legal sector exceed 60. Credit control procedures, payment terms, dispute handling, and bad debt write-off rules for law firms."

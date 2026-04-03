@@ -2,7 +2,7 @@
 title: "Business Asset Disposal Relief for Dentists: What Qualifies?"
 slug: "business-asset-disposal-relief-dentists-what-qualifies"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Practice finance"
 metaTitle: "Business Asset Disposal Relief for Dentists: What Qualifies?"
 metaDescription: "BADR cuts CGT from 20% to 10% on up to £1m of gains — saving £50k on a £500k practice sale. Qualification criteria, pitfalls, and planning for dentists."

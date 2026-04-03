@@ -2,7 +2,7 @@
 title: "How to Find the Right Solicitor Accountant Near You"
 slug: "solicitor-accountant-near-me"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Solicitor Accountant Near Me | UK Legal Practice Specialists"
 metaDescription: "SRA compliance, client money, and partnership tax demand specialist legal sector expertise. How to choose, questions to ask, and typical fee ranges."

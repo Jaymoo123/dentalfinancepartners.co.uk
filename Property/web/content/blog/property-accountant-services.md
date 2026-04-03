@@ -3,7 +3,7 @@ title: "Property Accountant Services: Expert Tax and Advisory Solutions for UK L
 slug: "property-accountant-services"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/property-accountant-services"
 date: "2026-03-31"
-author: "Property Tax Partners"
+author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "Property Accountant Services | Expert UK Property Tax Advice"
 metaDescription: "Specialist property accountant services for UK landlords. Expert tax planning, compliance, and advisory solutions for buy-to-let and property portfolios."

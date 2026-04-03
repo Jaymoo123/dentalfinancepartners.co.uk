@@ -3,7 +3,7 @@ title: "NHS Superannuation and Your Pension Annual Allowance: Guide for UK Denti
 slug: "nhs-superannuation-pension-annual-allowance-uk-dentists"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/nhs-superannuation-pension-annual-allowance-uk-dentists"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Associate tax"
 metaTitle: "NHS Pension Annual Allowance for Dentists 2026/27"
 metaDescription: "Breaching the annual allowance triggers a tax charge at your marginal rate. Carry forward rules, tapered thresholds, and scheme pays for NHS dentists."
@@ -78,7 +78,7 @@ faqs:
 
 <p>NHS Business Services Authority issues annual allowance statements to dentists who may have exceeded their allowance. These typically arrive in October following the end of the tax year.</p>
 
-<p>However, you shouldn't wait for these statements if you think you may have an annual allowance charge. The responsibility for calculating and reporting any charge lies with you, and this must be included in your <a href="/blog/associate-dentist-tax-self-assessment-uk">Self Assessment return</a>.</p>
+<p>However, you shouldn't wait for these statements if you think you may have an annual allowance charge. The responsibility for calculating and reporting any charge lies with you, and this must be included in your <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">Self Assessment return</a>.</p>
 
 <p>The deadline for paying any annual allowance charge is 31 January following the end of the relevant tax year – the same deadline as your income tax.</p>
 
@@ -102,7 +102,7 @@ faqs:
 
 <p>These charges appear on your Self Assessment return. The deadline for paying is 31 January following the end of the tax year, though you can ask the NHS to pay the charge directly from your pension in some cases.</p>
 
-<p>If you're dealing with complex tax calculations from mixed NHS and private income, our guide on <a href="/blog/associate-dentist-tax-self-assessment-uk">associate dentist Self Assessment</a> covers the broader picture.</p>
+<p>If you're dealing with complex tax calculations from mixed NHS and private income, our guide on <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">associate dentist Self Assessment</a> covers the broader picture.</p>
 
 <h2>Managing Your Annual Allowance</h2>
 <p>Several strategies can help manage annual allowance issues:</p>

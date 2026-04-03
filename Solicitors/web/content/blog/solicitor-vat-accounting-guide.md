@@ -2,7 +2,7 @@
 title: "Solicitor VAT Accounting: A Complete Guide for UK Law Firms"
 slug: "solicitor-vat-accounting-guide"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "VAT & Compliance"
 metaTitle: "Solicitor VAT Accounting Guide | UK Law Firm VAT Rules"
 metaDescription: "Most legal services attract 20% VAT, but disbursement treatment trips up many firms. Registration, returns, cash accounting, and client money rules."

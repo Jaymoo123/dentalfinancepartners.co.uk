@@ -3,7 +3,7 @@ title: "GP Accountant Manchester: Specialist Tax & Financial Services for Medica
 slug: "gp-accountant-manchester"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-manchester"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Manchester | Medical Tax Specialists"
 metaDescription: "Manchester GP accountant for partners, salaried GPs, and locums. NHS pension planning, practice accounts, and tax services across Greater Manchester."
@@ -197,7 +197,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
-- [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
+- <a href="/blog/gp-accountant-services-complete-guide">GP Accountant Services: Complete Guide</a>
+- <a href="/blog/gp-accountant-cost">GP Accountant Cost: What UK Medical Professionals Pay</a>
 
 <p>Schedule consultations with 2-3 specialist medical accountants in Manchester. The right fit will be obvious from their questions and understanding of your situation.</p>

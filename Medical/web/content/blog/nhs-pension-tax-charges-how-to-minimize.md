@@ -3,7 +3,7 @@ title: "NHS Pension Tax Charges: How to Minimize Your Tax Bill as a Medical Prof
 slug: "nhs-pension-tax-charges-how-to-minimize"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/nhs-pension-tax-charges-how-to-minimize"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "NHS Pension Planning"
 metaTitle: "Minimise NHS Pension Tax Charges | Medical Accountants UK"
 metaDescription: "Annual allowance charges can cost high-earning doctors thousands. Carry forward, Scheme Pays, and timing strategies to reduce your NHS pension tax bill."
@@ -27,7 +27,7 @@ faqs:
 
 <h2>Understanding NHS Pension Tax Charges</h2>
 
-<p>NHS pension tax charges arise when your annual pension growth exceeds your [annual allowance](/blog/nhs-pension-annual-allowance-complete-guide). For 2024/25, the standard annual allowance is £60,000, but this can be reduced for high earners through the [tapered annual allowance](/blog/nhs-pension-tapered-annual-allowance-calculator).</p>
+<p>NHS pension tax charges arise when your annual pension growth exceeds your <a href="/blog/nhs-pension-annual-allowance-complete-guide">annual allowance</a>. For 2024/25, the standard annual allowance is £60,000, but this can be reduced for high earners through the <a href="/blog/nhs-pension-tapered-annual-allowance-calculator">tapered annual allowance</a>.</p>
 
 <p>The tapered annual allowance affects doctors with threshold income over £200,000 and adjusted income over £260,000. Your annual allowance reduces by £1 for every £2 of adjusted income above £260,000, down to a minimum of £10,000.</p>
 
@@ -115,7 +115,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Pension Contributions Tax Relief: Complete Guide](/blog/gp-pension-contributions-tax-relief)
-- [NHS Pension Annual Allowance Complete Guide](/blog/nhs-pension-annual-allowance-complete-guide)
+- <a href="/blog/gp-pension-contributions-tax-relief">GP Pension Contributions Tax Relief: Complete Guide</a>
+- <a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS Pension Annual Allowance Complete Guide</a>
 
 <p>The key to successfully minimizing <strong>NHS pension tax charges</strong> is understanding your options, planning ahead, and getting specialist advice when needed. With the right approach, you can protect your retirement savings while managing your current tax position effectively.</p>

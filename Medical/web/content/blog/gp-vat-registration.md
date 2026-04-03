@@ -3,7 +3,7 @@ title: "GP VAT Registration: Complete Guide for UK Medical Practices"
 slug: "gp-vat-registration"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-vat-registration"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "GP VAT Registration 2026: Thresholds & Exemptions"
 metaDescription: "Most GP income is VAT exempt, but private services can trigger registration. Thresholds, exemptions, and when it makes sense for your practice."
@@ -168,7 +168,7 @@ faqs:
 
 <h3>Locum Doctors</h3>
 
-<p>Locum doctors operating through [limited companies](/blog/locum-doctor-limited-company-pros-and-cons) face different VAT considerations. If your company invoices exceed £90,000 annually, VAT registration becomes mandatory regardless of employment status determinations.</p>
+<p>Locum doctors operating through <a href="/blog/locum-doctor-limited-company-pros-and-cons">limited companies</a> face different VAT considerations. If your company invoices exceed £90,000 annually, VAT registration becomes mandatory regardless of employment status determinations.</p>
 
 <h2>Common VAT Registration Mistakes to Avoid</h2>
 <p>Medical professionals often make these costly errors:</p>
@@ -194,7 +194,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accounting: Essential Guide](/blog/gp-accounting-guide)
-- [GP Limited Company Tax Benefits and Drawbacks](/blog/gp-limited-company-tax-benefits-drawbacks)
+- <a href="/blog/gp-accounting-guide">GP Accounting: Essential Guide</a>
+- <a href="/blog/gp-limited-company-tax-benefits-drawbacks">GP Limited Company Tax Benefits and Drawbacks</a>
 
 <p>The right <strong>accountant VAT registration</strong> support ensures seamless compliance while maximising your practice's financial efficiency. Getting this right from the start saves significant time and costs later.</p>

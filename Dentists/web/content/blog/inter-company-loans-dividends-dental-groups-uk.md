@@ -2,7 +2,7 @@
 title: "Inter-Company Loans and Dividends in UK Dental Groups"
 slug: "inter-company-loans-dividends-dental-groups-uk"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Practice accounting"
 metaTitle: "Inter-Company Loans & Dividends in Dental Groups"
 metaDescription: "Interest rates of 3–6% are typical for group loans. Tax treatment, transfer pricing rules, and dividend exemptions for multi-site dental groups."

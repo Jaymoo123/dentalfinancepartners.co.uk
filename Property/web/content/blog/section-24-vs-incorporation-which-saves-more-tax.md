@@ -3,7 +3,7 @@ title: 'Section 24 vs. Incorporation: Which Saves More Tax for UK Landlords?'
 slug: section-24-vs-incorporation-which-saves-more-tax
 canonical: https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax
 date: '2026-03-29'
-author: Property Tax Partners
+author: "Property Tax Partners Editorial Team"
 category: Section 24 & Tax Relief
 metaTitle: 'Section 24 vs Incorporation: Which Saves More Tax? | PTP'
 metaDescription: Compare Section 24 mortgage interest restrictions vs incorporation for UK landlords. Real examples show which structure saves more tax on property income.

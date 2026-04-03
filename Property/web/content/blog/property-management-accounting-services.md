@@ -3,7 +3,7 @@ title: "Property Management Accounting Services: Expert Support for UK Landlords
 slug: "property-management-accounting-services"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/property-management-accounting-services"
 date: "2026-04-01"
-author: "Property Tax Partners"
+author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "Property Management Accounting Services | Expert UK Support"
 metaDescription: "MTD-ready accounting for rental portfolios covers tax compliance, expense tracking, and quarterly reporting. Services for UK landlords."

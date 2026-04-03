@@ -2,7 +2,7 @@
 title: "Medical Professional Expenses: What Is Claimable for UK Doctors"
 slug: "medical-professional-expenses-what-is-claimable"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "Medical Expenses"
 metaTitle: "Medical Professional Expenses: What Is Claimable | UK Guide"
 metaDescription: "GMC fees, medical indemnity, CPD courses, and travel — UK doctors can claim thousands annually. Claimable expenses for GPs, consultants, and locums."
@@ -106,7 +106,7 @@ faqs:
 <li><strong>Cleaning and maintenance</strong> - Professional premises upkeep</li>
 </ul>
 
-<p>[Home office expenses](/blog/gp-home-office-expenses-tax-relief) can be claimed using HMRC's simplified method (£6 per week for 25+ hours use) or actual costs apportioned by professional use.</p>
+<p><a href="/blog/gp-home-office-expenses-tax-relief">Home office expenses</a> can be claimed using HMRC's simplified method (£6 per week for 25+ hours use) or actual costs apportioned by professional use.</p>
 
 <h2>What Is Not Claimable</h2>
 
@@ -134,7 +134,7 @@ faqs:
 <p>Claim through employment pages of self-assessment tax returns. Some expenses may be claimable through PAYE if your employer operates a dispensation scheme.</p>
 
 <h3>Locum Doctors</h3>
-<p>Include all professional expenses on self-assessment returns — see our detailed [locum doctor expenses guide](/blog/locum-doctor-expenses-what-you-can-claim). If operating through a limited company, claim as business expenses against corporation tax.</p>
+<p>Include all professional expenses on self-assessment returns — see our detailed <a href="/blog/locum-doctor-expenses-what-you-can-claim">locum doctor expenses guide</a>. If operating through a limited company, claim as business expenses against corporation tax.</p>
 
 <h2>Record Keeping Requirements</h2>
 
@@ -156,7 +156,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Tax Deductions Complete List 2026](/blog/gp-tax-deductions-complete-list-2026)
-- [GP Home Office Expenses Tax Relief](/blog/gp-home-office-expenses-tax-relief)
+- <a href="/blog/gp-tax-deductions-complete-list-2026">GP Tax Deductions Complete List 2026</a>
+- <a href="/blog/gp-home-office-expenses-tax-relief">GP Home Office Expenses Tax Relief</a>
 
 <p>Consider professional advice particularly if you have mixed NHS and private income, operate through a limited company, or have significant equipment purchases. Our <a href="/services">specialist medical accounting services</a> help doctors across the UK optimise their tax position while maintaining full compliance.</p>

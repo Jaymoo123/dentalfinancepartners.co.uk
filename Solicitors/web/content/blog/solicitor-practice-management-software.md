@@ -3,7 +3,7 @@ title: "Solicitor Practice Management Software: Essential Guide for UK Law Firms
 slug: "solicitor-practice-management-software"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/solicitor-practice-management-software"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Solicitor Practice Management Software | UK Guide 2026"
 metaDescription: "Case management, time recording, billing, and SRA compliance in one system. Features, costs, and implementation timelines for UK law firms."

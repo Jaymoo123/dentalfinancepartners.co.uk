@@ -3,7 +3,7 @@ title: "Do I Need to Register for Self Assessment as a Dentist?"
 slug: "self-assessment-registration-dentist-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/self-assessment-registration-dentist-uk"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Associate tax"
 metaTitle: "Self Assessment Registration for Dentists 2026/27"
 metaDescription: "Most associates must register by 5 October. Requirements, deadlines, and how to register for Self Assessment — for associates and practice owners."
@@ -57,7 +57,7 @@ faqs:
 
 <p>Most dental associates work under self-employed arrangements and must register for Self Assessment. This applies regardless of whether you're working with NHS contracts, private patients, or mixed practice models.</p>
 
-<p>The <a href="/blog/associate-dentist-tax-self-assessment-uk">tax obligations for associate dentists</a> extend beyond just registration — you'll need to file annual returns and make payments on account.</p>
+<p>The <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">tax obligations for associate dentists</a> extend beyond just registration — you'll need to file annual returns and make payments on account.</p>
 
 <h3>Practice Owners</h3>
 

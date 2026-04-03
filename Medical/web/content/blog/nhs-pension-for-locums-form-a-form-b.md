@@ -3,7 +3,7 @@ title: "NHS Pension for Locums: Form A and Form B Guide"
 slug: "nhs-pension-for-locums-form-a-form-b"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/nhs-pension-for-locums-form-a-form-b"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "NHS Pension Planning"
 metaTitle: "NHS Pension for Locums: Form A & Form B Guide"
 metaDescription: "Many locums miss out on NHS pension benefits by not filing the right form. Form A vs Form B — eligibility, process, and common mistakes to avoid."
@@ -68,7 +68,7 @@ faqs:
 
 <p>For 2025/26, contribution rates range from 5.2% to 14.7% of pensionable pay. Locums working multiple roles must ensure contributions are calculated correctly across all NHS employment.</p>
 
-<p>The [annual allowance](/blog/nhs-pension-annual-allowance-complete-guide) rules still apply to locums, with the standard £60,000 limit and [tapered allowance](/blog/nhs-pension-tapered-annual-allowance-calculator) for high earners. Complex working arrangements can make NHS pension planning more challenging for locums than permanent staff.</p>
+<p>The <a href="/blog/nhs-pension-annual-allowance-complete-guide">annual allowance</a> rules still apply to locums, with the standard £60,000 limit and <a href="/blog/nhs-pension-tapered-annual-allowance-calculator">tapered allowance</a> for high earners. Complex working arrangements can make NHS pension planning more challenging for locums than permanent staff.</p>
 
 <h2>Common Application Issues</h2>
 
@@ -102,7 +102,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [Locum Doctor Tax Complete Guide](/blog/locum-doctor-tax-complete-guide)
-- [NHS Pension Tax Charges: How to Minimize Your Tax Bill](/blog/nhs-pension-tax-charges-how-to-minimize)
+- <a href="/blog/locum-doctor-tax-complete-guide">Locum Doctor Tax Complete Guide</a>
+- <a href="/blog/nhs-pension-tax-charges-how-to-minimize">NHS Pension Tax Charges: How to Minimize Your Tax Bill</a>
 
 <p>Consider seeking help if you're unsure about form selection, have been refused pension membership, or face complex tax implications from joining the scheme.</p>

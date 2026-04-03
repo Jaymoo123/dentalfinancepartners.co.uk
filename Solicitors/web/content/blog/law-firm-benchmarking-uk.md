@@ -3,7 +3,7 @@ title: "Law Firm Benchmarking UK: Key Performance Indicators for Legal Practices
 slug: "law-firm-benchmarking-uk"
 canonical: "https://www.accountsforlawyers.co.uk/blog/practice-finance-cash-flow/law-firm-benchmarking-uk"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Law Firm Benchmarking UK: KPIs & Performance Metrics"
 metaDescription: "PEP ranges from £80k-£300k+ and net margins from 20-40%. Revenue per lawyer, utilisation rates, lock-up days, and other KPIs for UK law firms."

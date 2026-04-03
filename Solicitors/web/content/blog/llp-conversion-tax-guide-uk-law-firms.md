@@ -2,7 +2,7 @@
 title: "LLP Conversion Tax: Complete Guide for UK Law Firms"
 slug: "llp-conversion-tax-guide-uk-law-firms"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "Structure & Incorporation"
 metaTitle: "LLP Conversion Tax Guide | UK Law Firm Conversion Rules"
 metaDescription: "Converting a partnership to an LLP triggers deemed disposal for CGT. Incorporation relief, WIP taxation, SDLT, and VAT re-registration explained."

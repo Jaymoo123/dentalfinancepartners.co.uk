@@ -3,7 +3,7 @@ title: "Private Practice Tax: Managing NHS and Private Income"
 slug: "private-practice-tax-nhs-and-private-income"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/private-practice-tax-nhs-and-private-income"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "Private Practice"
 metaTitle: "Private Practice Tax: NHS & Private Income Guide"
 metaDescription: "Mixing NHS and private income creates complex tax scenarios. How to allocate income, manage pension allowances, and structure your practice efficiently."
@@ -43,7 +43,7 @@ faqs:
 
 <h2>NHS Pension Implications</h2>
 
-<p>Private practice income affects your <a href="/nhs-pension">NHS pension</a> calculations in several ways. The [tapered annual allowance](/blog/nhs-pension-tapered-annual-allowance-calculator) reduces your pension contribution limit if your threshold income exceeds £200,000 and adjusted income exceeds £260,000.</p>
+<p>Private practice income affects your <a href="/nhs-pension">NHS pension</a> calculations in several ways. The <a href="/blog/nhs-pension-tapered-annual-allowance-calculator">tapered annual allowance</a> reduces your pension contribution limit if your threshold income exceeds £200,000 and adjusted income exceeds £260,000.</p>
 
 <p>For example, a consultant with £110,000 NHS income and £100,000 private practice earnings would face a reduced annual allowance of around £30,000 instead of the standard £60,000. This creates annual allowance charges that can be substantial.</p>
 
@@ -53,7 +53,7 @@ faqs:
 
 <p>Many doctors initially operate private practice as sole traders, reporting profits on their personal tax returns. This works well for smaller income levels but becomes less tax-efficient as private earnings grow.</p>
 
-<p>[Incorporating a limited company](/blog/medical-practice-incorporation-step-by-step) for private practice work can provide significant tax advantages. Corporation tax rates (25% for profits over £250,000, 19% below) compare favorably to higher rate income tax at 40% or additional rate at 45%.</p>
+<p><a href="/blog/medical-practice-incorporation-step-by-step">Incorporating a limited company</a> for private practice work can provide significant tax advantages. Corporation tax rates (25% for profits over £250,000, 19% below) compare favorably to higher rate income tax at 40% or additional rate at 45%.</p>
 
 <p>However, incorporation isn't always the right answer. The admin burden increases, and you lose some flexibility around pension contributions. A GP partner earning £120,000 with £30,000 private income might find sole trader status more appropriate than someone with £200,000+ private earnings.</p>
 
@@ -81,7 +81,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [Medical Practice Incorporation Step by Step](/blog/medical-practice-incorporation-step-by-step)
-- [GP Tax Deductions Complete List 2026](/blog/gp-tax-deductions-complete-list-2026)
+- <a href="/blog/medical-practice-incorporation-step-by-step">Medical Practice Incorporation Step by Step</a>
+- <a href="/blog/gp-tax-deductions-complete-list-2026">GP Tax Deductions Complete List 2026</a>
 
 <p>Year-end tax planning sessions help optimize your position before it's too late to make changes. Our <a href="/services">specialist medical accounting services</a> focus specifically on these complex multi-income scenarios that many doctors face.</p>

@@ -3,7 +3,7 @@ title: "How to Choose a Dental Accountant in London: A Specialist Guide"
 slug: "dental-accountant-london-how-to-choose-specialist"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/dental-accountant-london-how-to-choose-specialist"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Practice accounting"
 metaTitle: "Dental Accountant London: How to Choose a Specialist | Guide"
 metaDescription: "Fees range from £1,500 for associates to £8,000+ for practice owners. What to look for, key questions to ask, and why dental expertise matters."
@@ -21,7 +21,7 @@ faqs:
     answer: "A dental specialist understands NHS contracts, UDA valuations, practice acquisition structures, and dental-specific expenses. They can spot tax planning opportunities and compliance issues that general accountants typically miss, often saving more than their additional fees."
 ---
 
-<p>Choosing a dental accountant in London is one of the most important financial decisions you'll make as a dentist. Whether you're an associate dealing with <a href="/blog/associate-dentist-tax-self-assessment-uk">Self Assessment</a> or a practice owner managing complex accounts, the right specialist accountant can save you thousands and help grow your practice.</p>
+<p>Choosing a dental accountant in London is one of the most important financial decisions you'll make as a dentist. Whether you're an associate dealing with <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">Self Assessment</a> or a practice owner managing complex accounts, the right specialist accountant can save you thousands and help grow your practice.</p>
 
 <p>Not all accountants understand dentistry. A general accountant might handle your books, but they won't spot the opportunities and pitfalls that come with dental income, UDA contracts, or practice valuations.</p>
 

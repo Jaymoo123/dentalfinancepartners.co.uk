@@ -2,7 +2,7 @@
 title: "How to Choose a Dental Accountant: A UK Dentist's Guide"
 slug: "how-to-choose-dental-accountant-uk"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Practice accounting"
 metaTitle: "How to Choose a Dental Accountant | UK Guide"
 metaDescription: "Look for at least 50% dental clients, NHS contract expertise, and sector benchmarks. Key questions, red flags, and what to expect on fees."
@@ -33,7 +33,7 @@ faqs:
 
 <p>A specialist dental accountant understands NHS UDA accounting, knows how to optimise <a href="/blog/dental-practice-profit-extraction-uk">profit extraction strategies</a> for practice owners, and can navigate the complexities of <a href="/blog/nhs-private-mix-dental-accounts">mixed NHS and private income</a>. They also understand practice valuations, associate contract structures, and dental industry benchmarks.</p>
 
-<p>For associates, this specialisation matters too. A dental accountant knows which expenses are allowable, understands the self-employment vs employment nuances, and can help with <a href="/blog/associate-dentist-tax-self-assessment-uk">Self Assessment preparation</a> specific to dental work patterns.</p>
+<p>For associates, this specialisation matters too. A dental accountant knows which expenses are allowable, understands the self-employment vs employment nuances, and can help with <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">Self Assessment preparation</a> specific to dental work patterns.</p>
 
 <h2>Key Factors When Choosing a Dental Accountant</h2>
 

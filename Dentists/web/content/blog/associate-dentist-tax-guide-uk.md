@@ -3,7 +3,7 @@ title: "Associate Dentist Tax Guide: Self Assessment, Expenses & Deductions"
 slug: "associate-dentist-tax-guide-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/associate-dentist-tax-guide-uk"
 date: "2026-03-31"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Associate tax"
 metaTitle: "Associate Dentist Tax Guide 2026/27 | UK Expenses"
 metaDescription: "Self Assessment deadlines, allowable expenses like CPD and GDC fees, and tax-saving deductions — with worked examples showing real savings for associates."
@@ -45,7 +45,7 @@ faqs:
 <li><strong>31st October</strong> — Paper return deadline (though online is recommended)</li>
 </ul>
 
-<p>Missing these deadlines results in automatic penalties, starting at £100 for late submission. For detailed guidance on the Self Assessment process, see our comprehensive guide on <a href="/blog/associate-dentist-tax-self-assessment-uk">associate dentist Self Assessment</a>.</p>
+<p>Missing these deadlines results in automatic penalties, starting at £100 for late submission. For detailed guidance on the Self Assessment process, see our comprehensive guide on <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">associate dentist Self Assessment</a>.</p>
 
 <h2>Income Sources and Tax Treatment</h2>
 

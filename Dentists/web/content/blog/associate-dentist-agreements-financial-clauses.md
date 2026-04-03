@@ -2,7 +2,7 @@
 title: "Associate Dentist Agreements: The Financial Clauses That Matter"
 slug: "associate-dentist-agreements-financial-clauses"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Associate tax"
 metaTitle: "Associate Dentist Agreements: Key Financial Clauses UK"
 metaDescription: "Splits range from 40–55%, but expenses deducted from your share matter more than the headline rate. Key clauses, UDA clawback, and what to negotiate."
@@ -39,7 +39,7 @@ faqs:
 
 <p>Some associate agreements specify different percentage splits for NHS and private work. For example, you might receive 45% on NHS treatments but 55% on private work.</p>
 
-<p>This structure incentivises private treatment but can complicate your <a href="/blog/associate-dentist-tax-self-assessment-uk">tax planning</a> as your income becomes less predictable.</p>
+<p>This structure incentivises private treatment but can complicate your <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">tax planning</a> as your income becomes less predictable.</p>
 
 <h2>Expense Allocations: What Comes Out of Your Share</h2>
 
@@ -84,7 +84,7 @@ faqs:
 
 <p>Sessional arrangements provide income certainty but typically offer less earning potential. They're often used for new associates or in practices with lower patient volumes.</p>
 
-<p>The key advantage is predictable income for budgeting and <a href="/blog/associate-dentist-tax-self-assessment-uk">tax planning</a> purposes.</p>
+<p>The key advantage is predictable income for budgeting and <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">tax planning</a> purposes.</p>
 
 <h2>Minimum Income Guarantees</h2>
 

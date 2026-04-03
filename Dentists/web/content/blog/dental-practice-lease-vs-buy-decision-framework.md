@@ -2,7 +2,7 @@
 title: "Dental Practice Lease vs Buy: Financial Decision Framework for UK Dentists"
 slug: "dental-practice-lease-vs-buy-decision-framework"
 date: "2026-04-01"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Buying a practice"
 metaTitle: "Dental Practice Lease vs Buy Decision Guide | UK Dentists"
 metaDescription: "Buying requires £100k+ upfront but builds wealth; leasing preserves capital. Tax treatment, hidden costs, and a decision framework for UK dentists."

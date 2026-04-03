@@ -2,7 +2,7 @@
 title: "Dental Practice Valuation Methods Explained for UK Dentists"
 slug: "dental-practice-valuation-methods-uk"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Buying a practice"
 metaTitle: "Dental Practice Valuation Methods UK | Complete Guide 2026"
 metaDescription: "EBITDA multiples of 2–4x are typical for UK dental practices. How each valuation method works, what drives your practice worth, and common pitfalls."

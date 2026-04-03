@@ -3,7 +3,7 @@ title: "Associate vs Self Employed Dentist: Tax & Employment Status Guide"
 slug: "dental-associate-vs-self-employed-tax-employment-status"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dental-associate-vs-self-employed-tax-employment-status"
 date: "2026-03-31"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Associate tax"
 metaTitle: "Dental Associate vs Self Employed: Tax & Employment Status"
 metaDescription: "HMRC tests control, substitution, and financial risk to determine your status. Tax obligations, IR35 risks, and what happens if your status is wrong."
@@ -66,7 +66,7 @@ faqs:
 <li>Pension contributions (if enrolled in the practice scheme)</li>
 </ul>
 
-<p>Your employer handles tax deductions, but you'll still need to complete a Self Assessment if you have other income or claimable expenses. For detailed guidance on this process, see our guide on <a href="/blog/associate-dentist-tax-self-assessment-uk">associate dentist tax and Self Assessment</a>.</p>
+<p>Your employer handles tax deductions, but you'll still need to complete a Self Assessment if you have other income or claimable expenses. For detailed guidance on this process, see our guide on <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">associate dentist tax and Self Assessment</a>.</p>
 
 <h2>The Grey Area: Associate vs Self Employed Confusion</h2>
 

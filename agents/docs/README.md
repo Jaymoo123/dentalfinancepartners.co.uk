@@ -20,7 +20,9 @@ This system automates blog content generation, lead management, and SEO optimiza
 
 **Current Niches:**
 - Dentists (dentalfinancepartners.co.uk)
-- Property/Landlords (propertyaccountants.co.uk)
+- Property/Landlords (propertytaxpartners.co.uk)
+- Medical (medicalaccountantsuk.co.uk)
+- Solicitors (accountsforlawyers.co.uk)
 
 **Key Features:**
 - Autonomous content generation (1 blog/niche/day)
@@ -479,52 +481,69 @@ QUALITY_THRESHOLDS = {
 1. **Create folder structure:**
    ```bash
    mkdir NewNiche
-   cp -r Dentists/config_supabase.py NewNiche/
-   cp -r Dentists/generate_blog_supabase.py NewNiche/
-   cp -r Dentists/web NewNiche/
+   mkdir NewNiche/pipeline
+   mkdir -p NewNiche/web
+   # Copy an existing site as base (Property for nested URLs, Medical for flat URLs)
+   cp -r Property/web NewNiche/web
+   cp Property/pipeline/config_supabase.py NewNiche/pipeline/
+   cp Property/pipeline/generate_blog_supabase.py NewNiche/pipeline/
    ```
 
 2. **Update configuration:**
-   - Edit `NewNiche/config_supabase.py` (site URL, author, categories, prompts)
-   - Add to `agents/config/agent_config.py` NICHE_CONFIG
-   - Add source identifier to `shared_supabase_config.py`
+   - Edit `NewNiche/niche.config.json` (domain, brand, categories, nav, locations, SEO, lead form, CTAs)
+   - Edit `NewNiche/pipeline/config_supabase.py` (SITE_BASE_URL, AUTHOR_NAME, categories, system prompt, internal links)
+   - Ensure `AUTHOR_NAME` follows pattern: `"{Brand} Editorial Team"`
+   - Add niche to `agents/config/agent_config.py` NICHE_CONFIG and ACTIVE_NICHES
+   - Add table/source names to `shared_supabase_config.py`
 
 3. **Create Supabase table:**
    ```sql
    CREATE TABLE blog_topics_newniche (
      id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-     topic TEXT NOT NULL,
-     secondary_keyword_1 TEXT,
-     secondary_keyword_2 TEXT,
-     secondary_keyword_3 TEXT,
+     keyword TEXT NOT NULL,
+     primary_keyword TEXT,
+     secondary_keywords TEXT[],
      category TEXT,
+     intent TEXT DEFAULT 'informational',
+     search_volume INTEGER,
      priority INTEGER DEFAULT 5,
-     used BOOLEAN DEFAULT FALSE,
+     difficulty INTEGER,
+     status TEXT DEFAULT 'pending',
+     slug TEXT,
+     published_at TIMESTAMP,
      created_at TIMESTAMP DEFAULT NOW()
    );
    ```
 
 4. **Update GitHub Actions:**
-   - Add to matrix in `.github/workflows/daily-content-pipeline.yml`
+   - Add to niche matrix in `.github/workflows/daily-content-pipeline.yml` (both generate-blogs and refresh-keyword-tree jobs)
+   - Add to build matrix in `.github/workflows/ci-build-test.yml`
 
-5. **Deploy:**
-   ```bash
-   cd NewNiche/web
-   vercel --prod
-   ```
+5. **Create category hub pages:**
+   - One static `page.tsx` per category in `NewNiche/web/src/app/blog/{category-slug}/`
+   - Each hub needs: rich pillar content, CollectionPage + BreadcrumbList JSON-LD, LeadForm, article cards
+
+6. **Create location pages:**
+   - Add location data to `niche.config.json` `locations[]`
+   - Add city content to `NewNiche/web/src/app/locations/[slug]/page.tsx`
+
+7. **Deploy:**
+   - Create Vercel project pointing to `NewNiche/web/` as root directory
+   - Set env vars: `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+   - Push to `main` for auto-deploy
 
 ## Manual Operations
 
 ### Generate Content Manually
 
 ```bash
-# Research topics
-python agents/content_research_agent.py --niche Dentists
-
-# Generate blog
+# Generate blog (any of the 4 niches)
+python agents/blog_generation_agent.py --niche Property --max-posts 1
 python agents/blog_generation_agent.py --niche Dentists --max-posts 1
+python agents/blog_generation_agent.py --niche Medical --max-posts 1
+python agents/blog_generation_agent.py --niche Solicitors --max-posts 1
 
-# Run full pipeline
+# Run full pipeline (all niches)
 python agents/coordinator.py daily-pipeline
 ```
 
@@ -568,4 +587,5 @@ For issues or questions:
 
 ## Version History
 
+- **v1.1** (2026-04-03): Expanded to 4 niches (added Medical, Solicitors), auto-canonical generation, post-validation, secondary keyword support
 - **v1.0** (2026-03-28): Initial release with 2 niches, cost controls, quality checks

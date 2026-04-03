@@ -2,7 +2,7 @@
 title: "Solicitor Partnership Accounting: Complete Guide for Legal Partnerships"
 slug: "solicitor-partnership-accounting-guide"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Accounting"
 metaTitle: "Solicitor Partnership Accounting | UK Tax Guide"
 metaDescription: "Partners pay tax on allocated profits, not drawings. Profit sharing, capital accounts, partner tax returns, and SRA compliance for legal partnerships."

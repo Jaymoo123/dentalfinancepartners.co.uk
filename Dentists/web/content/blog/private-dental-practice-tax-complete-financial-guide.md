@@ -2,7 +2,7 @@
 title: "Private Dental Practice Tax: Complete Financial Guide"
 slug: "private-dental-practice-tax-complete-financial-guide"
 date: "2026-04-01"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Practice accounting"
 metaTitle: "Private Dental Practice Tax 2026/27 | UK Guide"
 metaDescription: "Corporation tax rates, VAT registration, dividend strategies, and profit extraction for UK private dental practice owners — with worked examples."

@@ -3,67 +3,184 @@ description: Full project context for the Accounting monorepo - 4 niche accounta
 alwaysApply: true
 ---
 
-# Project Context
+# Project Context — Accounting Monorepo
 
-Monorepo containing 4 UK niche accountancy websites. All live, deployed on Vercel (auto-deploys from `main` branch), sharing a common architecture. Last updated: 3 April 2026.
+Last updated: 3 April 2026. Monorepo with 4 UK niche accountancy websites. All live, deployed on Vercel, sharing a common architecture with site-specific differences.
 
-## Sites
+---
 
-| Site | Domain | niche_id | Blog URL pattern | Posts |
-|------|--------|----------|-----------------|-------|
-| Property Tax Partners | propertytaxpartners.co.uk | property | /blog/{category}/{slug} | 85 |
-| Dental Finance Partners | dentalfinancepartners.co.uk | dentists | /blog/{category}/{slug} | 55 |
-| Medical Accountants UK | medicalaccountantsuk.co.uk | medical | /blog/{slug} (flat) | 46 |
-| Accounts for Lawyers | accountsforlawyers.co.uk | solicitors | /blog/{category}/{slug} | 50 |
+## 1. Sites at a Glance
 
-Medical uses flat blog URLs (no category in path). The other 3 use /blog/{category-slug}/{post-slug}.
+| Site | Domain | niche_id | Posts | Locations | Unique pages |
+|------|--------|----------|-------|-----------|--------------|
+| Property Tax Partners | propertytaxpartners.co.uk | property | 85 | 5 (London, Manchester, Birmingham, Leeds, Bristol) | /calculators, /incorporation |
+| Dental Finance Partners | dentalfinancepartners.co.uk | dentists | 55 | 2 (London, Manchester) | — |
+| Medical Accountants UK | medicalaccountantsuk.co.uk | medical | 46 | 5 (London, Manchester, Birmingham, Leeds, Bristol) | /calculators, /nhs-pension |
+| Accounts for Lawyers | accountsforlawyers.co.uk | solicitors | 50 | 5 (London, Manchester, Birmingham, Leeds, Bristol) | /sra-compliance |
 
-## Tech Stack
+**Shared pages (all 4):** `/`, `/about`, `/services`, `/contact`, `/blog`, `/locations`, `/locations/[slug]`, `/thank-you`, `/privacy-policy`, `/terms`, `/cookie-policy`
+
+---
+
+## 2. Quick Start
+
+```bash
+# Dev server (from any site's web/ directory)
+cd Property/web && npm run dev     # http://localhost:3000
+cd Dentists/web && npm run dev
+cd Medical/web && npm run dev
+cd Solicitors/web && npm run dev
+
+# Build
+npm run build    # from any site's web/ directory
+
+# Lint
+npm run lint
+```
+
+**Required env vars** (in each site's `web/.env.local`):
+- `NEXT_PUBLIC_SITE_URL` — e.g. `https://propertytaxpartners.co.uk`
+- `NEXT_PUBLIC_SUPABASE_URL` — Supabase project URL
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY` — Supabase anon key
+
+**Deployment:** Vercel auto-deploys from `main` branch on `git push`. Each site is a separate Vercel project pointing to its `{Site}/web/` root directory.
+
+---
+
+## 3. Tech Stack
 
 - Next.js 15 + React 19 + TypeScript + Tailwind 4
-- App Router (src/app/)
-- Supabase (leads, blog topics)
-- Vercel deployment (auto-deploys from main branch on git push)
-- Python (Anthropic API) for blog content generation
-- GSC/GA4 integration via agents/
+- App Router (`src/app/`)
+- Supabase (leads table, blog topics)
+- Vercel deployment
+- Python + Anthropic API for blog content generation (`pipeline/`)
+- GSC/GA4 integration (`agents/`)
 
-## Folder Structure
+---
+
+## 4. Folder Structure
 
 ```
 Accounting/
 ├── Property/              # Each site follows this pattern:
-│   ├── niche.config.json  #   Site config (domain, brand, categories, SEO)
+│   ├── niche.config.json  #   THE config file (brand, domain, categories, SEO, nav, locations, lead form)
 │   ├── web/               #   Next.js app
 │   │   ├── src/app/       #     Pages (App Router)
 │   │   ├── src/lib/       #     blog.ts, schema.ts, markdown-utils.ts, local-business-schema.ts
-│   │   ├── src/config/    #     site.ts, niche-loader.ts
-│   │   ├── src/components/#     UI components
-│   │   │   ├── blog/      #       BlogPostRenderer, TableOfContents, ReadingProgress
-│   │   │   ├── forms/     #       LeadForm
-│   │   │   ├── layout/    #       PageShell, SiteHeader, SiteFooter
-│   │   │   └── ui/        #       layout-utils, Breadcrumb, etc.
-│   │   ├── content/blog/  #     Markdown blog posts with YAML front matter + HTML body
-│   │   └── public/        #     Static assets (llms.txt, favicon, etc.)
+│   │   ├── src/config/    #     site.ts (siteConfig), niche-loader.ts (loads niche.config.json)
+│   │   ├── src/components/
+│   │   │   ├── blog/      #     BlogPostRenderer, TableOfContents, ReadingProgress
+│   │   │   ├── forms/     #     LeadForm (submits to Supabase leads table)
+│   │   │   ├── layout/    #     PageShell, SiteHeader, SiteFooter
+│   │   │   └── ui/        #     layout-utils, Breadcrumb, etc.
+│   │   ├── content/blog/  #     .md blog posts (YAML front matter + HTML body)
+│   │   └── public/        #     Static assets (llms.txt, favicon)
 │   └── pipeline/          #   Python blog generation scripts
-├── Dentists/              # Same structure as Property
-├── Medical/               # Same structure (flat blog URLs, no category in path)
-├── Solicitors/            # Same structure as Property
-├── shared/
-│   └── web-core/          #   Shared TS: schema.ts, blog.ts, components
+├── Dentists/              # Same structure
+├── Medical/               # Same structure (but flat blog URLs)
+├── Solicitors/            # Same structure
+├── shared/web-core/       # Shared TS: schema.ts, blog.ts, components
 ├── agents/                # Python agent system (GSC, blog gen, analytics)
-│   └── docs/              #   GSC system docs (INDEX, QUICK_START, OPTIMIZATION)
-├── scripts/               # Utility scripts (Batch/Canonicals/Database/Generation/Import/Migration/Monitoring/Testing)
-├── supabase/              # DB migrations + applied SQL
-├── Admin/                 # Audit doc + Topics (keyword CSVs) + archive
+├── scripts/               # Utility scripts
+├── supabase/              # DB migrations
+├── Admin/                 # Audit docs, keyword CSVs
 ├── secrets/               # GSC credentials (gitignored)
 ├── templates/             # Niche generation templates
-├── shared_supabase_config.py  # Shared Python DB config (must stay at root - 22 scripts depend on it via sys.path)
+├── shared_supabase_config.py  # Shared Python DB config (MUST stay at root — 22 scripts depend on sys.path)
 └── .env / .env.local      # Environment variables (gitignored)
 ```
 
-## Blog Content Format
+---
 
-Blog posts are `.md` files with YAML front matter followed by an **HTML body** (not markdown). The body uses raw `<h2>`, `<h3>`, `<p>`, `<a>`, `<strong>`, `<ul>`, `<li>` tags etc. The `blog.ts` `parsePostFile()` function uses `gray-matter` to split front matter from content, then pipes the HTML body through `addHeadingIds()` before storing as `contentHtml`.
+## 5. The 4 Key Differences Between Sites
+
+### 5a. Blog URL Structure
+
+| Site | Blog post URL | Blog post page file | Related post links |
+|------|--------------|--------------------|--------------------|
+| Property | `/blog/{category}/{slug}` | `src/app/blog/[category]/[slug]/page.tsx` | `/blog/${categorySlug}/${slug}` |
+| Dentists | `/blog/{category}/{slug}` | `src/app/blog/[category]/[slug]/page.tsx` | `/blog/${categorySlug}/${slug}` |
+| **Medical** | **`/blog/{slug}` (flat)** | **`src/app/blog/[slug]/page.tsx`** | **`/blog/${slug}`** |
+| Solicitors | `/blog/{category}/{slug}` | `src/app/blog/[category]/[slug]/page.tsx` | `/blog/${categorySlug}/${slug}` |
+
+Medical is the only site with flat blog URLs. Category hub pages still exist at `/blog/{category-slug}/` on all 4 sites.
+
+### 5b. slugifyCategory Logic
+
+| Site | `&` handling | Example |
+|------|-------------|---------|
+| Property | `&` → `and` | "Section 24 & Tax Relief" → `section-24-and-tax-relief` |
+| Dentists | `&` → `and` | "VAT & compliance" → `vat-and-compliance` |
+| **Solicitors** | **`&` stripped** | "SRA Compliance & Trust Accounting" → `sra-compliance-trust-accounting` |
+| Medical | `&` → `and` | "Incorporation & Company Structures" → `incorporation-and-company-structures` |
+
+### 5c. CSS Theming
+
+| Site | Approach | Primary color | Example |
+|------|----------|--------------|---------|
+| Property | Mix of direct Tailwind + CSS vars | emerald (`#059669`) | `text-emerald-600`, `bg-slate-50` in BlogPostRenderer |
+| Dentists | CSS variables throughout | Via `var(--primary)` | `text-[var(--primary)]`, `bg-[var(--surface)]` |
+| Medical | CSS variables + unique vars | teal + coral | `border-[var(--medical-teal)]`, `text-[var(--coral)]` |
+| Solicitors | CSS variables throughout | Via `var(--primary)` | `text-[var(--primary)]`, `bg-[var(--surface)]` |
+
+All sites define in `globals.css`: `--surface`, `--ink`, `--ink-soft`, `--muted`, `--border`, `--primary`, `--primary-hover`, `--accent`
+
+### 5d. Middleware Redirects
+
+| Site | `middleware.ts` role |
+|------|---------------------|
+| Property | 301 redirects: flat `/blog/{slug}` → `/blog/{category}/{slug}`; `/blog/category/{x}` → `/blog/{x}` |
+| Dentists | Same flat→nested blog redirects + duplicate handling |
+| Medical | Duplicate slug redirects only (no flat→nested needed — URLs are already flat) |
+| Solicitors | Flat→nested redirects + `GUIDE_TO_CATEGORY_MAP` for legacy URLs |
+
+---
+
+## 6. Categories
+
+**Property** (7): Section 24 & Tax Relief, Incorporation & Company Structures, Making Tax Digital (MTD), Capital Gains Tax, Portfolio Management, Property Accountant Services, Landlord Tax Essentials
+
+**Dentists** (5): Practice accounting, Associate tax, Buying a practice, Practice finance, VAT & compliance
+
+**Medical** (9): GP Tax & Accounts, GP Accountant Services, GP Practice Management, NHS Pension Planning, Locum Tax, Private Practice, Medical Expenses, Incorporation & Company Structures, Consultant Tax
+
+**Solicitors** (7): SRA Compliance & Trust Accounting, Sole Practitioner Tax, Partnership & LLP Accounting, VAT & Compliance, Practice Finance & Cash Flow, Practice Succession & Sale, Structure & Incorporation
+
+Each category has a **static hub page** at `/blog/{category-slug}/page.tsx` with rich pillar content (4-5 H2 sections), CollectionPage + BreadcrumbList JSON-LD, LeadForm CTA, and article cards with date + read time.
+
+---
+
+## 7. Configuration System
+
+### niche.config.json (per site, loaded at build time)
+
+```
+{
+  niche_id, display_name, legal_name, domain, tagline, description,
+  brand: { primary_color, logo_path, publisher_logo_url },
+  contact: { email, phone },
+  navigation: [{ label, href }],
+  footer_links: [{ label, href }],
+  locations: [{ slug, title }],
+  content_strategy: { audience, categories[], supabase_table, source_identifier },
+  seo: { locale, organization_type, service_areas[], google_analytics_id, google_site_verification, theme_color },
+  lead_form: { role_label, role_options[], placeholders },
+  cta: { sticky_primary, sticky_secondary, sticky_button },
+  blog: { cta_heading, cta_body, cta_button }
+}
+```
+
+Loaded by `src/config/niche-loader.ts` → typed `NicheConfig`, exported as `niche`. `src/config/site.ts` maps it to `siteConfig` (name, url, contact, nav, locations, etc.).
+
+### Author Names
+
+Derived from `siteConfig.name` in `schema.ts`: `"${siteConfig.name} Editorial Team"` — e.g. "Property Tax Partners Editorial Team", "Dental Finance Partners Editorial Team", etc.
+
+---
+
+## 8. Blog Content Format
+
+Blog posts are `.md` files in `{Site}/web/content/blog/` with **YAML front matter + HTML body** (not markdown syntax).
 
 ### Front Matter
 
@@ -80,172 +197,212 @@ image: ""
 altText: "Alt text for images"
 h1: "Page Heading"
 summary: "Brief summary"
-schema: ""
+schema: ""                             # Optional custom JSON-LD (overrides auto-generated)
 faqs:
   - question: "..."
     answer: "..."
 ```
 
-## Critical: slugifyCategory Differences
+### HTML Body Example
 
-**Property & Dentists** replace `&` with `and`:
-```
-"Section 24 & Tax Relief" → "section-24-and-tax-relief"
-"VAT & compliance" → "vat-and-compliance"
-```
-
-**Solicitors** strips `&` entirely:
-```
-"SRA Compliance & Trust Accounting" → "sra-compliance-trust-accounting"
-"VAT & Compliance" → "vat-compliance"
+```html
+<p>Introductory paragraph with <strong>bold keywords</strong> and <a href="/services">internal links</a>.</p>
+<h2>Section Heading</h2>
+<p>Content...</p>
+<h3>Subsection</h3>
+<ul><li>List item</li></ul>
 ```
 
-**Medical** replaces `&` with `and` (same as Property/Dentists). Uses flat post URLs (/blog/{slug}) but category hub pages exist at /blog/{category-slug}/.
+---
 
-## Key Files Per Site
+## 9. Blog Post Rendering Pipeline
 
-- `niche.config.json` — loaded by web via `src/config/niche-loader.ts` (import from `../../../niche.config.json`)
-- `src/lib/blog.ts` — getAllPosts(), getPostBySlug(), slugifyCategory(), getCategorySlug(), calculateReadTime(), addHeadingIds() import
-- `src/lib/markdown-utils.ts` — addHeadingIds() (injects `id` attrs into `<h2>`/`<h3>` tags), extractHeadings() (parses headings for TOC)
-- `src/lib/schema.ts` — buildBlogPostingJsonLd(), buildOgImageUrl() (Person author, dynamic OG images)
-- `src/lib/local-business-schema.ts` — buildLocalBusinessJsonLd() for location pages
-- `src/components/blog/BlogPostRenderer.tsx` — renders blog posts with 2-column grid layout (content + TOC sidebar)
-- `src/components/blog/TableOfContents.tsx` — client component: responsive TOC (mobile collapsible + desktop sticky sidebar)
-- `src/components/blog/ReadingProgress.tsx` — client component: reading progress bar at top of viewport
-- `src/components/layout/PageShell.tsx` — root layout wrapper (flex column, `overflow-x-clip`, header/main/footer)
-- `src/components/layout/SiteHeader.tsx` — sticky header (`sticky top-0 z-40`)
-- `src/app/blog/[category]/[slug]/page.tsx` — blog post pages (Property/Dentists/Solicitors)
-- `src/app/blog/[slug]/page.tsx` — blog post pages (Medical only)
-- `src/app/blog/{category-slug}/page.tsx` — category hub pages (static, one per category, rich pillar content + schema + LeadForm)
-- `src/app/locations/[slug]/page.tsx` — location pages with LocalBusiness schema
-- `src/app/api/og/route.tsx` — dynamic OG image generation (edge runtime, branded per site)
-- `src/app/robots.ts` — robots.txt generation (includes AI crawler rules)
-- `src/middleware.ts` — redirects for old flat /blog/{slug} URLs to /blog/{category}/{slug}
-- `web/public/llms.txt` — AI discoverability file (site description, key pages, categories)
+1. **Content loading** (`blog.ts`): `gray-matter` splits YAML front matter from HTML body
+2. **Heading IDs** (`blog.ts`): `addHeadingIds()` from `markdown-utils.ts` injects `id` attributes into bare `<h2>`/`<h3>` tags. Regex: `/<(h[23])>(.*?)<\/\1>/gi`. Stored as `contentHtml`.
+3. **Read time** (`blog.ts`): `calculateReadTime()` — strips tags (replaced with spaces), counts words, divides by **238 WPM**, `Math.round()` (min 1 min)
+4. **Page component** (`[slug]/page.tsx`): Server component loads post, finds related posts (same category, newest first, limit 3), renders `<BlogPostRenderer>`
+5. **BlogPostRenderer**: Extracts headings via `extractHeadings(post.contentHtml)` → `[{ id, text, level }]`, builds JSON-LD, renders layout
+6. **Layout**: 2-column grid at `lg`: `lg:grid-cols-[1fr_250px]` with `lg:gap-12`
+   - Left column (`max-w-4xl`): breadcrumb → header (category, h1, date/author/read time, summary) → mobile TOC (`lg:hidden`) → image → article body → FAQs → about author → CTA → related articles
+   - Right column (`hidden lg:block`): sticky sidebar TOC (`sticky top-24`)
+7. **TableOfContents** (client): takes `headings` prop, `IntersectionObserver` for active heading. Mobile: collapsible `<details>` at `sticky top-16 z-30`. Desktop: sticky sidebar card at `top-24`. Only ONE visible at a time.
+8. **ReadingProgress** (client): thin progress bar, `fixed top-0 z-50`
 
-## Blog Post Rendering Pipeline
+---
 
-1. **Content loading** (`blog.ts`): `gray-matter` splits YAML front matter from HTML body content
-2. **Heading IDs** (`blog.ts`): `addHeadingIds()` from `markdown-utils.ts` injects `id` attributes into all `<h2>` and `<h3>` tags (regex: `/<(h[23])>(.*?)<\/\1>/gi`). Stored as `contentHtml`.
-3. **Read time** (`blog.ts`): `calculateReadTime()` strips HTML tags, counts words, divides by 238 WPM, rounds to nearest minute (min 1).
-4. **Page component** (`[slug]/page.tsx`): Server component that loads the post, finds related posts, renders `<BlogPostRenderer>`.
-5. **BlogPostRenderer**: Extracts headings via `extractHeadings(post.contentHtml)`, builds JSON-LD schema, renders the layout.
-6. **Layout**: 2-column grid at `lg` breakpoint: `lg:grid-cols-[1fr_250px]` with `lg:gap-12`.
-   - Left column (`max-w-4xl`): breadcrumb, header (category badge, h1, date/author/read time, summary), mobile TOC (`lg:hidden`), image, article body, FAQs, about author, CTA, related articles.
-   - Right column (`hidden lg:block`): sticky sidebar TOC (`sticky top-24`).
-7. **TableOfContents** (client component): Takes `headings` prop (pre-extracted). Uses `IntersectionObserver` to highlight active heading. Responsive:
-   - Mobile (`lg:hidden`): sticky collapsible `<details>` element at `top-16` (clears header)
-   - Desktop (`hidden lg:block`): sticky sidebar card at `top-24` with heading list
-8. **ReadingProgress** (client component): thin progress bar at very top of viewport (`fixed top-0 z-50`).
+## 10. LeadForm
 
-### IMPORTANT: overflow-x-clip
+- Client component at `src/components/forms/LeadForm.tsx`
+- Fields: role dropdown (options from `niche.lead_form`), full name, email, phone, optional message
+- Validates: email regex, UK phone format, minimum digit count
+- **Submits to Supabase** `POST /rest/v1/leads` via `supabase-client.ts` using `NEXT_PUBLIC_SUPABASE_URL` + `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+- Payload includes `source: niche.content_strategy.source_identifier`, `source_url` (current page URL), `submitted_at`
+- On success: fires `gtag('event', 'generate_lead')`, optionally redirects to `/thank-you`
 
-All 4 sites use `overflow-x-clip` (NOT `overflow-x-hidden`) on the `PageShell` wrapper div. This is critical because `overflow-x-hidden` causes browsers to implicitly set `overflow-y: auto`, creating a scroll container that **breaks `position: sticky`** on the TOC sidebar and mobile TOC. `overflow-x-clip` prevents horizontal overflow without creating a scroll container.
+---
 
-## CSS & Theming
+## 11. SEO Implementation
 
-All 4 sites define CSS custom properties in `globals.css`:
-- `--surface`, `--surface-elevated`, `--ink`, `--ink-soft`, `--muted`, `--border`
-- `--primary`, `--primary-hover`, `--accent`, `--accent-strong`
-- Site-specific: Medical has `--medical-teal`, `--coral`; Property uses emerald-based values
-
-**Property** uses a mix of direct Tailwind classes (`text-emerald-600`, `bg-slate-50`) and CSS variables. **Dentists, Medical, Solicitors** use CSS variables throughout (`text-[var(--primary)]`, `bg-[var(--surface)]`).
-
-Layout utilities in `src/components/ui/layout-utils.ts`:
-- `siteContainer` = `max-w-5xl` centered with responsive padding
-- `siteContainerLg` = `max-w-6xl` centered with responsive padding
-- `contentNarrow` = `max-w-3xl` centered
-- `focusRing` = consistent focus-visible outline style
-
-## Categories
-
-**Property** (7): Section 24 & Tax Relief, Incorporation & Company Structures, Making Tax Digital (MTD), Capital Gains Tax, Portfolio Management, Property Accountant Services, Landlord Tax Essentials
-
-**Dentists** (5): Practice accounting, Associate tax, Buying a practice, Practice finance, VAT & compliance
-
-**Medical** (9): GP Tax & Accounts, GP Accountant Services, GP Practice Management, NHS Pension Planning, Locum Tax, Private Practice, Medical Expenses, Incorporation & Company Structures, Consultant Tax
-
-**Solicitors** (7): SRA Compliance & Trust Accounting, Sole Practitioner Tax, Partnership & LLP Accounting, VAT & Compliance, Practice Finance & Cash Flow, Practice Succession & Sale, Structure & Incorporation
-
-## SEO Implementation Status
-
-### Metadata (all sites)
-- All 236 posts have populated canonicals matching their URL pattern
-- metaTitles: optimized for CTR, under 60 chars, keyword front-loaded, year references (2026 or 2026/27) on time-sensitive topics
-- metaDescriptions: fact-led openers (no "Complete guide to..." filler), under 155 chars, specific numbers/outcomes
-- openGraph: includes title, description, type, url, siteName, publishedTime, images (dynamic OG fallback)
-- Twitter cards: summary_large_image on all blog posts and static pages
+### Metadata (all 236 posts)
+- Canonicals match URL pattern; metaTitles under 60 chars (keyword front-loaded, year on time-sensitive topics); metaDescriptions under 155 chars (fact-led openers, no filler)
+- OpenGraph: title, description, type, url, siteName, publishedTime, dynamic OG image fallback
+- Twitter: summary_large_image on all posts and static pages
 
 ### Schema (JSON-LD)
-- BlogPosting + FAQPage (when faqs present) on all blog posts via `buildBlogPostingJsonLd()`
-- Person author: `"{Brand} Editorial Team"` with /about URL
-- Organization publisher with absolute logo URL
-- BreadcrumbList on blog posts and all category hub pages (all 4 sites)
-- LocalBusiness on location pages (absolute logo URL)
-- CollectionPage on all category hub pages (all 4 sites)
-
-### Category Hub Pages (all 4 sites standardized)
-- Property: 7 hubs with rich pillar content (4-5 H2 sections), CollectionPage + BreadcrumbList schema, LeadForm CTA, article cards with date + read time
-- Dentists: 5 hubs with same structure (rich content, schema, LeadForm, cards)
-- Solicitors: 7 hubs with same structure
-- Medical: 8 hubs (gp-accountant-services, gp-practice-management, gp-tax-and-accounts, locum-tax, nhs-pension-planning, incorporation-and-company-structures, medical-expenses, private-practice). Hub pages link to flat /blog/{slug} post URLs. Blog index tiles are clickable Links to hub pages. Sitemap includes hub URLs.
-- All hubs have: openGraph.type "website", siteName, twitter cards, canonical URLs
-
-### Internal Linking
-- Property: 85/85 posts have 2-3 internal links each (255 total: inline contextual + Related Reading sections)
-- Medical: 46/46 posts have 2-3 internal links each (~158 total)
-- Dentists: 44/55 posts have internal links (pre-existing, using flat URLs that redirect via middleware)
-- Solicitors: 47/50 posts have internal links (pre-existing)
+- **BlogPosting** + **FAQPage** (when faqs present) on all posts via `buildBlogPostingJsonLd()`
+- **Person** author: `"{Brand} Editorial Team"` with /about URL
+- **Organization** publisher with absolute logo URL
+- **BreadcrumbList** on posts and category hub pages
+- **LocalBusiness** on location pages
+- **CollectionPage** on category hub pages
 
 ### AI Discoverability
-- `llms.txt` in all 4 sites' public/ directories (site description, key pages, categories, sitemap)
-- `robots.ts` explicitly allows GPTBot, ClaudeBot, Google-Extended, PerplexityBot, CCBot on all sites
+- `llms.txt` in all 4 public/ directories
+- `robots.ts` allows GPTBot, ClaudeBot, Google-Extended, PerplexityBot, CCBot
 
 ### Redirects
-- Property/Dentists/Solicitors have `permanentRedirect` logic in `[category]/[slug]/page.tsx`: if a slug exists under a different category than the URL, it 301-redirects to the correct URL
-- Dentists has `middleware.ts` mapping old flat /blog/{slug} URLs to /blog/{category}/{slug}
+- Property/Dentists/Solicitors: `permanentRedirect` in `[category]/[slug]/page.tsx` if slug found under wrong category
+- All sites have `middleware.ts` (see section 5d)
 
-## Table of Contents (TOC) System
+---
 
-All 4 sites have a standardized TOC implementation (added 3 April 2026):
+## 12. Location Pages
 
-**Components** (per site):
-- `src/lib/markdown-utils.ts` — `addHeadingIds()` + `extractHeadings()`
-- `src/components/blog/TableOfContents.tsx` — responsive TOC ("use client")
-- `src/components/blog/ReadingProgress.tsx` — progress bar ("use client")
+- Data source: `niche.config.json` `locations[]` array → `generateStaticParams()`
+- City-specific content: hardcoded `cityContent` record in `locations/[slug]/page.tsx`
+- Schema: LocalBusiness JSON-LD with service area
+- Property/Medical/Solicitors: 5 cities; Dentists: 2 cities
 
-**How it works**:
-1. `blog.ts` calls `addHeadingIds(content)` during post parsing — injects `id` attrs into bare `<h2>`/`<h3>` tags
-2. `BlogPostRenderer` calls `extractHeadings(post.contentHtml)` — returns `[{ id, text, level }]` array
-3. `TableOfContents` receives `headings` as a prop (NOT raw content) and renders two views:
-   - Mobile (`lg:hidden`): collapsible `<details>` bar, `sticky top-16 z-30`
-   - Desktop (`hidden lg:block`): sticky sidebar card, `sticky top-24`, with `IntersectionObserver` for active heading highlight
-4. Only ONE TOC is ever visible at a time (responsive show/hide)
+---
 
-**Key gotcha**: `PageShell.tsx` MUST use `overflow-x-clip` not `overflow-x-hidden`, otherwise `position: sticky` breaks on all descendants.
+## 13. Key Files Per Site
 
-## Reading Time
+| File | Purpose |
+|------|---------|
+| `niche.config.json` | All site config: brand, domain, categories, nav, locations, SEO, lead form, CTAs |
+| `src/config/niche-loader.ts` | Imports niche.config.json, exports typed `niche` + `getSiteUrl()` |
+| `src/config/site.ts` | Maps niche → `siteConfig` (name, url, nav, locations, etc.) |
+| `src/lib/blog.ts` | `getAllPosts()`, `getPostBySlug()`, `getRelatedPosts()`, `slugifyCategory()`, `calculateReadTime()`, `addHeadingIds()` import |
+| `src/lib/markdown-utils.ts` | `addHeadingIds()`, `extractHeadings()` |
+| `src/lib/schema.ts` | `buildBlogPostingJsonLd()`, `buildOgImageUrl()` |
+| `src/lib/supabase-client.ts` | Supabase REST client for lead form submissions |
+| `src/components/blog/BlogPostRenderer.tsx` | Full blog post layout (grid, TOC, FAQs, CTA, related) |
+| `src/components/blog/TableOfContents.tsx` | Responsive TOC ("use client") |
+| `src/components/blog/ReadingProgress.tsx` | Progress bar ("use client") |
+| `src/components/forms/LeadForm.tsx` | Lead capture form → Supabase |
+| `src/components/layout/PageShell.tsx` | Root wrapper: `overflow-x-clip`, header/main/footer |
+| `src/components/layout/SiteHeader.tsx` | Sticky header (`sticky top-0 z-40`) |
+| `src/components/ui/layout-utils.ts` | `siteContainer` (max-w-5xl), `siteContainerLg` (max-w-6xl), `focusRing` |
+| `src/middleware.ts` | Blog URL redirects (site-specific logic) |
+| `src/app/robots.ts` | robots.txt with AI crawler rules |
+| `src/app/api/og/route.tsx` | Dynamic OG image generation (edge runtime) |
+| `web/public/llms.txt` | AI discoverability file |
 
-`calculateReadTime()` in each site's `blog.ts`:
-- Strips HTML tags (replaced with spaces to prevent word-joining)
-- Counts words via whitespace split, filtering empty strings
-- Divides by **238 WPM** (research-backed average for non-fiction web content)
-- `Math.round()` with `Math.max(1, ...)` — rounds to nearest minute, minimum 1
+---
 
-## Remaining Known Issues
+## 14. Gotchas & Hard-Won Lessons
 
-- Dentists: 11/55 posts lack internal blog links; existing links use flat /blog/{slug} URLs (functional via middleware redirects but not canonical nested format)
+1. **`overflow-x-clip` NOT `overflow-x-hidden`** on `PageShell.tsx`. `hidden` implicitly sets `overflow-y: auto`, creating a scroll container that **breaks `position: sticky`** on all descendants (TOC, mobile nav bar).
+
+2. **slugifyCategory differs per site** — Solicitors strips `&`, others replace with `and`. Getting this wrong breaks canonical URLs, hub page filtering, and category routing. Always check the site's `blog.ts`.
+
+3. **Medical has flat blog URLs** — `/blog/{slug}` not `/blog/{category}/{slug}`. BlogPostRenderer links, breadcrumbs, related posts, and canonicals all use different patterns. Don't copy code from Property→Medical without adjusting.
+
+4. **`shared_supabase_config.py` must stay at repo root** — 22 Python scripts use `sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))` to find it. Moving it breaks all pipeline scripts.
+
+5. **Blog content is HTML, not markdown** — despite `.md` extension. The body after front matter is raw HTML tags. `addHeadingIds()` regex expects bare `<h2>` tags with no attributes.
+
+6. **Property uses direct Tailwind classes** in some components (`text-emerald-600`, `bg-slate-900`) while Dentists/Medical/Solicitors use CSS vars (`text-[var(--primary)]`). Don't blindly copy styles between Property and other sites.
+
+7. **Property header is taller** — `sm:min-h-16` (64px) vs `sm:min-h-14` (56px) on others. Mobile TOC uses `sticky top-16` to clear all headers.
+
+8. **Year format: "2026/27" not "2026/26"** — UK tax year = 6 April to 5 April. "2026/26" is invalid and has caused bugs before.
+
+9. **PowerShell is the shell** — no `tail`, no `&&` chaining, no heredoc. Use `;` to chain commands, `Write-Output` instead of `echo`, file-based commit messages instead of heredoc.
+
+10. **Category hub pages are static files** — one `page.tsx` per category in `src/app/blog/{slug}/`. They're NOT dynamic routes. Adding a new category requires creating a new hub page file.
+
+---
+
+## 15. Content Generation Pipeline
+
+Each site's `pipeline/` folder contains the active blog generation system:
+- `config_supabase.py` — site config: URL, author, categories, system prompt, internal links
+- `generate_blog_supabase.py` — main generator: Supabase topic → Anthropic Claude → parse `==field==` blocks → validate → write `.md`
+
+**Pipeline flow:**
+1. Fetch highest-priority unused topic from Supabase (`blog_topics_{niche}`)
+2. Build user prompt with primary keyword, secondary keywords, SEO guidance, internal links
+3. Call Anthropic (`claude-sonnet-4-20250514`) with niche-specific system prompt
+4. Parse `==field==` delimited output into structured fields
+5. **Auto-generate canonical URL** from domain + URL pattern + slug
+6. **Validate**: metaTitle ≤60, metaDescription ≤155, no markdown-in-HTML, slug present, FAQs present, content length
+7. Write `.md` with YAML front matter + HTML body to `web/content/blog/`
+8. Patch Supabase: mark topic as used/published
+
+**Author convention:** `"{Brand} Editorial Team"` (e.g. "Property Tax Partners Editorial Team")
+
+**Secondary keywords:** Property reads from `secondary_keywords[]`; Dentists from `secondary_keyword_1`..`10`; Medical/Solicitors from either format
+
+**URL pattern in canonicals:** Property/Dentists/Solicitors: `{domain}/blog/{categorySlug}/{slug}`; Medical: `{domain}/blog/{slug}` (flat)
+
+**Orchestration:**
+- `agents/blog_generation_agent.py` wraps generation with quality checks, Supabase logging, budget limits
+- `agents/coordinator.py` runs daily pipeline (all 4 niches)
+- GitHub Actions `daily-content-pipeline.yml` automates all 4 niches (blog gen + sync + deploy + git push)
+- `agents/keyword_topic_tree_builder.py` refreshes topic trees monthly
+
+---
+
+## 16. Site Scaffolding
+
+**`scripts/scaffold_new_site.py`** creates a complete new site from the Dentists reference:
+
+```bash
+python scripts/scaffold_new_site.py \
+    --niche-id veterinary \
+    --display-name "Veterinary Accountants UK" \
+    --domain "veterinaryaccountantsuk.co.uk" \
+    --primary-color "#2563eb" \
+    --categories "Practice Tax,Associate Tax,Buying a Practice" \
+    --locations "london,manchester,birmingham,leeds,bristol" \
+    --url-style nested  # or "flat" for Medical-style URLs
+```
+
+Automates: directory copy, niche.config.json, pipeline config + generator, CSS variables, hub page stubs, blog post cleanup, package.json, .env.local.example, flat/nested URL routing.
+
+Prints a checklist of manual steps (hub content, location content, page copy, Vercel, Supabase table, CI matrix).
+
+---
+
+## 17. CI Quality Gates
+
+**`scripts/validate_blog_content.py`** checks all 236 posts for:
+- Front matter completeness (title, slug, date, author, category, metaTitle, metaDescription, h1, summary)
+- metaTitle ≤ 60 chars, metaDescription ≤ 155 chars
+- Canonical URL present and domain-correct
+- No markdown links in HTML body
+- FAQ presence
+- Stale year references in meta fields
+- Author name matches convention
+- Internal link targets exist
+
+**GitHub Actions `content-quality-check.yml`** runs on every push/PR that touches `**/web/content/blog/**`.
+
+---
+
+## 18. Remaining Known Issues
+
+- Dentists: 11/55 posts lack internal blog links; existing links use flat `/blog/{slug}` URLs (work via middleware redirects but aren't canonical nested format)
 - Solicitors: 3/50 posts lack internal blog links
-- Medical: "Consultant Tax" category exists in niche.config.json but has 0 posts (no hub page created for it)
+- Medical: "Consultant Tax" category exists in niche.config.json but has 0 posts (no hub page created)
 
-## Python Pipeline
+---
 
-Each site's `pipeline/` folder contains blog generation scripts. They use `config_supabase.py` which adds the repo root to `sys.path` to import `shared_supabase_config.py`. The `OUTPUT_MD_DIR` paths are relative to the script location, pointing to `../web/content/blog/`.
+## 19. Year/Tax Year Conventions
 
-## Year/Tax Year Conventions
-
-- UK tax year: 6 April to 5 April (e.g. "2026/27" = 6 April 2026 to 5 April 2027)
-- "2026/26" is INVALID — never use this format
-- Tax year topics (self-assessment, pension, tax rates, allowances): use "2026/27"
-- Calendar year topics (MTD deadline, VAT registration threshold): use "2026"
-- Evergreen topics (how to choose an accountant): no year needed
+- UK tax year: 6 April to 5 April → "2026/27" = 6 April 2026 to 5 April 2027
+- "2026/26" is **INVALID** — never use
+- Tax year topics (self-assessment, pension, rates): use "2026/27"
+- Calendar year topics (MTD deadline, VAT threshold): use "2026"
+- Evergreen topics: no year needed

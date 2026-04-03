@@ -3,7 +3,7 @@ title: "Locum Doctor Limited Company: Pros and Cons Explained"
 slug: "locum-doctor-limited-company-pros-and-cons"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/locum-doctor-limited-company-pros-and-cons"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "Locum Tax"
 metaTitle: "Locum Doctor Limited Company Pros and Cons | Medical Tax"
 metaDescription: "IR35 often eliminates company tax savings for NHS locums. A realistic breakdown of the pros, cons, and when incorporation actually pays off."
@@ -29,7 +29,7 @@ faqs:
 
 <h3>IR35 Compliance Complexity</h3>
 
-<p>The most significant challenge facing locum doctor limited companies is [IR35 legislation](/blog/locum-doctor-ir35-what-you-need-to-know). Off-payroll working rules require careful assessment of each contract to determine whether you're operating as a "disguised employee" or genuine contractor.</p>
+<p>The most significant challenge facing locum doctor limited companies is <a href="/blog/locum-doctor-ir35-what-you-need-to-know">IR35 legislation</a>. Off-payroll working rules require careful assessment of each contract to determine whether you're operating as a "disguised employee" or genuine contractor.</p>
 
 <p>Many NHS trusts now apply IR35 blanket determinations, treating most locum arrangements as inside IR35. This eliminates many tax advantages while retaining company administrative burdens.</p>
 
@@ -81,7 +81,7 @@ faqs:
 
 <h3>Umbrella Company Arrangements</h3>
 
-<p>[Umbrella companies](/blog/locum-doctor-umbrella-company-2026-reforms) handle payroll and administrative requirements while providing employee benefits. This can suit locums wanting simplicity without full incorporation complexity.</p>
+<p><a href="/blog/locum-doctor-umbrella-company-2026-reforms">Umbrella companies</a> handle payroll and administrative requirements while providing employee benefits. This can suit locums wanting simplicity without full incorporation complexity.</p>
 
 <p>However, umbrella arrangements typically result in higher overall tax and National Insurance costs compared to other structures.</p>
 
@@ -95,5 +95,5 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [Locum Doctor Tax Complete Guide](/blog/locum-doctor-tax-complete-guide)
-- [Locum Doctor Expenses: What You Can Claim](/blog/locum-doctor-expenses-what-you-can-claim)
+- <a href="/blog/locum-doctor-tax-complete-guide">Locum Doctor Tax Complete Guide</a>
+- <a href="/blog/locum-doctor-expenses-what-you-can-claim">Locum Doctor Expenses: What You Can Claim</a>

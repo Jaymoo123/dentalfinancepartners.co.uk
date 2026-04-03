@@ -3,7 +3,7 @@ title: "GP Partner vs Salaried GP Tax Comparison: Complete Guide for 2026/27"
 slug: "gp-partner-vs-salaried-gp-tax-comparison"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-partner-vs-salaried-gp-tax-comparison"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Tax & Accounts"
 metaTitle: "GP Partner vs Salaried GP Tax Comparison 2026/27"
 metaDescription: "GP partners pay less NI but face self-assessment and business risk. Side-by-side comparison of tax, pension, and take-home pay for 2026/27."
@@ -127,7 +127,7 @@ faqs:
 
 <h3>GP Partner Business Expenses</h3>
 
-<p>GP partners enjoy much broader [expense relief](/blog/gp-tax-deductions-complete-list-2026) as business owners:</p>
+<p>GP partners enjoy much broader <a href="/blog/gp-tax-deductions-complete-list-2026">expense relief</a> as business owners:</p>
 
 <ul>
 <li>All professional expenses available to salaried GPs</li>
@@ -186,11 +186,11 @@ faqs:
 
 <p>The <strong>GP partner vs salaried GP tax comparison</strong> shows partners typically enjoy modest tax advantages, particularly through lower National Insurance and enhanced expense relief. However, tax shouldn't be the only consideration.</p>
 
-<p>Consider your risk appetite, desired work-life balance, and long-term career goals. Partners gain business control and potential for higher rewards but accept additional responsibilities and risks. Our guide on [becoming a GP partner](/blog/becoming-gp-partner-financial-implications) covers these financial implications in detail.</p>
+<p>Consider your risk appetite, desired work-life balance, and long-term career goals. Partners gain business control and potential for higher rewards but accept additional responsibilities and risks. Our guide on <a href="/blog/becoming-gp-partner-financial-implications">becoming a GP partner</a> covers these financial implications in detail.</p>
 
 <p>Given the complexity of these calculations and their impact on your financial future, speak to a specialist medical accountant who understands GP taxation. They can provide personalized analysis based on your specific circumstances and help optimize your tax position regardless of your chosen path.</p>
 
 <h2>Related Reading</h2>
 
-- [GP Partnership Tax: Complete Guide](/blog/gp-partnership-tax-complete-guide)
-- [GP Pension Contributions Tax Relief](/blog/gp-pension-contributions-tax-relief)
+- <a href="/blog/gp-partnership-tax-complete-guide">GP Partnership Tax: Complete Guide</a>
+- <a href="/blog/gp-pension-contributions-tax-relief">GP Pension Contributions Tax Relief</a>

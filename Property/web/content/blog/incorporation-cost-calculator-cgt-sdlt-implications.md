@@ -3,7 +3,7 @@ title: "Incorporation Cost Calculator: Understanding CGT and SDLT Implications f
 slug: "incorporation-cost-calculator-cgt-sdlt-implications"
 canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/incorporation-cost-calculator-cgt-sdlt-implications"
 date: "2026-03-29"
-author: "Property Tax Partners"
+author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Incorporation Cost Calculator: CGT & SDLT Implications UK"
 metaDescription: "Calculate the true cost of property incorporation including CGT and SDLT. Essential guidance for UK landlords considering company structures."

@@ -2,7 +2,7 @@
 title: "NHS UDA Rates 2026/27: What They Mean for Your Practice Finances"
 slug: "nhs-uda-rates-2026-27-practice-finances"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Practice finance"
 metaTitle: "NHS UDA Rates 2026/27: Practice Finance Impact Guide"
 metaDescription: "The standard UDA rate for 2026/27 is £25.20. How this affects practice profitability, associate earnings, and whether to shift your NHS-private mix."
@@ -47,7 +47,7 @@ faqs:
 
 <p>Associates working on UDA-based contracts need to understand how these rates translate to their personal income. If you're earning 50% of UDA value as an associate, the 2026/27 rates mean £12.60 per UDA delivered.</p>
 
-<p>This impacts your <a href="/blog/associate-dentist-tax-self-assessment-uk">tax planning as a self-employed associate</a>. Higher UDA values might push you into different tax brackets or affect your National Insurance contributions.</p>
+<p>This impacts your <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">tax planning as a self-employed associate</a>. Higher UDA values might push you into different tax brackets or affect your National Insurance contributions.</p>
 
 <p>Associates should also consider how UDA targets align with these rates. A target of 4,000 UDAs at 50% commission equals £50,400 gross income before expenses - crucial information for financial planning.</p>
 

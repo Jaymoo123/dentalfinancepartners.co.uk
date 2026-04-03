@@ -3,7 +3,7 @@ title: "Solicitor Expenses Claims: Tax Relief and Compliance Guide for UK Legal 
 slug: "solicitor-expenses-claims-tax-relief-guide"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sole-practitioner-tax/solicitor-expenses-claims-tax-relief-guide"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "Sole Practitioner Tax"
 metaTitle: "Solicitor Expenses Claims: Tax Relief Guide 2026/27"
 metaDescription: "PII, SRA fees, CPD, travel, and home office costs all qualify. Allowable deductions, record-keeping rules, and common mistakes solicitors make."

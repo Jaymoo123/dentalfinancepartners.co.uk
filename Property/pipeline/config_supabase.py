@@ -17,7 +17,7 @@ OUTPUT_MD_DIR = os.path.join(os.path.dirname(__file__), "..", "web", "content", 
 # SITE CONFIG (Property-specific)
 # ============================================================================
 SITE_BASE_URL = "https://propertytaxpartners.co.uk"
-AUTHOR_NAME = "Property Tax Partners"
+AUTHOR_NAME = "Property Tax Partners Editorial Team"
 
 # ============================================================================
 # ANTHROPIC CONFIG

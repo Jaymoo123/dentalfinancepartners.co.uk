@@ -2,7 +2,7 @@
 title: "How to Structure a Dental Group Across Multiple Sites"
 slug: "dental-group-structure-multiple-sites-uk"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Practice finance"
 metaTitle: "Dental Group Structure: Multi-Site Setup Guide UK"
 metaDescription: "Subsidiary structure with a holding company typically works best for 3+ sites. Group relief, VAT grouping, and corporation tax implications explained."
@@ -91,7 +91,7 @@ faqs:
 
 <p>Decide whether associates and staff are employed by individual practice companies or by a central employment company. Central employment can simplify HR administration and provide flexibility for staff to work across sites, but may complicate things for practices with different ownership structures.</p>
 
-<p>For associates considering the tax implications, the employment structure affects their <a href="/blog/associate-dentist-tax-self-assessment-uk">self-assessment obligations</a> and expense claims.</p>
+<p>For associates considering the tax implications, the employment structure affects their <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">self-assessment obligations</a> and expense claims.</p>
 
 <h3>Property Ownership</h3>
 

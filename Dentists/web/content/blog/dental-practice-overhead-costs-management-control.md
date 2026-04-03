@@ -2,7 +2,7 @@
 title: "Dental Practice Overhead Costs: Management & Control Strategies"
 slug: "dental-practice-overhead-costs-management-control"
 date: "2026-04-01"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Practice finance"
 metaTitle: "Dental Practice Overhead Costs: Control & Management Guide"
 metaDescription: "Healthy overheads run 60–75% depending on NHS-private mix. Staff cost ratios, premises benchmarks, and strategies to cut costs without cutting care."

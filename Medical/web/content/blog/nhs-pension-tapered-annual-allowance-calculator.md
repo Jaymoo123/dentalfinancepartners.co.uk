@@ -3,7 +3,7 @@ title: "NHS Pension Tapered Annual Allowance Calculator: Complete Guide for UK D
 slug: "nhs-pension-tapered-annual-allowance-calculator"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/nhs-pension-tapered-annual-allowance-calculator"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "NHS Pension Planning"
 metaTitle: "Tapered Annual Allowance Calculator 2026/27 | NHS Pension"
 metaDescription: "Earning over £200k? Your NHS pension allowance may be tapered to just £10k. Calculate your threshold income, adjusted income, and potential tax charges."
@@ -58,7 +58,7 @@ faqs:
 
 <h2>Annual Allowance Charges and Penalties</h2>
 
-<p>When your pension growth exceeds your tapered allowance, you face [annual allowance charges](/blog/nhs-pension-tax-charges-how-to-minimize). These charges apply at your marginal tax rate—potentially 40% or 45% for high earners.</p>
+<p>When your pension growth exceeds your tapered allowance, you face <a href="/blog/nhs-pension-tax-charges-how-to-minimize">annual allowance charges</a>. These charges apply at your marginal tax rate—potentially 40% or 45% for high earners.</p>
 
 <p>A consultant with £70,000 pension growth but only £50,000 tapered allowance faces charges on £20,000 excess. At 40% tax rate, this creates an £8,000 bill.</p>
 
@@ -77,7 +77,7 @@ faqs:
 <li><strong>Carry forward:</strong> Use unused allowance from previous years</li>
 </ul>
 
-<p>GP partners have additional flexibility through [profit sharing arrangements](/blog/gp-partnership-profit-sharing-tax-planning), potentially managing the timing of partnership distributions.</p>
+<p>GP partners have additional flexibility through <a href="/blog/gp-partnership-profit-sharing-tax-planning">profit sharing arrangements</a>, potentially managing the timing of partnership distributions.</p>
 
 <h2>Using Professional Calculation Tools</h2>
 
@@ -142,7 +142,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [NHS Pension Annual Allowance Complete Guide](/blog/nhs-pension-annual-allowance-complete-guide)
-- [GP Pension Contributions Tax Relief](/blog/gp-pension-contributions-tax-relief)
+- <a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS Pension Annual Allowance Complete Guide</a>
+- <a href="/blog/gp-pension-contributions-tax-relief">GP Pension Contributions Tax Relief</a>
 
 <p>Regular reviews using professional calculation tools help maintain optimal strategies as your circumstances evolve.</p>

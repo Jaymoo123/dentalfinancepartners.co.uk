@@ -3,7 +3,7 @@ title: "Associate Dentist Tax Calculator: Calculate Your Tax Liability"
 slug: "associate-dentist-tax-calculator-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/associate-dentist-tax-calculator-uk"
 date: "2026-03-31"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Associate tax"
 metaTitle: "Associate Dentist Tax Calculator UK | 2026/27"
 metaDescription: "Earning £60k with £5k expenses? Expect ~£13,500 in tax and NI. Step-by-step calculation with income tax rates, NI, and deductions for 2026/27."
@@ -109,6 +109,6 @@ faqs:
 
 <p>While this <strong>associate dentist tax calculator</strong> guide covers the basics, every situation is different. Complex arrangements, multiple income streams, or significant expenses may require specialist advice.</p>
 
-<p>A qualified accountant can often save you more in tax than their fees cost. They'll also handle your <a href="/blog/associate-dentist-tax-self-assessment-uk">Self Assessment preparation</a> and ensure you're claiming all available deductions.</p>
+<p>A qualified accountant can often save you more in tax than their fees cost. They'll also handle your <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">Self Assessment preparation</a> and ensure you're claiming all available deductions.</p>
 
 <p>If you're considering practice ownership or have complex financial arrangements, professional advice becomes even more valuable.</p>

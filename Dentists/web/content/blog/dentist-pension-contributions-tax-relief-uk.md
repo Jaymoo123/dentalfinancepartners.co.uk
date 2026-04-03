@@ -3,7 +3,7 @@ title: "Dentist Pension Contributions: Tax Relief & Annual Allowance Guide"
 slug: "dentist-pension-contributions-tax-relief-uk"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/dentist-pension-contributions-tax-relief-uk"
 date: "2026-04-01"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Associate tax"
 metaTitle: "Dentist Pension Tax Relief & Annual Allowance 2026/27"
 metaDescription: "A £10,000 pension contribution saves £4,000 in tax for higher-rate payers. Annual allowance limits, NHS pension rules, and carry forward strategies."
@@ -101,7 +101,7 @@ faqs:
 <li><strong>Planning for retirement</strong> to ensure contributions align with your long-term goals</li>
 </ul>
 
-<p>Associates should integrate pension planning with their broader <a href="/blog/associate-dentist-tax-self-assessment-uk">tax planning approach</a>, particularly when managing fluctuating income levels.</p>
+<p>Associates should integrate pension planning with their broader <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">tax planning approach</a>, particularly when managing fluctuating income levels.</p>
 
 <h2>Getting Professional Advice</h2>
 

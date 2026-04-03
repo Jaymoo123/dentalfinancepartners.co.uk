@@ -3,7 +3,7 @@ title: "Associate to Practice Owner: Complete Financial Transition Guide for UK 
 slug: "associate-to-practice-owner-financial-transition-guide"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/associate-to-practice-owner-financial-transition-guide"
 date: "2026-03-31"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Buying a practice"
 metaTitle: "Associate to Practice Owner: Financial Transition Guide UK"
 metaDescription: "You'll need £80k–£120k deposit plus working capital for a typical £400k practice. Finance, due diligence, and tax changes when you become an owner."
@@ -39,7 +39,7 @@ faqs:
 
 <p>For a £400k practice, you'll typically need £80k-£120k in cash plus additional funds for legal fees, surveys, and working capital. Don't forget you'll also need personal savings to cover your living expenses during the transition period.</p>
 
-<p>Your credit history matters enormously. Lenders scrutinise personal credit scores, existing debts, and your track record as an associate. If you've been inconsistent with <a href="/blog/associate-dentist-tax-self-assessment-uk">Self Assessment submissions</a> or have outstanding tax issues, address these first.</p>
+<p>Your credit history matters enormously. Lenders scrutinise personal credit scores, existing debts, and your track record as an associate. If you've been inconsistent with <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">Self Assessment submissions</a> or have outstanding tax issues, address these first.</p>
 
 <h2>Understanding Practice Finances</h2>
 
@@ -117,7 +117,7 @@ faqs:
 <p>Consider how changes to the NHS contract or private patient numbers might affect your income stability. Diversification across different revenue streams typically provides more financial security.</p>
 
 <h2>Understanding the Financial Shift</h2>
-<p>As an associate, your financial life is relatively straightforward. You receive a salary or percentage of fees, handle basic <a href="/blog/associate-dentist-tax-self-assessment-uk">self-assessment requirements</a>, and your practice expenses are typically covered by your employer.</p>
+<p>As an associate, your financial life is relatively straightforward. You receive a salary or percentage of fees, handle basic <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">self-assessment requirements</a>, and your practice expenses are typically covered by your employer.</p>
 
 <p>Practice ownership changes everything. You become responsible for all practice expenses, staff wages, equipment costs, and regulatory compliance. Your income becomes dependent on practice performance rather than guaranteed earnings.</p>
 

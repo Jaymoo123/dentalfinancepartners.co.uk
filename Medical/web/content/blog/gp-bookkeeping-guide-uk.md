@@ -3,7 +3,7 @@ title: "GP Bookkeeping: Essential Guide for UK General Practice Partners"
 slug: "gp-bookkeeping-guide-uk"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-bookkeeping-guide-uk"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "GP Bookkeeping Guide 2026 | Medical Practice Accounts UK"
 metaDescription: "GP bookkeeping goes beyond standard accounting — partnership profit sharing, NHS income tracking, and expense categories explained for UK practices."
@@ -85,7 +85,7 @@ faqs:
 
 <p>Modern GP practices need robust bookkeeping software that handles partnership accounting. Generic small business packages often lack the functionality needed for complex profit sharing arrangements.</p>
 
-<p>Medical practice-specific [accounting software](/blog/gp-accounting-software) can handle GMS income allocation, partner drawings tracking, and the complex reporting requirements of GP partnerships. Integration with your clinical system can streamline income recording.</p>
+<p>Medical practice-specific <a href="/blog/gp-accounting-software">accounting software</a> can handle GMS income allocation, partner drawings tracking, and the complex reporting requirements of GP partnerships. Integration with your clinical system can streamline income recording.</p>
 
 <p>Many practices outsource their <strong>gp bookkeeping</strong> to specialist medical accountants. This ensures compliance while freeing up your time for patient care. When choosing an accountant, look for specific GP partnership experience.</p>
 
@@ -103,7 +103,7 @@ faqs:
 
 <h2>Planning Ahead: Future Considerations</h2>
 
-<p>The move to calendar year accounting affects how [GP partnerships report their income](/blog/gp-partnership-tax-complete-guide) and expenses. This basis period reform changes long-established practices around accounting dates and overlap profits.</p>
+<p>The move to calendar year accounting affects how <a href="/blog/gp-partnership-tax-complete-guide">GP partnerships report their income</a> and expenses. This basis period reform changes long-established practices around accounting dates and overlap profits.</p>
 
 <p>NHS funding changes regularly, with new enhanced services and contract modifications. Your bookkeeping system needs flexibility to handle these changes without major disruption.</p>
 
@@ -186,7 +186,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accounting: Essential Guide](/blog/gp-accounting-guide)
-- [GP Accounting Software Guide](/blog/gp-accounting-software)
+- <a href="/blog/gp-accounting-guide">GP Accounting: Essential Guide</a>
+- <a href="/blog/gp-accounting-software">GP Accounting Software Guide</a>
 
 <p>Professional medical accountants typically offer initial consultations to assess requirements and explain their approach. This meeting provides an opportunity to evaluate their medical sector knowledge and service quality before making commitments.</p>

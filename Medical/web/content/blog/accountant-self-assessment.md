@@ -3,7 +3,7 @@ title: "Accountant Self Assessment for UK Medical Professionals: Complete Guide"
 slug: "accountant-self-assessment"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/accountant-self-assessment"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "Self Assessment for Doctors 2026/27 | Medical Accountants UK"
 metaDescription: "Most GPs overpay tax by filing self assessment alone. When to get specialist help, typical costs, and how medical accountants save more than their fees."
@@ -40,7 +40,7 @@ faqs:
 <li>Property rental income from medical premises</li>
 </ul>
 
-<p>For example, a GP partner earning £120k from the practice plus £30k locum work faces complex basis period calculations, pension allowance tapering, and expense allocation between different income streams. See our [GP tax return guide](/blog/gp-tax-return) for a detailed walkthrough.</p>
+<p>For example, a GP partner earning £120k from the practice plus £30k locum work faces complex basis period calculations, pension allowance tapering, and expense allocation between different income streams. See our <a href="/blog/gp-tax-return">GP tax return guide</a> for a detailed walkthrough.</p>
 
 <h2>Benefits of Professional Accountant Self Assessment</h2>
 
@@ -110,7 +110,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [Locum Doctor Self Assessment Filing Guide](/blog/locum-doctor-self-assessment-filing-guide)
-- [GP Accountant Cost: What UK Professionals Pay](/blog/gp-accountant-cost)
+- <a href="/blog/locum-doctor-self-assessment-filing-guide">Locum Doctor Self Assessment Filing Guide</a>
+- <a href="/blog/gp-accountant-cost">GP Accountant Cost: What UK Professionals Pay</a>
 
 <p>For complex cases involving multiple income streams or pension allowance issues, professional support often pays for itself through better tax planning and peace of mind.</p>

@@ -2,7 +2,7 @@
 title: "Becoming a GP Partner: Complete Guide to Financial Implications"
 slug: "becoming-gp-partner-financial-implications"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "Becoming a GP Partner: Financial Implications"
 metaDescription: "Partnership changes your tax, pension, and income structure overnight. Capital costs, profit sharing, NI differences, and cash flow impacts explained."
@@ -39,7 +39,7 @@ faqs:
 
 <p>The tax changes when <strong>becoming a GP partner financial implications</strong> are substantial. You'll move from PAYE employment to self-employment, fundamentally changing how and when you pay tax.</p>
 
-<p>Partners pay tax on their profit share, not their drawings. Our [GP partnership tax guide](/blog/gp-partnership-tax-complete-guide) covers this in detail. If the practice makes £600k profit and you have a 20% share, you're taxed on £120k regardless of whether you actually received this amount during the year.</p>
+<p>Partners pay tax on their profit share, not their drawings. Our <a href="/blog/gp-partnership-tax-complete-guide">GP partnership tax guide</a> covers this in detail. If the practice makes £600k profit and you have a 20% share, you're taxed on £120k regardless of whether you actually received this amount during the year.</p>
 
 <p>Class 2 and Class 4 National Insurance replace your employment NI contributions. Class 4 NI is typically higher than employee rates — 9% on profits between £12,570 and £50,270, then 2% above this threshold for 2025/26.</p>
 
@@ -57,7 +57,7 @@ faqs:
 
 <p>Partnership can significantly impact your <a href="/nhs-pension">NHS pension</a> contributions and growth. As a partner, you'll typically contribute based on your profit share, which might be higher or lower than your previous salaried income.</p>
 
-<p>The annual allowance becomes more complex with fluctuating partnership income. High-earning partners face potential [annual allowance charges](/blog/nhs-pension-annual-allowance-complete-guide), particularly with the tapered allowance affecting those with threshold income over £200k.</p>
+<p>The annual allowance becomes more complex with fluctuating partnership income. High-earning partners face potential <a href="/blog/nhs-pension-annual-allowance-complete-guide">annual allowance charges</a>, particularly with the tapered allowance affecting those with threshold income over £200k.</p>
 
 <p>Partnership profits can trigger pension input periods that don't align with tax years, making annual allowance calculations more complex. Many partners benefit from specialist pension advice to optimize contributions and avoid unnecessary charges.</p>
 
@@ -101,7 +101,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Partner vs Salaried GP Tax Comparison](/blog/gp-partner-vs-salaried-gp-tax-comparison)
-- [GP Partnership Profit Sharing Tax Planning](/blog/gp-partnership-profit-sharing-tax-planning)
+- <a href="/blog/gp-partner-vs-salaried-gp-tax-comparison">GP Partner vs Salaried GP Tax Comparison</a>
+- <a href="/blog/gp-partnership-profit-sharing-tax-planning">GP Partnership Profit Sharing Tax Planning</a>
 
 <p>Many practices have established relationships with medical accountants who understand their specific arrangements. However, you'll still need independent advice on personal tax and pension optimization.</p>

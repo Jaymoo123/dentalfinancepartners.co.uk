@@ -3,7 +3,7 @@ title: "Medical Practice Incorporation Step by Step: Complete Guide for UK Docto
 slug: "medical-practice-incorporation-step-by-step"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/medical-practice-incorporation-step-by-step"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Medical Practice Incorporation: Step-by-Step Guide"
 metaDescription: "Incorporation can cut your tax bill — but NHS pension loss may outweigh savings. Costs, process, and what UK doctors need to know before incorporating."
@@ -43,7 +43,7 @@ faqs:
 
 <p>Transfer business assets like equipment, furniture, and goodwill to the company. This can be done at market value or book value, with different tax implications.</p>
 
-<p>Consider the capital gains tax implications of transferring assets, particularly if significant goodwill value exists. Our guide on [GP limited company tax benefits and drawbacks](/blog/gp-limited-company-tax-benefits-drawbacks) covers these trade-offs in detail.</p>
+<p>Consider the capital gains tax implications of transferring assets, particularly if significant goodwill value exists. Our guide on <a href="/blog/gp-limited-company-tax-benefits-drawbacks">GP limited company tax benefits and drawbacks</a> covers these trade-offs in detail.</p>
 
 <h3>Contract Assignment</h3>
 
@@ -136,7 +136,7 @@ faqs:
 
 <p>Don't overlook the impact on your <a href="/nhs-pension">NHS pension</a> if you have both NHS and private income. Incorporated private practice income may affect your pension contributions and benefits.</p>
 
-<p>Ensure you understand [IR35 implications](/blog/locum-doctor-ir35-what-you-need-to-know) if you provide services through the company to other organizations, particularly NHS trusts.</p>
+<p>Ensure you understand <a href="/blog/locum-doctor-ir35-what-you-need-to-know">IR35 implications</a> if you provide services through the company to other organizations, particularly NHS trusts.</p>
 
 <h2>Ongoing Compliance Requirements</h2>
 <p>Incorporated practices face additional compliance obligations. You must file annual accounts and confirmation statements with Companies House, plus corporation tax returns with HMRC.</p>
@@ -230,7 +230,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Corporation Tax: Complete Guide](/blog/gp-corporation-tax)
-- [GP Limited Company Tax Benefits and Drawbacks](/blog/gp-limited-company-tax-benefits-drawbacks)
+- <a href="/blog/gp-corporation-tax">GP Corporation Tax: Complete Guide</a>
+- <a href="/blog/gp-limited-company-tax-benefits-drawbacks">GP Limited Company Tax Benefits and Drawbacks</a>
 
 <p>Consider speaking to a specialist medical accountant who understands the unique challenges facing UK medical professionals before making this important business decision.</p>

@@ -3,7 +3,7 @@ title: "GP Partnership Tax: Complete Guide for 2026/27"
 slug: "gp-partnership-tax-complete-guide"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-partnership-tax-complete-guide"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Tax & Accounts"
 metaTitle: "GP Partnership Tax Guide 2026/27 | Medical Accountants UK"
 metaDescription: "GP partnership profits are taxed differently from salary. Profit sharing, basis period reform, expenses, and NHS pension impacts for 2026/27."
@@ -74,11 +74,11 @@ faqs:
 
 <h3>Incorporation Consideration</h3>
 
-<p>Some GP partnerships consider [incorporating their practice](/blog/medical-practice-incorporation-step-by-step) or establishing service companies for private work. This requires careful analysis of tax implications, NHS contract requirements, and ongoing compliance costs.</p>
+<p>Some GP partnerships consider <a href="/blog/medical-practice-incorporation-step-by-step">incorporating their practice</a> or establishing service companies for private work. This requires careful analysis of tax implications, NHS contract requirements, and ongoing compliance costs.</p>
 
 <h2>NHS Pension Implications for Partnership Profits</h2>
 
-<p>Your NHS pension contribution is typically calculated on your notional salary, not your full profit share. However, partnership profits can trigger the [NHS pension annual allowance](/blog/nhs-pension-annual-allowance-complete-guide) restrictions.</p>
+<p>Your NHS pension contribution is typically calculated on your notional salary, not your full profit share. However, partnership profits can trigger the <a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS pension annual allowance</a> restrictions.</p>
 
 <p>The standard annual allowance is £60,000 for 2025/26, but this tapers for high earners. If your threshold income (including partnership profits) exceeds £200,000 and adjusted income exceeds £260,000, your allowance reduces by £1 for every £2 of excess income.</p>
 
@@ -137,5 +137,5 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Partner vs Salaried GP Tax Comparison](/blog/gp-partner-vs-salaried-gp-tax-comparison)
-- [GP Tax Deductions Complete List 2026](/blog/gp-tax-deductions-complete-list-2026)
+- <a href="/blog/gp-partner-vs-salaried-gp-tax-comparison">GP Partner vs Salaried GP Tax Comparison</a>
+- <a href="/blog/gp-tax-deductions-complete-list-2026">GP Tax Deductions Complete List 2026</a>

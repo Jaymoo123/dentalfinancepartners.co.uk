@@ -2,7 +2,7 @@
 title: "Law Firm Accounting Software: Essential Guide for UK Solicitors"
 slug: "law-firm-accounting-software-guide-uk-solicitors"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Law Firm Accounting Software: UK Solicitor Guide 2026"
 metaDescription: "SRA-compliant software must handle client money segregation, trust accounting, and three-way reconciliations. Features, costs, and top picks compared."

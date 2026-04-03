@@ -3,7 +3,7 @@ title: "Incorporation Timing: When is the Right Time to Incorporate Your Propert
 slug: "incorporation-timing-when-to-incorporate-property-portfolio"
 canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio"
 date: "2026-03-29"
-author: "Property Tax Partners"
+author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "When to Incorporate Property Portfolio | Timing"
 metaDescription: "Higher-rate taxpayers with significant mortgage debt benefit most from incorporating. Tax thresholds, Section 24 triggers, and timing factors."

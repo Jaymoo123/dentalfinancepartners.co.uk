@@ -3,7 +3,7 @@ title: "Student Loan Repayments for Dentists: How They Are Calculated"
 slug: "student-loan-repayments-dentists-calculation"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/student-loan-repayments-dentists-calculation"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Associate tax"
 metaTitle: "Student Loan Repayments for Dentists: Calculation Guide"
 metaDescription: "You pay 9% of income above the threshold — but which plan applies to you? Plan 1, Plan 2, and postgraduate loan calculations for UK dentists."
@@ -106,7 +106,7 @@ faqs:
 
 <h3>Multiple Income Sources</h3>
 
-<p>Many dentists work across multiple practices or combine employed and self-employed work. HMRC requires you to report all income for student loan calculation purposes. Your <a href="/blog/associate-dentist-tax-self-assessment-uk">Self Assessment</a> should include:</p>
+<p>Many dentists work across multiple practices or combine employed and self-employed work. HMRC requires you to report all income for student loan calculation purposes. Your <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">Self Assessment</a> should include:</p>
 
 <ul>
 <li>PAYE income from employed positions</li>
@@ -182,7 +182,7 @@ faqs:
 <li>Any other taxable income</li>
 </ul>
 
-<p>If you're completing your own <a href="/blog/associate-dentist-tax-self-assessment-uk">Self Assessment as an associate dentist</a>, ensure you've included all income sources when calculating your student loan liability.</p>
+<p>If you're completing your own <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">Self Assessment as an associate dentist</a>, ensure you've included all income sources when calculating your student loan liability.</p>
 
 <h2>Should You Pay Off Student Loans Early?</h2>
 <p>This depends entirely on your individual circumstances. Consider these factors:</p>

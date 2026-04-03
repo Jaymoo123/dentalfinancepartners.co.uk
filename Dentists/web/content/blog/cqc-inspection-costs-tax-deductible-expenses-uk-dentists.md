@@ -3,7 +3,7 @@ title: "CQC Inspection Costs: Can UK Dentists Claim Them as Tax-Deductible Expen
 slug: "cqc-inspection-costs-tax-deductible-expenses-uk-dentists"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/cqc-inspection-costs-tax-deductible-expenses-uk-dentists"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "VAT & compliance"
 metaTitle: "CQC Inspection Costs: Tax Deductible for UK Dentists?"
 metaDescription: "Can UK dentists claim CQC inspection costs and compliance fees as tax-deductible expenses? Get clear guidance on what's allowable and how to claim."
@@ -73,7 +73,7 @@ faqs:
 
 <p>Associates typically do not bear CQC costs directly, as these are practice-level expenses. However, if an associate contributes to CQC costs through expense-sharing arrangements, they may be able to claim their portion. This should be clearly documented in your associate agreement.</p>
 
-<p>For more guidance on associate tax matters, see our guide on <a href="/blog/associate-dentist-tax-self-assessment-uk">Self Assessment for associate dentists</a>.</p>
+<p>For more guidance on associate tax matters, see our guide on <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">Self Assessment for associate dentists</a>.</p>
 
 <h2>VAT Considerations</h2>
 

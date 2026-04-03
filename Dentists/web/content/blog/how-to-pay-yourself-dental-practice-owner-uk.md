@@ -2,7 +2,7 @@
 title: "How to Pay Yourself as a Dental Practice Owner: Salary vs Dividend Guide"
 slug: "how-to-pay-yourself-dental-practice-owner-uk"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Practice finance"
 metaTitle: "How to Pay Yourself as a Dental Practice Owner UK"
 metaDescription: "Salary of £12,570 plus dividends is the standard approach — but the optimal split depends on your profits. Tax rates, NI, and pension strategies."

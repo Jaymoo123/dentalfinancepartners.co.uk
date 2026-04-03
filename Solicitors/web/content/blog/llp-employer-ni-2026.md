@@ -2,7 +2,7 @@
 title: "LLP Employer NI Changes 2026: What Law Firms Need to Know"
 slug: "llp-employer-ni-2026"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "Partnership & LLP Accounting"
 metaTitle: "LLP Employer NI 2026: Tax Changes for UK Law Firms"
 metaDescription: "From April 2026, some LLP members may face employer NI at 13.8% on profit shares. Who's affected, estimated costs, and restructuring options for law firms."

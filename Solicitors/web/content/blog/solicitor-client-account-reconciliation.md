@@ -3,7 +3,7 @@ title: "Solicitor Client Account Reconciliation: Complete Guide for UK Law Firms
 slug: "solicitor-client-account-reconciliation"
 canonical: "https://www.accountsforlawyers.co.uk/blog/sra-compliance-trust-accounting/solicitor-client-account-reconciliation"
 date: "2026-04-01"
-author: "Accounts for Lawyers"
+author: "Accounts for Lawyers Editorial Team"
 category: "SRA Compliance & Trust Accounting"
 metaTitle: "Solicitor Client Account Reconciliation Guide | UK Law Firms"
 metaDescription: "SRA rules require reconciliation at least every five weeks. Step-by-step process, three-way reconciliation method, and how to resolve discrepancies."

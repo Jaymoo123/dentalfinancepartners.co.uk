@@ -3,7 +3,7 @@ title: "GP Accountant Liverpool: Specialist Tax and Financial Services for Medic
 slug: "gp-accountant-liverpool"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-accountant-liverpool"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Liverpool | Medical Accountants UK"
 metaDescription: "Liverpool GP accountant for NHS partners, locums, and consultants. Tax planning, NHS pension advice, and practice accounts across Merseyside."
@@ -117,7 +117,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
-- [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
+- <a href="/blog/gp-accountant-services-complete-guide">GP Accountant Services: Complete Guide</a>
+- <a href="/blog/gp-accountant-cost">GP Accountant Cost: What UK Medical Professionals Pay</a>
 
 <p>The city's medical professionals increasingly recognize the value of working with accountants who understand their unique challenges and can provide tailored solutions.</p>

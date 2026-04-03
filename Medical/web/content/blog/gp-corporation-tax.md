@@ -3,7 +3,7 @@ title: "GP Corporation Tax: Complete Guide for UK Medical Professionals"
 slug: "gp-corporation-tax"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-corporation-tax"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "GP Corporation Tax 2026/27 | Medical Accountants UK"
 metaDescription: "Corporation tax rates range from 19% to 25% depending on profit level. Rates, reliefs, and extraction strategies for incorporated GP practices."
@@ -31,7 +31,7 @@ faqs:
 
 <p><strong>GP corporation tax</strong> affects thousands of medical professionals operating through limited companies in the UK. Whether you're considering incorporation or already running an incorporated practice, understanding how corporation tax applies to medical services is essential for effective tax planning.</p>
 
-<p>The decision to [incorporate your GP practice](/blog/medical-practice-incorporation-step-by-step) fundamentally changes your tax obligations. Instead of paying income tax and National Insurance as a sole trader or partnership, your practice pays GP corporation tax on profits, while you pay personal tax on salary and dividends.</p>
+<p>The decision to <a href="/blog/medical-practice-incorporation-step-by-step">incorporate your GP practice</a> fundamentally changes your tax obligations. Instead of paying income tax and National Insurance as a sole trader or partnership, your practice pays GP corporation tax on profits, while you pay personal tax on salary and dividends.</p>
 
 <h2>Common GP Corporation Tax Mistakes</h2>
 
@@ -155,7 +155,7 @@ faqs:
 <p>A locum doctor earning £200,000 annually through their company might benefit from paying themselves a salary up to the primary threshold (£12,570 in 2024/25) plus employer's NIC optimization, then extracting remaining profits as dividends to minimize overall tax burden.</p>
 
 <h2>IR35 and Corporation Tax Implications</h2>
-<p>Locum doctors operating through personal service companies face complex [IR35 assessments](/blog/locum-doctor-ir35-what-you-need-to-know) that directly impact corporation tax liabilities. If your arrangements fall within IR35, corporation tax advantages may be severely limited.</p>
+<p>Locum doctors operating through personal service companies face complex <a href="/blog/locum-doctor-ir35-what-you-need-to-know">IR35 assessments</a> that directly impact corporation tax liabilities. If your arrangements fall within IR35, corporation tax advantages may be severely limited.</p>
 
 <p>Specialist accountants help structure locum arrangements to maintain genuine business status while ensuring corporation tax efficiency remains viable. This includes contract reviews, business substance assessments, and ongoing compliance monitoring.</p>
 
@@ -179,8 +179,8 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Limited Company Tax Benefits and Drawbacks](/blog/gp-limited-company-tax-benefits-drawbacks)
-- [Medical Practice Incorporation Step by Step](/blog/medical-practice-incorporation-step-by-step)
+- <a href="/blog/gp-limited-company-tax-benefits-drawbacks">GP Limited Company Tax Benefits and Drawbacks</a>
+- <a href="/blog/medical-practice-incorporation-step-by-step">Medical Practice Incorporation Step by Step</a>
 
 <p>Your ideal accountant should understand NHS pension implications, medical expense categories, IR35 assessments, and the interaction between personal and corporate tax planning. They should also provide proactive advice rather than just compliance services.</p>
 

@@ -2,7 +2,7 @@
 title: "Management Accounts for Dental Practices: Essential Metrics to Track"
 slug: "dental-practice-management-accounts-metrics-tracking"
 date: "2026-03-28"
-author: "Dental Finance Partners"
+author: "Dental Finance Partners Editorial Team"
 category: "Practice accounting"
 metaTitle: "Dental Practice Management Accounts: Key Metrics to Track"
 metaDescription: "Revenue per clinical hour, gross margin, and cash collection rate — the monthly KPIs that drive dental practice performance and early-warning signals."

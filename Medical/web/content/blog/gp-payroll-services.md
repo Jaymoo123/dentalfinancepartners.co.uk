@@ -3,7 +3,7 @@ title: "GP Payroll Services: Complete Guide for Medical Practices"
 slug: "gp-payroll-services"
 canonical: "https://www.medicalaccountantsuk.co.uk/blog/gp-payroll-services"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Practice Management"
 metaTitle: "GP Payroll Services | Medical Practice Payroll Solutions UK"
 metaDescription: "GP practices face unique payroll needs — NHS pensions, mixed contracts, and RTI compliance. PAYE, auto-enrolment, and medical-sector requirements covered."
@@ -44,7 +44,7 @@ faqs:
 <li>Year-end reporting and P11D benefit reporting</li>
 </ul>
 
-<p>Specialist providers understand the complexities of medical practice employment. They handle varying contract types, from full-time salaried GPs to part-time practice nurses and administrative staff. For broader practice financial management, see our [GP accounting guide](/blog/gp-accounting-guide).</p>
+<p>Specialist providers understand the complexities of medical practice employment. They handle varying contract types, from full-time salaried GPs to part-time practice nurses and administrative staff. For broader practice financial management, see our <a href="/blog/gp-accounting-guide">GP accounting guide</a>.</p>
 
 <h2>NHS Pension Scheme Integration</h2>
 
@@ -190,8 +190,8 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Bookkeeping: Essential Guide](/blog/gp-bookkeeping-guide-uk)
-- [GP Accounting Software Guide](/blog/gp-accounting-software)
+- <a href="/blog/gp-bookkeeping-guide-uk">GP Bookkeeping: Essential Guide</a>
+- <a href="/blog/gp-accounting-software">GP Accounting Software Guide</a>
 
 <p>The best medical payroll services integrate with your practice's broader financial management, providing insights that support strategic decision-making for partners and practice development.</p>
 

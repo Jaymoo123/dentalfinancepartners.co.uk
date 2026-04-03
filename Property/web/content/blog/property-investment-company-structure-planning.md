@@ -3,7 +3,7 @@ title: "Property Investment Company Structure Planning: A Complete Guide for UK 
 slug: "property-investment-company-structure-planning"
 canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/property-investment-company-structure-planning"
 date: "2026-04-01"
-author: "Property Tax Partners"
+author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Property Investment Company Structure Planning Guide | PTP"
 metaDescription: "SPVs, holding companies, and hybrid structures each suit different portfolio sizes. Tax implications and timing for UK property investors."

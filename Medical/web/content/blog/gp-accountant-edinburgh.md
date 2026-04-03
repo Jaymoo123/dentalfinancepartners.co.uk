@@ -2,7 +2,7 @@
 title: "GP Accountant Edinburgh: Specialist Tax and Financial Services for Medical Professionals"
 slug: "gp-accountant-edinburgh"
 date: "2026-04-01"
-author: "Medical Accounts"
+author: "Medical Accountants UK Editorial Team"
 category: "GP Accountant Services"
 metaTitle: "GP Accountant Edinburgh | Specialist Medical Tax Services"
 metaDescription: "Edinburgh GP accountant for partners, salaried GPs, and locums. Scottish tax rates, NHS pension planning, and practice accounts across Scotland."
@@ -95,7 +95,7 @@ faqs:
 
 <h2>Related Reading</h2>
 
-- [GP Accountant Services: Complete Guide](/blog/gp-accountant-services-complete-guide)
-- [GP Accountant Cost: What UK Medical Professionals Pay](/blog/gp-accountant-cost)
+- <a href="/blog/gp-accountant-services-complete-guide">GP Accountant Services: Complete Guide</a>
+- <a href="/blog/gp-accountant-cost">GP Accountant Cost: What UK Medical Professionals Pay</a>
 
 <p>For complex situations involving multiple income streams, pension planning, or practice ownership, specialist medical accounting advice is essential rather than optional.</p>

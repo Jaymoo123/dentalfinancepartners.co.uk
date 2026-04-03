@@ -27,7 +27,7 @@ class BlogGenerationAgent:
     def __init__(self, niche: str):
         self.niche = niche
         self.niche_config = NICHE_CONFIG[niche]
-        self.niche_path = os.path.join(PROJECT_ROOT, niche)
+        self.niche_path = os.path.join(PROJECT_ROOT, niche, "pipeline")
         
         # Initialize utilities
         self.supabase = SupabaseClient(SUPABASE_URL, SUPABASE_KEY)
@@ -107,8 +107,8 @@ class BlogGenerationAgent:
             
             # 6. POST-GENERATION: Quality checks
             content_path = os.path.join(
-                self.niche_path,
-                "web/content/blog",
+                self.niche_path, "..",
+                "web", "content", "blog",
                 f"{slug}.md"
             )
             
@@ -282,7 +282,7 @@ class BlogGenerationAgent:
 
 async def main():
     parser = argparse.ArgumentParser(description="Blog Generation Agent")
-    parser.add_argument("--niche", required=True, choices=["Dentists", "Property"])
+    parser.add_argument("--niche", required=True, choices=["Dentists", "Property", "Medical", "Solicitors"])
     parser.add_argument("--max-posts", type=int, default=1)
     args = parser.parse_args()
     

@@ -3,7 +3,7 @@ title: "Section 24 Mortgage Interest Restriction: Complete Guide for UK Landlord
 slug: "section-24-mortgage-interest-restriction-uk-landlords"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords"
 date: "2026-03-29"
-author: "Property Tax Partners"
+author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
 metaTitle: "Section 24 Mortgage Interest Restriction | UK Guide"
 metaDescription: "Section 24 restricts mortgage interest relief to 20% for individual landlords. Calculate your impact and explore proven solutions."
