@@ -6,18 +6,18 @@ import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Contact Property Accountants UK | Book Free Consultation",
+  title: `Contact ${siteConfig.name} | Book Free Consultation`,
   description: `Contact ${siteConfig.name} for landlord accounting enquiries. Section 24, MTD, incorporation, portfolio management. 24-hour response. Phone, email, or form.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
-    title: "Contact Property Accountants UK",
+    title: `Contact ${siteConfig.name}`,
     description: "Book free consultation for landlord accounting. 24-hour response time.",
     url: `${siteConfig.url}/contact`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Property Accountants UK",
+    title: `Contact ${siteConfig.name}`,
     description: "Book free consultation for landlord accounting. 24-hour response time.",
   },
 };
@@ -54,37 +54,10 @@ export default function ContactPage() {
           <div className="grid gap-8 sm:gap-12 lg:grid-cols-[1fr_1.5fr] lg:gap-16">
             <div className="space-y-6 sm:space-y-8">
               <div className="border-l-4 border-emerald-600 bg-slate-50 p-6 sm:p-8">
-                <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Direct details</h2>
-                <dl className="space-y-6 text-base">
-                  <div>
-                    <dt className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">Email</dt>
-                    <dd>
-                      <a
-                        className="text-lg font-semibold text-emerald-700 underline underline-offset-2 hover:text-emerald-600 transition-colors"
-                        href={`mailto:${siteConfig.contact.email}`}
-                      >
-                        {siteConfig.contact.email}
-                      </a>
-                    </dd>
-                  </div>
-                  <div>
-                    <dt className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">Phone</dt>
-                    <dd>
-                      <a
-                        className="text-lg font-semibold text-emerald-700 underline underline-offset-2 hover:text-emerald-600 transition-colors"
-                        href={`tel:${siteConfig.contact.phone.replace(/\s/g, "")}`}
-                      >
-                        {siteConfig.contact.phone}
-                      </a>
-                    </dd>
-                  </div>
-                  <div>
-                    <dt className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">Response time</dt>
-                    <dd className="text-base text-slate-700">
-                      Within 24 hours, usually same day
-                    </dd>
-                  </div>
-                </dl>
+                <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Get in touch</h2>
+                <p className="text-base text-slate-700 leading-relaxed">
+                  Fill in the form and we&apos;ll get back to you within 24 hours, usually same day.
+                </p>
               </div>
 
               <div className="bg-slate-900 p-6 sm:p-8 text-white">

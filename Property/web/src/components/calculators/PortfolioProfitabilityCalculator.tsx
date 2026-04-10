@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 interface Property {
   id: string;
@@ -11,16 +11,17 @@ interface Property {
 }
 
 export function PortfolioProfitabilityCalculator() {
+  const nextId = useRef(3);
   const [properties, setProperties] = useState<Property[]>([
     { id: "1", name: "Property 1", rentalIncome: 18000, mortgageInterest: 7200, otherExpenses: 3000 },
     { id: "2", name: "Property 2", rentalIncome: 24000, mortgageInterest: 9600, otherExpenses: 4000 },
   ]);
 
   const addProperty = () => {
-    const newId = String(properties.length + 1);
+    const newId = String(nextId.current++);
     setProperties([
       ...properties,
-      { id: newId, name: `Property ${newId}`, rentalIncome: 18000, mortgageInterest: 7200, otherExpenses: 3000 },
+      { id: newId, name: `Property ${properties.length + 1}`, rentalIncome: 18000, mortgageInterest: 7200, otherExpenses: 3000 },
     ]);
   };
 

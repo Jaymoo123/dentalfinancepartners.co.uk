@@ -1,130 +1,116 @@
 ---
-title: "Furnished Holiday Let Tax: Rules and Exemptions for UK Landlords"
+title: "Furnished Holiday Let Tax: Rules, Abolition and What Happens Now"
 slug: "furnished-holiday-let-tax-rules-exemptions"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/furnished-holiday-let-tax-rules-exemptions"
 date: "2026-04-01"
 author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
-metaTitle: "Furnished Holiday Let Tax Rules & Exemptions | UK Guide 2026"
-metaDescription: "FHLs offer full mortgage interest relief and capital allowances — unlike standard BTL. Qualification rules and 2026/27 tax benefits explained."
+metaTitle: "Furnished Holiday Let Tax Rules Abolished | What Now 2026"
+metaDescription: "The FHL tax regime was abolished from April 2025. Holiday lets now face Section 24 restrictions like standard BTL. What this means for UK landlords."
 altText: "UK holiday cottage with tax documents showing furnished holiday let regulations"
 image: ""
-h1: "Furnished Holiday Let Tax: Rules and Exemptions for UK Landlords"
-summary: "Furnished Holiday Lets offer significant tax advantages over standard buy-to-let properties, including mortgage interest relief and CGT benefits. However, strict qualification rules apply."
+h1: "Furnished Holiday Let Tax: Rules, Abolition and What Happens Now"
+summary: "The Furnished Holiday Lettings tax regime was abolished from 6 April 2025. Holiday let income is now taxed like standard rental income, with Section 24 restrictions applying. Here's what landlords need to know."
 schema: ""
 faqs:
-  - question: "What is the difference between furnished holiday let tax and normal rental property tax?"
-    answer: "Furnished holiday lets are treated as trading businesses for tax purposes, allowing full mortgage interest deduction, capital allowances on furniture, and access to business reliefs like Business Asset Disposal Relief for CGT. Standard rental properties face Section 24 mortgage interest restrictions and don't qualify for business tax reliefs."
-  - question: "How many days must a property be let to qualify as a furnished holiday let?"
-    answer: "The property must be available for commercial letting for at least 210 days per year and actually let for at least 105 days. Additionally, no single occupier can stay for more than 31 consecutive days during any 7-month period within the tax year."
-  - question: "Can I use my furnished holiday let for personal holidays?"
-    answer: "Yes, but personal use counts towards the 31-day same occupier limit. Extended personal use can disqualify the property from FHL treatment. You must maintain detailed occupancy records to prove compliance with all qualification criteria."
-  - question: "What happens if my furnished holiday let doesn't meet the qualification criteria?"
-    answer: "The property loses FHL tax treatment and becomes subject to standard rental property rules, including Section 24 mortgage interest restrictions. However, a two-year grace period applies if you previously qualified and fail to meet requirements due to circumstances beyond your control."
+  - question: "When was the Furnished Holiday Let tax regime abolished?"
+    answer: "The FHL regime was abolished from 6 April 2025 for Income Tax and CGT, and 1 April 2025 for Corporation Tax, under the Finance Act 2025. From the 2025/26 tax year onwards, holiday let income is taxed identically to standard rental property income."
+  - question: "Can I still claim full mortgage interest relief on a holiday let?"
+    answer: "No. Since the FHL regime was abolished in April 2025, Section 24 mortgage interest restrictions now apply to holiday let income. Individual landlords receive only a 20% basic-rate tax credit on finance costs, the same as standard buy-to-let properties."
+  - question: "What about capital allowances and Business Asset Disposal Relief for holiday lets?"
+    answer: "These are no longer available for new expenditure or disposals from April 2025. Existing capital allowance pools can continue to be written down, but no new qualifying expenditure can be added. Business Asset Disposal Relief, rollover relief, and gift relief no longer apply to holiday let properties."
+  - question: "What should former FHL landlords do now?"
+    answer: "Review your tax position with a specialist property accountant. Consider whether incorporation into a limited company (which is not affected by Section 24) makes financial sense. Also review your expense claims, as Replacement Domestic Items Relief is still available for furnished lettings."
 ---
 
-<p>Furnished holiday let tax rules offer some of the most generous tax treatments available to UK property investors. Unlike standard buy-to-let properties, furnished holiday lets (FHLs) are treated as trading businesses for tax purposes, unlocking significant advantages that can substantially reduce your tax liability.</p>
+<p><strong>Important update:</strong> The Furnished Holiday Lettings (FHL) tax regime was <strong>abolished from 6 April 2025</strong> (1 April 2025 for Corporation Tax) under the Finance Act 2025. The tax advantages described in older guides — full mortgage interest relief, capital allowances, and CGT business reliefs — <strong>no longer apply</strong>. This guide explains what has changed and what holiday let landlords need to do now.</p>
 
-<p>The key difference lies in how HMRC classifies these properties. While regular rental income is treated as property income, furnished holiday let tax benefits stem from their classification as a trade, making them eligible for reliefs typically reserved for businesses.</p>
+<h2>What Was the FHL Tax Regime?</h2>
 
-<h2>Furnished Holiday Let Qualification Criteria</h2>
+<p>Until April 2025, furnished holiday lets that met strict HMRC criteria were treated as a trade rather than a property investment. This classification gave FHL landlords access to tax benefits unavailable to standard buy-to-let investors, including full mortgage interest deduction (bypassing <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24</a>), capital allowances on furniture and equipment, Business Asset Disposal Relief at 10% CGT, rollover relief, and pension contribution relief based on FHL profits.</p>
 
-<p>To qualify for furnished holiday let tax treatment, your property must meet strict criteria during the tax year. These rules determine whether you can access the generous tax benefits available.</p>
+<p>To qualify, properties needed to be available for commercial letting for at least 210 days per year, actually let for at least 105 days, and not occupied by the same tenant for more than 31 consecutive days in any 7-month period.</p>
 
-<p><strong>Availability Requirements:</strong></p>
-<ul>
-<li>Available for commercial letting for at least 210 days per year</li>
-<li>Actually let for at least 105 days per year</li>
-<li>Not occupied by the same tenant for more than 31 consecutive days during any 7-month period</li>
-</ul>
+<h2>What Changed from April 2025</h2>
 
-<p>The property must be furnished to a standard that guests would expect for short-term holiday accommodation. Basic furnishing isn't enough – you need to provide everything guests need for a comfortable stay, including beds, seating, kitchen equipment, and household items.</p>
-
-<p><strong>Location Requirements:</strong></p>
-<p>The property must be located in the UK or European Economic Area (EEA). Properties outside these areas cannot qualify for furnished holiday let tax treatment, regardless of how they're operated.</p>
-
-<h2>Tax Benefits of Furnished Holiday Lets</h2>
-
-<p>The furnished holiday let tax advantages are substantial and can significantly improve your investment returns compared to standard buy-to-let properties.</p>
-
-<h3>Mortgage Interest Relief</h3>
-
-<p>Unlike standard buy-to-let properties affected by Section 24 restrictions, FHLs can still deduct mortgage interest as a business expense. This means you can offset 100% of your mortgage interest against rental income, rather than receiving only the basic rate tax credit available to regular landlords.</p>
-
-<p>For a higher rate taxpayer with £20,000 annual mortgage interest, this difference could save £4,000 per year (£20,000 × 20% tax relief difference).</p>
-
-<h3>Capital Gains Tax Advantages</h3>
-
-<p>Furnished holiday lets qualify for several CGT reliefs unavailable to standard rental properties:</p>
+<p>The Finance Act 2025 removed all four key FHL advantages:</p>
 
 <ul>
-<li><strong>Business Asset Disposal Relief:</strong> 10% CGT rate on gains up to £1 million (subject to qualifying conditions)</li>
-<li><strong>Rollover Relief:</strong> Defer CGT by reinvesting proceeds into another qualifying business asset</li>
-<li><strong>Gift Relief:</strong> Potential relief when gifting the property to family members</li>
+<li><strong>Mortgage interest:</strong> Now restricted to a 20% basic-rate tax credit under Section 24, the same as standard buy-to-let properties. Higher and additional-rate taxpayers lose significant relief.</li>
+<li><strong>Capital allowances:</strong> No new qualifying expenditure can be claimed. Only Replacement Domestic Items Relief remains available for like-for-like replacements of furniture and appliances.</li>
+<li><strong>CGT business reliefs:</strong> Business Asset Disposal Relief (10% rate), rollover relief, and gift relief no longer apply to holiday let disposals. Standard residential property CGT rates of 18% and 24% now apply.</li>
+<li><strong>Pension contributions:</strong> Holiday let income no longer counts as "relevant UK earnings" for pension contribution purposes.</li>
 </ul>
 
-<h3>Capital Allowances</h3>
+<h2>Transitional Provisions</h2>
 
-<p>You can claim <a href="/blog/section-24-and-tax-relief/landlord-capital-allowances-tax-relief">capital allowances</a> on furniture, equipment, and fixtures. The Annual Investment Allowance allows you to deduct up to £1 million of qualifying expenditure in the year of purchase, providing immediate tax relief rather than spreading deductions over several years.</p>
+<p>Landlords with existing FHL capital allowance pools can continue to write them down under the standard rules. However, no new expenditure qualifies for capital allowances from April 2025 onwards. Any losses carried forward under the old FHL rules can still be set against future income from the same property, but they are now treated as property income losses rather than trading losses.</p>
 
-<h2>Common Exemptions and Pitfalls</h2>
+<p>If you disposed of an FHL property before 6 April 2025 but haven't yet filed your return, the old rules still apply to that disposal. Any CGT business reliefs you were entitled to under the previous regime remain valid for pre-abolition transactions.</p>
 
-<p>Several circumstances can prevent properties from qualifying for furnished holiday let tax treatment, even if they appear to meet the basic criteria.</p>
+<h2>Impact on Holiday Let Landlords</h2>
 
-<h3>The Averaging Provision</h3>
+<h3>Section 24 Now Applies</h3>
 
-<p>If you own multiple holiday lets, you can use averaging to meet the 105-day letting requirement. This allows underperforming properties to qualify if your portfolio average exceeds 105 days. However, each property must still be available for at least 210 days and meet the 31-day occupation limit.</p>
+<p>This is the single biggest change. Higher-rate taxpayers with significant mortgage finance on holiday lets will see a substantial increase in their effective tax rate. For a 40% taxpayer with £30,000 of mortgage interest, the additional annual tax cost is £6,000 (the difference between full deduction at 40% and the 20% basic-rate credit).</p>
 
-<h3>Period of Grace Rules</h3>
+<h3>CGT on Disposal</h3>
 
-<p>Properties that previously qualified as FHLs get a two-year grace period if they fail to meet the letting requirements due to circumstances beyond your control. This protects your tax position during temporary market downturns or major repairs.</p>
+<p>Selling a holiday let property now attracts standard residential property CGT rates. The loss of Business Asset Disposal Relief means gains that would have been taxed at 10% are now taxed at 18% (basic rate) or 24% (higher rate). On a £200,000 gain, this represents an additional tax liability of up to £28,000.</p>
 
-<h3>Mixed Use Properties</h3>
-
-<p>If you use the property for personal holidays, this counts towards the 31-day same occupier limit. Many landlords accidentally disqualify their properties by taking extended personal breaks. Keep detailed records of all occupancy to ensure compliance.</p>
-
-<h2>Record Keeping and Compliance</h2>
-
-<p>Maintaining accurate records is crucial for furnished holiday let tax compliance. HMRC may request evidence that your property meets all qualifying criteria, particularly the letting and availability requirements.</p>
-
-<p><strong>Essential Records:</strong></p>
+<h3>Reduced Expense Claims</h3>
+<h3>Reduced Expense Claims</h3>
+<p>Without capital allowances, holiday let landlords can only claim <a href="/blog/section-24-and-tax-relief/landlord-capital-allowances-tax-relief">Replacement Domestic Items Relief</a> for like-for-like replacement of furnishings. The Annual Investment Allowance no longer applies, removing the ability to claim immediate tax relief on furniture and equipment purchases.</p>
+<h4>Allowable Expenses for Holiday Lets (Post-April 2025)</h4>
+<p>You can deduct the following costs from your rental income to calculate your taxable profit, just as with a standard buy-to-let property:</p>
 <ul>
-<li>Booking calendar showing availability periods</li>
-<li>Guest records with arrival and departure dates</li>
-<li>Marketing materials proving commercial availability</li>
-<li>Income and expense records</li>
-<li>Capital expenditure receipts for allowances claims</li>
+<li><strong>Finance costs:</strong> Mortgage interest (subject to Section 24 tax credit), loan interest for property improvements, and mortgage arrangement fees.</li>
+<li><strong>Property running costs:</strong> Council Tax, utility bills (gas, electricity, water), buildings and contents insurance, ground rent, and service charges.</li>
+<li><strong>Maintenance and repairs:</strong> General repairs (e.g., fixing a boiler, repainting), but not improvements that add value.</li>
+<li><strong>Service fees:</strong> Letting agent fees, cleaning costs between guests, gardening, and laundry services.</li>
+<li><strong>Administrative costs:</strong> Accountancy fees, legal fees for lettings, phone calls, stationery, and advertising.</li>
+<li><strong>Replacement of domestic items:</strong> Beds, sofas, white goods, and other furnishings on a like-for-like basis (Replacement Domestic Items Relief).</li>
+</ul>
+<h4>Expenses You Cannot Claim</h4>
+<ul>
+<li><strong>Capital allowances on new items:</strong> You cannot claim capital allowances on new furniture, appliances, or equipment purchased after April 2025.</li>
+<li><strong>Personal use:</strong> Any costs related to periods you or your family use the property personally.</li>
+<li><strong>Capital improvements:</strong> Costs that improve the property beyond its original state (e.g., an extension, a new kitchen where one existed before). These may be deductible for Capital Gains Tax purposes when you sell.</li>
+<li><strong>Your own labour:</strong> You cannot charge for your own time spent cleaning or maintaining the property.</li>
+</ul>
+<p>For a comprehensive list, see our guide on <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">Landlord Tax Deductions</a>.</p>
+
+<h2>What Should Former FHL Landlords Do Now?</h2>
+
+<p>The abolition fundamentally changes the economics of holiday letting. Consider the following steps:</p>
+
+<ul>
+<li><strong>Review your tax position:</strong> Calculate your new effective tax rate under Section 24 to understand the real impact on your cash flow.</li>
+<li><strong>Consider incorporation:</strong> Limited companies are not affected by Section 24 and can still deduct mortgage interest in full against rental profits. If you're a higher-rate taxpayer with substantial mortgage finance, <a href="/incorporation">incorporation</a> may now be more attractive than when FHL status provided an exemption.</li>
+<li><strong>Reassess your portfolio:</strong> Some holiday lets may no longer be financially viable once the full tax impact is factored in. Consider whether converting to standard assured shorthold tenancies would improve your after-tax position. For tax implications of different property types, see our guide on <a href="/blog/landlord-tax-essentials/hmo-landlord-accounting-multi-tenant-property-tax">HMO and Multi-Tenant Property Tax</a>.</li>
+<li><strong>Update your record keeping:</strong> With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital</a> requiring quarterly digital reporting from April 2026, ensure your bookkeeping systems are up to date.</li>
 </ul>
 
-<p>With Making Tax Digital for Income Tax Property starting in April 2026, digital record keeping will become mandatory. Consider implementing digital systems now to ensure smooth compliance.</p>
+<p>The abolition of the FHL regime represents one of the most significant changes to property taxation in recent years. If you operated holiday lets under the old rules, <a href="/services">professional guidance</a> is essential to navigate the transition and minimise your tax liability going forward.</p>
 
-<h2>Planning Opportunities</h2>
 
-<p>Furnished holiday let tax rules offer several planning opportunities for property investors looking to optimize their tax position.</p>
 
-<h3>Timing of Disposals</h3>
-
-<p>The 10% CGT rate under Business Asset Disposal Relief can provide substantial savings compared to the 18%/28% rates applying to standard residential property disposals. Plan disposals carefully to maximize these benefits.</p>
-
-<h3>Incorporation Considerations</h3>
-
-<p>Furnished holiday lets can be held within companies without losing their beneficial tax treatment. This opens up additional planning opportunities, including profit extraction strategies and succession planning. However, the interaction between FHL rules and corporate tax requires careful consideration.</p>
-
-<p>If you're considering <a href="/incorporation">incorporation of your property portfolio</a>, furnished holiday lets often provide more flexibility than standard rental properties due to their business classification.</p>
-
-<h2>Recent Changes and Future Considerations</h2>
-
-<p>The furnished holiday let tax regime has remained relatively stable, but Brexit has affected EEA properties. Properties in former EU countries that aren't now part of the EEA may lose their qualifying status.</p>
-
-<p>With ongoing discussions about tourism taxes and short-term letting regulations, monitor local authority requirements that might affect your ability to maintain commercial availability.</p>
-
-<p>The tax advantages of furnished holiday lets remain significant, but the qualification criteria are strict and penalties for non-compliance can be severe. If you're operating or considering holiday let properties, specialist advice is essential to ensure you maximize the benefits while maintaining compliance.</p>
-
-<p>For complex situations involving multiple properties or incorporation planning, <a href="/services">professional guidance</a> can help you navigate the rules and optimize your tax position effectively.</p>
+<h2>Stamp Duty Land Tax (SDLT) on Holiday Lets</h2>
+<p>Stamp Duty Land Tax (SDLT) rules for holiday lets have <strong>not changed</strong> with the abolition of the FHL income and capital gains tax regime. The SDLT treatment remains distinct from standard residential purchases.</p>
+<h3>How SDLT Applies to Holiday Let Purchases</h3>
+<p>When you purchase a property in England or Northern Ireland that is intended to be used as a furnished holiday let, you must pay the <strong>3% SDLT surcharge</strong> on top of the standard residential rates. This is because HMRC considers a holiday let a "second home" or "buy-to-let" property for SDLT purposes, regardless of its former FHL status for other taxes.</p>
+<p>For example, purchasing a £400,000 holiday let in England would incur SDLT as follows:</p>
+<ul>
+<li>Standard residential SDLT on £400,000: £10,000</li>
+<li>Plus the 3% surcharge on the full purchase price: £12,000</li>
+<li><strong>Total SDLT due: £22,000</strong></li>
+</ul>
+<p>There is no specific SDLT relief or exemption for furnished holiday lets. The surcharge applies even if you do not own any other property, provided the holiday let is not replacing your main residence. For detailed calculations, use our <a href="/blog/section-24-and-tax-relief/stamp-duty-buy-to-let-surcharge">Stamp Duty Buy-to-Let Surcharge guide</a>.</p>
 
 <h2>Related Reading</h2>
 
 <ul>
 <li><a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">Landlord Tax Deductions UK 2026: Complete List</a></li>
 <li><a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital Gains Tax on Property: Complete Guide UK</a></li>
+<li><a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 Tax Relief: Complete Guide</a></li>
 </ul>

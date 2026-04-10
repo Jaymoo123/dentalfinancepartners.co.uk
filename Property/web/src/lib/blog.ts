@@ -65,28 +65,26 @@ export function getRelatedPosts(
   if (!fs.existsSync(postsDirectory)) {
     return [];
   }
-  
+
   const files = fs.readdirSync(postsDirectory).filter((f) => f.endsWith(".md"));
-  const relatedPosts: BlogPost[] = [];
-  
+  const candidates: BlogPost[] = [];
+
   for (const file of files) {
-    if (relatedPosts.length >= limit) break;
-    
     const filePath = path.join(postsDirectory, file);
     const raw = fs.readFileSync(filePath, "utf8");
     const { data } = matter(raw);
     const fm = data as Partial<BlogFrontmatter>;
-    
+
     if (fm.slug === currentSlug) continue;
     if (fm.category !== category) continue;
     if (!fm.slug || !fm.title) continue;
-    
-    relatedPosts.push(parsePostFile(filePath));
+
+    candidates.push(parsePostFile(filePath));
   }
-  
-  return relatedPosts.sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+
+  return candidates
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, limit);
 }
 
 export function slugifyCategory(category: string): string {

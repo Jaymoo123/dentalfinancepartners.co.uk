@@ -5,8 +5,8 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company
 date: "2026-03-29"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "When to Incorporate Property Portfolio | Timing"
-metaDescription: "Higher-rate taxpayers with significant mortgage debt benefit most from incorporating. Tax thresholds, Section 24 triggers, and timing factors."
+metaTitle: "When to Incorporate a Property Portfolio | UK Timing Guide"
+metaDescription: "Decide when to incorporate your UK property portfolio. Income thresholds, Section 24, CGT analysis and step-by-step timing guidance."
 altText: "UK property investor reviewing incorporation documents and tax calculations at desk"
 image: ""
 h1: "Incorporation Timing: When is the Right Time to Incorporate Your Property Portfolio?"
@@ -42,6 +42,21 @@ faqs:
 <p>Here's a practical example: A landlord with £60,000 rental income and £30,000 mortgage interest payments. Under Section 24, they can only claim 20% tax relief on the mortgage interest, not their marginal rate of 40%. This creates an additional tax cost of around £6,000 annually.</p>
 
 <p>The same portfolio in a limited company would pay corporation tax at 19% (or 25% for profits over £50,000 from 2025/26) on the full profit after deducting all mortgage interest.</p>
+
+
+
+<h2>How to Incorporate a Property Portfolio: A Practical Overview</h2>
+<p>If you've decided the timing is right, understanding the practical steps is crucial. The process is more complex than simply forming a company. It involves legally transferring your property business.</p>
+<h3>Key Steps in the Incorporation Process</h3>
+<ul>
+<li><strong>Professional Advice & Modelling:</strong> Before anything else, obtain detailed tax projections and legal advice specific to your portfolio. This is non-negotiable.</li>
+<li><strong>Company Formation:</strong> Set up a limited company (usually a private limited company by shares) with appropriate articles of association.</li>
+<li><strong>Property Transfer:</strong> Legally transfer properties from personal ownership to the company. This is not a sale but a 'transfer at market value' for tax purposes.</li>
+<li><strong>Mortgage Refinancing:</strong> You must obtain lender consent to transfer existing mortgages into the company's name. This often involves remortgaging onto commercial BTL products, which may have different rates and criteria.</li>
+<li><strong>Tax Compliance:</strong> Report the transfer on your Self Assessment for Capital Gains Tax and complete an SDLT return for the company. The company must also register for Corporation Tax.</li>
+<li><strong>Ongoing Operations:</strong> All rental income and expenses must flow through the company accounts from the transfer date.</li>
+</ul>
+<p>Given the complexity, most landlords use a solicitor for the property transfers and a specialist property accountant for the tax structuring and ongoing compliance. For a detailed walkthrough, see our <a href="/blog/incorporation-and-company-structures/landlord-incorporation-step-by-step-guide-uk">Landlord Incorporation: Step-by-Step Guide</a>.</p>
 
 <h2>Income Thresholds That Matter</h2>
 
@@ -79,12 +94,18 @@ faqs:
 </ul>
 
 <h2>Capital Gains Considerations</h2>
-
+<h2>Capital Gains Considerations</h2>
 <p>Incorporation creates a deemed disposal for capital gains tax purposes. Properties transfer to the company at market value, potentially triggering capital gains tax on any growth since acquisition.</p>
-
-<p>However, incorporation relief may be available if you transfer a business as a going concern. The timing becomes crucial — incorporate too early (before the business is established), and you might miss this relief.</p>
-
-<p>For substantial portfolios, the capital gains exposure can be significant. Professional advice is essential to structure the incorporation tax-efficiently.</p>
+<p>The current CGT rates for residential property are 18% for basic-rate taxpayers and 24% for higher-rate taxpayers (2025/26). You can deduct your annual CGT allowance (£3,000 for 2025/26) and any allowable costs (purchase costs, improvement costs).</p>
+<h3>Managing the CGT Bill on Incorporation</h3>
+<p>Several reliefs and strategies may be available, but their application is strict:</p>
+<ul>
+<li><strong>Incorporation Relief (s162 TCGA 1992):</strong> This is the primary relief. It allows you to defer the entire capital gain if you transfer a <strong>property rental business</strong> (not just assets) as a 'going concern' to a company in exchange for shares. The gain is rolled over into the base cost of the shares. HMRC looks for business-like activity (multiple properties, systematic management).</li>
+<li><strong>Phased Transfers:</strong> Transferring one property per year to use multiple years' CGT annual exemptions. This is administratively complex but can reduce an immediate large bill.</li>
+<li><strong>Timing with Losses:</strong> If you have other capital losses (e.g., from share sales), you can offset them against the gains on property transfer.</li>
+<li><strong>Market Timing:</strong> As mentioned, transferring during a period of lower property values reduces the taxable gain.</li>
+</ul>
+<p><strong>Warning:</strong> Incorporation Relief is not automatic. If the relief conditions are not met, a substantial CGT bill will be payable. Professional advice is essential to structure the transfer correctly. You can model potential CGT using our <a href="/blog/capital-gains-tax/cgt-property-transfer-limited-company-calculate">CGT on property transfer to limited company calculator</a>.</p>
 
 <h2>Administrative Burden Timing</h2>
 

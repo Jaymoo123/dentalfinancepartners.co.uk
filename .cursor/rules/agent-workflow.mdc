@@ -1,0 +1,80 @@
+---
+description: Issue tracking protocol — check before reporting, log new findings, update on resolution
+alwaysApply: true
+---
+
+# Agent Workflow — Issue Tracking Protocol
+
+## Before reporting any bug or issue
+
+1. Read `Admin/ISSUE_LOG.md` — check the Quick Lookup index for the site you are working on.
+2. If the issue is already listed (open or resolved), do NOT re-report it. Reference the existing ID instead.
+3. If unsure, also check `Admin/PLATFORM_AUDIT_2026-04-02.md` (historical 32-item audit).
+
+## Verifying a new issue
+
+- Read the actual source code before logging anything. Confirm the issue exists — do not rely on assumptions.
+- Distinguish: confirmed bug vs architectural choice vs documented known pattern (see `project-context.mdc` section 14 "Gotchas").
+- If the behaviour is documented as intentional, it is not an issue.
+
+## Logging a new issue
+
+Add a row to the appropriate severity table in `Admin/ISSUE_LOG.md`:
+
+- **ID**: `P-` Property, `D-` Dentists, `M-` Medical, `S-` Solicitors, `X-` cross-site, `I-` infrastructure. Increment from the highest existing number for that prefix.
+- **Date**: Date discovered (YYYY-MM-DD).
+- **Type**: Bug, SEO, Content, Config, Infrastructure, or Styling.
+- **Description**: One-line summary. Include the root cause, not just the symptom.
+- **Files**: Key file paths affected.
+
+Then add the new ID to the Quick Lookup index for every affected site.
+
+**Severity definitions:**
+- **Critical**: Broken functionality, 404s, data loss, security issues.
+- **High**: SEO impact, user-facing problems, incorrect structured data.
+- **Medium**: Consistency, maintenance debt, internal-only impact.
+- **Low**: Cosmetic, nice-to-have, comments, minor drift.
+
+## Resolving an issue
+
+Move the row from Open to Resolved. Add: date resolved, one-line description of what was done. Remove the ID from the Quick Lookup index.
+
+## Update the "Last updated" date at the top of `Admin/ISSUE_LOG.md` whenever you make changes.
+
+---
+
+## Documentation update cascade
+
+When making structural changes, update the relevant docs to prevent staleness. The rule: if you change the reality, update anything that describes that reality.
+
+| If you... | Update these |
+|-----------|-------------|
+| Add or remove a site | `README.md` site table, `project-context.mdc` section 1, CI workflow matrices |
+| Change a domain or brand name | `README.md`, `niche.config.json`, `project-context.mdc` section 1 |
+| Add or remove a page route | `project-context.mdc` section 1 (Unique pages), sitemap.ts |
+| Add or remove a blog category | `project-context.mdc` section 6, create/remove hub page, update middleware |
+| Change URL structure or slugify logic | `project-context.mdc` sections 5a/5b, middleware.ts |
+| Fix or find an issue | `Admin/ISSUE_LOG.md` (see protocol above) |
+| Change CI workflows or automation | `project-context.mdc` section 18 (Operational Controls) |
+| Change the config system or architecture | `project-context.mdc` (relevant section) |
+
+Do NOT update docs for routine content changes (new blog posts, topic generation, analytics runs). These are high-frequency and the docs deliberately exclude volatile counts.
+
+Run `python scripts/validate_docs.py` after structural changes to verify consistency.
+
+---
+
+## Editorial Optimization Pipeline
+
+Before running `scripts/optimize_content_editorial.py`, read `Admin/EDITORIAL_PIPELINE_LESSONS.md` for known failure modes and the guardrail checklist.
+
+**Required workflow:**
+1. Run with `--dry-run` to preview which posts will be analyzed
+2. Run the analysis (generates `scripts/editorial_review.json`)
+3. Run with `--validate-only` to check all proposals against current content
+4. Review warnings (prices, tax years, duplicate headings)
+5. Run with `--apply` to apply changes
+6. Run `python scripts/validate_blog_content.py` to verify no content was corrupted
+7. Run `npm run build` from the site's `web/` directory to confirm build passes
+
+If you encounter a new failure mode, add it to `Admin/EDITORIAL_PIPELINE_LESSONS.md` with the next sequential ID.

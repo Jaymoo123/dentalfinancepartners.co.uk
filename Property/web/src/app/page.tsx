@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     "Specialist property accountants for UK landlords. Section 24 planning, MTD compliance, incorporation analysis. Fixed fees, 24hr response. Free calculators.",
   alternates: { canonical: siteConfig.url },
   openGraph: {
-    title: "Landlord Accountant UK | Property Tax Specialists",
+    title: `${siteConfig.name} | Property Tax Specialists`,
     description:
       "Get your property tax sorted. Section 24, MTD, incorporation. Trusted by 100+ landlords. Free calculators.",
     url: siteConfig.url,
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Landlord Accountant UK | Property Tax Specialists",
+    title: `${siteConfig.name} | Property Tax Specialists`,
     description:
       "Get your property tax sorted. Section 24, MTD, incorporation. Trusted by 100+ landlords. Free calculators.",
   },

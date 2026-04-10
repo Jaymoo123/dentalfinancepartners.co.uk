@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   title: "Terms of use",
   description: `Terms of use for the ${siteConfig.name} website. Governing law, disclaimers, and acceptable use policy.`,
   alternates: { canonical: `${siteConfig.url}/terms` },
+  openGraph: {
+    title: `Terms of Use | ${siteConfig.name}`,
+    description: `Terms of use for the ${siteConfig.name} website. Governing law, disclaimers, and acceptable use policy.`,
+    url: `${siteConfig.url}/terms`,
+    type: "website",
+  },
   twitter: {
     card: "summary_large_image",
     title: "Terms of use",

@@ -27,6 +27,75 @@ faqs:
 
 <p>This guide covers every allowable deduction for UK landlords in the 2026/27 tax year, helping you reduce your tax bill legally and efficiently.</p>
 
+<h2>Complete Landlord Expenses List: Quick Reference</h2>
+
+<p>Here is every allowable expense for UK landlords at a glance. Each category is explained in detail further down the page.</p>
+
+<ul>
+<li><strong>Property running costs:</strong> gas, electricity, water rates, council tax (when landlord liable), buildings and contents insurance, ground rent, service charges</li>
+<li><strong>Repairs and maintenance:</strong> plumbing, electrical, roofing, boiler servicing, decorating, garden maintenance, replacing broken fixtures</li>
+<li><strong>Professional fees:</strong> letting agent fees, property management charges, accountancy, legal fees, surveyors, valuations</li>
+<li><strong>Advertising:</strong> property portal listings, photography, signboards, newspaper ads</li>
+<li><strong>Finance costs:</strong> mortgage interest (20% tax credit for individuals; full deduction for companies), loan arrangement fees, bank charges</li>
+<li><strong>Travel:</strong> property inspections, rent collection, meeting contractors, materials purchases (45p/mile for first 10,000 miles)</li>
+<li><strong>Office and admin:</strong> stationery, phone calls, computer equipment, accounting software, home office costs</li>
+<li><strong>Replacement items:</strong> furniture, appliances, kitchenware, carpets, curtains (replacement cost only, not initial purchase)</li>
+<li><strong>Bad debts and legal:</strong> unpaid rent written off, debt collection, court costs, eviction proceedings</li>
+</ul>
+
+<p><strong>Not deductible:</strong> capital improvements, personal expenses, mortgage capital repayments, your own labour, fines, entertainment.</p>
+
+
+
+<h3>Landlord Expenses List: At-a-Glance Table</h3>
+<p>For a quick, scannable reference, here is a table of common allowable landlord expenses. Each category is explained in detail in the sections below.</p>
+<table>
+<thead>
+<tr>
+<th>Expense Category</th>
+<th>Examples of Allowable Costs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Property Running Costs</strong></td>
+<td>Utilities, Council Tax (if liable), Insurance, Service Charges</td>
+</tr>
+<tr>
+<td><strong>Repairs & Maintenance</strong></td>
+<td>Plumbing, Electrical, Decorating, Boiler Servicing</td>
+</tr>
+<tr>
+<td><strong>Professional Fees</strong></td>
+<td>Letting Agent, Accountancy, Legal, Surveyor Fees</td>
+</tr>
+<tr>
+<td><strong>Finance Costs</strong></td>
+<td>Mortgage Interest (20% credit for individuals), Loan Fees</td>
+</tr>
+<tr>
+<td><strong>Travel</strong></td>
+<td>Property Inspections (45p/mile), Rent Collection Trips</td>
+</tr>
+<tr>
+<td><strong>Office & Admin</strong></td>
+<td>Stationery, Phone, Software, Home Office Costs</td>
+</tr>
+<tr>
+<td><strong>Replacement Items</strong></td>
+<td>Furniture, Appliances, Carpets (replacement only)</td>
+</tr>
+<tr>
+<td><strong>Advertising</strong></td>
+<td>Portal Listings, Photography, 'To Let' Signs</td>
+</tr>
+<tr>
+<td><strong>Legal & Bad Debts</strong></td>
+<td>Court Costs, Debt Collection, Unpaid Rent Written Off</td>
+</tr>
+</tbody>
+</table>
+
 <h2>Property Running Costs</h2>
 
 <p>These day-to-day <strong>landlord expenses allowable</strong> for tax relief include all costs directly related to running your rental property.</p>
@@ -141,11 +210,7 @@ faqs:
 <p>Alternatively, use HMRC's simplified flat rate: £4 per week for 25-50 hours, £6 per week for 51-100 hours, £26 per week for 101+ hours.</p>
 
 <h2>Replacement Furniture and Equipment</h2>
-
-<p>The Replacement of Domestic Items Relief replaced Wear and Tear Allowance from April 2016.</p>
-
-<p>You can claim the cost of replacing (but not initially purchasing) domestic items in furnished properties:</p>
-
+<p>The <strong>Replacement of Domestic Items Relief</strong> replaced the old Wear and Tear Allowance from April 2016. This means the previous system of claiming a flat 10% of rental income for wear and tear is no longer available. Instead, you can claim the cost of replacing (but not initially purchasing) domestic items in furnished properties:</p>
 <ul>
 <li>Furniture (beds, sofas, tables)</li>
 <li>Household appliances (washing machines, fridges)</li>
@@ -153,8 +218,7 @@ faqs:
 <li>Carpets and curtains</li>
 <li>Televisions and electrical equipment</li>
 </ul>
-
-<p>If you replace a £400 sofa with an £800 model, you can only claim £400 (the original cost equivalent).</p>
+<p>If you replace a £400 sofa with an £800 model, you can only claim £400 (the original cost equivalent). This relief applies to landlords of furnished residential properties.</p>
 
 <h2>Bad Debts and Legal Costs</h2>
 
@@ -199,7 +263,7 @@ faqs:
 <li>Tenancy agreements and rent rolls</li>
 </ul>
 
-<p>Consider using cloud-based accounting software that integrates with HMRC's MTD system to streamline compliance.</p>
+<p>Consider using cloud-based <a href="/blog/making-tax-digital-mtd/landlord-accounting-software-uk-best-options-2026">landlord accounting software</a> that integrates with HMRC's MTD system to streamline compliance.</p>
 
 <h2>Maximising Your Deductions</h2>
 
@@ -225,5 +289,5 @@ faqs:
 
 <ul>
 <li><a href="/blog/section-24-and-tax-relief/landlord-capital-allowances-tax-relief">Landlord Capital Allowances: A Complete Guide to Tax Relief</a></li>
-<li><a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">Rental Income Tax UK: Complete Guide for Landlords 2025</a></li>
+<li><a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">Rental Income Tax UK: Complete Guide for Landlords</a></li>
 </ul>

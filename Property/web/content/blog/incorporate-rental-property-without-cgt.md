@@ -28,17 +28,16 @@ faqs:
 <p>Fortunately, there are legitimate ways to <strong>incorporate rental properties without triggering immediate CGT</strong>. The key is understanding incorporation relief and planning your transfer carefully.</p>
 
 <h2>Key Conditions for Incorporation Relief</h2>
-
-<p>HMRC applies strict conditions for incorporation relief to apply to rental properties:</p>
-
+<h2>Key Conditions for Incorporation Relief</h2>
+<p>HMRC applies strict conditions for incorporation relief to apply to rental properties. The relief is claimed under section 162 TCGA 1992.</p>
 <ul>
-<li><strong>Business requirement:</strong> Your rental activity must constitute a business, not just investment</li>
-<li><strong>Whole business transfer:</strong> You must transfer the entire rental business, not cherry-pick profitable properties</li>
-<li><strong>Consideration in shares:</strong> You receive only shares in return, not cash or debt assumption</li>
-<li><strong>Commercial reasons:</strong> The incorporation must be for genuine commercial reasons, not tax avoidance</li>
+<li><strong>Business requirement:</strong> Your rental activity must constitute a business, not just an investment. This is the most significant hurdle for landlords.</li>
+<li><strong>Whole business transfer:</strong> You must transfer the entire rental business as a going concern. You cannot cherry-pick profitable properties while keeping others personally.</li>
+<li><strong>Consideration in shares:</strong> You must receive only shares in the new company as consideration for the transfer. Receiving cash, a director's loan, or having the company assume personal debt will invalidate the relief for the assets involved.</li>
+<li><strong>Commercial reasons:</strong> The incorporation must be for genuine commercial reasons. Tax planning is acceptable, but the primary motive cannot be pure tax avoidance.</li>
 </ul>
-
-<p>The "business test" is particularly important for landlords. HMRC looks for evidence of active management, property development, or significant services provided to tenants. Simply collecting rent from a few properties typically won't qualify.</p>
+<p>The "business test" is particularly important for landlords and is where HMRC most commonly challenges claims. Simply collecting rent from a few long-term lets managed by an agent typically won't qualify. HMRC looks for evidence of active, organised, and extensive involvement.</p>
+<p><strong>Making the Claim:</strong> You must formally claim incorporation relief. This is usually done by completing the 'Reliefs' section (Box 54) on the Capital Gains Tax summary pages (SA108) of your Self Assessment tax return for the year of transfer. You should also include details in the 'Additional Information' box. Professional advice is strongly recommended to ensure the claim is valid and properly documented.</p>
 
 <h2>When Rental Property Qualifies as a Business</h2>
 
@@ -118,7 +117,7 @@ faqs:
 
 <h2>Professional Advice and Next Steps</h2>
 
-<p>Incorporating rental properties involves complex interactions between CGT, corporation tax, SDLT, and mortgage regulations. The rules around incorporation relief are particularly technical and HMRC's approach continues evolving.</p>
+<p>Incorporating rental properties involves complex interactions between CGT, corporation tax, <a href="/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice">SDLT</a>, and mortgage regulations. The rules around incorporation relief are particularly technical and HMRC's approach continues evolving.</p>
 
 <p>Most landlords benefit from specialist advice before proceeding. A property tax specialist can assess whether your activities qualify as a business, model the long-term tax implications, and structure the incorporation optimally.</p>
 

@@ -9,24 +9,10 @@ export function SiteFooter() {
       <div className={`${siteContainer} py-12 sm:py-16`}>
         <div className="grid gap-10 md:grid-cols-[1.5fr_1fr] md:gap-16">
           <div className="min-w-0">
-            <div className="text-2xl font-bold text-white mb-2">Property Accountants UK</div>
+            <div className="text-2xl font-bold text-white mb-2">{siteConfig.name}</div>
             <p className="mt-3 max-w-md text-sm leading-relaxed text-slate-300">
               {siteConfig.description}
             </p>
-            <div className="mt-6 flex flex-col gap-3 text-sm border-l-2 border-emerald-600 pl-4">
-              <a 
-                href={`mailto:${siteConfig.contact.email}`}
-                className="font-bold text-emerald-400 hover:text-emerald-300 transition-colors"
-              >
-                {siteConfig.contact.email}
-              </a>
-              <a 
-                href={`tel:${siteConfig.contact.phone.replace(/\s/g, '')}`}
-                className="font-bold text-emerald-400 hover:text-emerald-300 transition-colors"
-              >
-                {siteConfig.contact.phone}
-              </a>
-            </div>
           </div>
           
           <div className="min-w-0">

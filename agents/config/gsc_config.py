@@ -16,7 +16,7 @@ GSC_CONFIG = {
         "blog_topics_table": "blog_topics_property",
         
         # File paths
-        "content_dir": "Property/web/src/content/blog",
+        "content_dir": "Property/web/content/blog",
         "git_repo_path": "Property/web",
         
         # Site-specific thresholds (based on current traffic: 71 impressions/week = 10.1/day)
@@ -48,7 +48,7 @@ GSC_CONFIG = {
         "blog_topics_table": "blog_topics_dentists",
         
         # File paths
-        "content_dir": "Dentists/web/src/content/blog",
+        "content_dir": "Dentists/web/content/blog",
         "git_repo_path": "Dentists/web",
         
         # Site-specific thresholds (same as property for now)
@@ -73,7 +73,7 @@ GSC_CONFIG = {
     
     "medical": {
         # GSC settings
-        "site_url": "sc-domain:medicalfinancepartners.co.uk",
+        "site_url": "sc-domain:medicalaccountantsuk.co.uk",
         "property_type": "domain",
         
         # Database

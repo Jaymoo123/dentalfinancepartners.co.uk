@@ -4,9 +4,17 @@ on:
   push:
     paths:
       - '**/web/content/blog/**'
+      - 'README.md'
+      - '.cursor/rules/**'
+      - 'Admin/ISSUE_LOG.md'
+      - '**/niche.config.json'
   pull_request:
     paths:
       - '**/web/content/blog/**'
+      - 'README.md'
+      - '.cursor/rules/**'
+      - 'Admin/ISSUE_LOG.md'
+      - '**/niche.config.json'
   workflow_dispatch:
 
 permissions:
@@ -29,3 +37,17 @@ jobs:
 
       - name: Run content validator
         run: python scripts/validate_blog_content.py --verbose
+
+  validate-docs:
+    name: Validate Documentation Consistency
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run docs validator
+        run: python scripts/validate_docs.py --verbose

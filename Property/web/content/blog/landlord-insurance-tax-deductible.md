@@ -6,7 +6,7 @@ date: "2026-03-29"
 author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
 metaTitle: "Landlord Insurance Tax Deductible: Complete Guide 2026"
-metaDescription: "Most landlord insurance premiums are fully deductible against rental income — buildings, liability, and rent guarantee cover all qualify."
+metaDescription: "Yes — buildings, contents, liability, rent guarantee, and legal expenses cover are all tax deductible against rental income. See which policies qualify."
 altText: "UK property insurance documents and calculator showing tax deductible landlord insurance claims"
 image: ""
 h1: "Landlord Insurance Tax Deductible: What Can You Claim?"
@@ -64,17 +64,16 @@ faqs:
 <p>Holiday lets that you also use personally follow similar rules. If you use the property for two weeks annually and rent it out for 50 weeks, you might claim 50/52 of the insurance costs.</p>
 
 <h2>Claiming Insurance on Your Tax Return</h2>
-
-<p>Report landlord insurance premiums in the "other allowable property expenses" section of your <a href="/blog/landlord-tax-essentials/landlord-tax-return-complete-guide-2026">tax return</a>. Keep detailed records showing:</p>
-
+<p>Report landlord insurance premiums in the "other allowable property expenses" section (Box 26) of the SA105 property pages on your <a href="/blog/landlord-tax-essentials/landlord-tax-return-complete-guide-2026">tax return</a>. You must account for the full amount paid in the tax year, regardless of the policy period.</p>
+<p><strong>How to account for the claim:</strong> The premium is deducted from your gross rental income to calculate your taxable profit. For example, if your annual rental income is £20,000 and you pay £500 in landlord insurance, your taxable profit from property becomes £19,500. This reduces your Income Tax liability at your marginal rate (20%, 40%, or 45%).</p>
+<p>Keep detailed digital records showing:</p>
 <ul>
 <li>Policy documents with coverage dates</li>
-<li>Premium payment receipts</li>
-<li>Evidence of business purpose</li>
-<li>Apportionment calculations for mixed-use</li>
+<li>Premium payment receipts or bank statements</li>
+<li>Evidence of business purpose (e.g., policy in property address)</li>
+<li>Apportionment calculations for mixed-use properties</li>
 </ul>
-
-<p>With <a href="/services">Making Tax Digital for Income Tax</a> starting in April 2026, digital record-keeping becomes mandatory. Most property management software can track insurance expenses automatically.</p>
+<p>With <a href="/services">Making Tax Digital for Income Tax</a> starting in April 2026, digital record-keeping becomes mandatory. Most property management software can track and categorise insurance expenses automatically for your quarterly submissions.</p>
 
 <h2>Company Landlords and Insurance</h2>
 
@@ -96,10 +95,10 @@ faqs:
 
 <p>While landlord insurance deductions are generally straightforward, complex portfolios or unusual circumstances benefit from professional guidance. Mixed-use properties, international landlords, and corporate structures each have specific considerations.</p>
 
-<p>Tax rules change regularly, and insurance products evolve. Professional advice ensures you're claiming all available reliefs while staying compliant with current regulations.</p>
+<p>Tax rules change regularly, and insurance products evolve. For complex situations, consider our <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property tax advice services</a>. Professional advice ensures you're claiming all available reliefs while staying compliant with current regulations.</p>
 
 <h2>Related Reading</h2>
 
 <ul>
-<li><a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">Rental Income Tax UK: Complete Guide for Landlords 2025</a></li>
+<li><a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">Rental Income Tax UK: Complete Guide for Landlords</a></li>
 </ul>

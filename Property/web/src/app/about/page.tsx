@@ -6,19 +6,19 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "About Property Accountants UK | 100+ Landlords Served",
+  title: `About ${siteConfig.name} | 100+ Landlords Served`,
   description:
     "Property-only accounting firm serving UK landlords since 2020. 100+ buy-to-let investors trust us for Section 24, MTD, incorporation, and portfolio management. No generalists.",
   alternates: { canonical: `${siteConfig.url}/about` },
   openGraph: {
-    title: "About Property Accountants UK",
+    title: `About ${siteConfig.name}`,
     description: "Specialist property accountants serving 100+ UK landlords. Property-only focus since 2020.",
     url: `${siteConfig.url}/about`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Property Accountants UK",
+    title: `About ${siteConfig.name}`,
     description: "Specialist property accountants serving 100+ UK landlords. Property-only focus since 2020.",
   },
 };

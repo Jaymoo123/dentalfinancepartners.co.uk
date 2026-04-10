@@ -86,7 +86,7 @@ faqs:
 
 <p>Some landlords choose voluntary <strong>landlord VAT registration</strong> even below the threshold. This can be beneficial if:</p>
 
-<p>Your property business incurs significant VAT on expenses like renovation costs, <a href="/blog/landlord-tax-essentials/accountant-vat-registration-expert-services">professional</a> fees, or maintenance. Registration allows you to reclaim input VAT on these costs, potentially generating cash flow benefits.</p>
+<p>Your property business incurs significant VAT on expenses like renovation costs, <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">professional</a> fees, or maintenance. Registration allows you to reclaim input VAT on these costs, potentially generating cash flow benefits.</p>
 
 <p>However, voluntary registration also means charging 20% VAT on taxable supplies, which could make your commercial properties less competitive unless your tenants can reclaim the VAT themselves.</p>
 

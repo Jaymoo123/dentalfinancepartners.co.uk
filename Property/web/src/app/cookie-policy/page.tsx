@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   title: "Cookie policy",
   description: `How ${siteConfig.name} uses cookies and similar technologies. Google Analytics cookies explained.`,
   alternates: { canonical: `${siteConfig.url}/cookie-policy` },
+  openGraph: {
+    title: `Cookie Policy | ${siteConfig.name}`,
+    description: `How ${siteConfig.name} uses cookies and similar technologies. Google Analytics cookies explained.`,
+    url: `${siteConfig.url}/cookie-policy`,
+    type: "website",
+  },
   twitter: {
     card: "summary_large_image",
     title: "Cookie policy",

@@ -60,10 +60,11 @@ export default function Error({
         </div>
 
         <p className="mt-8 text-sm text-slate-500">
-          Need help? Email us at{" "}
-          <a href="mailto:hello@propertytaxpartners.co.uk" className="font-semibold text-emerald-700 hover:text-emerald-600">
-            hello@propertytaxpartners.co.uk
+          If this keeps happening, please{" "}
+          <a href="/contact" className="font-semibold text-emerald-700 hover:text-emerald-600">
+            get in touch
           </a>
+          .
         </p>
       </div>
     </div>

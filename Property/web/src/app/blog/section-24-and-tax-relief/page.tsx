@@ -2,21 +2,22 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts, getCategorySlug, calculateReadTime } from "@/lib/blog";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { siteConfig } from "@/config/site";
 
 const categoryName = "Section 24 & Tax Relief";
 const categorySlug = "section-24-and-tax-relief";
 
 export const metadata: Metadata = {
-  title: `${categoryName} for Property Investors | Property Tax Partners`,
+  title: `${categoryName} for Property Investors | ${siteConfig.name}`,
   description: `Expert guidance on ${categoryName.toLowerCase()} for UK property investors. Practical advice, tax planning strategies, and compliance insights.`,
   alternates: {
-    canonical: `https://www.propertytaxpartners.co.uk/blog/${categorySlug}`,
+    canonical: `${siteConfig.url}/blog/${categorySlug}`,
   },
   openGraph: {
     title: `${categoryName} for Property Investors`,
     description: `Expert guidance on ${categoryName.toLowerCase()} for UK property investors.`,
-    url: `https://www.propertytaxpartners.co.uk/blog/${categorySlug}`,
-    siteName: "Property Tax Partners",
+    url: `${siteConfig.url}/blog/${categorySlug}`,
+    siteName: siteConfig.name,
     type: "website",
   },
   twitter: {
@@ -38,8 +39,8 @@ export default function Section24TaxReliefPage() {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.propertytaxpartners.co.uk" },
-          { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.propertytaxpartners.co.uk/blog" },
+          { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+          { "@type": "ListItem", position: 2, name: "Blog", item: `${siteConfig.url}/blog` },
           { "@type": "ListItem", position: 3, name: categoryName },
         ],
       },
@@ -47,7 +48,7 @@ export default function Section24TaxReliefPage() {
         "@type": "CollectionPage",
         name: `${categoryName} for Property Investors`,
         description: metadata.description,
-        url: `https://www.propertytaxpartners.co.uk/blog/${categorySlug}`,
+        url: `${siteConfig.url}/blog/${categorySlug}`,
       },
     ],
   };
@@ -127,12 +128,12 @@ export default function Section24TaxReliefPage() {
             </p>
           </section>
           <section>
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">Furnished Holiday Let Exemptions</h2>
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">Furnished Holiday Lets: FHL Regime Abolished</h2>
             <p className="text-base leading-relaxed text-slate-600 mb-4">
-              Furnished holiday lettings (FHLs) that meet HMRC qualifying criteria are treated as trading income rather than investment income. This means FHL landlords can still deduct mortgage interest in full against rental profits, bypassing Section 24 entirely. The property must be available for letting at least 210 days per year and actually let for at least 105 days.
+              The Furnished Holiday Lettings (FHL) tax regime was abolished from 6 April 2025 (1 April 2025 for Corporation Tax) under the Finance Act 2025. Previously, FHLs were treated as trading income, allowing full mortgage interest deduction and bypassing Section 24 entirely. This exemption no longer applies.
             </p>
             <p className="text-base leading-relaxed text-slate-600">
-              FHL status also provides access to capital allowances on furniture and equipment, capital gains tax business asset disposal relief, and pension contribution relief based on FHL profits. However, HMRC reviews FHL claims closely, so accurate records of letting days are essential.
+              From the 2025/26 tax year onwards, holiday let income is taxed identically to standard rental income. Section 24 mortgage interest restrictions now apply, capital allowances on new expenditure are no longer available (only Replacement Domestic Items Relief), and CGT business reliefs such as Business Asset Disposal Relief and rollover relief cannot be claimed. Landlords who previously relied on FHL status should review their tax position and consider whether incorporation or other mitigation strategies are appropriate.
             </p>
           </section>
         </div>

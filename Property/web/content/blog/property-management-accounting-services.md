@@ -21,7 +21,7 @@ faqs:
     answer: "The ideal time is at the start of a tax year to allow proper system implementation and quarterly planning. However, specialists can help at any stage, whether you're a new landlord, expanding your portfolio, or facing compliance issues. With MTD starting April 2026, early engagement helps ensure proper preparation."
 ---
 
-<p>Managing the financial side of a rental property portfolio requires specialist knowledge that goes far beyond basic <a href="/blog/property-accountant-services/accountant-bookkeeping-services">bookkeeping</a>. Professional <strong>property management accounting services</strong> provide UK landlords with the expertise needed to navigate complex tax legislation, maximise allowable deductions, and ensure full compliance with evolving regulations.</p>
+<p>Managing the financial side of a rental property portfolio requires specialist knowledge that goes far beyond basic <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">bookkeeping</a>. Professional <strong>property management accounting services</strong> provide UK landlords with the expertise needed to navigate complex tax legislation, maximise allowable deductions, and ensure full compliance with evolving regulations.</p>
 
 <p>Whether you own a single buy-to-let property or manage a substantial portfolio, the right accounting support can save you significant time, reduce your tax burden, and help you avoid costly compliance mistakes.</p>
 

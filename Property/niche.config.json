@@ -89,7 +89,9 @@
       "Capital Gains Tax",
       "Portfolio Management",
       "Property Accountant Services",
-      "Landlord Tax Essentials"
+      "Landlord Tax Essentials",
+      "Property Types & Specialist Tax",
+      "Non-Resident Landlord Tax"
     ],
     "supabase_table": "blog_topics_property",
     "source_identifier": "property"

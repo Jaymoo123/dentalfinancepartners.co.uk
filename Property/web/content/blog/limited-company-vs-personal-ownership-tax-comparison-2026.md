@@ -18,9 +18,9 @@ faqs:
   - question: "How does Section 24 affect the comparison between personal and company ownership?"
     answer: "Section 24 restricts mortgage interest relief to 20% for personally-owned properties, disadvantaging higher-rate taxpayers. Limited companies can still deduct full mortgage interest against corporation tax at 19-25%, making company ownership much more attractive for leveraged property portfolios owned by higher-rate taxpayers."
   - question: "What are the main costs of switching from personal to limited company ownership?"
-    answer: "Transferring existing properties typically triggers capital gains tax on the transfer value and stamp duty land tax (including the 3% surcharge) on the company purchase. These costs can be substantial, often making it more cost-effective to keep existing properties personally while using a company for new purchases."
+    answer: "Transferring existing properties typically triggers capital gains tax on the transfer value and stamp duty land tax (including the 5% surcharge) on the company purchase. These costs can be substantial, often making it more cost-effective to keep existing properties personally while using a company for new purchases."
   - question: "Do limited companies pay more stamp duty when buying rental properties?"
-    answer: "Companies face the same 3% SDLT surcharge as individuals buying additional residential properties. However, companies cannot benefit from first-time buyer relief or main residence exemptions. The surcharge applies to both structures for typical buy-to-let purchases, so there's usually no difference in SDLT costs."
+    answer: "Companies face the same 5% SDLT surcharge as individuals buying additional residential properties. However, companies cannot benefit from first-time buyer relief or main residence exemptions. The surcharge applies to both structures for typical buy-to-let purchases, so there's usually no difference in SDLT costs."
 ---
 
 <p>The choice between owning property through a limited company or personally remains one of the most significant decisions facing UK landlords in 2026. With <a href="/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax">Section 24</a> mortgage interest restrictions now fully implemented and corporation tax rates changing, the tax implications can vary dramatically depending on your circumstances.</p>
@@ -92,9 +92,9 @@ faqs:
 
 <h2>Stamp Duty Land Tax Differences</h2>
 
-<p>Limited companies face a 3% SDLT surcharge on residential property purchases, in addition to standard rates. This typically adds £9,000 to £15,000 to the purchase costs of an average buy-to-let property.</p>
+<p>Limited companies face a 5% SDLT surcharge on residential property purchases, in addition to standard rates. This typically adds £15,000 to £25,000 to the purchase costs of an average buy-to-let property.</p>
 
-<p>Individual purchasers also face the 3% surcharge for additional properties, so there's no difference in most buy-to-let scenarios. However, companies cannot benefit from first-time buyer relief or main residence exemptions.</p>
+<p>Individual purchasers also face the 5% surcharge for additional properties, so there's no difference in most buy-to-let scenarios. However, companies cannot benefit from first-time buyer relief or main residence exemptions.</p>
 
 <h2>Mortgage and Financing Considerations</h2>
 

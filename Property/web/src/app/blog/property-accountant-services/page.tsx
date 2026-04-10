@@ -2,21 +2,22 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts, getCategorySlug, calculateReadTime } from "@/lib/blog";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { siteConfig } from "@/config/site";
 
 const categoryName = "Property Accountant Services";
 const categorySlug = "property-accountant-services";
 
 export const metadata: Metadata = {
-  title: `${categoryName} | Property Tax Partners`,
+  title: `${categoryName} | ${siteConfig.name}`,
   description: `Find and compare specialist property accountants across the UK. Pricing guides, service comparisons, location-specific recommendations, and career insights.`,
   alternates: {
-    canonical: `https://www.propertytaxpartners.co.uk/blog/${categorySlug}`,
+    canonical: `${siteConfig.url}/blog/${categorySlug}`,
   },
   openGraph: {
     title: `${categoryName} for UK Landlords`,
     description: `Find and compare specialist property accountants across the UK.`,
-    url: `https://www.propertytaxpartners.co.uk/blog/${categorySlug}`,
-    siteName: "Property Tax Partners",
+    url: `${siteConfig.url}/blog/${categorySlug}`,
+    siteName: siteConfig.name,
     type: "website",
   },
   twitter: {
@@ -38,8 +39,8 @@ export default function PropertyAccountantServicesPage() {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.propertytaxpartners.co.uk" },
-          { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.propertytaxpartners.co.uk/blog" },
+          { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+          { "@type": "ListItem", position: 2, name: "Blog", item: `${siteConfig.url}/blog` },
           { "@type": "ListItem", position: 3, name: categoryName },
         ],
       },
@@ -47,7 +48,7 @@ export default function PropertyAccountantServicesPage() {
         "@type": "CollectionPage",
         name: categoryName,
         description: metadata.description,
-        url: `https://www.propertytaxpartners.co.uk/blog/${categorySlug}`,
+        url: `${siteConfig.url}/blog/${categorySlug}`,
       },
     ],
   };

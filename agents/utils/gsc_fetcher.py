@@ -125,7 +125,7 @@ class GSCDataFetcher:
             "apikey": SUPABASE_KEY,
             "Authorization": f"Bearer {SUPABASE_KEY}",
             "Content-Type": "application/json",
-            "Prefer": "resolution=ignore-duplicates",  # Ignore duplicates (UNIQUE constraint)
+            "Prefer": "resolution=merge-duplicates,return=minimal",
         }
         
         records = []
@@ -133,7 +133,7 @@ class GSCDataFetcher:
         for row in rows:
             keys = row.get('keys', [])
             if len(keys) < 2:
-                continue  # Need both page and date
+                continue
             
             page_url = keys[0]
             date_str = keys[1]
@@ -154,16 +154,10 @@ class GSCDataFetcher:
         if not records:
             return 0
         
-        # Batch insert
         try:
             response = httpx.post(url, headers=headers, json=records, timeout=30.0)
             response.raise_for_status()
-            
-            # Count successful inserts (Supabase returns 201 for inserts)
-            if response.status_code == 201:
-                return len(records)
-            else:
-                return 0
+            return len(records)
         
         except Exception as e:
             print(f"[ERROR] Supabase insert failed: {e}")

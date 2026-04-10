@@ -5,8 +5,8 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-servi
 date: "2026-04-01"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
-metaTitle: "London Property Accountant | Expert Tax Services | PTP"
-metaDescription: "Specialist London property accountant services for landlords and investors. Expert advice on Section 24, incorporation, MTD compliance, and tax planning."
+metaTitle: "London Property Accountant | Tax & Services for Investors"
+metaDescription: "Specialist London property accountant for landlords and investors. Buy-to-let tax, Section 24, MTD compliance, and incorporation advice."
 altText: "Professional London property accountant reviewing rental property tax returns and financial documents"
 image: ""
 h1: "London Property Accountant: Expert Services for Property Investors"
@@ -48,31 +48,44 @@ faqs:
 
 <p>A specialist <strong>London property accountant</strong> identifies these issues early and implements strategies to minimize their impact.</p>
 
+
+
+<h2>What Does a London Property Accountant Do? Key Services</h2>
+<p>If you're searching for a <strong>property accountant</strong> or <strong>accountant for property investment</strong>, you likely want a clear list of what they actually handle. A specialist London property accountant provides a core suite of services beyond basic bookkeeping:</p>
+<ul>
+<li><strong>Annual Self-Assessment Tax Returns (SA105):</strong> Preparation and submission of your personal tax return, including all property income and expenses.</li>
+<li><strong>Buy-to-Let Portfolio Management:</strong> Consolidated accounting for multiple properties, tracking income, allowable expenses, and profitability per unit.</li>
+<li><strong>Section 24 Tax Planning:</strong> Modelling the impact of mortgage interest restrictions and advising on mitigation strategies like incorporation.</li>
+<li><strong>Capital Gains Tax (CGT) Planning & Reporting:</strong> Calculating gains on property sales, advising on reliefs (like Principal Private Residence Relief), and ensuring correct CGT returns are filed.</li>
+<li><strong>Making Tax Digital (MTD) Compliance:</strong> Setting up software, establishing quarterly digital reporting routines, and managing submissions from April 2026.</li>
+<li><strong>Incorporation Advisory:</strong> Detailed analysis on whether transferring your portfolio to a <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company</a> is financially beneficial, including CGT and SDLT calculations.</li>
+<li><strong>Allowable Expense Optimization:</strong> Ensuring you claim all legitimate deductions, from repairs and maintenance to finance costs and professional fees.</li>
+<li><strong>VAT Advice for Property:</strong> Guidance on VAT registration thresholds and the option to tax for commercial properties.</li>
+</ul>
+<p>For <strong>buy-to-let investors in London</strong>, this means having an expert who understands both the national tax rules and the specific pressures of the capital's high-value, high-rent market.</p>
+
 <h2>Core Services for London Property Portfolios</h2>
-
-<h3>Annual Tax Returns and Compliance</h3>
-
-<p>London property investors need meticulous record-keeping and accurate reporting. This includes rental income across multiple properties, allowable expenses, and capital allowances claims on furnished lettings.</p>
-
-<p>With Making Tax Digital for Income Tax Property starting in April 2026, digital record-keeping and quarterly reporting will become mandatory for most London landlords. Preparation needs to start now.</p>
-
+<h2>Core Services for London Property Portfolios</h2>
+<h3>Annual Tax Returns and Compliance (SA105)</h3>
+<p>This is the essential service for any landlord. A specialist <strong>property tax accountant</strong> ensures your Self-Assessment return, specifically the SA105 property pages, is accurate and optimised. This involves:</p>
+<ul>
+<li>Collating all rental income from multiple tenancies and properties.</li>
+<li>Claiming the full range of <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">allowable landlord expenses</a>, including mortgage interest (as a tax credit under Section 24), repairs, agent fees, insurance, and service charges.</li>
+<li>Calculating and applying property income allowances where beneficial.</li>
+<li>Handling complex situations like furnished holiday lets or partially let properties.</li>
+<li>Ensuring compliance with the <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital (MTD)</a> transition for digital record-keeping.</li>
+</ul>
 <h3>Section 24 Planning and Mitigation</h3>
-
 <p>The mortgage interest restriction hits London landlords particularly hard due to higher borrowing levels. A property accountant can model different scenarios including:</p>
-
 <ul>
 <li>Incorporation into a limited company structure</li>
 <li>Portfolio refinancing strategies</li>
 <li>Timing of property acquisitions and disposals</li>
 </ul>
-
 <p>For a London investor paying 40% tax on rental profits, <a href="/incorporation">incorporation</a> might reduce the effective tax rate to 19-25%, depending on extraction strategy.</p>
-
 <h3>Capital Gains Tax Planning</h3>
-
 <p>London property appreciation creates substantial CGT exposure. A property bought in Zone 2 for £400,000 in 2015 might be worth £600,000 today, creating a £200,000 gain subject to 24% or 28% CGT.</p>
-
-<p>Strategic planning can include principal private residence relief optimization, annual exemption utilization, and timing disposals across tax years.</p>
+<p>Strategic planning can include <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">principal private residence relief</a> optimization, annual exemption utilization, and timing disposals across tax years.</p>
 
 <h2>London-Specific Tax Considerations</h2>
 
@@ -120,7 +133,7 @@ faqs:
 <h2>Choosing the Right Property Accountant</h2>
 <p>Not all UK property accountants in London offer the same expertise. Look for firms that specialise exclusively in property taxation. Check they understand your specific situation – student lettings, commercial property, or mixed portfolios all have different considerations.</p>
 
-<p>Ask about their MTD preparations and software recommendations. Enquire about their approach to tax planning versus just compliance work. The <a href="/blog/property-accountant-services/best-property-accountant">best property accountants</a> are proactive, suggesting improvements rather than just filing returns.</p>
+<p>Ask about their MTD preparations and software recommendations. Enquire about their approach to tax planning versus just compliance work. The <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">best property accountants</a> are proactive, suggesting improvements rather than just filing returns.</p>
 
 <p>Consider their fee structure carefully. Some charge fixed fees for standard services, others work on an hourly basis. For complex portfolios, a specialist firm's higher fees often deliver better net outcomes through tax savings.</p>
 
@@ -278,6 +291,6 @@ faqs:
 <h2>Related Reading</h2>
 
 <ul>
-<li><a href="/blog/property-accountant-services/best-property-accountant-london">Finding the Best Property Accountant in London: A Landlord's Guide</a></li>
+<li><a href="/blog/property-accountant-services/how-to-choose-a-property-accountant-london">Finding the Best Property Accountant in London: A Landlord's Guide</a></li>
 <li><a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">How to Choose a Property Accountant: Complete Guide for UK Landlords</a></li>
 </ul>

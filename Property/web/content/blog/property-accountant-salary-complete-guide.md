@@ -44,7 +44,7 @@ faqs:
 
 <p>Junior positions typically involve basic property tax compliance, preparing rental income calculations, and assisting with capital gains tax computations. Many start in general practice firms before specialising in property.</p>
 
-<p>Key responsibilities include preparing basic property tax returns, handling straightforward BTL portfolio accounting, and learning property-specific tax reliefs and allowances.</p>
+<p>Key responsibilities include preparing basic property tax returns, handling straightforward BTL portfolio accounting, and learning property-specific tax reliefs and allowances like <a href="/blog/section-24-and-tax-relief/landlord-capital-allowances-tax-relief">capital allowances</a>.</p>
 
 <h3>Mid-Level Property Accountant (2-5 years experience)</h3>
 <p><strong>Salary range: £35,000 - £50,000</strong></p>
@@ -253,7 +253,7 @@ faqs:
 
 <p>Section 24 mortgage interest restrictions continue to create opportunities for specialists who understand corporate structures and tax planning. This expertise gap supports salary premiums for experienced professionals.</p>
 
-<p>Remote and hybrid working has somewhat reduced the London premium, with some employers offering 5-10% less for fully remote roles. However, client-facing positions and senior roles typically still require London presence and command full market rates.</p>
+<p>Remote and hybrid working has somewhat reduced the London premium, with some employers offering 5-10% less for fully remote roles. For those seeking remote opportunities, our guide on <a href="/blog/property-accountant-services/property-accountant-near-me">finding a property accountant</a> explores how location is becoming less of a barrier. However, client-facing positions and senior roles typically still require London presence and command full market rates.</p>
 
 <h2>Senior Property Tax Specialists</h2>
 <p>Senior managers and directors in London property accounting practices typically earn £70,000-£120,000. Partners in established firms focusing on property taxation can earn £150,000-£300,000+, depending on their client base and business generation.</p>

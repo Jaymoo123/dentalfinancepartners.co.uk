@@ -470,14 +470,13 @@ If performance is improving naturally, say needs_optimization=false.
             "Content-Type": "application/json",
         }
         
-        # Use raw query since we need aggregation
         query_url = f"{SUPABASE_URL}/rest/v1/gsc_page_performance"
-        params = {
-            "niche": f"eq.{self.niche}",
-            "date": f"gte.{start_date.isoformat()}",
-            "date": f"lte.{end_date.isoformat()}",
-            "select": "page_url,impressions,clicks,ctr,position",
-        }
+        params = [
+            ("niche", f"eq.{self.niche}"),
+            ("date", f"gte.{start_date.isoformat()}"),
+            ("date", f"lte.{end_date.isoformat()}"),
+            ("select", "page_url,impressions,clicks,ctr,position"),
+        ]
         
         try:
             response = httpx.get(query_url, headers=headers, params=params, timeout=10.0)
@@ -583,7 +582,11 @@ If performance is improving naturally, say needs_optimization=false.
             return []
     
     def _extract_slug(self, page_url: str) -> Optional[str]:
-        """Extract blog post slug from URL."""
+        """Extract blog post slug from URL.
+        
+        Handles both flat (/blog/slug) and nested (/blog/category/slug) URL patterns.
+        Always returns the final path segment.
+        """
         if '/blog/' not in page_url:
             return None
         
@@ -591,8 +594,12 @@ If performance is improving naturally, say needs_optimization=false.
         if len(parts) < 2:
             return None
         
-        slug = parts[1].rstrip('/')
-        return slug if slug else None
+        path = parts[1].rstrip('/')
+        if not path:
+            return None
+        
+        segments = path.split('/')
+        return segments[-1] if segments[-1] else None
     
     def _match_slug_to_topic(self, slug: str, existing_topics: List[Dict]) -> Optional[Dict]:
         """Match slug to existing blog topic."""

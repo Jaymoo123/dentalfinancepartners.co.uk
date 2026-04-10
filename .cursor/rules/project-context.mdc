@@ -5,18 +5,20 @@ alwaysApply: true
 
 # Project Context — Accounting Monorepo
 
-Last updated: 3 April 2026 (post link/redirect audit). Monorepo with 4 UK niche accountancy websites. All live, deployed on Vercel, sharing a common architecture with site-specific differences.
+Last updated: 9 April 2026. Monorepo with 4 UK niche accountancy websites. All live, deployed on Vercel, sharing a common architecture with site-specific differences.
 
 ---
 
 ## 1. Sites at a Glance
 
-| Site | Domain | niche_id | Posts | Locations | Unique pages |
-|------|--------|----------|-------|-----------|--------------|
-| Property Tax Partners | propertytaxpartners.co.uk | property | 85 | 5 (London, Manchester, Birmingham, Leeds, Bristol) | /calculators, /incorporation |
-| Dental Finance Partners | dentalfinancepartners.co.uk | dentists | 55 | 2 (London, Manchester) | — |
-| Medical Accountants UK | medicalaccountantsuk.co.uk | medical | 46 | 5 (London, Manchester, Birmingham, Leeds, Bristol) | /calculators, /nhs-pension |
-| Accounts for Lawyers | accountsforlawyers.co.uk | solicitors | 50 | 5 (London, Manchester, Birmingham, Leeds, Bristol) | /sra-compliance |
+Post counts are point-in-time (daily pipeline adds posts). Run `python scripts/validate_blog_content.py` for current numbers. Domains and locations are authoritative — sourced from each site's `niche.config.json`.
+
+| Site | Domain | niche_id | Locations | Unique pages |
+|------|--------|----------|-----------|--------------|
+| Property Tax Partners | propertytaxpartners.co.uk | property | 5 (London, Manchester, Birmingham, Leeds, Bristol) | /calculators, /incorporation |
+| Dental Finance Partners | dentalfinancepartners.co.uk | dentists | 2 (London, Manchester) | — |
+| Medical Accountants UK | medicalaccountantsuk.co.uk | medical | 5 (London, Manchester, Birmingham, Leeds, Bristol) | /calculators, /nhs-pension |
+| Accounts for Lawyers | accountsforlawyers.co.uk | solicitors | 5 (London, Manchester, Birmingham, Leeds, Bristol) | /sra-compliance |
 
 **Shared pages (all 4):** `/`, `/about`, `/services`, `/contact`, `/blog`, `/locations`, `/locations/[slug]`, `/thank-you`, `/privacy-policy`, `/terms`, `/cookie-policy`
 
@@ -395,25 +397,43 @@ Prints a checklist of manual steps (hub content, location content, page copy, Ve
 
 ---
 
-## 18. Remaining Known Issues
+## 18. Operational Controls
 
-- Dentists: 11/55 posts have zero outbound internal blog links (link dead-ends — they receive links but don't link out)
-- Solicitors: 3/50 posts lack internal blog links
-- Medical: "Consultant Tax" category in niche.config.json has 0 posts and no hub page
-- All 4 sites: zero external authority links (no outbound links to HMRC, GOV.UK, NHS, SRA etc.) — may want to add for topical authority
-- Property: "Portfolio Management" category hub has only 1 post — consider recategorizing or merging
+**Cost limits:**
+- Monthly budget: $200, daily budget: $10
+- Rate limits: 1 blog/niche/day, 3 optimisations/day
+- Pre-flight budget check before every generation; alert at 80% threshold
+- No automatic retries on failure (prevents cost spiral)
+
+**Quality gates (post-generation):**
+- Minimum 1,000 words
+- Proper HTML structure (h2, p, ul)
+- 4+ FAQ questions
+- Internal links present
+- Keyword density < 3%
+- Valid front matter (metaTitle ≤ 60, metaDescription ≤ 155)
+- Semantic similarity check (80% threshold = duplicate)
+
+**Automation schedule (GitHub Actions):**
+- Daily 6 AM UTC: topic research + blog generation (1 per niche) + sync + deploy + git push
+- Daily 8 AM UTC: GA4 analytics optimisation
+- Every 6 hours: risk manager
+- Weekly Sunday 2 AM: log cleanup (90-day retention via Supabase RPC)
+- Weekly Monday 9 AM: performance report
+- Monthly: keyword topic tree refresh
+
+**Monitoring:**
+- `python agents/coordinator.py status` — system overview
+- Supabase tables: `agent_executions`, `agent_costs`, `published_content`
+- Slack/Discord webhooks for failure alerts and budget warnings
 
 ---
 
-## 19. Link/Redirect Audit Log
+## 19. Issue Tracking
 
-**3 Apr 2026 — Full audit, all clear:**
-- Medical: renamed `gp-accountant-services.md` → `gp-accountant-services-complete-guide.md` to match front matter slug (was 404ing, 14 internal links broken)
-- Property: corrected 36 `SLUG_TO_CATEGORY_MAP` entries (were `portfolio-management`, now correct categories) + 63 `DUPLICATE_REDIRECTS` targets — eliminated double-301 chains
-- Solicitors: fixed 11 `DUPLICATE_REDIRECTS` entries using `practice-finance-and-cash-flow` / `practice-succession-and-sale` → corrected to `practice-finance-cash-flow` / `practice-succession-sale` (Solicitors strips `&`)
-- Dentists: converted 86 flat `/blog/{slug}` links to canonical `/blog/{category}/{slug}` across 38 posts; added missing middleware entry for `dentist-student-loan-repayment-tax-planning-guide`
-- Property: fixed broken static link `/making-tax-digital-property` → `/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline`
-- Content validator: 236 posts, 0 errors, 0 warnings
+All issues are tracked in `Admin/ISSUE_LOG.md`. See `.cursor/rules/agent-workflow.mdc` for the discovery and logging protocol.
+
+Historical audit: `Admin/PLATFORM_AUDIT_2026-04-02.md` (32 items, dated 2 April 2026).
 
 ---
 

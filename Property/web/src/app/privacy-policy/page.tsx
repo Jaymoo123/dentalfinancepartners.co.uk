@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   title: "Privacy policy",
   description: `How ${siteConfig.name} collects and uses personal data on this website. UK GDPR compliant.`,
   alternates: { canonical: `${siteConfig.url}/privacy-policy` },
+  openGraph: {
+    title: `Privacy Policy | ${siteConfig.name}`,
+    description: `How ${siteConfig.name} collects and uses personal data on this website. UK GDPR compliant.`,
+    url: `${siteConfig.url}/privacy-policy`,
+    type: "website",
+  },
   twitter: {
     card: "summary_large_image",
     title: "Privacy policy",
@@ -184,7 +190,7 @@ export default function PrivacyPolicyPage() {
           </li>
           <li>
             Phone:{" "}
-            <a href={`tel:${siteConfig.contact.phone}`} className="text-[var(--accent-strong)] underline">
+            <a href={`tel:${siteConfig.contact.phone.replace(/\s/g, "")}`} className="text-[var(--accent-strong)] underline">
               {siteConfig.contact.phone}
             </a>
           </li>

@@ -7,6 +7,7 @@ import { MTDCheckerCalculator } from "@/components/calculators/MTDCheckerCalcula
 import { PortfolioProfitabilityCalculator } from "@/components/calculators/PortfolioProfitabilityCalculator";
 import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Free Property Tax Calculators | Section 24, Incorporation, MTD & Yield",
@@ -39,7 +40,13 @@ export default function CalculatorsPage() {
         <div className="absolute inset-0 bg-slate-900/85" />
         <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
           <div className="max-w-3xl">
-            <h1 className="text-2xl font-bold leading-tight text-white sm:text-4xl lg:text-6xl">
+            <Breadcrumb
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Calculators" },
+              ]}
+            />
+            <h1 className="mt-6 text-2xl font-bold leading-tight text-white sm:text-4xl lg:text-6xl">
               Property tax calculators for UK landlords
             </h1>
             <p className="mt-4 sm:mt-6 text-base sm:text-xl leading-relaxed text-white">

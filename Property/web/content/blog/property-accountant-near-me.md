@@ -111,7 +111,7 @@ faqs:
 <p>A good investment property accountant near you should ask detailed questions about your properties, future plans, and tax situation before giving any advice.</p>
 
 <h2>Making the Final Decision</h2>
-<p>The <a href="/blog/property-accountant-services/best-property-accountant">best property accountants</a> near me will offer an initial consultation to understand your situation. They should ask about your current properties, expansion plans, and any tax concerns you have.</p>
+<p>The <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">best property accountants</a> near me will offer an initial consultation to understand your situation. They should ask about your current properties, expansion plans, and any tax concerns you have.</p>
 
 <p>During this conversation, assess whether they're genuinely interested in helping you optimize your property business, or just completing compliance tasks. The right specialist will suggest practical improvements to your current structure and highlight potential issues you hadn't considered.</p>
 

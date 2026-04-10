@@ -11,7 +11,7 @@ export function StickyCTA() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+      const scrollPercent = (window.scrollY / Math.max(1, document.documentElement.scrollHeight - window.innerHeight)) * 100;
       if (scrollPercent > 30 && !dismissed) {
         setVisible(true);
       } else if (scrollPercent <= 30) {

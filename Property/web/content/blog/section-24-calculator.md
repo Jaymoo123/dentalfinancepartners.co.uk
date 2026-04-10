@@ -5,8 +5,8 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief
 date: "2026-04-01"
 author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
-metaTitle: "Section 24 Calculator - Calculate Your Tax Impact | PTP"
-metaDescription: "Use our Section 24 calculator to work out how mortgage interest restrictions affect your property tax bill. Get accurate calculations for UK landlords."
+metaTitle: "Section 24 Calculator: Work Out Your Landlord Tax Cost"
+metaDescription: "Calculate your Section 24 cost step by step with worked examples. A higher-rate landlord with £15k mortgage interest pays ~£3,000 extra tax per year."
 altText: "UK landlord using Section 24 calculator on laptop to calculate mortgage interest tax relief"
 image: ""
 h1: "Section 24 Calculator: Calculate Your Tax Impact"
@@ -33,6 +33,8 @@ faqs:
 
 <p>Section 24 has fundamentally changed how landlords calculate their tax bills. A <strong>section 24 calculator</strong> helps you understand exactly how mortgage interest restrictions affect your property income tax, but knowing how to use one properly is crucial for accurate results.</p>
 
+<p><strong>Want instant results?</strong> Use our <a href="/calculators">free interactive Section 24 calculator</a> to model your specific situation, then return here to understand what the numbers mean for your portfolio.</p>
+
 <p>This guide explains what information you need, how the calculations work, and what the results mean for your property portfolio.</p>
 
 <h2>How Section 24 Calculations Work</h2>
@@ -53,6 +55,13 @@ faqs:
 <li>Adjusted profit: £20,000 (£25,000 - £5,000)</li>
 <li>Tax credit available: £3,000 (20% × £15,000)</li>
 </ul>
+
+
+
+<h2>Section 24 Calculator vs. Mortgage Interest Tax Relief Calculator</h2>
+<p>You may have searched for a <strong>mortgage interest tax relief calculator</strong>. It's important to know that since the introduction of Section 24, these two terms refer to the same calculation for individual landlords.</p>
+<p>Before 2017, a mortgage interest tax relief calculator would simply deduct your full mortgage interest from your rental income. Today, a <strong>Section 24 calculator</strong> performs the newer, more complex calculation: it adds your rental profit (excluding mortgage interest) to your other income, calculates the tax, and then applies a 20% tax credit on your mortgage interest.</p>
+<p>Therefore, any modern calculator for UK landlords dealing with mortgage interest is, by definition, a Section 24 calculator. Our <a href="/calculators">free interactive tool</a> handles this exact calculation, giving you the accurate figure for your additional tax burden under the current rules.</p>
 
 <h2>Information You Need for Accurate Calculations</h2>
 
@@ -115,7 +124,7 @@ faqs:
 <p>For portfolios worth over £500,000 or complex situations, professional advice often provides more accurate projections than standard calculators.</p>
 
 <h2>When to Consider Professional Advice</h2>
-<p>Section 24 calculations can become complex when combined with multiple income sources, capital gains, and family tax planning. Consider specialist advice if:</p>
+<p>Section 24 calculations can become complex when combined with multiple income sources, capital gains, and family tax planning. Consider specialist <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property tax advice</a> if:</p>
 
 <ul>
 <li>Your total income fluctuates around tax band thresholds</li>
@@ -137,7 +146,7 @@ faqs:
 <p>Consider the timing of property purchases, sales, and major expenses to optimize your tax position across multiple years.</p>
 
 <h3>Alternative Structures</h3>
-<p>Explore options like pension SIPPs, joint ownership arrangements, or commercial property investments that aren't subject to Section 24.</p>
+<p>Explore options like pension SIPPs, joint ownership arrangements, or <a href="/blog/section-24-and-tax-relief/furnished-holiday-let-tax-rules-exemptions">furnished holiday lets</a> (which have different tax rules) or commercial property investments that aren't subject to Section 24.</p>
 
 <p>The key is using calculator results as a starting point for broader tax planning conversations with <a href="/services">qualified property tax specialists</a>.</p>
 

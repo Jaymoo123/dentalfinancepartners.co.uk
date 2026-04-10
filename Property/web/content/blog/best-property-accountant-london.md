@@ -1,7 +1,7 @@
 ---
 title: "Finding the Best Property Accountant in London: A Landlord's Guide"
 slug: "best-property-accountant-london"
-canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/best-property-accountant-london"
+canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/how-to-choose-a-property-accountant-london"
 date: "2026-04-01"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
@@ -78,7 +78,7 @@ faqs:
 <p>For example, a landlord selling a £800,000 London property originally bought for £400,000 faces a £400,000 gain. The tax implications vary significantly depending on income levels and timing.</p>
 
 <h3>Short-Term Lets and Airbnb</h3>
-<p>Many London landlords operate short-term lets, which have different tax implications from traditional BTL properties. The <a href="/blog/property-accountant-services/best-property-accountant">best property accountants</a> understand furnished holiday lettings rules, business rates implications, and VAT thresholds for short-term rental income.</p>
+<p>Many London landlords operate short-term lets, which have different tax implications from traditional BTL properties. The <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">best property accountants</a> understand furnished holiday lettings rules, business rates implications, and VAT thresholds for short-term rental income.</p>
 
 <h2>Cost Considerations and Value</h2>
 

@@ -5,8 +5,8 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/l
 date: "2026-04-01"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
-metaTitle: "Landlord Tax Return Guide 2026 | UK Property Tax Returns"
-metaDescription: "The 2026/27 Self Assessment deadline is 31 January 2027. Forms to use, allowable expenses, and how UK landlords avoid HMRC penalties."
+metaTitle: "Landlord Tax Return 2026: SA105 Property Pages Guide"
+metaDescription: "Complete guide to completing SA105 property pages for 2025/26. Deadline 31 January 2027. Allowable expenses, MTD changes, and avoiding HMRC penalties."
 altText: "UK landlord reviewing property tax return documents on desk with calculator and property keys"
 image: ""
 h1: "Landlord Tax Return: Complete Guide 2026"
@@ -85,13 +85,31 @@ faqs:
 
 <h3>SA105 Property Pages</h3>
 
-<p>Most individual landlords use the SA105 property pages within their Self Assessment return. This covers UK rental income from residential and commercial properties.</p>
 
-<p>You'll need separate SA105 forms if you have:</p>
+<h3>Understanding the SA109 Form for Non-UK Residents</h3>
+<p>The SA109 form is a supplementary page for the Self Assessment tax return that deals with residence, domicile, and the remittance basis. It is particularly relevant for landlords who are not UK resident for tax purposes.</p>
+<p>You may need to complete the SA109 if:</p>
 <ul>
-<li>UK rental income</li>
-<li>Foreign rental income</li>
-<li>Furnished holiday lettings (which have different rules)</li>
+<li>You are a non-UK resident landlord (NRL) with UK rental income.</li>
+<li>You have recently arrived in or left the UK during the tax year.</li>
+<li>You are claiming the remittance basis for foreign income.</li>
+</ul>
+<p>For non-resident landlords, the SA109 helps HMRC determine your tax residency status, which affects how your worldwide income is taxed. The Non-Resident Landlord (NRL) Scheme may also apply, where letting agents or tenants must deduct basic rate tax from your rent unless you have HMRC approval (NT number). If you are a non-resident landlord, you must still declare your UK property income on the SA105, and the SA109 provides the context of your residency. The Non-Resident Landlord (NRL) Scheme may also apply, where letting agents or tenants must deduct basic rate tax from your rent unless you have HMRC approval (NT number).</p>
+
+<h3>SA105 Property Pages</h3>
+<p>Most individual landlords use the SA105 property pages within their Self Assessment return. This form is where you report your UK rental income and expenses from residential and commercial properties.</p>
+<p>The key boxes on the SA105 for the 2025/26 tax year include:</p>
+<ul>
+<li><strong>Box 5:</strong> Total rents and other income from property.</li>
+<li><strong>Box 19:</strong> Total allowable expenses (excluding finance costs).</li>
+<li><strong>Box 26:</strong> Total residential property finance costs (mortgage interest). This amount is not deducted from profit but is used to calculate your 20% tax credit under Section 24.</li>
+<li><strong>Box 31:</strong> Your total profit or loss from UK property.</li>
+</ul>
+<p>You'll need to complete a separate SA105 form for each distinct category of property income you have. This means separate forms for:</p>
+<ul>
+<li>UK rental income (standard buy-to-let)</li>
+<li>Foreign rental income (though the SA106 is also required for this)</li>
+<li>Furnished holiday lettings (which have different tax rules)</li>
 </ul>
 
 <h3>Additional Forms for Complex Situations</h3>

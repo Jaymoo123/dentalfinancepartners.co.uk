@@ -6,7 +6,7 @@ date: "2026-03-29"
 author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
 metaTitle: "Section 24 Mortgage Interest Restriction | UK Guide"
-metaDescription: "Section 24 restricts mortgage interest relief to 20% for individual landlords. Calculate your impact and explore proven solutions."
+metaDescription: "Section 24 restricts mortgage interest relief to 20% for UK landlords. Use our calculator to see your 2025/26 tax impact and explore solutions."
 altText: "UK landlord reviewing mortgage documents and tax calculations on desk with calculator"
 image: ""
 h1: "Section 24 Mortgage Interest Restriction: Complete Guide for UK Landlords"
@@ -42,6 +42,18 @@ faqs:
 <p>Now, mortgage interest is treated as a tax credit rather than a deductible expense. This means you can only reduce your tax bill by 20% of your mortgage interest, regardless of your marginal tax rate.</p>
 
 <p>The restriction applies to residential rental properties owned personally. It does not apply to commercial properties or properties owned through limited companies.</p>
+
+
+
+<h2>Section 24 Rules for 2025/26 Tax Year</h2>
+<p>The rules for Section 24 are now fully phased in and stable. For the 2025/26 tax year, the following applies:</p>
+<ul>
+<li><strong>Full Restriction:</strong> Individual landlords can only claim a 20% tax credit on their mortgage interest and other finance costs. The old system of deducting interest from rental income no longer applies.</li>
+<li><strong>Basic Rate:</strong> The tax credit is calculated at the basic rate of Income Tax, which is 20% for 2025/26.</li>
+<li><strong>Who it Affects:</strong> The restriction applies to individual landlords (including partnerships) of residential rental properties in the UK. It does not apply to limited companies, commercial properties, or Furnished Holiday Lets (FHLs).</li>
+<li><strong>Finance Costs:</strong> The restriction covers mortgage interest, interest on loans to buy furnishings, and fees associated with obtaining or repaying mortgages.</li>
+</ul>
+<p>If you are filing a Self Assessment tax return for the 2025/26 year, you must declare your full rental income and then claim the 20% tax credit in the 'Tax reliefs' section of your return.</p>
 
 <h2>How Section 24 Works in Practice</h2>
 
@@ -81,11 +93,9 @@ faqs:
 <p>The restriction is particularly painful for landlords who are pushed from basic rate to higher rate tax. This happens because mortgage interest can no longer be deducted before calculating your tax band.</p>
 
 <h2>Calculating Your Section 24 Impact</h2>
-
+<h2>Calculating Your Section 24 Impact</h2>
 <p>To understand your Section 24 impact, you need to calculate your tax under both the old and new systems. The difference shows your additional tax burden.</p>
-
 <p>Consider a landlord with total income of £55,000 (including £35,000 rental income), mortgage interest of £20,000, and other property expenses of £8,000.</p>
-
 <h3>Old System Tax Calculation:</h3>
 <ul>
 <li>Total income: £55,000</li>
@@ -95,7 +105,6 @@ faqs:
 <li>Taxable income: £14,430</li>
 <li>Tax due: £1,443 (all at 20%)</li>
 </ul>
-
 <h3>Section 24 Tax Calculation:</h3>
 <ul>
 <li>Total income: £55,000</li>
@@ -106,8 +115,8 @@ faqs:
 <li>Less: Tax credit: £4,000 (£20,000 × 20%)</li>
 <li>Net tax due: £2,886</li>
 </ul>
-
-<p>The additional tax burden is £1,443 per year – a 100% increase. For help with these calculations, you might find our <a href="/calculators">tax calculators</a> useful.</p>
+<p>The additional tax burden is £1,443 per year – a 100% increase.</p>
+<p><strong>Using a Calculator:</strong> For help with these calculations, you can use our dedicated <a href="/blog/section-24-and-tax-relief/section-24-calculator">Section 24 Calculator</a> to model your specific income, expenses, and mortgage interest to see your exact tax liability under the current rules.</p>
 
 <h2>Solutions to Section 24</h2>
 

@@ -5,8 +5,8 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/capital
 date: "2026-03-29"
 author: "Property Tax Partners Editorial Team"
 category: "Capital Gains Tax"
-metaTitle: "CGT Property Sale UK 2026: Rates & Allowances Guide"
-metaDescription: "The 2026/27 CGT annual exemption is £3,000, with property rates at 18% and 24%. Reliefs and strategies to cut your CGT bill on disposal."
+metaTitle: "Capital Gains Tax Property Sale UK 2026: Rates Guide"
+metaDescription: "Calculate your 2026 CGT bill. UK residential property rates: 18% and 24%, with a £3,000 annual allowance. Reliefs, deadlines and strategies."
 altText: "UK landlord reviewing capital gains tax calculations on property sale documentation"
 image: ""
 h1: "Capital Gains Tax on Property Sale UK 2026: Rates and Allowances"
@@ -28,17 +28,14 @@ faqs:
 <p>The rules around capital gains tax can significantly impact your net proceeds from a property sale. Getting the calculations wrong or missing available reliefs could cost thousands in unnecessary tax.</p>
 
 <h2>CGT Rates for Property Sales in 2026</h2>
-
-<p>Capital gains tax rates on property disposals remain higher than other assets. For the 2025/26 tax year, residential property gains are taxed at:</p>
-
+<p>For the 2025/26 tax year, the capital gains tax rates on residential property disposals are:</p>
 <ul>
 <li><strong>18%</strong> for basic rate taxpayers</li>
 <li><strong>24%</strong> for higher and additional rate taxpayers</li>
 </ul>
-
-<p>These rates apply to the gain after deducting your annual exempt amount and any allowable costs. Your tax band is determined by adding the gain to your other income for the year.</p>
-
-<p>For example, a landlord with £35,000 salary making a £60,000 property gain would pay 18% on the first £15,270 of gain (remaining basic rate band) and 24% on the remainder.</p>
+<p>These are the definitive rates for property sales completing in the 2026 tax year. They apply to the taxable gain, which is calculated after deducting your annual exempt amount (£3,000 for 2025/26) and all allowable costs.</p>
+<p>Your income tax band for CGT purposes is determined by adding the taxable gain to your other taxable income (like salary or rental profits) for the year.</p>
+<p><strong>Example:</strong> A landlord with a £35,000 salary makes a £60,000 property gain. The personal allowance and basic rate band for 2025/26 mean they would pay 18% CGT on the first portion of the gain that falls within the remaining basic rate band, and 24% on the portion that pushes them into the higher rate band.</p>
 
 <h2>Annual Exempt Amount for 2026</h2>
 
@@ -76,7 +73,7 @@ faqs:
 
 <h3>Principal Private Residence Relief</h3>
 
-<p>If you lived in the property as your main home at any point, you might qualify for partial relief. The final 9 months of ownership always qualify for relief, regardless of whether you lived there.</p>
+<p>If you lived in the property as your main home at any point, you might qualify for partial <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">principal private residence relief</a>. The final 9 months of ownership always qualify for relief, regardless of whether you lived there.</p>
 
 <h3>Lettings Relief</h3>
 
@@ -100,7 +97,7 @@ faqs:
 
 <h2>Company vs Personal Ownership</h2>
 
-<p>Properties held in companies face corporation tax on gains, not CGT. For 2025/26, corporation tax rates are:</p>
+<p>Properties held in companies face <a href="/blog/incorporation-and-company-structures/accountant-corporation-tax-property-companies">corporation tax on gains</a>, not CGT. For 2025/26, corporation tax rates are:</p>
 
 <ul>
 <li><strong>19%</strong> on profits up to £50,000</li>

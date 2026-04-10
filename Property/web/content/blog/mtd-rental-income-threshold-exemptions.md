@@ -41,17 +41,18 @@ faqs:
 <p>If you start letting property mid-year, calculate the annual equivalent. A property generating £1,200 per month from October to March (6 months) would produce £14,400 annually — above the threshold.</p>
 
 <h2>Who Is Exempt from MTD for Rental Income?</h2>
-
-<p>Several groups remain exempt from MTD requirements, even if their rental income exceeds £10,000:</p>
-
+<h2>Who Is Exempt from MTD for Rental Income?</h2>
+<p>Several groups remain exempt from MTD for Income Tax requirements, even if their total gross income from property exceeds £10,000:</p>
 <ul>
-<li><strong>Trustees and personal representatives</strong> — rental income from trust properties or estates</li>
-<li><strong>Non-UK residents</strong> — landlords who are not UK tax residents</li>
-<li><strong>Partnerships involving non-individuals</strong> — such as partnerships including companies</li>
-<li><strong>Those with complex income structures</strong> requiring specialist returns</li>
+<li><strong>Trustees and personal representatives</strong> — rental income from trust properties or estates.</li>
+<li><strong>Non-UK residents</strong> — landlords who are not UK tax residents for the tax year in question.</li>
+<li><strong>Partnerships involving non-individuals</strong> — such as partnerships that include companies or trusts as partners.</li>
+<li><strong>Those with income from a Lloyd's underwriting business.</strong></li>
+<li><strong>Individuals who are insolvent.</strong></li>
+<li><strong>Those with income subject to the Foreign Income and Gains (FIG) rules for non-domiciled individuals.</strong></li>
 </ul>
-
-<p>Additionally, if your only rental income comes from properties held in a limited company structure, MTD for Income Tax Property doesn't apply to you personally. Company rental income falls under different MTD rules for Corporation Tax.</p>
+<p>Additionally, HMRC may grant an exemption on grounds of <strong>digital exclusion</strong> (e.g., age, disability, remoteness of location) or religious objection. You must apply for this exemption; it is not automatic.</p>
+<p>The term 'complex income structures' generally refers to taxpayers with income from a Lloyd's underwriting business or those using the FIG rules, as listed above. If your only source of property income is through a limited company, MTD for Income Tax does not apply to you personally. Company rental income falls under the future MTD for Corporation Tax regime, which has a different timeline.</p>
 
 <h2>Rent-a-Room and Holiday Lets</h2>
 
@@ -73,6 +74,27 @@ faqs:
 </ul>
 
 <p>This represents a significant change from annual self-assessment filing. Many landlords need to upgrade their record-keeping systems and processes.</p>
+
+
+
+<h2>How to Register for MTD for Property Income</h2>
+<p>If your gross rental income exceeds £10,000, you will need to register for Making Tax Digital for Income Tax. This is a separate process from your existing Self Assessment registration.</p>
+<h3>The Registration Process</h3>
+<p>HMRC will open the sign-up service well before the April 2026 start date. The process typically involves:</p>
+<ul>
+<li>Using your Government Gateway ID to sign into HMRC's online service.</li>
+<li>Providing your National Insurance number.</li>
+<li>Confirming your business details, including your property rental business.</li>
+<li>Selecting and authorising your MTD-compatible software. You <strong>must</strong> have software in place before you can complete registration, as you need to grant it permission to interact with HMRC.</li>
+</ul>
+<p>Once registered, you will stop filing an annual Self Assessment tax return for your property income (though you may still need one for other reasons) and instead submit quarterly updates and a final declaration through your software.</p>
+<h3>Key Deadlines for Landlords</h3>
+<p>While MTD ITSA starts on 6 April 2026, you should prepare much earlier:</p>
+<ul>
+<li><strong>Software Selection:</strong> Choose and test your MTD-compatible software in 2025.</li>
+<li><strong>Registration:</strong> HMRC advises registering at least a few months before your first quarterly submission is due.</li>
+<li><strong>First Quarterly Update:</strong> For the tax year starting 6 April 2026, your first update will be due by 5 August 2026, covering the period 6 April to 5 July.</li>
+</ul>
 
 <h2>Planning for MTD Compliance</h2>
 

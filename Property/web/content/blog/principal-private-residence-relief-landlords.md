@@ -6,7 +6,7 @@ date: "2026-04-01"
 author: "Property Tax Partners Editorial Team"
 category: "Capital Gains Tax"
 metaTitle: "Principal Private Residence Relief for Landlords | UK Guide"
-metaDescription: "PPR relief can eliminate CGT on a former home — even years after letting it out. Eligibility, the final period exemption, and calculations."
+metaDescription: "PPR relief can eliminate CGT on a former home. Our guide covers the 2026 calculation, the 9-month final period, letting relief, and worked examples."
 altText: "UK property with sold sign showing principal private residence relief concept for landlords"
 image: ""
 h1: "Principal Private Residence Relief for Landlords: Complete UK Guide"
@@ -47,24 +47,23 @@ faqs:
 <p>Simply owning a property and occasionally staying there isn't sufficient. HMRC requires genuine occupation as your main home.</p>
 
 <h2>How the Relief is Calculated</h2>
-
-<p>The calculation uses a time-based apportionment method. You calculate the total gain on disposal, then apply relief based on qualifying periods.</p>
-
-<h3>Basic Calculation Method</h3>
-
-<p>The standard formula is:</p>
-
+<p>The calculation uses a time-based apportionment method. You calculate the total gain on disposal, then apply relief based on qualifying periods. The core formula is:</p>
+<p><strong>PPR Relief = (Qualifying Period / Total Ownership Period) × Total Gain</strong></p>
+<p>Where the <strong>Qualifying Period</strong> includes:</p>
 <ul>
-<li>Period of occupation as main residence ÷ Total period of ownership × Total gain = Exempt amount</li>
+<li>Any period you lived in the property as your main home.</li>
+<li>The final 9 months of ownership (always exempt).</li>
 </ul>
-
-<p>For instance, a landlord who owned a property for 15 years and lived in it for 5 years would get relief on one-third of the gain (5 ÷ 15).</p>
-
-<h3>Final Period Exemption</h3>
-
-<p>The final 9 months of ownership always qualify for relief, regardless of whether you were living in the property. This recognises the practical difficulties of selling while still occupying a property.</p>
-
-<p>Before April 2020, this period was 18 months for most taxpayers. The reduction to 9 months affects properties sold from 6 April 2020 onwards.</p>
+<h3>Basic Calculation Method</h3>
+<p>Follow these steps:</p>
+<ol>
+<li><strong>Calculate Total Gain:</strong> Sale price minus purchase price, minus allowable costs (e.g., stamp duty, legal fees, improvement costs).</li>
+<li><strong>Determine Total Ownership Period:</strong> Count the total months or years from purchase to sale.</li>
+<li><strong>Determine Qualifying Period:</strong> Count the months/years of actual occupation plus the final 9 months.</li>
+<li><strong>Apply the Formula:</strong> (Qualifying Period / Total Ownership Period) × Total Gain = Exempt Amount.</li>
+<li><strong>Calculate Taxable Gain:</strong> Total Gain − Exempt Amount − Annual Exemption (£3,000 for 2025/26).</li>
+</ol>
+<p>See the <strong>worked example with actual figures</strong> below for a complete walkthrough of this calculation.</p>
 
 <h2>Letting Relief: Additional Protection</h2>
 
@@ -143,9 +142,9 @@ faqs:
 
 <p>Principal private residence relief works alongside other CGT reliefs and allowances:</p>
 
-<p>You still benefit from the annual CGT exemption (£6,000 for 2024/25). This applies to the remaining gain after PPR relief. Higher rate taxpayers pay 24% CGT on residential property gains, while basic rate taxpayers pay 18%.</p>
+<p>You still benefit from the annual CGT exemption (£3,000 for 2025/26). This applies to the remaining gain after PPR relief. Higher rate taxpayers pay 24% CGT on residential property gains, while basic rate taxpayers pay 18%. For full details on rates and allowances, see our guide on <a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">Capital Gains Tax on Property Sale UK 2026</a>.</p>
 
-<p>Business asset disposal relief (formerly entrepreneurs' relief) doesn't apply to residential property lettings in most cases. However, furnished holiday lettings can sometimes qualify under specific circumstances.</p>
+<p>Business asset disposal relief (formerly entrepreneurs' relief) doesn't apply to residential property lettings in most cases. However, <a href="/blog/section-24-and-tax-relief/furnished-holiday-let-tax-rules-exemptions">furnished holiday lettings</a> can sometimes qualify under specific circumstances. However, furnished holiday lettings can sometimes qualify under specific circumstances.</p>
 
 <h2>Record Keeping Requirements</h2>
 
@@ -178,6 +177,7 @@ faqs:
 <h2>Related Reading</h2>
 
 <ul>
+<li><a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">Capital Gains Tax on Property Sale UK 2026: Rates and Allowances</a></li>
 <li><a href="/blog/capital-gains-tax/reduce-cgt-property-disposal-uk">How to Reduce CGT on Property Disposal in the UK: A Practical Guide for Landlords</a></li>
 <li><a href="/blog/capital-gains-tax/cgt-property-transfer-spouse">CGT on Property Transfer to Spouse: Is It Exempt?</a></li>
 </ul>

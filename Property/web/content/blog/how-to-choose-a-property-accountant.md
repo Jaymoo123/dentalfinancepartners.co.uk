@@ -212,6 +212,6 @@ faqs:
 <h2>Related Reading</h2>
 
 <ul>
-<li><a href="/blog/property-accountant-services/best-property-accountant">How to Choose the Best Property Accountant for UK Landlords</a></li>
+<li><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">What Does a Property Accountant Do? Essential Services for UK Landlords</a></li>
 <li><a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">How Much Does a Property Accountant Cost: UK Pricing Guide 2026</a></li>
 </ul>

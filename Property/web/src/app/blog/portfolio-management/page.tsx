@@ -2,21 +2,22 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts, getCategorySlug, calculateReadTime } from "@/lib/blog";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { siteConfig } from "@/config/site";
 
 const categoryName = "Portfolio Management";
 const categorySlug = "portfolio-management";
 
 export const metadata: Metadata = {
-  title: `${categoryName} for Property Investors | Property Tax Partners`,
+  title: `${categoryName} for Property Investors | ${siteConfig.name}`,
   description: `Expert guidance on ${categoryName.toLowerCase()} for UK property investors. Practical advice, tax planning strategies, and compliance insights.`,
   alternates: {
-    canonical: `https://www.propertytaxpartners.co.uk/blog/${categorySlug}`,
+    canonical: `${siteConfig.url}/blog/${categorySlug}`,
   },
   openGraph: {
     title: `${categoryName} for Property Investors`,
     description: `Expert guidance on ${categoryName.toLowerCase()} for UK property investors.`,
-    url: `https://www.propertytaxpartners.co.uk/blog/${categorySlug}`,
-    siteName: "Property Tax Partners",
+    url: `${siteConfig.url}/blog/${categorySlug}`,
+    siteName: siteConfig.name,
     type: "website",
   },
   twitter: {
@@ -38,8 +39,8 @@ export default function PortfolioManagementPage() {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.propertytaxpartners.co.uk" },
-          { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.propertytaxpartners.co.uk/blog" },
+          { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+          { "@type": "ListItem", position: 2, name: "Blog", item: `${siteConfig.url}/blog` },
           { "@type": "ListItem", position: 3, name: categoryName },
         ],
       },
@@ -47,7 +48,7 @@ export default function PortfolioManagementPage() {
         "@type": "CollectionPage",
         name: `${categoryName} for Property Investors`,
         description: metadata.description,
-        url: `https://www.propertytaxpartners.co.uk/blog/${categorySlug}`,
+        url: `${siteConfig.url}/blog/${categorySlug}`,
       },
     ],
   };

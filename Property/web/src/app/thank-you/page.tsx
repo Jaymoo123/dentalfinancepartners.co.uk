@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Thank you | Property Accountants UK",
+  title: `Thank you | ${siteConfig.name}`,
   description: "Your enquiry has been received.",
   robots: { index: false, follow: true },
   twitter: {
     card: "summary_large_image",
-    title: "Thank you | Property Accountants UK",
+    title: `Thank you | ${siteConfig.name}`,
     description: "Your enquiry has been received.",
   },
 };

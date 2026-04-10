@@ -1,5 +1,5 @@
 ---
-title: "Rental Income Tax UK: Complete Guide for Landlords 2025"
+title: "Rental Income Tax UK: Complete Guide for Landlords 2026"
 slug: "rental-income-tax-uk-complete-guide-landlords"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords"
 date: "2026-03-29"
@@ -9,7 +9,7 @@ metaTitle: "Rental Income Tax UK: Complete Guide for Landlords 2026"
 metaDescription: "UK rental income is taxed at 20-45% depending on total earnings. Tax rates, allowable expenses, Section 24 rules, and how to calculate your bill."
 altText: "UK landlord calculating rental income tax on laptop with property documents and calculator"
 image: ""
-h1: "Rental Income Tax UK: Complete Guide for Landlords 2025"
+h1: "Rental Income Tax UK: Complete Guide for Landlords 2026"
 summary: "Understanding rental income tax is essential for UK landlords. This guide covers tax rates, allowable expenses, Section 24 restrictions, and practical examples."
 schema: ""
 faqs:

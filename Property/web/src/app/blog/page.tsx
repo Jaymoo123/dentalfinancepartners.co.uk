@@ -20,6 +20,12 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/blog`,
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog | Property Tax Insights for UK Landlords",
+    description:
+      "Property tax articles for UK landlords — Section 24, MTD, incorporation, portfolio management. Written by specialist property accountants.",
+  },
 };
 
 export default function BlogIndexPage() {

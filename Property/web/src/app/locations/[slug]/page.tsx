@@ -159,9 +159,7 @@ export default async function LocationPage({ params }: Props) {
   }
 
   const cityName = slug.charAt(0).toUpperCase() + slug.slice(1);
-  const posts = getAllPosts()
-    .filter((p) => p.category?.toLowerCase().includes("property") || p.category?.toLowerCase().includes("landlord"))
-    .slice(0, 5);
+  const posts = getAllPosts().slice(0, 5);
 
   const localBusinessSchema = buildLocalBusinessJsonLd({
     name: siteConfig.name,

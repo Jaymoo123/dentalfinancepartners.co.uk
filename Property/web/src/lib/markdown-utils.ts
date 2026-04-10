@@ -1,17 +1,24 @@
 export function addHeadingIds(html: string): string {
   const headingRegex = /<(h[23])>(.*?)<\/\1>/gi;
   let counter = 0;
+  const seen = new Set<string>();
 
   return html.replace(headingRegex, (match, tag, content) => {
     const text = content.replace(/<[^>]*>/g, "");
-    const id = text
+    const baseId = text
       .toLowerCase()
       .replace(/[^a-z0-9\s-]/g, "")
       .replace(/\s+/g, "-")
       .replace(/-+/g, "-")
-      .replace(/^-|-$/g, "");
-    
-    const uniqueId = id || `heading-${counter++}`;
+      .replace(/^-|-$/g, "") || `heading-${counter++}`;
+
+    let uniqueId = baseId;
+    let suffix = 2;
+    while (seen.has(uniqueId)) {
+      uniqueId = `${baseId}-${suffix++}`;
+    }
+    seen.add(uniqueId);
+
     return `<${tag} id="${uniqueId}">${content}</${tag}>`;
   });
 }

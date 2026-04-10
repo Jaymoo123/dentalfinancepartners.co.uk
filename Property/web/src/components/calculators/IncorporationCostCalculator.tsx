@@ -5,12 +5,11 @@ import { useState } from "react";
 export function IncorporationCostCalculator() {
   const [propertyValue, setPropertyValue] = useState(300000);
   const [purchasePrice, setPurchasePrice] = useState(200000);
-  const [mortgageBalance, setMortgageBalance] = useState(150000);
   const [annualRentalIncome, setAnnualRentalIncome] = useState(24000);
   const [mortgageInterest, setMortgageInterest] = useState(9000);
   const [taxBand, setTaxBand] = useState<"basic" | "higher" | "additional">("higher");
 
-  const capitalGain = propertyValue - purchasePrice;
+  const capitalGain = Math.max(0, propertyValue - purchasePrice);
   const cgtRate = taxBand === "basic" ? 0.18 : 0.24;
   const cgtCost = capitalGain * cgtRate;
   
@@ -25,7 +24,7 @@ export function IncorporationCostCalculator() {
   const section24Credit = mortgageInterest * 0.20;
   const personalTax = personalTaxBeforeCredit - section24Credit;
   
-  const companyProfit = annualRentalIncome - mortgageInterest;
+  const companyProfit = Math.max(0, annualRentalIncome - mortgageInterest);
   const corporationTax = companyProfit * 0.19;
   const dividendAfterCorpTax = companyProfit - corporationTax;
   const dividendTaxRate = taxBand === "basic" ? 0.0875 : taxBand === "higher" ? 0.3375 : 0.3935;
@@ -82,25 +81,6 @@ export function IncorporationCostCalculator() {
                 step="10000"
                 value={purchasePrice}
                 onChange={(e) => setPurchasePrice(Number(e.target.value))}
-                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
-              />
-            </div>
-          </div>
-
-          <div>
-            <label htmlFor="mortgage-balance" className="block text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wider mb-2">
-              Outstanding mortgage
-            </label>
-            <div className="flex items-center gap-2">
-              <span className="text-xl sm:text-2xl font-bold text-slate-900">£</span>
-              <input
-                id="mortgage-balance"
-                type="number"
-                inputMode="numeric"
-                min="0"
-                step="10000"
-                value={mortgageBalance}
-                onChange={(e) => setMortgageBalance(Number(e.target.value))}
                 className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
               />
             </div>

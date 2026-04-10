@@ -5,8 +5,8 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-servi
 date: "2026-04-01"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
-metaTitle: "Bristol Property Accountant | Expert Tax Services"
-metaDescription: "Specialist Bristol property accountant services for landlords. Expert tax advice, compliance, and MTD support for Bristol property investors."
+metaTitle: "Bristol Property Accountant | Landlord Tax & CGT Advice"
+metaDescription: "Specialist Bristol property accountant for landlords. Tax returns, Section 24, capital gains tax advice, and rental accounts. Local expertise."
 altText: "Bristol property accountant working with UK landlord on tax planning and property portfolio management"
 image: ""
 h1: "Bristol Property Accountant: Expert Services for Local Landlords"
@@ -40,16 +40,35 @@ faqs:
 <p>Our specialist team provides comprehensive accounting and tax services specifically designed for property investors and landlords in the Bristol area.</p>
 
 <h3>Annual Tax Returns and Compliance</h3>
-
-<p>We handle your Self Assessment returns, ensuring all rental income, allowable expenses, and capital allowances are correctly calculated. This is particularly important for Bristol landlords dealing with mixed residential and HMO portfolios, where different rules can apply.</p>
-
-<p>For example, a landlord with three properties in Southville earning £52,000 rental income annually needs careful planning to manage their tax liability, especially if they're caught by Section 24 restrictions on mortgage interest relief.</p>
+<h3>Annual Tax Returns and Rental Accounts</h3>
+<p>We handle your complete Self Assessment tax return, including the preparation of detailed rental accounts. This service ensures all rental income, allowable expenses, and capital allowances are correctly calculated and reported on the SA105 property pages. For Bristol landlords, this is particularly important for mixed residential and HMO portfolios, where different rules can apply.</p>
+<p>Our rental accounting service includes:</p>
+<ul>
+<li>Compiling and reconciling income from all properties and tenancies.</li>
+<li>Claiming all allowable expenses, including mortgage interest (subject to Section 24), repairs, agent fees, insurance, and utility costs for HMOs.</li>
+<li>Calculating and applying capital allowances for furnishings and equipment, especially relevant for Bristol's student lets.</li>
+<li>Preparing the annual tax computation and ensuring full compliance with HMRC filing deadlines.</li>
+</ul>
+<p>For example, a landlord with three properties in Southville earning £52,000 rental income annually needs careful planning to manage their tax liability, especially if they're caught by Section 24 restrictions on mortgage interest relief. We provide clear, detailed rental accounts that form the basis of this planning.</p>
 
 <h3>Section 24 Tax Planning</h3>
 
 <p>The mortgage interest restriction continues to impact Bristol landlords significantly. We analyse your specific situation and explore strategies like incorporation, portfolio restructuring, or timing of property sales to minimise the impact.</p>
 
 <p>A typical Bristol landlord with four BTL properties and £180,000 in mortgage debt might save thousands annually by moving to a limited company structure, but this requires careful planning and professional execution.</p>
+
+
+
+<h3>Capital Gains Tax Advice for Bristol Property Sales</h3>
+<p>Given Bristol's strong property price growth, capital gains tax (CGT) planning is a critical service for landlords considering selling. Properties purchased in areas like Bedminster or Easton several years ago may now have substantial gains that need careful management to minimise the tax bill.</p>
+<p>Our specialist CGT advice for Bristol landlords includes:</p>
+<ul>
+<li><strong>Calculating Your Liability:</strong> Accurately working out your taxable gain after deducting purchase costs, improvement expenses, and the annual CGT allowance (£3,000 for 2025/26).</li>
+<li><strong>Principal Private Residence Relief (PPR):</strong> Advising on whether you can claim relief if you've lived in the property at any point.</li>
+<li><strong>Timing of Disposals:</strong> Strategically planning the sale date across tax years to use multiple annual allowances.</li>
+<li><strong>Reporting and Payment:</strong> Ensuring the CGT on property disposal is reported and paid to HMRC within 60 days of completion, as required.</li>
+</ul>
+<p>We can model different scenarios, such as selling a portfolio gradually or transferring property to a spouse, to find the most tax-efficient approach for your Bristol investments.</p>
 
 <h3>Making Tax Digital Preparation</h3>
 
@@ -63,9 +82,9 @@ faqs:
 
 <p>Bristol's diverse property market creates varied tax scenarios. Student properties might qualify for different capital allowances due to furnished lettings rules, while period properties in areas like Redland often have significant renovation costs that need careful treatment for tax purposes.</p>
 
-<p>Capital gains planning is particularly relevant for Bristol landlords, given the city's strong property price growth over recent years. Properties purchased in areas like Bedminster or Easton five years ago may now have substantial unrealised gains that need careful management.</p>
+<p>Capital gains planning is particularly relevant for Bristol landlords, given the city's strong property price growth over recent years. For a complete guide, see our article on <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital Gains Tax on Property</a>. Properties purchased in areas like Bedminster or Easton five years ago may now have substantial unrealised gains that need careful management.</p>
 
-<p>Business rates on HMOs, council tax on void properties, and the interaction between residential and commercial property rules all require specialist knowledge that a general accountant may lack.</p>
+<p>Business rates on HMOs, council tax on void properties, and the interaction between residential and commercial property rules all require specialist knowledge that a general accountant may lack. Learn more about <a href="/blog/landlord-tax-essentials/property-business-rates-council-tax-landlords">property business rates and council tax for landlords</a>.</p>
 
 <h2>Local Expertise Combined with National Standards</h2>
 
@@ -88,6 +107,6 @@ faqs:
 <h2>Related Reading</h2>
 
 <ul>
-<li><a href="/blog/property-accountant-services/best-property-accountant">How to Choose the Best Property Accountant for UK Landlords</a></li>
+<li><a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">How to Choose the Best Property Accountant for UK Landlords</a></li>
 <li><a href="/blog/property-accountant-services/property-accountant-near-me">Property Accountant Near Me: Finding the Right UK Property Tax Specialist</a></li>
 </ul>

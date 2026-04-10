@@ -1,56 +1,71 @@
 # Multi-Niche Accounting Platform
 
-AI-powered accounting websites for UK niche markets. Automated content generation, SEO optimization, and lead capture.
+4 UK niche accountancy websites. All live, deployed on Vercel, with automated content generation and lead capture.
 
-## 🚀 Active Niches
+| Site | Domain | Folder |
+|------|--------|--------|
+| Property Tax Partners | [propertytaxpartners.co.uk](https://www.propertytaxpartners.co.uk) | `Property/` |
+| Dental Finance Partners | [dentalfinancepartners.co.uk](https://www.dentalfinancepartners.co.uk) | `Dentists/` |
+| Medical Accountants UK | [medicalaccountantsuk.co.uk](https://www.medicalaccountantsuk.co.uk) | `Medical/` |
+| Accounts for Lawyers | [accountsforlawyers.co.uk](https://www.accountsforlawyers.co.uk) | `Solicitors/` |
 
-- **Dentists** - Dental Finance Partners ([dentalfinancepartners.co.uk](https://www.dentalfinancepartners.co.uk))
-- **Property** - Property Tax Partners ([propertytaxpartners.co.uk](https://www.propertytaxpartners.co.uk))
-- **Medical** - Medical Accountants UK (in development)
+## For AI Agents — Read These First
 
-## 📁 Documentation
+| What | Where | Purpose |
+|------|-------|---------|
+| Project architecture | `.cursor/rules/project-context.mdc` | Full context: folder structure, config system, blog pipeline, site differences, gotchas, conventions |
+| Issue tracking protocol | `.cursor/rules/agent-workflow.mdc` | How to check, log, categorise, and resolve issues |
+| Live issue log | `Admin/ISSUE_LOG.md` | All open and resolved issues with severity, site scope, and file paths |
+| Historical audit | `Admin/PLATFORM_AUDIT_2026-04-02.md` | 32-item audit snapshot from April 2026 |
+| Editorial pipeline lessons | `Admin/EDITORIAL_PIPELINE_LESSONS.md` | Known failure modes, root causes, and code guardrails for the content optimization pipeline |
 
-All administrative documentation is in the `Admin/` folder:
-- Implementation summaries
-- Deployment checklists
-- Security documentation
-- Test results
-- System architecture notes
+**Before reporting any bug or issue**, check `Admin/ISSUE_LOG.md` first. The Quick Lookup index at the top shows which issues affect each site.
 
-## 🔍 Key Documents
+**Before running the editorial optimization pipeline**, read `Admin/EDITORIAL_PIPELINE_LESSONS.md` for known failure modes and the guardrail checklist.
 
-### Setup & Deployment
-- `DEPLOYMENT_CHECKLIST.md` - Complete deployment guide
-- `DEPLOYMENT_SUCCESS_MARCH_29.md` - Latest deployment summary
-- `SECURITY_FIXES_APPLIED.md` - Security implementation notes
-
-### System Documentation
-- `AGENT_SYSTEM_READY.md` - Agent system overview
-- `COMPLETE_TEST_SUMMARY.md` - Full test results
-- `END_TO_END_TEST_PLAN.md` - Testing strategy
-
-### Implementation Notes
-- `RISK_MANAGEMENT_COMPLETE.md` - Risk management system
-- `SYSTEM_TEST_RESULTS.md` - Test outcomes
-- `TEST_STATUS.md` - Current testing status
-
-## 📝 Note
-
-All future administrative `.md` files should be created in this folder to maintain organization.
-
----
-
-## 🤖 Niche Generator
-
-Generate a complete niche site in 1-2 hours:
+## Quick Start
 
 ```bash
-python agents/generate_niche.py \
-  --niche-id pharmacy \
-  --display-name "Pharmacy Accountants UK" \
-  --target-keyword "pharmacy accountant"
+# Dev server (from any site's web/ directory)
+cd Property/web && npm run dev    # http://localhost:3000
+cd Dentists/web && npm run dev
+cd Medical/web && npm run dev
+cd Solicitors/web && npm run dev
+
+# Build / Lint
+npm run build
+npm run lint
 ```
 
-See `Admin/NICHE_GENERATOR_GUIDE.md` for details.
+## Folder Structure
 
-**Last Updated:** March 30, 2026
+```
+Accounting/
+├── Property/           # Each site follows this pattern:
+│   ├── niche.config.json   # Brand, domain, categories, nav, locations, SEO, lead form
+│   ├── web/                # Next.js 15 app (src/app/, src/components/, content/blog/)
+│   └── pipeline/           # Python blog generation (config + generator)
+├── Dentists/           # Same structure
+├── Medical/            # Same structure (flat blog URLs)
+├── Solicitors/         # Same structure (different slugifyCategory)
+├── shared/web-core/    # Canonical shared TS: lib, components, types
+├── agents/             # Python orchestration (coordinator, blog gen, analytics, risk)
+├── scripts/            # Utilities: scaffold, validate, sync, migrate
+├── supabase/           # DB migrations
+├── Admin/              # Audit docs, issue log, keyword CSVs
+├── .cursor/rules/      # AI agent rules (project-context + agent-workflow)
+└── .github/workflows/  # CI/CD (build, content quality, daily pipeline, analytics)
+```
+
+## Key Config Files
+
+Each site is driven by `niche.config.json` → loaded by `src/config/niche-loader.ts` → mapped to `siteConfig` in `src/config/site.ts`. All pages, components, and schema reference `siteConfig`.
+
+## Environment Variables
+
+Required in each site's `web/.env.local`:
+- `NEXT_PUBLIC_SITE_URL`
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+
+Last updated: 9 April 2026

@@ -107,5 +107,5 @@ faqs:
 
 <ul>
 <li><a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 Tax Relief for Landlords: Complete Guide</a></li>
-<li><a href="/blog/landlord-tax-essentials/accountant-tax-planning-services">Professional Accountant Tax Planning Services for UK Property Investors</a></li>
+<li><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Professional Accountant Tax Planning Services for UK Property Investors</a></li>
 </ul>
