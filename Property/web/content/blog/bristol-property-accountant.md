@@ -39,7 +39,6 @@ faqs:
 
 <p>Our specialist team provides comprehensive accounting and tax services specifically designed for property investors and landlords in the Bristol area.</p>
 
-<h3>Annual Tax Returns and Compliance</h3>
 <h3>Annual Tax Returns and Rental Accounts</h3>
 <p>We handle your complete Self Assessment tax return, including the preparation of detailed rental accounts. This service ensures all rental income, allowable expenses, and capital allowances are correctly calculated and reported on the SA105 property pages. For Bristol landlords, this is particularly important for mixed residential and HMO portfolios, where different rules can apply.</p>
 <p>Our rental accounting service includes:</p>
@@ -56,8 +55,6 @@ faqs:
 <p>The mortgage interest restriction continues to impact Bristol landlords significantly. We analyse your specific situation and explore strategies like incorporation, portfolio restructuring, or timing of property sales to minimise the impact.</p>
 
 <p>A typical Bristol landlord with four BTL properties and £180,000 in mortgage debt might save thousands annually by moving to a limited company structure, but this requires careful planning and professional execution.</p>
-
-
 
 <h3>Capital Gains Tax Advice for Bristol Property Sales</h3>
 <p>Given Bristol's strong property price growth, capital gains tax (CGT) planning is a critical service for landlords considering selling. Properties purchased in areas like Bedminster or Easton several years ago may now have substantial gains that need careful management to minimise the tax bill.</p>

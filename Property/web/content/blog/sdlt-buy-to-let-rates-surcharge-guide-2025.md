@@ -71,57 +71,34 @@ faqs:
 
 <p>Here are three common scenarios showing how SDLT applies to buy-to-let purchases:</p>
 
-<h3>Example 1: £200,000 Buy-to-Let Property</h3>
 <ul>
-<li>Standard SDLT: £0 (below £250,000 threshold)</li>
-<li>5% surcharge: £10,000</li>
-<li><strong>Total SDLT: £10,000</strong></li>
-</ul>
-
-<h3>Example 2: £350,000 Buy-to-Let Property</h3>
-<ul>
-<li>Standard SDLT: £5,000 (£100,000 × 5%)</li>
-<li>5% surcharge: £17,500 (£350,000 × 5%)</li>
-<li><strong>Total SDLT: £22,500</strong></li>
-</ul>
-
-<h3>Example 3: £500,000 Buy-to-Let Property</h3>
-<ul>
-<li>Standard SDLT: £12,500 ((£250,000 × 0%) + (£250,000 × 5%))</li>
-<li>5% surcharge: £25,000 (£500,000 × 5%)</li>
-<li><strong>Total SDLT: £37,500</strong></li>
+<li><strong>£200,000 Property:</strong> Standard SDLT: £0 (below £250,000 threshold). 5% surcharge: £10,000. <strong>Total SDLT: £10,000</strong>.</li>
+<li><strong>£350,000 Property:</strong> Standard SDLT: £5,000 (£100,000 × 5%). 5% surcharge: £17,500 (£350,000 × 5%). <strong>Total SDLT: £22,500</strong>.</li>
+<li><strong>£500,000 Property:</strong> Standard SDLT: £12,500 ((£250,000 × 0%) + (£250,000 × 5%)). 5% surcharge: £25,000 (£500,000 × 5%). <strong>Total SDLT: £37,500</strong>.</li>
 </ul>
 
 <p>These calculations show why the surcharge is particularly punitive for lower-value properties — on a £200,000 property, the surcharge represents the entire SDLT bill.</p>
 
-<h2>Exemptions from the 5% SDLT Surcharge</h2>
+<h2>Exemptions and Reliefs from the 5% SDLT Surcharge</h2>
 
 <p>Several exemptions can reduce or eliminate the SDLT surcharge on buy-to-let purchases:</p>
 
-<h3>First-Time Buyer Relief (Limited Application)</h3>
-<p>First-time buyers purchasing properties up to £625,000 pay no SDLT on the first £425,000 and 5% on the remainder. However, this rarely applies to buy-to-let purchases since most first-time buyers purchase their main residence.</p>
-
-<h3>Replacement of Main Residence</h3>
-<p>If you're selling your main residence and buying a new one, you can reclaim the surcharge if you complete the sale within three years. This doesn't typically apply to pure buy-to-let purchases but can affect landlords moving home.</p>
-
-<h3>Corporate Exemptions (Limited)</h3>
-<p>Companies may qualify for exemptions in specific circumstances, such as property development or if the property will be used for commercial purposes. However, most buy-to-let companies pay the full surcharge.</p>
-
-<h3>Non-Residential Properties</h3>
-<p>The surcharge only applies to residential properties. Commercial properties, including shops with residential flats above (if sold as one unit and the commercial element is substantial), may avoid the surcharge entirely.</p>
+<ul>
+<li><strong>First-Time Buyer Relief (Limited Application):</strong> First-time buyers purchasing properties up to £625,000 pay no SDLT on the first £425,000 and 5% on the remainder. However, this rarely applies to buy-to-let purchases since most first-time buyers purchase their main residence.</li>
+<li><strong>Replacement of Main Residence:</strong> If you're selling your main residence and buying a new one, you can reclaim the surcharge if you complete the sale within three years. This doesn't typically apply to pure buy-to-let purchases but can affect landlords moving home.</li>
+<li><strong>Corporate Exemptions (Limited):</strong> Companies may qualify for exemptions in specific circumstances, such as property development or if the property will be used for commercial purposes. However, most buy-to-let companies pay the full surcharge.</li>
+<li><strong>Non-Residential Properties:</strong> The surcharge only applies to residential properties. Commercial properties, including shops with residential flats above (if sold as one unit and the commercial element is substantial), may avoid the surcharge entirely.</li>
+</ul>
 
 <h2>SDLT Planning Strategies for Buy-to-Let Investors</h2>
 
 <p>Understanding SDLT rates can help you structure purchases more efficiently:</p>
 
-<h3>Consider Purchase Timing</h3>
-<p>If you're selling an existing property, completing the sale before purchasing your next buy-to-let can avoid the surcharge temporarily. You can then reclaim the surcharge when you complete your sale.</p>
-
-<h3>Mixed-Use Properties</h3>
-<p>Properties with substantial commercial elements may qualify for commercial SDLT rates (up to 5% with no surcharge). This requires careful evaluation of the commercial vs residential split.</p>
-
-<h3>Corporate vs Personal Ownership</h3>
-<p>Both companies and individuals pay the 5% surcharge, but companies may offer other tax advantages despite the SDLT cost. The <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 rules</a> make company ownership particularly attractive for higher-rate taxpayers.</p>
+<ul>
+<li><strong>Consider Purchase Timing:</strong> If you're selling an existing property, completing the sale before purchasing your next buy-to-let can avoid the surcharge temporarily. You can then reclaim the surcharge when you complete your sale.</li>
+<li><strong>Mixed-Use Properties:</strong> Properties with substantial commercial elements may qualify for commercial SDLT rates (up to 5% with no surcharge). This requires careful evaluation of the commercial vs residential split.</li>
+<li><strong>Corporate vs Personal Ownership:</strong> Both companies and individuals pay the 5% surcharge, but companies may offer other tax advantages despite the SDLT cost. The <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 rules</a> make company ownership particularly attractive for higher-rate taxpayers.</li>
+</ul>
 
 <h2>How SDLT Fits into Overall Property Investment Tax Planning</h2>
 
@@ -135,7 +112,7 @@ faqs:
 
 <p>The 5% surcharge significantly increases upfront costs, making it crucial to factor SDLT into your return calculations when evaluating buy-to-let investments.</p>
 
-<h2>SDLT Payment and Reporting Requirements</h2>
+<h2>SDLT Payment, Reporting and Regional Variations</h2>
 
 <p>You must pay SDLT within 14 days of completion and submit your SDLT return online. Key points include:</p>
 
@@ -146,15 +123,12 @@ faqs:
 <li>Professional advice helps ensure correct calculation and potential reliefs are claimed</li>
 </ul>
 
-<h2>Regional Variations: Scotland and Wales</h2>
-
 <p>Different rules apply outside England and Northern Ireland:</p>
 
-<h3>Scotland (LBTT)</h3>
-<p>Land and Buildings Transaction Tax includes a 6% Additional Dwelling Supplement (ADS) on additional residential properties, higher than England's 5% surcharge.</p>
-
-<h3>Wales (LTT)</h3>
-<p>Land Transaction Tax applies a 4% surcharge on additional residential properties, lower than England's rate but still significant.</p>
+<ul>
+<li><strong>Scotland (LBTT):</strong> Land and Buildings Transaction Tax includes a 6% Additional Dwelling Supplement (ADS) on additional residential properties, higher than England's 5% surcharge.</li>
+<li><strong>Wales (LTT):</strong> Land Transaction Tax applies a 4% surcharge on additional residential properties, lower than England's rate but still significant.</li>
+</ul>
 
 <p>These regional differences can influence where you choose to invest, particularly for properties near borders.</p>
 

@@ -24,41 +24,29 @@ faqs:
 ---
 
 <p><a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital gains tax</a> on property sale UK 2026 remains a significant consideration for landlords and property investors. With the annual exempt amount continuing its reduction and property values remaining high, understanding your CGT liability is crucial when planning property disposals.</p>
-
 <p>The rules around capital gains tax can significantly impact your net proceeds from a property sale. Getting the calculations wrong or missing available reliefs could cost thousands in unnecessary tax.</p>
 
-<h2>CGT Rates for Property Sales in 2026</h2>
+<h2>CGT Rates and Annual Exempt Amount for 2026</h2>
 <p>For the 2025/26 tax year, the capital gains tax rates on residential property disposals are:</p>
 <ul>
 <li><strong>18%</strong> for basic rate taxpayers</li>
 <li><strong>24%</strong> for higher and additional rate taxpayers</li>
 </ul>
-<p>These are the definitive rates for property sales completing in the 2026 tax year. They apply to the taxable gain, which is calculated after deducting your annual exempt amount (£3,000 for 2025/26) and all allowable costs.</p>
-<p>Your income tax band for CGT purposes is determined by adding the taxable gain to your other taxable income (like salary or rental profits) for the year.</p>
+<p>These are the definitive rates for property sales completing in the 2026 tax year. They apply to the taxable gain, which is calculated after deducting your annual exempt amount and all allowable costs. Your income tax band for CGT purposes is determined by adding the taxable gain to your other taxable income (like salary or rental profits) for the year.</p>
 <p><strong>Example:</strong> A landlord with a £35,000 salary makes a £60,000 property gain. The personal allowance and basic rate band for 2025/26 mean they would pay 18% CGT on the first portion of the gain that falls within the remaining basic rate band, and 24% on the portion that pushes them into the higher rate band.</p>
-
-<h2>Annual Exempt Amount for 2026</h2>
-
 <p>The annual exempt amount for capital gains tax continues its significant reduction:</p>
-
 <ul>
 <li><strong>2025/26:</strong> £3,000</li>
 <li><strong>2024/25:</strong> £3,000</li>
 <li><strong>2023/24:</strong> £6,000</li>
 </ul>
-
 <p>This dramatic reduction from the previous £12,300 means most property sales now generate taxable gains. Even modest price increases since purchase often exceed the £3,000 exemption.</p>
 
 <h2>Calculating Your Capital Gain</h2>
-
 <p>Your capital gains tax on property sale UK 2026 is calculated on the gain, not the sale price. The basic calculation is:</p>
-
 <p><strong>Sale proceeds - Purchase costs - Improvement costs - Sale costs = Taxable gain</strong></p>
-
 <h3>Allowable Deductions</h3>
-
 <p>You can deduct several costs when calculating your gain:</p>
-
 <ul>
 <li>Original purchase price</li>
 <li>Stamp duty and legal fees on purchase</li>
@@ -66,64 +54,46 @@ faqs:
 <li>Capital improvements (not repairs or maintenance)</li>
 <li>Indexation allowance (for properties owned before April 1998)</li>
 </ul>
-
 <p>A landlord selling a £400,000 property bought for £250,000 with £20,000 improvements and £15,000 sale costs would have a gain of £115,000 before the annual exemption.</p>
 
 <h2>Key Reliefs and Exemptions</h2>
-
 <h3>Principal Private Residence Relief</h3>
-
 <p>If you lived in the property as your main home at any point, you might qualify for partial <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">principal private residence relief</a>. The final 9 months of ownership always qualify for relief, regardless of whether you lived there.</p>
-
 <h3>Lettings Relief</h3>
-
 <p>Lettings relief was significantly restricted from April 2020. It now only applies if you shared occupancy with tenants, making it largely irrelevant for most BTL properties.</p>
-
 <h3>Business Asset Disposal Relief</h3>
-
 <p>This relief (formerly Entrepreneurs' Relief) typically doesn't apply to residential property investments. It's mainly relevant for commercial property used in a business.</p>
 
-<h2>Timing Your Property Sale</h2>
-
+<h2>Timing and Planning Strategies</h2>
 <p>The timing of your property sale can significantly impact your capital gains tax liability. Consider these factors:</p>
-
 <h3>Tax Year Planning</h3>
-
 <p>Spreading disposals across tax years can help utilise multiple annual exemptions. However, with only £3,000 available each year, this strategy has limited impact for high-value properties.</p>
-
 <h3>Income Management</h3>
-
 <p>If possible, time sales for years when your other income is lower. This might keep you in the basic rate band, reducing CGT from 24% to 18%.</p>
+<h3>Loss Harvesting</h3>
+<p>Capital losses can offset gains in the same tax year or be carried forward indefinitely. Consider realising losses on underperforming properties to reduce overall CGT liability.</p>
+<h3>Spousal Transfers</h3>
+<p>Transfers between spouses are generally tax-free. This can help utilise both partners' annual exemptions or take advantage of different tax rates.</p>
+<h3>Professional Advice</h3>
+<p>Given the complexity and potential costs involved, consider seeking specialist advice. Our <a href="/services">services</a> include CGT planning and compliance support for property investors. The interaction between various reliefs, timing considerations, and structural options means professional guidance often saves more than it costs.</p>
 
 <h2>Company vs Personal Ownership</h2>
-
 <p>Properties held in companies face <a href="/blog/incorporation-and-company-structures/accountant-corporation-tax-property-companies">corporation tax on gains</a>, not CGT. For 2025/26, corporation tax rates are:</p>
-
 <ul>
 <li><strong>19%</strong> on profits up to £50,000</li>
 <li><strong>25%</strong> on profits over £250,000</li>
 <li><strong>Marginal rate</strong> between £50,000-£250,000</li>
 </ul>
-
 <p>This can provide significant savings compared to higher rate CGT. However, <a href="/incorporation">incorporation</a> brings other considerations including stamp duty costs and ongoing compliance requirements.</p>
 
-<h2>Reporting and Payment Deadlines</h2>
-
+<h2>Reporting, Payment and Record Keeping</h2>
 <p>Capital gains tax on property sale UK 2026 must be reported within strict <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">deadlines</a>:</p>
-
 <ul>
 <li><strong>60 days</strong> from completion to report the disposal</li>
 <li><strong>31 January</strong> following the tax year for any additional tax due</li>
 </ul>
-
 <p>You must make a payment on account within 60 days, even if you expect a refund after claiming reliefs or losses.</p>
-
-<h2>Record Keeping Requirements</h2>
-
-<p>Maintain detailed records of all property-related costs and improvements. HMRC can enquire into disposals for up to four years after the filing deadline, or longer if they suspect deliberate errors.</p>
-
-<p>Key documents include:</p>
-
+<p>Maintain detailed records of all property-related costs and improvements. HMRC can enquire into disposals for up to four years after the filing deadline, or longer if they suspect deliberate errors. Key documents include:</p>
 <ul>
 <li>Original purchase documentation</li>
 <li>Receipts for all improvements and capital expenditure</li>
@@ -131,24 +101,7 @@ faqs:
 <li>Evidence of any periods of personal occupation</li>
 </ul>
 
-<h2>Planning Strategies</h2>
-
-<h3>Loss Harvesting</h3>
-
-<p>Capital losses can offset gains in the same tax year or be carried forward indefinitely. Consider realising losses on underperforming properties to reduce overall CGT liability.</p>
-
-<h3>Spousal Transfers</h3>
-
-<p>Transfers between spouses are generally tax-free. This can help utilise both partners' annual exemptions or take advantage of different tax rates.</p>
-
-<h3>Professional Advice</h3>
-
-<p>Given the complexity and potential costs involved, consider seeking specialist advice. Our <a href="/services">services</a> include CGT planning and compliance support for property investors.</p>
-
-<p>The interaction between various reliefs, timing considerations, and structural options means professional guidance often saves more than it costs.</p>
-
 <h2>Related Reading</h2>
-
 <ul>
 <li><a href="/blog/capital-gains-tax/reduce-cgt-property-disposal-uk">How to Reduce CGT on Property Disposal in the UK: A Practical Guide for Landlords</a></li>
 </ul>

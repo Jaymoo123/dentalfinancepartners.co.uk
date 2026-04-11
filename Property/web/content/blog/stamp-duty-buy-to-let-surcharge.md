@@ -52,18 +52,25 @@ faqs:
 
 <p>It doesn't matter whether your existing property is mortgaged or owned outright. Even if you live abroad but own UK property, you'll still pay the surcharge on additional purchases.</p>
 
-<h2>Exemptions from the Surcharge</h2>
+<h2>Exemptions and Planning Strategies</h2>
 
 <p>You won't pay the 5% additional rate if:</p>
-
 <ul>
 <li>You're a first-time buyer purchasing your main residence</li>
 <li>You're replacing your main residence (selling your current home on the same day or within 36 months)</li>
 <li>You inherit a property and don't already own residential property</li>
 <li>Your spouse or civil partner owns the existing property and you're buying in your sole name</li>
 </ul>
-
 <p>The main residence replacement exemption allows you to complete your purchase first, then sell your existing home within 36 months to claim a refund of the surcharge.</p>
+
+<p>Several strategies can help manage stamp duty costs:</p>
+<ul>
+<li><strong>Timing purchases:</strong> If selling an existing property, complete both transactions on the same day to avoid the surcharge</li>
+<li><strong>Joint ownership:</strong> Buying with a spouse who doesn't own property can avoid the surcharge in some cases</li>
+<li><strong>Property selection:</strong> Focus on higher-yield properties to offset the additional upfront cost</li>
+<li><strong>Portfolio planning:</strong> Consider the total tax position, including ongoing income tax and potential capital gains</li>
+</ul>
+<p>The key is viewing stamp duty as part of your total tax burden rather than an isolated cost. Changes to mortgage interest relief and dividend tax rates often have a bigger long-term impact than the upfront stamp duty charge.</p>
 
 <h2>Impact on Property Investment Returns</h2>
 
@@ -71,24 +78,11 @@ faqs:
 
 <p>This additional cost means you need to hold properties longer to achieve positive returns, especially when combined with other recent changes like Section 24 mortgage interest restrictions. Many investors now focus on higher-yield properties or consider <a href="/incorporation">company structures</a> to improve overall tax efficiency.</p>
 
-<h2>Company Purchases and Stamp Duty</h2>
+<h2>Company Purchases and Incorporation</h2>
 
 <p>When you buy through a limited company, you always pay the higher rates regardless of whether the company owns other properties. There's no equivalent to the main residence exemption for companies.</p>
 
-<p>However, companies benefit from different tax treatment on rental profits and capital gains, which can offset the higher stamp duty over time. This makes <a href="/incorporation">incorporation</a> worth considering for larger portfolios despite the upfront costs.</p>
-
-<h2>Planning Around the Surcharge</h2>
-
-<p>Several strategies can help manage stamp duty costs:</p>
-
-<ul>
-<li><strong>Timing purchases:</strong> If selling an existing property, complete both transactions on the same day to avoid the surcharge</li>
-<li><strong>Joint ownership:</strong> Buying with a spouse who doesn't own property can avoid the surcharge in some cases</li>
-<li><strong>Property selection:</strong> Focus on higher-yield properties to offset the additional upfront cost</li>
-<li><strong>Portfolio planning:</strong> Consider the total tax position, including ongoing income tax and potential capital gains</li>
-</ul>
-
-<p>The key is viewing stamp duty as part of your total tax burden rather than an isolated cost. Changes to mortgage interest relief and dividend tax rates often have a bigger long-term impact than the upfront stamp duty charge.</p>
+<p>However, companies benefit from different tax treatment on rental profits and capital gains, which can offset the higher stamp duty over time. This makes <a href="/incorporation">incorporation</a> worth considering for larger portfolios despite the upfront costs. Companies benefit from corporation tax rates (19% for profits up to £250,000, 25% main rate) and different capital gains tax treatment, which can improve overall tax efficiency for substantial portfolios.</p>
 
 <h2>Future Changes to Consider</h2>
 

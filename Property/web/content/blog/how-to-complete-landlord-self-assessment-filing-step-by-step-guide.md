@@ -58,7 +58,7 @@ faqs:
 
 <h2>Documents and Records You'll Need</h2>
 
-<p>Gather these documents before starting your landlord self assessment filing:</p>
+<p>Gather these documents before starting your landlord self assessment filing. Keep all records for at least five years after the filing deadline. Digital copies are acceptable, but ensure they're clear and complete.</p>
 
 <h3>Income Records</h3>
 <ul>
@@ -68,25 +68,19 @@ faqs:
 <li>Any other property-related income (parking, storage, etc.)</li>
 </ul>
 
-<h3>Expense Records</h3>
+<h3>Expense and Capital Records</h3>
 <ul>
 <li>Mortgage interest statements</li>
-<li>Property management fees</li>
+<li>Property management and letting agent fees</li>
 <li>Repair and maintenance receipts</li>
 <li>Insurance premiums</li>
-<li>Legal and professional fees</li>
-<li>Advertising and letting fees</li>
+<li>Legal and professional fees (e.g., accountancy fees, tenancy legal costs)</li>
+<li>Advertising costs</li>
 <li>Council tax and utilities (if landlord pays)</li>
-</ul>
-
-<h3>Capital Expenditure Records</h3>
-<ul>
-<li>Purchase receipts for furniture and equipment</li>
-<li>Improvement and renovation costs</li>
+<li>Purchase receipts for furniture and equipment (capital)</li>
+<li>Improvement and renovation costs (capital)</li>
 <li>Property purchase documents (if selling)</li>
 </ul>
-
-<p>Keep all records for at least five years after the filing deadline. Digital copies are acceptable, but ensure they're clear and complete.</p>
 
 <h2>SA105 Step by Step: Property Income Pages</h2>
 
@@ -198,44 +192,38 @@ Genuine repairs that restore the property to its original condition. Improvement
 <h3>Joint Ownership</h3>
 <p>If you own property jointly with someone else, each person reports their share of income and expenses on their own return. The default split is 50/50, but you can elect for actual beneficial ownership proportions.</p>
 
-<h3>Property Companies</h3>
-<p>If you own rental properties through a limited company, you don't use SA105. Instead, the company files corporation tax returns, and you report any dividends or salary on your personal return. Consider reading our guide on <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited companies</a>.</p>
+<h3>Property Companies and Incorporation</h3>
+<p>If you own rental properties through a limited company, you don't use SA105. Instead, the company files corporation tax returns (at 19% for profits up to £250k, 25% main rate), and you report any dividends or salary on your personal return. Consider reading our guide on <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited companies</a>. Consider incorporation if you have a complex portfolio, want to retain profits within a company, or are planning for inheritance.</p>
 
-<h2>Making Tax Digital Impact from April 2026</h2>
+<h2>Future Tax Changes and Digital Reporting</h2>
 
+<h3>Making Tax Digital Impact from April 2026</h3>
 <p>From 6 April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becomes mandatory for landlords with gross property income over £10,000. This means:</p>
-
 <ul>
 <li>Quarterly digital submissions to HMRC</li>
 <li>Compatible software required for record-keeping</li>
 <li>End-of-year reconciliation still needed</li>
 <li>Potential penalties for non-compliance</li>
 </ul>
-
 <p>Start preparing now by digitising your records and choosing appropriate software.</p>
 
-<h2>Property Tax Changes from April 2027</h2>
-
+<h3>Property Tax Changes from April 2027</h3>
 <p>A major change is coming from April 2027: separate property income tax rates will apply at 22% basic rate, 42% higher rate, and 47% additional rate. This is significantly different from general income tax rates, so plan accordingly.</p>
 
-<h2>When to Seek Professional Help</h2>
+<h2>Payment, Record-Keeping, and Professional Advice</h2>
 
-<p>Consider hiring a <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> if you:</p>
-
+<h3>Payment Options and Timing</h3>
+<p>If your return shows tax owed, you have several payment options:</p>
 <ul>
-<li>Own multiple properties or a complex portfolio</li>
-<li>Have significant capital gains from property sales</li>
-<li>Are considering incorporation</li>
-<li>Face HMRC enquiries or investigations</li>
-<li>Want to optimise your tax position</li>
+<li>Online banking or debit card (immediate)</li>
+<li>Direct debit (can be set up in advance)</li>
+<li>Bank transfer using your UTR as reference</li>
+<li>Telephone banking</li>
 </ul>
+<p>Allow three working days for payments to reach HMRC. Late payment interest applies from 1 February, currently at 7.75% per year.</p>
 
-<p>Professional fees are typically tax-deductible and can save more than they cost through proper planning and compliance.</p>
-
-<h2>Record-Keeping Best Practices</h2>
-
-<p>Maintain good records throughout the year to make filing easier:</p>
-
+<h3>Record-Keeping Best Practices</h3>
+<p>Maintain good records throughout the year to make filing easier and to support you in case of an HMRC enquiry:</p>
 <ul>
 <li>Use separate bank accounts for rental income and expenses</li>
 <li>Photograph all receipts and store digitally</li>
@@ -244,20 +232,16 @@ Genuine repairs that restore the property to its original condition. Improvement
 <li>Keep improvement records for future capital gains calculations</li>
 </ul>
 
-<p>Good record-keeping also helps if HMRC opens an enquiry into your return.</p>
-
-<h2>Payment Options and Timing</h2>
-
-<p>If your return shows tax owed, you have several payment options:</p>
-
+<h3>When to Seek Professional Help</h3>
+<p>Consider hiring a <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> if you:</p>
 <ul>
-<li>Online banking or debit card (immediate)</li>
-<li>Direct debit (can be set up in advance)</li>
-<li>Bank transfer using your UTR as reference</li>
-<li>Telephone banking</li>
+<li>Own multiple properties or a complex portfolio</li>
+<li>Have significant capital gains from property sales (CGT rates are 18% for basic rate, 24% for higher rate on residential property)</li>
+<li>Are considering incorporation</li>
+<li>Face HMRC enquiries or investigations</li>
+<li>Want to optimise your tax position</li>
 </ul>
-
-<p>Allow three working days for payments to reach HMRC. Late payment interest applies from 1 February, currently at 7.75% per year.</p>
+<p>Professional fees are typically tax-deductible and can save more than they cost through proper planning and compliance.</p>
 
 <h2>Planning for Next Year</h2>
 

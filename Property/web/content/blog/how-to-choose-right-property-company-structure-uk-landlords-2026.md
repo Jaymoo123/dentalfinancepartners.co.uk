@@ -32,7 +32,6 @@ faqs:
 <p>From April 2027, the stakes get even higher. Property income will be taxed at separate rates of 22% (basic), 42% (higher), and 47% (additional rate) — significantly higher than current income tax bands. This means a higher-rate taxpayer earning £75,000 from rentals will pay £31,500 in tax, compared to £30,000 under current rules.</p>
 
 <p>The key factors that determine the best property company structure include:</p>
-
 <ul>
 <li>Current and projected rental income levels</li>
 <li>Mortgage debt levels and interest costs</li>
@@ -44,13 +43,9 @@ faqs:
 <h2>Property Company Structure Options: Complete Breakdown</h2>
 
 <h3>Sole Trader (Individual Ownership)</h3>
-
 <p>Operating as a sole trader means owning properties in your personal name. This is the simplest structure and where most landlords start, but it comes with significant limitations under current tax rules.</p>
-
 <p><strong>How it works:</strong> All rental income and expenses are reported on your Self Assessment tax return. Profits are taxed as income tax at your marginal rate, and you're subject to Section 24 restrictions on mortgage interest relief.</p>
-
 <p><strong>Best for:</strong> Landlords with gross rental income under £30,000 annually, minimal mortgage debt, or those planning to exit property investment within 2-3 years.</p>
-
 <p><strong>Tax implications:</strong></p>
 <ul>
 <li>Income tax at 20%, 40%, or 45% on rental profits (rising to 22%, 42%, 47% from April 2027)</li>
@@ -59,14 +54,10 @@ faqs:
 <li>No corporation tax or dividend tax complications</li>
 </ul>
 
-<h3>Limited Company Structure</h3>
-
+<h3>Limited Company</h3>
 <p>A <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company</a> is increasingly popular among serious property investors. The company owns the properties and you're both director and shareholder.</p>
-
 <p><strong>How it works:</strong> The company pays corporation tax on profits, then distributes remaining funds as dividends (taxed as dividend income) or salary (subject to income tax and NICs).</p>
-
 <p><strong>Best for:</strong> Landlords with gross rental income above £50,000, significant mortgage debt, higher-rate taxpayers, or those planning long-term portfolio growth.</p>
-
 <p><strong>Tax implications:</strong></p>
 <ul>
 <li>Corporation tax at 19% (profits up to £250k) or 25% (above £250k)</li>
@@ -75,17 +66,13 @@ faqs:
 <li>CGT at 18%/24% on company disposals (with potential reliefs)</li>
 <li>3% SDLT surcharge on purchases (increased to 5% from October 2024)</li>
 </ul>
-
 <p>A practical example: A higher-rate taxpayer with £80,000 rental profit and £40,000 mortgage interest would save approximately £8,000 annually by incorporating, even after accounting for dividend tax on distributions.</p>
+<p>Within limited company structures, there's an important distinction between investment companies (holding rentals long-term) and trading companies (buying, developing, and selling properties quickly). Investment companies are subject to close company restrictions, while trading companies have more flexibility with profit extraction and capital allowances.</p>
 
-<h3>Partnership Structure</h3>
-
+<h3>Partnership</h3>
 <p>Partnerships allow multiple people to own property together, splitting income and expenses according to their partnership agreement. This can be formal (Limited Liability Partnership) or informal.</p>
-
 <p><strong>How it works:</strong> The partnership files a return showing total income and expenses, then each partner reports their share on individual tax returns. Partners are taxed as individuals on their share of profits.</p>
-
 <p><strong>Best for:</strong> Married couples or business partners wanting to split income tax efficiently, especially where partners have different tax rates or unused allowances.</p>
-
 <p><strong>Tax implications:</strong></p>
 <ul>
 <li>Each partner taxed individually on their share of profits</li>
@@ -94,20 +81,10 @@ faqs:
 <li>More administrative burden than sole trader ownership</li>
 </ul>
 
-<h3>Property Investment Company vs Property Trading Company</h3>
-
-<p>Within limited company structures, there's an important distinction between investment companies (holding rentals long-term) and trading companies (buying, developing, and selling properties quickly).</p>
-
-<p><strong>Investment companies:</strong> Subject to close company restrictions, limited capital allowances, and specific rules around distributions and loans to shareholders.</p>
-
-<p><strong>Trading companies:</strong> More flexibility with profit extraction, capital allowances on equipment, but rental income may be treated as investment income regardless.</p>
-
 <h2>Tax Efficiency Comparison: Real-World Examples</h2>
-
 <p>Let's compare how different property company structure options perform with identical portfolios:</p>
 
 <h3>Scenario 1: Small Portfolio (£35,000 rental profit, £15,000 mortgage interest)</h3>
-
 <p><strong>Sole trader (higher-rate taxpayer):</strong></p>
 <ul>
 <li>Taxable profit: £35,000 (no mortgage interest relief)</li>
@@ -115,7 +92,6 @@ faqs:
 <li>Tax credit: £3,000 (20% of mortgage interest)</li>
 <li>Net tax: £11,000</li>
 </ul>
-
 <p><strong>Limited company:</strong></p>
 <ul>
 <li>Taxable profit: £20,000 (after full mortgage interest relief)</li>
@@ -127,7 +103,6 @@ faqs:
 </ul>
 
 <h3>Scenario 2: Larger Portfolio (£100,000 rental profit, £45,000 mortgage interest)</h3>
-
 <p><strong>Sole trader (higher-rate taxpayer):</strong></p>
 <ul>
 <li>Taxable profit: £100,000</li>
@@ -135,7 +110,6 @@ faqs:
 <li>Tax credit: £9,000 (20% of mortgage interest)</li>
 <li>Net tax: £31,000</li>
 </ul>
-
 <p><strong>Limited company:</strong></p>
 <ul>
 <li>Taxable profit: £55,000 (after full mortgage interest relief)</li>
@@ -145,49 +119,21 @@ faqs:
 <li>Total tax: £25,486</li>
 <li>Saving: £5,514 annually</li>
 </ul>
-
 <p>These examples show why many landlords are incorporating, particularly those with significant mortgage debt and higher-rate tax positions.</p>
 
-<h2>Best Structure for BTL Company Growth Plans</h2>
-
+<h2>Aligning Structure with Your Investment Strategy</h2>
 <p>Your choice of property company structure should align with your long-term objectives:</p>
-
-<h3>Conservative Investors</h3>
-
-<p>If you own 1-3 properties and plan minimal expansion, sole trader ownership might remain viable, especially if you're a basic-rate taxpayer with low mortgage debt. The simplicity often outweighs modest tax savings from incorporation.</p>
-
-<h3>Active Investors</h3>
-
-<p>Landlords planning to grow their portfolios benefit significantly from limited company structures. Companies can retain profits for reinvestment without triggering immediate personal tax, and mortgage interest relief makes leveraged growth more tax-efficient.</p>
-
-<h3>Exit Planning</h3>
-
-<p>Consider your eventual exit strategy. Individual ownership might benefit from <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">Principal Private Residence Relief</a> if you plan to live in the property. Company ownership offers potential advantages like share sales to buyers or management buyouts.</p>
+<p><strong>Conservative Investors:</strong> If you own 1-3 properties and plan minimal expansion, sole trader ownership might remain viable, especially if you're a basic-rate taxpayer with low mortgage debt. The simplicity often outweighs modest tax savings from incorporation.</p>
+<p><strong>Active Investors:</strong> Landlords planning to grow their portfolios benefit significantly from limited company structures. Companies can retain profits for reinvestment without triggering immediate personal tax, and mortgage interest relief makes leveraged growth more tax-efficient.</p>
+<p><strong>Exit Planning:</strong> Consider your eventual exit strategy. Individual ownership might benefit from <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">Principal Private Residence Relief</a> if you plan to live in the property. Company ownership offers potential advantages like share sales to buyers or management buyouts.</p>
 
 <h2>Switching Property Company Structure: Key Considerations</h2>
-
-<p>Many landlords consider switching structures as their portfolios grow or tax rules change. However, transfers aren't always straightforward:</p>
-
-<h3>Individual to Company Transfer</h3>
-
-<p>Transferring existing properties from individual ownership to a company typically triggers Capital Gains Tax on the disposal, even if you own 100% of the company. The main reliefs available are:</p>
-
-<ul>
-<li><strong>Incorporation Relief:</strong> Rarely applies to property investment businesses</li>
-<li><strong>Hold-over Relief:</strong> Limited availability for property transfers</li>
-<li><strong>Market Value Rule:</strong> You can't artificially reduce the transfer price</li>
-</ul>
-
-<p>A practical approach is incorporating for new purchases while retaining existing properties individually, though this creates dual administrative burden.</p>
-
-<h3>Partnership to Company</h3>
-
-<p>Partnership to company transfers face similar CGT challenges. However, partners might benefit from different tax rates or reliefs that make the conversion worthwhile despite the upfront cost.</p>
+<p>Many landlords consider switching structures as their portfolios grow or tax rules change. However, transfers aren't always straightforward and typically trigger Capital Gains Tax on the disposal.</p>
+<p><strong>Individual to Company Transfer:</strong> Transferring existing properties from individual ownership to a company triggers CGT. The main reliefs available are Incorporation Relief (rarely applies to property investment businesses), Hold-over Relief (limited availability), and the Market Value Rule (you can't artificially reduce the transfer price). A practical approach is incorporating for new purchases while retaining existing properties individually, though this creates dual administrative burden.</p>
+<p><strong>Partnership to Company Transfer:</strong> Partnership to company transfers face similar CGT challenges. However, partners might benefit from different tax rates or reliefs that make the conversion worthwhile despite the upfront cost.</p>
 
 <h2>Administrative Requirements by Structure</h2>
-
 <p>The complexity of each property company structure varies significantly:</p>
-
 <h3>Sole Trader</h3>
 <ul>
 <li>Annual Self Assessment tax return</li>
@@ -195,7 +141,6 @@ faqs:
 <li><a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital compliance</a> from April 2026 (income over £10,000)</li>
 <li>No separate entity maintenance</li>
 </ul>
-
 <h3>Limited Company</h3>
 <ul>
 <li>Annual corporation tax return (CT600)</li>
@@ -205,7 +150,6 @@ faqs:
 <li>Dividend documentation and board minutes</li>
 <li>Potential quarterly reporting under Making Tax Digital</li>
 </ul>
-
 <h3>Partnership</h3>
 <ul>
 <li>Partnership tax return</li>
@@ -213,23 +157,10 @@ faqs:
 <li>Partnership agreement maintenance</li>
 <li>Making Tax Digital compliance for partnerships over threshold</li>
 </ul>
-
 <p>Many landlords find the additional compliance burden worthwhile for the tax savings, but it's a real consideration if you prefer hands-off management.</p>
 
 <h2>Professional Advice and Implementation</h2>
-
-<p>Choosing the optimal property company structure isn't a one-size-fits-all decision. The calculations become complex when you factor in:</p>
-
-<ul>
-<li>Multiple income sources and tax positions</li>
-<li>Spouse or partner tax situations</li>
-<li>Pension contributions and allowance interactions</li>
-<li>Child benefit and other means-tested benefits</li>
-<li>Future tax rate changes and reliefs</li>
-</ul>
-
-<p><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">A specialist property accountant</a> can model different scenarios based on your specific circumstances and provide projections showing the long-term impact of each structure choice.</p>
-
+<p>Choosing the optimal property company structure isn't a one-size-fits-all decision. The calculations become complex when you factor in multiple income sources, spouse tax situations, pension contributions, and future tax rate changes. <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">A specialist property accountant</a> can model different scenarios based on your specific circumstances.</p>
 <p>Key questions to ask advisers include:</p>
 <ul>
 <li>What's my break-even point for incorporation based on current income?</li>
@@ -239,25 +170,11 @@ faqs:
 </ul>
 
 <h2>Future-Proofing Your Property Structure Decision</h2>
-
 <p>With significant tax changes coming and an evolving regulatory landscape, consider how robust your chosen structure is against future changes:</p>
-
 <h3>Regulatory Changes</h3>
-
 <p>The Renters' Rights Act will eliminate Section 21 no-fault evictions from May 2026, potentially affecting profitability and exit strategies. Company structures might offer more flexibility in dealing with problematic tenants through professional management arrangements.</p>
-
 <h3>Tax Evolution</h3>
-
-<p>While we know property income tax rates are increasing from April 2027, other changes could include:</p>
-<ul>
-<li>Corporation tax rate adjustments</li>
-<li>Further restrictions on interest relief</li>
-<li>Changes to CGT rates or reliefs</li>
-<li>New property taxes or charges</li>
-</ul>
-
+<p>While we know property income tax rates are increasing from April 2027, other changes could include corporation tax rate adjustments, further restrictions on interest relief, changes to CGT rates or reliefs, and new property taxes or charges.</p>
 <h3>Market Conditions</h3>
-
 <p>Consider how your chosen structure performs under different market scenarios. Company structures often provide more flexibility during market downturns, allowing losses to be carried forward and optimizing the timing of disposals.</p>
-
 <p>The smartest property company structure for 2026 and beyond balances current tax efficiency with future flexibility. While incorporation offers compelling benefits for many landlords, especially those with substantial mortgage debt or higher-rate tax positions, the decision requires careful analysis of your specific situation and long-term objectives.</p>

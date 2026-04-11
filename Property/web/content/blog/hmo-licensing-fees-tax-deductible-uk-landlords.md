@@ -73,10 +73,11 @@ faqs:
 
 <p>Companies with multiple HMOs should track licensing costs by property to ensure accurate profit allocation and maximize available reliefs. <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Our BTL company guide</a> covers the full tax treatment of property expenses through corporate structures.</p>
 
-<h2>Record Keeping for HMO Licensing Deductions</h2>
+<h2>Record Keeping, Timing, and Common Mistakes</h2>
 
-<p>Proper documentation is essential for claiming HMO licensing fees as tax deductions. Maintain records of:</p>
+<p>Proper documentation and correct timing are essential for claiming HMO licensing fees as tax deductions. Most landlords can claim fees in the tax year they're incurred using the cash basis, meaning you deduct the expense when you actually pay the license fee. For landlords using accruals accounting (typically those with turnover over £150,000), the deduction timing follows when the liability arises rather than when payment is made.</p>
 
+<p>Maintain records of:</p>
 <ul>
 <li><strong>License applications:</strong> Copies of submitted applications with dates</li>
 <li><strong>Payment receipts:</strong> Bank statements or council receipts showing license fees paid</li>
@@ -86,6 +87,16 @@ faqs:
 </ul>
 
 <p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becoming mandatory from April 2026 for landlords with gross rental income over £10,000, digital record keeping becomes even more important.</p>
+
+<p>Common mistakes to avoid include:</p>
+<ul>
+<li><strong>Missing selective licensing:</strong> Overlooking additional local schemes beyond mandatory HMO licensing</li>
+<li><strong>Capital vs revenue:</strong> Treating structural improvements required for compliance as revenue expenses</li>
+<li><strong>Personal vs business:</strong> Attempting to claim fees for properties not generating rental income</li>
+<li><strong>Timing errors:</strong> Claiming deductions in the wrong tax year</li>
+</ul>
+
+<p>The key test is whether the cost is wholly and exclusively for your rental business. HMO licenses clearly meet this test as they're mandatory for legal operation.</p>
 
 <h2>What About License Application Costs?</h2>
 
@@ -99,31 +110,6 @@ faqs:
 </ul>
 
 <p>However, capital improvements made to meet license conditions follow different tax rules. Installing fire doors or upgrading electrical systems to comply with HMO standards may qualify for capital allowances rather than immediate expense deductions.</p>
-
-<h2>Timing of HMO License Deductions</h2>
-
-<p>Most landlords can claim HMO licensing fees in the tax year they're incurred using the cash basis. This means:</p>
-
-<ul>
-<li><strong>Payment date:</strong> Deduct the expense when you actually pay the license fee</li>
-<li><strong>Tax year:</strong> Claim relief in the tax year the payment falls within (6 April to 5 April)</li>
-<li><strong>Prepayments:</strong> Multi-year licenses can typically be deducted in full when paid</li>
-</ul>
-
-<p>For landlords using accruals accounting (typically those with turnover over £150,000), the deduction timing follows when the liability arises rather than when payment is made.</p>
-
-<h2>Common Mistakes with HMO License Tax Deductions</h2>
-
-<p>Landlords sometimes make errors when claiming HMO licensing costs:</p>
-
-<ul>
-<li><strong>Missing selective licensing:</strong> Overlooking additional local schemes beyond mandatory HMO licensing</li>
-<li><strong>Capital vs revenue:</strong> Treating structural improvements required for compliance as revenue expenses</li>
-<li><strong>Personal vs business:</strong> Attempting to claim fees for properties not generating rental income</li>
-<li><strong>Timing errors:</strong> Claiming deductions in the wrong tax year</li>
-</ul>
-
-<p>The key test is whether the cost is wholly and exclusively for your rental business. HMO licenses clearly meet this test as they're mandatory for legal operation.</p>
 
 <h2>HMO Licensing in Different UK Regions</h2>
 

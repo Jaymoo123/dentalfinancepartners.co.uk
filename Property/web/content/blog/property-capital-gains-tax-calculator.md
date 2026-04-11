@@ -22,39 +22,29 @@ faqs:
 ---
 
 <p>When you sell a rental property, working out your <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax</a> liability can feel overwhelming. A property capital gains tax calculator helps you estimate what you'll owe HMRC, but understanding how the calculations work is crucial for accurate planning.</p>
-
 <p>This guide walks you through everything UK landlords need to know about calculating CGT on property sales, from basic <a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">rates</a> to complex scenarios involving multiple properties.</p>
 
 <h2>How Property Capital Gains Tax Works</h2>
+<p>Capital gains tax applies when you sell a property for more than you paid for it. The gain is the difference between your sale price and your purchase price, plus allowable costs. For the 2025/26 tax year, residential property CGT rates are 18% (basic rate taxpayers) and 24% (higher/additional rate taxpayers). These rates apply to gains above your annual CGT allowance of £3,000. A typical property capital gains tax calculator will ask for your purchase price, sale price, improvement costs, and selling expenses to work out your taxable gain.</p>
 
-<p>Capital gains tax applies when you sell a property for more than you paid for it. The gain is the difference between your sale price and your purchase price, plus allowable costs.</p>
-
-<p>For the 2025/26 tax year, residential property CGT rates are 18% (basic rate taxpayers) and 24% (higher/additional rate taxpayers). These rates apply to gains above your annual CGT allowance of £3,000.</p>
-
-<p>A typical property capital gains tax calculator will ask for your purchase price, sale price, improvement costs, and selling expenses to work out your taxable gain.</p>
-
-<h2>Essential Information for Your Calculation</h2>
-
+<h2>Essential Information and Deductible Costs</h2>
+<p>To use a property capital gains tax calculator accurately, you need to know which costs can be deducted from your gain.</p>
 <h3>Purchase Costs You Can Deduct</h3>
-
 <ul>
 <li>Original purchase price</li>
 <li>Stamp duty land tax paid</li>
 <li>Legal fees and surveyor costs</li>
 <li>Estate agent fees when buying</li>
 </ul>
-
 <h3>Improvement Costs (Not Repairs)</h3>
-
 <ul>
 <li>Extension or loft conversion costs</li>
 <li>New kitchen or bathroom installation</li>
 <li>Central heating system</li>
 <li>Double glazing throughout</li>
 </ul>
-
+<p>Regular maintenance and repairs cannot be deducted — only genuine improvements that add lasting value to the property.</p>
 <h3>Selling Expenses</h3>
-
 <ul>
 <li>Estate agent commission</li>
 <li>Legal fees for the sale</li>
@@ -62,14 +52,9 @@ faqs:
 <li>Advertising costs</li>
 </ul>
 
-<p>Regular maintenance and repairs cannot be deducted — only genuine improvements that add lasting value to the property.</p>
-
 <h2>Step-by-Step Calculation Example</h2>
-
 <p>Here's how a property capital gains tax calculator would work through a real example:</p>
-
 <p><strong>Scenario:</strong> Sarah bought a BTL property in Manchester for £180,000 in 2018. She spent £15,000 on a kitchen extension and £25,000 on other improvements. In 2025, she sells for £280,000.</p>
-
 <ul>
 <li>Sale price: £280,000</li>
 <li>Less: Purchase price (£180,000)</li>
@@ -78,59 +63,39 @@ faqs:
 <li>Less: Selling costs (£8,000)</li>
 <li><strong>Total gain: £49,500</strong></li>
 </ul>
-
 <p>Less annual allowance (£3,000) = £46,500 taxable gain. If Sarah is a higher rate taxpayer, her CGT liability would be £46,500 × 24% = £11,160.</p>
 
-<h2>Common Calculation Mistakes</h2>
-
+<h2>Common Calculation Mistakes and Planning</h2>
 <p>Many landlords make errors when using a basic property capital gains tax calculator. Here are the most frequent issues:</p>
-
 <p><strong>Including repairs as improvements:</strong> Fixing a broken boiler isn't deductible, but installing a new heating system is. The distinction matters for your calculation.</p>
-
 <p><strong>Forgetting purchase costs:</strong> Your stamp duty and legal fees from buying can be deducted. Keep those receipts from years ago.</p>
-
 <p><strong>Missing the principal residence relief window:</strong> If you lived in the property at any point, you might qualify for partial relief that reduces your gain.</p>
-
-<h2>When You Need Professional Help</h2>
-
-<p>A standard property capital gains tax calculator works for straightforward sales, but some situations need specialist advice:</p>
-
-<ul>
-<li>Properties held in company structures</li>
-<li>Mixed-use properties (part residential, part commercial)</li>
-<li>Properties inherited from family members</li>
-<li>Sales involving connected parties or below market value</li>
-</ul>
-
-<p>Our <a href="/services">specialist property tax services</a> can help with complex CGT calculations and ensure you're claiming all available reliefs.</p>
-
-<h2>Planning Your Property Sale</h2>
-
 <p>Using a property capital gains tax calculator early helps you plan the timing of your sale. Consider these strategies:</p>
-
 <p><strong>Timing across tax years:</strong> If you're close to moving into a lower tax bracket, delaying the sale might save thousands in CGT.</p>
-
-<p><strong>Utilizing annual allowances:</strong> Selling properties in different tax years lets you use multiple £3,000 allowances.</p>
-
+<p><strong>Utilising annual allowances:</strong> Selling properties in different tax years lets you use multiple £3,000 allowances.</p>
 <p><strong>Spousal transfers:</strong> Married couples can transfer properties between themselves without triggering CGT, potentially accessing lower tax rates.</p>
 
 <h2>Record-Keeping for Accurate Calculations</h2>
-
 <p>To use any property capital gains tax calculator effectively, you need proper records. Keep these documents safe:</p>
-
 <ul>
 <li>Original purchase contract and completion statement</li>
 <li>All improvement invoices and receipts</li>
 <li>Estate agent and legal bills</li>
 <li>Any valuation reports</li>
 </ul>
+<p>HMRC expects you to report gains within 60 days of completion. Having organised records makes this process much smoother.</p>
 
-<p>HMRC expects you to report gains within 60 days of completion. Having organized records makes this process much smoother.</p>
-
-<p>For personalized advice on your property portfolio's CGT position, <a href="/contact">get in touch with our team</a> of specialist property accountants.</p>
+<h2>When You Need Professional Help</h2>
+<p>A standard property capital gains tax calculator works for straightforward sales, but some situations need specialist advice:</p>
+<ul>
+<li>Properties held in company structures</li>
+<li>Mixed-use properties (part residential, part commercial)</li>
+<li>Properties inherited from family members</li>
+<li>Sales involving connected parties or below market value</li>
+</ul>
+<p>Our <a href="/services">specialist property tax services</a> can help with complex CGT calculations and ensure you're claiming all available reliefs. For personalised advice on your property portfolio's CGT position, <a href="/contact">get in touch with our team</a> of specialist property accountants.</p>
 
 <h2>Related Reading</h2>
-
 <ul>
 <li><a href="/blog/capital-gains-tax/reduce-cgt-property-disposal-uk">How to Reduce CGT on Property Disposal in the UK: A Practical Guide for Landlords</a></li>
 </ul>

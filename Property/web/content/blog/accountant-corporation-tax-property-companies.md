@@ -24,50 +24,37 @@ faqs:
 ---
 
 <p>Property companies face complex corporation tax obligations that differ significantly from individual landlord tax rules. Whether you operate through an SPV or traditional limited company structure, specialist <strong>accountant corporation tax</strong> services ensure compliance while maximising your tax efficiency.</p>
-
 <p>Corporation tax rates and rules change frequently, with property-specific implications that generalist accountants often miss. Working with a specialist property tax accountant helps you navigate these complexities effectively.</p>
 
-<h2>Corporation Tax Planning for Property Portfolios</h2>
-
+<h2>Corporation Tax Planning and Strategy</h2>
 <p>Effective corporation tax planning goes beyond basic compliance. Strategic planning opportunities include:</p>
-
 <h3>Timing of Property Disposals</h3>
-
-<p>Unlike CGT for individuals, companies pay corporation tax on capital gains at the standard corporate rates. Timing disposals across accounting periods can manage your overall tax rate, particularly around the £250,000 threshold.</p>
-
+<p>Unlike CGT for individuals, companies pay corporation tax on capital gains at the standard corporate rates. Timing disposals across accounting periods can manage your overall tax rate, particularly around the £250,000 threshold where the main rate of 25% applies (profits up to £250,000 are taxed at 19%).</p>
 <h3>Group Structures and Reliefs</h3>
-
 <p>Multiple property companies within a group structure can access various corporation tax reliefs. Group relief allows losses in one company to offset profits in another, while capital gains can be transferred between group companies without immediate tax consequences.</p>
-
 <h3>Dividend Planning</h3>
-
 <p>Property company profits distributed as <a href="/blog/incorporation-and-company-structures/property-company-dividend-tax">dividends</a> avoid the additional corporation tax charges. However, dividend planning requires careful coordination with personal tax positions of shareholders.</p>
+<h3>Incorporation Considerations</h3>
+<p>Transferring property from personal ownership into a company (<a href="/incorporation">incorporation</a>) triggers a capital gains tax event for individuals at residential rates of 18% or 24%. Specialist advice is crucial to structure this efficiently and manage the ongoing corporation tax implications.</p>
 
 <h2>Property-Specific Corporation Tax Issues</h2>
-
 <p>Property companies encounter unique corporation tax challenges that require specialist knowledge:</p>
-
 <ul>
 <li><strong>Rental income timing</strong> - Rent received in advance creates specific corporation tax obligations</li>
 <li><strong>Capital allowances</strong> - Plant and machinery within rental properties qualify for tax relief</li>
 <li><strong>Interest deductibility</strong> - No Section 24 restrictions apply to companies, but other anti-avoidance rules may</li>
 <li><strong>Pre-trading expenses</strong> - Property acquisition costs may qualify for relief against future profits</li>
 </ul>
-
 <p>These issues require careful consideration in your corporation tax computation. An experienced property <strong>accountant corporation tax</strong> specialist ensures nothing is overlooked.</p>
 
-<h2>Compliance and Filing Requirements</h2>
-
+<h2>Compliance, Filing and Making Tax Digital</h2>
 <p>Property companies must file corporation tax returns within 12 months of their accounting period end. This deadline is absolute - late filing penalties start immediately and compound quickly.</p>
-
 <p>Corporation tax must be paid within 9 months and 1 day of the accounting period end. Large companies (profits over £1.5m) must pay quarterly instalments, though most property companies fall below this threshold.</p>
-
+<p>While Making Tax Digital for Corporation Tax is not yet mandatory, HMRC continues developing digital-first approaches. Property companies should prepare for increased digital reporting requirements and maintain good records from the outset. Cloud-based accounting systems integrated with property management software help streamline corporation tax preparation and reduce professional fees over time.</p>
 <p>A specialist <strong>accountant corporation tax</strong> service manages these deadlines and ensures accurate, timely submissions.</p>
 
 <h2>When to Consider Professional Help</h2>
-
 <p>Property companies should consider specialist accountant support when:</p>
-
 <ul>
 <li>Annual rental income exceeds £100,000</li>
 <li>You own properties through multiple companies</li>
@@ -75,19 +62,10 @@ faqs:
 <li>Considering <a href="/incorporation">incorporation</a> from individual ownership</li>
 <li>Facing HMRC enquiries or compliance issues</li>
 </ul>
-
 <p>The complexity of corporation tax rules means DIY approaches often miss valuable reliefs or create compliance risks. Professional fees typically pay for themselves through better tax outcomes and reduced compliance burdens.</p>
 
-<h2>Making Tax Digital Impact</h2>
-
-<p>While Making Tax Digital for Corporation Tax is not yet mandatory, HMRC continues developing digital-first approaches. Property companies should prepare for increased digital reporting requirements and maintain good records from the outset.</p>
-
-<p>Cloud-based accounting systems integrated with property management software help streamline corporation tax preparation and reduce professional fees over time.</p>
-
 <h2>Choosing the Right Specialist</h2>
-
 <p>Not all accountants understand property taxation complexities. When selecting an <strong>accountant corporation tax</strong> specialist, look for:</p>
-
 <ul>
 <li>Specific property sector experience</li>
 <li>Up-to-date knowledge of property tax rules</li>
@@ -95,11 +73,9 @@ faqs:
 <li>Clear fee structures and regular communication</li>
 <li>Professional qualifications and regulatory oversight</li>
 </ul>
-
 <p>The right specialist becomes a valuable business partner, not just a compliance necessity. They help structure your property business for long-term tax efficiency while ensuring you meet all obligations.</p>
 
 <h2>Related Reading</h2>
-
 <ul>
 <li><a href="/blog/incorporation-and-company-structures/property-company-profit-extraction-salary-vs-dividends">Property Company Profit Extraction: Salary vs Dividends</a></li>
 <li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Buy-to-Let Limited Company: Complete Guide UK</a></li>

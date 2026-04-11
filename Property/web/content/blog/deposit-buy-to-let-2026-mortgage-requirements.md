@@ -43,7 +43,7 @@ faqs:
 
 <p>These requirements reflect lenders' risk assessments and regulatory capital requirements under current Bank of England rules.</p>
 
-<h2>Rental Coverage Ratios and Stress Testing</h2>
+<h2>Rental Coverage Ratios, Stress Testing and Interest Rates</h2>
 
 <p>Beyond the deposit amount, lenders apply rental coverage ratios to ensure the property generates sufficient income to cover mortgage payments. The standard requirement is typically 125-145% of the monthly mortgage payment at a stressed interest rate.</p>
 
@@ -51,11 +51,9 @@ faqs:
 
 <p>This calculation directly impacts your deposit needs. If the rental income doesn't meet the coverage ratio, you'll need a larger deposit to reduce the monthly payment.</p>
 
-<h3>How Stress Testing Affects Deposits</h3>
+<p>Lenders typically stress test BTL mortgages at rates 2-3% above their standard variable rate. In 2026, with base rates around current levels, stress testing often occurs at 7-8%. If a property generates £1,200 monthly rent but fails coverage at 25% deposit, increasing to 35% deposit might bring the monthly payment down sufficiently to pass the stress test.</p>
 
-<p>Lenders typically stress test BTL mortgages at rates 2-3% above their standard variable rate. In 2026, with base rates around current levels, stress testing often occurs at 7-8%.</p>
-
-<p>If a property generates £1,200 monthly rent but fails coverage at 25% deposit, increasing to 35% deposit might bring the monthly payment down sufficiently to pass the stress test.</p>
+<p>Current interest rate environments significantly impact optimal deposit strategies. Higher rates increase the importance of larger deposits in reducing monthly payments and improving rental coverage ratios. In 2026's rate environment, many investors find that 30-35% deposits offer the best balance between access to competitive mortgage rates, meeting rental coverage requirements comfortably, and preserving capital for additional purchases or refurbishments.</p>
 
 <h2>Portfolio Landlord Deposit Requirements</h2>
 
@@ -113,18 +111,6 @@ faqs:
 </ul>
 
 <p>For a £200,000 BTL property with 25% deposit, your total cash requirement might be £65,000-£70,000 including all costs and SDLT.</p>
-
-<h2>How Interest Rates Affect Deposit Strategy</h2>
-
-<p>Current interest rate environments significantly impact optimal deposit strategies. Higher rates increase the importance of larger deposits in reducing monthly payments and improving rental coverage ratios.</p>
-
-<p>In 2026's rate environment, many investors find that 30-35% deposits offer the best balance between:</p>
-
-<ul>
-<li>Access to competitive mortgage rates</li>
-<li>Meeting rental coverage requirements comfortably</li>
-<li>Preserving capital for additional purchases or refurbishments</li>
-</ul>
 
 <h2>Tax Implications of Deposit Size</h2>
 

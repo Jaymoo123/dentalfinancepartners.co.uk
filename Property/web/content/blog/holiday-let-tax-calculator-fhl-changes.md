@@ -41,10 +41,10 @@ faqs:
 
 <p>The key question for your <strong>FHL calculator 2026</strong> approach is whether your activity constitutes trading or remains property income. This depends on the level of services you provide.</p>
 
-<h2>Step 1: Calculate Your Gross Holiday Let Income</h2>
+<h2>Step-by-Step Holiday Let Tax Calculation</h2>
 
+<h3>Step 1: Calculate Your Gross Holiday Let Income</h3>
 <p>Start by totalling all income from your holiday lettings for the tax year:</p>
-
 <ul>
 <li>Rental receipts from guests</li>
 <li>Booking fees retained (if you manage bookings)</li>
@@ -53,162 +53,49 @@ faqs:
 <li>Insurance payouts for lost bookings</li>
 </ul>
 
-<p>Example: A holiday cottage in the Lake District generates £28,000 annual rental income, plus £1,200 in cleaning fees and £300 in pet fees. Total gross income: £29,500.</p>
-
-<h2>Step 2: Deduct Allowable Expenses</h2>
-
+<h3>Step 2: Deduct Allowable Expenses</h3>
 <p>Calculate your net profit by deducting allowable expenses. The main categories include:</p>
-
-<h3>Property Maintenance and Repairs</h3>
 <ul>
-<li>Routine maintenance and repairs</li>
-<li>Cleaning between guests</li>
-<li>Garden maintenance</li>
-<li>Emergency repairs</li>
+<li><strong>Property Maintenance and Repairs:</strong> Routine maintenance, cleaning between guests, garden maintenance, emergency repairs.</li>
+<li><strong>Utilities and Services:</strong> Gas, electricity, water, council tax or business rates, insurance premiums, internet and TV licensing.</li>
+<li><strong>Management and Marketing:</strong> Booking platform commissions (Airbnb, Booking.com), professional management fees, marketing costs, professional services (accountants, solicitors).</li>
 </ul>
-
-<h3>Utilities and Services</h3>
-<ul>
-<li>Gas, electricity, water</li>
-<li>Council tax or business rates</li>
-<li>Insurance premiums</li>
-<li>Internet and TV licensing</li>
-</ul>
-
-<h3>Management and Marketing</h3>
-<ul>
-<li>Booking platform commissions (Airbnb, Booking.com)</li>
-<li>Professional management fees</li>
-<li>Marketing and advertising costs</li>
-<li>Professional services (accountants, solicitors)</li>
-</ul>
-
 <p>Post-FHL, you cannot claim annual investment allowance for equipment purchases. Instead, these are typically treated as revenue expenses or capital expenditure requiring depreciation.</p>
-
-<h3>Mortgage Interest Relief</h3>
 <p>Like other rental properties, holiday lets are subject to <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a>. You can only claim a 20% tax credit on mortgage interest, not a full deduction against income.</p>
 
-<p>Example calculation:</p>
-<ul>
-<li>Gross income: £29,500</li>
-<li>Operating expenses: £8,200</li>
-<li>Mortgage interest: £4,500</li>
-<li>Taxable profit (before interest relief): £29,500 - £8,200 = £21,300</li>
-<li>Tax credit: £4,500 × 20% = £900</li>
-</ul>
-
-<h2>Step 3: Apply Income Tax Rates</h2>
-
+<h3>Step 3: Apply Income Tax Rates</h3>
 <p>From April 2027, property income will be taxed at separate rates: 22% basic rate, 42% higher rate, and 47% additional rate. For 2025/26 and 2026/27, normal income tax rates apply.</p>
 
-<p>For our example with £21,300 taxable profit:</p>
-
-<p><strong>Basic rate taxpayer (2026/27):</strong></p>
-<ul>
-<li>Tax on holiday let income: £21,300 × 20% = £4,260</li>
-<li>Less mortgage interest credit: £900</li>
-<li>Net tax due: £3,360</li>
-</ul>
-
-<p><strong>Higher rate taxpayer:</strong></p>
-<ul>
-<li>Tax on holiday let income: £21,300 × 40% = £8,520</li>
-<li>Less mortgage interest credit: £900</li>
-<li>Net tax due: £7,620</li>
-</ul>
-
-<h2>Step 4: Consider National Insurance</h2>
-
+<h3>Step 4: Consider National Insurance</h3>
 <p>One key change post-FHL is that holiday let income is no longer considered self-employment income for most landlords. This means:</p>
-
 <ul>
 <li>No Class 2 or Class 4 National Insurance on rental profits</li>
 <li>Cannot make pension contributions based on holiday let profits</li>
 <li>No entitlement to certain benefits linked to self-employment</li>
 </ul>
-
 <p>However, if your holiday letting activity amounts to a trade (significant services, frequent guest interaction), you may still pay National Insurance on profits.</p>
 
-<h2>Holiday Let Tax Calculator: Trading vs Property Income</h2>
+<h2>Worked Examples and Professional Calculator Use</h2>
+<p>Given the complexity of post-FHL tax calculations, many landlords benefit from professional assistance. Here are complete worked examples that illustrate the key considerations, including complex expense allocations, trading status determination, and optimisation strategies.</p>
 
-<p>Post-FHL, determining whether your activity is trading or property investment is crucial for your <strong>holiday lettings tax</strong> calculation.</p>
-
-<h3>Indicators of Trading Activity</h3>
+<p><strong>Example 1: Basic Calculation</strong></p>
 <ul>
-<li>Daily cleaning and housekeeping services</li>
-<li>Meals provided regularly</li>
-<li>Significant personal services (concierge, tour guidance)</li>
-<li>Short average stays (few days rather than weeks)</li>
-<li>Hotel-like services and facilities</li>
+<li>Gross income: £29,500 (£28,000 rental + £1,200 cleaning + £300 pet fees)</li>
+<li>Operating expenses: £8,200</li>
+<li>Mortgage interest: £4,500</li>
+<li>Taxable profit (before interest relief): £29,500 - £8,200 = £21,300</li>
+<li>Mortgage interest tax credit: £4,500 × 20% = £900</li>
 </ul>
+<p><strong>Basic rate taxpayer (2026/27):</strong> Tax on income: £21,300 × 20% = £4,260. Less £900 credit = <strong>Net tax due: £3,360</strong>.<br>
+<strong>Higher rate taxpayer:</strong> Tax on income: £21,300 × 40% = £8,520. Less £900 credit = <strong>Net tax due: £7,620</strong>.</p>
 
-<h3>Indicators of Property Investment</h3>
-<ul>
-<li>Weekly or monthly lettings</li>
-<li>Minimal services beyond basic accommodation</li>
-<li>Guests have exclusive use of property</li>
-<li>Limited personal interaction with guests</li>
-</ul>
-
-<p>If classified as trading, your holiday let income would be subject to income tax and National Insurance, but you'd gain access to trading reliefs and allowances.</p>
-
-<h2>Capital Gains Tax on Holiday Let Sales</h2>
-
-<p>The FHL abolition significantly impacts CGT calculations on holiday property sales:</p>
-
-<h3>Loss of Business Asset Disposal Relief</h3>
-<p>Previously, FHL properties qualified for 10% CGT under business asset disposal relief. Post-April 2025, holiday lets are taxed at standard property CGT rates: 18% for basic rate taxpayers, 24% for higher rate taxpayers.</p>
-
-<h3>CGT Calculation Example</h3>
-<p>Holiday cottage purchased for £200,000 in 2020, sold for £280,000 in 2026:</p>
-
-<ul>
-<li>Capital gain: £280,000 - £200,000 = £80,000</li>
-<li>Less annual exempt amount: £80,000 - £3,000 = £77,000</li>
-<li>CGT at 24% (higher rate): £18,480</li>
-<li>Under old FHL rules: £77,000 × 10% = £7,700</li>
-<li>Additional tax cost: £10,780</li>
-</ul>
-
-<p>This represents a significant increase in the tax cost of disposing of holiday rental properties. You can find more details in our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">complete guide to property CGT</a>.</p>
-
-<h2>Using a Professional Holiday Let Tax Calculator</h2>
-
-<p>Given the complexity of post-FHL tax calculations, many landlords benefit from professional assistance. Key considerations include:</p>
-
-<h3>Complex Expense Allocations</h3>
-<p>Mixed-use properties require careful expense allocation between personal use, holiday letting, and any long-term rental periods.</p>
-
-<h3>Trading Status Determination</h3>
-<p>The boundary between property investment and trading activity isn't always clear and can significantly impact your tax bill.</p>
-
-<h3>Optimisation Strategies</h3>
-<p>Professional advice can help optimise your structure, perhaps through <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation</a> or timing of disposals.</p>
-
-<h2>Making Tax Digital for Holiday Lets</h2>
-
-<p>From April 2026, holiday let landlords with gross property income over £10,000 must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a>. This means:</p>
-
-<ul>
-<li>Keeping digital records</li>
-<li>Filing quarterly updates to HMRC</li>
-<li>Using compatible software for calculations</li>
-</ul>
-
-<p>Your <strong>holiday let tax calculator</strong> approach needs to accommodate these digital record-keeping requirements from the outset.</p>
-
-<h2>Sample Holiday Let Tax Calculation</h2>
-
-<p>Here's a complete worked example for a holiday let in Cornwall:</p>
-
-<p><strong>Property details:</strong></p>
+<p><strong>Example 2: Complete Worked Example for a Holiday Let in Cornwall</strong></p>
 <ul>
 <li>Annual gross income: £35,000</li>
 <li>Operating expenses: £12,000</li>
 <li>Mortgage interest: £6,000</li>
 <li>Owner is higher rate taxpayer</li>
 </ul>
-
 <p><strong>Tax calculation (2026/27):</strong></p>
 <ul>
 <li>Taxable profit: £35,000 - £12,000 = £23,000</li>
@@ -218,26 +105,60 @@ faqs:
 <li>No National Insurance (property income)</li>
 <li><strong>Total tax: £8,000</strong></li>
 </ul>
+<p>Under the old FHL regime, this might have been treated as trading income with additional National Insurance, but also with access to more generous reliefs. Professional advice can help optimise your structure, perhaps through <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation</a> or timing of disposals.</p>
 
-<p>Under the old FHL regime, this might have been treated as trading income with additional National Insurance, but also with access to more generous reliefs.</p>
+<h2>Trading vs Property Income Status</h2>
+<p>Post-FHL, determining whether your activity is trading or property investment is crucial for your <strong>holiday lettings tax</strong> calculation.</p>
+<h3>Indicators of Trading Activity</h3>
+<ul>
+<li>Daily cleaning and housekeeping services</li>
+<li>Meals provided regularly</li>
+<li>Significant personal services (concierge, tour guidance)</li>
+<li>Short average stays (few days rather than weeks)</li>
+<li>Hotel-like services and facilities</li>
+</ul>
+<h3>Indicators of Property Investment</h3>
+<ul>
+<li>Weekly or monthly lettings</li>
+<li>Minimal services beyond basic accommodation</li>
+<li>Guests have exclusive use of property</li>
+<li>Limited personal interaction with guests</li>
+</ul>
+<p>If classified as trading, your holiday let income would be subject to income tax and National Insurance, but you'd gain access to trading reliefs and allowances.</p>
 
-<h2>Planning for Future Tax Changes</h2>
+<h2>Capital Gains Tax on Holiday Let Sales</h2>
+<p>The FHL abolition significantly impacts CGT calculations on holiday property sales.</p>
+<h3>Loss of Business Asset Disposal Relief</h3>
+<p>Previously, FHL properties qualified for 10% CGT under business asset disposal relief. Post-April 2025, holiday lets are taxed at standard property CGT rates: 18% for basic rate taxpayers, 24% for higher rate taxpayers.</p>
+<h3>CGT Calculation Example</h3>
+<p>Holiday cottage purchased for £200,000 in 2020, sold for £280,000 in 2026:</p>
+<ul>
+<li>Capital gain: £280,000 - £200,000 = £80,000</li>
+<li>Less annual exempt amount: £80,000 - £3,000 = £77,000</li>
+<li>CGT at 24% (higher rate): £18,480</li>
+<li>Under old FHL rules: £77,000 × 10% = £7,700</li>
+<li>Additional tax cost: £10,780</li>
+</ul>
+<p>This represents a significant increase in the tax cost of disposing of holiday rental properties. You can find more details in our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">complete guide to property CGT</a>.</p>
 
+<h2>Making Tax Digital for Holiday Lets</h2>
+<p>From April 2026, holiday let landlords with gross property income over £10,000 must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a>. This means:</p>
+<ul>
+<li>Keeping digital records</li>
+<li>Filing quarterly updates to HMRC</li>
+<li>Using compatible software for calculations</li>
+</ul>
+<p>Your <strong>holiday let tax calculator</strong> approach needs to accommodate these digital record-keeping requirements from the outset.</p>
+
+<h2>Future Planning and Professional Help</h2>
 <p>The holiday lettings landscape continues to evolve. Key future considerations for your tax planning include:</p>
-
 <ul>
 <li>Separate property tax rates from April 2027 (22%/42%/47%)</li>
 <li>Potential further changes to short-term letting regulation</li>
 <li>Local authority licensing requirements</li>
 <li>Tourism tax developments in some regions</li>
 </ul>
-
-<p>Regular review of your tax position ensures you're optimising your structure as rules change. Consider speaking with <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">a specialist property accountant</a> for ongoing compliance and planning.</p>
-
-<h2>Getting Professional Help</h2>
-
-<p>The abolition of FHL has created complexity for many holiday let owners. Professional assistance can help with:</p>
-
+<p>The abolition of FHL has created complexity for many holiday let owners. Professional assistance from <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">a specialist property accountant</a> can help with:</p>
 <ul>
 <li>Accurate classification of your letting activity</li>
 <li>Optimising your expense claims</li>
@@ -245,5 +166,4 @@ faqs:
 <li>Strategic planning for property disposals</li>
 <li>Considering incorporation options</li>
 </ul>
-
 <p>The tax savings from proper planning often exceed the cost of professional advice, particularly given the loss of FHL reliefs and the complexity of the new rules.</p>

@@ -34,20 +34,17 @@ faqs:
 <h3>Statutory Books and Records</h3>
 
 <p>Property companies must maintain statutory books including:</p>
-
 <ul>
 <li><strong>Register of members</strong> - Details of all shareholders and share transfers</li>
 <li><strong>Register of directors</strong> - Current and former directors' information</li>
 <li><strong>Register of charges</strong> - Mortgages and other security interests</li>
 <li><strong>Minutes of meetings</strong> - Board meetings and shareholder resolutions</li>
 </ul>
-
 <p>These records must be kept at the company's registered office and made available for inspection when required.</p>
 
 <h3>Accounting Records Requirements</h3>
 
 <p>HMRC expects property companies to maintain detailed accounting records showing:</p>
-
 <ul>
 <li>All rental income received, including deposits and advance payments</li>
 <li>Operating expenses with supporting invoices and receipts</li>
@@ -56,36 +53,28 @@ faqs:
 <li>Depreciation and capital allowances claimed</li>
 <li>VAT records if the company is VAT registered</li>
 </ul>
-
 <p>Records must be kept for at least six years from the end of the accounting period they relate to.</p>
 
-<h2>Corporation Tax Return (CT600) for Property Companies</h2>
+<h2>Corporation Tax and CT600 Filing</h2>
 
 <p>The <strong>corporation tax return property company</strong> filing is more complex than individual tax returns. The CT600 must be filed within 12 months of the company's year-end, with corporation tax due nine months after the accounting period ends.</p>
 
-<h3>CT600 Key Sections for Property Companies</h3>
+<h3>CT600 Key Sections and Tax Rates</h3>
 
 <p>Property companies typically complete these CT600 sections:</p>
-
 <ul>
 <li><strong>CT600 Main Return</strong> - Basic company information and tax computation</li>
 <li><strong>CT600A</strong> - Loans to participators (if applicable)</li>
 <li><strong>CT600C</strong> - Charitable donations and community investments</li>
 <li><strong>CT600E</strong> - Supplementary information including property income details</li>
 </ul>
-
 <p>The return must include a detailed breakdown of rental income by property, allowable expenses, and capital allowances claimed.</p>
-
-<h3>Corporation Tax Rates for Property Companies</h3>
-
 <p>For the 2026/27 tax year, corporation tax rates are:</p>
-
 <ul>
 <li><strong>Small profits rate:</strong> 19% on profits up to £250,000</li>
 <li><strong>Main rate:</strong> 25% on profits above £250,000</li>
 <li><strong>Marginal relief:</strong> Available between £250,000 and £250,000</li>
 </ul>
-
 <p>Unlike individual landlords affected by Section 24, property companies can still claim full mortgage interest relief against rental profits.</p>
 
 <h2>Companies House Filing Requirements</h2>
@@ -95,13 +84,11 @@ faqs:
 <h3>Small Company Exemptions</h3>
 
 <p>Property companies qualify as small if they meet two of these criteria:</p>
-
 <ul>
 <li>Annual turnover not exceeding £10.2 million</li>
 <li>Balance sheet total not exceeding £5.1 million</li>
 <li>Average number of employees not exceeding 50</li>
 </ul>
-
 <p>Small property companies can file abbreviated accounts, reducing disclosure requirements and maintaining privacy around rental income levels.</p>
 
 <h2>VAT Obligations for Property Companies</h2>
@@ -111,20 +98,17 @@ faqs:
 <h3>VAT Registration Considerations</h3>
 
 <p>Property companies should consider:</p>
-
 <ul>
 <li><strong>Commercial lettings:</strong> Standard-rated, requiring VAT registration</li>
 <li><strong>Residential lettings:</strong> Usually exempt, but may elect to charge VAT</li>
 <li><strong>Property sales:</strong> May trigger VAT registration requirements</li>
 <li><strong>Input VAT recovery:</strong> Limited for residential property activities</li>
 </ul>
-
 <p>Companies mixing commercial and residential activities need careful VAT planning to optimize input VAT recovery.</p>
 
 <h2>Making Tax Digital Requirements</h2>
 
 <p>From April 2026, property companies may need to comply with Making Tax Digital for Corporation Tax, depending on their size and turnover. This will require digital record-keeping and quarterly reporting.</p>
-
 <p>Currently, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> affects individual landlords with property income over £10,000, but corporate requirements are expected to follow.</p>
 
 <h2>Record-Keeping Best Practices</h2>
@@ -134,20 +118,17 @@ faqs:
 <h3>Digital Record-Keeping Systems</h3>
 
 <p>Modern property companies typically use:</p>
-
 <ul>
 <li><strong>Cloud accounting software:</strong> Xero, QuickBooks, or Sage for general ledger</li>
 <li><strong>Property management software:</strong> Automated rent collection and expense tracking</li>
 <li><strong>Receipt capture apps:</strong> Digital storage of invoices and receipts</li>
 <li><strong>Banking integration:</strong> Automatic transaction importing and categorization</li>
 </ul>
-
 <p>These systems ensure transactions are recorded accurately and supporting documentation is preserved for HMRC inspections.</p>
 
 <h3>Monthly Management Accounts</h3>
 
 <p>Regular management reporting helps identify issues early and ensures accurate year-end accounts. Monthly reports should include:</p>
-
 <ul>
 <li>Rental income by property with void analysis</li>
 <li>Operating expenses categorized by type and property</li>
@@ -162,14 +143,12 @@ faqs:
 <h3>When to Seek Professional Help</h3>
 
 <p>Consider professional support when:</p>
-
 <ul>
 <li>Managing multiple properties through different company structures</li>
 <li>Dealing with complex transactions like property developments</li>
 <li>Facing VAT registration decisions or planning elections</li>
 <li>Preparing for HMRC enquiries or compliance checks</li>
 </ul>
-
 <p>The <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">cost of property accounting services</a> is often outweighed by the tax savings and penalty avoidance they provide.</p>
 
 <h2>Common Compliance Pitfalls</h2>
@@ -179,20 +158,17 @@ faqs:
 <h3>Late Filing Penalties</h3>
 
 <p>HMRC imposes automatic penalties for late corporation tax returns:</p>
-
 <ul>
 <li><strong>Up to 3 months late:</strong> £100</li>
 <li><strong>3-6 months late:</strong> £200</li>
 <li><strong>6-12 months late:</strong> £500</li>
 <li><strong>Over 12 months late:</strong> £1,000 plus 10% of unpaid tax</li>
 </ul>
-
 <p>Companies House also charges penalties for late statutory accounts filing, starting at £150 for private companies.</p>
 
 <h3>Inadequate Record-Keeping</h3>
 
 <p>Poor record-keeping can result in:</p>
-
 <ul>
 <li>Estimated tax assessments by HMRC</li>
 <li>Penalties of up to £3,000 per accounting period</li>

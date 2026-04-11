@@ -24,24 +24,18 @@ faqs:
 ---
 
 <p><a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital</a> for Income Tax Property (MTD ITSA) becomes mandatory from 6 April 2026 for many UK landlords. The key question most property investors ask is whether their rental income puts them above the threshold requiring MTD compliance.</p>
-
 <p>The answer depends on your total gross rental income and specific circumstances. This guide explains the threshold, exemptions, and what you need to know to prepare.</p>
 
 <h2>Calculating Your Rental Income Threshold</h2>
+<p>Many landlords find the threshold calculation straightforward, but some situations need careful consideration. The key is your total gross rental income from all properties.</p>
+<h3>Examples of Threshold Calculation</h3>
+<ul>
+<li><strong>Single Property:</strong> A landlord rents out one property for £850 per month. Their gross annual income is £10,200, putting them just above the £10,000 threshold and requiring MTD compliance.</li>
+<li><strong>Multiple Properties:</strong> A portfolio owner has three properties generating £400, £350, and £300 monthly respectively. Total gross income: £12,600 annually. They must use MTD from April 2026.</li>
+<li><strong>Part-Year Rentals:</strong> If you start letting property mid-year, calculate the annual equivalent. A property generating £1,200 per month from October to March (6 months) would produce £14,400 annually — above the threshold.</li>
+</ul>
 
-<p>Many landlords find the threshold calculation straightforward, but some situations need careful consideration:</p>
-
-<h3>Single Property Example</h3>
-<p>A landlord rents out one property in Manchester for £850 per month. Their gross annual income is £10,200, putting them just above the £10,000 threshold and requiring MTD compliance.</p>
-
-<h3>Multiple Properties Example</h3>
-<p>A portfolio owner has three properties generating £400, £350, and £300 monthly respectively. Total gross income: £12,600 annually. They must use MTD from April 2026.</p>
-
-<h3>Part-Year Rentals</h3>
-<p>If you start letting property mid-year, calculate the annual equivalent. A property generating £1,200 per month from October to March (6 months) would produce £14,400 annually — above the threshold.</p>
-
-<h2>Who Is Exempt from MTD for Rental Income?</h2>
-<h2>Who Is Exempt from MTD for Rental Income?</h2>
+<h2>Exemptions and Who Does Not Need to Comply</h2>
 <p>Several groups remain exempt from MTD for Income Tax requirements, even if their total gross income from property exceeds £10,000:</p>
 <ul>
 <li><strong>Trustees and personal representatives</strong> — rental income from trust properties or estates.</li>
@@ -52,32 +46,13 @@ faqs:
 <li><strong>Those with income subject to the Foreign Income and Gains (FIG) rules for non-domiciled individuals.</strong></li>
 </ul>
 <p>Additionally, HMRC may grant an exemption on grounds of <strong>digital exclusion</strong> (e.g., age, disability, remoteness of location) or religious objection. You must apply for this exemption; it is not automatic.</p>
-<p>The term 'complex income structures' generally refers to taxpayers with income from a Lloyd's underwriting business or those using the FIG rules, as listed above. If your only source of property income is through a limited company, MTD for Income Tax does not apply to you personally. Company rental income falls under the future MTD for Corporation Tax regime, which has a different timeline.</p>
+<p>The term 'complex income structures' generally refers to taxpayers with income from a Lloyd's underwriting business or those using the FIG rules. If your only source of property income is through a limited company, MTD for Income Tax does not apply to you personally. Company rental income falls under the future MTD for Corporation Tax regime, which has a different timeline.</p>
 
-<h2>Rent-a-Room and Holiday Lets</h2>
-
-<p>The rent-a-room allowance can affect your MTD obligations. If you rent rooms in your main home and your gross receipts stay within the £7,500 annual allowance, this income doesn't count toward the £10,000 threshold.</p>
-
-<p>However, if you exceed the rent-a-room allowance and elect to pay tax on profits instead, the full rental income counts toward your MTD threshold.</p>
-
+<h2>Special Cases: Rent-a-Room and Holiday Lets</h2>
+<p>The rent-a-room allowance can affect your MTD obligations. If you rent rooms in your main home and your gross receipts stay within the £7,500 annual allowance, this income doesn't count toward the £10,000 threshold. However, if you exceed the rent-a-room allowance and elect to pay tax on profits instead, the full rental income counts toward your MTD threshold.</p>
 <p>Holiday lets and Airbnb income count as rental income for MTD purposes, regardless of how frequently you rent the property.</p>
 
-<h2>What MTD Means for Your Record-Keeping</h2>
-
-<p>Once you're above the threshold, you must:</p>
-
-<ul>
-<li>Keep digital records using MTD-compatible <a href="/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026">software</a></li>
-<li>Submit quarterly updates to HMRC (every three months)</li>
-<li>Make an annual declaration by 31 January following the tax year</li>
-<li>Ensure your software can link directly to HMRC systems</li>
-</ul>
-
-<p>This represents a significant change from annual self-assessment filing. Many landlords need to upgrade their record-keeping systems and processes.</p>
-
-
-
-<h2>How to Register for MTD for Property Income</h2>
+<h2>Registration and Key Deadlines</h2>
 <p>If your gross rental income exceeds £10,000, you will need to register for Making Tax Digital for Income Tax. This is a separate process from your existing Self Assessment registration.</p>
 <h3>The Registration Process</h3>
 <p>HMRC will open the sign-up service well before the April 2026 start date. The process typically involves:</p>
@@ -96,34 +71,30 @@ faqs:
 <li><strong>First Quarterly Update:</strong> For the tax year starting 6 April 2026, your first update will be due by 5 August 2026, covering the period 6 April to 5 July.</li>
 </ul>
 
-<h2>Planning for MTD Compliance</h2>
+<h2>MTD Record-Keeping and Compliance Requirements</h2>
+<p>Once you're above the threshold, you must:</p>
+<ul>
+<li>Keep digital records using MTD-compatible <a href="/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026">software</a></li>
+<li>Submit quarterly updates to HMRC (every three months)</li>
+<li>Make an annual declaration by 31 January following the tax year</li>
+<li>Ensure your software can link directly to HMRC systems</li>
+</ul>
+<p>This represents a significant change from annual self-assessment filing. Many landlords need to upgrade their record-keeping systems and processes.</p>
 
+<h2>Planning and Preparation for Landlords</h2>
 <p>If your rental income approaches or exceeds £10,000, start preparing now:</p>
-
 <p><strong>Choose MTD software:</strong> Research property management software that integrates with MTD requirements. Many platforms now offer both rental management and tax compliance features.</p>
-
 <p><strong>Organize your records:</strong> Digital record-keeping requires consistent, detailed documentation of all rental income and expenses.</p>
-
 <p><strong>Consider your structure:</strong> Some landlords explore <a href="/incorporation">incorporating their property portfolio</a> to potentially simplify their tax position, though this brings other considerations.</p>
-
 <p><strong>Get professional support:</strong> MTD compliance can be complex. Speaking with specialists helps ensure you meet all requirements without overpaying tax.</p>
 
-<h2>Below the Threshold? You Still Have Options</h2>
-
-<p>Landlords with rental income below £10,000 can voluntarily adopt MTD if they choose. This might suit those planning to expand their portfolio or who prefer quarterly reporting over annual self-assessment.</p>
-
-<p>However, voluntary MTD adoption requires the same software, quarterly updates, and compliance obligations as mandatory users.</p>
+<h2>Voluntary Adoption for Those Below the Threshold</h2>
+<p>Landlords with rental income below £10,000 can voluntarily adopt MTD if they choose. This might suit those planning to expand their portfolio or who prefer quarterly reporting over annual self-assessment. However, voluntary MTD adoption requires the same software, quarterly updates, and compliance obligations as mandatory users.</p>
 
 <h2>Getting Ready for April 2026</h2>
-
-<p>MTD for Income Tax Property starts in just over a year. Landlords above the threshold should begin preparation now rather than waiting until the last minute.</p>
-
-<p>The transition affects not just your tax filing but your entire approach to rental property record-keeping. Early preparation helps avoid compliance issues and potential penalties.</p>
-
-<p>If you're unsure about your MTD obligations or need help preparing for the changes, consider speaking with property tax specialists who understand both the technical requirements and practical implications for UK landlords.</p>
+<p>MTD for Income Tax Property starts in just over a year. Landlords above the threshold should begin preparation now rather than waiting until the last minute. The transition affects not just your tax filing but your entire approach to rental property record-keeping. Early preparation helps avoid compliance issues and potential penalties. If you're unsure about your MTD obligations or need help preparing for the changes, consider speaking with property tax specialists who understand both the technical requirements and practical implications for UK landlords.</p>
 
 <h2>Related Reading</h2>
-
 <ul>
 <li><a href="/blog/making-tax-digital-mtd/landlord-tax-return-deadline-2026">Landlord Tax Return Deadline 2026: Key Dates & Tax Band Changes</a></li>
 </ul>

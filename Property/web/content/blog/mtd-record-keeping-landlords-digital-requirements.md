@@ -35,10 +35,9 @@ faqs:
 
 <p>For detailed information about MTD deadlines and who's affected, see our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">complete MTD guide for landlords</a>.</p>
 
-<h2>Which Landlords Need Digital Records?</h2>
+<h2>Who Needs to Keep Digital Records?</h2>
 
 <p>MTD record keeping requirements apply to landlords with:</p>
-
 <ul>
 <li><strong>Gross rental income over £10,000 per year</strong> from UK property</li>
 <li>Multiple properties where combined gross income exceeds £10,000</li>
@@ -49,9 +48,7 @@ faqs:
 <p>Gross income means total rent received before deducting expenses like mortgage interest, repairs, or letting agent fees. Even if your net profit is minimal due to high expenses, you're still caught by MTD if gross income exceeds £10,000.</p>
 
 <h3>Exemptions from Digital Records</h3>
-
 <p>You're exempt from MTD record keeping if:</p>
-
 <ul>
 <li>Gross rental income is £10,000 or less per year</li>
 <li>You only receive income from Rent-a-Room scheme (up to £7,500 tax-free)</li>
@@ -63,9 +60,7 @@ faqs:
 <p>Under MTD rules, landlords must maintain <strong>digital records</strong> covering all aspects of their rental business. These fall into several categories:</p>
 
 <h3>Income Records</h3>
-
-<p>Every penny of rental income must be recorded digitally:</p>
-
+<p>Every penny of rental income must be recorded digitally. The records must show the date income was received (or due), not when it was earned, following the cash accounting method most landlords use. Common mistakes include failing to record deposit retentions, service charge recoveries, insurance payouts for loss of rent, or rent paid direct by housing benefit.</p>
 <ul>
 <li><strong>Monthly rent payments</strong> – date, amount, property address, tenant name</li>
 <li><strong>Deposit retentions</strong> – amounts kept for damage or unpaid rent</li>
@@ -75,12 +70,8 @@ faqs:
 <li><strong>Subletting income</strong> – if tenants sublet with permission</li>
 </ul>
 
-<p>The records must show the date income was received (or due), not when it was earned. This follows the cash accounting method that most landlords use.</p>
-
 <h3>Expense Records</h3>
-
-<p>All allowable property expenses need digital documentation:</p>
-
+<p>All allowable property expenses need digital documentation. Remember that mortgage interest relief is restricted under <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 rules</a>, providing only a 20% tax credit rather than full deduction.</p>
 <ul>
 <li><strong>Mortgage interest</strong> – monthly statements showing interest portions</li>
 <li><strong>Repairs and maintenance</strong> – invoices for fixing existing problems</li>
@@ -91,12 +82,8 @@ faqs:
 <li><strong>Marketing costs</strong> – property advertising, tenant finding fees</li>
 </ul>
 
-<p>Remember that mortgage interest relief is restricted under <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 rules</a>, providing only a 20% tax credit rather than full deduction.</p>
-
 <h3>Capital Expenditure Records</h3>
-
-<p>While not deductible against rental income, capital expenses must be tracked for <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital Gains Tax</a> purposes:</p>
-
+<p>While not deductible against rental income, capital expenses must be tracked for <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital Gains Tax</a> purposes. When you sell, these costs are deducted from the sale proceeds to calculate your gain, which is taxed at 18% (basic rate) or 24% (higher rate).</p>
 <ul>
 <li><strong>Property purchase costs</strong> – legal fees, stamp duty, survey costs</li>
 <li><strong>Improvement works</strong> – extensions, conversions, substantial renovations</li>
@@ -104,12 +91,11 @@ faqs:
 <li><strong>Disposal costs</strong> – estate agent fees, legal costs when selling</li>
 </ul>
 
-<h2>MTD Receipts Requirements: What Documentation Do You Need?</h2>
+<h2>MTD Receipts and Documentation Requirements</h2>
 
-<p>The <strong>MTD receipts requirements</strong> go beyond simply recording transactions. You need supporting documentation for every entry:</p>
+<p>The <strong>MTD receipts requirements</strong> go beyond simply recording transactions. You need supporting documentation for every entry.</p>
 
 <h3>Acceptable Digital Receipts</h3>
-
 <ul>
 <li><strong>PDF invoices and receipts</strong> – emailed or downloaded from supplier websites</li>
 <li><strong>Bank statement downloads</strong> – showing payment dates and amounts</li>
@@ -119,14 +105,20 @@ faqs:
 </ul>
 
 <h3>Converting Paper to Digital</h3>
-
 <p>If you receive paper receipts, they must be converted to digital format immediately:</p>
-
 <ul>
 <li><strong>High-quality scans or photos</strong> – clear, readable images showing all details</li>
 <li><strong>Proper file naming</strong> – date, supplier, amount for easy identification</li>
 <li><strong>Secure storage</strong> – cloud backup or multiple device copies</li>
 <li><strong>Original disposal</strong> – you can destroy paper once digitally stored (but many keep them)</li>
+</ul>
+
+<h3>Poor Receipt Management (Common Mistakes)</h3>
+<ul>
+<li>Low-quality scans that become unreadable</li>
+<li>Inconsistent file naming making documents hard to find</li>
+<li>No backup systems risking data loss</li>
+<li>Failing to link receipts to accounting entries</li>
 </ul>
 
 <h2>How Long Must You Keep Digital Records?</h2>
@@ -136,9 +128,7 @@ faqs:
 <p>The 5-year period starts from 31 January following the end of the tax year. For 2026/27 records, you'd need to keep them until at least 31 January 2033.</p>
 
 <h3>Best Practice Record Retention</h3>
-
 <p>Many property accountants recommend keeping records longer than the minimum requirement:</p>
-
 <ul>
 <li><strong>Capital gains records</strong> – keep until 6 years after property disposal</li>
 <li><strong>Dispute protection</strong> – HMRC can investigate further back in cases of suspected errors</li>
@@ -148,18 +138,12 @@ faqs:
 
 <h2>MTD-Compatible Software for Record Keeping</h2>
 
-<p>Your digital records must be maintained in software that can connect to HMRC's systems. Free options include:</p>
+<p>Your digital records must be maintained in software that can connect to HMRC's systems.</p>
 
-<ul>
-<li><strong>HMRC's own software</strong> – basic but sufficient for simple portfolios</li>
-<li><strong>Spreadsheet bridges</strong> – connect Excel to HMRC (limited functionality)</li>
-<li><strong>Free accounting software</strong> – basic versions of commercial products</li>
-</ul>
-
-<p>Paid software typically offers better features for landlords with multiple properties, automatic bank feeds, and integration with letting agents.</p>
+<h3>Software Options</h3>
+<p>Free options include HMRC's own software, spreadsheet bridges (connect Excel to HMRC with limited functionality), and basic versions of commercial accounting software. Paid software typically offers better features for landlords with multiple properties, automatic bank feeds, and integration with letting agents.</p>
 
 <h3>Key Software Features for Landlords</h3>
-
 <ul>
 <li><strong>Property-by-property tracking</strong> – separate income and expenses</li>
 <li><strong>Receipt storage</strong> – attach digital documents to transactions</li>
@@ -172,52 +156,29 @@ faqs:
 
 <p>These errors could trigger HMRC penalties under MTD:</p>
 
-<h3>Incomplete Income Records</h3>
-
-<p>Many landlords focus on expenses but miss income items:</p>
-
-<ul>
-<li>Failing to record deposit retentions as income</li>
-<li>Missing service charge recoveries from tenants</li>
-<li>Not including insurance payouts for loss of rent</li>
-<li>Overlooking rent paid direct by housing benefit</li>
-</ul>
-
 <h3>Mixed Business and Personal Expenses</h3>
-
 <p>Using personal accounts for property expenses creates problems:</p>
-
 <ul>
 <li>Difficulty separating business and personal transactions</li>
 <li>Missing expenses paid from personal funds</li>
 <li>Inadequate documentation for mixed-use items</li>
 </ul>
 
-<h3>Poor Receipt Management</h3>
-
-<ul>
-<li>Low-quality scans that become unreadable</li>
-<li>Inconsistent file naming making documents hard to find</li>
-<li>No backup systems risking data loss</li>
-<li>Failing to link receipts to accounting entries</li>
-</ul>
+<h3>Incomplete or Poor Quality Records</h3>
+<p>Beyond the income and receipt issues already covered, ensure your system is robust to avoid data loss or non-compliance.</p>
 
 <h2>Setting Up Your Digital Record System</h2>
 
 <p>Start preparing for MTD now, even if your rental income is currently below £10,000:</p>
 
 <h3>Step 1: Choose Your Software</h3>
-
 <p>Research MTD-compatible options and test free trials. Consider your portfolio size, complexity, and budget. Many landlords benefit from professional guidance when selecting systems.</p>
 
 <h3>Step 2: Separate Business Banking</h3>
-
 <p>Open dedicated accounts for rental income and expenses. This simplifies record keeping and makes bank feed integration more effective.</p>
 
 <h3>Step 3: Create Filing Systems</h3>
-
 <p>Establish consistent folder structures and naming conventions:</p>
-
 <ul>
 <li><strong>Property folders</strong> – separate section for each rental</li>
 <li><strong>Date-based filing</strong> – YYYY-MM-DD format for chronological order</li>
@@ -226,7 +187,6 @@ faqs:
 </ul>
 
 <h3>Step 4: Start Digital-First</h3>
-
 <p>Begin requesting electronic invoices and statements from suppliers. Set up online accounts with utility companies, insurance providers, and other regular services.</p>
 
 <h2>Professional Support for MTD Compliance</h2>
@@ -234,7 +194,6 @@ faqs:
 <p>Many landlords find MTD record keeping challenging, especially those with multiple properties or complex arrangements. Professional help can ensure compliance and often saves time in the long run.</p>
 
 <p>A specialist <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">property accountant</a> can help with:</p>
-
 <ul>
 <li>Software selection and setup</li>
 <li>Record keeping system design</li>
@@ -248,7 +207,6 @@ faqs:
 <h2>Preparing for April 2026</h2>
 
 <p>With MTD mandatory from April 2026, start your preparation now:</p>
-
 <ul>
 <li><strong>Audit current systems</strong> – identify gaps in your record keeping</li>
 <li><strong>Test software options</strong> – don't wait until the deadline</li>

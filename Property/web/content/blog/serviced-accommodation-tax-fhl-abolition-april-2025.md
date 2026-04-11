@@ -78,29 +78,9 @@ faqs:
 <li><strong>Business reliefs:</strong> Access to entrepreneurs' relief and other business CGT reliefs</li>
 </ul>
 
-<h2>Key Tax Changes Affecting Serviced Accommodation</h2>
-
-<h3>Section 24 Now Applies</h3>
-
-<p>Former FHL properties treated as property income now face <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a>. This means mortgage interest costs are no longer fully deductible against rental income. Instead, you receive a 20% tax credit.</p>
-
-<p>For a landlord with £40,000 serviced accommodation income and £15,000 mortgage interest, the old FHL treatment allowed full deduction. Now under Section 24, they pay income tax on the full £40,000 but receive a £3,000 tax credit (20% of £15,000).</p>
-
-<h3>Capital Gains Tax Changes</h3>
-
-<p>FHL properties previously qualified for business asset disposal relief (formerly entrepreneurs' relief) and rollover relief. These benefits are no longer available for standard serviced accommodation.</p>
-
-<p>Properties now face residential CGT rates of 18% for basic rate taxpayers and 24% for higher rate taxpayers, with the annual exempt amount of £3,000 for 2025/26.</p>
-
-<h3>Loss of Capital Allowances</h3>
-
-<p>FHL properties could claim capital allowances on furniture and equipment. Standard property investments cannot claim these allowances—furniture costs are typically claimed through the replacement domestic items relief instead.</p>
-
-<p>However, properties qualifying as trading income can still claim capital allowances, making the property vs trading distinction crucial for tax planning.</p>
-
 <h2>Determining Property vs Trading Income Status</h2>
 
-<p>HMRC applies several factors to determine whether serviced accommodation constitutes property investment or trading activity:</p>
+<p>HMRC applies several factors to determine whether serviced accommodation constitutes property investment or trading activity. Most Airbnb and holiday cottage operations fall into the property income category unless significant additional services are provided.</p>
 
 <h3>Factors Indicating Trading Income</h3>
 
@@ -122,15 +102,25 @@ faqs:
 <li><strong>Passive management:</strong> Limited landlord involvement in day-to-day operations</li>
 </ul>
 
-<p>Most Airbnb and holiday cottage operations fall into the property income category unless significant additional services are provided.</p>
+<h2>Key Tax Changes and Implications</h2>
+
+<h3>Section 24 Application</h3>
+
+<p>Former FHL properties treated as property income now face <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a>. This means mortgage interest costs are no longer fully deductible against rental income. Instead, you receive a 20% tax credit. For a landlord with £40,000 serviced accommodation income and £15,000 mortgage interest, the old FHL treatment allowed full deduction. Now under Section 24, they pay income tax on the full £40,000 but receive a £3,000 tax credit (20% of £15,000).</p>
+
+<h3>Capital Gains Tax Changes</h3>
+
+<p>FHL properties previously qualified for business asset disposal relief (formerly entrepreneurs' relief) and rollover relief. These benefits are no longer available for standard serviced accommodation. Properties now face residential CGT rates of 18% for basic rate taxpayers and 24% for higher rate taxpayers, with the annual exempt amount of £3,000 for 2025/26.</p>
+
+<h3>Loss of Capital Allowances</h3>
+
+<p>FHL properties could claim capital allowances on furniture and equipment. Standard property investments cannot claim these allowances—furniture costs are typically claimed through the replacement domestic items relief instead. However, properties qualifying as trading income can still claim capital allowances, making the property vs trading distinction crucial for tax planning.</p>
 
 <h2>Tax Planning Strategies After FHL Abolition</h2>
 
 <h3>Consider Incorporation</h3>
 
-<p>Operating serviced accommodation through a <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited company structure</a> may offer tax advantages, particularly for higher rate taxpayers facing the new property income tax rates from April 2027.</p>
-
-<p>Companies pay 19% corporation tax on profits up to £250,000, potentially lower than the 42% property income rate for higher rate taxpayers. However, extraction costs and additional compliance requirements must be considered.</p>
+<p>Operating serviced accommodation through a <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited company structure</a> may offer tax advantages, particularly for higher rate taxpayers facing the new property income tax rates from April 2027. Companies pay 19% corporation tax on profits up to £250,000, potentially lower than the 42% property income rate for higher rate taxpayers. However, extraction costs and additional compliance requirements must be considered.</p>
 
 <h3>Maximise Allowable Deductions</h3>
 
@@ -147,9 +137,7 @@ faqs:
 
 <h3>Review Property Portfolio Structure</h3>
 
-<p>The loss of FHL benefits may prompt a review of your overall property strategy. Some landlords are switching from short-term to long-term lets to avoid Section 24 implications and compliance complexity.</p>
-
-<p>Others are enhancing service provision to potentially qualify for trading income treatment, though this requires genuine business substance and carries additional operational complexity.</p>
+<p>The loss of FHL benefits may prompt a review of your overall property strategy. Some landlords are switching from short-term to long-term lets to avoid Section 24 implications and compliance complexity. Others are enhancing service provision to potentially qualify for trading income treatment, though this requires genuine business substance and carries additional operational complexity.</p>
 
 <h2>Compliance Obligations for Serviced Accommodation</h2>
 
@@ -175,9 +163,7 @@ faqs:
 
 <h2>Planning for the 2027 Property Tax Rate Changes</h2>
 
-<p>The introduction of separate property income tax rates from April 2027 significantly impacts serviced accommodation taxation. Property income will face rates of 22% basic, 42% higher, and 47% additional—higher than general income tax rates.</p>
-
-<p>This change makes the trading vs property income distinction even more important. Operations qualifying as trading income will continue facing standard income tax rates, potentially offering substantial savings for higher rate taxpayers.</p>
+<p>The introduction of separate property income tax rates from April 2027 significantly impacts serviced accommodation taxation. Property income will face rates of 22% basic, 42% higher, and 47% additional—higher than general income tax rates. This change makes the trading vs property income distinction even more important. Operations qualifying as trading income will continue facing standard income tax rates, potentially offering substantial savings for higher rate taxpayers.</p>
 
 <h3>Example: Tax Impact Comparison</h3>
 

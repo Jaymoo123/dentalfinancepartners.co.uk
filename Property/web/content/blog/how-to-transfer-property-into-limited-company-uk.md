@@ -97,22 +97,12 @@ faqs:
 <h3>Capital Gains Tax</h3>
 
 <p>You'll face CGT on any increase in property value since your original purchase, unless you qualify for incorporation relief. The rate depends on your total income:</p>
-
 <ul>
 <li>18% for basic rate taxpayers</li>
-<li>24% for higher and additional rate taxpayers (from 2024/25)</li>
+<li>24% for higher and additional rate taxpayers</li>
 </ul>
 
-<h3>Ongoing Tax Considerations</h3>
-
-<p>Once properties are in the company, you'll need to:</p>
-<ul>
-<li>File annual company accounts and corporation tax returns</li>
-<li>Consider dividend tax when extracting profits</li>
-<li>Plan for potential future changes to corporation tax rates</li>
-</ul>
-
-<h2>Practical Considerations</h2>
+<h2>Practical and Ongoing Considerations</h2>
 
 <h3>Mortgage Implications</h3>
 
@@ -124,14 +114,13 @@ faqs:
 
 <p>Company-owned properties need commercial landlord insurance rather than personal buy-to-let cover. Premiums may differ, so get quotes before proceeding.</p>
 
-<h3>Administrative Burden</h3>
+<h3>Administrative and Tax Burden</h3>
 
-<p>Running a property company involves additional compliance requirements including annual accounts, corporation tax returns, and potentially <a href="/services">quarterly management accounts</a> for larger portfolios.</p>
+<p>Running a property company involves additional compliance requirements including annual accounts, corporation tax returns, and potentially <a href="/services">quarterly management accounts</a> for larger portfolios. You'll need to file annual company accounts and corporation tax returns, consider dividend tax when extracting profits, and plan for potential future changes to corporation tax rates (currently 19% for small profits up to £250k and 25% main rate).</p>
 
 <h2>When Transfer Might Not Make Sense</h2>
 
 <p>Property transfer isn't always beneficial. Consider carefully if:</p>
-
 <ul>
 <li>You're a basic rate taxpayer with modest rental income</li>
 <li>Transfer costs exceed long-term tax savings</li>
@@ -142,7 +131,6 @@ faqs:
 <h2>Alternative Strategies</h2>
 
 <p>Instead of transferring existing properties, consider:</p>
-
 <ul>
 <li>Buying future properties through a company structure</li>
 <li>Transferring only part of your portfolio</li>
@@ -159,7 +147,6 @@ faqs:
 <p>Consider using online <a href="/calculators">incorporation calculators</a> for initial assessments, but remember these can't replace detailed professional analysis of your specific situation.</p>
 
 <h2>Related Reading</h2>
-
 <ul>
 <li><a href="/blog/incorporation-and-company-structures/incorporate-rental-property-without-cgt">How to Incorporate Rental Property Without Triggering CGT</a></li>
 <li><a href="/blog/incorporation-and-company-structures/incorporation-cost-calculator-cgt-sdlt-implications">Incorporation Cost Calculator: Understanding CGT and SDLT Implications for UK Landlords</a></li>

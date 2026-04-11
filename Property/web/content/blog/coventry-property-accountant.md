@@ -40,11 +40,19 @@ faqs:
 
 <h2>Core Services for Coventry Property Investors</h2>
 
-<h3>Annual Tax Return Preparation</h3>
+<h3>Tax Return Preparation and Making Tax Digital</h3>
 
-<p>Property tax returns require careful attention to allowable expenses and income classification. Professional preparation ensures you claim all available reliefs while maintaining HMRC compliance.</p>
+<p>Property tax returns require careful attention to allowable expenses and income classification. Professional preparation ensures you claim all available reliefs while maintaining HMRC compliance. For example, a Coventry landlord with three buy-to-let properties earning £42,000 annual rental income needs accurate expense tracking to minimise their tax liability under current rules.</p>
 
-<p>For example, a Coventry landlord with three buy-to-let properties earning £42,000 annual rental income needs accurate expense tracking to minimise their tax liability under current rules.</p>
+<p>From 6 April 2026, eligible landlords must comply with Making Tax Digital for Income Tax (ITSA). This affects property investors with business income over £10,000 annually. Coventry landlords need to prepare their record-keeping systems and understand quarterly reporting requirements. Early preparation helps avoid last-minute compliance issues and potential penalties.</p>
+
+<p>Key preparation steps include:</p>
+<ul>
+<li>Digital record-keeping system setup</li>
+<li>Quarterly submission process planning</li>
+<li>Software integration for property management</li>
+<li>Cash flow planning for accelerated payments</li>
+</ul>
 
 <h3>Section 24 Planning and Mitigation</h3>
 
@@ -70,26 +78,9 @@ faqs:
 
 <p>Proper expense classification and planning helps maximise tax efficiency for these specialised investments.</p>
 
-<h2>Making Tax Digital Preparation</h2>
-
-<p>From 6 April 2026, eligible landlords must comply with Making Tax Digital for Income Tax (ITSA). This affects property investors with business income over £10,000 annually.</p>
-
-<p>Coventry landlords need to prepare their record-keeping systems and understand quarterly reporting requirements. Early preparation helps avoid last-minute compliance issues and potential penalties.</p>
-
-<p>Key preparation steps include:</p>
-
-<ul>
-<li>Digital record-keeping system setup</li>
-<li>Quarterly submission process planning</li>
-<li>Software integration for property management</li>
-<li>Cash flow planning for accelerated payments</li>
-</ul>
-
 <h2>Capital Gains Tax Planning</h2>
 
-<p>Property disposals trigger capital gains tax obligations that require careful planning. Timing disposals, using available allowances, and considering reinvestment strategies can significantly impact your tax liability.</p>
-
-<p>For Coventry landlords considering portfolio restructuring or partial disposals, professional advice helps optimise the tax position while meeting your investment objectives.</p>
+<p>Property disposals trigger capital gains tax obligations that require careful planning. Timing disposals, using available allowances, and considering reinvestment strategies can significantly impact your tax liability. For Coventry landlords considering portfolio restructuring or partial disposals, professional advice helps optimise the tax position while meeting your investment objectives.</p>
 
 <h2>Choosing the Right Property Accountant in Coventry</h2>
 

@@ -41,7 +41,7 @@ faqs:
 
 <p>For example, a landlord with a Manchester property purchased for £150,000 achieving £750 monthly rent (6% gross yield) might reconsider if similar properties now rent for only £650 monthly (5.2% yield) while property values have stagnated.</p>
 
-<h2>2. Significant Capital Appreciation</h2>
+<h2>2. Significant Capital Appreciation and Capital Gains Tax</h2>
 
 <p>Sometimes the best time to sell a rental property is when you've achieved substantial capital growth, especially if reinvestment opportunities offer better prospects.</p>
 
@@ -69,7 +69,7 @@ faqs:
 
 <p>A Birmingham landlord facing a £15,000 roof replacement on a property generating £8,000 annual rent might find selling more economically viable than continuing ownership.</p>
 
-<h2>4. Section 24 Tax Relief Restrictions Impact</h2>
+<h2>4. Tax Changes: Section 24 and Upcoming Property Income Tax Rates</h2>
 
 <p>The full implementation of <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a> has fundamentally changed buy-to-let economics for higher-rate taxpayers. If your portfolio has become unviable due to restricted mortgage interest relief, selling may be necessary.</p>
 
@@ -83,9 +83,7 @@ faqs:
 
 <p>Many landlords are considering <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation strategies</a> as an alternative, but selling and reinvesting through a company structure might prove more efficient.</p>
 
-<h2>5. Upcoming Tax Rate Changes (From April 2027)</h2>
-
-<p>The introduction of separate property income tax rates from April 2027 represents a significant change. Property income will be taxed at 22% (basic rate), 42% (higher rate), and 47% (additional rate) - higher than general income tax rates.</p>
+<p>The introduction of separate property income tax rates from April 2027 represents another significant change. Property income will be taxed at 22% (basic rate), 42% (higher rate), and 47% (additional rate) - higher than general income tax rates.</p>
 
 <p><strong>Strategic timing considerations:</strong></p>
 <ul>
@@ -95,9 +93,7 @@ faqs:
 <li>Company ownership becomes increasingly attractive</li>
 </ul>
 
-<p>This represents a fundamental shift in buy-to-let taxation that many landlords haven't fully appreciated yet.</p>
-
-<h2>6. Changing Local Market Dynamics</h2>
+<h2>5. Changing Local Market Dynamics</h2>
 
 <p>Local area changes can dramatically impact rental demand and property values. Recognising these shifts early allows for strategic exit timing.</p>
 
@@ -112,7 +108,7 @@ faqs:
 
 <p>For instance, a landlord near a university facing reduced international student numbers post-Brexit might find selling preferable to adapting for a different tenant market.</p>
 
-<h2>7. Personal Financial Circumstances</h2>
+<h2>6. Personal Financial Circumstances</h2>
 
 <p>Your personal financial situation often drives the decision of when to sell a rental property. Life changes can make property investment less suitable or create liquidity needs.</p>
 
@@ -127,7 +123,7 @@ faqs:
 
 <p>Many landlords over 65 are selling portfolios to avoid dealing with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> and increasingly complex tax compliance.</p>
 
-<h2>8. Regulatory and Legislative Changes</h2>
+<h2>7. Regulatory and Legislative Changes</h2>
 
 <p>The regulatory environment for UK landlords continues to evolve, with changes that can impact profitability and operational complexity.</p>
 
@@ -142,7 +138,7 @@ faqs:
 
 <p>Some landlords are proactively selling before the Section 21 changes take effect, concerned about tenant security and eviction procedures.</p>
 
-<h2>Tax-Efficient Exit Strategies</h2>
+<h2>8. Tax-Efficient Exit and Alternative Strategies</h2>
 
 <p>Once you've decided to sell, optimising the tax treatment becomes crucial. Several strategies can help minimise your <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax liability</a>:</p>
 
@@ -155,7 +151,29 @@ faqs:
 <h3>Offsetting Losses</h3>
 <p>If you have underperforming properties, selling loss-making investments in the same tax year can offset gains from profitable disposals.</p>
 
-<h2>Professional Support for Exit Planning</h2>
+<p>The timing of your property sale can significantly impact both tax liability and sale proceeds. Consider these timing factors:</p>
+
+<h3>Tax Year Planning</h3>
+<p>Completing sales early in the tax year (April-July) provides maximum time for additional planning if required. Late tax year sales (January-March) can create compliance pressure.</p>
+
+<h3>Market Seasonality</h3>
+<p>Spring property markets (March-June) typically achieve higher sale prices, while autumn markets often favour buyers. Factor seasonal variations into your timing decisions.</p>
+
+<h3>Interest Rate Cycles</h3>
+<p>Rising interest rates can depress property values and reduce buyer demand. Consider macroeconomic factors when planning exit timing.</p>
+
+<p>Selling isn't the only exit strategy. Consider these alternatives:</p>
+
+<h3>Portfolio Restructuring</h3>
+<p>Moving properties into a limited company structure can address Section 24 issues while maintaining ownership. However, this involves upfront CGT liability.</p>
+
+<h3>Rent-to-Rent Arrangements</h3>
+<p>For landlords wanting to reduce management responsibilities without selling, rent-to-rent arrangements with guaranteed rent providers offer middle-ground solutions.</p>
+
+<h3>Family Transfers</h3>
+<p>Transferring properties to family members can provide succession planning benefits while potentially utilising multiple CGT allowances.</p>
+
+<h2>9. Professional Support for Exit Planning</h2>
 
 <p>Deciding when to sell a rental property involves complex tax, legal, and financial considerations. Professional guidance ensures you make informed decisions and optimise outcomes.</p>
 
@@ -169,32 +187,6 @@ faqs:
 </ul>
 
 <p>The <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">cost of professional advice</a> is typically far outweighed by the tax savings and strategic benefits achieved.</p>
-
-<h2>Timing Your Property Disposal</h2>
-
-<p>The timing of your property sale can significantly impact both tax liability and sale proceeds. Consider these timing factors:</p>
-
-<h3>Tax Year Planning</h3>
-<p>Completing sales early in the tax year (April-July) provides maximum time for additional planning if required. Late tax year sales (January-March) can create compliance pressure.</p>
-
-<h3>Market Seasonality</h3>
-<p>Spring property markets (March-June) typically achieve higher sale prices, while autumn markets often favour buyers. Factor seasonal variations into your timing decisions.</p>
-
-<h3>Interest Rate Cycles</h3>
-<p>Rising interest rates can depress property values and reduce buyer demand. Consider macroeconomic factors when planning exit timing.</p>
-
-<h2>Alternative Exit Strategies</h2>
-
-<p>Selling isn't the only exit strategy. Consider these alternatives:</p>
-
-<h3>Portfolio Restructuring</h3>
-<p>Moving properties into a limited company structure can address Section 24 issues while maintaining ownership. However, this involves upfront CGT liability.</p>
-
-<h3>Rent-to-Rent Arrangements</h3>
-<p>For landlords wanting to reduce management responsibilities without selling, rent-to-rent arrangements with guaranteed rent providers offer middle-ground solutions.</p>
-
-<h3>Family Transfers</h3>
-<p>Transferring properties to family members can provide succession planning benefits while potentially utilising multiple CGT allowances.</p>
 
 <h2>Final Considerations</h2>
 

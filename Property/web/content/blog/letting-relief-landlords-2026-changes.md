@@ -104,13 +104,27 @@ faqs:
 
 <p>This means if you moved out of your home in 2018 and let it until selling in 2026, you could claim letting relief for the period from 2018 to April 2020, but not for the period from April 2020 onwards (unless you moved back in and shared with tenants).</p>
 
+<h2>Impact on Different Landlord Types</h2>
+
+<p>The changes to letting relief affect different landlords in distinct ways.</p>
+
+<h3>Buy-to-Let Investors</h3>
+
+<p>Properties bought specifically for rental never qualified for letting relief anyway, so the changes don't directly affect pure buy-to-let investors. However, they do affect investors who previously lived in properties before letting them.</p>
+
+<h3>Accidental and Live-In Landlords</h3>
+
+<p>These changes hit "accidental landlords" hardest — those who moved house but kept their previous home as a rental property. Previously, they could claim substantial letting relief. Now they typically can't claim any.</p>
+
+<p>Landlords who share their home with tenants (live-in landlords) are the only group that can still benefit from letting relief. This might make lodger arrangements more attractive from a tax perspective.</p>
+
 <h2>Planning Around the Letting Relief Changes</h2>
 
 <p>With letting relief now severely restricted, landlords need to consider alternative strategies:</p>
 
 <h3>Consider SPV Structures</h3>
 
-<p>Property held in a <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited company</a> isn't subject to CGT — it pays corporation tax on capital gains instead. While this isn't always beneficial, it can be worth considering for larger portfolios.</p>
+<p>Property held in a <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited company</a> isn't subject to CGT — it pays corporation tax on capital gains instead. The corporation tax rate is 19% on profits up to £250,000 and 25% on profits above that. While this isn't always beneficial, it can be worth considering for larger portfolios.</p>
 
 <h3>Optimize Private Residence Relief</h3>
 
@@ -118,23 +132,9 @@ faqs:
 
 <h3>Plan Your Disposals</h3>
 
-<p>With less relief available, timing property sales to manage your overall CGT liability becomes more important. Consider spreading disposals across tax years or using your annual exempt amount strategically.</p>
+<p>With less relief available, timing property sales to manage your overall CGT liability becomes more important. Consider spreading disposals across tax years or using your annual exempt amount strategically. Remember, capital gains tax on residential property is charged at 18% for basic rate taxpayers and 24% for higher and additional rate taxpayers.</p>
 
-<h2>Impact on Different Property Strategies</h2>
-
-<h3>Buy-to-Let Investors</h3>
-
-<p>Properties bought specifically for rental never qualified for letting relief anyway, so the changes don't directly affect pure buy-to-let investors. However, they do affect investors who previously lived in properties before letting them.</p>
-
-<h3>Accidental Landlords</h3>
-
-<p>These changes hit "accidental landlords" hardest — those who moved house but kept their previous home as a rental property. Previously, they could claim substantial letting relief. Now they typically can't claim any.</p>
-
-<h3>Live-In Landlords</h3>
-
-<p>Landlords who share their home with tenants are the only group that can still benefit from letting relief. This might make lodger arrangements more attractive from a tax perspective.</p>
-
-<h2>Calculating Your Position</h2>
+<h2>Calculating Your Position and Record Keeping</h2>
 
 <p>To determine if any letting relief applies to your situation, you need to establish:</p>
 
@@ -147,8 +147,6 @@ faqs:
 </ul>
 
 <p>Given the complexity of these calculations, especially with the transitional rules, it's often worth getting professional advice to ensure you're claiming all available reliefs correctly.</p>
-
-<h2>Record Keeping Requirements</h2>
 
 <p>If you're claiming letting relief, maintain detailed records of:</p>
 

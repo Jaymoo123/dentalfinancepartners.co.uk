@@ -27,77 +27,40 @@ faqs:
 
 <p>This guide walks through the complete calculation process, covering all allowable deductions and providing practical examples for different property scenarios in 2026.</p>
 
-<h2>What Is Net Rental Income?</h2>
+<h2>What Is Net Rental Income and How to Calculate It?</h2>
 
-<p>Net rental income is your gross rental income minus all allowable property-related expenses. This figure represents your taxable rental profit and determines how much income tax you'll pay on your property income.</p>
+<p>Net rental income is your gross rental income minus all allowable property-related expenses. This figure represents your taxable rental profit and determines how much income tax you'll pay on your property income. Your <strong>net rental profit</strong> is your cash position after all costs, including tax, which differs from your taxable income due to rules like Section 24.</p>
 
-<p>The calculation becomes more complex when factoring in <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a>, which limit mortgage interest relief to a basic rate tax credit rather than a full deduction.</p>
-
-<p>For individual landlords, this <strong>rental income after expenses</strong> is added to your other income and taxed at your marginal rate. From April 2027, separate property income tax rates will apply (22% basic, 42% higher, 47% additional rate).</p>
-
-<h2>Step 1: Calculate Gross Rental Income</h2>
-
+<h3>Step 1: Calculate Gross Rental Income</h3>
 <p>Start with your total rental income for the tax year, including:</p>
-
 <ul>
 <li>Monthly rent payments received</li>
 <li>Any additional charges (parking, storage, utilities if passed to tenant)</li>
 <li>Deposits retained for damages (only the amount kept, not the full deposit)</li>
 <li>Insurance payouts for lost rental income</li>
 </ul>
-
 <p><strong>Example:</strong> A landlord with a two-bedroom property in Manchester charging £1,200 per month plus £50 monthly parking would have gross rental income of £15,000 annually (£1,250 × 12 months).</p>
 
-<h2>Step 2: Deduct Allowable Property Expenses</h2>
-
+<h3>Step 2: Deduct Allowable Property Expenses</h3>
 <p>Subtract all allowable revenue expenses from your gross rental income. These <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">allowable deductions</a> include:</p>
-
-<h3>Property Management and Maintenance</h3>
 <ul>
-<li>Letting agent fees (typically 8-15% of rental income)</li>
-<li>Property management costs</li>
-<li>Repairs and maintenance (not improvements)</li>
-<li>Cleaning between tenancies</li>
-<li>Gardening and grounds maintenance</li>
-</ul>
-
-<h3>Insurance and Professional Costs</h3>
-<ul>
-<li>Buildings and contents insurance</li>
-<li>Landlord liability insurance</li>
-<li>Legal fees for tenancy agreements</li>
-<li>Accountancy fees</li>
-<li>Property inspection costs</li>
-</ul>
-
-<h3>Utilities and Services</h3>
-<ul>
-<li>Council tax (if you pay it)</li>
-<li>Utilities you cover</li>
+<li>Letting agent and property management fees</li>
+<li>Repairs, maintenance, and cleaning</li>
+<li>Buildings, contents, and landlord liability insurance</li>
+<li>Legal and accountancy fees</li>
+<li>Council tax and utilities you cover</li>
 <li>Safety certificates (gas, electrical, EPC)</li>
-<li>Alarm monitoring services</li>
+<li>Travel costs to the property and advertising for tenants</li>
 </ul>
 
-<h3>Travel and Advertising</h3>
-<ul>
-<li>Travel costs to the property</li>
-<li>Advertising for tenants</li>
-<li>Property marketing costs</li>
-</ul>
-
-<h2>Step 3: Apply Section 24 Mortgage Interest Rules</h2>
-
-<p>For individual landlords, mortgage interest is no longer fully deductible. Instead, you get a basic rate tax credit equal to 20% of your mortgage interest payments.</p>
-
-<p>The calculation works as follows:</p>
-
+<h3>Step 3: Apply Section 24 Mortgage Interest Rules</h3>
+<p>For individual landlords, mortgage interest is no longer fully deductible. Instead, you get a basic rate tax credit equal to 20% of your mortgage interest payments. The calculation works as follows:</p>
 <ol>
 <li>Calculate profit before mortgage interest</li>
 <li>Add mortgage interest back to determine taxable income</li>
 <li>Apply income tax to the full amount</li>
 <li>Deduct a 20% tax credit on mortgage interest</li>
 </ol>
-
 <p><strong>Example calculation:</strong></p>
 <ul>
 <li>Gross rental income: £15,000</li>
@@ -110,11 +73,8 @@ faqs:
 <li>Net tax liability: £3,400</li>
 </ul>
 
-<h2>Step 4: Calculate Your Net Rental Profit</h2>
-
-<p>Your <strong>net rental profit</strong> is your cash position after all costs, including tax. This differs from your taxable income due to Section 24.</p>
-
-<p>Using the example above:</p>
+<h3>Step 4: Determine Your Final Net Rental Profit</h3>
+<p>This is your actual cash return after all costs and taxes. Using the example above:</p>
 <ul>
 <li>Gross rental income: £15,000</li>
 <li>Less: Other expenses: £2,500</li>
@@ -123,85 +83,42 @@ faqs:
 <li><strong>Net rental profit: £1,100</strong></li>
 </ul>
 
-<p>This £1,100 represents your actual cash return from the property after all costs and taxes.</p>
-
-<h2>Different Scenarios and Calculations</h2>
+<h2>Different Property Ownership Scenarios</h2>
 
 <h3>Portfolio Landlords</h3>
-
-<p>If you own multiple properties, calculate the net position across your entire portfolio. Losses from one property can offset profits from others, though Section 24 applies to your total mortgage interest across all properties.</p>
-
-<p>For portfolios generating over £10,000 gross rental income, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital compliance</a> becomes mandatory from April 2026.</p>
+<p>If you own multiple properties, calculate the net position across your entire portfolio. Losses from one property can offset profits from others, though Section 24 applies to your total mortgage interest across all properties. For portfolios generating over £10,000 gross rental income, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital compliance</a> becomes mandatory from April 2026.</p>
 
 <h3>Limited Company Ownership</h3>
-
 <p>If you hold properties through a <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited company structure</a>, Section 24 doesn't apply. Mortgage interest remains fully deductible against rental income, with corporation tax applying to the net profit.</p>
-
 <p>Company calculation example:</p>
 <ul>
 <li>Gross rental income: £15,000</li>
 <li>All expenses including mortgage interest: £10,500</li>
 <li>Net profit: £4,500</li>
-<li>Corporation tax at 19%: £855</li>
+<li>Corporation tax at 19% (small profits rate): £855</li>
 <li>After-tax profit: £3,645</li>
 </ul>
 
 <h3>HMO Properties</h3>
-
-<p>House in Multiple Occupation properties often have higher expense ratios due to:</p>
-<ul>
-<li>Licensing fees</li>
-<li>More frequent maintenance</li>
-<li>Higher insurance premiums</li>
-<li>Individual room accounting requirements</li>
-</ul>
+<p>House in Multiple Occupation properties often have higher expense ratios due to licensing fees, more frequent maintenance, higher insurance premiums, and individual room accounting requirements.</p>
 
 <h2>Key Considerations for 2026 and Beyond</h2>
 
 <h3>Property Income Tax Rate Changes</h3>
+<p>From April 2027, separate property income tax rates apply to rental profits: 22% basic rate (currently 20%), 42% higher rate (currently 40%), and 47% additional rate (currently 45%). This will affect your net rental profit calculations from 2027 onwards.</p>
 
-<p>From April 2027, separate property income tax rates apply to rental profits:</p>
-<ul>
-<li>22% basic rate (currently 20%)</li>
-<li>42% higher rate (currently 40%)</li>
-<li>47% additional rate (currently 45%)</li>
-</ul>
-
-<p>This will affect your net rental profit calculations from 2027 onwards, potentially reducing after-tax returns for higher-rate taxpayers.</p>
-
-<h3>Record Keeping Requirements</h3>
-
-<p>Accurate calculation requires detailed records of all income and expenses. <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Professional property accountants</a> can help ensure you claim all allowable deductions while maintaining compliance.</p>
-
-<h3>When to Seek Professional Help</h3>
-
-<p>Consider professional advice if you:</p>
-<ul>
-<li>Own multiple properties</li>
-<li>Have complex financing arrangements</li>
-<li>Are considering incorporation</li>
-<li>Face MTD compliance requirements</li>
-<li>Need help optimising your tax position</li>
-</ul>
+<h3>Record Keeping and Professional Advice</h3>
+<p>Accurate calculation requires detailed records of all income and expenses. <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Professional property accountants</a> can help ensure you claim all allowable deductions while maintaining compliance. Consider professional advice if you own multiple properties, have complex financing, are considering incorporation, face MTD compliance, or need help optimising your tax position.</p>
 
 <h2>Common Mistakes to Avoid</h2>
+<ul>
+<li><strong>Including Capital Improvements:</strong> Don't deduct capital improvements from rental income. These costs can only be offset against <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax</a> when you sell the property.</li>
+<li><strong>Personal Use Expenses:</strong> Only claim expenses directly related to the rental business. Personal use of the property or mixed-use expenses must be apportioned correctly.</li>
+<li><strong>Ignoring Section 24 Impact:</strong> Many landlords underestimate the Section 24 impact on their net position. Always calculate both your taxable income and actual cash flow.</li>
+</ul>
 
-<h3>Including Capital Improvements</h3>
-
-<p>Don't deduct capital improvements from rental income. These costs can only be offset against <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax</a> when you sell the property.</p>
-
-<h3>Personal Use Expenses</h3>
-
-<p>Only claim expenses directly related to the rental business. Personal use of the property or mixed-use expenses must be apportioned correctly.</p>
-
-<h3>Ignoring Section 24 Impact</h3>
-
-<p>Many landlords underestimate the Section 24 impact on their net position. Always calculate both your taxable income and actual cash flow.</p>
-
-<h2>Improving Your Net Rental Income</h2>
-
+<h2>Strategies to Improve Your Net Rental Income</h2>
 <p>Consider these strategies to improve your <strong>net rental profit</strong>:</p>
-
 <ul>
 <li>Regular property maintenance to avoid larger repair costs</li>
 <li>Energy efficiency improvements to reduce void periods</li>

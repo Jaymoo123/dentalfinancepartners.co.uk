@@ -27,12 +27,11 @@ faqs:
 
 <p>For UK landlords, <strong>special purpose vehicle landlord</strong> structures have become increasingly popular since the introduction of Section 24 mortgage interest restrictions in 2017. These restrictions capped mortgage interest relief for individual landlords at the basic rate of tax, making corporate ownership more attractive for higher-rate taxpayers.</p>
 
-<h2>How Does an SPV Work for Property Investment?</h2>
+<h2>How an SPV Works for Property Investment</h2>
 
 <p>An <strong>SPV company structure</strong> operates as a separate legal entity from its owner. The landlord becomes a shareholder and director of the company, which then purchases and manages rental properties in its own name.</p>
 
 <p>Here's how the basic structure works:</p>
-
 <ul>
 <li>You incorporate a limited company with Companies House</li>
 <li>The company obtains buy-to-let mortgages (if needed) in the company name</li>
@@ -41,99 +40,37 @@ faqs:
 <li>The company pays corporation tax on profits</li>
 <li>You can extract profits via salary, dividends, or pension contributions</li>
 </ul>
-
 <p>The company has its own tax identity, separate from your personal tax affairs. This separation creates both opportunities and obligations that individual landlords need to understand.</p>
 
-<h2>Key Benefits of SPV Property Investment</h2>
+<h3>Key Benefits of an SPV</h3>
+<p><strong>Corporation Tax Advantages:</strong> Corporation tax rates are typically lower than higher-rate income tax. For 2025/26, corporation tax is charged at 19% on profits up to £250,000, rising to 25% above this threshold. Compare this to the new separate property income tax rates from April 2027: 22% basic rate, 42% higher rate, and 47% additional rate. More importantly, SPVs can still claim full mortgage interest relief as a business expense, unlike individual landlords affected by <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a>.</p>
+<p><strong>Limited Liability Protection:</strong> Your personal liability is limited to your investment in the company shares. If the company faces financial difficulties or legal claims, your personal assets (like your family home) are typically protected. This protection is particularly valuable for landlords with larger portfolios or those operating in higher-risk property sectors like HMOs.</p>
+<p><strong>Flexible Profit Extraction:</strong> SPVs offer multiple ways to extract profits: <strong>Dividends</strong> (taxed at dividend rates: 8.75% basic, 33.75% higher, 39.35% additional rate in 2025/26), <strong>Salary</strong> (subject to PAYE and National Insurance), <strong>Pension contributions</strong> (company contributions are tax-deductible), or <strong>Benefits in kind</strong>.</p>
 
-<h3>Corporation Tax Advantages</h3>
-
-<p>Corporation tax rates are typically lower than higher-rate income tax. For 2025/26, corporation tax is charged at 19% on profits up to £250,000, rising to 25% above this threshold. Compare this to the new separate property income tax rates from April 2027: 22% basic rate, 42% higher rate, and 47% additional rate.</p>
-
-<p>More importantly, SPVs can still claim full mortgage interest relief as a business expense, unlike individual landlords affected by <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a>.</p>
-
-<h3>Limited Liability Protection</h3>
-
-<p>Your personal liability is limited to your investment in the company shares. If the company faces financial difficulties or legal claims, your personal assets (like your family home) are typically protected.</p>
-
-<p>This protection is particularly valuable for landlords with larger portfolios or those operating in higher-risk property sectors like HMOs.</p>
-
-<h3>Flexible Profit Extraction</h3>
-
-<p>SPVs offer multiple ways to extract profits:</p>
-
-<ul>
-<li><strong>Dividends:</strong> Taxed at dividend rates (8.75% basic, 33.75% higher, 39.35% additional rate in 2025/26)</li>
-<li><strong>Salary:</strong> Subject to PAYE and National Insurance</li>
-<li><strong>Pension contributions:</strong> Company contributions are tax-deductible</li>
-<li><strong>Benefits in kind:</strong> Such as company cars (though rarely relevant for property SPVs)</li>
-</ul>
-
-<p>This flexibility allows you to optimise your overall tax position based on your personal circumstances and other income sources.</p>
-
-<h2>When Should You Consider an SPV Structure?</h2>
+<h2>When to Consider an SPV Structure</h2>
 
 <h3>Higher-Rate Taxpayers</h3>
-
-<p>If you're a higher or additional rate taxpayer, an SPV often provides significant tax savings. The combination of lower corporation tax rates and full mortgage interest relief typically outweighs the costs of corporate ownership.</p>
-
-<p>For example, a higher-rate taxpayer with £50,000 rental profit might pay £21,000 in income tax personally (42% from April 2027), compared to £9,500-12,500 in corporation tax through an SPV.</p>
+<p>If you're a higher or additional rate taxpayer, an SPV often provides significant tax savings. The combination of lower corporation tax rates and full mortgage interest relief typically outweighs the costs of corporate ownership. For example, a higher-rate taxpayer with £50,000 rental profit might pay £21,000 in income tax personally (42% from April 2027), compared to £9,500-12,500 in corporation tax through an SPV.</p>
 
 <h3>Growing Portfolios</h3>
-
-<p>Landlords planning to expand their portfolios benefit from SPV structures because:</p>
-
-<ul>
-<li>Profits can be retained in the company to fund future purchases</li>
-<li>Each additional property purchase doesn't trigger personal tax on the required capital</li>
-<li>The 5% SDLT surcharge on additional properties applies regardless of ownership structure</li>
-</ul>
+<p>Landlords planning to expand their portfolios benefit from SPV structures because profits can be retained in the company to fund future purchases, each additional property purchase doesn't trigger personal tax on the required capital, and the 5% SDLT surcharge on additional properties applies regardless of ownership structure.</p>
 
 <h3>Estate Planning Considerations</h3>
+<p>SPVs can form part of inheritance tax planning strategies. Company shares may qualify for Business Property Relief, potentially reducing inheritance tax liability to zero on the property portfolio. However, HMRC scrutinises property investment companies for Business Property Relief, so specialist advice is essential.</p>
 
-<p>SPVs can form part of inheritance tax planning strategies. Company shares may qualify for Business Property Relief, potentially reducing inheritance tax liability to zero on the property portfolio.</p>
-
-<p>However, HMRC scrutinises property investment companies for Business Property Relief, so specialist advice is essential.</p>
-
-<h2>Disadvantages and Considerations</h2>
+<h2>Disadvantages and Key Considerations</h2>
 
 <h3>Additional Compliance Costs</h3>
-
-<p>SPVs create ongoing compliance obligations:</p>
-
-<ul>
-<li>Corporation tax returns (CT600)</li>
-<li>Company accounts filed at Companies House</li>
-<li>PAYE if paying salaries</li>
-<li>VAT registration if rental income exceeds £90,000</li>
-<li><a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital</a> compliance from April 2026</li>
-</ul>
-
-<p>These requirements typically increase accountancy fees by £1,500-3,000 annually compared to individual ownership.</p>
+<p>SPVs create ongoing compliance obligations: Corporation tax returns (CT600), company accounts filed at Companies House, PAYE if paying salaries, VAT registration if rental income exceeds £90,000, and <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital</a> compliance from April 2026. These requirements typically increase accountancy fees by £1,500-3,000 annually compared to individual ownership.</p>
 
 <h3>Mortgage Availability and Rates</h3>
-
-<p>Buy-to-let mortgages for limited companies often have:</p>
-
-<ul>
-<li>Higher interest rates (typically 0.25-0.5% more than personal mortgages)</li>
-<li>Reduced lender choice</li>
-<li>Higher arrangement fees</li>
-<li>Stricter affordability criteria</li>
-</ul>
-
-<p>However, the full mortgage interest relief available to companies often outweighs these additional costs for higher-rate taxpayers.</p>
+<p>Buy-to-let mortgages for limited companies often have higher interest rates (typically 0.25-0.5% more than personal mortgages), reduced lender choice, higher arrangement fees, and stricter affordability criteria. However, the full mortgage interest relief available to companies often outweighs these additional costs for higher-rate taxpayers.</p>
 
 <h3>Extraction Costs</h3>
-
-<p>Getting money out of the company creates additional tax charges. Even tax-efficient dividend extraction results in higher overall tax rates compared to the corporation tax paid by the company.</p>
-
-<p>This "double taxation" means SPVs work best when profits can be retained for reinvestment or when extraction can be optimised over time.</p>
+<p>Getting money out of the company creates additional tax charges. Even tax-efficient dividend extraction results in higher overall tax rates compared to the corporation tax paid by the company. This "double taxation" means SPVs work best when profits can be retained for reinvestment or when extraction can be optimised over time.</p>
 
 <h2>SPV vs Personal Ownership: A Practical Example</h2>
-
 <p>Consider a higher-rate taxpayer with a £300,000 rental property generating £18,000 annual rent, with a £12,000 mortgage interest payment and £2,000 other expenses.</p>
-
 <p><strong>Personal ownership (2025/26):</strong></p>
 <ul>
 <li>Rental profit: £4,000 (£18,000 - £2,000 expenses)</li>
@@ -144,99 +81,33 @@ faqs:
 <li>Net tax: £4,320</li>
 <li>After-tax profit: £-320</li>
 </ul>
-
 <p><strong>SPV ownership:</strong></p>
 <ul>
 <li>Rental profit: £4,000 (£18,000 - £12,000 - £2,000)</li>
 <li>Corporation tax: £760 (19%)</li>
 <li>Available for distribution: £3,240</li>
 </ul>
-
 <p>The SPV structure saves approximately £4,580 annually in this example, easily covering the additional compliance costs.</p>
 
-<h2>Setting Up an SPV for Property Investment</h2>
+<h2>Setting Up and Funding an SPV</h2>
 
 <h3>Company Formation</h3>
-
-<p>Most landlords use standard limited companies rather than specialist SPV structures. The incorporation process involves:</p>
-
-<ul>
-<li>Choosing a company name (often including "Properties" or "Investments")</li>
-<li>Appointing directors and shareholders</li>
-<li>Filing incorporation documents with Companies House</li>
-<li>Obtaining a company UTR from HMRC</li>
-</ul>
-
-<p>Professional incorporation services typically charge £100-300, while DIY formation costs around £12-50.</p>
+<p>Most landlords use standard limited companies rather than specialist SPV structures. The incorporation process involves choosing a company name (often including "Properties" or "Investments"), appointing directors and shareholders, filing incorporation documents with Companies House, and obtaining a company UTR from HMRC. Professional incorporation services typically charge £100-300, while DIY formation costs around £12-50.</p>
 
 <h3>Transfer of Existing Properties</h3>
-
-<p>Transferring existing rental properties to an SPV triggers several tax implications:</p>
-
-<ul>
-<li><strong>Capital Gains Tax:</strong> Disposal at market value, potentially triggering <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">significant CGT liability</a></li>
-<li><strong>Stamp Duty:</strong> The company pays SDLT on the transfer, including the 5% surcharge</li>
-<li><strong>Mortgage consent:</strong> Lenders must agree to transfer mortgages to the company</li>
-</ul>
-
-<p>Many landlords therefore use SPVs for new purchases rather than transferring existing properties.</p>
+<p>Transferring existing rental properties to an SPV triggers several tax implications: <strong>Capital Gains Tax</strong> (disposal at market value, potentially triggering <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">significant CGT liability</a>), <strong>Stamp Duty</strong> (the company pays SDLT on the transfer, including the 5% surcharge), and <strong>Mortgage consent</strong> (lenders must agree to transfer mortgages to the company). Many landlords therefore use SPVs for new purchases rather than transferring existing properties.</p>
 
 <h3>Funding the Company</h3>
-
-<p>SPVs can be funded through:</p>
-
-<ul>
-<li><strong>Share capital:</strong> Your initial investment in exchange for shares</li>
-<li><strong>Director's loans:</strong> Money you lend to the company</li>
-<li><strong>Retained profits:</strong> Profits kept in the company for reinvestment</li>
-<li><strong>Bank borrowing:</strong> Buy-to-let mortgages in the company name</li>
-</ul>
-
-<p>The funding structure affects tax efficiency and extraction planning, so professional advice is recommended.</p>
+<p>SPVs can be funded through: <strong>Share capital</strong> (your initial investment in exchange for shares), <strong>Director's loans</strong> (money you lend to the company), <strong>Retained profits</strong> (profits kept in the company for reinvestment), or <strong>Bank borrowing</strong> (buy-to-let mortgages in the company name). The funding structure affects tax efficiency and extraction planning, so professional advice is recommended.</p>
 
 <h2>Common SPV Structures</h2>
-
-<h3>Single-Property SPVs</h3>
-
-<p>Some landlords create separate companies for each property, providing maximum liability protection but increasing administrative burden. This approach is typically only cost-effective for high-value properties or those carrying specific risks.</p>
-
-<h3>Portfolio SPVs</h3>
-
-<p>Most landlords use one company to hold multiple properties, balancing administrative efficiency with liability protection. This structure works well for standard buy-to-let portfolios.</p>
-
-<h3>Holding Company Structures</h3>
-
-<p>Complex structures involving holding companies and subsidiary SPVs are occasionally used for large portfolios or specific tax planning objectives. However, these arrangements require specialist advice and ongoing management.</p>
+<p><strong>Single-Property SPVs:</strong> Some landlords create separate companies for each property, providing maximum liability protection but increasing administrative burden. This approach is typically only cost-effective for high-value properties or those carrying specific risks.</p>
+<p><strong>Portfolio SPVs:</strong> Most landlords use one company to hold multiple properties, balancing administrative efficiency with liability protection. This structure works well for standard buy-to-let portfolios.</p>
+<p><strong>Holding Company Structures:</strong> Complex structures involving holding companies and subsidiary SPVs are occasionally used for large portfolios or specific tax planning objectives. However, these arrangements require specialist advice and ongoing management.</p>
 
 <h2>SPV Compliance and Record-Keeping</h2>
+<p>SPVs must maintain detailed records including property acquisition and disposal records, rental income and expense records, mortgage statements and interest calculations, company bank account reconciliations, director's loan account movements, and dividend payment records. From April 2026, companies with gross property income over £10,000 must comply with Making Tax Digital requirements, submitting quarterly updates and annual returns digitally.</p>
 
-<p>SPVs must maintain detailed records including:</p>
-
-<ul>
-<li>Property acquisition and disposal records</li>
-<li>Rental income and expense records</li>
-<li>Mortgage statements and interest calculations</li>
-<li>Company bank account reconciliations</li>
-<li>Director's loan account movements</li>
-<li>Dividend payment records</li>
-</ul>
-
-<p>From April 2026, companies with gross property income over £10,000 must comply with Making Tax Digital requirements, submitting quarterly updates and annual returns digitally.</p>
-
-<h2>Professional Support for SPV Property Investment</h2>
-
-<p>Given the complexity of SPV structures, most landlords benefit from professional support. <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Property accountants</a> can provide:</p>
-
-<ul>
-<li>Tax efficiency analysis and modelling</li>
-<li>Company formation and setup</li>
-<li>Ongoing compliance and returns</li>
-<li>Profit extraction planning</li>
-<li>Growth and exit strategy advice</li>
-</ul>
-
-<p>The cost of professional support typically represents 1-2% of rental income but can deliver significant tax savings for suitable landlords.</p>
-
-<p>Before implementing an SPV structure, consider your personal tax position, portfolio size, growth plans, and appetite for additional compliance obligations. While SPVs offer compelling advantages for many landlords, they're not suitable for everyone.</p>
-
-<p>For detailed analysis of whether an SPV structure would benefit your specific circumstances, consider speaking with a <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">specialist property accountant</a> who can model the tax implications and ongoing costs.</p>
+<h2>Professional Support</h2>
+<p>Given the complexity of SPV structures, most landlords benefit from professional support. <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Property accountants</a> can provide tax efficiency analysis and modelling, company formation and setup, ongoing compliance and returns, profit extraction planning, and growth and exit strategy advice. The cost of professional support typically represents 1-2% of rental income but can deliver significant tax savings for suitable landlords.</p>
+<p>Before implementing an SPV structure, consider your personal tax position, portfolio size, growth plans, and appetite for additional compliance obligations. While SPVs offer compelling advantages for many landlords, they're not suitable for everyone. For detailed analysis of whether an SPV structure would benefit your specific circumstances, consider speaking with a <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">specialist property accountant</a> who can model the tax implications and ongoing costs.</p>

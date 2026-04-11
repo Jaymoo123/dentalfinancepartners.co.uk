@@ -27,20 +27,13 @@ faqs:
 
 <p>Unlike purchasing a property, where your base cost is what you paid, inherited properties use the <strong>probate value CGT</strong> as your starting point. This can eliminate decades of capital gains that built up during the deceased's ownership.</p>
 
-<h2>The Stepped-Up Basis Rule for Inherited Property</h2>
+<h2>The Stepped-Up Basis Rule and CGT Calculation</h2>
 
-<p>When you inherit a property, HMRC treats you as acquiring it at its market value on the date of death. This becomes your base cost for future CGT calculations.</p>
-
-<p>For example, if your parents bought a rental property for £150,000 in 2005 and it was valued at £400,000 when you inherited it in 2025, your base cost is £400,000 – not the original £150,000 purchase price.</p>
-
-<p>This rule applies whether you inherit the property outright or through a trust arrangement. The key date is always the date of death, regardless of how long probate takes to complete.</p>
-
-<h2>How Probate Value Determines Your CGT Base Cost</h2>
+<p>When you inherit a property, HMRC treats you as acquiring it at its market value on the date of death. This becomes your base cost for future CGT calculations. This rule applies whether you inherit the property outright or through a trust arrangement. The key date is always the date of death, regardless of how long probate takes to complete.</p>
 
 <p>The <strong>probate value CGT</strong> calculation uses the property's open market value at the date of death. This valuation typically comes from a qualified surveyor or estate agent and must be included in the probate application.</p>
 
 <p>Key points about probate valuations:</p>
-
 <ul>
 <li>The valuation should reflect the property's condition and market circumstances on the death date</li>
 <li>If the property was tenanted, the valuation should account for this (typically reducing the value by 10-20%)</li>
@@ -48,14 +41,9 @@ faqs:
 <li>HMRC may challenge unrealistically low valuations</li>
 </ul>
 
-<p>If you later sell the property for less than the probate value, you'll have a capital loss rather than a gain. This loss can be offset against other capital gains.</p>
-
-<h2>CGT Calculation Example: Inherited Buy to Let Property</h2>
-
+<h3>CGT Calculation Example</h3>
 <p>Let's work through a practical example of <strong>inherited buy to let tax</strong> calculations:</p>
-
 <p><strong>Scenario:</strong> Sarah inherits a rental property from her aunt in March 2025. The probate value is £320,000. Sarah sells the property in January 2026 for £350,000.</p>
-
 <p><strong>CGT calculation:</strong></p>
 <ul>
 <li>Sale proceeds: £350,000</li>
@@ -65,100 +53,63 @@ faqs:
 <li>Less annual exempt amount: £22,000 - £3,000 = £19,000</li>
 <li>CGT at 18% (assuming basic rate taxpayer): £3,420</li>
 </ul>
-
 <p>Without the stepped-up basis rule, if Sarah had to use the aunt's original purchase price of £180,000, the gain would have been £162,000 instead of £22,000.</p>
 
-<h2>CGT Rates and Bands for Inherited Rental Property</h2>
-
+<h3>CGT Rates and When No Tax Is Due</h3>
 <p>The same CGT rates apply to inherited properties as any other property disposal:</p>
-
 <ul>
 <li><strong>Basic rate taxpayers:</strong> 18% on residential property gains</li>
 <li><strong>Higher/additional rate taxpayers:</strong> 24% on residential property gains</li>
 <li><strong>Annual exempt amount:</strong> £3,000 (2025/26 tax year)</li>
 </ul>
-
 <p>Your rate depends on your total taxable income plus capital gains for the tax year. If adding the capital gain pushes you into the higher rate band, the excess is taxed at 24%.</p>
-
+<p>Several situations mean no CGT is payable:</p>
+<ul>
+<li><strong>Selling at or below probate value:</strong> If you sell for the probate value or less, there's no gain to tax. Any loss can be carried forward against future gains.</li>
+<li><strong>Principal Private Residence Relief:</strong> If you move into the inherited property as your main home before selling, you may qualify for relief on part of the gain.</li>
+<li><strong>Annual exempt amount:</strong> Small gains under £3,000 are covered by the annual exemption.</li>
+</ul>
 <p>For detailed guidance on <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax property</a> calculations, our comprehensive guide covers all the scenarios you might face.</p>
 
-<h2>When No CGT Is Due on Inherited Property</h2>
-
-<p>Several situations mean no CGT is payable on an inherited rental property:</p>
-
-<p><strong>Selling at or below probate value:</strong> If market conditions deteriorate and you sell for the probate value or less, there's no gain to tax. Any loss can be carried forward against future gains.</p>
-
-<p><strong>Principal Private Residence Relief:</strong> If you move into the inherited property as your main home before selling, you may qualify for relief on part of the gain. The relief applies from when you start living there.</p>
-
-<p><strong>Annual exempt amount:</strong> Small gains under £3,000 are covered by the annual exemption. This applies each tax year, so timing disposals across tax years can maximise the relief.</p>
-
-<h2>Multiple Properties and Inheritance</h2>
-
-<p>When you inherit multiple properties, each gets its own probate valuation and stepped-up basis. This creates planning opportunities:</p>
-
-<p>You might inherit two rental properties valued at £250,000 and £180,000. If you need to sell one quickly, choosing the one with the higher probate value (assuming similar current values) minimises the taxable gain.</p>
-
-<p>The £3,000 annual exempt amount applies to your total capital gains across all disposals in a tax year, not per property.</p>
-
-<h2>Improvements and Enhancement Expenditure</h2>
-
-<p>You can add certain costs to your base cost when calculating CGT on an inherited property:</p>
-
-<p><strong>Enhancement expenditure:</strong> Capital improvements you make after inheriting increase your base cost. This includes extensions, loft conversions, or installing central heating.</p>
-
-<p><strong>Selling costs:</strong> Legal fees, estate agent fees, and advertising costs are deductible from the sale proceeds.</p>
-
-<p><strong>Purchase costs:</strong> Unlike normal property purchases, there are typically no purchase costs when inheriting (though probate fees aren't deductible for CGT).</p>
-
-<p>Regular maintenance and repairs don't qualify as enhancement expenditure – only improvements that increase the property's value or extend its useful life.</p>
-
-<h2>Jointly Inherited Properties</h2>
-
+<h2>Multiple and Jointly Inherited Properties</h2>
+<p>When you inherit multiple properties, each gets its own probate valuation and stepped-up basis. This creates planning opportunities. The £3,000 annual exempt amount applies to your total capital gains across all disposals in a tax year, not per property.</p>
 <p>When multiple people inherit a property together, each person's share gets its own stepped-up basis. If you later buy out a co-inheritor, that becomes additional base cost for your increased share.</p>
-
 <p>For example, if three siblings inherit a property valued at £300,000, each has a £100,000 base cost for their one-third share. If one sibling later sells their share to another for £110,000, the buyer's total base cost becomes £210,000 (£100,000 original share plus £110,000 purchase cost).</p>
 
-<h2>Rental Income vs Capital Gains on Inherited Property</h2>
+<h2>Allowable Costs and Improvements</h2>
+<p>You can add certain costs to your base cost when calculating CGT on an inherited property:</p>
+<ul>
+<li><strong>Enhancement expenditure:</strong> Capital improvements you make after inheriting increase your base cost. This includes extensions, loft conversions, or installing central heating.</li>
+<li><strong>Selling costs:</strong> Legal fees, estate agent fees, and advertising costs are deductible from the sale proceeds.</li>
+</ul>
+<p>Regular maintenance and repairs don't qualify as enhancement expenditure – only improvements that increase the property's value or extend its useful life. Unlike normal property purchases, there are typically no purchase costs when inheriting (though probate fees aren't deductible for CGT).</p>
 
+<h2>Rental Income vs Capital Gains</h2>
 <p>Don't confuse rental income tax with CGT. If you rent out the inherited property before selling, that rental income is subject to <a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">rental income tax</a> in the normal way.</p>
+<p>The stepped-up basis rule only affects CGT calculations when you eventually sell. Your rental income tax position starts from scratch when you begin letting the property. This distinction is important for tax planning – you might have minimal CGT exposure due to the stepped-up basis, but significant rental income tax liabilities if the property generates high rents.</p>
 
-<p>The stepped-up basis rule only affects CGT calculations when you eventually sell. Your rental income tax position starts from scratch when you begin letting the property.</p>
-
-<p>This distinction is important for tax planning – you might have minimal CGT exposure due to the stepped-up basis, but significant rental income tax liabilities if the property generates high rents.</p>
-
-<h2>Record Keeping for Inherited Rental Property</h2>
-
+<h2>Record Keeping and Reporting</h2>
 <p>Proper records are essential for accurate CGT calculations:</p>
-
 <ul>
 <li><strong>Probate valuation:</strong> Keep the original valuation report and any correspondence with HMRC about the value</li>
 <li><strong>Improvement receipts:</strong> Save all invoices for qualifying enhancement expenditure</li>
 <li><strong>Professional valuations:</strong> If you get the property revalued later, keep these records</li>
 <li><strong>Selling costs:</strong> Retain receipts for all disposal expenses</li>
 </ul>
-
 <p>HMRC can query CGT calculations up to four years after the tax return deadline, so maintaining complete records is crucial.</p>
-
-<h2>Tax Planning Strategies for Inherited Property</h2>
-
-<p>Several strategies can minimise CGT on inherited rental property:</p>
-
-<p><strong>Timing disposals:</strong> Consider spreading sales across tax years to use multiple annual exempt amounts. This works particularly well if you inherit multiple properties.</p>
-
-<p><strong>Principal residence relief:</strong> Moving into the property temporarily before sale can provide partial relief, though this needs careful planning.</p>
-
-<p><strong>Loss harvesting:</strong> If you have capital losses from other disposals, these can offset gains on the inherited property.</p>
-
-<p>For complex estates or multiple property inheritances, getting advice from a <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> can identify opportunities you might miss.</p>
-
-<h2>Reporting Requirements and Deadlines</h2>
-
 <p>CGT on inherited property disposals must be reported within strict deadlines:</p>
+<ul>
+<li><strong>60-day reporting:</strong> If the gain exceeds £6,000, you must report and pay CGT within 60 days of completion using the online service.</li>
+<li><strong>Self Assessment:</strong> Even if you use the 60-day service, the disposal must also be included in your Self Assessment return for that tax year.</li>
+<li><strong>Payment deadlines:</strong> CGT is due either within 60 days or by 31 January following the tax year of disposal, whichever comes first.</li>
+</ul>
+<p>Missing these deadlines triggers automatic penalties.</p>
 
-<p><strong>60-day reporting:</strong> If the gain exceeds £6,000, you must report and pay CGT within 60 days of completion using the online service.</p>
-
-<p><strong>Self Assessment:</strong> Even if you use the 60-day service, the disposal must also be included in your Self Assessment return for that tax year.</p>
-
-<p><strong>Payment deadlines:</strong> CGT is due either within 60 days or by 31 January following the tax year of disposal, whichever comes first.</p>
-
-<p>Missing these deadlines triggers automatic penalties, so setting up proper systems is essential if you're managing inherited rental properties.</p>
+<h2>Tax Planning Strategies</h2>
+<p>Several strategies can minimise CGT on inherited rental property:</p>
+<ul>
+<li><strong>Timing disposals:</strong> Consider spreading sales across tax years to use multiple annual exempt amounts. This works particularly well if you inherit multiple properties.</li>
+<li><strong>Principal residence relief:</strong> Moving into the property temporarily before sale can provide partial relief, though this needs careful planning.</li>
+<li><strong>Loss harvesting:</strong> If you have capital losses from other disposals, these can offset gains on the inherited property.</li>
+</ul>
+<p>For complex estates or multiple property inheritances, getting advice from a <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> can identify opportunities you might miss.</p>

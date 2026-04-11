@@ -27,7 +27,7 @@ faqs:
 
 <p>The 60-day reporting rule is separate from your annual Self Assessment return and carries significant penalties for late reporting. Here's everything UK property owners need to know about meeting this critical deadline.</p>
 
-<h2>Who Must Report Property Sale HMRC 60 Days</h2>
+<h2>Who Must Report a Property Sale to HMRC</h2>
 
 <p>The 60-day reporting requirement applies to UK residents and non-residents disposing of UK residential property. You must report if you're selling:</p>
 
@@ -40,8 +40,6 @@ faqs:
 </ul>
 
 <p><strong>Exemptions include:</strong> Your main residence (if fully covered by <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">principal private residence relief</a>), properties sold at a loss with no CGT liability, and certain property transfers between spouses.</p>
-
-<p>Non-resident landlords have additional reporting obligations and must use the non-resident CGT return even if no tax is due.</p>
 
 <h2>CGT Online Reporting: The HMRC Property Disposal Form</h2>
 
@@ -138,23 +136,17 @@ faqs:
 
 <p>Choose your payment method and complete the transaction. Keep the payment confirmation reference for your records.</p>
 
-<h2>Special Cases and Complications</h2>
+<h2>Special Cases and Ownership Structures</h2>
 
 <h3>Joint Ownership</h3>
-
 <p>Each joint owner must submit separate returns within 60 days. The system allows you to indicate joint ownership and apportion gains accordingly. Married couples and civil partners typically split gains 50:50 unless they hold unequal shares.</p>
 
 <h3>Company Ownership</h3>
+<p>Companies do not use the residential property disposal service. Corporate property disposals are reported through Corporation Tax returns (with corporation tax at 19% for profits up to £250k and 25% for profits above this threshold), but companies may still need to submit quarterly instalment payments for large gains.</p>
 
-<p>Companies don't use the residential property disposal service. Corporate property disposals are reported through Corporation Tax returns, but companies may still need to submit quarterly instalment payments for large gains.</p>
-
-<h3>Trust Disposals</h3>
-
+<h3>Trusts and Non-Residents</h3>
 <p>Trustees must report property disposals within 60 days using the same online service but selecting "trust" as the entity type. Trust CGT rates differ from individual rates.</p>
-
-<h3>Non-Resident Disposals</h3>
-
-<p>Non-residents use the same online service but must report all disposals, even if no tax is due. The system requires additional information about tax residence status and any double taxation treaty claims.</p>
+<p>Non-residents use the same online service but must report all disposals, even if no tax is due. The system requires additional information about tax residence status and any double taxation treaty claims. Non-resident landlords have additional reporting obligations and must use the non-resident CGT return even if no tax is due.</p>
 
 <h2>Penalties for Late Reporting</h2>
 

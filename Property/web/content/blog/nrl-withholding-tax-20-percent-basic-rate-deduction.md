@@ -103,7 +103,7 @@ faqs:
 
 <p>HMRC usually processes applications within 28 days, though complex cases may take longer. Approval letters must be provided to letting agents before they can stop operating the withholding system.</p>
 
-<h2>How Letting Agents Handle Withholding Tax</h2>
+<h2>Letting Agent Responsibilities and Compliance</h2>
 
 <p>Letting agents managing properties for non-resident landlords must establish robust systems to comply with NRL obligations. Many agents lack proper procedures, creating compliance risks for both agents and landlords.</p>
 
@@ -127,7 +127,7 @@ faqs:
 <li>Quarter ending 31 March: return due 30 April</li>
 </ul>
 
-<p>Returns must detail rent collected, tax withheld, and payments made to HMRC for each non-resident landlord client. Late filing attracts penalties of £100 per return, plus daily penalties for extended delays.</p>
+<p>Returns must detail rent collected, tax withheld, and payments made to HMRC for each non-resident landlord client.</p>
 
 <h2>Tax Credits and Annual Returns</h2>
 
@@ -144,7 +144,7 @@ faqs:
 
 <p>Many non-resident landlords discover they've overpaid tax through the withholding system, particularly those with significant property expenses or rental losses. <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">Understanding allowable deductions</a> becomes crucial for optimizing tax positions.</p>
 
-<h2>Common Issues with NRL Withholding</h2>
+<h2>Common Issues and Challenges</h2>
 
 <p>The NRL withholding system creates several practical challenges for non-resident landlords and their agents:</p>
 
@@ -170,19 +170,9 @@ faqs:
 
 <p>HMRC enforces NRL obligations through a structured penalty regime affecting both agents and landlords:</p>
 
-<h3>Agent Penalties</h3>
 <ul>
-<li>£100 for each late quarterly return</li>
-<li>£10 daily penalty after 3 months delay</li>
-<li>£300 or 5% of tax due for late payment (whichever is higher)</li>
-<li>£1,500 for failure to register as NRL agent</li>
-</ul>
-
-<h3>Landlord Penalties</h3>
-<ul>
-<li>£100 for late Self Assessment filing</li>
-<li>5% penalties on unpaid tax after 30 days, 6 months, and 12 months</li>
-<li>£300 or 5% of tax due for late payment (whichever is higher)</li>
+<li><strong>Agent Penalties:</strong> £100 for each late quarterly return, £10 daily penalty after 3 months delay, £300 or 5% of tax due for late payment (whichever is higher), and £1,500 for failure to register as an NRL agent.</li>
+<li><strong>Landlord Penalties:</strong> £100 for late Self Assessment filing, 5% penalties on unpaid tax after 30 days, 6 months, and 12 months, and £300 or 5% of tax due for late payment (whichever is higher).</li>
 </ul>
 
 <p>Landlords with approval to receive gross payments face additional penalties if they fail to meet their filing obligations, potentially losing their gross payment status.</p>

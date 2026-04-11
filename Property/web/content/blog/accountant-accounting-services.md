@@ -54,13 +54,11 @@ faqs:
 
 <p>This includes timing property purchases and sales to optimise capital gains exposure, structuring ownership between spouses, and planning for inheritance tax implications.</p>
 
-<h3>Business Structure Advice</h3>
+<h3>Business Structure and Incorporation Advice</h3>
 
-<p>Should you hold properties personally or through a limited company? The answer depends on your income, portfolio size, and long-term plans.</p>
+<p>Should you hold properties personally or through a limited company? The answer depends on your income, portfolio size, and long-term plans. A landlord paying 40% income tax on rental profits might benefit from company ownership taxed at 19% (for profits up to £250k) or 25%, while a basic rate taxpayer often doesn't. Professional accountant accounting services provide the analysis you need.</p>
 
-<p>A landlord paying 40% income tax on rental profits might benefit from company ownership, while a basic rate taxpayer often doesn't. Professional accountant accounting services provide the analysis you need.</p>
-
-<h2>When to Engage Professional Services</h2>
+<h2>When to Engage Professional Services and Assessing Value</h2>
 
 <p>Many landlords start with DIY accounting, but certain triggers suggest it's time for professional help:</p>
 
@@ -72,7 +70,14 @@ faqs:
 <li>Planning major portfolio expansion</li>
 </ul>
 
-<p>The cost of professional services often pays for itself through tax savings and avoided penalties.</p>
+<p>Professional accountant accounting services typically cost £1,000-£3,000 annually for straightforward portfolios, scaling up for complex structures or large portfolios. The cost often pays for itself through:</p>
+<ul>
+<li>Tax savings from optimised structures and planning</li>
+<li>Time saved on compliance work</li>
+<li>Avoided penalties from incorrect submissions</li>
+<li>Strategic advice for portfolio growth</li>
+</ul>
+<p>A property investor saving £3,000 annually in tax while paying £1,500 for professional services nets £1,500 plus gains time for other activities.</p>
 
 <h2>Choosing the Right Property Accountant</h2>
 
@@ -89,21 +94,6 @@ faqs:
 <p>Professional services help you choose appropriate software, establish compliant record-keeping systems, and ensure smooth transition to the new requirements.</p>
 
 <p>Early preparation prevents last-minute scrambling and potential penalties for non-compliance.</p>
-
-<h2>Cost vs Value of Professional Services</h2>
-
-<p>Professional accountant accounting services typically cost £1,000-£3,000 annually for straightforward portfolios, scaling up for complex structures or large portfolios.</p>
-
-<p>The value often exceeds the cost through:</p>
-
-<ul>
-<li>Tax savings from optimised structures and planning</li>
-<li>Time saved on compliance work</li>
-<li>Avoided penalties from incorrect submissions</li>
-<li>Strategic advice for portfolio growth</li>
-</ul>
-
-<p>A property investor saving £3,000 annually in tax while paying £1,500 for professional services nets £1,500 plus gains time for other activities.</p>
 
 <h2>Getting Started with Professional Property Accounting</h2>
 

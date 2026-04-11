@@ -65,11 +65,11 @@ faqs:
 
 <p>A typical portfolio analysis might reveal properties with different gain profiles - some purchased years ago with substantial gains, others more recent acquisitions with limited growth. This creates opportunities for strategic disposal timing.</p>
 
-<h2>Tax Implications of Different Exit Strategies</h2>
+<h2>Tax Implications and Planning</h2>
 
 <p>Tax planning is central to any successful property investment exit strategy. The way you dispose of your portfolio can significantly impact your overall returns, making professional advice essential for larger portfolios.</p>
 
-<h3>Capital Gains Tax Planning</h3>
+<h3>Capital Gains Tax (CGT)</h3>
 
 <p><a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital Gains Tax</a> on property disposals is charged at 18% for basic rate taxpayers and 24% for higher rate taxpayers. With an annual exempt amount of just £3,000, most property sales will trigger CGT liability.</p>
 
@@ -83,17 +83,17 @@ faqs:
 
 <p>For example, a couple with a £500,000 portfolio gain could potentially save £12,000 over five years by utilising both annual exempt amounts (£6,000 × 24% higher rate = £1,440 per year × 5 years = £7,200, plus timing benefits).</p>
 
-<h3>Income Tax Considerations</h3>
+<h3>Income Tax and Future Rates</h3>
 
 <p>Your <strong>landlord retirement strategy</strong> must account for ongoing rental income during any phased disposal. From April 2027, property income will be taxed at separate rates: 22% basic, 42% higher, and 47% additional rate - significantly higher than general income tax rates.</p>
 
-<p>This creates urgency for landlords considering exit strategies, as holding property beyond 2027 may result in higher tax rates on rental income. However, this needs balancing against CGT implications of accelerated disposals.</p>
+<p>This creates urgency for landlords considering exit strategies, as holding property beyond 2027 may result in higher tax rates on rental income. However, this needs balancing against CGT implications of accelerated disposals. The optimal exit strategy balances tax efficiency with market timing. Sometimes accepting a slightly higher tax charge makes sense if market conditions strongly favour disposal.</p>
 
-<h3>Corporation Tax vs Personal Ownership</h3>
+<h3>Ownership Structures: Personal vs. Company</h3>
 
 <p>Properties held in limited companies face different exit considerations. While corporation tax rates (19% small profits, 25% main rate) may be lower than personal CGT rates, extracting proceeds creates additional tax charges through dividends or salary.</p>
 
-<p>The overall tax cost of exiting through a company structure often exceeds personal ownership, but there are specific circumstances where company ownership provides advantages, particularly for inheritance tax planning.</p>
+<p>The overall tax cost of exiting through a company structure often exceeds personal ownership, but there are specific circumstances where company ownership provides advantages, particularly for inheritance tax planning. A specialist <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can provide crucial support for exit planning, including incorporation vs personal ownership analysis.</p>
 
 <h2>Portfolio Sale Strategies and Options</h2>
 
@@ -146,12 +146,6 @@ faqs:
 <li>Energy efficiency requirements (EPC ratings)</li>
 <li>Upcoming tax changes from 2027</li>
 </ul>
-
-<h3>Balancing Tax and Market Considerations</h3>
-
-<p>The optimal exit strategy balances tax efficiency with market timing. Sometimes accepting a slightly higher tax charge makes sense if market conditions strongly favour disposal.</p>
-
-<p>For example, a landlord facing potential CGT rate increases might choose to accelerate disposals despite losing some annual exempt amounts, if the rate increase exceeds the exempt amount benefit.</p>
 
 <h2>Succession Planning and Family Considerations</h2>
 

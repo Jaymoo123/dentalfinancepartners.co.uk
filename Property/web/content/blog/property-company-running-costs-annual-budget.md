@@ -65,6 +65,14 @@ faqs:
 
 <p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> coming for landlords in April 2026, digital bookkeeping systems will become mandatory for companies with property income over £10,000.</p>
 
+<h3>Tax Planning and Advisory Services</h3>
+
+<p>Specialist tax advice beyond basic compliance can help optimise your company's tax position. <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">Property-specialist accountants</a> might charge £150-£300 per hour for advisory work, but can often save significantly more through proper planning.</p>
+
+<h3>Legal and Bundle Services</h3>
+
+<p>Property companies often need legal advice for lease agreements, tenant disputes, or property acquisitions. While not a fixed annual cost, budgeting £500-£2,000 annually for legal services is prudent for active property companies. Many firms offer package deals combining accounts, tax returns, and basic advisory work. These bundles often cost less than purchasing services separately.</p>
+
 <h2>Annual Costs Limited Company Landlord Must Consider</h2>
 
 <p>Beyond basic compliance, property companies face additional ongoing costs that sole trader landlords don't encounter.</p>
@@ -81,25 +89,13 @@ faqs:
 
 <p>D&O insurance protects company directors from personal liability claims. For small property companies, annual premiums typically range from £300-£1,000, though many directors choose to self-insure given the relatively low risk profile of rental property businesses.</p>
 
-<h2>Optional but Common Professional Services</h2>
-
-<p>Many property companies invest in additional professional services that, while not mandatory, provide significant value.</p>
-
-<h3>Legal Services</h3>
-
-<p>Property companies often need legal advice for lease agreements, tenant disputes, or property acquisitions. While not a fixed annual cost, budgeting £500-£2,000 annually for legal services is prudent for active property companies.</p>
-
-<h3>Tax Planning and Advisory Services</h3>
-
-<p>Specialist tax advice beyond basic compliance can help optimise your company's tax position. <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">Property-specialist accountants</a> might charge £150-£300 per hour for advisory work, but can often save significantly more through proper planning.</p>
-
 <h3>Property Management Software</h3>
 
 <p>Dedicated property management platforms cost £20-£100 monthly, depending on features and portfolio size. These systems help track rent, manage tenants, and generate reports for your accountant.</p>
 
-<h2>Factors That Increase Property Company Running Costs</h2>
+<h2>Factors and Strategies for Managing Running Costs</h2>
 
-<p>Several factors can push your annual costs toward the higher end of typical ranges.</p>
+<p>Several factors can push your annual costs toward the higher end of typical ranges, but strategies exist to help control expenses while maintaining proper compliance.</p>
 
 <h3>Portfolio Size and Complexity</h3>
 
@@ -111,7 +107,30 @@ faqs:
 
 <h3>Non-Standard Year Ends</h3>
 
-<p>Companies with year-ends during busy periods (December-April) often pay premium rates for professional services due to high demand. Some accountants charge 20-30% more for year-ends during their peak season.</p>
+<p>Companies with year-ends during busy periods (December-April) often pay premium rates for professional services due to high demand. Some accountants charge 20-30% more for year-ends during their peak season. Planning your year-end strategically by choosing a date outside peak periods (like March, May, or June) can reduce professional fees due to reduced demand.</p>
+
+<h3>Choose the Right Professional Team</h3>
+
+<p>Working with <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">property-specialist accountants</a> often provides better value than general practice accountants, even if hourly rates are higher. Specialists understand property-specific issues and can often complete work more efficiently.</p>
+
+<h3>Maintain Good Records</h3>
+
+<p>Well-organized financial records reduce the time your accountant spends on your affairs, directly reducing professional fees. Simple bookkeeping throughout the year prevents costly year-end catch-up work.</p>
+
+<h2>First Year vs Ongoing Costs</h2>
+
+<p>Property companies typically face higher costs in their first year due to setup requirements and initial compliance work. Incorporation itself costs £12-£100 depending on method. First-year accountancy fees are often 20-50% higher due to initial setup work, system configuration, and establishing procedures. Budget an extra £500-£1,000 for these first-year costs.</p>
+
+<p>From the second year onwards, most property companies settle into a more predictable cost pattern. A typical annual budget breakdown might look like:</p>
+<ul>
+<li>Accountancy and compliance: £1,500-£4,000</li>
+<li>Business banking: £100-£200</li>
+<li>Companies House fees: £20-£50</li>
+<li>Insurance: £500-£1,500</li>
+<li>Software and systems: £200-£800</li>
+<li>Professional services: £500-£2,000</li>
+</ul>
+<p>This gives a total annual budget of £2,820-£8,550 for most property companies, with the majority falling into the £3,500-£6,000 range.</p>
 
 <h2>Cost Comparison: Company vs Sole Trader</h2>
 
@@ -124,49 +143,6 @@ faqs:
 <h3>Break-Even Considerations</h3>
 
 <p>The additional annual costs of running a property company (typically £2,000-£4,000 extra) need to be weighed against potential tax savings. With corporation tax at 19-25% versus income tax up to 45%, plus the impact of <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a>, companies often provide net savings for higher-rate taxpayers despite the extra running costs.</p>
-
-<h2>Tips for Managing Property Company Running Costs</h2>
-
-<p>Several strategies can help control your annual expenses while maintaining proper compliance.</p>
-
-<h3>Choose the Right Professional Team</h3>
-
-<p>Working with <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">property-specialist accountants</a> often provides better value than general practice accountants, even if hourly rates are higher. Specialists understand property-specific issues and can often complete work more efficiently.</p>
-
-<h3>Maintain Good Records</h3>
-
-<p>Well-organized financial records reduce the time your accountant spends on your affairs, directly reducing professional fees. Simple bookkeeping throughout the year prevents costly year-end catch-up work.</p>
-
-<h3>Plan Your Year-End Strategically</h3>
-
-<p>Choosing a year-end outside peak periods (avoid December-April) can reduce professional fees. March, May, or June year-ends often attract lower rates due to reduced demand for professional services.</p>
-
-<h3>Bundle Services</h3>
-
-<p>Many firms offer package deals combining accounts, tax returns, and basic advisory work. These packages often cost less than purchasing services separately.</p>
-
-<h2>First Year vs Ongoing Costs</h2>
-
-<p>Property companies typically face higher costs in their first year due to setup requirements and initial compliance work.</p>
-
-<h3>First Year Additional Costs</h3>
-
-<p>Incorporation itself costs £12-£100 depending on method. First-year accountancy fees are often 20-50% higher due to initial setup work, system configuration, and establishing procedures. Budget an extra £500-£1,000 for first-year costs.</p>
-
-<h3>Ongoing Annual Budget</h3>
-
-<p>From the second year onwards, most property companies settle into a more predictable cost pattern. A typical annual budget breakdown might look like:</p>
-
-<ul>
-<li>Accountancy and compliance: £1,500-£4,000</li>
-<li>Business banking: £100-£200</li>
-<li>Companies House fees: £20-£50</li>
-<li>Insurance: £500-£1,500</li>
-<li>Software and systems: £200-£800</li>
-<li>Professional services: £500-£2,000</li>
-</ul>
-
-<p>This gives a total annual budget of £2,820-£8,550 for most property companies, with the majority falling into the £3,500-£6,000 range.</p>
 
 <h2>When Running Costs Might Justify Staying as Sole Trader</h2>
 

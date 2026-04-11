@@ -45,9 +45,9 @@ faqs:
 
 <p>A general accountant might handle basic rental income calculations, but specialist property tax knowledge is essential for optimising your position. This is where a dedicated <strong>buy to let accountant Oxford</strong> becomes invaluable.</p>
 
-<h2>What Services Should You Expect from an Oxford Property Accountant?</h2>
+<h2>Services and Costs of an Oxford Property Accountant</h2>
 
-<p>Property accountants offer services beyond basic bookkeeping. Here's what you should expect from a specialist practice:</p>
+<p>Property accountants offer services beyond basic bookkeeping. Here's what you should expect from a specialist practice, along with typical costs for Oxford landlords.</p>
 
 <h3>Core Tax Services</h3>
 
@@ -67,22 +67,15 @@ faqs:
 
 <p><strong>Portfolio restructuring advice:</strong> Whether to <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporate into a limited company</a> structure, particularly relevant for higher-rate taxpayers hit by Section 24.</p>
 
-<h2>Understanding Property Accountant Costs in Oxford</h2>
+<h3>Understanding Property Accountant Costs</h3>
 
 <p>Fees vary significantly based on portfolio size and complexity. Here's what Oxford landlords typically pay:</p>
-
-<h3>Individual Landlord Services</h3>
 
 <ul>
 <li><strong>Single property Self Assessment:</strong> £300-£500 annually</li>
 <li><strong>Small portfolio (2-4 properties):</strong> £600-£1,200 annually</li>
 <li><strong>Medium portfolio (5-10 properties):</strong> £1,200-£2,500 annually</li>
 <li><strong>Monthly bookkeeping services:</strong> £100-£300 per month additional</li>
-</ul>
-
-<h3>Additional Services</h3>
-
-<ul>
 <li><strong>Incorporation advice and setup:</strong> £1,000-£2,500 one-off</li>
 <li><strong>Capital gains tax calculations:</strong> £200-£500 per disposal</li>
 <li><strong>Making Tax Digital setup:</strong> £300-£800 one-off</li>
@@ -91,9 +84,9 @@ faqs:
 
 <p>For detailed guidance on what you should budget, see our guide on <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">property accountant costs</a>.</p>
 
-<h2>Finding the Right Property Accountant in Oxford</h2>
+<h2>How to Find the Right Property Accountant in Oxford</h2>
 
-<p>Oxford has several accountancy firms offering property services, but not all specialise exclusively in property tax. Here's how to identify the right fit:</p>
+<p>Oxford has several accountancy firms offering property services, but not all specialise exclusively in property tax. Here's how to identify the right fit.</p>
 
 <h3>Essential Qualifications and Experience</h3>
 
@@ -115,9 +108,9 @@ faqs:
 
 <p>For a comprehensive checklist, review our guide on <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">choosing a property accountant</a>.</p>
 
-<h2>Oxford Property Tax Planning Strategies</h2>
+<h2>Key Tax Planning Strategies for Oxford Landlords</h2>
 
-<p>Working with a specialist <strong>landlord tax advice Oxford</strong> provider should deliver concrete tax savings. Here are key strategies relevant to Oxford landlords:</p>
+<p>Working with a specialist <strong>landlord tax advice Oxford</strong> provider should deliver concrete tax savings. Here are key strategies relevant to Oxford landlords.</p>
 
 <h3>Section 24 Mitigation</h3>
 
@@ -133,7 +126,7 @@ faqs:
 
 <h3>Capital Gains Tax Planning</h3>
 
-<p>With Oxford property values rising consistently, CGT planning is crucial:</p>
+<p>With Oxford property values rising consistently, CGT planning is crucial. Current residential CGT rates are 18% for basic-rate taxpayers and 24% for higher-rate taxpayers.</p>
 
 <ul>
 <li><strong>Annual exemption utilisation:</strong> £3,000 per person can be used through partial disposals or joint ownership transfers</li>
@@ -141,7 +134,7 @@ faqs:
 <li><strong>Timing of disposals:</strong> Spreading gains across tax years to utilise basic rate CGT bands</li>
 </ul>
 
-<h2>Making Tax Digital Compliance for Oxford Landlords</h2>
+<h2>Making Tax Digital (MTD) Compliance</h2>
 
 <p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becomes mandatory</a> for landlords with gross property income over £10,000. This affects most Oxford property investors given local rental levels.</p>
 
@@ -155,9 +148,9 @@ faqs:
 
 <p>Many Oxford landlords are already preparing for MTD compliance, working with their property accountants to establish digital workflows and select appropriate software solutions.</p>
 
-<h2>Oxford Student Property Accounting Considerations</h2>
+<h2>Special Considerations for Oxford Student Properties</h2>
 
-<p>Oxford's large student population creates specific accounting considerations that general accountants often miss:</p>
+<p>Oxford's large student population creates specific accounting considerations that general accountants often miss.</p>
 
 <h3>HMO Licensing and Compliance Costs</h3>
 
@@ -171,13 +164,11 @@ faqs:
 
 <p>Student rental income often follows academic year patterns rather than standard 12-month cycles. Property accountants experienced with Oxford's market understand these patterns and can structure tax planning accordingly.</p>
 
-<h2>Working with Property Tax Partners</h2>
+<h2>Incorporation and Portfolio Restructuring</h2>
 
-<p>While this guide helps you understand the Oxford market, finding the right property accountant remains crucial for tax efficiency and compliance. At Property Tax Partners, we specialise exclusively in UK property taxation and work with landlords across Oxford and the wider Thames Valley region.</p>
+<p>For many Oxford landlords, particularly higher-rate taxpayers impacted by Section 24, moving properties into a limited company structure can be a key tax planning strategy. Corporation tax rates are currently 19% on profits up to £50,000 and 25% on profits above £250,000, with marginal relief between those thresholds.</p>
 
-<p>Our <a href="/services">property accounting services</a> include comprehensive Self Assessment preparation, quarterly management accounts, incorporation advice, and Making Tax Digital compliance support. We understand the specific challenges Oxford landlords face, from student property complexities to high-value residential portfolio management.</p>
-
-<p>Whether you're a first-time landlord with a single Oxford property or an experienced investor with a diverse portfolio across the city, we provide the specialist expertise needed to optimise your tax position and ensure full compliance with HMRC requirements.</p>
+<p>An experienced property accountant can advise on the timing and structure of incorporation, considering factors like stamp duty land tax (SDLT), capital gains tax on transfer, and ongoing company administration. This is a complex area where specialist <a href="/incorporation">incorporation advice</a> is essential.</p>
 
 <h2>Getting Started with Professional Property Accounting</h2>
 

@@ -99,14 +99,14 @@ faqs:
 
 <h3>Cloud Accounting Software</h3>
 
-<p>Property-specific accounting platforms like Landlord Studio, Property Hub, or Xero offer automated bank feeds and property-focused reporting.</p>
-
-<p>These systems typically provide:</p>
+<p>Property-specific accounting platforms like Landlord Studio, Property Hub, or Xero offer automated bank feeds and property-focused reporting. These systems typically provide:</p>
 <ul>
 <li>Automated transaction categorisation</li>
 <li>Pre-built property P&L templates</li>
 <li>Integration with letting agents' systems</li>
 <li>MTD-compliant reporting features</li>
+<li>Bank feed integration for automated transaction importing</li>
+<li>Direct integration with tenant payment systems for real-time rent collection data</li>
 </ul>
 
 <h3>Professional Management</h3>
@@ -169,11 +169,11 @@ faqs:
 
 <p>Smooth out seasonal variations by tracking rolling annual figures. This approach provides clearer trend identification and more accurate yield calculations.</p>
 
-<h2>Common Tracking Mistakes to Avoid</h2>
+<h2>Common Tracking Mistakes and Tax Considerations</h2>
 
 <h3>Mixing Capital and Revenue Items</h3>
 
-<p>Keep capital expenditure (improvements, major repairs) separate from revenue expenses (maintenance, management fees). This distinction affects both <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">tax deductions</a> and profitability analysis.</p>
+<p>Keep capital expenditure (improvements, major repairs) separate from revenue expenses (maintenance, management fees). This distinction is crucial for both <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">tax deductions</a> and profitability analysis. Revenue expenses reduce rental income immediately, while capital costs may qualify for capital allowances or affect <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains calculations</a> on disposal.</p>
 
 <h3>Ignoring Void Costs</h3>
 
@@ -187,21 +187,9 @@ faqs:
 
 <p>Monthly or quarterly P&L reviews enable faster problem identification and corrective action. Annual reviews often come too late to address emerging issues.</p>
 
-<h2>Tax Considerations for Property P&L</h2>
+<h3>Section 24 Impact and MTD Preparation</h3>
 
-<p>Your P&L tracking system should support tax compliance requirements:</p>
-
-<h3>Section 24 Impact</h3>
-
-<p>While your P&L should show actual mortgage interest costs for commercial analysis, remember that <a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">tax relief is restricted</a> to basic rate only.</p>
-
-<h3>Capital vs Revenue Classification</h3>
-
-<p>Ensure expenses are correctly classified for tax purposes. Revenue expenses reduce rental income immediately, while capital costs may qualify for capital allowances or affect <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains calculations</a> on disposal.</p>
-
-<h3>MTD Preparation</h3>
-
-<p>From April 2026, landlords with gross property income exceeding £10,000 must keep digital records and submit quarterly updates. Robust P&L tracking systems support this compliance requirement.</p>
+<p>While your P&L should show actual mortgage interest costs for commercial analysis, remember that <a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">tax relief is restricted</a> to basic rate only. From April 2026, landlords with gross property income exceeding £10,000 must keep digital records and submit quarterly updates under Making Tax Digital (MTD). Robust P&L tracking systems support this compliance requirement.</p>
 
 <h2>Using P&L Data for Strategic Decisions</h2>
 
@@ -223,33 +211,15 @@ faqs:
 
 <p>High maintenance ratios might indicate the need for planned refurbishment programmes. High void rates could suggest rental pricing or marketing issues.</p>
 
-<h2>Technology and Automation</h2>
+<h2>Technology, Automation and Professional Support</h2>
 
-<p>Modern property management involves increasing automation:</p>
-
-<h3>Bank Feed Integration</h3>
-
-<p>Automated transaction importing reduces manual data entry and improves accuracy. Most cloud accounting platforms offer bank feed integration.</p>
-
-<h3>Receipt Management</h3>
-
-<p>Digital receipt capture through smartphone apps eliminates paper records and speeds up expense recording.</p>
-
-<h3>Tenant Payment Integration</h3>
-
-<p>Direct integration with tenant payment systems provides real-time rent collection data and automated income recording.</p>
-
-<h2>When to Seek Professional Help</h2>
-
-<p>Consider professional support when:</p>
-
+<p>Modern property management involves increasing automation, including digital receipt capture through smartphone apps to eliminate paper records. Consider professional support when:</p>
 <ul>
 <li>Managing more than 10 properties</li>
 <li>Operating through limited company structures requiring <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">corporation tax compliance</a></li>
 <li>Dealing with complex property types (HMOs, commercial, development projects)</li>
 <li>Preparing for significant portfolio expansion or <a href="/incorporation">incorporation</a></li>
 </ul>
-
 <p>Professional property accountants can design bespoke tracking systems, provide strategic analysis, and ensure tax compliance across your portfolio.</p>
 
 <h2>Regular Review and Improvement</h2>

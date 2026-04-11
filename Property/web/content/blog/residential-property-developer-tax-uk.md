@@ -47,13 +47,13 @@ faqs:
 <p>Many residential property developers consider <a href="/incorporation">incorporation</a> to reduce their tax burden. A limited <a href="/blog/incorporation-and-company-structures/property-investment-company-structure-planning">company structure</a> can offer several advantages:</p>
 
 <ul>
-<li><strong>Corporation tax rates:</strong> 19% on profits up to £50k, 25% above £250k</li>
+<li><strong>Corporation tax rates:</strong> 19% on profits up to £250k, 25% above £250k</li>
 <li><strong>Retained profits:</strong> Leave money in the company to fund future developments</li>
 <li><strong>Dividend planning:</strong> Extract profits as dividends when tax-efficient</li>
 <li><strong>Business asset disposal relief:</strong> Potential 10% CGT rate on company sale</li>
 </ul>
 
-<p>However, incorporation also brings additional compliance costs and complexity. A developer making £80k profit annually might save around £8k in tax through incorporation, but this depends on personal circumstances.</p>
+<p>However, incorporation also brings additional compliance costs and complexity. A developer making £80k profit annually might save around £8k in tax through incorporation, but this depends on personal circumstances. For complex situations involving multiple developments or <a href="/incorporation">incorporation decisions</a>, early professional input can save significant tax and avoid compliance issues.</p>
 
 <h2>Record Keeping and Compliance</h2>
 
@@ -102,8 +102,6 @@ faqs:
 <p>Residential property developer tax UK rules are complex and the stakes are high. Most developers benefit from specialist advice to ensure compliance and optimise their tax position.</p>
 
 <p>Consider speaking to a property tax specialist if you're developing multiple properties annually or dealing with projects worth over £100k. The potential tax savings often exceed advisory fees.</p>
-
-<p>For complex situations involving multiple developments or <a href="/incorporation">incorporation decisions</a>, early professional input can save significant tax and avoid compliance issues.</p>
 
 <h2>Related Reading</h2>
 

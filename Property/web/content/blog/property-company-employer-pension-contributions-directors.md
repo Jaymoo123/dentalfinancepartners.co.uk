@@ -46,20 +46,16 @@ faqs:
 <p>Small Self-Administered Schemes (SSAS) offer particular advantages for property investors. An <strong>SSAS property company</strong> structure allows your pension to invest directly in commercial property or lend money back to your trading company.</p>
 
 <p>Your property company can make employer pension contributions to a SSAS, which can then:</p>
-
 <ul>
 <li>Purchase commercial property for rental income</li>
 <li>Lend money to your property company at commercial rates</li>
 <li>Invest in a diversified portfolio alongside property assets</li>
 <li>Provide secured loans for property development projects</li>
 </ul>
-
 <p>This creates a powerful wealth-building cycle where pension contributions grow tax-free while supporting your property business operations.</p>
 
 <h3>SSAS Contribution Limits and Rules</h3>
-
 <p>SSAS contributions follow the same annual allowance rules as other pension schemes. However, there are additional restrictions on investments and lending:</p>
-
 <ul>
 <li>Maximum 50% of fund value can be lent to sponsoring companies</li>
 <li>Loans must be secured and at commercial interest rates</li>
@@ -68,99 +64,55 @@ faqs:
 </ul>
 
 <h2>Optimal Contribution Strategies for Property Directors</h2>
-
 <p>The most effective pension contribution strategy depends on your property company's profit levels and your personal income. Consider these scenarios:</p>
 
 <h3>Low Personal Income Directors</h3>
-
 <p>If you take a low salary (typically £12,570 to use your personal allowance), employer pension contributions can be particularly valuable. The company gets full corporation tax relief while you build pension wealth without any personal tax charge.</p>
-
 <p>For a director with £20,000 salary and £30,000 employer pension contributions, the total gross benefit is £50,000 with personal tax only on the salary portion.</p>
 
 <h3>Higher Rate Taxpayers</h3>
-
 <p>Directors paying higher rate tax (40%) or additional rate tax (45%) benefit significantly from <strong>employer pension contribution landlord</strong> strategies. Instead of taking dividends taxed at 33.75% (higher rate) or 39.35% (additional rate), pension contributions provide immediate corporation tax relief.</p>
-
 <p>A £20,000 pension contribution saves the company £3,800-£5,000 in corporation tax while providing £20,000 of retirement benefit with no immediate personal tax charge.</p>
 
-<h2>Corporation Tax Relief on Pension Contributions</h2>
-
-<p>Property companies can claim full corporation tax relief on employer pension contributions, provided they meet the "wholly and exclusively" test for business purposes. HMRC accepts that providing employee benefits, including pensions, serves a business purpose.</p>
-
-<p>The relief applies in the accounting period when the contribution is paid, not when it's accrued. This timing difference can be useful for corporation tax planning, especially around year-end.</p>
+<h2>Corporation Tax Relief and Contribution Methods</h2>
+<p>Property companies can claim full corporation tax relief on employer pension contributions, provided they meet the "wholly and exclusively" test for business purposes. HMRC accepts that providing employee benefits, including pensions, serves a business purpose. The relief applies in the accounting period when the contribution is paid, not when it's accrued.</p>
 
 <h3>Payment Timing and Tax Planning</h3>
+<p>You can make pension contributions up to 9 months and one day after your company's year-end and still claim relief in the previous accounting period. This flexibility helps with cash flow management and tax planning. For a company with a March year-end, pension contributions made by 1 January can still qualify for the previous year's corporation tax relief, subject to meeting the accounting treatment requirements.</p>
 
-<p>You can make pension contributions up to 9 months and one day after your company's year-end and still claim relief in the previous accounting period. This flexibility helps with cash flow management and tax planning.</p>
-
-<p>For a company with a March year-end, pension contributions made by 1 January can still qualify for the previous year's corporation tax relief, subject to meeting the accounting treatment requirements.</p>
-
-<h2>Salary Sacrifice vs Employer Contributions</h2>
-
-<p>Property companies have two main options for pension funding:</p>
-
-<h3>Direct Employer Contributions</h3>
-
-<ul>
-<li>Company makes contributions without reducing director's salary</li>
-<li>Full corporation tax relief on contributions</li>
-<li>No National Insurance savings</li>
-<li>Simpler administration</li>
-</ul>
-
-<h3>Salary Sacrifice Arrangements</h3>
-
-<ul>
-<li>Director foregoes salary in exchange for pension contributions</li>
-<li>Saves employer's National Insurance (13.8%)</li>
-<li>May affect other benefits linked to salary levels</li>
-<li>Requires formal salary sacrifice agreement</li>
-</ul>
-
-<p>For property companies, direct employer contributions are often simpler since many directors already take minimal salaries to optimize their personal tax position.</p>
+<h3>Direct Employer Contributions vs Salary Sacrifice</h3>
+<p>Property companies have two main options for pension funding. Direct employer contributions, where the company makes contributions without reducing the director's salary, offer full corporation tax relief and simpler administration but no National Insurance savings. Salary sacrifice arrangements, where a director foregoes salary in exchange for pension contributions, can save the employer's National Insurance (13.8%) but require a formal agreement and may affect other benefits linked to salary levels. For property companies, direct employer contributions are often simpler since many directors already take minimal salaries to optimize their personal tax position.</p>
 
 <h2>Integration with Dividend Planning</h2>
-
 <p>Pension contributions work particularly well alongside dividend strategies for property companies. The optimal extraction might combine:</p>
-
 <ul>
 <li>Salary up to personal allowance (£12,570)</li>
 <li>Employer pension contributions up to annual allowance</li>
 <li>Dividends for remaining profit extraction needs</li>
 </ul>
-
 <p>This approach maximizes the benefit of tax-free pension accumulation while maintaining flexibility for current income needs through dividends.</p>
-
 <p>For directors affected by <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a>, this strategy becomes even more valuable as it provides an additional route for tax-efficient profit extraction from the company structure.</p>
 
 <h2>Compliance and Documentation Requirements</h2>
-
 <p>Property companies making employer pension contributions must maintain proper documentation:</p>
-
 <ul>
 <li>Board resolution authorizing pension arrangements</li>
 <li>Written employer pension contribution policy</li>
 <li>Payment records and pension provider confirmations</li>
 <li>Annual benefit statements for directors</li>
 </ul>
-
 <p>While pension contributions don't create P11D reporting requirements, they should be included in your company's benefit register and disclosed in annual accounts if material.</p>
 
 <h3>Auto-Enrolment Considerations</h3>
-
 <p>If your property company has employees beyond the directors, you'll need to consider auto-enrolment pension obligations. Director pension arrangements can be integrated with wider workplace pension schemes, though SSAS structures typically run separately.</p>
 
 <h2>When to Seek Professional Advice</h2>
-
 <p>Property company pension contributions involve complex interactions between corporation tax, personal tax, and pension regulations. Consider professional advice when:</p>
-
 <ul>
 <li>Setting up SSAS arrangements for property investment</li>
 <li>Planning contributions above £40,000 annually</li>
 <li>Integrating pension strategy with company restructuring</li>
 <li>Managing carry forward of unused allowances</li>
 </ul>
-
 <p>A specialist <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can model different contribution scenarios and help optimize your overall tax position across the company and personal levels.</p>
-
 <p>The interaction between property company structures, pension contributions, and changing tax rates from April 2027 makes forward planning particularly important for property investors looking to maximize long-term wealth accumulation.</p>

@@ -27,22 +27,19 @@ faqs:
 
 <p>Fortunately, there are legitimate ways to <strong>incorporate rental properties without triggering immediate CGT</strong>. The key is understanding incorporation relief and planning your transfer carefully.</p>
 
-<h2>Key Conditions for Incorporation Relief</h2>
-<h2>Key Conditions for Incorporation Relief</h2>
-<p>HMRC applies strict conditions for incorporation relief to apply to rental properties. The relief is claimed under section 162 TCGA 1992.</p>
+<h2>Understanding Incorporation Relief and Key Conditions</h2>
+<p>Incorporation relief (under section 162 TCGA 1992) allows you to defer CGT when transferring a business into a company. For landlords, HMRC applies strict conditions for the relief to apply to rental properties.</p>
 <ul>
 <li><strong>Business requirement:</strong> Your rental activity must constitute a business, not just an investment. This is the most significant hurdle for landlords.</li>
 <li><strong>Whole business transfer:</strong> You must transfer the entire rental business as a going concern. You cannot cherry-pick profitable properties while keeping others personally.</li>
 <li><strong>Consideration in shares:</strong> You must receive only shares in the new company as consideration for the transfer. Receiving cash, a director's loan, or having the company assume personal debt will invalidate the relief for the assets involved.</li>
 <li><strong>Commercial reasons:</strong> The incorporation must be for genuine commercial reasons. Tax planning is acceptable, but the primary motive cannot be pure tax avoidance.</li>
 </ul>
-<p>The "business test" is particularly important for landlords and is where HMRC most commonly challenges claims. Simply collecting rent from a few long-term lets managed by an agent typically won't qualify. HMRC looks for evidence of active, organised, and extensive involvement.</p>
+<p>The "business test" is particularly important and is where HMRC most commonly challenges claims. Simply collecting rent from a few long-term lets managed by an agent typically won't qualify. HMRC looks for evidence of active, organised, and extensive involvement.</p>
 <p><strong>Making the Claim:</strong> You must formally claim incorporation relief. This is usually done by completing the 'Reliefs' section (Box 54) on the Capital Gains Tax summary pages (SA108) of your Self Assessment tax return for the year of transfer. You should also include details in the 'Additional Information' box. Professional advice is strongly recommended to ensure the claim is valid and properly documented.</p>
 
 <h2>When Rental Property Qualifies as a Business</h2>
-
 <p>Your rental activity is more likely to qualify as a business if you:</p>
-
 <ul>
 <li>Actively manage multiple properties with regular tenant turnover</li>
 <li>Provide significant services like cleaning, maintenance, or furnished accommodation</li>
@@ -50,33 +47,19 @@ faqs:
 <li>Spend considerable time on property management activities</li>
 <li>Employ staff or contractors regularly</li>
 </ul>
-
 <p>A landlord with 10 furnished flats, providing cleaning services and managing short-term lets, would likely qualify. Someone with two long-term BTL properties managed through an agent probably wouldn't.</p>
 
 <h2>Alternative Strategies to Avoid CGT</h2>
-
 <p>If incorporation relief doesn't apply, consider these alternatives:</p>
-
 <h3>Gradual Transfer Using Annual CGT Allowance</h3>
-
-<p>You can transfer partial interests in properties each year, staying within the annual CGT exemption (£3,000 for 2025/26). This works well for married couples who can each use their allowance.</p>
-
-<p>For instance, transferring 10% of a property each year would spread the CGT liability over a decade, potentially saving thousands in tax.</p>
-
+<p>You can transfer partial interests in properties each year, staying within the annual CGT exemption (£3,000 for 2025/26). This works well for married couples who can each use their allowance. For instance, transferring 10% of a property each year would spread the CGT liability over a decade, potentially saving thousands in tax.</p>
 <h3>Timing Transfers with Lower Income Years</h3>
-
-<p>CGT rates depend on your total income. Basic rate taxpayers pay 18% on residential property gains, while higher rate taxpayers pay 28%. Timing transfers during lower income years can reduce the effective rate.</p>
-
+<p>CGT rates depend on your total income. Basic rate taxpayers pay 18% on residential property gains, while higher rate taxpayers pay 24%. Timing transfers during lower income years can reduce the effective rate.</p>
 <h3>Gift and Loan Back Arrangements</h3>
-
-<p>You can gift properties to your company and receive a director's loan in return. This doesn't qualify for incorporation relief but may be commercially sensible if you need funds for other investments.</p>
-
-<p>The CGT becomes payable immediately, but you maintain flexibility over when and how the loan is repaid.</p>
+<p>You can gift properties to your company and receive a director's loan in return. This doesn't qualify for incorporation relief but may be commercially sensible if you need funds for other investments. The CGT becomes payable immediately, but you maintain flexibility over when and how the loan is repaid.</p>
 
 <h2>Practical Steps for Incorporation</h2>
-
 <p>If you're planning to <strong>incorporate rental property without triggering CGT</strong>, follow these steps:</p>
-
 <ul>
 <li><strong>Document business activities:</strong> Keep detailed records proving your rental activity constitutes a business</li>
 <li><strong>Value properties professionally:</strong> Obtain RICS valuations for the transfer date</li>
@@ -84,49 +67,34 @@ faqs:
 <li><strong>Consider mortgage implications:</strong> Existing BTL mortgages may need commercial replacements</li>
 <li><strong>Plan ongoing structure:</strong> Decide on shareholding, dividend strategy, and company administration</li>
 </ul>
-
 <p>The mortgage question is particularly important. Most BTL lenders require immediate repayment when properties transfer to companies. You'll need commercial mortgages, which typically have higher rates and stricter criteria.</p>
 
 <h2>Common Pitfalls to Avoid</h2>
-
 <p>Many landlords make costly mistakes during incorporation:</p>
-
 <p><strong>Assuming all rentals qualify:</strong> HMRC scrutinises incorporation relief claims carefully. Simple buy-to-let activities rarely meet the business test.</p>
-
 <p><strong>Partial business transfers:</strong> You must transfer the entire business. Keeping your best properties personally while incorporating the rest will invalidate the relief.</p>
-
 <p><strong>Mixing personal and business assets:</strong> Properties used for personal purposes don't qualify. Your holiday home that's occasionally rented won't be eligible.</p>
-
 <p><strong>Poor timing:</strong> Consider the interaction with other taxes. Incorporation might trigger Stamp Duty Land Tax (SDLT) or affect mortgage interest relief timing.</p>
 
 <h2>Is Incorporation Right for Your Portfolio?</h2>
-
 <p>Even when incorporation relief applies, transferring properties isn't always beneficial. Consider the ongoing implications:</p>
-
 <ul>
-<li>Corporation tax on rental profits (currently 19-25%)</li>
+<li>Corporation tax on rental profits (currently 19% for profits up to £250k, 25% main rate)</li>
 <li>Dividend tax when extracting profits</li>
 <li>Potential double taxation on property sales</li>
 <li>Additional compliance costs and administration</li>
 <li>Loss of personal CGT reliefs like main residence relief</li>
 </ul>
-
 <p>A landlord with £50,000 rental profit might save £2,000 annually in corporation tax versus personal tax rates. However, extracting this profit via dividends could reduce or eliminate these savings.</p>
-
 <p>The <a href="/blog/capital-gains-tax/cgt-property-transfer-limited-company-calculate">calculation</a> becomes more complex with multiple properties, varying profit levels, and personal circumstances. Our <a href="/calculators">calculators</a> can help model different scenarios, though professional advice remains essential.</p>
 
 <h2>Professional Advice and Next Steps</h2>
-
 <p>Incorporating rental properties involves complex interactions between CGT, corporation tax, <a href="/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice">SDLT</a>, and mortgage regulations. The rules around incorporation relief are particularly technical and HMRC's approach continues evolving.</p>
-
 <p>Most landlords benefit from specialist advice before proceeding. A property tax specialist can assess whether your activities qualify as a business, model the long-term tax implications, and structure the incorporation optimally.</p>
-
 <p>If you're considering incorporation, start by documenting your current activities and gathering financial information. The earlier you begin planning, the more options remain available.</p>
-
 <p>For landlords meeting the qualifying conditions, incorporation relief offers a valuable opportunity to restructure without immediate CGT consequences. However, the deferred tax liability and ongoing compliance requirements mean this strategy requires careful consideration of your long-term plans.</p>
 
 <h2>Related Reading</h2>
-
 <ul>
 <li><a href="/blog/incorporation-and-company-structures/incorporation-holdover-relief-property">Incorporation Holdover Relief for Property: Complete UK Guide</a></li>
 <li><a href="/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk">How to Transfer Property Into a Limited Company UK: Complete Guide for Landlords</a></li>

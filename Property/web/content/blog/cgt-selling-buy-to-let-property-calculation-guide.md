@@ -32,22 +32,18 @@ faqs:
 <p>Capital gains tax is charged on the profit you make when selling a buy-to-let property. The gain is calculated as the difference between your sale price and your acquisition cost, with various deductions and reliefs potentially reducing the taxable amount.</p>
 
 <p>For the 2025/26 tax year, CGT rates on residential property are:</p>
-
 <ul>
 <li><strong>18%</strong> if you're a basic-rate taxpayer</li>
 <li><strong>24%</strong> if you're a higher or additional-rate taxpayer</li>
 </ul>
-
 <p>Your CGT rate depends on your total income for the tax year, including the capital gain itself. This means even basic-rate taxpayers may pay the higher 24% rate if the gain pushes them into the higher-rate tax band.</p>
 
 <h2>Step-by-Step CGT Calculation Process</h2>
 
-<p>Calculating <strong>sell BTL capital gains</strong> involves five key steps. Here's the systematic approach:</p>
+<p>Calculating <strong>sell BTL capital gains</strong> involves a systematic approach. Follow these steps to determine your taxable gain.</p>
 
 <h3>Step 1: Determine Your Sale Proceeds</h3>
-
-<p>Your sale proceeds include the full sale price minus selling costs. Deductible selling costs typically include:</p>
-
+<p>Your sale proceeds include the full sale price minus allowable selling costs. Deductible selling costs typically include:</p>
 <ul>
 <li>Estate agent fees</li>
 <li>Solicitor's fees</li>
@@ -55,102 +51,59 @@ faqs:
 <li>Valuation fees</li>
 <li>Auctioneer's commission (if applicable)</li>
 </ul>
-
 <p><strong>Example:</strong> Property sold for £400,000, with estate agent fees of £6,000 and solicitor fees of £2,000. Sale proceeds = £400,000 - £8,000 = £392,000.</p>
 
-<h3>Step 2: Calculate Your Acquisition Cost</h3>
+<h3>Step 2: Calculate Your Total Allowable Costs</h3>
+<p>Your total allowable costs are deducted from the sale proceeds to calculate the gain. They consist of three main elements:</p>
+<ol>
+<li><strong>Acquisition Cost:</strong> The original purchase price plus allowable purchase costs such as stamp duty, solicitor's fees for purchase, survey costs, and other professional fees related to the purchase.
+<strong>Example:</strong> Original purchase price £250,000, stamp duty £7,500, solicitor fees £1,500. Total acquisition cost = £259,000.</li>
+<li><strong>Enhancement Expenditure:</strong> Capital improvements that increased the property's value. This includes extensions, new kitchens and bathrooms, central heating installation, and significant structural improvements. Routine repairs and maintenance cannot be deducted.
+<strong>Example:</strong> Kitchen renovation £15,000, loft conversion £25,000. Total enhancements = £40,000.</li>
+</ol>
 
-<p>Your acquisition cost includes the original purchase price plus allowable purchase costs:</p>
-
-<ul>
-<li>Original purchase price</li>
-<li>Stamp duty paid on purchase</li>
-<li>Solicitor's fees for purchase</li>
-<li>Survey costs</li>
-<li>Other professional fees related to the purchase</li>
-</ul>
-
-<p><strong>Example:</strong> Original purchase price £250,000, stamp duty £7,500, solicitor fees £1,500. Total acquisition cost = £259,000.</p>
-
-<h3>Step 3: Add Enhancement Expenditure</h3>
-
-<p>You can deduct capital improvements that increased the property's value. This includes:</p>
-
-<ul>
-<li>Extensions and conversions</li>
-<li>New kitchens and bathrooms</li>
-<li>Central heating installation</li>
-<li>Significant structural improvements</li>
-</ul>
-
-<p>Routine repairs and maintenance cannot be deducted. The improvement must be capital in nature and enhance the property's value.</p>
-
-<p><strong>Example:</strong> Kitchen renovation £15,000, loft conversion £25,000. Total enhancements = £40,000.</p>
-
-<h3>Step 4: Calculate Your Gross Capital Gain</h3>
-
-<p>Gross capital gain = Sale proceeds - Acquisition cost - Enhancement expenditure</p>
-
+<h3>Step 3: Calculate Your Gross and Taxable Gain</h3>
+<p>Gross capital gain = Sale proceeds - Total allowable costs (acquisition cost + enhancement expenditure).</p>
 <p><strong>CGT calculation example</strong> using figures above:<br>
-£392,000 (sale proceeds) - £259,000 (acquisition cost) - £40,000 (enhancements) = £93,000 gross gain</p>
+£392,000 (sale proceeds) - £259,000 (acquisition cost) - £40,000 (enhancements) = £93,000 gross gain.</p>
+<p>From this gross gain, subtract your annual CGT exemption (£3,000 for 2025/26) and any other applicable reliefs to find your taxable gain.<br>
+Taxable gain = £93,000 - £3,000 = £90,000.</p>
 
-<h3>Step 5: Apply Reliefs and Calculate Tax Due</h3>
-
-<p>Subtract your annual CGT exemption (£3,000 for 2025/26) and any other applicable reliefs:</p>
-
-<p>Taxable gain = £93,000 - £3,000 = £90,000</p>
-
-<p>The CGT rate depends on your income band. If this gain pushes you into the higher-rate tax band, you'll pay 24% on the portion above the basic-rate threshold.</p>
-
-<h2>Determining Your CGT Rate</h2>
-
-<p>Your CGT rate isn't just based on your regular income – it includes the capital gain itself. For 2025/26:</p>
-
+<h3>Step 4: Determine Your CGT Rate and Calculate Tax Due</h3>
+<p>Your CGT rate depends on your total income (including the capital gain) for the tax year. For 2025/26:</p>
 <ul>
 <li><strong>Basic-rate threshold:</strong> Up to £50,270 total income</li>
 <li><strong>Higher-rate threshold:</strong> £50,271 and above</li>
 </ul>
-
 <p>If your regular income is £40,000 and you have a £90,000 capital gain, your total income becomes £130,000. This means:</p>
-
 <ul>
 <li>£10,270 of the gain (up to £50,270 total) taxed at 18%</li>
 <li>£79,730 of the gain taxed at 24%</li>
 </ul>
-
-<p>Total CGT = (£10,270 × 18%) + (£79,730 × 24%) = £1,849 + £19,135 = £20,984</p>
+<p>Total CGT = (£10,270 × 18%) + (£79,730 × 24%) = £1,849 + £19,135 = £20,984.</p>
 
 <h2>Special Reliefs and Considerations</h2>
 
 <h3>Principal Private Residence Relief</h3>
-
 <p>If you lived in the property before letting it out, you may qualify for <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">principal private residence relief</a>. This can significantly reduce your CGT liability.</p>
-
 <p>The relief covers periods when the property was your main residence, plus the final 9 months of ownership (regardless of whether you lived there).</p>
 
 <h3>Lettings Relief</h3>
-
 <p>Lettings relief was largely abolished from April 2020, except for landlords who share occupation of the property with their tenants. Most buy-to-let landlords can no longer claim this relief.</p>
 
 <h3>Incorporation Relief</h3>
-
 <p>If you're considering transferring your property portfolio to a limited company, incorporation relief may defer CGT. However, this is complex and requires careful planning. Our guide to <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited companies</a> covers this in detail.</p>
 
-<h2>Reporting and Payment Deadlines</h2>
-
-<p>When you sell a buy-to-let property, you have strict reporting obligations:</p>
-
+<h2>Reporting, Payment, and Record Keeping</h2>
+<p>When you sell a buy-to-let property, you have strict reporting obligations and must maintain detailed records.</p>
+<h3>Reporting and Payment Deadlines</h3>
 <ul>
 <li><strong>60 days:</strong> Report and pay CGT through the residential property CGT service</li>
 <li><strong>31 January:</strong> Include the disposal in your Self Assessment return</li>
 </ul>
-
 <p>Missing the 60-day deadline incurs automatic penalties, even if no tax is due. This reporting requirement applies to all residential property disposals, regardless of whether you make a gain or loss.</p>
-
-<h2>Record Keeping for CGT Calculations</h2>
-
+<h3>Record Keeping for CGT Calculations</h3>
 <p>Maintaining detailed records is essential for accurate CGT calculations. Keep documents for:</p>
-
 <ul>
 <li>Purchase contracts and completion statements</li>
 <li>All improvement invoices and receipts</li>
@@ -158,58 +111,41 @@ faqs:
 <li>Stamp duty and survey certificates</li>
 <li>Any professional valuations</li>
 </ul>
-
 <p>HMRC can query CGT calculations up to 4 years after the tax year of disposal, so retain records for at least this period.</p>
 
-<h2>Common CGT Calculation Mistakes</h2>
+<h2>Common CGT Calculation Mistakes and Planning</h2>
 
+<h3>Common Mistakes</h3>
 <p>Many landlords make costly errors when calculating CGT on property sales:</p>
+<ul>
+<li><strong>Forgetting Allowable Costs:</strong> Failing to claim all allowable purchase and sale costs can result in overpaying CGT. Even small fees like property searches and bank transfer charges may be deductible.</li>
+<li><strong>Incorrectly Claiming Repairs:</strong> Only capital improvements can be deducted, not repairs or maintenance. A new boiler might qualify, but fixing an existing one typically won't.</li>
+<li><strong>Miscalculating the Tax Rate:</strong> Remember that the capital gain itself affects which tax band you fall into. Many landlords incorrectly apply their current income tax rate without considering the impact of the gain.</li>
+<li><strong>Missing the 60-Day Deadline:</strong> The separate CGT reporting requirement catches many landlords off guard. Even if you're not normally required to complete a tax return, property disposals must be reported within 60 days.</li>
+</ul>
 
-<h3>Forgetting Allowable Costs</h3>
-
-<p>Failing to claim all allowable purchase and sale costs can result in overpaying CGT. Even small fees like property searches and bank transfer charges may be deductible.</p>
-
-<h3>Incorrectly Claiming Repairs</h3>
-
-<p>Only capital improvements can be deducted, not repairs or maintenance. A new boiler might qualify, but fixing an existing one typically won't.</p>
-
-<h3>Miscalculating the Tax Rate</h3>
-
-<p>Remember that the capital gain itself affects which tax band you fall into. Many landlords incorrectly apply their current income tax rate without considering the impact of the gain.</p>
-
-<h3>Missing the 60-Day Deadline</h3>
-
-<p>The separate CGT reporting requirement catches many landlords off guard. Even if you're not normally required to complete a tax return, property disposals must be reported within 60 days.</p>
-
-<h2>Multiple Property Sales and CGT Planning</h2>
-
+<h3>Planning for Multiple Property Sales</h3>
 <p>If you're selling multiple properties, timing can significantly impact your CGT liability. Consider:</p>
-
 <ul>
 <li>Spreading sales across tax years to use multiple annual exemptions</li>
 <li>Realising losses in the same tax year to offset gains</li>
 <li>The impact of <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> on your reporting obligations</li>
 </ul>
-
 <p>For landlords with substantial portfolios, professional advice becomes increasingly valuable. A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can help optimise your disposal strategy and ensure compliance.</p>
 
-<h2>Impact of Future Tax Changes</h2>
+<h2>Future Tax Changes and Professional Advice</h2>
 
+<h3>Impact of Future Tax Changes</h3>
 <p>From April 2027, property income will face separate tax rates (22% basic, 42% higher, 47% additional rate). While this doesn't directly affect CGT, it may influence your decision on when to sell properties versus retaining them for income.</p>
-
 <p>Consider your overall property investment strategy alongside current and future tax implications. Our comprehensive guide to <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">property investment tax</a> covers the broader tax landscape.</p>
 
-<h2>Getting Professional Help</h2>
-
+<h3>Getting Professional Help</h3>
 <p>CGT calculations on property can be complex, particularly with multiple properties, mixed-use buildings, or historical ownership changes. Professional advice ensures you:</p>
-
 <ul>
 <li>Claim all available reliefs and deductions</li>
 <li>Meet reporting deadlines</li>
 <li>Optimise your disposal strategy</li>
 <li>Maintain compliant records</li>
 </ul>
-
 <p>The cost of professional advice often pays for itself through tax savings and compliance certainty. Consider the <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">cost of a property accountant</a> against the potential benefits.</p>
-
 <p>For complex situations or valuable properties, getting calculations checked professionally can provide peace of mind and potentially identify additional tax savings you might have missed.</p>

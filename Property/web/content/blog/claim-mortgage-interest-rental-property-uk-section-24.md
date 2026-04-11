@@ -27,7 +27,7 @@ faqs:
 
 <p>This change, fully implemented since April 2020, significantly impacts how <strong>mortgage interest rental income</strong> calculations work. Many landlords find their effective tax rate has increased, particularly higher rate taxpayers who previously benefited from 40% relief on mortgage costs.</p>
 
-<h2>How Mortgage Interest Relief Works Now Under Section 24</h2>
+<h2>How Mortgage Interest Relief Works Under Section 24</h2>
 
 <p>Section 24 replaced the traditional deduction system with a tax credit approach. Here's how it works:</p>
 
@@ -40,11 +40,10 @@ faqs:
 
 <p>For example, if you have £2,000 monthly mortgage interest payments (£24,000 annually), you'll receive a £4,800 tax credit (20% of £24,000). However, you must pay income tax on rental income that previously would have been reduced by the full £24,000 deduction.</p>
 
-<h2>What Counts as Mortgage Interest for Tax Relief</h2>
+<h2>What Costs Qualify for the Tax Credit</h2>
 
 <p>Not all mortgage-related costs qualify for the 20% tax credit. HMRC defines <strong>mortgage costs tax deductible</strong> items specifically:</p>
 
-<h3>Qualifying Costs</h3>
 <ul>
 <li>Interest on mortgages and loans used to purchase rental property</li>
 <li>Interest on loans for property improvements or repairs</li>
@@ -52,7 +51,7 @@ faqs:
 <li>Mortgage arrangement fees (amortised over the loan term)</li>
 </ul>
 
-<h3>Non-Qualifying Costs</h3>
+<p>The following costs do NOT qualify for the tax credit, but remain <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">fully deductible expenses</a> against rental income:</p>
 <ul>
 <li>Capital repayments on the mortgage</li>
 <li>Mortgage protection insurance</li>
@@ -60,28 +59,22 @@ faqs:
 <li>Legal fees for mortgage arrangement</li>
 </ul>
 
-<p>These non-qualifying costs remain <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">fully deductible expenses</a> against rental income, not subject to the Section 24 restriction.</p>
+<h2>Impact on Landlords by Tax Band</h2>
 
-<h2>Impact on Different Tax Rates</h2>
+<p>The Section 24 changes affect landlords differently depending on their overall tax position. The key impact is the reduction of relief from an individual's marginal income tax rate to a flat 20% credit.</p>
 
-<p>The Section 24 changes affect landlords differently depending on their overall tax position:</p>
+<p><strong>Basic Rate Taxpayers (20%):</strong> If your total income (including rental profit) keeps you in the basic rate band, Section 24 has minimal impact. You previously got 20% relief on mortgage interest, and you still get 20% relief through the tax credit.</p>
 
-<h3>Basic Rate Taxpayers (20%)</h3>
-<p>If your total income (including rental profit) keeps you in the basic rate band, Section 24 has minimal impact. You previously got 20% relief on mortgage interest, and you still get 20% relief through the tax credit.</p>
-
-<h3>Higher Rate Taxpayers (40%)</h3>
-<p>Higher rate taxpayers face the biggest impact. Previously, they could deduct mortgage interest at 40%, but now only receive 20% relief. For a landlord with £20,000 annual mortgage interest:</p>
-
+<p><strong>Higher Rate Taxpayers (40%):</strong> Higher rate taxpayers face the biggest impact. Previously, they could deduct mortgage interest at 40%, but now only receive 20% relief. For a landlord with £20,000 annual mortgage interest:</p>
 <ul>
 <li><strong>Before Section 24:</strong> £8,000 tax relief (40% of £20,000)</li>
 <li><strong>After Section 24:</strong> £4,000 tax credit (20% of £20,000)</li>
 <li><strong>Annual impact:</strong> £4,000 additional tax</li>
 </ul>
 
-<h3>Additional Rate Taxpayers (45%)</h3>
-<p>The impact is even more severe for additional rate taxpayers, who previously benefited from 45% relief but now only receive 20%.</p>
+<p><strong>Additional Rate Taxpayers (45%):</strong> The impact is even more severe for additional rate taxpayers, who previously benefited from 45% relief but now only receive 20%.</p>
 
-<h2>The Tax Rate Trap: Pushed Into Higher Brackets</h2>
+<h2>The Tax Rate Trap and Unintended Consequences</h2>
 
 <p>One of the most significant unintended consequences of Section 24 is pushing landlords into higher tax brackets. Because mortgage interest no longer reduces taxable rental income, many landlords find themselves crossing tax thresholds.</p>
 
@@ -104,13 +97,13 @@ faqs:
 <p>For a property company:</p>
 <ul>
 <li>Mortgage interest remains a fully deductible business expense</li>
-<li>Corporation tax rates are 19% (small profits) or 25% (main rate)</li>
+<li>Corporation tax rates are 19% (profits up to £250k) or 25% (main rate)</li>
 <li>No restriction on mortgage interest relief</li>
 </ul>
 
 <p>However, <a href="/incorporation">incorporation</a> brings other considerations including stamp duty on property transfer, capital gains tax on disposal, and corporation tax compliance obligations.</p>
 
-<h2>Record Keeping for Mortgage Interest Claims</h2>
+<h2>Record Keeping and Compliance</h2>
 
 <p>Accurate record keeping is essential for claiming mortgage interest relief:</p>
 
@@ -127,7 +120,7 @@ faqs:
 
 <p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becoming mandatory from April 2026, digital record keeping becomes increasingly important.</p>
 
-<h2>Future Changes: Property Income Tax Rates from 2027</h2>
+<h2>Future Changes and Strategic Planning</h2>
 
 <p>From April 2027, the UK introduces separate tax rates specifically for property income:</p>
 <ul>
@@ -138,50 +131,25 @@ faqs:
 
 <p>The 20% mortgage interest tax credit remains unchanged, meaning the gap between tax paid and relief received will widen further for higher and additional rate taxpayers.</p>
 
-<h2>Strategies for Managing Section 24 Impact</h2>
-
-<h3>Income Splitting</h3>
-<p>Joint property ownership with a spouse or partner in a lower tax bracket can help manage the overall tax burden. The rental income and mortgage interest relief can be split proportionally.</p>
-
-<h3>Pension Contributions</h3>
-<p>Increasing pension contributions can help keep overall income within the basic rate band, reducing the Section 24 impact.</p>
-
-<h3>Timing Disposals</h3>
-<p>Consider timing property sales to avoid years with high rental income, particularly where this pushes you into higher tax brackets.</p>
+<p>Strategies for managing the Section 24 impact include:</p>
+<ul>
+<li><strong>Income Splitting:</strong> Joint property ownership with a spouse or partner in a lower tax bracket.</li>
+<li><strong>Pension Contributions:</strong> Increasing contributions to keep overall income within the basic rate band.</li>
+<li><strong>Timing Disposals:</strong> Considering the timing of property sales to avoid years with high rental income that push you into higher tax brackets.</li>
+</ul>
 
 <p>Understanding these strategies requires careful planning with <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">a specialist property accountant</a> who can model different scenarios and their tax implications.</p>
 
-<h2>Common Misconceptions About Mortgage Interest Relief</h2>
+<h2>Common Misconceptions and Professional Advice</h2>
 
 <p>Several misconceptions persist about how mortgage interest relief works:</p>
-
 <ul>
-<li><strong>Myth:</strong> You can't claim any mortgage costs anymore</li>
-<li><strong>Reality:</strong> You still get 20% relief through the tax credit system</li>
+<li><strong>Myth:</strong> You can't claim any mortgage costs anymore. <strong>Reality:</strong> You still get 20% relief through the tax credit system.</li>
+<li><strong>Myth:</strong> Interest-only mortgages are better for tax. <strong>Reality:</strong> Only the interest portion ever qualified for relief anyway.</li>
+<li><strong>Myth:</strong> Refinancing costs don't qualify. <strong>Reality:</strong> Interest on refinancing for property purposes still qualifies.</li>
 </ul>
 
-<ul>
-<li><strong>Myth:</strong> Interest-only mortgages are better for tax</li>
-<li><strong>Reality:</strong> Only the interest portion ever qualified for relief anyway</li>
-</ul>
-
-<ul>
-<li><strong>Myth:</strong> Refinancing costs don't qualify</li>
-<li><strong>Reality:</strong> Interest on refinancing for property purposes still qualifies</li>
-</ul>
-
-<h2>Working with Professional Advisers</h2>
-
-<p>The complexity of Section 24 and its interaction with other tax rules means professional advice is often worthwhile. <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">A qualified property accountant</a> can help you:</p>
-
-<ul>
-<li>Calculate the precise impact of Section 24 on your portfolio</li>
-<li>Model different ownership structures</li>
-<li>Plan timing of acquisitions and disposals</li>
-<li>Ensure compliance with <a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">rental income tax rules</a></li>
-</ul>
-
-<p>The <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">cost of professional advice</a> is often more than offset by the tax savings and compliance peace of mind it provides.</p>
+<p>The complexity of Section 24 means professional advice is often worthwhile. <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">A qualified property accountant</a> can help you calculate the precise impact, model different ownership structures, plan acquisitions and disposals, and ensure compliance with <a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">rental income tax rules</a>. The <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">cost of professional advice</a> is often more than offset by the tax savings and compliance peace of mind it provides.</p>
 
 <h2>Conclusion</h2>
 

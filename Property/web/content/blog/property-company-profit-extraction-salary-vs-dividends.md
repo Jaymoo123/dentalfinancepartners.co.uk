@@ -25,40 +25,31 @@ faqs:
 
 <p>Getting this decision right can save thousands in tax each year. However, the optimal strategy depends on your total income, other earnings, and personal circumstances.</p>
 
-<h2>Understanding the Basics</h2>
+<h2>Understanding the Basics of Profit Extraction</h2>
 
 <p>As a director of your property company, you have flexibility in how you withdraw money. Unlike sole traders who pay income tax on all profits, company owners can choose between:</p>
-
 <ul>
 <li><strong>Salary:</strong> Treated as employment income, subject to income tax and National Insurance</li>
 <li><strong>Dividends:</strong> Distributions of after-tax company profits, subject to <a href="/blog/incorporation-and-company-structures/property-company-dividend-tax">dividend tax</a> rates</li>
 <li><strong>Combination:</strong> A mix of both salary and dividends</li>
 </ul>
-
 <p>Most property company owners use a combination approach to optimise their tax position.</p>
 
 <h2>How Salary Extraction Works</h2>
 
 <p>When you pay yourself a salary, your property company treats this as a business expense, reducing its corporation tax liability. However, both you and the company pay National Insurance contributions.</p>
-
-<h3>Tax Treatment of Salary</h3>
-
 <p>For 2025/26, salary is subject to:</p>
-
 <ul>
 <li><strong>Income tax:</strong> 0% up to £12,570, 20% on £12,571-£50,270, 40% on £50,271-£125,140</li>
 <li><strong>Employee National Insurance:</strong> 8% on earnings between £12,570-£50,270, then 2%</li>
 <li><strong>Employer National Insurance:</strong> 13.8% on earnings above £9,100 (paid by your company)</li>
 </ul>
-
 <p>The sweet spot for many property company directors is setting salary at the National Insurance threshold (£12,570 for 2025/26). This preserves your National Insurance record for state pension purposes while minimising tax costs.</p>
 
-<h2>Comparing the Tax Burden</h2>
+<h2>Comparing Salary and Dividend Approaches</h2>
 
 <p>Let's compare the total tax cost of extracting £40,000 from your property company using different methods:</p>
-
 <h3>All Salary Approach</h3>
-
 <ul>
 <li>Gross salary needed: £40,000</li>
 <li>Employee National Insurance: £2,194</li>
@@ -67,9 +58,7 @@ faqs:
 <li><strong>Total cost to company:</strong> £44,264</li>
 <li><strong>Your net income:</strong> £32,320</li>
 </ul>
-
 <h3>Salary + Dividend Approach</h3>
-
 <ul>
 <li>Salary: £12,570 (no tax or NI)</li>
 <li>Remaining needed: £27,430</li>
@@ -78,49 +67,33 @@ faqs:
 <li><strong>Total cost to company:</strong> £40,574</li>
 <li><strong>Your net income:</strong> £32,189</li>
 </ul>
-
 <p>In this example, the combination approach saves the company nearly £4,000 while delivering similar net income to you.</p>
 
 <h2>Factors Affecting Your Optimal Strategy</h2>
 
 <p>Several factors influence whether salary or dividends work better for your situation:</p>
-
 <h3>Other Income Sources</h3>
-
 <p>If you have other employment or rental income outside the company, this pushes you into higher tax brackets. Higher rate taxpayers face 33.75% dividend tax, making salary extraction less attractive.</p>
-
 <h3>Spouse's Income</h3>
-
 <p>If your spouse has little or no other income, paying them dividends can utilise their personal allowance and basic rate band. However, they must be a genuine shareholder receiving dividends in proportion to their shareholding.</p>
-
 <h3>Pension Contributions</h3>
-
 <p>Only salary (not dividends) counts as relevant UK earnings for pension contribution purposes. If you want to make significant pension contributions, maintaining reasonable salary levels becomes important.</p>
-
 <h3>Mortgage Applications</h3>
-
 <p>Some mortgage lenders prefer consistent salary income over dividend income when assessing affordability. If you're planning property purchases requiring personal mortgages, consider the impact on lending decisions.</p>
 
 <h2>Planning Your Extraction Strategy</h2>
 
 <p>Most property company owners benefit from a planned approach to profit extraction:</p>
-
 <h3>Start with Optimal Salary Level</h3>
-
 <p>Set your salary at the National Insurance threshold (£12,570 for 2025/26) to preserve your NI record while minimising tax costs. Consider higher salary levels if you need pension contribution capacity.</p>
-
 <h3>Use Dividend Capacity</h3>
-
 <p>Extract additional funds through dividends, using your £1,000 allowance and staying within the basic rate band where possible.</p>
-
 <h3>Consider Timing</h3>
-
 <p>Dividend timing offers flexibility. You can declare dividends in one tax year but pay them in the next, helping manage your overall tax position across different years.</p>
 
 <h2>Common Pitfalls to Avoid</h2>
 
 <p>Several mistakes can prove costly when extracting property company profits:</p>
-
 <ul>
 <li><strong>Paying dividends without profits:</strong> Illegal and can result in personal liability</li>
 <li><strong>Ignoring IR35:</strong> If you work elsewhere, ensure your property company activities don't trigger IR35 rules</li>
@@ -131,17 +104,14 @@ faqs:
 <h2>Looking Ahead: Corporation Tax Changes</h2>
 
 <p>Corporation tax rates can change, affecting the optimal balance between salary and dividends. The current 19%/25% corporation tax structure makes dividend extraction attractive for basic rate taxpayers, but this could shift with future Budget announcements.</p>
-
 <p>Regular review of your extraction strategy ensures you adapt to changing tax rules and personal circumstances.</p>
 
 <h2>Professional Guidance</h2>
 
 <p>Property company profit extraction involves complex tax calculations that vary significantly based on individual circumstances. Consider <a href="/incorporation">professional advice on incorporation structures</a> and ongoing tax planning to optimise your position.</p>
-
 <p>The wrong approach can cost thousands in unnecessary tax, while the right strategy maximises your take-home income from property investments.</p>
 
 <h2>Related Reading</h2>
-
 <ul>
 <li><a href="/blog/incorporation-and-company-structures/director-loan-property-company">Director Loans in Property Companies: Tax Rules and Implications</a></li>
 <li><a href="/blog/incorporation-and-company-structures/accountant-corporation-tax-property-companies">Corporation Tax Accountants for UK Property Companies</a></li>

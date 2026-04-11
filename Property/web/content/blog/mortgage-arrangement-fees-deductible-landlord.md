@@ -53,19 +53,11 @@ faqs:
 
 <p>These fees, sometimes charged on high loan-to-value mortgages, follow the same treatment as other arrangement fees based on whether they relate to new purchases or existing properties.</p>
 
-<h2>Section 24 Impact on Deductible Fees</h2>
+<h2>Section 24 and Incorporation Considerations</h2>
 
-<p>Even when mortgage arrangement fees are deductible, individual landlords must consider the impact of <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a>. While arrangement fees themselves aren't mortgage interest, they're often grouped with other loan costs that receive only basic rate tax relief.</p>
+<p>Even when mortgage arrangement fees are deductible, individual landlords must consider the impact of <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a>. While arrangement fees themselves aren't mortgage interest, they're often grouped with other loan costs that receive only basic rate tax relief. For a higher rate taxpayer, this means arrangement fees provide tax relief at 20% rather than their marginal rate of 40% or 45%. This reduced relief is one factor driving many landlords to consider <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation into limited companies</a>.</p>
 
-<p>For a higher rate taxpayer, this means arrangement fees provide tax relief at 20% rather than their marginal rate of 40%. This reduced relief is one factor driving many landlords to consider <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation into limited companies</a>, where full deductibility is maintained.</p>
-
-<h2>Limited Company vs Individual Ownership</h2>
-
-<p>Landlords operating through limited companies face different rules for <strong>loan setup costs</strong>. Companies can typically deduct arrangement fees in full against corporation tax, regardless of whether they relate to new purchases or existing properties, provided the borrowing is for business purposes.</p>
-
-<p>For example, if a property company pays £3,000 in arrangement fees for a mortgage to purchase a new rental property, this cost can usually be deducted against rental profits in the year incurred, rather than being treated as a capital cost.</p>
-
-<h3>Timing of Deductions</h3>
+<p>Landlords operating through limited companies face different rules for <strong>loan setup costs</strong>. Companies can typically deduct arrangement fees in full against corporation tax, regardless of whether they relate to new purchases or existing properties, provided the borrowing is for business purposes. For example, if a property company pays £3,000 in arrangement fees for a mortgage to purchase a new rental property, this cost can usually be deducted against rental profits in the year incurred, rather than being treated as a capital cost.</p>
 
 <p>Individual landlords must typically spread deductible arrangement fees over the life of the mortgage or claim them in the year paid, depending on their accounting method. Companies have more flexibility in timing these deductions to optimise their tax position.</p>
 

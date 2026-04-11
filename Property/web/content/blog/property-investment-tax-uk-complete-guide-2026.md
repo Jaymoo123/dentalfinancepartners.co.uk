@@ -57,56 +57,39 @@ faqs:
 
 <p>Capital improvements like new kitchens or extensions aren't deductible expenses. These costs can reduce <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax</a> when you sell the property.</p>
 
-<h2>Making Tax Digital Requirements</h2>
+<h2>Making Tax Digital (MTD) Requirements</h2>
 
 <p>From 6 April 2026, landlords with annual property income above £10,000 must comply with Making Tax Digital for Income Tax (MTD). This affects most property investors significantly.</p>
 
 <p>MTD requirements include:</p>
-
 <ul>
 <li><strong>Digital record keeping</strong> - using MTD-compatible software</li>
 <li><strong>Quarterly updates</strong> - submitting income and expense summaries every three months</li>
 <li><strong>End of period statements</strong> - annual reconciliation and final tax calculation</li>
 </ul>
 
-<p>Start preparing now by implementing suitable accounting software and establishing digital record-keeping processes.</p>
+<p>Start preparing now by implementing suitable accounting software and establishing digital record-keeping processes. Digital records are increasingly important for accessibility and backup security, especially with MTD requirements approaching.</p>
 
-<h2>Corporation Tax vs Income Tax</h2>
+<h2>Corporation Tax vs Income Tax for Property Investment</h2>
 
 <p>Many property investors consider incorporating to benefit from corporation tax rates and greater expense flexibility.</p>
 
 <h3>Limited Company Benefits</h3>
-
-<p>Property companies avoid Section 24 restrictions and can deduct full mortgage interest. Corporation tax rates (19% on profits up to £50,000, 25% above) are often lower than personal income tax rates.</p>
-
-<p>Companies also offer greater flexibility for reinvestment and long-term planning.</p>
+<p>Property companies avoid Section 24 restrictions and can deduct full mortgage interest. Corporation tax rates (19% on profits up to £250,000, 25% above) are often lower than personal income tax rates. Companies also offer greater flexibility for reinvestment and long-term planning.</p>
 
 <h3>Company Disadvantages</h3>
+<p>Extracting profits creates additional tax charges through dividends or salary. Annual filing requirements and professional fees increase administrative costs. Consider your total tax position, including extraction costs, when evaluating incorporation benefits.</p>
 
-<p>Extracting profits creates additional tax charges through dividends or salary. Annual filing requirements and professional fees increase administrative costs.</p>
-
-<p>Consider your total tax position, including extraction costs, when evaluating incorporation benefits.</p>
-
-<h2>Tax Planning Strategies</h2>
-
-<p>Effective property investment tax UK planning can significantly reduce your tax burden:</p>
-
-<h3>Timing Strategies</h3>
-
-<p>Spread capital gains across multiple tax years to utilise annual exempt amounts. Consider timing property sales in lower income years to benefit from basic rate capital gains tax.</p>
-
-<h3>Ownership Structures</h3>
-
-<p>Joint ownership with spouses can utilise both partners' tax allowances and potentially lower tax rates. Consider which partner should own properties based on their respective income levels.</p>
-
-<h3>Expense Optimisation</h3>
-
-<p>Ensure all allowable expenses are claimed. Keep detailed records and consider pre-letting expenses, which may be deductible against future rental income.</p>
+<h2>Tax Planning and Timing Strategies</h2>
+<p>Effective property investment tax UK planning can significantly reduce your tax burden. Key strategies include:</p>
+<ul>
+<li><strong>Timing Strategies:</strong> Spread capital gains across multiple tax years to utilise annual exempt amounts. Consider timing property sales in lower income years to benefit from basic rate capital gains tax (CGT).</li>
+<li><strong>Ownership Structures:</strong> Joint ownership with spouses can utilise both partners' tax allowances and potentially lower tax rates. Consider which partner should own properties based on their respective income levels.</li>
+<li><strong>Expense Optimisation:</strong> Ensure all allowable expenses are claimed. Keep detailed records and consider pre-letting expenses, which may be deductible against future rental income.</li>
+</ul>
 
 <h2>Record Keeping Requirements</h2>
-
-<p>Maintain comprehensive records for all property transactions:</p>
-
+<p>Maintain comprehensive records for all property transactions. This is essential for compliance and accurate tax reporting.</p>
 <ul>
 <li><strong>Purchase documentation</strong> - contracts, legal fees, survey costs</li>
 <li><strong>Rental records</strong> - tenancy agreements, rent schedules, deposit arrangements</li>
@@ -114,18 +97,11 @@ faqs:
 <li><strong>Improvement costs</strong> - capital expenditure for CGT calculations</li>
 </ul>
 
-<p>Digital records are increasingly important, especially with MTD requirements approaching. Consider cloud-based systems for accessibility and backup security.</p>
-
 <h2>Professional Support</h2>
-
 <p>Property investment tax UK rules are complex and constantly changing. Professional advice becomes increasingly valuable as your portfolio grows or when considering structural changes.</p>
-
-<p>Specialist property tax advisers can help optimise your structure, ensure compliance, and identify opportunities you might miss. The cost of professional advice typically pays for itself through tax savings and avoided penalties.</p>
-
-<p>For complex portfolios or significant property transactions, getting expert guidance on your specific circumstances is essential for effective tax planning.</p>
+<p>Specialist property tax advisers can help optimise your structure, ensure compliance, and identify opportunities you might miss. The cost of professional advice typically pays for itself through tax savings and avoided penalties. For complex portfolios or significant property transactions, getting expert guidance on your specific circumstances is essential for effective tax planning.</p>
 
 <h2>Related Reading</h2>
-
 <ul>
 <li><a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Landlords: April 2026 Deadline Explained</a></li>
 </ul>

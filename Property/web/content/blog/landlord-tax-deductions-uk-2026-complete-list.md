@@ -27,7 +27,7 @@ faqs:
 
 <p>This guide covers every allowable deduction for UK landlords in the 2026/27 tax year, helping you reduce your tax bill legally and efficiently.</p>
 
-<h2>Complete Landlord Expenses List: Quick Reference</h2>
+<h2>Complete List of Allowable Landlord Expenses</h2>
 
 <p>Here is every allowable expense for UK landlords at a glance. Each category is explained in detail further down the page.</p>
 
@@ -45,10 +45,8 @@ faqs:
 
 <p><strong>Not deductible:</strong> capital improvements, personal expenses, mortgage capital repayments, your own labour, fines, entertainment.</p>
 
-
-
 <h3>Landlord Expenses List: At-a-Glance Table</h3>
-<p>For a quick, scannable reference, here is a table of common allowable landlord expenses. Each category is explained in detail in the sections below.</p>
+<p>For a quick, scannable reference, here is a table of common allowable landlord expenses.</p>
 <table>
 <thead>
 <tr>
@@ -96,7 +94,7 @@ faqs:
 </tbody>
 </table>
 
-<h2>Property Running Costs</h2>
+<h2>Property Running Costs and Maintenance</h2>
 
 <p>These day-to-day <strong>landlord expenses allowable</strong> for tax relief include all costs directly related to running your rental property.</p>
 
@@ -109,9 +107,8 @@ faqs:
 <li>Ground rent and service charges</li>
 </ul>
 
-<h3>Maintenance and Repairs</h3>
+<h3>Repairs and Maintenance</h3>
 <p>You can claim the full cost of maintaining your property in its original condition. This includes:</p>
-
 <ul>
 <li>Plumbing and electrical repairs</li>
 <li>Roof repairs and gutter cleaning</li>
@@ -120,13 +117,11 @@ faqs:
 <li>Garden maintenance</li>
 <li>Replacing broken fixtures like taps or light fittings</li>
 </ul>
-
 <p><strong>Important:</strong> Improvements that enhance the property beyond its original state are not deductible as revenue expenses. These are capital expenditure and may qualify for different tax treatment.</p>
 
-<h2>Professional Fees and Management</h2>
+<h2>Professional Fees, Advertising and Management</h2>
 
 <p>All professional services related to your rental business qualify as <strong>rental property tax deductions</strong>.</p>
-
 <ul>
 <li>Letting agent fees and commission</li>
 <li>Property management company charges</li>
@@ -135,13 +130,9 @@ faqs:
 <li>Surveyor and valuation fees</li>
 <li>Estate agent fees for finding tenants</li>
 </ul>
-
 <p>A landlord with 5 BTL properties paying £2,000 annually in letting agent fees can claim the full amount against rental income, potentially saving £800 in tax (at 40% rate).</p>
 
-<h2>Advertising and Marketing</h2>
-
-<p>Costs for finding and securing tenants are fully deductible:</p>
-
+<p>Costs for finding and securing tenants are also fully deductible:</p>
 <ul>
 <li>Online property portal listings (Rightmove, Zoopla)</li>
 <li>Newspaper and magazine advertisements</li>
@@ -156,25 +147,21 @@ faqs:
 
 <h3>Individual Landlords</h3>
 <p>Since April 2020, individual landlords cannot deduct mortgage interest as an expense. Instead, you receive basic rate tax relief (20%) as a tax credit.</p>
-
 <p>For a landlord paying £12,000 annual mortgage interest, the tax relief is capped at £2,400 (20%), regardless of your marginal tax rate.</p>
 
 <h3>Company Landlords</h3>
 <p>Property companies can still deduct mortgage interest and finance costs as business expenses:</p>
-
 <ul>
 <li>Mortgage interest payments</li>
 <li>Loan arrangement fees</li>
 <li>Bank charges and overdraft fees</li>
 <li>Credit card interest on property expenses</li>
 </ul>
-
 <p>This is why many landlords consider <a href="/incorporation">incorporation</a> when their rental income reaches higher tax bands.</p>
 
 <h2>Travel and Motor Expenses</h2>
 
 <p>You can claim travel costs for property-related journeys, but not travel from home to your office.</p>
-
 <h3>Allowable Travel</h3>
 <ul>
 <li>Visits to rental properties for inspections</li>
@@ -182,34 +169,22 @@ faqs:
 <li>Journeys to purchase materials or meet contractors</li>
 <li>Travel to estate agents or property shows</li>
 </ul>
-
 <p>Claim either actual costs (petrol, parking) or HMRC's approved mileage rates: 45p per mile for first 10,000 miles, then 25p per mile.</p>
 
-<h2>Office and Administrative Costs</h2>
+<h2>Office, Administrative and Home Office Costs</h2>
 
 <p>Home office and administrative expenses are often overlooked <strong>landlord tax deductions UK</strong> opportunities.</p>
-
 <ul>
 <li>Stationery and postage</li>
 <li>Telephone calls related to property business</li>
 <li>Computer equipment and software</li>
-<li>Home office costs (reasonable proportion)</li>
 <li>Property management software subscriptions</li>
 </ul>
 
 <h3>Home Office Deduction</h3>
-<p>If you use part of your home exclusively for property business, you can claim a proportion of:</p>
+<p>If you use part of your home exclusively for property business, you can claim a proportion of mortgage interest or rent, council tax, insurance, and utilities. Alternatively, use HMRC's simplified flat rate: £4 per week for 25-50 hours, £6 per week for 51-100 hours, £26 per week for 101+ hours.</p>
 
-<ul>
-<li>Mortgage interest or rent</li>
-<li>Council tax</li>
-<li>Insurance</li>
-<li>Utilities</li>
-</ul>
-
-<p>Alternatively, use HMRC's simplified flat rate: £4 per week for 25-50 hours, £6 per week for 51-100 hours, £26 per week for 101+ hours.</p>
-
-<h2>Replacement Furniture and Equipment</h2>
+<h2>Replacement of Domestic Items Relief</h2>
 <p>The <strong>Replacement of Domestic Items Relief</strong> replaced the old Wear and Tear Allowance from April 2016. This means the previous system of claiming a flat 10% of rental income for wear and tear is no longer available. Instead, you can claim the cost of replacing (but not initially purchasing) domestic items in furnished properties:</p>
 <ul>
 <li>Furniture (beds, sofas, tables)</li>
@@ -223,7 +198,6 @@ faqs:
 <h2>Bad Debts and Legal Costs</h2>
 
 <p>Costs related to problem tenants and rent collection are allowable expenses:</p>
-
 <ul>
 <li>Unpaid rent written off as bad debt</li>
 <li>Debt collection agency fees</li>
@@ -231,28 +205,11 @@ faqs:
 <li>Bailiff and enforcement costs</li>
 <li>Legal fees for eviction proceedings</li>
 </ul>
-
 <p>You can only claim bad debt relief once you've written off the debt and made reasonable efforts to collect it.</p>
 
-<h2>What You Cannot Deduct</h2>
+<h2>Record Keeping for Making Tax Digital (MTD)</h2>
 
-<p>Understanding non-allowable expenses prevents costly mistakes:</p>
-
-<ul>
-<li>Capital improvements (extensions, conversions)</li>
-<li>Personal expenses unrelated to rental business</li>
-<li>Mortgage capital repayments</li>
-<li>Your own time and labour</li>
-<li>Fines and penalties</li>
-<li>Entertainment expenses</li>
-<li>Clothing (unless protective workwear)</li>
-</ul>
-
-<h2>Record Keeping for MTD</h2>
-
-<p>With Making Tax Digital for Income Tax Property starting 6 April 2026, digital record keeping becomes mandatory for many landlords.</p>
-
-<p>You must maintain digital records and submit quarterly updates if your annual property income exceeds £10,000. This makes tracking <strong>landlord expenses allowable</strong> for tax relief more important than ever.</p>
+<p>With Making Tax Digital for Income Tax Property starting 6 April 2026, digital record keeping becomes mandatory for many landlords. You must maintain digital records and submit quarterly updates if your annual property income exceeds £10,000. This makes tracking <strong>landlord expenses allowable</strong> for tax relief more important than ever.</p>
 
 <h3>Essential Records</h3>
 <ul>
@@ -262,13 +219,11 @@ faqs:
 <li>Mileage logs for travel expenses</li>
 <li>Tenancy agreements and rent rolls</li>
 </ul>
-
 <p>Consider using cloud-based <a href="/blog/making-tax-digital-mtd/landlord-accounting-software-uk-best-options-2026">landlord accounting software</a> that integrates with HMRC's MTD system to streamline compliance.</p>
 
-<h2>Maximising Your Deductions</h2>
+<h2>Maximising Deductions and Professional Advice</h2>
 
 <p>To ensure you claim all available <strong>rental property tax deductions</strong>:</p>
-
 <ul>
 <li>Keep detailed records of all property-related expenses</li>
 <li>Separate business and personal costs clearly</li>
@@ -276,17 +231,11 @@ faqs:
 <li>Consider timing of repairs and replacements for tax efficiency</li>
 <li>Seek professional advice for complex situations</li>
 </ul>
-
 <p>A well-organised landlord with £50,000 annual rental income might legitimately claim £15,000-20,000 in allowable expenses, significantly reducing their tax liability.</p>
 
-<h2>Professional Advice</h2>
-
-<p>Tax rules for landlords are complex and frequently changing. Professional advice ensures you maximise legitimate deductions while staying compliant with HMRC requirements.</p>
-
-<p>Our <a href="/services">specialist property tax services</a> help landlords optimise their tax position and prepare for MTD compliance. <a href="/contact">Contact us</a> for guidance on your specific situation.</p>
+<p>Tax rules for landlords are complex and frequently changing. Professional advice ensures you maximise legitimate deductions while staying compliant with HMRC requirements. Our <a href="/services">specialist property tax services</a> help landlords optimise their tax position and prepare for MTD compliance. <a href="/contact">Contact us</a> for guidance on your specific situation.</p>
 
 <h2>Related Reading</h2>
-
 <ul>
 <li><a href="/blog/section-24-and-tax-relief/landlord-capital-allowances-tax-relief">Landlord Capital Allowances: A Complete Guide to Tax Relief</a></li>
 <li><a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">Rental Income Tax UK: Complete Guide for Landlords</a></li>

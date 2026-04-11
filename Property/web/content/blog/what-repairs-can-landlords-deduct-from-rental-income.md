@@ -52,7 +52,7 @@ faqs:
 
 <p>For HMO landlords, common area repairs such as fixing communal bathroom facilities or repairing shared kitchen appliances typically qualify, provided they maintain rather than improve the property.</p>
 
-<h2>The Critical Repairs vs Improvements Landlord Distinction</h2>
+<h2>The Critical Repairs vs Improvements Distinction</h2>
 
 <p>The <strong>repairs vs improvements landlord</strong> distinction is where many property investors go wrong. Improvements enhance the property beyond its original condition and are treated as capital expenditure, not allowable repairs.</p>
 
@@ -76,47 +76,32 @@ faqs:
 
 <p>For example, a landlord replacing a damaged roof might choose modern materials that last longer than the originals. If the primary purpose is repairing storm damage and the upgrade is incidental, this often qualifies as repairs.</p>
 
-<h2>Initial Property Condition and Dilapidations</h2>
+<h2>Initial Property Condition and Pre-Letting Expenses</h2>
 
-<p>Work to remedy defects existing when you acquired the property typically doesn't qualify as repairs. HMRC views these as improvements bringing the property to a lettable standard, not maintaining existing condition.</p>
+<p>Work to remedy defects existing when you acquired the property typically doesn't qualify as repairs. HMRC views these as improvements bringing the property to a lettable standard, not maintaining existing condition. Costs incurred before a property generates rental income are often treated as <strong>capital expenditure rental property</strong> rather than repairs. This includes work to make an uninhabitable property lettable.</p>
 
-<p>However, if you purchased a property in good condition and it subsequently deteriorates, restoration work usually qualifies as repairs. The timing and circumstances matter significantly.</p>
+<p>However, if you purchased a property in good condition and it subsequently deteriorates, restoration work usually qualifies as repairs. The timing and circumstances matter significantly. Once the property is let and generating income, ongoing maintenance work typically qualifies for repairs treatment, provided it meets the restoration criteria.</p>
 
-<h3>Pre-Letting Expenses</h3>
-
-<p>Costs incurred before a property generates rental income are often treated as <strong>capital expenditure rental property</strong> rather than repairs. This includes work to make an uninhabitable property lettable.</p>
-
-<p>Once the property is let and generating income, ongoing maintenance work typically qualifies for repairs treatment, provided it meets the restoration criteria.</p>
-
-<h2>Professional Services and Labour Costs</h2>
+<h2>Professional Services, Labour Costs and VAT</h2>
 
 <p>Labour costs for repair work are generally allowable, including:</p>
-
 <ul>
 <li>Tradesperson wages for repair work</li>
 <li>Architect fees for repair planning (not improvements)</li>
 <li>Surveyor costs for assessing repair needs</li>
 <li>Emergency call-out charges</li>
 </ul>
-
 <p>However, professional fees for improvement projects, planning applications, or building regulations approval for enhancements are treated as capital costs.</p>
+<p>VAT-registered landlords can typically recover VAT on repair expenses, making the net cost lower. However, most individual landlords aren't VAT-registered unless their annual income exceeds £85,000. Repair work on residential property is often VAT-exempt or charged at 5% for certain types of work, while improvement work typically attracts the full 20% VAT rate.</p>
 
-<h2>VAT and Repair Expenses</h2>
+<h2>Tax Treatment and Timing of Deductions</h2>
 
-<p>VAT-registered landlords can typically recover VAT on repair expenses, making the net cost lower. However, most individual landlords aren't VAT-registered unless their annual income exceeds £85,000.</p>
+<p>Unlike mortgage interest, <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a> don't affect repair expense deductions. Landlords can still deduct the full cost of allowable repairs from rental income before calculating tax. This makes maximising legitimate repair deductions even more valuable, as they provide full tax relief while mortgage interest is now restricted to a basic rate tax credit.</p>
+<p>Repair expenses are typically deductible in the tax year they're incurred, not when paid. However, cash basis accounting allows deduction when payment is made, which many smaller landlords prefer for simplicity. For landlords with rental income exceeding £150,000 annually, accruals basis accounting is mandatory, meaning repair costs are deducted when the work is completed, not when invoices are settled.</p>
 
-<p>Repair work on residential property is often VAT-exempt or charged at 5% for certain types of work, while improvement work typically attracts the full 20% VAT rate.</p>
-
-<h2>Section 24 Impact on Repair Deductions</h2>
-
-<p>Unlike mortgage interest, <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a> don't affect repair expense deductions. Landlords can still deduct the full cost of allowable repairs from rental income before calculating tax.</p>
-
-<p>This makes maximising legitimate repair deductions even more valuable, as they provide full tax relief while mortgage interest is now restricted to a basic rate tax credit.</p>
-
-<h2>Record Keeping for Repair Claims</h2>
+<h2>Record Keeping and Common Mistakes</h2>
 
 <p>Proper documentation is essential for defending repair claims during HMRC investigations:</p>
-
 <ul>
 <li><strong>Before photos:</strong> Document the property's condition requiring repair</li>
 <li><strong>Invoices:</strong> Detailed breakdown of materials and labour</li>
@@ -124,19 +109,8 @@ faqs:
 <li><strong>Written quotes:</strong> Evidence of reasonable costs</li>
 <li><strong>Warranties:</strong> Proof of professional workmanship</li>
 </ul>
-
 <p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becoming mandatory</a> for landlords from April 2026, digital record-keeping becomes increasingly important.</p>
-
-<h2>Timing of Repair Deductions</h2>
-
-<p>Repair expenses are typically deductible in the tax year they're incurred, not when paid. However, cash basis accounting allows deduction when payment is made, which many smaller landlords prefer for simplicity.</p>
-
-<p>For landlords with rental income exceeding £150,000 annually, accruals basis accounting is mandatory, meaning repair costs are deducted when the work is completed, not when invoices are settled.</p>
-
-<h2>Common Mistakes to Avoid</h2>
-
 <p>These errors frequently trigger HMRC investigations:</p>
-
 <ul>
 <li><strong>Claiming improvements as repairs:</strong> Upgrading beyond original specification</li>
 <li><strong>Deducting pre-purchase remedial work:</strong> Costs to make uninhabitable property lettable</li>
@@ -145,22 +119,12 @@ faqs:
 <li><strong>Mixed personal/rental use:</strong> Claiming costs where landlord also benefits</li>
 </ul>
 
-<h2>Planning Major Repairs</h2>
+<h2>Planning and Strategy</h2>
 
-<p>For substantial repair projects, consider the tax implications before starting work. Sometimes phasing repairs across tax years can optimise your position, particularly if your income fluctuates.</p>
-
-<p>If repairs push you into a higher tax bracket, spreading costs might reduce overall tax liability. Conversely, if you have unused personal allowances or expect higher future income, accelerating repair work could be beneficial.</p>
-
+<p>For substantial repair projects, consider the tax implications before starting work. Sometimes phasing repairs across tax years can optimise your position, particularly if your income fluctuates. If repairs push you into a higher tax bracket, spreading costs might reduce overall tax liability. Conversely, if you have unused personal allowances or expect higher future income, accelerating repair work could be beneficial.</p>
 <p>For complex situations involving multiple properties or substantial repair programmes, speaking to <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">a specialist property accountant</a> can help optimise your approach and ensure compliance.</p>
 
-<h2>Commercial Property Considerations</h2>
+<h2>Commercial Property and Future Changes</h2>
 
-<p>Commercial property repairs follow similar principles but with some differences. Landlords can often claim capital allowances on commercial property improvements, providing tax relief unavailable for residential property enhancements.</p>
-
-<p>Section 24 restrictions don't apply to commercial lettings, and repair deductions work alongside mortgage interest relief without limitation.</p>
-
-<h2>Future Changes and Planning</h2>
-
-<p>From April 2027, <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">separate property income tax rates</a> will apply, making repair deductions even more valuable as they reduce income subject to potentially higher rates.</p>
-
-<p>The importance of maximising legitimate repair claims will increase, making proper understanding and documentation of these rules crucial for property investors' long-term success.</p>
+<p>Commercial property repairs follow similar principles but with some differences. Landlords can often claim capital allowances on commercial property improvements, providing tax relief unavailable for residential property enhancements. Section 24 restrictions don't apply to commercial lettings, and repair deductions work alongside mortgage interest relief without limitation.</p>
+<p>From April 2027, <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">separate property income tax rates</a> will apply, making repair deductions even more valuable as they reduce income subject to potentially higher rates. The importance of maximising legitimate repair claims will increase, making proper understanding and documentation of these rules crucial for property investors' long-term success.</p>

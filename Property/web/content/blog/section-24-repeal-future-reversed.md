@@ -27,84 +27,41 @@ faqs:
 
 <p>This restriction, which limits mortgage interest relief to the basic rate of tax, has pushed many landlords toward <a href="/incorporation">company structures</a> or out of the market entirely. Understanding the likelihood of a section 24 repeal requires examining political positions, industry pressure, and economic realities.</p>
 
-<h2>Current Political Landscape on Section 24</h2>
+<h2>Will Section 24 Be Reversed? A Realistic Assessment</h2>
 
-<p>No major political party has committed to reversing Section 24 in their recent manifestos. The Conservative government that introduced the measure defended it as necessary for tax fairness. Labour has not indicated they would reverse it either.</p>
+<p>The likelihood of full section 24 repeal appears low in the medium term. Several key factors work against reversal:</p>
 
-<p>The reality is that Section 24 generates significant tax revenue for HMRC. Reversing it would create a substantial hole in government finances that would need filling elsewhere. For a landlord with £100k rental income and £60k mortgage interest, Section 24 typically generates an extra £9,000-£18,000 in annual tax depending on their marginal rate.</p>
+<p><strong>Political Landscape and Optics:</strong> No major political party has committed to reversing Section 24. The Conservative government that introduced the measure defended it as necessary for tax fairness, and Labour has not indicated they would reverse it either. Helping landlords remains politically unpopular, especially during a housing crisis affecting renters and first-time buyers.</p>
 
-<p>Political parties are generally reluctant to be seen as helping landlords when housing affordability remains a major voter concern. This makes the prospects for section 24 future changes politically challenging.</p>
+<p><strong>Revenue Dependency:</strong> Section 24 generates significant tax revenue for HMRC. Reversing it would create a substantial hole in government finances that would need filling elsewhere. For a landlord with £100k rental income and £60k mortgage interest, Section 24 typically generates an extra £9,000-£18,000 in annual tax depending on their marginal rate. Estimates suggest Section 24 generates over £1 billion annually, revenue HMRC has become accustomed to.</p>
 
-<h2>Industry Pressure and Lobbying Efforts</h2>
+<p><strong>Alternative Government Approach:</strong> The government appears to prefer encouraging institutional investment rather than supporting individual landlords.</p>
 
-<p>Property industry bodies continue to argue against Section 24, citing several key points:</p>
+<p>However, some modifications remain possible if housing supply issues become critical. These might include partial restoration of mortgage interest relief, higher basic rate tax bands, transitional arrangements for long-term landlords, or regional variations in high-demand areas.</p>
 
+<h2>Industry Pressure and Economic Factors</h2>
+
+<p>Property industry bodies like the National Residential Landlords Association (NRLA) continue to lobby against Section 24, citing reduced rental supply, higher rents passed to tenants, distortion between individual and corporate property investment, and the administrative burden from forced <a href="/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax">incorporations</a>. However, their influence appears limited when weighed against broader political priorities.</p>
+
+<p>Several economic trends could influence future policy:</p>
 <ul>
-<li>Reduced rental supply as landlords exit the market</li>
-<li>Higher rents passed to tenants</li>
-<li>Distortion between individual and corporate property investment</li>
-<li>Administrative burden from forced <a href="/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax">incorporations</a></li>
+<li><strong>Housing Supply Pressures:</strong> If rental supply shortages become severe enough to affect government housing targets, this could create pressure for reform.</li>
+<li><strong>Market Distortions:</strong> The system creates clear advantages for corporate ownership over individual ownership. If this distortion becomes economically problematic, it might drive policy reconsideration.</li>
 </ul>
 
-<p>The National Residential Landlords Association (NRLA) regularly submits evidence to government consultations arguing for reform. However, their influence appears limited when weighed against broader political priorities.</p>
-
-<p>Some industry voices suggest that rather than full repeal, modifications might be more realistic. These could include higher basic rate bands or partial relief restoration.</p>
-
-<h2>Economic Factors Affecting Reversal Prospects</h2>
-
-<p>Several economic trends could influence whether Section 24 restrictions might be reversed:</p>
-
-<h3>Housing Supply Pressures</h3>
-
-<p>If rental supply shortages become severe enough to affect government housing targets, this could create pressure for reform. However, the government's current approach favors institutional investment over individual landlords.</p>
-
-<h3>Tax Revenue Considerations</h3>
-
-<p>Section 24 generates substantial revenue that any government would be reluctant to lose. With public finances under pressure, finding alternative revenue sources would be necessary before considering repeal.</p>
-
-<h3>Market Distortions</h3>
-
-<p>The system now creates clear advantages for corporate ownership over individual ownership. If this distortion becomes economically problematic, it might drive policy reconsideration.</p>
-
-<h2>Will Section 24 Be Reversed? Realistic Assessment</h2>
-
-<p>The likelihood of full section 24 repeal appears low in the medium term. Several factors work against reversal:</p>
-
-<p><strong>Revenue dependency:</strong> HMRC has become accustomed to the additional tax revenue. Estimates suggest Section 24 generates over £1 billion annually.</p>
-
-<p><strong>Political optics:</strong> Helping landlords remains politically unpopular, especially during a housing crisis affecting renters and first-time buyers.</p>
-
-<p><strong>Alternative solutions:</strong> The government appears to prefer encouraging institutional investment rather than supporting individual landlords.</p>
-
-<p>However, some modifications remain possible if housing supply issues become critical. These might include:</p>
-
-<ul>
-<li>Partial restoration of mortgage interest relief</li>
-<li>Higher basic rate tax bands</li>
-<li>Transitional arrangements for long-term landlords</li>
-<li>Regional variations in high-demand areas</li>
-</ul>
-
-<h2>What This Means for Your Investment Strategy</h2>
+<h2>Strategic Implications for Landlords</h2>
 
 <p>Given the low probability of section 24 repeal, landlords should focus on strategies that work within the current system:</p>
 
-<p><strong>Company structures:</strong> <a href="/incorporation">Incorporation</a> remains the primary method for avoiding Section 24 restrictions. Companies can still deduct mortgage interest as a business expense.</p>
+<p><strong>Company Structures:</strong> <a href="/incorporation">Incorporation</a> remains the primary method for avoiding Section 24 restrictions, as companies can still deduct mortgage interest as a business expense.</p>
 
-<p><strong>Portfolio optimization:</strong> Focus on properties that generate strong rental yields relative to mortgage costs. Lower-leverage strategies may work better under current rules.</p>
+<p><strong>Portfolio Optimization:</strong> Focus on properties that generate strong rental yields relative to mortgage costs. Lower-leverage strategies may work better under current rules.</p>
 
-<p><strong>Professional advice:</strong> The interaction between Section 24, capital gains tax, and incorporation timing requires specialist guidance. Consider speaking with property tax specialists about your specific circumstances.</p>
+<p><strong>Professional Advice:</strong> The interaction between Section 24, capital gains tax, and incorporation timing requires specialist guidance. Consider speaking with property tax specialists about your specific circumstances.</p>
 
 <h2>Monitoring Future Developments</h2>
 
-<p>While full reversal seems unlikely, the situation could evolve. Key indicators to watch include:</p>
-
-<ul>
-<li>Government housing supply statistics</li>
-<li>Political party policy announcements</li>
-<li>Industry consultation responses</li>
-<li>Regional rental market pressures</li>
-</ul>
+<p>While full reversal seems unlikely, the situation could evolve. Key indicators to watch include government housing supply statistics, political party policy announcements, industry consultation responses, and regional rental market pressures.</p>
 
 <p>The 2025/26 tax year will mark five years since Section 24's full implementation. This milestone might prompt policy reviews, though any changes would likely be gradual rather than wholesale reversal.</p>
 

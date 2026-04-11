@@ -35,7 +35,15 @@ faqs:
 
 <p>The relief is automatic - you don't need to claim it. But you do need to calculate it correctly to ensure you pay the right amount of CGT.</p>
 
-<h2>The Basic PPR Relief Calculation Method</h2>
+<p>PPR relief has limitations that landlords should understand:</p>
+<ul>
+<li><strong>Buy-to-let from day one:</strong> Properties purchased specifically for rental never qualify for PPR relief</li>
+<li><strong>Companies:</strong> PPR relief only applies to individuals, not limited companies</li>
+<li><strong>Non-residents:</strong> Different rules apply for non-UK residents</li>
+<li><strong>Development properties:</strong> Properties held for development may not qualify</li>
+</ul>
+
+<h2>The PPR Relief Calculation Method and Example</h2>
 
 <p>The calculation uses time apportionment to determine what proportion of your gain qualifies for relief. Here's the basic formula:</p>
 
@@ -50,32 +58,31 @@ faqs:
 
 <p>Let's work through a practical example to illustrate the <strong>time apportioned PPR</strong> calculation.</p>
 
-<h2>Step-by-Step PPR Relief Calculation Example</h2>
-
+<h3>Step-by-Step Calculation Example</h3>
 <p>Sarah bought a house in January 2010 for £200,000. She lived in it as her main home until June 2020, then moved out and rented it to tenants. She sells the property in January 2026 for £350,000.</p>
 
-<h3>Step 1: Calculate the Total Gain</h3>
+<h4>Step 1: Calculate the Total Gain</h4>
 <p>Sale proceeds: £350,000<br>
 Purchase price: £200,000<br>
 Less: selling costs (legal fees, estate agent): £8,000<br>
 <strong>Total gain: £142,000</strong></p>
 
-<h3>Step 2: Work Out Total Ownership Period</h3>
+<h4>Step 2: Work Out Total Ownership Period</h4>
 <p>January 2010 to January 2026 = <strong>16 years (192 months)</strong></p>
 
-<h3>Step 3: Calculate Exempt Periods</h3>
+<h4>Step 3: Calculate Exempt Periods</h4>
 <p>Actual residence: January 2010 to June 2020 = 10 years 6 months (126 months)<br>
 Final 9 months: June 2025 to January 2026 = 9 months<br>
 <strong>Total exempt period: 135 months</strong></p>
 
-<h3>Step 4: Apply the PPR Relief Formula</h3>
+<h4>Step 4: Apply the PPR Relief Formula</h4>
 <p>PPR relief = £142,000 × (135 ÷ 192) = £142,000 × 70.3% = <strong>£99,826</strong></p>
 
 <p>Taxable gain after PPR relief: £142,000 - £99,826 = £42,174</p>
 
 <p>Less annual exempt amount (£3,000): £39,174 liable to CGT at 18% or 24% depending on Sarah's income tax band.</p>
 
-<h2>Common Complications in PPR Relief Calculations</h2>
+<h2>Common Complications and Deemed Occupation</h2>
 
 <h3>Letting Relief (Historical)</h3>
 <p>Properties sold before April 2020 could claim letting relief alongside PPR relief. This relief was capped at £40,000 and only applied when you lived in the property before letting it out. Letting relief was abolished for most sales from April 2020 onwards.</p>
@@ -91,13 +98,11 @@ Final 9 months: June 2025 to January 2026 = 9 months<br>
 <li>Up to 4 years when unable to live there due to employment conditions</li>
 </ul>
 
-<h2>PPR Relief on Properties With Gardens</h2>
+<h2>PPR Relief on Properties With Gardens and Multiple Homes</h2>
 
 <p>PPR relief covers your house plus grounds up to 0.5 hectares (about 1.2 acres). If you have larger grounds, you need to show the additional land was required for the reasonable enjoyment of the property to get full relief.</p>
 
 <p>This can be relevant for landlords with larger properties where part of the garden might be considered excessive for the main house.</p>
-
-<h2>Multiple Properties and PPR Elections</h2>
 
 <p>If you own more than one property, you can only claim PPR relief on one at a time - your main residence. You can make elections to HMRC to specify which property you want to treat as your main residence for specific periods.</p>
 
@@ -118,18 +123,7 @@ Final 9 months: June 2025 to January 2026 = 9 months<br>
 
 <p>HMRC may query your calculation, especially if significant amounts of relief are claimed. Good records support your position and make the process straightforward.</p>
 
-<h2>When PPR Relief Doesn't Apply</h2>
-
-<p>PPR relief has limitations that landlords should understand:</p>
-
-<ul>
-<li><strong>Buy-to-let from day one:</strong> Properties purchased specifically for rental never qualify for PPR relief</li>
-<li><strong>Companies:</strong> PPR relief only applies to individuals, not limited companies</li>
-<li><strong>Non-residents:</strong> Different rules apply for non-UK residents</li>
-<li><strong>Development properties:</strong> Properties held for development may not qualify</li>
-</ul>
-
-<h2>PPR Relief and Capital Gains Tax Planning</h2>
+<h2>Capital Gains Tax Planning and Common Mistakes</h2>
 
 <p>Understanding PPR calculations helps with tax planning. For example, if you're considering moving out of your home to rent it out, timing the eventual sale within the 9-month final period exemption can maximise relief.</p>
 
@@ -137,10 +131,7 @@ Final 9 months: June 2025 to January 2026 = 9 months<br>
 
 <p>For landlords with <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">complex capital gains tax situations</a>, professional advice ensures you claim all available reliefs correctly.</p>
 
-<h2>Common PPR Calculation Mistakes</h2>
-
 <p>Landlords often make errors that can prove costly:</p>
-
 <ul>
 <li><strong>Incorrect dates:</strong> Using exchange rather than completion dates</li>
 <li><strong>Missing deemed occupation:</strong> Not claiming periods that qualify</li>

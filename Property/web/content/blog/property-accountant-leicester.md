@@ -54,35 +54,21 @@ faqs:
 
 <p>A local <strong>property accountant in Leicester</strong> understands these market dynamics and can provide advice tailored to the local context. This includes understanding typical rental yields in different areas, capital growth prospects, and how these factors affect your overall tax position.</p>
 
-<h2>Key Services from Leicester Property Accountants</h2>
+<h2>Services from a Leicester Property Accountant</h2>
 
-<h3>Tax Planning and Compliance</h3>
+<p>Effective tax planning requires ongoing attention throughout the year, not just at filing deadlines. Specialist property accountants help Leicester landlords with a comprehensive range of services.</p>
 
-<p>Effective tax planning requires ongoing attention throughout the year, not just at filing deadlines. Specialist property accountants help Leicester landlords with:</p>
+<h3>Tax Planning, Compliance and Mitigation</h3>
+<p>This includes annual Self Assessment preparation and filing, quarterly tax planning reviews, expense optimisation and allowable deduction claims, and tax-efficient property acquisition structuring.</p>
 
-<ul>
-<li>Annual Self Assessment preparation and filing</li>
-<li>Quarterly tax planning reviews</li>
-<li>Expense optimisation and allowable deduction claims</li>
-<li>Tax-efficient property acquisition structuring</li>
-</ul>
+<h3>Section 24 Mitigation</h3>
+<p>Section 24 continues to impact many Leicester landlords, particularly those with mortgaged properties. A specialist <strong>property accountant in Leicester</strong> can help you understand your exposure and explore mitigation options, such as incorporation. For instance, a landlord with three Leicester properties and £120,000 annual rental income might benefit from incorporation. The accountant can model the tax savings and help with the incorporation process if beneficial.</p>
 
-<h3>Section 24 Mitigation Strategies</h3>
+<h3>Making Tax Digital (MTD) Preparation</h3>
+<p>MTD for Income Tax Property will affect most landlords from April 2026. Leicester property accountants are helping clients prepare by implementing suitable accounting software systems, establishing quarterly reporting procedures, training on digital record-keeping requirements, and planning for the transition period.</p>
 
-<p>Section 24 continues to impact many Leicester landlords, particularly those with mortgaged properties. A specialist <strong>property accountant in Leicester</strong> can help you understand your exposure and explore mitigation options.</p>
-
-<p>For instance, a landlord with three Leicester properties and £120,000 annual rental income might benefit from incorporation. The accountant can model the tax savings and help with the incorporation process if beneficial.</p>
-
-<h3>Making Tax Digital Preparation</h3>
-
-<p>MTD for Income Tax Property will affect most landlords from April 2026. Leicester property accountants are helping clients prepare by:</p>
-
-<ul>
-<li>Implementing suitable accounting software systems</li>
-<li>Establishing quarterly reporting procedures</li>
-<li>Training on digital record-keeping requirements</li>
-<li>Planning for the transition period</li>
-</ul>
+<h3>Incorporation and Company Structure Advice</h3>
+<p>For many landlords, transferring properties to a limited company can offer significant tax advantages, particularly in light of Section 24. A specialist accountant can provide detailed analysis on whether incorporation is right for your portfolio, considering factors like stamp duty, capital gains tax (CGT) at 18% (basic rate) or 24% (higher rate) on disposal, and ongoing corporation tax at 19% (profits up to £250k) or 25% (main rate). They can also guide you through the legal and administrative process.</p>
 
 <h2>Choosing the Right Property Accountant in Leicester</h2>
 
@@ -108,29 +94,11 @@ faqs:
 
 <p>Each scenario benefits from specialist property accounting expertise that understands both the tax implications and local market dynamics.</p>
 
-<h2>Working with Your Leicester Property Accountant</h2>
+<h2>Working with Your Accountant and Cost Considerations</h2>
 
-<p>To get the best results from your relationship with a <strong>property accountant in Leicester</strong>, maintain regular communication throughout the year. This includes:</p>
+<p>To get the best results from your relationship with a <strong>property accountant in Leicester</strong>, maintain regular communication throughout the year. This includes quarterly reviews of your portfolio performance, updates on any property acquisitions or disposals, discussion of changes to your investment strategy, and regular review of tax planning opportunities. Many Leicester landlords find that quarterly meetings provide the right balance of ongoing support without excessive time commitment.</p>
 
-<ul>
-<li>Quarterly reviews of your property portfolio performance</li>
-<li>Updates on any property acquisitions or disposals</li>
-<li>Discussion of any changes to your investment strategy</li>
-<li>Regular review of tax planning opportunities</li>
-</ul>
-
-<p>Many Leicester landlords find that quarterly meetings provide the right balance of ongoing support without excessive time commitment.</p>
-
-<h2>Cost Considerations and Value</h2>
-
-<p>While specialist property accounting services represent an investment, they typically pay for themselves through tax savings and improved financial management. A good <strong>property accountant in Leicester</strong> should be able to demonstrate their value through:</p>
-
-<ul>
-<li>Tax savings achieved through proper planning</li>
-<li>Time saved on compliance and administration</li>
-<li>Reduced risk of HMRC enquiries through proper record-keeping</li>
-<li>Better investment decisions through clear financial reporting</li>
-</ul>
+<p>While specialist property accounting services represent an investment, they typically pay for themselves through tax savings and improved financial management. A good <strong>property accountant in Leicester</strong> should be able to demonstrate their value through tax savings achieved through proper planning, time saved on compliance and administration, reduced risk of HMRC enquiries through proper record-keeping, and better investment decisions through clear financial reporting.</p>
 
 <p>For example, helping a Leicester landlord avoid Section 24 impacts through incorporation might save several thousand pounds annually, easily justifying the professional fees involved.</p>
 

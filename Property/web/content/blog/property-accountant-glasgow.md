@@ -39,53 +39,35 @@ faqs:
 
 <h3>Section 24 Tax Planning</h3>
 
-<p>Section 24 restrictions have fundamentally changed property taxation for individual landlords. Instead of deducting mortgage interest as a business expense, landlords can now only claim basic rate tax relief through a tax credit system.</p>
-
-<p>For many Glasgow landlords, this has pushed them into higher tax brackets or made previously profitable properties break-even. A specialist property accountant can model different scenarios and recommend strategies like <a href="/incorporation">incorporation into a limited company structure</a> where appropriate.</p>
+<p>Section 24 restrictions have fundamentally changed property taxation for individual landlords. Instead of deducting mortgage interest as a business expense, landlords can now only claim basic rate tax relief through a tax credit system. For many Glasgow landlords, this has pushed them into higher tax brackets or made previously profitable properties break-even. A specialist property accountant can model different scenarios and recommend strategies like <a href="/incorporation">incorporation into a limited company structure</a> where appropriate.</p>
 
 <h3>Making Tax Digital Compliance</h3>
 
-<p>From April 2026, landlords with gross property income above £10,000 must comply with Making Tax Digital for Income Tax (ITSA). This requires quarterly digital submissions and changes how property accounts are maintained.</p>
-
-<p>Getting ahead of these requirements now means you're prepared when the rules take effect. Many Glasgow landlords are already implementing digital record-keeping systems and quarterly review processes.</p>
+<p>From April 2026, landlords with gross property income above £10,000 must comply with Making Tax Digital for Income Tax (ITSA). This requires quarterly digital submissions and changes how property accounts are maintained. Getting ahead of these requirements now means you're prepared when the rules take effect. Many Glasgow landlords are already implementing digital record-keeping systems and quarterly review processes.</p>
 
 <h3>Company Incorporation Analysis</h3>
 
-<p>Company structures can offer significant tax advantages for property investors, particularly those affected by Section 24. Corporation tax rates on rental profits are often lower than personal income tax rates for higher-rate taxpayers.</p>
-
-<p>However, incorporation isn't suitable for everyone. Factors like existing mortgage arrangements, capital gains tax on transfer, and ongoing compliance costs all need consideration. Our <a href="/calculators">incorporation calculator</a> can provide initial guidance, but detailed analysis from a property accountant is essential.</p>
+<p>Company structures can offer significant tax advantages for property investors, particularly those affected by Section 24. Corporation tax rates on rental profits are often lower than personal income tax rates for higher-rate taxpayers, with a small profits rate of 19% and a main rate of 25%. However, incorporation isn't suitable for everyone. Factors like existing mortgage arrangements, capital gains tax on transfer, and ongoing compliance costs all need consideration. Our <a href="/calculators">incorporation calculator</a> can provide initial guidance, but detailed analysis from a property accountant is essential.</p>
 
 <h2>Capital Gains Tax Planning</h2>
 
-<p>Glasgow's property market has seen strong capital growth in recent years. This creates opportunities but also significant CGT liabilities when properties are sold. Proper planning can help minimise these costs through timing strategies, allowable expenses claims, and structural planning.</p>
-
-<p>For example, a Glasgow property purchased for £180,000 and sold for £280,000 creates a £100,000 gain. After the annual CGT allowance (£3,000 in 2025/26), a higher-rate taxpayer faces CGT at 24% on residential property—potentially £23,280 in tax.</p>
+<p>Glasgow's property market has seen strong capital growth in recent years. This creates opportunities but also significant CGT liabilities when properties are sold. Proper planning can help minimise these costs through timing strategies, allowable expenses claims, and structural planning. For example, a Glasgow property purchased for £180,000 and sold for £280,000 creates a £100,000 gain. After the annual CGT allowance (£3,000 in 2025/26), a higher-rate taxpayer faces CGT at 24% on residential property—potentially £23,280 in tax.</p>
 
 <h2>Portfolio Growth Strategy</h2>
 
-<p>Many Glasgow landlords want to expand their portfolios but need guidance on the most tax-efficient approach. This includes analysing whether to purchase in personal names, through companies, or a combination of both.</p>
-
-<p>Cashflow modelling is crucial here. A property that looks profitable on paper might struggle once you factor in Section 24 restrictions, higher-rate tax, and financing costs. Professional analysis helps identify the most viable growth strategies.</p>
+<p>Many Glasgow landlords want to expand their portfolios but need guidance on the most tax-efficient approach. This includes analysing whether to purchase in personal names, through companies, or a combination of both. Cashflow modelling is crucial here. A property that looks profitable on paper might struggle once you factor in Section 24 restrictions, higher-rate tax, and financing costs. Professional analysis helps identify the most viable growth strategies.</p>
 
 <h2>Choosing the Right Property Accountant</h2>
 
-<p>Not all accountants understand property taxation. When selecting a <strong>property accountant Glasgow</strong>, look for specialists who can demonstrate experience with landlords and property investors. They should understand both the tax technical aspects and the practical realities of property investment.</p>
-
-<p>Key questions to ask potential accountants include their experience with Section 24 planning, MTD preparation, and incorporation analysis. They should be able to explain complex concepts in plain English and provide clear recommendations for your specific circumstances.</p>
+<p>Not all accountants understand property taxation. When selecting a <strong>property accountant Glasgow</strong>, look for specialists who can demonstrate experience with landlords and property investors. They should understand both the tax technical aspects and the practical realities of property investment. Key questions to ask potential accountants include their experience with Section 24 planning, MTD preparation, and incorporation analysis. They should be able to explain complex concepts in plain English and provide clear recommendations for your specific circumstances.</p>
 
 <h2>Local Knowledge Matters</h2>
 
-<p>While UK tax rules are consistent, local market knowledge adds significant value. A Glasgow-based property accountant understands the city's rental markets, typical property types, and common investment strategies used by local landlords.</p>
-
-<p>They're also familiar with local property professionals—solicitors, mortgage brokers, and letting agents—which can be valuable when implementing tax planning strategies or expanding your portfolio.</p>
+<p>While UK tax rules are consistent, local market knowledge adds significant value. A Glasgow-based property accountant understands the city's rental markets, typical property types, and common investment strategies used by local landlords. They're also familiar with local property professionals—solicitors, mortgage brokers, and letting agents—which can be valuable when implementing tax planning strategies or expanding your portfolio.</p>
 
 <h2>Getting Started</h2>
 
-<p>Whether you're a new landlord or have been investing for years, regular reviews of your property tax position are essential. Changes in tax rules, personal circumstances, or portfolio size can all affect the optimal structure for your investments.</p>
-
-<p>Many Glasgow property investors benefit from annual planning meetings where they review performance, assess tax positions, and plan for the year ahead. This proactive approach often identifies opportunities to reduce tax bills and improve overall returns.</p>
-
-<p>If you're looking for specialist property accounting services in Glasgow, <a href="/contact">get in touch</a> to discuss your specific requirements. Our team understands the complexities facing UK landlords and can help optimise your property investment tax position.</p>
+<p>Whether you're a new landlord or have been investing for years, regular reviews of your property tax position are essential. Changes in tax rules, personal circumstances, or portfolio size can all affect the optimal structure for your investments. Many Glasgow property investors benefit from annual planning meetings where they review performance, assess tax positions, and plan for the year ahead. This proactive approach often identifies opportunities to reduce tax bills and improve overall returns. If you're looking for specialist property accounting services in Glasgow, <a href="/contact">get in touch</a> to discuss your specific requirements. Our team understands the complexities facing UK landlords and can help optimise your property investment tax position.</p>
 
 <h2>Related Reading</h2>
 

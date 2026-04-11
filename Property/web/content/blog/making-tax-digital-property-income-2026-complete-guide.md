@@ -44,7 +44,6 @@ faqs:
 <h2>Who Must Use MTD for Property Income from 2026?</h2>
 
 <p>MTD ITSA landlord requirements apply to any individual with gross UK property income exceeding £10,000 in a tax year. This includes income from:</p>
-
 <ul>
 <li>Buy-to-let properties</li>
 <li>Commercial property rentals</li>
@@ -58,7 +57,6 @@ faqs:
 <h3>Who Is Exempt from MTD Property Requirements?</h3>
 
 <p>You don't need to use <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD for property income</a> if:</p>
-
 <ul>
 <li>Gross property income is under £10,000 annually</li>
 <li>You only receive property income through a limited company</li>
@@ -68,14 +66,13 @@ faqs:
 
 <p>Joint property owners must consider their combined income when determining if they exceed the £10,000 threshold.</p>
 
-<h2>MTD Property Quarterly Reporting Requirements</h2>
+<h2>MTD Quarterly Reporting and Deadlines</h2>
 
 <p>Under making tax digital property income 2026 rules, landlords must submit quarterly updates showing income and expenses for each three-month period. These replace monthly or annual reporting under the current system.</p>
 
 <h3>Quarterly Reporting Deadlines</h3>
 
 <p>Updates must be submitted by the end of the month following each quarter:</p>
-
 <ul>
 <li><strong>Q1 (6 April - 5 July):</strong> Due by 5 August</li>
 <li><strong>Q2 (6 July - 5 October):</strong> Due by 5 November</li>
@@ -91,14 +88,13 @@ faqs:
 
 <p>The EOPS replaces the property pages of your current Self Assessment return. However, you may still need to file a Self Assessment for other income sources or claims.</p>
 
-<h2>MTD-Compatible Software Requirements</h2>
+<h2>MTD-Compatible Software and Digital Record-Keeping</h2>
 
 <p>Making Tax Digital for property income 2026 requires using HMRC-approved software for all record-keeping and submissions. Spreadsheets and manual records won't meet the digital requirements unless they connect digitally to MTD software.</p>
 
 <h3>Essential Software Features</h3>
 
 <p>Your chosen software must:</p>
-
 <ul>
 <li>Keep digital records of income and expenses</li>
 <li>Submit quarterly updates directly to HMRC</li>
@@ -118,7 +114,7 @@ faqs:
 
 <p>Software costs typically range from £10-50 monthly depending on features and property portfolio size. Many <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountants</a> can recommend suitable packages and help with setup.</p>
 
-<h3>Digital Links and Record-Keeping</h3>
+<h3>Digital Links and Record-Keeping Requirements</h3>
 
 <p>MTD requires "digital links" between your records and HMRC submissions. This means data must flow electronically from source records through to quarterly updates without manual copying or re-entering.</p>
 
@@ -132,27 +128,13 @@ faqs:
 
 <p>Manual typing of figures from paper records or basic spreadsheets won't meet MTD requirements.</p>
 
-<h2>Record-Keeping Under MTD for Property</h2>
-
-<p>Digital record-keeping requirements under making tax digital property income 2026 are more prescriptive than current rules. You must maintain records showing:</p>
-
-<h3>Income Records</h3>
+<p>Digital record-keeping requirements are more prescriptive than current rules. You must maintain records showing:</p>
 <ul>
-<li>Rent received from each property</li>
-<li>Dates of receipt</li>
-<li>Tenant details where relevant</li>
-<li>Other property income (parking, laundry, etc.)</li>
-<li>Deposits released and retained</li>
-</ul>
-
-<h3>Expense Records</h3>
-<ul>
-<li>Property management costs</li>
-<li>Repairs and maintenance</li>
-<li>Insurance premiums</li>
+<li>Rent received from each property, dates of receipt, and tenant details where relevant</li>
+<li>Other property income (parking, laundry, etc.) and deposits released/retained</li>
+<li>Property management costs, repairs and maintenance, and insurance premiums</li>
 <li>Mortgage interest (subject to <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a>)</li>
-<li>Professional fees and accountancy</li>
-<li>Advertising and letting costs</li>
+<li>Professional fees, accountancy, advertising and letting costs</li>
 </ul>
 
 <p>Records must be kept digitally and preserved for at least five years after the submission deadline. Paper receipts can be scanned or photographed, but the digital copy becomes the primary record.</p>
@@ -216,13 +198,15 @@ faqs:
 <ul>
 <li>Software selection and setup</li>
 <li>Initial data migration</li>
-<li>Quarterly submission preparation</li>
+<li>Quarterly update preparation and submission</li>
 <li>Year-end EOPS completion</li>
+<li>Penalty protection and HMRC correspondence</li>
+<li>Strategic planning for portfolio growth</li>
 </ul>
 
-<p>Professional fees for MTD support typically range from £100-300 per quarter depending on portfolio complexity. This often represents good value compared to penalty risks and time investment required for DIY compliance.</p>
+<p>Professional fees for MTD support typically range from £100-300 per quarter depending on portfolio complexity. This often represents good value compared to penalty risks and time investment required for DIY compliance. When selecting <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">professional support</a>, ensure your advisor has specific MTD property experience and uses compatible software systems.</p>
 
-<h2>Impact on Property Investment Decisions</h2>
+<h2>Impact on Property Investment Decisions and Structures</h2>
 
 <p>Making tax digital property income 2026 requirements may influence property investment strategies and structures going forward.</p>
 
@@ -241,7 +225,6 @@ faqs:
 <h2>Looking Beyond 2026: Future MTD Developments</h2>
 
 <p>Making tax digital property income 2026 represents the first phase of broader HMRC digitalization. Future developments may include:</p>
-
 <ul>
 <li>Real-time tax calculations and payments</li>
 <li>Expanded scope to include all self-employed income</li>
@@ -249,20 +232,4 @@ faqs:
 <li>Enhanced data sharing between HMRC systems</li>
 </ul>
 
-<p>Landlords who invest in robust MTD-compliant systems now will be better positioned for future developments and requirements.</p>
-
-<h2>Getting Professional MTD Support</h2>
-
-<p>The complexity of MTD property quarterly reporting makes professional support valuable for most landlords. Key services include:</p>
-
-<ul>
-<li>MTD software selection and implementation</li>
-<li>Quarterly update preparation and submission</li>
-<li>Year-end EOPS completion</li>
-<li>Penalty protection and HMRC correspondence</li>
-<li>Strategic planning for portfolio growth</li>
-</ul>
-
-<p>When selecting <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">professional support</a>, ensure your advisor has specific MTD property experience and uses compatible software systems.</p>
-
-<p>The investment in proper MTD compliance from April 2026 protects against significant penalties while potentially improving your property business management through better record-keeping and reporting.</p>
+<p>Landlords who invest in robust MTD-compliant systems now will be better positioned for future developments and requirements. The investment in proper MTD compliance from April 2026 protects against significant penalties while potentially improving your property business management through better record-keeping and reporting.</p>

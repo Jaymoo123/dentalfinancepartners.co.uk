@@ -37,7 +37,7 @@ faqs:
 
 <p>For example, buying a £200,000 BTL property means paying £10,000 in SDLT surcharge alone, plus the standard SDLT rates. Factor this into your purchase calculations as it significantly affects your initial return on investment.</p>
 
-<h3>Individual vs Limited Company Purchase</h3>
+<h3>Individual vs Limited Company Purchase (Incorporation)</h3>
 
 <p>One of the most important decisions for new landlords is whether to buy in your personal name or through a limited company. This choice affects your tax position permanently and is expensive to change later.</p>
 
@@ -45,9 +45,9 @@ faqs:
 
 <p>Company ownership means profits are subject to corporation tax (19% on profits up to £250,000, then 25%). Companies aren't affected by Section 24, so full mortgage interest remains deductible. However, extracting profits through dividends or salary creates additional tax layers.</p>
 
-<p>Our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">complete guide to BTL limited companies</a> explores this decision in detail, but most first-time landlords benefit from professional advice given the complexity and long-term implications.</p>
+<p>Our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">complete guide to BTL limited companies</a> explores this decision in detail, but most first-time landlords benefit from professional advice given the complexity and long-term implications. Effective tax planning should consider incorporation timing and planning as your portfolio grows.</p>
 
-<h2>Understanding Rental Income Tax</h2>
+<h2>Understanding Rental Income Tax and Section 24</h2>
 
 <p>Once you start receiving rent, you become liable for income tax on your rental profits. This isn't just the rent you collect — it's the rent minus allowable expenses.</p>
 
@@ -118,13 +118,13 @@ faqs:
 
 <h2>Capital Gains Tax Planning</h2>
 
-<p>Even as a first-time landlord, understanding capital gains tax (CGT) is essential. You'll pay CGT when you eventually sell the property, and early planning can significantly reduce this liability.</p>
+<p>Even as a first-time landlord, understanding capital gains tax (CGT) is essential. You'll pay CGT when you eventually sell the property, and early planning can significantly reduce this liability. Effective long-term CGT planning considers strategies like spreading disposals across tax years to utilise multiple annual exempt amounts and potentially stay within lower rate bands.</p>
 
 <h3>CGT Rates on Property</h3>
 
 <p>Property CGT rates are currently 18% for basic rate taxpayers and 24% for higher rate taxpayers. These rates apply to the gain (sale price minus purchase price and allowable costs), not the total sale proceeds.</p>
 
-<p>The annual exempt amount for 2026/27 is £3,000 per person (£6,000 for married couples). This means you pay no CGT on gains up to these thresholds.</p>
+<p>The annual exempt amount for 2026/27 is £3,000 per person (£6,000 for married couples). This means you pay no CGT on gains up to these thresholds. For married couples, transferring properties between spouses before sale can double the available annual exempt amounts and rate bands, potentially saving thousands in CGT.</p>
 
 <h3>Principal Private Residence Relief</h3>
 
@@ -136,9 +136,9 @@ faqs:
 
 <p>Note that lettings relief was abolished in April 2020 for most landlords. Only those who shared occupation of the property with tenants now qualify. Many new landlords mistakenly believe this relief is still available.</p>
 
-<h2>Record-Keeping Requirements</h2>
+<h2>Record-Keeping and Compliance</h2>
 
-<p>Proper record-keeping is essential for new landlords, both for annual tax returns and potential HMRC inquiries. The basic rule is to keep all records for at least 5 years after the filing deadline for each tax year.</p>
+<p>Proper record-keeping is essential for new landlords, both for annual tax returns and potential HMRC inquiries. The basic rule is to keep all records for at least 5 years after the filing deadline for each tax year. Common errors include missing expense claims, incorrectly categorising capital vs revenue expenses, and inadequate documentation leading to disallowed claims in HMRC inquiries.</p>
 
 <h3>Essential Documents to Retain</h3>
 
@@ -179,11 +179,11 @@ faqs:
 
 <p>You must register for Self Assessment by 5 October following the end of your first tax year with rental income. For example, if you start letting in January 2026, you must register by 5 October 2026 for the 2025/26 tax year.</p>
 
-<p>Late registration penalties start at £100, increasing significantly for longer delays. Register as soon as you start receiving rental income to avoid any issues.</p>
+<p>Late registration penalties start at £100, increasing significantly for longer delays. Register as soon as you start receiving rental income to avoid any issues. Compliance failures also include using estimated figures instead of accurate calculations and miscalculating tax liabilities.</p>
 
-<h2>Professional Support for New Landlords</h2>
+<h2>Professional Support and Ongoing Tax Planning</h2>
 
-<p>The complexity of property taxation means most new landlords benefit from professional support, at least initially. The cost of specialist advice is far outweighed by avoiding costly mistakes and maximizing legitimate tax savings.</p>
+<p>The complexity of property taxation means most new landlords benefit from professional support, at least initially. The cost of specialist advice is far outweighed by avoiding costly mistakes and maximizing legitimate tax savings. Property taxation isn't just about annual compliance; effective ongoing tax planning considers timing of purchases and sales, optimal financing structures, pension contributions to reduce marginal tax rates, and spousal transfers for tax efficiency.</p>
 
 <h3>When to Seek Professional Help</h3>
 
@@ -198,19 +198,6 @@ faqs:
 
 <p>A specialist property accountant understands the nuances of landlord taxation and can structure your affairs tax-efficiently from the outset. Our guide on <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what property accountants do</a> explains the services available and typical costs involved.</p>
 
-<h3>Ongoing Tax Planning</h3>
-
-<p>Property taxation isn't just about annual compliance. Effective tax planning considers:</p>
-<ul>
-<li>Timing of property purchases and sales</li>
-<li>Optimal financing structures</li>
-<li>Incorporation timing and planning</li>
-<li>Pension contributions to reduce marginal tax rates</li>
-<li>Spousal transfers for tax efficiency</li>
-</ul>
-
-<p>These strategies require forward planning and regular review as your circumstances change. What works for a single BTL property may be inefficient for a growing portfolio.</p>
-
 <h2>Common Tax Mistakes New Landlords Make</h2>
 
 <p>Learning from others' mistakes can save both money and stress. These are the most frequent errors we see from new landlords:</p>
@@ -223,15 +210,7 @@ faqs:
 <li><strong>Poor timing:</strong> Completing purchases or sales in tax-inefficient periods</li>
 </ul>
 
-<h3>Record-Keeping Errors</h3>
-
-<ul>
-<li><strong>Missing expense claims:</strong> Not claiming all allowable deductions, particularly pre-trading expenses</li>
-<li><strong>Capital vs revenue confusion:</strong> Incorrectly categorizing improvements as repairs (or vice versa)</li>
-<li><strong>Inadequate documentation:</strong> Poor record-keeping leading to disallowed claims in HMRC inquiries</li>
-</ul>
-
-<h3>Compliance Failures</h3>
+<h3>Compliance and Calculation Errors</h3>
 
 <ul>
 <li><strong>Late registration:</strong> Missing Self Assessment registration deadlines</li>
@@ -246,7 +225,6 @@ faqs:
 <h3>Income Tax Rate Progression</h3>
 
 <p>Additional rental income pushes you through higher tax brackets. From April 2027, property income rates become 22%, 42%, and 47% — higher than general income tax rates. Factor this into growth plans and consider strategies like:</p>
-
 <ul>
 <li>Spreading purchases across tax years</li>
 <li>Using both spouses' allowances and rate bands</li>
@@ -254,10 +232,4 @@ faqs:
 <li>Incorporation planning before crossing rate thresholds</li>
 </ul>
 
-<h3>Long-Term CGT Planning</h3>
-
-<p>Multiple property sales in one tax year can trigger substantial CGT liabilities. Consider spreading disposals across tax years to utilize multiple annual exempt amounts and potentially stay within lower rate bands.</p>
-
-<p>For married couples, transferring properties between spouses before sale can double the available annual exempt amounts and rate bands, potentially saving thousands in CGT.</p>
-
-<p>This <strong>first time landlord tax guide</strong> provides the foundation for understanding your tax obligations as a new property investor. The key is getting professional advice early, maintaining excellent records, and planning ahead for both compliance requirements and future growth. With proper preparation, you
+<p>This <strong>first time landlord tax guide</strong> provides the foundation for understanding your tax obligations as a new property investor. The key is getting professional advice early, maintaining excellent records, and planning ahead for both compliance requirements and future growth. With proper preparation, you</p>

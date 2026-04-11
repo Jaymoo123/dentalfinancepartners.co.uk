@@ -51,14 +51,11 @@ faqs:
 <h2>Impact on Holiday Let Landlords</h2>
 
 <h3>Section 24 Now Applies</h3>
-
 <p>This is the single biggest change. Higher-rate taxpayers with significant mortgage finance on holiday lets will see a substantial increase in their effective tax rate. For a 40% taxpayer with £30,000 of mortgage interest, the additional annual tax cost is £6,000 (the difference between full deduction at 40% and the 20% basic-rate credit).</p>
 
 <h3>CGT on Disposal</h3>
-
 <p>Selling a holiday let property now attracts standard residential property CGT rates. The loss of Business Asset Disposal Relief means gains that would have been taxed at 10% are now taxed at 18% (basic rate) or 24% (higher rate). On a £200,000 gain, this represents an additional tax liability of up to £28,000.</p>
 
-<h3>Reduced Expense Claims</h3>
 <h3>Reduced Expense Claims</h3>
 <p>Without capital allowances, holiday let landlords can only claim <a href="/blog/section-24-and-tax-relief/landlord-capital-allowances-tax-relief">Replacement Domestic Items Relief</a> for like-for-like replacement of furnishings. The Annual Investment Allowance no longer applies, removing the ability to claim immediate tax relief on furniture and equipment purchases.</p>
 <h4>Allowable Expenses for Holiday Lets (Post-April 2025)</h4>
@@ -81,19 +78,14 @@ faqs:
 <p>For a comprehensive list, see our guide on <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">Landlord Tax Deductions</a>.</p>
 
 <h2>What Should Former FHL Landlords Do Now?</h2>
-
 <p>The abolition fundamentally changes the economics of holiday letting. Consider the following steps:</p>
-
 <ul>
 <li><strong>Review your tax position:</strong> Calculate your new effective tax rate under Section 24 to understand the real impact on your cash flow.</li>
 <li><strong>Consider incorporation:</strong> Limited companies are not affected by Section 24 and can still deduct mortgage interest in full against rental profits. If you're a higher-rate taxpayer with substantial mortgage finance, <a href="/incorporation">incorporation</a> may now be more attractive than when FHL status provided an exemption.</li>
 <li><strong>Reassess your portfolio:</strong> Some holiday lets may no longer be financially viable once the full tax impact is factored in. Consider whether converting to standard assured shorthold tenancies would improve your after-tax position. For tax implications of different property types, see our guide on <a href="/blog/landlord-tax-essentials/hmo-landlord-accounting-multi-tenant-property-tax">HMO and Multi-Tenant Property Tax</a>.</li>
 <li><strong>Update your record keeping:</strong> With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital</a> requiring quarterly digital reporting from April 2026, ensure your bookkeeping systems are up to date.</li>
 </ul>
-
 <p>The abolition of the FHL regime represents one of the most significant changes to property taxation in recent years. If you operated holiday lets under the old rules, <a href="/services">professional guidance</a> is essential to navigate the transition and minimise your tax liability going forward.</p>
-
-
 
 <h2>Stamp Duty Land Tax (SDLT) on Holiday Lets</h2>
 <p>Stamp Duty Land Tax (SDLT) rules for holiday lets have <strong>not changed</strong> with the abolition of the FHL income and capital gains tax regime. The SDLT treatment remains distinct from standard residential purchases.</p>
@@ -108,7 +100,6 @@ faqs:
 <p>There is no specific SDLT relief or exemption for furnished holiday lets. The surcharge applies even if you do not own any other property, provided the holiday let is not replacing your main residence. For detailed calculations, use our <a href="/blog/section-24-and-tax-relief/stamp-duty-buy-to-let-surcharge">Stamp Duty Buy-to-Let Surcharge guide</a>.</p>
 
 <h2>Related Reading</h2>
-
 <ul>
 <li><a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">Landlord Tax Deductions UK 2026: Complete List</a></li>
 <li><a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">Capital Gains Tax on Property: Complete Guide UK</a></li>

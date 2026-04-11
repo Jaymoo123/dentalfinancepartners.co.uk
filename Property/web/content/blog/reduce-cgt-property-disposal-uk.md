@@ -33,129 +33,53 @@ faqs:
 
 <p>The good news is there are legitimate ways to reduce CGT on property disposal in the UK. Some strategies require forward planning, while others can be applied when you're ready to sell.</p>
 
-<h2>Use Your Annual CGT Allowance</h2>
+<h2>Understanding and Calculating Your CGT Position</h2>
+<p>Before implementing any property disposal tax planning strategy, you need to calculate your potential CGT liability. The gain is typically the difference between your sale price and your original purchase price, plus allowable costs like legal fees and improvement costs.</p>
+<p>Your annual CGT allowance for 2025/26 is £3,000 per person, which can shelter some gains from tax. If you're married or in a civil partnership, you each get the full allowance.</p>
+<p>Example: A landlord bought a property for £200,000 in 2015 and sells it for £350,000. After deducting £10,000 in allowable costs and the £3,000 allowance, the taxable gain is £137,000. As a higher rate taxpayer, the CGT liability would be £32,880.</p>
 
-<p>The annual exempt amount for 2025/26 is £3,000 per person. While this may seem small against property gains, it's worth using every year. If you're married or in a civil partnership, you can each claim the allowance.</p>
+<h2>Utilise Personal Allowances and Spouse Transfers</h2>
+<p>Consider timing disposals across tax years to maximise allowances. For example, if you're selling a portfolio with gains of £200k, disposing of some properties in March and others in April could utilise two annual allowances.</p>
+<p>Transfers between married couples or civil partners are normally CGT-free. This creates opportunities to optimise tax positions before disposal. If one spouse is a basic rate taxpayer and the other pays higher rate tax, transferring the property to the basic rate taxpayer before sale could reduce CGT from 24% to 18%. On a £100k gain, this saves £6,000. You can also transfer portions of properties to utilise both spouses' annual allowances and basic rate bands.</p>
 
-<p>Consider timing disposals across tax years to maximise allowances. For example, if you're selling a portfolio worth £500k with gains of £200k, disposing of some properties in March and others in April could save you an extra £3,000 allowance.</p>
+<h2>Claim Available Reliefs</h2>
+<h3>Principal Private Residence (PPR) Relief</h3>
+<p>If you lived in the property as your main home at any point, you may qualify for <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">Principal Private Residence</a> (PPR) relief. This can eliminate CGT on periods when the property was your main residence, plus certain deemed periods of occupation. The final 9 months of ownership always qualify for PPR relief, regardless of whether you lived there. Property disposal tax planning often involves maximizing PPR relief by considering which property to nominate as your main residence if you own multiple homes.</p>
+<h3>Lettings Relief</h3>
+<p>Lettings relief was significantly restricted from April 2020, but it may still apply in limited circumstances. You can claim up to £40,000 relief if the property was your main residence at some point and you later let it out, provided you still live in the property when you sell it. Most landlords won't qualify for lettings relief now, but it's worth checking if you've lived in any rental properties.</p>
+<h3>Business Asset Disposal Relief</h3>
+<p>This relief (formerly entrepreneurs' relief) offers a 10% CGT rate on qualifying business disposals up to £1 million lifetime limit. Furnished holiday lets that meet the qualifying conditions might be eligible, as can property development or trading activities. Most straightforward buy-to-let doesn't qualify, but specialist advice is worth seeking for complex portfolios.</p>
 
-<h2>Transfer Properties Between Spouses</h2>
-
-<p>Transfers between married couples or civil partners are normally CGT-free. This creates opportunities to optimise tax positions before disposal.</p>
-
-<p>If one spouse is a basic rate taxpayer and the other pays higher rate tax, transferring the property to the basic rate taxpayer before sale could reduce CGT from 24% to 18%. On a £100k gain, this saves £6,000.</p>
-
-<p>You can also transfer portions of properties to utilise both spouses' annual allowances and basic rate bands.</p>
-
-<h2>Claim Lettings Relief (If Still Available)</h2>
-
-<p>Lettings relief was significantly restricted from April 2020, but it may still apply in limited circumstances. You can claim up to £40,000 relief if the property was your main residence at some point and you later let it out, provided you still live in the property when you sell it.</p>
-
-<p>Most landlords won't qualify for lettings relief now, but it's worth checking if you've lived in any rental properties.</p>
-
-<h2>Consider the Timing of Your Disposal</h2>
-
-<p>CGT is charged in the tax year of disposal, not when you receive the money. This means you can time completions to manage your overall tax position.</p>
-
-<p>If you expect lower income in a particular year, disposing of property then could keep you in the basic rate band for CGT purposes. Remember, your total income plus gains determines your CGT rate.</p>
-
-<p>You might also defer completion to a later tax year if you expect the CGT rates to change or if you'll have losses to offset against gains.</p>
-
-<h2>Offset Capital Losses</h2>
-
-<p>Capital losses from other disposals can reduce your property gains. Losses can be carried forward indefinitely until used.</p>
-
-<p>If you have underperforming properties or shares, consider whether disposing of these before your profitable property sale makes sense. However, don't let tax tail wag the commercial dog – only realise losses if it makes business sense.</p>
-
-<h2>Enhance Your Property's Base Cost</h2>
-
-<p>Capital gains are calculated as disposal proceeds minus the original cost and enhancement expenditure. Proper record-keeping can significantly reduce your CGT bill.</p>
-
-<p>You can include:</p>
+<h2>Offset Losses and Enhance Your Base Cost</h2>
+<p>Capital losses from other disposals can reduce your property gains. Losses can be carried forward indefinitely until used. If you have underperforming properties or shares, consider whether disposing of these before your profitable property sale makes sense. However, don't let tax tail wag the commercial dog – only realise losses if it makes business sense.</p>
+<p>Capital gains are calculated as disposal proceeds minus the original cost and enhancement expenditure. Proper record-keeping can significantly reduce your CGT bill. You can include:</p>
 <ul>
 <li>Purchase price and associated costs (legal fees, survey, stamp duty)</li>
 <li>Capital improvements that enhance the property's value</li>
 <li>Professional fees for the disposal (estate agent, legal fees)</li>
 </ul>
-
 <p>Note that routine maintenance and repairs don't count, but genuine improvements do. Converting a loft or adding a conservatory would qualify, but repairing a roof wouldn't.</p>
 
-<h2>Principal Private Residence Relief</h2>
-<p>If you lived in the property as your main home at any point, you may qualify for <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">Principal Private Residence</a> (PPR) relief. This can eliminate CGT on periods when the property was your main residence, plus certain deemed periods of occupation.</p>
+<h2>Strategic Timing of Disposals</h2>
+<p>CGT is charged in the tax year of disposal, not when you receive the money. This means you can time completions to manage your overall tax position. If you expect lower income in a particular year, disposing of property then could keep you in the basic rate band for CGT purposes (18% instead of 24%). Remember, your total income plus gains determines your CGT rate.</p>
+<p>You can spread gains across tax years by using conditional contracts or deferred completion dates. For example, exchanging contracts in March but completing in April moves the disposal to the next tax year. You might also defer completion if you expect the CGT rates to change or if you'll have losses to offset against gains.</p>
 
-<p>The final 9 months of ownership always qualify for PPR relief, regardless of whether you lived there. For properties owned before April 2014, you may also benefit from more generous lettings relief rules that applied to earlier disposals.</p>
+<h2>Consider Company Structures and Incorporation</h2>
+<p>Moving properties into a limited company doesn't avoid CGT – it triggers a disposal at market value. However, <a href="/incorporation">incorporation</a> might make sense for future growth if you're a higher rate taxpayer, as company Corporation Tax rates are lower (19% for profits up to £250k, 25% main rate). Incorporation relief allows you to defer CGT when transferring properties to a company in exchange for shares, but this is complex and has strict conditions.</p>
+<p>Holding properties through a company can provide different disposal options. While companies pay Corporation Tax on gains, there may be opportunities for more tax-efficient disposals through share sales rather than asset sales. The decision between individual ownership and <a href="/incorporation">incorporation</a> should consider not just ongoing tax efficiency but also exit strategies and disposal tax planning from the outset.</p>
 
-<p>Property disposal tax planning often involves maximizing PPR relief by considering which property to nominate as your main residence if you own multiple homes.</p>
+<h2>Deferred Payment and Installment Strategies</h2>
+<p>If you accept payment over several years, you can spread the CGT liability through gift relief or hold-over relief in certain circumstances. This won't reduce the total CGT, but can help with cash flow and might keep you in lower rate bands if the payments push you above the basic rate threshold.</p>
+<p>If you're selling to a buyer who cannot pay the full purchase price immediately, you may be able to elect for installment treatment. This spreads the CGT liability over the years when payments are received, rather than paying it all in the year of disposal. Gift holdover relief might apply if you're transferring property to family members for less than market value. This defers the CGT until the recipient eventually sells the property. These strategies require careful documentation and often involve specific elections to HMRC, so professional advice is essential to ensure compliance.</p>
 
-<h2>Plan Incorporation Carefully</h2>
+<h2>Planning for Portfolio Disposals</h2>
+<p>If you own multiple properties, property disposal tax planning becomes more complex but offers greater opportunities. You might stagger sales across multiple tax years to optimize tax bands and allowances. Consider which properties to sell first based on their individual CGT positions. Properties with lower gains or higher allowable costs might be prioritized to preserve CGT allowances for higher-gain disposals. The order of disposals can also impact your eligibility for certain reliefs or your ability to utilize losses against gains effectively.</p>
 
-<p>Moving properties into a limited company doesn't avoid CGT – it triggers a disposal at market value. However, <a href="/incorporation">incorporation</a> might make sense for future growth if you're a higher rate taxpayer, as company CGT rates are lower at 19%.</p>
-
-<p>Incorporation relief allows you to defer CGT when transferring properties to a company in exchange for shares, but this is complex and has strict conditions.</p>
-
-<h2>Use Deferred Payment Arrangements</h2>
-
-<p>If you accept payment over several years, you can spread the CGT liability through gift relief or hold-over relief in certain circumstances.</p>
-
-<p>This won't reduce the total CGT, but can help with cash flow and might keep you in lower rate bands if the payments push you above the basic rate threshold.</p>
-
-<h2>Consider Business Asset Disposal Relief</h2>
-
-<p>This relief (formerly entrepreneurs' relief) offers a 10% CGT rate on qualifying business disposals up to £1 million lifetime limit.</p>
-
-<p>Furnished holiday lets that meet the qualifying conditions might be eligible, as can property development or trading activities. Most straightforward buy-to-let doesn't qualify, but specialist advice is worth seeking for complex portfolios.</p>
-
-<h2>Professional Planning Considerations</h2>
-<p>Property disposal tax planning is rarely straightforward, particularly for landlords with multiple properties or complex ownership structures. The interaction between different reliefs, timing rules, and changing legislation requires specialist knowledge.</p>
-
-<p>Early planning is crucial – many strategies need to be implemented well before the actual sale. Waiting until you've agreed a sale price often limits your options significantly.</p>
-
-<p>Consider the wider implications of your property disposal tax planning, including income tax on rental profits, inheritance tax planning, and the impact on any other business activities you might have.</p>
-
-<h2>Understanding Your CGT Position</h2>
-<p>Before implementing any property disposal tax planning strategy, you need to calculate your potential CGT liability. The gain is typically the difference between your sale price and your original purchase price, plus allowable costs like legal fees and improvement costs.</p>
-
-<p>Your annual CGT allowance for 2024/25 is £3,000 (reduced from previous years), which can shelter some gains from tax. If you're married, you each get the full allowance, so transfers between spouses before sale can be beneficial.</p>
-
-<p>Example: A landlord bought a property for £200,000 in 2015 and sells it for £350,000 in 2024. After deducting £10,000 in allowable costs and the £3,000 allowance, the taxable gain is £137,000. As a higher rate taxpayer, the CGT liability would be £32,880.</p>
-
-<h2>Timing Strategies for Property Disposal</h2>
-<p>The timing of your property disposal can significantly impact your tax liability. If you're expecting lower income in a future tax year, deferring the sale until then could reduce your CGT rate from 24% to 18%.</p>
-
-<p>You can also spread gains across tax years by using conditional contracts or deferred completion dates. For example, exchanging contracts in March but completing in April moves the disposal to the next tax year.</p>
-
-<p>Another timing consideration is your other capital gains and losses in the year. Crystallizing losses on underperforming investments before realizing property gains can reduce your overall CGT liability.</p>
-
-<h2>Using Company Structures</h2>
-<p>Holding properties through a company can provide different disposal options. While companies pay Corporation Tax on gains (currently 25% for large companies), there may be opportunities for more tax-efficient disposals through share sales rather than asset sales.</p>
-
-<p>The decision between individual ownership and <a href="/incorporation">incorporation</a> should consider not just ongoing tax efficiency but also exit strategies and disposal tax planning from the outset.</p>
-
-<p>Business Asset Disposal Relief (formerly Entrepreneurs' Relief) may apply to qualifying company shares, potentially reducing the effective CGT rate to 10% on gains up to £1 million over your lifetime.</p>
-
-<h2>Installment and Deferred Payment Strategies</h2>
-<p>If you're selling to a buyer who cannot pay the full purchase price immediately, you may be able to elect for installment treatment. This spreads the CGT liability over the years when payments are received, rather than paying it all in the year of disposal.</p>
-
-<p>Gift holdover relief might apply if you're transferring property to family members for less than market value. This defers the CGT until the recipient eventually sells the property.</p>
-
-<p>These strategies require careful documentation and often involve specific elections to HMRC, so professional advice is essential to ensure compliance.</p>
-
-<h2>Portfolio Disposal Planning</h2>
-<p>If you own multiple properties, property disposal tax planning becomes more complex but offers greater opportunities. You might stagger sales across multiple tax years to optimize tax bands and allowances.</p>
-
-<p>Consider which properties to sell first based on their individual CGT positions. Properties with lower gains or higher allowable costs might be prioritized to preserve CGT allowances for higher-gain disposals.</p>
-
-<p>The order of disposals can also impact your eligibility for certain reliefs or your ability to utilize losses against gains effectively.</p>
-
-<h2>Record Keeping and Documentation</h2>
-<p>Effective property disposal tax planning requires meticulous record keeping throughout your ownership period. Keep all purchase documentation, improvement receipts, and professional fees as these can reduce your taxable gain.</p>
-
-<p>Documentation of any periods when the property was your main residence, or when you were unable to occupy it due to work requirements, supports PPR relief claims.</p>
-
-<p>With Making Tax Digital expanding, maintaining digital records becomes increasingly important for audit trails and compliance requirements.</p>
+<h2>Professional Planning and Record Keeping</h2>
+<p>Property disposal tax planning is rarely straightforward, particularly for landlords with multiple properties or complex ownership structures. The interaction between different reliefs, timing rules, and changing legislation requires specialist knowledge. Early planning is crucial – many strategies need to be implemented well before the actual sale. Waiting until you've agreed a sale price often limits your options significantly.</p>
+<p>Effective property disposal tax planning requires meticulous record keeping throughout your ownership period. Keep all purchase documentation, improvement receipts, and professional fees as these can reduce your taxable gain. Documentation of any periods when the property was your main residence, or when you were unable to occupy it due to work requirements, supports PPR relief claims. With Making Tax Digital expanding, maintaining digital records becomes increasingly important for audit trails and compliance requirements.</p>
 
 <h2>Related Reading</h2>
-
 <ul>
 <li><a href="/blog/capital-gains-tax/cgt-property-transfer-spouse">CGT on Property Transfer to Spouse: Is It Exempt?</a></li>
 </ul>

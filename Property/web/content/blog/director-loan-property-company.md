@@ -42,7 +42,7 @@ faqs:
 
 <p>The account shows whether you owe the company money or the company owes you. This balance determines the tax treatment.</p>
 
-<h2>Tax Implications of Landlord Director Loans</h2>
+<h2>Tax Implications of Director Loans</h2>
 
 <h3>When You Owe Money to the Company</h3>
 
@@ -63,10 +63,9 @@ faqs:
 <li>Building up credit through <a href="/blog/incorporation-and-company-structures/property-company-profit-extraction-salary-vs-dividends">salary/dividend</a> payments deferred</li>
 </ul>
 
-<h2>Director Loan Account Property Rules and Compliance</h2>
+<h2>Rules, Compliance and Reporting</h2>
 
 <p>Your property company's accounts must properly record all director loan account transactions. This includes:</p>
-
 <ul>
 <li>Opening balances from previous years</li>
 <li>All cash advances and repayments during the year</li>
@@ -77,30 +76,27 @@ faqs:
 
 <p>Poor record-keeping often leads to problems during HMRC enquiries. Property companies face particular scrutiny around director loan accounts because rental income provides obvious cashflow for loans.</p>
 
-<h3>Annual Reporting Requirements</h3>
+<p>If your director loan account shows you owe more than £10,000 at any point during the year, the company must complete additional CT61 returns within 9 months and 1 day of year-end. The Section 455 tax payment is also due at this point, creating cashflow implications for many property companies.</p>
 
-<p>If your director loan account shows you owe more than £10,000 at any point during the year, the company must complete additional CT61 returns within 9 months and 1 day of year-end.</p>
-
-<p>The Section 455 tax payment is also due at this point, creating cashflow implications for many property companies.</p>
-
-<h2>Strategic Considerations for Property Investors</h2>
+<h2>Strategic Management for Property Investors</h2>
 
 <h3>Managing Loan Balances</h3>
 
-<p>Many property company directors find themselves inadvertently borrowing from the company. Regular dividend declarations can help manage this, even if cash isn't immediately withdrawn.</p>
-
-<p>Consider declaring dividends quarterly rather than annually. This keeps your director loan account balance lower throughout the year and provides more flexibility around personal tax planning.</p>
+<p>Many property company directors find themselves inadvertently borrowing from the company. Regular dividend declarations can help manage this, even if cash isn't immediately withdrawn. Consider declaring dividends quarterly rather than annually. This keeps your director loan account balance lower throughout the year and provides more flexibility around personal tax planning.</p>
 
 <h3>Funding New Property Acquisitions</h3>
 
-<p>When expanding your portfolio, the interaction between personal and company funding becomes critical. If you contribute personal funds to help with deposits, ensure these transactions are properly recorded as director loans to the company.</p>
+<p>When expanding your portfolio, the interaction between personal and company funding becomes critical. If you contribute personal funds to help with deposits, ensure these transactions are properly recorded as director loans to the company. Conversely, if the company lends you money to buy properties personally, this creates potential tax charges and should be carefully managed.</p>
 
-<p>Conversely, if the company lends you money to buy properties personally, this creates potential tax charges and should be carefully managed.</p>
+<h3>Tax-Efficient Extraction and Restructuring</h3>
+
+<p>Building up credit balances with your property company allows flexible timing of income extraction. You can draw funds when your personal tax position is most favorable. This is particularly valuable for investors with fluctuating income or those managing capital gains tax liabilities.</p>
+
+<p>Director loan accounts can also facilitate portfolio restructuring. For example, the company might lend you funds to acquire properties personally, which could later be sold to the company at market value. However, such arrangements require careful documentation and professional advice to ensure they achieve the intended tax outcomes.</p>
 
 <h2>Common Mistakes and How to Avoid Them</h2>
 
 <p>Property company directors often make similar mistakes with director loan accounts:</p>
-
 <ul>
 <li><strong>Mixing personal and business expenses:</strong> Using company cards for personal items creates accidental borrowing</li>
 <li><strong>Informal cash movements:</strong> Not documenting when money moves between personal and company accounts</li>
@@ -109,22 +105,6 @@ faqs:
 </ul>
 
 <p>The most effective approach is treating your property company as a completely separate entity from day one. This discipline prevents most director loan account problems.</p>
-
-<h2>Planning Opportunities</h2>
-
-<p>Despite the complexity, director loan accounts can offer legitimate planning opportunities for property investors.</p>
-
-<h3>Tax-Efficient Extraction</h3>
-
-<p>Building up credit balances with your property company allows flexible timing of income extraction. You can draw funds when your personal tax position is most favorable.</p>
-
-<p>This is particularly valuable for investors with fluctuating income or those managing capital gains tax liabilities.</p>
-
-<h3>Portfolio Restructuring</h3>
-
-<p>Director loan accounts can facilitate portfolio restructuring. For example, the company might lend you funds to acquire properties personally, which could later be sold to the company at market value.</p>
-
-<p>However, such arrangements require careful documentation and professional advice to ensure they achieve the intended tax outcomes.</p>
 
 <h2>When to Seek Professional Help</h2>
 
@@ -141,7 +121,6 @@ faqs:
 <p>Early planning prevents expensive mistakes and ensures your property company structure works efficiently for your long-term goals.</p>
 
 <h2>Related Reading</h2>
-
 <ul>
 <li><a href="/blog/incorporation-and-company-structures/property-company-dividend-tax">Property Company Dividend Tax: How Much Will I Pay?</a></li>
 </ul>

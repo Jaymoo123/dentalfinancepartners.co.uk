@@ -27,7 +27,7 @@ faqs:
 
 <p>This guide covers everything you need to know about capital gains tax on property sales, from basic rates to advanced planning <a href="/blog/capital-gains-tax/reduce-cgt-property-disposal-uk">strategies</a>.</p>
 
-<h2>Calculating Capital Gains Tax on Property</h2>
+<h2>How to Calculate Capital Gains Tax on Property</h2>
 
 <p>The basic calculation follows this structure:</p>
 
@@ -40,51 +40,38 @@ Less: Annual exempt amount<br>
 <h3>Allowable Costs</h3>
 
 <p>You can deduct various costs from your capital gain:</p>
-
 <ul>
 <li><strong>Purchase costs:</strong> Solicitor fees, stamp duty, survey costs</li>
 <li><strong>Improvement costs:</strong> Extensions, conversions, new kitchens/bathrooms</li>
 <li><strong>Sale costs:</strong> Estate agent fees, solicitor fees, marketing costs</li>
 </ul>
-
 <p>Regular maintenance and repairs aren't allowable — only costs that enhance the property's value or were necessary for the sale.</p>
 
-<h3>Principal Private Residence Relief</h3>
+<h3>Principal Private Residence Relief (PPR)</h3>
+<p>If you lived in the property as your main residence at any point, you might qualify for Principal Private Residence (PPR) relief. This exempts part of the gain from tax. The relief covers periods when the property was your main home, plus the final nine months of ownership (regardless of use). Additional periods may qualify if you were absent for specific reasons like work relocation.</p>
 
-<p>If you lived in the property as your main residence at any point, you might qualify for Principal Private Residence (PPR) relief. This exempts part of the gain from tax.</p>
+<h3>Annual Exempt Amount</h3>
+<p>Each individual has an annual exempt amount (annual allowance) that reduces their taxable capital gains. For 2025/26, this is £3,000 per person. Married couples and civil partners can each use their annual exempt amount, potentially sheltering £6,000 of gains from tax. This makes joint ownership of investment properties attractive for CGT planning.</p>
 
-<p>The relief covers periods when the property was your main home, plus the final nine months of ownership (regardless of use). Additional periods may qualify if you were absent for specific reasons like work relocation.</p>
+<h2>Capital Gains Tax Rates for Property</h2>
+<p>For residential property, the capital gains tax rates are 18% for basic-rate taxpayers and 24% for higher-rate and additional-rate taxpayers. The rate you pay depends on your total taxable income and gains in the tax year. Remember to add the taxable gain to your income to determine which tax band it falls into.</p>
 
-<h2>Annual Exempt Amount</h2>
-
-<p>Each individual has an annual exempt amount (annual allowance) that reduces their taxable capital gains. For 2025/26, this is £3,000 per person.</p>
-
-<p>Married couples and civil partners can each use their annual exempt amount, potentially sheltering £6,000 of gains from tax. This makes joint ownership of investment properties attractive for CGT planning.</p>
-
-<h2>CGT Planning Strategies</h2>
+<h2>Strategies to Reduce Your Capital Gains Tax Bill</h2>
 
 <h3>Timing Disposals</h3>
-
 <p>Consider spreading property sales across tax years to use multiple annual exempt amounts. If you have properties worth £150,000 profit, selling three in one year wastes two annual allowances.</p>
 
 <h3>Spouse/Civil Partner Transfers</h3>
-
 <p>Transferring property to a spouse before sale can utilise their lower tax rate or unused annual exempt amount. These transfers are CGT-neutral between spouses.</p>
 
 <h3>Business Asset Disposal Relief</h3>
-
 <p>Furnished holiday lettings that qualify as a business might be eligible for Business Asset Disposal Relief, reducing CGT to 10% on qualifying gains up to £1 million lifetime limit.</p>
 
-<h2>Property Companies and CGT</h2>
+<h2>Holding Property in a Company</h2>
+<p>Holding properties through a company changes the tax position significantly. Companies pay corporation tax on capital gains at normal corporation tax rates (19% for profits up to £250,000 and 25% for profits above this threshold for 2025/26), not CGT rates. However, extracting proceeds from the company creates additional tax charges. Many landlords considering <a href="/incorporation">incorporation</a> focus on income tax savings but overlook these CGT implications.</p>
 
-<p>Holding properties through a company changes the CGT position significantly. Companies pay corporation tax on capital gains at normal corporation tax rates (19-25% for 2025/26), not CGT rates.</p>
-
-<p>However, extracting proceeds from the company creates additional tax charges. Many landlords considering <a href="/incorporation">incorporation</a> focus on income tax savings but overlook these CGT implications.</p>
-
-<h2>Record Keeping Requirements</h2>
-
-<p>HMRC expects comprehensive records for capital gains tax property calculations:</p>
-
+<h2>Reporting, Deadlines and Record Keeping</h2>
+<p>You must report and pay any capital gains tax due on UK residential property within 60 days of completion. Missing this deadline results in an automatic £100 penalty minimum. HMRC expects comprehensive records for capital gains tax property calculations:</p>
 <ul>
 <li>Purchase documents and completion statements</li>
 <li>Receipts for all allowable costs</li>
@@ -92,15 +79,12 @@ Less: Annual exempt amount<br>
 <li>Evidence of any periods of main residence</li>
 <li>Professional valuations if properties were inherited or gifted</li>
 </ul>
-
 <p>Keep these records for at least five years after the 31 January filing deadline following the disposal.</p>
 
-<h2>Common CGT Mistakes</h2>
-
+<h2>Common Capital Gains Tax Mistakes</h2>
 <p>Property investors frequently make these costly errors:</p>
-
 <ul>
-<li><strong>Missing the 30-day deadline:</strong> Automatic £100 penalty minimum</li>
+<li><strong>Missing the reporting deadline:</strong> Automatic £100 penalty minimum</li>
 <li><strong>Not claiming all allowable costs:</strong> Increases taxable gains unnecessarily</li>
 <li><strong>Incorrect PPR relief calculations:</strong> Particularly for former main residences</li>
 <li><strong>Forgetting spouse transfers:</strong> Missing opportunities for tax savings</li>
@@ -108,20 +92,16 @@ Less: Annual exempt amount<br>
 </ul>
 
 <h2>Getting Professional Advice</h2>
-
-<p>Capital gains tax property rules are complex, and the stakes are high given the 28% rate for higher-rate taxpayers. Professional advice becomes particularly valuable for:</p>
-
+<p>Capital gains tax property rules are complex, and the stakes are high given the 24% rate for higher-rate taxpayers. Professional advice becomes particularly valuable for:</p>
 <ul>
 <li>Large property portfolios with multiple disposals</li>
 <li>Properties with mixed-use periods (main residence and rental)</li>
 <li>Inherited properties requiring valuation</li>
 <li>Cross-border situations involving non-UK residents</li>
 </ul>
-
 <p>The cost of professional advice is usually modest compared to potential CGT savings. If you're planning property disposals or need help with CGT calculations, consider speaking to a specialist who understands the intricacies of capital gains tax property rules.</p>
 
 <h2>Related Reading</h2>
-
 <ul>
 <li><a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">Capital Gains Tax on Property Sale UK 2026: Rates and Allowances</a></li>
 <li><a href="/blog/capital-gains-tax/property-capital-gains-tax-calculator">Property Capital Gains Tax Calculator: Complete Guide for UK Landlords</a></li>

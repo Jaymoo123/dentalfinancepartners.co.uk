@@ -27,11 +27,9 @@ faqs:
 
 <p>For many property investors, the decision to operate through a company structure rather than as an individual can significantly reduce their overall tax burden. However, it's not the right choice for everyone.</p>
 
-<h2>What Is a Buy-to-Let Limited Company?</h2>
+<h2>What Is a Buy-to-Let Limited Company and When Does It Make Sense?</h2>
 
-<p>A <strong>buy to let limited company</strong> is a UK limited company set up specifically to own and manage rental properties. The company pays corporation tax on its profits instead of the landlord paying income tax personally.</p>
-
-<p>This structure separates your property business from your personal finances. The company owns the properties, collects the rent, pays the expenses, and you typically draw money out as dividends or salary.</p>
+<p>A <strong>buy to let limited company</strong> is a UK limited company set up specifically to own and manage rental properties. The company pays corporation tax on its profits instead of the landlord paying income tax personally. This structure separates your property business from your personal finances. The company owns the properties, collects the rent, pays the expenses, and you typically draw money out as dividends or salary.</p>
 
 <p>Key characteristics include:</p>
 <ul>
@@ -41,6 +39,16 @@ faqs:
 <li>Profits can be retained within the company</li>
 </ul>
 
+<p>This structure typically works best when:</p>
+<ul>
+<li>You're a higher-rate taxpayer (40% or 45%)</li>
+<li>You have significant mortgage borrowings</li>
+<li>You want to reinvest profits rather than extract all income</li>
+<li>You're building a substantial property portfolio</li>
+<li>You want to involve family members or business partners</li>
+</ul>
+<p>For basic rate taxpayers with low borrowings, the benefits may be minimal once you factor in additional compliance costs and complexity.</p>
+
 <h2>Tax Benefits of Buy-to-Let Companies</h2>
 
 <h3>Section 24 Relief</h3>
@@ -49,7 +57,7 @@ faqs:
 
 <p>For example, a landlord with £20,000 annual mortgage interest who pays 40% income tax would save approximately £4,000 per year by operating through a company structure.</p>
 
-<h3>Corporation Tax Rates</h3>
+<h3>Corporation Tax Rates and Returns</h3>
 
 <p>Corporation tax rates for 2025/26 are:</p>
 <ul>
@@ -57,26 +65,12 @@ faqs:
 <li>Marginal rate between £50,000 and £250,000</li>
 <li>25% on profits above £250,000 (main rate)</li>
 </ul>
-
 <p>This compares favourably to income tax rates of 20%, 40%, or 45% for individual landlords.</p>
+<p>Companies must file CT600 corporation tax returns within 12 months of the accounting year end. From April 2026, quarterly reporting will be required under Making Tax Digital rules.</p>
 
 <h3>Profit Retention</h3>
 
 <p>Companies can retain profits within the business without immediate personal tax consequences. This allows for reinvestment in additional properties or building cash reserves for maintenance and improvements.</p>
-
-<h2>When Does a Buy-to-Let Company Make Sense?</h2>
-
-<p>A <strong>buy to let limited company</strong> typically works best when:</p>
-
-<ul>
-<li>You're a higher-rate taxpayer (40% or 45%)</li>
-<li>You have significant mortgage borrowings</li>
-<li>You want to reinvest profits rather than extract all income</li>
-<li>You're building a substantial property portfolio</li>
-<li>You want to involve family members or business partners</li>
-</ul>
-
-<p>For basic rate taxpayers with low borrowings, the benefits may be minimal once you factor in additional compliance costs and complexity.</p>
 
 <h2>Setting Up Your Property Company</h2>
 
@@ -101,10 +95,6 @@ faqs:
 <p>Given the complexity involved, most landlords benefit from professional advice on structure and ongoing compliance. Our <a href="/incorporation">incorporation services</a> can help you set up the right structure for your circumstances.</p>
 
 <h2>Ongoing Compliance Requirements</h2>
-
-<h3>Corporation Tax Returns</h3>
-
-<p>Companies must file CT600 corporation tax returns within 12 months of the accounting year end. From April 2026, quarterly reporting will be required under Making Tax Digital rules.</p>
 
 <h3>Annual Accounts</h3>
 

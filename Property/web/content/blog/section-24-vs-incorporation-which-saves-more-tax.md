@@ -37,12 +37,9 @@ faqs:
 
 <h2>How Section 24 Impacts Individual Landlords</h2>
 
-<p>Section 24 restricts mortgage interest relief to basic rate (20%) for individual landlords, regardless of your actual tax rate. If you're a higher or additional rate taxpayer, this creates a significant tax penalty.</p>
-
-<p>Here's how it works: instead of deducting full mortgage interest from rental income, you get a 20% tax credit on the interest paid. For higher rate taxpayers, this effectively removes 20% of mortgage interest relief.</p>
+<p>Section 24 restricts mortgage interest relief to basic rate (20%) for individual landlords, regardless of your actual tax rate. If you're a higher or additional rate taxpayer, this creates a significant tax penalty. Previously, you could deduct full mortgage interest from rental income before calculating tax. Now, you pay tax on gross rental income and receive a 20% tax credit. For a higher-rate taxpayer, this creates an effective tax rate of 32% on mortgage interest (40% tax minus 20% credit). Additional-rate taxpayers face 45% tax with only 20% relief.</p>
 
 <p><strong>Example:</strong> A landlord with £50,000 rental income and £30,000 mortgage interest, earning £60,000 from employment:</p>
-
 <ul>
 <li>Pre-Section 24: Taxable rental profit = £20,000, taxed at 40% = £8,000</li>
 <li>Post-Section 24: Full £50,000 rental income taxed at 40% = £20,000, minus £6,000 tax credit = £14,000 net tax</li>
@@ -51,7 +48,7 @@ faqs:
 
 <h2>Company Structure Tax Benefits</h2>
 
-<p>Limited companies aren't subject to Section 24 restrictions. They can still deduct full mortgage interest against rental income before calculating corporation tax.</p>
+<p>Limited companies aren't subject to Section 24 restrictions. They can still deduct full mortgage interest against rental income before calculating corporation tax. This restores full mortgage interest relief.</p>
 
 <p>Corporation tax rates for 2025/26 are:</p>
 <ul>
@@ -62,133 +59,6 @@ faqs:
 
 <p>Using the same example above, a company would pay corporation tax on £20,000 profit (£50,000 income minus £30,000 interest) at 19% = £3,800. That's £10,200 less tax than the individual landlord under Section 24.</p>
 
-<h2>Real-World Comparison: Individual vs Company</h2>
-
-<p>Let's compare three common scenarios using current tax rates:</p>
-
-<h3>Scenario 1: Small Portfolio (£30,000 rental income)</h3>
-<p><strong>Individual landlord:</strong></p>
-<ul>
-<li>Rental income: £30,000</li>
-<li>Mortgage interest: £18,000</li>
-<li>Other expenses: £3,000</li>
-<li>Tax under Section 24: £4,200</li>
-</ul>
-
-<p><strong>Company structure:</strong></p>
-<ul>
-<li>Corporation tax on £9,000 profit: £1,710</li>
-<li>Dividend tax on extraction: £675 (assuming basic rate)</li>
-<li>Total tax: £2,385</li>
-</ul>
-<p><strong>Annual saving: £1,815</strong></p>
-
-<h3>Scenario 2: Medium Portfolio (£75,000 rental income)</h3>
-<p><strong>Individual landlord (higher rate taxpayer):</strong></p>
-<ul>
-<li>Rental income: £75,000</li>
-<li>Mortgage interest: £45,000</li>
-<li>Other expenses: £8,000</li>
-<li>Tax under Section 24: £21,000</li>
-</ul>
-
-<p><strong>Company structure:</strong></p>
-<ul>
-<li>Corporation tax on £22,000 profit: £4,180</li>
-<li>Dividend tax on extraction: £1,710</li>
-<li>Total tax: £5,890</li>
-</ul>
-<p><strong>Annual saving: £15,110</strong></p>
-
-<h3>Scenario 3: Large Portfolio (£150,000 rental income)</h3>
-<p><strong>Individual landlord (additional rate taxpayer):</strong></p>
-<ul>
-<li>Rental income: £150,000</li>
-<li>Mortgage interest: £90,000</li>
-<li>Other expenses: £15,000</li>
-<li>Tax under Section 24: £49,500</li>
-</ul>
-
-<p><strong>Company structure:</strong></p>
-<ul>
-<li>Corporation tax on £45,000 profit: £8,550</li>
-<li>Dividend tax on extraction: £3,600</li>
-<li>Total tax: £12,150</li>
-</ul>
-<p><strong>Annual saving: £37,350</strong></p>
-
-<h2>When Incorporation Makes Most Sense</h2>
-
-<p>The tax benefits of incorporation are most pronounced when:</p>
-
-<ul>
-<li>You're a higher or additional rate taxpayer</li>
-<li>Your mortgage interest represents a significant portion of rental income</li>
-<li>You don't need to extract all profits immediately</li>
-<li>Your total rental income exceeds £50,000 annually</li>
-</ul>
-
-<p>The higher your personal tax rate and the more leveraged your portfolio, the greater the potential savings from <a href="/incorporation">incorporation</a>.</p>
-
-<h2>Hidden Costs and Considerations</h2>
-
-<p>While the tax savings can be substantial, incorporation isn't free:</p>
-
-<p><strong>Ongoing costs:</strong></p>
-<ul>
-<li>Annual accounts preparation: £500-£2,000</li>
-<li>Corporation tax returns: £300-£800</li>
-<li>Companies House filing fees: £13-£40</li>
-<li>Additional administrative burden</li>
-</ul>
-
-<p><strong>Transfer considerations:</strong></p>
-<ul>
-<li>Stamp Duty Land Tax on property transfers</li>
-<li>Potential Capital Gains Tax on incorporation</li>
-<li>Legal and surveyor fees</li>
-<li>Mortgage arrangement fees for refinancing</li>
-</ul>
-
-<p>These one-off costs can be significant but are often justified by the annual tax savings, especially for larger portfolios.</p>
-
-<h2>Capital Gains Tax Implications</h2>
-
-<p>Companies pay corporation tax on capital gains at 19-25%, while individuals face CGT rates of 18% or 24% (2025/26 rates). For property investors focused on capital growth, this difference matters.</p>
-
-<p>However, companies can more easily reinvest gains without immediate tax consequences, potentially accelerating portfolio growth.</p>
-
-<h2>Timing Your Decision</h2>
-
-<p>With Making Tax Digital for Income Tax Property starting in April 2026, individual landlords will face increased compliance burdens. This adds another factor favoring incorporation for larger portfolios.</p>
-
-<p>If you're considering incorporation, acting before significant portfolio growth can minimize transfer costs and maximize long-term savings.</p>
-
-<h2>Getting Professional Advice</h2>
-
-<p>These calculations show the potential benefits, but your specific circumstances matter enormously. Factors like existing capital gains, mortgage arrangements, and future plans all influence the optimal structure.</p>
-
-<p>Our <a href="/calculators">calculators</a> can provide initial estimates, but complex portfolios need detailed analysis. The potential savings often justify the cost of professional advice to get the structure right.</p>
-
-<p>For most higher rate taxpayers with significant mortgage interest, incorporation delivers substantial tax savings. The question isn't whether it saves tax—it's whether the savings justify the additional complexity and costs.</p>
-
-<h2>Understanding Section 24's Impact</h2>
-<p>Section 24 restricts mortgage interest relief to 20% for individual landlords. Previously, you could deduct full mortgage interest from rental income before calculating tax. Now, you pay tax on gross rental income and receive a 20% tax credit.</p>
-
-<p>For a higher-rate taxpayer, this creates an effective tax rate of 32% on mortgage interest (40% tax minus 20% credit). Additional-rate taxpayers face 45% tax with only 20% relief.</p>
-
-<p><strong>Example:</strong> A landlord with £50,000 rental income and £30,000 mortgage interest:</p>
-<ul>
-<li>Pre-Section 24: Tax on £20,000 profit at 40% = £8,000</li>
-<li>Post-Section 24: Tax on £50,000 at 40% minus £6,000 credit = £14,000</li>
-<li>Additional tax burden: £6,000 annually</li>
-</ul>
-
-<h2>How Incorporation Changes the Game</h2>
-<p>Property companies aren't subject to Section 24. They can still deduct full mortgage interest against rental income, paying corporation tax only on actual profits.</p>
-
-<p>However, incorporation isn't free. You'll face costs for setup, ongoing compliance, and potential capital gains tax on transfer. There's also corporation tax at 19-25% plus additional tax when extracting profits.</p>
-
 <p><strong>Key incorporation benefits:</strong></p>
 <ul>
 <li>Full mortgage interest relief restored</li>
@@ -197,65 +67,136 @@ faqs:
 <li>Easier succession planning</li>
 </ul>
 
-<h2>Real-World Comparison: £100,000 Portfolio</h2>
-<p>Let's compare a landlord with £100,000 annual rental income, £60,000 mortgage interest, and £10,000 other expenses. Assume they're a 40% taxpayer with £50,000 other income.</p>
+<h2>Real-World Tax Comparison: Individual vs Company</h2>
 
-<h3>Individual Ownership (Section 24)</h3>
-<p>Taxable rental income: £100,000 - £10,000 = £90,000<br>
+<p>Let's compare common scenarios using current tax rates. The following examples illustrate the potential annual savings from incorporation, factoring in corporation tax and dividend tax on profit extraction.</p>
+
+<h3>Small Portfolio (£30,000 rental income)</h3>
+<p><strong>Individual landlord:</strong></p>
+<ul>
+<li>Rental income: £30,000</li>
+<li>Mortgage interest: £18,000</li>
+<li>Other expenses: £3,000</li>
+<li>Tax under Section 24: £4,200</li>
+</ul>
+<p><strong>Company structure:</strong></p>
+<ul>
+<li>Corporation tax on £9,000 profit: £1,710</li>
+<li>Dividend tax on extraction: £675 (assuming basic rate)</li>
+<li>Total tax: £2,385</li>
+</ul>
+<p><strong>Annual saving: £1,815</strong></p>
+
+<h3>Medium Portfolio (£75,000 rental income)</h3>
+<p><strong>Individual landlord (higher rate taxpayer):</strong></p>
+<ul>
+<li>Rental income: £75,000</li>
+<li>Mortgage interest: £45,000</li>
+<li>Other expenses: £8,000</li>
+<li>Tax under Section 24: £21,000</li>
+</ul>
+<p><strong>Company structure:</strong></p>
+<ul>
+<li>Corporation tax on £22,000 profit: £4,180</li>
+<li>Dividend tax on extraction: £1,710</li>
+<li>Total tax: £5,890</li>
+</ul>
+<p><strong>Annual saving: £15,110</strong></p>
+
+<h3>Large Portfolio (£150,000 rental income)</h3>
+<p><strong>Individual landlord (additional rate taxpayer):</strong></p>
+<ul>
+<li>Rental income: £150,000</li>
+<li>Mortgage interest: £90,000</li>
+<li>Other expenses: £15,000</li>
+<li>Tax under Section 24: £49,500</li>
+</ul>
+<p><strong>Company structure:</strong></p>
+<ul>
+<li>Corporation tax on £45,000 profit: £8,550</li>
+<li>Dividend tax on extraction: £3,600</li>
+<li>Total tax: £12,150</li>
+</ul>
+<p><strong>Annual saving: £37,350</strong></p>
+
+<h3>£100,000 Portfolio Example</h3>
+<p>Let's compare a landlord with £100,000 annual rental income, £60,000 mortgage interest, and £10,000 other expenses. Assume they're a 40% taxpayer with £50,000 other income.</p>
+<p><strong>Individual Ownership (Section 24):</strong><br>
+Taxable rental income: £100,000 - £10,000 = £90,000<br>
 Tax at 40%: £36,000<br>
 Less 20% mortgage interest credit: £12,000<br>
 Net tax: £24,000<br>
 After-tax profit: £30,000 - £24,000 = £6,000</p>
-
-<h3>Company Ownership</h3>
-<p>Company profit: £100,000 - £60,000 - £10,000 = £30,000<br>
+<p><strong>Company Ownership:</strong><br>
+Company profit: £100,000 - £60,000 - £10,000 = £30,000<br>
 Corporation tax at 25%: £7,500<br>
-Available for distribution: £22,500</p>
-
-<p>If extracted as dividend:<br>
+Available for distribution: £22,500<br>
+If extracted as dividend:<br>
 Dividend tax at 33.75%: £7,594<br>
 Net after-tax: £14,906</p>
-
 <p><strong>Incorporation advantage: £8,906 annually (£14,906 vs £6,000)</strong></p>
 
-<h2>When Section 24 Might Be Preferable</h2>
-<p>Section 24 vs incorporation isn't always clear-cut. Individual ownership might be better when:</p>
+<h2>When Incorporation Makes Most Sense vs. When Section 24 Might Be Preferable</h2>
 
+<p>The tax benefits of incorporation are most pronounced when:</p>
+<ul>
+<li>You're a higher or additional rate taxpayer</li>
+<li>Your mortgage interest represents a significant portion of rental income</li>
+<li>You don't need to extract all profits immediately</li>
+<li>Your total rental income exceeds £50,000 annually</li>
+</ul>
+<p>The higher your personal tax rate and the more leveraged your portfolio, the greater the potential savings from <a href="/incorporation">incorporation</a>. The tipping point often occurs around £75,000-£100,000 annual rental income for higher-rate taxpayers with significant mortgage interest.</p>
+
+<p>Conversely, individual ownership might be better when:</p>
 <ul>
 <li>Low mortgage levels reduce Section 24's impact</li>
 <li>You're a basic-rate taxpayer with no other income</li>
 <li>Portfolio value is modest (under £500,000)</li>
 <li>You plan to sell properties soon (avoiding CGT on incorporation)</li>
 </ul>
+<p>A landlord with £30,000 rental income, £10,000 mortgage interest, and basic-rate tax status faces minimal Section 24 impact. In such cases, incorporation costs might outweigh benefits.</p>
 
-<p>A landlord with £30,000 rental income, £10,000 mortgage interest, and basic-rate tax status faces minimal Section 24 impact. Incorporation costs might outweigh benefits.</p>
+<h2>Hidden Costs and Practical Considerations of Incorporation</h2>
 
-<h2>Incorporation Considerations Beyond Tax</h2>
-<p>Tax savings drive most incorporation decisions, but consider these factors:</p>
+<p>While the tax savings can be substantial, incorporation isn't free. Tax savings drive most decisions, but consider these factors:</p>
 
-<p><strong>Setup and ongoing costs:</strong> Legal fees, accountancy, and annual compliance typically cost £3,000-£5,000 initially, plus £2,000-£3,000 annually.</p>
-
-<p><strong>Capital gains on transfer:</strong> Moving properties into a company usually triggers CGT. Holdover relief might apply, but specialist advice is essential.</p>
-
-<p><strong>Mortgage restrictions:</strong> Buy-to-let mortgages for companies often have higher rates and smaller loan-to-value ratios.</p>
-
-<p><strong>Personal guarantees:</strong> Lenders typically require directors to guarantee company mortgages, reducing limited liability benefits.</p>
-
-<h2>Making the Right Choice</h2>
-<p>Section 24 vs incorporation depends on your specific circumstances. Generally, incorporation becomes more attractive as:</p>
-
+<p><strong>Setup and Ongoing Costs:</strong></p>
 <ul>
-<li>Rental income increases</li>
-<li>Mortgage interest levels rise</li>
-<li>Your marginal tax rate increases</li>
-<li>Portfolio size grows</li>
+<li>Legal fees, accountancy, and annual compliance typically cost £3,000-£5,000 initially, plus £2,000-£3,000 annually.</li>
+<li>Annual accounts preparation: £500-£2,000</li>
+<li>Corporation tax returns: £300-£800</li>
+<li>Companies House filing fees: £13-£40</li>
+<li>Additional administrative burden</li>
 </ul>
 
-<p>The tipping point often occurs around £75,000-£100,000 annual rental income for higher-rate taxpayers with significant mortgage interest.</p>
+<p><strong>Transfer Considerations:</strong></p>
+<ul>
+<li>Stamp Duty Land Tax on property transfers</li>
+<li>Potential Capital Gains Tax on incorporation (Holdover relief might apply, but specialist advice is essential)</li>
+<li>Legal and surveyor fees</li>
+<li>Mortgage arrangement fees for refinancing</li>
+</ul>
 
-<p>However, tax isn't everything. Consider your long-term plans, risk tolerance, and administrative preferences. Some landlords prefer the simplicity of individual ownership despite higher tax costs.</p>
+<p><strong>Mortgage and Liability:</strong></p>
+<ul>
+<li>Buy-to-let mortgages for companies often have higher rates and smaller loan-to-value ratios.</li>
+<li>Lenders typically require directors to guarantee company mortgages, reducing limited liability benefits.</li>
+</ul>
+<p>These one-off costs can be significant but are often justified by the annual tax savings, especially for larger portfolios.</p>
 
-<p>Before making any decision, model your specific situation using our <a href="/calculators">property tax calculators</a> or speak to a specialist who can analyze your complete financial picture.</p>
+<h2>Capital Gains Tax Implications</h2>
+
+<p>Companies pay corporation tax on capital gains at 19-25%, while individuals face CGT rates of 18% (basic rate) or 24% (higher rate) for residential property (2025/26 rates). For property investors focused on capital growth, this difference matters. However, companies can more easily reinvest gains without immediate tax consequences, potentially accelerating portfolio growth.</p>
+
+<h2>Making the Right Choice and Getting Professional Advice</h2>
+
+<p>These calculations show the potential benefits, but your specific circumstances matter enormously. Factors like existing capital gains, mortgage arrangements, and future plans all influence the optimal structure. Tax isn't everything. Consider your long-term plans, risk tolerance, and administrative preferences. Some landlords prefer the simplicity of individual ownership despite higher tax costs.</p>
+
+<p>With Making Tax Digital for Income Tax Property starting in April 2026, individual landlords will face increased compliance burdens. This adds another factor favoring incorporation for larger portfolios. If you're considering incorporation, acting before significant portfolio growth can minimize transfer costs and maximize long-term savings.</p>
+
+<p>Our <a href="/calculators">calculators</a> can provide initial estimates, but complex portfolios need detailed analysis. The potential savings often justify the cost of professional advice to get the structure right. Before making any decision, model your specific situation or speak to a specialist who can analyze your complete financial picture.</p>
+
+<p>For most higher rate taxpayers with significant mortgage interest, incorporation delivers substantial tax savings. The question isn't whether it saves tax—it's whether the savings justify the additional complexity and costs.</p>
 
 <h2>Related Reading</h2>
 

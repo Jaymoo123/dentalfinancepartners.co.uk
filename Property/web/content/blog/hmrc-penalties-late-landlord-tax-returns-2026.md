@@ -58,23 +58,13 @@ faqs:
 
 <p>The daily penalties continue for up to 90 days, adding a maximum of £900 to your bill. Combined with the initial £100 penalty, you'll face £1,000 in penalties just for being three to six months late.</p>
 
-<h3>Six-Month Penalty</h3>
-<p>If your return is still outstanding six months after the deadline (1 August 2027 for 2025/26 returns), HMRC imposes an additional penalty equal to the greater of:</p>
-<ul>
-<li>5% of the tax due, or</li>
-<li>£300</li>
-</ul>
-
-<p>For example, if you owe £2,000 in tax, the penalty would be £100 (5% of £2,000). But if you owe £1,000 or nothing at all, the penalty is still £300.</p>
-
-<h3>Twelve-Month Penalty</h3>
+<h3>Six and Twelve-Month Penalties</h3>
+<p>If your return is still outstanding six months after the deadline (1 August 2027 for 2025/26 returns), HMRC imposes an additional penalty equal to the greater of 5% of the tax due or £300.</p>
 <p>Returns that remain unfiled 12 months after the deadline face another penalty. HMRC can choose between:</p>
-
 <ul>
 <li><strong>Standard penalty:</strong> The greater of 5% of tax due or £300</li>
 <li><strong>Tax-geared penalty:</strong> The greater of 5% of tax due or £300, plus up to 70% of the tax due if HMRC believes the delay was deliberate</li>
 </ul>
-
 <p>HMRC typically applies the higher penalty rate if they suspect deliberate non-compliance or if you've repeatedly filed late in previous years.</p>
 
 <h2>Total Penalty Calculation Example</h2>
