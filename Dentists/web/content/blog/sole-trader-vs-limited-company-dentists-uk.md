@@ -21,9 +21,9 @@ faqs:
     answer: "Generally yes, but protection has limits. Directors can face personal liability in certain circumstances, and you'll likely need personal guarantees for major loans or leases. Professional indemnity insurance remains essential regardless of your business structure."
 ---
 
-<p>Every dentist faces a crucial decision early in their career: should you operate as a sole trader or set up a limited company? The choice affects everything from your tax bill to your administrative workload, and getting it wrong can be costly.</p>
+<p>One of the most common questions we hear is: should I be a <strong>dentist self employed or limited company</strong>? The choice affects everything from your tax bill to your administrative workload, and getting it wrong can be costly.</p>
 
-<p>This isn't just an academic question. The difference between these structures can mean thousands of pounds in tax savings or additional costs each year. More importantly, the wrong choice can limit your options when you want to expand, bring in partners, or sell your practice.</p>
+<p>This isn't just an academic question. The difference between these structures can mean thousands of pounds in tax savings or additional costs each year. More importantly, the wrong structure can limit your options when you want to expand, bring in partners, or sell your practice.</p>
 
 <h2>Understanding the Basics</h2>
 

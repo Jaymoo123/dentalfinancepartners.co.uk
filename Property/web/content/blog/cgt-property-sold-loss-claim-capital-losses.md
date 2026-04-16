@@ -133,7 +133,7 @@ faqs:
 <ul>
 <li>Balance loss-making and profitable disposals across tax years</li>
 <li>Consider selling other loss-making assets in the same year</li>
-<li>Factor capital losses into overall <a href="/blog/property-investment-tax-uk-complete-guide-2026">property investment tax</a> planning</li>
+<li>Factor capital losses into overall <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">property investment tax</a> planning</li>
 </ul>
 
 <h2>Professional Advice and Future Outlook</h2>

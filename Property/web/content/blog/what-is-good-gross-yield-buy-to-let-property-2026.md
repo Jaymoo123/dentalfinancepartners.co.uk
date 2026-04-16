@@ -123,4 +123,4 @@ faqs:
 
 <p>Factor in the total return potential, including both rental income and capital growth. A balanced approach typically involves targeting gross yields that provide adequate cash flow while maintaining capital preservation and growth prospects.</p>
 
-<p>For investors building substantial portfolios, understanding <a href="/blog/property-investment-tax-uk-complete-guide-2026">comprehensive property investment tax implications</a> becomes crucial for optimizing overall returns.</p>
+<p>For investors building substantial portfolios, understanding <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">comprehensive property investment tax implications</a> becomes crucial for optimizing overall returns.</p>

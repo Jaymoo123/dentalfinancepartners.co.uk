@@ -85,6 +85,8 @@ faqs:
 
 <h2>Related Reading</h2>
 <ul>
+<li><a href="/locations/manchester">Property Tax Partners Manchester</a> — our dedicated Manchester service page</li>
+<li><a href="/services">Our specialist property accounting services</a></li>
 <li><a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">How to Choose a Property Accountant: Complete Guide for UK Landlords</a></li>
 <li><a href="/blog/property-accountant-services/property-accountant-near-me">Property Accountant Near Me: Finding the Right UK Property Tax Specialist</a></li>
 </ul>

@@ -118,6 +118,7 @@ faqs:
 
 <h2>Related Reading</h2>
 <ul>
+<li><a href="/locations/london">Property Tax Partners London</a> — our dedicated London service page</li>
 <li><a href="/blog/property-accountant-services/how-to-choose-a-property-accountant-london">Finding the Best Property Accountant in London: A Landlord's Guide</a></li>
 <li><a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">How to Choose a Property Accountant: Complete Guide for UK Landlords</a></li>
 </ul>

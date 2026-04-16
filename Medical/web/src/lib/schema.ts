@@ -53,6 +53,10 @@ export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
       "@type": "ImageObject" as const,
       url: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
     },
+    areaServed: {
+      "@type": "Country" as const,
+      name: "United Kingdom",
+    },
   };
 
   const article = {

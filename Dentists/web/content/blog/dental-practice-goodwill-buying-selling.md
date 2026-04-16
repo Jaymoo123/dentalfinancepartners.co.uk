@@ -21,16 +21,16 @@ faqs:
     answer: "Goodwill sales typically qualify for Business Asset Disposal Relief, reducing Capital Gains Tax to 10% on qualifying gains up to £1 million over your career. You must meet specific criteria including two years of ownership and minimum shareholding requirements."
 ---
 
-<p>When buying or selling a dental practice, goodwill often represents the largest component of the transaction value. Yet many dentists struggle to understand what it actually means and how it affects their deal.</p>
+<p>When buying or selling a dental practice, goodwill often represents the largest component of the transaction value. Understanding <strong>dental practice goodwill values</strong> — what drives them, how they're calculated, and how they're taxed — is essential for any dentist entering a transaction.</p>
 
-<p>Goodwill is the premium paid above the value of tangible assets — it represents everything that makes your practice valuable beyond the chairs, equipment, and premises.</p>
+<p>Goodwill is the premium paid above the value of tangible assets. It represents everything that makes your practice valuable beyond the chairs, equipment, and premises: the patient list, the reputation, the location, and the staff.</p>
 
-<h2>How Is Goodwill Valued in Dental Practices?</h2>
+<h2>How Are Dental Practice Goodwill Values Calculated?</h2>
 
 <p>Goodwill valuation typically uses one of three approaches:</p>
 
 <h3>Earnings-Based Method</h3>
-<p>The most common approach multiplies annual profit by a factor (typically 0.7 to 1.2 times for UK dental practices). A practice generating £200k annual profit might have goodwill valued at £140k to £240k.</p>
+<p>The most common approach multiplies annual profit by a factor (typically 0.7 to 1.2 times for UK dental practices). A practice generating £200k annual profit might have goodwill valued at £140k to £240k. Current <strong>dental practice goodwill values</strong> vary significantly by region and NHS/private mix.</p>
 
 <h3>Revenue-Based Method</h3>
 <p>Some valuers use a percentage of annual turnover, often 60-80% for established practices. However, this method is less reliable as it ignores profitability.</p>
@@ -40,9 +40,9 @@ faqs:
 
 <p>The chosen multiple depends on factors like patient retention rates, NHS/private mix, location, and growth potential. <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">Financial due diligence</a> helps determine which factors apply to your situation.</p>
 
-<h2>Factors That Affect Goodwill Value</h2>
+<h2>Factors That Affect Dental Practice Goodwill Values</h2>
 
-<p>Several elements influence how much goodwill your practice can command:</p>
+<p>Several elements influence how much goodwill your practice can command and where it sits within the typical range:</p>
 
 <ul>
 <li><strong>Patient retention:</strong> Stable patient lists with low turnover support higher goodwill values</li>
@@ -95,6 +95,6 @@ faqs:
 
 <p>Goodwill valuation and its tax treatment require specialist knowledge. The stakes are high — incorrect advice can cost tens of thousands in unnecessary tax or unrealistic deal structures.</p>
 
-<p>Work with advisors who understand dental practice transactions specifically. General business valuers may miss industry-specific factors that affect goodwill in dental practices.</p>
+<p>Work with advisors who understand dental practice transactions specifically. General business valuers may miss industry-specific factors that affect dental practice goodwill values — particularly around NHS contract certainty, patient list quality, and associate retention.</p>
 
-<p>Whether buying or selling, proper advice on goodwill valuation and tax planning should be your first step in any practice transaction.</p>
+<p>Whether buying or selling, proper advice on goodwill valuation and tax planning should be your first step in any practice transaction. If you need help assessing or negotiating goodwill, <a href="/contact">get in touch</a> for specialist dental accounting advice.</p>

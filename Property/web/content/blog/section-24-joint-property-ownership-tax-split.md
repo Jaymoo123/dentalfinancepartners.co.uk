@@ -52,7 +52,7 @@ faqs:
 <p>You must make the Form 17 election jointly, and it applies to all jointly owned property, not just selected properties. The election remains in force until you revoke it. The election must be made by the 31 January following the end of the first tax year you want it to apply to. For the 2025/26 tax year, the deadline is 31 January 2027.</p>
 
 <h2>Section 24 Planning Strategies for Joint Owners</h2>
-<p>Understanding how Section 24 affects joint ownership opens up several planning opportunities, particularly as separate <a href="/blog/property-investment-tax-uk-complete-guide-2026">property income tax rates</a> are introduced from April 2027.</p>
+<p>Understanding how Section 24 affects joint ownership opens up several planning opportunities, particularly as separate <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">property income tax rates</a> are introduced from April 2027.</p>
 <h3>Income Shifting Between Spouses</h3>
 <p>For married couples, shifting rental income to the lower-earning spouse can reduce the overall Section 24 impact. This works best when one spouse has unused personal allowance or basic rate band capacity. Remember that from April 2027, property income will be taxed at 22% (basic rate) and 42% (higher rate), making income shifting even more valuable for couples where one spouse pays higher rates.</p>
 <h3>Timing Property Purchases and Mortgage Restructuring</h3>

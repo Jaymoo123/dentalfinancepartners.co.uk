@@ -23,12 +23,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cityName = slug.charAt(0).toUpperCase() + slug.slice(1);
   const canonical = `${siteConfig.url}/locations/${loc.slug}`;
   return {
-    title: `Dental Accountant ${cityName} | ${siteConfig.name}`,
-    description: `Specialist dental accountant in ${cityName} for associates, practice owners & groups. NHS contracts, tax planning, VAT & acquisitions. Book a free consultation.`,
-    alternates: { canonical },
+    title: `Dental Accountant ${cityName} | Accountants for Dentists`,
+    description: `Specialist dental accountants in ${cityName} for associates, practice owners and groups. NHS contract accounting, tax planning, VAT and acquisitions. Free consultation.`,
+    alternates: {
+      canonical,
+      languages: {
+        "en-GB": canonical,
+        "x-default": canonical,
+      },
+    },
     openGraph: {
-      title: `Dental Accountant ${cityName} | ${siteConfig.name}`,
-      description: `Specialist dental accountant in ${cityName} for associates, practice owners & groups. NHS contracts, tax planning, VAT & acquisitions.`,
+      title: `Dental Accountant ${cityName} | Accountants for Dentists`,
+      description: `Specialist dental accountants in ${cityName}. NHS contract accounting, tax planning, VAT and practice acquisitions.`,
       url: canonical,
       type: "website",
       images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
@@ -36,7 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: "summary_large_image",
       title: `Dental Accountant ${cityName}`,
-      description: `Specialist dental accountant in ${cityName} for associates, practice owners & groups.`,
+      description: `Specialist dental accountants in ${cityName}. NHS contracts, tax planning, VAT and acquisitions.`,
       images: [siteConfig.publisherLogoUrl],
     },
   };
@@ -127,7 +133,7 @@ export default async function LocationPage({ params }: Props) {
         ]}
       />
       <h1 className="font-serif text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
-        Dental accountant {cityName}
+        Specialist dental accountants in {cityName}
       </h1>
       <p className="mt-6 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
         {content.intro}

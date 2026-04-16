@@ -16,7 +16,7 @@ faqs:
   - question: "What corporation tax rate applies to private dental practices?"
     answer: "Private dental practices pay corporation tax at 19% on profits up to £50,000, 25% on profits over £250,000, with marginal relief applying to profits between these thresholds. Most practices with profits around £150,000 pay an effective rate of approximately 20.8%."
   - question: "Do private dental practices need to register for VAT?"
-    answer: "VAT registration is mandatory when taxable turnover exceeds £85,000 in any 12-month period. However, private dental treatment is VAT-exempt, meaning you cannot charge VAT to patients or reclaim VAT on related expenses, though partial exemption rules may apply."
+    answer: "VAT registration is mandatory when taxable turnover exceeds £90,000 in any 12-month period. However, private dental treatment is VAT-exempt, meaning you cannot charge VAT to patients or reclaim VAT on related expenses, though partial exemption rules may apply."
   - question: "What's the most tax-efficient way to extract profits from a dental practice?"
     answer: "The optimal approach typically combines a modest salary (often up to the National Insurance threshold of £12,570) with dividend payments for additional income. This strategy minimises National Insurance contributions while maintaining flexibility for pension contributions and other benefits."
   - question: "What business expenses can dental practices claim for tax purposes?"
@@ -43,7 +43,7 @@ faqs:
 
 <h2>VAT Registration and Management</h2>
 
-<p>VAT registration becomes mandatory when your practice's taxable turnover exceeds £85,000 in any 12-month period. Most private dental practices will cross this threshold relatively quickly.</p>
+<p>VAT registration becomes mandatory when your practice's taxable turnover exceeds £90,000 in any 12-month period. Most private dental practices will cross this threshold relatively quickly.</p>
 
 <p>Private dental treatment is exempt from VAT, which means you cannot charge VAT to patients but also cannot reclaim VAT on related expenses. However, you can charge VAT on certain services like cosmetic treatments sold as separate products.</p>
 

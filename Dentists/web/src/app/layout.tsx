@@ -35,6 +35,13 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  alternates: {
+    canonical: siteUrl,
+    languages: {
+      "en-GB": siteUrl,
+      "x-default": siteUrl,
+    },
+  },
   verification: {
     google: niche.seo.google_site_verification,
   },

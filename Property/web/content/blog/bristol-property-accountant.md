@@ -104,6 +104,7 @@ faqs:
 <h2>Related Reading</h2>
 
 <ul>
+<li><a href="/locations/bristol">Property Tax Partners Bristol</a> — our dedicated Bristol service page</li>
 <li><a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">How to Choose the Best Property Accountant for UK Landlords</a></li>
 <li><a href="/blog/property-accountant-services/property-accountant-near-me">Property Accountant Near Me: Finding the Right UK Property Tax Specialist</a></li>
 </ul>

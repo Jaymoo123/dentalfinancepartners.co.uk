@@ -14,7 +14,7 @@ summary: "Everything UK practice owners need to know about VAT registration, rat
 schema: ""
 faqs:
   - question: "Do I need to register for VAT if my dental practice only does NHS work?"
-    answer: "NHS contract payments count towards the VAT registration threshold, so you'll need to register once your total practice turnover exceeds £85,000. However, NHS dental treatment is exempt from VAT, so you won't charge VAT to patients but still need to comply with VAT registration and reporting requirements."
+    answer: "NHS contract payments count towards the VAT registration threshold, so you'll need to register once your total practice turnover exceeds £90,000. However, NHS dental treatment is exempt from VAT, so you won't charge VAT to patients but still need to comply with VAT registration and reporting requirements."
   - question: "Can I reclaim VAT on dental equipment if I only provide exempt services?"
     answer: "If your practice only provides exempt dental services, you typically cannot reclaim VAT on equipment or other purchases. Only practices that provide standard-rated (taxable) services can reclaim input VAT, and only in proportion to their taxable supplies."
   - question: "How do I determine if dental treatment is exempt or standard-rated for VAT?"
@@ -27,7 +27,7 @@ faqs:
 
 <h2>VAT Registration for Dental Practices</h2>
 
-<p>Most dental practices must register for VAT once their taxable turnover exceeds £85,000 (2024/25 threshold). This includes all income from private patients, NHS contracts, and any other taxable supplies your practice makes.</p>
+<p>Most dental practices must register for VAT once their taxable turnover exceeds £90,000 (2025/26 threshold). This includes all income from private patients, NHS contracts, and any other taxable supplies your practice makes.</p>
 
 <p>You have 30 days to register from the end of the month when you exceeded the threshold. Missing this deadline can result in penalties and backdated VAT charges.</p>
 

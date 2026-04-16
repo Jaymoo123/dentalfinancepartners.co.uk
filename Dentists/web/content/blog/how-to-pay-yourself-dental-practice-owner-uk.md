@@ -23,9 +23,9 @@ faqs:
     answer: "Yes, dividend payments require proper board resolutions and documentation. You can't simply transfer money from your business account to personal account and call it a dividend. HMRC expects formal procedures, including board minutes declaring dividends and confirming sufficient distributable profits exist."
 ---
 
-<p>As a dental practice owner, deciding how to pay yourself is one of the most important financial decisions you'll make. Get it wrong, and you could be paying thousands more in tax than necessary. Get it right, and you'll maximise your take-home pay while staying compliant with HMRC.</p>
+<p>Your <strong>dental practice owner salary</strong> is one of the most important financial decisions you'll make. Get it wrong, and you could be paying thousands more in tax than necessary. Get the salary vs dividend split right, and you'll maximise your take-home pay while staying compliant with HMRC.</p>
 
-<p>Most dental practice owners operate through limited companies, which gives you two main options: salary and dividends. The optimal approach typically involves a combination of both, but the exact split depends on your circumstances.</p>
+<p>Most dental practice owners in the UK operate through limited companies, which gives you two main options: salary and dividends. The optimal <strong>dental practice owner salary</strong> typically involves a combination of both, but the exact split depends on your profits, other income, and pension goals.</p>
 
 <h2>Salary vs Dividend: The Basics</h2>
 
@@ -41,11 +41,11 @@ faqs:
 <li><strong>National Insurance:</strong> 12% employee, 13.8% employer on salaries above £12,570</li>
 </ul>
 
-<h2>The Optimal Salary Strategy</h2>
+<h2>The Optimal Dental Practice Owner Salary</h2>
 
-<p>Most dental practice owners pay themselves a salary at the National Insurance threshold (£12,570 for 2024/25). This preserves your National Insurance record for state pension purposes without triggering NI contributions.</p>
+<p>Most dental practice owners set their salary at the National Insurance threshold (£12,570 for 2024/25). This preserves your National Insurance record for state pension purposes without triggering NI contributions.</p>
 
-<p>Some prefer paying up to the personal allowance (also £12,570), while others go slightly higher to maximise pension contributions. The key is finding the sweet spot for your situation.</p>
+<p>Some prefer paying up to the personal allowance (also £12,570), while others set a higher <strong>dental practice owner salary</strong> to maximise pension contributions. The key is finding the sweet spot for your situation — there is no single right answer.</p>
 
 <h2>Dividend Extraction Strategy</h2>
 

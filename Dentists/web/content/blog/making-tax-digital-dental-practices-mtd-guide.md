@@ -6,7 +6,7 @@ date: "2026-03-28"
 author: "Dental Finance Partners Editorial Team"
 category: "VAT & compliance"
 metaTitle: "Making Tax Digital for Dental Practices | MTD 2026"
-metaDescription: "MTD is mandatory for dental practices with turnover above £85,000. Software options, digital record-keeping rules, and penalties for non-compliance."
+metaDescription: "MTD is mandatory for dental practices with turnover above £90,000. Software options, digital record-keeping rules, and penalties for non-compliance."
 altText: "UK dental practice team using digital accounting software for Making Tax Digital compliance"
 image: ""
 h1: "Making Tax Digital for Dental Practices: Complete MTD Guide"
@@ -27,7 +27,7 @@ faqs:
     answer: "Penalties include up to £400 per return period for failing to keep digital records, £200 fixed penalty plus daily charges for late submission, percentage-based penalties on unpaid tax for incorrect returns, and up to £3,000 per tax year for failing to preserve digital records."
 ---
 
-<p>Making Tax Digital (MTD) fundamentally changed how UK dental practices handle their tax records and submissions to HMRC. If your practice has annual turnover above £85,000, MTD compliance is mandatory — not optional.</p>
+<p>Making Tax Digital (MTD) fundamentally changed how UK dental practices handle their tax records and submissions to HMRC. If your practice has annual turnover above £90,000, MTD compliance is mandatory — not optional.</p>
 
 <p>This affects most dental practices, whether you're running a single surgery or managing multiple sites. The rules apply to VAT returns first, with income tax MTD coming later.</p>
 
@@ -37,7 +37,7 @@ faqs:
 
 <p>The system aims to reduce errors and make tax administration more efficient. For dental practices, this means your accounting processes need to meet specific digital standards.</p>
 
-<p>MTD applies to VAT-registered businesses with turnover above the VAT threshold (currently £85,000). Most established dental practices fall into this category, whether NHS, private, or mixed.</p>
+<p>MTD applies to VAT-registered businesses with turnover above the VAT threshold (currently £90,000). Most established dental practices fall into this category, whether NHS, private, or mixed.</p>
 
 <h2>Compliance Steps for Dental Practices</h2>
 <h3>Choose MTD-Compatible Software</h3>

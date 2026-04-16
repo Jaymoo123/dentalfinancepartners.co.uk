@@ -18,40 +18,54 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/cookie-policy",
   ];
 
-  const entries: MetadataRoute.Sitemap = staticPaths.map((path) => ({
-    url: `${base}${path}`,
-    lastModified: new Date(),
-    changeFrequency: path === "/blog" ? "weekly" : "monthly",
-    priority: path === "" ? 1 : 0.7,
-  }));
+  const hreflang = (url: string) => ({
+    languages: { "en-GB": url, "x-default": url },
+  });
+
+  const entries: MetadataRoute.Sitemap = staticPaths.map((path) => {
+    const url = `${base}${path}`;
+    return {
+      url,
+      lastModified: new Date(),
+      changeFrequency: path === "/blog" ? "weekly" : "monthly",
+      priority: path === "" ? 1 : 0.7,
+      alternates: hreflang(url),
+    };
+  });
 
   for (const loc of siteConfig.locations) {
+    const url = `${base}/locations/${loc.slug}`;
     entries.push({
-      url: `${base}/locations/${loc.slug}`,
+      url,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,
+      alternates: hreflang(url),
     });
   }
 
   const categories = getAllCategories();
   for (const cat of categories) {
+    const url = `${base}/blog/${cat.slug}`;
     entries.push({
-      url: `${base}/blog/${cat.slug}`,
+      url,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.75,
+      alternates: hreflang(url),
     });
   }
 
   const allPosts = getAllPosts();
   for (const post of allPosts) {
     const categorySlug = getCategorySlug(post);
+    const url = `${base}/blog/${categorySlug}/${post.slug}`;
     entries.push({
-      url: `${base}/blog/${categorySlug}/${post.slug}`,
+      url,
       lastModified: post.date ? new Date(post.date) : new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
+      alternates: hreflang(url),
     });
   }
 

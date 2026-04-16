@@ -7,20 +7,26 @@ import { siteConfig } from "@/config/site";
 import { ServiceTiers } from "@/components/property/ServiceTiers";
 
 export const metadata: Metadata = {
-  title: "Property Accounting Services | Section 24, MTD & Portfolio Management",
+  title: "Property Accountant Services UK | Specialist Tax Advice for Landlords",
   description:
-    "Specialist services for UK landlords: Section 24 planning, MTD compliance, incorporation feasibility, portfolio reporting. Fixed fees, 24hr response. Free calculators.",
-  alternates: { canonical: `${siteConfig.url}/services` },
+    "Specialist property accountant for UK landlords and investors. Section 24 planning, MTD compliance, incorporation analysis, portfolio reporting. Fixed fees, free consultation.",
+  alternates: {
+    canonical: `${siteConfig.url}/services`,
+    languages: {
+      "en-GB": `${siteConfig.url}/services`,
+      "x-default": `${siteConfig.url}/services`,
+    },
+  },
   openGraph: {
-    title: "Property Accounting Services for UK Landlords",
-    description: "Section 24 planning, MTD compliance, incorporation analysis. Fixed fees, 24hr response.",
+    title: "Property Accountant Services UK | Specialist Tax Advice for Landlords",
+    description: "Specialist property accountant for UK landlords. Section 24, MTD, incorporation. Fixed fees, free consultation.",
     url: `${siteConfig.url}/services`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Property Accounting Services for UK Landlords",
-    description: "Section 24 planning, MTD compliance, incorporation analysis. Fixed fees, 24hr response.",
+    title: "Property Accountant Services UK | Tax Advice for Landlords",
+    description: "Specialist property accountant for UK landlords. Section 24, MTD, incorporation. Fixed fees, free consultation.",
   },
 };
 

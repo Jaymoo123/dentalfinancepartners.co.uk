@@ -24,6 +24,10 @@ const nextConfig: NextConfig = {
         source: '/:path*',
         headers: [
           {
+            key: 'Content-Language',
+            value: 'en-GB'
+          },
+          {
             key: 'X-DNS-Prefetch-Control',
             value: 'on'
           },

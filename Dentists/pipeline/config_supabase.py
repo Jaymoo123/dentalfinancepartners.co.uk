@@ -43,9 +43,9 @@ INTERNAL_LINK_SLUGS = [
     "/about",
     "/contact",
     "/blog/associate-tax/associate-dentist-tax-guide-uk",
-    "/blog/dental-practice-profit-extraction-uk",
-    "/blog/nhs-private-mix-dental-accounts",
-    "/blog/practice-acquisition-financial-due-diligence",
+    "/blog/practice-finance/dental-practice-profit-extraction-uk",
+    "/blog/practice-accounting/nhs-private-mix-dental-accounts",
+    "/blog/buying-a-practice/practice-acquisition-financial-due-diligence",
 ]
 
 def get_relevant_audience_link(topic: str) -> str:

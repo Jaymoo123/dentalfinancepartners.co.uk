@@ -13,20 +13,26 @@ const btnMailOutline =
   "inline-flex min-h-12 items-center justify-center rounded-full border border-[var(--navy)]/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-[var(--navy)] transition-all duration-200 hover:border-[var(--navy)] hover:bg-[var(--navy)]/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)]";
 
 export const metadata: Metadata = {
-  title: "Dental Accountant UK | Specialist Accounting for Dentists",
-  description: "Specialist dental accountant UK for associates, practice owners & groups. NHS contracts, associate tax, VAT & acquisitions. London & Manchester. Book a free consultation.",
-  alternates: { canonical: siteConfig.url },
+  title: "Specialist Dental Accountants | Accountants for Dentists UK",
+  description: "Specialist dental accountants for practice owners, associates and groups. NHS contract accounting, tax planning, VAT and acquisitions. London and Manchester. Free consultation.",
+  alternates: {
+    canonical: siteConfig.url,
+    languages: {
+      "en-GB": siteConfig.url,
+      "x-default": siteConfig.url,
+    },
+  },
   openGraph: {
-    title: "Dental Accountant UK | Specialist Accounting for Dentists",
-    description: "Specialist dental accountant UK for associates, practice owners & groups. NHS contracts, associate tax, VAT & acquisitions. London & Manchester.",
+    title: "Specialist Dental Accountants | Accountants for Dentists UK",
+    description: "Specialist dental accountants for practice owners, associates and groups. NHS contract accounting, tax planning, VAT and acquisitions.",
     url: siteConfig.url,
     type: "website",
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dental Accountant UK | Specialist Accounting for Dentists",
-    description: "Specialist dental accountant UK for associates, practice owners & groups. NHS contracts, associate tax, VAT & acquisitions. London & Manchester.",
+    title: "Specialist Dental Accountants UK",
+    description: "Specialist dental accountants for practice owners, associates and groups. NHS contracts, tax, VAT and acquisitions. London and Manchester.",
     images: [siteConfig.publisherLogoUrl],
   },
 };

@@ -1,0 +1,29 @@
+SEO: cross-site geo-targeting, Dentists GSC-driven content optimisation
+
+Property site:
+- Add hreflang (en-GB, x-default) to layout, blog posts, sitemap
+- Add Content-Language header, areaServed schema
+- Optimise CTR: meta titles/descriptions for top 5 ranking posts
+- Fix 8 flat internal links to nested format across 6 posts
+- Add internal links to location/services pages from city posts
+- Optimise services and location page metadata for commercial queries
+- Update SDLT guide date references (2025 to 2026)
+- Add middleware redirects for 7 new blog posts
+
+Dentists site:
+- Add hreflang, Content-Language header, areaServed schema
+- Fix VAT threshold (£85k to £90k) in 3 posts
+- Fix flat internal links in pipeline config
+- Realign profit extraction post metadata to match actual content
+- Optimise meta titles/descriptions for 6 high-visibility posts
+- Enrich 12 blog post bodies with exact GSC search query terms
+- Add new sections (insurance cost breakdown, cloud vs desktop accounting)
+- Optimise homepage metadata: front-load "specialist dental accountants"
+- Enrich services page with commercial query terms in H1, body, metadata
+- Enrich location pages with "accountants for dentists" query variants
+
+Medical + Solicitors sites:
+- Add hreflang, Content-Language header, areaServed schema
+- Add sitemap hreflang alternates
+
+New: scripts/fetch_gsc_dentists.py for Dentists GSC data analysis

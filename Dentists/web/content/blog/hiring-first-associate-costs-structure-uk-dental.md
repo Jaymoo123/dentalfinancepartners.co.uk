@@ -31,9 +31,9 @@ faqs:
     answer: "Budget for approximately 30-40% of the associate's gross fees in ongoing costs, including materials (8-12%), lab fees (15-20% of relevant work), nurse wages, utilities, insurance, and your share of practice overheads. Don't forget CPD, registration renewals, and equipment maintenance."
 ---
 
-<p>Hiring your first associate represents a significant step in growing your dental practice. It's a move that can transform your business model, but it comes with substantial costs and complexities that many practice owners underestimate.</p>
+<p>Hiring your first associate represents a significant step in growing your dental practice. It's a move that can transform your business model, but many practice owners underestimate the true <strong>dental practice startup costs</strong> involved in bringing on another clinician.</p>
 
-<p>The decision typically happens when you're fully booked, turning patients away, or looking to reduce your clinical hours. However, the financial implications go well beyond simply sharing your fee income.</p>
+<p>The decision typically happens when you're fully booked, turning patients away, or looking to reduce your clinical hours. However, the financial implications go well beyond simply sharing your fee income — total first-year costs typically run £60,000–£100,000.</p>
 
 <h2>The Real Cost of Hiring Your First Associate</h2>
 

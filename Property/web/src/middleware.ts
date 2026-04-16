@@ -328,6 +328,13 @@ const SLUG_TO_CATEGORY_MAP: Record<string, string> = {
   "rollover-relief-property-landlords": "capital-gains-tax",
   "cgt-gifting-property-family-members-uk": "capital-gains-tax",
   "cgt-divorce-property-transfer-tax-implications": "capital-gains-tax",
+  "cgt-selling-multiple-properties-same-year": "capital-gains-tax",
+  "cgt-deferral-strategies-property-investors-uk": "capital-gains-tax",
+  "business-property-relief-rental-property-iht": "landlord-tax-essentials",
+  "cgt-record-keeping-property-sales-what-to-save-how-long": "capital-gains-tax",
+  "property-improvements-reduce-cgt-enhancement-expenditure": "capital-gains-tax",
+  "cgt-main-residence-election-two-properties": "capital-gains-tax",
+  "hmo-capital-allowances-multi-tenant-landlords-claim": "property-types-and-specialist-tax",
 };
 
 const DUPLICATE_REDIRECTS: Record<string, string> = {

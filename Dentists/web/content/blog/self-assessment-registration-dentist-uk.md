@@ -5,8 +5,8 @@ canonical: "https://www.dentalfinancepartners.co.uk/blog/associate-tax/self-asse
 date: "2026-03-28"
 author: "Dental Finance Partners Editorial Team"
 category: "Associate tax"
-metaTitle: "Self Assessment Registration for Dentists 2026/27"
-metaDescription: "Most associates must register by 5 October. Requirements, deadlines, and how to register for Self Assessment — for associates and practice owners."
+metaTitle: "Self Assessment Registration for Dentists: Register by 5 Oct"
+metaDescription: "Most associate dentists must register for Self Assessment by 5 October. Who needs to register, how to do it online, and what happens if you're late."
 altText: "UK dentist reviewing Self Assessment registration documents at desk with HMRC paperwork"
 image: ""
 h1: "Do I Need to Register for Self Assessment as a Dentist?"
@@ -19,7 +19,7 @@ faqs:
     answer: "You must register by 5 October following the end of the tax year when you first became liable for Self Assessment. For example, if you started self-employed dental work in 2024, you need to register by 5 October 2024."
 ---
 
-<p>The short answer is: most UK dentists do need to register for Self Assessment, but it depends on your specific circumstances. Whether you're an associate, practice owner, or employed dentist, your registration requirements differ based on how you receive your income.</p>
+<p>The short answer is: most UK dentists do need to register for Self Assessment, but it depends on your specific circumstances. If you're a <strong>self-employed dentist</strong> — which covers the majority of associates — registration is mandatory. Whether you're an associate, practice owner, or employed dentist with side income, your registration requirements differ based on how you receive your income.</p>
 
 <h2>When Dentists Must Register for Self Assessment</h2>
 
@@ -41,7 +41,7 @@ faqs:
 
 <h3>Self-Employed Dentists</h3>
 
-<p>If you're paid gross (without tax deducted) and receive payments based on your clinical output, you're likely self-employed. This covers most associates working in dental practices across the UK.</p>
+<p>If you're paid gross (without tax deducted) and receive payments based on your clinical output, you're likely a <strong>self-employed dentist</strong>. This covers most associates working in dental practices across the UK, whether NHS, private, or mixed.</p>
 
 <p>Self-employed dentists must register for Self Assessment because HMRC needs to track your income and ensure correct tax payments. Your practice won't deduct tax from your payments, so you're responsible for calculating and paying your own Income Tax and National Insurance.</p>
 

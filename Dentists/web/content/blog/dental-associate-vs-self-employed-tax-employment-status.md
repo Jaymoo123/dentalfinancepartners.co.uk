@@ -23,9 +23,9 @@ faqs:
     answer: "Working exclusively for one practice doesn't automatically make you an employee, but it's a strong indicator that you might be. True self-employment typically involves financial risk, control over your work, and the ability to work for multiple clients. The overall picture of your working relationship determines your status, not just the number of practices you work for."
 ---
 
-<p>The question of whether you're an associate or self-employed dentist isn't just about job titles — it fundamentally affects your tax obligations, employment rights, and financial planning. Many dentists find themselves unclear about their status, particularly with <strong>dental associate vs self employed</strong> arrangements becoming increasingly complex.</p>
+<p>The question of whether you're an associate or <strong>self-employed dentist</strong> isn't just about job titles — it fundamentally affects your tax obligations, employment rights, and financial planning. Many dentists find themselves unclear about their status, particularly when deciding between operating as a <strong>dentist self employed or limited company</strong> structure.</p>
 
-<p>This distinction has become more critical following changes to IR35 legislation and increased HMRC scrutiny of employment relationships in healthcare. Getting your status wrong can lead to unexpected tax bills and compliance issues.</p>
+<p>This distinction has become more critical following changes to IR35 legislation and increased HMRC scrutiny of employment relationships in healthcare. Getting your status wrong can lead to unexpected tax bills, back-dated NI demands, and compliance issues for both you and the practice.</p>
 
 <h2>Understanding Employment Status: The Legal Framework</h2>
 

@@ -24,20 +24,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cityName = slug.charAt(0).toUpperCase() + slug.slice(1);
   const canonical = `${siteConfig.url}/locations/${loc.slug}`;
   return {
-    title: `Property Accountant ${cityName} | ${siteConfig.name}`,
-    description: `Specialist property accountant in ${cityName} for landlords and investors. Section 24 planning, MTD compliance, incorporation analysis. Book a free consultation.`,
-    alternates: { canonical },
+    title: `Property Accountant ${cityName} | Tax Specialists for Landlords`,
+    description: `Looking for a property accountant in ${cityName}? Specialist tax advice for landlords and property investors. Section 24, MTD, incorporation. Fixed fees, free consultation.`,
+    alternates: {
+      canonical,
+      languages: {
+        "en-GB": canonical,
+        "x-default": canonical,
+      },
+    },
     openGraph: {
-      title: `Property Accountant ${cityName} | ${siteConfig.name}`,
-      description: `Specialist property accountant in ${cityName} for landlords and investors. Section 24, MTD, incorporation.`,
+      title: `Property Accountant ${cityName} | Tax Specialists for Landlords`,
+      description: `Specialist property accountant in ${cityName} for landlords and investors. Section 24, MTD, incorporation. Fixed fees.`,
       url: canonical,
       type: "website",
       images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
     },
     twitter: {
       card: "summary_large_image",
-      title: `Property Accountant ${cityName}`,
-      description: `Specialist property accountant in ${cityName} for landlords. Section 24, MTD, incorporation.`,
+      title: `Property Accountant ${cityName} | Tax Specialists for Landlords`,
+      description: `Specialist property accountant in ${cityName} for landlords. Section 24, MTD, incorporation. Fixed fees.`,
       images: [siteConfig.publisherLogoUrl],
     },
   };

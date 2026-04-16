@@ -6,44 +6,50 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Dental practice accounting services",
+  title: "Specialist Dental Accountants | Accounting for Dentists UK",
   description:
-    "UK dental accounting: year-end compliance, management accounts, tax planning, payroll, VAT, and profit extraction for practices and associates.",
-  alternates: { canonical: `${siteConfig.url}/services` },
+    "Specialist dental accountants for practice owners and associates. Tax planning, NHS contract accounting, VAT compliance, profit extraction. Fixed fees, free consultation.",
+  alternates: {
+    canonical: `${siteConfig.url}/services`,
+    languages: {
+      "en-GB": `${siteConfig.url}/services`,
+      "x-default": `${siteConfig.url}/services`,
+    },
+  },
   openGraph: {
-    title: "Dental practice accounting services",
+    title: "Specialist Dental Accountants | Accounting for Dentists UK",
     description:
-      "UK dental accounting: year-end compliance, management accounts, tax planning, payroll, VAT, and profit extraction for practices and associates.",
+      "Specialist dental accountants for practice owners and associates. Tax planning, NHS contracts, VAT, profit extraction. Fixed fees.",
     url: `${siteConfig.url}/services`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dental practice accounting services",
+    title: "Specialist Dental Accountants UK",
     description:
-      "UK dental accounting: year-end compliance, management accounts, tax planning, payroll, VAT, and profit extraction for practices and associates.",
+      "Specialist dental accountants for practice owners and associates. Tax planning, NHS contracts, VAT, profit extraction. Fixed fees.",
   },
 };
 
 const sections = [
   {
     title: "Dental practice accounting & reporting",
-    body: "Month-end and year-end accounts that reflect NHS and private mixes, associate costs, labs, and equipment — so you can see where profit really comes from.",
+    body: "As specialist dental accountants, we prepare month-end and year-end accounts that reflect your NHS and private mix, associate costs, labs, and equipment — so you can see where profit really comes from.",
     links: [{ href: "/blog/practice-accounting/nhs-private-mix-dental-accounts", label: "NHS & private reporting" }],
   },
   {
-    title: "Tax planning & compliance",
-    body: "Corporation tax, Self Assessment for directors and associates, and sensible timing of decisions across tax years — framed for UK rules, not US-style advice.",
+    title: "Tax planning & compliance for dentists",
+    body: "Corporation tax, Self Assessment for directors and associates, and sensible timing of decisions across tax years. Our dental accounting specialists work within UK rules — not US-style advice.",
     links: [{ href: "/blog/associate-tax/associate-dentist-tax-self-assessment-uk", label: "Associate expenses & tax" }],
   },
   {
     title: "Profit extraction & owner remuneration",
-    body: "Salary, dividends, pensions, and director accounts structured with clear governance — avoiding informal drawings that create HMRC risk.",
+    body: "Salary, dividends, pensions, and director accounts structured with clear governance — avoiding informal drawings that create HMRC risk. A core part of our accountancy service for dental practice owners.",
     links: [{ href: "/blog/practice-finance/dental-practice-profit-extraction-uk", label: "Limited company & extraction" }],
   },
   {
     title: "Payroll, pensions, and staff costs",
-    body: "Support for practice payroll, pension auto-enrolment coordination, and clean reporting where clinicians are paid through different mechanisms.",
+    body: "Support for practice payroll, pension auto-enrolment coordination, and clean reporting where clinicians are paid through different mechanisms. Our accountants for dentists handle the complexity so you don't have to.",
     links: [],
   },
 ];
@@ -58,11 +64,10 @@ export default function ServicesPage() {
         ]}
       />
       <h1 className="font-serif text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
-        Services for UK dental practices
+        Specialist dental accountants for practices and associates
       </h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-        Accounting and tax support aimed at dentists and practice owners — from compliance you can rely on to reporting
-        that helps you run the business.
+        We are accountants for dentists who understand NHS contracts, associate structures, and practice finances. From year-end compliance to strategic tax planning — accounting services built for the dental sector.
       </p>
 
       <ol className="mt-10 list-none space-y-10 pl-0 sm:mt-12 sm:space-y-12">

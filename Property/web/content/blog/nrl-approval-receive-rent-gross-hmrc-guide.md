@@ -111,7 +111,7 @@ faqs:
 <li>Notify HMRC of significant changes to your circumstances</li>
 </ul>
 
-<p>For the 2025/26 tax year, your return must be filed by 31 January 2027. Remember that property income will be subject to <a href="/blog/property-investment-tax-uk-complete-guide-2026">new separate tax rates from April 2027</a> — 22% basic, 42% higher, and 47% additional rate.</p>
+<p>For the 2025/26 tax year, your return must be filed by 31 January 2027. Remember that property income will be subject to <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">new separate tax rates from April 2027</a> — 22% basic, 42% higher, and 47% additional rate.</p>
 
 <h3>Record-Keeping Requirements</h3>
 
@@ -235,8 +235,8 @@ faqs:
 <ul>
 <li>Opening a separate account for tax savings</li>
 <li>Making monthly transfers based on estimated tax liability</li>
-<li>Planning for <a href="/blog/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> from April 2026</li>
-<li>Understanding how <a href="/blog/section-24-tax-relief-complete-guide">Section 24 restrictions</a> affect your tax calculation</li>
+<li>Planning for <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> from April 2026</li>
+<li>Understanding how <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a> affect your tax calculation</li>
 </ul>
 
 <h2>Common Mistakes to Avoid</h2>
