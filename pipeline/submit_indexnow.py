@@ -1,0 +1,112 @@
+"""
+Submit URLs to IndexNow (Bing, Yandex, Seznam, Naver, Yep, others).
+
+Usage:
+  # Submit a single URL or several inline:
+  python pipeline/submit_indexnow.py https://www.agencyfounderfinance.co.uk/blog/some-post
+
+  # Submit everything in the live sitemap (use sparingly, e.g. after big content drops):
+  python pipeline/submit_indexnow.py --from-sitemap
+
+  # Submit URLs listed in a text file (one per line):
+  python pipeline/submit_indexnow.py --from-file urls.txt
+
+Notes:
+  - IndexNow limit: 10,000 URLs per request. Script chunks automatically.
+  - Etiquette: only submit URLs that are *new or recently changed*. Don't
+    re-submit the same content repeatedly — search engines may rate-limit.
+  - A 200 or 202 response means accepted. 422 usually means a URL doesn't
+    match the host, or the key file isn't reachable at keyLocation.
+"""
+
+from __future__ import annotations
+
+import argparse
+import sys
+import urllib.request
+import urllib.error
+import json
+import xml.etree.ElementTree as ET
+
+HOST = "www.agencyfounderfinance.co.uk"
+KEY = "f4fdfbf2cea848168e128a029d31e86b"
+KEY_LOCATION = f"https://{HOST}/{KEY}.txt"
+SITEMAP_URL = f"https://{HOST}/sitemap.xml"
+ENDPOINT = "https://api.indexnow.org/IndexNow"
+CHUNK_SIZE = 10_000
+
+
+def submit_chunk(urls: list[str]) -> tuple[int, str]:
+    body = json.dumps({
+        "host": HOST,
+        "key": KEY,
+        "keyLocation": KEY_LOCATION,
+        "urlList": urls,
+    }).encode("utf-8")
+    req = urllib.request.Request(
+        ENDPOINT,
+        data=body,
+        headers={"Content-Type": "application/json; charset=utf-8"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return resp.status, resp.read().decode("utf-8", errors="replace")
+    except urllib.error.HTTPError as e:
+        return e.code, e.read().decode("utf-8", errors="replace")
+
+
+def load_sitemap_urls() -> list[str]:
+    with urllib.request.urlopen(SITEMAP_URL, timeout=30) as resp:
+        xml = resp.read()
+    ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+    root = ET.fromstring(xml)
+    return [loc.text.strip() for loc in root.findall("sm:url/sm:loc", ns) if loc.text]
+
+
+def load_urls_from_file(path: str) -> list[str]:
+    with open(path, encoding="utf-8") as f:
+        return [line.strip() for line in f if line.strip() and not line.startswith("#")]
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("urls", nargs="*", help="URLs to submit")
+    parser.add_argument("--from-sitemap", action="store_true", help="Submit every URL in the live sitemap")
+    parser.add_argument("--from-file", help="Read URLs (one per line) from a file")
+    parser.add_argument("--dry-run", action="store_true", help="Print URLs but don't submit")
+    args = parser.parse_args()
+
+    urls: list[str] = []
+    if args.from_sitemap:
+        urls.extend(load_sitemap_urls())
+    if args.from_file:
+        urls.extend(load_urls_from_file(args.from_file))
+    urls.extend(args.urls)
+
+    urls = [u for u in dict.fromkeys(urls) if u.startswith(f"https://{HOST}")]
+
+    if not urls:
+        print("No valid URLs to submit (must start with https://" + HOST + ")", file=sys.stderr)
+        return 1
+
+    print(f"Prepared {len(urls)} URL(s) for IndexNow submission")
+    if args.dry_run:
+        for u in urls:
+            print(" ", u)
+        return 0
+
+    for i in range(0, len(urls), CHUNK_SIZE):
+        chunk = urls[i:i + CHUNK_SIZE]
+        status, body = submit_chunk(chunk)
+        print(f"Chunk {i // CHUNK_SIZE + 1}: {len(chunk)} URLs → HTTP {status}")
+        if status not in (200, 202):
+            print(f"  Response: {body[:500]}", file=sys.stderr)
+            return 2
+
+    print("✓ Submission complete")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
