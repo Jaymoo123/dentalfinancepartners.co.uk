@@ -1,0 +1,204 @@
+{
+  "niche_id": "agency-founder-finance",
+  "display_name": "Agency Founder Finance",
+  "legal_name": "Agency Founder Finance Ltd",
+  "domain": "www.agencyfounderfinance.co.uk",
+  "tagline": "The accountant built for agency founders",
+  "description": "Specialist accountants for UK and UAE agency founders. Tax planning, management accounts, incorporation, IR35, and exit strategy for marketing, creative, digital, and all agency types.",
+  "brand": {
+    "primary_color": "#4f46e5",
+    "logo_path": "/brand/primary-logo.png",
+    "publisher_logo_url": "/brand/icon-alt.png"
+  },
+  "contact": {
+    "email": "hello@agencyfounderfinance.co.uk",
+    "phone": "+44 20 3026 3333"
+  },
+  "navigation": [
+    {
+      "label": "Services",
+      "href": "/services"
+    },
+    {
+      "label": "Agencies",
+      "href": "/agencies"
+    },
+    {
+      "label": "Resources",
+      "href": "/fundamentals",
+      "children": [
+        {
+          "label": "Fundamentals",
+          "href": "/fundamentals",
+          "description": "Pillar guides on agency finance, tax, structure and exit"
+        },
+        {
+          "label": "Blog",
+          "href": "/blog",
+          "description": "Practical articles for UK and UAE agency founders"
+        },
+        {
+          "label": "Calculators",
+          "href": "/calculators",
+          "description": "Free salary, dividend and tax calculators using 2025/26 rates"
+        },
+        {
+          "label": "Locations",
+          "href": "/locations",
+          "description": "Agency accountants in London, Manchester and Birmingham"
+        },
+        {
+          "label": "Dubai Relocation",
+          "href": "/dubai-relocation",
+          "description": "UK agency founders relocating to Dubai: tax, structure, setup"
+        },
+        {
+          "label": "R&D Tax Credits",
+          "href": "/r-and-d-credits",
+          "description": "Specialist R&D claims for AI, SaaS, performance and digital agencies"
+        }
+      ]
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "footer_links": [
+    {
+      "label": "Services",
+      "href": "/services"
+    },
+    {
+      "label": "Agencies we serve",
+      "href": "/agencies"
+    },
+    {
+      "label": "Fundamentals",
+      "href": "/fundamentals"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Calculators",
+      "href": "/calculators"
+    },
+    {
+      "label": "Locations",
+      "href": "/locations"
+    },
+    {
+      "label": "Dubai relocation",
+      "href": "/dubai-relocation"
+    },
+    {
+      "label": "R&D tax credits",
+      "href": "/r-and-d-credits"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "Privacy policy",
+      "href": "/privacy-policy"
+    },
+    {
+      "label": "Terms",
+      "href": "/terms"
+    },
+    {
+      "label": "Cookie policy",
+      "href": "/cookie-policy"
+    }
+  ],
+  "locations": [],
+  "content_strategy": {
+    "audience": "UK and UAE agency founders across marketing, creative, digital, advertising, PR, web design, SEO, recruitment and all agency types",
+    "categories": [
+      "Agency Finance Essentials",
+      "Tax and Compliance",
+      "Salary and Dividends",
+      "Incorporation and Structure",
+      "Growth and Exit",
+      "Contractors and IR35",
+      "Agency Accountant Services",
+      "Making Tax Digital",
+      "International Agencies"
+    ],
+    "supabase_table": "blog_topics_agency",
+    "source_identifier": "agency-founder-finance"
+  },
+  "seo": {
+    "locale": "en-GB",
+    "organization_type": "ProfessionalService",
+    "service_areas": [
+      "London",
+      "Manchester",
+      "Birmingham",
+      "Leeds",
+      "Bristol",
+      "Dubai"
+    ],
+    "google_analytics_id": "",
+    "google_site_verification": "",
+    "theme_color": "#4f46e5"
+  },
+  "lead_form": {
+    "role_label": "My agency is a...",
+    "role_options": [
+      {
+        "value": "Marketing or digital agency",
+        "label": "Marketing or digital agency"
+      },
+      {
+        "value": "Creative or branding agency",
+        "label": "Creative or branding agency"
+      },
+      {
+        "value": "PR or communications agency",
+        "label": "PR or communications agency"
+      },
+      {
+        "value": "Web design or development agency",
+        "label": "Web design or development agency"
+      },
+      {
+        "value": "Recruitment or talent agency",
+        "label": "Recruitment or talent agency"
+      },
+      {
+        "value": "Other agency type",
+        "label": "Other agency type"
+      }
+    ],
+    "placeholders": {
+      "name": "Alex Smith",
+      "email": "alex@youragency.com",
+      "phone": "07700 000000",
+      "message": "e.g. I need help with tax planning, or I want to understand the best way to pay myself..."
+    }
+  },
+  "cta": {
+    "sticky_primary": "Free Agency Finance Health Check",
+    "sticky_secondary": "60-min review with an ICAEW qualified accountant. No obligation.",
+    "sticky_button": "Claim free check"
+  },
+  "blog": {
+    "cta_heading": "Need specialist accounting for your agency?",
+    "cta_body": "We work exclusively with agency founders. Book a free call to talk through your tax position, salary structure, or any finance question. No jargon, no hard sell.",
+    "cta_button": "Book a free call"
+  },
+  "shared_components_version": "1.0.0",
+  "last_sync": null
+}
