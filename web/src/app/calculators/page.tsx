@@ -54,6 +54,27 @@ const calculators = [
       "Compare Standard VAT against the Flat Rate Scheme. Includes the Limited Cost Trader test that catches most agencies out.",
     available: true,
   },
+  {
+    slug: "pension-contribution-optimiser",
+    title: "Pension Contribution Optimiser",
+    description:
+      "Model employer pension contributions from your limited company. Corp tax saving, real cost, and the advantage over taking it as a dividend.",
+    available: true,
+  },
+  {
+    slug: "take-home-pay-calculator",
+    title: "Take-Home Pay Calculator",
+    description:
+      "Standard UK PAYE salary calculator. 2025/26 income tax, NI, student loan plans and salary-sacrifice pension. Annual, monthly and weekly net.",
+    available: true,
+  },
+  {
+    slug: "employer-ni-calculator",
+    title: "Employer NI & Cost-to-Hire",
+    description:
+      "Total annual cost of your agency team. Employer NI at 13.8%, Employment Allowance and minimum auto-enrolment pension across multiple roles.",
+    available: true,
+  },
 ];
 
 export default function CalculatorsIndexPage() {
