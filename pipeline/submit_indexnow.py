@@ -99,12 +99,12 @@ def main() -> int:
     for i in range(0, len(urls), CHUNK_SIZE):
         chunk = urls[i:i + CHUNK_SIZE]
         status, body = submit_chunk(chunk)
-        print(f"Chunk {i // CHUNK_SIZE + 1}: {len(chunk)} URLs → HTTP {status}")
+        print(f"Chunk {i // CHUNK_SIZE + 1}: {len(chunk)} URLs -> HTTP {status}")
         if status not in (200, 202):
             print(f"  Response: {body[:500]}", file=sys.stderr)
             return 2
 
-    print("✓ Submission complete")
+    print("Submission complete")
     return 0
 
 
