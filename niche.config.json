@@ -56,6 +56,16 @@
           "label": "R&D Tax Credits",
           "href": "/r-and-d-credits",
           "description": "Specialist R&D claims for AI, SaaS, performance and digital agencies"
+        },
+        {
+          "label": "Glossary",
+          "href": "/glossary",
+          "description": "Plain-English definitions of UK agency tax and finance terms"
+        },
+        {
+          "label": "Founder Stories",
+          "href": "/founder-stories",
+          "description": "Composite case studies of real UK and UAE agency finance decisions"
         }
       ]
     },
@@ -96,6 +106,22 @@
     {
       "label": "Dubai relocation",
       "href": "/dubai-relocation"
+    },
+    {
+      "label": "Portugal relocation",
+      "href": "/portugal-relocation"
+    },
+    {
+      "label": "Cyprus relocation",
+      "href": "/cyprus-relocation"
+    },
+    {
+      "label": "Spain relocation",
+      "href": "/spain-relocation"
+    },
+    {
+      "label": "Singapore relocation",
+      "href": "/singapore-relocation"
     },
     {
       "label": "R&D tax credits",

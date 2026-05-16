@@ -22,11 +22,14 @@ function hasMinDigits(phone: string, min: number): boolean {
 type LeadFormProps = {
   redirectOnSuccess?: boolean;
   submitLabel?: string;
+  /** Destination on success when redirectOnSuccess is true. Defaults to /thank-you. */
+  successRedirect?: string;
 };
 
 export function LeadForm({
   redirectOnSuccess = true,
   submitLabel = "Send enquiry",
+  successRedirect = "/thank-you",
 }: LeadFormProps) {
   const router = useRouter();
   const [status, setStatus] = useState<FormStatus>("idle");
@@ -123,7 +126,7 @@ export function LeadForm({
 
     if (redirectOnSuccess) {
       setTimeout(() => {
-        router.push("/thank-you");
+        router.push(successRedirect);
       }, 800);
     }
   }

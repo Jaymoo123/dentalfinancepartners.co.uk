@@ -3,6 +3,9 @@ import { siteConfig } from "@/config/site";
 import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
 import { getAllFundamentals } from "@/lib/fundamentals";
 import { CITIES } from "@/app/locations/[slug]/data";
+import { GLOSSARY } from "@/app/glossary/[slug]/data";
+import { STORIES } from "@/app/founder-stories/[slug]/data";
+import { GUIDES } from "@/app/guides/[slug]/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
@@ -34,7 +37,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/agencies/crypto-web3-agencies",
     "/free-health-check",
     "/dubai-relocation",
+    "/portugal-relocation",
+    "/cyprus-relocation",
+    "/spain-relocation",
+    "/singapore-relocation",
     "/r-and-d-credits",
+    "/guides",
     "/blog",
     "/fundamentals",
     "/calculators",
@@ -44,6 +52,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/calculators/badr-cgt-calculator",
     "/calculators/vat-scheme-comparator",
     "/locations",
+    "/glossary",
+    "/founder-stories",
     "/privacy-policy",
     "/terms",
     "/cookie-policy",
@@ -106,6 +116,39 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.85,
+      alternates: hreflang(url),
+    });
+  }
+
+  for (const slug of Object.keys(GLOSSARY)) {
+    const url = `${base}/glossary/${slug}`;
+    entries.push({
+      url,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: hreflang(url),
+    });
+  }
+
+  for (const slug of Object.keys(STORIES)) {
+    const url = `${base}/founder-stories/${slug}`;
+    entries.push({
+      url,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+      alternates: hreflang(url),
+    });
+  }
+
+  for (const slug of Object.keys(GUIDES)) {
+    const url = `${base}/guides/${slug}`;
+    entries.push({
+      url,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.75,
       alternates: hreflang(url),
     });
   }
