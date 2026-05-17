@@ -17,7 +17,7 @@ export type WelcomeStep = {
   sign: string;
 };
 
-const BASE = "https://www.agencyfounderfinance.co.uk";
+const BASE = "https://www.ukbusinessaccountants.co.uk";
 
 export const WELCOME_SERIES: WelcomeStep[] = [
   {

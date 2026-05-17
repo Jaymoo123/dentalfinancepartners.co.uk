@@ -1,25 +1,23 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { LeadForm } from "@/components/forms/LeadForm";
-import { siteContainerLg } from "@/components/ui/layout-utils";
+import { siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { JsonLd, referencedOrganization } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: `Contact ${siteConfig.name} | Book Free Consultation`,
-  description: `Contact ${siteConfig.name} for agency accounting enquiries. Tax planning, management accounts, IR35 and incorporation. 24-hour response. Phone, email, or form.`,
+  title: `Contact`,
+  description: `Speak to an ICAEW chartered accountant about your UK business. Same-day response, fixed fees, no obligation.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
-    title: `Contact ${siteConfig.name}`,
-    description: "Book a free consultation for agency accounting. 24-hour response time.",
+    title: `Contact | ${siteConfig.name}`,
+    description: "Speak to an ICAEW chartered accountant. Same-day response, fixed fees, no obligation.",
     url: `${siteConfig.url}/contact`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: `Contact ${siteConfig.name}`,
-    description: "Book a free consultation for agency accounting. 24-hour response time.",
+    title: `Contact | ${siteConfig.name}`,
+    description: "Speak to an ICAEW chartered accountant. Same-day response, fixed fees, no obligation.",
   },
 };
 
@@ -30,8 +28,7 @@ export default function ContactPage() {
     "@id": `${siteConfig.url}/contact#page`,
     name: `Contact ${siteConfig.name}`,
     url: `${siteConfig.url}/contact`,
-    description:
-      `Contact ${siteConfig.name} for agency accounting enquiries. Tax planning, management accounts, IR35 and incorporation. 24-hour response.`,
+    description: "Contact form and direct line for new enquiries.",
     inLanguage: "en-GB",
     about: referencedOrganization(),
     mainEntity: {
@@ -55,67 +52,77 @@ export default function ContactPage() {
   return (
     <>
       <JsonLd data={contactPage} />
-      <section className="relative h-[300px] sm:h-[350px] overflow-hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=2000&q=85"
-          alt="Agency workspace"
-          fill
-          className="object-cover brightness-75"
-        />
-        <div className="absolute inset-0 bg-slate-900/85" />
-        <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
-          <div className="max-w-3xl">
-            <Breadcrumb
-              items={[
-                { label: "Home", href: "/" },
-                { label: "Contact" },
-              ]}
-            />
-            <h1 className="mt-4 sm:mt-6 text-2xl font-bold text-white sm:text-4xl lg:text-6xl">Contact</h1>
-            <p className="mt-3 sm:mt-4 text-base sm:text-xl text-white">
-              New enquiries by form, phone, or email. We aim to reply within one working day.
-            </p>
-          </div>
-        </div>
-      </section>
 
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
+      <section className={`${sectionY} bg-[#fafaf7]`}>
         <div className={siteContainerLg}>
-          <div className="grid gap-8 sm:gap-12 lg:grid-cols-[1fr_1.5fr] lg:gap-16">
-            <div className="space-y-6 sm:space-y-8">
-              <div className="border-l-4 border-indigo-600 bg-slate-50 p-6 sm:p-8">
-                <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Get in touch</h2>
-                <p className="text-base text-slate-700 leading-relaxed">
-                  Fill in the form and we will get back to you within 24 hours, usually same day.
+          <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 lg:gap-20">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-widest text-orange-500">
+                Talk to an accountant
+              </p>
+              <h1 className="mt-4 text-4xl font-semibold tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl text-balance">
+                Start with a short call.
+              </h1>
+              <p className="mt-6 max-w-prose text-lg leading-relaxed text-neutral-600">
+                Tell us where the business sits today, what is and isn&rsquo;t working, and we&rsquo;ll come
+                back with a short note on what the engagement would look like and what it would
+                cost. No pitch, no follow-up sequence.
+              </p>
+
+              <div className="mt-12">
+                <p className="font-mono text-xs uppercase tracking-widest text-neutral-500 mb-4">
+                  What happens next
                 </p>
+                <ul className="space-y-4 max-w-md">
+                  {[
+                    "Reply within one working day, usually same day.",
+                    "A short call to understand your situation and what you need.",
+                    "Plain-English recommendations, with or without us.",
+                    "Fixed-fee quote in writing if we&rsquo;re a fit.",
+                  ].map((line, i) => (
+                    <li key={i} className="grid grid-cols-[2rem_1fr] gap-3 items-start">
+                      <span className="font-mono text-sm text-orange-500">{String(i + 1).padStart(2, "0")}</span>
+                      <span className="text-base leading-relaxed text-neutral-700" dangerouslySetInnerHTML={{ __html: line }} />
+                    </li>
+                  ))}
+                </ul>
               </div>
 
-              <div className="bg-slate-900 p-6 sm:p-8 text-white">
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">What to expect</h3>
-                <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-slate-200">
-                  <li className="flex items-start gap-2 sm:gap-3">
-                    <span className="text-indigo-400 font-bold flex-shrink-0 text-base sm:text-lg">✓</span>
-                    <span>We will respond within 24 hours to confirm receipt</span>
-                  </li>
-                  <li className="flex items-start gap-2 sm:gap-3">
-                    <span className="text-indigo-400 font-bold flex-shrink-0 text-base sm:text-lg">✓</span>
-                    <span>Initial call to understand your agency and situation</span>
-                  </li>
-                  <li className="flex items-start gap-2 sm:gap-3">
-                    <span className="text-indigo-400 font-bold flex-shrink-0 text-base sm:text-lg">✓</span>
-                    <span>Clear recommendations with no obligation</span>
-                  </li>
-                  <li className="flex items-start gap-2 sm:gap-3">
-                    <span className="text-indigo-400 font-bold flex-shrink-0 text-base sm:text-lg">✓</span>
-                    <span>Fixed fee quote if you decide to proceed</span>
-                  </li>
-                </ul>
+              <div className="mt-12 border-t border-neutral-200 pt-8 max-w-md">
+                <p className="font-mono text-xs uppercase tracking-widest text-neutral-500 mb-4">
+                  Or directly
+                </p>
+                <dl className="space-y-3 text-sm">
+                  <div className="grid grid-cols-[5rem_1fr] gap-2">
+                    <dt className="text-neutral-500">Email</dt>
+                    <dd>
+                      <a href={`mailto:${siteConfig.contact.email}`} className="text-neutral-900 hover:text-orange-600 underline underline-offset-4">
+                        {siteConfig.contact.email}
+                      </a>
+                    </dd>
+                  </div>
+                  <div className="grid grid-cols-[5rem_1fr] gap-2">
+                    <dt className="text-neutral-500">Phone</dt>
+                    <dd>
+                      <a href={`tel:${siteConfig.contact.phone.replace(/\s/g, "")}`} className="text-neutral-900 hover:text-orange-600 underline underline-offset-4">
+                        {siteConfig.contact.phone}
+                      </a>
+                    </dd>
+                  </div>
+                </dl>
               </div>
             </div>
 
-            <div className="bg-white border-2 border-slate-200 p-6 sm:p-8 lg:p-10">
-              <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Book your free consultation</h2>
-              <LeadForm redirectOnSuccess submitLabel="Send enquiry" />
+            <div>
+              <div className="border border-neutral-200 bg-white p-8 lg:p-10">
+                <h2 className="text-xl font-semibold tracking-tight text-neutral-900">Send an enquiry</h2>
+                <p className="mt-2 text-sm text-neutral-600">
+                  Takes about a minute. We don&rsquo;t share your details.
+                </p>
+                <div className="mt-8">
+                  <LeadForm redirectOnSuccess submitLabel="Send enquiry" />
+                </div>
+              </div>
             </div>
           </div>
         </div>

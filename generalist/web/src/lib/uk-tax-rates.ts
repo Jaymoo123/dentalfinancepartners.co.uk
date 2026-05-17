@@ -15,7 +15,7 @@ export const UK_TAX_RATES = {
   lastUpdated: "2026-05-17",
   publisher: {
     name: "Agency Founder Finance",
-    url: "https://www.agencyfounderfinance.co.uk",
+    url: "https://www.ukbusinessaccountants.co.uk",
   },
   corporationTax: {
     smallProfitsRate: 0.19,
@@ -194,7 +194,7 @@ export const UK_TAX_RATES = {
   licence: {
     name: "CC BY 4.0",
     url: "https://creativecommons.org/licenses/by/4.0/",
-    note: "Attribution: Agency Founder Finance, https://www.agencyfounderfinance.co.uk/uk-tax-rates",
+    note: "Attribution: Agency Founder Finance, https://www.ukbusinessaccountants.co.uk/uk-tax-rates",
   },
 } as const;
 

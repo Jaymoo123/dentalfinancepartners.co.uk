@@ -14,12 +14,12 @@ export function getResend(): Resend {
 
 export function getFromAddress(): string {
   const name = process.env.RESEND_FROM_NAME || "Agency Founder Finance";
-  const email = process.env.RESEND_FROM_EMAIL || "hello@agencyfounderfinance.co.uk";
+  const email = process.env.RESEND_FROM_EMAIL || "hello@ukbusinessaccountants.co.uk";
   return `${name} <${email}>`;
 }
 
 export function getReplyTo(): string {
-  return process.env.RESEND_REPLY_TO || "hello@agencyfounderfinance.co.uk";
+  return process.env.RESEND_REPLY_TO || "hello@ukbusinessaccountants.co.uk";
 }
 
 export function getAudienceId(): string | undefined {

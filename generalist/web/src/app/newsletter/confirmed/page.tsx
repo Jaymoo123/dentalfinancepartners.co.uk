@@ -44,7 +44,7 @@ export default async function ConfirmedPage({ searchParams }: Props) {
       <p className="mt-2 text-slate-700">
         If it doesn&rsquo;t show, check spam or promotions, and add{" "}
         <code className="rounded bg-slate-100 px-1 py-0.5 text-sm">
-          hello@agencyfounderfinance.co.uk
+          hello@ukbusinessaccountants.co.uk
         </code>{" "}
         to your contacts.
       </p>

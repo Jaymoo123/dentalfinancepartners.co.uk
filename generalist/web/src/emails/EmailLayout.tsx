@@ -41,8 +41,8 @@ export function EmailLayout({ preview, children, unsubscribeUrl }: Props) {
               for agency founders.
             </Text>
             <Text style={footerText}>
-              <Link href="https://www.agencyfounderfinance.co.uk" style={footerLink}>
-                agencyfounderfinance.co.uk
+              <Link href="https://www.ukbusinessaccountants.co.uk" style={footerLink}>
+                ukbusinessaccountants.co.uk
               </Link>
               {unsubscribeUrl ? (
                 <>
