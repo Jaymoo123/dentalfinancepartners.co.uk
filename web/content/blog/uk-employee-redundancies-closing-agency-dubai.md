@@ -50,9 +50,9 @@ keyTakeaways:
 <p>UK employment law requires three things when making employees redundant:</p>
 
 <ul>
-<li><strong>Statutory redundancy pay</strong> — a legal minimum payment based on age, length of service, and weekly pay</li>
-<li><strong>Notice pay</strong> — statutory or contractual notice, whichever is higher</li>
-<li><strong>Consultation</strong> — a meaningful process of informing and discussing with affected staff</li>
+<li><strong>Statutory redundancy pay</strong>, a legal minimum payment based on age, length of service, and weekly pay</li>
+<li><strong>Notice pay</strong>, statutory or contractual notice, whichever is higher</li>
+<li><strong>Consultation</strong>, a meaningful process of informing and discussing with affected staff</li>
 </ul>
 
 <p>Fail on any of these, and you open the door to an unfair dismissal claim or a protective award. Let us look at each one in detail.</p>

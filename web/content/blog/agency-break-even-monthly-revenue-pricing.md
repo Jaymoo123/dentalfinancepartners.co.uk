@@ -54,8 +54,8 @@ keyTakeaways:
 <p>There are two types of cost you need to capture:</p>
 
 <ul>
-<li><strong>Fixed costs</strong> — rent, software subscriptions, salaries, insurance, accountancy fees. These stay roughly the same regardless of how much work you do.</li>
-<li><strong>Variable costs</strong> — freelancers, contractors, platform spend, materials. These move with your revenue.</li>
+<li><strong>Fixed costs</strong>, rent, software subscriptions, salaries, insurance, accountancy fees. These stay roughly the same regardless of how much work you do.</li>
+<li><strong>Variable costs</strong>, freelancers, contractors, platform spend, materials. These move with your revenue.</li>
 </ul>
 
 <p>Your break-even number sits where total revenue covers total fixed costs plus total variable costs. Nothing left over. Zero profit. Zero loss.</p>
@@ -213,4 +213,4 @@ keyTakeaways:
 
 <p>If you want to run through your numbers with someone who understands agencies, <a href="/contact">book a call</a>. We will look at your fixed costs, your variable costs, and your pricing. No jargon. Just the numbers that matter.</p>
 
-<p>Knowing your break-even monthly revenue is the foundation of agency finance basics. Once you have it, everything else — pricing, hiring, growth — becomes clearer. You stop guessing and start deciding.</p>
+<p>Knowing your break-even monthly revenue is the foundation of agency finance basics. Once you have it, everything else, pricing, hiring, growth, becomes clearer. You stop guessing and start deciding.</p>

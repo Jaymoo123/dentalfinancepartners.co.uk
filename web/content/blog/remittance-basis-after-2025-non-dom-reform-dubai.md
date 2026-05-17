@@ -19,13 +19,13 @@ summary: The UK's 2025 non-dom reforms abolish the remittance basis for new arri
 schema: ''
 faqs:
 - question: What is the remittance basis and why is it being abolished in 2025?
-  answer: The remittance basis was a UK tax status for non-domiciled residents. It meant you only paid UK tax on UK income and gains — foreign income was only taxed if you brought it into the UK. The 2025 reforms abolish it for new residents because the government decided the old system was unfair and complex, replacing it with a four-year foreign income exemption for new arrivals.
+  answer: The remittance basis was a UK tax status for non-domiciled residents. It meant you only paid UK tax on UK income and gains, foreign income was only taxed if you brought it into the UK. The 2025 reforms abolish it for new residents because the government decided the old system was unfair and complex, replacing it with a four-year foreign income exemption for new arrivals.
 - question: Can I still use the remittance basis if I move to Dubai after April 2025?
   answer: No. If you become UK resident for the first time after 6 April 2025, the remittance basis is not available. You get the four-year foreign income exemption instead, but after four years you're taxed on worldwide income. If you genuinely leave the UK and become non-resident, the reform doesn't affect your Dubai income.
 - question: How does the reform affect my UK property if I move to Dubai?
   answer: If you're non-resident, you pay UK tax on rental income (20% basic rate) and capital gains on UK property. If you remain UK resident, the reform means you can no longer use the remittance basis to shield foreign income while owning UK property. You'll need to plan your property ownership structure carefully.
 - question: What should I do now if I'm planning a move to Dubai?
-  answer: First, confirm your UK residence status under the statutory residence test. Second, review your UK property and investment holdings. Third, consider timing — if you're already using the remittance basis, the 2025/26 and 2026/27 transitional periods allow you to remit pre-2025 income. Finally, speak to an ICAEW-qualified accountant who understands both UK and Dubai tax systems.
+  answer: First, confirm your UK residence status under the statutory residence test. Second, review your UK property and investment holdings. Third, consider timing, if you're already using the remittance basis, the 2025/26 and 2026/27 transitional periods allow you to remit pre-2025 income. Finally, speak to an ICAEW-qualified accountant who understands both UK and Dubai tax systems.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -43,7 +43,7 @@ keyTakeaways:
 
 <h2>What Was the Remittance Basis?</h2>
 
-<p>The remittance basis was a tax status available to UK residents who were not domiciled in the UK. It meant you only paid UK tax on UK-source income and gains. Your foreign income and gains were only taxed if you "remitted" them — brought them into the UK.</p>
+<p>The remittance basis was a tax status available to UK residents who were not domiciled in the UK. It meant you only paid UK tax on UK-source income and gains. Your foreign income and gains were only taxed if you "remitted" them, brought them into the UK.</p>
 
 <p>For agency founders moving to Dubai, this was historically very attractive. You could earn dividends from your UK agency, pay UK tax on that. But your Dubai-based investment income, overseas property gains, or foreign dividends could sit offshore tax-free, provided you didn't bring the money into the UK.</p>
 
@@ -68,7 +68,7 @@ keyTakeaways:
 
 <p>If you're already UK resident and using the remittance basis before April 2025, you get a transitional period. For the 2025/26 and 2026/27 tax years, you can still use the remittance basis on foreign income and gains that arose before 6 April 2025.</p>
 
-<p>But any foreign income or gains arising from 6 April 2025 onwards are taxed on the arising basis — meaning you pay UK tax on them in the year they arise, regardless of whether you bring the money to the UK.</p>
+<p>But any foreign income or gains arising from 6 April 2025 onwards are taxed on the arising basis, meaning you pay UK tax on them in the year they arise, regardless of whether you bring the money to the UK.</p>
 
 <p>This is a significant change for founders who have built up offshore investment portfolios or property holdings while using the remittance basis.</p>
 
@@ -80,7 +80,7 @@ keyTakeaways:
 
 <p><strong>Scenario 2: You move to Dubai but retain UK residence.</strong> This is where the reform bites. If you spend too many days in the UK, or retain a UK home, you remain UK resident. And from April 2025, if you haven't been non-resident for ten years, you get no foreign income exemption at all. Your Dubai earnings become UK-taxable immediately.</p>
 
-<p>This is a trap many founders fall into. They think "I'm based in Dubai" but their lifestyle — UK home, UK school runs, UK board meetings — keeps them UK resident. Under the new rules, that mistake becomes very expensive.</p>
+<p>This is a trap many founders fall into. They think "I'm based in Dubai" but their lifestyle, UK home, UK school runs, UK board meetings, keeps them UK resident. Under the new rules, that mistake becomes very expensive.</p>
 
 <h2>UK Property and Investment Planning After the Reform</h2>
 
@@ -99,7 +99,7 @@ keyTakeaways:
 
 <h3>Investment Portfolios</h3>
 
-<p>If you have offshore investment portfolios — Dubai-based funds, international stocks, foreign property — the new rules mean you need to think about the tax impact differently:</p>
+<p>If you have offshore investment portfolios, Dubai-based funds, international stocks, foreign property, the new rules mean you need to think about the tax impact differently:</p>
 
 <ul>
 <li>If you're non-resident, no UK tax on these (but check local Dubai tax rules)</li>
@@ -114,7 +114,7 @@ keyTakeaways:
 
 <p><strong>1. Get your UK residence status right.</strong> This is the single most important factor. If you genuinely leave the UK, you become non-resident and the remittance basis reform doesn't affect your Dubai income. But you must meet the statutory residence test. Keep a day-count diary. Avoid maintaining a UK home. Limit UK visits to fewer than 16 days per year (or 46 days if you've been resident for fewer than 3 of the last 4 years).</p>
 
-<p><strong>2. Review your UK property holdings.</strong> If you plan to keep UK property while living in Dubai, consider the tax implications on rental income and future capital gains. You may want to restructure ownership into a company or trust, but get professional advice — the rules are complex.</p>
+<p><strong>2. Review your UK property holdings.</strong> If you plan to keep UK property while living in Dubai, consider the tax implications on rental income and future capital gains. You may want to restructure ownership into a company or trust, but get professional advice, the rules are complex.</p>
 
 <p><strong>3. Consider your investment portfolio structure.</strong> If you're UK resident and approaching the end of your four-year exemption window, you may want to realise gains before the arising basis kicks in. Or consider moving investments into tax-efficient wrappers like ISAs (if you're eligible) or pensions.</p>
 
@@ -131,14 +131,14 @@ keyTakeaways:
 <p>If you leave the UK and become non-resident, the remittance basis stops applying because you're no longer UK resident. Your UK-source income (like agency dividends) remains UK-taxable, but your Dubai income is Dubai-taxed. The reform mainly affects those who remain UK resident.</p>
 
 <h3>Does the reform affect my UK agency's structure?</h3>
-<p>Not directly. Your UK agency pays corporation tax as normal. The reform affects your personal tax position as a founder — how your dividends, salary, and personal investments are taxed. If you're moving to Dubai, you may want to review your shareholding structure and dividend timing.</p>
+<p>Not directly. Your UK agency pays corporation tax as normal. The reform affects your personal tax position as a founder, how your dividends, salary, and personal investments are taxed. If you're moving to Dubai, you may want to review your shareholding structure and dividend timing.</p>
 
-<h3>What about the four-year exemption — can I use it to avoid tax on Dubai income?</h3>
+<h3>What about the four-year exemption, can I use it to avoid tax on Dubai income?</h3>
 <p>Yes, for the first four years of UK residence, provided you haven't been UK resident in any of the previous ten tax years. But after four years, you're on the arising basis. And you cannot remit the income to the UK during the exemption period without triggering tax.</p>
 
 <h2>Final Thoughts</h2>
 
-<p>The <strong>remittance basis after 2025 non-dom reform</strong> is a major shift for UK tax planning. For agency founders moving to Dubai, the key takeaway is this: if you genuinely leave the UK, the reform doesn't affect your Dubai income. But if you remain UK resident — even while living partly in Dubai — the old strategies of keeping foreign income offshore are gone.</p>
+<p>The <strong>remittance basis after 2025 non-dom reform</strong> is a major shift for UK tax planning. For agency founders moving to Dubai, the key takeaway is this: if you genuinely leave the UK, the reform doesn't affect your Dubai income. But if you remain UK resident, even while living partly in Dubai, the old strategies of keeping foreign income offshore are gone.</p>
 
 <p>Get your residence status right. Plan your property and investment structure early. And work with accountants who understand both UK and Dubai tax systems.</p>
 

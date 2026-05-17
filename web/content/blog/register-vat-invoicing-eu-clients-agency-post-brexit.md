@@ -71,10 +71,10 @@ keyTakeaways:
 <li>Your UK VAT number (e.g. GB123456789)</li>
 <li>Your client's VAT number (including their country code, e.g. FR12345678901 for France, DE123456789 for Germany)</li>
 <li>Your client's name and address</li>
-<li>A clear description of the services (e.g. "Digital marketing services — social media campaign management")</li>
+<li>A clear description of the services (e.g. "Digital marketing services, social media campaign management")</li>
 <li>The net value of the services in GBP or agreed currency</li>
-<li>A line stating: "VAT: Reverse charge — the customer must account for VAT under Article 44 of the EU VAT Directive" or simply "Reverse charge: VAT to be accounted for by the customer"</li>
-<li>No UK VAT charged — the total equals the net value</li>
+<li>A line stating: "VAT: Reverse charge, the customer must account for VAT under Article 44 of the EU VAT Directive" or simply "Reverse charge: VAT to be accounted for by the customer"</li>
+<li>No UK VAT charged, the total equals the net value</li>
 <li>Your invoice number, date, and payment terms</li>
 </ul>
 

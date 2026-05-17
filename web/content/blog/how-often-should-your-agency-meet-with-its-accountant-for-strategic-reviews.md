@@ -15,13 +15,13 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/person-in-oversized-blazer-carrying-a-notebook-and-calculator-9304921/
   source: Pexels
 h1: How Often Should Your Agency Meet with Its Accountant for Strategic Reviews?
-summary: Most agency founders meet their accountant once a year at tax return time. That is not enough. Here is the review cadence we recommend for growing agencies — monthly, quarterly, and annual strategic reviews that actually move the needle.
+summary: Most agency founders meet their accountant once a year at tax return time. That is not enough. Here is the review cadence we recommend for growing agencies, monthly, quarterly, and annual strategic reviews that actually move the needle.
 schema: ''
 faqs:
 - question: How often should a small agency meet with its accountant?
   answer: For agencies under £150k turnover, quarterly reviews are sufficient. You should still receive monthly management accounts reports, but a full 60-minute meeting every three months is enough to catch issues early. For sole traders, quarterly is the minimum to avoid surprises at year-end.
 - question: What should I bring to a strategic review with my accountant?
-  answer: Bring your latest management accounts (P&L, balance sheet, cash flow statement), your aged debtors report, your utilisation report if you track it, and any major business decisions you are considering — new hires, new services, price changes, potential client wins or losses. The more context you give, the better the advice.
+  answer: Bring your latest management accounts (P&L, balance sheet, cash flow statement), your aged debtors report, your utilisation report if you track it, and any major business decisions you are considering, new hires, new services, price changes, potential client wins or losses. The more context you give, the better the advice.
 - question: Can my accountant help with exit planning during these reviews?
   answer: Yes, and they should. Every quarterly review should include a 5-minute check on exit readiness. Are your accounts clean? Is your revenue concentrated? Do you have signed contracts? If you are planning to sell in 3-5 years, your accountant should be building the data trail now. Waiting until you list the agency is too late.
 - question: What if my current accountant does not offer strategic reviews?
@@ -39,7 +39,7 @@ keyTakeaways:
 
 <p>That is a missed opportunity. A big one.</p>
 
-<p>If you only ever talk to your accountant about compliance, you are paying for a filing service. You are not getting the strategic finance function that a growing agency needs. The question is not whether you <em>should</em> meet your accountant for strategic reviews. It is how often — and what you should cover when you do.</p>
+<p>If you only ever talk to your accountant about compliance, you are paying for a filing service. You are not getting the strategic finance function that a growing agency needs. The question is not whether you <em>should</em> meet your accountant for strategic reviews. It is how often, and what you should cover when you do.</p>
 
 <p>Here is the cadence we recommend at <a href="/about">Agency Founder Finance</a>, based on working with agencies from 5-figure startups to 7-figure exits. And yes, we practice what we preach.</p>
 
@@ -59,7 +59,7 @@ keyTakeaways:
 
 <p>This is the meeting most agency founders skip. And it is the one that stops small problems becoming big ones.</p>
 
-<p>Once a month, you and your accountant should spend 30-45 minutes reviewing your management accounts. Not your tax return. Not your year-end file. Your actual monthly numbers — revenue, gross margin, overheads, net profit, cash position.</p>
+<p>Once a month, you and your accountant should spend 30-45 minutes reviewing your management accounts. Not your tax return. Not your year-end file. Your actual monthly numbers, revenue, gross margin, overheads, net profit, cash position.</p>
 
 <p>Here is what we look at in these meetings:</p>
 
@@ -71,7 +71,7 @@ keyTakeaways:
 <li><strong>Cash position and aged debtors:</strong> Who has not paid you in 60+ days? What is the plan to chase them?</li>
 </ul>
 
-<p>A good accountant does not just send you the numbers. They ask questions. "Your gross margin dropped from 58% to 52% this month. What changed?" "Your utilisation rate is up but your net profit is flat — where is the extra cost going?"</p>
+<p>A good accountant does not just send you the numbers. They ask questions. "Your gross margin dropped from 58% to 52% this month. What changed?" "Your utilisation rate is up but your net profit is flat, where is the extra cost going?"</p>
 
 <p>If your current accountant only sends you a PDF once a quarter and never asks those questions, you are not getting a strategic review. You are getting a report.</p>
 
@@ -84,7 +84,7 @@ keyTakeaways:
 <h3>Profitability Deep Dive</h3>
 <p>Monthly reviews catch margin shifts. Quarterly reviews ask why those shifts matter. Are certain clients or projects dragging your overall margin down? Should you fire a client? Should you raise rates?</p>
 
-<p>We worked with a 12-person digital agency in Manchester Northern Quarter that was billing £800k a year but barely breaking even. Their quarterly review revealed that one retainer client — 18% of revenue — had a gross margin of 22%. Every other client was above 55%. They fired the client, replaced the revenue with two better-fit projects, and their net profit went from £18k to £74k in one year. That is what a quarterly review can do.</p>
+<p>We worked with a 12-person digital agency in Manchester Northern Quarter that was billing £800k a year but barely breaking even. Their quarterly review revealed that one retainer client, 18% of revenue, had a gross margin of 22%. Every other client was above 55%. They fired the client, replaced the revenue with two better-fit projects, and their net profit went from £18k to £74k in one year. That is what a quarterly review can do.</p>
 
 <h3>Cash Flow Forecasting</h3>
 <p>Most agency founders run on gut feel about cash. "We have enough in the bank." But a quarterly review forces you to model the next three months. What happens if a retainer client gives notice? What happens if a project slips by six weeks? What happens if your biggest client pays 60 days late instead of 30?</p>
@@ -92,7 +92,7 @@ keyTakeaways:
 <p>Your accountant should help you stress-test these scenarios. If you do not have a cash flow forecast, start building one. Tools like <a href="/services">Float</a> integrate with Xero and QuickBooks and give you a rolling 90-day view.</p>
 
 <h3>Tax Planning</h3>
-<p>Quarterly is the time to check your tax position. Not in January when it is too late. In April, July, October, and January — before the liability lands.</p>
+<p>Quarterly is the time to check your tax position. Not in January when it is too late. In April, July, October, and January, before the liability lands.</p>
 
 <p>Are you on track for corporation tax? Have you used your Annual Investment Allowance (£1m per year) to buy equipment before year-end? Should you pay into a pension to reduce your personal tax bill? Should you adjust your salary-dividend split?</p>
 
@@ -105,7 +105,7 @@ keyTakeaways:
 
 <h2>Annual Planning and Compliance Review</h2>
 
-<p>The annual review is the longest meeting, and it should happen well before the tax deadline. We schedule these in March or April for most clients — nine months before the January filing deadline. That gives time to act on what we find.</p>
+<p>The annual review is the longest meeting, and it should happen well before the tax deadline. We schedule these in March or April for most clients, nine months before the January filing deadline. That gives time to act on what we find.</p>
 
 <p>Here is what the annual review covers:</p>
 
@@ -129,7 +129,7 @@ keyTakeaways:
 
 <p>I hear this a lot. "I am a sole trader turning over £65k. I cannot justify monthly meetings."</p>
 
-<p>Fair point. If you are below £150k turnover, monthly reviews may be overkill. But quarterly reviews are not. Even a sole trader web designer in Shoreditch benefits from a quarterly check-in. One missed retainer notice, one scope creep project, one late-paying client — and your cash flow is shot. A quarterly review catches that before it becomes a crisis.</p>
+<p>Fair point. If you are below £150k turnover, monthly reviews may be overkill. But quarterly reviews are not. Even a sole trader web designer in Shoreditch benefits from a quarterly check-in. One missed retainer notice, one scope creep project, one late-paying client, and your cash flow is shot. A quarterly review catches that before it becomes a crisis.</p>
 
 <p>If you are between £150k and £500k, aim for quarterly reviews with a monthly management accounts report (even if you do not meet to discuss it). If you are above £500k, monthly reviews are non-negotiable. The complexity of payroll, VAT, multiple revenue streams, and contractor IR35 status demands it.</p>
 
@@ -148,7 +148,7 @@ keyTakeaways:
 
 <h2>The Bottom Line</h2>
 
-<p>If you only meet your accountant once a year, you are running your agency blind for the other 364 days. Strategic reviews — monthly for management accounts, quarterly for strategy, annually for planning — turn your accountant from a compliance cost into a business asset.</p>
+<p>If you only meet your accountant once a year, you are running your agency blind for the other 364 days. Strategic reviews, monthly for management accounts, quarterly for strategy, annually for planning, turn your accountant from a compliance cost into a business asset.</p>
 
 <p>The agencies that grow fastest and sell highest are the ones that treat their numbers as a tool, not a chore. They know their gross margin by client. They know their utilisation rate by team member. They know their cash position 90 days out. And they have an accountant who helps them see around corners.</p>
 

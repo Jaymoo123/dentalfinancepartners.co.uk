@@ -23,7 +23,7 @@ faqs:
 - question: Can I incorporate my agency myself?
   answer: Yes, you can file the IN01 form online directly with Companies House. However, we strongly recommend professional advice on share structure, articles of association, and the transfer of your trade from sole trader to company. Mistakes in the articles can create significant tax problems later. We offer a fixed-price incorporation service for agency founders.
 - question: Do I need a holding company for my agency?
-  answer: Only if you have significant assets to protect — typically over £500,000 in retained profits — or if you run multiple trading entities (for example, a PPC agency and a creative agency under one group). For a single agency with less than that, a simple limited company is usually sufficient and more cost-effective.
+  answer: Only if you have significant assets to protect, typically over £500,000 in retained profits, or if you run multiple trading entities (for example, a PPC agency and a creative agency under one group). For a single agency with less than that, a simple limited company is usually sufficient and more cost-effective.
 - question: What are alphabet shares and do I need them?
   answer: Alphabet shares are different classes of shares (A shares, B shares, C shares) that carry different rights, most commonly different dividend rights. They are useful for flexible dividend extraction, bringing in co-founders with different economic rights, or issuing growth shares to employees. Most single-founder agencies do not need them. They add complexity to your accounts and should only be used when there is a clear, ongoing benefit.
 authorSlug: james-whitfield
@@ -37,7 +37,7 @@ keyTakeaways:
 ---
 <p>Should you incorporate your agency? It's the single biggest structural decision you'll make as a founder. Get it right, and you'll save tens of thousands in tax, protect your personal assets, and build a business that can scale, attract investment, and eventually exit. Get it wrong, and you'll spend years unpicking a structure that costs you money, flexibility, and sleep.</p>
 
-<p>This is the definitive guide to <strong>incorporating agency UK</strong> for founders of marketing, digital, creative, PR, advertising, web design, SEO, PPC, and recruitment agencies. We work with 73+ UK and UAE agency founders as ICAEW-qualified accountants. We've seen every structure, every mistake, and every optimal path. This guide covers everything from first principles — sole trader vs limited company — through to advanced structures like holding companies, family investment companies, and alphabet shares.</p>
+<p>This is the definitive guide to <strong>incorporating agency UK</strong> for founders of marketing, digital, creative, PR, advertising, web design, SEO, PPC, and recruitment agencies. We work with 73+ UK and UAE agency founders as ICAEW-qualified accountants. We've seen every structure, every mistake, and every optimal path. This guide covers everything from first principles, sole trader vs limited company, through to advanced structures like holding companies, family investment companies, and alphabet shares.</p>
 
 <p>This guide is for you if you're a UK agency founder asking any of these questions:</p>
 <ul>
@@ -52,27 +52,27 @@ keyTakeaways:
 
 <h2>Why Incorporate Your Agency? The Core Trade-Offs</h2>
 
-<p>Every agency founder starts somewhere. Many begin as sole traders, freelancers, or partnerships. It's simple, cheap, and low-admin. But as your agency grows — when you hire staff, sign retainer contracts, or build a brand — the sole trader model starts to pinch.</p>
+<p>Every agency founder starts somewhere. Many begin as sole traders, freelancers, or partnerships. It's simple, cheap, and low-admin. But as your agency grows, when you hire staff, sign retainer contracts, or build a brand, the sole trader model starts to pinch.</p>
 
 <p>Incorporating means forming a limited company, a separate legal entity from you personally. The company owns the assets, signs the contracts, employs the staff, and pays its own tax. You become a director and shareholder. The trade-offs are real.</p>
 
 <h3>Tax Efficiency: The Numbers That Matter</h3>
 
-<p>This is the headline reason most agency founders incorporate. As a sole trader, you pay income tax on all your profits at your marginal rate — 20%, 40%, or 45%. You also pay Class 2 and Class 4 National Insurance. On profits of £100,000, a sole trader in England pays roughly £33,500 in combined income tax and NI.</p>
+<p>This is the headline reason most agency founders incorporate. As a sole trader, you pay income tax on all your profits at your marginal rate, 20%, 40%, or 45%. You also pay Class 2 and Class 4 National Insurance. On profits of £100,000, a sole trader in England pays roughly £33,500 in combined income tax and NI.</p>
 
-<p>As a limited company, you pay corporation tax on the profits — 19% up to £50,000, then marginal relief up to 25% at £250,000. You then extract money as a mix of salary and dividends. A director taking £100,000 of profit as £12,570 salary and £87,430 dividends pays roughly £22,800 in total tax. That's a saving of about £10,700 on £100,000. On £200,000, the saving is closer to £28,000.</p>
+<p>As a limited company, you pay corporation tax on the profits, 19% up to £50,000, then marginal relief up to 25% at £250,000. You then extract money as a mix of salary and dividends. A director taking £100,000 of profit as £12,570 salary and £87,430 dividends pays roughly £22,800 in total tax. That's a saving of about £10,700 on £100,000. On £200,000, the saving is closer to £28,000.</p>
 
 <p>These numbers shift each year with tax changes, but the fundamental advantage remains: corporation tax plus dividends is almost always cheaper than income tax plus NI on the same profit.</p>
 
 <h3>Limited Liability: Protecting Your Personal Assets</h3>
 
-<p>As a sole trader, you are the business. If a client sues you, if a project goes catastrophically wrong, if a supplier chases a debt — your personal assets are on the line. Your house, your car, your savings.</p>
+<p>As a sole trader, you are the business. If a client sues you, if a project goes catastrophically wrong, if a supplier chases a debt, your personal assets are on the line. Your house, your car, your savings.</p>
 
 <p>A limited company is a separate legal entity. The company is liable, not you personally (provided you haven't given personal guarantees or acted negligently). For agencies with significant client contracts, this is non-negotiable. One scope-creep dispute that escalates to litigation can wipe out a sole trader. A limited company can absorb that risk.</p>
 
 <h3>Credibility and Contracts</h3>
 
-<p>Larger clients — corporates, public sector, blue-chips — often refuse to contract with sole traders. They want a limited company with proper insurance, VAT registration, and a registered address. If you're pitching for £50k+ retainers, a limited company signals stability. It says you're serious.</p>
+<p>Larger clients, corporates, public sector, blue-chips, often refuse to contract with sole traders. They want a limited company with proper insurance, VAT registration, and a registered address. If you're pitching for £50k+ retainers, a limited company signals stability. It says you're serious.</p>
 
 <p>Similarly, if you need to hire staff, a limited company is the standard vehicle. You can't employ someone as a sole trader in any practical sense. You need a PAYE scheme, employer NI, pension auto-enrolment. All of that requires a company structure.</p>
 
@@ -192,7 +192,7 @@ keyTakeaways:
 <p>If you have co-founders, you split the shares according to your agreement. 50/50, 60/40, 70/30. The articles of association should include drag-along and tag-along rights, and a shareholders' agreement is essential. Without one, a 50/50 deadlock can paralyse the company.</p>
 
 <h3>Alphabet Shares: Flexibility for Dividend Extraction</h3>
-<p>Alphabet shares — A shares, B shares, C shares — are different classes of shares that carry different rights. The most common use is different dividend rights. You might have A shares that pay dividends at the director's discretion, and B shares that pay a fixed dividend. Or you might have different classes for different family members to manage their tax positions.</p>
+<p>Alphabet shares, A shares, B shares, C shares, are different classes of shares that carry different rights. The most common use is different dividend rights. You might have A shares that pay dividends at the director's discretion, and B shares that pay a fixed dividend. Or you might have different classes for different family members to manage their tax positions.</p>
 
 <p>For agency founders, alphabet shares are most useful when:</p>
 <ul>
@@ -200,10 +200,10 @@ keyTakeaways:
 <li>You want to pay dividends to family members in lower tax brackets.</li>
 <li>You want to issue growth shares to key employees without giving them full equity.</li>
 </ul>
-<p>Alphabet shares require careful drafting in the articles of association. They also create complexity in your annual accounts and dividend vouchers. We typically recommend them only when there's a clear, ongoing benefit — not just for the sake of having them.</p>
+<p>Alphabet shares require careful drafting in the articles of association. They also create complexity in your annual accounts and dividend vouchers. We typically recommend them only when there's a clear, ongoing benefit, not just for the sake of having them.</p>
 
 <h3>Holding Companies: Protection and Separation</h3>
-<p>A holding company structure involves two (or more) companies. The holding company owns the shares of the operating company. The operating company trades, employs staff, signs contracts. The holding company holds assets — cash reserves, intellectual property, property, investments.</p>
+<p>A holding company structure involves two (or more) companies. The holding company owns the shares of the operating company. The operating company trades, employs staff, signs contracts. The holding company holds assets, cash reserves, intellectual property, property, investments.</p>
 
 <p>Why would you do this? Three reasons:</p>
 <ul>
@@ -211,14 +211,14 @@ keyTakeaways:
 <li><strong>Tax efficiency on exit.</strong> You can sell the holding company shares, not the operating company shares, which can be more tax-efficient depending on your structure.</li>
 <li><strong>Separation of trading risk.</strong> If you run multiple agencies (say a PPC agency and a creative agency), each can be a separate operating company under the same holding company. If one fails, the other is protected.</li>
 </ul>
-<p>A holding company adds cost — two sets of accounts, two CT600s, two confirmation statements. It's only worth it if you have significant assets to protect or multiple trading entities. For a single agency with less than £500,000 in retained profits, it's usually overkill.</p>
+<p>A holding company adds cost, two sets of accounts, two CT600s, two confirmation statements. It's only worth it if you have significant assets to protect or multiple trading entities. For a single agency with less than £500,000 in retained profits, it's usually overkill.</p>
 
 <h3>Family Investment Companies (FICs)</h3>
 <p>A Family Investment Company is a private limited company that holds investments for a family group. It's not a trading company. For agency founders who have built significant wealth and want to pass it to the next generation without triggering inheritance tax, a FIC can be powerful.</p>
 
 <p>FICs use different share classes to separate control from economic benefit. The founder holds voting shares (control) while family members hold non-voting shares that receive dividends. This allows income to be distributed to family members in lower tax brackets.</p>
 
-<p>FICs are complex and expensive to set up — expect £5,000-£15,000 in legal and tax advice. They're for agency founders who have already extracted significant value from their agency and are planning long-term wealth transfer.</p>
+<p>FICs are complex and expensive to set up, expect £5,000-£15,000 in legal and tax advice. They're for agency founders who have already extracted significant value from their agency and are planning long-term wealth transfer.</p>
 
 <h2>The Incorporation Process: Step by Step</h2>
 
@@ -339,7 +339,7 @@ A: Companies House charges £12 online. Accountancy and legal fees for a straigh
 A: Yes, you can file IN01 online yourself. But we strongly recommend getting professional advice on structure, articles, and trade transfer. A mistake in the articles can cost you thousands in tax later. We offer a fixed-price incorporation service for agency founders.</p>
 
 <p><strong>Q: How long does incorporation take?</strong><br>
-A: Online filing with Companies House takes 24 hours (or same day for £40). The full process — including registering for tax, opening a bank account, and transferring your trade — takes 2-4 weeks. Plan accordingly.</p>
+A: Online filing with Companies House takes 24 hours (or same day for £40). The full process, including registering for tax, opening a bank account, and transferring your trade, takes 2-4 weeks. Plan accordingly.</p>
 
 <p><strong>Q: Do I need a holding company?</strong><br>
 A: Only if you have significant assets to protect (over £500,000 retained profits) or multiple trading entities. For a single agency, a simple limited company is usually sufficient. We discuss this in our <a href="/blog/incorporation-and-structure">incorporation and structure blog</a>.</p>

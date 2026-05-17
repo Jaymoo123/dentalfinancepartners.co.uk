@@ -35,7 +35,7 @@ keyTakeaways:
 - Paying an unlawful dividend exposes directors to personal liability, HMRC penalties, and potential clawback in insolvency.
 - If retained earnings are zero after accounting for losses, you cannot pay a dividend until further profits are generated.
 ---
-<p>You cannot pay dividends if your agency has made a loss in the current year. This is a legal requirement under the Companies Act 2006, not just a tax point. Dividends can only be paid from "distributable profits" — essentially, the accumulated retained profits your agency has built up over time, not the current year's performance alone.</p>
+<p>You cannot pay dividends if your agency has made a loss in the current year. This is a legal requirement under the Companies Act 2006, not just a tax point. Dividends can only be paid from "distributable profits", essentially, the accumulated retained profits your agency has built up over time, not the current year's performance alone.</p>
 
 <p>This catches a lot of agency founders off guard. You might have a strong retained reserve from previous years but hit a rough patch this year. Or you might have assumed that because you have cash in the bank, you can pay a dividend. Cash and profit are not the same thing. And HMRC, along with company law, cares about the latter.</p>
 
@@ -50,7 +50,7 @@ keyTakeaways:
 <ul>
 <li>Your agency made £80,000 profit last year. You paid yourself a dividend of £60,000.</li>
 <li>This year, you have a loss of £20,000. You have cash in the bank from last year's retained profits.</li>
-<li>Can you pay a dividend this year? <strong>Yes — but only if you have sufficient retained profits remaining from previous years.</strong></li>
+<li>Can you pay a dividend this year? <strong>Yes, but only if you have sufficient retained profits remaining from previous years.</strong></li>
 </ul>
 
 <p>The loss in the current year does not automatically prevent a dividend. What matters is whether your total retained earnings (the profit and loss reserve on your balance sheet) are still positive after accounting for the loss.</p>
@@ -60,7 +60,7 @@ keyTakeaways:
 <h2>The Two Key Tests for a Lawful Dividend</h2>
 
 <h3>1. The Profit Test</h3>
-<p>Your agency must have distributable profits. These are calculated using your annual accounts, management accounts, or interim accounts (depending on when you pay the dividend). You cannot rely on cash flow alone. A profitable-looking P&L does not automatically mean you have distributable profits either — you need to check the retained earnings on your balance sheet.</p>
+<p>Your agency must have distributable profits. These are calculated using your annual accounts, management accounts, or interim accounts (depending on when you pay the dividend). You cannot rely on cash flow alone. A profitable-looking P&L does not automatically mean you have distributable profits either, you need to check the retained earnings on your balance sheet.</p>
 
 <h3>2. The Liquidity Test</h3>
 <p>Even if you have distributable profits on paper, you need to consider whether paying the dividend would leave your agency unable to pay its debts as they fall due. This is the wrongful trading risk. If you pay a dividend and your agency becomes insolvent within 12 months, the dividend could be clawed back and you could face personal liability.</p>

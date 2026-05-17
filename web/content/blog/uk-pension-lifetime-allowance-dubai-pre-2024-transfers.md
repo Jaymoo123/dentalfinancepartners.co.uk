@@ -49,9 +49,9 @@ faqs:
 <p>Before the lifetime allowance was abolished, HMRC offered several forms of protection. These allowed individuals to lock in a higher lifetime allowance than the standard figure, or to protect their pension from future reductions in the allowance.</p>
 
 <ul>
-<li><strong>Enhanced Protection</strong> — gave you no lifetime allowance limit if you stopped contributing to your pension after 5 April 2006.</li>
-<li><strong>Fixed Protection 2012, 2014, and 2016</strong> — locked in the lifetime allowance at a specific date, but required you to stop building up benefits.</li>
-<li><strong>Individual Protection 2014 and 2016</strong> — protected the value of your pension at a specific date, with a cap at £1.25m or £1m respectively.</li>
+<li><strong>Enhanced Protection</strong>, gave you no lifetime allowance limit if you stopped contributing to your pension after 5 April 2006.</li>
+<li><strong>Fixed Protection 2012, 2014, and 2016</strong>, locked in the lifetime allowance at a specific date, but required you to stop building up benefits.</li>
+<li><strong>Individual Protection 2014 and 2016</strong>, protected the value of your pension at a specific date, with a cap at £1.25m or £1m respectively.</li>
 </ul>
 
 <p>If you held one of these protections and transferred your pension to a Dubai QROPS before April 2024, the lifetime allowance test applied at the point of transfer. The charge was calculated based on your protected allowance, not the standard allowance.</p>
@@ -72,7 +72,7 @@ faqs:
 
 <p>HMRC's position is clear. The protections applied at the date of transfer. If your transfer was correctly tested against your protected allowance and the charge was paid, that is the end of the matter.</p>
 
-<p>If your transfer was <em>not</em> tested correctly — for example, if your scheme administrator failed to apply your protection — you may have overpaid or underpaid the charge. This is worth checking.</p>
+<p>If your transfer was <em>not</em> tested correctly, for example, if your scheme administrator failed to apply your protection, you may have overpaid or underpaid the charge. This is worth checking.</p>
 
 <h2>How the Lifetime Allowance Charge Worked for a Dubai QROPS Transfer</h2>
 

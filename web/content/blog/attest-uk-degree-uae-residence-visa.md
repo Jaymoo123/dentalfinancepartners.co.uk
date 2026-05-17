@@ -52,13 +52,13 @@ keyTakeaways:
 <p>Before you start, gather the following documents. Missing one will send you back to the start of the queue.</p>
 
 <ul>
-<li><strong>Original degree certificate</strong> — The physical document issued by your UK university. Not a copy, not a digital version. The original.</li>
-<li><strong>Certified copy of your degree</strong> — Some authorities accept a copy certified by a solicitor or notary public. Check the specific requirements of the authority you are using.</li>
-<li><strong>Academic transcript</strong> — Your university can issue this. It lists your modules and grades. Some attestation routes require it, some do not. Get it anyway.</li>
-<li><strong>Passport copy</strong> — A clear colour copy of the photo page of your passport.</li>
-<li><strong>UK visa or biometric residence permit</strong> — If you are not a British citizen but studied in the UK, you may need to provide evidence of your right to study there.</li>
-<li><strong>Marriage certificate</strong> — If your name has changed since graduation (for example, after marriage), you will need to provide the certificate linking your current name to your degree.</li>
-<li><strong>Cover letter</strong> — A short letter explaining what you are applying for and listing the documents enclosed. Most attestation services provide a template.</li>
+<li><strong>Original degree certificate</strong>, The physical document issued by your UK university. Not a copy, not a digital version. The original.</li>
+<li><strong>Certified copy of your degree</strong>, Some authorities accept a copy certified by a solicitor or notary public. Check the specific requirements of the authority you are using.</li>
+<li><strong>Academic transcript</strong>, Your university can issue this. It lists your modules and grades. Some attestation routes require it, some do not. Get it anyway.</li>
+<li><strong>Passport copy</strong>, A clear colour copy of the photo page of your passport.</li>
+<li><strong>UK visa or biometric residence permit</strong>, If you are not a British citizen but studied in the UK, you may need to provide evidence of your right to study there.</li>
+<li><strong>Marriage certificate</strong>, If your name has changed since graduation (for example, after marriage), you will need to provide the certificate linking your current name to your degree.</li>
+<li><strong>Cover letter</strong>, A short letter explaining what you are applying for and listing the documents enclosed. Most attestation services provide a template.</li>
 </ul>
 
 <p>Do not assume you can skip the transcript. Some UAE visa categories require it, and you will waste weeks if you have to go back to your university for a reissue.</p>

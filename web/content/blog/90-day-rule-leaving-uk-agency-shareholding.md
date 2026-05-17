@@ -49,7 +49,7 @@ keyTakeaways:
 
 <h2>How the 90 Day Rule Applies to Your Agency Shareholding</h2>
 
-<p>Here is where it gets specific for agency founders. If you sell your shares in your agency while you are UK resident, the gain is subject to UK Capital Gains Tax (CGT). If you sell while non-resident, the gain is generally outside UK tax — provided you have been non-resident for at least five full tax years before the sale.</p>
+<p>Here is where it gets specific for agency founders. If you sell your shares in your agency while you are UK resident, the gain is subject to UK Capital Gains Tax (CGT). If you sell while non-resident, the gain is generally outside UK tax, provided you have been non-resident for at least five full tax years before the sale.</p>
 
 <p>The 90 day rule is what determines your residence status in the year of sale. If you sell your shares in January 2027, HMRC looks at your days in the UK for the 2026/27 tax year. If you hit 91 days, you are resident. The gain is taxable in the UK.</p>
 
@@ -85,7 +85,7 @@ keyTakeaways:
 
 <p>Yes. The rule applies to your residence status, which determines whether your worldwide gains are taxable in the UK. Your agency shares are a worldwide asset. If you are UK resident when you sell them, the gain is taxable.</p>
 
-<p>There is a specific anti-avoidance rule for shares in companies that are "UK property rich" — but for a standard agency that rents its office and does not own property, this is rarely relevant.</p>
+<p>There is a specific anti-avoidance rule for shares in companies that are "UK property rich", but for a standard agency that rents its office and does not own property, this is rarely relevant.</p>
 
 <p>The key point: your shareholding does not get special treatment. The 90 day rule applies to you as an individual, and your residence status determines the tax treatment of the sale.</p>
 
@@ -104,7 +104,7 @@ keyTakeaways:
 <h3>1. Track Your Days From Day One</h3>
 <p>Use a spreadsheet or an app. Record every arrival and departure. Include flight details. This is your evidence if HMRC ever queries your residence status.</p>
 
-<p>We recommend keeping a physical or digital diary for the first 12 months. After that, you will have a pattern and can be more relaxed — but never stop tracking entirely.</p>
+<p>We recommend keeping a physical or digital diary for the first 12 months. After that, you will have a pattern and can be more relaxed, but never stop tracking entirely.</p>
 
 <h3>2. Plan Your UK Visits Around the Tax Year</h3>
 <p>The tax year runs 6 April to 5 April. If you know you will be in the UK for Christmas and New Year (say 20 December to 5 January), that is 17 days. If you also attend a client conference in March for 5 days, you are at 22 days. That is fine. But if you add a summer trip, a birthday visit, and a board meeting, you can quickly hit 60, 70, or 90 days.</p>
@@ -122,7 +122,7 @@ keyTakeaways:
 <p>If the sale is likely to happen in a specific year, plan your UK visits around it. Do not book a two-week trip to London in January if the sale is completing in February.</p>
 
 <h3>5. Get Professional Advice Before You Move</h3>
-<p>The 90 day rule is straightforward on paper. In practice, it interacts with other rules — the 30 day rule, the "sufficient ties" test, the overseas workday relief rules, and the temporary non-residence rules.</p>
+<p>The 90 day rule is straightforward on paper. In practice, it interacts with other rules, the 30 day rule, the "sufficient ties" test, the overseas workday relief rules, and the temporary non-residence rules.</p>
 
 <p>As ICAEW qualified accountants, we work with agency founders moving to Dubai and other jurisdictions. We help them structure their departure, track their days, and plan their share sale to minimise UK tax.</p>
 
@@ -133,7 +133,7 @@ keyTakeaways:
 
 <p>If you do not file, HMRC can open an enquiry. They can charge penalties and interest. In serious cases, they can pursue criminal prosecution for deliberate non-compliance.</p>
 
-<p>The best approach is to avoid the breach entirely. But if it happens, tell your accountant immediately. There may be steps you can take — though none are guaranteed to reverse the residence determination.</p>
+<p>The best approach is to avoid the breach entirely. But if it happens, tell your accountant immediately. There may be steps you can take, though none are guaranteed to reverse the residence determination.</p>
 
 <h2>Summary</h2>
 <p>The 90 day rule is the hard line in the UK Statutory Residence Test. Spend 91 days or more in the UK in a tax year, and you are UK resident. For agency founders, that means any gain from selling your shares is taxable in the UK.</p>

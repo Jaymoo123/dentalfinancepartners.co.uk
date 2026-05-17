@@ -44,8 +44,8 @@ keyTakeaways:
 <p>There are two ways to move income from you to your spouse in a limited company structure:</p>
 
 <ul>
-<li><strong>Salary sacrifice</strong> — you reduce your own salary, and the company pays a higher salary to your spouse instead.</li>
-<li><strong>Dividend waiver</strong> — you waive your right to some or all of your dividends, and your spouse receives more dividends from their shares.</li>
+<li><strong>Salary sacrifice</strong>, you reduce your own salary, and the company pays a higher salary to your spouse instead.</li>
+<li><strong>Dividend waiver</strong>, you waive your right to some or all of your dividends, and your spouse receives more dividends from their shares.</li>
 </ul>
 
 <p>Both achieve the same end goal: more income in your spouse's name, less in yours. But the tax treatment is different. And the practical implications for your agency are different too.</p>

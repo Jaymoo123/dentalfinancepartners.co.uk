@@ -83,7 +83,7 @@ keyTakeaways:
 <li><strong>Business expenses</strong> paid or reimbursed by the company are not benefits if they're wholly for business purposes. Travel costs, client entertainment, and office supplies all fall here.</li>
 <li><strong>Trivial benefits</strong> under £50 per item, not cash or vouchers, and not provided under a salary sacrifice arrangement. A £40 birthday gift card? Exempt. A £60 one? Reportable.</li>
 <li><strong>Pension contributions</strong> made by the company directly to a registered pension scheme are not benefits in kind. They're a deductible business expense for the company and not taxable on the director.</li>
-<li><strong>Mobile phones</strong> — one mobile phone per employee is exempt, including the line rental and calls. A second phone for personal use is a benefit.</li>
+<li><strong>Mobile phones</strong>, one mobile phone per employee is exempt, including the line rental and calls. A second phone for personal use is a benefit.</li>
 </ul>
 
 <h2>The P11D(b): The Company's Additional Liability</h2>

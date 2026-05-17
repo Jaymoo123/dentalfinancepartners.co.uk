@@ -23,7 +23,7 @@ faqs:
 - question: When must I register for VAT as an agency?
   answer: You must register when your taxable turnover exceeds £90,000 in any rolling 12-month period. Many agencies voluntarily register earlier to reclaim VAT on costs. If your clients are VAT-registered businesses, voluntary registration is usually beneficial.
 - question: Do I need to file P11D forms for my agency?
-  answer: Yes, if you provide benefits in kind to employees or directors — private medical insurance, company cars, interest-free loans over £10,000, or gym memberships. P11D forms are due by 6 July after the tax year end. Class 1A NIC on the benefits is due by 19 July.
+  answer: Yes, if you provide benefits in kind to employees or directors, private medical insurance, company cars, interest-free loans over £10,000, or gym memberships. P11D forms are due by 6 July after the tax year end. Class 1A NIC on the benefits is due by 19 July.
 - question: Can my agency claim R&D tax credits?
   answer: 'Yes, if you develop new software, create proprietary tools, automate processes, or solve technical problems. The SME scheme provides a 186% enhanced deduction. You need proper documentation: project plans, technical reports, and cost breakdowns. HMRC is scrutinising claims more heavily, so work with an experienced accountant.'
 authorSlug: james-whitfield
@@ -90,7 +90,7 @@ keyTakeaways:
 
 <p>Your corporation tax return is filed on form CT600. You must file it within 12 months of your accounting period end. But you pay the tax earlier.</p>
 
-<p>If your agency's annual profit is above £1.5 million, you pay in quarterly instalments. For the vast majority of agencies — those with profits under £1.5 million — you pay nine months and one day after your year end.</p>
+<p>If your agency's annual profit is above £1.5 million, you pay in quarterly instalments. For the vast majority of agencies, those with profits under £1.5 million, you pay nine months and one day after your year end.</p>
 
 <p>Example: Your agency has a 31 December year end. Corporation tax is due by 1 October the following year. The CT600 filing deadline is 31 December the following year.</p>
 
@@ -112,7 +112,7 @@ keyTakeaways:
 
 <p>You must register for VAT when your taxable turnover exceeds £90,000 in any rolling 12-month period. That is the threshold for 2025/26.</p>
 
-<p>Many agencies voluntarily register before hitting £90,000. Why? Because if your clients are VAT-registered businesses, they can reclaim the VAT you charge. It costs them nothing. And you reclaim VAT on your own costs — software, equipment, rent, professional fees.</p>
+<p>Many agencies voluntarily register before hitting £90,000. Why? Because if your clients are VAT-registered businesses, they can reclaim the VAT you charge. It costs them nothing. And you reclaim VAT on your own costs, software, equipment, rent, professional fees.</p>
 
 <p>If your clients are consumers or small businesses not registered for VAT, voluntary registration makes less sense. You become 20% more expensive.</p>
 
@@ -120,11 +120,11 @@ keyTakeaways:
 
 <p>You have three main options:</p>
 
-<p><strong>Standard VAT Accounting</strong> — You charge 20% on invoices. You reclaim 20% on purchases. You pay HMRC the difference quarterly. This is the default and works well for most agencies.</p>
+<p><strong>Standard VAT Accounting</strong>, You charge 20% on invoices. You reclaim 20% on purchases. You pay HMRC the difference quarterly. This is the default and works well for most agencies.</p>
 
-<p><strong>Flat Rate Scheme</strong> — You charge 20% to clients but pay HMRC a fixed percentage of your turnover. For many agencies, the flat rate is 16.5% (limited cost traders) or a lower rate if you qualify as a specified trade. This scheme can save money if your costs are low. But HMRC tightened the rules in 2017. If you spend less than 2% of turnover on goods (not services), you are a limited cost trader and must use 16.5%. That is barely a saving.</p>
+<p><strong>Flat Rate Scheme</strong>, You charge 20% to clients but pay HMRC a fixed percentage of your turnover. For many agencies, the flat rate is 16.5% (limited cost traders) or a lower rate if you qualify as a specified trade. This scheme can save money if your costs are low. But HMRC tightened the rules in 2017. If you spend less than 2% of turnover on goods (not services), you are a limited cost trader and must use 16.5%. That is barely a saving.</p>
 
-<p><strong>Annual Accounting Scheme</strong> — You make nine monthly or quarterly payments based on an estimate, then one balancing payment after your year end. Useful if you want predictable cash flow.</p>
+<p><strong>Annual Accounting Scheme</strong>, You make nine monthly or quarterly payments based on an estimate, then one balancing payment after your year end. Useful if you want predictable cash flow.</p>
 
 <p>Most agencies we work with use standard VAT accounting. The flat rate scheme rarely benefits agencies with meaningful costs.</p>
 
@@ -138,7 +138,7 @@ keyTakeaways:
 
 <h3>International VAT: The Agency Trap</h3>
 
-<p>If you sell services to clients outside the UK, the VAT treatment changes. B2B services to EU businesses are usually reverse-charged — your client accounts for the VAT in their country. B2C services to EU consumers may require you to register for VAT in the customer's country.</p>
+<p>If you sell services to clients outside the UK, the VAT treatment changes. B2B services to EU businesses are usually reverse-charged, your client accounts for the VAT in their country. B2C services to EU consumers may require you to register for VAT in the customer's country.</p>
 
 <p>This is where many agencies trip up. If you have a handful of EU clients, speak to your accountant before you invoice them. The penalties for getting it wrong can exceed the VAT itself.</p>
 
@@ -146,13 +146,13 @@ keyTakeaways:
 
 <h2>PAYE and Payroll: Your Team</h2>
 
-<p>If you employ people, you operate PAYE. Even if you are the only employee — yourself as director.</p>
+<p>If you employ people, you operate PAYE. Even if you are the only employee, yourself as director.</p>
 
 <h3>Setting Up Payroll</h3>
 
 <p>You must register as an employer with HMRC before the first payday. Use form PAYE Online or call HMRC. You will receive an employer reference number and an Accounts Office reference.</p>
 
-<p>You report payroll data to HMRC in real time — before or on the day you pay your employees. This is Real Time Information (RTI).</p>
+<p>You report payroll data to HMRC in real time, before or on the day you pay your employees. This is Real Time Information (RTI).</p>
 
 <p>Most agencies use payroll software. BrightPay, Xero Payroll, and FreeAgent are common choices. We recommend BrightPay for agencies with more than five staff. It handles auto-enrolment pensions, P11Ds, and year-end forms cleanly.</p>
 
@@ -203,7 +203,7 @@ keyTakeaways:
 
 <h2>P11D: Reporting Benefits in Kind</h2>
 
-<p>If you provide benefits to employees or directors — private health insurance, company cars, gym memberships, interest-free loans over £10,000 — you must report them on form P11D.</p>
+<p>If you provide benefits to employees or directors, private health insurance, company cars, gym memberships, interest-free loans over £10,000, you must report them on form P11D.</p>
 
 <h3>What Triggers a P11D</h3>
 
@@ -269,7 +269,7 @@ keyTakeaways:
 
 <p>If your agency is a limited company, MTD ITSA does not directly affect you. But if you have self-employed income from a side business or property, it will.</p>
 
-<p>For agency founders who operate as sole traders — common in early stages — this is a significant change. You will need to file four quarterly returns plus an end-of-year statement. The software handles the calculations, but you need to keep digital records throughout the year.</p>
+<p>For agency founders who operate as sole traders, common in early stages, this is a significant change. You will need to file four quarterly returns plus an end-of-year statement. The software handles the calculations, but you need to keep digital records throughout the year.</p>
 
 <p>We recommend Xero or FreeAgent for MTD compliance. Both have MTD ITSA functionality ready.</p>
 
@@ -297,7 +297,7 @@ keyTakeaways:
 
 <h2>IR35: If You Use Contractors</h2>
 
-<p>If your agency engages contractors — common in creative and digital agencies — IR35 determines whether they are genuinely self-employed or should be treated as employees for tax purposes.</p>
+<p>If your agency engages contractors, common in creative and digital agencies, IR35 determines whether they are genuinely self-employed or should be treated as employees for tax purposes.</p>
 
 <h3>How IR35 Works for Agencies</h3>
 

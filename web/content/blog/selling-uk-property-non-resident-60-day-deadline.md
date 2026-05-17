@@ -105,7 +105,7 @@ keyTakeaways:
 <p>Some people overpay because they do not apply their £3,000 CGT allowance in the NRCGT return. The online system asks you to enter it. Use it. It reduces your tax bill by up to £720 (at 24%).</p>
 
 <h3>Mistake 3: Not Keeping Records of Improvements</h3>
-<p>Capital improvements increase your cost base and reduce your gain. A new kitchen, a loft conversion, a new boiler — these are not repairs, they are improvements. Without receipts and dated invoices, HMRC will not accept them. Keep paper and digital copies.</p>
+<p>Capital improvements increase your cost base and reduce your gain. A new kitchen, a loft conversion, a new boiler, these are not repairs, they are improvements. Without receipts and dated invoices, HMRC will not accept them. Keep paper and digital copies.</p>
 
 <h2>What If You Sold Before 6 April 2025?</h2>
 <p>The 60-day rule has been in place since 6 April 2015 for non-residents selling UK residential property. If you sold in 2024/25, the same rule applied. The rates were slightly different (18% and 24% for higher rate, with the old 10% and 20% rates applying before 30 October 2024). But the deadline was the same. If you missed it for a previous sale, you can still file late. Penalties will apply, but filing now stops them from escalating.</p>

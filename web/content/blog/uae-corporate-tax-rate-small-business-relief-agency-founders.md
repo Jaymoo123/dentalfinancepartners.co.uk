@@ -37,7 +37,7 @@ keyTakeaways:
 ---
 <p>If you run a marketing agency, digital agency, or creative agency from Dubai, you have probably heard the good news: the UAE corporate tax rate is 9% on profits above AED 375,000. That is genuinely low by global standards. But the detail matters more than the headline.</p>
 
-<p>What happens if your agency's profits exceed AED 375,000? Do you pay 9% on everything, or just the excess? And what is this "small business relief" everyone mentions — does it apply to your agency?</p>
+<p>What happens if your agency's profits exceed AED 375,000? Do you pay 9% on everything, or just the excess? And what is this "small business relief" everyone mentions, does it apply to your agency?</p>
 
 <p>This article answers those questions directly. No fluff. Just the numbers and the rules as they stand for the 2025/26 tax year.</p>
 
@@ -75,7 +75,7 @@ keyTakeaways:
 <li>Simplified compliance</li>
 </ul>
 <p>But there is a catch. The relief is based on <strong>revenue</strong>, not profit. And the threshold is AED 3 million.</p>
-<p>If your agency's revenue in a given tax period is AED 3 million or less, you can elect for small business relief. If your revenue exceeds AED 3 million, you cannot — regardless of your profit level.</p>
+<p>If your agency's revenue in a given tax period is AED 3 million or less, you can elect for small business relief. If your revenue exceeds AED 3 million, you cannot, regardless of your profit level.</p>
 <p>This is where agency founders need to be careful. A high-revenue, low-margin agency might have profits below AED 375,000 but revenue above AED 3 million. That agency cannot use small business relief. It must file a corporate tax return and pay 9% on profits above AED 375,000.</p>
 
 <h2>Who Qualifies for Small Business Relief?</h2>
@@ -85,7 +85,7 @@ keyTakeaways:
 <li>You are a resident person (i.e. your agency is incorporated in the UAE)</li>
 <li>You are not part of a multinational group with consolidated revenue exceeding AED 3.15 billion</li>
 </ul>
-<p>If your agency meets these conditions, you can elect for the relief. It is optional — you do not have to take it. But if your profits are below AED 375,000 and your revenue is under AED 3 million, there is usually no downside to electing.</p>
+<p>If your agency meets these conditions, you can elect for the relief. It is optional, you do not have to take it. But if your profits are below AED 375,000 and your revenue is under AED 3 million, there is usually no downside to electing.</p>
 <p>If your profits are above AED 375,000 but your revenue is under AED 3 million, the relief still applies. You pay no corporate tax at all. This is a significant benefit for profitable but relatively small agencies.</p>
 <p>If your revenue is above AED 3 million, you cannot use the relief. You must file a return and pay 9% on profits above AED 375,000.</p>
 

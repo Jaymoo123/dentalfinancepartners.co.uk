@@ -6,7 +6,7 @@ date: '2026-05-16'
 author: Agency Founder Finance Editorial Team
 category: International Agencies
 metaTitle: 'Keep Google Ads Facebook account moving to Dubai: what UK'
-metaDescription: Moving your UK agency to Dubai? Your Google Ads and Facebook accounts are tied to billing addresses. Here's what changes and what stays — before you move.
+metaDescription: Moving your UK agency to Dubai? Your Google Ads and Facebook accounts are tied to billing addresses. Here's what changes and what stays, before you move.
 altText: Agency founder working on a laptop with Google Ads dashboard open, Dubai skyline visible through window
 image: /blog/keep-google-ads-facebook-accounts-moving-to-dubai.jpg
 imageCredit:
@@ -19,7 +19,7 @@ summary: Moving your agency to Dubai doesn't mean losing your ad accounts. But t
 schema: ''
 faqs:
 - question: Will I lose my Google Ads campaign history if I move my billing address to Dubai?
-  answer: No, your campaign history, quality scores, and conversion data stay intact when you update your billing address. The only thing that changes is your currency — and on Google Ads, you cannot change the currency on an existing account. If you want AED reporting, you'll need a new account. Your old account remains accessible as a read-only archive.
+  answer: No, your campaign history, quality scores, and conversion data stay intact when you update your billing address. The only thing that changes is your currency, and on Google Ads, you cannot change the currency on an existing account. If you want AED reporting, you'll need a new account. Your old account remains accessible as a read-only archive.
 - question: Can I change the currency on my Facebook Business Manager ad account when moving to Dubai?
   answer: Facebook allows currency changes on existing ad accounts, but it requires closing and reopening the account in the new currency. This typically causes a 24-48 hour pause in ad delivery. Plan the change around a quiet period. Your pixel data and custom audiences survive the transition.
 - question: Do I need to register for UAE VAT on my Google Ads spend?
@@ -37,7 +37,7 @@ keyTakeaways:
 ---
 <p>You're moving your UK agency to Dubai. Your team is coming, your clients are coming, and your revenue model is shifting from GBP to AED. But one question keeps surfacing: <strong>can you keep your Google Ads and Facebook Business accounts when you move to Dubai?</strong></p>
 
-<p>The short answer is yes — you can keep them. But the way you keep them matters. Get it wrong and you could lose years of campaign history, trigger billing failures, or create a tax trail HMRC can follow.</p>
+<p>The short answer is yes, you can keep them. But the way you keep them matters. Get it wrong and you could lose years of campaign history, trigger billing failures, or create a tax trail HMRC can follow.</p>
 
 <p>Let's work through exactly what changes, what stays the same, and what you need to do before you update your address.</p>
 
@@ -58,13 +58,13 @@ keyTakeaways:
 <h2>Google Ads when moving from UK to Dubai</h2>
 
 <h3>What you can keep</h3>
-<p>You can keep your existing Google Ads account. Your campaign history, quality scores, conversion data, and account structure all transfer. That's important — if you've spent £100k+ building a campaign that converts at a 4:1 ROAS, you don't want to start from zero.</p>
+<p>You can keep your existing Google Ads account. Your campaign history, quality scores, conversion data, and account structure all transfer. That's important, if you've spent £100k+ building a campaign that converts at a 4:1 ROAS, you don't want to start from zero.</p>
 
 <h3>What changes</h3>
 <p>When you update your billing address to a UAE address, Google will:</p>
 <ul>
 <li>Switch your billing country to United Arab Emirates</li>
-<li>Change your default currency (you cannot change the currency on an existing account — you'd need a new one)</li>
+<li>Change your default currency (you cannot change the currency on an existing account, you'd need a new one)</li>
 <li>Remove UK VAT from your invoices (UAE has 5% VAT, but it works differently)</li>
 <li>Change available payment methods (UK direct debit won't work; you'll need a UAE credit card or bank transfer)</li>
 </ul>
@@ -92,7 +92,7 @@ keyTakeaways:
 <li>Change available payment methods</li>
 </ul>
 
-<p>Facebook's currency change is more flexible than Google's. You can request a currency change on an existing ad account, but Facebook will close the account and reopen it in the new currency. That means a brief pause in ad delivery — typically 24-48 hours — and you lose some historical reporting granularity.</p>
+<p>Facebook's currency change is more flexible than Google's. You can request a currency change on an existing ad account, but Facebook will close the account and reopen it in the new currency. That means a brief pause in ad delivery, typically 24-48 hours, and you lose some historical reporting granularity.</p>
 
 <p>If you have active campaigns running to UK audiences, a 48-hour pause might cost you. Plan the change around a quiet period or a weekend.</p>
 
@@ -102,7 +102,7 @@ keyTakeaways:
 
 <p><strong>Scenario 1: Your currency must change.</strong> If your agency now operates entirely in AED and you don't want GBP reporting, create a new Google Ads account in AED. Keep the old account as a read-only archive for historical data. Export your conversion data and audiences before you close anything.</p>
 
-<p><strong>Scenario 2: Your clients require local ad accounts.</strong> If you're managing ads for UAE-based clients, they may prefer ad accounts billed in AED with UAE-specific settings. You can create new ad accounts within your existing Business Manager or Google Ads manager account — you don't need a whole new login.</p>
+<p><strong>Scenario 2: Your clients require local ad accounts.</strong> If you're managing ads for UAE-based clients, they may prefer ad accounts billed in AED with UAE-specific settings. You can create new ad accounts within your existing Business Manager or Google Ads manager account, you don't need a whole new login.</p>
 
 <p>For most agency founders moving from the UK to Dubai, keeping the existing accounts and updating the billing address is the simpler route. You preserve your campaign history, your quality scores, and your pixel data. The only real friction is the currency mismatch on Google Ads.</p>
 

@@ -25,7 +25,7 @@ faqs:
 - question: Do my Dubai clients still need UK VAT invoices after I deregister?
   answer: Yes, if the work was done while you were VAT registered. Your clients may need those invoices for their own VAT returns. You must issue all final invoices before your deregistration date. After deregistration, you cannot issue a VAT invoice. If a client needs one later, you'd need to re-register for VAT, which is impractical.
 - question: How long does HMRC take to process a VAT deregistration?
-  answer: Typically 3-4 weeks if your returns are up to date and you have no outstanding VAT. But if HMRC has questions about why you're deregistering (especially if your turnover was above £90,000), it can take 8-12 weeks. Plan your closure timeline accordingly — do not assume you can deregister and close the company in the same month.
+  answer: Typically 3-4 weeks if your returns are up to date and you have no outstanding VAT. But if HMRC has questions about why you're deregistering (especially if your turnover was above £90,000), it can take 8-12 weeks. Plan your closure timeline accordingly, do not assume you can deregister and close the company in the same month.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -35,7 +35,7 @@ keyTakeaways:
 - Deregister via form VAT7 online, but expect HMRC to query if your turnover exceeded £90,000 in the last 12 months.
 - Past invoices issued before deregistration remain valid; the VAT charged belongs to HMRC and must be accounted for.
 ---
-<p>If you're a UK agency founder closing your company — whether you're moving to Dubai, selling up, or simply winding down — you cannot ignore VAT on past invoices. HMRC will want their final return, and your clients may still need valid invoices for their own records.</p>
+<p>If you're a UK agency founder closing your company, whether you're moving to Dubai, selling up, or simply winding down, you cannot ignore VAT on past invoices. HMRC will want their final return, and your clients may still need valid invoices for their own records.</p>
 
 <p>The short answer: you must submit a final VAT return, deregister from VAT, and handle any outstanding VAT owed. For past invoices issued before closure, you cannot simply cancel them. The VAT already charged belongs to HMRC, not you.</p>
 
@@ -50,9 +50,9 @@ keyTakeaways:
 <p>On that final return, you must account for:</p>
 
 <ul>
-<li><strong>Output VAT</strong> on all sales made up to the deregistration date — including invoices you issued but haven't yet been paid for</li>
-<li><strong>Input VAT</strong> on purchases made up to that date — but only if you have valid VAT invoices from suppliers</li>
-<li><strong>VAT on stock and assets</strong> you hold at deregistration — this is a common trap for agencies with equipment, software licenses, or work in progress</li>
+<li><strong>Output VAT</strong> on all sales made up to the deregistration date, including invoices you issued but haven't yet been paid for</li>
+<li><strong>Input VAT</strong> on purchases made up to that date, but only if you have valid VAT invoices from suppliers</li>
+<li><strong>VAT on stock and assets</strong> you hold at deregistration, this is a common trap for agencies with equipment, software licenses, or work in progress</li>
 </ul>
 
 <p>The key point: you must account for VAT on invoices you issued before deregistration, even if the client hasn't paid you yet. HMRC doesn't care about your cash flow. They care about the tax point date.</p>
@@ -67,7 +67,7 @@ keyTakeaways:
 
 <h2>Step Two: Deregister from VAT</h2>
 
-<p>Once your final return is submitted and any VAT due is paid, you can deregister. HMRC's process is straightforward — you complete form VAT7 online through your Government Gateway account.</p>
+<p>Once your final return is submitted and any VAT due is paid, you can deregister. HMRC's process is straightforward, you complete form VAT7 online through your Government Gateway account.</p>
 
 <p>But there's a catch for agencies. If you deregister and your turnover was above £90,000 in the last 12 months, HMRC may question why you're deregistering. They want to prevent businesses from dodging VAT by closing and reopening.</p>
 
@@ -116,7 +116,7 @@ keyTakeaways:
 <li><strong>Stop issuing new invoices</strong> at least 2 weeks before your planned deregistration date</li>
 <li><strong>Issue all final invoices</strong> to clients for work done up to the deregistration date</li>
 <li><strong>Submit your final VAT return</strong> covering the period up to deregistration</li>
-<li><strong>Pay any VAT due</strong> to HMRC — do not wait for clients to pay you first</li>
+<li><strong>Pay any VAT due</strong> to HMRC, do not wait for clients to pay you first</li>
 <li><strong>Deregister from VAT</strong> using form VAT7 online</li>
 <li><strong>Notify clients</strong> that you are deregistered and cannot issue VAT invoices going forward</li>
 <li><strong>Close the company</strong> via Companies House strike-off or Members' Voluntary Liquidation (MVL)</li>
@@ -133,7 +133,7 @@ keyTakeaways:
 <li>Deregister the UK entity from VAT before you leave</li>
 <li>Ensure all UK VAT returns are filed and paid</li>
 <li>Register for UAE VAT if your Dubai turnover exceeds AED 375,000 (approximately £80,000)</li>
-<li>Understand that UAE VAT is 5%, not 20% — your pricing structure will change</li>
+<li>Understand that UAE VAT is 5%, not 20%, your pricing structure will change</li>
 <li>Decide whether your Dubai entity will issue invoices to UK clients without UK VAT</li>
 </ul>
 
@@ -146,11 +146,11 @@ keyTakeaways:
 <p>Here are the errors we see most often:</p>
 
 <ul>
-<li><strong>Assuming past invoices disappear</strong> — they don't. HMRC can pursue the debt for up to 20 years.</li>
-<li><strong>Not accounting for VAT on stock and assets</strong> — if you hold equipment, software, or work in progress at deregistration, you may owe VAT on it.</li>
-<li><strong>Issuing credit notes after deregistration</strong> — you can't issue a VAT credit note once you're deregistered. You'd need to re-register, which is a mess.</li>
-<li><strong>Forgetting to notify clients</strong> — your clients may still need VAT invoices for their own returns. If you can't provide them, they may refuse to pay.</li>
-<li><strong>Closing the company before HMRC confirms deregistration</strong> — HMRC will object to the strike-off if VAT is unpaid. This delays everything.</li>
+<li><strong>Assuming past invoices disappear</strong>, they don't. HMRC can pursue the debt for up to 20 years.</li>
+<li><strong>Not accounting for VAT on stock and assets</strong>, if you hold equipment, software, or work in progress at deregistration, you may owe VAT on it.</li>
+<li><strong>Issuing credit notes after deregistration</strong>, you can't issue a VAT credit note once you're deregistered. You'd need to re-register, which is a mess.</li>
+<li><strong>Forgetting to notify clients</strong>, your clients may still need VAT invoices for their own returns. If you can't provide them, they may refuse to pay.</li>
+<li><strong>Closing the company before HMRC confirms deregistration</strong>, HMRC will object to the strike-off if VAT is unpaid. This delays everything.</li>
 </ul>
 
 <h2>When Should You Speak to an Accountant?</h2>
@@ -173,4 +173,4 @@ keyTakeaways:
 
 <p>Plan the closure properly. Submit the final return. Pay the VAT. Deregister. Then close the company. It's a sequence, not a single event.</p>
 
-<p>Get it right, and you walk away clean. Get it wrong, and HMRC will find you — even in Dubai.</p>
+<p>Get it right, and you walk away clean. Get it wrong, and HMRC will find you, even in Dubai.</p>

@@ -57,9 +57,9 @@ keyTakeaways:
 <li><strong>April 2028 (tentative):</strong> Expected extension to those over £10,000.</li>
 </ul>
 
-<p>If you are a sole trader web designer turning over £65,000, you are in scope from April 2026. If you run a 12-person digital agency billing £800k per year as a limited company, you are not in scope for MTD ITSA at all — limited companies already use MTD for VAT and will eventually use MTD for Corporation Tax (separate timeline, not yet confirmed).</p>
+<p>If you are a sole trader web designer turning over £65,000, you are in scope from April 2026. If you run a 12-person digital agency billing £800k per year as a limited company, you are not in scope for MTD ITSA at all, limited companies already use MTD for VAT and will eventually use MTD for Corporation Tax (separate timeline, not yet confirmed).</p>
 
-<p>But many agency founders operate as sole traders or partnerships in their early years. If that describes you, read carefully. If you are incorporated, this article still matters — your subcontractors and freelancers may be sole traders who need your help to understand the rules.</p>
+<p>But many agency founders operate as sole traders or partnerships in their early years. If that describes you, read carefully. If you are incorporated, this article still matters, your subcontractors and freelancers may be sole traders who need your help to understand the rules.</p>
 
 <h2>What Digital Records Must You Keep?</h2>
 
@@ -74,7 +74,7 @@ keyTakeaways:
 <li>Any adjustments or corrections to previous submissions.</li>
 </ul>
 
-<p>You must also keep the original source documents — invoices, receipts, bank statements — but those can be digital copies. HMRC accepts scanned receipts and digital invoices. You do not need to keep paper originals, though many accountants recommend keeping them for six years as a backup.</p>
+<p>You must also keep the original source documents, invoices, receipts, bank statements, but those can be digital copies. HMRC accepts scanned receipts and digital invoices. You do not need to keep paper originals, though many accountants recommend keeping them for six years as a backup.</p>
 
 <p>Our ICAEW qualified team recommends using Dext or AutoEntry for receipt capture. Both integrate with the main accounting platforms and let you photograph receipts on your phone. The software extracts the key data and categorises it. No more lost receipts from that client lunch in Shoreditch.</p>
 
@@ -83,11 +83,11 @@ keyTakeaways:
 <p>Not all accounting software is MTD ITSA compatible. HMRC maintains a list of recognised software providers. As of early 2025, the major platforms that have confirmed MTD ITSA compatibility include:</p>
 
 <ul>
-<li><strong>Xero</strong> — already MTD VAT compatible. Their MTD ITSA module is in testing. Most agency founders we work with use Xero already.</li>
-<li><strong>QuickBooks</strong> — similar timeline. Full MTD ITSA functionality expected by late 2025.</li>
-<li><strong>FreeAgent</strong> — popular with sole traders and small agencies. MTD ITSA ready.</li>
-<li><strong>Sage</strong> — available for both desktop and cloud versions.</li>
-<li><strong>IRIS</strong> — used by many accountancy firms for practice-side compliance.</li>
+<li><strong>Xero</strong>, already MTD VAT compatible. Their MTD ITSA module is in testing. Most agency founders we work with use Xero already.</li>
+<li><strong>QuickBooks</strong>, similar timeline. Full MTD ITSA functionality expected by late 2025.</li>
+<li><strong>FreeAgent</strong>, popular with sole traders and small agencies. MTD ITSA ready.</li>
+<li><strong>Sage</strong>, available for both desktop and cloud versions.</li>
+<li><strong>IRIS</strong>, used by many accountancy firms for practice-side compliance.</li>
 </ul>
 
 <p>If you currently use spreadsheets only, you have two options. Option one: migrate to cloud accounting software now. Option two: keep using spreadsheets but bridge them to HMRC via MTD-compatible spreadsheet software. Most agency founders find option one simpler because it automates the quarterly submissions and reduces admin time.</p>
@@ -129,7 +129,7 @@ keyTakeaways:
 <p>Calculate your gross self-employment income for the current tax year. If it exceeds £50,000, you are mandated from April 2026. If it is between £30,000 and £50,000, you have until April 2027. If it is below £30,000, you can volunteer or wait.</p>
 
 <h3>Step 2: Choose Your Software and Migrate</h3>
-<p>If you do not already use cloud accounting software, choose one now. Xero and FreeAgent are the most common choices for agency founders. Both offer free trials. Set up your chart of accounts to match your agency's income streams — retainer income, project income, expense categories for freelancers, software, travel, and office costs.</p>
+<p>If you do not already use cloud accounting software, choose one now. Xero and FreeAgent are the most common choices for agency founders. Both offer free trials. Set up your chart of accounts to match your agency's income streams, retainer income, project income, expense categories for freelancers, software, travel, and office costs.</p>
 
 <p>Migrate your historical records for the current tax year. If you start using the software from April 2025, you have a full year to test the quarterly submission process before it becomes mandatory in April 2026. That is the smart play.</p>
 

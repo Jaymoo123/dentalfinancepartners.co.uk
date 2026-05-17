@@ -68,7 +68,7 @@ keyTakeaways:
 
 <p>For agency founders, the value is in the control. No more lost receipts. No more guessing what that coffee meeting was for. Dext also handles multi-currency receipts, which matters if you have overseas contractors or clients.</p>
 
-<p>Dext will be MTD-compatible for Income Tax by April 2026. It does not generate the quarterly updates itself — that happens in Xero — but it ensures your underlying records are digital and accurate.</p>
+<p>Dext will be MTD-compatible for Income Tax by April 2026. It does not generate the quarterly updates itself, that happens in Xero, but it ensures your underlying records are digital and accurate.</p>
 
 <p><strong>Best for:</strong> Agencies with high volumes of expenses, travel costs, or subcontractor invoices.</p>
 
@@ -158,7 +158,7 @@ keyTakeaways:
 <li>Make sure your bookkeeping is digital. If you are still using spreadsheets or paper receipts, switch to Xero and Dext now. Do not wait until March 2026.</li>
 <li>Choose your MTD submission method. Either use Xero's own module or a bridging tool like Taxfiler. Test it before the first quarterly deadline.</li>
 <li>Add a reporting tool if you want agency-specific insights. Spotlight or Fathom will pay for themselves in better decisions.</li>
-<li>Speak to your accountant. As ICAEW qualified accountants, we can review your current setup and tell you exactly what you need. If your agency structure is complex — multiple companies, overseas contractors, or a holding company — the MTD requirements may differ.</li>
+<li>Speak to your accountant. As ICAEW qualified accountants, we can review your current setup and tell you exactly what you need. If your agency structure is complex, multiple companies, overseas contractors, or a holding company, the MTD requirements may differ.</li>
 </ol>
 
 <h2>Common Mistakes Agency Founders Make with MTD Software</h2>
@@ -173,7 +173,7 @@ keyTakeaways:
 
 <h2>Final Thought</h2>
 
-<p>MTD for ITSA is not optional. It is coming, and it will change how you interact with HMRC. But it does not have to be a burden. The right software stack — Xero plus a few carefully chosen integrations — turns the compliance requirement into a management advantage.</p>
+<p>MTD for ITSA is not optional. It is coming, and it will change how you interact with HMRC. But it does not have to be a burden. The right software stack, Xero plus a few carefully chosen integrations, turns the compliance requirement into a management advantage.</p>
 
 <p>If your agency is growing, the reporting tools you add for MTD will become the dashboard you use to run the business. That is the upside no one talks about.</p>
 

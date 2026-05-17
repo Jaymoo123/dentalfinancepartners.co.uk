@@ -30,7 +30,7 @@ authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - Using an umbrella company does not remove your IR35 liability; as the fee-payer, your agency is responsible for issuing a Status Determination Statement (SDS) before the contractor starts.
-- HMRC applies the same IR35 tests—substitution, control, and mutuality of obligation—regardless of whether the contractor is paid via an umbrella, limited company, or payroll.
+- HMRC applies the same IR35 tests-substitution, control, and mutuality of obligation-regardless of whether the contractor is paid via an umbrella, limited company, or payroll.
 - If HMRC finds the contractor inside IR35, the liability for unpaid tax and NI falls on your agency as the fee-payer, not the umbrella company.
 - You must have an SDS, a compliant contract, and evidence of working practices documented before day one to protect your agency from HMRC penalties.
 - For medium or large agencies under the off-payroll rules, the responsibility for determining IR35 status sits with the end-client or agency acting as deemed employer, not the umbrella.

@@ -35,7 +35,7 @@ keyTakeaways:
 - Selling inside an ISA and rebuying outside moves a tax-free gain into a taxable environment without resetting the cost base, triggering unexpected UK tax.
 - This trap commonly catches agency founders with large ISA portfolios built from high agency profits who try to reorganise before or after moving abroad.
 ---
-<h2>You Can Keep Your ISA When You Move Abroad — But There's a Catch</h2>
+<h2>You Can Keep Your ISA When You Move Abroad, But There's a Catch</h2>
 
 <p>Most agency founders I speak with assume that once they leave the UK, their ISA gets frozen or shut down. That is not correct.</p>
 
@@ -138,7 +138,7 @@ keyTakeaways:
 <h3>Option 3: Sell and Buy Something Different</h3>
 <p>The bed and breakfast rule only applies to "the same shares or securities". If you sell a global tracker and buy a different global tracker, or sell Apple and buy Microsoft, the rule does not apply. You get a fresh cost base.</p>
 
-<p>This is the most practical workaround for most founders. You keep your market exposure but switch to a different fund or stock. Check the specific holdings are not "substantially the same" — HMRC has challenged cases where the only difference was the provider. Stick to genuinely different assets.</p>
+<p>This is the most practical workaround for most founders. You keep your market exposure but switch to a different fund or stock. Check the specific holdings are not "substantially the same", HMRC has challenged cases where the only difference was the provider. Stick to genuinely different assets.</p>
 
 <h3>Option 4: Transfer the ISA to a Non-UK Platform</h3>
 <p>Some international brokers accept ISA transfers from UK platforms. You keep the ISA wrapper but move the holdings to a broker that operates outside the UK. This can simplify reporting if you are non-resident. But not all UK ISAs can be transferred internationally. Check with your current provider and the receiving broker before doing anything.</p>

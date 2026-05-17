@@ -19,7 +19,7 @@ summary: IR35 is the single biggest tax risk for agencies engaging contractors. 
 schema: ''
 faqs:
 - question: What happens if an end-client refuses to issue an SDS?
-  answer: If the end-client is medium or large and refuses to issue an SDS, the liability transfers to the fee-payer — your agency. You should not pay the contractor's PSC until the SDS is provided. If the end-client consistently refuses, you may need to end the engagement or operate PAYE as a default position. Document all communications with the end-client about the SDS request.
+  answer: If the end-client is medium or large and refuses to issue an SDS, the liability transfers to the fee-payer, your agency. You should not pay the contractor's PSC until the SDS is provided. If the end-client consistently refuses, you may need to end the engagement or operate PAYE as a default position. Document all communications with the end-client about the SDS request.
 - question: Can a contractor be inside IR35 for one engagement and outside for another?
   answer: Yes. IR35 status is engagement-specific, not person-specific. A contractor can work inside IR35 for a long-term embedded role at one client and outside IR35 for a short-term project at another. Each engagement must be assessed on its own facts. You cannot apply a blanket determination across all contractors.
 - question: Does IR35 apply to contractors working through limited companies outside the UK?
@@ -43,7 +43,7 @@ keyTakeaways:
 
 <h2>What IR35 Actually Means for Your Agency</h2>
 
-<p>IR35 is not a tax. It is a set of rules designed to determine whether a contractor is genuinely self-employed or should be treated as an employee for tax purposes. If a contractor falls inside IR35, the fee-payer must deduct income tax and National Insurance Contributions (NICs) before paying the contractor's intermediary — typically their personal service company (PSC).</p>
+<p>IR35 is not a tax. It is a set of rules designed to determine whether a contractor is genuinely self-employed or should be treated as an employee for tax purposes. If a contractor falls inside IR35, the fee-payer must deduct income tax and National Insurance Contributions (NICs) before paying the contractor's intermediary, typically their personal service company (PSC).</p>
 
 <p>For agencies, the stakes are higher than for most businesses. You are often the fee-payer. You issue the Status Determination Statement (SDS). You carry the liability if HMRC disagrees with your assessment.</p>
 
@@ -59,7 +59,7 @@ keyTakeaways:
 <li>The contractor works at the end-client's site (or remotely)</li>
 </ul>
 
-<p>Under the off-payroll rules, the end-client must determine the contractor's status and issue an SDS. If the end-client fails to do so, or does so incorrectly, the liability transfers to the fee-payer — which is often your agency. The fee-payer is the entity that pays the contractor's PSC. That is usually you.</p>
+<p>Under the off-payroll rules, the end-client must determine the contractor's status and issue an SDS. If the end-client fails to do so, or does so incorrectly, the liability transfers to the fee-payer, which is often your agency. The fee-payer is the entity that pays the contractor's PSC. That is usually you.</p>
 
 <p>If you are a recruitment agency placing contractors with clients, you need to understand where you sit in this chain. If you are a creative or digital agency engaging freelancers directly for client work, the end-client may be your client, and you are the fee-payer. Different scenarios produce different obligations.</p>
 
@@ -204,7 +204,7 @@ keyTakeaways:
 
 <p>Let us look at two realistic scenarios. Both involve agencies we have worked with. The names are fictional but the numbers are real.</p>
 
-<h3>Example 1: Inside IR35 — The Embedded Developer</h3>
+<h3>Example 1: Inside IR35, The Embedded Developer</h3>
 
 <p>BrightSpark Digital is a 15-person marketing agency in Shoreditch. They win a six-month contract with a large retail client. The client insists on a senior developer working on-site five days a week. BrightSpark engages Sarah, a contractor through her PSC, at £600 per day.</p>
 
@@ -214,11 +214,11 @@ keyTakeaways:
 
 <p>The cost to BrightSpark: £600 per day plus employer NICs at 13.8% (£82.80) plus pension contribution (3% minimum, £18) = £700.80 per day. Over 130 working days (6 months), that is £91,104. Sarah nets approximately £416 per day after PAYE and employee NICs.</p>
 
-<h3>Example 2: Outside IR35 — The Specialist Consultant</h3>
+<h3>Example 2: Outside IR35, The Specialist Consultant</h3>
 
 <p>Curate Creative is a 30-person PR agency in Manchester's Northern Quarter. They win a project to rebrand a fintech startup. They engage Tom, a brand strategist through his PSC, at £750 per day.</p>
 
-<p>Tom works remotely from his own studio. He uses his own equipment. He has a right of substitution (he can send a colleague if he is unavailable). He attends weekly calls but sets his own hours. The project has a defined scope and deliverable. Tom bears financial risk — if the project overruns, he absorbs the cost.</p>
+<p>Tom works remotely from his own studio. He uses his own equipment. He has a right of substitution (he can send a colleague if he is unavailable). He attends weekly calls but sets his own hours. The project has a defined scope and deliverable. Tom bears financial risk, if the project overruns, he absorbs the cost.</p>
 
 <p>This is outside IR35. The client issues an SDS confirming this. Tom invoices Curate Creative £750 per day plus VAT. Curate Creative pays the invoice. Tom's PSC handles the tax.</p>
 

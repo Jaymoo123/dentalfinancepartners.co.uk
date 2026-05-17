@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/a-person-holding-black-pen-writing-on-white-paper-6779565/
   source: Pexels
 h1: How to Use Your Agency Accountant for Strategic Financial Planning Beyond Compliance
-summary: Most agency founders only use their accountant for year-end filings and tax returns. Here's how to get strategic financial planning that drives growth, profitability, and exit value — from cash flow forecasting to exit planning.
+summary: Most agency founders only use their accountant for year-end filings and tax returns. Here's how to get strategic financial planning that drives growth, profitability, and exit value, from cash flow forecasting to exit planning.
 schema: ''
 faqs:
 - question: What's the difference between a compliance accountant and a strategic accountant?
@@ -43,7 +43,7 @@ keyTakeaways:
 
 <h2>What Most Agency Founders Get Wrong About Their Accountant</h2>
 
-<p>The default relationship looks like this: you do the work, you send the numbers, they file the returns. That's compliance-only accounting. It covers your statutory obligations — corporation tax, VAT, payroll, year-end accounts — but it does nothing for your business's trajectory.</p>
+<p>The default relationship looks like this: you do the work, you send the numbers, they file the returns. That's compliance-only accounting. It covers your statutory obligations, corporation tax, VAT, payroll, year-end accounts, but it does nothing for your business's trajectory.</p>
 
 <p>Think of it like servicing your car. You need the MOT to stay legal. But if you never look under the bonnet between tests, you won't spot the oil leak until the engine seizes.</p>
 
@@ -69,7 +69,7 @@ keyTakeaways:
 
 <p>Most agency founders know their top-line revenue. Few know their gross margin per client. Even fewer know which services are profitable and which are loss leaders dressed up as "strategic relationships."</p>
 
-<p>A strategic accountant helps you build a profit and loss statement segmented by client, by service line, and by revenue type (retainer vs project). They can show you that Client A, who pays £60k per year, actually costs you £55k in staff time and overhead — leaving you with an 8% margin. Meanwhile, Client B pays £45k but costs £25k — a 44% margin.</p>
+<p>A strategic accountant helps you build a profit and loss statement segmented by client, by service line, and by revenue type (retainer vs project). They can show you that Client A, who pays £60k per year, actually costs you £55k in staff time and overhead, leaving you with an 8% margin. Meanwhile, Client B pays £45k but costs £25k, a 44% margin.</p>
 
 <p>That insight changes how you price, how you allocate resource, and which clients you fire.</p>
 
@@ -82,7 +82,7 @@ keyTakeaways:
 <ul>
 <li>Setting your salary at £12,570 to avoid NI while preserving your state pension entitlement</li>
 <li>Taking dividends up to the higher rate threshold (£50,270 total income) to stay in the 8.75% dividend tax band</li>
-<li>Using pension contributions to reduce corporation tax — a £40k pension contribution saves £7,600 in corporation tax at 19%</li>
+<li>Using pension contributions to reduce corporation tax, a £40k pension contribution saves £7,600 in corporation tax at 19%</li>
 <li>Timing capital purchases to use the £1m Annual Investment Allowance against profitable years</li>
 <li>Structuring your shareholding to qualify for Business Asset Disposal Relief (14% CGT instead of 24%) when you sell</li>
 </ul>
@@ -96,10 +96,10 @@ keyTakeaways:
 <p>That means:</p>
 
 <ul>
-<li>Keeping your directors' loan account at zero or in credit — a debit balance reduces your equity and spooks buyers</li>
-<li>Maintaining clean, monthly management accounts — buyers want to see consistent reporting, not a scramble at year-end</li>
-<li>Building a track record of 50-65% gross margins — that signals a scalable, profitable business</li>
-<li>Structuring the company to allow a share sale rather than an asset sale — share sales qualify for BADR and are more tax-efficient for you</li>
+<li>Keeping your directors' loan account at zero or in credit, a debit balance reduces your equity and spooks buyers</li>
+<li>Maintaining clean, monthly management accounts, buyers want to see consistent reporting, not a scramble at year-end</li>
+<li>Building a track record of 50-65% gross margins, that signals a scalable, profitable business</li>
+<li>Structuring the company to allow a share sale rather than an asset sale, share sales qualify for BADR and are more tax-efficient for you</li>
 </ul>
 
 <p>Most agency founders don't think about exit until they want to sell. By then, it's often too late to fix structural issues. A strategic accountant helps you build the exit-worthy business from the start.</p>
@@ -110,7 +110,7 @@ keyTakeaways:
 
 <h3>Schedule a Quarterly Strategy Review</h3>
 
-<p>Most compliance-only relationships involve one meeting per year — the year-end review. Replace that with a quarterly 90-minute session where you review management accounts, cash flow forecasts, and progress against your financial goals.</p>
+<p>Most compliance-only relationships involve one meeting per year, the year-end review. Replace that with a quarterly 90-minute session where you review management accounts, cash flow forecasts, and progress against your financial goals.</p>
 
 <p>Come prepared. Bring your actuals vs budget. Bring your pipeline. Bring your questions about pricing, hiring, and tax. The more you engage, the more value you get.</p>
 
@@ -147,16 +147,16 @@ keyTakeaways:
 
 <p>Let's put a number on it.</p>
 
-<p>A 10-person creative agency turning over £700k per year with a 55% gross margin and £150k net profit. Without strategic planning, they pay £28,500 in corporation tax (19% on £150k). They take £50k in dividends, paying 8.75% — £4,375. They have no pension contributions, no cash flow forecast, and no exit plan.</p>
+<p>A 10-person creative agency turning over £700k per year with a 55% gross margin and £150k net profit. Without strategic planning, they pay £28,500 in corporation tax (19% on £150k). They take £50k in dividends, paying 8.75%, £4,375. They have no pension contributions, no cash flow forecast, and no exit plan.</p>
 
 <p>With strategic planning, the same agency:</p>
 
 <ul>
-<li>Contributes £40k into the directors' pension — saves £7,600 in corporation tax</li>
-<li>Reduces taxable profit to £110k — corporation tax drops to £20,900</li>
-<li>Times capital purchases to use the AIA — saves another £1,900</li>
-<li>Builds a 12-week cash flow forecast — avoids a £15k overdraft in Q3</li>
-<li>Starts exit planning — adds 20% to the eventual sale value</li>
+<li>Contributes £40k into the directors' pension, saves £7,600 in corporation tax</li>
+<li>Reduces taxable profit to £110k, corporation tax drops to £20,900</li>
+<li>Times capital purchases to use the AIA, saves another £1,900</li>
+<li>Builds a 12-week cash flow forecast, avoids a £15k overdraft in Q3</li>
+<li>Starts exit planning, adds 20% to the eventual sale value</li>
 </ul>
 
 <p>The total tax saving in year one: roughly £9,500. The cash flow benefit: avoiding a £15k overdraft at 15% APR. The exit value uplift: potentially £100k+.</p>

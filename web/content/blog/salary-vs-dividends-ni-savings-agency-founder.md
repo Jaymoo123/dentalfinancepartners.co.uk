@@ -42,8 +42,8 @@ keyTakeaways:
 <p>When you pay yourself a salary through your agency's payroll, you trigger two types of NI:</p>
 
 <ul>
-<li><strong>Employee's NI</strong> — deducted from your gross pay at 8% on earnings between £12,570 and £50,270, then 2% above that.</li>
-<li><strong>Employer's NI</strong> — paid by your agency at 13.8% on earnings above the secondary threshold (£9,100 for 2025/26).</li>
+<li><strong>Employee's NI</strong>, deducted from your gross pay at 8% on earnings between £12,570 and £50,270, then 2% above that.</li>
+<li><strong>Employer's NI</strong>, paid by your agency at 13.8% on earnings above the secondary threshold (£9,100 for 2025/26).</li>
 </ul>
 
 <p>Dividends are paid from post-tax profits. Your agency pays corporation tax on the profit first (19% or 25% depending on your profit level). Then you take the remaining profit as a dividend. No NI is due on dividends at either the company or personal level.</p>
@@ -74,7 +74,7 @@ keyTakeaways:
 <p>Now let us use the standard structure our ICAEW qualified team recommends for most agency founders:</p>
 
 <ul>
-<li>Salary: £12,570 (up to the primary NI threshold — no employee NI, no employer NI)</li>
+<li>Salary: £12,570 (up to the primary NI threshold, no employee NI, no employer NI)</li>
 <li>Dividends: £87,430</li>
 </ul>
 
@@ -87,7 +87,7 @@ keyTakeaways:
 
 <p>On the dividends:</p>
 <ul>
-<li>First £500: covered by the dividend allowance — 0% tax</li>
+<li>First £500: covered by the dividend allowance, 0% tax</li>
 <li>Next £37,200 (basic rate band): 8.75% = £3,255</li>
 <li>Remaining £49,730 (higher rate band): 33.75% = £16,784</li>
 <li>Total dividend tax: £20,039</li>
@@ -136,7 +136,7 @@ keyTakeaways:
 
 <p>Once your total income (salary plus dividends) exceeds £125,140, you pay 45% income tax on salary or 39.35% on dividends. At that level, the NI saving on dividends is smaller. Employer NI at 13.8% plus employee NI at 2% totals 15.8%. The dividend tax saving over income tax is 5.65% (45% minus 39.35%). The NI saving of 15.8% is still larger than the dividend tax penalty, so dividends still win. But the gap narrows.</p>
 
-<p>At very high profit levels — say £300,000+ withdrawn annually — the optimal structure may shift. Some founders benefit from taking more salary to use the full corporation tax deduction, even though it triggers NI. The numbers depend on your specific profit level, dividend allowance, and other income.</p>
+<p>At very high profit levels, say £300,000+ withdrawn annually, the optimal structure may shift. Some founders benefit from taking more salary to use the full corporation tax deduction, even though it triggers NI. The numbers depend on your specific profit level, dividend allowance, and other income.</p>
 
 <p>This is where professional advice matters. Our <a href="/services">ICAEW qualified team</a> runs these calculations for agency founders every week. The answer is rarely "all salary" or "all dividends". It is almost always a tailored split.</p>
 

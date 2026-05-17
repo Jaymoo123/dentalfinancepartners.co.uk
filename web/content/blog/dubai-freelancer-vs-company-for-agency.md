@@ -31,7 +31,7 @@ updatedDate: '2026-05-17'
 keyTakeaways:
 - A Dubai freelancer permit costs AED 7,500–15,000 per year but only allows you to provide services you personally perform.
 - A Dubai company license costs AED 15,000–50,000 per year and lets you employ staff, subcontract work, and scale your agency.
-- If you manage a team or subcontractors, a freelancer permit is illegal—you must operate through a company license.
+- If you manage a team or subcontractors, a freelancer permit is illegal-you must operate through a company license.
 - Using a freelancer permit to invoice for work done by others risks fines from Dubai authorities for unlicensed trading.
 - For most agency founders with staff or a contractor network, the extra cost of a company license is justified by its legal and operational benefits.
 ---

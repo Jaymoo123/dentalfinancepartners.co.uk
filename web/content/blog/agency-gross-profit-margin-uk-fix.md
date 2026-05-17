@@ -59,9 +59,9 @@ keyTakeaways:
 
 <p>This is the biggest one. I see agency founders put all staff salaries into a single "wages" line and call everything overhead. That is wrong.</p>
 
-<p>Your delivery team's salaries are direct costs. Account managers, designers, developers, copywriters, strategists — anyone whose time is billed to clients or spent on client work. Their salaries, employer NI at 13.8%, pension contributions, and any bonuses tied to delivery all belong in cost of goods sold.</p>
+<p>Your delivery team's salaries are direct costs. Account managers, designers, developers, copywriters, strategists, anyone whose time is billed to clients or spent on client work. Their salaries, employer NI at 13.8%, pension contributions, and any bonuses tied to delivery all belong in cost of goods sold.</p>
 
-<p>Your sales team, your finance function, your office manager, your own salary as founder — those are overhead. They exist whether you have client work or not.</p>
+<p>Your sales team, your finance function, your office manager, your own salary as founder, those are overhead. They exist whether you have client work or not.</p>
 
 <p>Here's a real example from a 12-person digital agency we work with. They were showing 68% gross margin on their management accounts. When we reclassified three account managers and two designers from overhead to direct costs, their true margin dropped to 51%. The founder had been making decisions on false data for 18 months.</p>
 

@@ -48,12 +48,12 @@ keyTakeaways:
 <p>A proper agency accountant should handle at least these six things:</p>
 
 <ul>
-<li><strong>Company accounts and Corporation Tax</strong> — preparing annual accounts and filing your CT600 with HMRC</li>
-<li><strong>Management accounts</strong> — monthly or quarterly P&L, balance sheet, and cash flow so you know where your agency stands</li>
-<li><strong>Payroll and RTI</strong> — running your salary, processing PAYE, and filing Full Payment Submissions on or before payday</li>
-<li><strong>VAT returns</strong> — quarterly or monthly, including Flat Rate VAT if you're on it and checking whether the limited cost trader rules apply</li>
-<li><strong>Dividend paperwork</strong> — preparing dividend vouchers and minutes, and making sure you're drawing within retained profits</li>
-<li><strong>Tax planning</strong> — not just compliance. Structuring your salary and dividends to minimise your overall tax bill, advising on pension contributions, and planning for exit.</li>
+<li><strong>Company accounts and Corporation Tax</strong>, preparing annual accounts and filing your CT600 with HMRC</li>
+<li><strong>Management accounts</strong>, monthly or quarterly P&L, balance sheet, and cash flow so you know where your agency stands</li>
+<li><strong>Payroll and RTI</strong>, running your salary, processing PAYE, and filing Full Payment Submissions on or before payday</li>
+<li><strong>VAT returns</strong>, quarterly or monthly, including Flat Rate VAT if you're on it and checking whether the limited cost trader rules apply</li>
+<li><strong>Dividend paperwork</strong>, preparing dividend vouchers and minutes, and making sure you're drawing within retained profits</li>
+<li><strong>Tax planning</strong>, not just compliance. Structuring your salary and dividends to minimise your overall tax bill, advising on pension contributions, and planning for exit.</li>
 </ul>
 
 <p>Some accountants include all of this in a fixed monthly fee. Others charge extra for management accounts, tax planning, or ad-hoc advice. Always check what's included before you sign.</p>
@@ -87,12 +87,12 @@ keyTakeaways:
 <p>Not all agencies are the same. Two agencies with the same turnover can have wildly different accounting fees. Here is what pushes the price higher:</p>
 
 <ul>
-<li><strong>High transaction volumes</strong> — If you process 500 invoices a month and have 200 expenses, that takes more time than a business with 30 transactions. Some accountants charge by transaction count. Others absorb it into the monthly fee. Ask.</li>
-<li><strong>Multiple entities</strong> — A holding company with two trading subsidiaries means three sets of accounts, three CT600s, and consolidated management accounts. That costs more.</li>
-<li><strong>R&D tax credits</strong> — Preparing a compliant R&D claim takes specialist knowledge and time. If your agency builds software, automates processes, or develops new tools, expect an extra charge or a higher base fee.</li>
-<li><strong>IR35 work</strong> — If you have contractors, your accountant needs to review SDSs, check the CEST tool output, and advise on status. This is not standard compliance work.</li>
-<li><strong>Ad-hoc projects</strong> — Fundraising, due diligence, exit planning, share restructuring. These are separate projects with separate fees. A good accountant will scope them upfront and quote a fixed price.</li>
-<li><strong>Location</strong> — London and South East firms tend to charge 20-30% more than firms in Manchester, Birmingham, or Bristol. The quality difference is often negligible. We are based in Manchester and work with agencies across the UK and UAE. Our fees reflect regional pricing, not London overheads.</li>
+<li><strong>High transaction volumes</strong>, If you process 500 invoices a month and have 200 expenses, that takes more time than a business with 30 transactions. Some accountants charge by transaction count. Others absorb it into the monthly fee. Ask.</li>
+<li><strong>Multiple entities</strong>, A holding company with two trading subsidiaries means three sets of accounts, three CT600s, and consolidated management accounts. That costs more.</li>
+<li><strong>R&D tax credits</strong>, Preparing a compliant R&D claim takes specialist knowledge and time. If your agency builds software, automates processes, or develops new tools, expect an extra charge or a higher base fee.</li>
+<li><strong>IR35 work</strong>, If you have contractors, your accountant needs to review SDSs, check the CEST tool output, and advise on status. This is not standard compliance work.</li>
+<li><strong>Ad-hoc projects</strong>, Fundraising, due diligence, exit planning, share restructuring. These are separate projects with separate fees. A good accountant will scope them upfront and quote a fixed price.</li>
+<li><strong>Location</strong>, London and South East firms tend to charge 20-30% more than firms in Manchester, Birmingham, or Bristol. The quality difference is often negligible. We are based in Manchester and work with agencies across the UK and UAE. Our fees reflect regional pricing, not London overheads.</li>
 </ul>
 
 <h2>What Drives the Cost Down?</h2>
@@ -100,10 +100,10 @@ keyTakeaways:
 <p>You can keep your accounting costs lower by doing a few things well:</p>
 
 <ul>
-<li><strong>Use accounting software properly</strong> — Xero, QuickBooks, or FreeAgent. If you keep your records clean and reconcile regularly, your accountant spends less time fixing messes. We recommend Xero for most agencies because of its project tracking and reporting capabilities.</li>
-<li><strong>Use receipt capture tools</strong> — Dext or AutoEntry. Scan receipts as you get them, not six months later.</li>
-<li><strong>Keep your director's loan account clean</strong> — If you borrow from the company and repay within 9 months of year-end, you avoid the S455 tax charge at 33.75%. If you don't, your accountant has to file additional returns and calculate the charge. That costs time and money.</li>
-<li><strong>Send your paperwork on time</strong> — If you're sending bank statements and invoices in February for a January year-end, your accountant has time to plan. If you send them in March, they're rushing. Rush jobs cost more.</li>
+<li><strong>Use accounting software properly</strong>, Xero, QuickBooks, or FreeAgent. If you keep your records clean and reconcile regularly, your accountant spends less time fixing messes. We recommend Xero for most agencies because of its project tracking and reporting capabilities.</li>
+<li><strong>Use receipt capture tools</strong>, Dext or AutoEntry. Scan receipts as you get them, not six months later.</li>
+<li><strong>Keep your director's loan account clean</strong>, If you borrow from the company and repay within 9 months of year-end, you avoid the S455 tax charge at 33.75%. If you don't, your accountant has to file additional returns and calculate the charge. That costs time and money.</li>
+<li><strong>Send your paperwork on time</strong>, If you're sending bank statements and invoices in February for a January year-end, your accountant has time to plan. If you send them in March, they're rushing. Rush jobs cost more.</li>
 </ul>
 
 <h2>Fixed Fee vs Hourly: Which Is Better for Agency Founders?</h2>
@@ -119,11 +119,11 @@ keyTakeaways:
 <p>Before you sign an engagement letter, ask these questions:</p>
 
 <ul>
-<li>"Do you work with other agencies?" — If they say no, ask why. Agencies have specific issues (IR35, retainer vs project accounting, utilisation tracking). A generalist may not understand them.</li>
-<li>"What software do you recommend?" — If they say "whatever you like" without giving a reasoned opinion, they don't have a strong view. That is fine for some businesses. For an agency, it matters.</li>
-<li>"Who will be my main contact?" — You want a qualified accountant, not a junior bookkeeper. Ask to speak to them before you commit.</li>
-<li>"What is not included in the monthly fee?" — Get it in writing. Surprise bills are the number one complaint we hear from founders who switched to us.</li>
-<li>"Do you have ICAEW accreditation?" — ICAEW qualified accountants follow a strict code of ethics and professional standards. It is not a guarantee of perfection, but it is a strong signal of competence and accountability.</li>
+<li>"Do you work with other agencies?", If they say no, ask why. Agencies have specific issues (IR35, retainer vs project accounting, utilisation tracking). A generalist may not understand them.</li>
+<li>"What software do you recommend?", If they say "whatever you like" without giving a reasoned opinion, they don't have a strong view. That is fine for some businesses. For an agency, it matters.</li>
+<li>"Who will be my main contact?", You want a qualified accountant, not a junior bookkeeper. Ask to speak to them before you commit.</li>
+<li>"What is not included in the monthly fee?", Get it in writing. Surprise bills are the number one complaint we hear from founders who switched to us.</li>
+<li>"Do you have ICAEW accreditation?", ICAEW qualified accountants follow a strict code of ethics and professional standards. It is not a guarantee of perfection, but it is a strong signal of competence and accountability.</li>
 </ul>
 
 <h2>Is It Worth Paying More for an Agency Specialist?</h2>

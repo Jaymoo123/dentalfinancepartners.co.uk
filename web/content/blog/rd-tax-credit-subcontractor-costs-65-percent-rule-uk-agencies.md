@@ -21,7 +21,7 @@ faqs:
 - question: What is the 65% rule for subcontractor R&D costs?
   answer: The 65% rule applies to SME R&D tax credit claims. It says your qualifying subcontractor costs cannot exceed 65% of your total qualifying R&D expenditure for the period. If they do, HMRC restricts the qualifying amount to 65% of the total. The excess is not eligible for relief.
 - question: Does the 65% rule apply to all external workers?
-  answer: No. It applies to subcontractors — external individuals or companies you pay to carry out R&D work without your day-to-day supervision. Externally provided workers (EPWs) who work under your direction and control are not subject to the cap. Getting the classification right is critical.
+  answer: No. It applies to subcontractors, external individuals or companies you pay to carry out R&D work without your day-to-day supervision. Externally provided workers (EPWs) who work under your direction and control are not subject to the cap. Getting the classification right is critical.
 - question: Can I avoid the 65% cap by hiring contractors through an agency?
   answer: It depends on the arrangement. If you use a recruitment agency to place a contractor who works under your supervision and control, that is likely an EPW arrangement and not subject to the cap. But if you hire a specialist agency to deliver a module of work independently, that is a subcontractor arrangement and the cap applies.
 - question: How do I calculate the 65% cap on my R&D claim?
@@ -53,13 +53,13 @@ keyTakeaways:
 <li>Staff costs (salaries, employer NI, pension contributions) for directly employed R&D staff</li>
 <li>Subcontractor costs (payments to external individuals or companies for R&D work)</li>
 <li>Consumables and software used directly in R&D</li>
-<li>Externally provided workers (EPWs) — staff provided by an external agency but under your supervision</li>
+<li>Externally provided workers (EPWs), staff provided by an external agency but under your supervision</li>
 <li>Clinical trial costs (rarely relevant for agencies)</li>
 </ul>
 
 <p>If your subcontractor costs exceed 65% of that total, HMRC restricts the qualifying amount to 65%. The excess is simply not eligible for relief.</p>
 
-<p>This is not a penalty. It is a structural rule designed to prevent companies from routing most of their R&D through subcontractors to inflate claims. HMRC expects the company making the claim to be the <strong>principal</strong> in the R&D — meaning you direct, control, and take the financial risk on the project.</p>
+<p>This is not a penalty. It is a structural rule designed to prevent companies from routing most of their R&D through subcontractors to inflate claims. HMRC expects the company making the claim to be the <strong>principal</strong> in the R&D, meaning you direct, control, and take the financial risk on the project.</p>
 
 <h2>How the 65% Rule Works in Practice</h2>
 
@@ -154,7 +154,7 @@ keyTakeaways:
 <li>A clear narrative of the technological uncertainty you faced and how you resolved it</li>
 <li>Timesheets or project records showing which staff worked on R&D and for how long</li>
 <li>Contracts with subcontractors showing the scope of work and payment terms</li>
-<li>Evidence that you were the principal in the R&D — directing the work, taking the risk, owning the IP</li>
+<li>Evidence that you were the principal in the R&D, directing the work, taking the risk, owning the IP</li>
 <li>A breakdown of costs by category (staff, subcontractor, consumables, EPW)</li>
 </ul>
 
@@ -184,7 +184,7 @@ keyTakeaways:
 
 <p>If your contractor mix has changed in the last 12 months, or you are planning a new R&D project, ask your accountant before you commit to the resourcing model. A small structural change at the start can save thousands in lost relief.</p>
 
-<p>We help agency founders across the UK — from Soho to Manchester Northern Quarter to Bristol Harbourside — structure their R&D claims to maximise relief within the rules. If you want to run through your numbers, <a href="/contact">get in touch</a>.</p>
+<p>We help agency founders across the UK, from Soho to Manchester Northern Quarter to Bristol Harbourside, structure their R&D claims to maximise relief within the rules. If you want to run through your numbers, <a href="/contact">get in touch</a>.</p>
 
 <h2>Related articles in Tax and Compliance</h2>
 <ul>

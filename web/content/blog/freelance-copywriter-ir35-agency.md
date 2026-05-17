@@ -34,7 +34,7 @@ faqs:
 
 <p>Not always. The way you engage that copywriter can trigger IR35. And if it does, you as the agency become responsible for collecting tax and NI that you probably did not budget for.</p>
 
-<p>This is a specific risk that many agency founders overlook. Most IR35 guidance focuses on IT contractors working inside a client's business. But creative freelancers — copywriters, designers, videographers — face a different set of tests. And those tests can catch agencies out.</p>
+<p>This is a specific risk that many agency founders overlook. Most IR35 guidance focuses on IT contractors working inside a client's business. But creative freelancers, copywriters, designers, videographers, face a different set of tests. And those tests can catch agencies out.</p>
 
 <p>Here is what you need to know about IR35 freelancers agency engagements when the freelancer is a creative professional working on a client project.</p>
 

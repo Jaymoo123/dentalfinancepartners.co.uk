@@ -30,7 +30,7 @@ authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - Your agency accountant cost should reflect your actual needs, not a standard pricing grid, and most accountants will negotiate if you ask.
-- Accountants typically charge based on revenue, headcount, contractor volume, transaction volume, and service scope—simpler agencies should pay less.
+- Accountants typically charge based on revenue, headcount, contractor volume, transaction volume, and service scope-simpler agencies should pay less.
 - For 2025/26, solo founders pay £150–£300 monthly, while established agencies with 15+ people pay £1,200–£2,500+ for full services.
 - Before negotiating, audit your last 12 months of invoices and cut any bundled services you don't actually use.
 ---
@@ -45,11 +45,11 @@ keyTakeaways:
 <p>Before you negotiate, you need to understand what you are paying for. Most agency accountants charge based on a combination of five factors:</p>
 
 <ul>
-<li><strong>Revenue turnover</strong> — higher turnover means more transactions, more VAT work, more complexity in the P&L</li>
-<li><strong>Headcount and payroll</strong> — every employee means RTI submissions, pension auto-enrolment, P11Ds for benefits, and employer NI calculations</li>
-<li><strong>Contractor volume</strong> — IR35 determinations, SDS paperwork, and contractor payment runs add time</li>
-<li><strong>Transaction volume</strong> — a retainer-heavy agency with 20 monthly invoices is cheaper to manage than a project agency doing 200 invoices a month with variable billing</li>
-<li><strong>Service scope</strong> — management accounts, cash flow forecasting, quarterly reviews, and exit planning all cost extra</li>
+<li><strong>Revenue turnover</strong>, higher turnover means more transactions, more VAT work, more complexity in the P&L</li>
+<li><strong>Headcount and payroll</strong>, every employee means RTI submissions, pension auto-enrolment, P11Ds for benefits, and employer NI calculations</li>
+<li><strong>Contractor volume</strong>, IR35 determinations, SDS paperwork, and contractor payment runs add time</li>
+<li><strong>Transaction volume</strong>, a retainer-heavy agency with 20 monthly invoices is cheaper to manage than a project agency doing 200 invoices a month with variable billing</li>
+<li><strong>Service scope</strong>, management accounts, cash flow forecasting, quarterly reviews, and exit planning all cost extra</li>
 </ul>
 
 <p>If your agency is a straightforward limited company with three employees, a handful of retainers, and no contractors, your <strong>agency accountant cost</strong> should be at the lower end. If you are running a 30-person digital agency with 15 contractors, multiple entities, and a complex group structure, you will pay more. That is fair.</p>
@@ -104,7 +104,7 @@ Includes: group structures, consolidated accounts, exit planning, BADR structuri
 
 <h3>Step 3: Benchmark Against Similar Agencies</h3>
 
-<p>Ask three other agency founders what they pay. Not your competitors — founders in different niches. A PR agency founder with 8 people in Manchester. A web design agency founder with 5 people in Bristol. A recruitment agency founder with 12 people in the Northern Quarter.</p>
+<p>Ask three other agency founders what they pay. Not your competitors, founders in different niches. A PR agency founder with 8 people in Manchester. A web design agency founder with 5 people in Bristol. A recruitment agency founder with 12 people in the Northern Quarter.</p>
 
 <p>If you are paying £900 a month and similar-sized agencies are paying £550, you have a data point. Use it. Say "I have spoken to three other agency founders at similar scale and they are paying between £500 and £650. Can you explain why my fee is higher?"</p>
 

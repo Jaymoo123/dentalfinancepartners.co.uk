@@ -32,7 +32,7 @@ keyTakeaways:
 - Currency conversion from GBP to AED typically costs 3–5% of every invoice due to exchange rate spread and transfer fees.
 - On £300,000 annual revenue, the conversion cost can reach £6,000 to £12,000 per year.
 - A 25-person agency billing £1.2M annually loses approximately £36,000 per year to currency conversion.
-- The exchange rate spread, not the transfer fee, accounts for the majority of the cost—often 1–3% above the mid-market rate.
+- The exchange rate spread, not the transfer fee, accounts for the majority of the cost-often 1–3% above the mid-market rate.
 - Using standard banking or mainstream transfer services without optimisation results in a 3% reduction in gross margin.
 ---
 <p>If you are a Dubai agency founder billing UK clients in pounds, you are losing money on every single invoice. Not through bad rates or scope creep. Through the currency conversion itself.</p>

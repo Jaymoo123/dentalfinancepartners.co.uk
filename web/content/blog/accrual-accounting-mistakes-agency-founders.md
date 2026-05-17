@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/bright-red-wrong-way-traffic-sign-in-miami-35113478/
   source: Pexels
 h1: What Agency Founders Get Wrong About Accrual Accounting and Why It Hurts Profitability
-summary: Most agency founders look at their P&L and think they know how the business is doing. But if you are using accrual accounting — and you almost certainly should be — there are specific timing traps that can make a profitable agency look lossmaking, or worse, the other way around. This post covers the three most common accrual errors we see in agency clients and how to fix them.
+summary: Most agency founders look at their P&L and think they know how the business is doing. But if you are using accrual accounting, and you almost certainly should be, there are specific timing traps that can make a profitable agency look lossmaking, or worse, the other way around. This post covers the three most common accrual errors we see in agency clients and how to fix them.
 schema: ''
 faqs:
 - question: What is the difference between accrual accounting and cash accounting for an agency?
@@ -23,7 +23,7 @@ faqs:
 - question: How do I handle deferred revenue for retainer clients in my accounts?
   answer: When you invoice a retainer client, the full amount is not earned until the service period ends. Record the invoice as deferred revenue (a liability) on your balance sheet. Then release it to your P&L on a straight-line basis over the service period. For example, a £6,000 monthly retainer covering 30 days means you recognise £200 per day. Most accounting software like Xero and QuickBooks can automate this with recurring journals.
 - question: Can accrual accounting make my agency look less profitable than it really is?
-  answer: Yes, but only temporarily. If you have completed work that you have not yet invoiced, accrual accounting requires you to recognise that revenue as accrued income. This can make your P&L look less profitable in the short term if you are not posting those accruals. The opposite is also true — recognising revenue before it is earned inflates profit. The key is consistency. Proper accrual accounting smooths out these timing differences and gives you a reliable picture over time.
+  answer: Yes, but only temporarily. If you have completed work that you have not yet invoiced, accrual accounting requires you to recognise that revenue as accrued income. This can make your P&L look less profitable in the short term if you are not posting those accruals. The opposite is also true, recognising revenue before it is earned inflates profit. The key is consistency. Proper accrual accounting smooths out these timing differences and gives you a reliable picture over time.
 - question: Do I need an accountant to set up accrual accounting for my agency?
   answer: You can set up basic accruals yourself using the built-in features of Xero, QuickBooks, or FreeAgent. But most agency founders find it easier to have an accountant set up the chart of accounts, deferred revenue templates, and monthly accrual journals. If your agency has more than five staff or turnover above £250k, the complexity of project tracking, scope creep, and milestone billing usually justifies professional help. An ICAEW qualified accountant who works with agencies can get this right in a few hours.
 authorSlug: james-whitfield
@@ -43,7 +43,7 @@ keyTakeaways:
 
 <p>This is not a cash flow problem. It is an accrual accounting problem. And it is one of the most common mistakes we see in agency clients at Agency Founder Finance.</p>
 
-<p>Accrual accounting is the standard for limited companies. It records income when you earn it, not when you receive it. It records expenses when you incur them, not when you pay them. That sounds straightforward, but in an agency context — with retainers, project milestones, and scope creep — the timing distortions can be significant.</p>
+<p>Accrual accounting is the standard for limited companies. It records income when you earn it, not when you receive it. It records expenses when you incur them, not when you pay them. That sounds straightforward, but in an agency context, with retainers, project milestones, and scope creep, the timing distortions can be significant.</p>
 
 <p>Get this wrong and you make decisions based on a P&L that does not reflect reality. That is how profitable agencies go bust.</p>
 
@@ -53,7 +53,7 @@ keyTakeaways:
 
 <p>This creates a timing gap between when you <em>earn</em> the money and when you <em>see</em> the money. Accrual accounting bridges that gap. But only if you apply it correctly.</p>
 
-<p>If you are using cash accounting — recording income when it hits your bank account — your P&L will lag reality by weeks or months. That makes it nearly impossible to know your true gross margin, utilisation rate, or project profitability in real time.</p>
+<p>If you are using cash accounting, recording income when it hits your bank account, your P&L will lag reality by weeks or months. That makes it nearly impossible to know your true gross margin, utilisation rate, or project profitability in real time.</p>
 
 <p>For a 12-person digital agency billing £800k per year, that timing gap could mean making hiring decisions based on revenue that has not been earned yet. Or cutting costs based on a slow month that is actually a collection delay, not a revenue problem.</p>
 
@@ -65,23 +65,23 @@ keyTakeaways:
 
 <p>You invoice a client on the 1st of the month for a £5,000 retainer. The client pays within 14 days. You have the cash. But have you earned the revenue?</p>
 
-<p>If your retainer covers the full month, you have only earned a portion of that £5,000 on day one. By the end of week one, you have earned roughly £1,250. The remaining £3,750 is deferred revenue — a liability on your balance sheet, not profit on your P&L.</p>
+<p>If your retainer covers the full month, you have only earned a portion of that £5,000 on day one. By the end of week one, you have earned roughly £1,250. The remaining £3,750 is deferred revenue, a liability on your balance sheet, not profit on your P&L.</p>
 
 <p>The mistake we see is agencies recognising the full £5,000 as revenue in month one, even though the work spans the month. This inflates gross profit in the first half of the month and deflates it in the second half. Your P&L shows a spike at the start of every month, then a dip. That is not useful for decision-making.</p>
 
-<p><strong>Fix this:</strong> Recognise retainer revenue on a straight-line basis over the service period. If your retainer runs from the 1st to the 30th, recognise £166.67 per day. Use a deferred revenue account in your accounting software — Xero and QuickBooks both handle this natively — and release it monthly.</p>
+<p><strong>Fix this:</strong> Recognise retainer revenue on a straight-line basis over the service period. If your retainer runs from the 1st to the 30th, recognise £166.67 per day. Use a deferred revenue account in your accounting software, Xero and QuickBooks both handle this natively, and release it monthly.</p>
 
 <h3>2. Project Burn: The Scope Creep That Never Hits Your P&L</h3>
 
 <p>You win a £30,000 website build project. The timeline is 12 weeks. You estimate 240 hours of work at £125 per hour. You invoice in three milestones: £10,000 upfront, £10,000 at wireframe sign-off, £10,000 at launch.</p>
 
-<p>By week six, the client has asked for three additional rounds of amends. You are 180 hours in — 75% of your budgeted hours — but you have only invoiced £20,000. Your P&L shows £20,000 of revenue against, say, £9,000 of direct staff costs. Gross margin looks healthy at 55%.</p>
+<p>By week six, the client has asked for three additional rounds of amends. You are 180 hours in, 75% of your budgeted hours, but you have only invoiced £20,000. Your P&L shows £20,000 of revenue against, say, £9,000 of direct staff costs. Gross margin looks healthy at 55%.</p>
 
 <p>But you have 60 hours of unbilled work sitting in your work-in-progress (WIP) that will never be invoiced because the scope creep was not formally approved. That £7,500 of hidden cost is not on your P&L. Your gross margin is actually closer to 35%.</p>
 
 <p><strong>Fix this:</strong> Track project costs monthly against budget. Use a tool like Float or a simple spreadsheet to monitor actual hours versus budgeted hours. If you are over 50% of budgeted hours but only 40% through the timeline, you have a problem. Raise it with the client before you burn through the margin.</p>
 
-<p>For agencies using Xero, you can set up project tracking with cost lines. QuickBooks has similar functionality. The key is not the software — it is the discipline to review project burn monthly and adjust your revenue recognition accordingly.</p>
+<p>For agencies using Xero, you can set up project tracking with cost lines. QuickBooks has similar functionality. The key is not the software, it is the discipline to review project burn monthly and adjust your revenue recognition accordingly.</p>
 
 <h3>3. Deferred Revenue and Accrued Income: The Balance Sheet Items You Are Ignoring</h3>
 
@@ -91,7 +91,7 @@ keyTakeaways:
 
 <p>Take a common scenario: You complete £15,000 of work in March but do not invoice until April. Your March P&L shows no revenue for that work. Your April P&L shows £15,000 of revenue, even though the work was done in March. If you are evaluating March performance, you are understating revenue. If you are evaluating April, you are overstating it.</p>
 
-<p>For a recruitment agency placing contractors on ongoing engagements, this is especially pronounced. A contractor works the last two weeks of March but you do not invoice until mid-April. That work is an asset on your balance sheet — accrued income — but it is not on your March P&L unless you adjust for it.</p>
+<p>For a recruitment agency placing contractors on ongoing engagements, this is especially pronounced. A contractor works the last two weeks of March but you do not invoice until mid-April. That work is an asset on your balance sheet, accrued income, but it is not on your March P&L unless you adjust for it.</p>
 
 <p><strong>Fix this:</strong> Run a monthly accruals process. At month end, identify work completed but not invoiced. Post a journal to recognise the revenue and create a debtor. When you invoice the following month, reverse the journal. This keeps your P&L accurate month to month.</p>
 
@@ -136,13 +136,13 @@ keyTakeaways:
 
 <p>For agencies with turnover above £250k, we recommend monthly management accounts that include a cash flow forecast alongside the accrual P&L. This gives you the complete picture.</p>
 
-<p>If you are working with an ICAEW qualified accountant — like our team at Agency Founder Finance — they should be providing this as standard. If they are not, ask why.</p>
+<p>If you are working with an ICAEW qualified accountant, like our team at Agency Founder Finance, they should be providing this as standard. If they are not, ask why.</p>
 
 <h2>What Good Looks Like: A Real Example</h2>
 
 <p>Consider a 15-person creative agency in Shoreditch with a mix of retainers and projects. Turnover is £1.2m. They switched from cash accounting to proper accrual accounting 18 months ago.</p>
 
-<p>Before the switch, their P&L showed a gross margin of 58%. After correcting for deferred revenue and accrued income, the real gross margin was 51%. That 7-point difference represented £84,000 of unrecognised cost — mostly scope creep on fixed-price projects.</p>
+<p>Before the switch, their P&L showed a gross margin of 58%. After correcting for deferred revenue and accrued income, the real gross margin was 51%. That 7-point difference represented £84,000 of unrecognised cost, mostly scope creep on fixed-price projects.</p>
 
 <p>Once they had accurate numbers, they changed their pricing model. They introduced milestone billing tied to actual delivery, not just calendar dates. They implemented a change order process for scope creep. Within six months, their real gross margin had moved to 54%.</p>
 
@@ -154,7 +154,7 @@ keyTakeaways:
 
 <p>Accrual accounting is not optional for limited companies. But doing it correctly is a choice. And it is a choice that directly affects your ability to make good decisions about hiring, pricing, and investment.</p>
 
-<p>The three errors we covered — retainer timing, project burn, and ignoring balance sheet items — are the most common. Fix those and your P&L will start telling you the truth.</p>
+<p>The three errors we covered, retainer timing, project burn, and ignoring balance sheet items, are the most common. Fix those and your P&L will start telling you the truth.</p>
 
 <p>If your accountant has not explained this to you, or if your management accounts do not include proper accruals, that is a red flag. <strong>Agency finance fundamentals</strong> should be the foundation of your financial reporting, not an afterthought.</p>
 

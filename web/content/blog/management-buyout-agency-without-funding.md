@@ -37,7 +37,7 @@ keyTakeaways:
 ---
 <h2>What a Management Buyout Looks Like When There's No Bank Involved</h2>
 
-<p>A management buyout (MBO) is exactly what it sounds like. The existing management team buys the agency from the current owner. Usually that means the founder, who built the business over 10 or 15 years, wants to exit. The senior team — the operations director, the creative director, the finance lead — want to take over.</p>
+<p>A management buyout (MBO) is exactly what it sounds like. The existing management team buys the agency from the current owner. Usually that means the founder, who built the business over 10 or 15 years, wants to exit. The senior team, the operations director, the creative director, the finance lead, want to take over.</p>
 
 <p>In most MBOs, the management team raises external finance. A bank loan, private equity, or a specialist lender provides the cash to pay the founder upfront. The new owners then service that debt from the agency's profits.</p>
 
@@ -71,7 +71,7 @@ keyTakeaways:
 
 <p>Here's a worked example. A 12-person digital agency based in Shoreditch. Turnover of £1.1m. Profits of £240k. The founder values the business at £720k (3x profits, which is fair for a well-run agency with a 60% gross margin).</p>
 
-<p>The management team — three directors — agree to buy 100% of the shares. They pay nothing upfront. Instead, they sign a promissory note agreeing to pay the founder £144k per year for five years, plus interest at 4% per annum on the outstanding balance.</p>
+<p>The management team, three directors, agree to buy 100% of the shares. They pay nothing upfront. Instead, they sign a promissory note agreeing to pay the founder £144k per year for five years, plus interest at 4% per annum on the outstanding balance.</p>
 
 <p>The payments come from the agency's profits. If the agency continues to earn £240k per year, the buyout payments consume 60% of annual profit. The remaining 40% stays in the business for reinvestment and working capital.</p>
 
@@ -87,7 +87,7 @@ keyTakeaways:
 
 <p>The earn-out gives the founder upside if the team grows the business. It gives the management team a lower base price and a clear target to aim for.</p>
 
-<p>I've seen earn-outs work well in agencies where the founder stays on for a transition period — typically 6 to 12 months — to hand over client relationships. The earn-out aligns everyone's incentives during that handover.</p>
+<p>I've seen earn-outs work well in agencies where the founder stays on for a transition period, typically 6 to 12 months, to hand over client relationships. The earn-out aligns everyone's incentives during that handover.</p>
 
 <h2>Tax Planning: What the Founder Needs to Know</h2>
 
@@ -115,7 +115,7 @@ keyTakeaways:
 
 <p><strong>1. Profit allocation.</strong> The agreement must state clearly how profits are split between buyout payments, reinvestment, and dividends to the new shareholders. If the buyout payments consume 70% of profits, there is nothing left for the management team to take home. They will resent working for no personal return. We typically recommend a cap: no more than 60% of annual distributable profits go to buyout payments, with the remainder available for dividends and retained earnings.</p>
 
-<p><strong>2. What happens if profits drop.</strong> If the agency hits a bad year — a major client leaves, a project goes wrong — the buyout payments cannot destroy the business. The agreement should include a deferral mechanism. If EBITDA falls below a certain threshold (say £150k for the agency in our example), the buyout payment for that year is deferred to the following year. The founder still gets paid eventually, but the agency does not tip into insolvency trying to meet the payment schedule.</p>
+<p><strong>2. What happens if profits drop.</strong> If the agency hits a bad year, a major client leaves, a project goes wrong, the buyout payments cannot destroy the business. The agreement should include a deferral mechanism. If EBITDA falls below a certain threshold (say £150k for the agency in our example), the buyout payment for that year is deferred to the following year. The founder still gets paid eventually, but the agency does not tip into insolvency trying to meet the payment schedule.</p>
 
 <p><strong>3. Founder security.</strong> The founder is taking significant risk by accepting deferred consideration. If the management team runs the agency into the ground, the founder gets nothing. The agreement should include personal guarantees from the management team, or a charge over the agency's assets, to give the founder some protection. In practice, most founders accept that the business itself is their only security. But the agreement should state this explicitly.</p>
 
@@ -125,7 +125,7 @@ keyTakeaways:
 
 <p>Let me walk through a real deal I advised on last year. Names changed, numbers adjusted slightly, but the structure is exact.</p>
 
-<p>A 15-person PR agency in Bristol. Turnover £1.2m. Gross margin 58%. EBITDA £280k. The founder, Sarah, wanted to retire. The management team — two long-serving directors — wanted to buy it. No bank would lend because the agency had a high concentration of project work (only 35% retainer income).</p>
+<p>A 15-person PR agency in Bristol. Turnover £1.2m. Gross margin 58%. EBITDA £280k. The founder, Sarah, wanted to retire. The management team, two long-serving directors, wanted to buy it. No bank would lend because the agency had a high concentration of project work (only 35% retainer income).</p>
 
 <p>Valuation: 3.2x EBITDA, giving a price of £896k. Rounded to £900k.</p>
 
@@ -147,7 +147,7 @@ keyTakeaways:
 
 <p>The second was a recruitment agency where the founder wanted full payment in three years. The management team could not afford the annual payments from projected profits. The gap was £40k per year. No amount of restructuring could close it.</p>
 
-<p>If your agency's EBITDA is below £150k, or if your profit margins are under 15%, an unfunded MBO is probably not viable. You either need external funding or a longer payment period — seven to ten years — which most founders are not willing to accept.</p>
+<p>If your agency's EBITDA is below £150k, or if your profit margins are under 15%, an unfunded MBO is probably not viable. You either need external funding or a longer payment period, seven to ten years, which most founders are not willing to accept.</p>
 
 <h2>Practical Steps to Start the Process</h2>
 

@@ -32,7 +32,7 @@ keyTakeaways:
 - Set your salary at £12,570 per year (£1,047.50 per month) to avoid employee and employer National Insurance while building state pension credits.
 - Declare dividends only from retained profits shown on your balance sheet to stay legally compliant and avoid a Section 455 tax charge.
 - Review retained profits quarterly using management accounts before declaring dividends to avoid overdrawing your directors' loan account.
-- Cash flow, not just retained profits, determines whether you can pay a dividend—ensure sufficient bank funds before declaring.
+- Cash flow, not just retained profits, determines whether you can pay a dividend-ensure sufficient bank funds before declaring.
 - For 2025/26, dividends within the basic rate band are taxed at 8.75%, rising to 33.75% for higher rate and 39.35% for additional rate taxpayers.
 ---
 <p>You have a 12-person digital agency based in Manchester's Northern Quarter. You bill £800k a year, but the cash does not arrive evenly. Some months you bank £90k from a retainer renewal and a big project go-live. Other months you scrape by on £25k of retainer income while three project invoices sit unpaid at 45 days. Your retained profits sit at £180k on the balance sheet today. Last quarter they were £220k. Next quarter they might be £140k.</p>

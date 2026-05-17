@@ -166,7 +166,7 @@ keyTakeaways:
 
 <p>That depends on whether you have genuinely carried out qualifying R&D. If you have developed new technology, solved a technical problem that no one else has solved, or created a novel process that advances the field, you should investigate a claim.</p>
 
-<p>If your work is standard agency fare — building websites, running campaigns, designing logos — you almost certainly do not qualify. Do not be tempted to stretch the rules. HMRC is actively auditing R&D claims and the penalties for incorrect claims are severe (up to 100% of the tax relief claimed).</p>
+<p>If your work is standard agency fare, building websites, running campaigns, designing logos, you almost certainly do not qualify. Do not be tempted to stretch the rules. HMRC is actively auditing R&D claims and the penalties for incorrect claims are severe (up to 100% of the tax relief claimed).</p>
 
 <p>If you are unsure, speak to an accountant who specialises in R&D for agencies. We work with agency founders across the UK, from Soho to Bristol Harbourside, and we can help you assess whether your projects qualify. <a href="/services">Get in touch</a> to discuss your specific situation.</p>
 

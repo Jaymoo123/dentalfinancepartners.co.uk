@@ -35,7 +35,7 @@ keyTakeaways:
 - For retainers spanning month ends, revenue must be apportioned based on the number of days in each accounting period.
 - Misclassifying retainer prepayments as immediate revenue overstates profit and understates liabilities, misleading stakeholders and HMRC.
 ---
-<p>If your agency bills clients in advance for retainers — and most do — you are carrying a liability on your balance sheet from day one. That liability is called deferred income. And if you treat it as revenue the moment the invoice goes out, your profit figure is wrong.</p>
+<p>If your agency bills clients in advance for retainers, and most do, you are carrying a liability on your balance sheet from day one. That liability is called deferred income. And if you treat it as revenue the moment the invoice goes out, your profit figure is wrong.</p>
 
 <p>Retainer prepayment accounting under UK GAAP (FRS 102, specifically) is not complicated. But it is precise. Get it right and your management accounts tell you the truth about what you have earned versus what you have merely invoiced. Get it wrong and you overstate profit, understate liabilities, and potentially mislead yourself, your investors, and HMRC.</p>
 
@@ -45,7 +45,7 @@ keyTakeaways:
 
 <p>A retainer prepayment happens when a client pays you before you have delivered the work. Typically this means invoicing on the 1st of the month for that month's retainer, or invoicing quarterly in advance. The client pays upfront. You then deliver the services over the period.</p>
 
-<p>Under UK GAAP (FRS 102, Section 23 for revenue recognition), you cannot recognise revenue until you have earned it. The prepayment sits on your balance sheet as a liability — specifically deferred income — because you owe the client the work. Only as you deliver the work each day, week, or month does that liability reduce and revenue appear on your profit and loss account.</p>
+<p>Under UK GAAP (FRS 102, Section 23 for revenue recognition), you cannot recognise revenue until you have earned it. The prepayment sits on your balance sheet as a liability, specifically deferred income, because you owe the client the work. Only as you deliver the work each day, week, or month does that liability reduce and revenue appear on your profit and loss account.</p>
 
 <p>This is not optional accounting theory. It is the matching principle: revenue must match the period in which it is earned. If you recognise a full month's retainer on day one, but deliver the work across 30 days, your accounts show profit that does not yet exist.</p>
 
@@ -63,14 +63,14 @@ keyTakeaways:
 
 <p>Notice: no revenue has been recognised yet. The £4,200 sits as a liability. You have the cash, but you have not earned it.</p>
 
-<p>As you deliver work through March — say you do 21 working days — you release the deferred income proportionally. A common approach is to release it evenly across the month:</p>
+<p>As you deliver work through March, say you do 21 working days, you release the deferred income proportionally. A common approach is to release it evenly across the month:</p>
 
 <ul>
 <li><strong>Debit</strong> Deferred Income: £4,200</li>
 <li><strong>Credit</strong> Revenue: £4,200</li>
 </ul>
 
-<p>This is done as a single entry at month end, or spread across weekly releases. For most agencies, a single month-end release is fine, provided the retainer is a fixed fee for a defined scope. If the retainer is variable — say a minimum of 20 hours with additional time billed separately — you need a more granular approach.</p>
+<p>This is done as a single entry at month end, or spread across weekly releases. For most agencies, a single month-end release is fine, provided the retainer is a fixed fee for a defined scope. If the retainer is variable, say a minimum of 20 hours with additional time billed separately, you need a more granular approach.</p>
 
 <h2>What If the Retainer Spans a Month End?</h2>
 
@@ -97,9 +97,9 @@ keyTakeaways:
 
 <p><strong>Accrued revenue</strong> (or accrued income) is an asset. You have done the work but have not been paid yet. It sits on the debit side of the balance sheet.</p>
 
-<p>Both can exist in the same retainer relationship. Imagine your retainer is £8,000 per month, invoiced quarterly in advance. You invoice £24,000 on 1st January for Q1. By 31st January, you have earned £8,000. Your deferred income liability is £16,000. But if the client has not paid the invoice yet — say they have 30-day terms — you also have a trade debtor of £24,000 on the asset side. That is fine. The liability and the debtor are separate things.</p>
+<p>Both can exist in the same retainer relationship. Imagine your retainer is £8,000 per month, invoiced quarterly in advance. You invoice £24,000 on 1st January for Q1. By 31st January, you have earned £8,000. Your deferred income liability is £16,000. But if the client has not paid the invoice yet, say they have 30-day terms, you also have a trade debtor of £24,000 on the asset side. That is fine. The liability and the debtor are separate things.</p>
 
-<p>Where it gets messy: if you invoice quarterly in arrears. You deliver work in January, February, and March, then invoice £24,000 on 1st April. At 31st March, you have earned £24,000 but not invoiced or received a penny. That is accrued revenue of £24,000 — a debtor on the balance sheet. Release it as revenue each month as you earn it, even though no invoice exists yet.</p>
+<p>Where it gets messy: if you invoice quarterly in arrears. You deliver work in January, February, and March, then invoice £24,000 on 1st April. At 31st March, you have earned £24,000 but not invoiced or received a penny. That is accrued revenue of £24,000, a debtor on the balance sheet. Release it as revenue each month as you earn it, even though no invoice exists yet.</p>
 
 <h2>Common Mistakes in Retainer Prepayment Accounting</h2>
 
@@ -133,7 +133,7 @@ keyTakeaways:
 
 <p>If you use <strong>Dext</strong> for receipt capture and <strong>Float</strong> for cash flow forecasting, ensure your deferred income balances are reflected in your forecasts. Otherwise your cash flow projection will show more available cash than you actually have to spend.</p>
 
-<p>For agencies with complex retainer structures — multiple currencies, quarterly invoicing, variable scopes — we recommend a monthly management accounts review with your accountant. Our ICAEW qualified team at Agency Founder Finance sets up deferred income schedules for all retainer-based clients as standard.</p>
+<p>For agencies with complex retainer structures, multiple currencies, quarterly invoicing, variable scopes, we recommend a monthly management accounts review with your accountant. Our ICAEW qualified team at Agency Founder Finance sets up deferred income schedules for all retainer-based clients as standard.</p>
 
 <h2>Retainer Prepayments and Cash Flow Forecasting</h2>
 
@@ -141,7 +141,7 @@ keyTakeaways:
 
 <p>For cash flow forecasting, include the full prepayment as cash in, but exclude it from your operating profit. Many agencies use a separate "client prepayments" line in their cash flow model to track this. A retainer-heavy agency might have £80,000 of deferred income on the balance sheet at any time. That is £80,000 of cash that looks like profit but is not.</p>
 
-<p>If you are applying for a business loan or seeking investment, lenders and investors will look at your deferred income balance. A high deferred income balance relative to revenue is actually a positive sign — it means clients pay upfront. But only if your revenue recognition is correct. If your accounts show deferred income that does not match your retainer schedules, red flags go up.</p>
+<p>If you are applying for a business loan or seeking investment, lenders and investors will look at your deferred income balance. A high deferred income balance relative to revenue is actually a positive sign, it means clients pay upfront. But only if your revenue recognition is correct. If your accounts show deferred income that does not match your retainer schedules, red flags go up.</p>
 
 <h2>What Happens If a Client Cancels Mid-Period?</h2>
 
@@ -163,7 +163,7 @@ keyTakeaways:
 
 <p>For a typical agency with a 31st March year end, this means reviewing every retainer that spans that date. If you have 20 retainer clients, each with different billing dates, this takes time. A deferred income schedule in Excel or Google Sheets, reconciled monthly, saves hours at year end.</p>
 
-<p>The corporation tax return (CT600) requires accurate revenue figures. Overstating revenue means overstating profit and paying more corporation tax than you owe. Understating revenue is equally problematic — HMRC can charge interest and penalties on underpaid tax.</p>
+<p>The corporation tax return (CT600) requires accurate revenue figures. Overstating revenue means overstating profit and paying more corporation tax than you owe. Understating revenue is equally problematic, HMRC can charge interest and penalties on underpaid tax.</p>
 
 <h2>Does Your Agency Need to Change Its Approach?</h2>
 

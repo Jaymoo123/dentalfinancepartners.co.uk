@@ -31,7 +31,7 @@ updatedDate: '2026-05-17'
 keyTakeaways:
 - Dubai agencies invoicing UK VAT-registered clients must not charge UK VAT; the client accounts for it via the reverse charge mechanism.
 - The reverse charge requires your UK client to record both output and input VAT on the same return, netting to zero cash flow for them.
-- Your invoice must include a clear 'Reverse charge — customer to account for UK VAT' statement to avoid HMRC queries.
+- Your invoice must include a clear 'Reverse charge, customer to account for UK VAT' statement to avoid HMRC queries.
 - Non-UK businesses with no UK presence and only B2B supplies generally do not need to register for UK VAT.
 - Incorrectly charging VAT can cause cash flow problems and compliance issues for both you and your UK client.
 ---
@@ -74,7 +74,7 @@ keyTakeaways:
 <ul>
 <li>Your Dubai business name, address, and UAE VAT registration number (if you have one).</li>
 <li>Your UK client's name, address, and UK VAT registration number.</li>
-<li>A clear statement: "Reverse charge — customer to account for UK VAT."</li>
+<li>A clear statement: "Reverse charge, customer to account for UK VAT."</li>
 <li>The net amount, with no VAT line.</li>
 <li>The date of supply and invoice number.</li>
 </ul>

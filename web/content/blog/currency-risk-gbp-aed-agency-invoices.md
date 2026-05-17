@@ -37,7 +37,7 @@ keyTakeaways:
 ---
 <p>If you run a UK-facing agency from Dubai, you already know the core tension. Your clients pay you in GBP. Your rent, staff salaries, and personal life run on AED. The exchange rate between the two is not fixed. It moves every day. Sometimes by fractions of a percent. Sometimes by several points in a week.</p>
 
-<p>That movement is <strong>currency risk GBP AED agency invoices</strong> — the very real possibility that the pound weakens between the moment you send an invoice and the moment the AED lands in your account. For a £50,000 project, a 3% swing against you is £1,500 gone. That is not a rounding error. That is a chunk of your margin.</p>
+<p>That movement is <strong>currency risk GBP AED agency invoices</strong>, the very real possibility that the pound weakens between the moment you send an invoice and the moment the AED lands in your account. For a £50,000 project, a 3% swing against you is £1,500 gone. That is not a rounding error. That is a chunk of your margin.</p>
 
 <p>Most agency founders I speak to treat exchange rates as background noise. They check the rate when they transfer, shrug, and move on. But if you are billing £200k or more per year from UK clients, currency fluctuation is a material business risk. It deserves the same attention you give to utilisation rates or retainer churn.</p>
 
@@ -77,11 +77,11 @@ keyTakeaways:
 
 <h2>Strategy 3: Use Forward Contracts</h2>
 
-<p>A forward contract lets you lock in an exchange rate today for a conversion that happens in the future. You agree with your bank or a currency broker to convert a specific amount of GBP to AED at a fixed rate on a specific date. If the rate moves against you, you are protected. If it moves in your favour, you do not benefit — but you also do not lose sleep.</p>
+<p>A forward contract lets you lock in an exchange rate today for a conversion that happens in the future. You agree with your bank or a currency broker to convert a specific amount of GBP to AED at a fixed rate on a specific date. If the rate moves against you, you are protected. If it moves in your favour, you do not benefit, but you also do not lose sleep.</p>
 
 <p>Forward contracts are standard practice for businesses that deal with regular foreign currency income. A recruitment agency placing contractors in the UK while operating from Dubai is a textbook use case. If you have a retainer book worth £30k per month, you can forward-cover six months of income. You know exactly what your AED revenue will be. That makes budgeting, pricing, and cash flow forecasting far more reliable.</p>
 
-<p>The minimum contract size varies by provider. Some banks require £50k or more. Specialist brokers like OFX or WorldFirst will do smaller amounts. The cost is typically zero upfront — the bank makes money on the spread between the spot rate and the forward rate.</p>
+<p>The minimum contract size varies by provider. Some banks require £50k or more. Specialist brokers like OFX or WorldFirst will do smaller amounts. The cost is typically zero upfront, the bank makes money on the spread between the spot rate and the forward rate.</p>
 
 <p>Forward contracts are not common advice for small agencies. But if your annual GBP income is above £150k, they are worth serious consideration. Speak to a currency broker who understands agency cash flows. They will structure something that matches your retainer schedule.</p>
 

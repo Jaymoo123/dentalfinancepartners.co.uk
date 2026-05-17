@@ -37,7 +37,7 @@ keyTakeaways:
 ---
 <p>When you sell your agency, you are not selling the desks, the laptops, or the office plants. You are selling the right to bill clients for ongoing work. Retainer contracts are the core asset in most agency sales. But the way those contracts are treated for tax purposes is rarely straightforward.</p>
 
-<p>Most agency founders focus on the headline valuation and the Capital Gains Tax (CGT) rate. They forget that the structure of the sale — asset sale versus share sale — changes how HMRC treats the retainer income you have already earned and the future income you are selling. This <strong>selling your agency tax guide</strong> walks through what actually happens to retainer contracts at exit, with real numbers and practical steps.</p>
+<p>Most agency founders focus on the headline valuation and the Capital Gains Tax (CGT) rate. They forget that the structure of the sale, asset sale versus share sale, changes how HMRC treats the retainer income you have already earned and the future income you are selling. This <strong>selling your agency tax guide</strong> walks through what actually happens to retainer contracts at exit, with real numbers and practical steps.</p>
 
 <h2>The Core Problem: Retainers Are Not Stock or Equipment</h2>
 
@@ -46,12 +46,12 @@ keyTakeaways:
 <p>HMRC distinguishes between three categories when you sell a business:</p>
 
 <ul>
-<li><strong>Goodwill</strong> — the reputation, client relationships, and ongoing business value</li>
-<li><strong>Tangible assets</strong> — equipment, furniture, leasehold improvements</li>
-<li><strong>Contractual rights</strong> — specific client agreements with enforceable terms</li>
+<li><strong>Goodwill</strong>, the reputation, client relationships, and ongoing business value</li>
+<li><strong>Tangible assets</strong>, equipment, furniture, leasehold improvements</li>
+<li><strong>Contractual rights</strong>, specific client agreements with enforceable terms</li>
 </ul>
 
-<p>Retainer contracts fall into the third category, but they are often bundled into goodwill for valuation purposes. This creates a tension. The buyer wants to allocate as much of the purchase price to tangible assets (for capital allowances) and as little to goodwill (which is not deductible). The seller wants the opposite — goodwill attracts Business Asset Disposal Relief (BADR) at 14% CGT, while other asset categories may not.</p>
+<p>Retainer contracts fall into the third category, but they are often bundled into goodwill for valuation purposes. This creates a tension. The buyer wants to allocate as much of the purchase price to tangible assets (for capital allowances) and as little to goodwill (which is not deductible). The seller wants the opposite, goodwill attracts Business Asset Disposal Relief (BADR) at 14% CGT, while other asset categories may not.</p>
 
 <p>If you sell your agency as a share sale, this allocation does not matter. You pay CGT on the gain from the shares, and the buyer inherits the company as-is. But most agency sales under £5 million happen as asset sales, where the buyer picks which assets they want. And retainer contracts are almost always the asset they want most.</p>
 
@@ -59,9 +59,9 @@ keyTakeaways:
 
 <p>In a <strong>share sale</strong>, the buyer purchases the entire company. All contracts, all liabilities, all tax history. You sell your shares, pay CGT at 14% (if BADR applies) or 24% (if it does not), and walk away. The retainer contracts stay with the company. No renegotiation needed.</p>
 
-<p>In an <strong>asset sale</strong>, the buyer purchases specific assets — the retainer contracts, the brand, the work in progress, the equipment. The company still exists (you still own it), but it has no ongoing business. You then liquidate the company and distribute the proceeds. This is where the tax treatment of retainer contracts gets complicated.</p>
+<p>In an <strong>asset sale</strong>, the buyer purchases specific assets, the retainer contracts, the brand, the work in progress, the equipment. The company still exists (you still own it), but it has no ongoing business. You then liquidate the company and distribute the proceeds. This is where the tax treatment of retainer contracts gets complicated.</p>
 
-<p>Most agencies with fewer than 20 staff sell via asset sale. Buyers prefer it because they avoid inheriting unknown liabilities — a contractor who claims unpaid holiday pay, a client who disputes past work, an HMRC enquiry into a historic VAT return. As the seller, you need to understand how each retainer contract is transferred and what tax applies to the sale proceeds allocated to those contracts.</p>
+<p>Most agencies with fewer than 20 staff sell via asset sale. Buyers prefer it because they avoid inheriting unknown liabilities, a contractor who claims unpaid holiday pay, a client who disputes past work, an HMRC enquiry into a historic VAT return. As the seller, you need to understand how each retainer contract is transferred and what tax applies to the sale proceeds allocated to those contracts.</p>
 
 <h3>Why Buyers Want Retainer Contracts Specifically Listed</h3>
 
@@ -74,7 +74,7 @@ keyTakeaways:
 <li>Allocate the purchase price across specific assets</li>
 </ul>
 
-<p>From the buyer's perspective, a retainer contract with 12 months remaining at £5,000 per month is worth £60,000 in guaranteed revenue (assuming no cancellation). They will want that value allocated to a specific asset category — often "customer contracts" or "contractual rights" — rather than lumped into goodwill.</p>
+<p>From the buyer's perspective, a retainer contract with 12 months remaining at £5,000 per month is worth £60,000 in guaranteed revenue (assuming no cancellation). They will want that value allocated to a specific asset category, often "customer contracts" or "contractual rights", rather than lumped into goodwill.</p>
 
 <p>From your perspective, the allocation matters because it determines your CGT treatment. If the retainer contracts are treated as goodwill, they qualify for BADR at 14% (for disposals from 6 April 2025). If they are treated as separate assets (like a patent or a licence), they may not qualify for BADR at all, and you pay 20% CGT on that portion.</p>
 
@@ -93,7 +93,7 @@ keyTakeaways:
 
 <p>Total: £600,000.</p>
 
-<p>You assume all £600,000 qualifies for BADR at 14% (for disposals from 6 April 2025). But HMRC may disagree. The £200,000 allocated to retainer contracts could be treated as the sale of "chose in action" — a legal term meaning a right to sue for a debt or payment. If HMRC classifies the retainer contracts as separate assets rather than part of the goodwill of the business, that £200,000 may not qualify for BADR.</p>
+<p>You assume all £600,000 qualifies for BADR at 14% (for disposals from 6 April 2025). But HMRC may disagree. The £200,000 allocated to retainer contracts could be treated as the sale of "chose in action", a legal term meaning a right to sue for a debt or payment. If HMRC classifies the retainer contracts as separate assets rather than part of the goodwill of the business, that £200,000 may not qualify for BADR.</p>
 
 <p>The distinction hinges on whether the retainer contracts are "personal to the seller" or "transferable assets of the business." If the contracts are standard terms with no special relationship to you personally, they are likely business assets qualifying for BADR. If the contracts depend on your personal relationship with the client (common in small agencies where the founder is the main contact), HMRC may argue they are personal goodwill, not business goodwill.</p>
 
@@ -113,7 +113,7 @@ keyTakeaways:
 
 <h2>Legal Implications: Non-Assignment Clauses and Client Consent</h2>
 
-<p>Before you sell, check every retainer contract for a <strong>non-assignment clause</strong>. This clause says the contract cannot be transferred to another party without the client's written consent. If your retainer contracts have this clause — and most do — you cannot simply sell them to the buyer.</p>
+<p>Before you sell, check every retainer contract for a <strong>non-assignment clause</strong>. This clause says the contract cannot be transferred to another party without the client's written consent. If your retainer contracts have this clause, and most do, you cannot simply sell them to the buyer.</p>
 
 <p>You have three options:</p>
 
@@ -123,7 +123,7 @@ keyTakeaways:
 <li><strong>Sell the company (share sale) instead.</strong> The contracts stay with the company. No consent needed unless the contract has a "change of control" clause.</li>
 </ul>
 
-<p>Most buyers will insist on seeing the retainer contracts before exchange. If any have non-assignment clauses, the sale agreement will include a condition precedent — the sale only completes if the clients consent. This creates a delay and a risk. If a key client refuses, the deal falls through.</p>
+<p>Most buyers will insist on seeing the retainer contracts before exchange. If any have non-assignment clauses, the sale agreement will include a condition precedent, the sale only completes if the clients consent. This creates a delay and a risk. If a key client refuses, the deal falls through.</p>
 
 <p>As <a href="/about">ICAEW qualified accountants</a> working with agency founders, we have seen deals collapse because the founder did not check the contracts before marketing the business. Do not let that be you.</p>
 
@@ -139,7 +139,7 @@ keyTakeaways:
 
 <h2>Work in Progress and Accrued Retainer Income</h2>
 
-<p>Retainer contracts often include work that has been done but not yet billed. At the point of sale, you have accrued income — the retainer fee for the current month, earned but not invoiced. This is <strong>work in progress (WIP)</strong>.</p>
+<p>Retainer contracts often include work that has been done but not yet billed. At the point of sale, you have accrued income, the retainer fee for the current month, earned but not invoiced. This is <strong>work in progress (WIP)</strong>.</p>
 
 <p>In an asset sale, the buyer typically takes over the WIP. You will need to agree a value for it. The simplest approach is to calculate the pro-rata retainer fee from the last invoice date to the completion date. If a client pays £6,000 per month and completion happens on the 15th, the WIP is £3,000.</p>
 
@@ -173,4 +173,4 @@ keyTakeaways:
 
 <p>For more on structuring your agency for a clean exit, read our <a href="/blog/growth-and-exit">growth and exit</a> articles. If you are at the early stage of planning, our <a href="/services">services page</a> covers how we help agency founders prepare for sale.</p>
 
-<p>Selling your agency is a once-in-a-career event. The tax treatment of retainer contracts can cost you tens of thousands in unnecessary tax if you get it wrong. Get the structure right, get the allocation right, and get the legal paperwork right. Your future self — retired and tax-efficient — will thank you.</p>
+<p>Selling your agency is a once-in-a-career event. The tax treatment of retainer contracts can cost you tens of thousands in unnecessary tax if you get it wrong. Get the structure right, get the allocation right, and get the legal paperwork right. Your future self, retired and tax-efficient, will thank you.</p>

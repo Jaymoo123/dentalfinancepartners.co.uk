@@ -25,7 +25,7 @@ keyTakeaways:
 - 'A generic chart of accounts hides problems: retainer work may have 72% margin while project work has 38%, but a blended ''Sales'' account shows a misleading 60%.'
 - Use distinct account codes for each revenue type in Xero or QuickBooks, e.g., 4010 for SEO retainers and 4110 for website projects, to track profitability by service.
 - Record pass-through costs like ad spend in a separate income account (4300) so they do not distort your gross margin calculation on fee income.
-- If revenue behaves differently—monthly retainer vs. fixed project vs. hourly billing—it needs its own account to produce reliable management accounts and deferred revenue tracking.
+- If revenue behaves differently-monthly retainer vs. fixed project vs. hourly billing-it needs its own account to produce reliable management accounts and deferred revenue tracking.
 ---
 <p>If you run a digital agency with both retainer clients and project work, your chart of accounts is the foundation of every financial report you look at. Get it wrong and your gross margin figures will be misleading, your deferred revenue will be a mess, and you will not know which clients are actually profitable until it is too late.</p>
 
@@ -54,19 +54,19 @@ keyTakeaways:
 
 <p>Here is a typical structure for a digital agency using Xero or QuickBooks, with account codes:</p>
 
-<p><strong>4000 — Retainer Income</strong><br>
+<p><strong>4000, Retainer Income</strong><br>
 All recurring monthly fees from retainer clients. SEO retainers, PPC management fees, social media management, ongoing content creation. If you invoice the same amount on the same date each month, it goes here.</p>
 
-<p><strong>4100 — Project Income</strong><br>
+<p><strong>4100, Project Income</strong><br>
 Fixed-price projects, one-off campaigns, website builds, strategy sessions. Anything where the scope is defined and the fee is agreed upfront.</p>
 
-<p><strong>4200 — Time and Materials Income</strong><br>
+<p><strong>4200, Time and Materials Income</strong><br>
 Work billed by the hour or day, where the final invoice depends on actual time spent. Many agencies use this for scope creep or additional work outside the retainer.</p>
 
-<p><strong>4300 — Ad Spend Income (Pass-Through)</strong><br>
+<p><strong>4300, Ad Spend Income (Pass-Through)</strong><br>
 If you invoice clients for Google Ads or Meta spend, record it here. This should be separated from your fee income so your gross margin calculation is not distorted by large pass-through amounts.</p>
 
-<p><strong>4400 — Other Agency Income</strong><br>
+<p><strong>4400, Other Agency Income</strong><br>
 Affiliate commissions, referral fees, speaking fees, anything that is not core service delivery.</p>
 
 <p>If you have multiple service lines, you can extend this. For example, a digital agency offering both SEO and PPC might use 4010 for SEO retainers and 4020 for PPC retainers. The same logic applies to project income: 4110 for website projects, 4120 for campaign projects.</p>
@@ -81,10 +81,10 @@ Affiliate commissions, referral fees, speaking fees, anything that is not core s
 
 <p>Without a deferred revenue account, your P&L shows revenue before you have earned it. That inflates your profit in month one and deflates it in month two. It makes your management accounts unreliable.</p>
 
-<p><strong>2200 — Deferred Revenue (Retainers)</strong><br>
+<p><strong>2200, Deferred Revenue (Retainers)</strong><br>
 Use this for retainer fees invoiced in advance. As you deliver the month, you release the revenue from this balance sheet account to your 4000 P&L account.</p>
 
-<p><strong>2210 — Deferred Revenue (Projects)</strong><br>
+<p><strong>2210, Deferred Revenue (Projects)</strong><br>
 Use this for stage payments or upfront project fees that have not yet been earned. Release to 4100 as you complete each milestone.</p>
 
 <p>In Xero, you can use the "Billable" or "Work in Progress" features to automate this. In QuickBooks, you can use the "Deferred Revenue" account type and run a monthly journal to move amounts to earned revenue. Either way, the account must exist in your chart.</p>
@@ -95,22 +95,22 @@ Use this for stage payments or upfront project fees that have not yet been earne
 
 <p>Your cost of sales accounts need to mirror your revenue accounts. If you want to see gross margin by service line, you need separate cost accounts for retainer delivery, project delivery, and pass-through costs.</p>
 
-<p><strong>5000 — Direct Labour (Retainers)</strong><br>
+<p><strong>5000, Direct Labour (Retainers)</strong><br>
 Salaries and freelancer costs for staff who deliver retainer work. This includes the SEO manager, the PPC specialist, the content writer. If they split time between retainer and project work, allocate based on timesheets.</p>
 
-<p><strong>5100 — Direct Labour (Projects)</strong><br>
+<p><strong>5100, Direct Labour (Projects)</strong><br>
 Same logic for project delivery. Web developers, designers, project managers on project work.</p>
 
-<p><strong>5200 — Freelancers and Subcontractors</strong><br>
+<p><strong>5200, Freelancers and Subcontractors</strong><br>
 External contractors brought in for specific projects or overflow work. Keep this separate from employed staff costs so you can see your reliance on freelancers.</p>
 
-<p><strong>5300 — Ad Spend (Pass-Through)</strong><br>
+<p><strong>5300, Ad Spend (Pass-Through)</strong><br>
 The cost of Google Ads, Meta Ads, LinkedIn Ads that you pay on behalf of clients. This should match your 4300 income account. The net margin on pass-through should be zero or close to it.</p>
 
-<p><strong>5400 — Software and Tools</strong><br>
+<p><strong>5400, Software and Tools</strong><br>
 Agency-specific tools: SEMrush, Ahrefs, Canva, Figma, Asana, Monday.com. If you allocate these costs to specific clients or service lines, use sub-accounts.</p>
 
-<p><strong>5500 — Other Direct Costs</strong><br>
+<p><strong>5500, Other Direct Costs</strong><br>
 Stock photography, fonts, licences, printing, domain registrations, hosting. Anything that is directly attributable to a client deliverable.</p>
 
 <p>With this structure, you can run a gross margin report by service line. You will see that your retainer work runs at 72% gross margin while your project work runs at 45%. That tells you where to focus, where to raise prices, and where to improve efficiency.</p>
@@ -119,28 +119,28 @@ Stock photography, fonts, licences, printing, domain registrations, hosting. Any
 
 <p>Overheads are where most agency founders overcomplicate their chart of accounts. You do not need 50 expense accounts. You need 15 to 20 that actually matter.</p>
 
-<p><strong>6000 — Rent and Office Costs</strong><br>
+<p><strong>6000, Rent and Office Costs</strong><br>
 Rent, rates, utilities, cleaning, coffee, snacks. If you are remote-first, this might be a co-working membership or nothing at all.</p>
 
-<p><strong>6100 — Staff Costs (Non-Direct)</strong><br>
+<p><strong>6100, Staff Costs (Non-Direct)</strong><br>
 Salaries for admin, finance, management who are not billable. Also include pension contributions, training, recruitment fees, and staff social events.</p>
 
-<p><strong>6200 — Professional Fees</strong><br>
+<p><strong>6200, Professional Fees</strong><br>
 Accountancy, legal, HR consultancy, insurance. This is where your ICAEW qualified accountants at Agency Founder Finance would appear on your P&L. And yes, we know what we look like on there.</p>
 
-<p><strong>6300 — Marketing and Business Development</strong><br>
+<p><strong>6300, Marketing and Business Development</strong><br>
 Your own agency's marketing spend. Website hosting, Google Ads for your own brand, content creation, events, sponsorships. Many agencies underinvest here because they are too busy delivering client work.</p>
 
-<p><strong>6400 — Travel and Entertainment</strong><br>
+<p><strong>6400, Travel and Entertainment</strong><br>
 Client meetings, conferences, team nights out. HMRC rules on entertaining are specific: client entertaining is not allowable for corporation tax unless it is staff entertaining. Keep them separate.</p>
 
-<p><strong>6500 — IT and Subscriptions</strong><br>
+<p><strong>6500, IT and Subscriptions</strong><br>
 General IT costs not allocated to clients. Broadband, phones, laptops, software for internal use (Office 365, Slack, Notion).</p>
 
-<p><strong>6600 — Bank Charges and Interest</strong><br>
+<p><strong>6600, Bank Charges and Interest</strong><br>
 Bank fees, FX charges, loan interest, credit card merchant fees.</p>
 
-<p><strong>6700 — Depreciation</strong><br>
+<p><strong>6700, Depreciation</strong><br>
 Laptops, office furniture, equipment. Use the Annual Investment Allowance to claim 100% relief in the year of purchase on most assets up to £1m.</p>
 
 <p>That is it. Eight overhead accounts. You can add more if your agency has unusual costs, but start here and only add accounts when you genuinely need to track a specific cost category.</p>
@@ -149,28 +149,28 @@ Laptops, office furniture, equipment. Use the Annual Investment Allowance to cla
 
 <p>Your balance sheet accounts matter less for day-to-day management but matter hugely for year-end and corporation tax returns. Make sure these exist:</p>
 
-<p><strong>1100 — Trade Debtors</strong><br>
+<p><strong>1100, Trade Debtors</strong><br>
 Money owed to you by clients. This should reconcile to your aged debtors report every month.</p>
 
-<p><strong>1200 — Work in Progress</strong><br>
+<p><strong>1200, Work in Progress</strong><br>
 Time and costs incurred on projects not yet invoiced. If you do fixed-price projects, you need this account to show the true value of your balance sheet.</p>
 
-<p><strong>2100 — Trade Creditors</strong><br>
+<p><strong>2100, Trade Creditors</strong><br>
 Money you owe to suppliers. Freelancers, software vendors, Google Ads accounts.</p>
 
-<p><strong>2300 — VAT Liability</strong><br>
+<p><strong>2300, VAT Liability</strong><br>
 VAT collected but not yet paid to HMRC. If you use the Flat Rate Scheme, this account should match your quarterly return.</p>
 
-<p><strong>2400 — Corporation Tax Liability</strong><br>
+<p><strong>2400, Corporation Tax Liability</strong><br>
 Corporation tax accrued but not yet paid. Your accountant will post journals here at year-end.</p>
 
-<p><strong>2500 — Directors' Loan Account</strong><br>
+<p><strong>2500, Directors' Loan Account</strong><br>
 If you take money from the company that is not salary or dividends, it goes here. Keep this account clean. Loans over £10k or not repaid within 9 months of year-end trigger a 33.75% S455 tax charge.</p>
 
-<p><strong>3000 — Retained Earnings</strong><br>
+<p><strong>3000, Retained Earnings</strong><br>
 Accumulated profits from previous years. This is where your P&L profit lands at year-end.</p>
 
-<p><strong>3100 — Profit and Loss Account</strong><br>
+<p><strong>3100, Profit and Loss Account</strong><br>
 Current year profit or loss. This account resets to zero at year-end when the balance moves to retained earnings.</p>
 
 <h2>Putting It All Together: A Worked Example</h2>

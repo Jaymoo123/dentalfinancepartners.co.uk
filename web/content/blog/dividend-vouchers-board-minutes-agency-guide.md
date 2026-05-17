@@ -50,8 +50,8 @@ keyTakeaways:
 <p>The two key documents are:</p>
 
 <ul>
-<li><strong>A dividend voucher</strong> — a written record of each dividend payment, showing the amount, date, and recipient</li>
-<li><strong>Board minutes</strong> — a formal record of the decision to declare a dividend, signed by the directors</li>
+<li><strong>A dividend voucher</strong>, a written record of each dividend payment, showing the amount, date, and recipient</li>
+<li><strong>Board minutes</strong>, a formal record of the decision to declare a dividend, signed by the directors</li>
 </ul>
 
 <p>Without both, HMRC can argue the payment was not a dividend at all. And if they win that argument, you face a tax bill for unpaid National Insurance and potentially higher income tax. We have seen agency founders lose tens of thousands of pounds because they could not produce a simple signed voucher.</p>
@@ -103,9 +103,9 @@ keyTakeaways:
 
 <p>Strictly speaking, yes. Company law requires that dividends are declared by the board (or by an ordinary resolution of shareholders, but for most agencies the board and shareholders are the same people).</p>
 
-<p>In practice, many agency founders declare dividends on a regular schedule — quarterly, half-yearly, or annually — and produce a single set of board minutes authorising all dividends for the year. That is acceptable as long as the minutes specify the schedule and each dividend still has its own voucher.</p>
+<p>In practice, many agency founders declare dividends on a regular schedule, quarterly, half-yearly, or annually, and produce a single set of board minutes authorising all dividends for the year. That is acceptable as long as the minutes specify the schedule and each dividend still has its own voucher.</p>
 
-<p>But if your dividend pattern changes — say you take an extra dividend because the agency had a strong quarter — you need separate board minutes for that decision.</p>
+<p>But if your dividend pattern changes, say you take an extra dividend because the agency had a strong quarter, you need separate board minutes for that decision.</p>
 
 <h2>Common Mistakes Agency Founders Make</h2>
 
@@ -125,9 +125,9 @@ keyTakeaways:
 
 <h3>Mistake 3: Backdating Documents</h3>
 
-<p>We understand the temptation. HMRC asks for dividend vouchers. You realise you never created them. So you create them now, with last year's date. That is backdating. It is dishonest. And HMRC has ways of spotting it — inconsistent dates, missing signatures, documents that look too clean.</p>
+<p>We understand the temptation. HMRC asks for dividend vouchers. You realise you never created them. So you create them now, with last year's date. That is backdating. It is dishonest. And HMRC has ways of spotting it, inconsistent dates, missing signatures, documents that look too clean.</p>
 
-<p><strong>Fix:</strong> Create the documents at the time. Set a recurring reminder in your calendar. "Declare quarterly dividend — create voucher and minutes."</p>
+<p><strong>Fix:</strong> Create the documents at the time. Set a recurring reminder in your calendar. "Declare quarterly dividend, create voucher and minutes."</p>
 
 <h3>Mistake 4: Using the Wrong Accounting Period</h3>
 
@@ -149,7 +149,7 @@ keyTakeaways:
 
 <p>Decide how often you will pay dividends. Most agency founders use quarterly or half-yearly. Set a calendar reminder for each payment date.</p>
 
-<p>For example: "First working day of March, June, September, December — declare dividend." On that day, fill in the voucher, sign the minutes, and process the payment.</p>
+<p>For example: "First working day of March, June, September, December, declare dividend." On that day, fill in the voucher, sign the minutes, and process the payment.</p>
 
 <h3>Step 3: File Everything</h3>
 

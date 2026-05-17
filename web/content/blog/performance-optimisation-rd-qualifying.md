@@ -19,9 +19,9 @@ summary: Performance optimisation work can qualify for R&D tax credits, but the 
 schema: ''
 faqs:
 - question: Can I claim R&D tax credits for performance optimisation work on my own agency's website or platform?
-  answer: Yes, provided the work meets HMRC's R&D tests. The key is that the optimisation must involve technological uncertainty — not just routine improvements. If you are optimising your own agency's website using standard techniques (caching, image compression, CDN), it is unlikely to qualify. But if you are developing a novel approach to solve a genuinely uncertain technical problem, it can qualify, even on your own platform.
+  answer: Yes, provided the work meets HMRC's R&D tests. The key is that the optimisation must involve technological uncertainty, not just routine improvements. If you are optimising your own agency's website using standard techniques (caching, image compression, CDN), it is unlikely to qualify. But if you are developing a novel approach to solve a genuinely uncertain technical problem, it can qualify, even on your own platform.
 - question: What is the difference between routine performance optimisation and qualifying R&D work?
-  answer: Routine optimisation applies known methods to known problems with predictable outcomes. Qualifying R&D involves overcoming technological uncertainty — you did not know at the start whether the solution was achievable or how to achieve it. If any competent developer in your field could have solved the problem using standard techniques, it is routine work, not R&D.
+  answer: Routine optimisation applies known methods to known problems with predictable outcomes. Qualifying R&D involves overcoming technological uncertainty, you did not know at the start whether the solution was achievable or how to achieve it. If any competent developer in your field could have solved the problem using standard techniques, it is routine work, not R&D.
 - question: How far back can I claim R&D tax credits for past performance optimisation projects?
   answer: For SME agencies, you can amend a corporation tax return to include an R&D claim up to 12 months after the filing deadline. That means you can typically go back two accounting periods. For example, if your accounting year ends on 31 March 2025, you can still amend the 2023/24 return until 31 March 2026. Check with your accountant for your specific deadlines.
 - question: Do I need to have a successful outcome to claim R&D tax credits for performance optimisation work?
@@ -46,8 +46,8 @@ keyTakeaways:
 <p>HMRC's R&D definition comes from the <strong>Corporation Tax Act 2009, Part 13</strong>. For a project to qualify, it must meet two tests:</p>
 
 <ul>
-<li><strong>An advance in science or technology</strong> — you created knowledge or capability that did not exist before, at least within your field.</li>
-<li><strong>Overcoming technological uncertainty</strong> — you did not know at the start whether the outcome was achievable, or how to achieve it within reasonable time or cost constraints.</li>
+<li><strong>An advance in science or technology</strong>, you created knowledge or capability that did not exist before, at least within your field.</li>
+<li><strong>Overcoming technological uncertainty</strong>, you did not know at the start whether the outcome was achievable, or how to achieve it within reasonable time or cost constraints.</li>
 </ul>
 
 <p>The work must also relate to your trade. If you are a digital agency, R&D work on a client's platform qualifies because it is part of your trade of delivering technical solutions.</p>
@@ -72,7 +72,7 @@ keyTakeaways:
 
 <p>Your client is a SaaS platform handling real-time financial data feeds. Their existing database architecture cannot process 10,000 transactions per second without latency spikes that break their SLA. Off-the-shelf database solutions cannot handle the specific data structure. You design a custom in-memory caching layer with a novel indexing algorithm that reduces latency by 85%.</p>
 
-<p><strong>Does this qualify?</strong> Possibly. The key question is: could you have solved this problem using known methods? If the answer is no — if you had to develop a genuinely new approach because existing database architectures, caching strategies, or indexing methods were insufficient — then you have overcome technological uncertainty.</p>
+<p><strong>Does this qualify?</strong> Possibly. The key question is: could you have solved this problem using known methods? If the answer is no, if you had to develop a genuinely new approach because existing database architectures, caching strategies, or indexing methods were insufficient, then you have overcome technological uncertainty.</p>
 
 <p>The test is not whether the work was hard. It is whether the solution was <strong>not obvious</strong> to a competent professional in your field at the start of the project.</p>
 
@@ -80,7 +80,7 @@ keyTakeaways:
 
 <p>Your client wants to build a video streaming platform that works reliably on sub-3G connections in rural areas. You spend six weeks researching compression algorithms, testing different codec configurations, and prototyping adaptive bitrate streaming approaches. You ultimately conclude that no existing solution meets the requirements, and you recommend the client pivot to a different product strategy.</p>
 
-<p><strong>Does this qualify?</strong> Yes. The research itself is qualifying R&D, even though you did not produce a working solution. HMRC recognises that <strong>technological uncertainty</strong> includes not knowing whether a solution is possible at all. The time spent investigating, prototyping, and testing counts — provided you documented it properly.</p>
+<p><strong>Does this qualify?</strong> Yes. The research itself is qualifying R&D, even though you did not produce a working solution. HMRC recognises that <strong>technological uncertainty</strong> includes not knowing whether a solution is possible at all. The time spent investigating, prototyping, and testing counts, provided you documented it properly.</p>
 
 <p>This is a common blind spot. Many agencies write off research phases as "pre-sales" or "discovery" and miss legitimate R&D claims worth tens of thousands of pounds.</p>
 
@@ -88,7 +88,7 @@ keyTakeaways:
 
 <p>We see three recurring mistakes when agency founders try to claim R&D for optimisation work.</p>
 
-<p><strong>Mistake 1: Confusing difficulty with uncertainty.</strong> A project can be technically difficult — requiring senior developers working long hours — without involving any technological uncertainty. If you knew how to solve it from the start, even if the implementation was complex, it is not R&D.</p>
+<p><strong>Mistake 1: Confusing difficulty with uncertainty.</strong> A project can be technically difficult, requiring senior developers working long hours, without involving any technological uncertainty. If you knew how to solve it from the start, even if the implementation was complex, it is not R&D.</p>
 
 <p><strong>Mistake 2: Claiming routine improvements as innovations.</strong> Reducing page load time from 3 seconds to 1.5 seconds using standard techniques is not R&D. It is good engineering. HMRC's R&D inspectors have seen hundreds of these claims and will challenge them.</p>
 
@@ -99,10 +99,10 @@ keyTakeaways:
 <p>If your performance optimisation project meets the R&D tests, the qualifying costs include:</p>
 
 <ul>
-<li><strong>Staff costs</strong> — salaries, employer NI, and pension contributions for developers and technical leads directly working on the R&D project. Time-sheeted and apportioned.</li>
-<li><strong>Externally provided workers</strong> — contractors or freelancers working under your supervision. Usually 65% of the payments count as qualifying costs (the "connected" rules are different if the contractor is a related party).</li>
-<li><strong>Consumables</strong> — software licences, cloud computing costs, and materials consumed in the R&D. For a performance optimisation project, this might include AWS or Azure compute costs for testing, or specialised profiling tools.</li>
-<li><strong>Subcontracted R&D</strong> — if you pay another company to carry out R&D on your behalf, 65% of the payment qualifies. This is less common for agency-led projects.</li>
+<li><strong>Staff costs</strong>, salaries, employer NI, and pension contributions for developers and technical leads directly working on the R&D project. Time-sheeted and apportioned.</li>
+<li><strong>Externally provided workers</strong>, contractors or freelancers working under your supervision. Usually 65% of the payments count as qualifying costs (the "connected" rules are different if the contractor is a related party).</li>
+<li><strong>Consumables</strong>, software licences, cloud computing costs, and materials consumed in the R&D. For a performance optimisation project, this might include AWS or Azure compute costs for testing, or specialised profiling tools.</li>
+<li><strong>Subcontracted R&D</strong>, if you pay another company to carry out R&D on your behalf, 65% of the payment qualifies. This is less common for agency-led projects.</li>
 </ul>
 
 <p>For an SME agency, the R&D tax credit works as follows: you deduct 186% of qualifying costs from your taxable profits (for expenditure on or after 1 April 2023). If you are loss-making, you can surrender the loss for a cash payment worth up to 10% of the surrendered amount (subject to the £20,000 PAYE cap for R&D-intensive companies).</p>
@@ -116,10 +116,10 @@ keyTakeaways:
 <ol>
 <li><strong>Is the problem solvable using known methods?</strong> If yes, it is not R&D. If no, proceed to question two.</li>
 <li><strong>Would a competent developer in your field know how to achieve the desired outcome at the start?</strong> If yes, it is routine work. If no, you have technological uncertainty.</li>
-<li><strong>Are you creating something that advances the state of the art in your field?</strong> Not necessarily a global breakthrough — just an advance within your specific technical domain. If yes, the work qualifies.</li>
+<li><strong>Are you creating something that advances the state of the art in your field?</strong> Not necessarily a global breakthrough, just an advance within your specific technical domain. If yes, the work qualifies.</li>
 </ol>
 
-<p>If you answer "no" to question one, "no" to question two, and "yes" to question three, you almost certainly have qualifying R&D. Talk to your accountant before the project ends — the documentation requirements are easier to meet when you plan for them upfront.</p>
+<p>If you answer "no" to question one, "no" to question two, and "yes" to question three, you almost certainly have qualifying R&D. Talk to your accountant before the project ends, the documentation requirements are easier to meet when you plan for them upfront.</p>
 
 <h2>Real Examples From Agency Work</h2>
 
@@ -136,10 +136,10 @@ keyTakeaways:
 <p>If you think your next project might qualify, set up documentation from day one. HMRC will want to see:</p>
 
 <ul>
-<li><strong>A project narrative</strong> — what was the technical problem? What made it uncertain? What approaches did you try that failed? What did you ultimately do to solve it?</li>
-<li><strong>Contemporaneous records</strong> — project briefs, technical specifications, test results, meeting notes, and developer time logs. These should be created during the project, not reconstructed afterward.</li>
-<li><strong>Time apportionment</strong> — clear records of which staff worked on the R&D project and how much time they spent. If a developer splits their week between R&D work and routine client work, you need a timesheet showing the split.</li>
-<li><strong>Qualifying cost breakdown</strong> — a schedule showing staff costs, contractor costs, consumables, and any subcontractor costs, with supporting invoices and payroll records.</li>
+<li><strong>A project narrative</strong>, what was the technical problem? What made it uncertain? What approaches did you try that failed? What did you ultimately do to solve it?</li>
+<li><strong>Contemporaneous records</strong>, project briefs, technical specifications, test results, meeting notes, and developer time logs. These should be created during the project, not reconstructed afterward.</li>
+<li><strong>Time apportionment</strong>, clear records of which staff worked on the R&D project and how much time they spent. If a developer splits their week between R&D work and routine client work, you need a timesheet showing the split.</li>
+<li><strong>Qualifying cost breakdown</strong>, a schedule showing staff costs, contractor costs, consumables, and any subcontractor costs, with supporting invoices and payroll records.</li>
 </ul>
 
 <p>We recommend using a tool like <strong>Xero</strong> or <strong>QuickBooks</strong> with project tracking enabled, and recording R&D time against a specific project code. If you use <strong>FreeAgent</strong>, you can set up a separate project for R&D work and tag relevant expenses.</p>
@@ -148,7 +148,7 @@ keyTakeaways:
 
 <h2>What to Do Next</h2>
 
-<p>If you have a performance optimisation project in your pipeline — or one you completed in the last two years — ask yourself whether it involved genuine technological uncertainty. If the answer is yes, speak to your accountant before the next corporation tax return deadline.</p>
+<p>If you have a performance optimisation project in your pipeline, or one you completed in the last two years, ask yourself whether it involved genuine technological uncertainty. If the answer is yes, speak to your accountant before the next corporation tax return deadline.</p>
 
 <p>For SME agencies, the deadline for amending a return to include an R&D claim is 12 months after the filing deadline. That means you can typically go back two accounting periods and claim R&D tax credits you missed. Do not assume it is too late.</p>
 

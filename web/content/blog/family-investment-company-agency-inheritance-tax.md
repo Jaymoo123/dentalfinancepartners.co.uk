@@ -60,8 +60,8 @@ keyTakeaways:
 <h3>Step 1: Set Up the FIC</h3>
 <p>You incorporate a new company. This is the family investment company. It has two classes of shares:</p>
 <ul>
-<li><strong>Voting shares</strong> (typically "A shares") — you hold these. They carry voting rights but limited economic rights. You decide dividends and strategy.</li>
-<li><strong>Non-voting shares</strong> (typically "B shares") — your children hold these. They carry the economic value but no control. They receive dividends when you declare them.</li>
+<li><strong>Voting shares</strong> (typically "A shares"), you hold these. They carry voting rights but limited economic rights. You decide dividends and strategy.</li>
+<li><strong>Non-voting shares</strong> (typically "B shares"), your children hold these. They carry the economic value but no control. They receive dividends when you declare them.</li>
 </ul>
 <p>The FIC's articles of association are drafted specifically to separate control from value. This is not a standard Companies House template. You need a solicitor who specialises in FIC work.</p>
 

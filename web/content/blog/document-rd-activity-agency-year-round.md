@@ -78,10 +78,10 @@ keyTakeaways:
 <h3>2. Technical Notes and Decision Logs</h3>
 <p>As the project progresses, record the dead ends. The approaches you tried that failed. The unexpected results that forced you to pivot. The technical decisions you made and why.</p>
 
-<p>This is the evidence that proves you were resolving uncertainty. A straight line from A to B does not qualify as R&D. The detours, the failures, the moments where you said "that didn't work, let's try something else" — that is the R&D.</p>
+<p>This is the evidence that proves you were resolving uncertainty. A straight line from A to B does not qualify as R&D. The detours, the failures, the moments where you said "that didn't work, let's try something else", that is the R&D.</p>
 
 <h3>3. Timesheets or Time Logs</h3>
-<p>HMRC want to see that the people working on qualifying projects actually spent time on them. Generic timesheets that say "development work" are weak. Timesheets that say "built custom attribution model for client X — resolved data matching uncertainty between Google Ads and CRM" are strong.</p>
+<p>HMRC want to see that the people working on qualifying projects actually spent time on them. Generic timesheets that say "development work" are weak. Timesheets that say "built custom attribution model for client X, resolved data matching uncertainty between Google Ads and CRM" are strong.</p>
 
 <p>If you use Xero Projects, QuickBooks Time, or any job-costing tool, tag time entries to specific R&D projects. If you don't use timesheets, start. Even a weekly log in a spreadsheet is better than nothing.</p>
 
@@ -112,7 +112,7 @@ keyTakeaways:
 <p>Save any significant email threads about technical problems. A five-email chain where your developer explains a bug and proposes a novel fix is gold.</p>
 
 <h3>Month 6: Project Completion or Milestone</h3>
-<p>Write a summary of what was achieved. Compare the final solution to the original problem. Note what changed along the way. This is not a marketing document — it is a technical record.</p>
+<p>Write a summary of what was achieved. Compare the final solution to the original problem. Note what changed along the way. This is not a marketing document, it is a technical record.</p>
 
 <p>Run a cost report from your accounting system showing all costs tagged to this project. Save it alongside the technical summary.</p>
 

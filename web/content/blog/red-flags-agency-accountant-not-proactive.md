@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/a-woman-computing-with-a-calculator-8296974/
   source: Pexels
 h1: Red Flags Your Agency Accountant Isn't Proactive Enough
-summary: If you're an agency founder and your accountant only calls you at year-end, you've got a problem. Here are the warning signs that your accountant is reactive, not proactive — and what to do about it.
+summary: If you're an agency founder and your accountant only calls you at year-end, you've got a problem. Here are the warning signs that your accountant is reactive, not proactive, and what to do about it.
 schema: ''
 faqs:
 - question: What's the difference between a proactive and a reactive accountant?

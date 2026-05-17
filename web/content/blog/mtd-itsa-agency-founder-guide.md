@@ -127,11 +127,11 @@ keyTakeaways:
 <p>HMRC has published a list of MTD-compatible software products. The main options for agency founders are:</p>
 
 <ul>
-<li><strong>Xero</strong> — widely used by agencies, MTD ITSA compliant, integrates with Dext for receipt capture</li>
-<li><strong>QuickBooks</strong> — similar functionality, good for smaller agencies</li>
-<li><strong>FreeAgent</strong> — popular with sole traders and micro-agencies, includes built-in bank feeds</li>
-<li><strong>Sage</strong> — more traditional, still MTD-compliant</li>
-<li><strong>Spreadsheets with bridging software</strong> — possible but clunky. You need a bridging tool that connects your spreadsheet to HMRC’s API</li>
+<li><strong>Xero</strong>, widely used by agencies, MTD ITSA compliant, integrates with Dext for receipt capture</li>
+<li><strong>QuickBooks</strong>, similar functionality, good for smaller agencies</li>
+<li><strong>FreeAgent</strong>, popular with sole traders and micro-agencies, includes built-in bank feeds</li>
+<li><strong>Sage</strong>, more traditional, still MTD-compliant</li>
+<li><strong>Spreadsheets with bridging software</strong>, possible but clunky. You need a bridging tool that connects your spreadsheet to HMRC’s API</li>
 </ul>
 
 <p>If you currently use a spreadsheet and nothing else, you need to change. The bridging software route works but adds complexity. Most agency founders find it simpler to move to proper accounting software.</p>

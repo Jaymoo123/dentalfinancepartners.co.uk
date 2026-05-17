@@ -37,7 +37,7 @@ keyTakeaways:
 ---
 <h2>What Is a Holding Company, and What Is a Trading Company?</h2>
 
-<p>If you own an agency and someone mentions a "holding company structure," you probably picture a corporate group with multiple subsidiaries. Maybe you think of big PLCs or private equity portfolios. But holding companies are common in much smaller businesses too — including agencies turning over £500k to £5m.</p>
+<p>If you own an agency and someone mentions a "holding company structure," you probably picture a corporate group with multiple subsidiaries. Maybe you think of big PLCs or private equity portfolios. But holding companies are common in much smaller businesses too, including agencies turning over £500k to £5m.</p>
 
 <p>Here is the difference in plain English. A <strong>trading company</strong> does the actual work. It employs staff, signs client contracts, invoices for services, and pays corporation tax on its profits. If you run a single limited company for your agency right now, you already have a trading company.</p>
 
@@ -53,7 +53,7 @@ keyTakeaways:
 
 <h3>1. Asset Protection</h3>
 
-<p>Your trading company carries risk. Client disputes, contract claims, employment tribunals, or even a bad project that goes to court — any of these could result in a judgment against the company. If your trading company holds all the cash reserves and owns the intellectual property, that entire pot is at risk.</p>
+<p>Your trading company carries risk. Client disputes, contract claims, employment tribunals, or even a bad project that goes to court, any of these could result in a judgment against the company. If your trading company holds all the cash reserves and owns the intellectual property, that entire pot is at risk.</p>
 
 <p>A holding company structure separates the operational risk from the assets. The trading company does the work and carries the liability. The holding company owns the cash, the IP, and any property. If the trading company faces a claim, the holding company's assets are a separate legal entity. They are not automatically accessible to the trading company's creditors.</p>
 
@@ -89,7 +89,7 @@ keyTakeaways:
 
 <p>Sarah runs a 12-person digital agency in Bristol. Turnover is £1.2m. Profit before tax is roughly £280k. She has built up £180k in retained profits over five years. She owns the IP for a proprietary reporting tool her agency developed. She is thinking about selling in three to five years.</p>
 
-<p>Sarah's current structure: one trading company. Everything sits in that company — cash, IP, client contracts, the lot.</p>
+<p>Sarah's current structure: one trading company. Everything sits in that company, cash, IP, client contracts, the lot.</p>
 
 <p>If she sells the shares in that company for £1.5m, her gain is roughly £1.3m after base cost. The first £1m qualifies for BADR at 14% (for disposals from 6 April 2025). The remaining £300k is taxed at 20%. Total CGT: £160k.</p>
 
@@ -97,7 +97,7 @@ keyTakeaways:
 
 <p>That restructure saves her roughly £42,750 in dividend tax on the cash extraction alone. Plus, the structure gives her creditor protection on the cash and IP in the meantime.</p>
 
-<p>Is it worth doing? For Sarah, yes. The cost of setting up the holding company and transferring the trading company shares is a few thousand pounds in legal and accounting fees. The ongoing compliance cost is slightly higher — two sets of annual accounts and two corporation tax returns instead of one. But the tax saving on exit alone covers that multiple times over.</p>
+<p>Is it worth doing? For Sarah, yes. The cost of setting up the holding company and transferring the trading company shares is a few thousand pounds in legal and accounting fees. The ongoing compliance cost is slightly higher, two sets of annual accounts and two corporation tax returns instead of one. But the tax saving on exit alone covers that multiple times over.</p>
 
 <h2>When a Holding Company Does Not Make Sense</h2>
 
@@ -105,7 +105,7 @@ keyTakeaways:
 
 <h3>You Are Not Planning to Sell</h3>
 
-<p>If you plan to run the agency for the next 15 years and pass it to a family member or simply wind it down, the exit tax benefits do not apply. The asset protection is still real, but you can achieve similar protection through other means — separate IP holding, director indemnity insurance, and proper contract terms.</p>
+<p>If you plan to run the agency for the next 15 years and pass it to a family member or simply wind it down, the exit tax benefits do not apply. The asset protection is still real, but you can achieve similar protection through other means, separate IP holding, director indemnity insurance, and proper contract terms.</p>
 
 <p>The extra compliance cost and administrative burden of a group structure may outweigh the benefits if you never sell.</p>
 
@@ -139,7 +139,7 @@ keyTakeaways:
 
 <p><strong>Annual accounts:</strong> Each company files its own accounts at Companies House. If the group exceeds two of three thresholds (turnover £10.2m, balance sheet £5.1m, 50 employees), you also need group accounts. Most agencies below £5m turnover do not hit this threshold.</p>
 
-<p><strong>Corporation tax:</strong> Each company files its own CT600 return. The holding company typically has minimal taxable income — just dividends from the trading company, which are exempt from corporation tax under the substantial shareholding exemption in most cases.</p>
+<p><strong>Corporation tax:</strong> Each company files its own CT600 return. The holding company typically has minimal taxable income, just dividends from the trading company, which are exempt from corporation tax under the substantial shareholding exemption in most cases.</p>
 
 <p><strong>Dividends:</strong> The trading company pays dividends up to the holding company. No tax is due on this intra-group dividend. The holding company then pays dividends to you personally when you need cash. You pay dividend tax at your marginal rate on those personal dividends.</p>
 

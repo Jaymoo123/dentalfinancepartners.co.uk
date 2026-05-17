@@ -45,7 +45,7 @@ keyTakeaways:
 
 <p>The off-payroll working rules are designed to identify workers who would be employees if they were engaged directly, but who currently work through an intermediary (typically their own limited company). HMRC calls these "deemed employees." The rules shift the responsibility for determining employment status from the worker to the organisation that receives their services.</p>
 
-<p>For recruitment agencies, this matters because you are often the "fee-payer" — the entity that pays the contractor's limited company. That makes you responsible for operating PAYE and National Insurance on the deemed employment income if the contractor is found to be inside IR35.</p>
+<p>For recruitment agencies, this matters because you are often the "fee-payer", the entity that pays the contractor's limited company. That makes you responsible for operating PAYE and National Insurance on the deemed employment income if the contractor is found to be inside IR35.</p>
 
 <p>The rules apply where:</p>
 <ul>
@@ -58,7 +58,7 @@ keyTakeaways:
 
 <h2>Why Recruitment Agencies Are the Prime Target</h2>
 
-<p>HMRC knows that recruitment agencies sit in the middle of the chain. You take the fee from the client, deduct your margin, and pay the contractor's limited company. If the contractor is inside IR35, HMRC expects tax and NI to be deducted at source — just like a normal employee.</p>
+<p>HMRC knows that recruitment agencies sit in the middle of the chain. You take the fee from the client, deduct your margin, and pay the contractor's limited company. If the contractor is inside IR35, HMRC expects tax and NI to be deducted at source, just like a normal employee.</p>
 
 <p>The problem is that many recruitment agencies have historically treated all contractors as outside IR35, relying on blanket determinations or simply not asking the right questions. HMRC has been issuing "nudge letters" to recruitment agencies since 2022, and we are now seeing full compliance reviews and tax bills running into six figures.</p>
 
@@ -79,7 +79,7 @@ keyTakeaways:
 
 <h3>What Happens If the Client Gets It Wrong?</h3>
 
-<p>This is where it gets complicated. If the client issues an SDS saying the contractor is outside IR35, but HMRC later determines that the contractor was actually inside the rules, the liability for unpaid tax usually falls on the fee-payer — which is you, the recruitment agency.</p>
+<p>This is where it gets complicated. If the client issues an SDS saying the contractor is outside IR35, but HMRC later determines that the contractor was actually inside the rules, the liability for unpaid tax usually falls on the fee-payer, which is you, the recruitment agency.</p>
 
 <p>There is a due diligence defence available, but it is narrow. You must be able to show that you took reasonable care when reviewing the client's SDS, and that you had no reason to believe the determination was wrong. In practice, that means you need to understand the client's working practices, not just accept their word.</p>
 
@@ -105,10 +105,10 @@ keyTakeaways:
 <ul>
 <li>Confirm the client is a medium or large organisation (check Companies House if unsure)</li>
 <li>Request a completed SDS from the client before the contractor starts</li>
-<li>Review the SDS for completeness — does it include reasons, not just a conclusion?</li>
+<li>Review the SDS for completeness, does it include reasons, not just a conclusion?</li>
 <li>If the SDS says "outside IR35," do you have reasonable grounds to agree?</li>
 <li>Send the SDS to the contractor within the required timeframe (before the first payment)</li>
-<li>Document your review process — keep a record of what you checked and why</li>
+<li>Document your review process, keep a record of what you checked and why</li>
 </ul>
 
 <h3>During the Engagement</h3>
@@ -124,8 +124,8 @@ keyTakeaways:
 <h3>Ongoing Compliance</h3>
 <ul>
 <li>Keep all SDS documents for at least 6 years after the engagement ends</li>
-<li>Review your contractor population quarterly — are there any changes in working patterns?</li>
-<li>Train your recruitment consultants on IR35 basics — they are the ones having the conversations</li>
+<li>Review your contractor population quarterly, are there any changes in working patterns?</li>
+<li>Train your recruitment consultants on IR35 basics, they are the ones having the conversations</li>
 <li>Consider using IR35 assessment tools for your own due diligence (but remember the CEST tool is directional only)</li>
 <li>Speak to your accountant if you are unsure about any determination</li>
 </ul>

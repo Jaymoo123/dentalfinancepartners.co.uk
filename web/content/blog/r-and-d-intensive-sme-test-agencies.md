@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/a-lab-assistant-with-a-test-tube-8533027/
   source: Pexels
 h1: 'The R&D Intensive SME Test: When Agencies Get the Enhanced 27% Rate'
-summary: If your agency spends 30% or more of its total costs on qualifying R&D, you may be an R&D intensive SME. That means an enhanced payable credit rate of 27% — significantly better than the standard 14.5%. This article explains the test, what counts, and how to claim.
+summary: If your agency spends 30% or more of its total costs on qualifying R&D, you may be an R&D intensive SME. That means an enhanced payable credit rate of 27%, significantly better than the standard 14.5%. This article explains the test, what counts, and how to claim.
 schema: ''
 faqs:
 - question: What is the R&D intensive SME rate for agencies?
@@ -47,7 +47,7 @@ keyTakeaways:
 
 <p>The standard SME payable credit rate for loss-making companies is 14.5% of the surrendered loss. Under the intensive SME rules, that rises to 27%. For a loss-making agency spending £100,000 on qualifying R&D, that is the difference between a £14,500 cash credit and a £27,000 cash credit. Over multiple years, that gap compounds significantly.</p>
 
-<p>HMRC introduced this change in the 2023 Spring Budget, effective for accounting periods beginning on or after 1 April 2023. The rationale was to reward genuinely innovation-intensive businesses — the ones where R&D is not a side project but a core activity.</p>
+<p>HMRC introduced this change in the 2023 Spring Budget, effective for accounting periods beginning on or after 1 April 2023. The rationale was to reward genuinely innovation-intensive businesses, the ones where R&D is not a side project but a core activity.</p>
 
 <h2>Who Qualifies for the Intensive SME Rate?</h2>
 
@@ -59,11 +59,11 @@ keyTakeaways:
 <li>You are loss-making on a trading basis (your allowable costs exceed your income).</li>
 </ul>
 
-<p>If all three apply, you can surrender your trading loss for a cash credit at 27% instead of 14.5%. If you are profitable, the intensive SME test does not change your deduction rate — you still get the 186% enhanced deduction. But being intensive is still worth noting because it may affect future claims if your profitability changes.</p>
+<p>If all three apply, you can surrender your trading loss for a cash credit at 27% instead of 14.5%. If you are profitable, the intensive SME test does not change your deduction rate, you still get the 186% enhanced deduction. But being intensive is still worth noting because it may affect future claims if your profitability changes.</p>
 
 <h3>What Counts as "Total Costs"?</h3>
 
-<p>This is where most agency founders get confused. HMRC defines total costs as the sum of all revenue expenditure included in the profit and loss account, plus any capitalised R&D costs, plus any R&D expenditure that has been capitalised as an intangible asset. In plain terms, it is everything you spend in the period — salaries, rent, software, freelancers, subcontractors, marketing, everything — plus any R&D you have capitalised on your balance sheet.</p>
+<p>This is where most agency founders get confused. HMRC defines total costs as the sum of all revenue expenditure included in the profit and loss account, plus any capitalised R&D costs, plus any R&D expenditure that has been capitalised as an intangible asset. In plain terms, it is everything you spend in the period, salaries, rent, software, freelancers, subcontractors, marketing, everything, plus any R&D you have capitalised on your balance sheet.</p>
 
 <p>For a typical agency, total costs will be dominated by staff costs, premises, and third-party contractor payments. The intensive SME test requires that at least 30% of that total is qualifying R&D spend.</p>
 
@@ -149,7 +149,7 @@ keyTakeaways:
 
 <h2>What Changes Are Coming?</h2>
 
-<p>The government has announced that from 1 April 2024, the intensive SME threshold will be reduced from 30% to 30% for accounting periods beginning on or after that date. Wait — that is the same. But there is a change: from 1 April 2024, the definition of "total costs" has been amended to exclude certain capital items. This may make it easier for some agencies to meet the 30% test.</p>
+<p>The government has announced that from 1 April 2024, the intensive SME threshold will be reduced from 30% to 30% for accounting periods beginning on or after that date. Wait, that is the same. But there is a change: from 1 April 2024, the definition of "total costs" has been amended to exclude certain capital items. This may make it easier for some agencies to meet the 30% test.</p>
 
 <p>Also, the government has indicated that the intensive SME rate is here to stay for the foreseeable future. It was introduced as a permanent feature of the R&D tax credit system, not a temporary measure. That gives agencies confidence to invest in R&D knowing the enhanced rate will be available.</p>
 

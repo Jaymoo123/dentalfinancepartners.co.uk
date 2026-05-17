@@ -21,9 +21,9 @@ faqs:
 - question: What is the difference between BADR and Entrepreneurs’ Relief?
   answer: They are the same relief. Entrepreneurs’ Relief was renamed Business Asset Disposal Relief (BADR) in April 2020. The rules are identical. The £1 million lifetime limit remains, but the rate has risen from 10% to 14% for disposals from 6 April 2025, and is scheduled to rise again to 18% from 6 April 2026. Any gains above the £1 million BADR limit are taxed at 24% (the main higher CGT rate).
 - question: Can I claim BADR if I sell my agency to my management team (MBO)?
-  answer: Yes, as long as you meet the qualifying conditions at the point of disposal — 5% shareholding, director or employee, and trading company status for at least two years. The key risk is that HMRC may challenge whether you have genuinely disposed of the shares if you retain a minority stake or continue as a director. Ensure the legal transfer is complete and documented properly.
+  answer: Yes, as long as you meet the qualifying conditions at the point of disposal, 5% shareholding, director or employee, and trading company status for at least two years. The key risk is that HMRC may challenge whether you have genuinely disposed of the shares if you retain a minority stake or continue as a director. Ensure the legal transfer is complete and documented properly.
 - question: How is an earn-out taxed when I sell my agency?
-  answer: It depends on how the earn-out is structured. If it’s additional consideration for your shares (deferred consideration), it’s taxed as a capital gain at 14% (BADR, up to £1m lifetime) or 24% (above the BADR limit). If it’s structured as employment income — for example, a consultancy fee for staying on — it’s taxed as income at up to 45% plus National Insurance. The contract wording is critical. Have your solicitor and accountant review the earn-out clause before signing.
+  answer: It depends on how the earn-out is structured. If it’s additional consideration for your shares (deferred consideration), it’s taxed as a capital gain at 14% (BADR, up to £1m lifetime) or 24% (above the BADR limit). If it’s structured as employment income, for example, a consultancy fee for staying on, it’s taxed as income at up to 45% plus National Insurance. The contract wording is critical. Have your solicitor and accountant review the earn-out clause before signing.
 - question: What happens if I sell my agency as an asset sale rather than a share sale?
   answer: In an asset sale, the company sells its business and pays corporation tax on the gain (19% or 25%). You then extract the remaining cash personally, paying further tax as a dividend or capital distribution. The effective tax rate can exceed 40%. Share sales are almost always more tax-efficient for sellers, especially if you qualify for BADR. Most buyers will accept a share sale if you negotiate it.
 authorSlug: james-whitfield
@@ -35,15 +35,15 @@ keyTakeaways:
 - The £1 million BADR lifetime limit applies per individual, not per company, so previous disposals reduce your remaining allowance.
 - Gains above the BADR limit are taxed at 20% (or 24% for some assets), making proper structuring essential before an exit.
 ---
-<p>You’ve built a business that clients trust, that generates real profit, and that someone else wants to buy. The question you’re now asking — the one that keeps you awake — is how to sell it without handing half the proceeds to HMRC.</p>
+<p>You’ve built a business that clients trust, that generates real profit, and that someone else wants to buy. The question you’re now asking, the one that keeps you awake, is how to sell it without handing half the proceeds to HMRC.</p>
 
 <p>This is the definitive guide to a tax-efficient agency exit. It’s written for founders of marketing, digital, creative, PR, web design, SEO, advertising, and recruitment agencies. We work with 73+ UK and UAE agency founders, and we’ve seen the difference between a well-structured exit and one that costs six figures in unnecessary tax.</p>
 
-<p>As ICAEW qualified accountants, we don’t do generic advice. This guide covers the specific numbers, forms, and deadlines you need to know. We’ll walk through Business Asset Disposal Relief, earn-out structures, goodwill valuation, due diligence, and the practical steps you should take now — even if a sale is three years away.</p>
+<p>As ICAEW qualified accountants, we don’t do generic advice. This guide covers the specific numbers, forms, and deadlines you need to know. We’ll walk through Business Asset Disposal Relief, earn-out structures, goodwill valuation, due diligence, and the practical steps you should take now, even if a sale is three years away.</p>
 
 <h2>Why Most Agency Founders Overpay Tax on Exit</h2>
 
-<p>The default structure for selling a limited company is a share sale. You sell your shares to the buyer. You pay Capital Gains Tax on the gain. Simple. But the difference between paying 14% and 24% — or even 24% — comes down to one thing: whether you qualify for <strong>Business Asset Disposal Relief</strong> (BADR, formerly Entrepreneurs’ Relief).</p>
+<p>The default structure for selling a limited company is a share sale. You sell your shares to the buyer. You pay Capital Gains Tax on the gain. Simple. But the difference between paying 14% and 24%, or even 24%, comes down to one thing: whether you qualify for <strong>Business Asset Disposal Relief</strong> (BADR, formerly Entrepreneurs’ Relief).</p>
 
 <p>BADR reduces your CGT rate to 14% on qualifying gains, up to a lifetime limit of £1 million. Gains above £1 million are taxed at 20% (or 24% for carried interest and some other assets). For a typical agency sale of £2 million, the difference between BADR and no relief is £100,000. That’s not a rounding error. That’s a deposit on a house in Bristol Harbourside.</p>
 
@@ -63,7 +63,7 @@ keyTakeaways:
 
 <h3>What Counts as a Business Asset</h3>
 
-<p>BADR applies to shares in a trading company — or the holding company of a trading group. Most agencies are trading companies. But if your agency has accumulated significant investment assets — property not used in the trade, large cash piles, passive investments — HMRC may argue it’s not wholly trading. The test is whether at least 80% of the company’s activities are trading.</p>
+<p>BADR applies to shares in a trading company, or the holding company of a trading group. Most agencies are trading companies. But if your agency has accumulated significant investment assets, property not used in the trade, large cash piles, passive investments, HMRC may argue it’s not wholly trading. The test is whether at least 80% of the company’s activities are trading.</p>
 
 <p>If you own the freehold of your office through the same company and it’s worth more than the agency itself, you have a problem. Separating property into a different structure well before a sale is essential.</p>
 
@@ -75,18 +75,18 @@ keyTakeaways:
 
 <h2>Asset Sale vs Share Sale: Which Structure Wins?</h2>
 
-<p>Buyers often prefer an asset sale. They buy the trade, the client contracts, the staff, the brand name, and the goodwill — but not the company itself. The seller’s company remains as a shell, holding cash and any excluded assets.</p>
+<p>Buyers often prefer an asset sale. They buy the trade, the client contracts, the staff, the brand name, and the goodwill, but not the company itself. The seller’s company remains as a shell, holding cash and any excluded assets.</p>
 
 <p>Sellers almost always prefer a share sale. It’s simpler, and it qualifies for BADR on the entire gain.</p>
 
 <p>This tension is the central negotiation in most agency acquisitions. Understanding the tax consequences of each structure is non-negotiable.</p>
 
-<h3>Share Sale — The Seller’s Preference</h3>
+<h3>Share Sale, The Seller’s Preference</h3>
 <p>In a share sale, you sell your shares. The company continues unchanged. The buyer inherits all the company’s history, including potential liabilities. You pay CGT on your gain. If you qualify for BADR, that’s 14% on the first £1m.</p>
 <p>Corporation tax doesn’t apply. The proceeds are yours personally.</p>
 
-<h3>Asset Sale — The Buyer’s Preference</h3>
-<p>In an asset sale, the company sells its business. The company pays corporation tax on any gain (19% or 25%, depending on profit level). You then extract the remaining cash from the company — usually as a dividend or capital distribution — paying further tax personally.</p>
+<h3>Asset Sale, The Buyer’s Preference</h3>
+<p>In an asset sale, the company sells its business. The company pays corporation tax on any gain (19% or 25%, depending on profit level). You then extract the remaining cash from the company, usually as a dividend or capital distribution, paying further tax personally.</p>
 <p>Effective tax rates on asset sales can exceed 40% when you layer corporation tax and dividend tax. For a £2 million sale, that’s potentially £800,000 in tax versus £200,000 under BADR.</p>
 
 <p>Most agency sales end up as share sales, but not always. If the buyer insists on an asset sale, you need to structure the deal to minimise the double tax hit. One common approach: the buyer pays a premium for goodwill directly to the company, and you extract the proceeds through a <strong>capital distribution</strong> taxed at 20% (or 14% with BADR on the distribution).</p>
@@ -96,17 +96,17 @@ keyTakeaways:
 
 <h2>Earn-Outs and Deferred Consideration</h2>
 
-<p>Rarely does an agency sale involve a single cash payment on day one. Most deals include an earn-out — additional payments based on the agency’s performance over one to three years after the sale.</p>
+<p>Rarely does an agency sale involve a single cash payment on day one. Most deals include an earn-out, additional payments based on the agency’s performance over one to three years after the sale.</p>
 
 <p>Earn-outs are common in agency acquisitions because the buyer wants to retain the founder for a transition period and protect against client churn. But they create tax complexity.</p>
 
 <h3>Tax Treatment of Earn-Out Payments</h3>
 <p>If the earn-out is structured as additional consideration for the shares, it’s treated as a capital gain in the year you receive it. You pay CGT at your applicable rate (14% or 24%, depending on BADR headroom).</p>
-<p>If the earn-out is structured as employment income — because you’re required to work for the buyer to earn it — it’s taxed as income. That means income tax at up to 45%, plus employee NI at 2%, plus employer NI at 13.8% (which the buyer may deduct from your payment).</p>
+<p>If the earn-out is structured as employment income, because you’re required to work for the buyer to earn it, it’s taxed as income. That means income tax at up to 45%, plus employee NI at 2%, plus employer NI at 13.8% (which the buyer may deduct from your payment).</p>
 <p>The difference between capital treatment and income treatment on a £500,000 earn-out can be £175,000. The contract wording determines which applies. Your solicitor and accountant must review the earn-out clause before you sign.</p>
 
 <h3>Contingent Consideration and HMRC’s Position</h3>
-<p>HMRC treats deferred consideration that is ascertainable — meaning the amount can be determined at the time of sale, even if payment is delayed — as a capital gain in the year of disposal. You can elect to pay tax in instalments as the cash arrives.</p>
+<p>HMRC treats deferred consideration that is ascertainable, meaning the amount can be determined at the time of sale, even if payment is delayed, as a capital gain in the year of disposal. You can elect to pay tax in instalments as the cash arrives.</p>
 <p>If the amount is genuinely unascertainable (for example, a percentage of future revenue), each payment is taxed in the year received. This can push you into higher tax brackets if multiple payments fall in one year.</p>
 
 <h3>Negotiating Earn-Outs</h3>
@@ -130,13 +130,13 @@ keyTakeaways:
 <p>Agencies with high retainer revenue, low client concentration, and strong second-line management command the highest multiples. A PR agency with three clients each representing 30% of revenue will struggle to get 3x. A digital agency with 50 clients on monthly retainers and 80% gross margin might get 5x.</p>
 
 <h3>Personal Goodwill vs Corporate Goodwill</h3>
-<p>If you built the agency’s client relationships through your personal reputation — and you didn’t have a contractual restriction preventing you from taking those clients — some of the goodwill may be personal, not corporate. In theory, you could sell personal goodwill separately, paying CGT rather than corporation tax.</p>
+<p>If you built the agency’s client relationships through your personal reputation, and you didn’t have a contractual restriction preventing you from taking those clients, some of the goodwill may be personal, not corporate. In theory, you could sell personal goodwill separately, paying CGT rather than corporation tax.</p>
 <p>In practice, HMRC has largely closed this down. Since the 2016 Finance Act, the transfer of personal goodwill to a connected company is treated as a distribution, taxed as income. For unconnected third-party sales, personal goodwill still exists as a concept, but it’s rarely accepted by HMRC without a fight. Get a professional valuation and a clear legal opinion before attempting this.</p>
 
 <h3>Goodwill and the Buyer’s Tax Position</h3>
 <p>Buyers can amortise purchased goodwill for accounting purposes, but not for corporation tax. Since April 2019, tax amortisation of goodwill is restricted. Buyers factor this into their offer price. If they can’t get a tax deduction for goodwill, they may pay less.</p>
 
-<h2>Management Buyouts (MBOs) — A Different Animal</h2>
+<h2>Management Buyouts (MBOs), A Different Animal</h2>
 
 <p>An MBO is a sale to your existing management team. It’s common in agencies where the founder wants to retire but the team wants to continue. The tax treatment differs from a third-party sale in several important ways.</p>
 
@@ -152,7 +152,7 @@ keyTakeaways:
 
 <h3>BADR on MBOs</h3>
 <p>BADR applies to MBOs as long as you meet the qualifying conditions at the point of disposal. But if you retain a minority stake or continue as a director, HMRC may argue that you haven’t genuinely disposed of the shares. The legal transfer must be complete.</p>
-<p>If you sell 70% of your shares to the MBO vehicle and keep 30%, you get BADR on the 70% only. The 30% remains subject to CGT when you eventually sell it — and if you wait more than two years, you may lose BADR eligibility on that tranche.</p>
+<p>If you sell 70% of your shares to the MBO vehicle and keep 30%, you get BADR on the 70% only. The 30% remains subject to CGT when you eventually sell it, and if you wait more than two years, you may lose BADR eligibility on that tranche.</p>
 
 <h3>Earn-Outs in MBOs</h3>
 <p>MBO earn-outs are often structured as profit shares or consulting fees. This is almost always less tax-efficient than a capital gain. If you’re selling to your team, negotiate a clean share sale with deferred consideration rather than a consultancy agreement.</p>
@@ -196,7 +196,7 @@ keyTakeaways:
 <p>The best time to plan your exit is two years before you want to sell. That’s the BADR qualifying period. If you’re reading this and thinking about selling in six months, you’re late. But there’s still time to improve your position.</p>
 
 <h3>Clean Up Your Balance Sheet</h3>
-<p>Clear any director’s loan account balances. If you owe the company money, repay it before the sale. If the company owes you, consider taking it as a dividend or capital distribution — but watch the tax implications.</p>
+<p>Clear any director’s loan account balances. If you owe the company money, repay it before the sale. If the company owes you, consider taking it as a dividend or capital distribution, but watch the tax implications.</p>
 <p>Remove personal assets from the company. If the company owns your car, a property, or any personal investments, transfer them out. The buyer doesn’t want them, and they complicate the trading status test for BADR.</p>
 
 <h3>Review Your Share Structure</h3>
@@ -207,17 +207,17 @@ keyTakeaways:
 <p>Agencies that depend on the founder are worth less. Buyers pay a premium for businesses that can run without the owner. Invest in your second-line management. Give them equity or profit shares. Document your processes. The less the buyer needs you, the more they’ll pay.</p>
 
 <h3>Get a Valuation</h3>
-<p>Commission a professional valuation from a firm that specialises in agency M&A. This isn’t just for negotiation — it’s for tax planning. If HMRC challenges your valuation, having a qualified expert’s report is your best defence.</p>
+<p>Commission a professional valuation from a firm that specialises in agency M&A. This isn’t just for negotiation, it’s for tax planning. If HMRC challenges your valuation, having a qualified expert’s report is your best defence.</p>
 
 <h2>The Tax Implications of International Buyers</h2>
 
-<p>More agency acquisitions involve international buyers — particularly US and European holding companies. Cross-border sales introduce additional tax considerations.</p>
+<p>More agency acquisitions involve international buyers, particularly US and European holding companies. Cross-border sales introduce additional tax considerations.</p>
 
 <h3>Withholding Tax on Share Sales</h3>
 <p>UK residents selling shares in a UK company to a non-UK buyer don’t typically face withholding tax. But if the buyer is based in a jurisdiction with a different tax treaty, the structure may require a UK tax clearance application (under Section 685 of ITA 2007) to ensure no withholding applies.</p>
 
 <h3>Double Tax Treaty Relief</h3>
-<p>If you’re a UK resident selling shares in a UK company, you’re taxed in the UK. Period. But if you’ve become non-resident before the sale — perhaps you’ve moved to Dubai — the tax position changes. UAE residents who sell UK shares may still be subject to UK CGT if they were UK resident at any time in the previous five years (the “temporary non-residence” rules).</p>
+<p>If you’re a UK resident selling shares in a UK company, you’re taxed in the UK. Period. But if you’ve become non-resident before the sale, perhaps you’ve moved to Dubai, the tax position changes. UAE residents who sell UK shares may still be subject to UK CGT if they were UK resident at any time in the previous five years (the “temporary non-residence” rules).</p>
 <p>For agency founders who have moved to the UAE, the interaction between UK CGT and UAE tax law is complex. You need specialist advice on both sides. We work with many UAE-based agency founders on exit planning.</p>
 
 <h2>Key Tax Forms and Deadlines</h2>
@@ -303,7 +303,7 @@ keyTakeaways:
 
 <p>If you’re thinking about selling in the next five years, start now. The two-year BADR clock starts the moment you meet the conditions. If you’re not already eligible, the earliest you can sell with full relief is two years from today.</p>
 
-<p>Even if you’re not sure you want to sell, prepare as if you will. A clean, well-documented, tax-efficient agency is worth more to every buyer — and it’s a better business to run.</p>
+<p>Even if you’re not sure you want to sell, prepare as if you will. A clean, well-documented, tax-efficient agency is worth more to every buyer, and it’s a better business to run.</p>
 
 <p>We work with agency founders across the UK and UAE on exit planning. If you’d like to discuss your specific situation, <a href="/contact">get in touch</a>. We’ll review your current structure, your BADR position, and your timeline. No obligation, just a conversation with someone who’s done this before.</p>
 

@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/video-editing-software-interface-close-up-29505140/
   source: Pexels
 h1: What Are the Costs and Timelines for Incorporating an Agency in 2025/26?
-summary: Thinking of incorporating your agency in 2025/26? Here are the real costs — from Companies House fees and accountant charges to corporation tax implications and the timeline from decision to trading. We cover everything a UK agency founder needs to budget for before making the switch.
+summary: Thinking of incorporating your agency in 2025/26? Here are the real costs, from Companies House fees and accountant charges to corporation tax implications and the timeline from decision to trading. We cover everything a UK agency founder needs to budget for before making the switch.
 schema: ''
 faqs:
 - question: What is the total cost to incorporate an agency in 2025/26?
@@ -46,7 +46,7 @@ keyTakeaways:
 <h3>Companies House Registration Fees</h3>
 <p>You can incorporate a company online for £50 using the standard service. That gets you registered within 24 to 48 hours in most cases. If you need it same-day, the premium service costs £100 and is usually processed within a few hours. For a straightforward agency incorporation, there is no reason to pay more than £50.</p>
 
-<p>Some formation agents charge £100 to £300 for the same service, bundling in a registered address, a company seal, or digital banking introductions. You do not need any of that. Use the Companies House portal directly or ask your accountant to handle it. Most accountants charge a modest admin fee on top of the £50 — typically £50 to £150 — for filing the incorporation documents and registering for corporation tax at the same time.</p>
+<p>Some formation agents charge £100 to £300 for the same service, bundling in a registered address, a company seal, or digital banking introductions. You do not need any of that. Use the Companies House portal directly or ask your accountant to handle it. Most accountants charge a modest admin fee on top of the £50, typically £50 to £150, for filing the incorporation documents and registering for corporation tax at the same time.</p>
 
 <h3>Registered Office Address</h3>
 <p>If you work from home, you may not want your personal address on public record. A registered office address service costs between £30 and £100 per year. Your accountant may offer this as part of your monthly fee. It is a small cost, but one you should budget for annually.</p>
@@ -76,13 +76,13 @@ keyTakeaways:
 <p>If your agency turnover is above £90,000, you must register for VAT. That adds a quarterly or monthly filing obligation. Most accountants include VAT returns in their monthly fee. If not, expect an extra £30 to £60 per quarter.</p>
 
 <h3>Dividend Administration</h3>
-<p>Paying yourself in dividends requires a dividend voucher for each payment and a board minute if you are following best practice. Your accountant can handle this, but if you do it yourself, the cost is your time. Do not skip the paperwork — HMRC can challenge dividend payments if the records are poor.</p>
+<p>Paying yourself in dividends requires a dividend voucher for each payment and a board minute if you are following best practice. Your accountant can handle this, but if you do it yourself, the cost is your time. Do not skip the paperwork, HMRC can challenge dividend payments if the records are poor.</p>
 
 <h2>Tax Costs of Incorporating</h2>
 <p>This is where founders get caught out. Transferring your agency from a sole trade to a limited company is not a tax-free event in all cases.</p>
 
 <h3>Capital Gains on Asset Transfer</h3>
-<p>When you incorporate, you are transferring your business assets (goodwill, equipment, client contracts) to the new company in exchange for shares. HMRC treats this as a disposal for capital gains tax purposes. If your agency has significant goodwill value — say you have a strong brand and a retainer book worth £200,000 — you could face a capital gains bill on incorporation.</p>
+<p>When you incorporate, you are transferring your business assets (goodwill, equipment, client contracts) to the new company in exchange for shares. HMRC treats this as a disposal for capital gains tax purposes. If your agency has significant goodwill value, say you have a strong brand and a retainer book worth £200,000, you could face a capital gains bill on incorporation.</p>
 <p>There is relief available. Incorporation relief under Section 162 TCGA 1992 allows you to defer the gain if you receive shares in the new company. But you must claim it correctly on your tax return. If you miss it, you pay CGT at 10% or 20% on the gain now, rather than when you sell the shares later.</p>
 
 <h3>Stamp Duty on Property</h3>
@@ -124,7 +124,7 @@ keyTakeaways:
 <h2>Should You Incorporate Now or Wait?</h2>
 <p>If your profit is below £50,000, wait. The cost to incorporate an agency 2025/26 is not justified by the tax savings. Focus on growing revenue and margin first.</p>
 <p>If your profit is above £60,000 and you plan to reinvest in growth, incorporate now. The corporation tax rate of 19% on profits up to £50,000 (or 25% above £250,000) is lower than your personal income tax rate on sole trader profits. And the ability to retain profits in the company gives you flexibility for hiring, equipment, or acquisitions.</p>
-<p>If you are approaching an exit — selling the agency in the next two to three years — incorporation is essential. You need the shares to qualify for Business Asset Disposal Relief (14% CGT on the gain for 2025/26, rising to 18% from April 2026). You cannot claim BADR as a sole trader. Read our <a href="/blog/growth-and-exit">growth and exit blog</a> for more on that.</p>
+<p>If you are approaching an exit, selling the agency in the next two to three years, incorporation is essential. You need the shares to qualify for Business Asset Disposal Relief (14% CGT on the gain for 2025/26, rising to 18% from April 2026). You cannot claim BADR as a sole trader. Read our <a href="/blog/growth-and-exit">growth and exit blog</a> for more on that.</p>
 
 <h2>Final Checklist Before You Incorporate</h2>
 <ul>
@@ -137,4 +137,4 @@ keyTakeaways:
 <li>Claim incorporation relief on asset transfers if applicable</li>
 <li>Draft a shareholder agreement if you have co-founders</li>
 </ul>
-<p>If your situation is more complex — for example, you have overseas clients, you are based in the UAE, or you have a property in the business — speak to an accountant before filing. Our <a href="/contact">team at Agency Founder Finance</a> handles these scenarios regularly. We are ICAEW qualified accountants who work exclusively with agency founders, so we know the specific questions to ask.</p>
+<p>If your situation is more complex, for example, you have overseas clients, you are based in the UAE, or you have a property in the business, speak to an accountant before filing. Our <a href="/contact">team at Agency Founder Finance</a> handles these scenarios regularly. We are ICAEW qualified accountants who work exclusively with agency founders, so we know the specific questions to ask.</p>

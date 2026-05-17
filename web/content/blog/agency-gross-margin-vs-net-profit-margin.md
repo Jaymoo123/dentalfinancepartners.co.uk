@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/a-close-up-shot-of-a-graph-on-a-paper-7054368/
   source: Pexels
 h1: Why Your Agency's Net Profit Margin Differs from Your Gross Margin and How to Improve Both
-summary: Gross margin tells you how efficiently you deliver work. Net profit margin tells you what you actually keep. The gap between them reveals hidden costs that eat your agency's profit — and here's how to close it.
+summary: Gross margin tells you how efficiently you deliver work. Net profit margin tells you what you actually keep. The gap between them reveals hidden costs that eat your agency's profit, and here's how to close it.
 schema: ''
 faqs:
 - question: What is the difference between gross margin and net profit margin in an agency?

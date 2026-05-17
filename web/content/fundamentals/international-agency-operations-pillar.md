@@ -44,9 +44,9 @@ faqs:
 <h3>Common international structures for agencies</h3>
 <p>Most agency founders we see use one of three structures:</p>
 <ul>
-<li><strong>UK company only</strong> — invoices all clients from a single UK entity. Simplest, but can create double taxation issues and limits your ability to hire internationally.</li>
-<li><strong>UK parent with UAE subsidiary</strong> — common for founders who want to reduce corporation tax on international profits and hire staff in the UAE. Requires careful transfer pricing documentation.</li>
-<li><strong>UAE company with UK branch</strong> — used by non-dom founders who want to keep their personal tax residence in the UAE while running a UK operation. Complex, but highly tax-efficient when structured correctly.</li>
+<li><strong>UK company only</strong>, invoices all clients from a single UK entity. Simplest, but can create double taxation issues and limits your ability to hire internationally.</li>
+<li><strong>UK parent with UAE subsidiary</strong>, common for founders who want to reduce corporation tax on international profits and hire staff in the UAE. Requires careful transfer pricing documentation.</li>
+<li><strong>UAE company with UK branch</strong>, used by non-dom founders who want to keep their personal tax residence in the UAE while running a UK operation. Complex, but highly tax-efficient when structured correctly.</li>
 </ul>
 <p>Each structure has different implications for VAT, corporation tax, personal tax, and your eventual exit. We will cover each in detail below.</p>
 
@@ -149,9 +149,9 @@ faqs:
 <h3>Structuring your agency for non-dom status</h3>
 <p>If you are a non-dom, your agency structure should reflect your status. The typical approach is:</p>
 <ul>
-<li><strong>UK company</strong> — holds UK clients and UK staff. You draw a salary and dividends from this company, which are taxed in the UK.</li>
-<li><strong>Offshore company</strong> (UAE, Hong Kong, Singapore) — holds international clients and international staff. You do not draw income from this company into the UK. You keep it offshore.</li>
-<li><strong>Personal offshore trust</strong> — holds your shares in the offshore company. This protects the assets from UK inheritance tax and gives you flexibility to pass wealth to your children.</li>
+<li><strong>UK company</strong>, holds UK clients and UK staff. You draw a salary and dividends from this company, which are taxed in the UK.</li>
+<li><strong>Offshore company</strong> (UAE, Hong Kong, Singapore), holds international clients and international staff. You do not draw income from this company into the UK. You keep it offshore.</li>
+<li><strong>Personal offshore trust</strong>, holds your shares in the offshore company. This protects the assets from UK inheritance tax and gives you flexibility to pass wealth to your children.</li>
 </ul>
 <p>This structure is not tax evasion. It is legitimate tax planning using the rules Parliament created. But it must be documented properly. HMRC will ask questions. You need professional advice from an accountant who understands both UK and UAE tax law.</p>
 

@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/social-equity-is-a-key-component-of-the-new-social-contract-18536262/
   source: Pexels
 h1: What Is the Optimal Debt-to-Equity Ratio for a Small Agency in the UK?
-summary: The debt-to-equity ratio measures how your agency is funded — debt vs. shareholder funds. For most small UK agencies, a ratio between 0.5 and 1.5 is healthy. Here's how to calculate yours and what to do if it's out of range.
+summary: The debt-to-equity ratio measures how your agency is funded, debt vs. shareholder funds. For most small UK agencies, a ratio between 0.5 and 1.5 is healthy. Here's how to calculate yours and what to do if it's out of range.
 schema: ''
 faqs:
 - question: What is a good debt-to-equity ratio for a small UK agency?
@@ -53,7 +53,7 @@ keyTakeaways:
 
 <h2>The Healthy Range for Small Agencies</h2>
 
-<p>Most small UK agencies operate with a debt equity ratio small agency UK between 0.5 and 1.5. That is the sweet spot. Below 0.5, you are probably too conservative — you are funding growth through equity when cheap debt could accelerate it. Above 1.5, you are carrying risk that could become a problem when interest rates rise or revenue dips.</p>
+<p>Most small UK agencies operate with a debt equity ratio small agency UK between 0.5 and 1.5. That is the sweet spot. Below 0.5, you are probably too conservative, you are funding growth through equity when cheap debt could accelerate it. Above 1.5, you are carrying risk that could become a problem when interest rates rise or revenue dips.</p>
 
 <p>Let me give you a real example. A 12-person digital agency in Manchester Northern Quarter came to us with turnover of £820k and a debt-to-equity ratio of 3.4. They had taken a £150k CBILS loan during COVID, plus a £40k overdraft, and the director's loan account was £55k in credit (meaning the company owed the director). Their equity was only £72k. Total liabilities: £245k. Ratio: 3.4.</p>
 
@@ -131,7 +131,7 @@ keyTakeaways:
 
 <p>When you apply for a business loan or a commercial mortgage, the bank will calculate your debt-to-equity ratio as part of their underwriting. Most high street banks want to see a ratio below 1.5 for small agencies. Specialist lenders may accept up to 2.5, but the interest rate will be higher.</p>
 
-<p>If you are planning to sell your agency, buyers will scrutinise your ratio. A high ratio suggests the agency is carrying too much debt and may need to use future profits to service it. This reduces the effective purchase price. A very low ratio suggests the agency is under-used and could have grown faster — which might make buyers wonder about the founder's ambition.</p>
+<p>If you are planning to sell your agency, buyers will scrutinise your ratio. A high ratio suggests the agency is carrying too much debt and may need to use future profits to service it. This reduces the effective purchase price. A very low ratio suggests the agency is under-used and could have grown faster, which might make buyers wonder about the founder's ambition.</p>
 
 <p>The ideal ratio for an exit is usually between 0.8 and 1.2. It shows a balanced capital structure. Not too risky, not too conservative.</p>
 

@@ -32,7 +32,7 @@ keyTakeaways:
 - Since April 2021, medium and large agencies must issue a Status Determination Statement (SDS) to each contractor before they start work.
 - HMRC determines IR35 status based on actual working practices, not contract terms, focusing on substitution, control, and mutuality of obligation.
 - A contractor working from your office, using your equipment, and reporting to your director is likely inside IR35, requiring PAYE and NI deductions.
-- If your agency meets two of three criteria—turnover over £10.2m, balance sheet over £5.1m, or 50+ employees—the off-payroll rules apply to all limited company contractors.
+- If your agency meets two of three criteria-turnover over £10.2m, balance sheet over £5.1m, or 50+ employees-the off-payroll rules apply to all limited company contractors.
 - Getting IR35 wrong can leave your agency liable for backdated tax, interest, and penalties, so taking reasonable care in determinations is essential.
 ---
 <h2>What is IR35 and Why Should Agency Founders Care?</h2>

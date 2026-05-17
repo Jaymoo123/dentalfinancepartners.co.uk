@@ -19,7 +19,7 @@ summary: If your agency builds custom software, you might qualify for R&D tax cr
 schema: ''
 faqs:
 - question: Can a marketing agency claim R&D tax credits for building custom software?
-  answer: Yes, but only if the software development involved genuine technological uncertainty. Building a standard marketing automation tool or CRM does not qualify. Building a novel machine learning model that solves a technical problem no one has solved before — that can qualify. The test is the nature of the technical challenge, not the industry you work in.
+  answer: Yes, but only if the software development involved genuine technological uncertainty. Building a standard marketing automation tool or CRM does not qualify. Building a novel machine learning model that solves a technical problem no one has solved before, that can qualify. The test is the nature of the technical challenge, not the industry you work in.
 - question: What documentation do I need for an R&D tax credit claim as an agency?
   answer: You need a clear project description showing the technological uncertainty, evidence of experimentation (what you tried and what failed), time records for staff working on the R&D project, and cost records for salaries, subcontractors, and software. Set up a separate project in Xero, QuickBooks, or FreeAgent to track R&D costs separately from routine client work.
 - question: Does customising off-the-shelf software qualify for R&D tax credits?
@@ -37,7 +37,7 @@ keyTakeaways:
 ---
 <p>If your agency builds custom software, you have probably wondered whether the time and cost qualifies for R&D tax credits. The short answer is: it depends on what you are building and why.</p>
 
-<p>HMRC's R&D rules are specific about what counts as qualifying development. Building a standard CRM for a client using off-the-shelf components does not qualify. Building a novel image recognition system that solves a technical problem no one has solved before — that might. The difference comes down to the nature of the work, not the industry you are in.</p>
+<p>HMRC's R&D rules are specific about what counts as qualifying development. Building a standard CRM for a client using off-the-shelf components does not qualify. Building a novel image recognition system that solves a technical problem no one has solved before, that might. The difference comes down to the nature of the work, not the industry you are in.</p>
 
 <p>As ICAEW qualified accountants working exclusively with agency founders, we see this question a lot. Agencies in Manchester's Northern Quarter, Bristol Harbourside, and London's Soho are all building software. Some of it qualifies. Most of it does not. Here is how to tell the difference.</p>
 
@@ -55,7 +55,7 @@ keyTakeaways:
 
 <p>The key phrase is "scientific or technological uncertainty." That means you did not know at the start whether the solution was achievable. You had to experiment, test, and iterate to find out. If you knew from day one how to build it because someone else had already done it, that is not R&D.</p>
 
-<p>For agencies, the most common sticking point is the distinction between routine software development and genuine technological advance. Building a website in WordPress, even a complex one, is not R&D. Building a custom machine learning model to automate a process that currently requires human judgement — that might be.</p>
+<p>For agencies, the most common sticking point is the distinction between routine software development and genuine technological advance. Building a website in WordPress, even a complex one, is not R&D. Building a custom machine learning model to automate a process that currently requires human judgement, that might be.</p>
 
 <h2>Custom Software R&D Qualifying Agency: Where the Line Sits</h2>
 
@@ -103,9 +103,9 @@ keyTakeaways:
 
 <p><strong>Building a custom CMS for a client.</strong> Does not qualify. Content management systems are well-understood technology. Even if yours has unique features, the underlying technical challenges are known.</p>
 
-<p><strong>Developing a mobile app for a client's ecommerce store.</strong> Generally does not qualify. Mobile app development is routine. Unless you are solving a genuinely novel technical problem — like a new way to handle offline payments in low-connectivity environments — it is standard work.</p>
+<p><strong>Developing a mobile app for a client's ecommerce store.</strong> Generally does not qualify. Mobile app development is routine. Unless you are solving a genuinely novel technical problem, like a new way to handle offline payments in low-connectivity environments, it is standard work.</p>
 
-<p><strong>Creating a data visualisation dashboard.</strong> Does not qualify. Data visualisation is a mature field. Building a dashboard that looks different is not R&D. Building a dashboard that uses a new rendering technique to handle datasets larger than anything previously possible — that might be.</p>
+<p><strong>Creating a data visualisation dashboard.</strong> Does not qualify. Data visualisation is a mature field. Building a dashboard that looks different is not R&D. Building a dashboard that uses a new rendering technique to handle datasets larger than anything previously possible, that might be.</p>
 
 <p><strong>Writing custom code to automate a manual process.</strong> Does not qualify on its own. Automation is routine. The question is whether the automation required solving a genuine technological uncertainty. If you knew how to automate it before you started, it is not R&D.</p>
 

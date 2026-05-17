@@ -35,7 +35,7 @@ keyTakeaways:
 - Employees benefit collectively through the trust, receiving tax-free profit-sharing bonuses of up to £3,600 per employee per year.
 - Founders can remain as directors for a transition period of 12–24 months before stepping back, with the agency continuing normal operations under employee ownership.
 ---
-<p>If you own a marketing, digital, or creative agency, you have probably thought about your exit. The standard route is selling to a third party — a competitor, a private equity buyer, or a larger agency group. But there is another option that fewer founders consider, and it comes with a significant tax advantage.</p>
+<p>If you own a marketing, digital, or creative agency, you have probably thought about your exit. The standard route is selling to a third party, a competitor, a private equity buyer, or a larger agency group. But there is another option that fewer founders consider, and it comes with a significant tax advantage.</p>
 
 <p>An Employee Ownership Trust (EOT) lets you sell your agency to your employees. And if you structure it correctly, you pay zero capital gains tax on the sale. Not 14% under Business Asset Disposal Relief. Not 20% under the main rate. Zero.</p>
 
@@ -43,7 +43,7 @@ keyTakeaways:
 
 <h2>What Is an Employee Ownership Trust?</h2>
 
-<p>An Employee Ownership Trust is a trust that holds a controlling interest in a company on behalf of its employees. The trust is managed by trustees, who act in the best interests of the employees as a whole — not individual shareholders.</p>
+<p>An Employee Ownership Trust is a trust that holds a controlling interest in a company on behalf of its employees. The trust is managed by trustees, who act in the best interests of the employees as a whole, not individual shareholders.</p>
 
 <p>When you sell your agency to an EOT, the trust buys your shares. The employees do not buy shares directly. They benefit collectively through the trust structure, typically through tax-free profit-sharing bonuses of up to £3,600 per employee per year.</p>
 
@@ -55,7 +55,7 @@ keyTakeaways:
 
 <h3>Step 1: Valuation</h3>
 
-<p>You need an independent valuation of your agency. This is not optional — HMRC will scrutinise the price. The valuation must be at market value, prepared by a qualified professional. If you undervalue the shares to give employees a bargain, HMRC can treat the difference as a distribution or employment income, creating tax charges for both you and the employees.</p>
+<p>You need an independent valuation of your agency. This is not optional, HMRC will scrutinise the price. The valuation must be at market value, prepared by a qualified professional. If you undervalue the shares to give employees a bargain, HMRC can treat the difference as a distribution or employment income, creating tax charges for both you and the employees.</p>
 
 <p>For a typical agency, the valuation will consider your recurring revenue, gross margin, client concentration, staff retention, and growth trajectory. A 12-person digital agency billing £800k per year with a 60% gross margin and a strong retainer book might value at 4-6x maintainable EBITDA.</p>
 
@@ -73,7 +73,7 @@ keyTakeaways:
 
 <h3>Step 3: Sale of Shares</h3>
 
-<p>The EOT buys your shares. The trust can pay for them in one lump sum, but more commonly it pays over time — often 5 to 10 years — using the agency's future profits. This is called deferred consideration.</p>
+<p>The EOT buys your shares. The trust can pay for them in one lump sum, but more commonly it pays over time, often 5 to 10 years, using the agency's future profits. This is called deferred consideration.</p>
 
 <p>You receive cash from the trust each year as the agency generates profit. And because the sale qualifies for the EOT capital gains exemption, each payment is tax-free.</p>
 
@@ -81,7 +81,7 @@ keyTakeaways:
 
 <h3>Step 4: Ongoing Operation</h3>
 
-<p>You can stay involved after the sale. Many founders remain as directors or managing directors for a transition period — 12 to 24 months is common. After that, you step back fully, and the employees run the business through the trust structure.</p>
+<p>You can stay involved after the sale. Many founders remain as directors or managing directors for a transition period, 12 to 24 months is common. After that, you step back fully, and the employees run the business through the trust structure.</p>
 
 <p>The agency continues trading as normal. Clients may not even notice the change. The difference is that the agency is now owned collectively by the people who work there.</p>
 
@@ -114,7 +114,7 @@ keyTakeaways:
 
 <h3>All Employees Must Benefit</h3>
 
-<p>The trust must operate for the benefit of all eligible employees on an equal basis. You cannot ring-fence benefits for senior staff only. The trustees must apply the "all-employee benefit principle" — meaning every employee gets the same access to trust benefits, usually through the £3,600 annual bonus.</p>
+<p>The trust must operate for the benefit of all eligible employees on an equal basis. You cannot ring-fence benefits for senior staff only. The trustees must apply the "all-employee benefit principle", meaning every employee gets the same access to trust benefits, usually through the £3,600 annual bonus.</p>
 
 <h3>The Company Must Be a Trading Company</h3>
 
@@ -145,7 +145,7 @@ keyTakeaways:
 <li>You are not willing to let go of control eventually</li>
 </ul>
 
-<p>There is also a practical consideration. An EOT sale is a long process — typically 6 to 12 months from decision to completion. You need patient trustees, professional advisers who understand EOTs, and a business that can generate consistent profit over the payment period.</p>
+<p>There is also a practical consideration. An EOT sale is a long process, typically 6 to 12 months from decision to completion. You need patient trustees, professional advisers who understand EOTs, and a business that can generate consistent profit over the payment period.</p>
 
 <h2>How Does an EOT Compare to a Trade Sale?</h2>
 
@@ -168,7 +168,7 @@ keyTakeaways:
 
 <p>Once the EOT owns the agency, the trustees run the show. They appoint directors (which may include you for a transition period) and oversee the distribution of benefits to employees.</p>
 
-<p>The most common benefit is the annual tax-free bonus of up to £3,600 per employee. The trustees can also use trust funds for other purposes — training, equipment, or even paying dividends to employees if the trust structure allows.</p>
+<p>The most common benefit is the annual tax-free bonus of up to £3,600 per employee. The trustees can also use trust funds for other purposes, training, equipment, or even paying dividends to employees if the trust structure allows.</p>
 
 <p>Employees do not own shares directly. They do not have voting rights or the ability to sell their stake. But they benefit collectively from the agency's success through the trust.</p>
 
@@ -192,11 +192,11 @@ keyTakeaways:
 
 <p>Yes. An employee ownership trust agency exit requires specialist legal and accounting advice. This is not a DIY project.</p>
 
-<p>You need a solicitor who has done EOT work before — ideally several times. You need an accountant who understands the tax rules and can model the cash flow implications. And you need an independent valuer who knows how to price an agency.</p>
+<p>You need a solicitor who has done EOT work before, ideally several times. You need an accountant who understands the tax rules and can model the cash flow implications. And you need an independent valuer who knows how to price an agency.</p>
 
 <p>As ICAEW qualified accountants, we work with agency founders on exit planning, including EOT structures. We can help you assess whether an EOT fits your situation and connect you with the right legal and valuation specialists.</p>
 
-<p>If you are thinking about your exit — whether through an EOT, a trade sale, or a management buyout — start the conversation early. Exit planning takes time, and the best outcomes come from preparation, not last-minute decisions.</p>
+<p>If you are thinking about your exit, whether through an EOT, a trade sale, or a management buyout, start the conversation early. Exit planning takes time, and the best outcomes come from preparation, not last-minute decisions.</p>
 
 <h2>Final Thoughts</h2>
 

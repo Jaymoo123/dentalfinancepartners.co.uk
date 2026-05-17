@@ -31,7 +31,7 @@ updatedDate: '2026-05-17'
 keyTakeaways:
 - Changing your UK bank address to a Dubai PO Box triggers an automatic freeze under anti-money laundering rules, as a PO Box is not a residential address.
 - A frozen account can cause an operational crisis, including missed payroll, unpaid suppliers, and penalties from HMRC for late tax payments.
-- UK banks require a verified residential address—either a UK home or official documentation from your new country—to keep your account open.
+- UK banks require a verified residential address-either a UK home or official documentation from your new country-to keep your account open.
 - Using a 'care of' address in the UK may not satisfy the bank if you are genuinely living in Dubai full-time, as you must prove a genuine connection.
 - To avoid a freeze, update your bank with a verified residential address, not a PO Box, and inform them of your move before changing details.
 ---
@@ -79,7 +79,7 @@ keyTakeaways:
 
 <h3>Option 1: Keep a UK Residential Address</h3>
 
-<p>If you maintain a UK home — even a rented room or a family property you visit occasionally — keep that as your bank address. Do not change it to a PO Box. Use the PO Box for mail forwarding only, and update the bank separately with a "correspondence address" if their system allows it.</p>
+<p>If you maintain a UK home, even a rented room or a family property you visit occasionally, keep that as your bank address. Do not change it to a PO Box. Use the PO Box for mail forwarding only, and update the bank separately with a "correspondence address" if their system allows it.</p>
 
 <p>This works only if you genuinely have a UK residential address. If you sell your UK home and move permanently to Dubai, you cannot maintain this fiction. The bank will eventually find out, and the consequences are worse than a temporary freeze.</p>
 
@@ -94,9 +94,9 @@ keyTakeaways:
 <p>If your UK bank will not support a non-UK residential address, consider switching to a bank that specialises in cross-border clients. Examples include:</p>
 
 <ul>
-<li><strong>HSBC Expat</strong> (based in Jersey) — designed for international clients</li>
-<li><strong>Barclays International</strong> — similar offering</li>
-<li><strong>Revolut</strong> or <strong>Wise</strong> — digital-first, more flexible on addresses, but with lower transaction limits</li>
+<li><strong>HSBC Expat</strong> (based in Jersey), designed for international clients</li>
+<li><strong>Barclays International</strong>, similar offering</li>
+<li><strong>Revolut</strong> or <strong>Wise</strong>, digital-first, more flexible on addresses, but with lower transaction limits</li>
 </ul>
 
 <p>These banks understand that clients move between countries. They have compliance teams that deal with this scenario regularly. The application process takes longer upfront, but it avoids the freeze problem entirely.</p>

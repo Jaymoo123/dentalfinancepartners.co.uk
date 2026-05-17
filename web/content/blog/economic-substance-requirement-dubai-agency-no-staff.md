@@ -48,9 +48,9 @@ keyTakeaways:
 <p>The ESR applies to any UAE company, including free zone entities, that carries out a "relevant activity". For most agency founders, the relevant activity is either:</p>
 
 <ul>
-<li><strong>Headquarters and management services</strong> — if your Dubai company manages your group's operations, or</li>
-<li><strong>Intellectual property (IP) activities</strong> — if your agency holds or licenses brands, software, or creative assets, or</li>
-<li><strong>Distribution and service centres</strong> — if your Dubai entity provides services to related parties.</li>
+<li><strong>Headquarters and management services</strong>, if your Dubai company manages your group's operations, or</li>
+<li><strong>Intellectual property (IP) activities</strong>, if your agency holds or licenses brands, software, or creative assets, or</li>
+<li><strong>Distribution and service centres</strong>, if your Dubai entity provides services to related parties.</li>
 </ul>
 
 <p>Most digital agencies, creative agencies, and marketing agencies will fall into the first or third category. If you are invoicing clients from your Dubai entity, you are almost certainly caught.</p>
@@ -68,7 +68,7 @@ keyTakeaways:
 
 <p>Short answer: yes, if you are carrying on a relevant activity. Most free zone agencies are.</p>
 
-<p>The UAE's ESR applies to all "licensees" — that is, any company with a trade licence, whether mainland or free zone. The only exemptions are companies that are tax resident in another jurisdiction, or that are purely passive investment vehicles.</p>
+<p>The UAE's ESR applies to all "licensees", that is, any company with a trade licence, whether mainland or free zone. The only exemptions are companies that are tax resident in another jurisdiction, or that are purely passive investment vehicles.</p>
 
 <p>If your Dubai agency is invoicing clients, paying suppliers, and generating profit, you are a licensee. You must file an ESR notification and, if your turnover exceeds AED 315,000 (roughly £67,000), you must also file a full ESR return.</p>
 
@@ -111,7 +111,7 @@ keyTakeaways:
 
 <p>For a virtual agency with no staff, outsourcing to a local accounting firm or a business process outsourcing (BPO) provider might help with bookkeeping and compliance. But it will not replace the need for your own employees to carry out the core revenue-generating work.</p>
 
-<p>If you are thinking of using a "substance-as-a-service" provider — a company that rents you office space and staff on paper — be very careful. The UAE authorities are increasingly looking through these arrangements. If the staff are not genuinely under your direction and control, the arrangement will not pass scrutiny.</p>
+<p>If you are thinking of using a "substance-as-a-service" provider, a company that rents you office space and staff on paper, be very careful. The UAE authorities are increasingly looking through these arrangements. If the staff are not genuinely under your direction and control, the arrangement will not pass scrutiny.</p>
 
 <h2>What Should I Do if I Have No Staff?</h2>
 

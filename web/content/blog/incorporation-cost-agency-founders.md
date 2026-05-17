@@ -23,7 +23,7 @@ faqs:
 - question: How much does an accountant cost for a limited company agency?
   answer: For a small agency turning over under £250k, expect £1,200-£2,500 per year. For agencies turning over £250k+ with multiple directors and contractors, £3,000-£4,500 is typical. This should include annual accounts, corporation tax return, confirmation statement, and personal tax returns for directors. Payroll may be extra if you have employees beyond yourself.
 - question: Is incorporation worth it for a sole trader agency earning £60k profit?
-  answer: Probably not. At £60k profit, the tax saving from incorporation is modest — roughly £1,000-£2,000 per year. But your accountancy fees go up by a similar amount. You also add administrative complexity. Most accountants recommend incorporating once your profit exceeds £80,000-£100,000, or when you need to reinvest significant profits into the business.
+  answer: Probably not. At £60k profit, the tax saving from incorporation is modest, roughly £1,000-£2,000 per year. But your accountancy fees go up by a similar amount. You also add administrative complexity. Most accountants recommend incorporating once your profit exceeds £80,000-£100,000, or when you need to reinvest significant profits into the business.
 - question: What hidden costs catch agency founders out after incorporation?
   answer: 'The three biggest are: director''s loan account overdrawn by more than £10,000 (triggers 33.75% S455 tax), IR35 determinations for contractors (adds 14.3% employer costs if inside IR35), and underestimating dividend tax now that the allowance is only £500. Also, many founders forget employer NI on their salary above £9,100, which adds roughly £480 per year at the standard salary level.'
 authorSlug: james-whitfield
@@ -35,7 +35,7 @@ keyTakeaways:
 - Professional indemnity insurance costs £200–£800 per year and is often required by agency clients before signing contracts.
 - Using your home address as the registered office puts it on public record; a professional address costs £50–£150 annually.
 ---
-<p>You have a growing agency. You are billing £60,000 or £160,000 or £600,000 a year. Someone — your accountant, a fellow founder, a well-meaning friend — has told you to incorporate. "Set up a limited company," they say. "It's more tax efficient."</p>
+<p>You have a growing agency. You are billing £60,000 or £160,000 or £600,000 a year. Someone, your accountant, a fellow founder, a well-meaning friend, has told you to incorporate. "Set up a limited company," they say. "It's more tax efficient."</p>
 
 <p>They are right, often. But they rarely tell you what the <strong>cost of incorporation</strong> actually looks like in pounds and pence.</p>
 
@@ -81,7 +81,7 @@ keyTakeaways:
 
 <p>A decent accountant handling all of this for a small agency typically charges £1,200-£2,500 per year. For agencies turning over £250k+ with multiple directors, contractors, and complex revenue streams, expect £3,000-£4,500.</p>
 
-<p>At Agency Founder Finance, we are ICAEW qualified accountants who work exclusively with agency founders. Our fees reflect the complexity of agency finances — retainer billing, project accounting, contractor payments, and international clients. We do not offer a £49-per-month service because agency accounts are not that simple.</p>
+<p>At Agency Founder Finance, we are ICAEW qualified accountants who work exclusively with agency founders. Our fees reflect the complexity of agency finances, retainer billing, project accounting, contractor payments, and international clients. We do not offer a £49-per-month service because agency accounts are not that simple.</p>
 
 <h3>Payroll and pension: £200-£600 per year</h3>
 
@@ -120,7 +120,7 @@ keyTakeaways:
 <li>25% on profits above £250,000</li>
 </ul>
 
-<p>Compare that to a sole trader paying 20%, 40%, or 45% income tax on profits. The saving is significant — but only if you leave profits in the company. The moment you take money out as dividends, you pay additional tax.</p>
+<p>Compare that to a sole trader paying 20%, 40%, or 45% income tax on profits. The saving is significant, but only if you leave profits in the company. The moment you take money out as dividends, you pay additional tax.</p>
 
 <h3>Dividend tax</h3>
 
@@ -161,7 +161,7 @@ keyTakeaways:
 
 <p>The VAT registration threshold is £90,000. If your agency turnover exceeds that, you must register. VAT adds administrative cost: quarterly returns, reconciliations, and potential penalties for late filing. If you use the Flat Rate Scheme, you keep some of the VAT, but the Limited Cost Trader rules mean most agencies cannot use it profitably.</p>
 
-<p>VAT is not a cost of incorporation per se — sole traders also register — but the complexity is higher for a limited company because you have more transactions to track.</p>
+<p>VAT is not a cost of incorporation per se, sole traders also register, but the complexity is higher for a limited company because you have more transactions to track.</p>
 
 <h2>The Cost-Benefit Calculation: When Incorporation Makes Sense</h2>
 
@@ -171,7 +171,7 @@ keyTakeaways:
 
 <p>For an agency founder earning £100,000 profit per year, the numbers shift. As a sole trader, you pay 40% on profits above £50,270. As a limited company, you pay 19% corporation tax and 33.75% dividend tax on extracted profits. The combined rate is roughly 46% on extracted profits above the basic rate band. But you can leave profits in the company and defer extraction. That deferral alone can save thousands per year.</p>
 
-<p>For an agency founder earning £250,000 profit per year, incorporation is almost certainly the right move. The corporation tax rate on retained profits is 25% (above £250k) or marginal relief (between £50k and £250k). The alternative is 45% income tax as a sole trader. The saving on retained profits alone is 20% — £50,000 per year on £250,000 profit.</p>
+<p>For an agency founder earning £250,000 profit per year, incorporation is almost certainly the right move. The corporation tax rate on retained profits is 25% (above £250k) or marginal relief (between £50k and £250k). The alternative is 45% income tax as a sole trader. The saving on retained profits alone is 20%, £50,000 per year on £250,000 profit.</p>
 
 <p>That saving dwarfs the £3,000-£5,000 annual cost of running a limited company.</p>
 
@@ -214,7 +214,7 @@ keyTakeaways:
 
 <p>Incorporation is not a magic bullet. It is a structural choice with real costs and real benefits. For most agency founders turning over £150,000 or more, the benefits outweigh the costs. But you should go in with your eyes open, not because a LinkedIn post told you to "get a Ltd co."</p>
 
-<p>If you want to talk through your specific numbers, our ICAEW qualified team at Agency Founder Finance works exclusively with agency founders. We know how agency finances work — retainer vs project, contractor costs, international clients, and exit planning. <a href="/contact">Get in touch</a> and we will run the comparison for your agency.</p>
+<p>If you want to talk through your specific numbers, our ICAEW qualified team at Agency Founder Finance works exclusively with agency founders. We know how agency finances work, retainer vs project, contractor costs, international clients, and exit planning. <a href="/contact">Get in touch</a> and we will run the comparison for your agency.</p>
 
 <h2>Related articles in Incorporation and Structure</h2>
 <ul>

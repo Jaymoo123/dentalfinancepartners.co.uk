@@ -47,7 +47,7 @@ keyTakeaways:
 
 <p>For non-residents, the rules are different. Generally, non-residents can still claim the personal allowance against their UK-source income. But there are conditions. And the conditions depend on your residence status under the UK-UAE Double Taxation Agreement (DTA).</p>
 
-<p>If you're a UAE tax resident under the treaty, you may still be entitled to the UK personal allowance against your UK income. If you're still UK resident under the treaty, you lose nothing — but you're also still liable to UK tax on your worldwide income. That's the trade-off.</p>
+<p>If you're a UAE tax resident under the treaty, you may still be entitled to the UK personal allowance against your UK income. If you're still UK resident under the treaty, you lose nothing, but you're also still liable to UK tax on your worldwide income. That's the trade-off.</p>
 
 <h2>Treaty Residence vs Physical Presence</h2>
 
@@ -64,7 +64,7 @@ keyTakeaways:
 
 <p>If the treaty determines you are a UAE resident, you are treated as non-UK resident for tax purposes, even if you still spend some time in the UK. This is the key to claiming the personal allowance as a non-resident.</p>
 
-<p>If the treaty determines you are still UK resident, you are treated as UK resident and taxed on your worldwide income. In that case, you keep your personal allowance — but you're also taxed on your UAE income. Not ideal.</p>
+<p>If the treaty determines you are still UK resident, you are treated as UK resident and taxed on your worldwide income. In that case, you keep your personal allowance, but you're also taxed on your UAE income. Not ideal.</p>
 
 <h2>When Can You Claim the Personal Allowance as a Non-Resident?</h2>
 
@@ -90,7 +90,7 @@ keyTakeaways:
 
 <p>Her UK-source income is £30,570 (£12,570 salary + £18,000 rental income). She can claim her personal allowance of £12,570 against this. She pays tax on £18,000 at the basic rate (20%), giving a tax bill of £3,600.</p>
 
-<p>If she had not claimed the personal allowance, she would pay tax on the full £30,570 at 20% — £6,114. That's a difference of £2,514.</p>
+<p>If she had not claimed the personal allowance, she would pay tax on the full £30,570 at 20%, £6,114. That's a difference of £2,514.</p>
 
 <p>Sarah also receives £50,000 in dividends from her UK agency. Dividends are UK-source income. She has a £500 dividend allowance. The remaining £49,500 is taxed at 8.75% (basic rate) because her total UK income is within the basic rate band. That's £4,331.25 in dividend tax.</p>
 
@@ -105,7 +105,7 @@ keyTakeaways:
 <ul>
 <li>If you are a non-resident and your only UK income is from a source that is specifically exempt from UK tax under the treaty (e.g., certain types of pension income)</li>
 <li>If you are a non-resident and you elect to be taxed on the remittance basis (rare for UAE residents, but possible if you have significant UK investment income)</li>
-<li>If you are a non-resident and your UK income is below the personal allowance anyway — in that case, you don't need to claim it because you pay no tax regardless</li>
+<li>If you are a non-resident and your UK income is below the personal allowance anyway, in that case, you don't need to claim it because you pay no tax regardless</li>
 </ul>
 
 <p>In practice, most agency founders with residual UK income will be able to claim the personal allowance. But you need to file a UK tax return (SA100) each year to claim it. You cannot simply assume it applies.</p>
@@ -179,7 +179,7 @@ keyTakeaways:
 
 <p>Most agency founders who genuinely relocate to Dubai will be UAE resident under the treaty. But you need the paperwork to prove it. And you need to file your UK tax return correctly.</p>
 
-<p>If your situation is straightforward — you have a UAE visa, a UAE home, and you spend most of your time there — the personal allowance is yours to claim. If your situation is more complex — you still have a UK home, a UK family, or a UK business that requires your regular presence — you need to work through the treaty carefully.</p>
+<p>If your situation is straightforward, you have a UAE visa, a UAE home, and you spend most of your time there, the personal allowance is yours to claim. If your situation is more complex, you still have a UK home, a UK family, or a UK business that requires your regular presence, you need to work through the treaty carefully.</p>
 
 <p>As ICAEW qualified accountants, we work with agency founders in both the UK and UAE. We see this scenario regularly. If your contractor mix has changed in the last 12 months, or if you are planning a move to Dubai, ask your accountant before year-end. The personal allowance is worth £2,514 in tax saved. It's worth getting right.</p>
 

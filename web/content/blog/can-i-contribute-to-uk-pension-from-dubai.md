@@ -49,7 +49,7 @@ keyTakeaways:
 
 <h3>UK Pension Tax Relief: The Basic Rule</h3>
 
-<p>When you are a UK resident with UK earnings, the government gives you tax relief on pension contributions. If you are a basic rate taxpayer, a £100 contribution costs you £80 — the government adds £20. If you are a higher rate taxpayer, you claim back additional relief through your self assessment tax return.</p>
+<p>When you are a UK resident with UK earnings, the government gives you tax relief on pension contributions. If you are a basic rate taxpayer, a £100 contribution costs you £80, the government adds £20. If you are a higher rate taxpayer, you claim back additional relief through your self assessment tax return.</p>
 
 <p>That relief is only available to people with <strong>relevant UK earnings</strong>. Those earnings include salary, bonuses, and self-employed trading profits that are subject to UK income tax.</p>
 
@@ -57,7 +57,7 @@ keyTakeaways:
 
 <h2>Can You Still Contribute Without Tax Relief?</h2>
 
-<p>Yes. You can still pay money into a UK pension from your UAE income. The pension provider will accept it. But those contributions will be made from <strong>already-taxed income</strong> — or in your case, income that was never subject to UK tax in the first place.</p>
+<p>Yes. You can still pay money into a UK pension from your UAE income. The pension provider will accept it. But those contributions will be made from <strong>already-taxed income</strong>, or in your case, income that was never subject to UK tax in the first place.</p>
 
 <p>The key difference: no 20% or 40% top-up from HMRC. Your £100 contribution costs you the full £100.</p>
 

@@ -25,7 +25,7 @@ faqs:
 - question: How do I stop retainer clients from creeping scope?
   answer: Define scope in the retainer agreement. Specify what is included and what triggers a separate quote. Track hours weekly against the retainer cap. When a client asks for extra work, respond with a project quote or a time-and-materials rate. Enforce it from month one. Clients who respect boundaries are worth keeping.
 - question: Can a creative agency use retainers?
-  answer: Yes, but the structure is different. Creative agencies doing campaign-based work can use "campaign retainers" — a fixed monthly fee for a set number of campaigns per quarter. The cash flow benefit is smaller because work is lumpier, but it still beats pure project billing. Focus on clients with ongoing campaign needs rather than one-off projects.
+  answer: Yes, but the structure is different. Creative agencies doing campaign-based work can use "campaign retainers", a fixed monthly fee for a set number of campaigns per quarter. The cash flow benefit is smaller because work is lumpier, but it still beats pure project billing. Focus on clients with ongoing campaign needs rather than one-off projects.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -55,7 +55,7 @@ keyTakeaways:
 <li>Month 3: Final invoices go out for £24k. Cash from months 1 and 2 finally lands. The bank balance peaks. Then it drops again as the next cycle starts.</li>
 </ul>
 
-<p>This is not bad management. It is the structural reality of project billing. The agency is profitable on paper — gross margin sits around 55% — but cash is always tight. The founder spends more time managing the overdraft than managing the team.</p>
+<p>This is not bad management. It is the structural reality of project billing. The agency is profitable on paper, gross margin sits around 55%, but cash is always tight. The founder spends more time managing the overdraft than managing the team.</p>
 
 <p>Project billing also creates a perverse incentive. You take work you should not take, because you need the cash. You discount scope. You rush delivery to trigger the next invoice milestone. Quality slips. Margins erode. The cycle gets worse.</p>
 
@@ -93,7 +93,7 @@ keyTakeaways:
 <li>Scope control: You can define the retainer scope tightly enough to avoid scope creep, but flexibly enough to handle genuine changes in the client's needs.</li>
 </ul>
 
-<p>If your agency is a creative agency doing primarily campaign-based work, retainers are harder to structure. You might still use a "campaign retainer" — a fixed monthly fee for a set number of campaigns per quarter — but the cash flow benefit is smaller because the work is lumpier.</p>
+<p>If your agency is a creative agency doing primarily campaign-based work, retainers are harder to structure. You might still use a "campaign retainer", a fixed monthly fee for a set number of campaigns per quarter, but the cash flow benefit is smaller because the work is lumpier.</p>
 
 <h3>The Transition Period: The Cash Hole</h3>
 

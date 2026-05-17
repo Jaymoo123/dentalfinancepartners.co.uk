@@ -32,7 +32,7 @@ keyTakeaways:
 - HMRC defines R&D as work resolving scientific or technological uncertainty, which applies to agencies building custom software or solving technical problems.
 - A qualifying R&D project must show an advance in science or technology, not just a business model or commercial improvement.
 - Technological uncertainty exists when the solution is not obvious at the start, requiring experimentation, prototyping, or iteration.
-- You need a paper trail of systematic work—emails, specs, test results—to prove you tried to overcome the uncertainty.
+- You need a paper trail of systematic work-emails, specs, test results-to prove you tried to overcome the uncertainty.
 - Custom software development, API integrations, and proprietary algorithms are common agency activities that can qualify for R&D tax credits.
 ---
 <p>If you run a digital agency, a creative agency, or a software development shop, you have probably heard other founders talk about R&D tax credits. You have probably also assumed they do not apply to you. That assumption costs agency owners real money every year.</p>

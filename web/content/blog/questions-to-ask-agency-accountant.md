@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/wooden-letters-and-wooden-punctuation-marks-on-gray-surface-11082254/
   source: Pexels
 h1: What Questions Should You Ask Before You Choose an Agency Accountant?
-summary: Hiring the wrong accountant costs agency founders time, money, and stress. Here are the exact questions to ask before you choose an agency accountant — covering IR35, margin structures, exit planning, and real agency finance knowledge.
+summary: Hiring the wrong accountant costs agency founders time, money, and stress. Here are the exact questions to ask before you choose an agency accountant, covering IR35, margin structures, exit planning, and real agency finance knowledge.
 schema: ''
 faqs:
 - question: What is the most important question to ask a potential agency accountant?
@@ -29,7 +29,7 @@ faqs:
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
-- Ask how many agency clients the accountant currently works with — aim for at least 10–15 to ensure relevant sector expertise.
+- Ask how many agency clients the accountant currently works with, aim for at least 10–15 to ensure relevant sector expertise.
 - Your accountant must understand IR35 inside out, including off-payroll rules, SDS, and the limits of the CEST tool.
 - A good agency accountant will review your revenue mix and help forecast cash flow, not just file year-end accounts.
 - If you pay £400+ per month, expect proactive cash flow planning using tools like Float or Spotlight Reporting.

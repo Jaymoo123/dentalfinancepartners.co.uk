@@ -30,7 +30,7 @@ authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
 - You must issue a status determination statement (SDS) to any web developer engaged through an intermediary before work starts, stating whether they are inside or outside IR35.
-- Assess three core IR35 tests—substitution, control, and mutuality of obligation—honestly; for example, if you insist on personal service, state that in the SDS.
+- Assess three core IR35 tests-substitution, control, and mutuality of obligation-honestly; for example, if you insist on personal service, state that in the SDS.
 - 'Most agencies billing over £1m are medium or large under off-payroll rules if they meet two of: turnover >£10.2m, balance sheet >£5.1m, or >50 employees.'
 - Include your agency's name, address, and company number in the SDS, along with the contractor's details and the reasoning for your IR35 determination.
 - Avoid common mistakes like pretending a substitution right exists when you would never accept a substitute, or extending contracts without a break, which HMRC sees as ongoing employment.

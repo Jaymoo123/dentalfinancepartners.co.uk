@@ -84,7 +84,7 @@ keyTakeaways:
 
 <p>If you’re transferring a sole trader agency to a limited company mid-year, map out the DLA position on day one. Know what the company owes you, and have a plan to clear it within nine months of the year-end.</p>
 
-<h2>Step 4: VAT Timing — Don’t Create a Gap</h2>
+<h2>Step 4: VAT Timing, Don’t Create a Gap</h2>
 
 <p>If you’re VAT-registered as a sole trader, your VAT registration doesn’t automatically transfer to the new company. You must either transfer the VAT registration number (possible under a business transfer) or cancel the sole trader registration and register the company separately.</p>
 

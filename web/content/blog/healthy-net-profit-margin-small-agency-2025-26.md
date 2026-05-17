@@ -47,7 +47,7 @@ keyTakeaways:
 
 <p>The formula is simple:</p>
 
-<p><strong>Net Profit Margin = (Revenue — All Expenses) ÷ Revenue × 100</strong></p>
+<p><strong>Net Profit Margin = (Revenue, All Expenses) ÷ Revenue × 100</strong></p>
 
 <p>If your agency turns over £500,000 and your total costs are £400,000, your net profit is £100,000. That is a 20% net profit margin. That is good. If your costs are £460,000, your net profit is £40,000. That is an 8% margin. That is not good.</p>
 

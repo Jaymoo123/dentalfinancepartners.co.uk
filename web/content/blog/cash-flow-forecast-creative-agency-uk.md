@@ -60,9 +60,9 @@ keyTakeaways:
 
 <p>Start with three data points for each client or project:</p>
 <ul>
-<li><strong>Invoice date</strong> — when you raise the invoice</li>
-<li><strong>Payment terms</strong> — 30 days, 60 days, or net 7 if you negotiated better</li>
-<li><strong>Expected payment date</strong> — the realistic date, not the contractual one. If a client consistently pays on day 45 despite 30-day terms, use day 45.</li>
+<li><strong>Invoice date</strong>, when you raise the invoice</li>
+<li><strong>Payment terms</strong>, 30 days, 60 days, or net 7 if you negotiated better</li>
+<li><strong>Expected payment date</strong>, the realistic date, not the contractual one. If a client consistently pays on day 45 despite 30-day terms, use day 45.</li>
 </ul>
 <p>For a 12-person creative agency billing £800,000 per year with a 60/40 split between project work and retainers, here is what that cash cycle might look like:</p>
 <p><strong>Retainer clients:</strong> £40,000 per month invoiced on the 1st, paid on the 30th. Reliable. Predictable.<br>
@@ -91,10 +91,10 @@ keyTakeaways:
 <p>Your forecast is only as good as your assumptions about when you actually get paid. For creative agencies, two things consistently mess up cash flow timing:</p>
 <p><strong>Payment delays.</strong> A client approves your invoice but their finance team processes payments on a specific cycle. You miss that cycle by two days, and you wait another month. Build in a buffer. If your terms are 30 days, assume 45 days for new clients and 30 days for established ones who have a track record of paying on time.</p>
 <p><strong>Scope creep.</strong> You quote a project for £25,000. The client adds three rounds of revisions, two extra stakeholder interviews, and a last-minute video asset. You do the work because you want to keep the client happy. But you do not raise a change order. The project takes 30% longer than planned, your costs go up, and the cash you expected to free up for the next project is still tied up in this one.</p>
-<p>Build a line item in your forecast for "overrun buffer" — typically 10-15% of project revenue that you assume will arrive one month later than planned because of scope creep or delayed sign-off.</p>
+<p>Build a line item in your forecast for "overrun buffer", typically 10-15% of project revenue that you assume will arrive one month later than planned because of scope creep or delayed sign-off.</p>
 
 <h2>Step 5: Match your cost structure to your revenue cycle</h2>
-<p>If your revenue is seasonal, your costs should be too. Fixed costs are unavoidable. But variable costs — freelancers, contractors, overtime pay, third-party suppliers — should flex with your workload.</p>
+<p>If your revenue is seasonal, your costs should be too. Fixed costs are unavoidable. But variable costs, freelancers, contractors, overtime pay, third-party suppliers, should flex with your workload.</p>
 <p>For a creative agency with seasonal client work, the smartest move is to keep your core team lean and scale up with freelancers and contractors during peak months. That means your cost base drops naturally during trough months because you are not carrying idle staff.</p>
 <p>But there is a trap here. If you use contractors who are inside IR35, you are responsible for employer NI and pension contributions. Your cost per contractor is higher than their day rate suggests. Make sure your forecast includes the full cost, not just the rate you agreed.</p>
 <p>If you need a refresher on IR35 rules for your agency, we cover that in detail on our <a href="/blog/contractors-and-ir35">contractors and IR35 page</a>.</p>

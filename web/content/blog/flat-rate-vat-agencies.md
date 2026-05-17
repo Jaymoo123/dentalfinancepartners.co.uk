@@ -23,7 +23,7 @@ faqs:
 - question: Can I reclaim VAT on purchases under the flat rate scheme?
   answer: Generally no. Under flat rate VAT, you cannot reclaim VAT on most purchases. The exception is capital assets over £2,000 including VAT. This is why standard VAT accounting often works out better for agencies with significant costs.
 - question: How do I know if I am a limited cost trader?
-  answer: You are a limited cost trader if your VAT-inclusive spend on relevant goods is less than 2% of your gross turnover (or less than £1,000 per year if 2% is higher). Relevant goods means physical items only — not services, software, or staff costs.
+  answer: You are a limited cost trader if your VAT-inclusive spend on relevant goods is less than 2% of your gross turnover (or less than £1,000 per year if 2% is higher). Relevant goods means physical items only, not services, software, or staff costs.
 - question: Should I leave the flat rate VAT scheme?
   answer: If your agency turnover exceeds £150k and you have meaningful expenses, you are likely better off on standard VAT accounting. Run the numbers with your accountant. The ability to reclaim input VAT on costs like software, freelancers, and overheads usually outweighs any flat rate margin.
 authorSlug: james-whitfield
@@ -49,7 +49,7 @@ keyTakeaways:
 
 <p>From April 2017, HMRC introduced a new flat rate for businesses with limited costs. If your VAT-inclusive spend on relevant goods is less than 2% of your gross turnover (or less than £1,000 per year if 2% is higher), you are a limited cost trader. Your flat rate becomes <strong>16.5%</strong> regardless of sector.</p>
 
-<p>Here is the critical point for agencies: <strong>most agencies are limited cost traders.</strong> Why? Because the scheme only counts <em>goods</em>, not services. Staff salaries, freelancer payments, software subscriptions, rent, marketing spend — none of these count. Only physical goods like stationery, hardware, and consumables qualify.</p>
+<p>Here is the critical point for agencies: <strong>most agencies are limited cost traders.</strong> Why? Because the scheme only counts <em>goods</em>, not services. Staff salaries, freelancer payments, software subscriptions, rent, marketing spend, none of these count. Only physical goods like stationery, hardware, and consumables qualify.</p>
 
 <p>If you run a 12-person digital agency billing £800k per year from a serviced office in Manchester Northern Quarter, your relevant goods spend might be £4,000 on laptops and printer paper. That is 0.5% of turnover. You are a limited cost trader. Your flat rate is 16.5%.</p>
 
@@ -115,7 +115,7 @@ keyTakeaways:
 <p>There are three scenarios where the flat rate scheme still works for agency founders.</p>
 
 <h3>1. You Have Genuinely High Goods Spend</h3>
-<p>If your agency buys significant physical goods — print production, exhibition materials, hardware for clients, physical media — you might qualify for the lower sector rate. Check your relevant goods spend as a percentage of turnover. If it exceeds 2%, you are not a limited cost trader and the 14.5% creative rate (or 16.5% general rate) applies.</p>
+<p>If your agency buys significant physical goods, print production, exhibition materials, hardware for clients, physical media, you might qualify for the lower sector rate. Check your relevant goods spend as a percentage of turnover. If it exceeds 2%, you are not a limited cost trader and the 14.5% creative rate (or 16.5% general rate) applies.</p>
 
 <h3>2. You Are a Very Small Agency with Minimal Expenses</h3>
 <p>If you are a sole trader web designer turning over £65k with virtually no business purchases, flat rate might still save you a small amount. The administrative simplicity alone can be worth it. You file one VAT return figure instead of itemising input tax. If your time is worth more than the £200-£300 you might lose, flat rate makes sense.</p>
@@ -173,7 +173,7 @@ keyTakeaways:
 
 <p>If you are a very small agency with minimal costs and you value simplicity over a few hundred pounds, flat rate might still work. If you are a <a href="/agencies/creative-agencies">creative agency</a> with genuine goods spend above 2% of turnover, the 14.5% rate can still deliver meaningful savings.</p>
 
-<p>For everyone else — and that means most agencies reading this — standard VAT accounting will save you more money. The numbers do not lie. Run the calculation for your own agency. If you are unsure, ask your accountant to model both scenarios before your next VAT return.</p>
+<p>For everyone else, and that means most agencies reading this, standard VAT accounting will save you more money. The numbers do not lie. Run the calculation for your own agency. If you are unsure, ask your accountant to model both scenarios before your next VAT return.</p>
 
 <p>As ICAEW qualified accountants, we see too many agency founders leaving thousands of pounds on the table by staying on flat rate out of habit. Don't let that be you.</p>
 

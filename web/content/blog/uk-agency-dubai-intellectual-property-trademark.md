@@ -43,7 +43,7 @@ keyTakeaways:
 
 <h2>How the IP Trap Works</h2>
 
-<p>You register a company name at Companies House. You build a brand. You file a UK trademark with the Intellectual Property Office. You think you're protected. And you are — in the UK.</p>
+<p>You register a company name at Companies House. You build a brand. You file a UK trademark with the Intellectual Property Office. You think you're protected. And you are, in the UK.</p>
 
 <p>But the UAE operates a "first to file" system. Not "first to use." That distinction matters. If someone in Dubai registers your agency name with the UAE Ministry of Economy before you do, they own the rights to that name in the UAE. Even if you've been trading under it for a decade in the UK.</p>
 
@@ -57,7 +57,7 @@ keyTakeaways:
 
 <p>Squatters know this. They know that a digital agency with a five-year track record under a specific name won't want to rebrand when entering a new market. Your clients in Dubai will search for you by name. Your website domain matters. Your LinkedIn company page matters. Your Google Business Profile matters. All of that becomes complicated if someone else owns the name in the UAE.</p>
 
-<p>And it's not just the name. Your logo, your tagline, your service names — all of these can be registered by someone else if you haven't filed first.</p>
+<p>And it's not just the name. Your logo, your tagline, your service names, all of these can be registered by someone else if you haven't filed first.</p>
 
 <h2>The Real Cost of Losing Your Brand Name in Dubai</h2>
 
@@ -76,12 +76,12 @@ keyTakeaways:
 <h2>What to Do Before You Move: A Practical Checklist</h2>
 
 <h3>Step 1: File a UAE Trademark Before You Announce Anything</h3>
-<p>Do not post on LinkedIn about your Dubai expansion. Do not tell clients. Do not change your email signature. File the UAE trademark first. The application goes through the UAE Ministry of Economy. It costs around £2,000-£3,000 depending on the class of goods or services you're registering. The process takes 3-6 months if straightforward. You need a local agent to file on your behalf — UAE law requires it.</p>
+<p>Do not post on LinkedIn about your Dubai expansion. Do not tell clients. Do not change your email signature. File the UAE trademark first. The application goes through the UAE Ministry of Economy. It costs around £2,000-£3,000 depending on the class of goods or services you're registering. The process takes 3-6 months if straightforward. You need a local agent to file on your behalf, UAE law requires it.</p>
 
 <p>You can file the trademark in your UK company's name or your personal name. If you're planning to set up a Dubai entity, file it in that entity's name once it's registered. But don't wait for the entity. File the trademark as soon as you decide to expand.</p>
 
 <h3>Step 2: Check Existing UAE Registrations</h3>
-<p>Before you file, search the UAE trademark database. Your local agent can do this for a small fee. You need to know if someone has already registered your name or something confusingly similar. If they have, you need a different strategy — possibly a variation of your name or a completely new brand for the Dubai market.</p>
+<p>Before you file, search the UAE trademark database. Your local agent can do this for a small fee. You need to know if someone has already registered your name or something confusingly similar. If they have, you need a different strategy, possibly a variation of your name or a completely new brand for the Dubai market.</p>
 
 <p>Some agencies choose to operate under a different name in Dubai deliberately. A holding company structure can help here. Your UK agency owns the IP. Your Dubai entity licenses it. But that only works if the trademark is registered in the UAE first.</p>
 
@@ -89,7 +89,7 @@ keyTakeaways:
 <p>While you're at it, register the .ae domain and any other relevant UAE domains. Secure the Instagram, LinkedIn, and TikTok handles for your agency name in the UAE market. This is cheap insurance. A domain costs £20 a year. A squatter will charge you £2,000 to buy it back.</p>
 
 <h3>Step 4: Document Your UK Use</h3>
-<p>Keep records of when you started trading under your agency name. Invoices, contracts, website screenshots, social media posts. If you ever need to challenge a UAE registration, evidence of prior use in another jurisdiction can help — though it's not a guaranteed defence. The UAE is a civil law jurisdiction, not common law. Prior use matters less than first filing. But it's better to have the evidence and not need it than the reverse.</p>
+<p>Keep records of when you started trading under your agency name. Invoices, contracts, website screenshots, social media posts. If you ever need to challenge a UAE registration, evidence of prior use in another jurisdiction can help, though it's not a guaranteed defence. The UAE is a civil law jurisdiction, not common law. Prior use matters less than first filing. But it's better to have the evidence and not need it than the reverse.</p>
 
 <h2>What If Someone Has Already Registered Your Name?</h2>
 
@@ -99,11 +99,11 @@ keyTakeaways:
 <li><strong>File a cancellation action:</strong> If the squatter hasn't used the mark for five consecutive years, you can apply to cancel it. This is slow and expensive but possible.</li>
 <li><strong>Choose a different name:</strong> This is often the pragmatic choice. Your UK brand has value in the UK. In Dubai, you're starting fresh anyway. A new name that works in the Arabic market might be better strategically than fighting for your old one.</li>
 </ul>
-<p>We had a client — a recruitment agency from Soho — who discovered their name was registered in Dubai by a competitor. They chose to operate as "[Name] Talent Partners" in Dubai instead of "[Name] Recruitment." It cost them about £3,000 in rebranding. The competitor's registration expired after five years of non-use. They then registered the original name themselves. Pragmatic, not ideal, but it worked.</p>
+<p>We had a client, a recruitment agency from Soho, who discovered their name was registered in Dubai by a competitor. They chose to operate as "[Name] Talent Partners" in Dubai instead of "[Name] Recruitment." It cost them about £3,000 in rebranding. The competitor's registration expired after five years of non-use. They then registered the original name themselves. Pragmatic, not ideal, but it worked.</p>
 
 <h2>The Broader IP Picture for UK Agencies Moving to Dubai</h2>
 
-<p>Trademarks are not the only intellectual property issue when moving from the UK to Dubai. Your client lists, your methodologies, your proprietary software tools, your content library — all of these need protection in the UAE.</p>
+<p>Trademarks are not the only intellectual property issue when moving from the UK to Dubai. Your client lists, your methodologies, your proprietary software tools, your content library, all of these need protection in the UAE.</p>
 
 <p>Consider these additional steps:</p>
 <ul>
@@ -129,7 +129,7 @@ keyTakeaways:
 
 <p>There's a tax dimension to this too. If you lose your brand name and have to buy it back from a squatter, that payment is likely capital in nature. It's not an allowable deduction against your trading profits. You're spending after-tax money.</p>
 
-<p>If you rebrand, the costs of new branding, new website, new marketing materials — these are generally deductible as revenue expenditure. But the lost revenue from starting from scratch in Dubai? That's a business cost that doesn't show up on your tax return but hits your bank account hard.</p>
+<p>If you rebrand, the costs of new branding, new website, new marketing materials, these are generally deductible as revenue expenditure. But the lost revenue from starting from scratch in Dubai? That's a business cost that doesn't show up on your tax return but hits your bank account hard.</p>
 
 <p>The £2,000-£3,000 cost of filing a UAE trademark is deductible as a pre-trading expense if you're setting up a new entity. Or as a general administrative expense if you're an existing company expanding. Either way, it's tax-deductible. The buyback cost probably isn't.</p>
 

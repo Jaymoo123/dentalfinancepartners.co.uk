@@ -69,18 +69,18 @@ faqs:
 <p>Here are the account codes every agency needs for clean MTD submissions:</p>
 
 <ul>
-<li><strong>Cost of sales</strong> — Direct freelancers, contractor costs, software subscriptions billed to clients, media spend. This is your gross margin driver.</li>
-<li><strong>Staff salaries and wages</strong> — Gross pay for employees, including directors' salaries if you are a sole trader.</li>
-<li><strong>Subcontractor costs</strong> — Payments to freelancers and contractors who are not on payroll. Keep this separate from employee costs.</li>
-<li><strong>Premises costs</strong> — Rent, rates, utilities for your office space.</li>
-<li><strong>Motor expenses</strong> — Fuel, insurance, maintenance, leasing costs for business vehicles.</li>
-<li><strong>Travel and subsistence</strong> — Train fares, flights, hotels, client meeting meals.</li>
-<li><strong>Advertising and marketing</strong> — Google Ads, LinkedIn Ads, PR retainers, website hosting.</li>
-<li><strong>Office and general admin</strong> — Stationery, postage, software subscriptions (Slack, Notion, Asana), cleaning.</li>
-<li><strong>Professional fees</strong> — Accountancy, legal fees, bookkeeping, consultancy.</li>
-<li><strong>IT and equipment</strong> — Laptops, monitors, phones, servers, cloud infrastructure.</li>
-<li><strong>Interest and bank charges</strong> — Loan interest, overdraft fees, merchant fees.</li>
-<li><strong>Depreciation</strong> — Fixed asset depreciation on equipment and vehicles.</li>
+<li><strong>Cost of sales</strong>, Direct freelancers, contractor costs, software subscriptions billed to clients, media spend. This is your gross margin driver.</li>
+<li><strong>Staff salaries and wages</strong>, Gross pay for employees, including directors' salaries if you are a sole trader.</li>
+<li><strong>Subcontractor costs</strong>, Payments to freelancers and contractors who are not on payroll. Keep this separate from employee costs.</li>
+<li><strong>Premises costs</strong>, Rent, rates, utilities for your office space.</li>
+<li><strong>Motor expenses</strong>, Fuel, insurance, maintenance, leasing costs for business vehicles.</li>
+<li><strong>Travel and subsistence</strong>, Train fares, flights, hotels, client meeting meals.</li>
+<li><strong>Advertising and marketing</strong>, Google Ads, LinkedIn Ads, PR retainers, website hosting.</li>
+<li><strong>Office and general admin</strong>, Stationery, postage, software subscriptions (Slack, Notion, Asana), cleaning.</li>
+<li><strong>Professional fees</strong>, Accountancy, legal fees, bookkeeping, consultancy.</li>
+<li><strong>IT and equipment</strong>, Laptops, monitors, phones, servers, cloud infrastructure.</li>
+<li><strong>Interest and bank charges</strong>, Loan interest, overdraft fees, merchant fees.</li>
+<li><strong>Depreciation</strong>, Fixed asset depreciation on equipment and vehicles.</li>
 </ul>
 
 <p>That is twelve expense accounts. Most agencies can run their entire MTD compliance on twelve accounts plus one income account. Fewer accounts means fewer mapping errors.</p>

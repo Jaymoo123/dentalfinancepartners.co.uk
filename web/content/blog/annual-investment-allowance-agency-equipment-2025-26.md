@@ -50,13 +50,13 @@ keyTakeaways:
 <p>HMRC uses the term "plant and machinery". For an agency, that covers a broad range of assets. Here is what typically qualifies for the annual investment allowance for agency equipment purchases:</p>
 
 <ul>
-<li><strong>Computers and laptops</strong> — MacBooks, PCs, monitors, keyboards, docking stations. Every machine your team uses to deliver client work.</li>
-<li><strong>Office furniture</strong> — desks, chairs, meeting room tables, breakout area seating, filing cabinets.</li>
-<li><strong>IT infrastructure</strong> — servers, networking equipment, Wi-Fi routers, backup drives.</li>
-<li><strong>Office equipment</strong> — printers, photocopiers, shredders, projectors, screens.</li>
-<li><strong>Leasehold improvements</strong> — fitted kitchens, air conditioning, lighting systems, suspended ceilings. This is a common one that agencies miss.</li>
-<li><strong>Certain software</strong> — off-the-shelf software qualifies. Custom software development generally does not (that falls under intangible assets, not plant and machinery).</li>
-<li><strong>Electric vehicles</strong> — company cars for directors or staff that are fully electric qualify for 100% AIA. Hybrids with CO2 emissions above 50g/km do not.</li>
+<li><strong>Computers and laptops</strong>, MacBooks, PCs, monitors, keyboards, docking stations. Every machine your team uses to deliver client work.</li>
+<li><strong>Office furniture</strong>, desks, chairs, meeting room tables, breakout area seating, filing cabinets.</li>
+<li><strong>IT infrastructure</strong>, servers, networking equipment, Wi-Fi routers, backup drives.</li>
+<li><strong>Office equipment</strong>, printers, photocopiers, shredders, projectors, screens.</li>
+<li><strong>Leasehold improvements</strong>, fitted kitchens, air conditioning, lighting systems, suspended ceilings. This is a common one that agencies miss.</li>
+<li><strong>Certain software</strong>, off-the-shelf software qualifies. Custom software development generally does not (that falls under intangible assets, not plant and machinery).</li>
+<li><strong>Electric vehicles</strong>, company cars for directors or staff that are fully electric qualify for 100% AIA. Hybrids with CO2 emissions above 50g/km do not.</li>
 </ul>
 
 <p>I worked with a 14-person digital agency based near Manchester Northern Quarter last year. They refitted their office and bought new equipment for the whole team. Total spend was £47,300. Every single pound qualified for the AIA. Their corporation tax bill dropped by roughly £9,000 as a result. That is real cash retained in the business.</p>
@@ -66,11 +66,11 @@ keyTakeaways:
 <p>Not everything you buy for the agency qualifies. The main exclusions are:</p>
 
 <ul>
-<li><strong>Buildings and land</strong> — you cannot claim AIA on the purchase price of a freehold property or the cost of acquiring a leasehold interest.</li>
-<li><strong>Cars</strong> — only fully electric cars qualify. Petrol, diesel, and most hybrids are excluded from the AIA. They fall under the main pool or special rate pool with lower writing-down allowances.</li>
-<li><strong>Assets used partly for non-business purposes</strong> — if you buy a laptop you use 60% for agency work and 40% personally, you can only claim AIA on the 60% business portion.</li>
-<li><strong>Gifts and entertainment</strong> — client hospitality, staff parties, and promotional items do not qualify. Those are revenue expenses, not capital expenditure.</li>
-<li><strong>Intangible assets</strong> — goodwill, brand value, intellectual property. These are treated differently for tax purposes.</li>
+<li><strong>Buildings and land</strong>, you cannot claim AIA on the purchase price of a freehold property or the cost of acquiring a leasehold interest.</li>
+<li><strong>Cars</strong>, only fully electric cars qualify. Petrol, diesel, and most hybrids are excluded from the AIA. They fall under the main pool or special rate pool with lower writing-down allowances.</li>
+<li><strong>Assets used partly for non-business purposes</strong>, if you buy a laptop you use 60% for agency work and 40% personally, you can only claim AIA on the 60% business portion.</li>
+<li><strong>Gifts and entertainment</strong>, client hospitality, staff parties, and promotional items do not qualify. Those are revenue expenses, not capital expenditure.</li>
+<li><strong>Intangible assets</strong>, goodwill, brand value, intellectual property. These are treated differently for tax purposes.</li>
 </ul>
 
 <h2>How the AIA Interacts with Other Capital Allowances</h2>

@@ -33,7 +33,7 @@ keyTakeaways:
 - If you spend over 183 days in the UK or have strong UK ties, you may be UK tax resident, risking your Dubai company's profits being taxed in the UK.
 - Central management and control exercised from the UK can make your Dubai company UK tax resident, triggering UK corporation tax at 19% or 25%.
 - Sourcing and servicing UK clients from the UK without a permanent establishment is a red flag for HMRC's diverted profits tax.
-- Proper substance in Dubai—local office, board meetings, and decision-making—is essential to mitigate diverted profits tax risk.
+- Proper substance in Dubai-local office, board meetings, and decision-making-is essential to mitigate diverted profits tax risk.
 ---
 <p>If you are a UK-born agency founder now running your business from Dubai, you have likely moved for the tax benefits. Zero personal income tax. No corporation tax (in most cases). A lifestyle that is hard to beat. But here is the question that keeps compliance-minded founders awake: what happens when your Dubai agency's clients are still in the UK?</p>
 

@@ -54,11 +54,11 @@ keyTakeaways:
 <li><strong>Non-qualifying corporate bonds:</strong> These do not meet the QCB conditions. Gains are chargeable to CGT in the year the loan note is disposed of or redeemed. Less common in agency sales but still used.</li>
 </ul>
 
-<p>For most agency founders, you want a QCB structure. It defers CGT until you actually receive the cash. And if you hold the loan note until death, the gain dies with you — your beneficiaries inherit it without a CGT charge.</p>
+<p>For most agency founders, you want a QCB structure. It defers CGT until you actually receive the cash. And if you hold the loan note until death, the gain dies with you, your beneficiaries inherit it without a CGT charge.</p>
 
 <h2>How Does CGT Deferral Work in Practice?</h2>
 
-<p>Let us run through a realistic example. You own a 12-person digital agency billing £800k per year. You sell the entire share capital for £1.2 million. Your base cost in the shares is negligible — say £10,000 — so your gain is £1.19 million.</p>
+<p>Let us run through a realistic example. You own a 12-person digital agency billing £800k per year. You sell the entire share capital for £1.2 million. Your base cost in the shares is negligible, say £10,000, so your gain is £1.19 million.</p>
 
 <p>If you take all cash on completion, you pay CGT immediately. Assuming you qualify for Business Asset Disposal Relief (BADR) at 14% (2025/26 rate), your tax bill is £166,600. Due within 60 days of completion via the CGT on property and shares reporting service.</p>
 
@@ -68,7 +68,7 @@ keyTakeaways:
 
 <ul>
 <li>On completion: you pay CGT on the £800,000 cash element only. At 14% BADR, that is £112,000 due within 60 days.</li>
-<li>Year 1: you receive £100,000 capital repayment plus interest. You pay CGT at 14% on the £100,000 capital element — £14,000 — in your self-assessment return for that year.</li>
+<li>Year 1: you receive £100,000 capital repayment plus interest. You pay CGT at 14% on the £100,000 capital element, £14,000, in your self-assessment return for that year.</li>
 <li>Years 2, 3, and 4: same again. £14,000 CGT each year.</li>
 </ul>
 
@@ -101,17 +101,17 @@ keyTakeaways:
 
 <p>For a higher-rate taxpayer, that means 40% or 45% on the interest. Whereas the capital repayment is taxed at 14% or 20% CGT. The interest element is less tax-efficient, but it is still better than paying all the CGT upfront.</p>
 
-<p>You can structure the loan note to minimise interest and maximise capital repayment. HMRC will look at the overall arrangement. If the interest rate is artificially low, they may recharacterise the transaction. A commercial rate — typically 2% to 6% above Bank of England base rate — is safe.</p>
+<p>You can structure the loan note to minimise interest and maximise capital repayment. HMRC will look at the overall arrangement. If the interest rate is artificially low, they may recharacterise the transaction. A commercial rate, typically 2% to 6% above Bank of England base rate, is safe.</p>
 
 <h2>BADR and Vendor Loan Notes: Do They Mix?</h2>
 
 <p>Yes, but carefully. BADR gives you a 14% CGT rate on the first £1 million of qualifying gains. You must hold the shares for at least two years before sale and be an officer or employee of the company.</p>
 
-<p>When you receive a vendor loan note as part of the consideration, the gain on that loan note element still qualifies for BADR — provided the original shares qualified. The key is that the loan note must be issued as consideration for the shares, not as a separate arrangement.</p>
+<p>When you receive a vendor loan note as part of the consideration, the gain on that loan note element still qualifies for BADR, provided the original shares qualified. The key is that the loan note must be issued as consideration for the shares, not as a separate arrangement.</p>
 
 <p>If you receive a loan note from the buyer after completion, not as part of the original sale agreement, HMRC may argue it is a separate disposal. Always ensure the loan note is documented in the share purchase agreement as part of the consideration.</p>
 
-<p>One nuance: if you hold the loan note for more than two years after the sale, and you are no longer an officer or employee of the business, any further gain on the loan note may not qualify for BADR. In practice, this is rare because the loan note is simply a debt instrument — the gain crystallised at the point of sale. But your accountant should model this.</p>
+<p>One nuance: if you hold the loan note for more than two years after the sale, and you are no longer an officer or employee of the business, any further gain on the loan note may not qualify for BADR. In practice, this is rare because the loan note is simply a debt instrument, the gain crystallised at the point of sale. But your accountant should model this.</p>
 
 <h2>Documenting the Loan Note: What Your Solicitor Needs to Include</h2>
 

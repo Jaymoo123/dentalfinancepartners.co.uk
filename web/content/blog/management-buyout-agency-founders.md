@@ -35,7 +35,7 @@ keyTakeaways:
 - Selling via an MBO usually yields a lower price than a trade sale, but offers continuity, control over timing, and preservation of your agency's culture.
 - In a typical MBO, the management team pays a portion upfront, raises debt against future profits, and pays the balance over time through earn-outs or loan notes.
 ---
-<p>You have built an agency that runs well. The team is strong. Clients are stable. And you are ready to move on. But the obvious buyers — trade acquirers or private equity — do not feel right. You know your management team better than any outsider. They know the clients, the culture, and the numbers. So you start thinking: could they buy the business from me?</p>
+<p>You have built an agency that runs well. The team is strong. Clients are stable. And you are ready to move on. But the obvious buyers, trade acquirers or private equity, do not feel right. You know your management team better than any outsider. They know the clients, the culture, and the numbers. So you start thinking: could they buy the business from me?</p>
 
 <p>That is a management buyout. An MBO. And in the agency world, it is more common than most founders realise. Done properly, it can be a clean, tax-efficient exit that keeps the business intact and rewards the people who helped you build it. Done badly, it can drag on for years and leave you chasing unpaid debt from your former colleagues.</p>
 
@@ -43,7 +43,7 @@ keyTakeaways:
 
 <h2>What Is a Management Buyout in an Agency?</h2>
 
-<p>A management buyout is exactly what it sounds like. The existing management team — your directors, senior managers, or department heads — buys your shares in the company. You walk away with cash (or a mix of cash and deferred consideration). They take over ownership and control.</p>
+<p>A management buyout is exactly what it sounds like. The existing management team, your directors, senior managers, or department heads, buys your shares in the company. You walk away with cash (or a mix of cash and deferred consideration). They take over ownership and control.</p>
 
 <p>In a typical agency MBO, the management team does not pay the full purchase price upfront. They pay a portion from their own funds, raise debt against the company's future profits, and pay the rest to you over time through an earn-out or loan note structure.</p>
 

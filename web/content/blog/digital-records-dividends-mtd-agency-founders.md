@@ -70,10 +70,10 @@ keyTakeaways:
 <p>Not all accounting software is MTD-compatible. You need software that HMRC has approved for MTD for ITSA submissions. The major players are already on board:</p>
 
 <ul>
-<li><strong>Xero</strong> — fully MTD-compatible, handles dividend recording through its transactions feed</li>
-<li><strong>QuickBooks</strong> — MTD-ready, with dividend categorisation built in</li>
-<li><strong>FreeAgent</strong> — popular with agency founders, MTD-compatible, includes dividend tracking</li>
-<li><strong>Sage</strong> — MTD-ready, though the interface varies by product</li>
+<li><strong>Xero</strong>, fully MTD-compatible, handles dividend recording through its transactions feed</li>
+<li><strong>QuickBooks</strong>, MTD-ready, with dividend categorisation built in</li>
+<li><strong>FreeAgent</strong>, popular with agency founders, MTD-compatible, includes dividend tracking</li>
+<li><strong>Sage</strong>, MTD-ready, though the interface varies by product</li>
 </ul>
 
 <p>If you are using a spreadsheet to record dividends and manually entering figures into your tax return, that will not work under MTD. Spreadsheets are not MTD-compatible unless they are linked to bridging software that submits the data to HMRC. Most agency founders will find it simpler to move to proper accounting software.</p>
@@ -85,11 +85,11 @@ keyTakeaways:
 <p>For each dividend payment you receive, your digital record must include:</p>
 
 <ul>
-<li><strong>Date of payment</strong> — the date the money lands in your personal account</li>
-<li><strong>Gross amount</strong> — the full dividend before any notional tax credit (which no longer exists for most dividends, but the gross figure is still what you report)</li>
-<li><strong>Company name</strong> — the legal entity paying the dividend</li>
-<li><strong>Dividend type</strong> — interim or final</li>
-<li><strong>Dividend voucher reference</strong> — if your company issues dividend vouchers, the voucher number or a reference to it</li>
+<li><strong>Date of payment</strong>, the date the money lands in your personal account</li>
+<li><strong>Gross amount</strong>, the full dividend before any notional tax credit (which no longer exists for most dividends, but the gross figure is still what you report)</li>
+<li><strong>Company name</strong>, the legal entity paying the dividend</li>
+<li><strong>Dividend type</strong>, interim or final</li>
+<li><strong>Dividend voucher reference</strong>, if your company issues dividend vouchers, the voucher number or a reference to it</li>
 </ul>
 
 <p>You also need to record the tax deducted at source, if any. For most UK dividends, there is no tax deducted. But if you receive dividends from overseas companies, there may be withholding tax. That must be recorded too.</p>
@@ -120,7 +120,7 @@ keyTakeaways:
 
 <p>There is no grace period. From your first mandated quarter, you must have digital records in place. If you are above the £50,000 threshold, that means April 2026. If you are between £30,000 and £50,000, April 2027.</p>
 
-<p>If you are reading this and thinking "I will just estimate the dividend figure for the quarterly update and sort it out at year-end" — do not. HMRC's systems will flag discrepancies between your quarterly updates and your year-end figures. The whole point of MTD is to reduce the tax gap caused by poor record-keeping and late filing.</p>
+<p>If you are reading this and thinking "I will just estimate the dividend figure for the quarterly update and sort it out at year-end", do not. HMRC's systems will flag discrepancies between your quarterly updates and your year-end figures. The whole point of MTD is to reduce the tax gap caused by poor record-keeping and late filing.</p>
 
 <h2>Practical Steps for Agency Founders Right Now</h2>
 

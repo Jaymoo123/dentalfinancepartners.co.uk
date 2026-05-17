@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/hand-holding-fan-of-us-dollar-bills-4968663/
   source: Pexels
 h1: 'Cash Flow in Agencies: Why Profitable Agencies Still Run Out of Money'
-summary: Profit is an opinion. Cash is a fact. We explain why profitable agencies still hit a cash crisis, and exactly what to do about it — from retainer billing to debtor control.
+summary: Profit is an opinion. Cash is a fact. We explain why profitable agencies still hit a cash crisis, and exactly what to do about it, from retainer billing to debtor control.
 schema: ''
 faqs:
 - question: What is the main reason profitable agencies run out of cash?

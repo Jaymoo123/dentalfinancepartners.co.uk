@@ -23,14 +23,14 @@ faqs:
   - question: "How much dividend tax will I pay on £50,000 of dividends?"
     answer: "Assuming you have no other income, on £50,000 of dividends in 2025/26 you pay: £0 on the first £12,570 (personal allowance), £0 on the next £500 (dividend allowance), then £37,200 at 8.75% = £3,255. Total dividend tax: £3,255. But if you also have a salary of £12,570, your total income becomes £62,570, pushing £12,300 into the higher rate band and costing 33.75% on that portion. Always model your total income before declaring dividends."
   - question: "Can I pay myself a pension from my agency instead of dividends?"
-    answer: "Yes, and it is often more tax-efficient. Company pension contributions are an allowable expense, reducing your corporation tax. You pay no income tax or NI on the contribution. The money grows tax-free in your pension. The trade-off is that you cannot access the money until age 57 (rising to 58 in 2028). For most agency founders, a combination of pension contributions and dividends works best — pension for long-term wealth, dividends for current income."
+    answer: "Yes, and it is often more tax-efficient. Company pension contributions are an allowable expense, reducing your corporation tax. You pay no income tax or NI on the contribution. The money grows tax-free in your pension. The trade-off is that you cannot access the money until age 57 (rising to 58 in 2028). For most agency founders, a combination of pension contributions and dividends works best, pension for long-term wealth, dividends for current income."
   - question: "Should I give my spouse shares in my agency to reduce tax?"
-    answer: "It can be very effective if your spouse has unused personal allowance or basic rate band. For example, a spouse with no other income can receive £50,270 in dividends and pay just £3,255 in tax. But you must ensure the shareholding is genuine — your spouse should have voting rights and receive dividend vouchers. If HMRC challenges the arrangement under the settlements legislation, you need to show your spouse has real rights and (ideally) works in the business. We recommend taking advice before implementing this strategy."
+    answer: "It can be very effective if your spouse has unused personal allowance or basic rate band. For example, a spouse with no other income can receive £50,270 in dividends and pay just £3,255 in tax. But you must ensure the shareholding is genuine, your spouse should have voting rights and receive dividend vouchers. If HMRC challenges the arrangement under the settlements legislation, you need to show your spouse has real rights and (ideally) works in the business. We recommend taking advice before implementing this strategy."
 ---
 
 <p>How should you pay yourself from your agency? It is the single most common question we get from new clients, and the one where getting it wrong costs the most money.</p>
 
-<p>As ICAEW-qualified accountants working exclusively with agency founders — we currently work with 73+ UK and UAE agency founders — we see the same patterns. Founders take too much salary, pay too much tax, miss pension opportunities, and leave money on the table that could be in their own pockets or their family's future.</p>
+<p>As ICAEW-qualified accountants working exclusively with agency founders, we currently work with 73+ UK and UAE agency founders, we see the same patterns. Founders take too much salary, pay too much tax, miss pension opportunities, and leave money on the table that could be in their own pockets or their family's future.</p>
 
 <p>This guide covers the full picture. The optimal salary-dividend split for 2025/26. How dividend tax rates affect your take-home. When to use a pension instead of retained profits. How spouse shareholdings work in practice. And the specific HMRC rules, forms, and deadlines you need to know.</p>
 
@@ -40,7 +40,7 @@ faqs:
 
 <p>A limited company is a separate legal entity. You are both a director and a shareholder. That gives you two distinct ways to extract value: salary (as an employee) and dividends (as a shareholder).</p>
 
-<p>The reason the split matters is simple: salary and dividends are taxed differently. Salary is subject to income tax, employee NI, and employer NI. Dividends are subject to dividend tax at lower rates, and no NI at all. But dividends can only be paid from post-tax profits — the company must have distributable reserves.</p>
+<p>The reason the split matters is simple: salary and dividends are taxed differently. Salary is subject to income tax, employee NI, and employer NI. Dividends are subject to dividend tax at lower rates, and no NI at all. But dividends can only be paid from post-tax profits, the company must have distributable reserves.</p>
 
 <p>For most agency founders, the optimal strategy is to take a small salary and the rest as dividends. That is the standard advice. But the details matter enormously. Get the salary wrong and you lose personal allowance. Get the dividend timing wrong and you push yourself into a higher tax band unnecessarily. Ignore your pension and you miss the most powerful tax shelter available to a limited company director.</p>
 
@@ -50,7 +50,7 @@ faqs:
 
 <h3>The Primary Threshold Strategy</h3>
 
-<p>Your salary should be set at the point where you stop paying NI but still build up qualifying years for your state pension. That figure for 2025/26 is £12,570 per year — the same as the personal allowance and the primary threshold for NI.</p>
+<p>Your salary should be set at the point where you stop paying NI but still build up qualifying years for your state pension. That figure for 2025/26 is £12,570 per year, the same as the personal allowance and the primary threshold for NI.</p>
 
 <p>Take a salary of £12,570 and you pay no income tax (it is covered by your personal allowance) and no employee NI (it is at the primary threshold). Your company pays no employer NI because £12,570 is below the secondary threshold of £9,100 per year? No. Wait. Let us be precise.</p>
 
@@ -66,7 +66,7 @@ faqs:
 
 <h3>How to Set Up the Salary</h3>
 
-<p>You need to run payroll. Most agency founders use <strong>Xero</strong>, <strong>QuickBooks</strong>, <strong>FreeAgent</strong>, or <strong>Sage</strong> — all have payroll modules. Alternatively, use <strong>BrightPay</strong> for standalone payroll. You submit RTI returns to HMRC each month or quarter. You issue a P60 at year end. You file a P11D(b) if you provide benefits.</p>
+<p>You need to run payroll. Most agency founders use <strong>Xero</strong>, <strong>QuickBooks</strong>, <strong>FreeAgent</strong>, or <strong>Sage</strong>, all have payroll modules. Alternatively, use <strong>BrightPay</strong> for standalone payroll. You submit RTI returns to HMRC each month or quarter. You issue a P60 at year end. You file a P11D(b) if you provide benefits.</p>
 
 <p>The salary should be set as an annual amount, paid monthly or quarterly. Many founders pay it monthly to keep the company's PAYE scheme active and avoid penalties for late RTI submissions.</p>
 
@@ -111,7 +111,7 @@ faqs:
 
 <p>Dividends are paid from post-tax profits. The company pays corporation tax on its profits, then distributes the remainder as dividends. You as the shareholder pay dividend tax on the amount you receive above the dividend allowance.</p>
 
-<p>The dividend allowance for 2025/26 is £500. That is down from £5,000 in 2017/18 and £1,000 in 2023/24. The Treasury has been steadily reducing it. For most agency founders, the allowance is now negligible — it covers about two cups of coffee a month in dividend income.</p>
+<p>The dividend allowance for 2025/26 is £500. That is down from £5,000 in 2017/18 and £1,000 in 2023/24. The Treasury has been steadily reducing it. For most agency founders, the allowance is now negligible, it covers about two cups of coffee a month in dividend income.</p>
 
 <p>Above the allowance, dividend tax rates are:</p>
 
@@ -127,7 +127,7 @@ faqs:
 
 <p>The most common mistake we see is the £50,270 trap. An agency founder takes a salary of £12,570 and dividends of £37,700, giving total income of £50,270. That is exactly the basic rate band. They pay 8.75% on the dividends above the £500 allowance: £37,200 × 8.75% = £3,255.</p>
 
-<p>That looks efficient. And it is — up to a point. But the problem is that any additional dividend income above £50,270 is taxed at 33.75%. The jump from 8.75% to 33.75% is a 25 percentage point cliff. Many founders accidentally tip over it by declaring a single large dividend late in the year without checking their total income.</p>
+<p>That looks efficient. And it is, up to a point. But the problem is that any additional dividend income above £50,270 is taxed at 33.75%. The jump from 8.75% to 33.75% is a 25 percentage point cliff. Many founders accidentally tip over it by declaring a single large dividend late in the year without checking their total income.</p>
 
 <p>The solution: plan your dividend declarations carefully. Use your accounting software or a tool like <strong>Float</strong> or <strong>Spotlight Reporting</strong> to model your total income before you declare. Leave a buffer. If you want to extract more than £37,700 in dividends, consider using a pension contribution to keep yourself in the basic rate band.</p>
 
@@ -161,7 +161,7 @@ faqs:
 <p>Sarah's net take-home: £12,570 + £37,700 - £3,255 = £47,015. Plus she has £40,000 in her pension.</p>
 <p>Total tax paid: £12,720.72 + £478.86 + £3,255 = £16,454.58.</p>
 
-<p>The comparison is stark. In Option A, Sarah pays £40,568.60 in tax and takes home £79,431.40. In Option B, she pays £16,454.58 in tax, takes home £47,015, and has £40,000 in her pension. The total value to her (take-home plus pension) is £87,015 — higher than Option A's £79,431.40 — and the tax paid is £24,114 less.</p>
+<p>The comparison is stark. In Option A, Sarah pays £40,568.60 in tax and takes home £79,431.40. In Option B, she pays £16,454.58 in tax, takes home £47,015, and has £40,000 in her pension. The total value to her (take-home plus pension) is £87,015, higher than Option A's £79,431.40, and the tax paid is £24,114 less.</p>
 
 <p>The pension contribution saves corporation tax at 19% on the £40,000 (£7,600 saved) and keeps Sarah in the basic rate band for dividend tax, saving £16,514.02 in higher rate dividend tax. That is a total saving of £24,114.02.</p>
 
@@ -177,13 +177,13 @@ faqs:
 
 <h3>The Annual Allowance and Tapering</h3>
 
-<p>The standard annual allowance for pension contributions in 2025/26 is £60,000. You can carry forward unused allowance from the previous three tax years. For most agency founders, the annual allowance is not a constraint — £60,000 per year is more than enough.</p>
+<p>The standard annual allowance for pension contributions in 2025/26 is £60,000. You can carry forward unused allowance from the previous three tax years. For most agency founders, the annual allowance is not a constraint, £60,000 per year is more than enough.</p>
 
 <p>But if your adjusted income (including employer pension contributions) exceeds £260,000, the annual allowance tapers. It reduces by £1 for every £2 of income above £260,000, down to a minimum of £10,000. This affects founders of larger agencies with significant retained profits.</p>
 
 <p>If you are close to the taper threshold, speak to us before making a large contribution. The rules are complex and the penalty for exceeding the tapered allowance is a tax charge at your marginal rate.</p>
 
-<h3>Lifetime Allowance — Abolished</h3>
+<h3>Lifetime Allowance, Abolished</h3>
 
 <p>The lifetime allowance was abolished from April 2024. There is no longer a cap on the total amount you can hold in pensions without incurring a tax charge. That removes one of the main objections to aggressive pension funding for agency founders.</p>
 
@@ -193,7 +193,7 @@ faqs:
 
 <p>If your spouse or civil partner is a shareholder in your agency, they can receive dividends in their own right. Their dividend income is taxed at their marginal rates, not yours. If they have unused personal allowance or basic rate band, the tax saving can be substantial.</p>
 
-<p>For example, if your spouse has no other income, they can receive £12,570 in dividends tax-free (covered by their personal allowance) and a further £500 tax-free (dividend allowance), then £37,200 at 8.75%. That is total dividend income of £50,270 with a tax bill of just £3,255 — compared to the same income in your hands costing £19,769.02.</p>
+<p>For example, if your spouse has no other income, they can receive £12,570 in dividends tax-free (covered by their personal allowance) and a further £500 tax-free (dividend allowance), then £37,200 at 8.75%. That is total dividend income of £50,270 with a tax bill of just £3,255, compared to the same income in your hands costing £19,769.02.</p>
 
 <p>The saving: £16,514.02 per year. That is real money.</p>
 
@@ -203,7 +203,7 @@ faqs:
 
 <p>The key defence: your spouse must be a genuine shareholder with real rights. They should have voting rights, a right to dividends, and a right to capital on a winding up. If they also work in the business (even part-time), that strengthens the position enormously.</p>
 
-<p>Many agency founders give their spouse a minority shareholding — typically 49% or less. That is common and generally accepted by HMRC as long as the spouse is not a mere nominee. We recommend documenting the share issue properly, with board minutes and a share certificate.</p>
+<p>Many agency founders give their spouse a minority shareholding, typically 49% or less. That is common and generally accepted by HMRC as long as the spouse is not a mere nominee. We recommend documenting the share issue properly, with board minutes and a share certificate.</p>
 
 <h3>Practical Steps for Spouse Shareholding</h3>
 
@@ -221,7 +221,7 @@ faqs:
 
 <h3>The S455 Charge</h3>
 
-<p>If you take more from the company than you are entitled to — for example, by drawing dividends before they are formally declared, or by taking a director's loan that is not repaid — you create a director's loan account balance. If that balance exceeds £10,000 at any point in the company's accounting period, and it is not repaid within 9 months of the year end, the company pays S455 tax at 33.75% on the overdrawn amount.</p>
+<p>If you take more from the company than you are entitled to, for example, by drawing dividends before they are formally declared, or by taking a director's loan that is not repaid, you create a director's loan account balance. If that balance exceeds £10,000 at any point in the company's accounting period, and it is not repaid within 9 months of the year end, the company pays S455 tax at 33.75% on the overdrawn amount.</p>
 
 <p>This is a punitive rate. It is designed to discourage directors from using the company as a personal bank account. The tax is refundable when the loan is repaid, but the process is slow and the cashflow impact is painful.</p>
 
@@ -237,11 +237,11 @@ faqs:
 
 <p>Corporation tax rates for 2025/26 are 19% for profits up to £50,000, 25% for profits above £250,000, and marginal relief for profits between £50,000 and £250,000. The effective marginal rate in the marginal relief band is 26.5%.</p>
 
-<p>This matters for your pay strategy because your salary and pension contributions reduce your company's profit. If your agency is in the marginal relief band, every £1 of salary or pension saves you 26.5% in corporation tax — not just 19% or 25%. That makes pension contributions even more valuable if your profits are in that range.</p>
+<p>This matters for your pay strategy because your salary and pension contributions reduce your company's profit. If your agency is in the marginal relief band, every £1 of salary or pension saves you 26.5% in corporation tax, not just 19% or 25%. That makes pension contributions even more valuable if your profits are in that range.</p>
 
 <h3>Retained Profits vs Extraction</h3>
 
-<p>Not every pound of profit needs to come out of the company. Retained profits can be used to fund growth — hiring, equipment, office space, marketing. Many agency founders make the mistake of extracting every available penny, leaving the company cash-poor and unable to invest.</p>
+<p>Not every pound of profit needs to come out of the company. Retained profits can be used to fund growth, hiring, equipment, office space, marketing. Many agency founders make the mistake of extracting every available penny, leaving the company cash-poor and unable to invest.</p>
 
 <p>A better approach: model your cash needs for the next 12 months. Keep enough retained profit in the company to fund your growth plans. Extract the rest. Use pension contributions to reduce the tax on the extraction.</p>
 
@@ -249,7 +249,7 @@ faqs:
 
 <h3>How IR35 Affects Director Pay</h3>
 
-<p>If your agency engages contractors who are caught by IR35, you have a deemed employment payment to handle. But as a director and shareholder of your own agency, IR35 does not directly affect your pay strategy — you are not a contractor to your own company.</p>
+<p>If your agency engages contractors who are caught by IR35, you have a deemed employment payment to handle. But as a director and shareholder of your own agency, IR35 does not directly affect your pay strategy, you are not a contractor to your own company.</p>
 
 <p>However, if your agency has contractors who are inside IR35, their deemed employment payments increase your company's payroll costs and reduce your profit. That changes the amount available for your own salary and dividends. It also means you need to manage your PAYE scheme carefully, with proper RTI submissions and a P32 for monthly payments.</p>
 
@@ -258,18 +258,18 @@ faqs:
 <h2>Action Checklist: Paying Yourself in 2025/26</h2>
 
 <ol>
-<li><strong>Set your salary at £12,570</strong> — or £9,100 if you want to avoid employer NI entirely (but the £12,570 figure is usually better).</li>
-<li><strong>Run payroll monthly</strong> — submit RTI returns on time. Use Xero, QuickBooks, FreeAgent, Sage, or BrightPay.</li>
-<li><strong>Check your Employment Allowance</strong> — if you have a non-director employee, claim it and save up to £5,000 in employer NI.</li>
-<li><strong>Plan your dividends</strong> — keep your total income (salary plus dividends) below £50,270 to avoid the 33.75% dividend tax rate.</li>
-<li><strong>Use company pension contributions</strong> — contribute up to £60,000 per year (or more with carry forward) to reduce corporation tax and keep yourself in the basic rate band.</li>
-<li><strong>Consider spouse shares</strong> — if your spouse has unused personal allowance or basic rate band, issue them shares and pay dividends to them.</li>
-<li><strong>Document everything</strong> — board minutes for dividends, share certificates for spouse shares, pension contribution letters from the company.</li>
-<li><strong>Monitor your director's loan account</strong> — keep it below £10,000 or repay any overdrawn balance within 9 months of the year end.</li>
-<li><strong>Review your retained profits</strong> — keep enough in the company for growth, extract the rest efficiently.</li>
-<li><strong>File your self-assessment return on time</strong> — report salary on the employment pages, dividends on the dividend pages. Use SA100. File by 31 January after the tax year end.</li>
+<li><strong>Set your salary at £12,570</strong>, or £9,100 if you want to avoid employer NI entirely (but the £12,570 figure is usually better).</li>
+<li><strong>Run payroll monthly</strong>, submit RTI returns on time. Use Xero, QuickBooks, FreeAgent, Sage, or BrightPay.</li>
+<li><strong>Check your Employment Allowance</strong>, if you have a non-director employee, claim it and save up to £5,000 in employer NI.</li>
+<li><strong>Plan your dividends</strong>, keep your total income (salary plus dividends) below £50,270 to avoid the 33.75% dividend tax rate.</li>
+<li><strong>Use company pension contributions</strong>, contribute up to £60,000 per year (or more with carry forward) to reduce corporation tax and keep yourself in the basic rate band.</li>
+<li><strong>Consider spouse shares</strong>, if your spouse has unused personal allowance or basic rate band, issue them shares and pay dividends to them.</li>
+<li><strong>Document everything</strong>, board minutes for dividends, share certificates for spouse shares, pension contribution letters from the company.</li>
+<li><strong>Monitor your director's loan account</strong>, keep it below £10,000 or repay any overdrawn balance within 9 months of the year end.</li>
+<li><strong>Review your retained profits</strong>, keep enough in the company for growth, extract the rest efficiently.</li>
+<li><strong>File your self-assessment return on time</strong>, report salary on the employment pages, dividends on the dividend pages. Use SA100. File by 31 January after the tax year end.</li>
 </ol>
 
-<p>If you want us to review your current pay strategy, <a href="/contact">get in touch</a>. We work with agency founders across the UK — from Shoreditch to Manchester Northern Quarter to Edinburgh — and we see the same patterns. The fix is usually straightforward. The savings are not.</p>
+<p>If you want us to review your current pay strategy, <a href="/contact">get in touch</a>. We work with agency founders across the UK, from Shoreditch to Manchester Northern Quarter to Edinburgh, and we see the same patterns. The fix is usually straightforward. The savings are not.</p>
 
 <h2>Frequently Asked Questions</h2>

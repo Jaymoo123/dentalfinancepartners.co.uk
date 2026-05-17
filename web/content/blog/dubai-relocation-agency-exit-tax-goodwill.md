@@ -15,11 +15,11 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/woman-holding-cartoon-4226206/
   source: Pexels
 h1: 'Dubai Relocation for Agency Founders: The Exit Tax on Your Agency''s Goodwill When You Sell'
-summary: Moving to Dubai doesn't automatically exempt you from UK tax when you sell your agency. The structure of your sale — share sale vs asset sale — determines whether HMRC can still tax your goodwill. Here's what to plan for before you relocate.
+summary: Moving to Dubai doesn't automatically exempt you from UK tax when you sell your agency. The structure of your sale, share sale vs asset sale, determines whether HMRC can still tax your goodwill. Here's what to plan for before you relocate.
 schema: ''
 faqs:
 - question: What is the "exit tax" on goodwill when selling an agency after moving to Dubai?
-  answer: The exit tax refers to UK capital gains tax that can still apply when you sell your agency shares (or assets) within 5 years of becoming non-resident. Goodwill — the premium above net assets representing client relationships and brand value — is the largest component of most agency sale prices. HMRC can tax that gain even if you live in Dubai and the proceeds never touch a UK bank account.
+  answer: The exit tax refers to UK capital gains tax that can still apply when you sell your agency shares (or assets) within 5 years of becoming non-resident. Goodwill, the premium above net assets representing client relationships and brand value, is the largest component of most agency sale prices. HMRC can tax that gain even if you live in Dubai and the proceeds never touch a UK bank account.
 - question: Can I avoid UK tax by selling my agency as an asset sale instead of a share sale after moving to Dubai?
   answer: In some cases, yes. An asset sale shifts the tax on goodwill from CGT (charged to you personally at 14-18%) to corporation tax (charged to your company at 19-25%). The post-tax cash can then be extracted as a dividend to you in Dubai, which is not subject to further UK tax. Model both scenarios with your accountant before committing to a structure.
 - question: How long do I need to stay non-resident to avoid UK CGT on my agency sale?
@@ -49,7 +49,7 @@ keyTakeaways:
 
 <p>But even if you never return, the rules still catch you. If you dispose of assets you held before leaving, within 5 years of departure, the gain is taxed in the UK in the year of disposal. Not the year you come back. The year you sell.</p>
 
-<p>For agency founders, this means your share sale — including the goodwill embedded in those shares — is caught. The clock starts ticking from the date you become non-resident. You have 5 tax years to sell before the UK loses its taxing rights entirely.</p>
+<p>For agency founders, this means your share sale, including the goodwill embedded in those shares, is caught. The clock starts ticking from the date you become non-resident. You have 5 tax years to sell before the UK loses its taxing rights entirely.</p>
 
 <h2>Goodwill: The Hidden Value in Your Agency</h2>
 
@@ -57,7 +57,7 @@ keyTakeaways:
 
 <p>If you sell shares, the goodwill is wrapped inside the share value. The entire gain is treated as a disposal of shares. That gain is subject to UK CGT under the temporary non-residence rules if you sell within 5 years.</p>
 
-<p>If you sell assets — meaning you sell the trade and assets of your agency rather than the shares — the goodwill is a separate asset. The gain on goodwill is still subject to UK CGT under the same rules. But the structure changes how the gain is calculated and what reliefs are available.</p>
+<p>If you sell assets, meaning you sell the trade and assets of your agency rather than the shares, the goodwill is a separate asset. The gain on goodwill is still subject to UK CGT under the same rules. But the structure changes how the gain is calculated and what reliefs are available.</p>
 
 <p>This is where the <strong>dubai relocation agency exit tax goodwill</strong> question gets specific. Share sales and asset sales are treated differently, and your relocation timing matters for both.</p>
 
@@ -67,9 +67,9 @@ keyTakeaways:
 
 <p>But if you have moved to Dubai and sell within 5 years, BADR does not help you. The gain is still charged in the UK. The relief reduces the rate, but the tax is still payable to HMRC.</p>
 
-<p>Here is the real trap: many founders assume that because they are non-resident, they can sell and pay no UK tax. They structure the sale as a share sale, take the proceeds in Dubai, and file nothing with HMRC. That is incorrect. The gain must be reported on a UK self-assessment return for the year of disposal. HMRC will find it — the buyer's company records, the share register, the bank transfers all leave a trail.</p>
+<p>Here is the real trap: many founders assume that because they are non-resident, they can sell and pay no UK tax. They structure the sale as a share sale, take the proceeds in Dubai, and file nothing with HMRC. That is incorrect. The gain must be reported on a UK self-assessment return for the year of disposal. HMRC will find it, the buyer's company records, the share register, the bank transfers all leave a trail.</p>
 
-<p>Let us run a worked example. You own 100% of your agency. You moved to Dubai in June 2025. You sell your shares in March 2027 for £2m. Your base cost (what you paid for the shares) is £100. Your gain is £1,999,900. BADR applies at 14% (for disposals before April 2026 — but your sale is in 2027, so the rate is 18%). Your CGT bill is £359,982. You owe that to HMRC, even though you live in Dubai and the money never touched a UK bank account.</p>
+<p>Let us run a worked example. You own 100% of your agency. You moved to Dubai in June 2025. You sell your shares in March 2027 for £2m. Your base cost (what you paid for the shares) is £100. Your gain is £1,999,900. BADR applies at 14% (for disposals before April 2026, but your sale is in 2027, so the rate is 18%). Your CGT bill is £359,982. You owe that to HMRC, even though you live in Dubai and the money never touched a UK bank account.</p>
 
 <p>If you had sold before leaving the UK, your gain would have been the same. The tax is the same. The relocation gave you no benefit on that sale.</p>
 
@@ -81,7 +81,7 @@ keyTakeaways:
 
 <p>This creates a planning opportunity. If you sell assets rather than shares, the goodwill gain is taxed in the company at corporation tax rates (19% or 25%, depending on profit level). Then the cash can be extracted as a dividend to you in Dubai. Dividends from UK companies to non-residents are not subject to UK tax. You pay no further UK tax on that extraction.</p>
 
-<p>Compare that to a share sale. On a £2m gain, a share sale costs you £360k in CGT. An asset sale costs the company £380k in corporation tax (assuming 19% on the first £50k and 25% on the rest), leaving £1.62m. Extracted as a dividend to Dubai: zero further UK tax. Total UK tax: £380k. That is £20k more than the share sale. But the structure gives you flexibility — you can leave the cash in the company and extract it over multiple tax years, or reinvest it through a holding company.</p>
+<p>Compare that to a share sale. On a £2m gain, a share sale costs you £360k in CGT. An asset sale costs the company £380k in corporation tax (assuming 19% on the first £50k and 25% on the rest), leaving £1.62m. Extracted as a dividend to Dubai: zero further UK tax. Total UK tax: £380k. That is £20k more than the share sale. But the structure gives you flexibility, you can leave the cash in the company and extract it over multiple tax years, or reinvest it through a holding company.</p>
 
 <p>The key difference: in an asset sale, the goodwill gain is taxed at corporation tax rates, not CGT rates. And the extraction to a non-resident is tax-free. In a share sale, the entire gain is taxed at CGT rates, and there is no extraction step.</p>
 

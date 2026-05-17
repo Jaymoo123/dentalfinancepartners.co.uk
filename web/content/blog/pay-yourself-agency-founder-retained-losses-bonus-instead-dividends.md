@@ -41,7 +41,7 @@ keyTakeaways:
 
 <p>That works perfectly when your profit and loss account shows a positive retained earnings balance. But what happens when it doesn't?</p>
 
-<p>If your agency has accumulated losses from earlier years — maybe from the startup phase, a bad year during COVID, or a failed project that burned through cash — you may have a negative retained earnings figure on your balance sheet. In that situation, you <strong>cannot legally pay dividends</strong>. Company law (the Companies Act 2006) says dividends can only be paid from distributable profits. If you don't have them, any dividend payment is unlawful.</p>
+<p>If your agency has accumulated losses from earlier years, maybe from the startup phase, a bad year during COVID, or a failed project that burned through cash, you may have a negative retained earnings figure on your balance sheet. In that situation, you <strong>cannot legally pay dividends</strong>. Company law (the Companies Act 2006) says dividends can only be paid from distributable profits. If you don't have them, any dividend payment is unlawful.</p>
 
 <p>So how do you <strong>pay yourself agency founder</strong> when the retained earnings are in the red? You use a bonus. And you structure it carefully to minimise the combined tax hit.</p>
 
@@ -98,7 +98,7 @@ keyTakeaways:
 <li>Net cash in your pocket: £39,750</li>
 </ul>
 
-<p>The dividend leaves you with £4,950 more personally. But that comparison only works if dividends are legally available. When they are not, the bonus is your only option — and the corporation tax saving partially offsets the personal tax cost.</p>
+<p>The dividend leaves you with £4,950 more personally. But that comparison only works if dividends are legally available. When they are not, the bonus is your only option, and the corporation tax saving partially offsets the personal tax cost.</p>
 
 <h2>Structuring the Bonus to Minimise the Overall Bill</h2>
 
@@ -151,9 +151,9 @@ keyTakeaways:
 
 <h2>The PAYE and Reporting Requirements</h2>
 
-<p>Bonuses are processed through your payroll software (Xero, QuickBooks, FreeAgent — whichever you use). You report them on a Full Payment Submission (FPS) to HMRC in real time. The employer NI is calculated automatically and paid through your monthly or quarterly PAYE bill.</p>
+<p>Bonuses are processed through your payroll software (Xero, QuickBooks, FreeAgent, whichever you use). You report them on a Full Payment Submission (FPS) to HMRC in real time. The employer NI is calculated automatically and paid through your monthly or quarterly PAYE bill.</p>
 
-<p>Unlike dividends, bonuses do not require a board meeting or dividend voucher. You do need to document the bonus decision in the company records — a simple board minute confirming the amount and the basis for it is enough. Your accountant will want this for the year-end file.</p>
+<p>Unlike dividends, bonuses do not require a board meeting or dividend voucher. You do need to document the bonus decision in the company records, a simple board minute confirming the amount and the basis for it is enough. Your accountant will want this for the year-end file.</p>
 
 <p>If you are an ICAEW qualified accountant like our team at Agency Founder Finance, we will check that the bonus is commercially justifiable. HMRC can challenge excessive bonuses if they look like a disguised dividend, but if you are the sole director and the bonus reflects your work for the company, there is usually no issue.</p>
 
@@ -179,7 +179,7 @@ keyTakeaways:
 <li><strong>Speak to your accountant.</strong> If your retained losses are significant and you are unsure about the timing, ask them before you process the payment. They can run the full tax comparison for your specific numbers.</li>
 </ol>
 
-<p>Our <a href="/services">services</a> page covers how we handle these situations for agency founders. If your contractor mix or structure has changed recently, it is worth reviewing your approach to drawings as well — read our guide on <a href="/blog/contractors-and-ir35">contractors and IR35</a> if that applies to you.</p>
+<p>Our <a href="/services">services</a> page covers how we handle these situations for agency founders. If your contractor mix or structure has changed recently, it is worth reviewing your approach to drawings as well, read our guide on <a href="/blog/contractors-and-ir35">contractors and IR35</a> if that applies to you.</p>
 
 <p>The retained-losses situation is more common than most agency founders realise. It is not a problem. It is a planning opportunity. With the right structure, you can get the cash you need without paying more tax than necessary.</p>
 

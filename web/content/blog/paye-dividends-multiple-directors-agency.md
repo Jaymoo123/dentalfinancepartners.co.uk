@@ -37,7 +37,7 @@ keyTakeaways:
 ---
 <h2>When Your Agency Has More Than One Founder in the Room</h2>
 
-<p>You started the agency with a co-founder. Or maybe three of you came together — one handling client work, one on strategy, one running operations. Each of you owns shares. Each of you works full-time. Each of you expects to be paid.</p>
+<p>You started the agency with a co-founder. Or maybe three of you came together, one handling client work, one on strategy, one running operations. Each of you owns shares. Each of you works full-time. Each of you expects to be paid.</p>
 
 <p>That changes the PAYE and dividends conversation completely.</p>
 
@@ -74,7 +74,7 @@ keyTakeaways:
 <p>Here's the practical setup:</p>
 
 <h3>1. Register Each Director on Your PAYE Scheme</h3>
-<p>When you set up your company's PAYE scheme through HMRC, you add each director as a separate employee record. You can use your existing payroll software — Xero, QuickBooks, FreeAgent, or Sage all handle multiple directors easily.</p>
+<p>When you set up your company's PAYE scheme through HMRC, you add each director as a separate employee record. You can use your existing payroll software, Xero, QuickBooks, FreeAgent, or Sage all handle multiple directors easily.</p>
 
 <p>Each director gets their own tax code. Most directors will have the standard 1257L code, giving them the full personal allowance. But if a director has other income (a second job, rental income, or pension), their tax code may be adjusted. Check each one individually.</p>
 
@@ -103,7 +103,7 @@ keyTakeaways:
 <p>This is where many agency founders get tripped up.</p>
 
 <h3>The Shareholding-Dividend Link</h3>
-<p>If you have three directors who each own 33.33% of the shares, dividends are split equally. If you have two directors — one with 60% and one with 40% — dividends follow that ratio. You cannot pay a dividend that favours one shareholder over another unless you have different share classes with different rights.</p>
+<p>If you have three directors who each own 33.33% of the shares, dividends are split equally. If you have two directors, one with 60% and one with 40%, dividends follow that ratio. You cannot pay a dividend that favours one shareholder over another unless you have different share classes with different rights.</p>
 
 <p>Different share classes are common in agencies. You might have:</p>
 <ul>
@@ -126,9 +126,9 @@ keyTakeaways:
 <p>Let's run through a real scenario. A digital agency in Manchester has three directors:</p>
 
 <ul>
-<li>Sarah — 50% shares, works full-time as Managing Director</li>
-<li>James — 30% shares, works full-time as Creative Director</li>
-<li>Priya — 20% shares, works part-time (3 days per week) as Technical Director</li>
+<li>Sarah, 50% shares, works full-time as Managing Director</li>
+<li>James, 30% shares, works full-time as Creative Director</li>
+<li>Priya, 20% shares, works part-time (3 days per week) as Technical Director</li>
 </ul>
 
 <p>The agency turns over £750,000 per year. After salaries, overheads, and other costs, retained profits available for distribution are £180,000.</p>
@@ -184,7 +184,7 @@ keyTakeaways:
 
 <p>In that case, their dividends from the agency are taxed at 33.75% from the first pound (after the £500 allowance). The other directors on basic rate pay only 8.75%.</p>
 
-<p>There is no way around this through the company structure. Each director's tax liability is personal. You cannot reallocate dividends to a lower-taxed director and then transfer the money privately — that's a settlement issue and HMRC will challenge it.</p>
+<p>There is no way around this through the company structure. Each director's tax liability is personal. You cannot reallocate dividends to a lower-taxed director and then transfer the money privately, that's a settlement issue and HMRC will challenge it.</p>
 
 <p>What you can do is consider a different share structure. For example, issue non-voting shares to a spouse who is a basic rate taxpayer. But this only works if the spouse genuinely owns the shares and bears the economic risk. HMRC's settlements legislation (often called "income shifting") prevents you from simply giving shares to a lower-taxed family member to avoid tax.</p>
 

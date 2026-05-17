@@ -24,7 +24,7 @@ keyTakeaways:
 - MTD ITSA requires quarterly updates from April 2026 for agencies with self-employment income over £50,000, replacing the annual Self Assessment return.
 - You can automate MTD ITSA updates using compatible software like Xero or FreeAgent, which connect to bank feeds and generate quarterly summaries directly.
 - Quarterly updates cover income and expenses from self-employment; dividend income from a limited company is reported on the final declaration.
-- Automation reduces errors and saves time—aim for less than one hour per quarter by keeping digital records and using bank rules for categorisation.
+- Automation reduces errors and saves time-aim for less than one hour per quarter by keeping digital records and using bank rules for categorisation.
 - HMRC's MTD ITSA rollout is mandatory from April 2026 for income over £50,000 and from April 2027 for income over £30,000.
 ---
 <p>Making Tax Digital for Income Tax Self Assessment (MTD ITSA) arrives in April 2026. If your agency turns over more than £50,000 from self-employment (sole trader or partnership), you will be required to send quarterly updates to HMRC. Not annual returns. Four updates per year, plus an end-of-period statement and a final declaration.</p>
@@ -38,17 +38,17 @@ keyTakeaways:
 <p>MTD ITSA replaces the traditional Self Assessment tax return with a digital-first system. Instead of filing one annual return by 31 January, you submit:</p>
 
 <ul>
-<li><strong>Four quarterly updates</strong> — summary of income and expenses for each quarter (not full accounts, just totals)</li>
-<li><strong>An end-of-period statement (EOPS)</strong> — submitted after the fourth quarter, confirming the figures are final</li>
-<li><strong>A final declaration</strong> — similar to the current Self Assessment, covering any additional income (dividends, property, savings interest) and claiming reliefs</li>
+<li><strong>Four quarterly updates</strong>, summary of income and expenses for each quarter (not full accounts, just totals)</li>
+<li><strong>An end-of-period statement (EOPS)</strong>, submitted after the fourth quarter, confirming the figures are final</li>
+<li><strong>A final declaration</strong>, similar to the current Self Assessment, covering any additional income (dividends, property, savings interest) and claiming reliefs</li>
 </ul>
 
 <p>For a typical agency founder who is a sole trader or in a partnership, the quarterly updates cover your self-employed income and expenses. If you also have dividend income from a limited company (because you operate through one), that goes on the final declaration, not the quarterly updates.</p>
 
 <p>HMRC's timeline for MTD ITSA rollout is:</p>
 <ul>
-<li><strong>April 2026</strong> — mandatory for self-employed individuals and partnerships with gross income over £50,000</li>
-<li><strong>April 2027</strong> — mandatory for those with gross income over £30,000</li>
+<li><strong>April 2026</strong>, mandatory for self-employed individuals and partnerships with gross income over £50,000</li>
+<li><strong>April 2027</strong>, mandatory for those with gross income over £30,000</li>
 </ul>
 
 <p>Agencies turning over less than £30,000 can volunteer early, but it's not required. Most agency founders reading this will fall into the first wave if your agency is billing £50k+ per year.</p>
@@ -150,7 +150,7 @@ keyTakeaways:
 <li>Exit planning and BADR qualification</li>
 </ul>
 
-<p>But the quarterly data entry? That is purely administrative. Our ICAEW qualified team at Agency Founder Finance helps agency founders with the strategic stuff — tax planning, structure, and compliance — while you handle the day-to-day bookkeeping with automated tools. If your agency finances are getting more complex, <a href="/contact">get in touch</a> to discuss how we can support your growth without taking over your bookkeeping.</p>
+<p>But the quarterly data entry? That is purely administrative. Our ICAEW qualified team at Agency Founder Finance helps agency founders with the strategic stuff, tax planning, structure, and compliance, while you handle the day-to-day bookkeeping with automated tools. If your agency finances are getting more complex, <a href="/contact">get in touch</a> to discuss how we can support your growth without taking over your bookkeeping.</p>
 
 <p>For most agency founders, the right approach is: automate the quarterly MTD ITSA updates yourself using Xero or FreeAgent, and bring in an accountant for the annual tax return, tax planning, and any complex issues. That keeps your costs down and your compliance solid.</p>
 

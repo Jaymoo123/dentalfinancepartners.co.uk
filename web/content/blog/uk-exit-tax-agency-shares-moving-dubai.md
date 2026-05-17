@@ -41,7 +41,7 @@ keyTakeaways:
 
 <h2>What Is Exit Tax on Shares Moving to Dubai?</h2>
 
-<p>Exit tax is the charge that can apply when someone ceases to be UK tax resident while holding certain assets. For most assets (property, listed shares, cryptocurrency), the UK charges capital gains tax as if you sold them on the day you left. But for unlisted shares in a trading company — which is what your agency shares almost certainly are — the rules are different.</p>
+<p>Exit tax is the charge that can apply when someone ceases to be UK tax resident while holding certain assets. For most assets (property, listed shares, cryptocurrency), the UK charges capital gains tax as if you sold them on the day you left. But for unlisted shares in a trading company, which is what your agency shares almost certainly are, the rules are different.</p>
 
 <p>Under section 2 TCGA 1992, you are only chargeable to capital gains tax on disposals of assets while you are UK resident. Once you are non-resident, disposals of UK unlisted shares generally fall outside UK CGT. There is no deemed disposal at the point of departure.</p>
 
@@ -53,7 +53,7 @@ keyTakeaways:
 
 <p>This is the biggest trap for agency founders who move to Dubai thinking they can sell up quickly and escape tax. If you sell within five years of leaving, the gain is brought back into the UK tax net. You need to stay non-resident for at least five complete tax years before you sell to make the gain tax-free in the UK.</p>
 
-<p>There is also a specific anti-avoidance rule for deemed disposals. If you hold shares in a close company (which most agencies are), and you trigger a capital gains event within the company itself — for example, the company sells a valuable asset, or there is a share buyback — HMRC can look through the structure and treat you as having made a disposal. This is less common for straightforward agency structures, but it is worth knowing about.</p>
+<p>There is also a specific anti-avoidance rule for deemed disposals. If you hold shares in a close company (which most agencies are), and you trigger a capital gains event within the company itself, for example, the company sells a valuable asset, or there is a share buyback, HMRC can look through the structure and treat you as having made a disposal. This is less common for straightforward agency structures, but it is worth knowing about.</p>
 
 <h2>What Is Deemed Disposal and Why Does It Matter?</h2>
 
@@ -61,7 +61,7 @@ keyTakeaways:
 
 <p>But there are negative deemed disposal rules too. If you transfer assets out of the UK while non-resident, or if you restructure your shareholding in a way that HMRC considers a disposal, you can trigger a charge. For example, if you move your agency shares into an offshore trust before leaving, HMRC can treat that as a disposal at market value.</p>
 
-<p>For most agency founders with a straightforward shareholding in their own trading company, deemed disposal is not an issue. The risk is low if you do nothing other than move and hold the shares. But if you start restructuring — moving shares between entities, creating holding companies, or gifting shares to family members — the deemed disposal rules can apply.</p>
+<p>For most agency founders with a straightforward shareholding in their own trading company, deemed disposal is not an issue. The risk is low if you do nothing other than move and hold the shares. But if you start restructuring, moving shares between entities, creating holding companies, or gifting shares to family members, the deemed disposal rules can apply.</p>
 
 <h2>How Long Do You Need to Be Non-Resident to Avoid UK Tax?</h2>
 
@@ -120,7 +120,7 @@ keyTakeaways:
 <h2>Final Thoughts</h2>
 <p>UK exit tax on shares moving to Dubai is not an automatic charge for agency founders with unlisted shares. The deemed disposal rules are narrow and rarely apply to straightforward shareholdings. But the temporary non-residence rule is a real trap. If you sell within five years, the gain is taxed in the UK as if you never left.</p>
 
-<p>Plan your departure date, your share structure, and your exit timeline carefully. If you are unsure about any of these points, speak to an accountant who understands both UK and UAE tax rules. Our ICAEW qualified team at Agency Founder Finance works with agency founders on these exact scenarios — <a href="/contact">get in touch</a> if you want to run through your numbers.</p>
+<p>Plan your departure date, your share structure, and your exit timeline carefully. If you are unsure about any of these points, speak to an accountant who understands both UK and UAE tax rules. Our ICAEW qualified team at Agency Founder Finance works with agency founders on these exact scenarios, <a href="/contact">get in touch</a> if you want to run through your numbers.</p>
 
 <p>For more on structuring your agency for a future exit, read our guide on <a href="/blog/growth-and-exit">growth and exit planning for agency founders</a>.</p>
 

@@ -22,7 +22,7 @@ faqs:
     answer: "Not on your regular salary, because you cannot sacrifice below the National Minimum Wage. But you can use salary sacrifice on bonuses, commission, or overtime. Many agency directors pay themselves a bonus in March and sacrifice it into the pension before the tax year ends. That captures the NI and tax savings on additional income without changing your regular salary structure."
   - question: "Does salary sacrifice affect my state pension entitlement?"
     answer: "It can, if you sacrifice below the Lower Earnings Limit (£6,396 for 2025/26). Below that level, you stop building qualifying years for the state pension. In practice, most agency directors keep their salary at £12,570, which is well above the threshold. If you are sacrificing a bonus on top of that salary, your state pension entitlement is unaffected. Check your NI record on gov.uk to be sure."
-  - question: "What happens to the employer NI saving — does it stay in the company?"
+  - question: "What happens to the employer NI saving, does it stay in the company?"
     answer: "Yes. The employer NI saving is retained by your agency. It is not paid into your pension. That money stays in the company as additional profit. You can reinvest it, hold it as cash, or distribute it as dividends later. For a profitable agency, the saving is pure bottom-line improvement."
   - question: "Do I need to tell HMRC about a salary sacrifice arrangement?"
     answer: "Not directly. The arrangement is reported through your RTI payroll submissions. Your pension contribution appears on your FPS and on your P60. HMRC sees the reduced salary and the employer pension contribution. As long as you have a written variation to your contract and your payroll software is set up correctly, you are compliant. Keep the contract variation on file in case HMRC queries it later."
@@ -49,7 +49,7 @@ faqs:
 <ul>
 <li>You agree a reduced salary with your company. For example, you drop from £50,000 to £40,000.</li>
 <li>The £10,000 difference goes into your pension as an employer contribution.</li>
-<li>Your company processes the contribution through its payroll software — Xero, QuickBooks, FreeAgent, or whatever you use.</li>
+<li>Your company processes the contribution through its payroll software, Xero, QuickBooks, FreeAgent, or whatever you use.</li>
 <li>The contribution is reported on your P60 and P11D where relevant.</li>
 <li>Your company claims the full amount as a deductible business expense, reducing its corporation tax.</li>
 </ul>
@@ -74,7 +74,7 @@ faqs:
 <p>The director takes the £20,000 as additional dividend income. After higher-rate dividend tax at 33.75%, they receive £13,250. They pay £6,750 in tax. They then contribute £13,250 to their pension. HMRC adds basic rate tax relief at source, so £16,562 lands in the pension. Total tax cost to the director: £6,750. No saving for the company.</p>
 
 <p><strong>Option 2: Salary sacrifice via bonus</strong></p>
-<p>The company pays the director a £20,000 bonus. The director sacrifices it into the pension. The company saves £2,760 in employer NI (13.8% of £20,000). The director pays no income tax or NI on the £20,000. The full £20,000 goes into the pension. The company also saves corporation tax on the bonus plus the employer NI — roughly £5,690 at 25%.</p>
+<p>The company pays the director a £20,000 bonus. The director sacrifices it into the pension. The company saves £2,760 in employer NI (13.8% of £20,000). The director pays no income tax or NI on the £20,000. The full £20,000 goes into the pension. The company also saves corporation tax on the bonus plus the employer NI, roughly £5,690 at 25%.</p>
 
 <p>The difference is stark. Option 2 puts £3,438 more into the pension and saves the company £2,760 in employer NI plus £5,690 in corporation tax. That is a combined saving of £8,450 versus Option 1.</p>
 
@@ -92,7 +92,7 @@ faqs:
 
 <h2>Annual Allowance and Tapering: The Trap to Avoid</h2>
 
-<p>The annual allowance for pension contributions is £60,000 for 2025/26. That includes all contributions — yours, your employer's, and any tax relief added. If you exceed it, you pay a tax charge at your marginal rate.</p>
+<p>The annual allowance for pension contributions is £60,000 for 2025/26. That includes all contributions, yours, your employer's, and any tax relief added. If you exceed it, you pay a tax charge at your marginal rate.</p>
 
 <p>For higher-earning agency directors, the tapered annual allowance can reduce this to as little as £10,000. The taper applies when your adjusted income (net income plus employer pension contributions) exceeds £260,000. For every £2 over £260,000, your annual allowance drops by £1, down to a minimum of £10,000.</p>
 
@@ -104,7 +104,7 @@ faqs:
 
 <p>If you have not used your full annual allowance in the last three tax years, you can carry it forward. This is useful for agency directors who want to make a large one-off contribution, perhaps before an exit or a profit spike.</p>
 
-<p>To use carry forward, you must have been a member of a registered pension scheme in each year you want to carry forward from. Membership is easy to establish — opening a personal pension and contributing £1 is enough.</p>
+<p>To use carry forward, you must have been a member of a registered pension scheme in each year you want to carry forward from. Membership is easy to establish, opening a personal pension and contributing £1 is enough.</p>
 
 <p>The calculation is straightforward. Your available allowance for the current year is £60,000, plus any unused allowance from the previous three tax years, in order from oldest to newest. You cannot carry forward more than £60,000 from any single year.</p>
 
@@ -124,7 +124,7 @@ faqs:
 
 <h3>What About Pension Schemes for Staff?</h3>
 
-<p>If you offer salary sacrifice to employees, you must offer it to all of them on the same terms. You cannot cherry-pick who gets it. However, you can set minimum conditions — for example, the sacrifice cannot reduce the employee below minimum wage, and the scheme is only available after a qualifying period.</p>
+<p>If you offer salary sacrifice to employees, you must offer it to all of them on the same terms. You cannot cherry-pick who gets it. However, you can set minimum conditions, for example, the sacrifice cannot reduce the employee below minimum wage, and the scheme is only available after a qualifying period.</p>
 
 <p>Many agencies offer salary sacrifice as a benefit alongside the auto-enrolment pension. It reduces the agency's employer NI bill across the whole team. For a 12-person agency with an average salary of £35,000, the employer NI saving from a 5% salary sacrifice across the board is roughly £2,900 per year.</p>
 

@@ -25,7 +25,7 @@ faqs:
 - question: What happens if I file my VAT return through the HMRC portal instead of my software?
   answer: You will get an error message telling you to use MTD-compatible software. The HMRC portal no longer accepts manual VAT return submissions from businesses that are required to use MTD. You must file from within your accounting software. If you attempt to file through the portal, your return will not be processed, and you may face late filing penalties.
 - question: Does MTD for VAT apply to sole trader agencies?
-  answer: Yes, if the sole trader is VAT-registered. MTD for VAT applies to all VAT-registered businesses, including sole traders. The only exception is if you are voluntarily VAT-registered and your taxable turnover is below the £90,000 threshold — but even then, once you are registered, MTD applies. If you are a sole trader agency with turnover over £50,000, you also need to prepare for MTD for Income Tax Self Assessment, which starts from April 2026.
+  answer: Yes, if the sole trader is VAT-registered. MTD for VAT applies to all VAT-registered businesses, including sole traders. The only exception is if you are voluntarily VAT-registered and your taxable turnover is below the £90,000 threshold, but even then, once you are registered, MTD applies. If you are a sole trader agency with turnover over £50,000, you also need to prepare for MTD for Income Tax Self Assessment, which starts from April 2026.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -45,11 +45,11 @@ keyTakeaways:
 
 <h2>Why HMRC Introduced MTD for VAT</h2>
 
-<p>HMRC estimates that the UK tax gap — the difference between tax owed and tax paid — is around £35 billion per year. A significant portion comes from avoidable errors in VAT returns. Manual data entry, spreadsheet errors, and transposition mistakes all add up.</p>
+<p>HMRC estimates that the UK tax gap, the difference between tax owed and tax paid, is around £35 billion per year. A significant portion comes from avoidable errors in VAT returns. Manual data entry, spreadsheet errors, and transposition mistakes all add up.</p>
 
 <p>MTD aims to reduce those errors by forcing a digital link between your accounting records and your VAT submission. No more copying numbers from one spreadsheet to another. No more typing nine boxes of figures into a web portal by hand.</p>
 
-<p>For agencies, the practical effect is straightforward. Your accounting software — Xero, QuickBooks, FreeAgent, Sage, or an MTD-bridging tool — sends the VAT return directly to HMRC. You review it, approve it, and submit it from within the software.</p>
+<p>For agencies, the practical effect is straightforward. Your accounting software, Xero, QuickBooks, FreeAgent, Sage, or an MTD-bridging tool, sends the VAT return directly to HMRC. You review it, approve it, and submit it from within the software.</p>
 
 <h2>Does MTD for VAT Apply to Your Agency?</h2>
 
@@ -90,9 +90,9 @@ keyTakeaways:
 <li>Your submission to HMRC must come from that software.</li>
 </ul>
 
-<p>The most common compliance failure for agencies is what HMRC calls "cut and paste" — manually copying numbers from one system to another. If you export a CSV from your time tracking tool, paste it into a spreadsheet, adjust the VAT, then type the totals into your accounting software, you have broken the digital link.</p>
+<p>The most common compliance failure for agencies is what HMRC calls "cut and paste", manually copying numbers from one system to another. If you export a CSV from your time tracking tool, paste it into a spreadsheet, adjust the VAT, then type the totals into your accounting software, you have broken the digital link.</p>
 
-<p>Fix this by using integrations. Most agency tools — Harvest, Toggl, Float, Dext — connect directly to Xero or QuickBooks. Set those integrations up properly, and your digital link is intact.</p>
+<p>Fix this by using integrations. Most agency tools, Harvest, Toggl, Float, Dext, connect directly to Xero or QuickBooks. Set those integrations up properly, and your digital link is intact.</p>
 
 <h3>Step 3: Authorise Your Software</h3>
 
@@ -100,7 +100,7 @@ keyTakeaways:
 
 <p>In Xero, go to the VAT section, click "Set up MTD," and follow the prompts to sign into your HMRC Government Gateway account. The same process applies in QuickBooks, FreeAgent, and Sage.</p>
 
-<p>If you use an agent (your accountant), they can handle this authorisation for you. Many agencies prefer to have their accountant manage the MTD submission directly. That is fine — just make sure the authorisation is in place before your next return is due.</p>
+<p>If you use an agent (your accountant), they can handle this authorisation for you. Many agencies prefer to have their accountant manage the MTD submission directly. That is fine, just make sure the authorisation is in place before your next return is due.</p>
 
 <h3>Step 4: File Your First MTD Return</h3>
 
@@ -167,7 +167,7 @@ keyTakeaways:
 
 <p>If your agency is structured as a limited company, MTD for ITSA does not apply to you directly. Corporation Tax MTD is on the horizon but has no confirmed date yet. For now, focus on VAT MTD compliance.</p>
 
-<p>If you are a sole trader or partnership agency with turnover over £50,000, you should start preparing for MTD for ITSA now. The software requirements are similar — cloud accounting with digital record-keeping — so if you are already MTD-compliant for VAT, you are partly there.</p>
+<p>If you are a sole trader or partnership agency with turnover over £50,000, you should start preparing for MTD for ITSA now. The software requirements are similar, cloud accounting with digital record-keeping, so if you are already MTD-compliant for VAT, you are partly there.</p>
 
 <h2>How Your Accountant Can Help</h2>
 
@@ -177,7 +177,7 @@ keyTakeaways:
 
 <p>If you are still using spreadsheets or a non-MTD-compatible package, we can recommend the right software for your agency size and structure. For most agencies, Xero or QuickBooks with Dext for receipt capture is the standard setup.</p>
 
-<p>We also help with the digital links requirement. If you are using multiple tools — Harvest for time tracking, Dext for expenses, Xero for accounting — we make sure the data flows are properly integrated and compliant.</p>
+<p>We also help with the digital links requirement. If you are using multiple tools, Harvest for time tracking, Dext for expenses, Xero for accounting, we make sure the data flows are properly integrated and compliant.</p>
 
 <h2>Common Mistakes Agencies Make</h2>
 
@@ -211,7 +211,7 @@ keyTakeaways:
 
 <p>MTD for VAT is not new. It has been mandatory for over three years. But many agencies are still not fully compliant, particularly around digital links and software authorisation.</p>
 
-<p>If you are unsure whether your agency meets the requirements, ask your accountant to review your setup. The cost of getting it wrong — penalties of up to £3,000 plus late filing charges — far outweighs the cost of getting it right.</p>
+<p>If you are unsure whether your agency meets the requirements, ask your accountant to review your setup. The cost of getting it wrong, penalties of up to £3,000 plus late filing charges, far outweighs the cost of getting it right.</p>
 
 <p>If you do not have an accountant who understands agency-specific VAT issues, we can help. We work with marketing agencies, digital agencies, creative agencies, PR agencies, advertising agencies, web design agencies, and recruitment agencies across the UK.</p>
 

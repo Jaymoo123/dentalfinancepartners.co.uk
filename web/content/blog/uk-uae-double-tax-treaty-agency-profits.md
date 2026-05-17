@@ -60,7 +60,7 @@ keyTakeaways:
 <p>This is the most common trap I see. An agency founder moves to Dubai, keeps their UK team in place, and the UK team continues to win and manage clients. The agency may be UAE-resident on paper, but the UK team creates a permanent establishment.</p>
 
 <h3>A dependent agent who habitually concludes contracts</h3>
-<p>Even if you have no office and no employees, a UK-based contractor who regularly signs contracts on your behalf can create a PE. The key word is "dependent" — if that person works exclusively or almost exclusively for your agency, they are likely a dependent agent.</p>
+<p>Even if you have no office and no employees, a UK-based contractor who regularly signs contracts on your behalf can create a PE. The key word is "dependent", if that person works exclusively or almost exclusively for your agency, they are likely a dependent agent.</p>
 
 <h2>When Agency Profits Are Safe from UK Tax</h2>
 
@@ -91,7 +91,7 @@ keyTakeaways:
 
 <p>I see a pattern repeatedly. An agency founder sells their UK house, moves to a Dubai Marina apartment, sets up a UAE freezone company, and carries on working with the same UK clients. They think they are tax-free. They are often wrong.</p>
 
-<p>The problem is not the treaty. The treaty works exactly as designed. The problem is that the founder has not actually moved their business operations to the UAE. They have moved themselves. The business still operates from the UK — the same UK team, the same UK office (or home office), the same UK client relationships.</p>
+<p>The problem is not the treaty. The treaty works exactly as designed. The problem is that the founder has not actually moved their business operations to the UAE. They have moved themselves. The business still operates from the UK, the same UK team, the same UK office (or home office), the same UK client relationships.</p>
 
 <p>HMRC's position is clear: if the business activities that generate the profits happen in the UK, the profits are UK-source and taxable in the UK. The treaty does not override that. It only allocates taxing rights between the two countries. If the UK has the right to tax, it will tax.</p>
 
@@ -101,7 +101,7 @@ keyTakeaways:
 
 <ul>
 <li><strong>UAE incorporation first.</strong> Your agency should be a UAE freezone company or mainland company. Do not try to bolt a UAE entity onto an existing UK company structure without advice.</li>
-<li><strong>Central management and control in the UAE.</strong> Board meetings happen in Dubai. Strategic decisions are made there. The founder's day-to-day work happens there. You need evidence of this — meeting minutes, travel records, bank statements showing UAE spending.</li>
+<li><strong>Central management and control in the UAE.</strong> Board meetings happen in Dubai. Strategic decisions are made there. The founder's day-to-day work happens there. You need evidence of this, meeting minutes, travel records, bank statements showing UAE spending.</li>
 <li><strong>No UK fixed place of business.</strong> No UK office. No UK co-working membership used for agency work. No home office in the UK that you use for agency activities.</li>
 <li><strong>UK client contracts signed from the UAE.</strong> Use a UAE address on contracts. Sign them in Dubai. Have the contract state that the governing law is UAE law (or at least that the place of contract formation is the UAE).</li>
 <li><strong>UK contractors are genuinely independent.</strong> They work for multiple clients. They have their own business insurance. They invoice your agency. They do not have authority to sign contracts on your behalf.</li>

@@ -135,13 +135,13 @@ keyTakeaways:
 <p>If you are planning to sell your agency within the next three years, here is your checklist:</p>
 
 <ol>
-<li><strong>Confirm your shareholding percentage</strong> — check it is at least 5% of ordinary shares with full voting and profit rights</li>
-<li><strong>Check your director status</strong> — make sure you are formally appointed and on the payroll</li>
-<li><strong>Review your company's asset composition</strong> — calculate non-trading assets as a percentage of total assets. Keep it under 20%.</li>
-<li><strong>Extract excess cash</strong> — dividend it out or reinvest it before the sale process begins</li>
-<li><strong>Check your BADR lifetime allowance</strong> — if you have used BADR before, calculate your remaining £1m limit</li>
-<li><strong>Plan the two-year holding period</strong> — if you do not yet meet all conditions, the clock starts from when you do</li>
-<li><strong>Review your share structure</strong> — if you are close to the 5% threshold, consider a share consolidation or reorganisation</li>
+<li><strong>Confirm your shareholding percentage</strong>, check it is at least 5% of ordinary shares with full voting and profit rights</li>
+<li><strong>Check your director status</strong>, make sure you are formally appointed and on the payroll</li>
+<li><strong>Review your company's asset composition</strong>, calculate non-trading assets as a percentage of total assets. Keep it under 20%.</li>
+<li><strong>Extract excess cash</strong>, dividend it out or reinvest it before the sale process begins</li>
+<li><strong>Check your BADR lifetime allowance</strong>, if you have used BADR before, calculate your remaining £1m limit</li>
+<li><strong>Plan the two-year holding period</strong>, if you do not yet meet all conditions, the clock starts from when you do</li>
+<li><strong>Review your share structure</strong>, if you are close to the 5% threshold, consider a share consolidation or reorganisation</li>
 </ol>
 
 <p>For a detailed breakdown of how your agency structure affects your exit options, read our guide on <a href="/blog/incorporation-and-structure">incorporation and structure for agency founders</a>.</p>

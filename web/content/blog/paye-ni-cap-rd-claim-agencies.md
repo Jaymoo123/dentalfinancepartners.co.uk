@@ -37,7 +37,7 @@ keyTakeaways:
 ---
 <p>If your agency has claimed R&D tax credits on subcontractor costs, you might be in for an unwelcome surprise. The PAYE-NI cap on R&D claims restricts the amount of payable tax credit you can receive to the total PAYE and National Insurance your company paid in that period. For agencies that rely heavily on freelancers, contractors, or external developers, this cap can slash a legitimate claim to almost nothing.</p>
 
-<p>I have seen it happen to a 15-person creative agency in Shoreditch. They had spent £180,000 on subcontractor developers building a proprietary analytics platform. Their R&D claim was strong — genuinely qualifying projects. But when HMRC applied the PAYE-NI cap, their payable credit dropped from £47,000 to just £4,200. The rest was lost. They had no idea the cap existed.</p>
+<p>I have seen it happen to a 15-person creative agency in Shoreditch. They had spent £180,000 on subcontractor developers building a proprietary analytics platform. Their R&D claim was strong, genuinely qualifying projects. But when HMRC applied the PAYE-NI cap, their payable credit dropped from £47,000 to just £4,200. The rest was lost. They had no idea the cap existed.</p>
 
 <p>Let me explain exactly how this works, when it applies, and what you can do about it.</p>
 
@@ -52,13 +52,13 @@ keyTakeaways:
 <li>Your company's PAYE payments for the period</li>
 </ul>
 
-<p>The cap applies to the payable element of the credit — the cash you get back from HMRC. If your company is profitable and using the R&D credit to reduce your corporation tax bill, the cap does not apply. That is an important distinction, and it catches a lot of agency founders out.</p>
+<p>The cap applies to the payable element of the credit, the cash you get back from HMRC. If your company is profitable and using the R&D credit to reduce your corporation tax bill, the cap does not apply. That is an important distinction, and it catches a lot of agency founders out.</p>
 
 <p>For the 2025/26 tax year, the SME payable credit rate is 10% of the surrenderable loss (down from 14.5% for pre-April 2024 claims). The cap calculation itself has not changed. You calculate the total PAYE and Class 1 employer NI you actually paid in the period, and that figure sets the maximum payable credit you can receive.</p>
 
 <h2>Why Agencies Get Caught Out</h2>
 
-<p>Agencies have a structural problem with this cap. Most agencies — particularly digital, creative, and web design agencies — operate with a core team of permanent staff and a much larger pool of freelancers and subcontractors. That is a standard agency model. But it creates a mismatch.</p>
+<p>Agencies have a structural problem with this cap. Most agencies, particularly digital, creative, and web design agencies, operate with a core team of permanent staff and a much larger pool of freelancers and subcontractors. That is a standard agency model. But it creates a mismatch.</p>
 
 <p>Your qualifying R&D expenditure includes:</p>
 <ul>
@@ -185,7 +185,7 @@ keyTakeaways:
 <li>Whether the R&D project meets the definition of "advancement in science or technology"</li>
 </ul>
 
-<p>Agencies in particular get challenged on the last point. Building a website using existing frameworks is not R&D. Building a new content personalisation engine that solves a technical problem no one has solved before — that is R&D. The distinction matters.</p>
+<p>Agencies in particular get challenged on the last point. Building a website using existing frameworks is not R&D. Building a new content personalisation engine that solves a technical problem no one has solved before, that is R&D. The distinction matters.</p>
 
 <p>If you are claiming R&D credits as a digital or creative agency, make sure your technical narrative is strong. HMRC has a dedicated R&D unit that reviews claims, and they know the agency sector well. A weak narrative combined with a cap issue is a recipe for a full enquiry.</p>
 

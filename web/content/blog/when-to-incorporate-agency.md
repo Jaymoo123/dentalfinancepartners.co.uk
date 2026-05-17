@@ -43,7 +43,7 @@ keyTakeaways:
 
 <h2>The Default Position: Sole Trader Is Fine for Most Starters</h2>
 
-<p>If you are a freelancer turning over less than £40,000 per year, incorporation is probably premature. The administrative burden of running a limited company — filing annual accounts with Companies House, submitting a Corporation Tax return (CT600), running payroll through RTI, managing a business bank account — outweighs the tax benefits at that level.</p>
+<p>If you are a freelancer turning over less than £40,000 per year, incorporation is probably premature. The administrative burden of running a limited company, filing annual accounts with Companies House, submitting a Corporation Tax return (CT600), running payroll through RTI, managing a business bank account, outweighs the tax benefits at that level.</p>
 
 <p>As a sole trader, your accounting is straightforward. You file a self-assessment tax return (SA100) once per year. Your tax is based on your total profit. No separate company tax return. No payroll software. No dividend paperwork.</p>
 
@@ -53,7 +53,7 @@ keyTakeaways:
 
 <p>The most common trigger for incorporation is crossing the £50,000 profit threshold. Here is why.</p>
 
-<p>As a sole trader, you pay Income Tax and Class 4 National Insurance on your profits. At £50,270 of profit, you hit the higher rate tax band. Every pound above that is taxed at 40% Income Tax plus 2% Class 4 NI — a combined rate of 42%.</p>
+<p>As a sole trader, you pay Income Tax and Class 4 National Insurance on your profits. At £50,270 of profit, you hit the higher rate tax band. Every pound above that is taxed at 40% Income Tax plus 2% Class 4 NI, a combined rate of 42%.</p>
 
 <p>Through a limited company, you can control your income. You take a salary up to the Primary Threshold (£12,570 for 2025/26) and take the rest as dividends. Dividends are taxed at 8.75% for basic rate taxpayers and 33.75% for higher rate taxpayers. But crucially, the company pays Corporation Tax at 19% or 25% on retained profits before those dividends are paid.</p>
 
@@ -70,12 +70,12 @@ Total tax and NI: approximately £23,150</p>
 Company profit: £80,000<br>
 Salary: £12,570 (no tax, no NI for employee or employer up to this threshold)<br>
 Employer NI: £0 (salary is below Secondary Threshold)<br>
-Corporation Tax on remaining £67,430: 19% = £12,811.70 (assuming profits under £50k, marginal relief applies — this is simplified)<br>
+Corporation Tax on remaining £67,430: 19% = £12,811.70 (assuming profits under £50k, marginal relief applies, this is simplified)<br>
 Available for dividends after CT: £54,618.30<br>
 Dividend tax: first £500 tax-free (allowance), then £54,118.30 at 33.75% = £18,264.93<br>
 Total tax: £12,811.70 + £18,264.93 = £31,076.63</p>
 
-<p>Wait — that looks worse for the company route. And it is, in this simplified scenario, if you take every penny out. The real advantage comes from retaining profits in the company and only drawing what you need.</p>
+<p>Wait, that looks worse for the company route. And it is, in this simplified scenario, if you take every penny out. The real advantage comes from retaining profits in the company and only drawing what you need.</p>
 
 <p>If you leave £20,000 in the company, your dividend draw drops to £34,618.30. Your dividend tax falls to approximately £11,677. Your total tax becomes £12,811.70 + £11,677 = £24,488.70. That is still higher than the sole trader figure, but you have £20,000 sitting in the company that you can reinvest or draw in a lower-income year.</p>
 
@@ -85,7 +85,7 @@ Total tax: £12,811.70 + £18,264.93 = £31,076.63</p>
 
 <p>Tax is not the only reason to incorporate. Limited liability is arguably more important.</p>
 
-<p>As a sole trader, you are personally liable for everything. If a client sues you for a botched campaign, a data breach, or a missed deadline that cost them revenue, your personal assets — your house, your savings, your car — are on the line.</p>
+<p>As a sole trader, you are personally liable for everything. If a client sues you for a botched campaign, a data breach, or a missed deadline that cost them revenue, your personal assets, your house, your savings, your car, are on the line.</p>
 
 <p>Once your projects exceed £10,000-£20,000 in value, the risk becomes real. A single claim could wipe you out.</p>
 
@@ -117,7 +117,7 @@ Total tax: £12,811.70 + £18,264.93 = £31,076.63</p>
 
 <h2>The Exit Trigger: When You Want to Sell One Day</h2>
 
-<p>You cannot sell a sole tradership. You can sell the assets, the goodwill, the client list — but you cannot sell the business as a going concern in the same way you can sell a limited company.</p>
+<p>You cannot sell a sole tradership. You can sell the assets, the goodwill, the client list, but you cannot sell the business as a going concern in the same way you can sell a limited company.</p>
 
 <p>If you have any ambition to exit your agency for a lump sum, you need to be incorporated. Business Asset Disposal Relief (BADR) allows you to pay 14% capital gains tax on qualifying disposals, up to a £1 million lifetime limit. To qualify, you must have held at least 5% of the shares and been an officer or employee of the company for at least two years before the disposal.</p>
 
@@ -136,7 +136,7 @@ Total tax: £12,811.70 + £18,264.93 = £31,076.63</p>
 <li><strong>Set up payroll software</strong> if you plan to take a salary. Xero, QuickBooks, and FreeAgent all handle RTI submissions.</li>
 <li><strong>Transfer your client contracts</strong> to the new company. You will need a novation agreement or new contracts with each client.</li>
 <li><strong>Notify HMRC</strong> that your sole tradership has ceased. You file a final self-assessment return covering the period up to incorporation.</li>
-<li><strong>Transfer assets</strong> — equipment, domain names, intellectual property — to the company. This may have tax implications, so speak to your accountant before doing it.</li>
+<li><strong>Transfer assets</strong>, equipment, domain names, intellectual property, to the company. This may have tax implications, so speak to your accountant before doing it.</li>
 </ul>
 
 <p>The process takes between one and four weeks depending on how organised you are. Do not try to do it in a rush. Plan the transition over a quiet period in your business.</p>

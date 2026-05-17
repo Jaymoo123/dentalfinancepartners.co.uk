@@ -48,11 +48,11 @@ keyTakeaways:
 <p>For agency founders, the most relevant free zones include:</p>
 
 <ul>
-<li><strong>Dubai Multi Commodities Centre (DMCC)</strong> — popular for trading and services, including marketing and media agencies. DMCC has over 24,000 registered companies.</li>
-<li><strong>Dubai Internet City (DIC)</strong> — ideal for digital agencies, tech startups, and software development firms.</li>
-<li><strong>Dubai Media City (DMC)</strong> — the natural home for advertising, PR, media, and creative agencies.</li>
-<li><strong>Dubai Design District (d3)</strong> — focused on design, fashion, and creative industries.</li>
-<li><strong>Sharjah Media City (Shams)</strong> — lower cost option, still allows 100% foreign ownership.</li>
+<li><strong>Dubai Multi Commodities Centre (DMCC)</strong>, popular for trading and services, including marketing and media agencies. DMCC has over 24,000 registered companies.</li>
+<li><strong>Dubai Internet City (DIC)</strong>, ideal for digital agencies, tech startups, and software development firms.</li>
+<li><strong>Dubai Media City (DMC)</strong>, the natural home for advertising, PR, media, and creative agencies.</li>
+<li><strong>Dubai Design District (d3)</strong>, focused on design, fashion, and creative industries.</li>
+<li><strong>Sharjah Media City (Shams)</strong>, lower cost option, still allows 100% foreign ownership.</li>
 </ul>
 
 <p>Each free zone issues a specific licence. For an agency, you would typically apply for a <strong>consulting or services licence</strong>. Some free zones have dedicated media or marketing licence categories. The cost varies significantly, from around AED 15,000 (£3,200) per year for a basic licence in Sharjah Media City, up to AED 50,000+ (£10,700+) in DMCC or DMC.</p>

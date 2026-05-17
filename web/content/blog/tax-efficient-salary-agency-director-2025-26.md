@@ -23,7 +23,7 @@ faqs:
 - question: Do I need to register as an employer to pay myself a salary?
   answer: Yes. Even if you are the only employee, you must register with HMRC as an employer, set up a payroll scheme, and submit RTI returns each time you pay yourself. Most accounting software (Xero, QuickBooks, FreeAgent) includes payroll. If you use an accountant, they can handle the RTI submissions for you. Failing to register can lead to penalties.
 - question: What happens if I take a salary of £12,570 but also receive dividends above the basic rate band?
-  answer: Dividends above the basic rate band (£50,270 total income) are taxed at 33.75% instead of 8.75%. If your total drawings push you over £50,270, the tax-efficient salary figure may change. You might consider taking a higher salary to reduce dividend income, because salary saves corporation tax while dividends do not. The trade-off is complex — model it carefully or ask your accountant to run the scenarios.
+  answer: Dividends above the basic rate band (£50,270 total income) are taxed at 33.75% instead of 8.75%. If your total drawings push you over £50,270, the tax-efficient salary figure may change. You might consider taking a higher salary to reduce dividend income, because salary saves corporation tax while dividends do not. The trade-off is complex, model it carefully or ask your accountant to run the scenarios.
 - question: Can I pay myself a salary of £12,570 and also make employer pension contributions?
   answer: Yes. Employer pension contributions are separate from salary. They are deductible for corporation tax, not subject to NI, and do not count as your income. You can pay £12,570 salary plus any amount of employer pension contribution up to the annual allowance (£60,000, with carry forward from previous years). This is a highly tax-efficient way to extract profit from your agency while building retirement savings.
 authorSlug: james-whitfield
@@ -89,7 +89,7 @@ keyTakeaways:
 
 <p>Set your salary to £1,047.50 per month (12 x £1,047.50 = £12,570). Process it through payroll each month. HMRC will collect any tax or NI due through the PAYE system. In your case, assuming no other income and employment allowance claimed, nothing is due.</p>
 
-<p>Your company gets the corporation tax deduction in the period the salary is paid. Make sure the salary is actually paid to you (bank transfer from company to personal account) and recorded correctly in the accounts. A director's loan account entry is not enough — HMRC expects real cash movement.</p>
+<p>Your company gets the corporation tax deduction in the period the salary is paid. Make sure the salary is actually paid to you (bank transfer from company to personal account) and recorded correctly in the accounts. A director's loan account entry is not enough, HMRC expects real cash movement.</p>
 
 <h2>What About Pension Contributions?</h2>
 
@@ -107,14 +107,14 @@ keyTakeaways:
 
 <h2>What If You Are a Sole Director with No Employees?</h2>
 
-<p>If you are the only director and have no other employees, you cannot claim the employment allowance. Your company pays employer NI at 13.8% on the salary above £9,100. On a £12,570 salary, that is £479. In this case, the £9,100 salary (no employer NI) plus dividends up to your required drawings may be slightly better. But the difference is small — about £175 per year as we showed earlier. Many directors prefer the simplicity of £12,570 and accept the £479 employer NI cost.</p>
+<p>If you are the only director and have no other employees, you cannot claim the employment allowance. Your company pays employer NI at 13.8% on the salary above £9,100. On a £12,570 salary, that is £479. In this case, the £9,100 salary (no employer NI) plus dividends up to your required drawings may be slightly better. But the difference is small, about £175 per year as we showed earlier. Many directors prefer the simplicity of £12,570 and accept the £479 employer NI cost.</p>
 
 <p>If your agency grows and you hire staff, you can claim the employment allowance from the point you have at least one employee. Switch to £12,570 at that point.</p>
 
 <h2>The Bigger Picture: Your Agency Structure Matters</h2>
 
-<p>Your salary is just one piece of your overall tax position. The structure of your agency, your plans for exit, and whether you hold property or IP in separate companies all affect the optimal approach. For most agency directors with no other income and a straightforward limited company, £12,570 salary plus dividends is the right answer. But if your circumstances are more complex — multiple directors, a holding company structure, overseas income, or a planned sale within two years — the calculation changes.</p>
+<p>Your salary is just one piece of your overall tax position. The structure of your agency, your plans for exit, and whether you hold property or IP in separate companies all affect the optimal approach. For most agency directors with no other income and a straightforward limited company, £12,570 salary plus dividends is the right answer. But if your circumstances are more complex, multiple directors, a holding company structure, overseas income, or a planned sale within two years, the calculation changes.</p>
 
 <p>If you want to model your specific numbers, <a href="/contact">get in touch with our team</a>. We run these calculations for agency founders every day. Or read more about <a href="/blog/salary-and-dividends">salary and dividend strategies</a> for agency directors.</p>
 
-<p>For a broader view of your agency's finances, including how to set up your payroll and manage director's loan accounts, our <a href="/services">services page</a> covers what we do. And if you are running a <a href="/agencies/digital-agencies">digital agency</a>, <a href="/agencies/creative-agencies">creative agency</a>, or <a href="/agencies/marketing-agencies">marketing agency</a>, the principles are the same — the numbers just scale with your profit.</p>
+<p>For a broader view of your agency's finances, including how to set up your payroll and manage director's loan accounts, our <a href="/services">services page</a> covers what we do. And if you are running a <a href="/agencies/digital-agencies">digital agency</a>, <a href="/agencies/creative-agencies">creative agency</a>, or <a href="/agencies/marketing-agencies">marketing agency</a>, the principles are the same, the numbers just scale with your profit.</p>

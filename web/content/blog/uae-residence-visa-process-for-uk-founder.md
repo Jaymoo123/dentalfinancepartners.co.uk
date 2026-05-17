@@ -59,7 +59,7 @@ keyTakeaways:
 <li>You choose your free zone and business activity (e.g. "digital marketing services", "creative agency", "management consultancy")</li>
 <li>You submit passport copies, a business plan, and sometimes a CV</li>
 <li>You pay the licence fee, which includes registration, visa allocation, and office space</li>
-<li>You receive your trade licence — this is your legal permission to operate in the UAE</li>
+<li>You receive your trade licence, this is your legal permission to operate in the UAE</li>
 </ul>
 
 <p>Once you have the trade licence, you can apply for your residence visa. Do not skip this order. The licence is the foundation.</p>
@@ -110,7 +110,7 @@ keyTakeaways:
 
 <p>Once the stamp is in your passport, you are officially a UAE resident. Your visa is valid for 2 years (for free zone licences) or 3 years (for mainland licences). After that, you renew.</p>
 
-<p>At this point, you can also sponsor dependents — your spouse and children. Each dependent requires a separate application, medical, and Emirates ID. The process is the same, but the visa fee is lower for dependents.</p>
+<p>At this point, you can also sponsor dependents, your spouse and children. Each dependent requires a separate application, medical, and Emirates ID. The process is the same, but the visa fee is lower for dependents.</p>
 
 <h2>Timeline: How Long Does the Whole Process Take?</h2>
 

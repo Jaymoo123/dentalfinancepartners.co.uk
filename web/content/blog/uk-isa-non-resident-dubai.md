@@ -23,7 +23,7 @@ faqs:
   - question: "Do I pay tax on my ISA income in Dubai?"
     answer: "In practice, for most agency founders holding passive investments like global equity funds, the UAE does not tax the income or gains inside your ISA. The UAE has no personal income tax or capital gains tax. However, if you're actively trading inside your ISA (frequent buying and selling), the UAE could view that as a business activity and charge corporate tax at 9%."
   - question: "Can I pay into my ISA from Dubai?"
-    answer: "No. The annual ISA allowance (£20,000 for 2025/26) is only available to UK residents. If you pay into your ISA while non-resident, HMRC can invalidate the entire ISA and charge back taxes and penalties. The only exception is if you leave the UK partway through a tax year — you can use your full allowance for that year before you go."
+    answer: "No. The annual ISA allowance (£20,000 for 2025/26) is only available to UK residents. If you pay into your ISA while non-resident, HMRC can invalidate the entire ISA and charge back taxes and penalties. The only exception is if you leave the UK partway through a tax year, you can use your full allowance for that year before you go."
   - question: "What happens to my ISA if I return to the UK?"
     answer: "Your ISA's tax-free status resumes immediately when you become UK resident again. You can start making new subscriptions from the tax year of your return. There's no penalty for the period you were non-resident. The ISA simply sits dormant in terms of new contributions, and the investments continue growing."
 ---
@@ -38,7 +38,7 @@ faqs:
 
 <h2>What an ISA Actually Is (and Isn't)</h2>
 
-<p>An ISA is not a product. It's a tax wrapper. The underlying investments inside it — cash, shares, funds, ETFs — are what you actually own. The wrapper simply shields those investments from UK tax while you're a UK resident.</p>
+<p>An ISA is not a product. It's a tax wrapper. The underlying investments inside it, cash, shares, funds, ETFs, are what you actually own. The wrapper simply shields those investments from UK tax while you're a UK resident.</p>
 
 <p>When you're a UK resident, that means no tax on interest, no tax on dividends, and no capital gains tax when you sell within the ISA. It's a powerful tool.</p>
 
@@ -48,7 +48,7 @@ faqs:
 <ul>
 <li>Your ISA account stays open. You don't have to close it.</li>
 <li>You keep your existing investments inside the wrapper.</li>
-<li>You can still trade within the ISA — buy and sell shares, switch funds, hold cash.</li>
+<li>You can still trade within the ISA, buy and sell shares, switch funds, hold cash.</li>
 <li>If you ever return to the UK as a resident, the tax-free status resumes.</li>
 </ul>
 
@@ -66,7 +66,7 @@ faqs:
 
 <p>But there's a nuance. The UAE does have a corporate tax regime now (9% from June 2023). If you're running a business or trading activity through a personal account, that could theoretically apply. For a standard ISA holding passive investments like global equity funds or UK gilts, it almost certainly doesn't.</p>
 
-<p>However, if you're actively trading inside your ISA — day trading, frequent buying and selling — the UAE tax authority could view that as a business activity. The risk is low for most agency founders, but it's worth knowing.</p>
+<p>However, if you're actively trading inside your ISA, day trading, frequent buying and selling, the UAE tax authority could view that as a business activity. The risk is low for most agency founders, but it's worth knowing.</p>
 
 <p>The key point: for a typical agency founder holding a diversified portfolio inside their ISA, the UAE will not tax the income or gains. Your ISA effectively becomes tax-free in practice, even though the UK wrapper no longer provides protection.</p>
 
@@ -105,7 +105,7 @@ faqs:
 
 <h2>What About Capital Gains Tax on Your ISA?</h2>
 
-<p>Inside the ISA wrapper, you don't pay UK capital gains tax on disposals. That remains true even when you're non-resident — the UK simply doesn't tax gains within an ISA for anyone.</p>
+<p>Inside the ISA wrapper, you don't pay UK capital gains tax on disposals. That remains true even when you're non-resident, the UK simply doesn't tax gains within an ISA for anyone.</p>
 
 <p>But if you sell investments inside your ISA while living in Dubai, and those gains are significant, the UAE could theoretically tax them if they view your trading as a business. For most agency founders holding long-term investments, this is not a concern. But if you're an active trader, speak to a UAE tax advisor.</p>
 
@@ -145,7 +145,7 @@ faqs:
 
 <p>The biggest risk is doing nothing and assuming everything stays the same. It doesn't. But with a little planning, your ISA can remain a valuable part of your long-term wealth strategy, even from Dubai.</p>
 
-<p>If you're moving your agency to Dubai and want to review your full financial picture — including your ISA, your company structure, and your personal tax position — <a href="/contact">get in touch</a>. Our team works with agency founders in both the UK and UAE, and we understand the cross-border nuances.</p>
+<p>If you're moving your agency to Dubai and want to review your full financial picture, including your ISA, your company structure, and your personal tax position, <a href="/contact">get in touch</a>. Our team works with agency founders in both the UK and UAE, and we understand the cross-border nuances.</p>
 
 <h2>Related articles in International Agencies</h2>
 <ul>

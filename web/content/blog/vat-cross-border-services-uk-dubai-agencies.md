@@ -73,7 +73,7 @@ faqs:
 <li>Hire of goods (e.g. leasing camera equipment in the UK)</li>
 </ul>
 
-<p>For most agency services — consulting, strategy, creative work, digital marketing, PR — the standard B2B rule applies. Place of supply is where the customer belongs.</p>
+<p>For most agency services, consulting, strategy, creative work, digital marketing, PR, the standard B2B rule applies. Place of supply is where the customer belongs.</p>
 
 <h2>When Is It Outside Scope?</h2>
 
@@ -121,7 +121,7 @@ faqs:
 
 <h2>What About Goods?</h2>
 
-<p>This article focuses on services, because that is what agencies sell. But if you move physical goods between your UK and Dubai offices — marketing materials, laptops, branded merchandise — different rules apply.</p>
+<p>This article focuses on services, because that is what agencies sell. But if you move physical goods between your UK and Dubai offices, marketing materials, laptops, branded merchandise, different rules apply.</p>
 
 <p>Goods moved from the UK to Dubai are exports. Zero-rated for UK VAT if you hold evidence of export (e.g. airway bill, customs declaration). Goods imported into Dubai are subject to UAE import VAT at 5%, which your Dubai entity can reclaim if it is VAT-registered.</p>
 

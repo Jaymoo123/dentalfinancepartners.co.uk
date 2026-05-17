@@ -39,7 +39,7 @@ keyTakeaways:
 
 <p>The UK-UAE double tax treaty is one of the main reasons agency founders relocate to Dubai. Zero per cent personal income tax. Zero per cent corporation tax (for most activities). No capital gains tax. It sounds like a clean break from the UK tax system.</p>
 
-<p>But here is the part that gets missed. If you keep a home in the UK and work from it — even for a few weeks a year — you could create a UK <strong>permanent establishment</strong> (PE) of your Dubai company. And if you have a UK PE, HMRC can tax the profits attributable to it at 25% corporation tax.</p>
+<p>But here is the part that gets missed. If you keep a home in the UK and work from it, even for a few weeks a year, you could create a UK <strong>permanent establishment</strong> (PE) of your Dubai company. And if you have a UK PE, HMRC can tax the profits attributable to it at 25% corporation tax.</p>
 
 <p>I have seen agency founders lose sleep over this. Not because they were hiding anything. Because nobody explained how the <strong>uk uae double tax treaty permanent establishment</strong> clause actually works in practice.</p>
 
@@ -59,7 +59,7 @@ keyTakeaways:
 
 <p>For an agency founder, the relevant one is usually "a place of management" or "an office." Your UK home office can qualify as either.</p>
 
-<p>The treaty says a PE exists if your company has "a fixed place of business" in the UK through which its business is wholly or partly carried on. That does not mean you need a separate rented office. Your spare bedroom with a desk, a laptop, and a reliable WiFi connection is enough — if you use it regularly for substantive work.</p>
+<p>The treaty says a PE exists if your company has "a fixed place of business" in the UK through which its business is wholly or partly carried on. That does not mean you need a separate rented office. Your spare bedroom with a desk, a laptop, and a reliable WiFi connection is enough, if you use it regularly for substantive work.</p>
 
 <p>The key phrase is <strong>regularly and substantially</strong>. A one-off week working from your parents' house in Surrey while visiting family is unlikely to trigger a PE. But if you spend two months a year in your UK home running the agency, taking client calls, managing your team, and signing contracts, you have a problem.</p>
 
@@ -158,7 +158,7 @@ keyTakeaways:
 
 <p>The UK-UAE double tax treaty is generous. But it is not a free pass. The permanent establishment clause exists precisely to stop people from claiming tax residence in one country while running their business from another.</p>
 
-<p>If you run a Dubai agency and keep a UK home, you need to take this seriously. The risk is real. The cost of getting it wrong is high. And the solution is not complicated — it just requires honest planning.</p>
+<p>If you run a Dubai agency and keep a UK home, you need to take this seriously. The risk is real. The cost of getting it wrong is high. And the solution is not complicated, it just requires honest planning.</p>
 
 <p>If your agency operates across the UK and UAE, <a href="/contact">get in touch</a>. We will walk through your specific situation and tell you where the risk actually sits.</p>
 

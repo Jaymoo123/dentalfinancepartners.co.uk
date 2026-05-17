@@ -54,7 +54,7 @@ keyTakeaways:
 
 <p>If you are contributing £40,000 to a pension from your company, you save 19% to 25% corporation tax on that £40,000. That is £7,600 to £10,000 in tax saved immediately. Compare that to taking the same £40,000 as dividends. You would pay corporation tax on the profit first (19% to 25%), then dividend tax on what is left (8.75% to 33.75%). The total tax on £40,000 taken as dividends could be £10,000 to £16,000 depending on your tax band.</p>
 
-<p>The pension route saves you that tax. But it also means you have less cash in the company to distribute as dividends. So the question becomes: how do you balance the three levers — salary, dividends, and pension — to maximise your total position?</p>
+<p>The pension route saves you that tax. But it also means you have less cash in the company to distribute as dividends. So the question becomes: how do you balance the three levers, salary, dividends, and pension, to maximise your total position?</p>
 
 <h2>The Three-Lever Model: Salary, Dividends, Pension</h2>
 
@@ -154,7 +154,7 @@ keyTakeaways:
 
 <p><strong>Step 5: Monitor your directors' loan account.</strong> If you take dividends before the company has sufficient retained profits, you create a directors' loan account debit. That can trigger a section 455 tax charge at 33.75% if not repaid within nine months of the year end. Only declare dividends from distributable reserves.</p>
 
-<p>If your agency structure is more complex — perhaps you have a holding company or multiple trading subsidiaries — the strategy changes. <a href="/services">Speak to our ICAEW qualified team</a> for a structure-specific review.</p>
+<p>If your agency structure is more complex, perhaps you have a holding company or multiple trading subsidiaries, the strategy changes. <a href="/services">Speak to our ICAEW qualified team</a> for a structure-specific review.</p>
 
 <h2>Common Mistakes Agency Founders Make</h2>
 
@@ -168,7 +168,7 @@ keyTakeaways:
 
 <h2>When the Standard Advice Does Not Apply</h2>
 
-<p>The salary dividend split agency founders typically use works for most situations. But if you have specific goals — a large pension contribution,
+<p>The salary dividend split agency founders typically use works for most situations. But if you have specific goals, a large pension contribution,
 
 <h2>Related articles in Salary and Dividends</h2>
 <ul>

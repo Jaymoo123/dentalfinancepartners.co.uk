@@ -32,7 +32,7 @@ keyTakeaways:
 - A single remote employee working from home overseas can create a permanent establishment for your UK agency if they have contract authority and work for more than 183 days in a 12-month period.
 - If a permanent establishment is triggered, the overseas tax authority can tax the profits attributable to that employee's work, plus interest and penalties.
 - 'Three triggers create PE risk: the employee works exclusively for your agency, has authority to bind you contractually, and the activity lasts over six months.'
-- Your agency does not need a registered office or legal entity abroad to have a permanent establishment—a co-working space or home office can suffice.
+- Your agency does not need a registered office or legal entity abroad to have a permanent establishment-a co-working space or home office can suffice.
 - Double tax treaties with countries like Spain, Portugal, and the UAE allow foreign tax authorities to argue a PE exists, even without targeting their local market.
 ---
 <p>You hired a brilliant developer based in Barcelona. Or a part-time marketing manager living in Dubai. Or a senior strategist who moved to Portugal during the pandemic and never came back. It felt like a win for the agency. Lower cost base, wider talent pool, happier team.</p>
@@ -59,13 +59,13 @@ keyTakeaways:
 
 <p>Eighteen months later, the Portuguese tax authority sent a letter. They argued that the co-working space was a fixed place of business, the director had authority to negotiate contracts (she did), and therefore the agency had a permanent establishment in Portugal. They wanted corporation tax on the profits attributable to her work. Plus interest. Plus penalties.</p>
 
-<p>That is the permanent establishment risk in action. And it is not limited to Portugal. Spain, France, Germany, the UAE, Thailand, Australia — every country with a double tax treaty with the UK can make this argument.</p>
+<p>That is the permanent establishment risk in action. And it is not limited to Portugal. Spain, France, Germany, the UAE, Thailand, Australia, every country with a double tax treaty with the UK can make this argument.</p>
 
 <p>Three specific triggers create PE risk for remote overseas staff:</p>
 
 <ul>
 <li><strong>Dependence:</strong> The employee works exclusively or primarily for your agency. They are not an independent contractor serving multiple clients.</li>
-<li><strong>Authority:</strong> The employee can bind your agency contractually. Signing contracts, agreeing fees, negotiating scope changes — all of these create PE exposure.</li>
+<li><strong>Authority:</strong> The employee can bind your agency contractually. Signing contracts, agreeing fees, negotiating scope changes, all of these create PE exposure.</li>
 <li><strong>Duration:</strong> Most treaties say a PE is created if the activity lasts more than six months (183 days) in a 12-month period. Some treaties use 12 months. Check the specific treaty.</li>
 </ul>
 

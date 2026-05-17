@@ -21,7 +21,7 @@ faqs:
 - question: Do I need to register for VAT if I only sell digital products to customers outside the UK?
   answer: If your only digital product sales are to customers outside the UK (including EU and rest of world), and your UK taxable turnover (from other sources) is below £90,000, you do not need to register for UK VAT. However, if you sell to EU consumers (B2C), you must register for VAT MOSS to charge their country's VAT rate. You can do this without a full UK VAT registration if your UK turnover is below the threshold. Most agencies find it simpler to register for UK VAT anyway, especially if they have UK client services.
 - question: What happens if I accidentally charge UK VAT to an EU customer?
-  answer: If you charge UK VAT to an EU consumer, you have charged the wrong rate. You must account for that VAT to HMRC on your UK VAT return, but you also owe the correct EU VAT through MOSS. You effectively pay twice. You can try to refund the customer and reissue the invoice, but this is messy. Prevention is better — set up your e-commerce platform correctly from the start. If you discover the error, speak to your accountant immediately. HMRC may allow you to correct it without penalty if you act promptly.
+  answer: If you charge UK VAT to an EU consumer, you have charged the wrong rate. You must account for that VAT to HMRC on your UK VAT return, but you also owe the correct EU VAT through MOSS. You effectively pay twice. You can try to refund the customer and reissue the invoice, but this is messy. Prevention is better, set up your e-commerce platform correctly from the start. If you discover the error, speak to your accountant immediately. HMRC may allow you to correct it without penalty if you act promptly.
 - question: Can I use the Flat Rate VAT Scheme for digital product sales?
   answer: 'Yes, you can use the Flat Rate Scheme for your overall VAT accounting, including digital product sales. However, the flat rate percentage applies to your total turnover, including digital products. The relevant flat rate category depends on your main business activity. For most agencies, this is "management consultancy" or "information technology." But be careful: if you are a limited cost trader (your VAT-inclusive spend on relevant goods is less than 2% of turnover or less than £1,000 per year), you must use the 16.5% flat rate. Most digital product sellers fall into this category because they have low physical goods costs.'
 - question: How do I handle VAT on digital products if my agency is based in the UAE but sells to UK customers?
@@ -35,7 +35,7 @@ keyTakeaways:
 - For EU B2B digital product sales, the customer accounts for VAT under the reverse charge; you do not charge UK VAT.
 - Digital products include automated supplies like templates and courses, not bespoke client services or consulting.
 ---
-<p>If your agency has started selling digital products through your website — templates, online courses, software licences, downloadable guides, stock assets — the VAT rules shift significantly from what you apply to your client services. Get this wrong and you could face an unexpected HMRC bill for VAT you should have charged but didn't. Or you could be overcharging customers who should be zero-rated.</p>
+<p>If your agency has started selling digital products through your website, templates, online courses, software licences, downloadable guides, stock assets, the VAT rules shift significantly from what you apply to your client services. Get this wrong and you could face an unexpected HMRC bill for VAT you should have charged but didn't. Or you could be overcharging customers who should be zero-rated.</p>
 
 <p>The core question is simple: where is your customer, and what exactly are you selling? The answer determines your VAT treatment. Let's work through it with real agency examples.</p>
 
@@ -63,12 +63,12 @@ keyTakeaways:
 <p>There are three scenarios:</p>
 
 <h3>1. UK Customer (B2C)</h3>
-<p>If your customer is in the UK and is a private individual (not a VAT-registered business), you charge UK VAT at the standard rate (20%). This applies whether you are VAT-registered or not — though you can only charge VAT if you are registered. If you are not VAT-registered and your digital product sales exceed £90,000, you must register and start charging VAT.</p>
+<p>If your customer is in the UK and is a private individual (not a VAT-registered business), you charge UK VAT at the standard rate (20%). This applies whether you are VAT-registered or not, though you can only charge VAT if you are registered. If you are not VAT-registered and your digital product sales exceed £90,000, you must register and start charging VAT.</p>
 
 <p><strong>Example:</strong> A Brighton-based creative agency sells a social media content calendar template for £29. A freelance graphic designer in Manchester buys it. The agency charges £29 plus £5.80 VAT = £34.80 total.</p>
 
 <h3>2. UK Customer (B2B)</h3>
-<p>If your customer is a VAT-registered business in the UK, the same rule applies — charge 20% UK VAT. The customer can reclaim it through their VAT return. This is straightforward.</p>
+<p>If your customer is a VAT-registered business in the UK, the same rule applies, charge 20% UK VAT. The customer can reclaim it through their VAT return. This is straightforward.</p>
 
 <h3>3. EU Customer (B2C)</h3>
 <p>Here is where it gets interesting. If you sell a digital product to a private individual in France, Germany, Spain, or any other EU country, you must charge VAT at <strong>their country's rate</strong>, not the UK rate. You cannot charge UK VAT on these sales.</p>
@@ -78,7 +78,7 @@ keyTakeaways:
 <p><strong>Example:</strong> A Manchester-based digital agency sells a "How to Build a WordPress Site" course for £197. A customer in Berlin buys it. The agency must charge German VAT at 19% (£37.43), not UK VAT at 20%. They report this through their MOSS return.</p>
 
 <h3>4. EU Customer (B2B)</h3>
-<p>If your customer is a VAT-registered business in the EU, the rules change again. You do not charge VAT. Instead, the customer accounts for the VAT themselves under the reverse charge mechanism. You issue an invoice showing "reverse charge — VAT to be accounted for by the customer." You do not register for MOSS for these sales.</p>
+<p>If your customer is a VAT-registered business in the EU, the rules change again. You do not charge VAT. Instead, the customer accounts for the VAT themselves under the reverse charge mechanism. You issue an invoice showing "reverse charge, VAT to be accounted for by the customer." You do not register for MOSS for these sales.</p>
 
 <p>To confirm the customer's VAT status, you need their valid EU VAT number. You can check this on the EU VIES system before completing the sale.</p>
 
@@ -90,11 +90,11 @@ keyTakeaways:
 <p>Let's say you run a 12-person web design agency based in Bristol. You decide to sell a package of 50 responsive email templates through your website for £147 each. In a given quarter, you sell:</p>
 
 <ul>
-<li>30 templates to UK private individuals — charge 20% UK VAT</li>
-<li>5 templates to UK VAT-registered businesses — charge 20% UK VAT</li>
-<li>8 templates to private individuals in the EU (2 in France, 3 in Germany, 1 in Spain, 2 in Netherlands) — charge each country's VAT rate via MOSS</li>
-<li>3 templates to a VAT-registered German agency — no VAT, reverse charge</li>
-<li>4 templates to customers in the USA and Australia — no VAT, outside scope</li>
+<li>30 templates to UK private individuals, charge 20% UK VAT</li>
+<li>5 templates to UK VAT-registered businesses, charge 20% UK VAT</li>
+<li>8 templates to private individuals in the EU (2 in France, 3 in Germany, 1 in Spain, 2 in Netherlands), charge each country's VAT rate via MOSS</li>
+<li>3 templates to a VAT-registered German agency, no VAT, reverse charge</li>
+<li>4 templates to customers in the USA and Australia, no VAT, outside scope</li>
 </ul>
 
 <p>Your VAT treatment varies for each sale. Your accounting system needs to handle this correctly at the point of sale. This is not something you can sort out at the end of the quarter.</p>
@@ -112,7 +112,7 @@ keyTakeaways:
 <p>If you sell digital products to EU consumers (B2C), you must register for VAT MOSS. Here is what that involves:</p>
 
 <ul>
-<li>Register through your HMRC online account — you select "VAT MOSS" as the scheme</li>
+<li>Register through your HMRC online account, you select "VAT MOSS" as the scheme</li>
 <li>You submit one quarterly return covering all EU B2C digital sales</li>
 <li>You pay the VAT at each customer's country rate</li>
 <li>HMRC distributes the VAT to the relevant EU member states</li>
@@ -168,7 +168,7 @@ keyTakeaways:
 
 <h2>What to Do Next</h2>
 
-<p>If your agency sells digital products through your website, start by mapping out where your customers are. Pull a report of your last 12 months of digital product sales by country. If you have any EU B2C sales, you likely need to register for MOSS. If you have none, the rules are simpler — just UK VAT on UK sales and nothing on rest-of-world sales.</p>
+<p>If your agency sells digital products through your website, start by mapping out where your customers are. Pull a report of your last 12 months of digital product sales by country. If you have any EU B2C sales, you likely need to register for MOSS. If you have none, the rules are simpler, just UK VAT on UK sales and nothing on rest-of-world sales.</p>
 
 <p>Review your e-commerce platform's tax settings. Make sure it is collecting customer location evidence. Test a purchase yourself to see what the customer sees.</p>
 

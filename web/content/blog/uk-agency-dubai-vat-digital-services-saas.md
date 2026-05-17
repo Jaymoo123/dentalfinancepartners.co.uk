@@ -75,7 +75,7 @@ faqs:
 
 <p>For B2B digital services, the reverse charge works differently. Your UAE business customer accounts for the VAT themselves on their own return. You issue an invoice without UAE VAT, showing the reverse charge applies. Your customer then self-assesses the 5% VAT and can recover it as input tax if they're fully taxable.</p>
 
-<p>This distinction matters because if you're selling SaaS to other UAE businesses, you don't need to register for UAE VAT yourself — your customer handles it. But if you're selling to consumers, you do need to register.</p>
+<p>This distinction matters because if you're selling SaaS to other UAE businesses, you don't need to register for UAE VAT yourself, your customer handles it. But if you're selling to consumers, you do need to register.</p>
 
 <h2>UK VAT Still Applies to Your UK Customers</h2>
 
@@ -92,7 +92,7 @@ faqs:
 <li>You can recover UK input VAT on costs like UK hosting, software, or professional fees</li>
 </ul>
 
-<p>If your UK turnover is below £90,000, you can choose not to register. But many agency founders find they need to register anyway to recover VAT on UK costs. A typical Dubai-based agency might still spend £15,000-£30,000 per year on UK hosting, SaaS tools, and accountancy fees — all of which carry UK VAT that you can't recover without a registration.</p>
+<p>If your UK turnover is below £90,000, you can choose not to register. But many agency founders find they need to register anyway to recover VAT on UK costs. A typical Dubai-based agency might still spend £15,000-£30,000 per year on UK hosting, SaaS tools, and accountancy fees, all of which carry UK VAT that you can't recover without a registration.</p>
 
 <h2>A Worked Example: The SaaS Agency</h2>
 

@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/a-close-up-of-a-handshake-7693159/
   source: Pexels
 h1: How to Structure Retainer Contracts to Avoid HMRC Reclassification as Employment
-summary: HMRC can look at your retainer contracts with clients and argue your staff are actually their employees. This guide explains the specific contract clauses, working practices, and financial arrangements that trigger reclassification — and how to structure your retainers to avoid it.
+summary: HMRC can look at your retainer contracts with clients and argue your staff are actually their employees. This guide explains the specific contract clauses, working practices, and financial arrangements that trigger reclassification, and how to structure your retainers to avoid it.
 schema: ''
 faqs:
 - question: Can HMRC really reclassify my agency's retainer staff as employees of my client?
@@ -35,7 +35,7 @@ keyTakeaways:
 - The liability for unpaid PAYE and National Insurance falls on your agency, not the client, if HMRC reclassifies retainer staff as employees.
 - HMRC applies the same control, substitution, and mutuality of obligation tests used for IR35 to retainer-based agency arrangements.
 ---
-<p>Most agency founders worry about IR35 when they hire contractors. That is the obvious risk. But there is a quieter, more dangerous problem that hardly anyone talks about: HMRC reclassifying your retainer contracts as employment arrangements — for your own staff.</p>
+<p>Most agency founders worry about IR35 when they hire contractors. That is the obvious risk. But there is a quieter, more dangerous problem that hardly anyone talks about: HMRC reclassifying your retainer contracts as employment arrangements, for your own staff.</p>
 
 <p>Here is how it works. You sign a long-term retainer with a client. That client expects your senior account manager to be available every Tuesday and Thursday, on-site at their offices. They direct the work. They set the deadlines. They review the output. After twelve months, HMRC looks at that arrangement and says: that person is not self-employed. They are an employee of the client. And you, the agency, are the employer who failed to operate PAYE and National Insurance.</p>
 
@@ -47,11 +47,11 @@ keyTakeaways:
 
 <h2>The Three Tests HMRC Applies to Retainer Staff</h2>
 
-<p>HMRC uses the same three common law tests for employment status that apply to IR35. But the context is different. With IR35, the question is whether a contractor is really an employee of the end client. With retainer reclassification, the question is whether your agency employee is really an employee of <em>your client</em> — and whether you, as the agency, are acting as a front.</p>
+<p>HMRC uses the same three common law tests for employment status that apply to IR35. But the context is different. With IR35, the question is whether a contractor is really an employee of the end client. With retainer reclassification, the question is whether your agency employee is really an employee of <em>your client</em>, and whether you, as the agency, are acting as a front.</p>
 
 <h3>Control</h3>
 
-<p>Control is the most important factor. If the client directs <em>how</em> your staff do their work — not just <em>what</em> they produce — that points toward employment.</p>
+<p>Control is the most important factor. If the client directs <em>how</em> your staff do their work, not just <em>what</em> they produce, that points toward employment.</p>
 
 <p>Example: Your creative agency places a designer on a retainer with a corporate client. The client tells the designer which software to use, what time to start, which internal meetings to attend, and how to format the files. That is control. Your designer is now behaving like an employee of the client.</p>
 
@@ -61,7 +61,7 @@ keyTakeaways:
 
 <p>If the retainer contract requires a specific named individual to do the work, and that person cannot send a replacement, HMRC sees that as employment. The client is hiring that person, not buying a service from your agency.</p>
 
-<p>Most agency retainer contracts name the team members. That is fine — clients want to know who they are working with. But the contract must also give your agency the right to substitute that person if necessary. You do not have to exercise it. You just need the right to do so.</p>
+<p>Most agency retainer contracts name the team members. That is fine, clients want to know who they are working with. But the contract must also give your agency the right to substitute that person if necessary. You do not have to exercise it. You just need the right to do so.</p>
 
 <p>If your contract says "Sarah will be the primary contact" without a substitution clause, HMRC can argue Sarah is the client's employee. If it says "Sarah will be the primary contact, but the agency reserves the right to provide a suitably qualified replacement at any time," you have a much stronger case.</p>
 
@@ -69,7 +69,7 @@ keyTakeaways:
 
 <p>This is the clunkiest legal phrase in employment status, but it matters. Mutuality of obligation means the client is obliged to offer work, and your staff member is obliged to accept it. In a genuine employment relationship, the employer must provide work and the employee must do it.</p>
 
-<p>On a retainer, you are selling a block of time or a defined set of deliverables. The client pays for that block whether they use it or not. Your staff are not obliged to accept additional work outside the retainer scope. That lack of ongoing obligation helps your case — but only if your contract and working practices reflect it.</p>
+<p>On a retainer, you are selling a block of time or a defined set of deliverables. The client pays for that block whether they use it or not. Your staff are not obliged to accept additional work outside the retainer scope. That lack of ongoing obligation helps your case, but only if your contract and working practices reflect it.</p>
 
 <p>If your retainer says "up to 20 hours per month" but the client regularly asks for 30 hours, and your staff always say yes, you have created mutuality of obligation in practice. The contract no longer reflects reality.</p>
 
@@ -81,7 +81,7 @@ keyTakeaways:
 
 <p>That is the drift. It happens gradually, and most agency founders do not notice it until HMRC sends a letter.</p>
 
-<p>The risk is highest for <a href="/agencies/creative-agencies">creative agencies</a>, <a href="/agencies/digital-agencies">digital agencies</a>, and <a href="/agencies/pr-agencies">PR agencies</a> where staff work closely with client marketing teams. These roles involve ongoing collaboration, shared tools, and regular feedback loops — all factors that look like employment to an HMRC inspector.</p>
+<p>The risk is highest for <a href="/agencies/creative-agencies">creative agencies</a>, <a href="/agencies/digital-agencies">digital agencies</a>, and <a href="/agencies/pr-agencies">PR agencies</a> where staff work closely with client marketing teams. These roles involve ongoing collaboration, shared tools, and regular feedback loops, all factors that look like employment to an HMRC inspector.</p>
 
 <h2>How to Structure Retainer Contracts to Reduce the Risk</h2>
 
@@ -151,7 +151,7 @@ Talk to the staff member on the retainer. Ask them: who sets your deadlines? Who
 
 <p>For a retainer that paid £60,000 over two years, the total liability could be £25,000-£30,000 including interest and penalties. If you have five retainers with the same issue, you are looking at £125,000-£150,000.</p>
 
-<p>And that is just the tax. If the client has provided benefits — a company car, a phone, access to a gym — those become taxable benefits too. The P11D paperwork alone is a headache.</p>
+<p>And that is just the tax. If the client has provided benefits, a company car, a phone, access to a gym, those become taxable benefits too. The P11D paperwork alone is a headache.</p>
 
 <h2>When to Get Professional Advice</h2>
 

@@ -82,13 +82,13 @@ keyTakeaways:
 
 <ul>
 <li><strong>Structural walls and floors:</strong> Load-bearing walls, concrete floors, roof structure</li>
-<li><strong>Main building shell:</strong> The basic fabric of the building — brickwork, windows, doors (unless they’re specialist)</li>
+<li><strong>Main building shell:</strong> The basic fabric of the building, brickwork, windows, doors (unless they’re specialist)</li>
 <li><strong>External works:</strong> Landscaping, car parks, paths (unless directly used in the trade)</li>
 <li><strong>Decorative items:</strong> Free-standing artwork, plants, ornaments (but integrated lighting for display purposes may qualify)</li>
 <li><strong>General repairs and decoration:</strong> Painting, plastering, re-carpeting like-for-like (these are revenue expenses, not capital)</li>
 </ul>
 
-<p>Here’s where it gets tricky. If you replace an old carpet with a new one of similar quality, that’s likely a repair — deductible as a revenue expense in full. If you upgrade the carpet as part of a full fit-out, it’s capital. The distinction matters.</p>
+<p>Here’s where it gets tricky. If you replace an old carpet with a new one of similar quality, that’s likely a repair, deductible as a revenue expense in full. If you upgrade the carpet as part of a full fit-out, it’s capital. The distinction matters.</p>
 
 <h2>A Real Example: 12-Person Digital Agency Fit-Out</h2>
 
@@ -104,9 +104,9 @@ keyTakeaways:
 <tr><td>Kitchenette with units and appliances</td><td>£5,100</td><td>Yes</td></tr>
 <tr><td>Carpet and vinyl flooring</td><td>£3,800</td><td>Yes</td></tr>
 <tr><td>Blinds and curtains</td><td>£1,200</td><td>Yes</td></tr>
-<tr><td>Painting and decoration</td><td>£3,500</td><td>No — revenue expense</td></tr>
-<tr><td>Free-standing sofas and coffee tables</td><td>£4,000</td><td>Yes — separate plant items</td></tr>
-<tr><td>Structural alterations to wall</td><td>£2,000</td><td>No — building fabric</td></tr>
+<tr><td>Painting and decoration</td><td>£3,500</td><td>No, revenue expense</td></tr>
+<tr><td>Free-standing sofas and coffee tables</td><td>£4,000</td><td>Yes, separate plant items</td></tr>
+<tr><td>Structural alterations to wall</td><td>£2,000</td><td>No, building fabric</td></tr>
 <tr><td>External signage</td><td>£2,000</td><td>Yes</td></tr>
 <tr><td><strong>Total</strong></td><td><strong>£63,400</strong></td><td></td></tr>
 </table>
@@ -123,7 +123,7 @@ keyTakeaways:
 
 <h3>Step 1: Get an Itemised Invoice From Your Contractor</h3>
 
-<p>Before you pay the final bill, ask your fit-out contractor for a fully itemised breakdown. Not just “office fit-out — £48,000”. You need line items showing the cost of each element: partitions, electrics, lighting, flooring, joinery, decoration.</p>
+<p>Before you pay the final bill, ask your fit-out contractor for a fully itemised breakdown. Not just “office fit-out, £48,000”. You need line items showing the cost of each element: partitions, electrics, lighting, flooring, joinery, decoration.</p>
 
 <p>If the contractor can’t or won’t provide this, you’ll need a quantity surveyor or a capital allowances specialist to apportion the costs. That costs money, but it’s often worth it on fit-outs over £50,000.</p>
 
@@ -132,8 +132,8 @@ keyTakeaways:
 <p>Go through the itemised list and split costs into three buckets:</p>
 
 <ul>
-<li><strong>Capital — plant and machinery:</strong> Claim via AIA in the year</li>
-<li><strong>Capital — building fabric:</strong> Claim via SBA at 3% per year (if you own the building)</li>
+<li><strong>Capital, plant and machinery:</strong> Claim via AIA in the year</li>
+<li><strong>Capital, building fabric:</strong> Claim via SBA at 3% per year (if you own the building)</li>
 <li><strong>Revenue:</strong> Deduct in full as a trading expense (decoration, repairs, consumables)</li>
 </ul>
 
@@ -170,7 +170,7 @@ keyTakeaways:
 <ul>
 <li><strong>Claiming everything as a repair:</strong> If you’re doing a full fit-out, it’s capital, not a repair. Claiming it as a revenue expense works in the year, but you lose the ability to claim on specific assets if HMRC challenges it.</li>
 <li><strong>Not separating decoration from fixtures:</strong> Painting and plastering are revenue. Everything else is capital. Mixing them up invites HMRC questions.</li>
-<li><strong>Forgetting the small stuff:</strong> Blinds, signage, kitchen appliances, fire extinguishers — they all qualify. Don’t leave them off your list.</li>
+<li><strong>Forgetting the small stuff:</strong> Blinds, signage, kitchen appliances, fire extinguishers, they all qualify. Don’t leave them off your list.</li>
 <li><strong>Assuming your contractor’s invoice is HMRC-ready:</strong> Most builders invoice in lump sums. You need to do the breakdown yourself or pay someone to do it.</li>
 <li><strong>Missing the deadline:</strong> AIA must be claimed in the year of expenditure. You can amend a return within 12 months of the filing date, but after that, the window closes.</li>
 </ul>
@@ -185,7 +185,7 @@ keyTakeaways:
 
 <h2>What About Free-Standing Furniture and Equipment?</h2>
 
-<p>Free-standing furniture — desks that aren’t fixed, chairs, filing cabinets, sofas, coffee tables — these are all plant and machinery. They qualify for AIA in full.</p>
+<p>Free-standing furniture, desks that aren’t fixed, chairs, filing cabinets, sofas, coffee tables, these are all plant and machinery. They qualify for AIA in full.</p>
 
 <p>But there’s a trap. If you buy these items separately from the fit-out, they’re straightforward. If you buy them as part of a single fit-out contract, they need to be itemised on the invoice. Otherwise, they get lumped in with the building works and you lose the ability to claim separately.</p>
 

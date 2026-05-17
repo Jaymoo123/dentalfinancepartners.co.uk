@@ -63,12 +63,12 @@ keyTakeaways:
 <h2>What Are Your UK Obligations Exactly?</h2>
 <p>If you employ someone in the UK, you must:</p>
 <ul>
-<li><strong>Register as an employer with HMRC</strong> — you need an employer PAYE reference number</li>
-<li><strong>Operate payroll</strong> — deduct income tax and National Insurance from each payslip</li>
-<li><strong>Pay employer National Insurance</strong> — 13.8% on earnings above the secondary threshold (£9,100 for 2025/26)</li>
-<li><strong>Issue payslips and P60s</strong> — standard UK employment documentation</li>
-<li><strong>Report in real time</strong> — submit Full Payment Submission (FPS) data to HMRC on or before each payday</li>
-<li><strong>Enrol eligible staff in a workplace pension</strong> — auto-enrolment applies, with minimum employer contributions of 3% of qualifying earnings</li>
+<li><strong>Register as an employer with HMRC</strong>, you need an employer PAYE reference number</li>
+<li><strong>Operate payroll</strong>, deduct income tax and National Insurance from each payslip</li>
+<li><strong>Pay employer National Insurance</strong>, 13.8% on earnings above the secondary threshold (£9,100 for 2025/26)</li>
+<li><strong>Issue payslips and P60s</strong>, standard UK employment documentation</li>
+<li><strong>Report in real time</strong>, submit Full Payment Submission (FPS) data to HMRC on or before each payday</li>
+<li><strong>Enrol eligible staff in a workplace pension</strong>, auto-enrolment applies, with minimum employer contributions of 3% of qualifying earnings</li>
 </ul>
 <p>These obligations apply from the <strong>first day of employment</strong>. There is no grace period, no threshold for small employers, and no exemption for overseas companies.</p>
 
@@ -79,11 +79,11 @@ keyTakeaways:
 <h2>The Real Risk: What Happens If You Ignore This</h2>
 <p>We have seen HMRC take action against Dubai-based agencies that thought they were invisible. The consequences include:</p>
 <ul>
-<li><strong>Backdated PAYE and NIC bills</strong> — HMRC can go back six years, plus interest and penalties</li>
-<li><strong>Personal liability for directors</strong> — if the company cannot pay, HMRC can pursue directors personally for unpaid PAYE</li>
-<li><strong>Corporation tax assessments</strong> — HMRC can argue your Dubai agency has a UK permanent establishment and assess UK corporation tax on profits</li>
-<li><strong>Reputational damage</strong> — HMRC publishes details of employers who fail to comply</li>
-<li><strong>Employee issues</strong> — your UK staff may face problems with mortgage applications, benefits, or pensions if they cannot prove proper employment history</li>
+<li><strong>Backdated PAYE and NIC bills</strong>, HMRC can go back six years, plus interest and penalties</li>
+<li><strong>Personal liability for directors</strong>, if the company cannot pay, HMRC can pursue directors personally for unpaid PAYE</li>
+<li><strong>Corporation tax assessments</strong>, HMRC can argue your Dubai agency has a UK permanent establishment and assess UK corporation tax on profits</li>
+<li><strong>Reputational damage</strong>, HMRC publishes details of employers who fail to comply</li>
+<li><strong>Employee issues</strong>, your UK staff may face problems with mortgage applications, benefits, or pensions if they cannot prove proper employment history</li>
 </ul>
 <p>One agency we worked with had been paying a UK-based senior developer through their Dubai entity for 18 months. They thought it was fine because the contract was with the Dubai company. HMRC issued a bill for £47,300 in backdated tax, NI, and penalties. The agency had to sell equity to cover it.</p>
 

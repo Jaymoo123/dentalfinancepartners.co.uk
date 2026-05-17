@@ -33,7 +33,7 @@ keyTakeaways:
 - Separate pass-through costs (e.g. ad spend, licences) from your own revenue to avoid inflating turnover without adding profit.
 - A healthy digital agency gross margin sits between 50% and 65%; below 45% signals undercharging, over-staffing, or scope creep.
 - Exclude pass-through costs when calculating gross margin for a true picture; in the example, margin rose from 42.5% to 43.3% after adjustment.
-- Low gross margin often stems from loose project scopes, expensive freelancers, or non-billable delivery staff—audit these first.
+- Low gross margin often stems from loose project scopes, expensive freelancers, or non-billable delivery staff-audit these first.
 ---
 <p>Most agency founders I meet have never been shown how to read their own P&L. They look at the bottom line, see a positive number, and assume everything is fine. Then they wonder why the bank balance doesn't match the profit figure.</p>
 

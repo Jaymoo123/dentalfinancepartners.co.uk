@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/2022-candles-3401897/
   source: Pexels
 h1: 'The 2-Year Holding Period for BADR: What Agency Founders Need to Know Before Selling'
-summary: Business Asset Disposal Relief (BADR) gives you a 14% capital gains tax rate on your agency sale — but only if you've held the shares for two full years. Many founders miss this by months. Here's what you need to plan for.
+summary: Business Asset Disposal Relief (BADR) gives you a 14% capital gains tax rate on your agency sale, but only if you've held the shares for two full years. Many founders miss this by months. Here's what you need to plan for.
 schema: ''
 faqs:
 - question: What is the exact 2-year holding period rule for BADR?

@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/smartphone-and-documents-on-desk-8962519/
   source: Pexels
 h1: 'Making Tax Digital for Agency Founders: The Complete Survival Guide'
-summary: Making Tax Digital is the single biggest change to UK tax administration in a generation, and agency founders are directly in scope. This guide covers everything you need to know — from MTD for VAT to the incoming MTD for Income Tax Self Assessment — with specific deadlines, software recommendations, and a practical action checklist. Written by ICAEW-qualified accountants who work with 73+ UK and UAE agency founders.
+summary: Making Tax Digital is the single biggest change to UK tax administration in a generation, and agency founders are directly in scope. This guide covers everything you need to know, from MTD for VAT to the incoming MTD for Income Tax Self Assessment, with specific deadlines, software recommendations, and a practical action checklist. Written by ICAEW-qualified accountants who work with 73+ UK and UAE agency founders.
 schema: ''
 faqs:
 - question: What is the MTD threshold for agency founders?
@@ -37,7 +37,7 @@ keyTakeaways:
 ---
 <p>Making Tax Digital is the most significant change to UK tax administration since self assessment was introduced in 1996. For agency founders running marketing, digital, creative, PR, advertising, web design, SEO, or recruitment agencies, it means the end of annual tax returns as you know them. Quarterly digital updates to HMRC. Mandatory compatible software. No more spreadsheets for your main tax filings.</p>
 
-<p>This is the definitive MTD agency founder guide. It covers everything from the VAT rules already in force to the incoming MTD for Income Tax Self Assessment (ITSA) that will affect most agency founders from April 2026. We've written it as ICAEW-qualified accountants who work exclusively with agency founders — we know how your businesses operate, where your tax complexities lie, and what you actually need to do to stay compliant without drowning in admin.</p>
+<p>This is the definitive MTD agency founder guide. It covers everything from the VAT rules already in force to the incoming MTD for Income Tax Self Assessment (ITSA) that will affect most agency founders from April 2026. We've written it as ICAEW-qualified accountants who work exclusively with agency founders, we know how your businesses operate, where your tax complexities lie, and what you actually need to do to stay compliant without drowning in admin.</p>
 
 <p>If you're a limited company director paying yourself a small salary and dividends, or a sole trader running a consultancy-style agency, or a partnership with multiple founders, you are in scope. This guide is for you.</p>
 
@@ -47,17 +47,17 @@ keyTakeaways:
 
 <p>For agency founders, the practical reality is this: you will need to use software that is MTD-compatible, keep digital records (not paper or scanned PDFs), and submit quarterly updates to HMRC. The days of handing a shoebox of receipts to your accountant in January are numbered.</p>
 
-<h3>MTD for VAT — Already Here</h3>
+<h3>MTD for VAT, Already Here</h3>
 
-<p>MTD for VAT has been mandatory since April 2022 for all VAT-registered businesses, regardless of turnover. If your agency is VAT-registered — which it almost certainly is if your turnover exceeds £90,000, or if you've voluntarily registered — you must already be filing your VAT returns using MTD-compatible software.</p>
+<p>MTD for VAT has been mandatory since April 2022 for all VAT-registered businesses, regardless of turnover. If your agency is VAT-registered, which it almost certainly is if your turnover exceeds £90,000, or if you've voluntarily registered, you must already be filing your VAT returns using MTD-compatible software.</p>
 
 <p>There is no longer a way to file VAT returns directly through the HMRC portal using manual entry. You must use software that connects to HMRC's API. Xero, QuickBooks, FreeAgent, and Sage all support this. If you're still filing VAT returns by logging into the HMRC website and typing numbers in, you are non-compliant.</p>
 
-<h3>MTD for ITSA — The Big One for Agency Founders</h3>
+<h3>MTD for ITSA, The Big One for Agency Founders</h3>
 
 <p>MTD for Income Tax Self Assessment (ITSA) is the change that will affect most agency founders directly. It applies to self-employed individuals and landlords with qualifying income over £50,000 per year, from April 2026. For those with income between £30,000 and £50,000, it becomes mandatory from April 2027.</p>
 
-<p>If you're a limited company director, the good news is that MTD for ITSA does not apply to your company's corporation tax — that remains on the annual CT600 return for now. But it <strong>does</strong> apply to you personally if you have self-employed income, rental income, or other income sources that fall within self assessment.</p>
+<p>If you're a limited company director, the good news is that MTD for ITSA does not apply to your company's corporation tax, that remains on the annual CT600 return for now. But it <strong>does</strong> apply to you personally if you have self-employed income, rental income, or other income sources that fall within self assessment.</p>
 
 <p>Many agency founders have side income: consultancy work outside their main agency, speaking fees, affiliate income, or property investments. All of that is in scope.</p>
 
@@ -72,7 +72,7 @@ keyTakeaways:
 <li>File a final declaration (effectively replacing the current SA100 self assessment return)</li>
 </ul>
 
-<p>The quarterly updates are not tax returns — they are cumulative data submissions. You don't pay tax quarterly (unless you choose to). Your final tax liability is calculated at year-end based on the EOPS and final declaration.</p>
+<p>The quarterly updates are not tax returns, they are cumulative data submissions. You don't pay tax quarterly (unless you choose to). Your final tax liability is calculated at year-end based on the EOPS and final declaration.</p>
 
 <h2>Which Agency Founders Are in Scope?</h2>
 
@@ -86,7 +86,7 @@ keyTakeaways:
 
 <h3>Limited Company Directors</h3>
 
-<p>If you operate through a limited company, your company's corporation tax is not affected by MTD for ITSA. However, if you have any self-employed income outside your company — consultancy, freelance work, director's fees from other companies, or property income — that income is in scope if it exceeds £50,000 in total.</p>
+<p>If you operate through a limited company, your company's corporation tax is not affected by MTD for ITSA. However, if you have any self-employed income outside your company, consultancy, freelance work, director's fees from other companies, or property income, that income is in scope if it exceeds £50,000 in total.</p>
 
 <p>Your salary and dividends from your own agency are employment income and dividends, not self-employment income. They are not in scope for MTD for ITSA.</p>
 
@@ -96,7 +96,7 @@ keyTakeaways:
 
 <p>Many agency founders have a hybrid structure: a limited company for the main agency, plus a sole trader business for side projects, consultancy, or property. If your sole trader income exceeds £50,000, you're in scope for that part of your affairs. Your limited company income is not.</p>
 
-<p>This creates a split reporting obligation. Your accountant will need to manage two separate MTD filings — one for your company (VAT and corporation tax, on different schedules) and one for your personal self-employed income (quarterly ITSA updates).</p>
+<p>This creates a split reporting obligation. Your accountant will need to manage two separate MTD filings, one for your company (VAT and corporation tax, on different schedules) and one for your personal self-employed income (quarterly ITSA updates).</p>
 
 <h2>The MTD Software Landscape for Agency Founders</h2>
 
@@ -159,13 +159,13 @@ keyTakeaways:
 
 <h3>Receipt and Expense Tracking for MTD</h3>
 
-<p>MTD requires you to keep digital records. That means no more paper receipts stuffed in a drawer. You need to capture expense data digitally — either by scanning receipts using apps like Dext, AutoEntry, or Hubdoc, or by entering them directly into your accounting software.</p>
+<p>MTD requires you to keep digital records. That means no more paper receipts stuffed in a drawer. You need to capture expense data digitally, either by scanning receipts using apps like Dext, AutoEntry, or Hubdoc, or by entering them directly into your accounting software.</p>
 
 <p>For agency founders, the biggest change is around project expenses. If you're running a creative agency in Bristol Harbourside with multiple client projects, you need a system that captures costs by project and categorises them correctly for MTD. Dext integrates with Xero and QuickBooks and can automate much of this.</p>
 
 <h3>Bridging Software for Spreadsheet Users</h3>
 
-<p>If you genuinely cannot move to cloud accounting — perhaps because of complex project costings or bespoke reporting — bridging software exists. Tools like CalcXML and MTD Bridge allow you to prepare your data in a spreadsheet and then submit it via the software to HMRC. This is a temporary solution. HMRC's long-term direction is clear: fully digital record-keeping.</p>
+<p>If you genuinely cannot move to cloud accounting, perhaps because of complex project costings or bespoke reporting, bridging software exists. Tools like CalcXML and MTD Bridge allow you to prepare your data in a spreadsheet and then submit it via the software to HMRC. This is a temporary solution. HMRC's long-term direction is clear: fully digital record-keeping.</p>
 
 <p>For most agency founders, moving to Xero or QuickBooks is the right answer. It saves time, reduces errors, and gives you real-time visibility of your agency's financial health.</p>
 
@@ -192,7 +192,7 @@ keyTakeaways:
 
 <ul>
 <li>Total business income for the period (gross, not net)</li>
-<li>Total business expenses for the period (by category — cost of sales, admin, travel, etc.)</li>
+<li>Total business expenses for the period (by category, cost of sales, admin, travel, etc.)</li>
 <li>Cumulative totals for the year to date</li>
 </ul>
 
@@ -205,11 +205,11 @@ keyTakeaways:
 <p>After the tax year ends, you submit:</p>
 
 <ul>
-<li>An end-of-period statement (EOPS) — this confirms your final income and expense totals for the year, and calculates your profit</li>
-<li>A final declaration — this includes your personal allowances, reliefs, and other adjustments, and effectively replaces the current SA100 return</li>
+<li>An end-of-period statement (EOPS), this confirms your final income and expense totals for the year, and calculates your profit</li>
+<li>A final declaration, this includes your personal allowances, reliefs, and other adjustments, and effectively replaces the current SA100 return</li>
 </ul>
 
-<p>The final declaration is due by 31 January following the end of the tax year — exactly the same as the current self assessment deadline. So for the 2026/27 tax year, your final declaration is due by 31 January 2028.</p>
+<p>The final declaration is due by 31 January following the end of the tax year, exactly the same as the current self assessment deadline. So for the 2026/27 tax year, your final declaration is due by 31 January 2028.</p>
 
 <p>Tax is still paid on the usual dates: 31 January (first payment on account), 31 July (second payment on account), and 31 January (balancing payment). MTD does not change when you pay tax, only how you report it.</p>
 
@@ -317,7 +317,7 @@ keyTakeaways:
 <ol>
 <li><strong>Submit your first quarterly update by 5 August 2026.</strong> Do not miss this deadline. The penalty system will apply from day one.</li>
 <li><strong>Review your tax planning.</strong> With real-time visibility of your income, you can make more informed decisions about pension contributions, investment, and tax-efficient structures. <a href="/blog/tax-and-compliance">Our tax and compliance blog</a> covers these topics in depth.</li>
-<li><strong>Consider incorporation.</strong> If you are a sole trader with income well above £50,000, incorporating your agency could remove you from MTD for ITSA (since your company's income is not in scope). But incorporation has other implications — corporation tax, dividend tax, IR35. Do not rush into it. Read our <a href="/blog/incorporation-and-structure">incorporation and structure guide</a> first.</li>
+<li><strong>Consider incorporation.</strong> If you are a sole trader with income well above £50,000, incorporating your agency could remove you from MTD for ITSA (since your company's income is not in scope). But incorporation has other implications, corporation tax, dividend tax, IR35. Do not rush into it. Read our <a href="/blog/incorporation-and-structure">incorporation and structure guide</a> first.</li>
 </ol>
 
 <h2>Common Questions Agency Founders Ask About MTD</h2>

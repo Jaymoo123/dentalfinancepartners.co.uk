@@ -37,7 +37,7 @@ keyTakeaways:
 ---
 <h2>What Is Corporation Tax and Why Should Agency Founders Care?</h2>
 
-<p>Corporation tax is the tax your limited company pays on its profits. If you run your agency as a sole trader or partnership, you pay income tax and National Insurance instead. But if you've incorporated — and most agency founders do once they pass £50k-£80k turnover — then corporation tax is your company's direct tax bill.</p>
+<p>Corporation tax is the tax your limited company pays on its profits. If you run your agency as a sole trader or partnership, you pay income tax and National Insurance instead. But if you've incorporated, and most agency founders do once they pass £50k-£80k turnover, then corporation tax is your company's direct tax bill.</p>
 
 <p>For the 2025/26 tax year, the rates are straightforward at the top level but the details matter. Get them wrong and you overpay. Get them right and you keep more of what your agency earns.</p>
 
@@ -81,36 +81,36 @@ keyTakeaways:
 
 <h3>Fully Deductible</h3>
 <ul>
-<li><strong>Staff salaries and bonuses</strong> — including your own director's salary up to the personal allowance (£12,570 for 2025/26)</li>
-<li><strong>Employer's National Insurance</strong> — 13.8% on salaries above the secondary threshold</li>
-<li><strong>Rent and business rates</strong> — for your agency's office or co-working space</li>
-<li><strong>Software subscriptions</strong> — Xero, QuickBooks, FreeAgent, Dext, Float, Spotlight Reporting, project management tools, design software, CRM platforms</li>
-<li><strong>Professional fees</strong> — accountancy, legal, consultancy</li>
-<li><strong>Marketing and advertising</strong> — Google Ads, LinkedIn Ads, PR retainers, content production</li>
-<li><strong>Travel and subsistence</strong> — client meetings, industry events, but not ordinary commuting</li>
-<li><strong>Equipment and technology</strong> — laptops, monitors, cameras, servers (subject to capital allowances)</li>
-<li><strong>Training and development</strong> — courses, conferences, professional memberships</li>
-<li><strong>Insurances</strong> — professional indemnity, public liability, cyber insurance</li>
+<li><strong>Staff salaries and bonuses</strong>, including your own director's salary up to the personal allowance (£12,570 for 2025/26)</li>
+<li><strong>Employer's National Insurance</strong>, 13.8% on salaries above the secondary threshold</li>
+<li><strong>Rent and business rates</strong>, for your agency's office or co-working space</li>
+<li><strong>Software subscriptions</strong>, Xero, QuickBooks, FreeAgent, Dext, Float, Spotlight Reporting, project management tools, design software, CRM platforms</li>
+<li><strong>Professional fees</strong>, accountancy, legal, consultancy</li>
+<li><strong>Marketing and advertising</strong>, Google Ads, LinkedIn Ads, PR retainers, content production</li>
+<li><strong>Travel and subsistence</strong>, client meetings, industry events, but not ordinary commuting</li>
+<li><strong>Equipment and technology</strong>, laptops, monitors, cameras, servers (subject to capital allowances)</li>
+<li><strong>Training and development</strong>, courses, conferences, professional memberships</li>
+<li><strong>Insurances</strong>, professional indemnity, public liability, cyber insurance</li>
 </ul>
 
 <h3>Partially Deductible or Restricted</h3>
 <ul>
-<li><strong>Client entertaining</strong> — 100% disallowable for corporation tax purposes. You cannot deduct the cost of taking clients to lunch or events. Staff entertaining (like the Christmas party) is deductible up to £150 per head per year.</li>
-<li><strong>Directors' loan account interest</strong> — if you borrow from the company, the benefit is taxable on you personally, not the company.</li>
-<li><strong>Subscriptions to non-trade bodies</strong> — check with your accountant.</li>
+<li><strong>Client entertaining</strong>, 100% disallowable for corporation tax purposes. You cannot deduct the cost of taking clients to lunch or events. Staff entertaining (like the Christmas party) is deductible up to £150 per head per year.</li>
+<li><strong>Directors' loan account interest</strong>, if you borrow from the company, the benefit is taxable on you personally, not the company.</li>
+<li><strong>Subscriptions to non-trade bodies</strong>, check with your accountant.</li>
 </ul>
 
 <h3>Not Deductible</h3>
 <ul>
-<li><strong>Dividends paid to shareholders</strong> — these are a distribution of profit, not a cost. You pay corporation tax on the profit before dividends.</li>
-<li><strong>Capital expenditure on buildings</strong> — separate rules apply.</li>
-<li><strong>Fines and penalties</strong> — including late filing penalties.</li>
-<li><strong>Personal expenses</strong> — anything not wholly and exclusively for the business.</li>
+<li><strong>Dividends paid to shareholders</strong>, these are a distribution of profit, not a cost. You pay corporation tax on the profit before dividends.</li>
+<li><strong>Capital expenditure on buildings</strong>, separate rules apply.</li>
+<li><strong>Fines and penalties</strong>, including late filing penalties.</li>
+<li><strong>Personal expenses</strong>, anything not wholly and exclusively for the business.</li>
 </ul>
 
 <h2>Capital Allowances: Claiming for Agency Equipment</h2>
 
-<p>When your agency buys equipment — laptops, monitors, cameras, office furniture, servers — you do not deduct the full cost as an expense in one go. Instead, you claim capital allowances.</p>
+<p>When your agency buys equipment, laptops, monitors, cameras, office furniture, servers, you do not deduct the full cost as an expense in one go. Instead, you claim capital allowances.</p>
 
 <p>The Annual Investment Allowance (AIA) lets you deduct 100% of the cost of most plant and machinery in the year you buy it, up to £1m per year. For a typical agency spending £15,000 on new laptops and monitors, that is a full deduction against profits.</p>
 
@@ -157,7 +157,7 @@ keyTakeaways:
 <p>Do not wait until after year-end to think about corporation tax. Here are three actions to take before your accounting period ends.</p>
 
 <h3>1. Review Your Profit Level</h3>
-<p>If your profit is heading toward £50k or £250k, the marginal relief calculation changes your effective rate. A small adjustment — buying equipment before year-end, paying a bonus — could save thousands.</p>
+<p>If your profit is heading toward £50k or £250k, the marginal relief calculation changes your effective rate. A small adjustment, buying equipment before year-end, paying a bonus, could save thousands.</p>
 
 <h3>2. Claim All Allowable Expenses</h3>
 <p>Go through your bank statements with your accountant. Missing expenses like software subscriptions, professional memberships, and travel costs leaves money on the table.</p>

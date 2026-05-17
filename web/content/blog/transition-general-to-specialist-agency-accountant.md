@@ -54,7 +54,7 @@ keyTakeaways:
 <ul>
 <li><strong>IR35 compliance as standard.</strong> They issue Status Determination Statements before your first contractor starts, not six months later when HMRC writes to you.</li>
 <li><strong>Contractor margin modelling.</strong> They can tell you whether using an umbrella company or a personal service company costs you more in employer NI.</li>
-<li><strong>Revenue recognition expertise.</strong> Retainers, project burn, milestone billing — each has different tax treatment and cash flow implications.</li>
+<li><strong>Revenue recognition expertise.</strong> Retainers, project burn, milestone billing, each has different tax treatment and cash flow implications.</li>
 <li><strong>Exit planning from day one.</strong> They structure your shares, your holding company, and your dividend routing so you qualify for Business Asset Disposal Relief when you sell.</li>
 <li><strong>Benchmarking data.</strong> They know that a healthy agency runs at 65-75% utilisation and that revenue per head below £80k for a digital agency means you are under-pricing.</li>
 </ul>
@@ -64,7 +64,7 @@ keyTakeaways:
 <h2>Five Signs It Is Time to Make the Switch</h2>
 
 <h3>1. Your Accountant Cannot Answer IR35 Questions</h3>
-<p>If you ask your accountant "should I issue an SDS for this contractor who works 3 days a week from my office?" and they say "I am not sure, check the CEST tool" — that is a problem. The CEST tool is directional guidance at best. A specialist knows when CEST gives a false positive and when you need a professional determination instead. If your contractor mix has changed in the last 12 months, ask your accountant before year-end. If they cannot give you a clear answer, it is time to move.</p>
+<p>If you ask your accountant "should I issue an SDS for this contractor who works 3 days a week from my office?" and they say "I am not sure, check the CEST tool", that is a problem. The CEST tool is directional guidance at best. A specialist knows when CEST gives a false positive and when you need a professional determination instead. If your contractor mix has changed in the last 12 months, ask your accountant before year-end. If they cannot give you a clear answer, it is time to move.</p>
 
 <h3>2. Your Management Accounts Are Just Your Year-End Numbers</h3>
 <p>If your accountant sends you a P&L once a year and calls it management accounts, you are flying blind. A specialist agency accountant sends monthly management accounts with utilisation rates, gross margin by service line, cash runway, and debtor days. You cannot run a growing agency on annual data.</p>

@@ -50,9 +50,9 @@ keyTakeaways:
 <p>Three things matter here:</p>
 
 <ul>
-<li><strong>Advance</strong> — the project must aim to improve overall knowledge or capability in a field of science or technology, not just for your business</li>
-<li><strong>Uncertainty</strong> — you must have faced a genuine technical challenge where the solution wasn't obvious or readily deducible</li>
-<li><strong>Competent professional</strong> — the test is whether someone with relevant qualifications and experience would have known the answer without needing to do the project</li>
+<li><strong>Advance</strong>, the project must aim to improve overall knowledge or capability in a field of science or technology, not just for your business</li>
+<li><strong>Uncertainty</strong>, you must have faced a genuine technical challenge where the solution wasn't obvious or readily deducible</li>
+<li><strong>Competent professional</strong>, the test is whether someone with relevant qualifications and experience would have known the answer without needing to do the project</li>
 </ul>
 
 <p>Notice what's not in that test. It doesn't say you need to have succeeded. Failed projects can qualify. It doesn't say you need to be a registered company with a lab. A three-person agency working from a co-working space in Shoreditch can qualify. It doesn't say the advance has to be world-changing. It just has to be an advance in the field, not something already in the public domain.</p>
@@ -86,12 +86,12 @@ keyTakeaways:
 <p>The following activities almost never qualify for R&D tax credits in a marketing agency:</p>
 
 <ul>
-<li><strong>Routine campaign management</strong> — planning, executing, and optimising marketing campaigns using existing tools and techniques, no matter how creative or effective</li>
-<li><strong>Standard website development</strong> — building websites using established frameworks, CMS platforms, and templates, even if the design is bespoke</li>
-<li><strong>Applying existing technology</strong> — using off-the-shelf software in a standard way, even if you're using it for a new client or sector</li>
-<li><strong>Market research</strong> — analysing customer behaviour, running focus groups, or testing creative concepts. That's market research, not R&D</li>
-<li><strong>Design work</strong> — graphic design, UX/UI design, and creative direction, unless the design work is integral to resolving a technical uncertainty</li>
-<li><strong>Business process improvement</strong> — reorganising your team, changing workflows, or adopting new project management software</li>
+<li><strong>Routine campaign management</strong>, planning, executing, and optimising marketing campaigns using existing tools and techniques, no matter how creative or effective</li>
+<li><strong>Standard website development</strong>, building websites using established frameworks, CMS platforms, and templates, even if the design is bespoke</li>
+<li><strong>Applying existing technology</strong>, using off-the-shelf software in a standard way, even if you're using it for a new client or sector</li>
+<li><strong>Market research</strong>, analysing customer behaviour, running focus groups, or testing creative concepts. That's market research, not R&D</li>
+<li><strong>Design work</strong>, graphic design, UX/UI design, and creative direction, unless the design work is integral to resolving a technical uncertainty</li>
+<li><strong>Business process improvement</strong>, reorganising your team, changing workflows, or adopting new project management software</li>
 </ul>
 
 <p>A common mistake I see: an agency spends six months building a complex multi-channel campaign that involves personalised content, dynamic creative optimisation, and real-time bidding. The project is technically challenging and produces great results. But if the underlying technology is all existing tools used in standard ways, it doesn't qualify. The challenge was operational, not technological.</p>
@@ -123,11 +123,11 @@ keyTakeaways:
 <p>For an SME agency, the qualifying costs are:</p>
 
 <ul>
-<li><strong>Staff costs</strong> — salaries, employer NI, and pension contributions for employees directly involved in the R&D work. This includes the proportion of time spent on qualifying projects</li>
-<li><strong>Subcontractor costs</strong> — if you subcontract R&D work to another company, you can claim 65% of the payment. If you subcontract to an individual (sole trader or partnership), you can claim 100%</li>
-<li><strong>Software licenses</strong> — costs of software directly used in the R&D work</li>
-<li><strong>Consumables</strong> — materials and items consumed or transformed in the R&D work. Cloud computing costs for running models or storing data often qualify here</li>
-<li><strong>Externally provided workers</strong> — agency workers supplied by a third party, where they're under your supervision and direction</li>
+<li><strong>Staff costs</strong>, salaries, employer NI, and pension contributions for employees directly involved in the R&D work. This includes the proportion of time spent on qualifying projects</li>
+<li><strong>Subcontractor costs</strong>, if you subcontract R&D work to another company, you can claim 65% of the payment. If you subcontract to an individual (sole trader or partnership), you can claim 100%</li>
+<li><strong>Software licenses</strong>, costs of software directly used in the R&D work</li>
+<li><strong>Consumables</strong>, materials and items consumed or transformed in the R&D work. Cloud computing costs for running models or storing data often qualify here</li>
+<li><strong>Externally provided workers</strong>, agency workers supplied by a third party, where they're under your supervision and direction</li>
 </ul>
 
 <p>What you cannot claim: overheads like rent, utilities, and general admin costs. Marketing spend. Client entertainment. Standard office software like email and project management tools.</p>
@@ -139,10 +139,10 @@ keyTakeaways:
 <p>Here's what a strong claim looks like:</p>
 
 <ul>
-<li><strong>A technical narrative</strong> — a written description of each qualifying project, explaining the scientific or technological uncertainty, the advance sought, and the work done to resolve it. This should be written in plain English, not marketing language</li>
-<li><strong>Project records</strong> — contemporaneous evidence showing the work happened. Emails, Slack messages, project plans, technical specifications, meeting notes. HMRC wants to see that you were actually doing R&D, not reconstructing it after the fact</li>
-<li><strong>Time allocation records</strong> — timesheets or diary entries showing how much time each employee spent on qualifying projects. HMRC will ask for this if they open an enquiry</li>
-<li><strong>Cost breakdown</strong> — a clear schedule of qualifying costs, with supporting invoices and payroll reports</li>
+<li><strong>A technical narrative</strong>, a written description of each qualifying project, explaining the scientific or technological uncertainty, the advance sought, and the work done to resolve it. This should be written in plain English, not marketing language</li>
+<li><strong>Project records</strong>, contemporaneous evidence showing the work happened. Emails, Slack messages, project plans, technical specifications, meeting notes. HMRC wants to see that you were actually doing R&D, not reconstructing it after the fact</li>
+<li><strong>Time allocation records</strong>, timesheets or diary entries showing how much time each employee spent on qualifying projects. HMRC will ask for this if they open an enquiry</li>
+<li><strong>Cost breakdown</strong>, a clear schedule of qualifying costs, with supporting invoices and payroll reports</li>
 </ul>
 
 <p>If you're using Xero or QuickBooks, tag qualifying costs with a specific tracking category from day one. It makes the year-end claim much easier.</p>

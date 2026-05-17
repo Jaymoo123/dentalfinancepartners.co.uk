@@ -61,7 +61,7 @@ keyTakeaways:
 
 <ul>
 <li>A breakdown of your worldwide income by source (UK agency profits, dividends, rental income, capital gains)</li>
-<li>Proof of foreign tax paid (if any) — the UAE has double tax treaties with many countries, including the UK</li>
+<li>Proof of foreign tax paid (if any), the UAE has double tax treaties with many countries, including the UK</li>
 <li>Your UAE residency documentation (Emirates ID, tenancy contract, utility bills)</li>
 <li>Your UK tax returns for the last 2-3 years to show your income history</li>
 <li>Bank statements for all accounts you hold, UK and UAE</li>
@@ -90,7 +90,7 @@ keyTakeaways:
 
 <p><strong>Option 1: Keep the UK company, take dividends as a UAE resident.</strong> This is the most common structure. Your UK agency continues trading, paying UK corporation tax. You take a salary up to the NI threshold (£12,570 for 2025/26) and dividends from retained profits. As a UAE resident, you pay no UK income tax on the dividends (though the company still pays corporation tax). You declare the dividends to the FTA as part of your worldwide income declaration. The risk: HMRC may challenge your non-residency if you still spend significant time in the UK or retain strong ties.</p>
 
-<p><strong>Option 2: Set up a UAE free zone company.</strong> Many agency founders establish a UAE free zone entity (in DIFC, ADGM, or a mainland free zone) and move their client contracts to the new entity. This can be tax-efficient if done correctly, but it requires careful planning. You need to transfer your client relationships, IP, and contracts. The UK company may still have tax liabilities on the transfer. You also need to consider VAT — if your UK agency is VAT-registered and you move clients to a UAE entity, you may create cross-border VAT issues.</p>
+<p><strong>Option 2: Set up a UAE free zone company.</strong> Many agency founders establish a UAE free zone entity (in DIFC, ADGM, or a mainland free zone) and move their client contracts to the new entity. This can be tax-efficient if done correctly, but it requires careful planning. You need to transfer your client relationships, IP, and contracts. The UK company may still have tax liabilities on the transfer. You also need to consider VAT, if your UK agency is VAT-registered and you move clients to a UAE entity, you may create cross-border VAT issues.</p>
 
 <p><strong>Option 3: Wind down the UK company and operate solely from the UAE.</strong> This is the cleanest option but takes time. You need to settle all UK liabilities, distribute remaining profits, and file final accounts. You then apply for BADR (Business Asset Disposal Relief) on the share sale, which gives you a 14% CGT rate for disposals before 6 April 2025, rising to 18% from 6 April 2026. You need to hold the shares for at least 2 years before disposal. If you are planning this, start the process 12-18 months before you move.</p>
 

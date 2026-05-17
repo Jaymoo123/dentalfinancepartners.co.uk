@@ -1,5 +1,5 @@
 ---
-title: 'When to Incorporate Your Agency: Recruitment vs Creative — Key Structural Differences'
+title: 'When to Incorporate Your Agency: Recruitment vs Creative, Key Structural Differences'
 slug: when-to-incorporate-agency-recruitment-vs-creative
 canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/when-to-incorporate-agency-recruitment-vs-creative
 date: '2026-05-16'
@@ -14,7 +14,7 @@ imageCredit:
   photographerUrl: https://www.pexels.com/@walls-io-440716388
   sourceUrl: https://www.pexels.com/photo/door-plaque-and-magazine-lying-on-table-15635235/
   source: Pexels
-h1: 'When to Incorporate Your Agency: Recruitment vs Creative — Key Structural Differences'
+h1: 'When to Incorporate Your Agency: Recruitment vs Creative, Key Structural Differences'
 summary: Recruitment agencies and creative agencies look similar on paper but face fundamentally different financial risks, cash flow patterns, and tax positions. This article explains when to incorporate each type and why the structures should not be the same.
 schema: ''
 faqs:

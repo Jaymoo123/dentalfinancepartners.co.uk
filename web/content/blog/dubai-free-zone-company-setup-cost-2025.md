@@ -38,11 +38,11 @@ keyTakeaways:
 <p>There are over 30 free zones in Dubai. Some are industry-specific. For agencies, the most relevant ones include:</p>
 
 <ul>
-<li><strong>Dubai Multi Commodities Centre (DMCC)</strong> — the most popular for trading and services. DMCC has a strong reputation and a large agency community.</li>
-<li><strong>Dubai Silicon Oasis (DSO)</strong> — technology-focused, good for digital and creative agencies. Cheaper than DMCC.</li>
-<li><strong>Dubai Internet City (DIC)</strong> — tech and media hub. Higher costs, but strong for B2B credibility.</li>
-<li><strong>IFZA</strong> (International Free Zone Authority) — competitive pricing, solid for service businesses.</li>
-<li><strong>Sharjah Media City (SHAMS)</strong> or <strong>RAK ICC</strong> — lower-cost options if budget is tight, though they carry different reputational weight.</li>
+<li><strong>Dubai Multi Commodities Centre (DMCC)</strong>, the most popular for trading and services. DMCC has a strong reputation and a large agency community.</li>
+<li><strong>Dubai Silicon Oasis (DSO)</strong>, technology-focused, good for digital and creative agencies. Cheaper than DMCC.</li>
+<li><strong>Dubai Internet City (DIC)</strong>, tech and media hub. Higher costs, but strong for B2B credibility.</li>
+<li><strong>IFZA</strong> (International Free Zone Authority), competitive pricing, solid for service businesses.</li>
+<li><strong>Sharjah Media City (SHAMS)</strong> or <strong>RAK ICC</strong>, lower-cost options if budget is tight, though they carry different reputational weight.</li>
 </ul>
 
 <p>Your choice of free zone directly affects the <strong>Dubai free zone company setup cost 2025</strong>. DMCC will cost more than DSO. That is not necessarily a problem. But you need to know what you are paying for.</p>
@@ -54,9 +54,9 @@ keyTakeaways:
 <p>For an agency founder, the most common licence types are:</p>
 
 <ul>
-<li><strong>Freelance permit</strong> — suitable for a solo consultant or creative. Typically AED 10,000 to AED 20,000 per year.</li>
-<li><strong>Single-owner company licence</strong> — you are the sole shareholder. Typically AED 15,000 to AED 40,000 per year depending on the free zone.</li>
-<li><strong>Multiple-shareholder company licence</strong> — if you have a co-founder or investor. Costs slightly more in most zones.</li>
+<li><strong>Freelance permit</strong>, suitable for a solo consultant or creative. Typically AED 10,000 to AED 20,000 per year.</li>
+<li><strong>Single-owner company licence</strong>, you are the sole shareholder. Typically AED 15,000 to AED 40,000 per year depending on the free zone.</li>
+<li><strong>Multiple-shareholder company licence</strong>, if you have a co-founder or investor. Costs slightly more in most zones.</li>
 </ul>
 
 <p>Let us use DMCC as an example. Their standard company formation package in 2025 starts around AED 50,000 (roughly £10,500 at current exchange rates). That includes the licence, a flexi-desk, and one visa. DSO starts around AED 30,000 (about £6,300). IFZA starts around AED 25,000 (about £5,250).</p>
@@ -70,11 +70,11 @@ keyTakeaways:
 <p>The visa cost is not included in the headline licence fee in most free zones. It is a separate charge. For 2025, expect to pay:</p>
 
 <ul>
-<li><strong>Investor visa (your own)</strong> — AED 4,000 to AED 8,000 depending on the free zone and whether you use a PRO service.</li>
-<li><strong>Employee visa</strong> — similar range, AED 4,000 to AED 7,000 per person.</li>
-<li><strong>Dependent visa</strong> — AED 4,000 to AED 6,000 per dependent.</li>
-<li><strong>Visa medical and biometrics</strong> — AED 1,500 to AED 2,500 per person.</li>
-<li><strong>Emirates ID</strong> — AED 1,000 to AED 1,500 per person.</li>
+<li><strong>Investor visa (your own)</strong>, AED 4,000 to AED 8,000 depending on the free zone and whether you use a PRO service.</li>
+<li><strong>Employee visa</strong>, similar range, AED 4,000 to AED 7,000 per person.</li>
+<li><strong>Dependent visa</strong>, AED 4,000 to AED 6,000 per dependent.</li>
+<li><strong>Visa medical and biometrics</strong>, AED 1,500 to AED 2,500 per person.</li>
+<li><strong>Emirates ID</strong>, AED 1,000 to AED 1,500 per person.</li>
 </ul>
 
 <p>If you are moving yourself and one employee, budget AED 10,000 to AED 15,000 just for visas. That is £2,100 to £3,150 on top of the licence fee.</p>
@@ -98,10 +98,10 @@ keyTakeaways:
 <p>Typical PRO fees in 2025:</p>
 
 <ul>
-<li><strong>Visa processing</strong> — AED 1,500 to AED 3,000 per application.</li>
-<li><strong>Licence renewal</strong> — AED 1,000 to AED 2,000 per year.</li>
-<li><strong>Trade name change</strong> — AED 1,000 to AED 2,000.</li>
-<li><strong>Amendments to licence</strong> — AED 1,500 to AED 3,000 per change.</li>
+<li><strong>Visa processing</strong>, AED 1,500 to AED 3,000 per application.</li>
+<li><strong>Licence renewal</strong>, AED 1,000 to AED 2,000 per year.</li>
+<li><strong>Trade name change</strong>, AED 1,000 to AED 2,000.</li>
+<li><strong>Amendments to licence</strong>, AED 1,500 to AED 3,000 per change.</li>
 </ul>
 
 <p>If you are a UK agency founder who values your time, you will outsource this. It is not expensive relative to the value of your time. But it is a cost you need to budget for.</p>
@@ -121,13 +121,13 @@ keyTakeaways:
 <p>Typical annual renewal costs for a single-owner agency in a mid-tier free zone:</p>
 
 <ul>
-<li><strong>Licence renewal</strong> — AED 15,000 to AED 40,000.</li>
-<li><strong>Visa renewal</strong> — AED 3,000 to AED 5,000 per person.</li>
-<li><strong>Emirates ID renewal</strong> — AED 1,000 per person.</li>
-<li><strong>Medical insurance</strong> — mandatory for all visa holders. AED 5,000 to AED 15,000 per person per year depending on the plan.</li>
-<li><strong>Office renewal</strong> — AED 15,000 to AED 50,000 depending on your space.</li>
-<li><strong>PRO fees</strong> — AED 1,000 to AED 3,000.</li>
-<li><strong>Audit fees</strong> — AED 5,000 to AED 15,000. Most free zones require an annual audit if turnover exceeds a certain threshold (often AED 500,000).</li>
+<li><strong>Licence renewal</strong>, AED 15,000 to AED 40,000.</li>
+<li><strong>Visa renewal</strong>, AED 3,000 to AED 5,000 per person.</li>
+<li><strong>Emirates ID renewal</strong>, AED 1,000 per person.</li>
+<li><strong>Medical insurance</strong>, mandatory for all visa holders. AED 5,000 to AED 15,000 per person per year depending on the plan.</li>
+<li><strong>Office renewal</strong>, AED 15,000 to AED 50,000 depending on your space.</li>
+<li><strong>PRO fees</strong>, AED 1,000 to AED 3,000.</li>
+<li><strong>Audit fees</strong>, AED 5,000 to AED 15,000. Most free zones require an annual audit if turnover exceeds a certain threshold (often AED 500,000).</li>
 </ul>
 
 <p>Total annual renewal cost for a single person: roughly AED 40,000 to AED 80,000 (£8,400 to £16,800). That is the number most founders do not see until year two.</p>

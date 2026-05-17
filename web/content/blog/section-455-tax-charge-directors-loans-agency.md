@@ -63,7 +63,7 @@ keyTakeaways:
 
 <p>Your agency must pay HMRC £13,500 (33.75% of £40,000) as a Section 455 charge. That's due with your corporation tax payment, normally 9 months and 1 day after the year end. So by 1 January 2026, HMRC expects that £13,500.</p>
 
-<p>If you repay the loan later, the company can reclaim the charge. But the cash is gone in the meantime. And reclaiming isn't automatic — you have to submit a claim.</p>
+<p>If you repay the loan later, the company can reclaim the charge. But the cash is gone in the meantime. And reclaiming isn't automatic, you have to submit a claim.</p>
 
 <h2>When Does Section 455 Apply?</h2>
 
@@ -95,7 +95,7 @@ keyTakeaways:
 
 <p>This is the simplest solution. If you take a loan, repay it within 9 months of the year end. That means if your year end is 31 March, any loan taken during the year must be repaid by 31 December.</p>
 
-<p>If you can't repay in cash, consider a formal dividend declaration (if you have retained profits) to clear the balance. But be careful — dividends must be paid from distributable profits, and you must follow the correct legal process.</p>
+<p>If you can't repay in cash, consider a formal dividend declaration (if you have retained profits) to clear the balance. But be careful, dividends must be paid from distributable profits, and you must follow the correct legal process.</p>
 
 <p><strong>Warning:</strong> Don't repay the loan just before year end and then immediately re-borrow it after. HMRC can treat that as a "bed and breakfasting" arrangement and still apply the charge. There needs to be genuine repayment with no pre-arranged re-borrowing.</p>
 
@@ -149,7 +149,7 @@ keyTakeaways:
 
 <p>The charge is shown on the CT600 corporation tax return. Your accountant will include it if they know about the loan. If they don't know (because you haven't told them), you're looking at a potential penalty for incorrect returns.</p>
 
-<p>If the loan is later repaid, the company can reclaim the charge. But reclaiming requires a formal claim to HMRC, and the repayment is treated as a credit against the company's corporation tax liability. It's not a cash refund in most cases — it reduces the next tax bill.</p>
+<p>If the loan is later repaid, the company can reclaim the charge. But reclaiming requires a formal claim to HMRC, and the repayment is treated as a credit against the company's corporation tax liability. It's not a cash refund in most cases, it reduces the next tax bill.</p>
 
 <p><strong>Practical reality:</strong> Most agency founders who trigger a Section 455 charge don't repay the loan quickly. The cash is gone. The company pays 33.75% to HMRC. The loan sits on the books. And the charge becomes a permanent cost of extracting the money.</p>
 

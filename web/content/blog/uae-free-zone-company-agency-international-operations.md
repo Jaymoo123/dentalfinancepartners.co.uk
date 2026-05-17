@@ -48,11 +48,11 @@ keyTakeaways:
 <p>The key features of a UAE free zone company are straightforward:</p>
 
 <ul>
-<li>100% foreign ownership — no local sponsor required</li>
+<li>100% foreign ownership, no local sponsor required</li>
 <li>Zero corporate tax on qualifying income (though this is changing from 2023 onwards, which I will cover below)</li>
 <li>Zero personal income tax on salary and dividends taken from the company</li>
 <li>Ability to sponsor your own residency visa and family visas</li>
-<li>No currency controls — you can move money in and out freely</li>
+<li>No currency controls, you can move money in and out freely</li>
 <li>Physical or flexi-desk office space as part of the licence package</li>
 </ul>
 
@@ -66,7 +66,7 @@ keyTakeaways:
 
 <p><strong>Time spent in the UAE.</strong> Some founders already spend three to six months per year in Dubai for lifestyle, family, or health reasons. If you are there that much anyway, structuring your agency around a UAE entity makes practical sense.</p>
 
-<p><strong>Tax efficiency on dividends.</strong> UK dividend tax rates are 8.75% at basic rate, 33.75% at higher rate, and 39.35% at additional rate. If you are taking six-figure dividends from your UK agency, the tax bill is material. A UAE structure removes that layer entirely — provided you are genuinely non-UK resident and operating from the UAE.</p>
+<p><strong>Tax efficiency on dividends.</strong> UK dividend tax rates are 8.75% at basic rate, 33.75% at higher rate, and 39.35% at additional rate. If you are taking six-figure dividends from your UK agency, the tax bill is material. A UAE structure removes that layer entirely, provided you are genuinely non-UK resident and operating from the UAE.</p>
 
 <p><strong>Exit planning.</strong> Selling a UK company triggers capital gains tax at 14% under BADR (up to £1m) or 20% above that. Selling a UAE free zone company can be structured differently, and some founders use a UAE holding company as part of a wider exit strategy.</p>
 

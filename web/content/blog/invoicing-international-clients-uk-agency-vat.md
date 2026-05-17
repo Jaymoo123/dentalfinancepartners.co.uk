@@ -25,7 +25,7 @@ faqs:
 - question: Can I invoice an international client in USD without charging VAT?
   answer: Yes, you can invoice in any currency. For B2B supplies, you do not charge VAT regardless of the currency. For B2C supplies where VAT applies, you must convert the net amount to GBP using the HMRC-approved exchange rate for the date of supply and add 20% UK VAT. Your accounting software can usually handle the conversion.
 - question: What happens if I charged VAT to an international B2B client by mistake?
-  answer: You need to correct it. Issue a credit note for the VAT amount and reissue the invoice without VAT. Adjust your VAT return to remove the output tax from Box 1. If the VAT return has already been submitted, you can correct it on the next return or submit a voluntary disclosure to HMRC. Speak to your accountant before doing anything — the correction process depends on how long ago the error occurred.
+  answer: You need to correct it. Issue a credit note for the VAT amount and reissue the invoice without VAT. Adjust your VAT return to remove the output tax from Box 1. If the VAT return has already been submitted, you can correct it on the next return or submit a voluntary disclosure to HMRC. Speak to your accountant before doing anything, the correction process depends on how long ago the error occurred.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -83,7 +83,7 @@ keyTakeaways:
 
 <p>This catches many agency founders out. A web designer in Manchester Northern Quarter builds a site for a US-based individual. The client is not a business. The designer must charge 20% UK VAT on the invoice, even though the client is in America.</p>
 
-<p>There are exceptions for certain services supplied to consumers outside the UK. But for the standard agency services we see — marketing, design, PR, development, consultancy — the general B2C rule applies. You charge UK VAT.</p>
+<p>There are exceptions for certain services supplied to consumers outside the UK. But for the standard agency services we see, marketing, design, PR, development, consultancy, the general B2C rule applies. You charge UK VAT.</p>
 
 <h2>EU Clients: Post-Brexit Rules</h2>
 
@@ -93,7 +93,7 @@ keyTakeaways:
 
 <p>For B2C services to EU consumers: you charge UK VAT at 20%. This is the same as the general B2C rule above.</p>
 
-<p>There is no longer any requirement to register for VAT in an EU country purely because you sell services to consumers there (the old "distance selling" rules for services were abolished for UK suppliers post-Brexit). However, if you have a physical presence in an EU country — an office, a branch, or staff working there — you may need to register for VAT locally. That is a separate conversation with your accountant.</p>
+<p>There is no longer any requirement to register for VAT in an EU country purely because you sell services to consumers there (the old "distance selling" rules for services were abolished for UK suppliers post-Brexit). However, if you have a physical presence in an EU country, an office, a branch, or staff working there, you may need to register for VAT locally. That is a separate conversation with your accountant.</p>
 
 <h2>Non-EU Clients: The Simpler Side</h2>
 
@@ -114,12 +114,12 @@ keyTakeaways:
 <li>A unique invoice number and date</li>
 <li>A description of the services</li>
 <li>The net amount (before VAT)</li>
-<li>For B2B: "Reverse charge — customer to account for VAT"</li>
+<li>For B2B: "Reverse charge, customer to account for VAT"</li>
 <li>For B2C with VAT: the VAT rate and amount</li>
 <li>The total amount due</li>
 </ul>
 
-<p>If you use accounting software like Xero, FreeAgent, or QuickBooks, you can set up tax rates for "Zero-rated exports" or "Outside scope — reverse charge." Do not use the standard 20% rate for B2B international invoices. That would mean you charge VAT you should not, and your client cannot reclaim it from HMRC.</p>
+<p>If you use accounting software like Xero, FreeAgent, or QuickBooks, you can set up tax rates for "Zero-rated exports" or "Outside scope, reverse charge." Do not use the standard 20% rate for B2B international invoices. That would mean you charge VAT you should not, and your client cannot reclaim it from HMRC.</p>
 
 <h2>VAT Return Treatment</h2>
 

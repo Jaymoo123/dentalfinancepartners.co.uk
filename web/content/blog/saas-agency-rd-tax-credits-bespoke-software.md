@@ -62,13 +62,13 @@ keyTakeaways:
 
 <p>A 15-person digital agency in Bristol built a custom analytics platform for a retail client. The client needed to combine sales data from 12 different POS systems, each with different data formats and update frequencies. The agency had to develop a novel data normalisation layer and a real-time reconciliation engine. No off-the-shelf tool could handle the combination of data volume, format inconsistency, and latency requirements. That's R&D.</p>
 
-<p>A Manchester-based SaaS agency developed a machine learning model to predict churn for a subscription business. The standard models didn't work because the client's customer base had unusual behaviour patterns — long sales cycles, irregular usage, and multiple decision-makers. The agency had to experiment with different feature engineering approaches and model architectures. That's R&D.</p>
+<p>A Manchester-based SaaS agency developed a machine learning model to predict churn for a subscription business. The standard models didn't work because the client's customer base had unusual behaviour patterns, long sales cycles, irregular usage, and multiple decision-makers. The agency had to experiment with different feature engineering approaches and model architectures. That's R&D.</p>
 
 <p>A web design agency in Shoreditch built a custom CMS for a publisher that needed to serve 50,000 concurrent users during live events. Standard WordPress couldn't handle the load, and off-the-shelf caching solutions didn't work with the publisher's real-time content updates. The agency built a custom caching layer and database architecture. That's R&D.</p>
 
 <h3>Examples That Don't Qualify</h3>
 
-<p>Not everything counts. Standard web development, even if complex, doesn't qualify if you're using established methods. Building a Shopify store with custom plugins, setting up WordPress with standard themes, or integrating Stripe for payments — none of that is R&D. It's skilled work, but it's not pushing the boundaries of what's technically known.</p>
+<p>Not everything counts. Standard web development, even if complex, doesn't qualify if you're using established methods. Building a Shopify store with custom plugins, setting up WordPress with standard themes, or integrating Stripe for payments, none of that is R&D. It's skilled work, but it's not pushing the boundaries of what's technically known.</p>
 
 <p>Similarly, routine software maintenance, bug fixes, and performance optimisation using standard techniques don't qualify. If you're applying known solutions to known problems, HMRC won't accept it.</p>
 
@@ -82,7 +82,7 @@ keyTakeaways:
 
 <ul>
 <li>An enhanced deduction of 186% on qualifying R&D expenditure (for accounting periods starting on or after 1 April 2023). That means for every £100 you spend on qualifying R&D, you can deduct £186 from your taxable profits.</li>
-<li>If you're loss-making, you can surrender those losses for a cash payment — up to 14.5% of the surrenderable loss for R&D intensive companies, or 10% for others.</li>
+<li>If you're loss-making, you can surrender those losses for a cash payment, up to 14.5% of the surrenderable loss for R&D intensive companies, or 10% for others.</li>
 </ul>
 
 <p>For a profitable agency spending £50,000 on qualifying R&D, the enhanced deduction reduces your taxable profit by £93,000. At 19% corporation tax, that's a tax saving of £17,670. If you're loss-making, the cash credit can be even more valuable.</p>
@@ -136,7 +136,7 @@ keyTakeaways:
 
 <p><strong>Document the uncertainty at the start.</strong> Before you begin a project, write down what you don't know. What technical challenges do you expect? What approaches are you planning to test? What would count as success? This contemporaneous evidence is far more valuable than a retrospective narrative.</p>
 
-<p><strong>Track time by project.</strong> Use your accounting software — Xero, QuickBooks, FreeAgent, whatever you use — to tag time to specific R&D projects. If you use a time tracking tool like Toggl or Harvest, tag qualifying hours there too.</p>
+<p><strong>Track time by project.</strong> Use your accounting software, Xero, QuickBooks, FreeAgent, whatever you use, to tag time to specific R&D projects. If you use a time tracking tool like Toggl or Harvest, tag qualifying hours there too.</p>
 
 <p><strong>Keep records of failed approaches.</strong> HMRC wants to see that you tried things that didn't work. Keep notes, emails, and code commits that show the iterative process. A claim that only describes the successful outcome looks suspicious.</p>
 
@@ -144,13 +144,13 @@ keyTakeaways:
 
 <h2>When to Claim and When Not To</h2>
 
-<p>Not every SaaS agency should claim R&D tax credits. If your work is genuinely routine — building standard websites, integrating standard APIs, applying known techniques — then claiming would be a mistake. HMRC will reject it, and you'll waste time and money on the process.</p>
+<p>Not every SaaS agency should claim R&D tax credits. If your work is genuinely routine, building standard websites, integrating standard APIs, applying known techniques, then claiming would be a mistake. HMRC will reject it, and you'll waste time and money on the process.</p>
 
 <p>But if you're building bespoke software that pushes technical boundaries, the R&D tax credits for SaaS agency work can be substantial. A £30,000 claim for a profitable agency saves over £10,000 in corporation tax. For a loss-making agency, the cash credit can be a lifeline.</p>
 
 <p>The threshold is lower than most founders think. You don't need to be inventing a new programming language or building a quantum computer. You just need to be working on problems that didn't have known solutions at the time.</p>
 
-<p>If you're unsure whether your work qualifies, talk to an accountant who specialises in R&D claims. Most will give you an initial assessment for free. And if they tell you it doesn't qualify, that's valuable information too — it saves you from a rejected claim and potential penalties.</p>
+<p>If you're unsure whether your work qualifies, talk to an accountant who specialises in R&D claims. Most will give you an initial assessment for free. And if they tell you it doesn't qualify, that's valuable information too, it saves you from a rejected claim and potential penalties.</p>
 
 <p>For more on how R&D fits into your overall tax strategy, read our guide to <a href="/blog/tax-and-compliance">tax and compliance for agency founders</a>. If you're considering restructuring your agency to optimise for R&D claims, our <a href="/blog/incorporation-and-structure">incorporation and structure articles</a> cover holding companies and group structures that can help.</p>
 

@@ -25,7 +25,7 @@ faqs:
 - question: How does HMRC treat retainer income paid before I move but earned after I leave the UK?
   answer: Retainer income paid in advance is deferred revenue on your agency's balance sheet. For corporation tax purposes, it is recognised as income when earned, not when received. For your personal residence, HMRC looks at whether the work generating that income is UK substantive work. If you perform the work from Dubai under a contract with a UK client, HMRC may treat it as UK-source income. The safest approach is to restructure those contracts before your move so that the service delivery clearly happens from Dubai.
 - question: What documents should I keep if I move to Dubai as an agency founder?
-  answer: Keep your travel records (flight bookings, passport stamps, calendar entries), UK work day logs, client contracts (showing any amendments made before your move), company management meeting minutes, and bank statements showing where client payments land. Also keep evidence of your Dubai residence — tenancy agreement, utility bills, UAE residency visa, and local bank account statements. HMRC can ask for all of these in a residence enquiry, and having them organised from day one makes the process significantly smoother.
+  answer: Keep your travel records (flight bookings, passport stamps, calendar entries), UK work day logs, client contracts (showing any amendments made before your move), company management meeting minutes, and bank statements showing where client payments land. Also keep evidence of your Dubai residence, tenancy agreement, utility bills, UAE residency visa, and local bank account statements. HMRC can ask for all of these in a residence enquiry, and having them organised from day one makes the process significantly smoother.
 authorSlug: james-whitfield
 updatedDate: '2026-05-17'
 keyTakeaways:
@@ -52,20 +52,20 @@ keyTakeaways:
 <ul>
 <li><strong>Your income source.</strong> The SRT does not ask where your clients are based or where your revenue originates.</li>
 <li><strong>Your contractual obligations.</strong> It does not consider whether you have ongoing UK client contracts that require your personal involvement.</li>
-<li><strong>Your deferred revenue.</strong> It does not account for unearned income — retainers paid in advance, project deposits, or annual contracts that span your move date.</li>
+<li><strong>Your deferred revenue.</strong> It does not account for unearned income, retainers paid in advance, project deposits, or annual contracts that span your move date.</li>
 </ul>
 
 <p>These omissions matter because HMRC can use them to argue that your UK ties are stronger than the day-count suggests. And if HMRC wins that argument, you could be treated as UK resident despite spending fewer than 91 days in the country.</p>
 
 <h2>Why Deferred Revenue Creates a Hidden Problem</h2>
 
-<p>Most agencies operate on a mix of retainer and project income. A retainer paid in January for Q1 work is unearned revenue until you deliver the service. On your balance sheet, it sits as deferred income — a liability, not profit.</p>
+<p>Most agencies operate on a mix of retainer and project income. A retainer paid in January for Q1 work is unearned revenue until you deliver the service. On your balance sheet, it sits as deferred income, a liability, not profit.</p>
 
 <p>Here is the issue. If you move to Dubai in April but your agency still holds £120,000 of deferred revenue from UK client retainers covering the next six months, HMRC can argue that the economic activity generating that income is still UK-based. Your agency may be a separate legal entity, but if you are the sole director and primary service deliverer, HMRC can look through the corporate structure.</p>
 
 <p>The SRT flowchart does not flag this. It only asks about your physical location. But HMRC's guidance on the UK statutory residence test deferred revenue scenarios makes clear that income source can be a factor in the sufficient ties test, specifically the "UK substantive work" tie.</p>
 
-<p>If you are still performing work under those UK retainer contracts — even from Dubai — that work may count as UK substantive work if it relates to UK clients. And if you spend even one day in the UK doing that work, the entire day counts as a UK work day under the SRT.</p>
+<p>If you are still performing work under those UK retainer contracts, even from Dubai, that work may count as UK substantive work if it relates to UK clients. And if you spend even one day in the UK doing that work, the entire day counts as a UK work day under the SRT.</p>
 
 <h3>A Real Example</h3>
 
@@ -75,7 +75,7 @@ keyTakeaways:
 
 <p>If she also spends 40 days in the UK for personal reasons, she hits 48 UK days. That is below the 91-day automatic non-residence threshold. But because she has UK substantive work (the quarterly meetings) and a UK company she controls, the sufficient ties test may deem her UK resident.</p>
 
-<p>The SRT flowchart would not flag this. It simply counts days. But the deferred revenue from those retainer contracts is the root cause of the problem — it creates the ongoing obligation that pulls her back into the UK.</p>
+<p>The SRT flowchart would not flag this. It simply counts days. But the deferred revenue from those retainer contracts is the root cause of the problem, it creates the ongoing obligation that pulls her back into the UK.</p>
 
 <h2>How HMRC Views Unearned Income for Agency Founders</h2>
 
@@ -92,13 +92,13 @@ keyTakeaways:
 
 <h2>What the SRT Flowchart Misses About Your Agency Structure</h2>
 
-<p>The SRT flowchart assumes you are either an employee or self-employed. It does not handle the agency structure well — specifically, the interplay between your personal tax residence and your company's tax residence.</p>
+<p>The SRT flowchart assumes you are either an employee or self-employed. It does not handle the agency structure well, specifically, the interplay between your personal tax residence and your company's tax residence.</p>
 
 <p>Your UK company remains UK tax resident as long as it is incorporated in the UK or centrally managed and controlled from the UK. Moving to Dubai does not change your company's residence unless you also move the company's central management and control.</p>
 
 <p>That is a separate test from the SRT, and it is one the flowchart ignores entirely. If your company is still UK resident, it pays corporation tax on its worldwide profits. Your personal non-residence does not change that.</p>
 
-<p>But here is where it gets complicated. If HMRC challenges your personal non-residence, they can also argue that your company is still centrally managed and controlled from the UK — because you, the founder, are still making key decisions from the UK during your visits. That can trigger a corporation tax enquiry on top of your personal residence dispute.</p>
+<p>But here is where it gets complicated. If HMRC challenges your personal non-residence, they can also argue that your company is still centrally managed and controlled from the UK, because you, the founder, are still making key decisions from the UK during your visits. That can trigger a corporation tax enquiry on top of your personal residence dispute.</p>
 
 <p>The SRT flowchart gives you no warning about this cascade effect. It only handles your personal days.</p>
 
@@ -138,7 +138,7 @@ keyTakeaways:
 
 <p>The SRT flowchart is a useful tool. But it was not designed for agency founders with ongoing UK client contracts, deferred revenue, and complex corporate structures. If you rely on it alone, you risk an expensive and time-consuming HMRC enquiry.</p>
 
-<p>The UK statutory residence test deferred revenue issue is real. It affects how HMRC views your ties to the UK, your income source, and ultimately your residence status. Addressing it before you move — by restructuring contracts, reducing personal involvement, and documenting your economic shift — is the only way to make your day-count test reliable.</p>
+<p>The UK statutory residence test deferred revenue issue is real. It affects how HMRC views your ties to the UK, your income source, and ultimately your residence status. Addressing it before you move, by restructuring contracts, reducing personal involvement, and documenting your economic shift, is the only way to make your day-count test reliable.</p>
 
 <p>If your agency holds significant deferred revenue from UK clients and you are planning a move to Dubai, speak to a specialist accountant before you book the flights. The SRT flowchart will not save you. Good advice will.</p>
 

@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/ballpen-on-a-blank-document-beside-an-eyeglasses-6929017/
   source: Pexels
 h1: 'UAE VAT Registration Threshold: The Supply of Services Trap That Catches Agency Founders with One Big Client'
-summary: Most agency founders know the AED 375,000 UAE VAT registration threshold exists. What catches them out is the supply of services rule — one large retainer contract can push you over the limit before you've invoiced a single dirham. This post explains the trap, the timing rules, and what to do if you're about to land a big client.
+summary: Most agency founders know the AED 375,000 UAE VAT registration threshold exists. What catches them out is the supply of services rule, one large retainer contract can push you over the limit before you've invoiced a single dirham. This post explains the trap, the timing rules, and what to do if you're about to land a big client.
 schema: ''
 faqs:
 - question: What is the UAE VAT registration threshold for agency services in 2025?
@@ -108,7 +108,7 @@ keyTakeaways:
 <p>Not every UAE contract triggers registration. The key exceptions for agency founders are:</p>
 
 <ul>
-<li><strong>Supplies to non-registered persons outside the UAE.</strong> If your client is based in Saudi Arabia and does not have a UAE establishment, the supply may be outside the scope of UAE VAT. But be careful — if the client has a UAE branch or the services are performed in the UAE, the rules change.</li>
+<li><strong>Supplies to non-registered persons outside the UAE.</strong> If your client is based in Saudi Arabia and does not have a UAE establishment, the supply may be outside the scope of UAE VAT. But be careful, if the client has a UAE branch or the services are performed in the UAE, the rules change.</li>
 <li><strong>Zero-rated supplies.</strong> Some services are zero-rated for UAE VAT, including certain export-related services and international transport. Most agency services (marketing, PR, web design, recruitment) are standard-rated at 5%.</li>
 <li><strong>Exempt supplies.</strong> Financial services and residential property are exempt. Agency services are almost never exempt.</li>
 </ul>

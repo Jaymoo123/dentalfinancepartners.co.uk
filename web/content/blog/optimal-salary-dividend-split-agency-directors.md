@@ -65,7 +65,7 @@ keyTakeaways:
 
 <p>Here is the standard recommendation for most agency directors: take a salary of £12,570 per year, and take the rest as dividends.</p>
 
-<p>Why £12,570 exactly? Because that is your personal allowance. You pay zero income tax on that salary. You also pay zero employee NI, because the primary threshold is also £12,570. And your agency pays zero employer NI, because the secondary threshold is £9,100. Wait — does that mean employer NI kicks in at £9,100?</p>
+<p>Why £12,570 exactly? Because that is your personal allowance. You pay zero income tax on that salary. You also pay zero employee NI, because the primary threshold is also £12,570. And your agency pays zero employer NI, because the secondary threshold is £9,100. Wait, does that mean employer NI kicks in at £9,100?</p>
 
 <p>Yes. So technically, if you take a salary of £12,570, your agency pays 13.8% employer NI on the earnings above £9,100. That is 13.8% of £3,470, which equals £479 per year. Some directors take a salary of exactly £9,100 to avoid that employer NI entirely. But that means you miss out on building your state pension entitlement, because NI contributions below £12,570 still count toward your qualifying years.</p>
 
@@ -78,16 +78,16 @@ keyTakeaways:
 <ul>
 <li><strong>Salary:</strong> £12,570. No income tax, no employee NI. Agency pays £479 employer NI.</li>
 <li><strong>Profit after salary and employer NI:</strong> £100,000 minus £12,570 minus £479 = £86,951</li>
-<li><strong>Corporation tax at 19%:</strong> £16,521 (because £86,951 is above £50,000, so marginal relief applies, but for simplicity assume 19% on profits under £50k and 25% on the rest — in reality it is marginal relief, which I will cover in a moment)</li>
+<li><strong>Corporation tax at 19%:</strong> £16,521 (because £86,951 is above £50,000, so marginal relief applies, but for simplicity assume 19% on profits under £50k and 25% on the rest, in reality it is marginal relief, which I will cover in a moment)</li>
 </ul>
 
-<p>Actually, let me be more precise. If your total profits (including the salary and NI) are £100,000, then your taxable profit is £100,000 minus the salary and employer NI deduction. Wait — the salary and employer NI are already deducted before profit is calculated. So let me redo this properly.</p>
+<p>Actually, let me be more precise. If your total profits (including the salary and NI) are £100,000, then your taxable profit is £100,000 minus the salary and employer NI deduction. Wait, the salary and employer NI are already deducted before profit is calculated. So let me redo this properly.</p>
 
 <p>Your agency has turnover of, say, £300,000. Operating costs (staff, software, rent, etc.) are £200,000. That leaves £100,000 profit before your director pay. You then pay yourself £12,570 salary, and the agency pays £479 employer NI. These are both deductible expenses, so the profit left for corporation tax is £100,000 minus £12,570 minus £479 = £86,951.</p>
 
 <p>Corporation tax on £86,951: because profits fall between £50,000 and £250,000, marginal relief applies. The effective rate is around 21.5% for this level. Roughly £18,700 in corporation tax. Leaving £68,251 available for dividends.</p>
 
-<p>You take that £68,251 as dividends. The first £500 is tax-free (dividend allowance). The remaining £67,751 is taxed at 8.75% because your total income is £12,570 salary plus £68,251 dividends = £80,821, which is within the basic rate band of £50,270. Wait — no. Dividends are treated as the top slice of income. So your salary of £12,570 uses part of your basic rate band. The remaining basic rate band is £50,270 minus £12,570 = £37,700. So the first £37,700 of dividends are taxed at 8.75%. The rest (£68,251 minus £37,700 = £30,551) is taxed at 33.75%.</p>
+<p>You take that £68,251 as dividends. The first £500 is tax-free (dividend allowance). The remaining £67,751 is taxed at 8.75% because your total income is £12,570 salary plus £68,251 dividends = £80,821, which is within the basic rate band of £50,270. Wait, no. Dividends are treated as the top slice of income. So your salary of £12,570 uses part of your basic rate band. The remaining basic rate band is £50,270 minus £12,570 = £37,700. So the first £37,700 of dividends are taxed at 8.75%. The rest (£68,251 minus £37,700 = £30,551) is taxed at 33.75%.</p>
 
 <p>Total dividend tax: (£37,700 × 8.75%) + (£30,551 × 33.75%) = £3,299 + £10,311 = £13,610.</p>
 
@@ -101,7 +101,7 @@ keyTakeaways:
 
 <h2>What Changes for Higher-Profit Agencies</h2>
 
-<p>If your agency is bigger — say £500,000 profit — the maths shifts because you are in the higher rate tax bracket. Your salary stays at £12,570. But your dividends push you well into the 33.75% dividend tax bracket. And your corporation tax is at 25% on profits above £250,000.</p>
+<p>If your agency is bigger, say £500,000 profit, the maths shifts because you are in the higher rate tax bracket. Your salary stays at £12,570. But your dividends push you well into the 33.75% dividend tax bracket. And your corporation tax is at 25% on profits above £250,000.</p>
 
 <p>In that scenario, some directors consider taking a larger salary to use up the basic rate band more efficiently. But here is the problem: a larger salary attracts 13.8% employer NI and 8% employee NI. Those costs often outweigh the benefit of moving income from the 33.75% dividend rate to the 20% income tax rate.</p>
 
@@ -125,7 +125,7 @@ keyTakeaways:
 <li>Take-home: £4,969</li>
 </ul>
 
-<p>So taking it as salary gives you £7,200 take-home versus £4,969 as dividends. That is a big difference. But wait — the corporation tax is already paid on the profit before dividends. So the comparison is not quite that simple. In reality, the decision depends on whether the profit has already been earned and taxed, or whether you are deciding how to structure your pay going forward.</p>
+<p>So taking it as salary gives you £7,200 take-home versus £4,969 as dividends. That is a big difference. But wait, the corporation tax is already paid on the profit before dividends. So the comparison is not quite that simple. In reality, the decision depends on whether the profit has already been earned and taxed, or whether you are deciding how to structure your pay going forward.</p>
 
 <p>For most agency directors earning between £50,000 and £150,000 in total, the £12,570 salary plus dividends model still wins. Only when your total income exceeds about £200,000 does the higher salary route start to make sense, and even then the benefit is marginal.</p>
 
@@ -151,7 +151,7 @@ keyTakeaways:
 
 <p>For 2025/26, if your spouse has no other income, they can receive up to £12,570 in dividends tax-free (using their personal allowance) plus the £500 dividend allowance. That is £13,070 tax-free. Then the next £37,700 is taxed at 8.75%. That is a significant amount of tax-efficient income extraction.</p>
 
-<p>But — and this is important — HMRC can challenge dividend waivers and arrangements where shares are issued purely for tax avoidance. If you are setting up a spouse shareholding, do it properly. Issue actual shares with real value. Document the decision. Do not just hand over a few shares and call it done.</p>
+<p>But, and this is important, HMRC can challenge dividend waivers and arrangements where shares are issued purely for tax avoidance. If you are setting up a spouse shareholding, do it properly. Issue actual shares with real value. Document the decision. Do not just hand over a few shares and call it done.</p>
 
 <p>If you want to explore this, speak to your accountant before you issue the shares. Our ICAEW qualified team at <a href="/about">Agency Founder Finance</a> can walk you through the structure.</p>
 
@@ -186,7 +186,7 @@ keyTakeaways:
 
 <p>The salary dividend split is the foundation of tax-efficient director pay. Get it right, and you keep more of what your agency earns. Get it wrong, and you are giving HMRC money you did not need to.</p>
 
-<p>If your agency structure is more complex — multiple directors, a holding company, international operations — the optimal split changes. <a href="/contact">Get in touch with us</a> for a personal review. We work exclusively with agency founders and know the numbers inside out.</p>
+<p>If your agency structure is more complex, multiple directors, a holding company, international operations, the optimal split changes. <a href="/contact">Get in touch with us</a> for a personal review. We work exclusively with agency founders and know the numbers inside out.</p>
 
 <h2>Related articles in Salary and Dividends</h2>
 <ul>

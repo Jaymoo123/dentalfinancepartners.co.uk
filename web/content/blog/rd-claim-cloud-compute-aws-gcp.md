@@ -32,7 +32,7 @@ keyTakeaways:
 - Cloud compute costs on AWS, GCP, or GPU rental qualify for R&D tax credits only if directly attributable to a specific R&D project, not general business computing.
 - To claim cloud costs, they must be consumed in the R&D process (not reserved idle instances) and be revenue in nature, not capital.
 - Qualifying services include EC2, SageMaker, Lambda, and GPU instances used for model training or novel data processing; hosting and CDN costs do not qualify.
-- HMRC expects you to apportion cloud bills accurately—claiming the full AWS bill when only a portion relates to R&D is a red flag.
+- HMRC expects you to apportion cloud bills accurately-claiming the full AWS bill when only a portion relates to R&D is a red flag.
 - Storage costs like S3 or Cloud Storage qualify only if the data is used exclusively for R&D, not for general operations or client deliverables.
 ---
 <p>If your agency runs machine learning models, trains AI tools, processes large datasets, or develops software on cloud infrastructure, you have probably wondered whether those AWS, GCP, or GPU rental costs qualify for R&D tax credits. The short answer is yes, but only under specific conditions. HMRC has tightened the rules on what counts as qualifying expenditure for cloud compute costs, so you need to get the detail right.</p>
@@ -50,9 +50,9 @@ keyTakeaways:
 <p>For a cloud compute cost to be eligible, it must meet all three of these conditions:</p>
 
 <ul>
-<li><strong>Directly attributable to R&D</strong> — the cost must be incurred as part of a specific R&D project, not general business computing.</li>
-<li><strong>Consumed in the R&D process</strong> — you must have used the compute resource, not just reserved it. Reserved instances sitting idle do not qualify.</li>
-<li><strong>Not capital in nature</strong> — ongoing consumption costs (pay-as-you-go, spot instances, on-demand) qualify. Upfront reserved instance purchases may be treated differently.</li>
+<li><strong>Directly attributable to R&D</strong>, the cost must be incurred as part of a specific R&D project, not general business computing.</li>
+<li><strong>Consumed in the R&D process</strong>, you must have used the compute resource, not just reserved it. Reserved instances sitting idle do not qualify.</li>
+<li><strong>Not capital in nature</strong>, ongoing consumption costs (pay-as-you-go, spot instances, on-demand) qualify. Upfront reserved instance purchases may be treated differently.</li>
 </ul>
 
 <p>This is where many claims go wrong. An agency might have a £40,000 monthly AWS bill, but only £12,000 of that relates to active R&D compute. Claiming the full £40,000 is a red flag for HMRC.</p>
@@ -62,10 +62,10 @@ keyTakeaways:
 <p>The most common qualifying cloud services for agency R&D claims include:</p>
 
 <ul>
-<li><strong>AWS</strong> — EC2 instances used for model training, SageMaker for ML pipelines, Lambda functions for novel data processing, EMR for large-scale data transformation.</li>
-<li><strong>GCP</strong> — Compute Engine for training runs, Vertex AI for ML workflows, BigQuery for novel data analysis at scale, Cloud Functions for custom processing.</li>
-<li><strong>Azure</strong> — similar treatment for Azure ML, Batch AI, and custom compute workloads.</li>
-<li><strong>GPU rental</strong> — dedicated GPU instances from AWS (p3/p4/p5 instances), GCP (A100, V100), or third-party providers like Lambda Labs, Paperspace, or CoreWeave. These are often the largest single R&D cost for AI-focused agencies.</li>
+<li><strong>AWS</strong>, EC2 instances used for model training, SageMaker for ML pipelines, Lambda functions for novel data processing, EMR for large-scale data transformation.</li>
+<li><strong>GCP</strong>, Compute Engine for training runs, Vertex AI for ML workflows, BigQuery for novel data analysis at scale, Cloud Functions for custom processing.</li>
+<li><strong>Azure</strong>, similar treatment for Azure ML, Batch AI, and custom compute workloads.</li>
+<li><strong>GPU rental</strong>, dedicated GPU instances from AWS (p3/p4/p5 instances), GCP (A100, V100), or third-party providers like Lambda Labs, Paperspace, or CoreWeave. These are often the largest single R&D cost for AI-focused agencies.</li>
 </ul>
 
 <p>Storage costs (S3, Cloud Storage, EBS volumes) can qualify if the data stored is used exclusively for R&D. But data storage for general business operations, client deliverables, or backups does not qualify.</p>
@@ -75,11 +75,11 @@ keyTakeaways:
 <p>HMRC is clear that the following cloud costs do not qualify for R&D tax credits:</p>
 
 <ul>
-<li><strong>Hosting</strong> — any cloud costs for hosting live client websites, applications, or services. Even if the software was developed through R&D, the ongoing hosting is not R&D.</li>
-<li><strong>General business computing</strong> — email, CRM hosting, collaboration tools, accounting software.</li>
-<li><strong>Content delivery networks</strong> — CloudFront, Cloudflare, or similar CDN costs.</li>
-<li><strong>Reserved instances</strong> — upfront payments for reserved compute capacity, unless you can demonstrate they were used exclusively for R&D during the period.</li>
-<li><strong>Licence costs</strong> — third-party software licences embedded in cloud services, unless they are integral to the R&D and not available separately.</li>
+<li><strong>Hosting</strong>, any cloud costs for hosting live client websites, applications, or services. Even if the software was developed through R&D, the ongoing hosting is not R&D.</li>
+<li><strong>General business computing</strong>, email, CRM hosting, collaboration tools, accounting software.</li>
+<li><strong>Content delivery networks</strong>, CloudFront, Cloudflare, or similar CDN costs.</li>
+<li><strong>Reserved instances</strong>, upfront payments for reserved compute capacity, unless you can demonstrate they were used exclusively for R&D during the period.</li>
+<li><strong>Licence costs</strong>, third-party software licences embedded in cloud services, unless they are integral to the R&D and not available separately.</li>
 </ul>
 
 <p>A common mistake we see is agencies claiming the full AWS bill because "we do R&D on AWS." That is like claiming your entire office rent because you do R&D in that office. HMRC expects you to apportion costs accurately.</p>
@@ -107,12 +107,12 @@ keyTakeaways:
 <p>Let us take a 15-person AI agency based in Shoreditch. They develop custom NLP models for clients. Their annual cloud costs break down as follows:</p>
 
 <ul>
-<li><strong>AWS SageMaker and EC2 GPU instances for model training:</strong> £63,400 — fully qualifying. Tagged as R&D.</li>
-<li><strong>AWS S3 storage for training datasets:</strong> £8,200 — qualifying, as the data is used exclusively for R&D.</li>
-<li><strong>AWS EC2 instances for client API hosting:</strong> £31,500 — not qualifying. This is live service hosting.</li>
-<li><strong>AWS CloudFront CDN:</strong> £4,300 — not qualifying.</li>
-<li><strong>GCP BigQuery for novel data analysis:</strong> £14,700 — qualifying. Tagged as R&D.</li>
-<li><strong>GCP Compute Engine for general dev/test:</strong> £9,100 — partially qualifying. 60% of usage was for R&D prototyping, supported by logs.</li>
+<li><strong>AWS SageMaker and EC2 GPU instances for model training:</strong> £63,400, fully qualifying. Tagged as R&D.</li>
+<li><strong>AWS S3 storage for training datasets:</strong> £8,200, qualifying, as the data is used exclusively for R&D.</li>
+<li><strong>AWS EC2 instances for client API hosting:</strong> £31,500, not qualifying. This is live service hosting.</li>
+<li><strong>AWS CloudFront CDN:</strong> £4,300, not qualifying.</li>
+<li><strong>GCP BigQuery for novel data analysis:</strong> £14,700, qualifying. Tagged as R&D.</li>
+<li><strong>GCP Compute Engine for general dev/test:</strong> £9,100, partially qualifying. 60% of usage was for R&D prototyping, supported by logs.</li>
 </ul>
 
 <p>Total qualifying cloud compute costs: £63,400 + £8,200 + £14,700 + (£9,100 x 60%) = £91,760.</p>
@@ -132,9 +132,9 @@ keyTakeaways:
 <p>HMRC has become more sophisticated in reviewing cloud costs in R&D claims. They look for three things specifically:</p>
 
 <ul>
-<li><strong>Technical narrative</strong> — you need to describe the technical uncertainty you were trying to resolve and why cloud compute was necessary to resolve it. "We trained a model on AWS" is not enough. "We needed to process 2TB of unstructured data using a novel neural network architecture, which required GPU instances with 80GB memory per node" is better.</li>
-<li><strong>Cost breakdown</strong> — a simple total will not do. HMRC wants to see how you arrived at the figure. Tagging reports, resource logs, or time-based apportionment calculations.</li>
-<li><strong>Exclusion of non-qualifying costs</strong> — show that you have removed hosting, CDN, and general business compute. A claim that includes everything looks like you do not understand the rules.</li>
+<li><strong>Technical narrative</strong>, you need to describe the technical uncertainty you were trying to resolve and why cloud compute was necessary to resolve it. "We trained a model on AWS" is not enough. "We needed to process 2TB of unstructured data using a novel neural network architecture, which required GPU instances with 80GB memory per node" is better.</li>
+<li><strong>Cost breakdown</strong>, a simple total will not do. HMRC wants to see how you arrived at the figure. Tagging reports, resource logs, or time-based apportionment calculations.</li>
+<li><strong>Exclusion of non-qualifying costs</strong>, show that you have removed hosting, CDN, and general business compute. A claim that includes everything looks like you do not understand the rules.</li>
 </ul>
 
 <p>If your claim includes cloud compute costs over £50,000, expect HMRC to ask for supporting evidence before they process it. That is standard. Have your documentation ready.</p>

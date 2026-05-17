@@ -49,7 +49,7 @@ keyTakeaways:
 
 <p>The UAE corporate tax registration threshold for <em>registration</em> is not the same as the threshold for <em>payment</em>. Let me explain.</p>
 
-<p>Every taxable person in the UAE must register for corporate tax. A taxable person is any resident juridical person — meaning a company incorporated in the UAE — that carries on a business. There is no minimum turnover or profit that exempts you from registration entirely.</p>
+<p>Every taxable person in the UAE must register for corporate tax. A taxable person is any resident juridical person, meaning a company incorporated in the UAE, that carries on a business. There is no minimum turnover or profit that exempts you from registration entirely.</p>
 
 <p>However, the Ministry of Finance has introduced an exemption for businesses with turnover below AED 3 million in a given tax period. This exemption applies to the first two tax periods only. After that, the threshold drops to AED 375,000.</p>
 
@@ -63,7 +63,7 @@ keyTakeaways:
 
 <p>This is where the confusion starts. Many founders hear "AED 375,000 threshold" and assume their agency is safe because turnover is below that figure. But turnover and profit are different numbers.</p>
 
-<p>A web design agency turning over AED 500,000 with costs of AED 400,000 has a profit of AED 100,000. That is below AED 375,000, so no tax is due. But if that same agency has a profit of AED 400,000, it pays 9% on the AED 25,000 above the threshold — a tax bill of AED 2,250.</p>
+<p>A web design agency turning over AED 500,000 with costs of AED 400,000 has a profit of AED 100,000. That is below AED 375,000, so no tax is due. But if that same agency has a profit of AED 400,000, it pays 9% on the AED 25,000 above the threshold, a tax bill of AED 2,250.</p>
 
 <h2>What Counts as Taxable Profit</h2>
 
@@ -78,7 +78,7 @@ keyTakeaways:
 <li><strong>Unrealised gains and losses:</strong> The general rule is that realised gains and losses are taxable or deductible. Unrealised amounts may be deferred.</li>
 </ul>
 
-<p>For most small agencies — marketing, creative, digital, PR — the adjustments are minimal. Your taxable profit will closely match your accounting profit. But if you have a complex group structure or significant financing, get specific advice.</p>
+<p>For most small agencies, marketing, creative, digital, PR, the adjustments are minimal. Your taxable profit will closely match your accounting profit. But if you have a complex group structure or significant financing, get specific advice.</p>
 
 <h2>Free Zone Entities: The 0% Rate Trap</h2>
 
@@ -87,14 +87,14 @@ keyTakeaways:
 <p>The conditions include:</p>
 
 <ul>
-<li>Having adequate substance in the UAE — office space, staff, actual operations.</li>
+<li>Having adequate substance in the UAE, office space, staff, actual operations.</li>
 <li>Not conducting business with mainland UAE customers beyond a de minimis threshold (5% of total revenue or AED 5 million, whichever is lower).</li>
 <li>Complying with all transfer pricing rules.</li>
 </ul>
 
 <p>If your free zone agency meets these conditions, your qualifying income is taxed at 0%. But you still need to register for corporate tax and file a return. The 0% rate is not automatic. You claim it through your tax return.</p>
 
-<p>If you fail to meet the conditions — for example, you start trading with mainland UAE clients above the threshold — your entire profit becomes subject to the standard 9% rate. The UAE corporate tax registration threshold still applies. Only the rate changes.</p>
+<p>If you fail to meet the conditions, for example, you start trading with mainland UAE clients above the threshold, your entire profit becomes subject to the standard 9% rate. The UAE corporate tax registration threshold still applies. Only the rate changes.</p>
 
 <h2>Registration Timelines and Penalties</h2>
 
@@ -114,7 +114,7 @@ keyTakeaways:
 
 <p>You may be UK tax resident while spending time in the UAE. The UK's statutory residence test determines your residence status. If you are UK resident, your worldwide income is subject to UK tax, with credit for UAE tax paid.</p>
 
-<p>The UAE does not impose personal income tax. But corporate tax applies to your UAE company. If you are a director and shareholder, you also need to consider how you extract money from the company — salary, dividends, or director's loan.</p>
+<p>The UAE does not impose personal income tax. But corporate tax applies to your UAE company. If you are a director and shareholder, you also need to consider how you extract money from the company, salary, dividends, or director's loan.</p>
 
 <p>Dividends paid by a UAE company to a UAE resident individual are generally exempt from corporate tax. But the company must have sufficient distributable reserves. And if you are UK resident, those dividends are taxable in the UK under the normal dividend tax rules.</p>
 
@@ -134,7 +134,7 @@ keyTakeaways:
 <li><strong>Review your free zone status.</strong> If you are in a free zone, confirm you meet the substance and qualifying income conditions. If you do not, you may need to restructure.</li>
 </ol>
 
-<p>If your agency is small — say, a sole trader web designer turning over AED 200,000 — you may fall under the AED 3 million exemption for the first two years. But do not assume that exemption lasts forever. Plan for year three.</p>
+<p>If your agency is small, say, a sole trader web designer turning over AED 200,000, you may fall under the AED 3 million exemption for the first two years. But do not assume that exemption lasts forever. Plan for year three.</p>
 
 <h2>Common Questions from Agency Founders</h2>
 
@@ -145,7 +145,7 @@ keyTakeaways:
 <p>Yes. You are a taxable person. You must register and file a return. You will pay 0% tax because your profit is below AED 375,000. But the registration and filing obligations still apply.</p>
 
 <h3>Can I use my UK company structure?</h3>
-<p>Not directly. A UK company is not a UAE resident. If you operate a UAE agency, you need a UAE legal entity — either a mainland company or a free zone company. Your UK company can own the UAE entity, but the UAE entity files its own tax return.</p>
+<p>Not directly. A UK company is not a UAE resident. If you operate a UAE agency, you need a UAE legal entity, either a mainland company or a free zone company. Your UK company can own the UAE entity, but the UAE entity files its own tax return.</p>
 
 <h3>What happens if I miss the registration deadline?</h3>
 <p>You face penalties. AED 10,000 for the first late registration. AED 20,000 for each subsequent late registration. Plus late filing penalties if you also miss the return deadline. These penalties are not negotiable. Pay them or face enforcement action.</p>
@@ -154,7 +154,7 @@ keyTakeaways:
 
 <p>The UAE corporate tax registration threshold is straightforward in principle. In practice, it trips up founders because they confuse turnover with profit, assume exemption means no paperwork, or ignore free zone conditions.</p>
 
-<p>If you are a UK agency founder with a UAE operation, or planning one, get the registration done early. The cost of getting it wrong — penalties, interest, HMRC enquiries in the UK — far exceeds the cost of proper advice.</p>
+<p>If you are a UK agency founder with a UAE operation, or planning one, get the registration done early. The cost of getting it wrong, penalties, interest, HMRC enquiries in the UK, far exceeds the cost of proper advice.</p>
 
 <p>Our <a href="/services">services</a> cover both UK and UAE tax compliance for agency founders. We handle the registration, the returns, and the structuring. <a href="/contact">Contact us</a> if you need help with your specific situation.</p>
 

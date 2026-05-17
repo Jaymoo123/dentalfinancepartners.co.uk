@@ -19,7 +19,7 @@ summary: The UAE's 9% corporate tax isn't as simple as a flat rate on profits. I
 schema: ''
 faqs:
 - question: What is the connected person rule in UAE corporate tax?
-  answer: The connected person rule requires that transactions between a company and its connected persons (including the owner-manager) are priced at arm's length. If the tax authority decides a salary, bonus, or benefit is not at market rate, they can disallow the expense in the company's corporation tax computation. This means the company pays tax on that amount, while the individual has already paid personal tax on it — effectively double taxation.
+  answer: The connected person rule requires that transactions between a company and its connected persons (including the owner-manager) are priced at arm's length. If the tax authority decides a salary, bonus, or benefit is not at market rate, they can disallow the expense in the company's corporation tax computation. This means the company pays tax on that amount, while the individual has already paid personal tax on it, effectively double taxation.
 - question: Does the UAE corporate tax 9% rate apply to my salary as an owner-manager?
   answer: The 9% rate applies to your company's taxable profits, not directly to your salary. But if the tax authority challenges your salary as not at arm's length under the connected person rule, they can add the disallowed amount back to your company's profits. That portion then attracts corporate tax at 9% (or 0% if below the AED 375,000 threshold). Your personal salary remains taxable in your hands separately.
 - question: How do I set a defensible salary for my UAE agency?
@@ -39,7 +39,7 @@ keyTakeaways:
 
 <p>Not quite.</p>
 
-<p>There is a rule buried in the Corporate Tax Law that catches agency founders out regularly. It is the <strong>connected person</strong> rule. And it can mean your owner-manager salary is taxed twice — once in your hands as income, and again in your company's hands as a disallowed expense.</p>
+<p>There is a rule buried in the Corporate Tax Law that catches agency founders out regularly. It is the <strong>connected person</strong> rule. And it can mean your owner-manager salary is taxed twice, once in your hands as income, and again in your company's hands as a disallowed expense.</p>
 
 <p>Let me explain how this works, why it matters for agency founders, and what to do about it.</p>
 
@@ -47,7 +47,7 @@ keyTakeaways:
 
 <p>The UAE introduced a 9% corporate tax rate from financial years starting on or after 1 June 2023. The rate applies to taxable profits exceeding AED 375,000. Below that, the rate is 0%.</p>
 
-<p>But the law also includes transfer pricing rules. These rules require that transactions between "connected persons" are priced at arm's length. A connected person includes your spouse, your children, your parent companies, your sister companies — and crucially, <strong>you</strong> as an owner-manager.</p>
+<p>But the law also includes transfer pricing rules. These rules require that transactions between "connected persons" are priced at arm's length. A connected person includes your spouse, your children, your parent companies, your sister companies, and crucially, <strong>you</strong> as an owner-manager.</p>
 
 <p>Here is the specific risk. If you are a director and employee of your agency, any salary, bonus, or benefit you take is a transaction with a connected person. The tax authority can challenge whether that amount is at arm's length. If they decide it isn't, they can disallow the expense in your company's corporation tax computation. Your company then pays 9% (or 0% if below the threshold) on that disallowed amount. Meanwhile, you have already paid personal tax on the salary in your home country (or in the UAE if you are a resident individual with other income).</p>
 
@@ -68,7 +68,7 @@ keyTakeaways:
 
 <p>If your salary is below what an unrelated third party would pay someone doing your role, the tax authority can say: "That salary is not at arm's length. We are adding it back to your company's taxable profits."</p>
 
-<p>And if your salary is above market rate — say you pay yourself AED 80,000 per month when a comparable role would pay AED 40,000 — the excess can also be challenged.</p>
+<p>And if your salary is above market rate, say you pay yourself AED 80,000 per month when a comparable role would pay AED 40,000, the excess can also be challenged.</p>
 
 <p>The result is the same either way. Your company loses a deduction. You still pay personal tax on the full amount. The effective tax rate on that portion of your income jumps.</p>
 

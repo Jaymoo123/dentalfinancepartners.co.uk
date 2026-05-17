@@ -52,11 +52,11 @@ keyTakeaways:
 <p>Here is what drives agency valuation UK multiples in 2025:</p>
 
 <ul>
-<li><strong>Client concentration</strong> — If your top client represents more than 20% of revenue, that is a risk. Over 40% and many buyers walk away.</li>
-<li><strong>Recurring revenue</strong> — Retainers are worth more than project work. A retainer book of 60%+ pushes your multiple up.</li>
-<li><strong>Management depth</strong> — Can the agency run without you? If the answer is no, the multiple drops by 1-2x.</li>
-<li><strong>Gross margin</strong> — Healthy agencies run 50-65% gross margin. Below 40% and buyers start asking hard questions about your cost base.</li>
-<li><strong>Growth trajectory</strong> — Flat or declining revenue kills multiples. Consistent 10-20% year-on-year growth adds a premium.</li>
+<li><strong>Client concentration</strong>, If your top client represents more than 20% of revenue, that is a risk. Over 40% and many buyers walk away.</li>
+<li><strong>Recurring revenue</strong>, Retainers are worth more than project work. A retainer book of 60%+ pushes your multiple up.</li>
+<li><strong>Management depth</strong>, Can the agency run without you? If the answer is no, the multiple drops by 1-2x.</li>
+<li><strong>Gross margin</strong>, Healthy agencies run 50-65% gross margin. Below 40% and buyers start asking hard questions about your cost base.</li>
+<li><strong>Growth trajectory</strong>, Flat or declining revenue kills multiples. Consistent 10-20% year-on-year growth adds a premium.</li>
 </ul>
 
 <h2>The Standard Agency Valuation Formula</h2>
@@ -78,9 +78,9 @@ keyTakeaways:
 <p>We see the following ranges for UK agencies:</p>
 
 <ul>
-<li><strong>Small agencies (under £500k profit)</strong> — 3-4x adjusted EBITDA</li>
-<li><strong>Mid-size agencies (£500k-£2m profit)</strong> — 4-6x adjusted EBITDA</li>
-<li><strong>Larger agencies (£2m+ profit)</strong> — 5-8x adjusted EBITDA</li>
+<li><strong>Small agencies (under £500k profit)</strong>, 3-4x adjusted EBITDA</li>
+<li><strong>Mid-size agencies (£500k-£2m profit)</strong>, 4-6x adjusted EBITDA</li>
+<li><strong>Larger agencies (£2m+ profit)</strong>, 5-8x adjusted EBITDA</li>
 </ul>
 
 <p>These are broad ranges. A recruitment agency with high staff turnover and low barriers to entry might sit at the bottom. A specialist PR agency with long retainer contracts and a strong brand might sit at the top.</p>
@@ -176,10 +176,10 @@ keyTakeaways:
 <p>We see the same mistakes repeatedly. Here are the ones to avoid:</p>
 
 <ul>
-<li><strong>Overvaluing based on turnover</strong> — Revenue does not equal value. Profit and recurring revenue do.</li>
-<li><strong>Ignoring tax structuring</strong> — Selling shares rather than assets can save you tens of thousands in CGT. Business Asset Disposal Relief (BADR) gives you a 14% rate on the first £1m of gains if you qualify. Plan the structure before you negotiate.</li>
-<li><strong>Not preparing due diligence materials</strong> — Buyers will ask for three years of accounts, client lists, staff contracts, and supplier agreements. Have them ready. Delays kill momentum.</li>
-<li><strong>Negotiating without professional help</strong> — A good corporate finance advisor or M&A lawyer pays for themselves. Do not go it alone.</li>
+<li><strong>Overvaluing based on turnover</strong>, Revenue does not equal value. Profit and recurring revenue do.</li>
+<li><strong>Ignoring tax structuring</strong>, Selling shares rather than assets can save you tens of thousands in CGT. Business Asset Disposal Relief (BADR) gives you a 14% rate on the first £1m of gains if you qualify. Plan the structure before you negotiate.</li>
+<li><strong>Not preparing due diligence materials</strong>, Buyers will ask for three years of accounts, client lists, staff contracts, and supplier agreements. Have them ready. Delays kill momentum.</li>
+<li><strong>Negotiating without professional help</strong>, A good corporate finance advisor or M&A lawyer pays for themselves. Do not go it alone.</li>
 </ul>
 
 <h2>Getting a Professional Valuation</h2>
@@ -192,7 +192,7 @@ keyTakeaways:
 
 <h2>Final Thoughts</h2>
 
-<p>Your agency is worth more than you think if you run it the right way. The difference between a 3x and a 5x multiple is not luck. It is preparation. Client mix, recurring revenue, team depth, clean books — these are all within your control.</p>
+<p>Your agency is worth more than you think if you run it the right way. The difference between a 3x and a 5x multiple is not luck. It is preparation. Client mix, recurring revenue, team depth, clean books, these are all within your control.</p>
 
 <p>Start working on them now. The buyer who shows up in two years will pay you for the work you do today.</p>
 

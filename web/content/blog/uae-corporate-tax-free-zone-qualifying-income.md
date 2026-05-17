@@ -44,7 +44,7 @@ keyTakeaways:
 
 <p>To get the 0% rate, your free zone entity must:</p>
 <ul>
-<li>Be a Qualifying Free Zone Person (QFZP) — registered in a designated free zone</li>
+<li>Be a Qualifying Free Zone Person (QFZP), registered in a designated free zone</li>
 <li>Maintain adequate substance in the UAE (office, staff, bank account, real decision-making)</li>
 <li>Derive income that qualifies under the Ministerial Decision No. 100 of 2023</li>
 <li>Not have elected to be subject to the standard 9% regime</li>
@@ -68,7 +68,7 @@ keyTakeaways:
 
 <p>If your agency bills for strategy sessions, brand positioning, marketing consultancy, or advisory retainers, you are in this category. The income is only qualifying if your client is outside the UAE or is another free zone entity.</p>
 
-<p>If your client is a mainland UAE company — even if they are a Dubai-based business paying you from a local bank account — that consultancy income is not qualifying income. It gets taxed at 9%.</p>
+<p>If your client is a mainland UAE company, even if they are a Dubai-based business paying you from a local bank account, that consultancy income is not qualifying income. It gets taxed at 9%.</p>
 
 <h2>Real Scenario: Your Agency's Consultancy Fees</h2>
 <p>Let us make this concrete. You run a 15-person digital agency from Dubai Multi Commodities Centre (DMCC). Your clients include:</p>
@@ -78,7 +78,7 @@ keyTakeaways:
 <li>A mainland UAE property developer paying AED 50,000 per month for marketing consultancy and campaign management</li>
 </ul>
 
-<p>The UK client income qualifies for 0% — it is a service to a non-UAE resident. The Saudi client income also qualifies. The UAE property developer income does not qualify because it is a consultancy service provided to a mainland UAE resident.</p>
+<p>The UK client income qualifies for 0%, it is a service to a non-UAE resident. The Saudi client income also qualifies. The UAE property developer income does not qualify because it is a consultancy service provided to a mainland UAE resident.</p>
 
 <p>On the AED 50,000 per month from the UAE client (AED 600,000 per year), your agency pays 9% corporate tax on the profit. If your margin on that client is 40%, that is AED 240,000 profit taxed at 9% = AED 21,600 tax bill. Not catastrophic, but not 0% either.</p>
 
@@ -89,15 +89,15 @@ keyTakeaways:
 
 <p>Here is a practical checklist for agency founders:</p>
 <ul>
-<li>Identify each client's residency — are they in the UAE (mainland), another free zone, or outside the UAE?</li>
-<li>Classify the service — is it a qualifying activity or a consultancy service?</li>
+<li>Identify each client's residency, are they in the UAE (mainland), another free zone, or outside the UAE?</li>
+<li>Classify the service, is it a qualifying activity or a consultancy service?</li>
 <li>If it is consultancy, confirm the client is non-UAE resident or another free zone entity</li>
 <li>If it is a qualifying activity (like IT services, software development, creative production), confirm the client is non-UAE resident or free zone</li>
-<li>Document your substance — office lease, employee contracts, bank statements, board meeting minutes</li>
+<li>Document your substance, office lease, employee contracts, bank statements, board meeting minutes</li>
 <li>Keep a register of qualifying and non-qualifying income for your tax return</li>
 </ul>
 
-<p>If you have mixed income — some qualifying, some not — you can still benefit from the 0% rate on the qualifying portion. But you must file separate computations and pay 9% on the non-qualifying income.</p>
+<p>If you have mixed income, some qualifying, some not, you can still benefit from the 0% rate on the qualifying portion. But you must file separate computations and pay 9% on the non-qualifying income.</p>
 
 <h3>De Minimis Rule: A Safety Net</h3>
 <p>There is a de minimis rule. If your non-qualifying income is less than 5% of your total revenue (capped at AED 5 million), you can treat all your income as qualifying. This helps agencies with a small amount of mainland UAE consultancy work. But if your non-qualifying income exceeds that threshold, the 0% rate applies only to the qualifying portion.</p>

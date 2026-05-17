@@ -133,9 +133,9 @@ keyTakeaways:
 
 <p>First, audit your pricing. Look at every client and every project from the last 12 months. Calculate the actual margin on each one. You will find some clients are profitable and some are not. Fire the unprofitable ones. Yes, fire them. A client who costs you money is not a client.</p>
 
-<p>Second, review your software stack. Most agencies are paying for tools they do not use. Xero, QuickBooks, FreeAgent, Dext, Float, Spotlight Reporting — pick one for each function and cancel the rest. A typical agency can save £500 to £1,500 per month by rationalising software.</p>
+<p>Second, review your software stack. Most agencies are paying for tools they do not use. Xero, QuickBooks, FreeAgent, Dext, Float, Spotlight Reporting, pick one for each function and cancel the rest. A typical agency can save £500 to £1,500 per month by rationalising software.</p>
 
-<p>Third, renegotiate your supplier contracts. Your web hosting, your phone system, your insurance — all of it is negotiable. Get three quotes for each and switch if you can save 10% or more.</p>
+<p>Third, renegotiate your supplier contracts. Your web hosting, your phone system, your insurance, all of it is negotiable. Get three quotes for each and switch if you can save 10% or more.</p>
 
 <p>Fourth, look at your director's loan account. If you have borrowed money from the company, you are paying tax on that loan (S455 charge at 33.75% if it is not repaid within nine months of year end). Clear the loan. That tax saving goes straight to your bottom line.</p>
 

@@ -23,7 +23,7 @@ faqs:
 - question: What happens to deferred revenue if I sell my agency?
   answer: Deferred revenue is a liability on your balance sheet. When you sell the agency, the buyer typically requires you to leave enough cash in the business to cover the work owed to clients. Alternatively, the purchase price is adjusted downwards by the deferred revenue balance. This is a key negotiation point in agency sales. Properly tracked deferred revenue makes the due diligence process smoother.
 - question: Does deferred revenue affect my dividend calculations?
-  answer: Yes, indirectly. Dividends are paid from distributable profits (retained earnings). If your accounts correctly show deferred revenue as a liability, your retained earnings are lower than if you'd recognised all income on receipt. This means your available profit for dividends is also lower. That's correct — you shouldn't pay dividends from money you haven't earned yet.
+  answer: Yes, indirectly. Dividends are paid from distributable profits (retained earnings). If your accounts correctly show deferred revenue as a liability, your retained earnings are lower than if you'd recognised all income on receipt. This means your available profit for dividends is also lower. That's correct, you shouldn't pay dividends from money you haven't earned yet.
 - question: How do I handle deferred revenue if my client pays annually but my year-end is mid-contract?
   answer: 'Calculate the number of months from your year-end to the end of the retainer period. Divide the annual fee by 12, then multiply by the remaining months. That''s your deferred revenue balance. For example, a £24,000 annual retainer paid 1 October with a 31 March year-end: £24,000 ÷ 12 = £2,000 per month. Six months remain (April to September). Deferred revenue = £12,000. Release the other £12,000 as income for the six months already delivered.'
 authorSlug: james-whitfield
@@ -57,7 +57,7 @@ keyTakeaways:
 
 <p>Let's say your agency has a 31 March year-end. You bill a client £12,000 on 1 January for a six-month retainer running January to June.</p>
 
-<p>At 31 March, you've delivered three months of work. You recognise £6,000 as income in your P&L. The remaining £6,000 sits on your balance sheet as deferred revenue. It's a creditor — money you owe back to the client in the form of future work.</p>
+<p>At 31 March, you've delivered three months of work. You recognise £6,000 as income in your P&L. The remaining £6,000 sits on your balance sheet as deferred revenue. It's a creditor, money you owe back to the client in the form of future work.</p>
 
 <p>Your corporation tax calculation uses only the £6,000 earned. Not the full £12,000 received.</p>
 
@@ -67,7 +67,7 @@ keyTakeaways:
 
 <p>Retainer prepayments aren't just about income. They also apply to expenses. If you pay your software subscriptions, insurance, or rent annually in advance, you've prepaid an expense.</p>
 
-<p>Suppose you pay £24,000 for your annual Google Workspace, Asana, and Slack subscriptions on 1 December. Your year-end is 31 March. Only four months of that subscription relates to the current year. The remaining £16,000 is a prepayment — an asset on your balance sheet.</p>
+<p>Suppose you pay £24,000 for your annual Google Workspace, Asana, and Slack subscriptions on 1 December. Your year-end is 31 March. Only four months of that subscription relates to the current year. The remaining £16,000 is a prepayment, an asset on your balance sheet.</p>
 
 <p>You don't deduct the full £24,000 from your profits in year one. You deduct only £8,000 (four months). The rest carries forward and hits your P&L next year.</p>
 
@@ -84,7 +84,7 @@ keyTakeaways:
 <p>Most modern accounting platforms handle this if you set them up correctly. Here's how it should work in practice.</p>
 
 <h3>Xero</h3>
-<p>Create a liability account called "Deferred Revenue" or "Income in Advance." When you invoice a retainer, code the full amount to this account. Then each month, use a journal or a repeating transaction to move one month's worth from Deferred Revenue to your income account. Xero's repeating journals are perfect for this — set them up once and they run automatically.</p>
+<p>Create a liability account called "Deferred Revenue" or "Income in Advance." When you invoice a retainer, code the full amount to this account. Then each month, use a journal or a repeating transaction to move one month's worth from Deferred Revenue to your income account. Xero's repeating journals are perfect for this, set them up once and they run automatically.</p>
 
 <h3>QuickBooks</h3>
 <p>QuickBooks has a built-in "Deferred Revenue" account type under Other Current Liabilities. You can create invoices and assign them to this account. Use the "Make Recurring" function to release income monthly. Alternatively, use QuickBooks Online Plus or Advanced for project-based revenue recognition.</p>
@@ -108,7 +108,7 @@ keyTakeaways:
 
 <p>The deferred revenue movement (£17,000 increase) effectively reduces your taxable income by that amount. At 19% corporation tax (small profits rate), that's a £3,230 saving in year one. At 25% (main rate), it's £4,250.</p>
 
-<p>But here's the catch. That deferred revenue becomes taxable next year when you release it to income. You're not avoiding tax. You're deferring it. And for a growing agency, that deferral can be permanent — because your deferred revenue balance keeps increasing as you win more retainers.</p>
+<p>But here's the catch. That deferred revenue becomes taxable next year when you release it to income. You're not avoiding tax. You're deferring it. And for a growing agency, that deferral can be permanent, because your deferred revenue balance keeps increasing as you win more retainers.</p>
 
 <h2>What Happens When a Retainer Client Cancels</h2>
 
@@ -126,7 +126,7 @@ keyTakeaways:
 
 <h2>Multi-Year Retainers and Long-Term Contracts</h2>
 
-<p>Some agencies sign multi-year retainers. A web design agency might agree a three-year retainer at £5,000 per month, invoiced annually in advance. The corporation tax treatment follows the same logic — recognise income as you earn it, not as you receive it.</p>
+<p>Some agencies sign multi-year retainers. A web design agency might agree a three-year retainer at £5,000 per month, invoiced annually in advance. The corporation tax treatment follows the same logic, recognise income as you earn it, not as you receive it.</p>
 
 <p>But there's an additional consideration for long-term contracts. If your retainer includes specific deliverables (a brand strategy, a website build, a campaign) that span more than one accounting period, you may need to use percentage-of-completion accounting. This is more complex and typically requires your accountant to assess the stage of completion at each year-end.</p>
 

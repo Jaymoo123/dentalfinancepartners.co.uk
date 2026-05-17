@@ -15,7 +15,7 @@ imageCredit:
   sourceUrl: https://www.pexels.com/photo/scrabble-letters-spelling-rules-on-a-wooden-table-19856614/
   source: Pexels
 h1: Off-Payroll Rules for Agencies Engaging Contractors via Recruitment Firms
-summary: When your agency hires contractors through a recruitment firm, the off-payroll rules still apply — but the liability can shift depending on who pays the contractor’s intermediary. We explain how the fee-payer rules work, what happens when the agency is deemed the end-client, and how to structure engagements to avoid an unexpected tax bill.
+summary: When your agency hires contractors through a recruitment firm, the off-payroll rules still apply, but the liability can shift depending on who pays the contractor’s intermediary. We explain how the fee-payer rules work, what happens when the agency is deemed the end-client, and how to structure engagements to avoid an unexpected tax bill.
 schema: ''
 faqs:
 - question: If my agency uses a recruitment firm, am I still responsible for IR35 status determinations?
@@ -23,7 +23,7 @@ faqs:
 - question: Can the recruitment firm be the end-client for IR35 purposes?
   answer: Almost never. The end-client is the organisation that controls the work and receives the benefit. If your agency decides what the contractor works on, where they work, and how they are managed, you are the end-client. Some recruitment firms try to claim they are the end-client to avoid liability, but HMRC will look at the reality of the arrangement, not the contract wording.
 - question: What happens if the recruitment firm refuses to handle PAYE for an inside-IR35 contractor?
-  answer: You have two options. First, restructure the engagement so your agency pays the contractor's intermediary directly, making you the fee-payer. You then handle the PAYE and NI deductions yourself. Second, find a different recruitment firm that is willing to handle the deductions. Do not proceed with the engagement without someone handling the tax — that creates a direct liability for your agency.
+  answer: You have two options. First, restructure the engagement so your agency pays the contractor's intermediary directly, making you the fee-payer. You then handle the PAYE and NI deductions yourself. Second, find a different recruitment firm that is willing to handle the deductions. Do not proceed with the engagement without someone handling the tax, that creates a direct liability for your agency.
 - question: Does the small company exemption apply if my agency uses a recruitment firm?
   answer: 'Yes, if your agency qualifies as a small company (turnover under £10.2m, balance sheet under £5.1m, fewer than 50 employees). The exemption means the contractor''s own limited company bears the IR35 responsibility, not your agency. But be careful: if you grow past the threshold during the engagement, the rules shift. And even if exempt, you should still take reasonable care to avoid the contractor coming after you later.'
 authorSlug: james-whitfield
@@ -45,9 +45,9 @@ keyTakeaways:
 
 <h2>The Off-Payroll Rules: A Quick Refresher</h2>
 
-<p>The off-payroll rules (commonly known as IR35) apply when a contractor provides their services through an intermediary — typically their own limited company. If the contractor would be classed as an employee if they were engaged directly, they are considered "inside IR35." The engager (the agency or end-client) then becomes responsible for deducting PAYE and National Insurance from the fees paid to the contractor's intermediary.</p>
+<p>The off-payroll rules (commonly known as IR35) apply when a contractor provides their services through an intermediary, typically their own limited company. If the contractor would be classed as an employee if they were engaged directly, they are considered "inside IR35." The engager (the agency or end-client) then becomes responsible for deducting PAYE and National Insurance from the fees paid to the contractor's intermediary.</p>
 
-<p>Since April 2021, medium and large organisations in the private sector have been responsible for determining the contractor's status and issuing a Status Determination Statement (SDS). Small companies (meeting two of three criteria: turnover under £10.2m, balance sheet under £5.1m, fewer than 50 employees) are exempt — the contractor's own limited company bears the responsibility instead.</p>
+<p>Since April 2021, medium and large organisations in the private sector have been responsible for determining the contractor's status and issuing a Status Determination Statement (SDS). Small companies (meeting two of three criteria: turnover under £10.2m, balance sheet under £5.1m, fewer than 50 employees) are exempt, the contractor's own limited company bears the responsibility instead.</p>
 
 <p>But here is where it gets complicated. When a recruitment firm sits between your agency and the contractor, who is the "end-client" for IR35 purposes? And who is the "fee-payer"?</p>
 
@@ -67,7 +67,7 @@ keyTakeaways:
 
 <p>If your agency is also the fee-payer (because you pay the contractor's intermediary directly), you are also responsible for deducting PAYE and National Insurance if the contractor is inside IR35.</p>
 
-<p>If the recruitment firm is the fee-payer (because you pay them, and they pay the contractor), the recruitment firm is responsible for the tax deductions — but only if your agency has correctly determined the contractor's status and issued a compliant SDS.</p>
+<p>If the recruitment firm is the fee-payer (because you pay them, and they pay the contractor), the recruitment firm is responsible for the tax deductions, but only if your agency has correctly determined the contractor's status and issued a compliant SDS.</p>
 
 <h2>The Liability Trap: What Happens When the SDS Is Wrong</h2>
 
@@ -75,7 +75,7 @@ keyTakeaways:
 
 <p>Then HMRC investigates. They decide the contractor was actually inside IR35. Who pays?</p>
 
-<p>Under the rules, if the end-client (your agency) fails to take reasonable care in determining the contractor's status, or fails to issue a compliant SDS, the liability for the unpaid tax shifts to the end-client — even if the recruitment firm was the fee-payer.</p>
+<p>Under the rules, if the end-client (your agency) fails to take reasonable care in determining the contractor's status, or fails to issue a compliant SDS, the liability for the unpaid tax shifts to the end-client, even if the recruitment firm was the fee-payer.</p>
 
 <p>That means you could be on the hook for the contractor's unpaid income tax, employee NI, employer NI, and the Apprenticeship Levy. Plus interest. Plus penalties.</p>
 
@@ -101,7 +101,7 @@ keyTakeaways:
 
 <h3>Step 3: Agree Who Handles the Tax Deductions</h3>
 
-<p>If the contractor is inside IR35, someone needs to deduct PAYE and National Insurance. If your agency pays the recruitment firm and the recruitment firm pays the contractor, the recruitment firm should handle the deductions — but only if you have issued a compliant SDS.</p>
+<p>If the contractor is inside IR35, someone needs to deduct PAYE and National Insurance. If your agency pays the recruitment firm and the recruitment firm pays the contractor, the recruitment firm should handle the deductions, but only if you have issued a compliant SDS.</p>
 
 <p>If the recruitment firm refuses to handle the deductions (some do, because they do not want the administrative burden), you may need to restructure the engagement so your agency pays the contractor's intermediary directly. Or find a different recruitment firm.</p>
 

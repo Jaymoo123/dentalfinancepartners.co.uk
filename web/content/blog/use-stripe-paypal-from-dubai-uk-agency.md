@@ -82,10 +82,10 @@ keyTakeaways:
 <p>Popular options for agency founders in Dubai include:</p>
 
 <ul>
-<li><strong>Stripe (UAE)</strong> — Stripe operates in the UAE. You can open a UAE Stripe account using your UAE company registration and UAE bank account. Settlement is in AED. Fees are slightly higher than UK Stripe (around 2.9% + AED 1 per transaction), but the account will not be frozen.</li>
-<li><strong>Checkout.com</strong> — Based in Dubai. Good for higher-volume agencies. Offers multi-currency settlement.</li>
-<li><strong>PayTabs</strong> — Popular in the Middle East. Supports recurring billing, which is useful for retainer-based agencies.</li>
-<li><strong>Telr</strong> — Another UAE-based processor. Simple integration with most e-commerce platforms.</li>
+<li><strong>Stripe (UAE)</strong>, Stripe operates in the UAE. You can open a UAE Stripe account using your UAE company registration and UAE bank account. Settlement is in AED. Fees are slightly higher than UK Stripe (around 2.9% + AED 1 per transaction), but the account will not be frozen.</li>
+<li><strong>Checkout.com</strong>, Based in Dubai. Good for higher-volume agencies. Offers multi-currency settlement.</li>
+<li><strong>PayTabs</strong>, Popular in the Middle East. Supports recurring billing, which is useful for retainer-based agencies.</li>
+<li><strong>Telr</strong>, Another UAE-based processor. Simple integration with most e-commerce platforms.</li>
 </ul>
 
 <p>You will need a UAE company registration (a mainland or free zone licence) and a UAE corporate bank account to open these accounts. If you do not have those yet, start the process now. It can take 4-8 weeks to set up a UAE company and bank account.</p>
@@ -117,9 +117,9 @@ keyTakeaways:
 <p>Here is what you need to know:</p>
 
 <ul>
-<li><strong>Settlement in AED</strong> — Your clients will still pay in GBP (or USD, EUR), but the processor will convert the payment to AED before depositing it into your UAE bank account. The exchange rate will be set by the processor, and it will include a markup (typically 1-2% above the mid-market rate).</li>
-<li><strong>Multi-currency accounts</strong> — Some UAE processors (like Checkout.com) offer multi-currency settlement. You can hold balances in GBP, USD, or EUR and convert only when you need AED. This reduces conversion costs.</li>
-<li><strong>Fees comparison</strong> — UAE merchant account fees are generally higher than UK fees. Expect 2.5-3.5% per transaction, plus a fixed fee. UK Stripe charges 1.5% + 20p for European cards and 2.5% + 20p for non-European cards. The difference adds up, especially if you have high transaction volumes.</li>
+<li><strong>Settlement in AED</strong>, Your clients will still pay in GBP (or USD, EUR), but the processor will convert the payment to AED before depositing it into your UAE bank account. The exchange rate will be set by the processor, and it will include a markup (typically 1-2% above the mid-market rate).</li>
+<li><strong>Multi-currency accounts</strong>, Some UAE processors (like Checkout.com) offer multi-currency settlement. You can hold balances in GBP, USD, or EUR and convert only when you need AED. This reduces conversion costs.</li>
+<li><strong>Fees comparison</strong>, UAE merchant account fees are generally higher than UK fees. Expect 2.5-3.5% per transaction, plus a fixed fee. UK Stripe charges 1.5% + 20p for European cards and 2.5% + 20p for non-European cards. The difference adds up, especially if you have high transaction volumes.</li>
 </ul>
 
 <p>For a 12-person digital agency billing £800k per year, the fee difference could be £8,000-£12,000 extra per year. That is not negligible. Factor it into your budget when planning the move.</p>
@@ -141,14 +141,14 @@ keyTakeaways:
 <p>Here is a step-by-step checklist to follow if you are relocating your agency to Dubai:</p>
 
 <ol>
-<li><strong>Set up your UAE company</strong> — Choose a free zone (DMCC, DIFC, or Meydan are popular for agencies). Get your trade licence.</li>
-<li><strong>Open a UAE corporate bank account</strong> — This can take 4-8 weeks. Start early. Consider banks like Mashreq, Emirates NBD, or ADCB.</li>
-<li><strong>Apply for a UAE merchant account</strong> — Stripe UAE, Checkout.com, or PayTabs. Have your trade licence and bank account ready.</li>
-<li><strong>Notify your clients</strong> — Give them 2-4 weeks' notice of the payment processor change.</li>
-<li><strong>Migrate recurring payments</strong> — Set up new subscriptions in your UAE merchant account. Cancel old ones after the first successful payment.</li>
-<li><strong>Close your UK merchant accounts</strong> — Withdraw all balances. Close the accounts. Keep records of the closures.</li>
-<li><strong>Close or dormant your UK company</strong> — If you are not using it, close it properly. If you keep it, ensure it has no active trading.</li>
-<li><strong>Update your accounting software</strong> — Change your payment processor settings in Xero, QuickBooks, or FreeAgent. Ensure invoices reflect the new payment details.</li>
+<li><strong>Set up your UAE company</strong>, Choose a free zone (DMCC, DIFC, or Meydan are popular for agencies). Get your trade licence.</li>
+<li><strong>Open a UAE corporate bank account</strong>, This can take 4-8 weeks. Start early. Consider banks like Mashreq, Emirates NBD, or ADCB.</li>
+<li><strong>Apply for a UAE merchant account</strong>, Stripe UAE, Checkout.com, or PayTabs. Have your trade licence and bank account ready.</li>
+<li><strong>Notify your clients</strong>, Give them 2-4 weeks' notice of the payment processor change.</li>
+<li><strong>Migrate recurring payments</strong>, Set up new subscriptions in your UAE merchant account. Cancel old ones after the first successful payment.</li>
+<li><strong>Close your UK merchant accounts</strong>, Withdraw all balances. Close the accounts. Keep records of the closures.</li>
+<li><strong>Close or dormant your UK company</strong>, If you are not using it, close it properly. If you keep it, ensure it has no active trading.</li>
+<li><strong>Update your accounting software</strong>, Change your payment processor settings in Xero, QuickBooks, or FreeAgent. Ensure invoices reflect the new payment details.</li>
 </ol>
 
 <p>This process takes 2-3 months from start to finish. Do not leave it until the week you fly out. Start now.</p>
@@ -158,10 +158,10 @@ keyTakeaways:
 <p>If you have already moved and your UK Stripe or PayPal account is frozen, here is what to do:</p>
 
 <ol>
-<li><strong>Contact the processor immediately</strong> — Explain your situation. Provide any UK documents you still have (old utility bills, UK bank statements). Ask for a time-limited extension to withdraw funds.</li>
-<li><strong>Set up a UAE merchant account as fast as possible</strong> — Use your UAE company registration. This is your only long-term solution.</li>
-<li><strong>Ask clients to pay via bank transfer</strong> — In the short term, provide your UAE bank account details. Most clients will accommodate this for a month or two.</li>
-<li><strong>Consider a UK-based virtual office</strong> — If you absolutely must keep a UK merchant account, you can use a UK virtual address and a UK-based VPS to log in. But this is risky. Stripe and PayPal will eventually detect the pattern.</li>
+<li><strong>Contact the processor immediately</strong>, Explain your situation. Provide any UK documents you still have (old utility bills, UK bank statements). Ask for a time-limited extension to withdraw funds.</li>
+<li><strong>Set up a UAE merchant account as fast as possible</strong>, Use your UAE company registration. This is your only long-term solution.</li>
+<li><strong>Ask clients to pay via bank transfer</strong>, In the short term, provide your UAE bank account details. Most clients will accommodate this for a month or two.</li>
+<li><strong>Consider a UK-based virtual office</strong>, If you absolutely must keep a UK merchant account, you can use a UK virtual address and a UK-based VPS to log in. But this is risky. Stripe and PayPal will eventually detect the pattern.</li>
 </ol>
 
 <p>The longer you wait, the harder it gets. Start the UAE merchant account process today.</p>

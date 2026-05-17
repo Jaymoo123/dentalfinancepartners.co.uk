@@ -70,11 +70,11 @@ keyTakeaways:
 <p>A good agency financial model has five core tabs. You can add complexity later, but start with these:</p>
 
 <ol>
-<li><strong>Inputs</strong> — all assumptions in one place</li>
-<li><strong>Revenue</strong> — monthly revenue forecast by type</li>
-<li><strong>Costs</strong> — payroll, freelancers, overheads, and cost of sales</li>
-<li><strong>Cash flow</strong> — monthly cash movements including VAT and corporation tax</li>
-<li><strong>Outputs</strong> — summary dashboard with KPIs and charts</li>
+<li><strong>Inputs</strong>, all assumptions in one place</li>
+<li><strong>Revenue</strong>, monthly revenue forecast by type</li>
+<li><strong>Costs</strong>, payroll, freelancers, overheads, and cost of sales</li>
+<li><strong>Cash flow</strong>, monthly cash movements including VAT and corporation tax</li>
+<li><strong>Outputs</strong>, summary dashboard with KPIs and charts</li>
 </ol>
 
 <p>Do not merge these into one sheet. Keep them separate. It makes the model easier to audit and easier for an investor to follow.</p>
@@ -114,9 +114,9 @@ keyTakeaways:
 <p>Costs break into three categories in an agency model:</p>
 
 <ul>
-<li><strong>Direct costs</strong> — salaries and freelancers for billable roles. These move with revenue.</li>
-<li><strong>Overheads</strong> — rent, software, insurance, legal, accounting. These are relatively fixed.</li>
-<li><strong>Sales and marketing</strong> — business development salaries, advertising, events. These should be modelled as a percentage of revenue or as a fixed headcount plan.</li>
+<li><strong>Direct costs</strong>, salaries and freelancers for billable roles. These move with revenue.</li>
+<li><strong>Overheads</strong>, rent, software, insurance, legal, accounting. These are relatively fixed.</li>
+<li><strong>Sales and marketing</strong>, business development salaries, advertising, events. These should be modelled as a percentage of revenue or as a fixed headcount plan.</li>
 </ul>
 
 <p>Model headcount growth explicitly. Do not use a percentage of revenue. If you plan to hire two midweight creatives in month six and a senior account director in month nine, put those rows in. Investors want to see that you understand the timing of hiring and the lag between hiring and billing.</p>
@@ -132,10 +132,10 @@ keyTakeaways:
 <p>Key cash flow items agencies often miss:</p>
 
 <ul>
-<li><strong>VAT</strong> — if you are VAT registered, you collect 20% on invoices and pay it quarterly. Model the timing gap.</li>
-<li><strong>Corporation tax</strong> — due nine months and one day after your year end. If you are growing fast, the tax bill on year one profits lands in year two when you have already spent the cash.</li>
-<li><strong>Directors' loan account</strong> — if you have taken money from the company, model the repayment. S455 tax at 33.75% applies if loans are not repaid within nine months of year end.</li>
-<li><strong>Dividend payments</strong> — model these as a separate line. Investors want to see what you plan to take out versus reinvest.</li>
+<li><strong>VAT</strong>, if you are VAT registered, you collect 20% on invoices and pay it quarterly. Model the timing gap.</li>
+<li><strong>Corporation tax</strong>, due nine months and one day after your year end. If you are growing fast, the tax bill on year one profits lands in year two when you have already spent the cash.</li>
+<li><strong>Directors' loan account</strong>, if you have taken money from the company, model the repayment. S455 tax at 33.75% applies if loans are not repaid within nine months of year end.</li>
+<li><strong>Dividend payments</strong>, model these as a separate line. Investors want to see what you plan to take out versus reinvest.</li>
 </ul>
 
 <p>A good cash flow model will show you exactly when you need the investment. If you are raising £250,000, the model should show that you run out of cash in month 14 without it and stay positive through month 36 with it.</p>
