@@ -195,7 +195,7 @@
       "International Agencies"
     ],
     "supabase_table": "blog_topics_agency",
-    "source_identifier": "agency-founder-finance"
+    "source_identifier": "agency"
   },
   "seo": {
     "locale": "en-GB",
