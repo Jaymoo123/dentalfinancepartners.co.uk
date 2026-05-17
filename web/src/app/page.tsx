@@ -7,7 +7,8 @@ import { siteConfig } from "@/config/site";
 import { JsonLd, buildOrganization, buildWebSite } from "@/lib/schema";
 import { getAllPosts, getCategorySlug } from "@/lib/blog";
 import { getAllFundamentals } from "@/lib/fundamentals";
-import { ArrowRight, BookOpen } from "lucide-react";
+import { ArrowRight, BookOpen, Calculator, LineChart, Building2, FileCheck } from "lucide-react";
+import { SignupForm } from "@/components/newsletter/SignupForm";
 
 export const metadata: Metadata = {
   title: "Accountants for Marketing Agencies | Agency Founder Finance",
@@ -34,22 +35,22 @@ const services = [
   {
     title: "Tax Planning",
     description: "Salary structures, dividends, corporation tax and R&D credits optimised for agency businesses",
-    icon: "📊",
+    Icon: Calculator,
   },
   {
     title: "Management Accounts",
     description: "Monthly reporting, cash flow forecasting and KPI dashboards built around how agencies work",
-    icon: "📈",
+    Icon: LineChart,
   },
   {
     title: "Incorporation & Structure",
     description: "Sole trader to limited company, holding companies and share structures for agency founders",
-    icon: "🏢",
+    Icon: Building2,
   },
   {
     title: "IR35 & Contractors",
     description: "Compliance, SDS documentation and off-payroll guidance for agencies engaging freelancers",
-    icon: "📋",
+    Icon: FileCheck,
   },
 ];
 
@@ -64,49 +65,6 @@ const agencyTypes = [
   { label: "Recruitment agencies", href: "/agencies/recruitment-agencies" },
 ];
 
-const whoWeHelp = [
-  {
-    title: "New agency founders",
-    subtitle: "Pre-incorporation or first year trading",
-    points: [
-      "Sole trader vs limited company decision",
-      "First salary and dividend structure",
-      "VAT registration and scheme selection",
-      "Setting up management accounts from day one",
-    ],
-  },
-  {
-    title: "Early-stage founders",
-    subtitle: "Up to £500k revenue",
-    points: [
-      "Optimal extraction as you grow headcount",
-      "IR35 compliance for your first contractors",
-      "R&D tax credit eligibility assessment",
-      "Cash flow visibility and runway planning",
-    ],
-  },
-  {
-    title: "Growth-stage founders",
-    subtitle: "£500k to £3m revenue",
-    points: [
-      "Corporation tax and R&D tax credits",
-      "Director salary optimisation across shareholders",
-      "Monthly management accounts and KPI reporting",
-      "Holding company or group restructuring analysis",
-    ],
-  },
-  {
-    title: "Exit-planning founders",
-    subtitle: "Preparing for sale or MBO",
-    points: [
-      "Business Asset Disposal Relief planning",
-      "Agency valuation and goodwill structuring",
-      "Earn-out tax planning and negotiation support",
-      "Pre-exit tax efficiency review",
-    ],
-  },
-];
-
 const keyStats = [
   { value: "73+", label: "Agency clients served" },
   { value: "£30M+", label: "In agency finance managed" },
@@ -115,11 +73,11 @@ const keyStats = [
 ];
 
 const trustBadges = [
-  "ICAEW qualified",
-  "Agency specialists",
-  "24hr response",
-  "Fixed fees",
-  "UK & UAE founders",
+  "73 UK agencies",
+  "£30M+ managed",
+  "UK + Dubai",
+  "Agency-only focus",
+  "ICAEW network",
 ];
 
 export default function HomePage() {
@@ -149,12 +107,12 @@ export default function HomePage() {
               ICAEW qualified accountants for agency founders
             </div>
             <h1 className="text-3xl font-bold leading-[1.15] text-white sm:text-5xl sm:leading-[1.1] lg:text-7xl">
-              The accountant
+              Accountants for marketing agencies
               <br />
-              <span className="text-indigo-400">built for agencies.</span>
+              <span className="text-indigo-400">and 18 other types.</span>
             </h1>
             <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-slate-200 sm:text-xl lg:text-2xl max-w-2xl">
-              Tax planning, management accounts, IR35 and exit strategy. All designed around how agency businesses actually work.
+              From first-incorporation decisions to mid-7-figure exits. ICAEW-qualified network, agency-only focus, optional Dubai support when you&rsquo;re ready to leave.
             </p>
             <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact" className={`${btnPrimary} text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
@@ -202,15 +160,18 @@ export default function HomePage() {
             </p>
           </div>
           <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {services.map((service) => (
-              <div key={service.title} className="text-center group">
-                <div className="mx-auto flex h-16 w-16 sm:h-20 sm:w-20 items-center justify-center bg-gradient-to-br from-indigo-500 to-indigo-700 text-3xl sm:text-4xl mb-3 sm:mb-4 shadow-lg hover:shadow-xl transition-all hover:scale-105">
-                  {service.icon}
+            {services.map((service) => {
+              const Icon = service.Icon;
+              return (
+                <div key={service.title} className="text-center group">
+                  <div className="mx-auto flex h-16 w-16 sm:h-20 sm:w-20 items-center justify-center bg-gradient-to-br from-indigo-500 to-indigo-700 mb-3 sm:mb-4 shadow-lg hover:shadow-xl transition-all hover:scale-105">
+                    <Icon className="h-7 w-7 sm:h-9 sm:w-9 text-white" strokeWidth={1.75} />
+                  </div>
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900">{service.title}</h3>
+                  <p className="mt-1.5 sm:mt-2 text-sm text-slate-600">{service.description}</p>
                 </div>
-                <h3 className="text-base sm:text-lg font-bold text-slate-900">{service.title}</h3>
-                <p className="mt-1.5 sm:mt-2 text-sm text-slate-600">{service.description}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
           <div className="text-center mt-10">
             <Link href="/services" className={`${btnSecondary}`}>
@@ -246,36 +207,6 @@ export default function HomePage() {
                 </span>
                 <ArrowRight className="mt-2 h-4 w-4 text-slate-400 group-hover:text-indigo-400 group-hover:translate-x-1 transition-all" />
               </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Who We Help */}
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
-              Built for every stage of your agency
-            </h2>
-            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
-              The questions you have as a founder change as your agency grows. We are with you from day one to exit.
-            </p>
-          </div>
-          <div className="grid gap-6 sm:gap-8 md:grid-cols-2 xl:grid-cols-4">
-            {whoWeHelp.map((segment) => (
-              <div key={segment.title} className="bg-slate-50 p-6 sm:p-8 border-l-4 border-indigo-600">
-                <h3 className="text-lg sm:text-xl font-bold text-slate-900">{segment.title}</h3>
-                <p className="mt-2 text-xs sm:text-sm font-bold text-indigo-700 uppercase tracking-wider">{segment.subtitle}</p>
-                <ul className="mt-4 sm:mt-6 space-y-2 sm:space-y-3">
-                  {segment.points.map((point, idx) => (
-                    <li key={idx} className="flex items-start gap-2 sm:gap-3 text-sm text-slate-700">
-                      <span className="text-indigo-600 font-bold flex-shrink-0 text-base sm:text-lg">✓</span>
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
             ))}
           </div>
         </div>
@@ -370,6 +301,21 @@ export default function HomePage() {
           </div>
         </section>
       )}
+
+      {/* Newsletter inline */}
+      <section className="bg-slate-50 py-12 sm:py-16">
+        <div className={siteContainerLg}>
+          <div className="max-w-2xl mx-auto">
+            <SignupForm
+              source="homepage-mid"
+              variant="card"
+              heading="One tax idea a week. Thursdays."
+              body="A short read for UK agency founders: tax, pay, structure, exit. Plain text, one CTA, unsubscribe one click."
+              showAgencyType={false}
+            />
+          </div>
+        </div>
+      </section>
 
       {/* Latest Insights */}
       {recentPosts.length > 0 && (
