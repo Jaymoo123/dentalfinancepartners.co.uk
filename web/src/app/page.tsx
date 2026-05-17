@@ -248,9 +248,6 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
-          <p className="text-center mt-6 text-sm text-slate-400">
-            Also: content, email, influencer, performance, ecommerce, automation, AI, software, UX, branding, and more.
-          </p>
         </div>
       </section>
 
@@ -331,10 +328,12 @@ export default function HomePage() {
                   >
                     {guide.image ? (
                       <div className="relative h-40 overflow-hidden">
-                        <img
+                        <Image
                           src={guide.image}
                           alt={guide.altText || guide.title}
-                          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          fill
+                          sizes="(min-width: 768px) 33vw, 100vw"
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-slate-900/30" />
                         <div className="absolute bottom-3 left-3 bg-indigo-600 px-2.5 py-1 text-[10px] font-bold text-white uppercase tracking-wider">
@@ -499,7 +498,7 @@ export default function HomePage() {
                 },
                 {
                   q: "What does an agency accountant cost?",
-                  a: "It depends on the complexity of your business and what you need. Simple limited company accounts with a single director start from around £1,200 per year. Full management accounts with tax planning, payroll and IR35 support for a growing agency typically run £3,000 to £8,000 per year. We provide fixed-fee quotes after an initial call.",
+                  a: "Fees depend on the complexity of your agency — number of directors, payroll size, VAT scheme, R&D activity, international exposure. Rather than publish a tiered price list that won't apply to most agencies, we quote fixed fees after a short discovery call so you know exactly what you're paying for upfront.",
                 },
               ].map((item) => (
                 <details key={item.q} className="group bg-slate-50 border-l-4 border-slate-300 hover:border-indigo-600 transition-all">
