@@ -1,33 +1,40 @@
 ---
-title: "How to Set Up a Family Investment Company for Your Agency to Save Inheritance Tax"
-slug: "family-investment-company-agency-inheritance-tax"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/family-investment-company-agency-inheritance-tax"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Family Investment Company for Agency Inheritance Tax Savings"
-metaDescription: "Set up a family investment company to pass your agency to your children without a 40% inheritance tax bill. Practical guide for UK agency founders."
-altText: "Agency founder reviewing estate planning documents with an ICAEW qualified accountant in a modern UK office"
-image: "/blog/family-investment-company-agency-inheritance-tax.jpg"
+title: How to Set Up a Family Investment Company for Your Agency to Save Inheritance Tax
+slug: family-investment-company-agency-inheritance-tax
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/family-investment-company-agency-inheritance-tax
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: Family Investment Company for Agency Inheritance Tax Savings
+metaDescription: Set up a family investment company to pass your agency to your children without a 40% inheritance tax bill. Practical guide for UK agency founders.
+altText: Agency founder reviewing estate planning documents with an ICAEW qualified accountant in a modern UK office
+image: /blog/family-investment-company-agency-inheritance-tax.jpg
 imageCredit:
-  photographer: "Ann H"
-  photographerUrl: "https://www.pexels.com/@ann-h-45017"
-  sourceUrl: "https://www.pexels.com/photo/wooden-blocks-spelling-startup-concept-32319625/"
-  source: "Pexels"
-h1: "How to Set Up a Family Investment Company for Your Agency to Save Inheritance Tax"
-summary: "A family investment company (FIC) lets you pass agency shares to your children while retaining control. The shares sit outside your estate after seven years, cutting inheritance tax. Here is how to set one up properly."
-schema: ""
+  photographer: Ann H
+  photographerUrl: https://www.pexels.com/@ann-h-45017
+  sourceUrl: https://www.pexels.com/photo/wooden-blocks-spelling-startup-concept-32319625/
+  source: Pexels
+h1: How to Set Up a Family Investment Company for Your Agency to Save Inheritance Tax
+summary: A family investment company (FIC) lets you pass agency shares to your children while retaining control. The shares sit outside your estate after seven years, cutting inheritance tax. Here is how to set one up properly.
+schema: ''
 faqs:
-  - question: "What is a family investment company and how does it save inheritance tax on my agency?"
-    answer: "A family investment company (FIC) is a private company that holds shares in your trading agency. You gift shares in the FIC to your children over time. After seven years, those shares leave your estate for IHT purposes. You retain control through a separate class of voting shares. The result is that your agency's value passes to your children without the 40% IHT charge."
-  - question: "How much does it cost to set up a family investment company for an agency?"
-    answer: "Solicitor fees typically run £5,000 to £15,000 for the articles, shareholder agreement, and share-for-share exchange. Accountancy fees add £2,000 to £5,000 for structuring and modelling. Ongoing annual costs are £1,500 to £3,000. On a £2m agency, the IHT saving is roughly £800k, so the setup costs are a fraction of the benefit."
-  - question: "Can I still control my agency after putting shares into a family investment company?"
-    answer: "Yes. You hold a separate class of voting shares (typically A shares) that give you control over dividends, board appointments, and any sale. Your children hold non-voting shares (B shares) that carry the economic value but no control. You run the agency exactly as before. Your children cannot force decisions or demand payouts."
-  - question: "What happens to capital gains tax if my children sell the agency later?"
-    answer: "Your children inherit your base cost in the FIC shares. If the agency is sold, they pay capital gains tax on the gain from your original cost. Business Asset Disposal Relief (BADR) may apply at 14% if they hold at least 5% of the shares and are employees or officers. If they are not involved in the agency, the rate is 20%. Your accountant should model this before you set up the FIC."
+- question: What is a family investment company and how does it save inheritance tax on my agency?
+  answer: A family investment company (FIC) is a private company that holds shares in your trading agency. You gift shares in the FIC to your children over time. After seven years, those shares leave your estate for IHT purposes. You retain control through a separate class of voting shares. The result is that your agency's value passes to your children without the 40% IHT charge.
+- question: How much does it cost to set up a family investment company for an agency?
+  answer: Solicitor fees typically run £5,000 to £15,000 for the articles, shareholder agreement, and share-for-share exchange. Accountancy fees add £2,000 to £5,000 for structuring and modelling. Ongoing annual costs are £1,500 to £3,000. On a £2m agency, the IHT saving is roughly £800k, so the setup costs are a fraction of the benefit.
+- question: Can I still control my agency after putting shares into a family investment company?
+  answer: Yes. You hold a separate class of voting shares (typically A shares) that give you control over dividends, board appointments, and any sale. Your children hold non-voting shares (B shares) that carry the economic value but no control. You run the agency exactly as before. Your children cannot force decisions or demand payouts.
+- question: What happens to capital gains tax if my children sell the agency later?
+  answer: Your children inherit your base cost in the FIC shares. If the agency is sold, they pay capital gains tax on the gain from your original cost. Business Asset Disposal Relief (BADR) may apply at 14% if they hold at least 5% of the shares and are employees or officers. If they are not involved in the agency, the rate is 20%. Your accountant should model this before you set up the FIC.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A family investment company lets you gift agency shares to your children while retaining voting control through separate share classes.
+- Gifted shares in the FIC leave your estate after seven years, potentially saving up to £800,000 in inheritance tax on a £2m agency.
+- The FIC is a private limited company, not a trust, offering more flexibility in control and dividend decisions under company law.
+- Each gift of FIC shares is a potentially exempt transfer; surviving seven years removes the value from your estate for IHT purposes.
+- With a FIC, your estate may drop below the £325,000 IHT threshold, reducing tax from 40% on the full agency value to a minimal amount.
 ---
-
 <h2>Your Agency Is Worth More Than You Think. That Creates a Problem.</h2>
 <p>You have built a profitable agency. Let us say it turns over £1.2m with a 55% gross margin. You own 100% of the shares. On paper, the business is worth £1.5m to £3m depending on your net profit and growth rate.</p>
 <p>That is a good problem to have. But it creates a real tax problem when you die.</p>

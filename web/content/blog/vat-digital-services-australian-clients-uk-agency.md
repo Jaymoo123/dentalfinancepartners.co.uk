@@ -1,33 +1,40 @@
 ---
-title: "VAT Rules for Selling Digital Services to Australian Clients from a UK Agency"
-slug: "vat-digital-services-australian-clients-uk-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/vat-digital-services-australian-clients-uk-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "VAT on Digital Services to Australian Clients: UK Agency"
-metaDescription: "UK agencies selling digital services to Australian clients: no UK VAT to charge. Here's what you need to know about GST, reverse charges, and your VAT"
-altText: "UK agency founder reviewing a contract for digital services with an Australian client, laptop and paperwork on a desk in a modern London office"
-image: "/blog/vat-digital-services-australian-clients-uk-agency.jpg"
+title: VAT Rules for Selling Digital Services to Australian Clients from a UK Agency
+slug: vat-digital-services-australian-clients-uk-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/vat-digital-services-australian-clients-uk-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'VAT on Digital Services to Australian Clients: UK Agency'
+metaDescription: 'UK agencies selling digital services to Australian clients: no UK VAT to charge. Here''s what you need to know about GST, reverse charges, and your VAT'
+altText: UK agency founder reviewing a contract for digital services with an Australian client, laptop and paperwork on a desk in a modern London office
+image: /blog/vat-digital-services-australian-clients-uk-agency.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/the-words-trading-rules-on-wooden-blocks-19813731/"
-  source: "Pexels"
-h1: "What Are the VAT Rules for Selling Digital Services to Australian Clients from a UK Agency?"
-summary: "UK agencies selling digital services to Australian clients generally do not charge UK VAT. But the rules depend on whether your client is a business or a consumer, and Australia's GST system may apply. Here is exactly how it works."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/the-words-trading-rules-on-wooden-blocks-19813731/
+  source: Pexels
+h1: What Are the VAT Rules for Selling Digital Services to Australian Clients from a UK Agency?
+summary: UK agencies selling digital services to Australian clients generally do not charge UK VAT. But the rules depend on whether your client is a business or a consumer, and Australia's GST system may apply. Here is exactly how it works.
+schema: ''
 faqs:
-  - question: "Do I charge UK VAT on digital services to Australian clients?"
-    answer: "No. Digital services supplied to Australian clients are outside the scope of UK VAT. You do not charge VAT. You record the sale in boxes 6 and 7 of your VAT return, not box 1. Your invoice should state \"Outside the scope of UK VAT.\""
-  - question: "Do I need to register for Australian GST?"
-    answer: "Only if you sell B2C digital services to Australian consumers and your turnover from those consumers exceeds AUD 75,000 per year. If you sell B2B to Australian businesses, your client accounts for GST under the reverse charge. You do not need to register."
-  - question: "What if I accidentally charged UK VAT on an invoice to an Australian client?"
-    answer: "If you catch the error in the same VAT quarter, issue a credit note and re-invoice correctly. If it is in a previous quarter, you may need to submit a VAT error correction (form VAT652) or adjust your next return. Do not simply refund the VAT without correcting your return, as HMRC will still expect the VAT you collected."
-  - question: "Does the Flat Rate VAT scheme change the rules for Australian clients?"
-    answer: "No. The same place of supply rules apply. Sales to Australian clients are outside the scope of UK VAT, even if you use the Flat Rate scheme. You do not include those sales in your flat rate percentage calculation. Record them in boxes 6 and 7 on your VAT return as normal."
+- question: Do I charge UK VAT on digital services to Australian clients?
+  answer: No. Digital services supplied to Australian clients are outside the scope of UK VAT. You do not charge VAT. You record the sale in boxes 6 and 7 of your VAT return, not box 1. Your invoice should state "Outside the scope of UK VAT."
+- question: Do I need to register for Australian GST?
+  answer: Only if you sell B2C digital services to Australian consumers and your turnover from those consumers exceeds AUD 75,000 per year. If you sell B2B to Australian businesses, your client accounts for GST under the reverse charge. You do not need to register.
+- question: What if I accidentally charged UK VAT on an invoice to an Australian client?
+  answer: If you catch the error in the same VAT quarter, issue a credit note and re-invoice correctly. If it is in a previous quarter, you may need to submit a VAT error correction (form VAT652) or adjust your next return. Do not simply refund the VAT without correcting your return, as HMRC will still expect the VAT you collected.
+- question: Does the Flat Rate VAT scheme change the rules for Australian clients?
+  answer: No. The same place of supply rules apply. Sales to Australian clients are outside the scope of UK VAT, even if you use the Flat Rate scheme. You do not include those sales in your flat rate percentage calculation. Record them in boxes 6 and 7 on your VAT return as normal.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- UK agencies selling digital services to Australian clients do not charge UK VAT because the place of supply is Australia.
+- For B2B supplies, record the sale in boxes 6 and 7 of your VAT return, not box 1.
+- Australian business clients may need to self-assess 10% GST under the reverse charge; you do not collect it.
+- For B2C supplies, you may need to register for Australian GST if your turnover from Australian consumers exceeds AUD 75,000 per year.
+- Invoice B2B clients with no UK VAT and a note that they may need to account for GST under the reverse charge.
 ---
-
 <p>If you run a UK-based agency and you sell digital services to a client in Australia, the VAT treatment is straightforward in most cases. You do not charge UK VAT. But there are exceptions, and you need to get the paperwork right to satisfy HMRC.</p>
 
 <p>The core rule is this: for VAT purposes, the place of supply for digital services to a client outside the UK is where the client belongs, not where you are based. That means the supply is outside the scope of UK VAT. You do not add 20% to your invoice. You do not declare the sale on your VAT return as a standard-rated supply.</p>

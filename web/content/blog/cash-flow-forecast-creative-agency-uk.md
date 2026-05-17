@@ -1,33 +1,40 @@
 ---
-title: "How to Forecast Cash Flow for a Creative Agency with Seasonal Client Work"
-slug: "cash-flow-forecast-creative-agency-uk"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/cash-flow-forecast-creative-agency-uk"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "Cash flow forecast creative agency: 7 survival steps"
-metaDescription: "Forecast cash flow for your creative agency. 7 practical steps to handle seasonal client work, avoid shortfalls, and plan for growth. Real numbers, real"
-altText: "Creative agency founder reviewing a cash flow forecast spreadsheet on a laptop in a modern UK office with a whiteboard showing quarterly projections in the background"
-image: "/blog/cash-flow-forecast-creative-agency-uk.jpg"
+title: How to Forecast Cash Flow for a Creative Agency with Seasonal Client Work
+slug: cash-flow-forecast-creative-agency-uk
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/cash-flow-forecast-creative-agency-uk
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: 'Cash flow forecast creative agency: 7 survival steps'
+metaDescription: Forecast cash flow for your creative agency. 7 practical steps to handle seasonal client work, avoid shortfalls, and plan for growth. Real numbers, real
+altText: Creative agency founder reviewing a cash flow forecast spreadsheet on a laptop in a modern UK office with a whiteboard showing quarterly projections in the background
+image: /blog/cash-flow-forecast-creative-agency-uk.jpg
 imageCredit:
-  photographer: "olia danilevich"
-  photographerUrl: "https://www.pexels.com/@olia-danilevich"
-  sourceUrl: "https://www.pexels.com/photo/top-view-photo-of-notebook-near-money-5466800/"
-  source: "Pexels"
-h1: "How to Forecast Cash Flow for a Creative Agency with Seasonal Client Work"
-summary: "Seasonal client work creates cash flow spikes and dips that can sink a creative agency. Here is how to build a cash flow forecast that accounts for those swings, with worked examples and specific numbers you can adapt for your own business."
-schema: ""
+  photographer: olia danilevich
+  photographerUrl: https://www.pexels.com/@olia-danilevich
+  sourceUrl: https://www.pexels.com/photo/top-view-photo-of-notebook-near-money-5466800/
+  source: Pexels
+h1: How to Forecast Cash Flow for a Creative Agency with Seasonal Client Work
+summary: Seasonal client work creates cash flow spikes and dips that can sink a creative agency. Here is how to build a cash flow forecast that accounts for those swings, with worked examples and specific numbers you can adapt for your own business.
+schema: ''
 faqs:
-  - question: "How far ahead should a creative agency forecast cash flow?"
-    answer: "Run two forecasts simultaneously. A 13-week rolling forecast for operational decisions (can I make payroll? should I take on that project?) and a 12-month forecast for strategic planning (when should I hire? can I afford that new software?). Update the 13-week one weekly. Review the 12-month one quarterly."
-  - question: "What is the best accounting software for cash flow forecasting in a creative agency?"
-    answer: "Xero and QuickBooks both have cash flow forecasting features built in or available through add-ons like Float and Spotlight Reporting. FreeAgent is simpler but adequate for smaller agencies. The best software is the one you actually use. A well-maintained spreadsheet is better than an expensive tool you never open."
-  - question: "How much cash reserve should a seasonal creative agency hold?"
-    answer: "Aim for 2-3 months of fixed costs. If your fixed costs (salaries, rent, subscriptions, insurance) are £52,000 per month, hold £104,000 to £156,000 in a separate business savings account. That covers the January and August troughs without needing to borrow. Build it up during your peak months and top it up annually."
-  - question: "Can invoice finance help with seasonal cash flow gaps?"
-    answer: "Yes, but use it as a bridge, not a crutch. If you have £80,000 of unpaid invoices from your peak season, invoice finance can release 80-90% of that within 24 hours. The cost is typically 1-3% of the invoice value. It is useful for covering a 4-6 week gap, but it should not replace a proper cash reserve. Arrange the facility before you need it."
+- question: How far ahead should a creative agency forecast cash flow?
+  answer: Run two forecasts simultaneously. A 13-week rolling forecast for operational decisions (can I make payroll? should I take on that project?) and a 12-month forecast for strategic planning (when should I hire? can I afford that new software?). Update the 13-week one weekly. Review the 12-month one quarterly.
+- question: What is the best accounting software for cash flow forecasting in a creative agency?
+  answer: Xero and QuickBooks both have cash flow forecasting features built in or available through add-ons like Float and Spotlight Reporting. FreeAgent is simpler but adequate for smaller agencies. The best software is the one you actually use. A well-maintained spreadsheet is better than an expensive tool you never open.
+- question: How much cash reserve should a seasonal creative agency hold?
+  answer: Aim for 2-3 months of fixed costs. If your fixed costs (salaries, rent, subscriptions, insurance) are £52,000 per month, hold £104,000 to £156,000 in a separate business savings account. That covers the January and August troughs without needing to borrow. Build it up during your peak months and top it up annually.
+- question: Can invoice finance help with seasonal cash flow gaps?
+  answer: Yes, but use it as a bridge, not a crutch. If you have £80,000 of unpaid invoices from your peak season, invoice finance can release 80-90% of that within 24 hours. The cost is typically 1-3% of the invoice value. It is useful for covering a 4-6 week gap, but it should not replace a proper cash reserve. Arrange the facility before you need it.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Map your actual cash cycle by using invoice date, payment terms, and realistic payment dates, not your P&L.
+- Separate retainer and project income in your forecast, as retainers are predictable but projects create volatility.
+- Build a 13-week rolling forecast to see cash gaps 3 months ahead, not a static 12-month plan.
+- Use realistic payment dates (e.g., day 45 for 30-day terms) to avoid surprise shortfalls.
+- Seasonal peaks (Sep–Dec, Mar–Apr) and troughs (Jan–Feb, Aug) require proactive funding to cover upfront costs.
 ---
-
 <p>If your creative agency relies on seasonal client work, you already know the pattern. Q4 is a mad rush of Christmas campaigns, end-of-year launches, and retainer work that doubles overnight. Then January hits and the pipeline goes quiet. Invoices you raised in November are still sitting unpaid. Your bank balance drops. You start wondering how you will make payroll in February.</p>
 
 <p>This is not a cash flow problem. It is a forecasting problem. And it is one you can solve with a decent <strong>cash flow forecast creative agency UK</strong> founders actually use, not a spreadsheet that sits in a folder.</p>

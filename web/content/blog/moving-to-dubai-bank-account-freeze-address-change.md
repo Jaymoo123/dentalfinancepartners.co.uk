@@ -1,33 +1,40 @@
 ---
-title: "Moving to Dubai with an Agency: The Bank Account Freeze Risk When You Change Your UK Address to a Dubai PO Box"
-slug: "moving-to-dubai-bank-account-freeze-address-change"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/moving-to-dubai-bank-account-freeze-address-change"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Moving to Dubai Bank Account Freeze Address Change Risk"
-metaDescription: "Changing your UK bank address to a Dubai PO Box can trigger an automatic freeze under AML rules. Here’s what agency founders must do before they move."
-altText: "Agency founder reviewing a frozen UK bank account notification on a laptop in a Dubai office"
-image: "/blog/moving-to-dubai-bank-account-freeze-address-change.jpg"
+title: 'Moving to Dubai with an Agency: The Bank Account Freeze Risk When You Change Your UK Address to a Dubai PO Box'
+slug: moving-to-dubai-bank-account-freeze-address-change
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/moving-to-dubai-bank-account-freeze-address-change
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: Moving to Dubai Bank Account Freeze Address Change Risk
+metaDescription: Changing your UK bank address to a Dubai PO Box can trigger an automatic freeze under AML rules. Here’s what agency founders must do before they move.
+altText: Agency founder reviewing a frozen UK bank account notification on a laptop in a Dubai office
+image: /blog/moving-to-dubai-bank-account-freeze-address-change.jpg
 imageCredit:
-  photographer: "Marta Branco"
-  photographerUrl: "https://www.pexels.com/@martabranco"
-  sourceUrl: "https://www.pexels.com/photo/euro-coins-and-payment-cards-close-up-37125405/"
-  source: "Pexels"
-h1: "Moving to Dubai with an Agency: The Bank Account Freeze Risk When You Change Your UK Address to a Dubai PO Box"
-summary: "Moving your UK address to a Dubai PO Box can trigger an automatic account freeze under anti-money laundering rules. This article explains why it happens, how to avoid it, and what to do if your account is already frozen."
-schema: ""
+  photographer: Marta Branco
+  photographerUrl: https://www.pexels.com/@martabranco
+  sourceUrl: https://www.pexels.com/photo/euro-coins-and-payment-cards-close-up-37125405/
+  source: Pexels
+h1: 'Moving to Dubai with an Agency: The Bank Account Freeze Risk When You Change Your UK Address to a Dubai PO Box'
+summary: Moving your UK address to a Dubai PO Box can trigger an automatic account freeze under anti-money laundering rules. This article explains why it happens, how to avoid it, and what to do if your account is already frozen.
+schema: ''
 faqs:
-  - question: "Can I use a Dubai PO Box as my residential address on a UK bank account?"
-    answer: "No. UK banks require a verified residential address under AML regulations. A PO Box is a mail forwarding service, not a residential address. Changing your address to a PO Box will likely trigger an automatic account freeze."
-  - question: "What documentation do UK banks accept for a Dubai residential address?"
-    answer: "Most UK banks accept a UAE utility bill, tenancy agreement, or bank statement showing your name and a physical address. Some also accept a copy of your UAE residence visa and Emirates ID. The exact requirements vary by bank, so check with your specific branch before you move."
-  - question: "How long does it take to unfreeze a UK bank account after a Dubai address change?"
-    answer: "Manual reviews typically take 5-15 business days, but some banks take longer. You need to provide proof of your new residential address and explain the change. Ask for a case reference number and a timeline when you call the compliance department."
-  - question: "What is the best UK bank for agency founders moving to Dubai?"
-    answer: "HSBC Expat and Barclays International are designed for cross-border clients and have compliance teams that handle non-UK addresses regularly. Digital banks like Revolut and Wise are more flexible on addresses but have lower transaction limits. Avoid changing your address on a standard high street bank account if you are moving permanently."
+- question: Can I use a Dubai PO Box as my residential address on a UK bank account?
+  answer: No. UK banks require a verified residential address under AML regulations. A PO Box is a mail forwarding service, not a residential address. Changing your address to a PO Box will likely trigger an automatic account freeze.
+- question: What documentation do UK banks accept for a Dubai residential address?
+  answer: Most UK banks accept a UAE utility bill, tenancy agreement, or bank statement showing your name and a physical address. Some also accept a copy of your UAE residence visa and Emirates ID. The exact requirements vary by bank, so check with your specific branch before you move.
+- question: How long does it take to unfreeze a UK bank account after a Dubai address change?
+  answer: Manual reviews typically take 5-15 business days, but some banks take longer. You need to provide proof of your new residential address and explain the change. Ask for a case reference number and a timeline when you call the compliance department.
+- question: What is the best UK bank for agency founders moving to Dubai?
+  answer: HSBC Expat and Barclays International are designed for cross-border clients and have compliance teams that handle non-UK addresses regularly. Digital banks like Revolut and Wise are more flexible on addresses but have lower transaction limits. Avoid changing your address on a standard high street bank account if you are moving permanently.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Changing your UK bank address to a Dubai PO Box triggers an automatic freeze under anti-money laundering rules, as a PO Box is not a residential address.
+- A frozen account can cause an operational crisis, including missed payroll, unpaid suppliers, and penalties from HMRC for late tax payments.
+- UK banks require a verified residential address—either a UK home or official documentation from your new country—to keep your account open.
+- Using a 'care of' address in the UK may not satisfy the bank if you are genuinely living in Dubai full-time, as you must prove a genuine connection.
+- To avoid a freeze, update your bank with a verified residential address, not a PO Box, and inform them of your move before changing details.
 ---
-
 <p>You decide to move your agency to Dubai. You update your UK bank address to a Dubai PO Box. Within a week, your account is frozen. No access to funds. No explanation beyond "suspicious activity." Your payroll is due in three days.</p>
 
 <p>This is not a hypothetical. I have seen it happen to agency founders who thought changing their address was a simple administrative task. The problem is structural. UK banks are required by law to verify your residential address under anti-money laundering (AML) regulations. A PO Box in Dubai does not satisfy that requirement. The bank's automated systems flag the change, trigger a freeze, and you enter a manual review queue that can take weeks.</p>

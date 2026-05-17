@@ -1,33 +1,40 @@
 ---
-title: "How Are Earn-Out Payments Taxed When You Sell Your Agency to a Competitor?"
-slug: "earn-out-payments-tax-selling-agency-competitor"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-payments-tax-selling-agency-competitor"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Earn-Out Payments Tax When Selling Your Agency: UK Guide"
-metaDescription: "Earn-out payments in agency sales can trigger CGT or income tax. We explain the difference, the tax rates, and how to structure the deal to minimise your"
-altText: "Two agency founders shaking hands after a sale, with documents and a calculator on a meeting room table in a UK office."
-image: "/blog/earn-out-payments-tax-selling-agency-competitor.jpg"
+title: How Are Earn-Out Payments Taxed When You Sell Your Agency to a Competitor?
+slug: earn-out-payments-tax-selling-agency-competitor
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-payments-tax-selling-agency-competitor
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'Earn-Out Payments Tax When Selling Your Agency: UK Guide'
+metaDescription: Earn-out payments in agency sales can trigger CGT or income tax. We explain the difference, the tax rates, and how to structure the deal to minimise your
+altText: Two agency founders shaking hands after a sale, with documents and a calculator on a meeting room table in a UK office.
+image: /blog/earn-out-payments-tax-selling-agency-competitor.jpg
 imageCredit:
-  photographer: "Tara Winstead"
-  photographerUrl: "https://www.pexels.com/@tara-winstead"
-  sourceUrl: "https://www.pexels.com/photo/multi-color-plastic-numbers-on-folder-7111513/"
-  source: "Pexels"
-h1: "How Are Earn-Out Payments Taxed When You Sell Your Agency to a Competitor?"
-summary: "Earn-out payments in agency sales are common, but their tax treatment depends on how you structure the deal. We explain the difference between capital gains tax and income tax treatment, the impact on Business Asset Disposal Relief, and how to structure your earn-out to avoid a surprise tax bill."
-schema: ""
+  photographer: Tara Winstead
+  photographerUrl: https://www.pexels.com/@tara-winstead
+  sourceUrl: https://www.pexels.com/photo/multi-color-plastic-numbers-on-folder-7111513/
+  source: Pexels
+h1: How Are Earn-Out Payments Taxed When You Sell Your Agency to a Competitor?
+summary: Earn-out payments in agency sales are common, but their tax treatment depends on how you structure the deal. We explain the difference between capital gains tax and income tax treatment, the impact on Business Asset Disposal Relief, and how to structure your earn-out to avoid a surprise tax bill.
+schema: ''
 faqs:
-  - question: "Can I get Business Asset Disposal Relief on earn-out payments?"
-    answer: "Yes, provided the earn-out is structured as deferred consideration for the shares you sold, not as a payment for ongoing services. You must qualify for BADR at the time of the original share sale (holding 5%+ shares for two years, being an officer or employee). The earn-out payments themselves are just deferred consideration for that same disposal, so BADR applies at 14% CGT."
-  - question: "What happens if HMRC treats my earn-out as income instead of capital?"
-    answer: "You pay income tax at your marginal rate (up to 45%) plus National Insurance (employee and employer, totalling up to 15.8% on amounts above thresholds). On a £500,000 earn-out, the tax bill could exceed £250,000. Compare that to £50,000 at 14% CGT under BADR. The difference is significant, which is why structuring the earn-out correctly from the start is critical."
-  - question: "Should I sell my agency as a share sale or an asset sale for the best tax treatment on earn-outs?"
-    answer: "For most agency founders, a share sale is preferable because it allows you to claim BADR on the entire gain (including earn-out payments) at 14% CGT. Asset sales are more common when the buyer wants to avoid inheriting liabilities, but the tax treatment for you is less straightforward. Discuss both options with your accountant and solicitor before agreeing heads of terms."
-  - question: "What if the earn-out is paid in shares of the buying company?"
-    answer: "You do not pay tax when you receive the shares. You pay capital gains tax when you eventually sell them. The valuation of the shares at receipt is critical for calculating your gain later. If the shares are unquoted, you may need a formal valuation. Loan notes work similarly, with interest taxed as income and the redemption gain as capital. This is specialist territory; get professional advice."
+- question: Can I get Business Asset Disposal Relief on earn-out payments?
+  answer: Yes, provided the earn-out is structured as deferred consideration for the shares you sold, not as a payment for ongoing services. You must qualify for BADR at the time of the original share sale (holding 5%+ shares for two years, being an officer or employee). The earn-out payments themselves are just deferred consideration for that same disposal, so BADR applies at 14% CGT.
+- question: What happens if HMRC treats my earn-out as income instead of capital?
+  answer: You pay income tax at your marginal rate (up to 45%) plus National Insurance (employee and employer, totalling up to 15.8% on amounts above thresholds). On a £500,000 earn-out, the tax bill could exceed £250,000. Compare that to £50,000 at 14% CGT under BADR. The difference is significant, which is why structuring the earn-out correctly from the start is critical.
+- question: Should I sell my agency as a share sale or an asset sale for the best tax treatment on earn-outs?
+  answer: For most agency founders, a share sale is preferable because it allows you to claim BADR on the entire gain (including earn-out payments) at 14% CGT. Asset sales are more common when the buyer wants to avoid inheriting liabilities, but the tax treatment for you is less straightforward. Discuss both options with your accountant and solicitor before agreeing heads of terms.
+- question: What if the earn-out is paid in shares of the buying company?
+  answer: You do not pay tax when you receive the shares. You pay capital gains tax when you eventually sell them. The valuation of the shares at receipt is critical for calculating your gain later. If the shares are unquoted, you may need a formal valuation. Loan notes work similarly, with interest taxed as income and the redemption gain as capital. This is specialist territory; get professional advice.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Earn-out payments in a share sale are treated as capital receipts, subject to capital gains tax at up to 20% or 14% with Business Asset Disposal Relief.
+- To qualify for Business Asset Disposal Relief on earn-out payments, you must meet the 5% shareholding and officer/employee conditions for two years before the sale.
+- In an asset sale, earn-out payments are typically treated as income, taxed at up to 45% plus National Insurance, unless structured as capital consideration.
+- Your solicitor must draft the share purchase agreement so the earn-out is clearly part of the consideration for shares, not a separate payment for services.
+- Business Asset Disposal Relief gives a 14% capital gains tax rate on qualifying disposals up to £1 million, rising to 18% from 6 April 2026.
 ---
-
 <p>You have found a buyer for your agency. The deal is structured as an upfront payment plus an earn-out based on the agency hitting certain revenue or profit targets over the next two to three years. That earn-out could be worth hundreds of thousands of pounds. But how is it taxed?</p>
 
 <p>The answer is not straightforward. The tax treatment of earn-out payments when <strong>selling agency tax UK</strong> planning depends entirely on how the earn-out is structured in the legal documents. Get it right and you pay capital gains tax at 14% (or 20%). Get it wrong and HMRC treats the earn-out as income, taxed at up to 45% plus National Insurance.</p>

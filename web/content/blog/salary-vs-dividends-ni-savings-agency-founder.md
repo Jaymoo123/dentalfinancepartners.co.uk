@@ -1,27 +1,34 @@
 ---
-title: "Salary vs Dividends for Agency Founders: How Much NI Can You Save?"
-slug: "salary-vs-dividends-ni-savings-agency-founder"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/salary-vs-dividends-ni-savings-agency-founder"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Salary and Dividends"
-metaTitle: "NI Savings Dividends vs Salary Agency: How Much You Save"
-metaDescription: "Paying yourself in dividends instead of salary saves up to £5,100 in NI. We show the exact numbers for a UK agency founder on £100k profit."
-altText: "Agency founder reviewing salary and dividend payment options on a laptop in a Manchester office"
-image: "/blog/salary-vs-dividends-ni-savings-agency-founder.jpg"
+title: 'Salary vs Dividends for Agency Founders: How Much NI Can You Save?'
+slug: salary-vs-dividends-ni-savings-agency-founder
+canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/salary-vs-dividends-ni-savings-agency-founder
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Salary and Dividends
+metaTitle: 'NI Savings Dividends vs Salary Agency: How Much You Save'
+metaDescription: Paying yourself in dividends instead of salary saves up to £5,100 in NI. We show the exact numbers for a UK agency founder on £100k profit.
+altText: Agency founder reviewing salary and dividend payment options on a laptop in a Manchester office
+image: /blog/salary-vs-dividends-ni-savings-agency-founder.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/white-and-black-paper-on-typewriter-5198201/"
-  source: "Pexels"
-h1: "Salary vs Dividends for Agency Founders: How Much NI Can You Save?"
-summary: "Paying yourself in dividends instead of salary can save thousands in National Insurance. We break down the exact NI savings dividends vs salary agency founders can expect, with worked examples for a typical £100k profit scenario."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/white-and-black-paper-on-typewriter-5198201/
+  source: Pexels
+h1: 'Salary vs Dividends for Agency Founders: How Much NI Can You Save?'
+summary: Paying yourself in dividends instead of salary can save thousands in National Insurance. We break down the exact NI savings dividends vs salary agency founders can expect, with worked examples for a typical £100k profit scenario.
+schema: ''
 faqs:
-  - question: "What is the optimal salary for an agency founder to minimise NI?"
-    answer: "The optimal salary for most agency founders is £12,570 per year. This is the personal allowance for income tax and"
+- question: What is the optimal salary for an agency founder to minimise NI?
+  answer: The optimal salary for most agency founders is £12,570 per year. This is the personal allowance for income tax and
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Taking £100,000 as salary costs £42,988 in tax and NI, leaving just £57,012 net.
+- Using an optimal salary of £12,570 and £87,430 in dividends cuts total tax to £20,039, netting £79,961.
+- Dividends avoid both employee NI (8% or 2%) and employer NI (13.8%), saving over £5,100 on £100,000.
+- Dividends are taxed at 8.75%, 33.75%, or 39.35% for 2025/26, but the NI saving makes the combined burden lower.
+- The £12,570 salary sits within the personal allowance and primary NI threshold, incurring zero tax and NI.
 ---
-
 <p>Every agency founder I meet asks the same question within the first few minutes of our first conversation: "Should I pay myself in salary or dividends?"</p>
 
 <p>The short answer is both. But the <strong>NI savings dividends vs salary agency</strong> founders can achieve are substantial. For a founder taking £100,000 out of their agency each year, the National Insurance saving alone is over £5,100 compared to taking the whole amount as salary.</p>

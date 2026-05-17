@@ -1,33 +1,40 @@
 ---
-title: "UK Agency Founder Moving to Dubai: Why Your Retainer Pricing Needs to Change (VAT + Currency Risk)"
-slug: "uk-agency-founder-dubai-retainer-pricing-vat-currency-risk"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-agency-founder-dubai-retainer-pricing-vat-currency-risk"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK Agency Founder Dubai Retainer Pricing: VAT & Currency"
-metaDescription: "Moving your agency from the UK to Dubai? Your retainer pricing must change. Here's why UK VAT to UAE VAT (5% vs 20%) and GBP/AED fluctuation can destroy"
-altText: "UK agency founder reviewing retainer pricing contract in a Dubai office with laptop and coffee"
-image: "/blog/uk-agency-founder-dubai-retainer-pricing-vat-currency-risk.jpg"
+title: 'UK Agency Founder Moving to Dubai: Why Your Retainer Pricing Needs to Change (VAT + Currency Risk)'
+slug: uk-agency-founder-dubai-retainer-pricing-vat-currency-risk
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-agency-founder-dubai-retainer-pricing-vat-currency-risk
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK Agency Founder Dubai Retainer Pricing: VAT & Currency'
+metaDescription: Moving your agency from the UK to Dubai? Your retainer pricing must change. Here's why UK VAT to UAE VAT (5% vs 20%) and GBP/AED fluctuation can destroy
+altText: UK agency founder reviewing retainer pricing contract in a Dubai office with laptop and coffee
+image: /blog/uk-agency-founder-dubai-retainer-pricing-vat-currency-risk.jpg
 imageCredit:
-  photographer: "Vlad Deep"
-  photographerUrl: "https://www.pexels.com/@vlad-deep-29415806"
-  sourceUrl: "https://www.pexels.com/photo/moving-train-on-a-track-between-city-buildings-14528591/"
-  source: "Pexels"
-h1: "UK Agency Founder Moving to Dubai: Why Your Retainer Pricing Needs to Change (VAT + Currency Risk)"
-summary: "Moving your agency from the UK to Dubai changes more than your tax residence. Switching from 20% UK VAT to 5% UAE VAT, plus GBP/AED currency fluctuation, can destroy your retainer margin if you don't reprice contracts before you move. Here's the maths and the fix."
-schema: ""
+  photographer: Vlad Deep
+  photographerUrl: https://www.pexels.com/@vlad-deep-29415806
+  sourceUrl: https://www.pexels.com/photo/moving-train-on-a-track-between-city-buildings-14528591/
+  source: Pexels
+h1: 'UK Agency Founder Moving to Dubai: Why Your Retainer Pricing Needs to Change (VAT + Currency Risk)'
+summary: Moving your agency from the UK to Dubai changes more than your tax residence. Switching from 20% UK VAT to 5% UAE VAT, plus GBP/AED currency fluctuation, can destroy your retainer margin if you don't reprice contracts before you move. Here's the maths and the fix.
+schema: ''
 faqs:
-  - question: "Do I need to charge UAE VAT to my UK clients after moving to Dubai?"
-    answer: "No. For B2B services provided to a UK client from your Dubai agency, the place of supply is the UK. Your client accounts for the reverse charge on their own VAT return. You charge 0% UAE VAT. But you need to document this correctly on your invoices and in your UAE VAT returns. Get it wrong and you could face a UAE VAT assessment."
-  - question: "Can I keep my UK VAT registration after moving to Dubai?"
-    answer: "Only if you still have UK taxable supplies, such as B2C sales or UK-based staff. For most agency founders moving to Dubai, you will cancel your UK VAT registration using form VAT7 once you have no UK establishment and no UK taxable supplies. If you are unsure, check with your accountant before you cancel."
-  - question: "How do I price my retainers to protect against GBP/AED fluctuation?"
-    answer: "Switch your contracts to AED or USD. If your client insists on GBP, add a currency adjustment clause that allows you to reprice if GBP moves more than 5% against AED over a rolling 3-month average. You can also use a multi-currency account and forward contracts to lock in favourable rates when they appear."
-  - question: "What happens to my UK corporation tax when I move my agency to Dubai?"
-    answer: "If you move your agency's place of effective management to Dubai, you stop being UK tax resident. You will need to file a final UK corporation tax return and settle any outstanding tax. From that point, your agency pays 9% UAE corporation tax (if your profits exceed AED 375,000) instead of 19-25% UK corporation tax. The timing of the move matters for tax purposes. Get professional advice before you relocate."
+- question: Do I need to charge UAE VAT to my UK clients after moving to Dubai?
+  answer: No. For B2B services provided to a UK client from your Dubai agency, the place of supply is the UK. Your client accounts for the reverse charge on their own VAT return. You charge 0% UAE VAT. But you need to document this correctly on your invoices and in your UAE VAT returns. Get it wrong and you could face a UAE VAT assessment.
+- question: Can I keep my UK VAT registration after moving to Dubai?
+  answer: Only if you still have UK taxable supplies, such as B2C sales or UK-based staff. For most agency founders moving to Dubai, you will cancel your UK VAT registration using form VAT7 once you have no UK establishment and no UK taxable supplies. If you are unsure, check with your accountant before you cancel.
+- question: How do I price my retainers to protect against GBP/AED fluctuation?
+  answer: Switch your contracts to AED or USD. If your client insists on GBP, add a currency adjustment clause that allows you to reprice if GBP moves more than 5% against AED over a rolling 3-month average. You can also use a multi-currency account and forward contracts to lock in favourable rates when they appear.
+- question: What happens to my UK corporation tax when I move my agency to Dubai?
+  answer: If you move your agency's place of effective management to Dubai, you stop being UK tax resident. You will need to file a final UK corporation tax return and settle any outstanding tax. From that point, your agency pays 9% UAE corporation tax (if your profits exceed AED 375,000) instead of 19-25% UK corporation tax. The timing of the move matters for tax purposes. Get professional advice before you relocate.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Moving from UK to Dubai reduces VAT from 20% to 0% for UK clients, squeezing your margin if you don't reprice retainers.
+- Your UK client pays 16.7% less after you drop VAT, so you should capture part of that saving to protect your margin.
+- GBP income against AED costs creates currency risk; a 10% GBP drop cuts your AED income by 10% without cost adjustment.
+- Reprice retainers before moving to reflect VAT change and currency risk, or you'll work harder for less profit.
+- UAE VAT is 5% for local clients and 0% for UK B2B services under reverse charge, changing your pricing structure entirely.
 ---
-
 <p>You've decided to move your agency from the UK to Dubai. Good for you. Lower personal tax, better lifestyle, and a time zone that works for both London and Asia.</p>
 
 <p>But here is the problem most agency founders miss. You cannot take your existing UK retainer contracts, change your registered address, and carry on as normal. If you do, you will lose money. Possibly a lot of it.</p>

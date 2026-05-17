@@ -1,33 +1,40 @@
 ---
-title: "What Happens If a Dubai-Based Agency Founder Returns to the UK Within Five Years?"
-slug: "temporary-non-residence-rule-five-years-uk-dubai-agency-founder"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/temporary-non-residence-rule-five-years-uk-dubai-agency-founder"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Temporary Non Residence Rule Five Years: UK Agency Founder"
-metaDescription: "Moving to Dubai and returning within five years can trigger a capital gains tax clawback. Here is how the temporary non residence rule works for UK agency"
-altText: "UK agency founder reviewing tax documents at a desk in a Dubai office with a view of the city skyline"
-image: "/blog/temporary-non-residence-rule-five-years-uk-dubai-agency-founder.jpg"
+title: What Happens If a Dubai-Based Agency Founder Returns to the UK Within Five Years?
+slug: temporary-non-residence-rule-five-years-uk-dubai-agency-founder
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/temporary-non-residence-rule-five-years-uk-dubai-agency-founder
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Temporary Non Residence Rule Five Years: UK Agency Founder'
+metaDescription: Moving to Dubai and returning within five years can trigger a capital gains tax clawback. Here is how the temporary non residence rule works for UK agency
+altText: UK agency founder reviewing tax documents at a desk in a Dubai office with a view of the city skyline
+image: /blog/temporary-non-residence-rule-five-years-uk-dubai-agency-founder.jpg
 imageCredit:
-  photographer: "Mikael Blomkvist"
-  photographerUrl: "https://www.pexels.com/@mikael-blomkvist"
-  sourceUrl: "https://www.pexels.com/photo/people-sitting-at-the-table-6476256/"
-  source: "Pexels"
-h1: "The Temporary Non-Residence Rule: What Happens If You Return to the UK Within Five Years?"
-summary: "If you move to Dubai as an agency founder but return to the UK within five complete tax years, HMRC can claw back capital gains you thought were tax-free. This is the temporary non residence rule, and it catches a surprising number of founders who relocate without a long-term plan. Here is exactly how it works and what to do about it."
-schema: ""
+  photographer: Mikael Blomkvist
+  photographerUrl: https://www.pexels.com/@mikael-blomkvist
+  sourceUrl: https://www.pexels.com/photo/people-sitting-at-the-table-6476256/
+  source: Pexels
+h1: 'The Temporary Non-Residence Rule: What Happens If You Return to the UK Within Five Years?'
+summary: If you move to Dubai as an agency founder but return to the UK within five complete tax years, HMRC can claw back capital gains you thought were tax-free. This is the temporary non residence rule, and it catches a surprising number of founders who relocate without a long-term plan. Here is exactly how it works and what to do about it.
+schema: ''
 faqs:
-  - question: "What is the temporary non residence rule in simple terms?"
-    answer: "If you leave the UK and return within five complete tax years, certain income and gains that arose while you were abroad are treated as UK income or gains in the year you return. HMRC \"claws them back\" and taxes them. The rule applies to capital gains on shares, certain employment income, and some trading income. It does not apply to dividends or bank interest."
-  - question: "How do I calculate the five-year window?"
-    answer: "The five-year clock starts on the first full tax year of non-residence after you leave. For example, if you leave on 1 August 2025, your first full tax year is 2026/27. You must remain non-resident for five complete tax years: 2026/27 through 2030/31. You can return on 6 April 2031 without triggering the clawback. Return earlier, and the rule applies."
-  - question: "Does the UK-UAE Double Taxation Agreement protect me from the clawback?"
-    answer: "Not always. The DTA can prevent the UK from taxing certain gains, but it depends on the type of asset and the specific wording of the treaty. Shares in a UK company are often taxable in the UK regardless of the DTA. Do not rely on the treaty without checking with an accountant who understands both UK and UAE tax law."
-  - question: "What should I do if I already returned to the UK within five years?"
-    answer: "You must report any capital gains that arose while you were abroad on your Self Assessment tax return for the year you returned. Failure to report can lead to penalties and interest. If you have already filed and omitted the gain, amend the return within 12 months of the filing deadline. After that, notify HMRC of a discovery. Speak to an accountant as soon as possible."
+- question: What is the temporary non residence rule in simple terms?
+  answer: If you leave the UK and return within five complete tax years, certain income and gains that arose while you were abroad are treated as UK income or gains in the year you return. HMRC "claws them back" and taxes them. The rule applies to capital gains on shares, certain employment income, and some trading income. It does not apply to dividends or bank interest.
+- question: How do I calculate the five-year window?
+  answer: 'The five-year clock starts on the first full tax year of non-residence after you leave. For example, if you leave on 1 August 2025, your first full tax year is 2026/27. You must remain non-resident for five complete tax years: 2026/27 through 2030/31. You can return on 6 April 2031 without triggering the clawback. Return earlier, and the rule applies.'
+- question: Does the UK-UAE Double Taxation Agreement protect me from the clawback?
+  answer: Not always. The DTA can prevent the UK from taxing certain gains, but it depends on the type of asset and the specific wording of the treaty. Shares in a UK company are often taxable in the UK regardless of the DTA. Do not rely on the treaty without checking with an accountant who understands both UK and UAE tax law.
+- question: What should I do if I already returned to the UK within five years?
+  answer: You must report any capital gains that arose while you were abroad on your Self Assessment tax return for the year you returned. Failure to report can lead to penalties and interest. If you have already filed and omitted the gain, amend the return within 12 months of the filing deadline. After that, notify HMRC of a discovery. Speak to an accountant as soon as possible.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- If you return to the UK within five complete tax years of leaving, HMRC can claw back capital gains you made while abroad.
+- The five-year clock starts on the first full tax year of non-residence, not the day you leave the UK.
+- Selling agency shares while temporarily non-resident triggers UK capital gains tax if you return within five tax years.
+- Employment income, trading income, and pension income may also be clawed back, but dividend income and bank interest are generally exempt.
+- To avoid the clawback, you must remain non-resident for at least five complete tax years, missing the threshold by even one day costs the tax advantage.
 ---
-
 <h2>Why Your Dubai Move Might Not Be as Tax-Free as You Think</h2>
 
 <p>You sell your agency shares for £1.2 million. You move to Dubai in April 2025. You think the gain is outside UK tax because you are non-resident. You are wrong if you come back before April 2030.</p>

@@ -1,33 +1,40 @@
 ---
-title: "How to Vet an Accountant's IR35 Experience Before Hiring Them for Your Agency"
-slug: "vet-accountant-ir35-experience-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/vet-accountant-ir35-experience-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Contractors and IR35"
-metaTitle: "How to Vet an Accountant's IR35 Experience for Your Agency"
-metaDescription: "Don't hire an accountant without checking their IR35 knowledge. Here are the specific questions to ask and documents to request before you sign."
-altText: "Agency founder reviewing an accountant's credentials and IR35 documentation in a London office"
-image: "/blog/vet-accountant-ir35-experience-agency.jpg"
+title: How to Vet an Accountant's IR35 Experience Before Hiring Them for Your Agency
+slug: vet-accountant-ir35-experience-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/vet-accountant-ir35-experience-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Contractors and IR35
+metaTitle: How to Vet an Accountant's IR35 Experience for Your Agency
+metaDescription: Don't hire an accountant without checking their IR35 knowledge. Here are the specific questions to ask and documents to request before you sign.
+altText: Agency founder reviewing an accountant's credentials and IR35 documentation in a London office
+image: /blog/vet-accountant-ir35-experience-agency.jpg
 imageCredit:
-  photographer: "Italo Crespi"
-  photographerUrl: "https://www.pexels.com/@italo-crespi-2169075"
-  sourceUrl: "https://www.pexels.com/photo/veterinarian-doctor-sitting-at-desk-15551426/"
-  source: "Pexels"
-h1: "How to Vet an Accountant's IR35 Experience Before Hiring Them for Your Agency"
-summary: "Hiring an accountant who doesn't understand IR35 is a risk you can't afford. This guide gives you the specific questions to ask, the documents to request, and the red flags to watch for when vetting an accountant's IR35 expertise for your agency."
-schema: ""
+  photographer: Italo Crespi
+  photographerUrl: https://www.pexels.com/@italo-crespi-2169075
+  sourceUrl: https://www.pexels.com/photo/veterinarian-doctor-sitting-at-desk-15551426/
+  source: Pexels
+h1: How to Vet an Accountant's IR35 Experience Before Hiring Them for Your Agency
+summary: Hiring an accountant who doesn't understand IR35 is a risk you can't afford. This guide gives you the specific questions to ask, the documents to request, and the red flags to watch for when vetting an accountant's IR35 expertise for your agency.
+schema: ''
 faqs:
-  - question: "What specific documents should an accountant be able to show me to prove their IR35 experience?"
-    answer: "A competent accountant should be able to show you a redacted example of a Status Determination Statement (SDS) they have prepared, a template they use for contractor engagement reviews, and a written record-keeping framework they recommend to clients. If they cannot produce any of these, they likely lack hands-on IR35 experience with agencies."
-  - question: "Is it a red flag if an accountant says they use the CEST tool as their primary IR35 assessment method?"
-    answer: "Yes, it is a significant red flag. The CEST tool is directional guidance from HMRC, not a definitive answer. A good accountant uses CEST as one input but also applies professional judgement based on the specific contract terms and working practices. Relying solely on CEST leaves your agency exposed if HMRC disagrees with the tool's conclusion."
-  - question: "How often should an accountant review contractor engagements for IR35 compliance?"
-    answer: "At minimum, every contractor engagement should be reviewed at the start of the relationship and then annually thereafter. However, any significant change in working practices, such as a contractor taking on more hours, gaining more control over their work, or losing their substitution rights, should trigger an immediate review. A proactive accountant will schedule these reviews as part of your regular management accounts process."
-  - question: "Can an accountant who primarily works with non-agency businesses still advise my agency on IR35?"
-    answer: "They can, but it is risky. IR35 risk factors differ significantly between industries. An accountant who handles IR35 for construction companies or IT consultancies may not understand the specific dynamics of agency work, such as retainers, project-based billing, and client-site working. You are better off with an accountant who has direct agency experience, as they will spot the specific patterns that create IR35 exposure in your sector."
+- question: What specific documents should an accountant be able to show me to prove their IR35 experience?
+  answer: A competent accountant should be able to show you a redacted example of a Status Determination Statement (SDS) they have prepared, a template they use for contractor engagement reviews, and a written record-keeping framework they recommend to clients. If they cannot produce any of these, they likely lack hands-on IR35 experience with agencies.
+- question: Is it a red flag if an accountant says they use the CEST tool as their primary IR35 assessment method?
+  answer: Yes, it is a significant red flag. The CEST tool is directional guidance from HMRC, not a definitive answer. A good accountant uses CEST as one input but also applies professional judgement based on the specific contract terms and working practices. Relying solely on CEST leaves your agency exposed if HMRC disagrees with the tool's conclusion.
+- question: How often should an accountant review contractor engagements for IR35 compliance?
+  answer: At minimum, every contractor engagement should be reviewed at the start of the relationship and then annually thereafter. However, any significant change in working practices, such as a contractor taking on more hours, gaining more control over their work, or losing their substitution rights, should trigger an immediate review. A proactive accountant will schedule these reviews as part of your regular management accounts process.
+- question: Can an accountant who primarily works with non-agency businesses still advise my agency on IR35?
+  answer: They can, but it is risky. IR35 risk factors differ significantly between industries. An accountant who handles IR35 for construction companies or IT consultancies may not understand the specific dynamics of agency work, such as retainers, project-based billing, and client-site working. You are better off with an accountant who has direct agency experience, as they will spot the specific patterns that create IR35 exposure in your sector.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Ask prospective accountants how many agency clients they have advised on IR35 Status Determination Statements and request a specific number.
+- A competent accountant should describe a step-by-step process for reviewing contractor engagements, including contract and working practice analysis.
+- Ensure your accountant documents every IR35 determination in writing, as this is your key evidence if HMRC investigates.
+- Look for accountants who conduct periodic reviews of contractor engagements, as IR35 status can change over time.
+- Avoid accountants who give vague answers about IR35 experience; demand concrete examples and documented procedures.
 ---
-
 <p>If you run an agency that uses contractors, you already know IR35 is not a theoretical risk. It is a real financial one. HMRC can land you with a tax bill for tens of thousands of pounds if they decide your contractors should have been treated as employees. And your accountant is your first line of defence against that.</p>
 
 <p>But not all accountants understand IR35. Many general practice firms treat it as a side topic. They read a few HMRC guides and assume they know enough. For an agency founder, that assumption can be catastrophic.</p>

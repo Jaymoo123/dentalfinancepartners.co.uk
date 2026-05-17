@@ -1,33 +1,40 @@
 ---
-title: "How to Handle Currency Risk When Invoicing UK Clients in GBP from Your AED Bank Account"
-slug: "currency-risk-gbp-aed-agency-invoices"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/currency-risk-gbp-aed-agency-invoices"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Currency Risk GBP AED Agency Invoices: 4 Strategies"
-metaDescription: "UK agency founders invoicing in GBP from an AED account face real currency risk. Here are four practical strategies to protect your margins"
-altText: "Agency founder reviewing GBP to AED exchange rate on a laptop in a Dubai office with city skyline visible through window"
-image: "/blog/currency-risk-gbp-aed-agency-invoices.jpg"
+title: How to Handle Currency Risk When Invoicing UK Clients in GBP from Your AED Bank Account
+slug: currency-risk-gbp-aed-agency-invoices
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/currency-risk-gbp-aed-agency-invoices
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Currency Risk GBP AED Agency Invoices: 4 Strategies'
+metaDescription: UK agency founders invoicing in GBP from an AED account face real currency risk. Here are four practical strategies to protect your margins
+altText: Agency founder reviewing GBP to AED exchange rate on a laptop in a Dubai office with city skyline visible through window
+image: /blog/currency-risk-gbp-aed-agency-invoices.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/money-inside-blue-envelope-8927657/"
-  source: "Pexels"
-h1: "How to Handle Currency Risk When Invoicing UK Clients in GBP from Your AED Bank Account"
-summary: "If you're a UK agency founder based in Dubai, invoicing in GBP while holding AED creates real currency risk. Fluctuations can wipe out your margin on a single project. Here are the practical strategies to protect yourself."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/money-inside-blue-envelope-8927657/
+  source: Pexels
+h1: How to Handle Currency Risk When Invoicing UK Clients in GBP from Your AED Bank Account
+summary: If you're a UK agency founder based in Dubai, invoicing in GBP while holding AED creates real currency risk. Fluctuations can wipe out your margin on a single project. Here are the practical strategies to protect yourself.
+schema: ''
 faqs:
-  - question: "Can I avoid currency risk entirely when invoicing UK clients from Dubai?"
-    answer: "Not entirely, but you can reduce it to near zero by invoicing in AED instead of GBP, or by using forward contracts to lock in rates for your known retainer income. A multi-currency account gives you control over timing, which eliminates the forced conversion risk. For most agencies, a combination of these strategies removes the material risk."
-  - question: "What is the best bank account for holding GBP in Dubai?"
-    answer: "Most major UAE banks (Emirates NBD, ADCB, FAB) offer multi-currency accounts that hold GBP. Digital platforms like Wise Business and Revolut Business are often cheaper for smaller volumes and offer mid-market exchange rates. For larger volumes (above £50k per transfer), a specialist broker like OFX or WorldFirst typically beats both banks and digital platforms on rate."
-  - question: "Do I need to tell HMRC about my Dubai bank account if I invoice UK clients in GBP?"
-    answer: "Yes, if you are UK tax resident. You must declare all foreign bank accounts and foreign income on your Self Assessment tax return (SA100). If you are UAE tax resident and not UK resident, you generally do not report to HMRC, but you should confirm your residency status with a qualified accountant. The rules changed significantly with the UK's statutory residence test."
-  - question: "How much does a forward contract cost for an agency?"
-    answer: "Most currency brokers charge no upfront fee for forward contracts. They make their money on the spread between the spot rate and the forward rate. That spread is typically 0.5% to 1.5% depending on the amount and duration. For a £50k six-month forward, you might pay £250-£750 in spread. That is far less than a 3% adverse move would cost you."
+- question: Can I avoid currency risk entirely when invoicing UK clients from Dubai?
+  answer: Not entirely, but you can reduce it to near zero by invoicing in AED instead of GBP, or by using forward contracts to lock in rates for your known retainer income. A multi-currency account gives you control over timing, which eliminates the forced conversion risk. For most agencies, a combination of these strategies removes the material risk.
+- question: What is the best bank account for holding GBP in Dubai?
+  answer: Most major UAE banks (Emirates NBD, ADCB, FAB) offer multi-currency accounts that hold GBP. Digital platforms like Wise Business and Revolut Business are often cheaper for smaller volumes and offer mid-market exchange rates. For larger volumes (above £50k per transfer), a specialist broker like OFX or WorldFirst typically beats both banks and digital platforms on rate.
+- question: Do I need to tell HMRC about my Dubai bank account if I invoice UK clients in GBP?
+  answer: Yes, if you are UK tax resident. You must declare all foreign bank accounts and foreign income on your Self Assessment tax return (SA100). If you are UAE tax resident and not UK resident, you generally do not report to HMRC, but you should confirm your residency status with a qualified accountant. The rules changed significantly with the UK's statutory residence test.
+- question: How much does a forward contract cost for an agency?
+  answer: Most currency brokers charge no upfront fee for forward contracts. They make their money on the spread between the spot rate and the forward rate. That spread is typically 0.5% to 1.5% depending on the amount and duration. For a £50k six-month forward, you might pay £250-£750 in spread. That is far less than a 3% adverse move would cost you.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Open a GBP multi-currency account to hold client payments until the exchange rate is favourable, avoiding forced conversion on receipt.
+- Invoice UK clients in AED instead of GBP to transfer currency risk to the client and lock in the rate on the invoice date.
+- Set a target exchange rate for GBP to AED conversion and execute when it hits, avoiding speculation by holding indefinitely.
+- GBP/AED fluctuates with GBP/USD due to the dirham's dollar peg, with a historical range of 4.20 to 5.00 over five years.
+- For agencies billing over £200k annually, a 3% currency swing on a £50,000 project can wipe out £1,500 of margin.
 ---
-
 <p>If you run a UK-facing agency from Dubai, you already know the core tension. Your clients pay you in GBP. Your rent, staff salaries, and personal life run on AED. The exchange rate between the two is not fixed. It moves every day. Sometimes by fractions of a percent. Sometimes by several points in a week.</p>
 
 <p>That movement is <strong>currency risk GBP AED agency invoices</strong> — the very real possibility that the pound weakens between the moment you send an invoice and the moment the AED lands in your account. For a £50,000 project, a 3% swing against you is £1,500 gone. That is not a rounding error. That is a chunk of your margin.</p>

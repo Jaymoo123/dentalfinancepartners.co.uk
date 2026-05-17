@@ -1,33 +1,40 @@
 ---
-title: "How to Value Your Agency for Sale: A Practical Guide for UK Founders"
-slug: "how-to-value-agency-for-sale"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/how-to-value-agency-for-sale"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Agency Valuation UK: Sell Your Agency at Top Price"
-metaDescription: "How to value a marketing, digital, or creative agency for sale in the UK. Real multiples, EBITDA adjustments, and steps to maximise your exit price."
-altText: "UK agency founder reviewing financial documents with ICAEW qualified accountant in a modern office"
-image: "/blog/how-to-value-agency-for-sale.jpg"
+title: 'How to Value Your Agency for Sale: A Practical Guide for UK Founders'
+slug: how-to-value-agency-for-sale
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/how-to-value-agency-for-sale
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'Agency Valuation UK: Sell Your Agency at Top Price'
+metaDescription: How to value a marketing, digital, or creative agency for sale in the UK. Real multiples, EBITDA adjustments, and steps to maximise your exit price.
+altText: UK agency founder reviewing financial documents with ICAEW qualified accountant in a modern office
+image: /blog/how-to-value-agency-for-sale.jpg
 imageCredit:
-  photographer: "Ann H"
-  photographerUrl: "https://www.pexels.com/@ann-h-45017"
-  sourceUrl: "https://www.pexels.com/photo/pink-background-with-value-text-in-bold-letters-33137139/"
-  source: "Pexels"
-h1: "How to Value Your Agency for Sale: A Practical Guide for UK Founders"
-summary: "Valuing an agency is part art, part numbers. This guide covers the multiples, EBITDA adjustments, and practical steps UK agency founders need before putting their business on the market."
-schema: ""
+  photographer: Ann H
+  photographerUrl: https://www.pexels.com/@ann-h-45017
+  sourceUrl: https://www.pexels.com/photo/pink-background-with-value-text-in-bold-letters-33137139/
+  source: Pexels
+h1: 'How to Value Your Agency for Sale: A Practical Guide for UK Founders'
+summary: Valuing an agency is part art, part numbers. This guide covers the multiples, EBITDA adjustments, and practical steps UK agency founders need before putting their business on the market.
+schema: ''
 faqs:
-  - question: "What is a realistic multiple for a UK agency in 2025?"
-    answer: "For most small to mid-size UK agencies, multiples range from 3x to 6x adjusted EBITDA. Smaller agencies under £500k profit typically sit at 3-4x. Larger agencies with strong recurring revenue can hit 5-6x. The exact multiple depends on client concentration, management depth, and growth trajectory."
-  - question: "How do I calculate adjusted EBITDA for my agency?"
-    answer: "Start with your net profit. Add back owner salary if you are leaving post-sale, discretionary costs (company cars, pension top-ups, one-off legal fees), and any non-recurring expenses. Then deduct a market-rate salary for a replacement managing director. The result is your adjusted EBITDA, which buyers use for the valuation."
-  - question: "Can I sell my agency if I am the main client relationship holder?"
-    answer: "Yes, but the multiple will be lower. Buyers discount heavily when the business depends on one person. To maximise value, delegate client relationships to a team member at least 12 months before you list. Show the buyer that the business can run without you."
-  - question: "What tax relief is available when selling my agency?"
-    answer: "Business Asset Disposal Relief (BADR) gives a 14% CGT rate on the first £1m of qualifying gains. You need to have held the shares for at least two years and been an officer or employee of the company. Structure the sale as a share sale, not an asset sale, to qualify. Speak to your accountant before negotiating the deal."
+- question: What is a realistic multiple for a UK agency in 2025?
+  answer: For most small to mid-size UK agencies, multiples range from 3x to 6x adjusted EBITDA. Smaller agencies under £500k profit typically sit at 3-4x. Larger agencies with strong recurring revenue can hit 5-6x. The exact multiple depends on client concentration, management depth, and growth trajectory.
+- question: How do I calculate adjusted EBITDA for my agency?
+  answer: Start with your net profit. Add back owner salary if you are leaving post-sale, discretionary costs (company cars, pension top-ups, one-off legal fees), and any non-recurring expenses. Then deduct a market-rate salary for a replacement managing director. The result is your adjusted EBITDA, which buyers use for the valuation.
+- question: Can I sell my agency if I am the main client relationship holder?
+  answer: Yes, but the multiple will be lower. Buyers discount heavily when the business depends on one person. To maximise value, delegate client relationships to a team member at least 12 months before you list. Show the buyer that the business can run without you.
+- question: What tax relief is available when selling my agency?
+  answer: Business Asset Disposal Relief (BADR) gives a 14% CGT rate on the first £1m of qualifying gains. You need to have held the shares for at least two years and been an officer or employee of the company. Structure the sale as a share sale, not an asset sale, to qualify. Speak to your accountant before negotiating the deal.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Agency valuations typically use a multiple of adjusted EBITDA, not unadjusted profit, with small agencies valued at 3-4x EBITDA.
+- Client concentration over 20% of revenue reduces your multiple; over 40% and many buyers will walk away from the deal.
+- Recurring retainer income of 60% or more boosts your agency's valuation multiple compared to project-based revenue.
+- Adjusted EBITDA adds back owner salary, discretionary costs, and one-off expenses, often increasing the valuation figure significantly.
+- UK agency multiples in 2025 range from 3-4x for small agencies up to 5-8x for larger firms with over £2m profit.
 ---
-
 <p>If you own a marketing agency, a digital agency, or a creative agency in the UK, you have probably wondered what it is worth. Maybe you are planning an exit in three to five years. Maybe a buyer has already approached you. Either way, you need a realistic number before you start negotiating.</p>
 
 <p>Valuing an agency is not like valuing a corner shop or a SaaS business. Agencies are people-intensive, relationship-driven, and often reliant on a handful of key clients. That makes them harder to price. But it also means the right preparation can add six figures to your final sale price.</p>

@@ -1,33 +1,40 @@
 ---
-title: "How to Audit Your Agency's Contractor Engagements for IR35 Compliance Before HMRC Checks"
-slug: "audit-contractor-engagements-ir35-compliance"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/audit-contractor-engagements-ir35-compliance"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Contractors and IR35"
-metaTitle: "Audit Contractor Engagements IR35 Compliance: Agency Guide"
-metaDescription: "Step-by-step guide to auditing your agency's contractor engagements for IR35 compliance before HMRC checks. Includes checklist, SDS review, and CEST tool"
-altText: "ICAEW accountant reviewing IR35 compliance documents for agency contractor engagements in a modern UK office"
-image: "/blog/audit-contractor-engagements-ir35-compliance.jpg"
+title: How to Audit Your Agency's Contractor Engagements for IR35 Compliance Before HMRC Checks
+slug: audit-contractor-engagements-ir35-compliance
+canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/audit-contractor-engagements-ir35-compliance
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Contractors and IR35
+metaTitle: 'Audit Contractor Engagements IR35 Compliance: Agency Guide'
+metaDescription: Step-by-step guide to auditing your agency's contractor engagements for IR35 compliance before HMRC checks. Includes checklist, SDS review, and CEST tool
+altText: ICAEW accountant reviewing IR35 compliance documents for agency contractor engagements in a modern UK office
+image: /blog/audit-contractor-engagements-ir35-compliance.jpg
 imageCredit:
-  photographer: "Pixabay"
-  photographerUrl: "https://www.pexels.com/@pixabay"
-  sourceUrl: "https://www.pexels.com/photo/seo-audit-white-blocks-on-brown-wooden-surface-267415/"
-  source: "Pexels"
-h1: "How to Audit Your Agency's Contractor Engagements for IR35 Compliance Before HMRC Checks"
-summary: "A practical guide for agency founders to audit their contractor engagements for IR35 compliance before HMRC comes knocking. Covers SDS review, CEST tool limitations, and the documentation you need to survive a compliance check."
-schema: ""
+  photographer: Pixabay
+  photographerUrl: https://www.pexels.com/@pixabay
+  sourceUrl: https://www.pexels.com/photo/seo-audit-white-blocks-on-brown-wooden-surface-267415/
+  source: Pexels
+h1: How to Audit Your Agency's Contractor Engagements for IR35 Compliance Before HMRC Checks
+summary: A practical guide for agency founders to audit their contractor engagements for IR35 compliance before HMRC comes knocking. Covers SDS review, CEST tool limitations, and the documentation you need to survive a compliance check.
+schema: ''
 faqs:
-  - question: "How far back can HMRC go in an IR35 compliance check?"
-    answer: "HMRC can typically go back six years from the date they open the check. If they suspect deliberate non-compliance, they can go back up to 20 years. For most agencies, the six-year window applies. That means any contractor engagement from the last six years could be reviewed. If you have not kept records for that period, start building them now."
-  - question: "Do I need to use the CEST tool for every contractor?"
-    answer: "You should use CEST as part of your determination process, but it is not mandatory. CEST works well for straightforward cases. For complex arrangements, a professional IR35 review from an accountant or employment solicitor is safer. Document whatever method you use and keep the results. HMRC will want to see that you took reasonable care, not necessarily that you used their specific tool."
-  - question: "What happens if I find a contractor who should have been inside IR35 but was paid outside?"
-    answer: "You need to calculate the unpaid tax and National Insurance and contact HMRC to arrange a settlement. Voluntary disclosure usually results in lower penalties than waiting for HMRC to discover the error. Do not try to calculate the figures yourself. The interaction of income tax, employee NI, employer NI, and interest is complex. Speak to an accountant who specialises in IR35 settlements."
-  - question: "Can I change a contractor from outside to inside IR35 mid-engagement?"
-    answer: "Yes, but you need to issue a new SDS stating the change and the reasons for it. You must also start operating PAYE from the date of the change. The contractor may push back because their net income will drop significantly. Be prepared for that conversation. If the contractor refuses to accept the change, you may need to end the engagement and find a replacement who will work inside IR35."
+- question: How far back can HMRC go in an IR35 compliance check?
+  answer: HMRC can typically go back six years from the date they open the check. If they suspect deliberate non-compliance, they can go back up to 20 years. For most agencies, the six-year window applies. That means any contractor engagement from the last six years could be reviewed. If you have not kept records for that period, start building them now.
+- question: Do I need to use the CEST tool for every contractor?
+  answer: You should use CEST as part of your determination process, but it is not mandatory. CEST works well for straightforward cases. For complex arrangements, a professional IR35 review from an accountant or employment solicitor is safer. Document whatever method you use and keep the results. HMRC will want to see that you took reasonable care, not necessarily that you used their specific tool.
+- question: What happens if I find a contractor who should have been inside IR35 but was paid outside?
+  answer: You need to calculate the unpaid tax and National Insurance and contact HMRC to arrange a settlement. Voluntary disclosure usually results in lower penalties than waiting for HMRC to discover the error. Do not try to calculate the figures yourself. The interaction of income tax, employee NI, employer NI, and interest is complex. Speak to an accountant who specialises in IR35 settlements.
+- question: Can I change a contractor from outside to inside IR35 mid-engagement?
+  answer: Yes, but you need to issue a new SDS stating the change and the reasons for it. You must also start operating PAYE from the date of the change. The contractor may push back because their net income will drop significantly. Be prepared for that conversation. If the contractor refuses to accept the change, you may need to end the engagement and find a replacement who will work inside IR35.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- HMRC can go back six years for unpaid IR35 tax, plus penalties of up to 30% of the tax due or more if deliberate.
+- Your agency must issue a Status Determination Statement (SDS) before each contractor engagement starts after April 2021.
+- List every contractor engagement from the last six years, including limited company, umbrella, and freelancers, to audit properly.
+- Missing an SDS for a post-April 2021 contractor is a red flag that HMRC will treat as non-compliance regardless of the determination.
+- Contractors who started before April 2021 and are still working must have their status reassessed; if not, do it now.
 ---
-
 <p>If you run a UK agency that uses contractors, HMRC's IR35 rules are probably the single biggest compliance risk on your books. Not corporation tax. Not VAT. Not payroll errors. IR35.</p>
 
 <p>HMRC has been actively targeting the agency sector for years now. They know agencies are heavy users of limited company contractors. They know the rules changed in 2021 to put the responsibility on you, not the contractor. And they know many agency founders still haven't done a proper audit of their contractor engagements for IR35 compliance.</p>

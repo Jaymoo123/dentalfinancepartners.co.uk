@@ -1,25 +1,32 @@
 ---
-title: "Do I Need to Charge VAT on Invoices to UK Clients From My Dubai Agency?"
-slug: "vat-on-invoices-uk-clients-dubai-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/vat-on-invoices-uk-clients-dubai-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UAE VAT on invoices to UK clients: Dubai agency founder"
-metaDescription: "UAE VAT is territorial. Services to UK clients are generally outside scope, but you still need returns. Here is exactly what to do and what the reverse"
-altText: "Dubai agency founder reviewing a VAT invoice for a UK client on a laptop in a modern office"
-image: "/blog/vat-on-invoices-uk-clients-dubai-agency.jpg"
+title: Do I Need to Charge VAT on Invoices to UK Clients From My Dubai Agency?
+slug: vat-on-invoices-uk-clients-dubai-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/vat-on-invoices-uk-clients-dubai-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UAE VAT on invoices to UK clients: Dubai agency founder'
+metaDescription: UAE VAT is territorial. Services to UK clients are generally outside scope, but you still need returns. Here is exactly what to do and what the reverse
+altText: Dubai agency founder reviewing a VAT invoice for a UK client on a laptop in a modern office
+image: /blog/vat-on-invoices-uk-clients-dubai-agency.jpg
 imageCredit:
-  photographer: "Kindel Media"
-  photographerUrl: "https://www.pexels.com/@kindelmedia"
-  sourceUrl: "https://www.pexels.com/photo/persons-pointing-at-the-numbers-on-the-invoice-7688191/"
-  source: "Pexels"
-h1: "Do I Need to Charge VAT on Invoices to UK Clients From My Dubai Agency?"
-summary: "If you run a Dubai agency and invoice UK clients, you generally do not charge UAE VAT. But you must understand the reverse charge mechanism and file returns correctly. Here is what every agency founder needs to know."
-schema: ""
+  photographer: Kindel Media
+  photographerUrl: https://www.pexels.com/@kindelmedia
+  sourceUrl: https://www.pexels.com/photo/persons-pointing-at-the-numbers-on-the-invoice-7688191/
+  source: Pexels
+h1: Do I Need to Charge VAT on Invoices to UK Clients From My Dubai Agency?
+summary: If you run a Dubai agency and invoice UK clients, you generally do not charge UAE VAT. But you must understand the reverse charge mechanism and file returns correctly. Here is what every agency founder needs to know.
+schema: ''
 faqs: []
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- You do not charge UAE VAT on invoices to UK clients because UAE VAT only applies to supplies made within the UAE.
+- For B2B services, the place of supply is where the recipient belongs, so UK clients must account for VAT via the reverse charge mechanism.
+- Your invoice should state 'Outside scope of UAE VAT. Reverse charge applies' to ensure compliance for your client's finance team.
+- If your Dubai agency's taxable supplies exceed AED 375,000 per year, you must register for UAE VAT, even if you don't charge VAT on UK invoices.
+- The reverse charge means your UK client calculates and reports UK VAT on their return, with no net cost to them if they reclaim it.
 ---
-
 <h2>Can You Charge UAE VAT on Invoices to UK Clients?</h2>
 
 The short answer is no. You do not charge UAE VAT on invoices to UK clients from your Dubai agency. UAE VAT is a territorial tax. It applies only to supplies made within the UAE. If your client is in the UK and receives your services there, the supply is outside the scope of UAE VAT.

@@ -1,33 +1,40 @@
 ---
-title: "UAE Corporate Tax Rate Small Business Relief: What Agency Founders Need to Know"
-slug: "uae-corporate-tax-rate-small-business-relief-agency-founders"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-rate-small-business-relief-agency-founders"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UAE corporate tax rate small business relief explained"
-metaDescription: "The UAE corporate tax rate is 0% on profits up to AED 375,000 and 9% above that. Small business relief can defer this. Here's what agency founders need"
-altText: "UAE corporate tax rate small business relief document with calculator on a desk in a Dubai office"
-image: "/blog/uae-corporate-tax-rate-small-business-relief-agency-founders.jpg"
+title: 'UAE Corporate Tax Rate Small Business Relief: What Agency Founders Need to Know'
+slug: uae-corporate-tax-rate-small-business-relief-agency-founders
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-rate-small-business-relief-agency-founders
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: UAE corporate tax rate small business relief explained
+metaDescription: The UAE corporate tax rate is 0% on profits up to AED 375,000 and 9% above that. Small business relief can defer this. Here's what agency founders need
+altText: UAE corporate tax rate small business relief document with calculator on a desk in a Dubai office
+image: /blog/uae-corporate-tax-rate-small-business-relief-agency-founders.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-a-document-through-a-magnifying-glass-7821673/"
-  source: "Pexels"
-h1: "UAE Corporate Tax Rate Small Business Relief: What Agency Founders Need to Know"
-summary: "The UAE corporate tax rate is 0% on profits up to AED 375,000 and 9% on profits above that. Small business relief can defer this for qualifying agencies. Here's exactly how it works, who qualifies, and what you need to do."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/close-up-shot-of-a-document-through-a-magnifying-glass-7821673/
+  source: Pexels
+h1: 'UAE Corporate Tax Rate Small Business Relief: What Agency Founders Need to Know'
+summary: The UAE corporate tax rate is 0% on profits up to AED 375,000 and 9% on profits above that. Small business relief can defer this for qualifying agencies. Here's exactly how it works, who qualifies, and what you need to do.
+schema: ''
 faqs:
-  - question: "What is the UAE corporate tax rate for agencies in 2025/26?"
-    answer: "The UAE corporate tax rate is 0% on taxable profits up to AED 375,000 and 9% on taxable profits above AED 375,000. This applies to all resident companies, including agencies. Large multinationals may face a 15% rate under Pillar Two, but that does not affect most agencies."
-  - question: "Does the AED 375,000 threshold apply to revenue or profit?"
-    answer: "It applies to taxable profit, not revenue. Taxable profit is your revenue minus allowable expenses. An agency billing AED 1.5m with AED 1.2m in costs has a taxable profit of AED 300,000, which is below the threshold. No corporate tax is due on that profit."
-  - question: "What is the UAE small business relief threshold for agencies?"
-    answer: "The small business relief threshold is AED 3 million in revenue. If your agency's revenue in a tax period is AED 3 million or less, you can elect for the relief. This means no corporate tax return filing and no tax liability, even if your profit exceeds AED 375,000."
-  - question: "Can a free zone agency use small business relief?"
-    answer: "Yes. Free zone entities that are resident persons can elect for small business relief if their revenue is under AED 3 million. This can be simpler than proving your income qualifies for the free zone 0% rate. If your revenue exceeds AED 3 million, you need to assess whether the free zone regime applies or whether the 9% rate kicks in."
+- question: What is the UAE corporate tax rate for agencies in 2025/26?
+  answer: The UAE corporate tax rate is 0% on taxable profits up to AED 375,000 and 9% on taxable profits above AED 375,000. This applies to all resident companies, including agencies. Large multinationals may face a 15% rate under Pillar Two, but that does not affect most agencies.
+- question: Does the AED 375,000 threshold apply to revenue or profit?
+  answer: It applies to taxable profit, not revenue. Taxable profit is your revenue minus allowable expenses. An agency billing AED 1.5m with AED 1.2m in costs has a taxable profit of AED 300,000, which is below the threshold. No corporate tax is due on that profit.
+- question: What is the UAE small business relief threshold for agencies?
+  answer: The small business relief threshold is AED 3 million in revenue. If your agency's revenue in a tax period is AED 3 million or less, you can elect for the relief. This means no corporate tax return filing and no tax liability, even if your profit exceeds AED 375,000.
+- question: Can a free zone agency use small business relief?
+  answer: Yes. Free zone entities that are resident persons can elect for small business relief if their revenue is under AED 3 million. This can be simpler than proving your income qualifies for the free zone 0% rate. If your revenue exceeds AED 3 million, you need to assess whether the free zone regime applies or whether the 9% rate kicks in.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- UAE corporate tax is 0% on taxable profits up to AED 375,000 and 9% on profits above that, applied progressively.
+- The AED 375,000 threshold applies to taxable profit, not revenue, so high-revenue agencies with low margins may still pay no tax.
+- Small business relief exempts qualifying agencies from filing and paying corporate tax if revenue is AED 3 million or less.
+- Agencies with revenue over AED 3 million cannot use small business relief, even if profits are below AED 375,000.
+- Small business relief is available for tax periods starting from 1 June 2023 until 31 May 2026.
 ---
-
 <p>If you run a marketing agency, digital agency, or creative agency from Dubai, you have probably heard the good news: the UAE corporate tax rate is 9% on profits above AED 375,000. That is genuinely low by global standards. But the detail matters more than the headline.</p>
 
 <p>What happens if your agency's profits exceed AED 375,000? Do you pay 9% on everything, or just the excess? And what is this "small business relief" everyone mentions — does it apply to your agency?</p>

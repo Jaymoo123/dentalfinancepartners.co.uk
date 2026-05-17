@@ -1,33 +1,40 @@
 ---
-title: "How Does a UK Agency Founder Get a UAE Residence Visa? The Step-by-Step Process"
-slug: "uae-residence-visa-process-for-uk-founder"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-residence-visa-process-for-uk-founder"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UAE residence visa process for UK founder: step-by-step"
-metaDescription: "UK agency founder moving to Dubai? Here is the exact UAE residence visa process: medical, biometrics, Emirates ID, cost, and timeline. Tied to your"
-altText: "UK agency founder reviewing UAE residence visa paperwork and passport at a desk in a Dubai office"
-image: "/blog/uae-residence-visa-process-for-uk-founder.jpg"
+title: How Does a UK Agency Founder Get a UAE Residence Visa? The Step-by-Step Process
+slug: uae-residence-visa-process-for-uk-founder
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-residence-visa-process-for-uk-founder
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UAE residence visa process for UK founder: step-by-step'
+metaDescription: 'UK agency founder moving to Dubai? Here is the exact UAE residence visa process: medical, biometrics, Emirates ID, cost, and timeline. Tied to your'
+altText: UK agency founder reviewing UAE residence visa paperwork and passport at a desk in a Dubai office
+image: /blog/uae-residence-visa-process-for-uk-founder.jpg
 imageCredit:
-  photographer: "Aathif Aarifeen"
-  photographerUrl: "https://www.pexels.com/@aathif"
-  sourceUrl: "https://www.pexels.com/photo/smiling-businessman-sitting-at-desk-with-computer-19747906/"
-  source: "Pexels"
-h1: "How Does a UK Agency Founder Get a UAE Residence Visa? The Step-by-Step Process"
-summary: "Moving your agency to Dubai? The UAE residence visa is tied directly to your company licence. Here is the exact step-by-step process: from medical tests and biometrics to Emirates ID and the final stamp in your passport. Plus real costs and timelines."
-schema: ""
+  photographer: Aathif Aarifeen
+  photographerUrl: https://www.pexels.com/@aathif
+  sourceUrl: https://www.pexels.com/photo/smiling-businessman-sitting-at-desk-with-computer-19747906/
+  source: Pexels
+h1: How Does a UK Agency Founder Get a UAE Residence Visa? The Step-by-Step Process
+summary: 'Moving your agency to Dubai? The UAE residence visa is tied directly to your company licence. Here is the exact step-by-step process: from medical tests and biometrics to Emirates ID and the final stamp in your passport. Plus real costs and timelines.'
+schema: ''
 faqs:
-  - question: "Can I apply for a UAE residence visa without first setting up a company?"
-    answer: "No. The UAE residence visa is sponsored by your UAE company. You must incorporate your company and receive your trade licence before you can apply for the visa. There is no standalone self-employed visa in the UAE. The licence is the foundation."
-  - question: "How long does the entire UAE residence visa process take for a UK founder?"
-    answer: "Expect 4 to 8 weeks from start to finish. Company incorporation takes 2-4 weeks. The visa steps (entry permit, medical, biometrics, stamping) take another 2-3 weeks. The fastest I have seen is 3 weeks. The longest is 10 weeks, usually due to delays in company incorporation."
-  - question: "What is the total cost for a UK agency founder to get a UAE residence visa?"
-    answer: "Budget AED 20,000 to AED 38,000 (£4,300 to £8,100). This includes the free zone licence (AED 15,000-30,000), entry permit, medical test, Emirates ID, visa stamping, and PRO fees. You will also need private health insurance, which costs roughly AED 5,000-10,000 per year."
-  - question: "Do I need to be in the UAE for the medical and biometric appointments?"
-    answer: "Yes. The medical examination and biometric fingerprinting must be done in person at approved centres in the UAE. You cannot do these from the UK. You can enter on a tourist visa or entry permit, complete the appointments, and then exit if needed, but most founders stay in the UAE throughout the process."
+- question: Can I apply for a UAE residence visa without first setting up a company?
+  answer: No. The UAE residence visa is sponsored by your UAE company. You must incorporate your company and receive your trade licence before you can apply for the visa. There is no standalone self-employed visa in the UAE. The licence is the foundation.
+- question: How long does the entire UAE residence visa process take for a UK founder?
+  answer: Expect 4 to 8 weeks from start to finish. Company incorporation takes 2-4 weeks. The visa steps (entry permit, medical, biometrics, stamping) take another 2-3 weeks. The fastest I have seen is 3 weeks. The longest is 10 weeks, usually due to delays in company incorporation.
+- question: What is the total cost for a UK agency founder to get a UAE residence visa?
+  answer: Budget AED 20,000 to AED 38,000 (£4,300 to £8,100). This includes the free zone licence (AED 15,000-30,000), entry permit, medical test, Emirates ID, visa stamping, and PRO fees. You will also need private health insurance, which costs roughly AED 5,000-10,000 per year.
+- question: Do I need to be in the UAE for the medical and biometric appointments?
+  answer: Yes. The medical examination and biometric fingerprinting must be done in person at approved centres in the UAE. You cannot do these from the UK. You can enter on a tourist visa or entry permit, complete the appointments, and then exit if needed, but most founders stay in the UAE throughout the process.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Your UAE residence visa is sponsored by your own company, so you must incorporate your free zone licence first before applying for the visa.
+- Company incorporation in a free zone like DMCC, DSO, or Meydan takes 2–4 weeks and costs AED 15,000–30,000 (£3,200–£6,400) in 2025/26.
+- After receiving your trade licence, apply for an entry permit (2–5 working days, AED 1,000–1,500) to enter the UAE or change your visa status.
+- The entry permit allows you to proceed with medical tests and biometrics, which are mandatory steps before your residence visa is stamped.
+- A standard free zone licence typically includes 2–3 visa allocations, covering yourself and potential employees or dependents.
 ---
-
 <p>If you are a UK agency founder considering a move to Dubai, the residence visa is not a separate application you make on your own. It is tied directly to your company licence. You cannot have one without the other.</p>
 
 <p>This is the single most important thing to understand about the <strong>UAE residence visa process for UK founder</strong> moves. Your visa is a function of your business setup. Get the licence right, and the visa follows. Get it wrong, and you are stuck in a cycle of visa runs or expensive amendments.</p>

@@ -1,33 +1,40 @@
 ---
-title: "Alphabet Shares for Agency Founders: What They Are and Why You'd Use Them"
-slug: "alphabet-shares-agency-founders"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/alphabet-shares-agency-founders"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "Alphabet shares for agency founders: structure, tax"
-metaDescription: "Alphabet shares let agency founders pay different dividends to different shareholders. Here's how they work, when they make sense, and the tax"
-altText: "ICAEW qualified accountant reviewing share structure documents with agency founder in a modern London office meeting room"
-image: "/blog/alphabet-shares-agency-founders.jpg"
+title: 'Alphabet Shares for Agency Founders: What They Are and Why You''d Use Them'
+slug: alphabet-shares-agency-founders
+canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/alphabet-shares-agency-founders
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Incorporation and Structure
+metaTitle: 'Alphabet shares for agency founders: structure, tax'
+metaDescription: Alphabet shares let agency founders pay different dividends to different shareholders. Here's how they work, when they make sense, and the tax
+altText: ICAEW qualified accountant reviewing share structure documents with agency founder in a modern London office meeting room
+image: /blog/alphabet-shares-agency-founders.jpg
 imageCredit:
-  photographer: "Arturo Añez."
-  photographerUrl: "https://www.pexels.com/@arturoaez225"
-  sourceUrl: "https://www.pexels.com/photo/blue-square-tiles-on-red-background-9259017/"
-  source: "Pexels"
-h1: "Alphabet Shares for Agency Founders: What They Are and Why You'd Use Them"
-summary: "Alphabet shares are separate classes of ordinary shares that let you pay different dividend rates to different shareholders. Agency founders use them to reward key staff, bring in investors without losing control, and structure ownership for an exit. This post explains how they work, when they make sense, and what to watch out for."
-schema: ""
+  photographer: Arturo Añez.
+  photographerUrl: https://www.pexels.com/@arturoaez225
+  sourceUrl: https://www.pexels.com/photo/blue-square-tiles-on-red-background-9259017/
+  source: Pexels
+h1: 'Alphabet Shares for Agency Founders: What They Are and Why You''d Use Them'
+summary: Alphabet shares are separate classes of ordinary shares that let you pay different dividend rates to different shareholders. Agency founders use them to reward key staff, bring in investors without losing control, and structure ownership for an exit. This post explains how they work, when they make sense, and what to watch out for.
+schema: ''
 faqs:
-  - question: "What is the difference between alphabet shares and ordinary shares?"
-    answer: "Ordinary shares all carry the same rights. Every shareholder gets the same dividend per share, the same voting rights, and the same entitlement to capital on a sale. Alphabet shares are separate classes of shares (A, B, C, etc.) that carry different rights. The most common difference is dividend entitlement, but you can also vary voting rights, capital rights, and transfer restrictions between classes."
-  - question: "Do alphabet shares affect my ability to claim BADR on an exit?"
-    answer: "Yes, potentially. BADR requires you to hold at least 5% of the company's ordinary share capital and voting rights for two years before disposal. If your alphabet share class carries different voting rights or represents less than 5% of the total equity, you may not qualify. The structure must be designed with BADR qualification in mind. Take specialist advice before setting up alphabet shares if an exit is planned."
-  - question: "Can I set up alphabet shares myself using an online template?"
-    answer: "You can, but you should not. Alphabet shares require amendments to your articles of association, a properly drafted shareholders' agreement, and careful valuation to avoid income tax charges on issue. HMRC challenges poorly documented share structures, and disputes between shareholders are common when rights are not clearly defined. The cost of getting it wrong far exceeds the cost of proper advice."
-  - question: "Are alphabet shares better than an EMI scheme for rewarding staff?"
-    answer: "It depends on your situation. EMI schemes give employees the right to buy shares at a future date, with tax advantages. They are simpler and often more tax-efficient for smaller awards. Alphabet shares give immediate ownership and more flexibility on dividend rights, but add complexity. For most agencies, a combination works best: EMI options for the wider team and alphabet shares for the senior leadership. Speak to your accountant about which suits your agency."
+- question: What is the difference between alphabet shares and ordinary shares?
+  answer: Ordinary shares all carry the same rights. Every shareholder gets the same dividend per share, the same voting rights, and the same entitlement to capital on a sale. Alphabet shares are separate classes of shares (A, B, C, etc.) that carry different rights. The most common difference is dividend entitlement, but you can also vary voting rights, capital rights, and transfer restrictions between classes.
+- question: Do alphabet shares affect my ability to claim BADR on an exit?
+  answer: Yes, potentially. BADR requires you to hold at least 5% of the company's ordinary share capital and voting rights for two years before disposal. If your alphabet share class carries different voting rights or represents less than 5% of the total equity, you may not qualify. The structure must be designed with BADR qualification in mind. Take specialist advice before setting up alphabet shares if an exit is planned.
+- question: Can I set up alphabet shares myself using an online template?
+  answer: You can, but you should not. Alphabet shares require amendments to your articles of association, a properly drafted shareholders' agreement, and careful valuation to avoid income tax charges on issue. HMRC challenges poorly documented share structures, and disputes between shareholders are common when rights are not clearly defined. The cost of getting it wrong far exceeds the cost of proper advice.
+- question: Are alphabet shares better than an EMI scheme for rewarding staff?
+  answer: 'It depends on your situation. EMI schemes give employees the right to buy shares at a future date, with tax advantages. They are simpler and often more tax-efficient for smaller awards. Alphabet shares give immediate ownership and more flexibility on dividend rights, but add complexity. For most agencies, a combination works best: EMI options for the wider team and alphabet shares for the senior leadership. Speak to your accountant about which suits your agency.'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Alphabet shares let you pay different dividend rates to different shareholders without changing ownership structure.
+- Use alphabet shares to reward key staff with dividends that reflect their contribution, not the founder's.
+- Alphabet shares can restrict voting rights and include compulsory transfer provisions to protect founder control.
+- For investors, alphabet shares allow fixed preferential dividends and priority return of capital on exit.
+- The company's articles must permit multiple share classes, and rights are set via shareholders' agreement or board resolution.
 ---
-
 <h2>What Are Alphabet Shares?</h2>
 <p>Alphabet shares are separate classes of ordinary shares in a company, each designated by a letter. You might have A shares, B shares, C shares, and so on. They all represent ownership in the same company, but each class carries different rights.</p>
 <p>The most common difference is dividend rights. Class A shares might get £10 per share in dividends, while Class B shares get £5. Or Class A gets nothing in a particular year while Class B gets the full distribution. That flexibility is the entire point.</p>

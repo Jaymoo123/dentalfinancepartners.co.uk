@@ -1,33 +1,40 @@
 ---
-title: "HMRC Compliance Check on Agency Freelancer Payments: What to Do Now"
-slug: "hmrc-compliance-check-agency-freelancer-payments"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/hmrc-compliance-check-agency-freelancer-payments"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "HMRC Compliance Check on Freelancer Payments: Agency Guide"
-metaDescription: "HMRC is checking your agency's freelancer payments. Here is exactly what to expect, what evidence to prepare, and how to respond without panicking."
-altText: "Agency founder reading an HMRC compliance check letter at a desk in a Manchester office with financial documents"
-image: "/blog/hmrc-compliance-check-agency-freelancer-payments.jpg"
+title: 'HMRC Compliance Check on Agency Freelancer Payments: What to Do Now'
+slug: hmrc-compliance-check-agency-freelancer-payments
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/hmrc-compliance-check-agency-freelancer-payments
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'HMRC Compliance Check on Freelancer Payments: Agency Guide'
+metaDescription: HMRC is checking your agency's freelancer payments. Here is exactly what to expect, what evidence to prepare, and how to respond without panicking.
+altText: Agency founder reading an HMRC compliance check letter at a desk in a Manchester office with financial documents
+image: /blog/hmrc-compliance-check-agency-freelancer-payments.jpg
 imageCredit:
-  photographer: "www.kaboompics.com"
-  photographerUrl: "https://www.pexels.com/@karola-g"
-  sourceUrl: "https://www.pexels.com/photo/a-person-in-white-shirt-typing-on-laptop-5239872/"
-  source: "Pexels"
-h1: "HMRC Compliance Check on Your Agency's Freelancer Payments: Your Step-by-Step Response"
-summary: "A compliance check from HMRC on your agency's freelancer payments can feel like a crisis. But with the right evidence and a clear process, most checks end with no penalty. Here is what to do from the moment the letter arrives."
-schema: ""
+  photographer: www.kaboompics.com
+  photographerUrl: https://www.pexels.com/@karola-g
+  sourceUrl: https://www.pexels.com/photo/a-person-in-white-shirt-typing-on-laptop-5239872/
+  source: Pexels
+h1: 'HMRC Compliance Check on Your Agency''s Freelancer Payments: Your Step-by-Step Response'
+summary: A compliance check from HMRC on your agency's freelancer payments can feel like a crisis. But with the right evidence and a clear process, most checks end with no penalty. Here is what to do from the moment the letter arrives.
+schema: ''
 faqs:
-  - question: "How long does an HMRC compliance check on freelancer payments typically take?"
-    answer: "Most compliance checks take three to six months from start to finish. Simple cases with good records and cooperative taxpayers can close in eight to twelve weeks. Complex cases involving multiple freelancers, disputed facts, or appeals can take twelve to eighteen months. The speed depends largely on how quickly you respond and how organised your evidence is."
-  - question: "What happens if I cannot find the contracts or invoices HMRC has asked for?"
-    answer: "Tell HMRC immediately that the records are missing and explain why. If you have a reasonable excuse (a server crash, a change of accountant, a fire), HMRC may accept it. If you simply did not keep records, HMRC will estimate the tax due based on the information they have. That estimate will almost certainly be higher than the actual liability. Keeping proper records is a legal requirement, so missing records can lead to penalties on their own."
-  - question: "Can HMRC force me to pay tax on freelancer payments if the freelancer has already paid tax on that income?"
-    answer: "Yes, in most cases. HMRC can collect the tax from both sides. If a freelancer should have been treated as an employee, your agency owes employer NI (13.8%) and the apprenticeship levy. The freelancer owes income tax and employee NI on the same payments. HMRC will pursue both. This is why getting the status determination right upfront is so important. Double taxation is a real risk."
-  - question: "Will HMRC tell my freelancers that I am being investigated?"
-    answer: "HMRC can contact your freelancers as part of their investigation. They often do. They may write to freelancers asking about their working arrangements, their equipment, their right to substitute, and their other clients. This is not a punishment. It is HMRC gathering evidence. But it can damage your relationship with freelancers if they feel implicated. Be upfront with your freelancers if you know HMRC may contact them."
+- question: How long does an HMRC compliance check on freelancer payments typically take?
+  answer: Most compliance checks take three to six months from start to finish. Simple cases with good records and cooperative taxpayers can close in eight to twelve weeks. Complex cases involving multiple freelancers, disputed facts, or appeals can take twelve to eighteen months. The speed depends largely on how quickly you respond and how organised your evidence is.
+- question: What happens if I cannot find the contracts or invoices HMRC has asked for?
+  answer: Tell HMRC immediately that the records are missing and explain why. If you have a reasonable excuse (a server crash, a change of accountant, a fire), HMRC may accept it. If you simply did not keep records, HMRC will estimate the tax due based on the information they have. That estimate will almost certainly be higher than the actual liability. Keeping proper records is a legal requirement, so missing records can lead to penalties on their own.
+- question: Can HMRC force me to pay tax on freelancer payments if the freelancer has already paid tax on that income?
+  answer: Yes, in most cases. HMRC can collect the tax from both sides. If a freelancer should have been treated as an employee, your agency owes employer NI (13.8%) and the apprenticeship levy. The freelancer owes income tax and employee NI on the same payments. HMRC will pursue both. This is why getting the status determination right upfront is so important. Double taxation is a real risk.
+- question: Will HMRC tell my freelancers that I am being investigated?
+  answer: HMRC can contact your freelancers as part of their investigation. They often do. They may write to freelancers asking about their working arrangements, their equipment, their right to substitute, and their other clients. This is not a punishment. It is HMRC gathering evidence. But it can damage your relationship with freelancers if they feel implicated. Be upfront with your freelancers if you know HMRC may contact them.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- HMRC compliance checks on agency freelancer payments focus on whether freelancers should have been treated as employees for tax purposes.
+- Reply to HMRC within seven days of receiving a compliance check letter to show cooperation and buy goodwill.
+- Send only the exact information HMRC requests; extra details can create additional questions and prolong the check.
+- HMRC examines actual working practices, not just contracts, so gather evidence like emails, timesheets, and equipment records.
+- Most compliance checks end with no penalty if you provide clear evidence that freelancers were genuinely self-employed.
 ---
-
 <p>The letter lands in your inbox or on your doormat. It is headed "Compliance Check" and it references your agency's payments to freelancers and contractors. Your stomach drops.</p>
 
 <p>You are not alone. HMRC has been running more compliance checks on agencies specifically around freelancer payments, IR35 status determinations, and off-payroll working rules. They know that agencies rely heavily on freelance talent. They also know that misclassification is common.</p>

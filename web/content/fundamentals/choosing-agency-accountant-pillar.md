@@ -1,33 +1,40 @@
 ---
-title: "How to Choose an Accountant for Your Agency: The Definitive Founder's Guide"
-slug: "choosing-agency-accountant-pillar"
-canonical: "https://www.agencyfounderfinance.co.uk/fundamentals/choosing-agency-accountant-pillar"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Accountant Services"
-metaTitle: "Agency Accountant Guide: How to Choose the Right One"
-metaDescription: "Choosing the wrong accountant costs agency founders time and money. This guide covers what to look for, specialist vs generalist, costs, and switching."
-altText: "Agency founder reviewing financial documents with accountant in a modern UK office setting, Shoreditch"
-image: "/blog/choosing-agency-accountant-pillar.jpg"
+title: 'How to Choose an Accountant for Your Agency: The Definitive Founder''s Guide'
+slug: choosing-agency-accountant-pillar
+canonical: https://www.agencyfounderfinance.co.uk/fundamentals/choosing-agency-accountant-pillar
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Accountant Services
+metaTitle: 'Agency Accountant Guide: How to Choose the Right One'
+metaDescription: Choosing the wrong accountant costs agency founders time and money. This guide covers what to look for, specialist vs generalist, costs, and switching.
+altText: Agency founder reviewing financial documents with accountant in a modern UK office setting, Shoreditch
+image: /blog/choosing-agency-accountant-pillar.jpg
 imageCredit:
-  photographer: "Leeloo The First"
-  photographerUrl: "https://www.pexels.com/@leeloothefirst"
-  sourceUrl: "https://www.pexels.com/photo/smartphone-with-opened-calculator-lying-on-a-document-with-an-income-statement-8962520/"
-  source: "Pexels"
-h1: "How to Choose an Accountant for Your Agency: The Definitive Founder's Guide"
-summary: "Choosing the right accountant is one of the most important decisions an agency founder makes. This guide covers what a specialist agency accountant actually does, how much you should expect to pay, the questions you must ask before signing, and when it's time to switch. Written by an ICAEW-qualified accountant who works with 73+ UK and UAE agency founders."
-schema: ""
+  photographer: Leeloo The First
+  photographerUrl: https://www.pexels.com/@leeloothefirst
+  sourceUrl: https://www.pexels.com/photo/smartphone-with-opened-calculator-lying-on-a-document-with-an-income-statement-8962520/
+  source: Pexels
+h1: 'How to Choose an Accountant for Your Agency: The Definitive Founder''s Guide'
+summary: Choosing the right accountant is one of the most important decisions an agency founder makes. This guide covers what a specialist agency accountant actually does, how much you should expect to pay, the questions you must ask before signing, and when it's time to switch. Written by an ICAEW-qualified accountant who works with 73+ UK and UAE agency founders.
+schema: ''
 faqs:
-  - question: "How do I know if my current accountant is good enough for my agency?"
-    answer: "Ask yourself three questions. Do you receive monthly management accounts with gross margin by client and staff utilisation? Has your accountant proactively identified any tax reliefs or savings in the last 12 months? Do they understand IR35, R&D tax credits, and the specific VAT rules for agencies? If the answer to any is no, it is time to consider switching."
-  - question: "What is the typical fee for a specialist agency accountant?"
-    answer: "For a UK agency turning over £150,000 to £500,000, expect to pay £300 to £600 per month for a full-service engagement. This should include monthly management accounts, VAT filing, tax planning, and ad hoc advisory. For smaller agencies under £150,000, fees range from £150 to £300 per month. For agencies over £1.5 million, fees can exceed £1,200 per month and often include CFO-level support."
-  - question: "How long does it take to switch accountants?"
-    answer: "The process typically takes 2 to 4 weeks. Your new accountant handles the handover by sending a letter of authority to your old accountant. The old accountant must provide your statutory books, trial balance, prior year accounts, and tax computations within a reasonable timeframe. The new accountant then notifies HMRC of the change."
-  - question: "Can I use a generalist accountant for my agency?"
-    answer: "You can, but it is rarely the best choice. A generalist will file your annual accounts and VAT returns correctly, but they will miss agency-specific opportunities like R&D tax credits, IR35 planning, and optimal salary-dividend structuring. The cost of a specialist is typically offset by the tax savings and strategic advice they provide. Many agency founders find the specialist pays for itself several times over."
+- question: How do I know if my current accountant is good enough for my agency?
+  answer: Ask yourself three questions. Do you receive monthly management accounts with gross margin by client and staff utilisation? Has your accountant proactively identified any tax reliefs or savings in the last 12 months? Do they understand IR35, R&D tax credits, and the specific VAT rules for agencies? If the answer to any is no, it is time to consider switching.
+- question: What is the typical fee for a specialist agency accountant?
+  answer: For a UK agency turning over £150,000 to £500,000, expect to pay £300 to £600 per month for a full-service engagement. This should include monthly management accounts, VAT filing, tax planning, and ad hoc advisory. For smaller agencies under £150,000, fees range from £150 to £300 per month. For agencies over £1.5 million, fees can exceed £1,200 per month and often include CFO-level support.
+- question: How long does it take to switch accountants?
+  answer: The process typically takes 2 to 4 weeks. Your new accountant handles the handover by sending a letter of authority to your old accountant. The old accountant must provide your statutory books, trial balance, prior year accounts, and tax computations within a reasonable timeframe. The new accountant then notifies HMRC of the change.
+- question: Can I use a generalist accountant for my agency?
+  answer: You can, but it is rarely the best choice. A generalist will file your annual accounts and VAT returns correctly, but they will miss agency-specific opportunities like R&D tax credits, IR35 planning, and optimal salary-dividend structuring. The cost of a specialist is typically offset by the tax savings and strategic advice they provide. Many agency founders find the specialist pays for itself several times over.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A specialist agency accountant provides monthly management accounts including gross margin by client and service line, not just annual compliance.
+- Generalist accountants often miss R&D tax credits worth up to £47,000 for agencies qualifying under the SME scheme with 186% enhanced deduction.
+- A proactive accountant plans your tax position 12–18 months ahead, including BADR exit planning before the lifetime limit of £1 million.
+- For agencies turning over more than £250,000, monthly management accounts within 10 working days are non-negotiable for strategic oversight.
+- Specialist accountants identify IR35 risks from contractor setups that could cost £30,000 in back taxes, unlike generalist compliance clerks.
 ---
-
 <p>If you run a marketing, digital, creative, PR, or recruitment agency, your accountant is not a cost centre. They are a strategic partner. Get this decision wrong and you will overpay tax, miss reliefs, face HMRC penalties, and waste hours on admin. Get it right and you will save five figures annually, sleep better through MTD, and exit cleanly when the time comes.</p>
 
 <p>This guide is for UK agency founders who want to <strong>choose an accountant for their agency</strong> with confidence. It covers what a specialist agency accountant actually does, how much you should expect to pay, the questions you must ask before signing, and when it's time to switch. I am an ICAEW-qualified accountant, and I work with 73+ agency founders across the UK and UAE. This is the advice I give them.</p>

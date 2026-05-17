@@ -1,33 +1,40 @@
 ---
-title: "Flat Rate VAT for Agencies: Is It Still Worth It in 2025/26?"
-slug: "flat-rate-vat-agencies"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/flat-rate-vat-agencies"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Flat Rate VAT for Agencies: Worth It in 2025/26?"
-metaDescription: "Is the flat rate VAT scheme still worth it for agencies? We explain the 16.5% rate, the limited cost trader rules, and when you should opt out."
-altText: "Agency founder reviewing flat rate VAT calculations on a laptop in a modern UK office"
-image: "/blog/flat-rate-vat-agencies.jpg"
+title: 'Flat Rate VAT for Agencies: Is It Still Worth It in 2025/26?'
+slug: flat-rate-vat-agencies
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/flat-rate-vat-agencies
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'Flat Rate VAT for Agencies: Worth It in 2025/26?'
+metaDescription: Is the flat rate VAT scheme still worth it for agencies? We explain the 16.5% rate, the limited cost trader rules, and when you should opt out.
+altText: Agency founder reviewing flat rate VAT calculations on a laptop in a modern UK office
+image: /blog/flat-rate-vat-agencies.jpg
 imageCredit:
-  photographer: "Mikael Blomkvist"
-  photographerUrl: "https://www.pexels.com/@mikael-blomkvist"
-  sourceUrl: "https://www.pexels.com/photo/people-sitting-at-the-table-6476256/"
-  source: "Pexels"
-h1: "Flat Rate VAT for Agencies: Is It Still Worth It in 2025/26?"
-summary: "The flat rate VAT scheme used to be a licence to print money for agencies. The 2017 limited cost trader rules changed that. Here is whether it still makes sense for your agency in 2025/26."
-schema: ""
+  photographer: Mikael Blomkvist
+  photographerUrl: https://www.pexels.com/@mikael-blomkvist
+  sourceUrl: https://www.pexels.com/photo/people-sitting-at-the-table-6476256/
+  source: Pexels
+h1: 'Flat Rate VAT for Agencies: Is It Still Worth It in 2025/26?'
+summary: The flat rate VAT scheme used to be a licence to print money for agencies. The 2017 limited cost trader rules changed that. Here is whether it still makes sense for your agency in 2025/26.
+schema: ''
 faqs:
-  - question: "What is the flat rate VAT percentage for agencies?"
-    answer: "For most agencies, the flat rate is 16.5% if you are a limited cost trader. If your relevant goods spend exceeds 2% of gross turnover, creative agencies use 14.5% and other agencies use 16.5%. Always check your specific sector rate on the HMRC website."
-  - question: "Can I reclaim VAT on purchases under the flat rate scheme?"
-    answer: "Generally no. Under flat rate VAT, you cannot reclaim VAT on most purchases. The exception is capital assets over £2,000 including VAT. This is why standard VAT accounting often works out better for agencies with significant costs."
-  - question: "How do I know if I am a limited cost trader?"
-    answer: "You are a limited cost trader if your VAT-inclusive spend on relevant goods is less than 2% of your gross turnover (or less than £1,000 per year if 2% is higher). Relevant goods means physical items only — not services, software, or staff costs."
-  - question: "Should I leave the flat rate VAT scheme?"
-    answer: "If your agency turnover exceeds £150k and you have meaningful expenses, you are likely better off on standard VAT accounting. Run the numbers with your accountant. The ability to reclaim input VAT on costs like software, freelancers, and overheads usually outweighs any flat rate margin."
+- question: What is the flat rate VAT percentage for agencies?
+  answer: For most agencies, the flat rate is 16.5% if you are a limited cost trader. If your relevant goods spend exceeds 2% of gross turnover, creative agencies use 14.5% and other agencies use 16.5%. Always check your specific sector rate on the HMRC website.
+- question: Can I reclaim VAT on purchases under the flat rate scheme?
+  answer: Generally no. Under flat rate VAT, you cannot reclaim VAT on most purchases. The exception is capital assets over £2,000 including VAT. This is why standard VAT accounting often works out better for agencies with significant costs.
+- question: How do I know if I am a limited cost trader?
+  answer: You are a limited cost trader if your VAT-inclusive spend on relevant goods is less than 2% of your gross turnover (or less than £1,000 per year if 2% is higher). Relevant goods means physical items only — not services, software, or staff costs.
+- question: Should I leave the flat rate VAT scheme?
+  answer: If your agency turnover exceeds £150k and you have meaningful expenses, you are likely better off on standard VAT accounting. Run the numbers with your accountant. The ability to reclaim input VAT on costs like software, freelancers, and overheads usually outweighs any flat rate margin.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- The flat rate VAT scheme pays HMRC a fixed percentage of gross turnover; for most agencies the rate is 16.5%.
+- Most agencies are limited cost traders because only physical goods count as relevant costs, not services like freelancers or software.
+- A limited cost trader pays 16.5% flat rate regardless of sector, leaving only a small margin of around 0.5% to 1%.
+- For a typical agency with low goods spend, the flat rate scheme now yields only about £240 extra per year on £120k turnover.
+- Agencies with high goods spend (over 2% of turnover) can use a lower sector rate like 14.5% and keep a meaningful saving.
 ---
-
 <h2>What Is the Flat Rate VAT Scheme?</h2>
 
 <p>The flat rate VAT scheme is a simplified way of accounting for VAT. Instead of calculating the difference between the VAT you charge clients and the VAT you pay suppliers, you pay HMRC a fixed percentage of your gross turnover. That percentage depends on your business sector.</p>

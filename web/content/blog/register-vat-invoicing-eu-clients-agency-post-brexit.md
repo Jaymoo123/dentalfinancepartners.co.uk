@@ -1,33 +1,40 @@
 ---
-title: "How to Register Your UK Agency for VAT When Invoicing EU Clients Post-Brexit"
-slug: "register-vat-invoicing-eu-clients-agency-post-brexit"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/register-vat-invoicing-eu-clients-agency-post-brexit"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK Agency VAT Registration: Invoicing EU Clients Post-Brexit"
-metaDescription: "Post-Brexit VAT rules for UK agencies invoicing EU clients. When to register, how to charge, and what to put on your invoice. Practical guidance"
-altText: "UK agency founder reviewing VAT invoice for EU client on laptop in modern London office"
-image: "/blog/register-vat-invoicing-eu-clients-agency-post-brexit.jpg"
+title: How to Register Your UK Agency for VAT When Invoicing EU Clients Post-Brexit
+slug: register-vat-invoicing-eu-clients-agency-post-brexit
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/register-vat-invoicing-eu-clients-agency-post-brexit
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK Agency VAT Registration: Invoicing EU Clients Post-Brexit'
+metaDescription: Post-Brexit VAT rules for UK agencies invoicing EU clients. When to register, how to charge, and what to put on your invoice. Practical guidance
+altText: UK agency founder reviewing VAT invoice for EU client on laptop in modern London office
+image: /blog/register-vat-invoicing-eu-clients-agency-post-brexit.jpg
 imageCredit:
-  photographer: "Dom J"
-  photographerUrl: "https://www.pexels.com/@dom-j-7304"
-  sourceUrl: "https://www.pexels.com/photo/uk-driving-license-45113/"
-  source: "Pexels"
-h1: "How to Register Your UK Agency for VAT When Invoicing EU Clients Post-Brexit"
-summary: "Post-Brexit VAT rules for UK agencies selling to EU clients have changed significantly. This guide covers when you must register, how to invoice correctly, and what the reverse charge means for your cash flow."
-schema: ""
+  photographer: Dom J
+  photographerUrl: https://www.pexels.com/@dom-j-7304
+  sourceUrl: https://www.pexels.com/photo/uk-driving-license-45113/
+  source: Pexels
+h1: How to Register Your UK Agency for VAT When Invoicing EU Clients Post-Brexit
+summary: Post-Brexit VAT rules for UK agencies selling to EU clients have changed significantly. This guide covers when you must register, how to invoice correctly, and what the reverse charge means for your cash flow.
+schema: ''
 faqs:
-  - question: "Do I need to register for VAT just because I have EU clients?"
-    answer: "No. VAT registration is based on your total UK taxable turnover, not where your clients are based. If your turnover is below £90,000, you are not required to register. However, many agencies voluntarily register to reclaim VAT on costs and to simplify invoicing EU clients. If you do register, you must follow the reverse charge rules for B2B supplies to EU businesses."
-  - question: "What VAT rate do I charge on invoices to EU clients?"
-    answer: "If your EU client is a VAT-registered business, you charge 0% UK VAT and apply the reverse charge. Your invoice must state that the customer must account for VAT in their own country. If your EU client is not VAT-registered (e.g. a private individual), you charge 20% UK VAT. Always verify the client's VAT number via VIES before issuing a reverse charge invoice."
-  - question: "Do I need to file an EC Sales List if I invoice EU clients?"
-    answer: "Yes. If you are a UK VAT-registered agency supplying services to VAT-registered EU business clients, you must file an EC Sales List (ESL) with HMRC, usually quarterly. This lists each client's VAT number and the total value of supplies. Even if you made no supplies in a period, file a nil return. HMRC can issue penalties for late or missing ESLs."
-  - question: "What happens if I accidentally charge UK VAT to an EU business client?"
-    answer: "Your client will likely reject the invoice because they cannot reclaim UK VAT. You will need to issue a credit note to cancel the original invoice and reissue with the correct reverse charge treatment. If you have already paid the VAT to HMRC, you can reclaim it on your next return. Correcting past errors is straightforward but time-consuming. If you are unsure about any past invoices, speak to your accountant before HMRC opens a compliance check."
+- question: Do I need to register for VAT just because I have EU clients?
+  answer: No. VAT registration is based on your total UK taxable turnover, not where your clients are based. If your turnover is below £90,000, you are not required to register. However, many agencies voluntarily register to reclaim VAT on costs and to simplify invoicing EU clients. If you do register, you must follow the reverse charge rules for B2B supplies to EU businesses.
+- question: What VAT rate do I charge on invoices to EU clients?
+  answer: If your EU client is a VAT-registered business, you charge 0% UK VAT and apply the reverse charge. Your invoice must state that the customer must account for VAT in their own country. If your EU client is not VAT-registered (e.g. a private individual), you charge 20% UK VAT. Always verify the client's VAT number via VIES before issuing a reverse charge invoice.
+- question: Do I need to file an EC Sales List if I invoice EU clients?
+  answer: Yes. If you are a UK VAT-registered agency supplying services to VAT-registered EU business clients, you must file an EC Sales List (ESL) with HMRC, usually quarterly. This lists each client's VAT number and the total value of supplies. Even if you made no supplies in a period, file a nil return. HMRC can issue penalties for late or missing ESLs.
+- question: What happens if I accidentally charge UK VAT to an EU business client?
+  answer: Your client will likely reject the invoice because they cannot reclaim UK VAT. You will need to issue a credit note to cancel the original invoice and reissue with the correct reverse charge treatment. If you have already paid the VAT to HMRC, you can reclaim it on your next return. Correcting past errors is straightforward but time-consuming. If you are unsure about any past invoices, speak to your accountant before HMRC opens a compliance check.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- If your UK taxable turnover exceeds £90,000 in any rolling 12-month period, you must register for VAT regardless of where your clients are based.
+- For agency services to EU business clients, the place of supply is where the client belongs, so you do not charge UK VAT.
+- 'When invoicing an EU business client, show ''VAT: Reverse charge'' and include both your UK VAT number and the client''s VAT number with country code.'
+- If your EU client is a non-business customer, you must charge UK VAT at 20% because the supply is treated as taking place in the UK.
+- Voluntarily registering for VAT below the £90,000 threshold allows you to reclaim VAT on costs like software and equipment, simplifying EU invoicing.
 ---
-
 <p>If your UK agency invoices clients in the European Union, the VAT rules changed on 1 January 2021 and they haven't gone back. You cannot simply treat EU invoices the same way you treat UK invoices. Get it wrong and you could undercharge VAT, face HMRC penalties, or leave your client unable to reclaim the VAT you charged them.</p>
 
 <p>This is a practical guide for agency founders who need to know exactly what to do. Not a textbook on cross-border VAT. Just the steps, the rules, and the traps to avoid.</p>

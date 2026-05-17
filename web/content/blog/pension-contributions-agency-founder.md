@@ -1,31 +1,38 @@
 ---
-title: "Pension Contributions Through Your Agency: The Founder's Guide"
-slug: "pension-contributions-agency-founder"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/pension-contributions-agency-founder"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "Pension Contributions for Agency Founders"
-metaDescription: "How agency founders can use pension contributions to cut corporation tax, build retirement savings, and avoid common HMRC pitfalls. Practical numbers"
-altText: "Agency founder reviewing pension paperwork at desk with laptop and coffee"
-image: "/blog/pension-contributions-agency-founder.jpg"
+title: 'Pension Contributions Through Your Agency: The Founder''s Guide'
+slug: pension-contributions-agency-founder
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/pension-contributions-agency-founder
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: Pension Contributions for Agency Founders
+metaDescription: How agency founders can use pension contributions to cut corporation tax, build retirement savings, and avoid common HMRC pitfalls. Practical numbers
+altText: Agency founder reviewing pension paperwork at desk with laptop and coffee
+image: /blog/pension-contributions-agency-founder.jpg
 imageCredit:
-  photographer: "SHVETS production"
-  photographerUrl: "https://www.pexels.com/@shvets-production"
-  sourceUrl: "https://www.pexels.com/photo/an-elderly-man-looking-at-the-documents-on-the-table-near-his-laptop-7545279/"
-  source: "Pexels"
-h1: "Pension Contributions Through Your Agency: The Founder's Guide"
-summary: "Pension contributions are one of the most tax-efficient ways to extract value from your agency. This guide covers the rules, the limits, and the traps for UK agency founders."
-schema: ""
+  photographer: SHVETS production
+  photographerUrl: https://www.pexels.com/@shvets-production
+  sourceUrl: https://www.pexels.com/photo/an-elderly-man-looking-at-the-documents-on-the-table-near-his-laptop-7545279/
+  source: Pexels
+h1: 'Pension Contributions Through Your Agency: The Founder''s Guide'
+summary: Pension contributions are one of the most tax-efficient ways to extract value from your agency. This guide covers the rules, the limits, and the traps for UK agency founders.
+schema: ''
 faqs:
-  - question: "Can I contribute to my pension if my agency is loss-making?"
-    answer: "Yes, but there is no corporation tax benefit if there is no profit to offset. The contribution still reduces your taxable profit, but if you are already making a loss, it just increases the loss carried forward. You get the tax relief when the loss is used against future profits. For a loss-making agency, focus on getting profitable first, then contribute."
-  - question: "Do I need to set up a workplace pension for myself as a director?"
-    answer: "No. If you are the only director and have no other employees, you are exempt from auto-enrolment duties. You can set up a personal SIPP or personal pension and have the company pay into it directly. No need for a formal workplace pension scheme."
-  - question: "Can my agency pay into my spouse's pension?"
-    answer: "Yes, but only if your spouse is an employee or director of the company. The contribution must be for the purposes of the trade, so your spouse needs to have a genuine role. A non-working spouse receiving a £60,000 pension contribution with no duties would likely be challenged by"
+- question: Can I contribute to my pension if my agency is loss-making?
+  answer: Yes, but there is no corporation tax benefit if there is no profit to offset. The contribution still reduces your taxable profit, but if you are already making a loss, it just increases the loss carried forward. You get the tax relief when the loss is used against future profits. For a loss-making agency, focus on getting profitable first, then contribute.
+- question: Do I need to set up a workplace pension for myself as a director?
+  answer: No. If you are the only director and have no other employees, you are exempt from auto-enrolment duties. You can set up a personal SIPP or personal pension and have the company pay into it directly. No need for a formal workplace pension scheme.
+- question: Can my agency pay into my spouse's pension?
+  answer: Yes, but only if your spouse is an employee or director of the company. The contribution must be for the purposes of the trade, so your spouse needs to have a genuine role. A non-working spouse receiving a £60,000 pension contribution with no duties would likely be challenged by
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Pension contributions are corporation tax deductible, saving 25% tax on the way in, with no income tax or NI due.
+- The standard annual allowance is £60,000 for 2025/26, but tapers to £10,000 if adjusted income exceeds £260,000.
+- Drawing taxable pension income triggers the Money Purchase Annual Allowance, limiting further contributions to £10,000 per year.
+- Unused annual allowance from the previous three tax years can be carried forward, allowing contributions above £60,000 in a single year.
+- On £20,000 contributed, the full amount lands in your pension pot, compared to roughly £12,600 take-home from dividends as a higher rate taxpayer.
 ---
-
 <p>If you own a limited company agency, pension contributions are one of the most tax-efficient moves you can make. Better than dividends. Better than a bonus. And certainly better than leaving profits sitting in the company bank account paying 25% corporation tax.</p>
 
 <p>But there are rules. Limits. And a few traps that catch agency founders out every year.</p>

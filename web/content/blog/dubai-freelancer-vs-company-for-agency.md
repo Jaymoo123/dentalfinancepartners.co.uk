@@ -1,33 +1,40 @@
 ---
-title: "Can I Operate My Agency as a Dubai Freelancer Instead of a Company to Save Costs?"
-slug: "dubai-freelancer-vs-company-for-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-freelancer-vs-company-for-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Dubai Freelancer vs Company for Agency: Which Saves More?"
-metaDescription: "Dubai freelancer permits cost less upfront but restrict you to personal services. Agencies with staff or subcontractors need a company. Here is the real"
-altText: "Dubai freelancer permit vs company license comparison for UK agency founders considering UAE relocation"
-image: "/blog/dubai-freelancer-vs-company-for-agency.jpg"
+title: Can I Operate My Agency as a Dubai Freelancer Instead of a Company to Save Costs?
+slug: dubai-freelancer-vs-company-for-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-freelancer-vs-company-for-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Dubai Freelancer vs Company for Agency: Which Saves More?'
+metaDescription: Dubai freelancer permits cost less upfront but restrict you to personal services. Agencies with staff or subcontractors need a company. Here is the real
+altText: Dubai freelancer permit vs company license comparison for UK agency founders considering UAE relocation
+image: /blog/dubai-freelancer-vs-company-for-agency.jpg
 imageCredit:
-  photographer: "Mauricio  Krupka Buendia"
-  photographerUrl: "https://www.pexels.com/@mauricio-krupka-buendia-1141363850"
-  sourceUrl: "https://www.pexels.com/photo/aerial-view-of-fire-trucks-in-urban-area-32652799/"
-  source: "Pexels"
-h1: "Can I Operate My Agency as a Dubai Freelancer Instead of a Company to Save Costs?"
-summary: "A Dubai freelancer permit costs around AED 7,500 per year and suits solo practitioners. A company license starts at AED 15,000 and lets you hire staff, subcontract, and scale. For most agency founders with a team or contractor network, the company structure pays for itself."
-schema: ""
+  photographer: Mauricio  Krupka Buendia
+  photographerUrl: https://www.pexels.com/@mauricio-krupka-buendia-1141363850
+  sourceUrl: https://www.pexels.com/photo/aerial-view-of-fire-trucks-in-urban-area-32652799/
+  source: Pexels
+h1: Can I Operate My Agency as a Dubai Freelancer Instead of a Company to Save Costs?
+summary: A Dubai freelancer permit costs around AED 7,500 per year and suits solo practitioners. A company license starts at AED 15,000 and lets you hire staff, subcontract, and scale. For most agency founders with a team or contractor network, the company structure pays for itself.
+schema: ''
 faqs:
-  - question: "Can I hire employees under a Dubai freelancer permit?"
-    answer: "No. A Dubai freelancer permit only allows you to provide personal services. You cannot employ staff under that permit. If you need employees, you must set up a company license in a free zone. Some free zones allow you to sponsor one or two visas under a freelancer permit, but this is the exception, not the rule, and it still restricts your business activities."
-  - question: "What happens if HMRC finds out I have a Dubai freelancer permit?"
-    answer: "HMRC does not care about your Dubai permit per se. They care about your UK tax residence and where your agency's trade is carried on. If you have a Dubai freelancer permit but continue to manage your agency from the UK, serve UK clients, and hold UK bank accounts, HMRC will argue you are still UK resident and liable for UK tax on the full profits. The freelancer permit alone is not enough to change your tax status."
-  - question: "How much does a Dubai company license cost compared to a freelancer permit?"
-    answer: "A Dubai freelancer permit costs AED 7,500 to AED 15,000 per year. A company license costs AED 15,000 to AED 30,000 for the license alone, plus AED 8,000 to AED 20,000 for office space, AED 4,000 per visa, and AED 3,000 to AED 5,000 for PRO fees. Total year-one cost for a company is typically AED 30,000 to AED 50,000. The freelancer permit is cheaper upfront but restricts your ability to scale."
-  - question: "Can I switch from a freelancer permit to a company license later?"
-    answer: "Yes, you can upgrade from a freelancer permit to a company license. Most free zones allow this. You will need to pay the difference in license fees, set up a physical office if required, and transfer any existing contracts to the new entity. The process takes 2-4 weeks. It is usually more cost-effective to start with a company license if you know you will hire or subcontract within 12 months."
+- question: Can I hire employees under a Dubai freelancer permit?
+  answer: No. A Dubai freelancer permit only allows you to provide personal services. You cannot employ staff under that permit. If you need employees, you must set up a company license in a free zone. Some free zones allow you to sponsor one or two visas under a freelancer permit, but this is the exception, not the rule, and it still restricts your business activities.
+- question: What happens if HMRC finds out I have a Dubai freelancer permit?
+  answer: HMRC does not care about your Dubai permit per se. They care about your UK tax residence and where your agency's trade is carried on. If you have a Dubai freelancer permit but continue to manage your agency from the UK, serve UK clients, and hold UK bank accounts, HMRC will argue you are still UK resident and liable for UK tax on the full profits. The freelancer permit alone is not enough to change your tax status.
+- question: How much does a Dubai company license cost compared to a freelancer permit?
+  answer: A Dubai freelancer permit costs AED 7,500 to AED 15,000 per year. A company license costs AED 15,000 to AED 30,000 for the license alone, plus AED 8,000 to AED 20,000 for office space, AED 4,000 per visa, and AED 3,000 to AED 5,000 for PRO fees. Total year-one cost for a company is typically AED 30,000 to AED 50,000. The freelancer permit is cheaper upfront but restricts your ability to scale.
+- question: Can I switch from a freelancer permit to a company license later?
+  answer: Yes, you can upgrade from a freelancer permit to a company license. Most free zones allow this. You will need to pay the difference in license fees, set up a physical office if required, and transfer any existing contracts to the new entity. The process takes 2-4 weeks. It is usually more cost-effective to start with a company license if you know you will hire or subcontract within 12 months.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A Dubai freelancer permit costs AED 7,500–15,000 per year but only allows you to provide services you personally perform.
+- A Dubai company license costs AED 15,000–50,000 per year and lets you employ staff, subcontract work, and scale your agency.
+- If you manage a team or subcontractors, a freelancer permit is illegal—you must operate through a company license.
+- Using a freelancer permit to invoice for work done by others risks fines from Dubai authorities for unlicensed trading.
+- For most agency founders with staff or a contractor network, the extra cost of a company license is justified by its legal and operational benefits.
 ---
-
 <p>If you run a UK marketing agency and you are looking at Dubai as a base, the freelancer route looks tempting. AED 7,500 for a permit. No office requirement in most free zones. You can work from a co-working desk in Dubai Marina or a villa in The Springs. The cost difference versus a full company license is significant. But there is a catch that catches most agency founders out: the freelancer permit restricts what you can actually do.</p>
 
 <p>The Dubai freelancer vs company for agency question comes down to one thing: who does the work. If you do it all yourself, a freelancer permit works. If you have staff, subcontractors, or even regular freelancers you manage, you need a company license. That is the hard line. Let me walk through the numbers and the practical reality.</p>

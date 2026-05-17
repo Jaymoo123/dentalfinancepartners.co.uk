@@ -1,33 +1,40 @@
 ---
-title: "Salary Sacrifice vs Dividend Waiver: Which Saves More Tax for Agency Founders with Spouse Shareholders?"
-slug: "salary-sacrifice-vs-dividend-waiver-spouse-shareholders-agency-founders"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/salary-sacrifice-vs-dividend-waiver-spouse-shareholders-agency-founders"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Salary and Dividends"
-metaTitle: "Salary Sacrifice vs Dividend Waiver: Tax Saving for Agency"
-metaDescription: "Should your spouse take a salary sacrifice or waive dividends to shift income? We compare both strategies for agency founders with spouse shareholders."
-altText: "UK accountant discussing salary sacrifice vs dividend waiver with an agency founder and spouse at a desk in a Manchester office"
-image: "/blog/salary-sacrifice-vs-dividend-waiver-spouse-shareholders-agency-founders.jpg"
+title: 'Salary Sacrifice vs Dividend Waiver: Which Saves More Tax for Agency Founders with Spouse Shareholders?'
+slug: salary-sacrifice-vs-dividend-waiver-spouse-shareholders-agency-founders
+canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/salary-sacrifice-vs-dividend-waiver-spouse-shareholders-agency-founders
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Salary and Dividends
+metaTitle: 'Salary Sacrifice vs Dividend Waiver: Tax Saving for Agency'
+metaDescription: Should your spouse take a salary sacrifice or waive dividends to shift income? We compare both strategies for agency founders with spouse shareholders.
+altText: UK accountant discussing salary sacrifice vs dividend waiver with an agency founder and spouse at a desk in a Manchester office
+image: /blog/salary-sacrifice-vs-dividend-waiver-spouse-shareholders-agency-founders.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/white-and-black-paper-on-typewriter-5198201/"
-  source: "Pexels"
-h1: "Salary Sacrifice vs Dividend Waiver: Which Saves More Tax for Agency Founders with Spouse Shareholders?"
-summary: "If your spouse holds shares in your agency, you can shift income between you to reduce the overall tax bill. But which method works better: salary sacrifice or dividend waiver? We compare both strategies with real numbers for agency founders."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/white-and-black-paper-on-typewriter-5198201/
+  source: Pexels
+h1: 'Salary Sacrifice vs Dividend Waiver: Which Saves More Tax for Agency Founders with Spouse Shareholders?'
+summary: 'If your spouse holds shares in your agency, you can shift income between you to reduce the overall tax bill. But which method works better: salary sacrifice or dividend waiver? We compare both strategies with real numbers for agency founders.'
+schema: ''
 faqs:
-  - question: "Can I waive dividends retrospectively to save tax?"
-    answer: "No. HMRC requires dividend waivers to be made before the dividend is declared. If you try to waive dividends after the fact, HMRC will treat the dividend as belonging to you and tax it accordingly. Always sign a waiver document before the dividend date."
-  - question: "Does salary sacrifice affect my ability to get a mortgage?"
-    answer: "It can. Mortgage lenders assess your personal income, not your company's. If you reduce your salary to zero and rely entirely on dividends, some lenders may view that as less stable. If you are planning to apply for a mortgage in the next 12 months, keep your salary at £12,570 or higher to show consistent earned income."
-  - question: "What if my spouse doesn't work in the agency at all?"
-    answer: "That is fine for dividend waiver, because dividends are paid on share ownership, not for work done. But paying your spouse a salary when they do no work for the agency can be challenged by HMRC as not being \"wholly and exclusively\" for business purposes. In that case, dividend waiver is the safer option."
-  - question: "How does the settlements legislation affect spousal income shifting?"
-    answer: "HMRC's settlements legislation (ITTOIA 2005, Part 5, Chapter 5) can reattribute income back to you if the arrangement is a \"settlement\" where your spouse receives income without any real entitlement. However, if your spouse owns shares outright and has genuine rights as a shareholder, dividend waivers are generally safe. The key is that your spouse must have real ownership of the shares, not just a tax-avoidance arrangement."
+- question: Can I waive dividends retrospectively to save tax?
+  answer: No. HMRC requires dividend waivers to be made before the dividend is declared. If you try to waive dividends after the fact, HMRC will treat the dividend as belonging to you and tax it accordingly. Always sign a waiver document before the dividend date.
+- question: Does salary sacrifice affect my ability to get a mortgage?
+  answer: It can. Mortgage lenders assess your personal income, not your company's. If you reduce your salary to zero and rely entirely on dividends, some lenders may view that as less stable. If you are planning to apply for a mortgage in the next 12 months, keep your salary at £12,570 or higher to show consistent earned income.
+- question: What if my spouse doesn't work in the agency at all?
+  answer: That is fine for dividend waiver, because dividends are paid on share ownership, not for work done. But paying your spouse a salary when they do no work for the agency can be challenged by HMRC as not being "wholly and exclusively" for business purposes. In that case, dividend waiver is the safer option.
+- question: How does the settlements legislation affect spousal income shifting?
+  answer: HMRC's settlements legislation (ITTOIA 2005, Part 5, Chapter 5) can reattribute income back to you if the arrangement is a "settlement" where your spouse receives income without any real entitlement. However, if your spouse owns shares outright and has genuine rights as a shareholder, dividend waivers are generally safe. The key is that your spouse must have real ownership of the shares, not just a tax-avoidance arrangement.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Salary sacrifice shifts income to a spouse by reducing your salary and increasing theirs, keeping total company deduction unchanged.
+- Dividend waiver requires a formal signed document before the dividend is declared; retrospective waivers are not accepted by HMRC.
+- Salary sacrifice below £9,100 avoids employer NI in 2025/26, but you lose state pension and benefit entitlements.
+- Dividend waiver allows you to keep your salary for NI credits while moving dividend income to your spouse's lower tax bands.
+- For 2025/26, shifting income via dividend waiver can save up to 33.75% tax if your spouse is a basic rate taxpayer versus your higher rate.
 ---
-
 <p>If your spouse holds shares in your agency, you have a tax planning opportunity that single-director companies don't. You can shift income between you, making use of both personal allowances, both basic rate bands, and both dividend allowances. The question is which method does that most efficiently: salary sacrifice or dividend waiver?</p>
 
 <p>Most articles compare salary vs dividends for one director. They don't tackle the strategic trade-off when a spouse owns shares and you want to move income from one person to the other. This article fills that gap. We'll work through the numbers for a typical agency founder paying themselves a salary and dividends, with a spouse who also holds shares.</p>

@@ -1,25 +1,32 @@
 ---
-title: "Your Accountant's Role in Exit Planning and Agency Valuation: What to Expect"
-slug: "accountant-exit-planning-agency-valuation"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/accountant-exit-planning-agency-valuation"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Accountant Exit Planning Agency Valuation: A Founder's Guide"
-metaDescription: "How your accountant helps with exit planning and agency valuation. Learn the numbers, the process, and the tax strategies that maximise your sale price."
-altText: "Agency founder reviewing financial documents with ICAEW qualified accountant for exit planning and valuation advice in a modern UK office"
-image: "/blog/accountant-exit-planning-agency-valuation.jpg"
+title: 'Your Accountant''s Role in Exit Planning and Agency Valuation: What to Expect'
+slug: accountant-exit-planning-agency-valuation
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/accountant-exit-planning-agency-valuation
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'Accountant Exit Planning Agency Valuation: A Founder''s Guide'
+metaDescription: How your accountant helps with exit planning and agency valuation. Learn the numbers, the process, and the tax strategies that maximise your sale price.
+altText: Agency founder reviewing financial documents with ICAEW qualified accountant for exit planning and valuation advice in a modern UK office
+image: /blog/accountant-exit-planning-agency-valuation.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/tax-documents-on-the-table-6863190/"
-  source: "Pexels"
-h1: "Your Accountant's Role in Exit Planning and Agency Valuation: What to Expect"
-summary: "Most agency founders only think about exit planning when a buyer appears. By then, it's often too late to fix the numbers. Here's how a specialist accountant helps you prepare, value, and structure your agency sale from the start."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/tax-documents-on-the-table-6863190/
+  source: Pexels
+h1: 'Your Accountant''s Role in Exit Planning and Agency Valuation: What to Expect'
+summary: Most agency founders only think about exit planning when a buyer appears. By then, it's often too late to fix the numbers. Here's how a specialist accountant helps you prepare, value, and structure your agency sale from the start.
+schema: ''
 faqs: []
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Valuation is the result of deliberate financial decisions over years, not a calculation at the point of sale.
+- Agencies typically sell for 3x to 6x EBITDA, but the multiple depends on recurring revenue, client concentration, and gross margin consistency.
+- Start exit planning at least three years before your intended exit to maximise value and qualify for Business Asset Disposal Relief.
+- Your accountant should track recurring revenue percentage, client concentration, and gross margin consistency quarterly to optimise valuation.
+- Cleaning up your balance sheet, including director's loan accounts, is essential as buyers audit these and discount heavily for issues.
 ---
-
 <p>If you own a marketing, digital, or creative agency, your accountant should be talking to you about exit planning now. Not when you have a buyer lined up. Now.</p>
 
 <p>Most agency founders I meet think valuation is something you calculate at the point of sale. It isn't. Valuation is the result of years of deliberate financial decisions. And your accountant is the person who should be guiding those decisions from the start.</p>

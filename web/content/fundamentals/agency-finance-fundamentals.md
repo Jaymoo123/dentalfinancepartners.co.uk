@@ -1,33 +1,40 @@
 ---
-title: "Agency Finance Fundamentals: The Complete Founder's Guide"
-slug: "agency-finance-fundamentals"
-canonical: "https://www.agencyfounderfinance.co.uk/fundamentals/agency-finance-fundamentals"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "Agency Finance Fundamentals: Complete Guide for UK Founders"
-metaDescription: "Master cash flow, P&L, margins, KPIs, and tax for your UK agency. Practical guidance from ICAEW accountants working with 73+ agency founders."
-altText: "UK agency founder reviewing financial reports on a laptop in a modern office with Shoreditch skyline visible through window"
-image: "/blog/agency-finance-fundamentals.jpg"
+title: 'Agency Finance Fundamentals: The Complete Founder''s Guide'
+slug: agency-finance-fundamentals
+canonical: https://www.agencyfounderfinance.co.uk/fundamentals/agency-finance-fundamentals
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: 'Agency Finance Fundamentals: Complete Guide for UK Founders'
+metaDescription: Master cash flow, P&L, margins, KPIs, and tax for your UK agency. Practical guidance from ICAEW accountants working with 73+ agency founders.
+altText: UK agency founder reviewing financial reports on a laptop in a modern office with Shoreditch skyline visible through window
+image: /blog/agency-finance-fundamentals.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/person-reading-a-book-about-fundamentals-of-financial-planning-7821487/"
-  source: "Pexels"
-h1: "Agency Finance Fundamentals: The Complete Founder's Guide"
-summary: "This is the definitive guide to agency finance fundamentals for UK founders. It covers cash flow management, profit and loss analysis, margin structures, the KPIs that matter, software choices, and the financial hygiene habits that separate thriving agencies from those that fail. Written by ICAEW-qualified accountants who work exclusively with agency founders."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/person-reading-a-book-about-fundamentals-of-financial-planning-7821487/
+  source: Pexels
+h1: 'Agency Finance Fundamentals: The Complete Founder''s Guide'
+summary: This is the definitive guide to agency finance fundamentals for UK founders. It covers cash flow management, profit and loss analysis, margin structures, the KPIs that matter, software choices, and the financial hygiene habits that separate thriving agencies from those that fail. Written by ICAEW-qualified accountants who work exclusively with agency founders.
+schema: ''
 faqs:
-  - question: "What is the most important financial metric for an agency founder?"
-    answer: "Gross margin. It tells you whether your core business model works. If your gross margin is below 40% for a service agency, you're likely undercharging, over-servicing, or both. Fix your pricing before you fix anything else."
-  - question: "How much cash should a UK agency keep in reserve?"
-    answer: "At least three months of overheads. For a typical agency with £40k monthly overheads, that's £120k. This covers you for a client going under, a VAT bill landing at the wrong time, or a slow sales month. Build this buffer before you take any money out of the business beyond your salary."
-  - question: "Should I use the flat rate VAT scheme for my agency?"
-    answer: "Probably not. Most agencies are limited cost traders, meaning your flat rate percentage is 16.5%. Under standard VAT accounting, you charge 20% and reclaim input VAT on your costs. For most agencies, standard accounting works out better — especially if you have significant software, freelancer, or marketing costs. Run the numbers both ways before deciding."
-  - question: "How often should I review my agency's finances?"
-    answer: "Weekly for cash flow and debtors. Monthly for full management accounts (P&L, balance sheet, cash flow). Quarterly for tax planning. Annually for budgeting and strategic planning. The weekly review takes 15 minutes. The monthly close should happen by day 10 of the following month. Anything less frequent and you're reacting to problems rather than preventing them."
+- question: What is the most important financial metric for an agency founder?
+  answer: Gross margin. It tells you whether your core business model works. If your gross margin is below 40% for a service agency, you're likely undercharging, over-servicing, or both. Fix your pricing before you fix anything else.
+- question: How much cash should a UK agency keep in reserve?
+  answer: At least three months of overheads. For a typical agency with £40k monthly overheads, that's £120k. This covers you for a client going under, a VAT bill landing at the wrong time, or a slow sales month. Build this buffer before you take any money out of the business beyond your salary.
+- question: Should I use the flat rate VAT scheme for my agency?
+  answer: Probably not. Most agencies are limited cost traders, meaning your flat rate percentage is 16.5%. Under standard VAT accounting, you charge 20% and reclaim input VAT on your costs. For most agencies, standard accounting works out better — especially if you have significant software, freelancer, or marketing costs. Run the numbers both ways before deciding.
+- question: How often should I review my agency's finances?
+  answer: Weekly for cash flow and debtors. Monthly for full management accounts (P&L, balance sheet, cash flow). Quarterly for tax planning. Annually for budgeting and strategic planning. The weekly review takes 15 minutes. The monthly close should happen by day 10 of the following month. Anything less frequent and you're reacting to problems rather than preventing them.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Agencies sell time, not products, so track utilisation rates—healthy creative agencies run at 60–70% utilisation.
+- 'Cash flow timing is critical: you pay salaries monthly but clients may pay in 60–90 days, creating a gap that can kill profitable agencies.'
+- Your balance sheet is thin with minimal fixed assets, making you vulnerable to cash flow shocks—you cannot sell assets to cover VAT.
+- Gross margin below 40% for a service agency signals a problem; net profit margin below 15% after a market-rate salary means you are buying a job.
+- 'Master three financial statements: P&L shows if your business model works, balance sheet reveals financial position, and cash flow statement tracks liquidity.'
 ---
-
 <p>What does it actually take to run the finances of a UK agency well? Not the bookkeeping — that's administration. The real financial management: knowing your numbers, predicting your cash position, pricing for profit, and building a business that doesn't depend on you working 60-hour weeks to stay afloat.</p>
 
 <p>This guide is for founders of marketing, digital, creative, PR, advertising, web design, SEO, and recruitment agencies. You're running a business that sells people's time and expertise. Your biggest asset walks out the door every evening. Your biggest liability is a client who pays on day 90. And your biggest opportunity is understanding the financial fundamentals that most agency founders never learn.</p>

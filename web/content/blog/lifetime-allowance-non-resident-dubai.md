@@ -1,33 +1,40 @@
 ---
-title: "How Does the Lifetime Allowance Affect My UK Pension If I Move to Dubai?"
-slug: "lifetime-allowance-non-resident-dubai"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/lifetime-allowance-non-resident-dubai"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Lifetime Allowance Non Resident Dubai: UK Pension Rules"
-metaDescription: "Moving to Dubai? The lifetime allowance still applies to your UK pension, even as a non-resident. Here's what agency founders need to know before"
-altText: "Agency founder reviewing UK pension paperwork in a Dubai office with a laptop and coffee"
-image: "/blog/lifetime-allowance-non-resident-dubai.jpg"
+title: How Does the Lifetime Allowance Affect My UK Pension If I Move to Dubai?
+slug: lifetime-allowance-non-resident-dubai
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/lifetime-allowance-non-resident-dubai
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Lifetime Allowance Non Resident Dubai: UK Pension Rules'
+metaDescription: Moving to Dubai? The lifetime allowance still applies to your UK pension, even as a non-resident. Here's what agency founders need to know before
+altText: Agency founder reviewing UK pension paperwork in a Dubai office with a laptop and coffee
+image: /blog/lifetime-allowance-non-resident-dubai.jpg
 imageCredit:
-  photographer: "www.kaboompics.com"
-  photographerUrl: "https://www.pexels.com/@karola-g"
-  sourceUrl: "https://www.pexels.com/photo/person-holding-a-50-polish-zloty-bill-4968398/"
-  source: "Pexels"
-h1: "How Does the Lifetime Allowance Affect My UK Pension If I Move to Dubai?"
-summary: "Planning a move to Dubai as an agency founder? The UK lifetime allowance (abolished but returning in 2026) still applies to your pension savings, even when you're non-resident. This post explains how it interacts with QROPS transfers, what the 2026 reintroduction means, and what you should do before you leave."
-schema: ""
+  photographer: www.kaboompics.com
+  photographerUrl: https://www.pexels.com/@karola-g
+  sourceUrl: https://www.pexels.com/photo/person-holding-a-50-polish-zloty-bill-4968398/
+  source: Pexels
+h1: How Does the Lifetime Allowance Affect My UK Pension If I Move to Dubai?
+summary: Planning a move to Dubai as an agency founder? The UK lifetime allowance (abolished but returning in 2026) still applies to your pension savings, even when you're non-resident. This post explains how it interacts with QROPS transfers, what the 2026 reintroduction means, and what you should do before you leave.
+schema: ''
 faqs:
-  - question: "Does the lifetime allowance apply to UK pensions if I live in Dubai?"
-    answer: "Yes. The lifetime allowance is based on your UK registered pension scheme, not your residency. If your pension savings exceed the lifetime allowance (currently abolished but returning in April 2026), you will face the excess charge when you crystallise your benefits or transfer to a QROPS, regardless of where you live."
-  - question: "Can I avoid the lifetime allowance charge by transferring my pension to a QROPS in Dubai?"
-    answer: "Not automatically. A QROPS transfer triggers a lifetime allowance test at the point of transfer. If your pension exceeds the allowance, the charge applies before the transfer goes ahead. However, if you transfer before April 2026, when the lifetime allowance is still abolished, there is no test and no charge. After April 2026, the allowance returns and the charge applies again."
-  - question: "What is the lifetime allowance figure for 2025/26?"
-    answer: "The lifetime allowance was abolished from 6 April 2024, so there is no lifetime allowance charge for the 2024/25 and 2025/26 tax years. However, the government has confirmed it will return from 6 April 2026. The exact figure has not been confirmed, but it is expected to be around £1.073 million, similar to the previous level."
-  - question: "Should I transfer my UK pension to a QROPS before April 2026?"
-    answer: "It depends on your individual circumstances. The window before April 2026 offers a potential tax saving if your pension exceeds the lifetime allowance. But a QROPS transfer is a major financial decision with long-term implications. You need regulated pension advice to assess whether a QROPS is right for your retirement goals, investment strategy, and tax position. Do not transfer purely to avoid the lifetime allowance charge."
+- question: Does the lifetime allowance apply to UK pensions if I live in Dubai?
+  answer: Yes. The lifetime allowance is based on your UK registered pension scheme, not your residency. If your pension savings exceed the lifetime allowance (currently abolished but returning in April 2026), you will face the excess charge when you crystallise your benefits or transfer to a QROPS, regardless of where you live.
+- question: Can I avoid the lifetime allowance charge by transferring my pension to a QROPS in Dubai?
+  answer: Not automatically. A QROPS transfer triggers a lifetime allowance test at the point of transfer. If your pension exceeds the allowance, the charge applies before the transfer goes ahead. However, if you transfer before April 2026, when the lifetime allowance is still abolished, there is no test and no charge. After April 2026, the allowance returns and the charge applies again.
+- question: What is the lifetime allowance figure for 2025/26?
+  answer: The lifetime allowance was abolished from 6 April 2024, so there is no lifetime allowance charge for the 2024/25 and 2025/26 tax years. However, the government has confirmed it will return from 6 April 2026. The exact figure has not been confirmed, but it is expected to be around £1.073 million, similar to the previous level.
+- question: Should I transfer my UK pension to a QROPS before April 2026?
+  answer: It depends on your individual circumstances. The window before April 2026 offers a potential tax saving if your pension exceeds the lifetime allowance. But a QROPS transfer is a major financial decision with long-term implications. You need regulated pension advice to assess whether a QROPS is right for your retirement goals, investment strategy, and tax position. Do not transfer purely to avoid the lifetime allowance charge.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- The lifetime allowance charge applies to UK pension savings even if you are non-resident in Dubai, based on the pension scheme, not your residency.
+- A QROPS transfer triggers a crystallisation event, testing your full pension value against the lifetime allowance and incurring a charge on any excess.
+- The lifetime allowance was abolished in April 2024 but will be reintroduced from April 2026, likely at around £1,073,100.
+- If your pension exceeds the lifetime allowance, HMRC deducts the charge from your UK scheme before any QROPS transfer or drawdown occurs.
+- No Dubai tax treaty provision exempts you from the lifetime allowance charge, so plan the timing of any transfer or benefit crystallisation carefully.
 ---
-
 <p>If you are a UK agency founder moving to Dubai, your pension is probably one of the last things on your mind. You are focused on the move, the visa, the new clients, the tax-free salary. But your UK pension does not disappear when you become a non-resident. And the lifetime allowance — whether you have heard of it or not — still applies to your savings, even from 5,000 miles away.</p>
 
 <p>Here is what you need to know about the lifetime allowance as a non-resident in Dubai, how the 2026 reintroduction changes things, and what a QROPS transfer means for your tax position.</p>

@@ -1,33 +1,40 @@
 ---
-title: "What Is the Average Agency Overhead Rate and How Do You Calculate Yours?"
-slug: "average-agency-overhead-rate-uk"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/average-agency-overhead-rate-uk"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "Agency Overhead Rate UK: Calculate & Benchmark Yours"
-metaDescription: "Learn the average agency overhead rate UK, how to calculate it using real figures, and what it means for your agency’s profitability."
-altText: "Agency founder reviewing overhead costs spreadsheet in a modern London office"
-image: "/blog/average-agency-overhead-rate-uk.jpg"
+title: What Is the Average Agency Overhead Rate and How Do You Calculate Yours?
+slug: average-agency-overhead-rate-uk
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/average-agency-overhead-rate-uk
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: 'Agency Overhead Rate UK: Calculate & Benchmark Yours'
+metaDescription: Learn the average agency overhead rate UK, how to calculate it using real figures, and what it means for your agency’s profitability.
+altText: Agency founder reviewing overhead costs spreadsheet in a modern London office
+image: /blog/average-agency-overhead-rate-uk.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/a-close-up-shot-of-an-agent-pointing-rates-with-a-ballpen-8292880/"
-  source: "Pexels"
-h1: "What Is the Average Agency Overhead Rate and How Do You Calculate Yours?"
-summary: "Your overhead rate tells you how much it costs to run your agency before you bill a single hour. Here’s what the average agency overhead rate UK looks like and how to calculate yours using your own P&L."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/a-close-up-shot-of-an-agent-pointing-rates-with-a-ballpen-8292880/
+  source: Pexels
+h1: What Is the Average Agency Overhead Rate and How Do You Calculate Yours?
+summary: Your overhead rate tells you how much it costs to run your agency before you bill a single hour. Here’s what the average agency overhead rate UK looks like and how to calculate yours using your own P&L.
+schema: ''
 faqs:
-  - question: "What is the average agency overhead rate UK for a small agency?"
-    answer: "For small agencies with 2-5 people and turnover under £300k, the average overhead rate sits between 40% and 55%. The fixed costs of software, accounting, and marketing hit harder when spread over a smaller revenue base. If you are above 55%, look at cutting non-essential subscriptions and raising your rates."
-  - question: "How do I calculate my agency's overhead rate?"
-    answer: "Take your total overhead costs from the last 12 months (rent, software, marketing, non-billable salaries, professional fees) and divide by your total revenue. Multiply by 100. That gives you your overhead rate as a percentage. Use your management accounts, not your tax return, for the most accurate figure."
-  - question: "Is a 50% overhead rate bad for a UK agency?"
-    answer: "Yes, 50% is on the high side. The average agency overhead rate UK is around 38%. If you are at 50%, you are spending half your revenue on non-billable costs before you pay anyone to do client work. That leaves very little for profit or reinvestment. Focus on cutting costs and growing revenue in equal measure."
-  - question: "What is a healthy overhead rate for a digital agency?"
-    answer: "Digital agencies typically run overhead rates between 30% and 40%. They benefit from lower physical space costs and fewer non-billable roles. If your digital agency is above 40%, look at your software subscriptions and whether you have too many non-billable staff relative to your revenue."
+- question: What is the average agency overhead rate UK for a small agency?
+  answer: For small agencies with 2-5 people and turnover under £300k, the average overhead rate sits between 40% and 55%. The fixed costs of software, accounting, and marketing hit harder when spread over a smaller revenue base. If you are above 55%, look at cutting non-essential subscriptions and raising your rates.
+- question: How do I calculate my agency's overhead rate?
+  answer: Take your total overhead costs from the last 12 months (rent, software, marketing, non-billable salaries, professional fees) and divide by your total revenue. Multiply by 100. That gives you your overhead rate as a percentage. Use your management accounts, not your tax return, for the most accurate figure.
+- question: Is a 50% overhead rate bad for a UK agency?
+  answer: Yes, 50% is on the high side. The average agency overhead rate UK is around 38%. If you are at 50%, you are spending half your revenue on non-billable costs before you pay anyone to do client work. That leaves very little for profit or reinvestment. Focus on cutting costs and growing revenue in equal measure.
+- question: What is a healthy overhead rate for a digital agency?
+  answer: Digital agencies typically run overhead rates between 30% and 40%. They benefit from lower physical space costs and fewer non-billable roles. If your digital agency is above 40%, look at your software subscriptions and whether you have too many non-billable staff relative to your revenue.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Your overhead rate is the percentage of revenue consumed by non-billable costs, calculated by dividing total overheads by total revenue.
+- The average agency overhead rate UK is between 30% and 50%, with a typical benchmark of 38% across all agency types.
+- Small agencies (turnover under £300k) often see overhead rates of 40%–55%, while larger agencies (over £1.5m) can achieve 25%–40%.
+- Overhead includes rent, software, marketing, professional fees, and non-billable salaries, but excludes direct project costs and billable staff.
+- Tracking your overhead rate is essential for pricing, hiring, and deciding on new retainers to avoid hitting an unexplained margin wall.
 ---
-
 <h2>What is an overhead rate, and why should you care?</h2>
 
 <p>Your overhead rate is the percentage of your total revenue that gets eaten by non-billable costs. Rent, software subscriptions, accounting fees, marketing spend, office coffee, the lot.</p>

@@ -1,33 +1,40 @@
 ---
-title: "Selling UK Property as Non-Resident: The 60-Day Deadline Most Expats Miss"
-slug: "selling-uk-property-non-resident-60-day-deadline"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/selling-uk-property-non-resident-60-day-deadline"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Selling UK Property as Non-Resident: 60-Day CGT Deadline"
-metaDescription: "Selling UK property as non-resident? You must report and pay CGT within 60 days of completion. Miss it and HMRC penalties start at £100. Here's what to do."
-altText: "UK property sale completion documents with a calendar showing a 60-day deadline, professional accounting setting"
-image: "/blog/selling-uk-property-non-resident-60-day-deadline.jpg"
+title: 'Selling UK Property as Non-Resident: The 60-Day Deadline Most Expats Miss'
+slug: selling-uk-property-non-resident-60-day-deadline
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/selling-uk-property-non-resident-60-day-deadline
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Selling UK Property as Non-Resident: 60-Day CGT Deadline'
+metaDescription: Selling UK property as non-resident? You must report and pay CGT within 60 days of completion. Miss it and HMRC penalties start at £100. Here's what to do.
+altText: UK property sale completion documents with a calendar showing a 60-day deadline, professional accounting setting
+image: /blog/selling-uk-property-non-resident-60-day-deadline.jpg
 imageCredit:
-  photographer: "Pavel Danilyuk"
-  photographerUrl: "https://www.pexels.com/@pavel-danilyuk"
-  sourceUrl: "https://www.pexels.com/photo/realtor-in-a-winter-coat-standing-by-a-for-sale-sign-7937215/"
-  source: "Pexels"
-h1: "Selling UK Property as Non-Resident: The 60-Day Deadline Most Expats Miss"
-summary: "If you're a UK expat selling a property, you have 60 days from completion to report and pay Capital Gains Tax. Most people don't know this. Missing it triggers automatic penalties."
-schema: ""
+  photographer: Pavel Danilyuk
+  photographerUrl: https://www.pexels.com/@pavel-danilyuk
+  sourceUrl: https://www.pexels.com/photo/realtor-in-a-winter-coat-standing-by-a-for-sale-sign-7937215/
+  source: Pexels
+h1: 'Selling UK Property as Non-Resident: The 60-Day Deadline Most Expats Miss'
+summary: If you're a UK expat selling a property, you have 60 days from completion to report and pay Capital Gains Tax. Most people don't know this. Missing it triggers automatic penalties.
+schema: ''
 faqs:
-  - question: "What happens if I miss the 60-day deadline for reporting a UK property sale as a non-resident?"
-    answer: "HMRC applies an automatic £100 penalty for late filing, even if the return is one day late. After three months, they add £10 per day for up to 90 days (£900 maximum). After six and twelve months, further penalties of 5% of the tax due or £300 apply. Interest also accrues on unpaid tax from the original deadline. File as soon as you realise to stop penalties escalating."
-  - question: "Do I need to report the sale if I made no gain or a loss?"
-    answer: "Yes. Non-residents must report the disposal of a UK residential property within 60 days even if no tax is due. If you made a loss, you can report it to claim loss relief against future gains. If you qualify for full Private Residence Relief, you still need to file the return to confirm no tax is payable. There is no exemption from the reporting requirement."
-  - question: "Can I pay the CGT through my self-assessment return instead?"
-    answer: "No. The 60-day NRCGT return is a separate filing with its own payment deadline. You must file and pay within 60 days of completion. You then report the same disposal on your self-assessment return for the year, and HMRC reconciles the two. If you only file on self-assessment, you miss the 60-day deadline and incur penalties."
-  - question: "How do I calculate the gain if I owned the property before April 2015?"
-    answer: "You have two options. The straight-line method apportions the total gain evenly over the full ownership period, taxing only the portion from 6 April 2015 onwards. The actual method uses a professional valuation at 5 April 2015 as your base cost, taxing the gain from that date. The actual method often produces a lower gain but requires a contemporaneous valuation. Keep the valuation report as evidence."
+- question: What happens if I miss the 60-day deadline for reporting a UK property sale as a non-resident?
+  answer: HMRC applies an automatic £100 penalty for late filing, even if the return is one day late. After three months, they add £10 per day for up to 90 days (£900 maximum). After six and twelve months, further penalties of 5% of the tax due or £300 apply. Interest also accrues on unpaid tax from the original deadline. File as soon as you realise to stop penalties escalating.
+- question: Do I need to report the sale if I made no gain or a loss?
+  answer: Yes. Non-residents must report the disposal of a UK residential property within 60 days even if no tax is due. If you made a loss, you can report it to claim loss relief against future gains. If you qualify for full Private Residence Relief, you still need to file the return to confirm no tax is payable. There is no exemption from the reporting requirement.
+- question: Can I pay the CGT through my self-assessment return instead?
+  answer: No. The 60-day NRCGT return is a separate filing with its own payment deadline. You must file and pay within 60 days of completion. You then report the same disposal on your self-assessment return for the year, and HMRC reconciles the two. If you only file on self-assessment, you miss the 60-day deadline and incur penalties.
+- question: How do I calculate the gain if I owned the property before April 2015?
+  answer: You have two options. The straight-line method apportions the total gain evenly over the full ownership period, taxing only the portion from 6 April 2015 onwards. The actual method uses a professional valuation at 5 April 2015 as your base cost, taxing the gain from that date. The actual method often produces a lower gain but requires a contemporaneous valuation. Keep the valuation report as evidence.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Non-resident sellers must report UK property sales to HMRC within 60 calendar days of completion, not by the self-assessment deadline.
+- The 60-day rule applies to anyone non-resident under the Statutory Residence Test, with no exemption for small gains or turnover thresholds.
+- Even if Private Residence Relief means no tax is due, you must still file a Non-Resident Capital Gains Tax return within 60 days.
+- The 60-day clock starts on the date of exchange, not completion, and requires a standalone NRCGT return with payment of estimated tax.
+- Non-residents pay CGT only on gains since 6 April 2015, using either the straight-line or actual valuation method.
 ---
-
 <h2>You Sold a UK Property. Now What?</h2>
 <p>You completed the sale of your UK rental flat last Tuesday. The money landed in your Dubai bank account. You feel relieved. One less thing to manage from 3,500 miles away.</p>
 <p>Here is the thing most non-resident sellers do not realise: you have 60 calendar days from the date of completion to report the sale to HMRC and pay any Capital Gains Tax (CGT) due. Not 61. Not "before the next self-assessment deadline." 60 days.</p>

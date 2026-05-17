@@ -1,33 +1,40 @@
 ---
-title: "Off-Payroll Working for Recruitment Agencies: Your Compliance Checklist"
-slug: "off-payroll-working-talent-recruitment-agencies"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/off-payroll-working-talent-recruitment-agencies"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Contractors and IR35"
-metaTitle: "Off-Payroll Working for Recruitment Agencies: Compliance"
-metaDescription: "Off-payroll working rules apply to recruitment agencies placing contractors. Here is your practical compliance checklist for IR35 and SDS requirements."
-altText: "Recruitment agency compliance documents and laptop on a desk in a Manchester office"
-image: "/blog/off-payroll-working-talent-recruitment-agencies.jpg"
+title: 'Off-Payroll Working for Recruitment Agencies: Your Compliance Checklist'
+slug: off-payroll-working-talent-recruitment-agencies
+canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/off-payroll-working-talent-recruitment-agencies
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Contractors and IR35
+metaTitle: 'Off-Payroll Working for Recruitment Agencies: Compliance'
+metaDescription: Off-payroll working rules apply to recruitment agencies placing contractors. Here is your practical compliance checklist for IR35 and SDS requirements.
+altText: Recruitment agency compliance documents and laptop on a desk in a Manchester office
+image: /blog/off-payroll-working-talent-recruitment-agencies.jpg
 imageCredit:
-  photographer: "Vitaly Gariev"
-  photographerUrl: "https://www.pexels.com/@silverkblack"
-  sourceUrl: "https://www.pexels.com/photo/professional-job-interview-in-modern-office-setting-36733328/"
-  source: "Pexels"
-h1: "Off-Payroll Working for Recruitment Agencies: Your Compliance Checklist"
-summary: "The off-payroll working rules (IR35) place significant compliance obligations on recruitment agencies. This guide explains your responsibilities for Status Determination Statements, deemed employment, and fee-payer status. Practical steps to avoid HMRC penalties."
-schema: ""
+  photographer: Vitaly Gariev
+  photographerUrl: https://www.pexels.com/@silverkblack
+  sourceUrl: https://www.pexels.com/photo/professional-job-interview-in-modern-office-setting-36733328/
+  source: Pexels
+h1: 'Off-Payroll Working for Recruitment Agencies: Your Compliance Checklist'
+summary: The off-payroll working rules (IR35) place significant compliance obligations on recruitment agencies. This guide explains your responsibilities for Status Determination Statements, deemed employment, and fee-payer status. Practical steps to avoid HMRC penalties.
+schema: ''
 faqs:
-  - question: "What is the off-payroll working rules for recruitment agencies?"
-    answer: "The off-payroll working rules (IR35) require recruitment agencies to ensure that contractors working through their own limited companies are correctly classified as either inside or outside IR35. If a contractor is inside IR35, the agency must deduct income tax and National Insurance from payments to the contractor's company, just like a normal employee. The rules shifted responsibility to medium and large clients in April 2021, but the recruitment agency is typically the fee-payer and therefore liable for the tax if the determination is wrong."
-  - question: "Does IR35 apply to recruitment agencies?"
-    answer: "Yes, IR35 applies directly to recruitment agencies that place contractors with clients. If you are the fee-payer in the contractual chain, you are responsible for operating PAYE and National Insurance on payments to contractors who are deemed inside IR35. HMRC actively targets recruitment agencies for compliance checks, and penalties for non-compliance can be severe."
-  - question: "Who is responsible for IR35 determination in a recruitment agency?"
-    answer: "The client (the end-user of the contractor's services) is responsible for issuing the Status Determination Statement (SDS) that states whether the contractor is inside or outside IR35. However, the recruitment agency must review that SDS, pass it to the contractor, and if the contractor is inside IR35, operate payroll taxes on the payments. If the client's determination is wrong, HMRC will usually pursue the fee-payer (the recruitment agency) for the unpaid tax."
-  - question: "What happens if a recruitment agency ignores IR35?"
-    answer: "If a recruitment agency ignores IR35 and treats all contractors as outside the rules, HMRC can issue a retrospective tax bill for unpaid income tax, employee NI, and employer NI, plus interest and penalties. Penalties can reach up to 100% of the tax due for deliberate non-compliance. For an agency with a large contractor book, this can easily run into six figures. HMRC also has the power to name and shame non-compliant businesses."
+- question: What is the off-payroll working rules for recruitment agencies?
+  answer: The off-payroll working rules (IR35) require recruitment agencies to ensure that contractors working through their own limited companies are correctly classified as either inside or outside IR35. If a contractor is inside IR35, the agency must deduct income tax and National Insurance from payments to the contractor's company, just like a normal employee. The rules shifted responsibility to medium and large clients in April 2021, but the recruitment agency is typically the fee-payer and therefore liable for the tax if the determination is wrong.
+- question: Does IR35 apply to recruitment agencies?
+  answer: Yes, IR35 applies directly to recruitment agencies that place contractors with clients. If you are the fee-payer in the contractual chain, you are responsible for operating PAYE and National Insurance on payments to contractors who are deemed inside IR35. HMRC actively targets recruitment agencies for compliance checks, and penalties for non-compliance can be severe.
+- question: Who is responsible for IR35 determination in a recruitment agency?
+  answer: The client (the end-user of the contractor's services) is responsible for issuing the Status Determination Statement (SDS) that states whether the contractor is inside or outside IR35. However, the recruitment agency must review that SDS, pass it to the contractor, and if the contractor is inside IR35, operate payroll taxes on the payments. If the client's determination is wrong, HMRC will usually pursue the fee-payer (the recruitment agency) for the unpaid tax.
+- question: What happens if a recruitment agency ignores IR35?
+  answer: If a recruitment agency ignores IR35 and treats all contractors as outside the rules, HMRC can issue a retrospective tax bill for unpaid income tax, employee NI, and employer NI, plus interest and penalties. Penalties can reach up to 100% of the tax due for deliberate non-compliance. For an agency with a large contractor book, this can easily run into six figures. HMRC also has the power to name and shame non-compliant businesses.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Recruitment agencies are usually the fee-payer under IR35, making them responsible for operating PAYE and National Insurance on deemed employment income.
+- The client must issue a Status Determination Statement (SDS) before the contractor starts work; the agency must pass this to the contractor and act on it.
+- If the SDS says the contractor is inside IR35, the agency must deduct income tax and employee NI from payments and pay employer NI at 13.8%.
+- HMRC has been targeting recruitment agencies with nudge letters and compliance reviews since 2022, with retrospective bills potentially reaching six figures.
+- Blanket determinations that all contractors are outside IR35 are high-risk; agencies must follow the correct legal process for each engagement.
 ---
-
 <p>If you run a recruitment agency in the UK, the off-payroll working rules (commonly called IR35) are probably the single biggest compliance risk you face. HMRC has been targeting recruitment agencies specifically for several years now, and the rules have only got tighter since the reforms were extended to the private sector in April 2021.</p>
 
 <p>This is not about whether your contractors <em>like</em> being inside or outside IR35. It is about whether you, as the recruitment agency, have followed the correct legal process for determining their status. Get that wrong, and you could be liable for unpaid tax, National Insurance, and penalties going back years.</p>

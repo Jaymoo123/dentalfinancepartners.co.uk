@@ -1,33 +1,39 @@
 ---
-title: "How to Negotiate Your Agency Accountant's Fees Based on Your Agency's Size and Complexity"
-slug: "negotiate-agency-accountant-fees-size-complexity"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/negotiate-agency-accountant-fees-size-complexity"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Accountant Services"
-metaTitle: "Negotiate Agency Accountant Fees: Size & Complexity Guide"
-metaDescription: "Stop paying standard rates. Learn how to negotiate your agency accountant cost based on headcount, revenue, contractor mix, and complexity. Real numbers"
-altText: "Agency founder reviewing accounting fee proposal with ICAEW qualified accountant in a modern UK office setting"
-image: "/blog/negotiate-agency-accountant-fees-size-complexity.jpg"
+title: How to Negotiate Your Agency Accountant's Fees Based on Your Agency's Size and Complexity
+slug: negotiate-agency-accountant-fees-size-complexity
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/negotiate-agency-accountant-fees-size-complexity
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Accountant Services
+metaTitle: 'Negotiate Agency Accountant Fees: Size & Complexity Guide'
+metaDescription: Stop paying standard rates. Learn how to negotiate your agency accountant cost based on headcount, revenue, contractor mix, and complexity. Real numbers
+altText: Agency founder reviewing accounting fee proposal with ICAEW qualified accountant in a modern UK office setting
+image: /blog/negotiate-agency-accountant-fees-size-complexity.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/white-papers-on-the-table-7821708/"
-  source: "Pexels"
-h1: "How to Negotiate Your Agency Accountant's Fees Based on Your Agency's Size and Complexity"
-summary: "Most agency founders accept the first quote for accounting fees. This guide shows you how to negotiate based on your agency's actual size, revenue, contractor headcount, and service complexity. We cover what drives the agency accountant cost, what you can trim, and what you should never cut."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/white-papers-on-the-table-7821708/
+  source: Pexels
+h1: How to Negotiate Your Agency Accountant's Fees Based on Your Agency's Size and Complexity
+summary: Most agency founders accept the first quote for accounting fees. This guide shows you how to negotiate based on your agency's actual size, revenue, contractor headcount, and service complexity. We cover what drives the agency accountant cost, what you can trim, and what you should never cut.
+schema: ''
 faqs:
-  - question: "What is the average agency accountant cost for a UK agency with 5 employees?"
-    answer: "For a UK agency with 5 employees and turnover between £150k and £500k, expect to pay between £350 and £600 per month. This typically includes year-end accounts, corporation tax, personal tax returns, VAT, payroll, and basic IR35 support. The exact figure depends on your transaction volume, contractor mix, and whether you do your own bookkeeping."
-  - question: "Can I negotiate my accountant's fees if I have been with them for years?"
-    answer: "Yes, and you should. Long-term clients who pay on time and provide organised records are valuable. Accountants would rather keep you at a slightly lower fee than lose you. Audit what you actually use, benchmark against similar agencies, and propose a restructured scope. Most firms will negotiate rather than risk losing a good client."
-  - question: "What services should I never cut from my agency accountant?"
-    answer: "Never cut corporation tax compliance, VAT compliance, IR35 support if you use contractors, or year-end statutory filing. These are non-negotiable. Cutting them risks HMRC penalties that far outweigh any saving. Also keep exit planning if you plan to sell within 3-5 years, as the structure decisions save you significant CGT."
-  - question: "Does good bookkeeping reduce my agency accountant cost?"
-    answer: "Significantly. If you use Xero or QuickBooks, reconcile weekly, and categorise transactions correctly, your accountant's time drops by 50-70%. Ask your accountant if improving your bookkeeping to a specific standard would reduce your fee. Most will say yes because they would rather spend time on tax planning than data entry."
+- question: What is the average agency accountant cost for a UK agency with 5 employees?
+  answer: For a UK agency with 5 employees and turnover between £150k and £500k, expect to pay between £350 and £600 per month. This typically includes year-end accounts, corporation tax, personal tax returns, VAT, payroll, and basic IR35 support. The exact figure depends on your transaction volume, contractor mix, and whether you do your own bookkeeping.
+- question: Can I negotiate my accountant's fees if I have been with them for years?
+  answer: Yes, and you should. Long-term clients who pay on time and provide organised records are valuable. Accountants would rather keep you at a slightly lower fee than lose you. Audit what you actually use, benchmark against similar agencies, and propose a restructured scope. Most firms will negotiate rather than risk losing a good client.
+- question: What services should I never cut from my agency accountant?
+  answer: Never cut corporation tax compliance, VAT compliance, IR35 support if you use contractors, or year-end statutory filing. These are non-negotiable. Cutting them risks HMRC penalties that far outweigh any saving. Also keep exit planning if you plan to sell within 3-5 years, as the structure decisions save you significant CGT.
+- question: Does good bookkeeping reduce my agency accountant cost?
+  answer: Significantly. If you use Xero or QuickBooks, reconcile weekly, and categorise transactions correctly, your accountant's time drops by 50-70%. Ask your accountant if improving your bookkeeping to a specific standard would reduce your fee. Most will say yes because they would rather spend time on tax planning than data entry.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Your agency accountant cost should reflect your actual needs, not a standard pricing grid, and most accountants will negotiate if you ask.
+- Accountants typically charge based on revenue, headcount, contractor volume, transaction volume, and service scope—simpler agencies should pay less.
+- For 2025/26, solo founders pay £150–£300 monthly, while established agencies with 15+ people pay £1,200–£2,500+ for full services.
+- Before negotiating, audit your last 12 months of invoices and cut any bundled services you don't actually use.
 ---
-
 <p>Most agency founders I meet have no idea what they should be paying their accountant. They got a quote when they incorporated, accepted it, and have been paying the same monthly fee for three years. Meanwhile their agency has gone from a solo operation to a 15-person shop billing £1.2m. And the fee? Still the same flat rate they agreed when they were turning over £80k.</p>
 
 <p>That is a mistake. Your <strong>agency accountant cost</strong> should reflect what you actually need, not what a standard pricing grid says. And here is the thing: most accountants will negotiate if you ask the right way. They just will not volunteer the discount.</p>

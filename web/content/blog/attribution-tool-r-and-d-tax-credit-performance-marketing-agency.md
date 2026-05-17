@@ -1,33 +1,40 @@
 ---
-title: "Can a Performance Marketing Agency Claim R&D Tax Credits for Attribution Tooling?"
-slug: "attribution-tool-r-and-d-tax-credit-performance-marketing-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/attribution-tool-r-and-d-tax-credit-performance-marketing-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Attribution Tool R&D Tax Credit: Can Your Agency Claim?"
-metaDescription: "Can your agency claim R&D tax credits for building attribution tooling? Yes, if it resolves technical uncertainty. Here's what qualifies and what doesn't."
-altText: "Agency founder and accountant review R&D tax credit documentation for attribution software development in a modern UK office."
-image: "/blog/attribution-tool-r-and-d-tax-credit-performance-marketing-agency.jpg"
+title: Can a Performance Marketing Agency Claim R&D Tax Credits for Attribution Tooling?
+slug: attribution-tool-r-and-d-tax-credit-performance-marketing-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/attribution-tool-r-and-d-tax-credit-performance-marketing-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'Attribution Tool R&D Tax Credit: Can Your Agency Claim?'
+metaDescription: Can your agency claim R&D tax credits for building attribution tooling? Yes, if it resolves technical uncertainty. Here's what qualifies and what doesn't.
+altText: Agency founder and accountant review R&D tax credit documentation for attribution software development in a modern UK office.
+image: /blog/attribution-tool-r-and-d-tax-credit-performance-marketing-agency.jpg
 imageCredit:
-  photographer: "Eva Bronzini"
-  photographerUrl: "https://www.pexels.com/@eva-bronzini"
-  sourceUrl: "https://www.pexels.com/photo/branding-and-marketing-text-on-a-white-surface-7661185/"
-  source: "Pexels"
-h1: "Can a Performance Marketing Agency Claim R&D Tax Credits for Attribution Tooling?"
-summary: "Building custom attribution tooling to solve genuine technical uncertainty can qualify for R&D tax credits. We explain the criteria, the common pitfalls, and how to structure your claim so HMRC won't challenge it."
-schema: ""
+  photographer: Eva Bronzini
+  photographerUrl: https://www.pexels.com/@eva-bronzini
+  sourceUrl: https://www.pexels.com/photo/branding-and-marketing-text-on-a-white-surface-7661185/
+  source: Pexels
+h1: Can a Performance Marketing Agency Claim R&D Tax Credits for Attribution Tooling?
+summary: Building custom attribution tooling to solve genuine technical uncertainty can qualify for R&D tax credits. We explain the criteria, the common pitfalls, and how to structure your claim so HMRC won't challenge it.
+schema: ''
 faqs:
-  - question: "What qualifies as technical uncertainty for an attribution tool R&D claim?"
-    answer: "Technical uncertainty exists when a competent professional in the field cannot tell you in advance whether a solution is achievable. For attribution tooling, this might be \"can we build a cross-device probabilistic model that deduplicates conversions with less than 5% error, given our data sources and volume?\" If the answer is not obvious to a data scientist with relevant experience, that is technical uncertainty. Business uncertainty, like \"will this improve ROAS,\" does not qualify."
-  - question: "Can I claim R&D tax credits for building an attribution tool for a client?"
-    answer: "It depends on your contract. If the client owns the intellectual property, the R&D belongs to them, not you. If you retain the IP and the client simply licenses the tool, you may be able to claim. Check your terms of business before filing a claim. If you are unsure, ask your accountant to review the contract language."
-  - question: "How much can I claim back for an attribution tool R&D project?"
-    answer: "If your project qualifies under the SME scheme, you get an enhanced deduction of 186% of qualifying costs. On £50,000 of qualifying costs, that reduces your taxable profit by £93,000. If you pay 19% corporation tax, that saves about £9,500. If you are loss-making, you can surrender the loss for a cash payment of up to 14.5% of qualifying costs, which would be about £7,250. The exact figure depends on your profitability and the specific costs."
-  - question: "What documentation do I need to support an attribution tool R&D claim?"
-    answer: "You need a technical report explaining the advance sought, the uncertainty faced, and the work done to resolve it. You also need timesheets or time estimates for qualifying staff, payroll records, invoices for subcontractors and software, and supporting evidence like project plans, emails, or meeting notes. HMRC may not ask for all of this upfront, but you need it ready in case of an enquiry."
+- question: What qualifies as technical uncertainty for an attribution tool R&D claim?
+  answer: Technical uncertainty exists when a competent professional in the field cannot tell you in advance whether a solution is achievable. For attribution tooling, this might be "can we build a cross-device probabilistic model that deduplicates conversions with less than 5% error, given our data sources and volume?" If the answer is not obvious to a data scientist with relevant experience, that is technical uncertainty. Business uncertainty, like "will this improve ROAS," does not qualify.
+- question: Can I claim R&D tax credits for building an attribution tool for a client?
+  answer: It depends on your contract. If the client owns the intellectual property, the R&D belongs to them, not you. If you retain the IP and the client simply licenses the tool, you may be able to claim. Check your terms of business before filing a claim. If you are unsure, ask your accountant to review the contract language.
+- question: How much can I claim back for an attribution tool R&D project?
+  answer: If your project qualifies under the SME scheme, you get an enhanced deduction of 186% of qualifying costs. On £50,000 of qualifying costs, that reduces your taxable profit by £93,000. If you pay 19% corporation tax, that saves about £9,500. If you are loss-making, you can surrender the loss for a cash payment of up to 14.5% of qualifying costs, which would be about £7,250. The exact figure depends on your profitability and the specific costs.
+- question: What documentation do I need to support an attribution tool R&D claim?
+  answer: You need a technical report explaining the advance sought, the uncertainty faced, and the work done to resolve it. You also need timesheets or time estimates for qualifying staff, payroll records, invoices for subcontractors and software, and supporting evidence like project plans, emails, or meeting notes. HMRC may not ask for all of this upfront, but you need it ready in case of an enquiry.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Custom attribution tooling can qualify for R&D tax credits if it resolves genuine technical uncertainty, not just business uncertainty.
+- HMRC requires the project to seek an advance in science or technology and involve uncertainty a competent professional could not readily resolve.
+- Building novel software to solve a technical problem with no known solution, such as cross-device tracking without cookies, qualifies as R&D.
+- Configuring off-the-shelf attribution tools or building standard dashboards does not qualify as R&D for tax purposes.
+- Document the technical uncertainty at the start of the project to support a successful R&D tax credit claim with HMRC.
 ---
-
 <p>If your performance marketing agency has built custom attribution tooling to solve a genuine technical problem, you might be sitting on a legitimate R&D tax credit claim. Not the "we built a new dashboard" kind. The kind where your developers spent weeks or months trying to figure out how to track conversions across a fragmented customer journey where no off-the-shelf solution worked.</p>
 
 <p>The question is: does building an attribution tool qualify as R&D for tax purposes? The short answer is yes, but only if you can show you resolved technical uncertainty, not just business uncertainty. There is a meaningful difference, and HMRC will look for it.</p>

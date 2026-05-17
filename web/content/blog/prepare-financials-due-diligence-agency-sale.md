@@ -1,33 +1,40 @@
 ---
-title: "How to Prepare Your Agency's Financials for Due Diligence in a Sale Process"
-slug: "prepare-financials-due-diligence-agency-sale"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/prepare-financials-due-diligence-agency-sale"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Prepare financials due diligence agency sale: a practical"
-metaDescription: "Selling your agency? Here is exactly how to prepare financials for due diligence. Clean accounts, clear margins, and the three statements buyers actually"
-altText: "Agency founder reviewing financial statements with a senior accountant in a modern UK office meeting room"
-image: "/blog/prepare-financials-due-diligence-agency-sale.jpg"
+title: How to Prepare Your Agency's Financials for Due Diligence in a Sale Process
+slug: prepare-financials-due-diligence-agency-sale
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/prepare-financials-due-diligence-agency-sale
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'Prepare financials due diligence agency sale: a practical'
+metaDescription: Selling your agency? Here is exactly how to prepare financials for due diligence. Clean accounts, clear margins, and the three statements buyers actually
+altText: Agency founder reviewing financial statements with a senior accountant in a modern UK office meeting room
+image: /blog/prepare-financials-due-diligence-agency-sale.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/tax-documents-on-the-table-6863177/"
-  source: "Pexels"
-h1: "How to Prepare Your Agency's Financials for Due Diligence in a Sale Process"
-summary: "Selling your agency? Due diligence is where deals live or die. This guide walks through the three financial statements buyers demand, the common problems that kill deals, and exactly what to clean up before you invite a buyer to look under the hood."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/tax-documents-on-the-table-6863177/
+  source: Pexels
+h1: How to Prepare Your Agency's Financials for Due Diligence in a Sale Process
+summary: Selling your agency? Due diligence is where deals live or die. This guide walks through the three financial statements buyers demand, the common problems that kill deals, and exactly what to clean up before you invite a buyer to look under the hood.
+schema: ''
 faqs:
-  - question: "How far back do buyers look at financials in due diligence?"
-    answer: "Most buyers ask for three years of filed accounts and the last 12 months of management accounts. Some will go back five years if they see inconsistencies or red flags. The deeper they dig, the more they expect clean, consistent records. If your accounts from year one are messy but year three is clean, expect questions about what changed and why."
-  - question: "What happens if my gross margin is below 50%?"
-    answer: "A gross margin below 50% is not an automatic deal-killer, but it will trigger questions about pricing and cost control. You need to explain it. If your margin is low because you pass through large media spend at zero markup, separate that out and show your service margin separately. If your margin is low because you underprice, that is a business problem a buyer will want to fix, and they will adjust their offer accordingly."
-  - question: "Do I need to clear my directors' loan account before selling?"
-    answer: "Yes. An overdrawn directors' loan account is one of the most common deal-breakers in agency sales. If you owe the company money, clear it before due diligence starts. If you cannot clear it in cash, speak to your accountant about declaring it as a dividend or bonus (which creates a tax charge for you) or structuring a repayment plan. A buyer will not take on a company where the director owes significant money."
-  - question: "Can I sell my agency if I have an open HMRC enquiry?"
-    answer: "Yes, but you must disclose it upfront. A disclosed HMRC enquiry is manageable. The buyer will either require an indemnity in the sale agreement or adjust the purchase price to reflect the potential liability. If you hide the enquiry and the buyer finds it during due diligence, they will likely walk away or demand a heavy discount. Always disclose tax issues early."
+- question: How far back do buyers look at financials in due diligence?
+  answer: Most buyers ask for three years of filed accounts and the last 12 months of management accounts. Some will go back five years if they see inconsistencies or red flags. The deeper they dig, the more they expect clean, consistent records. If your accounts from year one are messy but year three is clean, expect questions about what changed and why.
+- question: What happens if my gross margin is below 50%?
+  answer: A gross margin below 50% is not an automatic deal-killer, but it will trigger questions about pricing and cost control. You need to explain it. If your margin is low because you pass through large media spend at zero markup, separate that out and show your service margin separately. If your margin is low because you underprice, that is a business problem a buyer will want to fix, and they will adjust their offer accordingly.
+- question: Do I need to clear my directors' loan account before selling?
+  answer: Yes. An overdrawn directors' loan account is one of the most common deal-breakers in agency sales. If you owe the company money, clear it before due diligence starts. If you cannot clear it in cash, speak to your accountant about declaring it as a dividend or bonus (which creates a tax charge for you) or structuring a repayment plan. A buyer will not take on a company where the director owes significant money.
+- question: Can I sell my agency if I have an open HMRC enquiry?
+  answer: Yes, but you must disclose it upfront. A disclosed HMRC enquiry is manageable. The buyer will either require an indemnity in the sale agreement or adjust the purchase price to reflect the potential liability. If you hide the enquiry and the buyer finds it during due diligence, they will likely walk away or demand a heavy discount. Always disclose tax issues early.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Clean up directors' loan accounts before due diligence to avoid a 33.75% section 455 tax charge and buyer red flags.
+- Switch from abbreviated to full statutory accounts at least two years before sale so buyers can see revenue and gross profit.
+- Produce monthly management accounts showing revenue by client, gross margin, overheads, and cash position to build buyer trust.
+- Chase aged debtors over 90 days or write them off before due diligence, as buyers will discount or reject them.
+- Ensure VAT returns match your P&L to avoid credibility gaps that can derail a six-week due diligence process.
 ---
-
 <p>You have built a 12-person digital agency billing £800,000 a year. You have a retainer book that covers your overheads. Your team is strong. You are ready to sell.</p>
 
 <p>Then the buyer asks for three years of financial statements, management accounts, and a breakdown of gross margin by client. And suddenly, the deal feels fragile.</p>

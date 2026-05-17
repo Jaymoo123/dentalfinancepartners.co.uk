@@ -1,33 +1,40 @@
 ---
-title: "Can I Transfer My UK Pension to a QROPS in Dubai Without a 25% Tax Charge?"
-slug: "transfer-uk-pension-qrops-dubai-tax-charge"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/transfer-uk-pension-qrops-dubai-tax-charge"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Transfer UK Pension to QROPS Dubai: 25% Tax Charge Risk"
-metaDescription: "Transferring a UK pension to a QROPS in Dubai is high-risk. Most schemes trigger a 25% unauthorised payment charge. Here’s what agency founders need"
-altText: "UK agency founder reviewing pension transfer paperwork in a Dubai office with city skyline visible through window"
-image: "/blog/transfer-uk-pension-qrops-dubai-tax-charge.jpg"
+title: Can I Transfer My UK Pension to a QROPS in Dubai Without a 25% Tax Charge?
+slug: transfer-uk-pension-qrops-dubai-tax-charge
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/transfer-uk-pension-qrops-dubai-tax-charge
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Transfer UK Pension to QROPS Dubai: 25% Tax Charge Risk'
+metaDescription: Transferring a UK pension to a QROPS in Dubai is high-risk. Most schemes trigger a 25% unauthorised payment charge. Here’s what agency founders need
+altText: UK agency founder reviewing pension transfer paperwork in a Dubai office with city skyline visible through window
+image: /blog/transfer-uk-pension-qrops-dubai-tax-charge.jpg
 imageCredit:
-  photographer: "SHVETS production"
-  photographerUrl: "https://www.pexels.com/@shvets-production"
-  sourceUrl: "https://www.pexels.com/photo/an-elderly-man-looking-at-the-documents-on-the-table-near-his-laptop-7545279/"
-  source: "Pexels"
-h1: "Can I Transfer My UK Pension to a QROPS in Dubai Without a 25% Tax Charge?"
-summary: "If you're a UK agency founder moving to Dubai, you might be tempted to transfer your UK pension to a QROPS. The problem is that the UAE has no recognised QROPS-friendly scheme, and most transfers to Dubai are unauthorised, triggering a 25% charge plus 15% overage. This post explains the risks, the rules, and the only safe path forward."
-schema: ""
+  photographer: SHVETS production
+  photographerUrl: https://www.pexels.com/@shvets-production
+  sourceUrl: https://www.pexels.com/photo/an-elderly-man-looking-at-the-documents-on-the-table-near-his-laptop-7545279/
+  source: Pexels
+h1: Can I Transfer My UK Pension to a QROPS in Dubai Without a 25% Tax Charge?
+summary: If you're a UK agency founder moving to Dubai, you might be tempted to transfer your UK pension to a QROPS. The problem is that the UAE has no recognised QROPS-friendly scheme, and most transfers to Dubai are unauthorised, triggering a 25% charge plus 15% overage. This post explains the risks, the rules, and the only safe path forward.
+schema: ''
 faqs:
-  - question: "Is there any legal way to transfer a UK pension to Dubai without paying the 25% charge?"
-    answer: "No. There is no HMRC-recognised QROPS based in the UAE. Any transfer to a Dubai-based scheme is unauthorised and will trigger the 25% charge plus a possible 15% surcharge. The only legal way to hold a UK pension while living in Dubai is to leave it in a UK scheme, such as a SIPP, and draw it down as a non-UK resident."
-  - question: "What happens if I transfer my UK pension to a Malta QROPS and then move it to Dubai?"
-    answer: "HMRC's five-year anti-avoidance rule means that if you transfer to a recognised QROPS and then move it to a non-recognised jurisdiction within five years, the original transfer can be retrospectively treated as unauthorised. You would then face the 25% charge plus interest from the date of the original transfer. This is a high-risk strategy that HMRC actively pursues."
-  - question: "Can I take my 25% tax-free pension lump sum while living in Dubai?"
-    answer: "Yes. You can take your 25% tax-free lump sum (up to £268,275 under current rules) from a UK pension while you are a non-UK resident. The remaining 75% is taxable in the UK at your marginal rate, but if you have no other UK income, you may pay little or no tax. There is no requirement to be a UK resident to access a UK pension."
-  - question: "Should I use a Dubai-based financial adviser for my UK pension transfer?"
-    answer: "No. You should only use a pension transfer specialist who is authorised by the FCA in the UK. Dubai-based advisers are not FCA-regulated, and many promote unauthorised QROPS schemes that trigger severe tax penalties. The FCA has issued multiple warnings about this. Always verify the adviser's FCA registration before proceeding."
+- question: Is there any legal way to transfer a UK pension to Dubai without paying the 25% charge?
+  answer: No. There is no HMRC-recognised QROPS based in the UAE. Any transfer to a Dubai-based scheme is unauthorised and will trigger the 25% charge plus a possible 15% surcharge. The only legal way to hold a UK pension while living in Dubai is to leave it in a UK scheme, such as a SIPP, and draw it down as a non-UK resident.
+- question: What happens if I transfer my UK pension to a Malta QROPS and then move it to Dubai?
+  answer: HMRC's five-year anti-avoidance rule means that if you transfer to a recognised QROPS and then move it to a non-recognised jurisdiction within five years, the original transfer can be retrospectively treated as unauthorised. You would then face the 25% charge plus interest from the date of the original transfer. This is a high-risk strategy that HMRC actively pursues.
+- question: Can I take my 25% tax-free pension lump sum while living in Dubai?
+  answer: Yes. You can take your 25% tax-free lump sum (up to £268,275 under current rules) from a UK pension while you are a non-UK resident. The remaining 75% is taxable in the UK at your marginal rate, but if you have no other UK income, you may pay little or no tax. There is no requirement to be a UK resident to access a UK pension.
+- question: Should I use a Dubai-based financial adviser for my UK pension transfer?
+  answer: No. You should only use a pension transfer specialist who is authorised by the FCA in the UK. Dubai-based advisers are not FCA-regulated, and many promote unauthorised QROPS schemes that trigger severe tax penalties. The FCA has issued multiple warnings about this. Always verify the adviser's FCA registration before proceeding.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Transferring a UK pension to a QROPS in Dubai is almost certainly unauthorised and triggers a 25% unauthorised payment charge plus a 15% surcharge.
+- HMRC does not recognise any UAE-based scheme as a QROPS because the UAE lacks a pension system equivalent to UK rules.
+- A £200,000 pension transferred to a non-QROPS in Dubai could incur £70,000 in charges before any withdrawals.
+- Always verify a QROPS provider's HMRC reference number against the official list on GOV.UK to avoid unauthorised transfers.
+- Some providers offer transfers to Malta or Gibraltar QROPS as a workaround, but this carries additional risks and compliance requirements.
 ---
-
 <h2>Why This Question Matters for Agency Founders Moving to Dubai</h2>
 <p>You have built a successful agency in the UK. You have a pension pot sitting there, perhaps £150,000 or £250,000, built up over years of dividends and retained profits. Now you are moving to Dubai. You have heard that you can transfer your UK pension to a Qualifying Recognised Overseas Pension Scheme (QROPS) and avoid UK tax. You want to know if you can <strong>transfer UK pension to QROPS Dubai</strong> without a 25% tax charge.</p>
 <p>The short answer is: almost certainly not. And attempting it could cost you far more than 25%.</p>

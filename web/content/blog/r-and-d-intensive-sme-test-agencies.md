@@ -1,33 +1,40 @@
 ---
-title: "The R&D Intensive SME Test: When Agencies Get the Enhanced 27% Rate"
-slug: "r-and-d-intensive-sme-test-agencies"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/r-and-d-intensive-sme-test-agencies"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "R&D Intensive SME Test: Enhanced 27% Rate for Agencies"
-metaDescription: "UK agency founders: if your R&D spend is 30%+ of total costs, you may qualify for the enhanced 27% rate under the intensive SME test. Here’s how it works."
-altText: "Agency founder reviewing R&D tax credit calculations with accountant in a modern UK office"
-image: "/blog/r-and-d-intensive-sme-test-agencies.jpg"
+title: 'The R&D Intensive SME Test: When Agencies Get the Enhanced 27% Rate'
+slug: r-and-d-intensive-sme-test-agencies
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/r-and-d-intensive-sme-test-agencies
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'R&D Intensive SME Test: Enhanced 27% Rate for Agencies'
+metaDescription: 'UK agency founders: if your R&D spend is 30%+ of total costs, you may qualify for the enhanced 27% rate under the intensive SME test. Here’s how it works.'
+altText: Agency founder reviewing R&D tax credit calculations with accountant in a modern UK office
+image: /blog/r-and-d-intensive-sme-test-agencies.jpg
 imageCredit:
-  photographer: "Artem Podrez"
-  photographerUrl: "https://www.pexels.com/@artempodrez"
-  sourceUrl: "https://www.pexels.com/photo/a-lab-assistant-with-a-test-tube-8533027/"
-  source: "Pexels"
-h1: "The R&D Intensive SME Test: When Agencies Get the Enhanced 27% Rate"
-summary: "If your agency spends 30% or more of its total costs on qualifying R&D, you may be an R&D intensive SME. That means an enhanced payable credit rate of 27% — significantly better than the standard 14.5%. This article explains the test, what counts, and how to claim."
-schema: ""
+  photographer: Artem Podrez
+  photographerUrl: https://www.pexels.com/@artempodrez
+  sourceUrl: https://www.pexels.com/photo/a-lab-assistant-with-a-test-tube-8533027/
+  source: Pexels
+h1: 'The R&D Intensive SME Test: When Agencies Get the Enhanced 27% Rate'
+summary: If your agency spends 30% or more of its total costs on qualifying R&D, you may be an R&D intensive SME. That means an enhanced payable credit rate of 27% — significantly better than the standard 14.5%. This article explains the test, what counts, and how to claim.
+schema: ''
 faqs:
-  - question: "What is the R&D intensive SME rate for agencies?"
-    answer: "The R&D intensive SME rate is a higher payable credit of 27% for loss-making companies whose qualifying R&D spend is at least 30% of total costs. For a loss-making agency, this replaces the standard 14.5% rate. The rate applies to accounting periods beginning on or after 1 April 2023."
-  - question: "How do I calculate if my agency is R&D intensive?"
-    answer: "Divide your qualifying R&D expenditure by your total costs (all revenue expenditure plus capitalised R&D costs). If the result is 30% or higher, you are intensive. For example, an agency with £400k R&D spend and £1.2m total costs is at 33.3% and qualifies."
-  - question: "Can a profitable agency benefit from the intensive SME rate?"
-    answer: "Not directly. The intensive SME rate only applies to loss-making companies. However, profitable agencies still get the standard 186% enhanced deduction. Knowing you meet the intensive test is useful if your profitability changes, as you can claim the higher rate in future loss-making years."
-  - question: "What counts as qualifying R&D for a digital or creative agency?"
-    answer: "Qualifying R&D includes developing new software platforms, building proprietary AI models, creating new algorithms, resolving technical uncertainties in software or hardware integration, and developing new technical methodologies. Standard client work or routine maintenance does not qualify. The key test is whether a technical uncertainty existed that required experimentation."
+- question: What is the R&D intensive SME rate for agencies?
+  answer: The R&D intensive SME rate is a higher payable credit of 27% for loss-making companies whose qualifying R&D spend is at least 30% of total costs. For a loss-making agency, this replaces the standard 14.5% rate. The rate applies to accounting periods beginning on or after 1 April 2023.
+- question: How do I calculate if my agency is R&D intensive?
+  answer: Divide your qualifying R&D expenditure by your total costs (all revenue expenditure plus capitalised R&D costs). If the result is 30% or higher, you are intensive. For example, an agency with £400k R&D spend and £1.2m total costs is at 33.3% and qualifies.
+- question: Can a profitable agency benefit from the intensive SME rate?
+  answer: Not directly. The intensive SME rate only applies to loss-making companies. However, profitable agencies still get the standard 186% enhanced deduction. Knowing you meet the intensive test is useful if your profitability changes, as you can claim the higher rate in future loss-making years.
+- question: What counts as qualifying R&D for a digital or creative agency?
+  answer: Qualifying R&D includes developing new software platforms, building proprietary AI models, creating new algorithms, resolving technical uncertainties in software or hardware integration, and developing new technical methodologies. Standard client work or routine maintenance does not qualify. The key test is whether a technical uncertainty existed that required experimentation.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- If your agency spends 30% or more of total costs on qualifying R&D, you qualify as an R&D intensive SME for accounting periods starting on or after 1 April 2023.
+- Loss-making intensive SMEs can surrender trading losses for a payable credit at 27%, up from the standard 14.5% rate.
+- Total costs include all revenue expenditure in the profit and loss account plus capitalised R&D costs and intangible assets.
+- To qualify, you must be an SME (fewer than 500 employees, turnover under €100m or gross assets under €86m) and loss-making on a trading basis.
+- Profitable intensive SMEs still get the 186% enhanced R&D deduction but do not benefit from the higher payable credit rate.
 ---
-
 <p>If your agency is spending heavily on developing new software, tools, or processes, the standard R&D tax credit scheme already gives you a decent return. But if your R&D spend is high relative to your total costs, you might qualify for something better: the R&D intensive SME rate.</p>
 
 <p>Since April 2023, HMRC has offered a higher payable credit rate for loss-making companies that meet the "intensive SME" test. The rate is 27% of the surrendered loss, up from the standard 14.5% for loss-making SMEs. For a profitable agency, the enhanced deduction is 186% of qualifying R&D expenditure (the same as the standard SME scheme), but the real benefit comes when you're loss-making.</p>

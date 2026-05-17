@@ -1,33 +1,40 @@
 ---
-title: "Can I Open a UAE Bank Account for My Agency Before I Get My Residence Visa?"
-slug: "open-uae-bank-account-before-residence-visa"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/open-uae-bank-account-before-residence-visa"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Open UAE Bank Account Before Residence Visa: What Agency"
-metaDescription: "Can you open a UAE bank account for your agency without a residence visa? Yes, but only with certain banks and the right paperwork. Here is what you need."
-altText: "Agency founder reviewing UAE bank account paperwork and trade licence documents at a desk in Dubai"
-image: "/blog/open-uae-bank-account-before-residence-visa.jpg"
+title: Can I Open a UAE Bank Account for My Agency Before I Get My Residence Visa?
+slug: open-uae-bank-account-before-residence-visa
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/open-uae-bank-account-before-residence-visa
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Open UAE Bank Account Before Residence Visa: What Agency'
+metaDescription: Can you open a UAE bank account for your agency without a residence visa? Yes, but only with certain banks and the right paperwork. Here is what you need.
+altText: Agency founder reviewing UAE bank account paperwork and trade licence documents at a desk in Dubai
+image: /blog/open-uae-bank-account-before-residence-visa.jpg
 imageCredit:
-  photographer: "Atlantic Ambience"
-  photographerUrl: "https://www.pexels.com/@freestockpro"
-  sourceUrl: "https://www.pexels.com/photo/gold-and-silver-coins-scattered-near-gold-coin-bank-12955822/"
-  source: "Pexels"
-h1: "Can I Open a UAE Bank Account for My Agency Before I Get My Residence Visa?"
-summary: "Opening a UAE bank account for your agency before you hold a residence visa is possible, but the process varies significantly by bank. You will typically need a trade licence, your company incorporation documents, and in some cases a pre-approval letter. This article explains which banks allow it, what documentation you need, and how to avoid common delays."
-schema: ""
+  photographer: Atlantic Ambience
+  photographerUrl: https://www.pexels.com/@freestockpro
+  sourceUrl: https://www.pexels.com/photo/gold-and-silver-coins-scattered-near-gold-coin-bank-12955822/
+  source: Pexels
+h1: Can I Open a UAE Bank Account for My Agency Before I Get My Residence Visa?
+summary: Opening a UAE bank account for your agency before you hold a residence visa is possible, but the process varies significantly by bank. You will typically need a trade licence, your company incorporation documents, and in some cases a pre-approval letter. This article explains which banks allow it, what documentation you need, and how to avoid common delays.
+schema: ''
 faqs:
-  - question: "Can I open a UAE bank account for my agency without a residence visa?"
-    answer: "Yes, but only with certain banks. Mashreq Bank, RAKBANK, and HSBC UAE (if you are an existing HSBC customer) are the most likely to accept a trade licence without a visa. You will need your trade licence, company incorporation documents, passport copies, and proof of address. Expect the process to take 1 to 3 weeks."
-  - question: "What documents do I need to open a UAE corporate bank account as a non-resident?"
-    answer: "You will typically need your trade licence, Memorandum and Articles of Association (MOA), passport copies for all shareholders and directors, proof of address from your home country, and a business plan. Some banks also ask for a bank reference letter from your existing bank or a free zone pre-approval letter."
-  - question: "How long does it take to open a UAE bank account without a visa?"
-    answer: "If the bank is willing and you have all documents ready, it can take 3 to 10 working days. More realistically, expect 2 to 3 weeks. Delays often come from document verification, attestation requirements, or the need for a physical meeting with bank representatives."
-  - question: "What happens to my UAE bank account once I get my residence visa?"
-    answer: "You will need to update the bank with copies of your residence visa, Emirates ID, and a UAE proof of address (tenancy contract or utility bill). Some banks place temporary restrictions on the account until these documents are provided. Once updated, those restrictions are lifted and you can access the full range of banking products."
+- question: Can I open a UAE bank account for my agency without a residence visa?
+  answer: Yes, but only with certain banks. Mashreq Bank, RAKBANK, and HSBC UAE (if you are an existing HSBC customer) are the most likely to accept a trade licence without a visa. You will need your trade licence, company incorporation documents, passport copies, and proof of address. Expect the process to take 1 to 3 weeks.
+- question: What documents do I need to open a UAE corporate bank account as a non-resident?
+  answer: You will typically need your trade licence, Memorandum and Articles of Association (MOA), passport copies for all shareholders and directors, proof of address from your home country, and a business plan. Some banks also ask for a bank reference letter from your existing bank or a free zone pre-approval letter.
+- question: How long does it take to open a UAE bank account without a visa?
+  answer: If the bank is willing and you have all documents ready, it can take 3 to 10 working days. More realistically, expect 2 to 3 weeks. Delays often come from document verification, attestation requirements, or the need for a physical meeting with bank representatives.
+- question: What happens to my UAE bank account once I get my residence visa?
+  answer: You will need to update the bank with copies of your residence visa, Emirates ID, and a UAE proof of address (tenancy contract or utility bill). Some banks place temporary restrictions on the account until these documents are provided. Once updated, those restrictions are lifted and you can access the full range of banking products.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- You can open a UAE corporate bank account before obtaining a residence visa, but only a few banks offer this option.
+- Mashreq Bank, RAKBANK, HSBC UAE, and Commercial Bank of Dubai are the most likely to open accounts without a visa.
+- You will typically need your trade licence, company incorporation documents, and passport copies for a non-resident account.
+- Most major UAE banks like Emirates NBD and ADCB require a residence visa and Emirates ID before opening a corporate account.
+- Opening an account before your visa avoids delays in invoicing clients and receiving payments during the 2–4 week visa process.
 ---
-
 <h2>Can You Open a UAE Bank Account Before Your Residence Visa?</h2>
 <p>If you are an agency founder moving your business to Dubai, you are probably asking this question early in the process. The short answer is: yes, you can open a UAE bank account for your agency before you have a residence visa, but not with every bank, and not without the right paperwork.</p>
 <p>The standard requirement across most UAE banks is a valid residence visa and an Emirates ID. Without these, many banks will simply say no. But a few banks allow what is sometimes called a "non-resident" account opening for companies, or they will accept a pre-approval letter from the relevant free zone authority. The process is not transparent, and it varies from one bank to another. Let me explain exactly what you need and how to approach it.</p>

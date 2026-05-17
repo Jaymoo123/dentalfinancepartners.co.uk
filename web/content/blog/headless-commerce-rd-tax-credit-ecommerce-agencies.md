@@ -1,33 +1,40 @@
 ---
-title: "Headless Commerce R&D: What Qualifies for E-commerce Agencies"
-slug: "headless-commerce-rd-tax-credit-ecommerce-agencies"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/headless-commerce-rd-tax-credit-ecommerce-agencies"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Headless Commerce R&D Tax Credit: E-commerce Agency Guide"
-metaDescription: "Does your e-commerce agency qualify for R&D tax credits? We cover headless commerce, API work, and technical uncertainty. Real examples inside."
-altText: "Headless commerce R&D tax credit guide for e-commerce agencies, UK accountant's desk with laptop and notes"
-image: "/blog/headless-commerce-rd-tax-credit-ecommerce-agencies.jpg"
+title: 'Headless Commerce R&D: What Qualifies for E-commerce Agencies'
+slug: headless-commerce-rd-tax-credit-ecommerce-agencies
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/headless-commerce-rd-tax-credit-ecommerce-agencies
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'Headless Commerce R&D Tax Credit: E-commerce Agency Guide'
+metaDescription: Does your e-commerce agency qualify for R&D tax credits? We cover headless commerce, API work, and technical uncertainty. Real examples inside.
+altText: Headless commerce R&D tax credit guide for e-commerce agencies, UK accountant's desk with laptop and notes
+image: /blog/headless-commerce-rd-tax-credit-ecommerce-agencies.jpg
 imageCredit:
-  photographer: "Vitaly Gariev"
-  photographerUrl: "https://www.pexels.com/@silverkblack"
-  sourceUrl: "https://www.pexels.com/photo/retail-shopping-experience-with-customers-at-counter-36730431/"
-  source: "Pexels"
-h1: "Headless Commerce R&D: What Qualifies for E-commerce Agencies"
-summary: "If your e-commerce agency builds headless commerce solutions, you could be leaving thousands on the table. We break down what qualifies for R&D tax credits and what doesn't, with real examples from agency projects."
-schema: ""
+  photographer: Vitaly Gariev
+  photographerUrl: https://www.pexels.com/@silverkblack
+  sourceUrl: https://www.pexels.com/photo/retail-shopping-experience-with-customers-at-counter-36730431/
+  source: Pexels
+h1: 'Headless Commerce R&D: What Qualifies for E-commerce Agencies'
+summary: If your e-commerce agency builds headless commerce solutions, you could be leaving thousands on the table. We break down what qualifies for R&D tax credits and what doesn't, with real examples from agency projects.
+schema: ''
 faqs:
-  - question: "Can a Shopify agency claim R&D tax credits for headless builds?"
-    answer: "Yes, but only if the work involves genuine technological uncertainty. Building a standard headless Shopify storefront using Hydrogen and Oxygen does not qualify. But if you're solving novel problems around custom API integrations, performance optimisation in constrained environments, or data normalisation across disparate systems, those projects likely qualify. Keep detailed documentation of what you tried and why standard approaches failed."
-  - question: "How far back can I claim R&D tax credits for headless commerce work?"
-    answer: "You can claim for the current accounting period and amend returns for the previous two financial years. So if your agency's year-end is 31 March 2025, you can claim for the year ended 31 March 2025, and amend your returns for the years ended 31 March 2024 and 31 March 2023. Claims for older periods are generally not accepted unless you have a very good reason for the delay."
-  - question: "What costs can I include in my headless commerce R&D claim?"
-    answer: "You can include staff salaries (including employer NI and pension contributions), subcontractor costs (65% of qualifying payments under the SME scheme, or 100% if you use the PAYE route), software licenses directly used in the R&D, and consumable items like cloud hosting costs. You cannot include general overheads, marketing costs, or the client's costs. Your accountant will help you identify which costs qualify."
-  - question: "Will HMRC investigate my R&D claim for headless commerce work?"
-    answer: "HMRC has increased its scrutiny of R&D claims in recent years, particularly for digital and tech businesses. Claims over £50,000 are more likely to be reviewed. To survive an investigation, you need robust technical documentation showing the uncertainty you faced, the standard approaches you tried, and the novel solution you developed. A well-structured claim with proper evidence is far less likely to be challenged."
+- question: Can a Shopify agency claim R&D tax credits for headless builds?
+  answer: Yes, but only if the work involves genuine technological uncertainty. Building a standard headless Shopify storefront using Hydrogen and Oxygen does not qualify. But if you're solving novel problems around custom API integrations, performance optimisation in constrained environments, or data normalisation across disparate systems, those projects likely qualify. Keep detailed documentation of what you tried and why standard approaches failed.
+- question: How far back can I claim R&D tax credits for headless commerce work?
+  answer: You can claim for the current accounting period and amend returns for the previous two financial years. So if your agency's year-end is 31 March 2025, you can claim for the year ended 31 March 2025, and amend your returns for the years ended 31 March 2024 and 31 March 2023. Claims for older periods are generally not accepted unless you have a very good reason for the delay.
+- question: What costs can I include in my headless commerce R&D claim?
+  answer: You can include staff salaries (including employer NI and pension contributions), subcontractor costs (65% of qualifying payments under the SME scheme, or 100% if you use the PAYE route), software licenses directly used in the R&D, and consumable items like cloud hosting costs. You cannot include general overheads, marketing costs, or the client's costs. Your accountant will help you identify which costs qualify.
+- question: Will HMRC investigate my R&D claim for headless commerce work?
+  answer: HMRC has increased its scrutiny of R&D claims in recent years, particularly for digital and tech businesses. Claims over £50,000 are more likely to be reviewed. To survive an investigation, you need robust technical documentation showing the uncertainty you faced, the standard approaches you tried, and the novel solution you developed. A well-structured claim with proper evidence is far less likely to be challenged.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Building a custom API orchestration layer to reconcile inventory across disparate ERP systems qualifies as R&D because it resolves technological uncertainty.
+- Optimising Core Web Vitals on a headless site with a novel caching and rendering strategy qualifies, as standard solutions fail in decoupled environments.
+- Integrating a headless CMS with a legacy ERP via a custom middleware layer qualifies due to the technological uncertainty in protocol translation.
+- A standard headless setup using well-documented starter kits and no custom solutions does not qualify for R&D tax relief.
+- HMRC's R&D scheme applies to e-commerce agencies that overcome scientific or technological uncertainty, not just routine integration work.
 ---
-
 <p>If your e-commerce agency builds headless commerce solutions, you could be leaving thousands of pounds on the table. The <strong>headless commerce r&d tax credit</strong> is a genuine relief that many agency founders overlook, simply because they don't realise their day-to-day technical work qualifies.</p>
 
 <p>HMRC's R&D tax relief scheme is not just for pharmaceutical companies or aerospace engineers. It applies to any business that undertakes projects seeking to resolve scientific or technological uncertainty. For e-commerce agencies building headless architectures, that uncertainty shows up more often than you might think.</p>

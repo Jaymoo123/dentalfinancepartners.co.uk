@@ -1,33 +1,40 @@
 ---
-title: "Can't Pay Dividends Because of Retained Losses? Here's How to Pay Yourself a Bonus Instead"
-slug: "pay-yourself-agency-founder-retained-losses-bonus-instead-dividends"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/pay-yourself-agency-founder-retained-losses-bonus-instead-dividends"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Salary and Dividends"
-metaTitle: "Pay yourself agency founder: bonus vs dividends"
-metaDescription: "Retained losses stopping dividend payments? Pay yourself agency founder with a tax-efficient bonus instead. We explain the NI and corporation tax"
-altText: "Agency founder reviewing financial statements on a laptop in a modern London office, with a calculator and papers on the desk"
-image: "/blog/pay-yourself-agency-founder-retained-losses-bonus-instead-dividends.jpg"
+title: Can't Pay Dividends Because of Retained Losses? Here's How to Pay Yourself a Bonus Instead
+slug: pay-yourself-agency-founder-retained-losses-bonus-instead-dividends
+canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/pay-yourself-agency-founder-retained-losses-bonus-instead-dividends
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Salary and Dividends
+metaTitle: 'Pay yourself agency founder: bonus vs dividends'
+metaDescription: Retained losses stopping dividend payments? Pay yourself agency founder with a tax-efficient bonus instead. We explain the NI and corporation tax
+altText: Agency founder reviewing financial statements on a laptop in a modern London office, with a calculator and papers on the desk
+image: /blog/pay-yourself-agency-founder-retained-losses-bonus-instead-dividends.jpg
 imageCredit:
-  photographer: "Monstera Production"
-  photographerUrl: "https://www.pexels.com/@gabby-k"
-  sourceUrl: "https://www.pexels.com/photo/illustration-of-payment-concept-for-percents-currency-and-information-5849576/"
-  source: "Pexels"
-h1: "Can't Pay Dividends Because of Retained Losses? Here's How to Pay Yourself a Bonus Instead"
-summary: "If your agency has accumulated retained losses from previous years, you can't legally pay dividends until those losses are cleared. A bonus is the practical alternative. Here is how to structure it to minimise the combined tax and NI cost to you and your company."
-schema: ""
+  photographer: Monstera Production
+  photographerUrl: https://www.pexels.com/@gabby-k
+  sourceUrl: https://www.pexels.com/photo/illustration-of-payment-concept-for-percents-currency-and-information-5849576/
+  source: Pexels
+h1: Can't Pay Dividends Because of Retained Losses? Here's How to Pay Yourself a Bonus Instead
+summary: If your agency has accumulated retained losses from previous years, you can't legally pay dividends until those losses are cleared. A bonus is the practical alternative. Here is how to structure it to minimise the combined tax and NI cost to you and your company.
+schema: ''
 faqs:
-  - question: "Can I pay myself a dividend if my agency has retained losses?"
-    answer: "No. Under the Companies Act 2006, dividends can only be paid from distributable profits. If your retained earnings figure on the balance sheet is negative, you have no distributable reserves. Paying a dividend in this situation is unlawful and can result in personal liability for the directors. You must use a bonus instead."
-  - question: "How is a bonus taxed compared to a dividend?"
-    answer: "A bonus is subject to income tax (20%, 40%, or 45%) and employee National Insurance (8% or 2%), plus employer NI at 13.8%. The company deducts the bonus from its taxable profit, saving corporation tax. A dividend is taxed at 8.75%, 33.75%, or 39.35% with no NI, but the company pays corporation tax on the profits first. The bonus is usually more expensive personally but cheaper for the company overall."
-  - question: "What is the most tax-efficient way to pay myself agency founder when retained losses exist?"
-    answer: "The most efficient approach is usually to take a bonus that keeps your total income within the basic rate band (£50,270 for 2025/26), then switch to dividends once the retained losses are cleared in a future year. If you need more than that, consider timing the bonus just before your year-end to maximise the corporation tax saving. Your accountant can model the exact figures for your situation."
-  - question: "Do I need to report a bonus differently from salary in my payroll?"
-    answer: "No. Bonuses are processed through your regular payroll software (Xero, QuickBooks, FreeAgent) as part of your normal Full Payment Submission to HMRC. The software calculates the income tax and NI automatically. You do need to document the bonus decision in a board minute for your company records, but the reporting process is the same as for your regular salary."
+- question: Can I pay myself a dividend if my agency has retained losses?
+  answer: No. Under the Companies Act 2006, dividends can only be paid from distributable profits. If your retained earnings figure on the balance sheet is negative, you have no distributable reserves. Paying a dividend in this situation is unlawful and can result in personal liability for the directors. You must use a bonus instead.
+- question: How is a bonus taxed compared to a dividend?
+  answer: A bonus is subject to income tax (20%, 40%, or 45%) and employee National Insurance (8% or 2%), plus employer NI at 13.8%. The company deducts the bonus from its taxable profit, saving corporation tax. A dividend is taxed at 8.75%, 33.75%, or 39.35% with no NI, but the company pays corporation tax on the profits first. The bonus is usually more expensive personally but cheaper for the company overall.
+- question: What is the most tax-efficient way to pay myself agency founder when retained losses exist?
+  answer: The most efficient approach is usually to take a bonus that keeps your total income within the basic rate band (£50,270 for 2025/26), then switch to dividends once the retained losses are cleared in a future year. If you need more than that, consider timing the bonus just before your year-end to maximise the corporation tax saving. Your accountant can model the exact figures for your situation.
+- question: Do I need to report a bonus differently from salary in my payroll?
+  answer: No. Bonuses are processed through your regular payroll software (Xero, QuickBooks, FreeAgent) as part of your normal Full Payment Submission to HMRC. The software calculates the income tax and NI automatically. You do need to document the bonus decision in a board minute for your company records, but the reporting process is the same as for your regular salary.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- If your agency has negative retained earnings, paying dividends is illegal under the Companies Act 2006 and can trigger personal liability.
+- A bonus is the practical alternative when retained losses prevent dividend payments, as it reduces the company's taxable profit.
+- Paying a £60,000 bonus can save around £13,800 in corporation tax at the 25% rate, but incurs income tax, employee NI, and 13.8% employer NI.
+- For 2025/26, the personal tax cost of a bonus includes income tax at your marginal rate and employee NI above the £12,570 threshold.
+- Unlike dividends, bonuses are not restricted by retained earnings and are deducted from trading profits before corporation tax is calculated.
 ---
-
 <h2>The Scenario Nobody Talks About</h2>
 
 <p>Most advice on paying yourself as an agency founder assumes your company has retained profits. The standard model is clear: take a salary up to the NI threshold (£12,570 for 2025/26) and draw the rest as dividends to save on National Insurance.</p>

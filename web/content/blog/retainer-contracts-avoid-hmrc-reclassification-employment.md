@@ -1,33 +1,40 @@
 ---
-title: "Can a Client Retainer Deal Get Your Agency Staff Reclassified as Employees?"
-slug: "retainer-contracts-avoid-hmrc-reclassification-employment"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/retainer-contracts-avoid-hmrc-reclassification-employment"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Retainer Contracts and HMRC: Avoid Employee"
-metaDescription: "HMRC can reclassify retainer deals as employment for your agency staff. Here is how to structure contracts to avoid that risk and stay compliant."
-altText: "Two agency founders reviewing a retainer contract document in a modern UK office meeting room"
-image: "/blog/retainer-contracts-avoid-hmrc-reclassification-employment.jpg"
+title: Can a Client Retainer Deal Get Your Agency Staff Reclassified as Employees?
+slug: retainer-contracts-avoid-hmrc-reclassification-employment
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/retainer-contracts-avoid-hmrc-reclassification-employment
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'Retainer Contracts and HMRC: Avoid Employee'
+metaDescription: HMRC can reclassify retainer deals as employment for your agency staff. Here is how to structure contracts to avoid that risk and stay compliant.
+altText: Two agency founders reviewing a retainer contract document in a modern UK office meeting room
+image: /blog/retainer-contracts-avoid-hmrc-reclassification-employment.jpg
 imageCredit:
-  photographer: "Yan Krukau"
-  photographerUrl: "https://www.pexels.com/@yankrukov"
-  sourceUrl: "https://www.pexels.com/photo/a-close-up-of-a-handshake-7693159/"
-  source: "Pexels"
-h1: "How to Structure Retainer Contracts to Avoid HMRC Reclassification as Employment"
-summary: "HMRC can look at your retainer contracts with clients and argue your staff are actually their employees. This guide explains the specific contract clauses, working practices, and financial arrangements that trigger reclassification — and how to structure your retainers to avoid it."
-schema: ""
+  photographer: Yan Krukau
+  photographerUrl: https://www.pexels.com/@yankrukov
+  sourceUrl: https://www.pexels.com/photo/a-close-up-of-a-handshake-7693159/
+  source: Pexels
+h1: How to Structure Retainer Contracts to Avoid HMRC Reclassification as Employment
+summary: HMRC can look at your retainer contracts with clients and argue your staff are actually their employees. This guide explains the specific contract clauses, working practices, and financial arrangements that trigger reclassification — and how to structure your retainers to avoid it.
+schema: ''
 faqs:
-  - question: "Can HMRC really reclassify my agency's retainer staff as employees of my client?"
-    answer: "Yes. HMRC applies the same employment status tests (control, substitution, mutuality of obligation) to retainer arrangements. If your staff work under the client's direction, use their systems, and cannot be substituted, HMRC can argue they are the client's employees and your agency is acting as an employer without operating PAYE. The liability falls on your agency, not the client."
-  - question: "What specific clauses should I include in retainer contracts to prevent reclassification?"
-    answer: "Include a substitution clause giving your agency the right to replace any assigned staff. Define deliverables and outcomes, not hours of a named person. Avoid integration language like \"embedded\" or \"part of the team.\" Ensure the fee reflects the value of the service, not the staff member's salary plus a small margin. Review these clauses annually with your accountant."
-  - question: "How often should I review my retainer contracts for employment status risks?"
-    answer: "Review every retainer contract at renewal, and at least annually for multi-year retainers. More importantly, audit the actual working practices every six months. If a staff member has been on the same retainer for over 12 months, ask them directly: who sets your deadlines, who reviews your work, and could you send a substitute tomorrow? If the answer points to the client, restructure the arrangement."
-  - question: "What is the difference between this retainer reclassification risk and IR35?"
-    answer: "IR35 applies when a contractor provides services to a client through an intermediary (their own limited company). Retainer reclassification applies when your agency's employee provides services to a client under a retainer. The tests are similar, but the liability lands differently. With IR35, the fee-payer (agency or client) owes the tax. With retainer reclassification, your agency owes the tax because you are the employer on paper."
+- question: Can HMRC really reclassify my agency's retainer staff as employees of my client?
+  answer: Yes. HMRC applies the same employment status tests (control, substitution, mutuality of obligation) to retainer arrangements. If your staff work under the client's direction, use their systems, and cannot be substituted, HMRC can argue they are the client's employees and your agency is acting as an employer without operating PAYE. The liability falls on your agency, not the client.
+- question: What specific clauses should I include in retainer contracts to prevent reclassification?
+  answer: Include a substitution clause giving your agency the right to replace any assigned staff. Define deliverables and outcomes, not hours of a named person. Avoid integration language like "embedded" or "part of the team." Ensure the fee reflects the value of the service, not the staff member's salary plus a small margin. Review these clauses annually with your accountant.
+- question: How often should I review my retainer contracts for employment status risks?
+  answer: 'Review every retainer contract at renewal, and at least annually for multi-year retainers. More importantly, audit the actual working practices every six months. If a staff member has been on the same retainer for over 12 months, ask them directly: who sets your deadlines, who reviews your work, and could you send a substitute tomorrow? If the answer points to the client, restructure the arrangement.'
+- question: What is the difference between this retainer reclassification risk and IR35?
+  answer: IR35 applies when a contractor provides services to a client through an intermediary (their own limited company). Retainer reclassification applies when your agency's employee provides services to a client under a retainer. The tests are similar, but the liability lands differently. With IR35, the fee-payer (agency or client) owes the tax. With retainer reclassification, your agency owes the tax because you are the employer on paper.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- HMRC can reclassify your agency staff as employees of the client if the client controls how, when, and where they work.
+- A retainer contract must include a substitution clause allowing your agency to replace staff, even if never used, to avoid employment reclassification.
+- If the client sets deadlines, reviews output, and directs work methods, HMRC will likely argue your staff are employees of the client.
+- The liability for unpaid PAYE and National Insurance falls on your agency, not the client, if HMRC reclassifies retainer staff as employees.
+- HMRC applies the same control, substitution, and mutuality of obligation tests used for IR35 to retainer-based agency arrangements.
 ---
-
 <p>Most agency founders worry about IR35 when they hire contractors. That is the obvious risk. But there is a quieter, more dangerous problem that hardly anyone talks about: HMRC reclassifying your retainer contracts as employment arrangements — for your own staff.</p>
 
 <p>Here is how it works. You sign a long-term retainer with a client. That client expects your senior account manager to be available every Tuesday and Thursday, on-site at their offices. They direct the work. They set the deadlines. They review the output. After twelve months, HMRC looks at that arrangement and says: that person is not self-employed. They are an employee of the client. And you, the agency, are the employer who failed to operate PAYE and National Insurance.</p>

@@ -1,33 +1,40 @@
 ---
-title: "How Does Your Agency's Gross Profit Margin Compare to Industry Benchmarks by Agency Type?"
-slug: "agency-gross-profit-margin-benchmarks-by-agency-type"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-gross-profit-margin-benchmarks-by-agency-type"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "Agency Gross Profit Margin Benchmarks by Agency Type (2025)"
-metaDescription: "Benchmark your agency's gross profit margin against UK averages for digital, creative, PR, recruitment, and web design agencies. Real figures"
-altText: "UK agency founder reviewing gross profit margin on a laptop in a modern office with financial charts on screen"
-image: "/blog/agency-gross-profit-margin-benchmarks-by-agency-type.jpg"
+title: How Does Your Agency's Gross Profit Margin Compare to Industry Benchmarks by Agency Type?
+slug: agency-gross-profit-margin-benchmarks-by-agency-type
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-gross-profit-margin-benchmarks-by-agency-type
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: Agency Gross Profit Margin Benchmarks by Agency Type (2025)
+metaDescription: Benchmark your agency's gross profit margin against UK averages for digital, creative, PR, recruitment, and web design agencies. Real figures
+altText: UK agency founder reviewing gross profit margin on a laptop in a modern office with financial charts on screen
+image: /blog/agency-gross-profit-margin-benchmarks-by-agency-type.jpg
 imageCredit:
-  photographer: "Kindel Media"
-  photographerUrl: "https://www.pexels.com/@kindelmedia"
-  sourceUrl: "https://www.pexels.com/photo/a-close-up-shot-of-a-graph-on-a-paper-7054368/"
-  source: "Pexels"
-h1: "How Does Your Agency's Gross Profit Margin Compare to Industry Benchmarks by Agency Type?"
-summary: "Gross profit margin tells you if your agency is pricing right and managing costs well. But what counts as good depends entirely on your agency type. Here are the benchmarks for digital, creative, PR, recruitment, and web design agencies, plus what to do if your margin is below average."
-schema: ""
+  photographer: Kindel Media
+  photographerUrl: https://www.pexels.com/@kindelmedia
+  sourceUrl: https://www.pexels.com/photo/a-close-up-shot-of-a-graph-on-a-paper-7054368/
+  source: Pexels
+h1: How Does Your Agency's Gross Profit Margin Compare to Industry Benchmarks by Agency Type?
+summary: Gross profit margin tells you if your agency is pricing right and managing costs well. But what counts as good depends entirely on your agency type. Here are the benchmarks for digital, creative, PR, recruitment, and web design agencies, plus what to do if your margin is below average.
+schema: ''
 faqs:
-  - question: "What is the average gross profit margin for a UK agency?"
-    answer: "There is no single average because margins vary significantly by agency type. Digital agencies typically sit between 45% and 60%, creative agencies between 50% and 65%, PR agencies between 55% and 70%, and recruitment agencies between 70% and 85%. Compare yourself to your specific agency type, not a generic figure."
-  - question: "Should I include my own salary in direct costs?"
-    answer: "No. Your salary as the founder is an overhead, not a direct cost. Direct costs are the people and resources that deliver the client work. Your time running the business is not a direct cost of delivering a specific project. If you put your salary in direct costs, you will understate your gross margin and make it harder to compare against benchmarks."
-  - question: "How often should I calculate my gross profit margin?"
-    answer: "Monthly. You need to see trends before they become problems. If your margin drops by 3% in one month, you want to know why immediately, not at year-end when it is too late to act. Use your accounting software to generate a monthly management accounts pack that includes gross profit margin by service line."
-  - question: "Can a low gross profit margin still mean a profitable agency?"
-    answer: "It is possible but unlikely. A low gross margin means you have less money left to cover your overheads and generate profit. If your overheads are very low, you might still be profitable. But in most cases, a gross margin below 40% for a digital or creative agency means you are running on thin ice. One bad month of revenue and you are in the red."
+- question: What is the average gross profit margin for a UK agency?
+  answer: There is no single average because margins vary significantly by agency type. Digital agencies typically sit between 45% and 60%, creative agencies between 50% and 65%, PR agencies between 55% and 70%, and recruitment agencies between 70% and 85%. Compare yourself to your specific agency type, not a generic figure.
+- question: Should I include my own salary in direct costs?
+  answer: No. Your salary as the founder is an overhead, not a direct cost. Direct costs are the people and resources that deliver the client work. Your time running the business is not a direct cost of delivering a specific project. If you put your salary in direct costs, you will understate your gross margin and make it harder to compare against benchmarks.
+- question: How often should I calculate my gross profit margin?
+  answer: Monthly. You need to see trends before they become problems. If your margin drops by 3% in one month, you want to know why immediately, not at year-end when it is too late to act. Use your accounting software to generate a monthly management accounts pack that includes gross profit margin by service line.
+- question: Can a low gross profit margin still mean a profitable agency?
+  answer: It is possible but unlikely. A low gross margin means you have less money left to cover your overheads and generate profit. If your overheads are very low, you might still be profitable. But in most cases, a gross margin below 40% for a digital or creative agency means you are running on thin ice. One bad month of revenue and you are in the red.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Gross profit margin is revenue minus direct costs; for agencies, direct costs include delivery team salaries, freelancers, and project software, not overheads like rent or marketing.
+- Digital agencies typically achieve 45% to 60% gross margin; below 40% suggests undercharging or low utilisation, while above 65% often indicates offshore teams or high retainer pricing.
+- Creative agencies can reach 50% to 65% gross margin due to less commoditised work, but scope creep from multiple revisions without charging can erode margins quickly.
+- PR and communications agencies benefit from lower direct costs, with typical gross margins of 55% to 70%, as account staff earn less than developers and require less expensive software.
+- Comparing your agency's gross margin to a generic average is meaningless; benchmark against agencies of the same type to assess pricing, team productivity, and growth investment capacity.
 ---
-
 <h2>What Gross Profit Margin Actually Tells You About Your Agency</h2>
 
 <p>Gross profit margin is revenue minus direct costs, expressed as a percentage. For an agency, direct costs are the salaries of the people delivering the work, the freelancers you bring in, and the software tools that run the projects. Rent, marketing, your own salary, and accounting fees are not direct costs. Those are overheads.</p>

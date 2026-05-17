@@ -1,33 +1,40 @@
 ---
-title: "Agency Founder Relocation: How to Structure Your UK Client Contracts for Dubai Tax Residency"
-slug: "agency-founder-relocation-client-contracts-tax-residency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/agency-founder-relocation-client-contracts-tax-residency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Agency Founder Relocation: UK Client Contracts for Dubai"
-metaDescription: "Moving to Dubai? Your UK client contracts can create a UK permanent establishment if not structured correctly. Here is how to renegotiate them to protect"
-altText: "Agency founder reviewing UK client contracts on a laptop in a Dubai office with city skyline visible through window"
-image: "/blog/agency-founder-relocation-client-contracts-tax-residency.jpg"
+title: 'Agency Founder Relocation: How to Structure Your UK Client Contracts for Dubai Tax Residency'
+slug: agency-founder-relocation-client-contracts-tax-residency
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/agency-founder-relocation-client-contracts-tax-residency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Agency Founder Relocation: UK Client Contracts for Dubai'
+metaDescription: Moving to Dubai? Your UK client contracts can create a UK permanent establishment if not structured correctly. Here is how to renegotiate them to protect
+altText: Agency founder reviewing UK client contracts on a laptop in a Dubai office with city skyline visible through window
+image: /blog/agency-founder-relocation-client-contracts-tax-residency.jpg
 imageCredit:
-  photographer: "Blue Bird"
-  photographerUrl: "https://www.pexels.com/@blue-bird"
-  sourceUrl: "https://www.pexels.com/photo/man-holding-white-box-with-a-woman-holding-throw-pillows-7218211/"
-  source: "Pexels"
-h1: "Agency Founder Relocation: How to Structure Your UK Client Contracts for Dubai Tax Residency"
-summary: "Moving to Dubai while keeping your UK agency clients is a smart tax play, but only if your contracts don't accidentally create a UK permanent establishment. This guide shows you exactly where the traps are and how to renegotiate your client agreements to protect your Dubai tax residency."
-schema: ""
+  photographer: Blue Bird
+  photographerUrl: https://www.pexels.com/@blue-bird
+  sourceUrl: https://www.pexels.com/photo/man-holding-white-box-with-a-woman-holding-throw-pillows-7218211/
+  source: Pexels
+h1: 'Agency Founder Relocation: How to Structure Your UK Client Contracts for Dubai Tax Residency'
+summary: Moving to Dubai while keeping your UK agency clients is a smart tax play, but only if your contracts don't accidentally create a UK permanent establishment. This guide shows you exactly where the traps are and how to renegotiate your client agreements to protect your Dubai tax residency.
+schema: ''
 faqs:
-  - question: "Can I keep my UK company running while I live in Dubai?"
-    answer: "Technically yes, but it creates significant risk. HMRC can argue your UK company is a permanent establishment of your Dubai entity, or that your Dubai company is a sham. If you keep the UK company, make sure it is a genuinely separate legal entity with its own contracts, bank account, and management. Do not commingle operations. Most agency founders are better off closing the UK company or putting it into dormancy."
-  - question: "What happens if a client refuses to change the contract?"
-    answer: "You have three options. Run that specific contract through your UK company and pay UK corporation tax on that revenue. Subcontract the work from your Dubai company to a UK-based freelancer or agency. Or let the contract expire and do not renew. The cleanest solution depends on the revenue size and your long-term plans for that client relationship."
-  - question: "How many days can I spend in the UK without losing Dubai tax residency?"
-    answer: "Under the Statutory Residence Test, you are automatically non-resident if you spend fewer than 16 days in the UK per tax year. Between 16 and 90 days, it depends on your UK ties (work, family, accommodation). Above 90 days, you are likely UK resident. Your client contracts should not require more than 30 UK days per year to give you a safe buffer."
-  - question: "Do I need a physical office in Dubai to claim tax residency?"
-    answer: "Yes, for substance reasons. A virtual desk or co-working membership is not enough if HMRC challenges you. You need a physical office, a local bank account, and ideally local staff or contractors. The DIFC offers flexible licensing for agency founders, but you need genuine business substance, not just a mailbox. Your contracts should reference your Dubai office address as the place of performance."
+- question: Can I keep my UK company running while I live in Dubai?
+  answer: Technically yes, but it creates significant risk. HMRC can argue your UK company is a permanent establishment of your Dubai entity, or that your Dubai company is a sham. If you keep the UK company, make sure it is a genuinely separate legal entity with its own contracts, bank account, and management. Do not commingle operations. Most agency founders are better off closing the UK company or putting it into dormancy.
+- question: What happens if a client refuses to change the contract?
+  answer: You have three options. Run that specific contract through your UK company and pay UK corporation tax on that revenue. Subcontract the work from your Dubai company to a UK-based freelancer or agency. Or let the contract expire and do not renew. The cleanest solution depends on the revenue size and your long-term plans for that client relationship.
+- question: How many days can I spend in the UK without losing Dubai tax residency?
+  answer: Under the Statutory Residence Test, you are automatically non-resident if you spend fewer than 16 days in the UK per tax year. Between 16 and 90 days, it depends on your UK ties (work, family, accommodation). Above 90 days, you are likely UK resident. Your client contracts should not require more than 30 UK days per year to give you a safe buffer.
+- question: Do I need a physical office in Dubai to claim tax residency?
+  answer: Yes, for substance reasons. A virtual desk or co-working membership is not enough if HMRC challenges you. You need a physical office, a local bank account, and ideally local staff or contractors. The DIFC offers flexible licensing for agency founders, but you need genuine business substance, not just a mailbox. Your contracts should reference your Dubai office address as the place of performance.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- If your UK client contract says services are performed at a UK address, HMRC can treat your Dubai company as having a UK permanent establishment.
+- Replace 'place of performance' clauses referencing a UK office with neutral language specifying remote delivery from your DIFC registered office.
+- Renegotiate mandatory in-person meeting clauses to video calls, or cap physical UK meetings at four per year and label them 'occasional'.
+- Governing law can remain UK law, but remove any contract references to UK-based management or decision-making to protect your Dubai tax residency.
+- A UK permanent establishment means your Dubai company pays UK corporation tax at 19% or 25% on profits from those UK clients, defeating the purpose of relocating.
 ---
-
 <p>You have made the decision to relocate to Dubai. The tax position is straightforward: zero per cent personal income tax, zero per cent capital gains tax, and no corporation tax for most agency structures. But here is the problem most agency founders miss. Your existing UK client contracts, the ones you signed while you were UK resident, can destroy your Dubai tax residency if you do not restructure them properly.</p>
 
 <p>HMRC does not care where you sleep at night if your contracts create a UK permanent establishment. And a permanent establishment means your Dubai company pays UK corporation tax on the profits generated from those UK clients. That defeats the entire purpose of the move.</p>

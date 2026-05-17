@@ -1,33 +1,40 @@
 ---
-title: "Custom Software vs Off-the-Shelf: The R&D Line for Agencies"
-slug: "custom-software-vs-off-the-shelf-rd-line-for-agencies"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/custom-software-vs-off-the-shelf-rd-line-for-agencies"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Custom Software R&D Qualifying Agency: The Line for UK"
-metaDescription: "Building custom software for your agency? We explain where HMRC draws the line for R&D tax credits. Real examples and what qualifies."
-altText: "Two agency founders reviewing custom software code on a monitor in a modern UK office"
-image: "/blog/custom-software-vs-off-the-shelf-rd-line-for-agencies.jpg"
+title: 'Custom Software vs Off-the-Shelf: The R&D Line for Agencies'
+slug: custom-software-vs-off-the-shelf-rd-line-for-agencies
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/custom-software-vs-off-the-shelf-rd-line-for-agencies
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'Custom Software R&D Qualifying Agency: The Line for UK'
+metaDescription: Building custom software for your agency? We explain where HMRC draws the line for R&D tax credits. Real examples and what qualifies.
+altText: Two agency founders reviewing custom software code on a monitor in a modern UK office
+image: /blog/custom-software-vs-off-the-shelf-rd-line-for-agencies.jpg
 imageCredit:
-  photographer: "Antonio Batinić"
-  photographerUrl: "https://www.pexels.com/@antonio-batinic-2573434"
-  sourceUrl: "https://www.pexels.com/photo/black-screen-with-code-4164418/"
-  source: "Pexels"
-h1: "Custom Software vs Off-the-Shelf: The R&D Line for Agencies"
-summary: "If your agency builds custom software, you might qualify for R&D tax credits. But HMRC draws a clear line between genuine innovation and routine development. Here's where it sits for agency founders."
-schema: ""
+  photographer: Antonio Batinić
+  photographerUrl: https://www.pexels.com/@antonio-batinic-2573434
+  sourceUrl: https://www.pexels.com/photo/black-screen-with-code-4164418/
+  source: Pexels
+h1: 'Custom Software vs Off-the-Shelf: The R&D Line for Agencies'
+summary: If your agency builds custom software, you might qualify for R&D tax credits. But HMRC draws a clear line between genuine innovation and routine development. Here's where it sits for agency founders.
+schema: ''
 faqs:
-  - question: "Can a marketing agency claim R&D tax credits for building custom software?"
-    answer: "Yes, but only if the software development involved genuine technological uncertainty. Building a standard marketing automation tool or CRM does not qualify. Building a novel machine learning model that solves a technical problem no one has solved before — that can qualify. The test is the nature of the technical challenge, not the industry you work in."
-  - question: "What documentation do I need for an R&D tax credit claim as an agency?"
-    answer: "You need a clear project description showing the technological uncertainty, evidence of experimentation (what you tried and what failed), time records for staff working on the R&D project, and cost records for salaries, subcontractors, and software. Set up a separate project in Xero, QuickBooks, or FreeAgent to track R&D costs separately from routine client work."
-  - question: "Does customising off-the-shelf software qualify for R&D tax credits?"
-    answer: "No. Configuring existing software, adding plugins, or writing integration scripts does not qualify. The technological uncertainty was resolved by the original developer. Even extensive customisation of tools like Salesforce, HubSpot, or Monday.com is not R&D. Only genuinely novel technical development qualifies."
-  - question: "How much tax can my agency save by claiming R&D tax credits?"
-    answer: "For an SME agency, qualifying expenditure gets an enhanced deduction of 186%. If you spend £63,400 on qualifying R&D work, the deduction is £117,924. At 19% corporation tax, that saves £22,405. If your agency is loss-making, you can surrender the loss for a cash credit of up to 14.5% of qualifying expenditure. The actual saving depends on your specific costs and tax position."
+- question: Can a marketing agency claim R&D tax credits for building custom software?
+  answer: Yes, but only if the software development involved genuine technological uncertainty. Building a standard marketing automation tool or CRM does not qualify. Building a novel machine learning model that solves a technical problem no one has solved before — that can qualify. The test is the nature of the technical challenge, not the industry you work in.
+- question: What documentation do I need for an R&D tax credit claim as an agency?
+  answer: You need a clear project description showing the technological uncertainty, evidence of experimentation (what you tried and what failed), time records for staff working on the R&D project, and cost records for salaries, subcontractors, and software. Set up a separate project in Xero, QuickBooks, or FreeAgent to track R&D costs separately from routine client work.
+- question: Does customising off-the-shelf software qualify for R&D tax credits?
+  answer: No. Configuring existing software, adding plugins, or writing integration scripts does not qualify. The technological uncertainty was resolved by the original developer. Even extensive customisation of tools like Salesforce, HubSpot, or Monday.com is not R&D. Only genuinely novel technical development qualifies.
+- question: How much tax can my agency save by claiming R&D tax credits?
+  answer: For an SME agency, qualifying expenditure gets an enhanced deduction of 186%. If you spend £63,400 on qualifying R&D work, the deduction is £117,924. At 19% corporation tax, that saves £22,405. If your agency is loss-making, you can surrender the loss for a cash credit of up to 14.5% of qualifying expenditure. The actual saving depends on your specific costs and tax position.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- HMRC's five-part R&D test requires a project to seek an advance in science or technology and overcome a scientific or technological uncertainty.
+- Building a standard CRM or website using off-the-shelf components does not qualify for R&D tax credits, even if complex.
+- Custom software projects qualify only if the technical challenges were unknown at the start and required experimentation to solve.
+- Configuring or customising off-the-shelf software like Salesforce or Zapier almost never qualifies as R&D for HMRC.
+- Agencies can claim R&D for novel work such as developing a custom machine learning model or computer vision system with unresolved technical uncertainties.
 ---
-
 <p>If your agency builds custom software, you have probably wondered whether the time and cost qualifies for R&D tax credits. The short answer is: it depends on what you are building and why.</p>
 
 <p>HMRC's R&D rules are specific about what counts as qualifying development. Building a standard CRM for a client using off-the-shelf components does not qualify. Building a novel image recognition system that solves a technical problem no one has solved before — that might. The difference comes down to the nature of the work, not the industry you are in.</p>

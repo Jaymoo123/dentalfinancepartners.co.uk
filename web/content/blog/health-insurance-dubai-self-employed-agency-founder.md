@@ -1,33 +1,40 @@
 ---
-title: "How to Get Health Insurance in Dubai as a Self-Employed Agency Founder"
-slug: "health-insurance-dubai-self-employed-agency-founder"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/health-insurance-dubai-self-employed-agency-founder"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Health Insurance Dubai Self-Employed: A Guide for Agency"
-metaDescription: "Health insurance is mandatory for your UAE visa. Here is what self-employed agency founders need to know about plans, costs, and cover in Dubai."
-altText: "Agency founder reviewing health insurance documents in a modern Dubai office with a view of the city skyline"
-image: "/blog/health-insurance-dubai-self-employed-agency-founder.jpg"
+title: How to Get Health Insurance in Dubai as a Self-Employed Agency Founder
+slug: health-insurance-dubai-self-employed-agency-founder
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/health-insurance-dubai-self-employed-agency-founder
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Health Insurance Dubai Self-Employed: A Guide for Agency'
+metaDescription: Health insurance is mandatory for your UAE visa. Here is what self-employed agency founders need to know about plans, costs, and cover in Dubai.
+altText: Agency founder reviewing health insurance documents in a modern Dubai office with a view of the city skyline
+image: /blog/health-insurance-dubai-self-employed-agency-founder.jpg
 imageCredit:
-  photographer: "Leeloo The First"
-  photographerUrl: "https://www.pexels.com/@leeloothefirst"
-  sourceUrl: "https://www.pexels.com/photo/scrabble-pieces-and-a-planner-7163938/"
-  source: "Pexels"
-h1: "How to Get Health Insurance in Dubai as a Self-Employed Agency Founder"
-summary: "Health insurance is mandatory for your UAE residence visa. Here is what self-employed agency founders need to know about the Essential Benefits Plan, comprehensive cover, costs by age, and what to watch for when choosing a policy in Dubai."
-schema: ""
+  photographer: Leeloo The First
+  photographerUrl: https://www.pexels.com/@leeloothefirst
+  sourceUrl: https://www.pexels.com/photo/scrabble-pieces-and-a-planner-7163938/
+  source: Pexels
+h1: How to Get Health Insurance in Dubai as a Self-Employed Agency Founder
+summary: Health insurance is mandatory for your UAE residence visa. Here is what self-employed agency founders need to know about the Essential Benefits Plan, comprehensive cover, costs by age, and what to watch for when choosing a policy in Dubai.
+schema: ''
 faqs:
-  - question: "Is health insurance mandatory for a self-employed visa in Dubai?"
-    answer: "Yes. Health insurance is mandatory for all UAE residence visas, including self-employed and freelance visas. You must provide proof of valid DHA-compliant cover at the visa application stage. Without it, your visa will not be issued."
-  - question: "What is the cheapest health insurance for a self-employed person in Dubai?"
-    answer: "The cheapest option is the Essential Benefits Plan (EBP), which costs around AED 700 to AED 1,500 per year depending on your age. It meets the minimum legal requirement but has a low coverage limit of AED 150,000 and a restricted hospital network. Most agency founders find it insufficient for their needs."
-  - question: "Can my UK company pay for my Dubai health insurance?"
-    answer: "Yes, your UK company can pay for your Dubai health insurance as a business expense. The premium is deductible against UK corporation tax, provided the insurance is for a genuine business purpose. However, if you are a director and the policy covers you personally, it may be treated as a benefit in kind. Check with your accountant before doing this."
-  - question: "How much does comprehensive health insurance cost in Dubai for a 40-year-old agency founder?"
-    answer: "For a 40-year-old agency founder, a comprehensive health insurance plan in Dubai typically costs between AED 10,000 and AED 18,000 per year (£2,200 to £3,960). The exact premium depends on the insurer, the plan features (network, outpatient cover, international cover), and your health history. A broker can give you specific quotes."
+- question: Is health insurance mandatory for a self-employed visa in Dubai?
+  answer: Yes. Health insurance is mandatory for all UAE residence visas, including self-employed and freelance visas. You must provide proof of valid DHA-compliant cover at the visa application stage. Without it, your visa will not be issued.
+- question: What is the cheapest health insurance for a self-employed person in Dubai?
+  answer: The cheapest option is the Essential Benefits Plan (EBP), which costs around AED 700 to AED 1,500 per year depending on your age. It meets the minimum legal requirement but has a low coverage limit of AED 150,000 and a restricted hospital network. Most agency founders find it insufficient for their needs.
+- question: Can my UK company pay for my Dubai health insurance?
+  answer: Yes, your UK company can pay for your Dubai health insurance as a business expense. The premium is deductible against UK corporation tax, provided the insurance is for a genuine business purpose. However, if you are a director and the policy covers you personally, it may be treated as a benefit in kind. Check with your accountant before doing this.
+- question: How much does comprehensive health insurance cost in Dubai for a 40-year-old agency founder?
+  answer: For a 40-year-old agency founder, a comprehensive health insurance plan in Dubai typically costs between AED 10,000 and AED 18,000 per year (£2,200 to £3,960). The exact premium depends on the insurer, the plan features (network, outpatient cover, international cover), and your health history. A broker can give you specific quotes.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Health insurance is mandatory for your UAE residence visa and must be arranged before you arrive.
+- The Essential Benefits Plan costs AED 700–1,500 annually but offers limited cover and a restricted hospital network.
+- Comprehensive plans cost AED 5,000–25,000 per year and include wider networks, higher limits, and international cover.
+- Age is the biggest factor in your premium, with older founders paying significantly more for the same plan.
+- If you travel between Dubai and London regularly, choose a comprehensive plan with international cover included.
 ---
-
 <p>If you are a self-employed agency founder moving to Dubai, health insurance is not optional. It is a legal requirement for your residence visa. You cannot complete the visa process without proof of valid cover.</p>
 
 <p>This is the first thing most founders get wrong. They assume they can sort it out after they arrive, or that the basic cover provided by the visa processing centre is enough. Neither is true.</p>

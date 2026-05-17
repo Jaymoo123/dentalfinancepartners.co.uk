@@ -1,33 +1,40 @@
 ---
-title: "How to Use Your Agency Accountant for Strategic Financial Planning Beyond Compliance"
-slug: "agency-accountant-strategic-financial-planning"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/agency-accountant-strategic-financial-planning"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Accountant Services"
-metaTitle: "Agency Accountant Services for Strategic Financial Planning"
-metaDescription: "Most agency founders only use their accountant for compliance. Here's how to get strategic financial planning that drives growth, profitability, and exit"
-altText: "Agency founder reviewing financial forecasts with an ICAEW qualified accountant in a modern UK office"
-image: "/blog/agency-accountant-strategic-financial-planning.jpg"
+title: How to Use Your Agency Accountant for Strategic Financial Planning Beyond Compliance
+slug: agency-accountant-strategic-financial-planning
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/agency-accountant-strategic-financial-planning
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Accountant Services
+metaTitle: Agency Accountant Services for Strategic Financial Planning
+metaDescription: Most agency founders only use their accountant for compliance. Here's how to get strategic financial planning that drives growth, profitability, and exit
+altText: Agency founder reviewing financial forecasts with an ICAEW qualified accountant in a modern UK office
+image: /blog/agency-accountant-strategic-financial-planning.jpg
 imageCredit:
-  photographer: "Artem Podrez"
-  photographerUrl: "https://www.pexels.com/@artempodrez"
-  sourceUrl: "https://www.pexels.com/photo/a-person-holding-black-pen-writing-on-white-paper-6779565/"
-  source: "Pexels"
-h1: "How to Use Your Agency Accountant for Strategic Financial Planning Beyond Compliance"
-summary: "Most agency founders only use their accountant for year-end filings and tax returns. Here's how to get strategic financial planning that drives growth, profitability, and exit value — from cash flow forecasting to exit planning."
-schema: ""
+  photographer: Artem Podrez
+  photographerUrl: https://www.pexels.com/@artempodrez
+  sourceUrl: https://www.pexels.com/photo/a-person-holding-black-pen-writing-on-white-paper-6779565/
+  source: Pexels
+h1: How to Use Your Agency Accountant for Strategic Financial Planning Beyond Compliance
+summary: Most agency founders only use their accountant for year-end filings and tax returns. Here's how to get strategic financial planning that drives growth, profitability, and exit value — from cash flow forecasting to exit planning.
+schema: ''
 faqs:
-  - question: "What's the difference between a compliance accountant and a strategic accountant?"
-    answer: "A compliance accountant files your returns, processes payroll, and keeps you HMRC-compliant. A strategic accountant does all that plus cash flow forecasting, profitability analysis, tax planning, and exit strategy. The compliance role is reactive. The strategic role is proactive. Most agency founders need both, but only get the first."
-  - question: "How much more does a strategic accountant cost than a compliance-only one?"
-    answer: "Expect to pay 50-100% more for strategic services. A compliance-only retainer for a £700k agency might be £1,500-£2,500 per year. A strategic relationship covering quarterly reviews, management accounts, and planning might be £4,000-£8,000 per year. The tax savings and cash flow improvements typically cover the difference several times over."
-  - question: "Do I need to change accountants to get strategic services?"
-    answer: "Not necessarily. Ask your current accountant if they offer monthly management accounts, cash flow forecasting, and quarterly planning sessions. If they say yes, agree a scope and fee. If they say no, or seem reluctant, it's worth looking for a specialist. Agency-focused accountants are more likely to understand your specific needs."
-  - question: "What financial reports should my strategic accountant provide each month?"
-    answer: "At minimum: a profit and loss statement (actual vs budget), a balance sheet, a cash flow forecast (12-week rolling), and a debtor days report. For agencies specifically, add a gross margin analysis by client and service line, plus a utilisation rate report. If your accountant doesn't provide these, you're not getting strategic value."
+- question: What's the difference between a compliance accountant and a strategic accountant?
+  answer: A compliance accountant files your returns, processes payroll, and keeps you HMRC-compliant. A strategic accountant does all that plus cash flow forecasting, profitability analysis, tax planning, and exit strategy. The compliance role is reactive. The strategic role is proactive. Most agency founders need both, but only get the first.
+- question: How much more does a strategic accountant cost than a compliance-only one?
+  answer: Expect to pay 50-100% more for strategic services. A compliance-only retainer for a £700k agency might be £1,500-£2,500 per year. A strategic relationship covering quarterly reviews, management accounts, and planning might be £4,000-£8,000 per year. The tax savings and cash flow improvements typically cover the difference several times over.
+- question: Do I need to change accountants to get strategic services?
+  answer: Not necessarily. Ask your current accountant if they offer monthly management accounts, cash flow forecasting, and quarterly planning sessions. If they say yes, agree a scope and fee. If they say no, or seem reluctant, it's worth looking for a specialist. Agency-focused accountants are more likely to understand your specific needs.
+- question: What financial reports should my strategic accountant provide each month?
+  answer: 'At minimum: a profit and loss statement (actual vs budget), a balance sheet, a cash flow forecast (12-week rolling), and a debtor days report. For agencies specifically, add a gross margin analysis by client and service line, plus a utilisation rate report. If your accountant doesn''t provide these, you''re not getting strategic value.'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A strategic accountant builds a 12-week rolling cash flow forecast to flag cash gaps before they become problems.
+- Profitability analysis by client and service line reveals which clients and services actually generate margin, not just revenue.
+- Tax planning for agency founders includes setting salary at £12,570 and timing dividend extraction to minimise tax.
+- Requesting proactive financial planning from your accountant turns compliance into a growth driver for your agency.
+- Cash flow forecasting models retainer income, project payments, payroll, VAT, and corporation tax to predict shortfalls.
 ---
-
 <p>If you're like most agency founders we meet, you treat your accountant like a compliance machine. You send them your receipts in January. They file your corporation tax return. You pay the bill. Repeat.</p>
 
 <p>That's a waste. A good <a href="/services">agency accountant services</a> provider can do far more than keep you on the right side of HMRC. They can help you build a financially resilient business that grows predictably, pays you properly, and sells for a premium when you're ready to exit.</p>

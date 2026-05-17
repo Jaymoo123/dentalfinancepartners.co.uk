@@ -1,33 +1,40 @@
 ---
-title: "MTD ITSA for Agency Founders: What Changes and When"
-slug: "mtd-itsa-agency-founder-guide"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-itsa-agency-founder-guide"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Making Tax Digital"
-metaTitle: "MTD ITSA Agency Guide: Deadlines, Software, and Next Steps"
-metaDescription: "MTD ITSA starts April 2026 for agency founders earning over £50k. Here’s what changes, what software you need, and how to prepare now."
-altText: "Agency founder reviewing quarterly digital tax records on a laptop in a modern UK office"
-image: "/blog/mtd-itsa-agency-founder-guide.jpg"
+title: 'MTD ITSA for Agency Founders: What Changes and When'
+slug: mtd-itsa-agency-founder-guide
+canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-itsa-agency-founder-guide
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Making Tax Digital
+metaTitle: 'MTD ITSA Agency Guide: Deadlines, Software, and Next Steps'
+metaDescription: MTD ITSA starts April 2026 for agency founders earning over £50k. Here’s what changes, what software you need, and how to prepare now.
+altText: Agency founder reviewing quarterly digital tax records on a laptop in a modern UK office
+image: /blog/mtd-itsa-agency-founder-guide.jpg
 imageCredit:
-  photographer: "Aathif Aarifeen"
-  photographerUrl: "https://www.pexels.com/@aathif"
-  sourceUrl: "https://www.pexels.com/photo/smiling-businessman-sitting-at-desk-with-computer-19747906/"
-  source: "Pexels"
-h1: "MTD ITSA for Agency Founders: What Changes and When"
-summary: "Making Tax Digital for Income Tax Self Assessment (MTD ITSA) is the biggest change to how agency founders report tax since self assessment was introduced. From April 2026, you’ll need to file quarterly updates through MTD-compatible software, not just a once-yearly return. Here’s exactly what it means for your agency."
-schema: ""
+  photographer: Aathif Aarifeen
+  photographerUrl: https://www.pexels.com/@aathif
+  sourceUrl: https://www.pexels.com/photo/smiling-businessman-sitting-at-desk-with-computer-19747906/
+  source: Pexels
+h1: 'MTD ITSA for Agency Founders: What Changes and When'
+summary: Making Tax Digital for Income Tax Self Assessment (MTD ITSA) is the biggest change to how agency founders report tax since self assessment was introduced. From April 2026, you’ll need to file quarterly updates through MTD-compatible software, not just a once-yearly return. Here’s exactly what it means for your agency.
+schema: ''
 faqs:
-  - question: "What is MTD ITSA and does it apply to my agency?"
-    answer: "MTD ITSA is Making Tax Digital for Income Tax Self Assessment. It requires sole traders and partnerships with self-employed income over £50,000 to file quarterly digital updates to HMRC from April 2026. If your agency is a limited company, MTD ITSA does not apply to your director income unless you also have self-employed side earnings above the threshold."
-  - question: "When do I need to start filing quarterly updates?"
-    answer: "If your gross self-employed income exceeds £50,000, you must start from April 2026. The first quarterly update covers 6 April to 5 July 2026 and is due by 5 August 2026. If your income is between £30,000 and £50,000, you start in April 2027. Below £30,000, no date has been confirmed yet."
-  - question: "What software do I need for MTD ITSA?"
-    answer: "You need MTD-compatible accounting software like Xero, QuickBooks, FreeAgent, or Sage. Spreadsheets are allowed only if you use a bridging tool to connect them to HMRC's API. Most agency founders find it simpler to move to proper accounting software rather than relying on spreadsheets with bridging tools."
-  - question: "Will MTD ITSA increase my tax bill?"
-    answer: "No. MTD ITSA changes how you file your tax return, not how much tax you owe. Your tax is still calculated on your actual profit. The quarterly updates are estimates, and you adjust them in the final declaration. However, because you may need to make payments on account more frequently, you should plan your cash flow carefully."
+- question: What is MTD ITSA and does it apply to my agency?
+  answer: MTD ITSA is Making Tax Digital for Income Tax Self Assessment. It requires sole traders and partnerships with self-employed income over £50,000 to file quarterly digital updates to HMRC from April 2026. If your agency is a limited company, MTD ITSA does not apply to your director income unless you also have self-employed side earnings above the threshold.
+- question: When do I need to start filing quarterly updates?
+  answer: If your gross self-employed income exceeds £50,000, you must start from April 2026. The first quarterly update covers 6 April to 5 July 2026 and is due by 5 August 2026. If your income is between £30,000 and £50,000, you start in April 2027. Below £30,000, no date has been confirmed yet.
+- question: What software do I need for MTD ITSA?
+  answer: You need MTD-compatible accounting software like Xero, QuickBooks, FreeAgent, or Sage. Spreadsheets are allowed only if you use a bridging tool to connect them to HMRC's API. Most agency founders find it simpler to move to proper accounting software rather than relying on spreadsheets with bridging tools.
+- question: Will MTD ITSA increase my tax bill?
+  answer: No. MTD ITSA changes how you file your tax return, not how much tax you owe. Your tax is still calculated on your actual profit. The quarterly updates are estimates, and you adjust them in the final declaration. However, because you may need to make payments on account more frequently, you should plan your cash flow carefully.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- From April 2026, sole traders and partnerships with self-employed income over £50,000 must file quarterly MTD ITSA updates via compatible software.
+- Quarterly filing deadlines are 5 August, 5 November, 5 February, and 5 May, with a final declaration due by 31 January.
+- Digital record-keeping is mandatory; spreadsheets are only acceptable if integrated with MTD-compatible software via a bridging tool.
+- Agency founders operating through a limited company are not directly caught by MTD ITSA unless they have separate self-employed income.
+- The income threshold for MTD ITSA is based on gross self-employed or partnership income, not profit after expenses.
 ---
-
 <p>Making Tax Digital for Income Tax Self Assessment (MTD ITSA) arrives in April 2026. If your agency generates more than £50,000 in self-employed or partnership income, you will be required to file quarterly updates through MTD-compatible software rather than a single annual return.</p>
 
 <p>This is not a minor tweak to the filing process. It is a fundamental change in how you report income and expenses to HMRC. For agency founders running limited companies, the impact is indirect but still real. For sole traders and partnerships, it is immediate and mandatory.</p>

@@ -1,33 +1,40 @@
 ---
-title: "Dividend Vouchers and Board Minutes for Your Agency: A Practical Guide"
-slug: "dividend-vouchers-board-minutes-agency-guide"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/dividend-vouchers-board-minutes-agency-guide"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Salary and Dividends"
-metaTitle: "Dividend Vouchers & Board Minutes for Your Agency"
-metaDescription: "How to properly document dividend vouchers and board minutes for your agency. Avoid HMRC penalties with correct paperwork. Practical examples for UK"
-altText: "Agency founder reviewing dividend voucher and board minute documents on a desk with a laptop and calculator"
-image: "/blog/dividend-vouchers-board-minutes-agency-guide.jpg"
+title: 'Dividend Vouchers and Board Minutes for Your Agency: A Practical Guide'
+slug: dividend-vouchers-board-minutes-agency-guide
+canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/dividend-vouchers-board-minutes-agency-guide
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Salary and Dividends
+metaTitle: Dividend Vouchers & Board Minutes for Your Agency
+metaDescription: How to properly document dividend vouchers and board minutes for your agency. Avoid HMRC penalties with correct paperwork. Practical examples for UK
+altText: Agency founder reviewing dividend voucher and board minute documents on a desk with a laptop and calculator
+image: /blog/dividend-vouchers-board-minutes-agency-guide.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/bonus-word-on-scrabble-letter-tiles-30945616/"
-  source: "Pexels"
-h1: "Dividend Vouchers and Board Minutes for Your Agency: What You Need to Know"
-summary: "A practical guide to the paperwork behind paying yourself dividends from your agency. Covers dividend vouchers, board minutes, and the common mistakes that trigger HMRC enquiries."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/bonus-word-on-scrabble-letter-tiles-30945616/
+  source: Pexels
+h1: 'Dividend Vouchers and Board Minutes for Your Agency: What You Need to Know'
+summary: A practical guide to the paperwork behind paying yourself dividends from your agency. Covers dividend vouchers, board minutes, and the common mistakes that trigger HMRC enquiries.
+schema: ''
 faqs:
-  - question: "Do I need a dividend voucher for every dividend payment?"
-    answer: "Yes. Each separate dividend payment needs its own voucher. If you pay quarterly dividends, you need four vouchers per year. Each voucher must show the date, amount, recipient, and be signed by a director. A single voucher covering multiple payments is not sufficient."
-  - question: "Can I backdate dividend vouchers if HMRC asks for them?"
-    answer: "No. Backdating documents is dishonest and can be treated as fraud. HMRC can often detect backdated documents through inconsistencies in dates, signatures, or document formatting. If you have missed creating vouchers, speak to your accountant about how to handle the situation properly."
-  - question: "What happens if I pay a dividend without enough profit in the company?"
-    answer: "That is an illegal dividend. HMRC can treat it as a director's loan, which triggers a 33.75% S455 tax charge if not repaid within 9 months of the year end. You may also face penalties. Always check your management accounts or ask your accountant before declaring a dividend."
-  - question: "Do I need board minutes if I am the only director and shareholder?"
-    answer: "Yes. Even as a sole director and shareholder, company law requires a formal record of the decision to declare a dividend. The minutes can be brief, but they must exist. They should confirm that the company has sufficient distributable profits and record the resolution to pay the dividend."
+- question: Do I need a dividend voucher for every dividend payment?
+  answer: Yes. Each separate dividend payment needs its own voucher. If you pay quarterly dividends, you need four vouchers per year. Each voucher must show the date, amount, recipient, and be signed by a director. A single voucher covering multiple payments is not sufficient.
+- question: Can I backdate dividend vouchers if HMRC asks for them?
+  answer: No. Backdating documents is dishonest and can be treated as fraud. HMRC can often detect backdated documents through inconsistencies in dates, signatures, or document formatting. If you have missed creating vouchers, speak to your accountant about how to handle the situation properly.
+- question: What happens if I pay a dividend without enough profit in the company?
+  answer: That is an illegal dividend. HMRC can treat it as a director's loan, which triggers a 33.75% S455 tax charge if not repaid within 9 months of the year end. You may also face penalties. Always check your management accounts or ask your accountant before declaring a dividend.
+- question: Do I need board minutes if I am the only director and shareholder?
+  answer: Yes. Even as a sole director and shareholder, company law requires a formal record of the decision to declare a dividend. The minutes can be brief, but they must exist. They should confirm that the company has sufficient distributable profits and record the resolution to pay the dividend.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Dividends require a dated and signed dividend voucher and board minutes; without both, HMRC can reclassify dividends as salary, triggering NI and higher tax.
+- A dividend voucher must include the company name, declaration and payment dates, shareholder name, total amount, and a director's signature.
+- For a typical agency paying quarterly dividends, you need four separate vouchers per year, each filed and ready for HMRC inspection.
+- Backdating dividend vouchers after an HMRC enquiry is technically fraud and easily detected; always complete paperwork at the time of payment.
+- Board minutes must formally record the directors' decision to declare a dividend, showing the company had sufficient distributable profits.
 ---
-
 <p>If you run your agency through a limited company, you almost certainly pay yourself a combination of salary and dividends. It is the standard tax-efficient model for agency founders. And for good reason: dividends avoid National Insurance and, for most founders, come out at a lower tax rate than salary.</p>
 
 <p>But there is a catch. Dividends require paperwork. Not complex paperwork. But specific, dated, signed paperwork that HMRC will ask for if they open an enquiry. And if you cannot produce it, HMRC can reclassify your dividends as salary, which means you owe the tax and National Insurance you thought you had saved.</p>

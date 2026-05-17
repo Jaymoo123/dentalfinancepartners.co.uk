@@ -1,33 +1,40 @@
 ---
-title: "Dubai Agency Founder: The Currency Conversion Cost That Eats 3% of Every UK Client Invoice"
-slug: "dubai-agency-founder-currency-conversion-cost"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-agency-founder-currency-conversion-cost"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Dubai Agency Founder: The Currency Conversion Cost Eating"
-metaDescription: "Receiving GBP into a UAE AED account incurs conversion fees and poor rates. That silent 3-5% hit could cost you £9,000 per £300,000 of revenue. Here"
-altText: "Dubai agency founder reviewing a GBP invoice conversion to AED on a laptop in a Dubai office"
-image: "/blog/dubai-agency-founder-currency-conversion-cost.jpg"
+title: 'Dubai Agency Founder: The Currency Conversion Cost That Eats 3% of Every UK Client Invoice'
+slug: dubai-agency-founder-currency-conversion-cost
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-agency-founder-currency-conversion-cost
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Dubai Agency Founder: The Currency Conversion Cost Eating'
+metaDescription: Receiving GBP into a UAE AED account incurs conversion fees and poor rates. That silent 3-5% hit could cost you £9,000 per £300,000 of revenue. Here
+altText: Dubai agency founder reviewing a GBP invoice conversion to AED on a laptop in a Dubai office
+image: /blog/dubai-agency-founder-currency-conversion-cost.jpg
 imageCredit:
-  photographer: "Mathias Reding"
-  photographerUrl: "https://www.pexels.com/@matreding"
-  sourceUrl: "https://www.pexels.com/photo/man-exchanging-money-12008048/"
-  source: "Pexels"
-h1: "Dubai Agency Founder: The Currency Conversion Cost That Eats 3% of Every UK Client Invoice"
-summary: "If you are a Dubai agency founder billing UK clients in pounds, the currency conversion from GBP to AED is quietly costing you 3-5% of every invoice. This post breaks down where the money goes, what it costs you over a year, and three practical ways to reduce or eliminate the hit."
-schema: ""
+  photographer: Mathias Reding
+  photographerUrl: https://www.pexels.com/@matreding
+  sourceUrl: https://www.pexels.com/photo/man-exchanging-money-12008048/
+  source: Pexels
+h1: 'Dubai Agency Founder: The Currency Conversion Cost That Eats 3% of Every UK Client Invoice'
+summary: If you are a Dubai agency founder billing UK clients in pounds, the currency conversion from GBP to AED is quietly costing you 3-5% of every invoice. This post breaks down where the money goes, what it costs you over a year, and three practical ways to reduce or eliminate the hit.
+schema: ''
 faqs:
-  - question: "What is the average currency conversion cost when receiving GBP into a UAE AED account?"
-    answer: "The total cost typically ranges from 2% to 5%, depending on your provider. The fee is usually small (£5-15 per transfer), but the exchange rate spread is where the real cost sits. Most standard bank transfers and consumer services give you a rate that is 2-3% worse than the mid-market rate. On a £15,000 invoice, that is £300-£450 lost per transfer."
-  - question: "Can I avoid currency conversion entirely as a Dubai agency founder?"
-    answer: "Yes, if you can bill your UK clients in AED or USD at a fixed rate. Some clients will agree, especially if you offer a small discount. Alternatively, open a UK GBP account in your UAE company name, receive invoices in pounds, and only convert to AED when you need to move money to Dubai. If you have UK expenses, pay those from the GBP account without converting at all."
-  - question: "Is a currency broker better than Wise or a bank for GBP to AED transfers?"
-    answer: "For transfers over £10,000 per month, a currency broker like OFX, TorFX, or Moneycorp typically offers a rate within 0.2-0.5% of the mid-market rate. Wise is transparent but its rate is usually around 0.5-1% off mid-market. Banks are often the worst, with spreads of 2-4%. A broker can save you £500-£1,000 per month on typical agency volumes."
-  - question: "Does a UK holding company reduce the currency conversion cost?"
-    answer: "Yes. If you route all UK client payments into a UK entity, pay UK expenses from that entity, and only transfer the net profit to Dubai, you convert a much smaller amount. On a 20% net profit margin, you reduce conversion volume by 80%. This structure requires proper transfer pricing and tax advice in both the UK and UAE, but it is worth exploring for agencies billing over £500k per year."
+- question: What is the average currency conversion cost when receiving GBP into a UAE AED account?
+  answer: The total cost typically ranges from 2% to 5%, depending on your provider. The fee is usually small (£5-15 per transfer), but the exchange rate spread is where the real cost sits. Most standard bank transfers and consumer services give you a rate that is 2-3% worse than the mid-market rate. On a £15,000 invoice, that is £300-£450 lost per transfer.
+- question: Can I avoid currency conversion entirely as a Dubai agency founder?
+  answer: Yes, if you can bill your UK clients in AED or USD at a fixed rate. Some clients will agree, especially if you offer a small discount. Alternatively, open a UK GBP account in your UAE company name, receive invoices in pounds, and only convert to AED when you need to move money to Dubai. If you have UK expenses, pay those from the GBP account without converting at all.
+- question: Is a currency broker better than Wise or a bank for GBP to AED transfers?
+  answer: For transfers over £10,000 per month, a currency broker like OFX, TorFX, or Moneycorp typically offers a rate within 0.2-0.5% of the mid-market rate. Wise is transparent but its rate is usually around 0.5-1% off mid-market. Banks are often the worst, with spreads of 2-4%. A broker can save you £500-£1,000 per month on typical agency volumes.
+- question: Does a UK holding company reduce the currency conversion cost?
+  answer: Yes. If you route all UK client payments into a UK entity, pay UK expenses from that entity, and only transfer the net profit to Dubai, you convert a much smaller amount. On a 20% net profit margin, you reduce conversion volume by 80%. This structure requires proper transfer pricing and tax advice in both the UK and UAE, but it is worth exploring for agencies billing over £500k per year.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Currency conversion from GBP to AED typically costs 3–5% of every invoice due to exchange rate spread and transfer fees.
+- On £300,000 annual revenue, the conversion cost can reach £6,000 to £12,000 per year.
+- A 25-person agency billing £1.2M annually loses approximately £36,000 per year to currency conversion.
+- The exchange rate spread, not the transfer fee, accounts for the majority of the cost—often 1–3% above the mid-market rate.
+- Using standard banking or mainstream transfer services without optimisation results in a 3% reduction in gross margin.
 ---
-
 <p>If you are a Dubai agency founder billing UK clients in pounds, you are losing money on every single invoice. Not through bad rates or scope creep. Through the currency conversion itself.</p>
 
 <p>The typical bank or transfer service charges 2-4% in spread and fees when you convert GBP to AED. On a £300,000 annual revenue, that is £6,000 to £12,000 gone. For a 12-person agency billing £800k, the hit is £16,000 to £32,000 per year. That is a full junior salary, or a significant chunk of your margin.</p>

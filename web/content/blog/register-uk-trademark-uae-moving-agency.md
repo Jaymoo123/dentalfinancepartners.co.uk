@@ -1,33 +1,40 @@
 ---
-title: "How to Register Your Existing UK Agency Trademark in the UAE After Moving"
-slug: "register-uk-trademark-uae-moving-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/register-uk-trademark-uae-moving-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Register UK Trademark in UAE: Steps for Agency Founders"
-metaDescription: "Protect your agency brand in the UAE after relocating. We explain the separate trademark registration process, local requirements, and timing for UK"
-altText: "Agency founder reviewing trademark registration documents at a desk in a Dubai office"
-image: "/blog/register-uk-trademark-uae-moving-agency.jpg"
+title: How to Register Your Existing UK Agency Trademark in the UAE After Moving
+slug: register-uk-trademark-uae-moving-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/register-uk-trademark-uae-moving-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Register UK Trademark in UAE: Steps for Agency Founders'
+metaDescription: Protect your agency brand in the UAE after relocating. We explain the separate trademark registration process, local requirements, and timing for UK
+altText: Agency founder reviewing trademark registration documents at a desk in a Dubai office
+image: /blog/register-uk-trademark-uae-moving-agency.jpg
 imageCredit:
-  photographer: "ubeyonroad"
-  photographerUrl: "https://www.pexels.com/@ubeyonroad-926249862"
-  sourceUrl: "https://www.pexels.com/photo/iconic-london-buses-at-night-in-traffic-34093327/"
-  source: "Pexels"
-h1: "How to Register Your Existing UK Agency Trademark in the UAE After Moving"
-summary: "Moving your agency from the UK to the UAE means your brand name needs protection in a new jurisdiction. Your UK trademark does not automatically cover the UAE. Here is what you need to know to register your existing trademark locally."
-schema: ""
+  photographer: ubeyonroad
+  photographerUrl: https://www.pexels.com/@ubeyonroad-926249862
+  sourceUrl: https://www.pexels.com/photo/iconic-london-buses-at-night-in-traffic-34093327/
+  source: Pexels
+h1: How to Register Your Existing UK Agency Trademark in the UAE After Moving
+summary: Moving your agency from the UK to the UAE means your brand name needs protection in a new jurisdiction. Your UK trademark does not automatically cover the UAE. Here is what you need to know to register your existing trademark locally.
+schema: ''
 faqs:
-  - question: "Can I use my UK trademark registration to file in the UAE?"
-    answer: "No. A UK trademark only gives you protection in the UK. To protect your brand in the UAE, you must file a separate application with the UAE Ministry of Economy. If your UK application was filed less than six months ago, you can claim priority under the Paris Convention, which gives you the same filing date in the UAE as your UK date. After six months, that priority window closes."
-  - question: "How long does it take to register a UK trademark in the UAE?"
-    answer: "The full process from filing to receiving your certificate takes six to nine months in most cases. This includes examination by the Ministry (2-4 months), publication in the Trademarks Journal (30-day opposition period), and certificate issuance. Filing before you start trading in the UAE is essential because of the first-to-file system."
-  - question: "How much does it cost to register a trademark in the UAE for a UK agency?"
-    answer: "For a single-class application, budget approximately £2,500-£3,000. This includes the clearance search, filing fee, agent fees, POA attestation, publication fee, and registration fee. Each additional class adds roughly £1,400. Compare this to the cost of rebranding if someone registers your name first."
-  - question: "Do I need a UAE trade licence before I can register a trademark?"
-    answer: "Yes. Your trademark application must be filed in the name of your UAE entity, and the application must match the legal name and activity description on your trade licence. If your licence does not include your brand name as a trading name, you may need to amend it before filing. Get your trade licence issued first, then file the trademark application."
+- question: Can I use my UK trademark registration to file in the UAE?
+  answer: No. A UK trademark only gives you protection in the UK. To protect your brand in the UAE, you must file a separate application with the UAE Ministry of Economy. If your UK application was filed less than six months ago, you can claim priority under the Paris Convention, which gives you the same filing date in the UAE as your UK date. After six months, that priority window closes.
+- question: How long does it take to register a UK trademark in the UAE?
+  answer: The full process from filing to receiving your certificate takes six to nine months in most cases. This includes examination by the Ministry (2-4 months), publication in the Trademarks Journal (30-day opposition period), and certificate issuance. Filing before you start trading in the UAE is essential because of the first-to-file system.
+- question: How much does it cost to register a trademark in the UAE for a UK agency?
+  answer: For a single-class application, budget approximately £2,500-£3,000. This includes the clearance search, filing fee, agent fees, POA attestation, publication fee, and registration fee. Each additional class adds roughly £1,400. Compare this to the cost of rebranding if someone registers your name first.
+- question: Do I need a UAE trade licence before I can register a trademark?
+  answer: Yes. Your trademark application must be filed in the name of your UAE entity, and the application must match the legal name and activity description on your trade licence. If your licence does not include your brand name as a trading name, you may need to amend it before filing. Get your trade licence issued first, then file the trademark application.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- UK trademarks are territorial and do not provide protection in the UAE; you must file a separate application with the UAE Ministry of Economy.
+- UAE trademark law operates on a first-to-file basis, so another party could register your brand name before you and force a rebrand.
+- To claim priority from a UK filing, you must apply in the UAE within six months of the UK application date under the Paris Convention.
+- You must use a registered local agent to file a UAE trademark application and provide a notarised and legalised power of attorney.
+- Your UAE trademark application must match the legal name and activity on your trade licence; a clearance search is essential before filing.
 ---
-
 <p>You have built your agency brand in the UK. Your name is recognised. Your logo is on every pitch deck, every invoice, every client email. You have a UK trademark registered with the Intellectual Property Office (IPO).</p>
 
 <p>Now you are moving to Dubai. You have set up a UAE entity. You are signing your first local retainer. And someone asks: is your brand name protected here?</p>

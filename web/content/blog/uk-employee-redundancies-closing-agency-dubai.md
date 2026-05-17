@@ -1,33 +1,40 @@
 ---
-title: "How to Handle UK Employee Redundancies When Closing Your Agency to Move to Dubai"
-slug: "uk-employee-redundancies-closing-agency-dubai"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-employee-redundancies-closing-agency-dubai"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK Employee Redundancies Closing Agency: A Founder's Guide"
-metaDescription: "UK employee redundancies when closing an agency to move to Dubai require statutory notice, consultation, and correct pay. Miss a step and you face"
-altText: "Agency founder reviewing redundancy paperwork in a modern UK office, with a packed box and travel documents visible on the desk"
-image: "/blog/uk-employee-redundancies-closing-agency-dubai.jpg"
+title: How to Handle UK Employee Redundancies When Closing Your Agency to Move to Dubai
+slug: uk-employee-redundancies-closing-agency-dubai
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-employee-redundancies-closing-agency-dubai
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK Employee Redundancies Closing Agency: A Founder''s Guide'
+metaDescription: UK employee redundancies when closing an agency to move to Dubai require statutory notice, consultation, and correct pay. Miss a step and you face
+altText: Agency founder reviewing redundancy paperwork in a modern UK office, with a packed box and travel documents visible on the desk
+image: /blog/uk-employee-redundancies-closing-agency-dubai.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/man-carrying-a-white-box-7581040/"
-  source: "Pexels"
-h1: "How to Handle UK Employee Redundancies When Closing Your Agency to Move to Dubai"
-summary: "Closing your UK agency to move to Dubai? You must follow statutory redundancy rules. This guide covers notice periods, consultation, protective awards, and the exact process to avoid tribunal claims."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/man-carrying-a-white-box-7581040/
+  source: Pexels
+h1: How to Handle UK Employee Redundancies When Closing Your Agency to Move to Dubai
+summary: Closing your UK agency to move to Dubai? You must follow statutory redundancy rules. This guide covers notice periods, consultation, protective awards, and the exact process to avoid tribunal claims.
+schema: ''
 faqs:
-  - question: "Do I have to pay redundancy if my agency is insolvent and I cannot afford it?"
-    answer: "If the company is insolvent and has no cash, you should not continue trading. Instead, place the company into creditors' voluntary liquidation. The Redundancy Payments Service will then pay employees their statutory redundancy pay, notice pay, and holiday pay up to the statutory caps. Do not simply walk away and leave employees unpaid. That can lead to personal liability."
-  - question: "Can I avoid redundancy by asking employees to work for my new Dubai agency instead?"
-    answer: "If an employee refuses the offer of a role in Dubai, that is still a redundancy. You are ending their UK employment because the UK business is closing. They are entitled to statutory redundancy pay and notice. If they accept the Dubai role, that is a new employment contract. Their UK employment ends, and you must still settle any accrued holiday pay and give them a P45."
-  - question: "What happens if an employee brings a tribunal claim after I have moved to Dubai?"
-    answer: "You can defend the claim remotely or through a UK solicitor. If the company has been dissolved, the employee may pursue the claim against you personally if they can show you acted in bad faith or failed to follow proper process. The best protection is to handle redundancy correctly before you leave and keep the company in existence until all claims are time-barred (usually three months from the termination date)."
-  - question: "How long does the redundancy process need to take for a small agency?"
-    answer: "There is no statutory minimum for individual consultation, but it must be genuine and meaningful. For a small agency, two to four weeks is usually sufficient. You need time for at least two consultation meetings per employee, a decision period, and an appeal window. Do not try to do it in a week. That risks a finding of unfair dismissal."
+- question: Do I have to pay redundancy if my agency is insolvent and I cannot afford it?
+  answer: If the company is insolvent and has no cash, you should not continue trading. Instead, place the company into creditors' voluntary liquidation. The Redundancy Payments Service will then pay employees their statutory redundancy pay, notice pay, and holiday pay up to the statutory caps. Do not simply walk away and leave employees unpaid. That can lead to personal liability.
+- question: Can I avoid redundancy by asking employees to work for my new Dubai agency instead?
+  answer: If an employee refuses the offer of a role in Dubai, that is still a redundancy. You are ending their UK employment because the UK business is closing. They are entitled to statutory redundancy pay and notice. If they accept the Dubai role, that is a new employment contract. Their UK employment ends, and you must still settle any accrued holiday pay and give them a P45.
+- question: What happens if an employee brings a tribunal claim after I have moved to Dubai?
+  answer: You can defend the claim remotely or through a UK solicitor. If the company has been dissolved, the employee may pursue the claim against you personally if they can show you acted in bad faith or failed to follow proper process. The best protection is to handle redundancy correctly before you leave and keep the company in existence until all claims are time-barred (usually three months from the termination date).
+- question: How long does the redundancy process need to take for a small agency?
+  answer: There is no statutory minimum for individual consultation, but it must be genuine and meaningful. For a small agency, two to four weeks is usually sufficient. You need time for at least two consultation meetings per employee, a decision period, and an appeal window. Do not try to do it in a week. That risks a finding of unfair dismissal.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Statutory redundancy pay is calculated based on age, length of service, and weekly pay, capped at £643 per week for 2025/26.
+- Notice periods require at least one week per year of service up to 12 years, or contractual notice if longer.
+- Consultation is a legal requirement under the Employment Rights Act 1996, not a tick-box exercise.
+- If making 20 or more employees redundant within 90 days, collective consultation with employee representatives is mandatory.
+- Failing to follow redundancy rules can lead to employment tribunal claims, even after the company is liquidated.
 ---
-
 <p>If you are closing your UK agency to relocate to Dubai, you cannot simply shut the doors and walk away. Your employees have statutory rights under UK employment law. Get the redundancy process wrong, and you could face an employment tribunal even after you have left the country.</p>
 
 <p>This is not a theoretical risk. Tribunal claims can be pursued against a company in liquidation, and directors can be pursued personally in certain circumstances. So before you book that flight, you need a clear, legally compliant plan for handling <strong>UK employee redundancies closing agency</strong> operations.</p>

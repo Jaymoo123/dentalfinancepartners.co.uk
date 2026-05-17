@@ -1,33 +1,40 @@
 ---
-title: "How to Qualify for BADR When Selling Your Agency Shares After the 2025 CGT Rate Changes"
-slug: "qualify-for-badr-agency-shares-2025-cgt-changes"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/qualify-for-badr-agency-shares-2025-cgt-changes"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "BADR Agency Founders: Qualify Before CGT Rates Rise in 2025"
-metaDescription: "Capital Gains Tax rates changed in 2025. Here's exactly how BADR agency founders can still qualify for 14% tax on their exit. Conditions, deadlines"
-altText: "Agency founder reviewing share sale documents with ICAEW accountant in a London office meeting room"
-image: "/blog/qualify-for-badr-agency-shares-2025-cgt-changes.jpg"
+title: How to Qualify for BADR When Selling Your Agency Shares After the 2025 CGT Rate Changes
+slug: qualify-for-badr-agency-shares-2025-cgt-changes
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/qualify-for-badr-agency-shares-2025-cgt-changes
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'BADR Agency Founders: Qualify Before CGT Rates Rise in 2025'
+metaDescription: Capital Gains Tax rates changed in 2025. Here's exactly how BADR agency founders can still qualify for 14% tax on their exit. Conditions, deadlines
+altText: Agency founder reviewing share sale documents with ICAEW accountant in a London office meeting room
+image: /blog/qualify-for-badr-agency-shares-2025-cgt-changes.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/building-office-industry-writing-12178031/"
-  source: "Pexels"
-h1: "How to Qualify for BADR When Selling Your Agency Shares After the 2025 CGT Rate Changes"
-summary: "The 2025 CGT rate changes mean higher tax on most asset sales, but BADR still gives agency founders a 14% rate on the first £1m of gains. This article covers the exact qualifying conditions, the impact of the new rates, and the planning steps you need to take before you sell."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/building-office-industry-writing-12178031/
+  source: Pexels
+h1: How to Qualify for BADR When Selling Your Agency Shares After the 2025 CGT Rate Changes
+summary: The 2025 CGT rate changes mean higher tax on most asset sales, but BADR still gives agency founders a 14% rate on the first £1m of gains. This article covers the exact qualifying conditions, the impact of the new rates, and the planning steps you need to take before you sell.
+schema: ''
 faqs:
-  - question: "What is the BADR lifetime limit for agency founders in 2025?"
-    answer: "The BADR lifetime limit is £1m of qualifying gains. That means you can realise up to £1m in gains at the 10% rate over your lifetime. If you have used some of that allowance on a previous business sale, the remaining balance is available. Your accountant can confirm your remaining allowance from your tax returns."
-  - question: "Can I qualify for BADR if I own less than 5% of my agency?"
-    answer: "No. You must hold at least 5% of the ordinary share capital, with at least 5% of voting rights and 5% of distributable profits. If you are below 5%, you cannot use BADR on that disposal. You may be able to restructure your shareholding, but this needs to be done well before the sale and must have genuine commercial substance."
-  - question: "Does the two-year holding period reset if I change my shareholding percentage?"
-    answer: "It can. The two-year period runs from the date you meet all qualifying conditions. If you increase your shareholding from 3% to 6%, the clock starts from the date you first held 5% or more. If you drop below 5% and then go back above it, the clock resets. Plan your share transactions carefully if you are timing an exit."
-  - question: "What happens if my agency has too much cash when I sell?"
-    answer: "Excess cash counts as a non-trading asset. If your non-trading assets exceed 20% of total assets, you lose BADR on the whole disposal. The fix is to extract the cash as dividends before the sale, or reinvest it in trading activity. This needs to happen well before the sale process begins, not the week before completion."
+- question: What is the BADR lifetime limit for agency founders in 2025?
+  answer: The BADR lifetime limit is £1m of qualifying gains. That means you can realise up to £1m in gains at the 10% rate over your lifetime. If you have used some of that allowance on a previous business sale, the remaining balance is available. Your accountant can confirm your remaining allowance from your tax returns.
+- question: Can I qualify for BADR if I own less than 5% of my agency?
+  answer: No. You must hold at least 5% of the ordinary share capital, with at least 5% of voting rights and 5% of distributable profits. If you are below 5%, you cannot use BADR on that disposal. You may be able to restructure your shareholding, but this needs to be done well before the sale and must have genuine commercial substance.
+- question: Does the two-year holding period reset if I change my shareholding percentage?
+  answer: It can. The two-year period runs from the date you meet all qualifying conditions. If you increase your shareholding from 3% to 6%, the clock starts from the date you first held 5% or more. If you drop below 5% and then go back above it, the clock resets. Plan your share transactions carefully if you are timing an exit.
+- question: What happens if my agency has too much cash when I sell?
+  answer: Excess cash counts as a non-trading asset. If your non-trading assets exceed 20% of total assets, you lose BADR on the whole disposal. The fix is to extract the cash as dividends before the sale, or reinvest it in trading activity. This needs to happen well before the sale process begins, not the week before completion.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- BADR reduces CGT to 14% on the first £1m of lifetime gains, saving £80,000 per million compared to the 24% main rate for higher rate taxpayers.
+- To qualify for BADR, you must be a director or employee of the agency at the time of disposal, not a silent shareholder or non-executive.
+- You must hold at least 5% of the ordinary share capital, with at least 5% of voting rights and distributable profits, to meet the BADR threshold.
+- The two-year qualifying period starts when you meet all conditions, not when you acquired the shares, so plan your role and shareholding well before sale.
+- If you have already used part of your £1m BADR lifetime limit, track the remaining balance from previous tax returns to calculate your relief.
 ---
-
 <p>If you own shares in your agency and you are thinking about selling up, the 2025 Capital Gains Tax rate changes have made BADR more valuable than ever. The main rate of CGT on business asset disposals rose from 10% to 18% for most assets in the 2025 Budget. But Business Asset Disposal Relief (BADR) still gives you a 14% rate on the first £1m of lifetime gains. That is a saving of £80,000 per million compared to the new main rate.</p>
 
 <p>For BADR agency founders, the difference between qualifying and missing out is the difference between keeping £900,000 and keeping £820,000 on a million-pound exit. The rules have not changed. But the penalty for getting them wrong just got a lot bigger.</p>

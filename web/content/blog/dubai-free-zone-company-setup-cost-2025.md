@@ -1,25 +1,32 @@
 ---
-title: "What Is the Real Dubai Free Zone Company Setup Cost 2025 for a UK Agency Founder?"
-slug: "dubai-free-zone-company-setup-cost-2025"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-free-zone-company-setup-cost-2025"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Dubai Free Zone Company Setup Cost 2025: UK Agency Founder"
-metaDescription: "The real Dubai free zone company setup cost 2025 for UK agency founders. Licence, visa, office, and PRO fees. Not just the headline price. Budget"
-altText: "UK agency founder reviewing Dubai free zone company setup cost 2025 on a laptop in a modern Dubai office"
-image: "/blog/dubai-free-zone-company-setup-cost-2025.jpg"
+title: What Is the Real Dubai Free Zone Company Setup Cost 2025 for a UK Agency Founder?
+slug: dubai-free-zone-company-setup-cost-2025
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-free-zone-company-setup-cost-2025
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Dubai Free Zone Company Setup Cost 2025: UK Agency Founder'
+metaDescription: The real Dubai free zone company setup cost 2025 for UK agency founders. Licence, visa, office, and PRO fees. Not just the headline price. Budget
+altText: UK agency founder reviewing Dubai free zone company setup cost 2025 on a laptop in a modern Dubai office
+image: /blog/dubai-free-zone-company-setup-cost-2025.jpg
 imageCredit:
-  photographer: "Kate Trysh"
-  photographerUrl: "https://www.pexels.com/@katetrysh"
-  sourceUrl: "https://www.pexels.com/photo/stunning-aerial-view-of-urban-skyline-with-skyscrapers-and-highway-27206541/"
-  source: "Pexels"
-h1: "What Is the Real Dubai Free Zone Company Setup Cost 2025 for a UK Agency Founder?"
-summary: "A realistic breakdown of the Dubai free zone company setup cost 2025 for UK agency founders. Licence fees, visa costs, office space, and PRO charges. What the brochure prices don't tell you."
-schema: ""
+  photographer: Kate Trysh
+  photographerUrl: https://www.pexels.com/@katetrysh
+  sourceUrl: https://www.pexels.com/photo/stunning-aerial-view-of-urban-skyline-with-skyscrapers-and-highway-27206541/
+  source: Pexels
+h1: What Is the Real Dubai Free Zone Company Setup Cost 2025 for a UK Agency Founder?
+summary: A realistic breakdown of the Dubai free zone company setup cost 2025 for UK agency founders. Licence fees, visa costs, office space, and PRO charges. What the brochure prices don't tell you.
+schema: ''
 faqs: []
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A Dubai free zone company setup in 2025 costs significantly more than the headline licence fee, with total expenses typically 2–3 times higher.
+- For a UK agency founder, the most relevant free zones are DMCC, DSO, DIC, IFZA, and lower-cost options like SHAMS or RAK ICC.
+- DMCC's standard formation package starts at AED 50,000 (approx. £10,500) including licence, flexi-desk, and one visa, but excludes other mandatory costs.
+- Visa costs for an investor visa range from AED 4,000 to AED 8,000 in 2025, and are not included in the headline licence fee.
+- Free zones offer 0% corporation tax on qualifying income up to a threshold, but you must budget for office space, PRO fees, and other hidden extras.
 ---
-
 <p>If you are a UK agency founder looking at Dubai, the first number you see on a free zone website is usually the licence fee. Something like AED 15,000 for a freelance permit, or AED 30,000 for a full company licence. Those numbers look manageable. But the <strong>Dubai free zone company setup cost 2025</strong> is never just the licence fee. You need a realistic budget that includes visas, office space, PRO (Public Relations Officer) fees, and several mandatory extras that the brochure often leaves out.</p>
 
 <p>This article is a practical breakdown of what you will actually spend. I am writing it from the perspective of an ICAEW-qualified accountant who works with agency founders moving to or expanding into Dubai. Not a property developer. Not a visa agent. An accountant who has seen the hidden costs catch people out.</p>

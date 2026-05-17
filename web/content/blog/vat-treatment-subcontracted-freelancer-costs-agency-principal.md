@@ -1,33 +1,40 @@
 ---
-title: "How Is VAT Handled When Your Agency Subcontracts Freelancers and Invoices as Principal?"
-slug: "vat-treatment-subcontracted-freelancer-costs-agency-principal"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/vat-treatment-subcontracted-freelancer-costs-agency-principal"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "VAT on subcontracted freelancer costs when you invoice"
-metaDescription: "If your agency invoices clients as principal but subcontracts freelancers, here’s how VAT applies. Avoid common errors with this guide."
-altText: "UK accountant reviewing VAT invoices for agency freelancer subcontractor costs at a desk in a Manchester office"
-image: "/blog/vat-treatment-subcontracted-freelancer-costs-agency-principal.jpg"
+title: How Is VAT Handled When Your Agency Subcontracts Freelancers and Invoices as Principal?
+slug: vat-treatment-subcontracted-freelancer-costs-agency-principal
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/vat-treatment-subcontracted-freelancer-costs-agency-principal
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: VAT on subcontracted freelancer costs when you invoice
+metaDescription: If your agency invoices clients as principal but subcontracts freelancers, here’s how VAT applies. Avoid common errors with this guide.
+altText: UK accountant reviewing VAT invoices for agency freelancer subcontractor costs at a desk in a Manchester office
+image: /blog/vat-treatment-subcontracted-freelancer-costs-agency-principal.jpg
 imageCredit:
-  photographer: "Kindel Media"
-  photographerUrl: "https://www.pexels.com/@kindelmedia"
-  sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-a-person-holding-a-clipboard-7651555/"
-  source: "Pexels"
-h1: "How Is VAT Handled When Your Agency Subcontracts Freelancers and Invoices as Principal?"
-summary: "When your agency invoices the client as principal but uses subcontractors, the VAT treatment depends on whether you act as principal or agent. This post explains the difference, the common mistakes, and how to handle VAT on freelancer costs correctly."
-schema: ""
+  photographer: Kindel Media
+  photographerUrl: https://www.pexels.com/@kindelmedia
+  sourceUrl: https://www.pexels.com/photo/close-up-shot-of-a-person-holding-a-clipboard-7651555/
+  source: Pexels
+h1: How Is VAT Handled When Your Agency Subcontracts Freelancers and Invoices as Principal?
+summary: When your agency invoices the client as principal but uses subcontractors, the VAT treatment depends on whether you act as principal or agent. This post explains the difference, the common mistakes, and how to handle VAT on freelancer costs correctly.
+schema: ''
 faqs:
-  - question: "If my freelancer is not VAT-registered, do I still charge VAT to my client?"
-    answer: "Yes. Your VAT obligation to your client is based on your invoice, not your costs. If you are principal, you charge VAT on the full invoice regardless of whether your freelancer charges you VAT. The difference is you cannot reclaim any input VAT on the freelancer's invoice, so your margin takes the hit. Factor this into your pricing when engaging non-VAT-registered freelancers."
-  - question: "Can I use the Flat Rate Scheme to reduce VAT on subcontractor-heavy projects?"
-    answer: "You can, but it often costs you more than standard VAT accounting. Under Flat Rate, you cannot reclaim the input VAT on freelancer invoices. If your freelancer costs are high, the irrecoverable VAT can wipe out your margin. Run the numbers for each project. Many agencies switch to standard VAT accounting once freelancer costs exceed 20-30% of turnover."
-  - question: "What is the difference between a disbursement and a subcontractor cost for VAT purposes?"
-    answer: "A disbursement is a cost you pay on behalf of the client and recharge at exactly the same amount. You do not charge VAT on a disbursement. A subcontractor cost is a cost you incur to deliver your service. You charge VAT on the full invoice. The distinction is whether you are acting as principal or agent. If you are principal, freelancer costs are not disbursements. HMRC looks closely at this distinction."
-  - question: "Do I need to register for VAT if I only subcontract work and never deliver services myself?"
-    answer: "Yes, if your turnover exceeds the £90,000 VAT registration threshold. The VAT rules apply to your business as a whole, not just to the work you personally deliver. If you are principal, you are making taxable supplies to your clients, even if you subcontract all the delivery. Register for VAT when your turnover hits the threshold, regardless of how much work you do yourself."
+- question: If my freelancer is not VAT-registered, do I still charge VAT to my client?
+  answer: Yes. Your VAT obligation to your client is based on your invoice, not your costs. If you are principal, you charge VAT on the full invoice regardless of whether your freelancer charges you VAT. The difference is you cannot reclaim any input VAT on the freelancer's invoice, so your margin takes the hit. Factor this into your pricing when engaging non-VAT-registered freelancers.
+- question: Can I use the Flat Rate Scheme to reduce VAT on subcontractor-heavy projects?
+  answer: You can, but it often costs you more than standard VAT accounting. Under Flat Rate, you cannot reclaim the input VAT on freelancer invoices. If your freelancer costs are high, the irrecoverable VAT can wipe out your margin. Run the numbers for each project. Many agencies switch to standard VAT accounting once freelancer costs exceed 20-30% of turnover.
+- question: What is the difference between a disbursement and a subcontractor cost for VAT purposes?
+  answer: A disbursement is a cost you pay on behalf of the client and recharge at exactly the same amount. You do not charge VAT on a disbursement. A subcontractor cost is a cost you incur to deliver your service. You charge VAT on the full invoice. The distinction is whether you are acting as principal or agent. If you are principal, freelancer costs are not disbursements. HMRC looks closely at this distinction.
+- question: Do I need to register for VAT if I only subcontract work and never deliver services myself?
+  answer: Yes, if your turnover exceeds the £90,000 VAT registration threshold. The VAT rules apply to your business as a whole, not just to the work you personally deliver. If you are principal, you are making taxable supplies to your clients, even if you subcontract all the delivery. Register for VAT when your turnover hits the threshold, regardless of how much work you do yourself.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- When acting as principal, you must charge 20% VAT on the full invoice amount to the client, not just your margin.
+- You can reclaim input VAT on freelancer invoices if they are VAT-registered, reducing your net VAT payment to HMRC.
+- There is no general VAT margin scheme for agency subcontracting; the Tour Operators Margin Scheme does not apply.
+- If you act as agent, you only charge VAT on your commission or fee, not the full project value, but this requires a direct contract between freelancer and client.
+- A common mistake is undercharging VAT by only accounting for your margin, which can lead to HMRC penalties.
 ---
-
 <p>If your agency bills a client £12,000 for a project, and you pay a freelancer £8,000 to deliver the work, how does VAT apply? The answer depends on whether you are acting as <strong>principal</strong> or as <strong>agent</strong>. Get this wrong, and you could underpay HMRC or leave your client with a VAT bill they cannot reclaim. This is one of the most common areas where creative agencies trip up on VAT for agencies.</p>
 
 <p>Let me walk through the rules, the scenarios, and the practical steps you need to take. I will use real numbers and real agency examples throughout.</p>

@@ -1,33 +1,40 @@
 ---
-title: "Revenue vs Billings for a Recruitment Agency: What’s the Difference?"
-slug: "revenue-vs-billings-recruitment-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/revenue-vs-billings-recruitment-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "Revenue vs Billings for Recruiters: Key Difference"
-metaDescription: "Revenue and billings are not the same for recruitment agencies. We explain the difference, how each is calculated, and why it matters for tax and growth."
-altText: "Recruitment agency founder reviewing financial reports on a laptop in a modern UK office"
-image: "/blog/revenue-vs-billings-recruitment-agency.jpg"
+title: 'Revenue vs Billings for a Recruitment Agency: What’s the Difference?'
+slug: revenue-vs-billings-recruitment-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/revenue-vs-billings-recruitment-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: 'Revenue vs Billings for Recruiters: Key Difference'
+metaDescription: Revenue and billings are not the same for recruitment agencies. We explain the difference, how each is calculated, and why it matters for tax and growth.
+altText: Recruitment agency founder reviewing financial reports on a laptop in a modern UK office
+image: /blog/revenue-vs-billings-recruitment-agency.jpg
 imageCredit:
-  photographer: "Tima Miroshnichenko"
-  photographerUrl: "https://www.pexels.com/@tima-miroshnichenko"
-  sourceUrl: "https://www.pexels.com/photo/letter-tiles-beside-100-dollar-bills-5912592/"
-  source: "Pexels"
-h1: "Revenue vs Billings for a Recruitment Agency: What’s the Difference?"
-summary: "Revenue and billings are two different numbers on your agency’s dashboard. We explain what each means, how to calculate them correctly, and why confusing them can lead to wrong business decisions and tax problems."
-schema: ""
+  photographer: Tima Miroshnichenko
+  photographerUrl: https://www.pexels.com/@tima-miroshnichenko
+  sourceUrl: https://www.pexels.com/photo/letter-tiles-beside-100-dollar-bills-5912592/
+  source: Pexels
+h1: 'Revenue vs Billings for a Recruitment Agency: What’s the Difference?'
+summary: Revenue and billings are two different numbers on your agency’s dashboard. We explain what each means, how to calculate them correctly, and why confusing them can lead to wrong business decisions and tax problems.
+schema: ''
 faqs:
-  - question: "Is billing the same as revenue for a recruitment agency?"
-    answer: "No. Billing is the total value of fees placed, including contractor pay and costs. Revenue is what you actually keep after deducting those costs. For permanent placements, billing and revenue are often the same. For contract placements, they are very different."
-  - question: "How do you calculate revenue for a contract recruitment desk?"
-    answer: "Revenue equals the total amount invoiced to the client minus the contractor's gross pay, employer NI, pension, holiday pay, and any other statutory employment costs. Your margin is your revenue. If you invoice £10,000 and the contractor costs £8,500, your revenue is £1,500."
-  - question: "Should I report billings or revenue on my corporation tax return?"
-    answer: "Revenue. HMRC wants to tax your profit, not your turnover. Reporting billings as revenue would overstate your taxable income and mean overpaying corporation tax. Your CT600 should show your true revenue, calculated correctly for both perm and contract placements."
-  - question: "What is a good contract margin for a UK recruitment agency?"
-    answer: "Most UK recruitment agencies target a contract margin of 15% to 25%. Margins below 10% are typically unsustainable once you factor in overheads, bad debts, and the cost of sales time. Margins above 30% are possible in niche sectors but are less common in generalist recruitment."
+- question: Is billing the same as revenue for a recruitment agency?
+  answer: No. Billing is the total value of fees placed, including contractor pay and costs. Revenue is what you actually keep after deducting those costs. For permanent placements, billing and revenue are often the same. For contract placements, they are very different.
+- question: How do you calculate revenue for a contract recruitment desk?
+  answer: Revenue equals the total amount invoiced to the client minus the contractor's gross pay, employer NI, pension, holiday pay, and any other statutory employment costs. Your margin is your revenue. If you invoice £10,000 and the contractor costs £8,500, your revenue is £1,500.
+- question: Should I report billings or revenue on my corporation tax return?
+  answer: Revenue. HMRC wants to tax your profit, not your turnover. Reporting billings as revenue would overstate your taxable income and mean overpaying corporation tax. Your CT600 should show your true revenue, calculated correctly for both perm and contract placements.
+- question: What is a good contract margin for a UK recruitment agency?
+  answer: Most UK recruitment agencies target a contract margin of 15% to 25%. Margins below 10% are typically unsustainable once you factor in overheads, bad debts, and the cost of sales time. Margins above 30% are possible in niche sectors but are less common in generalist recruitment.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Billings represent the total value of placements made, while revenue is the income retained after deducting direct costs like contractor pay and employer NI.
+- For contract placements, revenue is your margin (client charge minus contractor costs), not the full billing amount.
+- Using billings instead of revenue in management accounts overstates profitability and can lead to incorrect tax calculations.
+- 'Revenue must be recognised on an accruals basis: permanent fees in the month of placement, contract margins in the month the contractor works.'
+- Confusing revenue with billings can distort pricing strategy and cash flow planning for recruitment agencies.
 ---
-
 <h2>Two Numbers, One Agency, Very Different Meanings</h2>
 
 <p>If you run a recruitment agency, you have probably seen two numbers on your dashboard that look similar but are not the same. Revenue and billings. Many founders use them interchangeably. That is a mistake.</p>

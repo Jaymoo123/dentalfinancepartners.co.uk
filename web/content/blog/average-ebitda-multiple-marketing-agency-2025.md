@@ -1,33 +1,40 @@
 ---
-title: "What Is the Average EBITDA Multiple for UK Marketing Agencies in 2025?"
-slug: "average-ebitda-multiple-marketing-agency-2025"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/average-ebitda-multiple-marketing-agency-2025"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Average EBITDA Multiple Marketing Agency 2025: UK Benchmarks"
-metaDescription: "UK marketing agency EBITDA multiples in 2025 range from 3.5x to 7x. We break down the data by agency type, size, and what drives a higher valuation."
-altText: "Two agency founders reviewing a valuation report with their ICAEW accountant in a London meeting room"
-image: "/blog/average-ebitda-multiple-marketing-agency-2025.jpg"
+title: What Is the Average EBITDA Multiple for UK Marketing Agencies in 2025?
+slug: average-ebitda-multiple-marketing-agency-2025
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/average-ebitda-multiple-marketing-agency-2025
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'Average EBITDA Multiple Marketing Agency 2025: UK Benchmarks'
+metaDescription: UK marketing agency EBITDA multiples in 2025 range from 3.5x to 7x. We break down the data by agency type, size, and what drives a higher valuation.
+altText: Two agency founders reviewing a valuation report with their ICAEW accountant in a London meeting room
+image: /blog/average-ebitda-multiple-marketing-agency-2025.jpg
 imageCredit:
-  photographer: "Jorge Alcalá"
-  photographerUrl: "https://www.pexels.com/@jorgealcala"
-  sourceUrl: "https://www.pexels.com/photo/view-of-the-streets-of-camden-market-in-camden-town-london-england-19121495/"
-  source: "Pexels"
-h1: "What Is the Average EBITDA Multiple for UK Marketing Agencies in 2025?"
-summary: "If you are planning an exit in the next few years, knowing your agency's likely EBITDA multiple is essential. We look at the 2025 data for UK marketing agencies, what drives multiples up, and what pulls them down. Real benchmarks, not guesswork."
-schema: ""
+  photographer: Jorge Alcalá
+  photographerUrl: https://www.pexels.com/@jorgealcala
+  sourceUrl: https://www.pexels.com/photo/view-of-the-streets-of-camden-market-in-camden-town-london-england-19121495/
+  source: Pexels
+h1: What Is the Average EBITDA Multiple for UK Marketing Agencies in 2025?
+summary: If you are planning an exit in the next few years, knowing your agency's likely EBITDA multiple is essential. We look at the 2025 data for UK marketing agencies, what drives multiples up, and what pulls them down. Real benchmarks, not guesswork.
+schema: ''
 faqs:
-  - question: "What is a good EBITDA multiple for a UK marketing agency in 2025?"
-    answer: "A good multiple depends on your agency type and financial health. For digital agencies, 5x to 7x is strong. For general marketing agencies, 4x to 6x is typical. If you are below 4x, focus on retainer income, management depth, and client diversification before you list."
-  - question: "How is EBITDA calculated for an agency sale?"
-    answer: "EBITDA is net profit before interest, tax, depreciation, and amortisation. For sale purposes, buyers will also add back one-off costs like legal fees, redundancy payments, and any founder salary above market rate. The resulting \"adjusted EBITDA\" is what the multiple is applied to."
-  - question: "Can I sell my agency if I am the only person who runs it?"
-    answer: "You can sell, but the multiple will be low. Buyers will discount heavily if the agency depends on you personally. Start building a management team and delegating client relationships at least two years before you plan to exit. A strong team can add a full multiple point to your valuation."
-  - question: "What tax relief applies when I sell my agency shares?"
-    answer: "Business Asset Disposal Relief (BADR) applies to most agency founders selling shares. It gives you 14% on the first £1m of lifetime gains, instead of the standard 20%. You must have held the shares for at least two years and been an officer or employee. Speak to your accountant about whether your share structure qualifies."
+- question: What is a good EBITDA multiple for a UK marketing agency in 2025?
+  answer: A good multiple depends on your agency type and financial health. For digital agencies, 5x to 7x is strong. For general marketing agencies, 4x to 6x is typical. If you are below 4x, focus on retainer income, management depth, and client diversification before you list.
+- question: How is EBITDA calculated for an agency sale?
+  answer: EBITDA is net profit before interest, tax, depreciation, and amortisation. For sale purposes, buyers will also add back one-off costs like legal fees, redundancy payments, and any founder salary above market rate. The resulting "adjusted EBITDA" is what the multiple is applied to.
+- question: Can I sell my agency if I am the only person who runs it?
+  answer: You can sell, but the multiple will be low. Buyers will discount heavily if the agency depends on you personally. Start building a management team and delegating client relationships at least two years before you plan to exit. A strong team can add a full multiple point to your valuation.
+- question: What tax relief applies when I sell my agency shares?
+  answer: Business Asset Disposal Relief (BADR) applies to most agency founders selling shares. It gives you 14% on the first £1m of lifetime gains, instead of the standard 20%. You must have held the shares for at least two years and been an officer or employee. Speak to your accountant about whether your share structure qualifies.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Average EBITDA multiple for UK marketing agencies in 2025 ranges from 3.5x to 8x, depending on specialism and performance.
+- Recurring retainer income above 70% can add up to 0.5x to your multiple, while project-heavy models reduce valuation.
+- 'Client concentration risk is critical: no single client should exceed 15% of revenue to avoid multiple discounts.'
+- A 15-person digital agency with £240k EBITDA at 5x sells for £1.2m; at 4x it drops to £960k, highlighting preparation value.
+- Specialist agencies in B2B tech, healthcare, or finance command the highest multiples at 5x to 8x EBITDA.
 ---
-
 <p>If you own a UK marketing agency and are thinking about an exit in the next three to five years, the question you are really asking is: <em>what is my agency worth?</em></p>
 
 <p>The short answer in 2025 is that the <strong>average EBITDA multiple for a UK marketing agency</strong> sits between <strong>3.5x and 7x</strong>. But that range is almost useless without context. A 3.5x multiple on £200k of EBITDA gives you £700k. A 7x multiple on £1.5m of EBITDA gives you £10.5m. Same multiple range, vastly different outcomes.</p>

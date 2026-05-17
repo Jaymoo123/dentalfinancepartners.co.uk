@@ -1,33 +1,40 @@
 ---
-title: "How to Document R&D Activity in Your Agency Throughout the Year"
-slug: "document-rd-activity-agency-year-round"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/document-rd-activity-agency-year-round"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Document R&D Activity Agency: A Year-Round Guide"
-metaDescription: "Stop scrambling for R&D evidence at year-end. Learn how to document R&D activity in your agency month-by-month, with real examples from digital, creative"
-altText: "Agency founder reviewing technical documentation with accountant in a Shoreditch office"
-image: "/blog/document-rd-activity-agency-year-round.jpg"
+title: How to Document R&D Activity in Your Agency Throughout the Year
+slug: document-rd-activity-agency-year-round
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/document-rd-activity-agency-year-round
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'Document R&D Activity Agency: A Year-Round Guide'
+metaDescription: Stop scrambling for R&D evidence at year-end. Learn how to document R&D activity in your agency month-by-month, with real examples from digital, creative
+altText: Agency founder reviewing technical documentation with accountant in a Shoreditch office
+image: /blog/document-rd-activity-agency-year-round.jpg
 imageCredit:
-  photographer: "cottonbro studio"
-  photographerUrl: "https://www.pexels.com/@cottonbro"
-  sourceUrl: "https://www.pexels.com/photo/man-in-black-suit-jacket-reading-documents-8369208/"
-  source: "Pexels"
-h1: "How to Document R&D Activity in Your Agency Throughout the Year"
-summary: "R&D tax credits are one of the most valuable reliefs available to UK agencies, but only if you can prove the work happened. This guide shows you exactly how to document R&D activity in your agency throughout the year, with practical systems that take minutes per week."
-schema: ""
+  photographer: cottonbro studio
+  photographerUrl: https://www.pexels.com/@cottonbro
+  sourceUrl: https://www.pexels.com/photo/man-in-black-suit-jacket-reading-documents-8369208/
+  source: Pexels
+h1: How to Document R&D Activity in Your Agency Throughout the Year
+summary: R&D tax credits are one of the most valuable reliefs available to UK agencies, but only if you can prove the work happened. This guide shows you exactly how to document R&D activity in your agency throughout the year, with practical systems that take minutes per week.
+schema: ''
 faqs:
-  - question: "Can I document R&D activity after the project is finished?"
-    answer: "You can, but HMRC will give it less weight than contemporaneous evidence. If you have to reconstruct documentation, use whatever primary sources still exist: email threads, Slack messages, project management ticket histories, and timesheets. Be honest about the timeline. Do not backdate documents. A reconstructed claim is weaker than a real-time one, but it is still better than submitting a claim with no supporting evidence at all."
-  - question: "What if my agency doesn't use timesheets?"
-    answer: "Start using them. Even a simple weekly log in Google Sheets that records which projects each team member worked on and what technical problems they addressed is enough. If you cannot implement full timesheets immediately, ask your technical staff to send a weekly email summarising their R&D activities. Save those emails in a dedicated folder. They count as contemporaneous evidence."
-  - question: "Do I need a separate bank account for R&D costs?"
-    answer: "No. HMRC do not require a separate bank account. They require clear cost tracking within your accounting system. Use project codes or tracking categories in Xero or QuickBooks to tag all R&D-related expenditure. Run monthly reports to verify the tagging is correct. A separate bank account would be overkill for most agencies."
-  - question: "How far back can I claim R&D tax credits for my agency?"
-    answer: "You can claim for the current accounting period and the two previous periods. For example, if your year end is 31 March 2026, you can claim for periods ending 31 March 2026, 2025, and 2024. Claims must be made within two years of the end of the accounting period. If you have unclaimed R&D expenditure from earlier periods, speak to your accountant about whether a retrospective claim is still possible."
+- question: Can I document R&D activity after the project is finished?
+  answer: 'You can, but HMRC will give it less weight than contemporaneous evidence. If you have to reconstruct documentation, use whatever primary sources still exist: email threads, Slack messages, project management ticket histories, and timesheets. Be honest about the timeline. Do not backdate documents. A reconstructed claim is weaker than a real-time one, but it is still better than submitting a claim with no supporting evidence at all.'
+- question: What if my agency doesn't use timesheets?
+  answer: Start using them. Even a simple weekly log in Google Sheets that records which projects each team member worked on and what technical problems they addressed is enough. If you cannot implement full timesheets immediately, ask your technical staff to send a weekly email summarising their R&D activities. Save those emails in a dedicated folder. They count as contemporaneous evidence.
+- question: Do I need a separate bank account for R&D costs?
+  answer: No. HMRC do not require a separate bank account. They require clear cost tracking within your accounting system. Use project codes or tracking categories in Xero or QuickBooks to tag all R&D-related expenditure. Run monthly reports to verify the tagging is correct. A separate bank account would be overkill for most agencies.
+- question: How far back can I claim R&D tax credits for my agency?
+  answer: You can claim for the current accounting period and the two previous periods. For example, if your year end is 31 March 2026, you can claim for periods ending 31 March 2026, 2025, and 2024. Claims must be made within two years of the end of the accounting period. If you have unclaimed R&D expenditure from earlier periods, speak to your accountant about whether a retrospective claim is still possible.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Document R&D activity as it happens using contemporaneous notes, emails, and project logs, not retrospective narratives.
+- Qualifying R&D for agencies includes building custom software, algorithms, automation systems, or solving technical uncertainties.
+- Keep project initiation documents that record the technical problem, ruled-out solutions, and the date work began.
+- Maintain technical notes and decision logs detailing dead ends, failures, and pivots to prove resolution of uncertainty.
+- Use detailed timesheets that specify qualifying project tasks, such as 'built custom attribution model', to satisfy HMRC evidence requirements.
 ---
-
 <h2>Why Most Agency R&D Claims Fail at HMRC Review</h2>
 
 <p>You built something genuinely new. A custom analytics platform for clients. An automated content distribution system. A machine learning tool that predicts campaign performance. The technical work was real. The costs were real. But when HMRC asks for evidence, you have a problem.</p>

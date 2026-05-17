@@ -1,33 +1,40 @@
 ---
-title: "How to Transfer Your UK Agency’s Client Contracts to a Dubai Entity Without Breaching Terms"
-slug: "transfer-client-contracts-to-dubai-entity"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/transfer-client-contracts-to-dubai-entity"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Transfer Client Contracts to Dubai Entity: UK Agency Guide"
-metaDescription: "Moving your agency to Dubai? Novation, assignment, and jurisdiction clauses explained. How to transfer client contracts to a Dubai entity without"
-altText: "UK agency founder reviewing client contracts with a solicitor in a London meeting room before relocating to Dubai"
-image: "/blog/transfer-client-contracts-to-dubai-entity.jpg"
+title: How to Transfer Your UK Agency’s Client Contracts to a Dubai Entity Without Breaching Terms
+slug: transfer-client-contracts-to-dubai-entity
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/transfer-client-contracts-to-dubai-entity
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Transfer Client Contracts to Dubai Entity: UK Agency Guide'
+metaDescription: Moving your agency to Dubai? Novation, assignment, and jurisdiction clauses explained. How to transfer client contracts to a Dubai entity without
+altText: UK agency founder reviewing client contracts with a solicitor in a London meeting room before relocating to Dubai
+image: /blog/transfer-client-contracts-to-dubai-entity.jpg
 imageCredit:
-  photographer: "Kampus Production"
-  photographerUrl: "https://www.pexels.com/@kampus"
-  sourceUrl: "https://www.pexels.com/photo/man-in-black-suit-jacket-shaking-hands-with-woman-8815841/"
-  source: "Pexels"
-h1: "How to Transfer Your UK Agency’s Client Contracts to a Dubai Entity Without Breaching Terms"
-summary: "Moving your agency to Dubai? Your client contracts likely have change-of-control or jurisdiction clauses that can block the transfer. Here’s how to novate or assign them legally, without triggering penalties or losing clients."
-schema: ""
+  photographer: Kampus Production
+  photographerUrl: https://www.pexels.com/@kampus
+  sourceUrl: https://www.pexels.com/photo/man-in-black-suit-jacket-shaking-hands-with-woman-8815841/
+  source: Pexels
+h1: How to Transfer Your UK Agency’s Client Contracts to a Dubai Entity Without Breaching Terms
+summary: Moving your agency to Dubai? Your client contracts likely have change-of-control or jurisdiction clauses that can block the transfer. Here’s how to novate or assign them legally, without triggering penalties or losing clients.
+schema: ''
 faqs:
-  - question: "Can I just change the invoicing entity without telling my clients?"
-    answer: "No. Changing the entity that invoices without client consent is a breach of contract. Most contracts have assignment or change-of-control clauses that require written consent. If the client disputes it, they can refuse to pay or terminate the agreement. Always get consent in writing before switching entities."
-  - question: "What if my contract says \"no assignment at all\"?"
-    answer: "If the contract prohibits assignment, you cannot novate or assign it without the client's consent. Your only option is to terminate the contract (if you have a notice period) and offer a new contract from your Dubai entity. The client can refuse. If they do, you may need to keep the UK company alive to service that client."
-  - question: "Do I need a UAE lawyer to handle the contract transfer?"
-    answer: "You need a UK commercial solicitor for the contract review and novation drafting. You may also need a UAE lawyer if the contracts involve Dubai-based clients or UAE governing law. For most UK-to-Dubai agency moves, a UK solicitor with international contract experience is sufficient."
-  - question: "Will transferring contracts to Dubai affect my professional indemnity insurance?"
-    answer: "Yes. Your UK PI insurance covers the UK company, not the Dubai entity. You need a new policy for the Dubai entity that covers the jurisdictions where your clients are based. Some insurers offer global policies. Check whether your policy covers work performed from Dubai for UK clients. Do not assume it does."
+- question: Can I just change the invoicing entity without telling my clients?
+  answer: No. Changing the entity that invoices without client consent is a breach of contract. Most contracts have assignment or change-of-control clauses that require written consent. If the client disputes it, they can refuse to pay or terminate the agreement. Always get consent in writing before switching entities.
+- question: What if my contract says "no assignment at all"?
+  answer: If the contract prohibits assignment, you cannot novate or assign it without the client's consent. Your only option is to terminate the contract (if you have a notice period) and offer a new contract from your Dubai entity. The client can refuse. If they do, you may need to keep the UK company alive to service that client.
+- question: Do I need a UAE lawyer to handle the contract transfer?
+  answer: You need a UK commercial solicitor for the contract review and novation drafting. You may also need a UAE lawyer if the contracts involve Dubai-based clients or UAE governing law. For most UK-to-Dubai agency moves, a UK solicitor with international contract experience is sufficient.
+- question: Will transferring contracts to Dubai affect my professional indemnity insurance?
+  answer: Yes. Your UK PI insurance covers the UK company, not the Dubai entity. You need a new policy for the Dubai entity that covers the jurisdictions where your clients are based. Some insurers offer global policies. Check whether your policy covers work performed from Dubai for UK clients. Do not assume it does.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Novation is the cleanest method to transfer client contracts to a Dubai entity, requiring a three-way agreement with the client.
+- Most contracts have change-of-control or assignment clauses that require the client's written consent before transferring.
+- Under English law, you can assign the right to be paid but not the obligation to perform work if the contract is silent.
+- Breaching contract terms by switching invoicing entities can lead to repudiation, damages claims, or loss of the client.
+- Review jurisdiction and governing law clauses, as moving performance to Dubai may conflict with English court specifications.
 ---
-
 <p>You have a 12-person digital agency billing £800k per year. You are moving to Dubai. You want to take your client contracts with you. But you cannot just email them a new invoice from your Dubai entity and hope for the best. Most contracts have clauses that explicitly prevent this. Breach them, and you are looking at repudiation, damages claims, or losing the client entirely.</p>
 
 <p>Transferring client contracts to a Dubai entity is a legal process, not an administrative one. It requires either novation, assignment, or a renegotiation of the existing terms. The right route depends on what your contracts say about change of control, jurisdiction, and governing law.</p>

@@ -1,33 +1,40 @@
 ---
-title: "Dubai Relocation for Agency Founders: Why Your UK Business Insurance Policy Won't Cover You in the UAE"
-slug: "dubai-relocation-insurance-agency-coverage"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-relocation-insurance-agency-coverage"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Dubai Relocation Insurance: Why UK Policies Don't Cover UAE"
-metaDescription: "UK professional indemnity and public liability insurance typically excludes UAE operations. Here's what agency founders moving to Dubai need to know"
-altText: "Agency founder reviewing insurance documents in a Dubai office with skyline visible through window"
-image: "/blog/dubai-relocation-insurance-agency-coverage.jpg"
+title: 'Dubai Relocation for Agency Founders: Why Your UK Business Insurance Policy Won''t Cover You in the UAE'
+slug: dubai-relocation-insurance-agency-coverage
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-relocation-insurance-agency-coverage
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Dubai Relocation Insurance: Why UK Policies Don''t Cover UAE'
+metaDescription: UK professional indemnity and public liability insurance typically excludes UAE operations. Here's what agency founders moving to Dubai need to know
+altText: Agency founder reviewing insurance documents in a Dubai office with skyline visible through window
+image: /blog/dubai-relocation-insurance-agency-coverage.jpg
 imageCredit:
-  photographer: "Blue Bird"
-  photographerUrl: "https://www.pexels.com/@blue-bird"
-  sourceUrl: "https://www.pexels.com/photo/man-holding-white-box-with-a-woman-holding-throw-pillows-7218211/"
-  source: "Pexels"
-h1: "Dubai Relocation for Agency Founders: Why Your UK Business Insurance Policy Won't Cover You in the UAE"
-summary: "Moving your agency to Dubai? Your UK professional indemnity and public liability insurance almost certainly won't cover work performed in the UAE. Here's what you need to arrange before your first local client signs."
-schema: ""
+  photographer: Blue Bird
+  photographerUrl: https://www.pexels.com/@blue-bird
+  sourceUrl: https://www.pexels.com/photo/man-holding-white-box-with-a-woman-holding-throw-pillows-7218211/
+  source: Pexels
+h1: 'Dubai Relocation for Agency Founders: Why Your UK Business Insurance Policy Won''t Cover You in the UAE'
+summary: Moving your agency to Dubai? Your UK professional indemnity and public liability insurance almost certainly won't cover work performed in the UAE. Here's what you need to arrange before your first local client signs.
+schema: ''
 faqs:
-  - question: "Can I add a UAE endorsement to my UK insurance policy?"
-    answer: "No. UK insurers are not licensed to cover UAE-based risks. Any broker who offers to \"add a note\" is giving you false comfort. You need a separate policy from a UAE-authorised insurer."
-  - question: "Do I need UAE insurance if I only work remotely from Dubai for UK clients?"
-    answer: "Yes, if you are physically present in Dubai while performing the work. Your UK policy likely requires you to be based in the UK. If you are working from Dubai for three months, your UK insurer may consider that a material change in risk. Check the territorial wording carefully."
-  - question: "How much does UAE professional indemnity insurance cost for a small agency?"
-    answer: "Expect AED 8,000 to AED 20,000 per year (roughly £1,700 to £4,300) for AED 1m to AED 2m of cover. Premiums depend on your revenue, the type of work you do, and your claims history."
-  - question: "What happens if I make a claim on my UK policy while living in Dubai?"
-    answer: "The insurer will ask where the work was performed and where the client is based. If the answer is Dubai, they will likely decline the claim. If you have not disclosed your relocation, they may void the policy entirely for non-disclosure of a material fact."
+- question: Can I add a UAE endorsement to my UK insurance policy?
+  answer: No. UK insurers are not licensed to cover UAE-based risks. Any broker who offers to "add a note" is giving you false comfort. You need a separate policy from a UAE-authorised insurer.
+- question: Do I need UAE insurance if I only work remotely from Dubai for UK clients?
+  answer: Yes, if you are physically present in Dubai while performing the work. Your UK policy likely requires you to be based in the UK. If you are working from Dubai for three months, your UK insurer may consider that a material change in risk. Check the territorial wording carefully.
+- question: How much does UAE professional indemnity insurance cost for a small agency?
+  answer: Expect AED 8,000 to AED 20,000 per year (roughly £1,700 to £4,300) for AED 1m to AED 2m of cover. Premiums depend on your revenue, the type of work you do, and your claims history.
+- question: What happens if I make a claim on my UK policy while living in Dubai?
+  answer: The insurer will ask where the work was performed and where the client is based. If the answer is Dubai, they will likely decline the claim. If you have not disclosed your relocation, they may void the policy entirely for non-disclosure of a material fact.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- UK professional indemnity policies typically exclude claims arising from work performed outside the UK, including the UAE.
+- If you operate from Dubai, your UK insurer will likely decline claims governed by UAE law or heard in UAE courts.
+- UAE regulations require insurance covering local risks to be placed with locally authorised insurers, not UK providers.
+- A material change in your principal place of business to Dubai can void your UK policy even if territorial wording seems favourable.
+- You must arrange separate professional indemnity and public liability insurance from a UAE-licensed insurer before signing local clients.
 ---
-
 <p>If you are relocating your agency to Dubai, there is a good chance your UK business insurance policy will not cover you for work performed in the UAE. This is not a small print technicality. It is a fundamental exclusion that leaves you uninsured for local client work, subcontractor disputes, and any public liability claims that arise on UAE soil.</p>
 
 <p>I have seen agency founders discover this gap three ways: when they try to make a claim, when a UAE client asks for proof of local cover before signing, or when their UK broker quietly confirms the exclusion after the move. None of those are good moments.</p>

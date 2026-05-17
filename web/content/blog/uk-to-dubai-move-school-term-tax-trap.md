@@ -1,33 +1,40 @@
 ---
-title: "UK to Dubai Move: The School Term Trap That Forces You to Pay UK Tax for an Extra Year"
-slug: "uk-to-dubai-move-school-term-tax-trap"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-to-dubai-move-school-term-tax-trap"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK to Dubai Move School Term Tax Trap: Avoid Paying"
-metaDescription: "Moving to Dubai mid-school term can keep you UK-resident for tax. Here's how the school term trap works and how to avoid it with proper planning."
-altText: "Agency founder family with school bags outside a Dubai villa, moving from the UK to avoid the school term tax trap"
-image: "/blog/uk-to-dubai-move-school-term-tax-trap.jpg"
+title: 'UK to Dubai Move: The School Term Trap That Forces You to Pay UK Tax for an Extra Year'
+slug: uk-to-dubai-move-school-term-tax-trap
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-to-dubai-move-school-term-tax-trap
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK to Dubai Move School Term Tax Trap: Avoid Paying'
+metaDescription: Moving to Dubai mid-school term can keep you UK-resident for tax. Here's how the school term trap works and how to avoid it with proper planning.
+altText: Agency founder family with school bags outside a Dubai villa, moving from the UK to avoid the school term tax trap
+image: /blog/uk-to-dubai-move-school-term-tax-trap.jpg
 imageCredit:
-  photographer: "Pavel Danilyuk"
-  photographerUrl: "https://www.pexels.com/@pavel-danilyuk"
-  sourceUrl: "https://www.pexels.com/photo/girl-carrying-a-backpack-holding-a-signage-8423913/"
-  source: "Pexels"
-h1: "UK to Dubai Move: The School Term Trap That Forces You to Pay UK Tax for an Extra Year"
-summary: "Planning a UK to Dubai move with children? The school term trap means your family's school calendar can inadvertently keep you UK-resident for an extra tax year. We explain how the Statutory Residence Test interacts with term dates, and what agency founders need to do to avoid a six-figure UK tax bill."
-schema: ""
+  photographer: Pavel Danilyuk
+  photographerUrl: https://www.pexels.com/@pavel-danilyuk
+  sourceUrl: https://www.pexels.com/photo/girl-carrying-a-backpack-holding-a-signage-8423913/
+  source: Pexels
+h1: 'UK to Dubai Move: The School Term Trap That Forces You to Pay UK Tax for an Extra Year'
+summary: Planning a UK to Dubai move with children? The school term trap means your family's school calendar can inadvertently keep you UK-resident for an extra tax year. We explain how the Statutory Residence Test interacts with term dates, and what agency founders need to do to avoid a six-figure UK tax bill.
+schema: ''
 faqs:
-  - question: "What is the UK to Dubai move school term tax trap?"
-    answer: "The school term tax trap occurs when agency founders move to Dubai during the UK summer holidays (August) but their children start the Dubai school year in September. Because the UK tax year ends on 5 April, leaving in August means you have already spent over 90 days in the UK in that tax year, and your children's presence in UK education creates a family tie. This can keep you UK-resident for the full tax year, costing you tax on your worldwide income including your Dubai salary."
-  - question: "Can split year treatment help me avoid the school term trap?"
-    answer: "Split year treatment can help if you leave the UK to start full-time work overseas, but it applies to you personally, not to your family. If your spouse and children remain in the UK for the rest of the tax year, you still have family ties under the Statutory Residence Test. These ties can keep you UK-resident even with split year treatment. The trap is that your family's presence in UK education creates a tie that split year treatment does not break."
-  - question: "When is the best time to move to Dubai to avoid paying an extra year of UK tax?"
-    answer: "The best time to move is before 6 April, the start of the new UK tax year. This means moving during the UK spring term (March or early April). Your children miss the final half-term of UK school but start at a Dubai school in the autumn term (August/September). You become non-resident from 6 April and pay UK tax only on UK-source income for that tax year. The tax saving typically outweighs any educational disruption."
-  - question: "What documents does HMRC ask for if I claim non-residence after moving to Dubai?"
-    answer: "HMRC will ask for your children's school attendance records from both UK and Dubai schools, your travel records (flight bookings, passport stamps, credit card transactions), your spouse's travel records, your Dubai employment contract and evidence of work (35+ hours per week), your UK property sale or rental agreement, and your Dubai tenancy agreement. They cross-reference these against the Statutory Residence Test to verify your non-residence claim."
+- question: What is the UK to Dubai move school term tax trap?
+  answer: The school term tax trap occurs when agency founders move to Dubai during the UK summer holidays (August) but their children start the Dubai school year in September. Because the UK tax year ends on 5 April, leaving in August means you have already spent over 90 days in the UK in that tax year, and your children's presence in UK education creates a family tie. This can keep you UK-resident for the full tax year, costing you tax on your worldwide income including your Dubai salary.
+- question: Can split year treatment help me avoid the school term trap?
+  answer: Split year treatment can help if you leave the UK to start full-time work overseas, but it applies to you personally, not to your family. If your spouse and children remain in the UK for the rest of the tax year, you still have family ties under the Statutory Residence Test. These ties can keep you UK-resident even with split year treatment. The trap is that your family's presence in UK education creates a tie that split year treatment does not break.
+- question: When is the best time to move to Dubai to avoid paying an extra year of UK tax?
+  answer: The best time to move is before 6 April, the start of the new UK tax year. This means moving during the UK spring term (March or early April). Your children miss the final half-term of UK school but start at a Dubai school in the autumn term (August/September). You become non-resident from 6 April and pay UK tax only on UK-source income for that tax year. The tax saving typically outweighs any educational disruption.
+- question: What documents does HMRC ask for if I claim non-residence after moving to Dubai?
+  answer: HMRC will ask for your children's school attendance records from both UK and Dubai schools, your travel records (flight bookings, passport stamps, credit card transactions), your spouse's travel records, your Dubai employment contract and evidence of work (35+ hours per week), your UK property sale or rental agreement, and your Dubai tenancy agreement. They cross-reference these against the Statutory Residence Test to verify your non-residence claim.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- The school term trap can make you UK-resident for an extra tax year if your children attend UK school after you move, costing up to £50,000 in tax on £150,000 dividends.
+- Under the Statutory Residence Test, a child in UK education for 61+ days creates a family tie, locking in UK residence for the full tax year.
+- If your spouse stays in the UK family home until term ends, you have an accommodation tie for that period, even if you sell the house later.
+- Leaving the UK in January 2026 after the autumn term likely makes you UK-resident for the entire 2025/26 tax year, taxing your worldwide income including Dubai salary.
+- To avoid this trap, align your move with the UK tax year (5 April) or ensure your family leaves before the school term starts in September.
 ---
-
 <p>You've sold the agency or handed over day-to-day control. You've found a villa in Dubai Marina. You've enrolled the kids in a British-curriculum school. There's just one problem: the school term starts in September, and you're moving in August. That six-week overlap between the UK summer holidays and the Dubai academic year can cost you an extra year of UK tax. Possibly more.</p>
 
 <p>This is the <strong>UK to Dubai move school term tax trap</strong>. And it catches agency founders who plan the relocation around their children's education, not around the UK tax year. The difference between leaving on 5 April and leaving on 6 April is roughly £50,000 in tax for a founder earning £150,000 in dividends. The school term trap can push you over that line without you realising it.</p>

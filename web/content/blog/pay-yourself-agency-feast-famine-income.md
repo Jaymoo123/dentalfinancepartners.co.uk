@@ -1,33 +1,40 @@
 ---
-title: "How to Pay Yourself When Your Agency's Income Is Feast or Famine"
-slug: "pay-yourself-agency-feast-famine-income"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/pay-yourself-agency-feast-famine-income"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Salary and Dividends"
-metaTitle: "Agency Founder Pay Yourself Salary Dividend With Irregular"
-metaDescription: "Irregular income makes director pay decisions hard. Here is how to set a salary and dividend strategy that works when retained profits fluctuate month"
-altText: "Agency founder reviewing financial reports in a modern UK office with a laptop and coffee"
-image: "/blog/pay-yourself-agency-feast-famine-income.jpg"
+title: How to Pay Yourself When Your Agency's Income Is Feast or Famine
+slug: pay-yourself-agency-feast-famine-income
+canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/pay-yourself-agency-feast-famine-income
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Salary and Dividends
+metaTitle: Agency Founder Pay Yourself Salary Dividend With Irregular
+metaDescription: Irregular income makes director pay decisions hard. Here is how to set a salary and dividend strategy that works when retained profits fluctuate month
+altText: Agency founder reviewing financial reports in a modern UK office with a laptop and coffee
+image: /blog/pay-yourself-agency-feast-famine-income.jpg
 imageCredit:
-  photographer: "Leeloo The First"
-  photographerUrl: "https://www.pexels.com/@leeloothefirst"
-  sourceUrl: "https://www.pexels.com/photo/tax-documents-8970290/"
-  source: "Pexels"
-h1: "How to Pay Yourself When Your Agency's Income Is Feast or Famine"
-summary: "A practical guide for agency founders whose income swings month to month. Learn how to set a stable salary and dividend strategy that works with fluctuating retained profits, not against them."
-schema: ""
+  photographer: Leeloo The First
+  photographerUrl: https://www.pexels.com/@leeloothefirst
+  sourceUrl: https://www.pexels.com/photo/tax-documents-8970290/
+  source: Pexels
+h1: How to Pay Yourself When Your Agency's Income Is Feast or Famine
+summary: A practical guide for agency founders whose income swings month to month. Learn how to set a stable salary and dividend strategy that works with fluctuating retained profits, not against them.
+schema: ''
 faqs:
-  - question: "Can I declare a dividend if my agency has retained profits but no cash in the bank?"
-    answer: "Legally, yes. Distributable profits are based on the balance sheet, not the bank account. But practically, you need cash to pay the dividend. If your retained profits are tied up in unpaid invoices or fixed assets, you cannot pay yourself without borrowing or waiting for cash to come in. Always check your cash position before declaring a dividend."
-  - question: "What happens if I take more dividends than my retained profits allow?"
-    answer: "That is an illegal dividend. It is treated as a directors' loan, not a dividend. You will owe income tax on the amount as if it were salary, and the company may owe a Section 455 tax charge at 33.75% if the loan is not repaid within nine months of the year end. Avoid this by always checking retained earnings before declaring."
-  - question: "Should I pay myself a salary or dividends if my income is unpredictable?"
-    answer: "A fixed salary at the NI threshold (£12,570) is the baseline for most founders. Then use dividends for additional income, declared only when retained profits and cash allow. This gives you the tax efficiency of dividends with the flexibility to skip payments in lean months."
-  - question: "How often should I review my retained profits for dividend decisions?"
-    answer: "Quarterly is the minimum. Monthly is better if your income swings significantly. Your management accounts should be produced within two weeks of month end so you have real-time data. Tools like Float or Spotlight Reporting can automate this review and show you the cash impact before you declare."
+- question: Can I declare a dividend if my agency has retained profits but no cash in the bank?
+  answer: Legally, yes. Distributable profits are based on the balance sheet, not the bank account. But practically, you need cash to pay the dividend. If your retained profits are tied up in unpaid invoices or fixed assets, you cannot pay yourself without borrowing or waiting for cash to come in. Always check your cash position before declaring a dividend.
+- question: What happens if I take more dividends than my retained profits allow?
+  answer: That is an illegal dividend. It is treated as a directors' loan, not a dividend. You will owe income tax on the amount as if it were salary, and the company may owe a Section 455 tax charge at 33.75% if the loan is not repaid within nine months of the year end. Avoid this by always checking retained earnings before declaring.
+- question: Should I pay myself a salary or dividends if my income is unpredictable?
+  answer: A fixed salary at the NI threshold (£12,570) is the baseline for most founders. Then use dividends for additional income, declared only when retained profits and cash allow. This gives you the tax efficiency of dividends with the flexibility to skip payments in lean months.
+- question: How often should I review my retained profits for dividend decisions?
+  answer: Quarterly is the minimum. Monthly is better if your income swings significantly. Your management accounts should be produced within two weeks of month end so you have real-time data. Tools like Float or Spotlight Reporting can automate this review and show you the cash impact before you declare.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Set your salary at £12,570 per year (£1,047.50 per month) to avoid employee and employer National Insurance while building state pension credits.
+- Declare dividends only from retained profits shown on your balance sheet to stay legally compliant and avoid a Section 455 tax charge.
+- Review retained profits quarterly using management accounts before declaring dividends to avoid overdrawing your directors' loan account.
+- Cash flow, not just retained profits, determines whether you can pay a dividend—ensure sufficient bank funds before declaring.
+- For 2025/26, dividends within the basic rate band are taxed at 8.75%, rising to 33.75% for higher rate and 39.35% for additional rate taxpayers.
 ---
-
 <p>You have a 12-person digital agency based in Manchester's Northern Quarter. You bill £800k a year, but the cash does not arrive evenly. Some months you bank £90k from a retainer renewal and a big project go-live. Other months you scrape by on £25k of retainer income while three project invoices sit unpaid at 45 days. Your retained profits sit at £180k on the balance sheet today. Last quarter they were £220k. Next quarter they might be £140k.</p>
 
 <p>So how do you pay yourself when the numbers keep moving?</p>

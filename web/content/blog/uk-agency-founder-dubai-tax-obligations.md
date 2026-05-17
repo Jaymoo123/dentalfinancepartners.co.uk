@@ -1,33 +1,40 @@
 ---
-title: "UK Agency Founder Based in Dubai: Your UK Tax Obligations Explained"
-slug: "uk-agency-founder-dubai-tax-obligations"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-agency-founder-dubai-tax-obligations"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Dubai-Based UK Agency Founder: Your Tax Duties"
-metaDescription: "Running a UK agency from Dubai? Your UK tax obligations depend on residency, company structure, and where you work. We explain the rules for agency"
-altText: "UK agency founder working from a Dubai office with laptop and coffee, reviewing financial documents"
-image: "/blog/uk-agency-founder-dubai-tax-obligations.jpg"
+title: 'UK Agency Founder Based in Dubai: Your UK Tax Obligations Explained'
+slug: uk-agency-founder-dubai-tax-obligations
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-agency-founder-dubai-tax-obligations
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Dubai-Based UK Agency Founder: Your Tax Duties'
+metaDescription: Running a UK agency from Dubai? Your UK tax obligations depend on residency, company structure, and where you work. We explain the rules for agency
+altText: UK agency founder working from a Dubai office with laptop and coffee, reviewing financial documents
+image: /blog/uk-agency-founder-dubai-tax-obligations.jpg
 imageCredit:
-  photographer: "Aathif Aarifeen"
-  photographerUrl: "https://www.pexels.com/@aathif"
-  sourceUrl: "https://www.pexels.com/photo/smiling-businessman-sitting-at-desk-with-computer-19747906/"
-  source: "Pexels"
-h1: "UK Agency Founder Based in Dubai: Your UK Tax Obligations Explained"
-summary: "If you own a UK agency but live in Dubai, your tax position depends on three things: your UK residency status, your company structure, and where you actually do the work. We explain what HMRC looks for and how to avoid costly mistakes."
-schema: ""
+  photographer: Aathif Aarifeen
+  photographerUrl: https://www.pexels.com/@aathif
+  sourceUrl: https://www.pexels.com/photo/smiling-businessman-sitting-at-desk-with-computer-19747906/
+  source: Pexels
+h1: 'UK Agency Founder Based in Dubai: Your UK Tax Obligations Explained'
+summary: 'If you own a UK agency but live in Dubai, your tax position depends on three things: your UK residency status, your company structure, and where you actually do the work. We explain what HMRC looks for and how to avoid costly mistakes.'
+schema: ''
 faqs:
-  - question: "Do I need to pay UK tax if I live in Dubai and own a UK agency?"
-    answer: "Your personal UK tax depends on your residency status. If you pass the Statutory Residence Test and are genuinely non-resident, you do not pay UK tax on most income, including dividends from your UK company under the UK-UAE Double Taxation Agreement. But your UK company still pays corporation tax on its profits, and you still have filing obligations. If HMRC considers you UK-resident, you pay UK tax as normal."
-  - question: "Can my UK company become tax-resident in the UAE?"
-    answer: "In theory, yes, if the company's management and control takes place entirely in the UAE. In practice, it is difficult for agencies with UK clients, UK staff, or UK bank accounts. HMRC resists these arguments, and the process is complex. Most agency founders keep their company UK-tax-resident and manage their personal position instead. Speak to an ICAEW-qualified accountant before attempting this."
-  - question: "How many days can I spend in the UK without becoming resident?"
-    answer: "If you have been non-resident for the previous three tax years, you can spend up to 45 days in the UK per tax year without becoming resident. If you have been UK-resident in any of the previous three years, the limit drops to 15 days. These limits change if you have sufficient ties to the UK, such as family, accommodation, or UK work. The full SRT calculation is needed for certainty."
-  - question: "What happens if HMRC challenges my non-residency?"
-    answer: "HMRC can open an enquiry into your self-assessment return and ask for evidence of your days in the UK, your work pattern, and your UAE residence. If they decide you are UK-resident, they will assess tax on your worldwide income, plus interest and potentially penalties. Keep a day-by-day diary, flight records, and proof of your UAE visa and accommodation. Professional representation during an enquiry is strongly recommended."
+- question: Do I need to pay UK tax if I live in Dubai and own a UK agency?
+  answer: Your personal UK tax depends on your residency status. If you pass the Statutory Residence Test and are genuinely non-resident, you do not pay UK tax on most income, including dividends from your UK company under the UK-UAE Double Taxation Agreement. But your UK company still pays corporation tax on its profits, and you still have filing obligations. If HMRC considers you UK-resident, you pay UK tax as normal.
+- question: Can my UK company become tax-resident in the UAE?
+  answer: In theory, yes, if the company's management and control takes place entirely in the UAE. In practice, it is difficult for agencies with UK clients, UK staff, or UK bank accounts. HMRC resists these arguments, and the process is complex. Most agency founders keep their company UK-tax-resident and manage their personal position instead. Speak to an ICAEW-qualified accountant before attempting this.
+- question: How many days can I spend in the UK without becoming resident?
+  answer: If you have been non-resident for the previous three tax years, you can spend up to 45 days in the UK per tax year without becoming resident. If you have been UK-resident in any of the previous three years, the limit drops to 15 days. These limits change if you have sufficient ties to the UK, such as family, accommodation, or UK work. The full SRT calculation is needed for certainty.
+- question: What happens if HMRC challenges my non-residency?
+  answer: HMRC can open an enquiry into your self-assessment return and ask for evidence of your days in the UK, your work pattern, and your UAE residence. If they decide you are UK-resident, they will assess tax on your worldwide income, plus interest and potentially penalties. Keep a day-by-day diary, flight records, and proof of your UAE visa and accommodation. Professional representation during an enquiry is strongly recommended.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- To be non-resident, you must pass the Statutory Residence Test, typically by working full-time overseas with fewer than 91 UK days and 31 UK work days per tax year.
+- Your UK company remains UK-tax-resident and must pay corporation tax at 19% to 25% on its profits, regardless of where you live.
+- HMRC counts all UK days, including short visits for client meetings or holidays, so keep a day-by-day diary with calendar and travel evidence.
+- Moving to Dubai does not automatically sever your UK tax ties; you still have personal and company filing obligations if HMRC considers you resident or your company is UK-incorporated.
+- If you fail the full-time work overseas test, your UK ties (family, accommodation, work, days) determine residency, with more ties allowing fewer UK days.
 ---
-
 <h2>The Dubai Agency Founder Myth</h2>
 
 <p>There is a persistent belief among UK agency founders that moving to Dubai wipes out your UK tax bill. It does not.</p>

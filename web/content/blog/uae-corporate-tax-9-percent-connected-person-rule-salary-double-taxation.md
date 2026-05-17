@@ -1,33 +1,40 @@
 ---
-title: "UAE Corporate Tax 9%: The Connected Person Rule That Could Tax Your Agency's Owner-Manager Salary Twice"
-slug: "uae-corporate-tax-9-percent-connected-person-rule-salary-double-taxation"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-9-percent-connected-person-rule-salary-double-taxation"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UAE Corporate Tax 9%: The Connected Person Rule & Your"
-metaDescription: "The UAE's 9% corporate tax includes a connected person rule. Pay yourself a salary as an owner-manager? You could face double taxation. Here's how."
-altText: "UAE corporate tax 9 percent connected person rule applies to owner-manager salary in Dubai agency"
-image: "/blog/uae-corporate-tax-9-percent-connected-person-rule-salary-double-taxation.jpg"
+title: 'UAE Corporate Tax 9%: The Connected Person Rule That Could Tax Your Agency''s Owner-Manager Salary Twice'
+slug: uae-corporate-tax-9-percent-connected-person-rule-salary-double-taxation
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-9-percent-connected-person-rule-salary-double-taxation
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UAE Corporate Tax 9%: The Connected Person Rule & Your'
+metaDescription: The UAE's 9% corporate tax includes a connected person rule. Pay yourself a salary as an owner-manager? You could face double taxation. Here's how.
+altText: UAE corporate tax 9 percent connected person rule applies to owner-manager salary in Dubai agency
+image: /blog/uae-corporate-tax-9-percent-connected-person-rule-salary-double-taxation.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/close-up-photo-of-a-document-7821564/"
-  source: "Pexels"
-h1: "UAE Corporate Tax 9%: The Connected Person Rule That Could Tax Your Agency's Owner-Manager Salary Twice"
-summary: "The UAE's 9% corporate tax isn't as simple as a flat rate on profits. If you're an owner-manager paying yourself a salary, the connected person rule requires that salary to be at arm's length. Pay too little (or too much) and you risk double taxation. Here's what agency founders moving to or operating in Dubai need to know."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/close-up-photo-of-a-document-7821564/
+  source: Pexels
+h1: 'UAE Corporate Tax 9%: The Connected Person Rule That Could Tax Your Agency''s Owner-Manager Salary Twice'
+summary: The UAE's 9% corporate tax isn't as simple as a flat rate on profits. If you're an owner-manager paying yourself a salary, the connected person rule requires that salary to be at arm's length. Pay too little (or too much) and you risk double taxation. Here's what agency founders moving to or operating in Dubai need to know.
+schema: ''
 faqs:
-  - question: "What is the connected person rule in UAE corporate tax?"
-    answer: "The connected person rule requires that transactions between a company and its connected persons (including the owner-manager) are priced at arm's length. If the tax authority decides a salary, bonus, or benefit is not at market rate, they can disallow the expense in the company's corporation tax computation. This means the company pays tax on that amount, while the individual has already paid personal tax on it — effectively double taxation."
-  - question: "Does the UAE corporate tax 9% rate apply to my salary as an owner-manager?"
-    answer: "The 9% rate applies to your company's taxable profits, not directly to your salary. But if the tax authority challenges your salary as not at arm's length under the connected person rule, they can add the disallowed amount back to your company's profits. That portion then attracts corporate tax at 9% (or 0% if below the AED 375,000 threshold). Your personal salary remains taxable in your hands separately."
-  - question: "How do I set a defensible salary for my UAE agency?"
-    answer: "Benchmark your role against market data for similar positions in Dubai. Use salary surveys from Michael Page, Hays, or Robert Half. Set your salary at that level. Document your rationale in a memo and keep the benchmark data in your company records. Review and update the salary annually as your agency grows. If you want to take more money out, use dividends instead of increasing salary above market rate."
-  - question: "What happens if I pay myself no salary and only take dividends?"
-    answer: "The tax authority can impute a market salary and disallow a notional expense in your company's tax computation. You end up with a corporate tax bill on income you never received. This is a common trap. It is safer to pay yourself a defensible salary and take the rest as dividends. That way you have a clear paper trail and avoid the risk of an imputed adjustment."
+- question: What is the connected person rule in UAE corporate tax?
+  answer: The connected person rule requires that transactions between a company and its connected persons (including the owner-manager) are priced at arm's length. If the tax authority decides a salary, bonus, or benefit is not at market rate, they can disallow the expense in the company's corporation tax computation. This means the company pays tax on that amount, while the individual has already paid personal tax on it — effectively double taxation.
+- question: Does the UAE corporate tax 9% rate apply to my salary as an owner-manager?
+  answer: The 9% rate applies to your company's taxable profits, not directly to your salary. But if the tax authority challenges your salary as not at arm's length under the connected person rule, they can add the disallowed amount back to your company's profits. That portion then attracts corporate tax at 9% (or 0% if below the AED 375,000 threshold). Your personal salary remains taxable in your hands separately.
+- question: How do I set a defensible salary for my UAE agency?
+  answer: Benchmark your role against market data for similar positions in Dubai. Use salary surveys from Michael Page, Hays, or Robert Half. Set your salary at that level. Document your rationale in a memo and keep the benchmark data in your company records. Review and update the salary annually as your agency grows. If you want to take more money out, use dividends instead of increasing salary above market rate.
+- question: What happens if I pay myself no salary and only take dividends?
+  answer: The tax authority can impute a market salary and disallow a notional expense in your company's tax computation. You end up with a corporate tax bill on income you never received. This is a common trap. It is safer to pay yourself a defensible salary and take the rest as dividends. That way you have a clear paper trail and avoid the risk of an imputed adjustment.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- The UAE's 9% corporate tax applies to profits above AED 375,000, but the connected person rule can disallow owner-manager salaries not at arm's length.
+- If your salary is below market rate, the tax authority may add the difference back to company profits, causing double taxation.
+- Salaries above market rate are also at risk; the excess can be disallowed as a deductible expense.
+- Owner-managers must benchmark their salary against comparable roles to avoid the connected person rule triggering a tax adjustment.
+- A disallowed salary means the company pays 9% on that amount while you still pay personal tax, effectively taxing the same income twice.
 ---
-
 <p>If you run a marketing or digital agency from Dubai, you've probably heard the headline: UAE corporate tax is 9% on profits above AED 375,000. Simple enough, right?</p>
 
 <p>Not quite.</p>

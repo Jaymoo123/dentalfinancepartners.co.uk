@@ -1,33 +1,40 @@
 ---
-title: "How to Attest Your UK Degree for a UAE Residence Visa: A Step-by-Step Guide for Agency Founders"
-slug: "attest-uk-degree-uae-residence-visa"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/attest-uk-degree-uae-residence-visa"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Attest UK Degree for UAE Visa: Step-by-Step Guide (2025)"
-metaDescription: "Need to attest your UK degree for a UAE residence visa? We explain the Foreign Office, MoFA, and embassy steps. Avoid delays on your Dubai move."
-altText: "UK degree certificate and passport on a desk in a Dubai office, with a UAE residence visa document"
-image: "/blog/attest-uk-degree-uae-residence-visa.jpg"
+title: 'How to Attest Your UK Degree for a UAE Residence Visa: A Step-by-Step Guide for Agency Founders'
+slug: attest-uk-degree-uae-residence-visa
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/attest-uk-degree-uae-residence-visa
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Attest UK Degree for UAE Visa: Step-by-Step Guide (2025)'
+metaDescription: Need to attest your UK degree for a UAE residence visa? We explain the Foreign Office, MoFA, and embassy steps. Avoid delays on your Dubai move.
+altText: UK degree certificate and passport on a desk in a Dubai office, with a UAE residence visa document
+image: /blog/attest-uk-degree-uae-residence-visa.jpg
 imageCredit:
-  photographer: "M. Omar"
-  photographerUrl: "https://www.pexels.com/@m-omar-872032462"
-  sourceUrl: "https://www.pexels.com/photo/aerial-view-of-dubai-marina-skyline-and-towers-31033420/"
-  source: "Pexels"
-h1: "How to Attest Your UK Degree for a UAE Residence Visa"
-summary: "Moving your agency to Dubai? Attesting your UK degree is a mandatory step for many UAE residence visa applications. We walk through the Foreign Office, UAE embassy, and MoFA stages, including the new dataflow verification step, so you don't get stuck at immigration."
-schema: ""
+  photographer: M. Omar
+  photographerUrl: https://www.pexels.com/@m-omar-872032462
+  sourceUrl: https://www.pexels.com/photo/aerial-view-of-dubai-marina-skyline-and-towers-31033420/
+  source: Pexels
+h1: How to Attest Your UK Degree for a UAE Residence Visa
+summary: Moving your agency to Dubai? Attesting your UK degree is a mandatory step for many UAE residence visa applications. We walk through the Foreign Office, UAE embassy, and MoFA stages, including the new dataflow verification step, so you don't get stuck at immigration.
+schema: ''
 faqs:
-  - question: "How long does it take to attest a UK degree for a UAE visa?"
-    answer: "The full process takes 4 to 8 weeks in most cases. This includes FCDO attestation (10 to 15 working days), UAE Embassy attestation (5 to 10 working days), MoFA attestation (2 to 5 working days), and shipping time between each stage. If you need a replacement degree certificate or dataflow verification, add another 2 to 4 weeks."
-  - question: "Can I attest my UK degree online?"
-    answer: "No. The attestation process requires physical submission of your original degree certificate to the UK Foreign Office and the UAE Embassy in London. Some third-party services handle the physical submission for you, but the documents must be sent by post or delivered in person. There is no fully online route for UK degree attestation."
-  - question: "What if my degree is not from a UK university but I studied in the UK?"
-    answer: "You need to attest both your non-UK degree through its country of origin and your UK qualification (if any) through the standard UK process. The UAE requires all degrees to be attested. If your undergraduate degree is from India, for example, you must get it attested by Indian authorities first, then bring it to the UK for FCDO and UAE Embassy attestation."
-  - question: "How much does it cost to attest a UK degree for a UAE visa?"
-    answer: "Expect to pay £300 to £600 if you handle the process yourself, or £400 to £900 if you use a third-party attestation service. This includes FCDO fees (£30 to £50), UAE Embassy fees (£30 to £50), MoFA fees (AED 150 to AED 300), shipping costs (£20 to £50 per leg), and dataflow verification if required (AED 500 to AED 1,000)."
+- question: How long does it take to attest a UK degree for a UAE visa?
+  answer: The full process takes 4 to 8 weeks in most cases. This includes FCDO attestation (10 to 15 working days), UAE Embassy attestation (5 to 10 working days), MoFA attestation (2 to 5 working days), and shipping time between each stage. If you need a replacement degree certificate or dataflow verification, add another 2 to 4 weeks.
+- question: Can I attest my UK degree online?
+  answer: No. The attestation process requires physical submission of your original degree certificate to the UK Foreign Office and the UAE Embassy in London. Some third-party services handle the physical submission for you, but the documents must be sent by post or delivered in person. There is no fully online route for UK degree attestation.
+- question: What if my degree is not from a UK university but I studied in the UK?
+  answer: You need to attest both your non-UK degree through its country of origin and your UK qualification (if any) through the standard UK process. The UAE requires all degrees to be attested. If your undergraduate degree is from India, for example, you must get it attested by Indian authorities first, then bring it to the UK for FCDO and UAE Embassy attestation.
+- question: How much does it cost to attest a UK degree for a UAE visa?
+  answer: Expect to pay £300 to £600 if you handle the process yourself, or £400 to £900 if you use a third-party attestation service. This includes FCDO fees (£30 to £50), UAE Embassy fees (£30 to £50), MoFA fees (AED 150 to AED 300), shipping costs (£20 to £50 per leg), and dataflow verification if required (AED 500 to AED 1,000).
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Attesting your UK degree for a UAE residence visa requires stamps from the FCDO, UAE embassy, and MoFA, taking 4 to 8 weeks.
+- Start the attestation process before booking your flight; you cannot bypass any of the three stages.
+- Gather your original degree certificate, certified copy, academic transcript, passport copy, and any name-change documents.
+- The FCDO charges £30 to £50 per document with a 10 to 15 working day turnaround for standard processing.
+- Using a third-party attestation service costs more but reduces risk and saves time compared to direct submission.
 ---
-
 <p>If you are a UK agency founder moving your business to Dubai, you will discover that getting a UAE residence visa requires more than just your passport. One step that catches people out is the requirement to attest your UK degree. It is not optional for certain visa categories, and the process takes several weeks. Start it before you book your flight.</p>
 
 <p>This guide covers exactly what documents you need, where to send them, and how long each stage takes. We are ICAEW qualified accountants, not immigration lawyers, but we have helped dozens of agency founders through this process. The practical detail here comes from real client experience.</p>

@@ -1,33 +1,40 @@
 ---
-title: "Can Your Agency Claim R&D Tax Credits for Custom Klaviyo Flows and Email Automation Builds?"
-slug: "klaviyo-custom-flow-rd-tax-credits"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/klaviyo-custom-flow-rd-tax-credits"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Klaviyo Custom Flow R&D Tax Credits: Agency Guide"
-metaDescription: "Custom Klaviyo flows can qualify for R&D tax credits if they resolve technical uncertainty. Here’s what HMRC looks for and what doesn’t count."
-altText: "Agency developer working on a custom Klaviyo email automation flow on a laptop in a UK office"
-image: "/blog/klaviyo-custom-flow-rd-tax-credits.jpg"
+title: Can Your Agency Claim R&D Tax Credits for Custom Klaviyo Flows and Email Automation Builds?
+slug: klaviyo-custom-flow-rd-tax-credits
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/klaviyo-custom-flow-rd-tax-credits
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'Klaviyo Custom Flow R&D Tax Credits: Agency Guide'
+metaDescription: Custom Klaviyo flows can qualify for R&D tax credits if they resolve technical uncertainty. Here’s what HMRC looks for and what doesn’t count.
+altText: Agency developer working on a custom Klaviyo email automation flow on a laptop in a UK office
+image: /blog/klaviyo-custom-flow-rd-tax-credits.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/tax-season-6863255/"
-  source: "Pexels"
-h1: "Can Your Agency Claim R&D Tax Credits for Custom Klaviyo Flows and Email Automation Builds?"
-summary: "Building custom Klaviyo flows and email automations for clients can qualify for R&D tax credits, but only if the work resolves genuine technical uncertainty. This guide explains what HMRC expects, what doesn’t qualify, and how to document your claims properly."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/tax-season-6863255/
+  source: Pexels
+h1: Can Your Agency Claim R&D Tax Credits for Custom Klaviyo Flows and Email Automation Builds?
+summary: Building custom Klaviyo flows and email automations for clients can qualify for R&D tax credits, but only if the work resolves genuine technical uncertainty. This guide explains what HMRC expects, what doesn’t qualify, and how to document your claims properly.
+schema: ''
 faqs:
-  - question: "Can I claim R&D tax credits for building standard Klaviyo flows like abandoned cart or welcome emails?"
-    answer: "No. Standard flows using Klaviyo's built-in triggers, conditions, and actions are configuration work, not R&D. Even if you spend significant time on copy, design, or segmentation, that is marketing work. It does not resolve technical uncertainty in software engineering."
-  - question: "What is the minimum qualifying spend for an R&D claim on Klaviyo development?"
-    answer: "There is no formal minimum, but in practice claims under £10,000 of qualifying costs rarely justify the preparation time and the risk of HMRC scrutiny. For smaller amounts, focus on getting your documentation right. For claims above £20,000, the relief becomes meaningful for most agencies."
-  - question: "Do I need to have failed attempts to claim R&D tax credits for custom Klaviyo flows?"
-    answer: "Not necessarily, but documented failures strengthen your claim significantly. HMRC wants to see evidence of genuine technical uncertainty. If you tried three approaches before finding one that worked, and you can describe what you learned from each failure, that is powerful evidence. If you built it first time with no uncertainty, it is probably not R&D."
-  - question: "Can I claim for subcontractor costs if I hired a freelance Klaviyo developer?"
-    answer: "Yes, but only 65% of the payments qualify under the SME scheme unless the freelancer is connected to your company (a director, shareholder, or family member). For connected subcontractors, you can claim 100% of their costs. You must also ensure the freelancer's work was genuinely R&D, not routine development."
+- question: Can I claim R&D tax credits for building standard Klaviyo flows like abandoned cart or welcome emails?
+  answer: No. Standard flows using Klaviyo's built-in triggers, conditions, and actions are configuration work, not R&D. Even if you spend significant time on copy, design, or segmentation, that is marketing work. It does not resolve technical uncertainty in software engineering.
+- question: What is the minimum qualifying spend for an R&D claim on Klaviyo development?
+  answer: There is no formal minimum, but in practice claims under £10,000 of qualifying costs rarely justify the preparation time and the risk of HMRC scrutiny. For smaller amounts, focus on getting your documentation right. For claims above £20,000, the relief becomes meaningful for most agencies.
+- question: Do I need to have failed attempts to claim R&D tax credits for custom Klaviyo flows?
+  answer: Not necessarily, but documented failures strengthen your claim significantly. HMRC wants to see evidence of genuine technical uncertainty. If you tried three approaches before finding one that worked, and you can describe what you learned from each failure, that is powerful evidence. If you built it first time with no uncertainty, it is probably not R&D.
+- question: Can I claim for subcontractor costs if I hired a freelance Klaviyo developer?
+  answer: Yes, but only 65% of the payments qualify under the SME scheme unless the freelancer is connected to your company (a director, shareholder, or family member). For connected subcontractors, you can claim 100% of their costs. You must also ensure the freelancer's work was genuinely R&D, not routine development.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Custom Klaviyo flows can qualify for R&D tax credits only if the work resolves genuine technical uncertainty, not routine configuration.
+- HMRC requires that the project seeks an advance in software engineering, not just in the client's business processes.
+- Qualifying projects include building novel integrations, custom data pipelines, or predictive algorithms that require experimentation.
+- Routine tasks like setting standard triggers, conditions, and actions in Klaviyo do not qualify for R&D tax credits.
+- Document hypotheses, failed attempts, and eventual solutions to support a successful R&D claim with HMRC.
 ---
-
 <p>If your agency builds custom Klaviyo flows for clients, you have probably wondered whether the development time qualifies for R&D tax credits. The short answer is: yes, it can. But only for specific types of work. And the line between qualifying R&D and routine development is sharper than most agency founders realise.</p>
 
 <p>This article explains exactly where that line sits. We will walk through what HMRC actually looks for in a klaviyo custom flow r&d claim, what almost certainly does not qualify, and how to structure your records so you do not waste time on a claim that gets rejected.</p>

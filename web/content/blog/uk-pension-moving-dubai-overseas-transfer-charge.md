@@ -1,33 +1,40 @@
 ---
-title: "UK Pension When Moving to Dubai: The Overseas Transfer Charge That Could Cost You 25%"
-slug: "uk-pension-moving-dubai-overseas-transfer-charge"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-pension-moving-dubai-overseas-transfer-charge"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK Pension When Moving to Dubai: 25% Overseas Transfer"
-metaDescription: "Transferring a UK pension to a QROPS before age 55 can trigger a 25% unauthorised payment charge. Here’s what agency founders moving to Dubai need to know."
-altText: "UK pension paperwork on a desk next to a Dubai skyline photo, illustrating the overseas transfer charge trap for agency founders"
-image: "/blog/uk-pension-moving-dubai-overseas-transfer-charge.jpg"
+title: 'UK Pension When Moving to Dubai: The Overseas Transfer Charge That Could Cost You 25%'
+slug: uk-pension-moving-dubai-overseas-transfer-charge
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-pension-moving-dubai-overseas-transfer-charge
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK Pension When Moving to Dubai: 25% Overseas Transfer'
+metaDescription: Transferring a UK pension to a QROPS before age 55 can trigger a 25% unauthorised payment charge. Here’s what agency founders moving to Dubai need to know.
+altText: UK pension paperwork on a desk next to a Dubai skyline photo, illustrating the overseas transfer charge trap for agency founders
+image: /blog/uk-pension-moving-dubai-overseas-transfer-charge.jpg
 imageCredit:
-  photographer: "Afif Ramdhasuma"
-  photographerUrl: "https://www.pexels.com/@javaistan"
-  sourceUrl: "https://www.pexels.com/photo/traditional-wooden-boats-on-dubai-creek-31826467/"
-  source: "Pexels"
-h1: "UK Pension When Moving to Dubai: The Overseas Transfer Charge That Could Cost You 25% of Your Pot"
-summary: "Moving your agency to Dubai? Transferring your UK pension to a QROPS before age 55 can trigger a 25% unauthorised payment charge. Here’s how to avoid the trap, keep your pension intact, and plan your cross-border finances properly."
-schema: ""
+  photographer: Afif Ramdhasuma
+  photographerUrl: https://www.pexels.com/@javaistan
+  sourceUrl: https://www.pexels.com/photo/traditional-wooden-boats-on-dubai-creek-31826467/
+  source: Pexels
+h1: 'UK Pension When Moving to Dubai: The Overseas Transfer Charge That Could Cost You 25% of Your Pot'
+summary: Moving your agency to Dubai? Transferring your UK pension to a QROPS before age 55 can trigger a 25% unauthorised payment charge. Here’s how to avoid the trap, keep your pension intact, and plan your cross-border finances properly.
+schema: ''
 faqs:
-  - question: "Can I transfer my UK pension to a QROPS in Dubai if I am under 55?"
-    answer: "Only if you have been resident in the QROPS country for at least five UK tax years, or if the QROPS is an occupational pension scheme provided by your UAE employer. Most agency founders under 55 moving to Dubai do not meet these conditions. Transferring anyway triggers the 25% unauthorised payment charge."
-  - question: "What happens if I transfer my UK pension to a QROPS and HMRC applies the 25% charge?"
-    answer: "The UK pension scheme administrator deducts the 25% charge from the transfer value before sending the remainder to the QROPS. You never see the money. HMRC collects it directly. There is no appeal on grounds of ignorance. The only way to recover the charge is if you can prove the transfer was made in error, which is extremely difficult."
-  - question: "Is there any way to avoid the 25% charge if I am under 55 and moving to Dubai?"
-    answer: "Yes. Do not transfer your UK pension to a QROPS until you reach age 55. Leave the pension in the UK and manage it from Dubai. Alternatively, use a UAE-based savings or investment plan for new contributions. The 25% charge only applies to transfers, not to keeping your UK pension where it is."
-  - question: "Do I need to tell HMRC if I transfer my UK pension to a QROPS?"
-    answer: "The UK pension scheme administrator handles the reporting to HMRC. They issue a report through HMRC's system. You do not file anything separately. But you should keep your own records of the transfer, including the QROPS registration number, the date of transfer, and the transfer value. If HMRC queries the transfer later, you need to prove it was legitimate."
+- question: Can I transfer my UK pension to a QROPS in Dubai if I am under 55?
+  answer: Only if you have been resident in the QROPS country for at least five UK tax years, or if the QROPS is an occupational pension scheme provided by your UAE employer. Most agency founders under 55 moving to Dubai do not meet these conditions. Transferring anyway triggers the 25% unauthorised payment charge.
+- question: What happens if I transfer my UK pension to a QROPS and HMRC applies the 25% charge?
+  answer: The UK pension scheme administrator deducts the 25% charge from the transfer value before sending the remainder to the QROPS. You never see the money. HMRC collects it directly. There is no appeal on grounds of ignorance. The only way to recover the charge is if you can prove the transfer was made in error, which is extremely difficult.
+- question: Is there any way to avoid the 25% charge if I am under 55 and moving to Dubai?
+  answer: Yes. Do not transfer your UK pension to a QROPS until you reach age 55. Leave the pension in the UK and manage it from Dubai. Alternatively, use a UAE-based savings or investment plan for new contributions. The 25% charge only applies to transfers, not to keeping your UK pension where it is.
+- question: Do I need to tell HMRC if I transfer my UK pension to a QROPS?
+  answer: The UK pension scheme administrator handles the reporting to HMRC. They issue a report through HMRC's system. You do not file anything separately. But you should keep your own records of the transfer, including the QROPS registration number, the date of transfer, and the transfer value. If HMRC queries the transfer later, you need to prove it was legitimate.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Transferring a UK pension to a QROPS before age 55 can trigger a 25% unauthorised payment charge from HMRC.
+- The 25% charge applies if you do not have a pension tie to the receiving scheme, such as living in the QROPS country for five UK tax years.
+- Agency founders with SIPPs are at higher risk because they can move their pension easily, unlike employees with workplace schemes.
+- If you are over 55, the overseas transfer charge generally does not apply, but you must still use a legitimate HMRC-registered QROPS.
+- To avoid the penalty, delay any QROPS transfer until you meet the residence conditions or reach age 55.
 ---
-
 <p>You have built a profitable agency in the UK. You are considering a move to Dubai for the zero-income-tax environment, the lifestyle, or both. One question comes up early: what happens to your UK pension?</p>
 
 <p>The answer is more dangerous than most people think. Transferring a UK pension to a Qualifying Recognised Overseas Pension Scheme (QROPS) before age 55 can trigger a 25% unauthorised payment charge. That is not a fee. It is a tax penalty. And it applies on top of any other tax due.</p>

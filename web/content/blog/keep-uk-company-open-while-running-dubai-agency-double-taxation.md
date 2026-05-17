@@ -1,33 +1,40 @@
 ---
-title: "Can I Keep My UK Company Open While Running a Dubai Agency Without Triggering Double Taxation?"
-slug: "keep-uk-company-open-while-running-dubai-agency-double-taxation"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/keep-uk-company-open-while-running-dubai-agency-double-taxation"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Keep UK company open while running Dubai agency: double tax"
-metaDescription: "Can you keep your UK company open while running a Dubai agency? Yes, but transfer pricing and permanent establishment rules apply. Here's what to watch"
-altText: "UK agency founder reviewing documents at a desk in a Dubai office with a laptop and coffee"
-image: "/blog/keep-uk-company-open-while-running-dubai-agency-double-taxation.jpg"
+title: Can I Keep My UK Company Open While Running a Dubai Agency Without Triggering Double Taxation?
+slug: keep-uk-company-open-while-running-dubai-agency-double-taxation
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/keep-uk-company-open-while-running-dubai-agency-double-taxation
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Keep UK company open while running Dubai agency: double tax'
+metaDescription: Can you keep your UK company open while running a Dubai agency? Yes, but transfer pricing and permanent establishment rules apply. Here's what to watch
+altText: UK agency founder reviewing documents at a desk in a Dubai office with a laptop and coffee
+image: /blog/keep-uk-company-open-while-running-dubai-agency-double-taxation.jpg
 imageCredit:
-  photographer: "Negative Space"
-  photographerUrl: "https://www.pexels.com/@negativespace"
-  sourceUrl: "https://www.pexels.com/photo/man-walking-on-sidewalk-near-people-standing-and-sitting-beside-curtain-wall-building-34092/"
-  source: "Pexels"
-h1: "Can I Keep My UK Company Open While Running a Dubai Agency Without Triggering Double Taxation?"
-summary: "If you're a UK agency founder moving to Dubai, you likely want to keep your UK company for existing contracts. It's possible, but you need to manage transfer pricing, permanent establishment risk, and double taxation carefully. Here's how the structure works and where founders trip up."
-schema: ""
+  photographer: Negative Space
+  photographerUrl: https://www.pexels.com/@negativespace
+  sourceUrl: https://www.pexels.com/photo/man-walking-on-sidewalk-near-people-standing-and-sitting-beside-curtain-wall-building-34092/
+  source: Pexels
+h1: Can I Keep My UK Company Open While Running a Dubai Agency Without Triggering Double Taxation?
+summary: If you're a UK agency founder moving to Dubai, you likely want to keep your UK company for existing contracts. It's possible, but you need to manage transfer pricing, permanent establishment risk, and double taxation carefully. Here's how the structure works and where founders trip up.
+schema: ''
 faqs:
-  - question: "Will I pay double tax if I keep my UK company and run a Dubai agency?"
-    answer: "No, not if you structure correctly. The UK and UAE have a double tax treaty that prevents the same income being taxed twice. Your UK company pays UK corporation tax on its profits. Your Dubai agency pays 0% corporate tax (for now). You pay UK dividend tax on UK dividends and no tax on UAE salary. The two companies are separate, so no double taxation arises. But you must manage transfer pricing and permanent establishment risk to keep it that way."
-  - question: "Do I need to close my UK company when I move to Dubai?"
-    answer: "No. Many agency founders keep their UK company open to maintain existing client contracts, retain UK staff, and preserve trading history. You can run both companies in parallel. But you need to ensure the UK company has genuine substance in the UK (a team, an office, UK contracts) and that you document transfer pricing for any cross-charges between the two companies. If the UK company becomes a shell with no UK activity, HMRC may reclassify it as UAE-resident."
-  - question: "What happens to my UK company's corporation tax if I move to Dubai?"
-    answer: "Your UK company remains UK-resident and pays UK corporation tax on its profits at 19% or 25% depending on profit levels. Moving to Dubai does not change this. The company's residence is determined by where it is centrally managed and controlled. If you are in Dubai making decisions for the UK company, HMRC may argue the company is UAE-resident. But in practice, most founders keep the UK company UK-resident by ensuring UK team members handle day-to-day operations and board meetings happen in the UK."
-  - question: "Can I take a salary from both my UK company and my Dubai agency?"
-    answer: "Yes. You can take a salary from both. Your UK salary is subject to UK income tax and National Insurance. Your UAE salary is tax-free in the UAE. But watch your UK tax bands. If your UK salary plus dividends push you into higher rate tax, you pay 40% on salary and 33.75% on dividends. Many founders take the minimum salary from the UK company (£12,570) and a larger salary from the Dubai agency to stay tax-efficient."
+- question: Will I pay double tax if I keep my UK company and run a Dubai agency?
+  answer: No, not if you structure correctly. The UK and UAE have a double tax treaty that prevents the same income being taxed twice. Your UK company pays UK corporation tax on its profits. Your Dubai agency pays 0% corporate tax (for now). You pay UK dividend tax on UK dividends and no tax on UAE salary. The two companies are separate, so no double taxation arises. But you must manage transfer pricing and permanent establishment risk to keep it that way.
+- question: Do I need to close my UK company when I move to Dubai?
+  answer: No. Many agency founders keep their UK company open to maintain existing client contracts, retain UK staff, and preserve trading history. You can run both companies in parallel. But you need to ensure the UK company has genuine substance in the UK (a team, an office, UK contracts) and that you document transfer pricing for any cross-charges between the two companies. If the UK company becomes a shell with no UK activity, HMRC may reclassify it as UAE-resident.
+- question: What happens to my UK company's corporation tax if I move to Dubai?
+  answer: Your UK company remains UK-resident and pays UK corporation tax on its profits at 19% or 25% depending on profit levels. Moving to Dubai does not change this. The company's residence is determined by where it is centrally managed and controlled. If you are in Dubai making decisions for the UK company, HMRC may argue the company is UAE-resident. But in practice, most founders keep the UK company UK-resident by ensuring UK team members handle day-to-day operations and board meetings happen in the UK.
+- question: Can I take a salary from both my UK company and my Dubai agency?
+  answer: Yes. You can take a salary from both. Your UK salary is subject to UK income tax and National Insurance. Your UAE salary is tax-free in the UAE. But watch your UK tax bands. If your UK salary plus dividends push you into higher rate tax, you pay 40% on salary and 33.75% on dividends. Many founders take the minimum salary from the UK company (£12,570) and a larger salary from the Dubai agency to stay tax-efficient.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- You can keep your UK company open while running a Dubai agency, but must manage transfer pricing, permanent establishment risk, and double taxation.
+- HMRC can argue your UK company is managed from Dubai if you make key decisions there, potentially shifting its tax residence.
+- Transfer pricing requires the price between your UK and Dubai companies to be at arm's length, or HMRC will adjust profits and increase UK corporation tax.
+- To keep your UK company UK-resident, ensure board meetings, key decisions, bank accounts, and contracts remain in the UK.
+- A formal transfer pricing policy is essential to avoid HMRC challenges when your UK company subcontracts work to your Dubai agency.
 ---
-
 <h2>Yes, You Can Keep Both Companies Open. But the Structure Matters.</h2>
 <p>The short answer is yes. You can keep your UK company open while running a Dubai agency. Many agency founders do exactly this. They have existing retainer contracts, long-term client relationships, or a UK team they don't want to disrupt. Shutting down the UK entity and starting fresh in Dubai would mean renegotiating contracts, losing trading history, and potentially triggering early exit taxes.</p>
 <p>But keeping both companies open creates a cross-border structure. And that structure comes with three specific risks: double taxation, transfer pricing adjustments, and permanent establishment (PE) claims. Each of these can cost you thousands if you don't plan for them upfront.</p>

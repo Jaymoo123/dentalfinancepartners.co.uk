@@ -1,33 +1,40 @@
 ---
-title: "What Does an Agency Accountant Actually Do?"
-slug: "what-does-agency-accountant-do"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/what-does-agency-accountant-do"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Accountant Services"
-metaTitle: "Agency Accountant Role: What They Do for UK Founders"
-metaDescription: "What does an agency accountant actually do? We explain the real difference between a general accountant and specialist agency accountant services."
-altText: "Two agency founders reviewing financial reports with their ICAEW qualified accountant in a modern UK office"
-image: "/blog/what-does-agency-accountant-do.jpg"
+title: What Does an Agency Accountant Actually Do?
+slug: what-does-agency-accountant-do
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/what-does-agency-accountant-do
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Accountant Services
+metaTitle: 'Agency Accountant Role: What They Do for UK Founders'
+metaDescription: What does an agency accountant actually do? We explain the real difference between a general accountant and specialist agency accountant services.
+altText: Two agency founders reviewing financial reports with their ICAEW qualified accountant in a modern UK office
+image: /blog/what-does-agency-accountant-do.jpg
 imageCredit:
-  photographer: "Leeloo The First"
-  photographerUrl: "https://www.pexels.com/@leeloothefirst"
-  sourceUrl: "https://www.pexels.com/photo/smartphone-with-opened-calculator-lying-on-a-document-with-an-income-statement-8962521/"
-  source: "Pexels"
-h1: "What Does an Agency Accountant Actually Do? (For UK Agency Founders)"
-summary: "Most agency founders hire a general accountant. But a specialist agency accountant does more than file your tax return. They work on utilisation, gross margin, IR35, and exit strategy. Here's what that actually looks like in practice."
-schema: ""
+  photographer: Leeloo The First
+  photographerUrl: https://www.pexels.com/@leeloothefirst
+  sourceUrl: https://www.pexels.com/photo/smartphone-with-opened-calculator-lying-on-a-document-with-an-income-statement-8962521/
+  source: Pexels
+h1: What Does an Agency Accountant Actually Do? (For UK Agency Founders)
+summary: Most agency founders hire a general accountant. But a specialist agency accountant does more than file your tax return. They work on utilisation, gross margin, IR35, and exit strategy. Here's what that actually looks like in practice.
+schema: ''
 faqs:
-  - question: "What is the difference between a general accountant and an agency accountant?"
-    answer: "A general accountant handles compliance: tax returns, payroll, VAT. An agency accountant does all of that, plus they understand agency-specific metrics like utilisation rate, gross margin, revenue per head, and IR35 contractor compliance. They produce management accounts and advise on exit planning. If your accountant cannot tell you your utilisation rate, you are working with a generalist."
-  - question: "How much does an agency accountant cost in the UK?"
-    answer: "Costs vary by firm and complexity. A small agency turning over £200,000 might pay £1,500 to £3,000 per year for compliance work. A larger agency turning over £1 million with multiple staff and contractors might pay £5,000 to £12,000 per year for full service including management accounts. Some firms charge monthly retainers. Always ask what is included. Cheap compliance often means no strategic advice."
-  - question: "Do I need an agency accountant if I am a sole trader?"
-    answer: "It depends on your turnover and complexity. A sole trader web designer turning over £65,000 might benefit from an accountant who understands the agency sector, particularly if you use contractors or plan to incorporate. But a general accountant can handle straightforward self-assessment. If you are growing and plan to hire staff or incorporate within the next year, switching to an agency specialist now saves you rework later."
-  - question: "Can an agency accountant help with IR35?"
-    answer: "Yes. A specialist agency accountant reviews your contractor agreements, checks whether the CEST tool gives a reliable answer, and advises on whether a contractor is inside or outside IR35. They also help you issue Status Determination Statements (SDS) before the contractor starts work. If HMRC opens an enquiry, your accountant prepares the evidence and responds on your behalf."
+- question: What is the difference between a general accountant and an agency accountant?
+  answer: 'A general accountant handles compliance: tax returns, payroll, VAT. An agency accountant does all of that, plus they understand agency-specific metrics like utilisation rate, gross margin, revenue per head, and IR35 contractor compliance. They produce management accounts and advise on exit planning. If your accountant cannot tell you your utilisation rate, you are working with a generalist.'
+- question: How much does an agency accountant cost in the UK?
+  answer: Costs vary by firm and complexity. A small agency turning over £200,000 might pay £1,500 to £3,000 per year for compliance work. A larger agency turning over £1 million with multiple staff and contractors might pay £5,000 to £12,000 per year for full service including management accounts. Some firms charge monthly retainers. Always ask what is included. Cheap compliance often means no strategic advice.
+- question: Do I need an agency accountant if I am a sole trader?
+  answer: It depends on your turnover and complexity. A sole trader web designer turning over £65,000 might benefit from an accountant who understands the agency sector, particularly if you use contractors or plan to incorporate. But a general accountant can handle straightforward self-assessment. If you are growing and plan to hire staff or incorporate within the next year, switching to an agency specialist now saves you rework later.
+- question: Can an agency accountant help with IR35?
+  answer: Yes. A specialist agency accountant reviews your contractor agreements, checks whether the CEST tool gives a reliable answer, and advises on whether a contractor is inside or outside IR35. They also help you issue Status Determination Statements (SDS) before the contractor starts work. If HMRC opens an enquiry, your accountant prepares the evidence and responds on your behalf.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A specialist agency accountant reviews utilisation rate and gross margin, not just compliance, to help you run a profitable agency.
+- For 2025/26, corporation tax is 19% on profits up to £50,000, with marginal relief up to £250,000, then 25% above that.
+- Directors' loan accounts over £10,000 not cleared within nine months of year-end incur a 33.75% S455 tax charge.
+- Set your salary at £12,570 to avoid employee NI and use dividends above that threshold for tax efficiency.
+- Most agencies exceed the £90,000 VAT threshold; your accountant advises on standard or flat rate VAT schemes based on your costs.
 ---
-
 <p>If you run a marketing agency, a digital agency, or a creative agency in the UK, you probably have an accountant. But do you have an <strong>agency accountant</strong>? There is a difference. And it matters more than most founders realise.</p>
 
 <p>A general accountant files your tax return. They process your payroll. They send you a year-end file. That is the baseline. A specialist agency accountant does all of that, but they also understand how your business actually makes money. They know what utilisation rate means. They can tell you whether your gross margin is healthy for a 15-person agency. They have seen enough contractor IR35 determinations to spot a problem before HMRC does.</p>

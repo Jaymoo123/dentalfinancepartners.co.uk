@@ -1,33 +1,40 @@
 ---
-title: "Alphabet Share Structure: How It Works for Agency Founders"
-slug: "alphabet-share-structure-agency-founder"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/alphabet-share-structure-agency-founder"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "Alphabet shares for agency founders: how they work"
-metaDescription: "Alphabet shares let agency founders pay different dividends to different shareholders. How they work, why use them, and the tax implications explained."
-altText: "Agency founder reviewing share structure documents with accountant in a UK office meeting room"
-image: "/blog/alphabet-share-structure-agency-founder.jpg"
+title: 'Alphabet Share Structure: How It Works for Agency Founders'
+slug: alphabet-share-structure-agency-founder
+canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/alphabet-share-structure-agency-founder
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Incorporation and Structure
+metaTitle: 'Alphabet shares for agency founders: how they work'
+metaDescription: Alphabet shares let agency founders pay different dividends to different shareholders. How they work, why use them, and the tax implications explained.
+altText: Agency founder reviewing share structure documents with accountant in a UK office meeting room
+image: /blog/alphabet-share-structure-agency-founder.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/wooden-letter-blocks-spelling-stock-on-table-30917892/"
-  source: "Pexels"
-h1: "What Is an Alphabet Share Structure and How Does It Work for Agency Founders?"
-summary: "Alphabet shares are separate classes of shares in the same company, each carrying different dividend rights. For agency founders, they offer a way to pay different dividends to different shareholders without changing ownership percentages. This structure is common in owner-managed businesses where founders, key staff, and investors all hold shares but need different dividend outcomes."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/wooden-letter-blocks-spelling-stock-on-table-30917892/
+  source: Pexels
+h1: What Is an Alphabet Share Structure and How Does It Work for Agency Founders?
+summary: Alphabet shares are separate classes of shares in the same company, each carrying different dividend rights. For agency founders, they offer a way to pay different dividends to different shareholders without changing ownership percentages. This structure is common in owner-managed businesses where founders, key staff, and investors all hold shares but need different dividend outcomes.
+schema: ''
 faqs:
-  - question: "What is the difference between alphabet shares and ordinary shares?"
-    answer: "Ordinary shares are a single class where every share carries the same rights to dividends, voting, and capital. Alphabet shares are multiple classes (A, B, C, etc.) where each class can have different rights. The key difference is flexibility: alphabet shares let you pay different dividends to different shareholders without changing their percentage ownership."
-  - question: "Are alphabet shares tax-efficient for agency founders?"
-    answer: "Alphabet shares themselves are not a tax avoidance structure. They are a legal way to distribute dividends differently. The tax efficiency comes from using dividends (taxed at 8.75%, 33.75%, or 39.35%) instead of salary (subject to income tax and NI). For key staff, a small number of alphabet shares receiving dividends can save employer NI at 13.8% compared to a bonus. But the structure must have genuine commercial substance, or HMRC may challenge it under settlements legislation."
-  - question: "Can I issue alphabet shares to my spouse or family member?"
-    answer: "Yes, but with caution. If the family member does not work in the business, HMRC may apply the settlements legislation to tax the dividend income on you as the settlor. If the family member works in the agency and the dividend reflects their contribution, the risk is low. Always take specific advice before issuing alphabet shares to a non-working family member."
-  - question: "Do I need a solicitor to set up alphabet shares?"
-    answer: "Yes, for the legal documentation. You need a share subscription agreement that sets out the rights of each class, and possibly amended articles of association. Your accountant can advise on the tax implications and the commercial rationale, but the legal documents should be drafted by a solicitor who specialises in company law. Expect to pay £1,000-£3,000 for the initial setup, depending on complexity."
+- question: What is the difference between alphabet shares and ordinary shares?
+  answer: 'Ordinary shares are a single class where every share carries the same rights to dividends, voting, and capital. Alphabet shares are multiple classes (A, B, C, etc.) where each class can have different rights. The key difference is flexibility: alphabet shares let you pay different dividends to different shareholders without changing their percentage ownership.'
+- question: Are alphabet shares tax-efficient for agency founders?
+  answer: Alphabet shares themselves are not a tax avoidance structure. They are a legal way to distribute dividends differently. The tax efficiency comes from using dividends (taxed at 8.75%, 33.75%, or 39.35%) instead of salary (subject to income tax and NI). For key staff, a small number of alphabet shares receiving dividends can save employer NI at 13.8% compared to a bonus. But the structure must have genuine commercial substance, or HMRC may challenge it under settlements legislation.
+- question: Can I issue alphabet shares to my spouse or family member?
+  answer: Yes, but with caution. If the family member does not work in the business, HMRC may apply the settlements legislation to tax the dividend income on you as the settlor. If the family member works in the agency and the dividend reflects their contribution, the risk is low. Always take specific advice before issuing alphabet shares to a non-working family member.
+- question: Do I need a solicitor to set up alphabet shares?
+  answer: Yes, for the legal documentation. You need a share subscription agreement that sets out the rights of each class, and possibly amended articles of association. Your accountant can advise on the tax implications and the commercial rationale, but the legal documents should be drafted by a solicitor who specialises in company law. Expect to pay £1,000-£3,000 for the initial setup, depending on complexity.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Alphabet shares allow agency founders to pay different dividends to different shareholders without changing ownership percentages.
+- Each class of alphabet shares can have distinct dividend rights, enabling flexible profit sharing tied to performance or profit targets.
+- HMRC accepts alphabet share structures if they have genuine commercial substance and are set up correctly.
+- Using alphabet shares, a creative director can receive a supplementary dividend on A shares when profit targets are met, without triggering PAYE or employer NI.
+- Setting up alphabet shares requires articles of association permitting multiple share classes and a share subscription agreement defining class rights.
 ---
-
 <h2>What Exactly Are Alphabet Shares?</h2>
 
 <p>Alphabet shares are simply different classes of shares in the same company. They are labelled A shares, B shares, C shares, and so on. Each class can carry different rights to dividends, voting, and capital on a sale or winding up.</p>

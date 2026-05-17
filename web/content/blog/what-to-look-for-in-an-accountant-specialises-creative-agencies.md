@@ -1,33 +1,40 @@
 ---
-title: "What to Look for in an Accountant Who Specialises in Creative Agencies"
-slug: "what-to-look-for-in-an-accountant-specialises-creative-agencies"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/what-to-look-for-in-an-accountant-specialises-creative-agencies"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Accountant Services"
-metaTitle: "What to Look for in an Accountant Specialises Creative"
-metaDescription: "Hiring an accountant specialises creative agencies? Here are the 7 criteria we use ourselves. ICAEW qualified, agency-focused, and practical."
-altText: "Creative agency founder reviewing financial reports with an ICAEW qualified accountant in a modern London office"
-image: "/blog/what-to-look-for-in-an-accountant-specialises-creative-agencies.jpg"
+title: What to Look for in an Accountant Who Specialises in Creative Agencies
+slug: what-to-look-for-in-an-accountant-specialises-creative-agencies
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/what-to-look-for-in-an-accountant-specialises-creative-agencies
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Accountant Services
+metaTitle: What to Look for in an Accountant Specialises Creative
+metaDescription: Hiring an accountant specialises creative agencies? Here are the 7 criteria we use ourselves. ICAEW qualified, agency-focused, and practical.
+altText: Creative agency founder reviewing financial reports with an ICAEW qualified accountant in a modern London office
+image: /blog/what-to-look-for-in-an-accountant-specialises-creative-agencies.jpg
 imageCredit:
-  photographer: "Pavel Danilyuk"
-  photographerUrl: "https://www.pexels.com/@pavel-danilyuk"
-  sourceUrl: "https://www.pexels.com/photo/a-woman-in-business-attire-sitting-at-the-office-with-banknotes-on-the-floor-7654630/"
-  source: "Pexels"
-h1: "What to Look for in an Accountant Who Specialises in Creative Agencies"
-summary: "Most accountants can file your tax return. Very few understand how a creative agency actually makes money. Here is exactly what to look for when hiring an accountant who works with agencies like yours."
-schema: ""
+  photographer: Pavel Danilyuk
+  photographerUrl: https://www.pexels.com/@pavel-danilyuk
+  sourceUrl: https://www.pexels.com/photo/a-woman-in-business-attire-sitting-at-the-office-with-banknotes-on-the-floor-7654630/
+  source: Pexels
+h1: What to Look for in an Accountant Who Specialises in Creative Agencies
+summary: Most accountants can file your tax return. Very few understand how a creative agency actually makes money. Here is exactly what to look for when hiring an accountant who works with agencies like yours.
+schema: ''
 faqs:
-  - question: "What is the difference between a general accountant and one who specialises in creative agencies?"
-    answer: "A general accountant can handle compliance work like filing tax returns and processing payroll. An accountant who specialises in creative agencies understands the specific financial dynamics of agencies: retainer billing, project-based revenue, contractor IR35 determinations, utilisation rates, gross margin analysis, and exit planning. They proactively advise on structure, tax efficiency, and cash flow, rather than just reporting on what already happened."
-  - question: "Do I need an ICAEW qualified accountant for my creative agency?"
-    answer: "You do not legally need ICAEW qualification, but it is a strong indicator of technical depth. ICAEW qualified accountants have passed rigorous exams and are regulated by a recognised body. For agency-specific issues like IR35, R&D tax credits, BADR planning, and director's loan account management, you want someone with that level of technical knowledge. A bookkeeper or unqualified accountant may not have the expertise to handle complex tax planning."
-  - question: "How much should I expect to pay for an accountant who works with creative agencies?"
-    answer: "Fees vary widely depending on the scope of work and the size of your agency. A fixed monthly fee for a small agency (turnover up to £500k) typically ranges from £200 to £500 per month. This should cover year-end accounts, corporation tax, personal tax, payroll, VAT returns, and ongoing advice. Always ask for a detailed breakdown of what is included. Avoid firms that charge per phone call or email."
-  - question: "What questions should I ask when interviewing an accountant for my agency?"
-    answer: "Ask these specific questions: How many agency clients do you work with? Are you ICAEW qualified? Can you explain utilisation rate and gross margin? How do you handle IR35 determinations? What is the optimal salary and dividend structure for my situation? Have you helped agencies plan for BADR and exit? How often do you proactively contact clients? What software do you recommend? What are your fees and what is included? Can you share a relevant case study?"
+- question: What is the difference between a general accountant and one who specialises in creative agencies?
+  answer: 'A general accountant can handle compliance work like filing tax returns and processing payroll. An accountant who specialises in creative agencies understands the specific financial dynamics of agencies: retainer billing, project-based revenue, contractor IR35 determinations, utilisation rates, gross margin analysis, and exit planning. They proactively advise on structure, tax efficiency, and cash flow, rather than just reporting on what already happened.'
+- question: Do I need an ICAEW qualified accountant for my creative agency?
+  answer: You do not legally need ICAEW qualification, but it is a strong indicator of technical depth. ICAEW qualified accountants have passed rigorous exams and are regulated by a recognised body. For agency-specific issues like IR35, R&D tax credits, BADR planning, and director's loan account management, you want someone with that level of technical knowledge. A bookkeeper or unqualified accountant may not have the expertise to handle complex tax planning.
+- question: How much should I expect to pay for an accountant who works with creative agencies?
+  answer: Fees vary widely depending on the scope of work and the size of your agency. A fixed monthly fee for a small agency (turnover up to £500k) typically ranges from £200 to £500 per month. This should cover year-end accounts, corporation tax, personal tax, payroll, VAT returns, and ongoing advice. Always ask for a detailed breakdown of what is included. Avoid firms that charge per phone call or email.
+- question: What questions should I ask when interviewing an accountant for my agency?
+  answer: 'Ask these specific questions: How many agency clients do you work with? Are you ICAEW qualified? Can you explain utilisation rate and gross margin? How do you handle IR35 determinations? What is the optimal salary and dividend structure for my situation? Have you helped agencies plan for BADR and exit? How often do you proactively contact clients? What software do you recommend? What are your fees and what is included? Can you share a relevant case study?'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Look for an accountant with genuine agency experience, not just a website page claiming to serve creative businesses.
+- An ICAEW-qualified accountant is essential for handling technical complexities like IR35, R&D claims, and BADR planning.
+- Your accountant must understand agency-specific finances, including retainer billing, utilisation rates, and variable gross margins.
+- A qualified accountant can help improve gross margins, as seen with agencies moving from 45% to 62% through contractor restructuring.
+- Ask direct questions about agency clients, turnover ranges, and past margin improvements to verify an accountant's expertise.
 ---
-
 <h2>Why a General Accountant Won't Cut It for Your Creative Agency</h2>
 
 <p>Most accountants can handle a tax return. They can process payroll, file a CT600, and send you a set of year-end accounts. That is the baseline. It is not enough for a creative agency.</p>

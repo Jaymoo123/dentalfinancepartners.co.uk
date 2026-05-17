@@ -1,33 +1,40 @@
 ---
-title: "Split Year Treatment: The First Year Trap for Agency Founders Who Travel Back for Client Meetings"
-slug: "split-year-treatment-uk-agency-founder-client-meetings"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/split-year-treatment-uk-agency-founder-client-meetings"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Split Year Treatment: The First Year Trap for UK Agency"
-metaDescription: "UK agency founders moving abroad: split year treatment isn’t a simple calendar split. Frequent client trips back can break the full-time work condition"
-altText: "Agency founder working remotely from a Dubai marina apartment with laptop and notebook"
-image: "/blog/split-year-treatment-uk-agency-founder-client-meetings.jpg"
+title: 'Split Year Treatment: The First Year Trap for Agency Founders Who Travel Back for Client Meetings'
+slug: split-year-treatment-uk-agency-founder-client-meetings
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/split-year-treatment-uk-agency-founder-client-meetings
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Split Year Treatment: The First Year Trap for UK Agency'
+metaDescription: 'UK agency founders moving abroad: split year treatment isn’t a simple calendar split. Frequent client trips back can break the full-time work condition'
+altText: Agency founder working remotely from a Dubai marina apartment with laptop and notebook
+image: /blog/split-year-treatment-uk-agency-founder-client-meetings.jpg
 imageCredit:
-  photographer: "Alicia Pirson"
-  photographerUrl: "https://www.pexels.com/@alicia-pirson-1903716889"
-  sourceUrl: "https://www.pexels.com/photo/golden-wheat-and-green-rye-fields-in-summer-28800911/"
-  source: "Pexels"
-h1: "Split Year Treatment: The First Year Trap for Agency Founders Who Travel Back for Client Meetings"
-summary: "Moving your agency abroad? Split year treatment can save you thousands in tax, but the rules are tighter than most founders realise. If you keep flying back for client meetings, you risk breaking the full-time work abroad condition in your first year. Here's what HMRC actually looks for."
-schema: ""
+  photographer: Alicia Pirson
+  photographerUrl: https://www.pexels.com/@alicia-pirson-1903716889
+  sourceUrl: https://www.pexels.com/photo/golden-wheat-and-green-rye-fields-in-summer-28800911/
+  source: Pexels
+h1: 'Split Year Treatment: The First Year Trap for Agency Founders Who Travel Back for Client Meetings'
+summary: Moving your agency abroad? Split year treatment can save you thousands in tax, but the rules are tighter than most founders realise. If you keep flying back for client meetings, you risk breaking the full-time work abroad condition in your first year. Here's what HMRC actually looks for.
+schema: ''
 faqs:
-  - question: "Can I claim split year treatment if I move abroad mid-tax year but keep my UK agency?"
-    answer: "Yes, but only if you meet the Case 1 condition for full-time work abroad. You need a 365-day period with fewer than 31 UK days and no more than 91 UK work days. Keeping your UK agency does not disqualify you, but every board meeting, client visit, and strategy session in the UK counts toward your UK work day limit."
-  - question: "Do client meetings in the UK count as UK work days for split year treatment?"
-    answer: "Yes. Any day where you do more than 3 hours of work in the UK counts as a UK work day. Client meetings, pitches, networking events, and even substantive business calls while in the UK all count. Incidental tasks like checking a single email do not, but if you are genuinely working, HMRC will count it."
-  - question: "What happens if I exceed 31 UK days during my first 365 days abroad?"
-    answer: "Your 365-day period resets. You cannot claim split year treatment for the tax year in which you left. You remain UK tax resident for that full year and pay UK tax on your worldwide income. You can still become non-resident in a later tax year if you eventually complete a clean 365-day period, but you lose the benefit for the departure year."
-  - question: "Does the 183-day test apply if I am moving to Dubai and keeping my UK agency?"
-    answer: "The 183-day test is part of the Statutory Residence Test, but it is not the only test. If you have sufficient UK ties (a home, family, or your agency in the UK), you can remain UK resident even with fewer than 183 UK days. Split year treatment under Case 1 is your best route to non-residence, but only if you meet the full-time work abroad condition."
+- question: Can I claim split year treatment if I move abroad mid-tax year but keep my UK agency?
+  answer: Yes, but only if you meet the Case 1 condition for full-time work abroad. You need a 365-day period with fewer than 31 UK days and no more than 91 UK work days. Keeping your UK agency does not disqualify you, but every board meeting, client visit, and strategy session in the UK counts toward your UK work day limit.
+- question: Do client meetings in the UK count as UK work days for split year treatment?
+  answer: Yes. Any day where you do more than 3 hours of work in the UK counts as a UK work day. Client meetings, pitches, networking events, and even substantive business calls while in the UK all count. Incidental tasks like checking a single email do not, but if you are genuinely working, HMRC will count it.
+- question: What happens if I exceed 31 UK days during my first 365 days abroad?
+  answer: Your 365-day period resets. You cannot claim split year treatment for the tax year in which you left. You remain UK tax resident for that full year and pay UK tax on your worldwide income. You can still become non-resident in a later tax year if you eventually complete a clean 365-day period, but you lose the benefit for the departure year.
+- question: Does the 183-day test apply if I am moving to Dubai and keeping my UK agency?
+  answer: The 183-day test is part of the Statutory Residence Test, but it is not the only test. If you have sufficient UK ties (a home, family, or your agency in the UK), you can remain UK resident even with fewer than 183 UK days. Split year treatment under Case 1 is your best route to non-residence, but only if you meet the full-time work abroad condition.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Split year treatment under Case 1 requires a 365-day period of full-time work abroad with fewer than 31 UK days and no more than 91 UK work days.
+- Flying back for client meetings counts as UK work days, and exceeding the 31-day limit resets the 365-day period, disqualifying split year treatment.
+- Agency founders who remain UK resident for the full year due to broken conditions owe UK income tax on all worldwide earnings.
+- The 183-day test and leaving by 5 April are not sufficient for split year treatment; the strict Case 1 conditions apply to self-employed founders and directors.
+- HMRC counts any work activity in the UK, including checking emails or taking calls, as a UK work day for the split year test.
 ---
-
 <h2>What Is Split Year Treatment and Why Does It Matter?</h2>
 
 <p>Split year treatment is a set of rules that determines when you stop being UK resident for tax purposes in the year you leave. If you qualify, your tax year is split into a UK part and a non-UK part. You only pay UK tax on income arising during the UK part. After that, you're taxed only on UK-source income (like dividends from a UK company) and not on your worldwide earnings.</p>

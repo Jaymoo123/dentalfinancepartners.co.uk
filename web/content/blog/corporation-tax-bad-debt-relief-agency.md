@@ -1,33 +1,40 @@
 ---
-title: "How to Claim Corporation Tax Relief on Bad Debts from Clients Who Don't Pay"
-slug: "corporation-tax-bad-debt-relief-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/corporation-tax-bad-debt-relief-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Corporation tax agency bad debt relief: how to claim it"
-metaDescription: "Unpaid invoices from clients who won't pay? Here's how to claim corporation tax relief on bad debts for your agency, with real examples and HMRC rules"
-altText: "Agency founder reviewing unpaid invoices on a laptop in a UK office with a calculator and paperwork"
-image: "/blog/corporation-tax-bad-debt-relief-agency.jpg"
+title: How to Claim Corporation Tax Relief on Bad Debts from Clients Who Don't Pay
+slug: corporation-tax-bad-debt-relief-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/corporation-tax-bad-debt-relief-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'Corporation tax agency bad debt relief: how to claim it'
+metaDescription: Unpaid invoices from clients who won't pay? Here's how to claim corporation tax relief on bad debts for your agency, with real examples and HMRC rules
+altText: Agency founder reviewing unpaid invoices on a laptop in a UK office with a calculator and paperwork
+image: /blog/corporation-tax-bad-debt-relief-agency.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-surface-7821565/"
-  source: "Pexels"
-h1: "How to Claim Corporation Tax Relief on Bad Debts from Clients Who Don't Pay"
-summary: "If a client goes bust or simply refuses to pay, you can claim corporation tax relief on the unpaid invoice. This guide explains exactly how to write off bad debts, what HMRC expects to see, and how to structure your accounts to make the claim stick."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-surface-7821565/
+  source: Pexels
+h1: How to Claim Corporation Tax Relief on Bad Debts from Clients Who Don't Pay
+summary: If a client goes bust or simply refuses to pay, you can claim corporation tax relief on the unpaid invoice. This guide explains exactly how to write off bad debts, what HMRC expects to see, and how to structure your accounts to make the claim stick.
+schema: ''
 faqs:
-  - question: "Can I claim bad debt relief if the client is still trading but refuses to pay?"
-    answer: "Yes, but only if you have taken reasonable steps to recover the debt and it is genuinely irrecoverable. \"Reasonable steps\" means formal reminders, letters before action, and potentially instructing a debt collection agency. If the client is still trading and has assets, HMRC may expect you to pursue recovery through the courts before accepting the debt as bad. Speak to your accountant before writing off a debt from a solvent client."
-  - question: "Do I need to reverse the bad debt relief if the client pays later?"
-    answer: "Yes. If a client pays after you have written off the debt and claimed relief, you must reverse the write-off in your accounts. The recovered amount becomes taxable income in the year you receive it. You effectively pay back the tax relief you claimed earlier. Keep a log of written-off debts and monitor them for recovery."
-  - question: "Can I claim bad debt relief on VAT as well as corporation tax?"
-    answer: "Yes, but through a separate process. The VAT bad debt relief scheme lets you reclaim the VAT element of an unpaid invoice after six months from the date of payment. This is a separate claim from your corporation tax relief. You claim corporation tax relief on the net invoice amount (excluding VAT). Do not claim corporation tax relief on the full invoice including VAT, or you will overclaim."
-  - question: "What evidence do I need to keep for HMRC if they challenge my bad debt claim?"
-    answer: "Keep the original invoice, proof of delivery of services, copies of all reminders and correspondence, records of phone calls, any insolvency notices from administrators or liquidators, and reports from debt collection agencies if used. Store these digitally in a dedicated folder. If HMRC opens an enquiry, you need to be able to produce this evidence quickly."
+- question: Can I claim bad debt relief if the client is still trading but refuses to pay?
+  answer: Yes, but only if you have taken reasonable steps to recover the debt and it is genuinely irrecoverable. "Reasonable steps" means formal reminders, letters before action, and potentially instructing a debt collection agency. If the client is still trading and has assets, HMRC may expect you to pursue recovery through the courts before accepting the debt as bad. Speak to your accountant before writing off a debt from a solvent client.
+- question: Do I need to reverse the bad debt relief if the client pays later?
+  answer: Yes. If a client pays after you have written off the debt and claimed relief, you must reverse the write-off in your accounts. The recovered amount becomes taxable income in the year you receive it. You effectively pay back the tax relief you claimed earlier. Keep a log of written-off debts and monitor them for recovery.
+- question: Can I claim bad debt relief on VAT as well as corporation tax?
+  answer: Yes, but through a separate process. The VAT bad debt relief scheme lets you reclaim the VAT element of an unpaid invoice after six months from the date of payment. This is a separate claim from your corporation tax relief. You claim corporation tax relief on the net invoice amount (excluding VAT). Do not claim corporation tax relief on the full invoice including VAT, or you will overclaim.
+- question: What evidence do I need to keep for HMRC if they challenge my bad debt claim?
+  answer: Keep the original invoice, proof of delivery of services, copies of all reminders and correspondence, records of phone calls, any insolvency notices from administrators or liquidators, and reports from debt collection agencies if used. Store these digitally in a dedicated folder. If HMRC opens an enquiry, you need to be able to produce this evidence quickly.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- You can claim corporation tax relief on unpaid invoices if the debt is legally owed, you have taken reasonable steps to recover it, and it is now irrecoverable.
+- HMRC does not allow relief on general bad debt provisions or doubtful debts, only on specific debts that have been written off as actually bad.
+- To claim bad debt relief, write off the irrecoverable amount in your year-end accounts, which reduces your taxable profit and saves corporation tax at 19% or 25%.
+- If a client enters administration or liquidation, that alone is sufficient evidence of irrecoverability for HMRC purposes.
+- VAT on unpaid invoices must be reclaimed separately through a VAT bad debt relief claim, not through corporation tax relief.
 ---
-
 <p>If you run an agency long enough, you will have a client who simply does not pay. Maybe they go into administration. Maybe they dispute the work and refuse to settle. Maybe they just vanish. Whatever the reason, you are left with an unpaid invoice that hits your profit and your cash flow.</p>
 
 <p>Here is the good news. You can claim corporation tax relief on that bad debt. HMRC does not expect you to pay tax on income you never received. The process is straightforward if you handle it correctly. Get it wrong and you leave money on the table, or worse, trigger an HMRC enquiry.</p>

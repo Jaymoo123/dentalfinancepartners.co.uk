@@ -1,33 +1,40 @@
 ---
-title: "What Is the Difference Between MTD VAT and MTD ITSA for Agency Founders?"
-slug: "mtd-vat-vs-mtd-itsa-agency-founder-difference"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-vat-vs-mtd-itsa-agency-founder-difference"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Making Tax Digital"
-metaTitle: "MTD VAT vs MTD ITSA: Key Differences for Agency Owners"
-metaDescription: "MTD VAT is live now. MTD ITSA starts April 2026 for agency founders earning over £50k. Here's the difference and what you need to do."
-altText: "Agency founder reviewing digital tax records on a laptop in a modern London office"
-image: "/blog/mtd-vat-vs-mtd-itsa-agency-founder-difference.jpg"
+title: What Is the Difference Between MTD VAT and MTD ITSA for Agency Founders?
+slug: mtd-vat-vs-mtd-itsa-agency-founder-difference
+canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-vat-vs-mtd-itsa-agency-founder-difference
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Making Tax Digital
+metaTitle: 'MTD VAT vs MTD ITSA: Key Differences for Agency Owners'
+metaDescription: MTD VAT is live now. MTD ITSA starts April 2026 for agency founders earning over £50k. Here's the difference and what you need to do.
+altText: Agency founder reviewing digital tax records on a laptop in a modern London office
+image: /blog/mtd-vat-vs-mtd-itsa-agency-founder-difference.jpg
 imageCredit:
-  photographer: "Mikael Blomkvist"
-  photographerUrl: "https://www.pexels.com/@mikael-blomkvist"
-  sourceUrl: "https://www.pexels.com/photo/people-sitting-at-the-table-6476256/"
-  source: "Pexels"
-h1: "What Is the Difference Between MTD VAT and MTD ITSA for Agency Founders?"
-summary: "Making Tax Digital (MTD) is already mandatory for VAT. From April 2026, MTD for Income Tax Self Assessment (ITSA) arrives for agency founders earning over £50k. Here's what changes, what stays the same, and what you need to do now."
-schema: ""
+  photographer: Mikael Blomkvist
+  photographerUrl: https://www.pexels.com/@mikael-blomkvist
+  sourceUrl: https://www.pexels.com/photo/people-sitting-at-the-table-6476256/
+  source: Pexels
+h1: What Is the Difference Between MTD VAT and MTD ITSA for Agency Founders?
+summary: Making Tax Digital (MTD) is already mandatory for VAT. From April 2026, MTD for Income Tax Self Assessment (ITSA) arrives for agency founders earning over £50k. Here's what changes, what stays the same, and what you need to do now.
+schema: ''
 faqs:
-  - question: "Do I need to do both MTD VAT and MTD ITSA?"
-    answer: "Yes, if you are a VAT-registered agency founder with personal income over £50,000. They are separate obligations. MTD VAT applies to your company's VAT returns. MTD ITSA applies to your personal tax. You must comply with both. Your accountant can handle both on your behalf, but you need to provide the underlying data for each."
-  - question: "What software do I need for MTD ITSA?"
-    answer: "You need HMRC-compatible software that supports MTD ITSA filing. Xero, QuickBooks, and FreeAgent are all developing this functionality. Some may require an add-on or separate module. Check with your software provider directly. Your accountant can also recommend specific tools. Do not assume your current software supports MTD ITSA just because it supports MTD VAT."
-  - question: "When does MTD ITSA start for agency founders?"
-    answer: "MTD ITSA starts in April 2026 for individuals with qualifying income over £50,000 per year. For those with income between £30,000 and £50,000, it starts in April 2027. If your income is under £30,000, you are not required to comply, though you can volunteer. Check your total personal income including salary, dividends, and bank interest."
-  - question: "Does MTD ITSA affect my company's corporation tax?"
-    answer: "No. MTD ITSA only affects your personal tax return (self-assessment). Your company's corporation tax, VAT, and payroll are separate obligations. The MTD VAT vs MTD ITSA distinction is important here: they are different systems for different taxes. Your company's CT600 corporation tax return is not changing under MTD ITSA."
+- question: Do I need to do both MTD VAT and MTD ITSA?
+  answer: Yes, if you are a VAT-registered agency founder with personal income over £50,000. They are separate obligations. MTD VAT applies to your company's VAT returns. MTD ITSA applies to your personal tax. You must comply with both. Your accountant can handle both on your behalf, but you need to provide the underlying data for each.
+- question: What software do I need for MTD ITSA?
+  answer: You need HMRC-compatible software that supports MTD ITSA filing. Xero, QuickBooks, and FreeAgent are all developing this functionality. Some may require an add-on or separate module. Check with your software provider directly. Your accountant can also recommend specific tools. Do not assume your current software supports MTD ITSA just because it supports MTD VAT.
+- question: When does MTD ITSA start for agency founders?
+  answer: MTD ITSA starts in April 2026 for individuals with qualifying income over £50,000 per year. For those with income between £30,000 and £50,000, it starts in April 2027. If your income is under £30,000, you are not required to comply, though you can volunteer. Check your total personal income including salary, dividends, and bank interest.
+- question: Does MTD ITSA affect my company's corporation tax?
+  answer: 'No. MTD ITSA only affects your personal tax return (self-assessment). Your company''s corporation tax, VAT, and payroll are separate obligations. The MTD VAT vs MTD ITSA distinction is important here: they are different systems for different taxes. Your company''s CT600 corporation tax return is not changing under MTD ITSA.'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- MTD VAT applies to your agency's VAT returns, while MTD ITSA applies to your personal income as an individual from April 2026.
+- From April 2026, MTD ITSA requires quarterly digital updates and an end-of-year declaration if your personal income exceeds £50,000.
+- MTD VAT has been mandatory since 2019 for VAT-registered agencies with turnover over £90,000, using HMRC-compatible software.
+- Agency founders earning over £50,000 from salary and dividends must comply with MTD ITSA, filing four quarterly summaries per tax year.
+- MTD ITSA extends to those earning over £30,000 from April 2027, replacing the current self-assessment tax return with digital records.
 ---
-
 <p>If you own a marketing agency, a digital agency, or any other type of agency in the UK, you have probably already dealt with Making Tax Digital for VAT. That is MTD VAT. It has been mandatory for VAT-registered businesses since 2019, and by now most agency founders have their VAT returns filed through compatible software like Xero, QuickBooks, or FreeAgent.</p>
 
 <p>But there is a second wave coming. Making Tax Digital for Income Tax Self Assessment, or MTD ITSA, starts from April 2026. This one applies to you even if you are not VAT-registered. It changes how you report your personal tax as a company director or sole trader.</p>

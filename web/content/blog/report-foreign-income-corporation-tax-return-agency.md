@@ -1,33 +1,40 @@
 ---
-title: "How to Report Foreign Income on Your Agency's UK Corporation Tax Return"
-slug: "report-foreign-income-corporation-tax-return-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/report-foreign-income-corporation-tax-return-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Report foreign income on your agency's UK corporation tax"
-metaDescription: "Foreign income on a UK corporation tax return: what counts, where to declare it, and how to avoid double taxation. Practical guide for agency founders."
-altText: "UK agency founder reviewing foreign income entries on a corporation tax return CT600 form at a desk in a Manchester office"
-image: "/blog/report-foreign-income-corporation-tax-return-agency.jpg"
+title: How to Report Foreign Income on Your Agency's UK Corporation Tax Return
+slug: report-foreign-income-corporation-tax-return-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/report-foreign-income-corporation-tax-return-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: Report foreign income on your agency's UK corporation tax
+metaDescription: 'Foreign income on a UK corporation tax return: what counts, where to declare it, and how to avoid double taxation. Practical guide for agency founders.'
+altText: UK agency founder reviewing foreign income entries on a corporation tax return CT600 form at a desk in a Manchester office
+image: /blog/report-foreign-income-corporation-tax-return-agency.jpg
 imageCredit:
-  photographer: "Kindel Media"
-  photographerUrl: "https://www.pexels.com/@kindelmedia"
-  sourceUrl: "https://www.pexels.com/photo/income-tax-return-paper-7688995/"
-  source: "Pexels"
-h1: "How to Report Foreign Income on Your Agency's UK Corporation Tax Return"
-summary: "If your agency earns income from overseas clients, overseas subsidiaries, or foreign bank accounts, you need to report it on your UK corporation tax return. This guide explains what counts as foreign income, where to declare it on the CT600, and how to claim double tax relief so you don't pay tax twice on the same profits."
-schema: ""
+  photographer: Kindel Media
+  photographerUrl: https://www.pexels.com/@kindelmedia
+  sourceUrl: https://www.pexels.com/photo/income-tax-return-paper-7688995/
+  source: Pexels
+h1: How to Report Foreign Income on Your Agency's UK Corporation Tax Return
+summary: If your agency earns income from overseas clients, overseas subsidiaries, or foreign bank accounts, you need to report it on your UK corporation tax return. This guide explains what counts as foreign income, where to declare it on the CT600, and how to claim double tax relief so you don't pay tax twice on the same profits.
+schema: ''
 faqs:
-  - question: "Do I need to report foreign income on my UK corporation tax return if my agency is a limited company?"
-    answer: "Yes. A UK-resident limited company is chargeable to corporation tax on its worldwide profits, regardless of where the client is based. Foreign income must be included in the turnover figure on the CT600. If foreign tax has been paid, you can claim double tax relief on the CT600J supplementary page to avoid paying tax twice."
-  - question: "What happens if I do not report foreign income on my corporation tax return?"
-    answer: "HMRC receives data from foreign tax authorities under automatic exchange of information agreements. If they find unreported foreign income, they will open an enquiry into your return. You will face penalties, interest on the unpaid tax, and potentially a compliance check that extends to other areas of your return. The penalty can be up to 100% of the tax due if HMRC considers the omission deliberate."
-  - question: "Can I claim double tax relief if there is no double tax treaty with the country where the income arose?"
-    answer: "Yes. UK law provides for unilateral relief where no treaty exists. You claim the lower of the foreign tax paid and the UK corporation tax due on that income. The relief is claimed on the CT600J supplementary page. You need to provide evidence of the foreign tax paid, such as a tax receipt or withholding tax certificate."
-  - question: "How do I convert foreign currency income into sterling for my corporation tax return?"
-    answer: "The standard method is to use the spot exchange rate on the date the income is recognised in your accounts. Most accounting software like Xero or QuickBooks handles this automatically if you enter transactions in the foreign currency with GBP as your base currency. Keep a record of the rates used. HMRC accepts a reasonable method applied consistently, but you must be able to demonstrate it if asked."
+- question: Do I need to report foreign income on my UK corporation tax return if my agency is a limited company?
+  answer: Yes. A UK-resident limited company is chargeable to corporation tax on its worldwide profits, regardless of where the client is based. Foreign income must be included in the turnover figure on the CT600. If foreign tax has been paid, you can claim double tax relief on the CT600J supplementary page to avoid paying tax twice.
+- question: What happens if I do not report foreign income on my corporation tax return?
+  answer: HMRC receives data from foreign tax authorities under automatic exchange of information agreements. If they find unreported foreign income, they will open an enquiry into your return. You will face penalties, interest on the unpaid tax, and potentially a compliance check that extends to other areas of your return. The penalty can be up to 100% of the tax due if HMRC considers the omission deliberate.
+- question: Can I claim double tax relief if there is no double tax treaty with the country where the income arose?
+  answer: Yes. UK law provides for unilateral relief where no treaty exists. You claim the lower of the foreign tax paid and the UK corporation tax due on that income. The relief is claimed on the CT600J supplementary page. You need to provide evidence of the foreign tax paid, such as a tax receipt or withholding tax certificate.
+- question: How do I convert foreign currency income into sterling for my corporation tax return?
+  answer: The standard method is to use the spot exchange rate on the date the income is recognised in your accounts. Most accounting software like Xero or QuickBooks handles this automatically if you enter transactions in the foreign currency with GBP as your base currency. Keep a record of the rates used. HMRC accepts a reasonable method applied consistently, but you must be able to demonstrate it if asked.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- UK-resident agencies must report all worldwide profits, including income from overseas clients, on their corporation tax return.
+- Foreign income includes overseas client fees, branch profits, foreign bank interest, royalties, and dividends from overseas subsidiaries.
+- Report foreign income in the same turnover box on the CT600 as UK income, without netting off or excluding it.
+- Use the CT600J supplementary page to claim double tax relief if foreign income has been taxed in another country.
+- Double tax treaties and the UK's participation exemption may reduce or eliminate UK tax on foreign dividends and branch profits.
 ---
-
 <p>If your agency earns money from clients outside the UK, you cannot leave that income off your corporation tax return. HMRC expects you to report it. The question is how, and where, and whether you end up paying tax twice.</p>
 
 <p>I deal with this question regularly from agency founders who have picked up a US client, a European retainer, or a project from a Middle Eastern brand. The instinct is to assume that if the client is overseas, the income is somehow outside the UK tax net. It is not. Your agency is UK-resident. Your worldwide profits are chargeable to corporation tax.</p>

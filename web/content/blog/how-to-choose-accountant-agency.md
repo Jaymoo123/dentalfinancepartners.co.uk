@@ -1,33 +1,40 @@
 ---
-title: "How to Choose an Accountant for Your Agency: A Founder's Guide"
-slug: "how-to-choose-accountant-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/how-to-choose-accountant-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Accountant Services"
-metaTitle: "Choose an Accountant for Your Agency | Expert Guide"
-metaDescription: "A practical guide for UK agency founders on selecting the right accountant. Covers agency-specific expertise, IR35, R&D, and what to ask before signing."
-altText: "Agency founder reviewing financial documents with an ICAEW qualified accountant in a modern UK office"
-image: "/blog/how-to-choose-accountant-agency.jpg"
+title: 'How to Choose an Accountant for Your Agency: A Founder''s Guide'
+slug: how-to-choose-accountant-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/how-to-choose-accountant-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Accountant Services
+metaTitle: Choose an Accountant for Your Agency | Expert Guide
+metaDescription: A practical guide for UK agency founders on selecting the right accountant. Covers agency-specific expertise, IR35, R&D, and what to ask before signing.
+altText: Agency founder reviewing financial documents with an ICAEW qualified accountant in a modern UK office
+image: /blog/how-to-choose-accountant-agency.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/calculator-and-tax-forms-inside-the-clear-envelope-6863518/"
-  source: "Pexels"
-h1: "How to Choose an Accountant for Your Agency: A Founder's Guide"
-summary: "Choosing the wrong accountant costs you time, tax, and growth. This guide covers what to look for, what to ask, and why agency-specific expertise matters."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/calculator-and-tax-forms-inside-the-clear-envelope-6863518/
+  source: Pexels
+h1: 'How to Choose an Accountant for Your Agency: A Founder''s Guide'
+summary: Choosing the wrong accountant costs you time, tax, and growth. This guide covers what to look for, what to ask, and why agency-specific expertise matters.
+schema: ''
 faqs:
-  - question: "What specific questions should I ask an accountant before hiring them for my agency?"
-    answer: "Ask how many agency clients they have, what R&D claims they have filed for agencies recently, how they handle IR35, what software they recommend, whether they prepare management accounts, and their experience with agency exits. Listen for specific examples, not vague answers."
-  - question: "How much should I expect to pay an accountant for my UK agency?"
-    answer: "For basic compliance, expect £1,500 to £3,000 per year. For quarterly management accounts, £3,000 to £6,000. For full strategic partnership including tax planning, R&D claims, and exit support, £6,000 to £15,000+. A good accountant saves more in tax than they cost."
-  - question: "Why can't I use a general accountant for my agency?"
-    answer: "A general accountant will keep you compliant but will miss agency-specific opportunities like R&D tax credits, Creative Sector Tax Relief, IR35 planning, and optimal dividend structures for agency revenue models. You need someone who understands utilisation rates, retainer contracts, and project-based cash flow."
-  - question: "What are the red flags when choosing an agency accountant?"
-    answer: "Red flags include: not asking about your agency model, recommending a flat salary without discussing dividends, giving vague reassurance instead of citing specific legislation, lacking ICAEW/ACCA/CIMA qualification, and not using cloud accounting software. Also avoid firms that do not prepare management accounts."
+- question: What specific questions should I ask an accountant before hiring them for my agency?
+  answer: Ask how many agency clients they have, what R&D claims they have filed for agencies recently, how they handle IR35, what software they recommend, whether they prepare management accounts, and their experience with agency exits. Listen for specific examples, not vague answers.
+- question: How much should I expect to pay an accountant for my UK agency?
+  answer: For basic compliance, expect £1,500 to £3,000 per year. For quarterly management accounts, £3,000 to £6,000. For full strategic partnership including tax planning, R&D claims, and exit support, £6,000 to £15,000+. A good accountant saves more in tax than they cost.
+- question: Why can't I use a general accountant for my agency?
+  answer: A general accountant will keep you compliant but will miss agency-specific opportunities like R&D tax credits, Creative Sector Tax Relief, IR35 planning, and optimal dividend structures for agency revenue models. You need someone who understands utilisation rates, retainer contracts, and project-based cash flow.
+- question: What are the red flags when choosing an agency accountant?
+  answer: 'Red flags include: not asking about your agency model, recommending a flat salary without discussing dividends, giving vague reassurance instead of citing specific legislation, lacking ICAEW/ACCA/CIMA qualification, and not using cloud accounting software. Also avoid firms that do not prepare management accounts.'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A general accountant handles compliance but misses agency-specific tax reliefs like Creative Sector Tax Relief and R&D credits.
+- An agency specialist understands your revenue model, structuring cash flow differently for retainer vs. project income.
+- IR35 compliance is critical for agencies using contractors; a specialist helps issue SDS and avoid HMRC penalties.
+- R&D tax credits can save your agency £3,534 per £10,000 of qualifying spend under the 186% SME enhanced deduction.
+- Your dividend strategy should change when profits cross £50k; an agency accountant optimises this for tax efficiency.
 ---
-
 <p>If you run a marketing agency, a digital agency, or a creative agency in the UK, your accountant is not optional admin. They are a strategic partner who directly affects your tax bill, your cash flow, and your exit value.</p>
 
 <p>But most accountants do not understand agencies. They understand bookkeeping, corporation tax, and payroll in a generic sense. They do not understand utilisation rates, retainer contracts, project burn, IR35 determinations, or the specific tax reliefs that apply when your agency builds software, designs websites, or produces content.</p>

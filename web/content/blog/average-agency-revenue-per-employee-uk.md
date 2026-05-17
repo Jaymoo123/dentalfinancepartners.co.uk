@@ -1,33 +1,40 @@
 ---
-title: "What Is the Average Agency Revenue Per Employee and How to Improve It"
-slug: "average-agency-revenue-per-employee-uk"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/average-agency-revenue-per-employee-uk"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "Agency revenue per employee: UK benchmark & tips"
-metaDescription: "UK agency revenue per employee averages £60k-£120k. Benchmark your agency, find the gaps, and improve utilisation, pricing, and gross margin."
-altText: "UK agency founder reviewing revenue per employee figures on a laptop in a Shoreditch office with a whiteboard in the background"
-image: "/blog/average-agency-revenue-per-employee-uk.jpg"
+title: What Is the Average Agency Revenue Per Employee and How to Improve It
+slug: average-agency-revenue-per-employee-uk
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/average-agency-revenue-per-employee-uk
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: 'Agency revenue per employee: UK benchmark & tips'
+metaDescription: UK agency revenue per employee averages £60k-£120k. Benchmark your agency, find the gaps, and improve utilisation, pricing, and gross margin.
+altText: UK agency founder reviewing revenue per employee figures on a laptop in a Shoreditch office with a whiteboard in the background
+image: /blog/average-agency-revenue-per-employee-uk.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/a-man-sitting-at-the-table-7821716/"
-  source: "Pexels"
-h1: "What Is the Average Agency Revenue Per Employee and How to Improve It"
-summary: "Revenue per employee is one of the most telling metrics for an agency. It shows you how efficiently you're turning headcount into income. This article covers what a healthy figure looks like for UK agencies and how to move yours up."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/a-man-sitting-at-the-table-7821716/
+  source: Pexels
+h1: What Is the Average Agency Revenue Per Employee and How to Improve It
+summary: Revenue per employee is one of the most telling metrics for an agency. It shows you how efficiently you're turning headcount into income. This article covers what a healthy figure looks like for UK agencies and how to move yours up.
+schema: ''
 faqs:
-  - question: "What is a good revenue per employee for a UK digital agency?"
-    answer: "A good figure for a UK digital agency is typically between £80,000 and £110,000 per employee per year. Agencies with a strong retainer base and high utilisation rates tend to sit at the top end. If your figure is below £65,000, look at your billing rates and utilisation first."
-  - question: "Does revenue per employee include directors?"
-    answer: "Yes, include all employees including directors who are on payroll. If you want a more refined view, calculate billable revenue per billable employee separately. But for the headline benchmark, use total headcount including founders."
-  - question: "How often should I calculate revenue per employee?"
-    answer: "Calculate it quarterly. Annual figures are useful for year-end reviews, but quarterly tracking lets you spot trends early. If your figure drops for two consecutive quarters, investigate before it becomes a permanent problem."
-  - question: "Can I improve revenue per employee without firing anyone?"
-    answer: "Yes, absolutely. Raising billing rates is the fastest way to improve revenue per employee without changing headcount. Improving utilisation rates from 65% to 75% can also add 15% to your revenue per employee without any headcount changes."
+- question: What is a good revenue per employee for a UK digital agency?
+  answer: A good figure for a UK digital agency is typically between £80,000 and £110,000 per employee per year. Agencies with a strong retainer base and high utilisation rates tend to sit at the top end. If your figure is below £65,000, look at your billing rates and utilisation first.
+- question: Does revenue per employee include directors?
+  answer: Yes, include all employees including directors who are on payroll. If you want a more refined view, calculate billable revenue per billable employee separately. But for the headline benchmark, use total headcount including founders.
+- question: How often should I calculate revenue per employee?
+  answer: Calculate it quarterly. Annual figures are useful for year-end reviews, but quarterly tracking lets you spot trends early. If your figure drops for two consecutive quarters, investigate before it becomes a permanent problem.
+- question: Can I improve revenue per employee without firing anyone?
+  answer: Yes, absolutely. Raising billing rates is the fastest way to improve revenue per employee without changing headcount. Improving utilisation rates from 65% to 75% can also add 15% to your revenue per employee without any headcount changes.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Revenue per employee for UK agencies typically ranges from £60,000 to £120,000, varying by specialism and business model.
+- To calculate revenue per employee, divide total annual revenue by total headcount, including all full-time and part-time staff.
+- A low revenue per employee figure suggests undercharging, overstaffing, or insufficient billable hours.
+- A high revenue per employee figure indicates lean operations, strong pricing, or both, but must be sustained with high utilisation.
+- Track your revenue per employee trend over time and compare it to agencies of similar size and specialism for meaningful benchmarking.
 ---
-
 <p>If you run a marketing, digital, or creative agency in the UK, you have probably asked yourself whether your team is earning enough for the business. The standard answer is to look at profit. But profit can be misleading when you are growing fast or investing in new hires.</p>
 
 <p>A more direct measure is revenue per employee. It strips out the noise and tells you how much income each person generates on average. It is a benchmark used across the agency world, and it gives you a quick temperature check on your business model.</p>

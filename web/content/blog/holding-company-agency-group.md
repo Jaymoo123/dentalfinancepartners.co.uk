@@ -1,33 +1,40 @@
 ---
-title: "Should You Set Up a Holding Company for Your Agency Group?"
-slug: "holding-company-agency-group"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/holding-company-agency-group"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "Holding Company for Agency: Pros, Cons & Setup Tips"
-metaDescription: "A holding company for your agency group can save tax and protect assets. We explain how they work, when they make sense, and what to watch for."
-altText: "Two agency founders reviewing a holding company structure on a laptop in a Manchester office"
-image: "/blog/holding-company-agency-group.jpg"
+title: Should You Set Up a Holding Company for Your Agency Group?
+slug: holding-company-agency-group
+canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/holding-company-agency-group
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Incorporation and Structure
+metaTitle: 'Holding Company for Agency: Pros, Cons & Setup Tips'
+metaDescription: A holding company for your agency group can save tax and protect assets. We explain how they work, when they make sense, and what to watch for.
+altText: Two agency founders reviewing a holding company structure on a laptop in a Manchester office
+image: /blog/holding-company-agency-group.jpg
 imageCredit:
-  photographer: "Vlada Karpovich"
-  photographerUrl: "https://www.pexels.com/@vlada-karpovich"
-  sourceUrl: "https://www.pexels.com/photo/person-in-white-long-sleeve-shirt-holding-a-clipboard-with-statistics-7433922/"
-  source: "Pexels"
-h1: "Should You Set Up a Holding Company for Your Agency Group?"
-summary: "A holding company can protect your agency's assets, reduce tax on dividends, and make an exit cleaner. But it adds complexity and cost. Here is what you need to know before setting one up."
-schema: ""
+  photographer: Vlada Karpovich
+  photographerUrl: https://www.pexels.com/@vlada-karpovich
+  sourceUrl: https://www.pexels.com/photo/person-in-white-long-sleeve-shirt-holding-a-clipboard-with-statistics-7433922/
+  source: Pexels
+h1: Should You Set Up a Holding Company for Your Agency Group?
+summary: A holding company can protect your agency's assets, reduce tax on dividends, and make an exit cleaner. But it adds complexity and cost. Here is what you need to know before setting one up.
+schema: ''
 faqs:
-  - question: "What is the minimum turnover to justify a holding company?"
-    answer: "There is no hard rule, but most accountants recommend considering a holding company when your agency group has combined turnover above £500,000 or retained profits above £250,000. Below that, the annual costs of £1,500 to £3,000 in additional accounting fees often outweigh the benefits. If you have multiple entities or significant assets to protect, the threshold can be lower."
-  - question: "Does a holding company protect me from personal liability?"
-    answer: "No. A holding company structure protects assets within the corporate group, not your personal assets. If you give personal guarantees on loans or leases, you remain personally liable regardless of the structure. The protection is about keeping valuable assets like IP and cash reserves out of reach of the trading company's creditors. Your personal exposure depends on the guarantees you sign."
-  - question: "Can I transfer my existing agency into a holding company without paying tax?"
-    answer: "Yes, in most cases. A share-for-share exchange can be structured as a reorganisation of share capital, meaning no immediate capital gains tax liability. But the paperwork must be correct. You need a professional valuation of the trading company shares, proper share transfer documentation, and in some cases clearance from HMRC. A mistake here can create a tax charge. Always use a qualified accountant for this transaction."
-  - question: "Do I need separate bank accounts and accounting software for the holding company?"
-    answer: "Yes. The holding company is a separate legal entity with its own corporation tax obligations. It needs its own bank account, its own accounting records, and its own filings with Companies House and HMRC. You can use the same accounting software (Xero, QuickBooks, FreeAgent) for all entities, but each must have its own organisation file. Inter-company transactions must be recorded properly to avoid tax issues."
+- question: What is the minimum turnover to justify a holding company?
+  answer: There is no hard rule, but most accountants recommend considering a holding company when your agency group has combined turnover above £500,000 or retained profits above £250,000. Below that, the annual costs of £1,500 to £3,000 in additional accounting fees often outweigh the benefits. If you have multiple entities or significant assets to protect, the threshold can be lower.
+- question: Does a holding company protect me from personal liability?
+  answer: No. A holding company structure protects assets within the corporate group, not your personal assets. If you give personal guarantees on loans or leases, you remain personally liable regardless of the structure. The protection is about keeping valuable assets like IP and cash reserves out of reach of the trading company's creditors. Your personal exposure depends on the guarantees you sign.
+- question: Can I transfer my existing agency into a holding company without paying tax?
+  answer: Yes, in most cases. A share-for-share exchange can be structured as a reorganisation of share capital, meaning no immediate capital gains tax liability. But the paperwork must be correct. You need a professional valuation of the trading company shares, proper share transfer documentation, and in some cases clearance from HMRC. A mistake here can create a tax charge. Always use a qualified accountant for this transaction.
+- question: Do I need separate bank accounts and accounting software for the holding company?
+  answer: Yes. The holding company is a separate legal entity with its own corporation tax obligations. It needs its own bank account, its own accounting records, and its own filings with Companies House and HMRC. You can use the same accounting software (Xero, QuickBooks, FreeAgent) for all entities, but each must have its own organisation file. Inter-company transactions must be recorded properly to avoid tax issues.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A holding company structure protects agency assets like IP and cash reserves from trading subsidiary creditors.
+- Intra-group dividends paid from a subsidiary to a holding company are generally tax-free, avoiding dividend tax.
+- A holding company can loan cash between subsidiaries without triggering personal dividend tax for the founder.
+- Selling shares in the holding company can qualify for Business Asset Disposal Relief at 14% (rising to 18% from 6 April 2026).
+- Multiple subsidiaries under a holding company allow separate sales to different buyers, each potentially qualifying for BADR.
 ---
-
 <h2>What Is a Holding Company Structure for an Agency Group?</h2>
 
 <p>A holding company is a parent company that owns shares in one or more subsidiary companies. It does not trade itself. The trading happens in the subsidiaries underneath it.</p>

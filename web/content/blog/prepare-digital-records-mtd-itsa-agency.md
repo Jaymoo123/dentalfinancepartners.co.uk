@@ -1,33 +1,40 @@
 ---
-title: "How to Prepare Your Agency's Digital Records for MTD ITSA Starting April 2026"
-slug: "prepare-digital-records-mtd-itsa-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/prepare-digital-records-mtd-itsa-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Making Tax Digital"
-metaTitle: "MTD ITSA 2026: Prepare your agency's digital records"
-metaDescription: "MTD ITSA starts April 2026 for agency owners earning over £50k. Here's exactly how to prepare your digital records before the deadline."
-altText: "Agency founder reviewing digital financial records on a laptop in a modern UK office with accounting software open"
-image: "/blog/prepare-digital-records-mtd-itsa-agency.jpg"
+title: How to Prepare Your Agency's Digital Records for MTD ITSA Starting April 2026
+slug: prepare-digital-records-mtd-itsa-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/prepare-digital-records-mtd-itsa-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Making Tax Digital
+metaTitle: 'MTD ITSA 2026: Prepare your agency''s digital records'
+metaDescription: MTD ITSA starts April 2026 for agency owners earning over £50k. Here's exactly how to prepare your digital records before the deadline.
+altText: Agency founder reviewing digital financial records on a laptop in a modern UK office with accounting software open
+image: /blog/prepare-digital-records-mtd-itsa-agency.jpg
 imageCredit:
-  photographer: "Mikael Blomkvist"
-  photographerUrl: "https://www.pexels.com/@mikael-blomkvist"
-  sourceUrl: "https://www.pexels.com/photo/people-sitting-at-the-table-6476256/"
-  source: "Pexels"
-h1: "How to Prepare Your Agency's Digital Records for MTD ITSA Starting April 2026"
-summary: "Making Tax Digital for Income Tax Self Assessment (MTD ITSA) arrives in April 2026. If your agency turnover is over £50k, you must keep digital records and submit quarterly updates. Here's what to do now."
-schema: ""
+  photographer: Mikael Blomkvist
+  photographerUrl: https://www.pexels.com/@mikael-blomkvist
+  sourceUrl: https://www.pexels.com/photo/people-sitting-at-the-table-6476256/
+  source: Pexels
+h1: How to Prepare Your Agency's Digital Records for MTD ITSA Starting April 2026
+summary: Making Tax Digital for Income Tax Self Assessment (MTD ITSA) arrives in April 2026. If your agency turnover is over £50k, you must keep digital records and submit quarterly updates. Here's what to do now.
+schema: ''
 faqs:
-  - question: "What happens if I miss an MTD ITSA quarterly submission deadline?"
-    answer: "You receive a penalty point. Two penalty points for quarterly submissions trigger a £200 fine. Points reset after a period of compliant submissions. Set calendar reminders for the four quarterly deadlines to avoid this. Your accountant can also submit on your behalf if you grant them software access."
-  - question: "Can I use spreadsheets for MTD ITSA, or do I need accounting software?"
-    answer: "You can use spreadsheets, but they must be linked to MTD-compatible software through an API bridge. Most agency founders find it simpler to migrate to cloud accounting software like Xero, QuickBooks, or FreeAgent. Those platforms automate the quarterly submissions and reduce admin time significantly."
-  - question: "Does MTD ITSA apply to my limited company agency?"
-    answer: "No. MTD ITSA applies to sole traders and partnerships with qualifying income over £50,000. Limited companies file corporation tax returns and are not in scope for MTD ITSA. However, MTD for Corporation Tax is expected within the next 3-5 years, so using cloud accounting software now is good preparation."
-  - question: "Can I still file an annual tax return instead of quarterly updates?"
-    answer: "No, if you are mandated for MTD ITSA. You must submit four quarterly updates plus a final declaration. The old annual return system is replaced. However, you can still choose to pay your tax twice yearly through payments on account"
+- question: What happens if I miss an MTD ITSA quarterly submission deadline?
+  answer: You receive a penalty point. Two penalty points for quarterly submissions trigger a £200 fine. Points reset after a period of compliant submissions. Set calendar reminders for the four quarterly deadlines to avoid this. Your accountant can also submit on your behalf if you grant them software access.
+- question: Can I use spreadsheets for MTD ITSA, or do I need accounting software?
+  answer: You can use spreadsheets, but they must be linked to MTD-compatible software through an API bridge. Most agency founders find it simpler to migrate to cloud accounting software like Xero, QuickBooks, or FreeAgent. Those platforms automate the quarterly submissions and reduce admin time significantly.
+- question: Does MTD ITSA apply to my limited company agency?
+  answer: No. MTD ITSA applies to sole traders and partnerships with qualifying income over £50,000. Limited companies file corporation tax returns and are not in scope for MTD ITSA. However, MTD for Corporation Tax is expected within the next 3-5 years, so using cloud accounting software now is good preparation.
+- question: Can I still file an annual tax return instead of quarterly updates?
+  answer: No, if you are mandated for MTD ITSA. You must submit four quarterly updates plus a final declaration. The old annual return system is replaced. However, you can still choose to pay your tax twice yearly through payments on account
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- From April 2026, sole trader and partnership agency founders with qualifying income over £50,000 must keep digital records and submit quarterly MTD ITSA updates to HMRC.
+- Qualifying income is your agency's gross revenue before expenses, not profit or drawings, and determines MTD ITSA scope.
+- Limited company agency founders are not in scope for MTD ITSA, but their sole trader subcontractors and freelancers may be affected.
+- Digital records must include all income and expenses by date and category, kept in MTD-compatible software or spreadsheets linked via an API bridge.
+- Original source documents like invoices and receipts can be kept as digital copies, with HMRC accepting scanned versions and digital receipt capture tools.
 ---
-
 <h2>MTD ITSA Is Coming. Here's What Changes for Your Agency.</h2>
 
 <p>If you run a marketing agency, digital agency, or creative agency as a sole trader or partnership, and your total income from self-employment and property is over £50,000 per year, you need to <strong>prepare digital records MTD ITSA agency</strong> style before April 2026. That is not a suggestion. It is a legal requirement.</p>

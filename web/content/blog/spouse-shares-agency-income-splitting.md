@@ -1,33 +1,40 @@
 ---
-title: "Should Your Spouse or Partner Own Shares in Your Agency? A Guide to Income Splitting"
-slug: "spouse-shares-agency-income-splitting"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/spouse-shares-agency-income-splitting"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "Spouse Share Income Splitting: Agency Tax Guide"
-metaDescription: "Can your spouse own shares in your agency to split income? Yes, but HMRC has rules. We explain the settlement legislation and how to structure it"
-altText: "Agency founder and spouse reviewing financial documents together at a modern office desk"
-image: "/blog/spouse-shares-agency-income-splitting.jpg"
+title: Should Your Spouse or Partner Own Shares in Your Agency? A Guide to Income Splitting
+slug: spouse-shares-agency-income-splitting
+canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/spouse-shares-agency-income-splitting
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Incorporation and Structure
+metaTitle: 'Spouse Share Income Splitting: Agency Tax Guide'
+metaDescription: Can your spouse own shares in your agency to split income? Yes, but HMRC has rules. We explain the settlement legislation and how to structure it
+altText: Agency founder and spouse reviewing financial documents together at a modern office desk
+image: /blog/spouse-shares-agency-income-splitting.jpg
 imageCredit:
-  photographer: "Ketut Subiyanto"
-  photographerUrl: "https://www.pexels.com/@ketut-subiyanto"
-  sourceUrl: "https://www.pexels.com/photo/happy-ethnic-couple-embracing-on-sofa-at-home-4307971/"
-  source: "Pexels"
-h1: "Should Your Spouse or Partner Own Shares in Your Agency? Income Splitting Explained"
-summary: "Giving your spouse or partner shares in your agency can be a legitimate way to split income and reduce your tax bill. But HMRC's settlement legislation means you need to structure it properly. Here is what agency founders need to know to stay compliant."
-schema: ""
+  photographer: Ketut Subiyanto
+  photographerUrl: https://www.pexels.com/@ketut-subiyanto
+  sourceUrl: https://www.pexels.com/photo/happy-ethnic-couple-embracing-on-sofa-at-home-4307971/
+  source: Pexels
+h1: Should Your Spouse or Partner Own Shares in Your Agency? Income Splitting Explained
+summary: Giving your spouse or partner shares in your agency can be a legitimate way to split income and reduce your tax bill. But HMRC's settlement legislation means you need to structure it properly. Here is what agency founders need to know to stay compliant.
+schema: ''
 faqs:
-  - question: "Can I give my spouse shares in my agency without them working?"
-    answer: "Technically yes, but it carries significant HMRC risk. If your spouse does no work and provides no capital, HMRC can apply the settlement legislation and tax the dividends as your income. The safest approach is for your spouse to have a genuine role or invest capital at market value."
-  - question: "What is the settlement legislation and how does it affect income splitting?"
-    answer: "The settlement legislation (ITTOIA 2005, sections 624-629) allows HMRC to treat income from a settlement as belonging to the original owner. If you give shares to your spouse without genuine commercial rationale, the dividends on those shares can be taxed as your income, defeating the purpose of the arrangement."
-  - question: "How do I value my agency shares for a spouse transfer?"
-    answer: "You need a professional valuation based on your agency's maintainable earnings, typically applying a multiple of 4-6 times profit for a healthy agency. The valuation should be documented in writing. Issuing shares at less than market value can trigger the settlement rules."
-  - question: "Does the same apply to unmarried partners?"
-    answer: "The settlement legislation specifically applies to spouses and civil partners, not unmarried partners. However, HMRC can still challenge arrangements with unmarried partners under other rules. You still need a genuine commercial rationale for the shareholding."
+- question: Can I give my spouse shares in my agency without them working?
+  answer: Technically yes, but it carries significant HMRC risk. If your spouse does no work and provides no capital, HMRC can apply the settlement legislation and tax the dividends as your income. The safest approach is for your spouse to have a genuine role or invest capital at market value.
+- question: What is the settlement legislation and how does it affect income splitting?
+  answer: The settlement legislation (ITTOIA 2005, sections 624-629) allows HMRC to treat income from a settlement as belonging to the original owner. If you give shares to your spouse without genuine commercial rationale, the dividends on those shares can be taxed as your income, defeating the purpose of the arrangement.
+- question: How do I value my agency shares for a spouse transfer?
+  answer: You need a professional valuation based on your agency's maintainable earnings, typically applying a multiple of 4-6 times profit for a healthy agency. The valuation should be documented in writing. Issuing shares at less than market value can trigger the settlement rules.
+- question: Does the same apply to unmarried partners?
+  answer: The settlement legislation specifically applies to spouses and civil partners, not unmarried partners. However, HMRC can still challenge arrangements with unmarried partners under other rules. You still need a genuine commercial rationale for the shareholding.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Spouse shares agency income splitting is legitimate if your spouse provides genuine services to the business, such as bookkeeping or client management.
+- HMRC's settlement legislation can tax dividends back to you if your spouse holds shares without contributing real work to the agency.
+- A spouse with no other income can receive dividends up to £50,270 before paying higher rate tax, saving up to £15,000 per year for a couple.
+- The safest structure is for your spouse to work in the agency, receive a market-rate salary, and hold shares with genuine economic interest.
+- The Arctic Systems case confirmed that dividends are not a settlement if the spouse provides actual services, but doing nothing risks HMRC reassessment.
 ---
-
 <p>If you own a limited company agency, you have almost certainly considered putting your spouse or partner on the share register. The logic is straightforward: if they pay less tax than you, why not give them shares and let them draw dividends at their lower rate? This is called <strong>spouse shares agency income splitting</strong>, and it is one of the most common questions we get from agency founders.</p>
 
 <p>The short answer is yes, you can do this. But HMRC has a specific set of rules called the settlement legislation that can undo the whole arrangement if you get it wrong. This article explains exactly how to structure spouse shareholdings compliantly, what the tax benefits are, and where the traps lie.</p>

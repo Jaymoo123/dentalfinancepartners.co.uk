@@ -1,33 +1,40 @@
 ---
-title: "Moving to Dubai? The 90-Day UK Tax Grace Period Most Advisors Don't Tell You About"
-slug: "moving-to-dubai-90-day-uk-tax-grace-period"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/moving-to-dubai-90-day-uk-tax-grace-period"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Moving to Dubai: The 90-Day UK Tax Grace Period Explained"
-metaDescription: "Moving to Dubai? Most advisors miss the 90-day grace period where you can tidy your UK tax affairs without triggering a residence dispute. Here's what"
-altText: "Agency founder working from a Dubai co-working space, reviewing UK tax documents on a laptop, with a view of the Dubai skyline"
-image: "/blog/moving-to-dubai-90-day-uk-tax-grace-period.jpg"
+title: Moving to Dubai? The 90-Day UK Tax Grace Period Most Advisors Don't Tell You About
+slug: moving-to-dubai-90-day-uk-tax-grace-period
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/moving-to-dubai-90-day-uk-tax-grace-period
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Moving to Dubai: The 90-Day UK Tax Grace Period Explained'
+metaDescription: Moving to Dubai? Most advisors miss the 90-day grace period where you can tidy your UK tax affairs without triggering a residence dispute. Here's what
+altText: Agency founder working from a Dubai co-working space, reviewing UK tax documents on a laptop, with a view of the Dubai skyline
+image: /blog/moving-to-dubai-90-day-uk-tax-grace-period.jpg
 imageCredit:
-  photographer: "Vlad Deep"
-  photographerUrl: "https://www.pexels.com/@vlad-deep-29415806"
-  sourceUrl: "https://www.pexels.com/photo/moving-train-on-a-track-between-city-buildings-14528591/"
-  source: "Pexels"
-h1: "Moving to Dubai? The 90-Day UK Tax Grace Period Most Advisors Don't Tell You About"
-summary: "Planning a move to Dubai? There's a practical 90-day grace period after leaving the UK where you can sort out your tax affairs without automatically triggering a residence dispute. Most advisors miss this. Here's what you need to know."
-schema: ""
+  photographer: Vlad Deep
+  photographerUrl: https://www.pexels.com/@vlad-deep-29415806
+  sourceUrl: https://www.pexels.com/photo/moving-train-on-a-track-between-city-buildings-14528591/
+  source: Pexels
+h1: Moving to Dubai? The 90-Day UK Tax Grace Period Most Advisors Don't Tell You About
+summary: Planning a move to Dubai? There's a practical 90-day grace period after leaving the UK where you can sort out your tax affairs without automatically triggering a residence dispute. Most advisors miss this. Here's what you need to know.
+schema: ''
 faqs:
-  - question: "What is the 90-day grace period when leaving the UK for Dubai?"
-    answer: "It's an informal period after your physical departure from the UK where you can tidy up your tax affairs without HMRC arguing you were still UK resident. You have roughly 90 days to file final returns, settle corporation tax, close bank accounts, and submit form P85. It's not written in legislation, but experienced international tax accountants use it successfully. The key is having evidence that you genuinely left the UK on your stated departure date."
-  - question: "Can I keep my UK agency running while living in Dubai?"
-    answer: "Yes, but the company remains UK tax resident if it's incorporated here and its central management and control stays in the UK. You'll need to pay yourself from the UK company in a tax-efficient way, and your personal tax position will depend on how many days you spend in the UK each tax year. Many founders set up a separate UAE company for new client work and wind down the UK entity over time."
-  - question: "What happens if I spend more than 90 days in the UK after moving to Dubai?"
-    answer: "If you spend 91 days or more in the UK in a single tax year, you're likely UK resident for that year under the Statutory Residence Test. That means your worldwide income (including your Dubai earnings) becomes taxable in the UK. The split-year treatment also breaks, so you lose the tax benefit of your move entirely. Track your days carefully and plan your UK visits."
-  - question: "Do I need a UAE tax residence certificate?"
-    answer: "Yes. A UAE tax residence certificate proves to HMRC that you're genuinely tax resident in the UAE. You'll need a residence visa, Emirates ID, tenancy contract, utility bills, and an active UAE bank account. Without it, HMRC may challenge your non-residence claim and treat you as UK resident for the full tax year. Apply for the certificate through the UAE Federal Tax Authority once you've established your residency."
+- question: What is the 90-day grace period when leaving the UK for Dubai?
+  answer: It's an informal period after your physical departure from the UK where you can tidy up your tax affairs without HMRC arguing you were still UK resident. You have roughly 90 days to file final returns, settle corporation tax, close bank accounts, and submit form P85. It's not written in legislation, but experienced international tax accountants use it successfully. The key is having evidence that you genuinely left the UK on your stated departure date.
+- question: Can I keep my UK agency running while living in Dubai?
+  answer: Yes, but the company remains UK tax resident if it's incorporated here and its central management and control stays in the UK. You'll need to pay yourself from the UK company in a tax-efficient way, and your personal tax position will depend on how many days you spend in the UK each tax year. Many founders set up a separate UAE company for new client work and wind down the UK entity over time.
+- question: What happens if I spend more than 90 days in the UK after moving to Dubai?
+  answer: If you spend 91 days or more in the UK in a single tax year, you're likely UK resident for that year under the Statutory Residence Test. That means your worldwide income (including your Dubai earnings) becomes taxable in the UK. The split-year treatment also breaks, so you lose the tax benefit of your move entirely. Track your days carefully and plan your UK visits.
+- question: Do I need a UAE tax residence certificate?
+  answer: Yes. A UAE tax residence certificate proves to HMRC that you're genuinely tax resident in the UAE. You'll need a residence visa, Emirates ID, tenancy contract, utility bills, and an active UAE bank account. Without it, HMRC may challenge your non-residence claim and treat you as UK resident for the full tax year. Apply for the certificate through the UAE Federal Tax Authority once you've established your residency.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- After leaving the UK, you have an informal 90-day window to settle tax affairs without triggering a residence dispute.
+- Spending 46–90 days in the UK in a tax year requires passing the sufficient ties test to remain non-resident.
+- To prove you've left the UK, you must sever significant ties and establish a permanent home in Dubai.
+- HMRC's 90-day grace period is not in legislation but is a practical interpretation used by experienced tax accountants.
+- Your UK tax obligations when moving abroad include filing final returns, settling corporation tax, and closing director's loan accounts.
 ---
-
 <p>You've made the decision. You're moving your agency to Dubai. The zero percent personal tax rate. The lifestyle. The time zone that works for both London and Singapore clients. You've read the guides about the 183-day rule and the Statutory Residence Test. You think you know what you're doing.</p>
 
 <p>But here's what most tax advisors don't tell you about your <strong>uk tax obligations when moving abroad 90 day</strong> window after departure. There's a practical grace period that HMRC doesn't advertise, but that every experienced international tax accountant knows about. Get it wrong, and you could accidentally remain UK tax resident for the full tax year. Get it right, and you can tidy up your UK affairs without triggering a residence dispute.</p>

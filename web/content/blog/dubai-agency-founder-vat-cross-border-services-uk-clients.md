@@ -1,33 +1,40 @@
 ---
-title: "Dubai Agency Founder: How to Handle VAT on Cross-Border Services When Your UK Clients Are VAT-Registered"
-slug: "dubai-agency-founder-vat-cross-border-services-uk-clients"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-agency-founder-vat-cross-border-services-uk-clients"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "VAT on Cross-Border Services for Dubai Agency Founders"
-metaDescription: "UK clients invoicing your Dubai agency? The reverse charge mechanism means you don't charge VAT, but they account for it. Here's how to avoid cash flow"
-altText: "Dubai agency founder reviewing a contract with a UK client, discussing VAT on cross-border services"
-image: "/blog/dubai-agency-founder-vat-cross-border-services-uk-clients.jpg"
+title: 'Dubai Agency Founder: How to Handle VAT on Cross-Border Services When Your UK Clients Are VAT-Registered'
+slug: dubai-agency-founder-vat-cross-border-services-uk-clients
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-agency-founder-vat-cross-border-services-uk-clients
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: VAT on Cross-Border Services for Dubai Agency Founders
+metaDescription: UK clients invoicing your Dubai agency? The reverse charge mechanism means you don't charge VAT, but they account for it. Here's how to avoid cash flow
+altText: Dubai agency founder reviewing a contract with a UK client, discussing VAT on cross-border services
+image: /blog/dubai-agency-founder-vat-cross-border-services-uk-clients.jpg
 imageCredit:
-  photographer: "Aathif Aarifeen"
-  photographerUrl: "https://www.pexels.com/@aathif"
-  sourceUrl: "https://www.pexels.com/photo/smiling-businessman-sitting-at-desk-with-computer-19747906/"
-  source: "Pexels"
-h1: "Dubai Agency Founder: How to Handle VAT on Cross-Border Services When Your UK Clients Are VAT-Registered"
-summary: "If you run a Dubai-based agency and invoice VAT-registered UK clients, you need to understand the reverse charge mechanism. This post explains why you don't charge UK VAT, how your client accounts for it, and what to watch for to avoid cash flow problems."
-schema: ""
+  photographer: Aathif Aarifeen
+  photographerUrl: https://www.pexels.com/@aathif
+  sourceUrl: https://www.pexels.com/photo/smiling-businessman-sitting-at-desk-with-computer-19747906/
+  source: Pexels
+h1: 'Dubai Agency Founder: How to Handle VAT on Cross-Border Services When Your UK Clients Are VAT-Registered'
+summary: If you run a Dubai-based agency and invoice VAT-registered UK clients, you need to understand the reverse charge mechanism. This post explains why you don't charge UK VAT, how your client accounts for it, and what to watch for to avoid cash flow problems.
+schema: ''
 faqs:
-  - question: "Do I need to register for UK VAT as a Dubai agency founder?"
-    answer: "No, in most cases you do not. If you have no UK office, staff, or fixed establishment, and you supply services only to UK businesses (not consumers), you are outside the UK VAT system. Your UK clients account for the VAT themselves via the reverse charge mechanism. If you supply services to UK consumers and exceed the £10,000 distance selling threshold, you may need to register, but this is rare for agency founders."
-  - question: "What happens if my UK client insists on a VAT invoice showing 20% VAT?"
-    answer: "You cannot issue a VAT invoice showing 20% UK VAT unless you are registered for UK VAT. Issuing one without being registered is a criminal offence. Explain the reverse charge mechanism to the client and provide a correct invoice with the reverse charge statement. If the client's finance team is unfamiliar with cross-border rules, send them a brief explanation. In nearly all cases, this resolves the issue."
-  - question: "Do I charge 5% UAE VAT on invoices to UK clients?"
-    answer: "No. Under UAE VAT law, the place of supply for B2B services is where the recipient belongs. Since your UK client belongs in the UK, the supply is outside the scope of UAE VAT. If you are UAE VAT-registered, you treat these as zero-rated exports on your UAE VAT return. If you are not UAE VAT-registered, you simply issue net invoices with no VAT."
-  - question: "What if my UK client is not VAT-registered?"
-    answer: "If your UK client is not VAT-registered, the reverse charge does not apply. The place of supply is where you belong (Dubai), so the supply is outside the scope of UK VAT. You still do not charge UK VAT. Your invoice is net of VAT, and the client cannot reclaim any VAT because they are not registered. If the client is an individual (B2C), different rules apply, but this is uncommon for agency founders."
+- question: Do I need to register for UK VAT as a Dubai agency founder?
+  answer: No, in most cases you do not. If you have no UK office, staff, or fixed establishment, and you supply services only to UK businesses (not consumers), you are outside the UK VAT system. Your UK clients account for the VAT themselves via the reverse charge mechanism. If you supply services to UK consumers and exceed the £10,000 distance selling threshold, you may need to register, but this is rare for agency founders.
+- question: What happens if my UK client insists on a VAT invoice showing 20% VAT?
+  answer: You cannot issue a VAT invoice showing 20% UK VAT unless you are registered for UK VAT. Issuing one without being registered is a criminal offence. Explain the reverse charge mechanism to the client and provide a correct invoice with the reverse charge statement. If the client's finance team is unfamiliar with cross-border rules, send them a brief explanation. In nearly all cases, this resolves the issue.
+- question: Do I charge 5% UAE VAT on invoices to UK clients?
+  answer: No. Under UAE VAT law, the place of supply for B2B services is where the recipient belongs. Since your UK client belongs in the UK, the supply is outside the scope of UAE VAT. If you are UAE VAT-registered, you treat these as zero-rated exports on your UAE VAT return. If you are not UAE VAT-registered, you simply issue net invoices with no VAT.
+- question: What if my UK client is not VAT-registered?
+  answer: If your UK client is not VAT-registered, the reverse charge does not apply. The place of supply is where you belong (Dubai), so the supply is outside the scope of UK VAT. You still do not charge UK VAT. Your invoice is net of VAT, and the client cannot reclaim any VAT because they are not registered. If the client is an individual (B2C), different rules apply, but this is uncommon for agency founders.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Dubai agencies invoicing UK VAT-registered clients must not charge UK VAT; the client accounts for it via the reverse charge mechanism.
+- The reverse charge requires your UK client to record both output and input VAT on the same return, netting to zero cash flow for them.
+- Your invoice must include a clear 'Reverse charge — customer to account for UK VAT' statement to avoid HMRC queries.
+- Non-UK businesses with no UK presence and only B2B supplies generally do not need to register for UK VAT.
+- Incorrectly charging VAT can cause cash flow problems and compliance issues for both you and your UK client.
 ---
-
 <p>If you run a Dubai-based agency and your clients are UK businesses registered for VAT, you have probably asked yourself: do I charge them 20% UK VAT on my invoices? The short answer is no, you do not. But the longer answer matters, because getting it wrong can create cash flow problems, compliance headaches, or both.</p>
 
 <p>This is a specific scenario that many UAE agency founders misunderstand. Competitor advice often treats UAE VAT and UK VAT as separate topics, but fails to explain how the <strong>reverse charge mechanism</strong> works for B2B services from Dubai to UK clients. That gap causes real-world problems.</p>

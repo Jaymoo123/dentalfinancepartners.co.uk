@@ -1,33 +1,40 @@
 ---
-title: "How to Transition from a General Practice Accountant to a Specialist Agency Accountant"
-slug: "transition-general-to-specialist-agency-accountant"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/transition-general-to-specialist-agency-accountant"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Accountant Services"
-metaTitle: "Switch from a general practice to a specialist agency"
-metaDescription: "Agencies outgrow general accountants. Learn when to switch, what a specialist offers, and how to transition without disrupting your business."
-altText: "Agency founder reviewing financial reports with a specialist accountant in a modern London office meeting room."
-image: "/blog/transition-general-to-specialist-agency-accountant.jpg"
+title: How to Transition from a General Practice Accountant to a Specialist Agency Accountant
+slug: transition-general-to-specialist-agency-accountant
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/transition-general-to-specialist-agency-accountant
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Accountant Services
+metaTitle: Switch from a general practice to a specialist agency
+metaDescription: Agencies outgrow general accountants. Learn when to switch, what a specialist offers, and how to transition without disrupting your business.
+altText: Agency founder reviewing financial reports with a specialist accountant in a modern London office meeting room.
+image: /blog/transition-general-to-specialist-agency-accountant.jpg
 imageCredit:
-  photographer: "Polina Tankilevitch"
-  photographerUrl: "https://www.pexels.com/@polina-tankilevitch"
-  sourceUrl: "https://www.pexels.com/photo/person-in-white-button-up-shirt-holding-blue-and-silver-stethoscope-5234460/"
-  source: "Pexels"
-h1: "How to Transition from a General Practice Accountant to a Specialist Agency Accountant"
-summary: "Agencies outgrow general practice accountants when retainer models, IR35, contractor margins, and exit planning become too complex for a one-size-fits-all approach. This guide covers the signs it's time to switch, what a specialist agency accountant actually does differently, and how to manage the transition without disrupting your month-end or year-end."
-schema: ""
+  photographer: Polina Tankilevitch
+  photographerUrl: https://www.pexels.com/@polina-tankilevitch
+  sourceUrl: https://www.pexels.com/photo/person-in-white-button-up-shirt-holding-blue-and-silver-stethoscope-5234460/
+  source: Pexels
+h1: How to Transition from a General Practice Accountant to a Specialist Agency Accountant
+summary: Agencies outgrow general practice accountants when retainer models, IR35, contractor margins, and exit planning become too complex for a one-size-fits-all approach. This guide covers the signs it's time to switch, what a specialist agency accountant actually does differently, and how to manage the transition without disrupting your month-end or year-end.
+schema: ''
 faqs:
-  - question: "How do I know if my general practice accountant is right for my agency?"
-    answer: "Ask them three questions: What is a healthy utilisation rate for my agency type? How should I structure my contractor payments under IR35? What is my BADR qualification timeline? If they cannot answer all three with specific numbers and dates, they are not the right fit for a growing agency."
-  - question: "Will switching accountants mid-year cause problems with HMRC?"
-    answer: "No, provided your new accountant handles the agent transfer correctly. HMRC processes thousands of agent changes every month. Your new accountant will submit a 64-8 form to authorise themselves as your agent. Your old accountant will file any outstanding returns up to the transition date. It is a routine process."
-  - question: "How much more does a specialist agency accountant cost?"
-    answer: "A generalist charges roughly £150-£250 per month for a limited company. A specialist charges £400-£800 per month for a growing agency. The difference is typically offset by tax savings of £5,000-£15,000 per year through better structuring, plus the value of monthly management accounts that help you make better business decisions."
-  - question: "What do I need to prepare before switching accountants?"
-    answer: "Check your current engagement letter for notice periods and transfer fees. Gather your last 3 years of filed accounts, current year trial balance, VAT returns, payroll records, and director's loan account history. Your new accountant will request these from your old accountant, but having your own copies speeds up the process."
+- question: How do I know if my general practice accountant is right for my agency?
+  answer: 'Ask them three questions: What is a healthy utilisation rate for my agency type? How should I structure my contractor payments under IR35? What is my BADR qualification timeline? If they cannot answer all three with specific numbers and dates, they are not the right fit for a growing agency.'
+- question: Will switching accountants mid-year cause problems with HMRC?
+  answer: No, provided your new accountant handles the agent transfer correctly. HMRC processes thousands of agent changes every month. Your new accountant will submit a 64-8 form to authorise themselves as your agent. Your old accountant will file any outstanding returns up to the transition date. It is a routine process.
+- question: How much more does a specialist agency accountant cost?
+  answer: A generalist charges roughly £150-£250 per month for a limited company. A specialist charges £400-£800 per month for a growing agency. The difference is typically offset by tax savings of £5,000-£15,000 per year through better structuring, plus the value of monthly management accounts that help you make better business decisions.
+- question: What do I need to prepare before switching accountants?
+  answer: Check your current engagement letter for notice periods and transfer fees. Gather your last 3 years of filed accounts, current year trial balance, VAT returns, payroll records, and director's loan account history. Your new accountant will request these from your old accountant, but having your own copies speeds up the process.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A general practice accountant cannot advise on IR35 Status Determination Statements or contractor margin modelling for your agency.
+- Specialist agency accountants provide monthly management accounts with utilisation rates, gross margin by service line, and cash runway.
+- If your accountant cannot answer IR35 questions or issues SDSs late, it is a clear sign you need a specialist.
+- A specialist structures shares and dividends from day one to qualify for Business Asset Disposal Relief at 14% (rising to 18% from 6 April 2026).
+- Benchmarking data from a specialist shows a healthy digital agency runs at 65–75% utilisation and revenue per head above £80k.
 ---
-
 <h2>Your Agency Has Outgrown Its Accountant. Now What?</h2>
 
 <p>You started with a local general practice accountant. They filed your first self-assessment, registered you for VAT when you hit the threshold (now £90,000 from 1 April 2024, previously £85,000), and maybe helped you incorporate when you took on your first employee. It worked fine for the early years.</p>

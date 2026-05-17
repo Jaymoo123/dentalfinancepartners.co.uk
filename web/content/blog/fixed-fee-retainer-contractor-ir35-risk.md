@@ -1,33 +1,40 @@
 ---
-title: "Can You Put a Contractor on a Fixed-Fee Retainer Without Triggering IR35?"
-slug: "fixed-fee-retainer-contractor-ir35-risk"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/fixed-fee-retainer-contractor-ir35-risk"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Contractors and IR35"
-metaTitle: "IR35 risk of fixed-fee retainers for multi-client"
-metaDescription: "A fixed-fee retainer for a contractor who serves multiple clients through your agency can create IR35 exposure. Here’s how to structure it safely."
-altText: "Agency founder reviewing a contractor retainer agreement with a financial advisor in a modern London office"
-image: "/blog/fixed-fee-retainer-contractor-ir35-risk.jpg"
+title: Can You Put a Contractor on a Fixed-Fee Retainer Without Triggering IR35?
+slug: fixed-fee-retainer-contractor-ir35-risk
+canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/fixed-fee-retainer-contractor-ir35-risk
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Contractors and IR35
+metaTitle: IR35 risk of fixed-fee retainers for multi-client
+metaDescription: A fixed-fee retainer for a contractor who serves multiple clients through your agency can create IR35 exposure. Here’s how to structure it safely.
+altText: Agency founder reviewing a contractor retainer agreement with a financial advisor in a modern London office
+image: /blog/fixed-fee-retainer-contractor-ir35-risk.jpg
 imageCredit:
-  photographer: "Ksenia Chernaya"
-  photographerUrl: "https://www.pexels.com/@kseniachernaya"
-  sourceUrl: "https://www.pexels.com/photo/workman-screwing-window-frame-during-housework-5768107/"
-  source: "Pexels"
-h1: "The IR35 Risk of Using a Fixed-Fee Retainer for a Contractor Who Provides Services to Multiple Clients Through Your Agency"
-summary: "Putting a contractor on a fixed-fee retainer to serve multiple clients through your agency can look like disguised employment to HMRC. We explain the specific IR35 risks, how the retainer model differs from a typical contractor engagement, and what you need to change in your working practices to stay outside IR35."
-schema: ""
+  photographer: Ksenia Chernaya
+  photographerUrl: https://www.pexels.com/@kseniachernaya
+  sourceUrl: https://www.pexels.com/photo/workman-screwing-window-frame-during-housework-5768107/
+  source: Pexels
+h1: The IR35 Risk of Using a Fixed-Fee Retainer for a Contractor Who Provides Services to Multiple Clients Through Your Agency
+summary: Putting a contractor on a fixed-fee retainer to serve multiple clients through your agency can look like disguised employment to HMRC. We explain the specific IR35 risks, how the retainer model differs from a typical contractor engagement, and what you need to change in your working practices to stay outside IR35.
+schema: ''
 faqs:
-  - question: "Can a contractor on a fixed-fee retainer be outside IR35 if they have multiple clients?"
-    answer: "Yes, but having multiple clients is just one factor. HMRC looks at the whole picture, including control, financial risk, and substitution rights. If the retainer removes financial risk and your agency controls the work, multiple clients will not save you. Each engagement must be assessed on its own merits."
-  - question: "What is the difference between a fixed retainer and a project fee for IR35 purposes?"
-    answer: "A fixed retainer pays the same amount each month regardless of workload, which looks like a salary. A project fee pays for a specific outcome, and the contractor bears the risk if the project takes longer than expected. Project fees generally support an outside-IR35 position because they introduce financial risk and focus on outcomes rather than time."
-  - question: "Do I need to issue an SDS for a contractor on a retainer?"
-    answer: "If your agency is medium or large (meeting two of: turnover over £10.2m, balance sheet over £5.1m, more than 50 employees), you must issue a Status Determination Statement before the contractor starts work. Smaller agencies do not have this legal requirement but are still responsible for getting the IR35 status right."
-  - question: "What happens if HMRC decides my contractor retainer is inside IR35?"
-    answer: "Your agency becomes liable for the contractor's unpaid income tax and National Insurance, plus interest and penalties. The contractor may also face a personal tax bill. In serious cases, HMRC can investigate multiple years. The total bill can easily exceed £50,000 for a single contractor engagement."
+- question: Can a contractor on a fixed-fee retainer be outside IR35 if they have multiple clients?
+  answer: Yes, but having multiple clients is just one factor. HMRC looks at the whole picture, including control, financial risk, and substitution rights. If the retainer removes financial risk and your agency controls the work, multiple clients will not save you. Each engagement must be assessed on its own merits.
+- question: What is the difference between a fixed retainer and a project fee for IR35 purposes?
+  answer: A fixed retainer pays the same amount each month regardless of workload, which looks like a salary. A project fee pays for a specific outcome, and the contractor bears the risk if the project takes longer than expected. Project fees generally support an outside-IR35 position because they introduce financial risk and focus on outcomes rather than time.
+- question: Do I need to issue an SDS for a contractor on a retainer?
+  answer: 'If your agency is medium or large (meeting two of: turnover over £10.2m, balance sheet over £5.1m, more than 50 employees), you must issue a Status Determination Statement before the contractor starts work. Smaller agencies do not have this legal requirement but are still responsible for getting the IR35 status right.'
+- question: What happens if HMRC decides my contractor retainer is inside IR35?
+  answer: Your agency becomes liable for the contractor's unpaid income tax and National Insurance, plus interest and penalties. The contractor may also face a personal tax bill. In serious cases, HMRC can investigate multiple years. The total bill can easily exceed £50,000 for a single contractor engagement.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A fixed-fee retainer creates a recurring payment that HMRC may view as a salary, raising IR35 red flags.
+- Mutuality of obligation and agency control over day-to-day tasks are key IR35 risk factors in retainer arrangements.
+- A contractor having multiple clients does not automatically prevent HMRC from arguing they have multiple employers.
+- Using agency project management software and attending client meetings can make a contractor look like a team member to HMRC.
+- To stay outside IR35, ensure the contractor bears financial risk, can substitute, and controls how the work is done.
 ---
-
 <p>You run a 15-person digital agency in Manchester's Northern Quarter. You have a retainer client who needs ongoing SEO work, but you do not have the in-house capacity. So you bring in a contractor on a fixed monthly fee of £3,200 to manage that account. They also work for two other agencies through their own limited company.</p>
 
 <p>On the surface, this looks sensible. The contractor is not an employee. They have multiple clients. You pay them a flat fee each month. What could possibly go wrong with IR35?</p>

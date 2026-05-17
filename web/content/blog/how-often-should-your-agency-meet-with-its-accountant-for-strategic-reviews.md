@@ -1,33 +1,40 @@
 ---
-title: "How Often Should Your Agency Meet with Its Accountant for Strategic Reviews?"
-slug: "how-often-should-your-agency-meet-with-its-accountant-for-strategic-reviews"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/how-often-should-your-agency-meet-with-its-accountant-for-strategic-reviews"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Accountant Services"
-metaTitle: "How Often Should You Meet Your Accountant for Strategic"
-metaDescription: "Most agencies meet their accountant once a year. That is not enough. Here is the review cadence we recommend for growing agency businesses."
-altText: "Agency founder and ICAEW accountant reviewing financial reports in a modern London office meeting room"
-image: "/blog/how-often-should-your-agency-meet-with-its-accountant-for-strategic-reviews.jpg"
+title: How Often Should Your Agency Meet with Its Accountant for Strategic Reviews?
+slug: how-often-should-your-agency-meet-with-its-accountant-for-strategic-reviews
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/how-often-should-your-agency-meet-with-its-accountant-for-strategic-reviews
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Accountant Services
+metaTitle: How Often Should You Meet Your Accountant for Strategic
+metaDescription: Most agencies meet their accountant once a year. That is not enough. Here is the review cadence we recommend for growing agency businesses.
+altText: Agency founder and ICAEW accountant reviewing financial reports in a modern London office meeting room
+image: /blog/how-often-should-your-agency-meet-with-its-accountant-for-strategic-reviews.jpg
 imageCredit:
-  photographer: "Mikhail Nilov"
-  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
-  sourceUrl: "https://www.pexels.com/photo/person-in-oversized-blazer-carrying-a-notebook-and-calculator-9304921/"
-  source: "Pexels"
-h1: "How Often Should Your Agency Meet with Its Accountant for Strategic Reviews?"
-summary: "Most agency founders meet their accountant once a year at tax return time. That is not enough. Here is the review cadence we recommend for growing agencies — monthly, quarterly, and annual strategic reviews that actually move the needle."
-schema: ""
+  photographer: Mikhail Nilov
+  photographerUrl: https://www.pexels.com/@mikhail-nilov
+  sourceUrl: https://www.pexels.com/photo/person-in-oversized-blazer-carrying-a-notebook-and-calculator-9304921/
+  source: Pexels
+h1: How Often Should Your Agency Meet with Its Accountant for Strategic Reviews?
+summary: Most agency founders meet their accountant once a year at tax return time. That is not enough. Here is the review cadence we recommend for growing agencies — monthly, quarterly, and annual strategic reviews that actually move the needle.
+schema: ''
 faqs:
-  - question: "How often should a small agency meet with its accountant?"
-    answer: "For agencies under £150k turnover, quarterly reviews are sufficient. You should still receive monthly management accounts reports, but a full 60-minute meeting every three months is enough to catch issues early. For sole traders, quarterly is the minimum to avoid surprises at year-end."
-  - question: "What should I bring to a strategic review with my accountant?"
-    answer: "Bring your latest management accounts (P&L, balance sheet, cash flow statement), your aged debtors report, your utilisation report if you track it, and any major business decisions you are considering — new hires, new services, price changes, potential client wins or losses. The more context you give, the better the advice."
-  - question: "Can my accountant help with exit planning during these reviews?"
-    answer: "Yes, and they should. Every quarterly review should include a 5-minute check on exit readiness. Are your accounts clean? Is your revenue concentrated? Do you have signed contracts? If you are planning to sell in 3-5 years, your accountant should be building the data trail now. Waiting until you list the agency is too late."
-  - question: "What if my current accountant does not offer strategic reviews?"
-    answer: "Ask them directly. Some accountants offer them but do not advertise it. If they say no, you have a choice: accept a compliance-only service or switch to an accountant who specialises in agency businesses. For most founders, the switch pays for itself in tax savings and better decisions within the first year."
+- question: How often should a small agency meet with its accountant?
+  answer: For agencies under £150k turnover, quarterly reviews are sufficient. You should still receive monthly management accounts reports, but a full 60-minute meeting every three months is enough to catch issues early. For sole traders, quarterly is the minimum to avoid surprises at year-end.
+- question: What should I bring to a strategic review with my accountant?
+  answer: Bring your latest management accounts (P&L, balance sheet, cash flow statement), your aged debtors report, your utilisation report if you track it, and any major business decisions you are considering — new hires, new services, price changes, potential client wins or losses. The more context you give, the better the advice.
+- question: Can my accountant help with exit planning during these reviews?
+  answer: Yes, and they should. Every quarterly review should include a 5-minute check on exit readiness. Are your accounts clean? Is your revenue concentrated? Do you have signed contracts? If you are planning to sell in 3-5 years, your accountant should be building the data trail now. Waiting until you list the agency is too late.
+- question: What if my current accountant does not offer strategic reviews?
+  answer: 'Ask them directly. Some accountants offer them but do not advertise it. If they say no, you have a choice: accept a compliance-only service or switch to an accountant who specialises in agency businesses. For most founders, the switch pays for itself in tax savings and better decisions within the first year.'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Meet your accountant monthly for 30–45 minutes to review management accounts, not just tax returns.
+- Quarterly strategic reviews (60–90 minutes) should focus on profitability deep dives and client margin analysis.
+- Annual planning reviews (2–3 hours) cover compliance, tax strategy, and long-term agency goals.
+- Agencies turning over more than £250k or planning an exit should adopt at least two of the three review tiers.
+- Monthly reviews should track revenue by stream, gross margin (target 50–65%), utilisation rate (min 60%), and aged debtors.
 ---
-
 <p>Most agency founders meet their accountant once a year. Usually in January, when the tax return deadline is looming and the stress is already high. You rush through the numbers, sign the forms, and go back to running your agency for another 12 months.</p>
 
 <p>That is a missed opportunity. A big one.</p>

@@ -1,33 +1,40 @@
 ---
-title: "Does My Agency Actually Qualify for R&D Tax Credits? A Founder's Checklist"
-slug: "agency-rd-tax-credit-eligibility-checklist"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/agency-rd-tax-credit-eligibility-checklist"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Agency R&D Tax Credit Eligibility: A Founder's Checklist"
-metaDescription: "Use this checklist to test your agency's R&D tax credit eligibility. Software, automation, and bespoke client tools often qualify. See the real criteria"
-altText: "Agency founder reviewing R&D tax credit eligibility checklist with accountant in a UK office meeting"
-image: "/blog/agency-rd-tax-credit-eligibility-checklist.jpg"
+title: Does My Agency Actually Qualify for R&D Tax Credits? A Founder's Checklist
+slug: agency-rd-tax-credit-eligibility-checklist
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/agency-rd-tax-credit-eligibility-checklist
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'Agency R&D Tax Credit Eligibility: A Founder''s Checklist'
+metaDescription: Use this checklist to test your agency's R&D tax credit eligibility. Software, automation, and bespoke client tools often qualify. See the real criteria
+altText: Agency founder reviewing R&D tax credit eligibility checklist with accountant in a UK office meeting
+image: /blog/agency-rd-tax-credit-eligibility-checklist.jpg
 imageCredit:
-  photographer: "Vitaly Gariev"
-  photographerUrl: "https://www.pexels.com/@silverkblack"
-  sourceUrl: "https://www.pexels.com/photo/businessman-in-superhero-costume-outside-office-building-36712887/"
-  source: "Pexels"
-h1: "Does My Agency Actually Qualify for R&D Tax Credits? A Founder's Checklist"
-summary: "Most agency founders assume R&D tax credits are for labs and manufacturers. They are wrong. If your agency builds software, automates processes, or solves technical problems for clients, you could be leaving tens of thousands on the table. This checklist shows you exactly where HMRC draws the line."
-schema: ""
+  photographer: Vitaly Gariev
+  photographerUrl: https://www.pexels.com/@silverkblack
+  sourceUrl: https://www.pexels.com/photo/businessman-in-superhero-costume-outside-office-building-36712887/
+  source: Pexels
+h1: Does My Agency Actually Qualify for R&D Tax Credits? A Founder's Checklist
+summary: Most agency founders assume R&D tax credits are for labs and manufacturers. They are wrong. If your agency builds software, automates processes, or solves technical problems for clients, you could be leaving tens of thousands on the table. This checklist shows you exactly where HMRC draws the line.
+schema: ''
 faqs:
-  - question: "Can a marketing agency claim R&D tax credits for developing client campaigns?"
-    answer: "Not typically. Designing a marketing campaign is a creative process, not a technological one. However, if your agency built proprietary software or algorithms to optimise campaign delivery, targeting, or measurement, that software development work may qualify. The campaign itself does not. The tool you built to run it might."
-  - question: "How far back can I claim R&D tax credits for my agency?"
-    answer: "You can claim for qualifying expenditure in any accounting period that ended within the last two years. If your year end is 31 March 2024, you must claim by 31 March 2026. After that, the relief is lost permanently. If you have never claimed before, check the last two completed financial years."
-  - question: "What happens if HMRC challenges my agency's R&D claim?"
-    answer: "HMRC will open a compliance check and ask for your technical narrative and financial evidence. If your documentation is strong, most challenges close with no adjustment. If your claim is rejected, you must repay the relief plus interest and potentially penalties. A properly documented claim from a qualified accountant significantly reduces this risk."
-  - question: "Do I need to own the IP to claim R&D tax credits as an agency?"
-    answer: "Not strictly, but it matters. If your client owns the IP and paid you to solve the problem, the R&D claim belongs to them, not you. If you retain the IP, or if the contract is silent on IP ownership, you can claim. Check your client contracts before submitting a claim. If you are unsure, ask your accountant to review the relevant clauses."
+- question: Can a marketing agency claim R&D tax credits for developing client campaigns?
+  answer: Not typically. Designing a marketing campaign is a creative process, not a technological one. However, if your agency built proprietary software or algorithms to optimise campaign delivery, targeting, or measurement, that software development work may qualify. The campaign itself does not. The tool you built to run it might.
+- question: How far back can I claim R&D tax credits for my agency?
+  answer: You can claim for qualifying expenditure in any accounting period that ended within the last two years. If your year end is 31 March 2024, you must claim by 31 March 2026. After that, the relief is lost permanently. If you have never claimed before, check the last two completed financial years.
+- question: What happens if HMRC challenges my agency's R&D claim?
+  answer: HMRC will open a compliance check and ask for your technical narrative and financial evidence. If your documentation is strong, most challenges close with no adjustment. If your claim is rejected, you must repay the relief plus interest and potentially penalties. A properly documented claim from a qualified accountant significantly reduces this risk.
+- question: Do I need to own the IP to claim R&D tax credits as an agency?
+  answer: Not strictly, but it matters. If your client owns the IP and paid you to solve the problem, the R&D claim belongs to them, not you. If you retain the IP, or if the contract is silent on IP ownership, you can claim. Check your client contracts before submitting a claim. If you are unsure, ask your accountant to review the relevant clauses.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- HMRC defines R&D as work resolving scientific or technological uncertainty, which applies to agencies building custom software or solving technical problems.
+- A qualifying R&D project must show an advance in science or technology, not just a business model or commercial improvement.
+- Technological uncertainty exists when the solution is not obvious at the start, requiring experimentation, prototyping, or iteration.
+- You need a paper trail of systematic work—emails, specs, test results—to prove you tried to overcome the uncertainty.
+- Custom software development, API integrations, and proprietary algorithms are common agency activities that can qualify for R&D tax credits.
 ---
-
 <p>If you run a digital agency, a creative agency, or a software development shop, you have probably heard other founders talk about R&D tax credits. You have probably also assumed they do not apply to you. That assumption costs agency owners real money every year.</p>
 
 <p>HMRC approved over £7 billion in R&D tax relief in the most recent published year. A significant portion went to companies that do not look like laboratories. They look like agencies.</p>

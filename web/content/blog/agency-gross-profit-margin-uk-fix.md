@@ -1,33 +1,40 @@
 ---
-title: "Why Your Agency's Gross Profit Margin Is Lower Than You Think and How to Fix It"
-slug: "agency-gross-profit-margin-uk-fix"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-gross-profit-margin-uk-fix"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "Agency gross profit margin: why yours is lower & fix"
-metaDescription: "Most agency founders overstate gross margin by misclassifying costs. Here's how to calculate it properly and three fixes to move it above 55%."
-altText: "Agency founder reviewing gross profit margin report on a tablet in a modern UK office with exposed brickwork"
-image: "/blog/agency-gross-profit-margin-uk-fix.jpg"
+title: Why Your Agency's Gross Profit Margin Is Lower Than You Think and How to Fix It
+slug: agency-gross-profit-margin-uk-fix
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-gross-profit-margin-uk-fix
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: 'Agency gross profit margin: why yours is lower & fix'
+metaDescription: Most agency founders overstate gross margin by misclassifying costs. Here's how to calculate it properly and three fixes to move it above 55%.
+altText: Agency founder reviewing gross profit margin report on a tablet in a modern UK office with exposed brickwork
+image: /blog/agency-gross-profit-margin-uk-fix.jpg
 imageCredit:
-  photographer: "Kindel Media"
-  photographerUrl: "https://www.pexels.com/@kindelmedia"
-  sourceUrl: "https://www.pexels.com/photo/a-close-up-shot-of-a-graph-on-a-paper-7054368/"
-  source: "Pexels"
-h1: "Why Your Agency's Gross Profit Margin Is Lower Than You Think and How to Fix It"
-summary: "Most agency founders overstate their gross profit margin by misclassifying costs. Here's how to calculate it properly, where the hidden leaks are, and three practical fixes to move your margin above 55%."
-schema: ""
+  photographer: Kindel Media
+  photographerUrl: https://www.pexels.com/@kindelmedia
+  sourceUrl: https://www.pexels.com/photo/a-close-up-shot-of-a-graph-on-a-paper-7054368/
+  source: Pexels
+h1: Why Your Agency's Gross Profit Margin Is Lower Than You Think and How to Fix It
+summary: Most agency founders overstate their gross profit margin by misclassifying costs. Here's how to calculate it properly, where the hidden leaks are, and three practical fixes to move your margin above 55%.
+schema: ''
 faqs:
-  - question: "What is a good gross profit margin for a UK agency?"
-    answer: "Between 50% and 65% is healthy for most agency types. Below 45% indicates a structural pricing or cost problem. Above 70% usually means you are undercounting direct costs."
-  - question: "Should I include my own salary in gross margin calculation?"
-    answer: "No. Your salary as founder is an overhead, not a direct cost. It goes below the gross profit line. Only include salaries of staff who directly deliver client work."
-  - question: "How do I calculate gross margin per client?"
-    answer: "Take the total revenue from that client for a period. Subtract all direct costs incurred to serve them (staff hours tracked against that client, freelancer fees, software, subcontracted work). Divide by revenue. That is your client-level gross margin."
-  - question: "Does gross margin include employer NI and pension costs?"
-    answer: "Yes. For any delivery staff you include in direct costs, you must include employer NI at 13.8% and pension contributions. These are real costs of employing the person delivering the work."
+- question: What is a good gross profit margin for a UK agency?
+  answer: Between 50% and 65% is healthy for most agency types. Below 45% indicates a structural pricing or cost problem. Above 70% usually means you are undercounting direct costs.
+- question: Should I include my own salary in gross margin calculation?
+  answer: No. Your salary as founder is an overhead, not a direct cost. It goes below the gross profit line. Only include salaries of staff who directly deliver client work.
+- question: How do I calculate gross margin per client?
+  answer: Take the total revenue from that client for a period. Subtract all direct costs incurred to serve them (staff hours tracked against that client, freelancer fees, software, subcontracted work). Divide by revenue. That is your client-level gross margin.
+- question: Does gross margin include employer NI and pension costs?
+  answer: Yes. For any delivery staff you include in direct costs, you must include employer NI at 13.8% and pension contributions. These are real costs of employing the person delivering the work.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Reclassify delivery team salaries, employer NI, and pension contributions as direct costs, not overhead, to get an accurate gross margin.
+- Include freelancer and contractor fees used for client work in cost of goods sold, not buried in overhead, to avoid inflating margin by 3–8 points.
+- 'Allocate software costs correctly: client-facing tools like Adobe Creative Cloud are direct costs, while internal tools like Xero are overhead.'
+- A healthy UK agency gross profit margin target is 50% to 65%; below 45% signals a structural problem, not a cash flow issue.
+- Most agency founders overstate gross margin by 8–15 percentage points due to misclassifying direct costs as overhead.
 ---
-
 <p>You think your agency is making 60% gross margin. Your Xero dashboard says 62%. Your management accounts say 58%. And your bank balance says something else entirely.</p>
 
 <p>Here's the uncomfortable truth: most agency founders overstate their <strong>gross profit margin agency UK</strong> by 8 to 15 percentage points. Not because they're dishonest. Because they're classifying costs the wrong way.</p>

@@ -1,33 +1,40 @@
 ---
-title: "What Is the Most Tax-Efficient Salary for an Agency Director with No Other Income in 2025/26?"
-slug: "tax-efficient-salary-agency-director-2025-26"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/tax-efficient-salary-agency-director-2025-26"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Salary and Dividends"
-metaTitle: "Agency Director Tax-Efficient Salary 2025/26: Best Rate"
-metaDescription: "The most tax-efficient salary for an agency director in 2025/26 is £12,570. Here's why that figure works, how to take it, and what changes if you have"
-altText: "Agency director reviewing tax-efficient salary and dividend calculations on a laptop in a modern UK office"
-image: "/blog/tax-efficient-salary-agency-director-2025-26.jpg"
+title: What Is the Most Tax-Efficient Salary for an Agency Director with No Other Income in 2025/26?
+slug: tax-efficient-salary-agency-director-2025-26
+canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/tax-efficient-salary-agency-director-2025-26
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Salary and Dividends
+metaTitle: 'Agency Director Tax-Efficient Salary 2025/26: Best Rate'
+metaDescription: The most tax-efficient salary for an agency director in 2025/26 is £12,570. Here's why that figure works, how to take it, and what changes if you have
+altText: Agency director reviewing tax-efficient salary and dividend calculations on a laptop in a modern UK office
+image: /blog/tax-efficient-salary-agency-director-2025-26.jpg
 imageCredit:
-  photographer: "Leeloo The First"
-  photographerUrl: "https://www.pexels.com/@leeloothefirst"
-  sourceUrl: "https://www.pexels.com/photo/a-smartphone-with-a-calculator-app-over-a-tax-document-8962445/"
-  source: "Pexels"
-h1: "What Is the Most Tax-Efficient Salary for an Agency Director with No Other Income in 2025/26?"
-summary: "For an agency director with no other income in 2025/26, the most tax-efficient salary is £12,570. This keeps you within your personal allowance, avoids both income tax and employee National Insurance, and lets you take the rest as dividends taxed at 8.75%. We run the full numbers, show the savings, and explain when a different figure might work better."
-schema: ""
+  photographer: Leeloo The First
+  photographerUrl: https://www.pexels.com/@leeloothefirst
+  sourceUrl: https://www.pexels.com/photo/a-smartphone-with-a-calculator-app-over-a-tax-document-8962445/
+  source: Pexels
+h1: What Is the Most Tax-Efficient Salary for an Agency Director with No Other Income in 2025/26?
+summary: For an agency director with no other income in 2025/26, the most tax-efficient salary is £12,570. This keeps you within your personal allowance, avoids both income tax and employee National Insurance, and lets you take the rest as dividends taxed at 8.75%. We run the full numbers, show the savings, and explain when a different figure might work better.
+schema: ''
 faqs:
-  - question: "Is £12,570 still the best salary if I have other income from a side business?"
-    answer: "No. If your other income uses up your personal allowance, a salary from your agency will be taxed at 20% plus NI. In that case, taking no salary and drawing everything as dividends is usually more tax-efficient. The dividend tax rate of 8.75% (basic rate) or 33.75% (higher rate) is lower than the combined income tax and NI on salary. Run the numbers with your accountant before deciding."
-  - question: "Do I need to register as an employer to pay myself a salary?"
-    answer: "Yes. Even if you are the only employee, you must register with HMRC as an employer, set up a payroll scheme, and submit RTI returns each time you pay yourself. Most accounting software (Xero, QuickBooks, FreeAgent) includes payroll. If you use an accountant, they can handle the RTI submissions for you. Failing to register can lead to penalties."
-  - question: "What happens if I take a salary of £12,570 but also receive dividends above the basic rate band?"
-    answer: "Dividends above the basic rate band (£50,270 total income) are taxed at 33.75% instead of 8.75%. If your total drawings push you over £50,270, the tax-efficient salary figure may change. You might consider taking a higher salary to reduce dividend income, because salary saves corporation tax while dividends do not. The trade-off is complex — model it carefully or ask your accountant to run the scenarios."
-  - question: "Can I pay myself a salary of £12,570 and also make employer pension contributions?"
-    answer: "Yes. Employer pension contributions are separate from salary. They are deductible for corporation tax, not subject to NI, and do not count as your income. You can pay £12,570 salary plus any amount of employer pension contribution up to the annual allowance (£60,000, with carry forward from previous years). This is a highly tax-efficient way to extract profit from your agency while building retirement savings."
+- question: Is £12,570 still the best salary if I have other income from a side business?
+  answer: No. If your other income uses up your personal allowance, a salary from your agency will be taxed at 20% plus NI. In that case, taking no salary and drawing everything as dividends is usually more tax-efficient. The dividend tax rate of 8.75% (basic rate) or 33.75% (higher rate) is lower than the combined income tax and NI on salary. Run the numbers with your accountant before deciding.
+- question: Do I need to register as an employer to pay myself a salary?
+  answer: Yes. Even if you are the only employee, you must register with HMRC as an employer, set up a payroll scheme, and submit RTI returns each time you pay yourself. Most accounting software (Xero, QuickBooks, FreeAgent) includes payroll. If you use an accountant, they can handle the RTI submissions for you. Failing to register can lead to penalties.
+- question: What happens if I take a salary of £12,570 but also receive dividends above the basic rate band?
+  answer: Dividends above the basic rate band (£50,270 total income) are taxed at 33.75% instead of 8.75%. If your total drawings push you over £50,270, the tax-efficient salary figure may change. You might consider taking a higher salary to reduce dividend income, because salary saves corporation tax while dividends do not. The trade-off is complex — model it carefully or ask your accountant to run the scenarios.
+- question: Can I pay myself a salary of £12,570 and also make employer pension contributions?
+  answer: Yes. Employer pension contributions are separate from salary. They are deductible for corporation tax, not subject to NI, and do not count as your income. You can pay £12,570 salary plus any amount of employer pension contribution up to the annual allowance (£60,000, with carry forward from previous years). This is a highly tax-efficient way to extract profit from your agency while building retirement savings.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- The most tax-efficient salary for an agency director with no other income in 2025/26 is £12,570, which avoids income tax and employee National Insurance.
+- Taking £12,570 salary and the rest as dividends saves over £12,400 in tax and NI compared to taking the full amount as salary.
+- A salary of £9,100 avoids employer NI but leaves personal allowance unused, resulting in a net saving of only £175 versus £12,570 if employment allowance is unavailable.
+- Most agency directors can claim the employment allowance (up to £5,000) to eliminate employer NI on a £12,570 salary, making it the optimal choice.
+- Dividends above the £500 allowance are taxed at 8.75% within the basic rate band, keeping total personal tax low when combined with a £12,570 salary.
 ---
-
 <p>If you own a limited company agency and have no other income, your salary decision is straightforward once you know the numbers. The most tax-efficient salary for an agency director in 2025/26 is <strong>£12,570</strong>. That figure is not a guess. It is the exact point where you maximise tax savings without triggering unnecessary costs.</p>
 
 <p>Take a salary above £12,570 and you start paying employee National Insurance at 8% on the excess, plus income tax at 20%. Take a salary below it and you leave your personal allowance unused, pushing more income into higher-taxed dividends. £12,570 is the sweet spot.</p>

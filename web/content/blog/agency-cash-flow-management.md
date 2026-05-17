@@ -1,33 +1,40 @@
 ---
-title: "Cash Flow in Agencies: Why Profitable Agencies Still Run Out of Money"
-slug: "agency-cash-flow-management"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-cash-flow-management"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "Agency Cash Flow: Why Profitable Agencies Run Out of Money"
-metaDescription: "Profitable but cash-poor? We explain why agency cash flow is the real killer, with practical fixes for retainer and project-based agencies."
-altText: "Agency founder reviewing cash flow forecast on a laptop in a modern UK office with whiteboards in the background"
-image: "/blog/agency-cash-flow-management.jpg"
+title: 'Cash Flow in Agencies: Why Profitable Agencies Still Run Out of Money'
+slug: agency-cash-flow-management
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-cash-flow-management
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: 'Agency Cash Flow: Why Profitable Agencies Run Out of Money'
+metaDescription: Profitable but cash-poor? We explain why agency cash flow is the real killer, with practical fixes for retainer and project-based agencies.
+altText: Agency founder reviewing cash flow forecast on a laptop in a modern UK office with whiteboards in the background
+image: /blog/agency-cash-flow-management.jpg
 imageCredit:
-  photographer: "www.kaboompics.com"
-  photographerUrl: "https://www.pexels.com/@karola-g"
-  sourceUrl: "https://www.pexels.com/photo/hand-holding-fan-of-us-dollar-bills-4968663/"
-  source: "Pexels"
-h1: "Cash Flow in Agencies: Why Profitable Agencies Still Run Out of Money"
-summary: "Profit is an opinion. Cash is a fact. We explain why profitable agencies still hit a cash crisis, and exactly what to do about it — from retainer billing to debtor control."
-schema: ""
+  photographer: www.kaboompics.com
+  photographerUrl: https://www.pexels.com/@karola-g
+  sourceUrl: https://www.pexels.com/photo/hand-holding-fan-of-us-dollar-bills-4968663/
+  source: Pexels
+h1: 'Cash Flow in Agencies: Why Profitable Agencies Still Run Out of Money'
+summary: Profit is an opinion. Cash is a fact. We explain why profitable agencies still hit a cash crisis, and exactly what to do about it — from retainer billing to debtor control.
+schema: ''
 faqs:
-  - question: "What is the main reason profitable agencies run out of cash?"
-    answer: "The main reason is timing. You recognise revenue when the work is done, but you receive cash when the client pays. That gap can be 30 to 60 days. During that gap, you are funding salaries, freelancers, and overheads from your own cash reserves. If you have multiple clients on different payment cycles, the gap compounds and creates a cash shortage even when your profit and loss statement looks healthy."
-  - question: "How many months of cash should an agency hold in reserve?"
-    answer: "At least three months of fixed costs. Fixed costs include salaries, rent, software subscriptions, and any other regular overheads. For a £45k per month agency, that is £135k. That feels like a lot, but it is the minimum buffer to absorb one or two late payments without triggering a crisis. Build this reserve by reinvesting profit rather than taking it all as dividends."
-  - question: "Should I invoice retainers in advance or arrears?"
-    answer: "Invoice in advance wherever possible. Bill on the 1st of the month for that month's work. This shifts your cash flow by 30 days compared to invoicing in arrears. If clients push back, explain that this is standard practice in professional services. If you cannot move to advance billing, at least invoice on the first working day of the month rather than the last."
-  - question: "What is a 13-week cash flow forecast and do I need one?"
-    answer: "A 13-week rolling cash flow forecast lists your expected inflows and outflows for the next 13 weeks. You update it every week. It gives you enough visibility to spot a cash shortfall five or six weeks before it hits. That gives you time to chase debtors, delay spending, or arrange finance. It takes 20 minutes a week and is the single most useful financial tool for an agency founder."
+- question: What is the main reason profitable agencies run out of cash?
+  answer: The main reason is timing. You recognise revenue when the work is done, but you receive cash when the client pays. That gap can be 30 to 60 days. During that gap, you are funding salaries, freelancers, and overheads from your own cash reserves. If you have multiple clients on different payment cycles, the gap compounds and creates a cash shortage even when your profit and loss statement looks healthy.
+- question: How many months of cash should an agency hold in reserve?
+  answer: At least three months of fixed costs. Fixed costs include salaries, rent, software subscriptions, and any other regular overheads. For a £45k per month agency, that is £135k. That feels like a lot, but it is the minimum buffer to absorb one or two late payments without triggering a crisis. Build this reserve by reinvesting profit rather than taking it all as dividends.
+- question: Should I invoice retainers in advance or arrears?
+  answer: Invoice in advance wherever possible. Bill on the 1st of the month for that month's work. This shifts your cash flow by 30 days compared to invoicing in arrears. If clients push back, explain that this is standard practice in professional services. If you cannot move to advance billing, at least invoice on the first working day of the month rather than the last.
+- question: What is a 13-week cash flow forecast and do I need one?
+  answer: A 13-week rolling cash flow forecast lists your expected inflows and outflows for the next 13 weeks. You update it every week. It gives you enough visibility to spot a cash shortfall five or six weeks before it hits. That gives you time to chase debtors, delay spending, or arrange finance. It takes 20 minutes a week and is the single most useful financial tool for an agency founder.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- 'Profit and cash flow are different: profit is a paper calculation, cash flow is actual money in the bank, and timing gaps cause crises.'
+- Invoice retainers in advance on the 1st of the month to avoid financing a month of work before payment arrives.
+- Use deliverable-based milestones for project billing, not time-based ones, to control when payment triggers occur.
+- Include a late payment clause and stop work on invoices over 30 days overdue to enforce timely payment.
+- Monitor debtor days closely; a growing gap between invoicing and payment is a silent cash flow leak.
 ---
-
 <p>You can have a 12-person digital agency billing £800k per year, showing a 20% net profit margin on your management accounts, and still not have enough cash in the bank to pay the team at the end of the month. I see this pattern repeatedly with agency founders. Profitability and positive cash flow are two different things, and confusing them is one of the fastest ways to kill a growing agency.</p>
 
 <p>This article explains exactly why <strong>agency cash flow</strong> problems hit profitable businesses, and what you can do about it before it becomes an emergency.</p>

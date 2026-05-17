@@ -1,33 +1,40 @@
 ---
-title: "Digital Records for Dividends Under MTD: What Agency Founders Must Track"
-slug: "digital-records-dividends-mtd-agency-founders"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/digital-records-dividends-mtd-agency-founders"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Making Tax Digital"
-metaTitle: "MTD Digital Records for Dividends: Agency Founder Guide"
-metaDescription: "MTD for ITSA means digital records for dividends too. Here's what UK agency founders must track, store, and submit from 2026."
-altText: "Agency founder reviewing digital dividend records on a tablet with accounting software open, UK office setting"
-image: "/blog/digital-records-dividends-mtd-agency-founders.jpg"
+title: 'Digital Records for Dividends Under MTD: What Agency Founders Must Track'
+slug: digital-records-dividends-mtd-agency-founders
+canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/digital-records-dividends-mtd-agency-founders
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Making Tax Digital
+metaTitle: 'MTD Digital Records for Dividends: Agency Founder Guide'
+metaDescription: MTD for ITSA means digital records for dividends too. Here's what UK agency founders must track, store, and submit from 2026.
+altText: Agency founder reviewing digital dividend records on a tablet with accounting software open, UK office setting
+image: /blog/digital-records-dividends-mtd-agency-founders.jpg
 imageCredit:
-  photographer: "Mikael Blomkvist"
-  photographerUrl: "https://www.pexels.com/@mikael-blomkvist"
-  sourceUrl: "https://www.pexels.com/photo/people-sitting-at-the-table-6476256/"
-  source: "Pexels"
-h1: "What Are the Digital Record-Keeping Requirements for Agency Dividends Under MTD?"
-summary: "Making Tax Digital for Income Tax (MTD for ITSA) requires agency founders to keep digital records of all income, including dividends. Here's exactly what you need to record, how to store it, and what happens if you don't."
-schema: ""
+  photographer: Mikael Blomkvist
+  photographerUrl: https://www.pexels.com/@mikael-blomkvist
+  sourceUrl: https://www.pexels.com/photo/people-sitting-at-the-table-6476256/
+  source: Pexels
+h1: What Are the Digital Record-Keeping Requirements for Agency Dividends Under MTD?
+summary: Making Tax Digital for Income Tax (MTD for ITSA) requires agency founders to keep digital records of all income, including dividends. Here's exactly what you need to record, how to store it, and what happens if you don't.
+schema: ''
 faqs:
-  - question: "Do I need to record dividends I receive from my agency if I am below the £30,000 MTD threshold?"
-    answer: "If your total qualifying income (including dividends, self-employment income, and property income) is below £30,000, you are not mandated to use MTD for ITSA. You can continue filing your tax return in the traditional way. But if your income fluctuates, keep an eye on it. If you cross the threshold in a future year, MTD will apply from the following April."
-  - question: "Can I use a spreadsheet to record dividends under MTD?"
-    answer: "Yes, but only if the spreadsheet is linked to bridging software that submits the data to HMRC. A standalone spreadsheet will not satisfy the digital record-keeping requirements. Most agency founders find it simpler to use MTD-compatible accounting software like Xero or FreeAgent, which handles dividend recording and quarterly submissions in one place."
-  - question: "What happens if I forget to record a dividend in my quarterly update?"
-    answer: "You can correct the error in the next quarterly update or in your end-of-period statement. HMRC's system will flag discrepancies between quarters, so it is better to correct promptly. If you consistently miss dividends, you may face a compliance check. The safest approach is to record every dividend as soon as it is paid, using your software's bank feed to catch transactions automatically."
-  - question: "Do I need to record dividends from my investment ISA under MTD?"
-    answer: "No. Dividends and interest earned within an ISA are tax-free and do not need to be reported on your tax return. They are therefore not part of your qualifying income for MTD purposes. You only need to record dividends received outside of tax-advantaged accounts, such as dividends from your agency shares or from a general investment account."
+- question: Do I need to record dividends I receive from my agency if I am below the £30,000 MTD threshold?
+  answer: If your total qualifying income (including dividends, self-employment income, and property income) is below £30,000, you are not mandated to use MTD for ITSA. You can continue filing your tax return in the traditional way. But if your income fluctuates, keep an eye on it. If you cross the threshold in a future year, MTD will apply from the following April.
+- question: Can I use a spreadsheet to record dividends under MTD?
+  answer: Yes, but only if the spreadsheet is linked to bridging software that submits the data to HMRC. A standalone spreadsheet will not satisfy the digital record-keeping requirements. Most agency founders find it simpler to use MTD-compatible accounting software like Xero or FreeAgent, which handles dividend recording and quarterly submissions in one place.
+- question: What happens if I forget to record a dividend in my quarterly update?
+  answer: You can correct the error in the next quarterly update or in your end-of-period statement. HMRC's system will flag discrepancies between quarters, so it is better to correct promptly. If you consistently miss dividends, you may face a compliance check. The safest approach is to record every dividend as soon as it is paid, using your software's bank feed to catch transactions automatically.
+- question: Do I need to record dividends from my investment ISA under MTD?
+  answer: No. Dividends and interest earned within an ISA are tax-free and do not need to be reported on your tax return. They are therefore not part of your qualifying income for MTD purposes. You only need to record dividends received outside of tax-advantaged accounts, such as dividends from your agency shares or from a general investment account.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- From April 2026, agency founders with qualifying income over £50,000 must keep digital records of each dividend payment and submit quarterly updates under MTD for ITSA.
+- Each dividend record must include the payment date, gross amount, type (interim or final), and the paying company, stored in HMRC-approved MTD-compatible software.
+- Dividends from your agency and any investment portfolio must be recorded digitally; spreadsheets alone are not MTD-compatible unless linked to bridging software.
+- Xero, QuickBooks, FreeAgent, and Sage are MTD-compatible options that automate dividend recording via bank feeds and ensure compliance with quarterly submissions.
+- Failure to maintain proper digital dividend records by the April 2026 deadline could result in penalties from HMRC for non-compliance with MTD for ITSA.
 ---
-
 <p>Making Tax Digital for Income Tax (MTD for ITSA) is coming. If you are an agency founder drawing dividends from your own company, the way you record those dividends is about to change. It is not just about declaring the total on your tax return any more. HMRC will expect to see digital records of each dividend payment, held in compatible software, and submitted quarterly.</p>
 
 <p>This article covers exactly what you need to track for <strong>digital records dividends MTD agency</strong> compliance, how to store those records, and what happens if you do not get your record-keeping in order before the deadlines.</p>

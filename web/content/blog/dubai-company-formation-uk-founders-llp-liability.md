@@ -1,33 +1,40 @@
 ---
-title: "Dubai Company Formation for UK Founders: Why Your UK LLP Structure Might Be a Liability Under UAE Commercial Law"
-slug: "dubai-company-formation-uk-founders-llp-liability"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-company-formation-uk-founders-llp-liability"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Dubai Company Formation for UK Founders: UK LLP Risks Under"
-metaDescription: "UK LLPs have no direct UAE equivalent. If you're moving your agency to Dubai, your LLP structure could create legal exposure. Here's what to know before"
-altText: "Two agency founders reviewing legal documents at a desk in a modern Dubai office with city skyline visible through window"
-image: "/blog/dubai-company-formation-uk-founders-llp-liability.jpg"
+title: 'Dubai Company Formation for UK Founders: Why Your UK LLP Structure Might Be a Liability Under UAE Commercial Law'
+slug: dubai-company-formation-uk-founders-llp-liability
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-company-formation-uk-founders-llp-liability
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Dubai Company Formation for UK Founders: UK LLP Risks Under'
+metaDescription: UK LLPs have no direct UAE equivalent. If you're moving your agency to Dubai, your LLP structure could create legal exposure. Here's what to know before
+altText: Two agency founders reviewing legal documents at a desk in a modern Dubai office with city skyline visible through window
+image: /blog/dubai-company-formation-uk-founders-llp-liability.jpg
 imageCredit:
-  photographer: "Kate Trysh"
-  photographerUrl: "https://www.pexels.com/@katetrysh"
-  sourceUrl: "https://www.pexels.com/photo/man-walking-along-dubai-marina-promenade-28369595/"
-  source: "Pexels"
-h1: "Dubai Company Formation for UK Founders: Why Your UK LLP Structure Might Be a Liability Under UAE Commercial Law"
-summary: "If you own a UK LLP and are looking at Dubai company formation for UK founders, there's a structural mismatch you need to understand. UAE commercial law does not recognise the LLP concept, which can create personal liability risks. Here's how to restructure properly before you move."
-schema: ""
+  photographer: Kate Trysh
+  photographerUrl: https://www.pexels.com/@katetrysh
+  sourceUrl: https://www.pexels.com/photo/man-walking-along-dubai-marina-promenade-28369595/
+  source: Pexels
+h1: 'Dubai Company Formation for UK Founders: Why Your UK LLP Structure Might Be a Liability Under UAE Commercial Law'
+summary: If you own a UK LLP and are looking at Dubai company formation for UK founders, there's a structural mismatch you need to understand. UAE commercial law does not recognise the LLP concept, which can create personal liability risks. Here's how to restructure properly before you move.
+schema: ''
 faqs:
-  - question: "Can I register a Dubai company with my UK LLP as the shareholder?"
-    answer: "Technically yes, but it creates legal risk. UAE commercial law does not recognise the LLP concept. If a dispute arises, a Dubai court may treat the LLP members as personally liable, because the LLP has no separate legal standing under UAE law. Most Dubai banks also struggle with LLPs as shareholders, which can delay or block your account opening. It is safer to hold the Dubai entity through a UK limited company instead."
-  - question: "What is the tax treatment if my UK LLP owns a Dubai company?"
-    answer: "A UK LLP is tax transparent, meaning the members pay UK income tax on their share of the profits, including profits from the Dubai entity. You lose the benefit of the low UAE corporate tax rate (9% or 0% in free zones) because the UK taxes the members on worldwide income. To preserve the UAE tax advantage, you need to hold the Dubai entity through a UK limited company, which pays UK corporation tax but can claim double tax relief."
-  - question: "Does the LLP problem apply in all Dubai free zones?"
-    answer: "Yes. No Dubai free zone recognises the UK LLP as a legal entity. The recognised structures are LLC, FZE, FZC, and civil company, none of which map directly onto an LLP. The legal and tax friction exists regardless of whether you register in DMCC, Dubai Silicon Oasis, Dubai Media City, or any other free zone. The restructuring advice applies universally."
-  - question: "Will restructuring from an LLP to a limited company affect my BADR eligibility?"
-    answer: "It can. BADR requires you to hold shares in a trading company for at least two years before sale. If you transfer your LLP trade into a new limited company and then sell within two years, the new shares do not qualify for BADR. If you are planning an exit within 18 months, it may be better to complete the sale through the LLP first, then set up the Dubai entity with the proceeds. Plan the timing carefully with your accountant."
+- question: Can I register a Dubai company with my UK LLP as the shareholder?
+  answer: Technically yes, but it creates legal risk. UAE commercial law does not recognise the LLP concept. If a dispute arises, a Dubai court may treat the LLP members as personally liable, because the LLP has no separate legal standing under UAE law. Most Dubai banks also struggle with LLPs as shareholders, which can delay or block your account opening. It is safer to hold the Dubai entity through a UK limited company instead.
+- question: What is the tax treatment if my UK LLP owns a Dubai company?
+  answer: A UK LLP is tax transparent, meaning the members pay UK income tax on their share of the profits, including profits from the Dubai entity. You lose the benefit of the low UAE corporate tax rate (9% or 0% in free zones) because the UK taxes the members on worldwide income. To preserve the UAE tax advantage, you need to hold the Dubai entity through a UK limited company, which pays UK corporation tax but can claim double tax relief.
+- question: Does the LLP problem apply in all Dubai free zones?
+  answer: Yes. No Dubai free zone recognises the UK LLP as a legal entity. The recognised structures are LLC, FZE, FZC, and civil company, none of which map directly onto an LLP. The legal and tax friction exists regardless of whether you register in DMCC, Dubai Silicon Oasis, Dubai Media City, or any other free zone. The restructuring advice applies universally.
+- question: Will restructuring from an LLP to a limited company affect my BADR eligibility?
+  answer: It can. BADR requires you to hold shares in a trading company for at least two years before sale. If you transfer your LLP trade into a new limited company and then sell within two years, the new shares do not qualify for BADR. If you are planning an exit within 18 months, it may be better to complete the sale through the LLP first, then set up the Dubai entity with the proceeds. Plan the timing carefully with your accountant.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- UAE commercial law does not recognise UK LLPs, exposing members to personal liability in Dubai disputes.
+- Holding a Dubai entity through a UK LLP can be challenged in UAE courts, as the LLP has no legal standing there.
+- A Dubai LLC is the closest equivalent to a UK LLP but has different governance, capital, and tax treatment.
+- UK LLP tax transparency means Dubai entity profits flow to UK members, who pay UK income tax on them.
+- Restructure your UK LLP before registering in Dubai to avoid personal liability and tax mismatches.
 ---
-
 <p>If you run a UK agency through a Limited Liability Partnership (LLP) and you are looking at Dubai company formation for UK founders, there is a legal problem most accountants won't flag until it is too late.</p>
 
 <p>UAE commercial law does not recognise the LLP structure. There is no direct equivalent in the Dubai legal framework. And that mismatch can create personal liability exposure for you as a founder, undo your UK tax planning, and block your ability to trade through a Dubai entity altogether.</p>

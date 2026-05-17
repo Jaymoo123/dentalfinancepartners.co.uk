@@ -1,33 +1,40 @@
 ---
-title: "Selling Your Agency: The Complete Tax-Efficient Exit Guide"
-slug: "selling-your-agency-pillar"
-canonical: "https://www.agencyfounderfinance.co.uk/fundamentals/selling-your-agency-pillar"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Selling Your Agency Tax Guide: BADR & Earn-Outs"
-metaDescription: "Selling your agency? This ICAEW guide covers BADR, earn-outs, goodwill, due diligence, and valuation. Written for UK agency founders by a senior"
-altText: "Agency founder signing sale documents with their accountant in a Manchester office overlooking the Northern Quarter"
-image: "/blog/selling-your-agency-pillar.jpg"
+title: 'Selling Your Agency: The Complete Tax-Efficient Exit Guide'
+slug: selling-your-agency-pillar
+canonical: https://www.agencyfounderfinance.co.uk/fundamentals/selling-your-agency-pillar
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'Selling Your Agency Tax Guide: BADR & Earn-Outs'
+metaDescription: Selling your agency? This ICAEW guide covers BADR, earn-outs, goodwill, due diligence, and valuation. Written for UK agency founders by a senior
+altText: Agency founder signing sale documents with their accountant in a Manchester office overlooking the Northern Quarter
+image: /blog/selling-your-agency-pillar.jpg
 imageCredit:
-  photographer: "Polina Tankilevitch"
-  photographerUrl: "https://www.pexels.com/@polina-tankilevitch"
-  sourceUrl: "https://www.pexels.com/photo/a-person-writing-on-white-paper-6927374/"
-  source: "Pexels"
-h1: "Selling Your Agency: The Complete Guide to a Tax-Efficient Exit"
-summary: "Selling your agency is likely the biggest financial event of your life. This pillar guide covers everything from BADR and earn-outs to goodwill valuation and due diligence, written from the perspective of an ICAEW-qualified accountant who has advised on dozens of agency exits. Whether you’re planning a trade sale, an MBO, or a phased exit, you’ll find the numbers, forms, and strategy you need to keep more of what you’ve built."
-schema: ""
+  photographer: Polina Tankilevitch
+  photographerUrl: https://www.pexels.com/@polina-tankilevitch
+  sourceUrl: https://www.pexels.com/photo/a-person-writing-on-white-paper-6927374/
+  source: Pexels
+h1: 'Selling Your Agency: The Complete Guide to a Tax-Efficient Exit'
+summary: Selling your agency is likely the biggest financial event of your life. This pillar guide covers everything from BADR and earn-outs to goodwill valuation and due diligence, written from the perspective of an ICAEW-qualified accountant who has advised on dozens of agency exits. Whether you’re planning a trade sale, an MBO, or a phased exit, you’ll find the numbers, forms, and strategy you need to keep more of what you’ve built.
+schema: ''
 faqs:
-  - question: "What is the difference between BADR and Entrepreneurs’ Relief?"
-    answer: "They are the same relief. Entrepreneurs’ Relief was renamed Business Asset Disposal Relief (BADR) in April 2020. The rules are identical. The £1 million lifetime limit remains, but the rate has risen from 10% to 14% for disposals from 6 April 2025, and is scheduled to rise again to 18% from 6 April 2026. Any gains above the £1 million BADR limit are taxed at 24% (the main higher CGT rate)."
-  - question: "Can I claim BADR if I sell my agency to my management team (MBO)?"
-    answer: "Yes, as long as you meet the qualifying conditions at the point of disposal — 5% shareholding, director or employee, and trading company status for at least two years. The key risk is that HMRC may challenge whether you have genuinely disposed of the shares if you retain a minority stake or continue as a director. Ensure the legal transfer is complete and documented properly."
-  - question: "How is an earn-out taxed when I sell my agency?"
-    answer: "It depends on how the earn-out is structured. If it’s additional consideration for your shares (deferred consideration), it’s taxed as a capital gain at 14% (BADR, up to £1m lifetime) or 24% (above the BADR limit). If it’s structured as employment income — for example, a consultancy fee for staying on — it’s taxed as income at up to 45% plus National Insurance. The contract wording is critical. Have your solicitor and accountant review the earn-out clause before signing."
-  - question: "What happens if I sell my agency as an asset sale rather than a share sale?"
-    answer: "In an asset sale, the company sells its business and pays corporation tax on the gain (19% or 25%). You then extract the remaining cash personally, paying further tax as a dividend or capital distribution. The effective tax rate can exceed 40%. Share sales are almost always more tax-efficient for sellers, especially if you qualify for BADR. Most buyers will accept a share sale if you negotiate it."
+- question: What is the difference between BADR and Entrepreneurs’ Relief?
+  answer: They are the same relief. Entrepreneurs’ Relief was renamed Business Asset Disposal Relief (BADR) in April 2020. The rules are identical. The £1 million lifetime limit remains, but the rate has risen from 10% to 14% for disposals from 6 April 2025, and is scheduled to rise again to 18% from 6 April 2026. Any gains above the £1 million BADR limit are taxed at 24% (the main higher CGT rate).
+- question: Can I claim BADR if I sell my agency to my management team (MBO)?
+  answer: Yes, as long as you meet the qualifying conditions at the point of disposal — 5% shareholding, director or employee, and trading company status for at least two years. The key risk is that HMRC may challenge whether you have genuinely disposed of the shares if you retain a minority stake or continue as a director. Ensure the legal transfer is complete and documented properly.
+- question: How is an earn-out taxed when I sell my agency?
+  answer: It depends on how the earn-out is structured. If it’s additional consideration for your shares (deferred consideration), it’s taxed as a capital gain at 14% (BADR, up to £1m lifetime) or 24% (above the BADR limit). If it’s structured as employment income — for example, a consultancy fee for staying on — it’s taxed as income at up to 45% plus National Insurance. The contract wording is critical. Have your solicitor and accountant review the earn-out clause before signing.
+- question: What happens if I sell my agency as an asset sale rather than a share sale?
+  answer: In an asset sale, the company sells its business and pays corporation tax on the gain (19% or 25%). You then extract the remaining cash personally, paying further tax as a dividend or capital distribution. The effective tax rate can exceed 40%. Share sales are almost always more tax-efficient for sellers, especially if you qualify for BADR. Most buyers will accept a share sale if you negotiate it.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Business Asset Disposal Relief reduces CGT to 14% on gains up to £1 million, but you must meet conditions for two years before sale.
+- To qualify for BADR, you must hold at least 5% shares and voting rights and be a director or employee for 24 months.
+- If your agency holds significant investment assets like property, HMRC may deny BADR if trading activities fall below 80%.
+- The £1 million BADR lifetime limit applies per individual, not per company, so previous disposals reduce your remaining allowance.
+- Gains above the BADR limit are taxed at 20% (or 24% for some assets), making proper structuring essential before an exit.
 ---
-
 <p>You’ve built a business that clients trust, that generates real profit, and that someone else wants to buy. The question you’re now asking — the one that keeps you awake — is how to sell it without handing half the proceeds to HMRC.</p>
 
 <p>This is the definitive guide to a tax-efficient agency exit. It’s written for founders of marketing, digital, creative, PR, web design, SEO, advertising, and recruitment agencies. We work with 73+ UK and UAE agency founders, and we’ve seen the difference between a well-structured exit and one that costs six figures in unnecessary tax.</p>

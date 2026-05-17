@@ -1,33 +1,40 @@
 ---
-title: "How to Pay Yourself as an Agency Founder: Salary vs Dividends"
-slug: "how-to-pay-yourself-agency-founder"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/how-to-pay-yourself-agency-founder"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Salary and Dividends"
-metaTitle: "Salary vs Dividends: How Agency Founders Pay Themselves"
-metaDescription: "Salary vs dividends for agency founders in 2025/26. How the tax works, what the numbers look like, and why most founders use both."
-altText: "Agency founder reviewing salary and dividend options on a laptop in a London office"
-image: "/blog/how-to-pay-yourself-agency-founder.jpg"
+title: 'How to Pay Yourself as an Agency Founder: Salary vs Dividends'
+slug: how-to-pay-yourself-agency-founder
+canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/how-to-pay-yourself-agency-founder
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Salary and Dividends
+metaTitle: 'Salary vs Dividends: How Agency Founders Pay Themselves'
+metaDescription: Salary vs dividends for agency founders in 2025/26. How the tax works, what the numbers look like, and why most founders use both.
+altText: Agency founder reviewing salary and dividend options on a laptop in a London office
+image: /blog/how-to-pay-yourself-agency-founder.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/white-and-black-paper-on-typewriter-5198201/"
-  source: "Pexels"
-h1: "How to Pay Yourself as an Agency Founder: Salary vs Dividends"
-summary: "A direct breakdown of salary vs dividends for UK agency founders. We cover the tax mechanics, the 2025/26 rates, and the typical structure that keeps more money in your pocket."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/white-and-black-paper-on-typewriter-5198201/
+  source: Pexels
+h1: 'How to Pay Yourself as an Agency Founder: Salary vs Dividends'
+summary: A direct breakdown of salary vs dividends for UK agency founders. We cover the tax mechanics, the 2025/26 rates, and the typical structure that keeps more money in your pocket.
+schema: ''
 faqs:
-  - question: "Can I pay myself only dividends and no salary?"
-    answer: "Technically yes, but it is not recommended. Without a salary, you lose your National Insurance contributions, which affects your state pension and benefit entitlements. It also weakens your case for BADR when you sell the agency. Keep the £12,570 salary running. It costs the company nothing in NI and protects your long-term position."
-  - question: "What happens if I pay dividends when the company has no profit?"
-    answer: "That is an illegal dividend. HMRC can reclassify it as a directors' loan, and the company will owe Section 455 tax at 33.75% on the amount. You also have to repay the loan. Always check distributable reserves before declaring a dividend. Your accountant should confirm this at each payment."
-  - question: "How often can I pay myself dividends?"
-    answer: "As often as the company has distributable profits. Many founders pay quarterly or monthly. There is no legal limit on frequency. But each dividend must be properly documented with a board minute and voucher. If you pay monthly, you need twelve sets of paperwork. Most founders find quarterly a good balance."
-  - question: "Does paying dividends affect my mortgage application?"
-    answer: "It can. Mortgage lenders typically want to see two to three years of dividend income on your tax returns. They use your net profit share (salary plus dividends) as your income. Some lenders are less comfortable with dividends than salary, but most high-street lenders accept them. Speak to a mortgage broker who understands contractor and director income."
+- question: Can I pay myself only dividends and no salary?
+  answer: Technically yes, but it is not recommended. Without a salary, you lose your National Insurance contributions, which affects your state pension and benefit entitlements. It also weakens your case for BADR when you sell the agency. Keep the £12,570 salary running. It costs the company nothing in NI and protects your long-term position.
+- question: What happens if I pay dividends when the company has no profit?
+  answer: That is an illegal dividend. HMRC can reclassify it as a directors' loan, and the company will owe Section 455 tax at 33.75% on the amount. You also have to repay the loan. Always check distributable reserves before declaring a dividend. Your accountant should confirm this at each payment.
+- question: How often can I pay myself dividends?
+  answer: As often as the company has distributable profits. Many founders pay quarterly or monthly. There is no legal limit on frequency. But each dividend must be properly documented with a board minute and voucher. If you pay monthly, you need twelve sets of paperwork. Most founders find quarterly a good balance.
+- question: Does paying dividends affect my mortgage application?
+  answer: It can. Mortgage lenders typically want to see two to three years of dividend income on your tax returns. They use your net profit share (salary plus dividends) as your income. Some lenders are less comfortable with dividends than salary, but most high-street lenders accept them. Speak to a mortgage broker who understands contractor and director income.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Take a salary up to the £12,570 NI threshold to avoid employee and employer National Insurance.
+- Pay yourself the rest as dividends to save 13.8% employer NI and 8% employee NI on earnings above £12,570.
+- The first £500 of dividends is tax-free; dividends within the basic rate band are taxed at 8.75%.
+- Dividends above the basic rate band are taxed at 33.75%, so consider leaving profits in the company to reinvest.
+- For a £140,000 profit, the salary-and-dividends model saves over £35,000 in tax and NI compared to taking all salary.
 ---
-
 <p>Every agency founder I meet asks the same question within the first fifteen minutes: "What should I pay myself?"</p>
 
 <p>It is the most common question we get at Agency Founder Finance, and the answer is rarely simple. The right structure depends on your agency's profitability, your personal tax position, and your plans for the business. But there is a standard starting point that works for most limited company agency founders.</p>

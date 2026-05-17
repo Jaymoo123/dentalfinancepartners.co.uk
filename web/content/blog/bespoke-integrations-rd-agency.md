@@ -1,33 +1,40 @@
 ---
-title: "Bespoke Integrations as R&D: When Building Bridges Qualifies"
-slug: "bespoke-integrations-rd-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/bespoke-integrations-rd-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Bespoke Integration R&D Agency: Tax Relief for Custom Builds"
-metaDescription: "Custom API builds and bespoke integrations can qualify for R&D tax credits. We explain the criteria, common pitfalls, and how to structure claims for your"
-altText: "Software developer working on a custom API integration between two platforms on a dual-monitor setup in a modern UK agency office"
-image: "/blog/bespoke-integrations-rd-agency.jpg"
+title: 'Bespoke Integrations as R&D: When Building Bridges Qualifies'
+slug: bespoke-integrations-rd-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/bespoke-integrations-rd-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'Bespoke Integration R&D Agency: Tax Relief for Custom Builds'
+metaDescription: Custom API builds and bespoke integrations can qualify for R&D tax credits. We explain the criteria, common pitfalls, and how to structure claims for your
+altText: Software developer working on a custom API integration between two platforms on a dual-monitor setup in a modern UK agency office
+image: /blog/bespoke-integrations-rd-agency.jpg
 imageCredit:
-  photographer: "Sergej  Strannik"
-  photographerUrl: "https://www.pexels.com/@strannik-sk"
-  sourceUrl: "https://www.pexels.com/photo/modern-architecture-in-coesfeld-germany-36815866/"
-  source: "Pexels"
-h1: "Bespoke Integrations as R&D: When Building Bridges Qualifies"
-summary: "Custom integrations between software platforms can qualify for R&D tax credits if they solve genuine technical uncertainty. We walk through the criteria, common mistakes, and how to prepare a defensible claim for your agency."
-schema: ""
+  photographer: Sergej  Strannik
+  photographerUrl: https://www.pexels.com/@strannik-sk
+  sourceUrl: https://www.pexels.com/photo/modern-architecture-in-coesfeld-germany-36815866/
+  source: Pexels
+h1: 'Bespoke Integrations as R&D: When Building Bridges Qualifies'
+summary: Custom integrations between software platforms can qualify for R&D tax credits if they solve genuine technical uncertainty. We walk through the criteria, common mistakes, and how to prepare a defensible claim for your agency.
+schema: ''
 faqs:
-  - question: "Can a marketing agency claim R&D tax credits for building custom integrations between platforms?"
-    answer: "Yes, provided the work involves resolving genuine technical uncertainty. If your team had to reverse-engineer an undocumented API, build a custom data transformation layer that exceeded standard tools, or solve performance issues that required novel architecture, the work may qualify. The key is documenting the technical challenges and the systematic investigation your team undertook."
-  - question: "What documentation do I need to support an R&D claim for integration work?"
-    answer: "You need contemporaneous records showing the technical uncertainty and your team's approach to resolving it. This can include time logs with R&D-specific project codes, technical notes or Slack conversations describing the challenges, records of approaches that failed, and cost records for staff time, software, and subcontractors. HMRC expects to see that the uncertainty existed at the start of the project and that you investigated systematically."
-  - question: "Can I claim R&D tax credits if the integration was built for a client?"
-    answer: "Generally no, if the client paid you for the work. R&D relief is for the company bearing the financial risk of the development. If the client is paying regardless of outcome, the risk sits with them. The exception is where you build the integration as part of your own product development, not a client project. If you are unsure, speak to your accountant before filing."
-  - question: "What is the tax saving from an R&D claim for integration work?"
-    answer: "For a profitable SME agency, the saving is typically 19-25% of the qualifying expenditure, depending on your profit level. For loss-making agencies, you can surrender the loss for a cash payment of up to 14.5% of the enhanced expenditure. A claim on £39,000 of qualifying costs could yield a tax saving of approximately £13,783 or a cash payment of around £10,518."
+- question: Can a marketing agency claim R&D tax credits for building custom integrations between platforms?
+  answer: Yes, provided the work involves resolving genuine technical uncertainty. If your team had to reverse-engineer an undocumented API, build a custom data transformation layer that exceeded standard tools, or solve performance issues that required novel architecture, the work may qualify. The key is documenting the technical challenges and the systematic investigation your team undertook.
+- question: What documentation do I need to support an R&D claim for integration work?
+  answer: You need contemporaneous records showing the technical uncertainty and your team's approach to resolving it. This can include time logs with R&D-specific project codes, technical notes or Slack conversations describing the challenges, records of approaches that failed, and cost records for staff time, software, and subcontractors. HMRC expects to see that the uncertainty existed at the start of the project and that you investigated systematically.
+- question: Can I claim R&D tax credits if the integration was built for a client?
+  answer: Generally no, if the client paid you for the work. R&D relief is for the company bearing the financial risk of the development. If the client is paying regardless of outcome, the risk sits with them. The exception is where you build the integration as part of your own product development, not a client project. If you are unsure, speak to your accountant before filing.
+- question: What is the tax saving from an R&D claim for integration work?
+  answer: For a profitable SME agency, the saving is typically 19-25% of the qualifying expenditure, depending on your profit level. For loss-making agencies, you can surrender the loss for a cash payment of up to 14.5% of the enhanced expenditure. A claim on £39,000 of qualifying costs could yield a tax saving of approximately £13,783 or a cash payment of around £10,518.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Custom integrations that solve genuine technical uncertainty can qualify for UK R&D tax credits under HMRC's BEIS guidelines.
+- Routine integration using standard APIs and published documentation does not qualify as R&D for tax purposes.
+- Qualifying integration work includes reverse-engineering undocumented proprietary systems or handling inconsistent API behaviour.
+- A successful R&D claim requires systematic investigation of a technical challenge not resolvable by standard industry practice.
+- Examples of qualifying work include building custom parsers for undocumented data formats or novel solutions for performance constraints.
 ---
-
 <p>If your agency builds custom integrations between software platforms, you might be leaving money on the table. The kind of work that frustrates your developers, the "this should work but it doesn't" debugging, the proprietary APIs with undocumented behaviour, the data transformation problems that keep your senior dev up at night. That is precisely the kind of work HMRC expects to see in a legitimate R&D claim.</p>
 
 <p>Most agency founders assume R&D tax credits are for pharmaceutical companies or aerospace engineers. They picture labs and white coats. But the legislation is broader than that. It covers any project that seeks to resolve scientific or technological uncertainty. And in the context of a digital agency, that uncertainty often shows up in bespoke integration work.</p>

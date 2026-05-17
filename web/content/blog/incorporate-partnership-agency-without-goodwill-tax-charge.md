@@ -1,33 +1,40 @@
 ---
-title: "How to Incorporate a Partnership Agency Without Triggering a Tax Charge on Goodwill"
-slug: "incorporate-partnership-agency-without-goodwill-tax-charge"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/incorporate-partnership-agency-without-goodwill-tax-charge"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "Incorporate a Partnership Agency Without Goodwill Tax Charge"
-metaDescription: "Incorporate your partnership agency without triggering a tax charge on goodwill. Our ICAEW accountants explain the reliefs available and the steps"
-altText: "Two agency partners reviewing incorporation documents with their accountant in a modern UK office"
-image: "/blog/incorporate-partnership-agency-without-goodwill-tax-charge.jpg"
+title: How to Incorporate a Partnership Agency Without Triggering a Tax Charge on Goodwill
+slug: incorporate-partnership-agency-without-goodwill-tax-charge
+canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/incorporate-partnership-agency-without-goodwill-tax-charge
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Incorporation and Structure
+metaTitle: Incorporate a Partnership Agency Without Goodwill Tax Charge
+metaDescription: Incorporate your partnership agency without triggering a tax charge on goodwill. Our ICAEW accountants explain the reliefs available and the steps
+altText: Two agency partners reviewing incorporation documents with their accountant in a modern UK office
+image: /blog/incorporate-partnership-agency-without-goodwill-tax-charge.jpg
 imageCredit:
-  photographer: "cottonbro studio"
-  photographerUrl: "https://www.pexels.com/@cottonbro"
-  sourceUrl: "https://www.pexels.com/photo/men-having-conversation-while-investigating-8369521/"
-  source: "Pexels"
-h1: "How to Incorporate a Partnership Agency Without Triggering a Tax Charge on Goodwill"
-summary: "Moving from a partnership to a limited company can trigger an unexpected tax charge on the value of your agency's goodwill. This article explains how to structure the incorporation to defer or eliminate that charge, using specific reliefs available under UK tax law."
-schema: ""
+  photographer: cottonbro studio
+  photographerUrl: https://www.pexels.com/@cottonbro
+  sourceUrl: https://www.pexels.com/photo/men-having-conversation-while-investigating-8369521/
+  source: Pexels
+h1: How to Incorporate a Partnership Agency Without Triggering a Tax Charge on Goodwill
+summary: Moving from a partnership to a limited company can trigger an unexpected tax charge on the value of your agency's goodwill. This article explains how to structure the incorporation to defer or eliminate that charge, using specific reliefs available under UK tax law.
+schema: ''
 faqs:
-  - question: "Can I incorporate my agency partnership without paying any tax on goodwill?"
-    answer: "Yes, if you use incorporation relief. The relief defers the capital gain on the goodwill transfer by reducing the base cost of the shares you receive. You do not pay tax at the point of incorporation. The gain crystallises when you sell the shares later. If you qualify for BADR at that point, the tax rate is 14% rather than 24%."
-  - question: "How is goodwill valued for a marketing agency partnership?"
-    answer: "Goodwill is typically valued using a multiple of maintainable earnings, usually between 1.5 and 3 times adjusted net profit. The exact multiple depends on client concentration, revenue predictability, growth rate, and the agency's reputation. A professional valuation from a qualified accountant or specialist firm is essential. HMRC will challenge unrealistic figures."
-  - question: "What happens to the partnership's VAT registration when I incorporate?"
-    answer: "You can apply to transfer the VAT registration number to the new company if the business is transferred as a going concern. This avoids issuing invoices with two different VAT numbers during the transition. The transfer itself is usually outside the scope of VAT under TOGC rules, provided all conditions are met."
-  - question: "Do I need a new partnership agreement before incorporating?"
-    answer: "Yes, or at least a review of your existing agreement. Most partnership agreements do not cover incorporation scenarios in detail. You need unanimous consent from all partners to transfer the business assets, including goodwill. A written agreement that specifies the process, the valuation method, and the share distribution avoids disputes and legal complications later."
+- question: Can I incorporate my agency partnership without paying any tax on goodwill?
+  answer: Yes, if you use incorporation relief. The relief defers the capital gain on the goodwill transfer by reducing the base cost of the shares you receive. You do not pay tax at the point of incorporation. The gain crystallises when you sell the shares later. If you qualify for BADR at that point, the tax rate is 14% rather than 24%.
+- question: How is goodwill valued for a marketing agency partnership?
+  answer: Goodwill is typically valued using a multiple of maintainable earnings, usually between 1.5 and 3 times adjusted net profit. The exact multiple depends on client concentration, revenue predictability, growth rate, and the agency's reputation. A professional valuation from a qualified accountant or specialist firm is essential. HMRC will challenge unrealistic figures.
+- question: What happens to the partnership's VAT registration when I incorporate?
+  answer: You can apply to transfer the VAT registration number to the new company if the business is transferred as a going concern. This avoids issuing invoices with two different VAT numbers during the transition. The transfer itself is usually outside the scope of VAT under TOGC rules, provided all conditions are met.
+- question: Do I need a new partnership agreement before incorporating?
+  answer: Yes, or at least a review of your existing agreement. Most partnership agreements do not cover incorporation scenarios in detail. You need unanimous consent from all partners to transfer the business assets, including goodwill. A written agreement that specifies the process, the valuation method, and the share distribution avoids disputes and legal complications later.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Incorporation relief under TCGA 1992 Section 162 defers the capital gains tax on goodwill when transferring a partnership to a limited company.
+- Without relief, transferring goodwill to a limited company triggers a capital gains tax charge on its value, even though no cash is received.
+- A partnership with £350,000 goodwill could face a £70,000 capital gains tax bill at 20% if incorporation is not structured correctly.
+- Incorporation relief reduces the base cost of shares received, deferring the tax until the shares are sold, often allowing use of BADR.
+- To qualify for incorporation relief, the business must be transferred as a going concern in exchange for shares issued to all partners.
 ---
-
 <p>If you run your agency as a partnership and you are thinking of incorporating into a limited company, goodwill is the single biggest tax trap you will face.</p>
 
 <p>Goodwill is the intangible value of your agency. The reputation, the client relationships, the brand name, the recurring retainer book. When you transfer a partnership business to a limited company, HMRC treats the transfer of goodwill as a disposal for capital gains tax purposes. And that disposal can trigger a tax charge on a value that never touched your bank account.</p>

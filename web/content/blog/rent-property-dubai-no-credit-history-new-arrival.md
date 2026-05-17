@@ -1,33 +1,40 @@
 ---
-title: "How to Rent Property in Dubai Without a Credit History as a New Arrival"
-slug: "rent-property-dubai-no-credit-history-new-arrival"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/rent-property-dubai-no-credit-history-new-arrival"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Rent Property Dubai No Credit History: New Arrival Guide"
-metaDescription: "Need to rent property in Dubai with no credit history? New arrivals often pay a full year upfront. Here is exactly how the Ejari system works and what"
-altText: "New arrival signing a tenancy contract in a Dubai real estate agency office"
-image: "/blog/rent-property-dubai-no-credit-history-new-arrival.jpg"
+title: How to Rent Property in Dubai Without a Credit History as a New Arrival
+slug: rent-property-dubai-no-credit-history-new-arrival
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/rent-property-dubai-no-credit-history-new-arrival
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Rent Property Dubai No Credit History: New Arrival Guide'
+metaDescription: Need to rent property in Dubai with no credit history? New arrivals often pay a full year upfront. Here is exactly how the Ejari system works and what
+altText: New arrival signing a tenancy contract in a Dubai real estate agency office
+image: /blog/rent-property-dubai-no-credit-history-new-arrival.jpg
 imageCredit:
-  photographer: "Jakub Zerdzicki"
-  photographerUrl: "https://www.pexels.com/@jakubzerdzicki"
-  sourceUrl: "https://www.pexels.com/photo/euro-coins-bills-house-keys-and-models-31974125/"
-  source: "Pexels"
-h1: "How to Rent Property in Dubai Without a Credit History as a New Arrival"
-summary: "New arrivals in Dubai often struggle to rent without a local credit history. The standard solution is paying a full year's rent upfront. This guide explains the Ejari system, agency fees, and the practical steps to secure a tenancy contract."
-schema: ""
+  photographer: Jakub Zerdzicki
+  photographerUrl: https://www.pexels.com/@jakubzerdzicki
+  sourceUrl: https://www.pexels.com/photo/euro-coins-bills-house-keys-and-models-31974125/
+  source: Pexels
+h1: How to Rent Property in Dubai Without a Credit History as a New Arrival
+summary: New arrivals in Dubai often struggle to rent without a local credit history. The standard solution is paying a full year's rent upfront. This guide explains the Ejari system, agency fees, and the practical steps to secure a tenancy contract.
+schema: ''
 faqs:
-  - question: "Can I rent in Dubai without a credit history at all?"
-    answer: "Yes, but you will almost certainly need to pay a full year's rent upfront. That is the standard approach for new arrivals without a UAE credit file. Some landlords accept 4 post-dated cheques if you have a salary certificate from a recognised UAE employer, but that is rare in your first tenancy."
-  - question: "What is Ejari and why do I need it?"
-    answer: "Ejari is Dubai's mandatory tenancy registration system. Every rental contract must be registered with Ejari through RERA. Without it, you cannot connect utilities, get a tenancy visa, or legally enforce the contract. Your agent typically handles registration for a small fee."
-  - question: "How much cash do I need upfront to rent in Dubai?"
-    answer: "For a typical AED 180,000 apartment, expect to pay roughly AED 198,780 upfront. That includes 12 months rent, 5% agent commission, 5% security deposit, and connection fees. First-year costs including furniture, visa, and a car can easily reach AED 250,000-300,000."
-  - question: "Can my company help me avoid paying a full year upfront?"
-    answer: "Yes. If your agency signs a corporate lease, the landlord sees the company as the tenant, not you. That often secures monthly or quarterly payments. Ask your employer about this before you start property hunting. It is the single best way to reduce your upfront cash requirement."
+- question: Can I rent in Dubai without a credit history at all?
+  answer: Yes, but you will almost certainly need to pay a full year's rent upfront. That is the standard approach for new arrivals without a UAE credit file. Some landlords accept 4 post-dated cheques if you have a salary certificate from a recognised UAE employer, but that is rare in your first tenancy.
+- question: What is Ejari and why do I need it?
+  answer: Ejari is Dubai's mandatory tenancy registration system. Every rental contract must be registered with Ejari through RERA. Without it, you cannot connect utilities, get a tenancy visa, or legally enforce the contract. Your agent typically handles registration for a small fee.
+- question: How much cash do I need upfront to rent in Dubai?
+  answer: For a typical AED 180,000 apartment, expect to pay roughly AED 198,780 upfront. That includes 12 months rent, 5% agent commission, 5% security deposit, and connection fees. First-year costs including furniture, visa, and a car can easily reach AED 250,000-300,000.
+- question: Can my company help me avoid paying a full year upfront?
+  answer: Yes. If your agency signs a corporate lease, the landlord sees the company as the tenant, not you. That often secures monthly or quarterly payments. Ask your employer about this before you start property hunting. It is the single best way to reduce your upfront cash requirement.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Your UK credit history is not recognised in Dubai; you must build a local file with the Al Etihad Credit Bureau from scratch.
+- New arrivals typically must pay a full year's rent upfront via a single cheque or bank transfer to secure a tenancy.
+- Ejari registration is mandatory for all Dubai tenancies; without it you cannot connect utilities or obtain a tenancy visa.
+- Expect to pay agency fees of 5% of annual rent, plus a security deposit, DEWA connection fee, and Ejari registration fee upfront.
+- Negotiating for quarterly post-dated cheques is possible but unlikely for first-time tenants without a local credit history.
 ---
-
 <h2>Why Your UK Credit History Does Not Count in Dubai</h2>
 
 <p>If you have just moved to Dubai from the UK, you will quickly discover that your Experian or Equifax credit file means nothing here. Dubai has its own credit bureau, Al Etihad Credit Bureau (AECB), and it starts from zero the moment you arrive.</p>

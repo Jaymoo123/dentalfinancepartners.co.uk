@@ -1,33 +1,40 @@
 ---
-title: "MTD ITSA for Agency Founders with Freelance Income: What You Need to Do"
-slug: "mtd-itsa-agency-founders-freelance-income"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-itsa-agency-founders-freelance-income"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Making Tax Digital"
-metaTitle: "MTD ITSA for Agency Founders with Freelance Income: Your"
-metaDescription: "MTD ITSA for agency founders with side freelance income. What the April 2026 rules mean, how to prepare, and which software to use. Practical steps now."
-altText: "Agency founder reviewing financial records on a laptop in a modern UK office with a view of Manchester city centre"
-image: "/blog/mtd-itsa-agency-founders-freelance-income.jpg"
+title: 'MTD ITSA for Agency Founders with Freelance Income: What You Need to Do'
+slug: mtd-itsa-agency-founders-freelance-income
+canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-itsa-agency-founders-freelance-income
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Making Tax Digital
+metaTitle: 'MTD ITSA for Agency Founders with Freelance Income: Your'
+metaDescription: MTD ITSA for agency founders with side freelance income. What the April 2026 rules mean, how to prepare, and which software to use. Practical steps now.
+altText: Agency founder reviewing financial records on a laptop in a modern UK office with a view of Manchester city centre
+image: /blog/mtd-itsa-agency-founders-freelance-income.jpg
 imageCredit:
-  photographer: "Ofspace LLC, Culture"
-  photographerUrl: "https://www.pexels.com/@ofspace"
-  sourceUrl: "https://www.pexels.com/photo/high-angle-shot-of-a-man-in-yellow-shirt-wearing-eyeglasses-while-using-a-laptop-8128188/"
-  source: "Pexels"
-h1: "MTD ITSA for Agency Founders Who Also Have Freelance Income"
-summary: "From April 2026, Making Tax Digital for Income Tax (MTD ITSA) will apply to agency founders with self-employed income over £50k. If you take dividends from your agency but also do freelance work on the side, you have a mixed-income scenario that most MTD guides ignore. Here is what you need to know, and what to do now."
-schema: ""
+  photographer: Ofspace LLC, Culture
+  photographerUrl: https://www.pexels.com/@ofspace
+  sourceUrl: https://www.pexels.com/photo/high-angle-shot-of-a-man-in-yellow-shirt-wearing-eyeglasses-while-using-a-laptop-8128188/
+  source: Pexels
+h1: MTD ITSA for Agency Founders Who Also Have Freelance Income
+summary: From April 2026, Making Tax Digital for Income Tax (MTD ITSA) will apply to agency founders with self-employed income over £50k. If you take dividends from your agency but also do freelance work on the side, you have a mixed-income scenario that most MTD guides ignore. Here is what you need to know, and what to do now.
+schema: ''
 faqs:
-  - question: "Does MTD ITSA apply to my limited company agency?"
-    answer: "No. MTD ITSA applies to individuals with self-employed or property income over £50,000. Your limited company pays corporation tax and is not subject to MTD ITSA. However, if you have freelance income outside your agency, that personal income may be in scope. The rules apply to you as an individual, not to your company."
-  - question: "What if my freelance income is below £50,000?"
-    answer: "You are not required to comply with MTD ITSA for the 2026/27 tax year. However, HMRC plans to extend the requirement to those earning over £30,000 from April 2027. If your freelance income is close to the threshold, it makes sense to prepare early. You can also voluntarily join MTD ITSA if you want to get ahead of the requirement."
-  - question: "Do I need to report my dividends from the agency through MTD ITSA?"
-    answer: "No. Dividends are investment income, not self-employed income. They do not need to be included in your quarterly MTD ITSA updates. You still declare dividends on your annual self-assessment return, but they sit outside the quarterly reporting process. Your MTD-compatible software only needs to track your freelance income and expenses."
-  - question: "What software should I use for MTD ITSA if I already use Xero for my agency?"
-    answer: "You have a few options. You can use a separate FreeAgent account for your freelance income, or use Xero's multi-organisation feature to run both under one login. QuickBooks Self-Employed is a simpler option if your freelance income is straightforward. Whichever you choose, make sure it is on HMRC's list of MTD-compatible software. Speak to your accountant before committing to a platform."
+- question: Does MTD ITSA apply to my limited company agency?
+  answer: No. MTD ITSA applies to individuals with self-employed or property income over £50,000. Your limited company pays corporation tax and is not subject to MTD ITSA. However, if you have freelance income outside your agency, that personal income may be in scope. The rules apply to you as an individual, not to your company.
+- question: What if my freelance income is below £50,000?
+  answer: You are not required to comply with MTD ITSA for the 2026/27 tax year. However, HMRC plans to extend the requirement to those earning over £30,000 from April 2027. If your freelance income is close to the threshold, it makes sense to prepare early. You can also voluntarily join MTD ITSA if you want to get ahead of the requirement.
+- question: Do I need to report my dividends from the agency through MTD ITSA?
+  answer: No. Dividends are investment income, not self-employed income. They do not need to be included in your quarterly MTD ITSA updates. You still declare dividends on your annual self-assessment return, but they sit outside the quarterly reporting process. Your MTD-compatible software only needs to track your freelance income and expenses.
+- question: What software should I use for MTD ITSA if I already use Xero for my agency?
+  answer: You have a few options. You can use a separate FreeAgent account for your freelance income, or use Xero's multi-organisation feature to run both under one login. QuickBooks Self-Employed is a simpler option if your freelance income is straightforward. Whichever you choose, make sure it is on HMRC's list of MTD-compatible software. Speak to your accountant before committing to a platform.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- From April 2026, MTD ITSA applies to agency founders with freelance income over £50,000, based on gross turnover not profit.
+- Your limited company is not subject to MTD ITSA; the rules apply to your personal self-assessment return for freelance earnings.
+- Freelance income below £50,000 is exempt for now, but MTD ITSA will extend to those earning over £30,000 from April 2027.
+- MTD ITSA requires digital record-keeping of all freelance income and expenses, plus quarterly updates to HMRC via compatible software.
+- Penalties for non-compliance with MTD ITSA start from day one, so early preparation with MTD-compatible software is advisable.
 ---
-
 <h2>MTD ITSA Is Coming. Here Is How It Affects You.</h2>
 
 <p>If you run a marketing agency through a limited company but also take on freelance work directly, you have a mixed-income situation that most MTD ITSA guidance does not cover well. The standard articles talk about landlords or sole traders. They rarely address the agency founder who pays themselves through dividends and also files a self-assessment return for separate freelance earnings.</p>

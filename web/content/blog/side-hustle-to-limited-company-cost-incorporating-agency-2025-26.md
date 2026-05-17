@@ -1,29 +1,36 @@
 ---
-title: "Side Hustle to Limited Company: The Real Cost of Incorporating Your Agency in 2025/26"
-slug: "side-hustle-to-limited-company-cost-incorporating-agency-2025-26"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/side-hustle-to-limited-company-cost-incorporating-agency-2025-26"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "Cost of Incorporating a Side Hustle Agency vs Sole Trader"
-metaDescription: "Should you incorporate your side hustle agency? We compare the tax, admin, and cash flow impact of staying sole trader vs forming a limited company"
-altText: "Agency founder reviewing incorporation costs on a laptop in a London coffee shop, with a notebook showing profit calculations"
-image: "/blog/side-hustle-to-limited-company-cost-incorporating-agency-2025-26.jpg"
+title: 'Side Hustle to Limited Company: The Real Cost of Incorporating Your Agency in 2025/26'
+slug: side-hustle-to-limited-company-cost-incorporating-agency-2025-26
+canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/side-hustle-to-limited-company-cost-incorporating-agency-2025-26
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Incorporation and Structure
+metaTitle: Cost of Incorporating a Side Hustle Agency vs Sole Trader
+metaDescription: Should you incorporate your side hustle agency? We compare the tax, admin, and cash flow impact of staying sole trader vs forming a limited company
+altText: Agency founder reviewing incorporation costs on a laptop in a London coffee shop, with a notebook showing profit calculations
+image: /blog/side-hustle-to-limited-company-cost-incorporating-agency-2025-26.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/marker-note-on-craft-paper-near-laptop-7310136/"
-  source: "Pexels"
-h1: "Side Hustle to Limited Company: The Real Cost of Incorporating Your Agency in 2025/26"
-summary: "Thinking of turning your freelance agency side project into a limited company? This guide walks through the real costs, tax differences, and practical triggers that tell you when incorporation actually makes financial sense for a UK agency founder."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/marker-note-on-craft-paper-near-laptop-7310136/
+  source: Pexels
+h1: 'Side Hustle to Limited Company: The Real Cost of Incorporating Your Agency in 2025/26'
+summary: Thinking of turning your freelance agency side project into a limited company? This guide walks through the real costs, tax differences, and practical triggers that tell you when incorporation actually makes financial sense for a UK agency founder.
+schema: ''
 faqs:
-  - question: "What profit level makes incorporation worthwhile for an agency founder in 2025/26?"
-    answer: "Based on 2025/26 tax rates, incorporation starts to make financial sense once your profit exceeds roughly £80,000. Below that, the tax saving is marginal and may be eaten by higher accountancy fees and the extra admin burden. Above £80,000, the gap widens significantly, and the non-tax benefits (limited liability, reinvestment, exit planning) become real advantages."
-  - question: "Do I need to register for VAT when I incorporate my agency?"
-    answer: "Not automatically. You only need to register for VAT if your turnover exceeds £90,000 in a rolling 12-month period. However, many newly incorporated agencies choose to voluntarily register so they can reclaim VAT on their expenses. If you do register, check whether the Flat Rate VAT scheme works for your agency model. Most digital and creative agencies with low goods costs end up on the 16.5% limited cost trader rate, which offers little benefit."
+- question: What profit level makes incorporation worthwhile for an agency founder in 2025/26?
+  answer: Based on 2025/26 tax rates, incorporation starts to make financial sense once your profit exceeds roughly £80,000. Below that, the tax saving is marginal and may be eaten by higher accountancy fees and the extra admin burden. Above £80,000, the gap widens significantly, and the non-tax benefits (limited liability, reinvestment, exit planning) become real advantages.
+- question: Do I need to register for VAT when I incorporate my agency?
+  answer: Not automatically. You only need to register for VAT if your turnover exceeds £90,000 in a rolling 12-month period. However, many newly incorporated agencies choose to voluntarily register so they can reclaim VAT on their expenses. If you do register, check whether the Flat Rate VAT scheme works for your agency model. Most digital and creative agencies with low goods costs end up on the 16.5% limited cost trader rate, which offers little benefit.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- In 2025/26, corporation tax is 19% on profits up to £50,000, then marginal relief up to 25% at £250,000.
+- Dividend tax rates for 2025/26 are 8.75% (basic), 33.75% (higher), and 39.35% (additional), with a £500 allowance.
+- Accountancy fees typically double from £400-£800 as a sole trader to £1,800-£3,500 for a limited company.
+- Incorporation adds around 20 hours of admin per year, costing agency founders roughly £1,500 in time at £75 per hour.
+- New company directors often face a cash flow trap from paying dividends monthly without setting aside tax due on 31 January.
 ---
-
 <p>You've been running a freelance agency on the side for 18 months. Maybe you're a web designer billing £38k a year while holding down a part-time role. Or a copywriter turning over £52k from three retainer clients. And you're asking yourself: should I incorporate?</p>
 
 <p>The standard advice is simple: incorporate once your profits hit a certain threshold. But that advice misses the real question. The question isn't "when do I save tax?" It's "what does the full cost picture look like for <em>my</em> agency?"</p>

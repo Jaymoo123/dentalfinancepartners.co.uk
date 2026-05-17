@@ -1,33 +1,40 @@
 ---
-title: "IR35 Risks of Using a Personal Service Company for Agency Staff: What You Need to Know"
-slug: "ir35-risks-personal-service-company-agency-staff"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/ir35-risks-personal-service-company-agency-staff"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Contractors and IR35"
-metaTitle: "IR35 Risks Personal Service Company Agency Staff"
-metaDescription: "The IR35 risks of using a personal service company for agency staff can hit you with unpaid tax, penalties, and interest. Here's what to watch for."
-altText: "Agency founder reviewing IR35 status determination statements on a laptop in a modern UK office"
-image: "/blog/ir35-risks-personal-service-company-agency-staff.jpg"
+title: 'IR35 Risks of Using a Personal Service Company for Agency Staff: What You Need to Know'
+slug: ir35-risks-personal-service-company-agency-staff
+canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/ir35-risks-personal-service-company-agency-staff
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Contractors and IR35
+metaTitle: IR35 Risks Personal Service Company Agency Staff
+metaDescription: The IR35 risks of using a personal service company for agency staff can hit you with unpaid tax, penalties, and interest. Here's what to watch for.
+altText: Agency founder reviewing IR35 status determination statements on a laptop in a modern UK office
+image: /blog/ir35-risks-personal-service-company-agency-staff.jpg
 imageCredit:
-  photographer: "MART  PRODUCTION"
-  photographerUrl: "https://www.pexels.com/@mart-production"
-  sourceUrl: "https://www.pexels.com/photo/person-in-black-blazer-holding-a-documents-7415041/"
-  source: "Pexels"
-h1: "IR35 Risks of Using a Personal Service Company for Agency Staff"
-summary: "If you use contractors who work through their own limited company, you carry IR35 risk. Get the status determination wrong and HMRC can come after you for unpaid tax, NI, and penalties. Here's what every agency founder needs to know."
-schema: ""
+  photographer: MART  PRODUCTION
+  photographerUrl: https://www.pexels.com/@mart-production
+  sourceUrl: https://www.pexels.com/photo/person-in-black-blazer-holding-a-documents-7415041/
+  source: Pexels
+h1: IR35 Risks of Using a Personal Service Company for Agency Staff
+summary: If you use contractors who work through their own limited company, you carry IR35 risk. Get the status determination wrong and HMRC can come after you for unpaid tax, NI, and penalties. Here's what every agency founder needs to know.
+schema: ''
 faqs:
-  - question: "What happens if I don't issue an IR35 Status Determination Statement to a contractor?"
-    answer: "You are non-compliant from day one. If HMRC investigates and finds the contractor was inside IR35, you become liable for the unpaid income tax, employee NI, and employer NI, plus interest and penalties. There is no grace period. You must issue the SDS before the contractor starts work. If you have existing contractors without an SDS, issue one now."
-  - question: "Can I rely on HMRC's CEST tool to determine IR35 status?"
-    answer: "CEST is directional, not definitive. It works for straightforward cases but often returns \"undetermined\" for complex engagements. If you use CEST, document every answer and keep the result. But do not treat it as a guarantee. HMRC can challenge CEST results where the actual working practices differ from the answers given. For any engagement with ambiguity, take professional advice."
-  - question: "If a contractor tells me they are outside IR35, can I rely on that?"
-    answer: "No. Under the 2021 off-payroll working rules, you as the engager are responsible for making the determination. The contractor's own assessment is not your determination. You must make your own reasonable care assessment and issue your own SDS. Relying on the contractor's word will not protect you if HMRC investigates."
-  - question: "How long should I keep IR35 records after a contractor engagement ends?"
-    answer: "Keep all records for at least six years after the end of the tax year in which the engagement finished. This includes SDS documents, contracts, correspondence about the determination, and any evidence of reasonable care. For cases involving deliberate non-compliance, HMRC can go back 20 years. When in doubt, keep the records longer rather than shorter."
+- question: What happens if I don't issue an IR35 Status Determination Statement to a contractor?
+  answer: You are non-compliant from day one. If HMRC investigates and finds the contractor was inside IR35, you become liable for the unpaid income tax, employee NI, and employer NI, plus interest and penalties. There is no grace period. You must issue the SDS before the contractor starts work. If you have existing contractors without an SDS, issue one now.
+- question: Can I rely on HMRC's CEST tool to determine IR35 status?
+  answer: CEST is directional, not definitive. It works for straightforward cases but often returns "undetermined" for complex engagements. If you use CEST, document every answer and keep the result. But do not treat it as a guarantee. HMRC can challenge CEST results where the actual working practices differ from the answers given. For any engagement with ambiguity, take professional advice.
+- question: If a contractor tells me they are outside IR35, can I rely on that?
+  answer: No. Under the 2021 off-payroll working rules, you as the engager are responsible for making the determination. The contractor's own assessment is not your determination. You must make your own reasonable care assessment and issue your own SDS. Relying on the contractor's word will not protect you if HMRC investigates.
+- question: How long should I keep IR35 records after a contractor engagement ends?
+  answer: Keep all records for at least six years after the end of the tax year in which the engagement finished. This includes SDS documents, contracts, correspondence about the determination, and any evidence of reasonable care. For cases involving deliberate non-compliance, HMRC can go back 20 years. When in doubt, keep the records longer rather than shorter.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Since April 2021, medium and large agencies must issue a Status Determination Statement before a contractor starts work or face non-compliance.
+- If a contractor works exclusively for your agency, uses your equipment, and cannot send a substitute, HMRC will likely deem them an employee for tax purposes.
+- HMRC opened over 4,000 IR35 investigations in 2023/24, targeting agencies and end-clients for unpaid tax, NI, interest, and penalties.
+- Failing to issue an SDS before work begins is the most common IR35 compliance failure and carries no grace period.
+- The working practices of the engagement determine IR35 status, not the contractor's legal structure of using a personal service company.
 ---
-
 <p>If you run a UK agency, you've almost certainly used contractors who work through their own limited company. It's standard practice across marketing, digital, creative, and PR agencies. But here's the part that catches founders out: <strong>the IR35 risks of using a personal service company for agency staff</strong> sit squarely with you, the engager, not the contractor.</p>
 
 <p>Get it wrong, and HMRC can bill you for unpaid tax, National Insurance, and interest. They can also levy penalties. I've seen it happen to agencies turning over £400k and agencies turning over £4m. The size doesn't matter. The facts of the engagement do.</p>

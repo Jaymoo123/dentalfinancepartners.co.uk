@@ -1,27 +1,34 @@
 ---
-title: "How to Claim Capital Allowances on Office Fit-Out Costs for Your Agency"
-slug: "capital-allowances-office-fit-out-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/capital-allowances-office-fit-out-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Claim capital allowances on agency office fit-out costs"
-metaDescription: "Claim capital allowances on office fit-out costs for your agency. We explain what qualifies, what doesn’t, and how to maximise your claim before year-end."
-altText: "Modern open-plan agency office with exposed brick walls and designer furniture in Shoreditch, London"
-image: "/blog/capital-allowances-office-fit-out-agency.jpg"
+title: How to Claim Capital Allowances on Office Fit-Out Costs for Your Agency
+slug: capital-allowances-office-fit-out-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/capital-allowances-office-fit-out-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: Claim capital allowances on agency office fit-out costs
+metaDescription: Claim capital allowances on office fit-out costs for your agency. We explain what qualifies, what doesn’t, and how to maximise your claim before year-end.
+altText: Modern open-plan agency office with exposed brick walls and designer furniture in Shoreditch, London
+image: /blog/capital-allowances-office-fit-out-agency.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/tax-documents-on-black-surface-6863281/"
-  source: "Pexels"
-h1: "How to Claim Capital Allowances on Office Fit-Out Costs for Your Agency"
-summary: "Agencies spending £30k+ on office fit-outs often miss capital allowance claims worth thousands. We explain what qualifies as plant and machinery, what doesn’t, and how to structure your claim with your accountant before the year-end."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/tax-documents-on-black-surface-6863281/
+  source: Pexels
+h1: How to Claim Capital Allowances on Office Fit-Out Costs for Your Agency
+summary: Agencies spending £30k+ on office fit-outs often miss capital allowance claims worth thousands. We explain what qualifies as plant and machinery, what doesn’t, and how to structure your claim with your accountant before the year-end.
+schema: ''
 faqs:
-  - question: "Can I claim capital allowances on office furniture like desks and chairs?"
-    answer: "Yes. Free-standing desks, chairs, filing cabinets, sofas, and coffee tables all qualify as plant and machinery. You can claim 100% relief through the Annual Investment Allow"
+- question: Can I claim capital allowances on office furniture like desks and chairs?
+  answer: Yes. Free-standing desks, chairs, filing cabinets, sofas, and coffee tables all qualify as plant and machinery. You can claim 100% relief through the Annual Investment Allow
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Capital allowances let you deduct qualifying office fit-out costs from taxable profits, saving £1,900–£2,500 per £10,000 spent at 19%–25% corporation tax.
+- Annual Investment Allowance (AIA) gives 100% relief on the first £1 million of qualifying plant and machinery expenditure each year.
+- Typical agency fit-outs see 60–80% of costs qualify as plant and machinery, including electrical systems, heating, built-in furniture, and floor coverings.
+- Structural walls, main building shell, external works, and free-standing decorative items do not qualify for capital allowances.
+- Structures and Buildings Allowance (SBA) offers 3% straight-line relief per year on physical building structure costs, not standard fit-outs.
 ---
-
 <p>You spent £47,000 fitting out your new agency office in Manchester’s Northern Quarter. New desks, lighting, a breakout area, kitchenette, and that exposed brick wall you insisted on. It looks great. Clients love it. Your team actually wants to be in the office.</p>
 
 <p>But here’s the question nobody asked you: how much of that £47,000 can you claim back against corporation tax?</p>

@@ -1,33 +1,40 @@
 ---
-title: "Can I Employ UK Staff Through My Dubai Agency Without Setting Up UK Payroll?"
-slug: "employ-uk-staff-through-dubai-agency-payroll"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/employ-uk-staff-through-dubai-agency-payroll"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Employ UK staff through Dubai agency: UK payroll rules"
-metaDescription: "UK payroll rules apply if your Dubai agency employs UK residents. We explain the obligations, risks, and what to do before hiring."
-altText: "Dubai agency founder reviewing UK payroll compliance documents in a modern office"
-image: "/blog/employ-uk-staff-through-dubai-agency-payroll.jpg"
+title: Can I Employ UK Staff Through My Dubai Agency Without Setting Up UK Payroll?
+slug: employ-uk-staff-through-dubai-agency-payroll
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/employ-uk-staff-through-dubai-agency-payroll
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Employ UK staff through Dubai agency: UK payroll rules'
+metaDescription: UK payroll rules apply if your Dubai agency employs UK residents. We explain the obligations, risks, and what to do before hiring.
+altText: Dubai agency founder reviewing UK payroll compliance documents in a modern office
+image: /blog/employ-uk-staff-through-dubai-agency-payroll.jpg
 imageCredit:
-  photographer: "Yusuf Kayode"
-  photographerUrl: "https://www.pexels.com/@yusuf-kayode-158526052"
-  sourceUrl: "https://www.pexels.com/photo/a-woman-in-floral-shirt-wearing-eyeglasses-11507566/"
-  source: "Pexels"
-h1: "Can I Employ UK Staff Through My Dubai Agency Without Setting Up UK Payroll?"
-summary: "If your Dubai-based agency employs UK residents, you almost certainly need to operate UK payroll. We explain the rules, the risks of getting it wrong, and how to stay compliant while running a cross-border agency."
-schema: ""
+  photographer: Yusuf Kayode
+  photographerUrl: https://www.pexels.com/@yusuf-kayode-158526052
+  sourceUrl: https://www.pexels.com/photo/a-woman-in-floral-shirt-wearing-eyeglasses-11507566/
+  source: Pexels
+h1: Can I Employ UK Staff Through My Dubai Agency Without Setting Up UK Payroll?
+summary: If your Dubai-based agency employs UK residents, you almost certainly need to operate UK payroll. We explain the rules, the risks of getting it wrong, and how to stay compliant while running a cross-border agency.
+schema: ''
 faqs:
-  - question: "What if my UK employee works from home and never comes into a Dubai office?"
-    answer: "It makes no difference to HMRC. If the employee performs their work from a home in the UK, that work is considered to take place in the UK. HMRC does not require a physical office presence to trigger UK payroll obligations. The employee's physical location determines the tax treatment, not where your company is registered."
-  - question: "Can I pay my UK employee as a contractor through my Dubai agency instead?"
-    answer: "You can, but HMRC may challenge the arrangement if the working relationship looks like employment. If the contractor works exclusively for you, uses your tools, follows your direction, and does not have the right to send a substitute, HMRC can deem them an employee for tax purposes under IR35. If that happens, you owe the same PAYE and NIC as if you had employed them directly, plus penalties."
-  - question: "How much does an Employer of Record cost for UK staff?"
-    answer: "Typical EOR fees range from £300 to £600 per employee per month. This covers payroll administration, tax deductions, employer NI payments, auto-enrolment pension setup, and employment law compliance. Some providers charge a setup fee of £500-£1,000. For agencies with 1-5 UK staff, this is usually cheaper than setting up and running a UK subsidiary."
-  - question: "What happens if I just pay my UK employee from my Dubai bank account and don't tell HMRC?"
-    answer: "The risk is significant. HMRC can discover the arrangement through multiple routes: the employee's UK tax return, bank account data sharing agreements between the UK and UAE, or a whistleblower report. If caught, HMRC can assess backdated PAYE and NIC for up to six years, plus interest and penalties of up to 100% of the tax owed. Directors can be held personally liable if the company cannot pay. We strongly advise against this approach."
+- question: What if my UK employee works from home and never comes into a Dubai office?
+  answer: It makes no difference to HMRC. If the employee performs their work from a home in the UK, that work is considered to take place in the UK. HMRC does not require a physical office presence to trigger UK payroll obligations. The employee's physical location determines the tax treatment, not where your company is registered.
+- question: Can I pay my UK employee as a contractor through my Dubai agency instead?
+  answer: You can, but HMRC may challenge the arrangement if the working relationship looks like employment. If the contractor works exclusively for you, uses your tools, follows your direction, and does not have the right to send a substitute, HMRC can deem them an employee for tax purposes under IR35. If that happens, you owe the same PAYE and NIC as if you had employed them directly, plus penalties.
+- question: How much does an Employer of Record cost for UK staff?
+  answer: Typical EOR fees range from £300 to £600 per employee per month. This covers payroll administration, tax deductions, employer NI payments, auto-enrolment pension setup, and employment law compliance. Some providers charge a setup fee of £500-£1,000. For agencies with 1-5 UK staff, this is usually cheaper than setting up and running a UK subsidiary.
+- question: What happens if I just pay my UK employee from my Dubai bank account and don't tell HMRC?
+  answer: 'The risk is significant. HMRC can discover the arrangement through multiple routes: the employee''s UK tax return, bank account data sharing agreements between the UK and UAE, or a whistleblower report. If caught, HMRC can assess backdated PAYE and NIC for up to six years, plus interest and penalties of up to 100% of the tax owed. Directors can be held personally liable if the company cannot pay. We strongly advise against this approach.'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- If your employee lives and works in the UK, you must operate UK payroll regardless of where your company is registered.
+- 'HMRC applies three tests to determine UK payroll obligations: residence, work location, and employer presence.'
+- Employing UK staff can create a UK permanent establishment, exposing your Dubai agency to UK corporation tax.
+- UK employer obligations include registering for PAYE, deducting tax and NI, paying 13.8% employer NI, and auto-enrolment pensions.
+- Engaging UK contractors carries IR35 risk if HMRC deems them employees for tax purposes.
 ---
-
 <h2>The Short Answer: Almost Certainly Not</h2>
 <p>If you own a Dubai agency and want to <strong>employ UK staff through your Dubai agency</strong> without setting up UK payroll, the answer is almost always no. HMRC takes a clear view on this. If your employee lives and works in the UK, you have UK employer obligations regardless of where your company is registered.</p>
 <p>This is one of the most common oversights we see with growing agencies that have expanded to Dubai. Founders assume their Dubai free zone company structure protects them from UK employment taxes. It doesn't. Not when the employee is physically in the UK.</p>

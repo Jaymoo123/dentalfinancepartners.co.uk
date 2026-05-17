@@ -1,33 +1,40 @@
 ---
-title: "Agency Tax Compliance UK: The Definitive Pillar Guide for Founders"
-slug: "agency-tax-compliance-complete-guide"
-canonical: "https://www.agencyfounderfinance.co.uk/fundamentals/agency-tax-compliance-complete-guide"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Agency Tax Compliance UK: Key Steps for Founders"
-metaDescription: "Corporation tax, VAT, PAYE, P11D, R&D credits, MTD, BADR. The definitive guide to UK agency tax compliance for agency founders."
-altText: "UK agency founder reviewing tax compliance documents with an ICAEW-qualified accountant in a modern office in Shoreditch, London"
-image: "/blog/agency-tax-compliance-complete-guide.jpg"
+title: 'Agency Tax Compliance UK: The Definitive Pillar Guide for Founders'
+slug: agency-tax-compliance-complete-guide
+canonical: https://www.agencyfounderfinance.co.uk/fundamentals/agency-tax-compliance-complete-guide
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'Agency Tax Compliance UK: Key Steps for Founders'
+metaDescription: Corporation tax, VAT, PAYE, P11D, R&D credits, MTD, BADR. The definitive guide to UK agency tax compliance for agency founders.
+altText: UK agency founder reviewing tax compliance documents with an ICAEW-qualified accountant in a modern office in Shoreditch, London
+image: /blog/agency-tax-compliance-complete-guide.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/tax-planning-6863243/"
-  source: "Pexels"
-h1: "Agency Tax Compliance UK: The Complete Guide for Agency Founders"
-summary: "This is the definitive guide to agency tax compliance in the UK for 2025/26. Written by ICAEW-qualified accountants who work exclusively with agency founders, it covers corporation tax, VAT, PAYE, P11D reporting, R&D tax credits, Making Tax Digital, and capital gains planning. You will find specific HMRC forms, real deadlines, and worked examples throughout."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/tax-planning-6863243/
+  source: Pexels
+h1: 'Agency Tax Compliance UK: The Complete Guide for Agency Founders'
+summary: This is the definitive guide to agency tax compliance in the UK for 2025/26. Written by ICAEW-qualified accountants who work exclusively with agency founders, it covers corporation tax, VAT, PAYE, P11D reporting, R&D tax credits, Making Tax Digital, and capital gains planning. You will find specific HMRC forms, real deadlines, and worked examples throughout.
+schema: ''
 faqs:
-  - question: "What is the corporation tax rate for a UK agency in 2025/26?"
-    answer: "The rate depends on your profit. Up to £50,000 profit, you pay 19%. Between £50,001 and £250,000, marginal relief applies with an effective rate of 26.5% on profits in that band. Above £250,000, the rate is 25%. Most agencies fall into the marginal relief band."
-  - question: "When must I register for VAT as an agency?"
-    answer: "You must register when your taxable turnover exceeds £90,000 in any rolling 12-month period. Many agencies voluntarily register earlier to reclaim VAT on costs. If your clients are VAT-registered businesses, voluntary registration is usually beneficial."
-  - question: "Do I need to file P11D forms for my agency?"
-    answer: "Yes, if you provide benefits in kind to employees or directors — private medical insurance, company cars, interest-free loans over £10,000, or gym memberships. P11D forms are due by 6 July after the tax year end. Class 1A NIC on the benefits is due by 19 July."
-  - question: "Can my agency claim R&D tax credits?"
-    answer: "Yes, if you develop new software, create proprietary tools, automate processes, or solve technical problems. The SME scheme provides a 186% enhanced deduction. You need proper documentation: project plans, technical reports, and cost breakdowns. HMRC is scrutinising claims more heavily, so work with an experienced accountant."
+- question: What is the corporation tax rate for a UK agency in 2025/26?
+  answer: The rate depends on your profit. Up to £50,000 profit, you pay 19%. Between £50,001 and £250,000, marginal relief applies with an effective rate of 26.5% on profits in that band. Above £250,000, the rate is 25%. Most agencies fall into the marginal relief band.
+- question: When must I register for VAT as an agency?
+  answer: You must register when your taxable turnover exceeds £90,000 in any rolling 12-month period. Many agencies voluntarily register earlier to reclaim VAT on costs. If your clients are VAT-registered businesses, voluntary registration is usually beneficial.
+- question: Do I need to file P11D forms for my agency?
+  answer: Yes, if you provide benefits in kind to employees or directors — private medical insurance, company cars, interest-free loans over £10,000, or gym memberships. P11D forms are due by 6 July after the tax year end. Class 1A NIC on the benefits is due by 19 July.
+- question: Can my agency claim R&D tax credits?
+  answer: 'Yes, if you develop new software, create proprietary tools, automate processes, or solve technical problems. The SME scheme provides a 186% enhanced deduction. You need proper documentation: project plans, technical reports, and cost breakdowns. HMRC is scrutinising claims more heavily, so work with an experienced accountant.'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- UK agencies pay corporation tax at 19% on profits up to £50,000, 26.5% on profits between £50,001 and £250,000, and 25% above £250,000.
+- Corporation tax payment is due nine months and one day after your year end, with the CT600 filing deadline 12 months after the period end.
+- You must register for VAT when your taxable turnover exceeds £90,000 in any rolling 12-month period, or you can voluntarily register earlier.
+- Legitimate corporation tax deductions for agencies include salaries, rent, software, marketing, travel, equipment, and pension contributions.
+- Late corporation tax payment incurs interest at 7.25% from April 2025, and late filing penalties start at £100 and escalate quickly.
 ---
-
 <p>What does full tax compliance actually look like for a UK agency founder in 2025/26?</p>
 
 <p>Not the theory. The reality. The forms you sign. The dates you cannot miss. The numbers that keep HMRC off your back and your agency growing.</p>

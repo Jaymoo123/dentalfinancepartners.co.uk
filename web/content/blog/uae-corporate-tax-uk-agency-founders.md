@@ -1,31 +1,38 @@
 ---
-title: "UAE Corporate Tax for UK Agency Founders: What You Need to Know in 2025/26"
-slug: "uae-corporate-tax-uk-agency-founders"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-uk-agency-founders"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UAE Corporate Tax UK Agency: 9% Rate & UK Tax Implications"
-metaDescription: "The UAE introduced 9% corporate tax in June 2023. UK agency founders with UAE operations need to understand the rules, thresholds, and UK reporting"
-altText: "UK agency founder reviewing UAE corporate tax documents at a desk in a modern Dubai office with city skyline visible through window"
-image: "/blog/uae-corporate-tax-uk-agency-founders.jpg"
+title: 'UAE Corporate Tax for UK Agency Founders: What You Need to Know in 2025/26'
+slug: uae-corporate-tax-uk-agency-founders
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-uk-agency-founders
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UAE Corporate Tax UK Agency: 9% Rate & UK Tax Implications'
+metaDescription: The UAE introduced 9% corporate tax in June 2023. UK agency founders with UAE operations need to understand the rules, thresholds, and UK reporting
+altText: UK agency founder reviewing UAE corporate tax documents at a desk in a modern Dubai office with city skyline visible through window
+image: /blog/uae-corporate-tax-uk-agency-founders.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-surface-7821565/"
-  source: "Pexels"
-h1: "UAE Corporate Tax for UK Agency Founders: What You Need to Know in 2025/26"
-summary: "The UAE introduced a 9% federal corporate tax from June 2023. UK agency founders with UAE operations, a Dubai branch, or a freelance visa need to understand how this interacts with UK corporation tax, double taxation treaties, and your personal tax position. This article covers the key rules, thresholds, and practical steps."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-surface-7821565/
+  source: Pexels
+h1: 'UAE Corporate Tax for UK Agency Founders: What You Need to Know in 2025/26'
+summary: The UAE introduced a 9% federal corporate tax from June 2023. UK agency founders with UAE operations, a Dubai branch, or a freelance visa need to understand how this interacts with UK corporation tax, double taxation treaties, and your personal tax position. This article covers the key rules, thresholds, and practical steps.
+schema: ''
 faqs:
-  - question: "Do I have to pay UAE corporate tax if my free zone company only serves non-UAE clients?"
-    answer: "If your free zone company's income is all from non-UAE clients and you meet the substance requirements (physical office, staff, bank account in the UAE), that income is likely qualifying income and taxed at 0%. But you still need to register for corporate tax and file a return. If you are UK tax resident, the UK may tax those profits at 19% to 25%, with no foreign tax credit because you paid 0% in the UAE. That is the trade-off."
-  - question: "What happens if I do not register my UAE company for corporate tax?"
-    answer: "The FTA imposes penalties for late registration. The penalty is typically AED 10,000 (about £2,100) for the first offence, with higher penalties for repeat failures. You also cannot file a corporate tax return without being registered, which means you are non-compliant. If HMRC discovers your UAE entity and you have not filed UK tax returns showing it, you face separate penalties in the UK. Register as soon as possible."
-  - question: "Can I pay myself a salary from my UAE company tax-free if I live in Dubai?"
-    answer: "If you are genuinely non-UK resident (passing the statutory residence test), your UAE salary is not taxed in the UK. The UAE does not tax personal income. So yes, you can take a salary tax-free. But if you are UK resident, your UAE salary is taxable in the UK at your marginal rate. The UK-UAE treaty does not change that. Your residency status is"
+- question: Do I have to pay UAE corporate tax if my free zone company only serves non-UAE clients?
+  answer: If your free zone company's income is all from non-UAE clients and you meet the substance requirements (physical office, staff, bank account in the UAE), that income is likely qualifying income and taxed at 0%. But you still need to register for corporate tax and file a return. If you are UK tax resident, the UK may tax those profits at 19% to 25%, with no foreign tax credit because you paid 0% in the UAE. That is the trade-off.
+- question: What happens if I do not register my UAE company for corporate tax?
+  answer: The FTA imposes penalties for late registration. The penalty is typically AED 10,000 (about £2,100) for the first offence, with higher penalties for repeat failures. You also cannot file a corporate tax return without being registered, which means you are non-compliant. If HMRC discovers your UAE entity and you have not filed UK tax returns showing it, you face separate penalties in the UK. Register as soon as possible.
+- question: Can I pay myself a salary from my UAE company tax-free if I live in Dubai?
+  answer: If you are genuinely non-UK resident (passing the statutory residence test), your UAE salary is not taxed in the UK. The UAE does not tax personal income. So yes, you can take a salary tax-free. But if you are UK resident, your UAE salary is taxable in the UK at your marginal rate. The UK-UAE treaty does not change that. Your residency status is
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- UAE corporate tax is 9% on profits above AED 375,000 (£79,000), with 0% on profits below that threshold.
+- Free zone agencies can still get 0% tax on qualifying income from non-UAE clients, but income from UAE mainland clients is taxed at 9%.
+- Mainland UAE companies pay 0% on the first AED 375,000 profit and 9% on the excess, with no distinction by income type.
+- UK agency founders with UAE operations must track qualifying vs non-qualifying income separately to apply the correct UAE tax rate.
+- The UAE-UK double taxation treaty allows UK tax relief for UAE corporate tax paid, preventing double taxation on the same profits.
 ---
-
 <p>If you are a UK agency founder with operations in the UAE, or you are considering setting up there, the tax environment changed significantly in 2023. The UAE introduced a federal corporate tax of 9% on business profits, effective for financial years starting on or after 1 June 2023.</p>
 
 <p>This is not a small tweak. It is the first time the UAE has introduced a broad-based corporate tax. For UK agency founders who moved to Dubai to take advantage of the zero-tax environment, or who run a branch of their UK agency from a free zone, the rules around UAE corporate tax UK agency interactions now matter a great deal.</p>

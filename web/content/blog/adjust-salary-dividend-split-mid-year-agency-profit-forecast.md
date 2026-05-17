@@ -1,33 +1,40 @@
 ---
-title: "How to Adjust Your Salary and Dividend Split Mid-Year When Your Agency's Profit Forecast Changes"
-slug: "adjust-salary-dividend-split-mid-year-agency-profit-forecast"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/adjust-salary-dividend-split-mid-year-agency-profit-forecast"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Salary and Dividends"
-metaTitle: "Adjust your salary dividend split mid-year when profits"
-metaDescription: "Mid-year profit forecast changed? Here is how to adjust your salary dividend split to stay tax efficient, avoid overdrawing, and keep HMRC happy."
-altText: "Agency founder reviewing profit forecast on a laptop in a modern UK office with a calculator and printed reports on the desk"
-image: "/blog/adjust-salary-dividend-split-mid-year-agency-profit-forecast.jpg"
+title: How to Adjust Your Salary and Dividend Split Mid-Year When Your Agency's Profit Forecast Changes
+slug: adjust-salary-dividend-split-mid-year-agency-profit-forecast
+canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/adjust-salary-dividend-split-mid-year-agency-profit-forecast
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Salary and Dividends
+metaTitle: Adjust your salary dividend split mid-year when profits
+metaDescription: Mid-year profit forecast changed? Here is how to adjust your salary dividend split to stay tax efficient, avoid overdrawing, and keep HMRC happy.
+altText: Agency founder reviewing profit forecast on a laptop in a modern UK office with a calculator and printed reports on the desk
+image: /blog/adjust-salary-dividend-split-mid-year-agency-profit-forecast.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/white-and-black-paper-on-typewriter-5198201/"
-  source: "Pexels"
-h1: "How to Adjust Your Salary and Dividend Split Mid-Year When Your Agency's Profit Forecast Changes"
-summary: "When your agency's profit forecast shifts mid-year, the salary dividend split you set in April may no longer be optimal. Here is how to adjust it without triggering unnecessary tax, overdrawing your director's loan account, or missing the allowances you are entitled to."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/white-and-black-paper-on-typewriter-5198201/
+  source: Pexels
+h1: How to Adjust Your Salary and Dividend Split Mid-Year When Your Agency's Profit Forecast Changes
+summary: When your agency's profit forecast shifts mid-year, the salary dividend split you set in April may no longer be optimal. Here is how to adjust it without triggering unnecessary tax, overdrawing your director's loan account, or missing the allowances you are entitled to.
+schema: ''
 faqs:
-  - question: "Can I change my salary mid-year without HMRC raising an issue?"
-    answer: "Yes, you can change your salary at any time. You simply update your payroll software (Xero, FreeAgent, QuickBooks) and issue a new payslip. HMRC does not need prior approval. The change applies from the next payroll run. Just ensure the new salary is still commercially reasonable for your role. Dropping from £50,000 to £12,570 overnight is fine if it reflects your actual duties. Increasing it to £100,000 without a corresponding change in responsibilities might attract HMRC scrutiny."
-  - question: "What happens if I paid dividends based on a profit forecast that did not materialise?"
-    answer: "You have paid an illegal dividend. The company must have sufficient distributable profits at the date of declaration. If it did not, the dividend is void. The remedy is to treat the amount as a director's loan. If that loan is not repaid within nine months of the company year-end, you face a section 455 charge at 33.75% on the outstanding balance. Speak to your accountant immediately. They can help you restructure the payments and avoid the penalty."
-  - question: "Should I take a higher salary instead of dividends if my profit is higher than expected?"
-    answer: "Usually not. Salary above £12,570 triggers employer NI at 13.8% and employee NI at 8% (or 2% above £50,270). That combined rate of roughly 22% is higher than the 8.75% basic rate dividend tax. However, if you are already in the higher rate band, dividends are taxed at 33.75%. In that case, salary might be comparable if you need the cash. But salary is also subject to PAYE and reduces your company's profit, which lowers corporation tax. Run the numbers both ways before deciding. A 30-minute call with your accountant will clarify the better option."
-  - question: "How often should I review my salary dividend split?"
-    answer: "At least quarterly, aligned with your management accounts review. If your agency has volatile revenue (project-based rather than retainer), review it monthly. The key trigger is any change in your profit forecast of more than 15-20%. If you win a big retainer or lose a major client, that is the moment to reassess. Do not wait until year-end. By then, the tax position is locked in and any mistakes are harder to fix."
+- question: Can I change my salary mid-year without HMRC raising an issue?
+  answer: Yes, you can change your salary at any time. You simply update your payroll software (Xero, FreeAgent, QuickBooks) and issue a new payslip. HMRC does not need prior approval. The change applies from the next payroll run. Just ensure the new salary is still commercially reasonable for your role. Dropping from £50,000 to £12,570 overnight is fine if it reflects your actual duties. Increasing it to £100,000 without a corresponding change in responsibilities might attract HMRC scrutiny.
+- question: What happens if I paid dividends based on a profit forecast that did not materialise?
+  answer: You have paid an illegal dividend. The company must have sufficient distributable profits at the date of declaration. If it did not, the dividend is void. The remedy is to treat the amount as a director's loan. If that loan is not repaid within nine months of the company year-end, you face a section 455 charge at 33.75% on the outstanding balance. Speak to your accountant immediately. They can help you restructure the payments and avoid the penalty.
+- question: Should I take a higher salary instead of dividends if my profit is higher than expected?
+  answer: Usually not. Salary above £12,570 triggers employer NI at 13.8% and employee NI at 8% (or 2% above £50,270). That combined rate of roughly 22% is higher than the 8.75% basic rate dividend tax. However, if you are already in the higher rate band, dividends are taxed at 33.75%. In that case, salary might be comparable if you need the cash. But salary is also subject to PAYE and reduces your company's profit, which lowers corporation tax. Run the numbers both ways before deciding. A 30-minute call with your accountant will clarify the better option.
+- question: How often should I review my salary dividend split?
+  answer: At least quarterly, aligned with your management accounts review. If your agency has volatile revenue (project-based rather than retainer), review it monthly. The key trigger is any change in your profit forecast of more than 15-20%. If you win a big retainer or lose a major client, that is the moment to reassess. Do not wait until year-end. By then, the tax position is locked in and any mistakes are harder to fix.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Adjust your salary and dividend split mid-year when profit forecasts change to avoid overdrawing your director's loan account.
+- Dividends must be paid from realised profits at the time of declaration, not from projected future earnings.
+- For 2025/26, set your salary at £12,570 to stay within the personal allowance and avoid NI above the threshold.
+- At £210,000 profit, corporation tax uses marginal relief with an effective rate of approximately 21.5%.
+- If you overdraw dividends based on an incorrect forecast, you risk a section 455 charge on the overdrawn director's loan account.
 ---
-
 <p>If you set your salary and dividend split back in April based on a profit forecast of £120,000, but your agency is now tracking towards £180,000, that original plan is already wrong. Most articles on the salary dividend split for agency founders assume a static year. They tell you the optimal split for a given profit level and leave it there. But agency profits move. Retainers get won. Projects burn scope. Margins tighten or loosen. Your tax plan needs to move with them.</p>
 
 <p>This article covers exactly how to adjust your <strong>salary dividend split agency</strong> founders use when the mid-year forecast changes. We will walk through the mechanics, the tax implications, and the practical steps you need to take with your accountant.</p>

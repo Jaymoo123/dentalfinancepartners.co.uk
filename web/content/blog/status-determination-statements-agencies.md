@@ -1,33 +1,40 @@
 ---
-title: "What Must an Agency Put in a Status Determination Statement for IR35?"
-slug: "status-determination-statements-agencies"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/status-determination-statements-agencies"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Contractors and IR35"
-metaTitle: "IR35 SDS agency: what to include in a status statement"
-metaDescription: "What must an agency include in an SDS for IR35? The legal requirements, the 4 key tests, and a practical template you can use today."
-altText: "Agency founder reviewing IR35 status determination statements with accountant in a modern London office"
-image: "/blog/status-determination-statements-agencies.jpg"
+title: What Must an Agency Put in a Status Determination Statement for IR35?
+slug: status-determination-statements-agencies
+canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/status-determination-statements-agencies
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Contractors and IR35
+metaTitle: 'IR35 SDS agency: what to include in a status statement'
+metaDescription: What must an agency include in an SDS for IR35? The legal requirements, the 4 key tests, and a practical template you can use today.
+altText: Agency founder reviewing IR35 status determination statements with accountant in a modern London office
+image: /blog/status-determination-statements-agencies.jpg
 imageCredit:
-  photographer: "Alesia  Kozik"
-  photographerUrl: "https://www.pexels.com/@alesiakozik"
-  sourceUrl: "https://www.pexels.com/photo/scrabble-tiles-on-purple-background-6836391/"
-  source: "Pexels"
-h1: "What Must an Agency Put in a Status Determination Statement for IR35?"
-summary: "If your agency engages contractors, you must issue a Status Determination Statement (SDS) before their first day. Here is exactly what HMRC expects to see, the four key employment tests, and a practical template you can adapt."
-schema: ""
+  photographer: Alesia  Kozik
+  photographerUrl: https://www.pexels.com/@alesiakozik
+  sourceUrl: https://www.pexels.com/photo/scrabble-tiles-on-purple-background-6836391/
+  source: Pexels
+h1: What Must an Agency Put in a Status Determination Statement for IR35?
+summary: If your agency engages contractors, you must issue a Status Determination Statement (SDS) before their first day. Here is exactly what HMRC expects to see, the four key employment tests, and a practical template you can adapt.
+schema: ''
 faqs:
-  - question: "Do I need an SDS for every single contractor engagement?"
-    answer: "Yes. Each separate engagement with a contractor requires its own Status Determination Statement. If the same contractor works on three different projects for three different end clients, you need three SDS documents. If the contractor works on a rolling monthly retainer for the same end client, one SDS covering the whole engagement is sufficient, provided the working practices do not change."
-  - question: "Can I use HMRC's CEST tool as my only evidence for an SDS?"
-    answer: "You can, but we do not recommend it. The CEST tool is directional guidance only. It does not handle substitution well and can produce results that contradict tribunal decisions on similar facts. A strong SDS should include your own analysis of the four key tests, not just a CEST output. If HMRC challenges your determination, they will look at the facts of the engagement, not the tool output."
-  - question: "What happens if I issue an SDS after the contractor has started work?"
-    answer: "You have failed to comply with the legal requirement. The SDS must be issued before the contractor performs any work. If you are already paying a contractor and you have not issued an SDS, you are carrying the full IR35 liability risk. Issue the SDS immediately and review your process to prevent it happening again. HMRC can impose penalties for late or missing SDS documents."
-  - question: "Does the end client need to see the SDS?"
-    answer: "If your agency is the fee-payer, you must inform the end client of your determination. You do not necessarily need to give them the full SDS document, but you must tell them whether the contractor is inside or outside IR35. The end client has a duty to respond with any information that could affect the determination. If they disagree with your conclusion, they can challenge it, but the final decision rests with the fee-payer."
+- question: Do I need an SDS for every single contractor engagement?
+  answer: Yes. Each separate engagement with a contractor requires its own Status Determination Statement. If the same contractor works on three different projects for three different end clients, you need three SDS documents. If the contractor works on a rolling monthly retainer for the same end client, one SDS covering the whole engagement is sufficient, provided the working practices do not change.
+- question: Can I use HMRC's CEST tool as my only evidence for an SDS?
+  answer: You can, but we do not recommend it. The CEST tool is directional guidance only. It does not handle substitution well and can produce results that contradict tribunal decisions on similar facts. A strong SDS should include your own analysis of the four key tests, not just a CEST output. If HMRC challenges your determination, they will look at the facts of the engagement, not the tool output.
+- question: What happens if I issue an SDS after the contractor has started work?
+  answer: You have failed to comply with the legal requirement. The SDS must be issued before the contractor performs any work. If you are already paying a contractor and you have not issued an SDS, you are carrying the full IR35 liability risk. Issue the SDS immediately and review your process to prevent it happening again. HMRC can impose penalties for late or missing SDS documents.
+- question: Does the end client need to see the SDS?
+  answer: If your agency is the fee-payer, you must inform the end client of your determination. You do not necessarily need to give them the full SDS document, but you must tell them whether the contractor is inside or outside IR35. The end client has a duty to respond with any information that could affect the determination. If they disagree with your conclusion, they can challenge it, but the final decision rests with the fee-payer.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A Status Determination Statement (SDS) must be issued before the contractor starts work, or your agency assumes liability for unpaid tax and NI.
+- The SDS must include the determination (inside or outside IR35) and the reasons based on the specific facts of the engagement.
+- The four key employment tests are substitution, control, mutuality of obligation, and financial risk; control is the most important factor.
+- A separate SDS is required for each distinct engagement, even with the same contractor, unless working practices remain unchanged.
+- If the contractor is inside IR35, your agency must deduct PAYE and NI and pay employer NI at 13.8%; if outside, pay gross but keep a valid SDS.
 ---
-
 <h2>The SDS Requirement That Catches Most Agencies Out</h2>
 
 <p>If your agency engages contractors through a limited company, you have a legal obligation to issue a Status Determination Statement (SDS) before that contractor does any work. This is not optional. It has been mandatory for medium and large agencies since April 2021, and HMRC is now actively checking compliance.</p>

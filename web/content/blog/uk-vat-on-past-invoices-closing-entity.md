@@ -1,33 +1,40 @@
 ---
-title: "How Do I Handle UK VAT on My Agency's Past Invoices if I Close the UK Entity?"
-slug: "uk-vat-on-past-invoices-closing-entity"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-vat-on-past-invoices-closing-entity"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK VAT on past invoices closing entity: what agency"
-metaDescription: "Closing a UK agency? You must submit a final VAT return, deregister, and handle past invoices. Here's exactly what HMRC expects before you strike off."
-altText: "Agency founder reviewing UK VAT paperwork and final return before closing the entity, desk with laptop and HMRC documents"
-image: "/blog/uk-vat-on-past-invoices-closing-entity.jpg"
+title: How Do I Handle UK VAT on My Agency's Past Invoices if I Close the UK Entity?
+slug: uk-vat-on-past-invoices-closing-entity
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-vat-on-past-invoices-closing-entity
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK VAT on past invoices closing entity: what agency'
+metaDescription: Closing a UK agency? You must submit a final VAT return, deregister, and handle past invoices. Here's exactly what HMRC expects before you strike off.
+altText: Agency founder reviewing UK VAT paperwork and final return before closing the entity, desk with laptop and HMRC documents
+image: /blog/uk-vat-on-past-invoices-closing-entity.jpg
 imageCredit:
-  photographer: "Pixabay"
-  photographerUrl: "https://www.pexels.com/@pixabay"
-  sourceUrl: "https://www.pexels.com/photo/selective-photo-of-2-deck-bus-near-people-163037/"
-  source: "Pexels"
-h1: "How Do I Handle UK VAT on My Agency's Past Invoices if I Close the UK Entity?"
-summary: "Closing your UK agency? You can't just strike off and walk away. HMRC requires a final VAT return, deregistration, and specific rules for past invoices. Here's the step-by-step process for agency founders migrating or winding down."
-schema: ""
+  photographer: Pixabay
+  photographerUrl: https://www.pexels.com/@pixabay
+  sourceUrl: https://www.pexels.com/photo/selective-photo-of-2-deck-bus-near-people-163037/
+  source: Pexels
+h1: How Do I Handle UK VAT on My Agency's Past Invoices if I Close the UK Entity?
+summary: Closing your UK agency? You can't just strike off and walk away. HMRC requires a final VAT return, deregistration, and specific rules for past invoices. Here's the step-by-step process for agency founders migrating or winding down.
+schema: ''
 faqs:
-  - question: "Can I cancel VAT invoices I issued before closing my UK agency?"
-    answer: "No. Once you issue a VAT invoice, the VAT belongs to HMRC. You cannot cancel it. You must account for that VAT on your final return, even if the client hasn't paid you. If the client never pays, you can claim VAT bad debt relief, but only within strict time limits."
-  - question: "What happens if I close my UK company without paying the VAT on past invoices?"
-    answer: "HMRC will object to the strike-off and pursue the company for the debt. If the company is dissolved with unpaid VAT, HMRC can pursue directors personally for wrongful trading or transactions defrauding creditors. This can result in personal liability for the VAT debt plus penalties and interest. Do not close the entity until all VAT is paid."
-  - question: "Do my Dubai clients still need UK VAT invoices after I deregister?"
-    answer: "Yes, if the work was done while you were VAT registered. Your clients may need those invoices for their own VAT returns. You must issue all final invoices before your deregistration date. After deregistration, you cannot issue a VAT invoice. If a client needs one later, you'd need to re-register for VAT, which is impractical."
-  - question: "How long does HMRC take to process a VAT deregistration?"
-    answer: "Typically 3-4 weeks if your returns are up to date and you have no outstanding VAT. But if HMRC has questions about why you're deregistering (especially if your turnover was above £90,000), it can take 8-12 weeks. Plan your closure timeline accordingly — do not assume you can deregister and close the company in the same month."
+- question: Can I cancel VAT invoices I issued before closing my UK agency?
+  answer: No. Once you issue a VAT invoice, the VAT belongs to HMRC. You cannot cancel it. You must account for that VAT on your final return, even if the client hasn't paid you. If the client never pays, you can claim VAT bad debt relief, but only within strict time limits.
+- question: What happens if I close my UK company without paying the VAT on past invoices?
+  answer: HMRC will object to the strike-off and pursue the company for the debt. If the company is dissolved with unpaid VAT, HMRC can pursue directors personally for wrongful trading or transactions defrauding creditors. This can result in personal liability for the VAT debt plus penalties and interest. Do not close the entity until all VAT is paid.
+- question: Do my Dubai clients still need UK VAT invoices after I deregister?
+  answer: Yes, if the work was done while you were VAT registered. Your clients may need those invoices for their own VAT returns. You must issue all final invoices before your deregistration date. After deregistration, you cannot issue a VAT invoice. If a client needs one later, you'd need to re-register for VAT, which is impractical.
+- question: How long does HMRC take to process a VAT deregistration?
+  answer: Typically 3-4 weeks if your returns are up to date and you have no outstanding VAT. But if HMRC has questions about why you're deregistering (especially if your turnover was above £90,000), it can take 8-12 weeks. Plan your closure timeline accordingly — do not assume you can deregister and close the company in the same month.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Submit a final VAT return covering all sales up to your deregistration date, including unpaid invoices.
+- Account for VAT on stock and assets held at deregistration, such as equipment or software licenses.
+- Claim VAT bad debt relief only if the invoice is at least six months overdue and written off in your accounts.
+- Deregister via form VAT7 online, but expect HMRC to query if your turnover exceeded £90,000 in the last 12 months.
+- Past invoices issued before deregistration remain valid; the VAT charged belongs to HMRC and must be accounted for.
 ---
-
 <p>If you're a UK agency founder closing your company — whether you're moving to Dubai, selling up, or simply winding down — you cannot ignore VAT on past invoices. HMRC will want their final return, and your clients may still need valid invoices for their own records.</p>
 
 <p>The short answer: you must submit a final VAT return, deregister from VAT, and handle any outstanding VAT owed. For past invoices issued before closure, you cannot simply cancel them. The VAT already charged belongs to HMRC, not you.</p>

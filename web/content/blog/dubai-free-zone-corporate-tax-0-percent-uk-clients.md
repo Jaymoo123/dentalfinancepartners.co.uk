@@ -1,33 +1,40 @@
 ---
-title: "Does My Dubai Free Zone Agency Pay 0% Corporate Tax If I Have UK Clients?"
-slug: "dubai-free-zone-corporate-tax-0-percent-uk-clients"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-free-zone-corporate-tax-0-percent-uk-clients"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Dubai Free Zone 0% Corporate Tax: UK Clients & Qualifying"
-metaDescription: "The 0% corporate tax rate in Dubai free zones applies only to qualifying income. UK client revenue may count, but you must pass the qualifying activity"
-altText: "Dubai free zone agency founder reviewing corporate tax obligations for UK clients at a desk in a modern office"
-image: "/blog/dubai-free-zone-corporate-tax-0-percent-uk-clients.jpg"
+title: Does My Dubai Free Zone Agency Pay 0% Corporate Tax If I Have UK Clients?
+slug: dubai-free-zone-corporate-tax-0-percent-uk-clients
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-free-zone-corporate-tax-0-percent-uk-clients
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Dubai Free Zone 0% Corporate Tax: UK Clients & Qualifying'
+metaDescription: The 0% corporate tax rate in Dubai free zones applies only to qualifying income. UK client revenue may count, but you must pass the qualifying activity
+altText: Dubai free zone agency founder reviewing corporate tax obligations for UK clients at a desk in a modern office
+image: /blog/dubai-free-zone-corporate-tax-0-percent-uk-clients.jpg
 imageCredit:
-  photographer: "Kate Trysh"
-  photographerUrl: "https://www.pexels.com/@katetrysh"
-  sourceUrl: "https://www.pexels.com/photo/stunning-aerial-view-of-urban-skyline-with-skyscrapers-and-highway-27206541/"
-  source: "Pexels"
-h1: "Does My Dubai Free Zone Agency Pay 0% Corporate Tax If I Have UK Clients?"
-summary: "Dubai free zones offer a 0% corporate tax rate, but only on qualifying income. If your agency has UK clients, you need to understand the qualifying activity test and the conditions for foreign-sourced income. This article explains the rules, the traps, and what you must do to stay compliant."
-schema: ""
+  photographer: Kate Trysh
+  photographerUrl: https://www.pexels.com/@katetrysh
+  sourceUrl: https://www.pexels.com/photo/stunning-aerial-view-of-urban-skyline-with-skyscrapers-and-highway-27206541/
+  source: Pexels
+h1: Does My Dubai Free Zone Agency Pay 0% Corporate Tax If I Have UK Clients?
+summary: Dubai free zones offer a 0% corporate tax rate, but only on qualifying income. If your agency has UK clients, you need to understand the qualifying activity test and the conditions for foreign-sourced income. This article explains the rules, the traps, and what you must do to stay compliant.
+schema: ''
 faqs:
-  - question: "Can my Dubai free zone agency charge UK clients and still pay 0% corporate tax?"
-    answer: "Yes, provided the income qualifies as qualifying income under UAE corporate tax law. Income from non-resident clients (like UK clients) is generally qualifying income if it comes from a qualifying activity, such as providing marketing, digital, or creative services. You must also meet the substance requirements, including having a physical office and employees in the UAE."
-  - question: "What happens if I have a UK client who also has a UAE office?"
-    answer: "If the client is a UAE resident entity (for example, a UK company with a mainland UAE branch), the income may be treated as domestic UAE income. That would not qualify for the 0% rate and would be subject to 9% corporate tax. You need to check the client’s tax residency status carefully."
-  - question: "Do I need audited accounts for my Dubai free zone agency?"
-    answer: "Yes. Free zone entities are required to have their financial statements audited by a UAE-registered auditor. This is a condition of maintaining your free zone status and claiming the 0% corporate tax rate. The audit must be completed and filed with your corporate tax return."
-  - question: "Can I run my Dubai free zone agency from the UK and still get the 0% rate?"
-    answer: "No. If you are managing and controlling the business from the UK, the company is likely UK tax resident, not UAE tax resident. That means you pay UK corporation tax on its profits. You also risk losing your free zone status for failing the substance test. You need genuine presence and decision-making in the UAE."
+- question: Can my Dubai free zone agency charge UK clients and still pay 0% corporate tax?
+  answer: Yes, provided the income qualifies as qualifying income under UAE corporate tax law. Income from non-resident clients (like UK clients) is generally qualifying income if it comes from a qualifying activity, such as providing marketing, digital, or creative services. You must also meet the substance requirements, including having a physical office and employees in the UAE.
+- question: What happens if I have a UK client who also has a UAE office?
+  answer: If the client is a UAE resident entity (for example, a UK company with a mainland UAE branch), the income may be treated as domestic UAE income. That would not qualify for the 0% rate and would be subject to 9% corporate tax. You need to check the client’s tax residency status carefully.
+- question: Do I need audited accounts for my Dubai free zone agency?
+  answer: Yes. Free zone entities are required to have their financial statements audited by a UAE-registered auditor. This is a condition of maintaining your free zone status and claiming the 0% corporate tax rate. The audit must be completed and filed with your corporate tax return.
+- question: Can I run my Dubai free zone agency from the UK and still get the 0% rate?
+  answer: No. If you are managing and controlling the business from the UK, the company is likely UK tax resident, not UAE tax resident. That means you pay UK corporation tax on its profits. You also risk losing your free zone status for failing the substance test. You need genuine presence and decision-making in the UAE.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Your Dubai free zone agency can pay 0% UAE corporate tax on income from UK clients only if that income qualifies as 'qualifying income' under UAE law.
+- Qualifying income includes services to non-resident clients, such as marketing, creative, digital, or PR work, provided the activity is listed as a qualifying activity.
+- To benefit from the 0% rate, your free zone entity must have genuine substance in the UAE, including a physical office, local employees, and UAE-based bank accounts and records.
+- If you fail to meet the substance requirements, the 0% rate is lost and your agency will face the standard 9% UAE corporate tax rate.
+- HMRC may also challenge your agency's tax residence if central management and control remains in the UK, potentially triggering UK corporation tax.
 ---
-
 <p>If you are a UK agency founder who has moved to a Dubai free zone, you have almost certainly heard the pitch: set up in a free zone, pay 0% corporate tax. It sounds like a golden ticket. And for many agency owners, it genuinely works. But the phrase “0% corporate tax” comes with conditions that are often glossed over in the marketing material. The reality is more specific.</p>
 
 <p>Here is the short answer: <strong>Your Dubai free zone agency can pay 0% corporate tax on income from UK clients, but only if that income qualifies as “qualifying income” under the UAE Corporate Tax Law, and your agency meets the conditions for the free zone regime.</strong> If you get the structure wrong, or you fail to meet the substance requirements, that 0% rate disappears. You will then face the standard 9% UAE corporate tax rate.</p>

@@ -1,33 +1,40 @@
 ---
-title: "Can Net 60 or 90 Payment Terms Block Your Dubai Golden Visa as an Agency Founder?"
-slug: "agency-founder-golden-visa-revenue-proof-net-terms"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/agency-founder-golden-visa-revenue-proof-net-terms"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Golden Visa Revenue Proof for Agency Founders on Net 60/90"
-metaDescription: "Long payment terms can sink your UAE Golden Visa application. Here's how to prove 1M AED revenue when your clients pay Net 60 or 90."
-altText: "Agency founder reviewing financial documents for UAE Golden Visa application, Dubai office background"
-image: "/blog/agency-founder-golden-visa-revenue-proof-net-terms.jpg"
+title: Can Net 60 or 90 Payment Terms Block Your Dubai Golden Visa as an Agency Founder?
+slug: agency-founder-golden-visa-revenue-proof-net-terms
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/agency-founder-golden-visa-revenue-proof-net-terms
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: Golden Visa Revenue Proof for Agency Founders on Net 60/90
+metaDescription: Long payment terms can sink your UAE Golden Visa application. Here's how to prove 1M AED revenue when your clients pay Net 60 or 90.
+altText: Agency founder reviewing financial documents for UAE Golden Visa application, Dubai office background
+image: /blog/agency-founder-golden-visa-revenue-proof-net-terms.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-table-7821474/"
-  source: "Pexels"
-h1: "Agency Founder Golden Visa Revenue Proof: The Net 60/90 Problem"
-summary: "If your agency operates on Net 60 or Net 90 payment terms, proving 1M AED revenue for a Dubai Golden Visa is harder than it looks. We explain why standard bank statements often fall short, and what documentation actually works."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-table-7821474/
+  source: Pexels
+h1: 'Agency Founder Golden Visa Revenue Proof: The Net 60/90 Problem'
+summary: If your agency operates on Net 60 or Net 90 payment terms, proving 1M AED revenue for a Dubai Golden Visa is harder than it looks. We explain why standard bank statements often fall short, and what documentation actually works.
+schema: ''
 faqs:
-  - question: "Can I use my UK company's audited accounts instead of bank statements for the Dubai Golden Visa?"
-    answer: "Yes, audited accounts from an ICAEW-qualified firm are generally accepted as proof of revenue. They show income on an accruals basis, which means they reflect your true revenue even if clients pay Net 60 or Net 90. You will need a cover letter explaining the difference between accruals and cash accounting. The authorities want to understand why your bank statements show less than your audited revenue."
-  - question: "What if my agency revenue is exactly 1M AED but my bank statements show less due to Net 60 terms?"
-    answer: "This is the exact scenario where you risk rejection. If your bank statements show less than 1M AED, the immigration officer may refuse the application. Your options are to time your application to capture a full cash cycle, provide audited accounts as primary evidence, or build a cash reserve to top up your deposits. Do not apply without addressing this gap first."
-  - question: "How far back do the UAE authorities look for revenue proof?"
-    answer: "They typically require 12 months of bank statements or audited accounts. The 12-month window is the 12 months immediately before your application date. That is why timing matters. If your largest client pays Net 90, you need to ensure their payments fall inside that 12-month window. A good accountant can help you pick the optimal application date."
-  - question: "Does the Golden Visa require the revenue to be from a UAE company or can it be from a UK agency?"
-    answer: "The revenue can come from a UK or any foreign company. You do not need a UAE company to qualify. The authorities want to see that you have sustainable income from your business, regardless of where that business is registered. Your UK company's bank statements and incorporation documents are sufficient, as long as they clearly show revenue meeting the 1M AED threshold."
+- question: Can I use my UK company's audited accounts instead of bank statements for the Dubai Golden Visa?
+  answer: Yes, audited accounts from an ICAEW-qualified firm are generally accepted as proof of revenue. They show income on an accruals basis, which means they reflect your true revenue even if clients pay Net 60 or Net 90. You will need a cover letter explaining the difference between accruals and cash accounting. The authorities want to understand why your bank statements show less than your audited revenue.
+- question: What if my agency revenue is exactly 1M AED but my bank statements show less due to Net 60 terms?
+  answer: This is the exact scenario where you risk rejection. If your bank statements show less than 1M AED, the immigration officer may refuse the application. Your options are to time your application to capture a full cash cycle, provide audited accounts as primary evidence, or build a cash reserve to top up your deposits. Do not apply without addressing this gap first.
+- question: How far back do the UAE authorities look for revenue proof?
+  answer: They typically require 12 months of bank statements or audited accounts. The 12-month window is the 12 months immediately before your application date. That is why timing matters. If your largest client pays Net 90, you need to ensure their payments fall inside that 12-month window. A good accountant can help you pick the optimal application date.
+- question: Does the Golden Visa require the revenue to be from a UAE company or can it be from a UK agency?
+  answer: The revenue can come from a UK or any foreign company. You do not need a UAE company to qualify. The authorities want to see that you have sustainable income from your business, regardless of where that business is registered. Your UK company's bank statements and incorporation documents are sufficient, as long as they clearly show revenue meeting the 1M AED threshold.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- If your agency uses Net 60 or Net 90 payment terms, bank statements will understate your true revenue because they show cash received, not invoices raised.
+- A 12-month bank statement period can miss up to two months of revenue due to payment lags, reducing your visible income by 10–15%.
+- For a £1.2M agency on Net 60 terms, bank statements may show only £85k–£90k per month, risking a Golden Visa rejection if revenue is borderline.
+- To prove 1M AED revenue, you must supplement bank statements with audited accounts, signed contracts, and invoice summaries to show invoiced income.
+- The UAE authorities require proof of revenue received in your account, not invoiced revenue, making Net 60/90 terms a common pitfall for agency founders.
 ---
-
 <h2>The Golden Visa Revenue Threshold: 1M AED Is Not What It Seems</h2>
 
 <p>The UAE Golden Visa is one of the most attractive residency options for agency founders. No need for a local sponsor. Full ownership of your business. Ten years of residency without renewal hassle.</p>

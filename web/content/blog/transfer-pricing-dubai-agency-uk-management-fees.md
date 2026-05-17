@@ -1,33 +1,40 @@
 ---
-title: "How Does Transfer Pricing Apply to My Dubai Agency If I Charge Management Fees to My UK Company?"
-slug: "transfer-pricing-dubai-agency-uk-management-fees"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/transfer-pricing-dubai-agency-uk-management-fees"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Transfer Pricing Dubai Agency UK Management Fees: Key Rules"
-metaDescription: "Transfer pricing for Dubai agency UK management fees explained. Arm's length rules, documentation, and risks for UK agency founders with a UAE entity."
-altText: "Two agency founders reviewing a transfer pricing policy document in a modern Dubai office with city skyline visible through windows"
-image: "/blog/transfer-pricing-dubai-agency-uk-management-fees.jpg"
+title: How Does Transfer Pricing Apply to My Dubai Agency If I Charge Management Fees to My UK Company?
+slug: transfer-pricing-dubai-agency-uk-management-fees
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/transfer-pricing-dubai-agency-uk-management-fees
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Transfer Pricing Dubai Agency UK Management Fees: Key Rules'
+metaDescription: Transfer pricing for Dubai agency UK management fees explained. Arm's length rules, documentation, and risks for UK agency founders with a UAE entity.
+altText: Two agency founders reviewing a transfer pricing policy document in a modern Dubai office with city skyline visible through windows
+image: /blog/transfer-pricing-dubai-agency-uk-management-fees.jpg
 imageCredit:
-  photographer: "Subbu Rayan"
-  photographerUrl: "https://www.pexels.com/@subbu-rayan-1007049269"
-  sourceUrl: "https://www.pexels.com/photo/modern-residential-villas-in-dubai-overview-31771226/"
-  source: "Pexels"
-h1: "How Does Transfer Pricing Apply to My Dubai Agency If I Charge Management Fees to My UK Company?"
-summary: "If you run a UK agency and a Dubai entity and charge management fees between them, transfer pricing rules apply. This guide explains the arm's length principle, what HMRC and the UAE FTA expect, and how to avoid costly adjustments."
-schema: ""
+  photographer: Subbu Rayan
+  photographerUrl: https://www.pexels.com/@subbu-rayan-1007049269
+  sourceUrl: https://www.pexels.com/photo/modern-residential-villas-in-dubai-overview-31771226/
+  source: Pexels
+h1: How Does Transfer Pricing Apply to My Dubai Agency If I Charge Management Fees to My UK Company?
+summary: If you run a UK agency and a Dubai entity and charge management fees between them, transfer pricing rules apply. This guide explains the arm's length principle, what HMRC and the UAE FTA expect, and how to avoid costly adjustments.
+schema: ''
 faqs:
-  - question: "What is the arm's length principle for management fees between a UK and Dubai agency?"
-    answer: "The arm's length principle means the management fee charged between your UK and Dubai entities must be the same price that independent companies would agree on. You cannot set a fee based on what is convenient for tax purposes. You need to calculate it using a recognised method, such as cost plus, and document the rationale. HMRC and the UAE FTA both enforce this principle."
-  - question: "Do I need a written transfer pricing policy for my agency?"
-    answer: "Yes. Both HMRC and the UAE FTA expect written transfer pricing documentation. This should include an intercompany agreement, a functional analysis of each entity, a description of the pricing method, and evidence that the services were actually provided. Without it, you face penalties if either tax authority opens an enquiry."
-  - question: "What happens if HMRC challenges my management fee?"
-    answer: "HMRC can disallow the fee as a deduction, add it back to your UK profits, and charge corporation tax at 25% plus interest. If they decide you did not take reasonable care, penalties can be up to 100% of the tax underpaid. There is also a risk of double taxation if the UAE FTA does not allow a corresponding adjustment."
-  - question: "Does UAE corporate tax change how I should price management fees?"
-    answer: "Yes. The UAE now charges 9% corporate tax on profits above AED 375,000. This means the Dubai entity pays tax on the profit element of the management fee. The gap between UK and UAE tax rates has narrowed, so the incentive to shift profit has reduced. You should review your pricing to ensure it is arm's length and that both entities are paying the correct tax."
+- question: What is the arm's length principle for management fees between a UK and Dubai agency?
+  answer: The arm's length principle means the management fee charged between your UK and Dubai entities must be the same price that independent companies would agree on. You cannot set a fee based on what is convenient for tax purposes. You need to calculate it using a recognised method, such as cost plus, and document the rationale. HMRC and the UAE FTA both enforce this principle.
+- question: Do I need a written transfer pricing policy for my agency?
+  answer: Yes. Both HMRC and the UAE FTA expect written transfer pricing documentation. This should include an intercompany agreement, a functional analysis of each entity, a description of the pricing method, and evidence that the services were actually provided. Without it, you face penalties if either tax authority opens an enquiry.
+- question: What happens if HMRC challenges my management fee?
+  answer: HMRC can disallow the fee as a deduction, add it back to your UK profits, and charge corporation tax at 25% plus interest. If they decide you did not take reasonable care, penalties can be up to 100% of the tax underpaid. There is also a risk of double taxation if the UAE FTA does not allow a corresponding adjustment.
+- question: Does UAE corporate tax change how I should price management fees?
+  answer: Yes. The UAE now charges 9% corporate tax on profits above AED 375,000. This means the Dubai entity pays tax on the profit element of the management fee. The gap between UK and UAE tax rates has narrowed, so the incentive to shift profit has reduced. You should review your pricing to ensure it is arm's length and that both entities are paying the correct tax.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Transfer pricing applies to any transaction between connected parties, including management fees between a UK agency and its Dubai sister company.
+- HMRC and the UAE FTA both require that management fees are priced at arm's length, meaning the price must be what independent companies would agree.
+- To defend management fees, you must demonstrate the services exist and provide value, use a defensible pricing method, and have written evidence of the arrangement.
+- Common transfer pricing methods for management fees include the Cost Plus Method (cost plus 5-15% markup) and the Transactional Net Margin Method (TNMM).
+- HMRC can open a transfer pricing enquiry up to six years after the transaction, potentially leading to adjustments, interest, and penalties.
 ---
-
 <p>If you own a UK agency and have set up a Dubai entity, you are not alone. Many agency founders move part of their operations to the UAE for the 0% corporation tax regime, the lifestyle, or access to Middle Eastern clients. But here is where it gets complicated: if your Dubai agency charges management fees to your UK company, HMRC and the UAE Federal Tax Authority (FTA) both want to see that those fees are priced at arm's length.</p>
 
 <p>Transfer pricing is not just a big-company problem. It applies to any transaction between connected parties, and that includes a UK agency and its Dubai sister company. Get it wrong, and you face HMRC adjustments, corporation tax bills you did not expect, and potentially penalties from both sides of the border.</p>

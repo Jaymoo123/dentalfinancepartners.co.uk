@@ -1,33 +1,40 @@
 ---
-title: "How to Structure a Share Buyback to Exit a Co-Founder from Your Agency Tax-Efficiently"
-slug: "share-buyback-exit-co-founder-agency-tax-efficiently"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/share-buyback-exit-co-founder-agency-tax-efficiently"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Share Buyback for Co-Founder Exit: Tax-Efficient Agency UK"
-metaDescription: "Agency co-founder leaving? Structure a share buyback to minimise tax. We cover BADR, capital treatment, and the steps you must follow. ICAEW guide."
-altText: "Two agency co-founders shaking hands in a modern UK office meeting room with financial documents on the table"
-image: "/blog/share-buyback-exit-co-founder-agency-tax-efficiently.jpg"
+title: How to Structure a Share Buyback to Exit a Co-Founder from Your Agency Tax-Efficiently
+slug: share-buyback-exit-co-founder-agency-tax-efficiently
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/share-buyback-exit-co-founder-agency-tax-efficiently
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'Share Buyback for Co-Founder Exit: Tax-Efficient Agency UK'
+metaDescription: Agency co-founder leaving? Structure a share buyback to minimise tax. We cover BADR, capital treatment, and the steps you must follow. ICAEW guide.
+altText: Two agency co-founders shaking hands in a modern UK office meeting room with financial documents on the table
+image: /blog/share-buyback-exit-co-founder-agency-tax-efficiently.jpg
 imageCredit:
-  photographer: "James Thomas"
-  photographerUrl: "https://www.pexels.com/@digitaljames"
-  sourceUrl: "https://www.pexels.com/photo/yellow-exit-sign-on-blue-wooden-wall-31561439/"
-  source: "Pexels"
-h1: "How to Structure a Share Buyback to Exit a Co-Founder from Your Agency Tax-Efficiently"
-summary: "When a co-founder leaves your agency, buying back their shares can be the cleanest exit. But get the structure wrong and you both pay more tax than necessary. Here is how to structure a share buyback for a co-founder exit from your agency tax-efficiently."
-schema: ""
+  photographer: James Thomas
+  photographerUrl: https://www.pexels.com/@digitaljames
+  sourceUrl: https://www.pexels.com/photo/yellow-exit-sign-on-blue-wooden-wall-31561439/
+  source: Pexels
+h1: How to Structure a Share Buyback to Exit a Co-Founder from Your Agency Tax-Efficiently
+summary: When a co-founder leaves your agency, buying back their shares can be the cleanest exit. But get the structure wrong and you both pay more tax than necessary. Here is how to structure a share buyback for a co-founder exit from your agency tax-efficiently.
+schema: ''
 faqs:
-  - question: "Can a share buyback be funded from future profits rather than current distributable reserves?"
-    answer: "No. The buyback must be funded from distributable profits that exist at the date of the buyback. You cannot use future profits. If your agency does not have enough retained earnings, consider a personal purchase by the remaining founder or a reduction of capital (which requires a court order and is more expensive)."
-  - question: "What happens if the departing co-founder wants to keep a small shareholding after the buyback?"
-    answer: "Capital treatment fails. HMRC requires the departing shareholder to dispose of their entire interest. If they keep even one share, the payment is treated as a dividend. They pay income tax on it. No BADR. No 10% rate. If they want to stay connected, the personal purchase route (remaining founders buy the shares) is better."
-  - question: "Does the five-year holding period apply if the co-founder inherited the shares from another founder?"
-    answer: "Yes, the five-year period applies to the current holder. If they inherited shares three years ago, they do not meet the condition. However, if the shares were transferred between spouses or civil partners, the holding period of the transferor can be added. This is a complex area. Get specific advice from your accountant."
-  - question: "Can the departing co-founder be paid in instalments over several tax years to spread the gain?"
-    answer: "You can structure the payment as a single debt payable in instalments. The gain is reported in full in the tax year the buyback completes, not when each instalment is paid. Spreading the payment does not spread the gain for CGT purposes. If HMRC views the instalments as separate buybacks, capital treatment could fail. Pay in full on completion if you can."
+- question: Can a share buyback be funded from future profits rather than current distributable reserves?
+  answer: No. The buyback must be funded from distributable profits that exist at the date of the buyback. You cannot use future profits. If your agency does not have enough retained earnings, consider a personal purchase by the remaining founder or a reduction of capital (which requires a court order and is more expensive).
+- question: What happens if the departing co-founder wants to keep a small shareholding after the buyback?
+  answer: Capital treatment fails. HMRC requires the departing shareholder to dispose of their entire interest. If they keep even one share, the payment is treated as a dividend. They pay income tax on it. No BADR. No 10% rate. If they want to stay connected, the personal purchase route (remaining founders buy the shares) is better.
+- question: Does the five-year holding period apply if the co-founder inherited the shares from another founder?
+  answer: Yes, the five-year period applies to the current holder. If they inherited shares three years ago, they do not meet the condition. However, if the shares were transferred between spouses or civil partners, the holding period of the transferor can be added. This is a complex area. Get specific advice from your accountant.
+- question: Can the departing co-founder be paid in instalments over several tax years to spread the gain?
+  answer: You can structure the payment as a single debt payable in instalments. The gain is reported in full in the tax year the buyback completes, not when each instalment is paid. Spreading the payment does not spread the gain for CGT purposes. If HMRC views the instalments as separate buybacks, capital treatment could fail. Pay in full on completion if you can.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A share buyback can be the cleanest way to exit a co-founder, keeping the agency intact and avoiding external investors.
+- To achieve capital gains treatment, the buyback must meet all HMRC conditions, including a five-year shareholding period and full disposal of the departing founder's interest.
+- Capital treatment allows the leaving founder to pay 14% CGT under Business Asset Disposal Relief, versus 33.75% dividend tax on income treatment.
+- The departing shareholder must not be connected with the company after the buyback, meaning no employment, directorship, or connection to remaining shareholders.
+- Plan to meet the statutory conditions from the start, as HMRC's extra-statutory concession C16 is discretionary and not a reliable fallback.
 ---
-
 <h2>Why a Share Buyback is Often the Right Move</h2>
 
 <p>When a co-founder leaves your agency, you have a few options. You can find a third-party buyer for their shares. You can dissolve the company and start again. Or you can have the company buy back the shares itself. That third route, a share buyback, is often the cleanest solution. It keeps the agency intact. It removes the leaving founder's ownership. And it avoids bringing in an external investor you might not want.</p>

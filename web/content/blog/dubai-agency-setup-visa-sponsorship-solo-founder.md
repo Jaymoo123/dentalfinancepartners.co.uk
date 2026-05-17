@@ -1,33 +1,40 @@
 ---
-title: "Dubai Agency Setup: The Visa Sponsorship Problem When You're the Only Employee"
-slug: "dubai-agency-setup-visa-sponsorship-solo-founder"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-agency-setup-visa-sponsorship-solo-founder"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Dubai Agency Setup Visa Sponsorship for Solo Founders"
-metaDescription: "You can't get a visa without a company. You can't run the company without a visa. Here's how UK agency founders solve this catch-22 when setting up"
-altText: "UK agency founder at a Dubai business centre desk reviewing visa sponsorship paperwork for a solo founder setup"
-image: "/blog/dubai-agency-setup-visa-sponsorship-solo-founder.jpg"
+title: 'Dubai Agency Setup: The Visa Sponsorship Problem When You''re the Only Employee'
+slug: dubai-agency-setup-visa-sponsorship-solo-founder
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-agency-setup-visa-sponsorship-solo-founder
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: Dubai Agency Setup Visa Sponsorship for Solo Founders
+metaDescription: You can't get a visa without a company. You can't run the company without a visa. Here's how UK agency founders solve this catch-22 when setting up
+altText: UK agency founder at a Dubai business centre desk reviewing visa sponsorship paperwork for a solo founder setup
+image: /blog/dubai-agency-setup-visa-sponsorship-solo-founder.jpg
 imageCredit:
-  photographer: "Kadir Avşar"
-  photographerUrl: "https://www.pexels.com/@kadiravsarr"
-  sourceUrl: "https://www.pexels.com/photo/the-aerial-view-of-the-city-of-dubai-and-the-water-14750359/"
-  source: "Pexels"
-h1: "Dubai Agency Setup: The Visa Sponsorship Problem When You're the Only Employee"
-summary: "Setting up a Dubai agency as a solo founder creates a visa sponsorship catch-22: you need a company to sponsor your visa, but you need the visa to operate the company. This post explains the three workable routes around it, from freelancer permits to PRO services to mainland trading licenses. We cover costs, timelines, and the tax implications for UK agency owners."
-schema: ""
+  photographer: Kadir Avşar
+  photographerUrl: https://www.pexels.com/@kadiravsarr
+  sourceUrl: https://www.pexels.com/photo/the-aerial-view-of-the-city-of-dubai-and-the-water-14750359/
+  source: Pexels
+h1: 'Dubai Agency Setup: The Visa Sponsorship Problem When You''re the Only Employee'
+summary: 'Setting up a Dubai agency as a solo founder creates a visa sponsorship catch-22: you need a company to sponsor your visa, but you need the visa to operate the company. This post explains the three workable routes around it, from freelancer permits to PRO services to mainland trading licenses. We cover costs, timelines, and the tax implications for UK agency owners.'
+schema: ''
 faqs:
-  - question: "Can I set up a Dubai agency on a tourist visa and then apply for residency?"
-    answer: "Technically yes, but it is risky. You can enter Dubai on a tourist visa (30 or 60 days), incorporate your company during that period, and then apply for the residence visa. The problem is that tourist visas explicitly prohibit business activity. If immigration finds you are operating a business, you can be fined or deported. Most free zones require you to be on a visit visa to complete the medical and biometrics anyway, so the process is designed to work this way. Just do not start invoicing clients until your residence visa is issued."
-  - question: "How much does a Dubai agency setup cost for a solo founder in 2025?"
-    answer: "Total first-year costs range from AED 15,000 (£3,200) for a freelancer permit to AED 115,000 (£24,700) for a mainland company with office space. The most common route for agency founders is a free zone visa package at AED 25,000-45,000 (£5,400-£9,700) including the first year's visa. Annual renewal costs are typically AED 12,000-20,000 (£2,600-£4,300). These figures include trade license, visa processing, medicals, and health insurance but exclude bank account setup fees."
-  - question: "Do I need to close my UK limited company to set up a Dubai agency?"
-    answer: "No, and in most cases you should not. Keep your UK company open for existing clients who prefer to pay a UK entity. Use your Dubai company for new clients in the Middle East, Asia, and Africa. The two entities can coexist. Just make sure you have a clear transfer pricing policy between them and that your UK company is not simply routing profits to Dubai to avoid UK tax. HMRC's transfer pricing rules apply. Speak to a cross-border accountant before you set up the second entity."
-  - question: "What happens to my UK tax if I move to Dubai and run my agency from there?"
-    answer: "If you become non-"
+- question: Can I set up a Dubai agency on a tourist visa and then apply for residency?
+  answer: Technically yes, but it is risky. You can enter Dubai on a tourist visa (30 or 60 days), incorporate your company during that period, and then apply for the residence visa. The problem is that tourist visas explicitly prohibit business activity. If immigration finds you are operating a business, you can be fined or deported. Most free zones require you to be on a visit visa to complete the medical and biometrics anyway, so the process is designed to work this way. Just do not start invoicing clients until your residence visa is issued.
+- question: How much does a Dubai agency setup cost for a solo founder in 2025?
+  answer: Total first-year costs range from AED 15,000 (£3,200) for a freelancer permit to AED 115,000 (£24,700) for a mainland company with office space. The most common route for agency founders is a free zone visa package at AED 25,000-45,000 (£5,400-£9,700) including the first year's visa. Annual renewal costs are typically AED 12,000-20,000 (£2,600-£4,300). These figures include trade license, visa processing, medicals, and health insurance but exclude bank account setup fees.
+- question: Do I need to close my UK limited company to set up a Dubai agency?
+  answer: No, and in most cases you should not. Keep your UK company open for existing clients who prefer to pay a UK entity. Use your Dubai company for new clients in the Middle East, Asia, and Africa. The two entities can coexist. Just make sure you have a clear transfer pricing policy between them and that your UK company is not simply routing profits to Dubai to avoid UK tax. HMRC's transfer pricing rules apply. Speak to a cross-border accountant before you set up the second entity.
+- question: What happens to my UK tax if I move to Dubai and run my agency from there?
+  answer: If you become non-
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A freelancer permit from free zones like Dubai Media City costs £3,200–£5,300 in year one and sponsors your visa directly, but you cannot employ staff.
+- The visa sponsorship catch-22 means you need a company to sponsor your visa but need the visa to operate the company as a solo founder.
+- Incorporating a Dubai company first without a visa workaround leaves you stuck, as tourist visas don't allow business activity.
+- For UK agency founders, Dubai's 0% corporation tax on qualifying income is a key draw, but the visa problem must be solved before incorporation.
+- The freelancer permit route is the fastest and lowest-cost option for solo founders, with visa validity of 2–3 years.
 ---
-
 <p>You've decided to set up your agency in Dubai. The tax benefits are obvious. The lifestyle appeal is real. But there is a problem that the glossy brochures and free-zone sales teams do not mention. It hits you about three weeks into the process, when the visa application form asks for your company's trade license number, and your company does not legally exist yet.</p>
 
 <p>This is the visa sponsorship catch-22 for solo founders. You need a company to sponsor your residence visa. But you need a residence visa to operate the company. If you are a one-person agency, you cannot hand the paperwork to an employee or a partner and say "you deal with it." There is no one else.</p>

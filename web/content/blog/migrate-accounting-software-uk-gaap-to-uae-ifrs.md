@@ -1,33 +1,40 @@
 ---
-title: "How Do I Migrate My Agency's Accounting Software from UK GAAP to UAE IFRS?"
-slug: "migrate-accounting-software-uk-gaap-to-uae-ifrs"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/migrate-accounting-software-uk-gaap-to-uae-ifrs"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Migrate Accounting Software UK GAAP to UAE IFRS: Agency"
-metaDescription: "UK agency founders moving to Dubai: how to migrate accounting software from UK GAAP to UAE IFRS. Xero, QuickBooks, dual reporting, and transition steps."
-altText: "Agency founder reviewing financial reports on a laptop in a Dubai office with city skyline visible through window"
-image: "/blog/migrate-accounting-software-uk-gaap-to-uae-ifrs.jpg"
+title: How Do I Migrate My Agency's Accounting Software from UK GAAP to UAE IFRS?
+slug: migrate-accounting-software-uk-gaap-to-uae-ifrs
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/migrate-accounting-software-uk-gaap-to-uae-ifrs
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Migrate Accounting Software UK GAAP to UAE IFRS: Agency'
+metaDescription: 'UK agency founders moving to Dubai: how to migrate accounting software from UK GAAP to UAE IFRS. Xero, QuickBooks, dual reporting, and transition steps.'
+altText: Agency founder reviewing financial reports on a laptop in a Dubai office with city skyline visible through window
+image: /blog/migrate-accounting-software-uk-gaap-to-uae-ifrs.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/scrabble-tiles-spelling-migration-on-wooden-table-30869091/"
-  source: "Pexels"
-h1: "How to Migrate Your Agency's Accounting Software from UK GAAP to UAE IFRS"
-summary: "Moving your agency from the UK to Dubai means switching from UK GAAP to UAE IFRS. This guide covers which software supports dual reporting, how to handle the transition, and what your accountant needs to set up before you file your first UAE return."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/scrabble-tiles-spelling-migration-on-wooden-table-30869091/
+  source: Pexels
+h1: How to Migrate Your Agency's Accounting Software from UK GAAP to UAE IFRS
+summary: Moving your agency from the UK to Dubai means switching from UK GAAP to UAE IFRS. This guide covers which software supports dual reporting, how to handle the transition, and what your accountant needs to set up before you file your first UAE return.
+schema: ''
 faqs:
-  - question: "Can I use the same Xero organisation for both my UK and UAE agency entities?"
-    answer: "No. You should create separate Xero organisations for each entity. Each organisation needs its own chart of accounts, tax rates, and reporting settings configured for the relevant accounting framework (UK GAAP or UAE IFRS). Running both entities in one organisation creates reconciliation risks and makes it difficult to produce compliant financial statements for each jurisdiction."
-  - question: "Does QuickBooks Online support IFRS reporting for UAE companies?"
-    answer: "QuickBooks Online UAE edition has IFRS-oriented report templates and UAE tax rate configurations. The UK edition does not. If you are using the UK edition for your UAE entity, you will need to customise your chart of accounts, create manual IFRS adjustments, and ensure your reports comply with IFRS presentation requirements. A parallel run is essential to verify accuracy."
-  - question: "What is the main difference between UK GAAP and UAE IFRS for agency revenue recognition?"
-    answer: "Under UK GAAP (FRS 102), smaller agencies often recognise retainer income when invoiced. Under IFRS 15, revenue must be recognised when control transfers to the customer. For retainers, this typically means recognising revenue over time on a straight-line basis. For project income with milestone billing, revenue is recognised based on percentage of completion, not when you issue the invoice. This creates deferred revenue balances that did not exist under UK GAAP."
-  - question: "How long does it take to migrate accounting software from UK GAAP to UAE IFRS?"
-    answer: "For most agencies billing between £200k and £1.5m, the migration project takes 4 to 8 weeks. This includes mapping the chart of accounts, setting up separate software entities, configuring UAE tax rates, migrating opening balances with IFRS adjustments, and running a parallel period. Do not rush this process. Errors in the transition will affect your UAE corporate tax filings and may require costly corrections."
+- question: Can I use the same Xero organisation for both my UK and UAE agency entities?
+  answer: No. You should create separate Xero organisations for each entity. Each organisation needs its own chart of accounts, tax rates, and reporting settings configured for the relevant accounting framework (UK GAAP or UAE IFRS). Running both entities in one organisation creates reconciliation risks and makes it difficult to produce compliant financial statements for each jurisdiction.
+- question: Does QuickBooks Online support IFRS reporting for UAE companies?
+  answer: QuickBooks Online UAE edition has IFRS-oriented report templates and UAE tax rate configurations. The UK edition does not. If you are using the UK edition for your UAE entity, you will need to customise your chart of accounts, create manual IFRS adjustments, and ensure your reports comply with IFRS presentation requirements. A parallel run is essential to verify accuracy.
+- question: What is the main difference between UK GAAP and UAE IFRS for agency revenue recognition?
+  answer: Under UK GAAP (FRS 102), smaller agencies often recognise retainer income when invoiced. Under IFRS 15, revenue must be recognised when control transfers to the customer. For retainers, this typically means recognising revenue over time on a straight-line basis. For project income with milestone billing, revenue is recognised based on percentage of completion, not when you issue the invoice. This creates deferred revenue balances that did not exist under UK GAAP.
+- question: How long does it take to migrate accounting software from UK GAAP to UAE IFRS?
+  answer: For most agencies billing between £200k and £1.5m, the migration project takes 4 to 8 weeks. This includes mapping the chart of accounts, setting up separate software entities, configuring UAE tax rates, migrating opening balances with IFRS adjustments, and running a parallel period. Do not rush this process. Errors in the transition will affect your UAE corporate tax filings and may require costly corrections.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- UAE companies must prepare financial statements under IFRS as adopted by the Ministry of Finance, not UK GAAP, for corporate tax filings.
+- Xero and QuickBooks Online require separate organisations or company files for UK and UAE entities, with manual IFRS-compliant chart of accounts setup.
+- FreeAgent and Sage are UK-centric and do not support IFRS out of the box; specialist accountant configuration is needed for IFRS compliance.
+- NetSuite and Odoo support multi-GAAP reporting natively, but are cost-effective only for agencies with turnover above £2m.
+- Revenue recognition, lease accounting, and deferred tax treatment differ materially between UK GAAP (FRS 102) and IFRS, affecting agency retainer and project income.
 ---
-
 <p>If you are a UK agency founder who has moved operations to Dubai, or set up a UAE entity alongside your UK company, you face a specific accounting problem. Your UK entity reports under UK GAAP (Generally Accepted Accounting Practice). Your UAE entity reports under IFRS (International Financial Reporting Standards). And your accounting software needs to handle both.</p>
 
 <p>This is not a theoretical issue. If you are running a 12-person digital agency billing £800k per year from offices in both Soho and Dubai Internet City, your accountant needs clean, separate ledgers for each jurisdiction. You cannot file UAE corporate tax returns prepared under UK GAAP. The UAE Federal Tax Authority expects IFRS-compliant accounts. And if you try to run both sets of books in a single software instance without proper configuration, you will create a mess that costs thousands to untangle.</p>

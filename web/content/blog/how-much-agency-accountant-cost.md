@@ -1,33 +1,40 @@
 ---
-title: "How Much Does an Agency Accountant Cost in 2025/26?"
-slug: "how-much-agency-accountant-cost"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/how-much-agency-accountant-cost"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Accountant Services"
-metaTitle: "Agency Accountant Cost 2025/26: UK Pricing Guide"
-metaDescription: "What does an agency accountant cost in 2025/26? £120-£400+ per month. See real pricing by agency size and what you actually get for your money."
-altText: "Agency founder reviewing monthly management accounts with an ICAEW qualified accountant in a Manchester office"
-image: "/blog/how-much-agency-accountant-cost.jpg"
+title: How Much Does an Agency Accountant Cost in 2025/26?
+slug: how-much-agency-accountant-cost
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/how-much-agency-accountant-cost
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Accountant Services
+metaTitle: 'Agency Accountant Cost 2025/26: UK Pricing Guide'
+metaDescription: What does an agency accountant cost in 2025/26? £120-£400+ per month. See real pricing by agency size and what you actually get for your money.
+altText: Agency founder reviewing monthly management accounts with an ICAEW qualified accountant in a Manchester office
+image: /blog/how-much-agency-accountant-cost.jpg
 imageCredit:
-  photographer: "Monstera Production"
-  photographerUrl: "https://www.pexels.com/@gabby-k"
-  sourceUrl: "https://www.pexels.com/photo/cutout-paper-of-man-examining-bills-through-magnifying-glass-5849566/"
-  source: "Pexels"
-h1: "How Much Does an Agency Accountant Cost in 2025/26?"
-summary: "Agency accountant costs in 2025/26 range from £120/month for a sole trader to £400+/month for a 10-person limited company. This guide breaks down what you get at each price point, what causes fees to increase, and how to avoid paying for services you don't need."
-schema: ""
+  photographer: Monstera Production
+  photographerUrl: https://www.pexels.com/@gabby-k
+  sourceUrl: https://www.pexels.com/photo/cutout-paper-of-man-examining-bills-through-magnifying-glass-5849566/
+  source: Pexels
+h1: How Much Does an Agency Accountant Cost in 2025/26?
+summary: Agency accountant costs in 2025/26 range from £120/month for a sole trader to £400+/month for a 10-person limited company. This guide breaks down what you get at each price point, what causes fees to increase, and how to avoid paying for services you don't need.
+schema: ''
 faqs:
-  - question: "Can I get a cheaper accountant if I do my own bookkeeping?"
-    answer: "Yes, typically. If you keep your own records clean in Xero or QuickBooks, reconcile monthly, and use receipt capture tools like Dext, your accountant spends less time on data entry. Some firms offer a lower fee for \"bookkeeping-ready\" clients. Always ask whether there is a discount for keeping your own records."
-  - question: "Do agency accountants charge extra for IR35 advice?"
-    answer: "Some do. IR35 advice is not standard compliance work. If you have contractors and your accountant needs to review Status Determination Statements or advise on specific engagements, ask whether this is included in the monthly fee or charged separately. We include IR35 advice for our agency clients within the fixed fee, but not all firms do."
-  - question: "What is the average agency accountant cost for a 5-person digital agency?"
-    answer: "For a 5-person digital agency turning over £300k-£500k, expect to pay between £250 and £350 per month. This should include monthly management accounts, VAT returns, payroll, year-end accounts, and regular tax planning. If you are paying more than £400 per month at this size, ask what extra value you are getting."
-  - question: "Should I pay monthly or annually for my agency accountant?"
-    answer: "Monthly is standard and better for cash flow. Most ICAEW qualified firms charge a fixed monthly fee by direct debit. Annual billing is rare for ongoing work, though some firms offer a discount for paying upfront. For compliance-only work (Self Assessment or a simple year-end), annual billing is more common. For ongoing agency accounting, monthly is the norm."
+- question: Can I get a cheaper accountant if I do my own bookkeeping?
+  answer: Yes, typically. If you keep your own records clean in Xero or QuickBooks, reconcile monthly, and use receipt capture tools like Dext, your accountant spends less time on data entry. Some firms offer a lower fee for "bookkeeping-ready" clients. Always ask whether there is a discount for keeping your own records.
+- question: Do agency accountants charge extra for IR35 advice?
+  answer: Some do. IR35 advice is not standard compliance work. If you have contractors and your accountant needs to review Status Determination Statements or advise on specific engagements, ask whether this is included in the monthly fee or charged separately. We include IR35 advice for our agency clients within the fixed fee, but not all firms do.
+- question: What is the average agency accountant cost for a 5-person digital agency?
+  answer: For a 5-person digital agency turning over £300k-£500k, expect to pay between £250 and £350 per month. This should include monthly management accounts, VAT returns, payroll, year-end accounts, and regular tax planning. If you are paying more than £400 per month at this size, ask what extra value you are getting.
+- question: Should I pay monthly or annually for my agency accountant?
+  answer: Monthly is standard and better for cash flow. Most ICAEW qualified firms charge a fixed monthly fee by direct debit. Annual billing is rare for ongoing work, though some firms offer a discount for paying upfront. For compliance-only work (Self Assessment or a simple year-end), annual billing is more common. For ongoing agency accounting, monthly is the norm.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Agency accountant costs in 2025/26 range from £90–£150/month for sole traders to £250–£400/month for growing agencies with 4–10 people.
+- A proper agency accountant should handle company accounts, corporation tax, payroll, VAT returns, dividend paperwork, and tax planning.
+- For a small limited company (1–3 people, turnover £50k–£200k), expect to pay £150–£250/month for quarterly management accounts and IR35 advice.
+- Growing agencies (4–10 people, turnover £200k–£750k) need monthly management accounts and cash flow forecasting, costing £250–£400/month.
+- Always check what's included in the fixed monthly fee, as some accountants charge extra for management accounts or tax planning.
 ---
-
 <p>If you run a marketing agency in the UK and you're looking for an accountant, the first question is usually the same: what will it cost?</p>
 
 <p>It's a fair question. You're running a business. You want to know what you're paying for and whether it's worth it. The problem is that most accountants don't publish their pricing. And the ones that do often quote a figure that changes the moment they hear the word "agency".</p>

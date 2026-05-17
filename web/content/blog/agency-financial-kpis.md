@@ -1,33 +1,40 @@
 ---
-title: "The 8 Financial KPIs Every Agency Founder Should Track Monthly"
-slug: "agency-financial-kpis"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-financial-kpis"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "8 Financial KPIs Every Agency Founder Must Track"
-metaDescription: "Stop flying blind. Here are the 8 agency financial KPIs that tell you if your business is healthy, profitable, and ready to scale. Management accounts"
-altText: "Agency founder reviewing monthly management accounts on a tablet in a Soho co-working space"
-image: "/blog/agency-financial-kpis.jpg"
+title: The 8 Financial KPIs Every Agency Founder Should Track Monthly
+slug: agency-financial-kpis
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-financial-kpis
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: 8 Financial KPIs Every Agency Founder Must Track
+metaDescription: Stop flying blind. Here are the 8 agency financial KPIs that tell you if your business is healthy, profitable, and ready to scale. Management accounts
+altText: Agency founder reviewing monthly management accounts on a tablet in a Soho co-working space
+image: /blog/agency-financial-kpis.jpg
 imageCredit:
-  photographer: "Kampus Production"
-  photographerUrl: "https://www.pexels.com/@kampus"
-  sourceUrl: "https://www.pexels.com/photo/photo-of-a-woman-holding-a-paper-with-charts-near-her-laptop-6248957/"
-  source: "Pexels"
-h1: "The 8 Financial KPIs Every Agency Founder Should Track Monthly"
-summary: "Most agency founders track revenue and little else. That's like flying a plane with only a speedometer. Here are the 8 financial KPIs that give you the full picture — from gross margin to utilisation rate to cash runway. Your management accounts should show every single one."
-schema: ""
+  photographer: Kampus Production
+  photographerUrl: https://www.pexels.com/@kampus
+  sourceUrl: https://www.pexels.com/photo/photo-of-a-woman-holding-a-paper-with-charts-near-her-laptop-6248957/
+  source: Pexels
+h1: The 8 Financial KPIs Every Agency Founder Should Track Monthly
+summary: Most agency founders track revenue and little else. That's like flying a plane with only a speedometer. Here are the 8 financial KPIs that give you the full picture — from gross margin to utilisation rate to cash runway. Your management accounts should show every single one.
+schema: ''
 faqs:
-  - question: "What is the most important financial KPI for a UK agency?"
-    answer: "Gross margin is the single most important KPI. It tells you whether you are pricing correctly and managing delivery costs. A healthy agency runs between 50% and 65%. If you track only one number, track this one."
-  - question: "How often should I review my agency's financial KPIs?"
-    answer: "Monthly. Your management accounts should be ready within two weeks of month-end. Cash position should be reviewed weekly. Project profitability can be quarterly. Annual reviews are too late to fix problems."
-  - question: "What is a good utilisation rate for a digital agency?"
-    answer: "75% to 85% is the sweet spot. Below 70% means too much bench time. Above 90% means your team is overworked and you have no capacity for growth. Track it by role — senior staff should be lower, delivery staff higher."
-  - question: "Do I need special software to track agency financial KPIs?"
-    answer: "No. Xero, QuickBooks, or FreeAgent can generate all these numbers if your chart of accounts is set up correctly. You need proper management accounts, not just a profit and loss report. If you are unsure, ask your accountant to review your setup."
+- question: What is the most important financial KPI for a UK agency?
+  answer: Gross margin is the single most important KPI. It tells you whether you are pricing correctly and managing delivery costs. A healthy agency runs between 50% and 65%. If you track only one number, track this one.
+- question: How often should I review my agency's financial KPIs?
+  answer: Monthly. Your management accounts should be ready within two weeks of month-end. Cash position should be reviewed weekly. Project profitability can be quarterly. Annual reviews are too late to fix problems.
+- question: What is a good utilisation rate for a digital agency?
+  answer: 75% to 85% is the sweet spot. Below 70% means too much bench time. Above 90% means your team is overworked and you have no capacity for growth. Track it by role — senior staff should be lower, delivery staff higher.
+- question: Do I need special software to track agency financial KPIs?
+  answer: No. Xero, QuickBooks, or FreeAgent can generate all these numbers if your chart of accounts is set up correctly. You need proper management accounts, not just a profit and loss report. If you are unsure, ask your accountant to review your setup.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Gross margin between 50% and 65% indicates healthy agency pricing and staffing.
+- Net profit margin of 15% to 25% signals a well-run agency with sustainable overheads.
+- Revenue per head of £80k to £150k is the benchmark for UK agency efficiency.
+- Utilisation rate of 75% to 85% ensures team productivity without burnout.
+- Track gross margin by client and project to identify under-pricing or over-staffing issues.
 ---
-
 <h2>Why Revenue Is a Terrible KPI on Its Own</h2>
 <p>You know how much you billed last month. That's the number most agency founders lead with. "We did £120k in March." It sounds good. It feels good. And it tells you almost nothing about whether your agency is actually healthy.</p>
 <p>Revenue is a vanity metric. It doesn't tell you if you're profitable. It doesn't tell you if you're burning out your team. It doesn't tell you if you're pricing properly. And it certainly doesn't tell you if you're heading for a cash flow crisis in three months.</p>

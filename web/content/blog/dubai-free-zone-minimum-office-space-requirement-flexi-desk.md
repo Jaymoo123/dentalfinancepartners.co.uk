@@ -1,33 +1,40 @@
 ---
-title: "What Is the Minimum Office Space Requirement for a Dubai Free Zone Company and Can I Use a Flexi Desk?"
-slug: "dubai-free-zone-minimum-office-space-requirement-flexi-desk"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-free-zone-minimum-office-space-requirement-flexi-desk"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Free Zone Minimum Office Space Requirement: Flexi Desks"
-metaDescription: "Most Dubai free zones require a physical office. Flexi desks often qualify. Here's the minimum space rule, cost examples, and what agency founders need"
-altText: "Modern co-working space in a Dubai free zone with flexi desks and agency founders working"
-image: "/blog/dubai-free-zone-minimum-office-space-requirement-flexi-desk.jpg"
+title: What Is the Minimum Office Space Requirement for a Dubai Free Zone Company and Can I Use a Flexi Desk?
+slug: dubai-free-zone-minimum-office-space-requirement-flexi-desk
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-free-zone-minimum-office-space-requirement-flexi-desk
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Free Zone Minimum Office Space Requirement: Flexi Desks'
+metaDescription: Most Dubai free zones require a physical office. Flexi desks often qualify. Here's the minimum space rule, cost examples, and what agency founders need
+altText: Modern co-working space in a Dubai free zone with flexi desks and agency founders working
+image: /blog/dubai-free-zone-minimum-office-space-requirement-flexi-desk.jpg
 imageCredit:
-  photographer: "Kate Trysh"
-  photographerUrl: "https://www.pexels.com/@katetrysh"
-  sourceUrl: "https://www.pexels.com/photo/aerial-view-of-city-buildings-10619946/"
-  source: "Pexels"
-h1: "What Is the Minimum Office Space Requirement for a Dubai Free Zone Company and Can I Use a Flexi Desk?"
-summary: "Most Dubai free zones require a physical office to issue a licence. Flexi desks and co-working spaces typically satisfy this rule. Here's the minimum space requirement, which zones accept flexi desks, and what agency founders should budget for."
-schema: ""
+  photographer: Kate Trysh
+  photographerUrl: https://www.pexels.com/@katetrysh
+  sourceUrl: https://www.pexels.com/photo/aerial-view-of-city-buildings-10619946/
+  source: Pexels
+h1: What Is the Minimum Office Space Requirement for a Dubai Free Zone Company and Can I Use a Flexi Desk?
+summary: Most Dubai free zones require a physical office to issue a licence. Flexi desks and co-working spaces typically satisfy this rule. Here's the minimum space requirement, which zones accept flexi desks, and what agency founders should budget for.
+schema: ''
 faqs:
-  - question: "Can I use a WeWork or Regus flexi desk for my Dubai free zone company?"
-    answer: "Yes, but only if the WeWork or Regus location is within the free zone's approved list of providers. Not all co-working spaces are accepted. Check with your free zone authority before signing any lease. If the space is outside the zone boundaries, it will not satisfy the physical office requirement."
-  - question: "What is the minimum square footage for a free zone office in Dubai?"
-    answer: "There is no universal minimum. Most free zones require at least one dedicated desk, which is roughly 100 to 150 square feet. Some zones specify a minimum of 200 square feet for a private office. Always check the specific rules for your chosen free zone before committing."
-  - question: "Do I need a physical office if I only have a UAE freelance visa?"
-    answer: "No. A UAE freelance visa is different from a free zone company licence. Freelance visas typically do not require a physical office. But if you operate through a free zone company, you must have a registered physical address within the zone, even if it is just a flexi desk."
-  - question: "Can I share a flexi desk with another company to save costs?"
-    answer: "No. Each licensed company must have its own dedicated physical space. Sharing a single desk between two companies would violate the free zone rules. You can share a larger office and split the cost, but each company must have its own registered desk or room."
+- question: Can I use a WeWork or Regus flexi desk for my Dubai free zone company?
+  answer: Yes, but only if the WeWork or Regus location is within the free zone's approved list of providers. Not all co-working spaces are accepted. Check with your free zone authority before signing any lease. If the space is outside the zone boundaries, it will not satisfy the physical office requirement.
+- question: What is the minimum square footage for a free zone office in Dubai?
+  answer: There is no universal minimum. Most free zones require at least one dedicated desk, which is roughly 100 to 150 square feet. Some zones specify a minimum of 200 square feet for a private office. Always check the specific rules for your chosen free zone before committing.
+- question: Do I need a physical office if I only have a UAE freelance visa?
+  answer: No. A UAE freelance visa is different from a free zone company licence. Freelance visas typically do not require a physical office. But if you operate through a free zone company, you must have a registered physical address within the zone, even if it is just a flexi desk.
+- question: Can I share a flexi desk with another company to save costs?
+  answer: No. Each licensed company must have its own dedicated physical space. Sharing a single desk between two companies would violate the free zone rules. You can share a larger office and split the cost, but each company must have its own registered desk or room.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Most Dubai free zones require a physical office, but flexi desks and co-working spaces typically satisfy this rule.
+- There is no single UAE-wide minimum office space requirement; each free zone sets its own rules, often around 100–150 sq ft.
+- Flexi desks are accepted by most free zones, but you usually need a dedicated desk, not a hot desk, for licence registration.
+- Annual flexi desk costs range from AED 8,000 in RAK ICC to AED 18,000+ in Dubai Internet City, separate from licence and visa fees.
+- Check your specific free zone's rules before committing, as some zones require dedicated physical space without precise measurements.
 ---
-
 <p>If you are a UK agency founder setting up a Dubai free zone company, you have probably heard that you need a physical office. The question is: what exactly counts? And can a flexi desk at a co-working space satisfy the <strong>free zone minimum office space requirement</strong>?</p>
 
 <p>The short answer is yes, most free zones accept flexi desks and co-working memberships as valid physical office space. But there are specific rules, minimum space thresholds, and cost differences that matter. Get this wrong and you could delay your licence, pay for space you do not need, or trigger compliance issues down the line.</p>

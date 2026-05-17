@@ -1,33 +1,40 @@
 ---
-title: "MTD for Mixed VAT and Non-VAT Registered Agencies: What You Need to Know"
-slug: "mtd-mixed-vat-non-vat-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-mixed-vat-non-vat-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Making Tax Digital"
-metaTitle: "MTD for Mixed VAT & Non-VAT Agencies: UK Guide"
-metaDescription: "MTD for mixed VAT and non-VAT registered agencies explained. How MTD ITSA affects sole traders, partnerships, and limited companies with mixed income"
-altText: "Agency founder reviewing digital tax records on a tablet in a Manchester office"
-image: "/blog/mtd-mixed-vat-non-vat-agency.jpg"
+title: 'MTD for Mixed VAT and Non-VAT Registered Agencies: What You Need to Know'
+slug: mtd-mixed-vat-non-vat-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-mixed-vat-non-vat-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Making Tax Digital
+metaTitle: 'MTD for Mixed VAT & Non-VAT Agencies: UK Guide'
+metaDescription: MTD for mixed VAT and non-VAT registered agencies explained. How MTD ITSA affects sole traders, partnerships, and limited companies with mixed income
+altText: Agency founder reviewing digital tax records on a tablet in a Manchester office
+image: /blog/mtd-mixed-vat-non-vat-agency.jpg
 imageCredit:
-  photographer: "Mikael Blomkvist"
-  photographerUrl: "https://www.pexels.com/@mikael-blomkvist"
-  sourceUrl: "https://www.pexels.com/photo/people-sitting-at-the-table-6476256/"
-  source: "Pexels"
-h1: "MTD for Mixed VAT and Non-VAT Registered Agencies: What You Need to Know"
-summary: "If your agency has some income that's VAT registered and some that isn't, MTD creates a split reporting problem. Here's how to handle it."
-schema: ""
+  photographer: Mikael Blomkvist
+  photographerUrl: https://www.pexels.com/@mikael-blomkvist
+  sourceUrl: https://www.pexels.com/photo/people-sitting-at-the-table-6476256/
+  source: Pexels
+h1: 'MTD for Mixed VAT and Non-VAT Registered Agencies: What You Need to Know'
+summary: If your agency has some income that's VAT registered and some that isn't, MTD creates a split reporting problem. Here's how to handle it.
+schema: ''
 faqs:
-  - question: "Do I need separate MTD software for my limited company and my sole trade?"
-    answer: "Yes, in most cases. Your limited company and sole trade are separate legal entities. Each needs its own MTD-compliant digital records. Some accounting software like Xero allows multiple organisations under one login, so you can manage both from the same dashboard. But the records themselves must be separate."
-  - question: "What if my sole trade income is below £30,000? Do I still need MTD for ITSA?"
-    answer: "Not yet. MTD for ITSA is mandatory from April 2026 for income over £50,000, and from April 2027 for income over £30,000. If your sole trade income is below £30,000, you are not required to follow MTD for ITSA at this stage. However, HMRC has indicated it will eventually apply to all self-employed individuals, so it is wise to start keeping digital records now."
-  - question: "Can I use the same bank account for my limited company and my sole trade?"
-    answer: "No. You must keep separate bank accounts for each legal entity. HMRC can request bank statements during an MTD compliance check. Mixing funds between your limited company and sole trade creates confusion in your digital records and can trigger questions about director's loan accounts and personal versus business expenses."
-  - question: "My limited company uses the VAT Flat Rate Scheme. Does that affect my sole trade's MTD obligations?"
-    answer: "No, the Flat Rate Scheme only applies to your limited company's VATable income. Your sole trade is a separate entity with its own tax obligations. However, if your sole trade income includes any VATable supplies (unlikely if it is below the threshold), you would need to account for VAT separately. The key is keeping the two entities' records completely separate."
+- question: Do I need separate MTD software for my limited company and my sole trade?
+  answer: Yes, in most cases. Your limited company and sole trade are separate legal entities. Each needs its own MTD-compliant digital records. Some accounting software like Xero allows multiple organisations under one login, so you can manage both from the same dashboard. But the records themselves must be separate.
+- question: What if my sole trade income is below £30,000? Do I still need MTD for ITSA?
+  answer: Not yet. MTD for ITSA is mandatory from April 2026 for income over £50,000, and from April 2027 for income over £30,000. If your sole trade income is below £30,000, you are not required to follow MTD for ITSA at this stage. However, HMRC has indicated it will eventually apply to all self-employed individuals, so it is wise to start keeping digital records now.
+- question: Can I use the same bank account for my limited company and my sole trade?
+  answer: No. You must keep separate bank accounts for each legal entity. HMRC can request bank statements during an MTD compliance check. Mixing funds between your limited company and sole trade creates confusion in your digital records and can trigger questions about director's loan accounts and personal versus business expenses.
+- question: My limited company uses the VAT Flat Rate Scheme. Does that affect my sole trade's MTD obligations?
+  answer: No, the Flat Rate Scheme only applies to your limited company's VATable income. Your sole trade is a separate entity with its own tax obligations. However, if your sole trade income includes any VATable supplies (unlikely if it is below the threshold), you would need to account for VAT separately. The key is keeping the two entities' records completely separate.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- If your agency operates as a limited company (VAT registered) and a sole trade (non-VAT), you must maintain separate MTD-compliant digital records for each legal entity.
+- MTD for VAT is already mandatory for businesses with taxable turnover over £90,000, requiring MTD-compatible software for digital record-keeping and VAT return submission.
+- MTD for ITSA becomes mandatory from April 2026 for sole traders and partnerships with qualifying income over £50,000, dropping to £30,000 from April 2027.
+- You cannot combine MTD obligations for separate legal entities into a single return; each entity must file its own VAT or ITSA returns digitally.
+- Software like Xero handles MTD for VAT natively but may require third-party bridging software for MTD for ITSA submissions.
 ---
-
 <p>If your agency has some income streams that are VAT registered and others that aren't, you're in a minority that HMRC's MTD rules don't handle elegantly. The system was designed for straightforward cases: you're either VAT registered or you aren't. But many agency founders operate with a mix.</p>
 
 <p>A common scenario: you run a digital agency through a limited company (VAT registered) but also take on freelance consulting work as a sole trader (below the £90,000 VAT threshold). Or you have a partnership that handles non-VATable income alongside your main agency. In these cases, <strong>MTD for mixed VAT and non-VAT agencies</strong> creates a genuine compliance puzzle.</p>

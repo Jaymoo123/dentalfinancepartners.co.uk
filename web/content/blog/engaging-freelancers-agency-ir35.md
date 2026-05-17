@@ -1,33 +1,40 @@
 ---
-title: "How Does IR35 Apply When Your Agency Engages Freelancers?"
-slug: "engaging-freelancers-agency-ir35"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/engaging-freelancers-agency-ir35"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Contractors and IR35"
-metaTitle: "IR35 Freelancers Agency: Compliance Guide for UK Agency"
-metaDescription: "IR35 freelancers agency compliance guide. Learn how to assess contractor status, issue SDS, and avoid HMRC penalties when engaging freelancers through"
-altText: "Agency founder reviewing contractor IR35 status determination documents in a modern London office"
-image: "/blog/engaging-freelancers-agency-ir35.jpg"
+title: How Does IR35 Apply When Your Agency Engages Freelancers?
+slug: engaging-freelancers-agency-ir35
+canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/engaging-freelancers-agency-ir35
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Contractors and IR35
+metaTitle: 'IR35 Freelancers Agency: Compliance Guide for UK Agency'
+metaDescription: IR35 freelancers agency compliance guide. Learn how to assess contractor status, issue SDS, and avoid HMRC penalties when engaging freelancers through
+altText: Agency founder reviewing contractor IR35 status determination documents in a modern London office
+image: /blog/engaging-freelancers-agency-ir35.jpg
 imageCredit:
-  photographer: "Ofspace LLC, Culture"
-  photographerUrl: "https://www.pexels.com/@ofspace"
-  sourceUrl: "https://www.pexels.com/photo/high-angle-shot-of-a-man-in-yellow-shirt-wearing-eyeglasses-while-using-a-laptop-8128188/"
-  source: "Pexels"
-h1: "How Does IR35 Apply When Your Agency Engages Freelancers?"
-summary: "A practical compliance guide for agency founders engaging freelancers. Learn how IR35 applies to your agency, when you need to issue a Status Determination Statement, and what happens if you get it wrong."
-schema: ""
+  photographer: Ofspace LLC, Culture
+  photographerUrl: https://www.pexels.com/@ofspace
+  sourceUrl: https://www.pexels.com/photo/high-angle-shot-of-a-man-in-yellow-shirt-wearing-eyeglasses-while-using-a-laptop-8128188/
+  source: Pexels
+h1: How Does IR35 Apply When Your Agency Engages Freelancers?
+summary: A practical compliance guide for agency founders engaging freelancers. Learn how IR35 applies to your agency, when you need to issue a Status Determination Statement, and what happens if you get it wrong.
+schema: ''
 faqs:
-  - question: "What is the first step in IR35 compliance for my agency?"
-    answer: "Review every freelancer engagement individually. Do not assume a contractor is outside IR35 just because they work through a limited company. Use the CEST tool to get a directional answer, then issue a Status Determination Statement before the engagement begins. If you are unsure, take professional advice."
-  - question: "Can I avoid IR35 by using an umbrella company?"
-    answer: "No. Using an umbrella company does not remove your obligation to issue an SDS and make a reasonable determination. The umbrella company can handle payroll and compliance for inside-IR35 engagements, but you still need to determine the status correctly in the first place."
-  - question: "What records do I need to keep for IR35 compliance?"
-    answer: "Keep the SDS you issued, the CEST output or other evidence supporting your determination, the contract with the freelancer, any correspondence about the determination, and payroll records showing tax and NI deducted (if inside IR35). Keep these for at least six years after the engagement ends."
-  - question: "What happens if HMRC finds I got an IR35 determination wrong?"
-    answer: "HMRC will issue a tax bill for the unpaid income tax, employee NI, and employer NI, plus interest and penalties. Penalties can reach 100% of the tax due in cases of deliberate non-compliance. For a single six-month engagement at £450 per day, that could be a £17,000 bill plus penalties."
+- question: What is the first step in IR35 compliance for my agency?
+  answer: Review every freelancer engagement individually. Do not assume a contractor is outside IR35 just because they work through a limited company. Use the CEST tool to get a directional answer, then issue a Status Determination Statement before the engagement begins. If you are unsure, take professional advice.
+- question: Can I avoid IR35 by using an umbrella company?
+  answer: No. Using an umbrella company does not remove your obligation to issue an SDS and make a reasonable determination. The umbrella company can handle payroll and compliance for inside-IR35 engagements, but you still need to determine the status correctly in the first place.
+- question: What records do I need to keep for IR35 compliance?
+  answer: Keep the SDS you issued, the CEST output or other evidence supporting your determination, the contract with the freelancer, any correspondence about the determination, and payroll records showing tax and NI deducted (if inside IR35). Keep these for at least six years after the engagement ends.
+- question: What happens if HMRC finds I got an IR35 determination wrong?
+  answer: HMRC will issue a tax bill for the unpaid income tax, employee NI, and employer NI, plus interest and penalties. Penalties can reach 100% of the tax due in cases of deliberate non-compliance. For a single six-month engagement at £450 per day, that could be a £17,000 bill plus penalties.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Since April 2021, medium and large agencies must determine IR35 status for freelancers working through their own limited company.
+- If your agency meets two of three criteria (turnover over £10.2m, balance sheet over £5.1m, over 50 employees), you are medium or large and must issue a Status Determination Statement.
+- Small agencies are exempt from making IR35 determinations, but freelancers remain responsible; HMRC can still challenge and pursue the agency for knowingly facilitating avoidance.
+- When a freelancer is inside IR35, you must deduct PAYE income tax and employee NI, pay employer NI at 13.8%, and may need to make pension contributions.
+- Engaging a freelancer inside IR35 increases your cost beyond their day rate due to employer NI, and the freelancer receives less net pay, often leading to a higher negotiated rate.
 ---
-
 <h2>Your Agency, Your Freelancers, and IR35</h2>
 
 <p>If your agency engages freelancers who work through their own limited company, IR35 applies to you. This is not optional. It is a legal obligation that has been in force for medium and large agencies since April 2021, and for all agencies regardless of size where the end client is a public authority.</p>

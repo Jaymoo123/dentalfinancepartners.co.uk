@@ -1,33 +1,40 @@
 ---
-title: "Late Corporation Tax Penalty for Agencies: What You Need to Know to Avoid It"
-slug: "late-corporation-tax-penalty-agency-uk"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/late-corporation-tax-penalty-agency-uk"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Agency Late Corp Tax Penalty: Avoid HMRC Fines"
-metaDescription: "Late corporation tax penalty agency UK: fines start at £100 for 1 day late. Know the deadlines, penalties, and how to avoid them for your agency."
-altText: "UK agency founder reviewing corporation tax filing deadlines on a laptop in a modern office"
-image: "/blog/late-corporation-tax-penalty-agency-uk.jpg"
+title: 'Late Corporation Tax Penalty for Agencies: What You Need to Know to Avoid It'
+slug: late-corporation-tax-penalty-agency-uk
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/late-corporation-tax-penalty-agency-uk
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'Agency Late Corp Tax Penalty: Avoid HMRC Fines'
+metaDescription: 'Late corporation tax penalty agency UK: fines start at £100 for 1 day late. Know the deadlines, penalties, and how to avoid them for your agency.'
+altText: UK agency founder reviewing corporation tax filing deadlines on a laptop in a modern office
+image: /blog/late-corporation-tax-penalty-agency-uk.jpg
 imageCredit:
-  photographer: "Towfiqu barbhuiya"
-  photographerUrl: "https://www.pexels.com/@towfiqu-barbhuiya-3440682"
-  sourceUrl: "https://www.pexels.com/photo/close-up-of-documents-11069121/"
-  source: "Pexels"
-h1: "What Is the Penalty for Late Corporation Tax Filing for Agencies and How to Avoid It"
-summary: "Late corporation tax filing penalties start at £100 for being one day late and escalate to tax-geared fines of up to 20% of your agency's tax bill. This guide covers the deadlines, penalty structure, and practical steps to keep your agency compliant."
-schema: ""
+  photographer: Towfiqu barbhuiya
+  photographerUrl: https://www.pexels.com/@towfiqu-barbhuiya-3440682
+  sourceUrl: https://www.pexels.com/photo/close-up-of-documents-11069121/
+  source: Pexels
+h1: What Is the Penalty for Late Corporation Tax Filing for Agencies and How to Avoid It
+summary: Late corporation tax filing penalties start at £100 for being one day late and escalate to tax-geared fines of up to 20% of your agency's tax bill. This guide covers the deadlines, penalty structure, and practical steps to keep your agency compliant.
+schema: ''
 faqs:
-  - question: "What is the penalty for filing corporation tax 1 day late?"
-    answer: "The penalty for filing your CT600 one day late is £100. This is automatic and applies regardless of whether you owe any tax. There is no grace period. If you file late three times in a row, the £100 penalty applies per late return, not per day."
-  - question: "Can HMRC cancel a late corporation tax penalty?"
-    answer: "Yes, HMRC can cancel a penalty if you have a reasonable excuse. This includes serious illness, unexpected hospitalisation, computer failure that destroyed records, or a fire or flood at your premises. Being too busy, forgetting, or relying on someone else who let you down does not count as a reasonable excuse. You must appeal in writing within 30 days of receiving the penalty notice."
-  - question: "How long do I have to file my company tax return after year end?"
-    answer: "You have 12 months from the end of your accounting period to file your CT600 Company Tax Return. However, your corporation tax payment is due 9 months and 1 day after the year end. The payment deadline comes before the filing deadline, which catches many agency founders out."
-  - question: "What happens if I cannot pay my corporation tax on time?"
-    answer: "If you cannot pay your corporation tax on time, file your CT600 return on time anyway. Filing late triggers penalties. Paying late triggers interest at the Bank of England base rate plus 2.5%. You can set up a Time to Pay arrangement with HMRC for amounts under £30,000 online without speaking to anyone. For larger amounts, you will need to call HMRC's Business Payment Support Service."
+- question: What is the penalty for filing corporation tax 1 day late?
+  answer: The penalty for filing your CT600 one day late is £100. This is automatic and applies regardless of whether you owe any tax. There is no grace period. If you file late three times in a row, the £100 penalty applies per late return, not per day.
+- question: Can HMRC cancel a late corporation tax penalty?
+  answer: Yes, HMRC can cancel a penalty if you have a reasonable excuse. This includes serious illness, unexpected hospitalisation, computer failure that destroyed records, or a fire or flood at your premises. Being too busy, forgetting, or relying on someone else who let you down does not count as a reasonable excuse. You must appeal in writing within 30 days of receiving the penalty notice.
+- question: How long do I have to file my company tax return after year end?
+  answer: You have 12 months from the end of your accounting period to file your CT600 Company Tax Return. However, your corporation tax payment is due 9 months and 1 day after the year end. The payment deadline comes before the filing deadline, which catches many agency founders out.
+- question: What happens if I cannot pay my corporation tax on time?
+  answer: If you cannot pay your corporation tax on time, file your CT600 return on time anyway. Filing late triggers penalties. Paying late triggers interest at the Bank of England base rate plus 2.5%. You can set up a Time to Pay arrangement with HMRC for amounts under £30,000 online without speaking to anyone. For larger amounts, you will need to call HMRC's Business Payment Support Service.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Late corporation tax filing penalties start at £100 for being one day late, with no grace period or warning from HMRC.
+- Penalties escalate to tax-geared fines of up to 20% of your agency's tax bill for delays of six months or more.
+- Corporation tax payment is due 9 months and 1 day after your accounting period ends, while filing is due 12 months after.
+- For a typical agency with a £63,400 tax bill, being six months late triggers a penalty of at least £3,470 (5% of tax plus flat fees).
+- Daily penalties of up to £60 per day can apply if your agency is more than three months late and still hasn't filed.
 ---
-
 <p>You file your company tax return one day late. HMRC sends you a £100 penalty. It feels petty, but it is automatic. There is no grace period, no warning letter, no "we'll let you off this once."</p>
 
 <p>For a 12-person digital agency billing £800k per year, a single late filing might not break the bank. But the penalties escalate fast. Leave it three months and you are looking at £500. Leave it six months and HMRC starts calculating penalties based on your tax bill. That is where it gets expensive.</p>

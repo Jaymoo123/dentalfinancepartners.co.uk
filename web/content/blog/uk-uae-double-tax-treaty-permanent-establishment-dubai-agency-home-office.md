@@ -1,33 +1,40 @@
 ---
-title: "UK-UAE Double Tax Treaty: The Permanent Establishment Clause That Your Dubai Agency's Home Office Could Trigger"
-slug: "uk-uae-double-tax-treaty-permanent-establishment-dubai-agency-home-office"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-uae-double-tax-treaty-permanent-establishment-dubai-agency-home-office"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK-UAE Double Tax Treaty: Permanent Establishment Risk"
-metaDescription: "Running your Dubai agency from your UK home could create a UK permanent establishment under the UK-UAE double tax treaty. Here is what that means for your"
-altText: "UK-UAE double tax treaty permanent establishment diagram showing a laptop in a UK home office connected to a Dubai agency building"
-image: "/blog/uk-uae-double-tax-treaty-permanent-establishment-dubai-agency-home-office.jpg"
+title: 'UK-UAE Double Tax Treaty: The Permanent Establishment Clause That Your Dubai Agency''s Home Office Could Trigger'
+slug: uk-uae-double-tax-treaty-permanent-establishment-dubai-agency-home-office
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-uae-double-tax-treaty-permanent-establishment-dubai-agency-home-office
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK-UAE Double Tax Treaty: Permanent Establishment Risk'
+metaDescription: Running your Dubai agency from your UK home could create a UK permanent establishment under the UK-UAE double tax treaty. Here is what that means for your
+altText: UK-UAE double tax treaty permanent establishment diagram showing a laptop in a UK home office connected to a Dubai agency building
+image: /blog/uk-uae-double-tax-treaty-permanent-establishment-dubai-agency-home-office.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/tax-season-6863255/"
-  source: "Pexels"
-h1: "UK-UAE Double Tax Treaty: The Permanent Establishment Clause That Your Dubai Agency's Home Office Could Trigger"
-summary: "If you run a Dubai-based agency but spend time working from your UK home, you could accidentally create a UK permanent establishment. That would expose your Dubai profits to UK corporation tax. Here is how the UK-UAE double tax treaty defines a PE, and what to watch for."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/tax-season-6863255/
+  source: Pexels
+h1: 'UK-UAE Double Tax Treaty: The Permanent Establishment Clause That Your Dubai Agency''s Home Office Could Trigger'
+summary: If you run a Dubai-based agency but spend time working from your UK home, you could accidentally create a UK permanent establishment. That would expose your Dubai profits to UK corporation tax. Here is how the UK-UAE double tax treaty defines a PE, and what to watch for.
+schema: ''
 faqs:
-  - question: "What is a permanent establishment under the UK-UAE double tax treaty?"
-    answer: "A permanent establishment (PE) is a fixed place of business through which your company carries on its trade. Under Article 5 of the UK-UAE double tax treaty, this includes an office, a place of management, or a branch. For agency founders, a UK home office used regularly for substantive work (managing staff, meeting clients, signing contracts) can qualify as a PE, exposing your Dubai company's profits to UK corporation tax at 25%."
-  - question: "How many days can I spend in the UK without creating a permanent establishment?"
-    answer: "There is no fixed day count in the treaty. But in practice, less than 30 days per year with only administrative work is low risk. Between 30 and 90 days with management activity is medium risk. Over 90 days is high risk, especially if you own or control a UK home. HMRC looks at what you do, not just how long you stay."
-  - question: "Does having a UAE office protect me from a UK PE?"
-    answer: "Not automatically. A UAE office helps, especially if it has staff who run day-to-day operations while you are away. But if you are the sole director and you manage the agency from your UK home for extended periods, HMRC can still argue that your UK home is a PE for those activities. The UAE office does not cancel out the UK activity."
-  - question: "What should I do if I think I already have a UK permanent establishment?"
-    answer: "Start by gathering facts: days spent in the UK, activities performed, property ownership, and UAE office arrangements. Then speak to an accountant who knows both UK and UAE tax. If the exposure is significant, consider a voluntary disclosure to HMRC to reduce penalties. Do not make a disclosure without professional advice first."
+- question: What is a permanent establishment under the UK-UAE double tax treaty?
+  answer: A permanent establishment (PE) is a fixed place of business through which your company carries on its trade. Under Article 5 of the UK-UAE double tax treaty, this includes an office, a place of management, or a branch. For agency founders, a UK home office used regularly for substantive work (managing staff, meeting clients, signing contracts) can qualify as a PE, exposing your Dubai company's profits to UK corporation tax at 25%.
+- question: How many days can I spend in the UK without creating a permanent establishment?
+  answer: There is no fixed day count in the treaty. But in practice, less than 30 days per year with only administrative work is low risk. Between 30 and 90 days with management activity is medium risk. Over 90 days is high risk, especially if you own or control a UK home. HMRC looks at what you do, not just how long you stay.
+- question: Does having a UAE office protect me from a UK PE?
+  answer: Not automatically. A UAE office helps, especially if it has staff who run day-to-day operations while you are away. But if you are the sole director and you manage the agency from your UK home for extended periods, HMRC can still argue that your UK home is a PE for those activities. The UAE office does not cancel out the UK activity.
+- question: What should I do if I think I already have a UK permanent establishment?
+  answer: 'Start by gathering facts: days spent in the UK, activities performed, property ownership, and UAE office arrangements. Then speak to an accountant who knows both UK and UAE tax. If the exposure is significant, consider a voluntary disclosure to HMRC to reduce penalties. Do not make a disclosure without professional advice first.'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A UK home office used regularly for substantive work can create a UK permanent establishment of your Dubai company under the UK-UAE double tax treaty.
+- If HMRC deems your UK home a PE, profits attributable to it are taxed at 25% corporation tax in the UK.
+- Spending two months a year working from your UK home, taking client calls and managing your team, is enough to trigger a PE.
+- HMRC can open an enquiry into your Dubai company if you have strong UK ties and work from a UK location you control.
+- A one-off week working from a UK home is unlikely to create a PE, but regular annual visits with substantive work will.
 ---
-
 <h2>You Moved to Dubai for the 0% Tax. But Your UK Home Office Could Cost You.</h2>
 
 <p>The UK-UAE double tax treaty is one of the main reasons agency founders relocate to Dubai. Zero per cent personal income tax. Zero per cent corporation tax (for most activities). No capital gains tax. It sounds like a clean break from the UK tax system.</p>

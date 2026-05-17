@@ -1,33 +1,40 @@
 ---
-title: "What the 2025 CGT Rate Changes Mean for Agency Founders Selling Shares"
-slug: "cgt-rates-2025-agency-founder-shares"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/cgt-rates-2025-agency-founder-shares"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "CGT 2025: what agency founders must know for share sales"
-metaDescription: "The 2025 Budget raised CGT on share disposals to 18% and 24%. For agency founders planning an exit, the numbers have shifted. Here's what changed and how"
-altText: "Agency founder reviewing share sale documents with accountant in a London office meeting room"
-image: "/blog/cgt-rates-2025-agency-founder-shares.jpg"
+title: What the 2025 CGT Rate Changes Mean for Agency Founders Selling Shares
+slug: cgt-rates-2025-agency-founder-shares
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/cgt-rates-2025-agency-founder-shares
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'CGT 2025: what agency founders must know for share sales'
+metaDescription: The 2025 Budget raised CGT on share disposals to 18% and 24%. For agency founders planning an exit, the numbers have shifted. Here's what changed and how
+altText: Agency founder reviewing share sale documents with accountant in a London office meeting room
+image: /blog/cgt-rates-2025-agency-founder-shares.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/white-and-black-heart-shape-illustration-6120216/"
-  source: "Pexels"
-h1: "What the 2025 CGT Rate Changes Mean for Agency Founders Selling Shares"
-summary: "The 2025 Budget increased Capital Gains Tax on share disposals to 18% (basic rate) and 24% (higher rate). For agency founders planning a sale, this changes the exit calculation significantly. We explain the new rates, how Business Asset Disposal Relief still works, and what to do before you sell."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/white-and-black-heart-shape-illustration-6120216/
+  source: Pexels
+h1: What the 2025 CGT Rate Changes Mean for Agency Founders Selling Shares
+summary: The 2025 Budget increased Capital Gains Tax on share disposals to 18% (basic rate) and 24% (higher rate). For agency founders planning a sale, this changes the exit calculation significantly. We explain the new rates, how Business Asset Disposal Relief still works, and what to do before you sell.
+schema: ''
 faqs:
-  - question: "Has the Budget changed the CGT rate for Business Asset Disposal Relief?"
-    answer: "No. BADR is 14% from 6 April 2025 (was 10% before then) on the first £1 million of qualifying lifetime gains. The Budget increased the main CGT rates on share disposals from 10%/20% to 18%/24%. BADR is unchanged."
-  - question: "Can I still use BADR if I sell shares in my agency after the Budget?"
-    answer: "Yes, as long as you meet the conditions: at least 5% shareholding, officer or employee of the company, and the shares held for at least 2 years before the disposal. The company must also be a trading company throughout that period."
-  - question: "What if I have already used my £1 million BADR allowance?"
-    answer: "Then your gains on share disposals are taxed at the new rates — 18% if the gain falls within your basic rate band, 24% if it exceeds it. This is where planning around holding company structures or deferred consideration becomes more important."
-  - question: "Do the new rates apply to all share disposals, or only sales after the Budget date?"
-    answer: "The new rates apply to disposals made on or after 30 October 2024. If you exchanged contracts before that date but completed after, the position depends on the specific facts. Generally, the date of disposal for CGT purposes is the date contracts are exchanged, not completion. But HMRC may look at the substance of the arrangement. Get specific advice if your sale straddles the Budget date."
+- question: Has the Budget changed the CGT rate for Business Asset Disposal Relief?
+  answer: No. BADR is 14% from 6 April 2025 (was 10% before then) on the first £1 million of qualifying lifetime gains. The Budget increased the main CGT rates on share disposals from 10%/20% to 18%/24%. BADR is unchanged.
+- question: Can I still use BADR if I sell shares in my agency after the Budget?
+  answer: 'Yes, as long as you meet the conditions: at least 5% shareholding, officer or employee of the company, and the shares held for at least 2 years before the disposal. The company must also be a trading company throughout that period.'
+- question: What if I have already used my £1 million BADR allowance?
+  answer: Then your gains on share disposals are taxed at the new rates — 18% if the gain falls within your basic rate band, 24% if it exceeds it. This is where planning around holding company structures or deferred consideration becomes more important.
+- question: Do the new rates apply to all share disposals, or only sales after the Budget date?
+  answer: The new rates apply to disposals made on or after 30 October 2024. If you exchanged contracts before that date but completed after, the position depends on the specific facts. Generally, the date of disposal for CGT purposes is the date contracts are exchanged, not completion. But HMRC may look at the substance of the arrangement. Get specific advice if your sale straddles the Budget date.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- From 30 October 2024, the lower CGT rate on share disposals rose from 10% to 18% and the higher rate from 20% to 24%.
+- Business Asset Disposal Relief (BADR) is 14% from 6 April 2025, rising to 18% on 6 April 2026, with the £1 million lifetime limit unchanged.
+- Most agency founders qualify for BADR if they hold at least 5% shares and voting rights and have been an officer or employee for two years before sale.
+- Once you use your £1 million BADR allowance, all future gains on share disposals are taxed at 18% or 24%.
+- For a £1.5 million agency sale, the new rates increase CGT by roughly £20,000 compared to pre-October 2024 rates.
 ---
-
 <p>The 2025 Budget changed Capital Gains Tax rates for share disposals. If you own an agency and have been thinking about selling shares — whether a full exit, a partial sale to a new partner, or restructuring before retirement — the numbers you were working to have shifted.</p>
 
 <p>From 30 October 2024, the lower rate of CGT on share disposals rose from 10% to 18%. The higher rate rose from 20% to 24%. Business Asset Disposal Relief (formerly Entrepreneurs' Relief) increased from 10% to 14% on 6 April 2025, and is scheduled to rise again to 18% on 6 April 2026. The £1 million lifetime limit is unchanged.</p>

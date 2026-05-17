@@ -1,33 +1,40 @@
 ---
-title: "How to Migrate Your Agency's Historical Data from Spreadsheets to MTD-Compliant Software Without Errors"
-slug: "migrate-agency-data-spreadsheets-mtd-software"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/migrate-agency-data-spreadsheets-mtd-software"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Making Tax Digital"
-metaTitle: "Migrate Agency Data to MTD Software Without Errors: Founder"
-metaDescription: "Spreadsheet-to-MTD migration guide for UK agency founders. Avoid data loss, fix chart of accounts, and go live with clean records before MTD ITSA"
-altText: "UK agency founder reviewing spreadsheet data on laptop while accountant explains MTD migration process"
-image: "/blog/migrate-agency-data-spreadsheets-mtd-software.jpg"
+title: How to Migrate Your Agency's Historical Data from Spreadsheets to MTD-Compliant Software Without Errors
+slug: migrate-agency-data-spreadsheets-mtd-software
+canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/migrate-agency-data-spreadsheets-mtd-software
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Making Tax Digital
+metaTitle: 'Migrate Agency Data to MTD Software Without Errors: Founder'
+metaDescription: Spreadsheet-to-MTD migration guide for UK agency founders. Avoid data loss, fix chart of accounts, and go live with clean records before MTD ITSA
+altText: UK agency founder reviewing spreadsheet data on laptop while accountant explains MTD migration process
+image: /blog/migrate-agency-data-spreadsheets-mtd-software.jpg
 imageCredit:
-  photographer: "Kampus Production"
-  photographerUrl: "https://www.pexels.com/@kampus"
-  sourceUrl: "https://www.pexels.com/photo/photo-of-a-woman-holding-a-paper-with-charts-near-her-laptop-6248957/"
-  source: "Pexels"
-h1: "How to Migrate Your Agency's Historical Data from Spreadsheets to MTD-Compliant Software Without Errors"
-summary: "Moving your agency from spreadsheets to MTD-compliant software is one of the most important finance decisions you'll make. This guide walks you through the practical steps to migrate historical data accurately, avoid common errors, and set up your books for Making Tax Digital."
-schema: ""
+  photographer: Kampus Production
+  photographerUrl: https://www.pexels.com/@kampus
+  sourceUrl: https://www.pexels.com/photo/photo-of-a-woman-holding-a-paper-with-charts-near-her-laptop-6248957/
+  source: Pexels
+h1: How to Migrate Your Agency's Historical Data from Spreadsheets to MTD-Compliant Software Without Errors
+summary: Moving your agency from spreadsheets to MTD-compliant software is one of the most important finance decisions you'll make. This guide walks you through the practical steps to migrate historical data accurately, avoid common errors, and set up your books for Making Tax Digital.
+schema: ''
 faqs:
-  - question: "Can I use an Excel-to-MTD bridge tool instead of moving to accounting software?"
-    answer: "Some bridge tools exist, but they are a temporary fix, not a long-term solution. HMRC requires digital record-keeping, not just digital submission. A bridge tool lets you submit MTD returns from a spreadsheet, but you still need to maintain digital records. For an agency with more than a handful of transactions per month, proper accounting software is cheaper and more reliable in the long run."
-  - question: "How long does a full data migration take for a typical agency?"
-    answer: "For a 10-person agency with 12 months of transaction history, expect 15-25 hours of your own time plus 5-10 hours of your accountant's time if you involve them. The bank reconciliation step takes the longest. If your records are clean, you can do it in a weekend. If your spreadsheets are messy, budget a full week."
-  - question: "Do I need to migrate historical payroll data into the new software?"
-    answer: "No. Your payroll submissions to HMRC through RTI are already on HMRC's systems. You only need to set up your current employees in the new payroll module. Keep your old payroll reports in a folder for reference, but do not try to import three years of P60s and P45s into the new system. It is not necessary and it creates clutter."
-  - question: "What happens if my opening balances are wrong and I file an MTD return?"
-    answer: "Your first MTD return will be wrong, which means your second return will also be wrong as it carries forward the opening position. You will need to submit a correction. HMRC allows adjustments in subsequent returns, but if the error is significant (over £10k), you should file an amended return. This is why we recommend the parallel run for 4-6 weeks before you submit your first MTD return from the new system."
+- question: Can I use an Excel-to-MTD bridge tool instead of moving to accounting software?
+  answer: Some bridge tools exist, but they are a temporary fix, not a long-term solution. HMRC requires digital record-keeping, not just digital submission. A bridge tool lets you submit MTD returns from a spreadsheet, but you still need to maintain digital records. For an agency with more than a handful of transactions per month, proper accounting software is cheaper and more reliable in the long run.
+- question: How long does a full data migration take for a typical agency?
+  answer: For a 10-person agency with 12 months of transaction history, expect 15-25 hours of your own time plus 5-10 hours of your accountant's time if you involve them. The bank reconciliation step takes the longest. If your records are clean, you can do it in a weekend. If your spreadsheets are messy, budget a full week.
+- question: Do I need to migrate historical payroll data into the new software?
+  answer: No. Your payroll submissions to HMRC through RTI are already on HMRC's systems. You only need to set up your current employees in the new payroll module. Keep your old payroll reports in a folder for reference, but do not try to import three years of P60s and P45s into the new system. It is not necessary and it creates clutter.
+- question: What happens if my opening balances are wrong and I file an MTD return?
+  answer: Your first MTD return will be wrong, which means your second return will also be wrong as it carries forward the opening position. You will need to submit a correction. HMRC allows adjustments in subsequent returns, but if the error is significant (over £10k), you should file an amended return. This is why we recommend the parallel run for 4-6 weeks before you submit your first MTD return from the new system.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- From April 2026, agencies with self-employed or property income over £50,000 must use MTD-compatible software for digital records and quarterly updates.
+- Only migrate the current financial year's full transactions and the previous year's closing trial balance; older data stays archived.
+- Clean your chart of accounts before importing by mapping spreadsheet categories to standard income, direct costs, and overheads accounts.
+- Spreadsheets are not MTD-compliant because they cannot connect directly to HMRC's API; proper accounting software is mandatory.
+- Bad data in spreadsheets will not be fixed by new software; it will only make errors easier to report to HMRC.
 ---
-
 <h2>Why Your Spreadsheets Are a Problem Now</h2>
 
 <p>If your agency is still running on spreadsheets, you are not alone. Many agency founders I meet in Soho and Manchester's Northern Quarter are running 12-person digital agencies on a combination of Google Sheets, Excel, and memory. It worked fine when you were turning over £80k as a freelancer. It becomes a liability at £400k.</p>

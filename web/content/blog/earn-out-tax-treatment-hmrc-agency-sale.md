@@ -1,25 +1,32 @@
 ---
-title: "What Is the Tax Treatment of an Earn-Out in an Agency Sale Under Current HMRC Rules?"
-slug: "earn-out-tax-treatment-hmrc-agency-sale"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-tax-treatment-hmrc-agency-sale"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Earn-out tax treatment HMRC agency sale: 2025/26 rules"
-metaDescription: "Selling your agency with an earn-out? HMRC taxes it differently depending on structure. We cover capital gains, income treatment, and BADR eligibility"
-altText: "Two agency founders signing a sale agreement in a London office meeting room, with a calculator and documents on the table"
-image: "/blog/earn-out-tax-treatment-hmrc-agency-sale.jpg"
+title: What Is the Tax Treatment of an Earn-Out in an Agency Sale Under Current HMRC Rules?
+slug: earn-out-tax-treatment-hmrc-agency-sale
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-tax-treatment-hmrc-agency-sale
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'Earn-out tax treatment HMRC agency sale: 2025/26 rules'
+metaDescription: Selling your agency with an earn-out? HMRC taxes it differently depending on structure. We cover capital gains, income treatment, and BADR eligibility
+altText: Two agency founders signing a sale agreement in a London office meeting room, with a calculator and documents on the table
+image: /blog/earn-out-tax-treatment-hmrc-agency-sale.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/round-gold-chocolate-coins-6863286/"
-  source: "Pexels"
-h1: "What Is the Tax Treatment of an Earn-Out in an Agency Sale Under Current HMRC Rules?"
-summary: "Selling your agency with an earn-out is common, but HMRC treats the deferred consideration differently depending on how the deal is structured. This article covers the tax treatment of earn-outs under current HMRC rules, including capital gains vs income, BADR eligibility, and how to structure the deal to minimise your tax bill."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/round-gold-chocolate-coins-6863286/
+  source: Pexels
+h1: What Is the Tax Treatment of an Earn-Out in an Agency Sale Under Current HMRC Rules?
+summary: Selling your agency with an earn-out is common, but HMRC treats the deferred consideration differently depending on how the deal is structured. This article covers the tax treatment of earn-outs under current HMRC rules, including capital gains vs income, BADR eligibility, and how to structure the deal to minimise your tax bill.
+schema: ''
 faqs: []
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- HMRC treats an earn-out as capital gains if it is deferred consideration for shares, but as income if linked to ongoing services or employment.
+- Capital gains tax on earn-outs can be as low as 14% with Business Asset Disposal Relief (BADR), rising to 18% from 6 April 2026.
+- Income tax on earn-outs can reach 45% plus 2% Class 4 National Insurance, or 13.8% Employer NI if paid via employment.
+- To qualify for BADR on an earn-out, you must have held at least 5% of shares and been an officer or employee for two years before the sale.
+- 'HMRC examines the substance of the earn-out: if conditional on your personal performance, it is likely treated as income, not capital.'
 ---
-
 <h2>The Earn-Out: A Common Feature of Agency Sales</h2>
 
 <p>You have built your agency over years. Maybe a decade. The offer comes in from a larger group or a competitor. The headline price looks good. But the buyer wants to tie part of the payment to future performance. That is an earn-out.</p>

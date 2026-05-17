@@ -1,33 +1,40 @@
 ---
-title: "Should I Import My UK Car to Dubai or Sell It Before I Move?"
-slug: "import-uk-car-to-dubai-or-sell"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/import-uk-car-to-dubai-or-sell"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Import UK car to Dubai: process, costs, and tax implications"
-metaDescription: "Thinking of importing your UK car to Dubai? We cover the process, costs, modifications, and why many agency founders sell and buy locally instead."
-altText: "UK-registered car being loaded into a shipping container at a UK port for export to Dubai"
-image: "/blog/import-uk-car-to-dubai-or-sell.jpg"
+title: Should I Import My UK Car to Dubai or Sell It Before I Move?
+slug: import-uk-car-to-dubai-or-sell
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/import-uk-car-to-dubai-or-sell
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Import UK car to Dubai: process, costs, and tax implications'
+metaDescription: Thinking of importing your UK car to Dubai? We cover the process, costs, modifications, and why many agency founders sell and buy locally instead.
+altText: UK-registered car being loaded into a shipping container at a UK port for export to Dubai
+image: /blog/import-uk-car-to-dubai-or-sell.jpg
 imageCredit:
-  photographer: "George Blatchford"
-  photographerUrl: "https://www.pexels.com/@george-blatchford-2159158855"
-  sourceUrl: "https://www.pexels.com/photo/modified-peach-nissan-silvia-s14-in-southampton-35849587/"
-  source: "Pexels"
-h1: "Should I Import My UK Car to Dubai or Sell It Before I Move?"
-summary: "Moving your car from the UK to Dubai is possible, but the process is complex. Import duties, mandatory modifications, and registration requirements add up. Here is what you need to know before deciding whether to ship it or sell it."
-schema: ""
+  photographer: George Blatchford
+  photographerUrl: https://www.pexels.com/@george-blatchford-2159158855
+  sourceUrl: https://www.pexels.com/photo/modified-peach-nissan-silvia-s14-in-southampton-35849587/
+  source: Pexels
+h1: Should I Import My UK Car to Dubai or Sell It Before I Move?
+summary: Moving your car from the UK to Dubai is possible, but the process is complex. Import duties, mandatory modifications, and registration requirements add up. Here is what you need to know before deciding whether to ship it or sell it.
+schema: ''
 faqs:
-  - question: "Can I import a UK car to Dubai if it is more than five years old?"
-    answer: "Generally, no. Dubai restricts personal vehicle imports to cars less than five years old from the date of manufacture. There are exceptions for classic cars, vintage vehicles, and certain high-value collector cars, but for a standard UK car, the age limit is strict. Check with an RTA-approved shipping agent before you buy or ship anything."
-  - question: "Do I need to change the speedometer from mph to km/h?"
-    answer: "Yes. UAE law requires speed to be displayed in kilometres per hour. Many modern UK cars have digital displays that can be switched. If yours cannot, you will need a conversion sticker over the speedometer face or a replacement instrument cluster. The RTA inspection will check this."
-  - question: "Is it cheaper to import a UK car or buy a used car in Dubai?"
-    answer: "For most cars, buying locally is cheaper. Importing adds shipping, duty, VAT, modifications, and inspection costs that can total £7,000-£10,000 on a £40,000 car. The Dubai used car market is large and prices are competitive. Unless you own a rare or high-value vehicle, selling in the UK and buying in Dubai is usually the better financial decision."
-  - question: "What happens to my UK car tax and insurance when I move to Dubai?"
-    answer: "You must notify the DVLA that you are exporting the car and cancel the UK road tax. You will get a refund on any full months remaining. You must also cancel your UK insurance policy. Do not drive the car in the UK after you have declared it exported. Your UK accountant can help you with the paperwork if you are unsure."
+- question: Can I import a UK car to Dubai if it is more than five years old?
+  answer: Generally, no. Dubai restricts personal vehicle imports to cars less than five years old from the date of manufacture. There are exceptions for classic cars, vintage vehicles, and certain high-value collector cars, but for a standard UK car, the age limit is strict. Check with an RTA-approved shipping agent before you buy or ship anything.
+- question: Do I need to change the speedometer from mph to km/h?
+  answer: Yes. UAE law requires speed to be displayed in kilometres per hour. Many modern UK cars have digital displays that can be switched. If yours cannot, you will need a conversion sticker over the speedometer face or a replacement instrument cluster. The RTA inspection will check this.
+- question: Is it cheaper to import a UK car or buy a used car in Dubai?
+  answer: For most cars, buying locally is cheaper. Importing adds shipping, duty, VAT, modifications, and inspection costs that can total £7,000-£10,000 on a £40,000 car. The Dubai used car market is large and prices are competitive. Unless you own a rare or high-value vehicle, selling in the UK and buying in Dubai is usually the better financial decision.
+- question: What happens to my UK car tax and insurance when I move to Dubai?
+  answer: You must notify the DVLA that you are exporting the car and cancel the UK road tax. You will get a refund on any full months remaining. You must also cancel your UK insurance policy. Do not drive the car in the UK after you have declared it exported. Your UK accountant can help you with the paperwork if you are unsure.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Importing a UK car to Dubai costs around 5% duty plus 5% VAT on the customs value, e.g., £4,100 on a £40,000 car.
+- Your car must be less than five years old to register in Dubai, unless it's a classic or high-value vehicle.
+- Shipping a car from the UK to Dubai costs between £1,500 and £3,000, with a transit time of 10–14 days.
+- UK cars require headlight adjustments or replacements to meet UAE right-hand drive standards.
+- Selling your UK car and buying locally is often more cost-effective than importing, unless you own a high-value or rare vehicle.
 ---
-
 <p>If you are a UK agency founder relocating to Dubai, one of the practical questions you will face is what to do with your car. You can import your UK car to Dubai, or you can sell it in the UK and buy a vehicle locally. Both routes have costs, tax implications, and administrative hurdles. The right choice depends on your car's value, age, and how long you plan to stay in the UAE.</p>
 
 <p>This article covers the process for importing a UK car to Dubai, the costs involved, the modifications required, and the tax considerations you need to discuss with your accountant before you move.</p>

@@ -1,33 +1,40 @@
 ---
-title: "How Does Split Year Treatment Work If I Move to Dubai Mid-Tax Year?"
-slug: "split-year-treatment-moving-abroad-mid-year"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/split-year-treatment-moving-abroad-mid-year"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Split Year Treatment Moving Abroad Mid Year: UK Tax Guide"
-metaDescription: "If you move to Dubai mid-tax year, split year treatment determines which part of your income is taxed in the UK. Here's how the rules actually work."
-altText: "UK agency founder reviewing tax documents in a Dubai office with a view of the skyline"
-image: "/blog/split-year-treatment-moving-abroad-mid-year.jpg"
+title: How Does Split Year Treatment Work If I Move to Dubai Mid-Tax Year?
+slug: split-year-treatment-moving-abroad-mid-year
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/split-year-treatment-moving-abroad-mid-year
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Split Year Treatment Moving Abroad Mid Year: UK Tax Guide'
+metaDescription: If you move to Dubai mid-tax year, split year treatment determines which part of your income is taxed in the UK. Here's how the rules actually work.
+altText: UK agency founder reviewing tax documents in a Dubai office with a view of the skyline
+image: /blog/split-year-treatment-moving-abroad-mid-year.jpg
 imageCredit:
-  photographer: "SHVETS production"
-  photographerUrl: "https://www.pexels.com/@shvets-production"
-  sourceUrl: "https://www.pexels.com/photo/two-pills-on-a-blue-background-9742874/"
-  source: "Pexels"
-h1: "How Does Split Year Treatment Work If You Move to Dubai Mid-Tax Year?"
-summary: "Moving to Dubai in the middle of the UK tax year doesn't mean you escape UK tax on everything earned before you left. Split year treatment divides your tax year into a UK part and a non-UK part, so only income arising in the UK portion is taxable here. Here's how the rules actually apply to agency founders."
-schema: ""
+  photographer: SHVETS production
+  photographerUrl: https://www.pexels.com/@shvets-production
+  sourceUrl: https://www.pexels.com/photo/two-pills-on-a-blue-background-9742874/
+  source: Pexels
+h1: How Does Split Year Treatment Work If You Move to Dubai Mid-Tax Year?
+summary: Moving to Dubai in the middle of the UK tax year doesn't mean you escape UK tax on everything earned before you left. Split year treatment divides your tax year into a UK part and a non-UK part, so only income arising in the UK portion is taxable here. Here's how the rules actually apply to agency founders.
+schema: ''
 faqs:
-  - question: "Do I automatically get split year treatment when I move to Dubai?"
-    answer: "No. You must claim split year treatment on your UK tax return for the year of the move. You complete the residence pages (SA109) to show you were non-resident for part of the year. Without the claim, HMRC treats you as UK resident for the whole year, meaning your worldwide income is taxable in the UK."
-  - question: "Are dividends from my UK company taxable if I live in Dubai?"
-    answer: "Yes, dividends from a UK company are UK source income. They remain taxable in the UK even if you are non-resident. Split year treatment does not change this. You should plan your dividend payments before you leave, or structure them through a holding company to avoid unexpected tax bills."
-  - question: "What happens to my UK agency when I move to Dubai?"
-    answer: "Your UK company remains UK tax resident. It continues to pay corporation tax on its profits and must file annual accounts and a CT600 return. Your personal tax position changes, but the company's obligations do not. If you are the sole director, the company's management and control may shift to Dubai, which could affect its tax residence. This needs professional advice."
-  - question: "How long do I need to stay outside the UK to avoid tax on capital gains?"
-    answer: "You must remain non-resident for at least five full tax years. If you sell shares in your agency after you leave and return to the UK within five years, the gain becomes taxable in the year you return. This is the five-year rule. Plan the timing of any exit carefully if you intend to return."
+- question: Do I automatically get split year treatment when I move to Dubai?
+  answer: No. You must claim split year treatment on your UK tax return for the year of the move. You complete the residence pages (SA109) to show you were non-resident for part of the year. Without the claim, HMRC treats you as UK resident for the whole year, meaning your worldwide income is taxable in the UK.
+- question: Are dividends from my UK company taxable if I live in Dubai?
+  answer: Yes, dividends from a UK company are UK source income. They remain taxable in the UK even if you are non-resident. Split year treatment does not change this. You should plan your dividend payments before you leave, or structure them through a holding company to avoid unexpected tax bills.
+- question: What happens to my UK agency when I move to Dubai?
+  answer: Your UK company remains UK tax resident. It continues to pay corporation tax on its profits and must file annual accounts and a CT600 return. Your personal tax position changes, but the company's obligations do not. If you are the sole director, the company's management and control may shift to Dubai, which could affect its tax residence. This needs professional advice.
+- question: How long do I need to stay outside the UK to avoid tax on capital gains?
+  answer: You must remain non-resident for at least five full tax years. If you sell shares in your agency after you leave and return to the UK within five years, the gain becomes taxable in the year you return. This is the five-year rule. Plan the timing of any exit carefully if you intend to return.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Split year treatment divides your tax year into a UK part and a non-UK part, so only income arising in the UK portion is taxable here.
+- You must claim split year treatment on your tax return and meet one of HMRC's specific tests, such as Case 1 (full-time work abroad) or Case 4 (overseas home).
+- Dividends paid by your UK company after you move to Dubai remain UK source income and are taxable in the UK, even if you are non-resident.
+- Becoming non-resident is determined by the Statutory Residence Test; you do not automatically become non-resident on the day you leave the UK.
+- If you fail to qualify for split year treatment, HMRC may treat you as UK resident for the whole year, making your Dubai income taxable in the UK.
 ---
-
 <h2>You Don't Owe UK Tax on Everything After You Leave</h2>
 
 <p>Most agency founders I speak to assume that moving to Dubai halfway through the UK tax year means they pay UK tax on everything earned up to 5 April, then nothing from the day they land in the UAE. That is almost right, but the detail matters.</p>

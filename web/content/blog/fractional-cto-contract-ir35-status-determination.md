@@ -1,33 +1,40 @@
 ---
-title: "How to Write a Contract for a Fractional CTO That Passes an IR35 Status Determination"
-slug: "fractional-cto-contract-ir35-status-determination"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/fractional-cto-contract-ir35-status-determination"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Contractors and IR35"
-metaTitle: "Fractional CTO IR35 Contract: Status Determination Guide"
-metaDescription: "Writing a fractional CTO contract that passes IR35 status determination. Specific clauses, mutuality of obligation, and control tests for agency founders."
-altText: "Two agency founders reviewing a fractional CTO contract at a desk in a London office with a laptop and printed documents"
-image: "/blog/fractional-cto-contract-ir35-status-determination.jpg"
+title: How to Write a Contract for a Fractional CTO That Passes an IR35 Status Determination
+slug: fractional-cto-contract-ir35-status-determination
+canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/fractional-cto-contract-ir35-status-determination
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Contractors and IR35
+metaTitle: 'Fractional CTO IR35 Contract: Status Determination Guide'
+metaDescription: Writing a fractional CTO contract that passes IR35 status determination. Specific clauses, mutuality of obligation, and control tests for agency founders.
+altText: Two agency founders reviewing a fractional CTO contract at a desk in a London office with a laptop and printed documents
+image: /blog/fractional-cto-contract-ir35-status-determination.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/a-contract-on-brown-wooden-surface-7841411/"
-  source: "Pexels"
-h1: "How to Write a Contract for a Fractional CTO That Passes an IR35 Status Determination"
-summary: "Fractional CTOs sit in a grey area for IR35. Their contracts need specific clauses around control, substitution, and mutuality of obligation to pass a status determination. Here is what to include and what to avoid."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/a-contract-on-brown-wooden-surface-7841411/
+  source: Pexels
+h1: How to Write a Contract for a Fractional CTO That Passes an IR35 Status Determination
+summary: Fractional CTOs sit in a grey area for IR35. Their contracts need specific clauses around control, substitution, and mutuality of obligation to pass a status determination. Here is what to include and what to avoid.
+schema: ''
 faqs:
-  - question: "Can a fractional CTO ever be genuinely outside IR35?"
-    answer: "Yes, but it requires careful contract drafting and consistent working practices. The key is ensuring the CTO has control over how they deliver the work, a genuine right of substitution, and no mutuality of obligation beyond specific deliverables. Most fractional CTO engagements that fail IR35 do so because the working reality does not match the contract."
-  - question: "What happens if HMRC decides my fractional CTO is inside IR35?"
-    answer: "HMRC will issue a tax bill for the unpaid PAYE and National Insurance, plus interest and penalties. The agency is liable for these costs, not the contractor. For a 12-month engagement at £800 per day, the bill could easily exceed £50,000. You also face reputational damage and potential legal costs."
-  - question: "Should I use the CEST tool for a fractional CTO determination?"
-    answer: "CEST is a starting point, but it struggles with complex arrangements like fractional CTOs. If CEST returns \"outside IR35,\" document that result. If it returns \"undetermined\" or \"inside IR35,\" get a professional IR35 review from a specialist solicitor or accountant. Do not rely on CEST alone for these engagements."
-  - question: "Can I provide a company laptop to my fractional CTO without triggering IR35?"
-    answer: "Yes, if there is a genuine business reason. If the CTO needs access to secure systems or proprietary software, providing a laptop is reasonable. Document the reason and limit it to what is strictly necessary. Do not provide phones, cars, or other equipment that would normally go to employees."
+- question: Can a fractional CTO ever be genuinely outside IR35?
+  answer: Yes, but it requires careful contract drafting and consistent working practices. The key is ensuring the CTO has control over how they deliver the work, a genuine right of substitution, and no mutuality of obligation beyond specific deliverables. Most fractional CTO engagements that fail IR35 do so because the working reality does not match the contract.
+- question: What happens if HMRC decides my fractional CTO is inside IR35?
+  answer: HMRC will issue a tax bill for the unpaid PAYE and National Insurance, plus interest and penalties. The agency is liable for these costs, not the contractor. For a 12-month engagement at £800 per day, the bill could easily exceed £50,000. You also face reputational damage and potential legal costs.
+- question: Should I use the CEST tool for a fractional CTO determination?
+  answer: CEST is a starting point, but it struggles with complex arrangements like fractional CTOs. If CEST returns "outside IR35," document that result. If it returns "undetermined" or "inside IR35," get a professional IR35 review from a specialist solicitor or accountant. Do not rely on CEST alone for these engagements.
+- question: Can I provide a company laptop to my fractional CTO without triggering IR35?
+  answer: Yes, if there is a genuine business reason. If the CTO needs access to secure systems or proprietary software, providing a laptop is reasonable. Document the reason and limit it to what is strictly necessary. Do not provide phones, cars, or other equipment that would normally go to employees.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A fractional CTO contract must explicitly address control, substitution, and mutuality of obligation to pass an IR35 status determination.
+- Control clauses should state the CTO controls how they deliver work, with the board retaining final decision-making on strategic recommendations.
+- A genuine substitution clause is essential; the agency cannot unreasonably refuse a substitute with comparable skills and the same pay rate.
+- Mutuality of obligation means the agency is not obliged to offer work and the CTO is not obliged to accept it beyond the agreed scope.
+- Attending board meetings and influencing strategy increases IR35 risk; contracts must clarify the CTO's advisory role versus employment duties.
 ---
-
 <p>Fractional CTOs are a growing part of the agency world. You get executive-level technical leadership without the full-time salary and commitment. But these arrangements create a specific IR35 problem that most standard contractor contracts do not solve.</p>
 
 <p>The problem is this: a fractional CTO often looks like a director, acts like a director, and is treated like a director. HMRC sees that and says "that is employment, not a contract for services." The result is a tax bill that can wipe out the cost savings of going fractional in the first place.</p>

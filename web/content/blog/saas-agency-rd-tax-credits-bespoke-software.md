@@ -1,33 +1,40 @@
 ---
-title: "Can a SaaS Agency Claim R&D Tax Credits for Building Bespoke Software?"
-slug: "saas-agency-rd-tax-credits-bespoke-software"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/saas-agency-rd-tax-credits-bespoke-software"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "R&D Tax Credits for SaaS Agencies: Claiming on Bespoke"
-metaDescription: "Can your SaaS agency claim R&D tax credits for building bespoke software? We cover what qualifies, what doesn't, and how to prepare a claim that HMRC will"
-altText: "SaaS agency software developer working on bespoke code in a London office, with financial documents visible on a second monitor"
-image: "/blog/saas-agency-rd-tax-credits-bespoke-software.jpg"
+title: Can a SaaS Agency Claim R&D Tax Credits for Building Bespoke Software?
+slug: saas-agency-rd-tax-credits-bespoke-software
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/saas-agency-rd-tax-credits-bespoke-software
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'R&D Tax Credits for SaaS Agencies: Claiming on Bespoke'
+metaDescription: Can your SaaS agency claim R&D tax credits for building bespoke software? We cover what qualifies, what doesn't, and how to prepare a claim that HMRC will
+altText: SaaS agency software developer working on bespoke code in a London office, with financial documents visible on a second monitor
+image: /blog/saas-agency-rd-tax-credits-bespoke-software.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/scrabble-letters-spelling-saas-on-a-wooden-table-19867468/"
-  source: "Pexels"
-h1: "R&D Tax Credits for SaaS Agencies Building Bespoke Software"
-summary: "SaaS agencies that build bespoke software often miss out on R&D tax credits because they assume their work is just development. The reality is that many of these projects involve genuine technical uncertainty. This article explains what qualifies, what doesn't, and how to structure a claim that HMRC will accept."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/scrabble-letters-spelling-saas-on-a-wooden-table-19867468/
+  source: Pexels
+h1: R&D Tax Credits for SaaS Agencies Building Bespoke Software
+summary: SaaS agencies that build bespoke software often miss out on R&D tax credits because they assume their work is just development. The reality is that many of these projects involve genuine technical uncertainty. This article explains what qualifies, what doesn't, and how to structure a claim that HMRC will accept.
+schema: ''
 faqs:
-  - question: "What's the minimum spend on R&D for a SaaS agency to make a claim worthwhile?"
-    answer: "There's no legal minimum, but practically, we'd suggest not claiming for less than £10,000 in qualifying costs. The administrative effort and the risk of HMRC scrutiny mean that smaller claims often aren't worth the hassle. For a profitable agency, £10,000 in qualifying spend saves roughly £3,500 in corporation tax. That's meaningful, but you'll spend time preparing the claim. If your qualifying spend is under £5,000, it's probably not worth it unless it's part of a larger claim across multiple projects."
-  - question: "Can I claim R&D tax credits if my agency is loss-making?"
-    answer: "Yes, and it can be more valuable than for profitable agencies. Under the SME scheme, loss-making companies can surrender their R&D losses for a cash payment. For R&D intensive companies (where qualifying R&D spend is 30% or more of total costs), you can get up to 14.5% of the surrenderable loss as cash. For other companies, it's 10%. That means a £50,000 qualifying spend could generate £7,250 in cash. The cash is tax-free and can be a significant boost for early-stage SaaS agencies that are investing heavily in development."
-  - question: "How far back can I claim R&D tax credits for my SaaS agency?"
-    answer: "You have two years from the end of the accounting period to submit a claim. For example, if your accounting year ends on 31 March 2024, you have until 31 March 2026 to file the claim. You can also amend a previous year's corporation tax return to include an R&D claim, provided the amendment is made within 12 months of the filing deadline. If you've never claimed before, you can go back up to two accounting periods. After that, the claims are time-barred. So if you've been doing qualifying work for years, act now before you lose the ability to claim."
-  - question: "Will claiming R&D tax credits increase my chances of an HMRC investigation?"
-    answer: "It can, but the risk is manageable if your claim is properly prepared. HMRC has increased its compliance activity on R&D claims significantly since 2023. Random checks are more common, and claims over £50,000 are automatically reviewed. The key is to have a well-documented technical narrative and supporting evidence. If your claim is based on solid records and genuine technical uncertainty, an HMRC review should be straightforward. If your claim is vague or includes routine work, you're inviting problems. Work with an accountant who understands R&D to minimise the risk."
+- question: What's the minimum spend on R&D for a SaaS agency to make a claim worthwhile?
+  answer: There's no legal minimum, but practically, we'd suggest not claiming for less than £10,000 in qualifying costs. The administrative effort and the risk of HMRC scrutiny mean that smaller claims often aren't worth the hassle. For a profitable agency, £10,000 in qualifying spend saves roughly £3,500 in corporation tax. That's meaningful, but you'll spend time preparing the claim. If your qualifying spend is under £5,000, it's probably not worth it unless it's part of a larger claim across multiple projects.
+- question: Can I claim R&D tax credits if my agency is loss-making?
+  answer: Yes, and it can be more valuable than for profitable agencies. Under the SME scheme, loss-making companies can surrender their R&D losses for a cash payment. For R&D intensive companies (where qualifying R&D spend is 30% or more of total costs), you can get up to 14.5% of the surrenderable loss as cash. For other companies, it's 10%. That means a £50,000 qualifying spend could generate £7,250 in cash. The cash is tax-free and can be a significant boost for early-stage SaaS agencies that are investing heavily in development.
+- question: How far back can I claim R&D tax credits for my SaaS agency?
+  answer: You have two years from the end of the accounting period to submit a claim. For example, if your accounting year ends on 31 March 2024, you have until 31 March 2026 to file the claim. You can also amend a previous year's corporation tax return to include an R&D claim, provided the amendment is made within 12 months of the filing deadline. If you've never claimed before, you can go back up to two accounting periods. After that, the claims are time-barred. So if you've been doing qualifying work for years, act now before you lose the ability to claim.
+- question: Will claiming R&D tax credits increase my chances of an HMRC investigation?
+  answer: It can, but the risk is manageable if your claim is properly prepared. HMRC has increased its compliance activity on R&D claims significantly since 2023. Random checks are more common, and claims over £50,000 are automatically reviewed. The key is to have a well-documented technical narrative and supporting evidence. If your claim is based on solid records and genuine technical uncertainty, an HMRC review should be straightforward. If your claim is vague or includes routine work, you're inviting problems. Work with an accountant who understands R&D to minimise the risk.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- SaaS agencies building bespoke software can claim R&D tax credits if the work involved technical uncertainty not solvable by standard industry practice.
+- Qualifying R&D includes developing novel algorithms, custom integrations, or data processing solutions with no off-the-shelf alternative.
+- Routine web development using established methods, such as building Shopify stores or integrating Stripe, does not qualify for R&D tax credits.
+- HMRC's R&D test requires a project to seek an advance in science or technology by resolving scientific or technological uncertainty.
+- SME R&D relief and the RDEC scheme are the two main R&D tax credit routes, with eligibility depending on your agency's size and circumstances.
 ---
-
 <p>If your SaaS agency builds bespoke software for clients, you might be leaving thousands of pounds on the table. R&D tax credits aren't just for pharmaceutical companies or hardware engineers. They apply to software development too, provided the work involves technical uncertainty.</p>
 
 <p>The challenge is that most agency founders don't think their work qualifies. They assume "R&D" means lab coats and petri dishes. In reality, HMRC's definition covers projects where you had to overcome technical challenges that weren't solvable by standard industry practice. If you've ever built a custom integration, developed a novel algorithm, or solved a data processing problem that had no off-the-shelf solution, you've probably done R&D.</p>

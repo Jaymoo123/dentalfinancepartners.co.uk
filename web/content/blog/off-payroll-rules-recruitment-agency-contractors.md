@@ -1,33 +1,40 @@
 ---
-title: "Off-Payroll Rules for Agencies Using Recruitment Firms: Who Holds the Liability?"
-slug: "off-payroll-rules-recruitment-agency-contractors"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/off-payroll-rules-recruitment-agency-contractors"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Contractors and IR35"
-metaTitle: "Off-Payroll Rules for Agencies Using Recruitment Firms"
-metaDescription: "Who holds the IR35 liability when your agency uses a recruitment firm to hire contractors? We explain the rules, the fee-payer definition, and how"
-altText: "Two agency founders in a Shoreditch co-working space reviewing a contractor agreement with their ICAEW-qualified accountant"
-image: "/blog/off-payroll-rules-recruitment-agency-contractors.jpg"
+title: 'Off-Payroll Rules for Agencies Using Recruitment Firms: Who Holds the Liability?'
+slug: off-payroll-rules-recruitment-agency-contractors
+canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/off-payroll-rules-recruitment-agency-contractors
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Contractors and IR35
+metaTitle: Off-Payroll Rules for Agencies Using Recruitment Firms
+metaDescription: Who holds the IR35 liability when your agency uses a recruitment firm to hire contractors? We explain the rules, the fee-payer definition, and how
+altText: Two agency founders in a Shoreditch co-working space reviewing a contractor agreement with their ICAEW-qualified accountant
+image: /blog/off-payroll-rules-recruitment-agency-contractors.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/scrabble-letters-spelling-rules-on-a-wooden-table-19856614/"
-  source: "Pexels"
-h1: "Off-Payroll Rules for Agencies Engaging Contractors via Recruitment Firms"
-summary: "When your agency hires contractors through a recruitment firm, the off-payroll rules still apply — but the liability can shift depending on who pays the contractor’s intermediary. We explain how the fee-payer rules work, what happens when the agency is deemed the end-client, and how to structure engagements to avoid an unexpected tax bill."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/scrabble-letters-spelling-rules-on-a-wooden-table-19856614/
+  source: Pexels
+h1: Off-Payroll Rules for Agencies Engaging Contractors via Recruitment Firms
+summary: When your agency hires contractors through a recruitment firm, the off-payroll rules still apply — but the liability can shift depending on who pays the contractor’s intermediary. We explain how the fee-payer rules work, what happens when the agency is deemed the end-client, and how to structure engagements to avoid an unexpected tax bill.
+schema: ''
 faqs:
-  - question: "If my agency uses a recruitment firm, am I still responsible for IR35 status determinations?"
-    answer: "Yes, in almost all cases. Your agency is the end-client that receives the benefit of the contractor's work. You are responsible for determining the contractor's IR35 status and issuing a Status Determination Statement (SDS), regardless of whether the recruitment firm handles the payments. If you fail to take reasonable care, the liability for unpaid tax can shift back to your agency."
-  - question: "Can the recruitment firm be the end-client for IR35 purposes?"
-    answer: "Almost never. The end-client is the organisation that controls the work and receives the benefit. If your agency decides what the contractor works on, where they work, and how they are managed, you are the end-client. Some recruitment firms try to claim they are the end-client to avoid liability, but HMRC will look at the reality of the arrangement, not the contract wording."
-  - question: "What happens if the recruitment firm refuses to handle PAYE for an inside-IR35 contractor?"
-    answer: "You have two options. First, restructure the engagement so your agency pays the contractor's intermediary directly, making you the fee-payer. You then handle the PAYE and NI deductions yourself. Second, find a different recruitment firm that is willing to handle the deductions. Do not proceed with the engagement without someone handling the tax — that creates a direct liability for your agency."
-  - question: "Does the small company exemption apply if my agency uses a recruitment firm?"
-    answer: "Yes, if your agency qualifies as a small company (turnover under £10.2m, balance sheet under £5.1m, fewer than 50 employees). The exemption means the contractor's own limited company bears the IR35 responsibility, not your agency. But be careful: if you grow past the threshold during the engagement, the rules shift. And even if exempt, you should still take reasonable care to avoid the contractor coming after you later."
+- question: If my agency uses a recruitment firm, am I still responsible for IR35 status determinations?
+  answer: Yes, in almost all cases. Your agency is the end-client that receives the benefit of the contractor's work. You are responsible for determining the contractor's IR35 status and issuing a Status Determination Statement (SDS), regardless of whether the recruitment firm handles the payments. If you fail to take reasonable care, the liability for unpaid tax can shift back to your agency.
+- question: Can the recruitment firm be the end-client for IR35 purposes?
+  answer: Almost never. The end-client is the organisation that controls the work and receives the benefit. If your agency decides what the contractor works on, where they work, and how they are managed, you are the end-client. Some recruitment firms try to claim they are the end-client to avoid liability, but HMRC will look at the reality of the arrangement, not the contract wording.
+- question: What happens if the recruitment firm refuses to handle PAYE for an inside-IR35 contractor?
+  answer: You have two options. First, restructure the engagement so your agency pays the contractor's intermediary directly, making you the fee-payer. You then handle the PAYE and NI deductions yourself. Second, find a different recruitment firm that is willing to handle the deductions. Do not proceed with the engagement without someone handling the tax — that creates a direct liability for your agency.
+- question: Does the small company exemption apply if my agency uses a recruitment firm?
+  answer: 'Yes, if your agency qualifies as a small company (turnover under £10.2m, balance sheet under £5.1m, fewer than 50 employees). The exemption means the contractor''s own limited company bears the IR35 responsibility, not your agency. But be careful: if you grow past the threshold during the engagement, the rules shift. And even if exempt, you should still take reasonable care to avoid the contractor coming after you later.'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- If your agency is the end-client, you must issue a compliant Status Determination Statement or risk liability for unpaid tax even if a recruitment firm pays the contractor.
+- When a recruitment firm pays the contractor's intermediary, they handle PAYE and NI deductions only if your agency has correctly determined IR35 status and issued an SDS.
+- Failing to take reasonable care in determining IR35 status shifts the tax liability to your agency, regardless of who is the fee-payer in the chain.
+- 'Small companies exempt from off-payroll rules must meet two of three criteria: turnover under £10.2m, balance sheet under £5.1m, or fewer than 50 employees.'
+- The end-client is always the organisation benefiting from the contractor's work, making your agency responsible for status determination even with a recruitment firm involved.
 ---
-
 <h2>Who Bears the IR35 Risk When a Recruitment Firm Is Involved?</h2>
 
 <p>You run a 15-person digital agency in Manchester. You need a senior developer for a six-month project. You call a recruitment firm, they find you a contractor who operates through their own limited company. You sign a contract with the recruitment firm, and you pay the recruitment firm. The recruitment firm pays the contractor.</p>

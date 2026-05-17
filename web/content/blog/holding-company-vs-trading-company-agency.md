@@ -1,33 +1,40 @@
 ---
-title: "Holding Company vs Trading Company for Agencies: What's the Difference?"
-slug: "holding-company-vs-trading-company-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/holding-company-vs-trading-company-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "Holding Company vs Trading Company: Agency Choice"
-metaDescription: "Holding company vs trading company for agency founders. Tax, asset protection, and exit planning differences explained with real numbers."
-altText: "Two agency founders reviewing a holding company structure diagram with their accountant in a Manchester office"
-image: "/blog/holding-company-vs-trading-company-agency.jpg"
+title: 'Holding Company vs Trading Company for Agencies: What''s the Difference?'
+slug: holding-company-vs-trading-company-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/holding-company-vs-trading-company-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Incorporation and Structure
+metaTitle: 'Holding Company vs Trading Company: Agency Choice'
+metaDescription: Holding company vs trading company for agency founders. Tax, asset protection, and exit planning differences explained with real numbers.
+altText: Two agency founders reviewing a holding company structure diagram with their accountant in a Manchester office
+image: /blog/holding-company-vs-trading-company-agency.jpg
 imageCredit:
-  photographer: "Leeloo The First"
-  photographerUrl: "https://www.pexels.com/@leeloothefirst"
-  sourceUrl: "https://www.pexels.com/photo/printout-graphs-on-a-clipboard-beside-a-laptop-7887822/"
-  source: "Pexels"
-h1: "Holding Company vs Trading Company for Agencies: What's the Difference?"
-summary: "A holding company owns shares in a trading company but doesn't trade itself. This structure can protect assets, save tax on exit, and simplify group ownership. But it's not right for every agency."
-schema: ""
+  photographer: Leeloo The First
+  photographerUrl: https://www.pexels.com/@leeloothefirst
+  sourceUrl: https://www.pexels.com/photo/printout-graphs-on-a-clipboard-beside-a-laptop-7887822/
+  source: Pexels
+h1: 'Holding Company vs Trading Company for Agencies: What''s the Difference?'
+summary: A holding company owns shares in a trading company but doesn't trade itself. This structure can protect assets, save tax on exit, and simplify group ownership. But it's not right for every agency.
+schema: ''
 faqs:
-  - question: "Can I transfer my existing agency into a holding company without triggering a tax charge?"
-    answer: "Yes, if done correctly. A share-for-share exchange under TCGA 1992 Section 135 is tax-neutral. You exchange your trading company shares for shares in the new holding company. No capital gain arises at that point. The holding company inherits the base cost of the trading company shares. You will need a solicitor or accountant to handle the paperwork properly."
-  - question: "Does a holding company need to file its own accounts and tax return?"
-    answer: "Yes. Each company in the group files separate annual accounts at Companies House and a separate CT600 corporation tax return with HMRC. If the group exceeds certain size thresholds (turnover over £10.2m, balance sheet over £5.1m, or more than 50 employees), you also need group accounts. Most agencies below £5m turnover do not need group accounts."
-  - question: "Can I pay myself from the holding company instead of the trading company?"
-    answer: "You can, but the mechanics matter. The trading company pays tax-free dividends up to the holding company. The holding company then pays dividends to you personally. You pay dividend tax at your marginal rate on those personal dividends. Alternatively, the holding company can employ you, but that creates payroll costs. Most founders keep their salary in the trading company and take dividends from the holding company."
-  - question: "Does a holding company structure protect my personal assets from agency liabilities?"
-    answer: "It protects the assets held within the holding company from claims against the trading company. Your personal assets are already separate from both companies if you run a limited company properly. The holding company structure adds a second layer of separation between the trading company's creditors and the accumulated reserves in the holding company. It is not absolute protection, but it creates a meaningful legal barrier."
+- question: Can I transfer my existing agency into a holding company without triggering a tax charge?
+  answer: Yes, if done correctly. A share-for-share exchange under TCGA 1992 Section 135 is tax-neutral. You exchange your trading company shares for shares in the new holding company. No capital gain arises at that point. The holding company inherits the base cost of the trading company shares. You will need a solicitor or accountant to handle the paperwork properly.
+- question: Does a holding company need to file its own accounts and tax return?
+  answer: Yes. Each company in the group files separate annual accounts at Companies House and a separate CT600 corporation tax return with HMRC. If the group exceeds certain size thresholds (turnover over £10.2m, balance sheet over £5.1m, or more than 50 employees), you also need group accounts. Most agencies below £5m turnover do not need group accounts.
+- question: Can I pay myself from the holding company instead of the trading company?
+  answer: You can, but the mechanics matter. The trading company pays tax-free dividends up to the holding company. The holding company then pays dividends to you personally. You pay dividend tax at your marginal rate on those personal dividends. Alternatively, the holding company can employ you, but that creates payroll costs. Most founders keep their salary in the trading company and take dividends from the holding company.
+- question: Does a holding company structure protect my personal assets from agency liabilities?
+  answer: It protects the assets held within the holding company from claims against the trading company. Your personal assets are already separate from both companies if you run a limited company properly. The holding company structure adds a second layer of separation between the trading company's creditors and the accumulated reserves in the holding company. It is not absolute protection, but it creates a meaningful legal barrier.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A holding company owns shares in a trading company but does not trade itself, protecting assets from operational risks.
+- Separating cash and IP into a holding company creates a legal barrier against creditors of the trading company.
+- Selling shares in the holding company rather than the trading company can qualify for Business Asset Disposal Relief at 14% on the first £1m of gains.
+- Holding companies are common for agencies turning over £500k to £5m, not just large PLCs or private equity portfolios.
+- A group structure allows the holding company to receive dividends from the trading company tax-efficiently within the group.
 ---
-
 <h2>What Is a Holding Company, and What Is a Trading Company?</h2>
 
 <p>If you own an agency and someone mentions a "holding company structure," you probably picture a corporate group with multiple subsidiaries. Maybe you think of big PLCs or private equity portfolios. But holding companies are common in much smaller businesses too — including agencies turning over £500k to £5m.</p>

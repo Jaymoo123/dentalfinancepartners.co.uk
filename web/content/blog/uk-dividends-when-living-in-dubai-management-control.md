@@ -1,33 +1,40 @@
 ---
-title: "UK Dividends When Living in Dubai: Why HMRC Can Still Tax Them If Your Agency Is UK-Managed"
-slug: "uk-dividends-when-living-in-dubai-management-control"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-dividends-when-living-in-dubai-management-control"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK Dividends When Living in Dubai: Management Control & HMRC"
-metaDescription: "Dividends from your UK agency aren't automatically tax-free if you move to Dubai. HMRC can reclassify them if central management and control stays"
-altText: "UK agency founder reviewing documents at a desk in a Dubai office with a laptop and coffee"
-image: "/blog/uk-dividends-when-living-in-dubai-management-control.jpg"
+title: 'UK Dividends When Living in Dubai: Why HMRC Can Still Tax Them If Your Agency Is UK-Managed'
+slug: uk-dividends-when-living-in-dubai-management-control
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-dividends-when-living-in-dubai-management-control
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK Dividends When Living in Dubai: Management Control & HMRC'
+metaDescription: Dividends from your UK agency aren't automatically tax-free if you move to Dubai. HMRC can reclassify them if central management and control stays
+altText: UK agency founder reviewing documents at a desk in a Dubai office with a laptop and coffee
+image: /blog/uk-dividends-when-living-in-dubai-management-control.jpg
 imageCredit:
-  photographer: "Subbu Rayan"
-  photographerUrl: "https://www.pexels.com/@subbu-rayan-1007049269"
-  sourceUrl: "https://www.pexels.com/photo/aerial-view-of-residential-buildings-in-dubai-31771223/"
-  source: "Pexels"
-h1: "UK Dividends When Living in Dubai: Why HMRC Can Still Tax Them If Your Agency Is UK-Managed"
-summary: "Moving to Dubai doesn't automatically make your UK agency dividends tax-free. HMRC can reclassify them as trading income if your agency's central management and control remains in the UK. Here's what that means and how to structure your move properly."
-schema: ""
+  photographer: Subbu Rayan
+  photographerUrl: https://www.pexels.com/@subbu-rayan-1007049269
+  sourceUrl: https://www.pexels.com/photo/aerial-view-of-residential-buildings-in-dubai-31771223/
+  source: Pexels
+h1: 'UK Dividends When Living in Dubai: Why HMRC Can Still Tax Them If Your Agency Is UK-Managed'
+summary: Moving to Dubai doesn't automatically make your UK agency dividends tax-free. HMRC can reclassify them as trading income if your agency's central management and control remains in the UK. Here's what that means and how to structure your move properly.
+schema: ''
 faqs:
-  - question: "Can I receive tax-free dividends from my UK agency if I move to Dubai?"
-    answer: "Not automatically. The UK-UAE treaty can exempt dividends from UK tax, but only if your agency's central management and control is genuinely outside the UK. If HMRC determines that strategic decisions are still made in the UK, they can reclassify dividends as trading income and tax them at your marginal rate. You need to demonstrate that the company is genuinely managed and controlled from the UAE."
-  - question: "What is \"central management and control\" and why does it matter?"
-    answer: "Central management and control (CMC) is where a company's real strategic decisions are made. It is not the same as where the company is registered. HMRC uses CMC to determine a company's tax residence. If your UK agency's CMC remains in the UK, the company is UK tax-resident, and dividends are subject to UK tax regardless of where you live personally. Moving CMC requires more than just relocating yourself."
-  - question: "How does HMRC find out where my agency is managed?"
-    answer: "HMRC requests specific evidence during an enquiry: board meeting minutes, records of strategic decisions, bank mandates, director locations, employment contracts, and correspondence patterns. They also use data from Companies House, bank records, and international information-sharing agreements. If the bulk of evidence points to UK management, they will challenge your position."
-  - question: "What happens if HMRC reclassifies my dividends as trading income?"
-    answer: "You owe tax at your marginal UK income tax rate on the full amount. For a higher-rate taxpayer, that is 40% (or 45% for additional rate). You also lose the dividend allowance and the 8.75%/33.75% dividend rates. HMRC will add interest from the original payment date and may charge penalties if they consider the arrangement was not disclosed properly. The total bill can be substantial."
+- question: Can I receive tax-free dividends from my UK agency if I move to Dubai?
+  answer: Not automatically. The UK-UAE treaty can exempt dividends from UK tax, but only if your agency's central management and control is genuinely outside the UK. If HMRC determines that strategic decisions are still made in the UK, they can reclassify dividends as trading income and tax them at your marginal rate. You need to demonstrate that the company is genuinely managed and controlled from the UAE.
+- question: What is "central management and control" and why does it matter?
+  answer: Central management and control (CMC) is where a company's real strategic decisions are made. It is not the same as where the company is registered. HMRC uses CMC to determine a company's tax residence. If your UK agency's CMC remains in the UK, the company is UK tax-resident, and dividends are subject to UK tax regardless of where you live personally. Moving CMC requires more than just relocating yourself.
+- question: How does HMRC find out where my agency is managed?
+  answer: 'HMRC requests specific evidence during an enquiry: board meeting minutes, records of strategic decisions, bank mandates, director locations, employment contracts, and correspondence patterns. They also use data from Companies House, bank records, and international information-sharing agreements. If the bulk of evidence points to UK management, they will challenge your position.'
+- question: What happens if HMRC reclassifies my dividends as trading income?
+  answer: You owe tax at your marginal UK income tax rate on the full amount. For a higher-rate taxpayer, that is 40% (or 45% for additional rate). You also lose the dividend allowance and the 8.75%/33.75% dividend rates. HMRC will add interest from the original payment date and may charge penalties if they consider the arrangement was not disclosed properly. The total bill can be substantial.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- HMRC can reclassify dividends from your UK agency as trading income if the company's central management and control remains in the UK, even if you live in Dubai.
+- The UK-UAE double taxation treaty does not automatically exempt dividends from UK tax; HMRC first tests where the agency's strategic decisions are made.
+- If you continue to run your UK agency from Dubai as its sole director, HMRC may argue the company is dual-resident and reclassify dividends as remuneration.
+- Reclassified dividends are taxed at your UK marginal rate up to 45%, plus loss of personal allowance, not at the lower dividend tax rates.
+- To protect your tax position, you must demonstrate that the agency's central management and control has genuinely moved to the UAE with proper documentation.
 ---
-
 <p>You move to Dubai. You set up your life there. You stop paying UK income tax on your salary. And you assume the dividends your UK agency pays you are tax-free too, because the UK-UAE double taxation treaty says so.</p>
 
 <p>That assumption can cost you tens of thousands of pounds in back taxes, interest, and penalties.</p>

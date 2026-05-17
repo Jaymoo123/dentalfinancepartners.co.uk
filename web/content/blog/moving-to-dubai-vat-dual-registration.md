@@ -1,33 +1,40 @@
 ---
-title: "Moving to Dubai with a UK Agency: The VAT Registration Headache of Dual Filing Requirements"
-slug: "moving-to-dubai-vat-dual-registration"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/moving-to-dubai-vat-dual-registration"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Moving to Dubai VAT Dual Registration: What Agency Founders"
-metaDescription: "Moving to Dubai with a UK agency? Keeping UK clients may mean dual VAT registration. Here is what you need to know before you move."
-altText: "Agency founder reviewing VAT paperwork in a Dubai office with laptop and documents"
-image: "/blog/moving-to-dubai-vat-dual-registration.jpg"
+title: 'Moving to Dubai with a UK Agency: The VAT Registration Headache of Dual Filing Requirements'
+slug: moving-to-dubai-vat-dual-registration
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/moving-to-dubai-vat-dual-registration
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Moving to Dubai VAT Dual Registration: What Agency Founders'
+metaDescription: Moving to Dubai with a UK agency? Keeping UK clients may mean dual VAT registration. Here is what you need to know before you move.
+altText: Agency founder reviewing VAT paperwork in a Dubai office with laptop and documents
+image: /blog/moving-to-dubai-vat-dual-registration.jpg
 imageCredit:
-  photographer: "Vlad Deep"
-  photographerUrl: "https://www.pexels.com/@vlad-deep-29415806"
-  sourceUrl: "https://www.pexels.com/photo/moving-train-on-a-track-between-city-buildings-14528591/"
-  source: "Pexels"
-h1: "Moving to Dubai with a UK Agency: The VAT Registration Headache of Dual Filing Requirements"
-summary: "If you move to Dubai but keep your UK agency running, you may need to maintain UK VAT registration while also registering for UAE VAT. This dual filing requirement catches many founders off guard. Here is how to handle it."
-schema: ""
+  photographer: Vlad Deep
+  photographerUrl: https://www.pexels.com/@vlad-deep-29415806
+  sourceUrl: https://www.pexels.com/photo/moving-train-on-a-track-between-city-buildings-14528591/
+  source: Pexels
+h1: 'Moving to Dubai with a UK Agency: The VAT Registration Headache of Dual Filing Requirements'
+summary: If you move to Dubai but keep your UK agency running, you may need to maintain UK VAT registration while also registering for UAE VAT. This dual filing requirement catches many founders off guard. Here is how to handle it.
+schema: ''
 faqs:
-  - question: "Do I need to deregister for UK VAT if I move to Dubai?"
-    answer: "Not necessarily. If your UK agency still supplies UK clients and has UK substance (office, staff, bank account), you likely need to keep UK VAT registration. Deregistration is only possible if your UK taxable turnover drops below £90,000 and you stop making taxable supplies in the UK. Moving your personal residence does not automatically trigger deregistration."
-  - question: "Will the UAE tax authority require me to register for VAT if I live in Dubai?"
-    answer: "Yes, if your business is managed from the UAE and your taxable supplies exceed AED 375,000 per year. The FTA looks at where decisions are made and where the business is controlled. If you are the sole director and work from Dubai, the FTA will likely consider your business UAE-established, even if your clients are in the UK."
-  - question: "Can I charge UK VAT from Dubai?"
-    answer: "Only if your business remains UK-established for VAT purposes. If HMRC considers your business UK-established, you charge 20% UK VAT. If the FTA considers your business UAE-established, you should charge 5% UAE VAT. You cannot pick and choose. The correct VAT rate depends on where your business is established, not where you personally live."
-  - question: "What happens if I ignore the dual VAT registration requirement?"
-    answer: "You risk penalties from both HMRC and the FTA. HMRC can charge penalties for incorrect returns or late filing. The FTA can impose penalties of up to AED 20,000 for late registration and AED 1,000 per month for late returns. Both authorities can pursue you personally, especially if you are the director. The penalties compound quickly and are not easily resolved."
+- question: Do I need to deregister for UK VAT if I move to Dubai?
+  answer: Not necessarily. If your UK agency still supplies UK clients and has UK substance (office, staff, bank account), you likely need to keep UK VAT registration. Deregistration is only possible if your UK taxable turnover drops below £90,000 and you stop making taxable supplies in the UK. Moving your personal residence does not automatically trigger deregistration.
+- question: Will the UAE tax authority require me to register for VAT if I live in Dubai?
+  answer: Yes, if your business is managed from the UAE and your taxable supplies exceed AED 375,000 per year. The FTA looks at where decisions are made and where the business is controlled. If you are the sole director and work from Dubai, the FTA will likely consider your business UAE-established, even if your clients are in the UK.
+- question: Can I charge UK VAT from Dubai?
+  answer: Only if your business remains UK-established for VAT purposes. If HMRC considers your business UK-established, you charge 20% UK VAT. If the FTA considers your business UAE-established, you should charge 5% UAE VAT. You cannot pick and choose. The correct VAT rate depends on where your business is established, not where you personally live.
+- question: What happens if I ignore the dual VAT registration requirement?
+  answer: You risk penalties from both HMRC and the FTA. HMRC can charge penalties for incorrect returns or late filing. The FTA can impose penalties of up to AED 20,000 for late registration and AED 1,000 per month for late returns. Both authorities can pursue you personally, especially if you are the director. The penalties compound quickly and are not easily resolved.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Moving your personal residence to Dubai does not cancel your UK VAT registration if your agency remains UK-established with a UK office, bank account, or employees.
+- If your UK taxable turnover exceeds £90,000, you must maintain UK VAT registration regardless of where you live, as VAT is based on customer location and business establishment.
+- As a UAE resident, you may need to register for UAE VAT if your taxable supplies exceed AED 375,000 (approx. £78,000), even if your clients are in the UK.
+- Supplies made while you are physically in Dubai could be treated as UAE supplies subject to 5% VAT, creating a conflict if UK clients expect 20% UK VAT invoices.
+- Dual VAT registration means filing separate returns and meeting deadlines for both HMRC and the UAE FTA, with penalties for non-compliance.
 ---
-
 <p>You have made the decision. You are moving to Dubai. The tax-free income, the lifestyle, the time zone that works for both London and Singapore. But your UK agency is not shutting down. You still have clients in Manchester, Bristol, and Soho. And that is where the headache starts.</p>
 
 <p>Most agency founders assume that once they are a UAE resident, their UK tax obligations disappear. The reality is more complicated. Specifically around VAT.</p>

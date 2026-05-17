@@ -1,33 +1,40 @@
 ---
-title: "UK ISA When Moving Abroad: The 30-Day Rule That Lets You Keep Your Tax-Free Status"
-slug: "uk-isa-when-moving-abroad-30-day-rule"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-isa-when-moving-abroad-30-day-rule"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK ISA When Moving Abroad: The 30-Day Rule Explained"
-metaDescription: "Moving abroad doesn't mean you must sell your UK ISA. The 30-day rule lets you keep tax-free status after leaving. Here's how it works for agency founders."
-altText: "UK ISA statement documents and a passport on a desk, representing moving abroad with investments"
-image: "/blog/uk-isa-when-moving-abroad-30-day-rule.jpg"
+title: 'UK ISA When Moving Abroad: The 30-Day Rule That Lets You Keep Your Tax-Free Status'
+slug: uk-isa-when-moving-abroad-30-day-rule
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-isa-when-moving-abroad-30-day-rule
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK ISA When Moving Abroad: The 30-Day Rule Explained'
+metaDescription: Moving abroad doesn't mean you must sell your UK ISA. The 30-day rule lets you keep tax-free status after leaving. Here's how it works for agency founders.
+altText: UK ISA statement documents and a passport on a desk, representing moving abroad with investments
+image: /blog/uk-isa-when-moving-abroad-30-day-rule.jpg
 imageCredit:
-  photographer: "Cara Denison"
-  photographerUrl: "https://www.pexels.com/@cara-denison-886614634"
-  sourceUrl: "https://www.pexels.com/photo/aerial-view-of-historic-oxford-city-center-36145597/"
-  source: "Pexels"
-h1: "UK ISA When Moving Abroad: The 30-Day Rule That Lets You Keep Your ISA Tax-Free for Longer"
-summary: "Most agency founders assume they must sell their ISAs when leaving the UK. But the 30-day rule gives you a critical window to keep your ISA tax-free after relocating. Here's what you need to know before you move."
-schema: ""
+  photographer: Cara Denison
+  photographerUrl: https://www.pexels.com/@cara-denison-886614634
+  sourceUrl: https://www.pexels.com/photo/aerial-view-of-historic-oxford-city-center-36145597/
+  source: Pexels
+h1: 'UK ISA When Moving Abroad: The 30-Day Rule That Lets You Keep Your ISA Tax-Free for Longer'
+summary: Most agency founders assume they must sell their ISAs when leaving the UK. But the 30-day rule gives you a critical window to keep your ISA tax-free after relocating. Here's what you need to know before you move.
+schema: ''
 faqs:
-  - question: "Can I contribute to my UK ISA after moving abroad?"
-    answer: "No. After the first 30 days of becoming non-UK resident, you cannot make new contributions to your ISA. Any contribution made after that window is treated as void by HMRC and may attract penalties. You can still manage existing investments, switch funds, and transfer between providers within the ISA wrapper."
-  - question: "What happens to my ISA if I move to Dubai?"
-    answer: "Your ISA remains open and continues to grow tax-free from a UK perspective. Because the UAE has no income tax or capital gains tax, the growth is also tax-free in Dubai. You cannot make new contributions after the 30-day window, but your existing investments can grow indefinitely. This makes Dubai one of the best destinations for keeping your UK ISA."
-  - question: "Do I need to tell HMRC I am keeping my ISA when I move abroad?"
-    answer: "You do not need to notify HMRC specifically about your ISA. But you should inform HMRC of your change of residence using form P85 or through your self-assessment tax return. Your ISA provider may also ask for your new address and may have its own rules about non-resident clients. Check with your provider before you move."
-  - question: "Can I transfer my UK ISA to a provider that accepts non-residents?"
-    answer: "Yes. You can transfer your ISA to another UK provider, even after you have moved abroad, as long as you do it as a formal ISA transfer. The transfer must be between ISA providers, not a withdrawal and recontribution. Most major providers like Hargreaves Lansdown, AJ Bell, and Interactive Investor accept non-resident clients, but check their terms before initiating the transfer."
+- question: Can I contribute to my UK ISA after moving abroad?
+  answer: No. After the first 30 days of becoming non-UK resident, you cannot make new contributions to your ISA. Any contribution made after that window is treated as void by HMRC and may attract penalties. You can still manage existing investments, switch funds, and transfer between providers within the ISA wrapper.
+- question: What happens to my ISA if I move to Dubai?
+  answer: Your ISA remains open and continues to grow tax-free from a UK perspective. Because the UAE has no income tax or capital gains tax, the growth is also tax-free in Dubai. You cannot make new contributions after the 30-day window, but your existing investments can grow indefinitely. This makes Dubai one of the best destinations for keeping your UK ISA.
+- question: Do I need to tell HMRC I am keeping my ISA when I move abroad?
+  answer: You do not need to notify HMRC specifically about your ISA. But you should inform HMRC of your change of residence using form P85 or through your self-assessment tax return. Your ISA provider may also ask for your new address and may have its own rules about non-resident clients. Check with your provider before you move.
+- question: Can I transfer my UK ISA to a provider that accepts non-residents?
+  answer: Yes. You can transfer your ISA to another UK provider, even after you have moved abroad, as long as you do it as a formal ISA transfer. The transfer must be between ISA providers, not a withdrawal and recontribution. Most major providers like Hargreaves Lansdown, AJ Bell, and Interactive Investor accept non-resident clients, but check their terms before initiating the transfer.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- You can keep your UK ISA open and tax-free for years after moving abroad, provided you follow HMRC's 30-day rule.
+- For the first 30 days after leaving the UK, your ISA retains full tax-free status regardless of your new tax residence.
+- After 30 days, you cannot make new ISA contributions, but existing investments remain tax-free in the UK and may be tax-free in your new country if it has no capital gains tax, like the UAE.
+- Make your final ISA contribution before leaving the UK, up to the £20,000 annual allowance for 2025/26, to maximise tax-free growth.
+- Contributing to an ISA after being non-resident for more than 30 days voids the contribution and may incur HMRC penalties.
 ---
-
 <p>If you're a UK agency founder planning a move to Dubai, the UAE, or anywhere else outside the UK, you've probably been told you need to sell your ISAs before you leave. That is bad advice. It is also wrong in most cases.</p>
 
 <p>The truth is more useful. You can keep your UK ISA open and tax-free for years after moving abroad, provided you follow one specific rule. HMRC calls it the "30-day rule". Understanding this rule could save you thousands in tax and keep your investment strategy intact.</p>

@@ -1,33 +1,40 @@
 ---
-title: "How to Handle VAT on a One-Off US Client Project Without Registering for US Tax"
-slug: "vat-one-off-us-client-project-uk-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/vat-one-off-us-client-project-uk-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "VAT on one-off US client project: UK agency guide"
-metaDescription: "UK agency landed a single US client project? Here's how to handle VAT, avoid US tax registration, and sidestep permanent establishment risk. Real numbers"
-altText: "UK agency founder reviewing a US client contract on a laptop in a London office with a coffee"
-image: "/blog/vat-one-off-us-client-project-uk-agency.jpg"
+title: How to Handle VAT on a One-Off US Client Project Without Registering for US Tax
+slug: vat-one-off-us-client-project-uk-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/vat-one-off-us-client-project-uk-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'VAT on one-off US client project: UK agency guide'
+metaDescription: UK agency landed a single US client project? Here's how to handle VAT, avoid US tax registration, and sidestep permanent establishment risk. Real numbers
+altText: UK agency founder reviewing a US client contract on a laptop in a London office with a coffee
+image: /blog/vat-one-off-us-client-project-uk-agency.jpg
 imageCredit:
-  photographer: "Sueda Dilli"
-  photographerUrl: "https://www.pexels.com/@suedadilli"
-  sourceUrl: "https://www.pexels.com/photo/hand-turning-ornate-brass-door-handle-close-up-30992408/"
-  source: "Pexels"
-h1: "How to Handle VAT on a One-Off US Client Project for Your UK Agency Without Registering for US Tax"
-summary: "A single US project doesn't mean you need to register for US tax. But the VAT treatment and permanent establishment risk need careful handling. Here's what UK agency founders need to know before invoicing that first American client."
-schema: ""
+  photographer: Sueda Dilli
+  photographerUrl: https://www.pexels.com/@suedadilli
+  sourceUrl: https://www.pexels.com/photo/hand-turning-ornate-brass-door-handle-close-up-30992408/
+  source: Pexels
+h1: How to Handle VAT on a One-Off US Client Project for Your UK Agency Without Registering for US Tax
+summary: A single US project doesn't mean you need to register for US tax. But the VAT treatment and permanent establishment risk need careful handling. Here's what UK agency founders need to know before invoicing that first American client.
+schema: ''
 faqs:
-  - question: "Do I need to charge VAT on an invoice to a US client?"
-    answer: "No. For B2B services to a US business, the place of supply is where the customer belongs, not where you are. That means the supply is outside the scope of UK VAT. Do not add 20% to your invoice. Record the sale in boxes 6 and 7 of your VAT return, not boxes 1-5."
-  - question: "Will a single US project force me to register for US tax?"
-    answer: "Almost certainly not. A single remote project from your UK office does not create a US permanent establishment. You do not need a US tax ID or sales tax registration. Fill out a W-8BEN-E form for the client's records and invoice from your UK company."
-  - question: "What if my US client insists I have a US tax ID?"
-    answer: "You can register for a free IRS Employer Identification Number (EIN) without creating a US tax liability. It is a straightforward online application. But first try pushing back with a W-8BEN-E form. Many large US corporates accept this as proof of foreign status."
-  - question: "How do I handle currency conversion on a USD invoice?"
-    answer: "Record the GBP equivalent on your invoice date using the HMRC spot exchange rate. Track the actual GBP you receive when the client pays. The difference between these two amounts is a foreign exchange gain or loss that goes through your P&L. Consider using a multi-currency account to control when you convert."
+- question: Do I need to charge VAT on an invoice to a US client?
+  answer: No. For B2B services to a US business, the place of supply is where the customer belongs, not where you are. That means the supply is outside the scope of UK VAT. Do not add 20% to your invoice. Record the sale in boxes 6 and 7 of your VAT return, not boxes 1-5.
+- question: Will a single US project force me to register for US tax?
+  answer: Almost certainly not. A single remote project from your UK office does not create a US permanent establishment. You do not need a US tax ID or sales tax registration. Fill out a W-8BEN-E form for the client's records and invoice from your UK company.
+- question: What if my US client insists I have a US tax ID?
+  answer: You can register for a free IRS Employer Identification Number (EIN) without creating a US tax liability. It is a straightforward online application. But first try pushing back with a W-8BEN-E form. Many large US corporates accept this as proof of foreign status.
+- question: How do I handle currency conversion on a USD invoice?
+  answer: Record the GBP equivalent on your invoice date using the HMRC spot exchange rate. Track the actual GBP you receive when the client pays. The difference between these two amounts is a foreign exchange gain or loss that goes through your P&L. Consider using a multi-currency account to control when you convert.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A one-off US project delivered remotely from your UK office typically does not create a US tax obligation or permanent establishment.
+- For UK VAT purposes, services to a US business client are outside the scope of UK VAT, so you do not charge 20% VAT.
+- You must prove the US client is a business by obtaining their VAT or EIN number to avoid incorrectly treating the supply as UK VATable.
+- On your UK VAT return, record the US sale in boxes 6 and 7, not boxes 1–5, to keep your return accurate.
+- If your total UK and US turnover exceeds the £90,000 VAT threshold, you must register for UK VAT, which changes your invoicing and reporting.
 ---
-
 <h2>You've Landed a US Client. Now What?</h2>
 <p>You run a 12-person digital agency in Shoreditch. You've just won a £63,400 project from a New York-based SaaS company. It's your first US client. You're excited. Then you start thinking about the tax implications.</p>
 <p>Do you need to register for US sales tax? What about VAT? Will the IRS come after you? Can you just invoice them like a UK client and hope for the best?</p>

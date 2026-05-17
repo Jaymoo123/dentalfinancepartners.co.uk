@@ -1,33 +1,40 @@
 ---
-title: "What Are Normal Agency Profit Margins? Benchmarks for UK Agency Owners"
-slug: "agency-profit-margins-benchmarks"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-profit-margins-benchmarks"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "Agency Profit Margins: UK Benchmarks for 2025"
-metaDescription: "What profit margin should a UK agency aim for? We break down the benchmarks for digital, creative, PR, and recruitment agencies with real numbers."
-altText: "Agency founder reviewing financial reports with accountant in a modern UK office"
-image: "/blog/agency-profit-margins-benchmarks.jpg"
+title: What Are Normal Agency Profit Margins? Benchmarks for UK Agency Owners
+slug: agency-profit-margins-benchmarks
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-profit-margins-benchmarks
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: 'Agency Profit Margins: UK Benchmarks for 2025'
+metaDescription: What profit margin should a UK agency aim for? We break down the benchmarks for digital, creative, PR, and recruitment agencies with real numbers.
+altText: Agency founder reviewing financial reports with accountant in a modern UK office
+image: /blog/agency-profit-margins-benchmarks.jpg
 imageCredit:
-  photographer: "Kindel Media"
-  photographerUrl: "https://www.pexels.com/@kindelmedia"
-  sourceUrl: "https://www.pexels.com/photo/a-close-up-shot-of-a-graph-on-a-paper-7054368/"
-  source: "Pexels"
-h1: "What Are Normal Agency Profit Margins? Benchmarks for UK Agency Owners"
-summary: "Agency profit margins vary by sector and business model. We break down the benchmarks for digital, creative, PR, and recruitment agencies, explain what drives profitability, and show you where to look when your margins are off."
-schema: ""
+  photographer: Kindel Media
+  photographerUrl: https://www.pexels.com/@kindelmedia
+  sourceUrl: https://www.pexels.com/photo/a-close-up-shot-of-a-graph-on-a-paper-7054368/
+  source: Pexels
+h1: What Are Normal Agency Profit Margins? Benchmarks for UK Agency Owners
+summary: Agency profit margins vary by sector and business model. We break down the benchmarks for digital, creative, PR, and recruitment agencies, explain what drives profitability, and show you where to look when your margins are off.
+schema: ''
 faqs:
-  - question: "What is a good profit margin for a UK agency?"
-    answer: "A good net profit margin for a UK agency is 10% to 20%. Digital and marketing agencies typically land at 12% to 18%. Creative agencies are often 8% to 12% due to higher new business costs. Recruitment agencies can achieve 20% to 30% because their cost base is low. If your net margin is below 8%, you have a structural problem that needs fixing."
-  - question: "How do I calculate my agency's profit margin?"
-    answer: "Take your net profit (revenue minus all costs, including your own salary) and divide it by your revenue. Multiply by 100 to get a percentage. For example, if your revenue is £500,000 and your net profit is £75,000, your net profit margin is 15%. Do this calculation monthly using your management accounts, not just at year end."
-  - question: "What is the biggest factor that destroys agency profit margins?"
-    answer: "Scope creep is the single biggest margin killer. When you agree a fixed price for a project and the client asks for more work without paying more, your margin erodes. The second biggest factor is undercharging. Most agencies could raise prices by 10% to 20% without losing significant business. Track both scope changes and pricing regularly."
-  - question: "Should I aim for a higher margin or higher revenue?"
-    answer: "Higher margin, every time. A 15% margin on £500,000 gives you £75,000 profit. A 10% margin on £800,000 gives you £80,000 profit. The difference in effort and risk is enormous. Growing revenue without improving margin is a treadmill. Focus on margin first, then scale what works."
+- question: What is a good profit margin for a UK agency?
+  answer: A good net profit margin for a UK agency is 10% to 20%. Digital and marketing agencies typically land at 12% to 18%. Creative agencies are often 8% to 12% due to higher new business costs. Recruitment agencies can achieve 20% to 30% because their cost base is low. If your net margin is below 8%, you have a structural problem that needs fixing.
+- question: How do I calculate my agency's profit margin?
+  answer: Take your net profit (revenue minus all costs, including your own salary) and divide it by your revenue. Multiply by 100 to get a percentage. For example, if your revenue is £500,000 and your net profit is £75,000, your net profit margin is 15%. Do this calculation monthly using your management accounts, not just at year end.
+- question: What is the biggest factor that destroys agency profit margins?
+  answer: Scope creep is the single biggest margin killer. When you agree a fixed price for a project and the client asks for more work without paying more, your margin erodes. The second biggest factor is undercharging. Most agencies could raise prices by 10% to 20% without losing significant business. Track both scope changes and pricing regularly.
+- question: Should I aim for a higher margin or higher revenue?
+  answer: Higher margin, every time. A 15% margin on £500,000 gives you £75,000 profit. A 10% margin on £800,000 gives you £80,000 profit. The difference in effort and risk is enormous. Growing revenue without improving margin is a treadmill. Focus on margin first, then scale what works.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A healthy net profit margin for a UK agency is 10% to 20%, with many founders aiming for 15%.
+- Digital agencies typically see net margins of 12% to 18%, but scope creep often erodes profitability.
+- Creative agencies have higher gross margins (55% to 70%) but net margins of 8% to 12% due to new business costs.
+- PR agencies operate with gross margins of 45% to 55% due to labour-intensive senior time costs.
+- EBITDA margin of 15% to 25% is the key metric buyers use to value an agency for exit.
 ---
-
 <p>If you run an agency, you probably already know your revenue. Maybe you track it monthly. Maybe you celebrate hitting a new record. But do you know your profit margin? And more importantly, do you know whether it is <em>normal</em> for your type of agency?</p>
 
 <p>I sit down with agency founders every week. Some are turning over £300k. Some are north of £3m. Almost all of them have a gut feel for whether they are profitable. Almost none of them know how they compare to other agencies in their sector. That is the gap this article fills.</p>

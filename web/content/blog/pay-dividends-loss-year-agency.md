@@ -1,33 +1,40 @@
 ---
-title: "Can You Pay Dividends If Your Agency Has Made a Loss in the Current Year?"
-slug: "pay-dividends-loss-year-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/pay-dividends-loss-year-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Salary and Dividends"
-metaTitle: "Can You Pay Dividends If Your Agency Made a Loss This Year?"
-metaDescription: "No. You cannot pay dividends from losses. Dividends must come from distributable profits. Here's what to do if your agency is in the red."
-altText: "Agency founder reviewing financial statements with accountant in a UK office, discussing dividend payments"
-image: "/blog/pay-dividends-loss-year-agency.jpg"
+title: Can You Pay Dividends If Your Agency Has Made a Loss in the Current Year?
+slug: pay-dividends-loss-year-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/pay-dividends-loss-year-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Salary and Dividends
+metaTitle: Can You Pay Dividends If Your Agency Made a Loss This Year?
+metaDescription: No. You cannot pay dividends from losses. Dividends must come from distributable profits. Here's what to do if your agency is in the red.
+altText: Agency founder reviewing financial statements with accountant in a UK office, discussing dividend payments
+image: /blog/pay-dividends-loss-year-agency.jpg
 imageCredit:
-  photographer: "Monstera Production"
-  photographerUrl: "https://www.pexels.com/@gabby-k"
-  sourceUrl: "https://www.pexels.com/photo/illustration-of-payment-concept-for-percents-currency-and-information-5849576/"
-  source: "Pexels"
-h1: "Can You Pay Dividends If Your Agency Has Made a Loss in the Current Year?"
-summary: "You cannot pay dividends from a loss-making year. Dividends must come from accumulated distributable profits. Here's what the law says and what to do instead."
-schema: ""
+  photographer: Monstera Production
+  photographerUrl: https://www.pexels.com/@gabby-k
+  sourceUrl: https://www.pexels.com/photo/illustration-of-payment-concept-for-percents-currency-and-information-5849576/
+  source: Pexels
+h1: Can You Pay Dividends If Your Agency Has Made a Loss in the Current Year?
+summary: You cannot pay dividends from a loss-making year. Dividends must come from accumulated distributable profits. Here's what the law says and what to do instead.
+schema: ''
 faqs:
-  - question: "Can I pay a dividend from retained profits from previous years if my agency made a loss this year?"
-    answer: "Yes, as long as your total retained earnings (accumulated profits minus accumulated losses and previous dividends) remain positive after accounting for the current year loss. Check your balance sheet's profit and loss reserve figure. If it is positive, you have distributable profits. If it is zero or negative, you cannot pay a dividend until you generate more profit."
-  - question: "What happens if I pay an unlawful dividend from a loss-making agency?"
-    answer: "You can be personally liable to repay the full amount to the company. If multiple directors approved it, you are jointly and severally liable. HMRC will still tax it as dividend income. In insolvency, a liquidator can recover unlawful dividends paid up to 2 years prior. Do not take the risk."
-  - question: "Can I take a directors' loan instead of a dividend if my agency made a loss?"
-    answer: "Yes. A directors' loan is a lawful way to extract money from a loss-making company. But it is a debt you must repay within 9 months of the year-end, or the company pays a Section 455 tax charge at 33.75%. Loans over £10,000 must be reported on a P11D and are a benefit in kind. Use it as a short-term solution only."
-  - question: "Do the same dividend rules apply if my agency uses a holding company structure?"
-    answer: "Yes. The same Companies Act rules apply at every level. The holding company can only pay dividends from its own distributable profits, which typically come from subsidiary dividends. If the holding company has made a loss, it cannot pay a dividend regardless of what the subsidiaries have done."
+- question: Can I pay a dividend from retained profits from previous years if my agency made a loss this year?
+  answer: Yes, as long as your total retained earnings (accumulated profits minus accumulated losses and previous dividends) remain positive after accounting for the current year loss. Check your balance sheet's profit and loss reserve figure. If it is positive, you have distributable profits. If it is zero or negative, you cannot pay a dividend until you generate more profit.
+- question: What happens if I pay an unlawful dividend from a loss-making agency?
+  answer: You can be personally liable to repay the full amount to the company. If multiple directors approved it, you are jointly and severally liable. HMRC will still tax it as dividend income. In insolvency, a liquidator can recover unlawful dividends paid up to 2 years prior. Do not take the risk.
+- question: Can I take a directors' loan instead of a dividend if my agency made a loss?
+  answer: Yes. A directors' loan is a lawful way to extract money from a loss-making company. But it is a debt you must repay within 9 months of the year-end, or the company pays a Section 455 tax charge at 33.75%. Loans over £10,000 must be reported on a P11D and are a benefit in kind. Use it as a short-term solution only.
+- question: Do the same dividend rules apply if my agency uses a holding company structure?
+  answer: Yes. The same Companies Act rules apply at every level. The holding company can only pay dividends from its own distributable profits, which typically come from subsidiary dividends. If the holding company has made a loss, it cannot pay a dividend regardless of what the subsidiaries have done.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Dividends can only be paid from accumulated distributable profits, not from cash flow or current year performance alone.
+- A loss in the current year does not automatically prevent a dividend if retained earnings from previous years remain positive.
+- You must pass both the profit test (sufficient retained earnings) and the liquidity test (ability to pay debts) for a lawful dividend.
+- Paying an unlawful dividend exposes directors to personal liability, HMRC penalties, and potential clawback in insolvency.
+- If retained earnings are zero after accounting for losses, you cannot pay a dividend until further profits are generated.
 ---
-
 <p>You cannot pay dividends if your agency has made a loss in the current year. This is a legal requirement under the Companies Act 2006, not just a tax point. Dividends can only be paid from "distributable profits" — essentially, the accumulated retained profits your agency has built up over time, not the current year's performance alone.</p>
 
 <p>This catches a lot of agency founders off guard. You might have a strong retained reserve from previous years but hit a rough patch this year. Or you might have assumed that because you have cash in the bank, you can pay a dividend. Cash and profit are not the same thing. And HMRC, along with company law, cares about the latter.</p>

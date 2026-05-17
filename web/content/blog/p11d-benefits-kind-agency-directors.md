@@ -1,33 +1,40 @@
 ---
-title: "P11D for Agency Directors: What You Must Report to HMRC Each Year"
-slug: "p11d-benefits-kind-agency-directors"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/p11d-benefits-kind-agency-directors"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "P11D Agency Director: What to Report as Benefits in Kind"
-metaDescription: "P11D agency director reporting explained. What counts as a benefit in kind, what to report, and the penalties for getting it wrong. Practical guide for UK"
-altText: "ICAEW qualified accountant reviewing P11D forms with an agency director in a modern London office"
-image: "/blog/p11d-benefits-kind-agency-directors.jpg"
+title: 'P11D for Agency Directors: What You Must Report to HMRC Each Year'
+slug: p11d-benefits-kind-agency-directors
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/p11d-benefits-kind-agency-directors
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'P11D Agency Director: What to Report as Benefits in Kind'
+metaDescription: P11D agency director reporting explained. What counts as a benefit in kind, what to report, and the penalties for getting it wrong. Practical guide for UK
+altText: ICAEW qualified accountant reviewing P11D forms with an agency director in a modern London office
+image: /blog/p11d-benefits-kind-agency-directors.jpg
 imageCredit:
-  photographer: "Pavel Danilyuk"
-  photographerUrl: "https://www.pexels.com/@pavel-danilyuk"
-  sourceUrl: "https://www.pexels.com/photo/three-people-working-in-the-office-7654609/"
-  source: "Pexels"
-h1: "P11D for Agency Directors: What You Must Report to HMRC Each Year"
-summary: "If you run a UK agency through a limited company, you probably provide yourself with benefits you haven't thought twice about. A company phone. Private medical insurance. A Christmas party that creeps over £150 per head. That director's loan you took to cover a cash flow gap. HMRC expects you to report most of these on a P11D form each year. Here's exactly what counts, what doesn't, and how to avoid a penalty."
-schema: ""
+  photographer: Pavel Danilyuk
+  photographerUrl: https://www.pexels.com/@pavel-danilyuk
+  sourceUrl: https://www.pexels.com/photo/three-people-working-in-the-office-7654609/
+  source: Pexels
+h1: 'P11D for Agency Directors: What You Must Report to HMRC Each Year'
+summary: If you run a UK agency through a limited company, you probably provide yourself with benefits you haven't thought twice about. A company phone. Private medical insurance. A Christmas party that creeps over £150 per head. That director's loan you took to cover a cash flow gap. HMRC expects you to report most of these on a P11D form each year. Here's exactly what counts, what doesn't, and how to avoid a penalty.
+schema: ''
 faqs:
-  - question: "Do I need to file a P11D if I'm the only director and employee of my agency?"
-    answer: "Yes, if you receive any benefits in kind. Even if you're the sole director and employee, you still need to report benefits like private medical insurance, company car fuel, or a directors' loan account balance over £10,000. The P11D form is per individual, not per company. If you have no benefits at all, you don't need to file anything."
-  - question: "What happens if I don't file a P11D on time?"
-    answer: "HMRC charges automatic penalties. For each P11D or P11D(b) not filed by 6 July, the penalty is £100 per 50 employees per month. So if you have 2 directors and file 2 months late, that's £400. If you continue to miss deadlines, penalties increase. HMRC may also charge interest on any unpaid Class 1A National Insurance."
-  - question: "Can I report benefits through my payroll instead of filing a P11D?"
-    answer: "Yes, you can payroll benefits in kind. This means the tax is collected through your monthly payroll rather than as a lump sum after year-end. You still need to file a P11D(b) to report the Class 1A National Insurance the company owes. Most payroll software supports this, including Xero, QuickBooks, and FreeAgent."
-  - question: "Is a company phone a benefit in kind?"
-    answer: "One mobile phone per employee is exempt from benefit in kind reporting, including the line rental and calls. This applies regardless of personal use. A second phone provided for personal use is a benefit and must be reported on a P11D. The same exemption applies to tablets if they're primarily for business use, but the rules are stricter."
+- question: Do I need to file a P11D if I'm the only director and employee of my agency?
+  answer: Yes, if you receive any benefits in kind. Even if you're the sole director and employee, you still need to report benefits like private medical insurance, company car fuel, or a directors' loan account balance over £10,000. The P11D form is per individual, not per company. If you have no benefits at all, you don't need to file anything.
+- question: What happens if I don't file a P11D on time?
+  answer: HMRC charges automatic penalties. For each P11D or P11D(b) not filed by 6 July, the penalty is £100 per 50 employees per month. So if you have 2 directors and file 2 months late, that's £400. If you continue to miss deadlines, penalties increase. HMRC may also charge interest on any unpaid Class 1A National Insurance.
+- question: Can I report benefits through my payroll instead of filing a P11D?
+  answer: Yes, you can payroll benefits in kind. This means the tax is collected through your monthly payroll rather than as a lump sum after year-end. You still need to file a P11D(b) to report the Class 1A National Insurance the company owes. Most payroll software supports this, including Xero, QuickBooks, and FreeAgent.
+- question: Is a company phone a benefit in kind?
+  answer: One mobile phone per employee is exempt from benefit in kind reporting, including the line rental and calls. This applies regardless of personal use. A second phone provided for personal use is a benefit and must be reported on a P11D. The same exemption applies to tablets if they're primarily for business use, but the rules are stricter.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- File P11D by 6 July after the tax year ends; for 2025/26, the deadline is 6 July 2026.
+- Private medical insurance paid by your company is a benefit in kind, taxed at your marginal rate with 13.8% Class 1A NI due from the company.
+- Company car benefit is based on list price and CO2 emissions; electric cars attract a 2% rate for 2025/26.
+- A directors' loan over £10,000 at any point in the year creates a taxable benefit on the interest saved.
+- Annual staff entertainment is exempt up to £150 per head; exceeding that makes the full amount reportable on P11D.
 ---
-
 <h2>What Is a P11D and Why Should an Agency Director Care?</h2>
 
 <p>The P11D is the form you submit to HMRC each year to report expenses and benefits you've given to directors or employees that aren't part of their normal salary or wages. If you're an agency director running your business through a limited company, you almost certainly have something to report on one.</p>

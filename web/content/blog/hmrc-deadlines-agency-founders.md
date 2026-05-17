@@ -1,33 +1,40 @@
 ---
-title: "HMRC Deadlines Every UK Agency Founder Should Know (2025/26)"
-slug: "hmrc-deadlines-agency-founders"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/hmrc-deadlines-agency-founders"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "2025/26 HMRC Deadlines Every Agency Founder Needs"
-metaDescription: "Key HMRC deadlines for UK agency founders: corporation tax, VAT, payroll, and self-assessment dates. Miss one and you risk penalties. Here is what"
-altText: "UK accountant reviewing a printed calendar marked with HMRC tax deadlines, documents and a laptop on a desk in a modern office."
-image: "/blog/hmrc-deadlines-agency-founders.jpg"
+title: HMRC Deadlines Every UK Agency Founder Should Know (2025/26)
+slug: hmrc-deadlines-agency-founders
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/hmrc-deadlines-agency-founders
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 2025/26 HMRC Deadlines Every Agency Founder Needs
+metaDescription: 'Key HMRC deadlines for UK agency founders: corporation tax, VAT, payroll, and self-assessment dates. Miss one and you risk penalties. Here is what'
+altText: UK accountant reviewing a printed calendar marked with HMRC tax deadlines, documents and a laptop on a desk in a modern office.
+image: /blog/hmrc-deadlines-agency-founders.jpg
 imageCredit:
-  photographer: "Ann H"
-  photographerUrl: "https://www.pexels.com/@ann-h-45017"
-  sourceUrl: "https://www.pexels.com/photo/letter-cutouts-and-a-matchstick-6182181/"
-  source: "Pexels"
-h1: "HMRC Deadlines Every UK Agency Founder Should Know (2025/26)"
-summary: "A practical rundown of every HMRC deadline that matters for agency founders in the 2025/26 tax year. From corporation tax and VAT to payroll and self-assessment, we cover the dates, the penalties for missing them, and how to organise your compliance calendar."
-schema: ""
+  photographer: Ann H
+  photographerUrl: https://www.pexels.com/@ann-h-45017
+  sourceUrl: https://www.pexels.com/photo/letter-cutouts-and-a-matchstick-6182181/
+  source: Pexels
+h1: HMRC Deadlines Every UK Agency Founder Should Know (2025/26)
+summary: A practical rundown of every HMRC deadline that matters for agency founders in the 2025/26 tax year. From corporation tax and VAT to payroll and self-assessment, we cover the dates, the penalties for missing them, and how to organise your compliance calendar.
+schema: ''
 faqs:
-  - question: "What happens if I miss a corporation tax payment by one day?"
-    answer: "HMRC charges late payment interest from the day after the due date. The rate is currently 7.25% per annum. On a £30,000 bill, one day late costs roughly £6 in interest. That is not catastrophic, but the real risk is that one late payment leads to a pattern. HMRC tracks payment history and escalates penalties for repeat offenders. Set up a direct debit or standing order to avoid this entirely."
-  - question: "Do I need to file a self-assessment return if my agency is a limited company and I only take salary and dividends?"
-    answer: "Yes, in most cases. Even if all your income is taxed at source through PAYE, you may still need to file if your dividend income exceeds the £500 dividend allowance, or if you have any other untaxed income. The only exception is if your total tax liability is fully covered by PAYE and you have no dividends or other income to report. Check with your accountant. Many agency founders assume they are exempt and end up with late filing penalties."
-  - question: "Can I change my VAT quarter to align with my company year end?"
-    answer: "Yes. You can request a change to your VAT stagger to align with your accounting period. This simplifies your compliance calendar because your VAT return and corporation tax preparation happen at the same time. HMRC usually approves the change if you have a good reason. Speak to your accountant before requesting the change, because it can affect your cash flow timing."
-  - question: "What is the deadline for filing a P11D for my agency's company cars?"
-    answer: "P11Ds must be filed with HMRC by 6 July following the end of the tax year. For the 2025/26 tax year, that means 6 July 2026. The associated Class 1A National Insurance is due by 19 July 2026 (or 22 July if paid electronically). If you miss the deadline, HMRC charges penalties starting at £100 per 50 employees per month. For most agencies with one or two company cars, the penalty is small, but the administrative hassle is significant. Use software to automate P11D preparation if you have more than a handful of benefits."
+- question: What happens if I miss a corporation tax payment by one day?
+  answer: HMRC charges late payment interest from the day after the due date. The rate is currently 7.25% per annum. On a £30,000 bill, one day late costs roughly £6 in interest. That is not catastrophic, but the real risk is that one late payment leads to a pattern. HMRC tracks payment history and escalates penalties for repeat offenders. Set up a direct debit or standing order to avoid this entirely.
+- question: Do I need to file a self-assessment return if my agency is a limited company and I only take salary and dividends?
+  answer: Yes, in most cases. Even if all your income is taxed at source through PAYE, you may still need to file if your dividend income exceeds the £500 dividend allowance, or if you have any other untaxed income. The only exception is if your total tax liability is fully covered by PAYE and you have no dividends or other income to report. Check with your accountant. Many agency founders assume they are exempt and end up with late filing penalties.
+- question: Can I change my VAT quarter to align with my company year end?
+  answer: Yes. You can request a change to your VAT stagger to align with your accounting period. This simplifies your compliance calendar because your VAT return and corporation tax preparation happen at the same time. HMRC usually approves the change if you have a good reason. Speak to your accountant before requesting the change, because it can affect your cash flow timing.
+- question: What is the deadline for filing a P11D for my agency's company cars?
+  answer: P11Ds must be filed with HMRC by 6 July following the end of the tax year. For the 2025/26 tax year, that means 6 July 2026. The associated Class 1A National Insurance is due by 19 July 2026 (or 22 July if paid electronically). If you miss the deadline, HMRC charges penalties starting at £100 per 50 employees per month. For most agencies with one or two company cars, the penalty is small, but the administrative hassle is significant. Use software to automate P11D preparation if you have more than a handful of benefits.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Corporation tax is due nine months and one day after your company's year end, with late payment interest at 7.25%.
+- The CT600 filing deadline is 12 months after year end; late filing penalties start at £100 and escalate to 10% of unpaid tax.
+- VAT returns are due one month and seven days after each quarter end, with four deadlines per year for most agencies.
+- The VAT registration threshold is £90,000; voluntary registration is possible below this level.
+- Missing a corporation tax payment by even a week can cost hundreds in interest and surcharges for a typical agency.
 ---
-
 <p>If you run an agency in the UK, HMRC deadlines are not suggestions. They are hard stops. Miss one, and the penalties start stacking up fast. A late corporation tax payment can cost you thousands in interest and surcharges before you have even opened the post. A missed VAT return triggers a surcharge that compounds with each subsequent late submission.</p>
 
 <p>This article covers every major HMRC deadline that matters for agency founders in the 2025/26 tax year. It is an evergreen reference post, updated annually. Bookmark it. Print it. Stick it on the wall next to your utilisation rate dashboard.</p>

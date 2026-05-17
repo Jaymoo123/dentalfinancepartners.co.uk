@@ -1,33 +1,40 @@
 ---
-title: "How Do I Report My Worldwide Income to the UAE as a New Resident Agency Founder?"
-slug: "report-worldwide-income-uae-new-resident-agency-founder"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/report-worldwide-income-uae-new-resident-agency-founder"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Report Worldwide Income UAE New Resident: A Founder's Guide"
-metaDescription: "UK agency founders moving to the UAE must report worldwide income. We explain the FTA declaration, proof of foreign income, and what HMRC still expects."
-altText: "Agency founder reviewing UAE tax declaration paperwork on a laptop in a Dubai office with skyline visible through window"
-image: "/blog/report-worldwide-income-uae-new-resident-agency-founder.jpg"
+title: How Do I Report My Worldwide Income to the UAE as a New Resident Agency Founder?
+slug: report-worldwide-income-uae-new-resident-agency-founder
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/report-worldwide-income-uae-new-resident-agency-founder
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Report Worldwide Income UAE New Resident: A Founder''s Guide'
+metaDescription: UK agency founders moving to the UAE must report worldwide income. We explain the FTA declaration, proof of foreign income, and what HMRC still expects.
+altText: Agency founder reviewing UAE tax declaration paperwork on a laptop in a Dubai office with skyline visible through window
+image: /blog/report-worldwide-income-uae-new-resident-agency-founder.jpg
 imageCredit:
-  photographer: "Jakub Zerdzicki"
-  photographerUrl: "https://www.pexels.com/@jakubzerdzicki"
-  sourceUrl: "https://www.pexels.com/photo/financial-planning-with-polish-currency-and-documents-35230300/"
-  source: "Pexels"
-h1: "How Do I Report My Worldwide Income to the UAE as a New Resident Agency Founder?"
-summary: "Moving your agency life to the UAE doesn't mean you stop reporting income. The UAE's Federal Tax Authority requires a declaration of your worldwide income, and HMRC still has rules for former UK residents. Here's what you need to do as a new resident agency founder."
-schema: ""
+  photographer: Jakub Zerdzicki
+  photographerUrl: https://www.pexels.com/@jakubzerdzicki
+  sourceUrl: https://www.pexels.com/photo/financial-planning-with-polish-currency-and-documents-35230300/
+  source: Pexels
+h1: How Do I Report My Worldwide Income to the UAE as a New Resident Agency Founder?
+summary: Moving your agency life to the UAE doesn't mean you stop reporting income. The UAE's Federal Tax Authority requires a declaration of your worldwide income, and HMRC still has rules for former UK residents. Here's what you need to do as a new resident agency founder.
+schema: ''
 faqs:
-  - question: "Do I have to pay UAE tax on my UK agency income?"
-    answer: "No. The UAE has no personal income tax, so you will not pay UAE tax on your UK agency income. However, you must declare it to the Federal Tax Authority as part of your worldwide income declaration. The FTA uses this information for transparency purposes under the Common Reporting Standard."
-  - question: "Do I still need to file UK tax returns after moving to the UAE?"
-    answer: "It depends on your UK income. If you still receive dividends from your UK agency, rental income from UK property, or any other UK-source income above the personal allowance, you must file a UK tax return. You also need to file for the split year if you moved mid-tax year. HMRC will see your UK income through CRS data sharing, so non-filing is not an option."
-  - question: "What happens if the FTA asks for proof of my foreign income?"
-    answer: "The FTA may request bank statements, dividend vouchers, company accounts, and UK tax returns for the last 2-3 years. They want to verify that your income sources are legitimate and that you are genuinely resident in the UAE. If you have clean records and a clear structure, the process is straightforward. If you have gaps, expect follow-up questions."
-  - question: "Can I keep my UK company and take dividends as a UAE resident?"
-    answer: "Yes. This is the most common structure for agency founders moving to the UAE. Your UK company continues trading and paying UK corporation tax. You take dividends as a UAE resident and pay no UK income tax on them. You declare the dividends to the FTA as part of your worldwide income declaration. Just make sure you pass the Statutory Residence Test to confirm your non-UK resident status."
+- question: Do I have to pay UAE tax on my UK agency income?
+  answer: No. The UAE has no personal income tax, so you will not pay UAE tax on your UK agency income. However, you must declare it to the Federal Tax Authority as part of your worldwide income declaration. The FTA uses this information for transparency purposes under the Common Reporting Standard.
+- question: Do I still need to file UK tax returns after moving to the UAE?
+  answer: It depends on your UK income. If you still receive dividends from your UK agency, rental income from UK property, or any other UK-source income above the personal allowance, you must file a UK tax return. You also need to file for the split year if you moved mid-tax year. HMRC will see your UK income through CRS data sharing, so non-filing is not an option.
+- question: What happens if the FTA asks for proof of my foreign income?
+  answer: The FTA may request bank statements, dividend vouchers, company accounts, and UK tax returns for the last 2-3 years. They want to verify that your income sources are legitimate and that you are genuinely resident in the UAE. If you have clean records and a clear structure, the process is straightforward. If you have gaps, expect follow-up questions.
+- question: Can I keep my UK company and take dividends as a UAE resident?
+  answer: Yes. This is the most common structure for agency founders moving to the UAE. Your UK company continues trading and paying UK corporation tax. You take dividends as a UAE resident and pay no UK income tax on them. You declare the dividends to the FTA as part of your worldwide income declaration. Just make sure you pass the Statutory Residence Test to confirm your non-UK resident status.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- The UAE does not levy personal income tax, but new residents must declare their worldwide income to the Federal Tax Authority (FTA) via a self-assessment declaration.
+- If you manage your UK agency from the UAE, you likely need to register for UAE corporate tax and file a Corporate Tax Return showing your worldwide income sources.
+- The FTA may request supporting evidence such as UK bank statements, dividend vouchers, and company accounts for up to three years to verify your income.
+- HMRC still requires you to report UK-source income and may apply the statutory residence test to determine your UK tax status after moving to the UAE.
+- The UAE exchanges financial account information with the UK under the Common Reporting Standard (CRS), so HMRC will be aware of your UAE accounts and income.
 ---
-
 <p>If you're a UK agency founder who has recently moved to the UAE, you have probably heard the phrase "no personal income tax" and assumed your tax worries are over. That is partly true for UAE domestic tax. But it is not the full picture.</p>
 
 <p>The UAE has no personal income tax. That is a fact. But as a new resident, you are required to report your worldwide income to the Federal Tax Authority (FTA). The FTA is increasingly asking for proof of foreign income sources, particularly from agency founders who arrive with existing UK businesses, retained clients, or investment income.</p>

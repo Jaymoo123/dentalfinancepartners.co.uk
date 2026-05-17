@@ -1,33 +1,40 @@
 ---
-title: "What Is the Optimal Debt-to-Equity Ratio for a Small Agency in the UK?"
-slug: "optimal-debt-equity-ratio-small-agency-uk"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/optimal-debt-equity-ratio-small-agency-uk"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "Optimal Debt-to-Equity Ratio for UK Small Agencies"
-metaDescription: "For UK agency founders: what the debt-to-equity ratio means, how to calculate it, and what range is healthy for a small agency."
-altText: "Agency founder reviewing financial statements on a tablet in a modern UK office with charts on the wall."
-image: "/blog/optimal-debt-equity-ratio-small-agency-uk.jpg"
+title: What Is the Optimal Debt-to-Equity Ratio for a Small Agency in the UK?
+slug: optimal-debt-equity-ratio-small-agency-uk
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/optimal-debt-equity-ratio-small-agency-uk
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: Optimal Debt-to-Equity Ratio for UK Small Agencies
+metaDescription: 'For UK agency founders: what the debt-to-equity ratio means, how to calculate it, and what range is healthy for a small agency.'
+altText: Agency founder reviewing financial statements on a tablet in a modern UK office with charts on the wall.
+image: /blog/optimal-debt-equity-ratio-small-agency-uk.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/social-equity-is-a-key-component-of-the-new-social-contract-18536262/"
-  source: "Pexels"
-h1: "What Is the Optimal Debt-to-Equity Ratio for a Small Agency in the UK?"
-summary: "The debt-to-equity ratio measures how your agency is funded — debt vs. shareholder funds. For most small UK agencies, a ratio between 0.5 and 1.5 is healthy. Here's how to calculate yours and what to do if it's out of range."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/social-equity-is-a-key-component-of-the-new-social-contract-18536262/
+  source: Pexels
+h1: What Is the Optimal Debt-to-Equity Ratio for a Small Agency in the UK?
+summary: The debt-to-equity ratio measures how your agency is funded — debt vs. shareholder funds. For most small UK agencies, a ratio between 0.5 and 1.5 is healthy. Here's how to calculate yours and what to do if it's out of range.
+schema: ''
 faqs:
-  - question: "What is a good debt-to-equity ratio for a small UK agency?"
-    answer: "For most small UK agencies, a debt-to-equity ratio between 0.5 and 1.5 is healthy. Retainer-heavy agencies can safely run at the higher end (1.2-1.5). Project-based agencies should stay below 1.0. Anything above 2.0 needs attention."
-  - question: "How do I calculate my agency's debt-to-equity ratio?"
-    answer: "Divide total liabilities by shareholders' equity. Both numbers are on your balance sheet. Total liabilities include loans, overdrafts, trade creditors, and director's loan accounts. Shareholders' equity is share capital plus retained profits. Most accounting software like Xero, QuickBooks, and FreeAgent can generate this automatically."
-  - question: "Can a director's loan account affect my debt-to-equity ratio?"
-    answer: "Yes, significantly. If the company owes you money, that is a liability on the balance sheet. It increases your total debt and raises your ratio. Converting a director's loan to equity is a common way to improve the ratio without needing cash."
-  - question: "Should I take on debt to grow my agency?"
-    answer: "Sometimes. If you can borrow at 6% and generate a 20% return on that capital, debt makes sense. But only if your revenue is predictable enough to service the repayments. Stress-test your cash flow before taking on new debt. A ratio below 0.3 may mean you are being too conservative."
+- question: What is a good debt-to-equity ratio for a small UK agency?
+  answer: For most small UK agencies, a debt-to-equity ratio between 0.5 and 1.5 is healthy. Retainer-heavy agencies can safely run at the higher end (1.2-1.5). Project-based agencies should stay below 1.0. Anything above 2.0 needs attention.
+- question: How do I calculate my agency's debt-to-equity ratio?
+  answer: Divide total liabilities by shareholders' equity. Both numbers are on your balance sheet. Total liabilities include loans, overdrafts, trade creditors, and director's loan accounts. Shareholders' equity is share capital plus retained profits. Most accounting software like Xero, QuickBooks, and FreeAgent can generate this automatically.
+- question: Can a director's loan account affect my debt-to-equity ratio?
+  answer: Yes, significantly. If the company owes you money, that is a liability on the balance sheet. It increases your total debt and raises your ratio. Converting a director's loan to equity is a common way to improve the ratio without needing cash.
+- question: Should I take on debt to grow my agency?
+  answer: Sometimes. If you can borrow at 6% and generate a 20% return on that capital, debt makes sense. But only if your revenue is predictable enough to service the repayments. Stress-test your cash flow before taking on new debt. A ratio below 0.3 may mean you are being too conservative.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- For most small UK agencies, a debt-to-equity ratio between 0.5 and 1.5 is considered healthy.
+- A ratio below 0.5 suggests you are too conservative and could use cheap debt to accelerate growth.
+- A ratio above 1.5 carries risk that could become problematic if interest rates rise or revenue dips.
+- Agencies with strong retainer revenue can sustain a higher ratio than project-based ones due to predictable cash flow.
+- Director's loan accounts can artificially inflate your debt-to-equity ratio and should be reviewed carefully.
 ---
-
 <h2>What Does Debt-to-Equity Actually Tell You?</h2>
 
 <p>The debt-to-equity ratio is a simple measure of how your agency funds itself. It compares what you owe (debt) against what you and your shareholders have put in (equity).</p>

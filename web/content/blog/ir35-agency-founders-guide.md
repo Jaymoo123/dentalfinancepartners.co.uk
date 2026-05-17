@@ -1,33 +1,40 @@
 ---
-title: "IR35 for Agency Founders: What You Need to Know Before Hiring Contractors"
-slug: "ir35-agency-founders-guide"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/ir35-agency-founders-guide"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Contractors and IR35"
-metaTitle: "IR35 for Agency Founders: Rules, Risks & Compliance Guide"
-metaDescription: "IR35 rules changed for agencies in 2021. Here’s how off-payroll working affects your contractor engagements, SDS obligations, and tax risks. Practical"
-altText: "Agency founder reviewing IR35 Status Determination Statement on laptop in modern UK office"
-image: "/blog/ir35-agency-founders-guide.jpg"
+title: 'IR35 for Agency Founders: What You Need to Know Before Hiring Contractors'
+slug: ir35-agency-founders-guide
+canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/ir35-agency-founders-guide
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Contractors and IR35
+metaTitle: 'IR35 for Agency Founders: Rules, Risks & Compliance Guide'
+metaDescription: IR35 rules changed for agencies in 2021. Here’s how off-payroll working affects your contractor engagements, SDS obligations, and tax risks. Practical
+altText: Agency founder reviewing IR35 Status Determination Statement on laptop in modern UK office
+image: /blog/ir35-agency-founders-guide.jpg
 imageCredit:
-  photographer: "Mikael Blomkvist"
-  photographerUrl: "https://www.pexels.com/@mikael-blomkvist"
-  sourceUrl: "https://www.pexels.com/photo/people-sitting-at-the-table-6476256/"
-  source: "Pexels"
-h1: "IR35 for Agency Founders: What You Need to Know Before Hiring Contractors"
-summary: "IR35 rules changed in 2021, putting the responsibility on your agency to determine contractor status. Get it wrong and you face HMRC bills, penalties, and reputational damage. Here’s what you need to know."
-schema: ""
+  photographer: Mikael Blomkvist
+  photographerUrl: https://www.pexels.com/@mikael-blomkvist
+  sourceUrl: https://www.pexels.com/photo/people-sitting-at-the-table-6476256/
+  source: Pexels
+h1: 'IR35 for Agency Founders: What You Need to Know Before Hiring Contractors'
+summary: IR35 rules changed in 2021, putting the responsibility on your agency to determine contractor status. Get it wrong and you face HMRC bills, penalties, and reputational damage. Here’s what you need to know.
+schema: ''
 faqs:
-  - question: "What is the difference between inside IR35 and outside IR35?"
-    answer: "Inside IR35 means HMRC treats the contractor as an employee for tax purposes. You must deduct PAYE and NI from their payments. Outside IR35 means the contractor is genuinely self-employed, and you pay them gross through their limited company. The determination depends on working practices, not contract wording."
-  - question: "Do I need to issue an SDS for every contractor?"
-    answer: "Yes, if your agency is medium or large (meeting two of: £10.2m turnover, £5.1m balance sheet, 50+ employees). You must issue a Status Determination Statement before the contractor starts work. If you are a small agency, the contractor determines their own status, but you should still document the arrangement."
-  - question: "Can HMRC come after my agency for a contractor's unpaid tax?"
-    answer: "Yes. If HMRC determines you did not take reasonable care in making your IR35 determination, they can hold your agency liable for the unpaid PAYE, employee NI, and employer NI, plus interest and penalties. This applies even if the contractor agreed with your determination."
-  - question: "How long should I keep IR35 records?"
-    answer: "Keep all SDS documents, contractor agreements, and evidence of working practices for at least six years after the engagement ends. HMRC can open an enquiry within that period. If you have ongoing contractors, keep records for the duration plus six years after the last engagement."
+- question: What is the difference between inside IR35 and outside IR35?
+  answer: Inside IR35 means HMRC treats the contractor as an employee for tax purposes. You must deduct PAYE and NI from their payments. Outside IR35 means the contractor is genuinely self-employed, and you pay them gross through their limited company. The determination depends on working practices, not contract wording.
+- question: Do I need to issue an SDS for every contractor?
+  answer: 'Yes, if your agency is medium or large (meeting two of: £10.2m turnover, £5.1m balance sheet, 50+ employees). You must issue a Status Determination Statement before the contractor starts work. If you are a small agency, the contractor determines their own status, but you should still document the arrangement.'
+- question: Can HMRC come after my agency for a contractor's unpaid tax?
+  answer: Yes. If HMRC determines you did not take reasonable care in making your IR35 determination, they can hold your agency liable for the unpaid PAYE, employee NI, and employer NI, plus interest and penalties. This applies even if the contractor agreed with your determination.
+- question: How long should I keep IR35 records?
+  answer: Keep all SDS documents, contractor agreements, and evidence of working practices for at least six years after the engagement ends. HMRC can open an enquiry within that period. If you have ongoing contractors, keep records for the duration plus six years after the last engagement.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Since April 2021, medium and large agencies must issue a Status Determination Statement (SDS) to each contractor before they start work.
+- HMRC determines IR35 status based on actual working practices, not contract terms, focusing on substitution, control, and mutuality of obligation.
+- A contractor working from your office, using your equipment, and reporting to your director is likely inside IR35, requiring PAYE and NI deductions.
+- If your agency meets two of three criteria—turnover over £10.2m, balance sheet over £5.1m, or 50+ employees—the off-payroll rules apply to all limited company contractors.
+- Getting IR35 wrong can leave your agency liable for backdated tax, interest, and penalties, so taking reasonable care in determinations is essential.
 ---
-
 <h2>What is IR35 and Why Should Agency Founders Care?</h2>
 
 <p>IR35 is the set of tax legislation designed to stop workers from operating as limited company contractors when they are effectively employees. HMRC calls them "disguised employees." If you run an agency and hire contractors through their own limited companies, IR35 determines whether you pay them gross or whether you must deduct PAYE and National Insurance.</p>

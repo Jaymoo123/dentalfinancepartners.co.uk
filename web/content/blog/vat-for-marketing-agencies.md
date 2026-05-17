@@ -1,33 +1,40 @@
 ---
-title: "VAT for Marketing Agencies: Registration, Schemes and What to Charge Clients"
-slug: "vat-for-marketing-agencies"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/vat-for-marketing-agencies"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "VAT for Marketing Agencies: Registration and Schemes"
-metaDescription: "When must a UK marketing agency register for VAT? Which scheme saves you most? What do you charge clients? Clear answers for agency founders."
-altText: "UK marketing agency founder reviewing VAT paperwork at a desk in a modern office"
-image: "/blog/vat-for-marketing-agencies.jpg"
+title: 'VAT for Marketing Agencies: Registration, Schemes and What to Charge Clients'
+slug: vat-for-marketing-agencies
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/vat-for-marketing-agencies
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'VAT for Marketing Agencies: Registration and Schemes'
+metaDescription: When must a UK marketing agency register for VAT? Which scheme saves you most? What do you charge clients? Clear answers for agency founders.
+altText: UK marketing agency founder reviewing VAT paperwork at a desk in a modern office
+image: /blog/vat-for-marketing-agencies.jpg
 imageCredit:
-  photographer: "Walls.io"
-  photographerUrl: "https://www.pexels.com/@walls-io-440716388"
-  sourceUrl: "https://www.pexels.com/photo/door-plaques-lying-next-to-book-on-table-15635398/"
-  source: "Pexels"
-h1: "VAT for Marketing Agencies: Registration, Schemes and What to Charge Clients"
-summary: "VAT confuses many agency founders at the point they hit the threshold. This guide covers when you must register, which VAT scheme suits an agency best, and what to actually charge your clients. Real numbers, real scenarios."
-schema: ""
+  photographer: Walls.io
+  photographerUrl: https://www.pexels.com/@walls-io-440716388
+  sourceUrl: https://www.pexels.com/photo/door-plaques-lying-next-to-book-on-table-15635398/
+  source: Pexels
+h1: 'VAT for Marketing Agencies: Registration, Schemes and What to Charge Clients'
+summary: VAT confuses many agency founders at the point they hit the threshold. This guide covers when you must register, which VAT scheme suits an agency best, and what to actually charge your clients. Real numbers, real scenarios.
+schema: ''
 faqs:
-  - question: "At what turnover must a marketing agency register for VAT?"
-    answer: "You must register when your taxable turnover exceeds £90,000 in any rolling 12-month period. This is not your profit and not your financial year. HMRC looks back every month. If you cross the threshold, you have 30 days to notify HMRC from the end of that month."
-  - question: "Which VAT scheme is best for a marketing agency?"
-    answer: "For most agencies, the standard VAT accounting scheme works best. The Flat Rate Scheme can save money if you are not a limited cost trader, but most agencies are limited cost traders (their main costs are people, not goods) and must use the 16.5% rate, which offers little benefit. The Cash Accounting Scheme is useful if you have long payment terms with clients."
-  - question: "Do I charge VAT to overseas clients?"
-    answer: "No, in most cases. If you provide services to a business client outside the UK, the supply is usually outside the scope of UK VAT. You do not charge VAT. The client accounts for VAT in their own country. You must obtain their VAT number and include it on your invoice. If the client is a consumer, different rules apply."
-  - question: "Can I register for VAT voluntarily before hitting £90,000?"
-    answer: "Yes. Voluntary registration makes sense if your clients are all VAT-registered businesses (they reclaim the VAT, so it costs them nothing) and you have significant VAT-inclusive costs to reclaim. It is less beneficial if your clients are consumers or non-VAT registered businesses, because your prices effectively rise by 20%."
+- question: At what turnover must a marketing agency register for VAT?
+  answer: You must register when your taxable turnover exceeds £90,000 in any rolling 12-month period. This is not your profit and not your financial year. HMRC looks back every month. If you cross the threshold, you have 30 days to notify HMRC from the end of that month.
+- question: Which VAT scheme is best for a marketing agency?
+  answer: For most agencies, the standard VAT accounting scheme works best. The Flat Rate Scheme can save money if you are not a limited cost trader, but most agencies are limited cost traders (their main costs are people, not goods) and must use the 16.5% rate, which offers little benefit. The Cash Accounting Scheme is useful if you have long payment terms with clients.
+- question: Do I charge VAT to overseas clients?
+  answer: No, in most cases. If you provide services to a business client outside the UK, the supply is usually outside the scope of UK VAT. You do not charge VAT. The client accounts for VAT in their own country. You must obtain their VAT number and include it on your invoice. If the client is a consumer, different rules apply.
+- question: Can I register for VAT voluntarily before hitting £90,000?
+  answer: Yes. Voluntary registration makes sense if your clients are all VAT-registered businesses (they reclaim the VAT, so it costs them nothing) and you have significant VAT-inclusive costs to reclaim. It is less beneficial if your clients are consumers or non-VAT registered businesses, because your prices effectively rise by 20%.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Register for VAT when your taxable turnover exceeds £90,000 in any rolling 12-month period, not just the current financial year.
+- Notify HMRC within 30 days of the month you exceed the threshold; your effective registration date is the first day of the second month after.
+- Voluntary registration can benefit agencies whose clients are VAT-registered, as you reclaim VAT on costs without impacting client costs.
+- Standard VAT accounting works well for agencies with 50-65% margins, as you reclaim VAT on costs but not on salaries.
+- The Flat Rate Scheme for marketing agencies is 12.5%, but rises to 16.5% if you are a limited cost trader with goods under 2% of turnover.
 ---
-
 <p>If you run a marketing agency in the UK, VAT is one of those topics that creeps up on you. You start trading, you invoice clients, you pay suppliers. Then one month your turnover crosses £90,000 and suddenly you have a 20% conversation with every client invoice you send.</p>
 
 <p>This article covers the practical side of VAT for agencies. When you must register, which scheme to pick, what to charge your clients, and how to avoid the common mistakes that cost agency founders money. If you are a sole trader web designer turning over £65k or a 12-person digital agency billing £800k per year, the principles are the same. The details differ.</p>

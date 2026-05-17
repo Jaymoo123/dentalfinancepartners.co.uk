@@ -1,33 +1,40 @@
 ---
-title: "What Are the VAT Rules for Selling Digital Products Through Your Agency Website?"
-slug: "vat-digital-products-agency-website-uk"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/vat-digital-products-agency-website-uk"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "VAT rules for digital products: UK agency guide"
-metaDescription: "UK agency selling digital products? VAT rules depend on where your customer is. We explain the place of supply rules, MOSS, and what to charge."
-altText: "UK agency founder looking at laptop with VAT calculator on screen in modern office"
-image: "/blog/vat-digital-products-agency-website-uk.jpg"
+title: What Are the VAT Rules for Selling Digital Products Through Your Agency Website?
+slug: vat-digital-products-agency-website-uk
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/vat-digital-products-agency-website-uk
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'VAT rules for digital products: UK agency guide'
+metaDescription: UK agency selling digital products? VAT rules depend on where your customer is. We explain the place of supply rules, MOSS, and what to charge.
+altText: UK agency founder looking at laptop with VAT calculator on screen in modern office
+image: /blog/vat-digital-products-agency-website-uk.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/scrabble-letters-spelling-rules-on-a-wooden-table-19856614/"
-  source: "Pexels"
-h1: "What Are the VAT Rules for Selling Digital Products Through Your Agency Website?"
-summary: "If your agency sells digital products like templates, courses, or software through your website, the VAT rules are different from selling services to clients. Where your customer is based determines whether you charge UK VAT, nothing, or register for MOSS. This article walks through the rules with real agency examples."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/scrabble-letters-spelling-rules-on-a-wooden-table-19856614/
+  source: Pexels
+h1: What Are the VAT Rules for Selling Digital Products Through Your Agency Website?
+summary: If your agency sells digital products like templates, courses, or software through your website, the VAT rules are different from selling services to clients. Where your customer is based determines whether you charge UK VAT, nothing, or register for MOSS. This article walks through the rules with real agency examples.
+schema: ''
 faqs:
-  - question: "Do I need to register for VAT if I only sell digital products to customers outside the UK?"
-    answer: "If your only digital product sales are to customers outside the UK (including EU and rest of world), and your UK taxable turnover (from other sources) is below £90,000, you do not need to register for UK VAT. However, if you sell to EU consumers (B2C), you must register for VAT MOSS to charge their country's VAT rate. You can do this without a full UK VAT registration if your UK turnover is below the threshold. Most agencies find it simpler to register for UK VAT anyway, especially if they have UK client services."
-  - question: "What happens if I accidentally charge UK VAT to an EU customer?"
-    answer: "If you charge UK VAT to an EU consumer, you have charged the wrong rate. You must account for that VAT to HMRC on your UK VAT return, but you also owe the correct EU VAT through MOSS. You effectively pay twice. You can try to refund the customer and reissue the invoice, but this is messy. Prevention is better — set up your e-commerce platform correctly from the start. If you discover the error, speak to your accountant immediately. HMRC may allow you to correct it without penalty if you act promptly."
-  - question: "Can I use the Flat Rate VAT Scheme for digital product sales?"
-    answer: "Yes, you can use the Flat Rate Scheme for your overall VAT accounting, including digital product sales. However, the flat rate percentage applies to your total turnover, including digital products. The relevant flat rate category depends on your main business activity. For most agencies, this is \"management consultancy\" or \"information technology.\" But be careful: if you are a limited cost trader (your VAT-inclusive spend on relevant goods is less than 2% of turnover or less than £1,000 per year), you must use the 16.5% flat rate. Most digital product sellers fall into this category because they have low physical goods costs."
-  - question: "How do I handle VAT on digital products if my agency is based in the UAE but sells to UK customers?"
-    answer: "If your agency is based in the UAE and sells digital products to UK customers, you do not charge UK VAT. Instead, you charge UAE VAT (5%) if your UAE turnover exceeds the registration threshold. The UK customer does not pay UK VAT on your digital products because you are not established in the UK. However, if you have a UK branch or permanent establishment, the rules change. This is a common scenario for UAE-based agencies with UK clients. For specific advice on your situation, speak to an accountant familiar with both UAE and UK VAT rules."
+- question: Do I need to register for VAT if I only sell digital products to customers outside the UK?
+  answer: If your only digital product sales are to customers outside the UK (including EU and rest of world), and your UK taxable turnover (from other sources) is below £90,000, you do not need to register for UK VAT. However, if you sell to EU consumers (B2C), you must register for VAT MOSS to charge their country's VAT rate. You can do this without a full UK VAT registration if your UK turnover is below the threshold. Most agencies find it simpler to register for UK VAT anyway, especially if they have UK client services.
+- question: What happens if I accidentally charge UK VAT to an EU customer?
+  answer: If you charge UK VAT to an EU consumer, you have charged the wrong rate. You must account for that VAT to HMRC on your UK VAT return, but you also owe the correct EU VAT through MOSS. You effectively pay twice. You can try to refund the customer and reissue the invoice, but this is messy. Prevention is better — set up your e-commerce platform correctly from the start. If you discover the error, speak to your accountant immediately. HMRC may allow you to correct it without penalty if you act promptly.
+- question: Can I use the Flat Rate VAT Scheme for digital product sales?
+  answer: 'Yes, you can use the Flat Rate Scheme for your overall VAT accounting, including digital product sales. However, the flat rate percentage applies to your total turnover, including digital products. The relevant flat rate category depends on your main business activity. For most agencies, this is "management consultancy" or "information technology." But be careful: if you are a limited cost trader (your VAT-inclusive spend on relevant goods is less than 2% of turnover or less than £1,000 per year), you must use the 16.5% flat rate. Most digital product sellers fall into this category because they have low physical goods costs.'
+- question: How do I handle VAT on digital products if my agency is based in the UAE but sells to UK customers?
+  answer: If your agency is based in the UAE and sells digital products to UK customers, you do not charge UK VAT. Instead, you charge UAE VAT (5%) if your UAE turnover exceeds the registration threshold. The UK customer does not pay UK VAT on your digital products because you are not established in the UK. However, if you have a UK branch or permanent establishment, the rules change. This is a common scenario for UAE-based agencies with UK clients. For specific advice on your situation, speak to an accountant familiar with both UAE and UK VAT rules.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- For UK B2C digital product sales, charge 20% VAT; you must register if sales exceed the £90,000 threshold.
+- For UK B2B digital product sales, charge 20% VAT; the business customer can reclaim it on their VAT return.
+- For EU B2C digital product sales, charge the customer's local VAT rate via the UK VAT MOSS scheme, not UK VAT.
+- For EU B2B digital product sales, the customer accounts for VAT under the reverse charge; you do not charge UK VAT.
+- Digital products include automated supplies like templates and courses, not bespoke client services or consulting.
 ---
-
 <p>If your agency has started selling digital products through your website — templates, online courses, software licences, downloadable guides, stock assets — the VAT rules shift significantly from what you apply to your client services. Get this wrong and you could face an unexpected HMRC bill for VAT you should have charged but didn't. Or you could be overcharging customers who should be zero-rated.</p>
 
 <p>The core question is simple: where is your customer, and what exactly are you selling? The answer determines your VAT treatment. Let's work through it with real agency examples.</p>

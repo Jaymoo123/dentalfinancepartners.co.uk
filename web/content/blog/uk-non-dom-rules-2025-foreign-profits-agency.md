@@ -1,33 +1,40 @@
 ---
-title: "Non-Dom Rules 2025: The 4-Year Window That Could Save Your Agency's Foreign Profits from UK Tax"
-slug: "uk-non-dom-rules-2025-foreign-profits-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-non-dom-rules-2025-foreign-profits-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Non-Dom Rules 2025: Save Agency Foreign Profits from UK Tax"
-metaDescription: "The 2025 non-dom reforms create a 4-year window for foreign income exemption. UK agency founders with overseas clients need to act before 6 April 2025."
-altText: "ICAEW qualified accountant reviewing tax documents with agency founder in modern London office overlooking the city"
-image: "/blog/uk-non-dom-rules-2025-foreign-profits-agency.jpg"
+title: 'Non-Dom Rules 2025: The 4-Year Window That Could Save Your Agency''s Foreign Profits from UK Tax'
+slug: uk-non-dom-rules-2025-foreign-profits-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-non-dom-rules-2025-foreign-profits-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Non-Dom Rules 2025: Save Agency Foreign Profits from UK Tax'
+metaDescription: The 2025 non-dom reforms create a 4-year window for foreign income exemption. UK agency founders with overseas clients need to act before 6 April 2025.
+altText: ICAEW qualified accountant reviewing tax documents with agency founder in modern London office overlooking the city
+image: /blog/uk-non-dom-rules-2025-foreign-profits-agency.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/scrabble-letters-spelling-rules-on-a-wooden-table-19856614/"
-  source: "Pexels"
-h1: "Non-Dom Rules 2025: The 4-Year Window That Could Save Your Agency's Foreign Profits from UK Tax"
-summary: "The UK's non-dom rules change fundamentally from April 2025. New arrivals get a 4-year foreign income exemption, but existing non-doms lose the remittance basis. Agency founders with overseas client revenue need to understand how this affects their tax position and whether relocating or restructuring makes sense."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/scrabble-letters-spelling-rules-on-a-wooden-table-19856614/
+  source: Pexels
+h1: 'Non-Dom Rules 2025: The 4-Year Window That Could Save Your Agency''s Foreign Profits from UK Tax'
+summary: The UK's non-dom rules change fundamentally from April 2025. New arrivals get a 4-year foreign income exemption, but existing non-doms lose the remittance basis. Agency founders with overseas client revenue need to understand how this affects their tax position and whether relocating or restructuring makes sense.
+schema: ''
 faqs:
-  - question: "What is the 4-year foreign income exemption for non-doms from 2025?"
-    answer: "From 6 April 2025, non-doms who have been UK resident for fewer than 4 out of the last 10 tax years get a 100% exemption on foreign income and gains for the first 4 years of UK residence. This replaces the old remittance basis. After 4 years, worldwide income is fully taxable in the UK."
-  - question: "How does the non-dom 2025 reform affect agency founders with overseas clients?"
-    answer: "If you have been UK resident for more than 4 years, all foreign income becomes taxable in the UK from April 2025, regardless of where it is earned or where it sits. This includes profits from overseas clients earned through a foreign company or personally. Agency founders who arrived recently still get the 4-year exemption, but the clock is running."
-  - question: "Can I still use the remittance basis after April 2025?"
-    answer: "No. The remittance basis is abolished from 6 April 2025 for all non-doms. The only exception is for those who arrived in the UK within the last 4 tax years, who get the new foreign income exemption instead. If you have been UK resident for 4 years or more, you lose both the remittance basis and the new exemption."
-  - question: "Should I relocate outside the UK to protect my foreign income?"
-    answer: "Relocation may be the right option if your 4-year window has expired and you have significant foreign income. Leaving the UK for 5 years resets your residence status, potentially allowing you to qualify for a new 4-year exemption if you return. But this is a major decision with personal and business implications. Speak to an accountant before making any move."
+- question: What is the 4-year foreign income exemption for non-doms from 2025?
+  answer: From 6 April 2025, non-doms who have been UK resident for fewer than 4 out of the last 10 tax years get a 100% exemption on foreign income and gains for the first 4 years of UK residence. This replaces the old remittance basis. After 4 years, worldwide income is fully taxable in the UK.
+- question: How does the non-dom 2025 reform affect agency founders with overseas clients?
+  answer: If you have been UK resident for more than 4 years, all foreign income becomes taxable in the UK from April 2025, regardless of where it is earned or where it sits. This includes profits from overseas clients earned through a foreign company or personally. Agency founders who arrived recently still get the 4-year exemption, but the clock is running.
+- question: Can I still use the remittance basis after April 2025?
+  answer: No. The remittance basis is abolished from 6 April 2025 for all non-doms. The only exception is for those who arrived in the UK within the last 4 tax years, who get the new foreign income exemption instead. If you have been UK resident for 4 years or more, you lose both the remittance basis and the new exemption.
+- question: Should I relocate outside the UK to protect my foreign income?
+  answer: Relocation may be the right option if your 4-year window has expired and you have significant foreign income. Leaving the UK for 5 years resets your residence status, potentially allowing you to qualify for a new 4-year exemption if you return. But this is a major decision with personal and business implications. Speak to an accountant before making any move.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- From April 2025, non-doms resident in the UK for under 4 of the last 10 years get a 4-year exemption on foreign income and gains.
+- Existing non-doms who have been UK resident for more than 4 years lose the remittance basis and pay UK tax on worldwide income from 6 April 2025.
+- The 4-year exemption window is fixed from your first UK residence date, not from April 2025, and cannot be extended.
+- Agency founders earning foreign income personally or through foreign companies must restructure before April 2025 to avoid UK tax on overseas profits.
+- UK corporation tax already applies to profits from UK companies invoicing overseas clients, but personal foreign income becomes taxable after 4 years of residence.
 ---
-
 <p>If you run a UK agency with clients in Dubai, Singapore, or the US, the non-dom rules 2025 foreign profits agency changes will affect your tax position directly. The old remittance basis is gone. In its place is a 4-year foreign income exemption that could save you significant tax, but only if you structure your affairs before 6 April 2025.</p>
 
 <p>This is not a theoretical change. It is a practical shift in how HMRC taxes foreign income for UK residents who are not domiciled in the UK. And for agency founders with overseas client revenue, the stakes are high.</p>

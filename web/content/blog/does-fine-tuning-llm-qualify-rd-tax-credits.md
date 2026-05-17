@@ -1,33 +1,40 @@
 ---
-title: "Does Fine-Tuning an LLM Qualify for R&D Tax Credits?"
-slug: "does-fine-tuning-llm-qualify-rd-tax-credits"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/does-fine-tuning-llm-qualify-rd-tax-credits"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Fine-Tuning LLM R&D Tax Credit: Does Your Agency Qualify?"
-metaDescription: "Does fine-tuning an LLM qualify for R&D tax credits? Yes, if you resolve technical uncertainty. We explain the HMRC tests with real agency examples."
-altText: "Agency founder reviewing R&D tax credit documentation on a laptop in a modern UK office with a whiteboard showing AI workflow diagrams"
-image: "/blog/does-fine-tuning-llm-qualify-rd-tax-credits.jpg"
+title: Does Fine-Tuning an LLM Qualify for R&D Tax Credits?
+slug: does-fine-tuning-llm-qualify-rd-tax-credits
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/does-fine-tuning-llm-qualify-rd-tax-credits
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'Fine-Tuning LLM R&D Tax Credit: Does Your Agency Qualify?'
+metaDescription: Does fine-tuning an LLM qualify for R&D tax credits? Yes, if you resolve technical uncertainty. We explain the HMRC tests with real agency examples.
+altText: Agency founder reviewing R&D tax credit documentation on a laptop in a modern UK office with a whiteboard showing AI workflow diagrams
+image: /blog/does-fine-tuning-llm-qualify-rd-tax-credits.jpg
 imageCredit:
-  photographer: "Ben Johnson"
-  photographerUrl: "https://www.pexels.com/@ben-johnson-33201177"
-  sourceUrl: "https://www.pexels.com/photo/racing-car-on-wet-race-track-17543316/"
-  source: "Pexels"
-h1: "Does Fine-Tuning an LLM Qualify for R&D Tax Credits?"
-summary: "If your agency is fine-tuning a large language model to solve a specific client problem, you might be sitting on a legitimate R&D tax claim. We walk through the HMRC criteria, what counts as qualifying activity, and what HMRC will push back on."
-schema: ""
+  photographer: Ben Johnson
+  photographerUrl: https://www.pexels.com/@ben-johnson-33201177
+  sourceUrl: https://www.pexels.com/photo/racing-car-on-wet-race-track-17543316/
+  source: Pexels
+h1: Does Fine-Tuning an LLM Qualify for R&D Tax Credits?
+summary: If your agency is fine-tuning a large language model to solve a specific client problem, you might be sitting on a legitimate R&D tax claim. We walk through the HMRC criteria, what counts as qualifying activity, and what HMRC will push back on.
+schema: ''
 faqs:
-  - question: "Can I claim R&D tax credits for using OpenAI's API?"
-    answer: "No. Using OpenAI's API to call a pre-trained model does not qualify as R&D. There is no technical uncertainty in making an API call. Even if you build a complex prompt chain or a multi-step workflow around the API, that is software engineering, not R&D. The relief is for advancing technology, not applying existing technology in a new context."
-  - question: "What if my fine-tuning project failed? Can I still claim?"
-    answer: "Yes. R&D includes failed projects. HMRC recognises that genuine technical uncertainty means some projects will not succeed. The key is that you undertook a systematic investigation to resolve the uncertainty, even if you did not achieve the advance you aimed for. Document the failure and the lessons learned. That is still qualifying activity."
-  - question: "How much R&D relief can I get for fine-tuning an LLM?"
-    answer: "For an SME agency, the enhanced deduction gives you an additional 86p of tax deduction for every £1 of qualifying R&D spend. If your agency is profitable and paying 25% corporation tax, the net saving is roughly 21.5p per £1 of qualifying spend. For a loss-making agency, you can surrender the loss for a cash payment of up to 14.5% of the qualifying spend. The exact numbers depend on your specific circumstances."
-  - question: "Do I need a patent or a published paper to claim R&D tax credits for fine-tuning?"
-    answer: "No. HMRC does not require a patent, a paper, or any formal publication. The advance can be internal to your agency. It does not need to be publicly disclosed. What matters is that the advance was novel to the field and resolved technical uncertainty. Your internal documentation and experiment logs are sufficient evidence."
+- question: Can I claim R&D tax credits for using OpenAI's API?
+  answer: No. Using OpenAI's API to call a pre-trained model does not qualify as R&D. There is no technical uncertainty in making an API call. Even if you build a complex prompt chain or a multi-step workflow around the API, that is software engineering, not R&D. The relief is for advancing technology, not applying existing technology in a new context.
+- question: What if my fine-tuning project failed? Can I still claim?
+  answer: Yes. R&D includes failed projects. HMRC recognises that genuine technical uncertainty means some projects will not succeed. The key is that you undertook a systematic investigation to resolve the uncertainty, even if you did not achieve the advance you aimed for. Document the failure and the lessons learned. That is still qualifying activity.
+- question: How much R&D relief can I get for fine-tuning an LLM?
+  answer: For an SME agency, the enhanced deduction gives you an additional 86p of tax deduction for every £1 of qualifying R&D spend. If your agency is profitable and paying 25% corporation tax, the net saving is roughly 21.5p per £1 of qualifying spend. For a loss-making agency, you can surrender the loss for a cash payment of up to 14.5% of the qualifying spend. The exact numbers depend on your specific circumstances.
+- question: Do I need a patent or a published paper to claim R&D tax credits for fine-tuning?
+  answer: No. HMRC does not require a patent, a paper, or any formal publication. The advance can be internal to your agency. It does not need to be publicly disclosed. What matters is that the advance was novel to the field and resolved technical uncertainty. Your internal documentation and experiment logs are sufficient evidence.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Fine-tuning an LLM can qualify for R&D tax credits if it resolves genuine technical uncertainty through systematic investigation.
+- 'HMRC requires three things for an R&D claim: an advance in technology, technical uncertainty at the start, and a systematic process to resolve it.'
+- Standard API use or adjusting parameters does not qualify; only work beyond documented techniques counts as R&D.
+- Examples of qualifying fine-tuning include novel data preparation, optimising for unusual constraints, and adapting models for low-resource languages.
+- HMRC is scrutinising AI claims closely, so your claim must demonstrate genuine technical uncertainty and experimentation.
 ---
-
 <p>If your agency has started fine-tuning large language models for client work, you have probably asked yourself one question: does this count as R&D for tax purposes? The short answer is yes, in the right circumstances. But HMRC does not hand out R&D relief for plugging in an API and calling it a day. You need genuine technical work that resolves uncertainty.</p>
 
 <p>We are seeing more digital agencies, creative agencies, and AI-focused consultancies build fine-tuned models for specific use cases. Sentiment analysis for a PR agency. Content generation tailored to a brand voice for a marketing agency. Automated code review for a web design agency. Each of these can qualify, but the claim hinges on what you actually did, not what you built.</p>

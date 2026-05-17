@@ -1,33 +1,40 @@
 ---
-title: "Can You Claim R&D Tax Credits for Cloud Compute Costs on AWS or GCP?"
-slug: "rd-claim-cloud-compute-aws-gcp"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-claim-cloud-compute-aws-gcp"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "R&D Cloud Compute AWS GCP: Claim Tax Credits on Cloud Costs"
-metaDescription: "UK agencies using AWS, GCP, or GPU rental for R&D can claim tax credits. We explain what qualifies and how to calculate the claim."
-altText: "Agency founder reviewing AWS and GCP cloud compute invoices for R&D tax credit claim with accountant in UK office"
-image: "/blog/rd-claim-cloud-compute-aws-gcp.jpg"
+title: Can You Claim R&D Tax Credits for Cloud Compute Costs on AWS or GCP?
+slug: rd-claim-cloud-compute-aws-gcp
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-claim-cloud-compute-aws-gcp
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'R&D Cloud Compute AWS GCP: Claim Tax Credits on Cloud Costs'
+metaDescription: UK agencies using AWS, GCP, or GPU rental for R&D can claim tax credits. We explain what qualifies and how to calculate the claim.
+altText: Agency founder reviewing AWS and GCP cloud compute invoices for R&D tax credit claim with accountant in UK office
+image: /blog/rd-claim-cloud-compute-aws-gcp.jpg
 imageCredit:
-  photographer: "Kindel Media"
-  photographerUrl: "https://www.pexels.com/@kindelmedia"
-  sourceUrl: "https://www.pexels.com/photo/income-tax-return-paper-7688995/"
-  source: "Pexels"
-h1: "Can You Claim R&D Tax Credits for Cloud Compute Costs on AWS or GCP?"
-summary: "A practical guide for UK agency founders on claiming R&D tax credits for cloud compute costs on AWS, GCP, and GPU rental. We cover what qualifies, how to calculate the claim, and what HMRC looks for."
-schema: ""
+  photographer: Kindel Media
+  photographerUrl: https://www.pexels.com/@kindelmedia
+  sourceUrl: https://www.pexels.com/photo/income-tax-return-paper-7688995/
+  source: Pexels
+h1: Can You Claim R&D Tax Credits for Cloud Compute Costs on AWS or GCP?
+summary: A practical guide for UK agency founders on claiming R&D tax credits for cloud compute costs on AWS, GCP, and GPU rental. We cover what qualifies, how to calculate the claim, and what HMRC looks for.
+schema: ''
 faqs:
-  - question: "Can I claim R&D tax credits for AWS costs if I only use cloud compute for hosting client websites?"
-    answer: "No. Hosting live client websites or applications does not qualify as R&D, even if the software was developed through R&D. The cloud compute must be directly consumed in the R&D process itself, such as training models, processing novel data, or running experiments. Hosting is a separate business cost."
-  - question: "Do I need to tag my AWS resources to claim R&D tax credits on cloud compute?"
-    answer: "You do not legally need to tag resources, but it makes the claim significantly easier to defend. Without tags, you need alternative evidence such as server logs, time tracking, or project-based cost reports. HMRC will ask how you arrived at the qualifying figure. Tags give you a clean, auditable answer."
-  - question: "Can I claim for GPU rental from third-party providers like Lambda Labs or CoreWeave?"
-    answer: "Yes, GPU rental from third-party providers qualifies on the same basis as AWS or GCP compute. The key condition is that the GPU capacity is consumed for qualifying R&D activities. Long-term rental contracts may be treated differently for tax purposes, so check with your accountant before signing."
-  - question: "What is the maximum I can claim for cloud compute costs under the SME R&D scheme?"
-    answer: "There is no fixed maximum for cloud compute costs under the SME scheme. The limit is that the costs must be directly attributable to qualifying R&D. If you can demonstrate that £200,000 of cloud compute was used exclusively for R&D, that £200,000 qualifies. The enhanced deduction is 186% of that amount, giving a corporation tax saving of up to 25% of the enhanced expenditure."
+- question: Can I claim R&D tax credits for AWS costs if I only use cloud compute for hosting client websites?
+  answer: No. Hosting live client websites or applications does not qualify as R&D, even if the software was developed through R&D. The cloud compute must be directly consumed in the R&D process itself, such as training models, processing novel data, or running experiments. Hosting is a separate business cost.
+- question: Do I need to tag my AWS resources to claim R&D tax credits on cloud compute?
+  answer: You do not legally need to tag resources, but it makes the claim significantly easier to defend. Without tags, you need alternative evidence such as server logs, time tracking, or project-based cost reports. HMRC will ask how you arrived at the qualifying figure. Tags give you a clean, auditable answer.
+- question: Can I claim for GPU rental from third-party providers like Lambda Labs or CoreWeave?
+  answer: Yes, GPU rental from third-party providers qualifies on the same basis as AWS or GCP compute. The key condition is that the GPU capacity is consumed for qualifying R&D activities. Long-term rental contracts may be treated differently for tax purposes, so check with your accountant before signing.
+- question: What is the maximum I can claim for cloud compute costs under the SME R&D scheme?
+  answer: There is no fixed maximum for cloud compute costs under the SME scheme. The limit is that the costs must be directly attributable to qualifying R&D. If you can demonstrate that £200,000 of cloud compute was used exclusively for R&D, that £200,000 qualifies. The enhanced deduction is 186% of that amount, giving a corporation tax saving of up to 25% of the enhanced expenditure.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Cloud compute costs on AWS, GCP, or GPU rental qualify for R&D tax credits only if directly attributable to a specific R&D project, not general business computing.
+- To claim cloud costs, they must be consumed in the R&D process (not reserved idle instances) and be revenue in nature, not capital.
+- Qualifying services include EC2, SageMaker, Lambda, and GPU instances used for model training or novel data processing; hosting and CDN costs do not qualify.
+- HMRC expects you to apportion cloud bills accurately—claiming the full AWS bill when only a portion relates to R&D is a red flag.
+- Storage costs like S3 or Cloud Storage qualify only if the data is used exclusively for R&D, not for general operations or client deliverables.
 ---
-
 <p>If your agency runs machine learning models, trains AI tools, processes large datasets, or develops software on cloud infrastructure, you have probably wondered whether those AWS, GCP, or GPU rental costs qualify for R&D tax credits. The short answer is yes, but only under specific conditions. HMRC has tightened the rules on what counts as qualifying expenditure for cloud compute costs, so you need to get the detail right.</p>
 
 <p>As ICAEW qualified accountants working exclusively with agency founders, we see a lot of claims where cloud costs are either missed entirely or included incorrectly. Both mistakes cost you money. This guide covers what qualifies, what does not, and how to structure your claim so it stands up to HMRC scrutiny.</p>

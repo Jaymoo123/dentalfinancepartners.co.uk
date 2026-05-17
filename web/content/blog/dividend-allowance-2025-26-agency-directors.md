@@ -1,33 +1,40 @@
 ---
-title: "What Is the Dividend Allowance for Agency Directors in 2025/26 and How to Maximise It"
-slug: "dividend-allowance-2025-26-agency-directors"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/dividend-allowance-2025-26-agency-directors"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Salary and Dividends"
-metaTitle: "Dividend Allowance 2025/26: Agency Directors' Guide"
-metaDescription: "The dividend allowance drops to £500 in 2025/26. Here is how agency directors can structure salary and dividends to minimise tax. Practical examples"
-altText: "Agency director reviewing dividend tax calculations on a laptop in a UK office with a calculator and printed accounts nearby"
-image: "/blog/dividend-allowance-2025-26-agency-directors.jpg"
+title: What Is the Dividend Allowance for Agency Directors in 2025/26 and How to Maximise It
+slug: dividend-allowance-2025-26-agency-directors
+canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/dividend-allowance-2025-26-agency-directors
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Salary and Dividends
+metaTitle: 'Dividend Allowance 2025/26: Agency Directors'' Guide'
+metaDescription: The dividend allowance drops to £500 in 2025/26. Here is how agency directors can structure salary and dividends to minimise tax. Practical examples
+altText: Agency director reviewing dividend tax calculations on a laptop in a UK office with a calculator and printed accounts nearby
+image: /blog/dividend-allowance-2025-26-agency-directors.jpg
 imageCredit:
-  photographer: "Viridiana Rivera"
-  photographerUrl: "https://www.pexels.com/@viridianaor"
-  sourceUrl: "https://www.pexels.com/photo/bright-january-2025-desktop-calendar-image-29997005/"
-  source: "Pexels"
-h1: "What Is the Dividend Allowance for Agency Directors in 2025/26 and How to Maximise It"
-summary: "The dividend allowance for agency directors in 2025/26 is £500. Combined with the personal allowance and basic rate band, a director can take approximately £50,270 in salary and dividends before hitting higher rate tax. This post explains the numbers, the strategy, and the traps."
-schema: ""
+  photographer: Viridiana Rivera
+  photographerUrl: https://www.pexels.com/@viridianaor
+  sourceUrl: https://www.pexels.com/photo/bright-january-2025-desktop-calendar-image-29997005/
+  source: Pexels
+h1: What Is the Dividend Allowance for Agency Directors in 2025/26 and How to Maximise It
+summary: The dividend allowance for agency directors in 2025/26 is £500. Combined with the personal allowance and basic rate band, a director can take approximately £50,270 in salary and dividends before hitting higher rate tax. This post explains the numbers, the strategy, and the traps.
+schema: ''
 faqs:
-  - question: "Can I carry forward unused dividend allowance to the next tax year?"
-    answer: "No. The dividend allowance is a use-it-or-lose-it nil-rate band per tax year. If you take no dividends in 2025/26, you lose the £500 allowance. You cannot carry it forward. The same applies to the personal allowance and basic rate band. Plan your dividend payments each year to make full use of the allowance."
-  - question: "Does the dividend allowance apply to dividends in an ISA?"
-    answer: "No. Dividends earned within an ISA wrapper are tax-free. They do not count toward your dividend allowance or your total income for tax purposes. If you hold shares in your agency through an ISA (which is unusual for a trading company), the dividends are sheltered. For most agency directors, the shares are held personally or through a holding company, not in an ISA."
-  - question: "What happens if I accidentally exceed the dividend allowance?"
-    answer: "You report the excess on your Self Assessment tax return (SA100). HMRC will calculate the tax due at your marginal rate. There is no penalty for exceeding the allowance itself, as long as you report it correctly. The penalty comes if you fail to declare the dividend income. If you are using accounting software like FreeAgent or Xero, the tax calculation should handle it automatically. If you are unsure, ask your accountant before filing."
-  - question: "Can I pay a dividend to myself if the company has made a loss?"
-    answer: "No. Dividends can only be paid from distributable profits (retained earnings after corporation tax). If your agency makes a loss in a year, you cannot legally pay a dividend. Doing so is unlawful and the dividend must be repaid. If you need cash, consider a directors' loan (with the associated tax implications) or wait until the company returns to profit. Check your management accounts or speak to your accountant before declaring any dividend."
+- question: Can I carry forward unused dividend allowance to the next tax year?
+  answer: No. The dividend allowance is a use-it-or-lose-it nil-rate band per tax year. If you take no dividends in 2025/26, you lose the £500 allowance. You cannot carry it forward. The same applies to the personal allowance and basic rate band. Plan your dividend payments each year to make full use of the allowance.
+- question: Does the dividend allowance apply to dividends in an ISA?
+  answer: No. Dividends earned within an ISA wrapper are tax-free. They do not count toward your dividend allowance or your total income for tax purposes. If you hold shares in your agency through an ISA (which is unusual for a trading company), the dividends are sheltered. For most agency directors, the shares are held personally or through a holding company, not in an ISA.
+- question: What happens if I accidentally exceed the dividend allowance?
+  answer: You report the excess on your Self Assessment tax return (SA100). HMRC will calculate the tax due at your marginal rate. There is no penalty for exceeding the allowance itself, as long as you report it correctly. The penalty comes if you fail to declare the dividend income. If you are using accounting software like FreeAgent or Xero, the tax calculation should handle it automatically. If you are unsure, ask your accountant before filing.
+- question: Can I pay a dividend to myself if the company has made a loss?
+  answer: No. Dividends can only be paid from distributable profits (retained earnings after corporation tax). If your agency makes a loss in a year, you cannot legally pay a dividend. Doing so is unlawful and the dividend must be repaid. If you need cash, consider a directors' loan (with the associated tax implications) or wait until the company returns to profit. Check your management accounts or speak to your accountant before declaring any dividend.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- The dividend allowance for 2025/26 is £500, down from £1,000 in 2024/25, and applies to total dividend income from all sources.
+- Agency directors can take up to £50,270 in salary and dividends before hitting higher rate tax, using the personal allowance and basic rate band.
+- Dividends above the £500 allowance are taxed at 8.75% for basic rate, 33.75% for higher rate, and 39.35% for additional rate taxpayers in 2025/26.
+- Taking dividends up to the basic rate limit avoids higher rate tax, but exceeding £50,270 triggers 33.75% tax on the excess dividends.
+- Increasing salary above the NI threshold incurs employee and employer NI, making the salary-dividend mix less tax-efficient than dividends alone for most agency directors.
 ---
-
 <p>The dividend allowance for the 2025/26 tax year is £500. That is down from £1,000 in 2024/25 and £2,000 in 2023/24. If you are an agency director paying yourself through a limited company, this matters a great deal.</p>
 
 <p>Most agency founders use a salary-and-dividend model. You take a small salary up to the National Insurance threshold, then extract the rest as dividends. It is tax-efficient because dividends avoid National Insurance, and the company gets a corporation tax deduction on the salary. But the shrinking dividend allowance means you need to be more deliberate about how you structure your pay.</p>

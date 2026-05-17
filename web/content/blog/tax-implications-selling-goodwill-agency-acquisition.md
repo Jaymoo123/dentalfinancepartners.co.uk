@@ -1,33 +1,40 @@
 ---
-title: "What Are the Tax Implications of Selling Goodwill in an Agency Acquisition?"
-slug: "tax-implications-selling-goodwill-agency-acquisition"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/tax-implications-selling-goodwill-agency-acquisition"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Tax Implications Selling Goodwill in an Agency Acquisition"
-metaDescription: "Selling goodwill in an agency acquisition? Corporation tax, capital gains, BADR and structuring options explained. Real numbers for agency founders."
-altText: "Two agency founders signing acquisition documents at a solicitor's office in Manchester, with paperwork and laptop visible"
-image: "/blog/tax-implications-selling-goodwill-agency-acquisition.jpg"
+title: What Are the Tax Implications of Selling Goodwill in an Agency Acquisition?
+slug: tax-implications-selling-goodwill-agency-acquisition
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/tax-implications-selling-goodwill-agency-acquisition
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: Tax Implications Selling Goodwill in an Agency Acquisition
+metaDescription: Selling goodwill in an agency acquisition? Corporation tax, capital gains, BADR and structuring options explained. Real numbers for agency founders.
+altText: Two agency founders signing acquisition documents at a solicitor's office in Manchester, with paperwork and laptop visible
+image: /blog/tax-implications-selling-goodwill-agency-acquisition.jpg
 imageCredit:
-  photographer: "Mark Youso"
-  photographerUrl: "https://www.pexels.com/@mark-youso-420893752"
-  sourceUrl: "https://www.pexels.com/photo/dollars-and-folder-with-tax-returns-15116663/"
-  source: "Pexels"
-h1: "What Are the Tax Implications of Selling Goodwill in an Agency Acquisition?"
-summary: "Selling goodwill when you exit your agency can trigger corporation tax, capital gains tax, or both. The tax treatment depends on how the deal is structured, whether you sell shares or assets, and whether goodwill is recognised as an intangible asset. This guide walks through the rules with worked examples for agency founders."
-schema: ""
+  photographer: Mark Youso
+  photographerUrl: https://www.pexels.com/@mark-youso-420893752
+  sourceUrl: https://www.pexels.com/photo/dollars-and-folder-with-tax-returns-15116663/
+  source: Pexels
+h1: What Are the Tax Implications of Selling Goodwill in an Agency Acquisition?
+summary: Selling goodwill when you exit your agency can trigger corporation tax, capital gains tax, or both. The tax treatment depends on how the deal is structured, whether you sell shares or assets, and whether goodwill is recognised as an intangible asset. This guide walks through the rules with worked examples for agency founders.
+schema: ''
 faqs:
-  - question: "Is goodwill taxable when selling an agency?"
-    answer: "Yes. Goodwill is taxable. If you sell shares, the goodwill is wrapped into the share gain and taxed as capital gains. If you sell assets, the company pays corporation tax on the goodwill gain, then you pay further tax when extracting the proceeds. The total tax bill is usually higher on an asset sale."
-  - question: "Can I avoid tax on goodwill by selling it personally?"
-    answer: "Rarely. HMRC challenges personal goodwill arguments aggressively. You would need to prove the goodwill belongs to you personally, not the company. Most agency structures mean the company owns the client relationships. Retrofit arguments at exit rarely succeed and often trigger full HMRC enquiries."
-  - question: "What is the difference between goodwill in a share sale vs asset sale?"
-    answer: "In a share sale, goodwill stays in the company and is not separately taxed. You pay capital gains tax on the share gain only. In an asset sale, goodwill is sold separately. The company pays corporation tax on the gain, then you pay dividend or capital gains tax when extracting the cash. Asset sales typically mean more total tax for the seller."
-  - question: "How is goodwill valued for tax purposes in an agency sale?"
-    answer: "Goodwill is valued based on the agency's recurring revenue, client concentration, brand strength, staff retention, and profitability. You need a formal valuation report from a specialist firm. HMRC can challenge informal valuations. Agencies with strong retainer books and diversified client bases command higher goodwill multiples."
+- question: Is goodwill taxable when selling an agency?
+  answer: Yes. Goodwill is taxable. If you sell shares, the goodwill is wrapped into the share gain and taxed as capital gains. If you sell assets, the company pays corporation tax on the goodwill gain, then you pay further tax when extracting the proceeds. The total tax bill is usually higher on an asset sale.
+- question: Can I avoid tax on goodwill by selling it personally?
+  answer: Rarely. HMRC challenges personal goodwill arguments aggressively. You would need to prove the goodwill belongs to you personally, not the company. Most agency structures mean the company owns the client relationships. Retrofit arguments at exit rarely succeed and often trigger full HMRC enquiries.
+- question: What is the difference between goodwill in a share sale vs asset sale?
+  answer: In a share sale, goodwill stays in the company and is not separately taxed. You pay capital gains tax on the share gain only. In an asset sale, goodwill is sold separately. The company pays corporation tax on the gain, then you pay dividend or capital gains tax when extracting the cash. Asset sales typically mean more total tax for the seller.
+- question: How is goodwill valued for tax purposes in an agency sale?
+  answer: Goodwill is valued based on the agency's recurring revenue, client concentration, brand strength, staff retention, and profitability. You need a formal valuation report from a specialist firm. HMRC can challenge informal valuations. Agencies with strong retainer books and diversified client bases command higher goodwill multiples.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Selling shares in your agency qualifies for Business Asset Disposal Relief at 14% on the first £1m of lifetime gains, with 20% on the remainder.
+- In an asset sale, the company pays 19% or 25% corporation tax on the goodwill gain, then you pay dividend tax or further capital gains tax on extraction.
+- Buyers prefer asset sales because they can claim capital allowances or amortisation relief on purchased goodwill, reducing their tax bill.
+- If goodwill is internally generated, its base cost is zero, so the full sale proceeds allocated to goodwill are subject to corporation tax.
+- A share sale results in a single capital gains tax charge, whereas an asset sale triggers both corporation tax and personal tax on extraction.
 ---
-
 <h2>Goodwill in an Agency Acquisition: What Actually Gets Taxed?</h2>
 
 <p>You have built your agency over five, ten, maybe fifteen years. The client relationships, the brand name, the reputation, the systems you have refined. When you sell, a chunk of the price will be for that intangible value. That is goodwill.</p>

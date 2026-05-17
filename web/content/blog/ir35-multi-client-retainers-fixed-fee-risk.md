@@ -1,33 +1,40 @@
 ---
-title: "IR35 and Multi-Client Retainers: When a Fixed Fee Puts You at Risk"
-slug: "ir35-multi-client-retainers-fixed-fee-risk"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/ir35-multi-client-retainers-fixed-fee-risk"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Contractors and IR35"
-metaTitle: "IR35 Risk of Fixed-Fee Retainers for Multi-Client"
-metaDescription: "Fixed-fee retainers for contractors who work across multiple clients can trigger IR35. Here's how HMRC views control, substitution, and mutuality"
-altText: "UK agency founder reviewing a contractor agreement with a fixed-fee retainer clause, IR35 compliance documents on desk"
-image: "/blog/ir35-multi-client-retainers-fixed-fee-risk.jpg"
+title: 'IR35 and Multi-Client Retainers: When a Fixed Fee Puts You at Risk'
+slug: ir35-multi-client-retainers-fixed-fee-risk
+canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/ir35-multi-client-retainers-fixed-fee-risk
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Contractors and IR35
+metaTitle: IR35 Risk of Fixed-Fee Retainers for Multi-Client
+metaDescription: Fixed-fee retainers for contractors who work across multiple clients can trigger IR35. Here's how HMRC views control, substitution, and mutuality
+altText: UK agency founder reviewing a contractor agreement with a fixed-fee retainer clause, IR35 compliance documents on desk
+image: /blog/ir35-multi-client-retainers-fixed-fee-risk.jpg
 imageCredit:
-  photographer: "Vitaly Gariev"
-  photographerUrl: "https://www.pexels.com/@silverkblack"
-  sourceUrl: "https://www.pexels.com/photo/business-professional-on-phone-in-modern-office-36766751/"
-  source: "Pexels"
-h1: "The IR35 Risk of Using a Fixed-Fee Retainer for a Contractor Who Works Across Multiple Clients"
-summary: "A fixed-fee retainer for a contractor who works across multiple clients sounds like a clean arrangement. But HMRC may see it differently. Here's how to structure it without triggering IR35."
-schema: ""
+  photographer: Vitaly Gariev
+  photographerUrl: https://www.pexels.com/@silverkblack
+  sourceUrl: https://www.pexels.com/photo/business-professional-on-phone-in-modern-office-36766751/
+  source: Pexels
+h1: The IR35 Risk of Using a Fixed-Fee Retainer for a Contractor Who Works Across Multiple Clients
+summary: A fixed-fee retainer for a contractor who works across multiple clients sounds like a clean arrangement. But HMRC may see it differently. Here's how to structure it without triggering IR35.
+schema: ''
 faqs:
-  - question: "Does a contractor working for multiple clients automatically avoid IR35?"
-    answer: "No. HMRC assesses each engagement separately. A contractor can have ten clients and still be inside IR35 with one of them if the working practices show control, mutuality of obligation, and no genuine substitution. The multi-client factor is relevant but not decisive."
-  - question: "What is the safest way to pay a multi-client contractor on a retainer?"
-    answer: "Structure the retainer around defined deliverables, not time. Include a genuine substitution clause with no veto rights. Set a fixed term (e.g., three months) with regular reviews. Ensure the contractor bears financial risk and does not receive employee benefits. Invoice monthly based on output, not hours."
-  - question: "Do I need to issue an SDS for a contractor who works for other agencies?"
-    answer: "Yes, if your agency is medium or large (turnover over £10.2m, balance sheet over £5.1m, or over 50 employees). You must issue a Status Determination Statement before the contractor starts, regardless of their other clients. Small agencies are not required to issue an SDS but should still assess IR35 risk to avoid liability."
-  - question: "Can HMRC pursue me for IR35 if the contractor works for multiple agencies?"
-    answer: "Yes. HMRC can pursue the fee-paying agency (you) for unpaid tax and NI if the contractor is found to be inside IR35. The contractor's other clients do not affect your liability. If your engagement shows employment characteristics, you are responsible for the tax and NI due on the payments you made."
+- question: Does a contractor working for multiple clients automatically avoid IR35?
+  answer: No. HMRC assesses each engagement separately. A contractor can have ten clients and still be inside IR35 with one of them if the working practices show control, mutuality of obligation, and no genuine substitution. The multi-client factor is relevant but not decisive.
+- question: What is the safest way to pay a multi-client contractor on a retainer?
+  answer: Structure the retainer around defined deliverables, not time. Include a genuine substitution clause with no veto rights. Set a fixed term (e.g., three months) with regular reviews. Ensure the contractor bears financial risk and does not receive employee benefits. Invoice monthly based on output, not hours.
+- question: Do I need to issue an SDS for a contractor who works for other agencies?
+  answer: Yes, if your agency is medium or large (turnover over £10.2m, balance sheet over £5.1m, or over 50 employees). You must issue a Status Determination Statement before the contractor starts, regardless of their other clients. Small agencies are not required to issue an SDS but should still assess IR35 risk to avoid liability.
+- question: Can HMRC pursue me for IR35 if the contractor works for multiple agencies?
+  answer: Yes. HMRC can pursue the fee-paying agency (you) for unpaid tax and NI if the contractor is found to be inside IR35. The contractor's other clients do not affect your liability. If your engagement shows employment characteristics, you are responsible for the tax and NI due on the payments you made.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A fixed-fee retainer can create mutuality of obligation, a key IR35 indicator, if the contractor cannot refuse work without losing the retainer.
+- HMRC assesses each engagement separately, so a contractor working for multiple clients does not automatically keep them outside IR35.
+- Control over output, such as requiring attendance at stand-ups or use of your Slack, signals employment regardless of a flat fee structure.
+- Without a genuine right of substitution in the contract and practice, you lose one of the strongest defences against an IR35 challenge.
+- HMRC investigates written contracts, working practices, and financial reality, not just the contractor's overall portfolio of clients.
 ---
-
 <p>You have a contractor who works for you two days a week. They also work for two other agencies. You pay them a flat £2,500 per month, same amount every month, regardless of how many hours they actually put in. It is simple. It is predictable. And it might be the exact thing that puts you inside IR35.</p>
 
 <p>This is the fixed-fee retainer trap. It feels like a clean commercial arrangement. In reality, it can look to HMRC like disguised employment. The fact that the contractor works for other clients is not enough on its own to keep you safe. HMRC looks at the <em>nature of the engagement</em> with you, not the contractor's overall portfolio.</p>

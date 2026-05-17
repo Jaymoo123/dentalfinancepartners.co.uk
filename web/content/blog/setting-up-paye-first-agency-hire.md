@@ -1,33 +1,40 @@
 ---
-title: "Setting Up PAYE for Your First Agency Employee: A Step-by-Step Guide"
-slug: "setting-up-paye-first-agency-hire"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/setting-up-paye-first-agency-hire"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "PAYE agency first employee: step-by-step setup guide"
-metaDescription: "Hiring your first employee? Here's exactly how to set up PAYE for your agency. RTI, payroll software, employer NI, and what HMRC expects from day one."
-altText: "Agency founder reviewing payroll documents on a laptop in a modern UK office"
-image: "/blog/setting-up-paye-first-agency-hire.jpg"
+title: 'Setting Up PAYE for Your First Agency Employee: A Step-by-Step Guide'
+slug: setting-up-paye-first-agency-hire
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/setting-up-paye-first-agency-hire
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: 'PAYE agency first employee: step-by-step setup guide'
+metaDescription: Hiring your first employee? Here's exactly how to set up PAYE for your agency. RTI, payroll software, employer NI, and what HMRC expects from day one.
+altText: Agency founder reviewing payroll documents on a laptop in a modern UK office
+image: /blog/setting-up-paye-first-agency-hire.jpg
 imageCredit:
-  photographer: "Gustavo Fring"
-  photographerUrl: "https://www.pexels.com/@gustavo-fring"
-  sourceUrl: "https://www.pexels.com/photo/colleagues-working-together-7156224/"
-  source: "Pexels"
-h1: "Setting Up PAYE for Your First Agency Employee"
-summary: "Hiring your first agency employee means setting up PAYE. Here's exactly what you need to do, from registering with HMRC to running your first payroll. No fluff, just the practical steps."
-schema: ""
+  photographer: Gustavo Fring
+  photographerUrl: https://www.pexels.com/@gustavo-fring
+  sourceUrl: https://www.pexels.com/photo/colleagues-working-together-7156224/
+  source: Pexels
+h1: Setting Up PAYE for Your First Agency Employee
+summary: Hiring your first agency employee means setting up PAYE. Here's exactly what you need to do, from registering with HMRC to running your first payroll. No fluff, just the practical steps.
+schema: ''
 faqs:
-  - question: "What is the first step to set up PAYE for my first agency employee?"
-    answer: "Register as an employer with HMRC online through your business tax account. You need your company UTR and Corporation Tax UTR. Register at least two weeks before your employee's first payday to allow time for HMRC to process your application and send your employer reference number."
-  - question: "Do I need payroll software to run PAYE?"
-    answer: "Yes. HMRC requires all employers to submit payroll data in real time using RTI-compatible software. You can use HMRC's free Basic PAYE Tools for a single employee on a simple salary. For more complex situations, commercial software like Xero Payroll or outsourcing to your accountant is recommended."
-  - question: "What happens if I forget to set up a workplace pension for my first employee?"
-    answer: "The Pensions Regulator will contact you and can issue fines. You must auto-enrol eligible employees and complete a declaration of compliance within five months of your staging date. The minimum employer contribution is 3% of qualifying earnings."
-  - question: "Can I pay my first employee through dividends instead of salary to avoid PAYE?"
-    answer: "No. Dividends can only be paid to shareholders, not employees. If you hire someone who is not a director and shareholder, you must pay them through PAYE. Dividends are a distribution of profits, not a salary, and cannot replace employment income."
+- question: What is the first step to set up PAYE for my first agency employee?
+  answer: Register as an employer with HMRC online through your business tax account. You need your company UTR and Corporation Tax UTR. Register at least two weeks before your employee's first payday to allow time for HMRC to process your application and send your employer reference number.
+- question: Do I need payroll software to run PAYE?
+  answer: Yes. HMRC requires all employers to submit payroll data in real time using RTI-compatible software. You can use HMRC's free Basic PAYE Tools for a single employee on a simple salary. For more complex situations, commercial software like Xero Payroll or outsourcing to your accountant is recommended.
+- question: What happens if I forget to set up a workplace pension for my first employee?
+  answer: The Pensions Regulator will contact you and can issue fines. You must auto-enrol eligible employees and complete a declaration of compliance within five months of your staging date. The minimum employer contribution is 3% of qualifying earnings.
+- question: Can I pay my first employee through dividends instead of salary to avoid PAYE?
+  answer: No. Dividends can only be paid to shareholders, not employees. If you hire someone who is not a director and shareholder, you must pay them through PAYE. Dividends are a distribution of profits, not a salary, and cannot replace employment income.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Register as an employer with HMRC before your employee's first payday to avoid fines for late registration.
+- You must use HMRC-recognised payroll software to submit Real Time Information (RTI) returns; manual payroll is not allowed.
+- Free Basic PAYE Tools from HMRC works for a single employee, but commercial software like Xero Payroll offers better integration.
+- Outsourcing payroll to your accountant removes administrative burden and ensures compliance with HMRC rules.
+- Penalties for late RTI filing or late payment of tax can cost hundreds of pounds, even for a small agency.
 ---
-
 <p>You've hired your first employee. Maybe it's a junior designer to handle the overflow work you've been doing yourself. Or a part-time account manager to free you up for new business. Either way, you now need to set up PAYE. And if you've never done it before, it can feel like a maze of forms, deadlines, and acronyms.</p>
 
 <p>This guide walks you through exactly what you need to do to set up PAYE for your first agency hire. I'll cover registration, payroll software, RTI reporting, and the ongoing obligations you cannot ignore. By the end, you'll know exactly what to do before your new starter's first day.</p>

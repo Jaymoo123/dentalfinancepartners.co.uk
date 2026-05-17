@@ -1,33 +1,40 @@
 ---
-title: "When Should a Freelancer Incorporate Their Business Into an Agency?"
-slug: "when-to-incorporate-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/when-to-incorporate-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "When to Incorporate Agency: Key Milestones for Freelancers"
-metaDescription: "The right time to incorporate depends on turnover, liability, and growth plans. We explain the triggers for moving from sole trader to limited company."
-altText: "UK agency founder reviewing incorporation documents with accountant in modern office"
-image: "/blog/when-to-incorporate-agency.jpg"
+title: When Should a Freelancer Incorporate Their Business Into an Agency?
+slug: when-to-incorporate-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/when-to-incorporate-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Incorporation and Structure
+metaTitle: 'When to Incorporate Agency: Key Milestones for Freelancers'
+metaDescription: The right time to incorporate depends on turnover, liability, and growth plans. We explain the triggers for moving from sole trader to limited company.
+altText: UK agency founder reviewing incorporation documents with accountant in modern office
+image: /blog/when-to-incorporate-agency.jpg
 imageCredit:
-  photographer: "Ofspace LLC, Culture"
-  photographerUrl: "https://www.pexels.com/@ofspace"
-  sourceUrl: "https://www.pexels.com/photo/high-angle-shot-of-a-man-in-yellow-shirt-wearing-eyeglasses-while-using-a-laptop-8128188/"
-  source: "Pexels"
-h1: "When to Incorporate Your Freelance Business Into an Agency"
-summary: "Moving from sole trader to limited company is a major step for any freelancer. We cover the turnover thresholds, liability triggers, and tax implications that determine when to incorporate your freelance business into an agency."
-schema: ""
+  photographer: Ofspace LLC, Culture
+  photographerUrl: https://www.pexels.com/@ofspace
+  sourceUrl: https://www.pexels.com/photo/high-angle-shot-of-a-man-in-yellow-shirt-wearing-eyeglasses-while-using-a-laptop-8128188/
+  source: Pexels
+h1: When to Incorporate Your Freelance Business Into an Agency
+summary: Moving from sole trader to limited company is a major step for any freelancer. We cover the turnover thresholds, liability triggers, and tax implications that determine when to incorporate your freelance business into an agency.
+schema: ''
 faqs:
-  - question: "What turnover should I have before incorporating my freelance agency?"
-    answer: "There is no fixed number, but most accountants recommend incorporating once your profit exceeds £50,000 per year. Below that level, the tax benefits are marginal and the administrative costs of running a limited company often outweigh the savings. At higher profits, the ability to retain earnings in the company and control your income through dividends becomes more valuable."
-  - question: "Can I stay as a sole trader and hire employees?"
-    answer: "Yes, you can. Sole traders can hire staff and operate PAYE. But the practicalities are messier. You need to register as an employer, run payroll, and handle pension auto-enrolment. Most accountants recommend incorporating before hiring because the company structure separates your personal and business affairs cleanly and makes compliance easier."
-  - question: "How much does it cost to incorporate a limited company in the UK?"
-    answer: "Registering with Companies House costs £12 online. The bigger costs come from ongoing compliance: annual accounts filing (expect £500-£1,500 for an accountant), Corporation Tax returns, payroll software, and a business bank account. Total annual running costs for a simple limited company are typically £1,000-£2,500 depending on complexity."
-  - question: "Do I need to tell my clients when I incorporate?"
-    answer: "Yes. Your contracts are with you as a sole trader, not with your new company. You need to novate or reissue each contract in the company's name. Most clients are fine with the change, but you should give them notice and update your invoicing details, VAT registration, and payment terms."
+- question: What turnover should I have before incorporating my freelance agency?
+  answer: There is no fixed number, but most accountants recommend incorporating once your profit exceeds £50,000 per year. Below that level, the tax benefits are marginal and the administrative costs of running a limited company often outweigh the savings. At higher profits, the ability to retain earnings in the company and control your income through dividends becomes more valuable.
+- question: Can I stay as a sole trader and hire employees?
+  answer: Yes, you can. Sole traders can hire staff and operate PAYE. But the practicalities are messier. You need to register as an employer, run payroll, and handle pension auto-enrolment. Most accountants recommend incorporating before hiring because the company structure separates your personal and business affairs cleanly and makes compliance easier.
+- question: How much does it cost to incorporate a limited company in the UK?
+  answer: 'Registering with Companies House costs £12 online. The bigger costs come from ongoing compliance: annual accounts filing (expect £500-£1,500 for an accountant), Corporation Tax returns, payroll software, and a business bank account. Total annual running costs for a simple limited company are typically £1,000-£2,500 depending on complexity.'
+- question: Do I need to tell my clients when I incorporate?
+  answer: Yes. Your contracts are with you as a sole trader, not with your new company. You need to novate or reissue each contract in the company's name. Most clients are fine with the change, but you should give them notice and update your invoicing details, VAT registration, and payment terms.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Incorporating before £40,000 turnover is usually premature due to administrative costs outweighing tax benefits.
+- At £50,000 profit, sole traders face 42% marginal tax (40% income tax plus 2% Class 4 NI), making incorporation worth considering.
+- Through a limited company, you can retain profits to defer higher-rate dividend tax, reducing your overall tax burden.
+- The tax advantage of incorporation depends on retaining profits; drawing all profits may result in higher tax than as a sole trader.
+- For 2025/26, corporation tax is 19% or 25%, dividend tax rates are 8.75%, 33.75%, and 39.35%, and the VAT threshold is £90,000.
 ---
-
 <p>You are billing consistently. Your client list is growing. You have started thinking about hiring someone. And you are wondering: is now the right time to incorporate?</p>
 
 <p>The question of <strong>when to incorporate agency</strong> operations from a sole trader setup is one we hear constantly at Agency Founder Finance. It is not a simple yes-or-no answer. The right timing depends on your turnover, your tax position, your liability exposure, and your growth ambitions.</p>

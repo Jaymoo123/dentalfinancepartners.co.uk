@@ -1,33 +1,40 @@
 ---
-title: "Red Flags Your Agency Accountant Isn't Proactive Enough (And What to Do)"
-slug: "red-flags-agency-accountant-not-proactive"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/red-flags-agency-accountant-not-proactive"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Accountant Services"
-metaTitle: "Red Flags Your Agency Accountant Isn't Proactive (UK Agency"
-metaDescription: "Spotting the red flags your agency accountant isn't proactive? We cover late returns, no planning, no software advice, and how to fix it."
-altText: "Agency founder reviewing financial reports with an accountant in a modern UK office"
-image: "/blog/red-flags-agency-accountant-not-proactive.jpg"
+title: Red Flags Your Agency Accountant Isn't Proactive Enough (And What to Do)
+slug: red-flags-agency-accountant-not-proactive
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/red-flags-agency-accountant-not-proactive
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Accountant Services
+metaTitle: Red Flags Your Agency Accountant Isn't Proactive (UK Agency
+metaDescription: Spotting the red flags your agency accountant isn't proactive? We cover late returns, no planning, no software advice, and how to fix it.
+altText: Agency founder reviewing financial reports with an accountant in a modern UK office
+image: /blog/red-flags-agency-accountant-not-proactive.jpg
 imageCredit:
-  photographer: "Mikhail Nilov"
-  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
-  sourceUrl: "https://www.pexels.com/photo/a-woman-computing-with-a-calculator-8296974/"
-  source: "Pexels"
-h1: "Red Flags Your Agency Accountant Isn't Proactive Enough"
-summary: "If you're an agency founder and your accountant only calls you at year-end, you've got a problem. Here are the warning signs that your accountant is reactive, not proactive — and what to do about it."
-schema: ""
+  photographer: Mikhail Nilov
+  photographerUrl: https://www.pexels.com/@mikhail-nilov
+  sourceUrl: https://www.pexels.com/photo/a-woman-computing-with-a-calculator-8296974/
+  source: Pexels
+h1: Red Flags Your Agency Accountant Isn't Proactive Enough
+summary: If you're an agency founder and your accountant only calls you at year-end, you've got a problem. Here are the warning signs that your accountant is reactive, not proactive — and what to do about it.
+schema: ''
 faqs:
-  - question: "What's the difference between a proactive and a reactive accountant?"
-    answer: "A reactive accountant files your returns when you ask them to and answers questions you bring to them. A proactive accountant contacts you before deadlines, flags tax planning opportunities, reviews your management accounts for issues, and recommends structural changes before you need them. One is a compliance service. The other is a business advisory service."
-  - question: "How often should my agency accountant contact me?"
-    answer: "At minimum, quarterly. That aligns with VAT returns and management accounts. A good proactive accountant will also contact you before year-end (typically October to December for a March year-end) to discuss tax planning. If you only hear from them once a year when your accounts are due, that's a red flag."
-  - question: "Can a proactive accountant save me more than they cost?"
-    answer: "Almost always. A proactive accountant might cost £3,000-£6,000 per year for a typical agency. But they can save you multiples of that through R&D tax credits (typically £10k-£50k), tax planning (avoiding higher rate bands), pension contributions, and exit planning. The savings usually outweigh the fees by a significant margin."
-  - question: "How do I know if my accountant understands the agency business model?"
-    answer: "Ask them about utilisation rates, gross margin benchmarks, and IR35. A good agency accountant will know that a healthy gross margin for a digital agency is 55-65% and that revenue per head should be above £80k. If they can't answer those questions, they don't understand your business."
+- question: What's the difference between a proactive and a reactive accountant?
+  answer: A reactive accountant files your returns when you ask them to and answers questions you bring to them. A proactive accountant contacts you before deadlines, flags tax planning opportunities, reviews your management accounts for issues, and recommends structural changes before you need them. One is a compliance service. The other is a business advisory service.
+- question: How often should my agency accountant contact me?
+  answer: At minimum, quarterly. That aligns with VAT returns and management accounts. A good proactive accountant will also contact you before year-end (typically October to December for a March year-end) to discuss tax planning. If you only hear from them once a year when your accounts are due, that's a red flag.
+- question: Can a proactive accountant save me more than they cost?
+  answer: Almost always. A proactive accountant might cost £3,000-£6,000 per year for a typical agency. But they can save you multiples of that through R&D tax credits (typically £10k-£50k), tax planning (avoiding higher rate bands), pension contributions, and exit planning. The savings usually outweigh the fees by a significant margin.
+- question: How do I know if my accountant understands the agency business model?
+  answer: Ask them about utilisation rates, gross margin benchmarks, and IR35. A good agency accountant will know that a healthy gross margin for a digital agency is 55-65% and that revenue per head should be above £80k. If they can't answer those questions, they don't understand your business.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A proactive accountant flags projected profits and tax-saving options like pension contributions before the 5 April year-end, not after.
+- Management accounts without commentary on margin drops, debtor days, or utilisation rates are just data, not proactive guidance.
+- Your accountant should initiate ongoing tax planning conversations about salary/dividend mix, R&D credits, and company structure, not wait for you to ask.
+- If your accountant doesn't discuss utilisation rate, retainer income, or IR35 compliance, they don't understand your agency model.
+- A reactive accountant disappears for 11 months and only contacts you with a tax bill; a proactive one advises you throughout the year.
 ---
-
 <p>You hired an accountant to do more than file your tax return. You hired them to help you run a better agency.</p>
 
 <p>But if you're reading this, something feels off. You're not getting the guidance you expected. The questions you ask go unanswered for days. And when you do get answers, they're short, technical, and don't connect to how your agency actually works.</p>

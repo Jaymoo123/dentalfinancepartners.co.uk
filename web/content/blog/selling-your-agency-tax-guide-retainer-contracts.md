@@ -1,33 +1,40 @@
 ---
-title: "What Happens to Your Agency's Retainer Contracts When You Sell: Tax and Legal Implications"
-slug: "selling-your-agency-tax-guide-retainer-contracts"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/selling-your-agency-tax-guide-retainer-contracts"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Selling Your Agency Tax Guide: Retainer Contract Treatment"
-metaDescription: "What happens to retainer contracts when you sell your agency? Practical tax treatment of transferring client agreements, CGT relief, and legal steps"
-altText: "Agency founder reviewing a sale agreement and retainer contract list with an accountant in a Manchester office"
-image: "/blog/selling-your-agency-tax-guide-retainer-contracts.jpg"
+title: 'What Happens to Your Agency''s Retainer Contracts When You Sell: Tax and Legal Implications'
+slug: selling-your-agency-tax-guide-retainer-contracts
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/selling-your-agency-tax-guide-retainer-contracts
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'Selling Your Agency Tax Guide: Retainer Contract Treatment'
+metaDescription: What happens to retainer contracts when you sell your agency? Practical tax treatment of transferring client agreements, CGT relief, and legal steps
+altText: Agency founder reviewing a sale agreement and retainer contract list with an accountant in a Manchester office
+image: /blog/selling-your-agency-tax-guide-retainer-contracts.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-a-document-on-a-wooden-table-7841822/"
-  source: "Pexels"
-h1: "What Happens to Your Agency's Retainer Contracts When You Sell: Tax and Legal Implications"
-summary: "Selling your agency means transferring its most valuable asset: retainer contracts. But how HMRC treats those contracts affects the tax you pay. This guide covers the practical tax and legal implications of retainer transfers in an agency sale."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/close-up-shot-of-a-document-on-a-wooden-table-7841822/
+  source: Pexels
+h1: 'What Happens to Your Agency''s Retainer Contracts When You Sell: Tax and Legal Implications'
+summary: 'Selling your agency means transferring its most valuable asset: retainer contracts. But how HMRC treats those contracts affects the tax you pay. This guide covers the practical tax and legal implications of retainer transfers in an agency sale.'
+schema: ''
 faqs:
-  - question: "Do retainer contracts qualify for Business Asset Disposal Relief (BADR)?"
-    answer: "They can, but it depends on how they are classified. If the retainer contracts are treated as part of the goodwill of the business, they qualify for BADR at 14% (for disposals from 6 April 2025) CGT. If they are treated as separate assets (like a licence or contractual right), they may not qualify. The key factor is whether the contracts are personal to you or transferable business assets. Standardised company contracts with a team managing the relationship are more likely to qualify."
-  - question: "What happens if a retainer contract has a non-assignment clause?"
-    answer: "You cannot sell that contract without the client's consent. You have three options: get written consent before completion, use a novation agreement (client terminates old contract and signs a new one with the buyer), or structure the sale as a share sale where the contracts stay with the company. Most buyers will insist on seeing all contracts before exchange, so check for these clauses early."
-  - question: "Do I pay VAT on the sale of retainer contracts?"
-    answer: "Yes, if you sell via asset sale. The sale of goodwill and contractual rights is standard-rated for VAT at 20%. If £200,000 of your sale price is allocated to retainer contracts, you must charge £40,000 in VAT. The buyer can reclaim this if they are VAT-registered. Share sales are exempt from VAT, which is one reason smaller agencies prefer that structure."
-  - question: "How is work in progress on retainer contracts taxed in a sale?"
-    answer: "Work in progress (WIP) is treated as trading income, not capital gains. You pay income tax at your marginal rate (40% or 45%) on WIP, not CGT at 10%. To minimise this, invoice all retainer fees up to the completion date before the sale completes. That moves the income from WIP to cash, and the buyer only purchases future retainer income."
+- question: Do retainer contracts qualify for Business Asset Disposal Relief (BADR)?
+  answer: They can, but it depends on how they are classified. If the retainer contracts are treated as part of the goodwill of the business, they qualify for BADR at 14% (for disposals from 6 April 2025) CGT. If they are treated as separate assets (like a licence or contractual right), they may not qualify. The key factor is whether the contracts are personal to you or transferable business assets. Standardised company contracts with a team managing the relationship are more likely to qualify.
+- question: What happens if a retainer contract has a non-assignment clause?
+  answer: 'You cannot sell that contract without the client''s consent. You have three options: get written consent before completion, use a novation agreement (client terminates old contract and signs a new one with the buyer), or structure the sale as a share sale where the contracts stay with the company. Most buyers will insist on seeing all contracts before exchange, so check for these clauses early.'
+- question: Do I pay VAT on the sale of retainer contracts?
+  answer: Yes, if you sell via asset sale. The sale of goodwill and contractual rights is standard-rated for VAT at 20%. If £200,000 of your sale price is allocated to retainer contracts, you must charge £40,000 in VAT. The buyer can reclaim this if they are VAT-registered. Share sales are exempt from VAT, which is one reason smaller agencies prefer that structure.
+- question: How is work in progress on retainer contracts taxed in a sale?
+  answer: Work in progress (WIP) is treated as trading income, not capital gains. You pay income tax at your marginal rate (40% or 45%) on WIP, not CGT at 10%. To minimise this, invoice all retainer fees up to the completion date before the sale completes. That moves the income from WIP to cash, and the buyer only purchases future retainer income.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- In an asset sale, retainer contracts are treated as contractual rights, not goodwill, affecting how the purchase price is allocated for tax purposes.
+- Selling via share sale avoids retainer contract renegotiation and lets you pay CGT at 14% with Business Asset Disposal Relief (rising to 18% from 6 April 2026).
+- Buyers prefer asset sales to avoid inheriting liabilities, but sellers must understand how each retainer contract's sale proceeds are taxed.
+- Listing retainer contracts individually in the sale agreement allows the buyer to confirm enforceability, check non-assignment clauses, and allocate the purchase price.
+- Most agency sales under £5 million are asset sales, where the buyer selects specific assets including retainer contracts, leaving the seller to liquidate the company.
 ---
-
 <p>When you sell your agency, you are not selling the desks, the laptops, or the office plants. You are selling the right to bill clients for ongoing work. Retainer contracts are the core asset in most agency sales. But the way those contracts are treated for tax purposes is rarely straightforward.</p>
 
 <p>Most agency founders focus on the headline valuation and the Capital Gains Tax (CGT) rate. They forget that the structure of the sale — asset sale versus share sale — changes how HMRC treats the retainer income you have already earned and the future income you are selling. This <strong>selling your agency tax guide</strong> walks through what actually happens to retainer contracts at exit, with real numbers and practical steps.</p>

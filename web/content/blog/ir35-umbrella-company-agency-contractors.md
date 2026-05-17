@@ -1,33 +1,40 @@
 ---
-title: "IR35 and Umbrella Companies: What Agency Owners Need to Know Before Hiring Contractors"
-slug: "ir35-umbrella-company-agency-contractors"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/ir35-umbrella-company-agency-contractors"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Contractors and IR35"
-metaTitle: "IR35 Umbrella Company Agency Contractors: The Compliance"
-metaDescription: "Hiring contractors through an umbrella company doesn’t automatically fix IR35. Here’s what UK agency owners must check to avoid HMRC penalties."
-altText: "Agency founder reviewing contractor contracts and IR35 status determination statements at a desk in a modern UK office."
-image: "/blog/ir35-umbrella-company-agency-contractors.jpg"
+title: 'IR35 and Umbrella Companies: What Agency Owners Need to Know Before Hiring Contractors'
+slug: ir35-umbrella-company-agency-contractors
+canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/ir35-umbrella-company-agency-contractors
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Contractors and IR35
+metaTitle: 'IR35 Umbrella Company Agency Contractors: The Compliance'
+metaDescription: Hiring contractors through an umbrella company doesn’t automatically fix IR35. Here’s what UK agency owners must check to avoid HMRC penalties.
+altText: Agency founder reviewing contractor contracts and IR35 status determination statements at a desk in a modern UK office.
+image: /blog/ir35-umbrella-company-agency-contractors.jpg
 imageCredit:
-  photographer: "Joanna Niewiadomska"
-  photographerUrl: "https://www.pexels.com/@joanna-niewiadomska-2161252298"
-  sourceUrl: "https://www.pexels.com/photo/colorful-umbrellas-hanging-against-blue-sky-37508445/"
-  source: "Pexels"
-h1: "IR35 and Umbrella Companies: What Agency Owners Need to Know Before Hiring Contractors"
-summary: "Hiring contractors through an umbrella company is common in UK agencies, but it doesn’t automatically mean you’re IR35 compliant. This guide explains the real risks, the documentation you need, and how to protect your agency from HMRC penalties."
-schema: ""
+  photographer: Joanna Niewiadomska
+  photographerUrl: https://www.pexels.com/@joanna-niewiadomska-2161252298
+  sourceUrl: https://www.pexels.com/photo/colorful-umbrellas-hanging-against-blue-sky-37508445/
+  source: Pexels
+h1: 'IR35 and Umbrella Companies: What Agency Owners Need to Know Before Hiring Contractors'
+summary: Hiring contractors through an umbrella company is common in UK agencies, but it doesn’t automatically mean you’re IR35 compliant. This guide explains the real risks, the documentation you need, and how to protect your agency from HMRC penalties.
+schema: ''
 faqs:
-  - question: "Do I still need to issue an SDS if the contractor is paid through an umbrella company?"
-    answer: "Yes. The umbrella company is a payroll intermediary, not the deemed employer. Under the off-payroll working rules, the agency (or end-client) is responsible for issuing the Status Determination Statement. The umbrella handles PAYE and NI, but the IR35 determination is your responsibility. If you do not issue an SDS before the contractor starts, you are non-compliant from day one."
-  - question: "Can HMRC come after my agency if the umbrella company gets it wrong?"
-    answer: "Yes. HMRC will pursue the fee-payer, which is typically the agency, not the umbrella. If the umbrella has not taken on IR35 liability in their contract, the liability sits with you. Read your umbrella agreement carefully. Most standard umbrella contracts explicitly pass the IR35 risk back to the agency. If HMRC determines the contractor was inside IR35, your agency will be liable for the unpaid tax, NI, interest, and penalties."
-  - question: "What is the difference between an umbrella company and a limited company contractor for IR35 purposes?"
-    answer: "The IR35 rules apply the same way to both. The key difference is who handles the tax. A limited company contractor is responsible for their own tax returns and IR35 compliance. An umbrella company contractor has the umbrella handle payroll, but the IR35 determination still sits with the agency. The payment structure does not change the employment status tests. If the contractor is controlled like an employee, they are inside IR35 regardless of whether they use a limited company or an umbrella."
-  - question: "What records should I keep to prove a contractor is outside IR35?"
-    answer: "Keep the Status Determination Statement (with your reasoning), the contract between your agency and the umbrella, evidence that the contractor has their own insurance and tools, records showing they work for multiple clients, and any correspondence about substitution rights. HMRC can request these up to four years after the tax year ends. Store them digitally with your accounting records in Xero or QuickBooks, and keep a separate folder for each contractor engagement."
+- question: Do I still need to issue an SDS if the contractor is paid through an umbrella company?
+  answer: Yes. The umbrella company is a payroll intermediary, not the deemed employer. Under the off-payroll working rules, the agency (or end-client) is responsible for issuing the Status Determination Statement. The umbrella handles PAYE and NI, but the IR35 determination is your responsibility. If you do not issue an SDS before the contractor starts, you are non-compliant from day one.
+- question: Can HMRC come after my agency if the umbrella company gets it wrong?
+  answer: Yes. HMRC will pursue the fee-payer, which is typically the agency, not the umbrella. If the umbrella has not taken on IR35 liability in their contract, the liability sits with you. Read your umbrella agreement carefully. Most standard umbrella contracts explicitly pass the IR35 risk back to the agency. If HMRC determines the contractor was inside IR35, your agency will be liable for the unpaid tax, NI, interest, and penalties.
+- question: What is the difference between an umbrella company and a limited company contractor for IR35 purposes?
+  answer: The IR35 rules apply the same way to both. The key difference is who handles the tax. A limited company contractor is responsible for their own tax returns and IR35 compliance. An umbrella company contractor has the umbrella handle payroll, but the IR35 determination still sits with the agency. The payment structure does not change the employment status tests. If the contractor is controlled like an employee, they are inside IR35 regardless of whether they use a limited company or an umbrella.
+- question: What records should I keep to prove a contractor is outside IR35?
+  answer: Keep the Status Determination Statement (with your reasoning), the contract between your agency and the umbrella, evidence that the contractor has their own insurance and tools, records showing they work for multiple clients, and any correspondence about substitution rights. HMRC can request these up to four years after the tax year ends. Store them digitally with your accounting records in Xero or QuickBooks, and keep a separate folder for each contractor engagement.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Using an umbrella company does not remove your IR35 liability; as the fee-payer, your agency is responsible for issuing a Status Determination Statement (SDS) before the contractor starts.
+- HMRC applies the same IR35 tests—substitution, control, and mutuality of obligation—regardless of whether the contractor is paid via an umbrella, limited company, or payroll.
+- If HMRC finds the contractor inside IR35, the liability for unpaid tax and NI falls on your agency as the fee-payer, not the umbrella company.
+- You must have an SDS, a compliant contract, and evidence of working practices documented before day one to protect your agency from HMRC penalties.
+- For medium or large agencies under the off-payroll rules, the responsibility for determining IR35 status sits with the end-client or agency acting as deemed employer, not the umbrella.
 ---
-
 <p>If you run a UK agency, you have almost certainly hired contractors through an umbrella company. It is a standard setup across marketing, digital, creative, and recruitment agencies. The contractor joins an umbrella, the umbrella invoices you, and the umbrella handles PAYE and NI. Simple, right?</p>
 
 <p>Not quite.</p>

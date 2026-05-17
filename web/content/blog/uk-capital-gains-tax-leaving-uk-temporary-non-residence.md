@@ -1,33 +1,40 @@
 ---
-title: "UK Capital Gains Tax Leaving UK: The 5 Year Rule That Could Cost You"
-slug: "uk-capital-gains-tax-leaving-uk-temporary-non-residence"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-capital-gains-tax-leaving-uk-temporary-non-residence"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK Capital Gains Tax Leaving UK: 5 Year Temporary"
-metaDescription: "The UK temporary non-residence rule means leaving for under 5 years doesn't reset your CGT position. Here's how it works and what agency founders moving"
-altText: "Agency founder reviewing UK capital gains tax documents at a desk in Dubai, with a laptop and calculator visible"
-image: "/blog/uk-capital-gains-tax-leaving-uk-temporary-non-residence.jpg"
+title: 'UK Capital Gains Tax Leaving UK: The 5 Year Rule That Could Cost You'
+slug: uk-capital-gains-tax-leaving-uk-temporary-non-residence
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-capital-gains-tax-leaving-uk-temporary-non-residence
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK Capital Gains Tax Leaving UK: 5 Year Temporary'
+metaDescription: The UK temporary non-residence rule means leaving for under 5 years doesn't reset your CGT position. Here's how it works and what agency founders moving
+altText: Agency founder reviewing UK capital gains tax documents at a desk in Dubai, with a laptop and calculator visible
+image: /blog/uk-capital-gains-tax-leaving-uk-temporary-non-residence.jpg
 imageCredit:
-  photographer: "www.kaboompics.com"
-  photographerUrl: "https://www.pexels.com/@karola-g"
-  sourceUrl: "https://www.pexels.com/photo/quote-board-on-top-of-cash-bills-4386367/"
-  source: "Pexels"
-h1: "UK Capital Gains Tax Leaving UK: The Temporary Non-Residence Rule That Could Drag You Back for 5 Years"
-summary: "If you leave the UK but return within 5 years, HMRC treats you as if you never left for capital gains tax purposes. Any gains you deferred when you left become immediately chargeable. This catches many agency founders who move to Dubai planning a short stint, then sell shares or property while abroad."
-schema: ""
+  photographer: www.kaboompics.com
+  photographerUrl: https://www.pexels.com/@karola-g
+  sourceUrl: https://www.pexels.com/photo/quote-board-on-top-of-cash-bills-4386367/
+  source: Pexels
+h1: 'UK Capital Gains Tax Leaving UK: The Temporary Non-Residence Rule That Could Drag You Back for 5 Years'
+summary: If you leave the UK but return within 5 years, HMRC treats you as if you never left for capital gains tax purposes. Any gains you deferred when you left become immediately chargeable. This catches many agency founders who move to Dubai planning a short stint, then sell shares or property while abroad.
+schema: ''
 faqs:
-  - question: "What is the UK temporary non-residence rule for capital gains tax?"
-    answer: "The rule says that if you leave the UK and return within 5 complete tax years, HMRC treats you as if you never left for CGT purposes. Any gains you made while non-resident become taxable in the year you return. The rule applies to most assets except UK residential property, which is always taxable in the UK."
-  - question: "How long do I need to stay out of the UK to avoid the temporary non-residence rule?"
-    answer: "You need to be non-resident for 5 complete tax years. This is measured from the date you leave, but it is counted in tax years, not calendar days. For example, if you leave on 1 July 2025, you need to stay non-resident through the 2029/30 tax year and return on or after 6 April 2030 to avoid the rule. Returning even one day early can trigger it."
-  - question: "Does the UK-UAE double tax treaty protect me from the temporary non-residence rule?"
-    answer: "No. The UK's domestic law takes precedence over the treaty for this purpose. The treaty allocates taxing rights between the two countries, but the UK's temporary non-residence rule treats you as if you were UK resident throughout the period. The treaty does not override that. If you return within 5 years, the UK taxes the gain."
-  - question: "Can I sell my agency shares before leaving the UK to avoid the rule?"
-    answer: "Yes, selling before you leave is a common strategy. You pay UK CGT on the gain at the time of sale, then move to Dubai with the after-tax proceeds. There is no deferred gain and no risk from the temporary non-residence rule. The downside is you pay tax immediately rather than deferring it. But for many founders, the certainty is worth the cost."
+- question: What is the UK temporary non-residence rule for capital gains tax?
+  answer: The rule says that if you leave the UK and return within 5 complete tax years, HMRC treats you as if you never left for CGT purposes. Any gains you made while non-resident become taxable in the year you return. The rule applies to most assets except UK residential property, which is always taxable in the UK.
+- question: How long do I need to stay out of the UK to avoid the temporary non-residence rule?
+  answer: You need to be non-resident for 5 complete tax years. This is measured from the date you leave, but it is counted in tax years, not calendar days. For example, if you leave on 1 July 2025, you need to stay non-resident through the 2029/30 tax year and return on or after 6 April 2030 to avoid the rule. Returning even one day early can trigger it.
+- question: Does the UK-UAE double tax treaty protect me from the temporary non-residence rule?
+  answer: No. The UK's domestic law takes precedence over the treaty for this purpose. The treaty allocates taxing rights between the two countries, but the UK's temporary non-residence rule treats you as if you were UK resident throughout the period. The treaty does not override that. If you return within 5 years, the UK taxes the gain.
+- question: Can I sell my agency shares before leaving the UK to avoid the rule?
+  answer: Yes, selling before you leave is a common strategy. You pay UK CGT on the gain at the time of sale, then move to Dubai with the after-tax proceeds. There is no deferred gain and no risk from the temporary non-residence rule. The downside is you pay tax immediately rather than deferring it. But for many founders, the certainty is worth the cost.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- If you return to the UK within 5 complete tax years of leaving, HMRC treats you as if you never left for capital gains tax purposes.
+- You must be non-resident for at least 5 complete tax years to avoid the temporary non-residence rule; returning one day early can trigger a large tax charge.
+- Gains on shares, business assets, and most investments made while abroad become taxable in the year you return if the 5-year rule applies.
+- The rule catches many agency founders moving to Dubai for 3–4 years who sell shares and then return, as the gain becomes chargeable in the UK.
+- Gains on UK residential property are always taxable in the UK regardless of residence, so the temporary non-residence rule is less relevant for those assets.
 ---
-
 <h2>What Happens to Your Capital Gains Tax When You Leave the UK?</h2>
 
 <p>You sell your agency shares for £2.5 million, move to Dubai, and assume the gain is tax-free because you are non-resident. That is correct in many cases. But only if you stay away long enough.</p>

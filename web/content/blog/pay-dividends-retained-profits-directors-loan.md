@@ -1,33 +1,40 @@
 ---
-title: "How to Pay Dividends from Retained Profits Without Creating a Director's Loan"
-slug: "pay-dividends-retained-profits-directors-loan"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/pay-dividends-retained-profits-directors-loan"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Salary and Dividends"
-metaTitle: "Pay Dividends from Retained Profits: No Director's Loan"
-metaDescription: "Learn how to pay dividends from retained profits without accidentally creating a director's loan. Practical guide for UK agency founders with real"
-altText: "UK agency founder reviewing company accounts and dividend paperwork in a modern office"
-image: "/blog/pay-dividends-retained-profits-directors-loan.jpg"
+title: How to Pay Dividends from Retained Profits Without Creating a Director's Loan
+slug: pay-dividends-retained-profits-directors-loan
+canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/pay-dividends-retained-profits-directors-loan
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Salary and Dividends
+metaTitle: 'Pay Dividends from Retained Profits: No Director''s Loan'
+metaDescription: Learn how to pay dividends from retained profits without accidentally creating a director's loan. Practical guide for UK agency founders with real
+altText: UK agency founder reviewing company accounts and dividend paperwork in a modern office
+image: /blog/pay-dividends-retained-profits-directors-loan.jpg
 imageCredit:
-  photographer: "www.kaboompics.com"
-  photographerUrl: "https://www.pexels.com/@karola-g"
-  sourceUrl: "https://www.pexels.com/photo/hands-holding-us-dollar-bills-4968384/"
-  source: "Pexels"
-h1: "How to Pay Dividends from Retained Profits Without Creating a Director's Loan"
-summary: "Paying dividends from retained profits should be straightforward, but many agency founders accidentally create a director's loan account problem. Here's how to get it right, avoid the 33.75% S455 tax charge, and keep your accountant happy."
-schema: ""
+  photographer: www.kaboompics.com
+  photographerUrl: https://www.pexels.com/@karola-g
+  sourceUrl: https://www.pexels.com/photo/hands-holding-us-dollar-bills-4968384/
+  source: Pexels
+h1: How to Pay Dividends from Retained Profits Without Creating a Director's Loan
+summary: Paying dividends from retained profits should be straightforward, but many agency founders accidentally create a director's loan account problem. Here's how to get it right, avoid the 33.75% S455 tax charge, and keep your accountant happy.
+schema: ''
 faqs:
-  - question: "What happens if I pay a dividend when the company has no retained profits?"
-    answer: "That dividend is illegal. It is treated as a distribution out of capital, and the amount you received becomes an overdrawn director's loan. The company must pay S455 tax at 33.75% if the loan is not repaid within nine months of the year end. You also face potential legal issues if the company becomes insolvent later. Always check retained profits exist before paying any dividend."
-  - question: "Can I pay myself a monthly dividend if my agency has retained profits from last year?"
-    answer: "Yes, provided the retained profits from prior periods are sufficient to cover the total dividends you pay this year. If you have £50,000 of retained profits carried forward, you can pay £5,000 per month for ten months even if this year's trading is break-even. Just ensure the cash is actually available in the company bank account before each payment."
-  - question: "How do I fix an overdrawn director's loan account from a dividend I paid last year?"
-    answer: "You have three options. Repay the loan to the company in cash. If you cannot repay, formalise the loan with a written agreement and charge interest at the HMRC official rate. Or, if retained profits existed at the time of the original payment, you can retrospectively document the dividend properly. Speak to your accountant before choosing an option, as the tax consequences differ."
-  - question: "Do I need to file anything with HMRC when I pay a dividend?"
-    answer: "Not immediately. You keep the dividend voucher and board minutes in your company records. On your personal self-assessment tax return (SA100), you report dividends received on the dividend pages. The company does not report dividends paid on the CT600 corporation tax return, though HMRC may ask to see dividend documentation during a compliance check."
+- question: What happens if I pay a dividend when the company has no retained profits?
+  answer: That dividend is illegal. It is treated as a distribution out of capital, and the amount you received becomes an overdrawn director's loan. The company must pay S455 tax at 33.75% if the loan is not repaid within nine months of the year end. You also face potential legal issues if the company becomes insolvent later. Always check retained profits exist before paying any dividend.
+- question: Can I pay myself a monthly dividend if my agency has retained profits from last year?
+  answer: Yes, provided the retained profits from prior periods are sufficient to cover the total dividends you pay this year. If you have £50,000 of retained profits carried forward, you can pay £5,000 per month for ten months even if this year's trading is break-even. Just ensure the cash is actually available in the company bank account before each payment.
+- question: How do I fix an overdrawn director's loan account from a dividend I paid last year?
+  answer: You have three options. Repay the loan to the company in cash. If you cannot repay, formalise the loan with a written agreement and charge interest at the HMRC official rate. Or, if retained profits existed at the time of the original payment, you can retrospectively document the dividend properly. Speak to your accountant before choosing an option, as the tax consequences differ.
+- question: Do I need to file anything with HMRC when I pay a dividend?
+  answer: Not immediately. You keep the dividend voucher and board minutes in your company records. On your personal self-assessment tax return (SA100), you report dividends received on the dividend pages. The company does not report dividends paid on the CT600 corporation tax return, though HMRC may ask to see dividend documentation during a compliance check.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Retained profits are an accounting figure, not cash; paying a dividend without sufficient cash creates an overdrawn director's loan.
+- Before transferring any dividend, you must create a dividend voucher and board minutes approving the payment.
+- If you pay a dividend exceeding available cash, the excess is treated as a director's loan, triggering a 33.75% S455 tax charge if not repaid within nine months.
+- For 2025/26, dividend tax rates are 8.75%, 33.75%, or 39.35% depending on your total income band.
+- The dividend voucher must include the company name, shareholder name, date, amount per share, and total amount, and be created before or on the payment date.
 ---
-
 <p>If you own an agency limited company, dividends are likely your main route to getting money out of the business. The tax efficiency is well known: you take a small salary up to the National Insurance threshold, then extract the rest as dividends, paying dividend tax at 8.75%, 33.75%, or 39.35% depending on your total income.</p>
 
 <p>But here is where it goes wrong. You look at your bank balance, see £40,000 sitting there, and think "that's retained profit, I can take it as a dividend." You transfer the money to your personal account. Later, your accountant prepares the year-end accounts and tells you that you have a director's loan account balance of £12,000.</p>

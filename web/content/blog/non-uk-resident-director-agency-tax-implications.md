@@ -1,31 +1,38 @@
 ---
-title: "What Are the Tax Implications of Having a Non-UK Resident Director in Your Agency?"
-slug: "non-uk-resident-director-agency-tax-implications"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/non-uk-resident-director-agency-tax-implications"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Non-UK Director Tax: Agency Implications Explained"
-metaDescription: "If your agency has a non-UK resident director, corporation tax, payroll, and residency rules change. Here's what you need to know before appointing one."
-altText: "UK agency founder reviewing tax documents with a non-UK resident director in a London office meeting room"
-image: "/blog/non-uk-resident-director-agency-tax-implications.jpg"
+title: What Are the Tax Implications of Having a Non-UK Resident Director in Your Agency?
+slug: non-uk-resident-director-agency-tax-implications
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/non-uk-resident-director-agency-tax-implications
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Non-UK Director Tax: Agency Implications Explained'
+metaDescription: If your agency has a non-UK resident director, corporation tax, payroll, and residency rules change. Here's what you need to know before appointing one.
+altText: UK agency founder reviewing tax documents with a non-UK resident director in a London office meeting room
+image: /blog/non-uk-resident-director-agency-tax-implications.jpg
 imageCredit:
-  photographer: "Polina Tankilevitch"
-  photographerUrl: "https://www.pexels.com/@polina-tankilevitch"
-  sourceUrl: "https://www.pexels.com/photo/taxation-documents-and-coins-on-a-wooden-flat-surface-6927355/"
-  source: "Pexels"
-h1: "What Are the Tax Implications of Having a Non-UK Resident Director in Your Agency?"
-summary: "Appointing a non-UK resident director to your agency board affects corporation tax, payroll, and your company's tax residence status. This guide covers the specific UK tax rules, compliance obligations, and practical steps agency founders need to take."
-schema: ""
+  photographer: Polina Tankilevitch
+  photographerUrl: https://www.pexels.com/@polina-tankilevitch
+  sourceUrl: https://www.pexels.com/photo/taxation-documents-and-coins-on-a-wooden-flat-surface-6927355/
+  source: Pexels
+h1: What Are the Tax Implications of Having a Non-UK Resident Director in Your Agency?
+summary: Appointing a non-UK resident director to your agency board affects corporation tax, payroll, and your company's tax residence status. This guide covers the specific UK tax rules, compliance obligations, and practical steps agency founders need to take.
+schema: ''
 faqs:
-  - question: "Does appointing a non-UK resident director make my agency non-UK tax resident?"
-    answer: "Not automatically. Your agency remains UK tax resident if central management and control (CMAC) stays in the UK. That means the majority of directors should be UK resident, board meetings should take place in the UK, and key strategic decisions should be made here. If your non-UK resident director holds majority voting control or board meetings happen overseas, HMRC could argue the company is non-UK resident. Document your decision-making process in board minutes to protect your position."
-  - question: "Do I need to operate PAYE for a non-UK resident director?"
-    answer: "Only on the portion of their duties performed in the UK. If the director never sets foot in the UK and performs all duties overseas, no UK PAYE is due. But if they attend board meetings in London, visit clients, or work from your office, you must apportion their salary and operate PAYE on the UK element. Keep records of their UK working days. If you pay a salary without operating PAYE and HMRC later determines UK duties were performed, you face a tax bill plus penalties."
-  - question: "Can a non-UK resident director take dividends instead of salary to avoid UK tax?"
-    answer: "Dividends paid to a non-UK resident shareholder are not subject to UK withholding tax, and the director pays tax in their country of residence. This is a common and legitimate approach. But HMRC will challenge it if the director performs significant work for the agency and takes minimal salary but large dividends. This is called a disguised salary arrangement. If the director is also an employee or performs director duties, they should receive a commercial salary for those UK duties. Dividends should reflect shareholding, not work done."
+- question: Does appointing a non-UK resident director make my agency non-UK tax resident?
+  answer: Not automatically. Your agency remains UK tax resident if central management and control (CMAC) stays in the UK. That means the majority of directors should be UK resident, board meetings should take place in the UK, and key strategic decisions should be made here. If your non-UK resident director holds majority voting control or board meetings happen overseas, HMRC could argue the company is non-UK resident. Document your decision-making process in board minutes to protect your position.
+- question: Do I need to operate PAYE for a non-UK resident director?
+  answer: Only on the portion of their duties performed in the UK. If the director never sets foot in the UK and performs all duties overseas, no UK PAYE is due. But if they attend board meetings in London, visit clients, or work from your office, you must apportion their salary and operate PAYE on the UK element. Keep records of their UK working days. If you pay a salary without operating PAYE and HMRC later determines UK duties were performed, you face a tax bill plus penalties.
+- question: Can a non-UK resident director take dividends instead of salary to avoid UK tax?
+  answer: Dividends paid to a non-UK resident shareholder are not subject to UK withholding tax, and the director pays tax in their country of residence. This is a common and legitimate approach. But HMRC will challenge it if the director performs significant work for the agency and takes minimal salary but large dividends. This is called a disguised salary arrangement. If the director is also an employee or performs director duties, they should receive a commercial salary for those UK duties. Dividends should reflect shareholding, not work done.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A company with a non-UK resident director remains UK tax resident if central management and control stays in the UK, which requires the majority of directors to be UK resident and board meetings held in the UK.
+- Dividends paid to a non-UK resident director-shareholder are not subject to UK withholding tax, but interest on a director's loan account to a non-resident is subject to 20% withholding unless a double tax treaty applies.
+- Corporation tax rates for a UK-resident agency remain unchanged at 19% on profits up to £50,000 and 25% above £250,000, regardless of a director's residence.
+- Document board minutes showing where decisions are made to protect UK tax residence status when a non-UK resident director attends meetings remotely.
+- Failure to withhold 20% tax on interest paid to a non-UK resident director can result in HMRC assessing the company for the unpaid tax plus interest and penalties.
 ---
-
 <p>If you are considering appointing a non-UK resident director to your agency board, you are not alone. Many agency founders I speak with are building international teams, opening overseas offices, or bringing in investors or partners based outside the UK. It makes commercial sense. But the tax implications of having a <strong>non-UK resident director in your agency</strong> are rarely straightforward.</p>
 
 <p>This is not a hypothetical scenario. I have worked with a Bristol-based digital agency that appointed a US-based co-founder as director, and with a Manchester PR agency that brought in a non-resident investor to the board. In both cases, the founders assumed it was just a paperwork change. It was not. The tax consequences touched corporation tax, payroll, and the company's own residence status.</p>

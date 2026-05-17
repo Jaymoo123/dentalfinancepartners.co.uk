@@ -1,33 +1,40 @@
 ---
-title: "How to Structure a Vendor Loan Note to Defer CGT When Selling Your Agency"
-slug: "vendor-loan-note-defer-cgt-selling-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/vendor-loan-note-defer-cgt-selling-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Vendor Loan Notes: Defer CGT When Selling Your Agency"
-metaDescription: "Learn how a vendor loan note defers Capital Gains Tax on your agency sale. Structure, tax rates, and worked examples for UK agency founders."
-altText: "UK agency founder reviewing a vendor loan note agreement with an ICAEW accountant in a modern office"
-image: "/blog/vendor-loan-note-defer-cgt-selling-agency.jpg"
+title: How to Structure a Vendor Loan Note to Defer CGT When Selling Your Agency
+slug: vendor-loan-note-defer-cgt-selling-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/vendor-loan-note-defer-cgt-selling-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'Vendor Loan Notes: Defer CGT When Selling Your Agency'
+metaDescription: Learn how a vendor loan note defers Capital Gains Tax on your agency sale. Structure, tax rates, and worked examples for UK agency founders.
+altText: UK agency founder reviewing a vendor loan note agreement with an ICAEW accountant in a modern office
+image: /blog/vendor-loan-note-defer-cgt-selling-agency.jpg
 imageCredit:
-  photographer: "www.kaboompics.com"
-  photographerUrl: "https://www.pexels.com/@karola-g"
-  sourceUrl: "https://www.pexels.com/photo/crop-anonymous-financier-planning-budget-writing-numbers-in-notebook-4386339/"
-  source: "Pexels"
-h1: "How to Structure a Vendor Loan Note to Defer CGT When Selling Your Agency"
-summary: "A vendor loan note lets you defer Capital Gains Tax on part of your agency sale proceeds. We explain how they work, the tax treatment, and when they make sense for agency founders."
-schema: ""
+  photographer: www.kaboompics.com
+  photographerUrl: https://www.pexels.com/@karola-g
+  sourceUrl: https://www.pexels.com/photo/crop-anonymous-financier-planning-budget-writing-numbers-in-notebook-4386339/
+  source: Pexels
+h1: How to Structure a Vendor Loan Note to Defer CGT When Selling Your Agency
+summary: A vendor loan note lets you defer Capital Gains Tax on part of your agency sale proceeds. We explain how they work, the tax treatment, and when they make sense for agency founders.
+schema: ''
 faqs:
-  - question: "What happens to the CGT if the buyer defaults on the vendor loan note?"
-    answer: "If the buyer defaults and you never receive the deferred consideration, you can claim a negligible value claim or a capital loss on the loan note. This loss can be set against the original gain, effectively reducing your CGT. However, HMRC will still expect the tax on the cash element you did receive. You need to act quickly to file the loss claim within the correct time limits. Speak to your accountant immediately if a buyer defaults."
-  - question: "Can I sell my vendor loan note to a third party before it matures?"
-    answer: "Yes, you can sell the loan note, but that triggers a CGT event on the entire remaining gain at that point. You lose the deferral benefit. Selling the loan note also means you realise the gain in the year of sale, potentially pushing you into a higher tax bracket. Most agency founders hold the loan note to maturity to maintain the deferral. If you need cash earlier, consider a discounted sale to a specialist purchaser, but model the tax impact first."
-  - question: "Does the vendor loan note affect my eligibility for BADR?"
-    answer: "No, as long as the loan note is issued as consideration for qualifying shares that you have held for at least two years while being an officer or employee. The BADR rate of 14% (for disposals from 6 April 2025) applies to the gain on both the cash and loan note elements. However, if you hold the loan note for more than two years after the sale and are no longer involved in the business, any further gain on the loan note itself may not qualify. In practice, the gain crystallises at sale, so this is rarely an issue."
-  - question: "How is the interest on a vendor loan note taxed?"
-    answer: "Interest paid on a vendor loan note is taxed as income in the year it is received. It goes on your self-assessment tax return and is subject to your marginal income tax rate (20%, 40%, or 45%). It is not subject to CGT. This means the interest element is less tax-efficient than the capital repayment, which is taxed at 14% or 20% CGT. You can structure the loan note to minimise interest, but the rate must be commercial to avoid HMRC challenge."
+- question: What happens to the CGT if the buyer defaults on the vendor loan note?
+  answer: If the buyer defaults and you never receive the deferred consideration, you can claim a negligible value claim or a capital loss on the loan note. This loss can be set against the original gain, effectively reducing your CGT. However, HMRC will still expect the tax on the cash element you did receive. You need to act quickly to file the loss claim within the correct time limits. Speak to your accountant immediately if a buyer defaults.
+- question: Can I sell my vendor loan note to a third party before it matures?
+  answer: Yes, you can sell the loan note, but that triggers a CGT event on the entire remaining gain at that point. You lose the deferral benefit. Selling the loan note also means you realise the gain in the year of sale, potentially pushing you into a higher tax bracket. Most agency founders hold the loan note to maturity to maintain the deferral. If you need cash earlier, consider a discounted sale to a specialist purchaser, but model the tax impact first.
+- question: Does the vendor loan note affect my eligibility for BADR?
+  answer: No, as long as the loan note is issued as consideration for qualifying shares that you have held for at least two years while being an officer or employee. The BADR rate of 14% (for disposals from 6 April 2025) applies to the gain on both the cash and loan note elements. However, if you hold the loan note for more than two years after the sale and are no longer involved in the business, any further gain on the loan note itself may not qualify. In practice, the gain crystallises at sale, so this is rarely an issue.
+- question: How is the interest on a vendor loan note taxed?
+  answer: Interest paid on a vendor loan note is taxed as income in the year it is received. It goes on your self-assessment tax return and is subject to your marginal income tax rate (20%, 40%, or 45%). It is not subject to CGT. This means the interest element is less tax-efficient than the capital repayment, which is taxed at 14% or 20% CGT. You can structure the loan note to minimise interest, but the rate must be commercial to avoid HMRC challenge.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A vendor loan note defers Capital Gains Tax by spreading the gain over the repayment period, so you only pay CGT on each instalment as you receive it.
+- For maximum tax efficiency, structure the loan note as a qualifying corporate bond (QCB), which defers CGT until redemption and exempts gains from tax if held until death.
+- In a typical agency sale, using a QCB loan note for part of the consideration can defer tens of thousands of pounds in CGT, keeping cash in your pocket longer.
+- Interest paid on a vendor loan note is taxable as income in the year it arises, separate from the capital repayment which triggers CGT.
+- Business Asset Disposal Relief (BADR) at 14% (2025/26 rate) applies to the capital gain on each loan note repayment, provided you meet the qualifying conditions.
 ---
-
 <p>If you are selling your agency, you probably expect to pay Capital Gains Tax (CGT) on the profit. Most founders plan for that. But what if you could defer some of that tax bill by several years, keeping more cash in your pocket now?</p>
 
 <p>That is exactly what a vendor loan note does. It is a structured debt instrument that the buyer issues to you as part of the sale consideration. Instead of receiving all cash on completion, you receive a promissory note that pays out over time. And here is the key: you only pay CGT on each payment as you receive it, not on the full amount on day one.</p>

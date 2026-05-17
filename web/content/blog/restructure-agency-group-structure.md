@@ -1,33 +1,40 @@
 ---
-title: "How to Restructure Your Agency from a Single Company to a Group Structure"
-slug: "restructure-agency-group-structure"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/restructure-agency-group-structure"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "Agency Group Restructure: Single to Multi-Company Guide"
-metaDescription: "Thinking of restructuring your agency into a group? We cover holding companies, tax implications, BADR protection, and the step-by-step process for UK"
-altText: "Two agency founders reviewing group structure documents with their ICAEW accountant in a modern UK office"
-image: "/blog/restructure-agency-group-structure.jpg"
+title: How to Restructure Your Agency from a Single Company to a Group Structure
+slug: restructure-agency-group-structure
+canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/restructure-agency-group-structure
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Incorporation and Structure
+metaTitle: 'Agency Group Restructure: Single to Multi-Company Guide'
+metaDescription: Thinking of restructuring your agency into a group? We cover holding companies, tax implications, BADR protection, and the step-by-step process for UK
+altText: Two agency founders reviewing group structure documents with their ICAEW accountant in a modern UK office
+image: /blog/restructure-agency-group-structure.jpg
 imageCredit:
-  photographer: "Thirdman"
-  photographerUrl: "https://www.pexels.com/@thirdman"
-  sourceUrl: "https://www.pexels.com/photo/coworkers-with-their-hands-together-5256819/"
-  source: "Pexels"
-h1: "How to Restructure Your Agency from a Single Company to a Group Structure"
-summary: "Moving from a single company to a group structure can protect your assets, improve tax efficiency, and prepare your agency for exit. This guide covers when it makes sense, how to do it, and the traps to avoid."
-schema: ""
+  photographer: Thirdman
+  photographerUrl: https://www.pexels.com/@thirdman
+  sourceUrl: https://www.pexels.com/photo/coworkers-with-their-hands-together-5256819/
+  source: Pexels
+h1: How to Restructure Your Agency from a Single Company to a Group Structure
+summary: Moving from a single company to a group structure can protect your assets, improve tax efficiency, and prepare your agency for exit. This guide covers when it makes sense, how to do it, and the traps to avoid.
+schema: ''
 faqs:
-  - question: "What is a share-for-share exchange and how does it work for agency restructuring?"
-    answer: "A share-for-share exchange is a tax-relieved transaction where you transfer your existing shares in the trading company to a new holding company in exchange for shares in that holding company. No cash changes hands, so no capital gains tax is triggered at the point of restructuring. The holding company then owns 100% of the trading company, and you own 100% of the holding company. Your economic position is unchanged, but the legal structure has shifted to a group. You must get advance clearance from HMRC under TCGA 1992, s.138 to confirm the transaction will not be challenged."
-  - question: "Does restructuring into a group affect my eligibility for Business Asset Disposal Relief (BADR)?"
-    answer: "It can, if you are not careful. To qualify for BADR on the sale of your holding company shares, you must be an officer or employee of the group, hold at least 5% of the shares and voting rights, and the group must be a trading group (at least 80% of its activities must be trading). You also need to hold the shares for at least 2 years before disposal. If your holding company accumulates significant investment assets or cash, HMRC may argue the group is not wholly trading. Keep the holding company's balance sheet clean and distribute excess cash as dividends to protect your BADR entitlement."
-  - question: "How much does it cost to restructure a single agency company into a group structure?"
-    answer: "Expect total costs of £5,000-£13,000 for a straightforward restructuring. Legal fees typically run £3,000-£8,000 for the share-for-share exchange documentation and HMRC clearance application. Accountancy fees are £2,000-£5,000 for structuring advice, clearance preparation, and post-restructuring accounting setup. Company formation costs are minimal (£50-£200 per new entity). Bank account setup is usually free but can cost up to £500 depending on the bank. The timeline is 6-12 weeks from start to completion."
-  - question: "Can I restructure my agency group structure if I have a directors' loan account balance?"
-    answer: "Yes, but it needs careful handling. If you owe money to the trading company personally, that debt may transfer to the"
+- question: What is a share-for-share exchange and how does it work for agency restructuring?
+  answer: A share-for-share exchange is a tax-relieved transaction where you transfer your existing shares in the trading company to a new holding company in exchange for shares in that holding company. No cash changes hands, so no capital gains tax is triggered at the point of restructuring. The holding company then owns 100% of the trading company, and you own 100% of the holding company. Your economic position is unchanged, but the legal structure has shifted to a group. You must get advance clearance from HMRC under TCGA 1992, s.138 to confirm the transaction will not be challenged.
+- question: Does restructuring into a group affect my eligibility for Business Asset Disposal Relief (BADR)?
+  answer: It can, if you are not careful. To qualify for BADR on the sale of your holding company shares, you must be an officer or employee of the group, hold at least 5% of the shares and voting rights, and the group must be a trading group (at least 80% of its activities must be trading). You also need to hold the shares for at least 2 years before disposal. If your holding company accumulates significant investment assets or cash, HMRC may argue the group is not wholly trading. Keep the holding company's balance sheet clean and distribute excess cash as dividends to protect your BADR entitlement.
+- question: How much does it cost to restructure a single agency company into a group structure?
+  answer: Expect total costs of £5,000-£13,000 for a straightforward restructuring. Legal fees typically run £3,000-£8,000 for the share-for-share exchange documentation and HMRC clearance application. Accountancy fees are £2,000-£5,000 for structuring advice, clearance preparation, and post-restructuring accounting setup. Company formation costs are minimal (£50-£200 per new entity). Bank account setup is usually free but can cost up to £500 depending on the bank. The timeline is 6-12 weeks from start to completion.
+- question: Can I restructure my agency group structure if I have a directors' loan account balance?
+  answer: Yes, but it needs careful handling. If you owe money to the trading company personally, that debt may transfer to the
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A group structure isolates liabilities by placing each service line in a separate subsidiary, protecting the rest of the agency from a claim against one entity.
+- A holding company can receive dividends from subsidiaries without paying corporation tax, creating a tax-efficient cash pool for reinvestment.
+- Restructuring before exit allows you to sell shares of one subsidiary while retaining others, and to separate property or IP from the trading entity.
+- A typical agency group includes a Holdco, Opco, and optionally a Propco or IPco, but a simple two-company structure often suffices initially.
+- Restructuring is advisable when retained profits consistently exceed £100k, but poor timing can trigger immediate tax charges and HMRC enquiries.
 ---
-
 <p>If your agency has grown past the point where a single limited company makes sense, you are not alone. Many agency founders reach a stage where holding everything under one legal entity starts to feel risky. You might have accumulated retained profits you want to protect. You might be running multiple service lines under one roof and want to ring-fence the risk. Or you might be planning an exit and need a structure that lets you sell one part of the business without dragging the rest through the process.</p>
 
 <p>Restructuring from a single company to a group structure is a significant move. It involves creating a holding company (usually a parent company that owns the shares of your trading company) and potentially adding additional subsidiaries for different activities. Done properly, it can save tax, protect assets, and make future exits cleaner. Done badly, it triggers immediate tax charges and HMRC enquiries.</p>

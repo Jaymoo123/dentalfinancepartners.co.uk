@@ -1,33 +1,40 @@
 ---
-title: "Remittance Basis After 2025 Non-Dom Reform: What UK Agency Founders Moving to Dubai Need to Know"
-slug: "remittance-basis-after-2025-non-dom-reform-dubai"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/remittance-basis-after-2025-non-dom-reform-dubai"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Remittance basis after 2025 non-dom reform: Dubai move guide"
-metaDescription: "The 2025 reforms abolish the remittance basis for new UK residents. If you're an agency founder moving to Dubai after April 2025, here's what changes"
-altText: "UK accountant discussing remittance basis rules with an agency founder in a London office meeting"
-image: "/blog/remittance-basis-after-2025-non-dom-reform-dubai.jpg"
+title: 'Remittance Basis After 2025 Non-Dom Reform: What UK Agency Founders Moving to Dubai Need to Know'
+slug: remittance-basis-after-2025-non-dom-reform-dubai
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/remittance-basis-after-2025-non-dom-reform-dubai
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Remittance basis after 2025 non-dom reform: Dubai move guide'
+metaDescription: The 2025 reforms abolish the remittance basis for new UK residents. If you're an agency founder moving to Dubai after April 2025, here's what changes
+altText: UK accountant discussing remittance basis rules with an agency founder in a London office meeting
+image: /blog/remittance-basis-after-2025-non-dom-reform-dubai.jpg
 imageCredit:
-  photographer: "Tima Miroshnichenko"
-  photographerUrl: "https://www.pexels.com/@tima-miroshnichenko"
-  sourceUrl: "https://www.pexels.com/photo/a-person-holding-money-6694484/"
-  source: "Pexels"
-h1: "Remittance Basis After 2025 Non-Dom Reform: What UK Agency Founders Moving to Dubai Need to Know"
-summary: "The UK's 2025 non-dom reforms abolish the remittance basis for new arrivals. For agency founders moving to Dubai after April 2025, this changes how UK property, investments, and capital gains are taxed. Here's what the new rules mean and how to plan."
-schema: ""
+  photographer: Tima Miroshnichenko
+  photographerUrl: https://www.pexels.com/@tima-miroshnichenko
+  sourceUrl: https://www.pexels.com/photo/a-person-holding-money-6694484/
+  source: Pexels
+h1: 'Remittance Basis After 2025 Non-Dom Reform: What UK Agency Founders Moving to Dubai Need to Know'
+summary: The UK's 2025 non-dom reforms abolish the remittance basis for new arrivals. For agency founders moving to Dubai after April 2025, this changes how UK property, investments, and capital gains are taxed. Here's what the new rules mean and how to plan.
+schema: ''
 faqs:
-  - question: "What is the remittance basis and why is it being abolished in 2025?"
-    answer: "The remittance basis was a UK tax status for non-domiciled residents. It meant you only paid UK tax on UK income and gains — foreign income was only taxed if you brought it into the UK. The 2025 reforms abolish it for new residents because the government decided the old system was unfair and complex, replacing it with a four-year foreign income exemption for new arrivals."
-  - question: "Can I still use the remittance basis if I move to Dubai after April 2025?"
-    answer: "No. If you become UK resident for the first time after 6 April 2025, the remittance basis is not available. You get the four-year foreign income exemption instead, but after four years you're taxed on worldwide income. If you genuinely leave the UK and become non-resident, the reform doesn't affect your Dubai income."
-  - question: "How does the reform affect my UK property if I move to Dubai?"
-    answer: "If you're non-resident, you pay UK tax on rental income (20% basic rate) and capital gains on UK property. If you remain UK resident, the reform means you can no longer use the remittance basis to shield foreign income while owning UK property. You'll need to plan your property ownership structure carefully."
-  - question: "What should I do now if I'm planning a move to Dubai?"
-    answer: "First, confirm your UK residence status under the statutory residence test. Second, review your UK property and investment holdings. Third, consider timing — if you're already using the remittance basis, the 2025/26 and 2026/27 transitional periods allow you to remit pre-2025 income. Finally, speak to an ICAEW-qualified accountant who understands both UK and Dubai tax systems."
+- question: What is the remittance basis and why is it being abolished in 2025?
+  answer: The remittance basis was a UK tax status for non-domiciled residents. It meant you only paid UK tax on UK income and gains — foreign income was only taxed if you brought it into the UK. The 2025 reforms abolish it for new residents because the government decided the old system was unfair and complex, replacing it with a four-year foreign income exemption for new arrivals.
+- question: Can I still use the remittance basis if I move to Dubai after April 2025?
+  answer: No. If you become UK resident for the first time after 6 April 2025, the remittance basis is not available. You get the four-year foreign income exemption instead, but after four years you're taxed on worldwide income. If you genuinely leave the UK and become non-resident, the reform doesn't affect your Dubai income.
+- question: How does the reform affect my UK property if I move to Dubai?
+  answer: If you're non-resident, you pay UK tax on rental income (20% basic rate) and capital gains on UK property. If you remain UK resident, the reform means you can no longer use the remittance basis to shield foreign income while owning UK property. You'll need to plan your property ownership structure carefully.
+- question: What should I do now if I'm planning a move to Dubai?
+  answer: First, confirm your UK residence status under the statutory residence test. Second, review your UK property and investment holdings. Third, consider timing — if you're already using the remittance basis, the 2025/26 and 2026/27 transitional periods allow you to remit pre-2025 income. Finally, speak to an ICAEW-qualified accountant who understands both UK and Dubai tax systems.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- From April 2025, the remittance basis is abolished for new UK residents; a four-year exemption on foreign income and gains applies only if you were non-UK resident for the previous ten tax years.
+- After the four-year exemption window, you are taxed on worldwide income and gains on the arising basis, with no option to defer tax by keeping money offshore.
+- Founders already using the remittance basis before April 2025 can continue for 2025/26 and 2026/27 on pre-6 April 2025 foreign income and gains, but post-6 April 2025 income is taxed on the arising basis.
+- If you genuinely leave the UK for Dubai and become non-resident (spending fewer than 16 days per year in the UK), the remittance basis reform does not affect you; only UK-source income is taxed.
+- Retaining UK residence while living in Dubai means your worldwide income and gains are fully subject to UK tax from year five onwards, making day-count tracking critical.
 ---
-
 <p>The UK's non-dom tax regime is being scrapped from April 2025. If you're an agency founder considering a move to Dubai, this changes everything about how your UK income and gains are taxed.</p>
 
 <p>The remittance basis after 2025 non-dom reform is straightforward: it no longer exists for anyone who becomes UK resident after 6 April 2025. For founders already in the UK using it, there's a two-year transition period. But for anyone planning a move to Dubai, the old planning strategies around offshore income and capital gains are gone.</p>

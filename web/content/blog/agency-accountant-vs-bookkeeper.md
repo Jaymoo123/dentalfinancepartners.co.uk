@@ -1,33 +1,40 @@
 ---
-title: "Agency Accountant vs Bookkeeper: What UK Agency Founders Actually Need"
-slug: "agency-accountant-vs-bookkeeper"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-accountant-vs-bookkeeper"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "Agency Accountant vs Bookkeeper: What UK Founders Need"
-metaDescription: "The difference between an agency accountant and a bookkeeper explained for UK agency founders. Roles, costs, and when you need each one."
-altText: "UK agency founder reviewing management accounts with an ICAEW qualified accountant in a modern office"
-image: "/blog/agency-accountant-vs-bookkeeper.jpg"
+title: 'Agency Accountant vs Bookkeeper: What UK Agency Founders Actually Need'
+slug: agency-accountant-vs-bookkeeper
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-accountant-vs-bookkeeper
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: 'Agency Accountant vs Bookkeeper: What UK Founders Need'
+metaDescription: The difference between an agency accountant and a bookkeeper explained for UK agency founders. Roles, costs, and when you need each one.
+altText: UK agency founder reviewing management accounts with an ICAEW qualified accountant in a modern office
+image: /blog/agency-accountant-vs-bookkeeper.jpg
 imageCredit:
-  photographer: "Mikhail Nilov"
-  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
-  sourceUrl: "https://www.pexels.com/photo/a-woman-writing-on-a-book-while-holding-a-calculator-8297034/"
-  source: "Pexels"
-h1: "Agency Accountant vs Bookkeeper: What UK Agency Founders Actually Need"
-summary: "Most agency founders confuse bookkeeping with accounting. They are not the same thing. Here is what each role does, what it costs, and when you need both."
-schema: ""
+  photographer: Mikhail Nilov
+  photographerUrl: https://www.pexels.com/@mikhail-nilov
+  sourceUrl: https://www.pexels.com/photo/a-woman-writing-on-a-book-while-holding-a-calculator-8297034/
+  source: Pexels
+h1: 'Agency Accountant vs Bookkeeper: What UK Agency Founders Actually Need'
+summary: Most agency founders confuse bookkeeping with accounting. They are not the same thing. Here is what each role does, what it costs, and when you need both.
+schema: ''
 faqs:
-  - question: "Can a bookkeeper do my year-end accounts for my agency?"
-    answer: "A bookkeeper can prepare the records and draft accounts, but your year-end corporation tax return (CT600) and statutory accounts must be prepared or reviewed by a qualified accountant. If your bookkeeper submits your CT600 without qualified oversight and gets it wrong, HMRC penalties fall on you. Use a bookkeeper for data entry and an accountant for compliance."
-  - question: "How much does an agency accountant cost per month in the UK?"
-    answer: "For a small agency turning over £200k-£400k, expect £500-£800 per month for a full service including management accounts and tax planning. For agencies at £800k-£1.5m, expect £800-£1,500 per month. Fixed fee models are common and preferable because you know your cost upfront. Hourly billing at £150-£300 is also available but less predictable."
-  - question: "Do I need both a bookkeeper and an accountant for my agency?"
-    answer: "Most growing agencies benefit from both. The bookkeeper handles daily transaction processing, payroll, and VAT returns. The accountant handles tax strategy, corporation tax, dividend planning, IR35 compliance, and exit planning. If your agency is very small (under £100k turnover with no employees), a bookkeeper alone may suffice with annual accountant review."
-  - question: "What qualifications should my agency accountant have?"
-    answer: "Look for ICAEW, ACCA, or CIMA qualification as a minimum. ICAEW chartered accountants are regulated by a recognised supervisory body and carry professional indemnity insurance. Agency specialism matters more than qualification alone. Ask how many agency clients they work with and what their typical client turnover is. A generalist accountant will miss agency-specific tax reliefs and metrics."
+- question: Can a bookkeeper do my year-end accounts for my agency?
+  answer: A bookkeeper can prepare the records and draft accounts, but your year-end corporation tax return (CT600) and statutory accounts must be prepared or reviewed by a qualified accountant. If your bookkeeper submits your CT600 without qualified oversight and gets it wrong, HMRC penalties fall on you. Use a bookkeeper for data entry and an accountant for compliance.
+- question: How much does an agency accountant cost per month in the UK?
+  answer: For a small agency turning over £200k-£400k, expect £500-£800 per month for a full service including management accounts and tax planning. For agencies at £800k-£1.5m, expect £800-£1,500 per month. Fixed fee models are common and preferable because you know your cost upfront. Hourly billing at £150-£300 is also available but less predictable.
+- question: Do I need both a bookkeeper and an accountant for my agency?
+  answer: Most growing agencies benefit from both. The bookkeeper handles daily transaction processing, payroll, and VAT returns. The accountant handles tax strategy, corporation tax, dividend planning, IR35 compliance, and exit planning. If your agency is very small (under £100k turnover with no employees), a bookkeeper alone may suffice with annual accountant review.
+- question: What qualifications should my agency accountant have?
+  answer: Look for ICAEW, ACCA, or CIMA qualification as a minimum. ICAEW chartered accountants are regulated by a recognised supervisory body and carry professional indemnity insurance. Agency specialism matters more than qualification alone. Ask how many agency clients they work with and what their typical client turnover is. A generalist accountant will miss agency-specific tax reliefs and metrics.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A bookkeeper records transactions; an accountant interprets them and plans your agency's tax and growth strategy.
+- A good bookkeeper costs £400–£700 per month for a £800k agency, but cannot advise on R&D tax credits or corporation tax bands.
+- An ICAEW qualified accountant structures director remuneration and pension contributions to keep your agency in the lowest corporation tax band (19% or 25%).
+- If your bookkeeper miscategorises contractor payments, your gross margin data will be wrong, leading to poor business decisions.
+- For agencies with profits between £50k and £250k, marginal relief applies, making professional tax planning essential to avoid higher effective rates.
 ---
-
 <p>If you run a marketing agency in Shoreditch, a digital agency in Manchester's Northern Quarter, or a PR agency out of Bristol Harbourside, you have likely hired a bookkeeper, an accountant, or both. The confusion between these two roles is one of the most common things we see when new agency founders come to us at Agency Founder Finance.</p>
 
 <p>People use the terms interchangeably. They do not mean the same thing. And using the wrong person for the wrong job costs you money. Sometimes a lot of it.</p>

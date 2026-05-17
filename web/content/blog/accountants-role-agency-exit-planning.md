@@ -1,33 +1,40 @@
 ---
-title: "The Accountant's Role in Your Agency's Exit Planning: What to Expect and When to Involve Them"
-slug: "accountants-role-agency-exit-planning"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/accountants-role-agency-exit-planning"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Agency Exit Planning: The Accountant's Role and Timing"
-metaDescription: "When should you involve an accountant in agency exit planning? Here's what a specialist accountant does before, during, and after a sale. ICAEW qualified"
-altText: "Two agency founders meeting with an ICAEW qualified accountant in a modern UK office, discussing exit planning documents and valuation reports"
-image: "/blog/accountants-role-agency-exit-planning.jpg"
+title: 'The Accountant''s Role in Your Agency''s Exit Planning: What to Expect and When to Involve Them'
+slug: accountants-role-agency-exit-planning
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/accountants-role-agency-exit-planning
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'Agency Exit Planning: The Accountant''s Role and Timing'
+metaDescription: When should you involve an accountant in agency exit planning? Here's what a specialist accountant does before, during, and after a sale. ICAEW qualified
+altText: Two agency founders meeting with an ICAEW qualified accountant in a modern UK office, discussing exit planning documents and valuation reports
+image: /blog/accountants-role-agency-exit-planning.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/tax-documents-on-the-table-6863190/"
-  source: "Pexels"
-h1: "The Accountant's Role in Your Agency's Exit Planning: What to Expect and When to Involve Them"
-summary: "Selling your agency is a multi-year process, not a one-off event. Your accountant's role shifts from compliance to strategy, valuation, and deal structuring. Here's when to involve them and what to expect at each stage."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/tax-documents-on-the-table-6863190/
+  source: Pexels
+h1: 'The Accountant''s Role in Your Agency''s Exit Planning: What to Expect and When to Involve Them'
+summary: Selling your agency is a multi-year process, not a one-off event. Your accountant's role shifts from compliance to strategy, valuation, and deal structuring. Here's when to involve them and what to expect at each stage.
+schema: ''
 faqs:
-  - question: "How far in advance should I involve my accountant in exit planning?"
-    answer: "At least two to three years before you plan to sell. That gives time to clean up the balance sheet, restructure shares for BADR, normalise profits, and address any value-depressing factors like client concentration or key person dependency. The tax planning opportunities shrink significantly inside a twelve-month window."
-  - question: "What is the biggest mistake agency founders make with exit planning?"
-    answer: "Leaving it too late. Most founders focus on running the business and assume the sale will be straightforward. They do not check their share structure, directors' loan account, or contractor IR35 status until a buyer asks. By then, the fix is either expensive or impossible. The second biggest mistake is using a general practice accountant who has never done an agency sale before."
-  - question: "Can I sell my agency without an accountant?"
-    answer: "Legally, yes. Practically, no. A buyer's due diligence team will expect professionally prepared accounts, a clean tax history, and proper warranties. Without an accountant, you will struggle to produce the documentation and will almost certainly overpay tax. The CGT saving from proper BADR planning alone usually covers the accountant's fees several times over."
-  - question: "What should I look for when choosing an accountant for agency exit work?"
-    answer: "Look for specific experience with agency sales, not just general M&A. Ask for examples of deals they have worked on. Check they understand agency metrics like EBITDA multiples, retainer revenue valuation, and utilisation rates. Confirm they have dealt with BADR claims, directors' loan account clearance, and earn-out structures. A compliance accountant and an exit accountant are often different people."
+- question: How far in advance should I involve my accountant in exit planning?
+  answer: At least two to three years before you plan to sell. That gives time to clean up the balance sheet, restructure shares for BADR, normalise profits, and address any value-depressing factors like client concentration or key person dependency. The tax planning opportunities shrink significantly inside a twelve-month window.
+- question: What is the biggest mistake agency founders make with exit planning?
+  answer: Leaving it too late. Most founders focus on running the business and assume the sale will be straightforward. They do not check their share structure, directors' loan account, or contractor IR35 status until a buyer asks. By then, the fix is either expensive or impossible. The second biggest mistake is using a general practice accountant who has never done an agency sale before.
+- question: Can I sell my agency without an accountant?
+  answer: Legally, yes. Practically, no. A buyer's due diligence team will expect professionally prepared accounts, a clean tax history, and proper warranties. Without an accountant, you will struggle to produce the documentation and will almost certainly overpay tax. The CGT saving from proper BADR planning alone usually covers the accountant's fees several times over.
+- question: What should I look for when choosing an accountant for agency exit work?
+  answer: Look for specific experience with agency sales, not just general M&A. Ask for examples of deals they have worked on. Check they understand agency metrics like EBITDA multiples, retainer revenue valuation, and utilisation rates. Confirm they have dealt with BADR claims, directors' loan account clearance, and earn-out structures. A compliance accountant and an exit accountant are often different people.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Involve your accountant two to three years before selling your agency, not six months, to allow time for meaningful tax planning.
+- Clean up your balance sheet early, including directors' loan accounts and inter-company loans, to avoid due diligence issues and S455 tax charges.
+- Review your share structure at least two years before exit to qualify for Business Asset Disposal Relief (BADR) at 14% (rising to 18% from 6 April 2026).
+- Prepare a normalised EBITDA calculation that adds back personal expenses and one-off costs, as buyers value agencies on maintainable earnings.
+- For multiple founders, model the tax position individually, as holding shares through a company may disqualify them from BADR.
 ---
-
 <h2>Why Most Agency Founders Start Exit Planning Too Late</h2>
 
 <p>Most agency founders I meet think exit planning means finding a buyer and negotiating a price. They call their accountant six months before they want to sell and ask for a set of accounts. By then, the window for meaningful tax planning has usually closed.</p>

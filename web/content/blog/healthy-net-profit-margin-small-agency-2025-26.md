@@ -1,33 +1,40 @@
 ---
-title: "What Is a Healthy Net Profit Margin for a Small Agency in 2025/26 and How to Achieve It"
-slug: "healthy-net-profit-margin-small-agency-2025-26"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/healthy-net-profit-margin-small-agency-2025-26"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "Healthy net profit margin for a small agency in 2025/26"
-metaDescription: "Small agencies should target 15-25% net profit margin. Here is how to measure yours, what drives it, and where to fix leakage before year-end."
-altText: "Agency founder reviewing monthly management accounts on a laptop in a UK office with a coffee cup and calculator"
-image: "/blog/healthy-net-profit-margin-small-agency-2025-26.jpg"
+title: What Is a Healthy Net Profit Margin for a Small Agency in 2025/26 and How to Achieve It
+slug: healthy-net-profit-margin-small-agency-2025-26
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/healthy-net-profit-margin-small-agency-2025-26
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: Healthy net profit margin for a small agency in 2025/26
+metaDescription: Small agencies should target 15-25% net profit margin. Here is how to measure yours, what drives it, and where to fix leakage before year-end.
+altText: Agency founder reviewing monthly management accounts on a laptop in a UK office with a coffee cup and calculator
+image: /blog/healthy-net-profit-margin-small-agency-2025-26.jpg
 imageCredit:
-  photographer: "Kindel Media"
-  photographerUrl: "https://www.pexels.com/@kindelmedia"
-  sourceUrl: "https://www.pexels.com/photo/a-close-up-shot-of-a-graph-on-a-paper-7054368/"
-  source: "Pexels"
-h1: "What Is a Healthy Net Profit Margin for a Small Agency in 2025/26 and How to Achieve It"
-summary: "Most agency owners track revenue and gross margin but ignore net profit until it is too late. This article sets realistic net profit margin targets for small UK agencies in 2025/26 and walks through the specific cost lines that eat into your bottom line. You will know exactly where to look and what to fix."
-schema: ""
+  photographer: Kindel Media
+  photographerUrl: https://www.pexels.com/@kindelmedia
+  sourceUrl: https://www.pexels.com/photo/a-close-up-shot-of-a-graph-on-a-paper-7054368/
+  source: Pexels
+h1: What Is a Healthy Net Profit Margin for a Small Agency in 2025/26 and How to Achieve It
+summary: Most agency owners track revenue and gross margin but ignore net profit until it is too late. This article sets realistic net profit margin targets for small UK agencies in 2025/26 and walks through the specific cost lines that eat into your bottom line. You will know exactly where to look and what to fix.
+schema: ''
 faqs:
-  - question: "What is the difference between gross margin and net profit margin for an agency?"
-    answer: "Gross margin is revenue minus direct costs (salaries of delivery staff, freelancers, software tools). Net profit margin is revenue minus all costs, including overheads, director salary, and tax. Gross margin tells you if your service delivery is profitable. Net profit margin tells you if your whole business model works."
-  - question: "Is a 10% net profit margin bad for a small agency?"
-    answer: "It is not terrible, but it is fragile. At 10%, a single bad month, a client loss, or an unexpected tax bill can tip you into a loss. For a small agency in 2025/26, 15-25% is the healthy target range. If you are at 10%, focus on pricing, overhead control, and client profitability before you try to grow."
-  - question: "How often should I check my net profit margin?"
-    answer: "Monthly. Do not wait for year-end. Produce a profit and loss account every month using your accounting software (Xero, QuickBooks, FreeAgent). Compare your actual margin to your target. If it drops below 15% for two consecutive months, investigate the cause immediately."
-  - question: "Can I improve net profit margin without raising prices?"
-    answer: "Yes, but raising prices is the fastest route. Other options include: cutting overheads (audit every SaaS subscription), firing unprofitable clients, tightening payment terms to reduce borrowing costs, and restructuring your director salary to be more tax efficient. Each of these can"
+- question: What is the difference between gross margin and net profit margin for an agency?
+  answer: Gross margin is revenue minus direct costs (salaries of delivery staff, freelancers, software tools). Net profit margin is revenue minus all costs, including overheads, director salary, and tax. Gross margin tells you if your service delivery is profitable. Net profit margin tells you if your whole business model works.
+- question: Is a 10% net profit margin bad for a small agency?
+  answer: It is not terrible, but it is fragile. At 10%, a single bad month, a client loss, or an unexpected tax bill can tip you into a loss. For a small agency in 2025/26, 15-25% is the healthy target range. If you are at 10%, focus on pricing, overhead control, and client profitability before you try to grow.
+- question: How often should I check my net profit margin?
+  answer: Monthly. Do not wait for year-end. Produce a profit and loss account every month using your accounting software (Xero, QuickBooks, FreeAgent). Compare your actual margin to your target. If it drops below 15% for two consecutive months, investigate the cause immediately.
+- question: Can I improve net profit margin without raising prices?
+  answer: 'Yes, but raising prices is the fastest route. Other options include: cutting overheads (audit every SaaS subscription), firing unprofitable clients, tightening payment terms to reduce borrowing costs, and restructuring your director salary to be more tax efficient. Each of these can'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A healthy net profit margin for a small UK agency in 2025/26 is 15% to 25%; below 10% means you are working for a wage, not building a business.
+- Net profit margin is calculated as (Revenue minus all expenses) divided by Revenue times 100; it reveals whether your business model works, not just service delivery.
+- Most small agencies fall below 10% net profit due to scope creep, underpricing, or uncontrolled overheads; these are fixable with pricing discipline and cost management.
+- A digital agency billing £600,000 with a 20% net profit margin makes £120,000 profit, enough for dividends, pension, and reinvestment; at 8% it makes only £48,000.
+- To achieve a healthy margin, track all costs including your salary, subscriptions, and incidentals; scope creep must be priced into your net, not just gross margin.
 ---
-
 <p>If you run a small agency in the UK, you have probably seen the benchmark articles. Gross margin should be 50-65%. Revenue per head should be £80k-£120k. Utilisation rate should be 75% or higher.</p>
 
 <p>But nobody talks about net profit margin. Not in real numbers, anyway. The industry glosses over it because net profit is where the uncomfortable truths live. It is the number that tells you whether your agency is actually making money or just keeping you busy.</p>

@@ -1,33 +1,40 @@
 ---
-title: "What Happens to My UK Agency's Intellectual Property If I Move the Business to Dubai"
-slug: "intellectual-property-moving-agency-dubai"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/intellectual-property-moving-agency-dubai"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Intellectual property moving agency to Dubai: what you must"
-metaDescription: "Moving your agency to Dubai? Your UK intellectual property rights don't automatically transfer. Here's what you need to do to protect your IP before you"
-altText: "Agency founder reviewing intellectual property documents on a laptop in a modern Dubai office with city skyline visible through windows"
-image: "/blog/intellectual-property-moving-agency-dubai.jpg"
+title: What Happens to My UK Agency's Intellectual Property If I Move the Business to Dubai
+slug: intellectual-property-moving-agency-dubai
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/intellectual-property-moving-agency-dubai
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Intellectual property moving agency to Dubai: what you must'
+metaDescription: Moving your agency to Dubai? Your UK intellectual property rights don't automatically transfer. Here's what you need to do to protect your IP before you
+altText: Agency founder reviewing intellectual property documents on a laptop in a modern Dubai office with city skyline visible through windows
+image: /blog/intellectual-property-moving-agency-dubai.jpg
 imageCredit:
-  photographer: "DS stories"
-  photographerUrl: "https://www.pexels.com/@ds-stories"
-  sourceUrl: "https://www.pexels.com/photo/phrase-arranged-from-scrabble-letters-6005477/"
-  source: "Pexels"
-h1: "What Happens to My UK Agency's Intellectual Property If I Move the Business to Dubai"
-summary: "Moving your UK agency to Dubai doesn't automatically transfer your intellectual property rights. Without proper assignment agreements and UAE registration, you risk losing ownership of your brand, code, and client work. Here's what to do before you relocate."
-schema: ""
+  photographer: DS stories
+  photographerUrl: https://www.pexels.com/@ds-stories
+  sourceUrl: https://www.pexels.com/photo/phrase-arranged-from-scrabble-letters-6005477/
+  source: Pexels
+h1: What Happens to My UK Agency's Intellectual Property If I Move the Business to Dubai
+summary: Moving your UK agency to Dubai doesn't automatically transfer your intellectual property rights. Without proper assignment agreements and UAE registration, you risk losing ownership of your brand, code, and client work. Here's what to do before you relocate.
+schema: ''
 faqs:
-  - question: "Do I need to register my UK trademark in the UAE separately?"
-    answer: "Yes. UK trademark registration only protects you in the UK. To protect your brand in the UAE, you need to file a separate application with the UAE Ministry of Economy. You can do this directly or through the Madrid Protocol, which lets you extend your UK registration to the UAE. File before you announce your move to prevent someone else registering your name first."
-  - question: "What happens to IP owned by contractors I used in the UK?"
-    answer: "Unless your contractor agreements contained a written IP assignment clause, the contractor likely owns the IP they created. You need a retrospective assignment from each contractor to transfer ownership to your company. Some will sign for a small fee. Others may refuse or demand compensation. This is one of the most common problems we see in agency IP transfers."
-  - question: "Will HMRC tax me on the IP transfer to my Dubai entity?"
-    answer: "Yes, potentially. Transferring IP from your UK company to a Dubai entity is a disposal for UK tax purposes. If the IP has increased in value since creation, there's a capital gain subject to corporation tax at 19% or 25%. You can structure the transfer to minimise tax, but you need advance clearance from HMRC. A formal IP valuation is essential to avoid challenge."
-  - question: "Can I keep my UK company running while operating from Dubai?"
-    answer: "Yes, but you need to licence the IP back to the UK company. The licence must be at arm's length and at a commercial rate. HMRC will scrutinise this arrangement, especially if the UK company pays less than market value. You also need to consider UK tax residency rules for the company and your personal tax position as a director."
+- question: Do I need to register my UK trademark in the UAE separately?
+  answer: Yes. UK trademark registration only protects you in the UK. To protect your brand in the UAE, you need to file a separate application with the UAE Ministry of Economy. You can do this directly or through the Madrid Protocol, which lets you extend your UK registration to the UAE. File before you announce your move to prevent someone else registering your name first.
+- question: What happens to IP owned by contractors I used in the UK?
+  answer: Unless your contractor agreements contained a written IP assignment clause, the contractor likely owns the IP they created. You need a retrospective assignment from each contractor to transfer ownership to your company. Some will sign for a small fee. Others may refuse or demand compensation. This is one of the most common problems we see in agency IP transfers.
+- question: Will HMRC tax me on the IP transfer to my Dubai entity?
+  answer: Yes, potentially. Transferring IP from your UK company to a Dubai entity is a disposal for UK tax purposes. If the IP has increased in value since creation, there's a capital gain subject to corporation tax at 19% or 25%. You can structure the transfer to minimise tax, but you need advance clearance from HMRC. A formal IP valuation is essential to avoid challenge.
+- question: Can I keep my UK company running while operating from Dubai?
+  answer: Yes, but you need to licence the IP back to the UK company. The licence must be at arm's length and at a commercial rate. HMRC will scrutinise this arrangement, especially if the UK company pays less than market value. You also need to consider UK tax residency rules for the company and your personal tax position as a director.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- UK intellectual property rights are territorial and do not automatically extend to the UAE when you relocate.
+- You must formally assign IP from your UK company to your Dubai entity before winding down the UK company.
+- Register your trademark in the UAE or via the Madrid Protocol before announcing your move to avoid pre-emptive filings.
+- Ensure written contracts with all developers and contractors assign IP ownership to your company, as UK copyright vests in the creator by default.
+- Without proper IP transfer, licensing IP back to your Dubai entity can trigger HMRC value extraction taxes.
 ---
-
 <p>You've built a successful UK agency. You're considering moving to Dubai for the tax advantages, the lifestyle, or both. But there's a problem most founders don't spot until it's too late: your intellectual property (IP) doesn't automatically follow you.</p>
 
 <p>If you own a digital agency in Shoreditch or a PR agency in Manchester's Northern Quarter, your IP is likely your most valuable asset. The code you've written. The brand name clients recognise. The methodologies that differentiate you. The client lists and proprietary systems. Move to Dubai without properly handling your intellectual property moving agency to Dubai, and you could lose the rights to everything you've built.</p>

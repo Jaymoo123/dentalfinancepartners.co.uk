@@ -1,33 +1,40 @@
 ---
-title: "When to Incorporate Your Agency: Recruitment vs Creative — Key Structural Differences"
-slug: "when-to-incorporate-agency-recruitment-vs-creative"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/when-to-incorporate-agency-recruitment-vs-creative"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "When to Incorporate an Agency: Recruitment vs Creative"
-metaDescription: "Recruitment and creative agencies face different risks, cash flow patterns, and tax positions. Here is when to incorporate each type and why the structure"
-altText: "Two agency founders reviewing incorporation documents in a modern UK office with city skyline visible"
-image: "/blog/when-to-incorporate-agency-recruitment-vs-creative.jpg"
+title: 'When to Incorporate Your Agency: Recruitment vs Creative — Key Structural Differences'
+slug: when-to-incorporate-agency-recruitment-vs-creative
+canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/when-to-incorporate-agency-recruitment-vs-creative
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Incorporation and Structure
+metaTitle: 'When to Incorporate an Agency: Recruitment vs Creative'
+metaDescription: Recruitment and creative agencies face different risks, cash flow patterns, and tax positions. Here is when to incorporate each type and why the structure
+altText: Two agency founders reviewing incorporation documents in a modern UK office with city skyline visible
+image: /blog/when-to-incorporate-agency-recruitment-vs-creative.jpg
 imageCredit:
-  photographer: "Walls.io"
-  photographerUrl: "https://www.pexels.com/@walls-io-440716388"
-  sourceUrl: "https://www.pexels.com/photo/door-plaque-and-magazine-lying-on-table-15635235/"
-  source: "Pexels"
-h1: "When to Incorporate Your Agency: Recruitment vs Creative — Key Structural Differences"
-summary: "Recruitment agencies and creative agencies look similar on paper but face fundamentally different financial risks, cash flow patterns, and tax positions. This article explains when to incorporate each type and why the structures should not be the same."
-schema: ""
+  photographer: Walls.io
+  photographerUrl: https://www.pexels.com/@walls-io-440716388
+  sourceUrl: https://www.pexels.com/photo/door-plaque-and-magazine-lying-on-table-15635235/
+  source: Pexels
+h1: 'When to Incorporate Your Agency: Recruitment vs Creative — Key Structural Differences'
+summary: Recruitment agencies and creative agencies look similar on paper but face fundamentally different financial risks, cash flow patterns, and tax positions. This article explains when to incorporate each type and why the structures should not be the same.
+schema: ''
 faqs:
-  - question: "What is the minimum turnover before I should incorporate my agency?"
-    answer: "For a recruitment agency, incorporate before your first contractor placement regardless of turnover. For a creative agency, wait until your retainer income covers your basic living costs (typically £50k-£80k turnover) or your retained profits exceed what you need personally. Below that threshold, the admin cost of a limited company eats into your margin."
-  - question: "Can I run a recruitment agency as a sole trader?"
-    answer: "Technically yes, but it is risky. If HMRC opens an IR35 enquiry, you are personally liable for any backdated tax and NI. A limited company protects your personal assets. Most recruitment agency founders should incorporate from day one."
-  - question: "Do creative agencies need IR35 status determinations?"
-    answer: "Only if they engage contractors directly. If you hire freelance designers, developers, or copywriters through your agency, you may need to issue Status Determination Statements. If you only employ permanent staff and use subcontractors through their own limited companies, the IR35 rules still apply to those engagements. Check each contractor individually."
-  - question: "What is the best structure for a mixed recruitment and creative agency?"
-    answer: "A holding company with two trading subsidiaries: one for the recruitment activity and one for the creative work. This keeps IR35 risk contained in the recruitment subsidiary and protects the creative side. It also makes exit planning cleaner if you want to sell one side of the business later."
+- question: What is the minimum turnover before I should incorporate my agency?
+  answer: For a recruitment agency, incorporate before your first contractor placement regardless of turnover. For a creative agency, wait until your retainer income covers your basic living costs (typically £50k-£80k turnover) or your retained profits exceed what you need personally. Below that threshold, the admin cost of a limited company eats into your margin.
+- question: Can I run a recruitment agency as a sole trader?
+  answer: Technically yes, but it is risky. If HMRC opens an IR35 enquiry, you are personally liable for any backdated tax and NI. A limited company protects your personal assets. Most recruitment agency founders should incorporate from day one.
+- question: Do creative agencies need IR35 status determinations?
+  answer: Only if they engage contractors directly. If you hire freelance designers, developers, or copywriters through your agency, you may need to issue Status Determination Statements. If you only employ permanent staff and use subcontractors through their own limited companies, the IR35 rules still apply to those engagements. Check each contractor individually.
+- question: What is the best structure for a mixed recruitment and creative agency?
+  answer: 'A holding company with two trading subsidiaries: one for the recruitment activity and one for the creative work. This keeps IR35 risk contained in the recruitment subsidiary and protects the creative side. It also makes exit planning cleaner if you want to sell one side of the business later.'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Recruitment agency founders should incorporate from day one to protect against unlimited personal liability from IR35 tax bills.
+- Creative agencies are asset-light and can delay incorporation until profits exceed the higher-rate tax threshold or retained earnings justify it.
+- A single IR35 enquiry can trigger a £40,000–£60,000 backdated tax bill, which a limited company structure shields the founder from personally.
+- Recruitment agencies need limited company status to run contractor payroll efficiently, including RTI submissions and pension auto-enrolment.
+- The key structural difference is that recruitment agencies have transferable contractor books, while creative agencies rely on IP and client relationships.
 ---
-
 <p>You run a recruitment agency placing developers into fintech roles. Your gross margin sits around 18-22%. Your biggest asset is your database and your consultant team. Your biggest risk is a contractor going inside IR35 and your client refusing to pay the employer NI.</p>
 
 <p>Or you run a creative agency designing brand identities for hospitality groups. Your gross margin is 60-65%. Your biggest asset is your creative director's reputation. Your biggest risk is a client refusing to pay because they "don't like the direction" six weeks in.</p>

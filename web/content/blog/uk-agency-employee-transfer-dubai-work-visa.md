@@ -1,33 +1,40 @@
 ---
-title: "Moving Your Agency Team to Dubai: The Employee Transfer Work Visa Nightmare"
-slug: "uk-agency-employee-transfer-dubai-work-visa"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-agency-employee-transfer-dubai-work-visa"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK Agency Employee Transfer Dubai Work Visa: The Reality"
-metaDescription: "Moving UK agency staff to Dubai? Free zone visa quotas, employment law gaps, and tax traps. What to do before you transfer anyone."
-altText: "Two agency founders reviewing paperwork in a Dubai free zone office with skyline visible through window"
-image: "/blog/uk-agency-employee-transfer-dubai-work-visa.jpg"
+title: 'Moving Your Agency Team to Dubai: The Employee Transfer Work Visa Nightmare'
+slug: uk-agency-employee-transfer-dubai-work-visa
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-agency-employee-transfer-dubai-work-visa
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK Agency Employee Transfer Dubai Work Visa: The Reality'
+metaDescription: Moving UK agency staff to Dubai? Free zone visa quotas, employment law gaps, and tax traps. What to do before you transfer anyone.
+altText: Two agency founders reviewing paperwork in a Dubai free zone office with skyline visible through window
+image: /blog/uk-agency-employee-transfer-dubai-work-visa.jpg
 imageCredit:
-  photographer: "Misbaa eri"
-  photographerUrl: "https://www.pexels.com/@misbaa-eri-426041722"
-  sourceUrl: "https://www.pexels.com/photo/modern-office-meeting-with-diverse-team-31709062/"
-  source: "Pexels"
-h1: "Moving Your Agency Team to Dubai: The Employee Transfer Work Visa Nightmare"
-summary: "Moving your UK agency team to Dubai sounds like a dream. The reality involves visa quotas, employment law mismatches, and tax traps that catch most founders off guard. Here is what you need to know before you transfer anyone."
-schema: ""
+  photographer: Misbaa eri
+  photographerUrl: https://www.pexels.com/@misbaa-eri-426041722
+  sourceUrl: https://www.pexels.com/photo/modern-office-meeting-with-diverse-team-31709062/
+  source: Pexels
+h1: 'Moving Your Agency Team to Dubai: The Employee Transfer Work Visa Nightmare'
+summary: Moving your UK agency team to Dubai sounds like a dream. The reality involves visa quotas, employment law mismatches, and tax traps that catch most founders off guard. Here is what you need to know before you transfer anyone.
+schema: ''
 faqs:
-  - question: "Can I transfer a UK employee's existing contract directly to my Dubai free zone company?"
-    answer: "No. UK employment contracts are not valid under Dubai free zone employment law. You must issue a new UAE-compliant contract that references the free zone regulations, end of service gratuity, and local working hours. The employee's UK service does not carry over for gratuity calculation purposes, though you can choose to recognise it contractually if you wish."
-  - question: "How many work visas can I get for my Dubai free zone company?"
-    answer: "It depends on your free zone and your office space. Most free zones allocate one visa per 100-200 square feet of office space. A flex desk typically covers 1-3 visas. If you need more, you must rent larger physical office space. Some free zones like DMCC offer more flexible arrangements, but you still need to meet minimum space requirements."
-  - question: "What happens to my UK company when I move employees to Dubai?"
-    answer: "Your UK company can continue operating. You will have a group structure with a UK parent or subsidiary and a Dubai entity. Transfer pricing rules apply to any intercompany charges. HMRC will scrutinise the commercial rationale for the move, especially if employees do the same work from Dubai. Document the operational changes clearly."
-  - question: "Do my employees still pay UK tax after moving to Dubai?"
-    answer: "Only if they remain UK tax resident. That means spending fewer than 183 days in the UK per tax year, and ideally fewer than 90 days. They must also sever UK ties like property, bank accounts, and family connections. If they visit UK clients regularly, track every day carefully. A tax advisor specialising in UK-UAE cross-border moves is essential."
+- question: Can I transfer a UK employee's existing contract directly to my Dubai free zone company?
+  answer: No. UK employment contracts are not valid under Dubai free zone employment law. You must issue a new UAE-compliant contract that references the free zone regulations, end of service gratuity, and local working hours. The employee's UK service does not carry over for gratuity calculation purposes, though you can choose to recognise it contractually if you wish.
+- question: How many work visas can I get for my Dubai free zone company?
+  answer: It depends on your free zone and your office space. Most free zones allocate one visa per 100-200 square feet of office space. A flex desk typically covers 1-3 visas. If you need more, you must rent larger physical office space. Some free zones like DMCC offer more flexible arrangements, but you still need to meet minimum space requirements.
+- question: What happens to my UK company when I move employees to Dubai?
+  answer: Your UK company can continue operating. You will have a group structure with a UK parent or subsidiary and a Dubai entity. Transfer pricing rules apply to any intercompany charges. HMRC will scrutinise the commercial rationale for the move, especially if employees do the same work from Dubai. Document the operational changes clearly.
+- question: Do my employees still pay UK tax after moving to Dubai?
+  answer: Only if they remain UK tax resident. That means spending fewer than 183 days in the UK per tax year, and ideally fewer than 90 days. They must also sever UK ties like property, bank accounts, and family connections. If they visit UK clients regularly, track every day carefully. A tax advisor specialising in UK-UAE cross-border moves is essential.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Dubai free zones allocate a limited number of work visas based on office size; plan for additional visas costing £2,000–£4,000 each.
+- UK employment contracts are invalid in Dubai; you must issue a UAE-compliant contract with different notice periods, leave, and gratuity rules.
+- End of service gratuity is a mandatory lump sum in Dubai, calculated on final basic salary and years of service, not a bonus.
+- Dubai free zones allow up to six-month probation periods, 30 days annual leave, and 48-hour work weeks, differing from UK statutory rights.
+- Transferring employees without proper visas and contracts risks legal disputes and financial penalties for your agency.
 ---
-
 <p>You have decided to move your agency to Dubai. The tax savings are obvious. The lifestyle is attractive. And you have a small team of loyal employees who want to come with you.</p>
 
 <p>Then you start looking into the paperwork. And you realise that transferring a UK employee to a Dubai free zone is not a simple relocation. It is a legal, tax, and immigration puzzle that most accountants cannot solve because they only know one side of the equation.</p>

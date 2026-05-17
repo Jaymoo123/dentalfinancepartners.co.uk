@@ -1,33 +1,40 @@
 ---
-title: "Selling Your Agency: What Happens to Retainer Contracts and the Tax Treatment"
-slug: "selling-your-agency-retainer-contracts-tax-treatment"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/selling-your-agency-retainer-contracts-tax-treatment"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Selling your agency tax guide: retainer contracts and CGT"
-metaDescription: "Selling your agency tax guide covering retainer contract transfer, CGT on goodwill vs shares, and avoiding unexpected tax bills from deferred income."
-altText: "UK agency founder reviewing sale documents with accountant in London office"
-image: "/blog/selling-your-agency-retainer-contracts-tax-treatment.jpg"
+title: 'Selling Your Agency: What Happens to Retainer Contracts and the Tax Treatment'
+slug: selling-your-agency-retainer-contracts-tax-treatment
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/selling-your-agency-retainer-contracts-tax-treatment
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'Selling your agency tax guide: retainer contracts and CGT'
+metaDescription: Selling your agency tax guide covering retainer contract transfer, CGT on goodwill vs shares, and avoiding unexpected tax bills from deferred income.
+altText: UK agency founder reviewing sale documents with accountant in London office
+image: /blog/selling-your-agency-retainer-contracts-tax-treatment.jpg
 imageCredit:
-  photographer: "Kindel Media"
-  photographerUrl: "https://www.pexels.com/@kindelmedia"
-  sourceUrl: "https://www.pexels.com/photo/people-shaking-hands-7578894/"
-  source: "Pexels"
-h1: "Selling Your Agency: What Happens to Retainer Contracts and the Tax Treatment"
-summary: "When you sell your agency, the retainer contracts you've built up are often the most valuable asset. But how HMRC treats that value depends on whether you sell shares or assets, how the purchase price is structured, and whether any of that price is linked to ongoing client revenue. This guide covers the practical tax treatment of transferring retainer contracts in an agency sale."
-schema: ""
+  photographer: Kindel Media
+  photographerUrl: https://www.pexels.com/@kindelmedia
+  sourceUrl: https://www.pexels.com/photo/people-shaking-hands-7578894/
+  source: Pexels
+h1: 'Selling Your Agency: What Happens to Retainer Contracts and the Tax Treatment'
+summary: When you sell your agency, the retainer contracts you've built up are often the most valuable asset. But how HMRC treats that value depends on whether you sell shares or assets, how the purchase price is structured, and whether any of that price is linked to ongoing client revenue. This guide covers the practical tax treatment of transferring retainer contracts in an agency sale.
+schema: ''
 faqs:
-  - question: "Do I pay CGT on retainer contracts if I sell my agency shares?"
-    answer: "Yes, if you sell shares, the gain on the entire disposal, including the value attributed to retainer contracts and client relationships, is subject to Capital Gains Tax. If you qualify for Business Asset Disposal Relief (BADR), the rate is 14% on gains up to £1m. Above that, it's 20%. The key is ensuring the entire consideration is treated as capital, not as employment income, particularly if there's an earn-out linked to client retention."
-  - question: "What happens to client retainer contracts in an asset sale?"
-    answer: "In an asset sale, each retainer contract must be novated to the buyer. Novation requires the client's consent to terminate the existing contract and enter a new one with the buyer's company. If a client refuses, that contract stays with your company. This is why asset sales are less common for retainer-heavy agencies. The practical risk of losing clients during the novation process can reduce the sale price significantly."
-  - question: "How does deferred income from retainer billing affect my sale proceeds?"
-    answer: "Deferred income is a liability on your balance sheet representing work you've been paid for but haven't delivered. In a share sale, the buyer inherits this obligation and will adjust the purchase price downwards to reflect it. This can knock 5-10% off the headline price. You can reduce this impact by shifting to billing in arrears or shortening billing cycles before the sale."
-  - question: "Can I claim BADR on an earn-out from my agency sale?"
-    answer: "Yes, but only if the earn-out is structured as additional consideration for your shares, not as remuneration for ongoing services. If you stay on as a director or consultant post-sale, HMRC may argue the earn-out is employment income, which is taxed at up to 45% plus NI rather than 10% CGT. The wording in your share purchase agreement is critical here. Get your accountant and solicitor to review it before you sign."
+- question: Do I pay CGT on retainer contracts if I sell my agency shares?
+  answer: Yes, if you sell shares, the gain on the entire disposal, including the value attributed to retainer contracts and client relationships, is subject to Capital Gains Tax. If you qualify for Business Asset Disposal Relief (BADR), the rate is 14% on gains up to £1m. Above that, it's 20%. The key is ensuring the entire consideration is treated as capital, not as employment income, particularly if there's an earn-out linked to client retention.
+- question: What happens to client retainer contracts in an asset sale?
+  answer: In an asset sale, each retainer contract must be novated to the buyer. Novation requires the client's consent to terminate the existing contract and enter a new one with the buyer's company. If a client refuses, that contract stays with your company. This is why asset sales are less common for retainer-heavy agencies. The practical risk of losing clients during the novation process can reduce the sale price significantly.
+- question: How does deferred income from retainer billing affect my sale proceeds?
+  answer: Deferred income is a liability on your balance sheet representing work you've been paid for but haven't delivered. In a share sale, the buyer inherits this obligation and will adjust the purchase price downwards to reflect it. This can knock 5-10% off the headline price. You can reduce this impact by shifting to billing in arrears or shortening billing cycles before the sale.
+- question: Can I claim BADR on an earn-out from my agency sale?
+  answer: Yes, but only if the earn-out is structured as additional consideration for your shares, not as remuneration for ongoing services. If you stay on as a director or consultant post-sale, HMRC may argue the earn-out is employment income, which is taxed at up to 45% plus NI rather than 10% CGT. The wording in your share purchase agreement is critical here. Get your accountant and solicitor to review it before you sign.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- In a share sale, retainer contracts stay with the company, avoiding the need to novate each client agreement.
+- Retainer-heavy agencies typically sell for 4-6x EBITDA, compared to 2-4x for project-based agencies.
+- Gains on share sales qualify for Business Asset Disposal Relief at 14% on the first £1m, rising to 18% from 6 April 2026.
+- Deferred consideration linked to retainer retention may be treated differently by HMRC, potentially as employment income.
+- Asset sales require novating every retainer contract, making them impractical for agencies with large client books.
 ---
-
 <p>If you own a retainer-based agency, your client contracts are probably your single most valuable asset. A 12-person digital agency billing £800k per year with 80% retainer income has a very different sale profile to a project-driven shop of the same size. The buyer is paying for predictable recurring revenue. And that creates a specific set of tax and legal questions that most agency founders don't think about until they're deep in heads of terms.</p>
 
 <p>This is a <strong>selling your agency tax guide</strong> focused on one thing: what actually happens to those retainer contracts when you sell, and how HMRC treats the value attached to them. Competitor guides talk about valuation multiples and CGT rates. They rarely cover the practical tax treatment of transferring ongoing client contracts in a sale. That gap is what we're filling here.</p>

@@ -1,33 +1,40 @@
 ---
-title: "Can My Dubai Free Zone Agency Pass the Economic Substance Test With No Staff?"
-slug: "economic-substance-requirement-dubai-agency-no-staff"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/economic-substance-requirement-dubai-agency-no-staff"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Economic Substance Requirement Dubai Agency No Staff: What"
-metaDescription: "If your Dubai free zone agency has no local employees, the economic substance requirement is a real risk. Here is what you need to know to stay compliant."
-altText: "Dubai free zone office desk with laptop and coffee, no staff present, economic substance compliance documents"
-image: "/blog/economic-substance-requirement-dubai-agency-no-staff.jpg"
+title: Can My Dubai Free Zone Agency Pass the Economic Substance Test With No Staff?
+slug: economic-substance-requirement-dubai-agency-no-staff
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/economic-substance-requirement-dubai-agency-no-staff
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Economic Substance Requirement Dubai Agency No Staff: What'
+metaDescription: If your Dubai free zone agency has no local employees, the economic substance requirement is a real risk. Here is what you need to know to stay compliant.
+altText: Dubai free zone office desk with laptop and coffee, no staff present, economic substance compliance documents
+image: /blog/economic-substance-requirement-dubai-agency-no-staff.jpg
 imageCredit:
-  photographer: "Kate Trysh"
-  photographerUrl: "https://www.pexels.com/@katetrysh"
-  sourceUrl: "https://www.pexels.com/photo/stunning-aerial-view-of-urban-skyline-with-skyscrapers-and-highway-27206541/"
-  source: "Pexels"
-h1: "Can My Dubai Free Zone Agency Pass the Economic Substance Test With No Staff?"
-summary: "Dubai free zone companies must demonstrate adequate physical presence and staff under the Economic Substance Regulations. A virtual agency with no local employees may fail the substance test. Here is what UK agency founders running Dubai operations need to do."
-schema: ""
+  photographer: Kate Trysh
+  photographerUrl: https://www.pexels.com/@katetrysh
+  sourceUrl: https://www.pexels.com/photo/stunning-aerial-view-of-urban-skyline-with-skyscrapers-and-highway-27206541/
+  source: Pexels
+h1: Can My Dubai Free Zone Agency Pass the Economic Substance Test With No Staff?
+summary: Dubai free zone companies must demonstrate adequate physical presence and staff under the Economic Substance Regulations. A virtual agency with no local employees may fail the substance test. Here is what UK agency founders running Dubai operations need to do.
+schema: ''
 faqs:
-  - question: "What is the minimum number of employees needed to pass the economic substance test in Dubai?"
-    answer: "There is no fixed minimum. The test requires \"adequate\" staff given the nature and scale of your activities. For a small agency, one full-time employee based in the UAE on a proper residency visa may be enough. But you must also show that core income-generating activities happen in the UAE, not just that you have a person on the payroll."
-  - question: "Can I use a co-working space as my physical presence for ESR?"
-    answer: "Yes, a co-working space can count as physical presence, but it must be a dedicated, exclusive space that you can demonstrate is your company's principal place of business. A hot-desk that you use for two days a month is unlikely to satisfy the authorities. You need a proper lease agreement and evidence of regular use."
-  - question: "What happens if I fail to file an ESR return?"
-    answer: "The first failure to file or comply can result in a fine of AED 50,000 (around £10,600). Repeat non-compliance can lead to fines of AED 400,000 (£85,000), suspension of your trade licence, and referral to the UAE tax authorities. In serious cases, HMRC may also investigate for potential UK tax avoidance."
-  - question: "Does the economic substance requirement apply to all free zones in Dubai?"
-    answer: "Yes, it applies to all UAE free zones. The ESR is a federal law, not a free zone specific rule. Every licensee carrying on a relevant activity must comply, whether they are in Dubai Multi Commodities Centre (DMCC), Abu Dhabi Global Market (ADGM), Jebel Ali Free Zone (JAFZA), or any other free zone."
+- question: What is the minimum number of employees needed to pass the economic substance test in Dubai?
+  answer: There is no fixed minimum. The test requires "adequate" staff given the nature and scale of your activities. For a small agency, one full-time employee based in the UAE on a proper residency visa may be enough. But you must also show that core income-generating activities happen in the UAE, not just that you have a person on the payroll.
+- question: Can I use a co-working space as my physical presence for ESR?
+  answer: Yes, a co-working space can count as physical presence, but it must be a dedicated, exclusive space that you can demonstrate is your company's principal place of business. A hot-desk that you use for two days a month is unlikely to satisfy the authorities. You need a proper lease agreement and evidence of regular use.
+- question: What happens if I fail to file an ESR return?
+  answer: The first failure to file or comply can result in a fine of AED 50,000 (around £10,600). Repeat non-compliance can lead to fines of AED 400,000 (£85,000), suspension of your trade licence, and referral to the UAE tax authorities. In serious cases, HMRC may also investigate for potential UK tax avoidance.
+- question: Does the economic substance requirement apply to all free zones in Dubai?
+  answer: Yes, it applies to all UAE free zones. The ESR is a federal law, not a free zone specific rule. Every licensee carrying on a relevant activity must comply, whether they are in Dubai Multi Commodities Centre (DMCC), Abu Dhabi Global Market (ADGM), Jebel Ali Free Zone (JAFZA), or any other free zone.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Dubai free zone agencies carrying on a relevant activity must file an ESR notification and, if turnover exceeds AED 315,000 (£67,000), a full ESR return.
+- To pass the economic substance test, your Dubai company must show it is directed and managed from the UAE, has adequate physical premises, and employs sufficient local staff.
+- A virtual agency with no employees in Dubai will likely fail the substance test because core income-generating activities cannot be demonstrated without local staff.
+- UK agency founders running a single-person Dubai entity risk penalties if they cannot prove adequate staff presence under the UAE's Economic Substance Regulations.
+- If your Dubai free zone company invoices clients and generates profit, it is a licensee subject to ESR, even if you operate from a co-working space on a visitor visa.
 ---
-
 <p>If you are a UK agency founder who has set up a company in a Dubai free zone, you have probably done it for one reason: tax efficiency. Zero per cent corporation tax. No personal income tax. A clean, modern jurisdiction that feels a world away from HMRC's quarterly reporting demands.</p>
 
 <p>But that efficiency comes with conditions. One of the most important is the <strong>economic substance requirement</strong>. And if your Dubai agency operates with no local staff, you may be in trouble.</p>

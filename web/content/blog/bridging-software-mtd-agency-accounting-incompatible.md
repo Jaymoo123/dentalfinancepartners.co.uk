@@ -1,33 +1,40 @@
 ---
-title: "Bridging Software for MTD: What to Do When Your Agency Accounting Tool Isn't Compatible"
-slug: "bridging-software-mtd-agency-accounting-incompatible"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/bridging-software-mtd-agency-accounting-incompatible"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Making Tax Digital"
-metaTitle: "Bridging Software MTD Agency Accounting: Your Workaround"
-metaDescription: "Your accounting tool isn't MTD-compatible. Bridging software connects it to HMRC. Here's how it works, what it costs, and which one to pick for your"
-altText: "Agency founder reviewing MTD bridging software options on a laptop in a modern UK office with spreadsheet visible on screen"
-image: "/blog/bridging-software-mtd-agency-accounting-incompatible.jpg"
+title: 'Bridging Software for MTD: What to Do When Your Agency Accounting Tool Isn''t Compatible'
+slug: bridging-software-mtd-agency-accounting-incompatible
+canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/bridging-software-mtd-agency-accounting-incompatible
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Making Tax Digital
+metaTitle: 'Bridging Software MTD Agency Accounting: Your Workaround'
+metaDescription: Your accounting tool isn't MTD-compatible. Bridging software connects it to HMRC. Here's how it works, what it costs, and which one to pick for your
+altText: Agency founder reviewing MTD bridging software options on a laptop in a modern UK office with spreadsheet visible on screen
+image: /blog/bridging-software-mtd-agency-accounting-incompatible.jpg
 imageCredit:
-  photographer: "Mikhail Nilov"
-  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
-  sourceUrl: "https://www.pexels.com/photo/a-person-with-laptop-on-her-computing-something-on-the-calculator-8297795/"
-  source: "Pexels"
-h1: "Bridging Software for MTD: What to Do When Your Agency Accounting Tool Isn't Compatible"
-summary: "If your agency accounting tool isn't MTD-compatible, bridging software is the workaround. It sits between your software and HMRC, sending the required data without you changing your whole system. Here is what you need to know before Making Tax Digital for Income Tax becomes mandatory."
-schema: ""
+  photographer: Mikhail Nilov
+  photographerUrl: https://www.pexels.com/@mikhail-nilov
+  sourceUrl: https://www.pexels.com/photo/a-person-with-laptop-on-her-computing-something-on-the-calculator-8297795/
+  source: Pexels
+h1: 'Bridging Software for MTD: What to Do When Your Agency Accounting Tool Isn''t Compatible'
+summary: If your agency accounting tool isn't MTD-compatible, bridging software is the workaround. It sits between your software and HMRC, sending the required data without you changing your whole system. Here is what you need to know before Making Tax Digital for Income Tax becomes mandatory.
+schema: ''
 faqs:
-  - question: "Do I need bridging software if I use Xero or QuickBooks?"
-    answer: "No. Xero, QuickBooks, FreeAgent, and Sage are all MTD-compatible for income tax. You can submit your quarterly updates directly from within the software. Bridging software is only needed if your current tool is not on HMRC's approved list of MTD-compatible software."
-  - question: "Can I use the free HMRC bridging tool for my agency?"
-    answer: "Yes, but it is basic. The free tool allows manual entry of income and expenses only. For a sole trader agency with simple finances, it works fine. For a larger agency with multiple income streams and cost categories, a paid bridging tool that accepts CSV uploads will save you significant time each quarter."
-  - question: "Will bridging software handle my VAT submissions too?"
-    answer: "Not usually. Bridging software for MTD for Income Tax is separate from MTD for VAT. If you are VAT-registered, you need either MTD-compatible VAT software or a separate bridging tool for VAT. Check with the bridging software provider whether their tool covers both."
-  - question: "What happens if I ignore MTD and keep using my current system?"
-    answer: "You will miss your quarterly filing deadlines. HMRC operates a points-based penalty system. Each missed filing earns a point. Four points within two years triggers a £200 penalty. Points and penalties escalate from there. Ignoring MTD is not a viable strategy."
+- question: Do I need bridging software if I use Xero or QuickBooks?
+  answer: No. Xero, QuickBooks, FreeAgent, and Sage are all MTD-compatible for income tax. You can submit your quarterly updates directly from within the software. Bridging software is only needed if your current tool is not on HMRC's approved list of MTD-compatible software.
+- question: Can I use the free HMRC bridging tool for my agency?
+  answer: Yes, but it is basic. The free tool allows manual entry of income and expenses only. For a sole trader agency with simple finances, it works fine. For a larger agency with multiple income streams and cost categories, a paid bridging tool that accepts CSV uploads will save you significant time each quarter.
+- question: Will bridging software handle my VAT submissions too?
+  answer: Not usually. Bridging software for MTD for Income Tax is separate from MTD for VAT. If you are VAT-registered, you need either MTD-compatible VAT software or a separate bridging tool for VAT. Check with the bridging software provider whether their tool covers both.
+- question: What happens if I ignore MTD and keep using my current system?
+  answer: You will miss your quarterly filing deadlines. HMRC operates a points-based penalty system. Each missed filing earns a point. Four points within two years triggers a £200 penalty. Points and penalties escalate from there. Ignoring MTD is not a viable strategy.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- From April 2026, agency founders with self-employed or partnership income over £50,000 must submit quarterly MTD updates using compatible software.
+- Bridging software connects your existing accounting tool to HMRC, translating data into the required XML format without replacing your system.
+- Spreadsheets, niche agency tools, older software versions, and custom-built systems are common reasons your accounting tool may not be MTD-compatible.
+- Bridging software allows you to keep your current workflow; you export figures from your tool, import them into the bridge, and submit to HMRC.
+- HMRC maintains a list of MTD-compatible software; if your tool isn't on it, bridging software is the practical fix before your first filing deadline.
 ---
-
 <p>Making Tax Digital for Income Tax (MTD for ITSA) is coming. From April 2026, if your agency's self-employed or partnership income exceeds £50,000 per year, you will be legally required to keep digital records and submit quarterly updates to HMRC using MTD-compatible software. The same applies from April 2027 if your income is over £30,000.</p>
 
 <p>Here is the problem a lot of agency founders are facing: their accounting tool is not MTD-compatible. Maybe you run your numbers through a spreadsheet. Maybe you use an older version of accounting software that will not be updated. Maybe you use a niche tool built for agencies that has not yet received HMRC recognition.</p>

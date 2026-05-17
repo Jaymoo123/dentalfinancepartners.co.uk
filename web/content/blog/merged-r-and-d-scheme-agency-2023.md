@@ -1,33 +1,40 @@
 ---
-title: "How Does the Merged R&D Scheme Affect UK Agencies Post-April 2023?"
-slug: "merged-r-and-d-scheme-agency-2023"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/merged-r-and-d-scheme-agency-2023"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Merged R&D scheme agency: what UK founders need to know"
-metaDescription: "From April 2023, the merged R&D scheme replaced the old SME and RDEC regimes. Here's how it works for UK agencies and what it means for your claims."
-altText: "Agency founder reviewing R&D tax credit paperwork in a UK office with a laptop and calculator"
-image: "/blog/merged-r-and-d-scheme-agency-2023.jpg"
+title: How Does the Merged R&D Scheme Affect UK Agencies Post-April 2023?
+slug: merged-r-and-d-scheme-agency-2023
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/merged-r-and-d-scheme-agency-2023
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'Merged R&D scheme agency: what UK founders need to know'
+metaDescription: From April 2023, the merged R&D scheme replaced the old SME and RDEC regimes. Here's how it works for UK agencies and what it means for your claims.
+altText: Agency founder reviewing R&D tax credit paperwork in a UK office with a laptop and calculator
+image: /blog/merged-r-and-d-scheme-agency-2023.jpg
 imageCredit:
-  photographer: "Valentin Ivantsov"
-  photographerUrl: "https://www.pexels.com/@valentin-ivantsov-2154772556"
-  sourceUrl: "https://www.pexels.com/photo/colorful-clothespins-on-red-and-blue-background-36365229/"
-  source: "Pexels"
-h1: "How Does the Merged R&D Scheme Affect UK Agencies Post-April 2023?"
-summary: "The merged R&D scheme, effective from April 2023, replaced the old SME and RDEC regimes with a single framework. For UK agency founders, this changes how you claim relief on qualifying R&D projects. This post explains the new rules, rates, and what you need to do differently."
-schema: ""
+  photographer: Valentin Ivantsov
+  photographerUrl: https://www.pexels.com/@valentin-ivantsov-2154772556
+  sourceUrl: https://www.pexels.com/photo/colorful-clothespins-on-red-and-blue-background-36365229/
+  source: Pexels
+h1: How Does the Merged R&D Scheme Affect UK Agencies Post-April 2023?
+summary: The merged R&D scheme, effective from April 2023, replaced the old SME and RDEC regimes with a single framework. For UK agency founders, this changes how you claim relief on qualifying R&D projects. This post explains the new rules, rates, and what you need to do differently.
+schema: ''
 faqs:
-  - question: "What is the merged R&D scheme for UK agencies?"
-    answer: "The merged R&D scheme, effective for accounting periods starting on or after 1 April 2024, replaces the old SME and RDEC regimes with a single framework. It provides a taxable credit of 20% on qualifying R&D expenditure. For agencies, this means a net benefit of approximately 15% of your qualifying spend after corporation tax."
-  - question: "Does my agency qualify for the merged R&D scheme?"
-    answer: "Your agency qualifies if you have carried out projects that sought an advance in science or technology and resolved genuine technical uncertainty through systematic investigation. Common qualifying activities include developing new software tools, creating novel algorithms, building proprietary AI applications, or designing new technical processes. Routine web development, standard design work, and marketing campaigns do not qualify."
-  - question: "What documentation do I need for an R&D claim under the merged scheme?"
-    answer: "You need a technical narrative describing the project, the technical uncertainty, and your systematic approach to resolving it. You also need financial evidence showing qualifying costs broken down by category (staff, software, consumables, subcontractors). HMRC now expects project-level time recording. For claims over £25,000, you need a report from a qualified R&D adviser."
-  - question: "How does the merged scheme affect subcontractor costs for agencies?"
-    answer: "The merged scheme restricts qualifying expenditure on overseas subcontractors. Only costs for work carried out in the UK or certain qualifying overseas territories will qualify. If you use offshore developers in India, Eastern Europe, or other non-qualifying jurisdictions, those costs are now excluded. You also need a clear contract specifying the R&D activities for any subcontractor."
+- question: What is the merged R&D scheme for UK agencies?
+  answer: The merged R&D scheme, effective for accounting periods starting on or after 1 April 2024, replaces the old SME and RDEC regimes with a single framework. It provides a taxable credit of 20% on qualifying R&D expenditure. For agencies, this means a net benefit of approximately 15% of your qualifying spend after corporation tax.
+- question: Does my agency qualify for the merged R&D scheme?
+  answer: Your agency qualifies if you have carried out projects that sought an advance in science or technology and resolved genuine technical uncertainty through systematic investigation. Common qualifying activities include developing new software tools, creating novel algorithms, building proprietary AI applications, or designing new technical processes. Routine web development, standard design work, and marketing campaigns do not qualify.
+- question: What documentation do I need for an R&D claim under the merged scheme?
+  answer: You need a technical narrative describing the project, the technical uncertainty, and your systematic approach to resolving it. You also need financial evidence showing qualifying costs broken down by category (staff, software, consumables, subcontractors). HMRC now expects project-level time recording. For claims over £25,000, you need a report from a qualified R&D adviser.
+- question: How does the merged scheme affect subcontractor costs for agencies?
+  answer: The merged scheme restricts qualifying expenditure on overseas subcontractors. Only costs for work carried out in the UK or certain qualifying overseas territories will qualify. If you use offshore developers in India, Eastern Europe, or other non-qualifying jurisdictions, those costs are now excluded. You also need a clear contract specifying the R&D activities for any subcontractor.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- The merged R&D scheme replaces the old SME and RDEC regimes for accounting periods starting on or after 1 April 2024.
+- Under the merged scheme, agencies receive a taxable credit of 20% of qualifying R&D expenditure, with a net benefit of roughly 15% after 25% corporation tax.
+- Qualifying agency activities include developing novel software, algorithms, or AI tools that resolve scientific or technological uncertainty.
+- Routine work such as standard web development, off-the-shelf software implementation, or creative design without technical innovation does not qualify.
+- For periods between 1 April 2023 and 31 March 2024, a transition period applies with reduced SME rates and an intensive SME scheme.
 ---
-
 <p>The merged R&D scheme, introduced from 1 April 2023, fundamentally changed how UK companies claim research and development tax relief. If you run a digital agency, a creative agency, or a software development shop, this affects you directly.</p>
 
 <p>Before April 2023, there were two separate regimes: the SME scheme (for companies with under 500 employees and either under €100m turnover or €86m gross assets) and the RDEC scheme (for larger companies and those doing subsidised or subcontracted R&D). The merged scheme replaces both for accounting periods beginning on or after 1 April 2024. For periods starting between 1 April 2023 and 31 March 2024, there is a transition period with reduced SME rates and a new "intensive" SME scheme.</p>

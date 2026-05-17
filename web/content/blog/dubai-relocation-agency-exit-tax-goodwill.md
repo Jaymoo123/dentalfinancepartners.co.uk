@@ -1,33 +1,40 @@
 ---
-title: "Dubai Relocation for Agency Founders: The Exit Tax on Your Agency's Goodwill When You Sell"
-slug: "dubai-relocation-agency-exit-tax-goodwill"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-relocation-agency-exit-tax-goodwill"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Dubai Relocation: The Exit Tax on Your Agency's Goodwill"
-metaDescription: "Selling your agency after moving to Dubai? UK tax can still apply to goodwill on a share sale. Here's what you need to know before you relocate."
-altText: "Agency founder reviewing documents in a Dubai office with skyline visible through window"
-image: "/blog/dubai-relocation-agency-exit-tax-goodwill.jpg"
+title: 'Dubai Relocation for Agency Founders: The Exit Tax on Your Agency''s Goodwill When You Sell'
+slug: dubai-relocation-agency-exit-tax-goodwill
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-relocation-agency-exit-tax-goodwill
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Dubai Relocation: The Exit Tax on Your Agency''s Goodwill'
+metaDescription: Selling your agency after moving to Dubai? UK tax can still apply to goodwill on a share sale. Here's what you need to know before you relocate.
+altText: Agency founder reviewing documents in a Dubai office with skyline visible through window
+image: /blog/dubai-relocation-agency-exit-tax-goodwill.jpg
 imageCredit:
-  photographer: "Anna Shvets"
-  photographerUrl: "https://www.pexels.com/@shvetsa"
-  sourceUrl: "https://www.pexels.com/photo/woman-holding-cartoon-4226206/"
-  source: "Pexels"
-h1: "Dubai Relocation for Agency Founders: The Exit Tax on Your Agency's Goodwill When You Sell"
-summary: "Moving to Dubai doesn't automatically exempt you from UK tax when you sell your agency. The structure of your sale — share sale vs asset sale — determines whether HMRC can still tax your goodwill. Here's what to plan for before you relocate."
-schema: ""
+  photographer: Anna Shvets
+  photographerUrl: https://www.pexels.com/@shvetsa
+  sourceUrl: https://www.pexels.com/photo/woman-holding-cartoon-4226206/
+  source: Pexels
+h1: 'Dubai Relocation for Agency Founders: The Exit Tax on Your Agency''s Goodwill When You Sell'
+summary: Moving to Dubai doesn't automatically exempt you from UK tax when you sell your agency. The structure of your sale — share sale vs asset sale — determines whether HMRC can still tax your goodwill. Here's what to plan for before you relocate.
+schema: ''
 faqs:
-  - question: "What is the \"exit tax\" on goodwill when selling an agency after moving to Dubai?"
-    answer: "The exit tax refers to UK capital gains tax that can still apply when you sell your agency shares (or assets) within 5 years of becoming non-resident. Goodwill — the premium above net assets representing client relationships and brand value — is the largest component of most agency sale prices. HMRC can tax that gain even if you live in Dubai and the proceeds never touch a UK bank account."
-  - question: "Can I avoid UK tax by selling my agency as an asset sale instead of a share sale after moving to Dubai?"
-    answer: "In some cases, yes. An asset sale shifts the tax on goodwill from CGT (charged to you personally at 14-18%) to corporation tax (charged to your company at 19-25%). The post-tax cash can then be extracted as a dividend to you in Dubai, which is not subject to further UK tax. Model both scenarios with your accountant before committing to a structure."
-  - question: "How long do I need to stay non-resident to avoid UK CGT on my agency sale?"
-    answer: "You must remain non-resident for at least 5 complete tax years from your departure date. If you sell within that 5-year window, the gain is caught by the temporary non-residence rules. If you sell on day 1,830 (5 years and 1 day after departure), the gain is outside UK taxing jurisdiction. Plan your sale date carefully."
-  - question: "What happens if I move to Dubai, sell my agency, and then return to the UK within 5 years?"
-    answer: "The gain becomes taxable in the year of your return under the temporary non-residence rules. You pay the tax at the rates applicable in that year. If you plan to return, do not sell during your absence. Wait until you are back and resident, then sell. The tax outcome is the same, but you avoid the complexity."
+- question: What is the "exit tax" on goodwill when selling an agency after moving to Dubai?
+  answer: The exit tax refers to UK capital gains tax that can still apply when you sell your agency shares (or assets) within 5 years of becoming non-resident. Goodwill — the premium above net assets representing client relationships and brand value — is the largest component of most agency sale prices. HMRC can tax that gain even if you live in Dubai and the proceeds never touch a UK bank account.
+- question: Can I avoid UK tax by selling my agency as an asset sale instead of a share sale after moving to Dubai?
+  answer: In some cases, yes. An asset sale shifts the tax on goodwill from CGT (charged to you personally at 14-18%) to corporation tax (charged to your company at 19-25%). The post-tax cash can then be extracted as a dividend to you in Dubai, which is not subject to further UK tax. Model both scenarios with your accountant before committing to a structure.
+- question: How long do I need to stay non-resident to avoid UK CGT on my agency sale?
+  answer: You must remain non-resident for at least 5 complete tax years from your departure date. If you sell within that 5-year window, the gain is caught by the temporary non-residence rules. If you sell on day 1,830 (5 years and 1 day after departure), the gain is outside UK taxing jurisdiction. Plan your sale date carefully.
+- question: What happens if I move to Dubai, sell my agency, and then return to the UK within 5 years?
+  answer: The gain becomes taxable in the year of your return under the temporary non-residence rules. You pay the tax at the rates applicable in that year. If you plan to return, do not sell during your absence. Wait until you are back and resident, then sell. The tax outcome is the same, but you avoid the complexity.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- If you sell your agency shares within five years of becoming non-resident, HMRC can still tax your capital gains under the temporary non-residence rules.
+- Goodwill typically represents 60–70% of an agency's sale price and is caught by UK CGT if you sell shares or assets within five years of leaving.
+- Business Asset Disposal Relief at 14% (rising to 18% from 6 April 2026) does not exempt you from UK tax on a share sale after relocating to Dubai.
+- The five-year clock for UK taxing rights starts from the date you become non-resident, not the date you sell your agency.
+- Share sales and asset sales are treated differently for goodwill gains after relocation, affecting how the gain is calculated and what reliefs apply.
 ---
-
 <p>You are a UK agency founder who has moved to Dubai. You sold your agency six months after arriving. You assume no UK tax applies. You would be wrong in most cases.</p>
 
 <p>HMRC does not simply wave goodbye when you leave. If you sell your agency shares within five years of becoming non-resident, the UK can still tax your capital gains. And the biggest chunk of value in most agency sales is goodwill.</p>

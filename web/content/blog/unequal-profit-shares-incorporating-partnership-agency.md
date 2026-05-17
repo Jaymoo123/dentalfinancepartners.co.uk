@@ -1,33 +1,40 @@
 ---
-title: "How to Handle Unequal Profit Shares When Incorporating Your Partnership Agency"
-slug: "unequal-profit-shares-incorporating-partnership-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/unequal-profit-shares-incorporating-partnership-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "When to incorporate agency with unequal partner profit"
-metaDescription: "Moving from partnership to limited company? Unequal profit shares create tax complications. Here's how to structure the transition without a tax bill"
-altText: "Two agency founders reviewing partnership incorporation documents with their ICAEW accountant in a modern UK office"
-image: "/blog/unequal-profit-shares-incorporating-partnership-agency.jpg"
+title: How to Handle Unequal Profit Shares When Incorporating Your Partnership Agency
+slug: unequal-profit-shares-incorporating-partnership-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/unequal-profit-shares-incorporating-partnership-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Incorporation and Structure
+metaTitle: When to incorporate agency with unequal partner profit
+metaDescription: Moving from partnership to limited company? Unequal profit shares create tax complications. Here's how to structure the transition without a tax bill
+altText: Two agency founders reviewing partnership incorporation documents with their ICAEW accountant in a modern UK office
+image: /blog/unequal-profit-shares-incorporating-partnership-agency.jpg
 imageCredit:
-  photographer: "Towfiqu barbhuiya"
-  photographerUrl: "https://www.pexels.com/@towfiqu-barbhuiya-3440682"
-  sourceUrl: "https://www.pexels.com/photo/a-close-up-shot-of-a-person-stacking-coins-9755376/"
-  source: "Pexels"
-h1: "How to Handle Unequal Profit Shares When Incorporating Your Partnership Agency"
-summary: "Moving your agency from a partnership to a limited company is straightforward when partners share profits equally. When they don't — say 60/40, 70/30, or 80/20 — the tax treatment gets more complex. This post explains the pitfalls and the practical solutions."
-schema: ""
+  photographer: Towfiqu barbhuiya
+  photographerUrl: https://www.pexels.com/@towfiqu-barbhuiya-3440682
+  sourceUrl: https://www.pexels.com/photo/a-close-up-shot-of-a-person-stacking-coins-9755376/
+  source: Pexels
+h1: How to Handle Unequal Profit Shares When Incorporating Your Partnership Agency
+summary: Moving your agency from a partnership to a limited company is straightforward when partners share profits equally. When they don't — say 60/40, 70/30, or 80/20 — the tax treatment gets more complex. This post explains the pitfalls and the practical solutions.
+schema: ''
 faqs:
-  - question: "What happens if we incorporate with shares that don't match our partnership profit shares?"
-    answer: "If the shares issued on incorporation do not match the partners' profit shares, HMRC treats the difference as a disposal of partnership assets for non-share consideration. That part is not eligible for Incorporation Relief, so capital gains tax is due immediately. In some cases, HMRC can argue the excess value transferred is earnings, taxable as income at up to 45%. Always match shares to profit shares at incorporation, then restructure later."
-  - question: "Can we use different classes of shares to give different partners different rights?"
-    answer: "Yes. Different classes of shares allow you to separate voting control from economic entitlement. One partner can hold all the voting shares while dividend rights are split unequally across classes. This avoids triggering a disposal at incorporation because each partner's overall economic interest matches their shareholding. You will need a shareholders' agreement and updated articles of association."
-  - question: "How is partnership goodwill valued for incorporation?"
-    answer: "Goodwill should be valued by a professional valuer with experience in agency businesses. The valuation determines the gain deferred under Incorporation Relief and the base cost of goodwill in the new company. If the valuation is too high, HMRC can challenge it. If too low, the partners lose tax deferral. Expect to pay £2,000-£5,000 for a robust valuation that HMRC will accept."
-  - question: "What happens to partnership capital accounts when we incorporate?"
-    answer: "Partnership capital accounts are typically converted into directors' loan accounts in the new company. Each partner's loan account reflects the capital they had in the partnership. These can be drawn down tax-free over time. If partners want to equalise capital positions at incorporation, this should be structured as a separate transaction — not bundled into the share issue — to avoid HMRC challenges."
+- question: What happens if we incorporate with shares that don't match our partnership profit shares?
+  answer: If the shares issued on incorporation do not match the partners' profit shares, HMRC treats the difference as a disposal of partnership assets for non-share consideration. That part is not eligible for Incorporation Relief, so capital gains tax is due immediately. In some cases, HMRC can argue the excess value transferred is earnings, taxable as income at up to 45%. Always match shares to profit shares at incorporation, then restructure later.
+- question: Can we use different classes of shares to give different partners different rights?
+  answer: Yes. Different classes of shares allow you to separate voting control from economic entitlement. One partner can hold all the voting shares while dividend rights are split unequally across classes. This avoids triggering a disposal at incorporation because each partner's overall economic interest matches their shareholding. You will need a shareholders' agreement and updated articles of association.
+- question: How is partnership goodwill valued for incorporation?
+  answer: Goodwill should be valued by a professional valuer with experience in agency businesses. The valuation determines the gain deferred under Incorporation Relief and the base cost of goodwill in the new company. If the valuation is too high, HMRC can challenge it. If too low, the partners lose tax deferral. Expect to pay £2,000-£5,000 for a robust valuation that HMRC will accept.
+- question: What happens to partnership capital accounts when we incorporate?
+  answer: Partnership capital accounts are typically converted into directors' loan accounts in the new company. Each partner's loan account reflects the capital they had in the partnership. These can be drawn down tax-free over time. If partners want to equalise capital positions at incorporation, this should be structured as a separate transaction — not bundled into the share issue — to avoid HMRC challenges.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- When incorporating a partnership with unequal profit shares, issuing shares that do not match the profit split triggers an immediate capital gains tax charge on the difference.
+- HMRC treats a mismatch between profit share and shareholding as a disposal of partnership assets for non-share consideration, disqualifying that portion from Incorporation Relief.
+- If one partner transfers value to another through an unequal share structure, HMRC may reclassify the excess as earnings taxable at up to 45% income tax rather than capital gains.
+- Incorporation Relief under TCGA 1992 s162 defers capital gains only when the share split exactly matches each partner's profit share in the partnership.
+- To avoid immediate tax charges, partners with unequal profit shares must either match shareholdings to profit shares or use alternative structures such as alphabet shares or shareholder agreements.
 ---
-
 <p>If you run your agency as a partnership with one or more partners, and those partners don't share profits equally, incorporating the business is more complicated than it first appears.</p>
 
 <p>Most accountants will tell you that incorporation is a straightforward process. Transfer the trade, assets, and goodwill from the partnership to a new limited company. Issue shares to the former partners. Carry on trading. Simple.</p>

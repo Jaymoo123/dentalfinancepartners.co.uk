@@ -1,33 +1,40 @@
 ---
-title: "Making Tax Digital for Agency Founders: The Complete Survival Guide"
-slug: "mtd-agency-founder-pillar"
-canonical: "https://www.agencyfounderfinance.co.uk/fundamentals/mtd-agency-founder-pillar"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Making Tax Digital"
-metaTitle: "MTD for Agency Founders: ITSA, VAT & Deadlines 2025/26"
-metaDescription: "MTD for agency founders is coming. This guide covers ITSA, VAT, quarterly updates, software, and deadlines for UK agencies. No fluff. Practical steps."
-altText: "Agency founder reviewing MTD compliance checklist on laptop in a modern UK office with financial reports visible"
-image: "/blog/mtd-agency-founder-pillar.jpg"
+title: 'Making Tax Digital for Agency Founders: The Complete Survival Guide'
+slug: mtd-agency-founder-pillar
+canonical: https://www.agencyfounderfinance.co.uk/fundamentals/mtd-agency-founder-pillar
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Making Tax Digital
+metaTitle: 'MTD for Agency Founders: ITSA, VAT & Deadlines 2025/26'
+metaDescription: MTD for agency founders is coming. This guide covers ITSA, VAT, quarterly updates, software, and deadlines for UK agencies. No fluff. Practical steps.
+altText: Agency founder reviewing MTD compliance checklist on laptop in a modern UK office with financial reports visible
+image: /blog/mtd-agency-founder-pillar.jpg
 imageCredit:
-  photographer: "Leeloo The First"
-  photographerUrl: "https://www.pexels.com/@leeloothefirst"
-  sourceUrl: "https://www.pexels.com/photo/smartphone-and-documents-on-desk-8962519/"
-  source: "Pexels"
-h1: "Making Tax Digital for Agency Founders: The Complete Survival Guide"
-summary: "Making Tax Digital is the single biggest change to UK tax administration in a generation, and agency founders are directly in scope. This guide covers everything you need to know — from MTD for VAT to the incoming MTD for Income Tax Self Assessment — with specific deadlines, software recommendations, and a practical action checklist. Written by ICAEW-qualified accountants who work with 73+ UK and UAE agency founders."
-schema: ""
+  photographer: Leeloo The First
+  photographerUrl: https://www.pexels.com/@leeloothefirst
+  sourceUrl: https://www.pexels.com/photo/smartphone-and-documents-on-desk-8962519/
+  source: Pexels
+h1: 'Making Tax Digital for Agency Founders: The Complete Survival Guide'
+summary: Making Tax Digital is the single biggest change to UK tax administration in a generation, and agency founders are directly in scope. This guide covers everything you need to know — from MTD for VAT to the incoming MTD for Income Tax Self Assessment — with specific deadlines, software recommendations, and a practical action checklist. Written by ICAEW-qualified accountants who work with 73+ UK and UAE agency founders.
+schema: ''
 faqs:
-  - question: "What is the MTD threshold for agency founders?"
-    answer: "For MTD for ITSA, the threshold is £50,000 of gross business income from self-employment or property income. If your agency turnover as a sole trader exceeds £50,000, you are in scope from April 2026. For those with income between £30,000 and £50,000, it becomes mandatory from April 2027. Limited company directors are not in scope for their salary and dividends, only for any self-employed side income."
-  - question: "Can I still use spreadsheets under MTD?"
-    answer: "You cannot file MTD returns directly from a spreadsheet without bridging software. HMRC requires digital records and API-connected submissions. Bridging tools like CalcXML exist, but they are a temporary workaround. The better long-term solution is to move to cloud accounting software like Xero, QuickBooks, or FreeAgent, which handle MTD submissions automatically."
-  - question: "Does MTD change when I pay my tax?"
-    answer: "No. MTD changes how you report your income and expenses to HMRC, but not when you pay tax. Payments on account remain due on 31 January and 31 July. The balancing payment is still due by 31 January after the tax year ends. Your tax bill is calculated based on your final declaration, not your quarterly updates."
-  - question: "What happens if I miss a quarterly MTD deadline?"
-    answer: "HMRC operates a points-based penalty system. Each late submission earns you a penalty point. Once you accumulate a certain number of points (expected to be 4 for quarterly filers), you receive a £200 penalty. Further late submissions while over the threshold trigger additional penalties. Set calendar reminders and keep your bookkeeping up to date to avoid this."
+- question: What is the MTD threshold for agency founders?
+  answer: For MTD for ITSA, the threshold is £50,000 of gross business income from self-employment or property income. If your agency turnover as a sole trader exceeds £50,000, you are in scope from April 2026. For those with income between £30,000 and £50,000, it becomes mandatory from April 2027. Limited company directors are not in scope for their salary and dividends, only for any self-employed side income.
+- question: Can I still use spreadsheets under MTD?
+  answer: You cannot file MTD returns directly from a spreadsheet without bridging software. HMRC requires digital records and API-connected submissions. Bridging tools like CalcXML exist, but they are a temporary workaround. The better long-term solution is to move to cloud accounting software like Xero, QuickBooks, or FreeAgent, which handle MTD submissions automatically.
+- question: Does MTD change when I pay my tax?
+  answer: No. MTD changes how you report your income and expenses to HMRC, but not when you pay tax. Payments on account remain due on 31 January and 31 July. The balancing payment is still due by 31 January after the tax year ends. Your tax bill is calculated based on your final declaration, not your quarterly updates.
+- question: What happens if I miss a quarterly MTD deadline?
+  answer: HMRC operates a points-based penalty system. Each late submission earns you a penalty point. Once you accumulate a certain number of points (expected to be 4 for quarterly filers), you receive a £200 penalty. Further late submissions while over the threshold trigger additional penalties. Set calendar reminders and keep your bookkeeping up to date to avoid this.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- MTD for VAT has been mandatory since April 2022 for all VAT-registered agencies; filing via the HMRC portal is no longer compliant.
+- From April 2026, agency founders with self-employed or rental income over £50,000 must submit quarterly digital updates to HMRC using compatible software.
+- Limited company directors are not subject to MTD for ITSA on their company's corporation tax, but must comply for any personal self-assessment income.
+- MTD-compatible software like Xero, QuickBooks, FreeAgent, or Sage is required for both VAT and income tax filings; spreadsheets alone are not permitted.
+- Quarterly updates for MTD ITSA are due by 5 August, 5 November, 5 February, and 5 May, with an end-of-period statement after the tax year ends.
 ---
-
 <p>Making Tax Digital is the most significant change to UK tax administration since self assessment was introduced in 1996. For agency founders running marketing, digital, creative, PR, advertising, web design, SEO, or recruitment agencies, it means the end of annual tax returns as you know them. Quarterly digital updates to HMRC. Mandatory compatible software. No more spreadsheets for your main tax filings.</p>
 
 <p>This is the definitive MTD agency founder guide. It covers everything from the VAT rules already in force to the incoming MTD for Income Tax Self Assessment (ITSA) that will affect most agency founders from April 2026. We've written it as ICAEW-qualified accountants who work exclusively with agency founders — we know how your businesses operate, where your tax complexities lie, and what you actually need to do to stay compliant without drowning in admin.</p>

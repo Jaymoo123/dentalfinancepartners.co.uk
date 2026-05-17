@@ -1,33 +1,40 @@
 ---
-title: "Performance Optimisation Work: When Does It Qualify for R&D Credits?"
-slug: "performance-optimisation-rd-qualifying"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/performance-optimisation-rd-qualifying"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Performance Optimisation R&D Qualifying: A Guide"
-metaDescription: "Does your agency's performance optimisation work qualify for R&D tax credits? We break down the HMRC rules with real examples for UK agencies."
-altText: "Agency team reviewing performance optimisation R&D qualifying work on a whiteboard in a modern UK office"
-image: "/blog/performance-optimisation-rd-qualifying.jpg"
+title: 'Performance Optimisation Work: When Does It Qualify for R&D Credits?'
+slug: performance-optimisation-rd-qualifying
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/performance-optimisation-rd-qualifying
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'Performance Optimisation R&D Qualifying: A Guide'
+metaDescription: Does your agency's performance optimisation work qualify for R&D tax credits? We break down the HMRC rules with real examples for UK agencies.
+altText: Agency team reviewing performance optimisation R&D qualifying work on a whiteboard in a modern UK office
+image: /blog/performance-optimisation-rd-qualifying.jpg
 imageCredit:
-  photographer: "Daniil Komov"
-  photographerUrl: "https://www.pexels.com/@dkomov"
-  sourceUrl: "https://www.pexels.com/photo/close-up-of-computer-screen-with-code-and-glasses-34803991/"
-  source: "Pexels"
-h1: "Performance Optimisation Work: When Does It Qualify for R&D Credits?"
-summary: "Performance optimisation work can qualify for R&D tax credits, but the line between routine improvement and qualifying innovation is thin. We explain where HMRC draws that line, with real examples for marketing, creative, and digital agencies."
-schema: ""
+  photographer: Daniil Komov
+  photographerUrl: https://www.pexels.com/@dkomov
+  sourceUrl: https://www.pexels.com/photo/close-up-of-computer-screen-with-code-and-glasses-34803991/
+  source: Pexels
+h1: 'Performance Optimisation Work: When Does It Qualify for R&D Credits?'
+summary: Performance optimisation work can qualify for R&D tax credits, but the line between routine improvement and qualifying innovation is thin. We explain where HMRC draws that line, with real examples for marketing, creative, and digital agencies.
+schema: ''
 faqs:
-  - question: "Can I claim R&D tax credits for performance optimisation work on my own agency's website or platform?"
-    answer: "Yes, provided the work meets HMRC's R&D tests. The key is that the optimisation must involve technological uncertainty — not just routine improvements. If you are optimising your own agency's website using standard techniques (caching, image compression, CDN), it is unlikely to qualify. But if you are developing a novel approach to solve a genuinely uncertain technical problem, it can qualify, even on your own platform."
-  - question: "What is the difference between routine performance optimisation and qualifying R&D work?"
-    answer: "Routine optimisation applies known methods to known problems with predictable outcomes. Qualifying R&D involves overcoming technological uncertainty — you did not know at the start whether the solution was achievable or how to achieve it. If any competent developer in your field could have solved the problem using standard techniques, it is routine work, not R&D."
-  - question: "How far back can I claim R&D tax credits for past performance optimisation projects?"
-    answer: "For SME agencies, you can amend a corporation tax return to include an R&D claim up to 12 months after the filing deadline. That means you can typically go back two accounting periods. For example, if your accounting year ends on 31 March 2025, you can still amend the 2023/24 return until 31 March 2026. Check with your accountant for your specific deadlines."
-  - question: "Do I need to have a successful outcome to claim R&D tax credits for performance optimisation work?"
-    answer: "No. HMRC recognises that R&D includes projects that do not succeed. If you spent time researching, prototyping, and testing a performance optimisation approach but ultimately concluded it was not feasible, that research phase still qualifies. The key is that you were trying to overcome technological uncertainty, even if you did not achieve the desired outcome. Document the work and the reasons it did not succeed."
+- question: Can I claim R&D tax credits for performance optimisation work on my own agency's website or platform?
+  answer: Yes, provided the work meets HMRC's R&D tests. The key is that the optimisation must involve technological uncertainty — not just routine improvements. If you are optimising your own agency's website using standard techniques (caching, image compression, CDN), it is unlikely to qualify. But if you are developing a novel approach to solve a genuinely uncertain technical problem, it can qualify, even on your own platform.
+- question: What is the difference between routine performance optimisation and qualifying R&D work?
+  answer: Routine optimisation applies known methods to known problems with predictable outcomes. Qualifying R&D involves overcoming technological uncertainty — you did not know at the start whether the solution was achievable or how to achieve it. If any competent developer in your field could have solved the problem using standard techniques, it is routine work, not R&D.
+- question: How far back can I claim R&D tax credits for past performance optimisation projects?
+  answer: For SME agencies, you can amend a corporation tax return to include an R&D claim up to 12 months after the filing deadline. That means you can typically go back two accounting periods. For example, if your accounting year ends on 31 March 2025, you can still amend the 2023/24 return until 31 March 2026. Check with your accountant for your specific deadlines.
+- question: Do I need to have a successful outcome to claim R&D tax credits for performance optimisation work?
+  answer: No. HMRC recognises that R&D includes projects that do not succeed. If you spent time researching, prototyping, and testing a performance optimisation approach but ultimately concluded it was not feasible, that research phase still qualifies. The key is that you were trying to overcome technological uncertainty, even if you did not achieve the desired outcome. Document the work and the reasons it did not succeed.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Performance optimisation qualifies for R&D tax credits only if it involves overcoming technological uncertainty, not routine engineering.
+- HMRC requires an advance in science or technology and that the outcome was not known to be achievable at the project's start.
+- Standard optimisation tasks like lazy loading, image compression, or CDN switching do not qualify as R&D under UK tax rules.
+- A project may qualify if you had to invent a novel approach because existing methods failed to solve a genuine technical problem.
+- Research phases that explore uncertain technical solutions can qualify for R&D credits even if no final solution is achieved.
 ---
-
 <p>You have spent three weeks optimising a client's platform to handle 50,000 concurrent users without crashing. Your developers rewrote the caching layer, implemented lazy loading across the entire front end, and built a custom database query optimiser that reduced page load times from 4.2 seconds to 0.8 seconds. That is real technical work. It solved a genuine problem. But does it qualify as R&D for tax purposes?</p>
 
 <p>The answer is not straightforward. And it depends on whether you solved an <strong>uncertainty</strong> or simply applied <strong>known methods</strong> to a known problem.</p>

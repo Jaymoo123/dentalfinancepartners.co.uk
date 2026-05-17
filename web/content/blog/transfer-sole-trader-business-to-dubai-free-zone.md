@@ -1,33 +1,40 @@
 ---
-title: "Can a UK sole trader agency founder transfer their existing business to a Dubai free zone company?"
-slug: "transfer-sole-trader-business-to-dubai-free-zone"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/transfer-sole-trader-business-to-dubai-free-zone"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Transfer sole trader business to Dubai free zone: what you"
-metaDescription: "Yes, you can. But it's not a simple transfer. You close the UK sole trade, open a UAE free zone company, and manage the tax crossover. Here's how to do it"
-altText: "Agency founder reviewing Dubai free zone setup documents at a modern desk in a UK home office"
-image: "/blog/transfer-sole-trader-business-to-dubai-free-zone.jpg"
+title: Can a UK sole trader agency founder transfer their existing business to a Dubai free zone company?
+slug: transfer-sole-trader-business-to-dubai-free-zone
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/transfer-sole-trader-business-to-dubai-free-zone
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Transfer sole trader business to Dubai free zone: what you'
+metaDescription: Yes, you can. But it's not a simple transfer. You close the UK sole trade, open a UAE free zone company, and manage the tax crossover. Here's how to do it
+altText: Agency founder reviewing Dubai free zone setup documents at a modern desk in a UK home office
+image: /blog/transfer-sole-trader-business-to-dubai-free-zone.jpg
 imageCredit:
-  photographer: "Aathif Aarifeen"
-  photographerUrl: "https://www.pexels.com/@aathif"
-  sourceUrl: "https://www.pexels.com/photo/smiling-businessman-sitting-at-desk-with-computer-19747906/"
-  source: "Pexels"
-h1: "Can a UK sole trader agency founder transfer their existing business to a Dubai free zone company?"
-summary: "Thinking of moving your UK sole trader agency to a Dubai free zone? You can't just pick it up and move it. You'll need to close the UK trade, open a UAE entity, and manage the crossover between two tax years. Here's the practical route for agency founders."
-schema: ""
+  photographer: Aathif Aarifeen
+  photographerUrl: https://www.pexels.com/@aathif
+  sourceUrl: https://www.pexels.com/photo/smiling-businessman-sitting-at-desk-with-computer-19747906/
+  source: Pexels
+h1: Can a UK sole trader agency founder transfer their existing business to a Dubai free zone company?
+summary: Thinking of moving your UK sole trader agency to a Dubai free zone? You can't just pick it up and move it. You'll need to close the UK trade, open a UAE entity, and manage the crossover between two tax years. Here's the practical route for agency founders.
+schema: ''
 faqs:
-  - question: "Can I keep my UK sole trader bank account open after moving to Dubai?"
-    answer: "No, you should close it when you cease trading. HMRC can still issue assessments against a dormant business account. Move the balance to a personal account and close the business account. Keep records of the closure for your final tax return."
-  - question: "Do I need to tell HMRC before I move to Dubai?"
-    answer: "You do not need permission, but you must notify HMRC that you have ceased self-employment. Do this through your Government Gateway account or in writing. Give them your cessation date. That date determines your final tax return period and any outstanding liabilities."
-  - question: "Will I still pay UK tax on income earned through my Dubai company?"
-    answer: "No, provided you are genuinely tax resident in the UAE and your company is managed and controlled from Dubai. The UK-UAE double taxation agreement means the profits are taxable in the UAE, not the UK. But if you spend more than 183 days in the UK or maintain a UK office, HMRC can challenge your residency."
-  - question: "How much does it cost to set up a Dubai free zone company for an agency?"
-    answer: "Year one costs typically run £6,000-£12,000, covering the trade licence, visa, medical, and office space. DMCC licences start around £3,500 per year. Renewal costs are lower, usually £3,000-£6,000 per year. Bank account setup can add £10,000-£25,000 in minimum deposit requirements depending on the bank."
+- question: Can I keep my UK sole trader bank account open after moving to Dubai?
+  answer: No, you should close it when you cease trading. HMRC can still issue assessments against a dormant business account. Move the balance to a personal account and close the business account. Keep records of the closure for your final tax return.
+- question: Do I need to tell HMRC before I move to Dubai?
+  answer: You do not need permission, but you must notify HMRC that you have ceased self-employment. Do this through your Government Gateway account or in writing. Give them your cessation date. That date determines your final tax return period and any outstanding liabilities.
+- question: Will I still pay UK tax on income earned through my Dubai company?
+  answer: No, provided you are genuinely tax resident in the UAE and your company is managed and controlled from Dubai. The UK-UAE double taxation agreement means the profits are taxable in the UAE, not the UK. But if you spend more than 183 days in the UK or maintain a UK office, HMRC can challenge your residency.
+- question: How much does it cost to set up a Dubai free zone company for an agency?
+  answer: Year one costs typically run £6,000-£12,000, covering the trade licence, visa, medical, and office space. DMCC licences start around £3,500 per year. Renewal costs are lower, usually £3,000-£6,000 per year. Bank account setup can add £10,000-£25,000 in minimum deposit requirements depending on the bank.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A UK sole trader cannot transfer their business to a Dubai free zone; they must close the UK trade and start a new UAE entity.
+- To cease as a sole trader, notify HMRC of your cessation date and file a final tax return covering profits from 6 April to that date.
+- Client contracts are personal to you as a sole trader and must be novated or re-signed with your Dubai company, risking 10-20% client loss.
+- HMRC may treat income from UK clients as UK-sourced even if you work from Dubai, depending on where contracts are negotiated and decisions made.
+- A Dubai free zone company pays 0% corporation tax and no personal income tax, saving roughly £27,000-£32,000 per year on £100k profit versus UK sole trader rates.
 ---
-
 <p>You've built your agency as a UK sole trader. You're billing £120k a year, paying income tax and Class 4 NIC, and wondering whether Dubai's zero-tax environment could change things. The idea of <strong>transferring your sole trader business to a Dubai free zone</strong> sounds clean on paper. In practice, it's a specific migration path with real tax consequences.</p>
 
 <p>The short answer is yes, you can move. But you don't "transfer" the business like moving a limited company. You close the UK sole trade, open a Dubai free zone company, and manage the crossover period between two tax years. Get the timing wrong and HMRC will treat you as still trading in the UK. Get it right and you can legitimately pay zero corporation tax on future profits generated through your UAE entity.</p>

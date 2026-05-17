@@ -1,33 +1,40 @@
 ---
-title: "Selling UK Property as Non-Resident: The Principal Private Residence Trap for Agency Founders Who Rent It Out Before Moving"
-slug: "selling-uk-property-non-resident-principal-private-residence-trap"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/selling-uk-property-non-resident-principal-private-residence-trap"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Selling UK Property as Non-Resident: PPR Relief Trap"
-metaDescription: "Renting out your UK home before selling it could cost you thousands in CGT. Here is how the principal private residence trap works for non-resident agency"
-altText: "Agency founder reviewing UK property sale documents with accountant, discussing principal private residence relief and capital gains tax implications"
-image: "/blog/selling-uk-property-non-resident-principal-private-residence-trap.jpg"
+title: 'Selling UK Property as Non-Resident: The Principal Private Residence Trap for Agency Founders Who Rent It Out Before Moving'
+slug: selling-uk-property-non-resident-principal-private-residence-trap
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/selling-uk-property-non-resident-principal-private-residence-trap
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Selling UK Property as Non-Resident: PPR Relief Trap'
+metaDescription: Renting out your UK home before selling it could cost you thousands in CGT. Here is how the principal private residence trap works for non-resident agency
+altText: Agency founder reviewing UK property sale documents with accountant, discussing principal private residence relief and capital gains tax implications
+image: /blog/selling-uk-property-non-resident-principal-private-residence-trap.jpg
 imageCredit:
-  photographer: "Pavel Danilyuk"
-  photographerUrl: "https://www.pexels.com/@pavel-danilyuk"
-  sourceUrl: "https://www.pexels.com/photo/realtor-in-a-winter-coat-standing-by-a-for-sale-sign-7937215/"
-  source: "Pexels"
-h1: "Selling UK Property as Non-Resident: The Principal Private Residence Trap"
-summary: "If you own a UK property that was once your home, and you now live in the UAE, selling it triggers capital gains tax. But the real trap is this: if you rented it out before moving, HMRC strips away principal private residence relief for those let years. That can create a tax bill you never saw coming."
-schema: ""
+  photographer: Pavel Danilyuk
+  photographerUrl: https://www.pexels.com/@pavel-danilyuk
+  sourceUrl: https://www.pexels.com/photo/realtor-in-a-winter-coat-standing-by-a-for-sale-sign-7937215/
+  source: Pexels
+h1: 'Selling UK Property as Non-Resident: The Principal Private Residence Trap'
+summary: 'If you own a UK property that was once your home, and you now live in the UAE, selling it triggers capital gains tax. But the real trap is this: if you rented it out before moving, HMRC strips away principal private residence relief for those let years. That can create a tax bill you never saw coming.'
+schema: ''
 faqs:
-  - question: "What is the principal private residence trap for non-residents selling UK property?"
-    answer: "The trap is that when you rent out your UK home after moving abroad, HMRC restricts principal private residence relief for the years the property was let. This means a portion of your capital gain becomes taxable, even though the property was once your main home. The longer you rent it out before selling, the larger the tax bill."
-  - question: "How is capital gains tax calculated on a UK property sold by a non-resident?"
-    answer: "You calculate the total gain (sale price minus purchase price, costs, and improvements). Then you split the gain by months of ownership. PPR relief exempts the months you lived there. The remaining months (let periods) are chargeable. You pay 18% or 24% CGT on the chargeable gain, depending on your UK income tax band. The tax is due within 60 days of completion."
-  - question: "Can I avoid the PPR trap by moving back into my UK home before selling?"
-    answer: "Yes, in some cases. If you return to the UK and actually live in the property (not just visit), you regain PPR relief for that period. However, the let period gain remains taxable. You also need to ensure you do not exceed 90 UK days in a tax year, or you risk becoming UK resident again. Moving back in is a practical option but requires genuine reoccupation."
-  - question: "Do I need to file a UK tax return after selling UK property as a non-resident?"
-    answer: "Yes. You must report the sale to HMRC within 60 days through the Capital Gains Tax on UK Property account. You also need to include the sale on your annual SA100 self-assessment return, even if you are non-resident. Missing the 60-day deadline triggers automatic penalties. If you are a UAE resident, you still file a UK return for UK-source gains only."
+- question: What is the principal private residence trap for non-residents selling UK property?
+  answer: The trap is that when you rent out your UK home after moving abroad, HMRC restricts principal private residence relief for the years the property was let. This means a portion of your capital gain becomes taxable, even though the property was once your main home. The longer you rent it out before selling, the larger the tax bill.
+- question: How is capital gains tax calculated on a UK property sold by a non-resident?
+  answer: You calculate the total gain (sale price minus purchase price, costs, and improvements). Then you split the gain by months of ownership. PPR relief exempts the months you lived there. The remaining months (let periods) are chargeable. You pay 18% or 24% CGT on the chargeable gain, depending on your UK income tax band. The tax is due within 60 days of completion.
+- question: Can I avoid the PPR trap by moving back into my UK home before selling?
+  answer: Yes, in some cases. If you return to the UK and actually live in the property (not just visit), you regain PPR relief for that period. However, the let period gain remains taxable. You also need to ensure you do not exceed 90 UK days in a tax year, or you risk becoming UK resident again. Moving back in is a practical option but requires genuine reoccupation.
+- question: Do I need to file a UK tax return after selling UK property as a non-resident?
+  answer: Yes. You must report the sale to HMRC within 60 days through the Capital Gains Tax on UK Property account. You also need to include the sale on your annual SA100 self-assessment return, even if you are non-resident. Missing the 60-day deadline triggers automatic penalties. If you are a UAE resident, you still file a UK return for UK-source gains only.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- PPR relief exempts only periods of actual or deemed occupation, not years the property was rented out.
+- For non-residents, the final 9-month deemed occupation exemption is reduced to zero, increasing the taxable gain.
+- Lettings relief was abolished after 5 April 2020, so most recent non-resident sellers cannot use it.
+- If you owned a property for 9 years and rented it for 3, roughly 3/9 of the gain becomes chargeable to CGT.
+- Selling a previously owned UK home as a non-resident can trigger a surprise CGT bill if let periods are not planned for.
 ---
-
 <p>You moved to Dubai two years ago. Your UK home, the flat in Shoreditch you bought in 2015, has been rented out since you left. Now you are ready to sell it and use the proceeds to fund your agency's next growth phase. You assume there will be no UK tax to pay because it was your home. That assumption could cost you tens of thousands of pounds.</p>
 
 <p>The rule is called principal private residence relief, or PPR relief. It exempts you from capital gains tax (CGT) on the sale of your main home. But once you become non-resident and rent the property out, HMRC treats those let years differently. The relief does not simply vanish. It gets restricted. And the restriction is often larger than agency founders expect.</p>

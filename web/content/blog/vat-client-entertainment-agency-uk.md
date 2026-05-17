@@ -1,33 +1,40 @@
 ---
-title: "Can You Claim VAT on Client Meals and Agency Team Entertainment?"
-slug: "vat-client-entertainment-agency-uk"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/vat-client-entertainment-agency-uk"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "VAT on Client Meals & Agency Entertainment: UK Rules"
-metaDescription: "VAT client entertainment agency UK rules explained. Can you reclaim VAT on client meals, team events, and staff entertaining? Specific rules with real"
-altText: "Agency team enjoying a meal at a restaurant in London, with an accountant explaining VAT rules on client entertainment"
-image: "/blog/vat-client-entertainment-agency-uk.jpg"
+title: Can You Claim VAT on Client Meals and Agency Team Entertainment?
+slug: vat-client-entertainment-agency-uk
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/vat-client-entertainment-agency-uk
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'VAT on Client Meals & Agency Entertainment: UK Rules'
+metaDescription: VAT client entertainment agency UK rules explained. Can you reclaim VAT on client meals, team events, and staff entertaining? Specific rules with real
+altText: Agency team enjoying a meal at a restaurant in London, with an accountant explaining VAT rules on client entertainment
+image: /blog/vat-client-entertainment-agency-uk.jpg
 imageCredit:
-  photographer: "Daniel & Hannah Snipes"
-  photographerUrl: "https://www.pexels.com/@prolificpeople"
-  sourceUrl: "https://www.pexels.com/photo/professional-team-portrait-in-office-setting-30004360/"
-  source: "Pexels"
-h1: "Can You Claim VAT on Client Meals and Agency Team Entertainment?"
-summary: "VAT on client entertainment is one of the most common areas where agencies get it wrong. Client meals are generally blocked for VAT recovery, but staff entertaining is different. Here is the exact split and what you can actually reclaim."
-schema: ""
+  photographer: Daniel & Hannah Snipes
+  photographerUrl: https://www.pexels.com/@prolificpeople
+  sourceUrl: https://www.pexels.com/photo/professional-team-portrait-in-office-setting-30004360/
+  source: Pexels
+h1: Can You Claim VAT on Client Meals and Agency Team Entertainment?
+summary: VAT on client entertainment is one of the most common areas where agencies get it wrong. Client meals are generally blocked for VAT recovery, but staff entertaining is different. Here is the exact split and what you can actually reclaim.
+schema: ''
 faqs:
-  - question: "Can I claim VAT back on client Christmas presents?"
-    answer: "No. Client gifts are treated as business entertainment for VAT purposes. The VAT is blocked from recovery. You can still deduct the cost against corporation tax, but the VAT is a dead cost. The same applies to gifts of alcohol, hampers, or tickets to events."
-  - question: "What about taking a client for coffee or a soft drink?"
-    answer: "A coffee or soft drink is generally not considered entertainment. HMRC's guidance suggests that incidental refreshments (tea, coffee, soft drinks) provided during a business meeting are not entertainment. The VAT is recoverable. But a full meal or alcohol is different. Keep the receipt and note the business context."
-  - question: "Can I reclaim VAT on a team building day?"
-    answer: "Yes, provided the event is for employees only. If the team building day includes a meal or activity, the VAT is recoverable as staff entertaining. If clients or suppliers attend, you must apportion the VAT. Keep a list of attendees and the cost per head."
-  - question: "What happens if HMRC finds I claimed VAT on client entertaining incorrectly?"
-    answer: "HMRC will issue a VAT assessment for the incorrectly claimed VAT, plus interest. They may also charge penalties, especially if they consider the error to be careless or deliberate. The penalty can be up to 30% of the VAT underclaimed for careless errors, and up to 100% for deliberate errors. Correct errors proactively to minimise penalties."
+- question: Can I claim VAT back on client Christmas presents?
+  answer: No. Client gifts are treated as business entertainment for VAT purposes. The VAT is blocked from recovery. You can still deduct the cost against corporation tax, but the VAT is a dead cost. The same applies to gifts of alcohol, hampers, or tickets to events.
+- question: What about taking a client for coffee or a soft drink?
+  answer: A coffee or soft drink is generally not considered entertainment. HMRC's guidance suggests that incidental refreshments (tea, coffee, soft drinks) provided during a business meeting are not entertainment. The VAT is recoverable. But a full meal or alcohol is different. Keep the receipt and note the business context.
+- question: Can I reclaim VAT on a team building day?
+  answer: Yes, provided the event is for employees only. If the team building day includes a meal or activity, the VAT is recoverable as staff entertaining. If clients or suppliers attend, you must apportion the VAT. Keep a list of attendees and the cost per head.
+- question: What happens if HMRC finds I claimed VAT on client entertaining incorrectly?
+  answer: HMRC will issue a VAT assessment for the incorrectly claimed VAT, plus interest. They may also charge penalties, especially if they consider the error to be careless or deliberate. The penalty can be up to 30% of the VAT underclaimed for careless errors, and up to 100% for deliberate errors. Correct errors proactively to minimise penalties.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- VAT on client meals and entertainment is blocked and cannot be reclaimed, even though the cost is still deductible against corporation tax.
+- VAT on staff entertainment such as team meals and parties is generally recoverable, provided it is for employees only and not excessive.
+- For mixed events with both clients and staff, you must apportion the VAT and only reclaim the portion relating to staff.
+- A 12-person agency billing £800k could be losing £3,000–£5,000 annually in wrongly denied VAT claims or facing HMRC penalties.
+- Client entertainment includes lunches, tickets, hospitality boxes, and travel costs directly linked to entertaining clients or prospects.
 ---
-
 <p>If you run a marketing agency, digital agency, or creative agency in the UK, you have almost certainly taken a client for lunch. Or bought your team pizzas on a late project night. Or hosted a Christmas party. And you have probably wondered: can I claim the VAT back on this?</p>
 
 <p>The short answer is: it depends entirely on <strong>who</strong> you are entertaining. HMRC draws a hard line between entertaining clients and entertaining staff. The rules are specific, and the penalties for getting them wrong can be significant. This article explains the exact VAT treatment for both, using real agency scenarios.</p>

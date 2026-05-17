@@ -1,25 +1,32 @@
 ---
-title: "How to Set Up a Chart of Accounts for a Digital Agency with Retainers and Project Work"
-slug: "chart-of-accounts-digital-agency-retainer-project-work"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/chart-of-accounts-digital-agency-retainer-project-work"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "Chart of accounts for digital agencies: retainer setup"
-metaDescription: "Set up a chart of accounts for a digital agency with retainers and project work. Track gross margin, deferred revenue, and utilisation with real examples."
-altText: "Digital agency founder reviewing chart of accounts on laptop in Manchester Northern Quarter office"
-image: "/blog/chart-of-accounts-digital-agency-retainer-project-work.jpg"
+title: How to Set Up a Chart of Accounts for a Digital Agency with Retainers and Project Work
+slug: chart-of-accounts-digital-agency-retainer-project-work
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/chart-of-accounts-digital-agency-retainer-project-work
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: 'Chart of accounts for digital agencies: retainer setup'
+metaDescription: Set up a chart of accounts for a digital agency with retainers and project work. Track gross margin, deferred revenue, and utilisation with real examples.
+altText: Digital agency founder reviewing chart of accounts on laptop in Manchester Northern Quarter office
+image: /blog/chart-of-accounts-digital-agency-retainer-project-work.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/a-variety-of-graphs-on-a-tv-screen-7947958/"
-  source: "Pexels"
-h1: "How to Set Up a Chart of Accounts for a Digital Agency with Retainers and Project Work"
-summary: "A practical guide to setting up a chart of accounts that tracks retainer income, project revenue, deferred revenue, and agency-specific costs. Includes real account codes and worked examples for Xero and QuickBooks users."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/a-variety-of-graphs-on-a-tv-screen-7947958/
+  source: Pexels
+h1: How to Set Up a Chart of Accounts for a Digital Agency with Retainers and Project Work
+summary: A practical guide to setting up a chart of accounts that tracks retainer income, project revenue, deferred revenue, and agency-specific costs. Includes real account codes and worked examples for Xero and QuickBooks users.
+schema: ''
 faqs: []
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Separate revenue accounts for retainers (4000), projects (4100), time-and-materials (4200), and pass-through costs (4300) to calculate accurate gross margins by service line.
+- 'A generic chart of accounts hides problems: retainer work may have 72% margin while project work has 38%, but a blended ''Sales'' account shows a misleading 60%.'
+- Use distinct account codes for each revenue type in Xero or QuickBooks, e.g., 4010 for SEO retainers and 4110 for website projects, to track profitability by service.
+- Record pass-through costs like ad spend in a separate income account (4300) so they do not distort your gross margin calculation on fee income.
+- If revenue behaves differently—monthly retainer vs. fixed project vs. hourly billing—it needs its own account to produce reliable management accounts and deferred revenue tracking.
 ---
-
 <p>If you run a digital agency with both retainer clients and project work, your chart of accounts is the foundation of every financial report you look at. Get it wrong and your gross margin figures will be misleading, your deferred revenue will be a mess, and you will not know which clients are actually profitable until it is too late.</p>
 
 <p>Most agency founders inherit a generic chart of accounts from their accountant or their software setup. It has "Sales", "Cost of Sales", and "Overheads". That is not enough. Not for a business that bills some clients monthly, some per project, and needs to track utilisation and scope creep separately.</p>

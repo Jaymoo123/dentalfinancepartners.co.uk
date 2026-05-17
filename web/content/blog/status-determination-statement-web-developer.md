@@ -1,33 +1,40 @@
 ---
-title: "How to Write a Status Determination Statement for a Web Developer Engagement"
-slug: "status-determination-statement-web-developer"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/status-determination-statement-web-developer"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Contractors and IR35"
-metaTitle: "Status Determination Statement Web Developer: Template"
-metaDescription: "Practical guide for UK agencies issuing an IR35 status determination statement for a web developer. Includes template, key tests, and common mistakes"
-altText: "UK agency founder reviewing a status determination statement for a web developer contract on a laptop in a modern office"
-image: "/blog/status-determination-statement-web-developer.jpg"
+title: How to Write a Status Determination Statement for a Web Developer Engagement
+slug: status-determination-statement-web-developer
+canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/status-determination-statement-web-developer
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Contractors and IR35
+metaTitle: 'Status Determination Statement Web Developer: Template'
+metaDescription: Practical guide for UK agencies issuing an IR35 status determination statement for a web developer. Includes template, key tests, and common mistakes
+altText: UK agency founder reviewing a status determination statement for a web developer contract on a laptop in a modern office
+image: /blog/status-determination-statement-web-developer.jpg
 imageCredit:
-  photographer: "Markus Spiske"
-  photographerUrl: "https://www.pexels.com/@markusspiske"
-  sourceUrl: "https://www.pexels.com/photo/close-up-photo-of-computer-codes-6502328/"
-  source: "Pexels"
-h1: "How to Write a Status Determination Statement for a Web Developer Engagement"
-summary: "A practical guide for UK agency founders on issuing a compliant status determination statement for web developer engagements. Covers the key IR35 tests, the SDS format, and what to do if the contractor disagrees."
-schema: ""
+  photographer: Markus Spiske
+  photographerUrl: https://www.pexels.com/@markusspiske
+  sourceUrl: https://www.pexels.com/photo/close-up-photo-of-computer-codes-6502328/
+  source: Pexels
+h1: How to Write a Status Determination Statement for a Web Developer Engagement
+summary: A practical guide for UK agency founders on issuing a compliant status determination statement for web developer engagements. Covers the key IR35 tests, the SDS format, and what to do if the contractor disagrees.
+schema: ''
 faqs:
-  - question: "Do I need a status determination statement for every web developer I hire?"
-    answer: "Yes, if the developer works through their own limited company or an umbrella company and your agency is medium or large under the off-payroll rules. Each engagement needs its own SDS, even if the role is identical to a previous one. HMRC expects a fresh determination for each contract."
-  - question: "What happens if I do not issue an SDS before the web developer starts work?"
-    answer: "You are in breach of the off-payroll working rules. HMRC can transfer the tax and NIC liability to your agency, plus interest and penalties. The developer's PSC will not be liable. Issue the SDS before day one. If you have already started the engagement without one, issue it immediately and document why it was late."
-  - question: "Can I use the CEST tool for a web developer engagement?"
-    answer: "You can, but be cautious. CEST works well for straightforward engagements but struggles with complex scenarios like hybrid roles, part-time contractors, or developers who also provide strategic advice. If CEST gives an \"unable to determine\" result, you need a professional assessment. Do not guess the answers to make CEST give you the outcome you want."
-  - question: "How long should I keep status determination statements on file?"
-    answer: "Keep them for at least six years after the engagement ends. HMRC can open an IR35 enquiry up to four years after the tax year, and longer if they suspect deliberate non-compliance. Store them with the contract, timesheets, and any correspondence about the engagement. Digital copies are fine."
+- question: Do I need a status determination statement for every web developer I hire?
+  answer: Yes, if the developer works through their own limited company or an umbrella company and your agency is medium or large under the off-payroll rules. Each engagement needs its own SDS, even if the role is identical to a previous one. HMRC expects a fresh determination for each contract.
+- question: What happens if I do not issue an SDS before the web developer starts work?
+  answer: You are in breach of the off-payroll working rules. HMRC can transfer the tax and NIC liability to your agency, plus interest and penalties. The developer's PSC will not be liable. Issue the SDS before day one. If you have already started the engagement without one, issue it immediately and document why it was late.
+- question: Can I use the CEST tool for a web developer engagement?
+  answer: You can, but be cautious. CEST works well for straightforward engagements but struggles with complex scenarios like hybrid roles, part-time contractors, or developers who also provide strategic advice. If CEST gives an "unable to determine" result, you need a professional assessment. Do not guess the answers to make CEST give you the outcome you want.
+- question: How long should I keep status determination statements on file?
+  answer: Keep them for at least six years after the engagement ends. HMRC can open an IR35 enquiry up to four years after the tax year, and longer if they suspect deliberate non-compliance. Store them with the contract, timesheets, and any correspondence about the engagement. Digital copies are fine.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- You must issue a status determination statement (SDS) to any web developer engaged through an intermediary before work starts, stating whether they are inside or outside IR35.
+- Assess three core IR35 tests—substitution, control, and mutuality of obligation—honestly; for example, if you insist on personal service, state that in the SDS.
+- 'Most agencies billing over £1m are medium or large under off-payroll rules if they meet two of: turnover >£10.2m, balance sheet >£5.1m, or >50 employees.'
+- Include your agency's name, address, and company number in the SDS, along with the contractor's details and the reasoning for your IR35 determination.
+- Avoid common mistakes like pretending a substitution right exists when you would never accept a substitute, or extending contracts without a break, which HMRC sees as ongoing employment.
 ---
-
 <h2>What Is a Status Determination Statement and Why Does It Matter for Web Developers?</h2>
 
 <p>A status determination statement (SDS) is the document you must issue to any contractor engaged through an intermediary (their own limited company or umbrella company) before work starts. It tells them whether, for tax purposes, they would be inside or outside IR35.</p>

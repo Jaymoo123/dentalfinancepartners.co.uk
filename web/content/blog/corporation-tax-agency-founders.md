@@ -1,33 +1,40 @@
 ---
-title: "Corporation Tax for Agency Founders: The Complete 2025/26 Guide"
-slug: "corporation-tax-agency-founders"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/corporation-tax-agency-founders"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Corporation Tax for Agency Founders: 2025/26 Guide"
-metaDescription: "Corporation tax rates, deadlines, and reliefs for UK agency founders in 2025/26. Practical examples, key dates, and what to do before year-end."
-altText: "Agency founder reviewing corporation tax documents with an ICAEW accountant in a modern UK office"
-image: "/blog/corporation-tax-agency-founders.jpg"
+title: 'Corporation Tax for Agency Founders: The Complete 2025/26 Guide'
+slug: corporation-tax-agency-founders
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/corporation-tax-agency-founders
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'Corporation Tax for Agency Founders: 2025/26 Guide'
+metaDescription: Corporation tax rates, deadlines, and reliefs for UK agency founders in 2025/26. Practical examples, key dates, and what to do before year-end.
+altText: Agency founder reviewing corporation tax documents with an ICAEW accountant in a modern UK office
+image: /blog/corporation-tax-agency-founders.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-surface-7821565/"
-  source: "Pexels"
-h1: "Corporation Tax for Agency Founders: The Complete 2025/26 Guide"
-summary: "A practical breakdown of corporation tax for UK agency founders in the 2025/26 tax year. Covers rates, deadlines, allowable expenses, reliefs, and what to do before your year-end."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-surface-7821565/
+  source: Pexels
+h1: 'Corporation Tax for Agency Founders: The Complete 2025/26 Guide'
+summary: A practical breakdown of corporation tax for UK agency founders in the 2025/26 tax year. Covers rates, deadlines, allowable expenses, reliefs, and what to do before your year-end.
+schema: ''
 faqs:
-  - question: "What is the corporation tax rate for a small agency in 2025/26?"
-    answer: "If your agency's profits are £50,000 or less, you pay 19% on all of them. This is the small profits rate. Most agency founders with 1-5 person teams will pay this rate. If your profits are between £50k and £250k, marginal relief applies and your effective rate sits between 19% and 25%."
-  - question: "When is corporation tax due for my agency?"
-    answer: "Corporation tax is due 9 months and 1 day after your company's accounting period ends. For a 31 March 2026 year-end, payment is due by 1 January 2027. The CT600 filing deadline is 12 months after year-end. Miss these dates and HMRC charges interest and penalties."
-  - question: "Can my agency claim R&D tax credits?"
-    answer: "Yes, if your agency is developing new software tools, AI platforms, automation processes, or novel campaign measurement systems. Many digital and creative agencies qualify. The SME scheme offers a 186% enhanced deduction on qualifying expenditure. Ask your accountant before year-end if you think you might qualify."
-  - question: "What expenses can I deduct from my agency's corporation tax?"
-    answer: "Staff salaries, software subscriptions, rent, marketing costs, professional fees, travel for client meetings, equipment (subject to capital allowances), and training are all deductible. Client entertaining is not deductible. Dividends paid to shareholders are not deductible either. Keep receipts for everything."
+- question: What is the corporation tax rate for a small agency in 2025/26?
+  answer: If your agency's profits are £50,000 or less, you pay 19% on all of them. This is the small profits rate. Most agency founders with 1-5 person teams will pay this rate. If your profits are between £50k and £250k, marginal relief applies and your effective rate sits between 19% and 25%.
+- question: When is corporation tax due for my agency?
+  answer: Corporation tax is due 9 months and 1 day after your company's accounting period ends. For a 31 March 2026 year-end, payment is due by 1 January 2027. The CT600 filing deadline is 12 months after year-end. Miss these dates and HMRC charges interest and penalties.
+- question: Can my agency claim R&D tax credits?
+  answer: Yes, if your agency is developing new software tools, AI platforms, automation processes, or novel campaign measurement systems. Many digital and creative agencies qualify. The SME scheme offers a 186% enhanced deduction on qualifying expenditure. Ask your accountant before year-end if you think you might qualify.
+- question: What expenses can I deduct from my agency's corporation tax?
+  answer: Staff salaries, software subscriptions, rent, marketing costs, professional fees, travel for client meetings, equipment (subject to capital allowances), and training are all deductible. Client entertaining is not deductible. Dividends paid to shareholders are not deductible either. Keep receipts for everything.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- For 2025/26, corporation tax is 19% on profits up to £50,000, 25% on profits over £250,000, and marginal relief applies between £50,000 and £250,000.
+- Corporation tax payment is due 9 months and 1 day after your accounting period ends; for a 31 March 2026 year-end, pay by 1 January 2027.
+- Your CT600 corporation tax return must be filed within 12 months of the accounting period end, or you face automatic penalties starting at £100.
+- Deductible expenses for your agency include staff salaries, employer's National Insurance, rent, and software subscriptions, reducing your taxable profit.
+- If your agency's profits exceed £1.5m, you must pay corporation tax in quarterly instalments; most agency founders will not hit this threshold.
 ---
-
 <h2>What Is Corporation Tax and Why Should Agency Founders Care?</h2>
 
 <p>Corporation tax is the tax your limited company pays on its profits. If you run your agency as a sole trader or partnership, you pay income tax and National Insurance instead. But if you've incorporated — and most agency founders do once they pass £50k-£80k turnover — then corporation tax is your company's direct tax bill.</p>

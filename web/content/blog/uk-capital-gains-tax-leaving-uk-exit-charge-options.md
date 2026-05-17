@@ -1,33 +1,40 @@
 ---
-title: "UK Capital Gains Tax Leaving UK: The Exit Charge That Applies to Your Agency's Unrealised Share Options"
-slug: "uk-capital-gains-tax-leaving-uk-exit-charge-options"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-capital-gains-tax-leaving-uk-exit-charge-options"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK CGT exit charge: your agency share options when leaving"
-metaDescription: "Moving to Dubai? Unexercised EMI or unapproved share options can trigger an immediate CGT exit charge. Here's what agency founders need to know before"
-altText: "Agency founder reviewing share option documents with a UK accountant before relocating to Dubai"
-image: "/blog/uk-capital-gains-tax-leaving-uk-exit-charge-options.jpg"
+title: 'UK Capital Gains Tax Leaving UK: The Exit Charge That Applies to Your Agency''s Unrealised Share Options'
+slug: uk-capital-gains-tax-leaving-uk-exit-charge-options
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-capital-gains-tax-leaving-uk-exit-charge-options
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK CGT exit charge: your agency share options when leaving'
+metaDescription: Moving to Dubai? Unexercised EMI or unapproved share options can trigger an immediate CGT exit charge. Here's what agency founders need to know before
+altText: Agency founder reviewing share option documents with a UK accountant before relocating to Dubai
+image: /blog/uk-capital-gains-tax-leaving-uk-exit-charge-options.jpg
 imageCredit:
-  photographer: "www.kaboompics.com"
-  photographerUrl: "https://www.pexels.com/@karola-g"
-  sourceUrl: "https://www.pexels.com/photo/quote-board-on-top-of-cash-bills-4386367/"
-  source: "Pexels"
-h1: "UK Capital Gains Tax Leaving UK: The Exit Charge That Applies to Your Agency's Unrealised Share Options"
-summary: "Planning to move to Dubai or another jurisdiction while keeping your UK agency? Your unexercised share options could trigger an immediate Capital Gains Tax exit charge on deemed disposal. Most accountants miss this. Here's what you need to know before you change your tax residence."
-schema: ""
+  photographer: www.kaboompics.com
+  photographerUrl: https://www.pexels.com/@karola-g
+  sourceUrl: https://www.pexels.com/photo/quote-board-on-top-of-cash-bills-4386367/
+  source: Pexels
+h1: 'UK Capital Gains Tax Leaving UK: The Exit Charge That Applies to Your Agency''s Unrealised Share Options'
+summary: Planning to move to Dubai or another jurisdiction while keeping your UK agency? Your unexercised share options could trigger an immediate Capital Gains Tax exit charge on deemed disposal. Most accountants miss this. Here's what you need to know before you change your tax residence.
+schema: ''
 faqs:
-  - question: "What is the UK CGT exit charge on share options?"
-    answer: "The exit charge is a deemed disposal that occurs when you cease to be UK tax resident. HMRC treats your unexercised share options as if you sold them at market value on the day you left. You owe Capital Gains Tax on the deemed gain, even though you received no cash. It applies if you have been UK resident for at least 7 of the last 10 tax years."
-  - question: "Can I avoid the exit charge on my EMI options by exercising after I leave?"
-    answer: "Yes, but only if you exercise within 90 days of leaving the UK. If you exercise within that window, the exit charge applies to the shares you acquire, not the options themselves. If you exercise after 90 days, the exit charge on the options is triggered and cannot be reversed. For unapproved options, there is no 90-day window at all."
-  - question: "Does the exit charge apply if I move to Dubai for less than 5 years?"
-    answer: "Yes, it applies on the day you leave, but it is reversed if you return to the UK within 5 tax years. This is the temporary non-residence rule. If you return within 5 years, the deemed disposal is treated as if it never happened. If you stay away for 6 or more tax years, the exit charge becomes permanent."
-  - question: "Can I claim Business Asset Disposal Relief on the exit charge?"
-    answer: "Only if the exit charge applies to shares you already hold, not to unexercised options. BADR requires a disposal of shares in a trading company where you hold at least 5% and have been an officer or employee for 2 years. Options themselves do not qualify for BADR. If you exercise your options and hold the shares before leaving, a subsequent disposal of those shares may qualify for BADR at 14% (2025/26) or 18% (2026/27)."
+- question: What is the UK CGT exit charge on share options?
+  answer: The exit charge is a deemed disposal that occurs when you cease to be UK tax resident. HMRC treats your unexercised share options as if you sold them at market value on the day you left. You owe Capital Gains Tax on the deemed gain, even though you received no cash. It applies if you have been UK resident for at least 7 of the last 10 tax years.
+- question: Can I avoid the exit charge on my EMI options by exercising after I leave?
+  answer: Yes, but only if you exercise within 90 days of leaving the UK. If you exercise within that window, the exit charge applies to the shares you acquire, not the options themselves. If you exercise after 90 days, the exit charge on the options is triggered and cannot be reversed. For unapproved options, there is no 90-day window at all.
+- question: Does the exit charge apply if I move to Dubai for less than 5 years?
+  answer: Yes, it applies on the day you leave, but it is reversed if you return to the UK within 5 tax years. This is the temporary non-residence rule. If you return within 5 years, the deemed disposal is treated as if it never happened. If you stay away for 6 or more tax years, the exit charge becomes permanent.
+- question: Can I claim Business Asset Disposal Relief on the exit charge?
+  answer: Only if the exit charge applies to shares you already hold, not to unexercised options. BADR requires a disposal of shares in a trading company where you hold at least 5% and have been an officer or employee for 2 years. Options themselves do not qualify for BADR. If you exercise your options and hold the shares before leaving, a subsequent disposal of those shares may qualify for BADR at 14% (2025/26) or 18% (2026/27).
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Unexercised EMI and unapproved share options are treated as assets for CGT purposes, triggering an exit charge when you leave the UK.
+- The exit charge applies if you have been UK resident for at least 7 of the previous 10 tax years, which catches most agency founders.
+- HMRC deems a disposal of unexercised options at market value on the day you leave, even though you receive no cash.
+- For EMI options with a £9 per share gain on 10,000 shares, the chargeable gain is £90,000, resulting in a £21,600 CGT bill at 24%.
+- You must pay the exit charge within the normal self-assessment timeline, despite having no actual sale or cash proceeds.
 ---
-
 <h2>What Happens to Your Share Options When You Leave the UK?</h2>
 
 <p>You are a UK agency founder with shares in your own company. You hold EMI options or unapproved share options that are not yet exercised. You are planning a move to Dubai, or maybe back to Australia, or across Europe. You have checked property CGT. You have checked the statutory residence test. You think you are in the clear.</p>

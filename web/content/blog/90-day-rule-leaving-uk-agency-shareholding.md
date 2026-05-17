@@ -1,33 +1,40 @@
 ---
-title: "What is the 90 Day Rule for Leaving the UK and Does It Apply to My Agency Shareholding?"
-slug: "90-day-rule-leaving-uk-agency-shareholding"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/90-day-rule-leaving-uk-agency-shareholding"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "90 Day Rule Leaving UK Shareholding: What Agency Founders"
-metaDescription: "If you leave the UK but return for 91+ days in a tax year, HMRC can treat you as UK resident. That means your agency share sale could face UK tax. Here’s"
-altText: "Agency founder reviewing UK tax residence rules and 90 day limit from a Dubai office"
-image: "/blog/90-day-rule-leaving-uk-agency-shareholding.jpg"
+title: What is the 90 Day Rule for Leaving the UK and Does It Apply to My Agency Shareholding?
+slug: 90-day-rule-leaving-uk-agency-shareholding
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/90-day-rule-leaving-uk-agency-shareholding
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: '90 Day Rule Leaving UK Shareholding: What Agency Founders'
+metaDescription: If you leave the UK but return for 91+ days in a tax year, HMRC can treat you as UK resident. That means your agency share sale could face UK tax. Here’s
+altText: Agency founder reviewing UK tax residence rules and 90 day limit from a Dubai office
+image: /blog/90-day-rule-leaving-uk-agency-shareholding.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/scrabble-letters-spelling-rules-on-a-wooden-table-19856614/"
-  source: "Pexels"
-h1: "What is the 90 Day Rule for Leaving the UK and Does It Apply to My Agency Shareholding?"
-summary: "The 90 day rule is part of the UK’s Statutory Residence Test. If you leave the UK but spend more than 90 days back here in a single tax year, HMRC can deem you UK resident. For agency founders, that means any gain from selling your shares could be taxed in the UK, even if you live in Dubai."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/scrabble-letters-spelling-rules-on-a-wooden-table-19856614/
+  source: Pexels
+h1: What is the 90 Day Rule for Leaving the UK and Does It Apply to My Agency Shareholding?
+summary: The 90 day rule is part of the UK’s Statutory Residence Test. If you leave the UK but spend more than 90 days back here in a single tax year, HMRC can deem you UK resident. For agency founders, that means any gain from selling your shares could be taxed in the UK, even if you live in Dubai.
+schema: ''
 faqs:
-  - question: "What counts as a day in the UK for the 90 day rule?"
-    answer: "A day counts if you are in the UK at midnight. Arrive at 11pm and stay until 2am? That is one day. Leave at 6am? That day does not count. Transit days under 24 hours with no work are excluded. Exceptional circumstances (like a family emergency) may be disregarded, but HMRC applies this very narrowly."
-  - question: "Does the 90 day rule apply if I sell my agency shares while living in Dubai?"
-    answer: "Yes. The 90 day rule determines your UK residence status. If you are UK resident in the tax year you sell your shares, the gain is taxable in the UK. If you are non-resident, the gain is generally outside UK tax (provided you have been non-resident for at least five full tax years before the sale). The 90 day rule is what decides your residence status."
-  - question: "Can I use a holding company to avoid the 90 day rule?"
-    answer: "A holding company structure can help, but it is not a simple workaround. If you are UK resident, the holding company is likely UK resident too, and its gains are subject to UK corporation tax. Even if you are non-resident, the holding company may be UK resident if its management and control remain in the UK. Proper planning is essential."
-  - question: "What happens if I accidentally spend 91 days in the UK?"
-    answer: "You are UK resident for that tax year. HMRC expects you to file a UK tax return and declare your worldwide income and gains. If you sold shares in that year, the gain is taxable. If you do not file, HMRC can open an enquiry, charge penalties and interest, and in serious cases pursue criminal prosecution. Tell your accountant immediately if this happens."
+- question: What counts as a day in the UK for the 90 day rule?
+  answer: A day counts if you are in the UK at midnight. Arrive at 11pm and stay until 2am? That is one day. Leave at 6am? That day does not count. Transit days under 24 hours with no work are excluded. Exceptional circumstances (like a family emergency) may be disregarded, but HMRC applies this very narrowly.
+- question: Does the 90 day rule apply if I sell my agency shares while living in Dubai?
+  answer: Yes. The 90 day rule determines your UK residence status. If you are UK resident in the tax year you sell your shares, the gain is taxable in the UK. If you are non-resident, the gain is generally outside UK tax (provided you have been non-resident for at least five full tax years before the sale). The 90 day rule is what decides your residence status.
+- question: Can I use a holding company to avoid the 90 day rule?
+  answer: A holding company structure can help, but it is not a simple workaround. If you are UK resident, the holding company is likely UK resident too, and its gains are subject to UK corporation tax. Even if you are non-resident, the holding company may be UK resident if its management and control remain in the UK. Proper planning is essential.
+- question: What happens if I accidentally spend 91 days in the UK?
+  answer: You are UK resident for that tax year. HMRC expects you to file a UK tax return and declare your worldwide income and gains. If you sold shares in that year, the gain is taxable. If you do not file, HMRC can open an enquiry, charge penalties and interest, and in serious cases pursue criminal prosecution. Tell your accountant immediately if this happens.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- If you spend 91 days or more in the UK during a tax year, you are automatically UK resident for that year under the Statutory Residence Test.
+- Selling your agency shares while UK resident means the gain is subject to UK Capital Gains Tax at up to 24% in 2025/26.
+- To keep a share sale gain outside UK tax, you must be non-resident for at least five full tax years before the sale.
+- HMRC counts any day you are in the UK at midnight as a full day; transit days under 24 hours without work may be excluded.
+- Exceeding 90 UK days in the year of a share sale can cost hundreds of thousands in tax, as a £2m gain would incur nearly £480,000 CGT.
 ---
-
 <p>If you are a UK agency founder who has moved to Dubai, or is considering it, the 90 day rule is probably the single most important tax rule you need to understand. It determines whether HMRC still sees you as UK resident. And if they do, any gain from selling your agency shares could be taxed in the UK at up to 24%.</p>
 
 <p>Here is exactly how the 90 day rule works, how it applies to your agency shareholding, and what you need to track to protect your tax position.</p>

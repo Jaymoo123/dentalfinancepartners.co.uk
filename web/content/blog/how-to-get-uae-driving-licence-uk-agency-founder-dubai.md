@@ -1,33 +1,40 @@
 ---
-title: "How to Get a UAE Driving Licence as a UK Agency Founder Moving to Dubai"
-slug: "how-to-get-uae-driving-licence-uk-agency-founder-dubai"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/how-to-get-uae-driving-licence-uk-agency-founder-dubai"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UAE Driving Licence for UK Expat: Exchange Guide for Agency"
-metaDescription: "UK licence holders can exchange directly for a UAE driving licence without a test. Here's the step-by-step process, costs, and timing for agency founders"
-altText: "UK agency founder holding a UAE driving licence outside a Dubai office building"
-image: "/blog/how-to-get-uae-driving-licence-uk-agency-founder-dubai.jpg"
+title: How to Get a UAE Driving Licence as a UK Agency Founder Moving to Dubai
+slug: how-to-get-uae-driving-licence-uk-agency-founder-dubai
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/how-to-get-uae-driving-licence-uk-agency-founder-dubai
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UAE Driving Licence for UK Expat: Exchange Guide for Agency'
+metaDescription: UK licence holders can exchange directly for a UAE driving licence without a test. Here's the step-by-step process, costs, and timing for agency founders
+altText: UK agency founder holding a UAE driving licence outside a Dubai office building
+image: /blog/how-to-get-uae-driving-licence-uk-agency-founder-dubai.jpg
 imageCredit:
-  photographer: "The Lazy Artist Gallery"
-  photographerUrl: "https://www.pexels.com/@thelazyartist"
-  sourceUrl: "https://www.pexels.com/photo/aerial-photography-of-blue-car-on-road-1552224/"
-  source: "Pexels"
-h1: "How to Get a UAE Driving Licence as a UK Agency Founder Moving to Dubai"
-summary: "Moving your agency to Dubai? You can swap your UK driving licence for a UAE one without taking a driving test. This guide covers the exact steps, documents, costs, and timeline for agency founders making the move."
-schema: ""
+  photographer: The Lazy Artist Gallery
+  photographerUrl: https://www.pexels.com/@thelazyartist
+  sourceUrl: https://www.pexels.com/photo/aerial-photography-of-blue-car-on-road-1552224/
+  source: Pexels
+h1: How to Get a UAE Driving Licence as a UK Agency Founder Moving to Dubai
+summary: Moving your agency to Dubai? You can swap your UK driving licence for a UAE one without taking a driving test. This guide covers the exact steps, documents, costs, and timeline for agency founders making the move.
+schema: ''
 faqs:
-  - question: "Can I drive in Dubai on my UK driving licence?"
-    answer: "Yes, you can drive on your full UK driving licence for up to 12 months from the date you enter the UAE. After that, you must hold a valid UAE driving licence. If you are stopped after the 12-month period, you face fines and potential vehicle impoundment."
-  - question: "Do I need to take a driving test to exchange my UK licence for a UAE licence?"
-    answer: "No. UK licence holders can exchange their licence directly for a UAE driving licence without taking a practical or theory test. This is because the UK has a reciprocal agreement with the UAE. You simply submit your documents, pay the fee, and receive your UAE licence."
-  - question: "How long does the UAE driving licence exchange process take?"
-    answer: "The entire process typically takes 3-5 working days. You need an eye test (5 minutes), submit an online application through the RTA website or Dubai Drive app, visit an RTA customer service centre to verify your documents, and then wait 2-3 days for the licence to be issued and delivered."
-  - question: "What documents do I need to exchange my UK driving licence in Dubai?"
-    answer: "You need your original UK driving licence, Emirates ID, valid UAE residence visa, passport-sized photographs, an eye test certificate from a licensed optical shop, and a no-objection certificate from your sponsor (if applicable). You also need to pay the RTA application fee of approximately 300-400 AED."
+- question: Can I drive in Dubai on my UK driving licence?
+  answer: Yes, you can drive on your full UK driving licence for up to 12 months from the date you enter the UAE. After that, you must hold a valid UAE driving licence. If you are stopped after the 12-month period, you face fines and potential vehicle impoundment.
+- question: Do I need to take a driving test to exchange my UK licence for a UAE licence?
+  answer: No. UK licence holders can exchange their licence directly for a UAE driving licence without taking a practical or theory test. This is because the UK has a reciprocal agreement with the UAE. You simply submit your documents, pay the fee, and receive your UAE licence.
+- question: How long does the UAE driving licence exchange process take?
+  answer: The entire process typically takes 3-5 working days. You need an eye test (5 minutes), submit an online application through the RTA website or Dubai Drive app, visit an RTA customer service centre to verify your documents, and then wait 2-3 days for the licence to be issued and delivered.
+- question: What documents do I need to exchange my UK driving licence in Dubai?
+  answer: You need your original UK driving licence, Emirates ID, valid UAE residence visa, passport-sized photographs, an eye test certificate from a licensed optical shop, and a no-objection certificate from your sponsor (if applicable). You also need to pay the RTA application fee of approximately 300-400 AED.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- UK licence holders can exchange for a UAE licence without taking a driving test due to a reciprocal agreement.
+- You must complete the exchange within 12 months of entering the UAE to avoid fines and insurance issues.
+- You need a valid UK licence, Emirates ID, UAE residence visa, passport photos, eye test, and NOC from your sponsor.
+- The eye test costs around 100-150 AED and takes five minutes at any optical shop in Dubai.
+- If your UK licence has expired, renew it with the DVLA before applying for the UAE exchange.
 ---
-
 <h2>You Can Swap Your UK Licence Without a Driving Test</h2>
 
 <p>If you are a UK agency founder moving to Dubai, here is the single most important thing to know: you can exchange your full UK driving licence for a UAE driving licence without taking a practical or theory driving test. This is not the case for most other countries. Holders of licences from Canada, Australia, or the US often face a full test. But the UK has a reciprocal agreement with the UAE, and that saves you weeks of hassle and several thousand dirhams in driving school fees.</p>

@@ -1,33 +1,40 @@
 ---
-title: "Why Your Agency's Net Profit Margin Differs from Your Gross Margin and How to Improve Both"
-slug: "agency-gross-margin-vs-net-profit-margin"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-gross-margin-vs-net-profit-margin"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "Agency Gross vs Net Profit Margin: Fix the Gap"
-metaDescription: "Gross margin shows your delivery efficiency. Net profit margin shows what you keep. Here's why they diverge and how to close the gap in your agency."
-altText: "UK agency founder reviewing monthly management accounts showing gross margin and net profit margin on a laptop in a modern office"
-image: "/blog/agency-gross-margin-vs-net-profit-margin.jpg"
+title: Why Your Agency's Net Profit Margin Differs from Your Gross Margin and How to Improve Both
+slug: agency-gross-margin-vs-net-profit-margin
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-gross-margin-vs-net-profit-margin
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: 'Agency Gross vs Net Profit Margin: Fix the Gap'
+metaDescription: Gross margin shows your delivery efficiency. Net profit margin shows what you keep. Here's why they diverge and how to close the gap in your agency.
+altText: UK agency founder reviewing monthly management accounts showing gross margin and net profit margin on a laptop in a modern office
+image: /blog/agency-gross-margin-vs-net-profit-margin.jpg
 imageCredit:
-  photographer: "Kindel Media"
-  photographerUrl: "https://www.pexels.com/@kindelmedia"
-  sourceUrl: "https://www.pexels.com/photo/a-close-up-shot-of-a-graph-on-a-paper-7054368/"
-  source: "Pexels"
-h1: "Why Your Agency's Net Profit Margin Differs from Your Gross Margin and How to Improve Both"
-summary: "Gross margin tells you how efficiently you deliver work. Net profit margin tells you what you actually keep. The gap between them reveals hidden costs that eat your agency's profit — and here's how to close it."
-schema: ""
+  photographer: Kindel Media
+  photographerUrl: https://www.pexels.com/@kindelmedia
+  sourceUrl: https://www.pexels.com/photo/a-close-up-shot-of-a-graph-on-a-paper-7054368/
+  source: Pexels
+h1: Why Your Agency's Net Profit Margin Differs from Your Gross Margin and How to Improve Both
+summary: Gross margin tells you how efficiently you deliver work. Net profit margin tells you what you actually keep. The gap between them reveals hidden costs that eat your agency's profit — and here's how to close it.
+schema: ''
 faqs:
-  - question: "What is the difference between gross margin and net profit margin in an agency?"
-    answer: "Gross margin is revenue minus the direct costs of delivering your service (team salaries, freelancers, client software). Net profit margin is revenue minus all costs including overheads like rent, marketing, and admin. The gap between them shows how much your overheads are eating into your delivery profit."
-  - question: "What is a healthy gross margin for a UK agency?"
-    answer: "Most healthy agencies target 50-65% gross margin. Below 45% indicates a pricing or delivery efficiency problem. Above 70% is possible for agencies with low delivery costs or premium pricing, but be careful that you are not underinvesting in delivery quality."
-  - question: "What is a healthy net profit margin for a UK agency?"
-    answer: "A healthy net profit margin for a UK agency is 15-25%. Below 10% means overheads are too high relative to revenue. Above 30% is excellent but often means the founder is underpaying themselves or underinvesting in growth. The right number depends on your growth stage and goals."
-  - question: "How do I calculate my agency's revenue per head?"
-    answer: "Take your total annual revenue and divide it by your total headcount (including the founder). For example, an agency billing £800k with 8 people has revenue per head of £100k. Aim for £100k-£150k per head. Below £70k per head means you are overstaffed or undercharging."
+- question: What is the difference between gross margin and net profit margin in an agency?
+  answer: Gross margin is revenue minus the direct costs of delivering your service (team salaries, freelancers, client software). Net profit margin is revenue minus all costs including overheads like rent, marketing, and admin. The gap between them shows how much your overheads are eating into your delivery profit.
+- question: What is a healthy gross margin for a UK agency?
+  answer: Most healthy agencies target 50-65% gross margin. Below 45% indicates a pricing or delivery efficiency problem. Above 70% is possible for agencies with low delivery costs or premium pricing, but be careful that you are not underinvesting in delivery quality.
+- question: What is a healthy net profit margin for a UK agency?
+  answer: A healthy net profit margin for a UK agency is 15-25%. Below 10% means overheads are too high relative to revenue. Above 30% is excellent but often means the founder is underpaying themselves or underinvesting in growth. The right number depends on your growth stage and goals.
+- question: How do I calculate my agency's revenue per head?
+  answer: Take your total annual revenue and divide it by your total headcount (including the founder). For example, an agency billing £800k with 8 people has revenue per head of £100k. Aim for £100k-£150k per head. Below £70k per head means you are overstaffed or undercharging.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Gross margin measures delivery efficiency, while net profit margin reveals what you actually keep after all overheads and costs.
+- The gap between gross and net profit margin is caused by specific cost categories like non-billable time, sales costs, and overheads.
+- Freelancer-heavy delivery models can inflate gross margin but often hide lower net profit due to lack of overhead absorption.
+- Track your team's utilisation rate; if it falls below 75%, your gross margin figure is misleading and net profit will suffer.
+- For 2025/26, corporation tax rates are 19% for profits under £50,000 and 25% for profits over £250,000, with marginal relief in between.
 ---
-
 <p>If you run a marketing agency or digital agency, you probably know your gross margin. It's the number you quote to investors, mention to your management team, and track in your monthly board pack. But when you look at your year-end accounts, the net profit margin often tells a different story. Sometimes a much worse one.</p>
 
 <p>That gap between gross margin and net profit margin is where agencies lose money. It's not a mystery. It's a set of specific cost categories that sit below your direct delivery costs. And once you understand them, you can start closing the gap.</p>

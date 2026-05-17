@@ -1,25 +1,32 @@
 ---
-title: "The Penalty Structure for MTD ITSA Late Filing for Agency Founders: What You Need to Know"
-slug: "mtd-itsa-late-filing-penalties-agency-founders"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-itsa-late-filing-penalties-agency-founders"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Making Tax Digital"
-metaTitle: "MTD ITSA Late Filing Penalties: Agency Founder's Guide 2025"
-metaDescription: "MTD ITSA late filing penalties explained for UK agency founders. Point-based system, fine amounts, deadlines, and how to avoid them. Practical guide"
-altText: "Agency founder reviewing MTD ITSA compliance documents on a tablet in a modern London office"
-image: "/blog/mtd-itsa-late-filing-penalties-agency-founders.jpg"
+title: 'The Penalty Structure for MTD ITSA Late Filing for Agency Founders: What You Need to Know'
+slug: mtd-itsa-late-filing-penalties-agency-founders
+canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-itsa-late-filing-penalties-agency-founders
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Making Tax Digital
+metaTitle: 'MTD ITSA Late Filing Penalties: Agency Founder''s Guide 2025'
+metaDescription: MTD ITSA late filing penalties explained for UK agency founders. Point-based system, fine amounts, deadlines, and how to avoid them. Practical guide
+altText: Agency founder reviewing MTD ITSA compliance documents on a tablet in a modern London office
+image: /blog/mtd-itsa-late-filing-penalties-agency-founders.jpg
 imageCredit:
-  photographer: "cottonbro studio"
-  photographerUrl: "https://www.pexels.com/@cottonbro"
-  sourceUrl: "https://www.pexels.com/photo/man-in-gray-suit-jacket-looking-at-white-paper-8370882/"
-  source: "Pexels"
-h1: "The Penalty Structure for MTD ITSA Late Filing for Agency Founders: What You Need to Know"
-summary: "Making Tax Digital for Income Tax (MTD ITSA) brings a new penalty system for late filing and late payment. Agency founders need to understand the point-based regime, the fines, and how to avoid triggering them. This guide covers the specific rules for 2025/26 and beyond."
-schema: ""
+  photographer: cottonbro studio
+  photographerUrl: https://www.pexels.com/@cottonbro
+  sourceUrl: https://www.pexels.com/photo/man-in-gray-suit-jacket-looking-at-white-paper-8370882/
+  source: Pexels
+h1: 'The Penalty Structure for MTD ITSA Late Filing for Agency Founders: What You Need to Know'
+summary: Making Tax Digital for Income Tax (MTD ITSA) brings a new penalty system for late filing and late payment. Agency founders need to understand the point-based regime, the fines, and how to avoid triggering them. This guide covers the specific rules for 2025/26 and beyond.
+schema: ''
 faqs: []
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- MTD ITSA becomes mandatory from April 2026 for agency founders with qualifying income over £50,000, and from April 2027 for those over £30,000.
+- 'The new point-based penalty system replaces the old £100 flat fine: quarterly filers get 4 points before a £200 penalty, annual filers get 2 points.'
+- Points remain on your record for 2 years from the last late submission, so repeated lateness can trigger multiple £200 penalties with no cap.
+- Once you exceed the points threshold, each subsequent late submission incurs another £200 penalty, making consistent compliance essential.
+- Limited company directors are exempt from MTD ITSA, but sole trader agency founders billing over £50,000 must file quarterly from 2026.
 ---
-
 <h2>What Is MTD ITSA and Why Should Agency Founders Care?</h2>
 
 <p>Making Tax Digital for Income Tax Self Assessment (MTD ITSA) is HMRC's programme to digitise tax reporting for sole traders, partnerships, and landlords. It becomes mandatory from April 2026 for anyone with qualifying income over £50,000 per year, and from April 2027 for those with income over £30,000.</p>

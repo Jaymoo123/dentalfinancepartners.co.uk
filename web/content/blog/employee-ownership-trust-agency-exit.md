@@ -1,33 +1,40 @@
 ---
-title: "How to Use an Employee Ownership Trust to Exit Your Agency Tax-Efficiently"
-slug: "employee-ownership-trust-agency-exit"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/employee-ownership-trust-agency-exit"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Sell Your Agency Tax-Free via Employee Ownership Trust"
-metaDescription: "Sell your agency to an Employee Ownership Trust. Capital gains tax-free exit for founders. How EOTs work, the rules, and whether your agency qualifies."
-altText: "Agency founder and employees discussing an employee ownership trust transition in a UK office meeting room"
-image: "/blog/employee-ownership-trust-agency-exit.jpg"
+title: How to Use an Employee Ownership Trust to Exit Your Agency Tax-Efficiently
+slug: employee-ownership-trust-agency-exit
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/employee-ownership-trust-agency-exit
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: Sell Your Agency Tax-Free via Employee Ownership Trust
+metaDescription: Sell your agency to an Employee Ownership Trust. Capital gains tax-free exit for founders. How EOTs work, the rules, and whether your agency qualifies.
+altText: Agency founder and employees discussing an employee ownership trust transition in a UK office meeting room
+image: /blog/employee-ownership-trust-agency-exit.jpg
 imageCredit:
-  photographer: "Ono  Kosuki"
-  photographerUrl: "https://www.pexels.com/@ono-kosuki"
-  sourceUrl: "https://www.pexels.com/photo/stylish-young-ethnic-woman-going-through-metro-entrance-gate-5999929/"
-  source: "Pexels"
-h1: "How to Use an Employee Ownership Trust to Exit Your Agency Tax-Efficiently"
-summary: "Selling your agency to an Employee Ownership Trust (EOT) lets you exit completely free of capital gains tax. This guide explains how EOTs work, the qualifying conditions, and whether this alternative exit route fits your agency."
-schema: ""
+  photographer: Ono  Kosuki
+  photographerUrl: https://www.pexels.com/@ono-kosuki
+  sourceUrl: https://www.pexels.com/photo/stylish-young-ethnic-woman-going-through-metro-entrance-gate-5999929/
+  source: Pexels
+h1: How to Use an Employee Ownership Trust to Exit Your Agency Tax-Efficiently
+summary: Selling your agency to an Employee Ownership Trust (EOT) lets you exit completely free of capital gains tax. This guide explains how EOTs work, the qualifying conditions, and whether this alternative exit route fits your agency.
+schema: ''
 faqs:
-  - question: "Can I sell only part of my agency to an EOT and keep some shares?"
-    answer: "Technically yes, but you lose the full capital gains tax exemption. The exemption only applies if the EOT holds more than 50% of the shares. If you sell 51% to the trust and keep 49%, you pay CGT on the gain from the 51% sale. The 49% you keep is not exempt. Most founders either sell 100% or not at all."
-  - question: "How long does the EOT process take from start to finish?"
-    answer: "Typically 6 to 12 months. The valuation takes 4-8 weeks. Setting up the trust and negotiating the sale agreement takes another 2-3 months. The final completion, including HMRC clearance if needed, adds 4-8 weeks. Start early. Rushing an EOT increases the risk of errors that cost you the tax exemption."
-  - question: "What happens if my agency's profits drop after the EOT sale?"
-    answer: "The trust pays you from the agency's future profits. If profits drop, the trust may not be able to make the full payment in that year. The deferred consideration agreement typically allows for missed payments to be carried forward. You still get paid eventually, but the timeline extends. This is why EOTs work best for agencies with stable, recurring revenue."
-  - question: "Do employees have to pay for their shares in an EOT?"
-    answer: "No. Employees do not buy shares. The trust buys the shares from you using the agency's future profits. Employees benefit through the trust without any personal financial outlay. They receive tax-free bonuses of up to £3,600 per year, but they never own shares directly."
+- question: Can I sell only part of my agency to an EOT and keep some shares?
+  answer: Technically yes, but you lose the full capital gains tax exemption. The exemption only applies if the EOT holds more than 50% of the shares. If you sell 51% to the trust and keep 49%, you pay CGT on the gain from the 51% sale. The 49% you keep is not exempt. Most founders either sell 100% or not at all.
+- question: How long does the EOT process take from start to finish?
+  answer: Typically 6 to 12 months. The valuation takes 4-8 weeks. Setting up the trust and negotiating the sale agreement takes another 2-3 months. The final completion, including HMRC clearance if needed, adds 4-8 weeks. Start early. Rushing an EOT increases the risk of errors that cost you the tax exemption.
+- question: What happens if my agency's profits drop after the EOT sale?
+  answer: The trust pays you from the agency's future profits. If profits drop, the trust may not be able to make the full payment in that year. The deferred consideration agreement typically allows for missed payments to be carried forward. You still get paid eventually, but the timeline extends. This is why EOTs work best for agencies with stable, recurring revenue.
+- question: Do employees have to pay for their shares in an EOT?
+  answer: No. Employees do not buy shares. The trust buys the shares from you using the agency's future profits. Employees benefit through the trust without any personal financial outlay. They receive tax-free bonuses of up to £3,600 per year, but they never own shares directly.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Selling a controlling stake (over 50%) to an Employee Ownership Trust qualifies for a complete capital gains tax exemption, not just the 14% BADR rate.
+- The EOT must acquire shares at market value based on an independent valuation to avoid HMRC treating any discount as a distribution or employment income.
+- Deferred consideration paid by the trust over 5–10 years from future profits is entirely tax-free for the founder under the EOT capital gains exemption.
+- Employees benefit collectively through the trust, receiving tax-free profit-sharing bonuses of up to £3,600 per employee per year.
+- Founders can remain as directors for a transition period of 12–24 months before stepping back, with the agency continuing normal operations under employee ownership.
 ---
-
 <p>If you own a marketing, digital, or creative agency, you have probably thought about your exit. The standard route is selling to a third party — a competitor, a private equity buyer, or a larger agency group. But there is another option that fewer founders consider, and it comes with a significant tax advantage.</p>
 
 <p>An Employee Ownership Trust (EOT) lets you sell your agency to your employees. And if you structure it correctly, you pay zero capital gains tax on the sale. Not 14% under Business Asset Disposal Relief. Not 20% under the main rate. Zero.</p>

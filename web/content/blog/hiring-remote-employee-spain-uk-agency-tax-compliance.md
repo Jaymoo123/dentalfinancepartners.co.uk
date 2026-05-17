@@ -1,33 +1,40 @@
 ---
-title: "Hiring a Remote Employee in Spain for Your UK Agency: Tax and Compliance Guide"
-slug: "hiring-remote-employee-spain-uk-agency-tax-compliance"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/hiring-remote-employee-spain-uk-agency-tax-compliance"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Hiring a Remote Employee in Spain: UK Agency Tax Guide"
-metaDescription: "Hiring a remote employee in Spain for your UK agency triggers Spanish tax, social security, and permanent establishment risks. Here’s what you need"
-altText: "UK agency founder reviewing Spanish employment contract at desk with laptop and coffee in modern office"
-image: "/blog/hiring-remote-employee-spain-uk-agency-tax-compliance.jpg"
+title: 'Hiring a Remote Employee in Spain for Your UK Agency: Tax and Compliance Guide'
+slug: hiring-remote-employee-spain-uk-agency-tax-compliance
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/hiring-remote-employee-spain-uk-agency-tax-compliance
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Hiring a Remote Employee in Spain: UK Agency Tax Guide'
+metaDescription: Hiring a remote employee in Spain for your UK agency triggers Spanish tax, social security, and permanent establishment risks. Here’s what you need
+altText: UK agency founder reviewing Spanish employment contract at desk with laptop and coffee in modern office
+image: /blog/hiring-remote-employee-spain-uk-agency-tax-compliance.jpg
 imageCredit:
-  photographer: "Andrea Piacquadio"
-  photographerUrl: "https://www.pexels.com/@olly"
-  sourceUrl: "https://www.pexels.com/photo/person-in-black-suit-hired-an-employee-3760069/"
-  source: "Pexels"
-h1: "Hiring a Remote Employee in Spain for Your UK Agency: The Tax and Compliance Guide"
-summary: "Hiring one remote employee in Spain for your UK agency is not as simple as extending your payroll. Spanish tax law, social security contributions, and permanent establishment risks all come into play. Here’s the practical guide to getting it right."
-schema: ""
+  photographer: Andrea Piacquadio
+  photographerUrl: https://www.pexels.com/@olly
+  sourceUrl: https://www.pexels.com/photo/person-in-black-suit-hired-an-employee-3760069/
+  source: Pexels
+h1: 'Hiring a Remote Employee in Spain for Your UK Agency: The Tax and Compliance Guide'
+summary: Hiring one remote employee in Spain for your UK agency is not as simple as extending your payroll. Spanish tax law, social security contributions, and permanent establishment risks all come into play. Here’s the practical guide to getting it right.
+schema: ''
 faqs:
-  - question: "Do I need to register my UK agency as a Spanish company to hire one remote employee in Spain?"
-    answer: "Not necessarily. You can hire through an Employer of Record (EOR) that has a legal entity in Spain. The EOR becomes the legal employer, handles Spanish payroll and social security, and you pay them a fee. This avoids you registering a Spanish branch or subsidiary. For one employee, this is usually the most practical route."
-  - question: "What happens if my remote employee in Spain works from the UK for part of the year?"
-    answer: "You need to track their physical location carefully. If they spend more than 183 days in the UK in a tax year, they may become UK resident. Their salary would then be subject to UK PAYE for those days. You should operate a dual payroll or adjust their tax code accordingly. The UK-Spain Double Taxation Treaty contains tie-breaker rules to determine residency. Keep a log of their work location day by day."
-  - question: "Can I pay my Spanish employee through my UK payroll and let them sort out their own Spanish tax?"
-    answer: "No. This is not compliant. If you operate UK PAYE for someone who lives and works in Spain, you are not collecting the correct tax. The Spanish tax authority will expect your agency to register as an employer in Spain and withhold Spanish income tax. Paying through UK payroll and leaving the employee to file a Spanish return creates a liability for both you and the employee. HMRC and the Spanish tax authority share data. They will find out."
-  - question: "What is the cost of hiring an Employer of Record in Spain for one employee?"
-    answer: "EOR fees in Spain typically range from 15% to 25% of the employee’s gross salary. For a senior designer on £55,000, that means an additional £8,250 to £13,750 per year on top of salary and employer social security. The fee covers payroll administration, tax compliance, employment law advice, and contract management. It is cheaper than setting up your own Spanish entity for one person."
+- question: Do I need to register my UK agency as a Spanish company to hire one remote employee in Spain?
+  answer: Not necessarily. You can hire through an Employer of Record (EOR) that has a legal entity in Spain. The EOR becomes the legal employer, handles Spanish payroll and social security, and you pay them a fee. This avoids you registering a Spanish branch or subsidiary. For one employee, this is usually the most practical route.
+- question: What happens if my remote employee in Spain works from the UK for part of the year?
+  answer: You need to track their physical location carefully. If they spend more than 183 days in the UK in a tax year, they may become UK resident. Their salary would then be subject to UK PAYE for those days. You should operate a dual payroll or adjust their tax code accordingly. The UK-Spain Double Taxation Treaty contains tie-breaker rules to determine residency. Keep a log of their work location day by day.
+- question: Can I pay my Spanish employee through my UK payroll and let them sort out their own Spanish tax?
+  answer: No. This is not compliant. If you operate UK PAYE for someone who lives and works in Spain, you are not collecting the correct tax. The Spanish tax authority will expect your agency to register as an employer in Spain and withhold Spanish income tax. Paying through UK payroll and leaving the employee to file a Spanish return creates a liability for both you and the employee. HMRC and the Spanish tax authority share data. They will find out.
+- question: What is the cost of hiring an Employer of Record in Spain for one employee?
+  answer: EOR fees in Spain typically range from 15% to 25% of the employee’s gross salary. For a senior designer on £55,000, that means an additional £8,250 to £13,750 per year on top of salary and employer social security. The fee covers payroll administration, tax compliance, employment law advice, and contract management. It is cheaper than setting up your own Spanish entity for one person.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Spanish tax law applies when a remote employee works from Spain, so you cannot simply add them to UK payroll.
+- You must register as an employer in Spain and pay employer social security contributions of around 29.9% of gross salary.
+- Engaging an employee through a Spanish PEO or EOR is the simplest compliant route for most UK agencies.
+- Hiring a Spanish-based employee risks creating a permanent establishment, exposing your agency to Spanish corporation tax.
+- The employee will pay Spanish income tax at progressive rates from 19% to 47%, with regional variations in Catalonia.
 ---
-
 <h2>You’ve Found the Right Person. Now the Tax Reality Hits.</h2>
 
 <p>Your agency is based in Shoreditch. You’ve been growing steadily for three years. You’ve got a retainer book of £420k, a team of seven, and you’re finally ready to hire that senior designer you’ve been chasing. There’s just one complication: they live in Barcelona.</p>

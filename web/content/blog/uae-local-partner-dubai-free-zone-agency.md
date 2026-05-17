@@ -1,33 +1,40 @@
 ---
-title: "Do I Need a UAE Local Partner for My Agency in a Dubai Free Zone?"
-slug: "uae-local-partner-dubai-free-zone-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-local-partner-dubai-free-zone-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Local Partner Requirement Dubai Free Zone: Agency Founder"
-metaDescription: "Dubai free zones do not require a local partner for 100% foreign ownership. We explain the rules, costs, and why mainland setup might still be relevant"
-altText: "Agency founder reviewing Dubai free zone setup documents with an ICAEW qualified accountant in a modern office"
-image: "/blog/uae-local-partner-dubai-free-zone-agency.jpg"
+title: Do I Need a UAE Local Partner for My Agency in a Dubai Free Zone?
+slug: uae-local-partner-dubai-free-zone-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-local-partner-dubai-free-zone-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Local Partner Requirement Dubai Free Zone: Agency Founder'
+metaDescription: Dubai free zones do not require a local partner for 100% foreign ownership. We explain the rules, costs, and why mainland setup might still be relevant
+altText: Agency founder reviewing Dubai free zone setup documents with an ICAEW qualified accountant in a modern office
+image: /blog/uae-local-partner-dubai-free-zone-agency.jpg
 imageCredit:
-  photographer: "Eslam Mohammed Abdelmaksoud"
-  photographerUrl: "https://www.pexels.com/@eslames1"
-  sourceUrl: "https://www.pexels.com/photo/abu-dhabi-28406813/"
-  source: "Pexels"
-h1: "Do I Need a UAE Local Partner for My Agency in a Dubai Free Zone?"
-summary: "If you are a UK agency founder looking at Dubai, the local partner requirement for free zones is zero. We explain the difference between free zone and mainland setup, what each means for your agency, and how to decide which route fits your growth plan."
-schema: ""
+  photographer: Eslam Mohammed Abdelmaksoud
+  photographerUrl: https://www.pexels.com/@eslames1
+  sourceUrl: https://www.pexels.com/photo/abu-dhabi-28406813/
+  source: Pexels
+h1: Do I Need a UAE Local Partner for My Agency in a Dubai Free Zone?
+summary: If you are a UK agency founder looking at Dubai, the local partner requirement for free zones is zero. We explain the difference between free zone and mainland setup, what each means for your agency, and how to decide which route fits your growth plan.
+schema: ''
 faqs:
-  - question: "Do I need a UAE national partner to set up in a Dubai free zone?"
-    answer: "No. Dubai free zones allow 100% foreign ownership. You do not need a local partner, sponsor, or local service agent. You control all shares and decision-making."
-  - question: "What is the difference between a free zone and mainland company in Dubai?"
-    answer: "A free zone company can only trade within the free zone or internationally. A mainland company can trade anywhere in the UAE, including with government entities. Free zones offer 100% foreign ownership. Mainland companies historically required a UAE national partner (51%), though recent reforms allow 100% foreign ownership for some professional activities."
-  - question: "How much does it cost to set up an agency in a Dubai free zone?"
-    answer: "Costs vary by free zone. Expect AED 50,000-60,000 (£10,700-12,800) for setup in DMCC or Dubai Media City, plus AED 10,000-15,000 (£2,100-3,200) for visas. Annual renewal is typically AED 30,000-40,000 (£6,400-8,600). Lower cost options exist in Sharjah Media City (around AED 15,000 for setup)."
-  - question: "Will my Dubai free zone company be tax-free?"
-    answer: "It can be, but only if you meet the conditions for Qualifying Free Zone Person status under UAE corporate tax rules. Qualifying income is taxed at 0%. Non-qualifying income is taxed at 9%. You must also consider UK tax: if you remain UK resident, your Dubai company's profits are taxable in the UK. Professional advice is essential."
+- question: Do I need a UAE national partner to set up in a Dubai free zone?
+  answer: No. Dubai free zones allow 100% foreign ownership. You do not need a local partner, sponsor, or local service agent. You control all shares and decision-making.
+- question: What is the difference between a free zone and mainland company in Dubai?
+  answer: A free zone company can only trade within the free zone or internationally. A mainland company can trade anywhere in the UAE, including with government entities. Free zones offer 100% foreign ownership. Mainland companies historically required a UAE national partner (51%), though recent reforms allow 100% foreign ownership for some professional activities.
+- question: How much does it cost to set up an agency in a Dubai free zone?
+  answer: Costs vary by free zone. Expect AED 50,000-60,000 (£10,700-12,800) for setup in DMCC or Dubai Media City, plus AED 10,000-15,000 (£2,100-3,200) for visas. Annual renewal is typically AED 30,000-40,000 (£6,400-8,600). Lower cost options exist in Sharjah Media City (around AED 15,000 for setup).
+- question: Will my Dubai free zone company be tax-free?
+  answer: 'It can be, but only if you meet the conditions for Qualifying Free Zone Person status under UAE corporate tax rules. Qualifying income is taxed at 0%. Non-qualifying income is taxed at 9%. You must also consider UK tax: if you remain UK resident, your Dubai company''s profits are taxable in the UK. Professional advice is essential.'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Dubai free zones allow 100% foreign ownership with no local partner or sponsor required.
+- Free zone agencies can be 100% owned and controlled by the UK founder with no equity given away.
+- Mainland UAE companies require a UAE national partner holding 51% or a local service agent.
+- Free zone licences for agencies cost from AED 15,000 (£3,200) to AED 50,000+ (£10,700+) per year.
+- Free zone companies are restricted to trading within the zone or internationally unless using a local distributor.
 ---
-
 <p>If you are a UK agency founder looking at Dubai as a base for your next move, the first question you will hear is: do I need a local partner? The short answer is no, if you choose a Dubai free zone. Free zones were created specifically to allow 100% foreign ownership. No local sponsor, no Emirati partner, no profit share arrangement. You own your agency outright.</p>
 
 <p>This is the single most important structural decision you will make when setting up in the UAE. Get it wrong and you could lock yourself into a mainland structure that requires a local service agent or a local partner, with all the complexity that brings. Get it right and you have a clean, tax-efficient entity that mirrors the control you have over your UK agency.</p>

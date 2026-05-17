@@ -1,33 +1,40 @@
 ---
-title: "The 2-Year Holding Period for BADR: What Agency Founders Need to Know Before Selling"
-slug: "badr-2-year-holding-period-agency-founders"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/badr-2-year-holding-period-agency-founders"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "BADR 2-Year Holding Period: Agency Founder Exit Guide"
-metaDescription: "The 2-year BADR holding period disqualifies many agency sellers. Learn the exact rules, common traps, and how to protect your 10% tax rate."
-altText: "Agency founder reviewing shareholding documents and exit timeline with accountant in a London office meeting room"
-image: "/blog/badr-2-year-holding-period-agency-founders.jpg"
+title: 'The 2-Year Holding Period for BADR: What Agency Founders Need to Know Before Selling'
+slug: badr-2-year-holding-period-agency-founders
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/badr-2-year-holding-period-agency-founders
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'BADR 2-Year Holding Period: Agency Founder Exit Guide'
+metaDescription: The 2-year BADR holding period disqualifies many agency sellers. Learn the exact rules, common traps, and how to protect your 10% tax rate.
+altText: Agency founder reviewing shareholding documents and exit timeline with accountant in a London office meeting room
+image: /blog/badr-2-year-holding-period-agency-founders.jpg
 imageCredit:
-  photographer: "cottonbro studio"
-  photographerUrl: "https://www.pexels.com/@cottonbro"
-  sourceUrl: "https://www.pexels.com/photo/2022-candles-3401897/"
-  source: "Pexels"
-h1: "The 2-Year Holding Period for BADR: What Agency Founders Need to Know Before Selling"
-summary: "Business Asset Disposal Relief (BADR) gives you a 14% capital gains tax rate on your agency sale — but only if you've held the shares for two full years. Many founders miss this by months. Here's what you need to plan for."
-schema: ""
+  photographer: cottonbro studio
+  photographerUrl: https://www.pexels.com/@cottonbro
+  sourceUrl: https://www.pexels.com/photo/2022-candles-3401897/
+  source: Pexels
+h1: 'The 2-Year Holding Period for BADR: What Agency Founders Need to Know Before Selling'
+summary: Business Asset Disposal Relief (BADR) gives you a 14% capital gains tax rate on your agency sale — but only if you've held the shares for two full years. Many founders miss this by months. Here's what you need to plan for.
+schema: ''
 faqs:
-  - question: "What is the exact 2-year holding period rule for BADR?"
-    answer: "You must have held the shares for at least two full calendar years before the date of disposal. The clock starts on the date you acquire the shares, not the date you started the business. If you acquired shares on 1 March 2024, you cannot complete a qualifying sale before 1 March 2026. HMRC does not allow rounding or grace periods."
-  - question: "Does the holding period reset if I issue new shares to a co-founder?"
-    answer: "Yes. Each share acquisition has its own holding period. If you issue new shares to a co-founder on 1 January 2024, they cannot sell those shares with BADR until 1 January 2026. Your own shares, acquired earlier, may qualify separately. This is why bringing in co-founders early matters."
-  - question: "Can I still get BADR if I sell before the 2-year holding period ends?"
-    answer: "No. There is no exception for early sales outside of ill health or death. If you sell even one day before the 2-year anniversary, the entire gain is taxed at 20% instead of 10%. You must plan your exit timeline around the holding period."
-  - question: "Does the 2-year holding period apply to EMI option shares?"
-    answer: "For EMI options, the holding period starts from the date of grant, not the date of exercise, provided the option is exercised within 90 days of leaving. This is a valuable nuance. If you grant EMI options to a key employee and they exercise them later, the clock runs from the grant date. Speak to your accountant to confirm the specific treatment for your situation."
+- question: What is the exact 2-year holding period rule for BADR?
+  answer: You must have held the shares for at least two full calendar years before the date of disposal. The clock starts on the date you acquire the shares, not the date you started the business. If you acquired shares on 1 March 2024, you cannot complete a qualifying sale before 1 March 2026. HMRC does not allow rounding or grace periods.
+- question: Does the holding period reset if I issue new shares to a co-founder?
+  answer: Yes. Each share acquisition has its own holding period. If you issue new shares to a co-founder on 1 January 2024, they cannot sell those shares with BADR until 1 January 2026. Your own shares, acquired earlier, may qualify separately. This is why bringing in co-founders early matters.
+- question: Can I still get BADR if I sell before the 2-year holding period ends?
+  answer: No. There is no exception for early sales outside of ill health or death. If you sell even one day before the 2-year anniversary, the entire gain is taxed at 20% instead of 10%. You must plan your exit timeline around the holding period.
+- question: Does the 2-year holding period apply to EMI option shares?
+  answer: For EMI options, the holding period starts from the date of grant, not the date of exercise, provided the option is exercised within 90 days of leaving. This is a valuable nuance. If you grant EMI options to a key employee and they exercise them later, the clock runs from the grant date. Speak to your accountant to confirm the specific treatment for your situation.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- BADR reduces capital gains tax to 14% on the first £1m of lifetime gains when selling shares in your trading company.
+- You must have held the shares for at least two full calendar years before the disposal date to qualify for BADR.
+- HMRC does not round up the two-year holding period; a sale one day early means the entire gain is taxed at 20%.
+- Incorporating later, restructuring, or issuing new shares to co-founders resets the BADR holding period clock.
+- The company must be a trading company and you must be an officer or employee with at least 5% shares and voting rights throughout the two years.
 ---
-
 <p>You build your agency for years. You get the offer. You're looking at a seven-figure exit. Then your accountant asks one question: "When did you acquire your shares?"</p>
 
 <p>If the answer is less than two years before completion, your 10% tax rate disappears. You're looking at 20% capital gains tax instead. On a £2m sale, that difference is £200,000.</p>

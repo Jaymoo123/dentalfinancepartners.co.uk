@@ -1,33 +1,40 @@
 ---
-title: "Incorporating Your Agency: The Definitive Guide to Structure"
-slug: "incorporating-your-agency-pillar"
-canonical: "https://www.agencyfounderfinance.co.uk/fundamentals/incorporating-your-agency-pillar"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "Incorporating Agency UK Guide: Structure, Tax & Timing"
-metaDescription: "Should you incorporate your agency? We cover sole trader vs Ltd, holding companies, alphabet shares, and timing. Written by ICAEW accountants for UK"
-altText: "UK agency founder reviewing incorporation documents with ICAEW accountant in a modern London office"
-image: "/blog/incorporating-your-agency-pillar.jpg"
+title: 'Incorporating Your Agency: The Definitive Guide to Structure'
+slug: incorporating-your-agency-pillar
+canonical: https://www.agencyfounderfinance.co.uk/fundamentals/incorporating-your-agency-pillar
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Incorporation and Structure
+metaTitle: 'Incorporating Agency UK Guide: Structure, Tax & Timing'
+metaDescription: Should you incorporate your agency? We cover sole trader vs Ltd, holding companies, alphabet shares, and timing. Written by ICAEW accountants for UK
+altText: UK agency founder reviewing incorporation documents with ICAEW accountant in a modern London office
+image: /blog/incorporating-your-agency-pillar.jpg
 imageCredit:
-  photographer: "Mikael Blomkvist"
-  photographerUrl: "https://www.pexels.com/@mikael-blomkvist"
-  sourceUrl: "https://www.pexels.com/photo/people-sitting-at-the-table-6476256/"
-  source: "Pexels"
-h1: "Incorporating Your Agency: The Definitive Guide to UK Structure"
-summary: "This is the definitive guide for UK agency founders considering incorporation. We cover sole trader vs limited company trade-offs, the optimal timing for incorporation, holding company structures, alphabet shares, and the full process from start to finish. Written by ICAEW-qualified accountants who work exclusively with agency founders."
-schema: ""
+  photographer: Mikael Blomkvist
+  photographerUrl: https://www.pexels.com/@mikael-blomkvist
+  sourceUrl: https://www.pexels.com/photo/people-sitting-at-the-table-6476256/
+  source: Pexels
+h1: 'Incorporating Your Agency: The Definitive Guide to UK Structure'
+summary: This is the definitive guide for UK agency founders considering incorporation. We cover sole trader vs limited company trade-offs, the optimal timing for incorporation, holding company structures, alphabet shares, and the full process from start to finish. Written by ICAEW-qualified accountants who work exclusively with agency founders.
+schema: ''
 faqs:
-  - question: "How much does it cost to incorporate an agency?"
-    answer: "Companies House charges £12 for online incorporation. Professional fees for a straightforward incorporation with advice on structure and articles typically range from £500 to £1,500. Alphabet shares or holding company structures add £1,000 to £3,000. The tax savings from incorporation usually cover these costs within the first year for most agency founders."
-  - question: "Can I incorporate my agency myself?"
-    answer: "Yes, you can file the IN01 form online directly with Companies House. However, we strongly recommend professional advice on share structure, articles of association, and the transfer of your trade from sole trader to company. Mistakes in the articles can create significant tax problems later. We offer a fixed-price incorporation service for agency founders."
-  - question: "Do I need a holding company for my agency?"
-    answer: "Only if you have significant assets to protect — typically over £500,000 in retained profits — or if you run multiple trading entities (for example, a PPC agency and a creative agency under one group). For a single agency with less than that, a simple limited company is usually sufficient and more cost-effective."
-  - question: "What are alphabet shares and do I need them?"
-    answer: "Alphabet shares are different classes of shares (A shares, B shares, C shares) that carry different rights, most commonly different dividend rights. They are useful for flexible dividend extraction, bringing in co-founders with different economic rights, or issuing growth shares to employees. Most single-founder agencies do not need them. They add complexity to your accounts and should only be used when there is a clear, ongoing benefit."
+- question: How much does it cost to incorporate an agency?
+  answer: Companies House charges £12 for online incorporation. Professional fees for a straightforward incorporation with advice on structure and articles typically range from £500 to £1,500. Alphabet shares or holding company structures add £1,000 to £3,000. The tax savings from incorporation usually cover these costs within the first year for most agency founders.
+- question: Can I incorporate my agency myself?
+  answer: Yes, you can file the IN01 form online directly with Companies House. However, we strongly recommend professional advice on share structure, articles of association, and the transfer of your trade from sole trader to company. Mistakes in the articles can create significant tax problems later. We offer a fixed-price incorporation service for agency founders.
+- question: Do I need a holding company for my agency?
+  answer: Only if you have significant assets to protect — typically over £500,000 in retained profits — or if you run multiple trading entities (for example, a PPC agency and a creative agency under one group). For a single agency with less than that, a simple limited company is usually sufficient and more cost-effective.
+- question: What are alphabet shares and do I need them?
+  answer: Alphabet shares are different classes of shares (A shares, B shares, C shares) that carry different rights, most commonly different dividend rights. They are useful for flexible dividend extraction, bringing in co-founders with different economic rights, or issuing growth shares to employees. Most single-founder agencies do not need them. They add complexity to your accounts and should only be used when there is a clear, ongoing benefit.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Incorporating your agency can save around £10,700 in tax on £100,000 profit compared to being a sole trader, using a salary and dividend mix.
+- A limited company provides limited liability, protecting your personal assets from client disputes, debts, or litigation.
+- Larger clients often require you to be a limited company for contracts over £50k, as it signals credibility and stability.
+- Corporation tax rates are 19% on profits up to £50,000, with marginal relief up to 25% at £250,000, making incorporation tax-efficient for growing agencies.
+- The optimal time to incorporate is when your profits consistently exceed the personal allowance and basic rate band, maximising the tax savings from dividends.
 ---
-
 <p>Should you incorporate your agency? It's the single biggest structural decision you'll make as a founder. Get it right, and you'll save tens of thousands in tax, protect your personal assets, and build a business that can scale, attract investment, and eventually exit. Get it wrong, and you'll spend years unpicking a structure that costs you money, flexibility, and sleep.</p>
 
 <p>This is the definitive guide to <strong>incorporating agency UK</strong> for founders of marketing, digital, creative, PR, advertising, web design, SEO, PPC, and recruitment agencies. We work with 73+ UK and UAE agency founders as ICAEW-qualified accountants. We've seen every structure, every mistake, and every optimal path. This guide covers everything from first principles — sole trader vs limited company — through to advanced structures like holding companies, family investment companies, and alphabet shares.</p>

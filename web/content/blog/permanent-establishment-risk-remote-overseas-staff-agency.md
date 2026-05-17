@@ -1,33 +1,40 @@
 ---
-title: "What Is the Permanent Establishment Risk for a UK Agency with Remote Overseas Staff?"
-slug: "permanent-establishment-risk-remote-overseas-staff-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/permanent-establishment-risk-remote-overseas-staff-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Permanent establishment risk remote overseas staff agency |"
-metaDescription: "How a remote overseas employee can create a permanent establishment risk for your UK agency. Real examples, tax triggers, and practical steps to stay"
-altText: "UK agency founder discussing permanent establishment risk with accountant in London office"
-image: "/blog/permanent-establishment-risk-remote-overseas-staff-agency.jpg"
+title: What Is the Permanent Establishment Risk for a UK Agency with Remote Overseas Staff?
+slug: permanent-establishment-risk-remote-overseas-staff-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/permanent-establishment-risk-remote-overseas-staff-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: Permanent establishment risk remote overseas staff agency |
+metaDescription: How a remote overseas employee can create a permanent establishment risk for your UK agency. Real examples, tax triggers, and practical steps to stay
+altText: UK agency founder discussing permanent establishment risk with accountant in London office
+image: /blog/permanent-establishment-risk-remote-overseas-staff-agency.jpg
 imageCredit:
-  photographer: "Erik Mclean"
-  photographerUrl: "https://www.pexels.com/@introspectivedsgn"
-  sourceUrl: "https://www.pexels.com/photo/a-warning-sign-on-a-door-7740310/"
-  source: "Pexels"
-h1: "What Is the Permanent Establishment Risk for a UK Agency with Remote Overseas Staff?"
-summary: "Hiring remote staff overseas sounds simple. But if that employee creates a permanent establishment for your UK agency, you could face corporation tax bills in their country. Here is what you need to know before you hire."
-schema: ""
+  photographer: Erik Mclean
+  photographerUrl: https://www.pexels.com/@introspectivedsgn
+  sourceUrl: https://www.pexels.com/photo/a-warning-sign-on-a-door-7740310/
+  source: Pexels
+h1: What Is the Permanent Establishment Risk for a UK Agency with Remote Overseas Staff?
+summary: Hiring remote staff overseas sounds simple. But if that employee creates a permanent establishment for your UK agency, you could face corporation tax bills in their country. Here is what you need to know before you hire.
+schema: ''
 faqs:
-  - question: "What is the 183-day rule for permanent establishment?"
-    answer: "Most double tax treaties say a permanent establishment is created if an employee works in a country for more than 183 days in any 12-month period. This includes working days, not calendar days. If your employee exceeds this threshold, the overseas tax authority can argue you have a PE and tax the profits attributable to that employee's work."
-  - question: "Does a contractor create permanent establishment risk for my agency?"
-    answer: "Yes, if the contractor is effectively dependent on your agency. Tax authorities look at substance over form. If the contractor works exclusively for you, uses your equipment, and follows your processes, they can be reclassified as a de facto employee. That reclassification can create a PE. A properly structured independent contractor arrangement with multiple clients reduces this risk."
-  - question: "Can I avoid PE risk by using a co-working space for my overseas employee?"
-    answer: "No. A co-working space is still a fixed place of business. The tax authority can argue it constitutes a PE, especially if the employee uses it regularly and has authority to bind your agency. Using a co-working space does not eliminate PE risk. It may even make it easier for the tax authority to identify your presence."
-  - question: "What is the difference between an EOR and a PEO for overseas hiring?"
-    answer: "An Employer of Record (EOR) becomes the legal employer of your overseas worker. They take on all employment liabilities and PE exposure. A Professional Employer Organisation (PEO) co-employs the worker with your agency. You retain more control but also more risk. EORs are generally simpler for small numbers of staff. PEOs work better when you need to maintain operational control."
+- question: What is the 183-day rule for permanent establishment?
+  answer: Most double tax treaties say a permanent establishment is created if an employee works in a country for more than 183 days in any 12-month period. This includes working days, not calendar days. If your employee exceeds this threshold, the overseas tax authority can argue you have a PE and tax the profits attributable to that employee's work.
+- question: Does a contractor create permanent establishment risk for my agency?
+  answer: Yes, if the contractor is effectively dependent on your agency. Tax authorities look at substance over form. If the contractor works exclusively for you, uses your equipment, and follows your processes, they can be reclassified as a de facto employee. That reclassification can create a PE. A properly structured independent contractor arrangement with multiple clients reduces this risk.
+- question: Can I avoid PE risk by using a co-working space for my overseas employee?
+  answer: No. A co-working space is still a fixed place of business. The tax authority can argue it constitutes a PE, especially if the employee uses it regularly and has authority to bind your agency. Using a co-working space does not eliminate PE risk. It may even make it easier for the tax authority to identify your presence.
+- question: What is the difference between an EOR and a PEO for overseas hiring?
+  answer: An Employer of Record (EOR) becomes the legal employer of your overseas worker. They take on all employment liabilities and PE exposure. A Professional Employer Organisation (PEO) co-employs the worker with your agency. You retain more control but also more risk. EORs are generally simpler for small numbers of staff. PEOs work better when you need to maintain operational control.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A single remote employee working from home overseas can create a permanent establishment for your UK agency if they have contract authority and work for more than 183 days in a 12-month period.
+- If a permanent establishment is triggered, the overseas tax authority can tax the profits attributable to that employee's work, plus interest and penalties.
+- 'Three triggers create PE risk: the employee works exclusively for your agency, has authority to bind you contractually, and the activity lasts over six months.'
+- Your agency does not need a registered office or legal entity abroad to have a permanent establishment—a co-working space or home office can suffice.
+- Double tax treaties with countries like Spain, Portugal, and the UAE allow foreign tax authorities to argue a PE exists, even without targeting their local market.
 ---
-
 <p>You hired a brilliant developer based in Barcelona. Or a part-time marketing manager living in Dubai. Or a senior strategist who moved to Portugal during the pandemic and never came back. It felt like a win for the agency. Lower cost base, wider talent pool, happier team.</p>
 
 <p>But there is a tax risk hiding in that arrangement that most agency founders never see coming. It is called permanent establishment risk. And if HMRC or a foreign tax authority decides you have triggered it, the costs can easily run into five or six figures.</p>

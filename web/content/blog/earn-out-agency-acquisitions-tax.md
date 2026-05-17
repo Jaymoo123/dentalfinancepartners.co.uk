@@ -1,33 +1,40 @@
 ---
-title: "Earn-Out Structures in Agency Acquisitions: The Tax Angles Every Founder Must Know"
-slug: "earn-out-agency-acquisitions-tax"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-agency-acquisitions-tax"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Earn Out Tax in Agency Deals: Key Reliefs & Traps"
-metaDescription: "Earn out agency acquisition tax explained for UK founders. How BADR, CGT, and employment income rules affect your payout. Practical examples inside."
-altText: "UK agency founder reviewing earn-out acquisition documents with accountant in London office"
-image: "/blog/earn-out-agency-acquisitions-tax.jpg"
+title: 'Earn-Out Structures in Agency Acquisitions: The Tax Angles Every Founder Must Know'
+slug: earn-out-agency-acquisitions-tax
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/earn-out-agency-acquisitions-tax
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'Earn Out Tax in Agency Deals: Key Reliefs & Traps'
+metaDescription: Earn out agency acquisition tax explained for UK founders. How BADR, CGT, and employment income rules affect your payout. Practical examples inside.
+altText: UK agency founder reviewing earn-out acquisition documents with accountant in London office
+image: /blog/earn-out-agency-acquisitions-tax.jpg
 imageCredit:
-  photographer: "Monstera Production"
-  photographerUrl: "https://www.pexels.com/@gabby-k"
-  sourceUrl: "https://www.pexels.com/photo/illustration-with-euro-coins-on-tree-twigs-6289031/"
-  source: "Pexels"
-h1: "Earn-Out Structures in Agency Acquisitions: The Tax Angles Every Founder Must Know"
-summary: "Earn-out structures are common in agency acquisitions, but the tax treatment can vary wildly depending on how they're written. This guide explains the difference between capital gains and employment income, how BADR applies, and what to watch for before you sign."
-schema: ""
+  photographer: Monstera Production
+  photographerUrl: https://www.pexels.com/@gabby-k
+  sourceUrl: https://www.pexels.com/photo/illustration-with-euro-coins-on-tree-twigs-6289031/
+  source: Pexels
+h1: 'Earn-Out Structures in Agency Acquisitions: The Tax Angles Every Founder Must Know'
+summary: Earn-out structures are common in agency acquisitions, but the tax treatment can vary wildly depending on how they're written. This guide explains the difference between capital gains and employment income, how BADR applies, and what to watch for before you sign.
+schema: ''
 faqs:
-  - question: "Can I get Business Asset Disposal Relief on an earn-out payment?"
-    answer: "Yes, if the earn-out is structured as deferred consideration for your shares and you met the BADR conditions (5% shareholding, officer or employee, two-year holding period) at the date of disposal. The relief applies to the total gain, including the deferred element, even though you receive the cash later. You do not need to re-qualify for BADR on each earn-out payment."
-  - question: "What happens if HMRC decides my earn-out is employment income?"
-    answer: "You pay income tax at your marginal rate (40% or 45%) plus Class 1 National Insurance at 2% on each payment. The buyer also pays employer NI at 13.8%. Your net proceeds can be significantly lower than if the earn-out was treated as capital gain. You also lose the ability to use the annual CGT exemption or BADR on those payments."
-  - question: "How do I structure an earn-out to avoid income tax treatment?"
-    answer: "Structure the earn-out as deferred consideration for the shares you sold, not as a bonus, consultancy fee, or dividend. Make the earn-out conditional only on the agency's financial performance — not on your continued employment. Use a loan note or contractual right attached to the shares. Get the documentation reviewed by a tax specialist before you sign."
-  - question: "What is the two-year rule for BADR and how does it affect earn-outs?"
-    answer: "To qualify for BADR, you must have held at least 5% of the shares and been an employee or officer for two years before the date of disposal. For earn-outs structured as deferred consideration, the date of disposal is when you sell the shares — not when you receive each earn-out payment. If you incorporated your agency less than two years before completion, you will not qualify for BADR on any part of the gain, including the earn-out."
+- question: Can I get Business Asset Disposal Relief on an earn-out payment?
+  answer: Yes, if the earn-out is structured as deferred consideration for your shares and you met the BADR conditions (5% shareholding, officer or employee, two-year holding period) at the date of disposal. The relief applies to the total gain, including the deferred element, even though you receive the cash later. You do not need to re-qualify for BADR on each earn-out payment.
+- question: What happens if HMRC decides my earn-out is employment income?
+  answer: You pay income tax at your marginal rate (40% or 45%) plus Class 1 National Insurance at 2% on each payment. The buyer also pays employer NI at 13.8%. Your net proceeds can be significantly lower than if the earn-out was treated as capital gain. You also lose the ability to use the annual CGT exemption or BADR on those payments.
+- question: How do I structure an earn-out to avoid income tax treatment?
+  answer: Structure the earn-out as deferred consideration for the shares you sold, not as a bonus, consultancy fee, or dividend. Make the earn-out conditional only on the agency's financial performance — not on your continued employment. Use a loan note or contractual right attached to the shares. Get the documentation reviewed by a tax specialist before you sign.
+- question: What is the two-year rule for BADR and how does it affect earn-outs?
+  answer: To qualify for BADR, you must have held at least 5% of the shares and been an employee or officer for two years before the date of disposal. For earn-outs structured as deferred consideration, the date of disposal is when you sell the shares — not when you receive each earn-out payment. If you incorporated your agency less than two years before completion, you will not qualify for BADR on any part of the gain, including the earn-out.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Earn-out payments structured as deferred consideration for shares attract Capital Gains Tax at 14% with BADR, not income tax at 45%.
+- If HMRC recharacterises your earn-out as employment income, the total tax burden can exceed 50% including income tax and National Insurance.
+- To qualify for BADR on deferred consideration, you must have held at least 5% shares and been an employee for two years by the completion date.
+- Under TCGA 1992 s 280, you can elect to pay CGT on an instalment basis when receiving deferred consideration from an earn-out.
+- Separate share sale proceeds from post-completion bonuses in the deal documentation to avoid HMRC treating the earn-out as employment income.
 ---
-
 <h2>What Is an Earn-Out and Why Do Agencies Use Them?</h2>
 
 <p>An earn-out is a deferred payment structure in an acquisition. You sell your agency today, but part of the purchase price depends on performance over the next two or three years. The buyer pays you more if the agency hits agreed targets — usually revenue, profit, or client retention metrics.</p>

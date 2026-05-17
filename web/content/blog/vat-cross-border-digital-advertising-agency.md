@@ -1,25 +1,32 @@
 ---
-title: "How Should UK Agencies Handle VAT on Cross-Border Digital Advertising Services?"
-slug: "vat-cross-border-digital-advertising-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/vat-cross-border-digital-advertising-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "UK agency VAT on cross-border digital ads: guide"
-metaDescription: "UK agencies buying or selling digital ads across borders: place of supply rules, reverse charge, VAT registration traps. Practical examples from an ICAEW"
-altText: "UK agency founder reviewing VAT invoices for cross-border digital advertising services at a desk in a modern London office"
-image: "/blog/vat-cross-border-digital-advertising-agency.jpg"
+title: How Should UK Agencies Handle VAT on Cross-Border Digital Advertising Services?
+slug: vat-cross-border-digital-advertising-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/vat-cross-border-digital-advertising-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'UK agency VAT on cross-border digital ads: guide'
+metaDescription: 'UK agencies buying or selling digital ads across borders: place of supply rules, reverse charge, VAT registration traps. Practical examples from an ICAEW'
+altText: UK agency founder reviewing VAT invoices for cross-border digital advertising services at a desk in a modern London office
+image: /blog/vat-cross-border-digital-advertising-agency.jpg
 imageCredit:
-  photographer: "Beate Vogl"
-  photographerUrl: "https://www.pexels.com/@beate-vogl-852640107"
-  sourceUrl: "https://www.pexels.com/photo/pin-on-uk-on-europe-map-19963850/"
-  source: "Pexels"
-h1: "How Should UK Agencies Handle VAT on Cross-Border Digital Advertising Services?"
-summary: "Cross-border digital advertising creates VAT traps that catch agencies off guard. This guide covers place of supply rules, the reverse charge mechanism, and when you need to register for VAT in another country. Written for UK agency founders by an ICAEW-qualified accountant."
-schema: ""
+  photographer: Beate Vogl
+  photographerUrl: https://www.pexels.com/@beate-vogl-852640107
+  sourceUrl: https://www.pexels.com/photo/pin-on-uk-on-europe-map-19963850/
+  source: Pexels
+h1: How Should UK Agencies Handle VAT on Cross-Border Digital Advertising Services?
+summary: Cross-border digital advertising creates VAT traps that catch agencies off guard. This guide covers place of supply rules, the reverse charge mechanism, and when you need to register for VAT in another country. Written for UK agency founders by an ICAEW-qualified accountant.
+schema: ''
 faqs: []
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- For B2B cross-border digital advertising, the place of supply is the customer's location, so you do not charge UK VAT and the customer uses the reverse charge.
+- For B2C digital advertising to EU consumers, you charge UK VAT at 20% unless your total annual sales exceed £10,000, triggering EU VAT registration or the One Stop Shop.
+- If your agency sells digital advertising to a US business with no UK establishment, the supply is outside the scope of UK VAT and recorded as exempt with input VAT recovery.
+- The reverse charge mechanism requires the business customer to account for VAT on their own return, shifting liability from the supplier to the buyer.
+- Common VAT traps include failing to register for EU VAT when B2C digital services exceed the £10,000 threshold and incorrectly charging UK VAT on B2B cross-border supplies.
 ---
-
 <p>If your agency buys or sells digital advertising services across borders, you have a VAT problem you might not know about. It is not complicated once you understand the rules. But getting it wrong means underpaid VAT, HMRC penalties, and a messy correction later.</p>
 
 <p>This article covers the place of supply rules for digital advertising services, the reverse charge mechanism, when you need to register for VAT overseas, and the common traps UK agencies fall into. It is written for agency founders, not VAT specialists. By the end you will know what questions to ask your accountant.</p>

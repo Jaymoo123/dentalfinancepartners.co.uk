@@ -1,33 +1,40 @@
 ---
-title: "What MTD-Compatible Software Integrates with Xero for Agency-Specific Reporting?"
-slug: "mtd-software-xero-agency-reporting"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-software-xero-agency-reporting"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Making Tax Digital"
-metaTitle: "MTD Xero agency reporting: 6 top software picks"
-metaDescription: "MTD-compatible software that integrates with Xero for agency reporting. Dext, Float, Spotlight, and more. Practical picks for UK agency founders."
-altText: "Agency founder reviewing MTD-compatible software integrations on a laptop in a modern UK office"
-image: "/blog/mtd-software-xero-agency-reporting.jpg"
+title: What MTD-Compatible Software Integrates with Xero for Agency-Specific Reporting?
+slug: mtd-software-xero-agency-reporting
+canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-software-xero-agency-reporting
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Making Tax Digital
+metaTitle: 'MTD Xero agency reporting: 6 top software picks'
+metaDescription: MTD-compatible software that integrates with Xero for agency reporting. Dext, Float, Spotlight, and more. Practical picks for UK agency founders.
+altText: Agency founder reviewing MTD-compatible software integrations on a laptop in a modern UK office
+image: /blog/mtd-software-xero-agency-reporting.jpg
 imageCredit:
-  photographer: "Mikhail Nilov"
-  photographerUrl: "https://www.pexels.com/@mikhail-nilov"
-  sourceUrl: "https://www.pexels.com/photo/people-having-a-meeting-8284734/"
-  source: "Pexels"
-h1: "What MTD-Compatible Software Integrates with Xero for Agency-Specific Reporting?"
-summary: "Making Tax Digital for Income Tax is coming in April 2026. If you run an agency on Xero, you need compatible software that handles agency-specific reporting. Here are the integrations that actually work."
-schema: ""
+  photographer: Mikhail Nilov
+  photographerUrl: https://www.pexels.com/@mikhail-nilov
+  sourceUrl: https://www.pexels.com/photo/people-having-a-meeting-8284734/
+  source: Pexels
+h1: What MTD-Compatible Software Integrates with Xero for Agency-Specific Reporting?
+summary: Making Tax Digital for Income Tax is coming in April 2026. If you run an agency on Xero, you need compatible software that handles agency-specific reporting. Here are the integrations that actually work.
+schema: ''
 faqs:
-  - question: "Do I need separate software for MTD if I already use Xero?"
-    answer: "Yes, unless you use Xero's own MTD for ITSA module. Xero handles the digital records, but you need either Xero's module or a bridging tool like Taxfiler to submit quarterly updates to HMRC. Check your Xero subscription to see if the MTD module is included."
-  - question: "Can I use the same software for MTD and agency reporting?"
-    answer: "Not with one tool alone. Xero handles compliance submissions. For agency-specific reporting, add Spotlight Reporting or Fathom. They pull data from Xero and give you metrics like gross margin by client, utilisation, and project profitability. The two tools work together."
-  - question: "What happens if I do not prepare for MTD before April 2026?"
-    answer: "If your qualifying income is over £50,000 and you do not have MTD-compatible software in place by April 2026, you may face late filing penalties. HMRC has confirmed it will apply penalties from the start, unlike the soft launch for MTD for VAT. Start preparing now."
-  - question: "Does MTD for ITSA apply to limited company directors?"
-    answer: "Not directly. MTD for ITSA applies to sole traders and partnerships, not limited companies. If you are a director taking a salary and dividends from your agency, you file a self assessment return for your personal tax. That return will be subject to MTD from April 2026 if your self-employed income exceeds £50,000. If your only income is from your agency, you may not be affected. Check with your accountant."
+- question: Do I need separate software for MTD if I already use Xero?
+  answer: Yes, unless you use Xero's own MTD for ITSA module. Xero handles the digital records, but you need either Xero's module or a bridging tool like Taxfiler to submit quarterly updates to HMRC. Check your Xero subscription to see if the MTD module is included.
+- question: Can I use the same software for MTD and agency reporting?
+  answer: Not with one tool alone. Xero handles compliance submissions. For agency-specific reporting, add Spotlight Reporting or Fathom. They pull data from Xero and give you metrics like gross margin by client, utilisation, and project profitability. The two tools work together.
+- question: What happens if I do not prepare for MTD before April 2026?
+  answer: If your qualifying income is over £50,000 and you do not have MTD-compatible software in place by April 2026, you may face late filing penalties. HMRC has confirmed it will apply penalties from the start, unlike the soft launch for MTD for VAT. Start preparing now.
+- question: Does MTD for ITSA apply to limited company directors?
+  answer: Not directly. MTD for ITSA applies to sole traders and partnerships, not limited companies. If you are a director taking a salary and dividends from your agency, you file a self assessment return for your personal tax. That return will be subject to MTD from April 2026 if your self-employed income exceeds £50,000. If your only income is from your agency, you may not be affected. Check with your accountant.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- From April 2026, sole traders and landlords with income over £50,000 must submit quarterly MTD updates to HMRC using compatible software.
+- Xero alone does not satisfy MTD for Income Tax requirements; you need bridging software or an add-on that submits quarterly updates.
+- Dext integrates with Xero, handles digital record-keeping for MTD, and is ideal for agencies with high expense volumes.
+- Float pulls Xero data for cash flow forecasting and automatically updates forecasts after each quarterly MTD submission.
+- Agency-specific reporting tools like Dext and Float provide metrics such as utilisation and gross margin by client, not generic dashboards.
 ---
-
 <p>Making Tax Digital for Income Tax Self Assessment (MTD for ITSA) becomes mandatory from April 2026 for sole traders and landlords with qualifying income over £50,000. From April 2027, that threshold drops to £30,000. If you run an agency and file a self assessment return, you will need MTD-compatible software that integrates with Xero for agency-specific reporting.</p>
 
 <p>Xero is already the most common accounting platform among the agencies we work with. It handles the core bookkeeping well. But Xero alone will not satisfy MTD requirements. You need bridging software or a compatible add-on that submits quarterly updates to HMRC.</p>

@@ -1,25 +1,32 @@
 ---
-title: "Sole Trader vs Limited Company for Agency Founders: The Full Breakdown"
-slug: "sole-trader-vs-limited-company-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/sole-trader-vs-limited-company-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "Sole Trader vs Limited Company Agency: Which Structure Wins?"
-metaDescription: "Sole trader vs limited company agency: tax, liability, and growth compared. Real numbers for UK agency founders. Make the right call before you"
-altText: "ICAEW qualified accountant reviewing paperwork with a UK agency founder in a modern office setting"
-image: "/blog/sole-trader-vs-limited-company-agency.jpg"
+title: 'Sole Trader vs Limited Company for Agency Founders: The Full Breakdown'
+slug: sole-trader-vs-limited-company-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/sole-trader-vs-limited-company-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Incorporation and Structure
+metaTitle: 'Sole Trader vs Limited Company Agency: Which Structure Wins?'
+metaDescription: 'Sole trader vs limited company agency: tax, liability, and growth compared. Real numbers for UK agency founders. Make the right call before you'
+altText: ICAEW qualified accountant reviewing paperwork with a UK agency founder in a modern office setting
+image: /blog/sole-trader-vs-limited-company-agency.jpg
 imageCredit:
-  photographer: "Tima Miroshnichenko"
-  photographerUrl: "https://www.pexels.com/@tima-miroshnichenko"
-  sourceUrl: "https://www.pexels.com/photo/a-man-in-black-suit-sitting-near-the-wooden-table-while-typing-on-laptop-7567312/"
-  source: "Pexels"
-h1: "Sole Trader vs Limited Company for Agency Founders: The Full Breakdown"
-summary: "Should you run your agency as a sole trader or a limited company? We compare tax treatment, personal liability, IR35 exposure, and exit options using real agency numbers. If you're billing over £40k profit, the answer matters more than you think."
-schema: ""
+  photographer: Tima Miroshnichenko
+  photographerUrl: https://www.pexels.com/@tima-miroshnichenko
+  sourceUrl: https://www.pexels.com/photo/a-man-in-black-suit-sitting-near-the-wooden-table-while-typing-on-laptop-7567312/
+  source: Pexels
+h1: 'Sole Trader vs Limited Company for Agency Founders: The Full Breakdown'
+summary: Should you run your agency as a sole trader or a limited company? We compare tax treatment, personal liability, IR35 exposure, and exit options using real agency numbers. If you're billing over £40k profit, the answer matters more than you think.
+schema: ''
 faqs: []
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- For agency profits above £60,000, a limited company saves significant tax compared to sole trader status, with savings of £5,600 at £100,000 profit and £23,900 at £200,000 profit in 2025/26.
+- Sole traders pay income tax and Class 4 National Insurance on profits, while limited companies pay 19% corporation tax on profits up to £50,000, then extract income via salary and dividends.
+- The tax-efficient extraction method for limited company agency founders is a £12,570 salary and dividends, using the £500 dividend allowance and basic rate dividend tax of 8.75%.
+- As a sole trader, you are personally liable for business debts and lawsuits, whereas a limited company provides a separate legal entity that protects your personal assets.
+- The effective tax rate at £60,000 profit is 25% for a sole trader and 24.2% for a limited company, but the gap widens sharply as profits increase due to lower corporation tax rates.
 ---
-
 <p>If you are a UK agency founder, the sole trader vs limited company agency decision is one of the first major financial calls you will make. Get it right, and you save thousands in tax and sleep easier about liability. Get it wrong, and you are either paying too much HMRC or carrying personal risk you did not need to.</p>
 
 <p>This is not a theoretical comparison. It is a practical breakdown using real agency numbers, real tax rates, and real scenarios. By the end, you will know which structure fits your agency's size, revenue, and ambitions.</p>

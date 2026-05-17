@@ -1,33 +1,40 @@
 ---
-title: "What Is the UAE Corporate Tax Registration Threshold for a Small Agency Founder?"
-slug: "uae-corporate-tax-registration-threshold-small-agency-founder"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-registration-threshold-small-agency-founder"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UAE corporate tax registration threshold for small agency"
-metaDescription: "UAE corporate tax registration threshold: AED 375,000. What it means for your agency, when you must register, and common mistakes founders make."
-altText: "UAE corporate tax registration threshold document on desk in Dubai agency office"
-image: "/blog/uae-corporate-tax-registration-threshold-small-agency-founder.jpg"
+title: What Is the UAE Corporate Tax Registration Threshold for a Small Agency Founder?
+slug: uae-corporate-tax-registration-threshold-small-agency-founder
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-registration-threshold-small-agency-founder
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: UAE corporate tax registration threshold for small agency
+metaDescription: 'UAE corporate tax registration threshold: AED 375,000. What it means for your agency, when you must register, and common mistakes founders make.'
+altText: UAE corporate tax registration threshold document on desk in Dubai agency office
+image: /blog/uae-corporate-tax-registration-threshold-small-agency-founder.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-table-7821463/"
-  source: "Pexels"
-h1: "What Is the UAE Corporate Tax Registration Threshold for a Small Agency Founder?"
-summary: "If your UAE agency's taxable profit exceeds AED 375,000, you must register for corporate tax. But the rules around turnover, free zone status, and filing timelines trip up many founders. Here is what you need to know before your first return is due."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-table-7821463/
+  source: Pexels
+h1: What Is the UAE Corporate Tax Registration Threshold for a Small Agency Founder?
+summary: If your UAE agency's taxable profit exceeds AED 375,000, you must register for corporate tax. But the rules around turnover, free zone status, and filing timelines trip up many founders. Here is what you need to know before your first return is due.
+schema: ''
 faqs:
-  - question: "What is the UAE corporate tax registration threshold for a small agency?"
-    answer: "The UAE corporate tax registration threshold is AED 375,000 of taxable profit. If your agency's profit is below this, you pay 0% tax. But you must still register and file a return if you are a taxable person. For the first two tax periods, businesses with turnover below AED 3 million are exempt from registration entirely."
-  - question: "Do I need to register for UAE corporate tax if my turnover is below AED 375,000?"
-    answer: "Yes, if your profit exceeds AED 375,000. But the registration threshold is based on being a taxable person, not on turnover alone. If your turnover is below AED 3 million in your first two tax periods, you are exempt from registration for those periods. After that, registration is required regardless of profit level."
-  - question: "What happens if I do not register for UAE corporate tax on time?"
-    answer: "You face penalties. AED 10,000 for the first late registration, AED 20,000 for subsequent late registrations. Late filing penalties add AED 500 per month for the first 12 months, then AED 1,000 per month. These apply even if no tax is due."
-  - question: "Can a free zone agency in Dubai pay 0% corporate tax?"
-    answer: "Yes, if it meets the conditions: adequate substance in the UAE, no more than 5% of revenue from mainland UAE customers (or AED 5 million, whichever is lower), and compliance with transfer pricing rules. You must still register and file a return to claim the 0% rate."
+- question: What is the UAE corporate tax registration threshold for a small agency?
+  answer: The UAE corporate tax registration threshold is AED 375,000 of taxable profit. If your agency's profit is below this, you pay 0% tax. But you must still register and file a return if you are a taxable person. For the first two tax periods, businesses with turnover below AED 3 million are exempt from registration entirely.
+- question: Do I need to register for UAE corporate tax if my turnover is below AED 375,000?
+  answer: Yes, if your profit exceeds AED 375,000. But the registration threshold is based on being a taxable person, not on turnover alone. If your turnover is below AED 3 million in your first two tax periods, you are exempt from registration for those periods. After that, registration is required regardless of profit level.
+- question: What happens if I do not register for UAE corporate tax on time?
+  answer: You face penalties. AED 10,000 for the first late registration, AED 20,000 for subsequent late registrations. Late filing penalties add AED 500 per month for the first 12 months, then AED 1,000 per month. These apply even if no tax is due.
+- question: Can a free zone agency in Dubai pay 0% corporate tax?
+  answer: 'Yes, if it meets the conditions: adequate substance in the UAE, no more than 5% of revenue from mainland UAE customers (or AED 5 million, whichever is lower), and compliance with transfer pricing rules. You must still register and file a return to claim the 0% rate.'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- The UAE corporate tax registration threshold is AED 375,000 of taxable profit, not turnover, and registration is required even if no tax is due.
+- Businesses with turnover below AED 3 million are exempt from registration for the first two tax periods only.
+- From the third tax period onwards, registration is mandatory if taxable profit exceeds AED 375,000, with tax payable at 9% on the excess.
+- Taxable profit is accounting profit adjusted for disallowable expenses, interest limits, and exempt income, but adjustments are minimal for most small agencies.
+- Free zone entities may qualify for a 0% corporate tax rate, but must meet specific conditions and cannot opt into the standard 9% regime.
 ---
-
 <h2>Where the AED 375,000 Threshold Comes From</h2>
 
 <p>The UAE introduced federal corporate tax on business profits from financial years starting on or after 1 June 2023. The headline rate is 9% on taxable profit above AED 375,000. Below that, the rate is 0%.</p>

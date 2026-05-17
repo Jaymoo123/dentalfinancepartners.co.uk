@@ -1,33 +1,40 @@
 ---
-title: "UAE VAT Registration Threshold: The Supply of Services Trap That Catches Agency Founders with One Big Client"
-slug: "uae-vat-registration-threshold-single-client-trap"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-vat-registration-threshold-single-client-trap"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UAE VAT Registration Threshold: The Single Client Trap"
-metaDescription: "One big retainer client can push you over the AED 375,000 UAE VAT threshold with no grace period. Here's how to spot the trap and register before you owe"
-altText: "UK agency founder reviewing a UAE retainer contract with a calculator and VAT registration forms on a desk in a Dubai office setting"
-image: "/blog/uae-vat-registration-threshold-single-client-trap.jpg"
+title: 'UAE VAT Registration Threshold: The Supply of Services Trap That Catches Agency Founders with One Big Client'
+slug: uae-vat-registration-threshold-single-client-trap
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-vat-registration-threshold-single-client-trap
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UAE VAT Registration Threshold: The Single Client Trap'
+metaDescription: One big retainer client can push you over the AED 375,000 UAE VAT threshold with no grace period. Here's how to spot the trap and register before you owe
+altText: UK agency founder reviewing a UAE retainer contract with a calculator and VAT registration forms on a desk in a Dubai office setting
+image: /blog/uae-vat-registration-threshold-single-client-trap.jpg
 imageCredit:
-  photographer: "Leeloo The First"
-  photographerUrl: "https://www.pexels.com/@leeloothefirst"
-  sourceUrl: "https://www.pexels.com/photo/ballpen-on-a-blank-document-beside-an-eyeglasses-6929017/"
-  source: "Pexels"
-h1: "UAE VAT Registration Threshold: The Supply of Services Trap That Catches Agency Founders with One Big Client"
-summary: "Most agency founders know the AED 375,000 UAE VAT registration threshold exists. What catches them out is the supply of services rule — one large retainer contract can push you over the limit before you've invoiced a single dirham. This post explains the trap, the timing rules, and what to do if you're about to land a big client."
-schema: ""
+  photographer: Leeloo The First
+  photographerUrl: https://www.pexels.com/@leeloothefirst
+  sourceUrl: https://www.pexels.com/photo/ballpen-on-a-blank-document-beside-an-eyeglasses-6929017/
+  source: Pexels
+h1: 'UAE VAT Registration Threshold: The Supply of Services Trap That Catches Agency Founders with One Big Client'
+summary: Most agency founders know the AED 375,000 UAE VAT registration threshold exists. What catches them out is the supply of services rule — one large retainer contract can push you over the limit before you've invoiced a single dirham. This post explains the trap, the timing rules, and what to do if you're about to land a big client.
+schema: ''
 faqs:
-  - question: "What is the UAE VAT registration threshold for agency services in 2025?"
-    answer: "The mandatory registration threshold is AED 375,000 of taxable supplies in the previous 12 months or expected in the next 30 days. There is also a voluntary registration threshold of AED 187,500. Agency services (marketing, PR, web design, recruitment) are standard-rated at 5% in most cases."
-  - question: "Do I need to register for UAE VAT if I have one retainer client worth AED 400,000?"
-    answer: "Yes. A single retainer contract worth AED 400,000 over its term creates an intention to make taxable supplies above the AED 375,000 threshold. You must register before you issue your first invoice. Waiting until you have actually invoiced AED 375,000 means you are already late."
-  - question: "What happens if I register for UAE VAT late?"
-    answer: "The penalty for late registration is AED 20,000. You may also face penalties for late filing and late payment if you have issued invoices without VAT that should have included it. Your clients cannot recover input VAT on incorrect invoices, which can damage commercial relationships."
-  - question: "Can I avoid UAE VAT registration by splitting a large contract into smaller invoices?"
-    answer: "No. The FTA looks at the substance of the supply, not how you invoice it. A 12-month retainer worth AED 480,000 is a single continuous supply of services. Splitting it into monthly invoices of AED 40,000 does not change the total value. You must register if the total expected supplies exceed AED 375,000."
+- question: What is the UAE VAT registration threshold for agency services in 2025?
+  answer: The mandatory registration threshold is AED 375,000 of taxable supplies in the previous 12 months or expected in the next 30 days. There is also a voluntary registration threshold of AED 187,500. Agency services (marketing, PR, web design, recruitment) are standard-rated at 5% in most cases.
+- question: Do I need to register for UAE VAT if I have one retainer client worth AED 400,000?
+  answer: Yes. A single retainer contract worth AED 400,000 over its term creates an intention to make taxable supplies above the AED 375,000 threshold. You must register before you issue your first invoice. Waiting until you have actually invoiced AED 375,000 means you are already late.
+- question: What happens if I register for UAE VAT late?
+  answer: The penalty for late registration is AED 20,000. You may also face penalties for late filing and late payment if you have issued invoices without VAT that should have included it. Your clients cannot recover input VAT on incorrect invoices, which can damage commercial relationships.
+- question: Can I avoid UAE VAT registration by splitting a large contract into smaller invoices?
+  answer: No. The FTA looks at the substance of the supply, not how you invoice it. A 12-month retainer worth AED 480,000 is a single continuous supply of services. Splitting it into monthly invoices of AED 40,000 does not change the total value. You must register if the total expected supplies exceed AED 375,000.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- The UAE VAT mandatory registration threshold is AED 375,000 of taxable supplies in the past 12 months or expected in the next 30 days.
+- Signing a 12-month retainer contract over AED 375,000 triggers registration before you issue your first invoice.
+- The FTA treats the entire contract value of a continuous service as relevant to your registration obligation.
+- Late registration for UAE VAT carries a penalty starting at AED 20,000.
+- If you intend to make taxable supplies exceeding AED 375,000, you are registrable from the date of that intention.
 ---
-
 <p>The UAE VAT registration threshold is AED 375,000 of taxable supplies in the previous 12 months or expected in the next 30 days. That sounds straightforward. But for agency founders, the "supply of services" rules create a specific trap that catches people who land one large retainer client.</p>
 
 <p>Here is the problem. You sign a 12-month retainer for AED 40,000 per month. Your total contract value is AED 480,000. You have not invoiced a single dirham yet. Under UAE VAT law, you may already be required to register.</p>

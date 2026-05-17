@@ -1,33 +1,40 @@
 ---
-title: "What Are the Costs and Timelines for Incorporating an Agency in 2025/26?"
-slug: "cost-incorporate-agency-2025-26"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/cost-incorporate-agency-2025-26"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "Agency incorporation costs 2025/26: fees & taxes"
-metaDescription: "The cost to incorporate an agency in 2025/26 ranges from £50 to £2,000+. Here are the exact fees, HMRC timelines, and tax implications you need to budget"
-altText: "UK agency founder reviewing incorporation costs on a laptop in a modern office with paperwork and calculator"
-image: "/blog/cost-incorporate-agency-2025-26.jpg"
+title: What Are the Costs and Timelines for Incorporating an Agency in 2025/26?
+slug: cost-incorporate-agency-2025-26
+canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/cost-incorporate-agency-2025-26
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Incorporation and Structure
+metaTitle: 'Agency incorporation costs 2025/26: fees & taxes'
+metaDescription: The cost to incorporate an agency in 2025/26 ranges from £50 to £2,000+. Here are the exact fees, HMRC timelines, and tax implications you need to budget
+altText: UK agency founder reviewing incorporation costs on a laptop in a modern office with paperwork and calculator
+image: /blog/cost-incorporate-agency-2025-26.jpg
 imageCredit:
-  photographer: "Abdulkadir Emiroğlu"
-  photographerUrl: "https://www.pexels.com/@kadiremir"
-  sourceUrl: "https://www.pexels.com/photo/video-editing-software-interface-close-up-29505140/"
-  source: "Pexels"
-h1: "What Are the Costs and Timelines for Incorporating an Agency in 2025/26?"
-summary: "Thinking of incorporating your agency in 2025/26? Here are the real costs — from Companies House fees and accountant charges to corporation tax implications and the timeline from decision to trading. We cover everything a UK agency founder needs to budget for before making the switch."
-schema: ""
+  photographer: Abdulkadir Emiroğlu
+  photographerUrl: https://www.pexels.com/@kadiremir
+  sourceUrl: https://www.pexels.com/photo/video-editing-software-interface-close-up-29505140/
+  source: Pexels
+h1: What Are the Costs and Timelines for Incorporating an Agency in 2025/26?
+summary: Thinking of incorporating your agency in 2025/26? Here are the real costs — from Companies House fees and accountant charges to corporation tax implications and the timeline from decision to trading. We cover everything a UK agency founder needs to budget for before making the switch.
+schema: ''
 faqs:
-  - question: "What is the total cost to incorporate an agency in 2025/26?"
-    answer: "The direct cost is £50 for Companies House registration. Including accountant setup fees, registered address, and software, expect to pay £500 to £2,000 in the first year. Ongoing annual costs are roughly £1,500 to £3,000 more than running as a sole trader."
-  - question: "How long does it take to incorporate an agency?"
-    answer: "Four to six weeks from decision to trading as a limited company. This includes incorporation filing (24-48 hours), bank account setup (1-2 weeks), and HMRC registrations. You can compress this to two weeks using premium services and digital-first banks."
-  - question: "Do I need an accountant to incorporate my agency?"
-    answer: "You can file with Companies House yourself for £50, but an accountant ensures you register for corporation tax correctly, claim incorporation relief on asset transfers, and set up payroll and VAT from day one. The setup fee of £300 to £750 is worth it to avoid mistakes that cost more later."
-  - question: "Is incorporating worth it for a small agency?"
-    answer: "Generally, yes if your profit is above £50,000 per year. Below that, the tax savings from dividends versus self-employed income are usually outweighed by the extra compliance costs. Above £60,000, the savings are typically £5,000 to £15,000 per year depending on your profit level."
+- question: What is the total cost to incorporate an agency in 2025/26?
+  answer: The direct cost is £50 for Companies House registration. Including accountant setup fees, registered address, and software, expect to pay £500 to £2,000 in the first year. Ongoing annual costs are roughly £1,500 to £3,000 more than running as a sole trader.
+- question: How long does it take to incorporate an agency?
+  answer: Four to six weeks from decision to trading as a limited company. This includes incorporation filing (24-48 hours), bank account setup (1-2 weeks), and HMRC registrations. You can compress this to two weeks using premium services and digital-first banks.
+- question: Do I need an accountant to incorporate my agency?
+  answer: You can file with Companies House yourself for £50, but an accountant ensures you register for corporation tax correctly, claim incorporation relief on asset transfers, and set up payroll and VAT from day one. The setup fee of £300 to £750 is worth it to avoid mistakes that cost more later.
+- question: Is incorporating worth it for a small agency?
+  answer: Generally, yes if your profit is above £50,000 per year. Below that, the tax savings from dividends versus self-employed income are usually outweighed by the extra compliance costs. Above £60,000, the savings are typically £5,000 to £15,000 per year depending on your profit level.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Incorporating an agency online via Companies House costs £50 for standard 24–48 hour service or £100 for same-day processing.
+- Accountant setup fees for incorporation range from £300 to £750, covering registration, payroll, VAT, and software setup.
+- Ongoing accountancy fees for a limited company are typically £250 to £500 per month, compared to £100–£200 for a sole trader.
+- A registered office address service costs £30 to £100 per year if you want to keep your home address off public record.
+- The total timeline from decision to trading is usually 1–2 weeks, including Companies House registration and HMRC notifications.
 ---
-
 <p>If you are running a marketing agency, a digital agency, or a creative agency as a sole trader or partnership, you have probably asked yourself whether incorporation makes sense. The question usually comes up around the £50,000 to £80,000 profit mark, when the tax savings on dividends start to outweigh the extra admin.</p>
 
 <p>But the <strong>cost to incorporate an agency 2025/26</strong> is not just the Companies House filing fee. There are professional fees, tax implications on transfer, and ongoing compliance costs that catch founders out. This article breaks down every pound you will spend and every week you will wait, so you can decide whether incorporation is worth it now.</p>

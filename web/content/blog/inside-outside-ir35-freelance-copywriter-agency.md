@@ -1,33 +1,40 @@
 ---
-title: "Inside or Outside IR35 for a Freelance Copywriter: How to Decide"
-slug: "inside-outside-ir35-freelance-copywriter-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/inside-outside-ir35-freelance-copywriter-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Contractors and IR35"
-metaTitle: "Inside or Outside IR35 for a Freelance Copywriter: Agency"
-metaDescription: "How to determine if your freelance copywriter is inside or outside IR35. Practical tests, contract clauses, and working practices that HMRC will check."
-altText: "Agency founder reviewing a freelance copywriter's contract with an IR35 status determination statement on the desk"
-image: "/blog/inside-outside-ir35-freelance-copywriter-agency.jpg"
+title: 'Inside or Outside IR35 for a Freelance Copywriter: How to Decide'
+slug: inside-outside-ir35-freelance-copywriter-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/inside-outside-ir35-freelance-copywriter-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Contractors and IR35
+metaTitle: 'Inside or Outside IR35 for a Freelance Copywriter: Agency'
+metaDescription: How to determine if your freelance copywriter is inside or outside IR35. Practical tests, contract clauses, and working practices that HMRC will check.
+altText: Agency founder reviewing a freelance copywriter's contract with an IR35 status determination statement on the desk
+image: /blog/inside-outside-ir35-freelance-copywriter-agency.jpg
 imageCredit:
-  photographer: "Tim Mossholder"
-  photographerUrl: "https://www.pexels.com/@timmossholder"
-  sourceUrl: "https://www.pexels.com/photo/urban-sign-collage-in-salt-lake-city-34968179/"
-  source: "Pexels"
-h1: "Inside or Outside IR35 for a Freelance Copywriter: How to Decide"
-summary: "Determining whether a freelance copywriter is inside or outside IR35 comes down to three tests: substitution, control, and mutuality of obligation. Here is how to apply them to your agency's specific engagement."
-schema: ""
+  photographer: Tim Mossholder
+  photographerUrl: https://www.pexels.com/@timmossholder
+  sourceUrl: https://www.pexels.com/photo/urban-sign-collage-in-salt-lake-city-34968179/
+  source: Pexels
+h1: 'Inside or Outside IR35 for a Freelance Copywriter: How to Decide'
+summary: 'Determining whether a freelance copywriter is inside or outside IR35 comes down to three tests: substitution, control, and mutuality of obligation. Here is how to apply them to your agency''s specific engagement.'
+schema: ''
 faqs:
-  - question: "Can a copywriter on a monthly retainer ever be outside IR35?"
-    answer: "It is difficult but possible. The retainer must be structured as a series of separate projects, each with its own scope and fee. The copywriter must have the right to refuse any month's work without penalty. They must also have genuine substitution rights and work for other clients. Most retainers fail these tests and are treated as inside IR35."
-  - question: "What happens if HMRC decides my copywriter was inside IR35 but I treated them as outside?"
-    answer: "HMRC will issue a determination that the copywriter was a deemed employee. You will owe the income tax and employee NI that should have been deducted from the copywriter's invoices, plus employer NI at 13.8%, plus interest. If HMRC considers the error careless or deliberate, penalties of 30-100% of the tax due can apply."
-  - question: "Do I need to issue an SDS for every copywriter I hire, even for a single small project?"
-    answer: "Yes, if you are a medium or large agency. An SDS is required before the engagement starts for every contractor, regardless of the project size. For a small project, the SDS can be brief, but it must state the conclusion and the reasons. Failing to issue an SDS is a separate compliance failure even if the status determination is correct."
-  - question: "Can I use the CEST tool to determine IR35 status for my copywriter?"
-    answer: "You can, but we do not recommend relying on it as your sole basis. CEST is known to be unreliable for complex or creative roles. It often gives an \"uncertain\" result for copywriter engagements. If it gives a clear result, use it as one data point, then apply professional judgment and document your reasoning in the SDS."
+- question: Can a copywriter on a monthly retainer ever be outside IR35?
+  answer: It is difficult but possible. The retainer must be structured as a series of separate projects, each with its own scope and fee. The copywriter must have the right to refuse any month's work without penalty. They must also have genuine substitution rights and work for other clients. Most retainers fail these tests and are treated as inside IR35.
+- question: What happens if HMRC decides my copywriter was inside IR35 but I treated them as outside?
+  answer: HMRC will issue a determination that the copywriter was a deemed employee. You will owe the income tax and employee NI that should have been deducted from the copywriter's invoices, plus employer NI at 13.8%, plus interest. If HMRC considers the error careless or deliberate, penalties of 30-100% of the tax due can apply.
+- question: Do I need to issue an SDS for every copywriter I hire, even for a single small project?
+  answer: Yes, if you are a medium or large agency. An SDS is required before the engagement starts for every contractor, regardless of the project size. For a small project, the SDS can be brief, but it must state the conclusion and the reasons. Failing to issue an SDS is a separate compliance failure even if the status determination is correct.
+- question: Can I use the CEST tool to determine IR35 status for my copywriter?
+  answer: You can, but we do not recommend relying on it as your sole basis. CEST is known to be unreliable for complex or creative roles. It often gives an "uncertain" result for copywriter engagements. If it gives a clear result, use it as one data point, then apply professional judgment and document your reasoning in the SDS.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- For a freelance copywriter to be outside IR35, the contract must include a genuine and practical substitution clause that the agency would accept in reality.
+- 'Control is the biggest IR35 factor for copywriters: if you dictate hours, location, or specific wording, the engagement is likely inside IR35.'
+- A substitution clause on paper is not enough; HMRC will check whether the copywriter could realistically send a replacement in practice.
+- Since April 2021, medium and large agencies must issue a Status Determination Statement before engaging a copywriter, or risk HMRC penalties.
+- If your agency is small (under £10.2m turnover, under £5.1m balance sheet, under 50 employees), the copywriter's limited company bears IR35 responsibility, but HMRC can still reclassify the engagement.
 ---
-
 <p>If you run an agency that regularly hires freelance copywriters, you need to know where you stand on IR35. Get it wrong, and HMRC can come after you for unpaid tax, National Insurance, and interest on the copywriter's deemed employment income. That bill can run into five figures for a single engagement.</p>
 
 <p>The challenge is that copywriting sits in a grey area. A copywriter can be clearly in business on their own account, or they can effectively be an employee with a different payment structure. The difference is not about what job title they have. It is about how you engage them, what control you exercise, and whether the reality matches the contract.</p>

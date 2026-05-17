@@ -1,33 +1,40 @@
 ---
-title: "What Questions Should You Ask Before You Choose an Agency Accountant?"
-slug: "questions-to-ask-agency-accountant"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/questions-to-ask-agency-accountant"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Accountant Services"
-metaTitle: "Agency accountant questions to ask before choosing"
-metaDescription: "12 specific questions to ask when you choose an agency accountant. Know what to look for, what to avoid, and how to spot real agency expertise."
-altText: "Agency founder sitting in a Manchester Northern Quarter co-working space reviewing a contract with an accountant"
-image: "/blog/questions-to-ask-agency-accountant.jpg"
+title: What Questions Should You Ask Before You Choose an Agency Accountant?
+slug: questions-to-ask-agency-accountant
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/questions-to-ask-agency-accountant
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Accountant Services
+metaTitle: Agency accountant questions to ask before choosing
+metaDescription: 12 specific questions to ask when you choose an agency accountant. Know what to look for, what to avoid, and how to spot real agency expertise.
+altText: Agency founder sitting in a Manchester Northern Quarter co-working space reviewing a contract with an accountant
+image: /blog/questions-to-ask-agency-accountant.jpg
 imageCredit:
-  photographer: "Ann H"
-  photographerUrl: "https://www.pexels.com/@ann-h-45017"
-  sourceUrl: "https://www.pexels.com/photo/wooden-letters-and-wooden-punctuation-marks-on-gray-surface-11082254/"
-  source: "Pexels"
-h1: "What Questions Should You Ask Before You Choose an Agency Accountant?"
-summary: "Hiring the wrong accountant costs agency founders time, money, and stress. Here are the exact questions to ask before you choose an agency accountant — covering IR35, margin structures, exit planning, and real agency finance knowledge."
-schema: ""
+  photographer: Ann H
+  photographerUrl: https://www.pexels.com/@ann-h-45017
+  sourceUrl: https://www.pexels.com/photo/wooden-letters-and-wooden-punctuation-marks-on-gray-surface-11082254/
+  source: Pexels
+h1: What Questions Should You Ask Before You Choose an Agency Accountant?
+summary: Hiring the wrong accountant costs agency founders time, money, and stress. Here are the exact questions to ask before you choose an agency accountant — covering IR35, margin structures, exit planning, and real agency finance knowledge.
+schema: ''
 faqs:
-  - question: "What is the most important question to ask a potential agency accountant?"
-    answer: "The most important question is \"How many agency clients do you currently work with?\" This is your first filter. If they cannot name at least 10-15 agency clients and describe the types of agencies they work with, they likely lack the specific knowledge your business needs. Everything else flows from that foundation."
-  - question: "How much should an agency accountant cost per month?"
-    answer: "For a growing agency with £300k-£800k turnover, expect £400-£700 per month. For larger agencies, £800-£1,500 per month is typical. This should include monthly management accounts, VAT returns, payroll, year-end accounts, corporation tax return, and personal tax return. If someone quotes £150 per month, you are getting compliance only, not strategic advice."
-  - question: "Should I hire a general accountant or one that specialises in agencies?"
-    answer: "You should hire an accountant who specialises in agencies. General practice accountants work across dozens of industries and cannot develop the deep knowledge required for agency-specific issues like IR35, retainer vs project revenue modelling, utilisation rates, and exit planning for service businesses. The cost difference is usually small, but the value difference is enormous."
-  - question: "What red flags should I look for when interviewing an agency accountant?"
-    answer: "Key red flags include: they cannot explain IR35 rules or say \"we leave that to the contractor\"; they only do year-end compliance and never review management accounts; they cannot recommend specific accounting software; they charge a flat low fee with no clear scope; they cannot provide references from agency clients; or they assign your day-to-day work to a junior who has never worked with an agency. Any of these should make you walk away."
+- question: What is the most important question to ask a potential agency accountant?
+  answer: The most important question is "How many agency clients do you currently work with?" This is your first filter. If they cannot name at least 10-15 agency clients and describe the types of agencies they work with, they likely lack the specific knowledge your business needs. Everything else flows from that foundation.
+- question: How much should an agency accountant cost per month?
+  answer: For a growing agency with £300k-£800k turnover, expect £400-£700 per month. For larger agencies, £800-£1,500 per month is typical. This should include monthly management accounts, VAT returns, payroll, year-end accounts, corporation tax return, and personal tax return. If someone quotes £150 per month, you are getting compliance only, not strategic advice.
+- question: Should I hire a general accountant or one that specialises in agencies?
+  answer: You should hire an accountant who specialises in agencies. General practice accountants work across dozens of industries and cannot develop the deep knowledge required for agency-specific issues like IR35, retainer vs project revenue modelling, utilisation rates, and exit planning for service businesses. The cost difference is usually small, but the value difference is enormous.
+- question: What red flags should I look for when interviewing an agency accountant?
+  answer: 'Key red flags include: they cannot explain IR35 rules or say "we leave that to the contractor"; they only do year-end compliance and never review management accounts; they cannot recommend specific accounting software; they charge a flat low fee with no clear scope; they cannot provide references from agency clients; or they assign your day-to-day work to a junior who has never worked with an agency. Any of these should make you walk away.'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Ask how many agency clients the accountant currently works with — aim for at least 10–15 to ensure relevant sector expertise.
+- Your accountant must understand IR35 inside out, including off-payroll rules, SDS, and the limits of the CEST tool.
+- A good agency accountant will review your revenue mix and help forecast cash flow, not just file year-end accounts.
+- If you pay £400+ per month, expect proactive cash flow planning using tools like Float or Spotlight Reporting.
+- General practice accountants often miss agency-specific patterns like retainer vs project revenue and gross margin impact.
 ---
-
 <h2>Why Most Agency Founders Pick the Wrong Accountant</h2>
 <p>I see it every few months. A founder walks in, frustrated, having just switched from a general practice firm that "didn't get" their business. The accountant was perfectly competent for a plumber or a restaurant. But an agency? They didn't understand utilisation rates, retainer vs project revenue, or why a £200k profit with 40% gross margin tells a very different story to £200k profit with 65% gross margin.</p>
 <p>When you <strong>choose an agency accountant</strong>, you are not just picking someone to file your CT600 and run payroll. You are picking a financial partner who should understand how your business actually makes money. That distinction matters.</p>

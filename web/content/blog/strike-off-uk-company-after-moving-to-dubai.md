@@ -1,33 +1,40 @@
 ---
-title: "How to Strike Off Your UK Agency After Moving to Dubai: The Full Process"
-slug: "strike-off-uk-company-after-moving-to-dubai"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/strike-off-uk-company-after-moving-to-dubai"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Strike Off UK Company After Moving to Dubai: Process Guide"
-metaDescription: "Moving your agency to Dubai? Here's how to strike off your UK company properly: settle liabilities, file final accounts, notify HMRC, and avoid"
-altText: "UK agency founder reviewing final accounts documents before striking off a limited company after moving to Dubai"
-image: "/blog/strike-off-uk-company-after-moving-to-dubai.jpg"
+title: 'How to Strike Off Your UK Agency After Moving to Dubai: The Full Process'
+slug: strike-off-uk-company-after-moving-to-dubai
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/strike-off-uk-company-after-moving-to-dubai
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Strike Off UK Company After Moving to Dubai: Process Guide'
+metaDescription: 'Moving your agency to Dubai? Here''s how to strike off your UK company properly: settle liabilities, file final accounts, notify HMRC, and avoid'
+altText: UK agency founder reviewing final accounts documents before striking off a limited company after moving to Dubai
+image: /blog/strike-off-uk-company-after-moving-to-dubai.jpg
 imageCredit:
-  photographer: "Stan Platt-Jones"
-  photographerUrl: "https://www.pexels.com/@stan-platt-jones-465933494"
-  sourceUrl: "https://www.pexels.com/photo/crowd-of-protesters-on-street-15688701/"
-  source: "Pexels"
-h1: "How to Strike Off Your UK Agency After Moving to Dubai: The Full Process"
-summary: "Moving to Dubai doesn't mean you can leave your UK company dormant. You need to formally strike it off. This guide walks you through every step: settling liabilities, filing final accounts, notifying HMRC, and surviving the 3-month objection period."
-schema: ""
+  photographer: Stan Platt-Jones
+  photographerUrl: https://www.pexels.com/@stan-platt-jones-465933494
+  sourceUrl: https://www.pexels.com/photo/crowd-of-protesters-on-street-15688701/
+  source: Pexels
+h1: 'How to Strike Off Your UK Agency After Moving to Dubai: The Full Process'
+summary: 'Moving to Dubai doesn''t mean you can leave your UK company dormant. You need to formally strike it off. This guide walks you through every step: settling liabilities, filing final accounts, notifying HMRC, and surviving the 3-month objection period.'
+schema: ''
 faqs:
-  - question: "Can I strike off my UK company while living in Dubai without returning to the UK?"
-    answer: "Yes. You can file the DS01 online through Companies House WebFiling from anywhere in the world. You don't need to be physically in the UK. However, you need to ensure all liabilities are settled and final accounts are filed before you apply. If HMRC objects, you'll need to resolve it remotely, which is easier if your accountant handles it."
-  - question: "What happens to the money in my UK company bank account after strike off?"
-    answer: "Any money left in the company bank account after dissolution becomes bona vacantia, meaning it passes to the Crown. You cannot reclaim it without a lengthy legal process. The solution is simple: close the bank account and transfer the balance to yourself as a dividend or director's loan repayment before striking off."
-  - question: "How long does it take to strike off a UK company after moving to Dubai?"
-    answer: "A straightforward voluntary strike off takes 4 to 6 months from start to finish. This includes settling liabilities, filing final accounts, notifying HMRC, and the 3-month objection period. If HMRC objects or a creditor comes forward, add another 3 to 6 months."
-  - question: "Do I need an accountant to strike off my UK company from Dubai?"
-    answer: "You can file the DS01 yourself for £8, but it's risky if you're not familiar with the process. The 3-month objection period is the main trap. If you miss it, the company gets reinstated with penalties. An accountant will monitor the Gazette notices, handle HMRC correspondence, and ensure everything is done correctly. For most agency founders, the small fee is worth the peace of mind."
+- question: Can I strike off my UK company while living in Dubai without returning to the UK?
+  answer: Yes. You can file the DS01 online through Companies House WebFiling from anywhere in the world. You don't need to be physically in the UK. However, you need to ensure all liabilities are settled and final accounts are filed before you apply. If HMRC objects, you'll need to resolve it remotely, which is easier if your accountant handles it.
+- question: What happens to the money in my UK company bank account after strike off?
+  answer: 'Any money left in the company bank account after dissolution becomes bona vacantia, meaning it passes to the Crown. You cannot reclaim it without a lengthy legal process. The solution is simple: close the bank account and transfer the balance to yourself as a dividend or director''s loan repayment before striking off.'
+- question: How long does it take to strike off a UK company after moving to Dubai?
+  answer: A straightforward voluntary strike off takes 4 to 6 months from start to finish. This includes settling liabilities, filing final accounts, notifying HMRC, and the 3-month objection period. If HMRC objects or a creditor comes forward, add another 3 to 6 months.
+- question: Do I need an accountant to strike off my UK company from Dubai?
+  answer: You can file the DS01 yourself for £8, but it's risky if you're not familiar with the process. The 3-month objection period is the main trap. If you miss it, the company gets reinstated with penalties. An accountant will monitor the Gazette notices, handle HMRC correspondence, and ensure everything is done correctly. For most agency founders, the small fee is worth the peace of mind.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Voluntary strike off (DS01, £8) works only if your UK company has no assets, no liabilities, and no retained profits to extract.
+- If your company has over £25,000 in retained profits, a Members' Voluntary Liquidation (MVL) lets you access 14% BADR CGT instead of 33.75% dividend tax.
+- 'Before filing DS01, settle all liabilities: final corporation tax, VAT, PAYE, director''s loan accounts, and outstanding invoices.'
+- Novate client contracts to your Dubai entity before striking off, otherwise contracts die with the UK company.
+- HMRC and Companies House have a 3-month objection period; missing it can reinstate the company with penalties.
 ---
-
 <h2>What Happens to Your UK Agency When You Move to Dubai?</h2>
 
 <p>You've made the move. Your agency is running from Dubai, you're on a freelance visa or setting up in a free zone, and your UK limited company is sitting there, dormant or ticking over with minimal activity. The question you need to answer is straightforward: do you keep it, or do you close it?</p>

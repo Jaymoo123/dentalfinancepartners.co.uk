@@ -1,33 +1,40 @@
 ---
-title: "How Much Will You Keep When Selling Your Agency? BADR Explained for Founders"
-slug: "business-asset-disposal-relief-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/business-asset-disposal-relief-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "BADR for Agency Founders: Keep More of Your Exit Cash"
-metaDescription: "Selling your agency? BADR cuts your Capital Gains Tax to 14% on the first £1m of gains. Here's exactly how it works and what you must do to qualify."
-altText: "Agency founder reviewing sale documents with accountant in a modern UK office"
-image: "/blog/business-asset-disposal-relief-agency.jpg"
+title: How Much Will You Keep When Selling Your Agency? BADR Explained for Founders
+slug: business-asset-disposal-relief-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/business-asset-disposal-relief-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'BADR for Agency Founders: Keep More of Your Exit Cash'
+metaDescription: Selling your agency? BADR cuts your Capital Gains Tax to 14% on the first £1m of gains. Here's exactly how it works and what you must do to qualify.
+altText: Agency founder reviewing sale documents with accountant in a modern UK office
+image: /blog/business-asset-disposal-relief-agency.jpg
 imageCredit:
-  photographer: "Miguel Á. Padriñán"
-  photographerUrl: "https://www.pexels.com/@padrinan"
-  sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-keyboard-buttons-2882650/"
-  source: "Pexels"
-h1: "How Much Will You Keep When Selling Your Agency? BADR Explained for Founders"
-summary: "Selling your agency could mean a six-figure tax bill if you get it wrong. Business Asset Disposal Relief (BADR) cuts your Capital Gains Tax to 14% on the first £1m of qualifying gains. Here's exactly how it works and what you need to do before you sell."
-schema: ""
+  photographer: Miguel Á. Padriñán
+  photographerUrl: https://www.pexels.com/@padrinan
+  sourceUrl: https://www.pexels.com/photo/close-up-shot-of-keyboard-buttons-2882650/
+  source: Pexels
+h1: How Much Will You Keep When Selling Your Agency? BADR Explained for Founders
+summary: Selling your agency could mean a six-figure tax bill if you get it wrong. Business Asset Disposal Relief (BADR) cuts your Capital Gains Tax to 14% on the first £1m of qualifying gains. Here's exactly how it works and what you need to do before you sell.
+schema: ''
 faqs:
-  - question: "Can I claim BADR if I sell only part of my agency shares?"
-    answer: "Yes, but only on the shares that meet the conditions. If you sell 40% of your holding and keep 60%, BADR applies to the gain on the 40% sold, provided you met the conditions for 24 months before sale. The remaining shares can qualify when you sell them later, subject to the £1m lifetime limit."
-  - question: "Does BADR apply if I sell my agency through a management buyout (MBO)?"
-    answer: "Yes, an MBO is treated as a normal share sale for BADR purposes. The same conditions apply: you must have been a director, held 5% of shares, and the company must be trading for the 24 months before the sale. The buyer being your management team doesn't change the relief."
-  - question: "What happens to BADR if my agency is part of a group structure?"
-    answer: "Group structures complicate BADR. You need to hold shares in the parent company that carries on a trading business, or in a holding company of a trading group. HMRC looks through the group to check that at least 80% of the group's activities are trading. If your group has investment properties or large cash reserves, you may not qualify. Specialist advice is essential here."
-  - question: "Can I claim BADR if I sell my agency's assets instead of shares?"
-    answer: "If you sell the assets of your agency (client contracts, goodwill, equipment) rather than shares, BADR doesn't apply to a company sale. The company pays corporation tax on the gain, not you personally. However, if you then liquidate the company and distribute the proceeds to shareholders, you may qualify for BADR on the final distribution, subject to the same conditions. This is called a \"capital distribution\" and requires careful planning."
+- question: Can I claim BADR if I sell only part of my agency shares?
+  answer: Yes, but only on the shares that meet the conditions. If you sell 40% of your holding and keep 60%, BADR applies to the gain on the 40% sold, provided you met the conditions for 24 months before sale. The remaining shares can qualify when you sell them later, subject to the £1m lifetime limit.
+- question: Does BADR apply if I sell my agency through a management buyout (MBO)?
+  answer: 'Yes, an MBO is treated as a normal share sale for BADR purposes. The same conditions apply: you must have been a director, held 5% of shares, and the company must be trading for the 24 months before the sale. The buyer being your management team doesn''t change the relief.'
+- question: What happens to BADR if my agency is part of a group structure?
+  answer: Group structures complicate BADR. You need to hold shares in the parent company that carries on a trading business, or in a holding company of a trading group. HMRC looks through the group to check that at least 80% of the group's activities are trading. If your group has investment properties or large cash reserves, you may not qualify. Specialist advice is essential here.
+- question: Can I claim BADR if I sell my agency's assets instead of shares?
+  answer: If you sell the assets of your agency (client contracts, goodwill, equipment) rather than shares, BADR doesn't apply to a company sale. The company pays corporation tax on the gain, not you personally. However, if you then liquidate the company and distribute the proceeds to shareholders, you may qualify for BADR on the final distribution, subject to the same conditions. This is called a "capital distribution" and requires careful planning.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- BADR reduces Capital Gains Tax to 14% on the first £1m of lifetime gains when selling your agency, compared to the standard 24% rate.
+- To qualify for BADR, you must be a director or employee of the agency for at least 24 months before the sale.
+- You must hold at least 5% of the ordinary share capital, with 5% voting rights and profit entitlement, for the 24 months prior to sale.
+- Your agency must be a trading company, with at least 80% of activities from trading rather than investment, to meet HMRC's definition.
+- Without BADR, selling a £1.5m agency could cost £100,000 more in tax, making it crucial to plan and meet conditions well before exit.
 ---
-
 <p>If you've built a digital agency from scratch, the sale is the moment you finally cash in. But the taxman takes a significant cut of that gain unless you plan ahead.</p>
 
 <p>Business Asset Disposal Relief (BADR) is the single most valuable tax relief available when you sell your agency. It reduces your Capital Gains Tax (CGT) rate from 20% to 14% on the first £1m of qualifying gains. For a founder selling a 12-person digital agency billing £800k per year, that difference could easily be £50,000 or more in your pocket rather than HMRC's.</p>

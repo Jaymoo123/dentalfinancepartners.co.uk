@@ -1,33 +1,40 @@
 ---
-title: "R&D Tax Credit Subcontractor Costs: The 65% Rule for UK Agencies"
-slug: "rd-tax-credit-subcontractor-costs-65-percent-rule-uk-agencies"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-tax-credit-subcontractor-costs-65-percent-rule-uk-agencies"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "R&D Tax Credit Subcontractor Costs: The 65% Rule for UK"
-metaDescription: "HMRC caps subcontractor R&D costs at 65% for agencies. Here's how the subcontractor 65 percent rule works, what qualifies, and how to maximise your claim."
-altText: "Agency founder reviewing R&D tax credit claim documents on a desk in a Manchester office"
-image: "/blog/rd-tax-credit-subcontractor-costs-65-percent-rule-uk-agencies.jpg"
+title: 'R&D Tax Credit Subcontractor Costs: The 65% Rule for UK Agencies'
+slug: rd-tax-credit-subcontractor-costs-65-percent-rule-uk-agencies
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-tax-credit-subcontractor-costs-65-percent-rule-uk-agencies
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'R&D Tax Credit Subcontractor Costs: The 65% Rule for UK'
+metaDescription: HMRC caps subcontractor R&D costs at 65% for agencies. Here's how the subcontractor 65 percent rule works, what qualifies, and how to maximise your claim.
+altText: Agency founder reviewing R&D tax credit claim documents on a desk in a Manchester office
+image: /blog/rd-tax-credit-subcontractor-costs-65-percent-rule-uk-agencies.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-table-7821463/"
-  source: "Pexels"
-h1: "R&D Tax Credit Subcontractor Costs: The 65% Rule for UK Agencies"
-summary: "HMRC limits the subcontractor costs you can include in an R&D tax credit claim to 65% of the total qualifying expenditure. This rule catches many agency founders off guard. Here is exactly how it works, what counts as a subcontractor, and how to structure your projects to avoid losing thousands."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-table-7821463/
+  source: Pexels
+h1: 'R&D Tax Credit Subcontractor Costs: The 65% Rule for UK Agencies'
+summary: HMRC limits the subcontractor costs you can include in an R&D tax credit claim to 65% of the total qualifying expenditure. This rule catches many agency founders off guard. Here is exactly how it works, what counts as a subcontractor, and how to structure your projects to avoid losing thousands.
+schema: ''
 faqs:
-  - question: "What is the 65% rule for subcontractor R&D costs?"
-    answer: "The 65% rule applies to SME R&D tax credit claims. It says your qualifying subcontractor costs cannot exceed 65% of your total qualifying R&D expenditure for the period. If they do, HMRC restricts the qualifying amount to 65% of the total. The excess is not eligible for relief."
-  - question: "Does the 65% rule apply to all external workers?"
-    answer: "No. It applies to subcontractors — external individuals or companies you pay to carry out R&D work without your day-to-day supervision. Externally provided workers (EPWs) who work under your direction and control are not subject to the cap. Getting the classification right is critical."
-  - question: "Can I avoid the 65% cap by hiring contractors through an agency?"
-    answer: "It depends on the arrangement. If you use a recruitment agency to place a contractor who works under your supervision and control, that is likely an EPW arrangement and not subject to the cap. But if you hire a specialist agency to deliver a module of work independently, that is a subcontractor arrangement and the cap applies."
-  - question: "How do I calculate the 65% cap on my R&D claim?"
-    answer: "Add up all your qualifying R&D expenditure for the accounting period: staff costs, subcontractor costs, consumables, software, and EPW costs. Multiply that total by 65%. If your subcontractor costs exceed that figure, only the capped amount qualifies for relief. Your accountant should run this calculation as part of preparing the claim."
+- question: What is the 65% rule for subcontractor R&D costs?
+  answer: The 65% rule applies to SME R&D tax credit claims. It says your qualifying subcontractor costs cannot exceed 65% of your total qualifying R&D expenditure for the period. If they do, HMRC restricts the qualifying amount to 65% of the total. The excess is not eligible for relief.
+- question: Does the 65% rule apply to all external workers?
+  answer: No. It applies to subcontractors — external individuals or companies you pay to carry out R&D work without your day-to-day supervision. Externally provided workers (EPWs) who work under your direction and control are not subject to the cap. Getting the classification right is critical.
+- question: Can I avoid the 65% cap by hiring contractors through an agency?
+  answer: It depends on the arrangement. If you use a recruitment agency to place a contractor who works under your supervision and control, that is likely an EPW arrangement and not subject to the cap. But if you hire a specialist agency to deliver a module of work independently, that is a subcontractor arrangement and the cap applies.
+- question: How do I calculate the 65% cap on my R&D claim?
+  answer: 'Add up all your qualifying R&D expenditure for the accounting period: staff costs, subcontractor costs, consumables, software, and EPW costs. Multiply that total by 65%. If your subcontractor costs exceed that figure, only the capped amount qualifies for relief. Your accountant should run this calculation as part of preparing the claim.'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- HMRC caps subcontractor costs at 65% of total qualifying R&D expenditure under the SME scheme, not a deduction limit.
+- If subcontractor costs exceed 65% of total qualifying R&D spend, only the amount up to the cap qualifies for relief.
+- Subcontractors are external parties not under your day-to-day supervision; misclassifying them is a common error.
+- Including more in-house staff costs or consumables can increase the 65% cap and allow higher subcontractor claims.
+- At 19% corporation tax and 186% enhanced deduction, losing £14,800 of subcontractor relief costs roughly £525 per project.
 ---
-
 <p>You ran a development project for a client. You subcontracted a specialist developer for six weeks. The work was genuinely innovative: building a new machine learning model to automate content tagging across video assets. You spent £42,000 on the subcontractor. You are preparing your R&D tax credit claim and expecting to claim relief on the full amount.</p>
 
 <p>Then your accountant tells you HMRC caps subcontractor costs at 65% of your total qualifying R&D expenditure.</p>

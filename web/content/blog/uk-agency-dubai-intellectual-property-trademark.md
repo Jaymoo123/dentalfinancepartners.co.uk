@@ -1,33 +1,40 @@
 ---
-title: "UK Agency to Dubai: The Intellectual Property Trap That Could Cost You Your Brand Name"
-slug: "uk-agency-dubai-intellectual-property-trademark"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-agency-dubai-intellectual-property-trademark"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK Agency Dubai Intellectual Property Trademark: The Brand"
-metaDescription: "Your UK trademark won't protect your agency name in Dubai. Here's how IP squatters steal brand names and what to do before you move."
-altText: "UK agency founder looking at Dubai skyline from office window, trademark documents on desk"
-image: "/blog/uk-agency-dubai-intellectual-property-trademark.jpg"
+title: 'UK Agency to Dubai: The Intellectual Property Trap That Could Cost You Your Brand Name'
+slug: uk-agency-dubai-intellectual-property-trademark
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-agency-dubai-intellectual-property-trademark
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK Agency Dubai Intellectual Property Trademark: The Brand'
+metaDescription: Your UK trademark won't protect your agency name in Dubai. Here's how IP squatters steal brand names and what to do before you move.
+altText: UK agency founder looking at Dubai skyline from office window, trademark documents on desk
+image: /blog/uk-agency-dubai-intellectual-property-trademark.jpg
 imageCredit:
-  photographer: "Subbu Rayan"
-  photographerUrl: "https://www.pexels.com/@subbu-rayan-1007049269"
-  sourceUrl: "https://www.pexels.com/photo/modern-residential-villas-in-dubai-overview-31771226/"
-  source: "Pexels"
-h1: "UK Agency to Dubai: The Intellectual Property Trap That Could Cost You Your Brand Name"
-summary: "Moving your UK agency to Dubai? Your UK trademark won't protect you there. Learn how IP squatters target agency names, the real cost of losing your brand, and the steps you need to take before you relocate."
-schema: ""
+  photographer: Subbu Rayan
+  photographerUrl: https://www.pexels.com/@subbu-rayan-1007049269
+  sourceUrl: https://www.pexels.com/photo/modern-residential-villas-in-dubai-overview-31771226/
+  source: Pexels
+h1: 'UK Agency to Dubai: The Intellectual Property Trap That Could Cost You Your Brand Name'
+summary: Moving your UK agency to Dubai? Your UK trademark won't protect you there. Learn how IP squatters target agency names, the real cost of losing your brand, and the steps you need to take before you relocate.
+schema: ''
 faqs:
-  - question: "Can I enforce my UK trademark in Dubai?"
-    answer: "No. UK trademarks have no legal standing in the UAE. Dubai operates a first-to-file system, meaning the first person to register a trademark with the UAE Ministry of Economy owns the rights, regardless of who used it first elsewhere. You need a separate UAE trademark registration to protect your brand in Dubai."
-  - question: "How much does a UAE trademark application cost?"
-    answer: "A UAE trademark application typically costs between £2,000 and £3,000, including agent fees and government filing costs. This covers one class of goods or services. If your agency provides multiple services (e.g., marketing, web design, consulting), you may need to register in multiple classes, which increases the cost. Compare this to the £15,000-£50,000 buyback cost if a squatter registers your name first."
-  - question: "What happens if someone has already registered my agency name in Dubai?"
-    answer: "You have three options: negotiate a purchase from the current owner (expect to pay £15,000-£50,000), file a cancellation action if the mark hasn't been used for five years, or choose a different name for your Dubai operations. The pragmatic choice is often a new name. You can revisit the original name later if the squatter's registration expires."
-  - question: "How long does a UAE trademark registration take?"
-    answer: "The UAE trademark registration process takes 3-6 months for a straightforward application. This includes a formal examination period, a 30-day opposition window where third parties can challenge your application, and final registration. Start the process at least six months before you plan to open your Dubai office. Filing the application establishes your priority date, which is what matters in a first-to-file system."
+- question: Can I enforce my UK trademark in Dubai?
+  answer: No. UK trademarks have no legal standing in the UAE. Dubai operates a first-to-file system, meaning the first person to register a trademark with the UAE Ministry of Economy owns the rights, regardless of who used it first elsewhere. You need a separate UAE trademark registration to protect your brand in Dubai.
+- question: How much does a UAE trademark application cost?
+  answer: A UAE trademark application typically costs between £2,000 and £3,000, including agent fees and government filing costs. This covers one class of goods or services. If your agency provides multiple services (e.g., marketing, web design, consulting), you may need to register in multiple classes, which increases the cost. Compare this to the £15,000-£50,000 buyback cost if a squatter registers your name first.
+- question: What happens if someone has already registered my agency name in Dubai?
+  answer: 'You have three options: negotiate a purchase from the current owner (expect to pay £15,000-£50,000), file a cancellation action if the mark hasn''t been used for five years, or choose a different name for your Dubai operations. The pragmatic choice is often a new name. You can revisit the original name later if the squatter''s registration expires.'
+- question: How long does a UAE trademark registration take?
+  answer: The UAE trademark registration process takes 3-6 months for a straightforward application. This includes a formal examination period, a 30-day opposition window where third parties can challenge your application, and final registration. Start the process at least six months before you plan to open your Dubai office. Filing the application establishes your priority date, which is what matters in a first-to-file system.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- UK trademarks offer no protection in the UAE, which operates a 'first to file' system, not 'first to use'.
+- IP squatters monitor UK trademark filings and Companies House registrations to register agency names in Dubai before founders arrive.
+- Buying back your agency name from a squatter in Dubai can cost between £15,000 and £50,000, as seen with a Bristol PR agency paying £18,000.
+- Agency names using common words like 'Velocity Creative' are particularly vulnerable because they are harder to trademark but have built brand recognition.
+- Before relocating to Dubai, you must file a UAE trademark to protect your brand name, logo, tagline, and service names from being registered by squatters.
 ---
-
 <p>You've built a successful UK agency. Maybe it's a 15-person digital agency billing £1.2m a year out of Shoreditch. Or a creative agency with a retainer book of blue-chip clients from your office in Manchester's Northern Quarter. The Dubai opportunity looks real. Lower corporation tax, zero income tax, a growing client base in the Middle East. So you're planning the move.</p>
 
 <p>Here's the problem nobody warns you about. Your UK trademark means nothing in the UAE. Nothing at all. And there are people in Dubai who make a living registering the names of well-known UK agencies before the founders get there. They then sell the name back to you. Or they trade under it, damaging your reputation before you've even opened your doors.</p>

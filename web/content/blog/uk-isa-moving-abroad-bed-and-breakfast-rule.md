@@ -1,33 +1,40 @@
 ---
-title: "UK ISA When Moving Abroad: The Bed and Breakfast Rule That Blocks You from Rebuying the Same Stocks"
-slug: "uk-isa-moving-abroad-bed-and-breakfast-rule"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-isa-moving-abroad-bed-and-breakfast-rule"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK ISA Moving Abroad: Bed and Breakfast Rule Explained"
-metaDescription: "Moving abroad? You can keep your UK ISA but the 30-day bed and breakfast rule stops you selling and rebuying the same stocks to reset the cost base"
-altText: "UK ISA statement showing holdings and a passport on a desk, representing moving abroad with ISAs"
-image: "/blog/uk-isa-moving-abroad-bed-and-breakfast-rule.jpg"
+title: 'UK ISA When Moving Abroad: The Bed and Breakfast Rule That Blocks You from Rebuying the Same Stocks'
+slug: uk-isa-moving-abroad-bed-and-breakfast-rule
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-isa-moving-abroad-bed-and-breakfast-rule
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK ISA Moving Abroad: Bed and Breakfast Rule Explained'
+metaDescription: Moving abroad? You can keep your UK ISA but the 30-day bed and breakfast rule stops you selling and rebuying the same stocks to reset the cost base
+altText: UK ISA statement showing holdings and a passport on a desk, representing moving abroad with ISAs
+image: /blog/uk-isa-moving-abroad-bed-and-breakfast-rule.jpg
 imageCredit:
-  photographer: "Ketut Subiyanto"
-  photographerUrl: "https://www.pexels.com/@ketut-subiyanto"
-  sourceUrl: "https://www.pexels.com/photo/sleeping-diverse-couple-lying-on-bed-during-relocation-in-new-house-4246043/"
-  source: "Pexels"
-h1: "UK ISA When Moving Abroad: The Bed and Breakfast Rule That Blocks You from Rebuying the Same Stocks"
-summary: "If you're a UK agency founder moving to Dubai or elsewhere, you can keep your existing ISA open and tax-free. But there's a 30-day bed and breakfast rule that stops you from selling an ISA stock and immediately rebuying it in a non-ISA account to avoid capital gains tax. Here's what you need to know before you move."
-schema: ""
+  photographer: Ketut Subiyanto
+  photographerUrl: https://www.pexels.com/@ketut-subiyanto
+  sourceUrl: https://www.pexels.com/photo/sleeping-diverse-couple-lying-on-bed-during-relocation-in-new-house-4246043/
+  source: Pexels
+h1: 'UK ISA When Moving Abroad: The Bed and Breakfast Rule That Blocks You from Rebuying the Same Stocks'
+summary: If you're a UK agency founder moving to Dubai or elsewhere, you can keep your existing ISA open and tax-free. But there's a 30-day bed and breakfast rule that stops you from selling an ISA stock and immediately rebuying it in a non-ISA account to avoid capital gains tax. Here's what you need to know before you move.
+schema: ''
 faqs:
-  - question: "Can I keep my UK ISA if I move to Dubai?"
-    answer: "Yes. You can keep your existing ISA open. The tax wrapper remains intact. You do not pay UK tax on growth or dividends inside it. But you cannot make new contributions once you are non-resident. The £20,000 annual allowance stops the day you leave."
-  - question: "Does the bed and breakfast rule apply to ISA shares sold and rebought in a general account?"
-    answer: "Yes. If you sell shares inside an ISA and buy the same shares in a non-ISA account within 30 days, HMRC treats the sale as if it never happened. The original cost base inside the ISA carries forward to the new holding. You do not get a fresh cost base at the current market price."
-  - question: "How long do I have to wait to avoid the bed and breakfast rule?"
-    answer: "31 days. The rule only applies to repurchases within 30 days of the sale. If you wait until day 31, you get a fresh cost base. Be aware that market movements during that period could work for or against you."
-  - question: "What happens if I trigger the bed and breakfast rule by accident?"
-    answer: "You will need to correct your tax return. The gain you thought you crystallised is not recognised. Your original cost base carries forward. If you have already sold the rebought shares, you may owe more tax than expected. Speak to an accountant to see if you can unwind the transaction or make a disclosure."
+- question: Can I keep my UK ISA if I move to Dubai?
+  answer: Yes. You can keep your existing ISA open. The tax wrapper remains intact. You do not pay UK tax on growth or dividends inside it. But you cannot make new contributions once you are non-resident. The £20,000 annual allowance stops the day you leave.
+- question: Does the bed and breakfast rule apply to ISA shares sold and rebought in a general account?
+  answer: Yes. If you sell shares inside an ISA and buy the same shares in a non-ISA account within 30 days, HMRC treats the sale as if it never happened. The original cost base inside the ISA carries forward to the new holding. You do not get a fresh cost base at the current market price.
+- question: How long do I have to wait to avoid the bed and breakfast rule?
+  answer: 31 days. The rule only applies to repurchases within 30 days of the sale. If you wait until day 31, you get a fresh cost base. Be aware that market movements during that period could work for or against you.
+- question: What happens if I trigger the bed and breakfast rule by accident?
+  answer: You will need to correct your tax return. The gain you thought you crystallised is not recognised. Your original cost base carries forward. If you have already sold the rebought shares, you may owe more tax than expected. Speak to an accountant to see if you can unwind the transaction or make a disclosure.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- You can keep your existing Stocks and Shares ISA open and tax-free after leaving the UK, but cannot make new contributions once non-resident.
+- The bed and breakfast rule (Section 106A TCGA 1992) prevents you from selling shares inside an ISA and rebuying the same shares in a non-ISA account within 30 days.
+- If you breach the 30-day rule, HMRC treats the sale as if it never happened, carrying forward the original cost base and blocking a cost reset.
+- Selling inside an ISA and rebuying outside moves a tax-free gain into a taxable environment without resetting the cost base, triggering unexpected UK tax.
+- This trap commonly catches agency founders with large ISA portfolios built from high agency profits who try to reorganise before or after moving abroad.
 ---
-
 <h2>You Can Keep Your ISA When You Move Abroad — But There's a Catch</h2>
 
 <p>Most agency founders I speak with assume that once they leave the UK, their ISA gets frozen or shut down. That is not correct.</p>

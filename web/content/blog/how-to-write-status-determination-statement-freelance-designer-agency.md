@@ -1,33 +1,40 @@
 ---
-title: "How to Write a Status Determination Statement for a Freelance Designer Engaged Through Your Agency"
-slug: "how-to-write-status-determination-statement-freelance-designer-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/how-to-write-status-determination-statement-freelance-designer-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Contractors and IR35"
-metaTitle: "Write an IR35 Status Determination Statement"
-metaDescription: "Step-by-step guide to writing a Status Determination Statement for a freelance designer. Covers portfolio work, creative control, and IR35 compliance"
-altText: "Agency founder reviewing an IR35 Status Determination Statement for a freelance designer on a laptop in a modern UK office"
-image: "/blog/how-to-write-status-determination-statement-freelance-designer-agency.jpg"
+title: How to Write a Status Determination Statement for a Freelance Designer Engaged Through Your Agency
+slug: how-to-write-status-determination-statement-freelance-designer-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/how-to-write-status-determination-statement-freelance-designer-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Contractors and IR35
+metaTitle: Write an IR35 Status Determination Statement
+metaDescription: Step-by-step guide to writing a Status Determination Statement for a freelance designer. Covers portfolio work, creative control, and IR35 compliance
+altText: Agency founder reviewing an IR35 Status Determination Statement for a freelance designer on a laptop in a modern UK office
+image: /blog/how-to-write-status-determination-statement-freelance-designer-agency.jpg
 imageCredit:
-  photographer: "Kampus Production"
-  photographerUrl: "https://www.pexels.com/@kampus"
-  sourceUrl: "https://www.pexels.com/photo/woman-working-on-laptop-writing-on-paper-8035984/"
-  source: "Pexels"
-h1: "How to Write a Status Determination Statement for a Freelance Designer Engaged Through Your Agency"
-summary: "A practical guide for agency founders on writing a compliant Status Determination Statement when engaging a freelance designer. Covers creative control, substitution rights, and how portfolio-based work affects the IR35 assessment."
-schema: ""
+  photographer: Kampus Production
+  photographerUrl: https://www.pexels.com/@kampus
+  sourceUrl: https://www.pexels.com/photo/woman-working-on-laptop-writing-on-paper-8035984/
+  source: Pexels
+h1: How to Write a Status Determination Statement for a Freelance Designer Engaged Through Your Agency
+summary: A practical guide for agency founders on writing a compliant Status Determination Statement when engaging a freelance designer. Covers creative control, substitution rights, and how portfolio-based work affects the IR35 assessment.
+schema: ''
 faqs:
-  - question: "Do I need to issue a Status Determination Statement for every freelance designer I engage?"
-    answer: "Yes. Every engagement with a freelancer working through their own limited company requires an SDS before the work starts. This applies regardless of the project size or duration. A two-day project needs an SDS just as much as a six-month retainer. The only exception is if the freelancer is working through an umbrella company, in which case the umbrella handles the employment taxes."
-  - question: "What happens if I use the CEST tool and it says outside IR35 but HMRC disagrees?"
-    answer: "CEST is a directional tool, not a guarantee. If you have used CEST and your own assessment supports the outside IR35 determination, you have evidence of taking reasonable care. HMRC has said they will stand by CEST results if the inputs are accurate. However, CEST struggles with creative roles. If your assessment disagrees with CEST, get professional advice. Do not rely on CEST alone for subjective work."
-  - question: "Can I use the same SDS for a designer who works on multiple projects throughout the year?"
-    answer: "No. Each engagement is a separate determination. If a designer works on three separate projects across the year, you need three SDS documents. The facts may change between engagements. A designer who was outside IR35 on a project with full creative control may be inside IR35 on a later project where the brief is more prescriptive. Issue a new SDS for each engagement."
-  - question: "What records do I need to keep for an IR35 investigation?"
-    answer: "Keep the SDS itself, the signed contract, the project brief or statement of work, any correspondence about how the work will be delivered, evidence of substitution rights (or lack thereof), and notes on your assessment process. Keep these for six years after the end of the relevant tax year. HMRC can request them at any point during that period. Digital records are fine. Just make sure they are organised and accessible."
+- question: Do I need to issue a Status Determination Statement for every freelance designer I engage?
+  answer: Yes. Every engagement with a freelancer working through their own limited company requires an SDS before the work starts. This applies regardless of the project size or duration. A two-day project needs an SDS just as much as a six-month retainer. The only exception is if the freelancer is working through an umbrella company, in which case the umbrella handles the employment taxes.
+- question: What happens if I use the CEST tool and it says outside IR35 but HMRC disagrees?
+  answer: CEST is a directional tool, not a guarantee. If you have used CEST and your own assessment supports the outside IR35 determination, you have evidence of taking reasonable care. HMRC has said they will stand by CEST results if the inputs are accurate. However, CEST struggles with creative roles. If your assessment disagrees with CEST, get professional advice. Do not rely on CEST alone for subjective work.
+- question: Can I use the same SDS for a designer who works on multiple projects throughout the year?
+  answer: No. Each engagement is a separate determination. If a designer works on three separate projects across the year, you need three SDS documents. The facts may change between engagements. A designer who was outside IR35 on a project with full creative control may be inside IR35 on a later project where the brief is more prescriptive. Issue a new SDS for each engagement.
+- question: What records do I need to keep for an IR35 investigation?
+  answer: Keep the SDS itself, the signed contract, the project brief or statement of work, any correspondence about how the work will be delivered, evidence of substitution rights (or lack thereof), and notes on your assessment process. Keep these for six years after the end of the relevant tax year. HMRC can request them at any point during that period. Digital records are fine. Just make sure they are organised and accessible.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Your agency must issue a compliant Status Determination Statement before a freelance designer starts work, or face HMRC penalties for unpaid tax and NI.
+- 'Control is the key IR35 test: a designer working to their own schedule and methods is outside IR35; one embedded in your team is inside.'
+- A genuine substitution right, with reasonable approval only, is essential for an outside-IR35 determination; contracts must allow replacement.
+- Portfolio-based work and creative briefs make designer assessments nuanced; each engagement must be judged on its specific facts.
+- The SDS must include written reasons for the determination and be kept on record; a tick-box approach creates significant HMRC risk.
 ---
-
 <h2>Why Your Agency Needs to Get This Right</h2>
 
 <p>If your agency engages freelance designers through a limited company, you are responsible for determining their IR35 status. That is not optional. It is a legal requirement under the off-payroll working rules (Chapter 10, Part 2 of ITEPA 2003).</p>

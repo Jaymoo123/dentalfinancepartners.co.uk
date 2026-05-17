@@ -1,33 +1,40 @@
 ---
-title: "Inside vs Outside IR35 for Agency Contractors: What Agency Founders Must Know"
-slug: "inside-outside-ir35-agency-contractors"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/inside-outside-ir35-agency-contractors"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Contractors and IR35"
-metaTitle: "Inside vs Outside IR35: Agency Contractor Rules"
-metaDescription: "Understand inside vs outside IR35 for agency contractors. Learn how status affects tax, NI, and your agency's liability. Practical rules for 2025/26."
-altText: "UK agency founder reviewing contractor IR35 status determination documents at desk in modern office"
-image: "/blog/inside-outside-ir35-agency-contractors.jpg"
+title: 'Inside vs Outside IR35 for Agency Contractors: What Agency Founders Must Know'
+slug: inside-outside-ir35-agency-contractors
+canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/inside-outside-ir35-agency-contractors
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Contractors and IR35
+metaTitle: 'Inside vs Outside IR35: Agency Contractor Rules'
+metaDescription: Understand inside vs outside IR35 for agency contractors. Learn how status affects tax, NI, and your agency's liability. Practical rules for 2025/26.
+altText: UK agency founder reviewing contractor IR35 status determination documents at desk in modern office
+image: /blog/inside-outside-ir35-agency-contractors.jpg
 imageCredit:
-  photographer: "Infinity lifespaces"
-  photographerUrl: "https://www.pexels.com/@infinity-lifespaces-1420423121"
-  sourceUrl: "https://www.pexels.com/photo/construction-worker-renovating-interior-in-delhi-30580529/"
-  source: "Pexels"
-h1: "Inside vs Outside IR35 for Agency Contractors: What Agency Founders Must Know"
-summary: "The difference between inside and outside IR35 determines who pays the tax, how much the contractor takes home, and what liability your agency carries. This guide walks through the rules, the tests, and the practical steps for agency founders engaging contractors in 2025/26."
-schema: ""
+  photographer: Infinity lifespaces
+  photographerUrl: https://www.pexels.com/@infinity-lifespaces-1420423121
+  sourceUrl: https://www.pexels.com/photo/construction-worker-renovating-interior-in-delhi-30580529/
+  source: Pexels
+h1: 'Inside vs Outside IR35 for Agency Contractors: What Agency Founders Must Know'
+summary: The difference between inside and outside IR35 determines who pays the tax, how much the contractor takes home, and what liability your agency carries. This guide walks through the rules, the tests, and the practical steps for agency founders engaging contractors in 2025/26.
+schema: ''
 faqs:
-  - question: "What is the difference between inside and outside IR35 for agency contractors?"
-    answer: "Inside IR35 means the contractor is treated as a deemed employee for tax purposes. Your agency must operate PAYE, deduct income tax and NI, and pay employer NI at 13.8%. Outside IR35 means the contractor is genuinely self-employed. Their limited company invoices you, and they handle their own tax. The key difference is who pays the tax and how much the contractor takes home."
-  - question: "How do I determine if my agency's contractors are inside or outside IR35?"
-    answer: "You apply three main tests: substitution (can the contractor send someone else?), control (who decides how and when the work is done?), and mutuality of obligation (is there an ongoing obligation to offer and accept work?). HMRC's CEST tool can help, but it is not definitive for complex cases. For borderline engagements, get a professional IR35 review."
-  - question: "What happens if HMRC decides my agency got the IR35 status wrong?"
-    answer: "HMRC can demand backdated tax and NI on all payments to the contractor, plus interest and penalties of up to 100% of the tax due. The liability falls on the fee payer, which is usually your agency. HMRC can go back up to six years. A 20-person agency we know faced a £140,000 bill for misclassifying six contractors over three years."
-  - question: "Do I need to issue a Status Determination Statement for every contractor?"
-    answer: "Yes. You must issue an SDS for every contractor engagement, even if you determine they are outside IR35. The SDS must state your decision and the reasons for it. You must pass the SDS to the contractor and to any agency in the supply chain above you. Keep records of every SDS you issue, as HMRC can request them during an investigation."
+- question: What is the difference between inside and outside IR35 for agency contractors?
+  answer: Inside IR35 means the contractor is treated as a deemed employee for tax purposes. Your agency must operate PAYE, deduct income tax and NI, and pay employer NI at 13.8%. Outside IR35 means the contractor is genuinely self-employed. Their limited company invoices you, and they handle their own tax. The key difference is who pays the tax and how much the contractor takes home.
+- question: How do I determine if my agency's contractors are inside or outside IR35?
+  answer: 'You apply three main tests: substitution (can the contractor send someone else?), control (who decides how and when the work is done?), and mutuality of obligation (is there an ongoing obligation to offer and accept work?). HMRC''s CEST tool can help, but it is not definitive for complex cases. For borderline engagements, get a professional IR35 review.'
+- question: What happens if HMRC decides my agency got the IR35 status wrong?
+  answer: HMRC can demand backdated tax and NI on all payments to the contractor, plus interest and penalties of up to 100% of the tax due. The liability falls on the fee payer, which is usually your agency. HMRC can go back up to six years. A 20-person agency we know faced a £140,000 bill for misclassifying six contractors over three years.
+- question: Do I need to issue a Status Determination Statement for every contractor?
+  answer: Yes. You must issue an SDS for every contractor engagement, even if you determine they are outside IR35. The SDS must state your decision and the reasons for it. You must pass the SDS to the contractor and to any agency in the supply chain above you. Keep records of every SDS you issue, as HMRC can request them during an investigation.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- For outside IR35, your agency pays the gross invoice and the contractor's company handles its own tax; for inside IR35, you must operate PAYE and deduct tax and NI at source.
+- Inside IR35 adds roughly £6,900 per year in employer NI for a contractor earning £50,000, and their take-home pay drops from about £400 to £290 per day.
+- Outside IR35 saves your agency employer NI and payroll admin, but you must issue a Status Determination Statement (SDS) and pass it down the supply chain.
+- HMRC uses tests like control, substitution, and mutuality of obligation to determine IR35 status; getting it wrong can lead to six-figure liabilities for your agency.
+- From 6 April 2026, the capital gains tax rate for Business Asset Disposal Relief rises to 18%, affecting contractors selling their company shares.
 ---
-
 <p>If you run an agency in the UK and engage contractors, you need to understand the difference between inside IR35 and outside IR35. Get it wrong, and HMRC can come after your agency for unpaid tax, National Insurance, and penalties going back years. That liability can easily run into six figures for a medium-sized agency with a handful of contractors.</p>
 
 <p>The core question is simple: is your contractor genuinely self-employed, or are they effectively an employee in disguise? The answer determines who pays the tax. For outside IR35 engagements, the contractor's limited company handles their own tax. For inside IR35 engagements, your agency (or the fee payer) must operate PAYE and deduct tax and National Insurance at source.</p>

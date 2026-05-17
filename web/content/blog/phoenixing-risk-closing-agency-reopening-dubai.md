@@ -1,33 +1,40 @@
 ---
-title: "What is the phoenixing risk if I close my UK agency and reopen in Dubai?"
-slug: "phoenixing-risk-closing-agency-reopening-dubai"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/phoenixing-risk-closing-agency-reopening-dubai"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Phoenixing risk: closing your UK agency and reopening"
-metaDescription: "HMRC can pursue directors who close a UK agency with debts and reopen in Dubai. We explain the rules, the risks, and how to show genuine relocation."
-altText: "UK agency founder reviewing documents in a Shoreditch office with Dubai skyline on a monitor"
-image: "/blog/phoenixing-risk-closing-agency-reopening-dubai.jpg"
+title: What is the phoenixing risk if I close my UK agency and reopen in Dubai?
+slug: phoenixing-risk-closing-agency-reopening-dubai
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/phoenixing-risk-closing-agency-reopening-dubai
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Phoenixing risk: closing your UK agency and reopening'
+metaDescription: HMRC can pursue directors who close a UK agency with debts and reopen in Dubai. We explain the rules, the risks, and how to show genuine relocation.
+altText: UK agency founder reviewing documents in a Shoreditch office with Dubai skyline on a monitor
+image: /blog/phoenixing-risk-closing-agency-reopening-dubai.jpg
 imageCredit:
-  photographer: "Erik Mclean"
-  photographerUrl: "https://www.pexels.com/@introspectivedsgn"
-  sourceUrl: "https://www.pexels.com/photo/a-warning-sign-on-a-door-7740310/"
-  source: "Pexels"
-h1: "What is the phoenixing risk if I close my UK agency and reopen in Dubai?"
-summary: "Thinking of closing your UK agency and reopening in Dubai? HMRC has specific rules on phoenixing that can catch directors out. We explain what triggers HMRC scrutiny, how to demonstrate genuine relocation, and the steps you need to take to avoid personal liability for company debts."
-schema: ""
+  photographer: Erik Mclean
+  photographerUrl: https://www.pexels.com/@introspectivedsgn
+  sourceUrl: https://www.pexels.com/photo/a-warning-sign-on-a-door-7740310/
+  source: Pexels
+h1: What is the phoenixing risk if I close my UK agency and reopen in Dubai?
+summary: Thinking of closing your UK agency and reopening in Dubai? HMRC has specific rules on phoenixing that can catch directors out. We explain what triggers HMRC scrutiny, how to demonstrate genuine relocation, and the steps you need to take to avoid personal liability for company debts.
+schema: ''
 faqs:
-  - question: "Can HMRC pursue me personally if my UK company is closed and I reopen in Dubai?"
-    answer: "Yes. If the UK company was closed with unpaid tax debts and you reopen a similar business in Dubai, HMRC can apply to the court to make you personally liable for those debts. They can also disqualify you from being a UK director for up to 15 years. The key factor is whether the company was genuinely insolvent or whether you stripped assets and left debts behind."
-  - question: "How does HMRC find out about my Dubai company?"
-    answer: "HMRC receives information from the UAE under the Common Reporting Standard and the OECD's Automatic Exchange of Information. If you open a UAE bank account, register a UAE company, or transfer significant funds from the UK to the UAE, HMRC will see it. There is no practical way to hide a Dubai company from HMRC."
-  - question: "What is the difference between a genuine relocation and phoenixing?"
-    answer: "A genuine relocation means you physically move to Dubai, spend at least 183 days there, have a residency visa and local bank account, and your agency's operations genuinely move with you. The UK company is closed with all debts paid. Phoenixing means you stay in the UK, close the UK company with unpaid tax, and transfer clients and assets to a Dubai entity without any real change in where you live or work."
-  - question: "What should I do if I have already closed a UK agency with debts and moved to Dubai?"
-    answer: "Speak to an ICAEW qualified accountant with experience in cross-border insolvency immediately. Do not ignore the situation. HMRC can pursue you for up to six years after dissolution, and longer if they suspect fraud. An accountant can assess whether you have a problem and advise on the best course of action, which may include voluntary disclosure or negotiating a settlement."
+- question: Can HMRC pursue me personally if my UK company is closed and I reopen in Dubai?
+  answer: Yes. If the UK company was closed with unpaid tax debts and you reopen a similar business in Dubai, HMRC can apply to the court to make you personally liable for those debts. They can also disqualify you from being a UK director for up to 15 years. The key factor is whether the company was genuinely insolvent or whether you stripped assets and left debts behind.
+- question: How does HMRC find out about my Dubai company?
+  answer: HMRC receives information from the UAE under the Common Reporting Standard and the OECD's Automatic Exchange of Information. If you open a UAE bank account, register a UAE company, or transfer significant funds from the UK to the UAE, HMRC will see it. There is no practical way to hide a Dubai company from HMRC.
+- question: What is the difference between a genuine relocation and phoenixing?
+  answer: A genuine relocation means you physically move to Dubai, spend at least 183 days there, have a residency visa and local bank account, and your agency's operations genuinely move with you. The UK company is closed with all debts paid. Phoenixing means you stay in the UK, close the UK company with unpaid tax, and transfer clients and assets to a Dubai entity without any real change in where you live or work.
+- question: What should I do if I have already closed a UK agency with debts and moved to Dubai?
+  answer: Speak to an ICAEW qualified accountant with experience in cross-border insolvency immediately. Do not ignore the situation. HMRC can pursue you for up to six years after dissolution, and longer if they suspect fraud. An accountant can assess whether you have a problem and advise on the best course of action, which may include voluntary disclosure or negotiating a settlement.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- HMRC can pursue directors personally for unpaid tax if a UK agency closes and reopens in Dubai with the same clients, branding, or operations.
+- Phoenixing is defined as closing a company with unpaid debts and starting a similar business elsewhere, which HMRC treats as abuse of limited liability.
+- HMRC identifies phoenixing through red flags like similar names, same clients, same directors, asset transfers, and unpaid tax at closure.
+- Directors face up to 15 years' disqualification under the Company Directors Disqualification Act 1986 for phoenixing, even in cross-border cases.
+- HMRC can impose personal liability for company debts if directors continued trading while insolvent or deliberately ran up tax debts before closure.
 ---
-
 <h2>The short answer: yes, HMRC can come after you</h2>
 
 <p>If you close your UK agency with unpaid tax debts and reopen a similar business in Dubai, HMRC has specific powers to pursue you personally. This is called phoenixing. And it is not a grey area. The rules are clear, and HMRC uses them.</p>

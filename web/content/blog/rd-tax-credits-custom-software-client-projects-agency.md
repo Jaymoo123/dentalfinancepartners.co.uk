@@ -1,33 +1,40 @@
 ---
-title: "Can You Claim R&D Tax Credits for Custom Software Built for Client Projects?"
-slug: "rd-tax-credits-custom-software-client-projects-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-tax-credits-custom-software-client-projects-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "R&D Tax Credits for Custom Software: Agency Guide"
-metaDescription: "Can your agency claim R&D tax credits for custom software built for clients? Yes, but only if the work resolves technical uncertainty. Here's how"
-altText: "Agency founder reviewing R&D tax credit claim documents with accountant in Manchester office"
-image: "/blog/rd-tax-credits-custom-software-client-projects-agency.jpg"
+title: Can You Claim R&D Tax Credits for Custom Software Built for Client Projects?
+slug: rd-tax-credits-custom-software-client-projects-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-tax-credits-custom-software-client-projects-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'R&D Tax Credits for Custom Software: Agency Guide'
+metaDescription: Can your agency claim R&D tax credits for custom software built for clients? Yes, but only if the work resolves technical uncertainty. Here's how
+altText: Agency founder reviewing R&D tax credit claim documents with accountant in Manchester office
+image: /blog/rd-tax-credits-custom-software-client-projects-agency.jpg
 imageCredit:
-  photographer: "Kindel Media"
-  photographerUrl: "https://www.pexels.com/@kindelmedia"
-  sourceUrl: "https://www.pexels.com/photo/income-tax-return-paper-7688995/"
-  source: "Pexels"
-h1: "Can You Claim R&D Tax Credits for Custom Software Built for Client Projects?"
-summary: "Many agency founders assume custom software built for clients never qualifies for R&D tax credits. That's not quite right. The real test is whether the project resolved technical uncertainty, not who paid for it."
-schema: ""
+  photographer: Kindel Media
+  photographerUrl: https://www.pexels.com/@kindelmedia
+  sourceUrl: https://www.pexels.com/photo/income-tax-return-paper-7688995/
+  source: Pexels
+h1: Can You Claim R&D Tax Credits for Custom Software Built for Client Projects?
+summary: Many agency founders assume custom software built for clients never qualifies for R&D tax credits. That's not quite right. The real test is whether the project resolved technical uncertainty, not who paid for it.
+schema: ''
 faqs:
-  - question: "Can I claim R&D tax credits if the client owns the IP?"
-    answer: "Yes. IP ownership is not a requirement for the SME R&D tax credit scheme. The test is whether your agency carried out the R&D activity and bore the financial risk. Standard fixed-price and milestone-based contracts usually satisfy this. Cost-plus or time-and-materials contracts where the client reimburses your costs directly may shift the risk to the client, so check your contract terms carefully."
-  - question: "What documentation do I need to support an R&D claim for client software?"
-    answer: "You need contemporaneous evidence of the technical uncertainty and the work done to resolve it. This includes project notes, technical specifications, sprint retrospectives, test results, internal emails, and Slack conversations. HMRC will not accept a retrospective narrative. You also need timesheets or project tracking that separates R&D hours from routine development hours."
-  - question: "Can I claim for the entire project cost if only part of it was R&D?"
-    answer: "No. You must isolate the specific staff time, subcontractor costs, and materials that were consumed by the R&D activity. Claiming for the full project cost when only a portion was qualifying R&D is the fastest way to trigger an HMRC enquiry and have your entire claim rejected. Work with an accountant to apportion costs correctly."
-  - question: "What happens if HMRC rejects my R&D claim?"
-    answer: "If HMRC rejects your claim, they will disallow the enhanced deduction and may open a wider enquiry into your corporation tax returns. If they find that the claim was made carelessly or deliberately, they can charge penalties of up to 30% or 100% of the tax underpaid. This is why proper documentation and professional advice are essential before submitting a claim."
+- question: Can I claim R&D tax credits if the client owns the IP?
+  answer: Yes. IP ownership is not a requirement for the SME R&D tax credit scheme. The test is whether your agency carried out the R&D activity and bore the financial risk. Standard fixed-price and milestone-based contracts usually satisfy this. Cost-plus or time-and-materials contracts where the client reimburses your costs directly may shift the risk to the client, so check your contract terms carefully.
+- question: What documentation do I need to support an R&D claim for client software?
+  answer: You need contemporaneous evidence of the technical uncertainty and the work done to resolve it. This includes project notes, technical specifications, sprint retrospectives, test results, internal emails, and Slack conversations. HMRC will not accept a retrospective narrative. You also need timesheets or project tracking that separates R&D hours from routine development hours.
+- question: Can I claim for the entire project cost if only part of it was R&D?
+  answer: No. You must isolate the specific staff time, subcontractor costs, and materials that were consumed by the R&D activity. Claiming for the full project cost when only a portion was qualifying R&D is the fastest way to trigger an HMRC enquiry and have your entire claim rejected. Work with an accountant to apportion costs correctly.
+- question: What happens if HMRC rejects my R&D claim?
+  answer: If HMRC rejects your claim, they will disallow the enhanced deduction and may open a wider enquiry into your corporation tax returns. If they find that the claim was made carelessly or deliberately, they can charge penalties of up to 30% or 100% of the tax underpaid. This is why proper documentation and professional advice are essential before submitting a claim.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Custom software built for clients can qualify for R&D tax credits if it resolves technical uncertainty, regardless of IP ownership.
+- HMRC's test requires an advance in science or technology and uncertainty not readily deducible by a competent professional.
+- Client-funded projects are not automatically excluded; the deciding factor is technical uncertainty, not who pays.
+- Standard builds using well-known tools do not qualify, but novel sub-projects within a client project may be claimable.
+- The SME R&D tax credit does not require the claimant to own the IP generated from the qualifying project.
 ---
-
 <p>If you run a digital agency that builds custom software for clients, you have almost certainly wondered whether the work qualifies for R&D tax credits. And you have probably been told it doesn't, because the software belongs to the client, not you.</p>
 
 <p>That advice is half-right and half-wrong. And the wrong half could be costing your agency tens of thousands of pounds.</p>

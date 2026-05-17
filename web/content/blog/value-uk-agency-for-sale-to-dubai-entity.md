@@ -1,33 +1,40 @@
 ---
-title: "How Do I Value My UK Agency for a Potential Sale to a Dubai Entity?"
-slug: "value-uk-agency-for-sale-to-dubai-entity"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/value-uk-agency-for-sale-to-dubai-entity"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Value UK Agency for Sale to Dubai Entity: A Practical Guide"
-metaDescription: "Learn how to value your UK agency for a sale to a Dubai buyer. HMRC will scrutinise the price. We cover transfer pricing, methods, and what to get right."
-altText: "Two agency founders reviewing a valuation report in a modern London office with Dubai skyline on a screen"
-image: "/blog/value-uk-agency-for-sale-to-dubai-entity.jpg"
+title: How Do I Value My UK Agency for a Potential Sale to a Dubai Entity?
+slug: value-uk-agency-for-sale-to-dubai-entity
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/value-uk-agency-for-sale-to-dubai-entity
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Value UK Agency for Sale to Dubai Entity: A Practical Guide'
+metaDescription: Learn how to value your UK agency for a sale to a Dubai buyer. HMRC will scrutinise the price. We cover transfer pricing, methods, and what to get right.
+altText: Two agency founders reviewing a valuation report in a modern London office with Dubai skyline on a screen
+image: /blog/value-uk-agency-for-sale-to-dubai-entity.jpg
 imageCredit:
-  photographer: "Ann H"
-  photographerUrl: "https://www.pexels.com/@ann-h-45017"
-  sourceUrl: "https://www.pexels.com/photo/pink-background-with-value-text-in-bold-letters-33137139/"
-  source: "Pexels"
-h1: "How Do I Value My UK Agency for a Potential Sale to a Dubai Entity?"
-summary: "Selling your UK agency to a Dubai entity isn’t just about agreeing a price. HMRC will check the valuation is at arm’s length. This guide covers the methods, the tax risks, and the documentation you’ll need to satisfy both sides."
-schema: ""
+  photographer: Ann H
+  photographerUrl: https://www.pexels.com/@ann-h-45017
+  sourceUrl: https://www.pexels.com/photo/pink-background-with-value-text-in-bold-letters-33137139/
+  source: Pexels
+h1: How Do I Value My UK Agency for a Potential Sale to a Dubai Entity?
+summary: Selling your UK agency to a Dubai entity isn’t just about agreeing a price. HMRC will check the valuation is at arm’s length. This guide covers the methods, the tax risks, and the documentation you’ll need to satisfy both sides.
+schema: ''
 faqs:
-  - question: "Do I have to use a formal valuation report for a Dubai sale?"
-    answer: "Yes, if the transaction is material. HMRC can request transfer pricing documentation for any connected-party transaction. A formal valuation report from a qualified professional — an ICAEW chartered accountant or corporate finance specialist — provides the evidence you need. Without it, HMRC can challenge the price and impose penalties. For deals over £500k, a report is standard."
-  - question: "What happens if I undervalue my agency to reduce UK tax?"
-    answer: "HMRC will treat the undervaluation as a distribution of profits or a deemed employment benefit. You’ll pay tax at your marginal rate — up to 45% plus dividend tax — on the difference between the arm’s length value and the sale price. Penalties can add 30-100% of the tax due. The arm’s length principle is non-negotiable."
-  - question: "Can I use a simple EBITDA multiple to value my agency?"
-    answer: "You can, but you must justify the multiple. A 3x multiple on £500k EBITDA gives £1.5m, but that’s only valid if comparable agencies have sold at that multiple. HMRC will want to see your comparables and adjustments. For agencies with a strong retainer book, multiples of 4-6x are common. For project-based agencies, 2-4x is more typical. Document your reasoning."
-  - question: "Does the Dubai buyer need to have substance in the UAE?"
-    answer: "Yes, HMRC will look at whether the Dubai entity has real economic substance — an office, employees, bank account, and business activity. If the buyer is a shell company with no substance, HMRC may treat the transaction as tax avoidance. The UAE has economic substance regulations that require companies to demonstrate substance. Your buyer should be compliant."
+- question: Do I have to use a formal valuation report for a Dubai sale?
+  answer: Yes, if the transaction is material. HMRC can request transfer pricing documentation for any connected-party transaction. A formal valuation report from a qualified professional — an ICAEW chartered accountant or corporate finance specialist — provides the evidence you need. Without it, HMRC can challenge the price and impose penalties. For deals over £500k, a report is standard.
+- question: What happens if I undervalue my agency to reduce UK tax?
+  answer: HMRC will treat the undervaluation as a distribution of profits or a deemed employment benefit. You’ll pay tax at your marginal rate — up to 45% plus dividend tax — on the difference between the arm’s length value and the sale price. Penalties can add 30-100% of the tax due. The arm’s length principle is non-negotiable.
+- question: Can I use a simple EBITDA multiple to value my agency?
+  answer: You can, but you must justify the multiple. A 3x multiple on £500k EBITDA gives £1.5m, but that’s only valid if comparable agencies have sold at that multiple. HMRC will want to see your comparables and adjustments. For agencies with a strong retainer book, multiples of 4-6x are common. For project-based agencies, 2-4x is more typical. Document your reasoning.
+- question: Does the Dubai buyer need to have substance in the UAE?
+  answer: Yes, HMRC will look at whether the Dubai entity has real economic substance — an office, employees, bank account, and business activity. If the buyer is a shell company with no substance, HMRC may treat the transaction as tax avoidance. The UAE has economic substance regulations that require companies to demonstrate substance. Your buyer should be compliant.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- HMRC requires any sale between a UK agency and a connected Dubai entity to be priced at arm's length under transfer pricing rules.
+- The market approach uses UK comparable transactions, not UAE ones, to justify the valuation to HMRC.
+- The income approach (discounted cash flow) is often the most defensible method, requiring clear assumptions on revenue, EBITDA, and discount rate.
+- The asset approach provides a floor value but is rarely primary for agencies, as key assets like goodwill and client relationships are intangible.
+- Transfer pricing documentation must be prepared and retained for up to 12 months after the transaction, as HMRC can request it at any time.
 ---
-
 <h2>Why a Dubai Buyer Changes the Valuation Game</h2>
 
 <p>If you’re thinking about selling your UK agency to a Dubai entity, you’re not alone. The UAE has become a magnet for agency founders looking to expand, restructure, or exit into a lower-tax jurisdiction. But the valuation you agree with a Dubai buyer isn’t just a commercial negotiation. It’s a tax event that HMRC will examine closely.</p>

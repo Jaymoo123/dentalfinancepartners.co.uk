@@ -1,25 +1,32 @@
 ---
-title: "How to Automate Quarterly MTD ITSA Updates for Your Agency Without an Accountant"
-slug: "automate-mtd-itsa-updates-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/automate-mtd-itsa-updates-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Making Tax Digital"
-metaTitle: "Automate MTD ITSA quarterly updates for your agency"
-metaDescription: "Learn how to automate MTD ITSA updates for your agency without an accountant. Step-by-step guide to compliant quarterly reporting using Xero, FreeAgent"
-altText: "Agency founder reviewing quarterly MTD ITSA update on laptop in modern UK office"
-image: "/blog/automate-mtd-itsa-updates-agency.jpg"
+title: How to Automate Quarterly MTD ITSA Updates for Your Agency Without an Accountant
+slug: automate-mtd-itsa-updates-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/automate-mtd-itsa-updates-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Making Tax Digital
+metaTitle: Automate MTD ITSA quarterly updates for your agency
+metaDescription: Learn how to automate MTD ITSA updates for your agency without an accountant. Step-by-step guide to compliant quarterly reporting using Xero, FreeAgent
+altText: Agency founder reviewing quarterly MTD ITSA update on laptop in modern UK office
+image: /blog/automate-mtd-itsa-updates-agency.jpg
 imageCredit:
-  photographer: "Ann H"
-  photographerUrl: "https://www.pexels.com/@ann-h-45017"
-  sourceUrl: "https://www.pexels.com/photo/wooden-letters-spelling-update-on-burlap-31984651/"
-  source: "Pexels"
-h1: "How to Automate Quarterly MTD ITSA Updates for Your Agency Without an Accountant"
-summary: "Making Tax Digital for Income Tax Self Assessment (MTD ITSA) starts in April 2026 for agencies turning over £50k+. Here's how to automate those quarterly updates yourself, without paying an accountant to key in numbers you already have."
-schema: ""
+  photographer: Ann H
+  photographerUrl: https://www.pexels.com/@ann-h-45017
+  sourceUrl: https://www.pexels.com/photo/wooden-letters-spelling-update-on-burlap-31984651/
+  source: Pexels
+h1: How to Automate Quarterly MTD ITSA Updates for Your Agency Without an Accountant
+summary: Making Tax Digital for Income Tax Self Assessment (MTD ITSA) starts in April 2026 for agencies turning over £50k+. Here's how to automate those quarterly updates yourself, without paying an accountant to key in numbers you already have.
+schema: ''
 faqs: []
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- MTD ITSA requires quarterly updates from April 2026 for agencies with self-employment income over £50,000, replacing the annual Self Assessment return.
+- You can automate MTD ITSA updates using compatible software like Xero or FreeAgent, which connect to bank feeds and generate quarterly summaries directly.
+- Quarterly updates cover income and expenses from self-employment; dividend income from a limited company is reported on the final declaration.
+- Automation reduces errors and saves time—aim for less than one hour per quarter by keeping digital records and using bank rules for categorisation.
+- HMRC's MTD ITSA rollout is mandatory from April 2026 for income over £50,000 and from April 2027 for income over £30,000.
 ---
-
 <p>Making Tax Digital for Income Tax Self Assessment (MTD ITSA) arrives in April 2026. If your agency turns over more than £50,000 from self-employment (sole trader or partnership), you will be required to send quarterly updates to HMRC. Not annual returns. Four updates per year, plus an end-of-period statement and a final declaration.</p>
 
 <p>The good news? You can <strong>automate MTD ITSA updates for your agency</strong> without hiring an accountant to do the data entry. The software handles the heavy lifting. Your job is to keep the records clean and check the numbers before they go out.</p>

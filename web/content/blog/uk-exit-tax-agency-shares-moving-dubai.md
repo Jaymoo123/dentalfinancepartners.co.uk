@@ -1,33 +1,40 @@
 ---
-title: "Do I Pay UK Exit Tax on My Agency Shares If I Move to Dubai?"
-slug: "uk-exit-tax-agency-shares-moving-dubai"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-exit-tax-agency-shares-moving-dubai"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK Exit Tax on Shares: Moving to Dubai with Agency Shares"
-metaDescription: "No automatic exit charge on unlisted agency shares when moving to Dubai. But anti-avoidance rules on deemed disposal apply. Here's what you need to check"
-altText: "UK agency founder reviewing tax implications of moving to Dubai with unlisted shares"
-image: "/blog/uk-exit-tax-agency-shares-moving-dubai.jpg"
+title: Do I Pay UK Exit Tax on My Agency Shares If I Move to Dubai?
+slug: uk-exit-tax-agency-shares-moving-dubai
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-exit-tax-agency-shares-moving-dubai
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK Exit Tax on Shares: Moving to Dubai with Agency Shares'
+metaDescription: No automatic exit charge on unlisted agency shares when moving to Dubai. But anti-avoidance rules on deemed disposal apply. Here's what you need to check
+altText: UK agency founder reviewing tax implications of moving to Dubai with unlisted shares
+image: /blog/uk-exit-tax-agency-shares-moving-dubai.jpg
 imageCredit:
-  photographer: "Leeloo The First"
-  photographerUrl: "https://www.pexels.com/@leeloothefirst"
-  sourceUrl: "https://www.pexels.com/photo/money-on-the-white-form-beside-the-letter-blocks-8970309/"
-  source: "Pexels"
-h1: "Do I Pay UK Exit Tax on My Agency Shares If I Move to Dubai?"
-summary: "Moving to Dubai doesn't trigger an automatic exit tax on your unlisted agency shares. But HMRC's anti-avoidance rules around deemed disposal can catch you out if your structure isn't clean. Here's what to check before you leave."
-schema: ""
+  photographer: Leeloo The First
+  photographerUrl: https://www.pexels.com/@leeloothefirst
+  sourceUrl: https://www.pexels.com/photo/money-on-the-white-form-beside-the-letter-blocks-8970309/
+  source: Pexels
+h1: Do I Pay UK Exit Tax on My Agency Shares If I Move to Dubai?
+summary: Moving to Dubai doesn't trigger an automatic exit tax on your unlisted agency shares. But HMRC's anti-avoidance rules around deemed disposal can catch you out if your structure isn't clean. Here's what to check before you leave.
+schema: ''
 faqs:
-  - question: "Do I pay UK capital gains tax if I sell my agency shares while living in Dubai?"
-    answer: "Not if you have been non-resident for at least five complete UK tax years before the sale. If you sell within that five-year window, the gain is taxed in the UK under the temporary non-residence rule. The gain is calculated from your original acquisition cost, not the value when you left."
-  - question: "What is deemed disposal and does it apply to my agency shares?"
-    answer: "Deemed disposal is when HMRC treats you as having sold an asset even though you did not. For most agency founders with direct shareholdings in their own trading company, deemed disposal does not apply. It can apply if you transfer shares into a trust, restructure your shareholding, or trigger a capital event within the company itself."
-  - question: "Can I claim Business Asset Disposal Relief if I sell my shares while non-resident?"
-    answer: "No. BADR requires you to be UK resident at the time of disposal. If you sell while non-resident, you cannot claim the relief. You either sell while UK resident (and pay 14% or 18% on the first £1 million) or wait five years and pay 0% UK tax on the entire gain."
-  - question: "What records do I need to prove I am non-resident in the UK?"
-    answer: "You need evidence of your physical presence in the UAE: flight records, tenancy agreements, utility bills, bank statements showing local spending, and proof of economic activity (employment contract, business registration). HMRC can challenge your residence status years later, so keep records for at least six years after your departure."
+- question: Do I pay UK capital gains tax if I sell my agency shares while living in Dubai?
+  answer: Not if you have been non-resident for at least five complete UK tax years before the sale. If you sell within that five-year window, the gain is taxed in the UK under the temporary non-residence rule. The gain is calculated from your original acquisition cost, not the value when you left.
+- question: What is deemed disposal and does it apply to my agency shares?
+  answer: Deemed disposal is when HMRC treats you as having sold an asset even though you did not. For most agency founders with direct shareholdings in their own trading company, deemed disposal does not apply. It can apply if you transfer shares into a trust, restructure your shareholding, or trigger a capital event within the company itself.
+- question: Can I claim Business Asset Disposal Relief if I sell my shares while non-resident?
+  answer: No. BADR requires you to be UK resident at the time of disposal. If you sell while non-resident, you cannot claim the relief. You either sell while UK resident (and pay 14% or 18% on the first £1 million) or wait five years and pay 0% UK tax on the entire gain.
+- question: What records do I need to prove I am non-resident in the UK?
+  answer: 'You need evidence of your physical presence in the UAE: flight records, tenancy agreements, utility bills, bank statements showing local spending, and proof of economic activity (employment contract, business registration). HMRC can challenge your residence status years later, so keep records for at least six years after your departure.'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Moving to Dubai does not trigger automatic exit tax on unlisted agency shares, but HMRC's anti-avoidance rules can apply.
+- If you sell your agency shares within five complete tax years of leaving the UK, the gain is taxed as if you were still UK resident.
+- To make the gain tax-free in the UK, you must remain non-resident for at least five complete tax years before selling your shares.
+- Deemed disposal rules under section 24 TCGA 1992 allow you to claim a loss if your shares become of negligible value after leaving the UK.
+- Restructuring your shareholding or triggering a capital gains event within your close company while non-resident can create a deemed disposal charge.
 ---
-
 <p>If you own an agency in the UK and you're thinking about moving to Dubai, the question of exit tax on your shares is probably near the top of your list. The short answer is this: if you hold unlisted agency shares (the kind most founders have in their own limited company), there is no automatic exit charge when you leave the UK. But HMRC has anti-avoidance rules that can create a deemed disposal of those shares. Get the timing or structure wrong, and you could face a tax bill you weren't expecting.</p>
 
 <p>This article covers what UK exit tax on shares means for agency founders moving to Dubai, where the traps are, and what to do before you change your tax residence.</p>

@@ -1,31 +1,38 @@
 ---
-title: "How Should a UK Agency Founder Set Up a UAE Free Zone Company for International Operations?"
-slug: "uae-free-zone-company-agency-international-operations"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-free-zone-company-agency-international-operations"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UAE Free Zone Company for UK Agency: Setup Guide"
-metaDescription: "UK agency founders: setting up a UAE free zone company for international operations. Tax rules, residency, substance requirements, and what to watch"
-altText: "Professional workspace in a UAE free zone business centre with agency founder reviewing documents"
-image: "/blog/uae-free-zone-company-agency-international-operations.jpg"
+title: How Should a UK Agency Founder Set Up a UAE Free Zone Company for International Operations?
+slug: uae-free-zone-company-agency-international-operations
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-free-zone-company-agency-international-operations
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UAE Free Zone Company for UK Agency: Setup Guide'
+metaDescription: 'UK agency founders: setting up a UAE free zone company for international operations. Tax rules, residency, substance requirements, and what to watch'
+altText: Professional workspace in a UAE free zone business centre with agency founder reviewing documents
+image: /blog/uae-free-zone-company-agency-international-operations.jpg
 imageCredit:
-  photographer: "Mikael Blomkvist"
-  photographerUrl: "https://www.pexels.com/@mikael-blomkvist"
-  sourceUrl: "https://www.pexels.com/photo/people-sitting-at-the-table-6476256/"
-  source: "Pexels"
-h1: "How to Set Up a UAE Free Zone Company for Your Agency's International Operations"
-summary: "Thinking about a UAE free zone company for your agency's international operations? This guide covers the practical setup process, UK tax implications, substance requirements, and what ICAEW-qualified accountants want you to know before you make the move."
-schema: ""
+  photographer: Mikael Blomkvist
+  photographerUrl: https://www.pexels.com/@mikael-blomkvist
+  sourceUrl: https://www.pexels.com/photo/people-sitting-at-the-table-6476256/
+  source: Pexels
+h1: How to Set Up a UAE Free Zone Company for Your Agency's International Operations
+summary: Thinking about a UAE free zone company for your agency's international operations? This guide covers the practical setup process, UK tax implications, substance requirements, and what ICAEW-qualified accountants want you to know before you make the move.
+schema: ''
 faqs:
-  - question: "Do I need to close my UK agency company to set up a UAE free zone company?"
-    answer: "Not necessarily. Many founders keep their UK company dormant or use it for UK-based clients while routing international work through the UAE entity. But you need to be careful about transfer pricing and tax residence. If both companies are controlled by you and you are UK resident, HMRC can argue the UAE company is effectively UK tax resident. Speak to your accountant before keeping both active."
-  - question: "Can I use a virtual office in a UAE free zone and still meet substance requirements?"
-    answer: "No. A virtual or flexi-desk does not meet the UAE's Economic Substance Regulations. You need a physical office that you actually use for management and decision-making. Some free zones offer serviced offices that count, but a PO box and a mailing address will not pass an ESR review or an HMRC enquiry."
-  - question: "What happens to my UK corporation tax if I move my agency to a UAE free zone company?"
-    answer: "If you become non-UK resident and your UAE company is genuinely managed from the UAE, the UAE company's profits are not subject to UK corporation tax. But if you remain UK resident, or if HMRC determines the company's central management is in the UK, you will owe UK corporation tax"
+- question: Do I need to close my UK agency company to set up a UAE free zone company?
+  answer: Not necessarily. Many founders keep their UK company dormant or use it for UK-based clients while routing international work through the UAE entity. But you need to be careful about transfer pricing and tax residence. If both companies are controlled by you and you are UK resident, HMRC can argue the UAE company is effectively UK tax resident. Speak to your accountant before keeping both active.
+- question: Can I use a virtual office in a UAE free zone and still meet substance requirements?
+  answer: No. A virtual or flexi-desk does not meet the UAE's Economic Substance Regulations. You need a physical office that you actually use for management and decision-making. Some free zones offer serviced offices that count, but a PO box and a mailing address will not pass an ESR review or an HMRC enquiry.
+- question: What happens to my UK corporation tax if I move my agency to a UAE free zone company?
+  answer: If you become non-UK resident and your UAE company is genuinely managed from the UAE, the UAE company's profits are not subject to UK corporation tax. But if you remain UK resident, or if HMRC determines the company's central management is in the UK, you will owe UK corporation tax
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A UAE free zone company offers zero corporation and personal income tax, but UK tax charges can arise if you remain UK resident.
+- To avoid UK tax on UAE income, you must become non-UK resident, typically by spending fewer than 16 days in the UK per tax year.
+- HMRC requires genuine economic substance in the UAE, including a physical office, local bank account, and active management from the UAE.
+- UK dividend tax rates of 8.75% to 39.35% do not apply if you are non-UK resident and the UAE company is your tax residence.
+- The UAE introduced a 9% corporate tax from June 2023, but free zone companies meeting substance conditions may still qualify for 0% tax.
 ---
-
 <p>If you run a UK agency and your client base is shifting international, or you are spending significant time in the Middle East, a UAE free zone company might be on your radar. The pitch is attractive: zero corporation tax, zero personal income tax, and a base in Dubai or Abu Dhabi that signals credibility to clients in the region.</p>
 
 <p>But the gap between "it sounds good" and "it works for my agency" is wider than most founders expect. I have sat with agency owners who moved too fast, triggered UK tax charges they did not see coming, or set up structures that HMRC later challenged. The setup itself is straightforward. The UK tax and substance requirements are where it gets complicated.</p>

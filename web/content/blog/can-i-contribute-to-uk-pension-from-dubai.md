@@ -1,33 +1,40 @@
 ---
-title: "Can I Still Contribute to My UK Pension After Moving to Dubai?"
-slug: "can-i-contribute-to-uk-pension-from-dubai"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/can-i-contribute-to-uk-pension-from-dubai"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Contribute to UK pension from Dubai: rules for agency"
-metaDescription: "UK agency founders moving to Dubai can still pay into a UK pension, but lose tax relief without UK earnings. Here is how to structure contributions"
-altText: "UK agency founder working on laptop in Dubai office with pension documents on desk"
-image: "/blog/can-i-contribute-to-uk-pension-from-dubai.jpg"
+title: Can I Still Contribute to My UK Pension After Moving to Dubai?
+slug: can-i-contribute-to-uk-pension-from-dubai
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/can-i-contribute-to-uk-pension-from-dubai
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Contribute to UK pension from Dubai: rules for agency'
+metaDescription: UK agency founders moving to Dubai can still pay into a UK pension, but lose tax relief without UK earnings. Here is how to structure contributions
+altText: UK agency founder working on laptop in Dubai office with pension documents on desk
+image: /blog/can-i-contribute-to-uk-pension-from-dubai.jpg
 imageCredit:
-  photographer: "Thirdman"
-  photographerUrl: "https://www.pexels.com/@thirdman"
-  sourceUrl: "https://www.pexels.com/photo/yellow-text-on-black-background-5981818/"
-  source: "Pexels"
-h1: "Can I Still Contribute to My UK Pension After Moving to Dubai?"
-summary: "Moving your agency life to Dubai does not mean you have to abandon your UK pension. But the rules around tax relief change significantly when you no longer have UK earnings. Here is what agency founders need to know before writing that cheque."
-schema: ""
+  photographer: Thirdman
+  photographerUrl: https://www.pexels.com/@thirdman
+  sourceUrl: https://www.pexels.com/photo/yellow-text-on-black-background-5981818/
+  source: Pexels
+h1: Can I Still Contribute to My UK Pension After Moving to Dubai?
+summary: Moving your agency life to Dubai does not mean you have to abandon your UK pension. But the rules around tax relief change significantly when you no longer have UK earnings. Here is what agency founders need to know before writing that cheque.
+schema: ''
 faqs:
-  - question: "Can I still get UK pension tax relief if I live in Dubai?"
-    answer: "Only if you have relevant UK earnings, such as a salary from a UK company. If you have no UK earnings, you can still contribute up to £3,600 per year gross (£2,880 net) and receive basic rate relief. Anything above that receives no relief."
-  - question: "What happens to my existing UK pension when I move to Dubai?"
-    answer: "Your pension stays where it is. You can continue to manage it, switch funds, and eventually draw it down. Your provider may need to update your address and tax status. Some providers restrict certain services for non-residents, so check with them directly."
-  - question: "Can I transfer my UK pension to a Dubai scheme?"
-    answer: "Yes, through a Qualifying Recognised Overseas Pension Scheme (QROPS). But the costs are high, and HMRC has tightened the rules. We generally advise agency founders to think carefully before transferring. Speak to a cross-border pensions specialist before making that decision."
-  - question: "Can I contribute to an ISA after moving to Dubai?"
-    answer: "No. The £20,000 annual ISA allowance is only available to UK residents. You can keep your existing ISAs and they continue to grow tax-free, but you cannot add new money to them while living in Dubai."
+- question: Can I still get UK pension tax relief if I live in Dubai?
+  answer: Only if you have relevant UK earnings, such as a salary from a UK company. If you have no UK earnings, you can still contribute up to £3,600 per year gross (£2,880 net) and receive basic rate relief. Anything above that receives no relief.
+- question: What happens to my existing UK pension when I move to Dubai?
+  answer: Your pension stays where it is. You can continue to manage it, switch funds, and eventually draw it down. Your provider may need to update your address and tax status. Some providers restrict certain services for non-residents, so check with them directly.
+- question: Can I transfer my UK pension to a Dubai scheme?
+  answer: Yes, through a Qualifying Recognised Overseas Pension Scheme (QROPS). But the costs are high, and HMRC has tightened the rules. We generally advise agency founders to think carefully before transferring. Speak to a cross-border pensions specialist before making that decision.
+- question: Can I contribute to an ISA after moving to Dubai?
+  answer: No. The £20,000 annual ISA allowance is only available to UK residents. You can keep your existing ISAs and they continue to grow tax-free, but you cannot add new money to them while living in Dubai.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- You can still contribute to a UK pension from Dubai, but you lose tax relief on contributions above £3,600 per year.
+- Without relevant UK earnings, HMRC will not add the 20% or 40% top-up to your pension contributions.
+- You can contribute up to £3,600 gross (£2,880 net) per year and still receive basic rate tax relief, even as a non-UK resident.
+- If your UK company pays you a director's salary, that counts as relevant UK earnings and supports higher pension contributions with tax relief.
+- Contributions above £3,600 require relevant UK earnings; otherwise, they are made from already-taxed or untaxed income with no relief.
 ---
-
 <p>If you are a UK agency founder who has moved to Dubai, you have probably already noticed the obvious benefits: zero personal income tax, a lower cost of living for certain things, and a lifestyle that makes the British winter feel like a distant memory. But one question comes up repeatedly in our meetings: can I still contribute to my UK pension from Dubai?</p>
 
 <p>The short answer is yes. You can still pay money into a UK pension scheme from your UAE income. But the tax treatment changes in ways that matter. And if you do not plan for it, you could lose thousands of pounds in tax relief you would have got as a UK resident.</p>

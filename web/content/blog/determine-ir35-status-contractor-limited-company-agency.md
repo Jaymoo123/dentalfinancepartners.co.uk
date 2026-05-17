@@ -1,33 +1,40 @@
 ---
-title: "How to Determine IR35 Status for a Contractor Who Works Through Your Agency but Has Their Own Limited Company"
-slug: "determine-ir35-status-contractor-limited-company-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/determine-ir35-status-contractor-limited-company-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Contractors and IR35"
-metaTitle: "IR35 for Agency Founders: Determine Contractor Status"
-metaDescription: "IR35 agency founders must assess contractors with limited companies. We explain the SDS process, CEST tool limits, and when to take professional advice."
-altText: "Agency founder reviewing contractor IR35 status determination documents at desk in modern UK office"
-image: "/blog/determine-ir35-status-contractor-limited-company-agency.jpg"
+title: How to Determine IR35 Status for a Contractor Who Works Through Your Agency but Has Their Own Limited Company
+slug: determine-ir35-status-contractor-limited-company-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35/determine-ir35-status-contractor-limited-company-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Contractors and IR35
+metaTitle: 'IR35 for Agency Founders: Determine Contractor Status'
+metaDescription: IR35 agency founders must assess contractors with limited companies. We explain the SDS process, CEST tool limits, and when to take professional advice.
+altText: Agency founder reviewing contractor IR35 status determination documents at desk in modern UK office
+image: /blog/determine-ir35-status-contractor-limited-company-agency.jpg
 imageCredit:
-  photographer: "Thirdman"
-  photographerUrl: "https://www.pexels.com/@thirdman"
-  sourceUrl: "https://www.pexels.com/photo/people-checking-a-wall-using-a-level-bar-8470036/"
-  source: "Pexels"
-h1: "How to Determine IR35 Status for a Contractor Who Works Through Your Agency but Has Their Own Limited Company"
-summary: "If your agency engages contractors who operate through their own limited company, you are responsible for determining their IR35 status. Here is exactly how to do that, what HMRC expects, and where most agency founders get it wrong."
-schema: ""
+  photographer: Thirdman
+  photographerUrl: https://www.pexels.com/@thirdman
+  sourceUrl: https://www.pexels.com/photo/people-checking-a-wall-using-a-level-bar-8470036/
+  source: Pexels
+h1: How to Determine IR35 Status for a Contractor Who Works Through Your Agency but Has Their Own Limited Company
+summary: If your agency engages contractors who operate through their own limited company, you are responsible for determining their IR35 status. Here is exactly how to do that, what HMRC expects, and where most agency founders get it wrong.
+schema: ''
 faqs:
-  - question: "What is a Status Determination Statement and when must I issue it?"
-    answer: "A Status Determination Statement (SDS) is a formal document stating whether a contractor is inside or outside IR35, with your reasoning. You must issue it before the contractor starts work, and send copies to both the contractor and the end client. Keep a copy for at least six years after the engagement ends."
-  - question: "Can I use HMRC's CEST tool as my only IR35 check?"
-    answer: "CEST is a useful starting point, but it is not reliable for complex arrangements. It works best for straightforward cases where the contractor works full-time for one client on site. For contractors with genuine substitution rights, multiple clients, or their own business structure, take professional advice. HMRC has lost tribunal cases where CEST gave the wrong answer."
-  - question: "What happens if I determine a contractor is outside IR35 but HMRC disagrees later?"
-    answer: "If HMRC challenges your determination and wins, you become liable for the unpaid tax, employer NI, interest, and potentially penalties. This is why keeping detailed records of your reasoning is essential. If you followed a reasonable process based on the actual working practices, you have a stronger defence. Professional advice reduces this risk significantly."
-  - question: "Do I need to reassess IR35 status for contractors who have been with my agency for years?"
-    answer: "Yes. Review every contractor's IR35 status at least annually, or whenever their working arrangements change. A contractor who starts outside IR35 may move inside if they become more integrated into your team, work longer hours, or lose their substitution right. Reissue the SDS after each review."
+- question: What is a Status Determination Statement and when must I issue it?
+  answer: A Status Determination Statement (SDS) is a formal document stating whether a contractor is inside or outside IR35, with your reasoning. You must issue it before the contractor starts work, and send copies to both the contractor and the end client. Keep a copy for at least six years after the engagement ends.
+- question: Can I use HMRC's CEST tool as my only IR35 check?
+  answer: CEST is a useful starting point, but it is not reliable for complex arrangements. It works best for straightforward cases where the contractor works full-time for one client on site. For contractors with genuine substitution rights, multiple clients, or their own business structure, take professional advice. HMRC has lost tribunal cases where CEST gave the wrong answer.
+- question: What happens if I determine a contractor is outside IR35 but HMRC disagrees later?
+  answer: If HMRC challenges your determination and wins, you become liable for the unpaid tax, employer NI, interest, and potentially penalties. This is why keeping detailed records of your reasoning is essential. If you followed a reasonable process based on the actual working practices, you have a stronger defence. Professional advice reduces this risk significantly.
+- question: Do I need to reassess IR35 status for contractors who have been with my agency for years?
+  answer: Yes. Review every contractor's IR35 status at least annually, or whenever their working arrangements change. A contractor who starts outside IR35 may move inside if they become more integrated into your team, work longer hours, or lose their substitution right. Reissue the SDS after each review.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Since April 2021, medium and large agencies must issue a Status Determination Statement (SDS) to every contractor before they start work.
+- If HMRC finds a contractor inside IR35 and you didn't operate PAYE, you become liable for backdated tax, NI, interest, and penalties.
+- A genuine right of substitution is the strongest indicator a contractor is outside IR35; HMRC looks at practice, not just the contract.
+- Control over how, when, and where work is done points towards inside IR35; blurred control weakens the argument for employment.
+- 'Mutuality of obligation (MOO) is a key factor: if the agency must offer work and the contractor must accept it, IR35 likely applies.'
 ---
-
 <p>If your agency engages contractors who work through their own limited company, you are responsible for determining their IR35 status. This is not optional. Since April 2021, medium and large agencies in the UK have been legally required to issue a Status Determination Statement (SDS) to every contractor before they start work. Get it wrong, and HMRC can come after you for the unpaid tax and National Insurance, not the contractor.</p>
 
 <p>This article is written specifically for <strong>IR35 agency founders</strong> who need to understand the process from the agency side. Not from the contractor's side. Not from a generic employer perspective. From your position as the intermediary that engages the contractor and pays their limited company.</p>

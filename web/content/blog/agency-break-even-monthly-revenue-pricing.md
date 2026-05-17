@@ -1,33 +1,40 @@
 ---
-title: "How to Calculate Your Agency's Break-Even Monthly Revenue and Set Pricing Accordingly"
-slug: "agency-break-even-monthly-revenue-pricing"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-break-even-monthly-revenue-pricing"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "Calculate Your Agency's Break-Even Monthly Revenue | Agency"
-metaDescription: "Learn how to calculate your agency's break-even monthly revenue and set pricing that delivers profit. Real numbers, real examples for UK agency founders."
-altText: "Agency founder reviewing a break-even calculation spreadsheet on a laptop in a modern UK office"
-image: "/blog/agency-break-even-monthly-revenue-pricing.jpg"
+title: How to Calculate Your Agency's Break-Even Monthly Revenue and Set Pricing Accordingly
+slug: agency-break-even-monthly-revenue-pricing
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/agency-break-even-monthly-revenue-pricing
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: Calculate Your Agency's Break-Even Monthly Revenue | Agency
+metaDescription: Learn how to calculate your agency's break-even monthly revenue and set pricing that delivers profit. Real numbers, real examples for UK agency founders.
+altText: Agency founder reviewing a break-even calculation spreadsheet on a laptop in a modern UK office
+image: /blog/agency-break-even-monthly-revenue-pricing.jpg
 imageCredit:
-  photographer: "www.kaboompics.com"
-  photographerUrl: "https://www.pexels.com/@karola-g"
-  sourceUrl: "https://www.pexels.com/photo/calculator-and-pen-5412510/"
-  source: "Pexels"
-h1: "How to Calculate Your Agency's Break-Even Monthly Revenue and Set Pricing Accordingly"
-summary: "Most agency founders guess at pricing and hope for profit. This post shows you exactly how to calculate your break-even monthly revenue, then work backwards to set rates that deliver real margin. No theory. Just the numbers."
-schema: ""
+  photographer: www.kaboompics.com
+  photographerUrl: https://www.pexels.com/@karola-g
+  sourceUrl: https://www.pexels.com/photo/calculator-and-pen-5412510/
+  source: Pexels
+h1: How to Calculate Your Agency's Break-Even Monthly Revenue and Set Pricing Accordingly
+summary: Most agency founders guess at pricing and hope for profit. This post shows you exactly how to calculate your break-even monthly revenue, then work backwards to set rates that deliver real margin. No theory. Just the numbers.
+schema: ''
 faqs:
-  - question: "How often should I recalculate my agency's break-even revenue?"
-    answer: "At least quarterly, or whenever you hire someone, change your office, add a service line, or your mix of retainer and project work shifts significantly. If you are growing fast, do it monthly. It takes 30 minutes and prevents expensive mistakes."
-  - question: "What if my break-even number is higher than my current monthly revenue?"
-    answer: "That means you are losing money every month. You have three options: raise prices, cut fixed costs, or increase billable utilisation. In the short term, cut discretionary spending and review every subscription. In the medium term, raise your day rates or retainer fees by at least 15-20% and let low-value clients go."
-  - question: "Should I include my own salary in fixed costs even if I don't pay myself much?"
-    answer: "Yes. Include a realistic market-rate salary for yourself, even if you take less. If you could earn £80,000 employed but only take £24,000 from the agency, your break-even is artificially low. You are subsidising the business with your own time. That is not sustainable."
-  - question: "Does the break-even calculation change for a recruitment agency vs a creative agency?"
-    answer: "The formula is the same, but the inputs differ. Recruitment agencies typically have lower fixed costs and higher variable costs (commission, advertising, screening tools). Creative agencies have higher fixed costs (salaries, software, office space) and lower variable costs. Run the same calculation with your actual numbers. The principle holds for all agency types."
+- question: How often should I recalculate my agency's break-even revenue?
+  answer: At least quarterly, or whenever you hire someone, change your office, add a service line, or your mix of retainer and project work shifts significantly. If you are growing fast, do it monthly. It takes 30 minutes and prevents expensive mistakes.
+- question: What if my break-even number is higher than my current monthly revenue?
+  answer: 'That means you are losing money every month. You have three options: raise prices, cut fixed costs, or increase billable utilisation. In the short term, cut discretionary spending and review every subscription. In the medium term, raise your day rates or retainer fees by at least 15-20% and let low-value clients go.'
+- question: Should I include my own salary in fixed costs even if I don't pay myself much?
+  answer: Yes. Include a realistic market-rate salary for yourself, even if you take less. If you could earn £80,000 employed but only take £24,000 from the agency, your break-even is artificially low. You are subsidising the business with your own time. That is not sustainable.
+- question: Does the break-even calculation change for a recruitment agency vs a creative agency?
+  answer: The formula is the same, but the inputs differ. Recruitment agencies typically have lower fixed costs and higher variable costs (commission, advertising, screening tools). Creative agencies have higher fixed costs (salaries, software, office space) and lower variable costs. Run the same calculation with your actual numbers. The principle holds for all agency types.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Break-even monthly revenue is the minimum income needed to cover all fixed and variable costs, with zero profit or loss.
+- List every fixed cost from bank statements or accounting software, averaging the last three months for accuracy.
+- Express variable costs as a percentage of revenue, typically 25%–40% for project-based agencies.
+- Use your break-even number to work backwards and set pricing that builds in real margin, not guesswork.
+- Without a break-even calculation, agencies risk burning cash and founders working 60-hour weeks for less than employed pay.
 ---
-
 <h2>Most Agency Founders Get Pricing Wrong Because They Skip This Step</h2>
 
 <p>You cannot set pricing until you know your break-even number. It is that direct.</p>

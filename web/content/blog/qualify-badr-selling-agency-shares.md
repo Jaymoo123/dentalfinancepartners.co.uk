@@ -1,33 +1,40 @@
 ---
-title: "How to Qualify for BADR When Selling Your Agency Shares"
-slug: "qualify-badr-selling-agency-shares"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/qualify-badr-selling-agency-shares"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Qualify BADR Selling Agency Shares: 5 Key Rules"
-metaDescription: "To qualify BADR selling agency shares, you need 5% ownership, 2-year holding, and director/employee status. Miss one rule and you pay 20% CGT instead"
-altText: "Agency founder reviewing share sale documents with ICAEW qualified accountant in a UK office meeting room"
-image: "/blog/qualify-badr-selling-agency-shares.jpg"
+title: How to Qualify for BADR When Selling Your Agency Shares
+slug: qualify-badr-selling-agency-shares
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/qualify-badr-selling-agency-shares
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'Qualify BADR Selling Agency Shares: 5 Key Rules'
+metaDescription: To qualify BADR selling agency shares, you need 5% ownership, 2-year holding, and director/employee status. Miss one rule and you pay 20% CGT instead
+altText: Agency founder reviewing share sale documents with ICAEW qualified accountant in a UK office meeting room
+image: /blog/qualify-badr-selling-agency-shares.jpg
 imageCredit:
-  photographer: "energepic.com"
-  photographerUrl: "https://www.pexels.com/@energepic-com-27411"
-  sourceUrl: "https://www.pexels.com/photo/close-up-photo-of-monitor-159888/"
-  source: "Pexels"
-h1: "How to Qualify for Business Asset Disposal Relief When Selling Your Agency Shares"
-summary: "Business Asset Disposal Relief (formerly Entrepreneurs' Relief) lets you pay 14% Capital Gains Tax instead of 24% when you sell your agency shares (2025/26 rate, rising to 18% from April 2026). But the rules are precise. Miss one condition and you lose the relief entirely. Here is exactly what you need to meet, and the traps that catch agency founders out."
-schema: ""
+  photographer: energepic.com
+  photographerUrl: https://www.pexels.com/@energepic-com-27411
+  sourceUrl: https://www.pexels.com/photo/close-up-photo-of-monitor-159888/
+  source: Pexels
+h1: How to Qualify for Business Asset Disposal Relief When Selling Your Agency Shares
+summary: Business Asset Disposal Relief (formerly Entrepreneurs' Relief) lets you pay 14% Capital Gains Tax instead of 24% when you sell your agency shares (2025/26 rate, rising to 18% from April 2026). But the rules are precise. Miss one condition and you lose the relief entirely. Here is exactly what you need to meet, and the traps that catch agency founders out.
+schema: ''
 faqs:
-  - question: "Can I claim BADR if I sell my agency's assets instead of shares?"
-    answer: "No. BADR only applies to the disposal of shares in a trading company. If you sell the business assets (client contracts, equipment, goodwill) directly, you pay 20% CGT on the gain. Always structure an agency sale as a share sale if you want the 10% rate. If the buyer insists on an asset purchase, you lose the relief."
-  - question: "What happens if I hold less than 5% of the shares but my spouse holds the rest?"
-    answer: "You cannot combine your holding with your spouse's to meet the 5% test. Each shareholder is assessed individually. If you hold 3% and your spouse holds 7%, your spouse qualifies for BADR on their shares. You do not. The only exception is shares held jointly, which are treated as a single holding."
-  - question: "Does the two-year holding period reset if I transfer shares into a holding company?"
-    answer: "Yes, it typically resets. A share-for-share exchange into a holding company is treated as a disposal of the original shares and acquisition of new shares. The two-year holding period starts from the date of the exchange. If you did this 18 months before sale, you do not qualify. Plan the exchange at least two years before your target exit date."
-  - question: "Can I claim BADR on shares I received as part of an EMI scheme?"
-    answer: "Yes, but with a different holding period. For shares acquired under an Enterprise Management Incentive (EMI) scheme, you only need to hold them for 12 months (not 24) to qualify for BADR, provided the other conditions are met. EMI shares also benefit from no income tax on the growth in value. This is a powerful combination for agency founders using EMI schemes to incentivise key staff."
+- question: Can I claim BADR if I sell my agency's assets instead of shares?
+  answer: No. BADR only applies to the disposal of shares in a trading company. If you sell the business assets (client contracts, equipment, goodwill) directly, you pay 20% CGT on the gain. Always structure an agency sale as a share sale if you want the 10% rate. If the buyer insists on an asset purchase, you lose the relief.
+- question: What happens if I hold less than 5% of the shares but my spouse holds the rest?
+  answer: You cannot combine your holding with your spouse's to meet the 5% test. Each shareholder is assessed individually. If you hold 3% and your spouse holds 7%, your spouse qualifies for BADR on their shares. You do not. The only exception is shares held jointly, which are treated as a single holding.
+- question: Does the two-year holding period reset if I transfer shares into a holding company?
+  answer: Yes, it typically resets. A share-for-share exchange into a holding company is treated as a disposal of the original shares and acquisition of new shares. The two-year holding period starts from the date of the exchange. If you did this 18 months before sale, you do not qualify. Plan the exchange at least two years before your target exit date.
+- question: Can I claim BADR on shares I received as part of an EMI scheme?
+  answer: Yes, but with a different holding period. For shares acquired under an Enterprise Management Incentive (EMI) scheme, you only need to hold them for 12 months (not 24) to qualify for BADR, provided the other conditions are met. EMI shares also benefit from no income tax on the growth in value. This is a powerful combination for agency founders using EMI schemes to incentivise key staff.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- BADR reduces Capital Gains Tax to 14% on the first £1m of lifetime gains from selling agency shares in 2025/26, rising to 18% from April 2026.
+- You must be a director or employee of the agency for at least 12 months before the sale; being a shareholder only does not qualify.
+- You must hold at least 5% of the ordinary share capital and be entitled to 5% of profits, assets on winding up, and sale proceeds.
+- Selling assets rather than shares disqualifies you from BADR; always structure an agency sale as a share sale to claim the relief.
+- Share structure changes, payroll non-compliance, or undocumented director roles within 12 months of sale can cause you to lose BADR entirely.
 ---
-
 <p>If you own a marketing agency, digital agency, or creative agency and you are thinking about selling your shares, Business Asset Disposal Relief (BADR) is probably the single most valuable tax relief you will ever use.</p>
 
 <p>BADR reduces your Capital Gains Tax (CGT) rate from 20% to 14% on the first £1m of lifetime gains. For an agency founder selling shares worth £800,000, that is a saving of £80,000 compared to the standard rate. On a full £1 million gain, you save £100,000.</p>

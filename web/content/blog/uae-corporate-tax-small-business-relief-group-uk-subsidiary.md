@@ -1,33 +1,40 @@
 ---
-title: "UAE Corporate Tax Small Business Relief: Why Your 3M AED Revenue Agency Might Not Qualify If You Have a UK Subsidiary"
-slug: "uae-corporate-tax-small-business-relief-group-uk-subsidiary"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-small-business-relief-group-uk-subsidiary"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UAE Corporate Tax Small Business Relief: 3M AED Group Limit"
-metaDescription: "UAE Corporate Tax Small Business Relief has a 3M AED revenue threshold. But if you own a UK subsidiary, the group test applies. Here is what agency"
-altText: "UAE agency founder reviewing corporate tax documents in a Dubai office with laptop and paperwork"
-image: "/blog/uae-corporate-tax-small-business-relief-group-uk-subsidiary.jpg"
+title: 'UAE Corporate Tax Small Business Relief: Why Your 3M AED Revenue Agency Might Not Qualify If You Have a UK Subsidiary'
+slug: uae-corporate-tax-small-business-relief-group-uk-subsidiary
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-small-business-relief-group-uk-subsidiary
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UAE Corporate Tax Small Business Relief: 3M AED Group Limit'
+metaDescription: UAE Corporate Tax Small Business Relief has a 3M AED revenue threshold. But if you own a UK subsidiary, the group test applies. Here is what agency
+altText: UAE agency founder reviewing corporate tax documents in a Dubai office with laptop and paperwork
+image: /blog/uae-corporate-tax-small-business-relief-group-uk-subsidiary.jpg
 imageCredit:
-  photographer: "Leeloo The First"
-  photographerUrl: "https://www.pexels.com/@leeloothefirst"
-  sourceUrl: "https://www.pexels.com/photo/an-eyeglasses-on-top-of-the-documents-8962452/"
-  source: "Pexels"
-h1: "UAE Corporate Tax Small Business Relief: Why Your 3M AED Revenue Agency Might Not Qualify If You Have a UK Subsidiary"
-summary: "The UAE Corporate Tax Small Business Relief offers a 0% rate on taxable income up to 3M AED. But there is a catch most agency groups miss: if you have a UK subsidiary, the 3M AED test applies to the entire group's revenue, not just your UAE entity. Here is how to check whether you qualify, and what to do if you do not."
-schema: ""
+  photographer: Leeloo The First
+  photographerUrl: https://www.pexels.com/@leeloothefirst
+  sourceUrl: https://www.pexels.com/photo/an-eyeglasses-on-top-of-the-documents-8962452/
+  source: Pexels
+h1: 'UAE Corporate Tax Small Business Relief: Why Your 3M AED Revenue Agency Might Not Qualify If You Have a UK Subsidiary'
+summary: 'The UAE Corporate Tax Small Business Relief offers a 0% rate on taxable income up to 3M AED. But there is a catch most agency groups miss: if you have a UK subsidiary, the 3M AED test applies to the entire group''s revenue, not just your UAE entity. Here is how to check whether you qualify, and what to do if you do not.'
+schema: ''
 faqs:
-  - question: "What is the revenue threshold for UAE Corporate Tax Small Business Relief?"
-    answer: "The threshold is 3M AED of revenue in the relevant tax period and in all previous tax periods. But the test applies to the entire group's revenue, not just the individual entity. If you have a UK subsidiary, the group's total revenue must be below 3M AED for the relief to apply."
-  - question: "Does a dormant UK company affect UAE Small Business Relief eligibility?"
-    answer: "Yes, a dormant UK company is still a group member. Its revenue is zero, so it does not push the group over the threshold on its own. But if the UK company has any revenue at all, even from dividends, that revenue counts toward the group total. Check your group structure carefully."
-  - question: "Can I restructure my group to avoid the group test for UAE Corporate Tax?"
-    answer: "In theory, yes. But restructuring to avoid a 9% tax rate is usually not worth the cost and complexity. It could trigger UK Capital Gains Tax, affect your exit options, and create compliance headaches. Talk to your accountant before making any changes. The 9% rate is still very low compared to UK Corporation Tax."
-  - question: "What happens if my UAE entity does not qualify for Small Business Relief?"
-    answer: "You pay 9% UAE Corporate Tax on taxable income above 375,000 AED. You must file a full Corporate Tax return, not the simplified return. You may also need to prepare group financial statements. The compliance cost is higher, but the tax rate is still low. Work with an accountant who understands both UAE and UK tax to get it right."
+- question: What is the revenue threshold for UAE Corporate Tax Small Business Relief?
+  answer: The threshold is 3M AED of revenue in the relevant tax period and in all previous tax periods. But the test applies to the entire group's revenue, not just the individual entity. If you have a UK subsidiary, the group's total revenue must be below 3M AED for the relief to apply.
+- question: Does a dormant UK company affect UAE Small Business Relief eligibility?
+  answer: Yes, a dormant UK company is still a group member. Its revenue is zero, so it does not push the group over the threshold on its own. But if the UK company has any revenue at all, even from dividends, that revenue counts toward the group total. Check your group structure carefully.
+- question: Can I restructure my group to avoid the group test for UAE Corporate Tax?
+  answer: In theory, yes. But restructuring to avoid a 9% tax rate is usually not worth the cost and complexity. It could trigger UK Capital Gains Tax, affect your exit options, and create compliance headaches. Talk to your accountant before making any changes. The 9% rate is still very low compared to UK Corporation Tax.
+- question: What happens if my UAE entity does not qualify for Small Business Relief?
+  answer: You pay 9% UAE Corporate Tax on taxable income above 375,000 AED. You must file a full Corporate Tax return, not the simplified return. You may also need to prepare group financial statements. The compliance cost is higher, but the tax rate is still low. Work with an accountant who understands both UAE and UK tax to get it right.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- UAE Corporate Tax Small Business Relief applies a 0% rate on taxable income up to 3M AED, but the revenue test is per group, not per entity.
+- If your agency group includes a UK subsidiary, the 3M AED threshold applies to total worldwide group revenue, not just your UAE entity.
+- Group revenue exceeding 3M AED disqualifies your UAE entity from Small Business Relief, resulting in a 9% tax rate on taxable income above 375,000 AED.
+- Even a dormant UK subsidiary with no revenue counts toward the group revenue test for UAE Small Business Relief.
+- To qualify for Small Business Relief, ensure your entire group's revenue, including UK entities, remains below 3M AED.
 ---
-
 <p>If you run a marketing or digital agency from Dubai, you have probably heard about the UAE Corporate Tax Small Business Relief. The headline is attractive: a 0% rate on taxable income up to 3M AED. That sounds like a straightforward threshold. But there is a catch that catches many UK agency groups off guard.</p>
 
 <p>The 3M AED threshold is not per company. It is per group. And if you have a UK subsidiary, sister company, or parent company anywhere in the world, the test applies to the entire group's revenue. Not just your UAE entity.</p>

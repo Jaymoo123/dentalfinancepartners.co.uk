@@ -1,33 +1,40 @@
 ---
-title: "How Do You Pay Yourself When Your Agency Has a Holding Company and You Are a Director of Both?"
-slug: "pay-yourself-agency-holding-company-director"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/pay-yourself-agency-holding-company-director"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Salary and Dividends"
-metaTitle: "Pay yourself agency founder: holding company & director"
-metaDescription: "How to pay yourself agency founder when you own both a holding company and an agency. Salary, dividends, DLA rules, and tax planning for group structures."
-altText: "Agency founder reviewing financial documents in a modern UK office with a holding company structure diagram visible on a whiteboard"
-image: "/blog/pay-yourself-agency-holding-company-director.jpg"
+title: How Do You Pay Yourself When Your Agency Has a Holding Company and You Are a Director of Both?
+slug: pay-yourself-agency-holding-company-director
+canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/pay-yourself-agency-holding-company-director
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Salary and Dividends
+metaTitle: 'Pay yourself agency founder: holding company & director'
+metaDescription: How to pay yourself agency founder when you own both a holding company and an agency. Salary, dividends, DLA rules, and tax planning for group structures.
+altText: Agency founder reviewing financial documents in a modern UK office with a holding company structure diagram visible on a whiteboard
+image: /blog/pay-yourself-agency-holding-company-director.jpg
 imageCredit:
-  photographer: "www.kaboompics.com"
-  photographerUrl: "https://www.pexels.com/@karola-g"
-  sourceUrl: "https://www.pexels.com/photo/hands-holding-us-dollar-bills-4968384/"
-  source: "Pexels"
-h1: "How Do You Pay Yourself When Your Agency Has a Holding Company and You Are a Director of Both?"
-summary: "A holding company changes how you pay yourself. Salary from one company, dividends from another, director’s loan account traps, and the tax implications most agency founders miss. This guide walks through the practical structure."
-schema: ""
+  photographer: www.kaboompics.com
+  photographerUrl: https://www.pexels.com/@karola-g
+  sourceUrl: https://www.pexels.com/photo/hands-holding-us-dollar-bills-4968384/
+  source: Pexels
+h1: How Do You Pay Yourself When Your Agency Has a Holding Company and You Are a Director of Both?
+summary: A holding company changes how you pay yourself. Salary from one company, dividends from another, director’s loan account traps, and the tax implications most agency founders miss. This guide walks through the practical structure.
+schema: ''
 faqs:
-  - question: "Can I pay myself a salary from both the holding company and the agency?"
-    answer: "Technically yes, but it creates unnecessary payroll admin and potential NI complications. You are better off taking salary from one company only, typically the trading agency. The holding company usually has no trading income to offset against the salary cost, so you lose the corporation tax relief."
-  - question: "Do I pay dividend tax twice on dividends routed through a holding company?"
-    answer: "No. Dividends paid from the agency to the holding company are tax-free under the group dividend exemption. You only pay dividend tax when the holding company distributes those profits to you personally. The dividend allowance of £500 and your marginal dividend tax rates apply at that point."
-  - question: "What happens if I take money from the agency without declaring a dividend or salary?"
-    answer: "That creates a director's loan account balance. If the balance exceeds £10,000 at any point in the tax year, the company must report it on a P11D. You pay tax on the notional benefit. If the loan is not repaid within nine months of the year end, the company pays Section 455 tax at 33.75% on the outstanding amount."
-  - question: "Does a holding company structure affect my ability to claim Business Asset Disposal Relief on a future sale?"
-    answer: "It can. To qualify for BADR, you must hold at least 5% of the shares and be an officer or employee of the company for two years before disposal. In a group structure, you typically hold shares in the holding company. As long as you are a director of both and meet the other conditions, BADR should apply. But the structure of the sale matters. Get professional advice before you negotiate a sale."
+- question: Can I pay myself a salary from both the holding company and the agency?
+  answer: Technically yes, but it creates unnecessary payroll admin and potential NI complications. You are better off taking salary from one company only, typically the trading agency. The holding company usually has no trading income to offset against the salary cost, so you lose the corporation tax relief.
+- question: Do I pay dividend tax twice on dividends routed through a holding company?
+  answer: No. Dividends paid from the agency to the holding company are tax-free under the group dividend exemption. You only pay dividend tax when the holding company distributes those profits to you personally. The dividend allowance of £500 and your marginal dividend tax rates apply at that point.
+- question: What happens if I take money from the agency without declaring a dividend or salary?
+  answer: That creates a director's loan account balance. If the balance exceeds £10,000 at any point in the tax year, the company must report it on a P11D. You pay tax on the notional benefit. If the loan is not repaid within nine months of the year end, the company pays Section 455 tax at 33.75% on the outstanding amount.
+- question: Does a holding company structure affect my ability to claim Business Asset Disposal Relief on a future sale?
+  answer: It can. To qualify for BADR, you must hold at least 5% of the shares and be an officer or employee of the company for two years before disposal. In a group structure, you typically hold shares in the holding company. As long as you are a director of both and meet the other conditions, BADR should apply. But the structure of the sale matters. Get professional advice before you negotiate a sale.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Take a salary of £12,570 from the agency, not the holding company, to avoid payroll admin and maximise corporation tax relief.
+- Dividends flow tax-free from the agency to the holding company, but you pay dividend tax when the holding company distributes to you.
+- Do not take a salary from both companies unless you want double payroll admin and potential HMRC scrutiny.
+- In a group structure, the agency pays corporation tax at 19% or 25% on profits before dividends can be passed up to the holding company.
+- The standard group structure (holding company owns agency shares) keeps ownership clean and simplifies exit planning.
 ---
-
 <h2>The Short Answer: You Have More Options, But Also More Rules</h2>
 <p>If you own a holding company and an agency subsidiary, you can pay yourself from either company. The most tax-efficient approach is typically a salary from one company and dividends from the other, but the structure matters. Get it wrong, and you trigger director's loan account charges, lost tax relief, or an HMRC enquiry.</p>
 <p>This is not the same as running a single company. When you are a director of both entities, HMRC treats each company as separate for payroll, corporation tax, and dividend purposes. You cannot simply move money between them without consequences.</p>

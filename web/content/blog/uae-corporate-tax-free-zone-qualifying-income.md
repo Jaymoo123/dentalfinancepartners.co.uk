@@ -1,33 +1,40 @@
 ---
-title: "UAE Corporate Tax Free Zone: The Qualifying Income Test That Your Agency's Consultancy Fees Might Fail"
-slug: "uae-corporate-tax-free-zone-qualifying-income"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-free-zone-qualifying-income"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UAE Corporate Tax Free Zone Qualifying Income: Agency Risks"
-metaDescription: "Your agency's consultancy fees might not be qualifying income under UAE Corporate Tax Free Zone rules. Here's what the 0% vs 9% tax decision hinges on."
-altText: "Agency founder reviewing UAE corporate tax free zone qualifying income documents in a Dubai office"
-image: "/blog/uae-corporate-tax-free-zone-qualifying-income.jpg"
+title: 'UAE Corporate Tax Free Zone: The Qualifying Income Test That Your Agency''s Consultancy Fees Might Fail'
+slug: uae-corporate-tax-free-zone-qualifying-income
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-free-zone-qualifying-income
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UAE Corporate Tax Free Zone Qualifying Income: Agency Risks'
+metaDescription: Your agency's consultancy fees might not be qualifying income under UAE Corporate Tax Free Zone rules. Here's what the 0% vs 9% tax decision hinges on.
+altText: Agency founder reviewing UAE corporate tax free zone qualifying income documents in a Dubai office
+image: /blog/uae-corporate-tax-free-zone-qualifying-income.jpg
 imageCredit:
-  photographer: "Polina Tankilevitch"
-  photographerUrl: "https://www.pexels.com/@polina-tankilevitch"
-  sourceUrl: "https://www.pexels.com/photo/black-calculator-onincome-tax-forms-6927341/"
-  source: "Pexels"
-h1: "UAE Corporate Tax Free Zone: The Qualifying Income Test That Your Agency's Consultancy Fees Might Fail"
-summary: "Free zones in the UAE offer a 0% corporate tax rate, but only on qualifying income. Many agency founders assume their consultancy fees qualify automatically. They don't. Here's the test your income needs to pass."
-schema: ""
+  photographer: Polina Tankilevitch
+  photographerUrl: https://www.pexels.com/@polina-tankilevitch
+  sourceUrl: https://www.pexels.com/photo/black-calculator-onincome-tax-forms-6927341/
+  source: Pexels
+h1: 'UAE Corporate Tax Free Zone: The Qualifying Income Test That Your Agency''s Consultancy Fees Might Fail'
+summary: Free zones in the UAE offer a 0% corporate tax rate, but only on qualifying income. Many agency founders assume their consultancy fees qualify automatically. They don't. Here's the test your income needs to pass.
+schema: ''
 faqs:
-  - question: "What is the UAE corporate tax free zone qualifying income test for agencies?"
-    answer: "The qualifying income test determines which revenue streams from your free zone entity qualify for the 0% corporate tax rate. For agencies, income from services provided to non-UAE residents or other free zone entities typically qualifies. Consultancy services provided to mainland UAE businesses do not qualify and are taxed at 9%."
-  - question: "Can my agency claim 0% tax on all income if we have a free zone license?"
-    answer: "No. Only \"qualifying income\" as defined in Ministerial Decision No. 100 of 2023 qualifies for 0%. If you provide consultancy services to mainland UAE clients, that income is non-qualifying and taxed at 9%. You can still benefit from 0% on the qualifying portion, but you must file separate computations."
-  - question: "What happens if I incorrectly claim 0% tax on non-qualifying income?"
-    answer: "The UAE Federal Tax Authority can impose penalties, interest, and reassess your tax liability. Penalties start at AED 500 per error and can reach 50% of the tax due for deliberate non-compliance. You would owe the 9% tax on the non-qualifying income plus late payment charges."
-  - question: "Is there any relief if my non-qualifying income is small?"
-    answer: "Yes. A de minimis rule allows you to treat all income as qualifying if your non-qualifying income is less than 5% of total revenue, capped at AED 5 million. If you exceed that threshold, you must split your income and pay 9% on the non-qualifying portion."
+- question: What is the UAE corporate tax free zone qualifying income test for agencies?
+  answer: The qualifying income test determines which revenue streams from your free zone entity qualify for the 0% corporate tax rate. For agencies, income from services provided to non-UAE residents or other free zone entities typically qualifies. Consultancy services provided to mainland UAE businesses do not qualify and are taxed at 9%.
+- question: Can my agency claim 0% tax on all income if we have a free zone license?
+  answer: No. Only "qualifying income" as defined in Ministerial Decision No. 100 of 2023 qualifies for 0%. If you provide consultancy services to mainland UAE clients, that income is non-qualifying and taxed at 9%. You can still benefit from 0% on the qualifying portion, but you must file separate computations.
+- question: What happens if I incorrectly claim 0% tax on non-qualifying income?
+  answer: The UAE Federal Tax Authority can impose penalties, interest, and reassess your tax liability. Penalties start at AED 500 per error and can reach 50% of the tax due for deliberate non-compliance. You would owe the 9% tax on the non-qualifying income plus late payment charges.
+- question: Is there any relief if my non-qualifying income is small?
+  answer: Yes. A de minimis rule allows you to treat all income as qualifying if your non-qualifying income is less than 5% of total revenue, capped at AED 5 million. If you exceed that threshold, you must split your income and pay 9% on the non-qualifying portion.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Consultancy fees from mainland UAE clients are excluded from the 0% qualifying income and taxed at 9%.
+- Income from services to non-UAE residents or other free zone entities qualifies for the 0% corporate tax rate.
+- The definition of consultancy services under Ministerial Decision No. 100 of 2023 is broad and includes strategy and advisory work.
+- To benefit from the 0% rate, your free zone entity must be a Qualifying Free Zone Person with adequate UAE substance.
+- Agency founders must test each income stream against the qualifying income rules before filing their corporation tax return.
 ---
-
 <p>You moved your agency to a UAE free zone for the 0% corporate tax rate. That was the promise, and for many businesses it holds. But here is the detail the sales brochures leave out: not every pound your agency earns qualifies for the 0% rate. If you are billing for consultancy, management advice, or strategic advisory work, your income might fall outside the definition of "qualifying income" and get taxed at 9%.</p>
 
 <p>This is not a corner case. It is the central question every agency founder operating from a UAE free zone needs answered before their next corporation tax return lands.</p>

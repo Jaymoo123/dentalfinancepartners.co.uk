@@ -1,33 +1,40 @@
 ---
-title: "How to Value a Creative Agency Based on Recurring Retainer Revenue"
-slug: "value-creative-agency-revenue-retainers"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/value-creative-agency-revenue-retainers"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Value Creative Agency Retainer Revenue: Exit Guide"
-metaDescription: "How to value a creative agency based on recurring retainer revenue. Real multiples, worked examples, and what buyers actually pay for."
-altText: "Creative agency founder reviewing financial reports with accountant in London office"
-image: "/blog/value-creative-agency-revenue-retainers.jpg"
+title: How to Value a Creative Agency Based on Recurring Retainer Revenue
+slug: value-creative-agency-revenue-retainers
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/value-creative-agency-revenue-retainers
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'Value Creative Agency Retainer Revenue: Exit Guide'
+metaDescription: How to value a creative agency based on recurring retainer revenue. Real multiples, worked examples, and what buyers actually pay for.
+altText: Creative agency founder reviewing financial reports with accountant in London office
+image: /blog/value-creative-agency-revenue-retainers.jpg
 imageCredit:
-  photographer: "Mikael Blomkvist"
-  photographerUrl: "https://www.pexels.com/@mikael-blomkvist"
-  sourceUrl: "https://www.pexels.com/photo/people-sitting-at-the-table-6476256/"
-  source: "Pexels"
-h1: "How to Value a Creative Agency Based on Recurring Retainer Revenue"
-summary: "Valuing a creative agency comes down to one thing: the quality and predictability of your revenue. Here's how retainer income changes the multiple, what buyers look for, and how to prepare for an exit."
-schema: ""
+  photographer: Mikael Blomkvist
+  photographerUrl: https://www.pexels.com/@mikael-blomkvist
+  sourceUrl: https://www.pexels.com/photo/people-sitting-at-the-table-6476256/
+  source: Pexels
+h1: How to Value a Creative Agency Based on Recurring Retainer Revenue
+summary: 'Valuing a creative agency comes down to one thing: the quality and predictability of your revenue. Here''s how retainer income changes the multiple, what buyers look for, and how to prepare for an exit.'
+schema: ''
 faqs:
-  - question: "What is the typical valuation multiple for a creative agency with 70% retainer revenue?"
-    answer: "For a creative agency where 70% or more of revenue comes from retainers, valuation multiples typically range from 4x to 6x EBITDA. The exact multiple depends on contract length, client concentration, and gross margin. A buyer will pay at the higher end if contracts are 12-month fixed term, no single client exceeds 15% of revenue, and gross margins sit above 55%."
-  - question: "How do I separate retainer and project revenue in my accounts?"
-    answer: "Set up separate nominal codes in your accounting software (Xero, QuickBooks, FreeAgent all support this). Code all retainer invoices to one revenue account and all project invoices to another. If you use project management software that integrates with your accounting system, map retainer projects to the retainer revenue code automatically. Your monthly management accounts should show these two streams clearly. A buyer will ask for this breakdown on day one of due diligence."
-  - question: "Does a rolling monthly retainer count as recurring revenue for valuation purposes?"
-    answer: "Yes, but it is less valuable than a fixed-term retainer. Rolling monthly retainers with 30-day notice periods typically attract a 10-20% discount on the multiple compared to 12-month fixed contracts. Buyers value certainty. If a retainer can be cancelled with 30 days notice, it is not truly recurring. To maximise valuation, convert rolling retainers to 12-month fixed terms where possible."
-  - question: "What is the most common mistake agency founders make when valuing their agency?"
-    answer: "Overestimating the value of project revenue. Many founders look at total turnover and assume a multiple applies evenly. It does not. A buyer will heavily discount project income because it carries no guarantee of renewal. The second most common mistake is failing to adjust EBITDA for personal expenses and excess director salary. A buyer strips those out, and if your accounts are not clean, the adjusted EBITDA can be significantly lower than you expected."
+- question: What is the typical valuation multiple for a creative agency with 70% retainer revenue?
+  answer: For a creative agency where 70% or more of revenue comes from retainers, valuation multiples typically range from 4x to 6x EBITDA. The exact multiple depends on contract length, client concentration, and gross margin. A buyer will pay at the higher end if contracts are 12-month fixed term, no single client exceeds 15% of revenue, and gross margins sit above 55%.
+- question: How do I separate retainer and project revenue in my accounts?
+  answer: Set up separate nominal codes in your accounting software (Xero, QuickBooks, FreeAgent all support this). Code all retainer invoices to one revenue account and all project invoices to another. If you use project management software that integrates with your accounting system, map retainer projects to the retainer revenue code automatically. Your monthly management accounts should show these two streams clearly. A buyer will ask for this breakdown on day one of due diligence.
+- question: Does a rolling monthly retainer count as recurring revenue for valuation purposes?
+  answer: Yes, but it is less valuable than a fixed-term retainer. Rolling monthly retainers with 30-day notice periods typically attract a 10-20% discount on the multiple compared to 12-month fixed contracts. Buyers value certainty. If a retainer can be cancelled with 30 days notice, it is not truly recurring. To maximise valuation, convert rolling retainers to 12-month fixed terms where possible.
+- question: What is the most common mistake agency founders make when valuing their agency?
+  answer: Overestimating the value of project revenue. Many founders look at total turnover and assume a multiple applies evenly. It does not. A buyer will heavily discount project income because it carries no guarantee of renewal. The second most common mistake is failing to adjust EBITDA for personal expenses and excess director salary. A buyer strips those out, and if your accounts are not clean, the adjusted EBITDA can be significantly lower than you expected.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Buyers value creative agencies primarily on recurring retainer revenue, not total turnover or profit margin.
+- Retainer-heavy agencies (over 60% retainer) can achieve valuation multiples of 4x to 6x EBITDA, compared to 1.5x to 2.5x for project-heavy agencies.
+- Genuine recurring retainer revenue requires fixed monthly billing, a minimum 6-month term, and no significant seasonal variation.
+- To estimate your agency's value, calculate adjusted EBITDA by adding back your above-market salary, one-off costs, depreciation, and interest.
+- Separating retainer and project income in your management accounts is essential before a buyer does it for you.
 ---
-
 <h2>The Only Number That Matters to a Buyer</h2>
 
 <p>If you run a creative agency and you're thinking about selling, here is the single most important financial metric a buyer will scrutinise: your recurring retainer revenue. Not your total turnover. Not your profit margin. Not your client list length. The portion of your income that arrives predictably, month after month, without you having to win a new pitch.</p>

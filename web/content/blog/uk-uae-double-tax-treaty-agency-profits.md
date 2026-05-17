@@ -1,33 +1,40 @@
 ---
-title: "UK UAE Double Tax Treaty: How Agency Profits Are Taxed When You Work Across Both Countries"
-slug: "uk-uae-double-tax-treaty-agency-profits"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-uae-double-tax-treaty-agency-profits"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK UAE double tax treaty agency profits: what founders must"
-metaDescription: "UK UAE double tax treaty agency profits explained. When your agency is taxed only in the UAE, and when HMRC sees a UK permanent establishment. Practical"
-altText: "Two agency founders reviewing a laptop in a modern Dubai office with skyline visible through floor-to-ceiling windows"
-image: "/blog/uk-uae-double-tax-treaty-agency-profits.jpg"
+title: 'UK UAE Double Tax Treaty: How Agency Profits Are Taxed When You Work Across Both Countries'
+slug: uk-uae-double-tax-treaty-agency-profits
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-uae-double-tax-treaty-agency-profits
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK UAE double tax treaty agency profits: what founders must'
+metaDescription: UK UAE double tax treaty agency profits explained. When your agency is taxed only in the UAE, and when HMRC sees a UK permanent establishment. Practical
+altText: Two agency founders reviewing a laptop in a modern Dubai office with skyline visible through floor-to-ceiling windows
+image: /blog/uk-uae-double-tax-treaty-agency-profits.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/tax-season-6863255/"
-  source: "Pexels"
-h1: "UK UAE Double Tax Treaty: How Agency Profits Are Taxed When You Work Across Both Countries"
-summary: "The UK-UAE double tax treaty determines which country gets to tax your agency profits. If you run a marketing agency from Dubai but have UK clients, the key question is whether you have a permanent establishment in the UK. This post explains the rules, the grey areas, and what to watch for."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/tax-season-6863255/
+  source: Pexels
+h1: 'UK UAE Double Tax Treaty: How Agency Profits Are Taxed When You Work Across Both Countries'
+summary: The UK-UAE double tax treaty determines which country gets to tax your agency profits. If you run a marketing agency from Dubai but have UK clients, the key question is whether you have a permanent establishment in the UK. This post explains the rules, the grey areas, and what to watch for.
+schema: ''
 faqs:
-  - question: "What is the UK UAE double tax treaty and how does it apply to agency profits?"
-    answer: "The UK UAE double tax treaty is a bilateral agreement that prevents the same income being taxed in both countries. For agency profits, the treaty says profits are taxable only in the country where the agency is resident (typically the UAE) unless the agency has a permanent establishment in the UK. If a PE exists, the UK can tax the profits attributable to that PE, with a foreign tax credit for UAE tax paid."
-  - question: "What creates a UK permanent establishment for a UAE-based agency?"
-    answer: "A UK permanent establishment is created by having a fixed place of business in the UK (office, co-working space, or home office used for agency work), UK-based employees who negotiate or conclude contracts, or a dependent agent who habitually exercises authority to bind the agency. Even a single UK-based contractor who works exclusively for your agency can create a PE if they sign contracts on your behalf."
-  - question: "Can I avoid UK tax on my agency profits if I move to Dubai but keep UK clients?"
-    answer: "Yes, but only if you genuinely move your agency's operations to the UAE. You need no UK office, no UK employees, all contracts signed from the UAE, and all key decisions made in the UAE. If your UK team continues to manage client relationships and win business from the UK, HMRC will likely argue you have a UK permanent establishment, making your profits taxable in the UK at 25%."
-  - question: "What happens if HMRC investigates my UK UAE agency structure?"
-    answer: "HMRC will examine where your contracts are signed, where your team works, where your bank accounts are, where board meetings happen, and how many days you spend in the UK. If they determine you have a UK permanent establishment, they will issue tax assessments for the full period plus interest and penalties, which can reach 100% of the tax due. You can regularise your structure before an enquiry opens, so act early."
+- question: What is the UK UAE double tax treaty and how does it apply to agency profits?
+  answer: The UK UAE double tax treaty is a bilateral agreement that prevents the same income being taxed in both countries. For agency profits, the treaty says profits are taxable only in the country where the agency is resident (typically the UAE) unless the agency has a permanent establishment in the UK. If a PE exists, the UK can tax the profits attributable to that PE, with a foreign tax credit for UAE tax paid.
+- question: What creates a UK permanent establishment for a UAE-based agency?
+  answer: A UK permanent establishment is created by having a fixed place of business in the UK (office, co-working space, or home office used for agency work), UK-based employees who negotiate or conclude contracts, or a dependent agent who habitually exercises authority to bind the agency. Even a single UK-based contractor who works exclusively for your agency can create a PE if they sign contracts on your behalf.
+- question: Can I avoid UK tax on my agency profits if I move to Dubai but keep UK clients?
+  answer: Yes, but only if you genuinely move your agency's operations to the UAE. You need no UK office, no UK employees, all contracts signed from the UAE, and all key decisions made in the UAE. If your UK team continues to manage client relationships and win business from the UK, HMRC will likely argue you have a UK permanent establishment, making your profits taxable in the UK at 25%.
+- question: What happens if HMRC investigates my UK UAE agency structure?
+  answer: HMRC will examine where your contracts are signed, where your team works, where your bank accounts are, where board meetings happen, and how many days you spend in the UK. If they determine you have a UK permanent establishment, they will issue tax assessments for the full period plus interest and penalties, which can reach 100% of the tax due. You can regularise your structure before an enquiry opens, so act early.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Agency profits are taxable only in the UAE unless your agency has a permanent establishment (PE) in the UK.
+- A UK PE can be created by a physical office, co-working space, home office, or UK-based employees who conclude contracts.
+- A dependent agent in the UK who habitually signs contracts on your behalf can also create a PE.
+- You avoid UK tax if your agency is incorporated and managed from the UAE with no UK physical presence or dependent agents.
+- The UK-UAE double tax treaty overrides domestic law, so HMRC cannot tax UAE-resident agencies solely for having UK clients.
 ---
-
 <p>If you run an agency from Dubai but earn revenue from UK clients, the UK UAE double tax treaty agency profits position is the single most important tax question you need answered. Get it wrong and you could face a six-figure HMRC bill plus penalties. Get it right and you pay tax in one country only, typically the UAE at 0% corporate tax for most agency structures.</p>
 
 <p>The short answer is this: agency profits are generally taxable only in the UAE unless your agency has a <strong>permanent establishment</strong> in the UK. That permanent establishment (PE) test is where most agency founders trip up. Let me walk through exactly how it works, using real scenarios I see with agency clients.</p>

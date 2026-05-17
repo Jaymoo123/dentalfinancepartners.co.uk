@@ -1,33 +1,40 @@
 ---
-title: "MTD for VAT: What Agency Founders Need to Do Now"
-slug: "mtd-vat-agencies"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-vat-agencies"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Making Tax Digital"
-metaTitle: "MTD for VAT: Agency Compliance Guide 2025/26"
-metaDescription: "Making Tax Digital for VAT is mandatory for all VAT-registered agencies. Here’s exactly what you need to do, the software you need, and the deadlines that"
-altText: "Agency founder reviewing digital VAT records on a tablet in a London office"
-image: "/blog/mtd-vat-agencies.jpg"
+title: 'MTD for VAT: What Agency Founders Need to Do Now'
+slug: mtd-vat-agencies
+canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-vat-agencies
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Making Tax Digital
+metaTitle: 'MTD for VAT: Agency Compliance Guide 2025/26'
+metaDescription: Making Tax Digital for VAT is mandatory for all VAT-registered agencies. Here’s exactly what you need to do, the software you need, and the deadlines that
+altText: Agency founder reviewing digital VAT records on a tablet in a London office
+image: /blog/mtd-vat-agencies.jpg
 imageCredit:
-  photographer: "Brett Jordan"
-  photographerUrl: "https://www.pexels.com/@brettjordan"
-  sourceUrl: "https://www.pexels.com/photo/brown-wooden-scrabble-tiles-on-white-surface-7909183/"
-  source: "Pexels"
-h1: "MTD for VAT: What Agency Founders Need to Do Now"
-summary: "Making Tax Digital (MTD) for VAT is now mandatory for all VAT-registered businesses, including agencies. This guide covers what MTD means for your agency, the software you need, the deadlines, and how to avoid penalties. Whether you’re on standard or flat rate VAT, here’s your practical compliance checklist."
-schema: ""
+  photographer: Brett Jordan
+  photographerUrl: https://www.pexels.com/@brettjordan
+  sourceUrl: https://www.pexels.com/photo/brown-wooden-scrabble-tiles-on-white-surface-7909183/
+  source: Pexels
+h1: 'MTD for VAT: What Agency Founders Need to Do Now'
+summary: Making Tax Digital (MTD) for VAT is now mandatory for all VAT-registered businesses, including agencies. This guide covers what MTD means for your agency, the software you need, the deadlines, and how to avoid penalties. Whether you’re on standard or flat rate VAT, here’s your practical compliance checklist.
+schema: ''
 faqs:
-  - question: "Do I need MTD-compatible software if I am on flat rate VAT?"
-    answer: "Yes. MTD for VAT applies to all VAT-registered businesses, regardless of the VAT scheme you use. If you are on flat rate VAT, your accounting software needs to be set up with the correct flat rate percentage. If you are a limited cost trader (spending less than 2% of turnover on relevant goods), you must use the 16.5% rate, and your software must reflect that."
-  - question: "Can I still use spreadsheets for my VAT records?"
-    answer: "You can use spreadsheets, but they must be linked digitally to HMRC through MTD-compatible bridging software. Simply typing numbers into a spreadsheet and then copying them into the HMRC portal is not compliant. You need a bridging tool like Dext or a direct API connection from your spreadsheet to HMRC. Most agencies find it easier to switch to cloud accounting software like Xero or QuickBooks."
-  - question: "What happens if I file my VAT return through the HMRC portal instead of my software?"
-    answer: "You will get an error message telling you to use MTD-compatible software. The HMRC portal no longer accepts manual VAT return submissions from businesses that are required to use MTD. You must file from within your accounting software. If you attempt to file through the portal, your return will not be processed, and you may face late filing penalties."
-  - question: "Does MTD for VAT apply to sole trader agencies?"
-    answer: "Yes, if the sole trader is VAT-registered. MTD for VAT applies to all VAT-registered businesses, including sole traders. The only exception is if you are voluntarily VAT-registered and your taxable turnover is below the £90,000 threshold — but even then, once you are registered, MTD applies. If you are a sole trader agency with turnover over £50,000, you also need to prepare for MTD for Income Tax Self Assessment, which starts from April 2026."
+- question: Do I need MTD-compatible software if I am on flat rate VAT?
+  answer: Yes. MTD for VAT applies to all VAT-registered businesses, regardless of the VAT scheme you use. If you are on flat rate VAT, your accounting software needs to be set up with the correct flat rate percentage. If you are a limited cost trader (spending less than 2% of turnover on relevant goods), you must use the 16.5% rate, and your software must reflect that.
+- question: Can I still use spreadsheets for my VAT records?
+  answer: You can use spreadsheets, but they must be linked digitally to HMRC through MTD-compatible bridging software. Simply typing numbers into a spreadsheet and then copying them into the HMRC portal is not compliant. You need a bridging tool like Dext or a direct API connection from your spreadsheet to HMRC. Most agencies find it easier to switch to cloud accounting software like Xero or QuickBooks.
+- question: What happens if I file my VAT return through the HMRC portal instead of my software?
+  answer: You will get an error message telling you to use MTD-compatible software. The HMRC portal no longer accepts manual VAT return submissions from businesses that are required to use MTD. You must file from within your accounting software. If you attempt to file through the portal, your return will not be processed, and you may face late filing penalties.
+- question: Does MTD for VAT apply to sole trader agencies?
+  answer: Yes, if the sole trader is VAT-registered. MTD for VAT applies to all VAT-registered businesses, including sole traders. The only exception is if you are voluntarily VAT-registered and your taxable turnover is below the £90,000 threshold — but even then, once you are registered, MTD applies. If you are a sole trader agency with turnover over £50,000, you also need to prepare for MTD for Income Tax Self Assessment, which starts from April 2026.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- All VAT-registered agencies must use MTD-compatible software to submit VAT returns; manual HMRC portal entry is no longer permitted.
+- MTD for VAT applies to every VAT-registered business since April 2022, regardless of turnover, sector, or VAT scheme used.
+- Your accounting software must maintain digital links between source data, calculations, and HMRC submission to avoid 'cut and paste' compliance failures.
+- If your turnover approaches £90,000, you must register for VAT and comply with MTD from your first VAT return.
+- Excel or Google Sheets require a bridging tool like Dext to be MTD-compatible; older desktop software may need upgrading.
 ---
-
 <h2>What Is Making Tax Digital for VAT?</h2>
 
 <p>Making Tax Digital (MTD) for VAT is HMRC’s requirement to keep digital records and submit VAT returns using compatible software. It is not optional. If your agency is VAT-registered, you must comply.</p>

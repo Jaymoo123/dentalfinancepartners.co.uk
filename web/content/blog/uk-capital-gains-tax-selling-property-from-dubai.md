@@ -1,33 +1,40 @@
 ---
-title: "Do I Pay UK Capital Gains Tax on My UK Property If I Sell It While Living in Dubai?"
-slug: "uk-capital-gains-tax-selling-property-from-dubai"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-capital-gains-tax-selling-property-from-dubai"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK Capital Gains Tax Selling Property from Dubai: What You"
-metaDescription: "Yes, you pay UK CGT on property sold from Dubai. The 60-day reporting window catches many founders out. Here is how it works and what to do."
-altText: "UK agency founder reviewing property sale documents at a desk in a Dubai apartment with laptop and coffee"
-image: "/blog/uk-capital-gains-tax-selling-property-from-dubai.jpg"
+title: Do I Pay UK Capital Gains Tax on My UK Property If I Sell It While Living in Dubai?
+slug: uk-capital-gains-tax-selling-property-from-dubai
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-capital-gains-tax-selling-property-from-dubai
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK Capital Gains Tax Selling Property from Dubai: What You'
+metaDescription: Yes, you pay UK CGT on property sold from Dubai. The 60-day reporting window catches many founders out. Here is how it works and what to do.
+altText: UK agency founder reviewing property sale documents at a desk in a Dubai apartment with laptop and coffee
+image: /blog/uk-capital-gains-tax-selling-property-from-dubai.jpg
 imageCredit:
-  photographer: "crazy motions"
-  photographerUrl: "https://www.pexels.com/@crazy-motions-80195021"
-  sourceUrl: "https://www.pexels.com/photo/3d-render-of-coins-12198528/"
-  source: "Pexels"
-h1: "Do I Pay UK Capital Gains Tax on My UK Property If I Sell It While Living in Dubai?"
-summary: "If you are a UK agency founder living in Dubai and you sell a UK property, you must report and pay UK capital gains tax within 60 days of completion. The deadline is tight and the penalties for missing it are steep. This article explains how the rules work, what reliefs might apply, and what to do before you exchange contracts."
-schema: ""
+  photographer: crazy motions
+  photographerUrl: https://www.pexels.com/@crazy-motions-80195021
+  sourceUrl: https://www.pexels.com/photo/3d-render-of-coins-12198528/
+  source: Pexels
+h1: Do I Pay UK Capital Gains Tax on My UK Property If I Sell It While Living in Dubai?
+summary: If you are a UK agency founder living in Dubai and you sell a UK property, you must report and pay UK capital gains tax within 60 days of completion. The deadline is tight and the penalties for missing it are steep. This article explains how the rules work, what reliefs might apply, and what to do before you exchange contracts.
+schema: ''
 faqs:
-  - question: "Do I have to pay UK capital gains tax if I sell my UK property while living in Dubai?"
-    answer: "Yes. UK capital gains tax applies to UK property disposals regardless of your residency. If you are non-resident, you must report the sale and pay the tax within 60 days of completion. The rates are 18% on gains within your basic rate band and 24% above that."
-  - question: "What happens if I miss the 60-day reporting deadline?"
-    answer: "HMRC charges an initial £100 penalty, then daily penalties of £10 for up to 90 days. Interest accrues on the unpaid tax from the due date. If you miss the deadline by more than 12 months, penalties can reach 100% of the tax due. File as soon as you realise the deadline has passed."
-  - question: "Can I claim private residence relief if the property was my main home before I moved to Dubai?"
-    answer: "Yes, but only for the period you lived there plus the final 9 months of ownership. Any gain relating to periods when you were non-resident and not living there is taxable. If you have owned the property since before 2015, the calculation is complex. Speak to an accountant."
-  - question: "Do I need to report the sale through self-assessment or a separate form?"
-    answer: "You must report through HMRC's non-resident CGT (NRCGT) service within 60 days of completion. If you also file a UK self-assessment return, you still need to file the NRCGT return first, then adjust the figures on your tax return. You cannot skip the 60-day return."
+- question: Do I have to pay UK capital gains tax if I sell my UK property while living in Dubai?
+  answer: Yes. UK capital gains tax applies to UK property disposals regardless of your residency. If you are non-resident, you must report the sale and pay the tax within 60 days of completion. The rates are 18% on gains within your basic rate band and 24% above that.
+- question: What happens if I miss the 60-day reporting deadline?
+  answer: HMRC charges an initial £100 penalty, then daily penalties of £10 for up to 90 days. Interest accrues on the unpaid tax from the due date. If you miss the deadline by more than 12 months, penalties can reach 100% of the tax due. File as soon as you realise the deadline has passed.
+- question: Can I claim private residence relief if the property was my main home before I moved to Dubai?
+  answer: Yes, but only for the period you lived there plus the final 9 months of ownership. Any gain relating to periods when you were non-resident and not living there is taxable. If you have owned the property since before 2015, the calculation is complex. Speak to an accountant.
+- question: Do I need to report the sale through self-assessment or a separate form?
+  answer: You must report through HMRC's non-resident CGT (NRCGT) service within 60 days of completion. If you also file a UK self-assessment return, you still need to file the NRCGT return first, then adjust the figures on your tax return. You cannot skip the 60-day return.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Non-residents selling UK residential property must report and pay capital gains tax within 60 days of completion, with penalties for missing the deadline.
+- For 2025/26, the annual exempt amount for capital gains tax is £3,000, and gains are taxed at 18% within the basic rate band and 24% above.
+- A non-resident with no UK income and a £150,000 gain would owe approximately £32,263.80 in capital gains tax after the £3,000 allowance.
+- The 60-day reporting window applies to completion date, not exchange date, and must be done via HMRC's non-resident CGT service.
+- Since 6 April 2015, non-UK residents are liable for UK capital gains tax on disposals of UK residential property, with rules tightened further from 6 April 2020.
 ---
-
 <p>If you are a UK agency founder living in Dubai and you own a UK property, the question of capital gains tax when you sell is not optional. It is a legal obligation with a tight deadline that catches many people out.</p>
 
 <p>The short answer is yes. You pay UK capital gains tax on a UK property when you sell it, even if you live in Dubai. The rate you pay, the reliefs you can claim, and the reporting deadline all depend on your specific circumstances. But the one thing that is non-negotiable is the 60-day reporting window from the date of completion.</p>

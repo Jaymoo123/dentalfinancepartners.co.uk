@@ -1,33 +1,40 @@
 ---
-title: "How to Read Your Agency P&L (And What the Numbers Mean)"
-slug: "how-to-read-agency-pl"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/how-to-read-agency-pl"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "How to Read Your Agency P&L: Finance 101 for Founders"
-metaDescription: "Learn to read your agency P&L like an ICAEW accountant. Understand gross margin, utilisation, and net profit with real examples. No fluff."
-altText: "Agency founder reviewing a profit and loss statement on a desk in a London office with a laptop and printed accounts"
-image: "/blog/how-to-read-agency-pl.jpg"
+title: How to Read Your Agency P&L (And What the Numbers Mean)
+slug: how-to-read-agency-pl
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/how-to-read-agency-pl
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: 'How to Read Your Agency P&L: Finance 101 for Founders'
+metaDescription: Learn to read your agency P&L like an ICAEW accountant. Understand gross margin, utilisation, and net profit with real examples. No fluff.
+altText: Agency founder reviewing a profit and loss statement on a desk in a London office with a laptop and printed accounts
+image: /blog/how-to-read-agency-pl.jpg
 imageCredit:
-  photographer: "Jan van der Wolf"
-  photographerUrl: "https://www.pexels.com/@jan-van-der-wolf-11680885"
-  sourceUrl: "https://www.pexels.com/photo/name-tags-for-door-phone-on-red-wall-14151373/"
-  source: "Pexels"
-h1: "How to Read Your Agency P&L (And What the Numbers Mean)"
-summary: "Your agency P&L tells you whether you're building a real business or just buying yourself a job. This guide walks you through each line item with real numbers and explains what the key ratios mean for agency founders."
-schema: ""
+  photographer: Jan van der Wolf
+  photographerUrl: https://www.pexels.com/@jan-van-der-wolf-11680885
+  sourceUrl: https://www.pexels.com/photo/name-tags-for-door-phone-on-red-wall-14151373/
+  source: Pexels
+h1: How to Read Your Agency P&L (And What the Numbers Mean)
+summary: Your agency P&L tells you whether you're building a real business or just buying yourself a job. This guide walks you through each line item with real numbers and explains what the key ratios mean for agency founders.
+schema: ''
 faqs:
-  - question: "What is the most important number on an agency P&L?"
-    answer: "Gross margin. It tells you whether your core delivery is profitable. Everything else depends on it. If your gross margin is below 50%, fix that before worrying about overheads or net profit."
-  - question: "Should I include my own salary in the P&L?"
-    answer: "Yes. Your salary is a cost of running the agency. If you exclude it, your overheads look artificially low and your profit looks higher than it really is. Include it. The P&L needs to reflect the true cost of the business."
-  - question: "How often should I review my P&L?"
-    answer: "Monthly. Within two weeks of month-end. Annual reviews hide too much volatility. A monthly P&L lets you spot margin drops, cost increases, and revenue trends before they become problems."
-  - question: "Why does my P&L show profit but my bank account is empty?"
-    answer: "The P&L measures earned revenue and incurred costs, not cash movements. If you have unpaid invoices, prepaid expenses, loan repayments, or VAT bills due, those hit cash but not the P&L. Check your balance sheet and cash flow statement for the full picture."
+- question: What is the most important number on an agency P&L?
+  answer: Gross margin. It tells you whether your core delivery is profitable. Everything else depends on it. If your gross margin is below 50%, fix that before worrying about overheads or net profit.
+- question: Should I include my own salary in the P&L?
+  answer: Yes. Your salary is a cost of running the agency. If you exclude it, your overheads look artificially low and your profit looks higher than it really is. Include it. The P&L needs to reflect the true cost of the business.
+- question: How often should I review my P&L?
+  answer: Monthly. Within two weeks of month-end. Annual reviews hide too much volatility. A monthly P&L lets you spot margin drops, cost increases, and revenue trends before they become problems.
+- question: Why does my P&L show profit but my bank account is empty?
+  answer: The P&L measures earned revenue and incurred costs, not cash movements. If you have unpaid invoices, prepaid expenses, loan repayments, or VAT bills due, those hit cash but not the P&L. Check your balance sheet and cash flow statement for the full picture.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Your P&L measures performance, not cash; a £50,000 profit can coexist with a £5,000 bank balance if invoices are unpaid.
+- Separate pass-through costs (e.g. ad spend, licences) from your own revenue to avoid inflating turnover without adding profit.
+- A healthy digital agency gross margin sits between 50% and 65%; below 45% signals undercharging, over-staffing, or scope creep.
+- Exclude pass-through costs when calculating gross margin for a true picture; in the example, margin rose from 42.5% to 43.3% after adjustment.
+- Low gross margin often stems from loose project scopes, expensive freelancers, or non-billable delivery staff—audit these first.
 ---
-
 <p>Most agency founders I meet have never been shown how to read their own P&L. They look at the bottom line, see a positive number, and assume everything is fine. Then they wonder why the bank balance doesn't match the profit figure.</p>
 
 <p>That gap between profit and cash is where agencies fail. And it starts with not understanding what the P&L actually tells you.</p>

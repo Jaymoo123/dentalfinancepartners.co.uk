@@ -1,33 +1,40 @@
 ---
-title: "UK Agency Founder in Dubai: The Banking Problem You Didn't Know Existed"
-slug: "uk-agency-founder-dubai-corporate-bank-account"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-agency-founder-dubai-corporate-bank-account"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK Agency Founder Dubai Corporate Bank Account: The Real"
-metaDescription: "UAE banks often reject new free zone companies with no local credit history. Here's what UK agency founders moving to Dubai need to know before they apply."
-altText: "UK agency founder reviewing UAE corporate bank account rejection letter in Dubai office"
-image: "/blog/uk-agency-founder-dubai-corporate-bank-account.jpg"
+title: 'UK Agency Founder in Dubai: The Banking Problem You Didn''t Know Existed'
+slug: uk-agency-founder-dubai-corporate-bank-account
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-agency-founder-dubai-corporate-bank-account
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK Agency Founder Dubai Corporate Bank Account: The Real'
+metaDescription: UAE banks often reject new free zone companies with no local credit history. Here's what UK agency founders moving to Dubai need to know before they apply.
+altText: UK agency founder reviewing UAE corporate bank account rejection letter in Dubai office
+image: /blog/uk-agency-founder-dubai-corporate-bank-account.jpg
 imageCredit:
-  photographer: "Clément Proust"
-  photographerUrl: "https://www.pexels.com/@clement-proust-363898785"
-  sourceUrl: "https://www.pexels.com/photo/close-up-of-british-pound-sterling-currency-notes-34002434/"
-  source: "Pexels"
-h1: "UK Agency Founder in Dubai: Getting a UAE Corporate Bank Account Without a Local Track Record"
-summary: "Moving your agency to Dubai sounds straightforward until you try to open a UAE corporate bank account. Most UK agency founders don't realise that UAE banks routinely reject new free zone companies with no local credit history. Here's what you need to know before you apply."
-schema: ""
+  photographer: Clément Proust
+  photographerUrl: https://www.pexels.com/@clement-proust-363898785
+  sourceUrl: https://www.pexels.com/photo/close-up-of-british-pound-sterling-currency-notes-34002434/
+  source: Pexels
+h1: 'UK Agency Founder in Dubai: Getting a UAE Corporate Bank Account Without a Local Track Record'
+summary: Moving your agency to Dubai sounds straightforward until you try to open a UAE corporate bank account. Most UK agency founders don't realise that UAE banks routinely reject new free zone companies with no local credit history. Here's what you need to know before you apply.
+schema: ''
 faqs:
-  - question: "Can I open a UAE corporate bank account before I move to Dubai?"
-    answer: "Not in practice. Most UAE banks require you to be physically present with your residency visa and Emirates ID. Some digital banks allow pre-approval, but full account opening usually happens after you arrive. Plan for a four to eight week gap between landing and having an operational corporate account."
-  - question: "Which free zone is best for getting a corporate bank account?"
-    answer: "DMCC, DIFC, ADGM, and Dubai South are the most widely accepted by UAE banks. If you incorporate in a lesser-known free zone like RAK ICC or Fujairah Creative City, expect more rejections. Check the bank's approved free zone list before you incorporate."
-  - question: "How long does it take to open a UAE corporate bank account?"
-    answer: "Four to eight weeks for a traditional bank, sometimes longer. Digital banks like Zand or Wio can open an account in one to three days, but they have lower transaction limits and fewer features. Most founders use a digital account as a bridge while pursuing a full corporate account."
-  - question: "What documents do UAE banks require from a UK agency founder?"
-    answer: "Your free zone licence, passport, residency visa, Emirates ID, tenancy contract, and company memorandum. Plus your UK company's bank statements (last 6-12 months), filed accounts, VAT returns, and client contracts. The more evidence of genuine UK trading history, the better your chances."
+- question: Can I open a UAE corporate bank account before I move to Dubai?
+  answer: Not in practice. Most UAE banks require you to be physically present with your residency visa and Emirates ID. Some digital banks allow pre-approval, but full account opening usually happens after you arrive. Plan for a four to eight week gap between landing and having an operational corporate account.
+- question: Which free zone is best for getting a corporate bank account?
+  answer: DMCC, DIFC, ADGM, and Dubai South are the most widely accepted by UAE banks. If you incorporate in a lesser-known free zone like RAK ICC or Fujairah Creative City, expect more rejections. Check the bank's approved free zone list before you incorporate.
+- question: How long does it take to open a UAE corporate bank account?
+  answer: Four to eight weeks for a traditional bank, sometimes longer. Digital banks like Zand or Wio can open an account in one to three days, but they have lower transaction limits and fewer features. Most founders use a digital account as a bridge while pursuing a full corporate account.
+- question: What documents do UAE banks require from a UK agency founder?
+  answer: Your free zone licence, passport, residency visa, Emirates ID, tenancy contract, and company memorandum. Plus your UK company's bank statements (last 6-12 months), filed accounts, VAT returns, and client contracts. The more evidence of genuine UK trading history, the better your chances.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- UAE banks routinely reject new free zone companies with no local credit history, so prepare for a relationship-based application process.
+- Without a UAE corporate bank account, you cannot invoice clients, pay staff, or draw a salary in the UAE.
+- Common rejection reasons include no local credit file, free zone structure, lack of office visit, and high-risk business activities.
+- Some UAE banks require a six-figure AED minimum deposit to open a corporate account for a new free zone company.
+- Only certain free zones like DMCC, DIFC, and ADGM are widely accepted by UAE banks; others may lead to immediate rejection.
 ---
-
 <p>You've moved your agency to Dubai. You've got your free zone licence, your office space in Dubai Silicon Oasis or DMCC, and your UAE residency visa. Now you need a corporate bank account to actually run the business.</p>
 
 <p>That's where it stops.</p>

@@ -1,33 +1,40 @@
 ---
-title: "How to Handle PAYE and Dividends When You Have Multiple Agency Director Shareholders"
-slug: "paye-dividends-multiple-directors-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/paye-dividends-multiple-directors-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Salary and Dividends"
-metaTitle: "PAYE & Dividends for Multiple Agency Directors: How-To"
-metaDescription: "How to set up PAYE and dividends for multiple agency director shareholders. Salary vs dividend split, tax calculations, and practical examples for 2-5"
-altText: "Two agency directors reviewing financial documents in a London office meeting room"
-image: "/blog/paye-dividends-multiple-directors-agency.jpg"
+title: How to Handle PAYE and Dividends When You Have Multiple Agency Director Shareholders
+slug: paye-dividends-multiple-directors-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/paye-dividends-multiple-directors-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Salary and Dividends
+metaTitle: 'PAYE & Dividends for Multiple Agency Directors: How-To'
+metaDescription: How to set up PAYE and dividends for multiple agency director shareholders. Salary vs dividend split, tax calculations, and practical examples for 2-5
+altText: Two agency directors reviewing financial documents in a London office meeting room
+image: /blog/paye-dividends-multiple-directors-agency.jpg
 imageCredit:
-  photographer: "Tima Miroshnichenko"
-  photographerUrl: "https://www.pexels.com/@tima-miroshnichenko"
-  sourceUrl: "https://www.pexels.com/photo/a-person-holding-dollars-on-the-table-6693654/"
-  source: "Pexels"
-h1: "How to Handle PAYE and Dividends When You Have Multiple Agency Director Shareholders"
-summary: "Running an agency with multiple director shareholders changes how you handle payroll and dividends. This guide covers the practical setup, tax-efficient salary splits, dividend allocation, and common pitfalls when you're not the only founder in the room."
-schema: ""
+  photographer: Tima Miroshnichenko
+  photographerUrl: https://www.pexels.com/@tima-miroshnichenko
+  sourceUrl: https://www.pexels.com/photo/a-person-holding-dollars-on-the-table-6693654/
+  source: Pexels
+h1: How to Handle PAYE and Dividends When You Have Multiple Agency Director Shareholders
+summary: Running an agency with multiple director shareholders changes how you handle payroll and dividends. This guide covers the practical setup, tax-efficient salary splits, dividend allocation, and common pitfalls when you're not the only founder in the room.
+schema: ''
 faqs:
-  - question: "Can each director take a different salary?"
-    answer: "Yes, each director can take a different salary. There is no legal requirement for equal pay among directors. But HMRC may challenge salaries that seem disproportionate to the work done. If one director works part-time or has a less demanding role, a lower salary is fine. Document the reasoning in board minutes. The standard approach for working directors in a small agency is the same £12,570 salary for everyone, which avoids questions and keeps NI costs at zero."
-  - question: "How do dividends work when shareholdings are unequal?"
-    answer: "Dividends must be paid in proportion to shareholdings unless you have different share classes with different rights. If you own 60% of the shares, you receive 60% of any dividend declared. You cannot pay a dividend that favours one shareholder over another using the same share class. If you want flexibility, create A shares and B shares with different dividend entitlements before issuing any dividends. Your accountant can set this up through a share restructuring."
-  - question: "What happens if one director wants to take dividends and another doesn't?"
-    answer: "All shareholders must receive their proportionate share of any dividend declared. You cannot have one director opt out while another takes a dividend. The solution is a formal dividend policy agreed in advance. Some agencies declare dividends quarterly with a fixed percentage of profits. Others declare annually. If a director personally wants to leave their dividend in the company, they can do so as a director's loan to the business, but the dividend is still declared and taxed in their name."
-  - question: "Do non-working directors (investors) need to be on PAYE?"
-    answer: "Yes, every director must be registered on the company's PAYE scheme, even if they take no salary. This is a legal requirement. You set them up with a nil-paid employee record. They will not receive any payments through payroll, but HMRC expects them to be on the scheme. If they later take a fee for board meetings or advisory work, you process it through their existing PAYE record."
+- question: Can each director take a different salary?
+  answer: Yes, each director can take a different salary. There is no legal requirement for equal pay among directors. But HMRC may challenge salaries that seem disproportionate to the work done. If one director works part-time or has a less demanding role, a lower salary is fine. Document the reasoning in board minutes. The standard approach for working directors in a small agency is the same £12,570 salary for everyone, which avoids questions and keeps NI costs at zero.
+- question: How do dividends work when shareholdings are unequal?
+  answer: Dividends must be paid in proportion to shareholdings unless you have different share classes with different rights. If you own 60% of the shares, you receive 60% of any dividend declared. You cannot pay a dividend that favours one shareholder over another using the same share class. If you want flexibility, create A shares and B shares with different dividend entitlements before issuing any dividends. Your accountant can set this up through a share restructuring.
+- question: What happens if one director wants to take dividends and another doesn't?
+  answer: All shareholders must receive their proportionate share of any dividend declared. You cannot have one director opt out while another takes a dividend. The solution is a formal dividend policy agreed in advance. Some agencies declare dividends quarterly with a fixed percentage of profits. Others declare annually. If a director personally wants to leave their dividend in the company, they can do so as a director's loan to the business, but the dividend is still declared and taxed in their name.
+- question: Do non-working directors (investors) need to be on PAYE?
+  answer: Yes, every director must be registered on the company's PAYE scheme, even if they take no salary. This is a legal requirement. You set them up with a nil-paid employee record. They will not receive any payments through payroll, but HMRC expects them to be on the scheme. If they later take a fee for board meetings or advisory work, you process it through their existing PAYE record.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Each working director should typically take a salary of £12,570 to use their personal allowance and avoid NI, with the same amount for all directors to simplify payroll.
+- Dividends must be allocated according to each director's shareholding percentage, not equally, to comply with company law and avoid disputes.
+- If a director has other income pushing them into a higher tax bracket, consider adjusting dividend timing or using a different salary level to optimise their overall tax position.
+- Register every director on the company's PAYE scheme even if they take no salary, as HMRC requires it for all directors of a limited company.
+- For directors working part-time or non-executive roles, you can pay a lower salary or none, but ensure this is documented and consistent with their duties.
 ---
-
 <h2>When Your Agency Has More Than One Founder in the Room</h2>
 
 <p>You started the agency with a co-founder. Or maybe three of you came together — one handling client work, one on strategy, one running operations. Each of you owns shares. Each of you works full-time. Each of you expects to be paid.</p>

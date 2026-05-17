@@ -1,33 +1,40 @@
 ---
-title: "Does My Dubai Free Zone Agency Need to File a UAE Corporate Tax Return If It Makes a Loss?"
-slug: "dubai-free-zone-agency-uae-corporate-tax-return-loss"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-free-zone-agency-uae-corporate-tax-return-loss"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UAE Corporate Tax Return Filing for Loss-Making Free Zone"
-metaDescription: "Loss-making Dubai free zone agencies must still file UAE corporate tax returns. Here’s what you need to know about the compliance requirement"
-altText: "Dubai free zone agency founder reviewing UAE corporate tax return documents at a desk"
-image: "/blog/dubai-free-zone-agency-uae-corporate-tax-return-loss.jpg"
+title: Does My Dubai Free Zone Agency Need to File a UAE Corporate Tax Return If It Makes a Loss?
+slug: dubai-free-zone-agency-uae-corporate-tax-return-loss
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/dubai-free-zone-agency-uae-corporate-tax-return-loss
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: UAE Corporate Tax Return Filing for Loss-Making Free Zone
+metaDescription: Loss-making Dubai free zone agencies must still file UAE corporate tax returns. Here’s what you need to know about the compliance requirement
+altText: Dubai free zone agency founder reviewing UAE corporate tax return documents at a desk
+image: /blog/dubai-free-zone-agency-uae-corporate-tax-return-loss.jpg
 imageCredit:
-  photographer: "Kate Trysh"
-  photographerUrl: "https://www.pexels.com/@katetrysh"
-  sourceUrl: "https://www.pexels.com/photo/stunning-aerial-view-of-urban-skyline-with-skyscrapers-and-highway-27206541/"
-  source: "Pexels"
-h1: "Does My Dubai Free Zone Agency Need to File a UAE Corporate Tax Return If It Makes a Loss?"
-summary: "If your Dubai free zone agency made a loss, you still need to file a UAE corporate tax return. This is a common compliance trap for early-stage and dormant agencies. Here’s what to do."
-schema: ""
+  photographer: Kate Trysh
+  photographerUrl: https://www.pexels.com/@katetrysh
+  sourceUrl: https://www.pexels.com/photo/stunning-aerial-view-of-urban-skyline-with-skyscrapers-and-highway-27206541/
+  source: Pexels
+h1: Does My Dubai Free Zone Agency Need to File a UAE Corporate Tax Return If It Makes a Loss?
+summary: If your Dubai free zone agency made a loss, you still need to file a UAE corporate tax return. This is a common compliance trap for early-stage and dormant agencies. Here’s what to do.
+schema: ''
 faqs:
-  - question: "Do I need to file a UAE corporate tax return if my free zone agency made no revenue at all?"
-    answer: "Yes. Even if your agency had zero revenue and made a loss, you must file a corporate tax return. The filing obligation applies to all registered taxable persons, regardless of income level. A nil return is still a return."
-  - question: "What is the penalty for not filing a UAE corporate tax return for a loss-making company?"
-    answer: "The penalty is AED 500 for the first month of delay, plus AED 100 for each subsequent month, capped at AED 2,000. However, if you also failed to register on time, there is an additional AED 10,000 penalty. Filing late is better than not filing at all."
-  - question: "Can I carry forward losses from my free zone agency to offset future profits?"
-    answer: "Yes. UAE corporate tax law allows indefinite carry forward of tax losses, subject to conditions. You must have filed the return for the loss-making year to claim the loss. You can offset up to 75% of taxable income in any future year with carried forward losses."
-  - question: "Does a dormant free zone company need to file UAE corporate tax returns?"
-    answer: "Yes. Dormancy does not exempt you from filing. Every registered taxable person must file a return for each tax period, even if there has been no activity. You will need financial statements showing zero income and expenses. The UAE does not have a dormant company filing exemption like the UK."
+- question: Do I need to file a UAE corporate tax return if my free zone agency made no revenue at all?
+  answer: Yes. Even if your agency had zero revenue and made a loss, you must file a corporate tax return. The filing obligation applies to all registered taxable persons, regardless of income level. A nil return is still a return.
+- question: What is the penalty for not filing a UAE corporate tax return for a loss-making company?
+  answer: The penalty is AED 500 for the first month of delay, plus AED 100 for each subsequent month, capped at AED 2,000. However, if you also failed to register on time, there is an additional AED 10,000 penalty. Filing late is better than not filing at all.
+- question: Can I carry forward losses from my free zone agency to offset future profits?
+  answer: Yes. UAE corporate tax law allows indefinite carry forward of tax losses, subject to conditions. You must have filed the return for the loss-making year to claim the loss. You can offset up to 75% of taxable income in any future year with carried forward losses.
+- question: Does a dormant free zone company need to file UAE corporate tax returns?
+  answer: Yes. Dormancy does not exempt you from filing. Every registered taxable person must file a return for each tax period, even if there has been no activity. You will need financial statements showing zero income and expenses. The UAE does not have a dormant company filing exemption like the UK.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A loss-making Dubai free zone agency must file a UAE corporate tax return; filing is mandatory regardless of profitability.
+- The UAE corporate tax return deadline is nine months after your financial year end, e.g., 30 September for a 31 December year end.
+- Free zone agencies must track qualifying and non-qualifying income separately for tax purposes, even when making a loss.
+- First tax period for most businesses is the financial year starting on or after 1 June 2023, with filing required by the FTA.
+- Filing a loss-making return is a compliance requirement, not optional; failure to file can lead to penalties.
 ---
-
 <p>You set up your agency in a Dubai free zone because the tax environment was one of the main draws. No corporate tax on qualifying income, no personal income tax, a straightforward path to operating internationally. Then the UAE introduced corporate tax from June 2023, and now you are wondering: if my agency made a loss in its first year, do I still need to file a return?</p>
 
 <p>The short answer is yes. A loss-making free zone entity must file a UAE corporate tax return. This is not optional. And it is a compliance burden that many agency founders underestimate when they set up a dormant or early-stage operation in places like Dubai Silicon Oasis, DMCC, DIFC, or JAFZA.</p>

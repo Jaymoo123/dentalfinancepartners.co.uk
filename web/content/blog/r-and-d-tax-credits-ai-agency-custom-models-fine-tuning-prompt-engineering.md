@@ -1,33 +1,40 @@
 ---
-title: "Can an AI Agency Claim R&D Tax Credits for Custom Models, Fine-Tuning and Prompt Engineering?"
-slug: "r-and-d-tax-credits-ai-agency-custom-models-fine-tuning-prompt-engineering"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/r-and-d-tax-credits-ai-agency-custom-models-fine-tuning-prompt-engineering"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "R&D Tax Credits for AI Agencies: Custom Models & Fine-Tuning"
-metaDescription: "Can your AI agency claim R&D tax credits for custom models, fine-tuning, or prompt engineering? Yes, if you're resolving technical uncertainty. Here's"
-altText: "Two agency founders reviewing a laptop screen showing code and an R&D tax credit calculator in a modern UK office with exposed brick walls"
-image: "/blog/r-and-d-tax-credits-ai-agency-custom-models-fine-tuning-prompt-engineering.jpg"
+title: Can an AI Agency Claim R&D Tax Credits for Custom Models, Fine-Tuning and Prompt Engineering?
+slug: r-and-d-tax-credits-ai-agency-custom-models-fine-tuning-prompt-engineering
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/r-and-d-tax-credits-ai-agency-custom-models-fine-tuning-prompt-engineering
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'R&D Tax Credits for AI Agencies: Custom Models & Fine-Tuning'
+metaDescription: Can your AI agency claim R&D tax credits for custom models, fine-tuning, or prompt engineering? Yes, if you're resolving technical uncertainty. Here's
+altText: Two agency founders reviewing a laptop screen showing code and an R&D tax credit calculator in a modern UK office with exposed brick walls
+image: /blog/r-and-d-tax-credits-ai-agency-custom-models-fine-tuning-prompt-engineering.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/scrabble-tiles-on-a-wooden-table-with-the-word-rock-19867470/"
-  source: "Pexels"
-h1: "Can an AI Agency Claim R&D Tax Credits for Custom Models, Fine-Tuning and Prompt Engineering?"
-summary: "Many AI agency founders assume R&D tax credits only apply to labs and hardware projects. That is wrong. If your agency is building custom models, fine-tuning open-source LLMs, or engineering complex prompt chains to solve uncertain technical problems, you likely qualify. This post explains exactly what HMRC looks for, what does not qualify, and how to structure your claim."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/scrabble-tiles-on-a-wooden-table-with-the-word-rock-19867470/
+  source: Pexels
+h1: Can an AI Agency Claim R&D Tax Credits for Custom Models, Fine-Tuning and Prompt Engineering?
+summary: Many AI agency founders assume R&D tax credits only apply to labs and hardware projects. That is wrong. If your agency is building custom models, fine-tuning open-source LLMs, or engineering complex prompt chains to solve uncertain technical problems, you likely qualify. This post explains exactly what HMRC looks for, what does not qualify, and how to structure your claim.
+schema: ''
 faqs:
-  - question: "Can an AI agency claim R&D tax credits for using OpenAI or Anthropic APIs?"
-    answer: "Generally, no. Calling an API with standard prompts is routine work, not R&D. Even if you engineer complex prompts, HMRC typically views this as writing, not technological innovation. The exception is if you are building novel multi-agent systems, custom routing logic, or evaluation frameworks that resolve genuine technical uncertainty. In that case, the API costs for the experimentation phase may qualify, but the production API calls do not."
-  - question: "What records do I need to keep for an AI R&D claim?"
-    answer: "You need contemporaneous evidence showing the technical uncertainty and the work done to resolve it. This includes project briefs, experiment logs, training run records, meeting notes, version control history, and timesheets. HMRC expects to see a clear narrative of what was uncertain, what you tried, and what the outcome was. A spreadsheet of costs without a technical narrative will not survive an enquiry."
-  - question: "Does fine-tuning an open-source model like Llama 3 qualify for R&D?"
-    answer: "It can, but only if the fine-tuning process itself resolved technological uncertainty. If you ran a standard fine-tuning script on your data and it worked first time, that is routine. If you had to experiment with different architectures, training strategies, or evaluation methods because standard approaches failed, that is R&D. The key is whether a competent machine learning engineer would have known the outcome in advance."
-  - question: "How much does an AI agency typically claim for R&D?"
-    answer: "It varies widely based on the agency's size and the nature of its work. A small agency with two qualifying projects might claim £50,000 to £100,000 in costs. A larger agency doing substantial model training work could claim £300,000 to £500,000 or more. The average claim we see for AI-focused agencies is around £180,000 in qualifying costs, which generates a tax saving or cash payment of roughly £25,000 to £45,000 depending on profitability."
+- question: Can an AI agency claim R&D tax credits for using OpenAI or Anthropic APIs?
+  answer: Generally, no. Calling an API with standard prompts is routine work, not R&D. Even if you engineer complex prompts, HMRC typically views this as writing, not technological innovation. The exception is if you are building novel multi-agent systems, custom routing logic, or evaluation frameworks that resolve genuine technical uncertainty. In that case, the API costs for the experimentation phase may qualify, but the production API calls do not.
+- question: What records do I need to keep for an AI R&D claim?
+  answer: You need contemporaneous evidence showing the technical uncertainty and the work done to resolve it. This includes project briefs, experiment logs, training run records, meeting notes, version control history, and timesheets. HMRC expects to see a clear narrative of what was uncertain, what you tried, and what the outcome was. A spreadsheet of costs without a technical narrative will not survive an enquiry.
+- question: Does fine-tuning an open-source model like Llama 3 qualify for R&D?
+  answer: It can, but only if the fine-tuning process itself resolved technological uncertainty. If you ran a standard fine-tuning script on your data and it worked first time, that is routine. If you had to experiment with different architectures, training strategies, or evaluation methods because standard approaches failed, that is R&D. The key is whether a competent machine learning engineer would have known the outcome in advance.
+- question: How much does an AI agency typically claim for R&D?
+  answer: It varies widely based on the agency's size and the nature of its work. A small agency with two qualifying projects might claim £50,000 to £100,000 in costs. A larger agency doing substantial model training work could claim £300,000 to £500,000 or more. The average claim we see for AI-focused agencies is around £180,000 in qualifying costs, which generates a tax saving or cash payment of roughly £25,000 to £45,000 depending on profitability.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- AI agencies can claim R&D tax credits for building custom models, fine-tuning open-source LLMs, or advanced prompt engineering if the work resolves technological uncertainty.
+- HMRC requires that the project had a defined start and end, sought to overcome scientific or technological uncertainty, and advanced the field of science or technology.
+- Training a model from scratch qualifies as R&D if you document specific uncertainties like architecture, data selection, or hyperparameters that required experimentation.
+- Fine-tuning open-source models qualifies only if the fine-tuning process itself resolved technological uncertainty, not if it was routine engineering.
+- Claims fail when agencies use standard model architectures with standard training data or make vague claims without technical records backing up the uncertainty.
 ---
-
 <p>You are an AI agency founder. Your team has spent the last six months fine-tuning a Llama 3 model on proprietary client data to generate compliant marketing copy for a regulated industry. You have built custom retrieval-augmented generation (RAG) pipelines. You have engineered prompt chains that route queries through multiple models to produce accurate outputs. You have hit dead ends, changed approaches, and eventually landed on something that works.</p>
 
 <p>That sounds like research and development. And for <strong>r&d tax credits ai agency</strong> claims, it often is.</p>

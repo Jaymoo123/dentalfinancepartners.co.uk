@@ -1,33 +1,40 @@
 ---
-title: "What Happens to My Carried Forward UK Capital Losses When I Become Non-Resident?"
-slug: "capital-losses-carried-forward-non-resident"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/capital-losses-carried-forward-non-resident"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Capital Losses Carried Forward Non-Resident: UK Rules"
-metaDescription: "Leaving the UK? Your carried forward capital losses aren’t automatically lost. But the rules are specific. Here’s what agency founders moving to Dubai"
-altText: "UK agency founder reviewing capital gains and losses paperwork in a Dubai office with a laptop and coffee"
-image: "/blog/capital-losses-carried-forward-non-resident.jpg"
+title: What Happens to My Carried Forward UK Capital Losses When I Become Non-Resident?
+slug: capital-losses-carried-forward-non-resident
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/capital-losses-carried-forward-non-resident
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'Capital Losses Carried Forward Non-Resident: UK Rules'
+metaDescription: Leaving the UK? Your carried forward capital losses aren’t automatically lost. But the rules are specific. Here’s what agency founders moving to Dubai
+altText: UK agency founder reviewing capital gains and losses paperwork in a Dubai office with a laptop and coffee
+image: /blog/capital-losses-carried-forward-non-resident.jpg
 imageCredit:
-  photographer: "Thirdman"
-  photographerUrl: "https://www.pexels.com/@thirdman"
-  sourceUrl: "https://www.pexels.com/photo/yellow-text-on-black-background-5981818/"
-  source: "Pexels"
-h1: "What Happens to My Carried Forward UK Capital Losses When I Become Non-Resident?"
-summary: "Moving to Dubai or elsewhere doesn’t mean you lose your UK capital losses. But the rules on using them while non-resident are specific and often misunderstood. Here’s what agency founders need to know about capital losses carried forward when non-resident."
-schema: ""
+  photographer: Thirdman
+  photographerUrl: https://www.pexels.com/@thirdman
+  sourceUrl: https://www.pexels.com/photo/yellow-text-on-black-background-5981818/
+  source: Pexels
+h1: What Happens to My Carried Forward UK Capital Losses When I Become Non-Resident?
+summary: Moving to Dubai or elsewhere doesn’t mean you lose your UK capital losses. But the rules on using them while non-resident are specific and often misunderstood. Here’s what agency founders need to know about capital losses carried forward when non-resident.
+schema: ''
 faqs:
-  - question: "Do I lose my UK capital losses if I move to Dubai?"
-    answer: "No. Carried forward capital losses remain on your HMRC record indefinitely, even after you become non-resident. You can still use them against future UK gains, such as the sale of UK property or shares in your agency. Just make sure you keep your records and file a self-assessment return in the year you use them."
-  - question: "Can I use carried forward losses against a gain in the same tax year while non-resident?"
-    answer: "No. When you are non-resident, you cannot use a loss that arises in the same tax year to offset a gain in that same year. Only losses that were already carried forward from previous tax years are available. This is a key difference from the rules that apply to UK residents."
-  - question: "What happens to my losses if I return to the UK after living abroad?"
-    answer: "Your carried forward losses come back with you and are available for use against future UK gains. However, if you were non-resident for five years or more, certain gains that accrued during your non-residence may be deemed to arise on your return. Losses cannot offset these deemed gains if they arose during your non-resident period. Speak to your accountant before returning."
-  - question: "Do I need to file a UK tax return if I'm non-resident and want to use capital losses?"
-    answer: "Yes. If you realise a UK gain while non-resident and want to offset it with carried forward losses, you must file a self-assessment tax return (SA100) for that year. You'll need to declare the gain and claim the losses, providing evidence of the loss computation and carry forward."
+- question: Do I lose my UK capital losses if I move to Dubai?
+  answer: No. Carried forward capital losses remain on your HMRC record indefinitely, even after you become non-resident. You can still use them against future UK gains, such as the sale of UK property or shares in your agency. Just make sure you keep your records and file a self-assessment return in the year you use them.
+- question: Can I use carried forward losses against a gain in the same tax year while non-resident?
+  answer: No. When you are non-resident, you cannot use a loss that arises in the same tax year to offset a gain in that same year. Only losses that were already carried forward from previous tax years are available. This is a key difference from the rules that apply to UK residents.
+- question: What happens to my losses if I return to the UK after living abroad?
+  answer: Your carried forward losses come back with you and are available for use against future UK gains. However, if you were non-resident for five years or more, certain gains that accrued during your non-residence may be deemed to arise on your return. Losses cannot offset these deemed gains if they arose during your non-resident period. Speak to your accountant before returning.
+- question: Do I need to file a UK tax return if I'm non-resident and want to use capital losses?
+  answer: Yes. If you realise a UK gain while non-resident and want to offset it with carried forward losses, you must file a self-assessment tax return (SA100) for that year. You'll need to declare the gain and claim the losses, providing evidence of the loss computation and carry forward.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Carried forward UK capital losses remain on your HMRC record indefinitely after you become non-resident.
+- You can use carried forward losses to offset UK gains from assets like UK property or agency shares while non-resident.
+- Non-residents cannot use a loss arising in the same tax year to offset a gain in that year.
+- Losses accrued while UK resident can only offset UK gains, not foreign gains outside UK tax scope.
+- Losses arising after you become non-resident are not UK losses and belong to your new tax jurisdiction.
 ---
-
 <p>If you're an agency founder planning a move to Dubai, you've probably already thought about the big ticket items: corporation tax, dividend planning, and whether your company structure still makes sense. But there's a quieter question that often gets overlooked until the last minute.</p>
 
 <p>What happens to your carried forward capital losses when you become non-resident?</p>

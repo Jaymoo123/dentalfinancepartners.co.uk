@@ -1,33 +1,40 @@
 ---
-title: "UK Corporation Tax Final Period Before Moving: What Agency Founders Must Do"
-slug: "uk-corporation-tax-final-period-before-moving"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-corporation-tax-final-period-before-moving"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK corporation tax final period before moving: agency"
-metaDescription: "Agency founders: your company's accounting period must be shortened before HMRC considers it dormant. Here's the timeline, the forms, and the cash you'll"
-altText: "Agency founder reviewing UK corporation tax final period documents with accountant in a modern office"
-image: "/blog/uk-corporation-tax-final-period-before-moving.jpg"
+title: 'UK Corporation Tax Final Period Before Moving: What Agency Founders Must Do'
+slug: uk-corporation-tax-final-period-before-moving
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-corporation-tax-final-period-before-moving
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK corporation tax final period before moving: agency'
+metaDescription: 'Agency founders: your company''s accounting period must be shortened before HMRC considers it dormant. Here''s the timeline, the forms, and the cash you''ll'
+altText: Agency founder reviewing UK corporation tax final period documents with accountant in a modern office
+image: /blog/uk-corporation-tax-final-period-before-moving.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-surface-7821565/"
-  source: "Pexels"
-h1: "UK Corporation Tax Final Period Before Moving: What Agency Founders Must Do"
-summary: "If you're moving your agency to the UAE, HMRC requires a final UK corporation tax period. We cover the shortened accounting period, the CT600 filing, and the payment deadlines you cannot miss."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-surface-7821565/
+  source: Pexels
+h1: 'UK Corporation Tax Final Period Before Moving: What Agency Founders Must Do'
+summary: If you're moving your agency to the UAE, HMRC requires a final UK corporation tax period. We cover the shortened accounting period, the CT600 filing, and the payment deadlines you cannot miss.
+schema: ''
 faqs:
-  - question: "What is the deadline for paying corporation tax on the final period before moving to Dubai?"
-    answer: "The payment deadline is 9 months and 1 day after the end of the shortened accounting period. For example, if your final period ends on 15 September 2025, the tax is due by 16 June 2026. The filing deadline for the CT600 is later (12 months after the period end), but you must pay on time to avoid interest and penalties."
-  - question: "Can I leave a directors' loan outstanding when my agency becomes non-resident?"
-    answer: "You can, but it is not advisable. If the loan exceeds £10k and is interest-free, there is a benefit-in-kind to report. If it is not repaid within 9 months of the year end, the company pays S455 tax at 33.75%. The cleanest approach is to repay the loan before the final period ends, so there is no outstanding balance to deal with from the UAE."
-  - question: "Does my agency need to continue filing UK corporation tax returns after becoming non-resident?"
-    answer: "Not for profits earned from Dubai trading, provided your agency has no UK source of income and no UK permanent establishment. However, if your agency continues to have UK income (for example, from a UK client managed from the UK), that income may still be subject to UK corporation tax. You also need to consider ongoing VAT and PAYE obligations if you have UK employees or UK supplies."
-  - question: "What happens if I miscalculate the corporation tax due and underpay?"
-    answer: "HMRC will charge late payment interest from the due date, and you may face penalties if the underpayment is significant or if you file the return late. If you realise you have underpaid, pay the difference immediately and notify HMRC. It is better to overpay and claim a repayment than to underpay and face interest charges."
+- question: What is the deadline for paying corporation tax on the final period before moving to Dubai?
+  answer: The payment deadline is 9 months and 1 day after the end of the shortened accounting period. For example, if your final period ends on 15 September 2025, the tax is due by 16 June 2026. The filing deadline for the CT600 is later (12 months after the period end), but you must pay on time to avoid interest and penalties.
+- question: Can I leave a directors' loan outstanding when my agency becomes non-resident?
+  answer: You can, but it is not advisable. If the loan exceeds £10k and is interest-free, there is a benefit-in-kind to report. If it is not repaid within 9 months of the year end, the company pays S455 tax at 33.75%. The cleanest approach is to repay the loan before the final period ends, so there is no outstanding balance to deal with from the UAE.
+- question: Does my agency need to continue filing UK corporation tax returns after becoming non-resident?
+  answer: Not for profits earned from Dubai trading, provided your agency has no UK source of income and no UK permanent establishment. However, if your agency continues to have UK income (for example, from a UK client managed from the UK), that income may still be subject to UK corporation tax. You also need to consider ongoing VAT and PAYE obligations if you have UK employees or UK supplies.
+- question: What happens if I miscalculate the corporation tax due and underpay?
+  answer: HMRC will charge late payment interest from the due date, and you may face penalties if the underpayment is significant or if you file the return late. If you realise you have underpaid, pay the difference immediately and notify HMRC. It is better to overpay and claim a repayment than to underpay and face interest charges.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Your company's accounting period must be shortened to end on the date it becomes non-resident for UK tax purposes.
+- File a final CT600 corporation tax return for the shortened period and pay any tax due within 9 months and 1 day of the period end.
+- All profits earned up to the date of non-residency are subject to UK corporation tax at 19% or 25% depending on annualised profit levels.
+- Annualise your profits for the shortened period to determine the correct corporation tax rate and marginal relief bands.
+- HMRC will not accept an approximate date for the change of residency; use the exact date of central management and control moving abroad.
 ---
-
 <p>If you are planning to move your agency to Dubai and become non-resident for UK tax purposes, there is a specific corporation tax process you need to complete before you leave. It is not optional. And it is easy to get wrong if you do not know the rules.</p>
 
 <p>The key point is this: your company's accounting period must be shortened to end on the date your agency becomes non-resident. You then file a final corporation tax return (CT600) for that shortened period. And you must pay any tax due before HMRC will treat the company as dormant or non-resident.</p>

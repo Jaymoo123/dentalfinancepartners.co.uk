@@ -1,33 +1,40 @@
 ---
-title: "What Does Incorporation Actually Cost? The Agency Founder's Reality Check"
-slug: "incorporation-cost-agency-founders"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/incorporation-cost-agency-founders"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Incorporation and Structure"
-metaTitle: "Incorporation Cost for Agency Founders: Real Numbers"
-metaDescription: "What does incorporation actually cost an agency founder? We break down the real setup fees, ongoing costs, and tax implications. A practical reality check."
-altText: "Agency founder reviewing incorporation cost documents at a desk in a modern UK office"
-image: "/blog/incorporation-cost-agency-founders.jpg"
+title: What Does Incorporation Actually Cost? The Agency Founder's Reality Check
+slug: incorporation-cost-agency-founders
+canonical: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure/incorporation-cost-agency-founders
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Incorporation and Structure
+metaTitle: 'Incorporation Cost for Agency Founders: Real Numbers'
+metaDescription: What does incorporation actually cost an agency founder? We break down the real setup fees, ongoing costs, and tax implications. A practical reality check.
+altText: Agency founder reviewing incorporation cost documents at a desk in a modern UK office
+image: /blog/incorporation-cost-agency-founders.jpg
 imageCredit:
-  photographer: "Kindel Media"
-  photographerUrl: "https://www.pexels.com/@kindelmedia"
-  sourceUrl: "https://www.pexels.com/photo/a-close-up-shot-of-a-graph-on-a-paper-7054368/"
-  source: "Pexels"
-h1: "What Does Incorporation Actually Cost? The Agency Founder's Reality Check"
-summary: "Incorporating your agency isn't just a tax decision. It comes with real costs: setup fees, ongoing accounting, payroll, and compliance. This is the reality check you need before registering at Companies House."
-schema: ""
+  photographer: Kindel Media
+  photographerUrl: https://www.pexels.com/@kindelmedia
+  sourceUrl: https://www.pexels.com/photo/a-close-up-shot-of-a-graph-on-a-paper-7054368/
+  source: Pexels
+h1: What Does Incorporation Actually Cost? The Agency Founder's Reality Check
+summary: 'Incorporating your agency isn''t just a tax decision. It comes with real costs: setup fees, ongoing accounting, payroll, and compliance. This is the reality check you need before registering at Companies House.'
+schema: ''
 faqs:
-  - question: "What is the cheapest way to incorporate an agency?"
-    answer: "The cheapest way is to register directly at Companies House for £12. But that gives you standard articles of association and no guidance on SIC codes. Most agency founders are better off paying £20-£60 for a formation agent that sets up the correct structure, including a shareholder agreement and proper share classes. The £12 route can cost more later if you need to fix errors."
-  - question: "How much does an accountant cost for a limited company agency?"
-    answer: "For a small agency turning over under £250k, expect £1,200-£2,500 per year. For agencies turning over £250k+ with multiple directors and contractors, £3,000-£4,500 is typical. This should include annual accounts, corporation tax return, confirmation statement, and personal tax returns for directors. Payroll may be extra if you have employees beyond yourself."
-  - question: "Is incorporation worth it for a sole trader agency earning £60k profit?"
-    answer: "Probably not. At £60k profit, the tax saving from incorporation is modest — roughly £1,000-£2,000 per year. But your accountancy fees go up by a similar amount. You also add administrative complexity. Most accountants recommend incorporating once your profit exceeds £80,000-£100,000, or when you need to reinvest significant profits into the business."
-  - question: "What hidden costs catch agency founders out after incorporation?"
-    answer: "The three biggest are: director's loan account overdrawn by more than £10,000 (triggers 33.75% S455 tax), IR35 determinations for contractors (adds 14.3% employer costs if inside IR35), and underestimating dividend tax now that the allowance is only £500. Also, many founders forget employer NI on their salary above £9,100, which adds roughly £480 per year at the standard salary level."
+- question: What is the cheapest way to incorporate an agency?
+  answer: The cheapest way is to register directly at Companies House for £12. But that gives you standard articles of association and no guidance on SIC codes. Most agency founders are better off paying £20-£60 for a formation agent that sets up the correct structure, including a shareholder agreement and proper share classes. The £12 route can cost more later if you need to fix errors.
+- question: How much does an accountant cost for a limited company agency?
+  answer: For a small agency turning over under £250k, expect £1,200-£2,500 per year. For agencies turning over £250k+ with multiple directors and contractors, £3,000-£4,500 is typical. This should include annual accounts, corporation tax return, confirmation statement, and personal tax returns for directors. Payroll may be extra if you have employees beyond yourself.
+- question: Is incorporation worth it for a sole trader agency earning £60k profit?
+  answer: Probably not. At £60k profit, the tax saving from incorporation is modest — roughly £1,000-£2,000 per year. But your accountancy fees go up by a similar amount. You also add administrative complexity. Most accountants recommend incorporating once your profit exceeds £80,000-£100,000, or when you need to reinvest significant profits into the business.
+- question: What hidden costs catch agency founders out after incorporation?
+  answer: 'The three biggest are: director''s loan account overdrawn by more than £10,000 (triggers 33.75% S455 tax), IR35 determinations for contractors (adds 14.3% employer costs if inside IR35), and underestimating dividend tax now that the allowance is only £500. Also, many founders forget employer NI on their salary above £9,100, which adds roughly £480 per year at the standard salary level.'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Incorporating an agency costs £350–£1,200 in setup fees including company formation, registered office, bank account, and insurance.
+- Annual accountancy fees for a limited company range from £1,200 to £4,000, covering corporation tax returns, confirmation statements, and PAYE.
+- As a limited company, you must file annual accounts and a CT600 corporation tax return, unlike a sole trader's single self-assessment.
+- Professional indemnity insurance costs £200–£800 per year and is often required by agency clients before signing contracts.
+- Using your home address as the registered office puts it on public record; a professional address costs £50–£150 annually.
 ---
-
 <p>You have a growing agency. You are billing £60,000 or £160,000 or £600,000 a year. Someone — your accountant, a fellow founder, a well-meaning friend — has told you to incorporate. "Set up a limited company," they say. "It's more tax efficient."</p>
 
 <p>They are right, often. But they rarely tell you what the <strong>cost of incorporation</strong> actually looks like in pounds and pence.</p>

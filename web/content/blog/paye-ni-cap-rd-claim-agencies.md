@@ -1,33 +1,40 @@
 ---
-title: "The PAYE-NI Cap on R&D Claims: When It Catches Agencies Out"
-slug: "paye-ni-cap-rd-claim-agencies"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/paye-ni-cap-rd-claim-agencies"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "PAYE-NI Cap on R&D Claims: What Agency Founders Need to Know"
-metaDescription: "The PAYE-NI cap limits R&D tax credits for agencies spending more on subcontractors than staff. Here's how it works and how to avoid losing your claim."
-altText: "Accountant reviewing R&D tax credit claim documents for a UK digital agency with PAYE-NI cap calculations on screen"
-image: "/blog/paye-ni-cap-rd-claim-agencies.jpg"
+title: 'The PAYE-NI Cap on R&D Claims: When It Catches Agencies Out'
+slug: paye-ni-cap-rd-claim-agencies
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/paye-ni-cap-rd-claim-agencies
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'PAYE-NI Cap on R&D Claims: What Agency Founders Need to Know'
+metaDescription: The PAYE-NI cap limits R&D tax credits for agencies spending more on subcontractors than staff. Here's how it works and how to avoid losing your claim.
+altText: Accountant reviewing R&D tax credit claim documents for a UK digital agency with PAYE-NI cap calculations on screen
+image: /blog/paye-ni-cap-rd-claim-agencies.jpg
 imageCredit:
-  photographer: "Gustavo Fring"
-  photographerUrl: "https://www.pexels.com/@gustavo-fring"
-  sourceUrl: "https://www.pexels.com/photo/person-collecting-chemical-sample-using-dropper-pipette-8770737/"
-  source: "Pexels"
-h1: "The PAYE-NI Cap on R&D Claims: When It Catches Agencies Out"
-summary: "The PAYE-NI cap limits R&D tax credits for agencies spending more on subcontractors than staff. Here's how it works, why creative and digital agencies get caught out, and how to structure your claim to avoid losing thousands."
-schema: ""
+  photographer: Gustavo Fring
+  photographerUrl: https://www.pexels.com/@gustavo-fring
+  sourceUrl: https://www.pexels.com/photo/person-collecting-chemical-sample-using-dropper-pipette-8770737/
+  source: Pexels
+h1: 'The PAYE-NI Cap on R&D Claims: When It Catches Agencies Out'
+summary: The PAYE-NI cap limits R&D tax credits for agencies spending more on subcontractors than staff. Here's how it works, why creative and digital agencies get caught out, and how to structure your claim to avoid losing thousands.
+schema: ''
 faqs:
-  - question: "What is the PAYE-NI cap on R&D claims?"
-    answer: "The PAYE-NI cap limits the payable tax credit you can receive from an SME R&D claim to the total PAYE and Class 1 employer National Insurance your company paid in the period. It only applies to loss-making companies claiming a cash credit. If your company is profitable and using the credit to reduce corporation tax, the cap does not apply."
-  - question: "Does the PAYE-NI cap apply to all R&D claims?"
-    answer: "No. The cap only applies to payable credits under the SME R&D scheme. It does not apply if you are profitable and using the enhanced expenditure to reduce your corporation tax bill. It also does not apply to RDEC claims (the large company scheme). Most agencies claiming under the SME scheme will face the cap if they are loss-making and have significant subcontractor costs."
-  - question: "How do I calculate the PAYE-NI cap for my agency?"
-    answer: "Add up all PAYE payments you made in the accounting period, plus all Class 1 employer National Insurance contributions. This total is your cap. For example, if you paid £30,000 in PAYE and £12,000 in employer NI, your cap is £42,000. Your payable R&D credit cannot exceed this figure, regardless of how much qualifying R&D expenditure you have."
-  - question: "Can I avoid the PAYE-NI cap by hiring subcontractors as employees?"
-    answer: "Yes, in some cases. If you hire freelancers as employees for the duration of the R&D project, their salaries generate PAYE and NI that increases your cap. This only works if the freelancer is willing to become an employee and you manage IR35 correctly. For a 12-month R&D project, it can transform your claim, but it is not always commercially practical."
+- question: What is the PAYE-NI cap on R&D claims?
+  answer: The PAYE-NI cap limits the payable tax credit you can receive from an SME R&D claim to the total PAYE and Class 1 employer National Insurance your company paid in the period. It only applies to loss-making companies claiming a cash credit. If your company is profitable and using the credit to reduce corporation tax, the cap does not apply.
+- question: Does the PAYE-NI cap apply to all R&D claims?
+  answer: No. The cap only applies to payable credits under the SME R&D scheme. It does not apply if you are profitable and using the enhanced expenditure to reduce your corporation tax bill. It also does not apply to RDEC claims (the large company scheme). Most agencies claiming under the SME scheme will face the cap if they are loss-making and have significant subcontractor costs.
+- question: How do I calculate the PAYE-NI cap for my agency?
+  answer: Add up all PAYE payments you made in the accounting period, plus all Class 1 employer National Insurance contributions. This total is your cap. For example, if you paid £30,000 in PAYE and £12,000 in employer NI, your cap is £42,000. Your payable R&D credit cannot exceed this figure, regardless of how much qualifying R&D expenditure you have.
+- question: Can I avoid the PAYE-NI cap by hiring subcontractors as employees?
+  answer: Yes, in some cases. If you hire freelancers as employees for the duration of the R&D project, their salaries generate PAYE and NI that increases your cap. This only works if the freelancer is willing to become an employee and you manage IR35 correctly. For a 12-month R&D project, it can transform your claim, but it is not always commercially practical.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- The PAYE-NI cap limits payable R&D tax credits to the total PAYE and Class 1 employer NI your agency paid in the period.
+- For loss-making agencies claiming under the SME scheme, the cap applies only to the cash refund, not to corporation tax reductions.
+- Agencies relying heavily on freelancers and subcontractors are most at risk because their qualifying R&D costs far exceed their PAYE-NI cap.
+- In 2025/26, the SME payable credit rate is 10% of the surrenderable loss, but the cap can still slash legitimate claims significantly.
+- If your agency is profitable and using R&D credits to reduce corporation tax, the PAYE-NI cap does not apply to your claim.
 ---
-
 <p>If your agency has claimed R&D tax credits on subcontractor costs, you might be in for an unwelcome surprise. The PAYE-NI cap on R&D claims restricts the amount of payable tax credit you can receive to the total PAYE and National Insurance your company paid in that period. For agencies that rely heavily on freelancers, contractors, or external developers, this cap can slash a legitimate claim to almost nothing.</p>
 
 <p>I have seen it happen to a 15-person creative agency in Shoreditch. They had spent £180,000 on subcontractor developers building a proprietary analytics platform. Their R&D claim was strong — genuinely qualifying projects. But when HMRC applied the PAYE-NI cap, their payable credit dropped from £47,000 to just £4,200. The rest was lost. They had no idea the cap existed.</p>

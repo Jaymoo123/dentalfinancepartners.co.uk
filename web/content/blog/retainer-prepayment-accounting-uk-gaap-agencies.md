@@ -1,33 +1,40 @@
 ---
-title: "How Should Your Agency Account for Retainer Prepayments Under UK GAAP?"
-slug: "retainer-prepayment-accounting-uk-gaap-agencies"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/retainer-prepayment-accounting-uk-gaap-agencies"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "Retainer Prepayment Accounting UK GAAP for Agencies | Guide"
-metaDescription: "Retainer prepayment accounting UK GAAP explained for agency founders. How to recognise revenue, avoid misstated accounts, and handle deferred income"
-altText: "Agency founder reviewing retainer prepayment accounting with ICAEW qualified accountant in UK office"
-image: "/blog/retainer-prepayment-accounting-uk-gaap-agencies.jpg"
+title: How Should Your Agency Account for Retainer Prepayments Under UK GAAP?
+slug: retainer-prepayment-accounting-uk-gaap-agencies
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/retainer-prepayment-accounting-uk-gaap-agencies
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: Retainer Prepayment Accounting UK GAAP for Agencies | Guide
+metaDescription: Retainer prepayment accounting UK GAAP explained for agency founders. How to recognise revenue, avoid misstated accounts, and handle deferred income
+altText: Agency founder reviewing retainer prepayment accounting with ICAEW qualified accountant in UK office
+image: /blog/retainer-prepayment-accounting-uk-gaap-agencies.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-table-7821475/"
-  source: "Pexels"
-h1: "How Should Your Agency Account for Retainer Prepayments Under UK GAAP?"
-summary: "Retainer prepayments are common in agency life, but get the accounting wrong and your accounts won't reflect reality. Here is how to handle deferred income, accrued revenue, and prepayments under UK GAAP, with worked examples for retainer-based agencies."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-table-7821475/
+  source: Pexels
+h1: How Should Your Agency Account for Retainer Prepayments Under UK GAAP?
+summary: Retainer prepayments are common in agency life, but get the accounting wrong and your accounts won't reflect reality. Here is how to handle deferred income, accrued revenue, and prepayments under UK GAAP, with worked examples for retainer-based agencies.
+schema: ''
 faqs:
-  - question: "What is the difference between deferred income and accrued revenue for agencies?"
-    answer: "Deferred income is a liability: you have been paid but not yet done the work. Accrued revenue is an asset: you have done the work but not yet been paid. Both can exist in the same retainer relationship. For example, if you invoice quarterly in advance, you have deferred income for the unearned portion and a trade debtor for the unpaid invoice."
-  - question: "Can I recognise retainer revenue on invoice date if my client pays upfront?"
-    answer: "No. Under UK GAAP (FRS 102), revenue must be recognised when it is earned, not when it is invoiced or paid. If you invoice on 1st March for March's retainer, the revenue is earned across the month. Recognising it all on 1st March overstates profit and understates liabilities. You must use deferred income."
-  - question: "How do I handle a retainer that spans two accounting periods?"
-    answer: "Time-apportion the revenue based on the number of days in each period. For example, a £6,000 retainer from 15th January to 14th February: 16 days in January and 15 days in February. Recognise £3,096.77 in January and £2,903.23 in February. The remaining balance stays in deferred income until earned."
-  - question: "What happens to deferred income if a client cancels their retainer mid-month?"
-    answer: "You recognise revenue for the days worked. The unearned portion must be refunded unless your contract explicitly states no refunds. If refundable, debit deferred income, credit revenue for earned amount, and credit bank or creditor for the refund. If non-refundable, you can recognise the full amount as revenue on cancellation, but HMRC may scrutinise this. Check with your accountant."
+- question: What is the difference between deferred income and accrued revenue for agencies?
+  answer: 'Deferred income is a liability: you have been paid but not yet done the work. Accrued revenue is an asset: you have done the work but not yet been paid. Both can exist in the same retainer relationship. For example, if you invoice quarterly in advance, you have deferred income for the unearned portion and a trade debtor for the unpaid invoice.'
+- question: Can I recognise retainer revenue on invoice date if my client pays upfront?
+  answer: No. Under UK GAAP (FRS 102), revenue must be recognised when it is earned, not when it is invoiced or paid. If you invoice on 1st March for March's retainer, the revenue is earned across the month. Recognising it all on 1st March overstates profit and understates liabilities. You must use deferred income.
+- question: How do I handle a retainer that spans two accounting periods?
+  answer: 'Time-apportion the revenue based on the number of days in each period. For example, a £6,000 retainer from 15th January to 14th February: 16 days in January and 15 days in February. Recognise £3,096.77 in January and £2,903.23 in February. The remaining balance stays in deferred income until earned.'
+- question: What happens to deferred income if a client cancels their retainer mid-month?
+  answer: You recognise revenue for the days worked. The unearned portion must be refunded unless your contract explicitly states no refunds. If refundable, debit deferred income, credit revenue for earned amount, and credit bank or creditor for the refund. If non-refundable, you can recognise the full amount as revenue on cancellation, but HMRC may scrutinise this. Check with your accountant.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Under UK GAAP (FRS 102), retainer prepayments must be recorded as deferred income, not revenue, until the work is delivered.
+- Revenue from retainer prepayments is recognised proportionally as services are performed, typically via a month-end journal entry.
+- Invoicing a retainer on the 1st of the month requires crediting deferred income and VAT control, with no revenue recognised upfront.
+- For retainers spanning month ends, revenue must be apportioned based on the number of days in each accounting period.
+- Misclassifying retainer prepayments as immediate revenue overstates profit and understates liabilities, misleading stakeholders and HMRC.
 ---
-
 <p>If your agency bills clients in advance for retainers — and most do — you are carrying a liability on your balance sheet from day one. That liability is called deferred income. And if you treat it as revenue the moment the invoice goes out, your profit figure is wrong.</p>
 
 <p>Retainer prepayment accounting under UK GAAP (FRS 102, specifically) is not complicated. But it is precise. Get it right and your management accounts tell you the truth about what you have earned versus what you have merely invoiced. Get it wrong and you overstate profit, understate liabilities, and potentially mislead yourself, your investors, and HMRC.</p>

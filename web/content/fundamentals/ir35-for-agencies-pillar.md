@@ -1,33 +1,40 @@
 ---
-title: "IR35 for Agencies: The Complete Guide to Off-Payroll Working"
-slug: "ir35-for-agencies-pillar"
-canonical: "https://www.agencyfounderfinance.co.uk/fundamentals/ir35-for-agencies-pillar"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Contractors and IR35"
-metaTitle: "IR35 Agency Complete Guide: Off-Payroll Rules for UK Firms"
-metaDescription: "Master IR35 for your agency. SDS obligations, CEST limits, and fee-payer rules. Written by an ICAEW-qualified accountant for UK agency founders."
-altText: "UK agency founder reviewing IR35 contract documents with accountant in a Manchester office meeting room"
-image: "/blog/ir35-for-agencies-pillar.jpg"
+title: 'IR35 for Agencies: The Complete Guide to Off-Payroll Working'
+slug: ir35-for-agencies-pillar
+canonical: https://www.agencyfounderfinance.co.uk/fundamentals/ir35-for-agencies-pillar
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Contractors and IR35
+metaTitle: 'IR35 Agency Complete Guide: Off-Payroll Rules for UK Firms'
+metaDescription: Master IR35 for your agency. SDS obligations, CEST limits, and fee-payer rules. Written by an ICAEW-qualified accountant for UK agency founders.
+altText: UK agency founder reviewing IR35 contract documents with accountant in a Manchester office meeting room
+image: /blog/ir35-for-agencies-pillar.jpg
 imageCredit:
-  photographer: "Mikael Blomkvist"
-  photographerUrl: "https://www.pexels.com/@mikael-blomkvist"
-  sourceUrl: "https://www.pexels.com/photo/people-sitting-at-the-table-6476256/"
-  source: "Pexels"
-h1: "IR35 for Agencies: The Complete Guide to Off-Payroll Working"
-summary: "IR35 is the single biggest tax risk for agencies engaging contractors. This guide covers the off-payroll working rules, including when you must issue a Status Determination Statement (SDS), how the CEST tool works, and what happens when you get it wrong. Written for UK agency founders who engage freelancers, contractors, or interim staff."
-schema: ""
+  photographer: Mikael Blomkvist
+  photographerUrl: https://www.pexels.com/@mikael-blomkvist
+  sourceUrl: https://www.pexels.com/photo/people-sitting-at-the-table-6476256/
+  source: Pexels
+h1: 'IR35 for Agencies: The Complete Guide to Off-Payroll Working'
+summary: IR35 is the single biggest tax risk for agencies engaging contractors. This guide covers the off-payroll working rules, including when you must issue a Status Determination Statement (SDS), how the CEST tool works, and what happens when you get it wrong. Written for UK agency founders who engage freelancers, contractors, or interim staff.
+schema: ''
 faqs:
-  - question: "What happens if an end-client refuses to issue an SDS?"
-    answer: "If the end-client is medium or large and refuses to issue an SDS, the liability transfers to the fee-payer — your agency. You should not pay the contractor's PSC until the SDS is provided. If the end-client consistently refuses, you may need to end the engagement or operate PAYE as a default position. Document all communications with the end-client about the SDS request."
-  - question: "Can a contractor be inside IR35 for one engagement and outside for another?"
-    answer: "Yes. IR35 status is engagement-specific, not person-specific. A contractor can work inside IR35 for a long-term embedded role at one client and outside IR35 for a short-term project at another. Each engagement must be assessed on its own facts. You cannot apply a blanket determination across all contractors."
-  - question: "Does IR35 apply to contractors working through limited companies outside the UK?"
-    answer: "The off-payroll rules apply to contractors providing services through an intermediary, regardless of where the intermediary is based. If the contractor is non-UK resident but working in the UK, the rules apply. If the contractor is outside the UK and never sets foot in the UK, the rules may not apply, but you should seek professional advice. The rules are complex for cross-border engagements."
-  - question: "What is the difference between IR35 and the off-payroll working rules?"
-    answer: "IR35 is the original legislation (introduced in 2000) that placed the responsibility on the contractor's PSC to determine their status. The off-payroll working rules (introduced in 2017 for the public sector and 2021 for the private sector) shifted the responsibility to the end-client and fee-payer. The underlying tests for employment status are the same. The difference is who carries the liability."
+- question: What happens if an end-client refuses to issue an SDS?
+  answer: If the end-client is medium or large and refuses to issue an SDS, the liability transfers to the fee-payer — your agency. You should not pay the contractor's PSC until the SDS is provided. If the end-client consistently refuses, you may need to end the engagement or operate PAYE as a default position. Document all communications with the end-client about the SDS request.
+- question: Can a contractor be inside IR35 for one engagement and outside for another?
+  answer: Yes. IR35 status is engagement-specific, not person-specific. A contractor can work inside IR35 for a long-term embedded role at one client and outside IR35 for a short-term project at another. Each engagement must be assessed on its own facts. You cannot apply a blanket determination across all contractors.
+- question: Does IR35 apply to contractors working through limited companies outside the UK?
+  answer: The off-payroll rules apply to contractors providing services through an intermediary, regardless of where the intermediary is based. If the contractor is non-UK resident but working in the UK, the rules apply. If the contractor is outside the UK and never sets foot in the UK, the rules may not apply, but you should seek professional advice. The rules are complex for cross-border engagements.
+- question: What is the difference between IR35 and the off-payroll working rules?
+  answer: IR35 is the original legislation (introduced in 2000) that placed the responsibility on the contractor's PSC to determine their status. The off-payroll working rules (introduced in 2017 for the public sector and 2021 for the private sector) shifted the responsibility to the end-client and fee-payer. The underlying tests for employment status are the same. The difference is who carries the liability.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- 'IR35 is the biggest tax risk for agencies: get the determination wrong and you inherit the tax bill and penalties.'
+- A contractor inside IR35 costs the fee-payer around £569 per £500 day once employer NICs and pension are added.
+- The fee-payer (usually your agency) must deduct PAYE, employee NICs, and employer NICs for inside-IR35 contractors.
+- If the end-client fails to issue a correct Status Determination Statement, the liability transfers to your agency as fee-payer.
+- Use HMRC's CEST tool cautiously; it has limitations and does not guarantee protection from HMRC challenges.
 ---
-
 <p>If your agency engages contractors, freelancers, or interim staff, IR35 is the single biggest tax risk on your balance sheet. Get the determination wrong and you inherit the tax bill. Get the process wrong and HMRC can issue a penalty regardless of the underlying status.</p>
 
 <p>This is the definitive guide to IR35 for agencies. It covers the off-payroll working rules as they stand in the 2025/26 tax year, the obligations on fee-payers, the limits of the CEST tool, and the practical steps you need to protect your agency. We work with 73+ UK and UAE agency founders, many of whom run marketing, digital, creative, and recruitment agencies that rely on contractor talent. This guide draws on that experience.</p>

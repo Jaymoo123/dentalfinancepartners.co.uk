@@ -1,33 +1,40 @@
 ---
-title: "Can I Still Claim UK Personal Allowance After Moving to Dubai?"
-slug: "uk-personal-allowance-non-resident-dubai"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-personal-allowance-non-resident-dubai"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK Personal Allowance for Non-Residents in Dubai: Explained"
-metaDescription: "Moving to Dubai doesn't automatically mean losing your UK personal allowance. It depends on treaty residence and residual UK income. Here's what agency"
-altText: "UK agency founder reviewing tax documents on a laptop in a Dubai co-working space, with the Burj Khalifa visible through the window"
-image: "/blog/uk-personal-allowance-non-resident-dubai.jpg"
+title: Can I Still Claim UK Personal Allowance After Moving to Dubai?
+slug: uk-personal-allowance-non-resident-dubai
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-personal-allowance-non-resident-dubai
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK Personal Allowance for Non-Residents in Dubai: Explained'
+metaDescription: Moving to Dubai doesn't automatically mean losing your UK personal allowance. It depends on treaty residence and residual UK income. Here's what agency
+altText: UK agency founder reviewing tax documents on a laptop in a Dubai co-working space, with the Burj Khalifa visible through the window
+image: /blog/uk-personal-allowance-non-resident-dubai.jpg
 imageCredit:
-  photographer: "Mathias Reding"
-  photographerUrl: "https://www.pexels.com/@matreding"
-  sourceUrl: "https://www.pexels.com/photo/close-up-of-hm-revenue-customs-building-16124523/"
-  source: "Pexels"
-h1: "Can I Still Claim UK Personal Allowance After Moving to Dubai?"
-summary: "Moving to Dubai doesn't automatically mean you lose your £12,570 UK personal allowance. The answer depends on your treaty residence status under the UK-UAE Double Taxation Agreement, not just how many days you spend outside the UK. If you have residual UK income like rental property or director fees, you need to understand how the personal allowance interacts with your non-resident status before you file."
-schema: ""
+  photographer: Mathias Reding
+  photographerUrl: https://www.pexels.com/@matreding
+  sourceUrl: https://www.pexels.com/photo/close-up-of-hm-revenue-customs-building-16124523/
+  source: Pexels
+h1: Can I Still Claim UK Personal Allowance After Moving to Dubai?
+summary: Moving to Dubai doesn't automatically mean you lose your £12,570 UK personal allowance. The answer depends on your treaty residence status under the UK-UAE Double Taxation Agreement, not just how many days you spend outside the UK. If you have residual UK income like rental property or director fees, you need to understand how the personal allowance interacts with your non-resident status before you file.
+schema: ''
 faqs:
-  - question: "Do I automatically lose my UK personal allowance when I move to Dubai?"
-    answer: "No, you do not automatically lose it. If you are a UAE tax resident under the UK-UAE Double Taxation Agreement, you can still claim the personal allowance against your UK-source income (e.g., rental income, director's salary, dividends). You must file a UK tax return to claim it and have evidence of your UAE residence, such as a tax residence certificate from the FTA."
-  - question: "Can I claim the personal allowance if I still own a UK agency?"
-    answer: "Yes, you can. If you are non-UK resident under the treaty, you can claim the personal allowance against your UK-source income, including director's fees and dividends from your UK agency. But if you are still UK resident under the treaty, you keep the allowance but are taxed on your worldwide income, including your UAE income. The key is your treaty residence status, not just your physical location."
-  - question: "What happens if I don't claim the personal allowance as a non-resident?"
-    answer: "If you are entitled to the personal allowance but do not claim it, you will overpay UK tax. For example, if you have £30,000 of UK rental income and do not claim the allowance, you pay tax on the full £30,000. If you claim it, you pay tax on £17,430. The difference is £2,514 in basic rate tax. You can claim the allowance by filing a UK tax return and completing the residence pages."
-  - question: "Do I need a UAE tax residence certificate to claim the UK personal allowance?"
-    answer: "You do not need it to file the return, but HMRC may ask for it if they query your residence status. The certificate is issued by the UAE Federal Tax Authority and shows that you are a UAE tax resident. Without it, HMRC may treat you as UK resident under the Statutory Residence Test, which could mean you are taxed on your worldwide income. It is best to have the certificate before you file."
+- question: Do I automatically lose my UK personal allowance when I move to Dubai?
+  answer: No, you do not automatically lose it. If you are a UAE tax resident under the UK-UAE Double Taxation Agreement, you can still claim the personal allowance against your UK-source income (e.g., rental income, director's salary, dividends). You must file a UK tax return to claim it and have evidence of your UAE residence, such as a tax residence certificate from the FTA.
+- question: Can I claim the personal allowance if I still own a UK agency?
+  answer: Yes, you can. If you are non-UK resident under the treaty, you can claim the personal allowance against your UK-source income, including director's fees and dividends from your UK agency. But if you are still UK resident under the treaty, you keep the allowance but are taxed on your worldwide income, including your UAE income. The key is your treaty residence status, not just your physical location.
+- question: What happens if I don't claim the personal allowance as a non-resident?
+  answer: If you are entitled to the personal allowance but do not claim it, you will overpay UK tax. For example, if you have £30,000 of UK rental income and do not claim the allowance, you pay tax on the full £30,000. If you claim it, you pay tax on £17,430. The difference is £2,514 in basic rate tax. You can claim the allowance by filing a UK tax return and completing the residence pages.
+- question: Do I need a UAE tax residence certificate to claim the UK personal allowance?
+  answer: You do not need it to file the return, but HMRC may ask for it if they query your residence status. The certificate is issued by the UAE Federal Tax Authority and shows that you are a UAE tax resident. Without it, HMRC may treat you as UK resident under the Statutory Residence Test, which could mean you are taxed on your worldwide income. It is best to have the certificate before you file.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- If you are a UAE tax resident under the UK-UAE Double Taxation Agreement, you can still claim the £12,570 UK personal allowance against your UK-source income.
+- Treaty residence status, not just days spent outside the UK, determines your entitlement to the personal allowance as a non-resident.
+- Non-residents under the treaty can offset the personal allowance against UK rental income, director's fees, dividends, and interest.
+- If your UK-source income is below £12,570, you pay no UK tax on it; if above, you pay tax only on the excess.
+- Being UK resident under the treaty means you keep the personal allowance but are taxed on worldwide income, including UAE earnings.
 ---
-
 <p>You've made the move to Dubai. You're enjoying the zero income tax, the sunshine, and the lower cost of living. But you still own a rental property in Manchester. Or you're still drawing a small director's salary from your UK agency. And now you're wondering: do I lose my £12,570 UK personal allowance?</p>
 
 <p>The short answer is: it depends on your treaty residence status, not just how many days you spend outside the UK. Many agency founders assume that leaving the UK automatically means losing their personal allowance. That's not quite right. And getting it wrong can cost you thousands.</p>

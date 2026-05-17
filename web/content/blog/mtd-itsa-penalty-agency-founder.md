@@ -1,25 +1,32 @@
 ---
-title: "What Is the Penalty for Not Complying with MTD for Income Tax as an Agency Founder?"
-slug: "mtd-itsa-penalty-agency-founder"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-itsa-penalty-agency-founder"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Making Tax Digital"
-metaTitle: "MTD ITSA Penalty: What Agency Founders Must Pay"
-metaDescription: "Miss MTD ITSA deadlines as an agency founder and HMRC will fine you. Point-based penalties, late submission fees, and interest charges explained with real"
-altText: "UK agency founder reviewing MTD ITSA compliance requirements on a laptop in a modern office"
-image: "/blog/mtd-itsa-penalty-agency-founder.jpg"
+title: What Is the Penalty for Not Complying with MTD for Income Tax as an Agency Founder?
+slug: mtd-itsa-penalty-agency-founder
+canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-itsa-penalty-agency-founder
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Making Tax Digital
+metaTitle: 'MTD ITSA Penalty: What Agency Founders Must Pay'
+metaDescription: Miss MTD ITSA deadlines as an agency founder and HMRC will fine you. Point-based penalties, late submission fees, and interest charges explained with real
+altText: UK agency founder reviewing MTD ITSA compliance requirements on a laptop in a modern office
+image: /blog/mtd-itsa-penalty-agency-founder.jpg
 imageCredit:
-  photographer: "Towfiqu barbhuiya"
-  photographerUrl: "https://www.pexels.com/@towfiqu-barbhuiya-3440682"
-  sourceUrl: "https://www.pexels.com/photo/close-up-of-documents-11069121/"
-  source: "Pexels"
-h1: "What Is the Penalty for Not Complying with MTD for Income Tax as an Agency Founder?"
-summary: "HMRC is rolling out Making Tax Digital for Income Tax (MTD ITSA) from April 2026. If you are an agency founder filing self-assessment, the penalty system has changed. Points-based fines, late payment interest, and escalating charges apply from day one of non-compliance."
-schema: ""
+  photographer: Towfiqu barbhuiya
+  photographerUrl: https://www.pexels.com/@towfiqu-barbhuiya-3440682
+  sourceUrl: https://www.pexels.com/photo/close-up-of-documents-11069121/
+  source: Pexels
+h1: What Is the Penalty for Not Complying with MTD for Income Tax as an Agency Founder?
+summary: HMRC is rolling out Making Tax Digital for Income Tax (MTD ITSA) from April 2026. If you are an agency founder filing self-assessment, the penalty system has changed. Points-based fines, late payment interest, and escalating charges apply from day one of non-compliance.
+schema: ''
 faqs: []
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- From April 2026, sole trader agency founders with income over £50,000 must submit quarterly digital updates to HMRC using compatible software.
+- 'The new MTD ITSA penalty system uses points: one point per late submission, with a £200 penalty triggered at 4 points for quarterly updates or 2 points for annual declarations.'
+- Points accumulate over a two-year rolling period and expire after two years of compliance, but each additional late submission after the threshold incurs another £200 fine.
+- 'Late payment penalties remain separate: 5% of tax due at 30 days, another 5% at 6 months, and another 5% at 12 months, plus interest at the Bank of England rate.'
+- Agency founders operating through a limited company are not yet in scope for MTD ITSA, but corporation tax MTD will apply later.
 ---
-
 <h2>MTD ITSA Is Coming. And the Penalties Are Real.</h2>
 
 <p>Making Tax Digital for Income Tax (MTD ITSA) goes live for sole traders and landlords from April 2026. If you are an agency founder filing self-assessment with qualifying income over £50,000, you will need to keep digital records and submit quarterly updates to HMRC using compatible software.</p>

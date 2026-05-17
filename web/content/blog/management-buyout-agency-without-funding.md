@@ -1,33 +1,40 @@
 ---
-title: "How to Structure a Management Buyout of Your Agency Without External Funding"
-slug: "management-buyout-agency-without-funding"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/management-buyout-agency-without-funding"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Management buyout agency without funding: how to structure"
-metaDescription: "Can you buy out an agency founder with zero cash? Yes. Here's the exact structure, earn-out mechanics, and tax implications for a funded-by-profits MBO."
-altText: "Two agency directors shaking hands in a glass-walled London meeting room with spreadsheets on the table"
-image: "/blog/management-buyout-agency-without-funding.jpg"
+title: How to Structure a Management Buyout of Your Agency Without External Funding
+slug: management-buyout-agency-without-funding
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/management-buyout-agency-without-funding
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'Management buyout agency without funding: how to structure'
+metaDescription: Can you buy out an agency founder with zero cash? Yes. Here's the exact structure, earn-out mechanics, and tax implications for a funded-by-profits MBO.
+altText: Two agency directors shaking hands in a glass-walled London meeting room with spreadsheets on the table
+image: /blog/management-buyout-agency-without-funding.jpg
 imageCredit:
-  photographer: "Magda Ehlers"
-  photographerUrl: "https://www.pexels.com/@magda-ehlers-pexels"
-  sourceUrl: "https://www.pexels.com/photo/modern-steel-scaffolding-on-building-site-35155685/"
-  source: "Pexels"
-h1: "How to Structure a Management Buyout of Your Agency Without External Funding"
-summary: "A management buyout (MBO) without external funding is possible when you structure the deal around the agency's own future profits. This guide covers earn-out models, deferred consideration, and the tax planning that makes it work for both buyer and seller."
-schema: ""
+  photographer: Magda Ehlers
+  photographerUrl: https://www.pexels.com/@magda-ehlers-pexels
+  sourceUrl: https://www.pexels.com/photo/modern-steel-scaffolding-on-building-site-35155685/
+  source: Pexels
+h1: How to Structure a Management Buyout of Your Agency Without External Funding
+summary: A management buyout (MBO) without external funding is possible when you structure the deal around the agency's own future profits. This guide covers earn-out models, deferred consideration, and the tax planning that makes it work for both buyer and seller.
+schema: ''
 faqs:
-  - question: "Can you do a management buyout with no money down?"
-    answer: "Yes, if the seller is willing to accept deferred consideration paid from future profits. The management team buys the shares now but pays the founder over three to six years from the agency's earnings. No bank loan, no personal cash. The deal is secured by the agency's ongoing profitability."
-  - question: "How is a management buyout taxed for the founder?"
-    answer: "The founder pays capital gains tax on the full gain in the year of disposal, even if they receive payment over several years. Business Asset Disposal Relief (BADR) applies at 14% if the shares have been held for at least two years. The tax can be paid in instalments under Section 280 of TCGA 1992, matching the payment schedule."
-  - question: "What happens if the agency's profits drop during the buyout period?"
-    answer: "The shareholder agreement should include a deferral mechanism. If EBITDA falls below an agreed threshold, the buyout payment for that year is postponed to a later year. The founder still gets paid eventually, but the agency is not forced into insolvency trying to meet the schedule."
-  - question: "How long does an unfunded MBO typically take to complete?"
-    answer: "From initial discussion to completion, expect four to six months. Valuation, cash flow modelling, heads of terms, due diligence, and legal documentation all take time. Rushing the process creates problems later. Most deals that fail do so because the commercial terms were not properly stress-tested upfront."
+- question: Can you do a management buyout with no money down?
+  answer: Yes, if the seller is willing to accept deferred consideration paid from future profits. The management team buys the shares now but pays the founder over three to six years from the agency's earnings. No bank loan, no personal cash. The deal is secured by the agency's ongoing profitability.
+- question: How is a management buyout taxed for the founder?
+  answer: The founder pays capital gains tax on the full gain in the year of disposal, even if they receive payment over several years. Business Asset Disposal Relief (BADR) applies at 14% if the shares have been held for at least two years. The tax can be paid in instalments under Section 280 of TCGA 1992, matching the payment schedule.
+- question: What happens if the agency's profits drop during the buyout period?
+  answer: The shareholder agreement should include a deferral mechanism. If EBITDA falls below an agreed threshold, the buyout payment for that year is postponed to a later year. The founder still gets paid eventually, but the agency is not forced into insolvency trying to meet the schedule.
+- question: How long does an unfunded MBO typically take to complete?
+  answer: From initial discussion to completion, expect four to six months. Valuation, cash flow modelling, heads of terms, due diligence, and legal documentation all take time. Rushing the process creates problems later. Most deals that fail do so because the commercial terms were not properly stress-tested upfront.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- An unfunded MBO uses the agency's future profits to pay the founder over time, typically three to five years.
+- Deferred consideration structures involve the management team buying shares with no upfront payment, paying in instalments from profits.
+- Earn-out models link the purchase price to the agency's future performance, often used alongside deferred consideration.
+- Agency asset base and management's personal finances often make bank loans unavailable for MBOs.
+- Founders may prefer an unfunded MBO to preserve culture and achieve full price over time rather than a lower immediate sale.
 ---
-
 <h2>What a Management Buyout Looks Like When There's No Bank Involved</h2>
 
 <p>A management buyout (MBO) is exactly what it sounds like. The existing management team buys the agency from the current owner. Usually that means the founder, who built the business over 10 or 15 years, wants to exit. The senior team — the operations director, the creative director, the finance lead — want to take over.</p>

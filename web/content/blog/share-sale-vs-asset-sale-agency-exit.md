@@ -1,25 +1,32 @@
 ---
-title: "Share Sale vs Asset Sale When Exiting Your Agency: Which One Wins?"
-slug: "share-sale-vs-asset-sale-agency-exit"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/share-sale-vs-asset-sale-agency-exit"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Share sale vs asset sale agency exit: which pays more?"
-metaDescription: "Share sale vs asset sale agency exit: tax treatment, buyer preference, and real numbers for UK agency founders planning their exit."
-altText: "Two agency founders reviewing sale documents with their accountant in a modern London office"
-image: "/blog/share-sale-vs-asset-sale-agency-exit.jpg"
+title: 'Share Sale vs Asset Sale When Exiting Your Agency: Which One Wins?'
+slug: share-sale-vs-asset-sale-agency-exit
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/share-sale-vs-asset-sale-agency-exit
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'Share sale vs asset sale agency exit: which pays more?'
+metaDescription: 'Share sale vs asset sale agency exit: tax treatment, buyer preference, and real numbers for UK agency founders planning their exit.'
+altText: Two agency founders reviewing sale documents with their accountant in a modern London office
+image: /blog/share-sale-vs-asset-sale-agency-exit.jpg
 imageCredit:
-  photographer: "Gustavo Fring"
-  photographerUrl: "https://www.pexels.com/@gustavo-fring"
-  sourceUrl: "https://www.pexels.com/photo/portrait-of-two-women-with-an-orange-card-5622905/"
-  source: "Pexels"
-h1: "Share Sale vs Asset Sale When Exiting Your Agency: Which One Wins?"
-summary: "Selling your agency? The difference between a share sale and an asset sale can mean tens of thousands in your pocket. Here is how each works, what buyers prefer, and why your structure matters."
-schema: ""
+  photographer: Gustavo Fring
+  photographerUrl: https://www.pexels.com/@gustavo-fring
+  sourceUrl: https://www.pexels.com/photo/portrait-of-two-women-with-an-orange-card-5622905/
+  source: Pexels
+h1: 'Share Sale vs Asset Sale When Exiting Your Agency: Which One Wins?'
+summary: Selling your agency? The difference between a share sale and an asset sale can mean tens of thousands in your pocket. Here is how each works, what buyers prefer, and why your structure matters.
+schema: ''
 faqs: []
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A share sale qualifies for Business Asset Disposal Relief (BADR) at 14% on the first £1m of gains, rising to 18% from 6 April 2026.
+- An asset sale leaves the company as a shell; you extract proceeds via a capital distribution, often taxed at 20% above the BADR limit.
+- Buyers typically prefer asset sales to avoid inheriting the company's liabilities, tax history, and employment contracts.
+- On a £1.26m share sale with BADR, the founder keeps over £1.1m after tax, versus a potentially higher tax bill on an asset sale.
+- Position your agency with clean contracts and minimal liabilities to make a share sale more attractive to buyers and preserve tax reliefs.
 ---
-
 <p>You have built your agency over years. Maybe a decade. You have a retainer book that pays the bills, a team you trust, and a brand that means something in your sector. Now a buyer is interested. The offer letter arrives, and it says something like "consideration for the business and assets." Or maybe it says "100% of the issued share capital."</p>
 
 <p>That distinction is the difference between a <strong>share sale vs asset sale agency exit</strong>. It is one of the most consequential decisions you will make as a founder. Get it right, and you keep more of the sale proceeds. Get it wrong, and HMRC takes a larger slice than necessary.</p>

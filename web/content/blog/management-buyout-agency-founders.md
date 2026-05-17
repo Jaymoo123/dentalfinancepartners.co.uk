@@ -1,33 +1,40 @@
 ---
-title: "Management Buyout in an Agency: A Finance Guide for Founders"
-slug: "management-buyout-agency-founders"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/management-buyout-agency-founders"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "MBO Agency Finance: Practical Guide for UK Agency Founders"
-metaDescription: "Thinking of selling your agency to your team? Here's how an MBO works, what it costs, and the tax implications for UK agency founders."
-altText: "Agency founder and management team meeting around a table with financial documents in a modern London office"
-image: "/blog/management-buyout-agency-founders.jpg"
+title: 'Management Buyout in an Agency: A Finance Guide for Founders'
+slug: management-buyout-agency-founders
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/management-buyout-agency-founders
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: 'MBO Agency Finance: Practical Guide for UK Agency Founders'
+metaDescription: Thinking of selling your agency to your team? Here's how an MBO works, what it costs, and the tax implications for UK agency founders.
+altText: Agency founder and management team meeting around a table with financial documents in a modern London office
+image: /blog/management-buyout-agency-founders.jpg
 imageCredit:
-  photographer: "Monstera Production"
-  photographerUrl: "https://www.pexels.com/@gabby-k"
-  sourceUrl: "https://www.pexels.com/photo/concept-of-finance-with-cash-in-wallet-6289030/"
-  source: "Pexels"
-h1: "Management Buyout in an Agency: A Finance Guide for Founders"
-summary: "A management buyout (MBO) lets you sell your agency to your existing leadership team. This guide covers how MBOs work, how they're financed, the tax implications for founders, and what to watch out for before you sign."
-schema: ""
+  photographer: Monstera Production
+  photographerUrl: https://www.pexels.com/@gabby-k
+  sourceUrl: https://www.pexels.com/photo/concept-of-finance-with-cash-in-wallet-6289030/
+  source: Pexels
+h1: 'Management Buyout in an Agency: A Finance Guide for Founders'
+summary: A management buyout (MBO) lets you sell your agency to your existing leadership team. This guide covers how MBOs work, how they're financed, the tax implications for founders, and what to watch out for before you sign.
+schema: ''
 faqs:
-  - question: "Can I stay on as a director after an MBO?"
-    answer: "Yes, but it affects your tax position. If you stay on as a director or employee, HMRC may treat part of the sale proceeds as employment income rather than a capital gain. This can mean paying income tax and NI instead of CGT. If you want to stay involved, structure your ongoing role as a non-executive or consultant with a fixed-term contract, and take separate tax advice on whether BADR still applies to your full gain."
-  - question: "What happens if the agency cannot service the MBO debt?"
-    answer: "If the agency defaults on the debt, the lender can enforce against the company's assets. If the management team gave personal guarantees, the lender can pursue them personally. As the seller, you may also lose any deferred consideration if the agency enters insolvency before paying you. This is why vendor loan notes are risky. You are an unsecured creditor. If the business fails, you rank behind the bank and HMRC."
-  - question: "How long does an MBO take from start to finish?"
-    answer: "A straightforward MBO takes 3 to 6 months from initial discussion to completion. Complex deals with multiple lenders or earn-out structures can take 9 to 12 months. The slowest part is usually the due diligence and legal documentation. Start the process at least 12 months before your ideal exit date to allow for delays."
-  - question: "Do I need to pay for an independent valuation?"
-    answer: "Not legally, but you should. An independent valuation gives you a credible starting point for negotiations. It also protects you if HMRC later challenges the price as being below market value (which can trigger a tax charge on the difference). Use a firm that values agencies regularly. A generic business valuation will not capture the specific metrics that matter in an agency: retainer book quality, gross margin, and client concentration."
+- question: Can I stay on as a director after an MBO?
+  answer: Yes, but it affects your tax position. If you stay on as a director or employee, HMRC may treat part of the sale proceeds as employment income rather than a capital gain. This can mean paying income tax and NI instead of CGT. If you want to stay involved, structure your ongoing role as a non-executive or consultant with a fixed-term contract, and take separate tax advice on whether BADR still applies to your full gain.
+- question: What happens if the agency cannot service the MBO debt?
+  answer: If the agency defaults on the debt, the lender can enforce against the company's assets. If the management team gave personal guarantees, the lender can pursue them personally. As the seller, you may also lose any deferred consideration if the agency enters insolvency before paying you. This is why vendor loan notes are risky. You are an unsecured creditor. If the business fails, you rank behind the bank and HMRC.
+- question: How long does an MBO take from start to finish?
+  answer: A straightforward MBO takes 3 to 6 months from initial discussion to completion. Complex deals with multiple lenders or earn-out structures can take 9 to 12 months. The slowest part is usually the due diligence and legal documentation. Start the process at least 12 months before your ideal exit date to allow for delays.
+- question: Do I need to pay for an independent valuation?
+  answer: 'Not legally, but you should. An independent valuation gives you a credible starting point for negotiations. It also protects you if HMRC later challenges the price as being below market value (which can trigger a tax charge on the difference). Use a firm that values agencies regularly. A generic business valuation will not capture the specific metrics that matter in an agency: retainer book quality, gross margin, and client concentration.'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A management buyout (MBO) lets you sell your agency to your existing leadership team, often using the agency's future profits to fund the purchase.
+- 'MBOs typically involve three funding layers: management equity, bank or lender debt, and vendor finance from the seller.'
+- With the right structure, an MBO can qualify for Business Asset Disposal Relief (BADR), reducing capital gains tax to 14% on the first £1 million of gains.
+- Selling via an MBO usually yields a lower price than a trade sale, but offers continuity, control over timing, and preservation of your agency's culture.
+- In a typical MBO, the management team pays a portion upfront, raises debt against future profits, and pays the balance over time through earn-outs or loan notes.
 ---
-
 <p>You have built an agency that runs well. The team is strong. Clients are stable. And you are ready to move on. But the obvious buyers — trade acquirers or private equity — do not feel right. You know your management team better than any outsider. They know the clients, the culture, and the numbers. So you start thinking: could they buy the business from me?</p>
 
 <p>That is a management buyout. An MBO. And in the agency world, it is more common than most founders realise. Done properly, it can be a clean, tax-efficient exit that keeps the business intact and rewards the people who helped you build it. Done badly, it can drag on for years and leave you chasing unpaid debt from your former colleagues.</p>

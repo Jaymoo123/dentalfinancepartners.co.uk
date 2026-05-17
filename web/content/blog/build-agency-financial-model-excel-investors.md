@@ -1,33 +1,40 @@
 ---
-title: "How to Build an Agency Financial Model from Scratch in Excel for Raising Investment"
-slug: "build-agency-financial-model-excel-investors"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/build-agency-financial-model-excel-investors"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Growth and Exit"
-metaTitle: "Build an Agency Financial Model in Excel for Investors"
-metaDescription: "Step-by-step guide to building an agency financial model in Excel for raising investment. Covers revenue, costs, cash, and investor-ready outputs."
-altText: "Agency founder building a financial model in Excel on a laptop in a London office"
-image: "/blog/build-agency-financial-model-excel-investors.jpg"
+title: How to Build an Agency Financial Model from Scratch in Excel for Raising Investment
+slug: build-agency-financial-model-excel-investors
+canonical: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit/build-agency-financial-model-excel-investors
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Growth and Exit
+metaTitle: Build an Agency Financial Model in Excel for Investors
+metaDescription: Step-by-step guide to building an agency financial model in Excel for raising investment. Covers revenue, costs, cash, and investor-ready outputs.
+altText: Agency founder building a financial model in Excel on a laptop in a London office
+image: /blog/build-agency-financial-model-excel-investors.jpg
 imageCredit:
-  photographer: "Mikael Blomkvist"
-  photographerUrl: "https://www.pexels.com/@mikael-blomkvist"
-  sourceUrl: "https://www.pexels.com/photo/people-sitting-at-the-table-6476256/"
-  source: "Pexels"
-h1: "How to Build an Agency Financial Model from Scratch in Excel for Raising Investment"
-summary: "A practical step-by-step guide to building an investor-ready financial model in Excel. Covers revenue forecasting, cost structures, cash flow, and the outputs investors actually want to see. No fluff, no training course upsell."
-schema: ""
+  photographer: Mikael Blomkvist
+  photographerUrl: https://www.pexels.com/@mikael-blomkvist
+  sourceUrl: https://www.pexels.com/photo/people-sitting-at-the-table-6476256/
+  source: Pexels
+h1: How to Build an Agency Financial Model from Scratch in Excel for Raising Investment
+summary: A practical step-by-step guide to building an investor-ready financial model in Excel. Covers revenue forecasting, cost structures, cash flow, and the outputs investors actually want to see. No fluff, no training course upsell.
+schema: ''
 faqs:
-  - question: "Do I need to use Excel or can I use Google Sheets?"
-    answer: "Excel is the standard for investor-ready models. Google Sheets works for internal planning but most investors expect Excel. The ability to run macros, use data tables, and lock cells makes Excel the better choice for a model that will be stress-tested."
-  - question: "How many years should my financial model cover?"
-    answer: "Three years is standard for investment models. Monthly projections for the first 12-18 months, then quarterly for the remainder. Investors rarely trust projections beyond three years for agencies because the market changes too fast."
-  - question: "What if I don't have 12 months of historical data?"
-    answer: "Use what you have. Even 3-6 months of clean data is better than nothing. Be honest about the data gap in your assumptions. Investors respect honesty more than a model that pretends to have perfect data when it does not."
-  - question: "Should I include my own salary and dividends in the model?"
-    answer: "Yes. Model your salary at the standard £12,570 (up to the primary NI threshold) plus dividends. Investors want to see what you plan to take out of the business versus reinvest. Be realistic about your personal drawings. If you are raising investment, you should not be taking maximum dividends."
+- question: Do I need to use Excel or can I use Google Sheets?
+  answer: Excel is the standard for investor-ready models. Google Sheets works for internal planning but most investors expect Excel. The ability to run macros, use data tables, and lock cells makes Excel the better choice for a model that will be stress-tested.
+- question: How many years should my financial model cover?
+  answer: Three years is standard for investment models. Monthly projections for the first 12-18 months, then quarterly for the remainder. Investors rarely trust projections beyond three years for agencies because the market changes too fast.
+- question: What if I don't have 12 months of historical data?
+  answer: Use what you have. Even 3-6 months of clean data is better than nothing. Be honest about the data gap in your assumptions. Investors respect honesty more than a model that pretends to have perfect data when it does not.
+- question: Should I include my own salary and dividends in the model?
+  answer: Yes. Model your salary at the standard £12,570 (up to the primary NI threshold) plus dividends. Investors want to see what you plan to take out of the business versus reinvest. Be realistic about your personal drawings. If you are raising investment, you should not be taking maximum dividends.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- 'Build your agency financial model in Excel with five core tabs: Inputs, Revenue, Costs, Cash Flow, and Outputs.'
+- Place all assumptions in a single Inputs tab so investors can stress-test variables like utilisation rate or client churn.
+- Model revenue by type (retainer vs project) and include client churn, seasonality, and delayed payments to reflect real agency operations.
+- Use 12–24 months of actual historical data from your accounting software to ensure your model is grounded in reality.
+- Include headcount by role, salary data with employer NI at 13.8% and pension contributions, and utilisation rates in your assumptions.
 ---
-
 <p>If you are raising investment for your agency, you need a financial model. Not a set of management accounts. Not a three-year plan scribbled on a napkin. A real, working Excel model that an investor can stress-test.</p>
 
 <p>Most agency founders skip this step or outsource it to someone who does not understand how agencies actually make money. The result is a model that looks pretty but falls apart when an investor asks: "What happens if your biggest retainer client leaves in month seven?"</p>

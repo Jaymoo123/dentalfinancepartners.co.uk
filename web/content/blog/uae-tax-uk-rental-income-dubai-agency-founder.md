@@ -1,33 +1,40 @@
 ---
-title: "Do I Pay UAE Tax on My UK Rental Income If I Live in Dubai?"
-slug: "uae-tax-uk-rental-income-dubai-agency-founder"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-tax-uk-rental-income-dubai-agency-founder"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UAE Tax on UK Rental Income: What Agency Founders Must Know"
-metaDescription: "The UAE does not tax your UK rental income as an individual. But if your agency holds the property, things change. Here's what Dubai-based founders need"
-altText: "Agency founder reviewing UK rental income statements in a Dubai office with a laptop and calculator"
-image: "/blog/uae-tax-uk-rental-income-dubai-agency-founder.jpg"
+title: Do I Pay UAE Tax on My UK Rental Income If I Live in Dubai?
+slug: uae-tax-uk-rental-income-dubai-agency-founder
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-tax-uk-rental-income-dubai-agency-founder
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UAE Tax on UK Rental Income: What Agency Founders Must Know'
+metaDescription: The UAE does not tax your UK rental income as an individual. But if your agency holds the property, things change. Here's what Dubai-based founders need
+altText: Agency founder reviewing UK rental income statements in a Dubai office with a laptop and calculator
+image: /blog/uae-tax-uk-rental-income-dubai-agency-founder.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/tax-reminder-on-laptop-6863384/"
-  source: "Pexels"
-h1: "Do I Pay UAE Tax on My UK Rental Income If I Live in Dubai?"
-summary: "If you're a UK agency founder living in Dubai, your UK rental income is not taxed by the UAE as an individual. But if your agency company owns the property, the UAE may tax it as corporate income. Here's how to structure it right."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/tax-reminder-on-laptop-6863384/
+  source: Pexels
+h1: Do I Pay UAE Tax on My UK Rental Income If I Live in Dubai?
+summary: If you're a UK agency founder living in Dubai, your UK rental income is not taxed by the UAE as an individual. But if your agency company owns the property, the UAE may tax it as corporate income. Here's how to structure it right.
+schema: ''
 faqs:
-  - question: "Do I pay UAE tax on UK rental income as an individual living in Dubai?"
-    answer: "No. The UAE does not tax foreign income for individuals. You will pay UK income tax on your UK rental profits, but the UAE will not add a second layer of tax. This applies regardless of how much rental income you receive."
-  - question: "What if my UK agency company owns the rental property?"
-    answer: "This creates a risk. If your company is managed and controlled from Dubai, the UAE may treat it as a UAE tax resident and tax its worldwide income, including UK rental profits, at 9% (above AED 375,000 profit). You should review your company's management structure before moving."
-  - question: "Can I avoid UK tax on rental income by living in Dubai?"
-    answer: "No. The UK taxes UK-source rental income regardless of your residency. You can use your personal allowance and deduct allowable expenses, but you cannot avoid UK tax on UK rental income by moving abroad."
-  - question: "Do I need to register for UAE corporate tax if I own UK rental property through a UK company?"
-    answer: "Only if your UK company is managed and controlled from the UAE. If it is, you must register with the Federal Tax Authority and file annual returns. If the company remains managed from the UK, you do not need to register for UAE corporate tax."
+- question: Do I pay UAE tax on UK rental income as an individual living in Dubai?
+  answer: No. The UAE does not tax foreign income for individuals. You will pay UK income tax on your UK rental profits, but the UAE will not add a second layer of tax. This applies regardless of how much rental income you receive.
+- question: What if my UK agency company owns the rental property?
+  answer: This creates a risk. If your company is managed and controlled from Dubai, the UAE may treat it as a UAE tax resident and tax its worldwide income, including UK rental profits, at 9% (above AED 375,000 profit). You should review your company's management structure before moving.
+- question: Can I avoid UK tax on rental income by living in Dubai?
+  answer: No. The UK taxes UK-source rental income regardless of your residency. You can use your personal allowance and deduct allowable expenses, but you cannot avoid UK tax on UK rental income by moving abroad.
+- question: Do I need to register for UAE corporate tax if I own UK rental property through a UK company?
+  answer: Only if your UK company is managed and controlled from the UAE. If it is, you must register with the Federal Tax Authority and file annual returns. If the company remains managed from the UK, you do not need to register for UAE corporate tax.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- The UAE does not tax foreign rental income for individuals, but UK tax still applies on UK rental profits.
+- UK non-resident landlords must report rental income to HMRC via a Non-Resident Landlord return and pay tax at 20%, 40%, or 45% above the £12,570 personal allowance.
+- If your UK agency company owns the rental property, the rental income is subject to UK corporation tax at 19% or 25%.
+- If your UK company is managed from the UAE, it may become a UAE tax resident, making its worldwide income subject to UAE 9% corporate tax on profits over AED 375,000.
+- Structuring property ownership as an individual rather than through your agency company avoids UAE corporate tax on UK rental income.
 ---
-
 <p>If you run a marketing or digital agency from Dubai but still own a flat in London, a house in Bristol, or a commercial unit in Manchester, you've likely asked yourself this question: do I pay UAE tax on my UK rental income?</p>
 
 <p>The short answer is no. The UAE does not tax foreign income for individuals. But there is a common confusion point. If your agency company holds the rental property, the UAE may treat that rental income as corporate profit, and that changes everything.</p>

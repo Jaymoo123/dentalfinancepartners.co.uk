@@ -1,33 +1,40 @@
 ---
-title: "How to Use the Annual Investment Allowance for Agency Equipment Purchases in 2025/26"
-slug: "annual-investment-allowance-agency-equipment-2025-26"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/annual-investment-allowance-agency-equipment-2025-26"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "AIA for Agency Equipment: 2025/26 Guide"
-metaDescription: "Use the annual investment allowance to claim 100% tax relief on agency equipment. £1m cap applies. Computers, software, office fit-out all qualify."
-altText: "Agency founder reviewing equipment invoices with ICAEW accountant in London office, discussing Annual Investment Allowance claims for 2025/26"
-image: "/blog/annual-investment-allowance-agency-equipment-2025-26.jpg"
+title: How to Use the Annual Investment Allowance for Agency Equipment Purchases in 2025/26
+slug: annual-investment-allowance-agency-equipment-2025-26
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/annual-investment-allowance-agency-equipment-2025-26
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'AIA for Agency Equipment: 2025/26 Guide'
+metaDescription: Use the annual investment allowance to claim 100% tax relief on agency equipment. £1m cap applies. Computers, software, office fit-out all qualify.
+altText: Agency founder reviewing equipment invoices with ICAEW accountant in London office, discussing Annual Investment Allowance claims for 2025/26
+image: /blog/annual-investment-allowance-agency-equipment-2025-26.jpg
 imageCredit:
-  photographer: "www.kaboompics.com"
-  photographerUrl: "https://www.pexels.com/@karola-g"
-  sourceUrl: "https://www.pexels.com/photo/money-envelope-with-american-dollar-banknotes-on-white-surface-4386179/"
-  source: "Pexels"
-h1: "How to Use the Annual Investment Allowance for Agency Equipment Purchases in 2025/26"
-summary: "The Annual Investment Allowance (AIA) lets you claim 100% tax relief on qualifying equipment purchases up to £1m per year. For agency founders in 2025/26, this covers computers, software, office furniture, and leasehold improvements. Here is how to use it properly."
-schema: ""
+  photographer: www.kaboompics.com
+  photographerUrl: https://www.pexels.com/@karola-g
+  sourceUrl: https://www.pexels.com/photo/money-envelope-with-american-dollar-banknotes-on-white-surface-4386179/
+  source: Pexels
+h1: How to Use the Annual Investment Allowance for Agency Equipment Purchases in 2025/26
+summary: The Annual Investment Allowance (AIA) lets you claim 100% tax relief on qualifying equipment purchases up to £1m per year. For agency founders in 2025/26, this covers computers, software, office furniture, and leasehold improvements. Here is how to use it properly.
+schema: ''
 faqs:
-  - question: "What is the annual investment allowance limit for 2025/26?"
-    answer: "The AIA limit remains at £1m per 12-month accounting period for 2025/26. This cap is permanent. It applies per group of companies, not per company. If your agency is part of a group, you share the £1m allowance between all group companies unless you elect to apportion it differently."
-  - question: "Can I claim the AIA on a company car for my agency?"
-    answer: "Only fully electric cars qualify for the AIA. Petrol, diesel, and hybrid cars with CO2 emissions above 50g/km do not. Those fall into the main pool (18% writing-down allowance) or special rate pool (6%). If you buy a Tesla Model 3 for your agency, you can claim 100% AIA. A Toyota Prius plug-in hybrid would not qualify."
-  - question: "Does the AIA cover software subscriptions like Adobe Creative Cloud?"
-    answer: "Off-the-shelf software qualifies for the AIA, but subscriptions are treated differently. If you buy a perpetual licence, that is capital expenditure and qualifies. If you pay a monthly subscription, that is revenue expenditure and is deducted as an operating cost, not via the AIA. For most agencies using SaaS tools, the subscription cost goes through the P&L as a normal expense."
-  - question: "What happens if I sell equipment I claimed AIA on?"
-    answer: "When you sell an asset on which you claimed the AIA, the proceeds are deducted from the capital allowances pool. If you sell it for more than the remaining pool value, you may have a balancing charge (taxable income). In practice, most agency equipment depreciates quickly, so there is usually no charge. But if you sell a high-value item within a few years, tell your accountant so they can adjust the capital allowance computation."
+- question: What is the annual investment allowance limit for 2025/26?
+  answer: The AIA limit remains at £1m per 12-month accounting period for 2025/26. This cap is permanent. It applies per group of companies, not per company. If your agency is part of a group, you share the £1m allowance between all group companies unless you elect to apportion it differently.
+- question: Can I claim the AIA on a company car for my agency?
+  answer: Only fully electric cars qualify for the AIA. Petrol, diesel, and hybrid cars with CO2 emissions above 50g/km do not. Those fall into the main pool (18% writing-down allowance) or special rate pool (6%). If you buy a Tesla Model 3 for your agency, you can claim 100% AIA. A Toyota Prius plug-in hybrid would not qualify.
+- question: Does the AIA cover software subscriptions like Adobe Creative Cloud?
+  answer: Off-the-shelf software qualifies for the AIA, but subscriptions are treated differently. If you buy a perpetual licence, that is capital expenditure and qualifies. If you pay a monthly subscription, that is revenue expenditure and is deducted as an operating cost, not via the AIA. For most agencies using SaaS tools, the subscription cost goes through the P&L as a normal expense.
+- question: What happens if I sell equipment I claimed AIA on?
+  answer: When you sell an asset on which you claimed the AIA, the proceeds are deducted from the capital allowances pool. If you sell it for more than the remaining pool value, you may have a balancing charge (taxable income). In practice, most agency equipment depreciates quickly, so there is usually no charge. But if you sell a high-value item within a few years, tell your accountant so they can adjust the capital allowance computation.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- The Annual Investment Allowance gives 100% tax relief on qualifying equipment purchases up to £1m per year in 2025/26.
+- Qualifying assets include computers, office furniture, leasehold improvements, off-the-shelf software, and fully electric vehicles.
+- Only fully electric cars qualify for AIA; petrol, diesel, and most hybrids are excluded from the allowance.
+- The £1m cap applies per group of companies, not per company, unless you elect to apportion it differently.
+- Every £10,000 of qualifying spend saves your agency £2,500 in corporation tax if you pay the 25% rate.
 ---
-
 <p>The Annual Investment Allowance (AIA) lets you claim 100% tax relief on qualifying equipment purchases up to £1m per year. For agency founders in 2025/26, that means every pound you spend on computers, office furniture, or software can be written off against your taxable profits in the same year. No spreading the cost over several years. No complicated capital allowance calculations. Immediate relief.</p>
 
 <p>But the AIA has rules. And if you get them wrong, you leave money on the table or, worse, trigger an HMRC enquiry. Let me walk through exactly how it works for a typical agency, what qualifies, what does not, and how to plan your purchases to maximise the benefit.</p>

@@ -1,33 +1,40 @@
 ---
-title: "What Is the UK Tax Treatment of a Dividend from a US Subsidiary of Your Agency?"
-slug: "uk-tax-treatment-dividend-us-subsidiary-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-tax-treatment-dividend-us-subsidiary-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UK tax dividend US subsidiary agency: what you need to know"
-metaDescription: "Dividend from a US subsidiary to your UK agency: corporation tax, double taxation relief, withholding tax rates, and reporting obligations explained."
-altText: "UK accountant reviewing cross-border dividend documentation for a US subsidiary of a UK marketing agency"
-image: "/blog/uk-tax-treatment-dividend-us-subsidiary-agency.jpg"
+title: What Is the UK Tax Treatment of a Dividend from a US Subsidiary of Your Agency?
+slug: uk-tax-treatment-dividend-us-subsidiary-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uk-tax-treatment-dividend-us-subsidiary-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: 'UK tax dividend US subsidiary agency: what you need to know'
+metaDescription: 'Dividend from a US subsidiary to your UK agency: corporation tax, double taxation relief, withholding tax rates, and reporting obligations explained.'
+altText: UK accountant reviewing cross-border dividend documentation for a US subsidiary of a UK marketing agency
+image: /blog/uk-tax-treatment-dividend-us-subsidiary-agency.jpg
 imageCredit:
-  photographer: "Leeloo The First"
-  photographerUrl: "https://www.pexels.com/@leeloothefirst"
-  sourceUrl: "https://www.pexels.com/photo/pay-taxes-sign-by-dollar-banknote-8970306/"
-  source: "Pexels"
-h1: "What Is the UK Tax Treatment of a Dividend from a US Subsidiary of Your Agency?"
-summary: "If your UK agency owns a US subsidiary and you want to bring profits back as a dividend, the UK tax treatment depends on three factors: the US withholding tax rate, the UK corporation tax due, and the double taxation relief available. This article explains how the mechanics work, what rates apply, and the practical steps your agency needs to take."
-schema: ""
+  photographer: Leeloo The First
+  photographerUrl: https://www.pexels.com/@leeloothefirst
+  sourceUrl: https://www.pexels.com/photo/pay-taxes-sign-by-dollar-banknote-8970306/
+  source: Pexels
+h1: What Is the UK Tax Treatment of a Dividend from a US Subsidiary of Your Agency?
+summary: 'If your UK agency owns a US subsidiary and you want to bring profits back as a dividend, the UK tax treatment depends on three factors: the US withholding tax rate, the UK corporation tax due, and the double taxation relief available. This article explains how the mechanics work, what rates apply, and the practical steps your agency needs to take.'
+schema: ''
 faqs:
-  - question: "Does a dividend from a US subsidiary to a UK agency count as taxable income in the UK?"
-    answer: "Yes. The dividend is taxable as income in your UK agency's corporation tax return. You report the gross dividend (before US withholding tax) and claim a foreign tax credit for the US tax withheld. The net effect is that you pay UK corporation tax at your marginal rate minus the credit for US tax already paid."
-  - question: "What US withholding tax rate applies to dividends paid to a UK parent company?"
-    answer: "Under the UK-US Double Taxation Treaty, the rate is 5% if your UK agency owns at least 10% of the US subsidiary. If you own 80% or more and meet the limitation on benefits conditions, the rate drops to 0%. To claim the reduced rate, your US subsidiary must file IRS Form W-8BEN-E before the dividend is paid. Without it, the US withholds at the default 30% rate."
-  - question: "Can I avoid UK corporation tax on the US dividend by keeping the money in the US?"
-    answer: "No. UK corporation tax applies to worldwide profits of your UK company, regardless of where the money is held. Even if the dividend is declared but not physically repatriated, it is still taxable in the UK in the period it is received. The only exception is if the US subsidiary is a separate legal entity and the profits are not distributed as a dividend. In that case, the profits remain in the US entity and are not taxed in the UK until distributed."
-  - question: "What happens if I miss the W-8BEN-E filing and the US withholds at 30%?"
-    answer: "You can still claim a foreign tax credit for the 30% US tax paid, but the credit is capped at the UK corporation tax due on that dividend (25% in most cases). The excess 5% is lost permanently. You also face a time-consuming process of filing IRS Form 8802 and Form 6166 to claim a refund from the IRS, which can take 6-12 months. Filing the W-8BEN-E before payment is far simpler and avoids the loss."
+- question: Does a dividend from a US subsidiary to a UK agency count as taxable income in the UK?
+  answer: Yes. The dividend is taxable as income in your UK agency's corporation tax return. You report the gross dividend (before US withholding tax) and claim a foreign tax credit for the US tax withheld. The net effect is that you pay UK corporation tax at your marginal rate minus the credit for US tax already paid.
+- question: What US withholding tax rate applies to dividends paid to a UK parent company?
+  answer: Under the UK-US Double Taxation Treaty, the rate is 5% if your UK agency owns at least 10% of the US subsidiary. If you own 80% or more and meet the limitation on benefits conditions, the rate drops to 0%. To claim the reduced rate, your US subsidiary must file IRS Form W-8BEN-E before the dividend is paid. Without it, the US withholds at the default 30% rate.
+- question: Can I avoid UK corporation tax on the US dividend by keeping the money in the US?
+  answer: No. UK corporation tax applies to worldwide profits of your UK company, regardless of where the money is held. Even if the dividend is declared but not physically repatriated, it is still taxable in the UK in the period it is received. The only exception is if the US subsidiary is a separate legal entity and the profits are not distributed as a dividend. In that case, the profits remain in the US entity and are not taxed in the UK until distributed.
+- question: What happens if I miss the W-8BEN-E filing and the US withholds at 30%?
+  answer: You can still claim a foreign tax credit for the 30% US tax paid, but the credit is capped at the UK corporation tax due on that dividend (25% in most cases). The excess 5% is lost permanently. You also face a time-consuming process of filing IRS Form 8802 and Form 6166 to claim a refund from the IRS, which can take 6-12 months. Filing the W-8BEN-E before payment is far simpler and avoids the loss.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- UK corporation tax applies to dividends received from a US subsidiary, at 19% for profits up to £50,000 or 25% above £250,000 for 2025/26.
+- US withholding tax on dividends is reduced to 5% under the UK-US treaty if your UK agency owns at least 10% of the US subsidiary.
+- A 0% US withholding rate is achievable if your UK agency owns 80% or more of the US subsidiary and meets treaty conditions.
+- To claim the reduced US withholding rate, your US subsidiary must file IRS Form W8-BEN-E before the dividend is paid.
+- Double taxation relief is available via the Foreign Tax Credit system, offsetting US withholding tax against UK corporation tax on the dividend.
 ---
-
 <h2>Your UK Agency Owns a US Subsidiary. Now What?</h2>
 <p>You set up a US subsidiary because your agency needed a stateside presence. Maybe you have US clients who prefer paying in dollars. Maybe you needed a local entity to win contracts in New York or LA. Either way, the subsidiary has generated profits and you want to bring some of that money back to your UK holding company.</p>
 <p>The question is simple: what tax do you pay on a dividend from your US subsidiary to your UK agency?</p>

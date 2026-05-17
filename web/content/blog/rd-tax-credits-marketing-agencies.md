@@ -1,33 +1,40 @@
 ---
-title: "R&D Tax Credits for Marketing Agencies: What Qualifies and What Doesn't"
-slug: "rd-tax-credits-marketing-agencies"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-tax-credits-marketing-agencies"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "R&D Tax Credits for Marketing Agencies: What Qualifies"
-metaDescription: "R&D tax credits for marketing agencies aren't automatic. We explain what qualifies, what HMRC rejects, and how to claim without triggering an enquiry."
-altText: "Two marketing agency directors reviewing a laptop screen showing a tax credit calculation in a modern UK office with exposed brick walls"
-image: "/blog/rd-tax-credits-marketing-agencies.jpg"
+title: 'R&D Tax Credits for Marketing Agencies: What Qualifies and What Doesn''t'
+slug: rd-tax-credits-marketing-agencies
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rd-tax-credits-marketing-agencies
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'R&D Tax Credits for Marketing Agencies: What Qualifies'
+metaDescription: R&D tax credits for marketing agencies aren't automatic. We explain what qualifies, what HMRC rejects, and how to claim without triggering an enquiry.
+altText: Two marketing agency directors reviewing a laptop screen showing a tax credit calculation in a modern UK office with exposed brick walls
+image: /blog/rd-tax-credits-marketing-agencies.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/text-7821935/"
-  source: "Pexels"
-h1: "R&D Tax Credits for Marketing Agencies: What Qualifies and What Doesn't"
-summary: "Marketing agencies often miss out on R&D tax credits because they assume their work doesn't qualify. But if you're building new tools, automating processes, or solving technical problems, you might have a valid claim. Here's what HMRC looks for and what gets rejected."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/text-7821935/
+  source: Pexels
+h1: 'R&D Tax Credits for Marketing Agencies: What Qualifies and What Doesn''t'
+summary: Marketing agencies often miss out on R&D tax credits because they assume their work doesn't qualify. But if you're building new tools, automating processes, or solving technical problems, you might have a valid claim. Here's what HMRC looks for and what gets rejected.
+schema: ''
 faqs:
-  - question: "Can a marketing agency claim R&D tax credits for developing client campaigns?"
-    answer: "Almost never. Developing a marketing campaign, even a complex one, is not R&D unless it involves resolving a genuine scientific or technological uncertainty. The creative and strategic work of campaign planning doesn't qualify. The only exception is if the campaign requires building new technology or software to deliver it, and that technology development involves technical uncertainty."
-  - question: "What documentation do I need to support an R&D claim?"
-    answer: "You need a technical narrative for each qualifying project, contemporaneous records showing the work happened (emails, project plans, technical specs), time allocation records for staff, and a cost breakdown with supporting invoices and payroll reports. HMRC will ask for these if they open an enquiry, so keep them organised."
-  - question: "How much can a marketing agency typically claim for R&D tax credits?"
-    answer: "It varies significantly. A small agency spending £30k on qualifying development might save around £10k in corporation tax or receive a cash credit of a similar amount. A larger agency spending £200k could save £70k+. The key is that only genuinely qualifying costs count, so the claim size depends on how much technical development you're actually doing."
-  - question: "What happens if HMRC rejects my R&D claim?"
-    answer: "HMRC will open an enquiry and ask for supporting evidence. If you have proper documentation and a strong technical narrative, most enquiries are resolved without losing the claim. If the claim was speculative or poorly documented, HMRC may deny it entirely and could apply penalties if they believe the claim was negligent. That's why it's better to claim correctly the first time, or not at all."
+- question: Can a marketing agency claim R&D tax credits for developing client campaigns?
+  answer: Almost never. Developing a marketing campaign, even a complex one, is not R&D unless it involves resolving a genuine scientific or technological uncertainty. The creative and strategic work of campaign planning doesn't qualify. The only exception is if the campaign requires building new technology or software to deliver it, and that technology development involves technical uncertainty.
+- question: What documentation do I need to support an R&D claim?
+  answer: You need a technical narrative for each qualifying project, contemporaneous records showing the work happened (emails, project plans, technical specs), time allocation records for staff, and a cost breakdown with supporting invoices and payroll reports. HMRC will ask for these if they open an enquiry, so keep them organised.
+- question: How much can a marketing agency typically claim for R&D tax credits?
+  answer: It varies significantly. A small agency spending £30k on qualifying development might save around £10k in corporation tax or receive a cash credit of a similar amount. A larger agency spending £200k could save £70k+. The key is that only genuinely qualifying costs count, so the claim size depends on how much technical development you're actually doing.
+- question: What happens if HMRC rejects my R&D claim?
+  answer: HMRC will open an enquiry and ask for supporting evidence. If you have proper documentation and a strong technical narrative, most enquiries are resolved without losing the claim. If the claim was speculative or poorly documented, HMRC may deny it entirely and could apply penalties if they believe the claim was negligent. That's why it's better to claim correctly the first time, or not at all.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Marketing agencies can claim R&D tax credits for building proprietary software, automation tools, or machine learning models that solve genuine technical uncertainties.
+- HMRC's R&D definition requires an advance in science or technology by resolving a technical uncertainty not obvious to a competent professional.
+- Qualifying projects include developing custom analytics platforms, automated content distribution systems, and NLP models for multi-language sentiment analysis.
+- Failed projects can still qualify for R&D tax credits if they aimed to achieve a technological advance and faced genuine technical uncertainty.
+- Applying existing technology in a standard way or failing to demonstrate technical uncertainty are common reasons HMRC rejects marketing agency R&D claims.
 ---
-
 <p>If you run a marketing agency and you've never considered R&D tax credits, you're not alone. Most agency founders assume R&D means lab coats, prototypes, and government grants for inventing new materials. That's not how it works.</p>
 
 <p>HMRC's definition of R&D is broader than most people think. It covers projects that seek to achieve an advance in science or technology. For a marketing agency, that advance is rarely in marketing itself. It's in the software, the data processing, the automation, and the technical infrastructure you build to deliver your services.</p>

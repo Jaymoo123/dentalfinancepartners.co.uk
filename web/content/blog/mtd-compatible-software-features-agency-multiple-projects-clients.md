@@ -1,33 +1,40 @@
 ---
-title: "What MTD-Compatible Software Features Are Essential for an Agency with Multiple Projects and Clients?"
-slug: "mtd-compatible-software-features-agency-multiple-projects-clients"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-compatible-software-features-agency-multiple-projects-clients"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Making Tax Digital"
-metaTitle: "MTD-Compatible Software: Essential Features for Agency"
-metaDescription: "Not all MTD software handles multi-project agencies well. We cover the features you need for client tracking, project costing, and HMRC compliance."
-altText: "Agency founder reviewing MTD-compatible accounting software on a laptop in a modern UK office with project boards visible"
-image: "/blog/mtd-compatible-software-features-agency-multiple-projects-clients.jpg"
+title: What MTD-Compatible Software Features Are Essential for an Agency with Multiple Projects and Clients?
+slug: mtd-compatible-software-features-agency-multiple-projects-clients
+canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/mtd-compatible-software-features-agency-multiple-projects-clients
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Making Tax Digital
+metaTitle: 'MTD-Compatible Software: Essential Features for Agency'
+metaDescription: Not all MTD software handles multi-project agencies well. We cover the features you need for client tracking, project costing, and HMRC compliance.
+altText: Agency founder reviewing MTD-compatible accounting software on a laptop in a modern UK office with project boards visible
+image: /blog/mtd-compatible-software-features-agency-multiple-projects-clients.jpg
 imageCredit:
-  photographer: "Daniil Komov"
-  photographerUrl: "https://www.pexels.com/@dkomov"
-  sourceUrl: "https://www.pexels.com/photo/programming-code-editors-on-computer-screen-34803968/"
-  source: "Pexels"
-h1: "What MTD-Compatible Software Features Are Essential for an Agency with Multiple Projects and Clients?"
-summary: "Making Tax Digital for Income Tax is coming. But for agency founders running multiple projects and clients, standard bookkeeping software won't cut it. Here's what to look for when choosing MTD-compatible software that actually works with how your agency operates."
-schema: ""
+  photographer: Daniil Komov
+  photographerUrl: https://www.pexels.com/@dkomov
+  sourceUrl: https://www.pexels.com/photo/programming-code-editors-on-computer-screen-34803968/
+  source: Pexels
+h1: What MTD-Compatible Software Features Are Essential for an Agency with Multiple Projects and Clients?
+summary: Making Tax Digital for Income Tax is coming. But for agency founders running multiple projects and clients, standard bookkeeping software won't cut it. Here's what to look for when choosing MTD-compatible software that actually works with how your agency operates.
+schema: ''
 faqs:
-  - question: "When does MTD for Income Tax become mandatory for agency founders?"
-    answer: "MTD for ITSA becomes mandatory from April 2026 for sole traders and landlords with qualifying income over £50,000. From April 2027, it extends to those with income over £30,000. If your agency is structured as a limited company, you're not directly affected by MTD for ITSA, but you may still need MTD-compatible software for VAT if you're VAT-registered."
-  - question: "Can I use FreeAgent for my agency's MTD filing?"
-    answer: "Yes, FreeAgent is MTD-compatible and works well for smaller agencies. It handles project tracking, VAT, and director's loan accounts. However, its multi-currency features are limited, and the reporting is less flexible than Xero. For agencies turning over under £300k with mostly UK clients, FreeAgent is a solid choice. For larger or international agencies, Xero or QuickBooks Online may be better."
-  - question: "Do I need separate software for project costing and MTD compliance?"
-    answer: "Not necessarily. Xero and QuickBooks Online both offer project costing features within their MTD-compatible platforms. FreeAgent has basic project tracking. If your projects are complex, you might need an add-on like WorkflowMax or Practice Ignition that integrates with your accounting software. The key is that project cost data flows automatically into your MTD records, not that you use a single tool for everything."
-  - question: "What happens if I don't use MTD-compatible software?"
-    answer: "From April 2026, if you're in scope, you must file quarterly updates digitally using MTD-compatible software. You cannot use spreadsheets alone unless they're linked to bridging software that connects to HMRC's systems. Failure to comply can result in penalties. If you're unsure whether you're in scope or what software to use, speak to an accountant before the deadline."
+- question: When does MTD for Income Tax become mandatory for agency founders?
+  answer: MTD for ITSA becomes mandatory from April 2026 for sole traders and landlords with qualifying income over £50,000. From April 2027, it extends to those with income over £30,000. If your agency is structured as a limited company, you're not directly affected by MTD for ITSA, but you may still need MTD-compatible software for VAT if you're VAT-registered.
+- question: Can I use FreeAgent for my agency's MTD filing?
+  answer: Yes, FreeAgent is MTD-compatible and works well for smaller agencies. It handles project tracking, VAT, and director's loan accounts. However, its multi-currency features are limited, and the reporting is less flexible than Xero. For agencies turning over under £300k with mostly UK clients, FreeAgent is a solid choice. For larger or international agencies, Xero or QuickBooks Online may be better.
+- question: Do I need separate software for project costing and MTD compliance?
+  answer: Not necessarily. Xero and QuickBooks Online both offer project costing features within their MTD-compatible platforms. FreeAgent has basic project tracking. If your projects are complex, you might need an add-on like WorkflowMax or Practice Ignition that integrates with your accounting software. The key is that project cost data flows automatically into your MTD records, not that you use a single tool for everything.
+- question: What happens if I don't use MTD-compatible software?
+  answer: From April 2026, if you're in scope, you must file quarterly updates digitally using MTD-compatible software. You cannot use spreadsheets alone unless they're linked to bridging software that connects to HMRC's systems. Failure to comply can result in penalties. If you're unsure whether you're in scope or what software to use, speak to an accountant before the deadline.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- MTD for ITSA becomes mandatory for sole traders and landlords with income over £50,000 from April 2026, and for those over £30,000 from April 2027.
+- Agency software must track project-level costs and profitability, not just income and expenses, to avoid pricing decisions based on bad data.
+- Look for MTD-compatible software that integrates with time tracking tools like Toggl, Harvest, or Clockify to feed project costs directly into records.
+- Client-specific VAT handling is essential; software should allow default VAT treatment per client to avoid errors and HMRC penalties.
+- For agencies on the flat rate VAT scheme, ensure the software correctly applies the limited cost trader rules to avoid compliance issues.
 ---
-
 <p>Making Tax Digital for Income Tax (MTD for ITSA) becomes mandatory for sole traders and landlords with qualifying income over £50,000 from April 2026. If your agency turns over more than £30,000, you'll be in scope from April 2027.</p>
 
 <p>But here's the thing most software comparison articles miss. They list features for a generic small business. A window cleaner. A corner shop. A freelance graphic designer with three clients.</p>

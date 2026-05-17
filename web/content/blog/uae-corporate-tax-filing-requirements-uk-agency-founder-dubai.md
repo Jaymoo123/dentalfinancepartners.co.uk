@@ -1,33 +1,40 @@
 ---
-title: "What Are the UAE Corporate Tax Filing Requirements for a UK Agency Founder Living in Dubai?"
-slug: "uae-corporate-tax-filing-requirements-uk-agency-founder-dubai"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-filing-requirements-uk-agency-founder-dubai"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "UAE corporate tax filing for UK agency founders in Dubai"
-metaDescription: "UAE corporate tax filing for UK agency founders in Dubai. We explain who must register, deadlines, penalties, and how your UK agency fits in."
-altText: "UK agency founder working on a laptop in a Dubai office with city skyline visible through the window"
-image: "/blog/uae-corporate-tax-filing-requirements-uk-agency-founder-dubai.jpg"
+title: What Are the UAE Corporate Tax Filing Requirements for a UK Agency Founder Living in Dubai?
+slug: uae-corporate-tax-filing-requirements-uk-agency-founder-dubai
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/uae-corporate-tax-filing-requirements-uk-agency-founder-dubai
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: UAE corporate tax filing for UK agency founders in Dubai
+metaDescription: UAE corporate tax filing for UK agency founders in Dubai. We explain who must register, deadlines, penalties, and how your UK agency fits in.
+altText: UK agency founder working on a laptop in a Dubai office with city skyline visible through the window
+image: /blog/uae-corporate-tax-filing-requirements-uk-agency-founder-dubai.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/tax-documents-on-the-table-6863332/"
-  source: "Pexels"
-h1: "What Are the UAE Corporate Tax Filing Requirements for a UK Agency Founder Living in Dubai?"
-summary: "If you're a UK agency founder living in Dubai, you need to understand UAE corporate tax filing requirements. We explain who must register, what the 9% rate applies to, and how your UK agency structure interacts with UAE tax law."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/tax-documents-on-the-table-6863332/
+  source: Pexels
+h1: What Are the UAE Corporate Tax Filing Requirements for a UK Agency Founder Living in Dubai?
+summary: If you're a UK agency founder living in Dubai, you need to understand UAE corporate tax filing requirements. We explain who must register, what the 9% rate applies to, and how your UK agency structure interacts with UAE tax law.
+schema: ''
 faqs:
-  - question: "Do I need to register my UK company for UAE corporate tax if I live in Dubai?"
-    answer: "No. Your UK company remains UK tax resident and pays UK corporation tax. You do not file UAE corporate tax for the UK company. However, you may need to report your personal UAE tax residency to HMRC, and you should ensure the UK company's central management and control does not shift to the UAE. If HMRC determines the UK company is actually managed from Dubai, it could become dual resident."
-  - question: "What is the deadline for filing UAE corporate tax returns?"
-    answer: "The deadline is nine months after the end of your financial year. For a calendar year business (31 December year end), the return is due by 30 September. Late filing penalties start at AED 500 per month and increase to AED 1,000 per month. Payment of any tax due is due on the same date as the return."
-  - question: "Can my UAE free zone company pay 0% corporate tax?"
-    answer: "Yes, if it qualifies for the Free Zone Qualifying Regime. The income must be \"qualifying income\" (typically from non-UAE counterparties), and the business must have adequate substance in the UAE. You need to apply to the FTA for the 0% rate. It is not automatic. If your company invoices mainland UAE clients, you may lose the 0% rate on that revenue."
-  - question: "What happens if I do not register my UAE company for corporate tax?"
-    answer: "The FTA imposes a penalty of AED 10,000 for failure to register on time. If you continue to trade without registration, you face additional penalties and potential legal action. The FTA can also assess tax on your estimated profits and charge interest. It is not worth the risk. Register as soon as you become aware of the obligation."
+- question: Do I need to register my UK company for UAE corporate tax if I live in Dubai?
+  answer: No. Your UK company remains UK tax resident and pays UK corporation tax. You do not file UAE corporate tax for the UK company. However, you may need to report your personal UAE tax residency to HMRC, and you should ensure the UK company's central management and control does not shift to the UAE. If HMRC determines the UK company is actually managed from Dubai, it could become dual resident.
+- question: What is the deadline for filing UAE corporate tax returns?
+  answer: The deadline is nine months after the end of your financial year. For a calendar year business (31 December year end), the return is due by 30 September. Late filing penalties start at AED 500 per month and increase to AED 1,000 per month. Payment of any tax due is due on the same date as the return.
+- question: Can my UAE free zone company pay 0% corporate tax?
+  answer: Yes, if it qualifies for the Free Zone Qualifying Regime. The income must be "qualifying income" (typically from non-UAE counterparties), and the business must have adequate substance in the UAE. You need to apply to the FTA for the 0% rate. It is not automatic. If your company invoices mainland UAE clients, you may lose the 0% rate on that revenue.
+- question: What happens if I do not register my UAE company for corporate tax?
+  answer: The FTA imposes a penalty of AED 10,000 for failure to register on time. If you continue to trade without registration, you face additional penalties and potential legal action. The FTA can also assess tax on your estimated profits and charge interest. It is not worth the risk. Register as soon as you become aware of the obligation.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- UAE corporate tax applies to all UAE businesses from June 2023, with a 9% rate on profits above AED 375,000 (approx. £80,000) and 0% on the first AED 375,000.
+- UK agency founders in Dubai must register their UAE entity for corporate tax within three months of incorporation, or by FTA deadlines for pre-March 2024 businesses.
+- Free zone companies can qualify for a 0% corporate tax rate on qualifying income, but must apply to the FTA and demonstrate adequate economic substance.
+- Managing a UK company from Dubai does not exempt it from UK corporation tax, but your personal tax residency may shift, creating UAE reporting obligations for worldwide income.
+- Artificial cost shifting to keep UAE profits below AED 375,000 is ineffective; genuine economic substance and real profit will trigger 9% tax on the excess.
 ---
-
 <h2>UAE Corporate Tax Is No Longer Optional</h2>
 
 <p>Since June 2023, the UAE has had a federal corporate tax regime. It applies to all businesses operating in the UAE, including free zone companies and mainland entities. If you are a UK agency founder living in Dubai and running a UAE-registered business, you are within scope.</p>

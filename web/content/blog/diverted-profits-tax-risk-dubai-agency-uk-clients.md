@@ -1,33 +1,40 @@
 ---
-title: "What is the diverted profits tax risk for my Dubai agency if I have UK clients?"
-slug: "diverted-profits-tax-risk-dubai-agency-uk-clients"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/diverted-profits-tax-risk-dubai-agency-uk-clients"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Diverted profits tax risk for Dubai agencies with UK clients"
-metaDescription: "HMRC can charge 25% diverted profits tax if your Dubai agency is seen as avoiding UK tax. We explain the risk and how to structure properly."
-altText: "Dubai agency founder reviewing diverted profits tax documents with UK accountant"
-image: "/blog/diverted-profits-tax-risk-dubai-agency-uk-clients.jpg"
+title: What is the diverted profits tax risk for my Dubai agency if I have UK clients?
+slug: diverted-profits-tax-risk-dubai-agency-uk-clients
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/diverted-profits-tax-risk-dubai-agency-uk-clients
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: Diverted profits tax risk for Dubai agencies with UK clients
+metaDescription: HMRC can charge 25% diverted profits tax if your Dubai agency is seen as avoiding UK tax. We explain the risk and how to structure properly.
+altText: Dubai agency founder reviewing diverted profits tax documents with UK accountant
+image: /blog/diverted-profits-tax-risk-dubai-agency-uk-clients.jpg
 imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  sourceUrl: "https://www.pexels.com/photo/round-gold-chocolate-coins-6863286/"
-  source: "Pexels"
-h1: "What is the diverted profits tax risk for my Dubai agency if I have UK clients?"
-summary: "If you run a Dubai agency with UK clients, HMRC may apply a 25% diverted profits tax charge if it believes profits are being artificially shifted to avoid UK tax. The risk is real, particularly where the founder is UK-based or the agency's key decisions are made from the UK. Here is how to recognise the risk and structure properly."
-schema: ""
+  photographer: Nataliya Vaitkevich
+  photographerUrl: https://www.pexels.com/@n-voitkevich
+  sourceUrl: https://www.pexels.com/photo/round-gold-chocolate-coins-6863286/
+  source: Pexels
+h1: What is the diverted profits tax risk for my Dubai agency if I have UK clients?
+summary: If you run a Dubai agency with UK clients, HMRC may apply a 25% diverted profits tax charge if it believes profits are being artificially shifted to avoid UK tax. The risk is real, particularly where the founder is UK-based or the agency's key decisions are made from the UK. Here is how to recognise the risk and structure properly.
+schema: ''
 faqs:
-  - question: "What is diverted profits tax and how does it apply to a Dubai agency?"
-    answer: "Diverted profits tax (DPT) is a 25% charge HMRC applies to profits it believes have been artificially shifted out of the UK to avoid tax. For a Dubai agency with UK clients, DPT applies if HMRC decides the agency's activities in the UK create a taxable presence here, or if the agency lacks genuine economic substance in Dubai and is effectively a UK business routing profits through Dubai."
-  - question: "How can I avoid diverted profits tax risk as a Dubai agency founder?"
-    answer: "To avoid DPT risk, you need genuine economic substance in Dubai: a physical office, local employees, local bank accounts, and board meetings held in Dubai. You also need to become non-UK resident by passing the Statutory Residence Test, which typically means spending fewer than 16 days per tax year in the UK. Your contracts, client relationships, and key decisions should all be managed from Dubai, not from the UK."
-  - question: "What are the red flags that trigger an HMRC investigation into a Dubai agency?"
-    answer: "Common red flags include: the founder spending significant time in the UK while claiming non-residence, the founder having a UK home or family ties, UK clients being sourced and serviced from the UK, the Dubai company having no physical office or local employees, and contracts being signed in the UK. HMRC also looks at travel records, banking data, and property registries under international information-sharing agreements."
-  - question: "Can I keep my UK company and also run a Dubai agency?"
-    answer: "Yes, but the two companies must be genuinely separate. They should not share staff, bank accounts, or intellectual property. Any transactions between them must be at arm's length prices. If the two companies look like one business split across two jurisdictions, HMRC will treat them that way and may apply DPT to profits it considers should have been taxed in the UK."
+- question: What is diverted profits tax and how does it apply to a Dubai agency?
+  answer: Diverted profits tax (DPT) is a 25% charge HMRC applies to profits it believes have been artificially shifted out of the UK to avoid tax. For a Dubai agency with UK clients, DPT applies if HMRC decides the agency's activities in the UK create a taxable presence here, or if the agency lacks genuine economic substance in Dubai and is effectively a UK business routing profits through Dubai.
+- question: How can I avoid diverted profits tax risk as a Dubai agency founder?
+  answer: 'To avoid DPT risk, you need genuine economic substance in Dubai: a physical office, local employees, local bank accounts, and board meetings held in Dubai. You also need to become non-UK resident by passing the Statutory Residence Test, which typically means spending fewer than 16 days per tax year in the UK. Your contracts, client relationships, and key decisions should all be managed from Dubai, not from the UK.'
+- question: What are the red flags that trigger an HMRC investigation into a Dubai agency?
+  answer: 'Common red flags include: the founder spending significant time in the UK while claiming non-residence, the founder having a UK home or family ties, UK clients being sourced and serviced from the UK, the Dubai company having no physical office or local employees, and contracts being signed in the UK. HMRC also looks at travel records, banking data, and property registries under international information-sharing agreements.'
+- question: Can I keep my UK company and also run a Dubai agency?
+  answer: Yes, but the two companies must be genuinely separate. They should not share staff, bank accounts, or intellectual property. Any transactions between them must be at arm's length prices. If the two companies look like one business split across two jurisdictions, HMRC will treat them that way and may apply DPT to profits it considers should have been taxed in the UK.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- HMRC can apply a 25% diverted profits tax if your Dubai agency's key decisions are made from the UK.
+- If you spend over 183 days in the UK or have strong UK ties, you may be UK tax resident, risking your Dubai company's profits being taxed in the UK.
+- Central management and control exercised from the UK can make your Dubai company UK tax resident, triggering UK corporation tax at 19% or 25%.
+- Sourcing and servicing UK clients from the UK without a permanent establishment is a red flag for HMRC's diverted profits tax.
+- Proper substance in Dubai—local office, board meetings, and decision-making—is essential to mitigate diverted profits tax risk.
 ---
-
 <p>If you are a UK-born agency founder now running your business from Dubai, you have likely moved for the tax benefits. Zero personal income tax. No corporation tax (in most cases). A lifestyle that is hard to beat. But here is the question that keeps compliance-minded founders awake: what happens when your Dubai agency's clients are still in the UK?</p>
 
 <p>HMRC has a weapon for exactly this situation. It is called the diverted profits tax (DPT). And it applies a 25% charge on profits HMRC believes have been artificially diverted away from the UK tax net. The <strong>diverted profits tax risk Dubai agency</strong> owners face is not theoretical. HMRC has used it against digital businesses, service companies, and yes, agencies. If you have UK clients and a UK founder who still spends time here, you need to understand how this works.</p>

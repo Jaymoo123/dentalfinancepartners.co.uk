@@ -1,33 +1,40 @@
 ---
-title: "What to Do If Your Agency Misses an MTD Filing Deadline: Penalties, Appeals and Mitigation"
-slug: "missed-mtd-filing-deadline-penalties-appeals-mitigation"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/missed-mtd-filing-deadline-penalties-appeals-mitigation"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Making Tax Digital"
-metaTitle: "MTD Filing Deadline Missed? Penalties, Appeals & Mitigation"
-metaDescription: "Missed an MTD filing deadline? Here’s what happens next: penalty amounts, how to appeal, and steps to mitigate future risk for your agency."
-altText: "Agency founder reviewing MTD compliance checklist on laptop in a modern UK office"
-image: "/blog/missed-mtd-filing-deadline-penalties-appeals-mitigation.jpg"
+title: 'What to Do If Your Agency Misses an MTD Filing Deadline: Penalties, Appeals and Mitigation'
+slug: missed-mtd-filing-deadline-penalties-appeals-mitigation
+canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/missed-mtd-filing-deadline-penalties-appeals-mitigation
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Making Tax Digital
+metaTitle: MTD Filing Deadline Missed? Penalties, Appeals & Mitigation
+metaDescription: 'Missed an MTD filing deadline? Here’s what happens next: penalty amounts, how to appeal, and steps to mitigate future risk for your agency.'
+altText: Agency founder reviewing MTD compliance checklist on laptop in a modern UK office
+image: /blog/missed-mtd-filing-deadline-penalties-appeals-mitigation.jpg
 imageCredit:
-  photographer: "Leeloo The First"
-  photographerUrl: "https://www.pexels.com/@leeloothefirst"
-  sourceUrl: "https://www.pexels.com/photo/a-handwritten-note-on-a-calendar-planner-8962462/"
-  source: "Pexels"
-h1: "What to Do If Your Agency Misses an MTD Filing Deadline: Penalties, Appeals and Mitigation"
-summary: "If you miss an MTD filing deadline, HMRC issues a penalty. This guide explains the penalty structure for 2025/26, how to appeal if you have a reasonable excuse, and what to do next to keep your agency compliant."
-schema: ""
+  photographer: Leeloo The First
+  photographerUrl: https://www.pexels.com/@leeloothefirst
+  sourceUrl: https://www.pexels.com/photo/a-handwritten-note-on-a-calendar-planner-8962462/
+  source: Pexels
+h1: 'What to Do If Your Agency Misses an MTD Filing Deadline: Penalties, Appeals and Mitigation'
+summary: If you miss an MTD filing deadline, HMRC issues a penalty. This guide explains the penalty structure for 2025/26, how to appeal if you have a reasonable excuse, and what to do next to keep your agency compliant.
+schema: ''
 faqs:
-  - question: "What happens if I miss an MTD filing deadline for the first time?"
-    answer: "You do not get an immediate fine. You receive one penalty point. For VAT, if you file quarterly, you need 4 points before a £200 penalty is issued. For monthly filers, the threshold is 5 points. For annual filers, it is 2 points. If you file all returns on time for 12 consecutive months, your oldest points expire."
-  - question: "Can I appeal an MTD penalty if I was too busy with client work?"
-    answer: "No. HMRC does not accept \"too busy\" as a reasonable excuse. You need a genuine reason outside your control, such as serious illness, hospitalisation, a death in the family, or a software failure that was not your fault. If you have a valid excuse, you must appeal within 30 days of the penalty notice."
-  - question: "How do I check my MTD penalty points balance?"
-    answer: "Log in to your HMRC online account and go to your VAT or MTD for ITSA dashboard. The points are displayed clearly. If you use accounting software like Xero or QuickBooks, your accountant can also check this if they have agent access. We recommend checking your points balance as part of your quarterly management accounts review."
-  - question: "What should I do immediately after missing an MTD deadline?"
-    answer: "File the return as soon as possible. This stops further points from accruing. Then pay the VAT or tax due. If you cannot pay in full, contact HMRC's Time to Pay service to set up a payment plan. Finally, review your systems to ensure you do not miss another deadline. If you have a reasonable excuse, appeal the penalty within 30 days."
+- question: What happens if I miss an MTD filing deadline for the first time?
+  answer: You do not get an immediate fine. You receive one penalty point. For VAT, if you file quarterly, you need 4 points before a £200 penalty is issued. For monthly filers, the threshold is 5 points. For annual filers, it is 2 points. If you file all returns on time for 12 consecutive months, your oldest points expire.
+- question: Can I appeal an MTD penalty if I was too busy with client work?
+  answer: No. HMRC does not accept "too busy" as a reasonable excuse. You need a genuine reason outside your control, such as serious illness, hospitalisation, a death in the family, or a software failure that was not your fault. If you have a valid excuse, you must appeal within 30 days of the penalty notice.
+- question: How do I check my MTD penalty points balance?
+  answer: Log in to your HMRC online account and go to your VAT or MTD for ITSA dashboard. The points are displayed clearly. If you use accounting software like Xero or QuickBooks, your accountant can also check this if they have agent access. We recommend checking your points balance as part of your quarterly management accounts review.
+- question: What should I do immediately after missing an MTD deadline?
+  answer: File the return as soon as possible. This stops further points from accruing. Then pay the VAT or tax due. If you cannot pay in full, contact HMRC's Time to Pay service to set up a payment plan. Finally, review your systems to ensure you do not miss another deadline. If you have a reasonable excuse, appeal the penalty within 30 days.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Missing an MTD filing deadline triggers a points-based penalty system, not a flat fine, with a £200 penalty only after reaching the threshold (e.g., 4 points for quarterly VAT filers).
+- Penalty points expire 24 months after accrual if you file all returns on time for 12 consecutive months, allowing you to reset your compliance record.
+- Late payment penalties for VAT are separate from late filing penalties, with a warning for 1–15 days late and escalating charges from 16–30 days late.
+- From April 2026, MTD for ITSA becomes mandatory for sole traders and landlords with income over £50,000, requiring quarterly updates via compatible software.
+- If you have a reasonable excuse for missing a deadline, you can appeal the penalty to HMRC, but you must act quickly and provide evidence to support your case.
 ---
-
 <h2>You Missed an MTD Filing Deadline. Now What?</h2>
 
 <p>It happens. You are running a 12-person digital agency in Shoreditch, your retainer book is solid, your project burn is under control, and then you realise: you missed the Making Tax Digital (MTD) filing deadline for VAT. Or perhaps you are a sole trader web designer turning over £65k and you missed the quarterly income tax update under MTD for ITSA.</p>

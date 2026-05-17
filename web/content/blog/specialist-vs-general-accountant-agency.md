@@ -1,33 +1,40 @@
 ---
-title: "Specialist Accountant vs General Accountant: Which One Does Your Agency Actually Need?"
-slug: "specialist-vs-general-accountant-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/specialist-vs-general-accountant-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Accountant Services"
-metaTitle: "Agency Accountant vs General: Which Do You Need?"
-metaDescription: "A general accountant handles your tax return. A specialist accountant agency understands IR35, utilisation, and retainer accounting. Here's when you need"
-altText: "Two agency founders reviewing financial reports with their specialist accountant in a modern London office"
-image: "/blog/specialist-vs-general-accountant-agency.jpg"
+title: 'Specialist Accountant vs General Accountant: Which One Does Your Agency Actually Need?'
+slug: specialist-vs-general-accountant-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services/specialist-vs-general-accountant-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Accountant Services
+metaTitle: 'Agency Accountant vs General: Which Do You Need?'
+metaDescription: A general accountant handles your tax return. A specialist accountant agency understands IR35, utilisation, and retainer accounting. Here's when you need
+altText: Two agency founders reviewing financial reports with their specialist accountant in a modern London office
+image: /blog/specialist-vs-general-accountant-agency.jpg
 imageCredit:
-  photographer: "Artem Podrez"
-  photographerUrl: "https://www.pexels.com/@artempodrez"
-  sourceUrl: "https://www.pexels.com/photo/two-women-working-with-accounting-data-on-table-6779567/"
-  source: "Pexels"
-h1: "Do You Need a Specialist Accountant for Your Agency, or Will Any Accountant Do?"
-summary: "A general accountant will file your accounts on time. A specialist accountant agency understands how IR35 hits your contractor margins, why retainer income changes your tax position, and what utilisation rate means for your exit. Here is the difference and when you need to make the switch."
-schema: ""
+  photographer: Artem Podrez
+  photographerUrl: https://www.pexels.com/@artempodrez
+  sourceUrl: https://www.pexels.com/photo/two-women-working-with-accounting-data-on-table-6779567/
+  source: Pexels
+h1: Do You Need a Specialist Accountant for Your Agency, or Will Any Accountant Do?
+summary: A general accountant will file your accounts on time. A specialist accountant agency understands how IR35 hits your contractor margins, why retainer income changes your tax position, and what utilisation rate means for your exit. Here is the difference and when you need to make the switch.
+schema: ''
 faqs:
-  - question: "What is the difference between a specialist accountant and a general accountant?"
-    answer: "A general accountant handles standard compliance: filing tax returns, running payroll, submitting VAT. A specialist accountant understands the specific financial dynamics of your agency type: IR35 for contractors, utilisation rate for profitability, retainer revenue recognition, and exit structuring. The difference is not just knowledge but proactive advice that saves you money."
-  - question: "When should I switch from a general accountant to a specialist?"
-    answer: "Switch when you have more than 5 contractors, turnover above £250k, multiple income streams, or an exit plan within 5 years. Also switch if your current accountant has never asked about your utilisation rate or gross margin. If two or more of these apply, you are likely losing money by staying with a generalist."
-  - question: "How much more does a specialist accountant cost?"
-    answer: "A general accountant might charge £100-£200 per month for a limited company. A specialist typically charges £300-£600 per month. But the savings in tax, R&D credits, and exit planning typically far outweigh the fee difference. A single R&D claim or tax structuring change can cover years of fees."
-  - question: "Do I need a specialist accountant if I am a sole trader agency founder?"
-    answer: "Probably not. If you are a sole trader with a single income stream and no contractors, a good general accountant is sufficient. The value of a specialist increases as your agency grows in complexity: employees, contractors, multiple revenue streams, and exit ambitions. Review the trigger points in this article to decide."
+- question: What is the difference between a specialist accountant and a general accountant?
+  answer: 'A general accountant handles standard compliance: filing tax returns, running payroll, submitting VAT. A specialist accountant understands the specific financial dynamics of your agency type: IR35 for contractors, utilisation rate for profitability, retainer revenue recognition, and exit structuring. The difference is not just knowledge but proactive advice that saves you money.'
+- question: When should I switch from a general accountant to a specialist?
+  answer: Switch when you have more than 5 contractors, turnover above £250k, multiple income streams, or an exit plan within 5 years. Also switch if your current accountant has never asked about your utilisation rate or gross margin. If two or more of these apply, you are likely losing money by staying with a generalist.
+- question: How much more does a specialist accountant cost?
+  answer: A general accountant might charge £100-£200 per month for a limited company. A specialist typically charges £300-£600 per month. But the savings in tax, R&D credits, and exit planning typically far outweigh the fee difference. A single R&D claim or tax structuring change can cover years of fees.
+- question: Do I need a specialist accountant if I am a sole trader agency founder?
+  answer: 'Probably not. If you are a sole trader with a single income stream and no contractors, a good general accountant is sufficient. The value of a specialist increases as your agency grows in complexity: employees, contractors, multiple revenue streams, and exit ambitions. Review the trigger points in this article to decide.'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A general accountant handles compliance but often misses IR35 risks that can cost a mid-size agency six figures in backdated tax.
+- A specialist accountant agency runs IR35 audits, issues compliant Status Determination Statements, and structures contracts to withstand HMRC challenges.
+- Retainer and project revenue require different recognition methods; a specialist smooths tax liability and avoids spikes into higher corporation tax bands.
+- Strong retainer books increase agency valuation, but a general accountant won't flag this in management accounts or cash flow forecasting.
+- Switch to a specialist when your agency has contractors, retainer income, or an exit plan; a sole trader billing £40k does not need one.
 ---
-
 <p>You run a 12-person digital agency turning over £800k a year. You have three contractors on rolling engagements, a mix of retainer and project income, and you are thinking about an exit in three years. Your current accountant charges £150 a month and files your annual accounts on time.</p>
 <p>Is that enough? Or do you need a <strong>specialist accountant agency</strong> that actually understands how your business works?</p>
 <p>It is a question we hear from agency founders every week. And the honest answer depends on where you are in your journey. A sole trader web designer billing £40k a year probably does not need a specialist. A 20-person PR agency with complex contractor arrangements, international clients, and an exit plan absolutely does.</p>

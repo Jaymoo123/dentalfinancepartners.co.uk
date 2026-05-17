@@ -1,31 +1,38 @@
 ---
-title: "What Is the Section 455 Tax Charge on Director's Loans and How Do You Avoid It?"
-slug: "section-455-tax-charge-directors-loans-agency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/section-455-tax-charge-directors-loans-agency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Section 455 tax charge on director's loans explained"
-metaDescription: "The S455 tax charge hits agency directors who take company loans and don't repay them within 9 months. Here's how it works and how to avoid it."
-altText: "Agency director reviewing director's loan account statements with accountant in London office"
-image: "/blog/section-455-tax-charge-directors-loans-agency.jpg"
+title: What Is the Section 455 Tax Charge on Director's Loans and How Do You Avoid It?
+slug: section-455-tax-charge-directors-loans-agency
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/section-455-tax-charge-directors-loans-agency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: Section 455 tax charge on director's loans explained
+metaDescription: The S455 tax charge hits agency directors who take company loans and don't repay them within 9 months. Here's how it works and how to avoid it.
+altText: Agency director reviewing director's loan account statements with accountant in London office
+image: /blog/section-455-tax-charge-directors-loans-agency.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/close-up-photo-of-a-white-paper-using-vintage-typewriter-4584838/"
-  source: "Pexels"
-h1: "What Is the Section 455 Tax Charge on Director's Loans and How Do You Avoid It?"
-summary: "Section 455 of the Corporation Tax Act 2010 imposes a 33.75% tax charge on loans from your agency to you that aren't repaid within 9 months of the year end. This guide explains exactly how it works, when it applies, and the practical steps to avoid triggering it. We cover repayment deadlines, formal loan agreements, dividend alternatives, and what happens if HMRC comes calling."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/close-up-photo-of-a-white-paper-using-vintage-typewriter-4584838/
+  source: Pexels
+h1: What Is the Section 455 Tax Charge on Director's Loans and How Do You Avoid It?
+summary: Section 455 of the Corporation Tax Act 2010 imposes a 33.75% tax charge on loans from your agency to you that aren't repaid within 9 months of the year end. This guide explains exactly how it works, when it applies, and the practical steps to avoid triggering it. We cover repayment deadlines, formal loan agreements, dividend alternatives, and what happens if HMRC comes calling.
+schema: ''
 faqs:
-  - question: "What is the Section 455 tax charge rate for 2025/26?"
-    answer: "The Section 455 tax charge rate for 2025/26 is 33.75% of the outstanding loan amount. This matches the higher rate dividend tax band. The charge applies if a director's loan is not repaid within 9 months of the company's year end."
-  - question: "Can a director's loan be written off instead of repaid?"
-    answer: "Yes, but writing off a director's loan has tax consequences. The written-off amount is treated as a distribution (dividend) for tax purposes, meaning you pay income tax on it at dividend rates. The company can also claim a deduction for the write-off in certain circumstances, but this is complex and usually not beneficial. Speak to your accountant before writing off any loan."
-  - question: "How do I report a Section 455 charge on my CT600?"
-    answer: "The Section 455 charge is reported in the \"Loans to participators\" section of the CT600 corporation tax return. Your accountant will complete this as part of the return filing. If you file your own return, look for box 55 on the CT600 short version or the relevant supplementary pages for the full version. The charge is due at the same time as"
+- question: What is the Section 455 tax charge rate for 2025/26?
+  answer: The Section 455 tax charge rate for 2025/26 is 33.75% of the outstanding loan amount. This matches the higher rate dividend tax band. The charge applies if a director's loan is not repaid within 9 months of the company's year end.
+- question: Can a director's loan be written off instead of repaid?
+  answer: Yes, but writing off a director's loan has tax consequences. The written-off amount is treated as a distribution (dividend) for tax purposes, meaning you pay income tax on it at dividend rates. The company can also claim a deduction for the write-off in certain circumstances, but this is complex and usually not beneficial. Speak to your accountant before writing off any loan.
+- question: How do I report a Section 455 charge on my CT600?
+  answer: The Section 455 charge is reported in the "Loans to participators" section of the CT600 corporation tax return. Your accountant will complete this as part of the return filing. If you file your own return, look for box 55 on the CT600 short version or the relevant supplementary pages for the full version. The charge is due at the same time as
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Section 455 imposes a 33.75% tax charge on director's loans not repaid within 9 months of the company's year end.
+- The charge is paid by the company, not the director, and is due with the corporation tax payment.
+- A director's loan account records all money taken from the company that isn't salary, dividend, or expense reimbursement.
+- If you repay the loan later, the company can reclaim the Section 455 charge, but the cash is tied up until then.
+- Loans of £10,000 or less to a director who is also an employee may be exempt from Section 455.
 ---
-
 <p>You've built a successful agency. Turnover is climbing, the team is growing, and you've got cash in the company account. It's tempting to dip into that money for personal use. A new kitchen. A holiday. A deposit on a flat. You take it as a director's loan, planning to sort it out later.</p>
 
 <p>That "later" can cost you 33.75% of the loan amount. Upfront. In cash. Non-refundable in most practical senses.</p>

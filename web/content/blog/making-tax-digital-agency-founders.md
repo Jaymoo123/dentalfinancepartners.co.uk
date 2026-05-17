@@ -1,33 +1,40 @@
 ---
-title: "Making Tax Digital for Agency Founders: What Changes and When"
-slug: "making-tax-digital-agency-founders"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/making-tax-digital-agency-founders"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Making Tax Digital"
-metaTitle: "Making Tax Digital for Agency Founders: Key Dates & Rules"
-metaDescription: "MTD for ITSA starts April 2026 for agency founders earning over £50k. Here’s what changes, when it applies, and how to prepare now."
-altText: "Agency founder reviewing MTD-compatible accounting software on laptop in a Shoreditch office with quarterly digital updates visible on screen"
-image: "/blog/making-tax-digital-agency-founders.jpg"
+title: 'Making Tax Digital for Agency Founders: What Changes and When'
+slug: making-tax-digital-agency-founders
+canonical: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital/making-tax-digital-agency-founders
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Making Tax Digital
+metaTitle: 'Making Tax Digital for Agency Founders: Key Dates & Rules'
+metaDescription: MTD for ITSA starts April 2026 for agency founders earning over £50k. Here’s what changes, when it applies, and how to prepare now.
+altText: Agency founder reviewing MTD-compatible accounting software on laptop in a Shoreditch office with quarterly digital updates visible on screen
+image: /blog/making-tax-digital-agency-founders.jpg
 imageCredit:
-  photographer: "Leeloo The First"
-  photographerUrl: "https://www.pexels.com/@leeloothefirst"
-  sourceUrl: "https://www.pexels.com/photo/smartphone-and-documents-on-desk-8962519/"
-  source: "Pexels"
-h1: "Making Tax Digital for Agency Founders: What Changes and When"
-summary: "Making Tax Digital (MTD) for Income Tax Self Assessment is coming. Agency founders with income over £50k must use MTD-compatible software from April 2026. Here is what you need to know and when to act."
-schema: ""
+  photographer: Leeloo The First
+  photographerUrl: https://www.pexels.com/@leeloothefirst
+  sourceUrl: https://www.pexels.com/photo/smartphone-and-documents-on-desk-8962519/
+  source: Pexels
+h1: 'Making Tax Digital for Agency Founders: What Changes and When'
+summary: Making Tax Digital (MTD) for Income Tax Self Assessment is coming. Agency founders with income over £50k must use MTD-compatible software from April 2026. Here is what you need to know and when to act.
+schema: ''
 faqs:
-  - question: "When does Making Tax Digital for agency founders start?"
-    answer: "MTD for ITSA starts in April 2026 for agency founders with self-employment or property income over £50,000 per year. For those with income between £30,000 and £50,000, it starts in April 2027. Limited company directors are not yet in scope for their company tax, but sole traders and partners are."
-  - question: "What software do I need for Making Tax Digital as an agency founder?"
-    answer: "You need MTD-compatible accounting software like Xero, QuickBooks, FreeAgent, or Sage. These tools allow you to keep digital records and submit quarterly updates directly to HMRC. If you already use one of these for your agency bookkeeping, you are likely already set for the record-keeping part."
-  - question: "Do I still need an accountant under Making Tax Digital?"
-    answer: "Yes, and most agency founders will benefit from using one. Your accountant can handle the quarterly submissions on your behalf. You just need to keep your income and expense records up to date in the software. The role of the accountant shifts from annual filing to ongoing quarterly compliance."
-  - question: "What happens if I miss a quarterly update deadline under MTD?"
-    answer: "You receive a penalty point. After four points, you face a £200 financial penalty. Further missed submissions trigger higher penalties. The points reset after a period of consistent compliance. This system is already in place for MTD for VAT and HMRC is enforcing it."
+- question: When does Making Tax Digital for agency founders start?
+  answer: MTD for ITSA starts in April 2026 for agency founders with self-employment or property income over £50,000 per year. For those with income between £30,000 and £50,000, it starts in April 2027. Limited company directors are not yet in scope for their company tax, but sole traders and partners are.
+- question: What software do I need for Making Tax Digital as an agency founder?
+  answer: You need MTD-compatible accounting software like Xero, QuickBooks, FreeAgent, or Sage. These tools allow you to keep digital records and submit quarterly updates directly to HMRC. If you already use one of these for your agency bookkeeping, you are likely already set for the record-keeping part.
+- question: Do I still need an accountant under Making Tax Digital?
+  answer: Yes, and most agency founders will benefit from using one. Your accountant can handle the quarterly submissions on your behalf. You just need to keep your income and expense records up to date in the software. The role of the accountant shifts from annual filing to ongoing quarterly compliance.
+- question: What happens if I miss a quarterly update deadline under MTD?
+  answer: You receive a penalty point. After four points, you face a £200 financial penalty. Further missed submissions trigger higher penalties. The points reset after a period of consistent compliance. This system is already in place for MTD for VAT and HMRC is enforcing it.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- From April 2026, agency founders with self-employment income over £50,000 must file quarterly digital updates to HMRC using MTD-compatible software.
+- Those with income between £30,000 and £50,000 are mandated from April 2027; income under £30,000 is voluntary only.
+- Limited company directors are not yet in scope for MTD for ITSA, unless they have separate sole trader income above the threshold.
+- Quarterly updates are due within one month of each quarter end, replacing the single annual Self Assessment return with six submissions per year.
+- Digital record keeping is mandatory, requiring MTD-compatible software to record income and expenses instead of paper or annual spreadsheets.
 ---
-
 <h2>What Is Making Tax Digital and Why Does It Affect Agency Founders?</h2>
 
 <p>Making Tax Digital, or MTD, is HMRC's programme to move the UK tax system fully digital. It started with VAT in 2019. Now it is coming for income tax. If you run a marketing, digital, creative, or recruitment agency, and you file a Self Assessment tax return, MTD for Income Tax Self Assessment (MTD for ITSA) will change how you report your income and pay your tax.</p>

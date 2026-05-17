@@ -1,33 +1,40 @@
 ---
-title: "What Agency Founders Get Wrong About Accrual Accounting and Why It Hurts Profitability"
-slug: "accrual-accounting-mistakes-agency-founders"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/accrual-accounting-mistakes-agency-founders"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "Accrual Accounting Mistakes Agency Founders Make"
-metaDescription: "Retainer timing, project burn, and deferred revenue distort your P&L. Learn the specific accrual pitfalls that hurt agency profitability."
-altText: "Agency founder reviewing monthly management accounts on a tablet in a London office"
-image: "/blog/accrual-accounting-mistakes-agency-founders.jpg"
+title: What Agency Founders Get Wrong About Accrual Accounting and Why It Hurts Profitability
+slug: accrual-accounting-mistakes-agency-founders
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/accrual-accounting-mistakes-agency-founders
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: Accrual Accounting Mistakes Agency Founders Make
+metaDescription: Retainer timing, project burn, and deferred revenue distort your P&L. Learn the specific accrual pitfalls that hurt agency profitability.
+altText: Agency founder reviewing monthly management accounts on a tablet in a London office
+image: /blog/accrual-accounting-mistakes-agency-founders.jpg
 imageCredit:
-  photographer: "Abhishek  Navlakha"
-  photographerUrl: "https://www.pexels.com/@navlakha"
-  sourceUrl: "https://www.pexels.com/photo/bright-red-wrong-way-traffic-sign-in-miami-35113478/"
-  source: "Pexels"
-h1: "What Agency Founders Get Wrong About Accrual Accounting and Why It Hurts Profitability"
-summary: "Most agency founders look at their P&L and think they know how the business is doing. But if you are using accrual accounting — and you almost certainly should be — there are specific timing traps that can make a profitable agency look lossmaking, or worse, the other way around. This post covers the three most common accrual errors we see in agency clients and how to fix them."
-schema: ""
+  photographer: Abhishek  Navlakha
+  photographerUrl: https://www.pexels.com/@navlakha
+  sourceUrl: https://www.pexels.com/photo/bright-red-wrong-way-traffic-sign-in-miami-35113478/
+  source: Pexels
+h1: What Agency Founders Get Wrong About Accrual Accounting and Why It Hurts Profitability
+summary: Most agency founders look at their P&L and think they know how the business is doing. But if you are using accrual accounting — and you almost certainly should be — there are specific timing traps that can make a profitable agency look lossmaking, or worse, the other way around. This post covers the three most common accrual errors we see in agency clients and how to fix them.
+schema: ''
 faqs:
-  - question: "What is the difference between accrual accounting and cash accounting for an agency?"
-    answer: "Accrual accounting records revenue when you earn it and expenses when you incur them, regardless of when money moves. Cash accounting records revenue when it hits your bank account and expenses when you pay them. For limited companies, accrual accounting is standard and required for filing statutory accounts. For agencies, accrual accounting gives you a more accurate picture of profitability, but only if you handle retainers, milestones, and deferred revenue correctly."
-  - question: "How do I handle deferred revenue for retainer clients in my accounts?"
-    answer: "When you invoice a retainer client, the full amount is not earned until the service period ends. Record the invoice as deferred revenue (a liability) on your balance sheet. Then release it to your P&L on a straight-line basis over the service period. For example, a £6,000 monthly retainer covering 30 days means you recognise £200 per day. Most accounting software like Xero and QuickBooks can automate this with recurring journals."
-  - question: "Can accrual accounting make my agency look less profitable than it really is?"
-    answer: "Yes, but only temporarily. If you have completed work that you have not yet invoiced, accrual accounting requires you to recognise that revenue as accrued income. This can make your P&L look less profitable in the short term if you are not posting those accruals. The opposite is also true — recognising revenue before it is earned inflates profit. The key is consistency. Proper accrual accounting smooths out these timing differences and gives you a reliable picture over time."
-  - question: "Do I need an accountant to set up accrual accounting for my agency?"
-    answer: "You can set up basic accruals yourself using the built-in features of Xero, QuickBooks, or FreeAgent. But most agency founders find it easier to have an accountant set up the chart of accounts, deferred revenue templates, and monthly accrual journals. If your agency has more than five staff or turnover above £250k, the complexity of project tracking, scope creep, and milestone billing usually justifies professional help. An ICAEW qualified accountant who works with agencies can get this right in a few hours."
+- question: What is the difference between accrual accounting and cash accounting for an agency?
+  answer: Accrual accounting records revenue when you earn it and expenses when you incur them, regardless of when money moves. Cash accounting records revenue when it hits your bank account and expenses when you pay them. For limited companies, accrual accounting is standard and required for filing statutory accounts. For agencies, accrual accounting gives you a more accurate picture of profitability, but only if you handle retainers, milestones, and deferred revenue correctly.
+- question: How do I handle deferred revenue for retainer clients in my accounts?
+  answer: When you invoice a retainer client, the full amount is not earned until the service period ends. Record the invoice as deferred revenue (a liability) on your balance sheet. Then release it to your P&L on a straight-line basis over the service period. For example, a £6,000 monthly retainer covering 30 days means you recognise £200 per day. Most accounting software like Xero and QuickBooks can automate this with recurring journals.
+- question: Can accrual accounting make my agency look less profitable than it really is?
+  answer: Yes, but only temporarily. If you have completed work that you have not yet invoiced, accrual accounting requires you to recognise that revenue as accrued income. This can make your P&L look less profitable in the short term if you are not posting those accruals. The opposite is also true — recognising revenue before it is earned inflates profit. The key is consistency. Proper accrual accounting smooths out these timing differences and gives you a reliable picture over time.
+- question: Do I need an accountant to set up accrual accounting for my agency?
+  answer: You can set up basic accruals yourself using the built-in features of Xero, QuickBooks, or FreeAgent. But most agency founders find it easier to have an accountant set up the chart of accounts, deferred revenue templates, and monthly accrual journals. If your agency has more than five staff or turnover above £250k, the complexity of project tracking, scope creep, and milestone billing usually justifies professional help. An ICAEW qualified accountant who works with agencies can get this right in a few hours.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Accrual accounting records income when earned, not when received, which can make a profitable agency appear lossmaking if timing is mismanaged.
+- Recognise retainer revenue on a straight-line basis over the service period, using a deferred revenue account to avoid inflating gross profit early in the month.
+- Scope creep on fixed-price projects must be tracked and billed separately, or it will erode gross margin without appearing on the P&L.
+- For a 12-person agency billing £800k per year, the timing gap between earned and received revenue can distort hiring and cost-cutting decisions.
+- Use accounting software like Xero or QuickBooks to handle deferred revenue natively, releasing it monthly to match revenue with work delivered.
 ---
-
 <h2>The Accrual Trap That Catches Most Agency Founders</h2>
 
 <p>You look at your management accounts. They show a profit of £34,200 for the quarter. You pay yourself a dividend, reinvest in the team, and plan your next hire.</p>

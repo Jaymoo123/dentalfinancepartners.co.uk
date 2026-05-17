@@ -1,33 +1,40 @@
 ---
-title: "How to Use a 13-Week Cash Flow Forecast to Avoid Agency Insolvency"
-slug: "13-week-cash-flow-forecast-agency-insolvency"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/13-week-cash-flow-forecast-agency-insolvency"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Agency Finance Essentials"
-metaTitle: "13-Week Cash Flow Forecast: Stop Agency Insolvency"
-metaDescription: "A 13-week cash flow forecast helps agency owners spot cash gaps before they become fatal. Here's how to build one and use it to prevent insolvency."
-altText: "Agency founder reviewing a 13-week cash flow forecast on a laptop in a Shoreditch office"
-image: "/blog/13-week-cash-flow-forecast-agency-insolvency.jpg"
+title: How to Use a 13-Week Cash Flow Forecast to Avoid Agency Insolvency
+slug: 13-week-cash-flow-forecast-agency-insolvency
+canonical: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials/13-week-cash-flow-forecast-agency-insolvency
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Agency Finance Essentials
+metaTitle: '13-Week Cash Flow Forecast: Stop Agency Insolvency'
+metaDescription: A 13-week cash flow forecast helps agency owners spot cash gaps before they become fatal. Here's how to build one and use it to prevent insolvency.
+altText: Agency founder reviewing a 13-week cash flow forecast on a laptop in a Shoreditch office
+image: /blog/13-week-cash-flow-forecast-agency-insolvency.jpg
 imageCredit:
-  photographer: "www.kaboompics.com"
-  photographerUrl: "https://www.pexels.com/@karola-g"
-  sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-a-person-holding-paper-money-on-white-surface-7680623/"
-  source: "Pexels"
-h1: "How to Use a 13-Week Cash Flow Forecast to Avoid Agency Insolvency"
-summary: "Most agencies fail because they run out of cash, not because they aren't profitable. A 13-week cash flow forecast gives you early warning on every cash gap before it hits. Here's how to build one, week by week, and use it to keep your agency solvent."
-schema: ""
+  photographer: www.kaboompics.com
+  photographerUrl: https://www.pexels.com/@karola-g
+  sourceUrl: https://www.pexels.com/photo/close-up-shot-of-a-person-holding-paper-money-on-white-surface-7680623/
+  source: Pexels
+h1: How to Use a 13-Week Cash Flow Forecast to Avoid Agency Insolvency
+summary: Most agencies fail because they run out of cash, not because they aren't profitable. A 13-week cash flow forecast gives you early warning on every cash gap before it hits. Here's how to build one, week by week, and use it to keep your agency solvent.
+schema: ''
 faqs:
-  - question: "What is a 13-week cash flow forecast for an agency?"
-    answer: "A 13-week cash flow forecast is a rolling projection of all cash inflows and outflows over the next 91 days. It's updated weekly and shows your projected bank balance for each week. It helps agency founders spot cash gaps before they become critical."
-  - question: "How often should I update my 13-week cash flow forecast?"
-    answer: "Every week. On Monday morning, update actual numbers from the previous week, then roll the forecast forward by one week. This keeps your view current and gives you early warning on any emerging cash gaps."
-  - question: "What's the difference between a 13-week forecast and a 12-month budget forecast?"
-    answer: "A 12-month budget forecast is for strategic planning. A 13-week forecast is for operational crisis prevention. The 13-week view covers one VAT quarter and typical client payment cycles, giving you enough time to act on problems. It's more detailed and more accurate over the short term."
-  - question: "Can I build a 13-week cash flow forecast in Xero or QuickBooks?"
-    answer: "Yes. Both Xero and QuickBooks have cash flow forecasting tools. But when you're starting, I recommend building it manually in Excel or Google Sheets. This forces you to understand every input and assumption. Once you're comfortable, you can automate it in your accounting software."
+- question: What is a 13-week cash flow forecast for an agency?
+  answer: A 13-week cash flow forecast is a rolling projection of all cash inflows and outflows over the next 91 days. It's updated weekly and shows your projected bank balance for each week. It helps agency founders spot cash gaps before they become critical.
+- question: How often should I update my 13-week cash flow forecast?
+  answer: Every week. On Monday morning, update actual numbers from the previous week, then roll the forecast forward by one week. This keeps your view current and gives you early warning on any emerging cash gaps.
+- question: What's the difference between a 13-week forecast and a 12-month budget forecast?
+  answer: A 12-month budget forecast is for strategic planning. A 13-week forecast is for operational crisis prevention. The 13-week view covers one VAT quarter and typical client payment cycles, giving you enough time to act on problems. It's more detailed and more accurate over the short term.
+- question: Can I build a 13-week cash flow forecast in Xero or QuickBooks?
+  answer: Yes. Both Xero and QuickBooks have cash flow forecasting tools. But when you're starting, I recommend building it manually in Excel or Google Sheets. This forces you to understand every input and assumption. Once you're comfortable, you can automate it in your accounting software.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- A 13-week cash flow forecast updated weekly gives you early warning of cash gaps before they cause insolvency.
+- The 13-week window covers one full VAT quarter and most client payment cycles, giving you time to act on problems.
+- Start your forecast with the actual cleared bank balance, not the balance in your accounting software.
+- Only include cash inflows you are confident will arrive, based on actual payment patterns, not invoice terms.
+- List every cash outflow each week, including staff, contractors, VAT, and corporation tax, to spot mismatches.
 ---
-
 <h2>The Real Reason Agencies Go Under</h2>
 <p>You don't fail because you're not busy. You fail because you run out of cash.</p>
 <p>It happens to profitable agencies. A 12-person digital agency billing £800k per year can be showing a healthy net profit on the P&L while their bank balance drops to zero. The gap between invoicing and getting paid, the retainer that renews in 60 days, the contractor invoice that lands tomorrow, the VAT bill that's due in three weeks. Cash flow kills agencies that look profitable on paper.</p>

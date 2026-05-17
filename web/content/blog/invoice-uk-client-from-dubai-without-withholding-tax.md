@@ -1,33 +1,40 @@
 ---
-title: "How to Invoice a UK Client from Your Dubai Agency Without Them Withholding Tax"
-slug: "invoice-uk-client-from-dubai-without-withholding-tax"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/international-agencies/invoice-uk-client-from-dubai-without-withholding-tax"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "International Agencies"
-metaTitle: "Invoice UK client from Dubai without withholding tax"
-metaDescription: "UK clients must withhold 20% tax on payments to non-residents unless you claim treaty relief. Here is how to provide the right declaration to avoid"
-altText: "Dubai agency founder reviewing invoice terms with UK client contract documents on desk"
-image: "/blog/invoice-uk-client-from-dubai-without-withholding-tax.jpg"
+title: How to Invoice a UK Client from Your Dubai Agency Without Them Withholding Tax
+slug: invoice-uk-client-from-dubai-without-withholding-tax
+canonical: https://www.agencyfounderfinance.co.uk/blog/international-agencies/invoice-uk-client-from-dubai-without-withholding-tax
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: International Agencies
+metaTitle: Invoice UK client from Dubai without withholding tax
+metaDescription: UK clients must withhold 20% tax on payments to non-residents unless you claim treaty relief. Here is how to provide the right declaration to avoid
+altText: Dubai agency founder reviewing invoice terms with UK client contract documents on desk
+image: /blog/invoice-uk-client-from-dubai-without-withholding-tax.jpg
 imageCredit:
-  photographer: "Kindel Media"
-  photographerUrl: "https://www.pexels.com/@kindelmedia"
-  sourceUrl: "https://www.pexels.com/photo/close-up-shot-of-a-person-holding-a-clipboard-7651555/"
-  source: "Pexels"
-h1: "How to Invoice a UK Client from Your Dubai Agency Without Them Withholding 20% Tax"
-summary: "UK clients must withhold 20% tax from payments to non-resident agencies unless you claim exemption under the UK-UAE double tax treaty. This article explains how to submit the correct declaration so your Dubai agency receives the full invoice amount without deductions."
-schema: ""
+  photographer: Kindel Media
+  photographerUrl: https://www.pexels.com/@kindelmedia
+  sourceUrl: https://www.pexels.com/photo/close-up-shot-of-a-person-holding-a-clipboard-7651555/
+  source: Pexels
+h1: How to Invoice a UK Client from Your Dubai Agency Without Them Withholding 20% Tax
+summary: UK clients must withhold 20% tax from payments to non-resident agencies unless you claim exemption under the UK-UAE double tax treaty. This article explains how to submit the correct declaration so your Dubai agency receives the full invoice amount without deductions.
+schema: ''
 faqs:
-  - question: "What is the DT Individual form and where do I get it?"
-    answer: "The DT Individual form is an HMRC document used by non-UK residents to claim relief under a double tax treaty. You can download it from the HMRC website. Fill in your company details, your UAE tax residence, and the treaty article you are claiming (Article 7 for business profits). Give the completed form to your UK client to keep on file."
-  - question: "Do I need a UAE Certificate of Residence to avoid UK withholding?"
-    answer: "Not always. The DT Individual form is often sufficient. But some UK clients will ask for a Certificate of Residence from the UAE Federal Tax Authority as additional evidence. You can apply for one through the EmaraTax portal. It is free and covers a specific tax year. If your client asks for it, provide it. If they do not ask, the DT Individual form usually works."
-  - question: "What happens if my UK client still withholds tax after I give them the form?"
-    answer: "If your client withholds despite receiving your treaty declaration, you have two options. Option 1: accept the withholding and file a UK tax return to reclaim the overpaid tax. This requires a UK UTR and likely a UK accountant. Option 2: find a UK client who is comfortable with the treaty exemption process. Most mid-sized agencies have dealt with overseas suppliers before and will accept the declaration."
-  - question: "Does working from the UK for a few days create a permanent establishment?"
-    answer: "Short visits, such as a week-long client meeting, are generally fine. But if you work regularly from the UK for extended periods, you risk creating a permanent establishment. HMRC looks at the nature and duration of your activity. Three months of regular work from a London co-working space would likely be a problem. Keep UK working days short and document that your substantive business activity remains in Dubai."
+- question: What is the DT Individual form and where do I get it?
+  answer: The DT Individual form is an HMRC document used by non-UK residents to claim relief under a double tax treaty. You can download it from the HMRC website. Fill in your company details, your UAE tax residence, and the treaty article you are claiming (Article 7 for business profits). Give the completed form to your UK client to keep on file.
+- question: Do I need a UAE Certificate of Residence to avoid UK withholding?
+  answer: Not always. The DT Individual form is often sufficient. But some UK clients will ask for a Certificate of Residence from the UAE Federal Tax Authority as additional evidence. You can apply for one through the EmaraTax portal. It is free and covers a specific tax year. If your client asks for it, provide it. If they do not ask, the DT Individual form usually works.
+- question: What happens if my UK client still withholds tax after I give them the form?
+  answer: 'If your client withholds despite receiving your treaty declaration, you have two options. Option 1: accept the withholding and file a UK tax return to reclaim the overpaid tax. This requires a UK UTR and likely a UK accountant. Option 2: find a UK client who is comfortable with the treaty exemption process. Most mid-sized agencies have dealt with overseas suppliers before and will accept the declaration.'
+- question: Does working from the UK for a few days create a permanent establishment?
+  answer: Short visits, such as a week-long client meeting, are generally fine. But if you work regularly from the UK for extended periods, you risk creating a permanent establishment. HMRC looks at the nature and duration of your activity. Three months of regular work from a London co-working space would likely be a problem. Keep UK working days short and document that your substantive business activity remains in Dubai.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- UK clients must withhold 20% tax from payments to non-resident agencies unless you provide a valid treaty exemption declaration.
+- Under the UK-UAE double tax treaty, business profits of a UAE resident company are taxable only in the UAE if no UK permanent establishment exists.
+- To avoid withholding, give your UK client a completed DT Individual form confirming your UAE tax residence and reliance on Article 7 of the treaty.
+- You do not need to submit the DT Individual form to HMRC; your UK client keeps it on file as evidence for paying you gross.
+- If your Dubai agency has no UK office, employees, or bank account, you almost certainly have no permanent establishment and qualify for exemption.
 ---
-
 <h2>Your UK Client Just Told You They Need to Withhold 20%</h2>
 <p>You have won a retainer contract with a London-based marketing agency. You operate your agency from Dubai. You send your first invoice for £8,400. Your client emails back saying their finance team needs to withhold 20% for UK tax before paying you. You would receive £6,720 instead of £8,400.</p>
 <p>This is standard practice under UK tax law. When a UK company pays a non-resident for services performed wholly or partly in the UK, they are required to deduct 20% income tax and pay it to HMRC. But for Dubai-based agencies, there is a straightforward way to avoid this deduction.</p>

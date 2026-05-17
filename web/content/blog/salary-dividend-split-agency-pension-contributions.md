@@ -1,25 +1,32 @@
 ---
-title: "How Should an Agency Founder Structure Salary, Dividends and Pension Contributions for Maximum Tax Efficiency?"
-slug: "salary-dividend-split-agency-pension-contributions"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/salary-dividend-split-agency-pension-contributions"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Salary and Dividends"
-metaTitle: "Salary Dividend Split Agency: Pension Strategy for Founders"
-metaDescription: "Optimise your salary dividend split agency founders use, integrated with pension contributions. Real numbers for a £120k profit agency. ICAEW guidance."
-altText: "Agency founder reviewing salary and dividend split with pension contribution calculations on a laptop in a London office"
-image: "/blog/salary-dividend-split-agency-pension-contributions.jpg"
+title: How Should an Agency Founder Structure Salary, Dividends and Pension Contributions for Maximum Tax Efficiency?
+slug: salary-dividend-split-agency-pension-contributions
+canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/salary-dividend-split-agency-pension-contributions
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Salary and Dividends
+metaTitle: 'Salary Dividend Split Agency: Pension Strategy for Founders'
+metaDescription: Optimise your salary dividend split agency founders use, integrated with pension contributions. Real numbers for a £120k profit agency. ICAEW guidance.
+altText: Agency founder reviewing salary and dividend split with pension contribution calculations on a laptop in a London office
+image: /blog/salary-dividend-split-agency-pension-contributions.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/white-and-black-paper-on-typewriter-5198201/"
-  source: "Pexels"
-h1: "The Salary and Dividend Split for an Agency Founder with a Pension Contribution Goal"
-summary: "Most agency founders take a low salary and dividends. But if you also want to build a pension, the numbers change. Here is how to structure all three together."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/white-and-black-paper-on-typewriter-5198201/
+  source: Pexels
+h1: The Salary and Dividend Split for an Agency Founder with a Pension Contribution Goal
+summary: Most agency founders take a low salary and dividends. But if you also want to build a pension, the numbers change. Here is how to structure all three together.
+schema: ''
 faqs: []
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Pension contributions from your company are more tax-efficient than dividends, saving 19% to 25% corporation tax on the amount contributed.
+- For 2025/26, the optimal salary is £12,570 (personal allowance threshold) to avoid employer NI above £9,100 and income tax.
+- Dividends attract corporation tax at 19% or 25% plus dividend tax of 8.75% to 33.75%, making them less efficient than pension contributions.
+- Combining salary, dividends, and pension requires balancing all three levers to maximise your total after-tax position.
+- A £40,000 pension contribution from your company saves £7,600 to £10,000 in corporation tax, compared to up to £16,000 tax on dividends.
 ---
-
 <p>If you own a limited company agency, you already know the standard advice: pay yourself a salary up to the National Insurance threshold and take the rest as dividends. That structure saves you roughly £4,000 to £6,000 per year in combined tax and NI compared to taking it all as salary. But what happens when you add a pension contribution into the mix?</p>
 
 <p>The answer is not as simple as "salary plus dividends plus pension equals more tax saved." The pension interacts with both the salary and the dividend decisions in ways that most agency founders miss. If you get the <strong>salary dividend split agency</strong> founders typically use, but ignore the pension angle, you are leaving money on the table. Or worse, paying tax you could have deferred.</p>

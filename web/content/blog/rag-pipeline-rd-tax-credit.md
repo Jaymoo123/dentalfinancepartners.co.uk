@@ -1,33 +1,40 @@
 ---
-title: "Building RAG Pipelines: Is It R&D-Qualifying Work?"
-slug: "rag-pipeline-rd-tax-credit"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rag-pipeline-rd-tax-credit"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "RAG Pipeline R&D Tax Credit: What Agency Founders Need"
-metaDescription: "Can building RAG pipelines qualify for R&D tax credits? Yes, if you're resolving technical uncertainty. Here's what HMRC looks for and how to claim."
-altText: "Software developer working on AI RAG pipeline architecture at a desk in a modern UK agency office"
-image: "/blog/rag-pipeline-rd-tax-credit.jpg"
+title: 'Building RAG Pipelines: Is It R&D-Qualifying Work?'
+slug: rag-pipeline-rd-tax-credit
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/rag-pipeline-rd-tax-credit
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'RAG Pipeline R&D Tax Credit: What Agency Founders Need'
+metaDescription: Can building RAG pipelines qualify for R&D tax credits? Yes, if you're resolving technical uncertainty. Here's what HMRC looks for and how to claim.
+altText: Software developer working on AI RAG pipeline architecture at a desk in a modern UK agency office
+image: /blog/rag-pipeline-rd-tax-credit.jpg
 imageCredit:
-  photographer: "Sergei Starostin"
-  photographerUrl: "https://www.pexels.com/@sejio402"
-  sourceUrl: "https://www.pexels.com/photo/pipe-priming-26953859/"
-  source: "Pexels"
-h1: "Building RAG Pipelines: Is It R&D-Qualifying Work?"
-summary: "If your agency is building custom RAG (Retrieval-Augmented Generation) pipelines for clients or internal tools, you might be leaving R&D tax credits on the table. Here's what qualifies, what doesn't, and how to structure your claim."
-schema: ""
+  photographer: Sergei Starostin
+  photographerUrl: https://www.pexels.com/@sejio402
+  sourceUrl: https://www.pexels.com/photo/pipe-priming-26953859/
+  source: Pexels
+h1: 'Building RAG Pipelines: Is It R&D-Qualifying Work?'
+summary: If your agency is building custom RAG (Retrieval-Augmented Generation) pipelines for clients or internal tools, you might be leaving R&D tax credits on the table. Here's what qualifies, what doesn't, and how to structure your claim.
+schema: ''
 faqs:
-  - question: "Can a RAG pipeline built for a client qualify for R&D tax credits?"
-    answer: "Yes, if the work resolves technical uncertainty that couldn't be solved by a competent professional using standard methods. The client's industry doesn't matter. What matters is whether the technical challenge was genuinely uncertain at the outset. Document the uncertainty, the experiments, and the results."
-  - question: "What costs can I claim for RAG pipeline R&D work?"
-    answer: "Staff time spent directly on resolving technical uncertainty qualifies. So do subcontractor costs (at 65% under the SME scheme), software licenses used for R&D (OpenAI, Pinecone, cloud compute), and consumables. You cannot claim overheads, rent, or marketing costs. Apportion costs if the same resources are used for non-R&D work."
-  - question: "How do I separate qualifying RAG work from routine implementation?"
-    answer: "Track time against specific technical uncertainties, not against the whole project. If a developer spends 2 weeks building a custom chunking strategy (qualifying) and 1 week integrating it into a CMS (not qualifying), record both separately. Use project codes in your accounting software. HMRC will ask for this breakdown."
-  - question: "What happens if HMRC challenges my RAG pipeline R&D claim?"
-    answer: "HMRC may open an enquiry asking for more detail. They'll want to see your technical narrative, time records, and evidence of the uncertainty you faced. If your documentation is solid, most enquiries close without adjustment. If you're unsure about your documentation, speak to an accountant before filing."
+- question: Can a RAG pipeline built for a client qualify for R&D tax credits?
+  answer: Yes, if the work resolves technical uncertainty that couldn't be solved by a competent professional using standard methods. The client's industry doesn't matter. What matters is whether the technical challenge was genuinely uncertain at the outset. Document the uncertainty, the experiments, and the results.
+- question: What costs can I claim for RAG pipeline R&D work?
+  answer: Staff time spent directly on resolving technical uncertainty qualifies. So do subcontractor costs (at 65% under the SME scheme), software licenses used for R&D (OpenAI, Pinecone, cloud compute), and consumables. You cannot claim overheads, rent, or marketing costs. Apportion costs if the same resources are used for non-R&D work.
+- question: How do I separate qualifying RAG work from routine implementation?
+  answer: Track time against specific technical uncertainties, not against the whole project. If a developer spends 2 weeks building a custom chunking strategy (qualifying) and 1 week integrating it into a CMS (not qualifying), record both separately. Use project codes in your accounting software. HMRC will ask for this breakdown.
+- question: What happens if HMRC challenges my RAG pipeline R&D claim?
+  answer: HMRC may open an enquiry asking for more detail. They'll want to see your technical narrative, time records, and evidence of the uncertainty you faced. If your documentation is solid, most enquiries close without adjustment. If you're unsure about your documentation, speak to an accountant before filing.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Custom RAG pipeline development can qualify for R&D tax credits if it resolves scientific or technological uncertainty.
+- HMRC requires evidence of technical uncertainty, a systematic approach to resolution, and qualifying costs for R&D claims.
+- Developing novel chunking strategies for domain-specific documents or low-resource domains typically qualifies as R&D work.
+- Optimising RAG pipelines for latency or cost constraints with no off-the-shelf solution is likely qualifying R&D activity.
+- Simply using existing RAG frameworks out of the box or calling an API without resolving uncertainty does not qualify for R&D relief.
 ---
-
 <p>If you're building RAG (Retrieval-Augmented Generation) pipelines for clients or your own agency, you've probably wondered whether the work qualifies for R&D tax credits. The short answer is: it can. But not all RAG work qualifies, and HMRC is paying closer attention to AI-related claims than ever before.</p>
 
 <p>This article explains exactly what HMRC looks for, what doesn't qualify, and how to structure a defensible claim for a <strong>rag pipeline r&d tax credit</strong>. We'll use real examples from agency work, not theoretical scenarios.</p>

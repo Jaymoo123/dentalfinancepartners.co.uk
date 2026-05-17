@@ -1,33 +1,40 @@
 ---
-title: "Corporation Tax on Retainer Prepayments: What Agency Founders Must Know"
-slug: "corporation-tax-retainer-prepayments-agency-founders"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/corporation-tax-retainer-prepayments-agency-founders"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "Corporation tax agency: retainer prepayments & deferred"
-metaDescription: "How to correctly time retainer income and prepayments for corporation tax. Avoid overpaying tax on cash received before work is done."
-altText: "Agency founder reviewing retainer contract and financial statements with accountant in UK office"
-image: "/blog/corporation-tax-retainer-prepayments-agency-founders.jpg"
+title: 'Corporation Tax on Retainer Prepayments: What Agency Founders Must Know'
+slug: corporation-tax-retainer-prepayments-agency-founders
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/corporation-tax-retainer-prepayments-agency-founders
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'Corporation tax agency: retainer prepayments & deferred'
+metaDescription: How to correctly time retainer income and prepayments for corporation tax. Avoid overpaying tax on cash received before work is done.
+altText: Agency founder reviewing retainer contract and financial statements with accountant in UK office
+image: /blog/corporation-tax-retainer-prepayments-agency-founders.jpg
 imageCredit:
-  photographer: "RDNE Stock project"
-  photographerUrl: "https://www.pexels.com/@rdne"
-  sourceUrl: "https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-surface-7821565/"
-  source: "Pexels"
-h1: "Corporation Tax on Retainer Prepayments: What Agency Founders Must Know"
-summary: "If your agency bills retainers in advance, you've probably paid too much corporation tax. Here's how accruals accounting fixes the timing mismatch between cash received and work delivered."
-schema: ""
+  photographer: RDNE Stock project
+  photographerUrl: https://www.pexels.com/@rdne
+  sourceUrl: https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-surface-7821565/
+  source: Pexels
+h1: 'Corporation Tax on Retainer Prepayments: What Agency Founders Must Know'
+summary: If your agency bills retainers in advance, you've probably paid too much corporation tax. Here's how accruals accounting fixes the timing mismatch between cash received and work delivered.
+schema: ''
 faqs:
-  - question: "Can I use cash accounting for corporation tax if my agency turnover is under £150,000?"
-    answer: "Technically yes, but it's rarely advisable for retainer-based agencies. Cash accounting means you pay tax on income when received, not when earned. This creates the exact timing problem described above. Even at low turnover, accruals accounting gives a truer picture of your profitability. Most accountants will recommend accruals for any agency with prepaid retainers, regardless of turnover."
-  - question: "What happens to deferred revenue if I sell my agency?"
-    answer: "Deferred revenue is a liability on your balance sheet. When you sell the agency, the buyer typically requires you to leave enough cash in the business to cover the work owed to clients. Alternatively, the purchase price is adjusted downwards by the deferred revenue balance. This is a key negotiation point in agency sales. Properly tracked deferred revenue makes the due diligence process smoother."
-  - question: "Does deferred revenue affect my dividend calculations?"
-    answer: "Yes, indirectly. Dividends are paid from distributable profits (retained earnings). If your accounts correctly show deferred revenue as a liability, your retained earnings are lower than if you'd recognised all income on receipt. This means your available profit for dividends is also lower. That's correct — you shouldn't pay dividends from money you haven't earned yet."
-  - question: "How do I handle deferred revenue if my client pays annually but my year-end is mid-contract?"
-    answer: "Calculate the number of months from your year-end to the end of the retainer period. Divide the annual fee by 12, then multiply by the remaining months. That's your deferred revenue balance. For example, a £24,000 annual retainer paid 1 October with a 31 March year-end: £24,000 ÷ 12 = £2,000 per month. Six months remain (April to September). Deferred revenue = £12,000. Release the other £12,000 as income for the six months already delivered."
+- question: Can I use cash accounting for corporation tax if my agency turnover is under £150,000?
+  answer: Technically yes, but it's rarely advisable for retainer-based agencies. Cash accounting means you pay tax on income when received, not when earned. This creates the exact timing problem described above. Even at low turnover, accruals accounting gives a truer picture of your profitability. Most accountants will recommend accruals for any agency with prepaid retainers, regardless of turnover.
+- question: What happens to deferred revenue if I sell my agency?
+  answer: Deferred revenue is a liability on your balance sheet. When you sell the agency, the buyer typically requires you to leave enough cash in the business to cover the work owed to clients. Alternatively, the purchase price is adjusted downwards by the deferred revenue balance. This is a key negotiation point in agency sales. Properly tracked deferred revenue makes the due diligence process smoother.
+- question: Does deferred revenue affect my dividend calculations?
+  answer: Yes, indirectly. Dividends are paid from distributable profits (retained earnings). If your accounts correctly show deferred revenue as a liability, your retained earnings are lower than if you'd recognised all income on receipt. This means your available profit for dividends is also lower. That's correct — you shouldn't pay dividends from money you haven't earned yet.
+- question: How do I handle deferred revenue if my client pays annually but my year-end is mid-contract?
+  answer: 'Calculate the number of months from your year-end to the end of the retainer period. Divide the annual fee by 12, then multiply by the remaining months. That''s your deferred revenue balance. For example, a £24,000 annual retainer paid 1 October with a 31 March year-end: £24,000 ÷ 12 = £2,000 per month. Six months remain (April to September). Deferred revenue = £12,000. Release the other £12,000 as income for the six months already delivered.'
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- Deferred revenue from retainer prepayments is a balance sheet liability, not taxable income until the work is delivered.
+- Accruals accounting is mandatory for corporation tax unless turnover is under £150,000, so recognise income when earned, not when received.
+- A 12-person agency with £800k revenue and 60% retainers could defer £80k–£120k of income, saving £15k–£23k in corporation tax.
+- Prepaid expenses like annual software subscriptions must be spread over the period they cover, not deducted in full in the year of payment.
+- Treating bank deposits as income overstates profits; a growing retainer book can lead to significant overpayment of corporation tax.
 ---
-
 <h2>The Cash Trap Every Agency Founder Falls Into</h2>
 
 <p>You sign a new retainer client in November. They pay £6,000 upfront for December, January, and February. The money lands in your bank account before Christmas. Your accountant asks for your year-end figures. You include that £6,000 as income. You pay corporation tax on it.</p>

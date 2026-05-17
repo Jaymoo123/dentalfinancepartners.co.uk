@@ -1,33 +1,40 @@
 ---
-title: "How to Reclaim VAT on Client Entertainment Costs for Your Agency Without HMRC Challenges"
-slug: "vat-client-entertainment-costs-agency-reclaim"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/vat-client-entertainment-costs-agency-reclaim"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Tax and Compliance"
-metaTitle: "VAT on client entertainment costs: reclaim rules"
-metaDescription: "HMRC blocks VAT recovery on client entertainment. Here’s how UK agencies handle lunch, tickets, and events without triggering a challenge."
-altText: "Agency founder reviewing client entertainment receipts with an ICAEW accountant in a London office"
-image: "/blog/vat-client-entertainment-costs-agency-reclaim.jpg"
+title: How to Reclaim VAT on Client Entertainment Costs for Your Agency Without HMRC Challenges
+slug: vat-client-entertainment-costs-agency-reclaim
+canonical: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance/vat-client-entertainment-costs-agency-reclaim
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Tax and Compliance
+metaTitle: 'VAT on client entertainment costs: reclaim rules'
+metaDescription: HMRC blocks VAT recovery on client entertainment. Here’s how UK agencies handle lunch, tickets, and events without triggering a challenge.
+altText: Agency founder reviewing client entertainment receipts with an ICAEW accountant in a London office
+image: /blog/vat-client-entertainment-costs-agency-reclaim.jpg
 imageCredit:
-  photographer: "Kindel Media"
-  photographerUrl: "https://www.pexels.com/@kindelmedia"
-  sourceUrl: "https://www.pexels.com/photo/persons-pointing-at-the-numbers-on-the-invoice-7688191/"
-  source: "Pexels"
-h1: "How to Reclaim VAT on Client Entertainment Costs for Your Agency Without HMRC Challenges"
-summary: "HMRC strictly blocks VAT recovery on client entertainment costs. This guide explains the rules, the grey areas, and how to structure your spending so you don’t get caught out at VAT inspection."
-schema: ""
+  photographer: Kindel Media
+  photographerUrl: https://www.pexels.com/@kindelmedia
+  sourceUrl: https://www.pexels.com/photo/persons-pointing-at-the-numbers-on-the-invoice-7688191/
+  source: Pexels
+h1: How to Reclaim VAT on Client Entertainment Costs for Your Agency Without HMRC Challenges
+summary: HMRC strictly blocks VAT recovery on client entertainment costs. This guide explains the rules, the grey areas, and how to structure your spending so you don’t get caught out at VAT inspection.
+schema: ''
 faqs:
-  - question: "Can I reclaim VAT on a client lunch if we discussed work?"
-    answer: "It depends on the primary purpose. If the lunch was a working meeting with a clear business agenda and work was genuinely discussed, HMRC may allow VAT recovery. But if the lunch was primarily a social gesture with incidental work chat, the VAT is blocked. Keep meeting notes and receipts to evidence the business purpose."
-  - question: "What is the VAT treatment of staff Christmas parties that include clients?"
-    answer: "If a client attends a staff event, the entire event becomes mixed entertainment. HMRC blocks VAT recovery on the whole cost, not just the client’s portion. To reclaim VAT, hold separate staff-only events and client-only events. Do not mix them."
-  - question: "Can I reclaim VAT on client gifts like branded merchandise or wine?"
-    answer: "Yes for business gifts up to £50 per person per year, provided the gift is not food, drink, or tobacco. Branded notebooks, pens, or USB sticks under £50 are fine. Wine, whisky, or hampers are always treated as entertainment regardless of value, so the VAT is blocked."
-  - question: "What happens if HMRC finds I reclaimed VAT on client entertainment by mistake?"
-    answer: "HMRC will issue an assessment for the VAT you should not have reclaimed, plus interest and potentially a penalty. Penalties range from 0-30% for careless errors to 20-100% for deliberate errors. If you discover the mistake yourself, correct it voluntarily via a VAT error correction (form VAT652) to reduce penalties."
+- question: Can I reclaim VAT on a client lunch if we discussed work?
+  answer: It depends on the primary purpose. If the lunch was a working meeting with a clear business agenda and work was genuinely discussed, HMRC may allow VAT recovery. But if the lunch was primarily a social gesture with incidental work chat, the VAT is blocked. Keep meeting notes and receipts to evidence the business purpose.
+- question: What is the VAT treatment of staff Christmas parties that include clients?
+  answer: If a client attends a staff event, the entire event becomes mixed entertainment. HMRC blocks VAT recovery on the whole cost, not just the client’s portion. To reclaim VAT, hold separate staff-only events and client-only events. Do not mix them.
+- question: Can I reclaim VAT on client gifts like branded merchandise or wine?
+  answer: Yes for business gifts up to £50 per person per year, provided the gift is not food, drink, or tobacco. Branded notebooks, pens, or USB sticks under £50 are fine. Wine, whisky, or hampers are always treated as entertainment regardless of value, so the VAT is blocked.
+- question: What happens if HMRC finds I reclaimed VAT on client entertainment by mistake?
+  answer: HMRC will issue an assessment for the VAT you should not have reclaimed, plus interest and potentially a penalty. Penalties range from 0-30% for careless errors to 20-100% for deliberate errors. If you discover the mistake yourself, correct it voluntarily via a VAT error correction (form VAT652) to reduce penalties.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- HMRC blocks VAT recovery on client entertainment including meals, tickets, and events under the Value Added Tax Act 1994.
+- You can reclaim VAT on staff-only entertainment, but inviting a client to a mixed event blocks recovery on the entire bill.
+- A working lunch with a clear business agenda is not entertainment; VAT is recoverable if the primary purpose is work.
+- To evidence a business meeting, keep records including agenda, email trail, receipt, and attendee roles.
+- Taking a prospect to lunch for a pitch is a sales meeting with recoverable VAT, unlike post-contract hospitality.
 ---
-
 <p>You take a client to lunch at a good restaurant near your Soho office. The bill comes to £187.40 including VAT. You pay on the company card.</p>
 
 <p>Can you reclaim the £31.23 VAT on that meal?</p>

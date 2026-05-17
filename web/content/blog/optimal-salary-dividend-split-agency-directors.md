@@ -1,27 +1,34 @@
 ---
-title: "Optimal Salary and Dividend Split for Agency Directors 2025/26"
-slug: "optimal-salary-dividend-split-agency-directors"
-canonical: "https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/optimal-salary-dividend-split-agency-directors"
-date: "2026-05-16"
-author: "Agency Founder Finance Editorial Team"
-category: "Salary and Dividends"
-metaTitle: "Optimal Salary Dividend Split for Directors 2025/26"
-metaDescription: "The optimal salary dividend split for agency directors in 2025/26. How much to take as salary, how much as dividends, and why the numbers have changed."
-altText: "Agency director reviewing salary and dividend split on a laptop in a modern UK office"
-image: "/blog/optimal-salary-dividend-split-agency-directors.jpg"
+title: Optimal Salary and Dividend Split for Agency Directors 2025/26
+slug: optimal-salary-dividend-split-agency-directors
+canonical: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends/optimal-salary-dividend-split-agency-directors
+date: '2026-05-16'
+author: Agency Founder Finance Editorial Team
+category: Salary and Dividends
+metaTitle: Optimal Salary Dividend Split for Directors 2025/26
+metaDescription: The optimal salary dividend split for agency directors in 2025/26. How much to take as salary, how much as dividends, and why the numbers have changed.
+altText: Agency director reviewing salary and dividend split on a laptop in a modern UK office
+image: /blog/optimal-salary-dividend-split-agency-directors.jpg
 imageCredit:
-  photographer: "Markus Winkler"
-  photographerUrl: "https://www.pexels.com/@markus-winkler-1430818"
-  sourceUrl: "https://www.pexels.com/photo/white-and-black-paper-on-typewriter-5198201/"
-  source: "Pexels"
-h1: "The Optimal Salary and Dividend Split for Agency Directors in 2025/26"
-summary: "The right salary dividend split for agency directors in 2025/26 is £12,570 salary and the rest as dividends. But the dividend allowance has dropped to £500, and corporation tax rates have changed. Here is exactly how to structure your pay, with worked examples for agencies of different sizes."
-schema: ""
+  photographer: Markus Winkler
+  photographerUrl: https://www.pexels.com/@markus-winkler-1430818
+  sourceUrl: https://www.pexels.com/photo/white-and-black-paper-on-typewriter-5198201/
+  source: Pexels
+h1: The Optimal Salary and Dividend Split for Agency Directors in 2025/26
+summary: The right salary dividend split for agency directors in 2025/26 is £12,570 salary and the rest as dividends. But the dividend allowance has dropped to £500, and corporation tax rates have changed. Here is exactly how to structure your pay, with worked examples for agencies of different sizes.
+schema: ''
 faqs:
-  - question: "Is the £12,570 salary still optimal in 2025/26 with the lower dividend allowance?"
-    answer: "Yes. The dividend allowance dropping to £500 does not change the fundamental maths. £12,570 salary uses your personal allowance fully, avoids employee NI, and the employer NI cost (£479) is worth it for state pension credit and simplicity. Dividends above that are still more tax-efficient than additional salary, even at the lower allowance."
+- question: Is the £12,570 salary still optimal in 2025/26 with the lower dividend allowance?
+  answer: Yes. The dividend allowance dropping to £500 does not change the fundamental maths. £12,570 salary uses your personal allowance fully, avoids employee NI, and the employer NI cost (£479) is worth it for state pension credit and simplicity. Dividends above that are still more tax-efficient than additional salary, even at the lower allowance.
+authorSlug: james-whitfield
+updatedDate: '2026-05-17'
+keyTakeaways:
+- For 2025/26, the optimal salary for agency directors is £12,570, with the rest taken as dividends to minimise tax and NI.
+- The dividend allowance has dropped to £500, meaning only the first £500 of dividends are tax-free; the rest is taxed at 8.75%, 33.75%, or 39.35%.
+- Taking a salary of £12,570 incurs £479 in employer NI on earnings above £9,100, but it builds state pension entitlement and simplifies tax planning.
+- 'Corporation tax rates are tiered: 19% on profits up to £50,000, 25% above £250,000, with marginal relief in between, affecting dividend extraction strategy.'
+- Dividends avoid NI entirely, making the salary-dividend split more tax-efficient than taking a larger salary, despite the reduced dividend allowance.
 ---
-
 <p>Every agency director I meet wants the same thing: take home as much cash as possible while paying the least tax legally required. The mechanism for that is the salary dividend split. Get it right, and you keep thousands more each year. Get it wrong, and you overpay HMRC by amounts that would make you wince.</p>
 
 <p>For 2025/26, the numbers have shifted. The dividend allowance dropped to £500. Corporation tax rates are now tiered. And the personal allowance remains frozen at £12,570. This changes the maths for every agency owner, whether you run a three-person web design shop in Bristol or a 20-person digital agency in Manchester's Northern Quarter.</p>
