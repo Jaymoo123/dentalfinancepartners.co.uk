@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts, getCategorySlug, calculateReadTime } from "@/lib/blog";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { BlogPostCard } from "@/components/blog/BlogPostCard";
 import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteContainerLg } from "@/components/ui/layout-utils";
@@ -87,26 +88,14 @@ export default function TaxAndCompliancePage() {
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-12">
-          {categoryPosts.map((post) => {
-            const readTime = calculateReadTime(post.contentHtml);
-            return (
-              <article key={post.slug} className="bg-white border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
-                <Link href={`/blog/${categorySlug}/${post.slug}`} className="block p-6 h-full flex flex-col">
-                  <h2 className="text-xl font-semibold text-slate-900 mb-3 hover:text-indigo-600 transition-colors">{post.title}</h2>
-                  {post.summary && <p className="text-slate-600 mb-4 flex-grow line-clamp-3 text-sm">{post.summary}</p>}
-                  <div className="flex items-center gap-3 text-sm text-slate-500 mt-auto">
-                    {post.date && (
-                      <time dateTime={post.date}>
-                        {new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric" }).format(new Date(post.date))}
-                      </time>
-                    )}
-                    <span>•</span>
-                    <span>{readTime} min read</span>
-                  </div>
-                </Link>
-              </article>
-            );
-          })}
+          {categoryPosts.map((post) => (
+            <BlogPostCard
+              key={post.slug}
+              post={post}
+              categorySlug={categorySlug}
+              readTime={calculateReadTime(post.contentHtml)}
+            />
+          ))}
         </div>
 
         {categoryPosts.length === 0 && <p className="text-slate-600 text-center py-12">Articles coming soon.</p>}

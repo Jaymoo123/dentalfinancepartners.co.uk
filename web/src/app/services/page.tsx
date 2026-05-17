@@ -277,14 +277,38 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="bg-indigo-700 py-16 sm:py-20">
+      <section className="bg-gradient-to-br from-indigo-700 to-indigo-900 py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">Ready to get your agency finances sorted?</h2>
-            <p className="mt-4 text-lg text-indigo-200">
-              Book a free call. We will review your current situation and give you clear recommendations. No obligation.
-            </p>
-            <div className="mt-10 max-w-xl mx-auto">
+          <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start max-w-6xl mx-auto">
+            <div className="lg:pt-6">
+              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-6">
+                Free consultation
+              </div>
+              <h2 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+                Ready to get your agency finances sorted?
+              </h2>
+              <p className="mt-4 text-lg text-indigo-100 leading-relaxed">
+                Book a free call. We will review your current situation and give you clear recommendations. No obligation, no hard sell.
+              </p>
+              <ul className="mt-8 space-y-3 text-sm text-indigo-100">
+                <li className="flex items-start gap-3">
+                  <span className="text-white font-bold flex-shrink-0">✓</span>
+                  <span>60-minute review with an ICAEW qualified accountant</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-white font-bold flex-shrink-0">✓</span>
+                  <span>Written summary of recommendations after the call</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-white font-bold flex-shrink-0">✓</span>
+                  <span>Response within 24 hours, usually same day</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white shadow-xl p-6 sm:p-8 lg:p-10 border-t-4 border-indigo-600">
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Book your free call</h3>
+              <p className="text-sm text-slate-600 mb-6">We will be in touch within 24 hours.</p>
               <LeadForm redirectOnSuccess={false} submitLabel="Book a free call" />
             </div>
           </div>
