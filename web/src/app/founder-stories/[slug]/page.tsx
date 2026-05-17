@@ -5,6 +5,7 @@ import { Users, ShieldAlert } from "lucide-react";
 import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
+import { JsonLd, referencedOrganization, referencedPerson } from "@/lib/schema";
 import { STORIES } from "./data";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -42,29 +43,22 @@ export default async function FounderStoryPage({ params }: Props) {
     .filter((s) => s.slug !== slug)
     .slice(0, 3);
 
-  const jsonLd = {
+  const article = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "Article" as const,
+    "@id": `${url}#article`,
     headline: story.title,
     description: story.outcome,
     url,
     inLanguage: "en-GB",
     articleSection: "Founder Stories",
-    publisher: {
-      "@type": "Organization",
-      name: siteConfig.name,
-      url: siteConfig.url,
-    },
-    author: {
-      "@type": "Organization",
-      name: `${siteConfig.name} Editorial Team`,
-      url: `${siteConfig.url}/about`,
-    },
+    isAccessibleForFree: true,
+    publisher: referencedOrganization(),
+    author: referencedPerson("james-whitfield"),
   };
-
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd data={article} />
 
       <section className="bg-slate-900 py-12 sm:py-16">
         <div className={siteContainerLg}>

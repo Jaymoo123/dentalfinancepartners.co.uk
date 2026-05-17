@@ -6,6 +6,7 @@ import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { GLOSSARY } from "./data";
+import { JsonLd, buildDefinedTerm } from "@/lib/schema";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -37,27 +38,20 @@ export default async function GlossaryEntryPage({ params }: Props) {
   const entry = GLOSSARY[slug];
   if (!entry) notFound();
 
-  const url = `${siteConfig.url}/glossary/${slug}`;
   const related = Object.values(GLOSSARY)
     .filter((e) => e.category === entry.category && e.slug !== entry.slug)
     .slice(0, 3);
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "DefinedTerm",
-    name: entry.term,
-    description: entry.body.replace(/<[^>]+>/g, "").slice(0, 250),
-    url,
-    inDefinedTermSet: {
-      "@type": "DefinedTermSet",
-      name: `${siteConfig.name} Glossary`,
-      url: `${siteConfig.url}/glossary`,
-    },
-  };
+  const term = buildDefinedTerm({
+    slug,
+    term: entry.term,
+    definition: entry.body.replace(/<[^>]+>/g, "").slice(0, 250),
+    inDefinedTermSet: entry.category,
+  });
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd data={term} />
 
       <section className="bg-slate-900 py-12 sm:py-16">
         <div className={siteContainerLg}>

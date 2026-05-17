@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { TakeHomePayCalculator } from "@/components/calculators/TakeHomePayCalculator";
 import { Calculator } from "lucide-react";
+import { JsonLd, buildWebApplication, buildFaqPage } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Take-Home Pay Calculator 2025/26 | UK Salary After Tax",
@@ -38,20 +39,18 @@ const faqs = [
   },
 ];
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((f) => ({
-    "@type": "Question",
-    name: f.q,
-    acceptedAnswer: { "@type": "Answer", text: f.a },
-  })),
-};
-
 export default function TakeHomePayCalculatorPage() {
+  const webApp = buildWebApplication({
+    name: "Take-Home Pay Calculator 2025/26",
+    description: "Free UK take-home pay calculator: 2025/26 income tax, NI, student loan and pension salary sacrifice. Annual, monthly and weekly net figures.",
+    path: "/calculators/take-home-pay-calculator",
+    applicationCategory: "FinanceApplication",
+  });
+  const faqPage = buildFaqPage(faqs.map((f) => ({ question: f.q, answer: f.a })));
+
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd data={faqPage ? [webApp, faqPage] : [webApp]} />
 
       <section className="bg-slate-900 py-12 sm:py-16">
         <div className={siteContainerLg}>

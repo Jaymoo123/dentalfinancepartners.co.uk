@@ -34,7 +34,13 @@ export interface NicheConfig {
     organization_type: string;
     service_areas: string[];
     google_analytics_id: string;
-    google_site_verification: string;
+    search_console_verification: {
+      google: string;
+      bing: string;
+      yandex: string;
+      naver: string;
+      pinterest: string;
+    };
     theme_color: string;
   };
   lead_form: {

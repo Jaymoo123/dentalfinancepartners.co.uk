@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { JsonLd, buildFaqPage, buildService } from "@/lib/schema";
 
 export type AgencyTypeProps = {
   slug: string;
@@ -23,8 +24,19 @@ export function AgencyTypeLayout({
   relatedTypes,
   ctaHeading,
 }: AgencyTypeProps) {
+  const service = buildService({
+    name: title,
+    description: hero,
+    url: `/agencies/${slug}`,
+    serviceType: title,
+    areaServed: "United Kingdom",
+  });
+  const faqPage = buildFaqPage(faqs.map((f) => ({ question: f.q, answer: f.a })));
+  const schemaData = faqPage ? [service, faqPage] : [service];
+
   return (
     <div className={`${siteContainerLg} py-12`}>
+      <JsonLd data={schemaData} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },
@@ -84,15 +96,6 @@ export function AgencyTypeLayout({
         </div>
       </div>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: faqs.map((f) => ({
-          "@type": "Question",
-          name: f.q,
-          acceptedAnswer: { "@type": "Answer", text: f.a },
-        })),
-      })}} />
     </div>
   );
 }

@@ -5,6 +5,7 @@ import { ArrowRight, BadgeCheck, ClipboardCheck, Compass } from "lucide-react";
 import { siteContainerLg, btnPrimary, btnSecondary } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { JsonLd, buildFaqPage, buildService } from "@/lib/schema";
 
 export type RelocationDestination = {
   slug: string;
@@ -25,34 +26,18 @@ type Props = {
 };
 
 export function RelocationLayout({ data }: Props) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
+  const service = buildService({
     name: `UK to ${data.country} Relocation Financial Planning for Agency Founders`,
-    provider: {
-      "@type": "Organization",
-      name: "Agency Founder Finance",
-    },
-    serviceType: "Cross-border tax and financial advisory",
     description: `Specialist UK and ${data.country} financial planning for agency founders relocating from the UK.`,
-    areaServed: [
-      { "@type": "Country", name: "United Kingdom" },
-      { "@type": "Country", name: data.country },
-    ],
-  };
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: data.faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  };
+    url: `/${data.slug}`,
+    serviceType: "Cross-border tax and financial advisory",
+    areaServed: ["United Kingdom", data.country],
+  });
+  const faqPage = buildFaqPage(data.faqs.map((f) => ({ question: f.q, answer: f.a })));
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([jsonLd, faqJsonLd]) }} />
+      <JsonLd data={faqPage ? [service, faqPage] : [service]} />
 
       <section className="relative h-[480px] sm:h-[540px] overflow-hidden">
         <Image

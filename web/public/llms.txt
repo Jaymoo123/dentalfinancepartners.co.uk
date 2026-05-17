@@ -1,26 +1,125 @@
-# Property Tax Partners
+# Agency Founder Finance
 
-> Specialist UK property tax accountants for landlords and property investors.
+> Specialist UK accountants for agency founders — marketing, creative, digital, advertising, PR, web design, SEO, recruitment, AI, SaaS and more. UK + Dubai dual presence for founders who travel or relocate. All figures use 2025/26 UK tax rates.
 
 ## About
-Property Tax Partners provides specialist accounting, tax planning, and compliance services for UK landlords and property investors. We cover Section 24 tax relief, incorporation strategies, capital gains tax, Making Tax Digital, and portfolio management.
 
-## Key Pages
-- Homepage: https://www.propertytaxpartners.co.uk/
-- Services: https://www.propertytaxpartners.co.uk/services
-- About: https://www.propertytaxpartners.co.uk/about
-- Blog: https://www.propertytaxpartners.co.uk/blog
-- Contact: https://www.propertytaxpartners.co.uk/contact
-- Locations: https://www.propertytaxpartners.co.uk/locations
+Agency Founder Finance Ltd provides specialist accounting, tax planning, R&D tax credit claims, IR35 advice, incorporation strategy and exit advisory services to founders of UK agencies. We work exclusively with agency businesses across 19 sub-types and operate a Dubai desk for founders relocating to the UAE — one of the most common UK agency-founder relocation routes.
+
+Coverage: UK (with city presence in London, Manchester, Birmingham, Leeds, Bristol) and Dubai (UAE). All tax content is current to 2025/26 UK figures, including BADR (14% rising to 18% on 6 April 2026, £1M lifetime limit), corporation tax (19%/25% with marginal relief £50k–£250k), dividend tax (8.75% / 33.75% / 39.35%), dividend allowance £500, VAT threshold £90,000, and MTD ITSA staging (April 2026 for £50k+, April 2027 for £30k+).
+
+## Key Commercial Pages
+
+- Homepage: https://www.agencyfounderfinance.co.uk/
+- Services: https://www.agencyfounderfinance.co.uk/services
+- About: https://www.agencyfounderfinance.co.uk/about
+- Contact: https://www.agencyfounderfinance.co.uk/contact
+- Free Agency Finance Health Check: https://www.agencyfounderfinance.co.uk/free-health-check
+- R&D Tax Credits: https://www.agencyfounderfinance.co.uk/r-and-d-credits
+- Incorporation: https://www.agencyfounderfinance.co.uk/incorporation
+- Calculators (index): https://www.agencyfounderfinance.co.uk/calculators
+
+## Audience-Stage Pages
+
+- For new founders: https://www.agencyfounderfinance.co.uk/for-new-founders
+- For growth-stage agencies: https://www.agencyfounderfinance.co.uk/for-growth-stage
+- For pre-exit founders: https://www.agencyfounderfinance.co.uk/for-pre-exit
+
+## Agency Types We Serve
+
+- Marketing agencies: https://www.agencyfounderfinance.co.uk/agencies/marketing-agencies
+- Digital agencies: https://www.agencyfounderfinance.co.uk/agencies/digital-agencies
+- Creative agencies: https://www.agencyfounderfinance.co.uk/agencies/creative-agencies
+- Advertising agencies: https://www.agencyfounderfinance.co.uk/agencies/advertising-agencies
+- PR agencies: https://www.agencyfounderfinance.co.uk/agencies/pr-agencies
+- Web design agencies: https://www.agencyfounderfinance.co.uk/agencies/web-design-agencies
+- SEO agencies: https://www.agencyfounderfinance.co.uk/agencies/seo-agencies
+- Recruitment agencies: https://www.agencyfounderfinance.co.uk/agencies/recruitment-agencies
+- PPC agencies: https://www.agencyfounderfinance.co.uk/agencies/ppc-agencies
+- Performance marketing agencies: https://www.agencyfounderfinance.co.uk/agencies/performance-marketing-agencies
+- Influencer marketing agencies: https://www.agencyfounderfinance.co.uk/agencies/influencer-marketing-agencies
+- Email marketing agencies: https://www.agencyfounderfinance.co.uk/agencies/email-marketing-agencies
+- Branding agencies: https://www.agencyfounderfinance.co.uk/agencies/branding-agencies
+- Social media agencies: https://www.agencyfounderfinance.co.uk/agencies/social-media-agencies
+- AI agencies: https://www.agencyfounderfinance.co.uk/agencies/ai-agencies
+- Ecommerce agencies: https://www.agencyfounderfinance.co.uk/agencies/ecommerce-agencies
+- Video production agencies: https://www.agencyfounderfinance.co.uk/agencies/video-production-agencies
+- SaaS agencies: https://www.agencyfounderfinance.co.uk/agencies/saas-agencies
+- Crypto / Web3 agencies: https://www.agencyfounderfinance.co.uk/agencies/crypto-web3-agencies
+
+## Pillar Guides
+
+- Agency Finance Fundamentals: https://www.agencyfounderfinance.co.uk/fundamentals/agency-finance-fundamentals
+- Agency Tax & Compliance — complete guide: https://www.agencyfounderfinance.co.uk/fundamentals/agency-tax-compliance-complete-guide
+- Choosing an Agency Accountant: https://www.agencyfounderfinance.co.uk/fundamentals/choosing-agency-accountant-pillar
+- Incorporating Your Agency: https://www.agencyfounderfinance.co.uk/fundamentals/incorporating-your-agency-pillar
+- International Agency Operations: https://www.agencyfounderfinance.co.uk/fundamentals/international-agency-operations-pillar
+- IR35 for Agencies: https://www.agencyfounderfinance.co.uk/fundamentals/ir35-for-agencies-pillar
+- Making Tax Digital for Agency Founders: https://www.agencyfounderfinance.co.uk/fundamentals/mtd-agency-founder-pillar
+- Paying Yourself as an Agency Founder: https://www.agencyfounderfinance.co.uk/fundamentals/paying-yourself-agency-founder-pillar
+- Selling Your Agency: https://www.agencyfounderfinance.co.uk/fundamentals/selling-your-agency-pillar
+
+## Calculators (free, no signup)
+
+- Salary–dividend optimiser (2025/26): https://www.agencyfounderfinance.co.uk/calculators/salary-dividend-optimiser
+- Take-home pay calculator: https://www.agencyfounderfinance.co.uk/calculators/take-home-pay-calculator
+- Employer NI calculator: https://www.agencyfounderfinance.co.uk/calculators/employer-ni-calculator
+- Pension contribution optimiser: https://www.agencyfounderfinance.co.uk/calculators/pension-contribution-optimiser
+- R&D tax credit estimator: https://www.agencyfounderfinance.co.uk/calculators/rd-tax-credit-estimator
+- BADR (Business Asset Disposal Relief) calculator: https://www.agencyfounderfinance.co.uk/calculators/badr-cgt-calculator
+- Agency valuation estimator: https://www.agencyfounderfinance.co.uk/calculators/agency-valuation
+- VAT scheme comparator: https://www.agencyfounderfinance.co.uk/calculators/vat-scheme-comparator
+
+## Relocation Guides (UK Agency Founders Moving Abroad)
+
+- Dubai (UAE) relocation: https://www.agencyfounderfinance.co.uk/dubai-relocation
+- Portugal (NHR / IFICI) relocation: https://www.agencyfounderfinance.co.uk/portugal-relocation
+- Cyprus (non-dom) relocation: https://www.agencyfounderfinance.co.uk/cyprus-relocation
+- Spain (Beckham Law) relocation: https://www.agencyfounderfinance.co.uk/spain-relocation
+- Singapore relocation: https://www.agencyfounderfinance.co.uk/singapore-relocation
+- Malta relocation: https://www.agencyfounderfinance.co.uk/malta-relocation
+- Estonia (e-Residency) relocation: https://www.agencyfounderfinance.co.uk/estonia-relocation
+- Greece relocation: https://www.agencyfounderfinance.co.uk/greece-relocation
+- Italy (impatriate regime) relocation: https://www.agencyfounderfinance.co.uk/italy-relocation
+- Switzerland relocation: https://www.agencyfounderfinance.co.uk/switzerland-relocation
+
+## Competitor Comparisons
+
+- Agency Founder Finance vs Mazuma: https://www.agencyfounderfinance.co.uk/mazuma-vs
+- Crunch alternative for agencies: https://www.agencyfounderfinance.co.uk/crunch-alternative
+- Specialist vs generalist accountant: https://www.agencyfounderfinance.co.uk/specialist-vs-generalist-accountant
 
 ## Blog Categories
-- Section 24 & Tax Relief: /blog/section-24-and-tax-relief
-- Incorporation & Company Structures: /blog/incorporation-and-company-structures
-- Making Tax Digital (MTD): /blog/making-tax-digital-mtd
-- Capital Gains Tax: /blog/capital-gains-tax
-- Portfolio Management: /blog/portfolio-management
-- Property Accountant Services: /blog/property-accountant-services
-- Landlord Tax Essentials: /blog/landlord-tax-essentials
 
-## Sitemap
-https://www.propertytaxpartners.co.uk/sitemap.xml
+- Agency Finance Essentials: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials
+- Tax & Compliance: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance
+- Salary, Dividends & Profit: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends
+- Incorporation & Business Structure: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure
+- Growing & Exiting Your Agency: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit
+- Contractors & IR35: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35
+- Agency Accountant Services: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services
+- Making Tax Digital: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital
+- International & UAE Agencies: https://www.agencyfounderfinance.co.uk/blog/international-agencies
+
+## City / Local Pages
+
+- Locations index: https://www.agencyfounderfinance.co.uk/locations
+
+## Reference
+
+- Glossary (plain-English UK agency tax & finance terms): https://www.agencyfounderfinance.co.uk/glossary
+- Founder Stories (composite case studies): https://www.agencyfounderfinance.co.uk/founder-stories
+- Lead-magnet guides: https://www.agencyfounderfinance.co.uk/guides
+
+## Machine-Readable Data
+
+- Full content dump for AI retrieval: https://www.agencyfounderfinance.co.uk/llms-full.txt
+- Current UK tax rates (JSON): https://www.agencyfounderfinance.co.uk/api/uk-tax-rates.json
+- Sitemap: https://www.agencyfounderfinance.co.uk/sitemap.xml
+- RSS feed: https://www.agencyfounderfinance.co.uk/feed.xml
+
+## Legal
+
+- Privacy policy: https://www.agencyfounderfinance.co.uk/privacy-policy
+- Terms of service: https://www.agencyfounderfinance.co.uk/terms
+- Cookie policy: https://www.agencyfounderfinance.co.uk/cookie-policy

@@ -4,17 +4,18 @@ import { CheckCircle2, ClipboardCheck, FileSearch, MessageSquare, TrendingUp } f
 import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
-import { LeadForm } from "@/components/forms/LeadForm";
+import { HealthCheckWizard } from "@/components/health-check/Wizard";
+import { JsonLd, buildService, buildFaqPage } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: `Free Agency Finance Health Check | ${siteConfig.name}`,
   description:
-    "Free 60-minute financial health check for UK agency founders. ICAEW qualified review of your salary structure, VAT position, R&D eligibility and tax efficiency. No obligation.",
+    "Free, instant agency finance health check for UK founders. Answer 12 questions, get a personalised PDF report flagging tax, structure, VAT, R&D and exit opportunities. ICAEW-quality framework.",
   alternates: { canonical: `${siteConfig.url}/free-health-check` },
   openGraph: {
-    title: "Free Agency Finance Health Check",
+    title: "Free Agency Finance Health Check — instant personalised PDF",
     description:
-      "Free 60-minute review of your agency's tax and finance position by ICAEW qualified accountants. No obligation.",
+      "Two minutes in, a personalised PDF report by email. We run your answers against 20+ checks across extraction, R&D, VAT, IR35, exit and international.",
     url: `${siteConfig.url}/free-health-check`,
     type: "website",
   },
@@ -33,83 +34,75 @@ const includes = [
   },
   {
     icon: TrendingUp,
-    title: "VAT scheme & registration review",
-    body: "Are you on the right VAT scheme for your business model? Flat rate, cash accounting, standard — each has different implications. We'll tell you what we'd recommend.",
+    title: "VAT scheme & structure review",
+    body: "Are you on the right VAT scheme and entity structure for your business model? We flag what we'd change and what it's worth in pounds.",
   },
   {
     icon: MessageSquare,
-    title: "Personalised next-step plan",
-    body: "You leave with a clear, written summary of what you should do next. Whether you become a client or not — no obligation, no follow-up sales calls.",
+    title: "Exit, IR35 & international flags",
+    body: "BADR qualifying period, IR35 exposure on contractors, US withholding tax, UAE relocation sequencing — anything material to your specific setup.",
   },
 ];
 
 const steps = [
   {
     n: "01",
-    title: "Tell us about your agency",
-    body: "Complete a short form below. Takes 2 minutes. We'll be in touch within 24 hours to schedule your call.",
+    title: "Answer 12 questions",
+    body: "Multi-step wizard. Two minutes. Anonymised — we ask for a band, not your actual VAT number.",
   },
   {
     n: "02",
-    title: "60-minute video review",
-    body: "We review your current setup with an ICAEW qualified accountant. Salary, dividends, VAT, R&D, structure, cash flow. Bring questions.",
+    title: "Instant personalised PDF",
+    body: "Your answers run through 20+ checks across extraction, R&D, VAT, IR35, international and exit. Each opportunity has indicative impact and the action to take.",
   },
   {
     n: "03",
-    title: "Written summary delivered",
-    body: "Within 48 hours of the call you receive a written summary of what we'd recommend. Yours to keep, whether you become a client or not.",
+    title: "Optional 60-minute call",
+    body: "Want to put real numbers on each opportunity? Book a call with an ICAEW qualified accountant. No obligation, no sales drip.",
   },
 ];
 
 const faqs = [
   {
     q: "Is this actually free?",
-    a: "Yes. No card required, no follow-up sales calls, no fees of any kind. We do this because most agency founders we meet have at least 2-3 tax inefficiencies that we can spot in 60 minutes. We'd rather demonstrate our value upfront than send a sales deck.",
+    a: "Yes. No card, no follow-up sales drip. The PDF is generated from your inputs and lands in your inbox in a couple of minutes. We do this because most agency founders we speak to have at least 2–3 tax inefficiencies that surface in a 12-question scan — we'd rather demonstrate the analysis than send a brochure.",
   },
   {
-    q: "What does an ICAEW qualified accountant actually do on the call?",
-    a: "We review your current limited company structure, salary and dividend split, VAT position, expense practices, and any R&D activity. We flag tax efficiencies you're missing and give you specific numbers on what they're worth. The call is led by a senior ICAEW chartered accountant, not a sales rep.",
+    q: "How accurate is the report?",
+    a: "Directional. The rules engine uses 2025/26 UK tax figures and flags opportunities that almost always need a closer look. Indicative impact figures are based on typical agency profiles. The PDF is explicit that it's editorial, not personalised advice — for decisions specific to your agency, book a call.",
   },
   {
-    q: "Do I need to be an existing client or share any sensitive data?",
-    a: "No. You don't need to share access to Xero, your accounts, or anything sensitive before the call. We'll ask you 5-6 specific questions during the conversation that let us assess the structure. If you choose to become a client afterwards, we'll handle the data transfer properly with authorisation codes.",
+    q: "What do you do with my data?",
+    a: "We store your submission to generate the report and email it to you. We use it to follow up if your top concern needs an answer we can give. We don't sell it, share it, or send retargeting drips. Unsubscribe from any email and we stop. Full details in the privacy policy.",
   },
   {
-    q: "Will you try to sell me?",
-    a: "No follow-up sales calls. We'll send the written summary and that's it. If you want to talk further, you reach out to us. Most founders end up booking a paid engagement because the recommendations have specific savings attached — but the offer of help isn't conditional on signing up.",
+    q: "Do you really not push for a sale?",
+    a: "Correct. The PDF includes a soft CTA to book a call if you want to dig deeper. We don't auto-enroll you in a sales sequence. About half the agencies we eventually work with came back to us months later — the analysis is the offer, not the appointment.",
   },
 ];
 
 export default function FreeHealthCheckPage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
+  const service = buildService({
     name: "Free Agency Finance Health Check",
-    provider: {
-      "@type": "Organization",
-      name: siteConfig.name,
-      url: siteConfig.url,
-    },
-    serviceType: "Accountancy consultation",
-    description: "Free 60-minute financial health check for UK agency founders. ICAEW qualified accountants review salary structure, VAT position, R&D eligibility and tax efficiency. No obligation.",
-    areaServed: { "@type": "Country", name: "United Kingdom" },
-    offers: { "@type": "Offer", price: "0", priceCurrency: "GBP" },
+    description:
+      "Free instant agency finance health check for UK founders. 12-question wizard generates a personalised PDF report flagging tax, structure, VAT, R&D, IR35, exit and international opportunities. All figures use 2025/26 UK rates.",
+    url: "/free-health-check",
+    serviceType: "Agency finance health check",
+    areaServed: "United Kingdom",
+  });
+  // Free offer — extend the Service with an Offer
+  (service as Record<string, unknown>).offers = {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "GBP",
   };
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  };
+  const faqPage = buildFaqPage(faqs.map((f) => ({ question: f.q, answer: f.a })));
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([jsonLd, faqJsonLd]) }} />
+      <JsonLd data={faqPage ? [service, faqPage] : [service]} />
 
-      <section className="relative bg-gradient-to-br from-indigo-700 via-indigo-800 to-slate-900 py-16 sm:py-20 lg:py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-indigo-700 via-indigo-800 to-slate-900 py-16 sm:py-20 overflow-hidden">
         <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             variant="light"
@@ -121,25 +114,35 @@ export default function FreeHealthCheckPage() {
           <div className="mt-6 max-w-4xl">
             <div className="inline-flex items-center gap-2 bg-emerald-500 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
               <CheckCircle2 className="h-3.5 w-3.5" />
-              Free · No obligation · 60 minutes
+              Free · Instant PDF · 2 minutes
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white">
-              Free Agency Finance Health Check
+              Get a personalised tax health check for your agency in 2 minutes.
             </h1>
             <p className="mt-6 text-xl sm:text-2xl leading-relaxed text-slate-200 max-w-3xl">
-              60 minutes with an ICAEW qualified accountant. We review your salary structure, VAT, R&D eligibility and tax position — then send you a written summary. No obligation.
+              Answer 12 questions. Receive a personalised PDF by email. We flag
+              tax, structure, R&amp;D, IR35, VAT, exit and international
+              opportunities — each one priced and actionable.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="bg-white py-16 sm:py-20">
+      <section id="wizard" className="bg-slate-50 py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <div className="max-w-3xl mx-auto">
+            <HealthCheckWizard />
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16 sm:py-20 border-t border-slate-200">
         <div className={siteContainerLg}>
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12 max-w-3xl mx-auto">
-              <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">What's included</h2>
+              <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">What we check</h2>
               <p className="mt-4 text-lg text-slate-600">
-                Four checks that typically surface £3,000-£15,000 in annual tax savings for the agency founders we speak to.
+                20+ checks across extraction, structure, VAT, R&amp;D, IR35, exit and international.
               </p>
             </div>
             <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
@@ -179,23 +182,7 @@ export default function FreeHealthCheckPage() {
         </div>
       </section>
 
-      <section id="claim" className="bg-white py-16 sm:py-20 border-t border-slate-200">
-        <div className={siteContainerLg}>
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-indigo-50 border-2 border-indigo-600/20 p-8 sm:p-12">
-              <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold text-indigo-900 sm:text-4xl">Claim your free health check</h2>
-                <p className="mt-3 text-base sm:text-lg text-slate-700">
-                  Tell us about your agency. We'll be in touch within 24 hours to schedule.
-                </p>
-              </div>
-              <LeadForm redirectOnSuccess={false} submitLabel="Claim my free health check" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-slate-50 py-16 sm:py-20">
+      <section className="bg-white py-16 sm:py-20">
         <div className={siteContainerLg}>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl mb-8 text-center">Common questions</h2>
@@ -218,10 +205,10 @@ export default function FreeHealthCheckPage() {
               Prefer to chat first?
             </h2>
             <p className="mt-4 text-slate-300">
-              If you'd rather have an informal initial chat before committing to the full health check, that's fine too.
+              If you&rsquo;d rather talk before answering the wizard, that&rsquo;s fine too.
             </p>
             <Link href="/contact" className={`${btnPrimary} mt-6`}>
-              Just have a chat
+              Book a 30-minute call
             </Link>
           </div>
         </div>

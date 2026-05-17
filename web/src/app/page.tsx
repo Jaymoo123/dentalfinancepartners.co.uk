@@ -4,7 +4,7 @@ import Image from "next/image";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { btnPrimary, btnSecondary, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
-import { buildOrganizationJsonLd } from "@/lib/organization-schema";
+import { JsonLd, buildOrganization, buildWebSite } from "@/lib/schema";
 import { getAllPosts, getCategorySlug } from "@/lib/blog";
 import { getAllFundamentals } from "@/lib/fundamentals";
 import { ArrowRight, BookOpen } from "lucide-react";
@@ -123,7 +123,6 @@ const trustBadges = [
 ];
 
 export default function HomePage() {
-  const orgSchema = buildOrganizationJsonLd();
   const recentPosts = getAllPosts().slice(0, 3).map((post) => ({
     ...post,
     categorySlug: getCategorySlug(post),
@@ -132,7 +131,7 @@ export default function HomePage() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
+      <JsonLd data={[buildOrganization(), buildWebSite()]} />
 
       {/* Hero */}
       <section className="relative h-[500px] sm:h-[600px] lg:h-[700px] overflow-hidden">

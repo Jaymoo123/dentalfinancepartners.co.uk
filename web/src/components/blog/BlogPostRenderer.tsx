@@ -1,14 +1,16 @@
 import Link from "next/link";
 import type { BlogPost } from "@/types/blog";
-import { LeadForm } from "@/components/forms/LeadForm";
 import { buildBlogPostingJsonLd } from "@/lib/schema";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { niche } from "@/config/niche-loader";
 import { TableOfContents } from "@/components/blog/TableOfContents";
 import { ReadingProgress } from "@/components/blog/ReadingProgress";
+import { AuthorByline } from "@/components/blog/AuthorByline";
 import { extractHeadings } from "@/lib/markdown-utils";
 import { calculateReadTime } from "@/lib/blog";
+import { InlinePrompt } from "@/components/newsletter/InlinePrompt";
+import { LeadForm } from "@/components/forms/LeadForm";
 
 type BlogPostRendererProps = {
   post: BlogPost;
@@ -18,6 +20,7 @@ type BlogPostRendererProps = {
 
 function formatUkDate(isoDate: string): string {
   const d = new Date(isoDate);
+  if (Number.isNaN(d.getTime())) return "";
   return d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
 }
 
@@ -27,6 +30,16 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
   const jsonLd =
     post.schema?.trim() ||
     buildBlogPostingJsonLd(post, `/blog/${categorySlug}/${post.slug}`);
+
+  // Resolve the byline: prefer the new authorSlug field; default every post to
+  // the editorial lead so the Person schema in JSON-LD always has a real
+  // /team/[slug] URL. Legacy free-text `author` is honoured as a label
+  // fallback only when no slug resolves.
+  const authorSlug = post.authorSlug || "james-whitfield";
+
+  const takeaways = post.keyTakeaways && post.keyTakeaways.length > 0
+    ? post.keyTakeaways
+    : null;
 
   return (
     <>
@@ -38,6 +51,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
 
       <section className="relative h-[420px] sm:h-[480px] lg:h-[520px] overflow-hidden">
         {post.image ? (
+          // eslint-disable-next-line @next/next/no-img-element
           <img
             src={post.image}
             alt={post.altText || post.title}
@@ -66,19 +80,19 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
               {post.h1}
             </h1>
             <p className="mt-4 text-sm text-slate-300">
+              {readTime > 0 && <span>{readTime} min read</span>}
               {post.date && (
-                <time dateTime={post.date}>{formatUkDate(post.date)}</time>
-              )}
-              {post.author ? (
                 <>
-                  {" · "}
-                  <span>{post.author}</span>
+                  {readTime > 0 ? " · " : null}
+                  <time dateTime={post.date}>Published {formatUkDate(post.date)}</time>
                 </>
-              ) : null}
-              {readTime > 0 && (
+              )}
+              {post.updatedDate && post.updatedDate !== post.date && (
                 <>
                   {" · "}
-                  <span>{readTime} min read</span>
+                  <time dateTime={post.updatedDate}>
+                    Updated {formatUkDate(post.updatedDate)}
+                  </time>
                 </>
               )}
             </p>
@@ -124,10 +138,49 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
         <div className={siteContainerLg}>
           <div className="max-w-4xl mx-auto lg:max-w-7xl lg:grid lg:grid-cols-[1fr_250px] lg:gap-12">
             <div className="max-w-4xl">
-              {post.summary ? (
-                <p className="text-lg text-slate-700 leading-relaxed border-l-4 border-indigo-600 bg-slate-50 p-6">
-                  {post.summary}
+              <div className="mb-8 pb-8 border-b border-slate-200">
+                <AuthorByline
+                  authorSlug={authorSlug}
+                  authorName={post.author}
+                  publishedDate={post.date}
+                  updatedDate={post.updatedDate}
+                />
+                <p className="mt-2 text-xs text-slate-500 max-w-xl">
+                  Editorial content from the Agency Founder Finance team. For
+                  decisions specific to your agency,{" "}
+                  <Link href="/contact" className="underline hover:text-indigo-700">
+                    book a call
+                  </Link>
+                  .
                 </p>
+              </div>
+
+              {takeaways ? (
+                <section
+                  className="tldr not-prose rounded-lg border-l-4 border-indigo-600 bg-slate-50 p-6"
+                  aria-label="Key takeaways"
+                >
+                  <p className="text-xs font-bold uppercase tracking-wider text-indigo-700">
+                    Key takeaways
+                  </p>
+                  <ul className="mt-3 space-y-2">
+                    {takeaways.map((t, i) => (
+                      <li key={i} className="flex items-start gap-2 text-slate-800">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-indigo-600 shrink-0" />
+                        <span className="text-base leading-relaxed">{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              ) : post.summary ? (
+                <section className="tldr" aria-label="Summary">
+                  <p className="text-xs font-bold uppercase tracking-wider text-indigo-700">
+                    TL;DR
+                  </p>
+                  <p className="mt-2 text-lg text-slate-700 leading-relaxed border-l-4 border-indigo-600 bg-slate-50 p-6">
+                    {post.summary}
+                  </p>
+                </section>
               ) : null}
 
               <div className="lg:hidden mt-8">
@@ -137,6 +190,12 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
               <div
                 className="article-body prose-blog mt-10"
                 dangerouslySetInnerHTML={{ __html: post.contentHtml }}
+              />
+
+              <InlinePrompt
+                source={`blog-${categorySlug}-${post.slug}`.slice(0, 80)}
+                heading="Get the Tax Brief in your inbox."
+                body={`One short email a week — UK + UAE tax for agency founders. Plain text, unsubscribe one click. Most useful when ${post.category.toLowerCase()} is on your mind.`}
               />
 
               {post.faqs && post.faqs.length > 0 ? (

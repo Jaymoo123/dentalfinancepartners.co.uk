@@ -209,7 +209,13 @@
       "Dubai"
     ],
     "google_analytics_id": "",
-    "google_site_verification": "",
+    "search_console_verification": {
+      "google": "",
+      "bing": "",
+      "yandex": "",
+      "naver": "",
+      "pinterest": ""
+    },
     "theme_color": "#4f46e5"
   },
   "lead_form": {

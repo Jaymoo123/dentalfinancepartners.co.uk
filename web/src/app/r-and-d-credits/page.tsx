@@ -17,6 +17,7 @@ import { siteContainerLg, btnPrimary, btnSecondary } from "@/components/ui/layou
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { JsonLd, buildService, buildFaqPage } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "R&D Tax Credits for UK Agencies | Specialist Claims",
@@ -95,28 +96,19 @@ const faqs = [
 ];
 
 export default function RDPage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
+  const service = buildService({
     name: "R&D Tax Credit Claims for UK Agencies",
-    provider: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
+    description:
+      "Specialist R&D tax credit claim preparation for UK agencies. AI, SaaS, performance marketing, e-commerce, web design and creative agencies.",
+    url: "/r-and-d-credits",
     serviceType: "R&D tax credit claim preparation",
-    description: "Specialist R&D tax credit claim preparation for UK agencies. AI, SaaS, performance marketing, e-commerce, web design and creative agencies.",
-    areaServed: { "@type": "Country", name: "United Kingdom" },
-  };
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  };
+    areaServed: "United Kingdom",
+  });
+  const faqPage = buildFaqPage(faqs.map((f) => ({ question: f.q, answer: f.a })));
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([jsonLd, faqJsonLd]) }} />
+      <JsonLd data={faqPage ? [service, faqPage] : [service]} />
 
       <section className="relative h-[480px] sm:h-[540px] overflow-hidden">
         <Image

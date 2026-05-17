@@ -16,7 +16,16 @@ export type BlogFrontmatter = {
   title: string;
   slug: string;
   date: string;
+  /** Date the post was last meaningfully edited. Falls back to `date`. */
+  updatedDate?: string;
+  /**
+   * Free-text author name from frontmatter. Used as the byline label when
+   * `authorSlug` doesn't resolve to a /team/[slug] entry. Legacy posts use
+   * this; new posts should set `authorSlug` instead.
+   */
   author: string;
+  /** Slug into /team/[slug] for the canonical Person schema author. */
+  authorSlug?: string;
   category: string;
   metaTitle: string;
   metaDescription: string;
@@ -25,6 +34,11 @@ export type BlogFrontmatter = {
   imageCredit?: ImageCredit;
   h1: string;
   summary: string;
+  /**
+   * Optional structured 3–5 bullet "Key takeaways" for AI extraction and
+   * voice-assistant retrieval. Falls back to `summary` if absent.
+   */
+  keyTakeaways?: string[];
   /** Raw JSON-LD string from `05_schema_builder.py` when present */
   schema?: string;
   canonical?: string;

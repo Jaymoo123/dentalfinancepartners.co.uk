@@ -6,6 +6,7 @@ import { BlogPostCard } from "@/components/blog/BlogPostCard";
 import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteContainerLg } from "@/components/ui/layout-utils";
+import { JsonLd, buildCollectionPage } from "@/lib/schema";
 
 const categoryName = "Making Tax Digital";
 const categorySlug = "making-tax-digital";
@@ -27,29 +28,15 @@ export default function MakingTaxDigitalPage() {
   const allPosts = getAllPosts();
   const categoryPosts = allPosts.filter((post) => getCategorySlug(post) === categorySlug);
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
-          { "@type": "ListItem", position: 2, name: "Blog", item: `${siteConfig.url}/blog` },
-          { "@type": "ListItem", position: 3, name: categoryName },
-        ],
-      },
-      {
-        "@type": "CollectionPage",
-        name: `Making Tax Digital for Agency Founders`,
-        description: metadata.description as string,
-        url: `${siteConfig.url}/blog/${categorySlug}`,
-      },
-    ],
-  };
+  const collection = buildCollectionPage({
+    name: `Making Tax Digital for Agency Founders`,
+    description: metadata.description as string,
+    path: `/blog/${categorySlug}`,
+  });
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd data={collection} />
       <div className={`${siteContainerLg} py-12`}>
         <Breadcrumb
           items={[

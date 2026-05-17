@@ -1,143 +1,40 @@
+/**
+ * Backwards-compatibility shim. The previous monolithic `lib/schema.ts`
+ * has been split into a folder of composable builders at `lib/schema/`.
+ *
+ * Existing callers that import named functions from `@/lib/schema` keep
+ * working unchanged via this re-export. New code should import the
+ * granular builders directly:
+ *
+ *   import { buildBlogPosting, buildFaqPage, JsonLd } from "@/lib/schema";
+ */
+
 import type { BlogPost } from "@/types/blog";
-import { siteConfig } from "@/config/site";
 import type { BreadcrumbItem } from "@/components/ui/Breadcrumb";
 
-/** Build BreadcrumbList JSON-LD schema */
-export function buildBreadcrumbJsonLd(items: BreadcrumbItem[]) {
-  return JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: items.map((item, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name: item.label,
-      ...(item.href && { item: `${siteConfig.url}${item.href}` }),
-    })),
-  });
+import { serialize } from "./schema/serialize";
+import { buildBreadcrumb } from "./schema/breadcrumb";
+import { buildBlogPosting } from "./schema/blog-posting";
+import { buildArticle } from "./schema/article";
+import { buildFaqPage } from "./schema/faq-page";
+
+export * from "./schema/index";
+
+/** Legacy: returns serialised JSON-LD string for direct dangerouslySetInnerHTML usage. */
+export function buildBreadcrumbJsonLd(items: BreadcrumbItem[]): string {
+  return serialize(buildBreadcrumb(items));
 }
 
-/** Build OG image URL for a blog post based on category and title */
-export function buildOgImageUrl(title: string, category?: string) {
-  const params = new URLSearchParams({ title });
-  if (category) params.set("category", category);
-  return `${siteConfig.url}/api/og?${params.toString()}`;
+/** Legacy: returns serialised JSON-LD string for BlogPosting + optional FAQPage. */
+export function buildBlogPostingJsonLd(post: BlogPost, path: string): string {
+  const article = buildBlogPosting(post, path);
+  const faq = post.faqs && post.faqs.length ? buildFaqPage(post.faqs) : null;
+  return serialize(faq ? [article, faq] : article);
 }
 
-/** Fallback BlogPosting + FAQPage JSON-LD when Python `schema` frontmatter is absent */
-export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
-  const url = `${siteConfig.url}${path}`;
-  const imageUrl = post.image
-    ? (post.image.startsWith("http") ? post.image : `${siteConfig.url}${post.image}`)
-    : buildOgImageUrl(post.h1, post.category);
-
-  const faq =
-    post.faqs && post.faqs.length > 0
-      ? {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: post.faqs.map((f) => ({
-            "@type": "Question",
-            name: f.question,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: f.answer,
-            },
-          })),
-        }
-      : null;
-
-  const publisher = {
-    "@type": "Organization" as const,
-    "@id": `${siteConfig.url}#organization`,
-    name: siteConfig.name,
-    url: siteConfig.url,
-    logo: {
-      "@type": "ImageObject" as const,
-      url: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
-    },
-    areaServed: {
-      "@type": "Country" as const,
-      name: "United Kingdom",
-    },
-  };
-
-  const article = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "@id": `${url}#article`,
-    headline: post.h1,
-    description: post.metaDescription,
-    image: imageUrl,
-    datePublished: post.date,
-    dateModified: post.date,
-    author: {
-      "@type": "Person" as const,
-      name: `${siteConfig.name} Editorial Team`,
-      url: `${siteConfig.url}/about`,
-    },
-    publisher,
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": url,
-    },
-    articleSection: post.category,
-    inLanguage: "en-GB",
-  };
-
-  return JSON.stringify(faq ? [article, faq] : article);
-}
-
-/** Build Article JSON-LD for Fundamentals pillar guides (more authoritative than BlogPosting). */
-export function buildArticleJsonLd(post: BlogPost, path: string) {
-  const url = `${siteConfig.url}${path}`;
-  const imageUrl = post.image
-    ? (post.image.startsWith("http") ? post.image : `${siteConfig.url}${post.image}`)
-    : buildOgImageUrl(post.h1, post.category);
-
-  const faq =
-    post.faqs && post.faqs.length > 0
-      ? {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: post.faqs.map((f) => ({
-            "@type": "Question",
-            name: f.question,
-            acceptedAnswer: { "@type": "Answer", text: f.answer },
-          })),
-        }
-      : null;
-
-  const publisher = {
-    "@type": "Organization" as const,
-    "@id": `${siteConfig.url}#organization`,
-    name: siteConfig.name,
-    url: siteConfig.url,
-    logo: {
-      "@type": "ImageObject" as const,
-      url: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
-    },
-    areaServed: { "@type": "Country" as const, name: "United Kingdom" },
-  };
-
-  const article = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "@id": `${url}#article`,
-    headline: post.h1,
-    description: post.metaDescription,
-    image: imageUrl,
-    datePublished: post.date,
-    dateModified: post.date,
-    author: {
-      "@type": "Person" as const,
-      name: `${siteConfig.name} Editorial Team`,
-      url: `${siteConfig.url}/about`,
-    },
-    publisher,
-    mainEntityOfPage: { "@type": "WebPage", "@id": url },
-    articleSection: post.category,
-    inLanguage: "en-GB",
-  };
-
-  return JSON.stringify(faq ? [article, faq] : article);
+/** Legacy: returns serialised JSON-LD string for Article + optional FAQPage. */
+export function buildArticleJsonLd(post: BlogPost, path: string): string {
+  const article = buildArticle(post, path);
+  const faq = post.faqs && post.faqs.length ? buildFaqPage(post.faqs) : null;
+  return serialize(faq ? [article, faq] : article);
 }

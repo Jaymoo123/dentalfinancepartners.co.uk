@@ -18,6 +18,7 @@ import { siteContainerLg, btnPrimary, btnSecondary } from "@/components/ui/layou
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { JsonLd, buildService, buildFaqPage } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "UK Agency Founder Relocating to Dubai? | Specialist Guidance",
@@ -126,35 +127,19 @@ const stats = [
 ];
 
 export default function DubaiRelocationPage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
+  const service = buildService({
     name: "UK to Dubai Relocation Financial Planning for Agency Founders",
-    provider: {
-      "@type": "Organization",
-      name: siteConfig.name,
-      url: siteConfig.url,
-    },
+    description:
+      "Specialist UK and UAE financial planning for agency founders relocating to Dubai. Statutory residence test, UAE entity setup, dual-jurisdiction tax, agency operations across UK and UAE.",
+    url: "/dubai-relocation",
     serviceType: "Cross-border tax and financial advisory",
-    description: "Specialist UK and UAE financial planning for agency founders relocating to Dubai. Statutory residence test, UAE entity setup, dual-jurisdiction tax, agency operations across UK and UAE.",
-    areaServed: [
-      { "@type": "Country", name: "United Kingdom" },
-      { "@type": "Country", name: "United Arab Emirates" },
-    ],
-  };
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  };
+    areaServed: ["United Kingdom", "United Arab Emirates"],
+  });
+  const faqPage = buildFaqPage(faqs.map((f) => ({ question: f.q, answer: f.a })));
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([jsonLd, faqJsonLd]) }} />
+      <JsonLd data={faqPage ? [service, faqPage] : [service]} />
 
       <section className="relative h-[500px] sm:h-[560px] overflow-hidden">
         <Image

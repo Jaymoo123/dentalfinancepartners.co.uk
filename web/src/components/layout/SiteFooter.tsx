@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { focusRing, siteContainer } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { SignupForm } from "@/components/newsletter/SignupForm";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -13,8 +14,17 @@ export function SiteFooter() {
             <p className="mt-3 max-w-md text-sm leading-relaxed text-slate-300">
               {siteConfig.description}
             </p>
+            <div className="mt-6 max-w-md">
+              <SignupForm
+                source="footer"
+                heading="The Agency Founder Tax Brief"
+                body="One short email a week — UK + UAE tax for agency founders. Plain text, unsubscribe one click."
+                ctaLabel="Subscribe"
+                showAgencyType={false}
+              />
+            </div>
           </div>
-          
+
           <div className="min-w-0">
             <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">
               Quick Links

@@ -7,6 +7,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { CITIES } from "./data";
+import { JsonLd, buildAccountingService } from "@/lib/schema";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -41,38 +42,19 @@ export default async function CityPage({ params }: Props) {
   const city = CITIES[slug];
   if (!city) notFound();
 
-  const url = `${siteConfig.url}/locations/${city.slug}`;
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "AccountingService"],
-    "@id": `${url}#localbusiness`,
+  const localBusiness = buildAccountingService({
     name: `${siteConfig.name} - ${city.name}`,
     description: `Specialist accountants for ${city.name} agency founders. ICAEW qualified, fixed fees, agency-only focus.`,
-    url,
-    telephone: siteConfig.contact.phone,
-    email: siteConfig.contact.email,
-    areaServed: {
-      "@type": "City",
-      name: city.name,
-    },
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: city.name,
-      addressRegion: city.region,
-      addressCountry: "GB",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: city.geo.latitude,
-      longitude: city.geo.longitude,
-    },
+    url: `/locations/${city.slug}`,
+    city: city.name,
+    address: { addressRegion: city.region },
+    geo: { latitude: city.geo.latitude, longitude: city.geo.longitude },
+    areaServed: [city.name],
+  });
+  // Augment with additional fields the builder doesn't expose
+  Object.assign(localBusiness as Record<string, unknown>, {
     priceRange: "£££",
-    image: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
-    parentOrganization: {
-      "@type": "Organization",
-      name: siteConfig.name,
-      url: siteConfig.url,
-    },
+    parentOrganization: { "@type": "Organization", "@id": `${siteConfig.url}#organization` },
     serviceType: [
       "Agency accounting",
       "Tax planning",
@@ -81,11 +63,10 @@ export default async function CityPage({ params }: Props) {
       "R&D tax credits",
       "Exit planning",
     ],
-  };
-
+  });
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd data={localBusiness} />
 
       <section className="bg-slate-900 py-16 sm:py-20">
         <div className={siteContainerLg}>

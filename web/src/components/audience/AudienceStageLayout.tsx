@@ -5,6 +5,7 @@ import { ArrowRight, BadgeCheck, ClipboardCheck } from "lucide-react";
 import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { JsonLd, buildFaqPage } from "@/lib/schema";
 
 export type AudienceStage = {
   slug: string;
@@ -24,19 +25,11 @@ export type AudienceStage = {
 type Props = { data: AudienceStage };
 
 export function AudienceStageLayout({ data }: Props) {
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: data.faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  };
+  const faqPage = buildFaqPage(data.faqs.map((f) => ({ question: f.q, answer: f.a })));
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      {faqPage && <JsonLd data={faqPage} />}
 
       <section className="relative h-[440px] sm:h-[500px] overflow-hidden">
         <Image

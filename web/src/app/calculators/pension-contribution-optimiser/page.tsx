@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { PensionContributionOptimiser } from "@/components/calculators/PensionContributionOptimiser";
 import { Calculator } from "lucide-react";
+import { JsonLd, buildWebApplication, buildFaqPage } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Pension Contribution Optimiser 2025/26 | Limited Company UK",
@@ -39,20 +40,18 @@ const faqs = [
   },
 ];
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((f) => ({
-    "@type": "Question",
-    name: f.q,
-    acceptedAnswer: { "@type": "Answer", text: f.a },
-  })),
-};
-
 export default function PensionContributionOptimiserPage() {
+  const webApp = buildWebApplication({
+    name: "Pension Contribution Optimiser 2025/26",
+    description: "Free UK calculator: model employer pension contributions from your limited company. Corporation tax saving, real cost, vs taking as dividend.",
+    path: "/calculators/pension-contribution-optimiser",
+    applicationCategory: "FinanceApplication",
+  });
+  const faqPage = buildFaqPage(faqs.map((f) => ({ question: f.q, answer: f.a })));
+
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd data={faqPage ? [webApp, faqPage] : [webApp]} />
 
       <section className="bg-slate-900 py-12 sm:py-16">
         <div className={siteContainerLg}>

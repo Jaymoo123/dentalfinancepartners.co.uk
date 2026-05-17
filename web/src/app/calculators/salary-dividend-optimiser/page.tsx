@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { SalaryDividendCalculator } from "@/components/calculators/SalaryDividendCalculator";
 import { Calculator } from "lucide-react";
+import { JsonLd, buildWebApplication, buildFaqPage } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Salary & Dividend Optimiser 2025/26 | Free UK Calculator",
@@ -39,20 +40,18 @@ const faqs = [
   },
 ];
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((f) => ({
-    "@type": "Question",
-    name: f.q,
-    acceptedAnswer: { "@type": "Answer", text: f.a },
-  })),
-};
-
 export default function SalaryDividendCalculatorPage() {
+  const webApp = buildWebApplication({
+    name: "Salary & Dividend Optimiser 2025/26",
+    description: "Free UK calculator finding the most tax-efficient mix of salary and dividends for a limited company director. 2025/26 rates.",
+    path: "/calculators/salary-dividend-optimiser",
+    applicationCategory: "FinanceApplication",
+  });
+  const faqPage = buildFaqPage(faqs.map((f) => ({ question: f.q, answer: f.a })));
+
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd data={faqPage ? [webApp, faqPage] : [webApp]} />
 
       <section className="bg-slate-900 py-12 sm:py-16">
         <div className={siteContainerLg}>

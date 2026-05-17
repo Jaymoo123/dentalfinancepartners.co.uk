@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { focusRing } from "./layout-utils";
-import { buildBreadcrumbJsonLd } from "@/lib/schema";
+import { buildBreadcrumb } from "@/lib/schema/breadcrumb";
+import { serialize } from "@/lib/schema/serialize";
 
 export type BreadcrumbItem = {
   label: string;
@@ -11,10 +12,15 @@ type BreadcrumbProps = {
   items: BreadcrumbItem[];
   /** "dark" (default) for light backgrounds, "light" for dark hero backgrounds */
   variant?: "dark" | "light";
+  /**
+   * Set to true when the page already emits its own BreadcrumbList JSON-LD
+   * via `<JsonLd>` — prevents duplicate schema records on pages that
+   * compose multiple schema sources.
+   */
+  noSchema?: boolean;
 };
 
-export function Breadcrumb({ items, variant = "dark" }: BreadcrumbProps) {
-  const jsonLd = buildBreadcrumbJsonLd(items);
+export function Breadcrumb({ items, variant = "dark", noSchema }: BreadcrumbProps) {
   const isLight = variant === "light";
 
   const baseColor = isLight ? "text-slate-200" : "text-slate-600";
@@ -24,10 +30,12 @@ export function Breadcrumb({ items, variant = "dark" }: BreadcrumbProps) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: jsonLd }}
-      />
+      {!noSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: serialize(buildBreadcrumb(items)) }}
+        />
+      )}
       <nav aria-label="Breadcrumb" className="mb-6">
         <ol className={`flex flex-wrap items-center gap-2 text-sm ${baseColor}`}>
           {items.map((item, index) => {
