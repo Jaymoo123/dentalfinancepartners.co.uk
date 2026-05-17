@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { BlogPost } from "@/types/blog";
 
 type Props = {
@@ -18,12 +19,12 @@ export function BlogPostCard({ post, categorySlug, readTime }: Props) {
         <div className="relative h-44 overflow-hidden bg-slate-100">
           {post.image ? (
             <>
-              {}
-              <img
+              <Image
                 src={post.image}
                 alt={post.altText || post.title}
-                loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                fill
+                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-slate-900/15" />
             </>

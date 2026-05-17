@@ -5,6 +5,7 @@ import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { RDCreditEstimator } from "@/components/calculators/RDCreditEstimator";
+import { JsonLd, buildWebApplication } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "R&D Tax Credit Estimator 2025/26 | UK Agency Calculator",
@@ -14,8 +15,17 @@ export const metadata: Metadata = {
 };
 
 export default function RDCreditPage() {
+  const webApp = buildWebApplication({
+    name: "R&D Tax Credit Estimator 2025/26",
+    description:
+      "Free UK R&D tax credit estimator for agencies. Models HMRC's post-April 2023 merged scheme and the R&D-intensive enhanced rate (ERIS).",
+    path: "/calculators/rd-tax-credit-estimator",
+    applicationCategory: "FinanceApplication",
+  });
+
   return (
     <>
+      <JsonLd data={webApp} />
       <section className="bg-slate-900 py-12 sm:py-16">
         <div className={siteContainerLg}>
           <Breadcrumb

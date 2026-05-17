@@ -4,6 +4,7 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { JsonLd, referencedOrganization } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: `Contact ${siteConfig.name} | Book Free Consultation`,
@@ -23,8 +24,37 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
+  const contactPage = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage" as const,
+    "@id": `${siteConfig.url}/contact#page`,
+    name: `Contact ${siteConfig.name}`,
+    url: `${siteConfig.url}/contact`,
+    description:
+      `Contact ${siteConfig.name} for agency accounting enquiries. Tax planning, management accounts, IR35 and incorporation. 24-hour response.`,
+    inLanguage: "en-GB",
+    about: referencedOrganization(),
+    mainEntity: {
+      "@type": "Organization",
+      "@id": `${siteConfig.url}#organization`,
+      name: siteConfig.name,
+      email: siteConfig.contact.email,
+      telephone: siteConfig.contact.phone,
+      url: siteConfig.url,
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer service",
+        email: siteConfig.contact.email,
+        telephone: siteConfig.contact.phone,
+        areaServed: "GB",
+        availableLanguage: "en",
+      },
+    },
+  };
+
   return (
     <>
+      <JsonLd data={contactPage} />
       <section className="relative h-[300px] sm:h-[350px] overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=2000&q=85"

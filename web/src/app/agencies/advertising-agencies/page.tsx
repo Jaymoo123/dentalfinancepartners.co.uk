@@ -4,6 +4,7 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
+import { JsonLd, buildService, buildFaqPage } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: `Accountants for Advertising Agencies | ${siteConfig.name}`,
@@ -33,8 +34,18 @@ const faqs = [
 ];
 
 export default function AdvertisingAgenciesPage() {
+  const service = buildService({
+    name: "Accountants for advertising agencies",
+    description: metadata.description as string,
+    url: "/agencies/advertising-agencies",
+    serviceType: "Accountants for advertising agencies",
+    areaServed: "United Kingdom",
+  });
+  const faqPage = buildFaqPage(faqs.map((f) => ({ question: f.q, answer: f.a })));
+
   return (
     <div className={`${siteContainerLg} py-12`}>
+      <JsonLd data={faqPage ? [service, faqPage] : [service]} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

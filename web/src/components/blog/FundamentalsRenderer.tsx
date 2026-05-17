@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { BlogPost } from "@/types/blog";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { buildArticleJsonLd } from "@/lib/schema";
@@ -37,11 +38,13 @@ export function FundamentalsRenderer({ post, related = [] }: FundamentalsRendere
 
       <section className="relative h-[420px] sm:h-[480px] lg:h-[520px] overflow-hidden">
         {post.image ? (
-          <img
+          <Image
             src={post.image}
             alt={post.altText || post.title}
-            aria-hidden="false"
-            className="absolute inset-0 w-full h-full object-cover scale-110 blur-sm"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover scale-110 blur-sm"
           />
         ) : (
           <div className="absolute inset-0 bg-gradient-to-br from-indigo-700 via-indigo-800 to-slate-900" />

@@ -35,12 +35,19 @@ export function SignupForm({
 }: Props) {
   const [email, setEmail] = useState("");
   const [agencyType, setAgencyType] = useState("");
+  // Honeypot — humans never fill this; bots typically do. Filled => silent reject.
+  const [website, setWebsite] = useState("");
   const [state, setState] = useState<"idle" | "submitting" | "ok" | "err">("idle");
   const [error, setError] = useState<string | null>(null);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (state === "submitting") return;
+    // Silently accept bot submissions but discard
+    if (website) {
+      setState("ok");
+      return;
+    }
     setState("submitting");
     setError(null);
     try {
@@ -85,6 +92,18 @@ export function SignupForm({
 
   return (
     <form onSubmit={onSubmit} className={containerClass} noValidate>
+      {/* Honeypot — visually hidden, off-screen, autocomplete off. Real users won't touch it. */}
+      <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }}>
+        <label htmlFor={`newsletter-website-${source}`}>Website (leave blank)</label>
+        <input
+          id={`newsletter-website-${source}`}
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          value={website}
+          onChange={(e) => setWebsite(e.target.value)}
+        />
+      </div>
       {variant !== "minimal" && (
         <>
           <p className="text-base font-semibold text-slate-900">{heading}</p>

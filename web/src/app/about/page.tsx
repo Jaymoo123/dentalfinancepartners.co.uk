@@ -19,6 +19,7 @@ import { siteContainerLg, btnPrimary, btnSecondary } from "@/components/ui/layou
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { JsonLd, buildOrganization } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: `About ${siteConfig.name} | ICAEW Qualified Agency Accountants`,
@@ -155,6 +156,7 @@ const trustBadges = [
 export default function AboutPage() {
   return (
     <>
+      <JsonLd data={buildOrganization()} />
       {/* Hero */}
       <section className="relative h-[360px] sm:h-[420px] lg:h-[480px] overflow-hidden">
         <Image

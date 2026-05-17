@@ -5,6 +5,7 @@ import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { BADRCalculator } from "@/components/calculators/BADRCalculator";
+import { JsonLd, buildWebApplication } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "BADR Calculator 2025/26 | UK Agency CGT on Sale",
@@ -14,8 +15,17 @@ export const metadata: Metadata = {
 };
 
 export default function BADRPage() {
+  const webApp = buildWebApplication({
+    name: "BADR Calculator 2025/26",
+    description:
+      "Free UK Business Asset Disposal Relief calculator. Models 14% rate (2025/26), 18% rate from 6 April 2026, £1M lifetime limit, and the 2-year qualifying period.",
+    path: "/calculators/badr-cgt-calculator",
+    applicationCategory: "FinanceApplication",
+  });
+
   return (
     <>
+      <JsonLd data={webApp} />
       <section className="bg-slate-900 py-12 sm:py-16">
         <div className={siteContainerLg}>
           <Breadcrumb

@@ -5,6 +5,7 @@ import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { VATSchemeComparator } from "@/components/calculators/VATSchemeComparator";
+import { JsonLd, buildWebApplication } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "VAT Scheme Comparator | Standard vs Flat Rate for UK Agencies",
@@ -14,8 +15,17 @@ export const metadata: Metadata = {
 };
 
 export default function VATComparatorPage() {
+  const webApp = buildWebApplication({
+    name: "VAT Scheme Comparator",
+    description:
+      "Free UK VAT scheme calculator for agencies. Compares Standard VAT against the Flat Rate Scheme using 2025/26 thresholds, including the Limited Cost Trader test.",
+    path: "/calculators/vat-scheme-comparator",
+    applicationCategory: "FinanceApplication",
+  });
+
   return (
     <>
+      <JsonLd data={webApp} />
       <section className="bg-slate-900 py-12 sm:py-16">
         <div className={siteContainerLg}>
           <Breadcrumb
