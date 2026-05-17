@@ -435,9 +435,14 @@ def main():
     print("\n[5/5] Marking topic as used...")
     mark_topic_used(topic_id, slug)
 
+    from submit_indexnow import enqueue
+    enqueue(f"{SITE_BASE_URL}/blog/{slug}")
+
     print("\n" + "=" * 60)
     print(f"[COMPLETE] {slug}.md")
     print(f"Preview: {SITE_BASE_URL}/blog/{slug}")
+    print("Queued for IndexNow. After `git push`, run:")
+    print("  python pipeline/submit_indexnow.py --from-queue")
     print("=" * 60)
 
 
