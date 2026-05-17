@@ -6,7 +6,7 @@ import { siteConfig } from "@/config/site";
 const pageUrl = `${siteConfig.url.replace(/\/$/, "")}/newsletter`;
 
 export const metadata: Metadata = {
-  title: "The Agency Founder Tax Brief — weekly UK + UAE tax for agency founders",
+  title: "The Agency Founder Tax Brief: weekly UK + UAE tax for agency founders",
   description:
     "One short email a week. UK and UAE tax, pay, structure and exit for agency founders. Plain text, one idea per issue, unsubscribe one click.",
   alternates: { canonical: pageUrl },
@@ -28,7 +28,7 @@ export default function NewsletterPage() {
         The Agency Founder Tax Brief
       </h1>
       <p className="mt-4 text-lg text-slate-700">
-        One short email a week — Thursday morning, UK time. UK and UAE tax, pay,
+        One short email a week, Thursday morning, UK time. UK and UAE tax, pay,
         structure, and exit for agency founders. Plain text. One idea per issue.
         Unsubscribe one click.
       </p>

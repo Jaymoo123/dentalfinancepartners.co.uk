@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Unsubscribed — Agency Founder Finance",
+  title: "Unsubscribed | Agency Founder Finance",
   robots: { index: false, follow: false },
 };
 

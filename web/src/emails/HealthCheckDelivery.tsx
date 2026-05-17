@@ -42,7 +42,7 @@ export default function HealthCheckDelivery({ firstName, topThreeTitles }: Props
         <Button href="https://www.agencyfounderfinance.co.uk/contact" style={button}>
           Book a 60-minute call
         </Button>
-        <Text style={sign}>— Agency Founder Finance</Text>
+        <Text style={sign}>Agency Founder Finance</Text>
       </Section>
     </EmailLayout>
   );

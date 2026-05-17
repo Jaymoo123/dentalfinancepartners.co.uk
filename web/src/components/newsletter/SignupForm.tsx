@@ -28,7 +28,7 @@ export function SignupForm({
   variant = "card",
   source,
   heading = "The Agency Founder Tax Brief",
-  body = "One short email a week — UK tax, pay, structure, exit. Plain text, one CTA, unsubscribe one click.",
+  body = "One short email a week. UK tax, pay, structure, exit. Plain text, one CTA, unsubscribe one click.",
   ctaLabel = "Subscribe",
   successMessage = "Check your inbox to confirm your subscription.",
   showAgencyType = true,
@@ -84,7 +84,7 @@ export function SignupForm({
   if (state === "ok") {
     return (
       <div className={containerClass} role="status" aria-live="polite">
-        <p className="font-semibold text-slate-900">Thanks — almost done.</p>
+        <p className="font-semibold text-slate-900">Thanks. Almost done.</p>
         <p className="mt-1 text-sm text-slate-700">{successMessage}</p>
       </div>
     );

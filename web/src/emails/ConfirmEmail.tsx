@@ -12,7 +12,7 @@ export default function ConfirmEmail({ confirmUrl }: Props) {
       <Section>
         <Text style={h1}>Confirm your subscription</Text>
         <Text style={p}>
-          Thanks for signing up to <strong>The Agency Founder Tax Brief</strong> — a
+          Thanks for signing up to <strong>The Agency Founder Tax Brief</strong>, a
           weekly read for UK agency founders on tax, pay, structure, and exit.
         </Text>
         <Text style={p}>One last step. Confirm your email:</Text>
@@ -27,7 +27,7 @@ export default function ConfirmEmail({ confirmUrl }: Props) {
           </Link>
         </Text>
         <Text style={pMuted}>
-          If you didn&rsquo;t sign up, you can ignore this email — no further
+          If you didn&rsquo;t sign up, you can ignore this email. No further
           messages will be sent.
         </Text>
       </Section>

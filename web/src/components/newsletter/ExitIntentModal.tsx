@@ -67,7 +67,7 @@ export function ExitIntentModal() {
         <SignupForm
           variant="card"
           source="exit-intent"
-          heading="Before you go —"
+          heading="Before you go"
           body="One short email a week, UK + UAE tax for agency founders. Plain text, one CTA, unsubscribe one click. The first email lands today."
           ctaLabel="Subscribe to the Tax Brief"
         />
