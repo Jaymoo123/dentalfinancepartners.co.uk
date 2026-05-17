@@ -14,7 +14,7 @@ const data: Comparison = {
   competitorName: "Crunch",
   pageTitle: "Crunch alternative for UK agencies",
   intro: "If your agency has outgrown Crunch's online platform model, this is the honest comparison of what a specialist agency accountant offers instead. Both have their place; the right answer depends on the complexity of your agency.",
-  honestyParagraph: "Crunch is a popular online accounting platform serving freelancers, contractors, and small limited companies. They've built a strong product and serve a real need at lower price points. We are a specialist firm working only with agency founders, focused on the strategic and tax decisions that come up as agencies scale. We're not Crunch's direct competitor at the entry level — we're where some Crunch customers go when they've outgrown the platform model.",
+  honestyParagraph: "Crunch is a popular online accounting platform serving freelancers, contractors, and small limited companies. They've built a strong product and serve a real need at lower price points. We are a specialist firm working only with agency founders, focused on the strategic and tax decisions that come up as agencies scale. We're not Crunch's direct competitor at the entry level, we're where some Crunch customers go when they've outgrown the platform model.",
   comparisonTable: [
     { feature: "Pricing model", competitor: "From ~£44/mo fixed", us: "Fixed fee £1,200-£8,000/year by complexity" },
     { feature: "Online accounting software included", competitor: true, us: "We work with your existing Xero/QB/FreeAgent" },
@@ -57,11 +57,11 @@ const data: Comparison = {
   faqs: [
     {
       q: "Can I keep using Crunch's software with you as my accountant?",
-      a: "Crunch's platform is bundled with their service — moving to us typically means switching to Xero, QuickBooks, or FreeAgent. We handle the migration. Most agencies find Xero a better long-term fit for management accounts and growth.",
+      a: "Crunch's platform is bundled with their service, moving to us typically means switching to Xero, QuickBooks, or FreeAgent. We handle the migration. Most agencies find Xero a better long-term fit for management accounts and growth.",
     },
     {
       q: "What's the typical cost difference?",
-      a: "Crunch's headline price is £44/mo plus add-ons (~£600-£1,000/year). Our fees start at £1,200/year for simple structures and rise to £8,000+ for complex multi-entity setups with R&D and exit planning. The right comparison isn't price — it's value per pound. If we save you £15k in tax through R&D credits alone, the £3k fee is paid back 5×.",
+      a: "Crunch's headline price is £44/mo plus add-ons (~£600-£1,000/year). Our fees start at £1,200/year for simple structures and rise to £8,000+ for complex multi-entity setups with R&D and exit planning. The right comparison isn't price, it's value per pound. If we save you £15k in tax through R&D credits alone, the £3k fee is paid back 5×.",
     },
     {
       q: "How easy is it to switch from Crunch?",

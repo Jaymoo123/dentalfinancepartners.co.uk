@@ -19,7 +19,7 @@ export default function EcommerceAgenciesPage() {
     <AgencyTypeLayout
       slug="ecommerce-agencies"
       title="Accountants for e-commerce agencies"
-      hero="Specialist tax and accounting for UK e-commerce agency founders. Shopify Plus partner commissions, Klaviyo and Recharge integrations, project plus retainer billing, performance bonuses tied to client revenue — we handle how e-commerce agencies actually make money."
+      hero="Specialist tax and accounting for UK e-commerce agency founders. Shopify Plus partner commissions, Klaviyo and Recharge integrations, project plus retainer billing, performance bonuses tied to client revenue, we handle how e-commerce agencies actually make money."
       sections={[
         {
           heading: "Partner programme commissions",
@@ -41,7 +41,7 @@ export default function EcommerceAgenciesPage() {
           heading: "R&D tax credits for custom commerce work",
           body: (
             <p>
-              Custom Shopify apps, bespoke Klaviyo flows beyond template configuration, headless commerce builds, integrations between Shopify and bespoke ERP systems, custom checkout extensions — these often qualify for R&D tax credits under HMRC's SME scheme. We assess every e-commerce client as standard.
+              Custom Shopify apps, bespoke Klaviyo flows beyond template configuration, headless commerce builds, integrations between Shopify and bespoke ERP systems, custom checkout extensions, these often qualify for R&D tax credits under HMRC's SME scheme. We assess every e-commerce client as standard.
             </p>
           ),
         },
@@ -57,7 +57,7 @@ export default function EcommerceAgenciesPage() {
         },
         {
           q: "Does building custom Shopify apps qualify for R&D tax credits?",
-          a: "Usually yes if there's genuine technical advancement. Bespoke checkout extensions, custom inventory sync to non-standard ERPs, novel personalisation engines — these typically qualify. Pure theme customisation or installing existing apps does not. We assess each build to identify qualifying R&D spend.",
+          a: "Usually yes if there's genuine technical advancement. Bespoke checkout extensions, custom inventory sync to non-standard ERPs, novel personalisation engines, these typically qualify. Pure theme customisation or installing existing apps does not. We assess each build to identify qualifying R&D spend.",
         },
       ]}
       relatedTypes={[

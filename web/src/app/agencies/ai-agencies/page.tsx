@@ -19,13 +19,13 @@ export default function AIAgenciesPage() {
     <AgencyTypeLayout
       slug="ai-agencies"
       title="Accountants for AI agencies"
-      hero="Specialist tax and accounting for UK AI agency founders. R&D tax credits for ML and LLM work, GPU and API cost treatment, IP ownership, model licensing — we handle the financial complexity of running an AI services business."
+      hero="Specialist tax and accounting for UK AI agency founders. R&D tax credits for ML and LLM work, GPU and API cost treatment, IP ownership, model licensing, we handle the financial complexity of running an AI services business."
       sections={[
         {
           heading: "R&D tax credits for AI work",
           body: (
             <p>
-              AI agencies are often sitting on significant unclaimed R&D tax credit value. HMRC's SME scheme applies where you're advancing science or technology in a way that's not readily deducible to a competent professional. Custom model training, novel prompt engineering systems, RAG pipelines, fine-tuned LLMs for specific industries, AI-driven attribution platforms, agent orchestration tooling — all typically qualify. We assess every AI client for R&D eligibility as standard and have seen claims from £15k to over £150k per year.
+              AI agencies are often sitting on significant unclaimed R&D tax credit value. HMRC's SME scheme applies where you're advancing science or technology in a way that's not readily deducible to a competent professional. Custom model training, novel prompt engineering systems, RAG pipelines, fine-tuned LLMs for specific industries, AI-driven attribution platforms, agent orchestration tooling, all typically qualify. We assess every AI client for R&D eligibility as standard and have seen claims from £15k to over £150k per year.
             </p>
           ),
         },
@@ -49,7 +49,7 @@ export default function AIAgenciesPage() {
       faqs={[
         {
           q: "Does building custom AI for clients qualify for R&D tax credits?",
-          a: "Usually yes if there's genuine technical uncertainty. Fine-tuning a foundation model for a novel use case, building bespoke RAG systems, developing agent orchestration tooling, custom evaluation frameworks — these typically qualify. Pure prompt engineering or wrapping an off-the-shelf API without technical advancement does not. We assess eligibility per project.",
+          a: "Usually yes if there's genuine technical uncertainty. Fine-tuning a foundation model for a novel use case, building bespoke RAG systems, developing agent orchestration tooling, custom evaluation frameworks, these typically qualify. Pure prompt engineering or wrapping an off-the-shelf API without technical advancement does not. We assess eligibility per project.",
         },
         {
           q: "How do I account for OpenAI or Anthropic API spend?",

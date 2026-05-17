@@ -22,7 +22,7 @@ import { JsonLd, buildService, buildFaqPage } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "R&D Tax Credits for UK Agencies | Specialist Claims",
   description:
-    "Specialist R&D tax credit claims for UK agencies. AI, SaaS, performance marketing, e-commerce builds — most agencies leave money on the table. ICAEW qualified, no-win-no-fee available.",
+    "Specialist R&D tax credit claims for UK agencies. AI, SaaS, performance marketing, e-commerce builds, most agencies leave money on the table. ICAEW qualified, no-win-no-fee available.",
   alternates: { canonical: `${siteConfig.url}/r-and-d-credits` },
   openGraph: {
     title: "R&D Tax Credits for UK Agencies",
@@ -75,7 +75,7 @@ const process = [
 const faqs = [
   {
     q: "Does my agency actually qualify?",
-    a: "More agencies qualify than they think. The test is whether your work involves resolving genuine technical uncertainty — building something where a competent professional couldn't have just looked up the answer. Custom AI work, novel integrations, bespoke automation, performance breakthroughs all typically qualify. Pure configuration of off-the-shelf tools, template customisation and standard implementations do not. We assess for free.",
+    a: "More agencies qualify than they think. The test is whether your work involves resolving genuine technical uncertainty, building something where a competent professional couldn't have just looked up the answer. Custom AI work, novel integrations, bespoke automation, performance breakthroughs all typically qualify. Pure configuration of off-the-shelf tools, template customisation and standard implementations do not. We assess for free.",
   },
   {
     q: "What's the typical claim size for an agency?",

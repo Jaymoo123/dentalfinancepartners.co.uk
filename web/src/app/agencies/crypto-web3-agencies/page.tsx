@@ -41,7 +41,7 @@ export default function CryptoWeb3AgenciesPage() {
           heading: "R&D credits and the regulatory edge",
           body: (
             <p>
-              Novel smart contract patterns, ZK-proof implementations, custom DAO tooling, bridge security work, MEV-resistant ordering systems — these typically qualify for R&D tax credits where genuine technical uncertainty exists. The regulatory environment for crypto in the UK is also evolving rapidly (FCA marketing rules, MiCA in the EU). We help crypto agencies stay compliant on both the tax and regulatory marketing sides without getting blindsided.
+              Novel smart contract patterns, ZK-proof implementations, custom DAO tooling, bridge security work, MEV-resistant ordering systems, these typically qualify for R&D tax credits where genuine technical uncertainty exists. The regulatory environment for crypto in the UK is also evolving rapidly (FCA marketing rules, MiCA in the EU). We help crypto agencies stay compliant on both the tax and regulatory marketing sides without getting blindsided.
             </p>
           ),
         },
@@ -53,7 +53,7 @@ export default function CryptoWeb3AgenciesPage() {
         },
         {
           q: "Are smart contract development costs R&D-qualifying?",
-          a: "Often yes if there's genuine technical uncertainty. Novel contract patterns, security-critical bridge work, ZK-proof implementations, custom DAO tooling, MEV-resistance systems — these typically qualify under HMRC's SME R&D scheme. Standard ERC-20 deployment or basic contract templating does not. We assess project-by-project.",
+          a: "Often yes if there's genuine technical uncertainty. Novel contract patterns, security-critical bridge work, ZK-proof implementations, custom DAO tooling, MEV-resistance systems, these typically qualify under HMRC's SME R&D scheme. Standard ERC-20 deployment or basic contract templating does not. We assess project-by-project.",
         },
         {
           q: "What about FCA financial promotion rules for crypto agencies?",

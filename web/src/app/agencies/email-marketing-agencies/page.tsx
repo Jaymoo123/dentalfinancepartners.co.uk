@@ -19,13 +19,13 @@ export default function EmailMarketingAgenciesPage() {
     <AgencyTypeLayout
       slug="email-marketing-agencies"
       title="Accountants for email marketing agencies"
-      hero="Specialist tax and accounting for UK email marketing agency founders. Klaviyo and HubSpot partner programme commissions, retainer revenue, deliverability tooling — and the tax angles other accountants miss."
+      hero="Specialist tax and accounting for UK email marketing agency founders. Klaviyo and HubSpot partner programme commissions, retainer revenue, deliverability tooling, and the tax angles other accountants miss."
       sections={[
         {
           heading: "Partner programme commissions",
           body: (
             <p>
-              Email marketing agencies often earn meaningful revenue from referring clients to Klaviyo, HubSpot, Mailchimp or ActiveCampaign partner programmes. These commissions are trading income, taxable at corporation tax rates if you're a limited company. The timing matters — most partner programmes pay residual commission monthly for the client's lifetime, which means you have a long-tail income stream that needs careful management and accounts treatment to keep your management reports accurate.
+              Email marketing agencies often earn meaningful revenue from referring clients to Klaviyo, HubSpot, Mailchimp or ActiveCampaign partner programmes. These commissions are trading income, taxable at corporation tax rates if you're a limited company. The timing matters, most partner programmes pay residual commission monthly for the client's lifetime, which means you have a long-tail income stream that needs careful management and accounts treatment to keep your management reports accurate.
             </p>
           ),
         },
@@ -41,7 +41,7 @@ export default function EmailMarketingAgenciesPage() {
           heading: "R&D credits for email automation systems",
           body: (
             <p>
-              Custom Klaviyo flows, bespoke Zapier integrations, AI-generated subject line testing, deliverability monitoring tooling — these often qualify for R&D tax credits under HMRC's SME scheme. We assess every email marketing client for eligibility, especially those building proprietary email infrastructure beyond what Klaviyo or HubSpot provide out of the box.
+              Custom Klaviyo flows, bespoke Zapier integrations, AI-generated subject line testing, deliverability monitoring tooling, these often qualify for R&D tax credits under HMRC's SME scheme. We assess every email marketing client for eligibility, especially those building proprietary email infrastructure beyond what Klaviyo or HubSpot provide out of the box.
             </p>
           ),
         },
@@ -49,7 +49,7 @@ export default function EmailMarketingAgenciesPage() {
       faqs={[
         {
           q: "Are Klaviyo or HubSpot partner commissions trading income?",
-          a: "Yes. Partner programme commissions are trading income for your limited company and taxed at corporation tax rates. They're not capital and they're not employment income. The accounting timing is what matters — commission is usually recognised when earned (i.e. when the client's payment to Klaviyo triggers the commission), not when received.",
+          a: "Yes. Partner programme commissions are trading income for your limited company and taxed at corporation tax rates. They're not capital and they're not employment income. The accounting timing is what matters, commission is usually recognised when earned (i.e. when the client's payment to Klaviyo triggers the commission), not when received.",
         },
         {
           q: "Should I charge VAT on email marketing retainers to overseas clients?",

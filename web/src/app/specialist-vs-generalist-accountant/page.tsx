@@ -14,7 +14,7 @@ const data: Comparison = {
   competitorName: "Generalist accountant",
   pageTitle: "Specialist vs generalist accountant for UK agencies",
   intro: "Most UK agency founders start with a generalist high-street accountant who handles everything from butchers to consultants. As the agency grows, the question becomes whether a specialist agency accountant pays back the fee difference. This is the honest answer.",
-  honestyParagraph: "Generalist accountants are not bad — most are highly competent at compliance work and personable to deal with. The real question is whether the agency-specific complexity in your business has outgrown what a generalist sees on average across their client base. A generalist handling 200 mixed-sector clients sees an agency-tax decision once every few years. A specialist sees it every week.",
+  honestyParagraph: "Generalist accountants are not bad, most are highly competent at compliance work and personable to deal with. The real question is whether the agency-specific complexity in your business has outgrown what a generalist sees on average across their client base. A generalist handling 200 mixed-sector clients sees an agency-tax decision once every few years. A specialist sees it every week.",
   comparisonTable: [
     { feature: "Annual accounts + CT600", competitor: true, us: true },
     { feature: "VAT returns", competitor: true, us: true },
@@ -68,7 +68,7 @@ const data: Comparison = {
     },
     {
       q: "What if my current generalist accountant is good?",
-      a: "Many are. The test isn't whether they're good at compliance — most are. The test is whether they're spotting agency-specific opportunities and risks (R&D, IR35, BADR, multi-shareholder extraction, group structures). If they've never proactively flagged an R&D opportunity, never suggested alphabet shares, and never modelled an exit, you may be leaving money on the table.",
+      a: "Many are. The test isn't whether they're good at compliance, most are. The test is whether they're spotting agency-specific opportunities and risks (R&D, IR35, BADR, multi-shareholder extraction, group structures). If they've never proactively flagged an R&D opportunity, never suggested alphabet shares, and never modelled an exit, you may be leaving money on the table.",
     },
     {
       q: "How do I tell if I need a specialist now?",

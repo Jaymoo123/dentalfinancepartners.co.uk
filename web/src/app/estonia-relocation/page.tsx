@@ -39,11 +39,11 @@ const data: RelocationDestination = {
   faqs: [
     {
       q: "What's the difference between e-Residency and tax residency?",
-      a: "Crucial distinction. e-Residency is a digital identity that lets you remotely manage an Estonian company — it grants ZERO immigration rights, zero physical residency, zero tax residency. You're still tax resident wherever you physically live. Estonian tax residency requires physical presence in Estonia for 183+ days per year, plus other ties. Many UK founders use e-Residency to run an Estonian OÜ while living in the UK or elsewhere, which has tax implications HMRC will scrutinise. We help structure both routes properly.",
+      a: "Crucial distinction. e-Residency is a digital identity that lets you remotely manage an Estonian company, it grants ZERO immigration rights, zero physical residency, zero tax residency. You're still tax resident wherever you physically live. Estonian tax residency requires physical presence in Estonia for 183+ days per year, plus other ties. Many UK founders use e-Residency to run an Estonian OÜ while living in the UK or elsewhere, which has tax implications HMRC will scrutinise. We help structure both routes properly.",
     },
     {
       q: "How does Estonia's 0% corporate tax really work?",
-      a: "Estonia uniquely taxes corporate profits only when they're distributed as dividends, not when they're earned. Retain profits in the company and reinvest — no corporate tax. Distribute as dividends — 22% tax. For agency founders who want to build retained capital for acquisitions, R&D, or future expansion, this is materially better than the UK's 25% on profits regardless of distribution. The catch: when you do eventually take dividends, they're taxed at 22%.",
+      a: "Estonia uniquely taxes corporate profits only when they're distributed as dividends, not when they're earned. Retain profits in the company and reinvest, no corporate tax. Distribute as dividends, 22% tax. For agency founders who want to build retained capital for acquisitions, R&D, or future expansion, this is materially better than the UK's 25% on profits regardless of distribution. The catch: when you do eventually take dividends, they're taxed at 22%.",
     },
     {
       q: "Can I run my UK clients through an Estonian OÜ while living in the UK?",

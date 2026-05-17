@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 
 /**
- * UK 2025/26 tax model — salary vs dividend optimiser for a limited company
+ * UK 2025/26 tax model, salary vs dividend optimiser for a limited company
  * director with no other income.
  *
  * Approach: try every salary value from 0 to a sensible upper bound (£60k)
@@ -29,7 +29,7 @@ const CT_SMALL_THRESHOLD = 50000;
 const CT_MAIN_THRESHOLD = 250000;
 const CT_SMALL_RATE = 0.19;
 const CT_MAIN_RATE = 0.25;
-const EMPLOYMENT_ALLOWANCE = 5000; // most agencies qualify; one director only company does NOT — assume yes here
+const EMPLOYMENT_ALLOWANCE = 5000; // most agencies qualify; one director only company does NOT, assume yes here
 
 type Result = {
   salary: number;

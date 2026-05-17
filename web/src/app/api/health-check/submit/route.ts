@@ -177,7 +177,7 @@ export async function POST(req: NextRequest) {
       from: getFromAddress(),
       replyTo: getReplyTo(),
       to: answers.email,
-      subject: `Your Agency Finance Health Check — ${answers.company || answers.name}`,
+      subject: `Your Agency Finance Health Check, ${answers.company || answers.name}`,
       react: HealthCheckDelivery({ firstName, topThreeTitles }),
       attachments: [
         {
@@ -196,7 +196,7 @@ export async function POST(req: NextRequest) {
       from: getFromAddress(),
       to: getReplyTo(),
       replyTo: answers.email,
-      subject: `[Health check] ${answers.name}${answers.company ? ` — ${answers.company}` : ""}`,
+      subject: `[Health check] ${answers.name}${answers.company ? `, ${answers.company}` : ""}`,
       react: HealthCheckInternalAlert({
         answers,
         opportunities,

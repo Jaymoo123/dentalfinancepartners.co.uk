@@ -61,7 +61,7 @@ export async function POST(req: NextRequest) {
     });
   } catch (err) {
     console.error("subscribe/resend.send", err);
-    // Still 200 — record exists, user can retry
+    // Still 200, record exists, user can retry
   }
 
   return NextResponse.json({ ok: true });

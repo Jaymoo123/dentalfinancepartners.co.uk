@@ -60,7 +60,7 @@ export default function AgencyValuationPage() {
   const webApp = buildWebApplication({
     name: "Agency Valuation Calculator",
     description:
-      "Free UK agency valuation calculator. EBITDA × multiple model with adjustments for agency positioning, retainer revenue, client concentration and founder dependency. Inputs sync to the URL — shareable results render a branded valuation card on LinkedIn.",
+      "Free UK agency valuation calculator. EBITDA × multiple model with adjustments for agency positioning, retainer revenue, client concentration and founder dependency. Inputs sync to the URL, shareable results render a branded valuation card on LinkedIn.",
     path: "/calculators/agency-valuation",
     applicationCategory: "FinanceApplication",
   });
@@ -86,7 +86,7 @@ export default function AgencyValuationPage() {
               What is your agency worth?
             </h1>
             <p className="mt-4 text-lg text-slate-300">
-              EBITDA × multiple model with adjustments for agency positioning, retainer revenue, client concentration and founder dependency. Your inputs sync to the URL — share the link and your exact run renders with a branded card.
+              EBITDA × multiple model with adjustments for agency positioning, retainer revenue, client concentration and founder dependency. Your inputs sync to the URL, share the link and your exact run renders with a branded card.
             </p>
           </div>
         </div>

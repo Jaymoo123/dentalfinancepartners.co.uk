@@ -71,7 +71,7 @@ const data: RelocationDestination = {
     },
     {
       q: "Will Spanish wealth tax catch me?",
-      a: "Spain has a wealth tax on worldwide assets above certain thresholds, which varies by autonomous region. Madrid has effectively abolished it (100% relief). Catalonia has full wealth tax. Andalusia recently abolished it. If you're relocating, the region you choose materially affects your wealth tax exposure. We flag this in initial planning. Note: the Beckham Law does NOT cover wealth tax — Beckham-regime taxpayers are still subject to Spanish wealth tax on Spanish assets only.",
+      a: "Spain has a wealth tax on worldwide assets above certain thresholds, which varies by autonomous region. Madrid has effectively abolished it (100% relief). Catalonia has full wealth tax. Andalusia recently abolished it. If you're relocating, the region you choose materially affects your wealth tax exposure. We flag this in initial planning. Note: the Beckham Law does NOT cover wealth tax, Beckham-regime taxpayers are still subject to Spanish wealth tax on Spanish assets only.",
     },
     {
       q: "Can I run my UK Ltd from Spain?",

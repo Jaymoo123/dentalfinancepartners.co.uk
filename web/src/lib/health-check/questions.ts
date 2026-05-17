@@ -67,7 +67,7 @@ export const CONTRACTOR_OPTIONS: {
   label: string;
   helper: string;
 }[] = [
-  { value: "none", label: "None — all employees", helper: "PAYE workforce only" },
+  { value: "none", label: "None, all employees", helper: "PAYE workforce only" },
   { value: "occasional", label: "Occasional freelancers", helper: "A few per year" },
   { value: "regular", label: "Regular freelancers", helper: "Several engaged most months" },
   { value: "primary", label: "Primarily contractors", helper: "Contractor-led model" },

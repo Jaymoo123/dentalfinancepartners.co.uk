@@ -70,7 +70,7 @@ const data: AudienceStage = {
     },
     {
       q: "What's the BADR rate now and going forward?",
-      a: "BADR is 14% for disposals from 6 April 2025 (was 10% before then) and rises to 18% from 6 April 2026. The £1m lifetime limit is unchanged. For most founders, completing a sale before 6 April 2026 saves 4 percentage points — on a £1m gain that's £40,000. We track timing for clients with sales in progress.",
+      a: "BADR is 14% for disposals from 6 April 2025 (was 10% before then) and rises to 18% from 6 April 2026. The £1m lifetime limit is unchanged. For most founders, completing a sale before 6 April 2026 saves 4 percentage points, on a £1m gain that's £40,000. We track timing for clients with sales in progress.",
     },
     {
       q: "What's the difference between a share sale and an asset sale for me?",
@@ -78,11 +78,11 @@ const data: AudienceStage = {
     },
     {
       q: "How much of the price is typically deferred or earn-out?",
-      a: "In UK agency sales: 50-70% paid on completion is typical for a clean sale, with the remainder as earn-out over 12-36 months tied to revenue or EBITDA targets. The tax treatment of the deferred amount depends on contract structure — get it wrong and you pay income tax (47%) instead of CGT (14%). This is the single most important contract review in the deal.",
+      a: "In UK agency sales: 50-70% paid on completion is typical for a clean sale, with the remainder as earn-out over 12-36 months tied to revenue or EBITDA targets. The tax treatment of the deferred amount depends on contract structure, get it wrong and you pay income tax (47%) instead of CGT (14%). This is the single most important contract review in the deal.",
     },
     {
       q: "Should I use an M&A advisor or just an accountant?",
-      a: "Both, ideally. An M&A advisor (corporate finance specialist) handles the deal process, buyer outreach, valuation defence, and negotiations. A specialist accountant handles the tax position, sale-ready accounts, BADR qualification, earn-out review, and post-sale planning. They work together. We can refer to M&A advisors who specialise in agency sales — they know the buyers and the comparable transactions.",
+      a: "Both, ideally. An M&A advisor (corporate finance specialist) handles the deal process, buyer outreach, valuation defence, and negotiations. A specialist accountant handles the tax position, sale-ready accounts, BADR qualification, earn-out review, and post-sale planning. They work together. We can refer to M&A advisors who specialise in agency sales, they know the buyers and the comparable transactions.",
     },
   ],
   ctaTitle: "Plan your agency exit properly",

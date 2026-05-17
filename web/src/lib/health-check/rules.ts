@@ -6,7 +6,7 @@ import type {
 import { REVENUE_BAND_OPTIONS } from "./questions";
 
 /**
- * Rules engine — maps a HealthCheckAnswers shape to a prioritised list of
+ * Rules engine, maps a HealthCheckAnswers shape to a prioritised list of
  * Opportunity records. Each rule is small, isolated, and either emits an
  * Opportunity or not.
  *
@@ -16,7 +16,7 @@ import { REVENUE_BAND_OPTIONS } from "./questions";
  *   low → small efficiency tweak
  *   info → educational, no action implied
  *
- * Rules should be defensive about missing/zero values — the wizard collects
+ * Rules should be defensive about missing/zero values, the wizard collects
  * everything but rules engine runs against potentially partial data too
  * (e.g. quick-mode in the future).
  */
@@ -77,7 +77,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
         category: "extraction",
         title: "Your salary looks too high for tax efficiency",
         detail:
-          "Salary above the NI primary threshold attracts 8% employee NI and ~15% employer NI. Most owner-managed Ltd companies pay a salary near £12,570 and top up via dividends — the dividend route avoids NI altogether and the tax saving compounds over a year.",
+          "Salary above the NI primary threshold attracts 8% employee NI and ~15% employer NI. Most owner-managed Ltd companies pay a salary near £12,570 and top up via dividends, the dividend route avoids NI altogether and the tax saving compounds over a year.",
         action:
           "Model the optimised salary–dividend mix for your profit level. The saving is usually £2,000–£6,000 a year.",
         estimatedSaving: "£2,000–£6,000 / year",
@@ -125,7 +125,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
       category: "vat",
       title: "VAT scheme review",
       detail:
-        "Above the £90,000 registration threshold you're presumably VAT-registered. The default Standard scheme isn't always optimal — Flat Rate, Cash Accounting and Annual Accounting each suit different agency models. Most creative and consulting agencies are better on Standard with quarterly reclaims.",
+        "Above the £90,000 registration threshold you're presumably VAT-registered. The default Standard scheme isn't always optimal, Flat Rate, Cash Accounting and Annual Accounting each suit different agency models. Most creative and consulting agencies are better on Standard with quarterly reclaims.",
       action: "Run the VAT scheme comparator with your numbers.",
       reference: "/calculators/vat-scheme-comparator",
     });
@@ -136,7 +136,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
       category: "vat",
       title: "You're approaching the VAT threshold",
       detail:
-        "The registration threshold is £90,000 of taxable turnover on a rolling 12-month basis. Crossing it without registering is a compliance risk. There are also legitimate planning options around the threshold — splitting client billing, pre-registration cap-ex, scheme choice — that need to be modelled before you cross.",
+        "The registration threshold is £90,000 of taxable turnover on a rolling 12-month basis. Crossing it without registering is a compliance risk. There are also legitimate planning options around the threshold, splitting client billing, pre-registration cap-ex, scheme choice, that need to be modelled before you cross.",
       action: "Plan the registration before you trip the threshold.",
     });
   }
@@ -152,7 +152,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
       category: "r-and-d",
       title: "You may be missing R&D tax credits",
       detail:
-        "Agencies in your category often qualify for R&D relief without realising — custom integrations, model fine-tuning, novel attribution work, scraping at scale, automation of previously manual workflows. The merged scheme gives a headline credit of 20% (effective net benefit ~15% after corporation tax).",
+        "Agencies in your category often qualify for R&D relief without realising, custom integrations, model fine-tuning, novel attribution work, scraping at scale, automation of previously manual workflows. The merged scheme gives a headline credit of 20% (effective net benefit ~15% after corporation tax).",
       action: "Run the R&D eligibility checklist and the credit estimator.",
       estimatedSaving: "Typically 10–18% of qualifying R&D spend",
       reference: "/r-and-d-credits",
@@ -221,7 +221,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
       id: "uae-route",
       severity: "high",
       category: "international",
-      title: "UAE planning — get the sequence right",
+      title: "UAE planning, get the sequence right",
       detail:
         "A UAE move is a multi-year programme, not a quarter. You need to break UK tax residence under the Statutory Residence Test, set up a UAE entity that's substantively run there, and manage UK client contracts so you don't pull yourself back into UK source income. Done badly it triggers a temporary non-residence charge on return.",
       action: "Map the timeline before you sign a lease in Dubai.",
@@ -253,7 +253,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
       id: "badr-clock",
       severity: "high",
       category: "exit",
-      title: "BADR 2-year clock — start it now if not already",
+      title: "BADR 2-year clock, start it now if not already",
       detail:
         "Business Asset Disposal Relief requires you to have held the qualifying shares (5%+) AND been an officer/employee for the full 2 years pre-disposal. Selling without the clock running costs you the difference between 14% (or 18% from April 2026) and 24%. On a £1M gain that's £100–£140k.",
       action: "Confirm shareholding structure and employment status today.",
@@ -281,7 +281,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
       category: "exit",
       title: "Sale prep should start now, not in year 4",
       detail:
-        "Sale-ready agencies are built — clean management accounts, retained EBITDA history, normalised owner remuneration, low key-person dependency, retainer revenue %, contract assignability. Buyers discount for every gap.",
+        "Sale-ready agencies are built, clean management accounts, retained EBITDA history, normalised owner remuneration, low key-person dependency, retainer revenue %, contract assignability. Buyers discount for every gap.",
       action: "Run the agency valuation calculator with realistic adjustments to see where the gaps cost you.",
       reference: "/calculators/agency-valuation",
     });
@@ -309,7 +309,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
         category: "mtd",
         title: "MTD ITSA hits you in April 2027",
         detail:
-          "The £30k threshold lands a year after the £50k one. Plan the software switch ahead of time — last-minute migrations under deadline are where compliance breaks.",
+          "The £30k threshold lands a year after the £50k one. Plan the software switch ahead of time, last-minute migrations under deadline are where compliance breaks.",
         action: "Pick MTD-compatible software in 2026.",
       });
     }
@@ -327,7 +327,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
         category: "pension",
         title: "Employer pension is the highest-ROI extraction route",
         detail:
-          "Up to £60,000/year of employer pension contributions are corporation-tax deductible AND outside personal tax — neither salary nor dividend route comes close on net efficiency. Unused allowance from the previous 3 years can be carried forward.",
+          "Up to £60,000/year of employer pension contributions are corporation-tax deductible AND outside personal tax, neither salary nor dividend route comes close on net efficiency. Unused allowance from the previous 3 years can be carried forward.",
         action:
           "Model a £20,000–£60,000 employer contribution; benchmark against the equivalent net dividend.",
         estimatedSaving: "Up to £19,500 / year per £60k contribution",
@@ -350,7 +350,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
       category: "extraction",
       title: "Confirm Employment Allowance position",
       detail:
-        "Employment Allowance is £10,500 of employer NI relief. Single-director Ltd companies don't qualify. Multi-director or employee-heavy agencies usually do. Worth checking annually — eligibility rules change.",
+        "Employment Allowance is £10,500 of employer NI relief. Single-director Ltd companies don't qualify. Multi-director or employee-heavy agencies usually do. Worth checking annually, eligibility rules change.",
       action: "Audit EA eligibility for the current tax year.",
     });
   }

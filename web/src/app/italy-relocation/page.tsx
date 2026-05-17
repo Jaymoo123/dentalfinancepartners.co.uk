@@ -51,7 +51,7 @@ const data: RelocationDestination = {
     },
     {
       q: "What about IVAFE on UK assets I keep?",
-      a: "IVAFE is Italy's wealth tax on foreign financial assets — 0.2% per year on the value of foreign bank accounts, investments, and pension funds held by Italian tax residents. If you keep significant UK ISAs, brokerage accounts or pension funds while becoming Italian resident, IVAFE adds an annual cost. Property held abroad has a separate IVIE wealth tax (0.76%). We model exposure to both for clients with cross-border asset bases.",
+      a: "IVAFE is Italy's wealth tax on foreign financial assets, 0.2% per year on the value of foreign bank accounts, investments, and pension funds held by Italian tax residents. If you keep significant UK ISAs, brokerage accounts or pension funds while becoming Italian resident, IVAFE adds an annual cost. Property held abroad has a separate IVIE wealth tax (0.76%). We model exposure to both for clients with cross-border asset bases.",
     },
     {
       q: "Can you advise on Italian tax?",

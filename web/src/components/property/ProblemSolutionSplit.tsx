@@ -25,7 +25,7 @@ export function ProblemSolutionSplit() {
           <li className="flex gap-2">
             <span className="mt-0.5 flex-shrink-0 text-red-600" aria-hidden>✗</span>
             <span>
-              <strong>No portfolio visibility</strong> — which properties are actually profitable after all costs?
+              <strong>No portfolio visibility</strong>, which properties are actually profitable after all costs?
             </span>
           </li>
         </ul>

@@ -12,7 +12,7 @@ import {
 } from "@/lib/valuation";
 
 /**
- * Agency valuation calculator — EBITDA × multiple model with adjustments.
+ * Agency valuation calculator, EBITDA × multiple model with adjustments.
  *
  * State is mirrored into the URL on each change (debounced) so any run is
  * shareable: copy the URL, post to LinkedIn, and the dynamic OG card
@@ -208,7 +208,7 @@ export function AgencyValuationCalculator() {
               className="mt-1 h-4 w-4 accent-indigo-600"
             />
             <label htmlFor="kp" className="text-sm text-slate-700">
-              <span className="font-semibold text-slate-900">Founder-dependent</span> — if the agency would meaningfully suffer without you in the business day-to-day, tick this. Reduces valuation.
+              <span className="font-semibold text-slate-900">Founder-dependent</span>, if the agency would meaningfully suffer without you in the business day-to-day, tick this. Reduces valuation.
             </label>
           </div>
         </div>
@@ -276,7 +276,7 @@ function ShareCard() {
   useEffect(() => {
     setHref(window.location.href);
     const onChange = () => setHref(window.location.href);
-    // URL changes via router.replace don't fire popstate — observe via interval
+    // URL changes via router.replace don't fire popstate, observe via interval
     const id = window.setInterval(onChange, 500);
     return () => window.clearInterval(id);
   }, []);

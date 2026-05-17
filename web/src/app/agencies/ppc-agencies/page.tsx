@@ -53,7 +53,7 @@ export default function PPCAgenciesPage() {
         },
         {
           q: "Do I charge VAT on Google Ads or Meta Ads management fees to clients?",
-          a: "If your client is UK-based and VAT registered, yes — 20% standard rate. For overseas business clients, the supply is usually outside UK VAT scope and the client accounts for VAT under the reverse charge mechanism. We help PPC agencies structure invoicing correctly for international client books.",
+          a: "If your client is UK-based and VAT registered, yes, 20% standard rate. For overseas business clients, the supply is usually outside UK VAT scope and the client accounts for VAT under the reverse charge mechanism. We help PPC agencies structure invoicing correctly for international client books.",
         },
         {
           q: "Are performance bonuses tied to CPA or ROAS taxed differently?",

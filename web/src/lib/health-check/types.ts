@@ -1,5 +1,5 @@
 /**
- * Health check submission shape — wire format between wizard, API, rules
+ * Health check submission shape, wire format between wizard, API, rules
  * engine and PDF generator. Keep these types stable; the rules engine
  * branches on the literal string values.
  */

@@ -43,7 +43,7 @@ const data: AudienceStage = {
     {
       icon: PoundSterling,
       title: "What's the right software setup?",
-      body: "Xero or FreeAgent for most agencies. We set up your chart of accounts properly from day one — fixing it later is expensive.",
+      body: "Xero or FreeAgent for most agencies. We set up your chart of accounts properly from day one, fixing it later is expensive.",
     },
     {
       icon: FileQuestion,
@@ -78,7 +78,7 @@ const data: AudienceStage = {
     },
     {
       q: "Can I use my personal bank account for the business?",
-      a: "Technically yes if you're a sole trader. Strongly not recommended even then. If you incorporate, the company MUST have its own bank account — mixing personal and business money creates director's loan account issues that trigger S455 tax (33.75% rate). Open a Mettle, Starling, or Tide account day one.",
+      a: "Technically yes if you're a sole trader. Strongly not recommended even then. If you incorporate, the company MUST have its own bank account, mixing personal and business money creates director's loan account issues that trigger S455 tax (33.75% rate). Open a Mettle, Starling, or Tide account day one.",
     },
     {
       q: "What happens if I get this wrong?",

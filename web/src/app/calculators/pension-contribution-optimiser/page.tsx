@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "How is an employer pension contribution treated for tax?",
-    a: "An employer pension contribution from your limited company is treated as an allowable business expense — it reduces your taxable profit and therefore your corporation tax bill. It's not subject to employer NI, employee NI or income tax at the point of contribution. The whole amount lands in the pension. The trade-off is that the money is locked in until you reach pension access age (currently 55, rising to 57 in April 2028).",
+    a: "An employer pension contribution from your limited company is treated as an allowable business expense, it reduces your taxable profit and therefore your corporation tax bill. It's not subject to employer NI, employee NI or income tax at the point of contribution. The whole amount lands in the pension. The trade-off is that the money is locked in until you reach pension access age (currently 55, rising to 57 in April 2028).",
   },
   {
     q: "What's the annual allowance for 2025/26?",
@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: "Is the contribution wholly and exclusively for business purposes?",
-    a: "For a director who is genuinely working in the business, HMRC generally accepts an employer pension contribution as wholly and exclusively for business if it's in proportion to the work done — i.e. it could reasonably be part of an overall remuneration package. Very large contributions for a non-working spouse or in excess of total package norms can be challenged.",
+    a: "For a director who is genuinely working in the business, HMRC generally accepts an employer pension contribution as wholly and exclusively for business if it's in proportion to the work done, i.e. it could reasonably be part of an overall remuneration package. Very large contributions for a non-working spouse or in excess of total package norms can be challenged.",
   },
   {
     q: "Better to put more into salary or into pension?",
@@ -86,10 +86,10 @@ export default function PensionContributionOptimiserPage() {
             <div className="mt-12 border-l-4 border-indigo-600 bg-slate-50 p-6 sm:p-8">
               <h2 className="text-xl font-bold text-slate-900">How this works</h2>
               <p className="mt-3 text-base text-slate-700 leading-relaxed">
-                An employer pension contribution from your limited company is an allowable business expense, so it reduces your taxable profit and therefore your corporation tax. The full amount lands in your pension — no income tax, no NI. The calculator models the corporation tax saving, then compares the value of the contribution to what you'd net if you took the same money as a dividend instead.
+                An employer pension contribution from your limited company is an allowable business expense, so it reduces your taxable profit and therefore your corporation tax. The full amount lands in your pension, no income tax, no NI. The calculator models the corporation tax saving, then compares the value of the contribution to what you'd net if you took the same money as a dividend instead.
               </p>
               <p className="mt-3 text-base text-slate-700 leading-relaxed">
-                It applies the 2025/26 annual allowance of £60,000 and the taper for adjusted income above £260,000. Carry-forward is not modelled — speak to us if you want to use unused allowance from previous years.
+                It applies the 2025/26 annual allowance of £60,000 and the taper for adjusted income above £260,000. Carry-forward is not modelled, speak to us if you want to use unused allowance from previous years.
               </p>
             </div>
 
@@ -110,7 +110,7 @@ export default function PensionContributionOptimiserPage() {
                 Want a full extraction strategy that includes pensions?
               </h2>
               <p className="mt-3 text-base sm:text-lg text-slate-200 leading-relaxed">
-                Book a free call. We will model your real position — salary, dividends, employer pension, retained earnings and exit timing — to find the most efficient mix for the next three to five years.
+                Book a free call. We will model your real position, salary, dividends, employer pension, retained earnings and exit timing, to find the most efficient mix for the next three to five years.
               </p>
               <Link
                 href="/contact"

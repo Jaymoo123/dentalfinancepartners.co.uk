@@ -35,7 +35,7 @@ export function SignupForm({
 }: Props) {
   const [email, setEmail] = useState("");
   const [agencyType, setAgencyType] = useState("");
-  // Honeypot — humans never fill this; bots typically do. Filled => silent reject.
+  // Honeypot, humans never fill this; bots typically do. Filled => silent reject.
   const [website, setWebsite] = useState("");
   const [state, setState] = useState<"idle" | "submitting" | "ok" | "err">("idle");
   const [error, setError] = useState<string | null>(null);
@@ -92,7 +92,7 @@ export function SignupForm({
 
   return (
     <form onSubmit={onSubmit} className={containerClass} noValidate>
-      {/* Honeypot — visually hidden, off-screen, autocomplete off. Real users won't touch it. */}
+      {/* Honeypot, visually hidden, off-screen, autocomplete off. Real users won't touch it. */}
       <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }}>
         <label htmlFor={`newsletter-website-${source}`}>Website (leave blank)</label>
         <input

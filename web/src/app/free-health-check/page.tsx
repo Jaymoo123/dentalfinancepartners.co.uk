@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Free, instant agency finance health check for UK founders. Answer 12 questions, get a personalised PDF report flagging tax, structure, VAT, R&D and exit opportunities. ICAEW-quality framework.",
   alternates: { canonical: `${siteConfig.url}/free-health-check` },
   openGraph: {
-    title: "Free Agency Finance Health Check — instant personalised PDF",
+    title: "Free Agency Finance Health Check, instant personalised PDF",
     description:
       "Two minutes in, a personalised PDF report by email. We run your answers against 20+ checks across extraction, R&D, VAT, IR35, exit and international.",
     url: `${siteConfig.url}/free-health-check`,
@@ -40,7 +40,7 @@ const includes = [
   {
     icon: MessageSquare,
     title: "Exit, IR35 & international flags",
-    body: "BADR qualifying period, IR35 exposure on contractors, US withholding tax, UAE relocation sequencing — anything material to your specific setup.",
+    body: "BADR qualifying period, IR35 exposure on contractors, US withholding tax, UAE relocation sequencing, anything material to your specific setup.",
   },
 ];
 
@@ -48,7 +48,7 @@ const steps = [
   {
     n: "01",
     title: "Answer 12 questions",
-    body: "Multi-step wizard. Two minutes. Anonymised — we ask for a band, not your actual VAT number.",
+    body: "Multi-step wizard. Two minutes. Anonymised, we ask for a band, not your actual VAT number.",
   },
   {
     n: "02",
@@ -65,11 +65,11 @@ const steps = [
 const faqs = [
   {
     q: "Is this actually free?",
-    a: "Yes. No card, no follow-up sales drip. The PDF is generated from your inputs and lands in your inbox in a couple of minutes. We do this because most agency founders we speak to have at least 2–3 tax inefficiencies that surface in a 12-question scan — we'd rather demonstrate the analysis than send a brochure.",
+    a: "Yes. No card, no follow-up sales drip. The PDF is generated from your inputs and lands in your inbox in a couple of minutes. We do this because most agency founders we speak to have at least 2–3 tax inefficiencies that surface in a 12-question scan, we'd rather demonstrate the analysis than send a brochure.",
   },
   {
     q: "How accurate is the report?",
-    a: "Directional. The rules engine uses 2025/26 UK tax figures and flags opportunities that almost always need a closer look. Indicative impact figures are based on typical agency profiles. The PDF is explicit that it's editorial, not personalised advice — for decisions specific to your agency, book a call.",
+    a: "Directional. The rules engine uses 2025/26 UK tax figures and flags opportunities that almost always need a closer look. Indicative impact figures are based on typical agency profiles. The PDF is explicit that it's editorial, not personalised advice, for decisions specific to your agency, book a call.",
   },
   {
     q: "What do you do with my data?",
@@ -77,7 +77,7 @@ const faqs = [
   },
   {
     q: "Do you really not push for a sale?",
-    a: "Correct. The PDF includes a soft CTA to book a call if you want to dig deeper. We don't auto-enroll you in a sales sequence. About half the agencies we eventually work with came back to us months later — the analysis is the offer, not the appointment.",
+    a: "Correct. The PDF includes a soft CTA to book a call if you want to dig deeper. We don't auto-enroll you in a sales sequence. About half the agencies we eventually work with came back to us months later, the analysis is the offer, not the appointment.",
   },
 ];
 
@@ -90,7 +90,7 @@ export default function FreeHealthCheckPage() {
     serviceType: "Agency finance health check",
     areaServed: "United Kingdom",
   });
-  // Free offer — extend the Service with an Offer
+  // Free offer, extend the Service with an Offer
   (service as Record<string, unknown>).offers = {
     "@type": "Offer",
     price: "0",
@@ -122,7 +122,7 @@ export default function FreeHealthCheckPage() {
             <p className="mt-6 text-xl sm:text-2xl leading-relaxed text-slate-200 max-w-3xl">
               Answer 12 questions. Receive a personalised PDF by email. We flag
               tax, structure, R&amp;D, IR35, VAT, exit and international
-              opportunities — each one priced and actionable.
+              opportunities, each one priced and actionable.
             </p>
           </div>
         </div>

@@ -14,7 +14,7 @@ const data: Comparison = {
   competitorName: "Mazuma",
   pageTitle: "Mazuma vs Agency Founder Finance",
   intro: "If you're weighing Mazuma against a specialist agency accountant, this is the honest comparison. Both have a place. The right answer depends on what stage your agency is at and how much specialist advice you actually need.",
-  honestyParagraph: "Mazuma is a well-known online accountancy service serving thousands of UK small businesses. They do compliance work cheaply, reliably, and at scale. We are a specialist firm working exclusively with UK and UAE agency founders. The comparison is fair only at the level of what each does best — they are not really the same product.",
+  honestyParagraph: "Mazuma is a well-known online accountancy service serving thousands of UK small businesses. They do compliance work cheaply, reliably, and at scale. We are a specialist firm working exclusively with UK and UAE agency founders. The comparison is fair only at the level of what each does best, they are not really the same product.",
   comparisonTable: [
     { feature: "Pricing model", competitor: "From ~£25/mo fixed", us: "Fixed fee £1,200-£8,000/year depending on complexity" },
     { feature: "Annual accounts + CT600", competitor: true, us: true },
@@ -60,11 +60,11 @@ const data: Comparison = {
     },
     {
       q: "Can I switch back to a cheaper service later?",
-      a: "Yes. Switching accountants in either direction is straightforward — your data lives in Xero/QuickBooks/FreeAgent, not with your accountant. We provide full handover support if you decide to switch to a cheaper service later (or to a different specialist). We won't lock you in.",
+      a: "Yes. Switching accountants in either direction is straightforward, your data lives in Xero/QuickBooks/FreeAgent, not with your accountant. We provide full handover support if you decide to switch to a cheaper service later (or to a different specialist). We won't lock you in.",
     },
     {
       q: "How do you keep fees competitive vs Mazuma?",
-      a: "We can't compete on price for pure compliance work — Mazuma's volume model is genuinely efficient. We compete on specialist value: R&D claims, IR35 work, multi-shareholder extraction, exit planning. For agency founders past the early stage, the specialist value is several multiples of the fee differential.",
+      a: "We can't compete on price for pure compliance work, Mazuma's volume model is genuinely efficient. We compete on specialist value: R&D claims, IR35 work, multi-shareholder extraction, exit planning. For agency founders past the early stage, the specialist value is several multiples of the fee differential.",
     },
     {
       q: "Do you do basic bookkeeping?",

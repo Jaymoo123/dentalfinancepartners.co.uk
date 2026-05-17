@@ -2,12 +2,12 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
 
 /**
- * robots.txt — explicit allow-list for every major AI / search engine
+ * robots.txt, explicit allow-list for every major AI / search engine
  * crawler we want courting us. Explicit named rules beat the wildcard
  * because some bots only honour their own entry.
  *
  * Disallow list is deliberately minimal: thank-you (post-conversion only),
- * /api/og (image generation — wasteful for crawlers), /api/* mutating routes.
+ * /api/og (image generation, wasteful for crawlers), /api/* mutating routes.
  */
 export default function robots(): MetadataRoute.Robots {
   const base = siteConfig.url.replace(/\/$/, "");

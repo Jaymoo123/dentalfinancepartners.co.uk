@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 const testimonials = [
   {
     quote:
-      "They helped me understand whether incorporation made sense for my 6-property portfolio. The feasibility analysis showed it would take 4 years to break even — so we decided to wait. That honest advice saved me £30k in upfront costs.",
+      "They helped me understand whether incorporation made sense for my 6-property portfolio. The feasibility analysis showed it would take 4 years to break even, so we decided to wait. That honest advice saved me £30k in upfront costs.",
     author: "Sarah Mitchell",
     role: "Portfolio owner, 6 properties",
     outcome: "Saved £30k by NOT incorporating",
@@ -29,7 +29,7 @@ const testimonials = [
   },
   {
     quote:
-      "Section 24 was costing me £6,400 a year. They modelled incorporation properly — including CGT and SDLT — and it made financial sense. Three years in, I'm already £12k better off.",
+      "Section 24 was costing me £6,400 a year. They modelled incorporation properly, including CGT and SDLT, and it made financial sense. Three years in, I'm already £12k better off.",
     author: "James Patterson",
     role: "Portfolio owner, 12 properties",
     outcome: "Saved £6,400/year after incorporating",

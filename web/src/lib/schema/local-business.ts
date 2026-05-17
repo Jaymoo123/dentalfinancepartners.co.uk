@@ -6,7 +6,7 @@ export type LocalBusinessInput = {
   city: string;
   /** Canonical URL, absolute or path-only */
   url: string;
-  /** Plain-English page title — used as `name` */
+  /** Plain-English page title, used as `name` */
   name: string;
   description: string;
   /** Optional street address; LocalBusiness needs at least addressLocality + addressCountry */

@@ -18,7 +18,7 @@ export function SiteFooter() {
               <SignupForm
                 source="footer"
                 heading="The Agency Founder Tax Brief"
-                body="One short email a week — UK + UAE tax for agency founders. Plain text, unsubscribe one click."
+                body="One short email a week, UK + UAE tax for agency founders. Plain text, unsubscribe one click."
                 ctaLabel="Subscribe"
                 showAgencyType={false}
               />

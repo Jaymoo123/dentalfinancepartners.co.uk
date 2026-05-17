@@ -19,7 +19,7 @@ export default function InfluencerMarketingAgenciesPage() {
     <AgencyTypeLayout
       slug="influencer-marketing-agencies"
       title="Accountants for influencer marketing agencies"
-      hero="Specialist tax and accounting for UK influencer marketing agency founders. Creator payments, cross-border tax compliance, IR35 risk and the messy reality of paying talent across 30 countries — we handle it."
+      hero="Specialist tax and accounting for UK influencer marketing agency founders. Creator payments, cross-border tax compliance, IR35 risk and the messy reality of paying talent across 30 countries, we handle it."
       sections={[
         {
           heading: "Paying creators across borders",
@@ -53,7 +53,7 @@ export default function InfluencerMarketingAgenciesPage() {
         },
         {
           q: "Do I charge VAT on influencer fees I pay to overseas creators?",
-          a: "You don't charge VAT on payments to creators — they're invoicing you, not the other way around. But you may need to account for VAT on the supply received under the reverse charge mechanism if the creator is in another country. The rules differ for EU vs non-EU creators. We handle this for influencer marketing agencies with global creator books.",
+          a: "You don't charge VAT on payments to creators, they're invoicing you, not the other way around. But you may need to account for VAT on the supply received under the reverse charge mechanism if the creator is in another country. The rules differ for EU vs non-EU creators. We handle this for influencer marketing agencies with global creator books.",
         },
         {
           q: "What's the tax treatment for talent management commission?",

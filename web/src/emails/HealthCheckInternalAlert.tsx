@@ -16,7 +16,7 @@ export default function HealthCheckInternalAlert({
 }: Props) {
   const high = opportunities.filter((o) => o.severity === "high");
   return (
-    <EmailLayout preview={`New health check submission — ${answers.name}`}>
+    <EmailLayout preview={`New health check submission, ${answers.name}`}>
       <Section>
         <Text style={h1}>New health check submission</Text>
         <Text style={p}>
@@ -41,7 +41,7 @@ export default function HealthCheckInternalAlert({
               <li key={o.id} style={li}>
                 <Text style={p}>
                   <strong>{o.title}</strong>
-                  {o.estimatedSaving ? ` — ${o.estimatedSaving}` : ""}
+                  {o.estimatedSaving ? `, ${o.estimatedSaving}` : ""}
                 </Text>
               </li>
             ))}

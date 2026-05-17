@@ -197,7 +197,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
               <InlinePrompt
                 source={`blog-${categorySlug}-${post.slug}`.slice(0, 80)}
                 heading="Get the Tax Brief in your inbox."
-                body={`One short email a week — UK + UAE tax for agency founders. Plain text, unsubscribe one click. Most useful when ${post.category.toLowerCase()} is on your mind.`}
+                body={`One short email a week, UK + UAE tax for agency founders. Plain text, unsubscribe one click. Most useful when ${post.category.toLowerCase()} is on your mind.`}
               />
 
               {post.faqs && post.faqs.length > 0 ? (

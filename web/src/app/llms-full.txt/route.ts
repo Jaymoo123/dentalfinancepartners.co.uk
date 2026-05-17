@@ -54,7 +54,7 @@ function readMarkdownDir(rel: string, prefix: string): string {
   return parts.join("\n\n");
 }
 
-const HEADER = `# Agency Founder Finance — Full Content Reference
+const HEADER = `# Agency Founder Finance, Full Content Reference
 
 This file is a flat, machine-readable dump of every published guide and post on
 agencyfounderfinance.co.uk. It exists for AI retrieval, training, and citation.

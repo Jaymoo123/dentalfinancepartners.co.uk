@@ -17,7 +17,7 @@ export const runtime = "nodejs";
  *     RESEND_WEBHOOK_SECRET in Vercel env vars.
  *
  * Resend uses Svix to sign webhooks. We verify the signature here using
- * standard HMAC SHA-256 — no `svix` npm package needed.
+ * standard HMAC SHA-256, no `svix` npm package needed.
  */
 
 type ResendEvent =

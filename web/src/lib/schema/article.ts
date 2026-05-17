@@ -11,7 +11,7 @@ const SPEAKABLE = {
 };
 
 /**
- * Article schema for Fundamentals pillar guides and founder stories — more
+ * Article schema for Fundamentals pillar guides and founder stories, more
  * authoritative than BlogPosting and signals long-form / evergreen content
  * to crawlers.
  */

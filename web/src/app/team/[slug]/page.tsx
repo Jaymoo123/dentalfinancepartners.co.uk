@@ -19,12 +19,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!m) return {};
   const url = `${siteConfig.url.replace(/\/$/, "")}/team/${m.slug}`;
   return {
-    title: `${m.name} — ${m.role}`,
+    title: `${m.name}, ${m.role}`,
     description: m.shortBio,
     alternates: { canonical: url },
     openGraph: {
       type: "profile",
-      title: `${m.name} — ${m.role}`,
+      title: `${m.name}, ${m.role}`,
       description: m.shortBio,
       url,
     },

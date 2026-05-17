@@ -19,7 +19,7 @@ export default function SaaSAgenciesPage() {
     <AgencyTypeLayout
       slug="saas-agencies"
       title="Accountants for SaaS and software agencies"
-      hero="Specialist tax and accounting for UK SaaS and software agency founders. Product versus services revenue split, R&D tax credits on custom builds, deferred revenue for subscriptions, valuation multiples that reward recurring revenue — we know how to structure software agencies for tax and exit."
+      hero="Specialist tax and accounting for UK SaaS and software agency founders. Product versus services revenue split, R&D tax credits on custom builds, deferred revenue for subscriptions, valuation multiples that reward recurring revenue, we know how to structure software agencies for tax and exit."
       sections={[
         {
           heading: "Product vs services revenue split",
@@ -41,7 +41,7 @@ export default function SaaSAgenciesPage() {
           heading: "R&D tax credits on custom builds",
           body: (
             <p>
-              Custom software development that involves genuine technical advancement typically qualifies for R&D tax credits under HMRC's SME scheme. Building novel architecture, custom integrations between systems that don't have off-the-shelf connectors, performance optimisations that exceed published benchmarks, bespoke developer tooling — these all often qualify. We assess every software client as standard and have processed claims into six figures.
+              Custom software development that involves genuine technical advancement typically qualifies for R&D tax credits under HMRC's SME scheme. Building novel architecture, custom integrations between systems that don't have off-the-shelf connectors, performance optimisations that exceed published benchmarks, bespoke developer tooling, these all often qualify. We assess every software client as standard and have processed claims into six figures.
             </p>
           ),
         },
@@ -53,11 +53,11 @@ export default function SaaSAgenciesPage() {
         },
         {
           q: "When do I recognise revenue on an annual subscription paid upfront?",
-          a: "Spread it across the 12 months of the subscription. The cash sits on your balance sheet as deferred revenue and is released to the P&L each month as earned. Don't recognise it all in month one — that overstates profit and creates a corporation tax bill on cash you haven't really earned yet. Standard SaaS accounting treatment.",
+          a: "Spread it across the 12 months of the subscription. The cash sits on your balance sheet as deferred revenue and is released to the P&L each month as earned. Don't recognise it all in month one, that overstates profit and creates a corporation tax bill on cash you haven't really earned yet. Standard SaaS accounting treatment.",
         },
         {
           q: "Does my custom software work qualify for R&D tax credits?",
-          a: "Usually yes if there's genuine technical uncertainty or advancement. Custom architecture, novel integrations, performance optimisations beyond published benchmarks, bespoke developer tooling — these typically qualify. Pure CMS implementation, theme customisation, or wiring up off-the-shelf APIs without technical advancement does not. We assess project-by-project.",
+          a: "Usually yes if there's genuine technical uncertainty or advancement. Custom architecture, novel integrations, performance optimisations beyond published benchmarks, bespoke developer tooling, these typically qualify. Pure CMS implementation, theme customisation, or wiring up off-the-shelf APIs without technical advancement does not. We assess project-by-project.",
         },
       ]}
       relatedTypes={[

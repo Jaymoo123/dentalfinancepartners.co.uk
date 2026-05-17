@@ -75,7 +75,7 @@ const data: AudienceStage = {
     },
     {
       q: "How often should I get management accounts?",
-      a: "Monthly. Quarterly is too slow for a growth-stage agency — by the time you spot a margin drop or cash flow issue, you're already two quarters behind. Monthly accounts with a 15-minute review call let you adjust quickly.",
+      a: "Monthly. Quarterly is too slow for a growth-stage agency, by the time you spot a margin drop or cash flow issue, you're already two quarters behind. Monthly accounts with a 15-minute review call let you adjust quickly.",
     },
     {
       q: "Should I switch from cash accounting to accruals?",

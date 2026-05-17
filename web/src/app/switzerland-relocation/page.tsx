@@ -43,7 +43,7 @@ const data: RelocationDestination = {
     },
     {
       q: "What's lump-sum taxation?",
-      a: "Switzerland offers a lump-sum (forfait) taxation regime where non-Swiss-resident wealthy individuals (and their families) can negotiate a fixed annual tax based on their living expenses, rather than declared income. Available in most cantons (not Zurich, Basel, Schaffhausen). Minimum thresholds vary — typically CHF 400,000+ annual lump-sum. Best for founders with substantial passive income they don't want to declare in detail. Not available for those who plan to work in Switzerland.",
+      a: "Switzerland offers a lump-sum (forfait) taxation regime where non-Swiss-resident wealthy individuals (and their families) can negotiate a fixed annual tax based on their living expenses, rather than declared income. Available in most cantons (not Zurich, Basel, Schaffhausen). Minimum thresholds vary, typically CHF 400,000+ annual lump-sum. Best for founders with substantial passive income they don't want to declare in detail. Not available for those who plan to work in Switzerland.",
     },
     {
       q: "Can I run my UK Ltd from Switzerland?",

@@ -1,5 +1,5 @@
 /**
- * Shared JSON-LD types. Loose by design — schema.org accepts a lot of shapes
+ * Shared JSON-LD types. Loose by design, schema.org accepts a lot of shapes
  * and we don't want to fight the type system. Builders return `SchemaThing`
  * objects that can be composed and serialised.
  */

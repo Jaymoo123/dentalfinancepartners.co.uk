@@ -19,7 +19,7 @@ export default function BrandingAgenciesPage() {
     <AgencyTypeLayout
       slug="branding-agencies"
       title="Accountants for branding agencies"
-      hero="Specialist tax and accounting for UK branding and identity agency founders. Long project cycles, IP rights, deposit-heavy invoicing and creative team scaling — handled by ICAEW accountants who understand how a branding studio actually earns."
+      hero="Specialist tax and accounting for UK branding and identity agency founders. Long project cycles, IP rights, deposit-heavy invoicing and creative team scaling, handled by ICAEW accountants who understand how a branding studio actually earns."
       sections={[
         {
           heading: "Project revenue recognition for long branding engagements",
@@ -57,7 +57,7 @@ export default function BrandingAgenciesPage() {
         },
         {
           q: "What's the tax treatment of project deposits I haven't earned yet?",
-          a: "Deposits sit on your balance sheet as a liability (deferred revenue) until you've performed the work they relate to. You don't pay corporation tax on them until they're recognised as revenue. Getting this wrong is the most common mistake we see when branding agencies move from a small accountant to us — they've been paying tax on cash, not on earned revenue.",
+          a: "Deposits sit on your balance sheet as a liability (deferred revenue) until you've performed the work they relate to. You don't pay corporation tax on them until they're recognised as revenue. Getting this wrong is the most common mistake we see when branding agencies move from a small accountant to us, they've been paying tax on cash, not on earned revenue.",
         },
       ]}
       relatedTypes={[

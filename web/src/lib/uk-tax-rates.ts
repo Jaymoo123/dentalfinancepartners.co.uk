@@ -194,7 +194,7 @@ export const UK_TAX_RATES = {
   licence: {
     name: "CC BY 4.0",
     url: "https://creativecommons.org/licenses/by/4.0/",
-    note: "Attribution: Agency Founder Finance — https://www.agencyfounderfinance.co.uk/uk-tax-rates",
+    note: "Attribution: Agency Founder Finance, https://www.agencyfounderfinance.co.uk/uk-tax-rates",
   },
 } as const;
 

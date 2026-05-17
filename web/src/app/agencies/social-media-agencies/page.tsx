@@ -19,7 +19,7 @@ export default function SocialMediaAgenciesPage() {
     <AgencyTypeLayout
       slug="social-media-agencies"
       title="Accountants for social media agencies"
-      hero="Specialist tax and accounting for UK social media agency founders. Content production accounting, influencer collaborations, paid social ad spend, retainer cash flow — we handle the tangled financial reality of running a modern social media agency."
+      hero="Specialist tax and accounting for UK social media agency founders. Content production accounting, influencer collaborations, paid social ad spend, retainer cash flow, we handle the tangled financial reality of running a modern social media agency."
       sections={[
         {
           heading: "Content production costs and capital vs revenue",
@@ -53,7 +53,7 @@ export default function SocialMediaAgenciesPage() {
         },
         {
           q: "Is gifted product to an influencer tax-deductible for my agency?",
-          a: "If your agency buys product to gift to creators, those costs are usually deductible business expenses. The influencer themselves may have a tax obligation on the value of gifted product they receive — HMRC has been clear that gifted product for promotion is taxable income to the creator. We help social media agencies handle the reporting side cleanly.",
+          a: "If your agency buys product to gift to creators, those costs are usually deductible business expenses. The influencer themselves may have a tax obligation on the value of gifted product they receive, HMRC has been clear that gifted product for promotion is taxable income to the creator. We help social media agencies handle the reporting side cleanly.",
         },
         {
           q: "Do I charge VAT on social media management retainers to overseas clients?",

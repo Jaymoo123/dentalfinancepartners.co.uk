@@ -13,7 +13,7 @@ export type CourseInput = {
 
 /**
  * Course schema for Fundamentals pillar guides. Marks them as
- * learning resources distinct from generic articles — Google
+ * learning resources distinct from generic articles, Google
  * surfaces these in education-flavoured panels.
  *
  * Use alongside `buildArticle` for the same page.

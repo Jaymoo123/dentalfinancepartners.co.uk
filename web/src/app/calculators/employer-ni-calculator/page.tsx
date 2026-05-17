@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: "What about pension auto-enrolment?",
-    a: "If an employee earns more than £10,000 and is aged 22 to state pension age, you must auto-enrol them and contribute at least 3% on qualifying earnings (the slice between £6,240 and £50,270). They contribute at least 5%. The calculator's pension line shows the minimum 3% employer cost only — many agencies offer higher matches as part of a competitive package.",
+    a: "If an employee earns more than £10,000 and is aged 22 to state pension age, you must auto-enrol them and contribute at least 3% on qualifying earnings (the slice between £6,240 and £50,270). They contribute at least 5%. The calculator's pension line shows the minimum 3% employer cost only, many agencies offer higher matches as part of a competitive package.",
   },
   {
     q: "What costs are not included?",
@@ -71,7 +71,7 @@ export default function EmployerNICalculatorPage() {
               Employer NI &amp; cost-to-hire calculator
             </h1>
             <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-              Work out the true cost of your agency team. Employer National Insurance at 13.8%, Employment Allowance, and minimum auto-enrolment pension — all in one model.
+              Work out the true cost of your agency team. Employer National Insurance at 13.8%, Employment Allowance, and minimum auto-enrolment pension, all in one model.
             </p>
           </div>
         </div>

@@ -7,12 +7,12 @@ import { JsonLd, buildDataset, buildBreadcrumb } from "@/lib/schema";
 const pageUrl = `${siteConfig.url.replace(/\/$/, "")}/uk-tax-rates`;
 
 export const metadata: Metadata = {
-  title: "UK Tax Rates 2025/26 — Reference for Agency Founders",
+  title: "UK Tax Rates 2025/26, Reference for Agency Founders",
   description:
     "Canonical 2025/26 UK tax rates: corporation tax, dividend tax, BADR, CGT, VAT, R&D, MTD ITSA dates, NI, pensions and IHT. Updated and citable. Plain-English notes for agency founders.",
   alternates: { canonical: pageUrl },
   openGraph: {
-    title: "UK Tax Rates 2025/26 — Agency Founder Finance",
+    title: "UK Tax Rates 2025/26, Agency Founder Finance",
     description:
       "Machine-readable reference of every UK tax rate an agency founder needs in 2025/26.",
     url: pageUrl,
@@ -181,10 +181,10 @@ export default function UkTaxRatesPage() {
 
       <Section id="capital-gains-tax" title="Capital Gains Tax">
         <Row label="Annual exempt amount" value={gbp(r.capitalGainsTax.annualExemption)} />
-        <Row label="Non-residential — basic rate" value={pct(r.capitalGainsTax.nonResidential.basicRate)} />
-        <Row label="Non-residential — higher rate" value={pct(r.capitalGainsTax.nonResidential.higherRate)} />
-        <Row label="Residential — basic rate" value={pct(r.capitalGainsTax.residential.basicRate)} />
-        <Row label="Residential — higher rate" value={pct(r.capitalGainsTax.residential.higherRate)} />
+        <Row label="Non-residential, basic rate" value={pct(r.capitalGainsTax.nonResidential.basicRate)} />
+        <Row label="Non-residential, higher rate" value={pct(r.capitalGainsTax.nonResidential.higherRate)} />
+        <Row label="Residential, basic rate" value={pct(r.capitalGainsTax.residential.basicRate)} />
+        <Row label="Residential, higher rate" value={pct(r.capitalGainsTax.residential.higherRate)} />
       </Section>
 
       <Section id="badr" title="Business Asset Disposal Relief (BADR)">
@@ -209,17 +209,17 @@ export default function UkTaxRatesPage() {
       </Section>
 
       <Section id="r-and-d" title="R&D Tax Relief">
-        <Row label="Merged scheme — headline credit" value={pct(r.rdTaxCredits.merged.headlineCreditRate)} />
-        <Row label="Merged scheme — effective after-tax benefit" value={pct(r.rdTaxCredits.merged.effectiveAfterTaxBenefit)} />
+        <Row label="Merged scheme, headline credit" value={pct(r.rdTaxCredits.merged.headlineCreditRate)} />
+        <Row label="Merged scheme, effective after-tax benefit" value={pct(r.rdTaxCredits.merged.effectiveAfterTaxBenefit)} />
         <Row label="ERIS intensity threshold" value={pct(r.rdTaxCredits.erisSme.intensityThreshold)} />
         <Row label="ERIS enhancement rate" value={pct(r.rdTaxCredits.erisSme.enhancementRate)} />
         <Row label="ERIS payable credit rate" value={pct(r.rdTaxCredits.erisSme.payableCreditRate)} />
       </Section>
 
       <Section id="mtd-itsa" title="Making Tax Digital for Income Tax (ITSA)">
-        <Row label="Phase 1 — £50k+ self-employed/landlord" value={r.mtdItsa.phase1Date} />
-        <Row label="Phase 2 — £30k+ self-employed/landlord" value={r.mtdItsa.phase2Date} />
-        <Row label="Phase 3 — £20k+ self-employed/landlord" value={r.mtdItsa.phase3Date} />
+        <Row label="Phase 1, £50k+ self-employed/landlord" value={r.mtdItsa.phase1Date} />
+        <Row label="Phase 2, £30k+ self-employed/landlord" value={r.mtdItsa.phase2Date} />
+        <Row label="Phase 3, £20k+ self-employed/landlord" value={r.mtdItsa.phase3Date} />
       </Section>
 
       <Section id="pensions" title="Pensions">
@@ -250,12 +250,12 @@ export default function UkTaxRatesPage() {
               >
                 {s.title}
               </a>{" "}
-              <span className="text-slate-500">— {s.publisher}</span>
+              <span className="text-slate-500">{s.publisher}</span>
             </li>
           ))}
         </ul>
         <p className="mt-6 text-sm text-slate-600">
-          Licence: {r.licence.name} —{" "}
+          Licence: {r.licence.name}{" "}
           <a href={r.licence.url} target="_blank" rel="noopener noreferrer" className="underline">
             licence terms
           </a>

@@ -19,7 +19,7 @@ export default function PerformanceMarketingAgenciesPage() {
     <AgencyTypeLayout
       slug="performance-marketing-agencies"
       title="Accountants for performance marketing agencies"
-      hero="Specialist tax and accounting for UK performance marketing agency founders. Multi-channel attribution, revenue-share pricing, media spend treatment and R&D credits for attribution tooling — we handle the edges that generalist accountants don't see."
+      hero="Specialist tax and accounting for UK performance marketing agency founders. Multi-channel attribution, revenue-share pricing, media spend treatment and R&D credits for attribution tooling, we handle the edges that generalist accountants don't see."
       sections={[
         {
           heading: "Revenue recognition for performance-based pricing",

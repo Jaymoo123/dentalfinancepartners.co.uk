@@ -165,7 +165,7 @@ export function HealthCheckWizard() {
         </h3>
         <p className="mt-3 text-slate-700">
           We&rsquo;ve emailed your personalised Agency Finance Health Check as a
-          PDF to <strong>{a.email}</strong>. It usually arrives within a minute —
+          PDF to <strong>{a.email}</strong>. It usually arrives within a minute
           check spam if it doesn&rsquo;t.
         </p>
 
@@ -380,7 +380,7 @@ function Step3({ a, update }: { a: Answers; update: <K extends keyof Answers>(k:
         </select>
       </div>
       <div>
-        <Label>Profit before tax — last full year (£)</Label>
+        <Label>Profit before tax, last full year (£)</Label>
         <input
           type="number"
           inputMode="numeric"
@@ -559,7 +559,7 @@ function Step6({ a }: { a: Answers }) {
               ? a.international
                   .map((v) => INTERNATIONAL_OPTIONS.find((o) => o.value === v)?.label || v)
                   .join(", ")
-              : "—"
+              : "-"
           }
         />
         <ReviewRow
@@ -575,7 +575,7 @@ function ReviewRow({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex items-start justify-between gap-3 border-b border-slate-100 py-1.5">
       <span className="text-slate-500">{label}</span>
-      <span className="text-right text-slate-900 font-medium">{value || "—"}</span>
+      <span className="text-right text-slate-900 font-medium">{value || "-"}</span>
     </div>
   );
 }

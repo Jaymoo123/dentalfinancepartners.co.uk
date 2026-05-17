@@ -1,5 +1,5 @@
 /**
- * Agency valuation math — shared between the client calculator and the
+ * Agency valuation math, shared between the client calculator and the
  * server-side OG image endpoint so both produce identical numbers.
  */
 

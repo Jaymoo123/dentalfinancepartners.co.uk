@@ -21,11 +21,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const url = `${siteConfig.url}/glossary/${slug}`;
   return {
-    title: `${entry.term} — Definition for UK Agency Founders`,
+    title: `${entry.term}, Definition for UK Agency Founders`,
     description: `Plain-English definition of ${entry.term} for UK agency founders. Includes current 2025/26 figures and what it means for your agency.`,
     alternates: { canonical: url },
     openGraph: {
-      title: `${entry.term} — UK Agency Glossary`,
+      title: `${entry.term}, UK Agency Glossary`,
       description: `Plain-English definition of ${entry.term} for UK agency founders.`,
       url,
       type: "article",

@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: "Which student loan plan am I on?",
-    a: "Plan 1 if you started uni before September 2012 in England/Wales (threshold £24,990, 9%). Plan 2 if you started Sept 2012 – Aug 2023 in England/Wales (£27,295, 9%). Plan 4 for Scottish loans (£31,395, 9%). Plan 5 for England loans from August 2023 (£25,000, 9%). Postgraduate loan is separate and charged at 6% above £21,000 — it stacks on top of any undergraduate plan.",
+    a: "Plan 1 if you started uni before September 2012 in England/Wales (threshold £24,990, 9%). Plan 2 if you started Sept 2012 – Aug 2023 in England/Wales (£27,295, 9%). Plan 4 for Scottish loans (£31,395, 9%). Plan 5 for England loans from August 2023 (£25,000, 9%). Postgraduate loan is separate and charged at 6% above £21,000, it stacks on top of any undergraduate plan.",
   },
   {
     q: "Does this work for limited company directors?",

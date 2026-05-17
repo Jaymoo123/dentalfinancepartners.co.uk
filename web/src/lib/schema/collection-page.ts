@@ -12,7 +12,7 @@ export type CollectionPageInput = {
 
 /**
  * CollectionPage for blog category indexes, glossary index, calculator
- * index, agency-type index — pages that group/list other pages.
+ * index, agency-type index, pages that group/list other pages.
  */
 export function buildCollectionPage(input: CollectionPageInput): SchemaThing {
   const url = `${siteConfig.url}${input.path}`;

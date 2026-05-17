@@ -44,7 +44,7 @@ export function buildOrganization(): Organization {
 }
 
 /**
- * Lightweight reference to the canonical Organization — used as `publisher`
+ * Lightweight reference to the canonical Organization, used as `publisher`
  * or `provider` on downstream schema objects so JSON-LD parsers can
  * de-duplicate to the single full record.
  */
@@ -62,7 +62,7 @@ export function referencedOrganization(): SchemaThing {
 }
 
 /**
- * WebSite schema for the homepage — includes a SearchAction so Google can
+ * WebSite schema for the homepage, includes a SearchAction so Google can
  * render the sitelinks search box.
  */
 export function buildWebSite(): SchemaThing {

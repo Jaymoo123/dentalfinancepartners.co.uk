@@ -1,7 +1,7 @@
 /**
  * Newsletter subscriber storage (Supabase via REST, server-side only).
  *
- * Table schema (run once in Supabase SQL editor — see supabase/newsletter_schema.sql):
+ * Table schema (run once in Supabase SQL editor, see supabase/newsletter_schema.sql):
  *
  *   create table public.newsletter_subscribers (
  *     id uuid primary key default gen_random_uuid(),
@@ -23,7 +23,7 @@
  *   create index on public.newsletter_subscribers (welcome_step_sent, last_step_at)
  *     where status = 'confirmed';
  *
- * All access in this module is via service-role key — never exposed to browser.
+ * All access in this module is via service-role key, never exposed to browser.
  */
 
 export type SubscriberStatus =

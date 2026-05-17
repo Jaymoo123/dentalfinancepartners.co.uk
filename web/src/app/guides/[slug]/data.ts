@@ -14,7 +14,7 @@ export const GUIDES: Record<string, Guide> = {
     title: "The UK Agency Founder's Tax Year-End Checklist 2025/26",
     teaser: "23 actions to take before 5 April 2026 to optimise your agency's tax position. Covers salary/dividend timing, pension contributions, BADR planning, dividend declarations, and R&D claim preparation.",
     category: "Year-end planning",
-    body: `<p>This guide provides a complete, deadline-ordered checklist of 23 specific actions for UK agency founders to complete before the 5 April 2026 tax year-end. It covers every key decision—salary and dividend timing, pension contributions, capital purchases, director's loan repayments, and exit planning—with exact figures and HMRC form references. It is written for founders who run their own limited company agency and want to minimise their personal and corporate tax bills legally, without relying on generic advice.</p>
+    body: `<p>This guide provides a complete, deadline-ordered checklist of 23 specific actions for UK agency founders to complete before the 5 April 2026 tax year-end. It covers every key decision-salary and dividend timing, pension contributions, capital purchases, director's loan repayments, and exit planning-with exact figures and HMRC form references. It is written for founders who run their own limited company agency and want to minimise their personal and corporate tax bills legally, without relying on generic advice.</p>
 
 <h2>1. Understand your 2025/26 tax position now</h2>
 
@@ -38,7 +38,7 @@ export const GUIDES: Record<string, Guide> = {
 <h3>1.3 Check your director's loan account (DLA)</h3>
 <ul>
 <li>Pull a trial balance or ask your bookkeeper for the DLA balance as of the last completed month.</li>
-<li>If you owe the company more than £10,000 at any point in the year, the loan is a benefit in kind—you must report it on a P11D and the company pays Class 1A NIC at 13.8%.</li>
+<li>If you owe the company more than £10,000 at any point in the year, the loan is a benefit in kind-you must report it on a P11D and the company pays Class 1A NIC at 13.8%.</li>
 <li>If the loan is still outstanding 9 months after the year-end (i.e., by 1 January 2027 for a 31 March 2026 year-end), the company must pay S455 tax at 33.75% on the outstanding amount.</li>
 <li>Plan to repay any overdrawn DLA before the year-end if possible, or at least before the 9-month deadline.</li>
 </ul>
@@ -572,14 +572,14 @@ export const GUIDES: Record<string, Guide> = {
 <li><strong>Best for:</strong> Founders who plan to operate solely through a UAE entity and want to crystallise gains before leaving.</li>
 </ul>
 
-<p><strong>Action:</strong> Decide by month 10 before your move. If you choose MVL, start the process early—it takes 3–6 months.</p>
+<p><strong>Action:</strong> Decide by month 10 before your move. If you choose MVL, start the process early-it takes 3–6 months.</p>
 
 <h2>3. Asset Disposal Timing: CGT-Efficient Sequencing</h2>
-<p>If you plan to sell assets (shares, property, cryptocurrency) before leaving, you need to sequence disposals to minimise tax. As a UK resident, you pay CGT at 10% (basic rate) or 24% (higher rate) on gains above your annual exempt amount (£3,000 in 2025/26). As a non-resident, you only pay CGT on UK land and property—not on shares or crypto.</p>
+<p>If you plan to sell assets (shares, property, cryptocurrency) before leaving, you need to sequence disposals to minimise tax. As a UK resident, you pay CGT at 10% (basic rate) or 24% (higher rate) on gains above your annual exempt amount (£3,000 in 2025/26). As a non-resident, you only pay CGT on UK land and property-not on shares or crypto.</p>
 
 <ul>
 <li><strong>Sell UK shares before leaving:</strong> If you sell shares in your agency or other companies while UK-resident, you pay CGT. If you wait until after you become non-resident, you pay 0% (unless the shares derive value from UK land).</li>
-<li><strong>Sell UK property before leaving:</strong> If you sell a UK property while resident, you pay CGT at 24%. If you sell after becoming non-resident, you still pay CGT on UK property—but you may have a lower effective rate if your UAE income is low.</li>
+<li><strong>Sell UK property before leaving:</strong> If you sell a UK property while resident, you pay CGT at 24%. If you sell after becoming non-resident, you still pay CGT on UK property-but you may have a lower effective rate if your UAE income is low.</li>
 <li><strong>Use the annual exempt amount:</strong> If you have gains under £3,000, realise them before leaving to use the allowance. After you become non-resident, you lose the allowance for non-UK assets.</li>
 <li><strong>Bed and breakfasting:</strong> If you hold shares with a large gain, consider selling and repurchasing before you leave to rebase the cost. This is only effective if you plan to sell later as a non-resident.</li>
 </ul>

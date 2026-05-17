@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const guide = GUIDES[slug];
   if (!guide) return { title: "Guide not found" };
-  // Don't index download pages — they should rank as the landing version
+  // Don't index download pages, they should rank as the landing version
   return {
     title: `${guide.title} | Download`,
     description: guide.teaser,

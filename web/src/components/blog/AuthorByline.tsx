@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getTeamMember } from "@/app/team/[slug]/data";
 
 /**
- * AuthorByline — reusable byline component for blog posts, pillar guides,
+ * AuthorByline, reusable byline component for blog posts, pillar guides,
  * and any editorial page. Resolves the author slug against the team data
  * file and renders a monogram + name + role. Falls back to a plain name
  * for legacy posts whose frontmatter `author` is a free-text name.

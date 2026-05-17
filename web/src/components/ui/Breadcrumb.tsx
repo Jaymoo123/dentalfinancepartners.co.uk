@@ -14,7 +14,7 @@ type BreadcrumbProps = {
   variant?: "dark" | "light";
   /**
    * Set to true when the page already emits its own BreadcrumbList JSON-LD
-   * via `<JsonLd>` — prevents duplicate schema records on pages that
+   * via `<JsonLd>`, prevents duplicate schema records on pages that
    * compose multiple schema sources.
    */
   noSchema?: boolean;

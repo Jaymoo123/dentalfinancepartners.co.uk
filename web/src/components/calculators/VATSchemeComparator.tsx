@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 
 /**
- * VAT scheme comparator — compares Standard, Flat Rate (with limited cost trader),
+ * VAT scheme comparator, compares Standard, Flat Rate (with limited cost trader),
  * and Cash Accounting for agencies.
  *
  *  - Standard: charge 20%, reclaim input VAT, pay net to HMRC
@@ -32,7 +32,7 @@ export function VATSchemeComparator() {
     // Standard scheme
     const standardNet = vatCollected - vatInputs;
 
-    // Flat rate scheme — Limited Cost Trader test
+    // Flat rate scheme, Limited Cost Trader test
     const lctGoodsCheck = goodsSpend < Math.max(ANNUAL_LCT_GOODS_THRESHOLD, grossInclusive * LCT_TURNOVER_THRESHOLD);
     const flatRate = lctGoodsCheck ? FLAT_RATE_LCT : FLAT_RATE_MARKETING_AGENCY;
     const flatPayment = grossInclusive * flatRate;

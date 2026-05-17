@@ -19,13 +19,13 @@ export default function VideoProductionAgenciesPage() {
     <AgencyTypeLayout
       slug="video-production-agencies"
       title="Accountants for video production agencies"
-      hero="Specialist tax and accounting for UK video and film production agency founders. Capital allowances on kit, project accounting with long shooting schedules, freelance crew with IR35 implications, location and talent costs — we handle the financial reality of production work."
+      hero="Specialist tax and accounting for UK video and film production agency founders. Capital allowances on kit, project accounting with long shooting schedules, freelance crew with IR35 implications, location and talent costs, we handle the financial reality of production work."
       sections={[
         {
           heading: "Capital allowances on production kit",
           body: (
             <p>
-              Cameras, lenses, lighting rigs, audio kit, drones, gimbals, editing workstations — production agencies have significant capital expenditure. Most kit qualifies for the Annual Investment Allowance (£1M per year), meaning the full cost is deductible against profits in the year of purchase. Specialist kit may qualify for additional First Year Allowances. We help video agencies plan kit purchases to maximise tax relief, especially around year-end.
+              Cameras, lenses, lighting rigs, audio kit, drones, gimbals, editing workstations, production agencies have significant capital expenditure. Most kit qualifies for the Annual Investment Allowance (£1M per year), meaning the full cost is deductible against profits in the year of purchase. Specialist kit may qualify for additional First Year Allowances. We help video agencies plan kit purchases to maximise tax relief, especially around year-end.
             </p>
           ),
         },
@@ -41,7 +41,7 @@ export default function VideoProductionAgenciesPage() {
           heading: "Freelance crew, IR35 and talent payments",
           body: (
             <p>
-              Production agencies engage DPs, sound recordists, editors, gaffers, runners — often booked for short, specific gigs. Most are genuinely self-employed but the engagement structure matters for IR35 purposes if your agency is medium or large. Talent payments to actors and presenters have additional withholding and reporting considerations. We help production agencies handle crew engagements cleanly and stay compliant.
+              Production agencies engage DPs, sound recordists, editors, gaffers, runners, often booked for short, specific gigs. Most are genuinely self-employed but the engagement structure matters for IR35 purposes if your agency is medium or large. Talent payments to actors and presenters have additional withholding and reporting considerations. We help production agencies handle crew engagements cleanly and stay compliant.
             </p>
           ),
         },

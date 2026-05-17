@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 
 /**
- * Business Asset Disposal Relief (BADR) calculator — 2025/26 rates.
+ * Business Asset Disposal Relief (BADR) calculator, 2025/26 rates.
  *
  *  - BADR rate: 14% for disposals on/after 6 April 2025 (rising to 18% from 6 April 2026)
  *  - Standard CGT rate (higher rate): 24% (assumed for comparison)

@@ -63,7 +63,7 @@ export const CITIES: Record<string, CityData> = {
     agencyHubs: ["Harbourside", "Stokes Croft", "Clifton", "Temple Quay"],
     intro: "Bristol holds the densest creative and tech agency cluster outside London per capita, with Harbourside, Stokes Croft and Temple Quay supporting a strong mix of creative, digital, product and animation agencies.",
     whyHere: "We work with Bristol agency founders across creative, digital, animation, branding and tech-adjacent disciplines. Remote-first with in-person available on request.",
-    agencyScene: "Bristol's creative agency scene is unusually deep — the city has historically been home to animation (Aardman), digital production studios and game development. The Harbourside has become the city's creative agency core with Stokes Croft offering lower-rent space for younger studios. Bristol's quality-of-life pull attracts senior agency talent leaving London.",
+    agencyScene: "Bristol's creative agency scene is unusually deep, the city has historically been home to animation (Aardman), digital production studios and game development. The Harbourside has become the city's creative agency core with Stokes Croft offering lower-rent space for younger studios. Bristol's quality-of-life pull attracts senior agency talent leaving London.",
     geo: { latitude: 51.4545, longitude: -2.5879 },
   },
   edinburgh: {
