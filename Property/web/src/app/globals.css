@@ -1,5 +1,6 @@
 /* Tailwind source("..") scans from src/ relative to this file */
 @import "tailwindcss" source("..");
+@import "tw-animate-css";
 
 /* ============================================================
    PROPERTY ACCOUNTANTS UK - DESIGN SYSTEM
@@ -14,7 +15,7 @@
   --emerald-700: #047857;
   --emerald-800: #065f46;
   --emerald-900: #064e3b;
-  
+
   --slate-50: #f8fafc;
   --slate-100: #f1f5f9;
   --slate-200: #e2e8f0;
@@ -22,13 +23,13 @@
   --slate-600: #475569;
   --slate-700: #334155;
   --slate-900: #0f172a;
-  
+
   --amber-400: #fbbf24;
   --amber-500: #f59e0b;
   --amber-600: #d97706;
   --amber-700: #b45309;
-  
-  /* Semantic tokens */
+
+  /* Semantic tokens (legacy: existing components use `var(--muted)` as a text colour) */
   --background: #ffffff;
   --surface: #f8fafc;
   --surface-elevated: #ffffff;
@@ -36,22 +37,62 @@
   --ink-soft: #334155;
   --muted: #475569;
   --border: #e2e8f0;
-  
+
   /* Brand semantic */
   --primary: #059669;
   --primary-hover: #047857;
   --accent: #059669;
   --accent-strong: #047857;
-  
+
   /* Legacy aliases for backwards compatibility */
   --navy: #0f172a;
   --gold: #059669;
   --gold-strong: #047857;
+
+  /* shadcn/ui tokens. `--muted-surface` is distinct from the legacy text-colour
+     `--muted` above; Tailwind v4 utility classes (`bg-muted`, `text-muted-foreground`)
+     resolve through the `@theme inline` block below, not these raw variables. */
+  --muted-surface: #f1f5f9;
+  --muted-foreground: #475569;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --input: #e2e8f0;
+  --ring: #059669;
+  --radius: 0rem;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--ink);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted-surface);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
   --font-sans: var(--font-plus-jakarta);
 }
 

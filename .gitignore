@@ -36,6 +36,7 @@ secrets/
 !package-lock.json
 !tsconfig.json
 !niche.config.json
+!components.json
 
 # Logs
 *.log

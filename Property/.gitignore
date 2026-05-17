@@ -17,6 +17,9 @@ build/
 .env
 .env.local
 
+# IndexNow queue (drained on --from-queue runs)
+pipeline/.indexnow_queue.txt
+
 # IDE
 .vscode/
 .idea/

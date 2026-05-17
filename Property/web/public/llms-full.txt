@@ -1,0 +1,80 @@
+# Property Tax Partners
+
+> Specialist UK property tax accountants for landlords and property investors. Section 24 planning, Making Tax Digital (MTD) compliance, incorporation analysis, capital gains tax, and portfolio-level management accounting. All tax content reflects 2025/26 UK figures. Fixed fees, 24-hour response, property-only focus.
+
+## About
+
+Property Tax Partners Ltd provides specialist accounting, tax planning, and compliance services to UK landlords and property investors. We cover the full lifecycle: first-property advisory through to multi-property portfolio restructuring and disposal planning. We focus exclusively on residential and mixed-use property: buy-to-let, HMO, holiday lets, mixed portfolios, and incorporation candidates.
+
+Coverage: UK-wide, with city presence in London, Manchester, Birmingham, Leeds, and Bristol. All tax content is current to 2025/26 UK figures, including:
+- Section 24 finance-cost restriction at 20% basic-rate tax credit
+- Corporation tax: 19% small-profits rate, 25% main rate, marginal relief between £50,000 and £250,000
+- CGT on residential property: 18% basic rate, 24% higher rate
+- SDLT: standard residential bands plus 3% additional-property surcharge
+- VAT registration threshold: £90,000 (from 1 April 2024)
+- MTD ITSA staging: April 2026 for £50,000+ combined rental and self-employment income; April 2027 for £30,000+; April 2028 for £20,000+
+- Annual exemption (CGT): £3,000
+- Dividend allowance: £500
+
+## Key Commercial Pages
+
+- Homepage: https://www.propertytaxpartners.co.uk/
+- Services: https://www.propertytaxpartners.co.uk/services
+- Incorporation analysis: https://www.propertytaxpartners.co.uk/incorporation
+- Calculators (index): https://www.propertytaxpartners.co.uk/calculators
+- About: https://www.propertytaxpartners.co.uk/about
+- Contact: https://www.propertytaxpartners.co.uk/contact
+
+## Free Calculators
+
+- Section 24 tax-credit calculator (estimate finance-cost restriction)
+- Incorporation cost calculator (CGT, SDLT, and break-even projection for moving a portfolio into a limited company)
+- MTD checker (whether you cross the income threshold for digital quarterly reporting)
+- Portfolio profitability calculator (per-property yield, cash flow, and ROI)
+
+## Blog Categories
+
+- Section 24 and Tax Relief: https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief
+- Incorporation and Company Structures: https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures
+- Making Tax Digital (MTD): https://www.propertytaxpartners.co.uk/blog/making-tax-digital-mtd
+- Capital Gains Tax: https://www.propertytaxpartners.co.uk/blog/capital-gains-tax
+- Portfolio Management: https://www.propertytaxpartners.co.uk/blog/portfolio-management
+- Property Accountant Services: https://www.propertytaxpartners.co.uk/blog/property-accountant-services
+- Landlord Tax Essentials: https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials
+
+## City Pages (LocalBusiness schema)
+
+- London: https://www.propertytaxpartners.co.uk/locations/london
+- Manchester: https://www.propertytaxpartners.co.uk/locations/manchester
+- Birmingham: https://www.propertytaxpartners.co.uk/locations/birmingham
+- Leeds: https://www.propertytaxpartners.co.uk/locations/leeds
+- Bristol: https://www.propertytaxpartners.co.uk/locations/bristol
+
+## Who We Help
+
+- Individual landlords (1 to 3 properties): self assessment with rental schedules, Section 24 planning, MTD compliance, incorporation feasibility
+- Portfolio owners (4 to 10 properties): management accounts, per-property reporting, limited-company accounts, acquisition support
+- Large portfolios (10+ properties): group accounting, corporation tax planning, CGT disposal planning, portfolio restructuring
+
+## Topics Of Authority
+
+- Section 24 mechanics, exposure modelling, and mitigation strategies (incorporation, salary-sacrifice mortgages, pension contributions, partnership structures where appropriate)
+- Incorporation feasibility analysis: when CGT and SDLT costs are recoverable, holdover relief eligibility, incorporation relief, Section 162 conditions
+- Making Tax Digital for Income Tax Self Assessment (MTD ITSA): digital record-keeping, quarterly updates, end-of-period statements, software compatibility
+- Capital gains tax on residential property: 60-day reporting, principal private residence, lettings relief, gifting, transfer between spouses
+- HMO and holiday-let specifics: capital allowances, planning permission and licensing, business-rates treatment
+- Non-resident landlord rules and double-tax treatment
+- Property company running costs, director loan accounts, dividend strategy, pension contributions from a property company
+
+## Schema And Discovery
+
+Auto-generated per page:
+- Organization on the homepage
+- LocalBusiness and AccountingService on city pages
+- BlogPosting on individual posts
+- FAQPage where Q and A appear
+- BreadcrumbList on every page
+
+## Sitemap
+
+https://www.propertytaxpartners.co.uk/sitemap.xml

@@ -7,6 +7,8 @@ import { StickyCTA } from "@/components/ui/StickyCTA";
 import { btnPrimary, btnSecondary, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
+import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { MTDCountdown } from "@/components/property/MTDCountdown";
 import { ServiceTiers } from "@/components/property/ServiceTiers";
 import { getAllPosts, getCategorySlug } from "@/lib/blog";
@@ -67,7 +69,7 @@ const services = [
   },
   {
     title: "Incorporation Analysis",
-    description: "Full feasibility modeling: CGT, SDLT, break-even",
+    description: "Full feasibility modelling: CGT, SDLT, break-even",
     icon: "🏢",
   },
   {
@@ -118,8 +120,27 @@ const trustBadges = [
   "100+ landlords",
 ];
 
+const faqs = [
+  {
+    question: "Do I need Making Tax Digital from April 2026?",
+    answer:
+      "If your combined property and self-employment income exceeds £50,000, yes. You must submit quarterly digital reports to HMRC from 6 April 2026. Use our MTD checker below to see if you're affected.",
+  },
+  {
+    question: "Should I incorporate my buy-to-let portfolio?",
+    answer:
+      "It depends on your mortgage levels, tax bracket, and holding period. Incorporation triggers CGT and SDLT, and upfront costs can exceed £50,000. Use our incorporation calculator below for a quick estimate.",
+  },
+  {
+    question: "Do I need a specialist property accountant?",
+    answer:
+      "Not strictly, but the question is whether a generalist can give you useful advice on Section 24, MTD, and incorporation. A specialist helps you make better financial decisions around incorporation feasibility, MTD quarterly reporting, and portfolio-level profitability.",
+  },
+];
+
 export default function HomePage() {
   const orgSchema = buildOrganizationJsonLd();
+  const faqSchema = buildFaqPageJsonLd(faqs);
   const recentPosts = getAllPosts().slice(0, 3).map((post) => ({
     ...post,
     categorySlug: getCategorySlug(post),
@@ -129,6 +150,9 @@ export default function HomePage() {
     <>
       <StickyCTA />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
+      {faqSchema ? (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      ) : null}
 
       {/* Hero Section with Large Property Image */}
       <section className="relative h-[500px] sm:h-[600px] lg:h-[700px] overflow-hidden">
@@ -142,19 +166,17 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/90 to-slate-900/70" />
         <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
           <div className="max-w-3xl">
-            <div className="inline-block bg-emerald-600 px-3 py-1.5 text-xs sm:text-sm font-bold text-white uppercase tracking-wider mb-4 sm:mb-6 shadow-lg">
+            <div className="inline-block bg-blue-600 px-3 py-1.5 text-xs sm:text-sm font-bold text-white uppercase tracking-wider mb-4 sm:mb-6 shadow-lg">
               MTD starts 6 April 2026
             </div>
-            <h1 className="text-3xl font-bold leading-[1.15] text-white sm:text-5xl sm:leading-[1.1] lg:text-7xl">
-              Property tax sorted.
-              <br />
-              Your way.
+            <h1 className="text-3xl font-bold leading-[1.15] text-white text-balance sm:text-5xl sm:leading-[1.1] lg:text-7xl">
+              Property tax sorted. Your way.
             </h1>
             <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-white sm:text-xl lg:text-2xl max-w-2xl">
               Whether you need to get ready for Making Tax Digital, run a limited company, or get tax advice from property specialists.
             </p>
             <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href="/contact" className={`${btnPrimary} bg-emerald-600 border-emerald-800 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
+              <Link href="/contact" className={`${btnPrimary} bg-blue-600 border-blue-800 hover:bg-blue-700 hover:border-blue-900 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
                 Book free consultation
               </Link>
               <Link href="#calculators" className={`${btnSecondary} bg-white/10 border-white text-white hover:bg-white/20 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
@@ -416,17 +438,10 @@ export default function HomePage() {
         <div className={siteContainerLg}>
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-slate-900 text-center mb-8 sm:mb-12 sm:text-4xl lg:text-5xl">Common questions</h2>
-            <div className="space-y-3 sm:space-y-4">
-              <details className="group bg-slate-50 border-l-4 border-slate-300 hover:border-emerald-600 transition-all">
-                <summary className="cursor-pointer list-none px-4 py-4 sm:px-6 sm:py-5 font-bold text-slate-900 hover:bg-slate-100 transition-colors [&::-webkit-details-marker]:hidden text-sm sm:text-base">
-                  <span className="flex items-center justify-between gap-3 sm:gap-4">
-                    Do I need Making Tax Digital from April 2026?
-                    <span className="text-emerald-600 text-2xl font-bold transition-transform group-open:rotate-45 flex-shrink-0">
-                      +
-                    </span>
-                  </span>
-                </summary>
-                <div className="border-t border-slate-200 bg-white px-4 py-4 sm:px-6 sm:py-5 text-sm sm:text-base leading-relaxed text-slate-700">
+            <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
+              <AccordionItem value="faq-mtd">
+                <AccordionTrigger>Do I need Making Tax Digital from April 2026?</AccordionTrigger>
+                <AccordionContent>
                   <p>
                     If your combined property and self-employment income exceeds £50,000, yes. You must submit quarterly
                     digital reports to HMRC from 6 April 2026. Use our{" "}
@@ -435,48 +450,34 @@ export default function HomePage() {
                     </Link>{" "}
                     to see if you&apos;re affected.
                   </p>
-                </div>
-              </details>
+                </AccordionContent>
+              </AccordionItem>
 
-              <details className="group bg-slate-50 border-l-4 border-slate-300 hover:border-emerald-600 transition-all">
-                <summary className="cursor-pointer list-none px-4 py-4 sm:px-6 sm:py-5 font-bold text-slate-900 hover:bg-slate-100 transition-colors [&::-webkit-details-marker]:hidden text-sm sm:text-base">
-                  <span className="flex items-center justify-between gap-3 sm:gap-4">
-                    Should I incorporate my buy-to-let portfolio?
-                    <span className="text-emerald-600 text-2xl font-bold transition-transform group-open:rotate-45 flex-shrink-0">
-                      +
-                    </span>
-                  </span>
-                </summary>
-                <div className="border-t border-slate-200 bg-white px-4 py-4 sm:px-6 sm:py-5 text-sm sm:text-base leading-relaxed text-slate-700">
+              <AccordionItem value="faq-incorporation">
+                <AccordionTrigger>Should I incorporate my buy-to-let portfolio?</AccordionTrigger>
+                <AccordionContent>
                   <p>
                     It depends on your mortgage levels, tax bracket, and holding period. Incorporation triggers CGT and
-                    SDLT — upfront costs can exceed £50,000. Use our{" "}
+                    SDLT, and upfront costs can exceed £50,000. Use our{" "}
                     <Link href="#incorporation" className="font-bold text-emerald-600 underline underline-offset-2 hover:text-emerald-700">
                       incorporation calculator
                     </Link>{" "}
                     for a quick estimate.
                   </p>
-                </div>
-              </details>
+                </AccordionContent>
+              </AccordionItem>
 
-              <details className="group bg-slate-50 border-l-4 border-slate-300 hover:border-emerald-600 transition-all">
-                <summary className="cursor-pointer list-none px-4 py-4 sm:px-6 sm:py-5 font-bold text-slate-900 hover:bg-slate-100 transition-colors [&::-webkit-details-marker]:hidden text-sm sm:text-base">
-                  <span className="flex items-center justify-between gap-3 sm:gap-4">
-                    Do I need a specialist property accountant?
-                    <span className="text-emerald-600 text-2xl font-bold transition-transform group-open:rotate-45 flex-shrink-0">
-                      +
-                    </span>
-                  </span>
-                </summary>
-                <div className="border-t border-slate-200 bg-white px-4 py-4 sm:px-6 sm:py-5 text-sm sm:text-base leading-relaxed text-slate-700">
+              <AccordionItem value="faq-specialist">
+                <AccordionTrigger>Do I need a specialist property accountant?</AccordionTrigger>
+                <AccordionContent>
                   <p>
-                    Not strictly — but the question is whether a generalist can give you useful advice on Section 24,
+                    Not strictly, but the question is whether a generalist can give you useful advice on Section 24,
                     MTD, and incorporation. A specialist helps you make better financial decisions around incorporation
                     feasibility, MTD quarterly reporting, and portfolio-level profitability.
                   </p>
-                </div>
-              </details>
-            </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>
