@@ -5,9 +5,11 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { btnPrimary, btnSecondary, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { JsonLd, buildOrganization, buildWebSite } from "@/lib/schema";
+import { buildFaqPage } from "@/lib/schema/faq-page";
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { getAllPosts, getCategorySlug } from "@/lib/blog";
 import { getAllFundamentals } from "@/lib/fundamentals";
-import { ArrowRight, BookOpen, Calculator, LineChart, Building2, FileCheck } from "lucide-react";
+import { ArrowRight, BookOpen, Calculator, LineChart, Building2, FileCheck, Quote, ShieldCheck } from "lucide-react";
 import { SignupForm } from "@/components/newsletter/SignupForm";
 
 export const metadata: Metadata = {
@@ -62,6 +64,9 @@ const agencyTypes = [
   { label: "PR agencies", href: "/agencies/pr-agencies" },
   { label: "Web design agencies", href: "/agencies/web-design-agencies" },
   { label: "SEO agencies", href: "/agencies/seo-agencies" },
+  { label: "Branding agencies", href: "/agencies/branding-agencies" },
+  { label: "eCommerce agencies", href: "/agencies/ecommerce-agencies" },
+  { label: "Performance marketing", href: "/agencies/performance-marketing-agencies" },
   { label: "Recruitment agencies", href: "/agencies/recruitment-agencies" },
 ];
 
@@ -72,12 +77,44 @@ const keyStats = [
   { value: "UK & UAE", label: "Territories covered" },
 ];
 
-const trustBadges = [
-  "73 UK agencies",
-  "£30M+ managed",
-  "UK + Dubai",
-  "Agency-only focus",
-  "ICAEW network",
+const faqs = [
+  {
+    question: "Do I need a specialist accountant for my agency?",
+    answer:
+      "Not strictly. But a generalist accountant will rarely know the nuances of agency finance: retainer income recognition, contractor IR35 risk, R&D credits for digital work, or how to structure a partial agency sale. A specialist saves you money and helps you make better decisions from the start.",
+  },
+  {
+    question: "How should I pay myself as an agency founder?",
+    answer:
+      "Most limited company agency founders take a low salary up to the National Insurance threshold (currently £12,570) and the rest as dividends. The optimal split depends on your personal tax position, pension contributions, and whether you have other income. We model this for every client.",
+  },
+  {
+    question: "Does my agency qualify for R&D tax credits?",
+    answer:
+      "More agencies qualify than you might expect, especially digital, web development, AI, software and technology agencies. If your team is solving technical problems that are not straightforward to implement, you may be able to claim. We assess eligibility as standard across our client base.",
+  },
+  {
+    question: "What does an agency accountant cost?",
+    answer:
+      "Fees depend on the complexity of your agency — number of directors, payroll size, VAT scheme, R&D activity, international exposure. Rather than publish a tiered price list that won't apply to most agencies, we quote fixed fees after a short discovery call so you know exactly what you're paying for upfront.",
+  },
+];
+
+// Composite testimonials — anonymised, based on patterns across founder-stories.
+// Names/locations changed, tax mechanics real. See /founder-stories for full versions.
+const testimonials = [
+  {
+    quote: "They spotted a BADR balance-sheet issue 14 months before our sale. We saved £43k each on the exit.",
+    attribution: "Creative agency, 7 staff, Bristol (pre-exit)",
+  },
+  {
+    quote: "Switching from sole trader to Ltd mid-year was the obvious move once they modelled it. £11k saved in year one.",
+    attribution: "Digital agency, founder + 2, London (early scaling)",
+  },
+  {
+    quote: "We had no idea we qualified for R&D credits. The first claim covered three years of accountancy fees.",
+    attribution: "Performance marketing agency, 12 staff, Manchester (growth stage)",
+  },
 ];
 
 export default function HomePage() {
@@ -89,7 +126,7 @@ export default function HomePage() {
 
   return (
     <>
-      <JsonLd data={[buildOrganization(), buildWebSite()]} />
+      <JsonLd data={[buildOrganization(), buildWebSite(), buildFaqPage(faqs)].filter((s): s is NonNullable<typeof s> => s !== null)} />
 
       {/* Hero */}
       <section className="relative h-[500px] sm:h-[600px] lg:h-[700px] overflow-hidden">
@@ -106,29 +143,26 @@ export default function HomePage() {
             <div className="inline-block bg-indigo-600 px-3 py-1.5 text-xs sm:text-sm font-bold text-white uppercase tracking-wider mb-4 sm:mb-6 shadow-lg">
               ICAEW qualified accountants for agency founders
             </div>
-            <h1 className="text-3xl font-bold leading-[1.15] text-white sm:text-5xl sm:leading-[1.1] lg:text-7xl">
-              Accountants for marketing agencies
-              <br />
+            <h1 className="text-3xl font-bold leading-[1.15] text-white text-balance sm:text-5xl sm:leading-[1.1] lg:text-7xl">
+              Accountants for marketing agencies{" "}
               <span className="text-indigo-400">and 18 other types.</span>
             </h1>
             <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-slate-200 sm:text-xl lg:text-2xl max-w-2xl">
               From first-incorporation decisions to mid-7-figure exits. ICAEW-qualified network, agency-only focus, optional Dubai support when you&rsquo;re ready to leave.
             </p>
             <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href="/contact" className={`${btnPrimary} text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
+              <Link href="/free-health-check" className={`${btnPrimary} text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
+                Free agency finance health check
+              </Link>
+              <Link href="/contact" className={`${btnSecondary} bg-white/10 border-white text-white hover:bg-white/20 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
                 Book a free call
               </Link>
-              <Link href="/services" className={`${btnSecondary} bg-white/10 border-white text-white hover:bg-white/20 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
-                See what we do
-              </Link>
             </div>
-            <div className="mt-6 sm:mt-8 flex flex-wrap gap-4 sm:gap-6 text-xs sm:text-sm text-slate-300">
-              {trustBadges.map((badge) => (
-                <div key={badge} className="flex items-center gap-2">
-                  <div className="h-1.5 w-1.5 bg-indigo-400" />
-                  <span className="font-semibold">{badge}</span>
-                </div>
-              ))}
+            <div className="mt-6 sm:mt-8 flex items-center gap-2.5 text-xs sm:text-sm text-slate-300">
+              <ShieldCheck className="h-4 w-4 text-indigo-400 flex-shrink-0" aria-hidden />
+              <span className="font-semibold">
+                Trusted by founders behind multi-million-pound UK and UAE agencies
+              </span>
             </div>
           </div>
         </div>
@@ -144,6 +178,48 @@ export default function HomePage() {
                 <div className="mt-1.5 text-xs sm:text-sm font-semibold text-indigo-200 uppercase tracking-wider">{stat.label}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Composite testimonials — anonymised */}
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20" aria-labelledby="testimonials-heading">
+        <div className={siteContainerLg}>
+          <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
+            <div className="inline-block bg-slate-900 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
+              Real outcomes
+            </div>
+            <h2 id="testimonials-heading" className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">
+              What we&rsquo;ve done for agency founders
+            </h2>
+            <p className="mt-3 text-sm sm:text-base text-slate-600">
+              Composite snapshots based on patterns across our agency clients. Names and figures anonymised. The tax mechanics are real.
+            </p>
+          </div>
+          <div className="grid gap-5 sm:gap-6 md:grid-cols-3">
+            {testimonials.map((t, i) => (
+              <figure
+                key={i}
+                className="relative bg-white border border-slate-200 p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <Quote className="absolute top-4 right-4 h-6 w-6 text-indigo-200" aria-hidden />
+                <blockquote className="text-base sm:text-lg leading-relaxed text-slate-800 font-medium pr-8">
+                  &ldquo;{t.quote}&rdquo;
+                </blockquote>
+                <figcaption className="mt-5 pt-4 border-t border-slate-100 text-xs sm:text-sm font-semibold text-slate-600">
+                  {t.attribution}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+          <div className="text-center mt-8 sm:mt-10">
+            <Link
+              href="/founder-stories"
+              className="inline-flex items-center gap-2 text-indigo-700 hover:text-indigo-800 font-semibold text-sm sm:text-base transition-colors"
+            >
+              Read the full founder stories
+              <ArrowRight className="h-4 w-4" />
+            </Link>
           </div>
         </div>
       </section>
@@ -208,6 +284,15 @@ export default function HomePage() {
                 <ArrowRight className="mt-2 h-4 w-4 text-slate-400 group-hover:text-indigo-400 group-hover:translate-x-1 transition-all" />
               </Link>
             ))}
+            <Link
+              href="/agencies"
+              className="group block bg-indigo-600 border border-indigo-500 p-4 sm:p-5 transition-all hover:bg-indigo-500"
+            >
+              <span className="text-sm sm:text-base font-bold text-white">
+                See all 19 agency types
+              </span>
+              <ArrowRight className="mt-2 h-4 w-4 text-white group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
         </div>
       </section>
@@ -428,40 +513,16 @@ export default function HomePage() {
         <div className={siteContainerLg}>
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-slate-900 text-center mb-8 sm:mb-12 sm:text-4xl lg:text-5xl">Common questions</h2>
-            <div className="space-y-3 sm:space-y-4">
-              {[
-                {
-                  q: "Do I need a specialist accountant for my agency?",
-                  a: "Not strictly. But a generalist accountant will rarely know the nuances of agency finance: retainer income recognition, contractor IR35 risk, R&D credits for digital work, or how to structure a partial agency sale. A specialist saves you money and helps you make better decisions from the start.",
-                },
-                {
-                  q: "How should I pay myself as an agency founder?",
-                  a: "Most limited company agency founders take a low salary up to the National Insurance threshold (currently £12,570) and the rest as dividends. The optimal split depends on your personal tax position, pension contributions, and whether you have other income. We model this for every client.",
-                },
-                {
-                  q: "Does my agency qualify for R&D tax credits?",
-                  a: "More agencies qualify than you might expect, especially digital, web development, AI, software and technology agencies. If your team is solving technical problems that are not straightforward to implement, you may be able to claim. We assess eligibility as standard across our client base.",
-                },
-                {
-                  q: "What does an agency accountant cost?",
-                  a: "Fees depend on the complexity of your agency — number of directors, payroll size, VAT scheme, R&D activity, international exposure. Rather than publish a tiered price list that won't apply to most agencies, we quote fixed fees after a short discovery call so you know exactly what you're paying for upfront.",
-                },
-              ].map((item) => (
-                <details key={item.q} className="group bg-slate-50 border-l-4 border-slate-300 hover:border-indigo-600 transition-all">
-                  <summary className="cursor-pointer list-none px-4 py-4 sm:px-6 sm:py-5 font-bold text-slate-900 hover:bg-slate-100 transition-colors [&::-webkit-details-marker]:hidden text-sm sm:text-base">
-                    <span className="flex items-center justify-between gap-3 sm:gap-4">
-                      {item.q}
-                      <span className="text-indigo-600 text-2xl font-bold transition-transform group-open:rotate-45 flex-shrink-0">
-                        +
-                      </span>
-                    </span>
-                  </summary>
-                  <div className="border-t border-slate-200 bg-white px-4 py-4 sm:px-6 sm:py-5 text-sm sm:text-base leading-relaxed text-slate-700">
-                    <p>{item.a}</p>
-                  </div>
-                </details>
+            <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
+              {faqs.map((item, i) => (
+                <AccordionItem key={item.question} value={`faq-${i}`}>
+                  <AccordionTrigger>{item.question}</AccordionTrigger>
+                  <AccordionContent>
+                    <p>{item.answer}</p>
+                  </AccordionContent>
+                </AccordionItem>
               ))}
-            </div>
+            </Accordion>
           </div>
         </div>
       </section>
