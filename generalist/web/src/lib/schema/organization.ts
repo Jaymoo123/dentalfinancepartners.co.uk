@@ -5,9 +5,9 @@ import type { Organization, SchemaThing } from "./types";
 const ORG_ID = `${siteConfig.url}#organization`;
 
 /**
- * Canonical Organization for Agency Founder Finance Ltd. Use as the
- * top-level Organization on the homepage, and as a referenced @id on
- * downstream pages via `referencedOrganization()`.
+ * Canonical Organization schema. Use as the top-level Organization on the
+ * homepage; reference downstream pages with `referencedOrganization()` so
+ * JSON-LD parsers de-duplicate to the single full record.
  */
 export function buildOrganization(): Organization {
   return {
@@ -30,14 +30,17 @@ export function buildOrganization(): Organization {
       name: s,
     })),
     knowsAbout: [
-      "UK agency taxation",
-      "Corporation tax",
-      "Dividend tax planning",
-      "R&D tax credits for marketing and digital agencies",
-      "IR35 for contractor engagements",
-      "Business Asset Disposal Relief",
-      "International tax for UK-UAE agency founders",
-      "Making Tax Digital",
+      "UK corporation tax",
+      "Marginal relief and the small profits rate",
+      "Director salary and dividend optimisation",
+      "VAT registration and scheme selection",
+      "Making Tax Digital for VAT and ITSA",
+      "PAYE and employer National Insurance",
+      "R&D tax credits for UK SMEs",
+      "Incorporation timing and structure",
+      "Business Asset Disposal Relief and exit planning",
+      "Self-assessment for sole traders and partnerships",
+      "Bookkeeping for UK small businesses",
     ],
     slogan: siteConfig.tagline,
   };
@@ -62,7 +65,7 @@ export function referencedOrganization(): SchemaThing {
 }
 
 /**
- * WebSite schema for the homepage, includes a SearchAction so Google can
+ * WebSite schema for the homepage. Includes a SearchAction so Google can
  * render the sitelinks search box.
  */
 export function buildWebSite(): SchemaThing {

@@ -1,16 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { PageShell } from "@/components/layout/PageShell";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
-
-const plusJakarta = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-});
 
 const siteUrl = siteConfig.url;
 
@@ -73,13 +68,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-GB">
+    <html lang="en-GB" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <head>
         <GoogleAnalytics measurementId={niche.seo.google_analytics_id} />
       </head>
-      <body
-        className={`${plusJakarta.variable} ${plusJakarta.className} antialiased`}
-      >
+      <body className="antialiased font-sans">
         <PageShell>{children}</PageShell>
       </body>
     </html>

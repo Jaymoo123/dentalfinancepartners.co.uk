@@ -7,7 +7,10 @@ import { niche } from "@/config/niche-loader";
 import { submitLead, getSupabaseConfig } from "@/lib/supabase-client";
 
 const fieldClass =
-  "mt-1 w-full min-h-12 touch-manipulation rounded-lg border-2 border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 shadow-sm focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600/25 transition-colors";
+  "mt-2 w-full min-h-12 touch-manipulation border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-orange-500 focus:outline-none";
+
+const labelClass = "block text-sm font-medium text-neutral-900";
+const errorClass = "mt-2 text-xs text-red-600";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
@@ -55,14 +58,14 @@ export function LeadForm({
 
     if (fullName.length < 2) errs.fullName = "Enter your name.";
     if (!emailRe.test(email)) errs.email = "Enter a valid email address.";
-    
+
     if (!ukPhoneRe.test(phone)) {
       errs.phone = "Use only digits, spaces, +, -, ( ) for example 07700 900123";
     } else if (!hasMinDigits(phone, 10)) {
       errs.phone = "Enter at least 10 digits.";
     }
-    
-    if (!role) errs.role = "Select your agency type.";
+
+    if (!role) errs.role = "Select an option.";
 
     if (message.length > 0 && message.length < 10) {
       errs.message = "Add a sentence or two if you have a specific question.";
@@ -109,7 +112,6 @@ export function LeadForm({
       return;
     }
 
-    // Track conversion in Google Analytics
     if (typeof window !== "undefined" && "gtag" in window) {
       const gtag = (window as { gtag?: (...args: unknown[]) => void }).gtag;
       if (gtag) {
@@ -132,11 +134,11 @@ export function LeadForm({
   }
 
   return (
-    <form onSubmit={onSubmit} className="space-y-5" noValidate aria-busy={status === "loading"}>
+    <form onSubmit={onSubmit} className="space-y-6" noValidate aria-busy={status === "loading"}>
       <input type="hidden" name="sourceUrl" value={sourceUrl} />
 
       <div>
-        <label htmlFor="role" className="block text-sm font-semibold text-slate-900">
+        <label htmlFor="role" className={labelClass}>
           {niche.lead_form.role_label}
         </label>
         <select
@@ -156,14 +158,14 @@ export function LeadForm({
           ))}
         </select>
         {fieldErrors.role && (
-          <p id="role-error" className="mt-1.5 text-xs font-medium text-red-600">
+          <p id="role-error" className={errorClass}>
             {fieldErrors.role}
           </p>
         )}
       </div>
 
       <div>
-        <label htmlFor="fullName" className="block text-sm font-semibold text-slate-900">
+        <label htmlFor="fullName" className={labelClass}>
           Full name
         </label>
         <input
@@ -179,15 +181,15 @@ export function LeadForm({
           aria-describedby={fieldErrors.fullName ? "fullName-error" : undefined}
         />
         {fieldErrors.fullName && (
-          <p id="fullName-error" className="mt-1.5 text-xs font-medium text-red-600">
+          <p id="fullName-error" className={errorClass}>
             {fieldErrors.fullName}
           </p>
         )}
       </div>
 
-      <div className="grid gap-5 sm:grid-cols-2">
+      <div className="grid gap-6 sm:grid-cols-2">
         <div>
-          <label htmlFor="email" className="block text-sm font-semibold text-slate-900">
+          <label htmlFor="email" className={labelClass}>
             Email
           </label>
           <input
@@ -203,14 +205,14 @@ export function LeadForm({
             aria-describedby={fieldErrors.email ? "email-error" : undefined}
           />
           {fieldErrors.email && (
-            <p id="email-error" className="mt-1.5 text-xs font-medium text-red-600">
+            <p id="email-error" className={errorClass}>
               {fieldErrors.email}
             </p>
           )}
         </div>
 
         <div>
-          <label htmlFor="phone" className="block text-sm font-semibold text-slate-900">
+          <label htmlFor="phone" className={labelClass}>
             Phone
           </label>
           <input
@@ -226,7 +228,7 @@ export function LeadForm({
             aria-describedby={fieldErrors.phone ? "phone-error" : undefined}
           />
           {fieldErrors.phone && (
-            <p id="phone-error" className="mt-1.5 text-xs font-medium text-red-600">
+            <p id="phone-error" className={errorClass}>
               {fieldErrors.phone}
             </p>
           )}
@@ -234,8 +236,8 @@ export function LeadForm({
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-semibold text-slate-900">
-          Message <span className="font-normal text-slate-500">(optional)</span>
+        <label htmlFor="message" className={labelClass}>
+          Message <span className="font-normal text-neutral-500">(optional)</span>
         </label>
         <textarea
           id="message"
@@ -248,22 +250,22 @@ export function LeadForm({
           aria-describedby={fieldErrors.message ? "message-error" : undefined}
         />
         {fieldErrors.message && (
-          <p id="message-error" className="mt-1.5 text-xs font-medium text-red-600">
+          <p id="message-error" className={errorClass}>
             {fieldErrors.message}
           </p>
         )}
       </div>
 
       {errorMessage && (
-        <div role="alert" className="rounded-lg border-2 border-red-200 bg-red-50 p-4">
-          <p className="text-sm font-medium text-red-800">{errorMessage}</p>
+        <div role="alert" className="border border-red-200 bg-red-50 p-4">
+          <p className="text-sm text-red-800">{errorMessage}</p>
         </div>
       )}
 
       {status === "success" && !redirectOnSuccess && (
-        <div role="status" className="rounded-lg border-2 border-indigo-200 bg-indigo-50 p-4">
-          <p className="text-sm font-semibold text-indigo-900">
-            Thanks! We&apos;ll be in touch within 24 hours.
+        <div role="status" className="border border-orange-200 bg-orange-50 p-4">
+          <p className="text-sm font-medium text-orange-900">
+            Thanks. We&apos;ll be in touch within 24 hours.
           </p>
         </div>
       )}
@@ -273,10 +275,10 @@ export function LeadForm({
         disabled={status === "loading" || status === "success"}
         className={`${btnPrimary} w-full`}
       >
-        {status === "loading" ? "Sending..." : status === "success" ? "Sent!" : submitLabel}
+        {status === "loading" ? "Sending..." : status === "success" ? "Sent" : submitLabel}
       </button>
 
-      <p className="text-xs leading-relaxed text-slate-500">
+      <p className="text-xs leading-relaxed text-neutral-500">
         We respond within 24 hours. Your details are stored securely and never shared.
       </p>
     </form>

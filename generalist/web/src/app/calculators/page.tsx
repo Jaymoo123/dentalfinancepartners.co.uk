@@ -34,17 +34,10 @@ const calculators = [
     available: true,
   },
   {
-    slug: "agency-valuation",
-    title: "Agency Valuation Calculator",
-    description:
-      "EBITDA × multiple model with adjustments for retainer revenue, client concentration and founder dependency. What is your agency worth?",
-    available: true,
-  },
-  {
     slug: "badr-cgt-calculator",
     title: "BADR CGT Calculator",
     description:
-      "Work out your CGT bill on an agency sale under Business Asset Disposal Relief. Models the 2025/26 14% rate and 2026/27 18% rate.",
+      "Work out your CGT bill on selling a business under Business Asset Disposal Relief. Models the 2025/26 14% rate and 2026/27 18% rate.",
     available: true,
   },
   {

@@ -1,485 +1,346 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
-import { LeadForm } from "@/components/forms/LeadForm";
-import { btnPrimary, btnSecondary, siteContainerLg } from "@/components/ui/layout-utils";
+import { btnPrimary, btnSecondary, siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { JsonLd, buildOrganization, buildWebSite } from "@/lib/schema";
 import { buildFaqPage } from "@/lib/schema/faq-page";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
-import { getAllPosts, getCategorySlug } from "@/lib/blog";
-import { getAllFundamentals } from "@/lib/fundamentals";
-import { ArrowRight, BookOpen, Calculator, LineChart, Building2, FileCheck, Quote, ShieldCheck } from "lucide-react";
 import { SignupForm } from "@/components/newsletter/SignupForm";
+import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "UK Business Accountants | Specialist Tax, VAT, Payroll and R&D",
+  title: `${siteConfig.name} | ICAEW chartered accountants for UK business`,
   description:
-    "Specialist UK accountants for limited companies, contractors, sole traders and partnerships. Corporation tax, VAT, payroll, R&D credits, MTD, and exit planning. ICAEW network, national coverage, fixed fees.",
+    "ICAEW chartered accountants serving UK limited companies, sole traders, contractors and partnerships. Corporation tax, VAT, payroll, R&D credits, MTD, and exit planning. National coverage, fixed fees.",
   alternates: { canonical: siteConfig.url },
   openGraph: {
-    title: `${siteConfig.name} | Accountants for UK Businesses of Every Shape`,
+    title: `${siteConfig.name} | ICAEW chartered accountants for UK business`,
     description:
-      "Specialist UK accountants for limited companies, contractors, sole traders and partnerships. Fixed fees, ICAEW-qualified network, national coverage.",
+      "ICAEW chartered accountants for UK limited companies, sole traders, contractors and partnerships. National coverage, fixed fees.",
     url: siteConfig.url,
     type: "website",
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Accountants for UK Businesses of Every Shape`,
+    title: `${siteConfig.name} | ICAEW chartered accountants for UK business`,
     description:
-      "Specialist UK accountants for limited companies, contractors, sole traders and partnerships. Fixed fees, ICAEW-qualified network, national coverage.",
+      "ICAEW chartered accountants for UK limited companies, sole traders, contractors and partnerships. National coverage, fixed fees.",
   },
 };
 
 const services = [
   {
-    title: "Corporation Tax",
-    description: "Year-end accounts and CT600 filings, marginal relief planning, optimised director pay structures",
-    Icon: Calculator,
+    n: "01",
+    title: "Corporation tax and year-end",
+    body: "Statutory accounts and CT600 filings, marginal-relief planning between £50,000 and £250,000, director remuneration modelling.",
   },
   {
-    title: "VAT and MTD",
-    description: "VAT registration, scheme selection (FRS, Cash, Standard), and Making Tax Digital quarterly returns",
-    Icon: LineChart,
+    n: "02",
+    title: "VAT and Making Tax Digital",
+    body: "VAT registration timing, scheme selection (Standard, Flat Rate, Cash, Annual), and the quarterly MTD discipline.",
   },
   {
-    title: "Incorporation and Structure",
-    description: "Sole trader to limited company, group structures, share allocations, and director loan accounts",
-    Icon: Building2,
+    n: "03",
+    title: "Payroll, PAYE and pensions",
+    body: "Monthly payroll, RTI submissions, Employment Allowance, salary-sacrifice schemes and director pension contributions.",
   },
   {
-    title: "R&D and Tax Reliefs",
-    description: "R&D tax credit claims, capital allowances, BADR planning, and patent box where it applies",
-    Icon: FileCheck,
+    n: "04",
+    title: "R&D credits and reliefs",
+    body: "Merged-scheme R&D claims, capital allowances, BADR and patent-box where it applies. Technical narrative written by qualified staff.",
   },
-];
-
-const businessTypes = [
-  { label: "Limited companies", href: "/services" },
-  { label: "Sole traders", href: "/services" },
-  { label: "Contractors and freelancers", href: "/services" },
-  { label: "Partnerships and LLPs", href: "/services" },
-  { label: "New incorporations", href: "/incorporation" },
-  { label: "Growing SMEs", href: "/services" },
-  { label: "R&D-claiming businesses", href: "/r-and-d-credits" },
-  { label: "Exit-ready founders", href: "/services" },
-];
-
-const keyStats = [
-  { value: "100+", label: "UK business clients" },
-  { value: "Nationwide", label: "Coverage" },
-  { value: "ICAEW", label: "Qualified network" },
-  { value: "Fixed fees", label: "No surprises" },
 ];
 
 const faqs = [
   {
-    question: "How much does an accountant cost for a UK limited company?",
+    question: "What does the firm actually cost?",
     answer:
-      "Fees depend on complexity: turnover, payroll size, VAT scheme, number of directors, R&D activity, and whether you need management accounts as well as year-end. Rather than publish a tiered price list that won't apply to most businesses, we quote fixed fees after a short discovery call so you know exactly what you're paying for upfront. Most small limited companies pay between a few hundred and a few thousand pounds per year, all in.",
+      "Fees depend on complexity: turnover, payroll size, VAT scheme, number of directors, R&D activity, whether you need management accounts as well as year-end. We quote a fixed fee after a short discovery call. Nothing is added without your sign-off, and the engagement letter is plain English.",
   },
   {
-    question: "Do I need an accountant for my sole trader business?",
+    question: "Do you work with sole traders and partnerships, or only limited companies?",
     answer:
-      "Not strictly. You can file your own Self Assessment via HMRC's online service. An accountant adds value when your situation gets non-obvious: turnover approaching the VAT threshold (currently £90,000), considering incorporation, multiple income streams, claiming R&D or capital allowances, or you simply value getting the time back. The cost is typically tax-deductible against your trading profits.",
+      "All four UK trading structures. Sole traders, partnerships, LLPs and limited companies are all on the engagement roster. The work that applies depends on the structure: self-assessment for sole traders and partners, corporation tax and director pay for Ltds, and partnership returns where relevant.",
   },
   {
-    question: "When should I incorporate as a limited company?",
+    question: "Are you ICAEW members or just registered tax agents?",
     answer:
-      "There is no single threshold, but commonly it is worth modelling once your trading profit consistently exceeds about £30,000 to £40,000 a year. Above that the tax efficiency of dividends plus a low salary often outweighs the extra admin of a limited company. Below it the savings rarely justify the additional compliance. The decision also depends on personal tax position, pension plans, mortgage requirements and whether you want to retain profit inside the business.",
+      "Our team operates under ICAEW chartered accountancy standards. That is a deliberate floor: many UK accounting firms employ AAT-qualified bookkeepers and trade as accountants. ICAEW members hold a higher technical bar and a regulated professional code, which matters when the advice is non-obvious.",
   },
   {
-    question: "Can you work with my business if I'm not in London?",
+    question: "How does the relationship actually work, week to week?",
     answer:
-      "Yes. Our ICAEW-qualified network operates nationally and almost everything we do, from year-end accounts through to advisory calls, runs over secure cloud accounting (Xero, FreeAgent, QuickBooks) and video. We have clients across the UK from Glasgow to Brighton. Local presence isn't a cost factor any more.",
+      "Cloud-first via Xero, FreeAgent or QuickBooks depending on what you already use. One named accountant on the engagement. Email and scheduled calls; ad-hoc questions answered within one working day. Annual cycle: bookkeeping handover, VAT quarters where relevant, payroll monthly, year-end, planning conversation.",
   },
 ];
 
-// Composite testimonials, anonymised. Patterns are real, names and figures changed.
+// Composite snapshots based on patterns across our client base.
+// Anonymised by structure: business type, scale, location, outcome.
+// No specific clients named.
 const testimonials = [
   {
-    quote: "Switched from a high-street firm and the difference in proactivity was night and day. They flagged a CT marginal-relief issue before it cost me anything.",
-    attribution: "Limited company director, eCommerce, Bristol",
+    quote:
+      "They flagged a marginal-relief miscalculation in our first review that had been missed for three years. Refund and reset, plus quarterly visibility we never had.",
+    attribution: "Limited company, 12 staff, professional services, Bristol",
   },
   {
-    quote: "I'd been a sole trader for six years. Their incorporation modelling showed me I was leaving £6k a year on the table.",
-    attribution: "Independent consultant, Leeds (newly incorporated)",
+    quote:
+      "Switching mid-year from sole trader to Ltd was the right call once they modelled it properly. About £11,000 saved in year one against a five-figure setup.",
+    attribution: "Independent consultant, newly incorporated, Leeds",
   },
   {
-    quote: "VAT scheme review saved us £2,800 in year one. We were on Standard when Flat Rate was clearly better for our cost mix.",
-    attribution: "Two-director Ltd, professional services, Manchester",
+    quote:
+      "We were on Standard VAT when Flat Rate was clearly the better fit for our cost mix. Scheme review paid for itself inside a quarter.",
+    attribution: "Two-director Ltd, e-commerce, Manchester",
   },
 ];
 
 export default function HomePage() {
-  const recentPosts = getAllPosts().slice(0, 3).map((post) => ({
-    ...post,
-    categorySlug: getCategorySlug(post),
-  }));
-  const featuredPillars = getAllFundamentals().slice(0, 3);
-
   return (
     <>
-      <JsonLd data={[buildOrganization(), buildWebSite(), buildFaqPage(faqs)].filter((s): s is NonNullable<typeof s> => s !== null)} />
+      <JsonLd
+        data={[buildOrganization(), buildWebSite(), buildFaqPage(faqs)].filter(
+          (s): s is NonNullable<typeof s> => s !== null,
+        )}
+      />
 
-      {/* Hero */}
-      <section className="relative h-[500px] sm:h-[600px] lg:h-[700px] overflow-hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=2000&q=85"
-          alt="UK business owners reviewing accounts"
-          fill
-          className="object-cover brightness-60"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/98 via-slate-900/85 to-slate-900/50" />
-        <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
-          <div className="max-w-3xl">
-            <div className="inline-block bg-indigo-600 px-3 py-1.5 text-xs sm:text-sm font-bold text-white uppercase tracking-wider mb-4 sm:mb-6 shadow-lg">
-              ICAEW qualified accountants, national coverage
-            </div>
-            <h1 className="text-3xl font-bold leading-[1.15] text-white text-balance sm:text-5xl sm:leading-[1.1] lg:text-7xl">
-              Accountants for UK businesses{" "}
-              <span className="text-indigo-400">of every shape.</span>
-            </h1>
-            <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-slate-200 sm:text-xl lg:text-2xl max-w-2xl">
-              Limited companies, contractors, sole traders, partnerships. Corporation tax, VAT, payroll, R&D and exit planning. Fixed fees, plain English, 24 hour response.
+      {/* 1. HERO — typographic, off-white, no photo */}
+      <section className="bg-[#fafaf7] pt-20 pb-24 sm:pt-28 sm:pb-32 lg:pt-32 lg:pb-40">
+        <div className={siteContainerLg}>
+          <div className="max-w-4xl">
+            <p className="font-mono text-xs uppercase tracking-widest text-orange-500">
+              ICAEW chartered accountants
             </p>
-            <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href="/free-health-check" className={`${btnPrimary} text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
-                Free business finance health check
-              </Link>
-              <Link href="/contact" className={`${btnSecondary} bg-white/10 border-white text-white hover:bg-white/20 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>
+            <h1 className="mt-6 text-4xl font-semibold tracking-tight text-neutral-900 leading-[1.05] sm:text-6xl lg:text-7xl text-balance">
+              UK business{" "}
+              <span className="text-orange-500">accounting,</span>
+              <br />
+              done with conviction.
+            </h1>
+            <p className="mt-8 max-w-2xl text-lg leading-relaxed text-neutral-600 sm:text-xl">
+              Year-round compliance and the advisory you actually want. Limited
+              companies, sole traders, contractors, partnerships. One named ICAEW
+              accountant. Cloud-first delivery. Fixed fees, agreed up front.
+            </p>
+            <div className="mt-12 flex flex-col sm:flex-row gap-3">
+              <Link href="/contact" className={btnPrimary}>
                 Book a free call
               </Link>
-            </div>
-            <div className="mt-6 sm:mt-8 flex items-center gap-2.5 text-xs sm:text-sm text-slate-300">
-              <ShieldCheck className="h-4 w-4 text-indigo-400 flex-shrink-0" aria-hidden />
-              <span className="font-semibold">
-                ICAEW-qualified network, national coverage, fixed fees
-              </span>
+              <Link href="/services" className={btnSecondary}>
+                What we cover
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Key Stats */}
-      <section className="bg-indigo-700 py-8 sm:py-10">
+      {/* 2. PROOF BAND — hairlines, Geist Mono numbers */}
+      <section className="border-y border-neutral-200 bg-[#fafaf7]">
         <div className={siteContainerLg}>
-          <div className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-4">
-            {keyStats.map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white font-mono">{stat.value}</div>
-                <div className="mt-1.5 text-xs sm:text-sm font-semibold text-indigo-200 uppercase tracking-wider">{stat.label}</div>
+          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-neutral-200">
+            {[
+              { value: "ICAEW", label: "Chartered network" },
+              { value: "100+", label: "UK businesses served" },
+              { value: "24h", label: "Response window" },
+              { value: "Fixed", label: "Fee, never hourly" },
+            ].map((stat, i) => (
+              <div
+                key={i}
+                className={`py-10 sm:py-12 px-6 ${i === 0 ? "pl-0" : ""} ${i === 3 ? "pr-0" : ""}`}
+              >
+                <div className="font-mono text-3xl sm:text-4xl font-medium tracking-tight text-neutral-900">
+                  {stat.value}
+                </div>
+                <div className="mt-3 text-xs font-medium uppercase tracking-wider text-neutral-500">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Composite testimonials, anonymised */}
-      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20" aria-labelledby="testimonials-heading">
+      {/* 3. WHAT WE DO — numbered editorial list */}
+      <section className={`${sectionY} bg-[#fafaf7]`}>
         <div className={siteContainerLg}>
-          <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
-            <div className="inline-block bg-slate-900 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
-              Real outcomes
+          <div className="grid lg:grid-cols-[1fr_2fr] gap-12 lg:gap-20">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-widest text-orange-500">
+                Practice
+              </p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl">
+                What the engagement covers.
+              </h2>
+              <p className="mt-6 text-base leading-relaxed text-neutral-600">
+                Compliance is table stakes. The work that pays for itself is the
+                advisory that sits on top: pay structures, VAT scheme choice, R&amp;D
+                claims, capital allowances, succession planning.
+              </p>
             </div>
-            <h2 id="testimonials-heading" className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">
-              What we&rsquo;ve done for UK business owners
+            <div>
+              <ul className="divide-y divide-neutral-200 border-t border-neutral-200">
+                {services.map((s) => (
+                  <li key={s.n} className="py-8 grid grid-cols-[3rem_1fr] gap-6">
+                    <div className="font-mono text-sm font-medium text-orange-500 pt-1">
+                      {s.n}
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold tracking-tight text-neutral-900">
+                        {s.title}
+                      </h3>
+                      <p className="mt-2 text-base leading-relaxed text-neutral-600 max-w-xl">
+                        {s.body}
+                      </p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. WHO WE WORK WITH — single typographic statement, no tiles */}
+      <section className={`${sectionY} bg-neutral-900 text-white`}>
+        <div className={siteContainerLg}>
+          <p className="font-mono text-xs uppercase tracking-widest text-orange-400">
+            Coverage
+          </p>
+          <div className="mt-8 text-4xl font-semibold tracking-tight leading-[1.05] sm:text-6xl lg:text-7xl max-w-5xl">
+            <span>Limited companies.</span>
+            <span className="text-orange-400 mx-3">·</span>
+            <span>Sole traders.</span>
+            <span className="text-orange-400 mx-3">·</span>
+            <span>Contractors.</span>
+            <span className="text-orange-400 mx-3">·</span>
+            <span>Partnerships.</span>
+          </div>
+          <p className="mt-10 max-w-2xl text-lg leading-relaxed text-neutral-400">
+            From a first incorporation decision through to a nine-figure exit.
+            Cloud-first, nationally available, ICAEW-qualified, fixed-fee.
+          </p>
+        </div>
+      </section>
+
+      {/* 5. EDITORIAL PULL-QUOTES — stacked, large italic, mono attribution */}
+      <section className={`${sectionY} bg-[#fafaf7]`}>
+        <div className={siteContainerLg}>
+          <div className="max-w-4xl">
+            <p className="font-mono text-xs uppercase tracking-widest text-orange-500 mb-4">
+              In practice
+            </p>
+            <h2 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl">
+              What the work has produced.
             </h2>
-            <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Composite snapshots based on patterns across our client base. Names and figures anonymised. The tax mechanics are real.
+            <p className="mt-4 text-base leading-relaxed text-neutral-600 max-w-2xl">
+              Composite snapshots based on patterns across our client base. Names
+              and figures anonymised. The mechanics are real.
             </p>
           </div>
-          <div className="grid gap-5 sm:gap-6 md:grid-cols-3">
+          <div className="mt-16 divide-y divide-neutral-200 border-t border-neutral-200">
             {testimonials.map((t, i) => (
-              <figure
-                key={i}
-                className="relative bg-white border border-slate-200 p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow"
-              >
-                <Quote className="absolute top-4 right-4 h-6 w-6 text-indigo-200" aria-hidden />
-                <blockquote className="text-base sm:text-lg leading-relaxed text-slate-800 font-medium pr-8">
-                  &ldquo;{t.quote}&rdquo;
-                </blockquote>
-                <figcaption className="mt-5 pt-4 border-t border-slate-100 text-xs sm:text-sm font-semibold text-slate-600">
-                  {t.attribution}
-                </figcaption>
+              <figure key={i} className="py-12 grid grid-cols-1 lg:grid-cols-[3rem_1fr] gap-6 lg:gap-10">
+                <div className="font-mono text-orange-500 text-5xl leading-none -mt-2" aria-hidden>
+                  &ldquo;
+                </div>
+                <div>
+                  <blockquote className="text-2xl sm:text-3xl font-medium italic leading-[1.3] tracking-tight text-neutral-900 max-w-3xl">
+                    {t.quote}
+                  </blockquote>
+                  <figcaption className="mt-6 font-mono text-xs uppercase tracking-widest text-neutral-500">
+                    {t.attribution}
+                  </figcaption>
+                </div>
               </figure>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Core Services */}
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
+      {/* 6. MANIFESTO BLOCK — short typographic statement */}
+      <section className={`${sectionY} bg-[#fafaf7] border-t border-neutral-200`}>
         <div className={siteContainerLg}>
-          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
-              What we do for UK businesses
-            </h2>
-            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
-              Year-round compliance plus the advisory you actually want. Fixed fees, one named accountant, ICAEW-qualified.
+          <div className="max-w-3xl">
+            <p className="font-mono text-xs uppercase tracking-widest text-orange-500">
+              Position
             </p>
-          </div>
-          <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {services.map((service) => {
-              const Icon = service.Icon;
-              return (
-                <div key={service.title} className="text-center group">
-                  <div className="mx-auto flex h-16 w-16 sm:h-20 sm:w-20 items-center justify-center bg-gradient-to-br from-indigo-500 to-indigo-700 mb-3 sm:mb-4 shadow-lg hover:shadow-xl transition-all hover:scale-105">
-                    <Icon className="h-7 w-7 sm:h-9 sm:w-9 text-white" strokeWidth={1.75} />
-                  </div>
-                  <h3 className="text-base sm:text-lg font-bold text-slate-900">{service.title}</h3>
-                  <p className="mt-1.5 sm:mt-2 text-sm text-slate-600">{service.description}</p>
-                </div>
-              );
-            })}
-          </div>
-          <div className="text-center mt-10">
-            <Link href="/services" className={`${btnSecondary}`}>
-              View all services
-            </Link>
+            <p className="mt-6 text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tight leading-[1.25] text-neutral-900">
+              Most UK firms compete on{" "}
+              <span className="text-orange-500">price</span>. The ones worth hiring
+              compete on the cost of the advice you did <em>not</em> get. We work to
+              the second standard.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Business Types */}
-      <section className="bg-slate-900 py-12 sm:py-16 lg:py-20">
+      {/* 7. NEWSLETTER — small card, single field, orange button */}
+      <section className={`${sectionY} bg-white border-t border-neutral-200`}>
         <div className={siteContainerLg}>
-          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <div className="inline-block bg-indigo-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
-              Every business shape
-            </div>
-            <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
-              We work across the UK business landscape
-            </h2>
-            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-300">
-              From a one-person Ltd company to multi-director groups. The right accountant fits your stage, not the other way round.
-            </p>
-          </div>
-          <div className="grid gap-3 sm:gap-4 grid-cols-2 md:grid-cols-4">
-            {businessTypes.map((type) => (
-              <Link
-                key={type.label}
-                href={type.href}
-                className="group block bg-white/5 border border-white/10 p-4 sm:p-5 transition-all hover:bg-indigo-600/20 hover:border-indigo-400/40"
-              >
-                <span className="text-sm sm:text-base font-semibold text-white group-hover:text-indigo-300 transition-colors">
-                  {type.label}
-                </span>
-                <ArrowRight className="mt-2 h-4 w-4 text-slate-400 group-hover:text-indigo-400 group-hover:translate-x-1 transition-all" />
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Pillar guides */}
-      {featuredPillars.length > 0 && (
-        <section className="bg-white py-12 sm:py-16 lg:py-20">
-          <div className={siteContainerLg}>
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-8 sm:mb-12 max-w-3xl mx-auto">
-                <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-3 py-1 text-xs font-bold uppercase tracking-wider mb-4">
-                  <BookOpen className="h-3.5 w-3.5" />
-                  Pillar guides
-                </div>
-                <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
-                  Plain-English guides for UK business owners
-                </h2>
-                <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
-                  Long-form reference guides on the decisions that matter: incorporation, VAT, R&D, payroll and exit.
-                </p>
-              </div>
-              <div className="grid gap-6 sm:gap-8 md:grid-cols-3">
-                {featuredPillars.map((guide) => (
-                  <Link
-                    key={guide.slug}
-                    href={`/fundamentals/${guide.slug}`}
-                    className="group block bg-slate-50 border border-slate-200 hover:border-indigo-600 hover:shadow-md transition-all overflow-hidden"
-                  >
-                    {guide.image ? (
-                      <div className="relative h-40 overflow-hidden">
-                        <Image
-                          src={guide.image}
-                          alt={guide.altText || guide.title}
-                          fill
-                          sizes="(min-width: 768px) 33vw, 100vw"
-                          className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 bg-slate-900/30" />
-                        <div className="absolute bottom-3 left-3 bg-indigo-600 px-2.5 py-1 text-[10px] font-bold text-white uppercase tracking-wider">
-                          Pillar guide
-                        </div>
-                      </div>
-                    ) : null}
-                    <div className="p-6">
-                      <div className="text-xs font-bold uppercase tracking-wider text-indigo-700 mb-3">
-                        {guide.category}
-                      </div>
-                      <h3 className="text-lg font-bold text-slate-900 group-hover:text-indigo-700 transition-colors">
-                        {guide.title}
-                      </h3>
-                      <p className="mt-3 text-sm text-slate-600 line-clamp-3">{guide.summary}</p>
-                      <div className="mt-4 flex items-center text-indigo-600 font-semibold text-sm">
-                        Read the guide
-                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                      </div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-              <div className="text-center mt-8 sm:mt-12">
-                <Link
-                  href="/fundamentals"
-                  className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-semibold text-base sm:text-lg transition-colors"
-                >
-                  View all pillar guides
-                  <ArrowRight className="h-5 w-5" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Newsletter inline */}
-      <section className="bg-slate-50 py-12 sm:py-16">
-        <div className={siteContainerLg}>
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-2xl">
             <SignupForm
               source="homepage-mid"
               variant="card"
-              heading="One UK business tax idea a week."
-              body="A short read for UK business owners: tax, structure, VAT, payroll. Plain text, one CTA, unsubscribe in one click."
-              showAgencyType={false}
+              heading="The Director's Brief"
+              body="One short note a week for UK business owners. Tax, structure, payroll, cash. Plain text, one CTA, unsubscribe in one click."
+              ctaLabel="Subscribe"
             />
           </div>
         </div>
       </section>
 
-      {/* Latest Insights */}
-      {recentPosts.length > 0 && (
-        <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
-          <div className={siteContainerLg}>
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-8 sm:mb-12">
-                <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
-                  Latest insights for UK business owners
-                </h2>
-                <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
-                  Practical guidance on tax, structure, payroll and running a profitable UK business
-                </p>
-              </div>
-              <div className="grid gap-6 sm:gap-8 md:grid-cols-3">
-                {recentPosts.map((post) => (
-                  <article
-                    key={post.slug}
-                    className="bg-white border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden group"
-                  >
-                    <Link
-                      href={`/blog/${post.categorySlug}/${post.slug}`}
-                      className="block p-6 h-full flex flex-col"
-                    >
-                      <div className="text-xs font-bold uppercase tracking-wider text-indigo-700 mb-3">
-                        {post.category}
-                      </div>
-                      <h3 className="text-xl font-semibold text-slate-900 mb-3 group-hover:text-indigo-600 transition-colors">
-                        {post.title}
-                      </h3>
-                      {post.summary && (
-                        <p className="text-slate-600 mb-4 flex-grow line-clamp-3 text-sm sm:text-base">
-                          {post.summary}
-                        </p>
-                      )}
-                      <div className="flex items-center text-indigo-600 font-medium text-sm mt-auto">
-                        Read article
-                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                      </div>
-                    </Link>
-                  </article>
-                ))}
-              </div>
-              <div className="text-center mt-8 sm:mt-12">
-                <Link
-                  href="/blog"
-                  className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-semibold text-base sm:text-lg transition-colors"
-                >
-                  View all articles
-                  <ArrowRight className="h-5 w-5" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Contact CTA */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=2000&q=85"
-            alt="UK business office"
-            fill
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-slate-900/92" />
-        </div>
-        <div className={`${siteContainerLg} relative z-10 py-12 sm:py-20 lg:py-24`}>
-          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+      {/* 8. CTA — light, big H2, single primary button to /contact */}
+      <section className={`${sectionY} bg-[#fafaf7] border-t border-neutral-200`}>
+        <div className={siteContainerLg}>
+          <div className="grid lg:grid-cols-[2fr_1fr] gap-12 items-center">
             <div>
-              <div className="inline-block bg-indigo-600 px-3 py-1.5 sm:px-4 sm:py-2 text-xs font-bold text-white uppercase tracking-wider mb-4 sm:mb-6">
+              <p className="font-mono text-xs uppercase tracking-widest text-orange-500">
                 Get started
-              </div>
-              <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
-                Get your business finances properly sorted
-              </h2>
-              <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-relaxed text-slate-200">
-                Book a free call. We will talk through your situation and give you clear, practical recommendations. No jargon, no obligation.
               </p>
-              <div className="mt-8 space-y-4">
-                {[
-                  { title: "ICAEW qualified accountants", sub: "Professional standards, not just registered agents" },
-                  { title: "24-hour response time", sub: "Usually the same day" },
-                  { title: "Fixed fees, no surprises", sub: "Transparent pricing upfront" },
-                  { title: "National coverage", sub: "Cloud-first, we work wherever you are" },
-                ].map((item) => (
-                  <div key={item.title} className="flex items-center gap-4 text-slate-200">
-                    <div className="h-12 w-12 flex items-center justify-center bg-indigo-600 text-white font-bold text-xl flex-shrink-0">
-                      ✓
-                    </div>
-                    <div>
-                      <div className="font-bold text-white">{item.title}</div>
-                      <div className="text-sm text-slate-300">{item.sub}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl text-balance">
+                Talk to an ICAEW accountant. Free, no obligation.
+              </h2>
+              <p className="mt-6 max-w-xl text-base leading-relaxed text-neutral-600">
+                Tell us briefly where the business sits today. We&apos;ll come back
+                with a short note on what the engagement would look like and what it
+                would cost. No pitch deck, no follow-up sequence.
+              </p>
             </div>
-            <div className="bg-white p-6 sm:p-8 lg:p-10">
-              <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Book your free call</h3>
-              <LeadForm submitLabel="Request a callback" />
+            <div className="flex lg:justify-end">
+              <Link href="/contact" className={btnPrimary}>
+                Book a free call
+                <ArrowRight className="ml-2 h-4 w-4" aria-hidden />
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
+      {/* 9. FAQ — restyled Accordion */}
+      <section className={`${sectionY} bg-[#fafaf7] border-t border-neutral-200`}>
         <div className={siteContainerLg}>
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8 sm:mb-12 sm:text-4xl lg:text-5xl">Common questions</h2>
-            <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
-              {faqs.map((item, i) => (
-                <AccordionItem key={item.question} value={`faq-${i}`}>
-                  <AccordionTrigger>{item.question}</AccordionTrigger>
-                  <AccordionContent>
-                    <p>{item.answer}</p>
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
+          <div className="grid lg:grid-cols-[1fr_2fr] gap-12 lg:gap-20">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-widest text-orange-500">
+                Common questions
+              </p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">
+                The honest answers.
+              </h2>
+            </div>
+            <div>
+              <Accordion type="single" collapsible className="border-t border-neutral-200">
+                {faqs.map((item, i) => (
+                  <AccordionItem key={item.question} value={`faq-${i}`}>
+                    <AccordionTrigger>{item.question}</AccordionTrigger>
+                    <AccordionContent>
+                      <p>{item.answer}</p>
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
           </div>
         </div>
       </section>

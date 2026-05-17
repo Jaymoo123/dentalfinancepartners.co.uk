@@ -85,7 +85,7 @@ export function AuthorByline({
       .slice(0, 2)
       .join("")
       .toUpperCase();
-  const color = member?.monogramColor ?? "#4f46e5";
+  const color = member?.monogramColor ?? "#f97316";
 
   const published = formatDate(publishedDate);
   const updated = formatDate(updatedDate);
@@ -104,11 +104,11 @@ export function AuthorByline({
         size={size === "sm" ? 32 : 40}
       />
       <div className="leading-tight">
-        <p className="font-semibold text-slate-900">
+        <p className="font-medium text-neutral-900">
           {member ? (
             <Link
               href={`/team/${member.slug}`}
-              className="hover:text-indigo-600"
+              className="hover:text-orange-600"
               rel="author"
             >
               {name}
@@ -117,7 +117,7 @@ export function AuthorByline({
             name
           )}
         </p>
-        <p className="text-slate-600 text-xs">
+        <p className="text-neutral-500 text-xs">
           {role}
           {published && <> · Published {published}</>}
           {updated && updated !== published && <> · Updated {updated}</>}
