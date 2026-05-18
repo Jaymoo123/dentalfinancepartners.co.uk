@@ -21,16 +21,20 @@
       "href": "/services"
     },
     {
-      "label": "SRA Compliance",
-      "href": "/sra-compliance"
+      "label": "Pillar Guides",
+      "href": "/solicitor-guides"
+    },
+    {
+      "label": "Calculators",
+      "href": "/calculators"
+    },
+    {
+      "label": "Health Check",
+      "href": "/free-firm-health-check"
     },
     {
       "label": "Blog",
       "href": "/blog"
-    },
-    {
-      "label": "About",
-      "href": "/about"
     },
     {
       "label": "Contact",
