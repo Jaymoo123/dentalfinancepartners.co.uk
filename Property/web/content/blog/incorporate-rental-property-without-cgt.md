@@ -5,8 +5,10 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company
 date: "2026-03-29"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "How to Incorporate Rental Property Without CGT | UK Guide"
-metaDescription: "Incorporation relief under s.162 TCGA can defer CGT when transferring rental properties to a company. Conditions, pitfalls, and planning steps."
+metaTitle: "incorporation relief for landlords: worked example 2025/26"
+metaDescription: "See how to defer CGT with a full worked example. Covers the business test, share consideration rules, and HMRC conditions. Plan your transfer now."
+metaTitle_prev: "How to Incorporate Rental Property Without CGT | UK Guide"
+metaDescription_prev: "Incorporation relief under s.162 TCGA can defer CGT when transferring rental properties to a company. Conditions, pitfalls, and planning steps."
 altText: "UK landlord reviewing property incorporation documents to avoid CGT liability"
 image: ""
 h1: "How to Incorporate Rental Property Without Triggering CGT"
@@ -18,9 +20,9 @@ faqs:
   - question: "When does a rental property portfolio qualify as a business for incorporation relief?"
     answer: "Your rental activity qualifies as a business when it goes beyond passive investment. HMRC looks for active management, significant services to tenants (like furnished accommodation or cleaning), property development, regular tenant turnover, or employing staff. Simply collecting rent from a few long-term lets typically won't qualify - you need substantial involvement and business-like activities."
   - question: "Can I transfer some properties to a company while keeping others personally?"
-    answer: "No, incorporation relief requires transferring the entire rental business. You cannot cherry-pick which properties to incorporate while keeping others personally - this would invalidate the relief. If you want to incorporate only some properties, you'll face immediate CGT on the transferred properties but may be able to use strategies like annual CGT allowances to minimize the impact."
+    answer: "No, incorporation relief requires transferring the entire rental business. You cannot cherry-pick which properties to incorporate while keeping others personally - this would invalidate the relief. If you want to incorporate only some properties, you'll face immediate CGT on the transferred properties but may be able to use strategies like annual CGT allowances to minimise the impact."
   - question: "What are the alternatives if my rental portfolio doesn't qualify for incorporation relief?"
-    answer: "If incorporation relief doesn't apply, you can still incorporate but will face immediate CGT. Strategies to minimize this include: using annual CGT allowances (£3,000 for 2025/26) by transferring partial interests over several years, timing transfers during lower income years to benefit from lower CGT rates (18% vs 28%), or using gift and loan back arrangements where you gift properties and receive a director's loan in return."
+    answer: "If incorporation relief doesn't apply, you can still incorporate but will face immediate CGT. Strategies to minimise this include: using annual CGT allowances (£3,000 for 2025/26) by transferring partial interests over several years, timing transfers during lower income years to benefit from lower CGT rates (18% vs 28%), or using gift and loan back arrangements where you gift properties and receive a director's loan in return."
 ---
 
 <p>Many UK landlords consider moving their rental properties into a limited company to benefit from corporation tax rates and avoid Section 24 mortgage interest restrictions. The main concern is usually Capital Gains Tax (CGT) — transferring properties at current market value could trigger a substantial tax bill.</p>

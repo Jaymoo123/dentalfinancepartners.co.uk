@@ -5,8 +5,10 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/cgt-pro
 date: "2026-03-29"
 author: "Property Tax Partners Editorial Team"
 category: "Capital Gains Tax"
-metaTitle: "CGT on Property Transfer to Limited Company Calculator Guide"
-metaDescription: "CGT on property transfer equals the gain since purchase at 18% or 24%. Step-by-step calculation with examples for UK landlords incorporating."
+metaTitle: "CGT on property transfer to company: worked example 2025/26"
+metaDescription: "Calculate CGT when incorporating your rental property. Worked example shows £94,500 gain taxed at 18% or 24%. Read the step-by-step guide."
+metaTitle_prev: "CGT on Property Transfer to Limited Company Calculator Guide"
+metaDescription_prev: "CGT on property transfer equals the gain since purchase at 18% or 24%. Step-by-step calculation with examples for UK landlords incorporating."
 altText: "UK property investor calculating capital gains tax on laptop with property documents and calculator"
 image: ""
 h1: "CGT on Property Transfer to Limited Company: How to Calculate"
@@ -20,7 +22,7 @@ faqs:
   - question: "What happens if I make a loss on the property transfer?"
     answer: "If the property is worth less than you paid for it, you'll have a capital loss rather than a gain. This loss can be offset against other capital gains in the same tax year or carried forward to reduce future gains, but it can't be offset against income tax."
   - question: "Is there any way to avoid CGT on property transfers to a company?"
-    answer: "There's no way to completely avoid CGT on transfers of properties that have increased in value. However, you can minimize it through careful timing, using annual allowances effectively, and ensuring all allowable costs are properly claimed. The main alternative is to keep existing properties personally and have your company buy new properties instead."
+    answer: "There's no way to completely avoid CGT on transfers of properties that have increased in value. However, you can minimise it through careful timing, using annual allowances effectively, and ensuring all allowable costs are properly claimed. The main alternative is to keep existing properties personally and have your company buy new properties instead."
 ---
 
 <p>Transferring property from personal ownership to a limited company is treated as a disposal for CGT purposes. HMRC views this as selling the property to your company at market value, even if no money actually changes hands.</p>

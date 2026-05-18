@@ -5,8 +5,10 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/making-tax-digital-mtd/ma
 date: "2026-04-10"
 author: "Property Tax Partners Editorial Team"
 category: "Making Tax Digital (MTD)"
-metaTitle: "Making Tax Digital Property Income 2026: Complete Guide"
-metaDescription: "MTD for property income becomes mandatory April 2026 for landlords earning over £10k. Quarterly reporting, software requirements, penalties explained."
+metaTitle: "MTD for rental income: quarterly deadlines & penalties 2026"
+metaDescription: "From 6 April 2026, landlords with gross income over £10,000 must file quarterly returns digitally. Plan now to avoid penalties."
+metaTitle_prev: "Making Tax Digital Property Income 2026: Complete Guide"
+metaDescription_prev: "MTD for property income becomes mandatory April 2026 for landlords earning over £10k. Quarterly reporting, software requirements, penalties explained."
 altText: "UK landlord using MTD-compatible software on laptop for quarterly property income reporting"
 image: ""
 h1: "Making Tax Digital for Property Income 2026: Complete Landlord Guide"
@@ -84,7 +86,7 @@ faqs:
 
 <h3>End of Period Statement</h3>
 
-<p>In addition to quarterly updates, landlords must submit an End of Period Statement (EOPS) by 31 January following the tax year end. This finalizes your property income and expenses for the year and allows for any adjustments.</p>
+<p>In addition to quarterly updates, landlords must submit an End of Period Statement (EOPS) by 31 January following the tax year end. This finalises your property income and expenses for the year and allows for any adjustments.</p>
 
 <p>The EOPS replaces the property pages of your current Self Assessment return. However, you may still need to file a Self Assessment for other income sources or claims.</p>
 
@@ -161,7 +163,7 @@ faqs:
 
 <h2>Preparing for MTD Property Income 2026</h2>
 
-<p>With the April 2026 deadline approaching, landlords should start preparing now. This 12-18 month preparation period allows time to select software, digitize records, and test processes.</p>
+<p>With the April 2026 deadline approaching, landlords should start preparing now. This 12-18 month preparation period allows time to select software, digitise records, and test processes.</p>
 
 <h3>Step 1: Assess Your Property Portfolio</h3>
 
@@ -182,7 +184,7 @@ faqs:
 
 <p>Many <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">property accountants</a> offer software implementation services and can recommend suitable packages for your portfolio size.</p>
 
-<h3>Step 3: Digitize Existing Records</h3>
+<h3>Step 3: Digitise Existing Records</h3>
 
 <p>Start converting paper records to digital format and ensure your record-keeping processes will meet MTD requirements. This includes:</p>
 <ul>

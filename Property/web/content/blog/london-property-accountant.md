@@ -5,8 +5,10 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-servi
 date: "2026-04-01"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
-metaTitle: "London Property Accountant | Tax & Services for Investors"
-metaDescription: "Specialist London property accountant for landlords and investors. Buy-to-let tax, Section 24, MTD compliance, and incorporation advice."
+metaTitle: "London Property Accountant: Tax Planning for Investors 2026"
+metaDescription: "Cut your tax bill with a specialist London property accountant. Section 24, MTD, and portfolio strategies for £2.5m+ portfolios. Book a consultation."
+metaTitle_prev: "London Property Accountant | Tax & Services for Investors"
+metaDescription_prev: "Specialist London property accountant for landlords and investors. Buy-to-let tax, Section 24, MTD compliance, and incorporation advice."
 altText: "Professional London property accountant reviewing rental property tax returns and financial documents"
 image: ""
 h1: "London Property Accountant: Expert Services for Property Investors"
@@ -41,7 +43,7 @@ faqs:
 <li>Significant capital gains tax exposure on future disposals</li>
 <li>Annual tax on enveloped dwellings (ATED) charges on high-value properties</li>
 </ul>
-<p>A specialist <strong>London property accountant</strong> identifies these issues early and implements strategies to minimize their impact.</p>
+<p>A specialist <strong>London property accountant</strong> identifies these issues early and implements strategies to minimise their impact.</p>
 
 <h2>Core Services for London Property Portfolios</h2>
 <p>A specialist <strong>property accountant London</strong> firm provides a comprehensive suite of services beyond basic compliance. For <strong>buy-to-let investors in London</strong>, this means having an expert who understands both the national tax rules and the specific pressures of the capital's high-value, high-rent market.</p>
@@ -62,16 +64,16 @@ faqs:
 </ul>
 <p>For example, a London landlord with £60,000 rental income and £25,000 mortgage interest now pays tax on the full £60,000, then claims back £5,000 (20% of £25,000) as a tax credit. For a London investor paying 40% tax on rental profits, <a href="/incorporation">incorporation</a> might reduce the effective tax rate to 19-25%, depending on extraction strategy.</p>
 <h3>Portfolio Management and Tax Planning</h3>
-<p>London landlords frequently build substantial portfolios. Managing multiple properties across different boroughs creates complex compliance obligations. Each property may have different mortgage arrangements, letting patterns, and improvement costs. Specialist accountants ensure all allowable expenses are claimed and tax positions are optimized across the entire portfolio. For portfolio landlords, quarterly management accounts help track performance and identify tax planning opportunities before year-end.</p>
-<h3>Allowable Expense Optimization and VAT Advice</h3>
+<p>London landlords frequently build substantial portfolios. Managing multiple properties across different boroughs creates complex compliance obligations. Each property may have different mortgage arrangements, letting patterns, and improvement costs. Specialist accountants ensure all allowable expenses are claimed and tax positions are optimised across the entire portfolio. For portfolio landlords, quarterly management accounts help track performance and identify tax planning opportunities before year-end.</p>
+<h3>Allowable Expense Optimisation and VAT Advice</h3>
 <p>Ensuring you claim all legitimate deductions, from repairs and maintenance to finance costs and professional fees, is crucial. London properties often have higher management costs, and ensuring these are properly documented is key. A specialist can also provide guidance on VAT registration thresholds and the option to tax for commercial properties.</p>
 
 <h2>Capital Gains Tax (CGT) Planning</h2>
 <p>London property appreciation creates substantial CGT exposure. A property bought in Zone 2 for £400,000 in 2015 might be worth £600,000 today, creating a £200,000 gain. With CGT rates at 18% (basic rate) and 24% (higher rate) for residential property, strategic planning is essential.</p>
 <p>Property accountants help you understand your CGT liability and plan disposals efficiently. They calculate your base costs accurately, including purchase costs, improvement expenditure, and indexation allowances for pre-1998 acquisitions. Strategic planning can include:</p>
 <ul>
-<li><a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">Principal private residence relief</a> optimization</li>
-<li>Annual exemption utilization</li>
+<li><a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">Principal private residence relief</a> optimisation</li>
+<li>Annual exemption utilisation</li>
 <li>Timing disposals across tax years</li>
 <li>Offsetting losses or restructuring before sale</li>
 </ul>
@@ -88,7 +90,7 @@ faqs:
 <h2>London-Specific Tax and Market Considerations</h2>
 <h3>High-Value Properties and ATED</h3>
 <p>London's property values often trigger additional taxes. Properties worth over £500,000 held in companies face Annual Tax on Enveloped Dwellings (ATED), currently £3,700 annually for properties worth £500,000-£1 million. However, properties genuinely rented to unconnected tenants qualify for relief. Proper documentation and compliance procedures are essential to maintain this relief.</p>
-<h3>Stamp Duty Land Tax (SDLT) Optimization</h3>
+<h3>Stamp Duty Land Tax (SDLT) Optimisation</h3>
 <p>London property purchases often involve substantial SDLT charges. For investment properties, the additional 3% surcharge applies on top of standard rates. Strategic timing and structuring can sometimes reduce these costs.</p>
 <h3>Non-Resident Considerations</h3>
 <p>Many London property investors are non-UK residents, creating additional compliance requirements including non-resident CGT on UK property disposals, UK property tax returns even when non-resident, and double taxation treaty planning.</p>

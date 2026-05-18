@@ -5,8 +5,10 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/making-tax-digital-mtd/mt
 date: "2026-03-29"
 author: "Property Tax Partners Editorial Team"
 category: "Making Tax Digital (MTD)"
-metaTitle: "MTD for Rental Income: Threshold & Exemptions Guide 2026"
-metaDescription: "Find out if you need MTD for rental income. Understand the £10k threshold, exemptions, and what UK landlords must do from April 2026."
+metaTitle: "MTD for property income: threshold & exemptions 2026"
+metaDescription: "Work out if your gross rental income hits the £10k MTD threshold. Exemptions for trustees, non-residents & partnerships explained. Plan ahead."
+metaTitle_prev: "MTD for Rental Income: Threshold & Exemptions Guide 2026"
+metaDescription_prev: "Find out if you need MTD for rental income. Understand the £10k threshold, exemptions, and what UK landlords must do from April 2026."
 altText: "UK landlord using laptop for digital tax records and MTD compliance"
 image: ""
 h1: "Do I Need MTD for My Rental Income? Threshold and Exemptions Explained"
@@ -84,7 +86,7 @@ faqs:
 <h2>Planning and Preparation for Landlords</h2>
 <p>If your rental income approaches or exceeds £10,000, start preparing now:</p>
 <p><strong>Choose MTD software:</strong> Research property management software that integrates with MTD requirements. Many platforms now offer both rental management and tax compliance features.</p>
-<p><strong>Organize your records:</strong> Digital record-keeping requires consistent, detailed documentation of all rental income and expenses.</p>
+<p><strong>Organise your records:</strong> Digital record-keeping requires consistent, detailed documentation of all rental income and expenses.</p>
 <p><strong>Consider your structure:</strong> Some landlords explore <a href="/incorporation">incorporating their property portfolio</a> to potentially simplify their tax position, though this brings other considerations.</p>
 <p><strong>Get professional support:</strong> MTD compliance can be complex. Speaking with specialists helps ensure you meet all requirements without overpaying tax.</p>
 

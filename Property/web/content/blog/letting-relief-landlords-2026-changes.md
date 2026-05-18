@@ -5,8 +5,10 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/letting
 date: "2026-04-10"
 author: "Property Tax Partners Editorial Team"
 category: "Capital Gains Tax"
-metaTitle: "Letting Relief 2026: Only If You Shared the Property"
-metaDescription: "Since April 2020, letting relief only applies if you lived with your tenants. Up to £40,000 remains but most landlords no longer qualify."
+metaTitle: "Letting Relief 2026: Worked Example for Shared Occupancy"
+metaDescription: "Only landlords who shared their home with tenants qualify for letting relief. See a worked example showing how the £40,000 relief is calculated."
+metaTitle_prev: "Letting Relief 2026: Only If You Shared the Property"
+metaDescription_prev: "Since April 2020, letting relief only applies if you lived with your tenants. Up to £40,000 remains but most landlords no longer qualify."
 altText: "UK landlord reviewing capital gains tax calculation with letting relief changes on laptop"
 image: ""
 h1: "What Letting Relief Is Left for Landlords After the 2026 Changes?"
@@ -126,7 +128,7 @@ faqs:
 
 <p>Property held in a <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited company</a> isn't subject to CGT — it pays corporation tax on capital gains instead. The corporation tax rate is 19% on profits up to £250,000 and 25% on profits above that. While this isn't always beneficial, it can be worth considering for larger portfolios.</p>
 
-<h3>Optimize Private Residence Relief</h3>
+<h3>Optimise Private Residence Relief</h3>
 
 <p>If you're planning to let out your home, consider whether extending your period of residence might be beneficial before making the switch to rental.</p>
 
@@ -157,17 +159,17 @@ faqs:
 <li>Disposal costs and legal fees</li>
 </ul>
 
-<p>HMRC may scrutinize letting relief claims, particularly around whether genuine shared occupancy occurred.</p>
+<p>HMRC may scrutinise letting relief claims, particularly around whether genuine shared occupancy occurred.</p>
 
 <h2>What This Means Going Forward</h2>
 
 <p>The practical impact of these changes is that most landlords can no longer rely on letting relief to reduce their CGT liability. This makes other aspects of <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">property investment tax planning</a> more important:</p>
 
 <ul>
-<li>Maximizing allowable costs and improvements</li>
+<li>Maximising allowable costs and improvements</li>
 <li>Using annual CGT exemptions effectively</li>
 <li>Considering incorporation for larger portfolios</li>
 <li>Planning disposal timing carefully</li>
 </ul>
 
-<p>The days of significant CGT relief through letting relief are largely over for most landlords. The focus now needs to be on other legitimate ways to minimize capital gains tax liability.</p>
+<p>The days of significant CGT relief through letting relief are largely over for most landlords. The focus now needs to be on other legitimate ways to minimise capital gains tax liability.</p>
