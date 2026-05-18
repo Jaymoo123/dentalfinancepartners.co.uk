@@ -138,7 +138,7 @@ export default function HomePage() {
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/98 via-slate-900/85 to-slate-900/50" />
-        <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
+        <div className={`${siteContainerLg} relative z-10 h-full flex items-center py-14 sm:py-0`}>
           <div className="max-w-3xl">
             <div className="inline-block bg-indigo-600 px-3 py-1.5 text-xs sm:text-sm font-bold text-white uppercase tracking-wider mb-4 sm:mb-6 shadow-lg">
               ICAEW qualified accountants for agency founders
