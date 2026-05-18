@@ -13,12 +13,12 @@ const btnMailOutline =
   "inline-flex min-h-12 items-center justify-center rounded-full border border-white/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-white transition-all duration-200 hover:border-white/50 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]";
 
 export const metadata: Metadata = {
-  title: "Accountant for Solicitors UK | Specialist Law Firm Accountants",
-  description: "Expert accounting for UK solicitors and law firms. SRA compliance, trust accounting, partnership tax, LLP conversion advice. Book free consultation with legal sector specialists.",
+  title: "Accountants for Solicitors UK 2025/26 | SRA + LLP + Partner Tax",
+  description: "Specialist accountants for UK law firms. SRA Accountant's Report, LLP and partnership tax, FA 2014 Salaried Member audit, BADR pre-sale planning. Fixed monthly fees.",
   alternates: { canonical: siteConfig.url },
   openGraph: {
-    title: "Accountant for Solicitors UK | Specialist Law Firm Accountants",
-    description: "Expert accounting for UK solicitors and law firms. SRA compliance, trust accounting, partnership tax, LLP conversion advice. Book free consultation with legal sector specialists.",
+    title: "Accountants for Solicitors UK 2025/26 | SRA + LLP + Partner Tax",
+    description: "Specialist accountants for UK law firms. SRA Accountant's Report, LLP and partnership tax, FA 2014 Salaried Member audit, BADR pre-sale planning. Fixed monthly fees.",
     url: siteConfig.url,
     type: "website",
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
