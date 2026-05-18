@@ -7,6 +7,19 @@ const appDir = path.dirname(fileURLToPath(import.meta.url));
 const nextConfig: NextConfig = {
   // Anchor tracing to this app so Next does not treat C:\Users\user (extra lockfile) as the monorepo root.
   outputFileTracingRoot: appDir,
+  async redirects() {
+    return [
+      // Canonical host: www.accountsforlawyers.co.uk. Non-www variants must
+      // 301 to consolidate ranking signals. GSC shows split indexing across
+      // both hosts which dilutes authority.
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "accountsforlawyers.co.uk" }],
+        destination: "https://www.accountsforlawyers.co.uk/:path*",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

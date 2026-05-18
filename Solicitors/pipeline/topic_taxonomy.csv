@@ -1,0 +1,117 @@
+priority,cluster,slug,primary_keyword,intent,secondary_keywords,target_word_count,dental_anchor_terms,risk_tier,aff_overlap_risk
+1,sra-compliance,sra-accounts-rules-explained-for-uk-solicitors,sra accounts rules,informational,"sra rules 2019,client account rules,accountants report",1900,"sra,solicitors,client account",low,none
+1,sra-compliance,sra-accountants-report-exemption-thresholds,sra accountants report exemption,informational,"client money exemption,accountants report exemption,de minimis",1700,"sra,client account,solicitor",low,none
+1,sra-compliance,when-is-an-sra-accountants-report-required,sra accountants report required,how-to,"sra report deadline,client money report,accountant requirements",1700,"sra,solicitor,client money",low,none
+1,sra-compliance,how-to-prepare-for-sra-accountants-report,prepare sra accountants report,how-to,"sra report preparation,reconciliation checklist,sar evidence",1800,"sra,solicitor,client account",low,none
+1,sra-compliance,sra-client-account-reconciliation-frequency,sra client account reconciliation,informational,"five weekly reconciliation,sar rule 8,client account checking",1600,"sra,client account,solicitor",low,none
+1,sra-compliance,handling-client-money-interest-sra-rules,client money interest sra,informational,"fair interest policy,client money,sra rule 7",1700,"sra,client money,solicitor",low,none
+1,sra-compliance,what-counts-as-client-money-uk-solicitors,what is client money solicitor,informational,"client money definition,sar scope,money held to order",1700,"client money,solicitor,sra",low,none
+1,sra-compliance,office-account-vs-client-account-differences,office account vs client account,comparison,"sra accounts,client vs office money,bank account split",1500,"sra,client account,office account",low,none
+1,sra-compliance,sra-breach-notification-when-and-how,sra breach notification,how-to,"breach reporting,sra notice,material breach",1700,"sra,solicitor,compliance",low,none
+1,sra-compliance,common-sra-accounts-rules-breaches-and-how-to-fix,common sra breaches,informational,"breach examples,reconciliation errors,common mistakes",1800,"sra,solicitor,client account",low,none
+1,sra-compliance,colp-and-cofa-roles-explained-uk-law-firms,colp cofa roles,informational,"compliance officer,colp cofa duties,firm compliance",1700,"colp,cofa,solicitor",low,none
+1,sra-compliance,cofa-responsibilities-uk-law-firms,cofa responsibilities,informational,"finance compliance officer,sra accounts,cofa duties",1700,"cofa,solicitor,sra",low,none
+1,sra-compliance,sra-supervision-and-aml-compliance-law-firms,sra aml compliance,informational,"money laundering regulations,aml supervision,sra aml",1700,"sra,solicitor,money laundering",low,none
+1,sra-compliance,solicitors-aml-risk-assessment-template-guide,solicitor aml risk assessment,how-to,"firm-wide risk,client risk,aml policy",1700,"solicitor,aml,money laundering",low,none
+1,sra-compliance,client-due-diligence-for-uk-conveyancers,client due diligence conveyancer,how-to,"cdd conveyancing,id verification,enhanced due diligence",1700,"conveyancing,solicitor,money laundering",low,none
+2,partnership-llp,llp-vs-traditional-partnership-uk-law-firms,llp vs partnership law firm,comparison,"llp benefits,unlimited liability,partnership conversion",1900,"llp,partnership,solicitor",low,low
+2,partnership-llp,how-llp-members-are-taxed-uk-2025-26,llp member tax uk,informational,"llp tax transparency,member share,llp taxation",1800,"llp,partner,solicitor",low,low
+2,partnership-llp,salaried-member-rules-uk-llps-explained,salaried member rules llp,informational,"fa 2014,disguised salary,condition a b c",1900,"llp,partner,salaried partner",low,low
+2,partnership-llp,fixed-share-partner-vs-equity-partner-tax,fixed share partner tax,comparison,"fixed share llp,equity partner tax,salaried partner",1800,"partner,equity partner,fixed share partner",low,low
+2,partnership-llp,partnership-to-llp-conversion-tax-implications,partnership to llp conversion,how-to,"llp conversion,partnership cessation,carry forward losses",1800,"partnership,llp,solicitor",low,low
+2,partnership-llp,partner-capital-contributions-tax-treatment,partner capital contribution,informational,"llp capital,partnership capital,interest relief",1700,"partner,llp,solicitor",low,none
+2,partnership-llp,partner-loan-interest-relief-uk-tax,partner loan interest tax relief,informational,"qualifying loan interest,ita 398,partner finance",1700,"partner,llp,solicitor",low,none
+2,partnership-llp,profit-allocation-methods-uk-llps,llp profit allocation,informational,"profit share methodology,allocation rules,llp agreement",1700,"llp,partner,solicitor",low,low
+2,partnership-llp,partner-drawings-vs-profit-share-tax,partner drawings tax,informational,"drawings drawings tax,profit share timing,interim payments",1700,"partner,llp,solicitor",low,low
+2,partnership-llp,exit-of-an-equity-partner-tax-implications,partner exit tax,informational,"retiring partner,exit payment,partner capital return",1800,"equity partner,llp,solicitor",low,low
+2,partnership-llp,bringing-in-a-new-equity-partner-llp,new equity partner llp,how-to,"partner admission,buy-in,partnership agreement",1700,"equity partner,llp,solicitor",low,low
+2,partnership-llp,partnership-agreement-key-tax-clauses,partnership agreement tax clauses,how-to,"profit allocation clause,retirement clause,death of partner",1700,"partnership,llp,solicitor",low,low
+2,partnership-llp,llp-vs-limited-company-uk-law-firms,llp vs limited company,comparison,"law firm ltd,corporate structure,abs",1800,"llp,solicitor,abs",low,low
+2,partnership-llp,abs-licence-requirements-uk-law-firms,abs licence requirements,informational,"alternative business structure,non-solicitor ownership,sra abs",1800,"abs,sra,solicitor",low,none
+2,partnership-llp,sole-practitioner-vs-llp-uk-solicitors,sole practitioner vs llp,comparison,"sole solicitor,solo practitioner,llp benefits",1700,"solicitor,llp,sole practitioner",low,low
+3,indemnity,professional-indemnity-insurance-tax-treatment-uk,pii tax deductible solicitor,informational,"pii premiums,mtc cover,allowable expense",1800,"pii,solicitor,professional indemnity",low,low
+3,indemnity,minimum-terms-and-conditions-pii-explained,mtc pii solicitor,informational,"sra mtc,2m cover,qualifying insurer",1800,"pii,sra,solicitor",low,none
+3,indemnity,pii-renewal-cycle-uk-law-firms,pii renewal solicitor,how-to,"october renewal,pii market,run-off cover",1800,"pii,solicitor,law firm",low,none
+3,indemnity,run-off-cover-cessation-and-tax-treatment,run-off cover tax,informational,"cessation cover,six year run-off,run-off premium",1700,"pii,solicitor,law firm",low,low
+3,indemnity,top-up-pii-when-is-it-needed-uk-solicitors,top up pii required,informational,"excess layer,additional cover,specialist work pii",1500,"pii,solicitor,law firm",low,none
+3,indemnity,what-happens-when-pii-claim-occurs-tax,pii claim tax treatment,informational,"pii claim,excess deductible,reserve account",1700,"pii,solicitor,law firm",low,low
+4,fee-earner,trainee-solicitor-salary-and-tax-firm,trainee solicitor salary tax,informational,"training contract pay,trainee paye,nmw exemption",1800,"trainee solicitor,paye,solicitor",low,low
+4,fee-earner,sqe-training-costs-tax-deductible-trainees,sqe costs tax deductible,informational,"sqe fees,training expenses,deductible cpd",1700,"sqe,trainee solicitor,solicitor",low,low
+4,fee-earner,associate-solicitor-bonus-structures-tax,associate bonus tax,informational,"performance bonus,paye bonus,partnership track",1700,"associate solicitor,solicitor,bonus",low,low
+4,fee-earner,paralegal-employment-status-and-tax-uk,paralegal tax status,informational,"paralegal paye,employment status,self employed paralegal",1700,"paralegal,solicitor,tax",low,low
+4,fee-earner,cilex-route-to-qualification-tax-treatment,cilex tax,informational,"chartered legal executive,cilex fees,tax deductible",1500,"cilex,solicitor,tax",low,none
+4,fee-earner,solicitor-mortgage-affordability-self-employed,solicitor mortgage self employed,informational,"partner mortgage,self employed lending,sa302",1700,"solicitor,partner,llp",low,medium
+4,fee-earner,sabbatical-leave-solicitor-tax-implications,sabbatical solicitor tax,informational,"unpaid sabbatical,return guarantee,paye continuity",1500,"solicitor,sabbatical,tax",low,none
+4,fee-earner,parental-leave-pay-for-uk-solicitors-partners,partner parental leave tax,informational,"maternity llp,parental leave drawings,smp",1700,"partner,llp,solicitor",low,low
+4,fee-earner,solicitor-cpd-tax-deductible-uk-2025-26,solicitor cpd tax deductible,informational,"continuing competence,sra training,cpd costs",1500,"solicitor,sra,cpd",low,none
+5,conveyancing,sdlt-calculation-uk-conveyancing-solicitors,sdlt calculation uk,how-to,"sdlt rates,additional property surcharge,non resident sdlt",1900,"conveyancing,solicitor,sdlt",low,low
+5,conveyancing,ltt-vs-sdlt-comparison-welsh-conveyancing,ltt vs sdlt,comparison,"welsh property tax,land transaction tax,wales conveyancing",1700,"conveyancing,solicitor,wales",low,low
+5,conveyancing,lbtt-rates-scottish-conveyancing-firms,lbtt rates scotland,informational,"scottish stamp duty,lbtt thresholds,additional dwelling supplement",1700,"conveyancing,solicitor,scotland",low,none
+5,conveyancing,client-account-handling-residential-conveyancing,client account conveyancing,how-to,"residential conveyancing money,exchange completion,client account discipline",1800,"conveyancing,client account,solicitor",low,low
+5,conveyancing,conveyancing-vat-rules-uk-2025-26,conveyancing vat,informational,"vat on conveyancing fees,disbursements vat,land registry fees",1700,"conveyancing,solicitor,vat",low,low
+5,conveyancing,disbursements-vs-recharges-conveyancing-vat,conveyancing disbursements vat,informational,"agency disbursement,principal disbursement,vat treatment fees",1700,"conveyancing,solicitor,vat",low,low
+5,conveyancing,conveyancing-firm-financial-control-strategies,conveyancing financial controls,how-to,"undertaking risk,exchange controls,completion handling",1800,"conveyancing,solicitor,law firm",low,none
+5,conveyancing,fee-structure-for-uk-residential-conveyancing-firms,conveyancing fee structure,informational,"fixed fee conveyancing,no completion no fee,referral fees",1700,"conveyancing,solicitor,law firm",low,low
+6,vat-compliance,vat-registration-for-uk-law-firms,vat registration law firm,how-to,"vat threshold solicitor,vat scheme choice,registration timing",1700,"solicitor,vat,law firm",low,low
+6,vat-compliance,flat-rate-scheme-for-uk-solicitors,flat rate scheme solicitor,informational,"frs solicitor,vat scheme comparison,low cost trader",1500,"solicitor,vat,law firm",low,low
+6,vat-compliance,vat-on-counsel-fees-uk-solicitors,counsel fees vat solicitor,informational,"counsel disbursement,barrister fees vat,reverse charge",1700,"solicitor,counsel,vat",low,low
+6,vat-compliance,vat-on-overseas-clients-uk-legal-services,vat overseas clients law,informational,"place of supply,b2c overseas,b2b overseas legal",1700,"solicitor,vat,law firm",low,low
+6,vat-compliance,mtd-for-vat-law-firm-compliance,mtd vat law firm,how-to,"making tax digital vat,bridging software,xero quickbooks",1500,"law firm,solicitor,vat",low,low
+7,profit-extraction,partnership-pension-contributions-tax-relief,partner pension tax relief,informational,"personal pension partner,marginal rate relief,annual allowance",1800,"partner,llp,solicitor",low,low
+7,profit-extraction,llp-profit-extraction-strategies-uk,llp profit extraction,informational,"interim distributions,annual profit,partner drawings",1800,"llp,partner,solicitor",low,low
+7,profit-extraction,salary-vs-profit-share-tax-uk-partner-solicitor,partner salary vs profit share,comparison,"salaried partner tax,profit share efficient,ni contributions",1700,"partner,solicitor,llp",low,low
+7,profit-extraction,deferred-compensation-uk-law-firm-partners,deferred compensation partner,informational,"deferred profit share,locked-in equity,exit planning",1800,"partner,equity partner,solicitor",low,low
+7,profit-extraction,spouse-employment-in-law-firm-tax,spouse employment law firm,how-to,"family employment,wholly and exclusively,market rate test",1700,"law firm,solicitor,family employment",low,low
+7,profit-extraction,how-to-reward-equity-partners-tax-efficiently,reward equity partner tax,how-to,"equity partner package,profit allocation,additional benefits",1800,"equity partner,llp,solicitor",low,low
+8,practice-sale,how-to-value-a-uk-law-firm-2026,law firm valuation uk,informational,"law firm multiple,profit multiple,goodwill valuation",2200,"law firm,solicitor,valuation",low,low
+8,practice-sale,goodwill-tax-treatment-law-firm-sale,goodwill law firm sale,informational,"capital disposal,badr,section 162",1800,"law firm,solicitor,goodwill",low,low
+8,practice-sale,sole-practitioner-succession-planning-uk,sole practitioner succession,how-to,"sra succession,locum agreement,client transfer",1800,"sole practitioner,solicitor,sra",low,low
+8,practice-sale,merging-two-uk-law-firms-tax-and-sra,law firm merger tax,how-to,"firm merger,sra consent,pii continuity",1800,"law firm,solicitor,sra",low,low
+8,practice-sale,asset-sale-vs-share-sale-uk-law-firm,asset sale vs share sale law firm,comparison,"sale structure,buyer preference,seller cgt",1800,"law firm,solicitor,sra",low,low
+8,practice-sale,post-merger-integration-finance-sra,post merger integration sra,how-to,"merger integration,colp cofa transition,client matter migration",1900,"sra,solicitor,law firm",low,low
+8,practice-sale,wip-treatment-on-law-firm-sale,wip law firm sale,informational,"work in progress sale,billing pre-sale,wip valuation",1700,"law firm,solicitor,wip",low,low
+8,practice-sale,solicitor-retiring-tax-planning-uk,solicitor retirement tax,how-to,"retiring partner,exit planning,deferred consideration",1800,"solicitor,partner,llp",low,low
+9,locum,locum-solicitor-tax-uk-2025-26,locum solicitor tax,informational,"locum vat,locum ir35,locum self employed",1800,"locum solicitor,solicitor,ir35",low,low
+9,locum,consultant-solicitor-structures-uk,consultant solicitor structure,informational,"consultant fee share,umbrella consultant,limited company consultant",1700,"consultant solicitor,solicitor,locum solicitor",low,low
+9,locum,locum-solicitor-ir35-rules-2025-26,locum solicitor ir35,informational,"off payroll,inside ir35,sds engaging firm",1800,"locum solicitor,solicitor,ir35",low,low
+9,locum,locum-solicitor-mortgage-options-uk,locum solicitor mortgage,informational,"self employed mortgage,locum lending,12 month accounts",1500,"locum solicitor,solicitor,mortgage",low,medium
+9,locum,locum-solicitor-expenses-allowable-uk-2025,locum solicitor expenses,informational,"sra fee,pii excess,training expenses",1700,"locum solicitor,solicitor,expenses",low,low
+10,buying-firm,buying-a-uk-law-firm-financial-due-diligence,law firm due diligence,how-to,"firm dd checklist,seller accounts review,wip review",2000,"law firm,solicitor,sra",low,low
+10,buying-firm,sra-consent-on-firm-acquisition,sra consent acquisition,how-to,"sra notification,owner manager change,abs application",1800,"sra,solicitor,law firm",low,low
+10,buying-firm,financing-a-uk-law-firm-acquisition,financing law firm acquisition,informational,"law firm bank lending,asset finance,vendor financing",1800,"law firm,solicitor,acquisition",low,low
+10,buying-firm,heads-of-terms-law-firm-acquisition,heads of terms law firm,how-to,"hots structure,seller protections,buyer protections",1700,"law firm,solicitor,acquisition",low,low
+10,buying-firm,due-diligence-checklist-buying-uk-conveyancing-firm,buying conveyancing firm dd,how-to,"conveyancing dd,client matter review,referral source review",1800,"conveyancing,solicitor,law firm",low,low
+10,buying-firm,client-matter-novation-on-firm-acquisition,client matter novation,how-to,"matter transfer,client consent,sra novation",1700,"solicitor,sra,law firm",low,low
+10,buying-firm,buying-a-law-firm-financing-tax-considerations,buying law firm tax,informational,"acquisition tax,goodwill amortisation,deal structure",1800,"law firm,solicitor,sra",low,low
+11,compliance-risk,colp-decision-log-best-practice-uk-firms,colp decision log,how-to,"decision recording,compliance evidence,colp role",1700,"colp,solicitor,sra",low,none
+11,compliance-risk,cofa-monthly-checklist-uk-law-firms,cofa monthly checklist,how-to,"reconciliation calendar,cofa duties,monthly compliance",1700,"cofa,sra,solicitor",low,none
+11,compliance-risk,handling-sra-investigation-uk-law-firms,sra investigation,how-to,"sra notice,client matter review,investigation response",1800,"sra,solicitor,law firm",low,none
+11,compliance-risk,common-causes-of-sra-investigations-2026,sra investigation causes,informational,"common breaches,client money issues,reportable matters",1700,"sra,solicitor,client money",low,none
+11,compliance-risk,solicitors-data-protection-tax-and-gdpr,solicitor gdpr tax,informational,"data protection cost,gdpr training,client data",1500,"solicitor,gdpr,law firm",low,none
+11,compliance-risk,solicitor-cyber-insurance-tax-treatment,solicitor cyber insurance,informational,"cyber cover,allowable expense,data breach insurance",1500,"solicitor,law firm,cyber",low,none
+12,practice-accounting,uk-law-firm-management-accounts-monthly,law firm management accounts,how-to,"monthly mi,p&l discipline,kpi",1700,"law firm,solicitor,partner",low,low
+12,practice-accounting,wip-valuation-method-uk-law-firms,wip valuation method,informational,"earnings basis,billings basis,frs 102",1800,"law firm,solicitor,wip",low,low
+12,practice-accounting,billing-discipline-end-of-quarter-uk-law-firms,billing discipline law firm,how-to,"quarter end billing,wip conversion,cash collection",1700,"law firm,solicitor,wip",low,none
+12,practice-accounting,how-to-set-fee-earner-targets-uk-law-firms,fee earner targets,how-to,"chargeable hours,realisation,utilisation",1700,"fee earner,solicitor,law firm",low,low
+12,practice-accounting,uk-law-firm-cash-flow-management,law firm cash flow,how-to,"cash flow forecast,client account discipline,wip funding",1700,"law firm,solicitor,partner",low,low
+12,practice-accounting,fixed-fee-vs-hourly-billing-law-firms-tax,fixed fee vs hourly law firm,comparison,"billing model,fee structure,vat timing",1700,"law firm,solicitor,billing",low,low
+12,practice-accounting,partnership-accounts-preparation-uk-2025-26,partnership accounts uk,how-to,"partnership tax return,sa800,partner statement",1700,"partnership,solicitor,llp",low,low
+12,practice-accounting,llp-accounts-and-filing-requirements-uk,llp accounts filing,how-to,"llp accounts companies house,llp tax return,sa800",1700,"llp,solicitor,companies house",low,low
+12,practice-accounting,handling-client-disbursements-properly-uk,client disbursements solicitor,how-to,"disbursement principal,disbursement agent,vat treatment",1700,"solicitor,client account,vat",low,low
+13,specialist,personal-injury-firm-financial-model-uk,personal injury firm model,informational,"cfa funding,after the event,personal injury wip",1700,"law firm,solicitor,personal injury",low,low
+13,specialist,family-law-firm-billing-and-cash-flow-uk,family law cash flow,informational,"private pay,legal aid,disbursement funding",1700,"family law,solicitor,law firm",low,low
+13,specialist,legal-aid-firm-financial-model-uk-2025-26,legal aid firm financial,informational,"legal aid agency,fixed fees,scope changes",1800,"solicitor,law firm,legal aid",low,low
+13,specialist,private-client-firm-financial-considerations,private client firm finance,informational,"wills probate billing,trust accounting,ihtgrowth",1700,"private client,solicitor,law firm",low,low
+13,specialist,commercial-litigation-firm-financial-strategy,commercial litigation finance,informational,"litigation funding,contingent fees,wip management",1700,"commercial litigation,solicitor,law firm",low,low
+13,specialist,boutique-law-firm-financial-strategies-uk,boutique law firm finance,informational,"specialist practice,niche firm,growth investment",1700,"law firm,solicitor,boutique firm",low,low
+13,specialist,solo-conveyancing-practitioner-financial-uk,solo conveyancer finance,informational,"sole conveyancer,sra account work,solo finance",1700,"conveyancing,solicitor,sole practitioner",low,low
+14,brand-defensive,solicitor-accountant-vs-generalist-accountant,solicitor accountant vs generalist,comparison,"specialist legal accountant,why specialist matters,sra accountants report",1700,"solicitor,accountant,sra",low,low
+14,brand-defensive,how-to-choose-an-accountant-for-uk-law-firm,how to choose accountant law firm,how-to,"sra report accountant,legal sector specialist,referral process",1700,"law firm,solicitor,accountant",low,low
+14,brand-defensive,switching-accountants-uk-law-firm-2025-26,switching accountants law firm,how-to,"professional handover,sra report continuity,timing",1500,"law firm,solicitor,accountant",low,low
+15,regional,london-law-firm-finance-considerations,london law firm finance,informational,"london property cost,paye payroll,partner remuneration",1500,"london,law firm,solicitor",low,low
+15,regional,manchester-law-firm-financial-strategy,manchester law firm finance,informational,"manchester legal sector,northern firm,growth investment",1500,"manchester,law firm,solicitor",low,low
+15,regional,birmingham-law-firm-finance-2025-26,birmingham law firm finance,informational,"midlands legal sector,regional firm,operating margin",1500,"birmingham,law firm,solicitor",low,low
+15,regional,bristol-law-firm-finance-considerations,bristol law firm finance,informational,"south west firms,regional growth,partner pay",1500,"bristol,law firm,solicitor",low,low
+15,regional,leeds-yorkshire-law-firm-finance,leeds law firm finance,informational,"yorkshire firm,leeds law sector,regional",1500,"leeds,law firm,solicitor",low,low
+15,regional,welsh-law-firm-finance-cardiff-swansea,welsh law firm finance,informational,"cardiff firm,welsh legal sector,ltt scotland uk",1500,"wales,law firm,solicitor",low,low
+15,regional,scottish-law-firm-finance-edinburgh-glasgow,scottish law firm finance,informational,"scottish law society,scotland accounts rules,lbtt",1500,"scotland,law firm,solicitor",low,low
