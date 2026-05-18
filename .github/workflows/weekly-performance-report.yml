@@ -1,8 +1,11 @@
 name: Weekly Performance Report
 
 on:
-  schedule:
-    - cron: '0 9 * * 1'  # 9 AM UTC every Monday
+  # Disabled 2026-05-18: weekly auto-report uses the analytics_optimization
+  # agent (Anthropic) and was deemed low-value LLM spend. Keep the workflow
+  # for manual trigger; re-enable schedule if/when the report is rebuilt.
+  # schedule:
+  #   - cron: '0 9 * * 1'  # 9 AM UTC every Monday
   workflow_dispatch:
 
 jobs:

@@ -1,9 +1,13 @@
 name: Daily Content Pipeline
 
 on:
-  schedule:
-    - cron: '0 6 * * *'  # 6 AM UTC daily (blog generation only)
-    - cron: '0 2 1 * *'  # 2 AM UTC on 1st of month (keyword refresh)
+  # Disabled 2026-05-18: this was auto-generating one blog post per niche
+  # per day (visible as the "Deploy blog content for X" bot commits) using
+  # Anthropic Claude. User flagged it as low-value LLM spend. Manual trigger
+  # remains available via workflow_dispatch.
+  # schedule:
+  #   - cron: '0 6 * * *'  # 6 AM UTC daily (blog generation only)
+  #   - cron: '0 2 1 * *'  # 2 AM UTC on 1st of month (keyword refresh)
   workflow_dispatch:  # Manual trigger
     inputs:
       refresh_keywords:

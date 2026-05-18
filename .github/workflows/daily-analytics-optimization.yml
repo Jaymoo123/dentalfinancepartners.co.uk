@@ -1,8 +1,11 @@
 name: Daily Analytics Optimization
 
 on:
-  schedule:
-    - cron: '0 8 * * *'  # 8 AM UTC daily (after content generation)
+  # Disabled 2026-05-18: cron was running daily across niches and burning LLM
+  # tokens with little measurable benefit. Run manually via workflow_dispatch
+  # when needed, or re-enable the schedule below if/when the agent is rebuilt.
+  # schedule:
+  #   - cron: '0 8 * * *'  # 8 AM UTC daily (after content generation)
   workflow_dispatch:
 
 jobs:

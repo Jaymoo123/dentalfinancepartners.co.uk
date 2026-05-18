@@ -1,8 +1,12 @@
 name: Risk Manager
 
 on:
-  schedule:
-    - cron: '0 */6 * * *'  # Every 6 hours
+  # Disabled 2026-05-18: every-6h health check ran the risk_manager agent
+  # without delivering visible value. Manual trigger remains. Re-enable
+  # if/when the alerting pipeline is wired up to a destination that gets
+  # read.
+  # schedule:
+  #   - cron: '0 */6 * * *'  # Every 6 hours
   workflow_dispatch:
 
 jobs:
