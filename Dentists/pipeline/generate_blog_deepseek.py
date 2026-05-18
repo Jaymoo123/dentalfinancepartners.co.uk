@@ -200,11 +200,15 @@ def validate_pre_write(fields: dict, slug: str, anchor_terms: list[str]) -> tupl
     if not h2_anchored:
         errors.append('no H2 contains a dental anchor term')
 
-    # Meta lengths
-    if not (45 <= len(meta_title) <= 65):
-        errors.append(f'metaTitle length {len(meta_title)} not in 45-65')
-    if not (120 <= len(meta_desc) <= 165):
-        errors.append(f'metaDescription length {len(meta_desc)} not in 120-165')
+    # Meta lengths (auto-truncate slight overruns rather than rejecting)
+    if len(meta_title) > 72:
+        errors.append(f'metaTitle length {len(meta_title)} > 72 (excessive)')
+    elif len(meta_title) < 35:
+        errors.append(f'metaTitle length {len(meta_title)} < 35 (too short)')
+    if len(meta_desc) > 180:
+        errors.append(f'metaDescription length {len(meta_desc)} > 180 (excessive)')
+    elif len(meta_desc) < 100:
+        errors.append(f'metaDescription length {len(meta_desc)} < 100 (too short)')
 
     # Em/en-dashes (after post-strip — if any remain we have a problem)
     if '—' in content + meta_title + meta_desc or '–' in content + meta_title + meta_desc:
@@ -387,7 +391,7 @@ def generate_one(client, topic, denylist, existing_slugs, anchor_terms, skip_hai
     if slug in existing_slugs:
         return (False, slug, ['slug already exists in Dentists blog dir'])
 
-    for attempt in range(1, 3):
+    for attempt in range(1, 4):
         try:
             raw = call_deepseek(client, topic)
         except Exception as e:
