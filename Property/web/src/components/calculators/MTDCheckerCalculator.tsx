@@ -117,7 +117,7 @@ export function MTDCheckerCalculator() {
           <div className="border-t border-white/20 pt-4 sm:pt-6">
             {requiresMTD ? (
               <div className="space-y-2 sm:space-y-3">
-                <p className="text-xs sm:text-sm font-bold text-white">You must comply from 6 April 2026</p>
+                <p className="text-xs sm:text-sm font-bold text-white">You must comply (live since 6 April 2026)</p>
                 <p className="text-xs sm:text-sm text-white/90 leading-relaxed">
                   Quarterly digital submissions to HMRC using MTD-compatible software. Reports due within one month of each quarter end.
                 </p>

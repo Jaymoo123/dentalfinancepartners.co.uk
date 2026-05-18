@@ -122,9 +122,9 @@ const trustBadges = [
 
 const faqs = [
   {
-    question: "Do I need Making Tax Digital from April 2026?",
+    question: "Do I need Making Tax Digital?",
     answer:
-      "If your combined property and self-employment income exceeds £50,000, yes. You must submit quarterly digital reports to HMRC from 6 April 2026. Use our MTD checker below to see if you're affected.",
+      "If your combined property and self-employment income exceeds £50,000, yes. MTD for Income Tax has been live since 6 April 2026, and you must submit quarterly digital reports to HMRC. Use our MTD checker below to see if you're affected and what to file next.",
   },
   {
     question: "Should I incorporate my buy-to-let portfolio?",
@@ -167,7 +167,7 @@ export default function HomePage() {
         <div className={`${siteContainerLg} relative z-10 h-full flex items-center`}>
           <div className="max-w-3xl">
             <div className="inline-block bg-blue-600 px-3 py-1.5 text-xs sm:text-sm font-bold text-white uppercase tracking-wider mb-4 sm:mb-6 shadow-lg">
-              MTD starts 6 April 2026
+              MTD is now live for landlords
             </div>
             <h1 className="text-3xl font-bold leading-[1.15] text-white text-balance sm:text-5xl sm:leading-[1.1] lg:text-7xl">
               Property tax sorted. Your way.
@@ -440,11 +440,11 @@ export default function HomePage() {
             <h2 className="text-2xl font-bold text-slate-900 text-center mb-8 sm:mb-12 sm:text-4xl lg:text-5xl">Common questions</h2>
             <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
               <AccordionItem value="faq-mtd">
-                <AccordionTrigger>Do I need Making Tax Digital from April 2026?</AccordionTrigger>
+                <AccordionTrigger>Do I need Making Tax Digital?</AccordionTrigger>
                 <AccordionContent>
                   <p>
-                    If your combined property and self-employment income exceeds £50,000, yes. You must submit quarterly
-                    digital reports to HMRC from 6 April 2026. Use our{" "}
+                    If your combined property and self-employment income exceeds £50,000, yes. MTD for Income Tax has
+                    been live since 6 April 2026, with quarterly digital reports to HMRC. Use our{" "}
                     <Link href="#mtd" className="font-bold text-emerald-600 underline underline-offset-2 hover:text-emerald-700">
                       MTD checker
                     </Link>{" "}

@@ -65,8 +65,8 @@ const cityContent: Record<string, {
         desc: "London landlords are hit hardest by Section 24 due to high property values and mortgage levels. We calculate your specific impact and model whether incorporation makes financial sense.",
       },
       {
-        title: "MTD compliance (April 2026)",
-        desc: "Quarterly digital reporting becomes mandatory from 6 April 2026. We set you up with the right software and handle submissions so you avoid penalties.",
+        title: "MTD compliance",
+        desc: "Quarterly digital reporting to HMRC has been mandatory since 6 April 2026. We set you up with the right software and handle the submissions so you avoid penalties.",
       },
       {
         title: "Incorporation feasibility",
