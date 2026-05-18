@@ -186,7 +186,7 @@ export function LocumStructureCalculator() {
 
       <div className="mt-6 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 text-sm leading-relaxed text-[var(--ink-soft)]">
         <p>
-          <strong>Notes:</strong> Indicative UK 2025/26 model. Ltd-co assumes £12,570 salary + remainder as dividend, £1,800 admin cost, no Employment Allowance (single-director restriction). Umbrella assumes 5% margin retention. None of the models include NHS Pension implications — sole-trader locums can join the practitioner pensions arrangement straightforwardly, Ltd-co locums have more restrictive access, umbrella locums are typically limited to the employer's auto-enrolment scheme.
+          <strong>Notes:</strong> Indicative UK 2025/26 model. Ltd-co assumes £12,570 salary + remainder as dividend, £1,800 admin cost, no Employment Allowance (single-director restriction). Umbrella assumes 5% margin retention. None of the models include NHS Pension implications — sole-trader locums can join the practitioner pensions arrangement straightforwardly, Ltd-co locums have more restrictive access, umbrella locums are typically limited to the employer&apos;s auto-enrolment scheme.
         </p>
         <p className="mt-3">
           IR35 not modelled here. If the engaging practice issues an inside-IR35 SDS, Ltd-co receives net of deductions and dividend extraction isn&apos;t available on that engagement. The comparison shifts towards umbrella or sole-trader.

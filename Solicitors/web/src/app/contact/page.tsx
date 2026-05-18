@@ -79,7 +79,7 @@ export default function ContactPage() {
             <ul className="mt-4 space-y-3 text-sm text-[var(--ink-soft)]">
               <li className="flex items-start gap-3">
                 <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[var(--accent)] text-xs font-bold text-[var(--primary)]">1</span>
-                <span>We'll review your enquiry and respond within 24 hours</span>
+                <span>We&apos;ll review your enquiry and respond within 24 hours</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[var(--accent)] text-xs font-bold text-[var(--primary)]">2</span>

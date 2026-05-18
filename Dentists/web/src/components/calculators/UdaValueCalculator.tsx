@@ -146,7 +146,7 @@ export function UdaValueCalculator() {
           <strong>Notes:</strong> Effective UDA value = contract value ÷ UDA volume. This is the most useful number for comparing across practices and contract years. Benchmarks are 2025/26 indicative; actual figures vary by commissioner, region, and individual contract terms. Real value is adjusted using an assumed 2.5% annual CPI proxy — actual inflation since contract signing has been higher (closer to 4% in some years).
         </p>
         <p className="mt-3">
-          The headline figure most dentists know is the "national average UDA" but it masks significant regional and contract-specific variance. Your effective UDA is the only number that actually applies to your accounts.
+          The headline figure most dentists know is the &ldquo;national average UDA&rdquo; but it masks significant regional and contract-specific variance. Your effective UDA is the only number that actually applies to your accounts.
         </p>
       </div>
     </div>

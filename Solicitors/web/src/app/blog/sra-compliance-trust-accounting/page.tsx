@@ -114,7 +114,7 @@ export default function SRACompliancePillarPage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-[var(--ink)] mb-4">Annual Accountant's Report</h2>
+          <h2 className="text-2xl font-bold text-[var(--ink)] mb-4">Annual Accountant&apos;s Report</h2>
           <p className="text-base leading-relaxed text-[var(--ink-soft)] mb-4">
             Law firms holding client money must obtain an annual accountant's report from a qualified accountant. This report confirms that your systems and records comply with SRA Accounts Rules. The accountant examines:
           </p>

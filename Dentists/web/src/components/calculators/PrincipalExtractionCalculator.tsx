@@ -168,7 +168,7 @@ export function PrincipalExtractionCalculator() {
               className="h-4 w-4 accent-[var(--gold)]"
             />
             <span className="text-sm font-semibold text-[var(--ink)]">
-              I'm an active NHS Pension Scheme member
+              I&apos;m an active NHS Pension Scheme member
             </span>
           </label>
         </div>
