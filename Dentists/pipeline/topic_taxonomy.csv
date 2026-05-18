@@ -1,0 +1,120 @@
+priority,cluster,slug,primary_keyword,intent,secondary_keywords,target_word_count,dental_anchor_terms,risk_tier,aff_overlap_risk
+1,nhs-contracts,uda-value-explained-for-uk-dentists,uda value uk,informational,"uda rate,uda calculation,nhs contract uda",1800,"uda,nhs contract,dentist",low,none
+1,nhs-contracts,how-uda-rates-vary-by-region-uk,uda rates regional variation,informational,"uda england,uda wales,uda northern ireland",1800,"uda,nhs dental,regional",low,none
+1,nhs-contracts,gds-vs-pds-vs-ods-contracts-dentists,gds vs pds dental contract,comparison,"gds contract,pds contract,ods contract",1800,"nhs contract,gds,pds,ods",low,none
+1,nhs-contracts,nhs-dental-contract-clawback-explained,nhs dental contract clawback,informational,"uda underperformance,nhs clawback,contract breach",1700,"nhs contract,clawback,dental",low,none
+1,nhs-contracts,transferring-nhs-dental-contract-on-practice-sale,transferring nhs dental contract,how-to,"contract novation,nhs commissioning,practice sale",1800,"nhs contract,practice sale,dental",low,none
+1,nhs-contracts,nhs-dental-contract-reform-2025-26,nhs dental contract reform,informational,"contract reform,band reform,nhs commissioning",1700,"nhs contract,reform,dental",low,none
+1,nhs-contracts,managing-uda-shortfall-end-of-financial-year,uda shortfall management,how-to,"uda recovery,end of year nhs,clawback risk",1800,"uda,nhs dental,shortfall",low,none
+1,nhs-contracts,scotland-statement-of-dental-remuneration-explained,scotland dental remuneration,informational,"sdr scotland,item of service,nhs dental scotland",1700,"nhs dental,scotland,dental",low,none
+1,nhs-contracts,wales-nhs-dental-contract-reform-2026,wales nhs dental contract,informational,"welsh dental contract,wales reform,nhs dental wales",1700,"nhs contract,wales,dental",low,none
+1,nhs-contracts,northern-ireland-health-service-dental-contract,northern ireland nhs dental,informational,"ni dental contract,hsc dental,health service contract",1700,"nhs dental,northern ireland",low,none
+1,nhs-contracts,understanding-cdo-and-nhs-dental-commissioning,nhs dental commissioning,informational,"cdo,commissioning,nhs england",1600,"nhs dental,commissioning",low,none
+1,nhs-contracts,band-1-band-2-band-3-uda-treatment-explained,band 1 band 2 band 3 dental,informational,"nhs treatment bands,uda bands,band 4",1700,"uda,nhs treatment,bands",low,none
+1,nhs-contracts,how-to-read-your-nhs-dental-contract,nhs dental contract review,how-to,"contract terms,nhs contract review,commissioner",1700,"nhs contract,dental,review",low,none
+1,nhs-contracts,nhs-pension-pensionable-pay-dentists,nhs pensionable pay dentists,informational,"pensionable pay,nhs pension dental,seniority pay",1700,"nhs pension,dental,pensionable",low,none
+1,nhs-contracts,opt-out-of-nhs-dental-contract-tax-implications,opting out nhs dental contract,informational,"private practice,nhs opt out,contract handback",1700,"nhs contract,private,dental",low,none
+2,associate-tax,bda-model-associate-agreement-tax-status,bda model associate agreement,informational,"associate self employment,bda contract,employment status",1900,"bda,associate,dental",low,low
+2,associate-tax,associate-dentist-allowable-expenses-uk-2025-26,associate dentist expenses,informational,"associate expenses,allowable expenses dentist,deductible costs",1800,"associate dentist,expenses,dental",low,low
+2,associate-tax,when-hmrc-may-challenge-associate-self-employment,hmrc challenge associate self employment,informational,"control test,substitution,mutuality of obligation",1700,"associate dentist,self employment,dental",low,low
+2,associate-tax,can-dental-associates-claim-mileage-multiple-practices,dental associate mileage claim,informational,"travel expenses,multiple practice,mileage allowance",1500,"associate dentist,mileage,dental practice",low,low
+2,associate-tax,salary-vs-associate-fees-which-uk-dentist-tax,dentist salary vs self employed,comparison,"dentist tax structure,associate vs employee,paye vs self assessment",1800,"dentist,associate,salary",low,low
+2,associate-tax,dental-associate-self-assessment-step-by-step,dental associate self assessment,how-to,"self assessment dentist,tax return associate,sa filing",1700,"associate dentist,self assessment,dental",low,low
+2,associate-tax,nhs-superannuation-contribution-dental-associate-tax,nhs superannuation tax relief dentist,informational,"superannuation,nhs pension contribution,tax relief",1700,"nhs pension,dental,associate",low,none
+2,associate-tax,dental-associate-spouse-employment-tax,dental associate employing spouse,how-to,"spouse on payroll,family employment,income shifting",1500,"dental,associate,practice",low,low
+2,associate-tax,associate-cpd-courses-tax-deductible-uk,dentist cpd tax deductible,informational,"cpd dental,training expenses,allowable cpd",1500,"dentist,cpd,dental",low,none
+2,associate-tax,locum-vs-associate-tax-treatment-uk-dentists,locum vs associate dentist tax,comparison,"locum dentist tax,associate tax,off-payroll",1700,"locum dentist,associate,dental",low,none
+2,associate-tax,private-dental-associate-vat-considerations,private associate vat dental,informational,"vat exempt dental,private practice vat,supply of dental services",1600,"private dental,associate,vat",low,low
+2,associate-tax,ir35-dental-associates-2025-26-rules,ir35 dental associate,informational,"off-payroll dental,deemed employment,nhs ir35",1800,"associate dentist,ir35,nhs",low,low
+3,buying-practice,how-to-value-a-uk-dental-practice-2026,dental practice valuation uk,informational,"goodwill valuation,ebitda multiple,practice price",2200,"dental practice,goodwill,valuation",low,low
+3,buying-practice,dental-practice-purchase-financial-due-diligence-checklist,dental practice due diligence,how-to,"financial dd,practice purchase checklist,seller accounts review",2000,"dental practice,purchase,due diligence",low,low
+3,buying-practice,asset-sale-vs-share-sale-dental-practice,dental practice asset vs share sale,comparison,"asset purchase,share purchase,goodwill transfer",1800,"dental practice,sale,purchase",low,low
+3,buying-practice,dental-practice-acquisition-financing-options-uk,dental practice loan finance,informational,"practice loan,acquisition finance,bank financing dental",1700,"dental practice,acquisition,financing",low,low
+3,buying-practice,heads-of-terms-dental-practice-purchase,dental practice heads of terms,how-to,"hots dental,deal structure,practice agreement",1500,"dental practice,purchase,terms",low,none
+3,buying-practice,understanding-dental-practice-ebitda-normalisation,dental practice ebitda adjustments,how-to,"ebitda add-backs,owner remuneration,normalisation",1700,"dental practice,ebitda,valuation",low,none
+3,buying-practice,squat-vs-existing-practice-purchase-uk-tax,squat practice vs buying existing,comparison,"squat practice,greenfield,startup dental",1700,"dental practice,squat,purchase",low,none
+3,buying-practice,dental-practice-lease-vs-freehold-purchase,dental practice freehold vs leasehold,comparison,"freehold dental,leasehold dental,premises ownership",1700,"dental practice,premises,freehold",low,none
+3,buying-practice,corporate-dental-acquirers-vs-independent-sale,corporate dental buyer vs independent,comparison,"corporate dentistry,bupa,mydentist,portman",1700,"dental practice,corporate,sale",low,none
+3,buying-practice,buying-second-dental-practice-tax-considerations,buying second dental practice,how-to,"multi-practice,group structure,second practice tax",1800,"dental practice,multi-practice,group",low,none
+4,goodwill-sale,goodwill-amortisation-rules-dental-practice-post-2019,dental goodwill amortisation,informational,"goodwill tax relief,intangibles,amortisation rate",1700,"dental practice,goodwill,amortisation",low,low
+4,goodwill-sale,badr-on-dental-practice-sale-2026-uk,badr dental practice sale,informational,"business asset disposal relief,entrepreneurs relief,cgt practice sale",1900,"dental practice,sale,badr",low,low
+4,goodwill-sale,section-162-incorporation-relief-dental-practice,section 162 incorporation relief dentist,how-to,"incorporation relief,tcga s162,goodwill transfer",1800,"dental practice,incorporation,relief",low,low
+4,goodwill-sale,exit-planning-3-5-years-out-uk-dental-practice,dental practice exit planning,how-to,"exit strategy,practice sale prep,succession plan",1800,"dental practice,exit,sale",low,none
+4,goodwill-sale,gradual-vs-immediate-sale-dental-practice,phased sale dental practice,comparison,"earn-out,deferred consideration,vendor finance",1700,"dental practice,sale,phased",low,none
+4,goodwill-sale,goodwill-valuation-methods-dental-uk-2026,dental goodwill methods,informational,"earnings multiple,fee income percentage,market comparison",1800,"dental,goodwill,valuation",low,low
+4,goodwill-sale,how-much-of-dental-practice-price-is-goodwill,goodwill percentage dental sale,informational,"goodwill split,tangible assets,price allocation",1500,"dental practice,goodwill,price",low,low
+4,goodwill-sale,selling-dental-practice-tax-checklist-12-months-before,sell dental practice tax planning,how-to,"pre-sale planning,tax checklist,12 months out",1700,"dental practice,sale,planning",low,low
+5,nhs-pension,nhs-pension-1995-2008-2015-explained-dentists,nhs pension scheme sections dentists,informational,"1995 section,2008 section,2015 section",2000,"nhs pension,dentist,scheme",low,none
+5,nhs-pension,mccloud-remedy-nhs-pension-dentists-explained,mccloud remedy dentist nhs pension,informational,"remedy period,pension choice,1995 2008",2000,"nhs pension,dentist,mccloud",low,none
+5,nhs-pension,nhs-pension-retainer-vs-full-membership-dentists,nhs pension retainer dentists,informational,"retainer scheme,salaried retainer,part-time dentist",1700,"nhs pension,dentist,retainer",low,none
+5,nhs-pension,opting-out-nhs-pension-dentist-tax-implications,opt out nhs pension dentist,informational,"opt out cost,pension annual allowance,dentist tax",1800,"nhs pension,dentist,opt out",low,none
+5,nhs-pension,annual-allowance-tapering-nhs-dentists-pension,annual allowance taper dentist,informational,"taper threshold,scheme pays,pension growth",1900,"nhs pension,dentist,annual allowance",low,none
+5,nhs-pension,nhs-pension-ill-health-retirement-dentists,nhs pension ill health retirement dentist,informational,"ill health pension,tier 1 tier 2,ihr dentist",1700,"nhs pension,dentist,ill health",low,none
+5,nhs-pension,can-locum-dentists-join-nhs-pension-scheme,locum nhs pension dentist,informational,"locum pension,sole practitioner pension,pensionable status",1500,"nhs pension,locum dentist,pension",low,none
+5,nhs-pension,buying-additional-nhs-pension-dentist-avc,nhs pension avc dentist,informational,"additional pension,money purchase avc,buying years",1600,"nhs pension,dentist,avc",low,none
+5,nhs-pension,nhs-pension-and-private-practice-income-dentists,private income nhs pension dentist,informational,"private income,pensionable earnings,mixed income",1500,"nhs pension,private,dentist",low,none
+5,nhs-pension,dental-corporate-employees-nhs-pension-access,corporate dental nhs pension,informational,"corporate dentistry pension,bupa pension,private employer",1500,"nhs pension,corporate dental,dental",low,none
+6,locum-tax,locum-dentist-ltd-company-vs-self-employed,locum dentist limited company tax,comparison,"locum psc,umbrella vs ltd,locum tax structure",1900,"locum dentist,limited company,tax",low,low
+6,locum-tax,umbrella-companies-for-locum-dentists-uk-tax,locum dentist umbrella tax,informational,"umbrella dentist,paye locum,umbrella fees",1700,"locum dentist,umbrella,tax",low,low
+6,locum-tax,ir35-locum-dentists-nhs-engagements,locum dentist ir35 nhs,informational,"off-payroll dental,nhs contractor,deemed employment",1900,"locum dentist,nhs,ir35",low,low
+6,locum-tax,allowable-expenses-locum-dentists-uk-2025-26,locum dentist expenses uk,informational,"locum mileage,locum cpd,locum indemnity",1600,"locum dentist,expenses,dental",low,low
+6,locum-tax,locum-dentist-vat-registration-when-required,locum dentist vat registration,informational,"locum vat,dental vat threshold,vat exempt locum",1500,"locum dentist,vat,dental",low,low
+6,locum-tax,locum-dentist-day-rate-vs-percentage-tax,locum dentist day rate vs percentage,comparison,"per diem locum,percentage locum,daily fee",1600,"locum dentist,day rate,dental",low,none
+6,locum-tax,paying-yourself-from-locum-ltd-company-2025-26,locum dentist ltd company salary dividend,how-to,"locum dividend,locum salary,profit extraction",1800,"locum dentist,limited company,extraction",low,low
+6,locum-tax,nhs-pension-access-via-locum-ltd-company,locum nhs pension limited company,informational,"locum pension ltd,personal service company,pensionable",1500,"locum dentist,nhs pension,ltd",low,none
+7,profit-extraction,salary-vs-dividend-uk-dental-practice-owner-2025-26,dental practice owner salary dividend,how-to,"dividend extraction,principal salary,limited company dental",2000,"dental practice owner,salary,dividend",low,med
+7,profit-extraction,partnership-vs-limited-company-uk-dental-practice,dental partnership vs limited company,comparison,"dental llp,dental partnership tax,practice incorporation",2200,"dental practice,partnership,limited company",low,med
+7,profit-extraction,incorporating-uk-dental-practice-step-by-step-2026,incorporating dental practice uk,how-to,"dental incorporation,practice ltd,company structure",2200,"dental practice,incorporation,limited company",low,med
+7,profit-extraction,pension-contributions-from-dental-limited-company,dental ltd pension contributions,how-to,"employer pension,sass dental,corp tax relief",1800,"dental,limited company,pension",low,low
+7,profit-extraction,dental-practice-spouse-on-payroll-tax-planning,dental practice spouse on payroll,how-to,"family employment,income splitting,spouse salary",1500,"dental practice,spouse,payroll",low,low
+7,profit-extraction,paying-children-dental-practice-tax-rules,dental practice pay children,informational,"family employment,under 16 employment,school holidays",1500,"dental practice,children,employment",low,none
+7,profit-extraction,dental-holding-company-structures-uk-2026,dental holding company structure,informational,"holding company dental,group structure,corporate dentistry",1900,"dental,holding company,group",low,low
+7,profit-extraction,when-to-incorporate-uk-dental-practice-tax-savings,when to incorporate dental practice,informational,"incorporation tax savings,profit threshold,break even",1900,"dental practice,incorporation,when",low,low
+7,profit-extraction,dental-partnership-income-allocation-tax-2025-26,dental partnership income split,informational,"partnership tax,profit share,uneven split",1700,"dental partnership,income,allocation",low,low
+7,profit-extraction,buy-out-partner-uk-dental-practice-tax,dental partnership buy out tax,how-to,"partner exit,buy-in buy-out,partnership change",1800,"dental partnership,buyout,tax",low,none
+8,capital-allowances,capital-allowances-dental-chairs-equipment-uk-2025-26,capital allowances dental equipment,informational,"aia dental chair,plant machinery,full expensing dental",1800,"dental,equipment,capital allowances",low,low
+8,capital-allowances,structures-buildings-allowance-dental-practice-premises,sba dental practice premises,informational,"sba 3 percent,commercial premises,dental property",1800,"dental practice,premises,sba",low,low
+8,capital-allowances,fixtures-election-buying-dental-practice-premises,section 198 election dental fixtures,how-to,"fixtures election,joint election,past expenditure",1700,"dental practice,fixtures,election",low,low
+8,capital-allowances,cgt-on-dental-practice-premises-sale,cgt dental premises sale,informational,"premises gain,rollover relief,cgt practice property",1700,"dental practice,premises,cgt",low,none
+8,capital-allowances,leasing-vs-buying-dental-equipment-tax-treatment,dental equipment lease vs buy,comparison,"operating lease,finance lease,equipment finance",1700,"dental,equipment,lease",low,none
+8,capital-allowances,dental-equipment-replacement-tax-relief-when,replace dental equipment tax,how-to,"equipment refresh,replacement of items,short life asset",1500,"dental,equipment,replacement",low,none
+9,vat-compliance,vat-on-dental-treatment-when-does-it-apply,vat on dental treatment uk,informational,"vat exempt dental,cosmetic vat,vat group 7",1800,"dental treatment,vat,dental",low,med
+9,vat-compliance,tooth-whitening-vat-treatment-uk,tooth whitening vat,informational,"whitening vat,cosmetic dental vat,vat borderline",1700,"dental,whitening,vat",low,low
+9,vat-compliance,clear-aligners-vat-uk-dental-vat,clear aligners vat dental,informational,"invisalign vat,orthodontic vat,cosmetic ortho",1500,"dental,aligners,vat",low,low
+9,vat-compliance,vat-on-dental-laboratory-fees-uk,dental lab fees vat,informational,"lab fees vat,dental technician vat,supply rules",1500,"dental laboratory,vat,fees",low,none
+9,vat-compliance,vat-on-dental-membership-plans-uk,denplan vat dental membership,informational,"denplan vat,membership scheme vat,monthly plan",1500,"dental,membership plan,vat",low,low
+10,dental-staff,dental-nurse-employment-tax-uk-2025-26,dental nurse employer tax,how-to,"dental nurse paye,gdc nurse,nurse contract",1700,"dental nurse,employment,tax",low,low
+10,dental-staff,hiring-dental-hygienist-self-employed-vs-employed,dental hygienist employment status,comparison,"hygienist self-employed,hygienist employed,gdc hygienist",1700,"dental hygienist,employment,status",low,low
+10,dental-staff,dental-therapist-direct-access-tax-treatment,dental therapist direct access tax,informational,"direct access,therapist self employment,gdc therapist",1500,"dental therapist,direct access,tax",low,none
+10,dental-staff,foundation-dentist-tax-status-fd1-fd2,foundation dentist tax fd1 fd2,informational,"foundation training,fd1 salary,vt year dentist",1500,"foundation dentist,fd1,tax",low,none
+10,dental-staff,dental-treatment-coordinator-role-uk-tax,treatment coordinator dental tax,informational,"tco dental,coordinator pay,private practice staff",1500,"dental,treatment coordinator,tax",low,none
+10,dental-staff,dental-practice-employee-benefits-tax-uk-2026,dental practice employee benefits tax,informational,"benefits in kind,bik dental,perks tax",1500,"dental practice,benefits,employee",low,low
+10,dental-staff,paying-dental-staff-bonuses-tax-efficient-uk,dental staff bonus tax,how-to,"performance bonus,uda bonus,bonus tax",1500,"dental,staff,bonus",low,none
+10,dental-staff,dental-locum-vs-temp-nurse-uk-tax-rules,dental temp nurse vs locum,comparison,"locum nurse,temp nurse,agency dental nurse",1500,"dental,locum,nurse",low,none
+11,region,nhs-dental-practice-tax-london-considerations,london dental practice tax,informational,"london dental,practice london,rates premium",1500,"dental practice,london,tax",low,low
+11,region,manchester-dental-practice-financial-considerations,manchester dental practice tax,informational,"manchester dental,greater manchester,northwest dental",1500,"dental practice,manchester,finance",low,low
+11,region,edinburgh-dental-practice-scotland-tax-rules,edinburgh dental practice scotland,informational,"scotland dental,sdr edinburgh,scottish tax",1500,"dental practice,edinburgh,scotland",low,none
+11,region,cardiff-wales-dental-practice-tax-considerations,cardiff dental practice wales,informational,"wales dental,welsh nhs contract,cardiff dentist",1500,"dental practice,wales,cardiff",low,none
+11,region,belfast-northern-ireland-dental-practice-tax,belfast northern ireland dental,informational,"northern ireland dental,hsc dental,belfast dentist",1500,"dental practice,northern ireland,belfast",low,none
+11,region,brighton-dental-practice-private-mix-tax,brighton dental practice tax,informational,"brighton dentist,private heavy dental,coastal practice",1400,"dental practice,brighton,tax",low,none
+11,region,birmingham-dental-practice-financial-strategy,birmingham dental practice tax,informational,"birmingham dental,midlands dental,west midlands practice",1400,"dental practice,birmingham,tax",low,none
+11,region,leeds-dental-practice-financial-considerations,leeds dental practice tax,informational,"leeds dental,yorkshire dental,leeds dentist",1400,"dental practice,leeds,tax",low,none
+12,specialist,private-orthodontic-practice-uk-tax-essentials,private orthodontic practice tax,informational,"orthodontist tax,private ortho,specialist dentist",1700,"orthodontic,specialist dental,tax",low,low
+12,specialist,implant-only-dental-practice-tax-considerations,implant dental practice tax,informational,"implant clinic,specialist implant,implant pricing",1500,"dental practice,implant,specialist",low,low
+12,specialist,endodontic-specialist-dentist-uk-tax,endodontic specialist tax uk,informational,"endo specialist,root canal specialist,referral practice",1400,"dental,endodontic,specialist",low,none
+12,specialist,paediatric-dental-practice-uk-tax-considerations,paediatric dentistry tax uk,informational,"child dental,specialist paediatric,nhs paediatric",1400,"dental,paediatric,specialist",low,none
+12,specialist,oral-surgeon-private-practice-uk-tax,oral surgery private tax uk,informational,"oral maxillofacial,private oms,specialist surgery",1400,"oral surgery,specialist dental,tax",low,none
+12,specialist,cosmetic-dentist-uk-vat-tax-mix,cosmetic dentistry tax vat,informational,"cosmetic dental,smile makeover tax,private cosmetic",1500,"cosmetic dental,vat,tax",low,low
+13,brand-defensive,how-to-choose-a-dental-accountant-uk-2026,how to choose dental accountant,informational,"specialist dental accountant,choosing accountant,dental cpa",1700,"dental accountant,dentist,specialist",low,low
+13,brand-defensive,signs-you-need-a-specialist-dental-accountant,when to switch dental accountant,informational,"specialist vs generalist,switching accountants,dental sector",1500,"dental accountant,specialist,dentist",low,low
+13,brand-defensive,questions-to-ask-a-dental-accountant-before-hiring,questions to ask dental accountant,how-to,"interview accountant,vetting,dental sector experience",1500,"dental accountant,questions,hiring",low,low
+13,brand-defensive,red-flags-when-choosing-dental-accountant-uk,dental accountant red flags,informational,"warning signs,bad accountant,fee structure",1400,"dental accountant,red flags,warning",low,none
+13,brand-defensive,switching-from-generalist-to-specialist-dental-accountant,switch to specialist dental accountant,how-to,"transition accountant,changeover process,handover",1500,"dental accountant,specialist,switching",low,low
+13,brand-defensive,dental-accountant-fees-uk-what-to-expect-2026,dental accountant fees uk,informational,"accountancy cost,monthly retainer,fixed fee dental",1500,"dental accountant,fees,uk",low,low
+3,buying-practice,nhs-vs-private-dental-practice-which-to-buy-2026,buying nhs vs private dental practice,comparison,"nhs heavy practice,private heavy practice,acquisition choice",1700,"dental practice,nhs,private",low,none
+4,goodwill-sale,goodwill-stripping-dental-practice-pre-sale-uk,goodwill stripping dental,how-to,"pre-sale value engineering,goodwill optimisation,sale preparation",1500,"dental practice,goodwill,pre-sale",low,none
+2,associate-tax,dental-associate-mortgage-self-cert-uk,associate dentist mortgage uk,informational,"dentist mortgage,sa302 mortgage,self-employed mortgage",1500,"associate dentist,mortgage,dental",low,none
+2,associate-tax,dental-associate-buy-to-let-tax-implications,dental associate buy to let,informational,"btl dental,property income,section 24",1500,"associate dentist,btl,dental",low,med
+1,nhs-contracts,dental-foundation-training-pay-scales-uk-2026,foundation dentist pay scale,informational,"fd1 pay,dental trainee salary,nhs pay scale",1400,"foundation dentist,nhs,pay",low,none
+6,locum-tax,locum-dentist-tax-return-step-by-step-uk,locum dentist tax return,how-to,"sa locum,locum sa filing,tax return guide",1700,"locum dentist,tax return,uk",low,low
+7,profit-extraction,r-and-d-tax-credits-dental-practices-uk-2026,r and d tax credits dental,informational,"dental innovation,clinical research,r&d claim",1700,"dental practice,r and d,tax",med,low
