@@ -126,12 +126,14 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex shrink-0 items-center gap-2">
-          <Link
-            href="/contact"
-            className={`${btnPrimary} hidden min-h-10 min-w-0 px-6 py-2 text-sm sm:inline-flex`}
-          >
-            Book consultation
-          </Link>
+          <div className="hidden sm:flex">
+            <Link
+              href="/contact"
+              className={`${btnPrimary} min-h-10 min-w-0 px-6 py-2 text-sm`}
+            >
+              Book consultation
+            </Link>
+          </div>
 
           <button
             type="button"

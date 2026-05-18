@@ -39,14 +39,19 @@ export function ExitIntentModal() {
       }
     };
 
+    // Desktop-only: trigger on cursor leaving the viewport.
+    // Skip on touch devices, since the previous 60s idle fallback interrupted readers.
+    const isTouch =
+      typeof window.matchMedia === "function" &&
+      window.matchMedia("(hover: none), (pointer: coarse)").matches;
+    if (isTouch) return;
+
     function onMouseLeave(e: MouseEvent) {
       if (e.clientY <= 0) trigger();
     }
-    const idle = window.setTimeout(trigger, 60000);
     document.addEventListener("mouseleave", onMouseLeave);
     return () => {
       document.removeEventListener("mouseleave", onMouseLeave);
-      window.clearTimeout(idle);
     };
   }, []);
 

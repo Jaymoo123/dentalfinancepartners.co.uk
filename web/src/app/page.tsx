@@ -129,7 +129,7 @@ export default function HomePage() {
       <JsonLd data={[buildOrganization(), buildWebSite(), buildFaqPage(faqs)].filter((s): s is NonNullable<typeof s> => s !== null)} />
 
       {/* Hero */}
-      <section className="relative h-[500px] sm:h-[600px] lg:h-[700px] overflow-hidden">
+      <section className="relative min-h-[480px] sm:h-[600px] lg:h-[700px] overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=2000&q=85"
           alt="Agency founders in a modern office"
