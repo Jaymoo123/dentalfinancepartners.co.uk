@@ -4,6 +4,11 @@ import { CTASection } from "@/components/ui/CTASection";
 import { contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
+import {
+  buildService,
+  buildBreadcrumbJsonLd,
+  JsonLd,
+} from "@/lib/schema/index";
 
 export const metadata: Metadata = {
   title: "Specialist Dental Accountants | Accounting for Dentists UK",
@@ -55,14 +60,24 @@ const sections = [
 ];
 
 export default function ServicesPage() {
+  const breadcrumbItems = [
+    { label: "Home", href: "/" },
+    { label: "Services" },
+  ];
+  const serviceSchema = buildService({
+    name: "Specialist Dental Accountancy Services",
+    description:
+      "Accounting, tax, payroll and advisory services for UK dental practices, principals, associates and dental groups. NHS contract reporting, profit extraction, practice purchase support and ongoing compliance.",
+    path: "/services",
+    serviceType: "Dental Accountancy",
+    category: "Specialist Accounting Services",
+  });
+  const breadcrumbSchema = JSON.parse(buildBreadcrumbJsonLd(breadcrumbItems));
+
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
-      <Breadcrumb
-        items={[
-          { label: "Home", href: "/" },
-          { label: "Services" },
-        ]}
-      />
+      <JsonLd data={[serviceSchema, breadcrumbSchema]} />
+      <Breadcrumb items={breadcrumbItems} />
       <h1 className="font-serif text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
         Specialist dental accountants for practices and associates
       </h1>

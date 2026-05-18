@@ -6,7 +6,7 @@ import { StickyCTA } from "@/components/ui/StickyCTA";
 import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { getPostBySlug, getCategorySlug } from "@/lib/blog";
-import { buildOrganizationJsonLd } from "@/lib/organization-schema";
+import { buildOrganizationJsonLd, buildWebSite, JsonLd } from "@/lib/schema/index";
 import { TestimonialSlider } from "@/components/dentists/TestimonialSlider";
 
 const btnMailOutline =
@@ -161,14 +161,12 @@ export default function HomePage() {
   );
 
   const orgSchema = buildOrganizationJsonLd();
+  const webSiteSchema = buildWebSite();
 
   return (
     <>
       <StickyCTA />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
-      />
+      <JsonLd data={[orgSchema, webSiteSchema]} />
       <section className="hero-brand border-b border-white/10">
         <div className={`hero-inner ${siteContainerLg} ${sectionYLoose}`}>
           <div className="hero-reveal">
