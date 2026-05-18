@@ -450,6 +450,56 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="border-t border-[var(--border)] bg-[var(--navy)] text-white">
+        <div className={`${siteContainerLg} ${sectionY}`}>
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--gold)]">Free resources</p>
+          <h2 className="display-serif mt-3 text-2xl font-semibold text-white sm:text-3xl lg:text-4xl">
+            Tools and guides built specifically for UK dentists
+          </h2>
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-white/85 sm:text-lg">
+            Free calculators, pillar guides, and a 10-minute practice health check. All UK 2025/26 rates, all dental-specific.
+          </p>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <Link
+              href="/free-practice-health-check"
+              className={`group block rounded-2xl border border-white/15 bg-white/5 p-6 transition-all hover:border-[var(--gold)] hover:bg-white/10 ${focusRing}`}
+            >
+              <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--gold)] mb-2">Diagnostic · 10 minutes</p>
+              <h3 className="display-serif text-lg font-semibold text-white group-hover:text-[var(--gold)]">
+                Free practice health check
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-white/75">
+                Six-step wizard with 20+ dental-specific rules. Flags the items worth reviewing across structure, NHS Pension, IR35, BADR, and goodwill.
+              </p>
+            </Link>
+            <Link
+              href="/calculators"
+              className={`group block rounded-2xl border border-white/15 bg-white/5 p-6 transition-all hover:border-[var(--gold)] hover:bg-white/10 ${focusRing}`}
+            >
+              <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--gold)] mb-2">5 calculators</p>
+              <h3 className="display-serif text-lg font-semibold text-white group-hover:text-[var(--gold)]">
+                Dental tax calculators
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-white/75">
+                UDA value, associate take-home, practice valuation, locum structure comparison, principal extraction. All UK 2025/26 rates.
+              </p>
+            </Link>
+            <Link
+              href="/dental-guides"
+              className={`group block rounded-2xl border border-white/15 bg-white/5 p-6 transition-all hover:border-[var(--gold)] hover:bg-white/10 ${focusRing}`}
+            >
+              <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--gold)] mb-2">6 pillar guides</p>
+              <h3 className="display-serif text-lg font-semibold text-white group-hover:text-[var(--gold)]">
+                Pillar guides
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-white/75">
+                NHS contracts, associate tax, practice purchase DD, goodwill valuation, partnership vs Ltd, NHS Pension. Multi-thousand-word guides.
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="border-t border-[var(--border)] bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <p className="section-label">Common questions</p>
