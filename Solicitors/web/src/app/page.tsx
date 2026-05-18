@@ -430,6 +430,48 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="bg-[var(--primary)] text-white">
+        <div className={`${siteContainerLg} ${sectionY}`}>
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/90">Free resources</p>
+          <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-white md:text-4xl">
+            Tools and guides built specifically for UK law firms
+          </h2>
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-white/85 md:text-lg">
+            Free calculators, pillar guides, a tax-rates reference, and a 10-minute firm health check. All UK 2025/26 rates and current SRA Accounts Rules.
+          </p>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <Link href="/free-firm-health-check" className="group block rounded-2xl border border-white/15 bg-white/5 p-6 transition-all hover:border-white hover:bg-white/10">
+              <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/80 mb-2">Diagnostic · 10 min</p>
+              <h3 className="font-serif text-base font-semibold text-white">Free firm health check</h3>
+              <p className="mt-2 text-xs leading-relaxed text-white/75">
+                15+ solicitor-specific rules across SRA, FA 2014, BADR, structure, MTD.
+              </p>
+            </Link>
+            <Link href="/calculators" className="group block rounded-2xl border border-white/15 bg-white/5 p-6 transition-all hover:border-white hover:bg-white/10">
+              <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/80 mb-2">6 calculators</p>
+              <h3 className="font-serif text-base font-semibold text-white">Law firm calculators</h3>
+              <p className="mt-2 text-xs leading-relaxed text-white/75">
+                Valuation, FA 2014 test, LLP profit share, take-home, PII estimator, SRA reserve.
+              </p>
+            </Link>
+            <Link href="/solicitor-guides" className="group block rounded-2xl border border-white/15 bg-white/5 p-6 transition-all hover:border-white hover:bg-white/10">
+              <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/80 mb-2">6 pillar guides</p>
+              <h3 className="font-serif text-base font-semibold text-white">Pillar guides</h3>
+              <p className="mt-2 text-xs leading-relaxed text-white/75">
+                SRA Accounts Rules, partnership vs LLP, post-merger, PII, COFA, fee-share vs equity.
+              </p>
+            </Link>
+            <Link href="/uk-solicitor-tax-rates" className="group block rounded-2xl border border-white/15 bg-white/5 p-6 transition-all hover:border-white hover:bg-white/10">
+              <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/80 mb-2">Reference · 2025/26</p>
+              <h3 className="font-serif text-base font-semibold text-white">UK solicitor tax rates</h3>
+              <p className="mt-2 text-xs leading-relaxed text-white/75">
+                Income tax, NI, CT, BADR, dividend, CGT, plus legal-sector specifics.
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className={sectionY} style={{ background: "var(--surface-elevated)" }}>
         <div className={siteContainerLg}>
           <div className="mx-auto max-w-3xl">
