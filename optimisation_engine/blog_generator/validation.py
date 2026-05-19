@@ -84,6 +84,27 @@ def validate_post(fields: dict, *, site_config: dict) -> list[str]:
         if bad:
             issues.append(f"Orphan citation indices in body: {sorted(set(bad))[:5]} (max valid {n_sources})")
 
+    # ---- Citation DENSITY (when bundle is rich) ------------------------
+    # If the research bundle had a canonical source AND >= 5 claims AND >= 5
+    # sources, the body must have at least one [n] citation per 500 words.
+    # This catches the "DeepSeek ignored a rich bundle entirely" failure mode.
+    research_summary = fields.get("_research_summary") or {}
+    if (
+        research_summary.get("canonical_present")
+        and research_summary.get("n_claims", 0) >= 5
+        and research_summary.get("n_sources", 0) >= 5
+    ):
+        n_cites = len(re.findall(r'<sup><a href="#ref-\d+"', content))
+        word_count = len(content.split())
+        if word_count >= 500:
+            min_required = max(1, word_count // 500)
+            if n_cites < min_required:
+                issues.append(
+                    f"Citation density too low: {n_cites} cites in {word_count} words "
+                    f"(need >= {min_required}). Bundle has {research_summary.get('n_sources')} sources "
+                    f"with canonical present, so citations are required."
+                )
+
     # ---- Site-specific anchor-term requirement (Dentists / Solicitors) ---
     anchor_terms = site_config.get("anchor_terms")
     anchor_rules = site_config.get("anchor_rules")

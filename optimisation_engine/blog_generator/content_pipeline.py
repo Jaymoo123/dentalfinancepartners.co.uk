@@ -141,6 +141,13 @@ def generate_content(
     # Re-set content with updated body (post-processing may have changed it)
     fields["content"] = body_html
     fields["_n_sources_in_block"] = len(cited_sources)
+    # Surface bundle stats to the validator so it can enforce citation density
+    fields["_research_summary"] = {
+        "n_sources": len(research_bundle["sources"]) if research_bundle else 0,
+        "n_claims": len(research_bundle["claims"]) if research_bundle else 0,
+        "canonical_present": research_bundle["canonical_present"] if research_bundle else False,
+        "thin_bundle": research_bundle.get("thin_bundle", False) if research_bundle else True,
+    }
 
     # 8. Validation
     issues = validate_post(fields, site_config=site_config)
@@ -286,6 +293,22 @@ def _build_user_prompt(
         pillar_hint = "\nTHIS IS A PILLAR POST. Target 3,500-5,000 words, 8-12 H2 sections.\n"
 
     n_sources = len((research_bundle or {}).get("sources") or [])
+
+    # Banned-phrase block: pass the per-site banned list straight to the model
+    # so it doesn't emit words it doesn't know are forbidden (e.g. "leverage"
+    # on Property).
+    banned = site_config.get("banned_phrases") or []
+    # Filter out em/en-dash markers from the human-readable list (they're
+    # noise here; the system prompt already forbids them as punctuation)
+    banned_human = [p for p in banned if p not in {"—", "–"}]
+    banned_block = ""
+    if banned_human:
+        banned_block = (
+            "\n\nBANNED PHRASES — DO NOT USE these anywhere in body, FAQs, or meta:\n  "
+            + "\n  ".join(f"- {p!r}" for p in banned_human)
+            + "\n  Includes inside H2/H3 headings. Pick a different word."
+        )
+
     return f"""Generate a comprehensive UK accounting blog post for {site_config["display_name"]}.
 
 PRIMARY TOPIC: {topic.primary_keyword}
@@ -296,7 +319,7 @@ SECONDARY KEYWORDS: {secondary}
 {cat_block}
 
 {links_block}
-{research_block}
+{research_block}{banned_block}
 
 HARD RULES — read carefully (your output is rejected if any are broken):
 

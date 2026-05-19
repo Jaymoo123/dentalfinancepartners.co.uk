@@ -83,13 +83,19 @@ def generate_blog_for(
     for issue in result.issues:
         print(f"    - {issue}")
 
-    if result.issues and not result.fields.get("slug"):
+    # If there are ANY validator issues, refuse to ship. The issues list is
+    # what the LLM did wrong (banned words, low citation density, orphan markers,
+    # truncated FAQs, etc.). Shipping with known issues is bad practice — better
+    # to surface them and let the operator retry. Use --force to override.
+    if result.issues:
         return {
             "status": "blocked",
             "site": site_key,
             "topic": topic.primary_keyword,
             "issues": result.issues,
-            "fields_seen": list(result.fields.keys()),
+            "llm_cost_usd": result.llm_cost_usd,
+            "research_cost_usd": result.research_cost_usd,
+            "slug_proposed": result.fields.get("slug"),
         }
 
     out_path = write_blog(
