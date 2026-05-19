@@ -5,7 +5,7 @@ canonical: https://www.dentalfinancepartners.co.uk/blog/buying-a-practice/dental
 date: '2026-05-19'
 author: Dental Finance Partners Editorial Team
 category: Buying a Practice
-metaTitle: 'Dental Practice Due Diligence: Buyer''s Checklist | Dental'
+metaTitle: 'Dental Practice Due Diligence: Buyer''s Checklist'
 metaDescription: A practical financial due diligence checklist for UK dentists buying a practice. Covers goodwill, NHS contracts, TUPE, VAT, capital allowances, and more.
 altText: Dental practice buyer reviewing financial documents and a practice valuation report at a desk in a UK dental surgery.
 image: https://images.pexels.com/photos/8293735/pexels-photo-8293735.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
@@ -18,7 +18,7 @@ faqs:
 - question: What is the most common mistake buyers make during due diligence?
   answer: The most common mistake is relying on the seller's stated EBITDA without normalising it. Sellers often add back personal expenses, non-recurring costs, and below-market salaries for themselves or family members. This inflates the apparent profitability. A buyer who does not adjust for these items may overpay for goodwill and struggle to service debt after purchase. Always ask your accountant to produce a normalised profit calculation that reflects the true sustainable earnings under your ownership.
 - question: Do I need a separate solicitor for the practice purchase?
-  answer: Yes. You need a
+  answer: Yes. You need a solicitor with experience of dental practice transactions, ideally one who has handled NHS contract transfers and TUPE before. Commercial property conveyancing is different from buying a house, and the regulatory layer (NHS England, CQC, GDC) adds complexity that a generalist solicitor may miss. Your solicitor should coordinate with your accountant on the financial structure of the deal, including any earn-out arrangements, restrictive covenants, and warranty negotiations.
 dateModified: '2026-05-19'
 sourcesVerifiedAt: '2026-05-19'
 sourceDomains:

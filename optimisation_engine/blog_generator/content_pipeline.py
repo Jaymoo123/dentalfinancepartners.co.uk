@@ -285,6 +285,7 @@ def _build_user_prompt(
     if topic.content_tier == "pillar" and site_config.get("pillar_system_prompt"):
         pillar_hint = "\nTHIS IS A PILLAR POST. Target 3,500-5,000 words, 8-12 H2 sections.\n"
 
+    n_sources = len((research_bundle or {}).get("sources") or [])
     return f"""Generate a comprehensive UK accounting blog post for {site_config["display_name"]}.
 
 PRIMARY TOPIC: {topic.primary_keyword}
@@ -296,7 +297,41 @@ SECONDARY KEYWORDS: {secondary}
 
 {links_block}
 {research_block}
-Generate the content following the EXACT ==field== format specified in your
+
+HARD RULES — read carefully (your output is rejected if any are broken):
+
+  FAQ CITATIONS:
+    - FAQ answers (==FAA1== through ==FAA4==) MUST NOT contain [n] citation
+      markers. FAQs are standalone — they appear in YAML frontmatter, not in
+      the article body, so there is no footnote anchor for them to point to.
+    - If you cite a claim in an FAQ answer, paraphrase the source inline
+      instead. Example: "according to gov.uk guidance" rather than "[3]".
+
+  FAQ STRUCTURE:
+    - Each FAQ answer: 60-100 words. Keep them tight so the response doesn't
+      truncate before all 4 FAQs are emitted.
+    - Do NOT include an FAQ section inside ==content==. FAQs go in ==FAQ1==
+      through ==FAA4== only. The site renders them separately.
+
+  META TITLE LENGTH:
+    - metaTitle MUST be 35-55 characters. Do NOT append the site brand name
+      (e.g. "| {site_config["display_name"]}") — the renderer appends the
+      brand automatically. Brand suffixes inside the LLM output get
+      truncated mid-word.
+
+  INTERNAL LINKS:
+    - Include at least 3 internal links in ==content==, drawn from the
+      "Available internal links" list above. Use <a href="/...">anchor text</a>.
+    - Pick links that genuinely match the surrounding paragraph. Do not
+      stuff a link in just to hit the count.
+
+  CITATION MARKER BOUNDS:
+    - Valid markers in ==content== are [1] through [{n_sources}] only{' (no markers — research bundle is empty)' if n_sources == 0 else ''}.
+    - NEVER write [{n_sources + 1}] or any higher index. If a claim cannot be
+      attributed to one of the {n_sources} sources above, REMOVE the claim
+      rather than invent a citation marker.
+
+Output the content following the EXACT ==field== format specified in your
 system prompt. Every field marker must appear. Do not add any prose outside
 the markers.
 """
@@ -362,11 +397,27 @@ def _apply_post_processing(
         if key in fields and isinstance(fields[key], str):
             fields[key] = strip_em_dashes(fields[key])
 
-    # FAQ answers are common em-dash zones
+    # FAQ answers: em-dash strip + orphan citation marker strip. The body's
+    # citation pipeline runs on `content` only — FAQs are separate fields, so
+    # leaked `[5]`/`[6]` markers from the LLM survive into the YAML frontmatter
+    # unless we strip them here.
+    n_bundle = len(research_bundle["sources"]) if research_bundle and research_bundle.get("sources") and not research_bundle.get("thin_bundle") else 0
+    faq_cite_rx = re.compile(r"\[(\d+)\]")
+    def _strip_faq_cites(text: str) -> str:
+        def _sub(m: re.Match) -> str:
+            idx = int(m.group(1))
+            # Always strip from FAQs — we don't render footnote links in FAQ YAML
+            return ""
+        out = faq_cite_rx.sub(_sub, text)
+        out = re.sub(r" {2,}", " ", out)
+        out = re.sub(r" +([.,;:])", r"\1", out)
+        return out
+
     for i in range(1, 9):
         for k in (f"faq{i}", f"faa{i}"):
             if k in fields and isinstance(fields[k], str):
                 fields[k] = strip_em_dashes(fields[k])
+                fields[k] = _strip_faq_cites(fields[k])
 
     # Hard meta caps with dangle-word cleanup
     if fields.get("meta_title"):

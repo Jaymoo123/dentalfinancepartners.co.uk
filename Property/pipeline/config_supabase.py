@@ -123,7 +123,7 @@ UK TAX CONTEXT (CRITICAL — use correct figures):
 - Corporation tax: 19% small profits (up to £250k), 25% main rate (above £250k)
 - SDLT surcharge on additional properties: 5% (increased from 3% in October 2024)
 - Section 24: full restriction in place — mortgage interest relief capped at basic rate (20% tax credit)
-- MTD for Income Tax: mandatory from 6 April 2026 for landlords with gross property income over £10,000
+- MTD for Income Tax: mandatory from 6 April 2026 for landlords with gross property income over £50,000. The threshold drops to £30,000 from April 2027 and £20,000 from April 2028. (The earlier £10,000 figure was a scrapped policy — do NOT cite £10,000.)
 - Furnished Holiday Lettings regime: abolished from April 2025
 - Renters' Rights Act: Section 21 no-fault evictions abolished from May 2026
 - Use UK terminology: buy-to-let (BTL), landlord, property portfolio, SPV, HMRC

@@ -14,13 +14,13 @@ summary: A practical guide for UK landlords on budgeting for void periods and re
 schema: ''
 faqs:
 - question: What is a void period in rental property?
-  answer: A void period is the gap between one tenant moving out and another moving in [5]. During this time, the landlord is responsible for bills previously paid by the tenant, such as council tax and utility bills [5]. Void periods can happen due to delays in finding a new tenant, renovation work, legal delays following an eviction, or time required to resolve disputes or damages [6].
+  answer: A void period is the gap between one tenant moving out and another moving in. During this time, the landlord is responsible for bills previously paid by the tenant, such as council tax and utility bills. Void periods can happen due to delays in finding a new tenant, renovation work, legal delays following an eviction, or time required to resolve disputes or damages.
 - question: How much should I budget for void periods?
-  answer: A good rule of thumb is to set aside one to three months' worth of property expenses per property for a void fund [6]. Factor in realistic vacancy rates for your area, usually between 5-10% annually [4]. If you manage multiple properties, consider budgeting for voids across your entire portfolio rather than individually to absorb shortfalls from one property with income from others [6].
+  answer: A good rule of thumb is to set aside one to three months' worth of property expenses per property for a void fund. Factor in realistic vacancy rates for your area, usually between 5-10% annually. If you manage multiple properties, consider budgeting for voids across your entire portfolio rather than individually to absorb shortfalls from one property with income from others.
 - question: Are void period costs tax-deductible?
   answer: Yes, void period costs such as council tax, utilities, and insurance are generally tax-deductible as property expenses, provided they relate to the rental business. However, mortgage interest is not deductible as an expense under Section 24; instead, you receive a 20% tax credit. For a full list of allowable deductions, see our guide on landlord tax deductions.
 - question: How do I create a cash flow forecast for my rental property?
-  answer: To create a cash flow forecast, list all income sources (rent, service charges) and all expenses (mortgage, insurance, management fees, repairs, void costs, compliance costs). Include a contingency line of 5-10% of total expenses. Project monthly cash flow for at least 12 to 36 months ahead [4]. Many property management software platforms generate cash flow reports automatically based on your actual transactions [4].
+  answer: To create a cash flow forecast, list all income sources (rent, service charges) and all expenses (mortgage, insurance, management fees, repairs, void costs, compliance costs). Include a contingency line of 5-10% of total expenses. Project monthly cash flow for at least 12 to 36 months ahead. Many property management software platforms generate cash flow reports automatically based on your actual transactions.
 dateModified: '2026-05-19'
 sourcesVerifiedAt: '2026-05-19'
 sourceDomains:

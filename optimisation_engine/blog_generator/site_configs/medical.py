@@ -67,7 +67,7 @@ SITE_CONFIG: dict = {
 
     "llm_provider": "deepseek",
     "llm_model": "deepseek-chat",
-    "max_tokens": 4096,
+    "max_tokens": 6500,
     "temperature": 0.3,
     "verify_with_haiku": True,
 
