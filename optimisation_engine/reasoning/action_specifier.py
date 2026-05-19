@@ -137,12 +137,43 @@ def _related_pages_for_site(site_key: str, *, limit: int = 30) -> list[dict]:
     return out
 
 
+def _recent_shipped_changes(site_key: str, target_url: str | None, days: int = 14) -> list[dict]:
+    """Return optimisation_changes shipped within `days` for this target URL."""
+    if not target_url:
+        return []
+    import httpx
+    from datetime import datetime, timedelta, timezone
+
+    from optimisation_engine.config import SUPABASE_KEY, SUPABASE_URL
+    since = (datetime.now(timezone.utc) - timedelta(days=days)).isoformat()
+    r = httpx.get(
+        f"{SUPABASE_URL}/rest/v1/optimisation_changes",
+        headers={"apikey": SUPABASE_KEY, "Authorization": f"Bearer {SUPABASE_KEY}"},
+        params={
+            "select": "id,change_type,shipped_at,confidence,outcome_verdict",
+            "site_key": f"eq.{site_key}",
+            "target_url": f"eq.{target_url}",
+            "shipped_at": f"gte.{since}",
+            "rolled_back": "eq.false",
+            "order": "shipped_at.desc",
+            "limit": "10",
+        },
+        timeout=10.0,
+    )
+    if r.status_code >= 300:
+        return []
+    return r.json()
+
+
 def specify_action(opportunity: dict) -> ReasoningResult:
     """Decide what to do for a single opportunity.
 
     opportunity should have these keys (matches optimisation_opportunities row):
       site_key, opportunity_type, target_url, primary_query, target_query_cluster,
       recommended_action (from detector), rationale, supporting_data
+
+    Recency gate: if the target_url had a same-or-related change shipped in the
+    last 14 days, returns action_kind='skip' WITHOUT calling DeepSeek.
     """
     site_key = opportunity["site_key"]
     site = get_site(site_key)
@@ -150,6 +181,32 @@ def specify_action(opportunity: dict) -> ReasoningResult:
     primary_q = opportunity.get("primary_query") or ""
     cluster = opportunity.get("target_query_cluster") or [primary_q]
     sd = opportunity.get("supporting_data") or {}
+
+    # ---- Recency gate (Tier A fix 2026-05-19) -------------------------------
+    # Don't re-specify actions for pages we just shipped changes to. The
+    # measurement window needs to land before we propose stacking work.
+    recent = _recent_shipped_changes(site_key, target_url, days=14)
+    if recent:
+        latest = recent[0]
+        return ReasoningResult(
+            output={
+                "action_kind": "skip",
+                "rationale": (
+                    f"Page already had a {latest['change_type']} shipped "
+                    f"{latest['shipped_at'][:10]} (within 14d gate). "
+                    f"Wait for measurement window before stacking changes."
+                ),
+                "patch": {"skip": {"reason": "recently_shipped", "latest_change_id": latest["id"], "latest_shipped_at": latest["shipped_at"], "change_count_last_14d": len(recent)}},
+                "backlinking": [],
+                "estimated_word_count": 0,
+                "confidence": 100,
+            },
+            confidence=100,
+            cost_usd=0.0,
+            auto_applicable=True,
+            raw_response="(skipped — recently shipped, local short-circuit)",
+            notes=["recency_gate_triggered"],
+        )
 
     # Load the page if there is one
     page = _read_page(site_key, target_url, opportunity.get("target_slug"))

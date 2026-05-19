@@ -58,6 +58,34 @@ def _significant_tokens(query: str) -> set[str]:
     return {t for t in re.findall(r"[a-z0-9]+", query.lower()) if t and t not in stop and len(t) >= 3}
 
 
+def _tokens_overlap_stemmed(anchor_tokens: set[str], cluster_tokens: set[str]) -> bool:
+    """Cluster overlap that tolerates simple stemming (incorporat-ing / -ion / -ed).
+
+    A match counts if any anchor token shares a 5+ character prefix with any
+    cluster token. This catches:
+      'incorporating' vs 'incorporation' (both start with 'incorporat')
+      'rental' vs 'rentals' (both start with 'rental')
+      'cgt' vs 'cgt' (exact)
+    """
+    if anchor_tokens & cluster_tokens:
+        return True
+    for at in anchor_tokens:
+        if len(at) < 5:
+            continue
+        for ct in cluster_tokens:
+            if len(ct) < 5:
+                continue
+            shared_prefix_len = 0
+            for a, b in zip(at, ct):
+                if a == b:
+                    shared_prefix_len += 1
+                else:
+                    break
+            if shared_prefix_len >= 5:
+                return True
+    return False
+
+
 def _read_sibling_summary(site_key: str, slug: str) -> dict | None:
     """Read sibling's frontmatter + body excerpt."""
     site = get_site(site_key)
@@ -126,6 +154,31 @@ def _candidate_siblings(site_key: str, target_slug: str, *, limit: int = 8) -> l
     return [p for _, p in scored[:limit]]
 
 
+def _dedupe_anchors_in_place(output: dict) -> int:
+    """Drop duplicate anchors. Keep the FIRST positive suggestion with each anchor;
+    set should_link=False on the rest with a deduplication reason.
+
+    Returns the number of demoted suggestions.
+    """
+    seen: set[str] = set()
+    demoted = 0
+    for s in (output.get("suggestions") or []):
+        if not s.get("should_link"):
+            continue
+        anchor = (s.get("anchor_text") or "").strip().lower()
+        if not anchor:
+            continue
+        if anchor in seen:
+            s["should_link"] = False
+            s["reason"] = f"deduplicated: anchor '{s.get('anchor_text')}' already used for another sibling on this target"
+            s["anchor_text"] = None
+            s["insertion_hint"] = None
+            demoted += 1
+        else:
+            seen.add(anchor)
+    return demoted
+
+
 def suggest_links_for_target(
     *,
     site_key: str,
@@ -134,7 +187,11 @@ def suggest_links_for_target(
     primary_query: str,
     target_query_cluster: list[str] | None = None,
 ) -> ReasoningResult:
-    """Run the suggester for ONE target page across its candidate siblings."""
+    """Run the suggester for ONE target page across its candidate siblings.
+
+    Post-processes the LLM output to enforce anchor diversity deterministically:
+    duplicate anchors are demoted to should_link=False with a dedup reason.
+    """
     candidates = _candidate_siblings(site_key, target_slug, limit=8)
     if not candidates:
         # Return a synthetic empty result without spending DeepSeek tokens
@@ -187,9 +244,10 @@ If forcing the link would require rewording the sibling's content, DO NOT sugges
             "input": (
                 "TARGET: slug='annual-investment-allowance-agency-equipment-2025-26' "
                 "primary_query='annual investment allowance'.\n"
-                "SIBLING 1: slug='capital-allowances-office-fit-out-agency' body mentions "
-                "claiming relief on equipment but never uses 'annual investment allowance'.\n"
-                "SIBLING 2: slug='ir35-contractor-tax' has no mention of allowances at all."
+                "SIBLING 1: slug='capital-allowances-office-fit-out-agency' mentions equipment relief.\n"
+                "SIBLING 2: slug='ir35-contractor-tax' has no mention of allowances at all.\n"
+                "SIBLING 3: slug='dubai-relocation-agency-tax' mentions UK assets when relocating.\n"
+                "SIBLING 4: slug='r-and-d-agency-claim' references equipment + 100% relief."
             ),
             "output": {
                 "suggestions": [
@@ -197,23 +255,37 @@ If forcing the link would require rewording the sibling's content, DO NOT sugges
                         "from_slug": "capital-allowances-office-fit-out-agency",
                         "should_link": True,
                         "anchor_text": "annual investment allowance",
-                        "insertion_hint": "Where the page discusses 'claiming relief on equipment' — replace the inline noun with a link.",
-                        "reason": "Direct topical overlap; existing prose already discusses equipment relief.",
+                        "insertion_hint": "Where the page discusses 'claiming relief on equipment' — replace 'equipment relief' with a link using the exact phrase.",
+                        "reason": "Direct topical overlap; sibling discusses equipment relief.",
                     },
                     {
                         "from_slug": "ir35-contractor-tax",
                         "should_link": False,
                         "anchor_text": None,
                         "insertion_hint": None,
-                        "reason": "IR35 page has no natural insertion point; forcing a link would be off-topic.",
-                    }
+                        "reason": "IR35 page has no natural insertion point.",
+                    },
+                    {
+                        "from_slug": "dubai-relocation-agency-tax",
+                        "should_link": True,
+                        "anchor_text": "AIA on agency equipment",
+                        "insertion_hint": "Section discussing UK assets retained pre-relocation — link from 'capital allowances on equipment'.",
+                        "reason": "Founders relocating need to know AIA timing before exit; varied anchor for diversity.",
+                    },
+                    {
+                        "from_slug": "r-and-d-agency-claim",
+                        "should_link": True,
+                        "anchor_text": "100% AIA equipment relief",
+                        "insertion_hint": "Where the page distinguishes R&D from standard relief — different anchor flavour.",
+                        "reason": "R&D vs AIA distinction is a natural place to link out for the standard alternative.",
+                    },
                 ],
-                "confidence": 90
-            }
+                "confidence": 90,
+            },
         }
     ]
 
-    return run_reasoning(
+    result = run_reasoning(
         endpoint_name="internal_link_suggester",
         role=(
             "an SEO internal-linking specialist. Given a target page and a set of "
@@ -249,6 +321,7 @@ If forcing the link would require rewording the sibling's content, DO NOT sugges
             "use em-dashes or en-dashes anywhere",
             "suggest more than ONE link per sibling",
             "suggest a link when the existing prose does not contain the topic — do not propose rewording",
+            "use the SAME anchor_text for multiple should_link=true suggestions — vary the anchor wording across siblings (Google flags identical-anchor internal-linking patterns as manipulative)",
         ],
         examples=examples,
         validators=[
@@ -282,21 +355,35 @@ If forcing the link would require rewording the sibling's content, DO NOT sugges
                 else (False, "anchor_text is missing or generic for a should_link=true suggestion")
             ),
             # Anchor text must contain at least one significant token from the cluster
+            # (with simple stemming: 5-char shared prefix counts)
             lambda o: (
                 (True, None)
                 if all(
                     (not s.get("should_link"))
                     or (
                         s.get("anchor_text")
-                        and len(
-                            _significant_tokens(s["anchor_text"])
-                            & set().union(*(_significant_tokens(q) for q in cluster))
+                        and _tokens_overlap_stemmed(
+                            _significant_tokens(s["anchor_text"]),
+                            set().union(*(_significant_tokens(q) for q in cluster)),
                         )
-                        >= 1
                     )
                     for s in (o.get("suggestions") or [])
                 )
-                else (False, "anchor_text does not contain any significant cluster token")
+                else (False, "anchor_text does not contain any significant cluster token (with stemming)")
+            ),
+            # Anchor diversity: no two positive suggestions may share the same anchor text
+            lambda o: (
+                (True, None)
+                if (
+                    lambda anchors: len(anchors) == len(set(a.strip().lower() for a in anchors))
+                )(
+                    [
+                        s.get("anchor_text", "")
+                        for s in (o.get("suggestions") or [])
+                        if s.get("should_link") and s.get("anchor_text")
+                    ]
+                )
+                else (False, "duplicate anchor_text across positive suggestions — Google flags identical-anchor patterns")
             ),
         ],
         user_input=user_input,
@@ -305,6 +392,14 @@ If forcing the link would require rewording the sibling's content, DO NOT sugges
         max_tokens=2500,
         temperature=0.2,
     )
+
+    # Post-process: deterministic anchor deduplication
+    if isinstance(result.output, dict):
+        demoted = _dedupe_anchors_in_place(result.output)
+        if demoted:
+            result.notes.append(f"deduplicated {demoted} duplicate anchor(s) post-LLM")
+
+    return result
 
 
 def main() -> None:
