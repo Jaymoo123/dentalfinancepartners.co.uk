@@ -1,30 +1,36 @@
 ---
-title: "What Is the 60 Day CGT Reporting Rule for Property Sales?"
-slug: "60-day-cgt-reporting-property-sales-rule"
-canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/60-day-cgt-reporting-property-sales-rule"
-date: "2026-04-10"
-author: "Property Tax Partners Editorial Team"
-category: "Capital Gains Tax"
-metaTitle: "60-Day CGT Reporting: Exemptions & Filing Steps 2026"
-metaDescription: "Learn which property sales need 60-day CGT reporting to HMRC in 2026. Includes key exemptions like full PPR and gains under £3,000. Start filing."
-metaTitle_prev: "60-Day CGT Reporting Rule: How to Report Property Sales"
-metaDescription_prev: "You must report UK property sales to HMRC within 60 days — even if no tax is due. Step-by-step filing guide, penalties for late reporting, and exemptions."
-altText: "UK property sale documents and calendar showing 60-day CGT reporting deadline to HMRC"
-image: ""
-h1: "What Is the 60 Day CGT Reporting Property Sales Rule?"
-summary: "The 60-day CGT reporting rule requires UK residents and non-residents to report property sales to HMRC within 60 days of completion. This applies to most residential property disposals, even if no tax is due."
-schema: ""
+title: What Is the 60 Day CGT Reporting Rule for Property Sales?
+slug: 60-day-cgt-reporting-property-sales-rule
+canonical: https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/60-day-cgt-reporting-property-sales-rule
+date: '2026-04-10'
+author: Property Tax Partners Editorial Team
+category: Capital Gains Tax
+metaTitle: 'HMRC CGT Reporting Requirements 2026: 60-Day Rule'
+metaDescription: Understand HMRC CGT reporting requirements for UK property sales in 2026. Learn the 60-day rule, exemptions, penalties, and how to file. Start now.
+metaTitle_prev: '60-Day CGT Reporting: Exemptions & Filing Steps 2026'
+metaDescription_prev: Learn which property sales need 60-day CGT reporting to HMRC in 2026. Includes key exemptions like full PPR and gains under £3,000. Start filing.
+altText: UK property sale documents and calendar showing 60-day CGT reporting deadline to HMRC
+image: ''
+h1: What Is the 60 Day CGT Reporting Property Sales Rule?
+summary: The 60-day CGT reporting rule requires UK residents and non-residents to report property sales to HMRC within 60 days of completion. This applies to most residential property disposals, even if no tax is due.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Property Tax Partners Ltd","url":"https://www.propertytaxpartners.co.uk","areaServed":"United Kingdom","knowsAbout":["UK landlord taxation","Section 24 mortgage interest","Capital gains tax on property","Portfolio incorporation","Making Tax Digital for property","Furnished holiday lets","Buy-to-let limited companies","Non-resident landlord scheme"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"Property Tax Partners Editorial Team","jobTitle":"Specialist property accountant","knowsAbout":["Section 24 calculations","60-day CGT reporting","Property portfolio incorporation","BTL mortgage interest relief","FHL tax rules","SDLT additional property surcharge"],"worksFor":{"@type":"Organization","name":"Property Tax Partners Ltd","url":"https://www.propertytaxpartners.co.uk"}},{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), Property Tax Specialist","knowsAbout":["UK property taxation","CGT","SDLT","Section 24"]},{"@type":"Article","headline":"What Is the 60 Day CGT Reporting Rule for Property Sales?","description":"Understand HMRC CGT reporting requirements for UK property sales in 2026. Learn the 60-day rule, exemptions, penalties, and how to file. Start now.","url":"https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/60-day-cgt-reporting-property-sales-rule","datePublished":"2026-04-10","dateModified":"2026-05-19","author":{"@type":"Person","name":"Property Tax Partners Editorial Team","jobTitle":"Specialist property accountant","knowsAbout":["Section 24 calculations","60-day CGT reporting","Property portfolio incorporation","BTL mortgage interest relief","FHL tax rules","SDLT additional property surcharge"],"worksFor":{"@type":"Organization","name":"Property Tax Partners Ltd","url":"https://www.propertytaxpartners.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW
+  Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), Property Tax Specialist","knowsAbout":["UK property taxation","CGT","SDLT","Section 24"]},"publisher":{"@type":"AccountingService","name":"Property Tax Partners Ltd","url":"https://www.propertytaxpartners.co.uk","areaServed":"United Kingdom","knowsAbout":["UK landlord taxation","Section 24 mortgage interest","Capital gains tax on property","Portfolio incorporation","Making Tax Digital for property","Furnished holiday lets","Buy-to-let limited companies","Non-resident landlord scheme"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/60-day-cgt-reporting-property-sales-rule"},"inLanguage":"en-GB"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.propertytaxpartners.co.uk"},{"@type":"ListItem","position":2,"name":"Capital Gains Tax","item":"https://www.propertytaxpartners.co.uk/blog/capital-gains-tax"},{"@type":"ListItem","position":3,"name":"What Is the 60 Day CGT Reporting Rule for Property Sales?","item":"https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/60-day-cgt-reporting-property-sales-rule"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need to report a property sale within 60 days if I make a loss?","acceptedAnswer":{"@type":"Answer","text":"Yes, you must still report most UK residential property disposals within 60 days even if you make a capital loss. The reporting requirement is separate from whether you owe tax. However, you won''t need to make a payment if no CGT is due."}},{"@type":"Question","name":"What happens if I miss the 60-day CGT reporting deadline?","acceptedAnswer":{"@type":"Answer","text":"You''ll face automatic penalties starting with £100, increasing to £300 after 3 months, another £300 after
+  6 months, and 5% of tax owed (minimum £300) after 12 months. Interest also accrues daily on any unpaid tax from the day after the deadline."}},{"@type":"Question","name":"Can I claim expenses and reliefs when reporting within 60 days?","acceptedAnswer":{"@type":"Answer","text":"Yes, you can claim all allowable expenses (legal fees, estate agent costs, improvement expenditure) and reliefs like Private Residence Relief when calculating your gain for the 60-day report. Include full documentation to support your claims."}},{"@type":"Question","name":"Does selling my main home require 60-day CGT reporting?","acceptedAnswer":{"@type":"Answer","text":"No, if your property sale qualifies for full Private Residence Relief (your main home with no business use or letting), you don''t need to report within 60 days. However, if you''ve let out part of your main home or used it for business, you typically must report."}}]}]}'
 faqs:
-  - question: "Do I need to report a property sale within 60 days if I make a loss?"
-    answer: "Yes, you must still report most UK residential property disposals within 60 days even if you make a capital loss. The reporting requirement is separate from whether you owe tax. However, you won't need to make a payment if no CGT is due."
-  - question: "What happens if I miss the 60-day CGT reporting deadline?"
-    answer: "You'll face automatic penalties starting with £100, increasing to £300 after 3 months, another £300 after 6 months, and 5% of tax owed (minimum £300) after 12 months. Interest also accrues daily on any unpaid tax from the day after the deadline."
-  - question: "Can I claim expenses and reliefs when reporting within 60 days?"
-    answer: "Yes, you can claim all allowable expenses (legal fees, estate agent costs, improvement expenditure) and reliefs like Private Residence Relief when calculating your gain for the 60-day report. Include full documentation to support your claims."
-  - question: "Does selling my main home require 60-day CGT reporting?"
-    answer: "No, if your property sale qualifies for full Private Residence Relief (your main home with no business use or letting), you don't need to report within 60 days. However, if you've let out part of your main home or used it for business, you typically must report."
+- question: Do I need to report a property sale within 60 days if I make a loss?
+  answer: Yes, you must still report most UK residential property disposals within 60 days even if you make a capital loss. The reporting requirement is separate from whether you owe tax. However, you won't need to make a payment if no CGT is due.
+- question: What happens if I miss the 60-day CGT reporting deadline?
+  answer: You'll face automatic penalties starting with £100, increasing to £300 after 3 months, another £300 after 6 months, and 5% of tax owed (minimum £300) after 12 months. Interest also accrues daily on any unpaid tax from the day after the deadline.
+- question: Can I claim expenses and reliefs when reporting within 60 days?
+  answer: Yes, you can claim all allowable expenses (legal fees, estate agent costs, improvement expenditure) and reliefs like Private Residence Relief when calculating your gain for the 60-day report. Include full documentation to support your claims.
+- question: Does selling my main home require 60-day CGT reporting?
+  answer: No, if your property sale qualifies for full Private Residence Relief (your main home with no business use or letting), you don't need to report within 60 days. However, if you've let out part of your main home or used it for business, you typically must report.
+dateModified: '2026-05-19'
+reviewedBy: ICAEW Qualified Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW), Property Tax Specialist
+reviewedAt: '2026-05-19'
+editorialNote: metaTitle and metaDescription rewritten via optimisation engine after GSC CTR analysis.
 ---
-
 <p>The <strong>60 day CGT reporting property</strong> rule requires UK property sellers to notify HMRC of most residential property disposals within 60 days of completion. This applies whether you owe capital gains tax or not, and failure to comply can result in significant penalties.</p>
 <p>Introduced in April 2020 for non-residents and extended to UK residents in October 2021, this rule has caught many landlords off-guard. Unlike the traditional self-assessment deadline, you cannot wait until January following the tax year to report your property sale.</p>
 
