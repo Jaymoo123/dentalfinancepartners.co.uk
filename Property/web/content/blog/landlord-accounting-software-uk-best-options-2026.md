@@ -31,7 +31,7 @@ reviewerCredentials: Chartered Accountant (ACA, ICAEW), Property Tax Specialist
 reviewedAt: '2026-05-19'
 editorialNote: metaTitle and metaDescription rewritten via optimisation engine after GSC CTR analysis.
 ---
-<p>With <strong>Making Tax Digital for Income Tax Property</strong> starting 6 <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">April 2026</a>, every UK landlord with property income above £10,000 must use <a href="/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026">MTD</a>-compatible software. Choosing the best <strong>landlord accounting software UK</strong> now will save you significant time and compliance headaches later.</p>
+<p>With <strong>Making Tax Digital for Income Tax Property</strong> starting 6 <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">April 2026</a>, every UK landlord with property income above £10,000 must use <a href="/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026">MTD</a>-compatible software. Choosing the best <strong>landlord accounting software UK</strong> now will save you significant time and compliance headaches later. For the best landlord accounting software UK, look for MTD compatibility and property-specific features.</p>
 <p>This isn't just about ticking the MTD box. Good property management accounts software streamlines your entire rental business — from tracking expenses to calculating tax liabilities under Section 24 rules.</p>
 
 <h2>Making Tax Digital (MTD) Requirements for Landlords</h2>
