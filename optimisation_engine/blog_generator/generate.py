@@ -71,7 +71,8 @@ def generate_blog_for(
                 "message": f"No unused topics in {config['topic_table']}",
             }
 
-    print(f"[{site_key}] Generating for topic: {topic.primary_keyword!r}")
+    print(f"[{site_key}] Generating for topic: {topic.topic_title!r}")
+    print(f"  primary_keyword (SEO target): {topic.primary_keyword!r}")
     if topic.publish_priority is not None:
         print(f"  priority={topic.publish_priority} difficulty={topic.keyword_difficulty} volume={topic.target_search_volume}")
 
@@ -91,7 +92,8 @@ def generate_blog_for(
         return {
             "status": "blocked",
             "site": site_key,
-            "topic": topic.primary_keyword,
+            "topic": topic.topic_title,
+            "primary_keyword": topic.primary_keyword,
             "issues": result.issues,
             "llm_cost_usd": result.llm_cost_usd,
             "research_cost_usd": result.research_cost_usd,
@@ -119,7 +121,8 @@ def generate_blog_for(
     return {
         "status": "ok",
         "site": site_key,
-        "topic": topic.primary_keyword,
+        "topic": topic.topic_title,
+        "primary_keyword": topic.primary_keyword,
         "slug": result.fields.get("slug"),
         "path": str(out_path.relative_to(ROOT)),
         "issues": result.issues,

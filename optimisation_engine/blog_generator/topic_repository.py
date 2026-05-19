@@ -32,6 +32,12 @@ from optimisation_engine.config import SUPABASE_URL, SUPABASE_KEY
 @dataclass
 class Topic:
     id: str
+    # The article title hint (e.g. "Hiring Associate Dentist Costs: Financial
+    # Planning Guide") - what the human topic-curator wrote.
+    topic_title: str
+    # The SEO-bearing search query (e.g. "hiring associate dentist costs") -
+    # the keyword we want to rank for. Often shorter / more searchable than the
+    # title. Falls back to topic_title if the row has no explicit primary_keyword.
     primary_keyword: str
     secondary_keywords: list[str]
     user_intent: str = "informational"
@@ -58,7 +64,12 @@ def _select_clause(site_config: dict) -> str:
 
 
 def _row_to_topic(row: dict, site_config: dict) -> Topic:
-    primary = row.get(site_config["topic_column"]) or row.get("primary_keyword") or ""
+    # topic_title is the article title hint (what the human curator wrote).
+    # primary_keyword is the SEO target query (what we want to rank for).
+    # They are stored in different columns; primary_keyword falls back to
+    # topic_title if the row doesn't carry an explicit one.
+    topic_title = row.get(site_config["topic_column"]) or row.get("primary_keyword") or ""
+    primary = row.get("primary_keyword") or topic_title
     if site_config["secondary_keywords_shape"] == "columns":
         secondary = [
             row.get(f"secondary_keyword_{i}")
@@ -76,6 +87,7 @@ def _row_to_topic(row: dict, site_config: dict) -> Topic:
                 secondary = []
     return Topic(
         id=str(row["id"]),
+        topic_title=topic_title,
         primary_keyword=primary,
         secondary_keywords=[k for k in secondary if k],
         user_intent=row.get("user_intent") or "informational",

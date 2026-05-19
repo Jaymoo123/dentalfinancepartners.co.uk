@@ -90,8 +90,10 @@ def generate_content(
     # 1. Research
     research_bundle, research_cost = _synthesize_research(site_config, topic)
 
-    # 2. Audience link
-    audience_link = _pick_audience_link(site_config, topic.primary_keyword)
+    # 2. Audience link — match against the longer topic_title for better
+    # keyword coverage (e.g. "Hiring Associate Dentist Costs..." catches
+    # 'associate' which the bare primary_keyword might not)
+    audience_link = _pick_audience_link(site_config, topic.topic_title)
 
     # 3. User prompt + LLM call
     user_prompt = _build_user_prompt(
@@ -311,10 +313,11 @@ def _build_user_prompt(
 
     return f"""Generate a comprehensive UK accounting blog post for {site_config["display_name"]}.
 
-PRIMARY TOPIC: {topic.primary_keyword}
+ARTICLE TOPIC (use as the editorial hook for the H1/title): {topic.topic_title}
+PRIMARY SEO KEYWORD (must appear in metaTitle and metaDescription): {topic.primary_keyword!r}
 USER INTENT: {topic.user_intent}
-SEARCH VOLUME: {topic.target_search_volume}
-SECONDARY KEYWORDS: {secondary}
+SEARCH VOLUME (annual UK Google searches): {topic.target_search_volume}
+SECONDARY KEYWORDS (weave into body + meta where natural): {secondary}
 {pillar_hint}{audience_block}
 {cat_block}
 
@@ -336,11 +339,27 @@ HARD RULES — read carefully (your output is rejected if any are broken):
     - Do NOT include an FAQ section inside ==content==. FAQs go in ==FAQ1==
       through ==FAA4== only. The site renders them separately.
 
-  META TITLE LENGTH:
-    - metaTitle MUST be 35-55 characters. Do NOT append the site brand name
-      (e.g. "| {site_config["display_name"]}") — the renderer appends the
-      brand automatically. Brand suffixes inside the LLM output get
-      truncated mid-word.
+  META TITLE — KEYWORD-DRIVEN:
+    - metaTitle MUST be 35-55 characters total. Do NOT append the site brand
+      name (e.g. "| {site_config["display_name"]}") — the renderer appends the
+      brand automatically.
+    - metaTitle MUST contain the PRIMARY KEYWORD verbatim or as the closest
+      natural variant: {topic.primary_keyword!r}. Front-load it within the
+      first 30 characters where possible.
+    - If the primary keyword is fully a verb-led phrase (e.g. "how to..."),
+      keep that wording. If it is a noun phrase ("dental group vat"),
+      compose around it: "Dental Group VAT: Partial Exemption Explained".
+    - Match the user_intent ({topic.user_intent}) — informational metaTitles
+      should start with How/What/Why/When; transactional ones with
+      Compare/Find/Choose/Buy; navigational ones with the brand or service.
+
+  META DESCRIPTION — KEYWORD + VALUE:
+    - 140-155 characters total.
+    - MUST contain the primary keyword once.
+    - SHOULD contain at least one secondary keyword from {topic.secondary_keywords[:5]!r}
+      when one fits naturally.
+    - Open with a fact, figure, or specific outcome. Avoid generic "In this
+      guide..." openers.
 
   INTERNAL LINKS:
     - Include at least 3 internal links in ==content==, drawn from the
