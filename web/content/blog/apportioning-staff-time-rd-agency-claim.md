@@ -18,9 +18,9 @@ faqs:
 - question: What if I don't have timesheets for my staff?
   answer: You can use estimated apportionment, but you need a reasonable basis. Review project plans, emails, and meeting notes to estimate the proportion. HMRC will expect contemporaneous evidence, so start tracking time now for future claims.
 - question: Does the merged RDEC scheme change how I apportion staff time?
-  answer: No. The qualifying expenditure rules for staff costs are identical under the merged RDEC scheme and the old SME scheme [1]. The calculation of the credit amount differs, but the apportionment rules remain the same.
+  answer: No. The qualifying expenditure rules for staff costs are identical under the merged RDEC scheme and the old SME scheme. The calculation of the credit amount differs, but the apportionment rules remain the same.
 - question: Can I include benefits in kind like a company car in staff costs?
-  answer: No. Benefits in kind are excluded from staff costs for R&D purposes [5]. Only cash-based remuneration, employer NI, and pension contributions qualify.
+  answer: No. Benefits in kind are excluded from staff costs for R&D purposes. Only cash-based remuneration, employer NI, and pension contributions qualify.
 dateModified: '2026-05-19'
 sourcesVerifiedAt: '2026-05-19'
 sourceDomains:
@@ -146,28 +146,11 @@ imageCredit:
 
 <p>For more guidance on agency-specific tax matters, explore our <a href="/blog/tax-and-compliance">tax and compliance resources</a> or learn about <a href="/services">our services for agency founders</a>.</p>
 
-<h2>Frequently Asked Questions</h2>
-
-<h3>Can I include my own salary as a director in an R&D claim?</h3>
-<p>Yes, if you are directly engaged in R&D activities. Your salary, employer NI, and pension contributions qualify. Dividends do not. You must apportion your time accurately between R&D and non-R&D work.</p>
-
-<h3>What if I don't have timesheets for my staff?</h3>
-<p>You can use estimated apportionment, but you need a reasonable basis. Review project plans, emails, and meeting notes to estimate the proportion. HMRC will expect contemporaneous evidence, so start tracking time now for future claims.</p>
-
-<h3>Does the merged RDEC scheme change how I apportion staff time?</h3>
-<p>No. The qualifying expenditure rules for staff costs are identical under the merged RDEC scheme and the old SME scheme <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. The calculation of the credit amount differs, but the apportionment rules remain the same.</p>
-
-<h3>Can I include benefits in kind like a company car in staff costs?</h3>
-<p>No. Benefits in kind are excluded from staff costs for R&D purposes <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. Only cash-based remuneration, employer NI, and pension contributions qualify.</p>
-
 <h2>Sources</h2>
 <ol>
   <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird83200" rel="noopener noreferrer">CIRD83200 - R&D tax relief: categories of qualifying expenditure</a></li>
   <li id="ref-2"><strong>gov.uk</strong>: <a href="https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support" rel="noopener noreferrer">Research and Development (R&D) tax relief: the merged... - GOV.UK</a></li>
 </ol>
 
-<h3>Related guides</h3>
-<ul>
-  <li><a href="/services">Services</a></li>
-</ul>
+
 
