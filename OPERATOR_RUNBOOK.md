@@ -331,6 +331,32 @@ After standup, operator walks the queue via `review_and_apply`.
 
 ---
 
+## Content formats (Session 3 additions)
+
+The system now supports four "stand-out" content formats beyond standard
+blog posts. Each goes through the full research-grounded pipeline
+(Serper SERP → multi-tier source pyramid → DeepSeek synthesis → citation
+rendering → E-E-A-T schema).
+
+| action_kind | Format | Word target | Citation density | When to use |
+|---|---|---|---|---|
+| `glossary_entry` | Single term definition (definition + example + cross-links) | 200-400 | 3/1000w | Long-tail 'what is X' queries; build topical authority via cross-linking |
+| `pillar_guide` | Flagship long-form authority page (TOC, quick ref, myths, checklist) | 2500-4000 | 6/1000w + 6 sources + 3 tiers | The page you actually want ranking #1 for a major topic |
+| `case_study` | Worked example with anonymised character + step-by-step calcs | 1000-1500 | 5/1000w | Adds E-E-A-T 'specific scenario' signal; great for commercial queries |
+| `comparison_page` | 'X vs Y' with side-by-side table + scenarios + decision framework | 1500-2500 | 5/1000w + 5 sources + 2 tiers | High-intent decision queries ('limited company vs sole trader', etc.) |
+
+All four use `optimisation_engine.apply.review_and_apply` to walk + ship.
+All four queue at confidence='low' on first cycle (review-gated by default).
+
+To set up a glossary opportunity manually (e.g. operator wants a specific term):
+- Insert a row into `optimisation_opportunities` with `action_kind='glossary_entry'`
+  and `action_plan.patch.glossary_entry = {term: "...", related_terms: [...]}`
+- Then run `review_and_apply --kind glossary_entry`
+
+Same pattern for pillar_guide / case_study / comparison_page.
+
+---
+
 ## Files of note (NOT commands, but worth reading)
 
 - `optimisation_engine/apply/facts_uk_2026.yaml` — curated UK tax facts catalogue. **Update this when tax year rolls or rates change.**
