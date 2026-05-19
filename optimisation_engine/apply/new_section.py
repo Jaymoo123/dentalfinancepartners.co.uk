@@ -187,12 +187,27 @@ def build_brief(opportunity: dict) -> ChangeBrief:
         brief.finalise_can_apply()
         return brief
 
-    # --- Generate body NOW (so the brief shows the actual prose) -------------
+    # --- Research synthesis (multi-source grounding) ------------------------
+    from optimisation_engine.apply._citation_renderer import (
+        assemble_final_body,
+        citation_density_meets_minimum,
+        citation_diversity_meets_minimum,
+    )
     from optimisation_engine.apply._content_writer import write_new_section_body
+    from optimisation_engine.reasoning.research_synthesizer import synthesize_research
+
     primary_q = opportunity.get("primary_query") or ""
     cluster = (opportunity.get("target_query_cluster") or [])[:5]
     page_title = fm.get("title") or ""
 
+    try:
+        research_bundle = synthesize_research(topic_query=primary_q, site_key=site_key)
+    except Exception as exc:
+        brief.add_validation("research_synthesis", False, f"research failed: {type(exc).__name__}: {exc}")
+        brief.finalise_can_apply()
+        return brief
+
+    # --- Generate body (research-grounded) -----------------------------------
     try:
         gen = write_new_section_body(
             site_key=site_key,
@@ -202,15 +217,27 @@ def build_brief(opportunity: dict) -> ChangeBrief:
             target_word_count=target_words,
             primary_query=primary_q,
             cluster=cluster,
+            research_bundle=research_bundle,
         )
     except Exception as exc:
         brief.add_validation("body_generation", False, f"LLM call failed: {type(exc).__name__}: {exc}")
         brief.finalise_can_apply()
         return brief
 
-    body_html = (gen.output or {}).get("body_html") or ""
+    raw_body_html = (gen.output or {}).get("body_html") or ""
+    body_html = assemble_final_body(raw_body_html, research_bundle, append_references=False)
+    # We DON'T append references for new_section because the references go on the
+    # whole page, not per-section. Body keeps the [n] markers rendered as
+    # superscript links pointing at the page's existing References section
+    # (or a new one if the page doesn't yet have one).
 
-    brief.change_summary = f"Add new H2 section '{new_heading}' to {slug}"
+    # --- Citation validators ------------------------------------------------
+    ok_density, det_density = citation_density_meets_minimum(raw_body_html, min_per_1000_words=4.0)
+    ok_diversity, det_diversity = citation_diversity_meets_minimum(
+        raw_body_html, research_bundle, min_unique_sources=3, min_tier_types=2
+    )
+
+    brief.change_summary = f"Add new H2 section '{new_heading}' to {slug} (research-grounded, {len(research_bundle.sources)} sources)"
     brief.change_diff = {
         "new_h2_heading": new_heading,
         "outline_points": outline,
@@ -220,19 +247,34 @@ def build_brief(opportunity: dict) -> ChangeBrief:
         "body_word_count_before": word_count_before,
         "generated_body_html": body_html,
         "generated_word_count_estimate": (gen.output or {}).get("word_count"),
+        "research_sources_count": len(research_bundle.sources),
+        "research_claims_count": len(research_bundle.claims),
+        "research_tiers_covered": research_bundle.diversity_tier_count,
+        "research_canonical_present": research_bundle.canonical_sources_present,
+        "research_cost_usd": round(research_bundle.total_serper_cost_usd + research_bundle.total_deepseek_cost_usd, 4),
         "llm_confidence": gen.confidence,
         "llm_cost_usd": round(gen.cost_usd, 6),
         "llm_validator_notes": gen.notes,
+        "citation_density_detail": det_density,
+        "citation_diversity_detail": det_diversity,
     }
     brief.internal_data["insertion_offset"] = offset
     brief.internal_data["new_heading"] = new_heading
     brief.internal_data["generated_body_html"] = body_html
+    brief.internal_data["research_bundle"] = research_bundle
 
     # Post-LLM validators
     brief.add_validation(
         "body_generation_ok",
         gen.auto_applicable and bool(body_html),
         f"llm_confidence={gen.confidence}, body_chars={len(body_html)}, notes={gen.notes}",
+    )
+    brief.add_validation("citation_density", ok_density, det_density)
+    brief.add_validation("citation_diversity", ok_diversity, det_diversity)
+    brief.add_validation(
+        "canonical_source_cited",
+        research_bundle.canonical_sources_present,
+        f"canonical_sources_in_bundle={research_bundle.canonical_sources_present}",
     )
 
     brief.finalise_can_apply()

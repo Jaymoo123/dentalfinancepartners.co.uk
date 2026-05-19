@@ -40,49 +40,36 @@ from optimisation_engine.reasoning.deepseek_runner import (  # noqa: E402
     require_keys,
     run_reasoning,
 )
+from optimisation_engine.reasoning.authority_allowlist import (  # noqa: E402
+    BLOCKED_DOMAINS,
+    domains_for_site,
+)
 from optimisation_engine.reasoning.internal_link_suggester import (  # noqa: E402
     BAD_ANCHORS,
     _significant_tokens,
     _tokens_overlap_stemmed,
 )
 
-# Per-niche curated allowlist of authoritative outbound domains.
-# These domains have high E-E-A-T value and aren't direct competitors.
-AUTHORITY_DOMAINS = {
-    "all": [
-        "gov.uk",
-        "hmrc.gov.uk",
-        "legislation.gov.uk",
-        "icaew.com",
-    ],
-    "property": [
-        "nrla.org.uk",                  # National Residential Landlords Assoc.
-        "propertymark.co.uk",           # Estate-agent regulator
-        "rla.org.uk",                   # Old name; redirects to NRLA
-        "ons.gov.uk",                   # statistics, occasionally relevant
-    ],
-    "dentists": [
-        "bda.org",                      # British Dental Association
-        "gdc-uk.org",                   # General Dental Council (regulator)
-        "nhsbsa.nhs.uk",                # NHS Business Services Authority
-        "england.nhs.uk",
-    ],
-    "agency": [
-        "ico.org.uk",                   # data protection
-        "companieshouse.gov.uk",
-        "asa.org.uk",                   # ad standards
-    ],
-    "generalist": [
-        "fca.org.uk",
-        "cipd.co.uk",
-        "ons.gov.uk",
-        "bankofengland.co.uk",
-    ],
-}
 
+def _allowlist_for(site_key: str, *, max_domains: int = 30) -> list[str]:
+    """Return the top-N domains for a site, with tier diversity.
 
-def _allowlist_for(site_key: str) -> list[str]:
-    return AUTHORITY_DOMAINS["all"] + AUTHORITY_DOMAINS.get(site_key, [])
+    Backed by the expanded authority_allowlist (~100+ domains). Apply per-tier
+    caps so we don't burn every Serper call on gov.uk variants.
+    """
+    domains = domains_for_site(site_key)
+    out: list[str] = []
+    per_tier_cap = {"canonical": 10, "authority": 12, "industry": 6, "press": 4}
+    counts: dict[str, int] = {}
+    for d in domains:
+        cap = per_tier_cap.get(d.tier, 0)
+        if counts.get(d.tier, 0) >= cap:
+            continue
+        out.append(d.domain)
+        counts[d.tier] = counts.get(d.tier, 0) + 1
+        if len(out) >= max_domains:
+            break
+    return out
 
 
 def _head_check(url: str, *, timeout: float = 10.0) -> bool:

@@ -130,8 +130,22 @@ def build_brief(opportunity: dict) -> ChangeBrief:
         brief.finalise_can_apply()
         return brief
 
-    # --- Generate full page content NOW --------------------------------------
+    # --- Research synthesis (multi-tier source pyramid) ---------------------
+    from optimisation_engine.apply._citation_renderer import (
+        assemble_final_body,
+        citation_density_meets_minimum,
+        citation_diversity_meets_minimum,
+    )
     from optimisation_engine.apply._content_writer import write_new_page_content
+    from optimisation_engine.reasoning.research_synthesizer import synthesize_research
+
+    try:
+        research_bundle = synthesize_research(topic_query=primary_q, site_key=site_key)
+    except Exception as exc:
+        brief.add_validation("research_synthesis", False, f"research failed: {type(exc).__name__}: {exc}")
+        brief.finalise_can_apply()
+        return brief
+
     try:
         gen = write_new_page_content(
             site_key=site_key,
@@ -143,6 +157,7 @@ def build_brief(opportunity: dict) -> ChangeBrief:
             target_word_count=target_words,
             primary_query=primary_q,
             cluster=cluster,
+            research_bundle=research_bundle,
         )
     except Exception as exc:
         brief.add_validation("page_generation", False, f"LLM call failed: {type(exc).__name__}: {exc}")
@@ -150,11 +165,23 @@ def build_brief(opportunity: dict) -> ChangeBrief:
         return brief
 
     content = gen.output or {}
-    body_html = content.get("body_html") or ""
+    raw_body_html = content.get("body_html") or ""
+    # Render footnote links + append References section
+    body_html = assemble_final_body(raw_body_html, research_bundle, append_references=True)
+    content["body_html"] = body_html  # so apply step uses the rendered version
     from optimisation_engine.apply.frontmatter_utils import estimate_word_count
     word_count = estimate_word_count(body_html)
 
-    brief.change_summary = f"Create new page /blog/{proposed_slug} ({page_type})"
+    # Citation validators
+    ok_density, det_density = citation_density_meets_minimum(raw_body_html, min_per_1000_words=5.0)
+    ok_diversity, det_diversity = citation_diversity_meets_minimum(
+        raw_body_html, research_bundle, min_unique_sources=5, min_tier_types=2
+    )
+
+    brief.change_summary = (
+        f"Create new page /blog/{proposed_slug} (research-grounded, "
+        f"{len(research_bundle.sources)} sources, {research_bundle.diversity_tier_count} tiers)"
+    )
     brief.change_diff = {
         "proposed_slug": proposed_slug,
         "proposed_path": rel_path,
@@ -168,8 +195,16 @@ def build_brief(opportunity: dict) -> ChangeBrief:
         "schema_to_include": schema_to_include,
         "target_word_count": target_words,
         "generated_body_word_count": word_count,
-        "generated_body_preview_first_1000_chars": body_html[:1000],
+        "generated_body_preview_first_1500_chars": body_html[:1500],
         "generated_faqs": content.get("faqs") or [],
+        "research_sources_count": len(research_bundle.sources),
+        "research_claims_count": len(research_bundle.claims),
+        "research_tiers_covered": research_bundle.diversity_tier_count,
+        "research_canonical_present": research_bundle.canonical_sources_present,
+        "research_cost_usd": round(research_bundle.total_serper_cost_usd + research_bundle.total_deepseek_cost_usd, 4),
+        "citation_density_detail": det_density,
+        "citation_diversity_detail": det_diversity,
+        "cited_source_domains": sorted({s.domain for s in research_bundle.sources}),
         "llm_confidence": gen.confidence,
         "llm_cost_usd": round(gen.cost_usd, 6),
         "llm_validator_notes": gen.notes,
@@ -177,6 +212,7 @@ def build_brief(opportunity: dict) -> ChangeBrief:
     brief.internal_data["np_patch"] = np_patch
     brief.internal_data["generated_content"] = content
     brief.internal_data["generated_word_count"] = word_count
+    brief.internal_data["research_bundle"] = research_bundle
 
     # Post-LLM validators
     brief.add_validation(
@@ -188,6 +224,13 @@ def build_brief(opportunity: dict) -> ChangeBrief:
         "generated_word_count_meets_minimum",
         word_count >= target_words * 0.5,
         f"got {word_count} words vs minimum {int(target_words*0.5)}",
+    )
+    brief.add_validation("citation_density", ok_density, det_density)
+    brief.add_validation("citation_diversity", ok_diversity, det_diversity)
+    brief.add_validation(
+        "canonical_source_cited",
+        research_bundle.canonical_sources_present,
+        f"canonical_present={research_bundle.canonical_sources_present}",
     )
 
     brief.finalise_can_apply()

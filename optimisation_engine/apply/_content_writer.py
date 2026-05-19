@@ -74,8 +74,31 @@ def write_new_section_body(
     target_word_count: int,
     primary_query: str,
     cluster: list[str],
+    research_bundle=None,  # ResearchBundle or None
 ) -> ReasoningResult:
-    """Generate the body for a new H2 section."""
+    """Generate the body for a new H2 section.
+
+    If a ResearchBundle is provided, the writer is grounded in extracted
+    claims and MUST use [n] citation markers referencing the bundle's
+    sources list. The caller is responsible for rendering the References
+    section in the final HTML.
+    """
+    research_block = ""
+    citation_rules = ""
+    if research_bundle is not None and getattr(research_bundle, "claims", None):
+        research_block = research_bundle.to_prompt_block(max_claims=20)
+        citation_rules = """
+CITATION DENSITY RULES (mandatory — content fails review if not met):
+  - Use [n] markers inline to cite claims from the RESEARCH BUNDLE above.
+  - Aim for at least 1 cited claim per 200 words.
+  - At least 2 different source tiers must be represented across your citations.
+  - Cite SPECIFIC numbers / dates / rules using the exact source claim text or
+    a close paraphrase. Do NOT invent numbers — use only what's in the bundle.
+  - The [n] markers refer to the bundle's SOURCES SUMMARY list — get the index
+    from there.
+  - Don't over-cite the same source — use the diversity of sources.
+"""
+
     user_input = f"""SITE: {site_key}
 PAGE TITLE: {page_title!r}
 
@@ -88,11 +111,12 @@ SECTION OUTLINE / KEY POINTS TO COVER:
 PRIMARY QUERY this section should help win: {primary_query!r}
 SUPPORTING QUERY VARIANTS: {cluster[:5]}
 
+{research_block}
+
 Write the body of this section as HTML-in-markdown matching the site's
 existing structure: <p>...</p> paragraphs and optionally <ul><li>...</li></ul>
 for lists. DO NOT include the H2 heading itself — start with the first <p>.
-DO NOT include facts you cannot verify; prefer 'current rates' over invented numbers.
-
+{citation_rules}
 {BRAND_VOICE_RULES}{get_site_voice_block(site_key)}
 """
     return run_reasoning(
@@ -244,8 +268,29 @@ def write_new_page_content(
     target_word_count: int,
     primary_query: str,
     cluster: list[str],
+    research_bundle=None,
 ) -> ReasoningResult:
-    """Generate a full new page (frontmatter fields + body)."""
+    """Generate a full new page (frontmatter fields + body).
+
+    If research_bundle is provided, the body must include [n] citation
+    markers referencing the bundle's sources. Caller appends the References
+    section in the rendered HTML.
+    """
+    research_block = ""
+    citation_rules = ""
+    if research_bundle is not None and getattr(research_bundle, "claims", None):
+        research_block = research_bundle.to_prompt_block(max_claims=25)
+        citation_rules = """
+CITATION DENSITY RULES (MANDATORY):
+  - Use [n] markers inline to cite claims from the RESEARCH BUNDLE above.
+  - At least 1 citation per 200 words of body.
+  - At least 5 unique sources cited across the page.
+  - At least 2 different source tiers (canonical / authority / industry).
+  - Use SPECIFIC numbers and dates from the bundle only — NEVER invent figures.
+  - [n] refers to the index in the SOURCES SUMMARY list.
+  - Vary which source you cite — don't lean on the same one repeatedly.
+"""
+
     user_input = f"""SITE: {site_key}
 PROPOSED SLUG: {proposed_slug}
 PAGE TYPE: {page_type}
@@ -260,6 +305,8 @@ TARGET WORD COUNT: ~{target_word_count}
 PRIMARY QUERY this page should win: {primary_query!r}
 CLUSTER: {cluster[:5]}
 
+{research_block}
+{citation_rules}
 Write a complete page consisting of:
   - title (string, <=70 chars, includes primary_h1's key phrase)
   - metaTitle (string, <=60 chars, leads with primary query)
