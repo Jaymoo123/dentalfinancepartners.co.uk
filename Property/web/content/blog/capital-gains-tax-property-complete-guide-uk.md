@@ -1,28 +1,36 @@
 ---
-title: "Capital Gains Tax on Property: Complete Guide UK"
-slug: "capital-gains-tax-property-complete-guide-uk"
-canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk"
-date: "2026-04-01"
-author: "Property Tax Partners Editorial Team"
-category: "Capital Gains Tax"
-metaTitle: "Capital Gains Tax on Property UK: Complete Guide 2026"
-metaDescription: "Residential property CGT rates are 18% and 24% for 2026/27. Reliefs, exemptions, and tax-saving strategies for UK landlords and investors."
-altText: "UK property documents with calculator showing capital gains tax calculations for landlords"
-image: ""
-h1: "Capital Gains Tax on Property: Complete Guide for UK Landlords & Investors"
-summary: "Understanding capital gains tax property rules is crucial for UK landlords and investors when selling rental properties or second homes."
-schema: ""
+title: 'Capital Gains Tax on Property: Complete Guide UK'
+slug: capital-gains-tax-property-complete-guide-uk
+canonical: https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk
+date: '2026-04-01'
+author: Property Tax Partners Editorial Team
+category: Capital Gains Tax
+metaTitle: 'Capital Gains Tax on Property: Complete UK Guide 2026'
+metaDescription: Capital gains tax on property explained for UK landlords. Rates 18%/24%, reliefs, exemptions, and strategies to reduce your CGT bill on rental property sales.
+altText: UK property documents with calculator showing capital gains tax calculations for landlords
+image: ''
+h1: 'Capital Gains Tax on Property: Complete Guide for UK Landlords & Investors'
+summary: Understanding capital gains tax property rules is crucial for UK landlords and investors when selling rental properties or second homes.
+schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Property Tax Partners Ltd","url":"https://www.propertytaxpartners.co.uk","areaServed":"United Kingdom","knowsAbout":["UK landlord taxation","Section 24 mortgage interest","Capital gains tax on property","Portfolio incorporation","Making Tax Digital for property","Furnished holiday lets","Buy-to-let limited companies","Non-resident landlord scheme"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"Property Tax Partners Editorial Team","jobTitle":"Specialist property accountant","knowsAbout":["Section 24 calculations","60-day CGT reporting","Property portfolio incorporation","BTL mortgage interest relief","FHL tax rules","SDLT additional property surcharge"],"worksFor":{"@type":"Organization","name":"Property Tax Partners Ltd","url":"https://www.propertytaxpartners.co.uk"}},{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), Property Tax Specialist","knowsAbout":["UK property taxation","CGT","SDLT","Section 24"]},{"@type":"Article","headline":"Capital Gains Tax on Property: Complete Guide UK","description":"Capital gains tax on property explained for UK landlords. Rates 18%/24%, reliefs, exemptions, and strategies to reduce your CGT bill on rental property sales.","url":"https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk","datePublished":"2026-04-01","dateModified":"2026-05-19","author":{"@type":"Person","name":"Property Tax Partners Editorial Team","jobTitle":"Specialist property accountant","knowsAbout":["Section 24 calculations","60-day CGT reporting","Property portfolio incorporation","BTL mortgage interest relief","FHL tax rules","SDLT additional property surcharge"],"worksFor":{"@type":"Organization","name":"Property Tax Partners Ltd","url":"https://www.propertytaxpartners.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW
+  Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), Property Tax Specialist","knowsAbout":["UK property taxation","CGT","SDLT","Section 24"]},"publisher":{"@type":"AccountingService","name":"Property Tax Partners Ltd","url":"https://www.propertytaxpartners.co.uk","areaServed":"United Kingdom","knowsAbout":["UK landlord taxation","Section 24 mortgage interest","Capital gains tax on property","Portfolio incorporation","Making Tax Digital for property","Furnished holiday lets","Buy-to-let limited companies","Non-resident landlord scheme"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk"},"inLanguage":"en-GB"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.propertytaxpartners.co.uk"},{"@type":"ListItem","position":2,"name":"Capital Gains Tax","item":"https://www.propertytaxpartners.co.uk/blog/capital-gains-tax"},{"@type":"ListItem","position":3,"name":"Capital Gains Tax on Property: Complete Guide UK","item":"https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I avoid capital gains tax on property?","acceptedAnswer":{"@type":"Answer","text":"You can reduce CGT through legitimate planning like using annual exempt amounts, transferring to spouses to use their allowances, or claiming reliefs like Principal Private Residence Relief if you lived in the property. However, you cannot completely avoid CGT on investment property profits."}},{"@type":"Question","name":"What is the current CGT rate on residential property in the UK?","acceptedAnswer":{"@type":"Answer","text":"For 2025/26, the CGT rate on residential property is 18% for basic rate
+  taxpayers and 24% for higher and additional rate taxpayers. These rates are higher than CGT on other assets. Your rate depends on your total taxable income plus the gain — if the gain pushes you into a higher band, part is taxed at 18% and part at 24%."}},{"@type":"Question","name":"Do I need to report property CGT within 60 days?","acceptedAnswer":{"@type":"Answer","text":"Yes, UK residents who sell residential property at a gain must report and pay CGT within 60 days of completion. This applies to rental properties and second homes but not your main residence. Late reporting can result in penalties starting at £100, plus interest on any unpaid tax."}},{"@type":"Question","name":"How do I calculate the capital gain on a rental property?","acceptedAnswer":{"@type":"Answer","text":"Subtract the original purchase price plus allowable costs (stamp duty, legal fees, improvement costs) from the sale price minus selling costs. Then deduct your annual exempt amount. The result is your taxable gain. Improvement costs that add value count, but routine maintenance and repairs do not."}}]}]}'
 faqs:
-  - question: "Can I avoid capital gains tax on property?"
-    answer: "You can reduce CGT through legitimate planning like using annual exempt amounts, transferring to spouses to use their allowances, or claiming reliefs like Principal Private Residence Relief if you lived in the property. However, you cannot completely avoid CGT on investment property profits."
-  - question: "What is the current CGT rate on residential property in the UK?"
-    answer: "For 2025/26, the CGT rate on residential property is 18% for basic rate taxpayers and 24% for higher and additional rate taxpayers. These rates are higher than CGT on other assets. Your rate depends on your total taxable income plus the gain — if the gain pushes you into a higher band, part is taxed at 18% and part at 24%."
-  - question: "Do I need to report property CGT within 60 days?"
-    answer: "Yes, UK residents who sell residential property at a gain must report and pay CGT within 60 days of completion. This applies to rental properties and second homes but not your main residence. Late reporting can result in penalties starting at £100, plus interest on any unpaid tax."
-  - question: "How do I calculate the capital gain on a rental property?"
-    answer: "Subtract the original purchase price plus allowable costs (stamp duty, legal fees, improvement costs) from the sale price minus selling costs. Then deduct your annual exempt amount. The result is your taxable gain. Improvement costs that add value count, but routine maintenance and repairs do not."
+- question: Can I avoid capital gains tax on property?
+  answer: You can reduce CGT through legitimate planning like using annual exempt amounts, transferring to spouses to use their allowances, or claiming reliefs like Principal Private Residence Relief if you lived in the property. However, you cannot completely avoid CGT on investment property profits.
+- question: What is the current CGT rate on residential property in the UK?
+  answer: For 2025/26, the CGT rate on residential property is 18% for basic rate taxpayers and 24% for higher and additional rate taxpayers. These rates are higher than CGT on other assets. Your rate depends on your total taxable income plus the gain — if the gain pushes you into a higher band, part is taxed at 18% and part at 24%.
+- question: Do I need to report property CGT within 60 days?
+  answer: Yes, UK residents who sell residential property at a gain must report and pay CGT within 60 days of completion. This applies to rental properties and second homes but not your main residence. Late reporting can result in penalties starting at £100, plus interest on any unpaid tax.
+- question: How do I calculate the capital gain on a rental property?
+  answer: Subtract the original purchase price plus allowable costs (stamp duty, legal fees, improvement costs) from the sale price minus selling costs. Then deduct your annual exempt amount. The result is your taxable gain. Improvement costs that add value count, but routine maintenance and repairs do not.
+metaTitle_prev: 'Capital Gains Tax on Property UK: Complete Guide 2026'
+metaDescription_prev: Residential property CGT rates are 18% and 24% for 2026/27. Reliefs, exemptions, and tax-saving strategies for UK landlords and investors.
+dateModified: '2026-05-19'
+reviewedBy: ICAEW Qualified Senior Reviewer
+reviewerCredentials: Chartered Accountant (ACA, ICAEW), Property Tax Specialist
+reviewedAt: '2026-05-19'
+editorialNote: metaTitle and metaDescription rewritten via optimisation engine after GSC CTR analysis.
 ---
-
 <p>Capital gains tax property rules affect every UK landlord and property investor who sells a rental property or second home. Whether you're disposing of a single buy-to-let or part of a larger portfolio, understanding how capital gains tax works can save you thousands of pounds.</p>
 
 <p>This guide covers everything you need to know about capital gains tax on property sales, from basic rates to advanced planning <a href="/blog/capital-gains-tax/reduce-cgt-property-disposal-uk">strategies</a>.</p>
