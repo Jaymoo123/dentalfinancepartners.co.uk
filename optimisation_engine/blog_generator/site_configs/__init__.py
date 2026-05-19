@@ -8,11 +8,19 @@ from optimisation_engine.blog_generator.routing_safety import assert_site_config
 
 from optimisation_engine.blog_generator.site_configs import dentists as _dentists
 from optimisation_engine.blog_generator.site_configs import property as _property
+from optimisation_engine.blog_generator.site_configs import medical as _medical
+from optimisation_engine.blog_generator.site_configs import solicitors as _solicitors
+from optimisation_engine.blog_generator.site_configs import agency as _agency
+from optimisation_engine.blog_generator.site_configs import generalist as _generalist
 
 
 SITE_CONFIGS: dict[str, dict] = {
     "dentists": _dentists.SITE_CONFIG,
     "property": _property.SITE_CONFIG,
+    "medical": _medical.SITE_CONFIG,
+    "solicitors": _solicitors.SITE_CONFIG,
+    "agency": _agency.SITE_CONFIG,
+    "generalist": _generalist.SITE_CONFIG,
 }
 
 

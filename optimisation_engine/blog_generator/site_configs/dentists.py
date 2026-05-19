@@ -89,6 +89,7 @@ SITE_CONFIG: dict = {
     "done_marker_value": True,
     "done_timestamp_field": "generated_at",
     "slug_field": "generated_slug",
+    "topic_order": "publish_priority.desc.nullslast,keyword_difficulty.asc.nullslast,created_at.asc",
 
     # --- LLM provider ------------------------------------------------------
     "llm_provider": "deepseek",

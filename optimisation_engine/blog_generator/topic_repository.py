@@ -100,13 +100,19 @@ def _done_filter_params(site_config: dict) -> dict:
 
 
 def fetch_next_topic(site_config: dict) -> Topic | None:
-    """Return the highest-priority unused topic from the site's table."""
+    """Return the next unused topic from the site's table.
+
+    Ordering is per-site (different tables have different columns). Falls back
+    to created_at ascending (oldest-first) if the site config doesn't specify.
+    """
     table = site_config["topic_table"]
     assert_table_belongs_to_site(table, site_config["site_key"])
 
+    order_clause = site_config.get("topic_order") or "created_at.asc"
+
     params = {
         "select": _select_clause(site_config),
-        "order": "publish_priority.desc.nullslast,keyword_difficulty.asc.nullslast,created_at.asc",
+        "order": order_clause,
         "limit": "1",
         **_done_filter_params(site_config),
     }
