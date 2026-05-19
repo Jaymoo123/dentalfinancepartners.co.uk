@@ -16,13 +16,17 @@ from __future__ import annotations
 from typing import Any
 
 from optimisation_engine.apply import (
+    case_study,
+    comparison_page,
     external_link,
     faq_addition,
+    glossary_entry,
     in_text_embedding,
     internal_link,
     meta_only,
     new_page,
     new_section,
+    pillar_guide,
     schema_only,
 )
 from optimisation_engine.apply.base import ApplyError
@@ -37,8 +41,10 @@ _MODULES = {
     "in_text_embedding": in_text_embedding,
     "new_section": new_section,
     "new_page": new_page,
-    # link applies are dispatched via dedicated entry points
-    # (see internal_links.py + external_links.py — they take suggestion rows, not opportunities)
+    "glossary_entry": glossary_entry,
+    "pillar_guide": pillar_guide,
+    "case_study": case_study,
+    "comparison_page": comparison_page,
 }
 
 
