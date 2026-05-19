@@ -7,6 +7,12 @@ const appDir = path.dirname(fileURLToPath(import.meta.url));
 const nextConfig: NextConfig = {
   // Anchor tracing to this app so Next does not treat C:\Users\user (extra lockfile) as the monorepo root.
   outputFileTracingRoot: appDir,
+  images: {
+    remotePatterns: [
+      { protocol: 'https', hostname: 'images.unsplash.com' },
+      { protocol: 'https', hostname: 'images.pexels.com' },
+    ],
+  },
   async redirects() {
     return [
       // Canonical host: www.accountsforlawyers.co.uk. Non-www variants must

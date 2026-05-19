@@ -208,6 +208,7 @@ def _synthesize_research(site_config: dict, topic: Topic) -> tuple[dict | None, 
             "title": s.title or s.domain,
             "tier": s.tier,
             "n_claims": s.n_claims,
+            "recency_date": s.recency_date,
         }
         for s in bundle.sources
     ]
@@ -367,6 +368,21 @@ HARD RULES — read carefully (your output is rejected if any are broken):
     - Pick links that genuinely match the surrounding paragraph. Do not
       stuff a link in just to hit the count.
 
+  SOURCE DATE FRAMING (critical for accuracy):
+    - Each source above shows its publication year in the format
+      (tier, YEAR) — e.g. (canonical, 2023) or (authority, undated).
+    - If a source is dated 2 or more years before today, do NOT assert its
+      specific figures (rates, percentages, threshold values) as current.
+      Frame them as historical: "in 2023", "as of [year]", "by mid-{year}".
+    - For figures that change frequently (mortgage rates, savings rates,
+      energy bills, fuel prices, stock prices, currency rates), default to
+      language like "rates fluctuate; check current data" or "use a current
+      lender comparison" rather than quoting any specific number as current.
+    - Tax-law references (Acts, regulations, sections, schedules) and
+      structural rules CAN be treated as current regardless of source date
+      unless the legislation has been superseded.
+    - When in doubt, prefer historical framing over false-currency framing.
+
   CITATION MARKER BOUNDS:
     - Valid markers in ==content== are [1] through [{n_sources}] only{' (no markers — research bundle is empty)' if n_sources == 0 else ''}.
     - NEVER write [{n_sources + 1}] or any higher index. If a claim cannot be
@@ -397,7 +413,11 @@ def _format_research_for_prompt(bundle: dict) -> str:
         "SOURCES:",
     ]
     for i, s in enumerate(bundle["sources"], 1):
-        lines.append(f"  [{i}] ({s['tier']}) {s['domain']} -- {s['title']!r}")
+        # Surface the source's publication year so the LLM can frame older
+        # data as historical rather than asserting it as current.
+        rd = s.get("recency_date") or ""
+        year_tag = f", {rd[:4]}" if rd[:4].isdigit() else ", undated"
+        lines.append(f"  [{i}] ({s['tier']}{year_tag}) {s['domain']} -- {s['title']!r}")
     lines.append("")
     lines.append("CLAIMS (each is tagged with its source number):")
     # Group by source for readability; bullet by source

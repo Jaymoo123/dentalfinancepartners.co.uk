@@ -82,6 +82,10 @@ class Source:
     score: int
     fetched_at: str
     n_claims: int
+    # Publication date of the source article (ISO date), as extracted from the
+    # page (<time>, meta, prose). None when no date could be parsed. Used by
+    # downstream prompts to frame older figures as historical, not current.
+    recency_date: str | None = None
 
 
 @dataclass
@@ -486,6 +490,7 @@ def synthesize_research(
                 score=r.get("source_authority_score") or 0,
                 fetched_at=r["fetched_at"],
                 n_claims=r.get("claims_count") or 0,
+                recency_date=r.get("source_recency_date"),
             )
         )
 
@@ -563,6 +568,7 @@ def synthesize_research(
                 score=authority_score_for_domain(cand["domain"]),
                 fetched_at=datetime.now(timezone.utc).isoformat(),
                 n_claims=len(claims),
+                recency_date=parsed.get("pub_date"),
             )
         )
         # Cache
@@ -644,6 +650,7 @@ def synthesize_research(
                     score=authority_score_for_domain(cand["domain"]),
                     fetched_at=datetime.now(timezone.utc).isoformat(),
                     n_claims=len(claims),
+                    recency_date=parsed.get("pub_date"),
                 )
             )
             _cache_insert(
@@ -714,6 +721,7 @@ def synthesize_research(
                         score=authority_score_for_domain(cand["domain"]),
                         fetched_at=datetime.now(timezone.utc).isoformat(),
                         n_claims=len(claims),
+                        recency_date=parsed.get("pub_date"),
                     )
                 )
                 _cache_insert(
