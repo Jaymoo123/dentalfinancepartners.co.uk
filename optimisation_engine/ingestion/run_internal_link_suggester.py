@@ -60,20 +60,32 @@ def fetch_recent_changes(*, site_key: str | None, since_days: int, change_types:
 
 
 def _primary_query_for_change(change: dict) -> str | None:
-    """Pull the primary query from the change's linked opportunity or before/after."""
-    # Prefer linked opportunity if available
+    """Find primary query: opportunity.applied_change_id -> change.id."""
+    change_id = change.get("id")
+    if change_id:
+        # optimisation_opportunities.applied_change_id points back to this change
+        r = httpx.get(
+            f"{SUPABASE_URL}/rest/v1/optimisation_opportunities",
+            headers={"apikey": SUPABASE_KEY, "Authorization": f"Bearer {SUPABASE_KEY}"},
+            params={"select": "primary_query", "applied_change_id": f"eq.{change_id}", "limit": "1"},
+            timeout=10.0,
+        )
+        rows = r.json() if r.status_code < 300 else []
+        if rows and rows[0].get("primary_query"):
+            return rows[0]["primary_query"]
+    # Fallback: try blog_optimization_id (legacy linkage)
     opp_id = change.get("blog_optimization_id")
     if opp_id:
         r = httpx.get(
             f"{SUPABASE_URL}/rest/v1/optimisation_opportunities",
             headers={"apikey": SUPABASE_KEY, "Authorization": f"Bearer {SUPABASE_KEY}"},
-            params={"select": "primary_query,target_query_cluster", "id": f"eq.{opp_id}"},
+            params={"select": "primary_query", "id": f"eq.{opp_id}"},
             timeout=10.0,
         )
         rows = r.json() if r.status_code < 300 else []
         if rows:
             return rows[0].get("primary_query")
-    # Fallback: try to extract from diff_summary
+    # Last fallback: parse the slug for hints
     return None
 
 
