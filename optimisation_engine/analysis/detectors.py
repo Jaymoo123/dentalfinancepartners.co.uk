@@ -409,6 +409,121 @@ def detect_query_page_mismatch(
     return out
 
 
+def _fetch_dataforseo_keywords(site_key: str) -> list[dict]:
+    """Pull keyword_suggestions rows for this site with populated metrics."""
+    url = f"{SUPABASE_URL}/rest/v1/dataforseo_keyword_data"
+    r = httpx.get(
+        url,
+        headers=_supabase_headers(),
+        params={
+            "select": "related_keyword,search_volume,keyword_difficulty,cpc,search_intent,seed_keyword",
+            "site_key": f"eq.{site_key}",
+            "related_keyword": "not.is.null",
+            "search_volume": "not.is.null",
+            "order": "search_volume.desc.nullslast",
+            "limit": "1000",
+        },
+        timeout=30.0,
+    )
+    r.raise_for_status()
+    return r.json()
+
+
+def _fetch_existing_gsc_queries(site_key: str, days: int = 28) -> set[str]:
+    """Return the set of lowercase queries our pages have already shown for."""
+    start = (date.today() - timedelta(days=days)).isoformat()
+    url = f"{SUPABASE_URL}/rest/v1/gsc_query_data"
+    r = httpx.get(
+        url,
+        headers=_supabase_headers(),
+        params={
+            "select": "query",
+            "site_key": f"eq.{site_key}",
+            "date": f"gte.{start}",
+            "limit": "2000",
+        },
+        timeout=30.0,
+    )
+    r.raise_for_status()
+    return {(row.get("query") or "").lower() for row in r.json() if row.get("query")}
+
+
+def detect_dataforseo_keyword_gap(
+    site_key: str,
+    *,
+    min_volume: int = 50,
+    max_kd: int = 30,
+) -> list[Opportunity]:
+    """Surface keywords from DataForSEO that the site is NOT yet appearing for.
+
+    Compares dataforseo_keyword_data (paid keyword universe) against the queries
+    already in gsc_query_data (queries we're getting impressions for). Keywords
+    in the DFS pool but not in our GSC pool with decent volume + low KD are
+    new_page candidates.
+
+    Confidence: MEDIUM by default; HIGH when volume >= 200 and kd <= 10.
+    """
+    kw_rows = _fetch_dataforseo_keywords(site_key)
+    if not kw_rows:
+        return []
+    existing = _fetch_existing_gsc_queries(site_key)
+
+    out: list[Opportunity] = []
+    seen: set[str] = set()
+    for row in kw_rows:
+        kw = (row.get("related_keyword") or "").strip().lower()
+        if not kw or kw in seen:
+            continue
+        vol = int(row.get("search_volume") or 0)
+        kd = row.get("keyword_difficulty")
+        kd_int = int(kd) if kd is not None else 100
+        if vol < min_volume or kd_int > max_kd:
+            continue
+        if kw in existing:
+            continue  # Already appearing for it
+        seen.add(kw)
+
+        intent = row.get("search_intent") or "unknown"
+        score = min(100, 30 + int(vol / 10) + (20 if kd_int <= 10 else 0))
+        if vol >= 200 and kd_int <= 10:
+            confidence = "high"
+        elif vol >= 100 or kd_int <= 5:
+            confidence = "medium"
+        else:
+            confidence = "low"
+
+        out.append(
+            Opportunity(
+                site_key=site_key,
+                opportunity_type="new_page",
+                target_url=None,
+                primary_query=kw,
+                target_query_cluster=[kw],
+                recommended_action=(
+                    f"Consider a dedicated page for '{kw}' (volume {vol}/mo, "
+                    f"KD {kd_int}, intent={intent}). The site does not currently "
+                    f"appear for this query in GSC."
+                ),
+                rationale=(
+                    f"DataForSEO Labs surfaced '{kw}' from seed '{row.get('seed_keyword')}'. "
+                    f"Volume {vol}, KD {kd_int}, intent {intent}. No matching query in "
+                    f"our last 28 days of GSC data — true 'missing page' candidate."
+                ),
+                score=score,
+                confidence=confidence,
+                supporting_data={
+                    "source": "dataforseo_keyword_suggestions",
+                    "search_volume": vol,
+                    "keyword_difficulty": kd_int,
+                    "cpc": row.get("cpc"),
+                    "search_intent": intent,
+                    "seed_keyword": row.get("seed_keyword"),
+                },
+            )
+        )
+    return out
+
+
 def detect_missing_pages(
     site_key: str,
     by_pq: dict[tuple[str, str], dict],
@@ -516,18 +631,20 @@ def persist_opportunities(opportunities: list[Opportunity]) -> dict[str, int]:
 def run_all_detectors(site_key: str, days: int = 28) -> dict[str, Any]:
     print(f"\n=== Detectors for {site_key} ===")
     rows = _fetch_query_data(site_key, days=days)
-    if not rows:
-        print(f"  no GSC query data for {site_key} — skipping")
-        return {"site_key": site_key, "opportunities": 0, "note": "no_data"}
-    by_pq = aggregate_by_page_query(rows)
-    print(f"  loaded {len(rows)} rows aggregating to {len(by_pq)} (page, query) pairs")
+    by_pq = aggregate_by_page_query(rows) if rows else {}
+    if rows:
+        print(f"  loaded {len(rows)} rows aggregating to {len(by_pq)} (page, query) pairs")
+    else:
+        print(f"  no GSC query data for {site_key} (still running DataForSEO-based detectors)")
 
     opportunities: list[Opportunity] = []
-    opportunities += detect_ctr_problems(site_key, by_pq)
-    opportunities += detect_near_miss_expansion(site_key, by_pq)
-    opportunities += detect_cannibalisation(site_key, by_pq)
-    opportunities += detect_query_page_mismatch(site_key, by_pq)
-    opportunities += detect_missing_pages(site_key, by_pq)
+    if by_pq:
+        opportunities += detect_ctr_problems(site_key, by_pq)
+        opportunities += detect_near_miss_expansion(site_key, by_pq)
+        opportunities += detect_cannibalisation(site_key, by_pq)
+        opportunities += detect_query_page_mismatch(site_key, by_pq)
+        opportunities += detect_missing_pages(site_key, by_pq)
+    opportunities += detect_dataforseo_keyword_gap(site_key)
 
     # Sort by score desc for nicer logs
     opportunities.sort(key=lambda o: o.score, reverse=True)

@@ -258,15 +258,20 @@ def persist_keyword_suggestions(
     seed_keyword: str,
     response: dict,
 ) -> int:
-    """Flatten keyword_suggestions response into dataforseo_keyword_data rows."""
+    """Flatten keyword_suggestions response into dataforseo_keyword_data rows.
+
+    DataForSEO Labs keyword_suggestions items are FLAT: keyword, keyword_info,
+    keyword_properties, search_intent_info are all at the item's top level.
+    There is no 'keyword_data' wrapper for this endpoint.
+    """
     rows_out: list[dict] = []
     tasks = response.get("tasks", []) or []
     for task in tasks:
         for result in task.get("result", []) or []:
             for item in result.get("items", []) or []:
-                kw_data = item.get("keyword_data", {}) or {}
-                ki = kw_data.get("keyword_info", {}) or {}
-                kp = kw_data.get("keyword_properties", {}) or {}
+                ki = item.get("keyword_info") or {}
+                kp = item.get("keyword_properties") or {}
+                si = item.get("search_intent_info") or {}
                 rows_out.append(
                     {
                         "site_key": site_key,
@@ -274,13 +279,13 @@ def persist_keyword_suggestions(
                         "seed_keyword": seed_keyword,
                         "location_code": DATAFORSEO_LOCATION_CODE_UK,
                         "language_code": DATAFORSEO_LANGUAGE_CODE_EN,
-                        "related_keyword": kw_data.get("keyword"),
+                        "related_keyword": item.get("keyword"),
                         "search_volume": ki.get("search_volume"),
                         "cpc": ki.get("cpc"),
                         "competition": ki.get("competition"),
                         "competition_level": ki.get("competition_level"),
                         "keyword_difficulty": kp.get("keyword_difficulty"),
-                        "search_intent": (kw_data.get("search_intent_info") or {}).get("main_intent"),
+                        "search_intent": si.get("main_intent"),
                         "raw_response": item,
                     }
                 )

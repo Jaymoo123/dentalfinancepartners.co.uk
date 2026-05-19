@@ -228,6 +228,21 @@ def execute_site(site_key: str, *, dry_run: bool) -> dict:
 
     # 2) competitors_domain
     competitor_domains: list[str] = []
+
+    def _normalise_domain(d: str | None) -> str:
+        if not d:
+            return ""
+        # Strip protocol, leading 'www.', trailing slash; lowercase
+        d = d.lower().strip()
+        for prefix in ("https://", "http://"):
+            if d.startswith(prefix):
+                d = d[len(prefix):]
+        if d.startswith("www."):
+            d = d[4:]
+        return d.rstrip("/")
+
+    own_domain_norm = _normalise_domain(site["domain"])
+
     if plan["do_competitors"]:
         try:
             resp = client.competitors_domain(site_key=site_key, domain=site["domain"], limit=20)
@@ -238,7 +253,7 @@ def execute_site(site_key: str, *, dry_run: bool) -> dict:
                 for result in task.get("result", []) or []:
                     for item in result.get("items", []) or []:
                         d = item.get("domain")
-                        if d and d != site["domain"]:
+                        if d and _normalise_domain(d) != own_domain_norm:
                             competitor_domains.append(d)
         except (BudgetExceeded, IdempotencyHit) as exc:
             print(f"[{site_key}] competitors_domain aborted: {exc}")
