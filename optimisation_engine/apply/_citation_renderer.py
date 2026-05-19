@@ -122,6 +122,100 @@ def assemble_final_body(body: str, bundle, *, append_references: bool = True) ->
 
 
 # ----------------------------------------------------------------------------
+# Page-level Sources / References merging (for new_section etc.)
+# ----------------------------------------------------------------------------
+
+import re as _re
+
+_REFS_BLOCK_RX = _re.compile(
+    r"<h2[^>]*>\s*(?:References|Sources)\s*</h2>\s*<ol[^>]*>(.*?)</ol>",
+    flags=_re.IGNORECASE | _re.DOTALL,
+)
+_SOURCE_URL_RX = _re.compile(r'href="([^"]+)"', flags=_re.IGNORECASE)
+_SOURCE_DOMAIN_RX = _re.compile(r"<strong>([^<]+)</strong>")
+
+
+def _extract_existing_sources(body: str) -> list[dict]:
+    """Pull domain + url + title triples from an existing References block."""
+    m = _REFS_BLOCK_RX.search(body)
+    if not m:
+        return []
+    block = m.group(1)
+    items = _re.findall(r"<li[^>]*>(.*?)</li>", block, flags=_re.DOTALL | _re.IGNORECASE)
+    out: list[dict] = []
+    for li in items:
+        url_m = _SOURCE_URL_RX.search(li)
+        dom_m = _SOURCE_DOMAIN_RX.search(li)
+        if not url_m:
+            continue
+        url = url_m.group(1)
+        domain_label = dom_m.group(1) if dom_m else ""
+        # Strip the optional " (tier)" suffix
+        domain = _re.sub(r"\s*\([^)]+\)\s*$", "", domain_label).strip()
+        # Title is inside the <a>...</a>
+        title_m = _re.search(r"<a[^>]*>([^<]+)</a>", li, flags=_re.IGNORECASE)
+        title = title_m.group(1).strip() if title_m else domain
+        # Tier label
+        tier_m = _re.search(r"\(([^)]+)\)", domain_label)
+        tier = tier_m.group(1) if tier_m else ""
+        out.append({"domain": domain, "url": url, "title": title, "tier": tier})
+    return out
+
+
+def _build_merged_refs_html(sources: list[dict]) -> str:
+    """Render the consolidated References section."""
+    if not sources:
+        return ""
+    lines = ["<h2>Sources</h2>", "<ol>"]
+    for i, s in enumerate(sources, 1):
+        title = (s.get("title") or s.get("domain") or "").replace("<", "&lt;").replace(">", "&gt;")
+        tier = s.get("tier") or ""
+        tier_label = f" ({tier})" if tier else ""
+        lines.append(
+            f'  <li id="ref-{i}"><strong>{s["domain"]}{tier_label}</strong>: '
+            f'<a href="{s["url"]}" rel="noopener noreferrer">{title}</a></li>'
+        )
+    lines.append("</ol>")
+    return "\n".join(lines)
+
+
+def merge_references_into_body(body: str, new_bundle) -> str:
+    """Ensure the page body has a Sources / References section that includes
+    all sources from the new bundle, merged with any existing references.
+
+    De-duplicates by URL. Preserves order: existing sources first, new ones
+    appended (so existing [n] markers remain valid).
+
+    If no References block exists, appends a new one at the end of body.
+    """
+    if new_bundle is None or not getattr(new_bundle, "sources", None):
+        return body
+
+    existing = _extract_existing_sources(body)
+    existing_urls = {e["url"] for e in existing}
+
+    # Add new sources that aren't already there
+    merged = list(existing)
+    for s in new_bundle.sources:
+        if s.url in existing_urls:
+            continue
+        merged.append({
+            "domain": s.domain,
+            "url": s.url,
+            "title": s.title or s.domain,
+            "tier": s.tier or "",
+        })
+        existing_urls.add(s.url)
+
+    new_block = _build_merged_refs_html(merged)
+
+    # Replace or append
+    if _REFS_BLOCK_RX.search(body):
+        return _REFS_BLOCK_RX.sub(new_block, body, count=1)
+    return body.rstrip() + "\n\n" + new_block + "\n"
+
+
+# ----------------------------------------------------------------------------
 # Authority scoring (persists to content_authority_score)
 # ----------------------------------------------------------------------------
 

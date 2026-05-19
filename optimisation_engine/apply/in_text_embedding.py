@@ -140,7 +140,23 @@ def build_brief(opportunity: dict) -> ChangeBrief:
 
     rewritten = (gen.output or {}).get("rewritten_paragraph") or ""
 
-    # Tag-preservation check
+    # Deterministic em-dash strip on the LLM output (safety net)
+    from optimisation_engine.apply._citation_renderer import strip_em_dashes
+    rewritten = strip_em_dashes(rewritten)
+
+    # If LLM removed a <strong> tag, try to restore it by wrapping the same
+    # word that was originally wrapped (deterministic safety net)
+    strong_matches_before = re.findall(r"<strong>([^<]+)</strong>", intro or "", flags=re.IGNORECASE)
+    strong_count_after = len(re.findall(r"<strong\b", rewritten, flags=re.IGNORECASE))
+    if strong_matches_before and strong_count_after < len(strong_matches_before):
+        # For each missing <strong>X</strong>, wrap the first occurrence of X in rewritten
+        for term in strong_matches_before:
+            if f"<strong>{term}</strong>" in rewritten:
+                continue
+            if term in rewritten:
+                rewritten = rewritten.replace(term, f"<strong>{term}</strong>", 1)
+
+    # Tag-preservation check (after deterministic fixes)
     a_count_before = len(re.findall(r"<a\b", intro or "", flags=re.IGNORECASE))
     a_count_after = len(re.findall(r"<a\b", rewritten, flags=re.IGNORECASE))
     strong_before = len(re.findall(r"<strong\b", intro or "", flags=re.IGNORECASE))
@@ -197,10 +213,16 @@ def apply(brief: ChangeBrief) -> dict:
     if start is None or end is None or not intro_original or not new_para:
         raise ApplyError("brief.internal_data missing intro positioning or rewritten_paragraph")
 
+    research_bundle = brief.internal_data.get("research_bundle")
+
     def _edit(b: ChangeBrief) -> tuple[str, str]:
+        from optimisation_engine.apply._citation_renderer import merge_references_into_body
+
         fm, body = read(path)
         before = intro_original
         new_body = body[:start] + new_para + body[end:]
+        if research_bundle is not None:
+            new_body = merge_references_into_body(new_body, research_bundle)
         ok, det = valid_markdown_after_edit(new_body)
         if not ok:
             raise ApplyError(f"post-edit markdown validation failed: {det}")

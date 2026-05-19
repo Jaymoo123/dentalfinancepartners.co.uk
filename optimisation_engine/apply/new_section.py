@@ -208,6 +208,7 @@ def build_brief(opportunity: dict) -> ChangeBrief:
         return brief
 
     # --- Generate body (research-grounded) -----------------------------------
+    corrective_context = opportunity.get("_corrective_context")
     try:
         gen = write_new_section_body(
             site_key=site_key,
@@ -218,6 +219,7 @@ def build_brief(opportunity: dict) -> ChangeBrief:
             primary_query=primary_q,
             cluster=cluster,
             research_bundle=research_bundle,
+            corrective_context=corrective_context,
         )
     except Exception as exc:
         brief.add_validation("body_generation", False, f"LLM call failed: {type(exc).__name__}: {exc}")
@@ -296,9 +298,14 @@ def apply(brief: ChangeBrief) -> dict:
     sources_used = sorted({s.domain for s in (research_bundle.sources if research_bundle else [])})
 
     def _edit(b: ChangeBrief) -> tuple[str, str]:
+        from optimisation_engine.apply._citation_renderer import merge_references_into_body
+
         fm, body = read(path)
         before = body[max(0, offset - 200) : offset + 200] if 0 <= offset <= len(body) else body[:600]
         new_body = body[:offset] + section_block + body[offset:]
+        # Merge a page-level References / Sources section with all bundle sources
+        if research_bundle is not None:
+            new_body = merge_references_into_body(new_body, research_bundle)
         ok, det = valid_markdown_after_edit(new_body)
         if not ok:
             raise ApplyError(f"post-edit markdown validation failed: {det}")

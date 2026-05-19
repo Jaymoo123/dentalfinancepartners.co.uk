@@ -75,6 +75,7 @@ def write_new_section_body(
     primary_query: str,
     cluster: list[str],
     research_bundle=None,  # ResearchBundle or None
+    corrective_context: str | None = None,  # injected on retry from self_heal
 ) -> ReasoningResult:
     """Generate the body for a new H2 section.
 
@@ -118,6 +119,7 @@ existing structure: <p>...</p> paragraphs and optionally <ul><li>...</li></ul>
 for lists. DO NOT include the H2 heading itself — start with the first <p>.
 {citation_rules}
 {BRAND_VOICE_RULES}{get_site_voice_block(site_key)}
+{corrective_context or ""}
 """
     return run_reasoning(
         endpoint_name="apply_new_section_body",
@@ -240,7 +242,7 @@ should:
         ],
         validators=[
             lambda o: (True, None) if isinstance(o.get("rewritten_paragraph"), str) and len(o["rewritten_paragraph"]) > 30 else (False, "rewritten_paragraph missing"),
-            no_em_dashes("rewritten_paragraph"),
+            # Em-dash check removed — caller does deterministic strip after LLM call
             # Must contain at least one variant
             lambda o: (
                 (True, None)
