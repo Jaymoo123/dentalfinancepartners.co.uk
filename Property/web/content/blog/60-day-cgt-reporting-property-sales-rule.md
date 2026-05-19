@@ -29,7 +29,16 @@ dateModified: '2026-05-19'
 reviewedBy: ICAEW Qualified Senior Reviewer
 reviewerCredentials: Chartered Accountant (ACA, ICAEW), Property Tax Specialist
 reviewedAt: '2026-05-19'
-editorialNote: metaTitle and metaDescription rewritten via optimisation engine after GSC CTR analysis.
+editorialNote: Added section 'HMRC CGT Reporting Requirements for 2026' grounded in 7 authority sources.
+sourcesVerifiedAt: '2026-05-19'
+sourceDomains:
+- accaglobal.com
+- aka.hmrc.gov.uk
+- att.org.uk
+- fca.org.uk
+- gov.uk
+- icaew.com
+- taxscape.deloitte.com
 ---
 <p>The <strong>60 day CGT reporting property</strong> rule requires UK property sellers to notify HMRC of most residential property disposals within 60 days of completion. This applies whether you owe capital gains tax or not, and failure to comply can result in significant penalties.</p>
 <p>Introduced in April 2020 for non-residents and extended to UK residents in October 2021, this rule has caught many landlords off-guard. Unlike the traditional self-assessment deadline, you cannot wait until January following the tax year to report your property sale.</p>
@@ -74,6 +83,10 @@ editorialNote: metaTitle and metaDescription rewritten via optimisation engine a
 </ol>
 <p>If you do not have a Government Gateway account, you need to register first. This can take several days, so start the process as soon as you exchange contracts.</p>
 
+
+
+<h2>HMRC CGT Reporting Requirements for 2026</h2>
+<p>From 6 April 2026, UK residents disposing of residential property must report and pay any Capital Gains Tax (CGT) within 60 days of completion <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. This deadline applies to most sales of UK residential property where a gain is chargeable <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. The process involves gathering the necessary documents, calculating the gain, submitting a return via HMRC's online service, and paying the tax due.</p><p>To report a property sale, you will need the property address, sale price, acquisition details (including purchase price and date), and records of any allowable costs such as estate agents' and solicitors' fees or improvement works <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. You must also detail any reliefs claimed, such as Private Residence Relief, and provide an estimate of the tax payable. The return is submitted through the Capital Gains Tax on UK Property service on gov.uk <sup><a href="#ref-6" id="cite-6">[6]</a></sup>.</p><p>The 60-day clock starts on the completion date, not the exchange date <sup><a href="#ref-5" id="cite-5">[5]</a></sup>. For the 2026/27 tax year, the CGT rates on residential property are 18% for basic rate taxpayers and 24% for higher rate taxpayers <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. The tax must be paid at the time of submission. If your total gains for the year are below the annual exempt amount of £3,000, you do not need to report or pay CGT <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. Exemptions also apply where full Private Residence Relief is available, or for no gain/no loss transfers between spouses or civil partners <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p><p>Failure to comply with the 60-day rule triggers penalties. An initial £100 fixed penalty applies even if no tax is owed, with further penalties of up to 5% of the tax due after 12 months <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. Interest also accrues on any unpaid tax at the current HMRC rate. Note that even after filing the 60-day return, you must still include the disposal in your annual Self Assessment tax return, claiming credit for the tax already paid <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
 <h2>Penalties for Late Reporting</h2>
 <p>HMRC imposes automatic penalties for failing to meet the 60-day deadline:</p>
 <ul>
