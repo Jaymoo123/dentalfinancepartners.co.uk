@@ -1,46 +1,54 @@
 """
-apply_new_page — build a complete new blog post markdown file.
+apply_new_page — create a complete new blog post from an optimisation opportunity.
 
-The HEAVIEST of the apply modules. Generates frontmatter (title, metaTitle,
-metaDescription, h1, summary, faqs, schema) AND a full HTML-in-markdown
-body from the Action Specifier's outline.
+Refactored to delegate to optimisation_engine.blog_generator (the consolidated
+module). This file is now a thin bridge:
+  1. build_brief() does lightweight pre-LLM validation (slug doesn't exist, etc.)
+  2. apply() constructs an ephemeral Topic from the opportunity and calls
+     blog_generator's content_pipeline.generate_content() + output_writer.write_blog()
+     inside the apply_lifecycle (which handles git commit + audit log).
+
+Why: previously new_page.py had its own ~400-line LLM pipeline (write_new_page_content
+in _content_writer.py) that duplicated the consolidated generator. Every prompt
+improvement had to be applied twice. After this refactor, the optimisation queue
+benefits from every prompt improvement made for topic-driven generation
+automatically, and vice versa.
 
 Safety:
-  - Target slug must NOT already exist as a file
-  - All generated text validated against brand voice
-  - Frontmatter must round-trip parse
-  - Word count must reach 50% of the target (proxy for completeness)
+  - Pre-LLM: target slug must NOT already exist as a file (no clobber).
+  - Routing: the consolidated generator's three-layer crossover guard
+    refuses to write outside the site's expected directory.
+  - LLM: the same hard rules apply (banned phrases, citation density gate,
+    cited-only Sources, em-dash strip, etc.).
 """
 from __future__ import annotations
 
-import json
 import sys
-from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from optimisation_engine.apply._content_writer import write_new_page_content  # noqa: E402
 from optimisation_engine.apply.base import (  # noqa: E402
     ApplyError,
     run_apply_lifecycle,
-    slug_to_path,
 )
 from optimisation_engine.apply.brief import ChangeBrief  # noqa: E402
-from optimisation_engine.apply.frontmatter_utils import (  # noqa: E402
-    estimate_word_count,
-    read,
-    write,
-)
-from optimisation_engine.apply.validators import no_banned_chars  # noqa: E402
-from optimisation_engine.config import get_site  # noqa: E402
 
 CHANGE_TYPE = "new_content"
 
 
 def build_brief(opportunity: dict) -> ChangeBrief:
+    """Lightweight pre-LLM checks. No content generation happens here —
+    that's deferred to apply() to avoid spending LLM budget on briefs that
+    won't ship."""
+    from optimisation_engine.blog_generator.generate import get_site_config
+    from optimisation_engine.blog_generator.routing_safety import (
+        SiteRoutingError,
+        resolve_output_path,
+    )
+
     site_key = opportunity["site_key"]
     primary_q = opportunity.get("primary_query") or ""
     cluster = opportunity.get("target_query_cluster") or [primary_q]
@@ -50,16 +58,54 @@ def build_brief(opportunity: dict) -> ChangeBrief:
     np_patch = patch.get("new_page") or {}
 
     proposed_slug = np_patch.get("proposed_slug") or ""
-    page_type = np_patch.get("page_type") or "blog_post"
     primary_h1 = np_patch.get("primary_h1") or ""
-    section_outline = np_patch.get("section_outline") or []
-    schema_to_include = np_patch.get("schema_to_include") or ["Article", "BreadcrumbList"]
+    page_type = np_patch.get("page_type") or "blog_post"
     target_words = int(np_patch.get("target_word_count") or 1500)
 
-    site = get_site(site_key)
-    target_url = f"https://{site['domain']}/blog/{proposed_slug}"
-    proposed_path = slug_to_path(site_key, proposed_slug) if proposed_slug else None
-    rel_path = str(proposed_path.relative_to(ROOT)) if proposed_path else ""
+    # Resolve the target path through the consolidated module's safety guard.
+    # If the site_key isn't registered or the path would escape the site dir,
+    # this raises.
+    try:
+        site_config = get_site_config(site_key)
+    except ValueError as exc:
+        # Construct a minimal brief so the walker can render the error
+        brief = ChangeBrief(
+            apply_module="new_page",
+            site_key=site_key,
+            target_url="",
+            target_file_path="",
+            opportunity_id=opportunity.get("id"),
+            files_to_modify=[],
+        )
+        brief.add_validation("site_key_known", False, str(exc))
+        brief.finalise_can_apply()
+        return brief
+
+    target_path = None
+    rel_path = ""
+    if proposed_slug:
+        try:
+            target_path = resolve_output_path(
+                site_key=site_key,
+                output_dir_rel=site_config["output_dir"],
+                slug=proposed_slug,
+            )
+            rel_path = str(target_path.relative_to(ROOT))
+        except SiteRoutingError as exc:
+            # Surface as a fatal validation failure rather than crashing
+            brief = ChangeBrief(
+                apply_module="new_page",
+                site_key=site_key,
+                target_url="",
+                target_file_path="",
+                opportunity_id=opportunity.get("id"),
+                files_to_modify=[],
+            )
+            brief.add_validation("path_resolvable", False, str(exc))
+            brief.finalise_can_apply()
+            return brief
+
+    target_url = f"{site_config['site_base_url'].rstrip('/')}/blog/{proposed_slug}" if proposed_slug else ""
 
     brief = ChangeBrief(
         apply_module="new_page",
@@ -71,10 +117,10 @@ def build_brief(opportunity: dict) -> ChangeBrief:
     )
 
     brief.current_state = {
-        "site": site["display_name"],
+        "site": site_config["display_name"],
         "proposed_slug": proposed_slug,
         "proposed_path": rel_path,
-        "slug_exists_already": bool(proposed_path and proposed_path.exists()),
+        "slug_exists_already": bool(target_path and target_path.exists()),
     }
 
     brief.opportunity_rationale = opportunity.get("rationale") or plan.get("rationale") or ""
@@ -86,315 +132,104 @@ def build_brief(opportunity: dict) -> ChangeBrief:
         "score": opportunity.get("score"),
         "action_specifier_confidence": opportunity.get("action_plan_confidence"),
     }
-
-    # Pre-LLM validators
-    brief.add_validation(
-        "slug_present",
-        bool(proposed_slug and len(proposed_slug) >= 6),
-        f"slug={proposed_slug!r}",
-    )
-    brief.add_validation(
-        "slug_does_not_exist",
-        not (proposed_path and proposed_path.exists()),
-        "" if not (proposed_path and proposed_path.exists()) else f"file already exists: {rel_path}",
-    )
-    brief.add_validation(
-        "primary_h1_present",
-        bool(primary_h1 and 10 <= len(primary_h1) <= 100),
-        f"h1_len={len(primary_h1) if primary_h1 else 0}",
-    )
-    brief.add_validation(
-        "section_outline_substantive",
-        len(section_outline) >= 3,
-        f"{len(section_outline)} sections",
-    )
-    brief.add_validation(
-        "target_word_count_realistic",
-        500 <= target_words <= 4000,
-        f"target={target_words}",
-    )
-    ok, det = no_banned_chars(primary_h1)
-    brief.add_validation("h1_no_banned_chars", ok, det)
-
-    if brief.blocking_issues:
-        brief.change_summary = f"Create new page /blog/{proposed_slug} (blocked — see validators)"
-        brief.change_diff = {
-            "proposed_slug": proposed_slug,
-            "proposed_path": rel_path,
-            "primary_h1": primary_h1,
-            "section_outline": section_outline,
-            "target_word_count": target_words,
-            "content_preview": "(skipped — pre-LLM validators failed)",
-        }
-        brief.internal_data["np_patch"] = np_patch
-        brief.finalise_can_apply()
-        return brief
-
-    # --- Research synthesis (multi-tier source pyramid) ---------------------
-    from optimisation_engine.apply._citation_renderer import (
-        assemble_final_body,
-        citation_density_meets_minimum,
-        citation_diversity_meets_minimum,
-    )
-    from optimisation_engine.apply._content_writer import write_new_page_content
-    from optimisation_engine.reasoning.research_synthesizer import synthesize_research
-
-    try:
-        research_bundle = synthesize_research(
-            topic_query=primary_q,
-            site_key=site_key,
-            fallback_queries=[q for q in cluster if q and q.lower() != primary_q.lower()][:3],
-        )
-    except Exception as exc:
-        brief.add_validation("research_synthesis", False, f"research failed: {type(exc).__name__}: {exc}")
-        brief.finalise_can_apply()
-        return brief
-
-    # Thin bundle = topic genuinely lacks grounded authority content. Relax
-    # citation requirements rather than force fabrication.
-    productive_domains = {s.domain for s in research_bundle.sources if s.n_claims > 0}
-    thin_bundle = (
-        len(productive_domains) < 2
-        or len(research_bundle.claims) < 4
-        or not research_bundle.canonical_sources_present
-    )
-    bundle_for_writer = None if thin_bundle else research_bundle
-
-    try:
-        gen = write_new_page_content(
-            site_key=site_key,
-            proposed_slug=proposed_slug,
-            page_type=page_type,
-            primary_h1=primary_h1,
-            section_outline=section_outline,
-            schema_to_include=schema_to_include,
-            target_word_count=target_words,
-            primary_query=primary_q,
-            cluster=cluster,
-            research_bundle=bundle_for_writer,
-        )
-    except Exception as exc:
-        brief.add_validation("page_generation", False, f"LLM call failed: {type(exc).__name__}: {exc}")
-        brief.finalise_can_apply()
-        return brief
-
-    content = gen.output or {}
-
-    # Deterministic metaTitle / metaDescription length fixes — LLM occasionally
-    # emits over-length values; truncate to spec rather than rejecting the
-    # whole generation.
-    if isinstance(content.get("metaTitle"), str) and len(content["metaTitle"]) > 60:
-        original = content["metaTitle"]
-        truncated = original[:60].rsplit(" ", 1)[0].rstrip(",;:-—– ")
-        if len(truncated) < 30:
-            truncated = original[:60].rstrip(",;:-—– ")
-        content["metaTitle"] = truncated
-    if isinstance(content.get("metaDescription"), str):
-        md = content["metaDescription"]
-        if len(md) > 170:
-            truncated = md[:165].rsplit(" ", 1)[0].rstrip(",;:-—– ") + "."
-            content["metaDescription"] = truncated
-
-    raw_body_html = content.get("body_html") or ""
-    # Render footnote links WITHOUT appending the references block — we want
-    # the Sources list trimmed to cited-only, which merge_references_into_body
-    # does. assemble_final_body(append_references=True) would dump every bundle
-    # source whether cited or not.
-    body_html = assemble_final_body(
-        raw_body_html, research_bundle, append_references=False
-    )
-    if not thin_bundle:
-        from optimisation_engine.apply._citation_renderer import merge_references_into_body
-        body_html = merge_references_into_body(body_html, research_bundle)
-    content["body_html"] = body_html  # so apply step uses the rendered version
-    from optimisation_engine.apply.frontmatter_utils import estimate_word_count
-    word_count = estimate_word_count(body_html)
-
-    # If writer chose to emit 0 cites despite a bundle, respect its judgement
-    import re as _re_local
-    n_cites_in_body = len(_re_local.findall(r'<sup><a href="#ref-\d+"', body_html))
-    if n_cites_in_body == 0 and not thin_bundle:
-        thin_bundle = True
-
-    # Citation validators — skip in thin-bundle mode
-    if thin_bundle:
-        ok_density, det_density = True, f"thin_bundle: {len(research_bundle.claims)} claims, {len(productive_domains)} productive domains — citations not required"
-        ok_diversity, det_diversity = True, det_density
-    else:
-        ok_density, det_density = citation_density_meets_minimum(raw_body_html, min_per_1000_words=4.0)
-        ok_diversity, det_diversity = citation_diversity_meets_minimum(
-            raw_body_html, research_bundle, min_unique_sources=3, min_tier_types=2
-        )
-
-    brief.change_summary = (
-        f"Create new page /blog/{proposed_slug} (research-grounded, "
-        f"{len(research_bundle.sources)} sources, {research_bundle.diversity_tier_count} tiers)"
-    )
+    brief.change_summary = f"Create new page /blog/{proposed_slug} via consolidated generator"
     brief.change_diff = {
         "proposed_slug": proposed_slug,
         "proposed_path": rel_path,
+        "primary_keyword": primary_q,
+        "cluster": cluster[:5],
         "page_type": page_type,
-        "generated_title": content.get("title"),
-        "generated_metaTitle": content.get("metaTitle"),
-        "generated_metaDescription": content.get("metaDescription"),
-        "generated_h1": content.get("h1") or primary_h1,
-        "generated_summary": content.get("summary"),
-        "section_outline_target": section_outline,
-        "schema_to_include": schema_to_include,
         "target_word_count": target_words,
-        "generated_body_word_count": word_count,
-        "generated_body_preview_first_1500_chars": body_html[:1500],
-        "generated_faqs": content.get("faqs") or [],
-        "research_sources_count": len(research_bundle.sources),
-        "research_claims_count": len(research_bundle.claims),
-        "research_tiers_covered": research_bundle.diversity_tier_count,
-        "research_canonical_present": research_bundle.canonical_sources_present,
-        "research_cost_usd": round(research_bundle.total_serper_cost_usd + research_bundle.total_deepseek_cost_usd, 4),
-        "citation_density_detail": det_density,
-        "citation_diversity_detail": det_diversity,
-        "cited_source_domains": sorted({s.domain for s in research_bundle.sources}),
-        "llm_confidence": gen.confidence,
-        "llm_cost_usd": round(gen.cost_usd, 6),
-        "llm_validator_notes": gen.notes,
+        "generator": "optimisation_engine.blog_generator",
     }
-    brief.internal_data["np_patch"] = np_patch
-    brief.internal_data["generated_content"] = content
-    brief.internal_data["generated_word_count"] = word_count
-    brief.internal_data["research_bundle"] = research_bundle
 
-    # Post-LLM validators
+    # Pre-LLM validators (cheap, deterministic)
+    brief.add_validation("slug_present", bool(proposed_slug and len(proposed_slug) >= 6), f"slug={proposed_slug!r}")
     brief.add_validation(
-        "content_generation_ok",
-        gen.auto_applicable and bool(body_html),
-        f"llm_confidence={gen.confidence}, body_chars={len(body_html)}, notes={gen.notes}",
+        "slug_does_not_exist",
+        not (target_path and target_path.exists()),
+        "" if not (target_path and target_path.exists()) else f"file already exists: {rel_path}",
     )
-    # Word count threshold: 40% of target, but capped at 500 (LLM consistently
-    # tops out around 700-1500 words regardless of target) and floored at 400
-    # so we don't ship sub-stub pages.
-    min_words = max(min(int(target_words * 0.4), 500), 400)
-    brief.add_validation(
-        "generated_word_count_meets_minimum",
-        word_count >= min_words,
-        f"got {word_count} words vs minimum {min_words} (target was {target_words})",
-    )
-    # Length validators on the deterministically-truncated meta fields
-    mt = content.get("metaTitle") or ""
-    md = content.get("metaDescription") or ""
-    brief.add_validation(
-        "metaTitle_length_ok",
-        isinstance(mt, str) and 1 <= len(mt) <= 60,
-        f"metaTitle len={len(mt)} (must be 1..60)",
-    )
-    brief.add_validation(
-        "metaDescription_length_ok",
-        isinstance(md, str) and 50 <= len(md) <= 170,
-        f"metaDescription len={len(md)} (must be 50..170)",
-    )
-    brief.add_validation("citation_density", ok_density, det_density)
-    brief.add_validation("citation_diversity", ok_diversity, det_diversity)
-    # Canonical not required in thin-bundle mode
-    canonical_ok = research_bundle.canonical_sources_present or thin_bundle
-    brief.add_validation(
-        "canonical_source_cited",
-        canonical_ok,
-        f"canonical_present={research_bundle.canonical_sources_present}, thin_bundle={thin_bundle}",
-    )
+    brief.add_validation("primary_query_present", bool(primary_q), f"primary_query={primary_q!r}")
+
+    # Stash opportunity payload for apply() to consume
+    brief.internal_data["opportunity"] = opportunity
+    brief.internal_data["np_patch"] = np_patch
+    brief.internal_data["target_path"] = str(target_path) if target_path else ""
 
     brief.finalise_can_apply()
     return brief
 
 
 def apply(brief: ChangeBrief) -> dict:
-    np_patch = brief.internal_data.get("np_patch") or {}
-    content = brief.internal_data.get("generated_content")
-    if not content:
-        raise ApplyError("brief.internal_data missing generated_content")
+    """Generate the blog via the consolidated pipeline and write it inside
+    the apply lifecycle (so git commit + audit log are handled)."""
+    from optimisation_engine.blog_generator.content_pipeline import generate_content
+    from optimisation_engine.blog_generator.generate import get_site_config
+    from optimisation_engine.blog_generator.output_writer import write_blog
+    from optimisation_engine.blog_generator.topic_repository import Topic
 
-    proposed_slug = np_patch.get("proposed_slug")
+    opportunity = brief.internal_data.get("opportunity") or {}
+    np_patch = brief.internal_data.get("np_patch") or {}
+    target_path_str = brief.internal_data.get("target_path") or ""
+    if not target_path_str:
+        raise ApplyError("brief.internal_data missing target_path — build_brief must have failed")
+
+    site_config = get_site_config(brief.site_key)
+
+    # Build the ephemeral Topic — the optimisation_opportunity row never
+    # gets inserted into blog_topics_*. We just pass the data inline.
+    proposed_slug = np_patch.get("proposed_slug") or ""
     primary_h1 = np_patch.get("primary_h1") or ""
+    primary_q = opportunity.get("primary_query") or ""
+    cluster = opportunity.get("target_query_cluster") or []
     target_words = int(np_patch.get("target_word_count") or 1500)
     page_type = np_patch.get("page_type") or "blog_post"
 
-    site_key = brief.site_key
-    site = get_site(site_key)
-    page_path = slug_to_path(site_key, proposed_slug)
-
-    # Re-confirm slug still doesn't exist (race condition safety)
-    if page_path.exists():
-        raise ApplyError(f"slug already taken at apply time: {page_path}")
-
-    body_html = content.get("body_html") or ""
-    word_count = brief.internal_data.get("generated_word_count") or estimate_word_count(body_html)
-    research_bundle = brief.internal_data.get("research_bundle")
-    # Derive sources_used from the body's actual Sources block (which has been
-    # trimmed to cited-only). Falls back to the full bundle if the block is missing.
-    body_html_for_sources = content.get("body_html") or ""
-    import re as _re_sources
-    cited_doms = sorted(set(_re_sources.findall(r"<strong>([^<]+)</strong>:\s*<a", body_html_for_sources)))
-    if cited_doms:
-        sources_used = cited_doms
-    else:
-        sources_used = sorted({s.domain for s in (research_bundle.sources if research_bundle else [])})
-
-    # Construct frontmatter
-    domain = site["domain"]
-    fm = {
-        "title": content.get("title") or primary_h1,
-        "slug": proposed_slug,
-        "canonical": f"https://{domain}/blog/{proposed_slug}",
-        "date": date.today().isoformat(),
-        "author": f"{site['display_name']} Editorial Team",
-        "category": np_patch.get("category") or "General",
-        "metaTitle": content.get("metaTitle") or "",
-        "metaDescription": content.get("metaDescription") or "",
-        "altText": f"{primary_h1} illustration",
-        "image": "",
-        "h1": content.get("h1") or primary_h1,
-        "summary": content.get("summary") or "",
-        "pageType": page_type,
-        "schema": "",  # filled by stamp_trust_signals
-        "faqs": content.get("faqs") or [],
-    }
-
-    # Ensure no banned chars escaped into any field
-    for k in ("title", "metaTitle", "metaDescription", "h1", "summary"):
-        if isinstance(fm.get(k), str):
-            ok, det = no_banned_chars(fm[k])
-            if not ok:
-                raise ApplyError(f"{k} contains banned char: {det}")
-
-    # Apply E-E-A-T trust signals + JSON-LD schema
-    from optimisation_engine.apply.base import stamp_trust_signals
-    stamp_trust_signals(
-        fm=fm,
-        site_key=brief.site_key,
-        sources_used=sources_used,
-        editorial_note=(
-            f"New {page_type} grounded in research across {len(sources_used)} authority sources. "
-            f"{research_bundle.diversity_tier_count if research_bundle else 0} source tiers represented."
-        ),
+    topic = Topic(
+        id=f"opportunity-{opportunity.get('id', 'unknown')}",
+        topic_title=primary_h1 or primary_q,
+        primary_keyword=primary_q,
+        secondary_keywords=[k for k in cluster if k and k != primary_q],
+        user_intent="informational",
+        target_search_volume=opportunity.get("score") or "unknown",
+        content_tier="pillar" if target_words >= 2500 else "cluster",
+        suggested_slug=proposed_slug,
     )
 
-    # Construct file path (only set if everything passes)
-    page_path.parent.mkdir(parents=True, exist_ok=True)
-    page_path.write_text("---\nplaceholder: true\n---\n", encoding="utf-8")
+    # Run the full pipeline
+    result = generate_content(site_config=site_config, topic=topic)
+
+    if result.issues:
+        raise ApplyError(
+            "Consolidated generator blocked the change:\n  " + "\n  ".join(result.issues)
+        )
+
+    # Force the slug to match the opportunity's proposed_slug
+    # (the LLM may generate a different one; we want consistency)
+    if proposed_slug:
+        result.fields["slug"] = proposed_slug
 
     def _edit(b: ChangeBrief) -> tuple[str, str]:
-        write(page_path, fm, body_html)
-        return "(new file)", (
-            f"slug={proposed_slug} word_count={word_count} faqs={len(fm['faqs'])} "
-            f"sources={len(sources_used)} schema_chars={len(fm.get('schema') or '')}"
+        out_path = write_blog(
+            site_config=site_config,
+            fields=result.fields,
+            body_html=result.body_html,
+            cited_sources=result.cited_sources,
+            image=result.image,
+            dry_run=False,
         )
+        summary = (
+            f"slug={proposed_slug} sources_cited={len(result.cited_sources)} "
+            f"bundle_sources={result.research_summary['n_sources']} "
+            f"llm=${result.llm_cost_usd:.4f} research=${result.research_cost_usd:.4f}"
+        )
+        return "(new file)", summary
 
-    try:
-        return run_apply_lifecycle(
-            brief=brief,
-            edit_fn=_edit,
-            change_type=CHANGE_TYPE,
-            confidence="low",  # new pages are highest-risk — queue for human review
-            auto_applied=False,  # never autonomously ship a new page; always require review
-        )
-    except Exception:
-        if page_path.exists():
-            page_path.unlink()
-        raise
+    return run_apply_lifecycle(
+        brief=brief,
+        edit_fn=_edit,
+        change_type=CHANGE_TYPE,
+        confidence="low",  # new pages stay low-confidence; always queue for human review
+        auto_applied=False,  # never autonomously ship a new page
+    )

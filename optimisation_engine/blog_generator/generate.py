@@ -41,6 +41,7 @@ def generate_blog_for(
     site_key: str,
     *,
     topic_keyword: str | None = None,
+    topic: Topic | None = None,
     dry_run: bool = False,
     skip_mark_done: bool = False,
 ) -> dict:
@@ -48,8 +49,12 @@ def generate_blog_for(
 
     Args:
       site_key: which site to generate for. Must be a key in SITE_CONFIGS.
-      topic_keyword: if provided, force generation for this specific topic.
-        Otherwise the next-priority unused topic is selected.
+      topic_keyword: if provided, look up this specific topic from the
+        site's blog_topics_* table.
+      topic: ephemeral Topic object — bypass the table lookup entirely
+        and generate for this in-memory topic. Used by the optimisation
+        engine to drive generation from optimisation_opportunities rows
+        without inserting a topic-table row first. Implies skip_mark_done.
       dry_run: if True, skip writing the file and skip marking the topic done.
       skip_mark_done: if True, write the file but don't mark the topic
         as used. Useful for one-off regenerations.
@@ -58,7 +63,10 @@ def generate_blog_for(
     """
     config = get_site_config(site_key)
 
-    if topic_keyword:
+    if topic is not None:
+        # Ephemeral topic mode — caller built the Topic in memory.
+        skip_mark_done = True
+    elif topic_keyword:
         topic = fetch_topic_by_keyword(config, topic_keyword)
         if not topic:
             raise RuntimeError(f"No topic matching keyword={topic_keyword!r} in {config['topic_table']}")
