@@ -220,13 +220,14 @@ def run_apply_lifecycle(
     change_type: str,
     confidence: str = "medium",
     auto_applied: bool = True,
+    commit: bool | None = None,
 ) -> dict:
     """Generic apply lifecycle:
       1. Verify brief.can_apply
       2. Backup file
       3. Run edit_fn -> (before_snapshot, after_snapshot)
       4. Run post-edit validators if module attached them via brief
-      5. Git commit
+      5. (optional) Git commit
       6. Record optimisation_change
       7. Link opportunity -> change
       8. Clean up backup on success; restore on failure
@@ -234,6 +235,11 @@ def run_apply_lifecycle(
     Args:
         edit_fn: closure that performs the file edit and returns (before, after) snapshots.
                  If raises, file is restored from backup.
+        commit: whether to make a git commit after a successful edit.
+                None (default) reads from the OPTIMISATION_AUTO_COMMIT env var
+                (true/1/yes = commit; anything else = no commit). Per-call
+                override is also accepted. Default behaviour is NO COMMIT —
+                writes the file but leaves git tracking to the operator.
 
     Returns: {status, commit_hash, change_id, brief_summary}
     """
@@ -257,19 +263,26 @@ def run_apply_lifecycle(
             restore_file(bak, ap)
         raise ApplyError(f"edit_fn raised {type(exc).__name__}: {exc}") from exc
 
-    # Commit
-    commit_msg = build_commit_message(
-        site_key=brief.site_key,
-        change_type=change_type,
-        summary=brief.change_summary,
-        brief_excerpt=brief.opportunity_rationale,
-    )
-    try:
-        commit_hash = stage_and_commit(files=brief.files_to_modify, message=commit_msg)
-    except GitError as exc:
-        for bak, ap in backups:
-            restore_file(bak, ap)
-        raise ApplyError(f"git commit failed: {exc}") from exc
+    # Resolve commit flag: explicit kwarg > env var > default False
+    if commit is None:
+        commit_env = (os.environ.get("OPTIMISATION_AUTO_COMMIT") or "").strip().lower()
+        commit = commit_env in {"1", "true", "yes", "on"}
+
+    # Commit (or skip)
+    commit_hash = ""
+    if commit:
+        commit_msg = build_commit_message(
+            site_key=brief.site_key,
+            change_type=change_type,
+            summary=brief.change_summary,
+            brief_excerpt=brief.opportunity_rationale,
+        )
+        try:
+            commit_hash = stage_and_commit(files=brief.files_to_modify, message=commit_msg)
+        except GitError as exc:
+            for bak, ap in backups:
+                restore_file(bak, ap)
+            raise ApplyError(f"git commit failed: {exc}") from exc
 
     # All good — clean up backups
     for bak, _ap in backups:
