@@ -7,10 +7,12 @@ assertion at import time. Misconfigurations fail loudly here, not at runtime.
 from optimisation_engine.blog_generator.routing_safety import assert_site_config_consistent
 
 from optimisation_engine.blog_generator.site_configs import dentists as _dentists
+from optimisation_engine.blog_generator.site_configs import property as _property
 
 
 SITE_CONFIGS: dict[str, dict] = {
     "dentists": _dentists.SITE_CONFIG,
+    "property": _property.SITE_CONFIG,
 }
 
 

@@ -8,24 +8,24 @@ tools may also read).
 """
 from __future__ import annotations
 
-import sys
+import importlib.util
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
 
-# Allow `from config_supabase import ...` to resolve the Dentists config
-_DENTISTS_PIPELINE_DIR = ROOT / "Dentists" / "pipeline"
-sys.path.insert(0, str(_DENTISTS_PIPELINE_DIR))
-try:
-    from config_supabase import (  # type: ignore
-        BLOG_SYSTEM_PROMPT as _BLOG_SYSTEM_PROMPT,
-        POST_CATEGORIES as _POST_CATEGORIES,
-        INTERNAL_LINK_SLUGS as _INTERNAL_LINK_SLUGS,
-        DENTAL_ANCHOR_TERMS as _ANCHOR_TERMS,
-        get_relevant_audience_link as _audience_link_fn,
-    )
-finally:
-    sys.path.remove(str(_DENTISTS_PIPELINE_DIR))
+# Load Dentists' config_supabase.py as a uniquely-named module so it doesn't
+# collide with other sites' config_supabase.py files in sys.modules cache.
+_CONFIG_PATH = ROOT / "Dentists" / "pipeline" / "config_supabase.py"
+_spec = importlib.util.spec_from_file_location("_dentists_config_supabase", _CONFIG_PATH)
+if _spec is None or _spec.loader is None:
+    raise ImportError(f"Cannot load Dentists config from {_CONFIG_PATH}")
+_mod = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(_mod)
+
+_BLOG_SYSTEM_PROMPT = _mod.BLOG_SYSTEM_PROMPT
+_POST_CATEGORIES = _mod.POST_CATEGORIES
+_INTERNAL_LINK_SLUGS = _mod.INTERNAL_LINK_SLUGS
+_ANCHOR_TERMS = _mod.DENTAL_ANCHOR_TERMS
 
 
 # Translate the existing function-based audience map into a static list of
