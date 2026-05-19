@@ -210,6 +210,16 @@ def apply(brief: ChangeBrief) -> dict:
     if proposed_slug:
         result.fields["slug"] = proposed_slug
 
+    # run_apply_lifecycle captures a "before" snapshot by reading the file at
+    # brief.target_file_path. For a new page that file doesn't exist yet, which
+    # would crash the lifecycle. Write a minimal placeholder so the snapshot
+    # works. _edit() will overwrite it with the real content.
+    from pathlib import Path as _Path
+    target_path = _Path(target_path_str)
+    target_path.parent.mkdir(parents=True, exist_ok=True)
+    if not target_path.exists():
+        target_path.write_text("---\nplaceholder: true\n---\n", encoding="utf-8")
+
     def _edit(b: ChangeBrief) -> tuple[str, str]:
         out_path = write_blog(
             site_config=site_config,
@@ -226,10 +236,19 @@ def apply(brief: ChangeBrief) -> dict:
         )
         return "(new file)", summary
 
-    return run_apply_lifecycle(
-        brief=brief,
-        edit_fn=_edit,
-        change_type=CHANGE_TYPE,
-        confidence="low",  # new pages stay low-confidence; always queue for human review
-        auto_applied=False,  # never autonomously ship a new page
-    )
+    try:
+        return run_apply_lifecycle(
+            brief=brief,
+            edit_fn=_edit,
+            change_type=CHANGE_TYPE,
+            confidence="low",  # new pages stay low-confidence; always queue for human review
+            auto_applied=False,  # never autonomously ship a new page
+        )
+    except Exception:
+        # If the lifecycle failed AFTER we wrote the placeholder but BEFORE
+        # _edit replaced it, clean up so we don't leave a placeholder on disk.
+        if target_path.exists():
+            content = target_path.read_text(encoding="utf-8", errors="ignore")
+            if "placeholder: true" in content[:200]:
+                target_path.unlink()
+        raise
