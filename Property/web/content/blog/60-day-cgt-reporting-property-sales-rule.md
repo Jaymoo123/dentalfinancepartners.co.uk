@@ -29,7 +29,7 @@ dateModified: '2026-05-19'
 reviewedBy: ICAEW Qualified Senior Reviewer
 reviewerCredentials: Chartered Accountant (ACA, ICAEW), Property Tax Specialist
 reviewedAt: '2026-05-19'
-editorialNote: Added section 'HMRC CGT Reporting Requirements for 2026' grounded in 7 authority sources.
+editorialNote: 'Backfilled Sources block: 6 authority citations.'
 sourcesVerifiedAt: '2026-05-19'
 sourceDomains:
 - accaglobal.com
@@ -38,7 +38,6 @@ sourceDomains:
 - fca.org.uk
 - gov.uk
 - icaew.com
-- taxscape.deloitte.com
 ---
 <p>The <strong>60 day CGT reporting property</strong> rule requires UK property sellers to notify HMRC of most residential property disposals within 60 days of completion. This applies whether you owe capital gains tax or not, and failure to comply can result in significant penalties.</p>
 <p>Introduced in April 2020 for non-residents and extended to UK residents in October 2021, this rule has caught many landlords off-guard. Unlike the traditional self-assessment deadline, you cannot wait until January following the tax year to report your property sale.</p>
@@ -142,3 +141,13 @@ sourceDomains:
 </ul>
 <p>These mistakes can trigger penalties and create ongoing compliance issues with HMRC.</p>
 <p>The 60-day reporting rule represents HMRC's move toward real-time tax reporting. With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becoming mandatory from April 2026, property investors face increasing digital reporting requirements across all aspects of their tax affairs. Consider how the 60-day rule fits into your broader tax compliance strategy, especially if you operate through a <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company</a> or manage a substantial property portfolio.</p>
+
+<h2>Sources</h2>
+<ol>
+  <li id="ref-1"><strong>gov.uk (canonical)</strong>: <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax/if-you-have-other-capital-gains-to-report" rel="noopener noreferrer">Report and pay your Capital Gains Tax: If you have other ... - GOV.UK</a></li>
+  <li id="ref-2"><strong>aka.hmrc.gov.uk (canonical)</strong>: <a href="http://aka.hmrc.gov.uk/cgt/property/calc-cgt.htm" rel="noopener noreferrer">Tax when you sell property: Work out your gain - GOV.UK</a></li>
+  <li id="ref-3"><strong>fca.org.uk (authority)</strong>: <a href="https://www.fca.org.uk/news/press-releases/fca-fines-kristo-kaarmann-failing-notify-significant-tax-issues" rel="noopener noreferrer">FCA fines Kristo Käärmann £350000 for failing to notify the FCA of ...</a></li>
+  <li id="ref-4"><strong>icaew.com (authority)</strong>: <a href="https://www.icaew.com/insights/tax-news/2026/feb-2026/prepare-for-2026-27-individuals" rel="noopener noreferrer">Prepare for 2026/27: Individuals - ICAEW.com</a></li>
+  <li id="ref-5"><strong>accaglobal.com (authority)</strong>: <a href="https://www.accaglobal.com/gb/en/technical-activities/uk-tech/in-practice-ezine-archive/in-practice-archive_2022/December/Exceptions-60-day-CGT-rules.html" rel="noopener noreferrer">Exceptions to the 60-day CGT rules - ACCA Global</a></li>
+  <li id="ref-6"><strong>att.org.uk (authority)</strong>: <a href="https://www.att.org.uk/cgt-uk-property-reporting-service-users-guide" rel="noopener noreferrer">CGT on UK Property Reporting Service - a user's guide</a></li>
+</ol>
