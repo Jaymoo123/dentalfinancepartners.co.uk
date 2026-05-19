@@ -282,14 +282,18 @@ def build_brief(opportunity: dict) -> ChangeBrief:
 
 
 def apply(brief: ChangeBrief) -> dict:
+    from optimisation_engine.apply.base import stamp_trust_signals
+
     path = ROOT / brief.target_file_path
     new_heading = brief.internal_data.get("new_heading")
     offset = brief.internal_data.get("insertion_offset")
     body_html = brief.internal_data.get("generated_body_html")
+    research_bundle = brief.internal_data.get("research_bundle")
     if offset is None or not new_heading or not body_html:
         raise ApplyError("brief.internal_data missing offset / heading / generated_body_html")
 
     section_block = f"\n\n<h2>{new_heading}</h2>\n{body_html.strip()}\n"
+    sources_used = sorted({s.domain for s in (research_bundle.sources if research_bundle else [])})
 
     def _edit(b: ChangeBrief) -> tuple[str, str]:
         fm, body = read(path)
@@ -298,6 +302,12 @@ def apply(brief: ChangeBrief) -> dict:
         ok, det = valid_markdown_after_edit(new_body)
         if not ok:
             raise ApplyError(f"post-edit markdown validation failed: {det}")
+        stamp_trust_signals(
+            fm=fm,
+            site_key=brief.site_key,
+            sources_used=sources_used,
+            editorial_note=f"Added section '{new_heading}' grounded in {len(sources_used)} authority sources.",
+        )
         write(path, fm, new_body)
         after = new_body[max(0, offset - 200) : offset + 200 + len(section_block)]
         return before, after

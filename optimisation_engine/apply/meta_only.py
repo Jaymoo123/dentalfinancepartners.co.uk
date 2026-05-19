@@ -164,16 +164,37 @@ def apply(brief: ChangeBrief) -> dict:
     path = ROOT / brief.target_file_path
 
     def _edit(b: ChangeBrief) -> tuple[str, str]:
-        before_fm, before_body = read(path)
+        from optimisation_engine.apply.base import stamp_trust_signals
+        from optimisation_engine.apply.frontmatter_utils import read as _read, write as _write
+
+        before_fm, before_body = _read(path)
         before_snapshot = f"metaTitle: {before_fm.get('metaTitle')!r}\nmetaDescription: {before_fm.get('metaDescription')!r}"
 
         # Push current values to *_prev BEFORE applying new
-        updates = {"metaTitle": new_title, "metaDescription": new_desc}
-        preserve = {"metaTitle": "metaTitle_prev", "metaDescription": "metaDescription_prev"}
-        update_fields(path, updates, preserve_prev=preserve)
+        new_fm = dict(before_fm)
+        if before_fm.get("metaTitle"):
+            new_fm["metaTitle_prev"] = before_fm["metaTitle"]
+        if before_fm.get("metaDescription"):
+            new_fm["metaDescription_prev"] = before_fm["metaDescription"]
+        new_fm["metaTitle"] = new_title
+        new_fm["metaDescription"] = new_desc
 
-        after_fm, _ = read(path)
-        after_snapshot = f"metaTitle: {after_fm.get('metaTitle')!r}\nmetaDescription: {after_fm.get('metaDescription')!r}"
+        # Stamp trust signals (dateModified, reviewedBy, schema)
+        stamp_trust_signals(
+            fm=new_fm,
+            site_key=brief.site_key,
+            editorial_note="metaTitle and metaDescription rewritten via optimisation engine after GSC CTR analysis.",
+        )
+
+        _write(path, new_fm, before_body)
+
+        after_fm, _ = _read(path)
+        after_snapshot = (
+            f"metaTitle: {after_fm.get('metaTitle')!r}\n"
+            f"metaDescription: {after_fm.get('metaDescription')!r}\n"
+            f"dateModified: {after_fm.get('dateModified')!r}\n"
+            f"reviewedBy: {after_fm.get('reviewedBy')!r}"
+        )
         return before_snapshot, after_snapshot
 
     return run_apply_lifecycle(

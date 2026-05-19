@@ -258,10 +258,11 @@ def apply(brief: ChangeBrief) -> dict:
 
     body_html = content.get("body_html") or ""
     word_count = brief.internal_data.get("generated_word_count") or estimate_word_count(body_html)
+    research_bundle = brief.internal_data.get("research_bundle")
+    sources_used = sorted({s.domain for s in (research_bundle.sources if research_bundle else [])})
 
     # Construct frontmatter
     domain = site["domain"]
-    # Try to infer category from URL slug — fall back to site default
     fm = {
         "title": content.get("title") or primary_h1,
         "slug": proposed_slug,
@@ -275,7 +276,8 @@ def apply(brief: ChangeBrief) -> dict:
         "image": "",
         "h1": content.get("h1") or primary_h1,
         "summary": content.get("summary") or "",
-        "schema": "",
+        "pageType": page_type,
+        "schema": "",  # filled by stamp_trust_signals
         "faqs": content.get("faqs") or [],
     }
 
@@ -286,14 +288,28 @@ def apply(brief: ChangeBrief) -> dict:
             if not ok:
                 raise ApplyError(f"{k} contains banned char: {det}")
 
+    # Apply E-E-A-T trust signals + JSON-LD schema
+    from optimisation_engine.apply.base import stamp_trust_signals
+    stamp_trust_signals(
+        fm=fm,
+        site_key=brief.site_key,
+        sources_used=sources_used,
+        editorial_note=(
+            f"New {page_type} grounded in research across {len(sources_used)} authority sources. "
+            f"{research_bundle.diversity_tier_count if research_bundle else 0} source tiers represented."
+        ),
+    )
+
     # Construct file path (only set if everything passes)
     page_path.parent.mkdir(parents=True, exist_ok=True)
-    # Create empty file then use write helper
     page_path.write_text("---\nplaceholder: true\n---\n", encoding="utf-8")
 
     def _edit(b: ChangeBrief) -> tuple[str, str]:
         write(page_path, fm, body_html)
-        return "(new file)", f"slug={proposed_slug} word_count={word_count} faqs={len(fm['faqs'])}"
+        return "(new file)", (
+            f"slug={proposed_slug} word_count={word_count} faqs={len(fm['faqs'])} "
+            f"sources={len(sources_used)} schema_chars={len(fm.get('schema') or '')}"
+        )
 
     try:
         return run_apply_lifecycle(

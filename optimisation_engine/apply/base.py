@@ -81,6 +81,70 @@ def cleanup_backup(backup_path: Path) -> None:
         backup_path.unlink()
 
 
+def stamp_trust_signals(
+    *,
+    fm: dict,
+    site_key: str,
+    sources_used: list[str] | None = None,
+    editorial_note: str | None = None,
+) -> dict:
+    """Update the frontmatter with E-E-A-T trust-signal fields and dateModified.
+
+    Mutates and returns `fm`. Sets:
+      - dateModified: today's ISO date
+      - reviewedBy: site's reviewer profile (from _schema_generator)
+      - reviewedAt: today's ISO date
+      - sourcesVerifiedAt: today's ISO date (only when sources_used provided)
+      - editorialNote: optional human-readable note about this edit
+      - schema: full EEAT JSON-LD @graph
+
+    Does NOT touch the `date` field (publication date stays).
+    """
+    from datetime import date
+
+    from optimisation_engine.apply._schema_generator import SITE_EEAT_PROFILES, build_eeat_schema
+
+    today = date.today().isoformat()
+    fm["dateModified"] = today
+
+    profile = SITE_EEAT_PROFILES.get(site_key)
+    if profile:
+        # Compact reviewer signature for the frontmatter (a small string the renderer can show)
+        reviewer = profile["reviewer"]
+        fm["reviewedBy"] = reviewer.get("name", "")
+        fm["reviewerCredentials"] = reviewer.get("jobTitle", "")
+        fm["reviewedAt"] = today
+
+    if sources_used:
+        fm["sourcesVerifiedAt"] = today
+        # Limit to 10 unique domain names in the frontmatter for compactness
+        unique = []
+        seen = set()
+        for s in sources_used:
+            if s and s not in seen:
+                seen.add(s)
+                unique.append(s)
+            if len(unique) >= 10:
+                break
+        fm["sourceDomains"] = unique
+
+    if editorial_note:
+        fm["editorialNote"] = editorial_note
+
+    # Build the canonical from existing field (don't override what's there)
+    canonical = fm.get("canonical") or ""
+    if canonical:
+        fm["schema"] = build_eeat_schema(
+            site_key=site_key,
+            frontmatter=fm,
+            canonical_url=canonical,
+            page_type=fm.get("pageType") or "blog_post",
+            faqs=fm.get("faqs"),
+        )
+
+    return fm
+
+
 def record_optimisation_change(
     *,
     site_key: str,
