@@ -29,7 +29,12 @@ dateModified: '2026-05-19'
 reviewedBy: ICAEW Qualified Senior Reviewer
 reviewerCredentials: Chartered Accountant (ACA, ICAEW), Property Tax Specialist
 reviewedAt: '2026-05-19'
-editorialNote: metaTitle and metaDescription rewritten via optimisation engine after GSC CTR analysis.
+editorialNote: Added section '2026/27 Capital Gains Tax Rates and Allowances for Property' grounded in 3 authority sources.
+sourcesVerifiedAt: '2026-05-19'
+sourceDomains:
+- gov.uk
+- icaew.com
+- taxscape.deloitte.com
 ---
 <p>Capital gains tax property rules affect every UK landlord and property investor who sells a rental property or second home. Whether you're disposing of a single buy-to-let or part of a larger portfolio, understanding how capital gains tax works can save you thousands of pounds.</p>
 
@@ -64,6 +69,10 @@ Less: Annual exempt amount<br>
 <h2>Capital Gains Tax Rates for Property</h2>
 <p>For residential property, the capital gains tax rates are 18% for basic-rate taxpayers and 24% for higher-rate and additional-rate taxpayers. The rate you pay depends on your total taxable income and gains in the tax year. Remember to add the taxable gain to your income to determine which tax band it falls into.</p>
 
+
+
+<h2>2026/27 Capital Gains Tax Rates and Allowances for Property</h2>
+<p>For the 2026/27 tax year, Capital Gains Tax (CGT) on residential property remains at 18% for basic rate taxpayers and 24% for higher or additional rate taxpayers <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup>. These rates have been stable since April 2024, when the higher rate was reduced from 28% to 24% <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. The annual exempt amount is £3,000 per individual for both 2025/26 and 2026/27, unchanged from the previous year <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</p><p>To determine which rate applies, you add your chargeable gain (after deducting the annual exempt amount) to your taxable income for the year. If the total falls within the basic rate band (£37,700 for 2026/27), the gain is taxed at 18%. Any gain above that threshold is taxed at 24% <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p><p><strong>Worked example:</strong> A basic rate taxpayer with taxable income of £20,000 sells a rental property, realising a gain of £50,000. After deducting the £3,000 annual exempt amount, the chargeable gain is £47,000. Adding this to income gives £67,000, which exceeds the £37,700 basic rate band by £29,300. Therefore, the first £17,700 of the gain (the amount needed to fill the basic rate band) is taxed at 18%, and the remaining £29,300 is taxed at 24%. The total CGT bill is £3,186 (18% of £17,700) plus £7,032 (24% of £29,300) = £10,218 <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p><p>These rates and allowances have remained consistent since 2024/25, providing some certainty for landlords planning disposals <sup><a href="#ref-4" id="cite-4">[4]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup>. Remember that CGT on property must be reported and paid within 60 days of completion <sup><a href="#ref-5" id="cite-5">[5]</a></sup><sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</p>
 <h2>Strategies to Reduce Your Capital Gains Tax Bill</h2>
 
 <h3>Timing Disposals</h3>
@@ -114,3 +123,12 @@ Less: Annual exempt amount<br>
 <li><a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">Capital Gains Tax on Property Sale UK 2026: Rates and Allowances</a></li>
 <li><a href="/blog/capital-gains-tax/property-capital-gains-tax-calculator">Property Capital Gains Tax Calculator: Complete Guide for UK Landlords</a></li>
 </ul>
+
+<h2>Sources</h2>
+<ol>
+  <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/capital-gains-tax/rates" rel="noopener noreferrer">Capital Gains Tax: what you pay it on, rates and allowances - GOV.UK</a></li>
+  <li id="ref-2"><strong>icaew.com</strong>: <a href="https://www.icaew.com/technical/tax/personal-tax/property-tax" rel="noopener noreferrer">Property tax - ICAEW.com</a></li>
+  <li id="ref-3"><strong>taxscape.deloitte.com</strong>: <a href="https://taxscape.deloitte.com/measures-spring-budget-2024/change-to-the-rate-of-capital-gains-tax-for-residential-property.aspx" rel="noopener noreferrer">Change to the rate of capital gains tax for residential property</a></li>
+  <li id="ref-4"><strong>icaew.com</strong>: <a href="https://www.icaew.com/technical/tax/personal-tax/capital-gains-tax" rel="noopener noreferrer">Capital gains tax | Personal tax - ICAEW.com</a></li>
+  <li id="ref-5"><strong>gov.uk</strong>: <a href="https://www.gov.uk/tax-sell-property" rel="noopener noreferrer">Tax when you sell property: What you pay it on - GOV.UK</a></li>
+</ol>
