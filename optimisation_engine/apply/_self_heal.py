@@ -271,6 +271,16 @@ def _build_corrective_context(blocking_issues: list[str]) -> str | None:
                 "PREVIOUS ATTEMPT DID NOT INCLUDE ANY QUERY VARIANTS VERBATIM. You MUST "
                 "include at least 2 of the listed variants exactly as written."
             )
+        if "generated_word_count_meets_minimum" in bl or ("got" in bl and "words vs minimum" in bl):
+            m_got = re.search(r"got (\d+) words vs minimum (\d+)", b)
+            if m_got:
+                got, need = m_got.group(1), m_got.group(2)
+                instructions.append(
+                    f"PREVIOUS ATTEMPT WAS TOO SHORT: {got} words against minimum {need}. "
+                    f"Produce at least {need} words this time. Cover every outline point in 2-4 "
+                    "paragraphs rather than 1. Add concrete UK figures, examples, and detail "
+                    "where appropriate — do not pad with filler."
+                )
         if "orphan citation indices" in bl or "indices in range" in bl and "max valid is" in bl:
             m_bad = re.search(r"orphan citation indices: \[([^\]]+)\]", b)
             m_max = re.search(r"max valid is (\d+)", b)

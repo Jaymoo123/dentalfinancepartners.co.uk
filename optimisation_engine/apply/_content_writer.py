@@ -388,13 +388,14 @@ Write a complete page consisting of:
         examples=[],  # full-page examples are too long; rely on schema + outline
         validators=[
             lambda o: (True, None) if isinstance(o.get("body_html"), str) and len(o["body_html"]) > 1000 else (False, "body_html missing or too short"),
-            lambda o: (True, None) if isinstance(o.get("metaTitle"), str) and len(o["metaTitle"]) <= 60 else (False, "metaTitle missing or > 60 chars"),
-            lambda o: (True, None) if isinstance(o.get("metaDescription"), str) and 130 <= len(o["metaDescription"]) <= 170 else (False, "metaDescription length out of bounds"),
-            no_em_dashes("body_html"),
-            no_em_dashes("metaTitle"),
-            no_em_dashes("metaDescription"),
-            no_em_dashes("title"),
-            no_em_dashes("h1"),
+            # metaTitle / metaDescription length checks moved to new_page.py
+            # so we can deterministically truncate before the brief validates.
+            lambda o: (True, None) if isinstance(o.get("metaTitle"), str) and len(o["metaTitle"]) > 0 else (False, "metaTitle missing"),
+            lambda o: (True, None) if isinstance(o.get("metaDescription"), str) and len(o["metaDescription"]) > 0 else (False, "metaDescription missing"),
+            # Em-dash validators removed: assemble_final_body / strip_em_dashes
+            # handle this deterministically post-LLM. Keeping the validator here
+            # forces unnecessary self_heal retries when the LLM emits a single
+            # dash inside a 1500-word body.
             lambda o: (True, None) if isinstance(o.get("faqs"), list) and 3 <= len(o["faqs"]) <= 8 else (False, "faqs missing or out of [3,8] count"),
             _markers_in_bounds_validator("body_html", n_sources),
             fact_check_validator("body_html"),

@@ -84,7 +84,9 @@ def render_references_section(bundle, *, heading_level: str = "h2") -> str:
         return ""
     lines = [f"<{heading_level}>References</{heading_level}>", "<ol>"]
     for i, s in enumerate(bundle.sources, 1):
-        title = (s.title or s.domain).replace("<", "&lt;").replace(">", "&gt;")
+        raw_title = s.title or s.domain
+        clean_title = raw_title.replace(" — ", ", ").replace(" – ", ", ").replace("—", ", ").replace("–", ", ")
+        title = clean_title.replace("<", "&lt;").replace(">", "&gt;")
         lines.append(
             f'  <li id="ref-{i}"><strong>{s.domain}</strong>: '
             f'<a href="{s.url}" rel="noopener noreferrer">{title}</a></li>'
@@ -228,7 +230,10 @@ def _build_merged_refs_html(sources: list[dict]) -> str:
         return ""
     lines = ["<h2>Sources</h2>", "<ol>"]
     for i, s in enumerate(sources, 1):
-        title = (s.get("title") or s.get("domain") or "").replace("<", "&lt;").replace(">", "&gt;")
+        raw_title = s.get("title") or s.get("domain") or ""
+        # Brand voice: no em/en dashes even in source titles. URL stays intact.
+        clean_title = raw_title.replace(" — ", ", ").replace(" – ", ", ").replace("—", ", ").replace("–", ", ")
+        title = clean_title.replace("<", "&lt;").replace(">", "&gt;")
         lines.append(
             f'  <li id="ref-{i}"><strong>{s["domain"]}</strong>: '
             f'<a href="{s["url"]}" rel="noopener noreferrer">{title}</a></li>'
