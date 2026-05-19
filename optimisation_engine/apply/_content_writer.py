@@ -14,6 +14,7 @@ Brand-voice rules apply to all content writes:
 """
 from __future__ import annotations
 
+from optimisation_engine.apply.fact_checker import fact_check_validator
 from optimisation_engine.config import get_site
 from optimisation_engine.reasoning.deepseek_runner import ReasoningResult, no_em_dashes, run_reasoning
 
@@ -145,6 +146,7 @@ DO NOT include facts you cannot verify; prefer 'current rates' over invented num
             lambda o: (True, None) if isinstance(o.get("body_html"), str) and len(o["body_html"]) > 100 else (False, "body_html missing or too short"),
             no_em_dashes("body_html"),
             lambda o: (True, None) if "<h2>" not in o.get("body_html", "").lower() and "<h1>" not in o.get("body_html", "").lower() else (False, "body_html contains H1/H2 — caller adds heading"),
+            fact_check_validator("body_html"),
         ],
         user_input=user_input,
         site_key=site_key,
@@ -221,6 +223,7 @@ should:
                 if any(v.lower() in (o.get("rewritten_paragraph") or "").lower() for v in query_variants_to_weave)
                 else (False, "rewritten_paragraph contains no variant verbatim")
             ),
+            fact_check_validator("rewritten_paragraph"),
         ],
         user_input=user_input,
         site_key=site_key,
@@ -308,6 +311,8 @@ Write a complete page consisting of:
             no_em_dashes("title"),
             no_em_dashes("h1"),
             lambda o: (True, None) if isinstance(o.get("faqs"), list) and 3 <= len(o["faqs"]) <= 8 else (False, "faqs missing or out of [3,8] count"),
+            fact_check_validator("body_html"),
+            fact_check_validator("summary"),
         ],
         user_input=user_input,
         site_key=site_key,

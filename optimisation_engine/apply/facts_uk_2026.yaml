@@ -1,0 +1,228 @@
+# Known UK tax & accounting facts (2026/27 tax year).
+# Used by fact_checker to validate LLM-generated content does not hallucinate
+# specific numbers. Each fact is matched as a regex; if generated content
+# contains a *different* value for the same concept, it gets flagged.
+#
+# Format:
+#   - id:     short id
+#     concept: human-readable name
+#     value:   the correct value as a string
+#     patterns: list of regexes that, if matched in content, must be paired with `value`
+#     aliases: list of alternative phrasings of the concept (for value-extraction context)
+#     valid_from: tax year start
+#
+# Maintain this file carefully — it's the source of truth.
+
+# --- Income tax ---
+- id: personal_allowance_2026_27
+  concept: Personal Allowance
+  value: "12,570"
+  patterns:
+    - "personal allowance"
+  aliases:
+    - personal allowance
+    - tax-free allowance
+  valid_from: 2026-04-06
+
+- id: basic_rate_band_top_2026_27
+  concept: Basic rate threshold (top of basic rate)
+  value: "50,270"
+  patterns:
+    - "basic rate threshold"
+    - "higher rate threshold"
+    - "top of basic rate"
+  aliases:
+    - basic rate threshold
+    - higher rate threshold
+  valid_from: 2026-04-06
+
+- id: additional_rate_threshold_2026_27
+  concept: Additional rate threshold
+  value: "125,140"
+  patterns:
+    - "additional rate threshold"
+  valid_from: 2026-04-06
+
+# --- CGT ---
+- id: cgt_residential_basic_rate_2026_27
+  concept: CGT residential property basic rate
+  value: "18%"
+  patterns:
+    - "cgt.*residential.*basic"
+    - "capital gains.*basic.*residential"
+  valid_from: 2026-04-06
+
+- id: cgt_residential_higher_rate_2026_27
+  concept: CGT residential property higher rate
+  value: "24%"
+  patterns:
+    - "cgt.*residential.*higher"
+    - "capital gains.*higher.*residential"
+  valid_from: 2026-04-06
+
+- id: cgt_annual_exempt_amount_2026_27
+  concept: CGT Annual Exempt Amount
+  value: "3,000"
+  patterns:
+    - "cgt annual exempt amount"
+    - "annual exempt amount"
+    - "capital gains.*allowance"
+  valid_from: 2026-04-06
+
+- id: cgt_reporting_window_days
+  concept: CGT property reporting window
+  value: "60"
+  patterns:
+    - "60-day.*cgt"
+    - "60 days.*cgt"
+    - "cgt.*60 days"
+    - "cgt.*60-day"
+  valid_from: 2020-04-06  # introduced earlier; still current
+
+# --- Corporation tax ---
+- id: corp_tax_small_profits_rate_2026_27
+  concept: Corporation Tax small profits rate
+  value: "19%"
+  patterns:
+    - "small profits rate"
+  valid_from: 2023-04-01
+
+- id: corp_tax_main_rate_2026_27
+  concept: Corporation Tax main rate
+  value: "25%"
+  patterns:
+    - "main rate.*corporation tax"
+    - "corporation tax.*main rate"
+  valid_from: 2023-04-01
+
+- id: corp_tax_small_profits_threshold
+  concept: Corporation Tax small profits threshold
+  value: "50,000"
+  patterns:
+    - "small profits.*threshold"
+    - "50,?000.*small profits"
+  valid_from: 2023-04-01
+
+- id: corp_tax_main_rate_threshold
+  concept: Corporation Tax main rate threshold (upper limit)
+  value: "250,000"
+  patterns:
+    - "main rate.*threshold"
+    - "250,?000.*corporation"
+  valid_from: 2023-04-01
+
+# --- AIA / capital allowances ---
+- id: aia_annual_cap_2026_27
+  concept: Annual Investment Allowance cap
+  value: "1,000,000"
+  patterns:
+    - "annual investment allowance.*cap"
+    - "aia.*cap"
+    - "aia.*£1"
+  aliases:
+    - "£1m"
+    - "£1 million"
+  valid_from: 2023-04-01
+
+# --- Dividends ---
+- id: dividend_allowance_2026_27
+  concept: Dividend Allowance
+  value: "500"
+  patterns:
+    - "dividend allowance"
+  valid_from: 2024-04-06
+
+- id: dividend_basic_rate_2026_27
+  concept: Dividend tax basic rate
+  value: "8.75%"
+  patterns:
+    - "dividend.*basic rate"
+  valid_from: 2022-04-06
+
+- id: dividend_higher_rate_2026_27
+  concept: Dividend tax higher rate
+  value: "33.75%"
+  patterns:
+    - "dividend.*higher rate"
+  valid_from: 2022-04-06
+
+- id: dividend_additional_rate_2026_27
+  concept: Dividend tax additional rate
+  value: "39.35%"
+  patterns:
+    - "dividend.*additional rate"
+  valid_from: 2022-04-06
+
+# --- VAT ---
+- id: vat_registration_threshold_2026_27
+  concept: VAT registration threshold
+  value: "90,000"
+  patterns:
+    - "vat registration threshold"
+    - "vat threshold"
+  valid_from: 2024-04-01
+
+- id: vat_deregistration_threshold_2026_27
+  concept: VAT deregistration threshold
+  value: "88,000"
+  patterns:
+    - "vat deregistration threshold"
+  valid_from: 2024-04-01
+
+- id: vat_standard_rate
+  concept: VAT standard rate
+  value: "20%"
+  patterns:
+    - "vat standard rate"
+    - "standard rate.*vat"
+  valid_from: 2011-01-04
+
+# --- NI ---
+- id: ni_class1_primary_threshold_2026_27
+  concept: NI Class 1 primary threshold (annual)
+  value: "12,570"
+  patterns:
+    - "primary threshold"
+  valid_from: 2024-04-06
+
+- id: ni_employee_main_rate_2026_27
+  concept: Employee NI main rate
+  value: "8%"
+  patterns:
+    - "employee ni main rate"
+    - "class 1.*main rate"
+  valid_from: 2024-04-06
+
+# --- SDLT ---
+- id: sdlt_residential_threshold
+  concept: SDLT residential threshold (standard)
+  value: "250,000"
+  patterns:
+    - "sdlt.*residential.*threshold"
+    - "stamp duty.*threshold"
+  valid_from: 2022-09-23
+
+- id: sdlt_first_time_buyer_threshold
+  concept: SDLT first-time buyer threshold
+  value: "425,000"
+  patterns:
+    - "first.?time buyer.*sdlt"
+    - "sdlt.*first.?time buyer"
+  valid_from: 2022-09-23
+
+- id: sdlt_additional_property_surcharge
+  concept: SDLT additional property surcharge
+  value: "3%"
+  patterns:
+    - "additional property.*sdlt"
+    - "sdlt.*additional property"
+    - "second home.*surcharge"
+  valid_from: 2016-04-01
+
+# --- Tax year reference ---
+- id: current_tax_year
+  concept: Current UK tax year (as of writing)
+  value: "2026/27"
+  patterns:
+    - "current tax year"
+  valid_from: 2026-04-06

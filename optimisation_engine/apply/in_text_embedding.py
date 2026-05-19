@@ -101,19 +101,7 @@ def build_brief(opportunity: dict) -> ChangeBrief:
         "score": opportunity.get("score"),
     }
 
-    brief.change_summary = f"Rewrite intro paragraph of {slug} to weave {len(variants)} query variant(s)"
-    brief.change_diff = {
-        "variants_to_weave": variants,
-        "intro_start": start,
-        "intro_end": end,
-        "intro_before_preview": (intro or "")[:300],
-        "_intro_replaced_pending": "(rewritten by DeepSeek at apply time)",
-    }
-    brief.internal_data["intro_start"] = start
-    brief.internal_data["intro_end"] = end
-    brief.internal_data["intro_original"] = intro or ""
-
-    # Validators
+    # Pre-LLM validators
     brief.add_validation("file_exists", True, "")
     brief.add_validation(
         "intro_paragraph_found",
@@ -126,6 +114,75 @@ def build_brief(opportunity: dict) -> ChangeBrief:
         f"{len(variants)} variants",
     )
 
+    if brief.blocking_issues:
+        brief.change_summary = f"Rewrite intro of {slug} (blocked — see validators)"
+        brief.change_diff = {
+            "variants_to_weave": variants,
+            "intro_before_preview": (intro or "")[:300],
+            "rewritten_paragraph_preview": "(skipped — pre-LLM validators failed)",
+        }
+        brief.finalise_can_apply()
+        return brief
+
+    # --- Generate rewritten paragraph NOW ------------------------------------
+    from optimisation_engine.apply._content_writer import rewrite_for_embedding
+    try:
+        gen = rewrite_for_embedding(
+            site_key=site_key,
+            page_title=fm.get("title") or "",
+            target_paragraph=intro or "",
+            query_variants_to_weave=variants,
+        )
+    except Exception as exc:
+        brief.add_validation("rewrite_generation", False, f"LLM call failed: {type(exc).__name__}: {exc}")
+        brief.finalise_can_apply()
+        return brief
+
+    rewritten = (gen.output or {}).get("rewritten_paragraph") or ""
+
+    # Tag-preservation check
+    a_count_before = len(re.findall(r"<a\b", intro or "", flags=re.IGNORECASE))
+    a_count_after = len(re.findall(r"<a\b", rewritten, flags=re.IGNORECASE))
+    strong_before = len(re.findall(r"<strong\b", intro or "", flags=re.IGNORECASE))
+    strong_after = len(re.findall(r"<strong\b", rewritten, flags=re.IGNORECASE))
+    orig_words = len((intro or "").split())
+    new_words = len(rewritten.split())
+    word_drift = abs(new_words - orig_words)
+
+    brief.change_summary = f"Rewrite intro paragraph of {slug} to weave {len(variants)} query variant(s)"
+    brief.change_diff = {
+        "variants_to_weave": variants,
+        "intro_before": (intro or "")[:500],
+        "intro_after_rewrite": rewritten[:500],
+        "word_count_drift": word_drift,
+        "tag_counts_before": {"a": a_count_before, "strong": strong_before},
+        "tag_counts_after": {"a": a_count_after, "strong": strong_after},
+        "llm_confidence": gen.confidence,
+        "llm_cost_usd": round(gen.cost_usd, 6),
+        "llm_validator_notes": gen.notes,
+    }
+    brief.internal_data["intro_start"] = start
+    brief.internal_data["intro_end"] = end
+    brief.internal_data["intro_original"] = intro or ""
+    brief.internal_data["rewritten_paragraph"] = rewritten
+
+    # Post-LLM validators
+    brief.add_validation(
+        "rewrite_generation_ok",
+        gen.auto_applicable and bool(rewritten),
+        f"llm_confidence={gen.confidence}, notes={gen.notes}",
+    )
+    brief.add_validation(
+        "tag_preservation",
+        a_count_after >= a_count_before and strong_after >= strong_before,
+        f"a {a_count_before}->{a_count_after}, strong {strong_before}->{strong_after}",
+    )
+    brief.add_validation(
+        "word_count_drift_acceptable",
+        word_drift <= 30,
+        f"drift={word_drift} words",
+    )
+
     brief.finalise_can_apply()
     return brief
 
@@ -135,38 +192,10 @@ def apply(brief: ChangeBrief) -> dict:
     start = brief.internal_data.get("intro_start")
     end = brief.internal_data.get("intro_end")
     intro_original = brief.internal_data.get("intro_original")
-    variants = brief.opportunity_signal.get("variants_to_weave") or []
-    page_title = brief.current_state.get("title") or ""
+    new_para = brief.internal_data.get("rewritten_paragraph")
 
-    if start is None or end is None or not intro_original:
-        raise ApplyError("brief.internal_data missing intro positioning")
-
-    # Original tag counts — must be preserved after rewrite
-    a_count = _count_tags(intro_original, "a")
-    strong_count = _count_tags(intro_original, "strong")
-    orig_words = len(intro_original.split())
-
-    gen = rewrite_for_embedding(
-        site_key=brief.site_key,
-        page_title=page_title,
-        target_paragraph=intro_original,
-        query_variants_to_weave=variants,
-    )
-    if not gen.auto_applicable:
-        raise ApplyError(f"embedding rewrite failed validators: {gen.notes}")
-    new_para = gen.output.get("rewritten_paragraph") or ""
-    if not new_para:
-        raise ApplyError("DeepSeek returned empty rewritten_paragraph")
-    new_words = len(new_para.split())
-    if abs(new_words - orig_words) > 30:
-        raise ApplyError(f"rewrite word count drift too large: {orig_words} -> {new_words}")
-    if _count_tags(new_para, "a") < a_count:
-        raise ApplyError(f"rewrite removed <a> tags: {a_count} -> {_count_tags(new_para, 'a')}")
-    if _count_tags(new_para, "strong") < strong_count:
-        raise ApplyError(f"rewrite removed <strong> tags: {strong_count} -> {_count_tags(new_para, 'strong')}")
-    ok, det = no_banned_chars(new_para)
-    if not ok:
-        raise ApplyError(f"rewrite introduced banned char: {det}")
+    if start is None or end is None or not intro_original or not new_para:
+        raise ApplyError("brief.internal_data missing intro positioning or rewritten_paragraph")
 
     def _edit(b: ChangeBrief) -> tuple[str, str]:
         fm, body = read(path)
