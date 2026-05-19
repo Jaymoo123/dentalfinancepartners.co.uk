@@ -148,18 +148,44 @@ def check_content(text: str, *, strictness: str = "strict") -> dict:
             return "days" if int(digits) < 200 else "gbp_or_number"
         return "other"
 
-    for claim in claims:
-        # For each claim, find facts whose patterns match the surrounding context
-        # AND whose value-kind matches the claim's kind
+    text_lower = text.lower()
+
+    def _pattern_within_window(pattern: str, claim_pos: int, claim_end: int, *, window: int = 50) -> bool:
+        """Return True if `pattern` matches the text within `window` chars of the
+        claim's position. Tighter than the 120-char context so we don't pull in
+        patterns belonging to neighbouring claims."""
+        try:
+            rx = re.compile(pattern, re.IGNORECASE)
+        except re.error:
+            return False
+        for m in rx.finditer(text_lower):
+            # Pattern is "near" the claim if its match overlaps the window
+            if m.end() < claim_pos - window:
+                continue
+            if m.start() > claim_end + window:
+                continue
+            return True
+        return False
+
+    def _closest_claim_for_pattern(pattern: str, claim_list: list[dict]) -> int | None:
+        """Return index of the claim closest to the first pattern match, or None."""
+        try:
+            rx = re.compile(pattern, re.IGNORECASE)
+        except re.error:
+            return None
+        m = rx.search(text_lower)
+        if not m:
+            return None
+        anchor = (m.start() + m.end()) // 2
+        return min(range(len(claim_list)), key=lambda i: abs(claim_list[i]["pos"] - anchor))
+
+    for ci, claim in enumerate(claims):
+        # For each claim, find facts whose patterns match TIGHTLY around this
+        # claim AND where this claim is the closest claim to the pattern.
         claim_kind = claim["kind"]  # percentage / gbp / number / days / tax_year
         matched_facts: list[dict] = []
         for fact in facts:
             f_kind = _fact_value_kind(fact["value"])
-            # Type compatibility:
-            #   percentage <-> percentage
-            #   days <-> days
-            #   tax_year <-> tax_year
-            #   gbp / number <-> gbp_or_number
             compatible = (
                 (claim_kind == "percentage" and f_kind == "percentage")
                 or (claim_kind == "days" and f_kind == "days")
@@ -168,13 +194,21 @@ def check_content(text: str, *, strictness: str = "strict") -> dict:
             )
             if not compatible:
                 continue
+            fact_attached = False
             for pat in fact.get("patterns") or []:
-                if re.search(pat, claim["context"], re.IGNORECASE):
-                    matched_facts.append(fact)
-                    break
+                if not _pattern_within_window(pat, claim["pos"], claim["pos"] + len(claim["raw"])):
+                    continue
+                # Don't claim this fact unless this claim is the closest one
+                # to the pattern (otherwise another claim "owns" this fact).
+                closest = _closest_claim_for_pattern(pat, claims)
+                if closest != ci:
+                    continue
+                fact_attached = True
+                break
+            if fact_attached:
+                matched_facts.append(fact)
 
         if not matched_facts:
-            # No fact of compatible kind to govern this number. Don't flag.
             continue
 
         # Did the claim's value match ANY matched fact's value?

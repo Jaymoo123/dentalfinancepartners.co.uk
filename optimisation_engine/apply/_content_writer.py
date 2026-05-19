@@ -14,9 +14,18 @@ Brand-voice rules apply to all content writes:
 """
 from __future__ import annotations
 
+from optimisation_engine.apply._citation_renderer import citation_markers_within_bounds
 from optimisation_engine.apply.fact_checker import fact_check_validator
 from optimisation_engine.config import get_site
 from optimisation_engine.reasoning.deepseek_runner import ReasoningResult, no_em_dashes, run_reasoning
+
+
+def _markers_in_bounds_validator(body_field: str, n_sources: int):
+    """Curried validator: every [n] in body must satisfy 1 <= n <= n_sources."""
+    def _v(o):
+        body = (o or {}).get(body_field) or ""
+        return citation_markers_within_bounds(body, max_valid_index=n_sources)
+    return _v
 
 
 BRAND_VOICE_RULES = """
@@ -86,18 +95,30 @@ def write_new_section_body(
     """
     research_block = ""
     citation_rules = ""
+    n_sources = len(getattr(research_bundle, "sources", []) or []) if research_bundle is not None else 0
     if research_bundle is not None and getattr(research_bundle, "claims", None):
         research_block = research_bundle.to_prompt_block(max_claims=20)
-        citation_rules = """
-CITATION DENSITY RULES (mandatory — content fails review if not met):
-  - Use [n] markers inline to cite claims from the RESEARCH BUNDLE above.
-  - Aim for at least 1 cited claim per 200 words.
-  - At least 2 different source tiers must be represented across your citations.
-  - Cite SPECIFIC numbers / dates / rules using the exact source claim text or
-    a close paraphrase. Do NOT invent numbers — use only what's in the bundle.
-  - The [n] markers refer to the bundle's SOURCES SUMMARY list — get the index
-    from there.
-  - Don't over-cite the same source — use the diversity of sources.
+        valid_range = f"[1] through [{n_sources}]" if n_sources else "(no sources — do NOT use any [n] markers)"
+        citation_rules = f"""
+CITATION RULES — READ CAREFULLY (content fails review if not met):
+
+  STRICT MARKER BOUNDS:
+    - You have exactly {n_sources} source(s) in the SOURCES list above.
+    - Valid citation markers are: {valid_range}.
+    - NEVER write [{n_sources + 1}], [{n_sources + 2}], [99] or any number > {n_sources}.
+    - Every [n] in your body_html MUST appear in the SOURCES list above. There is
+      no "implicit" source 11, 12, etc. — if it isn't numbered above, it doesn't exist.
+    - If you cannot cite a claim from the {n_sources} listed sources, REMOVE the claim
+      rather than invent a citation marker.
+
+  DENSITY + DIVERSITY:
+    - Aim for at least 1 cited claim per 200 words (so a 600-word section ~ 3 [n] cites).
+    - Use at least 2 different source tiers across your citations.
+    - Don't lean on one source — spread across the {n_sources} available.
+
+  ACCURACY:
+    - Cite SPECIFIC numbers / dates / rules using the exact claim text or close paraphrase.
+    - Do NOT invent numbers — use only figures present in the RESEARCH BUNDLE.
 """
 
     user_input = f"""SITE: {site_key}
@@ -172,6 +193,7 @@ for lists. DO NOT include the H2 heading itself — start with the first <p>.
             lambda o: (True, None) if isinstance(o.get("body_html"), str) and len(o["body_html"]) > 100 else (False, "body_html missing or too short"),
             no_em_dashes("body_html"),
             lambda o: (True, None) if "<h2>" not in o.get("body_html", "").lower() and "<h1>" not in o.get("body_html", "").lower() else (False, "body_html contains H1/H2 — caller adds heading"),
+            _markers_in_bounds_validator("body_html", n_sources),
             fact_check_validator("body_html"),
         ],
         user_input=user_input,
@@ -280,17 +302,31 @@ def write_new_page_content(
     """
     research_block = ""
     citation_rules = ""
+    n_sources = len(getattr(research_bundle, "sources", []) or []) if research_bundle is not None else 0
     if research_bundle is not None and getattr(research_bundle, "claims", None):
         research_block = research_bundle.to_prompt_block(max_claims=25)
-        citation_rules = """
-CITATION DENSITY RULES (MANDATORY):
-  - Use [n] markers inline to cite claims from the RESEARCH BUNDLE above.
-  - At least 1 citation per 200 words of body.
-  - At least 5 unique sources cited across the page.
-  - At least 2 different source tiers (canonical / authority / industry).
-  - Use SPECIFIC numbers and dates from the bundle only — NEVER invent figures.
-  - [n] refers to the index in the SOURCES SUMMARY list.
-  - Vary which source you cite — don't lean on the same one repeatedly.
+        valid_range = f"[1] through [{n_sources}]" if n_sources else "(no sources — do NOT use any [n] markers)"
+        citation_rules = f"""
+CITATION RULES — READ CAREFULLY (MANDATORY):
+
+  STRICT MARKER BOUNDS:
+    - You have exactly {n_sources} source(s) in the SOURCES list above.
+    - Valid citation markers are: {valid_range}.
+    - NEVER write [{n_sources + 1}], [{n_sources + 2}], [99] or any number > {n_sources}.
+    - Every [n] in your body_html MUST correspond to one of the {n_sources} listed sources.
+      There is no source 11, 12, etc. — if it isn't numbered in the SOURCES list, it does not exist.
+    - If you can't cite a claim from the {n_sources} listed sources, REMOVE the claim rather than
+      invent a marker.
+
+  DENSITY + DIVERSITY:
+    - At least 1 citation per 200 words of body.
+    - At least 5 unique sources cited across the page (or all of them if fewer than 5 exist).
+    - At least 2 different source tiers represented (canonical / authority / industry / press).
+    - Vary which source you cite — don't lean on the same one repeatedly.
+
+  ACCURACY:
+    - Use SPECIFIC numbers and dates from the bundle only — NEVER invent figures.
+    - [n] refers strictly to the index in the SOURCES SUMMARY list above.
 """
 
     user_input = f"""SITE: {site_key}
@@ -360,6 +396,7 @@ Write a complete page consisting of:
             no_em_dashes("title"),
             no_em_dashes("h1"),
             lambda o: (True, None) if isinstance(o.get("faqs"), list) and 3 <= len(o["faqs"]) <= 8 else (False, "faqs missing or out of [3,8] count"),
+            _markers_in_bounds_validator("body_html", n_sources),
             fact_check_validator("body_html"),
             fact_check_validator("summary"),
         ],

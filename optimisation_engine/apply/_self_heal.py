@@ -271,6 +271,19 @@ def _build_corrective_context(blocking_issues: list[str]) -> str | None:
                 "PREVIOUS ATTEMPT DID NOT INCLUDE ANY QUERY VARIANTS VERBATIM. You MUST "
                 "include at least 2 of the listed variants exactly as written."
             )
+        if "orphan citation indices" in bl or "indices in range" in bl and "max valid is" in bl:
+            m_bad = re.search(r"orphan citation indices: \[([^\]]+)\]", b)
+            m_max = re.search(r"max valid is (\d+)", b)
+            bad_list = m_bad.group(1) if m_bad else "unknown"
+            max_idx = m_max.group(1) if m_max else "N"
+            instructions.append(
+                f"PREVIOUS ATTEMPT USED CITATION MARKERS THAT POINT TO NOTHING: [{bad_list}]. "
+                f"You have ONLY {max_idx} source(s) in the SOURCES list — valid markers are "
+                f"[1] through [{max_idx}]. Remove any [n] where n is outside this range, or "
+                "replace it with a valid [n] that actually appears in the SOURCES list. "
+                "If you cannot cite a claim from the listed sources, REMOVE the claim — do NOT "
+                "invent a marker number."
+            )
     if not instructions:
         return None
     return "\n\n--- CORRECTIVE INSTRUCTIONS (this is a retry; fix these specifically) ---\n" + "\n".join(f"• {i}" for i in instructions)

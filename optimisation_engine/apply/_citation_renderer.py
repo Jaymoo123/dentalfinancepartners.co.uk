@@ -85,9 +85,8 @@ def render_references_section(bundle, *, heading_level: str = "h2") -> str:
     lines = [f"<{heading_level}>References</{heading_level}>", "<ol>"]
     for i, s in enumerate(bundle.sources, 1):
         title = (s.title or s.domain).replace("<", "&lt;").replace(">", "&gt;")
-        tier_label = f" ({s.tier})" if s.tier else ""
         lines.append(
-            f'  <li id="ref-{i}"><strong>{s.domain}{tier_label}</strong>: '
+            f'  <li id="ref-{i}"><strong>{s.domain}</strong>: '
             f'<a href="{s.url}" rel="noopener noreferrer">{title}</a></li>'
         )
     lines.append("</ol>")
@@ -109,9 +108,70 @@ def strip_em_dashes(body: str) -> str:
     return body
 
 
+def strip_orphan_citation_markers(body: str, max_valid_index: int) -> tuple[str, list[int]]:
+    """Remove inline citation markers whose index exceeds max_valid_index.
+
+    Handles both raw `[n]` markers and rendered `<sup><a href="#ref-n">[n]</a></sup>`.
+
+    Returns (cleaned_body, list_of_stripped_indices).
+    """
+    stripped: list[int] = []
+
+    # First: handle rendered footnote spans
+    def _strip_rendered(m: re.Match) -> str:
+        idx = int(m.group(1))
+        if idx > max_valid_index or idx < 1:
+            stripped.append(idx)
+            return ""  # remove the whole <sup>...</sup>
+        return m.group(0)
+
+    rendered_rx = re.compile(r'<sup><a href="#ref-(\d+)"[^>]*>\[\d+\]</a></sup>')
+    body = rendered_rx.sub(_strip_rendered, body)
+
+    # Second: handle raw [n] markers that weren't rendered
+    def _strip_raw(m: re.Match) -> str:
+        idx = int(m.group(1))
+        if idx > max_valid_index or idx < 1:
+            stripped.append(idx)
+            return ""
+        return m.group(0)
+
+    raw_rx = re.compile(r"\[(\d+)\]")
+    body = raw_rx.sub(_strip_raw, body)
+
+    # Tidy: collapse double-spaces left by removals
+    body = re.sub(r" {2,}", " ", body)
+    # Tidy: dangling spaces before punctuation
+    body = re.sub(r" +([.,;:])", r"\1", body)
+    return body, stripped
+
+
+def citation_markers_within_bounds(body: str, max_valid_index: int) -> tuple[bool, str]:
+    """Validator: every [n] / #ref-n marker must satisfy 1 <= n <= max_valid_index."""
+    bad: list[int] = []
+    for m in re.finditer(r"\[(\d+)\]", body):
+        idx = int(m.group(1))
+        if idx < 1 or idx > max_valid_index:
+            bad.append(idx)
+    for m in re.finditer(r'href="#ref-(\d+)"', body):
+        idx = int(m.group(1))
+        if idx < 1 or idx > max_valid_index:
+            bad.append(idx)
+    if bad:
+        unique = sorted(set(bad))
+        return False, f"orphan citation indices: {unique[:8]} (max valid is {max_valid_index})"
+    return True, f"{max_valid_index} sources, all indices in range"
+
+
 def assemble_final_body(body: str, bundle, *, append_references: bool = True) -> str:
-    """Full post-process pipeline: strip em-dashes, render footnote links, append References."""
+    """Full post-process pipeline: strip em-dashes, strip orphan markers,
+    render footnote links, append References."""
     body = strip_em_dashes(body)
+    # Strip orphan markers BEFORE rendering footnotes
+    n_sources = len(getattr(bundle, "sources", []) or []) if bundle is not None else 0
+    if n_sources > 0:
+        body, stripped = strip_orphan_citation_markers(body, max_valid_index=n_sources)
+        # (Logging the stripped count is the caller's job)
     rendered = render_body_with_footnotes(body, bundle)
     if not append_references:
         return rendered
@@ -169,10 +229,8 @@ def _build_merged_refs_html(sources: list[dict]) -> str:
     lines = ["<h2>Sources</h2>", "<ol>"]
     for i, s in enumerate(sources, 1):
         title = (s.get("title") or s.get("domain") or "").replace("<", "&lt;").replace(">", "&gt;")
-        tier = s.get("tier") or ""
-        tier_label = f" ({tier})" if tier else ""
         lines.append(
-            f'  <li id="ref-{i}"><strong>{s["domain"]}{tier_label}</strong>: '
+            f'  <li id="ref-{i}"><strong>{s["domain"]}</strong>: '
             f'<a href="{s["url"]}" rel="noopener noreferrer">{title}</a></li>'
         )
     lines.append("</ol>")
@@ -180,36 +238,122 @@ def _build_merged_refs_html(sources: list[dict]) -> str:
 
 
 def merge_references_into_body(body: str, new_bundle) -> str:
-    """Ensure the page body has a Sources / References section that includes
-    all sources from the new bundle, merged with any existing references.
+    """Ensure the page body has a Sources / References section listing only the
+    sources actually cited in the body.
 
-    De-duplicates by URL. Preserves order: existing sources first, new ones
-    appended (so existing [n] markers remain valid).
+    Strategy:
+      1. Find every [n] / #ref-n marker referenced in the body.
+      2. Map each cited n to the actual source (from existing block + new bundle).
+      3. Renumber from 1 in citation order, rewriting markers and the block.
+      4. Drop any "research bundle" sources that the body did not cite —
+         keep noise out of the Sources list.
 
-    If no References block exists, appends a new one at the end of body.
+    Renumbers in-place so [n] markers in body stay consistent with the new ol order.
     """
     if new_bundle is None or not getattr(new_bundle, "sources", None):
         return body
 
-    existing = _extract_existing_sources(body)
-    existing_urls = {e["url"] for e in existing}
+    # 1. Collect cited indices in order of first appearance
+    seen_in_order: list[int] = []
+    for m in _re.finditer(r'<sup><a href="#ref-(\d+)"', body):
+        idx = int(m.group(1))
+        if idx not in seen_in_order:
+            seen_in_order.append(idx)
+    for m in _re.finditer(r"\[(\d+)\]", body):
+        idx = int(m.group(1))
+        if idx not in seen_in_order:
+            seen_in_order.append(idx)
 
-    # Add new sources that aren't already there
-    merged = list(existing)
+    if not seen_in_order:
+        # No inline citations to anchor a Sources block — strip any existing
+        # block (it would have nothing to point at)
+        if _REFS_BLOCK_RX.search(body):
+            return _REFS_BLOCK_RX.sub("", body, count=1).rstrip() + "\n"
+        return body
+
+    # 2. Build the candidate-source pool (existing block first, then new bundle)
+    candidates: list[dict] = list(_extract_existing_sources(body))
+    candidate_urls = {c["url"] for c in candidates}
     for s in new_bundle.sources:
-        if s.url in existing_urls:
+        if s.url in candidate_urls:
             continue
-        merged.append({
+        candidates.append({
             "domain": s.domain,
             "url": s.url,
             "title": s.title or s.domain,
             "tier": s.tier or "",
         })
-        existing_urls.add(s.url)
+        candidate_urls.add(s.url)
 
-    new_block = _build_merged_refs_html(merged)
+    # 3. Resolve each cited n to a source. Old n is 1-indexed into existing[].
+    #    But if the body was generated against new_bundle.sources, the [n] markers
+    #    refer to bundle indices. Existing block may not align. We try existing
+    #    first, then fall back to bundle index.
+    existing_list = _extract_existing_sources(body)
+    bundle_list = [{
+        "domain": s.domain, "url": s.url, "title": s.title or s.domain, "tier": s.tier or "",
+    } for s in new_bundle.sources]
 
-    # Replace or append
+    cited_sources: list[dict] = []
+    cited_url_seen: set[str] = set()
+    old_to_new: dict[int, int] = {}
+
+    for old_idx in seen_in_order:
+        src = None
+        # Prefer existing block (if it had a source at that index)
+        if 1 <= old_idx <= len(existing_list):
+            src = existing_list[old_idx - 1]
+        elif 1 <= old_idx <= len(bundle_list):
+            src = bundle_list[old_idx - 1]
+        if src is None:
+            # Orphan marker — caller should have stripped these; ignore here
+            continue
+        if src["url"] in cited_url_seen:
+            # Already mapped this URL under a different old_idx — point to existing new index
+            new_idx = next((i for i, c in enumerate(cited_sources, 1) if c["url"] == src["url"]), None)
+            if new_idx:
+                old_to_new[old_idx] = new_idx
+            continue
+        cited_sources.append(src)
+        cited_url_seen.add(src["url"])
+        old_to_new[old_idx] = len(cited_sources)
+
+    # 4. Rewrite inline markers using old_to_new.
+    # Segment the body into rendered <sup>...</sup> spans and the surrounding
+    # text so the raw [N] pass can't munch the digits the rendered pass just emitted.
+    rendered_rx = _re.compile(r'<sup><a href="#ref-(\d+)"[^>]*>\[\d+\]</a></sup>')
+
+    def _renum_rendered(m: _re.Match) -> str:
+        old = int(m.group(1))
+        new = old_to_new.get(old)
+        if new is None:
+            return ""  # orphan, strip
+        return f'<sup><a href="#ref-{new}" id="cite-{new}">[{new}]</a></sup>'
+
+    def _renum_raw_outside(text: str) -> str:
+        raw_rx = _re.compile(r"\[(\d+)\]")
+        def _sub(m: _re.Match) -> str:
+            old = int(m.group(1))
+            new = old_to_new.get(old)
+            if new is None:
+                return ""
+            return f"[{new}]"
+        return raw_rx.sub(_sub, text)
+
+    out_parts: list[str] = []
+    last = 0
+    for m in rendered_rx.finditer(body):
+        out_parts.append(_renum_raw_outside(body[last:m.start()]))
+        out_parts.append(_renum_rendered(m))
+        last = m.end()
+    out_parts.append(_renum_raw_outside(body[last:]))
+    body = "".join(out_parts)
+    # Tidy stray double spaces left by stripped orphans
+    body = _re.sub(r" {2,}", " ", body)
+    body = _re.sub(r" +([.,;:])", r"\1", body)
+
+    # 5. Render new Sources block (only cited sources, renumbered)
+    new_block = _build_merged_refs_html(cited_sources)
     if _REFS_BLOCK_RX.search(body):
         return _REFS_BLOCK_RX.sub(new_block, body, count=1)
     return body.rstrip() + "\n\n" + new_block + "\n"

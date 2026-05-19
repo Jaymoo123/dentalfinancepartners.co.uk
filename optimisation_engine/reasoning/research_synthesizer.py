@@ -438,6 +438,7 @@ def synthesize_research(
     max_industry_domains: int = 4,
     max_organic_results: int = 4,
     max_total_sources: int = 12,
+    fallback_queries: list[str] | None = None,
 ) -> ResearchBundle:
     """Build a multi-tier research bundle for `topic_query`.
 
@@ -579,6 +580,162 @@ def synthesize_research(
             h2s=parsed.get("h2s", []),
             excerpt=(parsed.get("body_text") or "")[:2000],
         )
+
+    # ---- Expansion pass: if bundle is thin, broaden the search ---------------
+    unique_domains = {s.domain for s in bundle.sources}
+    if len(unique_domains) < 3 and bundle.cached_hits + bundle.fresh_fetches < max_total_sources:
+        seen_urls.update({s.url for s in bundle.sources})
+        # Try 3 URLs per authority domain (instead of 1) — bigger draw from each
+        more_candidates: list[dict] = []
+        auth_doms_deep = [d.domain for d in domains_by_tier(site_key, "authority")][:max_authority_domains]
+        more_candidates += _search_tier(
+            query=topic_query, tier_domains=auth_doms_deep, serper=serper, site_key=site_key, n_per_domain=3
+        )
+        bundle.total_serper_cost_usd += 0.001 * len(auth_doms_deep)
+        ind_doms_deep = [d.domain for d in domains_by_tier(site_key, "industry")][:max_industry_domains]
+        more_candidates += _search_tier(
+            query=topic_query, tier_domains=ind_doms_deep, serper=serper, site_key=site_key, n_per_domain=2
+        )
+        bundle.total_serper_cost_usd += 0.001 * len(ind_doms_deep)
+        # Pull more organic results too
+        more_candidates += _search_organic_top(query=topic_query, serper=serper, site_key=site_key, n=8)
+        bundle.total_serper_cost_usd += 0.001
+
+        # Dedup + cap
+        deep_fresh: list[dict] = []
+        for c in more_candidates:
+            if c["url"] in seen_urls:
+                continue
+            if c["domain"] in unique_domains:
+                # Prefer NEW domains during the expansion pass; only re-cite an
+                # existing domain if we genuinely can't find anything else
+                continue
+            seen_urls.add(c["url"])
+            deep_fresh.append(c)
+            if len({d["domain"] for d in deep_fresh} | unique_domains) >= 5:
+                break
+
+        for cand in deep_fresh[: max_total_sources - len(bundle.sources)]:
+            html = _fetch_html(cand["url"])
+            if not html:
+                continue
+            parsed = _parse_page(html)
+            if not parsed.get("body_text"):
+                continue
+            try:
+                claims, cost = _extract_claims_with_llm(
+                    source_url=cand["url"],
+                    source_domain=cand["domain"],
+                    source_tier=cand["tier"],
+                    page_data=parsed,
+                    topic_query=topic_query,
+                )
+            except Exception:
+                continue
+            bundle.total_deepseek_cost_usd += cost
+            bundle.fresh_fetches += 1
+            bundle.claims.extend(claims)
+            bundle.sources.append(
+                Source(
+                    domain=cand["domain"],
+                    url=cand["url"],
+                    title=cand["title"],
+                    tier=cand["tier"],
+                    score=authority_score_for_domain(cand["domain"]),
+                    fetched_at=datetime.now(timezone.utc).isoformat(),
+                    n_claims=len(claims),
+                )
+            )
+            _cache_insert(
+                topic_key=topic_key,
+                topic_query=topic_query,
+                source_url=cand["url"],
+                source_domain=cand["domain"],
+                source_tier=cand["tier"],
+                source_authority_score=authority_score_for_domain(cand["domain"]),
+                source_title=cand["title"],
+                recency_date=parsed.get("pub_date"),
+                extracted_claims=[asdict(c) for c in claims],
+                h1=parsed.get("h1", ""),
+                h2s=parsed.get("h2s", []),
+                excerpt=(parsed.get("body_text") or "")[:2000],
+            )
+            unique_domains.add(cand["domain"])
+            if len(unique_domains) >= 5:
+                break
+
+    # ---- Cluster fallback: if bundle is still thin in claims, try fallback queries
+    if fallback_queries and len(bundle.claims) < 5:
+        for fq in fallback_queries:
+            if fq.strip().lower() == topic_query.strip().lower():
+                continue
+            # Just one tier of authority searches per fallback, n=2 per domain
+            fb_candidates: list[dict] = []
+            fb_auth = [d.domain for d in domains_by_tier(site_key, "authority")][:max_authority_domains]
+            fb_candidates += _search_tier(
+                query=fq, tier_domains=fb_auth, serper=serper, site_key=site_key, n_per_domain=2
+            )
+            bundle.total_serper_cost_usd += 0.001 * len(fb_auth)
+            fb_candidates += _search_organic_top(query=fq, serper=serper, site_key=site_key, n=4)
+            bundle.total_serper_cost_usd += 0.001
+
+            seen_urls_local = {s.url for s in bundle.sources}
+            seen_doms_local = {s.domain for s in bundle.sources}
+            for cand in fb_candidates[:6]:
+                if cand["url"] in seen_urls_local:
+                    continue
+                if cand["domain"] in seen_doms_local:
+                    continue  # only add new domains during fallback
+                html = _fetch_html(cand["url"])
+                if not html:
+                    continue
+                parsed = _parse_page(html)
+                if not parsed.get("body_text"):
+                    continue
+                try:
+                    claims, cost = _extract_claims_with_llm(
+                        source_url=cand["url"],
+                        source_domain=cand["domain"],
+                        source_tier=cand["tier"],
+                        page_data=parsed,
+                        topic_query=topic_query,
+                    )
+                except Exception:
+                    continue
+                bundle.total_deepseek_cost_usd += cost
+                bundle.fresh_fetches += 1
+                bundle.claims.extend(claims)
+                bundle.sources.append(
+                    Source(
+                        domain=cand["domain"],
+                        url=cand["url"],
+                        title=cand["title"],
+                        tier=cand["tier"],
+                        score=authority_score_for_domain(cand["domain"]),
+                        fetched_at=datetime.now(timezone.utc).isoformat(),
+                        n_claims=len(claims),
+                    )
+                )
+                _cache_insert(
+                    topic_key=topic_key,
+                    topic_query=topic_query,
+                    source_url=cand["url"],
+                    source_domain=cand["domain"],
+                    source_tier=cand["tier"],
+                    source_authority_score=authority_score_for_domain(cand["domain"]),
+                    source_title=cand["title"],
+                    recency_date=parsed.get("pub_date"),
+                    extracted_claims=[asdict(c) for c in claims],
+                    h1=parsed.get("h1", ""),
+                    h2s=parsed.get("h2s", []),
+                    excerpt=(parsed.get("body_text") or "")[:2000],
+                )
+                seen_urls_local.add(cand["url"])
+                seen_doms_local.add(cand["domain"])
+                if len(bundle.claims) >= 8:
+                    break
+            if len(bundle.claims) >= 8:
+                break
 
     # ---- Final stats ---------------------------------------------------------
     tier_counts = bundle.claims_by_tier()
