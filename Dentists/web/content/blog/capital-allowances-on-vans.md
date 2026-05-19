@@ -34,22 +34,21 @@ sourceDomains:
 - aka.hmrc.gov.uk
 - gov.uk
 - icaew.com
-- nature.com
-editorialNote: New informational_guide grounded in research across 5 authority sources. 2 source tiers represented.
+editorialNote: Grounded in 4 authority sources.
 ---
-<p>If you are a UK dentist using a van for your practice, you may be able to claim capital allowances to reduce your tax bill. Capital allowances let you deduct some or all of the value of an item from your profits before you pay tax <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. This guide explains how the rules apply to vans, including the Annual Investment Allowance (AIA), writing-down allowances, and what to watch out for with private use.</p>
+<p>If you are a UK dentist using a van for your practice, you may be able to claim capital allowances to reduce your tax bill. Capital allowances let you deduct some or all of the value of an item from your profits before you pay tax <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This guide explains how the rules apply to vans, including the Annual Investment Allowance (AIA), writing-down allowances, and what to watch out for with private use.</p>
 
 <h2>What are capital allowances on vans?</h2>
-<p>Capital allowances are a form of tax relief for businesses that buy assets such as vehicles, equipment, or machinery. Instead of deducting the full cost in one go, you can spread the relief over several years or claim it immediately under certain allowances. For vans used in your dental practice, you can claim capital allowances on the purchase price, provided the van is used for business purposes <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
+<p>Capital allowances are a form of tax relief for businesses that buy assets such as vehicles, equipment, or machinery. Instead of deducting the full cost in one go, you can spread the relief over several years or claim it immediately under certain allowances. For vans used in your dental practice, you can claim capital allowances on the purchase price, provided the van is used for business purposes <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
 
 <h2>Can you claim capital allowances on a van used for your dental practice?</h2>
-<p>Yes, vans are not treated as cars for capital allowances purposes, so they qualify for more generous relief. Motorcycles, lorries, vans and trucks are not considered cars and can be included in the Annual Investment Allowance <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. However, if you are a sole trader or partnership using the cash basis of accounting, you can only claim capital allowances on business cars, not vans <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. Most incorporated dental practices and those using traditional accounting can claim.</p>
+<p>Yes, vans are not treated as cars for capital allowances purposes, so they qualify for more generous relief. Motorcycles, lorries, vans and trucks are not considered cars and can be included in the Annual Investment Allowance <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. However, if you are a sole trader or partnership using the cash basis of accounting, you can only claim capital allowances on business cars, not vans <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. Most incorporated dental practices and those using traditional accounting can claim.</p>
 
 <h2>How to calculate the writing-down allowance for vans</h2>
-<p>If you cannot claim a 100% allowance (for example, because you have exceeded the AIA limit or the van is second-hand), you can claim writing-down allowances. Most plant and machinery, including vans, qualify for an 18% writing-down allowance per year on the reducing balance <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. This means you deduct 18% of the remaining value each year. If the van is in a special rate pool (e.g., if it has a high CO2 emission rating), the rate is 6% <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</p>
+<p>If you cannot claim a 100% allowance (for example, because you have exceeded the AIA limit or the van is second-hand), you can claim writing-down allowances. Most plant and machinery, including vans, qualify for an 18% writing-down allowance per year on the reducing balance <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. This means you deduct 18% of the remaining value each year. If the van is in a special rate pool (e.g., if it has a high CO2 emission rating), the rate is 6% <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
 
 <h2>First-year allowances and the Annual Investment Allowance (AIA) for vans</h2>
-<p>The Annual Investment Allowance (AIA) allows you to claim 100% relief on the cost of most plant and machinery, including vans, up to a limit of £1 million per year <sup><a href="#ref-2" id="cite-2">[2]</a></sup><sup><a href="#ref-3" id="cite-3">[3]</a></sup>. This means you can deduct the full cost of a van from your profits in the year of purchase, provided the van is new and unused (or second-hand, but AIA applies to both). For companies, full expensing (100% first-year allowance) is available on new and unused vans from 1 April 2023 to 31 March 2026 <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. Unincorporated businesses cannot use full expensing but can use the AIA <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
+<p>The Annual Investment Allowance (AIA) allows you to claim 100% relief on the cost of most plant and machinery, including vans, up to a limit of £1 million per year <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-3" id="cite-3">[3]</a></sup>. This means you can deduct the full cost of a van from your profits in the year of purchase, provided the van is new and unused (or second-hand, but AIA applies to both). For companies, full expensing (100% first-year allowance) is available on new and unused vans from 1 April 2023 to 31 March 2026 <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. Unincorporated businesses cannot use full expensing but can use the AIA <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</p>
 
 <h2>Restrictions for private use and dual-purpose vehicles</h2>
 <p>If you use the van partly for private purposes, you can only claim capital allowances on the business proportion. You must apportion the cost based on business mileage. For example, if you use the van 70% for business and 30% privately, you can only claim allowances on 70% of the cost. Dual-purpose vehicles (e.g., SUVs that can carry goods) may be treated as cars if they are not primarily designed for commercial use. Check with your accountant to ensure correct classification.</p>
@@ -62,15 +61,14 @@ editorialNote: New informational_guide grounded in research across 5 authority s
 <li>Claiming on a van used mainly for private journeys, HMRC may deny the claim if business use is minimal.</li>
 <li>Treating a van as a car, vans generally qualify for better allowances, but dual-purpose vehicles may be reclassified.</li>
 <li>Forgetting to claim the AIA, many dentists miss out on 100% relief by not applying the AIA correctly.</li>
-<li>Using cash basis as a sole trader, if you use cash basis, you cannot claim capital allowances on vans <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</li>
+<li>Using cash basis as a sole trader, if you use cash basis, you cannot claim capital allowances on vans <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</li>
 <li>Not keeping adequate records, you need to prove business use with mileage logs and invoices.</li>
 </ul>
 
-<h2>References</h2>
+<h2>Sources</h2>
 <ol>
-  <li id="ref-1"><strong>icaew.com</strong>: <a href="https://www.icaew.com/technical/economy/resilience-and-renewal/a-lowdown-on-full-expensing-for-smes" rel="noopener noreferrer">A lowdown on full expensing for SMEs - ICAEW.com</a></li>
-  <li id="ref-2"><strong>gov.uk</strong>: <a href="https://www.gov.uk/capital-allowances" rel="noopener noreferrer">Claim capital allowances: Overview - GOV.UK</a></li>
+  <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/capital-allowances" rel="noopener noreferrer">Claim capital allowances: Overview - GOV.UK</a></li>
+  <li id="ref-2"><strong>accaglobal.com</strong>: <a href="https://www.accaglobal.com/gb/en/technical-activities/uk-tech/in-practice-ezine-archive/in-practice-archive_2022/June/Maximising-capital-allowances-relief.html" rel="noopener noreferrer">Maximising capital allowances relief - ACCA Global</a></li>
   <li id="ref-3"><strong>aka.hmrc.gov.uk</strong>: <a href="http://aka.hmrc.gov.uk/capital-allowances/fya/water.htm" rel="noopener noreferrer">Claim capital allowances: Overview - GOV.UK</a></li>
-  <li id="ref-4"><strong>accaglobal.com</strong>: <a href="https://www.accaglobal.com/gb/en/technical-activities/uk-tech/in-practice-ezine-archive/in-practice-archive_2022/June/Maximising-capital-allowances-relief.html" rel="noopener noreferrer">Maximising capital allowances relief - ACCA Global</a></li>
-  <li id="ref-5"><strong>nature.com</strong>: <a href="https://www.nature.com/articles/s41467-024-49157-5" rel="noopener noreferrer">Comparing costs and climate impacts of various electric vehicle ...</a></li>
+  <li id="ref-4"><strong>icaew.com</strong>: <a href="https://www.icaew.com/technical/economy/resilience-and-renewal/a-lowdown-on-full-expensing-for-smes" rel="noopener noreferrer">A lowdown on full expensing for SMEs - ICAEW.com</a></li>
 </ol>
