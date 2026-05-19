@@ -1,0 +1,89 @@
+name: Weekly Optimisation Engine
+
+# The optimisation engine pipeline:
+#   1. Pull fresh GSC query-level data for every active site (free)
+#   2. Pull a rotating DataForSEO slice (one site gets deep pull, others light)
+#   3. Re-run opportunity detection
+#   4. Queue high-confidence proposals; review past changes' outcomes
+#
+# Safety guarantees (built into the Python code, not the workflow):
+#   - Idempotency keys on api_cost_log prevent double-billing on retries
+#   - GSC tables use UNIQUE(site_key, page_url, query, date) for safe re-runs
+#   - DataForSEO hard stop at $0.85/day enforced by CostTracker.guard
+#
+# This workflow runs Mondays at 07:00 UTC. Re-running on the same day is
+# safe — see optimisation_engine/weekly_run.py docstring.
+
+on:
+  schedule:
+    - cron: '0 7 * * 1'  # 07:00 UTC every Monday
+  workflow_dispatch:
+    inputs:
+      site:
+        description: 'Restrict to one site (leave blank for all active)'
+        required: false
+        type: choice
+        options:
+          - ''
+          - agency
+          - property
+          - dentists
+          - generalist
+      skip_dataforseo:
+        description: 'Skip DataForSEO step (saves trial budget)'
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  optimisation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --quiet httpx python-dotenv google-auth google-auth-oauthlib google-api-python-client supabase
+
+      - name: Restore GSC OAuth token from secret
+        run: |
+          mkdir -p secrets
+          # GSC_TOKEN_PICKLE_B64 holds the base64-encoded gsc_token.pickle from secrets/
+          echo "$GSC_TOKEN_PICKLE_B64" | base64 -d > secrets/gsc_token.pickle
+          echo "$GSC_CREDENTIALS_JSON" > secrets/gsc_credentials.json
+        env:
+          GSC_TOKEN_PICKLE_B64: ${{ secrets.GSC_TOKEN_PICKLE_B64 }}
+          GSC_CREDENTIALS_JSON: ${{ secrets.GSC_CREDENTIALS_JSON }}
+
+      - name: Run weekly optimisation pipeline
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DATAFORSEO_API_LOGIN: ${{ secrets.DATAFORSEO_API_LOGIN }}
+          DATAFORSEO_API_PASSWORD: ${{ secrets.DATAFORSEO_API_PASSWORD }}
+        run: |
+          set -e
+          ARGS=""
+          if [ -n "${{ inputs.site }}" ]; then
+            ARGS="$ARGS --site ${{ inputs.site }}"
+          fi
+          if [ "${{ inputs.skip_dataforseo }}" = "true" ]; then
+            ARGS="$ARGS --skip-dataforseo"
+          fi
+          python -m optimisation_engine.weekly_run $ARGS
+
+      - name: Notify on completion
+        if: always()
+        run: |
+          echo "Weekly run finished at $(date -u). Inspect optimisation_changes + optimisation_opportunities for review queue."

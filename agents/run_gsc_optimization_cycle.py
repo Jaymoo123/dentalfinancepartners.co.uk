@@ -222,9 +222,9 @@ def main():
         # Run for specific niche
         niche = sys.argv[1]
         
-        if niche not in ['property', 'dentists', 'medical', 'solicitors']:
+        if niche not in ['property', 'dentists', 'medical', 'solicitors', 'agency', 'generalist']:
             print(f"[ERROR] Unknown niche: {niche}")
-            print("\nAvailable niches: property, dentists, medical, solicitors")
+            print("\nAvailable niches: property, dentists, medical, solicitors, agency, generalist")
             return
         
         run_daily_cycle(niche)
