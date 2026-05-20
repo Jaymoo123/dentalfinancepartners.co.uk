@@ -411,6 +411,18 @@ HARD RULES — read carefully (your output is rejected if any are broken):
     - Pick links that genuinely match the surrounding paragraph. Do not
       stuff a link in just to hit the count.
 
+  NO COMPETITOR NAME-DROPS:
+    - Do NOT name specific competing accountancy firms in the body, FAQs,
+      or anywhere else. Examples to AVOID: "Firms like X Ltd...",
+      "such as Y Accountants Ltd at 123 Address Street", "companies like Z".
+    - This site IS itself an accountancy firm — naming a competitor with
+      their address gives them free promotion on our own page.
+    - If you genuinely need an example, use a generic role description
+      ("a London-based dental specialist", "an SRA-aware practice accountant")
+      not a named firm.
+    - Companies House URLs in the research bundle are NOT authoritative
+      sources for service-page content. Do not cite them.
+
   SOURCE DATE FRAMING (critical for accuracy):
     - Each source above shows its publication year in the format
       (tier, YEAR) — e.g. (canonical, 2023) or (authority, undated).

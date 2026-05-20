@@ -117,6 +117,24 @@ def validate_post(fields: dict, *, site_config: dict) -> list[str]:
     if anchor_terms and anchor_rules:
         issues.extend(_validate_anchor_terms(name, content, anchor_terms, anchor_rules))
 
+    # ---- Competitor name-drop checks ------------------------------------
+    if content:
+        # Pattern 1: a sentence framing other firms as the example.
+        # "Firms like X Ltd...", "such as Y Ltd at 123 Address...",
+        # "companies like Z Limited", "firms such as ABC Accountants LLP".
+        competitor_intro = re.compile(
+            r"\b(?:firms?|companies|practices)\s+(?:like|such as|including|e\.g\.)\s+"
+            r"[A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*\s+"
+            r"(?:Ltd|Limited|LLP|Plc|Group|Accountants|Accountancy)",
+            re.IGNORECASE,
+        )
+        if competitor_intro.search(content):
+            issues.append("Content names a specific competitor firm via 'firms like X Ltd'/'such as Y Accountants' pattern")
+        # Pattern 2: a UK postcode in the body (likely a competitor address)
+        postcode = re.compile(r"\b[A-Z]{1,2}\d[A-Z\d]?\s+\d[A-Z]{2}\b")
+        if postcode.search(content):
+            issues.append("Content contains a UK postcode (likely a competitor address)")
+
     # ---- Banned-phrase checks (per-site) --------------------------------
     banned = site_config.get("banned_phrases") or []
     if banned and content:

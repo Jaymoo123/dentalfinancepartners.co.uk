@@ -240,6 +240,17 @@ BLOCKED_DOMAINS: set[str] = {
     "justanswer.com", "justanswer.co.uk",
     "answers.com",
     "raisin.com", "hoa.org.uk",
+    # Companies House directory — returns competitor firm listings, not
+    # authoritative content. Caused name-drop of "UK Property Accountants Ltd
+    # at 809 Salisbury House" inside one of our blogs.
+    "find-and-update.company-information.service.gov.uk",
+    "beta.companieshouse.gov.uk", "companieshouse.gov.uk",
+    # Job listing sites — usually irrelevant for content articles
+    "jobs.accaglobal.com", "jobs.icaew.com",
+    "indeed.com", "indeed.co.uk", "totaljobs.com", "reed.co.uk",
+    "glassdoor.com", "glassdoor.co.uk",
+    # Property/finance directory and lead-gen sites that often appear
+    "trustpilot.com", "yell.com", "checkatrade.com",
 }
 
 
