@@ -95,16 +95,29 @@ SELECT
   pillar_topic,
   content_tier,
   content_branch,
-  -- Defensive casts: each column might be text-with-empty-strings OR proper type
-  -- already. Cast to text first (no-op if already text, ISO-string if timestamp),
-  -- then check empty, then cast to canonical type. Handles both cases.
-  CASE WHEN priority::text IS NULL OR priority::text = ''
-       THEN 5 ELSE priority::text::integer END AS priority,
+  -- Defensive casts: Property has mixed text/numeric data. Text qualifiers
+  -- ('low', 'medium', 'high', 'very_high') get mapped to representative
+  -- integers; pure-numeric strings cast directly.
+  CASE
+    WHEN priority::text IS NULL OR priority::text = '' THEN 5
+    WHEN priority::text ~ '^-?[0-9]+$' THEN priority::text::integer
+    WHEN lower(priority::text) = 'low' THEN 3
+    WHEN lower(priority::text) = 'medium' THEN 5
+    WHEN lower(priority::text) = 'high' THEN 8
+    ELSE 5
+  END AS priority,
   publish_priority,
   user_intent,
   keyword_difficulty,
-  CASE WHEN search_volume::text IS NULL OR search_volume::text = ''
-       THEN NULL::integer ELSE search_volume::text::integer END AS search_volume,
+  CASE
+    WHEN search_volume::text IS NULL OR search_volume::text = '' THEN NULL::integer
+    WHEN search_volume::text ~ '^-?[0-9]+$' THEN search_volume::text::integer
+    WHEN lower(search_volume::text) = 'low' THEN 100
+    WHEN lower(search_volume::text) = 'medium' THEN 1000
+    WHEN lower(search_volume::text) = 'high' THEN 5000
+    WHEN lower(search_volume::text) = 'very_high' THEN 20000
+    ELSE NULL::integer
+  END AS search_volume,
   target_search_volume,
   competition,
   keyword_source,

@@ -92,12 +92,25 @@ BEGIN
     NEW.id, 'property', NEW.topic, NEW.primary_keyword,
     COALESCE(to_jsonb(NEW.secondary_keywords), '[]'::jsonb), NEW.category,
     NEW.pillar_topic, NEW.content_tier, NEW.content_branch,
-    CASE WHEN NEW.priority::text IS NULL OR NEW.priority::text = '' THEN 5
-         ELSE NEW.priority::text::integer END,
+    CASE
+      WHEN NEW.priority::text IS NULL OR NEW.priority::text = '' THEN 5
+      WHEN NEW.priority::text ~ '^-?[0-9]+$' THEN NEW.priority::text::integer
+      WHEN lower(NEW.priority::text) = 'low' THEN 3
+      WHEN lower(NEW.priority::text) = 'medium' THEN 5
+      WHEN lower(NEW.priority::text) = 'high' THEN 8
+      ELSE 5
+    END,
     NEW.publish_priority,
     NEW.user_intent, NEW.keyword_difficulty,
-    CASE WHEN NEW.search_volume::text IS NULL OR NEW.search_volume::text = ''
-         THEN NULL::integer ELSE NEW.search_volume::text::integer END,
+    CASE
+      WHEN NEW.search_volume::text IS NULL OR NEW.search_volume::text = '' THEN NULL::integer
+      WHEN NEW.search_volume::text ~ '^-?[0-9]+$' THEN NEW.search_volume::text::integer
+      WHEN lower(NEW.search_volume::text) = 'low' THEN 100
+      WHEN lower(NEW.search_volume::text) = 'medium' THEN 1000
+      WHEN lower(NEW.search_volume::text) = 'high' THEN 5000
+      WHEN lower(NEW.search_volume::text) = 'very_high' THEN 20000
+      ELSE NULL::integer
+    END,
     NEW.target_search_volume, NEW.competition, NEW.keyword_source,
     NEW.slug, COALESCE(NEW.used, false),
     CASE WHEN NEW.used_at::text IS NULL OR NEW.used_at::text = ''
