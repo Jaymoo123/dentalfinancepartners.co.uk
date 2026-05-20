@@ -89,7 +89,8 @@
       "Incorporation & Company Structures",
       "Consultant Tax"
     ],
-    "supabase_table": "blog_topics_medical",
+    "supabase_table": "blog_topics",
+    "site_key": "medical",
     "source_identifier": "medical"
   },
   "seo": {

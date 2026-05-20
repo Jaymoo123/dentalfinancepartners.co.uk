@@ -194,7 +194,8 @@
       "Making Tax Digital",
       "International Agencies"
     ],
-    "supabase_table": "blog_topics_agency",
+    "supabase_table": "blog_topics",
+    "site_key": "agency",
     "source_identifier": "agency"
   },
   "seo": {

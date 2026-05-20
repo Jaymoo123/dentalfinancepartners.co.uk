@@ -77,7 +77,8 @@
       "Practice finance",
       "VAT & compliance"
     ],
-    "supabase_table": "blog_topics_dentists",
+    "supabase_table": "blog_topics",
+    "site_key": "dentists",
     "source_identifier": "dentists"
   },
   "seo": {

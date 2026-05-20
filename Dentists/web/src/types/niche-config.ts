@@ -35,6 +35,7 @@ export interface NicheConfig {
     audience: string;
     categories: string[];
     supabase_table: string;
+    site_key?: string;
     source_identifier: string;
   };
   seo: {

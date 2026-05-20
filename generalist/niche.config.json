@@ -137,7 +137,8 @@
       "Bookkeeping and Compliance",
       "Director Pay and Dividends"
     ],
-    "supabase_table": "blog_topics_generalist",
+    "supabase_table": "blog_topics",
+    "site_key": "generalist",
     "source_identifier": "general"
   },
   "seo": {

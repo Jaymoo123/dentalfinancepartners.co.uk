@@ -102,7 +102,8 @@
       "Practice Succession & Sale",
       "Structure & Incorporation"
     ],
-    "supabase_table": "blog_topics_solicitors",
+    "supabase_table": "blog_topics",
+    "site_key": "solicitors",
     "source_identifier": "solicitors"
   },
   "seo": {

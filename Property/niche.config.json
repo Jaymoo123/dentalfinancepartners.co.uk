@@ -93,7 +93,8 @@
       "Property Types & Specialist Tax",
       "Non-Resident Landlord Tax"
     ],
-    "supabase_table": "blog_topics_property",
+    "supabase_table": "blog_topics",
+    "site_key": "property",
     "source_identifier": "property"
   },
   "seo": {
