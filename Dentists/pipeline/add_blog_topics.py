@@ -1,6 +1,20 @@
 """
-Bulk add blog topics to Supabase blog_topics_dentists table.
+[OBSOLETE — DO NOT RUN AS-IS]
+Originally a one-time seeder for the per-site blog_topics_dentists table at
+site launch (2026-04). Phase 4 (2026-05-20) consolidated all per-site tables
+into a unified `blog_topics` table; the legacy table was renamed to
+`blog_topics_dentists_legacy_20260520` and will be dropped ~2026-06-22.
+
+If you ever need to re-seed: change the table URL to `blog_topics`, add
+`"site_key": "dentists"` to every topic dict, and use the consolidated
+pattern in optimisation_engine/blog_generator/topic_repository.py instead.
+
+Kept in-repo for historical record of the launch topic list.
 """
+import sys
+print("[ABORT] This seeder is obsolete post Phase 4. See header comment.")
+sys.exit(2)
+
 import httpx
 from config_supabase import SUPABASE_URL, SUPABASE_KEY
 

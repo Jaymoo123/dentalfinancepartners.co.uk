@@ -1,6 +1,18 @@
 """
-Bulk add blog topics to Supabase blog_topics_property table.
+[OBSOLETE — DO NOT RUN AS-IS]
+Originally a one-time seeder for the per-site blog_topics_property table at
+site launch. Phase 4 (2026-05-20) consolidated all per-site tables into a
+unified `blog_topics` table; the legacy table was renamed to
+`blog_topics_property_legacy_20260520` and will be dropped ~2026-06-22.
+
+To re-seed: change the table URL to `blog_topics`, add `"site_key": "property"`
+to every topic dict, and prefer the consolidated pattern in
+optimisation_engine/blog_generator/topic_repository.py.
 """
+import sys
+print("[ABORT] This seeder is obsolete post Phase 4. See header comment.")
+sys.exit(2)
+
 import httpx
 from config_supabase import SUPABASE_URL, SUPABASE_KEY
 
