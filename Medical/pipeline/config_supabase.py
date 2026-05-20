@@ -16,7 +16,7 @@ OUTPUT_MD_DIR = os.path.join(os.path.dirname(__file__), "..", "web", "content", 
 # ============================================================================
 # SITE CONFIG (Medical-specific)
 # ============================================================================
-SITE_BASE_URL = "https://medicalaccountantsuk.co.uk"
+SITE_BASE_URL = "https://medicalaccounts.co.uk"
 AUTHOR_NAME = "Medical Accountants UK Editorial Team"
 
 # ============================================================================

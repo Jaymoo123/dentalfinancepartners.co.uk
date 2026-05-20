@@ -251,15 +251,53 @@ If RLS is found missing on any cross-site-isolation table, Phase 4 must include 
 
 ---
 
-## Pipeline Scripts (Phase 1 will populate, Phase 3 will centralise)
+## Pipeline Scripts — Phase 1 Findings (2026-05-20)
 
-Known duplicates across sites (memory + commit log):
-- `submit_indexnow.py` — known to exist in each site's `pipeline/`
-- Likely others (config_supabase.py, fetch_image.py, etc.)
+Audit of `{site}/pipeline/*.py` across all 6 sites:
 
-Phase 1 audit will produce the full list.
+### Universal (in all 6 — top centralisation candidates for Phase 3)
 
-Phase 3 destination: `optimisation_engine/indexing/` and other appropriate subdirs of `optimisation_engine/`. Old per-site scripts become 5-line shims for backward compatibility.
+- `config_supabase.py` — per-site configuration constants. Already partly replaced by `optimisation_engine/blog_generator/site_configs/{site}.py`. The remaining per-site copies are legacy from before blog-generator consolidation.
+- `generate_blog_supabase.py` — per memory `blog_generator_consolidation`, these are now thin shims delegating to `optimisation_engine/blog_generator/`. Confirmed in 5 of 6 niche sites + Digital Agency. Solicitors has both this and `generate_blog_deepseek.py` (legacy variant).
+- `submit_indexnow.py` — confirmed in Dentists, Property, generalist, Digital Agency. Should be in all 6 (Medical + Solicitors are gaps to verify). Phase 3 destination: `optimisation_engine/indexing/submit_indexnow.py` taking `--site` arg.
+
+### Common in 3+ sites (Phase 3 candidates with adaptation)
+
+- `ideate_topics.py`, `mine_keywords.py`, `serper_*.py`, `seed_*.py` — keyword research helpers; some already in `optimisation_engine/ingestion/`. Phase 3 should consolidate the remaining per-site copies.
+- `fetch_image.py`, `backfill_images.py` — Pexels image fetchers. Phase 3 destination: `optimisation_engine/images/`.
+- `strip_em_dashes.py` — content cleanup utility. Phase 3 destination: `optimisation_engine/cleanup/`.
+- `title_optimise.py`, `apply_title_rewrites.py`, `rewrite_meta_for_ctr.py`, `measure_optimization_impact.py` — optimisation helpers; some logic overlaps with the `optimisation_engine/apply/` walker. Phase 3 to reconcile.
+
+### Legacy "numbered" pipeline scripts (in Dentists + Property only)
+
+`01_sheets_find_row.py` → `09_md_exporter.py` plus `06_sanity_publisher.py`, `06_webflow_uploader.py`. These are from the **pre-Next.js era** when content flowed through Google Sheets → Sanity/Webflow. **Recommend archiving in Phase 3** (move to `archive/legacy_sheets_pipeline/` or delete after verifying nothing references them). Total: ~13 scripts × 2 sites = 26 files.
+
+### Site-unique scripts (NOT centralised — legitimate per-site work)
+
+- **generalist/pipeline/**: 30+ scripts unique to generalist (bulk_generate, glossary/guides generators, town_pages, GSC cross-niche analysis, SE Ranking integration, fix_cannibalisation, fix_tax_rates, etc.). These represent the most evolved per-site engineering. Phase 3 should identify which deserve promotion to `optimisation_engine/` for reuse on other sites.
+- **Digital Agency/pipeline/**: dubai_*, founder_stories, seed_rd_vertical — domain-specific content generation. Keep per-site.
+- **Solicitors/pipeline/**: build_phase2_worksheet, keyword_intelligence — Solicitors-specific keyword work.
+
+### Gaps
+
+- **Medical/pipeline/** is minimal: only `config_supabase.py` + `generate_blog_supabase.py`. No `submit_indexnow.py` script exists for Medical. May explain why Medical's indexing coverage is weak. Phase 3 must ensure all sites have indexing capability (centralised script reads from `sites` table).
+
+Phase 3 destination structure (planned):
+
+```
+optimisation_engine/
+├── indexing/
+│   └── submit_indexnow.py       # --site X / --all
+├── images/
+│   ├── fetch_image.py
+│   └── backfill_images.py
+├── cleanup/
+│   └── strip_em_dashes.py
+├── ingestion/                    # already exists
+│   └── (keyword research)
+└── ops/                          # Phase 6
+    └── (deploy, health, migrate, backup, pause-site)
+```
 
 ---
 
@@ -331,11 +369,31 @@ Planned procedures, each tested by intentional trigger:
 
 ---
 
-## Open Manual Gates for Phase 0 Completion
+## Open Manual Gates for Phase 0/1 Completion
 
-These items require owner action before Phase 0 can be tagged complete:
+These items require owner action:
 
-- [ ] Create staging Supabase project per "Staging Supabase Project" section above
-- [ ] Reconcile Medical site domain drift (`niche.config.json` says `medicalaccountantsuk.co.uk`, production runs on `medicalaccounts.co.uk`)
-- [ ] Optional: commit Digital Agency repo's untracked AIA blog posts + IndexNow key (separate repo, separate hygiene; not blocking)
-- [ ] Verify Vercel framework preset on Digital Agency project is correctly set (`"framework": null` is in project.json; known risk per memory)
+- [x] ~~Create staging Supabase project~~ ✅ Done 2026-05-20 (`fyabqbuklfrjqjxaofcx`)
+- [x] ~~Reconcile Medical site domain drift~~ ✅ Done 2026-05-20 — `Medical/niche.config.json`, `Medical/pipeline/config_supabase.py`, `agents/config/gsc_config.py` all updated to `medicalaccounts.co.uk`
+- [x] ~~Populate sites table for medical + solicitors~~ ✅ Done 2026-05-20 — all 6 rows now in registry
+- [ ] **Apply RLS audit RPC migration** (`supabase/migrations/20260520000003_add_rls_audit_rpc.sql`) to prod Supabase via dashboard SQL editor or `npx supabase db push --linked`. Then run `python scripts/phase1_rls_audit.py` to enumerate RLS gaps.
+- [ ] **Re-verify Medical GSC property** on new domain (`sc-domain:medicalaccounts.co.uk`) — old verification was tied to `medicalaccountantsuk.co.uk`. Without this, GSC data won't flow for Medical.
+- [ ] **Decide on Medical blog content** — 48 .md files reference the old `medicalaccountantsuk.co.uk` domain. Options: (a) batch find-replace, (b) re-generate via engine, (c) leave as-is and let new content use correct domain. Recommend (a) for SEO hygiene.
+- [ ] Optional: commit Digital Agency repo's untracked AIA blog posts + IndexNow key (separate repo)
+- [ ] Optional: investigate Solicitors zero-lead status (Agency + Generalist are <3 days old so expected; Solicitors is older and worth a sub-investigation)
+- [ ] Optional: verify Vercel framework preset on Digital Agency project (`"framework": null` is in project.json; routes other than homepage may 404)
+
+## Phase 1 Closeout Status (2026-05-20)
+
+| Item | Status |
+|---|---|
+| sites table populated for all 6 sites | ✅ Done |
+| Medical config drift fixed | ✅ Done |
+| Supabase table inventory + row counts | ✅ Done |
+| blog_topics_* schema divergence documented | ✅ Done |
+| Lead-flow distribution audited | ✅ Done (3 of 6 sites have ever produced leads) |
+| RLS migration coverage audited | ✅ Done (gap identified: 15+ newer tables) |
+| Live RLS state enumerated | ⏳ Pending RPC application |
+| shared/web-core/ orphan identified | ✅ Done |
+| Per-site pipeline script duplication catalogued | ✅ Done |
+| Component duplication catalogued | ✅ Done (LeadForm, supabase-client, SiteHeader/Footer in 5 of 6) |

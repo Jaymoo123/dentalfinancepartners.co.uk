@@ -73,7 +73,10 @@ GSC_CONFIG = {
     
     "medical": {
         # GSC settings
-        "site_url": "sc-domain:medicalaccountantsuk.co.uk",
+        # NOTE 2026-05-20: switched from sc-domain:medicalaccountantsuk.co.uk
+        # to medicalaccounts.co.uk after Phase 1 audit found config drift.
+        # GSC property needs re-verification on new domain before data flows.
+        "site_url": "sc-domain:medicalaccounts.co.uk",
         "property_type": "domain",
         
         # Database
