@@ -15,7 +15,7 @@ The single source of truth for how the niche-site portfolio is organised. Read t
 | baseline | Pre-refactor snapshot of working tree | ✅ Tagged | `infra-refactor/baseline` |
 | 0 | Foundation + checkpoint setup, staging Supabase, env var matrix, this doc | 🟡 In progress | — |
 | 1 | Inventory + sites registry | ⬜ Pending | — |
-| 2 | Shared web component package via pnpm workspaces | ⬜ Pending | — |
+| 2 | Shared web component package via npm workspaces | ⬜ Pending | — |
 | 3 | Centralise pipeline scripts | ⬜ Pending | — |
 | 4 | Unify per-site DB tables (highest risk) | ⬜ Pending | — |
 | 5 | Health dashboard + monitoring | ⬜ Pending | — |
@@ -243,6 +243,27 @@ The following tables were created by later migrations and **may or may not** hav
 
 **Phase 1 sub-task** (post-staging-link): create a SECURITY DEFINER RPC that returns `pg_policies` rows, or use Supabase dashboard, to enumerate live RLS on every table and verify nothing is missing for the newer tables. This is the gate before Phase 4 table consolidation.
 
+### Live RLS state (2026-05-20, after applying RLS audit RPC migration)
+
+`scripts/phase1_rls_audit.py` reports actual policy coverage in prod Supabase via the `rls_audit()` RPC. 32 tables in public schema total. **Much better than feared** — RLS is broadly deployed beyond what's in committed migrations (likely added via dashboard):
+
+**29 tables with RLS enabled and ≥1 policy**: agent_costs (2), agent_executions (2), api_cost_log (3), bing_query_data (2), blog_optimizations (3), blog_topics_agency (3), blog_topics_dentists (2), blog_topics_generalist (3), blog_topics_medical (3), blog_topics_property (2), blog_topics_solicitors (3), content_authority_score (2), dataforseo_competitor_data (2), dataforseo_keyword_data (2), gsc_indexing_issues (3), gsc_page_performance (3), gsc_query_data (2), **leads (7)** (most policies), niche_metrics (2), optimisation_changes (3), optimisation_opportunities (3), published_content (2), research_cache (3), seo_rankings (2), sites (3). 
+
+**3 tables with NO RLS enabled (real gap)**:
+- `session_events`
+- `session_sessions`
+- `tiktok_creatives`
+
+Unknown purpose. Phase 1.5 sub-task: identify these tables, decide whether they need RLS (user-behaviour tracking probably does).
+
+**4 tables with RLS enabled but ZERO policies (service-role-only)**:
+- `apply_attempts` — walker audit table. Probably intentional (only engine writes/reads).
+- `meta_performance` — meta CTR tracking. Probably intentional (only engine writes/reads).
+- `health_check_submissions` — unknown purpose.
+- `newsletter_subscribers` — **needs attention**. If newsletter signup form on Agency + Generalist sends directly to this table via the public anon key, signups will be silently blocked. If signup goes through an API route using service_role, it works. Worth checking the wiring on `Digital Agency/web/src/app/api/cron/newsletter-drip/route.ts` and related.
+
+**Phase 4 gate**: before any table consolidation, write a negative test for the consolidated `blog_topics` (and any other consolidated tables): "Query under anon role with `site_key=X` filter cannot return rows with `site_key=Y`." Verify in staging first.
+
 ### Verification gate before Phase 4
 
 Before any table consolidation, the negative test must pass on staging: "Given a row written with `source='dentists'` (or `site_key='dentists'`), can a query made under `source='property'` context read it?" — must be **No** for `leads`, `blog_topics_*`, `optimisation_*`, etc.
@@ -333,10 +354,63 @@ Per-site copies have likely diverged from `shared/web-core/` since extraction. F
 Recommended Phase 2 approach:
 1. **Diff** each `shared/web-core/` file against the corresponding per-site files to identify divergence
 2. **Choose canonical version** — usually the most recent per-site (Generalist or Digital Agency) which has had more development attention
-3. **Move canonical version** into `packages/web-shared/` (pnpm workspace) with prop-based per-site customisation
+3. **Move canonical version** into `packages/web-shared/` (npm workspace; revised from pnpm 2026-05-20 — see note below) with prop-based per-site customisation
 4. **Delete** `shared/web-core/` (the orphan)
 5. **Migrate** one site at a time, with smoke test between each
 6. **Delete** per-site copies after migration verified
+
+*Note on workspace tooling*: switched from pnpm to npm workspaces during Phase 2 prep. All 5 niche sites already use npm with per-site `package-lock.json`. Migrating to pnpm would invalidate every lockfile and require Vercel reconfiguration; npm workspaces achieves the same workspace primitive with zero migration. Can layer pnpm/Turborepo later if needed.
+
+### Phase 2 diff audit results (2026-05-20)
+
+`scripts/phase2_shared_diff_audit.py` reports per-file drift between `shared/web-core/` and each site's `web/src/` copy. Full JSON: `docs/phase2_shared_diff.json`.
+
+**Per-site total drift (most → least diverged)**:
+
+| Site | Files diverged | Total line diffs | Files identical to shared | Files missing |
+|---|---|---|---|---|
+| generalist | 13/15 | 1,345 | 2 | 0 |
+| Property | 12/15 | 893 | 3 | 0 |
+| Solicitors | 10/15 | 542 | 4 | 1 |
+| Medical | 9/15 | 358 | 5 | 1 |
+| Dentists | 8/15 | 446 | 7 | 0 |
+
+Generalist is the most-evolved version — likely the canonical source for Phase 2 extraction. Dentists is the most-aligned to the existing `shared/web-core/`.
+
+**Files already aligned across all 5 sites (free wins — easy first extractions)**:
+- `lib/local-business-schema.ts` (identical in all 5)
+- `lib/supabase-client.ts` (identical in all 5)
+
+**Files where some sites still match shared/web-core/ (medium difficulty)**:
+- `LeadForm.tsx`: Dentists/Medical/Solicitors identical; Property + Generalist diverged (323-334 line diffs each)
+- `SiteHeader.tsx`: Dentists identical; others diverged
+- `Breadcrumb.tsx`: Medical identical; others diverged
+- `CTASection.tsx`: Dentists identical; others diverged
+- `layout-utils.ts`: Dentists identical; others diverged
+- `organization-schema.ts`: 4 sites identical; generalist diverged (34 lines)
+
+**Files where ALL 5 sites have diverged from shared (hardest — needs canonical reconciliation)**:
+- `BlogPostRenderer.tsx` (271-391 line diffs per site — major divergence)
+- `PageShell.tsx` (small diffs, easy reconcile)
+- `SiteFooter.tsx` (substantial diffs)
+- `StickyCTA.tsx`
+- `lib/blog.ts`
+- `lib/schema.ts` (uniform 6-line diff on 4 sites + 108-line diff on generalist)
+
+**Files missing from some sites**: `types/niche-config.ts` is missing from Medical + Solicitors.
+
+**Phase 2 migration order (lowest risk → highest)**:
+1. `lib/supabase-client.ts` — already identical everywhere, free move
+2. `lib/local-business-schema.ts` — already identical, free move
+3. `lib/organization-schema.ts` — 4 sites already match, just reconcile generalist's divergence
+4. `CTASection.tsx`, `layout-utils.ts` — Dentists already matches; medium-effort reconcile of others
+5. `PageShell.tsx`, `lib/schema.ts` — small uniform diffs; central reconcile
+6. `LeadForm.tsx` — 3 sites match shared, 2 diverged; medium
+7. `Breadcrumb.tsx`, `SiteHeader.tsx`, `StickyCTA.tsx`, `SiteFooter.tsx` — full reconcile
+8. `lib/blog.ts`, `BlogPostRenderer.tsx` — heaviest reconcile
+9. `types/niche-config.ts` — needs to be added to Medical + Solicitors
+
+Each migration is its own commit + Vercel deploy + smoke test per site before moving on.
 
 ---
 
