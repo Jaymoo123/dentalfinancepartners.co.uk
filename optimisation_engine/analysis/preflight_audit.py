@@ -7,7 +7,10 @@ queue and produces a per-site report flagging:
     being ranked by a DIFFERENT page on the same site (cannibalisation risk
     if we ship the rewrite as-is)
   - new_page opportunities whose proposed slug / title overlaps strongly with
-    an existing blog post on the same site (semantic-duplicate risk)
+    an existing blog post on the SAME site (semantic-duplicate risk)
+
+Cross-site duplicates are NOT flagged — each niche site is independent and
+the same topic appearing on Property + Dentists is intentional, not a duplicate.
 
 No DB writes by default — output is a printed report and optional
 machine-readable JSON. Apply pass should refuse to action any opp listed

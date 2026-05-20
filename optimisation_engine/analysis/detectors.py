@@ -141,12 +141,33 @@ def detect_ctr_problems(
     max_ctr: float = 0.02,
     min_position: float = 1.0,
     max_position: float = 15.0,
+    cannibalised_query_min_impressions: int = 10,
+    cannibalised_query_max_position: float = 20.0,
 ) -> list[Opportunity]:
     """Pages ranking well but earning few clicks. Title/meta failing.
 
     Confidence: HIGH when position < 10 and impressions > 50 (textbook case).
                 MEDIUM otherwise within the band.
+
+    Cannibalisation guard: a query is "contested" on this site if 2+ pages
+    have non-trivial impressions and ranking for it. We DO NOT emit a
+    rewrite_title_meta opp whose primary_query is contested — rewriting one
+    of the cannibalising pages without resolving the cannibalisation first
+    would either deepen the conflict or shift impressions sideways. The
+    cannibalisation_resolution opportunity from detect_cannibalisation
+    handles those queries instead.
     """
+    # Identify contested queries — same query, multiple pages ranking on
+    # this site with enough signal to matter.
+    queries_by_page_count: dict[str, int] = defaultdict(int)
+    for (pg, q), m in by_pq.items():
+        if (
+            m["impressions"] >= cannibalised_query_min_impressions
+            and m["avg_position"] <= cannibalised_query_max_position
+        ):
+            queries_by_page_count[q] += 1
+    contested_queries: set[str] = {q for q, n in queries_by_page_count.items() if n >= 2}
+
     # Group by page so we don't emit one opp per query for the same page.
     page_q: dict[str, list[tuple[str, dict]]] = defaultdict(list)
     for (pg, q), m in by_pq.items():
@@ -156,6 +177,7 @@ def detect_ctr_problems(
             page_q[pg].append((q, m))
 
     out: list[Opportunity] = []
+    skipped_due_to_cannibalisation = 0
     for page, queries in page_q.items():
         # Sum across queries on this page to get the page-level signal
         total_impr = sum(m["impressions"] for _, m in queries)
@@ -166,6 +188,13 @@ def detect_ctr_problems(
         queries.sort(key=lambda kv: kv[1]["impressions"], reverse=True)
         primary_q, primary_m = queries[0]
         cluster = [q for q, _ in queries[:8]]
+
+        # Source patch: do NOT emit a rewrite if the primary query is contested
+        # on this site (another page is also ranking for it). Let
+        # detect_cannibalisation own that query's resolution first.
+        if primary_q in contested_queries:
+            skipped_due_to_cannibalisation += 1
+            continue
 
         # Confidence scoring
         page_ctr = total_clicks / total_impr if total_impr else 0
@@ -212,6 +241,12 @@ def detect_ctr_problems(
                     ],
                 },
             )
+        )
+    if skipped_due_to_cannibalisation:
+        print(
+            f"  detect_ctr_problems: skipped {skipped_due_to_cannibalisation} opp(s) "
+            f"because primary_query is contested on this site — "
+            f"detect_cannibalisation will handle them"
         )
     return out
 
@@ -448,6 +483,70 @@ def _fetch_existing_gsc_queries(site_key: str, days: int = 28) -> set[str]:
     return {(row.get("query") or "").lower() for row in r.json() if row.get("query")}
 
 
+def _existing_post_tokens(site_key: str) -> list[frozenset]:
+    """Tokenise every existing blog post on disk for this site.
+
+    Used by the new_page detectors to skip emitting opportunities whose
+    primary_query already matches a post that exists. The action_specifier
+    + apply layer would catch literal slug collisions, but this catches
+    "different slug, same topic" semantic duplicates before LLM spend.
+    """
+    try:
+        from optimisation_engine.config import get_site
+    except Exception:
+        return []
+    try:
+        site = get_site(site_key)
+    except Exception:
+        return []
+    content_dir = site.get("content_dir")
+    if not content_dir:
+        return []
+    from pathlib import Path
+    full_path = Path(content_dir)
+    if not full_path.is_absolute():
+        ROOT_PATH = Path(__file__).resolve().parents[2]
+        full_path = ROOT_PATH / content_dir
+    if not full_path.exists():
+        return []
+
+    out: list[frozenset] = []
+    for p in full_path.rglob("*.md"):
+        if p.name.startswith("_"):
+            continue
+        title = None
+        try:
+            text = p.read_text(encoding="utf-8", errors="ignore")
+            fm_match = re.search(r"^title:\s*['\"]?(.+?)['\"]?\s*$", text, re.MULTILINE)
+            if fm_match:
+                title = fm_match.group(1).strip()
+        except Exception:
+            pass
+        slug = p.stem
+        combined = (title or slug.replace("-", " ")) + " " + slug
+        out.append(_intent_tokens(combined))
+    return out
+
+
+def _is_semantic_dupe_of_existing_post(
+    candidate_query: str,
+    existing_post_tokens: list[frozenset],
+    threshold: float = 0.5,
+) -> bool:
+    """True if candidate_query's tokenised form Jaccard-overlaps >= threshold
+    with any existing post on the site."""
+    cand = _intent_tokens(candidate_query)
+    if not cand or not existing_post_tokens:
+        return False
+    for existing in existing_post_tokens:
+        if not existing:
+            continue
+        overlap = len(cand & existing) / max(1, len(cand | existing))
+        if overlap >= threshold:
+            return True
+    return False
+
+
 def detect_dataforseo_keyword_gap(
     site_key: str,
     *,
@@ -467,9 +566,13 @@ def detect_dataforseo_keyword_gap(
     if not kw_rows:
         return []
     existing = _fetch_existing_gsc_queries(site_key)
+    # Source patch: existing posts on disk → skip emitting new_page for any
+    # candidate that semantically duplicates a page that already exists.
+    existing_post_tokens = _existing_post_tokens(site_key)
 
     out: list[Opportunity] = []
     seen: set[str] = set()
+    skipped_existing_post = 0
     for row in kw_rows:
         kw = (row.get("related_keyword") or "").strip().lower()
         if not kw or kw in seen:
@@ -481,6 +584,9 @@ def detect_dataforseo_keyword_gap(
             continue
         if kw in existing:
             continue  # Already appearing for it
+        if _is_semantic_dupe_of_existing_post(kw, existing_post_tokens):
+            skipped_existing_post += 1
+            continue
         seen.add(kw)
 
         intent = row.get("search_intent") or "unknown"
@@ -521,6 +627,11 @@ def detect_dataforseo_keyword_gap(
                 },
             )
         )
+    if skipped_existing_post:
+        print(
+            f"  detect_dataforseo_keyword_gap: skipped {skipped_existing_post} candidate(s) "
+            f"that semantically duplicate existing posts on disk"
+        )
     return out
 
 
@@ -545,12 +656,20 @@ def detect_missing_pages(
         if m["avg_position"] < b["best_position"]:
             b["best_position"] = m["avg_position"]
 
+    # Source patch: skip "missing page" candidates whose query semantically
+    # duplicates a post that already exists on disk.
+    existing_post_tokens = _existing_post_tokens(site_key)
+
     out: list[Opportunity] = []
+    skipped_existing_post = 0
     for query, info in by_query.items():
         if info["impressions"] < min_impressions:
             continue
         if info["best_position"] < min_position:
             continue  # Some page is doing OK; not a missing-page case
+        if _is_semantic_dupe_of_existing_post(query, existing_post_tokens):
+            skipped_existing_post += 1
+            continue
         score = min(100, 40 + int(info["impressions"] / 10))
         out.append(
             Opportunity(
@@ -579,6 +698,11 @@ def detect_missing_pages(
                     ],
                 },
             )
+        )
+    if skipped_existing_post:
+        print(
+            f"  detect_missing_pages: skipped {skipped_existing_post} candidate(s) "
+            f"that semantically duplicate existing posts on disk"
         )
     return out
 
