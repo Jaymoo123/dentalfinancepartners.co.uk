@@ -93,9 +93,10 @@ class ContentResearchAgent:
             audience = "UK professionals"
             categories = ["General accounting"]
         
-        # OPTION 3: Get recent topics to avoid
+        # OPTION 3: Get recent topics to avoid (scoped to this site post Phase 4)
         recent_topics = await self.supabase.select(
             self.niche_config["blog_topics_table"],
+            filters={"site_key": self.niche_config["site_key"]},
             order="created_at.desc",
             limit=20
         )
@@ -183,6 +184,7 @@ Return ONLY valid JSON in this exact format:
                 await self.supabase.insert(
                     self.niche_config["blog_topics_table"],
                     {
+                        "site_key": self.niche_config["site_key"],
                         "topic": topic["topic"],
                         "secondary_keyword_1": topic.get("secondary_keyword_1"),
                         "secondary_keyword_2": topic.get("secondary_keyword_2"),
@@ -201,10 +203,10 @@ Return ONLY valid JSON in this exact format:
         return inserted_count, duplicate_count
     
     async def _get_unused_topic_count(self) -> int:
-        """Get count of unused topics."""
+        """Get count of unused topics (scoped to this site)."""
         topics = await self.supabase.select(
             self.niche_config["blog_topics_table"],
-            filters={"used": False}
+            filters={"used": False, "site_key": self.niche_config["site_key"]}
         )
         return len(topics)
     

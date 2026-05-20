@@ -131,7 +131,8 @@ class RiskManagerAgent:
             
             inventory = await self.topic_monitor.check_inventory(
                 niche,
-                NICHE_CONFIG[niche]["blog_topics_table"]
+                NICHE_CONFIG[niche]["blog_topics_table"],
+                site_key=NICHE_CONFIG[niche]["site_key"],
             )
             
             print(f"   {niche}: {inventory['unused_count']} topics ({inventory['status']})")

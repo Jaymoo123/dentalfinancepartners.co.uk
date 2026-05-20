@@ -21,13 +21,19 @@ class ContentAnalyzer:
         self.supabase = SupabaseClient(SUPABASE_URL, SUPABASE_KEY)
         self.anthropic = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
     
-    async def analyze_all_topics(self) -> Dict:
-        """Comprehensive analysis of all topics across all niches."""
-        print("=== Content Strategy Analyzer ===\n")
-        
-        # Get all topics
+    async def analyze_all_topics(self, site_key: str = "dentists") -> Dict:
+        """Comprehensive analysis of all topics for a given site.
+
+        Post Phase 4: queries the unified `blog_topics` table filtered by
+        site_key. Defaults to dentists for legacy callers (the only previous
+        caller was hard-coded to blog_topics_dentists).
+        """
+        print(f"=== Content Strategy Analyzer ({site_key}) ===\n")
+
+        # Get all topics for this site
         all_topics = await self.supabase.select(
-            "blog_topics_dentists",
+            "blog_topics",
+            filters={"site_key": site_key},
             order="created_at.desc"
         )
         

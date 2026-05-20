@@ -24,10 +24,10 @@ async def setup():
     supabase = SupabaseClient(SUPABASE_URL, SUPABASE_KEY)
     
     try:
-        # Try to query existing tables
-        result = await supabase.select("blog_topics_dentists", limit=1)
+        # Try to query existing tables (post Phase 4: unified blog_topics)
+        result = await supabase.select("blog_topics", filters={"site_key": "dentists"}, limit=1)
         print("✅ Connection successful!")
-        print(f"   Found {len(result)} topics in blog_topics_dentists table")
+        print(f"   Found {len(result)} topics in blog_topics (site_key=dentists)")
     except Exception as e:
         print(f"❌ Connection failed: {e}")
         return

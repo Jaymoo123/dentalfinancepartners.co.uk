@@ -457,9 +457,9 @@ Return ONLY the new sections (markdown format) with clear H2/H3 headings.
             "Content-Type": "application/json",
             "Prefer": "return=minimal",
         }
-        
-        # Find topic by slug
-        params = {"slug": f"eq.{slug}"}
+
+        # Find topic by slug, scoped to this site (post Phase 4 unified table)
+        params = {"slug": f"eq.{slug}", "site_key": f"eq.{self.config['site_key']}"}
         
         try:
             # Get current count
@@ -493,16 +493,16 @@ Return ONLY the new sections (markdown format) with clear H2/H3 headings.
             "Prefer": "return=minimal",
         }
         
-        params = {"slug": f"eq.{slug}"}
-        
+        params = {"slug": f"eq.{slug}", "site_key": f"eq.{self.config['site_key']}"}
+
         try:
             response = httpx.get(url, headers=headers, params=params, timeout=10.0)
             response.raise_for_status()
             data = response.json()
-            
+
             if data:
                 current_count = data[0].get('optimization_count', 0)
-                
+
                 update_data = {
                     'optimization_count': max(0, current_count - 1),
                 }

@@ -178,10 +178,11 @@ class BlogGenerationAgent:
         """
         Get next unused topic from Supabase using priority-based selection.
         Prioritizes: high publish_priority, low keyword_difficulty (easy wins first).
+        Post Phase 4: unified table → filter by site_key.
         """
         topics = await self.supabase.select(
             self.niche_config["blog_topics_table"],
-            filters={"used": False},
+            filters={"used": False, "site_key": self.niche_config["site_key"]},
             order="publish_priority.desc,keyword_difficulty.asc,created_at.asc",
             limit=1
         )

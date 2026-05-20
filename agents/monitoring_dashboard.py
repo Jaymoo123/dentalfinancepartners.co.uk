@@ -121,14 +121,13 @@ class MonitoringDashboard:
                 "published_content",
                 filters={"niche": niche.lower()}
             )
-            
-            # Get unused topics
-            table_name = "blog_topics_dentists" if niche == "Dentists" else "blog_topics_property"
+
+            # Get unused topics (post Phase 4: unified table + site_key)
             unused_topics = await self.supabase.select(
-                table_name,
-                filters={"used": False}
+                "blog_topics",
+                filters={"used": False, "site_key": niche.lower()}
             )
-            
+
             print(f"{niche:10} | Published: {len(published):3} | Unused topics: {len(unused_topics):3}")
         
         print()

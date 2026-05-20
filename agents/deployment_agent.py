@@ -108,10 +108,10 @@ class DeploymentAgent:
                 }
             )
             
-            # 5. Mark topic as used
+            # 5. Mark topic as used (scoped to this site post Phase 4)
             await self.supabase.update(
                 self.niche_config["blog_topics_table"],
-                filters={"topic": content_item["topic"]},
+                filters={"topic": content_item["topic"], "site_key": self.niche_config["site_key"]},
                 data={"used": True}
             )
             

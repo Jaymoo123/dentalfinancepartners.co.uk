@@ -15,25 +15,33 @@ class TopicInventoryMonitor:
             "healthy": 10,  # >= 10 topics = healthy
         }
     
-    async def check_inventory(self, niche: str, blog_topics_table: str) -> Dict:
+    async def check_inventory(self, niche: str, blog_topics_table: str, site_key: str = None) -> Dict:
         """
         Check topic inventory for a niche.
         Returns status and metrics.
+
+        Post Phase 4: site_key required for unified blog_topics table. Callers
+        should pass NICHE_CONFIG[niche]["site_key"]. Falls back to niche
+        lowercase if omitted (compat shim).
         """
-        # Get unused topic count
+        if site_key is None:
+            site_key = niche.lower()
+
+        # Get unused topic count, scoped to this site
         unused_topics = await self.supabase.select(
             blog_topics_table,
-            filters={"used": False}
+            filters={"used": False, "site_key": site_key}
         )
-        
+
         unused_count = len(unused_topics)
-        
+
         # Calculate usage velocity (topics used in last 7 days)
         week_ago = datetime.utcnow() - timedelta(days=7)
         used_topics = await self.supabase.select(
             blog_topics_table,
             filters={
                 "used": True,
+                "site_key": site_key,
                 "generated_at": f"gte.{week_ago.isoformat()}"
             }
         )
@@ -107,12 +115,12 @@ class TopicInventoryMonitor:
         
         return fallback_topics.get(niche, [])
     
-    async def auto_trigger_research(self, niche: str, blog_topics_table: str) -> bool:
+    async def auto_trigger_research(self, niche: str, blog_topics_table: str, site_key: str = None) -> bool:
         """
         Automatically trigger research agent if inventory is low.
         Returns True if research was triggered.
         """
-        inventory = await self.check_inventory(niche, blog_topics_table)
+        inventory = await self.check_inventory(niche, blog_topics_table, site_key=site_key)
         
         if inventory["status"] in ["critical", "warning"]:
             print(f"Auto-triggering research for {niche} (inventory: {inventory['status']})")

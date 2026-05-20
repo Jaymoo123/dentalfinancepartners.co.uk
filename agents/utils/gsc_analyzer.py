@@ -552,8 +552,9 @@ If performance is improving naturally, say needs_optimization=false.
             "apikey": SUPABASE_KEY,
             "Authorization": f"Bearer {SUPABASE_KEY}",
         }
-        
-        params = {"select": "*"}
+
+        # Post Phase 4: unified table → filter by site_key
+        params = {"select": "*", "site_key": f"eq.{self.config['site_key']}"}
         
         try:
             response = httpx.get(url, headers=headers, params=params, timeout=10.0)

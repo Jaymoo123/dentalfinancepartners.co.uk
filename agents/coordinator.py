@@ -118,11 +118,11 @@ class AgentCoordinator:
         
         total_cost = sum(cost.get("cost_usd", 0) for cost in costs)
         
-        # Get unused topic counts
+        # Get unused topic counts (scoped to each site post Phase 4)
         for niche in ACTIVE_NICHES:
             topics = await self.supabase.select(
                 NICHE_CONFIG[niche]["blog_topics_table"],
-                filters={"used": False}
+                filters={"used": False, "site_key": NICHE_CONFIG[niche]["site_key"]}
             )
             print(f"{niche} unused topics: {len(topics)}")
         

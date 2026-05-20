@@ -57,10 +57,10 @@ async def test_setup():
         
         supabase = SupabaseClient(SUPABASE_URL, SUPABASE_KEY)
         
-        # Try to query blog_topics
-        topics = await supabase.select("blog_topics_dentists", limit=1)
+        # Try to query blog_topics (post Phase 4: unified table)
+        topics = await supabase.select("blog_topics", filters={"site_key": "dentists"}, limit=1)
         print(f"   ✅ Connected to Supabase")
-        print(f"   ✅ blog_topics_dentists table accessible")
+        print(f"   ✅ blog_topics table accessible (site_key=dentists)")
         
         # Try to query agent tables (will fail if migration not run)
         try:

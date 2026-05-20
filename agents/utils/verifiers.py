@@ -125,11 +125,24 @@ class ConfigVerifier:
             warnings.append(f"homepage_description too long ({len(seo['homepage_description'])} chars, max 160)")
         
         # Check: Content strategy
+        # Post Phase 4 (2026-05-20): all sites share the unified `blog_topics`
+        # table; site_key column does the row-level isolation. Old per-site
+        # names ('blog_topics_dentists' etc.) are still accepted as legacy
+        # values but warned, because dual-write triggers continue to mirror
+        # writes from them into the unified table during the soak window.
         content = config.get("content_strategy", {})
         if "supabase_table" not in content:
             errors.append("Missing content_strategy.supabase_table")
-        elif content["supabase_table"] != f"blog_topics_{niche_id}":
-            errors.append(f"supabase_table should be 'blog_topics_{niche_id}'")
+        elif content["supabase_table"] not in {"blog_topics", f"blog_topics_{niche_id}"}:
+            errors.append(
+                f"supabase_table should be 'blog_topics' (post Phase 4) — "
+                f"got '{content['supabase_table']}'"
+            )
+        elif content["supabase_table"] == f"blog_topics_{niche_id}":
+            warnings.append(
+                f"supabase_table='{content['supabase_table']}' is legacy; "
+                f"update to 'blog_topics' (unified table)"
+            )
         
         # Check: Categories
         categories = content.get("categories", [])

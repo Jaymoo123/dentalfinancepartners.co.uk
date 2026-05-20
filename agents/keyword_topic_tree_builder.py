@@ -260,8 +260,9 @@ Return ONLY valid JSON, no other text."""
     async def _insert_pillar(self, pillar_data: Dict) -> str:
         """Insert a pillar topic and return its ID."""
         table = self.niche_config["blog_topics_table"]
-        
+
         record = {
+            "site_key": self.niche_config["site_key"],
             "topic": pillar_data["pillar_topic"],
             "category": pillar_data["category"],
             "priority": pillar_data["priority"] if self.niche == "Dentists" else str(pillar_data["priority"]),
@@ -289,8 +290,9 @@ Return ONLY valid JSON, no other text."""
     async def _insert_cluster(self, cluster_data: Dict):
         """Insert a cluster topic."""
         table = self.niche_config["blog_topics_table"]
-        
+
         record = {
+            "site_key": self.niche_config["site_key"],
             "topic": cluster_data["topic"],
             "category": cluster_data["category"],
             "priority": cluster_data["priority"] if self.niche == "Dentists" else str(cluster_data["priority"]),
@@ -318,9 +320,10 @@ Return ONLY valid JSON, no other text."""
     async def _enrich_existing_topic(self, topic_id: str, keyword_data: Dict):
         """Enrich an existing topic with keyword data."""
         table = self.niche_config["blog_topics_table"]
-        
+        site_key = self.niche_config["site_key"]
+
         priority = self.keyword_analyzer.calculate_priority(keyword_data)
-        
+
         updates = {
             "primary_keyword": keyword_data["keyword"],
             "keyword_difficulty": keyword_data["difficulty"],
@@ -329,27 +332,30 @@ Return ONLY valid JSON, no other text."""
             "publish_priority": priority,
             "keyword_source": "csv_merged"
         }
-        
+
         if self.niche == "Property":
             updates["secondary_keywords"] = []
-        
-        await self.supabase.update(table, {"id": topic_id}, updates)
-    
+
+        # Defence-in-depth: scope update to this site's rows
+        await self.supabase.update(table, {"id": topic_id, "site_key": site_key}, updates)
+
     async def _archive_topic(self, topic_id: str):
         """Archive a topic (mark as low priority, don't delete)."""
         table = self.niche_config["blog_topics_table"]
-        
+        site_key = self.niche_config["site_key"]
+
         updates = {
             "publish_priority": 1,
             "keyword_source": "archived"
         }
-        
-        await self.supabase.update(table, {"id": topic_id}, updates)
-    
+
+        await self.supabase.update(table, {"id": topic_id, "site_key": site_key}, updates)
+
     async def _get_existing_topics(self) -> List[Dict]:
-        """Get all existing topics from database."""
+        """Get all existing topics from database, scoped to this site."""
         table = self.niche_config["blog_topics_table"]
-        return await self.supabase.select(table)
+        site_key = self.niche_config["site_key"]
+        return await self.supabase.select(table, filters={"site_key": site_key})
     
     async def _start_execution(self) -> str:
         """Create execution record."""
