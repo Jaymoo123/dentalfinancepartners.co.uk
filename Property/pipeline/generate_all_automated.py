@@ -15,21 +15,29 @@ from shared_supabase_config import SUPABASE_URL, SUPABASE_KEY
 
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 
+# Post Phase 4 (2026-05-20): all sites read from unified `blog_topics` table.
+# Row-level isolation is via site_key='property'.
+SITE_KEY = "property"
+TABLE = "blog_topics"
+
+
 def get_unused_count():
-    """Get count of unused topics."""
-    url = f"{SUPABASE_URL}/rest/v1/blog_topics_property"
+    """Get count of unused topics for this site."""
+    url = f"{SUPABASE_URL}/rest/v1/{TABLE}"
     headers = {"apikey": SUPABASE_KEY, "Authorization": f"Bearer {SUPABASE_KEY}"}
-    params = {"used": "eq.false", "select": "id"}
+    params = {"used": "eq.false", "site_key": f"eq.{SITE_KEY}", "select": "id"}
     response = httpx.get(url, headers=headers, params=params)
     response.raise_for_status()
     return len(response.json())
 
+
 def get_next_topic():
-    """Fetch the next unused topic."""
-    url = f"{SUPABASE_URL}/rest/v1/blog_topics_property"
+    """Fetch the next unused topic for this site."""
+    url = f"{SUPABASE_URL}/rest/v1/{TABLE}"
     headers = {"apikey": SUPABASE_KEY, "Authorization": f"Bearer {SUPABASE_KEY}"}
     params = {
         "used": "eq.false",
+        "site_key": f"eq.{SITE_KEY}",
         "order": "publish_priority.desc.nullslast,keyword_difficulty.asc.nullslast,created_at.asc",
         "limit": "1"
     }
@@ -38,12 +46,16 @@ def get_next_topic():
     topics = response.json()
     return topics[0] if topics else None
 
+
 def mark_used_via_file(topic_id, slug):
     """
     Mark topic as used by writing SQL to a temp file for manual execution.
     This is a workaround since anon key doesn't have UPDATE permissions.
     """
-    sql = f"UPDATE blog_topics_property SET used = true, generated_slug = '{slug}', generated_at = NOW() WHERE id = '{topic_id}';\n"
+    sql = (
+        f"UPDATE {TABLE} SET used = true, generated_slug = '{slug}', generated_at = NOW() "
+        f"WHERE id = '{topic_id}' AND site_key = '{SITE_KEY}';\n"
+    )
     with open("mark_used.sql", "a", encoding="utf-8") as f:
         f.write(sql)
 

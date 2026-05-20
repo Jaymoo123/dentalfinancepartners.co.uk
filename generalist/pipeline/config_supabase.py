@@ -20,7 +20,11 @@ OUTPUT_MD_DIR_FUNDAMENTALS = os.path.join(os.path.dirname(__file__), "..", "web"
 # ============================================================================
 SITE_BASE_URL = "https://www.hollowaydavies.co.uk"
 AUTHOR_NAME = "Holloway Davies Editorial Team"
-SUPABASE_TABLE = "blog_topics_generalist"
+
+# Post Phase 4 (2026-05-20): unified blog_topics table + site_key isolation.
+# SUPABASE_TABLE kept for back-compat; new code should also pass SITE_KEY.
+SUPABASE_TABLE = "blog_topics"
+SITE_KEY = "generalist"
 
 # ============================================================================
 # DEEPSEEK CONFIG

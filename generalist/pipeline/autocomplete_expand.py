@@ -40,7 +40,7 @@ try:
 except ImportError:
     pass
 
-from config_supabase import SUPABASE_URL, SUPABASE_KEY, SUPABASE_TABLE
+from config_supabase import SUPABASE_URL, SUPABASE_KEY, SUPABASE_TABLE, SITE_KEY
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -54,10 +54,12 @@ SUFFIXES = ["", "uk", "cost", "vs", "2026"]
 
 
 def fetch_seeds(pillars_only=False):
+    # Post Phase 4: unified blog_topics table → scope by site_key.
     url = f"{SUPABASE_URL}/rest/v1/{SUPABASE_TABLE}"
     headers = {"apikey": SUPABASE_KEY, "Authorization": f"Bearer {SUPABASE_KEY}"}
     params = {
         "select": "topic,primary_keyword,category,content_tier",
+        "site_key": f"eq.{SITE_KEY}",
         "order": "publish_priority.desc.nullslast",
     }
     if pillars_only:
