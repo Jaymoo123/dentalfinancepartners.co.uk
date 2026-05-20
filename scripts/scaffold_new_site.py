@@ -80,7 +80,9 @@ def update_niche_config(target_dir: str, args):
     config["locations"] = location_objects
     config["content_strategy"]["audience"] = f"UK {args.niche_id} professionals"
     config["content_strategy"]["categories"] = categories
-    config["content_strategy"]["supabase_table"] = f"blog_topics_{args.niche_id}"
+    # Post Phase 4 (2026-05-20): unified blog_topics table; row isolation via site_key.
+    config["content_strategy"]["supabase_table"] = "blog_topics"
+    config["content_strategy"]["site_key"] = args.niche_id
     config["content_strategy"]["source_identifier"] = args.niche_id
     config["seo"]["google_site_verification"] = ""
     config["lead_form"]["role_label"] = f"Your role in {args.niche_id}"
@@ -109,6 +111,10 @@ OUTPUT_MD_DIR = os.path.join(os.path.dirname(__file__), "..", "web", "content", 
 
 SITE_BASE_URL = "https://{args.domain}"
 AUTHOR_NAME = "{args.display_name} Editorial Team"
+
+# Post Phase 4 (2026-05-20): unified blog_topics table + site_key isolation.
+SUPABASE_TABLE = "blog_topics"
+SITE_KEY = "{args.niche_id}"
 
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 
