@@ -369,11 +369,16 @@ HARD RULES — read carefully (your output is rejected if any are broken):
                             e.g. "Choose an MTD-Ready BTL Accountant"
 
     Mandatory rules:
-    - 35-55 chars total. Do NOT append site brand suffix; the renderer adds it.
+    - 40-52 chars total. HARD CEILING 52 — the truncate function cuts at 60
+      and produces mid-phrase chops if you go over. Stay safely below.
+    - Do NOT append site brand suffix; the renderer adds it.
     - Primary keyword {topic.primary_keyword!r} must appear in first 30 chars
       (verbatim or closest natural inflection).
     - Use specific signals from the AUDIENCE PERSONA's "preferred_hooks" above.
     - Active voice. No "is explained" / "complete guide to" / "everything you need".
+    - End on a complete word. If the metaTitle would naturally exceed 52 chars,
+      DROP the trailing phrase (e.g. "How to Claim") rather than letting the
+      truncator cut mid-word ("How" or "Why You").
 
   META DESCRIPTION — 3-PART STRUCTURE (140-155 chars):
 

@@ -51,14 +51,35 @@ def strip_em_dashes(text: str) -> str:
 # Meta title / description truncation with dangle-word cleanup
 # ---------------------------------------------------------------------------
 
-_DANGLE_WORDS = {"to", "of", "for", "and", "the", "is", "are", "or", "in", "on", "a", "an", "with"}
+_DANGLE_WORDS = {"to", "of", "for", "and", "the", "is", "are", "or", "in", "on", "a", "an", "with", "as",
+                 "by", "how", "what", "why", "you", "your", "they", "their"}
+
+# Preferred break points, in order of priority. Cutting at one of these
+# produces a complete phrase rather than a mid-thought stub like "& Cost"
+# (which lost "Sharing") or "What They Do & Why You" (lost the rest).
+_PHRASE_BREAKS = [":", " — ", " – ", " - ", ", ", "; ", " | "]
 
 
 def truncate_meta(text: str, max_len: int) -> str:
-    """Truncate `text` to <= max_len, snapping to a word boundary and
-    dropping trailing prepositions / articles / conjunctions."""
+    """Truncate `text` to <= max_len, preferring clean phrase breaks
+    (:, —, comma) over mid-phrase cuts. Drops trailing dangle words."""
     if not text or len(text) <= max_len:
         return text or ""
+
+    # First pass: try cutting at the LAST phrase-break that fits under max_len.
+    # This avoids "Multi-Site Dental Group VAT: Partial Exemption & Cost"
+    # by preferring the colon break: "Multi-Site Dental Group VAT".
+    best = None
+    for sep in _PHRASE_BREAKS:
+        idx = text.rfind(sep, 0, max_len + 1)
+        if idx > 0 and (best is None or idx > best):
+            best = idx
+    if best is not None and best > max_len // 2:
+        # Only use the phrase break if it leaves a substantive head
+        # (more than half the budget). Otherwise fall through to word-boundary.
+        return text[:best].rstrip(",;:-—– ")
+
+    # Word boundary fallback
     truncated = text[:max_len]
     if " " in truncated:
         truncated = truncated.rsplit(" ", 1)[0]
