@@ -1,0 +1,12 @@
+{
+  "name": "accounting-network",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Multi-site UK accounting lead-gen network. Root of the npm workspace; per-site Next.js apps live in {site}/web and shared code in packages/*.",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}

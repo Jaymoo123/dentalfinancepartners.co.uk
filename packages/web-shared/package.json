@@ -1,0 +1,20 @@
+{
+  "name": "@accounting-network/web-shared",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Shared web code (TypeScript + React) used across the niche-site Next.js apps. Pure source code — consumers compile via Next.js transpilePackages.",
+  "type": "module",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./lib/supabase-client": "./lib/supabase-client.ts",
+    "./lib/local-business-schema": "./lib/local-business-schema.ts"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "next": ">=14"
+  },
+  "license": "UNLICENSED"
+}
