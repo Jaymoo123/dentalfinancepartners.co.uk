@@ -485,7 +485,7 @@ def run_all_v2(site_key: str) -> dict[str, Any]:
         print(f"    score={o.score} {o.confidence:6s} {o.opportunity_type:22s} traj={traj:10s} q={o.primary_query!r:50s} pg=.../{url_short}")
 
     result = persist_opportunities(opportunities)
-    print(f"  persisted: inserted={result['inserted']} skipped={result['skipped']} errored={result['errored']}")
+    print(f"  persisted: inserted={result['inserted']} skipped={result['skipped']} errored={result['errored']} intent_dupes_skipped={result.get('skipped_intent_dupe', 0)}")
     return {"site_key": site_key, "opportunities": len(opportunities), **result}
 
 

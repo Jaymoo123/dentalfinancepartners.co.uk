@@ -588,21 +588,108 @@ def detect_missing_pages(
 # -----------------------------------------------------------------------------
 
 
+# Stopwords + Jaccard threshold for intent-duplicate detection at insert time.
+# This stops two opps with semantically identical primary_queries (e.g.
+# "annual investment allowance" + "annual investment allowance 2025") from
+# both entering the queue and producing duplicate-intent pages.
+_INTENT_STOPWORDS = {
+    "the","a","an","of","for","to","in","and","or","uk","your","my","how","what","when","why","where",
+    "do","does","can","should","would","will","vs","versus","it","this","that","near","me","is","are",
+}
+_INTENT_DUPE_JACCARD_THRESHOLD = 0.6  # match the audit script
+
+
+def _intent_tokens(s: str) -> frozenset:
+    import re as _re_intent
+    s = (s or "").lower()
+    return frozenset(
+        t for t in _re_intent.findall(r"[a-z][a-z0-9-]+", s)
+        if t not in _INTENT_STOPWORDS and len(t) > 2
+    )
+
+
+def _is_intent_duplicate_of_existing(opp, existing_tokens: list[tuple[str, frozenset]]) -> str | None:
+    """Return the existing primary_query if `opp` is a duplicate-intent of one
+    already proposed/in-progress for the same site. Else None."""
+    cand = _intent_tokens(opp.primary_query)
+    if not cand:
+        return None
+    for existing_q, existing_tok in existing_tokens:
+        if not existing_tok:
+            continue
+        overlap = len(cand & existing_tok) / max(1, len(cand | existing_tok))
+        if overlap >= _INTENT_DUPE_JACCARD_THRESHOLD:
+            return existing_q
+    return None
+
+
+def _fetch_existing_proposed_for_site(site_key: str, opportunity_type: str) -> list[tuple[str, frozenset]]:
+    """Pull the in-flight primary_queries for one site / opportunity_type so we
+    can intent-compare without round-tripping per candidate."""
+    r = httpx.get(
+        f"{SUPABASE_URL}/rest/v1/optimisation_opportunities",
+        headers=_supabase_headers(),
+        params={
+            "select": "primary_query",
+            "site_key": f"eq.{site_key}",
+            "opportunity_type": f"eq.{opportunity_type}",
+            "status": "in.(proposed,approved,in_progress,shipped)",
+            "limit": "1000",
+        },
+        timeout=20.0,
+    )
+    if r.status_code >= 300:
+        return []
+    rows = r.json()
+    return [(row.get("primary_query") or "", _intent_tokens(row.get("primary_query") or "")) for row in rows]
+
+
 def persist_opportunities(opportunities: list[Opportunity]) -> dict[str, int]:
     """Upsert opportunities into optimisation_opportunities.
 
     Idempotent: the table's UNIQUE index on
     (site_key, opportunity_type, COALESCE(target_url,''), COALESCE(primary_query,''))
-    where status IN (proposed, approved, in_progress) prevents duplicates.
+    where status IN (proposed, approved, in_progress) prevents exact duplicates.
+
+    Also runs an intent-duplicate check (Jaccard >= 0.6 on tokenised primary_query)
+    against already-proposed/shipped opps for the same site + opportunity_type.
+    Catches semantic dupes the UNIQUE index misses (e.g. "annual investment
+    allowance" vs "annual investment allowance 2025").
     """
     if not opportunities:
-        return {"inserted": 0, "skipped": 0, "errored": 0}
+        return {"inserted": 0, "skipped": 0, "errored": 0, "skipped_intent_dupe": 0}
     url = f"{SUPABASE_URL}/rest/v1/optimisation_opportunities"
     headers = {**_supabase_headers(), "Content-Type": "application/json", "Prefer": "return=minimal"}
+
+    # Pre-fetch existing in-flight queries per (site, type) so we don't repeat
+    # the lookup for each opp.
+    existing_cache: dict[tuple[str, str], list[tuple[str, frozenset]]] = {}
+
+    # Also dedupe within the current batch — two new opps proposed in this run
+    # shouldn't both insert if they're intent-equivalent.
+    batch_tokens: dict[tuple[str, str], list[tuple[str, frozenset]]] = {}
+
     inserted = 0
     skipped = 0
     errored = 0
+    skipped_intent = 0
+
     for opp in opportunities:
+        # Build the comparison pool: existing in-flight + already-accepted from this batch
+        key = (opp.site_key, opp.opportunity_type)
+        if key not in existing_cache:
+            existing_cache[key] = _fetch_existing_proposed_for_site(opp.site_key, opp.opportunity_type)
+        pool = list(existing_cache[key]) + list(batch_tokens.get(key, []))
+
+        dup_of = _is_intent_duplicate_of_existing(opp, pool)
+        if dup_of:
+            skipped_intent += 1
+            print(
+                f"[PERSIST] intent-dupe skip {opp.site_key}/{opp.opportunity_type}: "
+                f"{opp.primary_query!r} (overlaps with {dup_of!r})"
+            )
+            continue
+
         payload = {
             "site_key": opp.site_key,
             "opportunity_type": opp.opportunity_type,
@@ -620,12 +707,18 @@ def persist_opportunities(opportunities: list[Opportunity]) -> dict[str, int]:
         r = httpx.post(url, headers=headers, json=payload, timeout=20.0)
         if r.status_code == 201 or r.status_code == 200:
             inserted += 1
+            batch_tokens.setdefault(key, []).append((opp.primary_query, _intent_tokens(opp.primary_query)))
         elif r.status_code == 409:
-            skipped += 1  # unique-index conflict (already proposed/approved/in_progress)
+            skipped += 1
         else:
             errored += 1
             print(f"[PERSIST] {opp.site_key} {opp.opportunity_type} {opp.primary_query!r}: {r.status_code} {r.text[:200]}")
-    return {"inserted": inserted, "skipped": skipped, "errored": errored}
+    return {
+        "inserted": inserted,
+        "skipped": skipped,
+        "errored": errored,
+        "skipped_intent_dupe": skipped_intent,
+    }
 
 
 def run_all_detectors(site_key: str, days: int = 28) -> dict[str, Any]:
@@ -667,7 +760,7 @@ def run_all_detectors(site_key: str, days: int = 28) -> dict[str, Any]:
         print(f"    score={o.score} {o.confidence:6s} {o.opportunity_type:22s} q={o.primary_query!r:55s} pg=.../{url_short}")
 
     result = persist_opportunities(opportunities)
-    print(f"  persisted: inserted={result['inserted']} skipped={result['skipped']} errored={result['errored']}")
+    print(f"  persisted: inserted={result['inserted']} skipped={result['skipped']} errored={result['errored']} intent_dupes_skipped={result.get('skipped_intent_dupe', 0)}")
 
     return {"site_key": site_key, "opportunities": len(opportunities), **result}
 
