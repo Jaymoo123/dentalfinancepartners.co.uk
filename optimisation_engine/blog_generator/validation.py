@@ -130,10 +130,22 @@ def validate_post(fields: dict, *, site_config: dict) -> list[str]:
         )
         if competitor_intro.search(content):
             issues.append("Content names a specific competitor firm via 'firms like X Ltd'/'such as Y Accountants' pattern")
-        # Pattern 2: a UK postcode in the body (likely a competitor address)
-        postcode = re.compile(r"\b[A-Z]{1,2}\d[A-Z\d]?\s+\d[A-Z]{2}\b")
-        if postcode.search(content):
-            issues.append("Content contains a UK postcode (likely a competitor address)")
+        # Pattern 2: a UK postcode WITHOUT a nearby government/HMRC/embassy
+        # context. Legitimate postcodes (HMRC PO boxes, Companies House Cardiff,
+        # foreign embassies) get a free pass; private firm addresses are flagged.
+        postcode_rx = re.compile(r"\b[A-Z]{1,2}\d[A-Z\d]?\s+\d[A-Z]{2}\b")
+        gov_context_rx = re.compile(
+            r"\b(?:HMRC|Companies\s+House|Embassy|Consulate|Crown\s+Way|"
+            r"DVLA|HM\s+Revenue|PO\s+Box|Department\s+for|Government|"
+            r"Council|Borough|HM\s+Treasury|NHS)\b",
+            re.IGNORECASE,
+        )
+        for m in postcode_rx.finditer(content):
+            # Look at +/- 120 chars around the postcode for a gov keyword
+            window = content[max(0, m.start() - 120) : m.end() + 120]
+            if not gov_context_rx.search(window):
+                issues.append(f"Content contains a UK postcode ({m.group(0)}) without a gov/HMRC/embassy context — likely a competitor address")
+                break  # one is enough; don't spam
 
     # ---- Banned-phrase checks (per-site) --------------------------------
     banned = site_config.get("banned_phrases") or []

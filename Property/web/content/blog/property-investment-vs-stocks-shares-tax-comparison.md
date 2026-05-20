@@ -14,7 +14,7 @@ summary: A detailed comparison of the tax implications of investing in UK buy-to
 schema: ''
 faqs:
 - question: Is property investment more tax-efficient than stocks and shares in the UK?
-  answer: For most individual investors, stocks and shares held within an ISA are more tax-efficient than direct property investment. ISAs shelter both income and capital gains from tax entirely. Property income is subject to income tax (or the new separate property rates from April 2027), and capital gains on property are taxed at higher rates (18%/24%) compared to shares (10%/20%). However, property offers leverage through mortgages and potential for capital appreciation, which can offset some tax disadvantages. The best choice depends on your personal tax position and investment goals.
+  answer: For most individual investors, stocks and shares held within an ISA are more tax-efficient than direct property investment. ISAs shelter both income and capital gains from tax entirely. Property income is subject to income tax (or the new separate property rates from April 2027), and capital gains on property are taxed at higher rates (18%/24%) compared to shares (10%/20%). However, property lets you use mortgage borrowing to amplify returns and offers potential for capital appreciation, which can offset some tax disadvantages. The best choice depends on your personal tax position and investment goals.
 - question: How does Section 24 affect property vs shares tax comparison?
   answer: Section 24 restricts mortgage interest relief for individual landlords. You cannot deduct mortgage interest from rental income; instead, you receive a basic rate tax credit (20%). This increases the tax bill for higher-rate landlords, making property less tax-efficient compared to shares. For shares, interest on borrowing to invest is generally not deductible for individuals, but the lower CGT rates and ISA shelter make shares more attractive from a tax perspective. Many landlords have incorporated to avoid Section 24, but this adds complexity.
 - question: What are the CGT rates for property and shares in 2025/26?
@@ -62,8 +62,8 @@ imageCredit:
 <p>However, extracting profits from a company (via dividends) incurs further tax. Dividends are taxed at the rates mentioned earlier, and the company must pay corporation tax on its rental profits first. For a detailed analysis, see our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company guide</a>.</p>
 <p>Shares held within a company are also subject to corporation tax on gains, but the rates are generally lower than individual CGT rates on property.</p>
 
-<h2>Leverage and Risk: Tax Implications</h2>
-<p>Property investment typically involves higher leverage (mortgage debt) than share investing. The tax treatment of interest differs significantly. For property, Section 24 limits relief to 20% for individuals. For shares, interest on borrowing to invest is not deductible for individuals, but may be for companies.</p>
+<h2>Borrowing and Risk: Tax Implications</h2>
+<p>Property investment typically involves higher mortgage borrowing than share investing. The tax treatment of interest differs significantly. For property, Section 24 limits relief to 20% for individuals. For shares, interest on borrowing to invest is not deductible for individuals, but may be for companies.</p>
 <p>High-risk investments like cryptocurrencies, contracts for difference (CFDs), and mini-bonds carry a risk of total loss <sup><a href="#ref-4" id="cite-4">[4]</a></sup>. Property is generally considered lower risk, but it is illiquid and subject to market downturns. The FCA advises that investing over a short time frame (under three years) is better suited to savings accounts, while a longer-term view (over five years) may justify higher-risk investments <sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</p>
 
 <h2>Making Tax Digital (MTD) for Landlords</h2>
@@ -75,7 +75,7 @@ imageCredit:
 <p>Now consider an investor with £20,000 in dividends from shares. With the £500 dividend allowance, taxable dividends are £19,500. At the higher rate (33.75%), the tax is approximately £6,581. However, if those shares are held in an ISA, the tax is £0. The ISA advantage is clear.</p>
 
 <h2>Which Investment Is More Tax-Efficient?</h2>
-<p>For most individual investors, stocks and shares held within an ISA are significantly more tax-efficient than direct property investment. The ability to shelter both income and gains from tax, combined with lower CGT rates on shares, makes equities attractive. However, property offers tangible assets, potential for capital appreciation, and the ability to use leverage (mortgage) to amplify returns, albeit with higher tax costs due to Section 24.</p>
+<p>For most individual investors, stocks and shares held within an ISA are significantly more tax-efficient than direct property investment. The ability to shelter both income and gains from tax, combined with lower CGT rates on shares, makes equities attractive. However, property offers tangible assets, potential for capital appreciation, and the ability to use mortgage borrowing to amplify returns, albeit with higher tax costs due to Section 24.</p>
 <p>For higher-rate taxpayers, incorporating a property portfolio into a limited company can reduce the overall tax burden, but this comes with additional administrative costs and complexity. For a full overview of property tax, see our <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">property investment tax guide</a>.</p>
 
 <h2>Key Takeaways</h2>

@@ -37,7 +37,7 @@ sourceDomains:
 - icaew.com
 ---
 <p>With <strong>Making Tax Digital for Income Tax Property</strong> starting 6 <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">April 2026</a>, every UK landlord with property income above £10,000 must use <a href="/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026">MTD</a>-compatible software. Choosing the best <strong>landlord accounting software UK</strong> now will save you significant time and compliance headaches later. For the best landlord accounting software UK, look for MTD compatibility and property-specific features.</p>
-<p>This isn't just about ticking the MTD box. Good property management accounts software streamlines your entire rental business — from tracking expenses to calculating tax liabilities under Section 24 rules.</p>
+<p>This isn't just about ticking the MTD box. Good property management accounts software streamlines your entire rental business, from tracking expenses to calculating tax liabilities under Section 24 rules.</p>
 
 <h2>Making Tax Digital (MTD) Requirements for Landlords</h2>
 <p>From 6 April 2026, landlords with gross property income above £10,000 annually must keep digital records and submit updates using MTD-compatible software. The software must connect directly to HMRC systems; spreadsheets alone won't be sufficient unless part of an <a href="/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026">approved bridging solution</a>. Key requirements include:</p>
@@ -150,7 +150,7 @@ sourceDomains:
 <h2>Getting Professional Help</h2>
 <p>Even with good software, many landlords benefit from professional support. Complex portfolios, <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">SPV structures</a>, or significant <a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">capital gains</a> often need specialist input.</p>
 <p>If you're unsure which solution suits your property business, or need help with <a href="/incorporation">incorporation decisions</a> that affect your software choice, speaking with property tax specialists can save costly mistakes.</p>
-<p>The right <strong>landlord accounting software UK</strong> solution depends on your portfolio size, complexity, and growth plans. Start evaluating options now — April 2026 will arrive faster than you think.</p>
+<p>The right <strong>landlord accounting software UK</strong> solution depends on your portfolio size, complexity, and growth plans. Start evaluating options now, April 2026 will arrive faster than you think.</p>
 
 <h2>Related Reading</h2>
 <ul>

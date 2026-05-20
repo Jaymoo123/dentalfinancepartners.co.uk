@@ -24,7 +24,7 @@ faqs:
 - question: What records do I need to keep for landlord insurance tax deductions?
   answer: Keep policy documents, premium receipts, and bank statements showing payments. For mixed-use properties, maintain calculations showing business/personal splits. With MTD starting in 2026, digital records become mandatory, so consider using property management software to track expenses automatically.
 metaTitle_prev: 'Landlord Insurance Tax Deductible: Complete Guide 2026'
-metaDescription_prev: Yes — buildings, contents, liability, rent guarantee, and legal expenses cover are all tax deductible against rental income. See which policies qualify.
+metaDescription_prev: Yes, buildings, contents, liability, rent guarantee, and legal expenses cover are all tax deductible against rental income. See which policies qualify.
 dateModified: '2026-05-19'
 reviewedBy: ICAEW Qualified Senior Reviewer
 reviewerCredentials: Chartered Accountant (ACA, ICAEW), Property Tax Specialist
