@@ -60,14 +60,17 @@ def main() -> None:
         sys.exit(1)
 
     # 2. Row counts per site match source
-    print("\n[2] Row counts per site_key vs source tables:")
+    # Post 2026-05-20: legacy tables renamed to *_legacy_20260520. They get
+    # dropped at the 30-day mark (~2026-06-22), at which point Step 2 becomes
+    # a no-op.
+    print("\n[2] Row counts per site_key vs source tables (post-rename):")
     source_map = {
-        "dentists": "blog_topics_dentists",
-        "property": "blog_topics_property",
-        "medical": "blog_topics_medical",
-        "solicitors": "blog_topics_solicitors",
-        "agency": "blog_topics_agency",
-        "generalist": "blog_topics_generalist",
+        "dentists": "blog_topics_dentists_legacy_20260520",
+        "property": "blog_topics_property_legacy_20260520",
+        "medical": "blog_topics_medical_legacy_20260520",
+        "solicitors": "blog_topics_solicitors_legacy_20260520",
+        "agency": "blog_topics_agency_legacy_20260520",
+        "generalist": "blog_topics_generalist_legacy_20260520",
     }
     all_ok = True
     total_new = 0
@@ -100,7 +103,7 @@ def main() -> None:
     print("\n[4] Dual-write trigger test (write to old table, check new table sees it):")
     import uuid
     test_topic = f"DUAL_WRITE_TEST_{int(time.time())}"
-    src_table = "blog_topics_medical"  # Old simple schema, simplest payload
+    src_table = "blog_topics_medical_legacy_20260520"  # Post-rename name; old simple schema
     # Use service role to insert
     insert_url = f"{SUPABASE_URL.rstrip('/')}/rest/v1/{src_table}"
     payload = {
@@ -130,7 +133,7 @@ def main() -> None:
             all_ok = False
 
         # Cleanup
-        requests.delete(f"{SUPABASE_URL.rstrip('/')}/rest/v1/{src_table}?keyword=eq.{test_topic}", headers=HEADERS, timeout=10)
+        requests.delete(f"{SUPABASE_URL.rstrip('/')}/rest/v1/blog_topics_medical_legacy_20260520?keyword=eq.{test_topic}", headers=HEADERS, timeout=10)
         requests.delete(f"{SUPABASE_URL.rstrip('/')}/rest/v1/blog_topics?topic=eq.{test_topic}", headers=HEADERS, timeout=10)
         print("  [CLEANUP] Test rows removed from both tables")
 
