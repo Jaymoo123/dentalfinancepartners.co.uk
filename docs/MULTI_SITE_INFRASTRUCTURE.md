@@ -17,12 +17,39 @@ The single source of truth for how the niche-site portfolio is organised. Read t
 | 1 | Inventory + sites registry | ✅ Complete | `infra-refactor/phase-1-complete` |
 | 2 | Shared web component package via npm workspaces | ✅ Closed (MVP + Digital Agency unification + foundation; component migrations deferred — see policy below) | `infra-refactor/phase-2-complete` |
 | 3 | Centralise pipeline scripts | ✅ Closed (submit_indexnow centralised + 26 legacy scripts deleted) | `infra-refactor/phase-3-complete` |
-| 4 | Unify per-site DB tables (highest risk) | ⬜ Pending | — |
+| 4 | Unify per-site DB tables (highest risk) | ✅ Migrated + consumers switched (soak + rename + drop on a clock; see Phase 4 status) | `infra-refactor/phase-4-migrated` |
 | 5 | Health dashboard + monitoring | ⬜ Pending | — |
 | 6 | Ops + maintenance tooling | ⬜ Pending | — |
 | 7 | Safety nets (feature flags, smoke tests, rollback) | ⬜ Pending | — |
 | 8 | spinup-site automation | ⬜ Pending | — |
 | 9 | Launch new niche sites | ⬜ Pending | — |
+
+## Phase 4 Status (2026-05-20)
+
+**Schema migration + consumer switchover: complete.** Dual-write soak in progress; clock-based steps remain.
+
+What's live now:
+- Unified `blog_topics` table populated with 1,332 rows (18 duplicate Dentists topics correctly deduplicated during backfill via `ON CONFLICT DO NOTHING`)
+- 4 helper functions (`_phase4_parse_int`, `_phase4_parse_priority`, `_phase4_parse_search_volume`, `_phase4_parse_ts`)
+- 6 dual-write triggers — any write to legacy `blog_topics_<site>` tables auto-mirrors into the new table
+- `optimisation_engine/blog_generator/topic_repository.py` reads + writes the unified table filtered by `site_key`
+- All 6 `site_configs/*.py` updated: `topic_table="blog_topics"`, canonical column names
+
+Clock-based follow-ups (will happen automatically as time passes):
+- **48h+ soak (until ~2026-05-22)**: observe dual-write triggers staying in sync; confirm no consumer errors. The legacy `blog_topics_<site>` tables remain authoritative read-fallback during this window.
+- **After soak**: rename `blog_topics_<site>` → `blog_topics_<site>_legacy_20260520`. Migration file already designed pattern; new migration `20260520000007_phase4_rename_legacy.sql` to be written when soak passes.
+- **30 days after rename (~2026-06-22)**: drop the `_legacy_*` tables. Migration `20260520000008_phase4_drop_legacy.sql`.
+
+Auxiliary scripts that still reference per-site tables (not in hot path, keep working via dual-write):
+- `agents/config/agent_config.py`, `agents/config/gsc_config.py` — config dicts with `blog_topics_table` constant
+- `agents/monitoring_dashboard.py` — hardcodes table names
+- `agents/setup/*` — setup scripts
+- `Dentists/pipeline/add_blog_topics.py`, `digital-agency/pipeline/seed_*` — manual seeding scripts
+- `generalist/pipeline/*` — various utilities
+
+These need migrating before the legacy table drop; tracked as Phase 4.X follow-up.
+
+---
 
 ## Phase 2 Closure Policy (2026-05-20)
 
