@@ -130,10 +130,10 @@ export function PensionContributionOptimiser() {
         )}
       </div>
 
-      <div className="bg-indigo-700 text-white p-6 sm:p-8">
-        <p className="text-sm font-bold uppercase tracking-wider text-indigo-200">In your pension</p>
+      <div className="bg-orange-700 text-white p-6 sm:p-8">
+        <p className="text-sm font-bold uppercase tracking-wider text-orange-200">In your pension</p>
         <p className="text-4xl sm:text-5xl font-bold font-mono mt-1">{fmt(result.contribution)}</p>
-        <p className="mt-2 text-sm text-indigo-200">
+        <p className="mt-2 text-sm text-orange-200">
           Real cost to the company after corp tax saving: <span className="font-bold text-white">{fmt(result.realCostToCompany)}</span>
         </p>
       </div>
@@ -197,7 +197,7 @@ function Field({
           min={0}
           max={max}
           step={500}
-          className="w-full border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600"
+          className="w-full border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-orange-600"
         />
       </div>
       {hint && <p className="mt-1 text-xs text-slate-500">{hint}</p>}

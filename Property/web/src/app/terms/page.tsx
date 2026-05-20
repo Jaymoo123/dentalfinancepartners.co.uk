@@ -70,7 +70,7 @@ export default function TermsPage() {
         <p>You agree not to:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>Use the Site in any way that violates applicable laws or regulations</li>
-          <li>Attempt to gain unauthorized access to any part of the Site, server, or database</li>
+          <li>Attempt to gain unauthorised access to any part of the Site, server, or database</li>
           <li>Use automated systems (bots, scrapers) to access the Site without our prior written consent</li>
           <li>Transmit any harmful code, viruses, or malicious software</li>
           <li>Interfere with or disrupt the Site or servers</li>

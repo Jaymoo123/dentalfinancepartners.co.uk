@@ -91,7 +91,7 @@ def identify_repointing_candidates(posts):
 
 
 def generate_narrow_keyword(client, post):
-    prompt = f"""Generate a NARROW long-tail primary keyword (3-6 words, no punctuation) for this UK agency blog post.
+    prompt = f"""Generate a NARROW long-tail primary keyword (3-6 words, no punctuation) for this UK business accountancy blog post.
 
 Title: {post['topic']}
 Current keyword (too broad, conflicts with another post): {post['primary_keyword']}
@@ -100,13 +100,13 @@ Category: {post['category']}
 Rules:
 - Must be 3-6 words
 - Must be more specific than the current keyword
-- Must be a phrase a real agency founder might type into Google
+- Must be a phrase a real UK business owner (limited company director, contractor, sole trader, partnership owner, small business owner) might type into Google
 - Must reflect the SPECIFIC angle of this post's title (not the generic category)
 - No punctuation, no quotes
 - UK English
 
 Return ONLY the keyword phrase on one line, nothing else."""
-    out = client.generate_creative(prompt=prompt, system="You are an SEO keyword strategist. You return concise long-tail keywords only.", temperature=0.4, max_tokens=60)
+    out = client.generate_creative(prompt=prompt, system="You are an SEO keyword strategist for a UK generalist accountancy firm. You return concise long-tail keywords only.", temperature=0.4, max_tokens=60)
     # Take first non-empty line, strip
     for line in out.splitlines():
         line = line.strip().strip('"').strip("'").strip()

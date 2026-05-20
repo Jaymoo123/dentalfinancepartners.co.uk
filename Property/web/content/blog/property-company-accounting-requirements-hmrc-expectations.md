@@ -104,7 +104,7 @@ faqs:
 <li><strong>Property sales:</strong> May trigger VAT registration requirements</li>
 <li><strong>Input VAT recovery:</strong> Limited for residential property activities</li>
 </ul>
-<p>Companies mixing commercial and residential activities need careful VAT planning to optimize input VAT recovery.</p>
+<p>Companies mixing commercial and residential activities need careful VAT planning to optimise input VAT recovery.</p>
 
 <h2>Making Tax Digital Requirements</h2>
 
@@ -122,7 +122,7 @@ faqs:
 <li><strong>Cloud accounting software:</strong> Xero, QuickBooks, or Sage for general ledger</li>
 <li><strong>Property management software:</strong> Automated rent collection and expense tracking</li>
 <li><strong>Receipt capture apps:</strong> Digital storage of invoices and receipts</li>
-<li><strong>Banking integration:</strong> Automatic transaction importing and categorization</li>
+<li><strong>Banking integration:</strong> Automatic transaction importing and categorisation</li>
 </ul>
 <p>These systems ensure transactions are recorded accurately and supporting documentation is preserved for HMRC inspections.</p>
 
@@ -131,14 +131,14 @@ faqs:
 <p>Regular management reporting helps identify issues early and ensures accurate year-end accounts. Monthly reports should include:</p>
 <ul>
 <li>Rental income by property with void analysis</li>
-<li>Operating expenses categorized by type and property</li>
+<li>Operating expenses categorised by type and property</li>
 <li>Capital expenditure and improvement costs</li>
 <li>Cash flow projections and corporation tax provisions</li>
 </ul>
 
 <h2>Professional Support and Compliance</h2>
 
-<p>Many property companies engage <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountants</a> to ensure compliance with HMRC requirements and optimize their tax position.</p>
+<p>Many property companies engage <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountants</a> to ensure compliance with HMRC requirements and optimise their tax position.</p>
 
 <h3>When to Seek Professional Help</h3>
 
@@ -188,4 +188,4 @@ faqs:
 
 <p>HMRC continues expanding digital compliance requirements. Property companies should invest in systems that can adapt to future reporting obligations and data submission requirements.</p>
 
-<p>Understanding property company accounting requirements is essential for successful property investment through corporate structures. Whether you're considering <a href="/incorporation">incorporation</a> or managing existing property companies, proper compliance protects your investment and optimizes your tax position.</p>
+<p>Understanding property company accounting requirements is essential for successful property investment through corporate structures. Whether you're considering <a href="/incorporation">incorporation</a> or managing existing property companies, proper compliance protects your investment and optimises your tax position.</p>

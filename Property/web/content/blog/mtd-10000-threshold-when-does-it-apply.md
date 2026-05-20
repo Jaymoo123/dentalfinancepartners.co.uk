@@ -105,7 +105,7 @@ faqs:
 <p>David operates a 5-bedroom HMO in Birmingham with rooms rented at £400 each per month. His situation:</p>
 <ul>
 <li>Gross rental income: £24,000 (£400 × 5 × 12)</li>
-<li>HMO license fees: £1,200 annually</li>
+<li>HMO licence fees: £1,200 annually</li>
 <li>Higher maintenance costs: £8,000</li>
 <li>Net profit: £14,800</li>
 </ul>
@@ -163,7 +163,7 @@ faqs:
 <li><strong>Ongoing penalties:</strong> Additional charges for continued non-compliance</li>
 <li><strong>Failure to notify penalties:</strong> Up to 100% of tax due if you fail to register when required</li>
 </ul>
-<p>These penalties apply even if you genuinely didn't realize you exceeded the MTD income threshold, making accurate calculation crucial.</p>
+<p>These penalties apply even if you genuinely didn't realise you exceeded the MTD income threshold, making accurate calculation crucial.</p>
 
 <h2>Getting Professional Support</h2>
 <p>Many landlords find MTD compliance complex, especially when determining whether they exceed the threshold. Professional property accountants can help by:</p>

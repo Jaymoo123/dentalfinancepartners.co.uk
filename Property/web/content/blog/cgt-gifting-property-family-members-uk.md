@@ -54,11 +54,11 @@ faqs:
 <ul>
 <li><strong>Timing Considerations:</strong> Consider making the gift in a tax year when you have other losses to offset against the gain, or when your income is lower, potentially qualifying you for the 18% CGT rate instead of 24%.</li>
 <li><strong>Use Annual Exemptions:</strong> Plan gifts to make use of your £3,000 annual CGT exemption. If the gain is small, it might be covered entirely by this allowance. Gifting portions of a property to multiple adult family members could allow you to use multiple separate £3,000 annual exemptions.</li>
-<li><strong>Staged Transfers:</strong> Some landlords consider transferring property ownership gradually over several tax years to utilize multiple years' worth of annual exempt amounts, though this strategy has practical limitations.</li>
+<li><strong>Staged Transfers:</strong> Some landlords consider transferring property ownership gradually over several tax years to utilise multiple years' worth of annual exempt amounts, though this strategy has practical limitations.</li>
 </ul>
 
 <h2>Tax Planning Strategies and Alternatives</h2>
-<p><strong>Loss Harvesting:</strong> Consider realizing capital losses from other assets in the same tax year to offset gains from property gifts. This is particularly effective if you have underperforming investments in your portfolio.</p>
+<p><strong>Loss Harvesting:</strong> Consider realising capital losses from other assets in the same tax year to offset gains from property gifts. This is particularly effective if you have underperforming investments in your portfolio.</p>
 <p><strong>Incorporation Before Gifting:</strong> Some landlords consider transferring properties to a <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited company structure</a> before making family gifts. This can sometimes provide more flexible planning options, though it creates its own tax complications.</p>
 <p><strong>Consider Loans Instead:</strong> Instead of outright gifts, some families use interest-free family loans. The original owner retains legal ownership while family members benefit from rental income. This avoids immediate CGT but requires careful documentation.</p>
 
@@ -94,4 +94,4 @@ faqs:
 <li>The property has been your main residence at some point</li>
 <li>You're a non-resident landlord with additional complications</li>
 </ul>
-<p>A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> can model different scenarios and help optimize the timing and structure of family gifts to minimize tax liabilities while achieving your family planning objectives.</p>
+<p>A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> can model different scenarios and help optimise the timing and structure of family gifts to minimise tax liabilities while achieving your family planning objectives.</p>

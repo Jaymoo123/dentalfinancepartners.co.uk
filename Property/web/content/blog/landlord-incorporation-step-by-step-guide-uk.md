@@ -52,7 +52,7 @@ faqs:
 
 <h2>Timing and Common Pitfalls</h2>
 <p>Plan your landlord incorporation timing carefully. Many investors incorporate at the start of a tax year to simplify record-keeping and tax calculations. Consider your personal tax position when timing property transfers. If you're expecting lower income years, transferring properties when you're a basic rate taxpayer can reduce capital gains tax liability. Market conditions affect transfer values for capital gains calculations. Some landlords time transfers when property values are temporarily depressed.</p>
-<p>Don't rush the incorporation process without proper planning. Hasty decisions can result in unexpected tax charges or unsuitable company structures. Avoid transferring properties piecemeal without considering the overall strategy. This can result in multiple stamp duty charges and administrative complexity. Don't neglect mortgage lender requirements. Unauthorized transfers can trigger demand for immediate repayment of loans. Many landlords underestimate ongoing compliance costs and administrative burden. Factor these into your financial projections.</p>
+<p>Don't rush the incorporation process without proper planning. Hasty decisions can result in unexpected tax charges or unsuitable company structures. Avoid transferring properties piecemeal without considering the overall strategy. This can result in multiple stamp duty charges and administrative complexity. Don't neglect mortgage lender requirements. Unauthorised transfers can trigger demand for immediate repayment of loans. Many landlords underestimate ongoing compliance costs and administrative burden. Factor these into your financial projections.</p>
 
 <h2>Related Reading</h2>
 <ul>

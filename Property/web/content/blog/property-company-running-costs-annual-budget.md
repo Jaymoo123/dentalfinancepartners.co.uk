@@ -115,7 +115,7 @@ faqs:
 
 <h3>Maintain Good Records</h3>
 
-<p>Well-organized financial records reduce the time your accountant spends on your affairs, directly reducing professional fees. Simple bookkeeping throughout the year prevents costly year-end catch-up work.</p>
+<p>Well-organised financial records reduce the time your accountant spends on your affairs, directly reducing professional fees. Simple bookkeeping throughout the year prevents costly year-end catch-up work.</p>
 
 <h2>First Year vs Ongoing Costs</h2>
 

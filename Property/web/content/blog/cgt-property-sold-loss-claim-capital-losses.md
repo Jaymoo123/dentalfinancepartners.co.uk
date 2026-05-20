@@ -55,7 +55,7 @@ faqs:
 <p>From April 2026, landlords with gross rental income over £10,000 must use <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital software</a>, though capital gains will still need separate reporting through Self Assessment.</p>
 
 <h2>Allowable and Non-Allowable Costs</h2>
-<p>Understanding which costs can be included in your capital loss calculation is crucial for maximizing the tax benefit.</p>
+<p>Understanding which costs can be included in your capital loss calculation is crucial for maximising the tax benefit.</p>
 <h3>Allowable Costs</h3>
 <ul>
 <li>Original purchase price</li>
@@ -122,7 +122,7 @@ faqs:
 <p>If you lived in the property at any point, <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">principal private residence relief</a> might apply, which could affect the loss calculation. You cannot claim both the relief and the full loss.</p>
 
 <h2>Strategic Planning for Capital Losses</h2>
-<p>Timing the use of capital losses can optimize your tax position.</p>
+<p>Timing the use of capital losses can optimise your tax position.</p>
 <h3>Tax Year Planning</h3>
 <ul>
 <li>Consider the timing of other asset disposals</li>
@@ -137,5 +137,5 @@ faqs:
 </ul>
 
 <h2>Professional Advice and Future Outlook</h2>
-<p>While basic capital loss claims are straightforward, several situations warrant professional advice: mixed-use properties (residential and commercial), properties with development potential, international property ownership, trust or estate situations, and disputed improvement costs. A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> can help optimize your claims and ensure compliance with complex rules.</p>
+<p>While basic capital loss claims are straightforward, several situations warrant professional advice: mixed-use properties (residential and commercial), properties with development potential, international property ownership, trust or estate situations, and disputed improvement costs. A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> can help optimise your claims and ensure compliance with complex rules.</p>
 <p>While current capital loss rules are well-established, landlords should monitor potential changes: CGT rates have remained stable but could change in future budgets, annual exempt amounts have reduced significantly in recent years, and reporting requirements may become more stringent. Maintaining good records and understanding current rules positions you well for any future changes.</p>

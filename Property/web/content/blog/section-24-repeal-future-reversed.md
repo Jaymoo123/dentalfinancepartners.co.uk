@@ -20,7 +20,7 @@ faqs:
   - question: "How much tax revenue does Section 24 generate for the government?"
     answer: "Section 24 is estimated to generate over £1 billion annually in additional tax revenue for HMRC. This substantial amount makes reversal financially challenging for any government, as they would need to find alternative revenue sources."
   - question: "Should I wait for Section 24 to be reversed before making investment decisions?"
-    answer: "No, you should plan assuming Section 24 remains permanent. The likelihood of reversal is low, and waiting could mean missing opportunities to optimize your structure under current rules. Consider incorporation or other strategies that work within the existing system."
+    answer: "No, you should plan assuming Section 24 remains permanent. The likelihood of reversal is low, and waiting could mean missing opportunities to optimise your structure under current rules. Consider incorporation or other strategies that work within the existing system."
 ---
 
 <p>Since Section 24 fully took effect in 2020, UK landlords have faced significant changes to how mortgage interest is treated for tax purposes. The question many property investors ask is simple: <strong>will Section 24 be reversed?</strong></p>
@@ -55,7 +55,7 @@ faqs:
 
 <p><strong>Company Structures:</strong> <a href="/incorporation">Incorporation</a> remains the primary method for avoiding Section 24 restrictions, as companies can still deduct mortgage interest as a business expense.</p>
 
-<p><strong>Portfolio Optimization:</strong> Focus on properties that generate strong rental yields relative to mortgage costs. Lower-leverage strategies may work better under current rules.</p>
+<p><strong>Portfolio Optimisation:</strong> Focus on properties that generate strong rental yields relative to mortgage costs. Lower-leverage strategies may work better under current rules.</p>
 
 <p><strong>Professional Advice:</strong> The interaction between Section 24, capital gains tax, and incorporation timing requires specialist guidance. Consider speaking with property tax specialists about your specific circumstances.</p>
 

@@ -25,7 +25,7 @@ export function Breadcrumb({ items, variant = "dark", noSchema }: BreadcrumbProp
 
   const baseColor = isLight ? "text-slate-200" : "text-slate-600";
   const currentColor = isLight ? "font-semibold text-white" : "font-semibold text-slate-900";
-  const linkHover = isLight ? "hover:text-white" : "hover:text-indigo-700";
+  const linkHover = isLight ? "hover:text-white" : "hover:text-orange-700";
   const arrowColor = isLight ? "text-slate-300" : "text-slate-400";
 
   return (

@@ -13,13 +13,13 @@ export function getResend(): Resend {
 }
 
 export function getFromAddress(): string {
-  const name = process.env.RESEND_FROM_NAME || "Agency Founder Finance";
-  const email = process.env.RESEND_FROM_EMAIL || "hello@ukbusinessaccountants.co.uk";
+  const name = process.env.RESEND_FROM_NAME || "Holloway Davies";
+  const email = process.env.RESEND_FROM_EMAIL || "hello@hollowaydavies.co.uk";
   return `${name} <${email}>`;
 }
 
 export function getReplyTo(): string {
-  return process.env.RESEND_REPLY_TO || "hello@ukbusinessaccountants.co.uk";
+  return process.env.RESEND_REPLY_TO || "hello@hollowaydavies.co.uk";
 }
 
 export function getAudienceId(): string | undefined {

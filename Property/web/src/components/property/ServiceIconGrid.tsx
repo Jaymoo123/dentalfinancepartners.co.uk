@@ -33,7 +33,7 @@ export function ServiceIconGrid() {
     {
       icon: "🏢",
       title: "Incorporation Analysis",
-      description: "Full feasibility modeling with CGT, SDLT costs, and break-even timeline for your portfolio.",
+      description: "Full feasibility modelling with CGT, SDLT costs, and break-even timeline for your portfolio.",
       href: "/incorporation",
     },
     {
@@ -57,7 +57,7 @@ export function ServiceIconGrid() {
     {
       icon: "🔍",
       title: "Acquisition Support",
-      description: "Due diligence, structuring advice, and financial modeling for new purchases.",
+      description: "Due diligence, structuring advice, and financial modelling for new purchases.",
       href: "/services",
     },
   ];

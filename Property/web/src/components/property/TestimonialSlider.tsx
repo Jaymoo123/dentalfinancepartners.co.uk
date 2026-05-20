@@ -29,7 +29,7 @@ const testimonials = [
   },
   {
     quote:
-      "Section 24 was costing me £6,400 a year. They modeled incorporation properly — including CGT and SDLT — and it made financial sense. Three years in, I'm already £12k better off.",
+      "Section 24 was costing me £6,400 a year. They modelled incorporation properly — including CGT and SDLT — and it made financial sense. Three years in, I'm already £12k better off.",
     author: "James Patterson",
     role: "Portfolio owner, 12 properties",
     outcome: "Saved £6,400/year after incorporating",
@@ -40,7 +40,7 @@ const testimonials = [
       "As a non-resident landlord, the tax rules are complex. They handled my Self Assessment, sorted out my UK tax position, and made sure I was claiming everything I should. Clear, responsive, and property-focused.",
     author: "Maria Rodriguez",
     role: "Non-resident landlord, 4 properties",
-    outcome: "Compliant and optimized",
+    outcome: "Compliant and optimised",
     initials: "MR",
   },
 ];

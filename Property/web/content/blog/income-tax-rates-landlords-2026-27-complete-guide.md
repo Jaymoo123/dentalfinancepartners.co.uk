@@ -121,7 +121,7 @@ faqs:
 <p>Transferring properties to a lower-rate taxpayer spouse before April 2027 could provide ongoing tax savings under the new rate structure.</p>
 
 <h2>Record Keeping and Professional Support</h2>
-<p>Accurate record keeping becomes increasingly important with complex tax calculations and MTD requirements. Consider whether you need support from <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountants</a> to ensure compliance and optimize your tax position. Professional fees are tax-deductible business expenses, and specialist advice often pays for itself through legitimate tax savings and reduced compliance risk.</p>
+<p>Accurate record keeping becomes increasingly important with complex tax calculations and MTD requirements. Consider whether you need support from <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountants</a> to ensure compliance and optimise your tax position. Professional fees are tax-deductible business expenses, and specialist advice often pays for itself through legitimate tax savings and reduced compliance risk.</p>
 
 <h2>Looking Ahead: Tax Planning for 2027 and Beyond</h2>
 <p>The introduction of separate property income tax rates represents the most significant change to landlord taxation in recent years. Combined with existing Section 24 restrictions and new MTD requirements, the tax landscape for UK landlords is becoming increasingly complex.</p>

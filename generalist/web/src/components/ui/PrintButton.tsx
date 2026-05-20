@@ -9,7 +9,7 @@ export function PrintButton() {
       onClick={() => {
         if (typeof window !== "undefined") window.print();
       }}
-      className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 text-sm font-bold transition-colors flex-shrink-0"
+      className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 text-sm font-bold transition-colors flex-shrink-0"
     >
       <Printer className="h-4 w-4" />
       Print / Save as PDF

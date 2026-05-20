@@ -64,7 +64,7 @@ export function StickyCard() {
   return (
     <div
       role="complementary"
-      aria-label="Subscribe to The Agency Founder Tax Brief"
+      aria-label="Subscribe to The Director's Brief"
       className="fixed bottom-4 right-4 z-40 w-[360px] max-w-[calc(100vw-2rem)]"
     >
       <div className="relative">
@@ -81,8 +81,8 @@ export function StickyCard() {
         <SignupForm
           variant="card"
           source="sticky-card"
-          heading="The Tax Brief"
-          body="Weekly UK + UAE tax for agency founders."
+          heading="The Director's Brief"
+          body="Weekly UK tax for businesses of every shape."
           ctaLabel="Subscribe"
           showAgencyType={false}
         />

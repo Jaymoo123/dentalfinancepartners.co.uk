@@ -48,7 +48,7 @@ faqs:
 <p>For example, a family with a £5 million BTL portfolio generating £200,000 annual rental profit might see corporation tax savings and estate planning benefits, making the annual running costs proportionally manageable at this scale.</p>
 
 <h2>Tax Advantages and Drawbacks</h2>
-<p>The main tax benefits center around <strong>family company estate planning property</strong> strategies and potential corporation tax savings. However, these advantages are often overstated in marketing materials and come with significant drawbacks.</p>
+<p>The main tax benefits centre on <strong>family company estate planning property</strong> strategies and potential corporation tax savings. However, these advantages are often overstated in marketing materials and come with significant drawbacks.</p>
 
 <h3>Tax Advantages</h3>
 <p>Property rental profits within a FIC are taxed at corporation tax rates rather than income tax. For a higher-rate taxpayer, this can provide immediate savings:</p>

@@ -144,7 +144,7 @@ faqs:
 <h3>Set Up Early Reminders</h3>
 <p>Mark the 31 January deadline in your calendar well in advance. Many landlords set reminders for December to allow time for gathering paperwork and completing their return.</p>
 
-<h3>Maintain Organized Records</h3>
+<h3>Maintain Organised Records</h3>
 <p>Keep rental income and expense records throughout the year rather than scrambling at year-end. This makes return preparation much faster and reduces the risk of missing deadlines due to incomplete information.</p>
 
 <h3>Use Professional Help</h3>
@@ -155,7 +155,7 @@ faqs:
 
 <h2>What to Do If You're Already Late</h2>
 
-<p>If you've missed the deadline, minimize further penalties by acting quickly:</p>
+<p>If you've missed the deadline, minimise further penalties by acting quickly:</p>
 
 <ol>
 <li><strong>File immediately:</strong> Each day of delay adds £10 to your penalty bill during months 3-6</li>

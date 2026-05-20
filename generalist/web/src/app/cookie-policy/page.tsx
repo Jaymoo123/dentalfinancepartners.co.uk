@@ -65,7 +65,7 @@ export default function CookiePolicyPage() {
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">2. Purpose of cookies</h2>
         <p>We use cookies to:</p>
         <ul className="list-disc space-y-2 pl-6">
-          <li>Understand which pages are most useful to agency founders and visitors</li>
+          <li>Understand which pages are most useful to UK business owners and visitors</li>
           <li>Identify technical issues or broken links</li>
           <li>Measure the effectiveness of our content</li>
           <li>Improve the overall user experience</li>

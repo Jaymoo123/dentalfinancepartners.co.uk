@@ -19,7 +19,7 @@ export function ProblemSolutionSplit() {
           <li className="flex gap-2">
             <span className="mt-0.5 flex-shrink-0 text-red-600" aria-hidden>✗</span>
             <span>
-              <strong>Incorporation decisions</strong> are made without proper modeling of CGT and SDLT upfront costs
+              <strong>Incorporation decisions</strong> are made without proper modelling of CGT and SDLT upfront costs
             </span>
           </li>
           <li className="flex gap-2">
@@ -37,7 +37,7 @@ export function ProblemSolutionSplit() {
           <li className="flex gap-2">
             <span className="mt-0.5 flex-shrink-0 text-emerald-600" aria-hidden>✓</span>
             <span>
-              <strong>Section 24 modeling</strong> with incorporation feasibility analysis showing upfront costs vs. long-term savings
+              <strong>Section 24 modelling</strong> with incorporation feasibility analysis showing upfront costs vs. long-term savings
             </span>
           </li>
           <li className="flex gap-2">
@@ -49,7 +49,7 @@ export function ProblemSolutionSplit() {
           <li className="flex gap-2">
             <span className="mt-0.5 flex-shrink-0 text-emerald-600" aria-hidden>✓</span>
             <span>
-              <strong>Data-driven decisions</strong> backed by proper financial modeling, not generic advice
+              <strong>Data-driven decisions</strong> backed by proper financial modelling, not generic advice
             </span>
           </li>
           <li className="flex gap-2">

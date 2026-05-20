@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: "Better to put more into salary or into pension?",
-    a: "For most agency directors paying themselves a small salary plus dividends, an employer pension contribution is more tax-efficient than the equivalent dividend at higher rate. The contribution avoids 33.75% dividend tax (or 39.35% additional) and saves corporation tax at 25%, while landing 100p of every £1 in your pension. The cost is the time delay until you can access the money.",
+    a: "For most limited company directors paying themselves a small salary plus dividends, an employer pension contribution is more tax-efficient than the equivalent dividend at higher rate. The contribution avoids 33.75% dividend tax (or 39.35% additional) and saves corporation tax at 25%, while landing 100p of every £1 in your pension. The cost is the time delay until you can access the money.",
   },
 ];
 
@@ -64,7 +64,7 @@ export default function PensionContributionOptimiserPage() {
             ]}
           />
           <div className="mt-6 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-indigo-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
+            <div className="inline-flex items-center gap-2 bg-orange-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
               <Calculator className="h-3.5 w-3.5" />
               Free calculator · 2025/26 rates
             </div>
@@ -72,7 +72,7 @@ export default function PensionContributionOptimiserPage() {
               Pension Contribution Optimiser
             </h1>
             <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-              Model employer pension contributions from your UK limited company. See the corporation tax saving, real cost to the company, and the advantage over taking the same money as a dividend.
+              For most owner-managed limited companies, pension is the most tax-efficient way to move retained profit out of the business. Plug in your numbers and the calculator shows the corporation tax saved, the net cost to the company, and how much further the same money goes versus drawing it as a dividend.
             </p>
           </div>
         </div>
@@ -83,7 +83,7 @@ export default function PensionContributionOptimiserPage() {
           <div className="max-w-4xl mx-auto">
             <PensionContributionOptimiser />
 
-            <div className="mt-12 border-l-4 border-indigo-600 bg-slate-50 p-6 sm:p-8">
+            <div className="mt-12 border-l-4 border-orange-600 bg-slate-50 p-6 sm:p-8">
               <h2 className="text-xl font-bold text-slate-900">How this works</h2>
               <p className="mt-3 text-base text-slate-700 leading-relaxed">
                 An employer pension contribution from your limited company is an allowable business expense, so it reduces your taxable profit and therefore your corporation tax. The full amount lands in your pension, no income tax, no NI. The calculator models the corporation tax saving, then compares the value of the contribution to what you'd net if you took the same money as a dividend instead.
@@ -107,14 +107,14 @@ export default function PensionContributionOptimiserPage() {
 
             <div className="mt-12 bg-slate-900 p-8 sm:p-10 text-white">
               <h2 className="text-2xl font-bold text-white sm:text-3xl">
-                Want a full extraction strategy that includes pensions?
+                A pension contribution rarely sits alone
               </h2>
               <p className="mt-3 text-base sm:text-lg text-slate-200 leading-relaxed">
-                Book a free call. We will model your real position, salary, dividends, employer pension, retained earnings and exit timing, to find the most efficient mix for the next three to five years.
+                The right number depends on your salary level, dividend extraction, retained profit, carry-forward from the last three years, and whether you are pre or post the £260,000 tapered allowance threshold. We sit with limited company directors twice a year to map that out, and the first call is on us.
               </p>
               <Link
                 href="/contact"
-                className="mt-6 inline-block bg-indigo-600 px-8 py-3 text-base font-bold text-white border-b-4 border-indigo-800 hover:bg-indigo-700 hover:border-indigo-900 transition-all"
+                className="mt-6 inline-block bg-orange-600 px-8 py-3 text-base font-bold text-white border-b-4 border-orange-800 hover:bg-orange-700 hover:border-orange-900 transition-all"
               >
                 Book a free call
               </Link>

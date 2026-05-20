@@ -1,5 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { upsertPending } from "@/lib/newsletter/subscribers";
+import { upsertPending, markConfirmed } from "@/lib/newsletter/subscribers";
 import { mintToken } from "@/lib/newsletter/tokens";
 import { getResend, getFromAddress, getReplyTo } from "@/lib/resend";
 import ConfirmEmail from "@/emails/ConfirmEmail";
@@ -44,6 +44,21 @@ export async function POST(req: NextRequest) {
     );
   }
 
+  // If Resend isn't configured (e.g. free-tier limit means we can't add a new
+  // sending domain for this site), we still want to capture the email. Skip
+  // the confirmation flow entirely and mark the row confirmed directly so the
+  // list is ready to email later once Resend is wired up.
+  const resendConfigured = Boolean(process.env.RESEND_API_KEY);
+
+  if (!resendConfigured) {
+    try {
+      await markConfirmed(email);
+    } catch (err) {
+      console.error("subscribe/markConfirmed (no-resend mode)", err);
+    }
+    return NextResponse.json({ ok: true, mode: "collect-only" });
+  }
+
   const token = mintToken(email, "confirm");
   const base = siteConfig.url.replace(/\/$/, "");
   const confirmUrl = `${base}/api/newsletter/confirm/${encodeURIComponent(token)}`;
@@ -53,7 +68,7 @@ export async function POST(req: NextRequest) {
       from: getFromAddress(),
       replyTo: getReplyTo(),
       to: email,
-      subject: "Confirm your subscription to The Agency Founder Tax Brief",
+      subject: "Confirm your subscription to The Director's Brief",
       react: ConfirmEmail({ confirmUrl }),
       headers: {
         "List-Unsubscribe": `<${base}/newsletter>`,
@@ -64,5 +79,5 @@ export async function POST(req: NextRequest) {
     // Still 200, record exists, user can retry
   }
 
-  return NextResponse.json({ ok: true });
+  return NextResponse.json({ ok: true, mode: "confirm-required" });
 }

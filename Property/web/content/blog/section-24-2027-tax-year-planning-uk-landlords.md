@@ -80,7 +80,7 @@ Net tax: £12,600 - £3,000 = £9,600</p>
 <ul>
 <li>Real-time monitoring of property income against tax bands</li>
 <li>Timing of repairs and improvement expenditure</li>
-<li>Management of other income sources to optimize overall tax position</li>
+<li>Management of other income sources to optimise overall tax position</li>
 <li>Early identification of incorporation trigger points</li>
 </ul>
 
@@ -93,13 +93,13 @@ Net tax: £12,600 - £3,000 = £9,600</p>
 <p>Some landlords may consider restructuring their portfolios before April 2027. Options include:</p>
 <ul>
 <li>Transferring properties to lower-rate taxpayer spouses</li>
-<li>Realizing capital gains before higher rates apply to property income</li>
+<li>Realising capital gains before higher rates apply to property income</li>
 <li>Converting to commercial property investments (unaffected by Section 24)</li>
 <li>Exploring furnished holiday lettings alternatives post-FHL abolition</li>
 </ul>
 
-<h2>Expense Optimization and Record-Keeping</h2>
-<p>With higher tax rates on property income, maximizing allowable deductions becomes even more valuable. <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">Review all possible expense categories</a> including:</p>
+<h2>Expense Optimisation and Record-Keeping</h2>
+<p>With higher tax rates on property income, maximising allowable deductions becomes even more valuable. <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">Review all possible expense categories</a> including:</p>
 <ul>
 <li>Repairs and maintenance costs</li>
 <li>Professional fees and property management charges</li>
@@ -143,7 +143,7 @@ Net tax: £12,600 - £3,000 = £9,600</p>
 <ul>
 <li><strong>Model your tax position:</strong> Calculate the impact of 42%/47% property tax rates on your portfolio</li>
 <li><strong>Review incorporation options:</strong> Assess whether company ownership becomes cost-effective</li>
-<li><strong>Optimize expenses:</strong> Ensure you're claiming all allowable deductions</li>
+<li><strong>Optimise expenses:</strong> Ensure you're claiming all allowable deductions</li>
 <li><strong>Consider timing:</strong> Plan major expenditure or property disposals around the April 2027 changes</li>
 <li><strong>Prepare for MTD:</strong> If not already compliant, establish digital record-keeping systems</li>
 <li><strong>Build cash reserves:</strong> Prepare for higher tax bills from April 2027</li>
@@ -152,5 +152,5 @@ Net tax: £12,600 - £3,000 = £9,600</p>
 
 <h2>Looking Beyond 2027/28</h2>
 <p>The introduction of separate property tax rates represents a fundamental shift in UK property taxation policy. Future changes may include further rate increases or additional restrictions on property investment reliefs.</p>
-<p>Successful landlords will need to adapt their strategies to operate effectively under the new regime. This means moving from purely acquisition-focused approaches to sophisticated tax-efficient structures that maximize after-tax returns.</p>
+<p>Successful landlords will need to adapt their strategies to operate effectively under the new regime. This means moving from purely acquisition-focused approaches to sophisticated tax-efficient structures that maximise after-tax returns.</p>
 <p>The combination of Section 24 restrictions and higher property tax rates creates a challenging environment for individual landlords. However, with proper planning and professional guidance, many portfolio owners can still achieve strong returns through careful structuring and compliance with the new requirements.</p>

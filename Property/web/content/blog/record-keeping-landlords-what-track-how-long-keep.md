@@ -7,7 +7,7 @@ author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Landlord Records: What to Keep & How Long | UK Guide 2026"
 metaDescription: "Complete guide to record keeping for landlords. HMRC requirements, what rental records to track, digital storage tips, and retention periods explained."
-altText: "UK landlord organizing property rental records and receipts in filing system"
+altText: "UK landlord organising property rental records and receipts in filing system"
 image: ""
 h1: "What Records Should UK Landlords Keep and for How Long?"
 summary: "UK landlords must maintain detailed records for tax purposes and HMRC compliance. This guide covers what rental records to keep, how long to retain them, and practical storage solutions."
@@ -52,7 +52,7 @@ faqs:
 <li><strong>Capital gains records:</strong> Keep until 5 years after disposal of the property</li>
 <li><strong>Inheritance tax:</strong> Keep records indefinitely if property may be subject to IHT</li>
 <li><strong>Ongoing disputes:</strong> Keep records until all enquiries or appeals are resolved</li>
-<li><strong>Losses carried forward:</strong> Keep records supporting losses until they're fully utilized</li>
+<li><strong>Losses carried forward:</strong> Keep records supporting losses until they're fully utilised</li>
 </ul>
 
 <h2>Essential Rental Income Records</h2>
@@ -87,7 +87,7 @@ faqs:
 
 <h2>Property Expense and Capital Expenditure Records</h2>
 
-<p>Detailed expense records are crucial for maximizing <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">landlord tax deductions</a>. Keep records for all allowable expenses:</p>
+<p>Detailed expense records are crucial for maximising <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">landlord tax deductions</a>. Keep records for all allowable expenses:</p>
 
 <h3>Property Management Costs</h3>
 <ul>

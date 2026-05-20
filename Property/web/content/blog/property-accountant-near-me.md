@@ -21,12 +21,12 @@ faqs:
     answer: "Consider switching if your current accountant doesn't understand property-specific rules, provides only compliance services without planning advice, or can't explain Section 24 implications for your portfolio. Also switch if you're considering incorporation, expanding your portfolio, or approaching the Making Tax Digital requirements in 2026—these situations need specialist knowledge."
   - question: "What should I expect to pay for rental property accounting services?"
     answer: "Fees typically range from £1,000-2,000 annually for simple BTL portfolios up to £5,000+ for complex multi-property structures. Consider the total value including tax savings, compliance assurance, and strategic advice rather than just the base fee. Good property accountants often pay for themselves through better tax planning."
-  - question: "How do I know if an accountant truly specializes in property?"
+  - question: "How do I know if an accountant truly specialises in property?"
     answer: "Ask specific questions about their property client base, their understanding of Section 24, incorporation strategies, and Making Tax Digital requirements. A true specialist should easily explain these concepts and provide examples relevant to your situation. Request references from similar clients if possible."
   - question: "What's more important - local knowledge or property expertise?"
     answer: "Property expertise typically matters more. UK property tax rules are national, and an experienced property specialist will understand the key issues affecting landlords regardless of location. Local knowledge can add value for regional development projects, but most landlords benefit more from deep sector expertise."
   - question: "Are remote property accountants cheaper than local firms?"
-    answer: "Not always, but remote specialists often have lower overheads which can translate to competitive fees. More importantly, they may offer better value through specialized expertise and efficient processes. Compare total value rather than just hourly rates - good property advice can save far more than the fee difference."
+    answer: "Not always, but remote specialists often have lower overheads which can translate to competitive fees. More importantly, they may offer better value through specialised expertise and efficient processes. Compare total value rather than just hourly rates - good property advice can save far more than the fee difference."
   - question: "What should I prepare before meeting potential accountants?"
     answer: "Document your current property portfolio: rental income, mortgage details, expenses, and future plans. List any specific challenges you're facing, such as Section 24 impacts or incorporation considerations. This information helps accountants understand your needs quickly and provide more accurate fee quotes and service recommendations."
 ---
@@ -116,7 +116,7 @@ faqs:
 
 <h2>Making the Final Decision</h2>
 <p>The <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">best property accountants</a> will offer an initial consultation to understand your situation. They should ask about your current properties, expansion plans, and any tax concerns you have.</p>
-<p>During this conversation, assess whether they're genuinely interested in helping you optimize your property business, or just completing compliance tasks. The right specialist will suggest practical improvements to your current structure and highlight potential issues you hadn't considered.</p>
+<p>During this conversation, assess whether they're genuinely interested in helping you optimise your property business, or just completing compliance tasks. The right specialist will suggest practical improvements to your current structure and highlight potential issues you hadn't considered.</p>
 <p>Remember, the cheapest option rarely provides the best value. A specialist who saves you £2,000 annually through better tax planning easily justifies higher fees than a generalist who simply processes your numbers.</p>
 <p>Before your search, document your current situation: list your properties, rental income, mortgage interest payments, and other property expenses. Note any plans for expansion, refurbishment, or sales. This information will help any potential accountant understand your needs quickly.</p>
 <p>Property investment is complex enough without worrying about tax compliance. Finding the right specialist — whether they're property accountants near me geographically or experts who work remotely — is an investment in your portfolio's long-term success.</p>

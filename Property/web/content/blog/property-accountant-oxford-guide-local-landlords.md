@@ -154,7 +154,7 @@ faqs:
 
 <h3>HMO Licensing and Compliance Costs</h3>
 
-<p>Oxford City Council requires HMO licenses for properties housing three or more unrelated tenants. License fees (typically £1,000+ per property) are deductible expenses, as are compliance costs for safety certificates and mandatory improvements.</p>
+<p>Oxford City Council requires HMO licences for properties housing three or more unrelated tenants. Licence fees (typically £1,000+ per property) are deductible expenses, as are compliance costs for safety certificates and mandatory improvements.</p>
 
 <h3>Council Tax and Utility Management</h3>
 

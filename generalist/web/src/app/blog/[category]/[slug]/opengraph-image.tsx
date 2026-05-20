@@ -14,7 +14,7 @@ export default async function Image({
   const { category, slug } = await params;
   const post = getPostByCategoryAndSlug(category, slug);
 
-  const title = post?.h1 || post?.title || "Agency Founder Finance";
+  const title = post?.h1 || post?.title || "Holloway Davies";
   const categoryName = post?.category || "Blog";
 
   return new ImageResponse(
@@ -80,7 +80,7 @@ export default async function Image({
               fontWeight: 600,
             }}
           >
-            ukbusinessaccountants.co.uk
+            hollowaydavies.co.uk
           </div>
           <div
             style={{
@@ -98,7 +98,7 @@ export default async function Image({
               }}
             />
             <div style={{ color: "#e2e8f0", fontSize: 20, fontWeight: 600 }}>
-              Agency Founder Finance
+              Holloway Davies
             </div>
           </div>
         </div>

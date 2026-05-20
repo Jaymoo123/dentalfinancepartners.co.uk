@@ -70,7 +70,7 @@ faqs:
 </ul>
 
 <h2>HMO Furniture Replacement Strategy</h2>
-<p><strong>HMO furniture replacement</strong> requires careful planning to optimize tax relief. The timing and nature of replacements affects whether costs qualify for capital allowances or immediate revenue deductions.</p>
+<p><strong>HMO furniture replacement</strong> requires careful planning to optimise tax relief. The timing and nature of replacements affects whether costs qualify for capital allowances or immediate revenue deductions.</p>
 
 <h3>Replacement vs Enhancement</h3>
 <p>When existing furniture is simply replaced on a like-for-like basis, landlords typically have a choice between claiming capital allowances or treating the cost as a revenue expense under the replacement domestic items relief. For example, replacing a worn communal sofa with a similar model could be treated as either a revenue expense (immediate deduction against rental income) or a capital allowance (annual writing down allowance over time). The optimal choice depends on your current year tax position and longer-term planning.</p>
@@ -79,7 +79,7 @@ faqs:
 <p>When furniture is upgraded or enhanced beyond simple replacement, capital allowances treatment typically applies. Installing higher-quality items, adding functionality, or increasing capacity generally creates a capital allowance rather than revenue expense. Strategic upgrade timing can help manage tax liabilities across different years, particularly important given the upcoming changes to property income tax rates from April 2027.</p>
 
 <h2>Annual Investment Allowance for HMOs</h2>
-<p>The Annual Investment Allowance (AIA) provides 100% first-year relief on qualifying capital expenditure up to £1 million per year. For HMO landlords, this means immediate full deduction for most furniture and equipment purchases. A landlord spending £15,000 on communal area furniture and kitchen equipment can typically claim the full amount against rental income in the year of purchase, subject to the AIA limit. This makes timing purchases strategically important. Bunching qualifying expenditure into a single tax year can maximize the benefit, particularly where rental profits are high.</p>
+<p>The Annual Investment Allowance (AIA) provides 100% first-year relief on qualifying capital expenditure up to £1 million per year. For HMO landlords, this means immediate full deduction for most furniture and equipment purchases. A landlord spending £15,000 on communal area furniture and kitchen equipment can typically claim the full amount against rental income in the year of purchase, subject to the AIA limit. This makes timing purchases strategically important. Bunching qualifying expenditure into a single tax year can maximise the benefit, particularly where rental profits are high.</p>
 
 <h2>Record Keeping and Evidence</h2>
 <p>Robust record keeping is essential for HMO capital allowances claims. HMRC may challenge claims that lack adequate supporting evidence.</p>
@@ -111,12 +111,12 @@ faqs:
 <p>Several factors affect the future value of HMO capital allowances claims.</p>
 
 <h3>2027 Property Tax Changes</h3>
-<p>From April 2027, property income faces separate tax rates higher than general income tax rates. Capital allowances that reduce property income will provide greater tax savings under this new system. Landlords might consider accelerating capital expenditure before April 2027 to maximize relief at current rates, while building up capital allowances pools for future years when property tax rates increase.</p>
+<p>From April 2027, property income faces separate tax rates higher than general income tax rates. Capital allowances that reduce property income will provide greater tax savings under this new system. Landlords might consider accelerating capital expenditure before April 2027 to maximise relief at current rates, while building up capital allowances pools for future years when property tax rates increase.</p>
 
 <h3>Making Tax Digital</h3>
-<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital</a> requires quarterly digital reporting for landlords with gross property income over £10,000. Capital allowances calculations must be integrated into this quarterly reporting cycle. Digital record-keeping systems become essential, with clear categorization of capital vs revenue expenses and automatic allowances calculations.</p>
+<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital</a> requires quarterly digital reporting for landlords with gross property income over £10,000. Capital allowances calculations must be integrated into this quarterly reporting cycle. Digital record-keeping systems become essential, with clear categorisation of capital vs revenue expenses and automatic allowances calculations.</p>
 
 <h2>Professional Support</h2>
 <p>HMO capital allowances involve complex technical rules where professional guidance often proves valuable. The interaction between property law, tax legislation, and commercial considerations requires specialist knowledge.</p>
-<p><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Property accountants</a> can help identify qualifying expenditure, optimize claiming strategies, and ensure compliance with HMRC requirements. For larger HMO portfolios, specialist capital allowances surveys may identify significant additional claims.</p>
+<p><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Property accountants</a> can help identify qualifying expenditure, optimise claiming strategies, and ensure compliance with HMRC requirements. For larger HMO portfolios, specialist capital allowances surveys may identify significant additional claims.</p>
 <p>Given the increasing complexity of property taxation and the upcoming changes from 2027, professional support becomes increasingly worthwhile for HMO landlords with substantial capital expenditure.</p>

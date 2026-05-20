@@ -81,7 +81,7 @@ faqs:
 <p>You can make pension contributions up to 9 months and one day after your company's year-end and still claim relief in the previous accounting period. This flexibility helps with cash flow management and tax planning. For a company with a March year-end, pension contributions made by 1 January can still qualify for the previous year's corporation tax relief, subject to meeting the accounting treatment requirements.</p>
 
 <h3>Direct Employer Contributions vs Salary Sacrifice</h3>
-<p>Property companies have two main options for pension funding. Direct employer contributions, where the company makes contributions without reducing the director's salary, offer full corporation tax relief and simpler administration but no National Insurance savings. Salary sacrifice arrangements, where a director foregoes salary in exchange for pension contributions, can save the employer's National Insurance (13.8%) but require a formal agreement and may affect other benefits linked to salary levels. For property companies, direct employer contributions are often simpler since many directors already take minimal salaries to optimize their personal tax position.</p>
+<p>Property companies have two main options for pension funding. Direct employer contributions, where the company makes contributions without reducing the director's salary, offer full corporation tax relief and simpler administration but no National Insurance savings. Salary sacrifice arrangements, where a director foregoes salary in exchange for pension contributions, can save the employer's National Insurance (13.8%) but require a formal agreement and may affect other benefits linked to salary levels. For property companies, direct employer contributions are often simpler since many directors already take minimal salaries to optimise their personal tax position.</p>
 
 <h2>Integration with Dividend Planning</h2>
 <p>Pension contributions work particularly well alongside dividend strategies for property companies. The optimal extraction might combine:</p>
@@ -90,13 +90,13 @@ faqs:
 <li>Employer pension contributions up to annual allowance</li>
 <li>Dividends for remaining profit extraction needs</li>
 </ul>
-<p>This approach maximizes the benefit of tax-free pension accumulation while maintaining flexibility for current income needs through dividends.</p>
+<p>This approach maximises the benefit of tax-free pension accumulation while maintaining flexibility for current income needs through dividends.</p>
 <p>For directors affected by <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a>, this strategy becomes even more valuable as it provides an additional route for tax-efficient profit extraction from the company structure.</p>
 
 <h2>Compliance and Documentation Requirements</h2>
 <p>Property companies making employer pension contributions must maintain proper documentation:</p>
 <ul>
-<li>Board resolution authorizing pension arrangements</li>
+<li>Board resolution authorising pension arrangements</li>
 <li>Written employer pension contribution policy</li>
 <li>Payment records and pension provider confirmations</li>
 <li>Annual benefit statements for directors</li>
@@ -114,5 +114,5 @@ faqs:
 <li>Integrating pension strategy with company restructuring</li>
 <li>Managing carry forward of unused allowances</li>
 </ul>
-<p>A specialist <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can model different contribution scenarios and help optimize your overall tax position across the company and personal levels.</p>
-<p>The interaction between property company structures, pension contributions, and changing tax rates from April 2027 makes forward planning particularly important for property investors looking to maximize long-term wealth accumulation.</p>
+<p>A specialist <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can model different contribution scenarios and help optimise your overall tax position across the company and personal levels.</p>
+<p>The interaction between property company structures, pension contributions, and changing tax rates from April 2027 makes forward planning particularly important for property investors looking to maximise long-term wealth accumulation.</p>

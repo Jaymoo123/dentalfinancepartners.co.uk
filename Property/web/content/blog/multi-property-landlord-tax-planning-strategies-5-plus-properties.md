@@ -25,7 +25,7 @@ faqs:
 
 <p>Multi-property landlord tax planning becomes increasingly complex as your portfolio grows beyond five properties. The combination of Section 24 restrictions, higher rate tax exposure, and administrative burden requires a strategic approach that considers both current tax efficiency and long-term portfolio goals.</p>
 
-<p>This comprehensive guide examines the key tax planning strategies available to landlords with substantial property portfolios, from incorporation decisions to expense optimization and compliance management.</p>
+<p>This comprehensive guide examines the key tax planning strategies available to landlords with substantial property portfolios, from incorporation decisions to expense optimisation and compliance management.</p>
 
 <h2>Section 24 Impact and Tax Strategy for Large Portfolios</h2>
 
@@ -59,7 +59,7 @@ faqs:
 <li>Loss of group relief opportunities</li>
 <li>More complex inter-company transactions</li>
 </ul>
-<p><strong>Group Structure Considerations:</strong> Landlords with 15+ properties often benefit from holding company structures that allow centralized cash management, group relief for losses, simplified profit extraction, and more efficient refinancing arrangements.</p>
+<p><strong>Group Structure Considerations:</strong> Landlords with 15+ properties often benefit from holding company structures that allow centralised cash management, group relief for losses, simplified profit extraction, and more efficient refinancing arrangements.</p>
 
 <h2>Incorporation Strategy for Multi-Property Landlords</h2>
 <p>The decision to incorporate a large property portfolio requires careful analysis of both immediate and long-term implications. <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Buy-to-let incorporation</a> offers significant advantages for substantial portfolios but involves upfront costs and ongoing compliance.</p>
@@ -83,11 +83,11 @@ faqs:
 <li><strong>Spouse transfers:</strong> Utilise both spouses' CGT allowances before incorporation</li>
 </ul>
 
-<h2>Expense Optimization and Administration for Large Portfolios</h2>
+<h2>Expense Optimisation and Administration for Large Portfolios</h2>
 <p>Multi-property landlords can claim additional expenses not available to smaller portfolios, but must maintain detailed records to support claims.</p>
 
 <h3>Professional, Administrative and Office Costs</h3>
-<p>Large portfolios justify specialized professional services:</p>
+<p>Large portfolios justify specialised professional services:</p>
 <ul>
 <li><strong>Property management software:</strong> £50-£200 monthly for portfolio management systems</li>
 <li><strong>Dedicated property accountant:</strong> £2,000-£5,000+ annually depending on complexity</li>
@@ -103,17 +103,17 @@ faqs:
 <p>Essential documentation systems for large portfolios include property-by-property profit tracking, tenant and tenancy records, maintenance and improvement records, and professional fee allocation. Digital property management systems typically cost £100-£300 annually but save significant time and reduce compliance risks for portfolios above 5 properties.</p>
 
 <h2>Capital Gains Tax Planning for Portfolio Disposals</h2>
-<p>Large portfolio landlords must plan strategically for property disposals to minimize <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax exposure</a> while optimizing their overall property mix.</p>
+<p>Large portfolio landlords must plan strategically for property disposals to minimise <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax exposure</a> while optimising their overall property mix.</p>
 
 <h3>Disposal Sequencing and Strategy</h3>
-<p>Multi-property landlords should prioritize disposals based on:</p>
+<p>Multi-property landlords should prioritise disposals based on:</p>
 <ul>
 <li><strong>Capital gains exposure:</strong> Dispose of properties with smaller gains first</li>
-<li><strong>Annual CGT allowance:</strong> Time disposals to utilize £3,000 annual exempt amount</li>
+<li><strong>Annual CGT allowance:</strong> Time disposals to utilise £3,000 annual exempt amount</li>
 <li><strong>Income tax planning:</strong> Consider disposal proceeds impact on overall income</li>
 <li><strong>Portfolio balance:</strong> Maintain geographic and property type diversification</li>
 </ul>
-<p>A landlord disposing of 2 properties annually can potentially save £2,000-£4,000 in CGT through careful timing and allowance utilization.</p>
+<p>A landlord disposing of 2 properties annually can potentially save £2,000-£4,000 in CGT through careful timing and allowance utilisation.</p>
 <p>Some multi-property landlords use partial disposal techniques such as selling shared ownership stakes to family members, creating leasehold interests for specific periods, or using company structures to sell shares rather than properties.</p>
 
 <h2>Professional Support and Team Management</h2>

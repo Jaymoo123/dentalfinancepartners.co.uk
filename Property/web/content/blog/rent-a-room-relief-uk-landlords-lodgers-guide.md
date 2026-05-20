@@ -42,7 +42,7 @@ faqs:
 <ul>
 <li>Renting individual bedrooms to lodgers who share communal areas</li>
 <li>Providing accommodation to foreign students or language school students</li>
-<li>Short-term lets to business travelers or tourists (though other rules may apply)</li>
+<li>Short-term lets to business travellers or tourists (though other rules may apply)</li>
 <li>Renting to friends or family members at market rates</li>
 </ul>
 
@@ -97,7 +97,7 @@ faqs:
 <h3>Portfolio Impact</h3>
 <p>Adding rent-a-room income to existing rental income affects your total property income for tax purposes, potentially pushing you into higher rate tax bands from April 2027 when separate <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">property income tax rates</a> take effect.</p>
 <h3>Mortgage, Insurance and Licensing</h3>
-<p>Check your residential mortgage terms before taking in lodgers. Some lenders require notification or permission for rent-a-room arrangements. Your home insurance policy may also need updating to cover lodger-related risks. Depending on your local authority and the number of lodgers, you may need an HMO license. Most single lodger arrangements don't require licensing, but larger shared houses might fall under HMO regulations.</p>
+<p>Check your residential mortgage terms before taking in lodgers. Some lenders require notification or permission for rent-a-room arrangements. Your home insurance policy may also need updating to cover lodger-related risks. Depending on your local authority and the number of lodgers, you may need an HMO licence. Most single lodger arrangements don't require licensing, but larger shared houses might fall under HMO regulations.</p>
 
 <h2>Common Mistakes and When to Seek Advice</h2>
 <p>Several pitfalls can affect landlords using the rent-a-room scheme:</p>
@@ -109,9 +109,9 @@ faqs:
 </ul>
 <p>While the rent-a-room scheme appears straightforward, it can interact complexly with existing property portfolios and tax positions. <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Professional property tax advice</a> becomes valuable when:</p>
 <ul>
-<li>You have existing rental properties and want to optimize your total tax position</li>
+<li>You have existing rental properties and want to optimise your total tax position</li>
 <li>Your combined property income approaches the higher rate tax threshold</li>
 <li>You're considering significant alterations to your home for rental purposes</li>
 <li>You need to structure rent-a-room arrangements alongside incorporation planning</li>
 </ul>
-<p>The scheme offers genuine tax benefits, but proper planning ensures you maximize these advantages while avoiding unexpected complications with your broader property investment strategy.</p>
+<p>The scheme offers genuine tax benefits, but proper planning ensures you maximise these advantages while avoiding unexpected complications with your broader property investment strategy.</p>

@@ -79,7 +79,7 @@ faqs:
 <p>However, remember that extracting profits from the company creates additional tax charges through dividends or salary. The overall tax position depends on your total income, existing property portfolio, and future plans. This is where specialist advice becomes crucial. Our <a href="/calculators">calculators</a> can provide initial guidance, but complex situations require detailed analysis.</p>
 
 <h2>Refinancing, Remortgaging and Portfolio Growth</h2>
-<p>Limited company mortgages often have more flexible <a href="/blog/section-24-and-tax-relief/buy-to-let-refinancing-when-does-it-make-sense">refinancing</a> options than personal loans. You can typically refinance without triggering Stamp Duty Land Tax, making portfolio optimization more cost-effective.</p>
+<p>Limited company mortgages often have more flexible <a href="/blog/section-24-and-tax-relief/buy-to-let-refinancing-when-does-it-make-sense">refinancing</a> options than personal loans. You can typically refinance without triggering Stamp Duty Land Tax, making portfolio optimisation more cost-effective.</p>
 <p>Many investors use refinancing to extract equity for further purchases, though lenders typically cap total borrowing at 4-6 times rental income across your portfolio.</p>
 <p>Remortgaging works similarly to initial purchases, though established companies with trading history may find the process smoother. Lenders will want to see recent company accounts and evidence of successful property management. Some landlords use remortgaging as an opportunity to transfer personally-held properties into company ownership, though this involves additional considerations around capital gains tax and stamp duty.</p>
 

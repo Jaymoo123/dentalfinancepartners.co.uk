@@ -74,7 +74,7 @@ faqs:
 <p><strong>Section 24 miscalculations:</strong> Don't deduct mortgage interest as an expense. Calculate the 20% tax credit separately.</p>
 
 <h2>Tax Planning and Professional Advice</h2>
-<p>The <strong>landlord tax bands 2026</strong> changes also affect tax planning strategies. Higher-rate taxpayers might consider incorporation to access corporation tax rates (19% for profits up to £250k, 25% main rate), while basic-rate landlords could focus on maximizing allowable expenses.</p>
+<p>The <strong>landlord tax bands 2026</strong> changes also affect tax planning strategies. Higher-rate taxpayers might consider incorporation to access corporation tax rates (19% for profits up to £250k, 25% main rate), while basic-rate landlords could focus on maximising allowable expenses.</p>
 <p>For complex situations involving multiple properties, significant rental income, or incorporation decisions, professional advice ensures compliance with both traditional deadlines and new MTD requirements. Our <a href="/services">specialist property tax services</a> help landlords navigate these changing obligations efficiently.</p>
 
 <h2>Related Reading</h2>

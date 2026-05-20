@@ -35,7 +35,7 @@ function readMarkdownDir(rel: string, prefix: string): string {
     const slug = (data.slug as string) || file.replace(/\.md$/, "");
     const title = (data.title as string) || slug;
     const summary = (data.summary as string) || (data.metaDescription as string) || "";
-    const url = `https://www.ukbusinessaccountants.co.uk/${prefix}/${slug}`;
+    const url = `https://www.hollowaydavies.co.uk/${prefix}/${slug}`;
     parts.push(
       [
         "",
@@ -54,16 +54,16 @@ function readMarkdownDir(rel: string, prefix: string): string {
   return parts.join("\n\n");
 }
 
-const HEADER = `# UK Business Accountants, Full Content Reference
+const HEADER = `# Holloway Davies, Full Content Reference
 
 This file is a flat, machine-readable dump of every published guide and post on
-ukbusinessaccountants.co.uk. It exists for AI retrieval, training, and citation.
-The structured index lives at https://www.ukbusinessaccountants.co.uk/llms.txt
+hollowaydavies.co.uk. It exists for AI retrieval, training, and citation.
+The structured index lives at https://www.hollowaydavies.co.uk/llms.txt
 and the current tax rates JSON at /api/uk-tax-rates.json.
 
 Editorial: all tax figures use 2025/26 UK rates as of the date below. Always
 verify against gov.uk for time-sensitive decisions. For advice specific to a
-given business, see https://www.ukbusinessaccountants.co.uk/contact.
+given business, see https://www.hollowaydavies.co.uk/contact.
 
 `;
 

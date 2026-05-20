@@ -67,7 +67,7 @@ faqs:
 <h3>Disposal Review</h3>
 <p>Review your portfolio for properties you might consider selling in the next 2-3 years. Calculate the CGT implications of selling before vs after April 2027, considering how the timing affects your overall tax position.</p>
 <h3>Professional Advice</h3>
-<p>The interaction between income tax changes and CGT planning is complex. Consider consulting <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">a specialist property accountant</a> to model different scenarios and optimize your strategy.</p>
+<p>The interaction between income tax changes and CGT planning is complex. Consider consulting <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">a specialist property accountant</a> to model different scenarios and optimise your strategy.</p>
 
 <h2>Record Keeping, Compliance and Future Considerations</h2>
 <p>With the complexity increasing, maintaining detailed records becomes even more important. Track all property-related expenses, improvement costs, and acquisition details that affect CGT calculations. Remember that <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> become mandatory for landlords from April 2026, adding another layer of compliance consideration to your planning.</p>

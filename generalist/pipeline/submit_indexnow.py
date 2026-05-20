@@ -3,7 +3,7 @@ Submit URLs to IndexNow (Bing, Yandex, Seznam, Naver, Yep, others).
 
 Usage:
   # Submit a single URL or several inline:
-  python pipeline/submit_indexnow.py https://www.ukbusinessaccountants.co.uk/blog/some-post
+  python pipeline/submit_indexnow.py https://www.hollowaydavies.co.uk/blog/some-post
 
   # Submit everything in the live sitemap (use sparingly, e.g. after big content drops):
   python pipeline/submit_indexnow.py --from-sitemap
@@ -15,7 +15,7 @@ Usage:
   python pipeline/submit_indexnow.py --from-queue
 
   # Add a URL to the queue without submitting (used by generators):
-  python pipeline/submit_indexnow.py --enqueue https://www.ukbusinessaccountants.co.uk/blog/foo
+  python pipeline/submit_indexnow.py --enqueue https://www.hollowaydavies.co.uk/blog/foo
 
 Notes:
   - IndexNow limit: 10,000 URLs per request. Script chunks automatically.
@@ -37,7 +37,7 @@ import urllib.error
 import json
 import xml.etree.ElementTree as ET
 
-HOST = "www.ukbusinessaccountants.co.uk"
+HOST = "www.hollowaydavies.co.uk"
 KEY = "432fba0acf043d10bee408eb4a80932e"
 KEY_LOCATION = f"https://{HOST}/{KEY}.txt"
 SITEMAP_URL = f"https://{HOST}/sitemap.xml"

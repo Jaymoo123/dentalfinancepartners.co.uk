@@ -53,7 +53,7 @@ export default function Error({
           </button>
           <Link
             href="/"
-            className="inline-flex items-center justify-center rounded-lg border-2 border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-900 transition-colors hover:border-slate-400 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2"
+            className="inline-flex items-center justify-center rounded-lg border-2 border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-900 transition-colors hover:border-slate-400 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-offset-2"
           >
             Go home
           </Link>
@@ -61,7 +61,7 @@ export default function Error({
 
         <p className="mt-8 text-sm text-slate-500">
           If this keeps happening, please{" "}
-          <a href="/contact" className="font-semibold text-indigo-700 hover:text-indigo-600">
+          <a href="/contact" className="font-semibold text-orange-700 hover:text-orange-600">
             get in touch
           </a>
           .

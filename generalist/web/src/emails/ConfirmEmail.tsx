@@ -8,12 +8,12 @@ type Props = {
 
 export default function ConfirmEmail({ confirmUrl }: Props) {
   return (
-    <EmailLayout preview="Confirm your subscription to The Agency Founder Tax Brief">
+    <EmailLayout preview="Confirm your subscription to The Director's Brief">
       <Section>
         <Text style={h1}>Confirm your subscription</Text>
         <Text style={p}>
-          Thanks for signing up to <strong>The Agency Founder Tax Brief</strong>, a
-          weekly read for UK agency founders on tax, pay, structure, and exit.
+          Thanks for signing up to <strong>The Director's Brief</strong>, a
+          weekly read for UK business owners on tax, pay, structure, and exit.
         </Text>
         <Text style={p}>One last step. Confirm your email:</Text>
         <Button href={confirmUrl} style={button}>

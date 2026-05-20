@@ -18,7 +18,7 @@ faqs:
   - question: "How much does a property accountant cost in Peterborough compared to a general accountant?"
     answer: "Property accountants typically charge 20-50% more than general accountants, but this premium often pays for itself through superior tax planning and specialist knowledge. For a basic buy-to-let portfolio, annual fees might range from £800-£1,500 compared to £500-£800 for general accounting. However, the tax savings from proper Section 24 planning, incorporation advice, and MTD compliance often exceed the additional cost significantly."
   - question: "When should I switch from a general accountant to a property specialist?"
-    answer: "Consider switching when your property income exceeds £10,000 annually (triggering MTD requirements), when Section 24 restrictions significantly impact your tax bill, or when considering incorporation. Other triggers include portfolio expansion, complex ownership structures, or if you're not receiving proactive tax planning advice. The earlier you switch, the more opportunities exist for tax optimization."
+    answer: "Consider switching when your property income exceeds £10,000 annually (triggering MTD requirements), when Section 24 restrictions significantly impact your tax bill, or when considering incorporation. Other triggers include portfolio expansion, complex ownership structures, or if you're not receiving proactive tax planning advice. The earlier you switch, the more opportunities exist for tax optimisation."
   - question: "Do I need a property accountant if I only own one rental property in Peterborough?"
     answer: "Even single-property landlords can benefit from specialist advice, particularly if rental income exceeds £10,000 (requiring MTD compliance from April 2026) or if they're higher-rate taxpayers affected by Section 24. The decision depends on income levels, tax complexity, and whether you're planning to expand your portfolio. Many single-property owners find the compliance security and tax planning advice worth the investment."
 ---
@@ -43,7 +43,7 @@ faqs:
 <li>Section 24 mortgage interest restrictions and 20% tax credit calculations</li>
 <li>Capital gains tax on property disposals, including Principal Private Residence Relief claims</li>
 <li>Making Tax Digital compliance from April 2026 for landlords with income over £10,000</li>
-<li>Incorporation timing and structure optimization</li>
+<li>Incorporation timing and structure optimisation</li>
 <li>Property-specific deductions and capital allowances</li>
 </ul>
 
@@ -51,7 +51,7 @@ faqs:
 
 <h2>Navigating Key Tax Rules and Compliance</h2>
 
-<h3>Section 24 and Tax Relief Optimization</h3>
+<h3>Section 24 and Tax Relief Optimisation</h3>
 <p>Section 24 restrictions have fundamentally changed how landlords approach their finances. Instead of full mortgage interest deduction, landlords now receive a 20% tax credit on interest payments. This change can significantly impact tax bills, particularly for higher-rate taxpayers. A <strong>buy to let accountant in Peterborough</strong> will help you navigate these restrictions by calculating your effective tax rate, modelling potential savings through incorporation, and identifying other deductible expenses to maximise tax relief. The complexity increases with portfolio size. A landlord with three properties in Peterborough generating £45,000 annual rental income might save thousands through proper structuring and planning. Our comprehensive <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 guide</a> explains these restrictions in detail.</p>
 
 <h3>Making Tax Digital (MTD) for Landlords</h3>

@@ -16,7 +16,7 @@ faqs:
   - question: "What makes a Derby property accountant different from a general accountant?"
     answer: "A Derby property accountant specialises in landlord taxation and understands local market conditions, from student housing near the University of Derby to family rentals in areas like Mickleover. They're familiar with property-specific rules like Section 24, MTD for landlords, and capital gains planning that general accountants often miss."
   - question: "How much can a property accountant save Derby landlords?"
-    answer: "Savings vary by portfolio size and complexity, but many Derby landlords save £2,000-£5,000 annually through proper expense claims, strategic planning, and compliance optimization. For larger portfolios, incorporation planning alone can save tens of thousands per year compared to remaining as individual landlords."
+    answer: "Savings vary by portfolio size and complexity, but many Derby landlords save £2,000-£5,000 annually through proper expense claims, strategic planning, and compliance optimisation. For larger portfolios, incorporation planning alone can save tens of thousands per year compared to remaining as individual landlords."
   - question: "When should Derby landlords consider incorporating their property business?"
     answer: "Incorporation often makes sense for Derby landlords with rental profits over £50,000, especially those affected by Section 24 restrictions. However, local factors like property values in areas such as Allestree or Duffield can create high stamp duty costs on transfer, so each case needs individual analysis."
   - question: "What records do Derby landlords need for Making Tax Digital compliance?"
@@ -85,7 +85,7 @@ faqs:
 <li><strong>Utility costs</strong> - tax treatment when included in rent</li>
 <li><strong>Academic year lettings</strong> - void period expense planning</li>
 </ul>
-<p>Derby City Council's HMO licensing fees (£536 for mandatory licenses, £452 for additional licenses) are fully deductible. However, many landlords miss related expenses like safety certificates, compliance inspections, and upgrade works that can significantly reduce taxable profits.</p>
+<p>Derby City Council's HMO licensing fees (£536 for mandatory licences, £452 for additional licences) are fully deductible. However, many landlords miss related expenses like safety certificates, compliance inspections, and upgrade works that can significantly reduce taxable profits.</p>
 <h3>Commercial Property Opportunities</h3>
 <p>Derby's city centre regeneration creates commercial letting opportunities. Unlike residential property, commercial lettings aren't subject to Section 24 restrictions, and capital allowances are available on fixtures and fittings. However, VAT considerations and business rates planning require specialist knowledge.</p>
 <h3>Upcoming Legislative and Tax Changes</h3>

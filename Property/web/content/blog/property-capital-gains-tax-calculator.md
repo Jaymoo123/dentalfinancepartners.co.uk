@@ -16,7 +16,7 @@ faqs:
   - question: "How accurate is a property capital gains tax calculator?"
     answer: "A good property capital gains tax calculator gives you a reliable estimate for straightforward property sales. However, it may not account for complex situations like principal residence relief, business asset disposal relief, or properties held in companies. For accurate calculations on complex sales, speak to a property tax specialist."
   - question: "Can I reduce my capital gains tax on property sales?"
-    answer: "Yes, several strategies can reduce your CGT liability: claim all allowable costs including improvements and selling expenses, use your annual CGT allowance, consider the timing of sales across tax years, and explore reliefs like principal residence relief if you lived in the property. Married couples can also transfer properties to utilize both spouses' allowances and tax rates."
+    answer: "Yes, several strategies can reduce your CGT liability: claim all allowable costs including improvements and selling expenses, use your annual CGT allowance, consider the timing of sales across tax years, and explore reliefs like principal residence relief if you lived in the property. Married couples can also transfer properties to utilise both spouses' allowances and tax rates."
   - question: "Do I need to pay capital gains tax immediately after selling?"
     answer: "You must report the gain to HMRC within 60 days of completion and pay any CGT due. However, you can also wait until your self-assessment deadline (31 January following the tax year of sale). If you report early, you can still adjust the figures in your annual tax return if needed."
 ---

@@ -74,7 +74,7 @@ faqs:
 <h2>Record Keeping and Professional Advice</h2>
 <p>Accurate record keeping becomes even more important under section 24 tax relief. You need to track all mortgage interest payments by property, other finance costs eligible for basic rate relief, fully deductible expenses separately, and rental income by property.</p>
 <p>With Making Tax Digital for Income Tax starting in 2026, digital record keeping will become mandatory for landlords with rental income over £10,000.</p>
-<p>Section 24 tax relief creates complexity that many landlords struggle with. The interaction between rental profits, personal allowances, and tax credits can be intricate. Professional advice becomes particularly valuable when considering whether to incorporate, planning disposals, or optimizing your overall tax position. Property tax specialists can model different scenarios and help you understand the long-term implications of various strategies.</p>
+<p>Section 24 tax relief creates complexity that many landlords struggle with. The interaction between rental profits, personal allowances, and tax credits can be intricate. Professional advice becomes particularly valuable when considering whether to incorporate, planning disposals, or optimising your overall tax position. Property tax specialists can model different scenarios and help you understand the long-term implications of various strategies.</p>
 
 <h2>Related Reading</h2>
 <ul>

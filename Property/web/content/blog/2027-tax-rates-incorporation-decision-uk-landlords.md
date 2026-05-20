@@ -16,7 +16,7 @@ faqs:
   - question: "How much tax will basic rate landlords pay on rental income from 2027?"
     answer: "From April 2027, basic rate taxpayers will pay 22% tax on property income (compared to 20% currently). This applies to rental income after allowable deductions but before any Section 24 mortgage interest restrictions. The personal allowance still applies to total income including property income."
   - question: "Is it better to incorporate before or after the 2027 tax rate changes?"
-    answer: "Incorporating before 2027 means paying CGT at current rates but benefiting from lower corporation tax immediately. However, you need to weigh the upfront CGT cost against future tax savings. The optimal timing depends on your portfolio's unrealized gains, current income levels, and expansion plans."
+    answer: "Incorporating before 2027 means paying CGT at current rates but benefiting from lower corporation tax immediately. However, you need to weigh the upfront CGT cost against future tax savings. The optimal timing depends on your portfolio's unrealised gains, current income levels, and expansion plans."
   - question: "Do the new 2027 property tax rates apply to companies?"
     answer: "No, the new property income tax rates (22%/42%/47%) only apply to individuals. Companies continue to pay corporation tax at 19% (small profits up to £250k) or 25% (profits above £250k) on rental income, making corporate ownership potentially more tax-efficient from 2027."
   - question: "Can I incorporate just some of my rental properties before 2027?"
@@ -66,7 +66,7 @@ faqs:
 
 <h3>Capital Gains Tax Implications</h3>
 <p>Incorporating existing properties triggers an immediate CGT liability at 18% (basic rate) or 24% (higher rate). You need to weigh this upfront cost against future tax savings.</p>
-<p>For a property portfolio with £100,000 in unrealized gains, a higher rate taxpayer would face £24,000 in CGT to incorporate. The annual tax saving from the new rates needs to exceed this cost within a reasonable timeframe.</p>
+<p>For a property portfolio with £100,000 in unrealised gains, a higher rate taxpayer would face £24,000 in CGT to incorporate. The annual tax saving from the new rates needs to exceed this cost within a reasonable timeframe.</p>
 
 <h3>Section 24 Mortgage Interest Relief</h3>
 <p>The <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a> continue to apply to personal ownership, limiting mortgage interest relief to a 20% tax credit (reducing to 22% from 2027). Companies can still deduct mortgage interest as a business expense against corporation tax.</p>

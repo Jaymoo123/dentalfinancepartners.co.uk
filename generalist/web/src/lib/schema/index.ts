@@ -1,5 +1,5 @@
 /**
- * Composable JSON-LD schema builders for Agency Founder Finance.
+ * Composable JSON-LD schema builders for Holloway Davies.
  *
  * Each builder returns a typed plain object that can be:
  *   - serialised inline via `serialize()` for `dangerouslySetInnerHTML`

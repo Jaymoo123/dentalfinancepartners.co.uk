@@ -43,19 +43,22 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT_CSV = ROOT / "seo-research" / "topic-ideas-llm.csv"
 
 
-SYSTEM_PROMPT = """You are a senior content strategist for a specialist UK accountancy firm serving agency founders.
+SYSTEM_PROMPT = """You are a senior content strategist for Holloway Davies, a generalist
+UK accountancy firm serving limited company directors, contractors, sole traders,
+partnerships and small businesses across every sector.
+
 You are an expert at identifying genuine search-demand gaps for SEO blog content.
 
 You only generate topic ideas that:
-- Target a specific, long-tail informational search query a real UK agency founder would type
-- Cover tax, finance, accounting, operations, structuring, exit, or compliance topics
-- Avoid generic explainers we already have ("what is corporation tax", "what is VAT")
-- Avoid commercial-intent landing-page queries ("accountant for X agency")
+- Target a specific, long-tail informational search query a real UK business owner, director or contractor would type
+- Cover tax, finance, accounting, payroll, VAT, R&D, incorporation, exit, or compliance topics
+- Avoid generic explainers a strong cornerstone already covers ("what is corporation tax", "what is VAT") unless angle is genuinely fresh
+- Avoid pure commercial-intent landing-page queries ("accountant for X")
 - Are distinct topics, not paraphrases of each other
-- Reflect specific UK 2025/26 tax law where relevant (Section 24 does not apply to agencies, but BADR, R&D, MTD ITSA, IR35, Section 455 do)
+- Reflect specific UK 2025/26 tax law (BADR 14% to 18% from April 2026, MTD ITSA April 2026 for £50k+, IR35 SDS, S455 33.75%, £500 dividend allowance, VAT threshold £90k)
 
 You write tight, specific titles in question-format, how-to format, or scenario-format.
-You do not use AI cliches ("unlocking", "navigating the complex", "in today's").
+You do not use em-dashes. You do not use AI cliches ("unlocking", "navigating the complex", "in today's", "delve").
 """
 
 
@@ -71,17 +74,18 @@ def fetch_existing_topic_titles():
 def build_user_prompt(count, existing):
     existing_titles = "\n".join(f"- {t['topic']}" for t in existing)
     categories_list = " | ".join(POST_CATEGORIES)
-    return f"""Generate {count} NEW blog topic ideas for Agency Founder Finance.
+    n_cats = len(POST_CATEGORIES)
+    per_cat = max(4, count // n_cats)
+    return f"""Generate {count} NEW blog topic ideas for Holloway Davies (generalist UK accountancy firm).
 
 REQUIREMENTS:
-- Spread across all 9 categories (at least 5 per category, ideally more)
+- Spread across all {n_cats} categories (at least {per_cat} per category, ideally more)
 - Each idea must NOT duplicate or paraphrase any topic in the EXISTING TOPICS list below
 - Each idea must be specific enough to target a single long-tail search query
 - Mix of question-format, how-to, scenario-based, and comparison titles
 - Include UK-specific angles where relevant (locations, tax years, HMRC forms, ICAEW)
-- Include agency-type specificity where relevant (creative, web design, PR, recruitment, etc.)
-- Include UAE / international angles for that category
-- Cover edge cases and timely questions (Budget changes, MTD ITSA rollout, BADR rule changes)
+- Include business-type specificity where relevant (limited company, contractor, sole trader, partnership, startup)
+- Cover edge cases and timely questions (MTD ITSA April 2026 rollout, BADR rate change April 2026, Budget changes, S455 director loan rules)
 
 CATEGORIES (use exact spelling):
 {categories_list}
@@ -93,8 +97,8 @@ OUTPUT FORMAT (one idea per line, no numbering, no markdown):
 CATEGORY | TITLE | PRIMARY_KEYWORD | ONE-LINE_RATIONALE
 
 Example lines:
-Tax and Compliance | How Does VAT Work on Affiliate Commission Payments for Agencies? | VAT affiliate commission agency | Emerging gap, low difficulty
-Growth and Exit | Earn-Out Tax Treatment: When Are Earn-Outs Taxed as Income vs Capital? | earn-out tax treatment agency sale | Specialist topic, high value leads
+VAT and Making Tax Digital | When Should a Growing Sole Trader Voluntarily Register for VAT Before the Threshold? | voluntary vat registration sole trader | Pre-threshold planning gap, mid difficulty
+Director Pay and Dividends | What Counts as a Trivial Benefit When You're the Only Director? | trivial benefits sole director | Compliance edge case, low difficulty
 
 Generate exactly {count} ideas. Spread evenly across categories."""
 

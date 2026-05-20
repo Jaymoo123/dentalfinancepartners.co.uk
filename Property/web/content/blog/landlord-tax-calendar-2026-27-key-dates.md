@@ -146,7 +146,7 @@ Tax must be paid by this date to avoid interest charges.</p>
 With separate property tax rates from April 2027, some landlords may benefit from <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporating their property business</a>. The timing of any incorporation affects which tax rates apply.</p>
 
 <p><strong>Expense planning:</strong><br>
-Understanding <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">allowable deductions</a> becomes more valuable as tax rates increase. Timing major expenses can optimize tax relief.</p>
+Understanding <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">allowable deductions</a> becomes more valuable as tax rates increase. Timing major expenses can optimise tax relief.</p>
 
 <h3>Your 2026/27 Action Plan</h3>
 <p>The <strong>self assessment dates 2026</strong> timeline requires careful planning. Key actions include:</p>

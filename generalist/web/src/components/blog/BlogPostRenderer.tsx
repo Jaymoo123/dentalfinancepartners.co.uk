@@ -61,7 +61,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
             className="object-cover scale-110 blur-sm"
           />
         ) : (
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-700 via-indigo-800 to-slate-900" />
+          <div className="absolute inset-0 bg-gradient-to-br from-orange-700 via-orange-800 to-slate-900" />
         )}
         <div className="absolute inset-0 bg-slate-900/70" />
         <div className={`${siteContainerLg} relative z-10 h-full flex items-end pb-10 sm:pb-14`}>
@@ -75,7 +75,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 { label: post.title },
               ]}
             />
-            <p className="mt-6 text-xs font-bold uppercase tracking-wider text-indigo-300">
+            <p className="mt-6 text-xs font-bold uppercase tracking-wider text-orange-300">
               {post.category}
             </p>
             <h1 className="mt-3 text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl">
@@ -148,9 +148,9 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   updatedDate={post.updatedDate}
                 />
                 <p className="mt-2 text-xs text-slate-500 max-w-xl">
-                  Editorial content from the Agency Founder Finance team. For
-                  decisions specific to your agency,{" "}
-                  <Link href="/contact" className="underline hover:text-indigo-700">
+                  Editorial content from the Holloway Davies team. For
+                  decisions specific to your business,{" "}
+                  <Link href="/contact" className="underline hover:text-orange-700">
                     book a call
                   </Link>
                   .
@@ -159,16 +159,16 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
 
               {takeaways ? (
                 <section
-                  className="tldr not-prose rounded-lg border-l-4 border-indigo-600 bg-slate-50 p-6"
+                  className="tldr not-prose rounded-lg border-l-4 border-orange-600 bg-slate-50 p-6"
                   aria-label="Key takeaways"
                 >
-                  <p className="text-xs font-bold uppercase tracking-wider text-indigo-700">
+                  <p className="text-xs font-bold uppercase tracking-wider text-orange-700">
                     Key takeaways
                   </p>
                   <ul className="mt-3 space-y-2">
                     {takeaways.map((t, i) => (
                       <li key={i} className="flex items-start gap-2 text-slate-800">
-                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-indigo-600 shrink-0" />
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-orange-600 shrink-0" />
                         <span className="text-base leading-relaxed">{t}</span>
                       </li>
                     ))}
@@ -176,10 +176,10 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 </section>
               ) : post.summary ? (
                 <section className="tldr" aria-label="Summary">
-                  <p className="text-xs font-bold uppercase tracking-wider text-indigo-700">
+                  <p className="text-xs font-bold uppercase tracking-wider text-orange-700">
                     TL;DR
                   </p>
-                  <p className="mt-2 text-lg text-slate-700 leading-relaxed border-l-4 border-indigo-600 bg-slate-50 p-6">
+                  <p className="mt-2 text-lg text-slate-700 leading-relaxed border-l-4 border-orange-600 bg-slate-50 p-6">
                     {post.summary}
                   </p>
                 </section>
@@ -196,8 +196,8 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
 
               <InlinePrompt
                 source={`blog-${categorySlug}-${post.slug}`.slice(0, 80)}
-                heading="Get the Tax Brief in your inbox."
-                body={`One short email a week, UK + UAE tax for agency founders. Plain text, unsubscribe one click. Most useful when ${post.category.toLowerCase()} is on your mind.`}
+                heading="Get the Director's Brief in your inbox."
+                body={`One short email a week on UK tax for limited companies, contractors, sole traders and small businesses. Plain text, unsubscribe one click. Most useful when ${post.category.toLowerCase()} is on your mind.`}
               />
 
               {post.faqs && post.faqs.length > 0 ? (
@@ -217,16 +217,16 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
               ) : null}
 
               <aside className="mt-16 flex gap-5 items-start bg-slate-50 border border-slate-200 p-6 sm:p-8 rounded-lg">
-                <div className="hidden sm:block shrink-0 w-14 h-14 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center">
+                <div className="hidden sm:block shrink-0 w-14 h-14 rounded-full bg-orange-100 text-orange-700 flex items-center justify-center">
                   <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-bold uppercase tracking-wider text-indigo-700">About the author</p>
+                  <p className="text-sm font-bold uppercase tracking-wider text-orange-700">About the author</p>
                   <p className="mt-1 text-lg font-bold text-slate-900">{niche.display_name}</p>
                   <p className="mt-2 text-sm text-slate-600 leading-relaxed">{niche.description}</p>
-                  <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-indigo-700 hover:text-indigo-800">
+                  <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-orange-700 hover:text-orange-800">
                     Learn more about our team →
                   </Link>
                 </div>
@@ -254,7 +254,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                       <li key={r.slug}>
                         <Link
                           href={`/blog/${r.categorySlug}/${r.slug}`}
-                          className="block border-l-4 border-slate-300 bg-slate-50 p-6 transition-all hover:border-indigo-600 hover:bg-white hover:shadow-md"
+                          className="block border-l-4 border-slate-300 bg-slate-50 p-6 transition-all hover:border-orange-600 hover:bg-white hover:shadow-md"
                         >
                           <h3 className="text-lg font-bold text-slate-900">{r.title}</h3>
                           <p className="mt-2 text-sm text-slate-600">{r.summary}</p>

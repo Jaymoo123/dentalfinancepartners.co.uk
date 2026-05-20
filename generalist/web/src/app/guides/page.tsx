@@ -9,7 +9,7 @@ import { GUIDES } from "./[slug]/data";
 export const metadata: Metadata = {
   title: `Free Guides | ${siteConfig.name}`,
   description:
-    "Free in-depth guides for UK agency founders. Year-end tax checklist, switching accountants playbook, Dubai pre-move checklist, first 90 days post-incorporation.",
+    "Free in-depth guides for UK business owners. Year-end tax checklist, switching accountants playbook, first 90 days post-incorporation, contractor playbook.",
   alternates: { canonical: `${siteConfig.url}/guides` },
 };
 
@@ -27,7 +27,7 @@ export default function GuidesIndexPage() {
             ]}
           />
           <div className="mt-6 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-indigo-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
+            <div className="inline-flex items-center gap-2 bg-orange-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
               <FileText className="h-3.5 w-3.5" />
               Free downloadable guides
             </div>
@@ -35,7 +35,7 @@ export default function GuidesIndexPage() {
               Free in-depth guides
             </h1>
             <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-              Long-form practical guides for UK agency founders. Year-end tax planning, switching accountants, Dubai relocation, first 90 days as a Ltd company. Drop your email to get the full version.
+              Long-form practical guides for UK business owners. Year-end tax planning, switching accountants, first 90 days as a Ltd company, contractor first contract. Drop your email to get the full version.
             </p>
           </div>
         </div>
@@ -48,19 +48,19 @@ export default function GuidesIndexPage() {
               <Link
                 key={g.slug}
                 href={`/guides/${g.slug}`}
-                className="group block bg-slate-50 border border-slate-200 p-6 sm:p-8 hover:bg-white hover:border-indigo-600 hover:shadow-md transition-all"
+                className="group block bg-slate-50 border border-slate-200 p-6 sm:p-8 hover:bg-white hover:border-orange-600 hover:shadow-md transition-all"
               >
-                <div className="flex items-center justify-center h-12 w-12 bg-gradient-to-br from-indigo-500 to-indigo-700 shadow-sm">
+                <div className="flex items-center justify-center h-12 w-12 bg-gradient-to-br from-orange-500 to-orange-700 shadow-sm">
                   <Download className="h-6 w-6 text-white" />
                 </div>
-                <p className="mt-5 text-xs font-bold uppercase tracking-wider text-indigo-700">
+                <p className="mt-5 text-xs font-bold uppercase tracking-wider text-orange-700">
                   {g.category}
                 </p>
-                <h2 className="mt-2 text-xl font-bold text-slate-900 group-hover:text-indigo-700 transition-colors leading-snug">
+                <h2 className="mt-2 text-xl font-bold text-slate-900 group-hover:text-orange-700 transition-colors leading-snug">
                   {g.title}
                 </h2>
                 <p className="mt-3 text-sm text-slate-600 leading-relaxed">{g.teaser}</p>
-                <div className="mt-5 flex items-center text-indigo-600 font-semibold text-sm">
+                <div className="mt-5 flex items-center text-orange-600 font-semibold text-sm">
                   Get the guide
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </div>

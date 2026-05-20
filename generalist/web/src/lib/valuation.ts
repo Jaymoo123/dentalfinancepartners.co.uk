@@ -111,10 +111,10 @@ export function formatGbpCompact(n: number): string {
 export function typeLabel(type: ValuationType): string {
   switch (type) {
     case "generalist":
-      return "Generalist agency";
+      return "Generalist service business";
     case "specialist":
-      return "Specialist agency";
+      return "Specialist service business";
     case "premium":
-      return "Premium / boutique agency";
+      return "Premium / boutique business";
   }
 }

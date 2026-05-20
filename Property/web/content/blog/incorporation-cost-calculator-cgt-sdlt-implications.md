@@ -18,7 +18,7 @@ faqs:
   - question: "Can I avoid CGT when transferring properties to my company?"
     answer: "CGT isn't usually avoidable, but holdover relief may defer it if strict conditions are met. The company must typically be trading rather than just property investment. Even with relief, you're deferring rather than eliminating the tax liability."
   - question: "Should I incorporate all properties at once or spread transfers over time?"
-    answer: "Staged incorporation can spread costs across tax years and use multiple CGT annual exemptions, but creates complexity with mixed ownership. The optimal approach depends on your tax position, cash flow, and portfolio structure. Professional modeling helps identify the best timing."
+    answer: "Staged incorporation can spread costs across tax years and use multiple CGT annual exemptions, but creates complexity with mixed ownership. The optimal approach depends on your tax position, cash flow, and portfolio structure. Professional modelling helps identify the best timing."
   - question: "Do the incorporation costs make it unviable for smaller landlords?"
     answer: "For portfolios under £300,000 or landlords with minimal rental profits, incorporation costs often exceed medium-term tax savings. The higher the proportion of debt financing and the lower the capital gains, the less attractive incorporation typically becomes."
 ---
@@ -87,16 +87,16 @@ faqs:
 <h2>Holdover Relief and Its Limitations</h2>
 
 <p>Holdover relief can defer CGT when transferring property to your company, but it's not automatic and has strict conditions. Your incorporation cost calculator should model both immediate CGT payment and holdover scenarios.</p>
-<p>The relief typically applies when you transfer properties in exchange for shares, but HMRC scrutinizes these arrangements closely. The company must be trading (not just property investment), and the relief may not cover the full gain if the company has investment activities.</p>
+<p>The relief typically applies when you transfer properties in exchange for shares, but HMRC scrutinises these arrangements closely. The company must be trading (not just property investment), and the relief may not cover the full gain if the company has investment activities.</p>
 <p>Even with holdover relief, you're only deferring tax—not eliminating it. The deferred gain reduces your share cost basis, creating future CGT when you eventually sell the shares.</p>
 
 <h2>Professional Calculation vs DIY Tools</h2>
 
-<p>While basic <a href="/calculators">calculators</a> help with initial estimates, property incorporation involves numerous variables that simple tools can't capture. Professional modeling typically reveals planning opportunities that significantly affect the numbers. Professional advice is essential here—a specialist can identify reliefs and planning opportunities that generic calculators miss.</p>
+<p>While basic <a href="/calculators">calculators</a> help with initial estimates, property incorporation involves numerous variables that simple tools can't capture. Professional modelling typically reveals planning opportunities that significantly affect the numbers. Professional advice is essential here—a specialist can identify reliefs and planning opportunities that generic calculators miss.</p>
 <p>A specialist might identify:</p>
 <ul>
 <li>Alternative transfer structures that reduce immediate costs</li>
-<li>Timing opportunities to optimize tax positions</li>
+<li>Timing opportunities to optimise tax positions</li>
 <li>Mixed personal/company ownership structures</li>
 <li>Long-term extraction strategies that affect overall returns</li>
 </ul>
@@ -119,7 +119,7 @@ faqs:
 </ul>
 <p>For many landlords, the 10-year view shows incorporation benefits despite high upfront costs. Others find that personal ownership remains more efficient even with Section 24 restrictions.</p>
 <p>The key is running accurate calculations based on your specific circumstances rather than general rules of thumb. Property portfolios, tax positions, and investment strategies vary significantly between landlords.</p>
-<p>Given the complexity and high stakes involved, we typically recommend professional modeling before making incorporation decisions. The upfront investment in quality advice often saves multiples of the cost through optimized structures and timing.</p>
+<p>Given the complexity and high stakes involved, we typically recommend professional modelling before making incorporation decisions. The upfront investment in quality advice often saves multiples of the cost through optimised structures and timing.</p>
 
 <h2>Related Reading</h2>
 <ul>

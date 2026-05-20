@@ -14,8 +14,8 @@ export const UK_TAX_RATES = {
   taxYearEnd: "2026-04-05",
   lastUpdated: "2026-05-17",
   publisher: {
-    name: "Agency Founder Finance",
-    url: "https://www.ukbusinessaccountants.co.uk",
+    name: "Holloway Davies",
+    url: "https://www.hollowaydavies.co.uk",
   },
   corporationTax: {
     smallProfitsRate: 0.19,
@@ -194,7 +194,7 @@ export const UK_TAX_RATES = {
   licence: {
     name: "CC BY 4.0",
     url: "https://creativecommons.org/licenses/by/4.0/",
-    note: "Attribution: Agency Founder Finance, https://www.ukbusinessaccountants.co.uk/uk-tax-rates",
+    note: "Attribution: Holloway Davies, https://www.hollowaydavies.co.uk/uk-tax-rates",
   },
 } as const;
 

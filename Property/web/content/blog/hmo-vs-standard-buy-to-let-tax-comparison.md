@@ -14,7 +14,7 @@ summary: "Comparing HMO tax advantages against standard buy-to-let properties, c
 schema: ""
 faqs:
   - question: "Are HMO licensing fees tax deductible?"
-    answer: "Yes, HMO licensing fees are fully deductible business expenses. This includes mandatory HMO licenses, additional HMO licenses, and selective licensing fees. The costs are deducted against your rental income, providing tax relief at your marginal rate."
+    answer: "Yes, HMO licensing fees are fully deductible business expenses. This includes mandatory HMO licences, additional HMO licences, and selective licensing fees. The costs are deducted against your rental income, providing tax relief at your marginal rate."
   - question: "Do HMOs pay business rates or council tax?"
     answer: "HMOs typically pay business rates rather than council tax, especially where tenants have separate tenancy agreements and share communal facilities. Business rates are paid by the landlord and qualify as fully deductible expenses, unlike council tax in standard rentals which provides no tax relief."
   - question: "Can I claim higher expenses on HMO properties?"
@@ -39,8 +39,8 @@ faqs:
 <p>HMO licensing fees and associated compliance costs create different tax positions compared to standard properties.</p>
 <p><strong>HMO Licensing Costs (Deductible):</strong></p>
 <ul>
-<li>Mandatory HMO license fees (£500-£1,500 depending on local authority)</li>
-<li>Additional HMO license fees for smaller properties</li>
+<li>Mandatory HMO licence fees (£500-£1,500 depending on local authority)</li>
+<li>Additional HMO licence fees for smaller properties</li>
 <li>Fire safety compliance costs</li>
 <li>Regular safety inspections</li>
 <li>Professional HMO management fees</li>
@@ -127,7 +127,7 @@ faqs:
 </ul>
 
 <h2>Capital Gains Tax and Making Tax Digital</h2>
-<p>Both property types face identical <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax treatment</a> on disposal, with rates of 18% (basic rate) and 24% (higher rate) taxpayers. However, HMOs may achieve better capital growth due to higher rental yields and potential for value-add improvements through room optimization or HMO conversion work.</p>
+<p>Both property types face identical <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax treatment</a> on disposal, with rates of 18% (basic rate) and 24% (higher rate) taxpayers. However, HMOs may achieve better capital growth due to higher rental yields and potential for value-add improvements through room optimisation or HMO conversion work.</p>
 <p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becomes mandatory</a> for landlords with gross property income over £10,000. HMOs' more complex accounting requirements may necessitate professional bookkeeping support earlier than standard rentals.</p>
 <h3>Record-Keeping Requirements</h3>
 <p>HMOs require more detailed record-keeping due to:</p>

@@ -59,7 +59,7 @@ export default function CookiePolicyPage() {
           </li>
         </ul>
         <p>
-          Google Analytics collects information such as pages visited, time spent on pages, browser type, device type, and referral source. IP addresses are anonymized. Data is retained for 14 months.
+          Google Analytics collects information such as pages visited, time spent on pages, browser type, device type, and referral source. IP addresses are anonymised. Data is retained for 14 months.
         </p>
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">2. Purpose of cookies</h2>

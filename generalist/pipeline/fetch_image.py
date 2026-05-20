@@ -25,19 +25,20 @@ def _api_key():
 
 
 CATEGORY_FALLBACK_QUERIES = {
-    "Agency Finance Essentials": "modern office desk laptop",
-    "Tax and Compliance": "uk paperwork desk accountant",
-    "Salary and Dividends": "office finance meeting",
-    "Incorporation and Structure": "office handshake business",
-    "Growth and Exit": "business growth meeting office",
-    "Contractors and IR35": "freelancer laptop coworking",
-    "Agency Accountant Services": "accountant consultation office",
-    "Making Tax Digital": "digital tax computer laptop",
-    "International Agencies": "international office skyline",
+    "Limited Company Tax": "uk business office laptop documents",
+    "Sole Trader and Self Employment": "freelancer laptop home office uk",
+    "VAT and Making Tax Digital": "digital tax computer laptop",
+    "Payroll and PAYE": "office payroll laptop calculator",
+    "Corporation Tax": "uk paperwork desk accountant",
+    "R&D Tax Credits": "modern tech office team working",
+    "Incorporation and Structure": "office handshake business meeting",
+    "Exit and Capital Gains": "business meeting handshake office",
+    "Bookkeeping and Compliance": "modern office desk laptop spreadsheet",
+    "Director Pay and Dividends": "office finance meeting laptop",
 }
 
 
-GENERIC_QUERY = "marketing agency office uk"
+GENERIC_QUERY = "uk small business office laptop"
 
 
 def build_query(topic_text, category=None):

@@ -106,12 +106,12 @@ faqs:
 
 <h2>Strategies to Manage the Mortgage Interest Restriction</h2>
 
-<p>While the Section 24 restriction cannot be avoided for individual landlords, several strategies can help minimize its impact:</p>
+<p>While the Section 24 restriction cannot be avoided for individual landlords, several strategies can help minimise its impact:</p>
 <h3>Portfolio Restructuring</h3>
 <p>Consider whether <a href="/incorporation">incorporation into a limited company</a> structure makes sense for your circumstances. Companies avoid Section 24 entirely and may offer better overall tax efficiency for higher-rate taxpayers.</p>
 <h3>Income Smoothing</h3>
 <p>Where possible, consider timing of rental income and expenses to manage total income levels. This might involve deferring rent increases or accelerating allowable expenses.</p>
-<h3>Joint Ownership Optimization</h3>
+<h3>Joint Ownership Optimisation</h3>
 <p>When properties are owned jointly, mortgage interest relief is typically split according to the ownership proportion. Each owner receives their share of the 20% tax credit based on their portion of the mortgage interest paid. For married couples or civil partners, there may be opportunities to optimise the ownership split to minimise the overall tax impact, particularly where one partner has lower income than the other.</p>
 
 <h2>Professional Support for Complex Cases</h2>

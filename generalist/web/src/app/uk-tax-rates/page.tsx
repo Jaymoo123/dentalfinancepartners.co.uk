@@ -7,14 +7,14 @@ import { JsonLd, buildDataset, buildBreadcrumb } from "@/lib/schema";
 const pageUrl = `${siteConfig.url.replace(/\/$/, "")}/uk-tax-rates`;
 
 export const metadata: Metadata = {
-  title: "UK Tax Rates 2025/26, Reference for Agency Founders",
+  title: "UK Tax Rates 2025/26, Reference for UK Business Owners",
   description:
-    "Canonical 2025/26 UK tax rates: corporation tax, dividend tax, BADR, CGT, VAT, R&D, MTD ITSA dates, NI, pensions and IHT. Updated and citable. Plain-English notes for agency founders.",
+    "Canonical 2025/26 UK tax rates: corporation tax, dividend tax, BADR, CGT, VAT, R&D, MTD ITSA dates, NI, pensions and IHT. Updated and citable. Plain-English notes for UK business owners.",
   alternates: { canonical: pageUrl },
   openGraph: {
-    title: "UK Tax Rates 2025/26, Agency Founder Finance",
+    title: "UK Tax Rates 2025/26, Holloway Davies",
     description:
-      "Machine-readable reference of every UK tax rate an agency founder needs in 2025/26.",
+      "Machine-readable reference of every UK tax rate a UK business owner needs in 2025/26.",
     url: pageUrl,
     type: "article",
   },
@@ -49,7 +49,7 @@ function Section({
   return (
     <section id={id} className="scroll-mt-24 mb-12">
       <h2 className="text-2xl font-bold text-slate-900 mb-4">
-        <Link href={`#${id}`} className="hover:text-indigo-600">
+        <Link href={`#${id}`} className="hover:text-orange-600">
           {title}
         </Link>
       </h2>
@@ -64,7 +64,7 @@ export default function UkTaxRatesPage() {
   const r = UK_TAX_RATES;
 
   const dataset = buildDataset({
-    name: "UK Tax Rates 2025/26 (Agency Founder Finance reference)",
+    name: "UK Tax Rates 2025/26 (Holloway Davies reference)",
     description:
       "Canonical machine-readable UK tax rates for the 2025/26 tax year: corporation tax, dividend tax, income tax, NI, CGT, BADR, VAT, R&D, MTD ITSA, pensions, IHT. Maintained and citable.",
     path: "/uk-tax-rates",
@@ -80,7 +80,8 @@ export default function UkTaxRatesPage() {
       "VAT",
       "R&D tax credits",
       "MTD ITSA",
-      "agency founder tax",
+      "UK business tax",
+      "limited company tax",
     ],
     license: r.licence.url,
     spatialCoverage: "United Kingdom",
@@ -95,27 +96,28 @@ export default function UkTaxRatesPage() {
     <main className="mx-auto max-w-4xl px-6 py-12">
       <JsonLd data={[dataset, breadcrumb]} />
       <header className="mb-10">
-        <p className="text-sm font-semibold uppercase tracking-wider text-indigo-600">
+        <p className="text-sm font-semibold uppercase tracking-wider text-orange-600">
           Reference · Tax year {r.taxYear} · Updated {r.lastUpdated}
         </p>
         <h1 className="mt-2 text-4xl font-bold text-slate-900">UK Tax Rates 2025/26</h1>
         <p className="mt-4 text-lg text-slate-700">
-          Canonical, citable reference of every UK tax rate an agency founder needs in 2025/26.
-          Maintained by Agency Founder Finance.{" "}
+          Canonical, citable reference of every UK tax rate a limited company director,
+          contractor, sole trader, partnership owner or small business owner needs in 2025/26.
+          Maintained by Holloway Davies.{" "}
           <Link
             href="/api/uk-tax-rates.json"
-            className="text-indigo-600 underline hover:text-indigo-800"
+            className="text-orange-600 underline hover:text-orange-800"
           >
             Machine-readable JSON
           </Link>
           {" · "}
-          <Link href="#sources" className="text-indigo-600 underline hover:text-indigo-800">
+          <Link href="#sources" className="text-orange-600 underline hover:text-orange-800">
             Primary sources
           </Link>
         </p>
         <div className="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
           <strong>Editorial:</strong> figures are provided as reference only. For decisions
-          specific to your agency,{" "}
+          specific to your business,{" "}
           <Link href="/contact" className="underline">
             book a call
           </Link>
@@ -246,7 +248,7 @@ export default function UkTaxRatesPage() {
                 href={s.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-indigo-600 underline hover:text-indigo-800"
+                className="text-orange-600 underline hover:text-orange-800"
               >
                 {s.title}
               </a>{" "}

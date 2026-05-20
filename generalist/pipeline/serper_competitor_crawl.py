@@ -35,15 +35,28 @@ OUT_SUMMARY = ROOT / "seo-research" / "serper-competitor-summary.csv"
 
 SERPER_KEY = os.getenv("SERPER_API_KEY")
 
-# Direct competitors identified from earlier Serper SERP analysis.
-# Add/remove freely.
+# Direct UK generalist accountancy competitors.
+# - Online accountants: Crunch, Mazuma, TaxAssist, Boox, Gorilla, The Accountancy,
+#   Accounting-Wise (a-wise.co.uk), FastAccountant
+# - Traditional generalist firms: Haines Watts (hwca.com)
+# - Software/learn hubs that rank for cornerstone UK Ltd / sole-trader queries:
+#   FreeAgent, GoSimpleTax
+# - Company formation + filing hub: 1stFormations
+# The four added (gorillaaccounting, theaccountancy, a-wise, 1stformations) each
+# appeared 10-14 times in the seed SERPs we already captured.
 COMPETITORS = [
-    "sidekickaccounting.co.uk",
-    "fusionaccountants.co.uk",
-    "alto-accounting.com",
-    "leonandcompany.co.uk",
-    "davidhoward.co.uk",
-    "shmsltd.com",
+    "crunch.co.uk",
+    "mazumamoney.co.uk",
+    "taxassist.co.uk",
+    "boox.co.uk",
+    "freeagent.com",
+    "hwca.com",
+    "gosimpletax.com",
+    "fastaccountant.co.uk",
+    "gorillaaccounting.com",
+    "theaccountancy.co.uk",
+    "a-wise.co.uk",
+    "1stformations.co.uk",
 ]
 
 # How many pages of results to pull per competitor (each page = ~10 results).
@@ -67,18 +80,22 @@ def serper(q, page=1):
 def classify_topic(title, url):
     """Crude topic classification — useful for the per-competitor summary."""
     t = (title + " " + url).lower()
+    # Order matters: more specific rules first so a CIS/R&D page doesn't get
+    # caught by the broad "Tax/Compliance" rule.
     rules = [
-        ("VAT", ["vat ", "/vat", "flat rate"]),
-        ("IR35", ["ir35", "off-payroll", "off payroll"]),
-        ("Tax/Compliance", ["corporation tax", "self assessment", "hmrc", "tax return"]),
-        ("Salary/Dividends", ["salary", "dividend", "pay yourself"]),
-        ("Incorporation", ["incorporat", "limited compan", "sole trader"]),
-        ("Exit/Growth", ["exit ", "selling", "buyout", "badr", "goodwill"]),
+        ("R&D", ["r&d", "r and d", "research and development", "rdec"]),
         ("MTD", ["mtd", "making tax digital"]),
-        ("R&D", ["r&d", "r and d", "research and development"]),
-        ("Bookkeeping/Software", ["bookkeep", "xero", "quickbooks", "freeagent", "software"]),
-        ("Agency-finance", ["agency", "agencies"]),
-        ("Cash flow/P&L", ["cash flow", "p&l", "profit and loss", "margin"]),
+        ("VAT", ["vat ", "/vat", "flat rate", "reverse charge"]),
+        ("IR35", ["ir35", "off-payroll", "off payroll"]),
+        ("Payroll/PAYE", ["payroll", " paye", "p11d", "p60", "p45", "cis "]),
+        ("Director Pay/Dividends", ["dividend", "pay yourself", "directors loan", "directors' loan", "trivial benefit"]),
+        ("Incorporation/Structure", ["incorporat", "limited compan", "sole trader", "company formation", "holding company", "family investment company"]),
+        ("Exit/CGT", ["exit ", "selling", "badr", "business asset disposal", "capital gains", "cgt", "mvl", "members voluntary"]),
+        ("Corporation Tax", ["corporation tax", "ct600", "marginal relief", "annual investment allowance"]),
+        ("Self Assessment", ["self assessment", "self-assessment", "tax return"]),
+        ("Bookkeeping/Software", ["bookkeep", "xero", "quickbooks", "freeagent", "sage ", "software", "dext"]),
+        ("Compliance/HMRC", ["hmrc", "companies house", "confirmation statement", "annual accounts"]),
+        ("Pricing/Services", ["pricing", "fees", "cost of", "how much"]),
     ]
     matched = [name for name, kws in rules if any(k in t for k in kws)]
     return matched[0] if matched else "Other"

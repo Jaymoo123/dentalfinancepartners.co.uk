@@ -28,6 +28,7 @@ export function SignupForm({
   const [website, setWebsite] = useState("");
   const [state, setState] = useState<"idle" | "submitting" | "ok" | "err">("idle");
   const [error, setError] = useState<string | null>(null);
+  const [mode, setMode] = useState<"confirm-required" | "collect-only" | null>(null);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -52,6 +53,8 @@ export function SignupForm({
         const j = await res.json().catch(() => ({}));
         throw new Error(j?.error || "Subscription failed");
       }
+      const j = await res.json().catch(() => ({}));
+      setMode(j?.mode === "collect-only" ? "collect-only" : "confirm-required");
       setState("ok");
       setEmail("");
     } catch (err) {
@@ -68,10 +71,15 @@ export function SignupForm({
         : "";
 
   if (state === "ok") {
+    const headline = mode === "collect-only" ? "You’re on the list." : "Thanks. Almost done.";
+    const body =
+      mode === "collect-only"
+        ? "We’ll email you as soon as the first edition goes out."
+        : successMessage;
     return (
       <div className={containerClass} role="status" aria-live="polite">
-        <p className="text-base font-medium text-neutral-900">Thanks. Almost done.</p>
-        <p className="mt-2 text-sm text-neutral-600">{successMessage}</p>
+        <p className="text-base font-medium text-neutral-900">{headline}</p>
+        <p className="mt-2 text-sm text-neutral-600">{body}</p>
       </div>
     );
   }

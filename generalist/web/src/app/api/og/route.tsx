@@ -4,11 +4,11 @@ import type { NextRequest } from "next/server";
 export const runtime = "edge";
 
 const BRAND_COLOR = "#4f46e5";
-const BRAND_NAME = "Agency Founder Finance";
+const BRAND_NAME = "Holloway Davies";
 
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl;
-  const title = searchParams.get("title") ?? "Agency Founder Finance";
+  const title = searchParams.get("title") ?? "Holloway Davies";
   const category = searchParams.get("category") ?? "";
 
   return new ImageResponse(
@@ -78,7 +78,7 @@ export async function GET(req: NextRequest) {
               color: "#64748b",
             }}
           >
-            ukbusinessaccountants.co.uk
+            hollowaydavies.co.uk
           </span>
         </div>
         <div

@@ -66,6 +66,7 @@ DATAFORSEO_COSTS: dict[str, dict[str, Any]] = {
     "keyword_suggestions/live": {"base": 0.01, "per_row": 0.0001},
     "related_keywords/live":    {"base": 0.01, "per_row": 0.0001},
     "keyword_ideas/live":       {"base": 0.01, "per_row": 0.0001},
+    "keywords_for_site/live":   {"base": 0.01, "per_row": 0.0001},
     "bulk_keyword_difficulty/live": {"base": 0.01, "per_row": 0.0},  # flat per task up to 1000 kw
     "competitors_domain/live":  {"base": 0.05, "per_row": 0.0},
     "ranked_keywords/live":     {"base": 0.01, "per_row": 0.0001},

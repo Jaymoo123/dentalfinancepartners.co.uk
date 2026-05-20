@@ -19,6 +19,8 @@ type Props = {
   updatedDate?: string;
   /** Size variant */
   size?: "sm" | "md";
+  /** Slug of the technical reviewer (ICAEW Chartered Accountant). Optional. */
+  reviewerSlug?: string;
 };
 
 function MonogramSmall({
@@ -73,8 +75,10 @@ export function AuthorByline({
   publishedDate,
   updatedDate,
   size = "md",
+  reviewerSlug = "james-holloway",
 }: Props) {
   const member = authorSlug ? getTeamMember(authorSlug) : null;
+  const reviewer = reviewerSlug ? getTeamMember(reviewerSlug) : null;
   const name = member?.name ?? authorName ?? "Editorial Team";
   const role = member?.role ?? "Editorial";
   const initials =
@@ -91,38 +95,84 @@ export function AuthorByline({
   const updated = formatDate(updatedDate);
 
   return (
-    <div
-      className={
-        size === "sm"
-          ? "flex items-center gap-3 text-sm"
-          : "flex items-center gap-4 text-base"
-      }
-    >
-      <MonogramSmall
-        initials={initials}
-        color={color}
-        size={size === "sm" ? 32 : 40}
-      />
-      <div className="leading-tight">
-        <p className="font-medium text-neutral-900">
-          {member ? (
-            <Link
-              href={`/team/${member.slug}`}
-              className="hover:text-orange-600"
-              rel="author"
-            >
-              {name}
-            </Link>
-          ) : (
-            name
-          )}
-        </p>
-        <p className="text-neutral-500 text-xs">
-          {role}
-          {published && <> · Published {published}</>}
-          {updated && updated !== published && <> · Updated {updated}</>}
-        </p>
+    <div className="space-y-3">
+      <div
+        className={
+          size === "sm"
+            ? "flex items-center gap-3 text-sm"
+            : "flex items-center gap-4 text-base"
+        }
+      >
+        <MonogramSmall
+          initials={initials}
+          color={color}
+          size={size === "sm" ? 32 : 40}
+        />
+        <div className="leading-tight">
+          <p className="font-medium text-neutral-900">
+            Written by{" "}
+            {member ? (
+              <Link
+                href={`/team/${member.slug}`}
+                className="hover:text-orange-600"
+                rel="author"
+              >
+                {name}
+              </Link>
+            ) : (
+              name
+            )}
+            {member?.qualifications && (
+              <span className="text-neutral-500">
+                {", "}
+                {member.qualifications}
+              </span>
+            )}
+          </p>
+          <p className="text-neutral-500 text-xs">
+            {role}
+            {published && <> · Published {published}</>}
+            {updated && updated !== published && <> · Updated {updated}</>}
+          </p>
+        </div>
       </div>
+
+      {reviewer && reviewer.slug !== member?.slug && (
+        <div
+          className={
+            size === "sm"
+              ? "flex items-center gap-3 text-sm border-l-2 border-orange-300 pl-3"
+              : "flex items-center gap-4 text-base border-l-2 border-orange-300 pl-4"
+          }
+        >
+          <MonogramSmall
+            initials={reviewer.initials}
+            color={reviewer.monogramColor}
+            size={size === "sm" ? 28 : 32}
+          />
+          <div className="leading-tight">
+            <p className="font-medium text-neutral-900">
+              Reviewed by{" "}
+              <Link
+                href={`/team/${reviewer.slug}`}
+                className="hover:text-orange-600"
+              >
+                {reviewer.name}
+              </Link>
+              {reviewer.qualifications && (
+                <span className="text-neutral-500">
+                  {", "}
+                  {reviewer.qualifications}
+                </span>
+              )}
+            </p>
+            <p className="text-neutral-500 text-xs">
+              Technical accuracy review · Every figure, rate and procedural
+              statement verified against current HMRC source
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

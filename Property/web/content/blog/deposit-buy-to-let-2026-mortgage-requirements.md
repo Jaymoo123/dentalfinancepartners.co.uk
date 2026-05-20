@@ -137,7 +137,7 @@ faqs:
 
 <h2>Planning Your BTL Investment Strategy</h2>
 
-<p>When determining your optimal deposit amount, consider your broader investment strategy and <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">tax position</a>. Some investors prefer minimum deposits to maximize leverage, while others use higher deposits to improve cash flow and reduce risk.</p>
+<p>When determining your optimal deposit amount, consider your broader investment strategy and <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">tax position</a>. Some investors prefer minimum deposits to maximise leverage, while others use higher deposits to improve cash flow and reduce risk.</p>
 
 <p>Key strategic considerations include:</p>
 
@@ -148,4 +148,4 @@ faqs:
 <li><strong>Tax efficiency:</strong> How do borrowing costs fit with your tax position?</li>
 </ul>
 
-<p>Given the complexity of BTL taxation and the upcoming changes to property income tax rates, many investors benefit from specialist advice on structuring their investments efficiently. <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Property accountants</a> can help model different scenarios and optimize your approach.</p>
+<p>Given the complexity of BTL taxation and the upcoming changes to property income tax rates, many investors benefit from specialist advice on structuring their investments efficiently. <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Property accountants</a> can help model different scenarios and optimise your approach.</p>

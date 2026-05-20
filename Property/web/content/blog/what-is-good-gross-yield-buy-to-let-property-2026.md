@@ -111,10 +111,10 @@ faqs:
 
 <p>If your existing properties aren't meeting yield expectations, several strategies can help improve returns:</p>
 <ul>
-<li><strong>Rental Optimization:</strong> Regular rent reviews ensure you're achieving market rates. Professional lettings agents can advise on competitive rental levels in your area.</li>
+<li><strong>Rental Optimisation:</strong> Regular rent reviews ensure you're achieving market rates. Professional lettings agents can advise on competitive rental levels in your area.</li>
 <li><strong>Value-Added Improvements:</strong> Strategic improvements like additional bedrooms, modern kitchens, or energy efficiency upgrades can justify higher rents while potentially qualifying for <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">tax-deductible expenses</a>.</li>
-<li><strong>Reducing Void Periods:</strong> Maintaining properties in good condition and pricing competitively reduces void periods, effectively improving yields by maximizing rental collection.</li>
-<li><strong>Cost Management:</strong> Regular property maintenance prevents expensive emergency repairs. Consider whether <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">professional property accountancy services</a> could optimize your tax position and reduce overall costs.</li>
+<li><strong>Reducing Void Periods:</strong> Maintaining properties in good condition and pricing competitively reduces void periods, effectively improving yields by maximising rental collection.</li>
+<li><strong>Cost Management:</strong> Regular property maintenance prevents expensive emergency repairs. Consider whether <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">professional property accountancy services</a> could optimise your tax position and reduce overall costs.</li>
 </ul>
 
 <h2>Long-Term Yield Considerations</h2>
@@ -123,4 +123,4 @@ faqs:
 
 <p>Factor in the total return potential, including both rental income and capital growth. A balanced approach typically involves targeting gross yields that provide adequate cash flow while maintaining capital preservation and growth prospects.</p>
 
-<p>For investors building substantial portfolios, understanding <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">comprehensive property investment tax implications</a> becomes crucial for optimizing overall returns.</p>
+<p>For investors building substantial portfolios, understanding <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">comprehensive property investment tax implications</a> becomes crucial for optimising overall returns.</p>

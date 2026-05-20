@@ -16,7 +16,7 @@ faqs:
   - question: "How much does a property accountant cost in Stockport?"
     answer: "Property accountant fees in Stockport typically range from £150-400 per property annually, depending on complexity. Basic services for straightforward buy-to-let properties cost less, while HMOs, serviced accommodation, or company structures require more work. Most landlords find the tax savings and compliance benefits outweigh these costs, particularly for portfolios with three or more properties."
   - question: "What's the difference between a general accountant and a property accountant?"
-    answer: "Property accountants specialize in landlord taxation and understand complex rules like Section 24, MTD requirements, and CGT planning strategies. General accountants handle various business types but may lack deep property knowledge. Property specialists also understand local market factors, rental regulations, and can provide strategic portfolio advice that general practitioners typically cannot match."
+    answer: "Property accountants specialise in landlord taxation and understand complex rules like Section 24, MTD requirements, and CGT planning strategies. General accountants handle various business types but may lack deep property knowledge. Property specialists also understand local market factors, rental regulations, and can provide strategic portfolio advice that general practitioners typically cannot match."
   - question: "Do I need a property accountant if I only have one rental property?"
     answer: "For single property landlords with straightforward arrangements, a general accountant might suffice initially. However, if you're considering expansion, have a mortgage, face higher-rate tax, or need MTD compliance from 2026, a property specialist becomes valuable. They can also advise on timing additional purchases and optimal structuring from the start."
   - question: "When should Stockport landlords consider incorporating their property business?"
@@ -29,7 +29,7 @@ faqs:
 
 <h2>What Makes Property Taxation Different in Stockport?</h2>
 
-<p>Stockport's diverse property mix creates unique accounting challenges. The borough includes everything from Victorian terraces converted into student accommodation near Stockport College, to modern apartment developments in the town center, and family homes in areas like Bramhall and Cheadle Hulme.</p>
+<p>Stockport's diverse property mix creates unique accounting challenges. The borough includes everything from Victorian terraces converted into student accommodation near Stockport College, to modern apartment developments in the town centre, and family homes in areas like Bramhall and Cheadle Hulme.</p>
 
 <p>Each property type brings different tax considerations:</p>
 
@@ -56,9 +56,9 @@ faqs:
 <p>Effective <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT planning strategies</a> include timing disposals across tax years to utilise annual exemptions, spouse transfers to use both annual allowances, Principal Private Residence relief claims where applicable, and lettings relief for former main residences. A specialist property accountant maintains detailed records of improvement costs, which can reduce CGT liabilities significantly.</p>
 
 <h3>Limited Company Incorporation</h3>
-<p>Many Stockport landlords are considering <a href="/incorporation">incorporation</a> to avoid Section 24 restrictions. Company structures aren't affected by the mortgage interest cap, and corporation tax rates (19% on profits up to £250,000) can be more favorable than personal income tax rates.</p>
-<p>However, incorporation isn't always the right answer. A property accountant should analyze your specific circumstances, considering current and projected rental income, existing mortgage arrangements, capital gains tax on transferring properties to a company, stamp duty costs, and ongoing compliance requirements.</p>
-<p>For example, a Stockport landlord with three properties generating £35,000 annual profit might save £2,100 per year through incorporation (assuming 40% personal tax rate versus 19% corporation tax). However, the transfer costs and ongoing complexity might outweigh these savings for smaller portfolios. <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Proper incorporation planning</a> requires detailed financial modeling.</p>
+<p>Many Stockport landlords are considering <a href="/incorporation">incorporation</a> to avoid Section 24 restrictions. Company structures aren't affected by the mortgage interest cap, and corporation tax rates (19% on profits up to £250,000) can be more favourable than personal income tax rates.</p>
+<p>However, incorporation isn't always the right answer. A property accountant should analyse your specific circumstances, considering current and projected rental income, existing mortgage arrangements, capital gains tax on transferring properties to a company, stamp duty costs, and ongoing compliance requirements.</p>
+<p>For example, a Stockport landlord with three properties generating £35,000 annual profit might save £2,100 per year through incorporation (assuming 40% personal tax rate versus 19% corporation tax). However, the transfer costs and ongoing complexity might outweigh these savings for smaller portfolios. <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Proper incorporation planning</a> requires detailed financial modelling.</p>
 
 <h2>Making Tax Digital (MTD) Compliance</h2>
 <p>From April 2026, Stockport landlords with gross rental income above £10,000 must comply with Making Tax Digital rules. This means quarterly digital record-keeping and submissions to HMRC, replacing the traditional annual tax return process.</p>
@@ -72,7 +72,7 @@ faqs:
 
 <h2>Choosing the Right Property Accountant</h2>
 <p>Not all accountants are created equal when it comes to property taxation. <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">Key selection criteria</a> include:</p>
-<p><strong>Specialization:</strong> Look for accountants who focus primarily on property clients rather than general practice.</p>
+<p><strong>Specialisation:</strong> Look for accountants who focus primarily on property clients rather than general practice.</p>
 <p><strong>Qualifications:</strong> Ensure they're qualified (ACA, ACCA, or CIMA) and registered with a professional body.</p>
 <p><strong>Technology:</strong> Confirm they use modern, MTD-compliant software systems, which may include mobile apps for recording expenses, automated bank feed integration, real-time profit and loss reporting, and digital document storage.</p>
 <p><strong>Service Scope and Cost:</strong> Understand exactly what services are included. Professional property accounting services represent an investment, but one that typically pays for itself through tax savings and compliance efficiency. <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">Typical costs</a> range from £150-400 per property annually, depending on complexity. Consider the value beyond pure cost savings: time savings, reduced HMRC investigation risk, strategic advice impacting long-term wealth, and peace of mind.</p>
@@ -81,4 +81,4 @@ faqs:
 <h2>Future-Proofing Your Property Tax Strategy</h2>
 <p>Tax legislation continues evolving, with significant changes ahead. From April 2027, property income will be taxed at separate rates (22% basic, 42% higher, 47% additional rate), potentially increasing tax burdens further. Other potential changes on the horizon include further restrictions on mortgage interest relief, changes to capital gains tax rates or allowances, new environmental or energy efficiency requirements, and additional licensing requirements for rental properties. A specialist property accountant monitors legislative developments and adjusts strategies proactively.</p>
 
-<p>For Stockport landlords navigating an increasingly complex tax landscape, partnering with a specialist property accountant isn't just helpful—it's essential for long-term success. The expertise, local knowledge, and strategic guidance they provide typically far outweigh the associated costs, while ensuring compliance and optimizing your property investment returns.</p>
+<p>For Stockport landlords navigating an increasingly complex tax landscape, partnering with a specialist property accountant isn't just helpful—it's essential for long-term success. The expertise, local knowledge, and strategic guidance they provide typically far outweigh the associated costs, while ensuring compliance and optimising your property investment returns.</p>

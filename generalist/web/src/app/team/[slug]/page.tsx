@@ -74,7 +74,7 @@ export default async function TeamMemberPage({ params }: Props) {
     <main className="mx-auto max-w-3xl px-6 py-12">
       <JsonLd data={person ? [person, breadcrumb] : [breadcrumb]} />
       <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate-600">
-        <Link href="/" className="hover:text-indigo-600">
+        <Link href="/" className="hover:text-orange-600">
           Home
         </Link>{" "}
         / <span>Team</span> /{" "}
@@ -111,8 +111,8 @@ export default async function TeamMemberPage({ params }: Props) {
 
       <section className="mt-10 rounded-lg border border-amber-200 bg-amber-50 p-5 text-sm text-amber-900">
         <strong>Editorial disclosure:</strong> articles on this site are editorial
-        content written and reviewed by the Agency Founder Finance team. They are
-        not personalised tax advice. For decisions specific to your agency,{" "}
+        content written and reviewed by the {siteConfig.name} team. They are
+        not personalised tax advice. For decisions specific to your business,{" "}
         <Link href="/contact" className="underline">
           book a call
         </Link>

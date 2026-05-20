@@ -44,17 +44,22 @@ COMPETITOR_CSV = ROOT / "seo-research" / "serper-competitor-titles.csv"
 OUT_CSV = ROOT / "seo-research" / "serper-gap-ideas.csv"
 
 
-SYSTEM_PROMPT = """You are a senior SEO content strategist for a UK specialist accountancy firm serving agency founders.
-You generate topic angles we are NOT covering, that fill gaps in our existing content based on what competitors are ranking for.
+SYSTEM_PROMPT = """You are a senior SEO content strategist for Holloway Davies,
+a generalist UK accountancy firm serving limited company directors, contractors,
+sole traders, partnerships and small businesses across every sector.
+
+You generate topic angles we are NOT covering, that fill gaps in our existing
+content based on what competitors are ranking for.
 
 Each idea must:
-- Be a specific long-tail informational topic an agency founder would search for
+- Be a specific long-tail topic a UK business owner, director or contractor would search for
 - Cover an angle that the competitors below haven't covered well (or that we can do better)
 - Avoid duplicating any of our existing topics listed
-- Be relevant to UK agency tax/finance/operations
+- Be relevant to UK business tax, accounting, compliance, payroll, VAT, R&D, incorporation or exit
 - Use a specific framing (question, how-to, scenario, comparison, numbered guide)
+- Reflect current UK 2025/26 tax law where relevant (MTD ITSA April 2026, BADR rate change April 2026, dividend allowance £500, etc.)
 
-You do not use AI cliches ("unlock", "navigate the complex", "in today's").
+You do not use em-dashes. You do not use AI cliches ("unlock", "navigate the complex", "in today's", "delve").
 """
 
 
@@ -150,7 +155,7 @@ def main():
 For each keyword group, generate 2 NEW topic ideas that:
 - Target the same keyword cluster from an angle the competitors don't cover well
 - Are not paraphrases of our existing topics
-- Use specific UK agency-finance framing
+- Use specific UK generalist business-tax framing (Ltd directors, contractors, sole traders, small businesses)
 
 CATEGORIES (use exact spelling):
 {categories_list}

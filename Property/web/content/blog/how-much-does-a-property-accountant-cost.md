@@ -113,7 +113,7 @@ faqs:
 <li><strong>HMRC enquiry support:</strong> £150-£400 per hour</li>
 <li><strong>Making Tax Digital compliance setup:</strong> £300-£800</li>
 <li><strong>Audit fees:</strong> £2,000-£5,000+ for larger property companies</li>
-<li><strong>Software licenses:</strong> £20-£100 per month for accounting platforms</li>
+<li><strong>Software licences:</strong> £20-£100 per month for accounting platforms</li>
 <li><strong>Detailed tax planning reviews:</strong> £500-£2,000</li>
 </ul>
 <p>Holiday let taxation and furnished holiday let elections typically add 20-30% to standard fees due to the additional complexity.</p>
@@ -150,7 +150,7 @@ faqs:
 <li><strong>Companies House filings:</strong> £13-£40 per company annually</li>
 <li><strong>Additional property acquisitions:</strong> £50-£200 per new property mid-year</li>
 <li><strong>Rush jobs:</strong> 25-50% surcharge for last-minute submissions</li>
-<li><strong>Bookkeeping catch-up:</strong> £400-£1,200 for disorganized records</li>
+<li><strong>Bookkeeping catch-up:</strong> £400-£1,200 for disorganised records</li>
 </ul>
 
 <h2>When to Hire and What to Expect</h2>

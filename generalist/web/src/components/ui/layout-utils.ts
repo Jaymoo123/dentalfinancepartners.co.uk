@@ -21,6 +21,10 @@ export const focusRing =
 export const btnPrimary =
   "inline-flex min-h-12 items-center justify-center bg-orange-500 px-7 py-3.5 text-sm font-medium text-white tracking-wide transition-colors duration-150 hover:bg-orange-600 active:bg-orange-700 disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500";
 
+/** Dark CTA: for use on orange / warm backgrounds where orange-on-orange would lack contrast. */
+export const btnOnOrange =
+  "inline-flex min-h-12 items-center justify-center bg-slate-900 px-7 py-3.5 text-sm font-medium text-white tracking-wide transition-colors duration-150 hover:bg-black active:bg-black disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white";
+
 /** Secondary CTA: outlined ink-on-offwhite. Fills with ink on hover. */
 export const btnSecondary =
   "inline-flex min-h-12 items-center justify-center border border-neutral-900 bg-transparent px-7 py-3.5 text-sm font-medium text-neutral-900 tracking-wide transition-colors duration-150 hover:bg-neutral-900 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500";

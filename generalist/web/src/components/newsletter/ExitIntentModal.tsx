@@ -68,8 +68,8 @@ export function ExitIntentModal() {
           variant="card"
           source="exit-intent"
           heading="Before you go"
-          body="One short email a week, UK + UAE tax for agency founders. Plain text, one CTA, unsubscribe one click. The first email lands today."
-          ctaLabel="Subscribe to the Tax Brief"
+          body="One short email a week on UK tax for limited companies, contractors and sole traders. Plain text, one CTA, unsubscribe one click. The first email lands today."
+          ctaLabel="Subscribe to the Director's Brief"
         />
         <button
           type="button"

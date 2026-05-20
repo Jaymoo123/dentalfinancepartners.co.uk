@@ -31,18 +31,19 @@ export function EmailLayout({ preview, children, unsubscribeUrl }: Props) {
       <Body style={body}>
         <Container style={container}>
           <Section style={header}>
-            <Text style={brand}>Agency Founder Finance</Text>
+            <Text style={brand}>Holloway Davies</Text>
           </Section>
           {children}
           <Hr style={hr} />
           <Section style={footer}>
             <Text style={footerText}>
-              Agency Founder Finance Ltd · UK & Dubai · Specialist accountants
-              for agency founders.
+              Holloway Davies Ltd · ICAEW qualified · Specialist
+              accountants for UK limited companies, contractors, sole traders
+              and partnerships.
             </Text>
             <Text style={footerText}>
-              <Link href="https://www.ukbusinessaccountants.co.uk" style={footerLink}>
-                ukbusinessaccountants.co.uk
+              <Link href="https://www.hollowaydavies.co.uk" style={footerLink}>
+                hollowaydavies.co.uk
               </Link>
               {unsubscribeUrl ? (
                 <>

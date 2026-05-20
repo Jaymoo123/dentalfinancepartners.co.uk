@@ -52,7 +52,7 @@ export default function PrivacyPolicyPage() {
             <strong>Contact form submissions:</strong> When you submit an enquiry through our contact form, we collect your full name, email address, phone number, role (e.g., individual landlord, portfolio owner), message content, and the URL of the page you submitted from.
           </li>
           <li>
-            <strong>Analytics data:</strong> We use Google Analytics to understand how visitors use our Site. This includes your IP address (anonymized), browser type, device type, pages visited, time spent on pages, and referral source. Google Analytics uses cookies to collect this information.
+            <strong>Analytics data:</strong> We use Google Analytics to understand how visitors use our Site. This includes your IP address (anonymised), browser type, device type, pages visited, time spent on pages, and referral source. Google Analytics uses cookies to collect this information.
           </li>
           <li>
             <strong>Technical data:</strong> Our hosting provider (Vercel) may log your IP address, browser type, and request data for security and performance purposes.
@@ -75,7 +75,7 @@ export default function PrivacyPolicyPage() {
 
         <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">4. How we store and protect your data</h2>
         <p>
-          <strong>Contact form submissions</strong> are stored securely in Supabase, a PostgreSQL database service hosted in the EU. Access is restricted to authorized staff only. We retain enquiry data for up to 2 years to maintain a record of client relationships and comply with professional indemnity insurance requirements.
+          <strong>Contact form submissions</strong> are stored securely in Supabase, a PostgreSQL database service hosted in the EU. Access is restricted to authorised staff only. We retain enquiry data for up to 2 years to maintain a record of client relationships and comply with professional indemnity insurance requirements.
         </p>
         <p>
           <strong>Analytics data</strong> is processed by Google Analytics and retained for 14 months. Google&apos;s data processing is governed by their{" "}

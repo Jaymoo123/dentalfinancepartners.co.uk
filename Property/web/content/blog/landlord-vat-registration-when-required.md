@@ -109,7 +109,7 @@ faqs:
 
 <p>Speaking with a specialist property accountant can help you understand your specific obligations and identify opportunities for tax efficiency. They can also assist with the registration process and ongoing compliance requirements.</p>
 
-<p>If you're unsure about your VAT position or need help with property tax planning, our <a href="/services">specialist services</a> can provide the guidance you need to stay compliant while optimizing your tax position.</p>
+<p>If you're unsure about your VAT position or need help with property tax planning, our <a href="/services">specialist services</a> can provide the guidance you need to stay compliant while optimising your tax position.</p>
 
 <h2>Related Reading</h2>
 

@@ -13,7 +13,7 @@ export function PageShell({ children }: PageShellProps) {
     <div className="flex min-h-dvh min-w-0 flex-col overflow-x-clip bg-white">
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-indigo-600 focus:px-3 focus:py-2 focus:text-white"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-orange-600 focus:px-3 focus:py-2 focus:text-white"
       >
         Skip to content
       </a>

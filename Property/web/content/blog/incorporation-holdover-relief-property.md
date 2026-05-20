@@ -91,7 +91,7 @@ faqs:
 <h2>Professional Advice Is Essential</h2>
 
 <p>Holdover relief property transfers involve multiple areas of tax law, company law, and ongoing compliance requirements. The interaction between different reliefs, timing issues, and future planning considerations make professional advice essential.</p>
-<p>A specialist property accountant can model different incorporation scenarios, ensuring you understand both immediate and long-term implications. They can also help structure the transfer to maximize available reliefs while maintaining compliance with all requirements.</p>
+<p>A specialist property accountant can model different incorporation scenarios, ensuring you understand both immediate and long-term implications. They can also help structure the transfer to maximise available reliefs while maintaining compliance with all requirements.</p>
 <p>The cost of getting this wrong – through missed deadlines, invalid elections, or unexpected tax charges – far exceeds the cost of proper professional guidance from the outset.</p>
 
 <h2>Related Reading</h2>

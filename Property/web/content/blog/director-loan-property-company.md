@@ -16,7 +16,7 @@ faqs:
   - question: "What happens if my director loan exceeds £10,000?"
     answer: "If you owe your property company more than £10,000, the company must pay 33.75% tax on the loan amount. You'll also face a benefit in kind charge if the company charges below market interest rates. Both charges apply even if the loan is temporary."
   - question: "Can I borrow from my property company to buy personal properties?"
-    answer: "Yes, but this creates tax implications. The company pays 33.75% tax on loans over £10,000, and you'll have a benefit in kind charge. The arrangement must be properly documented and the loan should carry market rate interest to minimize tax charges."
+    answer: "Yes, but this creates tax implications. The company pays 33.75% tax on loans over £10,000, and you'll have a benefit in kind charge. The arrangement must be properly documented and the loan should carry market rate interest to minimise tax charges."
   - question: "How do I avoid accidentally borrowing from my property company?"
     answer: "Keep strict separation between personal and business finances. Don't use company cards for personal expenses, document all cash movements, and consider regular dividend declarations to keep your director loan account in credit rather than debit."
   - question: "What records do I need to keep for director loan accounts?"
@@ -90,7 +90,7 @@ faqs:
 
 <h3>Tax-Efficient Extraction and Restructuring</h3>
 
-<p>Building up credit balances with your property company allows flexible timing of income extraction. You can draw funds when your personal tax position is most favorable. This is particularly valuable for investors with fluctuating income or those managing capital gains tax liabilities.</p>
+<p>Building up credit balances with your property company allows flexible timing of income extraction. You can draw funds when your personal tax position is most favourable. This is particularly valuable for investors with fluctuating income or those managing capital gains tax liabilities.</p>
 
 <p>Director loan accounts can also facilitate portfolio restructuring. For example, the company might lend you funds to acquire properties personally, which could later be sold to the company at market value. However, such arrangements require careful documentation and professional advice to ensure they achieve the intended tax outcomes.</p>
 

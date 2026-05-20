@@ -149,7 +149,7 @@ faqs:
 <li><strong>Multiple properties:</strong> Spread disposals across tax years to use multiple annual exemptions</li>
 <li><strong>Residence planning:</strong> Your residence status can significantly affect tax liabilities</li>
 </ul>
-<p><strong>Record Keeping:</strong> Start organizing your records before marketing the property. You'll need detailed documentation of all costs from the original purchase onwards. A specialist <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can help with both advance planning and compliance when the time comes to sell.</p>
+<p><strong>Record Keeping:</strong> Start organising your records before marketing the property. You'll need detailed documentation of all costs from the original purchase onwards. A specialist <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can help with both advance planning and compliance when the time comes to sell.</p>
 
 <h2>Getting Professional Help</h2>
 <p>Non-resident CGT compliance is complex, with severe penalties for errors or delays. The interaction between UK tax rules, your home country's tax system, and residence planning requires specialist knowledge.</p>

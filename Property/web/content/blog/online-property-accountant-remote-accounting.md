@@ -16,11 +16,11 @@ faqs:
   - question: "Is an online property accountant as reliable as a traditional one?"
     answer: "Yes, if you choose a qualified, experienced professional. Online accountants provide the same services as traditional practices but deliver them digitally. Check their qualifications, client reviews, and insurance coverage. Many online specialists focus exclusively on property, making them more knowledgeable than generalist local firms."
   - question: "How do online property accountants handle document signing and HMRC submissions?"
-    answer: "Most use electronic signature platforms like DocuSign for contracts and authorities. For HMRC submissions, they typically file tax returns digitally using your UTR and authorization codes. Some may require posted forms for specific situations, but 95% of work is handled electronically."
+    answer: "Most use electronic signature platforms like DocuSign for contracts and authorities. For HMRC submissions, they typically file tax returns digitally using your UTR and authorisation codes. Some may require posted forms for specific situations, but 95% of work is handled electronically."
   - question: "What happens if I need urgent help outside normal hours?"
     answer: "Response times vary by provider. Many online accountants offer email support within 24 hours and phone consultations by appointment. Some provide emergency contact numbers for urgent issues. Clarify their availability and response commitments before engaging their services."
   - question: "Can an online accountant help with complex property structures like multiple companies?"
-    answer: "Yes, many online property accountants specialize in complex structures including SPVs, group companies, and mixed portfolios. They often have more expertise than local generalists because they focus specifically on property. Video consultations work well for discussing incorporation strategies and tax planning."
+    answer: "Yes, many online property accountants specialise in complex structures including SPVs, group companies, and mixed portfolios. They often have more expertise than local generalists because they focus specifically on property. Video consultations work well for discussing incorporation strategies and tax planning."
 ---
 
 <p>The shift to digital has transformed how UK landlords manage their property businesses. An <strong>online property accountant</strong> can handle your tax compliance, bookkeeping, and strategic planning entirely remotely. But is this approach right for your portfolio?</p>

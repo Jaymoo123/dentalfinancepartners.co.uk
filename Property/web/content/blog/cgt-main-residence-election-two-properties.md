@@ -91,7 +91,7 @@ faqs:
 <h3>Electing Based on Current Value Only</h3>
 <p>Don't just elect the property with the highest current value. Consider potential future gains, likelihood of sale, and your long-term plans for each property.</p>
 <h3>Forgetting to Update Elections</h3>
-<p>If your circumstances change significantly, review whether your election still makes sense. You might want to switch elections before selling a property to maximize PPR relief.</p>
+<p>If your circumstances change significantly, review whether your election still makes sense. You might want to switch elections before selling a property to maximise PPR relief.</p>
 
 <h2>Special Considerations for Landlords</h2>
 <p>As a landlord with multiple properties, several factors should influence your election strategy:</p>

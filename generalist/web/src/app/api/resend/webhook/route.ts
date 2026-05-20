@@ -11,7 +11,7 @@ export const runtime = "nodejs";
  * addresses that bounce or mark us as spam. This protects sender reputation.
  *
  * Configure in Resend dashboard:
- *   - Endpoint URL: https://www.ukbusinessaccountants.co.uk/api/resend/webhook
+ *   - Endpoint URL: https://www.hollowaydavies.co.uk/api/resend/webhook
  *   - Events: email.delivered, email.bounced, email.complained, email.delivery_delayed
  *   - Copy the signing secret (starts with `whsec_`) into
  *     RESEND_WEBHOOK_SECRET in Vercel env vars.

@@ -224,6 +224,62 @@ class DataForSEOClient:
             seed_keyword=f"domain:{domain}",
         )
 
+    def related_keywords(
+        self,
+        *,
+        site_key: str,
+        seed_keyword: str,
+        limit: int = 200,
+        depth: int = 2,
+        location_code: int = DATAFORSEO_LOCATION_CODE_UK,
+        language_code: str = DATAFORSEO_LANGUAGE_CODE_EN,
+    ) -> dict:
+        """Semantic neighbourhood around a seed. Broader than keyword_suggestions."""
+        payload = [
+            {
+                "keyword": seed_keyword,
+                "location_code": location_code,
+                "language_code": language_code,
+                "limit": limit,
+                "depth": depth,
+                "include_serp_info": False,
+            }
+        ]
+        return self._post_paid(
+            "dataforseo_labs/google/related_keywords/live",
+            payload,
+            site_key=site_key,
+            expected_rows=limit,
+            seed_keyword=seed_keyword,
+        )
+
+    def keywords_for_site(
+        self,
+        *,
+        site_key: str,
+        target_domain: str,
+        limit: int = 200,
+        location_code: int = DATAFORSEO_LOCATION_CODE_UK,
+        language_code: str = DATAFORSEO_LANGUAGE_CODE_EN,
+    ) -> dict:
+        """All keywords a given domain ranks for. Used on competitor domains."""
+        payload = [
+            {
+                "target": target_domain,
+                "location_code": location_code,
+                "language_code": language_code,
+                "limit": limit,
+                "order_by": ["keyword_info.search_volume,desc"],
+            }
+        ]
+        return self._post_paid(
+            "dataforseo_labs/google/keywords_for_site/live",
+            payload,
+            site_key=site_key,
+            expected_rows=limit,
+            seed_keyword=f"site:{target_domain}",
+        )
+
     def bulk_keyword_difficulty(
         self,
         *,
@@ -277,6 +333,77 @@ def persist_keyword_suggestions(
                         "site_key": site_key,
                         "endpoint": "keyword_suggestions/live",
                         "seed_keyword": seed_keyword,
+                        "location_code": DATAFORSEO_LOCATION_CODE_UK,
+                        "language_code": DATAFORSEO_LANGUAGE_CODE_EN,
+                        "related_keyword": item.get("keyword"),
+                        "search_volume": ki.get("search_volume"),
+                        "cpc": ki.get("cpc"),
+                        "competition": ki.get("competition"),
+                        "competition_level": ki.get("competition_level"),
+                        "keyword_difficulty": kp.get("keyword_difficulty"),
+                        "search_intent": si.get("main_intent"),
+                        "raw_response": item,
+                    }
+                )
+    return _bulk_insert("dataforseo_keyword_data", rows_out)
+
+
+def persist_related_keywords(
+    *,
+    site_key: str,
+    seed_keyword: str,
+    response: dict,
+) -> int:
+    """Related keywords items have a `keyword_data` wrapper (different from suggestions)."""
+    rows_out: list[dict] = []
+    tasks = response.get("tasks", []) or []
+    for task in tasks:
+        for result in task.get("result", []) or []:
+            for item in result.get("items", []) or []:
+                kw_data = item.get("keyword_data") or {}
+                ki = kw_data.get("keyword_info") or {}
+                kp = kw_data.get("keyword_properties") or {}
+                si = kw_data.get("search_intent_info") or {}
+                rows_out.append(
+                    {
+                        "site_key": site_key,
+                        "endpoint": "related_keywords/live",
+                        "seed_keyword": seed_keyword,
+                        "location_code": DATAFORSEO_LOCATION_CODE_UK,
+                        "language_code": DATAFORSEO_LANGUAGE_CODE_EN,
+                        "related_keyword": kw_data.get("keyword"),
+                        "search_volume": ki.get("search_volume"),
+                        "cpc": ki.get("cpc"),
+                        "competition": ki.get("competition"),
+                        "competition_level": ki.get("competition_level"),
+                        "keyword_difficulty": kp.get("keyword_difficulty"),
+                        "search_intent": si.get("main_intent"),
+                        "raw_response": item,
+                    }
+                )
+    return _bulk_insert("dataforseo_keyword_data", rows_out)
+
+
+def persist_keywords_for_site(
+    *,
+    site_key: str,
+    target_domain: str,
+    response: dict,
+) -> int:
+    """Flat top-level structure: keyword, keyword_info, etc. (same as keyword_suggestions)."""
+    rows_out: list[dict] = []
+    tasks = response.get("tasks", []) or []
+    for task in tasks:
+        for result in task.get("result", []) or []:
+            for item in result.get("items", []) or []:
+                ki = item.get("keyword_info") or {}
+                kp = item.get("keyword_properties") or {}
+                si = item.get("search_intent_info") or {}
+                rows_out.append(
+                    {
+                        "site_key": site_key,
+                        "endpoint": "keywords_for_site/live",
+                        "seed_keyword": f"site:{target_domain}",
                         "location_code": DATAFORSEO_LOCATION_CODE_UK,
                         "language_code": DATAFORSEO_LANGUAGE_CODE_EN,
                         "related_keyword": item.get("keyword"),

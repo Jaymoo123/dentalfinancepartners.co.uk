@@ -8,14 +8,14 @@ import { getAllFundamentals } from "@/lib/fundamentals";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Fundamentals | Pillar Guides for UK Agency Founders",
+  title: "Fundamentals | Pillar Guides for UK Business Owners",
   description:
-    "Definitive pillar guides on agency tax, finance, incorporation, IR35, MTD, exit planning and more. Written by ICAEW qualified specialist accountants for UK and UAE agency founders.",
+    "Definitive pillar guides on UK business tax, finance, incorporation, IR35, MTD, R&D, exit planning and more. Written by ICAEW qualified accountants for limited companies, contractors, sole traders and partnerships.",
   alternates: { canonical: `${siteConfig.url}/fundamentals` },
   openGraph: {
-    title: "Fundamentals | Pillar Guides for UK Agency Founders",
+    title: "Fundamentals | Pillar Guides for UK Business Owners",
     description:
-      "Definitive pillar guides on agency tax, finance, incorporation, IR35, MTD, exit planning and more.",
+      "Definitive pillar guides on UK business tax, finance, incorporation, IR35, MTD, R&D, exit planning and more.",
     url: `${siteConfig.url}/fundamentals`,
     type: "website",
   },
@@ -47,10 +47,10 @@ export default function FundamentalsIndexPage() {
               ]}
             />
             <h1 className="mt-6 text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
-              Agency finance fundamentals
+              UK business finance fundamentals
             </h1>
             <p className="mt-4 text-xl text-slate-200">
-              The definitive pillar guides we wish every agency founder had read before incorporating, hiring, or selling.
+              The definitive pillar guides we wish every UK business owner had read before incorporating, hiring, or selling.
             </p>
           </div>
         </div>
@@ -67,16 +67,16 @@ export default function FundamentalsIndexPage() {
                   <Link
                     key={g.slug}
                     href={`/fundamentals/${g.slug}`}
-                    className="group block bg-white border border-slate-200 p-6 shadow-sm hover:shadow-md hover:border-indigo-600 transition-all"
+                    className="group block bg-white border border-slate-200 p-6 shadow-sm hover:shadow-md hover:border-orange-600 transition-all"
                   >
-                    <p className="text-xs font-bold uppercase tracking-wider text-indigo-700">
+                    <p className="text-xs font-bold uppercase tracking-wider text-orange-700">
                       {g.category}
                     </p>
-                    <h2 className="mt-3 text-xl font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors">
+                    <h2 className="mt-3 text-xl font-semibold text-slate-900 group-hover:text-orange-600 transition-colors">
                       {g.title}
                     </h2>
                     <p className="mt-3 text-sm text-slate-600 leading-relaxed">{g.summary}</p>
-                    <div className="mt-4 flex items-center text-indigo-600 font-medium text-sm">
+                    <div className="mt-4 flex items-center text-orange-600 font-medium text-sm">
                       Read the guide
                       <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </div>

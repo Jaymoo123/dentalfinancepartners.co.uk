@@ -20,7 +20,7 @@ faqs:
   - question: "Does holding rental properties in a company help with BPR?"
     answer: "Holding rental properties through a limited company does not automatically qualify them for Business Property Relief. The underlying property activity must still constitute trading rather than investment. However, company structures may offer other tax planning advantages."
   - question: "How can landlords plan for inheritance tax if BPR doesn't apply?"
-    answer: "Landlords can use annual gifting exemptions (£3,000), make potentially exempt transfers, utilize the residence nil-rate band (£175,000), and consider other IHT mitigation strategies. Professional advice is essential for effective estate planning without BPR protection."
+    answer: "Landlords can use annual gifting exemptions (£3,000), make potentially exempt transfers, utilise the residence nil-rate band (£175,000), and consider other IHT mitigation strategies. Professional advice is essential for effective estate planning without BPR protection."
 ---
 
 <p>Business property relief (BPR) can reduce inheritance tax on qualifying business assets by up to 100%, but does <strong>business property relief apply to rental property</strong>? The answer depends on the nature of your property activities and how HMRC views your operations.</p>
@@ -183,6 +183,6 @@ faqs:
 
 <p>The intersection of business property relief and rental property requires careful analysis of individual circumstances. What constitutes trading for one property business may not apply to another with different activities and structures.</p>
 
-<p><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Specialist property accountants</a> can assess your specific situation, advise on potential BPR qualification, and recommend strategies to optimize your position for inheritance tax planning.</p>
+<p><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Specialist property accountants</a> can assess your specific situation, advise on potential BPR qualification, and recommend strategies to optimise your position for inheritance tax planning.</p>
 
 <p>For landlords with substantial property portfolios, early professional advice on BPR qualification and alternative IHT mitigation strategies can result in significant tax savings for beneficiaries. The complexity of these rules makes professional guidance essential rather than optional.</p>

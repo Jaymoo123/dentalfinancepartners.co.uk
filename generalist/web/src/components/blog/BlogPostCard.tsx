@@ -14,7 +14,7 @@ export function BlogPostCard({ post, categorySlug, readTime }: Props) {
     <article className="h-full">
       <Link
         href={href}
-        className="group flex h-full flex-col overflow-hidden border border-slate-200 bg-white shadow-sm transition-all hover:border-indigo-600 hover:shadow-md"
+        className="group flex h-full flex-col overflow-hidden border border-slate-200 bg-white shadow-sm transition-all hover:border-orange-600 hover:shadow-md"
       >
         <div className="relative h-44 overflow-hidden bg-slate-100">
           {post.image ? (
@@ -29,15 +29,15 @@ export function BlogPostCard({ post, categorySlug, readTime }: Props) {
               <div className="absolute inset-0 bg-slate-900/15" />
             </>
           ) : (
-            <div className="absolute inset-0 bg-gradient-to-br from-indigo-100 to-slate-100" />
+            <div className="absolute inset-0 bg-gradient-to-br from-orange-100 to-slate-100" />
           )}
-          <div className="absolute bottom-3 left-3 bg-indigo-600 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white">
+          <div className="absolute bottom-3 left-3 bg-orange-600 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white">
             Article
           </div>
         </div>
 
         <div className="flex flex-1 flex-col p-6">
-          <h2 className="text-lg font-bold leading-snug text-slate-900 transition-colors group-hover:text-indigo-700">
+          <h2 className="text-lg font-bold leading-snug text-slate-900 transition-colors group-hover:text-orange-700">
             {post.title}
           </h2>
           {post.summary && (

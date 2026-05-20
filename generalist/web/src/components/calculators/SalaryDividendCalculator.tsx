@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { UK_TAX_RATES as T } from "@/lib/uk-tax-rates";
 
 /**
  * UK 2025/26 tax model, salary vs dividend optimiser for a limited company
@@ -9,27 +10,35 @@ import { useMemo, useState } from "react";
  * Approach: try every salary value from 0 to a sensible upper bound (£60k)
  * in £10 increments and pick the salary that maximises director net cash,
  * given total available extraction.
+ *
+ * All rates and thresholds pulled from lib/uk-tax-rates.ts (single source of
+ * truth, updated annually).
  */
 
-const PERSONAL_ALLOWANCE = 12570;
-const BASIC_RATE_LIMIT = 50270;
-const HIGHER_RATE_LIMIT = 125140;
-const NI_PRIMARY_THRESHOLD = 12570;
-const NI_SECONDARY_THRESHOLD = 9100;
-const EMPLOYEE_NI_BASIC = 0.08;
-const EMPLOYER_NI = 0.138;
-const INCOME_BASIC = 0.20;
-const INCOME_HIGHER = 0.40;
-const INCOME_ADDITIONAL = 0.45;
-const DIVIDEND_ALLOWANCE = 500;
-const DIVIDEND_BASIC = 0.0875;
-const DIVIDEND_HIGHER = 0.3375;
-const DIVIDEND_ADDITIONAL = 0.3935;
-const CT_SMALL_THRESHOLD = 50000;
-const CT_MAIN_THRESHOLD = 250000;
-const CT_SMALL_RATE = 0.19;
-const CT_MAIN_RATE = 0.25;
-const EMPLOYMENT_ALLOWANCE = 5000; // most agencies qualify; one director only company does NOT, assume yes here
+// Annotate as `number` to widen the literal types `as const` infers in
+// uk-tax-rates.ts. Without this, downstream reassignments (e.g. tapering
+// personal allowance above £100k) fail with a literal-type error.
+const PERSONAL_ALLOWANCE: number = T.incomeTax.personalAllowance;
+const BASIC_RATE_LIMIT: number = T.incomeTax.basicRateUpperLimit;
+const HIGHER_RATE_LIMIT: number = T.incomeTax.higherRateUpperLimit;
+const NI_PRIMARY_THRESHOLD: number = T.nationalInsurance.employee.primaryThreshold;
+const NI_SECONDARY_THRESHOLD: number = T.nationalInsurance.employer.secondaryThreshold;
+const EMPLOYEE_NI_BASIC: number = T.nationalInsurance.employee.mainRate;
+const EMPLOYER_NI: number = T.nationalInsurance.employer.rate;
+const INCOME_BASIC: number = T.incomeTax.basicRate;
+const INCOME_HIGHER: number = T.incomeTax.higherRate;
+const INCOME_ADDITIONAL: number = T.incomeTax.additionalRate;
+const DIVIDEND_ALLOWANCE: number = T.dividendTax.allowance;
+const DIVIDEND_BASIC: number = T.dividendTax.basicRate;
+const DIVIDEND_HIGHER: number = T.dividendTax.higherRate;
+const DIVIDEND_ADDITIONAL: number = T.dividendTax.additionalRate;
+const CT_SMALL_THRESHOLD: number = T.corporationTax.smallProfitsUpperLimit;
+const CT_MAIN_THRESHOLD: number = T.corporationTax.mainRateLowerLimit;
+const CT_SMALL_RATE: number = T.corporationTax.smallProfitsRate;
+const CT_MAIN_RATE: number = T.corporationTax.mainRate;
+// Employment Allowance: single-director-only companies do NOT qualify.
+// We expose a toggle so users can model both cases.
+const EMPLOYMENT_ALLOWANCE: number = T.nationalInsurance.employer.employmentAllowance;
 
 type Result = {
   salary: number;
@@ -184,7 +193,7 @@ export function SalaryDividendCalculator() {
               min={0}
               max={5000000}
               step={1000}
-              className="w-48 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600"
+              className="w-48 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-orange-600"
             />
             <span className="text-sm text-slate-500">per year</span>
           </div>
@@ -195,7 +204,7 @@ export function SalaryDividendCalculator() {
             min={20000}
             max={500000}
             step={1000}
-            className="w-full mt-4 accent-indigo-600"
+            className="w-full mt-4 accent-orange-600"
           />
           <div className="flex justify-between text-xs text-slate-500 mt-1">
             <span>£20k</span>
@@ -209,28 +218,28 @@ export function SalaryDividendCalculator() {
             type="checkbox"
             checked={useEA}
             onChange={(e) => setUseEA(e.target.checked)}
-            className="mt-1 h-4 w-4 accent-indigo-600"
+            className="mt-1 h-4 w-4 accent-orange-600"
           />
           <label htmlFor="ea" className="text-sm text-slate-700 leading-relaxed">
-            <span className="font-semibold text-slate-900">Apply Employment Allowance</span> (£5,000 off employer NI). Most agencies with two or more employees qualify. Single-director companies do not.
+            <span className="font-semibold text-slate-900">Apply Employment Allowance</span> (up to £10,500 off employer NI for 2025/26). Most small businesses with at least one paid employee in addition to a director qualify. Single-director-only companies do not.
           </label>
         </div>
       </div>
 
-      <div className="bg-indigo-700 text-white p-6 sm:p-8">
-        <p className="text-sm font-bold uppercase tracking-wider text-indigo-200">Optimal extraction</p>
+      <div className="bg-orange-700 text-white p-6 sm:p-8">
+        <p className="text-sm font-bold uppercase tracking-wider text-orange-200">Optimal extraction</p>
         <div className="mt-3 grid sm:grid-cols-2 gap-6">
           <div>
-            <p className="text-xs text-indigo-200 uppercase tracking-wider">Salary</p>
+            <p className="text-xs text-orange-200 uppercase tracking-wider">Salary</p>
             <p className="text-3xl sm:text-4xl font-bold font-mono">{fmt(optimal.salary)}</p>
           </div>
           <div>
-            <p className="text-xs text-indigo-200 uppercase tracking-wider">Dividend</p>
+            <p className="text-xs text-orange-200 uppercase tracking-wider">Dividend</p>
             <p className="text-3xl sm:text-4xl font-bold font-mono">{fmt(optimal.dividend)}</p>
           </div>
         </div>
-        <div className="mt-6 pt-6 border-t border-indigo-500">
-          <p className="text-xs text-indigo-200 uppercase tracking-wider">Director net take-home</p>
+        <div className="mt-6 pt-6 border-t border-orange-500">
+          <p className="text-xs text-orange-200 uppercase tracking-wider">Director net take-home</p>
           <p className="text-4xl sm:text-5xl font-bold font-mono mt-1">{fmt(optimal.netCash)}</p>
         </div>
       </div>

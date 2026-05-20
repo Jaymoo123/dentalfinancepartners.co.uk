@@ -21,12 +21,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const url = `${siteConfig.url}/glossary/${slug}`;
   return {
-    title: `${entry.term}, Definition for UK Agency Founders`,
-    description: `Plain-English definition of ${entry.term} for UK agency founders. Includes current 2025/26 figures and what it means for your agency.`,
+    title: `${entry.term}, Definition for UK Business Owners`,
+    description: `Plain-English definition of ${entry.term} for UK business owners. Includes current 2025/26 figures and what it means for your business.`,
     alternates: { canonical: url },
     openGraph: {
-      title: `${entry.term}, UK Agency Glossary`,
-      description: `Plain-English definition of ${entry.term} for UK agency founders.`,
+      title: `${entry.term}, UK Business Tax Glossary`,
+      description: `Plain-English definition of ${entry.term} for UK business owners.`,
       url,
       type: "article",
     },
@@ -64,7 +64,7 @@ export default async function GlossaryEntryPage({ params }: Props) {
             ]}
           />
           <div className="mt-6 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-indigo-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
+            <div className="inline-flex items-center gap-2 bg-orange-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
               <BookOpen className="h-3.5 w-3.5" />
               {entry.category}
             </div>
@@ -85,13 +85,13 @@ export default async function GlossaryEntryPage({ params }: Props) {
 
             <div className="mt-12 bg-slate-900 p-8 text-white">
               <h2 className="text-xl font-bold sm:text-2xl">
-                Want this applied to your agency?
+                Want this applied to your business?
               </h2>
               <p className="mt-3 text-base text-slate-200">
-                Book a free 60-minute Agency Finance Health Check. An ICAEW qualified accountant will review your position and show you what to actually do.
+                Book a free call with an ICAEW qualified accountant. We'll review your position and show you what to actually do.
               </p>
-              <Link href="/free-health-check" className={`${btnPrimary} mt-6`}>
-                Book a free health check
+              <Link href="/contact" className={`${btnPrimary} mt-6`}>
+                Book a free call
               </Link>
             </div>
 
@@ -105,7 +105,7 @@ export default async function GlossaryEntryPage({ params }: Props) {
                     <li key={r.slug}>
                       <Link
                         href={`/glossary/${r.slug}`}
-                        className="block bg-slate-50 border border-slate-200 p-4 hover:border-indigo-600 hover:bg-white transition-all"
+                        className="block bg-slate-50 border border-slate-200 p-4 hover:border-orange-600 hover:bg-white transition-all"
                       >
                         <p className="text-sm font-bold text-slate-900">{r.term}</p>
                       </Link>

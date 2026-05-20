@@ -10,18 +10,18 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Should I Incorporate My Buy-to-Let? | CGT & SDLT Cost Analysis",
   description:
-    "Incorporation feasibility for UK landlords: Calculate CGT + SDLT upfront costs vs. annual tax savings. Break-even modeling. When it makes sense, when it doesn't.",
+    "Incorporation feasibility for UK landlords: Calculate CGT + SDLT upfront costs vs. annual tax savings. Break-even modelling. When it makes sense, when it doesn't.",
   alternates: { canonical: `${siteConfig.url}/incorporation` },
   openGraph: {
     title: "Buy-to-Let Incorporation Planning | Cost vs. Savings Analysis",
-    description: "Full feasibility modeling: CGT, SDLT costs vs. long-term tax savings. For UK landlords only.",
+    description: "Full feasibility modelling: CGT, SDLT costs vs. long-term tax savings. For UK landlords only.",
     url: `${siteConfig.url}/incorporation`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Buy-to-Let Incorporation Planning | Cost vs. Savings Analysis",
-    description: "Full feasibility modeling: CGT, SDLT costs vs. long-term tax savings. For UK landlords only.",
+    description: "Full feasibility modelling: CGT, SDLT costs vs. long-term tax savings. For UK landlords only.",
   },
 };
 
@@ -67,11 +67,11 @@ const processSteps = [
   {
     n: "01",
     title: "Initial feasibility call",
-    body: "We discuss your portfolio, income, tax position, and plans. This is a short conversation to understand whether incorporation is even worth modeling.",
+    body: "We discuss your portfolio, income, tax position, and plans. This is a short conversation to understand whether incorporation is even worth modelling.",
   },
   {
     n: "02",
-    title: "Full financial modeling",
+    title: "Full financial modelling",
     body: "We calculate upfront costs (CGT + SDLT), annual tax savings, break-even timeline, and cash flow impact. You get a written report with clear recommendations.",
   },
   {

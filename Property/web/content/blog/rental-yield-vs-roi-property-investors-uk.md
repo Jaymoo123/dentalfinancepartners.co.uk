@@ -7,7 +7,7 @@ author: "Property Tax Partners Editorial Team"
 category: "Portfolio Management"
 metaTitle: "Rental Yield vs ROI: Key Differences UK Property Investors"
 metaDescription: "Rental yield vs ROI explained for UK landlords. Learn gross yield, net yield, and return on investment calculations with practical examples."
-altText: "UK property investor analyzing rental yield vs ROI calculations on laptop with property documents"
+altText: "UK property investor analysing rental yield vs ROI calculations on laptop with property documents"
 image: ""
 h1: "Rental Yield vs ROI: What's the Difference for UK Property Investors?"
 summary: "Many landlords confuse rental yield with return on investment (ROI), but they measure different aspects of property performance. Understanding both metrics is crucial for making informed investment decisions."
@@ -104,6 +104,6 @@ faqs:
 <p>Rising interest rates continue to affect mortgage costs, impacting both net yields and ROI calculations for leveraged investments.</p>
 
 <h2>Getting Professional Support</h2>
-<p>While understanding rental yield vs ROI concepts is essential, accurate calculations require professional expertise, particularly when considering tax implications and portfolio optimization strategies.</p>
-<p><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Specialist property accountants</a> can help you calculate accurate yields and ROI figures, plan tax-efficient structures, and optimize your investment strategy based on both income and capital growth potential.</p>
+<p>While understanding rental yield vs ROI concepts is essential, accurate calculations require professional expertise, particularly when considering tax implications and portfolio optimisation strategies.</p>
+<p><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Specialist property accountants</a> can help you calculate accurate yields and ROI figures, plan tax-efficient structures, and optimise your investment strategy based on both income and capital growth potential.</p>
 <p>Whether you're comparing new investment opportunities or evaluating existing portfolio performance, combining both metrics provides the comprehensive analysis needed for informed property investment decisions.</p>

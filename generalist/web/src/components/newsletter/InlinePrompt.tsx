@@ -12,8 +12,8 @@ type Props = {
  */
 export function InlinePrompt({
   source,
-  heading = "Get the Tax Brief in your inbox.",
-  body = "One short email a week. UK + UAE tax for agency founders. Plain text, unsubscribe one click.",
+  heading = "Get the Director's Brief in your inbox.",
+  body = "One short email a week. UK tax for limited companies, contractors, sole traders and small businesses. Plain text, unsubscribe one click.",
 }: Props) {
   return (
     <aside className="my-10 not-prose">

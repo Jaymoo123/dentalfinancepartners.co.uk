@@ -78,7 +78,7 @@ export function BADRCalculator() {
             <div className="mt-2 flex items-center gap-2">
               <span className="text-slate-500">£</span>
               <input id="proc" type="number" value={saleProceeds} onChange={(e) => setSaleProceeds(Math.max(0, Number(e.target.value) || 0))} min={0} max={20000000} step={10000}
-                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600" />
+                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-orange-600" />
             </div>
           </div>
 
@@ -88,7 +88,7 @@ export function BADRCalculator() {
             <div className="mt-2 flex items-center gap-2">
               <span className="text-slate-500">£</span>
               <input id="cost" type="number" value={originalCost} onChange={(e) => setOriginalCost(Math.max(0, Number(e.target.value) || 0))} min={0} max={5000000} step={100}
-                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600" />
+                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-orange-600" />
             </div>
           </div>
 
@@ -98,7 +98,7 @@ export function BADRCalculator() {
             <div className="mt-2 flex items-center gap-2">
               <span className="text-slate-500">£</span>
               <input id="prev" type="number" value={previousBADRUsed} onChange={(e) => setPreviousBADRUsed(Math.max(0, Number(e.target.value) || 0))} min={0} max={BADR_LIFETIME_LIMIT} step={10000}
-                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600" />
+                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-orange-600" />
             </div>
           </div>
 
@@ -107,7 +107,7 @@ export function BADRCalculator() {
             <div className="mt-2 flex gap-2">
               {(["2025/26", "2026/27"] as const).map((y) => (
                 <button key={y} type="button" onClick={() => setYear(y)}
-                  className={`px-4 py-2 border-2 text-sm font-semibold ${year === y ? "border-indigo-600 bg-indigo-50 text-indigo-700" : "border-slate-200 bg-white text-slate-700 hover:border-slate-300"}`}>
+                  className={`px-4 py-2 border-2 text-sm font-semibold ${year === y ? "border-orange-600 bg-orange-50 text-orange-700" : "border-slate-200 bg-white text-slate-700 hover:border-slate-300"}`}>
                   {y} {y === "2025/26" ? "(14%)" : "(18%)"}
                 </button>
               ))}
@@ -117,7 +117,7 @@ export function BADRCalculator() {
 
           <div className="flex items-start gap-3">
             <input id="elig" type="checkbox" checked={meetsEligibility} onChange={(e) => setMeetsEligibility(e.target.checked)}
-              className="mt-1 h-4 w-4 accent-indigo-600" />
+              className="mt-1 h-4 w-4 accent-orange-600" />
             <label htmlFor="elig" className="text-sm text-slate-700">
               <span className="font-semibold text-slate-900">Meets BADR eligibility</span>: I hold 5%+ of the shares, I'm an officer or employee, and I've held the shares for 2+ years before disposal.
             </label>
@@ -125,16 +125,16 @@ export function BADRCalculator() {
         </div>
       </div>
 
-      <div className="bg-indigo-700 text-white p-6 sm:p-8">
-        <p className="text-sm font-bold uppercase tracking-wider text-indigo-200">Your CGT bill</p>
+      <div className="bg-orange-700 text-white p-6 sm:p-8">
+        <p className="text-sm font-bold uppercase tracking-wider text-orange-200">Your CGT bill</p>
         <div className="mt-3 grid sm:grid-cols-2 gap-6">
           <div>
-            <p className="text-xs text-indigo-200 uppercase tracking-wider">Total CGT</p>
+            <p className="text-xs text-orange-200 uppercase tracking-wider">Total CGT</p>
             <p className="text-3xl sm:text-4xl font-bold font-mono">{fmt(result.totalTax)}</p>
-            <p className="text-xs text-indigo-200 mt-1">Effective rate: {(result.effectiveRate * 100).toFixed(1)}%</p>
+            <p className="text-xs text-orange-200 mt-1">Effective rate: {(result.effectiveRate * 100).toFixed(1)}%</p>
           </div>
           <div>
-            <p className="text-xs text-indigo-200 uppercase tracking-wider">Net proceeds (after CGT)</p>
+            <p className="text-xs text-orange-200 uppercase tracking-wider">Net proceeds (after CGT)</p>
             <p className="text-3xl sm:text-4xl font-bold font-mono">{fmt(result.netProceeds)}</p>
           </div>
         </div>

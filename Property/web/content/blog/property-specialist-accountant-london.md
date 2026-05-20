@@ -35,7 +35,7 @@ imageCredit:
 
 <h2>What Makes a Property Accountant Different from a General Accountant?</h2>
 <p>A general accountant handles a wide range of clients, from hairdressers to tech startups. They know the basics of self-assessment and corporation tax, but they rarely deal with the specific rules that apply to property income. A property specialist accountant, by contrast, works exclusively with landlords, property developers, and investors. They understand the nuances of rental income, capital gains on property disposals, and the tax implications of different ownership structures.</p>
-<p>For example, a general accountant might not know that mortgage interest relief is now restricted to a 20% tax credit under Section 24. A property specialist will know this inside out and will help you structure your finances to minimise the impact. They will also be familiar with the separate property income tax rates that come into effect from April 2027 — 22% basic rate, 42% higher rate, and 47% additional rate on property income.</p>
+<p>For example, a general accountant might not know that mortgage interest relief is now restricted to a 20% tax credit under Section 24. A property specialist will know this inside out and will help you structure your finances to minimise the impact. They will also be familiar with the separate property income tax rates that come into effect from April 2027, 22% basic rate, 42% higher rate, and 47% additional rate on property income.</p>
 
 <h2>Key Services a Property Specialist Accountant in London Provides</h2>
 <p>Property accountants offer a range of services tailored to landlords. Here are the most common ones.</p>

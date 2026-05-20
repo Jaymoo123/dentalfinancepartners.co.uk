@@ -113,4 +113,4 @@ faqs:
 <p>The property tax landscape continues evolving, with significant changes affecting structure decisions:</p>
 <p>From April 2027, separate property income tax rates (22% basic, 42% higher, 47% additional) will apply to property income, making the tax-transparent nature of LLPs potentially less attractive for higher-rate taxpayers compared to company structures.</p>
 <p>Making Tax Digital requirements from April 2026 will add compliance complexity for LLPs with property income over £10,000, requiring quarterly digital reporting and annual summaries.</p>
-<p>These changes generally favor company structures over LLPs for property investment, though specific circumstances—such as certain joint ventures or family arrangements with flexible profit-sharing needs—might still make LLP property investment worthwhile for some investors.</p>
+<p>These changes generally favour company structures over LLPs for property investment, though specific circumstances—such as certain joint ventures or family arrangements with flexible profit-sharing needs—might still make LLP property investment worthwhile for some investors.</p>

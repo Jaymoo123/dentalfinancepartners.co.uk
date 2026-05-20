@@ -63,7 +63,7 @@ export default function TakeHomePayCalculatorPage() {
             ]}
           />
           <div className="mt-6 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-indigo-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
+            <div className="inline-flex items-center gap-2 bg-orange-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
               <Calculator className="h-3.5 w-3.5" />
               Free calculator · 2025/26 rates
             </div>
@@ -71,7 +71,7 @@ export default function TakeHomePayCalculatorPage() {
               Take-Home Pay Calculator
             </h1>
             <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-              Work out your UK take-home pay for the 2025/26 tax year. Includes income tax, employee National Insurance, student loan plans and salary-sacrifice pension contributions.
+              The HMRC headline number says one thing, what arrives in your account says another. Enter your gross salary and the calculator returns annual, monthly and weekly net pay for 2025/26, with income tax, employee NI, student loan plans, and any salary-sacrifice pension contributions all factored in.
             </p>
           </div>
         </div>
@@ -82,7 +82,7 @@ export default function TakeHomePayCalculatorPage() {
           <div className="max-w-4xl mx-auto">
             <TakeHomePayCalculator />
 
-            <div className="mt-12 border-l-4 border-indigo-600 bg-slate-50 p-6 sm:p-8">
+            <div className="mt-12 border-l-4 border-orange-600 bg-slate-50 p-6 sm:p-8">
               <h2 className="text-xl font-bold text-slate-900">How this works</h2>
               <p className="mt-3 text-base text-slate-700 leading-relaxed">
                 The calculator applies the standard 2025/26 personal allowance of £12,570 (tapering above £100,000), the three income tax bands, and employee NI at 8% on earnings between £12,570 and £50,270 plus 2% above. Salary-sacrifice pension contributions are deducted before tax and NI are calculated, so they save you both. Student loan deductions are added if you select a plan.
@@ -106,14 +106,14 @@ export default function TakeHomePayCalculatorPage() {
 
             <div className="mt-12 bg-slate-900 p-8 sm:p-10 text-white">
               <h2 className="text-2xl font-bold text-white sm:text-3xl">
-                Running a limited company? Try the salary &amp; dividend optimiser
+                Drawing dividends from your own Ltd? This calculator misses half the picture
               </h2>
               <p className="mt-3 text-base sm:text-lg text-slate-200 leading-relaxed">
-                If you take a small salary plus dividends, your real take-home depends on both. Our optimiser models corporation tax, dividend tax, NI and income tax in one go.
+                Limited company owners typically take a small PAYE salary alongside dividends from post-tax profit. The take-home pay calculator handles the salary leg only. To see the full position, use the salary &amp; dividend optimiser, which prices corporation tax and dividend tax into the same model.
               </p>
               <Link
                 href="/calculators/salary-dividend-optimiser"
-                className="mt-6 inline-block bg-indigo-600 px-8 py-3 text-base font-bold text-white border-b-4 border-indigo-800 hover:bg-indigo-700 hover:border-indigo-900 transition-all"
+                className="mt-6 inline-block bg-orange-600 px-8 py-3 text-base font-bold text-white border-b-4 border-orange-800 hover:bg-orange-700 hover:border-orange-900 transition-all"
               >
                 Open the optimiser
               </Link>

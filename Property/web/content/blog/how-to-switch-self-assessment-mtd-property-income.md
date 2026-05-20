@@ -171,7 +171,7 @@ faqs:
 <p>The more frequent reporting cycle can actually help with tax planning. You'll have better visibility of your annual position throughout the year, making it easier to:</p>
 <ul>
 <li>Plan timing of major repairs or improvements</li>
-<li>Optimize allowable expense claims</li>
+<li>Optimise allowable expense claims</li>
 <li>Consider <a href="/incorporation">incorporation strategies</a> for portfolio growth</li>
 <li>Manage capital gains tax planning</li>
 </ul>
@@ -194,5 +194,5 @@ faqs:
 <li>Plan your data migration timeline</li>
 <li>Register with HMRC well before the deadline</li>
 </ul>
-<p>Remember that MTD is just one aspect of property tax compliance. You'll still need to manage <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">broader property investment tax</a> requirements, including capital gains planning and ongoing deduction optimization.</p>
+<p>Remember that MTD is just one aspect of property tax compliance. You'll still need to manage <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">broader property investment tax</a> requirements, including capital gains planning and ongoing deduction optimisation.</p>
 <p>The switch from Self Assessment to MTD for property income represents a significant change in how landlords manage their tax affairs. While the transition requires effort and investment, the improved record-keeping and regular reporting cycle can ultimately benefit your property business management.</p>

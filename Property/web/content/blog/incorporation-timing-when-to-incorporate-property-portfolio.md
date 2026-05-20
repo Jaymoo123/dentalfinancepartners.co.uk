@@ -28,7 +28,7 @@ faqs:
   - question: "Is it better to incorporate before or after buying more properties?"
     answer: "Generally, it's more tax-efficient to incorporate before expanding your portfolio. This avoids future capital gains on new acquisitions and allows you to retain rental profits tax-efficiently for reinvestment. However, the decision depends on your current tax position and the scale of your expansion plans."
   - question: "How do property values affect incorporation timing?"
-    answer: "High property values can trigger substantial CGT bills when transferring properties to a company. Some landlords time incorporation during market corrections or stable periods to minimize CGT exposure, while others incorporate quickly ahead of expected CGT rate increases."
+    answer: "High property values can trigger substantial CGT bills when transferring properties to a company. Some landlords time incorporation during market corrections or stable periods to minimise CGT exposure, while others incorporate quickly ahead of expected CGT rate increases."
 ---
 
 <p>Deciding when to incorporate your property portfolio is one of the most significant financial decisions you'll make as a UK landlord. Get the timing wrong, and you could face unnecessary tax bills, capital gains charges, or miss out on substantial savings.</p>
@@ -111,7 +111,7 @@ faqs:
 <p>Incorporation typically benefits higher and additional rate taxpayers most. If you're a basic rate taxpayer with minimal mortgage debt, the advantages may be limited and could be outweighed by the additional compliance costs. Consider your total income picture. If rental profits push you into higher rate tax bands, or if you have significant mortgage interest that's restricted under Section 24, incorporation becomes more attractive.</p>
 <h3>Market Conditions and Property Values</h3>
 <p>Property market conditions can influence optimal incorporation timing, particularly regarding Capital Gains Tax (CGT) implications. If your properties have experienced significant appreciation, the CGT bill on incorporation (if assets are transferred at market value) could be substantial.</p>
-<p>Some landlords prefer to incorporate when property values are relatively stable or after a market correction, minimizing the CGT exposure. Others might accelerate incorporation ahead of expected CGT rate increases or changes to annual exemptions.</p>
+<p>Some landlords prefer to incorporate when property values are relatively stable or after a market correction, minimising the CGT exposure. Others might accelerate incorporation ahead of expected CGT rate increases or changes to annual exemptions.</p>
 <p>Property market conditions can influence incorporation timing. Incorporating during a market dip reduces the potential capital gains exposure, as properties transfer at lower valuations. Similarly, interest rate environments matter. When mortgage rates are high, the Section 24 impact increases, making incorporation more attractive.</p>
 
 <h2>When Incorporation Might Not Make Sense (Bad Timing)</h2>

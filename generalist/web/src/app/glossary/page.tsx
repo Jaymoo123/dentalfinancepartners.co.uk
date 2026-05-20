@@ -9,11 +9,11 @@ import { GLOSSARY } from "./[slug]/data";
 export const metadata: Metadata = {
   title: `Glossary | ${siteConfig.name}`,
   description:
-    "Plain-English definitions of UK tax, finance, and accounting terms for agency founders. BADR, IR35, MTD, R&D credits, VAT schemes and more.",
+    "Plain-English definitions of UK tax, finance, and accounting terms for business owners. BADR, IR35, MTD, R&D credits, VAT schemes and more.",
   alternates: { canonical: `${siteConfig.url}/glossary` },
   openGraph: {
-    title: "Glossary | UK Agency Tax & Finance Terms Explained",
-    description: "Plain-English definitions for UK agency founders.",
+    title: "Glossary | UK Business Tax & Finance Terms Explained",
+    description: "Plain-English definitions for UK business owners.",
     url: `${siteConfig.url}/glossary`,
     type: "website",
   },
@@ -41,15 +41,15 @@ export default function GlossaryIndexPage() {
             ]}
           />
           <div className="mt-6 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-indigo-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
+            <div className="inline-flex items-center gap-2 bg-orange-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
               <BookOpen className="h-3.5 w-3.5" />
               Plain English definitions
             </div>
             <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-              UK agency tax &amp; finance glossary
+              UK business tax &amp; finance glossary
             </h1>
             <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-              {entries.length} definitions of the terms UK agency founders actually need to understand. Written by ICAEW qualified accountants. All figures verified for 2025/26.
+              {entries.length} definitions of the terms UK business owners actually need to understand. Written by ICAEW qualified accountants. All figures verified for 2025/26.
             </p>
           </div>
         </div>
@@ -68,12 +68,12 @@ export default function GlossaryIndexPage() {
                     <Link
                       key={e.slug}
                       href={`/glossary/${e.slug}`}
-                      className="group block bg-slate-50 border border-slate-200 p-5 hover:bg-white hover:border-indigo-600 hover:shadow-md transition-all"
+                      className="group block bg-slate-50 border border-slate-200 p-5 hover:bg-white hover:border-orange-600 hover:shadow-md transition-all"
                     >
-                      <h3 className="text-lg font-bold text-slate-900 group-hover:text-indigo-700 transition-colors">
+                      <h3 className="text-lg font-bold text-slate-900 group-hover:text-orange-700 transition-colors">
                         {e.term}
                       </h3>
-                      <div className="mt-3 flex items-center text-indigo-600 font-semibold text-sm">
+                      <div className="mt-3 flex items-center text-orange-600 font-semibold text-sm">
                         Read definition
                         <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                       </div>

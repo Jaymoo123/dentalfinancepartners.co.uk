@@ -77,7 +77,7 @@ faqs:
 <ul>
 <li>Each partner taxed individually on their share of profits</li>
 <li>Subject to Section 24 restrictions like sole traders</li>
-<li>Can optimize by allocating larger shares to lower-rate taxpayers</li>
+<li>Can optimise by allocating larger shares to lower-rate taxpayers</li>
 <li>More administrative burden than sole trader ownership</li>
 </ul>
 
@@ -176,5 +176,5 @@ faqs:
 <h3>Tax Evolution</h3>
 <p>While we know property income tax rates are increasing from April 2027, other changes could include corporation tax rate adjustments, further restrictions on interest relief, changes to CGT rates or reliefs, and new property taxes or charges.</p>
 <h3>Market Conditions</h3>
-<p>Consider how your chosen structure performs under different market scenarios. Company structures often provide more flexibility during market downturns, allowing losses to be carried forward and optimizing the timing of disposals.</p>
+<p>Consider how your chosen structure performs under different market scenarios. Company structures often provide more flexibility during market downturns, allowing losses to be carried forward and optimising the timing of disposals.</p>
 <p>The smartest property company structure for 2026 and beyond balances current tax efficiency with future flexibility. While incorporation offers compelling benefits for many landlords, especially those with substantial mortgage debt or higher-rate tax positions, the decision requires careful analysis of your specific situation and long-term objectives.</p>

@@ -95,7 +95,7 @@ faqs:
 <p>From April 2026, landlords with gross rental income over £10,000 must maintain digital records and submit quarterly updates. For employed landlords, this means integrating property records with your existing employment tax affairs. Most employed landlords will need accounting software that can handle both rental income tracking and integration with Self Assessment requirements.</p>
 
 <h2>When to Seek Professional Advice</h2>
-<p>The interaction between Section 24 and employment income creates complex planning scenarios that often benefit from professional input. <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Property accountants</a> can model different scenarios and identify optimization opportunities.</p>
+<p>The interaction between Section 24 and employment income creates complex planning scenarios that often benefit from professional input. <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Property accountants</a> can model different scenarios and identify optimisation opportunities.</p>
 <p><strong>Consider professional advice if:</strong></p>
 <ul>
 <li>Your combined income exceeds £100,000 (personal allowance tapering)</li>

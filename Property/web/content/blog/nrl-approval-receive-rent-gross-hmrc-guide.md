@@ -241,7 +241,7 @@ faqs:
 
 <h2>Common Mistakes to Avoid</h2>
 
-<p>Several common errors can delay or jeopardize your NRL approval application.</p>
+<p>Several common errors can delay or jeopardise your NRL approval application.</p>
 
 <h3>Application Errors</h3>
 
@@ -265,8 +265,8 @@ faqs:
 
 <p>While you can complete the NRL1 application yourself, professional support can be valuable, particularly for complex situations or if you have previous compliance issues.</p>
 
-<p>A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can help with application preparation, ongoing compliance, and tax planning to maximize the benefits of NRL approval.</p>
+<p>A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can help with application preparation, ongoing compliance, and tax planning to maximise the benefits of NRL approval.</p>
 
 <p>For landlords with significant portfolios or complex structures, consider whether <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation through a limited company</a> might offer better tax efficiency than operating as an individual non-resident landlord.</p>
 
-<p>If you're planning to apply for NRL approval or need help with non-resident landlord tax obligations, speaking to a specialist can help ensure you meet all requirements and maximize your tax efficiency.</p>
+<p>If you're planning to apply for NRL approval or need help with non-resident landlord tax obligations, speaking to a specialist can help ensure you meet all requirements and maximise your tax efficiency.</p>

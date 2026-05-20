@@ -7,7 +7,7 @@ author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
 metaTitle: 'Section 24 vs Incorporation: Which Saves More Tax? | PTP'
 metaDescription: Compare Section 24 mortgage interest restrictions vs incorporation for UK landlords. Real examples show which structure saves more tax on property income.
-altText: UK property investor analyzing Section 24 tax implications versus company incorporation options
+altText: UK property investor analysing Section 24 tax implications versus company incorporation options
 image: ''
 h1: 'Section 24 vs. Incorporation: Which Saves More Tax for UK Landlords?'
 summary: Section 24 mortgage interest restrictions hit landlords hard, but incorporation isn't always the answer. We compare both options with real examples to show which saves more tax.
@@ -17,7 +17,7 @@ faqs:
   answer: Tax savings depend on your personal tax rate and mortgage interest levels. Higher rate taxpayers with significant leverage typically save £10,000-£40,000+ annually. Basic rate taxpayers see smaller savings, often £1,000-£5,000 per year. The exact amount depends on your rental income, mortgage interest, and personal circumstances.
 - question: What are the main costs of incorporating a property portfolio?
   answer: Ongoing costs include annual accounts (£500-£2,000), corporation tax returns (£300-£800), and Companies House fees (£13-£40). One-off transfer costs can include Stamp Duty Land Tax, Capital Gains Tax, legal fees, and mortgage arrangement fees. These typically range from £5,000-£25,000+ depending on portfolio size and complexity.
-- question: When does Section 24 vs incorporation favor staying as an individual?
+- question: When does Section 24 vs incorporation favour staying as an individual?
   answer: Individual ownership may be better if you're a basic rate taxpayer with low mortgage interest, need regular income extraction, or have a small portfolio (under £30,000 annual rental income). The additional complexity and costs of a company structure may not justify the limited tax savings in these circumstances.
 - question: Can I transfer existing properties into a company to avoid Section 24?
   answer: Yes, but transferring existing properties triggers Stamp Duty Land Tax and potentially Capital Gains Tax. You'll also need to refinance mortgages in the company name, which can involve arrangement fees and different interest rates. Many lenders offer buy-to-let mortgages to limited companies, though rates are often slightly higher than personal mortgages.
@@ -192,9 +192,9 @@ Net after-tax: £14,906</p>
 
 <p>These calculations show the potential benefits, but your specific circumstances matter enormously. Factors like existing capital gains, mortgage arrangements, and future plans all influence the optimal structure. Tax isn't everything. Consider your long-term plans, risk tolerance, and administrative preferences. Some landlords prefer the simplicity of individual ownership despite higher tax costs.</p>
 
-<p>With Making Tax Digital for Income Tax Property starting in April 2026, individual landlords will face increased compliance burdens. This adds another factor favoring incorporation for larger portfolios. If you're considering incorporation, acting before significant portfolio growth can minimize transfer costs and maximize long-term savings.</p>
+<p>With Making Tax Digital for Income Tax Property starting in April 2026, individual landlords will face increased compliance burdens. This adds another factor favouring incorporation for larger portfolios. If you're considering incorporation, acting before significant portfolio growth can minimise transfer costs and maximise long-term savings.</p>
 
-<p>Our <a href="/calculators">calculators</a> can provide initial estimates, but complex portfolios need detailed analysis. The potential savings often justify the cost of professional advice to get the structure right. Before making any decision, model your specific situation or speak to a specialist who can analyze your complete financial picture.</p>
+<p>Our <a href="/calculators">calculators</a> can provide initial estimates, but complex portfolios need detailed analysis. The potential savings often justify the cost of professional advice to get the structure right. Before making any decision, model your specific situation or speak to a specialist who can analyse your complete financial picture.</p>
 
 <p>For most higher rate taxpayers with significant mortgage interest, incorporation delivers substantial tax savings. The question isn't whether it saves tax—it's whether the savings justify the additional complexity and costs.</p>
 

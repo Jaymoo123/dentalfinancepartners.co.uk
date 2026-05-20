@@ -1,127 +1,142 @@
 ---
-title: 'Multi-Site Dental Group VAT: Partial Exemption and Cost Sharing Explained'
+title: 'Multi-Site Dental Group VAT: Partial Exemption & Cost Sharing'
 slug: multi-site-dental-group-vat-partial-exemption-cost-sharing
 canonical: https://www.dentalfinancepartners.co.uk/blog/vat-and-compliance/multi-site-dental-group-vat-partial-exemption-cost-sharing
-date: '2026-05-19'
+date: '2026-05-20'
 author: Dental Finance Partners Editorial Team
 category: VAT & Compliance
 metaTitle: 'Multi-Site Dental Group VAT: Partial Exemption & Cost'
-metaDescription: How partial exemption and cost sharing affect multi-site dental groups. Learn the rules for VAT recovery, standard methods, and cost sharing groups.
-altText: Dental practice reception area with multiple treatment room doors visible, UK multi-site dental group setting
-image: https://images.pexels.com/photos/5622259/pexels-photo-5622259.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
-h1: 'Multi-Site Dental Group VAT: Partial Exemption and Cost Sharing Explained'
-summary: 'Multi-site dental groups face a specific VAT problem: they make both exempt (dental treatment) and taxable (cosmetic, retail) supplies. This guide explains partial exemption, the standard method, special methods, and how a cost sharing group can help recover input tax on shared overheads.'
+metaDescription: £90k threshold, partial exemption, and cost sharing for multi-site dental groups. We explain the rules for mixed NHS/private practices. UK 2025/26
+altText: UK multi-site dental practice reception area with modern interior design
+image: https://images.pexels.com/photos/3945603/pexels-photo-3945603.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
+h1: 'Multi-Site Dental Group VAT: Partial Exemption & Cost Sharing'
+summary: A practical guide to VAT partial exemption and cost sharing for multi-site dental groups in the UK. Covers the £90,000 registration threshold, the Schedule 9 Group 7 exemption for dental treatment, and how to structure cost sharing arrangements across multiple practices.
 schema: ''
 faqs:
-- question: What is the de minimis limit for partial exemption in a dental group?
-  answer: 'The de minimis limit allows a partly exempt business to treat all input tax as recoverable if two conditions are met: the total input tax attributable to exempt supplies is no more than £625 per month on average, and that amount is also no more than 50% of the total input tax for the period. For a multi-site dental group with significant central costs, the de minimis test often fails, meaning a full partial exemption calculation is required. The limit is applied per VAT return period, not per site.'
-- question: Can a multi-site dental group use a single VAT registration?
-  answer: Yes, a multi-site dental group can operate under a single VAT registration if the group is structured as a single legal entity (for example, a company with multiple branches) or as a VAT group. A VAT group allows several companies under common control to be treated as a single taxable person for VAT purposes. This simplifies VAT administration but means the partial exemption calculation is done at group level, not per site. If sites have different exempt-to-taxable ratios, a group-level method may need a special method to produce a fair result.
-- question: What records must a dental group keep for partial exemption?
-  answer: A dental group must keep records that demonstrate how input tax has been attributed to taxable and exempt supplies, and how residual input tax has been apportioned. This includes invoices, contracts, time records, floor area measurements, and any other evidence supporting the chosen method. HMRC can request these records during a compliance check. If the group uses a special method, the approval letter from HMRC must also be retained. Records should be kept for at least six years after the end of the relevant VAT period.
-- question: Does a cost sharing group need to register for VAT?
-  answer: Yes, a cost sharing group (CSG) must register for VAT as a separate legal entity. The CSG will incur VAT on its purchases from third-party suppliers. It will not charge VAT on its recharges to members, provided the recharges meet the conditions set out in the VAT Act. The CSG must file its own VAT returns and can recover input tax on its own costs (for example, professional fees for setting up the CSG). The CSG's VAT registration is separate from the members' registrations.
-dateModified: '2026-05-19'
-sourcesVerifiedAt: '2026-05-19'
+- question: What is the VAT registration threshold for a multi-site dental group?
+  answer: The VAT registration threshold is £90,000 of taxable turnover in a rolling 12-month period. Exempt dental treatment, whether NHS or private, does not count towards this threshold. Only standard-rated or zero-rated supplies count, such as cosmetic treatments without a medical purpose, retail sales of dental products, and certain rental income. If your group's taxable turnover exceeds £90,000, you must register for VAT, even if most of your income is exempt.
+- question: Can a multi-site dental group recover VAT on costs?
+  answer: Yes, but only partially. Because most dental treatment is exempt from VAT, a dental group is a partially exempt business. You can only recover the VAT on costs that relate to your taxable supplies. The proportion is calculated using a standard method or a special method agreed with HMRC. The de minimis rule allows full recovery if your exempt input VAT is below £625 per month on average, but this rarely applies to multi-site groups with significant overheads.
+- question: What is a cost sharing group for a multi-site dental practice?
+  answer: A cost sharing group (CSG) is a separate legal entity that provides shared services, such as centralised billing, HR, IT support, or procurement, to its member practices at cost. If structured correctly, the recharges from the CSG to the practices are exempt from VAT. This can save a multi-site group significant irrecoverable VAT. However, HMRC scrutinises these arrangements closely. You need a formal agreement, a clear cost allocation methodology, and evidence that the CSG operates at cost.
+- question: What happens if a multi-site dental group gets the partial exemption calculation wrong?
+  answer: If HMRC reviews your VAT returns and finds that you have incorrectly calculated your partial exemption recovery, they can issue an assessment for the underpaid VAT. Interest and penalties may also apply. In serious cases, HMRC can look back up to four years (or longer if deliberate non-disclosure is involved). The best defence is a clear, documented, and auditable partial exemption calculation for each VAT period, supported by a special method if appropriate.
+dateModified: '2026-05-20'
+sourcesVerifiedAt: '2026-05-20'
 sourceDomains:
 - gov.uk
-- icaew.com
+- retiring-dentist.co.uk
 imageCredit:
-  photographer: Gustavo Fring
-  photographer_url: https://www.pexels.com/@gustavo-fring
+  photographer: Andrea Piacquadio
+  photographer_url: https://www.pexels.com/@olly
   source: Pexels
-  source_url: https://www.pexels.com/photo/dentist-explaining-the-x-ray-result-5622259/
+  source_url: https://www.pexels.com/photo/dentist-with-assistant-treating-teeth-of-patient-3945603/
 ---
 <h2>What Is Partial Exemption for a Multi-Site Dental Group?</h2>
 
-<p>A multi-site dental group typically makes two types of supplies for VAT purposes. The first is exempt supplies: dental treatment carried out by a registered dental professional in the course of their profession. This includes NHS treatment and most private treatment where the primary purpose is the protection, maintenance or restoration of health. The second is taxable supplies: purely cosmetic treatments without a medical purpose, retail sales of dental products, and certain other services.</p>
+<p>If you run a multi-site dental group in the UK, VAT is rarely straightforward. Most dental treatment is exempt from VAT under Schedule 9, Group 7 of the VAT Act 1994 <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. But your group also buys goods and services that carry VAT, chairs, compressors, X-ray equipment, lab fees, rent, utilities, professional fees. When you make both exempt supplies (dental treatment) and taxable supplies (cosmetic treatments, retail sales of dental products), you enter the territory of <strong>partial exemption</strong>.</p>
 
-<p>Under UK VAT law, a business that makes both taxable and exempt supplies is partly exempt. The consequence is that input tax on costs used exclusively for exempt supplies cannot be recovered. Input tax on costs used exclusively for taxable supplies can be recovered in full. Input tax on costs that relate to both types of supply (overheads) must be apportioned using a partial exemption method. The primary UK VAT law concerned with the right to deduct input tax and partial exemption is contained in sections 24 to 26 of the Value Added Tax Act 1994, supplemented by regulations 99 to 110 of the Value Added Tax Regulations 1995 <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
+<p>Partial exemption means you can only recover the VAT on costs that relate to your taxable supplies. The VAT on costs that relate to exempt supplies is irrecoverable. For a multi-site group with a mixed NHS/private income split, the calculation can become complex quickly. A group with 15% NHS and 85% private income, for example, will have a different recovery position than one with a 50/50 split <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
 
-<p>For a single-site dental practice, the partial exemption calculation is often straightforward. For a multi-site group with different mixes of NHS, private, and cosmetic work across locations, the calculation becomes materially more complex. Each site may have a different exempt-to-taxable ratio, and central overheads (head office costs, marketing, IT systems, management salaries) must be apportioned across all sites.</p>
+<p>This article explains the core rules, the cost sharing exemption, and the practical steps a multi-site dental group should take to stay compliant and avoid a surprise VAT bill.</p>
 
-<h2>Why Multi-Site Groups Face a Specific VAT Problem</h2>
+<h2>When Does a Dental Group Need to Register for VAT?</h2>
 
-<p>The exemption for services performed by registered health professionals is set out in Schedule 9, Group 7, Items 1 to 3 of the VAT Act 1994 <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. By 'health professional', HMRC means professionals enrolled or registered on the appropriate statutory register, including dentists, dental hygienists, dental therapists, dental nurses, clinical dental technicians, dental technicians and orthodontic therapists <sup><a href="#ref-2" id="cite-2">[2]</a></sup>. If you are a health professional, your services are exempt when both conditions are met: the services are within the profession in which you are registered to practice, and the primary purpose of the services is the protection, maintenance or restoration of the health of the person concerned <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
+<p>The VAT registration threshold is £90,000 of taxable turnover in a rolling 12-month period <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. For a dental group, "taxable turnover" means the value of supplies that are <strong>not</strong> exempt. Exempt dental treatment, whether NHS or private, does not count towards the £90,000 threshold. Only your standard-rated or zero-rated supplies count.</p>
 
-<p>In a multi-site group, each practice may have a different patient demographic. One site might be 80% NHS with minimal cosmetic work. Another might be 60% private with a significant cosmetic dentistry offering. A third might have a retail shop selling electric toothbrushes and whitening kits. The VAT treatment of supplies differs across these sites, yet the group may centralise purchasing, marketing, and administration.</p>
-
-<p>The central problem is this: if the group buys a single IT system used by all sites, or runs a marketing campaign promoting both general dentistry and cosmetic treatments, the input VAT on those costs relates to both exempt and taxable supplies. The group must apportion that input tax using a method that HMRC has approved. Getting the method wrong can lead to under-recovery of input tax (costing the group money) or over-recovery (triggering assessments, interest, and penalties).</p>
-
-<h2>The Standard Partial Exemption Method</h2>
-
-<p>The standard method for calculating the recoverable proportion of residual input tax is set out in the VAT Regulations 1995. It uses the following formula:</p>
-
-<p>Recoverable percentage = (Taxable supplies / Total supplies) x 100</p>
-
-<p>The resulting percentage is applied to the residual input tax (the VAT on overhead costs that relate to both taxable and exempt supplies). Input tax directly attributable to taxable supplies is recovered in full. Input tax directly attributable to exempt supplies is not recovered at all.</p>
-
-<p>For a multi-site dental group, the standard method can produce a fair result if the group's mix of taxable and exempt supplies is relatively stable across sites. However, if one site has a much higher proportion of taxable cosmetic work than another, the standard method applied at group level may over-recover input tax on costs that relate predominantly to the exempt-heavy site, or under-recover on costs that relate to the taxable-heavy site.</p>
-
-<p>There is also a de minimis limit. If the total input tax attributable to exempt supplies is no more than £625 per month on average and also no more than 50% of the total input tax, the group can treat all input tax as recoverable. For a multi-site group with significant central costs, the de minimis test often fails, meaning a full partial exemption calculation is required.</p>
-
-<h2>Special Methods for Multi-Site Dental Groups</h2>
-
-<p>Where the standard method does not give a fair result, a multi-site dental group can apply to HMRC for a special method. The VAT partial exemption method for a multi-site dental group must be approved by HMRC <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. From 1 August 2022, you can no longer send an email for a special method request; applications must be submitted through the online portal or by post <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
-
-<p>Common special methods used by dental groups include:</p>
-
+<p>Common examples of taxable supplies in a dental group include:</p>
 <ul>
-<li><strong>Sector-based method:</strong> The group divides its activities into sectors (e.g., exempt dental treatment, taxable cosmetic treatment, retail sales). Residual input tax is apportioned based on the proportion of time or floor space used for each sector, or based on the direct attribution of costs to each sector.</li>
-<li><strong>Transaction count method:</strong> The group apportions residual input tax based on the number of exempt transactions versus taxable transactions. This works well where the value per transaction is similar across both types.</li>
-<li><strong>Gross receipts method (site-level):</strong> Each site calculates its own partial exemption percentage based on its own mix of supplies. Central overheads are then apportioned to each site using a fair basis (e.g., headcount, turnover, or floor area), and each site's percentage is applied to its share of central costs.</li>
-<li><strong>Combined method:</strong> A hybrid approach using different bases for different categories of overhead cost. For example, marketing costs might be apportioned by turnover, while IT costs might be apportioned by user count.</li>
+<li>Purely cosmetic treatments without a medical purpose (tooth whitening is a known borderline case HMRC scrutinises)</li>
+<li>Retail sales of toothbrushes, toothpaste, mouthwash, and other dental products</li>
+<li>Dental laboratory services supplied to third parties</li>
+<li>Rental income from sub-letting surgeries to associates (if structured as a taxable supply)</li>
 </ul>
 
-<p>HMRC will only approve a special method if it produces a fair and reasonable result. The method must be applied consistently from year to year unless the group's circumstances change materially. If the group's mix of supplies changes significantly (for example, after acquiring a new practice with a different patient profile), the method may need to be reviewed and potentially revised.</p>
+<p>If your group's taxable turnover exceeds £90,000, you must register for VAT. But because most of your income is exempt, you will be a <strong>partially exempt</strong> business. That means you cannot recover all the VAT on your costs.</p>
 
-<h2>Cost Sharing Groups for Dental Groups</h2>
+<h2>How Partial Exemption Works for a Dental Group</h2>
 
-<p>A cost sharing group (CSG) is a mechanism under EU VAT law (retained in UK law post-Brexit) that allows a group of businesses making exempt or non-taxable supplies to share costs without triggering additional VAT. The CSG must be a separate legal entity that is independent of its members <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. The CSG must only provide services to its members that are directly necessary for their exempt or non-taxable activities <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. The CSG must only recharge the exact costs incurred, without any profit element <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. The CSG must not distort competition <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. The CSG must be established for the purpose of providing services to its members <sup><a href="#ref-3" id="cite-3">[3]</a></sup>.</p>
+<p>Under the partial exemption rules, you calculate how much input VAT you can recover using a standard method or a special method agreed with HMRC. The standard method uses the proportion of taxable supplies to total supplies.</p>
 
-<p>For a multi-site dental group, a CSG can be a powerful tool. If the group's member practices are all making exempt supplies (dental treatment), they cannot recover VAT on their shared costs. By forming a CSG, the group can centralise functions such as HR, payroll, IT, marketing, and procurement. The CSG buys these services from third-party suppliers, incurring VAT. The CSG then recharges the exact cost (including the VAT) to its members, but the recharge itself is outside the scope of VAT because the CSG is not making a supply for consideration. The members effectively share the cost inclusive of VAT, but no additional VAT is charged on the recharge.</p>
+<p>For a multi-site dental group with a turnover of £2,100,000 and an 85% private / 15% NHS split, the calculation might look like this <sup><a href="#ref-2" id="cite-2">[2]</a></sup>:</p>
+<ul>
+<li>Total supplies: £2,100,000</li>
+<li>Exempt supplies (dental treatment): £1,785,000 (85%)</li>
+<li>Taxable supplies (cosmetics, retail, etc.): £315,000 (15%)</li>
+<li>Recovery percentage: 15%</li>
+</ul>
 
-<p>The key limitation is that the CSG can only provide services that are directly necessary for the members' exempt or non-taxable activities. If a member practice also makes taxable supplies (cosmetic treatments, retail sales), the CSG must apportion its costs between the exempt and taxable activities of that member. The CSG cannot be used to avoid VAT on costs that relate to taxable activities.</p>
+<p>If the group incurs £200,000 of input VAT in a quarter, it can recover only £30,000 (15%). The remaining £170,000 is irrecoverable and becomes a real cost to the business. That is why getting the partial exemption calculation right, and considering a special method, matters so much for a multi-site group.</p>
 
-<p>Setting up a CSG requires careful legal and accounting work. The group must create a separate legal entity (typically a company limited by guarantee or an LLP). The members must enter into a cost sharing agreement. The CSG must maintain its own accounts and file its own VAT returns. HMRC may scrutinise the arrangement to ensure it meets the conditions. Professional advice is essential before proceeding.</p>
+<p>There is a de minimis rule. If your total input VAT is below £625 per month on average and your exempt input VAT is below £625 per month, you can recover all of it. But for most multi-site groups with significant overheads, the de minimis threshold is too low to help.</p>
 
-<h2>Practical Steps for Multi-Site Dental Groups</h2>
+<h2>Cost Sharing Exemption: Can a Multi-Site Group Use It?</h2>
 
-<p>If you operate a multi-site dental group, here are the practical steps to address partial exemption and cost sharing:</p>
+<p>The cost sharing exemption (CSE) under Article 132(1)(f) of the EU VAT Directive is implemented in UK law. It allows groups of exempt businesses to share costs without triggering a VAT charge on the recharged costs. The idea is that a cost sharing group (CSG) can provide services to its members at cost, and those supplies are exempt from VAT.</p>
 
-<ol>
-<li><strong>Map your supplies:</strong> Identify which supplies are exempt (dental treatment by registered professionals) and which are taxable (cosmetic treatments without medical purpose, retail sales, certain other services). Document the basis for each classification.</li>
-<li><strong>Analyse your cost base:</strong> Separate costs into three categories: directly attributable to taxable supplies (recoverable in full), directly attributable to exempt supplies (not recoverable), and residual (overheads that relate to both).</li>
-<li><strong>Test the standard method:</strong> Run the standard partial exemption calculation for a full VAT period. Check whether the de minimis limit applies. If the result is fair, you may not need a special method.</li>
-<li><strong>Consider a special method:</strong> If the standard method gives an unfair result (for example, because one site has a much higher proportion of taxable work), apply to HMRC for a special method. Use a basis that reflects the economic reality of your group.</li>
-<li><strong>Evaluate a cost sharing group:</strong> If your group has significant central costs that are not recoverable because all members make mainly exempt supplies, a CSG may be worth exploring. Take professional advice on the legal structure and HMRC compliance requirements.</li>
-<li><strong>Review regularly:</strong> Partial exemption methods and CSG arrangements should be reviewed at least annually, and whenever the group acquires or disposes of a practice, changes its service mix, or restructures its operations.</li>
-</ol>
+<p>For a multi-site dental group, the CSE could apply if you set up a separate entity that provides shared services, such as centralised billing, HR, IT support, marketing, or procurement, to the individual practice sites. The key conditions are:</p>
+<ul>
+<li>The CSG must be a separate legal entity (typically a company or LLP)</li>
+<li>All members must be carrying on exempt or non-taxable activities</li>
+<li>The CSG's services must be directly necessary for the members' exempt activities</li>
+<li>The CSG must only recharge the exact cost of the services (no profit margin)</li>
+<li>The CSG must not distort competition</li>
+</ul>
 
-<h2>Common Pitfalls to Avoid</h2>
+<p>If these conditions are met, the recharges from the CSG to the practice sites are exempt from VAT. That means the practice sites do not have to pay VAT on the recharged costs, and the CSG does not have to charge VAT. This can save a multi-site group a significant amount of irrecoverable VAT.</p>
 
-<p>Several pitfalls catch out multi-site dental groups on VAT:</p>
+<p>However, HMRC scrutinises cost sharing arrangements closely. The exemption is not automatic. You need to document the arrangement properly and ensure the CSG is genuinely operating at cost. A poorly structured CSG can result in HMRC assessing VAT on the recharges, plus interest and penalties.</p>
+
+<h2>Practical Steps for a Multi-Site Dental Group</h2>
+
+<p>If you operate a multi-site dental group, here are the practical steps to take:</p>
+
+<p><strong>1. Map your income streams.</strong> Identify every source of income across all sites. Separate exempt dental treatment from taxable supplies. Include associate rent, lab fees, retail sales, and cosmetic treatments. This mapping is the foundation of your partial exemption calculation.</p>
+
+<p><strong>2. Review your cost base.</strong> List all costs that carry VAT. Group them into three categories: costs used wholly for taxable supplies (fully recoverable), costs used wholly for exempt supplies (irrecoverable), and costs used for both (partially recoverable). Common "both" costs include rent, utilities, professional fees, and marketing.</p>
+
+<p><strong>3. Consider a special method.</strong> If the standard method produces an unfair result, for example, if your taxable supplies are a small proportion of total supplies but your taxable activities use a disproportionate share of overheads, you can apply to HMRC for a special method. A special method might use floor space, headcount, or direct attribution to allocate input VAT more fairly.</p>
+
+<p><strong>4. Evaluate a cost sharing group.</strong> If your group has three or more practice sites and significant shared costs, a CSG could save tens of thousands of pounds per year in irrecoverable VAT. But the setup costs and ongoing compliance burden are real. Work with a dental-specialist accountant to model the numbers before committing.</p>
+
+<p><strong>5. Keep clear records.</strong> HMRC can request a partial exemption calculation for any VAT period. If you cannot demonstrate how you arrived at the recovery percentage, HMRC may disallow the recovery and issue an assessment. For a multi-site group, the records should be centralised and auditable.</p>
+
+<h2>Common Pitfalls for Multi-Site Dental Groups</h2>
+
+<p>Several issues arise repeatedly when we review multi-site dental group VAT positions:</p>
 
 <ul>
-<li><strong>Assuming all dental treatment is exempt:</strong> Purely cosmetic treatments without a medical purpose can be standard-rated. Tooth whitening is a known borderline case that HMRC scrutinises. If you classify all private work as exempt, you may be under-recovering input tax on costs that relate to taxable cosmetic work.</li>
-<li><strong>Using a single method across all sites without justification:</strong> If your sites have materially different exempt-to-taxable ratios, a single group-level method may not be fair. HMRC can challenge the method and impose a different basis, potentially with retrospective effect.</li>
-<li><strong>Ignoring the Capital Goods Scheme:</strong> If the group acquires high-value assets (computers, dental equipment, practice premises) costing £50,000 or more (excluding VAT), the Capital Goods Scheme may apply, requiring adjustments over a period of up to 10 years. This interacts with partial exemption.</li>
-<li><strong>Setting up a CSG without proper legal structure:</strong> A CSG that charges a profit margin, provides services to non-members, or does not have a separate legal identity will not meet HMRC's conditions. The VAT advantages will be lost, and penalties may apply.</li>
-<li><strong>Failing to document the method:</strong> HMRC can request evidence of how the partial exemption method was applied, including the basis for attributing costs and the calculation of the recoverable percentage. Keep clear records.</li>
+<li><strong>Treating all private income as exempt.</strong> Not all private dental work is exempt. Cosmetic treatments without a medical purpose can be standard-rated. Tooth whitening is a known borderline case. HMRC looks at the medical purpose, not just whether the treatment is NHS or private <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</li>
+<li><strong>Ignoring associate rent.</strong> If you sub-let surgeries to associates, the rent may be a taxable supply for VAT purposes. This can push your taxable turnover over the £90,000 threshold and trigger a registration requirement.</li>
+<li><strong>Using a single VAT registration for multiple sites.</strong> A multi-site group can use a single VAT registration, but the partial exemption calculation must cover all sites. You cannot cherry-pick which sites to include.</li>
+<li><strong>Failing to review the de minimis threshold regularly.</strong> The de minimis limits are £625 per month on average for total input VAT and exempt input VAT. If your costs fluctuate, you might fall in and out of de minimis from quarter to quarter.</li>
+<li><strong>Not documenting the cost sharing arrangement.</strong> If you set up a CSG, you need a formal agreement, a clear cost allocation methodology, and evidence that the CSG is operating at cost. HMRC will ask for this documentation if they review the arrangement.</li>
 </ul>
 
 <h2>How a Dental-Specialist Accountant Can Help</h2>
 
-<p>Partial exemption and cost sharing are specialist areas of VAT law. A dental-specialist accountant can help you map your supplies, test the standard method, apply for a special method if needed, and evaluate whether a cost sharing group is right for your group. They can also ensure your VAT returns are compliant and that you are recovering the maximum input tax you are entitled to.</p>
+<p>VAT partial exemption and cost sharing are specialist areas. A general practice accountant may not have the dental-specific knowledge to get the calculation right. A dental-specialist accountant understands the nuances of Schedule 9 Group 7, the £90,000 threshold, and the cost sharing exemption <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p>
 
-<p>If you are considering acquiring another practice, restructuring your group, or reviewing your VAT position, speak to a dental-specialist accountant before making changes. The cost of getting VAT wrong on a multi-site group can run into tens of thousands of pounds in assessments, interest, and penalties.</p>
+<p>We can help you:</p>
+<ul>
+<li>Map your income streams across all sites</li>
+<li>Model the standard method versus a special method</li>
+<li>Evaluate whether a cost sharing group makes financial sense</li>
+<li>Prepare and submit a special method application to HMRC</li>
+<li>Set up and document a cost sharing arrangement</li>
+<li>Review your quarterly partial exemption calculations</li>
+<li>Defend your position in a VAT inspection</li>
+</ul>
 
-<p>For more guidance on practice accounting and VAT compliance, see our <a href="/services/practice-accounting">practice accounting services</a> page. If you are looking at acquiring a practice as part of a group expansion, our <a href="/for-practice-buyers">for practice buyers</a> page covers the financial due diligence considerations. And for a broader view of how VAT interacts with practice finances, our <a href="/services">services overview</a> page explains the full range of support we offer to dental groups.</p>
+<p>If you are a multi-site dental group owner, do not leave VAT to chance. A mistake in the partial exemption calculation can cost tens of thousands of pounds in irrecoverable VAT, or trigger an HMRC assessment with interest and penalties.</p>
+
+<p>Contact us for a <a href="/free-practice-health-check">free practice health check</a> to review your VAT position. We also offer <a href="/services/practice-accounting">practice accounting services</a> tailored to multi-site groups. For more on the fundamentals, see our <a href="/dental-guides">dental guides</a> on VAT and compliance.</p>
+
+<p>Speak to a dental-specialist accountant for advice specific to your group's circumstances.</p>
 
 <h2>Sources</h2>
 <ol>
-  <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/guidance/partial-exemption-vat-notice-706" rel="noopener noreferrer">Partial exemption (VAT Notice 706) - GOV.UK</a></li>
-  <li id="ref-2"><strong>gov.uk</strong>: <a href="https://www.gov.uk/guidance/health-professionals-pharmaceutical-products-and-vat-notice-70157" rel="noopener noreferrer">Health professionals and pharmaceutical products (VAT Notice 701...</a></li>
-  <li id="ref-3"><strong>icaew.com</strong>: <a href="https://www.icaew.com/technical/tax/tax-faculty/taxline/practical-points/practical-points-archive/business-tax-2023" rel="noopener noreferrer">Practical points: business tax 2023 - ICAEW.com</a></li>
+  <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/guidance/health-professionals-pharmaceutical-products-and-vat-notice-70157" rel="noopener noreferrer">Health professionals and pharmaceutical products (VAT Notice 701...</a></li>
+  <li id="ref-2"><strong>retiring-dentist.co.uk</strong>: <a href="https://www.retiring-dentist.co.uk/dental-practices-for-sale/london-dental-practice-for-sale/multi-site-mixed-dental-group-for-sale-with-turnover-in-excess-of-2million-for-sale.php" rel="noopener noreferrer">Multi-Site Mixed Dental Group for Sale with... - Retiring Dentist</a></li>
 </ol>
 

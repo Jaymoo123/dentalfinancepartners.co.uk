@@ -10,7 +10,7 @@ import { JsonLd, buildWebApplication, buildFaqPage } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Salary & Dividend Optimiser 2025/26 | Free UK Calculator",
   description:
-    "Free salary vs dividend calculator for UK limited company agency directors. Optimal split using 2025/26 tax rates. Built by ICAEW accountants.",
+    "Free salary vs dividend calculator for UK limited company directors. Optimal split using 2025/26 tax rates. Built by ICAEW accountants.",
   alternates: { canonical: `${siteConfig.url}/calculators/salary-dividend-optimiser` },
   openGraph: {
     title: "Salary & Dividend Optimiser 2025/26 | Free UK Calculator",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What rates does this calculator use?",
-    a: "UK 2025/26 tax year rates. Personal allowance £12,570. Basic rate 20% (£12,571-£50,270). Higher rate 40% (£50,271-£125,140). Additional rate 45% (above £125,140). Dividend rates 8.75% basic, 33.75% higher, 39.35% additional. Dividend allowance £500. Employer NI 13.8% above secondary threshold (£9,100). Employee NI 8% above primary threshold (£12,570). Corporation tax 19% small profits, 25% main rate.",
+    a: "UK 2025/26 tax year rates. Personal allowance £12,570. Basic rate 20% (£12,571-£50,270). Higher rate 40% (£50,271-£125,140). Additional rate 45% (above £125,140). Dividend rates 8.75% basic, 33.75% higher, 39.35% additional. Dividend allowance £500. Employer NI 15% above secondary threshold (£5,000). Employee NI 8% above primary threshold (£12,570). Corporation tax 19% small profits, 25% main rate.",
   },
   {
     q: "Does it cover the marginal corporation tax rate?",
@@ -64,7 +64,7 @@ export default function SalaryDividendCalculatorPage() {
             ]}
           />
           <div className="mt-6 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-indigo-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
+            <div className="inline-flex items-center gap-2 bg-orange-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
               <Calculator className="h-3.5 w-3.5" />
               Free calculator · 2025/26 rates
             </div>
@@ -72,7 +72,7 @@ export default function SalaryDividendCalculatorPage() {
               Salary &amp; Dividend Optimiser
             </h1>
             <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-              Find the most tax-efficient mix of salary and dividends for a UK limited company director. Uses current 2025/26 thresholds and rates.
+              Pay yourself too much salary and you waste personal allowance against National Insurance. Take too much dividend and you push yourself into higher-rate dividend tax. The calculator finds the split that leaves the most money in your pocket at 2025/26 rates, accounting for corporation tax, both flavours of NI, income tax and dividend tax in one pass.
             </p>
           </div>
         </div>
@@ -83,7 +83,7 @@ export default function SalaryDividendCalculatorPage() {
           <div className="max-w-4xl mx-auto">
             <SalaryDividendCalculator />
 
-            <div className="mt-12 border-l-4 border-indigo-600 bg-slate-50 p-6 sm:p-8">
+            <div className="mt-12 border-l-4 border-orange-600 bg-slate-50 p-6 sm:p-8">
               <h2 className="text-xl font-bold text-slate-900">How this works</h2>
               <p className="mt-3 text-base text-slate-700 leading-relaxed">
                 For a UK limited company director, the most tax-efficient extraction strategy typically combines a small salary (up to the primary NI threshold) with dividends drawn from post-tax profits. The calculator models corporation tax, employer NI, employee NI, income tax and dividend tax together so you see the true net position rather than each tax in isolation.
@@ -107,14 +107,14 @@ export default function SalaryDividendCalculatorPage() {
 
             <div className="mt-12 bg-slate-900 p-8 sm:p-10 text-white">
               <h2 className="text-2xl font-bold text-white sm:text-3xl">
-                Want a tailored extraction model for your agency?
+                The optimum split changes with the rest of your tax picture
               </h2>
               <p className="mt-3 text-base sm:text-lg text-slate-200 leading-relaxed">
-                Book a free call. We will model your actual position factoring in pensions, other income, retained earnings and your exit timeline.
+                Add a working spouse, a buy-to-let, a student loan, a pension contribution or a planned BADR exit and the answer shifts. We build a personal extraction model for owner-managed companies that accounts for the moving parts, then revisit it each year before March.
               </p>
               <Link
                 href="/contact"
-                className="mt-6 inline-block bg-indigo-600 px-8 py-3 text-base font-bold text-white border-b-4 border-indigo-800 hover:bg-indigo-700 hover:border-indigo-900 transition-all"
+                className="mt-6 inline-block bg-orange-600 px-8 py-3 text-base font-bold text-white border-b-4 border-orange-800 hover:bg-orange-700 hover:border-orange-900 transition-all"
               >
                 Book a free call
               </Link>

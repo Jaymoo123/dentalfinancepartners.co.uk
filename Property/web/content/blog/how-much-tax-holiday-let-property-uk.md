@@ -121,7 +121,7 @@ faqs:
 
 <h2>Tax Planning Strategies</h2>
 
-<p>Several strategies can help minimize <strong>holiday let income tax</strong>:</p>
+<p>Several strategies can help minimise <strong>holiday let income tax</strong>:</p>
 <h3>Timing Income and Expenses</h3>
 <p>Consider timing major expenses (furniture replacement, repairs) to offset high-income years. Similarly, if expecting lower income next year, you might delay December bookings until January.</p>
 <h3>Spouse/Civil Partner Transfers</h3>
@@ -142,7 +142,7 @@ faqs:
 
 <h2>Getting Professional Help</h2>
 
-<p>Holiday let taxation involves multiple complexities: income tax, VAT, business rates, capital gains, and potential incorporation benefits. A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> can help optimize your tax position and ensure compliance.</p>
+<p>Holiday let taxation involves multiple complexities: income tax, VAT, business rates, capital gains, and potential incorporation benefits. A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> can help optimise your tax position and ensure compliance.</p>
 <p>Professional advice is particularly valuable when:</p>
 <ul>
 <li>Deciding between personal ownership and incorporation</li>

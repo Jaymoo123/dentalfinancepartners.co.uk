@@ -5,11 +5,11 @@ canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief
 date: "2026-03-31"
 author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
-metaTitle: "Landlord Capital Allowances Guide: Maximize Tax Relief 2026"
+metaTitle: "Landlord Capital Allowances Guide: Maximise Tax Relief 2026"
 metaDescription: "Landlords can claim capital allowances on furniture, equipment, and integral features. What qualifies and how to maximise your relief."
 altText: "UK landlord reviewing capital allowances documentation for rental property equipment"
 image: ""
-h1: "Landlord Capital Allowances: Maximizing Tax Relief on Property Equipment"
+h1: "Landlord Capital Allowances: Maximising Tax Relief on Property Equipment"
 summary: "Landlord capital allowances can provide significant tax relief on equipment and fixtures in rental properties. Understanding what qualifies and how to claim properly can reduce your tax bill substantially."
 schema: ""
 faqs:
@@ -27,7 +27,7 @@ faqs:
 
 <p><strong>Landlord capital allowances</strong> are often overlooked by UK property investors, yet they represent one of the most effective ways to reduce your tax bill. These allowances let you claim tax relief on equipment and fixtures in your rental properties, but many landlords miss out because they don't understand what qualifies or how to claim properly.</p>
 
-<p>In this guide, we'll explain exactly how landlord capital allowances work, what equipment qualifies, and how to maximize your tax relief for the 2025/26 tax year and beyond.</p>
+<p>In this guide, we'll explain exactly how landlord capital allowances work, what equipment qualifies, and how to maximise your tax relief for the 2025/26 tax year and beyond.</p>
 
 <h2>What Equipment Qualifies for Capital Allowances?</h2>
 
@@ -139,7 +139,7 @@ faqs:
 
 <h2>Planning and Common Mistakes</h2>
 
-<p>Smart timing of capital expenditure can maximize your tax relief. Consider these strategies: If you're expecting higher rental income in a particular tax year, bringing forward equipment purchases can provide valuable tax relief. Conversely, if you're having a low-income year, you might delay non-essential purchases to a year when the tax relief is more valuable.</p>
+<p>Smart timing of capital expenditure can maximise your tax relief. Consider these strategies: If you're expecting higher rental income in a particular tax year, bringing forward equipment purchases can provide valuable tax relief. Conversely, if you're having a low-income year, you might delay non-essential purchases to a year when the tax relief is more valuable.</p>
 
 <p>Many landlords make costly errors when dealing with capital allowances. Here are the most common mistakes:</p>
 <ul>

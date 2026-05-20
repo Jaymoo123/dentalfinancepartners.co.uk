@@ -47,7 +47,7 @@ export function FundamentalsRenderer({ post, related = [] }: FundamentalsRendere
             className="object-cover scale-110 blur-sm"
           />
         ) : (
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-700 via-indigo-800 to-slate-900" />
+          <div className="absolute inset-0 bg-gradient-to-br from-orange-700 via-orange-800 to-slate-900" />
         )}
         <div className="absolute inset-0 bg-slate-900/75" />
         <div className={`${siteContainerLg} relative z-10 h-full flex items-end pb-10 sm:pb-14`}>
@@ -61,7 +61,7 @@ export function FundamentalsRenderer({ post, related = [] }: FundamentalsRendere
                 { label: post.title },
               ]}
             />
-            <p className="mt-6 inline-block bg-indigo-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1">
+            <p className="mt-6 inline-block bg-orange-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1">
               Pillar Guide · {post.category}
             </p>
             <h1 className="mt-4 text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl">
@@ -127,7 +127,7 @@ export function FundamentalsRenderer({ post, related = [] }: FundamentalsRendere
           <div className="max-w-4xl mx-auto lg:max-w-7xl lg:grid lg:grid-cols-[1fr_250px] lg:gap-12">
             <div className="max-w-4xl">
               {post.summary ? (
-                <p className="text-lg text-slate-700 leading-relaxed border-l-4 border-indigo-600 bg-slate-50 p-6">
+                <p className="text-lg text-slate-700 leading-relaxed border-l-4 border-orange-600 bg-slate-50 p-6">
                   {post.summary}
                 </p>
               ) : null}
@@ -158,16 +158,16 @@ export function FundamentalsRenderer({ post, related = [] }: FundamentalsRendere
               ) : null}
 
               <aside className="mt-16 flex gap-5 items-start bg-slate-50 border border-slate-200 p-6 sm:p-8 rounded-lg">
-                <div className="hidden sm:block shrink-0 w-14 h-14 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center">
+                <div className="hidden sm:block shrink-0 w-14 h-14 rounded-full bg-orange-100 text-orange-700 flex items-center justify-center">
                   <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-bold uppercase tracking-wider text-indigo-700">About this guide</p>
+                  <p className="text-sm font-bold uppercase tracking-wider text-orange-700">About this guide</p>
                   <p className="mt-1 text-lg font-bold text-slate-900">{niche.display_name}</p>
                   <p className="mt-2 text-sm text-slate-600 leading-relaxed">{niche.description}</p>
-                  <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-indigo-700 hover:text-indigo-800">
+                  <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-orange-700 hover:text-orange-800">
                     Learn more about our team →
                   </Link>
                 </div>
@@ -195,7 +195,7 @@ export function FundamentalsRenderer({ post, related = [] }: FundamentalsRendere
                       <li key={r.slug}>
                         <Link
                           href={`/fundamentals/${r.slug}`}
-                          className="block border-l-4 border-slate-300 bg-slate-50 p-6 transition-all hover:border-indigo-600 hover:bg-white hover:shadow-md"
+                          className="block border-l-4 border-slate-300 bg-slate-50 p-6 transition-all hover:border-orange-600 hover:bg-white hover:shadow-md"
                         >
                           <h3 className="text-lg font-bold text-slate-900">{r.title}</h3>
                           <p className="mt-2 text-sm text-slate-600">{r.summary}</p>

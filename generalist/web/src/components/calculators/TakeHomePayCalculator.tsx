@@ -96,7 +96,7 @@ export function TakeHomePayCalculator() {
               min={0}
               max={1000000}
               step={500}
-              className="w-48 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600"
+              className="w-48 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-orange-600"
             />
           </div>
           <input
@@ -106,7 +106,7 @@ export function TakeHomePayCalculator() {
             min={10000}
             max={250000}
             step={500}
-            className="w-full mt-4 accent-indigo-600"
+            className="w-full mt-4 accent-orange-600"
           />
         </div>
 
@@ -124,7 +124,7 @@ export function TakeHomePayCalculator() {
                 min={0}
                 max={50}
                 step={0.5}
-                className="w-24 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600"
+                className="w-24 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-orange-600"
               />
               <span className="text-slate-500">% of gross</span>
             </div>
@@ -138,7 +138,7 @@ export function TakeHomePayCalculator() {
               id="plan"
               value={plan}
               onChange={(e) => setPlan(e.target.value as StudentLoanPlan)}
-              className="w-full border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600 bg-white"
+              className="w-full border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-orange-600 bg-white"
             >
               <option value="none">None</option>
               <option value="plan1">Plan 1 (pre-2012 England/Wales)</option>
@@ -151,16 +151,16 @@ export function TakeHomePayCalculator() {
         </div>
       </div>
 
-      <div className="bg-indigo-700 text-white p-6 sm:p-8">
-        <p className="text-sm font-bold uppercase tracking-wider text-indigo-200">Take-home pay</p>
+      <div className="bg-orange-700 text-white p-6 sm:p-8">
+        <p className="text-sm font-bold uppercase tracking-wider text-orange-200">Take-home pay</p>
         <p className="text-4xl sm:text-5xl font-bold font-mono mt-1">{fmt(result.net)}</p>
-        <div className="mt-4 grid grid-cols-2 gap-4 pt-4 border-t border-indigo-500">
+        <div className="mt-4 grid grid-cols-2 gap-4 pt-4 border-t border-orange-500">
           <div>
-            <p className="text-xs text-indigo-200 uppercase tracking-wider">Monthly</p>
+            <p className="text-xs text-orange-200 uppercase tracking-wider">Monthly</p>
             <p className="text-2xl font-bold font-mono">{fmt(result.monthly)}</p>
           </div>
           <div>
-            <p className="text-xs text-indigo-200 uppercase tracking-wider">Weekly</p>
+            <p className="text-xs text-orange-200 uppercase tracking-wider">Weekly</p>
             <p className="text-2xl font-bold font-mono">{fmt(result.weekly)}</p>
           </div>
         </div>

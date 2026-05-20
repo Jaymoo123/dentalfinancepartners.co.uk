@@ -78,7 +78,7 @@ faqs:
 
 <h2>Allowable Expenses for New Landlords</h2>
 
-<p>Understanding which expenses you can claim is crucial for minimizing your tax bill. New landlords often miss legitimate deductions or incorrectly claim non-allowable items.</p>
+<p>Understanding which expenses you can claim is crucial for minimising your tax bill. New landlords often miss legitimate deductions or incorrectly claim non-allowable items.</p>
 
 <h3>Revenue vs Capital Expenses</h3>
 
@@ -102,7 +102,7 @@ faqs:
 <li>Major structural works</li>
 </ul>
 
-<p>The repair vs improvement distinction often causes confusion. Fixing a broken boiler is a repair (deductible). Installing a new kitchen is an improvement (capital). When in doubt, seek professional advice as HMRC scrutinizes these claims closely.</p>
+<p>The repair vs improvement distinction often causes confusion. Fixing a broken boiler is a repair (deductible). Installing a new kitchen is an improvement (capital). When in doubt, seek professional advice as HMRC scrutinises these claims closely.</p>
 
 <h3>Pre-Trading Expenses</h3>
 
@@ -153,7 +153,7 @@ faqs:
 <li>Safety certificates and compliance documents</li>
 </ul>
 
-<p>Digital record-keeping is acceptable, but ensure you have secure backups. Cloud storage with proper organization makes annual tax return preparation much simpler.</p>
+<p>Digital record-keeping is acceptable, but ensure you have secure backups. Cloud storage with proper organisation makes annual tax return preparation much simpler.</p>
 
 <h3>Making Tax Digital (MTD) Requirements</h3>
 
@@ -183,7 +183,7 @@ faqs:
 
 <h2>Professional Support and Ongoing Tax Planning</h2>
 
-<p>The complexity of property taxation means most new landlords benefit from professional support, at least initially. The cost of specialist advice is far outweighed by avoiding costly mistakes and maximizing legitimate tax savings. Property taxation isn't just about annual compliance; effective ongoing tax planning considers timing of purchases and sales, optimal financing structures, pension contributions to reduce marginal tax rates, and spousal transfers for tax efficiency.</p>
+<p>The complexity of property taxation means most new landlords benefit from professional support, at least initially. The cost of specialist advice is far outweighed by avoiding costly mistakes and maximising legitimate tax savings. Property taxation isn't just about annual compliance; effective ongoing tax planning considers timing of purchases and sales, optimal financing structures, pension contributions to reduce marginal tax rates, and spousal transfers for tax efficiency.</p>
 
 <h3>When to Seek Professional Help</h3>
 

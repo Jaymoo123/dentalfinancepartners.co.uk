@@ -47,7 +47,7 @@ const services = [
     icon: "🏢",
     title: "Incorporation Analysis",
     description: "Find out if transferring to a limited company makes financial sense.",
-    features: ["CGT and SDLT cost modeling", "Break-even timeline", "Clear recommendation"],
+    features: ["CGT and SDLT cost modelling", "Break-even timeline", "Clear recommendation"],
   },
   {
     icon: "💼",

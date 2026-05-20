@@ -142,7 +142,7 @@ faqs:
 <li>Excess credits generate refunds; shortfalls require additional payment</li>
 </ul>
 
-<p>Many non-resident landlords discover they've overpaid tax through the withholding system, particularly those with significant property expenses or rental losses. <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">Understanding allowable deductions</a> becomes crucial for optimizing tax positions.</p>
+<p>Many non-resident landlords discover they've overpaid tax through the withholding system, particularly those with significant property expenses or rental losses. <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">Understanding allowable deductions</a> becomes crucial for optimising tax positions.</p>
 
 <h2>Common Issues and Challenges</h2>
 
@@ -179,7 +179,7 @@ faqs:
 
 <h2>Planning Strategies for Non-Resident Landlords</h2>
 
-<p>Effective tax planning can minimize the impact of NRL withholding tax while ensuring compliance:</p>
+<p>Effective tax planning can minimise the impact of NRL withholding tax while ensuring compliance:</p>
 
 <h3>Obtain Gross Payment Approval</h3>
 <p>Most established landlords should apply for NRL1 approval to receive gross rental income. This eliminates the cash flow impact of 20% withholding while maintaining full compliance with UK tax obligations.</p>
@@ -192,7 +192,7 @@ faqs:
 
 <h2>Getting Professional Support</h2>
 
-<p>The NRL withholding system adds complexity to UK property investment for overseas landlords. Many benefit from professional support to navigate the requirements and optimize their tax position.</p>
+<p>The NRL withholding system adds complexity to UK property investment for overseas landlords. Many benefit from professional support to navigate the requirements and optimise their tax position.</p>
 
 <p><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Specialist property accountants</a> can assist with:</p>
 
@@ -206,4 +206,4 @@ faqs:
 
 <p>The cost of professional support typically pays for itself through improved compliance, refund identification, and strategic planning opportunities.</p>
 
-<p>Non-resident landlords should review their NRL arrangements regularly, particularly when acquiring new properties or changing letting agents. Proactive management of withholding tax obligations protects against penalties while optimizing cash flow and tax efficiency.</p>
+<p>Non-resident landlords should review their NRL arrangements regularly, particularly when acquiring new properties or changing letting agents. Proactive management of withholding tax obligations protects against penalties while optimising cash flow and tax efficiency.</p>

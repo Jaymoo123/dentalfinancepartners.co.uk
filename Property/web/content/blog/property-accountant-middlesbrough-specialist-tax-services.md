@@ -14,13 +14,13 @@ summary: "Middlesbrough landlords face unique challenges from Section 24 restric
 schema: ""
 faqs:
   - question: "How much can a property accountant save Middlesbrough landlords in tax?"
-    answer: "Tax savings depend on portfolio size and complexity, but typical savings range from £1,000-£5,000 annually for multi-property landlords. This comes from optimizing expense claims, timing disposals efficiently, and ensuring compliance with Section 24 and MTD requirements. The potential savings often exceed accounting fees by 3-5 times."
+    answer: "Tax savings depend on portfolio size and complexity, but typical savings range from £1,000-£5,000 annually for multi-property landlords. This comes from optimising expense claims, timing disposals efficiently, and ensuring compliance with Section 24 and MTD requirements. The potential savings often exceed accounting fees by 3-5 times."
   - question: "Do I need a local Middlesbrough property accountant or can I use online services?"
     answer: "While online services work for simple portfolios, Middlesbrough's specific market characteristics (student housing, regeneration areas, older properties requiring maintenance) benefit from local market knowledge. Specialist property accountants understand regional rental yields, common property issues, and local tax implications better than generic online platforms."
   - question: "When should Middlesbrough landlords start preparing for MTD requirements?"
     answer: "MTD preparation should begin now for landlords with gross rental income over £10,000, as compliance starts from April 2026. This involves setting up compatible software, establishing quarterly reporting processes, and ensuring accurate record-keeping systems. Early preparation avoids rushed implementation and potential compliance issues."
   - question: "Is property investment still viable in Middlesbrough after Section 24 restrictions?"
-    answer: "Yes, but tax-efficient structuring is more important than ever. While Section 24 has increased tax costs for highly leveraged landlords, Middlesbrough's strong rental yields (7-8%) and lower property prices still offer good returns when properly structured. Consider incorporation, portfolio optimization, and strategic timing of acquisitions and disposals."
+    answer: "Yes, but tax-efficient structuring is more important than ever. While Section 24 has increased tax costs for highly leveraged landlords, Middlesbrough's strong rental yields (7-8%) and lower property prices still offer good returns when properly structured. Consider incorporation, portfolio optimisation, and strategic timing of acquisitions and disposals."
 ---
 
 <p>Middlesbrough's rental property market presents unique opportunities and challenges for landlords. With average rental yields around 7-8% and property prices significantly lower than national averages, the area attracts both local and distant investors. However, navigating the complex UK property tax system requires specialist knowledge that goes beyond general accounting services.</p>
@@ -63,7 +63,7 @@ faqs:
 
 <h2>Preparing for Making Tax Digital (MTD)</h2>
 
-<p>The upcoming <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements from April 2026</a> add another layer of complexity. Landlords with gross rental income over £10,000 must maintain digital records and submit quarterly updates to HMRC. For Middlesbrough landlords managing multiple lower-value properties, this threshold is easily exceeded. Avoiding HMRC penalties through proper MTD compliance is essential. Specialist services include MTD compliance setup and ongoing quarterly submissions. Technology capabilities are increasingly important, with cloud-based accounting systems, automated expense categorization, and secure document sharing improving efficiency and accuracy while reducing administrative burden.</p>
+<p>The upcoming <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements from April 2026</a> add another layer of complexity. Landlords with gross rental income over £10,000 must maintain digital records and submit quarterly updates to HMRC. For Middlesbrough landlords managing multiple lower-value properties, this threshold is easily exceeded. Avoiding HMRC penalties through proper MTD compliance is essential. Specialist services include MTD compliance setup and ongoing quarterly submissions. Technology capabilities are increasingly important, with cloud-based accounting systems, automated expense categorisation, and secure document sharing improving efficiency and accuracy while reducing administrative burden.</p>
 
 <h2>Specialist Services for Middlesbrough Property Investors</h2>
 
@@ -73,7 +73,7 @@ faqs:
 <li>MTD compliance setup and ongoing quarterly submissions</li>
 <li>Capital gains tax planning for property disposals</li>
 <li>Incorporation feasibility studies and implementation</li>
-<li>HMO accounting and licensing cost optimization</li>
+<li>HMO accounting and licensing cost optimisation</li>
 <li>Repair versus improvement classifications</li>
 <li>Portfolio restructuring for tax efficiency</li>
 <li>Non-resident landlord compliance for overseas investors</li>

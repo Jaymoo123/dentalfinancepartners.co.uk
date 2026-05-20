@@ -1,31 +1,30 @@
 ---
-title: "Furnished Holiday Let Tax: Rules, Abolition and What Happens Now"
-slug: "furnished-holiday-let-tax-rules-exemptions"
-canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/furnished-holiday-let-tax-rules-exemptions"
-date: "2026-04-01"
-author: "Property Tax Partners Editorial Team"
-category: "Section 24 & Tax Relief"
-metaTitle: "Furnished Holiday Let Tax After 2025 Abolition: What Now?"
-metaDescription: "FHL regime abolished from April 2025: now Section 24, no capital allowances, no SDLT relief. Plan your next move for the 2025/26 tax year."
-metaTitle_prev: "Furnished Holiday Let Tax Rules Abolished | What Now 2026"
-metaDescription_prev: "The FHL tax regime was abolished from April 2025. Holiday lets now face Section 24 restrictions like standard BTL. What this means for UK landlords."
-altText: "UK holiday cottage with tax documents showing furnished holiday let regulations"
-image: ""
-h1: "Furnished Holiday Let Tax: Rules, Abolition and What Happens Now"
-summary: "The Furnished Holiday Lettings tax regime was abolished from 6 April 2025. Holiday let income is now taxed like standard rental income, with Section 24 restrictions applying. Here's what landlords need to know."
-schema: ""
+title: 'Furnished Holiday Let Tax: Rules, Abolition and What Happens Now'
+slug: furnished-holiday-let-tax-rules-exemptions
+canonical: https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/furnished-holiday-let-tax-rules-exemptions
+date: '2026-04-01'
+author: Property Tax Partners Editorial Team
+category: Section 24 & Tax Relief
+metaTitle: 'Furnished Holiday Let Tax After 2025 Abolition: What Now?'
+metaDescription: 'FHL regime abolished from April 2025: now Section 24, no capital allowances, no SDLT relief. Plan your next move for the 2025/26 tax year.'
+metaTitle_prev: Furnished Holiday Let Tax Rules Abolished | What Now 2026
+metaDescription_prev: The FHL tax regime was abolished from April 2025. Holiday lets now face Section 24 restrictions like standard BTL. What this means for UK landlords.
+altText: UK holiday cottage with tax documents showing furnished holiday let regulations
+image: ''
+h1: 'Furnished Holiday Let Tax: Rules, Abolition and What Happens Now'
+summary: The Furnished Holiday Lettings tax regime was abolished from 6 April 2025. Holiday let income is now taxed like standard rental income, with Section 24 restrictions applying. Here's what landlords need to know.
+schema: ''
 faqs:
-  - question: "When was the Furnished Holiday Let tax regime abolished?"
-    answer: "The FHL regime was abolished from 6 April 2025 for Income Tax and CGT, and 1 April 2025 for Corporation Tax, under the Finance Act 2025. From the 2025/26 tax year onwards, holiday let income is taxed identically to standard rental property income."
-  - question: "Can I still claim full mortgage interest relief on a holiday let?"
-    answer: "No. Since the FHL regime was abolished in April 2025, Section 24 mortgage interest restrictions now apply to holiday let income. Individual landlords receive only a 20% basic-rate tax credit on finance costs, the same as standard buy-to-let properties."
-  - question: "What about capital allowances and Business Asset Disposal Relief for holiday lets?"
-    answer: "These are no longer available for new expenditure or disposals from April 2025. Existing capital allowance pools can continue to be written down, but no new qualifying expenditure can be added. Business Asset Disposal Relief, rollover relief, and gift relief no longer apply to holiday let properties."
-  - question: "What should former FHL landlords do now?"
-    answer: "Review your tax position with a specialist property accountant. Consider whether incorporation into a limited company (which is not affected by Section 24) makes financial sense. Also review your expense claims, as Replacement Domestic Items Relief is still available for furnished lettings."
+- question: When was the Furnished Holiday Let tax regime abolished?
+  answer: The FHL regime was abolished from 6 April 2025 for Income Tax and CGT, and 1 April 2025 for Corporation Tax, under the Finance Act 2025. From the 2025/26 tax year onwards, holiday let income is taxed identically to standard rental property income.
+- question: Can I still claim full mortgage interest relief on a holiday let?
+  answer: No. Since the FHL regime was abolished in April 2025, Section 24 mortgage interest restrictions now apply to holiday let income. Individual landlords receive only a 20% basic-rate tax credit on finance costs, the same as standard buy-to-let properties.
+- question: What about capital allowances and Business Asset Disposal Relief for holiday lets?
+  answer: These are no longer available for new expenditure or disposals from April 2025. Existing capital allowance pools can continue to be written down, but no new qualifying expenditure can be added. Business Asset Disposal Relief, rollover relief, and gift relief no longer apply to holiday let properties.
+- question: What should former FHL landlords do now?
+  answer: Review your tax position with a specialist property accountant. Consider whether incorporation into a limited company (which is not affected by Section 24) makes financial sense. Also review your expense claims, as Replacement Domestic Items Relief is still available for furnished lettings.
 ---
-
-<p><strong>Important update:</strong> The Furnished Holiday Lettings (FHL) tax regime was <strong>abolished from 6 April 2025</strong> (1 April 2025 for Corporation Tax) under the Finance Act 2025. The tax advantages described in older guides — full mortgage interest relief, capital allowances, and CGT business reliefs — <strong>no longer apply</strong>. This guide explains what has changed and what holiday let landlords need to do now.</p>
+<p><strong>Important update:</strong> The Furnished Holiday Lettings (FHL) tax regime was <strong>abolished from 6 April 2025</strong> (1 April 2025 for Corporation Tax) under the Finance Act 2025. The tax advantages described in older guides, full mortgage interest relief, capital allowances, and CGT business reliefs, <strong>no longer apply</strong>. This guide explains what has changed and what holiday let landlords need to do now. For those wondering <strong>is there stamp duty on furnished holiday lettings</strong>, the answer depends on the property's use and value, but the FHL abolition does not directly affect SDLT rules.</p>
 
 <h2>What Was the FHL Tax Regime?</h2>
 

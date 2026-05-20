@@ -45,7 +45,7 @@ export default async function GuideLandingPage({ params }: Props) {
             ]}
           />
           <div className="mt-6 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-indigo-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
+            <div className="inline-flex items-center gap-2 bg-orange-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
               <FileText className="h-3.5 w-3.5" />
               {guide.category}
             </div>
@@ -71,26 +71,26 @@ export default async function GuideLandingPage({ params }: Props) {
                   "Free, no obligation, no follow-up sales calls",
                 ].map((b) => (
                   <li key={b} className="flex items-start gap-3">
-                    <BadgeCheck className="h-5 w-5 text-indigo-600 flex-shrink-0 mt-0.5" />
+                    <BadgeCheck className="h-5 w-5 text-orange-600 flex-shrink-0 mt-0.5" />
                     <span>{b}</span>
                   </li>
                 ))}
               </ul>
 
-              <div className="mt-8 bg-slate-50 border-l-4 border-indigo-600 p-6">
+              <div className="mt-8 bg-slate-50 border-l-4 border-orange-600 p-6">
                 <h3 className="text-base font-bold text-slate-900">Why we publish these for free</h3>
                 <p className="mt-2 text-sm text-slate-700 leading-relaxed">
-                  We work with 73+ UK and UAE agency founders. The patterns we see repeat. Publishing the playbooks publicly is how we demonstrate the value of working with us. If you find this useful and want it applied to your specific situation, the free health check is where that conversation starts.
+                  We work with UK business owners across every sector: limited companies, contractors, sole traders, partnerships and growing SMEs. The patterns we see repeat. Publishing the playbooks publicly is how we demonstrate the value of working with us. If you find this useful and want it applied to your specific situation, a free call is where that conversation starts.
                 </p>
               </div>
             </div>
 
             <aside>
-              <div className="bg-indigo-50 border-2 border-indigo-600 p-6 sm:p-8 sticky top-24">
-                <div className="flex items-center justify-center h-14 w-14 bg-indigo-600 mb-4">
+              <div className="bg-orange-50 border-2 border-orange-600 p-6 sm:p-8 sticky top-24">
+                <div className="flex items-center justify-center h-14 w-14 bg-orange-600 mb-4">
                   <Download className="h-7 w-7 text-white" />
                 </div>
-                <h2 className="text-xl font-bold text-indigo-900">Get the full guide</h2>
+                <h2 className="text-xl font-bold text-orange-900">Get the full guide</h2>
                 <p className="mt-2 text-sm text-slate-700">
                   Drop your email and we'll send you the full guide right away. No spam, no follow-up calls unless you ask.
                 </p>

@@ -18,7 +18,7 @@ faqs:
   - question: "How often should I review individual property performance in my portfolio?"
     answer: "Quarterly reviews work well for most landlords, aligning with natural business cycles and providing enough data to spot trends. Monthly reviews may be excessive unless you're actively managing developments or facing specific challenges. Annual reviews are too infrequent to catch emerging issues or opportunities in your portfolio performance."
   - question: "Do I need separate bank accounts for each property in my portfolio?"
-    answer: "Separate bank accounts aren't legally required but make property portfolio accounting much easier. They create clear audit trails and simplify expense allocation. If separate accounts aren't practical, ensure your accounting system can clearly categorize all income and expenses by property to maintain accurate individual performance tracking."
+    answer: "Separate bank accounts aren't legally required but make property portfolio accounting much easier. They create clear audit trails and simplify expense allocation. If separate accounts aren't practical, ensure your accounting system can clearly categorise all income and expenses by property to maintain accurate individual performance tracking."
   - question: "Do I need to track capital gains tax monthly?"
     answer: "You don't calculate capital gains monthly, but track improvement costs and property valuations regularly. Major renovations, extensions, or structural improvements add to your base cost for future CGT calculations. Monthly tracking ensures you don't lose records of qualifying capital expenditure."
   - question: "Should I use accounting software or spreadsheets for monthly tracking?"
@@ -152,7 +152,7 @@ faqs:
 <h2>Regular Review and Common Mistakes</h2>
 
 <h3>Regular Review and Analysis</h3>
-<p>Property portfolio accounting only adds value when you regularly review and act on the insights. Set quarterly review sessions to analyze each property's performance.</p>
+<p>Property portfolio accounting only adds value when you regularly review and act on the insights. Set quarterly review sessions to analyse each property's performance.</p>
 <p>Look for trends: is maintenance spending increasing on older properties? Are void periods extending in certain areas? Is rental income growth keeping pace with cost inflation? Use this analysis for strategic decisions like selling underperforming assets.</p>
 
 <h3>Common Tracking Mistakes</h3>

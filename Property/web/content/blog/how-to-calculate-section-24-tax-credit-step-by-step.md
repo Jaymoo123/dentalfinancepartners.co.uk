@@ -153,4 +153,4 @@ faqs:
 <p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for landlords</a> becoming mandatory from April 2026, digital record keeping will be essential.</p>
 <h3>Getting Professional Help</h3>
 <p>Section 24 calculations can become complex with multiple properties, different mortgage arrangements, and varying rental periods. A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> can ensure accurate calculations and identify tax planning opportunities.</p>
-<p>Professional help is particularly valuable when considering incorporation, as the decision requires modeling both your current Section 24 position and projected future tax liabilities under company ownership.</p>
+<p>Professional help is particularly valuable when considering incorporation, as the decision requires modelling both your current Section 24 position and projected future tax liabilities under company ownership.</p>

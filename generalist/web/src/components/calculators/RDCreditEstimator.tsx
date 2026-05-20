@@ -37,7 +37,7 @@ export function RDCreditEstimator() {
   const grossCredit = qualifying * creditRate;
 
   // The above-the-line credit is taxable, so the net benefit depends on CT rate.
-  // Most agencies hit ~25% marginal rate above £50k profits; we'll use a simple
+  // Most SMEs hit ~25% marginal rate above £50k profits; we'll use a simple
   // estimate of net = gross × (1 - 0.25) as a guide.
   const netBenefit = grossCredit * (1 - 0.25);
 
@@ -93,19 +93,19 @@ export function RDCreditEstimator() {
         </div>
       </div>
 
-      <div className="bg-indigo-700 text-white p-6 sm:p-8">
-        <p className="text-sm font-bold uppercase tracking-wider text-indigo-200">Estimated R&D credit</p>
+      <div className="bg-orange-700 text-white p-6 sm:p-8">
+        <p className="text-sm font-bold uppercase tracking-wider text-orange-200">Estimated R&D credit</p>
         <div className="mt-3 grid sm:grid-cols-2 gap-6">
           <div>
-            <p className="text-xs text-indigo-200 uppercase tracking-wider">Gross credit (above-the-line)</p>
+            <p className="text-xs text-orange-200 uppercase tracking-wider">Gross credit (above-the-line)</p>
             <p className="text-3xl sm:text-4xl font-bold font-mono">{fmt(grossCredit)}</p>
           </div>
           <div>
-            <p className="text-xs text-indigo-200 uppercase tracking-wider">Net benefit (after CT)</p>
+            <p className="text-xs text-orange-200 uppercase tracking-wider">Net benefit (after CT)</p>
             <p className="text-3xl sm:text-4xl font-bold font-mono">{fmt(netBenefit)}</p>
           </div>
         </div>
-        <div className="mt-6 pt-6 border-t border-indigo-500 text-sm text-indigo-100">
+        <div className="mt-6 pt-6 border-t border-orange-500 text-sm text-orange-100">
           <p>
             Rate applied: <strong className="font-bold">{(creditRate * 100).toFixed(0)}%</strong>
             {isIntensive ? " (R&D intensive: qualifying spend is 40%+ of total)" : " (standard merged scheme)"}
@@ -156,7 +156,7 @@ function FieldGroup({ id, label, help, value, setValue, max }: FieldProps) {
           min={0}
           max={max}
           step={1000}
-          className="w-40 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600"
+          className="w-40 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-orange-600"
         />
       </div>
     </div>

@@ -40,9 +40,9 @@ export function buildDefinedTermSet(
     "@context": "https://schema.org",
     "@type": "DefinedTermSet",
     "@id": `${url}#termset`,
-    name: "Agency Founder Finance Glossary",
+    name: "Holloway Davies Glossary",
     description:
-      "Plain-English definitions of UK agency tax, finance, and accounting terms.",
+      "Plain-English definitions of UK business tax, finance, and accounting terms.",
     url,
     inLanguage: "en-GB",
     hasDefinedTerm: terms.map((t) => ({

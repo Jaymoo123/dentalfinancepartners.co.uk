@@ -1,10 +1,16 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { UK_TAX_RATES as T } from "@/lib/uk-tax-rates";
 
-const SECONDARY_THRESHOLD = 9100;
-const EMPLOYER_NI_RATE = 0.138;
-const EMPLOYMENT_ALLOWANCE = 5000;
+// All employer NI rates and thresholds pulled from lib/uk-tax-rates.ts
+// (canonical source, updated annually). Annotated as `number` to widen the
+// literal types `as const` infers in the source file.
+const SECONDARY_THRESHOLD: number = T.nationalInsurance.employer.secondaryThreshold;
+const EMPLOYER_NI_RATE: number = T.nationalInsurance.employer.rate;
+const EMPLOYMENT_ALLOWANCE: number = T.nationalInsurance.employer.employmentAllowance;
+// Auto-enrolment minimum pension qualifying earnings band lower limit
+// (stable since 2014; review annually with The Pensions Regulator).
 const PENSION_MIN_QUALIFYING = 6240;
 const PENSION_EMPLOYER_MIN_RATE = 0.03;
 
@@ -15,8 +21,8 @@ type Employee = {
 };
 
 const seedEmployees: Employee[] = [
-  { id: 1, role: "Senior account manager", salary: 55000 },
-  { id: 2, role: "Mid designer", salary: 38000 },
+  { id: 1, role: "Office manager", salary: 38000 },
+  { id: 2, role: "Senior bookkeeper", salary: 32000 },
 ];
 
 const fmt = (n: number) => `£${Math.round(n).toLocaleString("en-GB")}`;
@@ -79,7 +85,7 @@ export function EmployerNICalculator() {
           <button
             type="button"
             onClick={addEmployee}
-            className="bg-indigo-600 px-4 py-2 text-sm font-bold text-white border-b-2 border-indigo-800 hover:bg-indigo-700 transition-colors"
+            className="bg-orange-600 px-4 py-2 text-sm font-bold text-white border-b-2 border-orange-800 hover:bg-orange-700 transition-colors"
           >
             + Add employee
           </button>
@@ -94,7 +100,7 @@ export function EmployerNICalculator() {
                   type="text"
                   value={e.role}
                   onChange={(ev) => updateEmployee(e.id, { role: ev.target.value })}
-                  className="w-full border border-slate-300 px-3 py-2 text-sm text-slate-900 focus:outline-none focus:border-indigo-600"
+                  className="w-full border border-slate-300 px-3 py-2 text-sm text-slate-900 focus:outline-none focus:border-orange-600"
                 />
               </div>
               <div>
@@ -107,7 +113,7 @@ export function EmployerNICalculator() {
                     onChange={(ev) => updateEmployee(e.id, { salary: Math.max(0, Number(ev.target.value) || 0) })}
                     min={0}
                     step={500}
-                    className="w-full border border-slate-300 px-3 py-2 text-sm text-slate-900 focus:outline-none focus:border-indigo-600"
+                    className="w-full border border-slate-300 px-3 py-2 text-sm text-slate-900 focus:outline-none focus:border-orange-600"
                   />
                 </div>
               </div>
@@ -129,7 +135,7 @@ export function EmployerNICalculator() {
               type="checkbox"
               checked={useEA}
               onChange={(e) => setUseEA(e.target.checked)}
-              className="mt-1 h-4 w-4 accent-indigo-600"
+              className="mt-1 h-4 w-4 accent-orange-600"
             />
             <span className="text-sm text-slate-700">
               <span className="font-semibold text-slate-900">Apply Employment Allowance</span> (£5,000 off employer NI). Requires at least two employees on the payroll, single-director-only companies do not qualify.
@@ -140,7 +146,7 @@ export function EmployerNICalculator() {
               type="checkbox"
               checked={includePension}
               onChange={(e) => setIncludePension(e.target.checked)}
-              className="mt-1 h-4 w-4 accent-indigo-600"
+              className="mt-1 h-4 w-4 accent-orange-600"
             />
             <span className="text-sm text-slate-700">
               <span className="font-semibold text-slate-900">Include minimum auto-enrolment pension</span> (3% employer contribution on qualifying earnings)
@@ -155,10 +161,10 @@ export function EmployerNICalculator() {
         )}
       </div>
 
-      <div className="bg-indigo-700 text-white p-6 sm:p-8">
-        <p className="text-sm font-bold uppercase tracking-wider text-indigo-200">Total annual employment cost</p>
+      <div className="bg-orange-700 text-white p-6 sm:p-8">
+        <p className="text-sm font-bold uppercase tracking-wider text-orange-200">Total annual employment cost</p>
         <p className="text-4xl sm:text-5xl font-bold font-mono mt-1">{fmt(summary.totalEmploymentCost)}</p>
-        <p className="mt-2 text-sm text-indigo-200">
+        <p className="mt-2 text-sm text-orange-200">
           That is {fmt(summary.monthlyTotal)} per month across the team.
         </p>
       </div>
@@ -176,7 +182,7 @@ export function EmployerNICalculator() {
           <Row label="Total employment cost" value={fmt(summary.totalEmploymentCost)} highlight />
         </dl>
         <p className="px-6 py-4 text-xs text-slate-500 border-t border-slate-200">
-          Does not include employee benefits, software per seat, equipment, training, or recruitment fees. Real all-in cost per agency hire typically adds 10-20% on top of the figures above.
+          Does not include employee benefits, software per seat, equipment, training, or recruitment fees. Real all-in cost per hire typically adds 10-20% on top of the figures above.
         </p>
       </div>
     </div>

@@ -90,7 +90,7 @@ faqs:
 
 <p>Keep track of any proposed changes, as they can affect the timing of your purchases. However, don't let potential future changes delay investment decisions indefinitely — the current rules provide certainty for planning purposes.</p>
 
-<p>For complex property investment structures or large portfolios, professional advice helps optimize your approach to stamp duty and broader tax planning. Our <a href="/services">specialist property tax services</a> can help you navigate these rules effectively.</p>
+<p>For complex property investment structures or large portfolios, professional advice helps optimise your approach to stamp duty and broader tax planning. Our <a href="/services">specialist property tax services</a> can help you navigate these rules effectively.</p>
 
 <h2>Related Reading</h2>
 

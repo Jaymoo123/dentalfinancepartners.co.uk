@@ -67,7 +67,7 @@ faqs:
 <p>Many higher-rate taxpayers are exploring <a href="/incorporation">incorporation</a> as a way to avoid Section 24 entirely. Companies aren't subject to the restriction and can still claim full mortgage interest relief.</p>
 <p>However, <a href="/blog/section-24-and-tax-relief/section-24-vs-incorporation-which-saves-more-tax">incorporation</a> brings corporation tax (19% for profits up to £250k, 25% main rate), dividend taxes, and additional compliance costs. It works best for landlords planning significant expansion or those with substantial mortgage interest relative to rental profits.</p>
 <h3>Portfolio Restructuring</h3>
-<p>Some landlords are reducing their BTL mortgages to minimize Section 24's impact. This might involve:</p>
+<p>Some landlords are reducing their BTL mortgages to minimise Section 24's impact. This might involve:</p>
 <ul>
 <li>Selling highly mortgaged properties</li>
 <li>Using proceeds to buy cash purchases</li>

@@ -16,7 +16,7 @@ faqs:
   - question: "How is HMO rental income calculated for tax purposes?"
     answer: "HMO rental income includes all payments from tenants - room rents, service charges, utilities, and booking fees. Calculate income room-by-room, accounting for actual occupancy periods rather than assuming 100% occupancy. Include retained deposits only when kept for unpaid rent or damages."
   - question: "Can I claim HMO licensing costs as tax deductions?"
-    answer: "Yes, all HMO licensing costs are fully deductible as revenue expenses. This includes initial license fees, renewals, planning applications, building regulation fees, fire risk assessments, gas safety certificates, and legal advice on HMO compliance."
+    answer: "Yes, all HMO licensing costs are fully deductible as revenue expenses. This includes initial licence fees, renewals, planning applications, building regulation fees, fire risk assessments, gas safety certificates, and legal advice on HMO compliance."
   - question: "Do HMOs pay business rates or council tax?"
     answer: "This depends on the property configuration. HMOs with self-contained rooms and private facilities often pay business rates. Traditional HMOs with shared facilities usually pay council tax, either as a single bill or divided among tenants. Both are fully deductible against rental income."
   - question: "How does Section 24 affect HMO mortgage interest relief?"
@@ -69,7 +69,7 @@ faqs:
 
 <ul>
 <li><strong>Property Management and Maintenance:</strong> Cleaning of communal areas, repairs, garden upkeep, security systems, and inventory replacement.</li>
-<li><strong>HMO Licensing and Compliance:</strong> License fees, planning permission costs, building regulation fees, professional surveys (fire risk, electrical, gas safety), and related legal fees.</li>
+<li><strong>HMO Licensing and Compliance:</strong> Licence fees, planning permission costs, building regulation fees, professional surveys (fire risk, electrical, gas safety), and related legal fees.</li>
 <li><strong>Utilities and Service Provisions:</strong> Gas, electricity, water rates, internet, TV services, council tax (where landlord is liable), and buildings insurance when provided as part of inclusive rent.</li>
 </ul>
 
@@ -104,7 +104,7 @@ faqs:
 <h2>Tax Planning, Disposal, and Professional Advice</h2>
 
 <h3>Common HMO Tax Planning Strategies</h3>
-<p>Plan major HMO expenses to optimise tax relief. Ensure repairs are treated as revenue expenses rather than capital improvements, consider accelerating deductible expenses before 5 April where beneficial, and time HMO license renewals to spread costs across tax years.</p>
+<p>Plan major HMO expenses to optimise tax relief. Ensure repairs are treated as revenue expenses rather than capital improvements, consider accelerating deductible expenses before 5 April where beneficial, and time HMO licence renewals to spread costs across tax years.</p>
 
 <h3>HMO Disposal and Capital Gains Tax</h3>
 <p>When selling an HMO, <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax</a> applies at 18% (basic rate) or 24% (higher rate) on the gain above the annual exempt amount (£3,000 for 2026/27). HMO-specific considerations include enhancement expenditure (where HMO licensing and compliance improvements may qualify) and the fact that business asset disposal relief is generally not available for residential property investments. Professional advice is essential due to the complex interaction between licensing costs, improvements, and CGT calculations.</p>

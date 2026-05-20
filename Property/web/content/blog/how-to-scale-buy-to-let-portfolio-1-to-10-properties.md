@@ -54,7 +54,7 @@ faqs:
 <p>Most portfolio landlords consider incorporation around properties 3-5, when the impact of <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24</a> becomes significant. The key factors are:</p>
 <p><strong>Annual rental income threshold:</strong> Generally beneficial above £40,000-50,000 rental income for higher rate taxpayers, depending on mortgage debt levels and personal circumstances.</p>
 <p><strong>Exit strategy alignment:</strong> If planning to <strong>grow property portfolio</strong> beyond 10 properties, incorporation becomes almost essential for tax efficiency and financing flexibility. However, incorporation involves immediate costs (SDLT on transfer, legal fees, CGT on any gains) and ongoing compliance requirements. Our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">complete guide to BTL limited companies</a> covers the detailed analysis needed.</p>
-<p>With 6-10 properties, tax optimization becomes critical for maintaining cash flow. Key strategies include maximising capital allowances on furniture and fixtures, optimising <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">landlord tax deductions</a>, and reviewing incorporation timing, especially with property income tax rates changing to 22%/42%/47% from April 2027.</p>
+<p>With 6-10 properties, tax optimisation becomes critical for maintaining cash flow. Key strategies include maximising capital allowances on furniture and fixtures, optimising <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">landlord tax deductions</a>, and reviewing incorporation timing, especially with property income tax rates changing to 22%/42%/47% from April 2027.</p>
 <h3>Property Selection and Portfolio Strategy</h3>
 <p>Properties 3-5 should focus on building a coherent portfolio rather than opportunistic purchases. Key considerations include geographic concentration for management efficiency, property type consistency for operational efficiency, and a clear tenant demographic focus. Moving to 6-10 properties requires systematising operations and balancing yield versus growth, with higher yield properties providing cash flow for further expansion.</p>
 <h3>Making Tax Digital Preparation and Professional Support</h3>
@@ -89,9 +89,9 @@ faqs:
 <p>Portfolio scaling involves complex interactions between tax, financing, and operational considerations. Professional advice becomes essential at several key decision points:</p>
 <ul>
 <li><strong>Before property 3:</strong> Tax planning and incorporation analysis</li>
-<li><strong>At 5-6 properties:</strong> MTD preparation and portfolio structure optimization</li>
+<li><strong>At 5-6 properties:</strong> MTD preparation and portfolio structure optimisation</li>
 <li><strong>Around 8+ properties:</strong> Comprehensive tax strategy review and exit planning</li>
 <li><strong>Annually:</strong> Portfolio performance review and strategic planning</li>
 </ul>
 <p>The cost of professional advice is typically offset by improved tax efficiency and strategic decision-making. <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">Choosing the right property accountant</a> can significantly impact your portfolio's long-term success.</p>
-<p>Scaling a buy-to-let portfolio from 1 to 10 properties remains achievable in 2026, but requires more careful planning than in previous years. Success depends on understanding the financing landscape, optimizing tax efficiency, and building professional management systems early in the scaling process.</p>
+<p>Scaling a buy-to-let portfolio from 1 to 10 properties remains achievable in 2026, but requires more careful planning than in previous years. Success depends on understanding the financing landscape, optimising tax efficiency, and building professional management systems early in the scaling process.</p>

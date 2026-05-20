@@ -100,7 +100,7 @@ Final Tax Liability: £20,152 - £4,468 = £15,684</p>
 <h3>Limited Company Structure</h3>
 <p>Moving properties to a limited company avoids Section 24 entirely. <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Buy-to-let companies</a> can deduct full mortgage interest and pay corporation tax at 19% (profits up to £250k) or 25% (main rate).</p>
 <h3>Pension Contributions</h3>
-<p>Maximizing pension contributions can reduce taxable income and push the landlord back into basic rate tax. Annual allowance of £60,000 (2026/27) provides substantial tax relief.</p>
+<p>Maximising pension contributions can reduce taxable income and push the landlord back into basic rate tax. Annual allowance of £60,000 (2026/27) provides substantial tax relief.</p>
 <h3>Portfolio Restructuring</h3>
 <p>Some landlords reduce their mortgage exposure by selling highly leveraged properties and buying others with cash or lower loan-to-value ratios.</p>
 
@@ -111,4 +111,4 @@ Final Tax Liability: £20,152 - £4,468 = £15,684</p>
 <p>From April 2027, separate property income tax rates will apply—22% basic rate, 42% higher rate, and 47% additional rate on rental income specifically. This could further increase the tax burden for landlords like our example, making incorporation or other planning strategies even more attractive. The calculation methodology remains the same under Section 24, but the tax rates applied to rental income will be higher across all brackets.</p>
 
 <h2>Professional Support for Complex Cases</h2>
-<p>This section 24 worked example 50k demonstrates why professional advice is crucial for portfolio landlords. The interaction between rental income, employment income, and various tax reliefs creates complex scenarios that benefit from specialist guidance. <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Property accountants</a> can help optimize the tax position through legitimate planning strategies, ensure compliance with MTD requirements, and provide ongoing support as tax rules evolve.</p>
+<p>This section 24 worked example 50k demonstrates why professional advice is crucial for portfolio landlords. The interaction between rental income, employment income, and various tax reliefs creates complex scenarios that benefit from specialist guidance. <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Property accountants</a> can help optimise the tax position through legitimate planning strategies, ensure compliance with MTD requirements, and provide ongoing support as tax rules evolve.</p>

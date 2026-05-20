@@ -38,6 +38,8 @@ BLOG_TOPICS_DENTISTS = "blog_topics_dentists"
 BLOG_TOPICS_PROPERTY = "blog_topics_property"
 BLOG_TOPICS_MEDICAL = "blog_topics_medical"
 BLOG_TOPICS_SOLICITORS = "blog_topics_solicitors"
+BLOG_TOPICS_AGENCY = "blog_topics_agency"
+BLOG_TOPICS_GENERALIST = "blog_topics_generalist"
 
 # ============================================================================
 # NICHE SOURCE IDENTIFIERS
@@ -47,3 +49,5 @@ SOURCE_DENTISTS = "dentists"
 SOURCE_PROPERTY = "property"
 SOURCE_MEDICAL = "medical"
 SOURCE_SOLICITORS = "solicitors"
+SOURCE_AGENCY = "agency-founder-finance"
+SOURCE_GENERALIST = "uk-business-accountants"

@@ -121,16 +121,18 @@ body {
    Headings: tight tracking, big weight contrast against body.
    ============================================================ */
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  color: var(--ink);
-}
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
 
-h1 {
-  letter-spacing: -0.03em;
-  font-weight: 600;
+  h1 {
+    letter-spacing: -0.03em;
+    font-weight: 600;
+  }
 }
 
 /* Geist Mono utility for stat figures, eyebrows, dates */
