@@ -3,20 +3,101 @@
   "display_name": "Contractor Finance Partners",
   "legal_name": "Contractor Finance Partners Ltd",
   "domain": "www.contractor-finance-partners.co.uk",
-  "tagline": "UK accountants for contractors, IR35 specialists, and limited company directors",
-  "description": "UK accountants for contractors, IR35 specialists, and limited company directors",
+  "tagline": "Specialist accountants for UK contractors and IR35",
+  "description": "Contractor Finance Partners. Specialist accountants for UK contractors, PSC directors and IR35-affected workers. IR35 status advice, limited company tax, umbrella vs Ltd comparisons, expenses, dividends and pension planning. Fixed fees, plain English.",
   "brand": {
     "primary_color": "#0d9488",
-    "logo_path": "/brand/logo.png",
-    "publisher_logo_url": "/og-placeholder.svg"
+    "logo_path": "/brand/primary-logo.png",
+    "publisher_logo_url": "/brand/icon-alt.png"
   },
   "contact": {
     "email": "hello@contractor-finance-partners.co.uk",
     "phone": "+44 20 0000 0000"
   },
   "navigation": [
-    {"label": "Services", "href": "/services"},
-    {"label": "About", "href": "/about"},
-    {"label": "Contact", "href": "/contact"}
-  ]
+    { "label": "Services", "href": "/services" },
+    { "label": "IR35 Status", "href": "/ir35-status" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "footer_links": [
+    { "label": "Services", "href": "/services" },
+    { "label": "IR35 Status", "href": "/ir35-status" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "About", "href": "/about" },
+    { "label": "Contact", "href": "/contact" },
+    { "label": "Privacy policy", "href": "/privacy-policy" },
+    { "label": "Terms", "href": "/terms" },
+    { "label": "Cookie policy", "href": "/cookie-policy" }
+  ],
+  "locations": [],
+  "content_strategy": {
+    "audience": "UK contractors, PSC directors, IR35-affected workers and umbrella vs limited company researchers",
+    "categories": [
+      "IR35 Status",
+      "Limited Company Tax",
+      "Umbrella vs Limited Company",
+      "Expenses and Deductions",
+      "Pension and Dividends",
+      "MTD and Compliance",
+      "Contractor Accounting Basics"
+    ],
+    "supabase_table": "blog_topics",
+    "site_key": "contractors-ir35",
+    "source_identifier": "contractors-ir35"
+  },
+  "seo": {
+    "locale": "en-GB",
+    "organization_type": "ProfessionalService",
+    "service_areas": [
+      "London",
+      "Manchester",
+      "Birmingham",
+      "Leeds",
+      "Bristol",
+      "Glasgow",
+      "Edinburgh",
+      "Reading",
+      "Cambridge",
+      "Oxford"
+    ],
+    "google_analytics_id": "",
+    "search_console_verification": {
+      "google": "",
+      "bing": "",
+      "yandex": "",
+      "naver": "",
+      "pinterest": ""
+    },
+    "theme_color": "#0d9488"
+  },
+  "lead_form": {
+    "role_label": "I am a...",
+    "role_options": [
+      { "value": "PSC contractor (outside IR35)", "label": "PSC contractor (outside IR35)" },
+      { "value": "PSC contractor (inside IR35)", "label": "PSC contractor (inside IR35)" },
+      { "value": "Umbrella worker", "label": "Umbrella company worker" },
+      { "value": "Considering limited company", "label": "Considering going limited" },
+      { "value": "Director reviewing IR35 position", "label": "Director reviewing IR35 position" },
+      { "value": "Other", "label": "Other" }
+    ],
+    "placeholders": {
+      "name": "Alex Smith",
+      "email": "alex@yourcompany.co.uk",
+      "phone": "07700 000000",
+      "message": "e.g. I need help understanding my IR35 status, or I want to know if I should stay on umbrella..."
+    }
+  },
+  "cta": {
+    "sticky_primary": "Free IR35 status review",
+    "sticky_secondary": "Speak to a specialist contractor accountant. No obligation.",
+    "sticky_button": "Book a free call"
+  },
+  "blog": {
+    "cta_heading": "Not sure where you stand on IR35?",
+    "cta_body": "Book a free call with a specialist contractor accountant. We will review your contract, your working practices and your current structure. Plain English, no jargon.",
+    "cta_button": "Book a free call"
+  },
+  "shared_components_version": "1.0.0",
+  "last_sync": null
 }

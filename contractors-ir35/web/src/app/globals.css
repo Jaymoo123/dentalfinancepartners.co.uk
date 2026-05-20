@@ -1,23 +1,244 @@
-/* Tailwind source("..") scans from src/ relative to this file. */
+/* Tailwind source("..") scans from src/ relative to this file */
 @import "tailwindcss" source("..");
 
-:root {
-  --background: #ffffff;
-  --surface: #f8fafc;
-  --surface-elevated: #ffffff;
-  --ink: #0f172a;
-  --ink-soft: #334155;
-  --muted: #475569;
-  --border: #e2e8f0;
+/* ============================================================
+   DESIGN SYSTEM — Contractor Finance Partners
+   Teal accent (#0d9488), off-white surfaces, deep ink type.
+   Geist Sans + Geist Mono. Typographic-first, generous whitespace.
+   ============================================================ */
 
-  /* Canonical brand tokens for @accounting-network/web-shared components. */
-  --brand-primary: #0d9488;
-  --brand-primary-strong: #0d9488;
+:root {
+  /* Neutral surface and ink */
+  --surface: #fafaf7;
+  --surface-elevated: #ffffff;
+  --ink: #0a0a0a;
+  --ink-soft: #525252;
+  --ink-whisper: #a3a3a3;
+  --hairline: #e5e5e5;
+
+  /* Brand accent (teal family) */
+  --accent: #0d9488;
+  --accent-strong: #0f766e;
+  --accent-whisper: #f0fdfa;
+
+  /* Status */
+  --destructive: #dc2626;
+  --success: #10b981;
+
+  /* Tailwind v4 semantic tokens */
+  --background: var(--surface);
+  --foreground: var(--ink);
+  --card: var(--surface-elevated);
+  --card-foreground: var(--ink);
+  --primary: var(--accent);
+  --primary-foreground: #ffffff;
+  --border: var(--hairline);
+  --input: var(--hairline);
+  --ring: var(--accent);
+  --radius: 0rem;
+
+  --muted: var(--ink-soft);
+
+  /* Canonical brand tokens for @accounting-network/web-shared components */
+  --brand-primary: var(--accent);
+  --brand-primary-strong: var(--accent-strong);
   --brand-on-primary: #ffffff;
 }
 
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
-  background: var(--background);
+  margin: 0;
+  padding: 0;
+  min-height: 100dvh;
+  background: var(--surface);
   color: var(--ink);
-  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  font-feature-settings: "ss01" on, "cv11" on;
+}
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+
+  h1 {
+    letter-spacing: -0.03em;
+  }
+}
+
+.font-mono,
+.font-geist-mono {
+  font-family: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+
+.hairline {
+  border-top: 1px solid var(--hairline);
+}
+
+/* ============================================================
+   BLOG PROSE
+   ============================================================ */
+
+.prose-blog {
+  max-width: 65ch;
+  color: var(--ink);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
+.prose-blog h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+
+.prose-blog h3 {
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.015em;
+}
+
+.prose-blog p {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  color: var(--ink-soft);
+}
+
+.prose-blog a {
+  color: var(--accent-strong);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.15s;
+}
+
+.prose-blog a:hover {
+  color: var(--accent);
+}
+
+.prose-blog ul,
+.prose-blog ol {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+  color: var(--ink-soft);
+}
+
+.prose-blog li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-blog strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.prose-blog table {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.prose-blog th {
+  background: transparent;
+  color: var(--ink);
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.prose-blog td {
+  padding: 0.875rem 1rem;
+  border-top: 1px solid var(--hairline);
+  color: var(--ink-soft);
+}
+
+/* ============================================================
+   FORM ELEMENTS
+   ============================================================ */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button:disabled,
+input:disabled,
+select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
