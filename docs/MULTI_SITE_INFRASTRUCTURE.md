@@ -13,16 +13,67 @@ The single source of truth for how the niche-site portfolio is organised. Read t
 | Phase | Description | Status | Tag |
 |---|---|---|---|
 | baseline | Pre-refactor snapshot of working tree | ✅ Tagged | `infra-refactor/baseline` |
-| 0 | Foundation + checkpoint setup, staging Supabase, env var matrix, this doc | 🟡 In progress | — |
-| 1 | Inventory + sites registry | ⬜ Pending | — |
-| 2 | Shared web component package via npm workspaces | ⬜ Pending | — |
-| 3 | Centralise pipeline scripts | ⬜ Pending | — |
+| 0 | Foundation + checkpoint setup, staging Supabase, env var matrix, this doc | ✅ Complete | `infra-refactor/phase-0-complete` |
+| 1 | Inventory + sites registry | ✅ Complete | `infra-refactor/phase-1-complete` |
+| 2 | Shared web component package via npm workspaces | ✅ Closed (MVP + Digital Agency unification + foundation; component migrations deferred — see policy below) | `infra-refactor/phase-2-mvp-complete` |
+| 3 | Centralise remaining pipeline scripts (submit_indexnow etc.) | ⬜ Next | — |
 | 4 | Unify per-site DB tables (highest risk) | ⬜ Pending | — |
 | 5 | Health dashboard + monitoring | ⬜ Pending | — |
 | 6 | Ops + maintenance tooling | ⬜ Pending | — |
 | 7 | Safety nets (feature flags, smoke tests, rollback) | ⬜ Pending | — |
 | 8 | spinup-site automation | ⬜ Pending | — |
 | 9 | Launch new niche sites | ⬜ Pending | — |
+
+## Phase 2 Closure Policy (2026-05-20)
+
+Phase 2 is closed with the MVP + foundation + Digital Agency unification shipped. The remaining 7 React component migrations (LeadForm, Header, Footer, BlogPostRenderer, etc.) are deferred and governed by the following durable policy:
+
+### For NEW niche sites (when Phase 8 `spinup-site` runs)
+
+**Default to workspace components from day 1.** The spinup template scaffolds new sites to import `LeadForm`, `Header`, `Footer`, layout utilities, schema utils, etc. directly from `@accounting-network/web-shared`. New sites never carry per-site copies of code that lives in the workspace.
+
+Per-site customisation flows through:
+- **Props** for content/structure that differs per niche (nav items, lead-form field config, role options, footer brand content)
+- **CSS variables** for visual differentiation. Each site's `globals.css` aliases its brand colours to canonical tokens (`--brand-primary`, `--brand-primary-strong`, `--brand-on-primary`, etc. — see "CSS canonical tokens" section below). Workspace components reference the canonical tokens; each site renders in its own colours automatically.
+- **Per-site `niche.config.json`** for branding metadata (display name, contact info, logos, etc.)
+
+### For EXISTING 5 niche sites + Digital Agency
+
+**Per-site copies of components stay** until there is a specific reason to migrate one. The migration pattern is proven (see "Per-site migration checklist" below). When you decide a component should be unified — typically because you want a single change to land everywhere — the migration is a ~30-60 min batch per component across all sites.
+
+Trigger examples that would justify migrating a specific component:
+- "I want to add UTM tracking to LeadForm everywhere" → migrate LeadForm to workspace
+- "I want the editor byline updated on every site's footer" → migrate SiteFooter
+- "Schema.org needs a new field network-wide" → migrate the schema helpers
+
+Until a trigger arises, the per-site copies work fine and the duplication tax is rarely paid (you rarely change component code; you change blog post content via the centralised blog generator).
+
+### CSS canonical tokens (already in place across all 6 sites)
+
+Every site's `globals.css` defines these brand tokens via aliases to its existing site-specific colours:
+
+```css
+--brand-primary           /* main brand colour (CTAs, accents) */
+--brand-primary-strong    /* darker variant for hover/active */
+--brand-on-primary        /* text colour on brand-primary backgrounds */
+```
+
+Plus these are already common across sites:
+```css
+--ink, --ink-soft, --muted, --surface, --background, --border
+```
+
+Workspace components MUST use only the canonical tokens. Per-site `var(--gold)`, `var(--copper)`, etc. references stay in per-site code only.
+
+### What's in `packages/web-shared/` (workspace package) as of Phase 2 closure
+
+- `lib/supabase-client.ts` — `submitLead`, `getSupabaseConfig` (used by all 6 sites' LeadForms)
+- `lib/local-business-schema.ts` — `buildLocalBusinessJsonLd` (used by per-site location pages where they exist)
+- `components/ui/layout-utils.ts` — canonical-token button + container classes (ready to adopt; sites still using per-site copies)
+
+### What lives ORPHANED at `shared/web-core/`
+
+Nothing. The orphan directory was deleted in Phase 2 closure (2026-05-20). The `shared/python-core/` directory remains (separate concern).
 
 ---
 
