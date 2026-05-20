@@ -101,6 +101,11 @@ class ResearchBundle:
     fresh_fetches: int = 0
     total_serper_cost_usd: float = 0.0
     total_deepseek_cost_usd: float = 0.0
+    # Top-N competitor SERP results (title + snippet + domain) for the topic
+    # query. Captured for the metaTitle / metaDescription differentiation step
+    # in the consolidated blog generator. NOT the same thing as research
+    # sources — these are pages we want to beat in the SERP.
+    competitor_serp: list[dict] = field(default_factory=list)
 
     def claims_by_tier(self) -> dict[str, int]:
         out: dict[str, int] = {}
@@ -513,9 +518,17 @@ def synthesize_research(
     candidates += _search_tier(query=topic_query, tier_domains=ind_doms, serper=serper, site_key=site_key)
     bundle.total_serper_cost_usd += 0.001 * len(ind_doms)
 
-    # Tier 4 - organic top
-    candidates += _search_organic_top(query=topic_query, serper=serper, site_key=site_key, n=max_organic_results)
+    # Tier 4 - organic top. ALSO captures the top-N organic SERP results
+    # as competitor_serp (title + snippet + domain) for the meta strategy.
+    organic_top = _search_organic_top(query=topic_query, serper=serper, site_key=site_key, n=max_organic_results)
+    candidates += organic_top
     bundle.total_serper_cost_usd += 0.001
+    # Take the top 5 (or however many) for meta differentiation regardless of
+    # whether they end up as research sources.
+    bundle.competitor_serp = [
+        {"title": r["title"], "snippet": r["snippet"], "domain": r["domain"]}
+        for r in organic_top[:5]
+    ]
 
     # Dedup against cached
     seen_urls: set[str] = set(cached_by_url.keys())

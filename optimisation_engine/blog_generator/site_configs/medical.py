@@ -84,6 +84,20 @@ SITE_CONFIG: dict = {
     "system_prompt": _BLOG_SYSTEM_PROMPT,
     "pillar_system_prompt": None,
 
+    "seo_persona": {
+        "audience": "UK GPs, locum doctors, hospital consultants, salaried medical staff, GP partners. NHS pension scheme members. Worry about annual allowance, tapering, McCloud remedy.",
+        "language_cues": [
+            "NHS pension annual allowance", "tapered annual allowance", "McCloud remedy",
+            "1995/2008/2015 sections", "IR35 locum", "MDU/MPS indemnity", "GMC registration",
+            "PCN income", "partnership profit share",
+        ],
+        "preferred_hooks": ["£60k annual allowance", "named scheme section", "specific year tax band", "NHS-specific rule"],
+        "banned_openers_extra": ["For doctors", "If you're a GP"],
+        "brand_authority": "mid",  # Less established than Dentists; lean on niche hook
+        "geo_qualifiers": "none",
+        "voice_signature": "NHS-pension-literate, medical-niche-specific. Not generic SME advice.",
+    },
+
     "canonical_format": "/blog/{slug}",  # Medical uses flat /blog/{slug}
     "category_slug_rules": {"and_replaces_ampersand": True},
 

@@ -93,6 +93,20 @@ SITE_CONFIG: dict = {
     "system_prompt": _BLOG_SYSTEM_PROMPT,
     "pillar_system_prompt": None,
 
+    "seo_persona": {
+        "audience": "UK law firm partners, sole practitioner solicitors, COLP/COFA officers, LLP members. Regulated by SRA. Tax-aware around partnership, client account, professional indemnity.",
+        "language_cues": [
+            "SRA Accounts Rules", "client account reconciliation", "COLP", "COFA",
+            "LLP tax-transparent", "salaried member rules FA 2014", "PII minimum",
+            "AML regulated", "conveyancing SDLT/LTT/LBTT", "goodwill 6.5%",
+        ],
+        "preferred_hooks": ["named SRA rule", "£ PII minimum", "regulatory deadline", "salaried-member trigger"],
+        "banned_openers_extra": ["For solicitors", "If you're a partner"],
+        "brand_authority": "mid",
+        "geo_qualifiers": "none",
+        "voice_signature": "SRA-Accounts-Rules-fluent. Partnership-vs-LLP-literate. Compliance-aware.",
+    },
+
     "canonical_format": "/blog/{category_slug}/{slug}",
     "category_slug_rules": {"and_replaces_ampersand": True},
 

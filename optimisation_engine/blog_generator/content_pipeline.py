@@ -235,6 +235,7 @@ def _synthesize_research(site_config: dict, topic: Topic) -> tuple[dict | None, 
             "diversity_tier_count": bundle.diversity_tier_count,
             "canonical_present": bundle.canonical_sources_present,
             "thin_bundle": thin,
+            "competitor_serp": bundle.competitor_serp or [],
         },
         bundle.total_serper_cost_usd + bundle.total_deepseek_cost_usd,
     )
@@ -297,12 +298,8 @@ def _build_user_prompt(
 
     n_sources = len((research_bundle or {}).get("sources") or [])
 
-    # Banned-phrase block: pass the per-site banned list straight to the model
-    # so it doesn't emit words it doesn't know are forbidden (e.g. "leverage"
-    # on Property).
+    # Banned-phrase block
     banned = site_config.get("banned_phrases") or []
-    # Filter out em/en-dash markers from the human-readable list (they're
-    # noise here; the system prompt already forbids them as punctuation)
     banned_human = [p for p in banned if p not in {"—", "–"}]
     banned_block = ""
     if banned_human:
@@ -311,6 +308,18 @@ def _build_user_prompt(
             + "\n  ".join(f"- {p!r}" for p in banned_human)
             + "\n  Includes inside H2/H3 headings. Pick a different word."
         )
+
+    # SEO persona block (drives metaTitle + metaDescription strategy)
+    persona = site_config.get("seo_persona") or {}
+    persona_block = _build_seo_persona_block(persona, topic) if persona else ""
+
+    # Competitor SERP block — top 5 ranking pages for the primary keyword,
+    # surfaced so the LLM can write a metaTitle/metaDescription that
+    # differentiates rather than echoes.
+    competitor_block = _build_competitor_serp_block(
+        (research_bundle or {}).get("competitor_serp") or [],
+        primary_keyword=topic.primary_keyword,
+    )
 
     return f"""Generate a comprehensive UK accounting blog post for {site_config["display_name"]}.
 
@@ -323,7 +332,7 @@ SECONDARY KEYWORDS (weave into body + meta where natural): {secondary}
 {cat_block}
 
 {links_block}
-{research_block}{banned_block}
+{research_block}{banned_block}{competitor_block}
 
 HARD RULES — read carefully (your output is rejected if any are broken):
 
@@ -340,27 +349,56 @@ HARD RULES — read carefully (your output is rejected if any are broken):
     - Do NOT include an FAQ section inside ==content==. FAQs go in ==FAQ1==
       through ==FAA4== only. The site renders them separately.
 
-  META TITLE — KEYWORD-DRIVEN:
-    - metaTitle MUST be 35-55 characters total. Do NOT append the site brand
-      name (e.g. "| {site_config["display_name"]}") — the renderer appends the
-      brand automatically.
-    - metaTitle MUST contain the PRIMARY KEYWORD verbatim or as the closest
-      natural variant: {topic.primary_keyword!r}. Front-load it within the
-      first 30 characters where possible.
-    - If the primary keyword is fully a verb-led phrase (e.g. "how to..."),
-      keep that wording. If it is a noun phrase ("dental group vat"),
-      compose around it: "Dental Group VAT: Partial Exemption Explained".
-    - Match the user_intent ({topic.user_intent}) — informational metaTitles
-      should start with How/What/Why/When; transactional ones with
-      Compare/Find/Choose/Buy; navigational ones with the brand or service.
+  {persona_block}
+  META TITLE — STRATEGIC (35-55 chars, keyword-led, formula-driven):
+    Pick the formula that matches USER INTENT ({topic.user_intent}):
 
-  META DESCRIPTION — KEYWORD + VALUE:
-    - 140-155 characters total.
-    - MUST contain the primary keyword once.
-    - SHOULD contain at least one secondary keyword from {topic.secondary_keywords[:5]!r}
-      when one fits naturally.
-    - Open with a fact, figure, or specific outcome. Avoid generic "In this
-      guide..." openers.
+      informational     -> [Question form]: [Specific hook]
+                            e.g. "How Is CGT on Inherited BTL Calculated?"
+
+      definitional      -> [Primary Keyword]: [Specific number/year/range]
+                            e.g. "AIA 2026/27: £1m Limit on Plant & Machinery"
+
+      comparison        -> [X] vs [Y]: [Decision criterion]
+                            e.g. "Sole Trader vs Ltd Co: Which Pays Less Tax?"
+
+      scenario          -> When [Trigger]: [Action/Rule]
+                            e.g. "When VAT Hits £90k: How to Register"
+
+      transactional     -> [Action verb] [Object] [Qualifier]
+                            e.g. "Choose an MTD-Ready BTL Accountant"
+
+    Mandatory rules:
+    - 35-55 chars total. Do NOT append site brand suffix; the renderer adds it.
+    - Primary keyword {topic.primary_keyword!r} must appear in first 30 chars
+      (verbatim or closest natural inflection).
+    - Use specific signals from the AUDIENCE PERSONA's "preferred_hooks" above.
+    - Active voice. No "is explained" / "complete guide to" / "everything you need".
+
+  META DESCRIPTION — 3-PART STRUCTURE (140-155 chars):
+
+    Part 1 — HOOK (first 30 chars):
+      A specific figure, year, change, or claim from the article body.
+      Examples: "£90k VAT threshold.", "From April 2026,", "5.8% peak in 2023."
+
+    Part 2 — VALUE (chars 30-110):
+      What the reader gains by clicking — concrete, not "learn more".
+      Examples: "We model flat rate vs standard for your portfolio."
+                "Step-by-step setup with Government Gateway."
+
+    Part 3 — DIFFERENTIATOR (last ~45 chars):
+      A year, jurisdiction, or audience qualifier specific to this site.
+      Examples: "UK 2026/27 rules." / "For BTL landlords." / "ICAEW chartered."
+
+    Mandatory rules:
+    - Primary keyword {topic.primary_keyword!r} must appear once.
+    - At least one secondary keyword from {topic.secondary_keywords[:5]!r}
+      when natural.
+    - First word must NOT be in this banned-opener list:
+      ["Learn", "Discover", "Find out", "In this", "Everything",
+       "If you", "Read", "Understand"]
+    - Must contain at least ONE specific signal (£ figure, % rate, year 20XX,
+      or named rule). No generic descriptions.
 
   INTERNAL LINKS:
     - Include at least 3 internal links in ==content==, drawn from the
@@ -373,7 +411,7 @@ HARD RULES — read carefully (your output is rejected if any are broken):
       (tier, YEAR) — e.g. (canonical, 2023) or (authority, undated).
     - If a source is dated 2 or more years before today, do NOT assert its
       specific figures (rates, percentages, threshold values) as current.
-      Frame them as historical: "in 2023", "as of [year]", "by mid-{year}".
+      Frame them as historical: "in 2023", "as of [year]", "by mid-[year]".
     - For figures that change frequently (mortgage rates, savings rates,
       energy bills, fuel prices, stock prices, currency rates), default to
       language like "rates fluctuate; check current data" or "use a current
@@ -394,6 +432,64 @@ system prompt. Every field marker must appear. Do not add any prose outside
 the markers.
 """
 
+
+def _build_competitor_serp_block(competitor_serp: list[dict], *, primary_keyword: str) -> str:
+    """Render the top-5 SERP competitors so the model can differentiate.
+
+    Each row shows the competitor's title and snippet — which is what their
+    metaTitle and metaDescription look like in the SERP. We pass these and
+    tell the LLM to find an angle no competitor is using.
+    """
+    if not competitor_serp:
+        return ""
+    lines = [
+        f"\n\nCOMPETITOR SERP (top {len(competitor_serp)} ranking for {primary_keyword!r}):",
+        "These are the meta titles + descriptions you are competing with. Pick an",
+        "angle, hook, or specific figure NONE of them are using. Do NOT echo their",
+        "phrasing.",
+        "",
+    ]
+    for i, r in enumerate(competitor_serp, 1):
+        title = (r.get("title") or "")[:100]
+        snippet = (r.get("snippet") or "")[:200]
+        lines.append(f"  [{i}] {r.get('domain', '')}")
+        lines.append(f"      Title  : {title}")
+        lines.append(f"      Snippet: {snippet}")
+    lines.append("")
+    lines.append("Your metaTitle + metaDescription should out-position these by:")
+    lines.append("  - Naming a more specific figure or year (e.g. '£90k' vs 'the threshold')")
+    lines.append("  - Picking a tighter audience qualifier (e.g. 'BTL landlords' vs 'landlords')")
+    lines.append("  - Using a different formula (if all are 'How to...', try 'When X happens, Y')")
+    return "\n".join(lines)
+
+
+def _build_seo_persona_block(persona: dict, topic) -> str:
+    """Convert the seo_persona config dict into a prompt block."""
+    if not persona:
+        return ""
+    cues = ", ".join(persona.get("language_cues", [])[:10])
+    hooks = " | ".join(persona.get("preferred_hooks", []))
+    geo = persona.get("geo_qualifiers") or "none"
+    banned_extra = persona.get("banned_openers_extra") or []
+    banned_str = (", ".join(f"{p!r}" for p in banned_extra)) if banned_extra else "(none)"
+
+    return f"""
+AUDIENCE PERSONA — drives the metaTitle, metaDescription, and voice:
+
+  WHO is searching: {persona.get("audience", "(unset)")}
+  Brand authority of this site: {persona.get("brand_authority", "mid")}
+  Voice signature: {persona.get("voice_signature", "")}
+  Geographic qualifiers policy: {geo}
+
+  LANGUAGE CUES to lean on (use 2-3 of these naturally in meta + body):
+    {cues}
+
+  PREFERRED HOOKS (use one of these in metaTitle + metaDescription):
+    {hooks}
+
+  Site-specific banned meta openers (in addition to global ones):
+    {banned_str}
+"""
 
 def _format_research_for_prompt(bundle: dict) -> str:
     if not bundle or not bundle.get("sources"):

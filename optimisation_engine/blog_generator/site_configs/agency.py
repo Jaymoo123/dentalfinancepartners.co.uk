@@ -89,6 +89,20 @@ SITE_CONFIG: dict = {
     "system_prompt": _BLOG_SYSTEM_PROMPT,
     "pillar_system_prompt": _PILLAR_SYSTEM_PROMPT,
 
+    "seo_persona": {
+        "audience": "UK marketing/digital/creative/PR agency founders. Service-business cash flow. IR35-aware. Want to scale + sell. ICAEW-aligned advisory tone.",
+        "language_cues": [
+            "utilisation rate", "billable rate", "retainer book", "project burn",
+            "gross margin", "EBITDA multiple", "R&D 186% deduction", "IR35 SDS",
+            "VAT flat rate 14.5%", "BADR 14%", "growth share scheme",
+        ],
+        "preferred_hooks": ["specific % margin", "£ R&D credit", "agency-specific metric", "BADR rate + year"],
+        "banned_openers_extra": ["For agencies", "If you run an agency", "Agency founders"],
+        "brand_authority": "mid",
+        "geo_qualifiers": "Shoreditch / Manchester NQ / Bristol Harbourside / Soho when topic is geographic",
+        "voice_signature": "Founder-to-founder. Agency operations + accounting. Not generic business advice.",
+    },
+
     "canonical_format": "/blog/{category_slug}/{slug}",
     "category_slug_rules": {"and_replaces_ampersand": False},  # Agency uses "and" written naturally
 

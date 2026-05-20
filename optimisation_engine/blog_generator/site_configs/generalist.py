@@ -92,6 +92,20 @@ SITE_CONFIG: dict = {
     "system_prompt": _BLOG_SYSTEM_PROMPT,
     "pillar_system_prompt": _PILLAR_SYSTEM_PROMPT,
 
+    "seo_persona": {
+        "audience": "UK SME owners, contractors, sole traders, partnerships, micro-business. Cross-sector. Want plain-English UK tax + compliance guidance.",
+        "language_cues": [
+            "your business", "limited company vs sole trader", "CT600", "P11D", "SA100",
+            "VAT registration £90k", "MTD ITSA £50k threshold", "dividend allowance £500",
+            "BADR 14% 2025/26", "Employment Allowance £10,500",
+        ],
+        "preferred_hooks": ["specific £ threshold + year", "named HMRC form", "rate + bracket", "deadline"],
+        "banned_openers_extra": ["For business owners", "If you run a business"],
+        "brand_authority": "low",  # New brand; lean on the specific hook, not the brand
+        "geo_qualifiers": "none — generalist is national",
+        "voice_signature": "Plain UK English. Cross-sector. Says 'your business' not 'dental practice'. Specific HMRC form names + figures.",
+    },
+
     "canonical_format": "/blog/{category_slug}/{slug}",
     "category_slug_rules": {"and_replaces_ampersand": False},
 

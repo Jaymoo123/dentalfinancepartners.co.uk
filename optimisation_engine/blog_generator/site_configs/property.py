@@ -98,6 +98,21 @@ SITE_CONFIG: dict = {
     "system_prompt": _BLOG_SYSTEM_PROMPT,
     "pillar_system_prompt": None,
 
+    # --- SEO persona for meta title/description strategy -------------------
+    "seo_persona": {
+        "audience": "UK BTL landlords, SPV owners, portfolio investors, holiday-let owners, non-resident landlords. Tax-conscious, mortgage-aware. Wants specific £ figures and rules, not generic 'property is a good investment'.",
+        "language_cues": [
+            "Section 24", "20% tax credit", "CGT 18%/24%", "60-day reporting", "MTD ITSA",
+            "SDLT 5% surcharge", "FHL abolition", "BTL mortgage", "PPR relief", "NRL scheme",
+            "Section 162", "BADR", "SPV", "incorporation relief",
+        ],
+        "preferred_hooks": ["£ threshold + year", "% tax rate", "specific deadline (April 2026, etc.)", "named scheme/section"],
+        "banned_openers_extra": ["For landlords", "If you're a landlord"],
+        "brand_authority": "high",
+        "geo_qualifiers": "city-specific when slug names a city (Manchester, Bristol, Birmingham, etc.) — include in metaTitle",
+        "voice_signature": "Tax-savvy practical voice. Section-24-literate. Lender-aware.",
+    },
+
     # --- URL format --------------------------------------------------------
     "canonical_format": "/blog/{category_slug}/{slug}",
     "category_slug_rules": {"and_replaces_ampersand": True},

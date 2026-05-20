@@ -105,6 +105,12 @@ def validate_post(fields: dict, *, site_config: dict) -> list[str]:
                     f"with canonical present, so citations are required."
                 )
 
+    # ---- SEO meta strategy pre-flight gates ----------------------------
+    if meta_desc:
+        issues.extend(_validate_meta_description(meta_desc, site_config))
+    if meta_title:
+        issues.extend(_validate_meta_title(meta_title))
+
     # ---- Site-specific anchor-term requirement (Dentists / Solicitors) ---
     anchor_terms = site_config.get("anchor_terms")
     anchor_rules = site_config.get("anchor_rules")
@@ -154,5 +160,79 @@ def _validate_anchor_terms(
         h2s = re.findall(r"<h2[^>]*>(.*?)</h2>", content, flags=re.IGNORECASE | re.DOTALL)
         if not any(any(t.lower() in h.lower() for t in anchor_terms) for h in h2s):
             issues.append("No <h2> contains an anchor term")
+
+    return issues
+
+
+# ---------------------------------------------------------------------------
+# SEO meta strategy validators (the pre-flight gates from the meta strategy)
+# ---------------------------------------------------------------------------
+
+# Banned meta-description openers (generic, low-CTR phrases)
+_BANNED_META_OPENERS = {
+    "learn", "discover", "find", "in", "everything",
+    "if", "read", "understand", "explore", "uncover",
+}
+
+# Per-meta-description hook signals: at least ONE must be present.
+_HOOK_PATTERNS = [
+    re.compile(r"£\s?\d"),                             # £ figure
+    re.compile(r"\d{1,3}(?:\.\d+)?%"),                 # percentage
+    re.compile(r"20\d{2}"),                            # year (2020+)
+    re.compile(r"\b(?:Section|s\.|Schedule|Sch)\s?\d", re.IGNORECASE),  # named rule
+    re.compile(r"\b(?:April|January|July|October)\s+20\d{2}"),  # specific deadline
+    re.compile(r"\b\d+\s+(?:day|month|year|week)s?\b", re.IGNORECASE),  # time qualifier
+]
+
+
+def _validate_meta_description(meta_desc: str, site_config: dict) -> list[str]:
+    """Pre-flight gates from the holistic meta strategy."""
+    issues: list[str] = []
+
+    first_word = meta_desc.strip().split(" ", 1)[0].strip(",.;:").lower() if meta_desc.strip() else ""
+    if first_word in _BANNED_META_OPENERS:
+        issues.append(f"metaDescription opens with banned word {first_word!r} — pick a specific hook instead")
+
+    # Per-site banned openers (in addition to global)
+    persona = site_config.get("seo_persona") or {}
+    extra_banned = [b.lower() for b in (persona.get("banned_openers_extra") or [])]
+    md_lower = meta_desc.lower()
+    for ban in extra_banned:
+        if md_lower.startswith(ban.lower()):
+            issues.append(f"metaDescription opens with site-banned phrase {ban!r}")
+
+    # Must contain at least one specific signal (hook)
+    has_hook = any(rx.search(meta_desc) for rx in _HOOK_PATTERNS)
+    if not has_hook:
+        issues.append(
+            "metaDescription has no specific signal (£ figure, % rate, year 20XX, "
+            "section/schedule, deadline, or time qualifier). Add a concrete number."
+        )
+
+    return issues
+
+
+def _validate_meta_title(meta_title: str) -> list[str]:
+    """Pre-flight gates for metaTitle."""
+    issues: list[str] = []
+
+    # No site-brand suffix appended by the LLM
+    # Match " | Brand", " | Brand Name", " | Brand Name Partners", etc.
+    suspicious_endings = re.search(r"\|\s*[A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+)*\s*$", meta_title)
+    if suspicious_endings:
+        issues.append(f"metaTitle appears to include a brand suffix: {suspicious_endings.group(0)!r}. The renderer adds it.")
+
+    # No generic "complete guide to..." or "everything you need..."
+    weak_patterns = [
+        r"complete guide to",
+        r"everything you need",
+        r"comprehensive guide",
+        r"ultimate guide",
+        r"\ba complete\b",
+    ]
+    ml = meta_title.lower()
+    for pat in weak_patterns:
+        if re.search(pat, ml):
+            issues.append(f"metaTitle contains weak/generic phrasing matching {pat!r}")
 
     return issues

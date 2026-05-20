@@ -118,6 +118,21 @@ SITE_CONFIG: dict = {
     "system_prompt": _BLOG_SYSTEM_PROMPT,
     "pillar_system_prompt": None,
 
+    # --- SEO persona for meta title/description strategy -------------------
+    "seo_persona": {
+        "audience": "UK dental practice owners, associate dentists, locums, foundation dentists. Knows clinical workflow + NHS contracts + GDC registration. Wants specific dental rules, not generic UK SME advice.",
+        "language_cues": [
+            "UDA value", "NHS pension section", "associate vs principal", "s.198 election",
+            "goodwill amortisation 6.5%", "AIA on dental chairs", "practice goodwill multiple",
+            "performer number", "McCloud remedy", "Schedule 9 Group 7", "VATA 1994",
+        ],
+        "preferred_hooks": ["£ figure with year", "specific UDA range", "named scheme section", "regulatory deadline"],
+        "banned_openers_extra": ["For dentists", "If you're a dentist"],
+        "brand_authority": "high",  # ICAEW + dental specialism warrants brand-forward titles
+        "geo_qualifiers": "none",  # Dentists serve UK-wide; no city qualifiers
+        "voice_signature": "Practical, ICAEW-grade, dental-specialist. Not generic accountancy.",
+    },
+
     # --- URL format --------------------------------------------------------
     "canonical_format": "/blog/{category_slug}/{slug}",
     "category_slug_rules": {"and_replaces_ampersand": True},
