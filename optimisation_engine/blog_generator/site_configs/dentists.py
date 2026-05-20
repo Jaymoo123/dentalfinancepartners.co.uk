@@ -82,9 +82,9 @@ SITE_CONFIG: dict = {
     "pillar_output_dir": None,
 
     # --- Topic table -------------------------------------------------------
-    "topic_table": "blog_topics_dentists",
+    "topic_table": "blog_topics",  # unified post Phase 4; site_key column isolates rows
     "topic_column": "topic",
-    "secondary_keywords_shape": "columns",  # 1..10 individual columns
+    "secondary_keywords_shape": "array",  # collapsed from secondary_keyword_1..10 in Phase 4
     "done_marker_field": "used",
     "done_marker_value": True,
     "done_timestamp_field": "generated_at",

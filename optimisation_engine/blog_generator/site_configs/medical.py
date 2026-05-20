@@ -56,14 +56,14 @@ SITE_CONFIG: dict = {
     "output_dir": "Medical/web/content/blog",
     "pillar_output_dir": None,
 
-    "topic_table": "blog_topics_medical",
-    "topic_column": "keyword",  # Medical uses "keyword" not "topic"
-    "secondary_keywords_shape": "columns",
-    "done_marker_field": "status",  # Medical uses status, not used
+    "topic_table": "blog_topics",  # unified post Phase 4; site_key column isolates rows
+    "topic_column": "topic",  # was "keyword" pre-Phase 4 — renamed in backfill
+    "secondary_keywords_shape": "array",
+    "done_marker_field": "status",  # Medical still uses status, not used
     "done_marker_value": "published",
     "done_timestamp_field": "published_at",
     "slug_field": "slug",
-    "topic_order": "priority.asc,difficulty.asc.nullslast,created_at.asc",
+    "topic_order": "priority.asc,keyword_difficulty.asc.nullslast,created_at.asc",  # was "difficulty"
 
     "llm_provider": "deepseek",
     "llm_model": "deepseek-chat",

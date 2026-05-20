@@ -64,7 +64,7 @@ SITE_CONFIG: dict = {
     "output_dir": "generalist/web/content/blog",
     "pillar_output_dir": "generalist/web/content/fundamentals",
 
-    "topic_table": "blog_topics_generalist",
+    "topic_table": "blog_topics",  # unified post Phase 4; site_key column isolates rows
     "topic_column": "topic",
     "secondary_keywords_shape": "array",
     "done_marker_field": "used",

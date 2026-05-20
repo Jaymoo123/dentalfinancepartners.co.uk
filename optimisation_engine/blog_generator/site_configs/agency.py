@@ -6,7 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
 
-_CONFIG_PATH = ROOT / "Digital Agency" / "pipeline" / "config_supabase.py"
+_CONFIG_PATH = ROOT / "digital-agency" / "pipeline" / "config_supabase.py"
 _spec = importlib.util.spec_from_file_location("_agency_config_supabase", _CONFIG_PATH)
 if _spec is None or _spec.loader is None:
     raise ImportError(f"Cannot load Agency config from {_CONFIG_PATH}")
@@ -58,10 +58,10 @@ SITE_CONFIG: dict = {
     "domain": "agencyfounderfinance.co.uk",
     "site_base_url": "https://www.agencyfounderfinance.co.uk",
     "author_name": "Agency Founder Finance Editorial Team",
-    "output_dir": "Digital Agency/web/content/blog",
-    "pillar_output_dir": "Digital Agency/web/content/fundamentals",
+    "output_dir": "digital-agency/web/content/blog",
+    "pillar_output_dir": "digital-agency/web/content/fundamentals",
 
-    "topic_table": "blog_topics_agency",
+    "topic_table": "blog_topics",  # unified post Phase 4; site_key column isolates rows
     "topic_column": "topic",
     "secondary_keywords_shape": "array",
     "done_marker_field": "used",

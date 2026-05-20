@@ -29,19 +29,16 @@ EXPECTED_SITE_PREFIXES: dict[str, str] = {
     "property": "Property",
     "medical": "Medical",
     "solicitors": "Solicitors",
-    "agency": "Digital Agency",
+    "agency": "digital-agency",
     "generalist": "generalist",
 }
 
-# site_key -> required Supabase table prefix
-EXPECTED_TABLE_PREFIXES: dict[str, str] = {
-    "dentists": "blog_topics_dentists",
-    "property": "blog_topics_property",
-    "medical": "blog_topics_medical",
-    "solicitors": "blog_topics_solicitors",
-    "agency": "blog_topics_agency",
-    "generalist": "blog_topics_generalist",
-}
+# Post Phase 4 (2026-05-20): all sites share a single `blog_topics` table.
+# Row-level isolation is via the `site_key` column. The table-level check
+# only verifies the consolidated name.
+UNIFIED_TOPICS_TABLE = "blog_topics"
+
+KNOWN_SITES: set[str] = set(EXPECTED_SITE_PREFIXES.keys())
 
 
 def assert_output_path_belongs_to_site(path: Path, site_key: str) -> None:
@@ -64,14 +61,18 @@ def assert_output_path_belongs_to_site(path: Path, site_key: str) -> None:
 
 
 def assert_table_belongs_to_site(table_name: str, site_key: str) -> None:
-    """Confirm the Supabase table name is the expected one for this site."""
-    if site_key not in EXPECTED_TABLE_PREFIXES:
+    """Confirm the Supabase table name matches the unified topics table.
+
+    Post Phase 4: all sites read+write `blog_topics`; row-level isolation is
+    via the `site_key` column (callers must add `?site_key=eq.<site>` filters
+    on every query — enforced in topic_repository.py).
+    """
+    if site_key not in KNOWN_SITES:
         raise SiteRoutingError(f"Unknown site_key: {site_key!r}")
-    expected = EXPECTED_TABLE_PREFIXES[site_key]
-    if table_name != expected:
+    if table_name != UNIFIED_TOPICS_TABLE:
         raise SiteRoutingError(
             f"Refusing to use table {table_name!r} for site={site_key!r}. "
-            f"Expected {expected!r}."
+            f"Expected {UNIFIED_TOPICS_TABLE!r}."
         )
 
 
@@ -101,10 +102,9 @@ def assert_site_config_consistent(config: dict, site_key: str) -> None:
             f"{expected_prefix!r} prefix"
         )
     table = config.get("topic_table", "")
-    expected_table = EXPECTED_TABLE_PREFIXES[site_key]
-    if table != expected_table:
+    if table != UNIFIED_TOPICS_TABLE:
         raise SiteRoutingError(
-            f"site={site_key!r}: topic_table={table!r} must be {expected_table!r}"
+            f"site={site_key!r}: topic_table={table!r} must be {UNIFIED_TOPICS_TABLE!r}"
         )
 
 

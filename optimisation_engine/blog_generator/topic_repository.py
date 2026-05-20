@@ -112,18 +112,21 @@ def _done_filter_params(site_config: dict) -> dict:
 
 
 def fetch_next_topic(site_config: dict) -> Topic | None:
-    """Return the next unused topic from the site's table.
+    """Return the next unused topic for the site.
 
-    Ordering is per-site (different tables have different columns). Falls back
-    to created_at ascending (oldest-first) if the site config doesn't specify.
+    Post Phase 4: reads from unified `blog_topics` table, filtered by
+    site_key. Ordering is per-site (different sites order differently);
+    falls back to created_at ascending.
     """
     table = site_config["topic_table"]
-    assert_table_belongs_to_site(table, site_config["site_key"])
+    site_key = site_config["site_key"]
+    assert_table_belongs_to_site(table, site_key)
 
     order_clause = site_config.get("topic_order") or "created_at.asc"
 
     params = {
         "select": _select_clause(site_config),
+        "site_key": f"eq.{site_key}",
         "order": order_clause,
         "limit": "1",
         **_done_filter_params(site_config),
@@ -144,10 +147,12 @@ def fetch_next_topic(site_config: dict) -> Topic | None:
 def fetch_topic_by_keyword(site_config: dict, keyword: str) -> Topic | None:
     """Look up a specific topic by its primary keyword. Used for --topic CLI flag."""
     table = site_config["topic_table"]
-    assert_table_belongs_to_site(table, site_config["site_key"])
+    site_key = site_config["site_key"]
+    assert_table_belongs_to_site(table, site_key)
 
     params = {
         "select": _select_clause(site_config),
+        "site_key": f"eq.{site_key}",
         site_config["topic_column"]: f"eq.{keyword}",
         "limit": "1",
     }
@@ -165,7 +170,8 @@ def fetch_topic_by_keyword(site_config: dict, keyword: str) -> Topic | None:
 def mark_topic_done(site_config: dict, topic_id: str, slug: str) -> None:
     """Mark the topic as generated. Uses the site's done-marker conventions."""
     table = site_config["topic_table"]
-    assert_table_belongs_to_site(table, site_config["site_key"])
+    site_key = site_config["site_key"]
+    assert_table_belongs_to_site(table, site_key)
 
     field = site_config["done_marker_field"]
     value = site_config["done_marker_value"]
@@ -187,7 +193,9 @@ def mark_topic_done(site_config: dict, topic_id: str, slug: str) -> None:
             "Content-Type": "application/json",
             "Prefer": "return=minimal",
         },
-        params={"id": f"eq.{topic_id}"},
+        # site_key filter is defense-in-depth: rules out cross-site row
+        # update even if a duplicate id somehow existed across sites.
+        params={"id": f"eq.{topic_id}", "site_key": f"eq.{site_key}"},
         json=payload,
         timeout=20.0,
     )
