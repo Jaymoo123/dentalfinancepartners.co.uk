@@ -3,10 +3,14 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const appDir = path.dirname(fileURLToPath(import.meta.url));
+// Repo root is two levels up: Property/web -> Property -> Accounting (repo root).
+// Used so Next.js traces files in the npm workspace (packages/web-shared/*).
+const repoRoot = path.resolve(appDir, "..", "..");
 
 const nextConfig: NextConfig = {
-  // Anchor tracing to this app so Next does not treat C:\Users\user (extra lockfile) as the monorepo root.
-  outputFileTracingRoot: appDir,
+  outputFileTracingRoot: repoRoot,
+  // Workspace package contains pure TS — Next.js must transpile it.
+  transpilePackages: ["@accounting-network/web-shared"],
   eslint: {
     ignoreDuringBuilds: false, // Re-enable ESLint during builds for better code quality
   },

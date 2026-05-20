@@ -7,7 +7,7 @@ import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { getAllPosts, getCategorySlug } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { buildLocalBusinessJsonLd } from "@/lib/local-business-schema";
+import { buildLocalBusinessJsonLd } from "@accounting-network/web-shared/lib/local-business-schema";
 
 type Props = { params: Promise<{ slug: string }> };
 
