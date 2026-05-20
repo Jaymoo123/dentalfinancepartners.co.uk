@@ -407,6 +407,75 @@ def _search_tier(*, query: str, tier_domains: list[str], serper: SerperClient, s
     return out
 
 
+# Stop-word list for topical relevance check (deliberately compact)
+_REL_STOPWORDS = {
+    "the", "a", "an", "in", "of", "for", "to", "and", "or", "but", "is", "are",
+    "was", "were", "be", "with", "on", "by", "at", "from", "as", "this", "that",
+    "it", "you", "your", "i", "we", "my", "our", "uk", "how", "what", "when",
+    "why", "where", "do", "does", "can", "should", "would", "will", "vs", "versus",
+}
+
+# A small synonym map for common UK accounting acronyms / phrase pairs.
+# When the topic uses one form, also accept the other in candidate text.
+_REL_SYNONYMS = {
+    "vat": ["value added tax"],
+    "mtd": ["making tax digital"],
+    "cgt": ["capital gains tax"],
+    "iht": ["inheritance tax"],
+    "ni":  ["national insurance"],
+    "aia": ["annual investment allowance"],
+    "btl": ["buy to let", "buy-to-let"],
+    "spv": ["special purpose vehicle"],
+    "sdlt": ["stamp duty land tax", "stamp duty"],
+    "nhs": ["national health service"],
+    "uda": ["units of dental activity"],
+    "sra": ["solicitors regulation authority"],
+    "rdec": ["research and development expenditure credit"],
+    "badr": ["business asset disposal relief", "entrepreneurs relief"],
+    "ppr": ["principal private residence", "private residence relief"],
+    "fhl": ["furnished holiday let", "furnished holiday letting"],
+    "nrl": ["non-resident landlord", "non resident landlord"],
+    "p11d": ["p11d"],
+}
+
+
+def _topic_tokens(text: str) -> set[str]:
+    """Lowercase tokens minus stopwords. Length filter to drop very short noise."""
+    import re as _re_local
+    tokens = set()
+    text_lower = (text or "").lower()
+    for tok in _re_local.findall(r"[a-z][a-z0-9-]+", text_lower):
+        if tok in _REL_STOPWORDS:
+            continue
+        if len(tok) < 3:
+            continue
+        tokens.add(tok)
+    # Add synonyms: if the text mentions the long form, also include the acronym
+    for acronym, phrases in _REL_SYNONYMS.items():
+        if any(phrase in text_lower for phrase in phrases) or acronym in text_lower:
+            tokens.add(acronym)
+    return tokens
+
+
+def _is_topically_relevant(candidate: dict, topic_query: str) -> bool:
+    """Reject candidates whose title + snippet have no significant overlap
+    with the topic_query.
+
+    Implementation: tokenize topic_query (drop stopwords). If any significant
+    topic token appears in candidate title OR snippet (with acronym/synonym
+    expansion), accept. Otherwise reject.
+    """
+    topic_tok = _topic_tokens(topic_query)
+    if not topic_tok:
+        # No tokens to compare — be permissive
+        return True
+    cand_text = f"{candidate.get('title', '')} {candidate.get('snippet', '')}"
+    cand_tok = _topic_tokens(cand_text)
+    if not cand_tok:
+        return False
+    return bool(topic_tok & cand_tok)
+
+
 def _search_organic_top(*, query: str, serper: SerperClient, site_key: str | None, n: int = 5) -> list[dict]:
     """Top-N organic SERP results, dedup against blocked + already-fetched."""
     try:
@@ -535,6 +604,12 @@ def synthesize_research(
     fresh_candidates: list[dict] = []
     for c in candidates:
         if c["url"] in seen_urls:
+            continue
+        # Topical relevance gate — reject candidates whose title+snippet
+        # show no significant overlap with the topic_query. This catches
+        # gov.uk pages about unrelated topics that gov.uk happens to host,
+        # nature.com hits on a UK tax topic, etc.
+        if not _is_topically_relevant(c, topic_query):
             continue
         seen_urls.add(c["url"])
         fresh_candidates.append(c)
