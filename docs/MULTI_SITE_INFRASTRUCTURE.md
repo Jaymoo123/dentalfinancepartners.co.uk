@@ -412,6 +412,39 @@ Generalist is the most-evolved version — likely the canonical source for Phase
 
 Each migration is its own commit + Vercel deploy + smoke test per site before moving on.
 
+### Per-site migration checklist (Dentists pattern, 2026-05-20)
+
+The pattern established with Dentists is the template for the remaining 4 sites + Digital Agency. Each migration:
+
+1. **Add the site to root workspaces array** in `package.json`: `"workspaces": ["packages/*", "Dentists/web", ...]`
+2. **Rename the site's package.json name** to be unique (workspaces require uniqueness): `"name": "web"` → `"name": "<sitekey>-web"` (e.g. `dentists-web`, `property-web`)
+3. **Add the workspace package as a dependency**: `"@accounting-network/web-shared": "*"` in the site's `package.json` `dependencies`
+4. **Update Next.js config** at `<site>/web/next.config.ts`:
+   - Anchor `outputFileTracingRoot` to repo root (not appDir) so the workspace package is included in build tracing
+   - Add `transpilePackages: ["@accounting-network/web-shared"]` so Next.js compiles the workspace TS
+5. **Update imports** in site code: replace `@/lib/<file>` with `@accounting-network/web-shared/lib/<file>` for the migrated files
+6. **Delete the per-site copies** of files now in shared
+7. **Add `<site>/web/vercel.json`** so Vercel install runs at workspace root:
+   ```json
+   {
+     "installCommand": "cd ../.. && npm install --no-audit --no-fund",
+     "buildCommand": "next build",
+     "framework": "nextjs"
+   }
+   ```
+8. **Run `npm install` at repo root** — hoists workspace package + creates symlink
+9. **Local smoke test**: `cd <site>/web && rm -rf .next && npm run build` — verify build succeeds and pre-renders the migrated routes
+10. **Deploy** via existing `cd <site> && vercel deploy --prod` workflow (unchanged from memory `vercel_cli_deploy_workflow`)
+11. **Production smoke test**: curl homepage + the specific routes that use migrated files. For the local-business-schema migration: `/locations/london`, `/locations/manchester` etc. for Dentists.
+12. **Wait 24-72h** observing GSC + lead-flow before migrating next site
+
+### Why this Vercel pattern works
+
+- Vercel reads `vercel.json` from the project's `rootDirectory` (already set to `web/` per existing config).
+- `installCommand` runs from `rootDirectory`. The `cd ../..` moves to the actual repo root where the workspace lives. `npm install` there installs all workspace dependencies and creates the symlink `node_modules/@accounting-network/web-shared`.
+- `buildCommand` runs from `rootDirectory` again (Vercel doesn't preserve `installCommand`'s cwd). Next.js builds from `web/` and walks up Node's module resolution to find the workspace package at the repo root.
+- This avoids Vercel dashboard changes; the migration is fully repo-config-driven.
+
 ---
 
 ## Ops Commands (Phase 6 will build)
