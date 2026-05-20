@@ -15,8 +15,8 @@ The single source of truth for how the niche-site portfolio is organised. Read t
 | baseline | Pre-refactor snapshot of working tree | ✅ Tagged | `infra-refactor/baseline` |
 | 0 | Foundation + checkpoint setup, staging Supabase, env var matrix, this doc | ✅ Complete | `infra-refactor/phase-0-complete` |
 | 1 | Inventory + sites registry | ✅ Complete | `infra-refactor/phase-1-complete` |
-| 2 | Shared web component package via npm workspaces | ✅ Closed (MVP + Digital Agency unification + foundation; component migrations deferred — see policy below) | `infra-refactor/phase-2-mvp-complete` |
-| 3 | Centralise remaining pipeline scripts (submit_indexnow etc.) | ⬜ Next | — |
+| 2 | Shared web component package via npm workspaces | ✅ Closed (MVP + Digital Agency unification + foundation; component migrations deferred — see policy below) | `infra-refactor/phase-2-complete` |
+| 3 | Centralise pipeline scripts | ✅ Closed (submit_indexnow centralised + 26 legacy scripts deleted) | `infra-refactor/phase-3-complete` |
 | 4 | Unify per-site DB tables (highest risk) | ⬜ Pending | — |
 | 5 | Health dashboard + monitoring | ⬜ Pending | — |
 | 6 | Ops + maintenance tooling | ⬜ Pending | — |
