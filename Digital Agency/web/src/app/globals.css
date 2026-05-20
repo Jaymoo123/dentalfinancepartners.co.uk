@@ -62,6 +62,11 @@
   --input: #e2e8f0;
   --ring: #4f46e5;
   --radius: 0rem;
+
+  /* Canonical brand tokens for @accounting-network/web-shared components. */
+  --brand-primary: var(--accent);
+  --brand-primary-strong: var(--accent-strong);
+  --brand-on-primary: var(--accent-foreground);
 }
 
 @theme inline {

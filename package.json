@@ -9,7 +9,8 @@
     "Property/web",
     "Medical/web",
     "Solicitors/web",
-    "generalist/web"
+    "generalist/web",
+    "Digital Agency/web"
   ],
   "engines": {
     "node": ">=20"
