@@ -33,7 +33,7 @@ export type { CollectionPageInput } from "./collection-page";
 
 // Re-export the pre-existing single-file builders
 export { buildOrganizationJsonLd } from "@/lib/organization-schema";
-export { buildLocalBusinessJsonLd } from "@/lib/local-business-schema";
+export { buildLocalBusinessJsonLd } from "@accounting-network/web-shared/lib/local-business-schema";
 export {
   buildBreadcrumbJsonLd,
   buildBlogPostingJsonLd,

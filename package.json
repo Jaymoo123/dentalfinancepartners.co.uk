@@ -6,7 +6,10 @@
   "workspaces": [
     "packages/*",
     "Dentists/web",
-    "Property/web"
+    "Property/web",
+    "Medical/web",
+    "Solicitors/web",
+    "generalist/web"
   ],
   "engines": {
     "node": ">=20"

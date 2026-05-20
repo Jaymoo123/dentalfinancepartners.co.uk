@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
-import { submitLead, getSupabaseConfig } from "@/lib/supabase-client";
+import { submitLead, getSupabaseConfig } from "@accounting-network/web-shared/lib/supabase-client";
 
 const fieldClass =
   "mt-2 w-full min-h-12 touch-manipulation border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-orange-500 focus:outline-none";

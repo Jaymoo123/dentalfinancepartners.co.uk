@@ -3,10 +3,12 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const appDir = path.dirname(fileURLToPath(import.meta.url));
+// Repo root is two levels up: Solicitors/web -> Solicitors -> Accounting (repo root).
+const repoRoot = path.resolve(appDir, "..", "..");
 
 const nextConfig: NextConfig = {
-  // Anchor tracing to this app so Next does not treat C:\Users\user (extra lockfile) as the monorepo root.
-  outputFileTracingRoot: appDir,
+  outputFileTracingRoot: repoRoot,
+  transpilePackages: ["@accounting-network/web-shared"],
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'images.unsplash.com' },
