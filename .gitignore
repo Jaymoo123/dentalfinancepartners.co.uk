@@ -62,6 +62,9 @@ out/
 .DS_Store
 Thumbs.db
 
+# Claude Code harness state (session, schedule, plans live in ~/.claude not here)
+.claude/
+
 # Temporary files
 *.tmp
 *.temp
