@@ -104,22 +104,26 @@ Expected set (from typical Next.js + Supabase + DeepSeek stack):
 
 ## Staging Supabase Project
 
-**Status**: Not yet set up (manual gate — requires Supabase dashboard).
+**Status**: ✅ Created 2026-05-20. Schema sync to staging deferred until Phase 3/4 prep.
+
+**Project details**:
+- URL: `https://fyabqbuklfrjqjxaofcx.supabase.co`
+- Project ref: `fyabqbuklfrjqjxaofcx`
+- Publishable (anon) key: in `.env` as `SUPABASE_STAGING_KEY`
+- DB connection: `postgresql://postgres:[PASSWORD]@db.fyabqbuklfrjqjxaofcx.supabase.co:5432/postgres` — postgres password held by owner; needed for `pg_dump`-based sync if used
+- REST API verified responding (`PGRST205` = expected empty schema)
 
 **Required for**: Phase 4 (DB table consolidation) dry-runs, Phase 6 migration runner safety, Phase 7 RLS policy testing.
 
-**Setup steps (owner action):**
-1. Log in to https://supabase.com/dashboard
-2. Create new project. Name: `accounting-staging`. Region: same as production (likely `eu-west-1`/London).
-3. Free tier is fine — schema-only sync, minimal data.
-4. Capture URL + service role key → add as new env vars: `SUPABASE_STAGING_URL`, `SUPABASE_STAGING_SERVICE_ROLE_KEY`.
-5. After created, sync schema from prod:
-   ```bash
-   # Replace with actual URLs
-   pg_dump --schema-only --no-owner "$PROD_SUPABASE_DB_URL" > schema_snapshot.sql
-   psql "$STAGING_SUPABASE_DB_URL" < schema_snapshot.sql
-   ```
-6. Verify staging has same tables + RLS policies as prod (Phase 1 captures the inventory of both).
+**Outstanding owner actions before staging is usable for migrations**:
+1. `supabase login` (interactive — opens browser, captures access token to `~/.supabase`)
+2. `supabase link --project-ref fyabqbuklfrjqjxaofcx`
+3. Decide schema-sync approach:
+   - **Option A (recommended)**: replay committed migrations against staging via `npx supabase db push --linked`. Works if prod schema was 100% created via committed migrations. We need to verify this in Phase 1.5.
+   - **Option B**: pg_dump from prod (needs prod postgres password) + psql into staging.
+4. Capture staging service_role key if Phase 7 needs admin operations (currently the publishable key is enough for read tests).
+
+**Supabase CLI** available via `npx supabase` (version 2.100.1+, no global install needed).
 
 ---
 
@@ -200,15 +204,50 @@ Worth flagging as a Phase 1 sub-investigation: confirm the LeadForm submit path 
 
 ---
 
-## RLS Policies (Phase 1 will populate)
+## RLS Policies — Phase 1 Findings (2026-05-20)
 
-User confirmed RLS policies are in place. Phase 1 must:
+**Policies committed in migration history** (read via `supabase/migrations/*.sql`):
 
-1. Query Supabase for all RLS policies per table
-2. Capture policy definitions verbatim into a new section here
-3. Establish negative test: "Can a query made under site_key=X return any row with site_key=Y?" — must be **No** for cross-site-isolation tables (e.g. leads, blog_topics).
+### From `003_add_rls_policies.sql` (2026-03-29)
 
-No table consolidation in Phase 4 proceeds until the RLS verification gate passes on staging.
+Security model:
+- `anon` role (public website visitors): **INSERT-only on `leads`**, **SELECT-only on `blog_topics` + `blog_topics_property`**, **explicit DENY on `agent_executions`, `agent_costs`, `published_content`, `niche_metrics`, `seo_rankings`**
+- `authenticated` role: reserved for future admin features (read all)
+- `service_role`: bypasses RLS (Python agents + GitHub Actions)
+
+### From `20260331000002_fix_leads_rls_policies.sql` (2026-03-31)
+
+Tightened leads policies:
+- `anon_can_only_insert_leads`: anon may INSERT
+- `anon_cannot_select_leads`: anon may NOT SELECT (privacy)
+- `anon_cannot_update_leads`, `anon_cannot_delete_leads`: anon may NOT UPDATE/DELETE
+- `authenticated_can_{read,update,delete}_leads`: future admin paths
+
+### Tables with committed RLS policies
+- `leads` ✓ (most restrictive — anon insert only)
+- `blog_topics` ✓ (anon read)
+- `blog_topics_property` ✓ (anon read)
+- `agent_executions`, `agent_costs`, `published_content`, `niche_metrics`, `seo_rankings` ✓ (deny anon)
+
+### Tables with NO committed RLS policy (gap)
+
+The following tables were created by later migrations and **may or may not** have RLS policies — committed migrations don't show them. To be verified via dashboard or pg_policies query:
+
+- `blog_topics_dentists`, `blog_topics_medical`, `blog_topics_solicitors`, `blog_topics_agency`, `blog_topics_generalist`
+- `sites`
+- `gsc_query_data`, `bing_query_data`, `dataforseo_keyword_data`, `dataforseo_competitor_data`
+- `api_cost_log`
+- `optimisation_changes`, `optimisation_opportunities`
+- `apply_attempts`, `meta_performance`
+- `gsc_page_performance`, `blog_optimizations`, `gsc_indexing_issues`
+
+**Phase 1 sub-task** (post-staging-link): create a SECURITY DEFINER RPC that returns `pg_policies` rows, or use Supabase dashboard, to enumerate live RLS on every table and verify nothing is missing for the newer tables. This is the gate before Phase 4 table consolidation.
+
+### Verification gate before Phase 4
+
+Before any table consolidation, the negative test must pass on staging: "Given a row written with `source='dentists'` (or `site_key='dentists'`), can a query made under `source='property'` context read it?" — must be **No** for `leads`, `blog_topics_*`, `optimisation_*`, etc.
+
+If RLS is found missing on any cross-site-isolation table, Phase 4 must include adding those policies before consolidating.
 
 ---
 
@@ -224,17 +263,42 @@ Phase 3 destination: `optimisation_engine/indexing/` and other appropriate subdi
 
 ---
 
-## Shared Web Components (Phase 1 will populate, Phase 2 will extract)
+## Shared Web Components — Phase 1 Findings (2026-05-20)
 
-Known candidates for extraction (from Phase 1 conversation audit):
-- `LeadForm` — near-identical across sites, role options differ per niche (should become a prop)
-- `Header`, `Footer` — differ in branding only
-- `BlogPostLayout`, `RelatedPosts`
-- `schema.ts` JSON-LD helpers
-- `supabase-client.ts` (`submitLead` helper)
-- Newsletter signup form (where it exists — Generalist + Digital Agency only)
+**Surprise finding**: `shared/web-core/` already exists at the repo root with 15 files, but **no package.json and zero sites currently import from it**. The directory is orphaned scaffolding from earlier work that wasn't completed.
 
-Phase 2 destination: `packages/web-shared/` via pnpm workspaces.
+```
+shared/web-core/
+├── components/
+│   ├── blog/BlogPostRenderer.tsx
+│   ├── forms/LeadForm.tsx
+│   ├── layout/PageShell.tsx
+│   ├── layout/SiteFooter.tsx
+│   ├── layout/SiteHeader.tsx
+│   └── ui/{Breadcrumb,CTASection,StickyCTA,layout-utils}.tsx
+├── lib/{blog,local-business-schema,organization-schema,schema,supabase-client}.ts
+└── types/niche-config.ts
+```
+
+Per-site copies have likely diverged from `shared/web-core/` since extraction. Five out of six niche sites have their own `LeadForm.tsx` + `supabase-client.ts` + `SiteHeader.tsx` + `SiteFooter.tsx`:
+
+| Component | Dentists | Property | Medical | Solicitors | Generalist | Digital Agency |
+|---|---|---|---|---|---|---|
+| LeadForm.tsx | ✓ | ✓ | ✓ | ✓ | ✓ | (separate repo) |
+| supabase-client.ts | ✓ | ✓ | ✓ | ✓ | ✓ | (separate repo) |
+| SiteHeader.tsx | ✓ | ✓ | ✓ | ✓ | ✓ | (separate repo) |
+| SiteFooter.tsx | ✓ | ✓ | ✓ | ✓ | ✓ | (separate repo) |
+| schema.ts / schema/ dir | ✓ | ? | ? | ? | ✓ (rich, 10+ files) | (separate repo) |
+
+**Phase 2 implication**: The work is now "reconcile orphan + divergent per-site copies" rather than "build from scratch."
+
+Recommended Phase 2 approach:
+1. **Diff** each `shared/web-core/` file against the corresponding per-site files to identify divergence
+2. **Choose canonical version** — usually the most recent per-site (Generalist or Digital Agency) which has had more development attention
+3. **Move canonical version** into `packages/web-shared/` (pnpm workspace) with prop-based per-site customisation
+4. **Delete** `shared/web-core/` (the orphan)
+5. **Migrate** one site at a time, with smoke test between each
+6. **Delete** per-site copies after migration verified
 
 ---
 
