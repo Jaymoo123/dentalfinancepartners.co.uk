@@ -721,6 +721,327 @@ def persist_opportunities(opportunities: list[Opportunity]) -> dict[str, int]:
     }
 
 
+# -----------------------------------------------------------------------------
+# GA4-driven detectors
+# -----------------------------------------------------------------------------
+# Need post-click signal (engagement, conversions) that GSC can't provide.
+# Both detectors are deliberately conservative so they stay quiet until the
+# sites have meaningful traffic floor.
+#
+# BOT HANDLING:
+#   GA4's built-in bot filtering catches known crawlers (IAB list: Googlebot,
+#   Bingbot, AhrefsBot, etc.) but does NOT catch sophisticated automation
+#   that executes JS (headless Chrome, Selenium, some AI crawlers). To guard
+#   against bot-driven false signals, detectors use `engaged_sessions` as the
+#   traffic floor, not raw `sessions`. Engaged sessions require at least 10s
+#   on page OR 2+ pageviews OR a key event — bots rarely clear that bar.
+#
+#   Conversion-based detectors are doubly safe: GA4 conversions are explicit
+#   events (form submit, etc.) that bots almost never trigger correctly. The
+#   Supabase `leads` table is the ultimate ground truth for actual lead
+#   volume; see `detect_traffic_without_leads` below.
+
+
+def _fetch_engagement_vs_impressions(site_key: str) -> list[dict]:
+    """Pull the cross-reference view: 28d GSC impressions + 28d GA4 sessions
+    + engagement_rate per page. View handles the URL→path normalisation.
+    """
+    url = f"{SUPABASE_URL}/rest/v1/vw_engagement_vs_impressions"
+    r = httpx.get(
+        url,
+        headers=_supabase_headers(),
+        params={
+            "select": "page_path,impressions_28d,clicks_28d,sessions_28d,engaged_sessions_28d,engagement_rate_28d,conversions_28d,events_28d",
+            "site_key": f"eq.{site_key}",
+            "order": "impressions_28d.desc",
+        },
+        timeout=30.0,
+    )
+    r.raise_for_status()
+    return r.json()
+
+
+def detect_engagement_gap(
+    site_key: str,
+    *,
+    min_engaged_sessions: int = 5,
+    min_impressions: int = 100,
+    max_engagement_rate: float = 0.20,
+) -> list[Opportunity]:
+    """Pages that pull traffic (GSC impressions + GA4 sessions) but engage poorly.
+
+    Bot defense: floor is `engaged_sessions` not raw `sessions`. Engaged sessions
+    require >=10s on page OR 2+ pageviews OR a key event. Bots almost never
+    clear that bar. With min_engaged_sessions=5 + max_engagement_rate=0.20,
+    the implied raw-session count is at least 25 (5/0.20), of which at least 20
+    failed to engage — a genuine engagement problem, not bot bounce.
+
+    Confidence: MEDIUM. Signal interpretation still needs human judgement
+    (intent mismatch? slow page? wrong audience? content disappoints?).
+    """
+    try:
+        rows = _fetch_engagement_vs_impressions(site_key)
+    except Exception as exc:
+        print(f"  detect_engagement_gap: view fetch failed: {exc}")
+        return []
+
+    out: list[Opportunity] = []
+    for row in rows:
+        sessions = int(row.get("sessions_28d") or 0)
+        engaged = int(row.get("engaged_sessions_28d") or 0)
+        impressions = int(row.get("impressions_28d") or 0)
+        engagement = row.get("engagement_rate_28d")
+        page_path = row.get("page_path")
+        if not page_path or page_path in ("(not set)", "(other)"):
+            continue
+        if engaged < min_engaged_sessions or impressions < min_impressions:
+            continue
+        if engagement is None:
+            continue
+        engagement_float = float(engagement)
+        if engagement_float >= max_engagement_rate:
+            continue
+
+        score = min(95, int((1.0 - engagement_float) * 100) + min(20, engaged))
+        out.append(
+            Opportunity(
+                site_key=site_key,
+                opportunity_type="engagement_gap",
+                target_url=page_path,
+                primary_query=None,
+                target_query_cluster=[],
+                recommended_action=(
+                    "Audit on-page content for intent mismatch, slow load, weak hook, "
+                    "or above-fold disappointment. Traffic is arriving but bouncing."
+                ),
+                rationale=(
+                    f"{impressions} GSC impressions and {sessions} GA4 sessions ({engaged} engaged) in 28d, "
+                    f"but only {engagement_float:.1%} engagement rate."
+                ),
+                score=score,
+                confidence="medium",
+                supporting_data={
+                    "impressions_28d": impressions,
+                    "clicks_28d": int(row.get("clicks_28d") or 0),
+                    "sessions_28d": sessions,
+                    "engaged_sessions_28d": engaged,
+                    "engagement_rate_28d": round(engagement_float, 4),
+                },
+            )
+        )
+    return out
+
+
+def detect_conversion_drop(
+    site_key: str,
+    *,
+    min_baseline_days: int = 14,
+    min_sessions_per_period: int = 30,
+) -> list[Opportunity]:
+    """Pages that previously converted but stopped.
+
+    Requires at least `min_baseline_days` of GA4 data to compare two equal
+    halves of the window. Until we have that history, returns [] silently.
+
+    Conservative: needs both halves to clear the sessions floor; needs the
+    drop to be from non-zero to zero (not 5 -> 4).
+
+    Confidence: HIGH if both halves clear floor and drop is from >=3 to 0.
+                MEDIUM otherwise.
+    """
+    url = f"{SUPABASE_URL}/rest/v1/ga4_page_data"
+    half_window = min_baseline_days // 2
+    today = date.today()
+    cutoff = today - timedelta(days=min_baseline_days * 2 + 2)
+    older_start = today - timedelta(days=min_baseline_days * 2 + 2)
+    older_end = today - timedelta(days=min_baseline_days + 2)
+    newer_start = today - timedelta(days=min_baseline_days + 2)
+    newer_end = today - timedelta(days=2)
+
+    r = httpx.get(
+        url,
+        headers=_supabase_headers(),
+        params={
+            "select": "page_path,date,sessions,conversions",
+            "site_key": f"eq.{site_key}",
+            "date": f"gte.{cutoff.isoformat()}",
+        },
+        timeout=30.0,
+    )
+    if r.status_code >= 400:
+        return []
+    rows = r.json() or []
+    if not rows:
+        return []
+
+    # Bucket by page
+    by_page: dict[str, dict[str, dict[str, int]]] = defaultdict(lambda: {"older": {"sessions": 0, "conv": 0}, "newer": {"sessions": 0, "conv": 0}})
+    for row in rows:
+        d = row.get("date")
+        path = row.get("page_path")
+        if not d or not path:
+            continue
+        try:
+            row_date = datetime.fromisoformat(d).date() if "T" in d else date.fromisoformat(d)
+        except ValueError:
+            continue
+        if older_start <= row_date <= older_end:
+            bucket = "older"
+        elif newer_start <= row_date <= newer_end:
+            bucket = "newer"
+        else:
+            continue
+        by_page[path][bucket]["sessions"] += int(row.get("sessions") or 0)
+        by_page[path][bucket]["conv"] += int(row.get("conversions") or 0)
+
+    out: list[Opportunity] = []
+    for path, halves in by_page.items():
+        older_sess = halves["older"]["sessions"]
+        newer_sess = halves["newer"]["sessions"]
+        older_conv = halves["older"]["conv"]
+        newer_conv = halves["newer"]["conv"]
+        # Both halves need traffic floor
+        if older_sess < min_sessions_per_period or newer_sess < min_sessions_per_period:
+            continue
+        # We're looking for: converted before, stopped now
+        if older_conv < 3 or newer_conv != 0:
+            continue
+        # Score scales with prior conversion volume
+        score = min(95, 60 + older_conv * 5)
+        confidence = "high" if older_conv >= 5 else "medium"
+        out.append(
+            Opportunity(
+                site_key=site_key,
+                opportunity_type="conversion_drop",
+                target_url=path,
+                primary_query=None,
+                target_query_cluster=[],
+                recommended_action=(
+                    "Investigate why this page stopped converting. Check recent code changes, "
+                    "lead-form rendering, page load, or content edits."
+                ),
+                rationale=(
+                    f"Earlier half ({min_baseline_days}d): {older_sess} sessions, {older_conv} conversions. "
+                    f"Recent half ({min_baseline_days}d): {newer_sess} sessions, 0 conversions."
+                ),
+                score=score,
+                confidence=confidence,
+                supporting_data={
+                    "older_sessions": older_sess,
+                    "older_conversions": older_conv,
+                    "newer_sessions": newer_sess,
+                    "newer_conversions": newer_conv,
+                    "baseline_days": min_baseline_days,
+                },
+            )
+        )
+    return out
+
+
+def detect_traffic_without_leads(
+    site_key: str,
+    *,
+    min_engaged_sessions: int = 100,
+    days: int = 28,
+) -> list[Opportunity]:
+    """Site-level (not page-level): if engaged GA4 sessions are non-trivial but
+    the Supabase `leads` table shows zero submissions in the same window,
+    something in the funnel is broken — or GA4 is being driven by sophisticated
+    bots that pass engagement heuristics.
+
+    Either way the optimisation engine should NOT trust per-page GA4 signal
+    as a conversion proxy on this site this week. Emit one opportunity per
+    flagged site so a human investigates before tuning content.
+
+    Confidence: HIGH at the site-level — broken funnel is more likely than
+    "100+ engaged humans actually didn't want to convert". MEDIUM if site is
+    pre-launch / brand-new with no conversion history at all.
+    """
+    # Engaged sessions for this site in the window
+    cutoff = (date.today() - timedelta(days=days)).isoformat()
+    r = httpx.get(
+        f"{SUPABASE_URL}/rest/v1/ga4_page_data",
+        headers=_supabase_headers(),
+        params={
+            "select": "engaged_sessions,sessions,conversions",
+            "site_key": f"eq.{site_key}",
+            "date": f"gte.{cutoff}",
+        },
+        timeout=30.0,
+    )
+    if r.status_code >= 400:
+        return []
+    rows = r.json() or []
+    total_engaged = sum(int(row.get("engaged_sessions") or 0) for row in rows)
+    total_sessions = sum(int(row.get("sessions") or 0) for row in rows)
+    total_ga4_conv = sum(int(row.get("conversions") or 0) for row in rows)
+    if total_engaged < min_engaged_sessions:
+        return []
+
+    # Real lead count for this site in the same window. The leads table uses
+    # `source` column to identify the site (per memory: dentists / property /
+    # medical / solicitors / general / agency).
+    SOURCE_MAP = {
+        "dentists": "dentists", "property": "property",
+        "medical": "medical", "solicitors": "solicitors",
+        "agency": "agency-founder-finance", "generalist": "general",
+    }
+    leads_source = SOURCE_MAP.get(site_key, site_key)
+    rl = httpx.get(
+        f"{SUPABASE_URL}/rest/v1/leads",
+        headers={**_supabase_headers(), "Prefer": "count=exact", "Range": "0-0"},
+        params={
+            "select": "id",
+            "source": f"eq.{leads_source}",
+            "created_at": f"gte.{cutoff}T00:00:00",
+        },
+        timeout=20.0,
+    )
+    real_leads = 0
+    if rl.status_code in (200, 206):
+        content_range = rl.headers.get("Content-Range", "")
+        if "/" in content_range:
+            try:
+                real_leads = int(content_range.split("/")[-1])
+            except ValueError:
+                pass
+
+    if real_leads > 0:
+        return []  # ground truth says leads exist; not a broken-funnel signal
+
+    score = min(95, 50 + min(40, total_engaged // 25))
+    return [
+        Opportunity(
+            site_key=site_key,
+            opportunity_type="traffic_without_leads",
+            target_url=None,
+            primary_query=None,
+            target_query_cluster=[],
+            recommended_action=(
+                "Investigate lead funnel: form rendering, submit handler, "
+                "Supabase RLS, GA4 conversion event firing. Also check whether "
+                "traffic is bot-driven despite engagement-rate filters."
+            ),
+            rationale=(
+                f"{total_engaged} engaged GA4 sessions in last {days}d "
+                f"({total_sessions} raw, {total_ga4_conv} GA4-recorded conversions), "
+                f"but zero rows in Supabase leads table (source={leads_source!r}) "
+                f"for the same window. Funnel may be broken, or traffic may be bot-driven."
+            ),
+            score=score,
+            confidence="high",
+            supporting_data={
+                "engaged_sessions_window": total_engaged,
+                "sessions_window": total_sessions,
+                "ga4_conversions_window": total_ga4_conv,
+                "real_leads_window": real_leads,
+                "window_days": days,
+                "leads_source_filter": leads_source,
+            },
+        )
+    ]
+
+
 def run_all_detectors(site_key: str, days: int = 28) -> dict[str, Any]:
     print(f"\n=== Detectors for {site_key} ===")
     rows = _fetch_query_data(site_key, days=days)
@@ -738,6 +1059,12 @@ def run_all_detectors(site_key: str, days: int = 28) -> dict[str, Any]:
         opportunities += detect_query_page_mismatch(site_key, by_pq)
         opportunities += detect_missing_pages(site_key, by_pq)
     opportunities += detect_dataforseo_keyword_gap(site_key)
+
+    # GA4-driven detectors (only fire for sites with GA4 property + traffic floor).
+    # See bot-handling notes above each function.
+    opportunities += detect_engagement_gap(site_key)
+    opportunities += detect_conversion_drop(site_key)
+    opportunities += detect_traffic_without_leads(site_key)
 
     # Sort by score desc for nicer logs
     opportunities.sort(key=lambda o: o.score, reverse=True)

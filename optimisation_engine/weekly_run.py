@@ -49,6 +49,7 @@ from optimisation_engine.ingestion.ingest_dataforseo import (  # noqa: E402
     execute_site as execute_dfs_site,
     estimate_site_cost,
 )
+from optimisation_engine.ingestion.ingest_ga4 import run as run_ga4_ingestion  # noqa: E402
 from optimisation_engine.ingestion.ingest_gsc_queries import run as run_gsc_ingestion  # noqa: E402
 
 # ---------------------------------------------------------------------------
@@ -91,6 +92,27 @@ def step_ingest_gsc(sites: list[str]) -> dict[str, int]:
     print("[Step 1] GSC query-level ingestion (free)")
     print("=" * 80)
     return run_gsc_ingestion(site_keys=sites, days=28)
+
+
+def step_ingest_ga4(sites: list[str]) -> dict[str, dict]:
+    """Pull post-click engagement + conversion data from GA4 Data API.
+
+    Only runs for sites with a configured GA4 property (dentists, property,
+    medical, solicitors). 2-day lag built into the ingestion module to
+    avoid partial-day buckets. Idempotent re-upsert via UNIQUE constraint.
+    """
+    from optimisation_engine.clients.ga4_config import GA4_PROPERTY_IDS
+
+    print("\n" + "=" * 80)
+    print("[Step 1.5] GA4 page-level ingestion (free, lagged 2d)")
+    print("=" * 80)
+    ga4_sites = [s for s in sites if s in GA4_PROPERTY_IDS]
+    skipped = [s for s in sites if s not in GA4_PROPERTY_IDS]
+    if skipped:
+        print(f"  Skipping (no GA4 property granted): {', '.join(skipped)}")
+    if not ga4_sites:
+        return {}
+    return run_ga4_ingestion(site_keys=ga4_sites, days=28)
 
 
 def step_ingest_dataforseo(*, sites: list[str], execute: bool) -> list[dict]:
@@ -254,6 +276,7 @@ def step_review_outcomes() -> dict:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--site", help="Restrict to one site_key (otherwise all active)")
+    parser.add_argument("--skip-ga4", action="store_true")
     parser.add_argument("--skip-dataforseo", action="store_true")
     parser.add_argument("--dataforseo-dry-run", action="store_true", help="Run DFS planning but do not spend")
     parser.add_argument("--skip-detect", action="store_true")
@@ -273,6 +296,13 @@ def main() -> None:
 
     # Step 1: GSC (always free, always run)
     report["gsc"] = step_ingest_gsc(sites)
+
+    # Step 1.5: GA4 (free, lagged 2d, only for GA4-enabled sites)
+    if args.skip_ga4:
+        print("\n[Step 1.5] GA4 skipped via --skip-ga4")
+        report["ga4"] = "skipped"
+    else:
+        report["ga4"] = step_ingest_ga4(sites)
 
     # Step 2: DataForSEO
     if args.skip_dataforseo:
