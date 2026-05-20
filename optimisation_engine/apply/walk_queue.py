@@ -19,6 +19,7 @@ from __future__ import annotations
 import argparse
 import os
 import sys
+import uuid
 from pathlib import Path
 
 import httpx
@@ -35,6 +36,50 @@ from optimisation_engine.config import SUPABASE_KEY, SUPABASE_URL
 
 def _headers() -> dict[str, str]:
     return {"apikey": SUPABASE_KEY, "Authorization": f"Bearer {SUPABASE_KEY}"}
+
+
+def _log_attempt(
+    *,
+    walker_run_id: str,
+    opp: dict,
+    outcome: str,
+    blocking_issues: list[str] | None = None,
+    error_message: str | None = None,
+    error_type: str | None = None,
+    change_id: str | None = None,
+    git_commit_hash: str | None = None,
+    n_self_heal_retries: int = 0,
+) -> None:
+    """Write one row to apply_attempts. Never raises — if the log call fails
+    (network blip, table missing), we just print a warning and continue, so
+    the walker isn't blocked by audit failures."""
+    payload = {
+        "site_key": opp.get("site_key"),
+        "action_kind": opp.get("action_kind"),
+        "opportunity_id": opp.get("id"),
+        "target_url": opp.get("target_url"),
+        "target_slug": (opp.get("target_url") or "").rstrip("/").rsplit("/", 1)[-1][:100],
+        "primary_query": opp.get("primary_query"),
+        "outcome": outcome,
+        "blocking_issues": blocking_issues or None,
+        "error_message": (error_message[:1500] if error_message else None),
+        "error_type": error_type,
+        "change_id": change_id,
+        "git_commit_hash": git_commit_hash,
+        "n_self_heal_retries": n_self_heal_retries,
+        "walker_run_id": walker_run_id,
+    }
+    try:
+        r = httpx.post(
+            f"{SUPABASE_URL}/rest/v1/apply_attempts",
+            headers={**_headers(), "Content-Type": "application/json", "Prefer": "return=minimal"},
+            json=payload,
+            timeout=15.0,
+        )
+        if r.status_code >= 400:
+            print(f"  [LOG WARN] apply_attempts insert {r.status_code}: {r.text[:200]}")
+    except Exception as exc:
+        print(f"  [LOG WARN] apply_attempts insert failed: {type(exc).__name__}: {exc}")
 
 
 def fetch(*, kind: str | None, site: str | None, min_confidence: int = 0, limit: int = 50) -> list[dict]:
@@ -56,8 +101,10 @@ def fetch(*, kind: str | None, site: str | None, min_confidence: int = 0, limit:
 
 
 def run(*, kind: str | None, site: str | None, min_confidence: int = 0, limit: int = 50, max_apply: int | None = None) -> None:
+    walker_run_id = uuid.uuid4().hex[:12]
     opps = fetch(kind=kind, site=site, min_confidence=min_confidence, limit=limit)
     print(f"\nWalking {len(opps)} opportunities  (kind={kind}, site={site or 'all'}, min_conf={min_confidence})")
+    print(f"walker_run_id={walker_run_id}")
     print("=" * 100)
 
     applied = 0
@@ -74,10 +121,14 @@ def run(*, kind: str | None, site: str | None, min_confidence: int = 0, limit: i
         except ApplyError as exc:
             print(f"{prefix}  ERROR  build_brief: {exc}")
             errored += 1
+            _log_attempt(walker_run_id=walker_run_id, opp=opp, outcome="errored",
+                         error_message=str(exc), error_type="ApplyError")
             continue
         except Exception as exc:
             print(f"{prefix}  ERROR  build_brief raised: {type(exc).__name__}: {exc}")
             errored += 1
+            _log_attempt(walker_run_id=walker_run_id, opp=opp, outcome="errored",
+                         error_message=str(exc), error_type=type(exc).__name__)
             continue
 
         retries = len(attempt_log) - 1
@@ -87,6 +138,9 @@ def run(*, kind: str | None, site: str | None, min_confidence: int = 0, limit: i
             blockers = "; ".join(brief.blocking_issues[:2])[:120]
             print(f"{prefix}  BLOCKED{retry_note}  {blockers}")
             blocked += 1
+            _log_attempt(walker_run_id=walker_run_id, opp=opp, outcome="blocked",
+                         blocking_issues=list(brief.blocking_issues),
+                         n_self_heal_retries=retries)
             continue
 
         try:
@@ -94,15 +148,25 @@ def run(*, kind: str | None, site: str | None, min_confidence: int = 0, limit: i
         except ApplyError as exc:
             print(f"{prefix}  ERROR  apply: {str(exc)[:120]}")
             errored += 1
+            _log_attempt(walker_run_id=walker_run_id, opp=opp, outcome="errored",
+                         error_message=str(exc), error_type="ApplyError",
+                         n_self_heal_retries=retries)
             continue
         except Exception as exc:
             print(f"{prefix}  ERROR  apply raised: {type(exc).__name__}: {exc}")
             errored += 1
+            _log_attempt(walker_run_id=walker_run_id, opp=opp, outcome="errored",
+                         error_message=str(exc), error_type=type(exc).__name__,
+                         n_self_heal_retries=retries)
             continue
 
         sha = (result.get("commit_hash") or "")[:10]
         print(f"{prefix}  APPLIED{retry_note}  commit={sha}")
         applied += 1
+        _log_attempt(walker_run_id=walker_run_id, opp=opp, outcome="applied",
+                     change_id=result.get("change_id"),
+                     git_commit_hash=result.get("commit_hash"),
+                     n_self_heal_retries=retries)
 
         if max_apply and applied >= max_apply:
             print(f"\nReached max_apply={max_apply}. Stopping.")
