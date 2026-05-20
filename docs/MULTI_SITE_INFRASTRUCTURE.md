@@ -438,6 +438,29 @@ The pattern established with Dentists is the template for the remaining 4 sites 
 11. **Production smoke test**: curl homepage + the specific routes that use migrated files. For the local-business-schema migration: `/locations/london`, `/locations/manchester` etc. for Dentists.
 12. **Wait 24-72h** observing GSC + lead-flow before migrating next site
 
+### Known Vercel deployment blocker (2026-05-20) — pending config change
+
+First Dentists Vercel deploy attempt **failed** because the current deploy command (`cd Dentists && vercel deploy --prod`) uploads only `Dentists/` to Vercel. The vercel.json `installCommand` of `cd ../.. && npm install` then tries to walk above the upload scope — error: `Command exited with 254`.
+
+Local `npm run build` from Dentists/web works correctly (workspace install + transpile via Next.js). The blocker is purely Vercel's deploy-scope behaviour: rootDirectory is set to `web` on the project, so Vercel doesn't include the workspace root in the upload.
+
+**Two fixes available** — both require a one-time config change per site:
+
+**Option A (recommended)**: change each Vercel project's rootDirectory from `web` to `<Site>/web` (e.g. `Dentists/web`, `Property/web`). Then deploy from the workspace root: `vercel deploy --prod` from `C:\Users\user\Documents\Accounting`. Vercel uploads the workspace + builds the correct subdir. The `cd ../..` in installCommand works because the workspace root is now inside the upload scope.
+
+  - To do this in the Vercel dashboard: project → Settings → General → Root Directory → set to `Dentists/web` (or relevant per-site path)
+  - To do this via API: `PATCH https://api.vercel.com/v9/projects/{id}` with `rootDirectory: "Dentists/web"` — requires Vercel access token
+
+**Option B**: publish `@accounting-network/web-shared` to npm (privately or publicly) and have each site depend on it as a regular npm package. Robust but adds a publishing step on every change to the shared package.
+
+**Option C (rollback)**: revert the workspace migration; vendor shared files into each site directly (copy `lib/supabase-client.ts` etc. into each `<site>/web/src/lib/`). Defeats the dedup goal but keeps Vercel deploys mechanical.
+
+Until one of these is implemented, the existing per-site builds on Vercel continue to work because we haven't deployed the workspace changes. Prod is unaffected.
+
+Also discovered during the deploy attempt:
+- **React version pin mismatch** when sites use exact versions (e.g. `"react": "19.1.0"`). npm can't deduplicate because workspace hoists newest (`19.2.6`). Fix: use caret (`^19.1.0`) so npm can hoist a single satisfying version. Applied to Dentists in this commit.
+- **`next` binary not on PATH** when Vercel runs `next build` directly from `Dentists/web/` because hoisted node_modules is at workspace root. Fix: use `npm run build` in buildCommand — npm script resolution walks up to find binaries.
+
 ### Why this Vercel pattern works
 
 - Vercel reads `vercel.json` from the project's `rootDirectory` (already set to `web/` per existing config).
