@@ -3,7 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const appDir = path.dirname(fileURLToPath(import.meta.url));
-// Repo root is two levels up: construction-cis/web -> construction-cis -> Accounting (repo root).
+// Repo root is two levels up: contractors-ir35/web -> contractors-ir35 -> Accounting (repo root).
 const repoRoot = path.resolve(appDir, "..", "..");
 
 const nextConfig: NextConfig = {

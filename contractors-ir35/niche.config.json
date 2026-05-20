@@ -1,0 +1,22 @@
+{
+  "niche_id": "contractors-ir35",
+  "display_name": "Contractor Finance Partners",
+  "legal_name": "Contractor Finance Partners Ltd",
+  "domain": "www.contractor-finance-partners.co.uk",
+  "tagline": "UK accountants for contractors, IR35 specialists, and limited company directors",
+  "description": "UK accountants for contractors, IR35 specialists, and limited company directors",
+  "brand": {
+    "primary_color": "#0d9488",
+    "logo_path": "/brand/logo.png",
+    "publisher_logo_url": "/og-placeholder.svg"
+  },
+  "contact": {
+    "email": "hello@contractor-finance-partners.co.uk",
+    "phone": "+44 20 0000 0000"
+  },
+  "navigation": [
+    {"label": "Services", "href": "/services"},
+    {"label": "About", "href": "/about"},
+    {"label": "Contact", "href": "/contact"}
+  ]
+}

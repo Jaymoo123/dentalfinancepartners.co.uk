@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Construction Finance Partners",
-  description: "UK accountants for construction contractors and CIS subcontractors",
+  title: "Contractor Finance Partners",
+  description: "UK accountants for contractors, IR35 specialists, and limited company directors",
 };
 
 export default function RootLayout({
