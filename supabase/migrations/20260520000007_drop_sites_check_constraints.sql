@@ -1,0 +1,25 @@
+-- ============================================================================
+-- Drop hardcoded site_key CHECK constraint on `sites` table
+-- ============================================================================
+-- Date: 2026-05-20
+-- Purpose: Original sites table (migration 20260519000002) hardcoded allowed
+--          site_keys to the original 6 (property, dentists, medical,
+--          solicitors, agency, generalist). Every new niche site spun up
+--          via `optimisation_engine.ops.spinup_site` needs to insert a row
+--          here. The CHECK constraint defeats the automation.
+--
+-- After this migration: site_key remains the PRIMARY KEY (so uniqueness +
+-- not-null are enforced), but values are no longer restricted to a fixed
+-- list. New niches just insert their own site_key.
+--
+-- ROLLBACK:
+--   ALTER TABLE sites ADD CONSTRAINT sites_site_key_check
+--   CHECK (site_key = ANY (ARRAY[
+--     'property'::text, 'dentists'::text, 'medical'::text, 'solicitors'::text,
+--     'agency'::text, 'generalist'::text
+--   ]));
+-- ============================================================================
+
+-- The constraint was added inline at table creation, so it gets an
+-- auto-generated name `sites_site_key_check`. Drop it.
+ALTER TABLE public.sites DROP CONSTRAINT IF EXISTS sites_site_key_check;

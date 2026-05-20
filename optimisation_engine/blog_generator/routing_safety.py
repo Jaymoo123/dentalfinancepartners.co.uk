@@ -31,6 +31,7 @@ EXPECTED_SITE_PREFIXES: dict[str, str] = {
     "solicitors": "Solicitors",
     "agency": "digital-agency",
     "generalist": "generalist",
+    "construction-cis": "construction-cis",
 }
 
 # Post Phase 4 (2026-05-20): all sites share a single `blog_topics` table.

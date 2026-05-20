@@ -10,7 +10,8 @@
     "Medical/web",
     "Solicitors/web",
     "generalist/web",
-    "digital-agency/web"
+    "digital-agency/web",
+    "construction-cis/web"
   ],
   "engines": {
     "node": ">=20"

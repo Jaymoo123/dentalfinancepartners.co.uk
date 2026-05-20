@@ -30,6 +30,10 @@ SITE_INDEXNOW_CONFIG: dict[str, dict[str, str]] = {
         "host": "www.agencyfounderfinance.co.uk",
         "key": "f4fdfbf2cea848168e128a029d31e86b",
     },
+    "construction-cis": {
+        "host": "www.construction-finance-partners.co.uk",
+        "key": "35177fca7e25a1b52ae879149e0b1c5c",
+    },
     # Medical + Solicitors: no IndexNow key generated yet. Add here once keys
     # are created + the key files are placed in their web/public/.
 }

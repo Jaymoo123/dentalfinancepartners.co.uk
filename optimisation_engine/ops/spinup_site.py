@@ -423,7 +423,11 @@ def main() -> None:
         print(f"[OK] Added IndexNow key for {niche!r} to indexing/config.py")
 
     # ----- Write blog_generator site_config -----
-    site_cfg_path = ROOT / "optimisation_engine" / "blog_generator" / "site_configs" / f"{niche}.py"
+    # Python identifiers can't contain hyphens; the filename uses underscores
+    # while the site_key inside the config keeps its hyphenated form. The
+    # site_configs/__init__.py auto-discovers and keys by site_key.
+    site_cfg_filename = niche.replace("-", "_") + ".py"
+    site_cfg_path = ROOT / "optimisation_engine" / "blog_generator" / "site_configs" / site_cfg_filename
     write_file(site_cfg_path, SITE_CONFIG_PY.format(
         niche=niche, display_name=display_name, domain=domain,
         audience=audience, date=date_str,
