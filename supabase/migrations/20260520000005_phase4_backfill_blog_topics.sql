@@ -88,7 +88,9 @@ SELECT
   'property' AS site_key,
   topic,
   primary_keyword,
-  COALESCE(secondary_keywords, '[]'::jsonb) AS secondary_keywords,
+  -- Property stores secondary_keywords as text[]; agency + generalist as jsonb.
+  -- to_jsonb() handles both (text[] -> json array, jsonb -> passthrough).
+  COALESCE(to_jsonb(secondary_keywords), '[]'::jsonb) AS secondary_keywords,
   category,
   pillar_topic,
   content_tier,
@@ -174,7 +176,7 @@ INSERT INTO blog_topics (
 )
 SELECT
   id, 'agency', topic, primary_keyword,
-  COALESCE(secondary_keywords, '[]'::jsonb), category, pillar_topic,
+  COALESCE(to_jsonb(secondary_keywords), '[]'::jsonb), category, pillar_topic,
   content_tier, content_branch, COALESCE(priority, 5), publish_priority,
   user_intent, keyword_difficulty, search_volume, target_search_volume,
   competition, keyword_source, slug, suggested_slug, COALESCE(used, false),
@@ -195,7 +197,7 @@ INSERT INTO blog_topics (
 )
 SELECT
   id, 'generalist', topic, primary_keyword,
-  COALESCE(secondary_keywords, '[]'::jsonb), category, pillar_topic,
+  COALESCE(to_jsonb(secondary_keywords), '[]'::jsonb), category, pillar_topic,
   content_tier, content_branch, COALESCE(priority, 5), publish_priority,
   user_intent, keyword_difficulty, search_volume, target_search_volume,
   competition, keyword_source, slug, suggested_slug, COALESCE(used, false),

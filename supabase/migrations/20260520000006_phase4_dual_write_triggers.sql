@@ -90,7 +90,7 @@ BEGIN
     optimization_count, gsc_tracked, created_at
   ) VALUES (
     NEW.id, 'property', NEW.topic, NEW.primary_keyword,
-    COALESCE(NEW.secondary_keywords, '[]'::jsonb), NEW.category,
+    COALESCE(to_jsonb(NEW.secondary_keywords), '[]'::jsonb), NEW.category,
     NEW.pillar_topic, NEW.content_tier, NEW.content_branch,
     COALESCE(NULLIF(NEW.priority, '')::integer, 5), NEW.publish_priority,
     NEW.user_intent, NEW.keyword_difficulty,
@@ -203,7 +203,7 @@ BEGIN
     last_optimized_at, optimization_count, gsc_tracked, created_at
   ) VALUES (
     NEW.id, 'agency', NEW.topic, NEW.primary_keyword,
-    COALESCE(NEW.secondary_keywords, '[]'::jsonb), NEW.category,
+    COALESCE(to_jsonb(NEW.secondary_keywords), '[]'::jsonb), NEW.category,
     NEW.pillar_topic, NEW.content_tier, NEW.content_branch,
     COALESCE(NEW.priority, 5), NEW.publish_priority, NEW.user_intent,
     NEW.keyword_difficulty, NEW.search_volume, NEW.target_search_volume,
@@ -247,7 +247,7 @@ BEGIN
     last_optimized_at, optimization_count, gsc_tracked, created_at
   ) VALUES (
     NEW.id, 'generalist', NEW.topic, NEW.primary_keyword,
-    COALESCE(NEW.secondary_keywords, '[]'::jsonb), NEW.category,
+    COALESCE(to_jsonb(NEW.secondary_keywords), '[]'::jsonb), NEW.category,
     NEW.pillar_topic, NEW.content_tier, NEW.content_branch,
     COALESCE(NEW.priority, 5), NEW.publish_priority, NEW.user_intent,
     NEW.keyword_difficulty, NEW.search_volume, NEW.target_search_volume,
