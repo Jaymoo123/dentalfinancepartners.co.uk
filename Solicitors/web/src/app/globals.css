@@ -50,6 +50,11 @@
   --navy: var(--crimson-dark);
   --copper: var(--slate-blue);
   --copper-soft: var(--slate-blue-soft);
+
+  /* Canonical brand tokens for @accounting-network/web-shared components. */
+  --brand-primary: var(--crimson);
+  --brand-primary-strong: var(--crimson-dark);
+  --brand-on-primary: #ffffff;
 }
 
 @theme inline {

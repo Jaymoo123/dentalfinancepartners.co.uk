@@ -27,6 +27,13 @@
   --accent-strong: var(--gold-strong);
   --accent-soft: var(--gold-soft);
   --ring-offset: var(--background);
+
+  /* Canonical brand tokens for @accounting-network/web-shared components.
+     Each site aliases its existing brand colours to these generic names so
+     workspace components render correctly without forcing brand unification. */
+  --brand-primary: var(--gold);
+  --brand-primary-strong: var(--gold-strong);
+  --brand-on-primary: var(--navy);
 }
 
 @theme inline {

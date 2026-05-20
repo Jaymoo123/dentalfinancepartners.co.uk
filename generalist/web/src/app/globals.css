@@ -51,6 +51,11 @@
   /* Legacy alias kept for any --muted text-colour callers carried over
      from the template; safer to keep than to break those imports. */
   --muted: var(--ink-soft);
+
+  /* Canonical brand tokens for @accounting-network/web-shared components. */
+  --brand-primary: var(--accent);
+  --brand-primary-strong: var(--accent-strong);
+  --brand-on-primary: var(--accent-foreground);
 }
 
 @theme inline {

@@ -47,6 +47,11 @@
   --gold: var(--copper);
   --gold-strong: var(--copper-strong);
   --gold-soft: var(--copper-soft);
+
+  /* Canonical brand tokens for @accounting-network/web-shared components. */
+  --brand-primary: var(--copper);
+  --brand-primary-strong: var(--copper-strong);
+  --brand-on-primary: #ffffff;
 }
 
 @theme inline {
