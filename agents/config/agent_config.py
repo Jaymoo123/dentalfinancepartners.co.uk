@@ -18,10 +18,14 @@ AGENT_CONFIG = {
 # ============================================================================
 ACTIVE_NICHES = ["Dentists", "Property", "Medical", "Solicitors"]
 
+# Post Phase 4 (2026-05-20): all sites share the unified `blog_topics` table.
+# Row-level isolation is via `site_key`. Callers must pass site_key as a
+# query filter — see shared_supabase_config.with_site_key().
 NICHE_CONFIG = {
     "Dentists": {
         "enabled": True,
-        "blog_topics_table": "blog_topics_dentists",
+        "blog_topics_table": "blog_topics",
+        "site_key": "dentists",
         "web_path": "Dentists/web",
         "source_identifier": "dentists",
         "ga4_measurement_id": "G-273RJY0LZQ",
@@ -29,7 +33,8 @@ NICHE_CONFIG = {
     },
     "Property": {
         "enabled": True,
-        "blog_topics_table": "blog_topics_property",
+        "blog_topics_table": "blog_topics",
+        "site_key": "property",
         "web_path": "Property/web",
         "source_identifier": "property",
         "ga4_measurement_id": "G-B5MCP5NGMY",
@@ -37,7 +42,8 @@ NICHE_CONFIG = {
     },
     "Medical": {
         "enabled": True,
-        "blog_topics_table": "blog_topics_medical",
+        "blog_topics_table": "blog_topics",
+        "site_key": "medical",
         "web_path": "Medical/web",
         "source_identifier": "medical",
         "ga4_measurement_id": "G-CQF7KFZ1P6",
@@ -45,7 +51,8 @@ NICHE_CONFIG = {
     },
     "Solicitors": {
         "enabled": True,
-        "blog_topics_table": "blog_topics_solicitors",
+        "blog_topics_table": "blog_topics",
+        "site_key": "solicitors",
         "web_path": "Solicitors/web",
         "source_identifier": "solicitors",
         "ga4_measurement_id": "G-N6ZPRB3DSQ",

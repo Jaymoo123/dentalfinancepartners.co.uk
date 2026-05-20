@@ -33,13 +33,37 @@ if not SUPABASE_KEY:
 # All niches funnel leads into the same table with a 'source' column
 LEADS_TABLE = "leads"
 
-# Each niche has its own blog topics table
-BLOG_TOPICS_DENTISTS = "blog_topics_dentists"
-BLOG_TOPICS_PROPERTY = "blog_topics_property"
-BLOG_TOPICS_MEDICAL = "blog_topics_medical"
-BLOG_TOPICS_SOLICITORS = "blog_topics_solicitors"
-BLOG_TOPICS_AGENCY = "blog_topics_agency"
-BLOG_TOPICS_GENERALIST = "blog_topics_generalist"
+# Post Phase 4 (2026-05-20): all sites share a single blog_topics table.
+# Row-level isolation is via the `site_key` column. Callers MUST pass
+# `site_key=eq.<site>` on every query — use `with_site_key()` below.
+BLOG_TOPICS_TABLE = "blog_topics"
+
+# Legacy per-site constants — kept as aliases for any historical code that
+# still imports them. They now all resolve to the unified table. The
+# `site_key` for filtering is the niche identifier (dentists, property, etc.).
+# DO NOT use these in new code. Use BLOG_TOPICS_TABLE + with_site_key().
+BLOG_TOPICS_DENTISTS = BLOG_TOPICS_TABLE
+BLOG_TOPICS_PROPERTY = BLOG_TOPICS_TABLE
+BLOG_TOPICS_MEDICAL = BLOG_TOPICS_TABLE
+BLOG_TOPICS_SOLICITORS = BLOG_TOPICS_TABLE
+BLOG_TOPICS_AGENCY = BLOG_TOPICS_TABLE
+BLOG_TOPICS_GENERALIST = BLOG_TOPICS_TABLE
+
+
+def with_site_key(site_key: str, params: dict | None = None) -> dict:
+    """Return a params dict with `site_key=eq.<site_key>` merged in.
+
+    Post Phase 4 all blog_topics queries MUST filter by site_key to avoid
+    cross-site contamination. Use this helper everywhere a query is built:
+
+        params = with_site_key("dentists", {"slug": f"eq.{slug}"})
+        httpx.get(f"{SUPABASE_URL}/rest/v1/{BLOG_TOPICS_TABLE}", params=params)
+    """
+    if not site_key:
+        raise ValueError("with_site_key requires a non-empty site_key")
+    out = dict(params or {})
+    out["site_key"] = f"eq.{site_key}"
+    return out
 
 # ============================================================================
 # NICHE SOURCE IDENTIFIERS

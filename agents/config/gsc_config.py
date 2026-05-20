@@ -11,9 +11,10 @@ GSC_CONFIG = {
         # GSC settings
         "site_url": "sc-domain:propertytaxpartners.co.uk",
         "property_type": "domain",  # 'domain' or 'url-prefix'
-        
-        # Database
-        "blog_topics_table": "blog_topics_property",
+
+        # Database (post Phase 4: unified table + site_key filter)
+        "blog_topics_table": "blog_topics",
+        "site_key": "property",
         
         # File paths
         "content_dir": "Property/web/content/blog",
@@ -43,9 +44,10 @@ GSC_CONFIG = {
         # GSC settings
         "site_url": "https://www.dentalfinancepartners.co.uk/",
         "property_type": "url-prefix",
-        
-        # Database
-        "blog_topics_table": "blog_topics_dentists",
+
+        # Database (post Phase 4: unified table + site_key filter)
+        "blog_topics_table": "blog_topics",
+        "site_key": "dentists",
         
         # File paths
         "content_dir": "Dentists/web/content/blog",
@@ -78,9 +80,10 @@ GSC_CONFIG = {
         # GSC property needs re-verification on new domain before data flows.
         "site_url": "sc-domain:medicalaccounts.co.uk",
         "property_type": "domain",
-        
-        # Database
-        "blog_topics_table": "blog_topics_medical",
+
+        # Database (post Phase 4: unified table + site_key filter)
+        "blog_topics_table": "blog_topics",
+        "site_key": "medical",
         
         # File paths
         "content_dir": "Medical/web/src/content/blog",
@@ -111,8 +114,9 @@ GSC_CONFIG = {
         "site_url": "sc-domain:accountsforlawyers.co.uk",
         "property_type": "domain",
 
-        # Database
-        "blog_topics_table": "blog_topics_solicitors",
+        # Database (post Phase 4: unified table + site_key filter)
+        "blog_topics_table": "blog_topics",
+        "site_key": "solicitors",
 
         # File paths
         "content_dir": "Solicitors/web/content/blog",
@@ -141,7 +145,8 @@ GSC_CONFIG = {
     "agency": {
         "site_url": "sc-domain:agencyfounderfinance.co.uk",
         "property_type": "domain",
-        "blog_topics_table": "blog_topics_agency",
+        "blog_topics_table": "blog_topics",
+        "site_key": "agency",
         "content_dir": "Digital Agency/web/content/blog",
         "git_repo_path": "Digital Agency/web",
         "min_impressions_baseline": 10,
@@ -156,7 +161,8 @@ GSC_CONFIG = {
     "generalist": {
         "site_url": "sc-domain:hollowaydavies.co.uk",
         "property_type": "domain",
-        "blog_topics_table": "blog_topics_generalist",
+        "blog_topics_table": "blog_topics",
+        "site_key": "generalist",
         "content_dir": "generalist/web/content/blog",
         "git_repo_path": "generalist/web",
         "min_impressions_baseline": 5,
@@ -264,23 +270,25 @@ def add_niche(niche_name: str, config: dict):
         niche_name: Identifier for the new niche (e.g., 'legal')
         config: Configuration dict with required keys:
             - site_url: GSC property URL
-            - blog_topics_table: Supabase table name
+            - blog_topics_table: Supabase table name (post Phase 4 always 'blog_topics')
+            - site_key: Row filter for blog_topics (e.g., 'legal')
             - content_dir: Path to blog content
             - git_repo_path: Path to git repo
             - enabled: Boolean
             - start_date: When site went live
-    
+
     Example:
         add_niche('legal', {
             'site_url': 'sc-domain:legalfinancepartners.co.uk',
-            'blog_topics_table': 'blog_topics_legal',
+            'blog_topics_table': 'blog_topics',
+            'site_key': 'legal',
             'content_dir': 'Legal/web/src/content/blog',
             'git_repo_path': 'Legal/web',
             'enabled': True,
             'start_date': '2026-05-01',
         })
     """
-    required_keys = ['site_url', 'blog_topics_table', 'content_dir', 'git_repo_path']
+    required_keys = ['site_url', 'blog_topics_table', 'site_key', 'content_dir', 'git_repo_path']
     
     for key in required_keys:
         if key not in config:
@@ -303,7 +311,7 @@ def validate_config():
     
     for niche, config in GSC_CONFIG.items():
         # Check required keys
-        required = ['site_url', 'blog_topics_table', 'content_dir', 'git_repo_path']
+        required = ['site_url', 'blog_topics_table', 'site_key', 'content_dir', 'git_repo_path']
         for key in required:
             if key not in config:
                 errors.append(f"{niche}: Missing required key '{key}'")
