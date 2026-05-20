@@ -123,13 +123,80 @@ Expected set (from typical Next.js + Supabase + DeepSeek stack):
 
 ---
 
-## Supabase Tables (Phase 1 will populate)
+## Supabase Tables — Phase 1 Audit Results (2026-05-20)
 
-Audit deferred to Phase 1. Known tables from memory + commit log:
+Project: `https://dhlxwmvmkrfnmcgjbntk.supabase.co`. Audited via `scripts/phase1_supabase_audit.py` and `scripts/phase1_supabase_deeper.py`. Raw output saved to `docs/phase1_supabase_audit.json` + `docs/phase1_supabase_deeper.json`.
 
-- Already multi-site (with `source` or `site_key`): `leads`, `gsc_query_data`, `dataforseo_keyword_data`, `dataforseo_competitor_data`, `api_cost_log`, `optimisation_changes`, `optimisation_opportunities`, `apply_attempts`, `meta_performance`, `sites`, `vw_change_performance` view
-- **Per-site (need consolidation in Phase 4)**: `blog_topics_generalist`, `blog_topics_agency` (created by migrations 20260516000001 and 20260517000001)
-- Phase 1 to query `pg_tables` exhaustively + identify any other per-site tables
+### Shared tables (already multi-site clean)
+
+| Table | Rows | Key columns | Notes |
+|---|---|---|---|
+| `sites` | 4 | `site_key`, `display_name`, `domain`, `gsc_property_url`, `bing_property_url`, `niche`, `target_buyer_persona`, `brand_voice_notes`, `content_dir`, `git_repo_path`, `blog_topics_table`, `active`, `created_at`, `updated_at` | Source-of-truth registry. **Missing 2 sites** (see below) |
+| `leads` | **11 total** | `id`, `created_at`, `full_name`, `email`, `phone`, `role`, `practice_name`, `message`, `source_url`, `status`, `source` | Sources represented in 11 leads: `dentists`, `medical`, `property` only. Solicitors, Agency, Generalist have produced **zero leads ever**. |
+| `gsc_query_data` | 2,146 | `site_key`, `page_url`, `query`, `date` + more | |
+| `bing_query_data` | 0 | schema-only | Not actively used |
+| `dataforseo_keyword_data` | 1,644 | `site_key`, `seed_keyword`, etc. | |
+| `dataforseo_competitor_data` | 68 | `site_key`, `competitor_domain`, etc. | |
+| `api_cost_log` | 3,835 | `api_provider`, `site_key`, `niche`, etc. | Heavy usage. Per-niche cost rollup query target. |
+| `optimisation_changes` | 160 | `site_key`, `change_type`, `target_url`, `target_slug` + 18 more | |
+| `optimisation_opportunities` | 542 | `site_key`, `opportunity_type`, `target_url` + 18 more | |
+| `apply_attempts` | 0 | empty | Recently created, expected to populate as walker runs |
+| `meta_performance` | 0 | empty | Recently created |
+| `gsc_page_performance` | 1,929 | `niche`, `site_url`, `page_url`, `date` + more | |
+| `blog_optimizations` | 111 | wide table, 53+ columns | Lifecycle tracking |
+| `gsc_indexing_issues` | 0 | empty | |
+
+### Per-site tables (Phase 4 will consolidate)
+
+**Three divergent schemas across the six tables**:
+
+| Table | Rows | Columns | Schema family | Primary keyword col |
+|---|---|---|---|---|
+| `blog_topics_medical` | 62 | 13 | **"Old simple"** | `keyword` |
+| `blog_topics_solicitors` | 65 | 13 | **"Old simple"** | `keyword` |
+| `blog_topics_property` | 474 | 23 | **"Property-style"** | `topic` + `secondary_keywords` (JSON) |
+| `blog_topics_dentists` | 146 | 31 | **"Property-style"** | `topic` + 10 separate `secondary_keyword_1..10` columns |
+| `blog_topics_agency` | 314 | 25 | **"Modern"** | `topic` + has `suggested_slug` |
+| `blog_topics_generalist` | 289 | 25 | **"Modern"** | `topic` + has `suggested_slug` |
+
+**Phase 4 union schema design (provisional)**: model on Modern (agency/generalist) since it's the most evolved. Map:
+- `medical.keyword` / `solicitors.keyword` → `topic`
+- `dentists.secondary_keyword_1..10` → JSON-collapsed into `secondary_keywords`
+- Missing pillar/tier/intent on medical+solicitors → set to defaults (`pillar_topic=NULL`, `content_tier='supporting'`, `user_intent='informational'`) and queue Phase 1.5 enrichment if desired
+
+### Sites registry — gap analysis
+
+```
+Registered in sites table: ['agency', 'dentists', 'generalist', 'property']
+Expected (active sites):   ['agency', 'dentists', 'generalist', 'property', 'medical', 'solicitors']
+MISSING:                   ['medical', 'solicitors']
+```
+
+Both Medical and Solicitors need rows added to `sites` during Phase 1 closeout. Source data:
+
+```
+medical:    site_key=medical, display_name='Medical Accountants', domain='www.medicalaccounts.co.uk',
+            gsc_property_url='sc-domain:medicalaccountantsuk.co.uk' (mismatched, see config drift note),
+            niche='medical', content_dir='Medical/web/content/blog', git_repo_path='Medical/web',
+            blog_topics_table='blog_topics_medical', active=True
+solicitors: site_key=solicitors, display_name='Accounts For Lawyers', domain='www.accountsforlawyers.co.uk',
+            gsc_property_url='sc-domain:accountsforlawyers.co.uk',
+            niche='solicitors', content_dir='Solicitors/web/content/blog', git_repo_path='Solicitors/web',
+            blog_topics_table='blog_topics_solicitors', active=True
+```
+
+### Missing tables (planned, not yet created)
+
+- `engine_flags` — runtime feature-flag table; created in Phase 5
+
+### Lead-flow finding
+
+Only 3 sites have ever produced a lead: Dentists, Medical, Property. **Solicitors, Agency, Generalist have produced zero leads** as of this audit despite Agency having 306 posts and Generalist 366 posts. Possible causes:
+- Form code wired but not actually working on those sites
+- Form working but not yet finding visitors (Agency and Generalist have most content but perhaps not most search demand)
+- Different conversion paths on those sites (newsletter signup instead of form on Generalist + Agency?)
+
+Worth flagging as a Phase 1 sub-investigation: confirm the LeadForm submit path is functional on Solicitors, Agency, Generalist (can be a curl-based test against the Supabase REST endpoint).
 
 ---
 
