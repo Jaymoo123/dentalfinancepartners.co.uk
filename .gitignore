@@ -66,9 +66,9 @@ Thumbs.db
 # Claude Code harness state (session, schedule, plans live in ~/.claude not here)
 .claude/
 
-# Digital Agency lives in its own git repo (github.com/Jaymoo123/agency-founder-finance).
-# Excluded here to suppress noise; monorepo unification decided in Phase 2 prep.
-Digital Agency/
+# Digital Agency was unified into the monorepo 2026-05-20 via git subtree merge
+# (preserved its own commit history at the "Digital Agency/" prefix path).
+# No longer excluded.
 
 # Temporary files
 *.tmp
