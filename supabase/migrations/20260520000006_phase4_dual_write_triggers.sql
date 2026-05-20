@@ -92,14 +92,20 @@ BEGIN
     NEW.id, 'property', NEW.topic, NEW.primary_keyword,
     COALESCE(to_jsonb(NEW.secondary_keywords), '[]'::jsonb), NEW.category,
     NEW.pillar_topic, NEW.content_tier, NEW.content_branch,
-    COALESCE(NULLIF(NEW.priority, '')::integer, 5), NEW.publish_priority,
+    CASE WHEN NEW.priority::text IS NULL OR NEW.priority::text = '' THEN 5
+         ELSE NEW.priority::text::integer END,
+    NEW.publish_priority,
     NEW.user_intent, NEW.keyword_difficulty,
-    COALESCE(NULLIF(NEW.search_volume, '')::integer, NULL),
+    CASE WHEN NEW.search_volume::text IS NULL OR NEW.search_volume::text = ''
+         THEN NULL::integer ELSE NEW.search_volume::text::integer END,
     NEW.target_search_volume, NEW.competition, NEW.keyword_source,
     NEW.slug, COALESCE(NEW.used, false),
-    NULLIF(NEW.used_at, '')::timestamptz, NEW.last_optimized_at,
+    CASE WHEN NEW.used_at::text IS NULL OR NEW.used_at::text = ''
+         THEN NULL::timestamptz ELSE NEW.used_at::text::timestamptz END,
+    NEW.last_optimized_at,
     COALESCE(NEW.optimization_count, 0), COALESCE(NEW.gsc_tracked, false),
-    COALESCE(NULLIF(NEW.created_at, '')::timestamptz, now())
+    CASE WHEN NEW.created_at::text IS NULL OR NEW.created_at::text = ''
+         THEN now() ELSE NEW.created_at::text::timestamptz END
   )
   ON CONFLICT (site_key, topic) DO UPDATE SET
     primary_keyword = EXCLUDED.primary_keyword,

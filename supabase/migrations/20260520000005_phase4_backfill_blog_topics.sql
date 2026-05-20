@@ -95,22 +95,28 @@ SELECT
   pillar_topic,
   content_tier,
   content_branch,
-  -- Property has priority + created_at as TEXT; coerce safely
-  COALESCE(NULLIF(priority, '')::integer, 5) AS priority,
+  -- Defensive casts: each column might be text-with-empty-strings OR proper type
+  -- already. Cast to text first (no-op if already text, ISO-string if timestamp),
+  -- then check empty, then cast to canonical type. Handles both cases.
+  CASE WHEN priority::text IS NULL OR priority::text = ''
+       THEN 5 ELSE priority::text::integer END AS priority,
   publish_priority,
   user_intent,
   keyword_difficulty,
-  COALESCE(NULLIF(search_volume, '')::integer, NULL) AS search_volume,
+  CASE WHEN search_volume::text IS NULL OR search_volume::text = ''
+       THEN NULL::integer ELSE search_volume::text::integer END AS search_volume,
   target_search_volume,
   competition,
   keyword_source,
   slug,
   COALESCE(used, false) AS used,
-  NULLIF(used_at, '')::timestamptz AS used_at,
+  CASE WHEN used_at::text IS NULL OR used_at::text = ''
+       THEN NULL::timestamptz ELSE used_at::text::timestamptz END AS used_at,
   last_optimized_at,
   COALESCE(optimization_count, 0) AS optimization_count,
   COALESCE(gsc_tracked, false) AS gsc_tracked,
-  COALESCE(NULLIF(created_at, '')::timestamptz, now()) AS created_at
+  CASE WHEN created_at::text IS NULL OR created_at::text = ''
+       THEN now() ELSE created_at::text::timestamptz END AS created_at
 FROM blog_topics_property
 ON CONFLICT (site_key, topic) DO NOTHING;
 
