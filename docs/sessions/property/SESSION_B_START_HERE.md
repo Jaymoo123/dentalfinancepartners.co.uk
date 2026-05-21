@@ -8,9 +8,9 @@
 
 1. **This file (you are reading it).** Tells you who you are, what you're doing, what your 15 pages are.
 2. **`docs/competitor_rewrite_playbook.md`** — the master playbook explaining the system, the analysis pipeline, the per-page workflow, the universal rules.
-3. **`docs/rewrite_progress_2026-05-21.md`** — the log of the first 17 pages so you understand what good looks like. The Peterborough page (`Property/web/content/blog/peterborough-property-accountant-specialist-tax-services.md`) is the gold-standard reference.
-4. **`docs/site_wide_flags.md`** — issues already known to need user input. Add to the bottom (append-only) when you find more. Do not pause to wait for user input; flag and continue.
-5. **`docs/page_rewrite_tracker.md`** — the master tracker. Find the "Session B pages" section. That's your work list. You can also see what Sessions A and C are doing.
+3. **`docs/property/rewrite_progress_2026-05-21.md`** — the log of the first 17 pages so you understand what good looks like. The Peterborough page (`Property/web/content/blog/peterborough-property-accountant-specialist-tax-services.md`) is the gold-standard reference.
+4. **`docs/property/site_wide_flags.md`** — issues already known to need user input. Add to the bottom (append-only) when you find more. Do not pause to wait for user input; flag and continue.
+5. **`docs/property/page_rewrite_tracker.md`** — the master tracker. Find the "Session B pages" section. That's your work list. You can also see what Sessions A and C are doing.
 
 ---
 
@@ -42,7 +42,7 @@
 ### Cannibalisation
 - Pillar pages exist for major concepts (Section 24, BTL limited company, MTD, CGT on UK property). When your page touches one of those, write the **applied / scenario / local** version, not the comprehensive theoretical version. Link out to the pillar.
 - Do NOT duplicate worked examples verbatim across pages.
-- Pre-flagged cannibalisation risks for your pages are listed in `docs/page_rewrite_tracker.md` under "Session B pages" — check the Notes column.
+- Pre-flagged cannibalisation risks for your pages are listed in `docs/property/page_rewrite_tracker.md` under "Session B pages" — check the Notes column.
 
 ### MTD threshold (most common error to look for and fix)
 - The MTD-for-ITSA threshold is **£50,000 from 6 April 2026, £30,000 from 6 April 2027, £20,000 from 6 April 2028**. NEVER £10,000.
@@ -67,7 +67,7 @@
 For each page in your assignment list (in priority order):
 
 ### Step 1 — Claim the page
-Open `docs/page_rewrite_tracker.md`. Find your page in the "Session B pages" table. Change Status from `⬜ todo` to `🟡 in_progress`. Add today's date. Save. This prevents Sessions A and C from working on it.
+Open `docs/property/page_rewrite_tracker.md`. Find your page in the "Session B pages" table. Change Status from `⬜ todo` to `🟡 in_progress`. Add today's date. Save. This prevents Sessions A and C from working on it.
 
 ### Step 2 — Read the source
 The source markdown file is at `Property/web/content/blog/<slug>.md`. Read it completely. Note: current word count, current FAQ count, current title and meta, factual errors (especially MTD threshold), em-dashes.
@@ -122,10 +122,10 @@ grep -cE 'class="[a-z]' "C:/Users/user/Documents/Accounting/Property/web/content
 Both should return 0.
 
 ### Step 9 — Mark done in tracker
-Open `docs/page_rewrite_tracker.md`. Update your page row: change `🟡 in_progress` to `✅ done`. Add a one-line note summarising key changes.
+Open `docs/property/page_rewrite_tracker.md`. Update your page row: change `🟡 in_progress` to `✅ done`. Add a one-line note summarising key changes.
 
 ### Step 10 — Flag any site-wide issues
-If you find something requiring user input, **append** a new entry to `docs/site_wide_flags.md`. Never edit existing entries.
+If you find something requiring user input, **append** a new entry to `docs/property/site_wide_flags.md`. Never edit existing entries.
 
 ### Step 11 — Move to the next page
 Repeat from Step 1.
@@ -144,7 +144,7 @@ Repeat from Step 1.
 - Adding inline `<aside>` CTAs
 - Cannibalisation handling via differentiation + linking out to siblings
 
-**Flag to `docs/site_wide_flags.md` (and continue):**
+**Flag to `docs/property/site_wide_flags.md` (and continue):**
 - Factual errors on a different page you noticed while researching
 - Cannibalisation between two pages with no clear differentiation
 - Slugs that are wrong (obsolete dates, thresholds, etc.)
@@ -185,7 +185,7 @@ In priority order — work through them top to bottom.
 
 ## When you're done with all 15
 
-Update `docs/page_rewrite_tracker.md` summary table at the top, then write a one-paragraph completion note to `docs/site_wide_flags.md` with timestamp `[SESSION_B_COMPLETE]` noting any pages where you couldn't get a clean rewrite and why. Then stop.
+Update `docs/property/page_rewrite_tracker.md` summary table at the top, then write a one-paragraph completion note to `docs/property/site_wide_flags.md` with timestamp `[SESSION_B_COMPLETE]` noting any pages where you couldn't get a clean rewrite and why. Then stop.
 
 ---
 

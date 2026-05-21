@@ -270,7 +270,7 @@ def main() -> int:
         print(f"  {k}: {v}")
 
     # Output: ranked topic gap doc with cannibalisation annotations
-    out = ROOT / "docs/property_topic_gaps_final.md"
+    out = ROOT / "docs/property/topic_gaps_final.md"
     lines = ["# Property — topic gap analysis (final, cannibalisation-checked)", ""]
     lines.append("Manager-validated topic gap list. Each entry has been checked against all 285 existing Property pages for token + title overlap; classification is one of:")
     lines.append("")

@@ -92,7 +92,7 @@ def pull_baselines_batch(site_key: str, slugs: list[str]) -> dict[str, dict]:
 
 
 def main() -> int:
-    tracker = (ROOT / "docs/page_rewrite_tracker.md").read_text(encoding="utf-8")
+    tracker = (ROOT / "docs/property/page_rewrite_tracker.md").read_text(encoding="utf-8")
     middleware = (ROOT / "Property/web/src/middleware.ts").read_text(encoding="utf-8")
     cat_map = extract_category_map(middleware)
     rewrites = extract_rewrites(tracker)

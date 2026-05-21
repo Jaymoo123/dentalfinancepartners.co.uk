@@ -11,7 +11,7 @@ Steps:
   4. Load our 285 Property pages.
   5. Output:
        - briefs/property/_competitor_urls.json (raw scrape)
-       - docs/property_topic_gaps_2026-05-21.md (manager-readable diff
+       - docs/property/topic_gaps_first_cut.md (manager-readable diff
          organised by competitor + suggested-new-pages)
   6. Topic clustering is left for the Opus step (a session reads this output
      and proposes the new-page list).
@@ -181,7 +181,7 @@ def normalise_slug(slug: str) -> str:
 
 def main() -> int:
     out_briefs = ROOT / "briefs/property/_competitor_urls.json"
-    out_doc = ROOT / "docs/property_topic_gaps_2026-05-21.md"
+    out_doc = ROOT / "docs/property/topic_gaps_first_cut.md"
     out_briefs.parent.mkdir(parents=True, exist_ok=True)
 
     our_slugs = list_our_pages()

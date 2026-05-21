@@ -475,7 +475,7 @@ def main() -> int:
         print(f"  {len(items):3d}  {b}")
 
     # Write a recategorised "Other resolution" doc
-    out = ROOT / "docs/property_topic_gaps_other_resolved.md"
+    out = ROOT / "docs/property/topic_gaps_other_resolved.md"
     lines = ["# Property — 'Other' bucket reclassification", ""]
     lines.append("Manual review by orchestrator (Opus 4.7) of the 345 entries that fell into 'Other / uncategorised' in the first-cut topic gap analysis. Each entry was read and either:")
     lines.append("- assigned to an existing bucket,")

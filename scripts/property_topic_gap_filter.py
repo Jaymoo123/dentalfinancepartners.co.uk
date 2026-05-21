@@ -238,7 +238,7 @@ def main() -> int:
             lines.append(f"- *(+{len(items)-40} more in this bucket)*")
         lines.append("")
 
-    out = ROOT / "docs/property_topic_gaps_2026-05-21.md"
+    out = ROOT / "docs/property/topic_gaps_first_cut.md"
     out.write_text("\n".join(lines), encoding="utf-8")
     print(f"Wrote {out}")
     print(f"Total filtered gap topics: {sum(len(items) for items in by_bucket.values())}")

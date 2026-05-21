@@ -19,8 +19,8 @@
 1. **Only edit your own assigned rows.** If a page is in your session's assignment list (Sessions A/B/C below), you can edit its row. If it isn't, do NOT touch the row.
 2. **Mark `🟡 in_progress` BEFORE starting work** so other sessions can see it.
 3. **Mark `✅ done` immediately after the build passes** and the FAQ schema count matches frontmatter.
-4. **If something needs user input**, do NOT pause the session — add the issue to `docs/site_wide_flags.md` (append-only) and continue to the next page.
-5. **If you discover a page is a duplicate of one already done, OR a redirect candidate**, mark it `⏭️ skip` with a brief reason in Notes, flag it in `docs/site_wide_flags.md`, and move on.
+4. **If something needs user input**, do NOT pause the session — add the issue to `docs/property/site_wide_flags.md` (append-only) and continue to the next page.
+5. **If you discover a page is a duplicate of one already done, OR a redirect candidate**, mark it `⏭️ skip` with a brief reason in Notes, flag it in `docs/property/site_wide_flags.md`, and move on.
 
 ## Already complete (session 0, Opus 4.7 reference work)
 
