@@ -1,9 +1,8 @@
-# Master plan — Accounting network content strategy
+# Accounting network — state of play + next-session handover (2026-05-21)
 
-**Last updated:** 2026-05-21
 **Owner:** Jeff (jeff@emplifex.com) + Claude Opus 4.7 (orchestrator session)
 
-This is the single source of truth for what's been done, what's parked, and what runs next. Other docs in this repo are referenced from here; do not treat any other file as authoritative.
+Single source of truth for what landed this session, what's parked, and what runs next across the 6-niche network. Other docs in this repo are referenced from here; do not treat any other file as authoritative.
 
 ---
 
