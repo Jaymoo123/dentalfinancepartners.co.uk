@@ -14,7 +14,7 @@ summary: "A comprehensive step-by-step guide to MTD quarterly reporting for land
 schema: ""
 faqs:
   - question: "When do MTD quarterly reporting deadlines apply to landlords?"
-    answer: "MTD quarterly reporting becomes mandatory from 6 April 2026 for landlords with gross property income over £10,000. Quarterly submissions must be made within one month of each three-month period end. For standard tax year periods, deadlines are 5 August, 5 November, 5 February, and 5 May."
+    answer: "MTD quarterly reporting becomes mandatory from 6 April 2026 for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). Quarterly submissions must be made within one month of each three-month period end. For standard tax year periods, deadlines are 5 August, 5 November, 5 February, and 5 May."
   - question: "What software do I need for MTD quarterly submissions?"
     answer: "You need HMRC-approved accounting software that can connect to their systems via API. Popular options include Xero, QuickBooks, FreeAgent, and specialist property software like Arthur Online. The software must store digital records, calculate totals automatically, and submit returns electronically."
   - question: "What happens if I miss an MTD quarterly deadline?"
@@ -23,7 +23,7 @@ faqs:
     answer: "You complete an End of Period Statement (EOPS) by 31 January instead of traditional Self Assessment property pages. The EOPS allows final adjustments and calculates your actual tax liability after all four quarterly submissions are made."
 ---
 
-<p>MTD quarterly reporting for landlords becomes mandatory from 6 April 2026 for property investors with gross rental income over £10,000. This means submitting quarterly updates to HMRC instead of filing just one annual return.</p>
+<p>MTD quarterly reporting for landlords becomes mandatory from 6 April 2026 for property investors with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This means submitting quarterly updates to HMRC instead of filing just one annual return.</p>
 <p>The quarterly submission process replaces the traditional approach where landlords only reported property income once a year through their Self Assessment. This guide explains exactly how MTD quarterly reporting works and what you need to do.</p>
 
 <h2>What Is MTD Quarterly Reporting for Landlords?</h2>
@@ -119,7 +119,7 @@ faqs:
 <h3>Property Partnerships and Joint Ownership</h3>
 <p>Partnerships submit one set of quarterly returns covering all partners' combined property income. Individual partners receive their share of profits through the partnership return. For joint property ownership, owners can elect to submit separate returns for their share of income, or one owner can submit for both (with the other's consent).</p>
 <h3>Non-Resident Landlords</h3>
-<p>Non-resident landlords with UK property income over £10,000 must also comply with MTD quarterly reporting. This works alongside existing NRL scheme requirements.</p>
+<p>Non-resident landlords with UK qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must also comply with MTD quarterly reporting. This works alongside existing NRL scheme requirements.</p>
 <h3>Mixed Property Businesses</h3>
 <p>If you have both UK and overseas property, or commercial and residential property, you may need separate quarterly submissions for each business type.</p>
 

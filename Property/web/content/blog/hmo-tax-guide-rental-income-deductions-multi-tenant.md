@@ -99,7 +99,7 @@ faqs:
 
 <h2>Record-Keeping Requirements and Making Tax Digital</h2>
 <p>HMO record-keeping is more complex than standard rental properties due to multiple tenants, varying occupancy, and additional services. Essential records include tenancy agreements, monthly rent rolls by room, deposit protection documentation, utility bills, service receipts, and all HMO licensing and compliance certificates.</p>
-<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital</a> becomes mandatory for landlords with gross property income over £10,000. HMO landlords often exceed this threshold and must use MTD-compatible software, submit quarterly income and expense updates, file annual summaries, and maintain digital records.</p>
+<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital</a> becomes mandatory for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). HMO landlords often exceed this threshold and must use MTD-compatible software, submit quarterly income and expense updates, file annual summaries, and maintain digital records.</p>
 
 <h2>Tax Planning, Disposal, and Professional Advice</h2>
 

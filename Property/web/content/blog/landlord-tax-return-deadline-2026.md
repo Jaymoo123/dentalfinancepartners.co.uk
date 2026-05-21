@@ -16,7 +16,7 @@ faqs:
   - question: "What happens if I miss the landlord tax return deadline?"
     answer: "Missing the 31 January deadline triggers automatic penalties. HMRC charges £100 for late submission even if no tax is owed, plus daily penalties of £10 after three months if returns remain outstanding. Interest applies to any unpaid tax from the deadline date. Additional penalties increase for longer delays."
   - question: "Do all landlords need to join MTD property from April 2026?"
-    answer: "No, only landlords with rental income above £10,000 annually must join MTD for Income Tax Property from 6 April 2026. Landlords earning below this threshold can voluntarily join or continue filing annual Self Assessment returns. The £10,000 threshold applies to total rental income from all UK properties."
+    answer: "No, only landlords with qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) annually must join MTD for Income Tax Property from 6 April 2026. Landlords earning below this threshold can voluntarily join or continue filing annual Self Assessment returns. the MTD-for-ITSA threshold (£50,000 from 6 April 2026, £30,000 from 6 April 2027, £20,000 from 6 April 2028) applies to total rental income from all UK properties."
   - question: "How do the 2026 tax bands affect landlords?"
     answer: "Landlord tax bands 2026 follow standard income tax rates: 20% basic rate up to £50,270, 40% higher rate up to £125,140, then 45% additional rate. Rental income combines with other income to determine your tax band. Section 24 restrictions mean mortgage interest receives 20% tax credit regardless of your actual tax rate."
 ---
@@ -35,11 +35,11 @@ faqs:
 <p>Missing the <strong>landlord tax return deadline</strong> triggers automatic penalties. HMRC charges £100 for returns submitted after 31 January, even if no tax is owed.</p>
 
 <h2>Making Tax Digital (MTD) Property Requirements from April 2026</h2>
-<p>From 6 April 2026, landlords with rental income above £10,000 annually must comply with MTD for Income Tax Property. This affects how you report rental income and expenses, requiring quarterly digital submissions instead of annual returns. You'll need MTD-compatible software to record income and expenses digitally, then submit quarterly updates to HMRC.</p>
-<p>For example, a landlord earning £15,000 annual rental income from two BTL properties must join MTD property from April 2026. They'll submit quarterly digital updates covering each three-month period. Landlords earning below £10,000 can voluntarily join MTD property or continue with annual Self Assessment returns.</p>
+<p>From 6 April 2026, landlords with qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) annually must comply with MTD for Income Tax Property. This affects how you report rental income and expenses, requiring quarterly digital submissions instead of annual returns. You'll need MTD-compatible software to record income and expenses digitally, then submit quarterly updates to HMRC.</p>
+<p>For example, a landlord earning £15,000 annual rental income from two BTL properties must join MTD property from April 2026. They'll submit quarterly digital updates covering each three-month period. Landlords earning below the MTD thresholdcan voluntarily join MTD property or continue with annual Self Assessment returns.</p>
 <p>To prepare for MTD Property (April 2026 onwards), you should:</p>
 <ul>
-<li>Check if your rental income exceeds £10,000</li>
+<li>Check if your qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028)</li>
 <li>Choose MTD-compatible accounting software</li>
 <li>Set up digital record-keeping systems</li>
 <li>Prepare for quarterly submissions</li>

@@ -10,7 +10,7 @@ metaDescription: "Complete guide to MTD record keeping requirements for landlord
 altText: "Landlord organising digital property records on laptop for MTD compliance"
 image: ""
 h1: "MTD Record Keeping for Landlords: What Digital Records Must You Store?"
-summary: "From April 2026, landlords with rental income over £10,000 must keep digital records under Making Tax Digital rules. This guide covers exactly what records you need to store and how."
+summary: "From April 2026, landlords with qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must keep digital records under Making Tax Digital rules. This guide covers exactly what records you need to store and how."
 schema: ""
 faqs:
   - question: "What records must landlords keep digitally under MTD?"
@@ -23,7 +23,7 @@ faqs:
     answer: "Poor digital record keeping under MTD can result in penalties ranging from £200 for late quarterly updates to £300+ for inadequate records. HMRC can also impose daily penalties for continued non-compliance. Keeping proper digital records with supporting documentation is essential to avoid these charges."
 ---
 
-<p>From 6 April 2026, <strong>MTD record keeping for landlords</strong> becomes mandatory for anyone with gross rental income over £10,000. This means switching from paper-based systems to digital records that can be submitted quarterly through compatible software.</p>
+<p>From 6 April 2026, <strong>MTD record keeping for landlords</strong> becomes mandatory for anyone with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This means switching from paper-based systems to digital records that can be submitted quarterly through compatible software.</p>
 
 <p>The change affects most UK landlords, but many are unclear about exactly what records they need to keep digitally. Getting this wrong could result in penalties, so understanding the requirements is crucial for compliance.</p>
 
@@ -39,18 +39,18 @@ faqs:
 
 <p>MTD record keeping requirements apply to landlords with:</p>
 <ul>
-<li><strong>Gross rental income over £10,000 per year</strong> from UK property</li>
-<li>Multiple properties where combined gross income exceeds £10,000</li>
-<li>Joint ownership where your share of gross income is over £10,000</li>
+<li><strong>Gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) per year</strong> from UK property</li>
+<li>Multiple properties where combined qualifying income exceeds the MTD threshold</li>
+<li>Joint ownership where your share of qualifying income is over the MTD threshold</li>
 <li>Commercial property rentals (no exemption threshold)</li>
 </ul>
 
-<p>Gross income means total rent received before deducting expenses like mortgage interest, repairs, or letting agent fees. Even if your net profit is minimal due to high expenses, you're still caught by MTD if gross income exceeds £10,000.</p>
+<p>Gross income means total rent received before deducting expenses like mortgage interest, repairs, or letting agent fees. Even if your net profit is minimal due to high expenses, you're still caught by MTD if qualifying income exceeds the MTD threshold.</p>
 
 <h3>Exemptions from Digital Records</h3>
 <p>You're exempt from MTD record keeping if:</p>
 <ul>
-<li>Gross rental income is £10,000 or less per year</li>
+<li>Gross qualifying income is below the MTD threshold for the year</li>
 <li>You only receive income from Rent-a-Room scheme (up to £7,500 tax-free)</li>
 <li>You're a non-resident landlord (separate MTD timeline applies)</li>
 </ul>
@@ -169,7 +169,7 @@ faqs:
 
 <h2>Setting Up Your Digital Record System</h2>
 
-<p>Start preparing for MTD now, even if your rental income is currently below £10,000:</p>
+<p>Start preparing for MTD now, even if your rental income is currently below the MTD threshold:</p>
 
 <h3>Step 1: Choose Your Software</h3>
 <p>Research MTD-compatible options and test free trials. Consider your portfolio size, complexity, and budget. Many landlords benefit from professional guidance when selecting systems.</p>

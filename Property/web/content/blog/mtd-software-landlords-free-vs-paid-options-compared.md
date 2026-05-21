@@ -23,7 +23,7 @@ faqs:
     answer: "Start researching MTD software 12 months before April 2026, make your final decision 9 months before, complete implementation 6 months before, and run parallel systems 3 months before the deadline. This timeline ensures proper testing, data migration, and staff training before mandatory compliance begins."
 ---
 
-<p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital (MTD) for Income Tax becoming mandatory from April 2026</a>, landlords with gross rental income over £10,000 need MTD-compatible software. The choice between <strong>MTD software landlords free vs paid</strong> options depends on your portfolio size, complexity, and feature requirements.</p>
+<p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital (MTD) for Income Tax becoming mandatory from April 2026</a>, landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) need MTD-compatible software. The choice between <strong>MTD software landlords free vs paid</strong> options depends on your portfolio size, complexity, and feature requirements.</p>
 <p>This comparison examines the key differences between free MTD software landlord solutions and paid alternatives, helping you choose the right option for your property business before the 2026 deadline.</p>
 
 <h2>MTD Software Requirements for Landlords</h2>

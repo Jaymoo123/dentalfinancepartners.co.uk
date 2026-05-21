@@ -18,7 +18,7 @@ faqs:
   - question: "What should I expect to pay for property accounting services in Preston?"
     answer: "Costs vary based on portfolio complexity, but expect £500-£1,500 annually for basic compliance with 1-3 properties. Larger portfolios or incorporation structures cost more. However, specialist advice often identifies tax savings exceeding the fees. Many Preston property accountants offer fixed-fee packages including MTD preparation, annual accounts, and basic tax planning."
   - question: "How early should Preston landlords prepare for Making Tax Digital requirements?"
-    answer: "MTD for Income Tax starts in April 2026 for landlords with gross rental income over £10,000. However, preparation should begin now, particularly choosing compatible software and establishing digital record-keeping processes. Preston landlords starting early avoid last-minute compliance issues and potential penalties, which start at £200 per quarter for late submissions."
+    answer: "MTD for Income Tax starts in April 2026 for landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). However, preparation should begin now, particularly choosing compatible software and establishing digital record-keeping processes. Preston landlords starting early avoid last-minute compliance issues and potential penalties, which start at £200 per quarter for late submissions."
   - question: "Is incorporating my Preston buy-to-let properties worth considering?"
     answer: "Incorporation can provide significant benefits, particularly with separate property tax rates starting in 2027 (22% basic rate vs 20% general income tax basic rate). However, it depends on your specific circumstances including current tax position, portfolio size, and growth plans. SDLT and CGT implications on transfer must also be considered. A Preston property accountant can model scenarios to determine if incorporation makes financial sense."
 ---
@@ -34,7 +34,7 @@ faqs:
 <ul>
 <li><strong>Section 24 impact:</strong> Mortgage interest relief now limited to 20% tax credit rather than full deduction</li>
 <li><strong>Higher SDLT surcharge:</strong> Additional properties face 5% surcharge (increased from 3% in October 2024)</li>
-<li><strong>MTD compliance:</strong> Mandatory digital record-keeping from April 2026 for landlords with gross rental income over £10,000</li>
+<li><strong>MTD compliance:</strong> Mandatory digital record-keeping from April 2026 for landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028)</li>
 <li><strong>Separate property tax rates from 2027:</strong> 22% basic rate, 42% higher rate on property income</li>
 </ul>
 

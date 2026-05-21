@@ -114,7 +114,7 @@ faqs:
 <p>The new property tax system coincides with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> becoming mandatory for most landlords from April 2026.</p>
 <p>Accurate record-keeping becomes even more critical with higher tax rates. HMRC's focus on property income compliance is increasing, and the financial impact of errors grows with the new rates.</p>
 <h3>Digital Records Requirements</h3>
-<p>From April 2026, landlords with gross property income above £10,000 must:</p>
+<p>From April 2026, landlords with qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must:</p>
 <ul>
 <li>Keep digital records using MTD-compatible software</li>
 <li>Submit quarterly updates to HMRC</li>

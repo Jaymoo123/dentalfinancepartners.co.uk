@@ -109,7 +109,7 @@ faqs:
 <h2>Making Tax Digital Requirements</h2>
 
 <p>From April 2026, property companies may need to comply with Making Tax Digital for Corporation Tax, depending on their size and turnover. This will require digital record-keeping and quarterly reporting.</p>
-<p>Currently, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> affects individual landlords with property income over £10,000, but corporate requirements are expected to follow.</p>
+<p>Currently, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> affects individual landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028), but corporate requirements are expected to follow.</p>
 
 <h2>Record-Keeping Best Practices</h2>
 

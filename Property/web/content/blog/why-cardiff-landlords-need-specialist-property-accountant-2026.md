@@ -33,7 +33,7 @@ faqs:
 <ul>
 <li><strong>Section 24 mortgage interest restrictions</strong> - particularly impactful for leveraged portfolios</li>
 <li><strong>Capital gains tax planning</strong> - essential when disposing of Cardiff properties</li>
-<li><strong>MTD compliance requirements</strong> from April 2026 for landlords earning over £10,000</li>
+<li><strong>MTD compliance requirements</strong> from April 2026 for landlords earning over the MTD threshold (£50,000 from 6 April 2026)</li>
 <li><strong>New property income tax rates</strong> from April 2027 (22%/42%/47%)</li>
 <li><strong>SDLT surcharge implications</strong> when acquiring additional Cardiff properties</li>
 </ul>
@@ -55,7 +55,7 @@ faqs:
 <p>Many Cardiff landlords are reviewing their ownership structures ahead of the 2027 tax changes. A specialist property accountant can model different scenarios and advise on the optimal approach for your portfolio.</p>
 <p>This might include incorporation into a limited company structure, which can provide significant tax advantages for higher-rate taxpayers. Our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">complete guide to buy-to-let limited companies</a> explains the key considerations. Incorporation can be complex, involving potential Capital Gains Tax (CGT) liabilities at 18% or 24% on property transfers and ongoing corporation tax at 19% or 25% on profits.</p>
 <h3>Digital Compliance and MTD Support</h3>
-<p>From April 2026, Cardiff landlords with gross property income exceeding £10,000 must comply with Making Tax Digital (MTD) requirements. This means quarterly digital submissions and maintaining digital records.</p>
+<p>From April 2026, Cardiff landlords with gross  income above £50,000 (the MTD threshold from 6 April 2026; drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with Making Tax Digital (MTD) requirements. This means quarterly digital submissions and maintaining digital records.</p>
 <p>Your property accountant should provide systems setup, training, and ongoing support to ensure smooth compliance with these new obligations. Proactive MTD planning is essential to avoid penalties and streamline your record-keeping.</p>
 
 <h2>Cardiff-Specific Property Tax Considerations</h2>

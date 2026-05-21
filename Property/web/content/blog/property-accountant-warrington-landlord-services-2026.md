@@ -17,7 +17,7 @@ faqs:
     answer: "While any qualified accountant can technically handle property taxes, specialist property accountants understand the complexities of Section 24, MTD requirements, and property-specific reliefs much better. General accountants often miss opportunities for tax optimisation or make errors with property income calculations. The tax savings from specialist knowledge typically exceed any additional fees."
   - question: "What should I expect to pay for property accounting services in Warrington?"
     answer: "Costs vary significantly based on portfolio size and complexity. Basic Self Assessment preparation for 1-3 properties typically costs £300-£800 annually. Ongoing support including bookkeeping and MTD compliance might add £600-£1,800 per year. Incorporation advice or complex tax planning could cost £1,000-£3,000. Quality service should pay for itself through improved tax efficiency."
-  - question: "How do I prepare for Making Tax Digital if I'm a Warrington landlord with rental income over £10,000?"
+  - question: "How do I prepare for Making Tax Digital if I'm a Warrington landlord with qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028)?"
     answer: "Start preparing now for the April 2026 deadline. You'll need compatible accounting software, digital record-keeping systems, and quarterly submission processes. Choose software that integrates with your bank feeds and can handle property-specific transactions. Consider professional support for setup and ongoing compliance, especially if you're not comfortable with digital systems."
   - question: "Should Warrington landlords consider incorporating into a limited company to reduce tax?"
     answer: "Incorporation can provide tax benefits, particularly for higher-rate taxpayers affected by Section 24. Companies can claim full mortgage interest relief and may pay lower corporation tax rates. However, there are costs including setup fees, annual compliance, and potential double taxation on profit extraction. Each situation is different, so get professional analysis of your specific circumstances before deciding."
@@ -36,7 +36,7 @@ faqs:
 <li>Managing tax efficiency across multiple properties in different Warrington postcodes</li>
 <li>Understanding how council tax bands affect overall investment returns</li>
 <li>Optimising mortgage interest relief under Section 24 restrictions</li>
-<li>Preparing for MTD compliance by April 2026 if rental income exceeds £10,000</li>
+<li>Preparing for MTD compliance by April 2026 if qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028)</li>
 <li>Planning capital gains tax on property disposals in a rising market</li>
 </ul>
 <p>A <strong>buy-to-let accountant in Warrington</strong> brings local knowledge alongside technical expertise, understanding how Warrington's property market dynamics affect tax planning strategies.</p>
@@ -52,7 +52,7 @@ faqs:
 <p>Property accountants help Warrington landlords understand their Section 24 impact and explore mitigation strategies, such as reviewing portfolio structures, considering incorporation timing, or optimising other available reliefs. Our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">complete Section 24 guide</a> explains these restrictions in detail.</p>
 
 <h3>Making Tax Digital (MTD) Preparation and Compliance</h3>
-<p>From April 2026, landlords with gross property income over £10,000 must comply with Making Tax Digital for Income Tax. This requires quarterly digital submissions using compatible software.</p>
+<p>From April 2026, landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with Making Tax Digital for Income Tax. This requires quarterly digital submissions using compatible software.</p>
 <p><strong>Landlord tax advice in Warrington</strong> should include MTD preparation support, helping you select appropriate software, establish digital record-keeping systems, and understand quarterly submission requirements. Early preparation is crucial given the tight implementation timeline. Learn more about <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD requirements for landlords</a>.</p>
 
 <h3>Limited Company Incorporation Advice</h3>

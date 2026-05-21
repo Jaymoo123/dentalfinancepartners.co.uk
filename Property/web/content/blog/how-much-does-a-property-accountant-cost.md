@@ -2,7 +2,7 @@
 title: "How Much Does a Property Accountant Cost: UK Pricing Guide 2026"
 slug: "how-much-does-a-property-accountant-cost"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/how-much-does-a-property-accountant-cost"
-date: "2026-04-01"
+date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "Property Accountant Cost UK 2026: Fees From £200-£3,000+"
@@ -29,6 +29,14 @@ faqs:
     answer: "Maintain organised digital records, use cloud-based accounting software, provide rental income summaries rather than raw data, and choose service levels that match your actual needs. Well-prepared clients with systematic record-keeping often pay 20-30% less than those requiring extensive data organisation and cleanup work."
   - question: "Is it worth paying more for a property specialist accountant?"
     answer: "Property specialists often provide better value despite higher fees. They understand property-specific tax reliefs, Section 24 restrictions, and strategic planning opportunities that general accountants might miss. A specialist who identifies additional tax savings of £2,000+ easily justifies premium pricing."
+  - question: "How does MTD for Income Tax affect property accountant fees in 2026?"
+    answer: "MTD for Income Tax Self Assessment went live on 6 April 2026 for sole-trader landlords above £50,000 gross income. The MTD obligation typically adds £200-£600 per year to accountant fees: quarterly submission review (4 per year), end-of-period statement, and final declaration, replacing the traditional annual self-assessment workload. Net cost impact is usually modest. Specialist accountants typically include MTD-compatible software setup in their initial engagement fee."
+  - question: "Are accountant fees deductible against rental income?"
+    answer: "Yes. Accountancy fees attributable to your rental business are fully deductible against rental income under the wholly-and-exclusively rule in ITTOIA 2005. The deduction is at your marginal rate of income tax (or at corporation tax inside a limited company). For a higher-rate landlord, a £1,000 accountancy fee costs roughly £600 net of tax relief. Personal tax return preparation costs (for non-property income) are not deductible against rental income."
+  - question: "What is the cheapest legitimate way to get a BTL tax return prepared?"
+    answer: "For a single BTL with simple income and expenses, online services offering fixed-fee self-assessment from £150-£300 can be adequate if your situation is genuinely simple (no Section 24 complications, no incorporation question, no MTD scope). The risk: you get what you pay for. Cheap services typically miss allowable expense optimisation, do not flag strategic planning opportunities, and may not handle Section 24 modelling correctly. For BTL above modest size, paying £400-£800 for a specialist usually saves more than it costs."
+  - question: "Do property accountants offer free consultations?"
+    answer: "Many do, including Property Tax Partners. A typical free consultation runs 20-30 minutes and covers your portfolio shape, current tax position, the size of any Section 24 issue, and whether the accountant's approach fits your needs. The consultation is genuinely free with no obligation to engage. Use it to assess whether the accountant has the specific property experience you need (not just generic small business experience) and how they communicate."
 ---
 
 <p>If you're wondering how much does a property accountant cost, you're not alone. With Section 24 mortgage interest restrictions and Making Tax Digital on the horizon, more UK landlords are seeking professional help. But property accountant fees can vary dramatically depending on your circumstances.</p>
@@ -156,7 +164,7 @@ faqs:
 <h2>When to Hire and What to Expect</h2>
 <p>Consider professional help when:</p>
 <ul>
-<li>Your property income exceeds £10,000 annually</li>
+<li>Your gross property income (combined with self-employment) exceeds £50,000, which now triggers MTD for ITSA compliance (the threshold drops to £30,000 from April 2027 and £20,000 from April 2028)</li>
 <li>You own multiple properties</li>
 <li>You're considering incorporation or complex structures</li>
 <li>You're spending more than 20 hours annually on tax compliance</li>
@@ -164,7 +172,7 @@ faqs:
 </ul>
 
 <h3>The Impact of Making Tax Digital (MTD)</h3>
-<p>MTD for Income Tax Property starts in April 2026, which may affect property accountant costs due to additional quarterly submissions, enhanced record-keeping, and software needs. Many accountants are beginning to factor MTD preparation into their pricing.</p>
+<p>MTD for Income Tax Self Assessment went live on 6 April 2026 for sole-trader landlords with combined gross property and self-employment income above £50,000. The threshold drops to £30,000 in April 2027 and £20,000 in April 2028. The MTD obligation typically adds £200-£600 per year to accountant fees for the additional quarterly submission review and the end-of-period statement, but it also removes the traditional self-assessment workload, so the net effect is usually only modest. Landlords inside MTD should expect their accountant to recommend MTD-compatible software early in the engagement.</p>
 
 <h3>Choosing and Changing Accountants</h3>
 <p>When evaluating potential accountants, ask specific questions about their property experience and <a href="/services">service offerings</a>. A good property accountant should understand Section 24, capital allowances, and ownership structures. Consider changing accountants if you experience consistently poor communication, lack of proactive advice, fees that seem high for the value received, or limited understanding of property taxation.</p>

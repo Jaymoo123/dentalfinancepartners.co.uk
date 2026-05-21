@@ -75,7 +75,7 @@ faqs:
 <h3>Timing and Portfolio Strategy</h3>
 <p>If you're considering incorporation, timing matters. Incorporating in the 2025/26 or 2026/27 tax years means paying CGT at current rates but potentially qualifying for lower corporation tax on rental profits immediately. However, the full benefit only materializes from April 2027.</p>
 <p>If you're actively acquiring properties, incorporating before 2027 means new acquisitions avoid personal ownership from the start. This is particularly relevant given the <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">5% SDLT surcharge</a> on additional residential properties, which applies equally to companies and individuals.</p>
-<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becomes mandatory</a> for landlords with gross rental income over £10,000. Companies are already subject to MTD for corporation tax, so incorporating might simplify compliance obligations.</p>
+<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becomes mandatory</a> for landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). Companies are already subject to MTD for corporation tax, so incorporating might simplify compliance obligations.</p>
 <p>You don't have to incorporate your entire portfolio. Some landlords choose to incorporate only their highest-yielding properties or those with the lowest CGT liability, maintaining personal ownership of others.</p>
 
 <h2>Practical Steps and Professional Advice</h2>

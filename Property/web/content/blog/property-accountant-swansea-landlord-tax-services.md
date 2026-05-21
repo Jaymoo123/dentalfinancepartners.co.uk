@@ -2,76 +2,148 @@
 title: "Why Do Swansea Landlords Need a Specialist Property Accountant?"
 slug: "property-accountant-swansea-landlord-tax-services"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/property-accountant-swansea-landlord-tax-services"
-date: "2026-04-10"
+date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
-metaTitle: "Property Accountant Swansea: Tax Services for Landlords"
-metaDescription: "Specialist property accountant Swansea services for local landlords. Section 24 compliance, MTD preparation, and CGT planning for Welsh property investors."
+metaTitle: "Property Accountant Swansea | Welsh BTL & Landlord Tax Specialists"
+metaDescription: "Specialist property accountants for Swansea landlords. Section 24, LTT, Rent Smart Wales, Renting Homes Act, MTD prep and incorporation analysis. Free call."
 altText: "Professional property accountant reviewing rental property tax documents in Swansea office"
 image: ""
 h1: "Why Do Swansea Landlords Need a Specialist Property Accountant?"
-summary: "Swansea landlords face unique tax challenges from Section 24 restrictions to upcoming MTD requirements. Specialist property accountants provide local expertise for Welsh property portfolios."
+summary: "Swansea landlords face a different tax and regulatory landscape than English landlords. Land Transaction Tax (LTT) replaces SDLT, Rent Smart Wales requires mandatory landlord registration and (for self-managing landlords) licensing, the Renting Homes (Wales) Act 2016 changed tenancy rules, and second-home council tax premiums apply in Swansea Council areas. Specialist tax support models all of this alongside Section 24, MTD-for-ITSA, and the April 2027 income tax rate change."
 schema: ""
 faqs:
-  - question: "Do I need a specialist property accountant in Swansea for my rental properties?"
-    answer: "Yes, if you have rental income over £10,000 annually. Property tax rules are complex, with Section 24 restrictions, MTD requirements from 2026, and specialist deductions. A property accountant in Swansea understands local market conditions and ensures maximum tax efficiency while maintaining compliance."
-  - question: "How much does a buy to let accountant cost in Swansea?"
-    answer: "Property accounting fees in Swansea typically range from £1,200-£3,000 annually for landlords with 1-5 properties. This includes tax returns, MTD compliance, expense optimisation, and basic tax planning. Larger portfolios benefit from economies of scale with proportionally lower per-property costs."
-  - question: "What's the impact of Section 24 on Swansea landlords?"
-    answer: "Section 24 restricts mortgage interest relief to a 20% tax credit instead of a full deduction. For a Swansea landlord with £30,000 rental income and £18,000 mortgage interest, this increases taxable income from £12,000 to £30,000, often pushing landlords into higher tax brackets with effective rates over 60%."
-  - question: "When does Making Tax Digital apply to Swansea property investors?"
-    answer: "MTD becomes mandatory from April 2026 for landlords with gross property income over £10,000. This requires digital record-keeping, compatible software, and quarterly submissions to HMRC. Most serious property investors in Swansea will need to comply, making early preparation essential."
+  - question: "How much does a property accountant cost in Swansea?"
+    answer: "Fixed-fee property accountants serving Swansea landlords typically charge £600-£1,500 per year for a 1-3 property portfolio, £1,500-£3,000 for 4-10 properties, and £3,000-£6,000+ for portfolios above 10 properties or with limited company structures. Fees are fully deductible against rental income or corporation tax. Welsh-specific elements (LTT calculations, Rent Smart Wales compliance, Renting Homes Act tenancies) may add modest fee elements compared to English equivalent."
+  - question: "Do I need a Swansea-based property accountant or can I work with a specialist remotely?"
+    answer: "For BTL tax work, geographical location matters less than property specialism PLUS Welsh tax knowledge. The UK-wide tax rules (Section 24, MTD, CGT) are national, but Wales has its own rules on LTT, Rent Smart Wales registration, and the Renting Homes Act tenancy regime. Many landlords use a UK-wide specialist with Welsh experience combined with a Swansea-based property manager."
+  - question: "What is Rent Smart Wales and does it affect my tax position?"
+    answer: "Rent Smart Wales is the mandatory landlord and agent registration scheme operated by Cardiff Council for the whole of Wales under the Housing (Wales) Act 2014. Every Welsh landlord must register (registration fee, currently around £33.50 online for individual landlords). Landlords who self-manage their properties must also obtain a separate licence (licence fee around £170 for new licences, valid 5 years, requires completion of approved training). Landlords using a registered agent for full management do not need the personal licence. Both registration and licensing fees are deductible against rental income, as are the training course costs. Failure to register is a criminal offence."
+  - question: "Does Swansea Council operate HMO licensing?"
+    answer: "Yes. Mandatory HMO licensing applies in Wales (same as England) to any HMO with 5+ occupants forming 2+ households. Welsh local authorities can also operate additional licensing schemes. Swansea Council currently operates an additional licensing scheme covering smaller HMOs in defined areas of the city. Fees vary; check Swansea Council's housing pages for current rates. All HMO licensing fees are deductible against rental income."
+  - question: "What is Land Transaction Tax (LTT) and how does it differ from SDLT?"
+    answer: "Land Transaction Tax replaced Stamp Duty Land Tax in Wales on 1 April 2018. LTT applies to Welsh property purchases. The bands and rates differ from English SDLT. For 2026/27, LTT residential standard rates are 0% to £225,000, 6% £225,001-£400,000, 7.5% £400,001-£750,000, 10% £750,001-£1,500,000, 12% above. A higher residential rates surcharge of 5 percentage points applies to second homes and BTL purchases (equivalent to the English 3% additional dwelling surcharge but at a higher rate). The Welsh Revenue Authority administers LTT separately from HMRC."
+  - question: "What are typical BTL yields in Swansea?"
+    answer: "Swansea typically delivers 6-8% gross rental yield, above the 4-6% UK average. Student lets near Swansea University and University of Wales Trinity Saint David can push 7-9% gross via HMO configuration. Family lets in Sketty, Mumbles, Killay, and West Cross typically sit at 5-6%. The combination of two universities, NHS Swansea Bay employment, and growing tech sector around Swansea Bay Campus keeps rental demand strong."
+  - question: "Which Swansea areas are favoured by BTL landlords?"
+    answer: "Common BTL hotspots include Brynmill and Uplands (student demand from Swansea University, often HMO conversions), Sketty and Killay (family lets at moderate prices), Mumbles and West Cross (higher-end family lets with stronger capital growth), Townhill and Penlan (affordable single-let stock), and Marina/SA1 area (city centre flats targeting young professionals)."
+  - question: "Should I hold my Swansea BTL in a limited company or personally?"
+    answer: "Depends on your marginal tax rate, gearing, and intentions. A single Swansea BTL held by a basic-rate taxpayer often still works personally. A 3+ property Swansea portfolio held by a higher-rate or additional-rate taxpayer almost always benefits from company analysis, especially with the April 2027 separate property income tax rates (22/42/47%) approaching. The Welsh LTT higher rates surcharge is steeper than the English 3% (currently 5 percentage points), which makes the transfer cost analysis worth running carefully before committing to incorporation."
+  - question: "What's the impact of the Renting Homes (Wales) Act 2016 on landlords?"
+    answer: "The Act came into full force on 1 December 2022 and replaces the previous assured shorthold tenancy framework in Wales with 'occupation contracts'. Key practical impacts: minimum 12-month no-fault notice period (rather than the 2 months familiar to English landlords under section 21 before it was abolished), fitness for human habitation standards including specific electrical safety requirements, and standardised contract forms. The Act does not directly change tax treatment but does affect cash-flow planning around tenancy turnover."
+  - question: "What's changing for Swansea landlords in April 2027?"
+    answer: "The new separate property income tax rates of 22% basic, 42% higher, and 47% additional take effect from 6 April 2027 across the whole UK including Wales. That is 2 percentage points above the equivalent general income tax bands, applied to rental profit after Section 24. For a higher-rate Swansea landlord with £30,000 of rental profit, the rate change adds roughly £600 to the annual tax bill before any behavioural response."
+  - question: "Is MTD for Income Tax now mandatory for Welsh landlords?"
+    answer: "Yes, on the same UK-wide basis. MTD-for-ITSA went live on 6 April 2026 for sole-trader landlords (across England, Wales, Scotland, and Northern Ireland) with combined gross property and self-employment income above £50,000. The threshold drops to £30,000 from April 2027 and £20,000 from April 2028. Welsh landlords use the same HMRC submission infrastructure as the rest of the UK."
+  - question: "Are Swansea second-home council tax premiums something landlords should worry about?"
+    answer: "Generally no, because BTL properties let to tenants are not second homes for council tax purposes. The second-home council tax premium (Swansea has historically operated this) applies to properties that are furnished but not someone's main residence, typically holiday lets or genuinely empty second homes. A BTL with a tenant in occupation is the tenant's main residence and is liable for council tax at the standard rate (paid by the tenant). The exceptions are HMOs (council tax aggregated as single dwelling, paid by landlord) and void periods (landlord pays). Check the council's specific rules if your property has any unoccupied period above a few weeks."
 ---
 
-<p>Swansea's rental property market continues to grow, with landlords managing everything from city centre buy-to-let flats to coastal holiday rentals in Mumbles. However, UK property tax rules have become increasingly complex, making specialist accounting support essential rather than optional.</p>
-<p>A <strong>property accountant in Swansea</strong> understands both the local market dynamics and the evolving tax landscape that affects Welsh landlords. From Section 24 mortgage interest restrictions to the upcoming Making Tax Digital requirements, property-focused accounting expertise can save thousands in tax and compliance costs.</p>
+<p>Swansea has a strong BTL market driven by two universities (Swansea University and University of Wales Trinity Saint David), an NHS employment base, and growing tech-sector demand around Swansea Bay Campus. Gross yields typically sit at 6-8%, above the UK average of 4-6%, with student lets near the universities pushing higher.</p>
 
-<h2>The Swansea Property Market and Tax Implications</h2>
-<p>Swansea's diverse rental market presents unique accounting challenges. Student properties near Swansea University require different tax treatment than seaside holiday lets in the Gower Peninsula. The abolition of Furnished Holiday Lettings relief from April 2025 particularly affects coastal property owners.</p>
-<p>Local landlords often manage mixed portfolios combining traditional buy-to-let properties with short-term rentals. This complexity requires specialist knowledge of how different property types are taxed under UK rules. A <strong>buy to let accountant in Swansea</strong> can navigate these distinctions, ensuring each property is classified correctly and all available reliefs are claimed.</p>
-<p>Swansea's rental market includes several property types requiring different tax approaches:</p>
+<p>What makes Swansea different from English BTL markets is the Welsh tax and regulatory regime: Land Transaction Tax (LTT) replaces SDLT, Rent Smart Wales requires mandatory landlord registration and (for self-managing landlords) licensing, the Renting Homes (Wales) Act 2016 changed tenancy rules in December 2022, and second-home council tax premiums apply in Swansea Council areas. Specialist tax support models all of this alongside the UK-wide Section 24, MTD-for-ITSA, and April 2027 income tax rate change.</p>
+
+<h2>Swansea's BTL Market in 2026</h2>
+
+<p>The Swansea rental market splits roughly into four segments:</p>
+
 <ul>
-<li><strong>Student properties</strong>: Often council tax exempt but may require business rates consideration for larger HMOs</li>
-<li><strong>Holiday lets</strong>: Post-FHL abolition, these are taxed as standard rental properties from April 2025</li>
-<li><strong>City centre flats</strong>: Traditional buy-to-let with standard rental income treatment</li>
-<li><strong>Commercial conversions</strong>: May qualify for capital allowances on fixtures and fittings</li>
+<li><strong>Student HMOs (Brynmill, Uplands, parts of Sandfields):</strong> high yield (7-9% gross), mandatory HMO licensing where 5+ occupants apply, smaller HMOs caught by Swansea Council's additional licensing scheme.</li>
+<li><strong>Family BTL (Sketty, Killay, Mumbles, West Cross):</strong> 5-6% gross yields, lower management overhead, stronger capital growth potential.</li>
+<li><strong>City centre and Marina flats (SA1, Maritime Quarter):</strong> 5-7% yields, growing professional demand from financial and tech sectors.</li>
+<li><strong>Affordable single-let stock (Townhill, Penlan, Mayhill, Bonymaen):</strong> 6-8% yields, lower property prices.</li>
 </ul>
 
-<h2>Key Tax Rules for Landlords: Section 24, CGT and Reliefs</h2>
-<h3>Section 24 Mortgage Interest Restrictions</h3>
-<p>The Section 24 mortgage interest restrictions hit many Swansea landlords hard, particularly those with leveraged portfolios purchased during the pre-2017 boom. Instead of deducting mortgage interest as an expense, landlords now receive only a 20% tax credit against their liability.</p>
-<p>For a Swansea landlord with £30,000 rental income and £18,000 mortgage interest, the old system allowed a £12,000 taxable profit. Under Section 24, the full £30,000 is taxable, with just a £3,600 tax credit (20% of £18,000) to offset the liability. This often pushes landlords into higher tax brackets, creating effective marginal rates exceeding 60% in some cases. <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Understanding Section 24 implications</a> is crucial for tax planning.</p>
+<h2>Welsh-Specific Tax and Regulatory Considerations</h2>
 
-<h3>Capital Gains Tax on Property Disposals</h3>
-<p>Swansea's property market has seen significant value growth, particularly in desirable areas like Sketty and Uplands. This creates substantial Capital Gains Tax exposure when landlords sell. CGT rates on property disposals are 18% for basic rate taxpayers and 24% for higher rate taxpayers. With only a £3,000 annual exempt amount, most property sales trigger significant tax liabilities.</p>
-<p>Effective <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT planning</a> includes timing disposals across tax years, claiming all available reliefs, and considering the impact of rental income on tax rates. For Swansea landlords with multiple properties, sequence planning can save thousands. Selling lower-gain properties in years with less rental income keeps taxpayers in the basic rate CGT band where possible.</p>
+<h3>Rent Smart Wales registration and licensing</h3>
+<p>Under the Housing (Wales) Act 2014, every Welsh landlord must register with Rent Smart Wales. Registration fees are around £33.50 online for individual landlords (the cost is deductible). Landlords who self-manage their properties must also obtain a personal licence (around £170 for new five-year licences) after completing approved training. Landlords using a registered managing agent for full management do not need the personal licence but the agent must be licensed. Failure to register or licence is a criminal offence with material penalties.</p>
 
-<h3>Available Tax Reliefs and Deductions</h3>
-<p>Despite Section 24 restrictions, numerous <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">tax deductions remain available</a> to Swansea landlords:</p>
+<h3>Land Transaction Tax (LTT)</h3>
+<p>LTT replaced SDLT in Wales on 1 April 2018. The bands and rates differ. For residential property purchases in 2026/27:</p>
+
+<table>
+<thead>
+<tr><th>Band</th><th>Standard LTT rate</th><th>Higher residential rate (BTL, second home)</th></tr>
+</thead>
+<tbody>
+<tr><td>Up to £225,000</td><td>0%</td><td>5%</td></tr>
+<tr><td>£225,001 to £400,000</td><td>6%</td><td>11%</td></tr>
+<tr><td>£400,001 to £750,000</td><td>7.5%</td><td>12.5%</td></tr>
+<tr><td>£750,001 to £1,500,000</td><td>10%</td><td>15%</td></tr>
+<tr><td>Above £1,500,000</td><td>12%</td><td>17%</td></tr>
+</tbody>
+</table>
+
+<p>The Welsh higher residential rates surcharge is 5 percentage points (vs the English 3% additional dwelling surcharge), which makes BTL acquisition in Wales materially more expensive than equivalent English purchases. Verify current rates with the Welsh Revenue Authority before exchange. LTT is non-deductible against rental income but adds to base cost for CGT on eventual disposal.</p>
+
+<h3>Renting Homes (Wales) Act 2016</h3>
+<p>The Act replaced the assured shorthold tenancy framework on 1 December 2022 with "occupation contracts". Practical impacts for Swansea landlords:</p>
+
 <ul>
-<li>Property management and letting agent fees</li>
-<li>Repairs and maintenance costs</li>
-<li>Insurance premiums</li>
-<li>Safety certificates and compliance costs</li>
-<li>Advertising and tenant finding costs</li>
-<li>Professional fees including accounting and legal costs</li>
+<li>Standardised contract forms (mandatory)</li>
+<li>Minimum 12-month no-fault notice (much longer than the English equivalent before section 21 was abolished)</li>
+<li>Specific fitness for human habitation standards including electrical safety</li>
+<li>Different deposit protection scheme requirements</li>
 </ul>
-<p>The distinction between repairs (deductible) and improvements (capital) often catches landlords out. Professional advice ensures correct classification and maximum relief.</p>
 
-<h2>Making Tax Digital (MTD) and Compliance</h2>
-<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becomes mandatory</a> for landlords with gross property income over £10,000. This affects most serious property investors in Swansea. MTD requires digital record-keeping and quarterly submissions to HMRC. Landlords must use compatible software and maintain detailed digital records for each property.</p>
-<p><strong>Landlord tax advice in Swansea</strong> should include MTD preparation strategies. Early adoption helps identify issues before the deadline, while proper software selection ensures ongoing compliance. Property accountants typically handle the technical setup, training landlords on new processes while managing the quarterly submissions and year-end reconciliation.</p>
-<p>Proper record keeping forms the foundation of effective property tax compliance. Swansea landlords must maintain detailed records for at least five years after the relevant tax year. Essential records include rental income receipts, all property-related expense receipts, mortgage interest statements, property management fees, capital improvement invoices, and insurance documentation. Digital record keeping becomes mandatory under MTD. Property accountants help establish systems that meet HMRC requirements while minimising administrative burden.</p>
+<p>The Act does not directly change tax treatment but does affect cash-flow planning around tenancy turnover and void risk modelling.</p>
 
-<h2>Strategic Tax Planning and Structures</h2>
-<h3>Incorporation Considerations</h3>
-<p>Many Swansea landlords consider incorporating their property businesses to mitigate Section 24 restrictions. Companies aren't subject to the mortgage interest cap and benefit from lower corporation tax rates on retained profits (19% for profits up to £250,000, 25% main rate).</p>
-<p>However, incorporation involves transfer costs including Stamp Duty Land Tax at 5% surcharge rates on each property. For a £200,000 property, SDLT alone costs £11,500 on transfer to a company. The break-even analysis depends on rental yields, mortgage levels, and personal tax rates. <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Property company structures</a> work best for growing portfolios with high mortgage leverage. Property accountants model the long-term benefits against immediate transfer costs, helping landlords make informed decisions.</p>
+<h3>Second-home council tax premiums</h3>
+<p>Swansea Council operates a council tax premium on second homes (additional charge above the standard council tax for properties that are furnished but not someone's main residence). The premium does not apply to genuine BTLs with a tenant in occupation (where the tenant pays council tax as their main residence), but does apply to genuine second homes and to BTLs during extended void periods. The premium is non-deductible.</p>
 
-<h3>Planning for Future Tax Changes</h3>
-<p>From April 2027, property income will be taxed at separate rates: 22% basic, 42% higher, and 47% additional rate. This represents a significant increase from current general income tax rates. These changes make tax planning even more critical for Swansea landlords. Strategies may include timing rental income to minimise exposure to higher rates, accelerating deductible expenses where beneficial, reviewing ownership structures before the changes take effect, and planning property disposals around the new rate structure. Property accountants help landlords understand these changes and implement appropriate strategies well in advance.</p>
+<h2>The UK-Wide Tax Pressures Hitting Welsh Landlords</h2>
 
-<h2>Choosing and Working with a Property Accountant</h2>
-<p>Professional property accounting fees in Swansea typically range from £1,200-£3,000 annually for landlords with 1-5 properties. Larger portfolios command higher fees but benefit from economies of scale. Services usually include annual tax return preparation and submission, quarterly rental income summaries, expense categorisation and optimisation, MTD compliance from April 2026, CGT calculations on disposals, and tax planning and structure advice. <a href="/blog/property-accountant-services/how-much-does-a-property-accountant-cost">Understanding accounting costs</a> helps landlords budget appropriately while recognising the value of specialist expertise.</p>
-<p>Not all accountants specialise in property taxation. <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">Selecting the right professional</a> requires consideration of property-specific qualifications and experience, understanding of local Swansea market conditions, MTD software compatibility and support, tax planning expertise beyond compliance, and clear fee structures and service levels. The best property accountants combine technical expertise with practical business advice, helping landlords grow their portfolios while maintaining tax efficiency.</p>
-<p>For Swansea landlords navigating increasingly complex tax rules, specialist property accounting support has become essential. The combination of Section 24 restrictions, upcoming MTD requirements, and future rate changes demands expert guidance to maintain profitability and compliance.</p>
+<h3>Section 24 mortgage interest restriction</h3>
+<p>The Section 24 rules apply identically in Wales and England. Mortgage interest is restricted to a 20% basic-rate tax credit for individual BTL landlords. For high-yield Welsh BTL portfolios, effective tax rates above 50% of pre-interest profit are common at typical gearing levels. HMRC's <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual" target="_blank" rel="noopener noreferrer">Property Income Manual</a> covers the mechanics.</p>
+
+<h3>Making Tax Digital from April 2026</h3>
+<p>MTD-for-ITSA went live on 6 April 2026 for sole-trader landlords with combined gross property and self-employment income above £50,000 across the whole UK. The threshold drops to £30,000 from April 2027 and £20,000 from April 2028. Welsh landlords use the same HMRC submission infrastructure as English, Scottish, and Northern Irish landlords. HMRC's <a href="https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax" target="_blank" rel="noopener noreferrer">sign-up checker</a> confirms whether you are caught.</p>
+
+<h3>April 2027 property income tax rate change</h3>
+<p>From 6 April 2027, rental profit faces separate UK-wide rates of 22% basic, 42% higher, and 47% additional. For a higher-rate Swansea landlord with £30,000 of rental profit, the rate change adds roughly £600 to the annual tax bill before any behavioural response.</p>
+
+<h2>Worked Example: Swansea BTL Tax Position</h2>
+
+<p>A 4-bed family let in Sketty bought for £280,000 with a 75% LTV mortgage at 5.5% (£11,550 annual interest). Let to a family at £1,300/month (£15,600/year gross). Allowable non-finance expenses (letting agent 12%, insurance, gas safety, Rent Smart Wales registration, accountancy) £3,200/year.</p>
+
+<p><strong>Personal ownership (higher-rate taxpayer):</strong></p>
+<ul>
+<li>Rental profit before interest restriction: £15,600 − £3,200 = £12,400</li>
+<li>Income tax at 40%: £4,960</li>
+<li>Less Section 24 tax credit (20% × £11,550): £2,310</li>
+<li>Net income tax: £2,650</li>
+<li>Cash position: £15,600 − £3,200 − £11,550 − £2,650 = <strong>−£1,800 (loss)</strong></li>
+</ul>
+
+<p><strong>Limited company ownership:</strong></p>
+<ul>
+<li>Rental profit after all expenses including full interest: £15,600 − £3,200 − £11,550 = £850</li>
+<li>Corporation tax at 19%: £162</li>
+<li>Net retained profit: £688</li>
+<li>Cash position: <strong>£688 (modest profit)</strong></li>
+</ul>
+
+<p>The structural difference is roughly £2,488 per year on this single property. Across a 3+ property Swansea portfolio at similar gearing, that becomes £7,000-£10,000 per year, which generally justifies the incorporation analysis. The Welsh LTT higher rates surcharge of 5% (vs 3% in England) makes the transfer cost analysis more delicate for landlords moving from personal to company ownership.</p>
+
+<aside>
+<p>Want this modelled for your Swansea portfolio?</p>
+<p>We build a personal-vs-company comparison using your actual rents, mortgages, tax band, and Welsh-specific LTT exposure. The consultation is free. Scroll to the form at the bottom of this page to book.</p>
+</aside>
+
+<h2>When Your General Accountant Is Costing You Money</h2>
+
+<ul>
+<li><strong>Welsh tax specifics not flagged.</strong> If your accountant treats your portfolio as if it were in England (no LTT awareness, no Rent Smart Wales reference, no Renting Homes Act context), they are missing material elements.</li>
+<li><strong>Section 24 modelling never done.</strong> A specialist quantifies the gap between current personal tax and a limited company alternative.</li>
+<li><strong>Incorporation dismissed without numbers including the higher LTT surcharge.</strong> The Welsh transfer cost can shift the breakeven materially.</li>
+<li><strong>MTD preparation not on the agenda.</strong> Above £50,000 gross income, MTD-for-ITSA is now live.</li>
+<li><strong>Rent Smart Wales fees and training costs not being claimed.</strong> Both registration and licence fees are deductible revenue expenses.</li>
+</ul>
+
+<aside>
+<p>Book a free consultation with a Welsh property tax specialist</p>
+<p>Use the form at the bottom of this page. Tell us roughly how many properties you hold, your tax band, and the main issue (Section 24, incorporation, LTT planning, MTD, Rent Smart Wales, or general portfolio review). We typically respond within one working day with available slots.</p>
+</aside>
+
+<p>Related reading: <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 complete guide</a>, <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company complete guide</a>, <a href="/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026">Best MTD software for landlords</a>, <a href="/blog/property-types-and-specialist-tax/hmo-vs-standard-buy-to-let-tax-comparison">HMO vs standard BTL comparison</a>, and <a href="/blog/landlord-tax-essentials/income-tax-rates-landlords-2026-27-complete-guide">2026/27 landlord income tax rates</a>.</p>

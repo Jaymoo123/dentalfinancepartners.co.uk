@@ -67,7 +67,7 @@ faqs:
 <li>Claim the mortgage interest tax credit separately</li>
 <li>Keep detailed records of all interest payments</li>
 </ul>
-<p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax starting in April 2026</a>, landlords with property income over £10,000 must maintain digital records and submit quarterly updates, making accurate mortgage interest tracking even more important.</p>
+<p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax starting in April 2026</a>, landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must maintain digital records and submit quarterly updates, making accurate mortgage interest tracking even more important.</p>
 
 <h2>Which Landlords Are Affected by Section 24?</h2>
 

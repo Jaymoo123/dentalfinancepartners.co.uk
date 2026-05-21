@@ -2,138 +2,183 @@
 title: "Are HMO Licensing Fees Tax Deductible for UK Landlords?"
 slug: "hmo-licensing-fees-tax-deductible-uk-landlords"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/hmo-licensing-fees-tax-deductible-uk-landlords"
-date: "2026-04-10"
+date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
-metaTitle: "HMO Licensing Fees Tax Deductible? UK Landlord Guide 2026"
-metaDescription: "HMO licensing fees are tax deductible for UK landlords. Learn what qualifies, selective licensing costs, and how to claim these deductions correctly."
+metaTitle: "Are HMO Licensing Fees Tax Deductible? UK Landlord Guide 2026"
+metaDescription: "Yes, HMO licensing fees are tax deductible for UK landlords. Cash basis vs accruals timing, capital vs revenue split on conversion costs, council fee table."
 altText: "UK landlord reviewing HMO licensing documents and tax deduction paperwork on desk"
 image: ""
 h1: "Are HMO Licensing Fees Tax Deductible for UK Landlords?"
-summary: "HMO licensing fees are fully tax deductible for UK landlords as allowable business expenses. This includes mandatory HMO licences, selective licensing fees, and additional licensing schemes."
+summary: "HMO licensing fees (mandatory, additional, and selective) are deductible against rental income as revenue expenses under the wholly-and-exclusively rule in ITTOIA 2005. The mechanics are simple, but the timing rules, the capital-vs-revenue split on conversion work, and the cash basis vs accruals choice trip landlords up regularly."
 schema: ""
 faqs:
-  - question: "Can I claim HMO licensing fees as a tax deduction?"
-    answer: "Yes, HMO licensing fees are fully tax deductible for UK landlords as allowable business expenses. This includes mandatory HMO licences, selective licensing fees, renewal costs, and even penalty fees for late applications."
-  - question: "When can I claim the tax relief for HMO licence costs?"
-    answer: "Most landlords using the cash basis can claim HMO licensing fees in the tax year they pay them (6 April to 5 April). Multi-year licences can typically be deducted in full when paid, not spread over the licence period."
-  - question: "Are selective licensing fees tax deductible separately from HMO licences?"
-    answer: "Yes, selective licensing deduction applies separately from mandatory HMO licensing. If your property requires both a mandatory HMO licence and falls under a selective licensing scheme, both fees are fully tax deductible business expenses."
-  - question: "Do HMO licence costs get different tax treatment in limited companies?"
-    answer: "HMO licence cost tax treatment is the same for companies - the fees are fully deductible business expenses. However, the tax savings differ due to corporation tax rates (19% small profits rate or 25% main rate) rather than income tax rates."
+  - question: "Are HMO licensing fees tax deductible?"
+    answer: "Yes. Mandatory HMO licences, additional HMO licences (where the council operates an additional licensing scheme), and selective licences (where the council operates a selective scheme covering smaller HMOs or non-HMO BTLs) are all revenue expenses deductible against rental income. The legal basis is the wholly-and-exclusively rule in ITTOIA 2005 s.34 (cash basis) or s.272 (accruals basis), backed by HMRC's Property Income Manual at PIM2080 and PIM2090."
+  - question: "Do I deduct the licence fee in the year I pay it or spread it over the licence period?"
+    answer: "It depends on which accounting basis you use. Under the cash basis (the default for landlords with gross income under £150,000), you deduct the fee in the year you pay it. Under the accruals basis (mandatory if your gross income is above £150,000, optional below), you spread the fee over the licence period in line with the matching principle. Most HMO landlords sit below the £150k threshold and use cash basis, so they take the full deduction in the year of payment. The choice you make should be consistent across all your properties for the same tax year."
+  - question: "Are selective licensing fees tax deductible?"
+    answer: "Yes, on the same basis as HMO licensing fees. Selective licensing schemes typically cover non-HMO rentals in defined areas (often whole wards or postcodes). They are mandatory if your property falls inside the scheme. Fees are usually £400-£800 for a five-year licence. The deduction works the same way as mandatory HMO licensing under the wholly-and-exclusively rule."
+  - question: "What about additional HMO licensing fees?"
+    answer: "Additional HMO licensing applies in councils that operate an additional licensing scheme catching HMOs below the mandatory threshold (typically 3-4 occupants forming 2+ households). Where the scheme applies, additional licensing fees are mandatory and are fully deductible as revenue expenses. Common additional licensing council fees range from £450-£900 per five-year licence."
+  - question: "Are late application penalty fees tax deductible?"
+    answer: "Yes. Penalty fees imposed by the council for late HMO licence applications, late renewal applications, or breach of licence conditions are deductible as revenue expenses, on the basis that they are unavoidable trading costs incurred in the course of the rental business. The exception is fines imposed by a court (not a council penalty notice), which HMRC may treat as non-deductible under the duality test. In practice, council-administered penalties are routinely allowed."
+  - question: "What about the cost of getting the HMO ready to meet licence conditions?"
+    answer: "This is the capital-vs-revenue question and it trips up most landlords. Work required to bring the property up to HMO standard (additional fire doors, fire safety upgrades, additional bathrooms, additional kitchens, sound insulation) is typically capital expenditure. It adds to the property's base cost for CGT on eventual sale rather than reducing this year's rental tax bill. Ongoing maintenance of existing fire safety equipment, annual gas safety, EICR (every 5 years), and EPC (every 10 years) are revenue expenses and deductible as you incur them."
+  - question: "Are professional fees for the licence application deductible?"
+    answer: "Yes. Consultant fees for help with the licence application, surveyor fees for layout drawings or fire risk assessments required for the application, accountancy fees attributable to the rental business, and solicitor fees for licence appeals or compliance disputes are all revenue expenses. Surveyor fees relating to capital works (such as an architect's drawings for an HMO conversion) follow the underlying expenditure: capital with the conversion work, not deductible against rental income."
+  - question: "Does the tax treatment differ for HMOs held in a limited company?"
+    answer: "The deductibility rules are identical. Mandatory licensing, additional licensing, selective licensing, renewal fees, and associated professional costs are deductible against corporation tax inside a company on the same wholly-and-exclusively basis. The tax saving differs because corporation tax rates are 19% (small profits, under £50k) and 25% (main rate, over £250k) rather than personal income tax rates. Company landlords cannot use the cash basis, so timing is always on accruals."
+  - question: "How much do HMO licensing fees actually cost?"
+    answer: "Mandatory licensing fees typically sit between £600 and £1,500 per property for a five-year licence, with significant variation by council. Additional licensing fees are similar. Selective licensing fees are usually £400-£800. Some councils discount for portfolio landlords or early online renewal. The fee structure is set by the council and reviewed every few years, so check the current schedule at your local authority before budgeting."
+  - question: "Do I need to keep the receipt for an HMO licence fee?"
+    answer: "Yes. Under HMRC's record-keeping rules, you must keep evidence of every business expense claimed for at least five years after the 31 January submission deadline of the tax year in question. For HMO licences: keep the council invoice, the bank statement showing payment, the licence certificate, and any correspondence with the council. Under MTD for ITSA (live from 6 April 2026 for landlords above £50,000 gross income), these records must be kept digitally."
+  - question: "Can I claim HMO licence fees for a property I have not yet started letting?"
+    answer: "Only in limited circumstances. The wholly-and-exclusively test requires the expense to be incurred for the purposes of your rental business. If you have a clear intention to let, a licence application started in advance of the first tenancy is usually deductible as a pre-trading expense under ITTOIA 2005 s.57, provided letting commences within seven years. If the property is intended for personal occupation (or you decide not to let), the expense is not deductible."
+  - question: "What if my HMO licence fee is rejected or withdrawn?"
+    answer: "The fee itself is typically non-refundable, but the cost remains deductible against rental income on the basis that the application was incurred for the purposes of the rental business. If the application failure relates to disrepair or other compliance issues, the cost of remedying those issues follows the capital-vs-revenue rules (improvements are capital, repairs are revenue). The licence fee is independently treated as a revenue expense regardless of the outcome."
 ---
 
-<p>HMO licensing fees are tax deductible for UK landlords as allowable business expenses against rental income. This applies to mandatory HMO licences, selective licensing schemes, and additional licensing requirements imposed by local councils.</p>
+<p>HMO licensing fees are tax deductible for UK landlords as revenue expenses against rental income. The mechanics are straightforward in principle: mandatory HMO licences, additional licences, selective licences, and renewal fees are all allowable. Where landlords trip up is the timing rules (cash basis vs accruals), the capital-vs-revenue split on conversion work to meet licence conditions, and the treatment of professional fees on the application itself. This guide covers the practical detail.</p>
 
-<p>The good news is straightforward: all legitimate licensing costs associated with operating your HMO property can be offset against your rental profits, reducing your overall tax liability.</p>
+<p>For the broader question of HMO tax (Section 24, allowable expenses, room-by-room accounting, the personal-vs-company decision) see our dedicated <a href="/blog/property-types-and-specialist-tax/hmo-tax-guide-rental-income-deductions-multi-tenant">HMO tax guide</a>. For comparison between HMO and standard buy-to-let, see our <a href="/blog/property-types-and-specialist-tax/hmo-vs-standard-buy-to-let-tax-comparison">HMO vs standard BTL comparison</a>.</p>
 
-<h2>What HMO Licensing Costs Are Tax Deductible?</h2>
+<h2>The Legal Basis: Why HMO Licence Fees Are Deductible</h2>
 
-<p>HMRC treats HMO licensing fees as wholly and exclusively incurred for business purposes, making them fully deductible. The following licensing costs qualify:</p>
+<p>The deductibility flows from the wholly-and-exclusively rule in ITTOIA 2005. Under the cash basis (s.34), an expense is deductible if it is incurred wholly and exclusively for the rental business. Under the accruals basis (s.272), the same test applies and the expense is matched to the period it relates to. HMO licences are required by statute (Housing Act 2004 Part 2 for mandatory licensing; Part 3 for additional and selective schemes operated by individual councils), so the wholly-and-exclusively test is satisfied for any property let as an HMO.</p>
 
-<ul>
-<li><strong>Mandatory HMO licences:</strong> Required for properties with 5+ unrelated tenants sharing facilities</li>
-<li><strong>Selective licensing fees:</strong> Additional schemes covering smaller HMOs or specific geographical areas</li>
-<li><strong>Additional licensing:</strong> Council-specific schemes for properties not covered by mandatory licensing</li>
-<li><strong>Renewal fees:</strong> Costs to renew existing licences when they expire</li>
-<li><strong>Variation fees:</strong> Charges for modifying existing licence conditions</li>
-<li><strong>Late application penalties:</strong> Even penalty fees for late licence applications are deductible</li>
-</ul>
+<p>HMRC's <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual" target="_blank" rel="noopener noreferrer">Property Income Manual</a> confirms the position at PIM2080 (revenue expenses) and PIM2090 (allowable expenses checklist).</p>
 
-<p>For example, a landlord operating a 6-bedroom HMO in Manchester pays £1,100 for their mandatory licence plus £640 for selective licensing in that ward. Both fees are fully tax deductible against the property's rental income.</p>
+<h2>The Three Types of HMO Licence Fee</h2>
 
-<h2>How Do HMO Licence Costs Affect Your Tax Bill?</h2>
+<table>
+<thead>
+<tr><th>Licence type</th><th>When it applies</th><th>Typical fee (5-year licence)</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Mandatory HMO licence</strong></td><td>Any HMO with 5+ occupants forming 2+ households (national rule, all councils)</td><td>£600-£1,500 per property</td></tr>
+<tr><td><strong>Additional HMO licence</strong></td><td>Smaller HMOs (typically 3-4 occupants forming 2+ households) where the council operates an additional licensing scheme</td><td>£450-£900 per property</td></tr>
+<tr><td><strong>Selective licence</strong></td><td>Any private rental (HMO or single-let) in a defined geographic area where the council operates a selective licensing scheme</td><td>£400-£800 per property</td></tr>
+</tbody>
+</table>
 
-<p>HMO licensing fees reduce your taxable rental profit pound-for-pound. If you're a higher rate taxpayer (40% bracket), a £1,000 licence fee saves you £400 in income tax.</p>
+<p>A single property can require more than one licence type. A 5-bedroom HMO in a council ward with selective licensing needs both the mandatory HMO licence and the selective licence. Both fees are independently deductible.</p>
 
-<p>However, from April 2027, landlords will face separate property income tax rates of 22% basic rate and 42% higher rate. A £1,000 HMO licensing deduction will then save £420 for higher rate taxpayers.</p>
+<h2>Cash Basis vs Accruals: Which Year Do You Claim?</h2>
 
-<p>The tax relief applies in the year you incur the cost, not necessarily when you pay it. If you receive your licence invoice in March 2026 but pay in April 2026, you can typically claim the deduction in the 2025/26 tax year.</p>
-
-<h2>Selective Licensing Deduction: Additional Schemes</h2>
-
-<p>Many councils operate selective licensing schemes beyond mandatory HMO licensing. These selective licensing deduction opportunities include:</p>
+<p>The default position for individual landlords is the cash basis, which became the standard regime for property businesses from 6 April 2024. Under the cash basis:</p>
 
 <ul>
-<li><strong>Area-based schemes:</strong> Covering specific wards or postcodes regardless of property type</li>
-<li><strong>Property-specific schemes:</strong> Targeting houses in multiple occupation below the 5-person threshold</li>
-<li><strong>Anti-social behaviour zones:</strong> Additional licensing in areas with identified problems</li>
+<li>You deduct the licence fee in the tax year you actually pay it</li>
+<li>A five-year licence paid in March 2026 takes the full deduction in the 2025/26 tax year</li>
+<li>No need to spread the cost across the licence period</li>
 </ul>
 
-<p>Birmingham, for instance, runs selective licensing across multiple wards costing £500-£780 per property. Liverpool operates city-wide selective licensing at £750 per property. All these fees are tax deductible business expenses.</p>
-
-<h2>HMO Licence Cost Tax Treatment for Companies</h2>
-
-<p>Landlords operating through limited companies can also claim HMO licence cost tax relief. The same deductibility rules apply, but the savings differ due to corporation tax rates:</p>
+<p>You must move to accruals basis if your gross rental income exceeds £150,000. Under accruals:</p>
 
 <ul>
-<li><strong>Small profits rate (19%):</strong> £1,000 licence fee saves £190 corporation tax</li>
-<li><strong>Main rate (25%):</strong> £1,000 licence fee saves £250 corporation tax for profits above £250,000</li>
+<li>You spread the licence fee across the licence period in line with the matching principle</li>
+<li>A £1,000 five-year licence produces a £200 annual deduction</li>
+<li>The unspread portion sits on the balance sheet as a prepayment</li>
 </ul>
 
-<p>Companies with multiple HMOs should track licensing costs by property to ensure accurate profit allocation and maximise available reliefs. <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Our BTL company guide</a> covers the full tax treatment of property expenses through corporate structures.</p>
+<p>Limited company landlords cannot use the cash basis. Companies are always on accruals and must spread licence fees across the licence period. The corporation tax computation includes the appropriate annual share rather than the full payment.</p>
 
-<h2>Record Keeping, Timing, and Common Mistakes</h2>
+<p>You can elect into accruals voluntarily even below the £150k threshold, but switching back and forth between bases creates timing distortions, so most landlords pick one and stick with it.</p>
 
-<p>Proper documentation and correct timing are essential for claiming HMO licensing fees as tax deductions. Most landlords can claim fees in the tax year they're incurred using the cash basis, meaning you deduct the expense when you actually pay the licence fee. For landlords using accruals accounting (typically those with turnover over £150,000), the deduction timing follows when the liability arises rather than when payment is made.</p>
+<h2>Capital vs Revenue: The Conversion Costs Question</h2>
 
-<p>Maintain records of:</p>
-<ul>
-<li><strong>Licence applications:</strong> Copies of submitted applications with dates</li>
-<li><strong>Payment receipts:</strong> Bank statements or council receipts showing licence fees paid</li>
-<li><strong>Licence certificates:</strong> Proof of approved licences and their validity periods</li>
-<li><strong>Renewal notices:</strong> Documentation of licence renewal requirements and costs</li>
-<li><strong>Correspondence:</strong> Email trails with councils regarding licence conditions or variations</li>
-</ul>
-
-<p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becoming mandatory from April 2026 for landlords with gross rental income over £10,000, digital record keeping becomes even more important.</p>
-
-<p>Common mistakes to avoid include:</p>
-<ul>
-<li><strong>Missing selective licensing:</strong> Overlooking additional local schemes beyond mandatory HMO licensing</li>
-<li><strong>Capital vs revenue:</strong> Treating structural improvements required for compliance as revenue expenses</li>
-<li><strong>Personal vs business:</strong> Attempting to claim fees for properties not generating rental income</li>
-<li><strong>Timing errors:</strong> Claiming deductions in the wrong tax year</li>
-</ul>
-
-<p>The key test is whether the cost is wholly and exclusively for your rental business. HMO licences clearly meet this test as they're mandatory for legal operation.</p>
-
-<h2>What About Licence Application Costs?</h2>
-
-<p>Beyond the licence fee itself, related application costs are also tax deductible:</p>
+<p>This is the area where most HMO landlords lose deductions or claim incorrectly. The rule:</p>
 
 <ul>
-<li><strong>Planning consultants:</strong> Professional help with licence applications</li>
-<li><strong>Safety certificates:</strong> Gas safety, electrical testing, and fire safety certificates required for applications</li>
-<li><strong>Property surveys:</strong> Professional inspections needed to demonstrate compliance</li>
-<li><strong>Legal fees:</strong> Solicitor costs for licence appeals or compliance issues</li>
+<li><strong>Conversion work to bring the property up to HMO standard</strong> (additional fire doors, additional kitchens or bathrooms, sound insulation between rooms, structural changes to room layout, replacement of single-glazed windows to meet thermal standards) is <strong>capital expenditure</strong>. It adds to the property's base cost for CGT on eventual sale. It does not reduce this year's rental tax bill.</li>
+<li><strong>Maintenance and replacement of existing equipment</strong> (replacing a broken fire door with an equivalent one, servicing fire alarms, replacing the boiler, ongoing redecoration) is <strong>revenue expenditure</strong>. It is deductible against rental income in the year incurred (cash basis) or accrued (accruals basis).</li>
+<li><strong>Statutory compliance certificates</strong> (annual gas safety, EICR every 5 years, EPC every 10 years, fire risk assessment) are <strong>revenue expenditure</strong> and deductible in the year incurred.</li>
 </ul>
 
-<p>However, capital improvements made to meet licence conditions follow different tax rules. Installing fire doors or upgrading electrical systems to comply with HMO standards may qualify for capital allowances rather than immediate expense deductions.</p>
+<p>The HMRC test is whether the work creates or enhances an asset (capital) or maintains an existing asset (revenue). A fire door that did not previously exist is capital. Replacing an existing fire door is revenue. A new kitchen carved out of what was previously a bedroom is capital. Replacing a worn-out kitchen with an equivalent one is revenue.</p>
 
-<h2>HMO Licensing in Different UK Regions</h2>
+<p>The capital-vs-revenue boundary is one of the most-litigated areas of property tax. If the work is substantial and the position is not obvious, get advice before filing.</p>
 
-<p>Licence costs vary significantly across UK councils, but all qualify for the same tax treatment:</p>
+<aside>
+<p>Need help working out the capital-vs-revenue split on HMO conversion costs?</p>
+<p>We review HMO conversion expenditure for landlords every month. The free consultation looks at your specific work, identifies what is deductible against this year's tax and what adds to base cost, and produces a written summary you can give to your bookkeeper or use on the return. Scroll to the form at the bottom of this page.</p>
+</aside>
+
+<h2>Professional Fees on the Licence Application</h2>
+
+<p>Application support costs are deductible to the extent they are revenue, not capital. Examples:</p>
 
 <ul>
-<li><strong>London boroughs:</strong> £500-£1,500 for mandatory licences, additional selective schemes vary</li>
-<li><strong>Manchester:</strong> £1,100 mandatory licence, £640 selective licensing in designated areas</li>
-<li><strong>Birmingham:</strong> £780 mandatory licence, selective licensing £500-£780 depending on ward</li>
-<li><strong>Leeds:</strong> £1,200 mandatory licence, additional schemes for specific property types</li>
-<li><strong>Liverpool:</strong> £750 city-wide selective licensing plus mandatory HMO fees</li>
+<li><strong>HMO consultant fee for filing the application:</strong> deductible (revenue, application-related)</li>
+<li><strong>Surveyor fee for the layout drawing required by the council:</strong> deductible if the drawing is only used for the application; capital if the drawing also underpins planned conversion work</li>
+<li><strong>Fire risk assessment by a competent specialist:</strong> deductible (revenue, statutory compliance)</li>
+<li><strong>Architect's fee for HMO conversion design:</strong> capital (follows the conversion expenditure)</li>
+<li><strong>Solicitor fee for licence application appeal or compliance dispute:</strong> deductible (revenue, defending the rental business)</li>
+<li><strong>Solicitor fee for negotiating the original property purchase:</strong> capital (acquisition cost, adds to base cost for CGT)</li>
 </ul>
 
-<p>Portfolio landlords with HMOs across multiple local authorities should track each council's requirements separately to ensure all licensing costs are captured for tax purposes.</p>
+<p>The principle: follow the underlying expenditure the professional fee supports. Professional fees inherit the capital-vs-revenue character of the work they enable.</p>
 
-<h2>Planning Ahead for Licence Renewals</h2>
+<h2>Late Application Penalties and Council Fines</h2>
 
-<p>HMO licences typically last 5 years, making renewal planning important for cash flow and tax purposes. Consider:</p>
+<p>Council-administered penalty notices for late HMO licence applications, late renewals, or technical breaches of licence conditions are generally deductible. The position rests on the duality test: the penalty arose in the course of the rental business and not for a personal purpose. HMRC will generally allow council penalty fees as a trading expense.</p>
+
+<p>The position changes for court-imposed fines (for example, criminal convictions for operating an unlicensed HMO). HMRC's view, supported by case law (McKnight v Sheppard), is that court fines are not deductible because the duality of purpose is broken. The fine has a punitive character beyond the cost of doing business. The civil penalty / criminal fine distinction matters here.</p>
+
+<h2>HMO Licence Fees Across UK Councils</h2>
+
+<p>Fee schedules vary significantly. Always check the current rate at your local authority before budgeting. Indicative fees in May 2026:</p>
+
+<table>
+<thead>
+<tr><th>Council</th><th>Mandatory HMO licence (5-year)</th><th>Selective / additional schemes</th></tr>
+</thead>
+<tbody>
+<tr><td>London (varies by borough)</td><td>£500-£1,500</td><td>Many boroughs operate selective licensing; check the specific ward</td></tr>
+<tr><td>Manchester</td><td>~£1,100</td><td>Selective licensing in defined wards, ~£640</td></tr>
+<tr><td>Birmingham</td><td>~£780</td><td>Selective licensing in multiple wards, £500-£780</td></tr>
+<tr><td>Leeds</td><td>~£1,200</td><td>Property-specific additional schemes</td></tr>
+<tr><td>Liverpool</td><td>Mandatory HMO fee plus city-wide selective licensing at ~£750</td><td>Combined cost across both regimes</td></tr>
+<tr><td>Newcastle</td><td>~£900</td><td>Selective licensing in named areas</td></tr>
+<tr><td>Nottingham</td><td>~£1,150</td><td>Selective licensing across most of the city</td></tr>
+</tbody>
+</table>
+
+<p>All of the above are deductible. Portfolio landlords with HMOs across multiple councils should track fees property-by-property to ensure all licensing costs are captured on the tax return.</p>
+
+<h2>Pre-Trading Expenditure: Licence Fees Paid Before First Let</h2>
+
+<p>If you have applied for an HMO licence before the property is first let, the fee is still deductible under the pre-trading expenditure rule in ITTOIA 2005 s.57. The conditions:</p>
 
 <ul>
-<li><strong>Renewal timing:</strong> Budget for licence renewal costs in advance</li>
-<li><strong>Fee increases:</strong> Councils often increase licence fees annually</li>
-<li><strong>Bulk renewals:</strong> Some councils offer discounts for multiple property renewals</li>
-<li><strong>Early applications:</strong> Avoid late penalty fees by applying for renewals in good time</li>
+<li>The expense must be incurred within seven years of the rental business starting</li>
+<li>The expense must be wholly and exclusively for the rental business</li>
+<li>The expense must not be capital</li>
+<li>The deduction is taken in the first tax year of letting, not the year the expense was paid</li>
 </ul>
 
-<p>A comprehensive approach to <a href="/blog/landlord-tax-essentials/landlord-tax-deductions-uk-2026-complete-list">landlord tax deductions</a> should factor in all HMO-related compliance costs, not just licensing fees.</p>
+<p>This matters for landlords who buy a property, refurbish it to HMO standard, apply for the licence, and only start letting in the following tax year. The licence fee deduction sits in the year letting commences, not the year of payment.</p>
+
+<h2>Record-Keeping Under MTD for Income Tax</h2>
+
+<p>From 6 April 2026, sole-trader landlords with combined gross property and self-employment income above £50,000 must keep records digitally and submit quarterly updates to HMRC under Making Tax Digital for Income Tax Self Assessment. The threshold drops to £30,000 from April 2027 and £20,000 from April 2028.</p>
+
+<p>For HMO licence fees specifically:</p>
+
+<ul>
+<li>Council invoice (PDF or screenshot from the council portal)</li>
+<li>Bank statement entry showing the payment</li>
+<li>Licence certificate confirming validity period</li>
+<li>Renewal notices and correspondence</li>
+<li>Professional fee invoices (consultant, surveyor, solicitor) attributed to the application</li>
+</ul>
+
+<p>All of this must live inside MTD-compatible software, not in paper files or unlinked spreadsheets. See our <a href="/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026">best MTD software for landlords</a> guide for tooling recommendations.</p>
+
+<aside>
+<p>Want a review of your HMO licensing expenses before you file?</p>
+<p>We review HMO landlord returns every week. Common findings: missed selective licensing fees, miscategorised conversion costs as revenue when they should be capital, undeducted professional fees, and timing errors between cash and accruals. The consultation is free and we will tell you what we would change before you decide whether to engage us. Use the form at the bottom of this page.</p>
+</aside>
+
+<p>Related reading: <a href="/blog/property-types-and-specialist-tax/hmo-tax-guide-rental-income-deductions-multi-tenant">HMO tax guide</a>, <a href="/blog/property-types-and-specialist-tax/hmo-vs-standard-buy-to-let-tax-comparison">HMO vs standard BTL comparison</a>, <a href="/blog/property-types-and-specialist-tax/hmo-capital-allowances-multi-tenant-landlords-claim">HMO capital allowances</a>, <a href="/blog/landlord-tax-essentials/landlord-tax-deductions-uk-2026-complete-list">Landlord tax deductions complete list</a>, <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 complete guide</a>, and <a href="/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026">Best MTD software for landlords</a>.</p>

@@ -44,7 +44,7 @@ faqs:
 
 <p>Property tax returns require careful attention to allowable expenses and income classification. Professional preparation ensures you claim all available reliefs while maintaining HMRC compliance. For example, a Coventry landlord with three buy-to-let properties earning £42,000 annual rental income needs accurate expense tracking to minimise their tax liability under current rules.</p>
 
-<p>From 6 April 2026, eligible landlords must comply with Making Tax Digital for Income Tax (ITSA). This affects property investors with business income over £10,000 annually. Coventry landlords need to prepare their record-keeping systems and understand quarterly reporting requirements. Early preparation helps avoid last-minute compliance issues and potential penalties.</p>
+<p>From 6 April 2026, eligible landlords must comply with Making Tax Digital for Income Tax (ITSA). This affects property investors with business qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) annually. Coventry landlords need to prepare their record-keeping systems and understand quarterly reporting requirements. Early preparation helps avoid last-minute compliance issues and potential penalties.</p>
 
 <p>Key preparation steps include:</p>
 <ul>

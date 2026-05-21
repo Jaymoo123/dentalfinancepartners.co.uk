@@ -44,7 +44,7 @@ faqs:
 <p>Specialist property accountants Manchester can model different scenarios, including incorporation timing, to minimise Section 24's impact. For a Manchester landlord with £200k of rental income and £120k mortgage interest, the tax difference between good and poor planning can exceed £15,000 annually. Consider a typical scenario: a Manchester landlord with three BTL properties generating £48,000 annual rental income. After the Section 24 restrictions, their effective tax rate could increase substantially.</p>
 
 <h3>Making Tax Digital Preparation</h3>
-<p>From April 2026, landlords with property income over £10,000 must submit quarterly returns under Making Tax Digital for Income Tax Property (ITSA). This represents a significant change from annual self-assessment returns.</p>
+<p>From April 2026, landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must submit quarterly returns under Making Tax Digital for Income Tax Property (ITSA). This represents a significant change from annual self-assessment returns.</p>
 <p>Property accountants Manchester are already helping clients prepare systems and processes for MTD compliance. This includes setting up cloud accounting software, establishing quarterly reporting routines, and ensuring accurate record-keeping throughout the tax year.</p>
 
 <h3>Company Incorporation Advice</h3>

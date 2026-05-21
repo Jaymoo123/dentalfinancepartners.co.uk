@@ -102,7 +102,7 @@ faqs:
 
 <h2>Record Keeping, Planning, and Common Mistakes</h2>
 
-<p>Commercial property requires detailed records for tax compliance, including rental income, all allowable expenses with supporting invoices, capital expenditure, business rates payments, empty property periods, and VAT records if applicable. <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital</a> applies to landlords with gross property income over £10,000 from April 2026, requiring quarterly digital reporting.</p>
+<p>Commercial property requires detailed records for tax compliance, including rental income, all allowable expenses with supporting invoices, capital expenditure, business rates payments, empty property periods, and VAT records if applicable. <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital</a> applies to landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) from April 2026, requiring quarterly digital reporting.</p>
 
 <p>Investors should consider portfolio diversification and exit planning, which for commercial disposals often involves larger sums. CGT planning can utilise the annual exempt amount, timing of disposals across tax years, and potential Business Asset Disposal Relief claims.</p>
 

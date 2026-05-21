@@ -142,7 +142,7 @@ faqs:
 <p>This represents a significant increase in the tax cost of disposing of holiday rental properties. You can find more details in our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">complete guide to property CGT</a>.</p>
 
 <h2>Making Tax Digital for Holiday Lets</h2>
-<p>From April 2026, holiday let landlords with gross property income over £10,000 must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a>. This means:</p>
+<p>From April 2026, holiday let landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a>. This means:</p>
 <ul>
 <li>Keeping digital records</li>
 <li>Filing quarterly updates to HMRC</li>

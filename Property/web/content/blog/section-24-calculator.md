@@ -28,7 +28,7 @@ faqs:
   - question: "Can I avoid Section 24 costs entirely?"
     answer: "Individual landlords cannot avoid Section 24 restrictions. However, properties owned through limited companies aren't subject to Section 24, as companies can still deduct mortgage interest as a business expense. This is why many landlords consider incorporation as a long-term strategy."
   - question: "Will Section 24 rules change in 2026?"
-    answer: "No changes to Section 24 are announced for 2026/27. The 20% relief limit remains in place for individual landlords. However, Making Tax Digital for Income Tax Property starts in April 2026, requiring quarterly digital reporting for landlords with income over £10,000."
+    answer: "No changes to Section 24 are announced for 2026/27. The 20% relief limit remains in place for individual landlords. However, Making Tax Digital for Income Tax Property starts in April 2026, requiring quarterly digital reporting for landlords with qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028)."
 ---
 
 <p>Section 24 has fundamentally changed how landlords calculate their tax bills. A <strong>section 24 calculator</strong> helps you understand exactly how mortgage interest restrictions affect your property income tax, but knowing how to use one properly is crucial for accurate results.</p>
@@ -190,7 +190,7 @@ Mortgage interest (£18,000) × 20% = £3,600 tax credit</p>
 
 <h2>Planning for 2026/27 and Beyond</h2>
 <p>Section 24 isn't changing for 2026/27, but other factors will affect your tax position:</p>
-<p><strong>Making Tax Digital:</strong> From April 2026, landlords with property income over £10,000 must use MTD-compliant software and file quarterly updates. This won't change Section 24 relief calculations but requires more detailed record-keeping.</p>
+<p><strong>Making Tax Digital:</strong> From April 2026, landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must use MTD-compliant software and file quarterly updates. This won't change Section 24 relief calculations but requires more detailed record-keeping.</p>
 <p><strong>Tax Band Changes:</strong> Keep track of personal allowance and tax band thresholds, as these affect whether Section 24 pushes you into higher tax brackets.</p>
 <p><strong>Interest Rate Environment:</strong> Rising mortgage rates increase your finance costs but remember — you only get 20% relief on the additional interest under Section 24.</p>
 <p>The key is using calculator results as a starting point for broader tax planning conversations with <a href="/services">qualified property tax specialists</a>.</p>

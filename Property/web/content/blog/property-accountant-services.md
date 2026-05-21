@@ -39,7 +39,7 @@ faqs:
 
 <h3>Annual Tax Returns and Compliance</h3>
 <p>Property income must be reported correctly on your Self Assessment tax return. This includes rental income, allowable expenses, and capital allowances for furnished properties. A property specialist ensures all deductions are claimed and calculations are accurate.</p>
-<p>For landlords with rental income above £10,000 annually, quarterly reporting under Making Tax Digital for Income Tax (ITSA) becomes mandatory from April 2026. Professional support helps you prepare for these new digital requirements.</p>
+<p>For landlords with qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) annually, quarterly reporting under Making Tax Digital for Income Tax (ITSA) becomes mandatory from April 2026. Professional support helps you prepare for these new digital requirements.</p>
 
 <h3>Tax Planning and Optimisation</h3>
 <p>Strategic tax planning can significantly impact your property investment returns. This includes timing property purchases and sales, structuring ownership effectively, and maximising available reliefs.</p>

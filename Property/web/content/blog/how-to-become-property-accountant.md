@@ -80,7 +80,7 @@ faqs:
 <li><strong>Core Accounting Concepts:</strong> The difference between revenue and capital expenditure, and accruals versus cash accounting for MTD.</li>
 <li><strong>UK Tax Implications:</strong> How Section 24 reduces mortgage interest relief, capital allowances on furnished rentals, CGT calculations including private residence relief, and income tax on rental profits.</li>
 <li><strong>Practical Record-Keeping:</strong> Hands-on experience with bookkeeping systems like Excel, QuickBooks, or cloud-based property software.</li>
-<li><strong>Making Tax Digital (MTD):</strong> From April 2026, MTD for Income Tax will require digital record-keeping and quarterly reporting for most landlords earning over £10,000 annually. Any training should include these compliance requirements.</li>
+<li><strong>Making Tax Digital (MTD):</strong> From April 2026, MTD for Income Tax will require digital record-keeping and quarterly reporting for most landlords earning over £50,000 (the MTD threshold from 6 April 2026, dropping to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). Any training should include these compliance requirements.</li>
 </ul>
 
 <h3>Alternatives to Formal Courses</h3>

@@ -70,7 +70,7 @@ faqs:
 <li>Bank statements showing who pays which expenses</li>
 <li>Copy of Form 17 election if applicable</li>
 </ul>
-<p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becoming mandatory from April 2026, digital record keeping will be essential for landlords with gross rental income over £10,000.</p>
+<p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becoming mandatory from April 2026, digital record keeping will be essential for landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028).</p>
 
 <h2>Common Mistakes with Joint Ownership and Section 24</h2>
 <p>Several errors commonly occur when joint owners deal with Section 24 restrictions:</p>

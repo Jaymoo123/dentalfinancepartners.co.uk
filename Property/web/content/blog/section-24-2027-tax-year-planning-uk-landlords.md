@@ -65,7 +65,7 @@ Net tax: £12,600 - £3,000 = £9,600</p>
 <p>The additional tax burden is £600 annually in this example, purely from the higher property tax rates.</p>
 
 <h2>Making Tax Digital (MTD) Requirements</h2>
-<p>Making Tax Digital (MTD) for Income Tax becomes mandatory from April 2026 for landlords with gross property income over £10,000. By 2027/28, this will be the established system for property tax reporting.</p>
+<p>Making Tax Digital (MTD) for Income Tax becomes mandatory from April 2026 for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). By 2027/28, this will be the established system for property tax reporting.</p>
 <p>Key MTD requirements continuing into 2027/28:</p>
 <ul>
 <li>Quarterly digital record-keeping using approved software</li>

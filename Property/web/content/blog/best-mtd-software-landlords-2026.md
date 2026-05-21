@@ -2,83 +2,165 @@
 title: "Best MTD Software for UK Landlords in 2026: Complete Guide"
 slug: "best-mtd-software-landlords-2026"
 canonical: "https://www.propertytaxpartners.co.uk/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026"
-date: "2026-03-29"
+date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Making Tax Digital (MTD)"
-metaTitle: "MTD Software for Landlords 2026: Top Picks Compared"
-metaDescription: "Compare PropertyBee, Landlord Vision, Xero and QuickBooks for MTD. Find the best software for your portfolio before the April 2026 deadline. Read now."
-metaTitle_prev: "Best MTD Software for UK Landlords 2026 | Complete Guide"
-metaDescription_prev: "Compare PropertyBee, Landlord Vision, Xero and QuickBooks for MTD. Find the best landlord software before the April 2026 deadline."
+metaTitle: "Best MTD Software for Landlords UK 2026 | Ranked Picks"
+metaDescription: "Ranked MTD software picks for UK landlords in 2026. Hammock, FreeAgent, Xero, QuickBooks, Apari compared by portfolio size. HMRC-recognised, post-April-2026."
 altText: "UK landlord using MTD software on laptop for property tax compliance"
 image: ""
 h1: "Best MTD Software for UK Landlords in 2026: Complete Guide"
-summary: "MTD for Income Tax Property starts 6 April 2026 for landlords earning over £50k from property. We compare the leading software options to help you choose the right platform."
+summary: "MTD for Income Tax went live on 6 April 2026 for sole-trader landlords with gross property income above £50,000. This guide ranks the software that is actually working in production for property landlords, by portfolio size, with the post-April-2026 changes and the next thresholds in April 2027 and 2028 factored in."
 schema: ""
 faqs:
-  - question: "When does MTD for property income become mandatory for UK landlords?"
-    answer: "MTD for Income Tax Property becomes mandatory from 6 April 2026 for landlords with gross rental income exceeding £50,000 per year. This applies to individuals, partnerships, and trusts with UK property income."
-  - question: "What happens if I don't comply with MTD for property by April 2026?"
-    answer: "Non-compliance with MTD requirements can result in penalties starting at £200 for late quarterly submissions, plus additional penalties for continued non-compliance. HMRC may also impose daily penalties for persistent late filing."
+  - question: "Is MTD for Income Tax already mandatory for UK landlords?"
+    answer: "Yes, for sole-trader landlords with combined gross property and self-employment income above £50,000. The mandate went live on 6 April 2026. The £30,000 threshold lands on 6 April 2027 and the £20,000 threshold on 6 April 2028. Companies are not in scope (corporation tax has a separate digital regime). Partnerships are deferred to a later date that has not yet been confirmed by HMRC."
+  - question: "What actually makes a piece of software MTD-compliant for property income?"
+    answer: "Three things. First, it must store your income and expense records digitally (not paper, not unlinked spreadsheets). Second, it must submit quarterly updates to HMRC via the official MTD for ITSA API. Third, it must support the end-of-period statement and final declaration for the tax year. The software must appear on HMRC's recognised software list at gov.uk to be valid for filing."
+  - question: "Can I still use a spreadsheet under MTD?"
+    answer: "Yes, but only with bridging software that converts your spreadsheet into the required digital submission format and connects it to the HMRC API. Pure spreadsheets without bridging software are not MTD-compliant. Bridging tools like 123 Sheets, BTCSoftware, or the spreadsheet bridges built into Hammock and Untied let you keep working in Excel while staying compliant. The catch: you still need digitally linked records, so a manually retyped spreadsheet is not enough."
   - question: "Can I use free MTD software for my rental property business?"
-    answer: "Yes, HMRC-approved free software is available for basic MTD compliance. However, these typically lack property-specific features like Section 24 calculations, multiple property tracking, and advanced reporting that most landlords need."
+    answer: "Yes, but with caveats. HMRC's recognised list includes a small number of free or freemium options (limited free tiers from GoSimpleTax, basic plans from Hammock or Untied for very small portfolios). The free tiers usually restrict number of properties, number of transactions, or features like Section 24 calculations. For most landlords with 2+ properties, the paid plans at £8-£20 per month are the safer choice."
   - question: "Do I need different MTD software if I operate through a limited company?"
-    answer: "Companies with property income don't need MTD for Income Tax Property compliance — this only applies to individuals, partnerships and trusts. However, companies may still benefit from property-specific accounting software for Corporation Tax compliance and business management."
+    answer: "Yes. MTD for Income Tax Self Assessment (which this guide covers) applies to individuals, partnerships, and trusts only. Limited companies file corporation tax returns via the existing HMRC online service and do not need MTD-for-ITSA software. Many company landlords still use accounting platforms like Xero, QuickBooks, FreeAgent, or Sage for their property bookkeeping, but the digital submission obligation is different and the software is purchased on a company plan, not a sole-trader plan."
+  - question: "What if I am close to the £50,000 threshold and unsure whether I am caught?"
+    answer: "Use HMRC's sign-up checker at gov.uk to confirm. The threshold is based on gross income, not net profit, and it aggregates UK property income and self-employment income for the same person. If you cross £50,000 in any of the two tax years before the start of the current tax year, you are inside the MTD regime. If you are close to the line, treat yourself as inside it: the cost of being prepared is low, the cost of missing the cut-off is penalty exposure."
+  - question: "How long does it take to set up MTD software for a small portfolio?"
+    answer: "For a 1-3 property portfolio with reasonable record-keeping, expect 4-8 hours of work spread across initial setup, importing the current tax year, and learning the quarterly submission flow. For 4-10 properties with mixed mortgage providers and letting agents, allow 12-20 hours including bank feed configuration. Most landlords overestimate the ongoing time burden (15-30 minutes per property per quarter once set up) and underestimate the one-off setup time."
+  - question: "Will my software submit my final declaration as well as the quarterly updates?"
+    answer: "It should, but check before you commit. The full MTD-for-ITSA flow has four quarterly updates plus an end-of-period statement plus a final declaration each tax year. Some HMRC-recognised tools cover the full cycle (Hammock, Xero, QuickBooks, FreeAgent, Apari, Untied); others only handle quarterly updates and expect you to use a separate tool for the year-end declaration. The HMRC recognised software list at gov.uk indicates which functions each provider supports."
+  - question: "Do I need separate MTD software for each property?"
+    answer: "No. A single MTD-compliant subscription handles your entire UK property business, including multiple properties, mixed property types (BTL, HMO, holiday let), and overseas property (filed separately under its own rules). Property-specific tools like Hammock and Landlord Vision organise income and expenses by property within one account, which makes per-property profitability tracking easier than mainstream accounting tools."
+  - question: "Is HMRC's free Basic Tools service enough for landlords?"
+    answer: "No. HMRC Basic Tools is for self-assessment filers under specific circumstances and does not support full MTD-for-ITSA quarterly submissions. It is not on the recognised MTD software list. For MTD compliance you need either a paid plan from a recognised provider or a recognised free tier."
+  - question: "What are the most common mistakes landlords are making with MTD in 2026?"
+    answer: "Four recurring patterns: (1) treating the April 2026 deadline as a future event when it has already passed; (2) buying the cheapest plan without checking whether it covers the end-of-period statement and final declaration; (3) entering historic data manually instead of using bank feeds, which creates non-linked records and undermines the digital trail; (4) waiting until the first quarterly deadline to test the submission flow, which leaves no time to fix software issues if the first submission fails."
+  - question: "What does professional support add when choosing or running MTD software?"
+    answer: "A specialist property accountant typically handles: initial software selection based on your portfolio shape, setup of property-by-property records and bank feeds, configuration of Section 24 tax credit calculations, review of each quarterly submission before it goes to HMRC, and the end-of-period statement and final declaration. Many landlords run the day-to-day data entry themselves and have the accountant own the submission review and year-end work. Fixed-fee structures are typical."
 ---
 
-<p>Making Tax Digital for Income Tax Property (ITSA) becomes mandatory from 6 <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">April 2026</a> for UK landlords with gross property income exceeding £50,000. This means quarterly digital submissions and end-of-period statements through MTD-compatible software.</p>
-<p>Choosing the right MTD software is crucial for compliance and efficiency. The wrong choice can mean extra work, higher costs, or compliance headaches down the line.</p>
+<p>Making Tax Digital for Income Tax Self Assessment went live for property income on <strong>6 April 2026</strong>. If you are a sole-trader landlord with combined gross property and self-employment income above £50,000, you are already inside the MTD regime. Quarterly digital submissions to HMRC via approved software are no longer optional, and HMRC's points-based penalty system applies from the first missed deadline.</p>
 
-<h2>Top MTD Software Options for Landlords in 2026</h2>
-<h3>Specialist Property Software</h3>
-<p><strong>PropertyBee</strong> leads the field for dedicated property MTD compliance. Built specifically for UK landlords, it handles complex scenarios like HMOs, commercial properties, and mixed-use buildings.</p>
-<p>Key strengths: Excellent <a href="/blog/section-24-and-tax-relief/section-24-calculator">Section 24 calculations</a>, automated rent collection integration, strong customer support for property queries. Pricing starts around £15-25 per month depending on portfolio size.</p>
-<p><strong>Landlord Vision</strong> offers comprehensive property management alongside MTD compliance. Popular with portfolio landlords who want tenant management features integrated. It is a prime example of <strong>property management software</strong> that also ensures MTD compliance, making it a strong choice for landlords seeking an all-in-one operational and tax solution.</p>
-<p>Best for: Landlords wanting property management (tenant referencing, maintenance logs, document storage) and MTD in one platform. Expect £20-40 monthly depending on property count.</p>
-<p><strong>Other Property Management Platforms:</strong> Software like Arthur Online, Rentila, and Goodlord primarily focus on the operational side (tenant management, inspections, repairs). While they may integrate with MTD-compliant accounting software like Xero or QuickBooks, they are not typically standalone MTD submission tools. If your search is for 'property management software', evaluate whether you need a tool that does both (like Landlord Vision) or a dedicated management platform that will require a separate link to your MTD accounting software.</p>
-<h3>General Accounting Software with Property Features</h3>
-<p><strong>Xero</strong> remains popular due to its user-friendly interface and extensive app ecosystem. The property add-ons from third parties can create a powerful combination.</p>
-<p>Consider if: You already use Xero for other business activities or want flexibility to add features. Around £12-30 monthly plus property app costs.</p>
-<p><strong>QuickBooks Online</strong> has improved its property handling significantly. The self-employed version works for smaller landlords, while the full version suits larger portfolios.</p>
-<p>Good for: Landlords who need simple, reliable MTD compliance without complexity. Pricing from £6-25 monthly.</p>
-<h3>HMRC's Free Software</h3>
-<p>HMRC provides basic free MTD software through approved vendors. These cover essential compliance but lack advanced property features.</p>
-<p>Suitable for: Simple property portfolios with straightforward income and expenses. Limited reporting and no advanced features.</p>
+<p>This guide ranks the MTD software that is actually in production for UK landlords in 2026, by portfolio size and feature fit. It also covers the next two threshold steps (£30,000 from 6 April 2027 and £20,000 from 6 April 2028), so landlords currently under the line can prepare instead of being caught flat-footed.</p>
 
-<h2>MTD Software vs. Property Management Software: Key Differences</h2>
-<p>Understanding the distinction is crucial for your search:</p>
+<h2>Where You Stand on the MTD Timeline</h2>
+
+<p>The mandate phases in by gross income, not by tax band:</p>
+
+<table>
+<thead>
+<tr><th>Effective date</th><th>Gross income threshold</th><th>Who is now in scope</th></tr>
+</thead>
+<tbody>
+<tr><td>6 April 2026 (already live)</td><td>Over £50,000</td><td>Sole-trader landlords and self-employed individuals above £50k combined</td></tr>
+<tr><td>6 April 2027</td><td>Over £30,000</td><td>The next wave: most mid-sized BTL and HMO portfolio landlords</td></tr>
+<tr><td>6 April 2028</td><td>Over £20,000</td><td>Smaller landlords with one or two properties at typical rents</td></tr>
+<tr><td>Not yet confirmed</td><td>Partnerships</td><td>Deferred, no date set as at May 2026</td></tr>
+</tbody>
+</table>
+
+<p>Threshold is on <em>gross</em> income (rent before expenses), not net rental profit. Property income and self-employment income aggregate for the same person. Use HMRC's <a href="https://www.gov.uk/guidance/check-when-to-sign-up-for-making-tax-digital-for-income-tax" target="_blank" rel="noopener noreferrer">sign-up checker</a> if you are unsure whether you are caught yet.</p>
+
+<h2>What "MTD-Compliant" Actually Means</h2>
+
+<p>The phrase "MTD-compliant" gets used loosely in software marketing. The actual HMRC requirement has three components:</p>
+
+<ol>
+<li><strong>Digital record-keeping.</strong> Income and expense records must be stored in software, not paper or unlinked spreadsheets. Each transaction needs to flow from its source (bank feed, invoice, receipt) into the record without manual re-entry breaking the digital chain.</li>
+<li><strong>Quarterly digital submission via the HMRC API.</strong> Five submissions per tax year for most landlords: four quarterly updates plus one end-of-period statement. The software must connect directly to HMRC's MTD-for-ITSA API.</li>
+<li><strong>Final declaration via approved software.</strong> The annual final declaration (which replaces the self-assessment return for MTD landlords) must also flow through approved software.</li>
+</ol>
+
+<p>The authoritative list of approved providers is HMRC's <a href="https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax" target="_blank" rel="noopener noreferrer">recognised software for MTD for Income Tax</a> page. Any product not on that list cannot file your MTD submissions, regardless of how good the software is otherwise. Check the list before you buy.</p>
+
+<h2>Top Picks by Landlord Segment</h2>
+
+<p>The right choice depends on portfolio size, whether you also have non-property self-employment income, and whether you want property management features built in or just clean accounting. Our segment-by-segment recommendations follow.</p>
+
+<h3>Single-property and very small portfolio landlords (1-3 properties)</h3>
+
+<p><strong>Hammock</strong> is the strongest property-specific pick at this end of the market. Built around per-property profit tracking from day one, with full MTD-for-ITSA submission support and a usable mobile app for receipt capture. Pricing typically starts around £10-£15 per month for a single property, scaling modestly with portfolio size.</p>
+
+<p><strong>Untied</strong> works well for landlords who also have other sole-trader income (consulting, freelance) and want one tool for the whole self-assessment picture. Strong MTD-for-ITSA support, lighter on property-specific features than Hammock.</p>
+
+<p><strong>FreeAgent</strong> is the natural choice if you bank with NatWest, Royal Bank of Scotland, Mettle, or Ulster (UK), since the account comes free with those business banking products. Genuine MTD-for-ITSA support, less property-specific than Hammock but very capable for general use.</p>
+
+<h3>Mid-sized BTL and HMO portfolios (4-10 properties)</h3>
+
+<p><strong>Hammock</strong> scales well into this range, with portfolio-level dashboards and the ability to assign income and expenses to specific properties cleanly. Pricing in the £20-£40 per month range for portfolios at this size.</p>
+
+<p><strong>Landlord Vision</strong> is the right pick if you want property management features (tenancy tracking, deposit handling, maintenance log, document storage) bundled with MTD-compliant accounting. Heavier than Hammock on the operational side, lighter on bookkeeping niceties. £25-£50 per month range.</p>
+
+<p><strong>Xero</strong> with a property add-on (such as Re-Leased or PropertySuite) works for landlords who want a mainstream accounting platform and are willing to layer property tracking on top. Best when the landlord also has non-property business activities.</p>
+
+<h3>Large portfolios and mixed property businesses (10+ properties or mixed BTL/HMO/commercial)</h3>
+
+<p><strong>Xero</strong> or <strong>QuickBooks Online</strong> become the practical default at this scale, both for MTD compliance and for the deeper accounting features (multi-bank reconciliation, advanced reporting, accountant collaboration). Property-specific add-ons or a separate property management tool (Arthur Online, Re-Leased) handle the operational side.</p>
+
+<p><strong>Sage Business Cloud Accounting</strong> is a credible alternative for landlords already in the Sage ecosystem, with full MTD-for-ITSA support on the appropriate tier.</p>
+
+<p>At this scale, the bigger decision is usually whether to consolidate the portfolio into a limited company structure (which removes the MTD-for-ITSA requirement and replaces it with corporation tax obligations). The <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company guide</a> covers that decision in full.</p>
+
+<h3>Specialist MTD-for-ITSA platforms (any portfolio size)</h3>
+
+<p><strong>Apari</strong> was built specifically for MTD-for-ITSA and supports the full quarterly + end-of-period + final declaration flow. Less general-purpose than Hammock or FreeAgent, but very focused on the MTD obligation itself.</p>
+
+<aside>
+<p>Not sure which tool fits your portfolio?</p>
+<p>We run a 20-minute consultation that sizes the right software for your specific situation: number of properties, gearing, banking setup, whether you have other self-employment income, and whether you want property management features bundled in. No obligation and no software affiliation, just a recommendation based on what we see working in production. Scroll to the form at the bottom of this page to book.</p>
+</aside>
+
+<h2>Bridging Software for Spreadsheet Users</h2>
+
+<p>If you have used Excel for years and do not want to migrate to dedicated accounting software, bridging software is the legitimate route. Bridging tools take data from a spreadsheet, validate it for MTD format, and submit it to HMRC via the API.</p>
+
 <ul>
-<li><strong>MTD-Compliant Accounting Software:</strong> Its primary function is to record income and expenses, perform tax calculations (like Section 24), and submit quarterly updates and final declarations directly to HMRC. Examples include Xero, QuickBooks, and dedicated tools like PropertyBee.</li>
-<li><strong>Property Management Software:</strong> Focuses on managing tenants and properties. Features include advertising vacancies, tenant referencing, arranging repairs, storing inspection reports, and managing safety certificates. Some, like Landlord Vision, have built-in MTD-compliant accounting. Others are operational tools that need to connect to separate accounting software for MTD submissions.</li>
-<li><strong>The Overlap:</strong> For full MTD compliance from April 2026, you <em>must</em> use software that can submit directly to HMRC. If you choose a pure property management platform without this capability, you will need a bridging solution or a separate MTD-compliant accounting package.</li>
+<li><strong>123 Sheets</strong> is a low-cost dedicated bridging tool with full MTD-for-ITSA support. Typically £20-£50 per year.</li>
+<li><strong>BTCSoftware MTD bridge</strong> for landlords who already use BTC products for self-assessment.</li>
+<li><strong>Built-in bridges in Hammock and Untied</strong> for users who want to keep some workflow in spreadsheets while having the accounting tool own the submission.</li>
 </ul>
 
-<h2>Key Features to Compare in MTD Software</h2>
-<p>When evaluating MTD software for your property business, focus on these critical areas:</p>
-<p><strong>Property-specific calculations:</strong> Does the software correctly handle mortgage interest restrictions under Section 24? Can it calculate capital allowances for furnishings and equipment automatically?</p>
-<p><strong>Multiple property handling:</strong> If you own several properties, ensure the software can track each property's profit and loss separately. This becomes crucial for disposal calculations and performance monitoring.</p>
-<p><strong>Integration capabilities:</strong> Consider how the software connects with your existing systems. Many landlords use separate rent collection platforms, banking apps, or property management tools.</p>
-<p><strong>Reporting quality:</strong> Beyond MTD compliance, good software provides meaningful business reports. Cash flow forecasting, profit analysis by property, and tax planning reports add real value.</p>
+<p>The important caveat: under MTD, the records themselves must be "digitally linked" from source to submission. A spreadsheet you retype into manually each quarter is not compliant. Bridging works when the spreadsheet is populated by digitally linked feeds (bank export, letting agent statement export) and the bridge software takes that file unchanged.</p>
 
-<h2>Cost Considerations for Different Portfolio Sizes</h2>
-<p>The right software choice often depends on your portfolio size and complexity.</p>
-<p><strong>1-3 properties:</strong> Basic MTD software or general accounting packages typically suffice. Expect £6-20 monthly. Free options may work for very simple situations.</p>
-<p><strong>4-10 properties:</strong> Specialist property software becomes worthwhile. The additional features justify £20-40 monthly costs. Time savings and better compliance offset higher prices.</p>
-<p><strong>10+ properties:</strong> Advanced features like automated data feeds, sophisticated reporting, and dedicated support become essential. Budget £40-100+ monthly but expect significant efficiency gains.</p>
+<h2>Migration Playbook If You Haven't Started Yet</h2>
 
-<h2>Implementation Timeline for MTD in 2026</h2>
-<p>Don't wait until April 2026 to choose and implement MTD software. The transition requires careful planning.</p>
-<p><strong>By Summer 2025:</strong> Research and shortlist software options. Most providers offer free trials — use them to test with your actual property data.</p>
-<p><strong>By Autumn 2025:</strong> Make your final choice and begin implementation. Import historical data and set up property structures correctly.</p>
-<p><strong>By January 2026:</strong> Complete staff training and ensure all quarterly processes work smoothly. Run parallel systems if needed for confidence.</p>
-<p>Starting early allows time to resolve issues and optimise workflows before the deadline.</p>
+<p>For landlords above the £50k threshold who are still on paper or unlinked spreadsheets in May 2026, the situation is urgent but recoverable. The realistic playbook:</p>
 
-<h2>Getting Help with MTD Software Selection</h2>
-<p>Choosing MTD software impacts your business for years ahead. The wrong choice can mean compliance issues, extra costs, or operational headaches.</p>
-<p>Many landlords benefit from professional guidance, especially those with complex portfolios or specific requirements. Our team at <a href="/services">Property Tax Partners</a> helps landlords evaluate software options alongside broader tax planning strategies.</p>
-<p>Consider professional advice if you have mixed commercial and residential properties, <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">operate through companies</a>, or need to integrate MTD with existing business systems.</p>
+<ol>
+<li><strong>Week 1: Pick a tool.</strong> Use HMRC's recognised list to confirm it covers your full filing flow (quarterly + EOPS + final declaration), then sign up for a free trial.</li>
+<li><strong>Week 2-3: Import the current tax year.</strong> Run bank feeds for the property account, categorise transactions, set up per-property tagging.</li>
+<li><strong>Week 4: Configure Section 24 handling.</strong> Confirm the tool treats mortgage interest as a finance cost (subject to the 20% tax credit) rather than a standard deduction.</li>
+<li><strong>Before the next quarterly deadline:</strong> Run a dry submission. If the tool offers a sandbox or test mode, use it. If not, work with an accountant to review the first submission before it goes live.</li>
+</ol>
 
-<h2>Related Reading</h2>
+<p>If you are already past your first quarterly deadline and have missed it, see our separate guide on <a href="/blog/making-tax-digital-mtd/mtd-penalties-landlords-miss-deadline">MTD penalties for landlords</a>. Catching up on a missed deadline is faster than waiting for HMRC to flag it.</p>
+
+<h2>Common MTD Mistakes Landlords Are Making in 2026</h2>
+
 <ul>
-<li><a href="/blog/making-tax-digital-mtd/landlord-accounting-software-uk-best-options-2026">Landlord Accounting Software UK: Best Options 2026</a></li>
-<li><a href="/blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions">Do I Need MTD for My Rental Income? Threshold and Exemptions Explained</a></li>
+<li><strong>Treating April 2026 as a future event.</strong> The mandate is already live for landlords above £50k. We still see this in client conversations every week.</li>
+<li><strong>Buying the cheapest plan without checking it covers EOPS and final declaration.</strong> Some entry-level tiers stop at quarterly submissions, leaving the year-end declaration unaddressed.</li>
+<li><strong>Manual re-entry from bank statements.</strong> This breaks the digital link requirement and exposes the landlord to compliance challenge.</li>
+<li><strong>Waiting until the first quarterly deadline to test the submission flow.</strong> If something fails (bank feed timing, software bug, HMRC outage), there is no buffer.</li>
+<li><strong>Assuming spreadsheets are still fine.</strong> Pure spreadsheets without bridging software are not compliant.</li>
+<li><strong>Forgetting that the threshold is gross, not net.</strong> A landlord with £55,000 of rent and £20,000 of mortgage interest is still in scope, even though net profit is much lower.</li>
 </ul>
+
+<h2>When Professional Support Earns Its Fee</h2>
+
+<p>Software handles the mechanics. It does not replace tax planning judgment. The situations where a property accountant typically adds material value alongside the software:</p>
+
+<ul>
+<li>Mixed portfolios (BTL + HMO + commercial + holiday let) where each property type has different MTD treatment</li>
+<li>Landlords sitting at the personal-vs-limited-company decision point, where the MTD-for-ITSA obligation can be removed entirely by incorporating</li>
+<li>Section 24 modelling, where the software calculates the tax credit but does not advise on whether the structure is optimal</li>
+<li>Quarterly submission review before filing, particularly in the first year of MTD</li>
+<li>End-of-period statement and final declaration review, where mistakes compound year-on-year</li>
+</ul>
+
+<aside>
+<p>Want help choosing or implementing MTD software?</p>
+<p>We work with property landlords across all the recognised platforms. The consultation is free and we will recommend the tool that fits your portfolio shape, not the one we earn the most commission from (we do not take software affiliate fees). Scroll to the form at the bottom of this page.</p>
+</aside>
+
+<p>Related reading: <a href="/blog/making-tax-digital-mtd/mtd-software-landlords-free-vs-paid-options-compared">Free vs paid MTD software comparison</a>, <a href="/blog/making-tax-digital-mtd/how-to-register-mtd-landlord-step-by-step-guide">How to register for MTD as a landlord</a>, <a href="/blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords">MTD quarterly deadlines 2026-27</a>, <a href="/blog/making-tax-digital-mtd/mtd-penalties-landlords-miss-deadline">MTD penalties</a>, <a href="/blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions">MTD threshold and exemptions</a>, and <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 complete guide</a>.</p>

@@ -125,7 +125,7 @@ imageCredit:
 <li>Underestimating void length: Always budget for longer than you expect.</li>
 <li>Ignoring compliance costs: Gas safety, EICR, and EPC certificates add up.</li>
 <li>Not separating personal and business finances: Use a dedicated business account.</li>
-<li>Forgetting about MTD: From April 2026, landlords with gross property income over £10,000 must file digitally. See our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD guide for landlords</a>.</li>
+<li>Forgetting about MTD: From April 2026, landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must file digitally. See our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD guide for landlords</a>.</li>
 <li>Relying on credit cards for emergencies: Build a cash reserve instead.</li>
 </ul>
 

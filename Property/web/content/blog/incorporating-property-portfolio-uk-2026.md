@@ -92,7 +92,7 @@ faqs:
 <li><strong>Arrange finance:</strong> Speak to lenders about transferring mortgages to the company. Many lenders require a personal guarantee from you. Some may charge arrangement fees or early repayment charges on existing mortgages.</li>
 <li><strong>Transfer properties:</strong> Instruct a solicitor to handle the legal transfer. Ensure the transfer is documented as a sale at market value for SDLT purposes. If using Section 162 relief, ensure the consideration is in shares.</li>
 <li><strong>File returns:</strong> Submit SDLT returns within 14 days of transfer. Report the CGT on your personal tax return (or claim Section 162 relief). The company must file its first corporation tax return within 12 months of the end of its accounting period.</li>
-<li><strong>Set up ongoing compliance:</strong> Register for Making Tax Digital (MTD) for Income Tax if your gross property income exceeds £10,000 (mandatory from 6 April 2026). The company will also need to file quarterly updates under MTD for corporation tax from 2026.</li>
+<li><strong>Set up ongoing compliance:</strong> Register for Making Tax Digital (MTD) for Income Tax if your gross qualifying income exceeds £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) (mandatory from 6 April 2026). The company will also need to file quarterly updates under MTD for corporation tax from 2026.</li>
 </ol>
 
 <h2>Common Mistakes to Avoid</h2>

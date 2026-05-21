@@ -23,7 +23,7 @@ faqs:
     answer: "A portfolio landlord consistently missing quarterly deadlines could face £800 annually in MTD penalties (4 × £200) once they exceed the penalty point threshold, plus additional annual return penalties of £100-£1,500+ depending on how late submissions are."
 ---
 
-<p>From 6 April 2026, <strong>Making Tax Digital (MTD) penalties for landlords</strong> will apply to anyone with gross property income over £10,000 annually. Missing these new digital deadlines will trigger automatic fines under HMRC's points-based penalty system.</p>
+<p>From 6 April 2026, <strong>Making Tax Digital (MTD) penalties for landlords</strong> will apply to anyone with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) annually. Missing these new digital deadlines will trigger automatic fines under HMRC's points-based penalty system.</p>
 
 <p>Understanding the <strong>MTD penalties landlords</strong> face is essential for avoiding unnecessary costs. Unlike traditional self-assessment penalties, MTD introduces quarterly reporting requirements with their own penalty structure alongside the existing annual return obligations.</p>
 
@@ -129,7 +129,7 @@ faqs:
 <h2>Impact on Property Investment Decisions and Professional Help</h2>
 <p>MTD penalties add ongoing compliance costs that affect property investment returns. A landlord facing regular £200 quarterly penalties could see £800 annually in avoidable costs.</p>
 <p>Some investors consider <a href="/buy-to-let-limited-company-complete-guide-uk">incorporating their property portfolio</a> to access professional accounting support more cost-effectively. Limited companies face corporate tax MTD requirements but often benefit from more structured professional management.</p>
-<p>For landlords approaching the £10,000 gross income threshold, staying just below this level avoids MTD obligations entirely - though this limits portfolio growth opportunities.</p>
+<p>For landlords approaching the MTD-for-ITSA threshold (£50,000 from 6 April 2026; £30,000 from 6 April 2027; £20,000 from 6 April 2028), staying just below the MTD threshold avoids MTD obligations entirely - though this limits portfolio growth opportunities.</p>
 <p>Given the complexity of MTD compliance alongside existing property tax obligations, many landlords benefit from professional support. <a href="/making-tax-digital-landlords-april-2026-deadline">Understanding MTD requirements</a> is just the first step - ongoing compliance requires systematic processes.</p>
 <p>Professional property accountants typically include MTD compliance in their service packages, managing quarterly submissions and annual returns together. This integrated approach often proves more cost-effective than facing regular penalties.</p>
 <p>When choosing professional support, ensure your advisor understands both MTD requirements and broader property tax issues like <a href="/section-24-tax-relief-complete-guide">Section 24 restrictions</a> that affect rental income calculations.</p>

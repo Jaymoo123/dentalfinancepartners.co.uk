@@ -16,13 +16,13 @@ summary: "A comprehensive guide covering everything UK landlords need to know ab
 schema: ""
 faqs:
   - question: "When is the deadline for my landlord tax return in 2026?"
-    answer: "For the 2025/26 tax year, your Self Assessment return must be submitted by 31st January 2027 if filing online, or 31st October 2026 if filing by paper. From April 2026, landlords with income above £10,000 will also need to submit quarterly MTD updates."
+    answer: "For the 2025/26 tax year, your Self Assessment return must be submitted by 31st January 2027 if filing online, or 31st October 2026 if filing by paper. From April 2026, landlords with qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) will also need to submit quarterly MTD updates."
   - question: "What expenses can I claim on my landlord tax return?"
     answer: "You can claim expenses wholly and exclusively for your rental business, including letting agent fees, insurance, repairs and maintenance, utility bills you pay, ground rent, and professional fees. Mortgage interest is restricted to 20% tax relief for individual landlords due to Section 24 rules."
   - question: "Do I need to complete a tax return if my rental income is under £1,000?"
     answer: "If your annual rental income is £1,000 or less, you can claim the property allowance and don't need to complete a tax return. However, if you have other income that requires a Self Assessment, you should still declare the rental income but can choose between claiming actual expenses or the £1,000 allowance."
   - question: "How will Making Tax Digital affect my landlord tax return from 2026?"
-    answer: "From April 2026, landlords with gross rental income above £10,000 must use MTD-compatible software to submit quarterly updates to HMRC, rather than just an annual Self Assessment. You'll need to report income and expenses within one month of each quarter end, requiring much more regular record-keeping."
+    answer: "From April 2026, landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must use MTD-compatible software to submit quarterly updates to HMRC, rather than just an annual Self Assessment. You'll need to report income and expenses within one month of each quarter end, requiring much more regular record-keeping."
   - question: "What's the difference between repairs and improvements for tax purposes?"
     answer: "Repairs restore a property to its original condition and are tax-deductible expenses. Improvements enhance the property beyond its original state and must be treated as capital expenditure. For example, fixing a broken window is a repair, but installing double glazing where there wasn't any before is an improvement."
   - question: "When do I need to start using Making Tax Digital for my rental property?"
@@ -43,7 +43,7 @@ faqs:
 </ul>
 <p>HMRC charges automatic penalties for late filing, starting at £100 for returns submitted after 31st January, escalating to daily penalties after three months.</p>
 <h3>Making Tax Digital Changes from April 2026</h3>
-<p>From 6th April 2026, landlords with gross rental income above £10,000 must use MTD-compatible software to submit quarterly updates to HMRC. This represents a significant change from annual Self Assessment reporting.</p>
+<p>From 6th April 2026, landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must use MTD-compatible software to submit quarterly updates to HMRC. This represents a significant change from annual Self Assessment reporting.</p>
 
 <h2>Which Tax Return Forms to Use</h2>
 <p>The form you need for your <strong>landlord tax return</strong> depends on your specific circumstances and the complexity of your property portfolio.</p>
@@ -82,7 +82,7 @@ faqs:
 <h2>When Do Landlords Need to File Self Assessment?</h2>
 <p>You must register for self assessment and file a tax return if your gross rental income exceeds £1,000 in a tax year. This threshold applies before deducting any expenses or allowances.</p>
 <p>For example, if you rent out a property for £1,200 per year, you need to file a return even if your profit after expenses is minimal. The £1,000 property allowance can cover your expenses if they're below this amount, but you still need to declare the income.</p>
-<p>You also need to file if you have other income sources that require self assessment, such as self-employment income, untaxed investment income over £10,000, or capital gains above the annual exempt amount.</p>
+<p>You also need to file if you have other income sources that require self assessment, such as self-employment income, untaxed investment qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028), or capital gains above the annual exempt amount.</p>
 
 <h2>Rental Income: What to Include</h2>
 <p>Report all rental income received during the tax year, including:</p>
@@ -140,7 +140,7 @@ faqs:
 <p>Digital record-keeping is becoming increasingly important with MTD approaching. Consider scanning physical receipts and storing them securely in the cloud, organised by tax year and property. Digital records are acceptable, but ensure they're backed up securely. Poor record keeping leads to enquiries and potential penalties.</p>
 
 <h2>Preparing for Making Tax Digital (MTD)</h2>
-<p>With MTD for Income Tax Property starting in April 2026, now is the time to prepare your record-keeping systems and choose appropriate software. Landlords with rental income above £10,000 will need to submit quarterly updates within one month of each quarter end. This requires much more regular record-keeping than the current annual system.</p>
+<p>With MTD for Income Tax Property starting in April 2026, now is the time to prepare your record-keeping systems and choose appropriate software. Landlords with qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) will need to submit quarterly updates within one month of each quarter end. This requires much more regular record-keeping than the current annual system.</p>
 <p>Consider investing in cloud-based accounting software that integrates with your bank accounts and can automatically categorise rental income and expenses.</p>
 
 <h2>Common Mistakes to Avoid</h2>

@@ -143,7 +143,7 @@ faqs:
 
 <h3>Making Tax Digital Requirements</h3>
 
-<p>Landlords with gross property income exceeding £10,000 must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> from April 2026. This includes quarterly digital record-keeping and reporting for serviced accommodation income.</p>
+<p>Landlords with gross  income above £50,000 (the MTD threshold from 6 April 2026; drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> from April 2026. This includes quarterly digital record-keeping and reporting for serviced accommodation income.</p>
 
 <h3>Record-Keeping Requirements</h3>
 

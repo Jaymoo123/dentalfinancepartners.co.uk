@@ -89,7 +89,7 @@ faqs:
 
 <h2>Making Tax Digital Preparation</h2>
 
-<p>From April 2026, landlords with rental income over £10,000 must keep digital records and submit quarterly updates to HMRC. This represents a significant change in compliance requirements.</p>
+<p>From April 2026, landlords with qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must keep digital records and submit quarterly updates to HMRC. This represents a significant change in compliance requirements.</p>
 
 <p>Professional services help you choose appropriate software, establish compliant record-keeping systems, and ensure smooth transition to the new requirements.</p>
 

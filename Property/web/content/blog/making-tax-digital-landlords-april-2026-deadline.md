@@ -14,7 +14,7 @@ summary: "Making Tax Digital for Income Tax Property becomes mandatory for eligi
 schema: ""
 faqs:
   - question: "Do all UK landlords need to use Making Tax Digital from April 2026?"
-    answer: "No, only landlords with UK property income over £10,000 per year must use MTD from April 2026. This threshold applies to gross rental income before expenses. Landlords below this threshold can continue using traditional self assessment, though they may choose to join MTD voluntarily."
+    answer: "No, only landlords with UK qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) per year must use MTD from April 2026. This threshold applies to gross rental income before expenses. Landlords below this threshold can continue using traditional self assessment, though they may choose to join MTD voluntarily."
   - question: "What software do I need for Making Tax Digital property compliance?"
     answer: "You need MTD-compatible software that can connect directly with HMRC's systems to submit quarterly updates. Basic spreadsheets won't meet the requirements. Most major property accounting software providers are developing MTD-compliant solutions. Research options that suit your portfolio size and complexity."
   - question: "When are the quarterly MTD deadlines for property landlords?"
@@ -22,7 +22,7 @@ faqs:
   - question: "Can I get help preparing for Making Tax Digital as a landlord?"
     answer: "Yes, many landlords benefit from professional support, especially during the transition. Property accountants can help you choose appropriate software, ensure compliance, and optimise your tax position within the new framework. The cost often pays for itself through better planning and reduced compliance risk."
   - question: "When does Making Tax Digital start for landlords?"
-    answer: "Making Tax Digital for landlords starts on 6 April 2026. All landlords with gross annual rental income above £10,000 must submit quarterly digital returns from this date, with the first quarterly submission due by 5 July 2026 covering the April-June period."
+    answer: "Making Tax Digital for landlords starts on 6 April 2026. All landlords with gross annual qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must submit quarterly digital returns from this date, with the first quarterly submission due by 5 July 2026 covering the April-June period."
   - question: "Do I still need to complete self-assessment under MTD?"
     answer: "Yes, but it changes significantly. Instead of reporting all property income on your tax return, you'll complete an \"end-of-period statement\" that confirms your quarterly submissions and makes any final adjustments. The deadline remains 31 January following the tax year."
   - question: "What happens if I miss a quarterly MTD deadline?"
@@ -30,10 +30,10 @@ faqs:
 ---
 
 <p>Making Tax Digital for Income Tax Property (ITSA) becomes mandatory for eligible UK landlords from 6 April 2026. This represents the biggest change to property tax reporting in decades, requiring quarterly digital submissions instead of annual self assessment returns.</p>
-<p>If you're a landlord earning over £10,000 from UK property, this will likely affect you. Here's what you need to know about the April 2026 deadline and how to prepare.</p>
+<p>If you're a landlord earning over £50,000 (the MTD threshold from 6 April 2026, dropping to £30,000 from 6 April 2027 and £20,000 from 6 April 2028)from UK property, this will likely affect you. Here's what you need to know about the April 2026 deadline and how to prepare.</p>
 
 <h2>What is Making Tax Digital for Property Income?</h2>
-<p>Making Tax Digital (MTD) for Income Tax Self Assessment starts on 6 April 2026. It affects all landlords and property investors with gross annual income above £10,000 from property rentals.</p>
+<p>Making Tax Digital (MTD) for Income Tax Self Assessment starts on 6 April 2026. It affects all landlords and property investors with gross annual qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) from property rentals.</p>
 <p>Under MTD, you'll submit quarterly updates showing your rental income and allowable expenses. These replace the current system where you report everything once a year through self-assessment.</p>
 <p>The key changes include:</p>
 <ul>
@@ -44,14 +44,14 @@ faqs:
 </ul>
 
 <h2>Who Must Follow the MTD Rules?</h2>
-<p>MTD applies to all UK landlords and property investors earning over £10,000 gross annual rental income. This <a href="/blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions">threshold</a> includes:</p>
+<p>MTD applies to all UK landlords and property investors earning over £50,000 (the MTD threshold from 6 April 2026, dropping to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) annual rental income. This <a href="/blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions">threshold</a> includes:</p>
 <ul>
 <li>Individual landlords with BTL properties</li>
 <li>Portfolio owners with multiple rental properties</li>
 <li>Property developers with rental income (though development profits have separate rules)</li>
 <li>Those with furnished holiday lettings</li>
 </ul>
-<p>The £10,000 threshold is based on gross rental income before expenses. A landlord charging £900 monthly rent (£10,800 annually) must comply, even if their profit after mortgage payments and expenses is much lower.</p>
+<p>the MTD-for-ITSA threshold (£50,000 from 6 April 2026, £30,000 from 6 April 2027, £20,000 from 6 April 2028) is based on gross rental income before expenses. A landlord charging £900 monthly rent (£10,800 annually) must comply, even if their profit after mortgage payments and expenses is much lower.</p>
 <p>If you operate through a limited company, different MTD rules for corporation tax may apply. Consider speaking with specialists about <a href="/incorporation">incorporation structures</a> if you're planning significant changes before 2026.</p>
 
 <h2>MTD Software and Digital Record Keeping Requirements</h2>
@@ -146,7 +146,7 @@ faqs:
 <p><strong>Myth:</strong> Quarterly submissions mean paying tax four times per year.<br>
 <strong>Reality:</strong> Submissions are informational. Tax payments typically remain twice-yearly through the payments on account system.</p>
 <p><strong>Myth:</strong> Small landlords are exempt.<br>
-<strong>Reality:</strong> The £10,000 threshold is relatively low. Most landlords with even single BTL properties exceed this.</p>
+<strong>Reality:</strong> the MTD-for-ITSA threshold (£50,000 from 6 April 2026, £30,000 from 6 April 2027, £20,000 from 6 April 2028) is relatively low. Most landlords with even single BTL properties exceed this.</p>
 
 <h2>Getting Ready: Next Steps</h2>
 <p>Start preparing for making Tax Digital for landlords now:</p>

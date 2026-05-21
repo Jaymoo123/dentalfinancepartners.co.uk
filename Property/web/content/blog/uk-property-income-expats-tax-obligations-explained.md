@@ -65,7 +65,7 @@ faqs:
 
 <p>Your UK tax return must include all UK rental income received, allowable property expenses, capital allowances on furniture and equipment, and any tax already deducted under the NRL scheme. If tax was withheld during the year, this appears as a credit against your final tax bill.</p>
 
-<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becomes mandatory for landlords with gross property income over £10,000. This affects many expat landlords who must now keep digital records and file quarterly updates. Digital record keeping becomes mandatory under MTD from April 2026 for qualifying landlords. Cloud-based accounting software can help manage these requirements while living abroad.</p>
+<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becomes mandatory for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This affects many expat landlords who must now keep digital records and file quarterly updates. Digital record keeping becomes mandatory under MTD from April 2026 for qualifying landlords. Cloud-based accounting software can help manage these requirements while living abroad.</p>
 
 <h2>Capital Gains Tax on Property Disposals</h2>
 

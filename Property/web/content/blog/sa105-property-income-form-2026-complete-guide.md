@@ -35,7 +35,7 @@ faqs:
 <ul>
 <li>Section 24 mortgage interest restriction remains fully in place</li>
 <li>Furnished Holiday Lettings regime abolished from April 2025</li>
-<li><a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becomes mandatory for landlords with gross property income over £10,000</li>
+<li><a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becomes mandatory for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028)</li>
 <li>From April 2027, separate property income tax rates will apply (22% basic, 42% higher, 47% additional)</li>
 </ul>
 
@@ -72,7 +72,7 @@ faqs:
 <p>If you let a room in your main home, you may qualify for <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">rent-a-room relief</a>, allowing you to receive up to £7,500 tax-free annually. You can choose between this relief and claiming actual expenses.</p>
 
 <h2>SA105, Making Tax Digital (MTD) and Future Changes</h2>
-<p>From 6 April 2026, landlords with gross property income over £10,000 must use Making Tax Digital for Income Tax. This affects how you prepare your SA105: you must keep digital records throughout the tax year, submit quarterly updates to HMRC, use MTD-compatible software, and submit the final SA105 through digital channels. The SA105 2026 property income requirements will integrate with your quarterly MTD submissions, reducing the year-end compliance burden.</p>
+<p>From 6 April 2026, landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must use Making Tax Digital for Income Tax. This affects how you prepare your SA105: you must keep digital records throughout the tax year, submit quarterly updates to HMRC, use MTD-compatible software, and submit the final SA105 through digital channels. The SA105 2026 property income requirements will integrate with your quarterly MTD submissions, reducing the year-end compliance burden.</p>
 <p>Looking ahead to 2027 and beyond, landlords should prepare for separate property income tax rates from April 2027, full MTD integration for eligible landlords, potential further changes to property tax reliefs, and enhanced digital record-keeping requirements. Consider whether <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation into a limited company</a> might be beneficial given the changing tax landscape.</p>
 
 <h2>Property Types and Specific Considerations</h2>

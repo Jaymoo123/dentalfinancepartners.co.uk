@@ -52,7 +52,7 @@ faqs:
 <li>Stamp duty land tax advice on purchases</li>
 <li>Non-resident landlord scheme applications if applicable</li>
 </ul>
-<p>The <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> will be particularly important for landlords with gross rental income over £10,000 from April 2026.</p>
+<p>The <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> will be particularly important for landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) from April 2026.</p>
 
 <h2>Bookkeeping and Record-Keeping Services</h2>
 <p>Some landlords prefer to handle their own books, while others want full bookkeeping support. BTL accountant services in this area typically include:</p>

@@ -69,7 +69,7 @@ faqs:
 
 <h3>Making Tax Digital Preparation</h3>
 
-<p>From April 2026, property landlords with income over £10,000 must use MTD-compatible software for quarterly reporting. As your <strong>Bristol property accountant</strong>, we'll help you <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">choose</a> the right system and ensure you're ready for the transition.</p>
+<p>From April 2026, property landlords with qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must use MTD-compatible software for quarterly reporting. As your <strong>Bristol property accountant</strong>, we'll help you <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">choose</a> the right system and ensure you're ready for the transition.</p>
 
 <h3>Company Formation and Structure</h3>
 

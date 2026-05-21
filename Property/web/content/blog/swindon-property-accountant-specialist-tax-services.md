@@ -20,7 +20,7 @@ faqs:
   - question: "What should I look for when choosing a buy to let accountant in Swindon?"
     answer: "Choose a property accountant with professional qualifications (ACCA, ACA, or CIMA), demonstrated property specialism, and local Swindon market knowledge. They should offer proactive tax planning, understand MTD requirements, and be able to explain complex issues clearly. Check they handle both personal and corporate property taxation if you're considering incorporation."
   - question: "When should Swindon landlords start preparing for Making Tax Digital?"
-    answer: "Swindon landlords with gross property income over £10,000 must comply"
+    answer: "Swindon landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply"
 ---
 
 <p>Swindon's thriving property market, from town centre regeneration projects to residential developments around the Great Western Hospital area, creates unique tax challenges for landlords. A <strong>property accountant in Swindon</strong> who understands both local market dynamics and complex UK property taxation can save landlords thousands in unnecessary tax and compliance costs.</p>
@@ -53,7 +53,7 @@ faqs:
 <p>Our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">complete Section 24 guide</a> explains these calculations in detail, but Swindon landlords need local expertise to optimise their specific situations.</p>
 
 <h2>Making Tax Digital (MTD) Compliance from April 2026</h2>
-<p>From 6 April 2026, Swindon landlords with gross property income over £10,000 must comply with Making Tax Digital for Income Tax. This represents a fundamental shift from annual tax returns to quarterly digital reporting. Local implications for Swindon property investors include:</p>
+<p>From 6 April 2026, Swindon landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with Making Tax Digital for Income Tax. This represents a fundamental shift from annual tax returns to quarterly digital reporting. Local implications for Swindon property investors include:</p>
 <ul>
 <li><strong>Software requirements:</strong> MTD-compatible accounting software for quarterly submissions</li>
 <li><strong>Record-keeping changes:</strong> Digital receipt storage and expense tracking</li>

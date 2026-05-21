@@ -16,7 +16,7 @@ faqs:
   - question: "How much do accountants that specialise in property charge?"
     answer: "Property specialist accountants typically charge £800-1,500 annually for basic BTL landlords, rising to £3,000-8,000 for complex portfolios with multiple SPVs. The cost reflects their specialist expertise and the complexity of property tax rules, but often delivers tax savings that exceed the additional fees."
   - question: "When do I need to switch from a general accountant to a property specialist?"
-    answer: "Consider switching when you have multiple properties, earn over £10,000 annual rental income (MTD threshold), or face complex decisions like incorporation. Property specialists become essential for Section 24 planning, capital allowances claims, and MTD compliance from April 2026."
+    answer: "Consider switching when you have multiple properties, earn over £50,000 annual rental income (the 6 April 2026 MTD threshold), or face complex decisions like incorporation. Property specialists become essential for Section 24 planning, capital allowances claims, and MTD compliance from April 2026."
   - question: "What specific qualifications should I look for in a property accountant?"
     answer: "Look for chartered accountants (ACA/ACCA/CIMA) with demonstrable property experience. Ask what percentage of their clients are property investors and request examples of recent tax planning advice. Professional body membership shows they maintain current knowledge through continuing education."
   - question: "Can my general accountant learn property tax rules, or should I switch?"
@@ -47,7 +47,7 @@ faqs:
 <p>Larger portfolios benefit from sophisticated structuring using multiple companies, partnership structures, or mixed ownership approaches. Property accountants understand how to optimise tax efficiency while maintaining operational flexibility.</p>
 
 <h3>Making Tax Digital (MTD) Preparation</h3>
-<p>From April 2026, landlords with property income above £10,000 must file quarterly digital submissions. Property specialists are preparing clients now, implementing software solutions and streamlining record-keeping processes.</p>
+<p>From April 2026, landlords with qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must file quarterly digital submissions. Property specialists are preparing clients now, implementing software solutions and streamlining record-keeping processes.</p>
 <p>This isn't just about compliance software. It requires restructuring how rental income and expenses are tracked, ensuring data flows seamlessly from bank accounts to tax submissions. Property accountants track these changes and advise on compliance requirements, unlike a general accountant who might not notice until HMRC issues penalties.</p>
 
 <h2>Service Differences in Practice</h2>

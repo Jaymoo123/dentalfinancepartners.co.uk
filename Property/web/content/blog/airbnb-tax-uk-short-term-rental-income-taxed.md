@@ -20,7 +20,7 @@ faqs:
   - question: "Is Airbnb income subject to Section 24 restrictions?"
     answer: "Yes, Airbnb properties are subject to Section 24 mortgage interest restrictions like traditional buy-to-let properties. The Furnished Holiday Lettings regime that previously provided relief was abolished in April 2025, so all short-term rental income now faces these restrictions."
   - question: "Do I need to comply with Making Tax Digital for my Airbnb income?"
-    answer: "If your gross rental income (including Airbnb) exceeds £10,000 annually, you must comply with Making Tax Digital rules from April 2026. This requires digital record keeping, quarterly submissions to HMRC, and using MTD-compatible software for your property business."
+    answer: "If your gross rental income (including Airbnb) exceeds the MTD threshold, you must comply with Making Tax Digital rules from April 2026. This requires digital record keeping, quarterly submissions to HMRC, and using MTD-compatible software for your property business."
 ---
 
 <p>If you're earning income from Airbnb or other short-term rental platforms in the UK, you need to understand how <strong>Airbnb tax UK</strong> rules apply to your situation. Unlike traditional buy-to-let properties, short-term rentals come with specific tax considerations that can significantly impact your liability.</p>
@@ -66,7 +66,7 @@ faqs:
 <h2>Record Keeping and Compliance</h2>
 <p>HMRC expects detailed records for all short-term rental activities. You should maintain booking records with dates and income received, all receipts for allowable expenses, bank statements showing rental income and payments, property management agreements, insurance documentation, and mortgage statements (for tax credit claims).</p>
 <h3>Making Tax Digital (MTD)</h3>
-<p>If your gross rental income (including Airbnb) exceeds £10,000 annually, you'll need to comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital rules from April 2026</a>. This requires digital record keeping using MTD-compatible software, quarterly submissions to HMRC, and an annual declaration through your Self Assessment.</p>
+<p>If your gross rental income (including Airbnb) exceeds the MTD threshold, you'll need to comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital rules from April 2026</a>. This requires digital record keeping using MTD-compatible software, quarterly submissions to HMRC, and an annual declaration through your Self Assessment.</p>
 
 <h2>Ownership Structures and Multiple Properties</h2>
 <h3>Company vs Personal Ownership</h3>

@@ -1,134 +1,225 @@
 ---
-title: 'Capital Gains Tax on Property: Complete Guide UK'
+title: 'Capital Gains Tax on UK Property: Complete Guide for Landlords (2026/27)'
 slug: capital-gains-tax-property-complete-guide-uk
 canonical: https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk
-date: '2026-04-01'
+date: '2026-05-21'
 author: Property Tax Partners Editorial Team
 category: Capital Gains Tax
-metaTitle: 'Capital Gains Tax on Property: Complete UK Guide 2026'
-metaDescription: Capital gains tax on property explained for UK landlords. Rates 18%/24%, reliefs, exemptions, and strategies to reduce your CGT bill on rental property sales.
+metaTitle: 'CGT on UK Property: Complete Guide 2026/27 (18% / 24%)'
+metaDescription: "The complete UK CGT guide for landlords: 18%/24% residential rates, £3,000 AEA, PRR, 60-day reporting, spouse transfers, FHL abolition, 2027 outlook."
+metaTitle_prev: 'Capital Gains Tax on Property: Complete UK Guide 2026'
+metaDescription_prev: "Capital gains tax on property explained for UK landlords. Rates 18%/24%, reliefs, exemptions, and strategies to reduce your CGT bill on rental property sales."
 altText: UK property documents with calculator showing capital gains tax calculations for landlords
 image: ''
-h1: 'Capital Gains Tax on Property: Complete Guide for UK Landlords & Investors'
-summary: Understanding capital gains tax property rules is crucial for UK landlords and investors when selling rental properties or second homes.
-schema: '{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","name":"Property Tax Partners Ltd","url":"https://www.propertytaxpartners.co.uk","areaServed":"United Kingdom","knowsAbout":["UK landlord taxation","Section 24 mortgage interest","Capital gains tax on property","Portfolio incorporation","Making Tax Digital for property","Furnished holiday lets","Buy-to-let limited companies","Non-resident landlord scheme"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},{"@type":"Person","name":"Property Tax Partners Editorial Team","jobTitle":"Specialist property accountant","knowsAbout":["Section 24 calculations","60-day CGT reporting","Property portfolio incorporation","BTL mortgage interest relief","FHL tax rules","SDLT additional property surcharge"],"worksFor":{"@type":"Organization","name":"Property Tax Partners Ltd","url":"https://www.propertytaxpartners.co.uk"}},{"@type":"Person","name":"ICAEW Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), Property Tax Specialist","knowsAbout":["UK property taxation","CGT","SDLT","Section 24"]},{"@type":"Article","headline":"Capital Gains Tax on Property: Complete Guide UK","description":"Capital gains tax on property explained for UK landlords. Rates 18%/24%, reliefs, exemptions, and strategies to reduce your CGT bill on rental property sales.","url":"https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk","datePublished":"2026-04-01","dateModified":"2026-05-19","author":{"@type":"Person","name":"Property Tax Partners Editorial Team","jobTitle":"Specialist property accountant","knowsAbout":["Section 24 calculations","60-day CGT reporting","Property portfolio incorporation","BTL mortgage interest relief","FHL tax rules","SDLT additional property surcharge"],"worksFor":{"@type":"Organization","name":"Property Tax Partners Ltd","url":"https://www.propertytaxpartners.co.uk"}},"reviewedBy":{"@type":"Person","name":"ICAEW
-  Qualified Senior Reviewer","jobTitle":"Chartered Accountant (ACA, ICAEW), Property Tax Specialist","knowsAbout":["UK property taxation","CGT","SDLT","Section 24"]},"publisher":{"@type":"AccountingService","name":"Property Tax Partners Ltd","url":"https://www.propertytaxpartners.co.uk","areaServed":"United Kingdom","knowsAbout":["UK landlord taxation","Section 24 mortgage interest","Capital gains tax on property","Portfolio incorporation","Making Tax Digital for property","Furnished holiday lets","Buy-to-let limited companies","Non-resident landlord scheme"],"memberOf":{"@type":"Organization","name":"Institute of Chartered Accountants in England and Wales","url":"https://www.icaew.com"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk"},"inLanguage":"en-GB"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.propertytaxpartners.co.uk"},{"@type":"ListItem","position":2,"name":"Capital Gains Tax","item":"https://www.propertytaxpartners.co.uk/blog/capital-gains-tax"},{"@type":"ListItem","position":3,"name":"Capital Gains Tax on Property: Complete Guide UK","item":"https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I avoid capital gains tax on property?","acceptedAnswer":{"@type":"Answer","text":"You can reduce CGT through legitimate planning like using annual exempt amounts, transferring to spouses to use their allowances, or claiming reliefs like Principal Private Residence Relief if you lived in the property. However, you cannot completely avoid CGT on investment property profits."}},{"@type":"Question","name":"What is the current CGT rate on residential property in the UK?","acceptedAnswer":{"@type":"Answer","text":"For 2025/26, the CGT rate on residential property is 18% for basic rate
-  taxpayers and 24% for higher and additional rate taxpayers. These rates are higher than CGT on other assets. Your rate depends on your total taxable income plus the gain, if the gain pushes you into a higher band, part is taxed at 18% and part at 24%."}},{"@type":"Question","name":"Do I need to report property CGT within 60 days?","acceptedAnswer":{"@type":"Answer","text":"Yes, UK residents who sell residential property at a gain must report and pay CGT within 60 days of completion. This applies to rental properties and second homes but not your main residence. Late reporting can result in penalties starting at £100, plus interest on any unpaid tax."}},{"@type":"Question","name":"How do I calculate the capital gain on a rental property?","acceptedAnswer":{"@type":"Answer","text":"Subtract the original purchase price plus allowable costs (stamp duty, legal fees, improvement costs) from the sale price minus selling costs. Then deduct your annual exempt amount. The result is your taxable gain. Improvement costs that add value count, but routine maintenance and repairs do not."}}]}]}'
+h1: 'Capital Gains Tax on UK Property: Complete Guide for Landlords (2026/27)'
+summary: 'The CGT regime for UK residential property disposals in 2026/27: 18% basic rate, 24% higher rate, £3,000 annual exempt amount, 60-day reporting requirement for UK residents where tax is due. Non-residents file for any UK land disposal. This pillar guide sets out the framework and links to the daughter pages on specific topics (calculation walkthrough, payment deadlines, PRR mechanics, disposal-timing planning).'
+schema: ''
 faqs:
-- question: Can I avoid capital gains tax on property?
-  answer: You can reduce CGT through legitimate planning like using annual exempt amounts, transferring to spouses to use their allowances, or claiming reliefs like Principal Private Residence Relief if you lived in the property. However, you cannot completely avoid CGT on investment property profits.
-- question: What is the current CGT rate on residential property in the UK?
-  answer: For 2025/26, the CGT rate on residential property is 18% for basic rate taxpayers and 24% for higher and additional rate taxpayers. These rates are higher than CGT on other assets. Your rate depends on your total taxable income plus the gain, if the gain pushes you into a higher band, part is taxed at 18% and part at 24%.
-- question: Do I need to report property CGT within 60 days?
-  answer: Yes, UK residents who sell residential property at a gain must report and pay CGT within 60 days of completion. This applies to rental properties and second homes but not your main residence. Late reporting can result in penalties starting at £100, plus interest on any unpaid tax.
-- question: How do I calculate the capital gain on a rental property?
-  answer: Subtract the original purchase price plus allowable costs (stamp duty, legal fees, improvement costs) from the sale price minus selling costs. Then deduct your annual exempt amount. The result is your taxable gain. Improvement costs that add value count, but routine maintenance and repairs do not.
-metaTitle_prev: 'Capital Gains Tax on Property UK: Complete Guide 2026'
-metaDescription_prev: Residential property CGT rates are 18% and 24% for 2026/27. Reliefs, exemptions, and tax-saving strategies for UK landlords and investors.
-dateModified: '2026-05-19'
+- question: "What are the current CGT rates on UK residential property?"
+  answer: "For 2026/27, CGT on residential property is 18% for the portion of the chargeable gain falling within the basic-rate band and 24% for the portion above. Non-residential and commercial property aligned to the same 18%/24% rates from 30 October 2024 (Autumn Budget). The annual exempt amount is £3,000 for individuals, £1,500 for most trusts. Trustees and personal representatives pay 24% throughout with no basic-rate slice."
+- question: "How is the gain calculated?"
+  answer: "Sale proceeds (less incidental costs of disposal) minus base cost (acquisition cost plus incidental acquisition costs plus capital enhancement) equals the chargeable gain. Apply Private Residence Relief where the property was at some point a main residence. Deduct capital losses (in-year compulsory, brought-forward optional to the AEA floor). Apply the £3,000 AEA. Split the remainder across the 18% and 24% bands by reference to total income. Our <a href=\"/blog/capital-gains-tax/cgt-calculation-selling-buy-to-let-property-step-by-step\">calculation walkthrough</a> covers the mechanics with five worked examples."
+- question: "What costs can I include in the base cost?"
+  answer: "Purchase price, SDLT paid on acquisition (including the 5% additional dwellings surcharge), purchase legal fees, survey costs, and capital enhancement expenditure (extensions, conversions, new bathrooms, new kitchens that materially exceed the original). Revenue repairs (replacing a like-for-like boiler, redecoration, fixing a damaged roof) cannot enter the base cost; they are income tax expenses claimed during ownership. Mortgage interest and finance costs are also income tax items, not capital items."
+- question: "What is the 60-day reporting requirement?"
+  answer: "UK residents disposing of UK residential property where CGT is due must file a Capital Gains Tax on UK property return and pay the tax within 60 days of completion. Where the gain is fully covered by PRR, losses or the AEA, no 60-day filing is required for UK residents. Non-UK residents must file within 60 days for any UK land disposal regardless of tax due. Late filing penalties start at £100. Full mechanics in our <a href=\"/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026\">60-day CGT deadlines guide</a>."
+- question: "Do I still file Self Assessment after the 60-day return?"
+  answer: "Yes, where the seller is within Self Assessment. The same disposal is reported on the SA108 capital gains pages. Tax paid through the 60-day return is offset against the final SA liability, with any balancing payment or refund reconciled by 31 January following the tax year. The 60-day return is not a final return."
+- question: "What is Private Residence Relief?"
+  answer: "PRR exempts the portion of the gain attributable to periods when the property was the owner's only or main residence. The relief is on a time-apportioned basis. The final nine months of ownership always qualify as deemed occupation provided the property was at some point a main residence. Letting Relief is still available post-April 2020 but only where the owner shared occupation with the tenant during a period of letting. Detail in our <a href=\"/blog/capital-gains-tax/ppr-relief-calculation-former-home-step-by-step\">PRR step-by-step guide</a>."
+- question: "How does spouse or civil partner ownership work for CGT?"
+  answer: "Transfers between spouses or civil partners are on a no-gain-no-loss basis under section 58 TCGA 1992. The receiving spouse inherits the original base cost. On subsequent sale to a third party, each spouse is taxed on their share. Joint ownership allows two £3,000 annual exempt amounts to be applied and can place part of the gain in a lower-rate spouse's basic-rate band. Pre-sale transfers are a common planning lever; the transfer must be genuine and complete before the disposal."
+- question: "Is Business Asset Disposal Relief still available for property?"
+  answer: "Business Asset Disposal Relief (BADR), formerly Entrepreneurs' Relief, applies to disposals of trading businesses, not investment property. Furnished Holiday Lets (FHL) historically qualified as trading for BADR purposes, but the FHL regime was abolished from 6 April 2025. Disposals of former FHL properties on or after 6 April 2025 are taxed as ordinary residential property unless transitional rules applied. BADR rates have also risen: 14% from 6 April 2025 and 18% from 6 April 2026. Even where BADR is available, it now offers a smaller advantage over the standard 24% higher rate."
+- question: "What happens to gains inside a limited company?"
+  answer: "Gains inside a UK limited company are taxed as part of the corporation tax computation at 19% (small profits rate, augmented profits up to £50,000), 25% (main rate, over £250,000), with marginal relief between. There is no annual exempt amount for companies. Indexation allowance (frozen at December 2017 since April 2018) may still apply to companies' pre-2018 base costs. The 60-day CGT on UK property service does not apply to companies; gains are reported through the CT600. Personal vs company economics are covered in our <a href=\"/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk\">BTL limited company complete guide</a>."
+- question: "Are non-residents taxed differently?"
+  answer: "Non-UK residents have been within UK CGT on UK residential property disposals since April 2015 and on all UK land (residential, commercial, and indirect interests in UK property-rich entities) since April 2019. Non-residents file the 60-day CGT on UK property return for every UK land disposal regardless of whether tax is due. Rebasing applied at 5 April 2015 for residential and 5 April 2019 for non-residential disposals by non-residents; older base costs do not flow through unchanged. Double tax treaty relief may apply where the non-resident is taxed on the same disposal in another jurisdiction."
+- question: "How does inheritance affect the CGT position?"
+  answer: "On death, the deceased's assets are revalued to the market value at the date of death for CGT purposes (the so-called 'CGT-free uplift'). Beneficiaries inherit the property at the probate value as their base cost. Subsequent disposal by the beneficiary triggers CGT only on growth from the probate value. Inheritance tax may apply at the estate level (40% above the nil-rate band), but the CGT step-up means the gain history is effectively wiped on death. This interaction is one of the strongest arguments against gifting investment property during lifetime."
+- question: "What is changing for CGT from April 2027?"
+  answer: "Nothing confirmed in legislation as of May 2026. The April 2027 change announced in the Autumn Budget is the new property income tax rates (22/42/47% on rental profit), not CGT rates. Speculation about CGT rate changes for 2027 is not legislated. Plan against the current statute rather than anticipated changes. Detail in our <a href=\"/blog/capital-gains-tax/cgt-property-2027-rate-changes-uk-landlords\">CGT 2027 changes page</a> and our <a href=\"/blog/capital-gains-tax/2027-property-tax-rates-affect-capital-gains-tax-sales\">disposal-timing under the 2027 income tax change page</a>."
+- question: "What records should I retain?"
+  answer: "Original purchase contract, completion statement, SDLT return, purchase legal invoices, survey costs, all capital improvement invoices with descriptions of work, tenancy records for periods of letting, evidence of any PRR periods (council tax, utility bills, electoral roll), sale completion statement, sale legal and estate agent invoices, and the CGT computation worksheet. HMRC's standard retention period for business taxpayers (including most landlords) is five years and 10 months from the end of the tax year. In practice, retain records for at least six years after the disposal."
+- question: "Where do I get authoritative confirmation of current rates?"
+  answer: "HMRC's <a href=\"https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual\">Capital Gains Manual</a> is the authoritative reference for mechanics. <a href=\"https://www.gov.uk/capital-gains-tax/rates\">gov.uk Capital Gains Tax rates</a> is updated each tax year for the current rates. <a href=\"https://www.legislation.gov.uk/ukpga/1992/12\">TCGA 1992</a> on legislation.gov.uk is the statutory framework. <a href=\"https://www.gov.uk/report-and-pay-your-capital-gains-tax\">HMRC's CGT on UK property service</a> is the filing portal."
+dateModified: '2026-05-21'
 reviewedBy: ICAEW Qualified Senior Reviewer
 reviewerCredentials: Chartered Accountant (ACA, ICAEW), Property Tax Specialist
-reviewedAt: '2026-05-19'
-editorialNote: Added section '2026/27 Capital Gains Tax Rates and Allowances for Property' grounded in 3 authority sources.
-sourcesVerifiedAt: '2026-05-19'
-sourceDomains:
-- gov.uk
-- icaew.com
-- taxscape.deloitte.com
+reviewedAt: '2026-05-21'
+editorialNote: Pillar rewrite covering full CGT framework with onward links to daughter pages.
 ---
-<p>Capital gains tax property rules affect every UK landlord and property investor who sells a rental property or second home. Whether you're disposing of a single buy-to-let or part of a larger portfolio, understanding how capital gains tax works can save you thousands of pounds.</p>
 
-<p>This guide covers everything you need to know about capital gains tax on property sales, from basic rates to advanced planning <a href="/blog/capital-gains-tax/reduce-cgt-property-disposal-uk">strategies</a>.</p>
+<p>Capital Gains Tax (CGT) is the tax on the gain made when a UK residential property is sold or disposed of at a profit. For UK individual landlords in 2026/27 the rates are 18% basic and 24% higher, with a £3,000 annual exempt amount. UK residents disposing of property where CGT is due must file a return and pay within 60 days of completion. Non-UK residents must file for every UK land disposal regardless of tax due. This pillar guide sets out the framework with onward links to the daughter pages covering specific topics.</p>
 
-<h2>How to Calculate Capital Gains Tax on Property</h2>
+<h2>The 2026/27 CGT framework at a glance</h2>
 
-<p>The basic calculation follows this structure:</p>
+<table>
+<thead>
+<tr><th>Item</th><th>2026/27 figure</th></tr>
+</thead>
+<tbody>
+<tr><td>Residential property CGT, basic rate</td><td>18%</td></tr>
+<tr><td>Residential property CGT, higher rate</td><td>24%</td></tr>
+<tr><td>Non-residential / commercial CGT (aligned from 30 October 2024)</td><td>18% / 24%</td></tr>
+<tr><td>Annual exempt amount, individuals</td><td>£3,000</td></tr>
+<tr><td>Annual exempt amount, trusts</td><td>£1,500</td></tr>
+<tr><td>60-day reporting required for UK residents</td><td>Yes, where tax due</td></tr>
+<tr><td>60-day reporting required for non-residents</td><td>Yes, every disposal</td></tr>
+<tr><td>Basic-rate income tax band (where 18% CGT applies)</td><td>Up to £37,700 of taxable income</td></tr>
+<tr><td>Higher-rate threshold</td><td>£50,270 gross income</td></tr>
+</tbody>
+</table>
 
-<p><strong>Sale proceeds</strong><br>
-Less: Original purchase price<br>
-Less: Allowable costs<br>
-Less: Annual exempt amount<br>
-= <strong>Taxable capital gain</strong></p>
+<p>The bands have been frozen at these levels since April 2021 and are scheduled to remain so until April 2028. The annual exempt amount was cut from £12,300 (pre-April 2023) to £6,000 (April 2023) to £3,000 (April 2024).</p>
 
-<h3>Allowable Costs</h3>
+<h2>The five-step calculation</h2>
 
-<p>You can deduct various costs from your capital gain:</p>
-<ul>
-<li><strong>Purchase costs:</strong> Solicitor fees, stamp duty, survey costs</li>
-<li><strong>Improvement costs:</strong> Extensions, conversions, new kitchens/bathrooms</li>
-<li><strong>Sale costs:</strong> Estate agent fees, solicitor fees, marketing costs</li>
-</ul>
-<p>Regular maintenance and repairs aren't allowable, only costs that enhance the property's value or were necessary for the sale.</p>
-
-<h3>Principal Private Residence Relief (PPR)</h3>
-<p>If you lived in the property as your main residence at any point, you might qualify for Principal Private Residence (PPR) relief. This exempts part of the gain from tax. The relief covers periods when the property was your main home, plus the final nine months of ownership (regardless of use). Additional periods may qualify if you were absent for specific reasons like work relocation.</p>
-
-<h3>Annual Exempt Amount</h3>
-<p>Each individual has an annual exempt amount (annual allowance) that reduces their taxable capital gains. For 2025/26, this is £3,000 per person. Married couples and civil partners can each use their annual exempt amount, potentially sheltering £6,000 of gains from tax. This makes joint ownership of investment properties attractive for CGT planning.</p>
-
-<h2>Capital Gains Tax Rates for Property</h2>
-<p>For residential property, the capital gains tax rates are 18% for basic-rate taxpayers and 24% for higher-rate and additional-rate taxpayers. The rate you pay depends on your total taxable income and gains in the tax year. Remember to add the taxable gain to your income to determine which tax band it falls into.</p>
-
-
-
-<h2>2026/27 Capital Gains Tax Rates and Allowances for Property</h2>
-<p>For the 2026/27 tax year, Capital Gains Tax (CGT) on residential property remains at 18% for basic rate taxpayers and 24% for higher or additional rate taxpayers <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup>. These rates have been stable since April 2024, when the higher rate was reduced from 28% to 24% <sup><a href="#ref-3" id="cite-3">[3]</a></sup>. The annual exempt amount is £3,000 per individual for both 2025/26 and 2026/27, unchanged from the previous year <sup><a href="#ref-1" id="cite-1">[1]</a></sup><sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</p><p>To determine which rate applies, you add your chargeable gain (after deducting the annual exempt amount) to your taxable income for the year. If the total falls within the basic rate band (£37,700 for 2026/27), the gain is taxed at 18%. Any gain above that threshold is taxed at 24% <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p><p><strong>Worked example:</strong> A basic rate taxpayer with taxable income of £20,000 sells a rental property, realising a gain of £50,000. After deducting the £3,000 annual exempt amount, the chargeable gain is £47,000. Adding this to income gives £67,000, which exceeds the £37,700 basic rate band by £29,300. Therefore, the first £17,700 of the gain (the amount needed to fill the basic rate band) is taxed at 18%, and the remaining £29,300 is taxed at 24%. The total CGT bill is £3,186 (18% of £17,700) plus £7,032 (24% of £29,300) = £10,218 <sup><a href="#ref-1" id="cite-1">[1]</a></sup>.</p><p>These rates and allowances have remained consistent since 2024/25, providing some certainty for landlords planning disposals <sup><a href="#ref-4" id="cite-4">[4]</a></sup><sup><a href="#ref-2" id="cite-2">[2]</a></sup>. Remember that CGT on property must be reported and paid within 60 days of completion <sup><a href="#ref-5" id="cite-5">[5]</a></sup><sup><a href="#ref-4" id="cite-4">[4]</a></sup>.</p>
-<h2>Strategies to Reduce Your Capital Gains Tax Bill</h2>
-
-<h3>Timing Disposals</h3>
-<p>Consider spreading property sales across tax years to use multiple annual exempt amounts. If you have properties worth £150,000 profit, selling three in one year wastes two annual allowances.</p>
-
-<h3>Spouse/Civil Partner Transfers</h3>
-<p>Transferring property to a spouse before sale can utilise their lower tax rate or unused annual exempt amount. These transfers are CGT-neutral between spouses.</p>
-
-<h3>Business Asset Disposal Relief</h3>
-<p>Furnished holiday lettings that qualify as a business might be eligible for Business Asset Disposal Relief, reducing CGT to 10% on qualifying gains up to £1 million lifetime limit.</p>
-
-<h2>Holding Property in a Company</h2>
-<p>Holding properties through a company changes the tax position significantly. Companies pay corporation tax on capital gains at normal corporation tax rates (19% for profits up to £250,000 and 25% for profits above this threshold for 2025/26), not CGT rates. However, extracting proceeds from the company creates additional tax charges. Many landlords considering <a href="/incorporation">incorporation</a> focus on income tax savings but overlook these CGT implications.</p>
-
-<h2>Reporting, Deadlines and Record Keeping</h2>
-<p>You must report and pay any capital gains tax due on UK residential property within 60 days of completion. Missing this deadline results in an automatic £100 penalty minimum. HMRC expects comprehensive records for capital gains tax property calculations:</p>
-<ul>
-<li>Purchase documents and completion statements</li>
-<li>Receipts for all allowable costs</li>
-<li>Sale documents and estate agent correspondence</li>
-<li>Evidence of any periods of main residence</li>
-<li>Professional valuations if properties were inherited or gifted</li>
-</ul>
-<p>Keep these records for at least five years after the 31 January filing deadline following the disposal.</p>
-
-<h2>Common Capital Gains Tax Mistakes</h2>
-<p>Property investors frequently make these costly errors:</p>
-<ul>
-<li><strong>Missing the reporting deadline:</strong> Automatic £100 penalty minimum</li>
-<li><strong>Not claiming all allowable costs:</strong> Increases taxable gains unnecessarily</li>
-<li><strong>Incorrect PPR relief calculations:</strong> Particularly for former main residences</li>
-<li><strong>Forgetting spouse transfers:</strong> Missing opportunities for tax savings</li>
-<li><strong>Poor timing:</strong> Not considering annual exempt amounts across tax years</li>
-</ul>
-
-<h2>Getting Professional Advice</h2>
-<p>Capital gains tax property rules are complex, and the stakes are high given the 24% rate for higher-rate taxpayers. Professional advice becomes particularly valuable for:</p>
-<ul>
-<li>Large property portfolios with multiple disposals</li>
-<li>Properties with mixed-use periods (main residence and rental)</li>
-<li>Inherited properties requiring valuation</li>
-<li>Cross-border situations involving non-UK residents</li>
-</ul>
-<p>The cost of professional advice is usually modest compared to potential CGT savings. If you're planning property disposals or need help with CGT calculations, consider speaking to a specialist who understands the intricacies of capital gains tax property rules.</p>
-
-<h2>Related Reading</h2>
-<ul>
-<li><a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">Capital Gains Tax on Property Sale UK 2026: Rates and Allowances</a></li>
-<li><a href="/blog/capital-gains-tax/property-capital-gains-tax-calculator">Property Capital Gains Tax Calculator: Complete Guide for UK Landlords</a></li>
-</ul>
-
-<h2>Sources</h2>
 <ol>
-  <li id="ref-1"><strong>gov.uk</strong>: <a href="https://www.gov.uk/capital-gains-tax/rates" rel="noopener noreferrer">Capital Gains Tax: what you pay it on, rates and allowances - GOV.UK</a></li>
-  <li id="ref-2"><strong>icaew.com</strong>: <a href="https://www.icaew.com/technical/tax/personal-tax/property-tax" rel="noopener noreferrer">Property tax - ICAEW.com</a></li>
-  <li id="ref-3"><strong>taxscape.deloitte.com</strong>: <a href="https://taxscape.deloitte.com/measures-spring-budget-2024/change-to-the-rate-of-capital-gains-tax-for-residential-property.aspx" rel="noopener noreferrer">Change to the rate of capital gains tax for residential property</a></li>
-  <li id="ref-4"><strong>icaew.com</strong>: <a href="https://www.icaew.com/technical/tax/personal-tax/capital-gains-tax" rel="noopener noreferrer">Capital gains tax | Personal tax - ICAEW.com</a></li>
-  <li id="ref-5"><strong>gov.uk</strong>: <a href="https://www.gov.uk/tax-sell-property" rel="noopener noreferrer">Tax when you sell property: What you pay it on - GOV.UK</a></li>
+<li><strong>Net disposal proceeds</strong>: sale price less incidental costs of disposal (legal fees, estate agent fees).</li>
+<li><strong>Base cost</strong>: acquisition price plus incidental costs of acquisition (SDLT, legal, survey) plus capital enhancement (extensions, conversions). Revenue repairs are excluded.</li>
+<li><strong>Chargeable gain</strong>: net proceeds minus base cost, less any Private Residence Relief.</li>
+<li><strong>Losses and AEA</strong>: deduct in-year capital losses (compulsory), then brought-forward losses (only to the AEA floor), then the £3,000 AEA.</li>
+<li><strong>Apply rates</strong>: 18% on the portion within the basic-rate band, 24% on the portion above.</li>
 </ol>
+
+<p>The mechanics with five worked examples are in our <a href="/blog/capital-gains-tax/cgt-calculation-selling-buy-to-let-property-step-by-step">CGT calculation walkthrough</a>.</p>
+
+<aside>
+<p>Running the calculation for a specific disposal</p>
+<p>For a written CGT computation on a real property, including PRR period mechanics, capital vs revenue boundary calls, and the spouse-split planning option, the form below routes through to a property tax specialist.</p>
+</aside>
+
+<h2>Allowable costs in the base cost</h2>
+
+<p>The capital vs revenue boundary is the single most common source of CGT calculation errors. HMRC's <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2020">PIM2020</a> sets out the framework on the income-tax side; the same logic applies for capital items entering the CGT base cost.</p>
+
+<table>
+<thead>
+<tr><th>Cost type</th><th>Treatment</th></tr>
+</thead>
+<tbody>
+<tr><td>Purchase price</td><td>Capital (base cost)</td></tr>
+<tr><td>SDLT including the 5% additional dwellings surcharge</td><td>Capital (base cost)</td></tr>
+<tr><td>Purchase legal fees</td><td>Capital (base cost)</td></tr>
+<tr><td>Survey on purchase</td><td>Capital (base cost)</td></tr>
+<tr><td>Extension or conversion adding floorspace or bedrooms</td><td>Capital (base cost)</td></tr>
+<tr><td>New bathroom or kitchen materially exceeding the original</td><td>Capital (uplift only)</td></tr>
+<tr><td>Like-for-like replacement of bathroom or kitchen</td><td>Revenue (income tax expense, not CGT)</td></tr>
+<tr><td>Roof repair after damage</td><td>Revenue</td></tr>
+<tr><td>Full roof replacement (substantively different)</td><td>Capital (base cost)</td></tr>
+<tr><td>Replacement of double glazing for single glazing</td><td>Revenue (HMRC accepts as repair, per PIM2020)</td></tr>
+<tr><td>Mortgage interest and finance costs</td><td>Revenue (Section 24 mechanics apply; never CGT)</td></tr>
+<tr><td>Estate agent fees on sale</td><td>Disposal cost (deducted from gross proceeds)</td></tr>
+<tr><td>Legal fees on sale</td><td>Disposal cost</td></tr>
+</tbody>
+</table>
+
+<p>The general principle: restoration to the original condition is revenue; creation of something materially better, larger or different is capital. An item claimed as a revenue expense during ownership cannot also enter the CGT base cost (double-counting).</p>
+
+<h2>Private Residence Relief and Letting Relief</h2>
+
+<p>Private Residence Relief (PRR) reduces the gain on a property that was at some point the owner's only or main residence. The relief is time-apportioned: the gain attributable to qualifying main-residence periods is exempt; the gain attributable to non-qualifying periods is taxable. The final nine months of ownership always qualify as deemed occupation provided the property was at some point a main residence.</p>
+
+<p>Letting Relief is still available post-April 2020 but is narrowly drawn: it requires the owner to have shared occupation with the tenant during a period of letting. The pre-April 2020 version (which applied without the shared-occupation requirement) was abolished. For most former-main-residence-now-let cases, PRR alone applies and Letting Relief does not.</p>
+
+<p>The detailed mechanics (deemed occupation rules, multiple-property nominations, late nominations) are in our <a href="/blog/capital-gains-tax/ppr-relief-calculation-former-home-step-by-step">PRR step-by-step guide</a>.</p>
+
+<h2>The annual exempt amount and rate bands</h2>
+
+<p>The annual exempt amount (AEA) of £3,000 is applied after any in-year and brought-forward losses. Each individual has their own AEA, so jointly owned property can use two AEAs against a single disposal where the owners are spouses or civil partners.</p>
+
+<p>The CGT rate split (18% vs 24%) is determined by reference to total income. The basic-rate band is £37,700 of taxable income (after the personal allowance of £12,570 has been deducted). Where other income (employment, pensions, property profit) does not use the full basic-rate band, the unused portion is filled by the gain at 18%. Any remainder of the gain is taxed at 24%.</p>
+
+<p>Trustees and personal representatives of deceased estates pay 24% throughout with no basic-rate slice.</p>
+
+<h2>The 60-day reporting and payment regime</h2>
+
+<p>UK residents disposing of UK residential property where CGT is due must file a Capital Gains Tax on UK property return and pay the tax within 60 days of completion. Where the gain is fully covered by PRR, capital losses or the AEA, no 60-day filing is required for UK residents.</p>
+
+<p>Non-UK residents must file the 60-day return for every UK land disposal (residential, commercial, indirect interests in UK property-rich entities) regardless of whether tax is due.</p>
+
+<p>The same disposal is reported again on the SA108 capital gains pages of the Self Assessment return where the seller is within Self Assessment. Tax paid through the 60-day return is offset against the final Self Assessment liability. Late filing penalties start at £100 from day 61, with daily and tax-geared penalties stacking thereafter. Full mechanics in our <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">60-day CGT deadlines page</a>.</p>
+
+<h2>Spouse and civil partner transfers</h2>
+
+<p>Transfers between spouses or civil partners are on a no-gain-no-loss basis under section 58 TCGA 1992. The receiving spouse inherits the original base cost. On subsequent sale to a third party, each spouse is taxed on their share. This is one of the most efficient pre-sale planning levers:</p>
+
+<ul>
+<li>Joint ownership doubles the AEA available (two × £3,000)</li>
+<li>A pre-sale transfer to a lower-income spouse can place part of the gain in their basic-rate band at 18%</li>
+<li>Each spouse files their own 60-day return on their share</li>
+<li>The transfer must be a genuine transfer of beneficial ownership before disposal</li>
+</ul>
+
+<p>For an income-mismatched couple, the saving can be material. The mechanics are routine but the timing must be clean: the transfer should be documented before the sale completes, and any Form 17 election (for income tax on joint property) is separate from CGT beneficial ownership and does not on its own change the CGT split.</p>
+
+<h2>Furnished Holiday Lets after the regime's abolition</h2>
+
+<p>The Furnished Holiday Let regime was abolished from 6 April 2025. The pre-abolition CGT advantages (Business Asset Disposal Relief at 10%, full capital allowances) are no longer available for ongoing operations. Disposals of former FHL properties on or after 6 April 2025 are taxed as ordinary residential property: 18%/24% with the £3,000 AEA, no BADR, no capital allowance protections.</p>
+
+<p>Business Asset Disposal Relief itself remains for disposals of qualifying trading businesses, but the rates have risen:</p>
+
+<ul>
+<li>10% up to 5 April 2025</li>
+<li>14% from 6 April 2025</li>
+<li>18% from 6 April 2026</li>
+</ul>
+
+<p>The £1 million lifetime limit on BADR is unchanged. Even where BADR is available, the gap between BADR (18% from April 2026) and standard higher-rate residential CGT (24%) is now narrow.</p>
+
+<h2>Limited company ownership and CGT</h2>
+
+<p>Gains inside a UK limited company are taxed as part of corporation tax at 19% (small profits, augmented profits under £50,000) or 25% (main rate, over £250,000), with marginal relief between. No annual exempt amount. Indexation allowance (frozen at December 2017) may still apply to companies' pre-2018 base costs.</p>
+
+<p>The company route changes the CGT mechanics entirely. The 60-day CGT on UK property service does not apply; gains are reported through the CT600. Extraction of cash gains from the company to the shareholder requires either dividend extraction (dividend tax at 8.75%/33.75%/39.35% above the £500 allowance), a salary, or pension contributions. The combined effective rate on extracted gains can exceed the personal 24%, but for retained gains used for reinvestment, the company route is often cheaper.</p>
+
+<p>The case for incorporation is rarely a pure CGT play. It usually turns on the income tax mechanics (Section 24 mortgage interest restriction for individual residential landlords) and the long-hold compounding effect of corporation tax on retained profits. Detail in our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company complete guide</a>.</p>
+
+<aside>
+<p>Modelling sell-versus-hold-versus-incorporate</p>
+<p>For a portfolio decision, the right framework combines current CGT exposure, ongoing Section 24 cost, future-CGT-on-eventual-disposal, and the incorporation route comparison. The form below routes to a team that runs these models routinely.</p>
+</aside>
+
+<h2>The 2027 outlook</h2>
+
+<p>The April 2027 change announced in the Autumn Budget is the new property income tax rates (22%, 42%, 47% on rental profit), not a CGT change. CGT rates on residential property remain at 18% / 24% with no legislated change for April 2027 as of May 2026. Speculation about further CGT changes has circulated but is not legislated.</p>
+
+<p>The 2027 income tax change still affects disposal-timing decisions because the after-tax economics of continuing to hold change. Detail in our <a href="/blog/capital-gains-tax/cgt-property-2027-rate-changes-uk-landlords">confirmed vs speculated CGT 2027 changes page</a> and our <a href="/blog/capital-gains-tax/2027-property-tax-rates-affect-capital-gains-tax-sales">disposal-timing under the 2027 income tax change page</a>.</p>
+
+<h2>Non-resident landlords</h2>
+
+<p>Non-UK residents have been within UK CGT on UK residential property disposals since April 2015 and on all UK land since April 2019. Key points:</p>
+
+<ul>
+<li>The 60-day return is mandatory for every disposal of UK land, whether or not tax is due</li>
+<li>Rebasing applied at 5 April 2015 for residential property (so the base cost for pre-April 2015 acquisitions is generally the 5 April 2015 market value)</li>
+<li>Rebasing applied at 5 April 2019 for non-residential property and indirect interests in UK property-rich entities</li>
+<li>Double tax treaty relief may apply where the same disposal is also taxed in the country of residence</li>
+<li>UK rates and reliefs broadly apply, including PRR if the property was at some point the non-resident's main residence (subject to the 90-day rule on what counts as residence for PRR purposes)</li>
+</ul>
+
+<h2>Common mistakes</h2>
+
+<ul>
+<li><strong>Missing the 60-day deadline.</strong> Automatic £100 penalty from day 61, escalating thereafter.</li>
+<li><strong>Mis-classifying capital improvements as repairs (or vice versa).</strong> Double-counting an item as both a revenue expense and a base-cost item is a textbook HMRC challenge.</li>
+<li><strong>Forgetting to include SDLT in the base cost.</strong> SDLT paid on acquisition is part of the base cost; many self-prepared computations omit it.</li>
+<li><strong>Mis-computing PRR for former main residences.</strong> The time-apportionment is mechanical but easy to miscount, particularly around the final nine months and multiple-property nomination rules.</li>
+<li><strong>Ignoring spouse split planning.</strong> A pre-sale transfer can save thousands; many sellers complete the sale solely in one name and miss the opportunity.</li>
+<li><strong>Pre-emptive disposals based on un-legislated speculation.</strong> Rushing a sale to avoid a rumoured rate change often costs more than the change itself would have done.</li>
+</ul>
+
+<h2>Authoritative sources</h2>
+
+<ul>
+<li><a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual">HMRC Capital Gains Manual</a> – the authoritative operational reference</li>
+<li><a href="https://www.gov.uk/capital-gains-tax/rates">gov.uk Capital Gains Tax rates</a> – current rates, updated each tax year</li>
+<li><a href="https://www.legislation.gov.uk/ukpga/1992/12">TCGA 1992</a> – the statutory framework on legislation.gov.uk</li>
+<li><a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax">HMRC CGT on UK property service</a> – the filing portal</li>
+<li><a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual">HMRC Property Income Manual</a> – for the income/capital boundary</li>
+</ul>
+
+<p>We update this pillar after each fiscal event. Daughter pages cover specific topics in depth: the <a href="/blog/capital-gains-tax/cgt-calculation-selling-buy-to-let-property-step-by-step">calculation walkthrough</a>, the <a href="/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026">60-day deadlines</a>, the <a href="/blog/capital-gains-tax/ppr-relief-calculation-former-home-step-by-step">PRR step-by-step</a>, the <a href="/blog/capital-gains-tax/cgt-property-2027-rate-changes-uk-landlords">2027 changes</a>, the <a href="/blog/capital-gains-tax/cgt-annual-exempt-amount-3000-allowance-2026-27">£3,000 AEA</a>, and the <a href="/blog/capital-gains-tax/capital-gains-tax-property-sale-uk-2026-rates-allowances">disposal mechanics</a>.</p>
+</content>
+</invoke>

@@ -63,7 +63,7 @@ faqs:
 
 <p>Many property companies outsource bookkeeping, costing £30-£80 per hour or £200-£600 monthly for regular services. Cloud-based bookkeeping platforms like Xero or QuickBooks cost £20-£40 monthly plus setup fees.</p>
 
-<p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> coming for landlords in April 2026, digital bookkeeping systems will become mandatory for companies with property income over £10,000.</p>
+<p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> coming for landlords in April 2026, digital bookkeeping systems will become mandatory for companies with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028).</p>
 
 <h3>Tax Planning and Advisory Services</h3>
 

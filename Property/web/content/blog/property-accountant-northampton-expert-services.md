@@ -14,11 +14,11 @@ summary: "Northampton landlords face complex tax rules including Section 24 rest
 schema: ""
 faqs:
   - question: "Do I need a specialist property accountant in Northampton for a small BTL portfolio?"
-    answer: "Yes, even with 1-2 properties, specialist knowledge is valuable. Section 24 restrictions and MTD requirements (from April 2026 for income over £10,000) affect most landlords. Local expertise helps optimise deductions, ensure compliance, and plan for tax changes. The cost typically saves more than it costs through proper tax planning."
+    answer: "Yes, even with 1-2 properties, specialist knowledge is valuable. Section 24 restrictions and MTD requirements (from April 2026 for qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028)) affect most landlords. Local expertise helps optimise deductions, ensure compliance, and plan for tax changes. The cost typically saves more than it costs through proper tax planning."
   - question: "How does Section 24 affect Northampton landlords specifically?"
     answer: "Section 24 impacts depend on your property values and mortgage levels. In Northampton's £150k-£300k typical range with high loan-to-values, the restriction on mortgage interest relief significantly increases tax bills for higher-rate taxpayers. A specialist can model your specific impact and suggest mitigation strategies like incorporation."
   - question: "What MTD requirements apply to Northampton property investors from 2026?"
-    answer: "Landlords with gross property income over £10,000 must submit quarterly digital updates from April 2026. This includes most BTL investors in Northampton. You'll need compatible software, digital record-keeping, and quarterly submissions instead of annual returns. Professional guidance helps ensure smooth transition and compliance."
+    answer: "Landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must submit quarterly digital updates from April 2026. This includes most BTL investors in Northampton. You'll need compatible software, digital record-keeping, and quarterly submissions instead of annual returns. Professional guidance helps ensure smooth transition and compliance."
   - question: "Should Northampton landlords consider incorporation for tax efficiency?"
     answer: "Incorporation can help mitigate Section 24 impacts, especially for higher-rate taxpayers with mortgaged properties. However, it depends on your total income, property values, and growth plans. Corporation tax rates (19-25%) may be lower than personal rates, but extraction creates additional tax considerations. Professional analysis is essential before deciding."
 ---
@@ -54,7 +54,7 @@ faqs:
 
 <h3>Making Tax Digital (MTD) Requirements</h3>
 
-<p>Landlords with gross property income over £10,000 must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> from 6 April 2026. This affects most Northampton buy-to-let investors and requires quarterly digital submissions, compatible record-keeping software, and digital links between records and submissions.</p>
+<p>Landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> from 6 April 2026. This affects most Northampton buy-to-let investors and requires quarterly digital submissions, compatible record-keeping software, and digital links between records and submissions.</p>
 
 <p>Local landlords managing properties across different Northamptonshire postcodes need systems that can track income and expenses by property while meeting these digital requirements. Your accountant should provide software selection and setup guidance, training on quarterly submissions, and ongoing support for digital record keeping, especially important for landlords with mixed portfolios including residential, commercial, and student properties.</p>
 

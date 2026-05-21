@@ -2,7 +2,7 @@
 title: "How to Use Your £3,000 CGT Annual Exempt Amount in 2026/27"
 slug: "cgt-annual-exempt-amount-3000-allowance-2026-27"
 canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/cgt-annual-exempt-amount-3000-allowance-2026-27"
-date: "2026-04-10"
+date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Capital Gains Tax"
 metaTitle: "CGT Annual Exempt Amount 2026: £3,000 Allowance Guide"
@@ -21,6 +21,20 @@ faqs:
     answer: "No, the £3,000 annual exempt amount applies to your total capital gains for the tax year across all assets. If you sell multiple properties, the allowance covers your combined gains, not each disposal separately."
   - question: "When does the CGT annual exempt amount reset?"
     answer: "The CGT annual exempt amount resets each tax year on 6 April. Your £3,000 allowance for 2026/27 runs from 6 April 2026 to 5 April 2027, then resets for 2027/28 on 6 April 2027."
+  - question: "When does a disposal need reporting to HMRC even if no CGT is due?"
+    answer: "If your total gross disposal proceeds in the tax year exceed four times the annual exempt amount (£12,000 for 2026/27 with the £3,000 exemption), you must report the disposal on your self-assessment return even where the gain falls within the exemption and no tax is due. This trap catches landlords who sell modest assets and assume no reporting is required because there is no tax. Separately, UK residential property disposals where CGT IS due must be reported and paid within 60 days of completion via HMRC's Capital Gains Tax on UK property service."
+  - question: "Has the £3,000 annual exempt amount been confirmed to remain at this level for 2027/28?"
+    answer: "No specific change to the AEA has been announced for 2027/28 as of May 2026, but no confirmation of stability either. The AEA was reduced from £12,300 in 2022/23 to £6,000 in 2023/24 and £3,000 in 2024/25. It has remained at £3,000 since. Treat the £3,000 figure as the planning baseline for 2027/28 until a fiscal event confirms otherwise."
+  - question: "How does the AEA work for trusts?"
+    answer: "Trusts get half the individual annual exempt amount. For 2026/27, the trust AEA is £1,500. Most trusts (with limited exceptions for disabled beneficiary trusts and bare trusts) are caught by the lower figure. This makes trust-held property less efficient for small-gain disposals than direct ownership."
+  - question: "Can I split a property sale into smaller transactions to use multiple AEAs?"
+    answer: "Not easily, and HMRC will scrutinise attempts to do so under the anti-avoidance principle in TCGA 1992. Genuine partial disposals (selling 50% to a co-owner, for example) can use the AEA on each tranche, but a single property sale split into two contracts purely to use two years' AEAs is likely to be treated as a single disposal at the earlier date. The legitimate way to use multiple AEAs is to dispose of different properties in different tax years, or to use spousal transfers to allocate gains across both partners' AEAs in the same year."
+  - question: "Does the AEA apply to corporate landlords?"
+    answer: "No. Limited companies do not receive a CGT annual exempt amount. Company gains are part of the corporation tax computation at 19% (small profits) or 25% (main rate). This is one reason holding properties personally remains attractive for landlords who plan to sell incrementally and use the £3,000 AEA each year, even where the income tax case favours company ownership."
+  - question: "If I have capital losses from prior years, how do they interact with the AEA?"
+    answer: "Brought-forward capital losses are deducted from gains before the AEA. This means the AEA is preserved if you have enough losses to cover the current year's gain. Current-year losses must be set against current-year gains in full (you cannot choose to preserve the AEA by holding losses back). Losses are claimed on the self-assessment return and tracked indefinitely until used."
+  - question: "How does the AEA interact with Principal Private Residence Relief?"
+    answer: "PPR relief is applied first to determine the chargeable gain. The AEA then applies to whatever gain remains after PPR. So a former home with £150,000 of gain, where PPR covers £140,000, leaves a £10,000 chargeable gain. The AEA reduces this to £7,000 taxable at the appropriate CGT rate. The order of operations matters because PPR can sometimes eliminate the gain entirely, making the AEA irrelevant for that disposal."
 ---
 
 <p>The <strong>CGT annual exempt amount 2026</strong> remains at £3,000 per person, unchanged from 2025/26. This means each individual can make capital gains of up to £3,000 in the tax year without paying capital gains tax. For property investors, understanding how to maximise this <strong>CGT allowance £3000</strong> can lead to significant tax savings when selling rental properties or second homes.</p>
@@ -76,8 +90,8 @@ faqs:
 <li>Unused losses carried forward from previous years</li>
 <li>Enhancement expenditure and allowable costs</li>
 </ul>
-<p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> affecting many landlords from April 2026, maintaining accurate records throughout the year rather than at year-end becomes essential.</p>
-<p>You must report capital gains to HMRC even if they fall within your annual exempt amount, provided your total proceeds from disposals exceed £49,200 in the tax year (four times the annual exempt amount). This reporting requirement catches many property investors who assume small gains don't need declaring. The penalty for late reporting can exceed the tax saved, making compliance essential.</p>
+<p>With <a href="/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026">Making Tax Digital for Income Tax</a> now live (from 6 April 2026 for sole-trader landlords above £50,000 gross income), maintaining accurate digital records throughout the year rather than at year-end is essential.</p>
+<p>You must report capital gains to HMRC even if they fall within your annual exempt amount, where your total disposal proceeds exceed four times the annual exempt amount in the tax year. For 2026/27 with the £3,000 exemption, that threshold is £12,000 of gross disposal proceeds (note: gross proceeds, not net gain). This reporting requirement catches many property investors who assume small gains don't need declaring. The penalty for late reporting can exceed the tax saved, making compliance essential. Separately, the 60-day reporting and payment window applies to any UK residential property disposal where CGT is due, via HMRC's <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax" target="_blank" rel="noopener noreferrer">Capital Gains Tax on UK property service</a>.</p>
 
 <h2>Getting Professional Advice</h2>
 <p>CGT planning involves complex interactions between different tax rules, particularly with the upcoming property income tax changes from April 2027. The relatively small £3,000 allowance makes efficiency more important but harder to achieve.</p>

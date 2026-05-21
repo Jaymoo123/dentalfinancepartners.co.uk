@@ -18,7 +18,7 @@ faqs:
   - question: "How much does a property accountant cost in Edinburgh?"
     answer: "Costs typically range from £500-£800 annually for single property owners to £200-£400 per property for larger portfolios. MTD compliance adds £200-£500 annually, while incorporation advice costs £1,500-£3,000. Edinburgh rates may be slightly higher than the UK average due to local market conditions, but the tax savings usually exceed the fees."
   - question: "When should Edinburgh landlords start preparing for Making Tax Digital?"
-    answer: "Preparation should begin immediately if you have gross property income over £10,000. From April 2026, quarterly digital submissions are mandatory, requiring MTD-compatible software and organised record-keeping. Many Edinburgh landlords are behind on preparations, so early action is essential to avoid penalties and ensure smooth compliance."
+    answer: "Preparation should begin immediately if you have qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). From April 2026, quarterly digital submissions are mandatory, requiring MTD-compatible software and organised record-keeping. Many Edinburgh landlords are behind on preparations, so early action is essential to avoid penalties and ensure smooth compliance."
   - question: "How does Section 24 affect Edinburgh landlords specifically?"
     answer: "Section 24 particularly impacts Edinburgh landlords due to high property values and mortgage levels. With average Edinburgh property prices above £300,000, many landlords have substantial mortgage interest that's now restricted to 20% tax relief regardless of their marginal tax rate. This can push effective tax rates above 40% on rental profits, making incorporation or other structures worth considering."
 ---
@@ -50,7 +50,7 @@ faqs:
 
 <h3>Making Tax Digital for Income Tax</h3>
 
-<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becomes mandatory</a> for landlords with gross property income over £10,000. This requires quarterly digital reporting and compatible accounting software. Many Edinburgh landlords are unprepared for these digital requirements, making professional support essential.</p>
+<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becomes mandatory</a> for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This requires quarterly digital reporting and compatible accounting software. Many Edinburgh landlords are unprepared for these digital requirements, making professional support essential.</p>
 
 <h3>Key Dates for 2026-27</h3>
 <ul>

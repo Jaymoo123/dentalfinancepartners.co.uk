@@ -61,7 +61,7 @@ faqs:
 <p>For example, a Stockport landlord with three properties generating £35,000 annual profit might save £2,100 per year through incorporation (assuming 40% personal tax rate versus 19% corporation tax). However, the transfer costs and ongoing complexity might outweigh these savings for smaller portfolios. <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Proper incorporation planning</a> requires detailed financial modelling.</p>
 
 <h2>Making Tax Digital (MTD) Compliance</h2>
-<p>From April 2026, Stockport landlords with gross rental income above £10,000 must comply with Making Tax Digital rules. This means quarterly digital record-keeping and submissions to HMRC, replacing the traditional annual tax return process.</p>
+<p>From April 2026, Stockport landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with Making Tax Digital rules. This means quarterly digital record-keeping and submissions to HMRC, replacing the traditional annual tax return process.</p>
 <p>Many landlords underestimate the operational changes required, including implementing digital bookkeeping systems replacing spreadsheets, making quarterly profit and loss submissions, and submitting annual end-of-period statements. A Stockport property accountant can help implement appropriate MTD-compliant software solutions and establish processes to ensure compliance, potentially advising on whether voluntarily joining MTD early might provide tax planning opportunities.</p>
 
 <h2>Strategic Landlord Tax Advice and Portfolio Management</h2>

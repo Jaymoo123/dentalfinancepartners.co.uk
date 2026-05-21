@@ -18,7 +18,7 @@ faqs:
   - question: "How much does a property accountant cost in Norwich?"
     answer: "Property accountant fees in Norwich typically range from £500-£1,500 annually for basic landlord services, depending on portfolio size and complexity. Incorporation advice, MTD setup, and complex planning work cost extra. Most landlords find the tax savings and compliance support justify the fees, especially with Section 24 restrictions and upcoming MTD requirements."
   - question: "What should Norwich landlords do to prepare for Making Tax Digital in 2026?"
-    answer: "Norwich landlords with over £10,000 gross rental income must start preparing now for MTD. This includes choosing compatible software, establishing digital record-keeping systems, and understanding quarterly submission requirements. A property accountant can recommend suitable software, set up compliant systems, and handle ongoing submissions from April 2026 onwards."
+    answer: "Norwich landlords with over £50,000 gross rental income must start preparing now for MTD. This includes choosing compatible software, establishing digital record-keeping systems, and understanding quarterly submission requirements. A property accountant can recommend suitable software, set up compliant systems, and handle ongoing submissions from April 2026 onwards."
   - question: "Should Norwich landlords consider limited company incorporation for their buy-to-let properties?"
     answer: "Many Norwich landlords benefit from incorporation, especially higher rate taxpayers affected by Section 24. Companies pay 19% corporation tax on profits up to £250,000, often saving significant tax compared to 40%+ personal rates. However, incorporation involves SDLT costs, ongoing administration, and exit considerations. Professional analysis helps determine if incorporation suits your specific circumstances and goals."
 ---
@@ -58,7 +58,7 @@ faqs:
 
 <h2>Preparing for Making Tax Digital (MTD)</h2>
 
-<p>From April 2026, landlords with gross property income over £10,000 must comply with Making Tax Digital for Income Tax. This represents a significant administrative change for most Norwich property investors.</p>
+<p>From April 2026, landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with Making Tax Digital for Income Tax. This represents a significant administrative change for most Norwich property investors.</p>
 
 <p>MTD requirements include:</p>
 <ul>

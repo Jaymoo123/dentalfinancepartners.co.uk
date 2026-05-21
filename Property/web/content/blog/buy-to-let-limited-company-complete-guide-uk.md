@@ -1,172 +1,296 @@
 ---
-title: "Buy-to-Let Limited Company: Complete Guide UK"
+title: "Buy-to-Let Limited Company: Complete Guide UK 2026"
 slug: "buy-to-let-limited-company-complete-guide-uk"
 canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk"
-date: "2026-04-01"
+date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
-metaTitle: "Buy-to-Let Limited Company UK 2026 | Tax Guide"
-metaDescription: "A BTL limited company pays 25% corporation tax vs up to 45% income tax personally. Setup costs, Section 24 benefits, and when it pays off."
+metaTitle: "Buy-to-Let Limited Company UK: Tax, SDLT, S162 Relief, ATED"
+metaDescription: "Complete BTL limited company guide. Corporation tax 19-25%, full mortgage interest deduction, SDLT 5% on transfer, Section 162 relief, ATED, dividend strategy."
 altText: "UK landlord reviewing buy-to-let limited company paperwork at desk with property documents"
 image: ""
-h1: "Buy-to-Let Limited Company: Complete Guide UK"
-summary: "A comprehensive guide covering everything UK landlords need to know about operating through a buy-to-let limited company, including tax benefits and setup requirements."
+h1: "Buy-to-Let Limited Company: Complete Guide UK 2026"
+summary: "Everything UK landlords need to know about operating buy-to-let through a limited company in 2026. Corporation tax (19% to 25%), full mortgage interest deduction inside the company, dividend extraction strategy, SDLT cost on transfer (now 5% additional dwellings surcharge), Section 162 incorporation relief, ATED on properties above £500,000, mortgage market access, and the worked maths showing where the company route pays and where it does not."
 schema: ""
 faqs:
-  - question: "What are the main tax benefits of a buy-to-let limited company?"
-    answer: "The primary benefits include full mortgage interest relief (avoiding Section 24 restrictions), lower corporation tax rates (19-25% vs up to 45% income tax), and the ability to retain profits within the company for reinvestment. Companies also offer more flexibility for profit extraction through dividends and salaries."
-  - question: "How much does it cost to set up and run a buy-to-let company?"
-    answer: "Setup costs are relatively low (£12-50 for incorporation), but ongoing costs include accounting fees (£500-2000+ annually), corporation tax returns, annual accounts filing, and business banking charges (£5-20 monthly). Total annual compliance costs typically range from £1,000-3,000 depending on complexity."
-  - question: "Can I transfer my existing rental properties into a company?"
-    answer: "Yes, but this typically triggers capital gains tax and stamp duty land tax, plus requires mortgage lender consent. Many landlords choose to keep existing properties personally and use the company structure for new acquisitions to avoid these costs and complications."
-  - question: "When does a buy-to-let company not make sense?"
-    answer: "Companies may not be worthwhile for basic rate taxpayers with low borrowings, those wanting to extract all profits immediately, or landlords with only 1-2 properties. The additional compliance costs and complexity can outweigh the tax benefits in these situations."
+  - question: "When does a buy-to-let limited company actually save tax?"
+    answer: "It saves tax most reliably for higher rate (40%) and additional rate (45%) individual landlords with significant mortgage interest, who intend to retain profits inside the company for reinvestment rather than extracting everything as personal income. For a basic rate landlord with no mortgage, a company structure often costs more than it saves once compliance fees, mortgage rate premium, and dividend extraction tax are factored in. The break-even calculation depends on five variables: marginal income tax rate, mortgage interest amount, intended profit retention, planning horizon, and the latent capital gain in existing properties."
+  - question: "What corporation tax rates apply to a property company?"
+    answer: "For 2025-26 and 2026-27, the small profits rate is 19% on profits up to £50,000, marginal relief applies between £50,000 and £250,000 (effective rate around 26.5% in the marginal band), and the main rate is 25% on profits above £250,000. The £50,000 and £250,000 thresholds are divided between associated companies (broadly companies under common control). Two associated companies share the bands, so the small profits rate window halves to £25,000 each."
+  - question: "Can I transfer my existing personally-owned properties into a company?"
+    answer: "Yes, but the transfer is a disposal at market value for CGT and a purchase at market value for SDLT, both potentially expensive. Section 162 incorporation relief can roll the CGT into the new shares (deferring it until you sell the shares), but only if the property business meets the 'business' test, broadly meaning five or more properties actively managed with significant time commitment. SDLT applies at full residential rates including the 5% additional dwellings surcharge (raised from 3% on 31 October 2024). Partnership-route transfers using SDLT Schedule 15 can mitigate the SDLT cost where the structure qualifies. Mortgage lender consent is also required and frequently refused on existing personal-name BTL mortgages."
+  - question: "What is the dividend tax cost when extracting profits from a property company?"
+    answer: "For 2025-26 the dividend allowance is £500 (reduced from £1,000 in 2024-25 and £2,000 in 2023-24). Dividend rates above the allowance are 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate). On £30,000 of dividends to a higher rate taxpayer with no other dividend income, the personal tax cost is roughly £9,800 on top of the corporation tax already paid by the company. This 'double tax' is the main offset against the company's headline rate advantage and the reason companies favour profit retention or pension funding over heavy dividend extraction."
+  - question: "Are mortgage rates higher for limited company buy-to-let?"
+    answer: "Yes, typically 0.5% to 1.0% above equivalent personal-name BTL rates, and the lender pool is smaller (around 20 to 25 active company lenders versus 60+ personal-name lenders). Deposit requirements are usually 25% minimum, sometimes 30% or 35% on HMOs or multi-unit blocks. Most lenders also require personal guarantees from directors and a clean credit history. The rate gap has narrowed substantially since 2020 as the market matured, but it has not disappeared. Always model the post-tax cash flow on both routes before fixing the structure."
+  - question: "What is Section 162 incorporation relief and how does it work?"
+    answer: "Section 162 TCGA 1992 lets you defer (roll over) the capital gain on transferring a property business to a company in exchange for shares. The deferred gain reduces the base cost of the shares received. It is available only where the activity transferred is a 'business' rather than mere investment. HMRC and the courts have generally accepted that managing five or more rental properties with significant active involvement (selecting tenants, day-to-day management, refurbishment decisions) qualifies. Fewer than five properties can sometimes qualify if intensity is unusually high. The relief covers CGT but not SDLT, so SDLT remains payable at full residential rates including the 5% surcharge."
+  - question: "What is ATED and when does it apply to my property company?"
+    answer: "Annual Tax on Enveloped Dwellings applies where a company (or partnership with a corporate partner, or collective investment scheme) owns a UK residential dwelling worth more than £500,000. The charge is a fixed annual amount banded by property value (currently around £4,500 for £500,000 to £1m, up to about £290,000 for properties over £20m). Almost all ordinary BTL companies are exempt because they let to unconnected third parties for commercial rent, which falls within the rental business exemption. You still must file the ATED return claiming the exemption every year. Missing the filing triggers a £100 penalty even where no tax is due."
+  - question: "Does MTD for Income Tax Self Assessment apply to my property company?"
+    answer: "No. MTD for ITSA applies only to sole-trader landlords and unincorporated landlords filing through SA105. Limited company property income is reported through the annual CT600 corporation tax return, which is unaffected by MTD for ITSA. A separate regime, MTD for Corporation Tax, has been mooted but has no confirmed start date and is widely expected to be delayed to 2030 or later. Director extractions (salary, dividends) appear on personal self assessment as employment and dividend income, also outside MTD for ITSA."
+  - question: "Should I use a single company or a group structure for my portfolio?"
+    answer: "Most landlords with up to 10 to 15 properties use a single trading company. Beyond that, a group structure (holding company plus SPV subsidiaries, one per property or property cluster) starts to make sense for three reasons: ring-fenced risk per SPV, easier sale of individual properties via share sale (potential SDLT saving for the buyer), and easier external investor or family share structures. The trade-off is more compliance (one CT600 per company) and more associated-companies division of the corporation tax bands. Group relief between members can mitigate that."
+  - question: "What is the cost of running a property company year on year?"
+    answer: "Incorporation: £12 directly at Companies House, or £50 to £100 through a formation agent. Annual costs typically include accountancy and corporation tax return (£1,200 to £3,500 depending on portfolio size and bookkeeping needs), Companies House confirmation statement (£34), business bank account fees (£0 to £30 a month), Director's payroll if used (£200 to £500 a year), and registered office (£0 to £150 a year if outsourced). Total fixed compliance cost for a small property company sits around £1,500 to £3,000 a year, against which you need a tax saving meaningful enough to justify the structure."
+  - question: "Can I pay my children dividends from the property company?"
+    answer: "Only if they are genuine adult shareholders (over 18) holding ordinary shares with full dividend rights. Anti-avoidance rules (the settlements legislation) catch arrangements that pay dividends to minor children of the donor, and HMRC will reattribute that income to the parent. For adult children in lower tax bands, alphabet share structures (separate share classes per family member with flexible dividend declarations) are commonly used. Get this set up with proper legal documentation, badly drafted alphabet share schemes have lost in court multiple times."
+  - question: "What happens to a property company on my death?"
+    answer: "The shares in the company form part of your estate for inheritance tax. Business Relief at 100% does not apply to investment companies (a BTL company is an investment business, not a trading business for BPR purposes), so the company shares are valued at fair market value and IHT is potentially payable at 40% above the nil-rate band. This is a common misunderstanding: incorporation does not deliver IHT savings on its own. IHT planning around a property company usually involves trusts, life assurance, or strategic gifting of shares during life. See our IHT on rental property guide for the mechanics."
+  - question: "How long does it take to incorporate an existing property portfolio?"
+    answer: "From decision to completion, expect three to six months for a portfolio of five to ten properties. Steps include: tax modelling and structure decision (two to four weeks), company incorporation and bank account (one to two weeks), mortgage refinancing to company-name BTL mortgages (six to twelve weeks per lender, often the bottleneck), legal property transfers including SDLT returns and Land Registry updates (two to four weeks each), and post-transfer CGT and SDLT compliance. The mortgage refinance window is the realistic gating factor for most landlords."
+  - question: "What if HMRC challenges my incorporation as not qualifying for Section 162 relief?"
+    answer: "If HMRC successfully argues the activity was not a 'business' (it was passive investment rather than active management), Section 162 relief is denied and the full latent capital gain crystallises at the date of transfer. CGT is then due at 18% or 24%, with the 60-day reporting and payment deadline running from completion. For a transfer of properties with £500,000 of latent gains, the tax cost can be £90,000 to £120,000 unexpectedly. Mitigation routes are limited once incorporation is complete. The best protection is documented evidence of business activity (time records, management decisions, refurbishment involvement) before transfer, plus advance clearance with HMRC where the case is borderline."
+  - question: "Can I use a property company to fund my pension?"
+    answer: "Yes. A company contribution to your personal pension is deductible against corporation tax (within the standard annual allowance of £60,000 for 2025-26, or unused carry-forward from the previous three years). This extracts company value into your pension wrapper at 19% to 25% tax cost (the corporation tax saved by deducting the contribution) rather than the 33.75% or 39.35% dividend tax on equivalent extraction. SSAS and SIPP pensions can also be used to purchase commercial property (not residential) that the company can then lease back, generating tax-deductible rent flowing into the pension."
 ---
 
-<p>Operating a <strong>buy to let limited company</strong> has become increasingly popular among UK landlords since the introduction of Section 24 <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-mortgage-options">mortgage</a> interest restrictions. This comprehensive guide explains when incorporation makes sense, the tax benefits available, and the practical steps involved.</p>
+<p>Operating buy-to-let through a UK limited company has gone from niche to mainstream since Section 24 finance cost restrictions fully phased in for the 2020-21 tax year. By the time you read this in 2026, the majority of new BTL purchases by professional landlords are made through a limited company, and a substantial minority of existing personal-name portfolios have already been incorporated. The economic case is real for the right landlord. It is not universal and it is not free. This guide explains when the company route saves real money, when it costs more than it saves, and how to navigate the practical steps if you decide it is right for your portfolio.</p>
 
-<p>For many property investors, the decision to operate through a company structure rather than as an individual can significantly reduce their overall tax burden. However, it's not the right choice for everyone.</p>
+<h2>The fundamentals: what changes when you hold BTL through a company</h2>
 
-<h2>What Is a Buy-to-Let Limited Company and When Does It Make Sense?</h2>
+<p>A buy-to-let limited company is a UK company (typically incorporated under Companies Act 2006) whose business is to own and let residential property. The company is the legal owner of each property. It collects rent, pays expenses, accrues profit, pays corporation tax on that profit, and distributes any surplus to its shareholders as dividends. You as a shareholder hold a separate personal tax obligation for the dividends and any salary the company pays you.</p>
 
-<p>A <strong>buy to let limited company</strong> is a UK limited company set up specifically to own and manage rental properties. The company pays corporation tax on its profits instead of the landlord paying income tax personally. This structure separates your property business from your personal finances. The company owns the properties, collects the rent, pays the expenses, and you typically draw money out as dividends or salary.</p>
+<p>Four core differences from personal ownership:</p>
 
-<p>Key characteristics include:</p>
 <ul>
-<li>Properties are owned by the company, not you personally</li>
-<li>Rental income is subject to corporation tax (19% or 25%)</li>
-<li>Full mortgage interest relief is available</li>
-<li>Profits can be retained within the company</li>
+<li><strong>Tax rate.</strong> Profits suffer corporation tax (19% to 25%) inside the company, not your personal marginal rate (up to 45%) directly. Extraction as dividends incurs a further 8.75% to 39.35% personal tax.</li>
+<li><strong>Mortgage interest.</strong> Fully deductible against company profit. Section 24 finance cost restriction does not apply to companies.</li>
+<li><strong>Capital gains.</strong> Company gains are taxed at the corporation tax rate (no separate CGT rates for companies). The company has no annual exempt amount equivalent to the £3,000 personal CGT AEA.</li>
+<li><strong>Compliance.</strong> Annual statutory accounts at Companies House, an annual CT600 return to HMRC, a confirmation statement, and (where directors take salary) payroll. None of this is hard, but it is real cost.</li>
 </ul>
 
-<p>This structure typically works best when:</p>
+<h2>When the limited company route saves tax</h2>
+
+<p>The company case is strongest for landlords who tick most of these boxes:</p>
+
 <ul>
-<li>You're a higher-rate taxpayer (40% or 45%)</li>
-<li>You have significant mortgage borrowings</li>
-<li>You want to reinvest profits rather than extract all income</li>
-<li>You're building a substantial property portfolio</li>
-<li>You want to involve family members or business partners</li>
-</ul>
-<p>For basic rate taxpayers with low borrowings, the benefits may be minimal once you factor in additional compliance costs and complexity.</p>
-
-<h2>Tax Benefits of Buy-to-Let Companies</h2>
-
-<h3>Section 24 Relief</h3>
-
-<p>The biggest advantage is avoiding Section 24 mortgage interest restrictions. Companies can still claim full mortgage interest as a tax-deductible expense, while individual landlords are limited to a 20% tax credit.</p>
-
-<p>For example, a landlord with £20,000 annual mortgage interest who pays 40% income tax would save approximately £4,000 per year by operating through a company structure.</p>
-
-<h3>Corporation Tax Rates and Returns</h3>
-
-<p>Corporation tax rates for 2025/26 are:</p>
-<ul>
-<li>19% on profits up to £50,000 (small profits rate)</li>
-<li>Marginal rate between £50,000 and £250,000</li>
-<li>25% on profits above £250,000 (main rate)</li>
-</ul>
-<p>This compares favourably to income tax rates of 20%, 40%, or 45% for individual landlords.</p>
-<p>Companies must file CT600 corporation tax returns within 12 months of the accounting year end. From April 2026, quarterly reporting will be required under Making Tax Digital rules.</p>
-
-<h3>Profit Retention</h3>
-
-<p>Companies can retain profits within the business without immediate personal tax consequences. This allows for reinvestment in additional properties or building cash reserves for maintenance and improvements.</p>
-
-<h2>Setting Up Your Property Company</h2>
-
-<h3>Company Formation</h3>
-
-<p>Setting up a limited company costs £12 if done directly with Companies House, or typically £20-50 through formation agents who can complete the process faster.</p>
-
-<p>You'll need to choose:</p>
-<ul>
-<li>Company name (must be unique and appropriate)</li>
-<li>Registered office address</li>
-<li>Directors and shareholders</li>
-<li>Share capital structure</li>
+<li>Higher rate (40%) or additional rate (45%) personal income taxpayer</li>
+<li>Material mortgage interest cost that would otherwise be restricted under Section 24</li>
+<li>Intention to retain profit inside the business for portfolio growth rather than extract everything personally</li>
+<li>Long planning horizon (5+ years), so amortising one-off setup costs makes sense</li>
+<li>No large latent capital gains in existing personally-held property (so the transfer cost, even with Section 162 relief, does not dwarf the future tax saving)</li>
 </ul>
 
-<h3>Business Bank Account</h3>
+<p>The company case weakens or breaks for:</p>
 
-<p>You'll need a separate business bank account. Most banks charge monthly fees of £5-20 for business accounts, plus transaction charges.</p>
+<ul>
+<li>Basic rate (20%) personal income taxpayers (Section 24 is less punitive, dividend extraction adds tax not present in personal route)</li>
+<li>Landlords planning to live off all rental income personally (extraction tax eats the advantage)</li>
+<li>One- or two-property landlords whose annual compliance cost exceeds the tax saving</li>
+<li>Landlords with large latent gains, where Section 162 relief is unavailable or uncertain</li>
+<li>Landlords planning to sell within 1 to 2 years (transaction costs do not amortise)</li>
+</ul>
 
-<h3>Professional Support</h3>
+<h2>Worked comparison: personal versus company over 10 years</h2>
 
-<p>Given the complexity involved, most landlords benefit from professional advice on structure and ongoing compliance. Our <a href="/incorporation">incorporation services</a> can help you set up the right structure for your circumstances.</p>
+<p>Assumptions: a higher rate landlord (40% marginal) acquires £600,000 of property with £400,000 of interest-only mortgage at 5.5% (£22,000 a year interest). Gross annual rent £36,000. Other expenses (insurance, agent, repairs, council tax voids) £4,000.</p>
 
-<h2>Ongoing Compliance Requirements</h2>
+<table>
+<thead>
+<tr><th>Position</th><th>Personal ownership</th><th>Limited company ownership</th></tr>
+</thead>
+<tbody>
+<tr><td>Gross rent</td><td>£36,000</td><td>£36,000</td></tr>
+<tr><td>Less other expenses</td><td>(£4,000)</td><td>(£4,000)</td></tr>
+<tr><td>Less mortgage interest (allowable inside company only)</td><td>n/a</td><td>(£22,000)</td></tr>
+<tr><td>Taxable profit</td><td>£32,000</td><td>£10,000</td></tr>
+<tr><td>Tax at 40% (personal) / 19% (company small profits rate)</td><td>£12,800</td><td>£1,900</td></tr>
+<tr><td>Section 24 tax reducer (£22,000 × 20%)</td><td>(£4,400)</td><td>n/a</td></tr>
+<tr><td><strong>Net tax in the year (before any extraction)</strong></td><td><strong>£8,400</strong></td><td><strong>£1,900</strong></td></tr>
+<tr><td>Net cash after tax (profit £10,000 minus tax)</td><td>£1,600</td><td>£8,100</td></tr>
+<tr><td>If all retained company profit later extracted as dividend (higher rate)</td><td>n/a</td><td>£8,100 × 33.75% = £2,734</td></tr>
+<tr><td><strong>Net cash after eventual dividend extraction</strong></td><td><strong>£1,600</strong></td><td><strong>£5,366</strong></td></tr>
+</tbody>
+</table>
 
-<h3>Annual Accounts</h3>
+<p>Result: the company route gives roughly £3,766 more net annual cash even after full dividend extraction. If profit is retained inside the company rather than dragged out personally, the advantage rises to £6,500 per year. Over 10 years, that compounds materially when reinvested in additional properties.</p>
 
-<p>You must prepare and file annual accounts with Companies House within 9 months of the year end. Most property companies qualify as micro-entities, allowing abbreviated accounts.</p>
+<p>The picture changes if the landlord is basic rate or holds the property mortgage-free. A basic rate landlord with no mortgage on the same property would pay £6,400 personal tax versus £1,900 corporation tax plus eventual £2,734 dividend tax (total £4,634), saving roughly £1,766 a year, which barely covers the additional compliance cost.</p>
 
-<h3>Confirmation Statement</h3>
+<h2>Section 24 and why the company route exists</h2>
 
-<p>An annual confirmation statement must be filed with Companies House, costing £13 when filed online.</p>
+<p>Since the 2020-21 tax year, personally-held BTL mortgage interest, broker fees, and arrangement fees are no longer deductible against rental profit. They convert to a 20% basic-rate tax reducer applied to your personal income tax bill. For a 40% higher rate landlord, this halves the effective relief on every pound of mortgage interest. For a 45% additional rate landlord with very high mortgages, the effective tax rate on rental income can exceed 100% (paying more tax than the property generates in profit).</p>
 
-<h2>Extracting Money from Your Company</h2>
+<p>Section 24 does not apply to limited companies. Companies deduct mortgage interest in full against company profit, as they always have. This is the single largest driver of incorporation activity since 2016. See our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 pillar guide</a> for the underlying mechanics.</p>
 
-<p>There are several ways to take money from your <strong>buy to let limited company</strong>:</p>
+<h2>Corporation tax bands and how they bite</h2>
+
+<p>For 2025-26 and 2026-27:</p>
+
+<ul>
+<li><strong>Small profits rate:</strong> 19% on profits up to £50,000</li>
+<li><strong>Marginal relief:</strong> profits between £50,000 and £250,000, effective rate roughly 26.5% in the marginal band</li>
+<li><strong>Main rate:</strong> 25% on profits above £250,000</li>
+</ul>
+
+<p>The £50,000 and £250,000 thresholds are divided by the number of associated companies. Two associated companies (broadly companies under common control by you or your associates) halve those thresholds to £25,000 and £125,000. Three associated companies reduce them to £16,667 and £83,333. This catches landlords who set up one company per property (an SPV-per-asset structure) without thinking through the associated-companies position.</p>
+
+<p>Practical implication: most single-company BTL portfolios with rental profits below £50,000 a year pay corporation tax at the flat 19% small profits rate. Once profit climbs above £50,000, the marginal rate kicks in. A 10-property portfolio generating £80,000 net profit pays roughly £18,950 at the small profits rate plus the marginal band, an effective rate around 23.7%.</p>
+
+<h2>Extracting money: dividends, salary, pension, and loans</h2>
 
 <h3>Salary</h3>
 
-<p>Pay yourself a salary up to the personal allowance (£12,570 in 2025/26) to avoid income tax and National Insurance. The company can claim this as a deductible expense.</p>
+<p>A small director salary up to the National Insurance secondary threshold (around £9,100 in 2025-26) sits inside personal allowance with no income tax and no employee NIC, and the company can deduct it as an expense. Salary above that threshold attracts employer NIC at 15% (rate increased on 6 April 2025) plus employee NIC and income tax. For most property company directors a salary at or just below the secondary threshold is optimal.</p>
 
 <h3>Dividends</h3>
 
-<p>Dividends are typically the most tax-efficient extraction method. You pay dividend tax of 8.75% (basic rate) or 33.75% (higher rate) on dividends above the £1,000 annual allowance.</p>
-
-<h3>Loans</h3>
-
-<p>You can borrow money from your company, but loans over £10,000 create benefit-in-kind charges, and loans not repaid within 9 months trigger additional corporation tax.</p>
-
-<h2>Transferring Existing Properties</h2>
-
-<p>Moving existing properties into a company structure typically triggers capital gains tax, stamp duty, and mortgage consent requirements. The process can be complex and costly.</p>
-
-<p>Options include:</p>
-<ul>
-<li>Direct transfer (triggers CGT and SDLT)</li>
-<li>Incorporation relief (limited circumstances)</li>
-<li>Using the company for new purchases only</li>
-</ul>
-
-<p>Many landlords choose to keep existing properties personally and use companies for new acquisitions to avoid these complications.</p>
-
-<h2>Mortgage Considerations</h2>
-
-<p>Buy-to-let mortgages for companies typically have:</p>
-<ul>
-<li>Higher interest rates (0.5-1% premium)</li>
-<li>Larger deposit requirements (25-30% minimum)</li>
-<li>Personal guarantees from directors</li>
-<li>More limited lender choice</li>
-</ul>
-
-<p>However, the full mortgage interest relief often outweighs these additional costs for higher-rate taxpayers.</p>
-
-<h2>Common Mistakes to Avoid</h2>
-
-<p>Typical pitfalls include:</p>
-<ul>
-<li>Not considering all costs before incorporating</li>
-<li>Mixing personal and company finances</li>
-<li>Inadequate record keeping</li>
-<li>Failing to plan extraction strategies</li>
-<li>Not reviewing the structure regularly</li>
-</ul>
-
-<h2>Getting Professional Help</h2>
-
-<p>The decision to operate through a <strong>buy to let limited company</strong> depends on your specific circumstances, including income levels, borrowing requirements, and investment goals.</p>
-
-<p>Professional advice is essential to ensure you choose the right structure and comply with all requirements. Our team specialises in helping property investors navigate these decisions. Contact us through our <a href="/services">services page</a> to discuss your specific situation.</p>
-
-<p>Remember that tax rules change regularly, and what works today may not be optimal in future years. Regular reviews of your structure ensure you continue to operate efficiently as your portfolio grows.</p>
-
-<h2>Related Reading</h2>
+<p>Dividends are paid from post-corporation-tax retained profits. The dividend allowance is £500 (reduced from £1,000 in 2024-25 and £2,000 in 2023-24). Dividend tax rates above the allowance:</p>
 
 <ul>
-<li><a href="/blog/incorporation-and-company-structures/limited-company-vs-personal-ownership-tax-comparison-2026">Limited Company vs. Personal Ownership: UK Property Tax Comparison 2026</a></li>
-<li><a href="/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio">Incorporation Timing: When is the Right Time to Incorporate Your Property Portfolio?</a></li>
+<li>Basic rate: 8.75%</li>
+<li>Higher rate: 33.75%</li>
+<li>Additional rate: 39.35%</li>
 </ul>
+
+<p>The 'double tax' nature of company extraction (corporation tax then dividend tax) is the main reason the company route is less attractive for landlords who plan to extract all profits each year. The combined effective rate on extracted income for a higher rate shareholder is roughly 40% to 45%, similar to personal ownership before factoring in the Section 24 cost.</p>
+
+<h3>Pension contributions</h3>
+
+<p>The company can make pension contributions on the director's behalf into a personal pension, SIPP, or SSAS, deductible against corporation tax. Annual allowance is £60,000 for 2025-26 (plus any unused carry-forward from the previous three tax years). This is often the most tax-efficient extraction route: 19% to 25% deduction inside the company, zero personal tax going in, taxed only when drawn in retirement (often at lower personal rates).</p>
+
+<h3>Director's loan account</h3>
+
+<p>Money you put into the company (e.g., your initial deposit funds, top-ups to cover voids) sits as a Director's Loan Account credit. You can draw it back out tax-free until exhausted. Borrowing more than you have lent (an overdrawn DLA) triggers a Section 455 charge of 33.75% of the outstanding balance nine months and one day after year end, refundable when the loan is repaid. Loans above £10,000 also create a benefit-in-kind income tax charge unless interest at the official rate is paid by you to the company.</p>
+
+<aside>
+<p>Considering incorporation but unsure if the maths works for your portfolio?</p>
+<p>We model the 10-year after-tax position for both personal and company ownership using your actual figures (rental income, mortgage interest, marginal tax rate, latent gains, retention plans). Send your last self assessment and current mortgage statements using the form below.</p>
+</aside>
+
+<h2>Transferring existing properties: Section 162 relief, SDLT, and mortgage refinancing</h2>
+
+<p>Moving personally-held properties into a new company is technically straightforward (a sale at market value to the company) but tax-expensive without the right reliefs.</p>
+
+<h3>CGT and Section 162 incorporation relief</h3>
+
+<p>The transfer is a disposal at market value. CGT applies on any gain over the original purchase price at 18% or 24%. Section 162 TCGA 1992 lets you defer the gain by rolling it into the new shares received, provided the business test is met. HMRC's published guidance (see the <a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual">HMRC Capital Gains Manual</a>) and the Ramsay v HMRC case (2013) suggest the test is met where the activity is more than passive investment, with the rule of thumb being five or more properties actively managed with significant personal time committed.</p>
+
+<p>Where Section 162 applies, the entire latent gain rolls over with no immediate CGT. The deferred gain reduces the share base cost, so it crystallises when you eventually sell the company shares.</p>
+
+<h3>SDLT cost</h3>
+
+<p>Section 162 relief does NOT cover SDLT. Each property transfer is treated as a market-value acquisition by the company, with SDLT at full residential rates including the 5% additional dwellings surcharge (raised from 3% on 31 October 2024).</p>
+
+<p>For a portfolio of five properties at £300,000 each, total SDLT cost on incorporation is roughly:</p>
+
+<ul>
+<li>Per property standard SDLT (post-1 April 2025 bands): £5,000</li>
+<li>Per property 5% surcharge: £15,000</li>
+<li>Total per property: £20,000</li>
+<li>Five-property total SDLT: £100,000</li>
+</ul>
+
+<p>This is the largest single cost of incorporation for most landlords and the main reason many delay or avoid the transfer despite the recurring tax saving.</p>
+
+<h3>SDLT Schedule 15 partnership route</h3>
+
+<p>Where the existing structure is a true partnership (a property partnership registered with HMRC, with a formal partnership agreement, joint bank account, joint marketing, etc.) for at least one year before incorporation, SDLT Schedule 15 provides a connected-persons relief that can reduce or eliminate the SDLT charge on transfer to a partnership-owned company. The detail is technical and HMRC challenges aggressive use of this route. Take specialist advice before relying on it.</p>
+
+<h3>Mortgage refinancing</h3>
+
+<p>Existing personal-name BTL mortgages must be redeemed at the point of transfer. The company then arranges new company-name BTL mortgages on each property. Lender pool is smaller (around 20 to 25 active company lenders), rates are typically 0.5% to 1.0% higher, deposit requirements are 25% minimum (often more). Existing lenders may refuse consent to transfer or impose early redemption charges. This is usually the bottleneck on incorporation timing.</p>
+
+<h2>ATED (Annual Tax on Enveloped Dwellings)</h2>
+
+<p>ATED applies where a company (or partnership with a corporate partner, or a collective investment scheme) owns a UK residential dwelling worth more than £500,000 on the relevant valuation date. The annual charge is banded:</p>
+
+<table>
+<thead>
+<tr><th>Property value band (2025-26)</th><th>Annual ATED charge (approximate)</th></tr>
+</thead>
+<tbody>
+<tr><td>£500,001 to £1m</td><td>£4,500</td></tr>
+<tr><td>£1m to £2m</td><td>£9,150</td></tr>
+<tr><td>£2m to £5m</td><td>£31,050</td></tr>
+<tr><td>£5m to £10m</td><td>£72,700</td></tr>
+<tr><td>£10m to £20m</td><td>£145,950</td></tr>
+<tr><td>Over £20m</td><td>£292,350</td></tr>
+</tbody>
+</table>
+
+<p>Most ordinary BTL companies are exempt under the rental business exemption (property let on a commercial basis to unconnected third parties). You still must file the annual ATED return by 30 April each year, claiming the exemption. Missing this filing triggers a £100 penalty rising further with continued delay, even where no tax is due.</p>
+
+<h2>SPVs, group structures, and family share arrangements</h2>
+
+<h3>Single trading company versus SPV-per-property</h3>
+
+<p>Most portfolios use a single trading company until they grow past 10 to 15 properties. An SPV-per-property structure (one company per asset, often held under a parent holding company) becomes useful for ring-fenced lender risk, easier individual property sale via share transfer (potentially saving the buyer SDLT), and easier external investor or family participation per property. The cost is more compliance (one CT600 per company) and harder corporation tax band utilisation (associated companies division).</p>
+
+<h3>Holding company structures</h3>
+
+<p>A holding company that owns the shares of multiple trading SPVs allows group relief between members (one SPV's losses offset another's profits in the same period), VAT grouping where relevant, and cleaner external finance at the holding level. Holding companies do not give automatic Inheritance Tax advantages for residential BTL businesses.</p>
+
+<h3>Alphabet shares and family income shifting</h3>
+
+<p>Issuing separate share classes (A, B, C, D shares) to different family members with flexible dividend rights lets the company declare dividends differently across classes each year. Adult children in lower tax bands can take dividends at 8.75% basic rate instead of the principal shareholder taking them at 33.75% or 39.35%. This works only for genuinely adult shareholders (over 18) and must be documented carefully, the settlements legislation (anti-avoidance rules) and recent HMRC challenges have caught some poorly drafted schemes.</p>
+
+<h2>Inheritance tax: a common misunderstanding</h2>
+
+<p>Incorporation does NOT, on its own, reduce inheritance tax on a residential BTL business. Business Relief at 100% requires the underlying business to be a trade, not an investment. A residential letting business is treated as investment activity for IHT purposes regardless of how active the management. So shares in a BTL company are valued at market value in your estate and face IHT at 40% above the nil-rate band.</p>
+
+<p>Effective IHT planning on a property portfolio uses trusts (gift into a discretionary trust as a Potentially Exempt Transfer, with a seven-year survival requirement), life assurance written in trust, or strategic lifetime gifting of company shares. See our <a href="/blog/inheritance-tax/inheritance-tax-rental-property-uk-guide">IHT on rental property guide</a> for the wider mechanics.</p>
+
+<aside>
+<p>Already considering incorporation and want a written second opinion before instructing?</p>
+<p>We provide independent incorporation modelling reports (no-obligation, fixed fee) covering CGT, SDLT, mortgage refinancing cost, dividend extraction plan, and the 10-year after-tax projection. Form below.</p>
+</aside>
+
+<h2>Ongoing compliance and what it actually costs</h2>
+
+<table>
+<thead>
+<tr><th>Compliance item</th><th>Deadline</th><th>Typical annual cost (small property company)</th></tr>
+</thead>
+<tbody>
+<tr><td>Statutory accounts to Companies House</td><td>9 months after year end</td><td>Included in accountancy fee</td></tr>
+<tr><td>Corporation tax return (CT600) to HMRC</td><td>12 months after year end (payment within 9 months and 1 day)</td><td>Included in accountancy fee</td></tr>
+<tr><td>Confirmation statement to Companies House</td><td>Annually</td><td>£34 filing fee plus £50 to £100 if outsourced</td></tr>
+<tr><td>ATED return (if any property over £500k)</td><td>30 April annually</td><td>£100 to £300</td></tr>
+<tr><td>Director's payroll (if used)</td><td>Monthly RTI submissions</td><td>£200 to £500 a year</td></tr>
+<tr><td>Accountancy and bookkeeping (combined)</td><td>Ongoing</td><td>£1,200 to £3,500</td></tr>
+<tr><td>Business bank account</td><td>Ongoing</td><td>£0 to £30 a month</td></tr>
+<tr><td>Registered office (if outsourced)</td><td>Ongoing</td><td>£0 to £150 a year</td></tr>
+</tbody>
+</table>
+
+<p>Total realistic annual compliance cost for a small property company sits between £1,500 and £3,000. A 10-property company with active bookkeeping typically pays £3,000 to £5,000 a year.</p>
+
+<h2>MTD does not apply to property companies (yet)</h2>
+
+<p>Making Tax Digital for Income Tax Self Assessment (live since 6 April 2026) applies only to sole-trader landlords and unincorporated landlords. Limited company property income is reported through the annual CT600, which is outside MTD for ITSA. MTD for Corporation Tax has been mooted but no firm start date has been published and the timeline is widely expected to slip to 2030 or later. So if you are in a company, you do not need MTD-compatible software for the company's CT600 obligations.</p>
+
+<p>You may still want cloud bookkeeping (Xero, FreeAgent, QuickBooks) for operational reasons, but it is not a regulatory requirement.</p>
+
+<h2>Common mistakes to avoid</h2>
+
+<ul>
+<li><strong>Incorporating without modelling the after-tax position over 5 to 10 years.</strong> The headline corporation tax saving evaporates fast under heavy dividend extraction. Always model the whole flow.</li>
+<li><strong>Forgetting Section 162 needs a business test.</strong> A two-property landlord can rarely claim Section 162 relief. The CGT on transfer can wipe out years of future tax saving.</li>
+<li><strong>Underestimating SDLT cost on transfer.</strong> The 5% additional dwellings surcharge applies in full to incorporation transfers. Plan for it.</li>
+<li><strong>Mixing personal and company finances.</strong> Pay every property expense from the company account. Reimburse personal cards through the Director's Loan Account, never from the company directly.</li>
+<li><strong>Drawing all profit as dividends and paying full higher rate dividend tax.</strong> Pension contributions, retained profit for portfolio growth, and director's salary up to the NI threshold all reduce the personal tax drag.</li>
+<li><strong>Setting up alphabet shares badly.</strong> HMRC has won several settlements legislation cases on poorly drafted family share schemes. Use a tax-qualified adviser.</li>
+<li><strong>Ignoring ATED.</strong> The exemption is automatic only if you file the return claiming it. £100 penalties for missed filings on a perfectly exempt property are common.</li>
+<li><strong>Forgetting Business Relief does not apply.</strong> IHT remains a real exposure on a property company. Plan separately for it.</li>
+</ul>
+
+<h2>Practical decision checklist</h2>
+
+<ol>
+<li>Calculate your personal marginal income tax rate including all sources.</li>
+<li>Identify total mortgage interest across your BTL portfolio.</li>
+<li>Estimate latent capital gain in each existing property.</li>
+<li>Confirm whether your activity meets the Section 162 business test (five or more properties actively managed is a reasonable proxy).</li>
+<li>Get mortgage broker advice on company-name BTL availability for your specific properties and LTVs.</li>
+<li>Model 10-year after-tax cash flow on both personal and company routes with your actual numbers.</li>
+<li>Decide on extraction strategy (heavy dividends, pension funding, profit retention) before incorporating, not after.</li>
+<li>Engage a specialist accountant to execute the transfer if proceeding.</li>
+</ol>
+
+<h2>Next steps</h2>
+
+<p>For supporting reading, see our guide on <a href="/blog/incorporation-and-company-structures/limited-company-vs-personal-ownership-tax-comparison-2026">limited company versus personal ownership comparison</a>, our <a href="/blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio">incorporation timing guide</a>, and our pillar guides on <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24</a>, <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">capital gains tax on property</a>, and <a href="/blog/inheritance-tax/inheritance-tax-rental-property-uk-guide">inheritance tax on rental property</a>.</p>
+
+<p>If you are weighing incorporation against staying personal and want a specific recommendation based on your figures, send us your last self assessment and current portfolio summary using the form below. Initial calls are free and we will tell you honestly whether incorporation is the right call for your specific circumstances.</p>

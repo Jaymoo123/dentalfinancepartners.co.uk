@@ -126,7 +126,7 @@ faqs:
 </ul>
 
 <h2>How to Record Your Expenses</h2>
-<p>From 6 April 2026, Making Tax Digital (MTD) for Income Tax becomes mandatory for landlords with gross property income over £10,000. This means you must keep digital records and submit quarterly updates to HMRC.</p>
+<p>From 6 April 2026, Making Tax Digital (MTD) for Income Tax becomes mandatory for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This means you must keep digital records and submit quarterly updates to HMRC.</p>
 <p>Even before that date, it is good practice to keep a detailed record of every expense. Use a spreadsheet or accounting software. Keep receipts for at least 5 years after the tax return deadline.</p>
 <p>For more on MTD requirements, see our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD for landlords guide</a>.</p>
 

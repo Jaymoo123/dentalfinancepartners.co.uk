@@ -63,7 +63,7 @@ faqs:
 <p>Proper Section 24 planning might save a higher-rate taxpaying landlord £3,000+ annually.</p>
 
 <h3>Preparing for Making Tax Digital (MTD) Compliance</h3>
-<p>From April 2026, landlords with gross property income over £10,000 must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a>. This represents a fundamental shift in how rental income and expenses are recorded and reported.</p>
+<p>From April 2026, landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a>. This represents a fundamental shift in how rental income and expenses are recorded and reported.</p>
 <p>Many Luton landlords currently use basic spreadsheets or even manual records. MTD requires digital record-keeping and quarterly submissions through compatible software. A specialist property accountant can:</p>
 <ul>
 <li>Recommend appropriate MTD-compatible software</li>

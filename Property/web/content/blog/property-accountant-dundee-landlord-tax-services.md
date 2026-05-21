@@ -14,7 +14,7 @@ summary: "Dundee's property market presents unique opportunities and challenges 
 schema: ""
 faqs:
   - question: "Do I need a property accountant if I only have one rental property in Dundee?"
-    answer: "For single properties with straightforward situations, basic accounting may suffice initially. However, if your rental income exceeds £10,000 (triggering MTD requirements from 2026) or you're planning to expand your portfolio, specialist property accounting becomes valuable. The 2027 property income tax changes will also affect most landlords, making professional advice worthwhile for strategic planning even with smaller portfolios."
+    answer: "For single properties with straightforward situations, basic accounting may suffice initially. However, if your qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) (triggering MTD requirements from 2026) or you're planning to expand your portfolio, specialist property accounting becomes valuable. The 2027 property income tax changes will also affect most landlords, making professional advice worthwhile for strategic planning even with smaller portfolios."
   - question: "How much do property accountants typically charge in Dundee?"
     answer: "Property accountant fees vary based on portfolio complexity and services required. Basic compliance for small portfolios might cost £500-£1,500 annually, while comprehensive services for larger portfolios can range from £2,000-£5,000+. Many specialists offer fixed-fee arrangements for regular compliance work. The fees are tax-deductible and often pay for themselves through tax savings and compliance peace of mind."
   - question: "Can a property accountant help with student accommodation tax issues?"
@@ -41,7 +41,7 @@ faqs:
 <h3>Section 24 Restrictions</h3>
 <p><a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a> are fully implemented, meaning mortgage interest relief is capped at the basic rate. For Dundee landlords with leveraged portfolios, particularly those who expanded during the city's growth phase, this can significantly impact net returns.</p>
 <h3>Making Tax Digital Compliance</h3>
-<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becomes mandatory for landlords with gross property income over £10,000. This affects most serious Dundee investors and requires quarterly digital submissions.</p>
+<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becomes mandatory for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This affects most serious Dundee investors and requires quarterly digital submissions.</p>
 <p>Many landlords underestimate the administrative burden and potential penalties for non-compliance. A specialist property accountant ensures systems are ready and compliant from day one.</p>
 <h3>2027 Property Income Tax Changes</h3>
 <p>From April 2027, property income will be taxed at separate rates: 22% basic, 42% higher, and 47% additional rate. This represents a significant increase from current general income tax rates and will particularly impact successful Dundee landlords with substantial rental income.</p>

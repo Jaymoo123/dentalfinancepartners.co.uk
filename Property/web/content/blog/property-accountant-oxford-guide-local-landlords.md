@@ -20,7 +20,7 @@ faqs:
   - question: "When should Oxford landlords consider incorporation advice?"
     answer: "Oxford landlords should consider incorporation when affected by Section 24 mortgage interest restrictions (typically higher-rate taxpayers), planning significant portfolio expansion, or facing substantial capital gains tax on property disposals. With Oxford property values rising consistently, incorporation timing becomes crucial for tax efficiency. A property accountant can model whether incorporation saves tax in your specific situation."
   - question: "How will Making Tax Digital affect Oxford property investors?"
-    answer: "From April 2026, Making Tax Digital is mandatory for Oxford landlords with gross property income over £10,000 (most local investors). This requires digital record keeping, quarterly HMRC submissions, and approved software use. Oxford property accountants help select suitable software, establish digital workflows, and ensure compliance. Early preparation is recommended given the significant workflow changes required."
+    answer: "From April 2026, Making Tax Digital is mandatory for Oxford landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) (most local investors). This requires digital record keeping, quarterly HMRC submissions, and approved software use. Oxford property accountants help select suitable software, establish digital workflows, and ensure compliance. Early preparation is recommended given the significant workflow changes required."
 ---
 
 <p>Oxford's property market presents unique opportunities and challenges for landlords. With average rental yields around 4-5% and strong demand from students and professionals, many investors are building substantial portfolios. However, navigating UK property tax has become increasingly complex, making a specialist <strong>property accountant Oxford</strong> essential for most landlords.</p>
@@ -39,7 +39,7 @@ faqs:
 <li><strong>Section 24 restrictions:</strong> Mortgage interest relief capped at 20%, regardless of your tax rate</li>
 <li><strong>Student property complexities:</strong> Council tax exemption rules, utility inclusive rents, and HMO regulations</li>
 <li><strong>Capital gains planning:</strong> With Oxford property values rising, CGT planning becomes crucial for portfolio growth</li>
-<li><strong>Making Tax Digital compliance:</strong> Mandatory from April 2026 for landlords with gross property income over £10,000</li>
+<li><strong>Making Tax Digital compliance:</strong> Mandatory from April 2026 for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028)</li>
 <li><strong>Multiple property portfolio management:</strong> Tracking expenses, depreciation, and income across different property types</li>
 </ul>
 
@@ -136,7 +136,7 @@ faqs:
 
 <h2>Making Tax Digital (MTD) Compliance</h2>
 
-<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becomes mandatory</a> for landlords with gross property income over £10,000. This affects most Oxford property investors given local rental levels.</p>
+<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becomes mandatory</a> for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This affects most Oxford property investors given local rental levels.</p>
 
 <h3>What Oxford Landlords Need to Know</h3>
 
@@ -175,7 +175,7 @@ faqs:
 <p>If you're currently handling your own property tax returns or working with a general accountant, consider these signs that you need specialist help:</p>
 
 <ul>
-<li>Your property income exceeds £10,000 annually (Making Tax Digital threshold)</li>
+<li>Your qualifying income exceeds £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) annually (Making Tax Digital threshold)</li>
 <li>You're affected by Section 24 mortgage interest restrictions</li>
 <li>You own multiple properties or different property types</li>
 <li>You're considering portfolio expansion or incorporation</li>

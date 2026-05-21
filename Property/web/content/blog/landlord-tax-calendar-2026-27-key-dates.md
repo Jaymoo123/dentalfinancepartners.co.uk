@@ -14,7 +14,7 @@ summary: "Complete landlord tax calendar for 2026/27 including self assessment d
 schema: ""
 faqs:
   - question: "When does Making Tax Digital become mandatory for landlords?"
-    answer: "Making Tax Digital for Income Tax becomes mandatory from 6 April 2026 for landlords with gross annual property income over £10,000. You'll need to submit quarterly returns using MTD-compatible software, with the first return due by 5 August 2026."
+    answer: "Making Tax Digital for Income Tax becomes mandatory from 6 April 2026 for landlords with gross annual qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). You'll need to submit quarterly returns using MTD-compatible software, with the first return due by 5 August 2026."
   - question: "What are the key tax deadlines for landlords in 2026/27?"
     answer: "The main deadlines are: quarterly MTD returns due 5 August, 5 November, 5 February and 5 May; 31 July 2026 for 2025/26 self assessment and payment; 31 January 2027 for 2026/27 self assessment, balancing payment and first payment on account for 2027/28."
   - question: "How do the new property income tax rates from April 2027 affect landlords?"
@@ -30,10 +30,10 @@ faqs:
 <h2>Key Dates and Deadlines for 2026/27</h2>
 
 <p><strong>6 April 2026: New Tax Year Begins</strong><br>
-The 2026/27 tax year starts on 6 April 2026. This is when the new income tax bands take effect and Making Tax Digital for Income Tax becomes mandatory for landlords with gross property income over £10,000.</p>
+The 2026/27 tax year starts on 6 April 2026. This is when the new income tax bands take effect and Making Tax Digital for Income Tax becomes mandatory for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028).</p>
 
 <p><strong>From 6 April 2026: MTD Quarterly Returns Begin</strong><br>
-If your annual gross rental income exceeds £10,000, you must start submitting quarterly returns through MTD-compatible software. Your first quarter covers 6 April to 5 July 2026, with the return due by 5 August 2026.</p>
+If your annual gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028), you must start submitting quarterly returns through MTD-compatible software. Your first quarter covers 6 April to 5 July 2026, with the return due by 5 August 2026.</p>
 
 <p><strong>5 July 2026: Q1 MTD Period Ends</strong><br>
 Your first MTD quarter ends on 5 July 2026. This period covers three months of rental income and allowable expenses from the start of the tax year.</p>
@@ -79,7 +79,7 @@ Your final quarter of 2026/27 (6 January to 5 April 2027) ends just before the n
 <li>Choose and implement MTD-compatible software</li>
 <li>Set up digital record-keeping systems</li>
 <li>Train yourself or your team on quarterly submission requirements</li>
-<li>Register with HMRC for MTD (if gross rental income exceeds £10,000)</li>
+<li>Register with HMRC for MTD (if gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028))</li>
 </ul>
 <p>Many landlords benefit from <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">professional property accounting support</a> during this transition. The quarterly submission requirement demands more consistent record-keeping than the annual system.</p>
 

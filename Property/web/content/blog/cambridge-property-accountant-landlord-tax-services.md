@@ -20,7 +20,7 @@ faqs:
   - question: "What's the impact of Section 24 on Cambridge landlords?"
     answer: "Section 24 significantly impacts Cambridge landlords due to high property values and mortgage costs. Landlords can only claim 20% tax credit on mortgage interest regardless of their marginal tax rate. A higher-rate taxpayer with £20,000 annual mortgage interest loses £4,000 in tax relief compared to pre-Section 24 rules. Professional advice on incorporation or restructuring can help mitigate this impact."
   - question: "When do Cambridge landlords need to comply with Making Tax Digital?"
-    answer: "Making Tax Digital for Income Tax becomes mandatory from April 2026 for Cambridge landlords with gross property income over £10,000 annually. This requires using compatible software to submit quarterly updates to HMRC, replacing annual Self Assessment filing. Most Cambridge landlords will need to implement new systems and processes to comply with these requirements."
+    answer: "Making Tax Digital for Income Tax becomes mandatory from April 2026 for Cambridge landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) annually. This requires using compatible software to submit quarterly updates to HMRC, replacing annual Self Assessment filing. Most Cambridge landlords will need to implement new systems and processes to comply with these requirements."
 ---
 
 <p>Cambridge's thriving property market presents both opportunities and challenges for local landlords. With average rental yields around 4.5% and strong student demand, the city attracts significant property investment. However, navigating UK property tax rules while maximising returns requires specialist expertise that a general accountant may not provide.</p>
@@ -64,7 +64,7 @@ faqs:
 <ul>
 <li><strong>Annual tax return preparation</strong> — Self Assessment and property pages</li>
 <li><strong>Quarterly management accounts</strong> — Track rental income, expenses, and profitability</li>
-<li><strong>Making Tax Digital compliance</strong> — Mandatory from April 2026 for landlords with gross property income over £10,000</li>
+<li><strong>Making Tax Digital compliance</strong> — Mandatory from April 2026 for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028)</li>
 <li><strong>Capital gains tax planning</strong> — Minimise CGT on property disposals</li>
 <li><strong>Incorporation advice</strong> — Assess benefits of transferring properties to a limited company</li>
 <li><strong>Expense optimisation</strong> — Maximise allowable deductions</li>
@@ -74,7 +74,7 @@ faqs:
 <p>Understanding <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what a property accountant does</a> helps landlords choose the right level of service for their portfolio size and complexity.</p>
 
 <h3>Making Tax Digital Preparation</h3>
-<p>From April 2026, Cambridge landlords with gross property income over £10,000 must use MTD-compatible software to submit quarterly updates to HMRC. This represents a significant change from annual Self Assessment filing.</p>
+<p>From April 2026, Cambridge landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must use MTD-compatible software to submit quarterly updates to HMRC. This represents a significant change from annual Self Assessment filing.</p>
 <p>Many Cambridge landlords are unprepared for this requirement. A property accountant can help implement suitable software, establish quarterly reporting processes, and ensure compliance with the new rules. Our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital guide</a> covers what landlords need to know.</p>
 
 <h3>Local Cambridge Property Tax Considerations</h3>

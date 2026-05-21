@@ -34,7 +34,7 @@ faqs:
 <li><strong>Property-specific allowable expenses</strong> — from repairs vs improvements to pre-letting costs and void period expenses</li>
 <li><strong>Capital gains tax planning</strong> — including principal private residence relief, incorporation relief, and timing of disposals</li>
 <li><strong>Multiple property types</strong> — different rules for BTL, commercial property, HMOs, and serviced accommodation</li>
-<li><strong>Making Tax Digital compliance</strong> — mandatory from April 2026 for landlords earning over £10,000 gross rental income</li>
+<li><strong>Making Tax Digital compliance</strong> — mandatory from April 2026 for landlords earning over £50,000 (the MTD threshold from 6 April 2026, dropping to £30,000 from 6 April 2027 and £20,000 from 6 April 2028)</li>
 </ul>
 <p>A general accountant might handle your rental income correctly, but they're unlikely to spot the strategic opportunities or compliance pitfalls that could save or cost you thousands.</p>
 
@@ -99,7 +99,7 @@ faqs:
 </ul>
 
 <h2>Making Tax Digital (MTD) Compliance</h2>
-<p>Making Tax Digital for Income Tax Self Assessment (MTD for ITSA) becomes mandatory for landlords with gross rental income over £10,000 from April 2026. A specialist accountant is essential for navigating this change.</p>
+<p>Making Tax Digital for Income Tax Self Assessment (MTD for ITSA) becomes mandatory for landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) from April 2026. A specialist accountant is essential for navigating this change.</p>
 <p>They should help you prepare by:</p>
 <ul>
 <li>Setting up compliant digital record-keeping systems</li>

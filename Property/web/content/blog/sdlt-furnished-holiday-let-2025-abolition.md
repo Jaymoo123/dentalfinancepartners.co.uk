@@ -20,7 +20,7 @@ faqs:
   - question: "How is SDLT calculated on a £400,000 furnished holiday let?"
     answer: "If the FHL is treated as residential and you already own another residential property, the SDLT would be: 0% on the first £250,000 (£0), 5% on the next £150,000 (£7,500), plus a 5% surcharge on the full £400,000 (£20,000), totalling £27,500. If treated as non-residential, the SDLT would be: 0% on the first £150,000 (£0), 1% on £150,001, £250,000 (£1,000), and 5% on £250,001, £400,000 (£7,500), totalling £8,500."
   - question: "What are the current rules for furnished holiday lettings after the 2025 abolition?"
-    answer: "From April 2025, FHL income is treated as standard property income. Capital allowances on furniture are no longer available (use replacement of domestic items relief instead). Section 24 applies in full, restricting mortgage interest relief to a 20% tax credit. From April 2026, Making Tax Digital requires quarterly digital filing if gross property income exceeds £10,000. From April 2027, separate property income tax rates apply: 22% basic, 42% higher, and 47% additional rate."
+    answer: "From April 2025, FHL income is treated as standard property income. Capital allowances on furniture are no longer available (use replacement of domestic items relief instead). Section 24 applies in full, restricting mortgage interest relief to a 20% tax credit. From April 2026, Making Tax Digital requires quarterly digital filing if gross qualifying income exceeds £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). From April 2027, separate property income tax rates apply: 22% basic, 42% higher, and 47% additional rate."
 ---
 
 <h2>Understanding SDLT on Furnished Holiday Lettings After April 2025</h2>
@@ -131,7 +131,7 @@ faqs:
 <li><strong>Mortgage interest:</strong> Section 24 applies in full. Mortgage interest relief is restricted to a 20% tax credit, not deducted from rental income.</li>
 <li><strong>Capital gains tax:</strong> When you sell, you pay CGT at 18% (basic rate) or 24% (higher rate) on residential property gains. The annual exempt amount is £3,000.</li>
 <li><strong>SDLT:</strong> As discussed above, the classification depends on the property's nature, not the FHL regime.</li>
-<li><strong>Making Tax Digital:</strong> From 6 April 2026, landlords with gross property income over £10,000 must file quarterly digital updates. This includes FHL income. See our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD for landlords guide</a> for details.</li>
+<li><strong>Making Tax Digital:</strong> From 6 April 2026, landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must file quarterly digital updates. This includes FHL income. See our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD for landlords guide</a> for details.</li>
 </ul>
 
 <h2>How Much Tax to Pay on a Furnished Holiday Let</h2>
@@ -166,7 +166,7 @@ faqs:
 <li><strong>Calculate SDLT costs:</strong> Use our <a href="/calculators">SDLT calculator</a> to estimate your tax liability under different scenarios.</li>
 <li><strong>Review your portfolio:</strong> If you already own other residential properties, factor in the 5% surcharge.</li>
 <li><strong>Consider incorporation:</strong> For larger portfolios, a limited company structure may offer tax advantages. See our <a href="/incorporation">incorporation guide</a>.</li>
-<li><strong>Plan for MTD:</strong> From April 2026, you will need to file quarterly updates if your gross property income exceeds £10,000. Start preparing your digital records now.</li>
+<li><strong>Plan for MTD:</strong> From April 2026, you will need to file quarterly updates if your gross qualifying income exceeds £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). Start preparing your digital records now.</li>
 </ol>
 
 <h2>Final Thoughts</h2>

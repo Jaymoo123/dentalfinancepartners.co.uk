@@ -157,9 +157,9 @@ faqs:
 
 <h3>Making Tax Digital (MTD) Requirements</h3>
 
-<p>From April 2026, landlords with gross rental income over £10,000 annually must comply with Making Tax Digital for Income Tax. This means keeping digital records and submitting quarterly updates to HMRC.</p>
+<p>From April 2026, landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) annually must comply with Making Tax Digital for Income Tax. This means keeping digital records and submitting quarterly updates to HMRC.</p>
 
-<p>Even if you're below the £10,000 threshold initially, planning for MTD compliance makes sense as your portfolio grows. Our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD guide for landlords</a> covers the software requirements and compliance process in detail.</p>
+<p>Even if you're below the MTD-for-ITSA threshold (£50,000 from 6 April 2026, £30,000 from 6 April 2027, £20,000 from 6 April 2028) initially, planning for MTD compliance makes sense as your portfolio grows. Our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD guide for landlords</a> covers the software requirements and compliance process in detail.</p>
 
 <h2>Self-Assessment and Payment Dates</h2>
 

@@ -109,7 +109,7 @@ faqs:
 
 <h2>Record Keeping and Making Tax Digital</h2>
 
-<p>HMRC requires detailed records of holiday let income and expenses. From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital rules</a> apply to landlords with gross rental income over £10,000, requiring digital record keeping and quarterly submissions.</p>
+<p>HMRC requires detailed records of holiday let income and expenses. From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital rules</a> apply to landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028), requiring digital record keeping and quarterly submissions.</p>
 <p>Essential records include:</p>
 <ul>
 <li>Booking confirmations and payment receipts</li>

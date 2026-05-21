@@ -161,7 +161,7 @@ faqs:
 
 <h3>Future Considerations</h3>
 <p>From April 2027, separate property income tax rates (22% basic, 42% higher, 47% additional) will apply. This makes replacement domestic items relief more valuable as it reduces profit before these higher rates apply.</p>
-<p>From April 2026, landlords with gross property income over £10,000 must use MTD-compatible software. Ensure your record-keeping system can handle replacement domestic items relief claims and link them to specific properties.</p>
+<p>From April 2026, landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must use MTD-compatible software. Ensure your record-keeping system can handle replacement domestic items relief claims and link them to specific properties.</p>
 
 <h3>Getting Professional Help</h3>
 <p>Replacement domestic items relief can be complex, particularly when distinguishing between replacements and improvements. Consider getting advice from a <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> if you have:</p>

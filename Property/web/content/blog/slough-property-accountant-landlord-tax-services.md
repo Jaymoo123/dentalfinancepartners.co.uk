@@ -20,7 +20,7 @@ faqs:
   - question: "Should Slough landlords incorporate their property businesses?"
     answer: "Incorporation can provide tax benefits for many Slough landlords, particularly those in higher tax brackets. However, the decision requires careful analysis of stamp duty costs, CGT on transfer, and ongoing compliance requirements. A specialist property accountant can model these scenarios using your specific circumstances."
   - question: "When do Slough landlords need to comply with Making Tax Digital?"
-    answer: "MTD for Income Tax becomes mandatory from April 2026 for landlords with gross property income over £10,000. This requires quarterly digital record-keeping and submissions to HMRC, representing a significant change from annual tax return filing."
+    answer: "MTD for Income Tax becomes mandatory from April 2026 for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This requires quarterly digital record-keeping and submissions to HMRC, representing a significant change from annual tax return filing."
 ---
 
 <p>Slough's property market continues to attract investors, but the tax landscape for landlords has become increasingly complex. From Section 24 mortgage interest restrictions to the upcoming Making Tax Digital requirements, Slough landlords need specialist expertise to navigate these challenges effectively.</p>
@@ -58,7 +58,7 @@ faqs:
 <p>Consider a Slough landlord with a £400,000 buy-to-let property generating £24,000 annual rent, with £12,000 mortgage interest. Under the old rules, they could deduct the full interest amount. Now, they receive only a 20% tax credit, potentially increasing their tax liability by thousands of pounds. A specialist property accountant can model different scenarios, including incorporation options that might restore full interest relief for Slough landlords.</p>
 
 <h2>Preparing for Making Tax Digital (MTD)</h2>
-<p>Slough landlords with gross rental income over £10,000 must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital from April 2026</a>. This means quarterly digital record-keeping and submission of income and expenditure summaries to HMRC. The compliance burden is significant, particularly for landlords managing multiple properties across Slough.</p>
+<p>Slough landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital from April 2026</a>. This means quarterly digital record-keeping and submission of income and expenditure summaries to HMRC. The compliance burden is significant, particularly for landlords managing multiple properties across Slough.</p>
 <p>Specialist software integration and regular submissions require ongoing professional support rather than annual accounts preparation. <strong>Landlord tax advice in Slough</strong> should include MTD preparation, covering:</p>
 <ul>
 <li>Software selection and setup</li>

@@ -14,9 +14,9 @@ summary: "Major tax changes are coming for UK landlords in 2026, including manda
 schema: ""
 faqs:
   - question: "When do the landlord tax changes 2026 take effect?"
-    answer: "The main change in 2026 is Making Tax Digital (MTD) for Income Tax becoming mandatory from 6 April 2026 for landlords with gross property income over £10,000. The bigger changes - higher property tax rates of 22%/42%/47% - don't start until April 2027."
+    answer: "The main change in 2026 is Making Tax Digital (MTD) for Income Tax becoming mandatory from 6 April 2026 for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). The bigger changes - higher property tax rates of 22%/42%/47% - don't start until April 2027."
   - question: "Do all landlords need to comply with Making Tax Digital from 2026?"
-    answer: "Only landlords with gross property income over £10,000 per year must comply with MTD from April 2026. This threshold applies to your total rental income across all properties. Landlords below this threshold can use MTD voluntarily but aren't required to."
+    answer: "Only landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) per year must comply with MTD from April 2026. This threshold applies to your total rental income across all properties. Landlords below this threshold can use MTD voluntarily but aren't required to."
   - question: "How much higher will property tax rates be from 2027?"
     answer: "From April 2027, property income will be taxed at 22% (basic rate), 42% (higher rate), and 47% (additional rate) - compared to general income tax rates of 20%/40%/45%. This represents a 2% increase at each band specifically for property income."
   - question: "Should I incorporate my property portfolio before these changes?"
@@ -28,7 +28,7 @@ faqs:
 <p>The most immediate impact comes from Making Tax Digital (MTD) becoming mandatory for most landlords from April 2026, while even bigger changes to property tax rates are scheduled for April 2027. Here's every change you need to know about.</p>
 
 <h2>Making Tax Digital (MTD) for Income Tax</h2>
-<p>The biggest immediate change for landlords is <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital (MTD) for Income Tax</a> becoming mandatory from 6 April 2026. This affects any landlord with gross property income over £10,000 per year.</p>
+<p>The biggest immediate change for landlords is <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital (MTD) for Income Tax</a> becoming mandatory from 6 April 2026. This affects any landlord with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) per year.</p>
 <p>Under MTD, landlords must:</p>
 <ul>
 <li>Keep digital records using compatible software</li>
@@ -36,7 +36,7 @@ faqs:
 <li>File an end-of-period statement (EOPS) after the tax year ends</li>
 <li>Complete a final declaration to replace the traditional self-assessment</li>
 </ul>
-<p>The quarterly reporting deadlines are one month after each quarter end: 5 May, 5 August, 5 November, and 5 February. Missing these deadlines triggers penalties starting at £200 per quarter. Landlords with gross property income below £10,000 can still use MTD voluntarily but aren't required to. This threshold applies to total gross rental income across all properties, not per property.</p>
+<p>The quarterly reporting deadlines are one month after each quarter end: 5 May, 5 August, 5 November, and 5 February. Missing these deadlines triggers penalties starting at £200 per quarter. Landlords with gross property income below the MTD thresholdcan still use MTD voluntarily but aren't required to. This threshold applies to total gross rental income across all properties, not per property.</p>
 <p>Start preparing for MTD now by choosing compatible software, digitising your record-keeping systems, understanding quarterly reporting requirements, and considering professional support for compliance.</p>
 
 <h2>Property Income Tax Rates and Section 24</h2>

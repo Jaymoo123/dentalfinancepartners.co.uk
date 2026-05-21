@@ -1,148 +1,216 @@
 ---
-title: "How Much Is SDLT on Buy-to-Let Properties? Complete 2025 Rate Guide"
+title: "SDLT Rates for Buy-to-Let and Limited Companies: 2026/27 Guide"
 slug: "sdlt-buy-to-let-rates-surcharge-guide-2025"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025"
-date: "2026-04-10"
+date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
-metaTitle: "SDLT rates for limited company buying property UK 2026"
-metaDescription: "Calculate SDLT for a limited company buying residential property in 2026. Includes the 5% surcharge, worked example for £400k, and how to file with HMRC."
-metaTitle_prev: "SDLT Buy-to-Let Rates 2026: 5% Surcharge & Exemptions"
-metaDescription_prev: "SDLT on buy-to-let in 2026: 5% surcharge on additional properties since October 2024. Rates, calculation examples and exemptions for landlords."
+metaTitle: "SDLT Rates Buy-to-Let & Limited Company 2026/27 | 5% Surcharge"
+metaDescription: "Current SDLT rates for landlords and limited companies buying UK residential property: 5% surcharge, £125k nil band, worked examples and reliefs."
+metaTitle_prev: "SDLT rates for limited company buying property UK 2026"
+metaDescription_prev: "Calculate SDLT for a limited company buying residential property in 2026. Includes the 5% surcharge, worked example for £400k, and how to file with HMRC."
 altText: "UK landlord reviewing SDLT calculations for buy-to-let property purchase with tax documents and calculator"
 image: ""
-h1: "SDLT Buy-to-Let Rates Surcharge: Complete Guide for UK Property Investors 2026"
-summary: "SDLT on buy-to-let purchases includes standard rates plus a 5% surcharge on additional properties. The surcharge increased from 3% to 5% in October 2024."
+h1: "SDLT on Buy-to-Let and Limited Company Purchases: 2026/27 Rate Guide"
+summary: "Buy-to-let and limited company purchases of residential property in England and Northern Ireland attract the standard SDLT bands plus a 5% additional dwellings surcharge. Nil rate band reverted to £125,000 on 1 April 2025, so even modestly priced properties now carry a meaningful SDLT bill."
 schema: ""
 faqs:
-  - question: "How much is SDLT on a £300,000 buy-to-let property in 2025?"
-    answer: "On a £300,000 buy-to-let property, you'll pay £17,500 SDLT. This comprises £2,500 in standard SDLT (on the £50,000 above the £250,000 threshold at 5%) plus £15,000 from the 5% surcharge applied to the full £300,000 purchase price."
-  - question: "When did the SDLT surcharge increase to 5% for buy-to-let properties?"
-    answer: "The SDLT surcharge increased from 3% to 5% on 31 October 2024. This affects all buy-to-let and additional property purchases where contracts were exchanged on or after this date, adding approximately £6,000 to the tax bill on a £300,000 property."
-  - question: "Can I avoid the 5% SDLT surcharge on buy-to-let purchases?"
-    answer: "The surcharge applies to most buy-to-let purchases if you already own residential property worth over £40,000. Limited exemptions exist for mixed-use properties with substantial commercial elements, but most landlords cannot avoid the surcharge through legal structuring alone."
-  - question: "Do companies pay the same SDLT rates as individuals on buy-to-let properties?"
-    answer: "Yes, companies pay the same SDLT rates including the 5% surcharge when purchasing residential investment properties. However, companies may face additional taxes like ATED if they own UK residential property worth over £500,000, making the total tax burden potentially higher."
+  - question: "How much SDLT will a landlord pay on a £300,000 buy-to-let in 2026/27?"
+    answer: "Total SDLT is £20,000. Standard SDLT is 0% on the first £125,000, 2% on the next £125,000 (£2,500) and 5% on the final £50,000 (£2,500), giving £5,000. The 5% additional dwellings surcharge applies to the full £300,000 (£15,000). The temporary £250,000 nil-rate threshold that applied between September 2022 and March 2025 ended on 1 April 2025."
+  - question: "When did the SDLT additional dwellings surcharge rise from 3% to 5%?"
+    answer: "The Higher Rates for Additional Dwellings (HRAD) surcharge increased from 3% to 5% on 31 October 2024 in the Autumn Budget. The 5% rate applies to transactions where contracts were exchanged on or after that date. Contracts exchanged before but completed after 31 October 2024 can sometimes still benefit from the 3% rate under transitional rules, but only where the contract was not substantially varied after exchange."
+  - question: "Do limited companies pay the same SDLT as individual landlords?"
+    answer: "A limited company purchasing residential property pays the standard SDLT bands plus the 5% additional dwellings surcharge on every residential purchase, regardless of whether it owns other property. Unlike individuals, companies cannot escape the surcharge by claiming the new acquisition is their main residence. Companies acquiring residential property valued over £500,000 may also fall into ATED unless a relief such as the property letting business relief applies."
+  - question: "What are the SDLT rates if a company buys six or more residential properties in one transaction?"
+    answer: "Where six or more residential dwellings are acquired in a single transaction, the buyer can elect to apply the non-residential SDLT rates instead (0% on the first £150,000, 2% on £150,001 to £250,000, 5% above £250,000) and no additional dwellings surcharge applies. This is set out in paragraph 7 of Schedule 6B FA 2003 and is often more efficient than Multiple Dwellings Relief, which was abolished for transactions completing on or after 1 June 2024."
+  - question: "Does the non-UK resident SDLT surcharge apply to limited companies?"
+    answer: "Yes. A further 2% surcharge applies to non-UK resident purchasers of residential property, including companies. A company is treated as non-resident for SDLT if it is not UK-resident for corporation tax or if it is a close company controlled by non-UK resident participators. UK-incorporated companies are not automatically exempt. The 2% sits on top of both the standard rates and the 5% additional dwellings surcharge."
+  - question: "Can a limited company claim first-time buyer relief?"
+    answer: "No. First-time buyer relief is only available to individuals purchasing a property as their only or main home. From 1 April 2025 the relief gives a 0% rate on the first £300,000 and 5% on the portion between £300,001 and £500,000, with no relief on purchases over £500,000. The previous temporary thresholds of £425,000 and £625,000 ended on 31 March 2025."
+  - question: "How is SDLT paid and when is the return due?"
+    answer: "An SDLT return (form SDLT1) must be filed and the tax paid within 14 days of the effective date of the transaction, usually the completion date. Most landlords delegate filing to their conveyancer. Late filing triggers a £100 fixed penalty (rising to £200 after three months), and late payment attracts daily interest at HMRC's published rate plus 5% surcharges at 30 days and 6 months."
+  - question: "Can I reclaim the 5% surcharge if I sell my previous main residence?"
+    answer: "Yes, but only if you are replacing your main residence and the previous main home is sold within 36 months of the new purchase. The reclaim is made using HMRC's online service and must be submitted within 12 months of the sale of the previous home (or the SDLT filing date, whichever is later). This route is not available to companies or for properties bought purely as buy-to-let."
+  - question: "How does SDLT differ in Scotland and Wales?"
+    answer: "SDLT applies only in England and Northern Ireland. Scotland charges Land and Buildings Transaction Tax (LBTT) with an Additional Dwelling Supplement of 8% since 5 December 2024 (raised from 6%). Wales charges Land Transaction Tax (LTT) using a separate higher residential rates schedule for additional dwellings, with a 5% top-up effectively applying at most bands. Cross-border investors should model the relevant tax in each jurisdiction before committing."
+  - question: "Is mixed-use property a viable route to avoid the 5% surcharge?"
+    answer: "A genuine mixed-use property (for example, a shop with a flat above sold as a single transaction) is taxed at non-residential SDLT rates and falls outside the additional dwellings surcharge. HMRC scrutinises borderline cases closely. A small commercial element added to a residential property purely to access the rates will be challenged, and any successful challenge means full residential rates plus the 5% surcharge apply, often with penalties."
+  - question: "Does ATED apply to a limited company buy-to-let?"
+    answer: "ATED (Annual Tax on Enveloped Dwellings) potentially applies to a UK residential dwelling held by a company that is worth more than £500,000. However, a company holding the property as part of a property rental business open to third parties on a commercial basis can usually claim the property letting relief and file a nil return. The relief is not automatic, so a return is still required each year by 30 April."
+  - question: "Should I buy my next buy-to-let personally or through a limited company given the 5% surcharge?"
+    answer: "Both routes attract the surcharge, so SDLT alone rarely drives the answer. The decision usually turns on the income tax cost of Section 24 (mortgage interest restriction) for higher-rate individual landlords, the corporation tax position of a company, future CGT exposure, and inheritance tax planning. We model both before any purchase so the SDLT, ongoing tax and exit position are weighed together."
 ---
 
-<p>SDLT buy-to-let rates surcharge applies to most investment property purchases in England and Northern Ireland. Since October 2024, landlords pay an additional 5% surcharge on top of standard SDLT rates when buying additional residential properties. This guide explains exactly how much you'll pay and which exemptions might apply.</p>
+<p>Stamp Duty Land Tax (SDLT) on buy-to-let and limited company purchases of residential property in England and Northern Ireland combines the standard residential bands with a 5% additional dwellings surcharge. Two changes since the start of 2025 mean even small portfolio additions are now meaningfully more expensive than they were a year ago: the temporary £250,000 nil-rate band ended on 1 April 2025 (reverting to £125,000), and the additional dwellings surcharge increased from 3% to 5% on 31 October 2024.</p>
 
-<p>The 5% SDLT surcharge BTL represents a significant cost increase — on a £300,000 buy-to-let property, you'll typically pay £23,500 in stamp duty compared to £8,500 without the surcharge.</p>
+<p>This guide sets out the current SDLT position for landlords and limited companies, walks through the calculation at common purchase prices, and covers the reliefs and edge cases that come up most often in our work with portfolio investors.</p>
 
-<h2>Current SDLT Buy-to-Let Rates 2025</h2>
+<h2>Standard residential SDLT rates from 1 April 2025</h2>
 
-<p>When you buy a buy-to-let property as an additional residential property, you pay both the standard SDLT rates and the 5% surcharge:</p>
+<p>The standard residential SDLT bands, before any surcharge, are the rates a private buyer would pay on their only home. They form the base layer of every residential SDLT calculation in England and Northern Ireland.</p>
 
-<ul>
-<li><strong>Up to £250,000:</strong> 8% (3% standard + 5% surcharge)</li>
-<li><strong>£250,001 to £925,000:</strong> 10% (5% standard + 5% surcharge)</li>
-<li><strong>£925,001 to £1.5 million:</strong> 15% (10% standard + 5% surcharge)</li>
-<li><strong>Above £1.5 million:</strong> 17% (12% standard + 5% surcharge)</li>
-</ul>
+<table>
+<thead>
+<tr><th>Portion of price</th><th>Standard rate</th></tr>
+</thead>
+<tbody>
+<tr><td>Up to £125,000</td><td>0%</td></tr>
+<tr><td>£125,001 to £250,000</td><td>2%</td></tr>
+<tr><td>£250,001 to £925,000</td><td>5%</td></tr>
+<tr><td>£925,001 to £1,500,000</td><td>10%</td></tr>
+<tr><td>Above £1,500,000</td><td>12%</td></tr>
+</tbody>
+</table>
 
-<p>These rates apply to the portion of the purchase price within each band, not the entire purchase price. The surcharge applies to the total purchase price, making it particularly expensive for lower-value properties.</p>
+<p>These are slice-rate (marginal) bands. The percentage in each row applies only to the part of the price that falls within that band. The full statutory schedule sits in <a href="https://www.legislation.gov.uk/ukpga/2003/14/section/55">section 55 of the Finance Act 2003</a>, and the official rates page is on <a href="https://www.gov.uk/stamp-duty-land-tax/residential-property-rates">gov.uk</a>.</p>
 
-<p>For example, on a £400,000 buy-to-let property, you'd pay £27,500 SDLT — £20,000 from the standard rates and £20,000 from the 5% surcharge (£20,000 + £7,500 = £27,500 total).</p>
+<h2>The 5% additional dwellings surcharge (HRAD)</h2>
 
-<h2>What Counts as an Additional Property for SDLT?</h2>
+<p>The Higher Rates for Additional Dwellings (HRAD) surcharge applies a flat extra 5 percentage points on top of every band, charged on the full purchase price (not just the slice above £40,000). It applies when the buyer ends the day of completion owning two or more residential properties and is not simply replacing a main residence.</p>
 
-<p>The stamp duty additional property surcharge applies when you already own a residential property anywhere in the world. HMRC considers you to own an "additional property" if:</p>
+<table>
+<thead>
+<tr><th>Portion of price</th><th>Standard rate</th><th>+ HRAD surcharge</th><th>Effective rate</th></tr>
+</thead>
+<tbody>
+<tr><td>Up to £125,000</td><td>0%</td><td>5%</td><td>5%</td></tr>
+<tr><td>£125,001 to £250,000</td><td>2%</td><td>5%</td><td>7%</td></tr>
+<tr><td>£250,001 to £925,000</td><td>5%</td><td>5%</td><td>10%</td></tr>
+<tr><td>£925,001 to £1,500,000</td><td>10%</td><td>5%</td><td>15%</td></tr>
+<tr><td>Above £1,500,000</td><td>12%</td><td>5%</td><td>17%</td></tr>
+</tbody>
+</table>
 
-<ul>
-<li>You already own a residential property worth more than £40,000</li>
-<li>You're buying a second home or investment property</li>
-<li>You're replacing your main residence but keeping the old one</li>
-<li>You own property through a company or partnership</li>
-</ul>
+<p>A limited company always pays the higher rates on residential acquisitions, regardless of whether the company already owns other residential property. The replacement of main residence carve-out is only available to individuals and is not open to corporate buyers. The statutory framework sits in <a href="https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA">Schedule 4ZA to the Finance Act 2003</a>.</p>
 
-<p>The £40,000 threshold is crucial — if your existing property is worth less than £40,000, you won't pay the surcharge. However, most residential properties exceed this threshold.</p>
+<h2>Worked examples at common buy-to-let price points</h2>
 
-<h2>5% SDLT Surcharge BTL: Key Changes Since October 2024</h2>
+<p>The maths is easiest to see with a worked example at each band. The figures below are for England and Northern Ireland and assume the buyer (whether an individual landlord or a limited company) is subject to the 5% HRAD surcharge.</p>
 
-<p>The surcharge increased from 3% to 5% in October 2024, adding significant costs to buy-to-let purchases. This change affects:</p>
+<table>
+<thead>
+<tr><th>Purchase price</th><th>Standard SDLT</th><th>5% HRAD surcharge</th><th>Total SDLT</th></tr>
+</thead>
+<tbody>
+<tr><td>£150,000</td><td>£500</td><td>£7,500</td><td>£8,000</td></tr>
+<tr><td>£200,000</td><td>£1,500</td><td>£10,000</td><td>£11,500</td></tr>
+<tr><td>£250,000</td><td>£2,500</td><td>£12,500</td><td>£15,000</td></tr>
+<tr><td>£300,000</td><td>£5,000</td><td>£15,000</td><td>£20,000</td></tr>
+<tr><td>£400,000</td><td>£10,000</td><td>£20,000</td><td>£30,000</td></tr>
+<tr><td>£500,000</td><td>£15,000</td><td>£25,000</td><td>£40,000</td></tr>
+<tr><td>£750,000</td><td>£27,500</td><td>£37,500</td><td>£65,000</td></tr>
+<tr><td>£1,000,000</td><td>£43,750</td><td>£50,000</td><td>£93,750</td></tr>
+</tbody>
+</table>
 
-<ul>
-<li>All contracts exchanged on or after 31 October 2024</li>
-<li>Purchases where exchange occurred before 31 October but completion was after, if the contract allowed withdrawal</li>
-<li>Both individual landlords and companies buying residential investment property</li>
-</ul>
+<p>Two patterns stand out. At lower price points, the HRAD surcharge is the dominant cost, often dwarfing the standard SDLT bill. Above roughly £400,000 the standard rates start to bite harder because the 5% band is engaged. Either way, the headline yield on a buy-to-let needs to comfortably cover the SDLT amortised over a realistic holding period before financing and operating costs.</p>
 
-<p>The increase makes <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company</a> structures less attractive from a pure SDLT perspective, as companies also pay the higher surcharge.</p>
+<aside>
+<p>Modelling a specific purchase</p>
+<p>If you want the SDLT, ongoing tax and exit position modelled for a real property you are looking at, the form at the bottom of this page goes through to a property tax specialist. Give the property price, the buyer (personal or company) and your other holdings, and we will respond with a written numeric comparison.</p>
+</aside>
 
-<h2>SDLT Buy-to-Let Calculation Examples</h2>
+<h2>Non-UK resident: a further 2% on top</h2>
 
-<p>Here are three common scenarios showing how SDLT applies to buy-to-let purchases:</p>
+<p>A 2% non-resident surcharge applies to residential purchases by buyers who are not UK-resident for SDLT purposes. It sits on top of both the standard rates and the 5% HRAD surcharge, so the effective top-band rate for a non-UK resident company on additional residential property is 19%.</p>
 
-<ul>
-<li><strong>£200,000 Property:</strong> Standard SDLT: £0 (below £250,000 threshold). 5% surcharge: £10,000. <strong>Total SDLT: £10,000</strong>.</li>
-<li><strong>£350,000 Property:</strong> Standard SDLT: £5,000 (£100,000 × 5%). 5% surcharge: £17,500 (£350,000 × 5%). <strong>Total SDLT: £22,500</strong>.</li>
-<li><strong>£500,000 Property:</strong> Standard SDLT: £12,500 ((£250,000 × 0%) + (£250,000 × 5%)). 5% surcharge: £25,000 (£500,000 × 5%). <strong>Total SDLT: £37,500</strong>.</li>
-</ul>
+<p>The residence test is not the same as the corporation tax test. For SDLT, an individual is non-resident if they have not been present in the UK on 183 days in the 12 months ending on the effective date of the transaction. A company is treated as non-resident if it is non-UK resident for corporation tax, or if it is a close company controlled by one or more non-UK resident participators. UK incorporation does not automatically deliver UK residence for these purposes. The detail is in <a href="https://www.legislation.gov.uk/ukpga/2003/14/schedule/9A">Schedule 9A to the Finance Act 2003</a>.</p>
 
-<p>These calculations show why the surcharge is particularly punitive for lower-value properties — on a £200,000 property, the surcharge represents the entire SDLT bill.</p>
+<p>If an individual buyer subsequently meets the 183-day test in the 12 months after completion, they can reclaim the 2% surcharge through HMRC's online service. This does not apply to companies.</p>
 
-<h2>Exemptions and Reliefs from the 5% SDLT Surcharge</h2>
+<h2>Six or more dwellings: the non-residential election</h2>
 
-<p>Several exemptions can reduce or eliminate the SDLT surcharge on buy-to-let purchases:</p>
+<p>One of the few genuinely useful SDLT planning levers for portfolio investors is the rule allowing six or more residential dwellings acquired in a single transaction to be treated as non-residential. The buyer makes an election on the SDLT return and the non-residential bands then apply with no HRAD surcharge.</p>
 
-<ul>
-<li><strong>First-Time Buyer Relief (Limited Application):</strong> First-time buyers purchasing properties up to £625,000 pay no SDLT on the first £425,000 and 5% on the remainder. However, this rarely applies to buy-to-let purchases since most first-time buyers purchase their main residence.</li>
-<li><strong>Replacement of Main Residence:</strong> If you're selling your main residence and buying a new one, you can reclaim the surcharge if you complete the sale within three years. This doesn't typically apply to pure buy-to-let purchases but can affect landlords moving home.</li>
-<li><strong>Corporate Exemptions (Limited):</strong> Companies may qualify for exemptions in specific circumstances, such as property development or if the property will be used for commercial purposes. However, most buy-to-let companies pay the full surcharge.</li>
-<li><strong>Non-Residential Properties:</strong> The surcharge only applies to residential properties. Commercial properties, including shops with residential flats above (if sold as one unit and the commercial element is substantial), may avoid the surcharge entirely.</li>
-</ul>
+<table>
+<thead>
+<tr><th>Portion of price</th><th>Non-residential rate</th></tr>
+</thead>
+<tbody>
+<tr><td>Up to £150,000</td><td>0%</td></tr>
+<tr><td>£150,001 to £250,000</td><td>2%</td></tr>
+<tr><td>Above £250,000</td><td>5%</td></tr>
+</tbody>
+</table>
 
-<h2>SDLT Planning Strategies for Buy-to-Let Investors</h2>
+<p>On a £1.2 million portfolio of six flats bought from a single seller in one transaction, the residential-with-HRAD route would cost roughly £125,000 in SDLT, whereas the non-residential election caps the bill at around £49,500. The saving is substantial enough that "deal stacking" (combining smaller deals into a single SPA) is sometimes worthwhile for serious portfolio buyers, though it needs to be commercially genuine and not a contrived structure.</p>
 
-<p>Understanding SDLT rates can help you structure purchases more efficiently:</p>
+<p>Multiple Dwellings Relief, which previously offered an alternative averaging mechanism, was abolished for transactions with an effective date on or after 1 June 2024. The six-dwellings election is now the principal portfolio-friendly route.</p>
 
-<ul>
-<li><strong>Consider Purchase Timing:</strong> If you're selling an existing property, completing the sale before purchasing your next buy-to-let can avoid the surcharge temporarily. You can then reclaim the surcharge when you complete your sale.</li>
-<li><strong>Mixed-Use Properties:</strong> Properties with substantial commercial elements may qualify for commercial SDLT rates (up to 5% with no surcharge). This requires careful evaluation of the commercial vs residential split.</li>
-<li><strong>Corporate vs Personal Ownership:</strong> Both companies and individuals pay the 5% surcharge, but companies may offer other tax advantages despite the SDLT cost. The <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 rules</a> make company ownership particularly attractive for higher-rate taxpayers.</li>
-</ul>
+<h2>Replacement of main residence: the individual landlord lever</h2>
 
-<h2>How SDLT Fits into Overall Property Investment Tax Planning</h2>
-
-<p>SDLT is just one element of <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">property investment tax</a> planning. Consider how it integrates with:</p>
-
-<ul>
-<li><strong>Income tax:</strong> <a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">Rental income tax</a> and Section 24 restrictions</li>
-<li><strong>Capital gains tax:</strong> Future <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT on property sales</a></li>
-<li><strong>Ongoing compliance:</strong> <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> from April 2026</li>
-</ul>
-
-<p>The 5% surcharge significantly increases upfront costs, making it crucial to factor SDLT into your return calculations when evaluating buy-to-let investments.</p>
-
-<h2>SDLT Payment, Reporting and Regional Variations</h2>
-
-<p>You must pay SDLT within 14 days of completion and submit your SDLT return online. Key points include:</p>
-
-<ul>
-<li>HMRC charges penalties for late payment (5% after 30 days, additional 5% after 6 months)</li>
-<li>Interest applies to overdue payments at the current rate (7.75% as of 2025)</li>
-<li>You can reclaim overpaid SDLT if circumstances change (e.g., you sell an existing property)</li>
-<li>Professional advice helps ensure correct calculation and potential reliefs are claimed</li>
-</ul>
-
-<p>Different rules apply outside England and Northern Ireland:</p>
+<p>An individual landlord who is moving home and keeping a previous main residence as a let property can sometimes structure the timing to soften the SDLT impact. There are two routes.</p>
 
 <ul>
-<li><strong>Scotland (LBTT):</strong> Land and Buildings Transaction Tax includes a 6% Additional Dwelling Supplement (ADS) on additional residential properties, higher than England's 5% surcharge.</li>
-<li><strong>Wales (LTT):</strong> Land Transaction Tax applies a 4% surcharge on additional residential properties, lower than England's rate but still significant.</li>
+<li><strong>Sell first, buy second.</strong> If the previous main home is sold before the new home completes, the new purchase is treated as a replacement of main residence and the 5% surcharge does not apply at all, even though the buyer may still own other rental properties.</li>
+<li><strong>Buy first, sell within 36 months.</strong> If the buyer cannot sell the previous home first, the 5% surcharge is paid on the new purchase but can be reclaimed in full if the previous main home is sold within 36 months of the new purchase. The reclaim is filed online and must be submitted within 12 months of the sale.</li>
 </ul>
 
-<p>These regional differences can influence where you choose to invest, particularly for properties near borders.</p>
+<p>This pair of rules is the only meaningful route by which someone who already owns rental property can avoid the surcharge on a purchase, and it is only open to individuals (not companies). For pure buy-to-let purchases, where neither the new nor the old property is a main residence, the surcharge is unavoidable.</p>
 
-<h2>Getting Professional Help with SDLT</h2>
+<h2>First-time buyer relief: not for landlords or companies</h2>
 
-<p>SDLT calculations can be complex, particularly when exemptions or reliefs might apply. <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Property accountants</a> can help ensure you:</p>
+<p>First-time buyer relief gives a 0% rate on the first £300,000 of a qualifying purchase and 5% on the portion between £300,001 and £500,000, with no relief at all if the purchase price exceeds £500,000. The temporary higher thresholds of £425,000 and £625,000 that applied between September 2022 and 31 March 2025 are no longer available.</p>
+
+<p>The relief is only available to individuals buying a property as their only or main home, where they (and any joint purchasers) have never previously owned a residential property anywhere in the world. Limited companies cannot claim it, and an individual buying a buy-to-let cannot claim it because the purchase is not their main residence.</p>
+
+<h2>Mixed-use, uninhabitable and other "off-grid" arguments</h2>
+
+<p>A small but persistent share of SDLT planning revolves around taking a transaction outside the residential rates altogether. Two patterns come up repeatedly.</p>
 
 <ul>
-<li>Calculate SDLT correctly and claim applicable reliefs</li>
-<li>Structure purchases to minimise overall tax costs</li>
-<li>Plan for future changes in property tax legislation</li>
-<li>Integrate SDLT planning with your broader tax strategy</li>
+<li><strong>Mixed-use property.</strong> A genuine mixed-use property (a shop with a flat above bought as one transaction, a farmhouse with substantial grazing land) attracts the non-residential SDLT rates and no HRAD surcharge. HMRC has tightened its position significantly in the last few years and now looks for the commercial element to be substantial, in use and capable of standing on its own commercial footing. Token commercial leases attached to otherwise residential properties to access the rates are routinely challenged.</li>
+<li><strong>Uninhabitable property.</strong> Some buyers argue a derelict building is not "suitable for use as a dwelling" and so should be taxed at non-residential rates. The leading case (P N Bewley Ltd v HMRC) succeeded on extreme facts, including asbestos and a collapsed roof. Cosmetic disrepair, missing kitchens or bathrooms, or properties needing modernisation do not meet the bar.</li>
 </ul>
 
-<p>Given the significant costs involved — potentially tens of thousands of pounds on each purchase — professional advice often pays for itself through proper planning and compliance.</p>
+<p>Where one of these arguments is genuinely available, the SDLT saving can be enormous. Where it is borderline or contrived, the eventual cost (full residential rates, HRAD surcharge, interest and penalties) usually exceeds the saving by a wide margin.</p>
+
+<aside>
+<p>Borderline mixed-use or uninhabitable purchase?</p>
+<p>We can sense-check before exchange whether a property has a defensible mixed-use or uninhabitable position, or whether the conservative residential treatment is the right answer. The form below routes to a specialist who handles SDLT borderline cases regularly.</p>
+</aside>
+
+<h2>ATED: the ongoing charge for company-held residential property</h2>
+
+<p>Limited companies owning UK residential property valued over £500,000 fall within the Annual Tax on Enveloped Dwellings (ATED) regime. ATED is a flat-rate annual charge based on banded property values and is wholly separate from SDLT. For 2026/27 the bottom band charge is around £4,500 a year and the charge rises through six bands to over £290,000 for properties valued above £20 million.</p>
+
+<p>For most portfolio landlords, ATED is administrative rather than substantive: a company holding residential property as part of a genuine property rental business open to third parties on a commercial basis can claim the <strong>property letting relief</strong> and file a nil return. The return is still required, by 30 April each year, and missing the deadline triggers automatic penalties even where no tax is owed. The detail is on <a href="https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics">gov.uk</a>.</p>
+
+<h2>Scotland and Wales: different tax, different rates</h2>
+
+<p>SDLT does not apply in Scotland or Wales. Investors buying north or west of the border deal with separate devolved taxes.</p>
+
+<ul>
+<li><strong>Scotland: Land and Buildings Transaction Tax (LBTT).</strong> LBTT has its own banded schedule and an Additional Dwelling Supplement (ADS) of 8% since 5 December 2024 (previously 6%). The ADS applies on the full purchase price, similar to SDLT's HRAD surcharge.</li>
+<li><strong>Wales: Land Transaction Tax (LTT).</strong> LTT has a separate higher residential rates schedule for additional dwellings, with surcharges built into each band rather than applied as a flat top-up. The Welsh schedule is set by the Welsh Government and is updated more often than SDLT, so it pays to check the current schedule before exchange.</li>
+</ul>
+
+<p>The differential matters for investors who are flexible on location. Identical headline yields in similar regional markets can produce materially different acquisition costs depending on which side of the border the property sits.</p>
+
+<h2>Filing, payment, penalties and interest</h2>
+
+<p>The SDLT return (SDLT1) must be filed and the tax paid within 14 days of the effective date of the transaction. The effective date is normally the completion date, though substantial performance (the buyer taking possession or paying most of the price) can bring it forward.</p>
+
+<ul>
+<li><strong>Late filing:</strong> £100 fixed penalty up to three months late, rising to £200, with potential tax-geared penalties beyond.</li>
+<li><strong>Late payment:</strong> daily interest at HMRC's published rate from day 15, a 5% surcharge if the tax is more than 30 days overdue, and a further 5% surcharge at 6 months and 12 months.</li>
+<li><strong>Reclaims:</strong> overpaid SDLT can be reclaimed online (most commonly the 5% surcharge after sale of a former main residence), generally within 12 months of the relevant trigger.</li>
+</ul>
+
+<p>HMRC publishes the current interest rate at <a href="https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments">gov.uk/hmrc-interest-rates</a>. The rate moves with the Bank of England base rate plus a margin and has been at elevated levels throughout 2024/25 and into 2026.</p>
+
+<h2>Calculating it yourself, and where the calculator falls short</h2>
+
+<p>HMRC's <a href="https://www.tax.service.gov.uk/calculate-stamp-duty-land-tax/">SDLT calculator</a> is the safest starting point for a straightforward purchase. It correctly applies the standard bands, the 5% HRAD surcharge and the 2% non-resident surcharge for clean cases.</p>
+
+<p>Where it stops being reliable is for any non-standard transaction: linked transactions, sub-sales, grant of new leases over residential property, parts of mixed-use sites, packages of six or more dwellings, and any case involving a partnership or trust. In each of those cases the bands and surcharges interact in ways the calculator does not handle, and underpaying SDLT on the strength of the calculator output is not a defence against penalties. A property tax specialist should sense-check anything outside the straightforward "individual or company buys one residential property" pattern.</p>
+
+<h2>How SDLT shapes the overall buy-to-let decision</h2>
+
+<p>SDLT is upfront and visible, which makes it easy to over-weight in the buying decision. The bigger factors over a 10 to 20 year holding period are usually the annual income tax position (heavily affected by <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24</a> for higher-rate personal landlords), the exit CGT position (covered in our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT on UK property guide</a>) and, for portfolio holders, the inheritance tax position.</p>
+
+<p>The case for buying through a <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited company</a> rarely turns on SDLT, because both routes pay the surcharge. It usually turns on whether the higher-rate income tax saving from full mortgage interest deduction inside the company, compounded over the holding period, exceeds the additional friction (corporation tax, dividend tax on extraction, accountancy and filing costs). Modelling both routes for a specific property and a specific investor profile is the only way to answer it properly.</p>
+
+<p>Compliance through ownership and on exit, including <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> (live from 6 April 2026 for sole-trader landlords above £50,000), is part of the same picture and should be factored into the buy decision rather than treated as a downstream worry.</p>
+</content>
+</invoke>

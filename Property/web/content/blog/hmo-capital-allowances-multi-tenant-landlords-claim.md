@@ -114,7 +114,7 @@ faqs:
 <p>From April 2027, property income faces separate tax rates higher than general income tax rates. Capital allowances that reduce property income will provide greater tax savings under this new system. Landlords might consider accelerating capital expenditure before April 2027 to maximise relief at current rates, while building up capital allowances pools for future years when property tax rates increase.</p>
 
 <h3>Making Tax Digital</h3>
-<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital</a> requires quarterly digital reporting for landlords with gross property income over £10,000. Capital allowances calculations must be integrated into this quarterly reporting cycle. Digital record-keeping systems become essential, with clear categorisation of capital vs revenue expenses and automatic allowances calculations.</p>
+<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital</a> requires quarterly digital reporting for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). Capital allowances calculations must be integrated into this quarterly reporting cycle. Digital record-keeping systems become essential, with clear categorisation of capital vs revenue expenses and automatic allowances calculations.</p>
 
 <h2>Professional Support</h2>
 <p>HMO capital allowances involve complex technical rules where professional guidance often proves valuable. The interaction between property law, tax legislation, and commercial considerations requires specialist knowledge.</p>

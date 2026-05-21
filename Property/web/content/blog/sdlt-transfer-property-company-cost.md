@@ -16,7 +16,7 @@ faqs:
   - question: "How much SDLT do I pay when transferring property to my company?"
     answer: "SDLT ranges from 5% to 17% depending on property value. A £400,000 property costs £27,500 in SDLT (5% on first £250k, 10% on remainder). The 5% surcharge applies to the entire value for additional residential properties."
   - question: "Can I avoid SDLT when incorporating my property business?"
-    answer: "SDLT cannot be completely avoided, but reliefs like Multiple Dwellings Relief (for multiple properties) and sub-sale relief (for properties under contract) can reduce costs. Professional structuring advice is essential to minimise liability."
+    answer: "SDLT cannot be completely avoided. Multiple Dwellings Relief, often cited in older guides, was abolished for transactions completing on or after 1 June 2024 and is no longer available. The only mainstream route to mitigate the SDLT to nil is genuine partnership incorporation under Schedule 15 paragraph 10 of FA 2003, which is heavily scrutinised by HMRC. Sub-sale relief can help for new acquisitions held under contract but does not assist existing portfolio transfers. Professional structuring advice is essential."
   - question: "Is SDLT calculated on the price I paid or current market value?"
     answer: "SDLT is calculated on current market value when transferring to your own company, not the original purchase price. This connected party rule prevents artificial SDLT reduction through below-market transfers."
   - question: "Do I pay both SDLT and Capital Gains Tax on property transfers?"
@@ -73,18 +73,11 @@ faqs:
 </ul>
 
 <h2>Available SDLT Reliefs</h2>
-<h3>Multiple Dwellings Relief (MDR)</h3>
-<p>If you're transferring multiple properties simultaneously, Multiple Dwellings Relief can reduce SDLT costs. MDR calculates SDLT based on the average property value rather than individual values.</p>
-<p>For MDR to apply:</p>
-<ul>
-<li>You must transfer at least two dwellings in a single transaction</li>
-<li>Each property must be suitable for residential use</li>
-<li>The relief applies to the standard SDLT rates only (not the 5% surcharge)</li>
-</ul>
-<p><strong>MDR Calculation Example:</strong> Transferring three properties worth £300,000, £450,000, and £350,000 (total £1.1 million):</p>
-<p><strong>Without MDR:</strong> Each property calculated separately = £94,500 total SDLT</p>
-<p><strong>With MDR:</strong> Average value £366,667 × 3 properties = £69,000 total SDLT</p>
-<p>Saving: £25,500</p>
+<h3>Multiple Dwellings Relief: Abolished from 1 June 2024</h3>
+<p>Multiple Dwellings Relief (MDR), historically the main relief on bulk acquisitions of residential property, was abolished by Finance (No.2) Act 2024 for transactions with an effective date on or after 1 June 2024. Anti-forestalling rules prevent late claims via sub-sale, option arrangements, or other restructuring of pre-1 June 2024 contracts. Older guides on the internet still recommend MDR; that advice is out of date.</p>
+<p>For transactions completing on or after 1 June 2024, the only mainstream route to mitigate the SDLT bill on portfolio incorporation is genuine partnership incorporation under FA 2003 Schedule 15 paragraph 10. The portfolio must already be held in a real, pre-existing letting partnership (with partnership tax returns, partnership accounting, and joint borrowing) for HMRC to accept the relief on transfer of all partnership property into a wholly-owned company. This is not a quick fix for a husband-and-wife or two-person joint-ownership portfolio.</p>
+<h3>Six-Dwellings Election (Six or More Properties)</h3>
+<p>Where six or more residential dwellings are acquired in a single transaction, the buyer can elect to apply the non-residential SDLT rates instead (0% on the first £150,000, 2% on £150,001 to £250,000, 5% above £250,000) and no additional dwellings surcharge applies. This is set out in paragraph 7 of Schedule 6B FA 2003 and survives the MDR abolition. It is now the principal portfolio-friendly route for genuine bulk acquisitions.</p>
 <h3>Sub-Sale Relief</h3>
 <p>Sub-sale relief can eliminate SDLT on property transfers to companies in specific circumstances. This relief applies when:</p>
 <ul>
@@ -130,5 +123,5 @@ faqs:
 <p>The <strong>SDLT transfer property company</strong> calculation involves multiple variables and potential reliefs. Given the significant costs involved, seek professional advice to calculate exact SDLT liability for your specific situation, identify available reliefs and exemptions, structure transfers tax-efficiently, and ensure compliance with all filing requirements. A qualified <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can model different scenarios and recommend the most cost-effective approach for your circumstances.</p>
 
 <h2>Key Takeaways</h2>
-<p>SDLT on property transfers to companies is expensive, with rates of 5-17% depending on property value. The 5% surcharge significantly increases costs compared to individual purchases. However, reliefs like Multiple Dwellings Relief and sub-sale relief can reduce liability in specific circumstances.</p>
+<p>SDLT on property transfers to companies is expensive, with rates of 5-17% depending on property value. The 5% surcharge significantly increases costs compared to individual purchases. With Multiple Dwellings Relief abolished from 1 June 2024, the main mitigation route for existing portfolios is genuine partnership incorporation under FA 2003 Sch 15 para 10. For genuine bulk acquisitions of six or more dwellings the six-dwellings non-residential election remains available. Sub-sale relief can help in narrow new-acquisition scenarios.</p>
 <p>Before proceeding with <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">property incorporation</a>, ensure you understand the total cost including both SDLT and CGT implications. The decision should be based on long-term tax savings rather than short-term costs alone.</p>

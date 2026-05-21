@@ -85,7 +85,7 @@ faqs:
 
 <h2>Record Keeping and Making Tax Digital</h2>
 
-<p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becoming mandatory from April 2026 for landlords with gross rental income over £10,000, maintaining detailed records is increasingly important. If you think you might qualify for rollover relief property benefits, you'll need comprehensive records showing business use of the disposed property, disposal proceeds and costs, reinvestment details and timing, and evidence of trading activity (if claiming business status).</p>
+<p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becoming mandatory from April 2026 for landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028), maintaining detailed records is increasingly important. If you think you might qualify for rollover relief property benefits, you'll need comprehensive records showing business use of the disposed property, disposal proceeds and costs, reinvestment details and timing, and evidence of trading activity (if claiming business status).</p>
 
 <h2>The Importance of Professional Advice</h2>
 

@@ -86,7 +86,7 @@ faqs:
 </ul>
 
 <h2>The Future and Alternative Models</h2>
-<p>Remote accounting is becoming the norm. <strong>Making Tax Digital (MTD)</strong> requirements from 2026 mean landlords with gross rental income over £10,000 must use compatible software. Artificial intelligence and automation are making online accounting more efficient for tasks like bank reconciliation.</p>
+<p>Remote accounting is becoming the norm. <strong>Making Tax Digital (MTD)</strong> requirements from 2026 mean landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must use compatible software. Artificial intelligence and automation are making online accounting more efficient for tasks like bank reconciliation.</p>
 <p>For those wanting a middle ground, <strong>alternative hybrid models</strong> exist. Some accountants offer cloud-based systems with occasional face-to-face meetings, or online bookkeeping paired with traditional year-end services for strategic discussions.</p>
 
 <h2>Conclusion</h2>

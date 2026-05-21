@@ -431,6 +431,12 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "best-property-accountant": "/blog/property-accountant-services/how-to-choose-a-property-accountant",
   "local-property-accountant": "/blog/property-accountant-services/how-to-choose-a-property-accountant",
   "when-to-hire-property-accountant": "/blog/property-accountant-services/how-to-choose-a-property-accountant",
+  // Cannibalisation cleanup (2026-05-21)
+  "hmo-licensing-costs-tax-deductible": "/blog/property-types-and-specialist-tax/hmo-licensing-fees-tax-deductible-uk-landlords",
+  "property-accounting-software-uk": "/blog/portfolio-management/property-accounting-software-uk-2026",
+  "2027-property-tax-rates-cgt-capital-gains-changes": "/blog/capital-gains-tax/cgt-property-2027-rate-changes-uk-landlords",
+  // Obsolete £10,000 MTD slug (threshold was abandoned in late 2022)
+  "mtd-10000-threshold-when-does-it-apply": "/blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions",
 };
 
 const LOCATION_TO_BLOG: Record<string, string> = {

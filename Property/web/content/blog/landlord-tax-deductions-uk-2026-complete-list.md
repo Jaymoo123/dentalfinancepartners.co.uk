@@ -22,7 +22,7 @@ faqs:
   - question: "What's the difference between repairs and improvements for tax?"
     answer: "Repairs maintain the property in its original condition and are fully deductible (painting, fixing boilers, replacing broken items). Improvements enhance the property beyond its original state and are capital expenditure, not deductible as revenue expenses but may qualify for different tax treatment."
   - question: "Do I need to keep digital records for landlord expenses?"
-    answer: "Yes, Making Tax Digital for Income Tax Property starts 6 April 2026 for landlords with annual property income over £10,000. You must maintain digital records and submit quarterly updates. Keep all receipts, invoices, bank statements, and mileage logs in digital format with cloud-based accounting software."
+    answer: "Yes, Making Tax Digital for Income Tax Property starts 6 April 2026 for landlords with annual qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). You must maintain digital records and submit quarterly updates. Keep all receipts, invoices, bank statements, and mileage logs in digital format with cloud-based accounting software."
 ---
 
 <p>Understanding <strong>landlord tax deductions UK</strong> rules is crucial for maximising your rental property profits. With MTD for Income Tax Property starting 6 April 2026, keeping accurate records of allowable expenses has never been more important.</p>
@@ -211,7 +211,7 @@ faqs:
 
 <h2>Record Keeping for Making Tax Digital (MTD)</h2>
 
-<p>With Making Tax Digital for Income Tax Property starting 6 April 2026, digital record keeping becomes mandatory for many landlords. You must maintain digital records and submit quarterly updates if your annual property income exceeds £10,000. This makes tracking <strong>landlord expenses allowable</strong> for tax relief more important than ever.</p>
+<p>With Making Tax Digital for Income Tax Property starting 6 April 2026, digital record keeping becomes mandatory for many landlords. You must maintain digital records and submit quarterly updates if your annual qualifying income exceeds £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This makes tracking <strong>landlord expenses allowable</strong> for tax relief more important than ever.</p>
 
 <h3>Essential Records</h3>
 <ul>

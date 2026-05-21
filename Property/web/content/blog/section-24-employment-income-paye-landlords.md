@@ -92,7 +92,7 @@ faqs:
 <li>Calculating tax on the combined total</li>
 </ul>
 <h3>Digital Record-Keeping Requirements</h3>
-<p>From April 2026, landlords with gross rental income over £10,000 must maintain digital records and submit quarterly updates. For employed landlords, this means integrating property records with your existing employment tax affairs. Most employed landlords will need accounting software that can handle both rental income tracking and integration with Self Assessment requirements.</p>
+<p>From April 2026, landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must maintain digital records and submit quarterly updates. For employed landlords, this means integrating property records with your existing employment tax affairs. Most employed landlords will need accounting software that can handle both rental income tracking and integration with Self Assessment requirements.</p>
 
 <h2>When to Seek Professional Advice</h2>
 <p>The interaction between Section 24 and employment income creates complex planning scenarios that often benefit from professional input. <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Property accountants</a> can model different scenarios and identify optimisation opportunities.</p>

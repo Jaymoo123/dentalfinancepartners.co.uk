@@ -14,7 +14,7 @@ summary: "Sunderland's property market presents unique opportunities and challen
 schema: ""
 faqs:
   - question: "Do I need a specialist property accountant if I only have one rental property in Sunderland?"
-    answer: "Even single property landlords can benefit from specialist advice, especially with MTD compliance required from April 2026 for gross rental income over £10,000. A property accountant can ensure you claim all allowable expenses, plan for the 2027 tax rate changes, and maintain proper records. The tax savings often exceed the additional fees compared to a general accountant."
+    answer: "Even single property landlords can benefit from specialist advice, especially with MTD compliance required from April 2026 for gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). A property accountant can ensure you claim all allowable expenses, plan for the 2027 tax rate changes, and maintain proper records. The tax savings often exceed the additional fees compared to a general accountant."
   - question: "How will the April 2027 tax rate changes affect Sunderland landlords specifically?"
     answer: "From April 2027, property income will be taxed at 22% basic rate, 42% higher rate, and 47% additional rate - higher than general income tax rates. For Sunderland landlords currently paying 40% tax on rental profits, this means an increase to 42%. Higher earners face 47% rather than 45%. This makes incorporation into a limited company more attractive for many landlords."
   - question: "What records do Sunderland landlords need for Making Tax Digital compliance?"
@@ -59,7 +59,7 @@ faqs:
 <p><strong>Landlord tax advice in Sunderland</strong> should focus on strategies to mitigate Section 24's impact. Our comprehensive guide to <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 tax relief</a> provides detailed analysis of these strategies.</p>
 
 <h3>Making Tax Digital (MTD) Compliance from April 2026</h3>
-<p>From 6 April 2026, all landlords with gross property income exceeding £10,000 must comply with Making Tax Digital for Income Tax. This represents a fundamental shift in how property income must be reported to HMRC.</p>
+<p>From 6 April 2026, all landlords with gross  income above £50,000 (the MTD threshold from 6 April 2026; drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with Making Tax Digital for Income Tax. This represents a fundamental shift in how property income must be reported to HMRC.</p>
 <p>For most Sunderland landlords, this means quarterly digital submissions, using compatible software to maintain digital records, more frequent interaction with HMRC systems, and potential penalties for non-compliance. A property accountant experienced with MTD implementation can help choose appropriate software and establish compliant systems. Learn more about <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> for landlords.</p>
 
 <h3>April 2027 Property Income Tax Rate Changes</h3>

@@ -24,6 +24,7 @@ from typing import Any
 
 import httpx
 
+from optimisation_engine.competitor._db import _esc, _sql
 from optimisation_engine.config import SUPABASE_KEY, SUPABASE_URL
 
 # -----------------------------------------------------------------------------
@@ -1166,6 +1167,176 @@ def detect_traffic_without_leads(
     ]
 
 
+def detect_monitored_page_regression(
+    site_key: str,
+    *,
+    window_days: int = 28,
+    grace_days: int = 14,
+    clicks_drop_ratio: float = 0.5,
+    position_drop: float = 5.0,
+    redirect_min_clicks: int = 1,
+) -> list[Opportunity]:
+    """Flag regressions on actively-monitored pages from the 2026-05-21 cleanup pass.
+
+    For each active row in monitored_pages whose rewrite_date is at least
+    `grace_days` ago (so GSC has had time to update):
+
+      - rewrite rows: flag if last-`window_days` clicks have dropped by
+        `clicks_drop_ratio` vs baseline OR avg position has worsened by
+        `position_drop` places.
+      - redirect rows: the OLD slug should now show ~0 clicks (it 301s to the
+        keeper). Flag if there are still `>= redirect_min_clicks` on the old
+        path (means the redirect is not landing where intended OR the redirect
+        target is bleeding traffic).
+
+    Pages past `monitor_until` are auto-expired.
+    """
+    out: list[Opportunity] = []
+
+    # Auto-expire pages past their monitor_until date
+    _sql(
+        f"""
+        UPDATE monitored_pages
+        SET status = 'expired', updated_at = NOW()
+        WHERE site_key = {_esc(site_key)}
+          AND status = 'active'
+          AND monitor_until < CURRENT_DATE
+        """
+    )
+
+    rows = _sql(
+        f"""
+        SELECT id, slug, page_url, rewrite_date, rewrite_type, redirect_target,
+               baseline_clicks, baseline_impressions, baseline_position
+        FROM monitored_pages
+        WHERE site_key = {_esc(site_key)}
+          AND status = 'active'
+          AND rewrite_date <= CURRENT_DATE - INTERVAL '{grace_days} days'
+        """
+    )
+    if not rows:
+        return out
+
+    # Pull current window stats for every monitored slug in one batch
+    slugs = [r["slug"] for r in rows]
+    cases = " ".join(
+        f"WHEN page_url ILIKE '%/{s}' OR page_url ILIKE '%/{s}/' THEN {_esc(s)}"
+        for s in slugs
+    )
+    ors = " OR ".join(f"page_url ILIKE '%/{s}%'" for s in slugs)
+    stat_rows = _sql(
+        f"""
+        WITH tagged AS (
+          SELECT CASE {cases} ELSE NULL END AS matched_slug,
+                 clicks, impressions, position
+          FROM gsc_query_data
+          WHERE site_key = {_esc(site_key)}
+            AND ({ors})
+            AND date >= CURRENT_DATE - INTERVAL '{window_days} days'
+        )
+        SELECT matched_slug,
+               COALESCE(SUM(clicks),0) AS clicks,
+               COALESCE(SUM(impressions),0) AS impressions,
+               COALESCE(AVG(position),0)::NUMERIC(5,2) AS position
+        FROM tagged
+        WHERE matched_slug IS NOT NULL
+        GROUP BY matched_slug
+        """
+    )
+    current = {
+        r["matched_slug"]: {
+            "clicks": int(r["clicks"]),
+            "impressions": int(r["impressions"]),
+            "position": float(r["position"]) if r["position"] else None,
+        }
+        for r in stat_rows
+    }
+
+    for r in rows:
+        slug = r["slug"]
+        cur = current.get(slug, {"clicks": 0, "impressions": 0, "position": None})
+        base_clicks = int(r["baseline_clicks"] or 0)
+        base_pos = float(r["baseline_position"]) if r["baseline_position"] is not None else None
+
+        if r["rewrite_type"] == "redirect":
+            # Old slug should be silent. Any remaining clicks indicate a redirect issue.
+            if cur["clicks"] >= redirect_min_clicks:
+                out.append(Opportunity(
+                    site_key=site_key,
+                    opportunity_type="monitored_redirect_leak",
+                    target_url=r["page_url"],
+                    primary_query=None,
+                    target_query_cluster=[],
+                    recommended_action=(
+                        f"Verify 301 redirect is firing for /blog/.../{slug}. "
+                        f"Old slug still received {cur['clicks']} clicks in {window_days}d."
+                    ),
+                    rationale=(
+                        f"Slug {slug} was redirected on {r['rewrite_date']} to {r['redirect_target']}. "
+                        f"Current {window_days}d clicks on old path: {cur['clicks']} (expected ~0)."
+                    ),
+                    score=60,
+                    confidence="high",
+                    supporting_data={
+                        "monitored_page_id": r["id"],
+                        "rewrite_type": "redirect",
+                        "redirect_target": r["redirect_target"],
+                        "baseline_clicks": base_clicks,
+                        "current_clicks": cur["clicks"],
+                        "current_impressions": cur["impressions"],
+                    },
+                ))
+        else:
+            # Rewrite row: compare current vs baseline
+            flags = []
+            if base_clicks >= 5 and cur["clicks"] < base_clicks * (1 - clicks_drop_ratio):
+                flags.append(f"clicks {base_clicks} -> {cur['clicks']}")
+            if (base_pos is not None and cur["position"] is not None and
+                    cur["position"] - base_pos >= position_drop):
+                flags.append(f"position {base_pos:.1f} -> {cur['position']:.1f}")
+            if not flags:
+                continue
+            out.append(Opportunity(
+                site_key=site_key,
+                opportunity_type="monitored_page_regression",
+                target_url=r["page_url"],
+                primary_query=None,
+                target_query_cluster=[],
+                recommended_action=(
+                    f"Investigate regression on {slug}: {'; '.join(flags)}. "
+                    f"Compare current page vs git diff at {r['rewrite_date']}."
+                ),
+                rationale=(
+                    f"Page rewritten on {r['rewrite_date']}. Baseline "
+                    f"clicks={base_clicks} pos={base_pos}. "
+                    f"Current: clicks={cur['clicks']} pos={cur['position']}."
+                ),
+                score=70,
+                confidence="high",
+                supporting_data={
+                    "monitored_page_id": r["id"],
+                    "rewrite_type": "rewrite",
+                    "rewrite_date": str(r["rewrite_date"]),
+                    "baseline_clicks": base_clicks,
+                    "baseline_position": base_pos,
+                    "current_clicks": cur["clicks"],
+                    "current_impressions": cur["impressions"],
+                    "current_position": cur["position"],
+                    "window_days": window_days,
+                },
+            ))
+
+    # Mark flagged rows so we don't spam every week
+    if out:
+        ids = [o.supporting_data["monitored_page_id"] for o in out]
+        ids_sql = ",".join(str(i) for i in ids)
+        _sql(
+            f"UPDATE monitored_pages SET status='flagged', updated_at=NOW() WHERE id IN ({ids_sql})"
+        )
+
+    return out
+
+
 def run_all_detectors(site_key: str, days: int = 28) -> dict[str, Any]:
     print(f"\n=== Detectors for {site_key} ===")
     rows = _fetch_query_data(site_key, days=days)
@@ -1189,6 +1360,7 @@ def run_all_detectors(site_key: str, days: int = 28) -> dict[str, Any]:
     opportunities += detect_engagement_gap(site_key)
     opportunities += detect_conversion_drop(site_key)
     opportunities += detect_traffic_without_leads(site_key)
+    opportunities += detect_monitored_page_regression(site_key)
 
     # Sort by score desc for nicer logs
     opportunities.sort(key=lambda o: o.score, reverse=True)

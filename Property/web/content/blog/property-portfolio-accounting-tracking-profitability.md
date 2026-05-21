@@ -123,7 +123,7 @@ faqs:
 <p>Monthly property management accounts should feed directly into tax planning. Track your cumulative rental profit against personal allowances and tax bands. For 2025/26, the basic rate tax band runs up to £37,700 (plus personal allowance). Consider whether <a href="/incorporation">incorporation</a> might benefit your tax position as your portfolio grows.</p>
 
 <h3>Preparing for Making Tax Digital (MTD)</h3>
-<p>MTD for Income Tax Property begins in April 2026 for landlords with annual property income over £10,000. This requires digital record-keeping and quarterly submissions to HMRC.</p>
+<p>MTD for Income Tax Property begins in April 2026 for landlords with annual qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This requires digital record-keeping and quarterly submissions to HMRC.</p>
 <p>Starting property portfolio accounting by individual property now positions you well for MTD compliance. The quarterly submissions will require detailed breakdowns that are much easier with property-specific records already in place. Consider how your current system will export data in MTD-compatible formats.</p>
 
 <h2>Technology, Systems and Record Keeping</h2>

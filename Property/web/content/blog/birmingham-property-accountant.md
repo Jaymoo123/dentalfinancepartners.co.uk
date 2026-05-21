@@ -28,7 +28,7 @@ faqs:
   - question: "When should I speak to a property tax accountant about incorporation?"
     answer: "Consider incorporation advice when your property income reaches higher tax rates (over £50,270 in 2025/26) or when Section 24 restrictions significantly impact your tax position. However, incorporation isn't suitable for everyone and has ongoing compliance costs. A Birmingham property tax specialist can assess whether it's right for your specific circumstances."
   - question: "How early should I prepare for Making Tax Digital requirements starting in 2026?"
-    answer: "Start preparing now if your property income exceeds £10,000 annually. You'll need MTD-compatible software, quarterly submission processes, and updated record-keeping systems. Early preparation prevents last-minute compliance issues and ensures smooth transition when the requirements take effect in April 2026."
+    answer: "Start preparing now if your qualifying income exceeds £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) annually. You'll need MTD-compatible software, quarterly submission processes, and updated record-keeping systems. Early preparation prevents last-minute compliance issues and ensures smooth transition when the requirements take effect in April 2026."
 ---
 
 <p>As a <strong>Birmingham property accountant</strong>, we understand the unique challenges facing landlords and property investors in the West Midlands. From managing multiple buy-to-let properties across Edgbaston and Kings Heath to developing commercial sites in the Jewellery Quarter, Birmingham's diverse property market requires specialist expertise.</p>
@@ -67,7 +67,7 @@ faqs:
 <p>A Birmingham portfolio owner with £60,000 annual rental profits might save over £8,000 annually through incorporation, even accounting for additional administration costs and potential dividend tax implications. The decision depends on various factors including your total income, future investment plans, and whether you want to retain profits within the business. Professional guidance ensures you make the right choice for your circumstances.</p>
 
 <h2>Making Tax Digital (MTD) Preparation</h2>
-<p>From April 2026, landlords with property income above £10,000 must comply with Making Tax Digital for Income Tax. This requires quarterly digital submissions rather than annual paper returns.</p>
+<p>From April 2026, landlords with qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with Making Tax Digital for Income Tax. This requires quarterly digital submissions rather than annual paper returns.</p>
 <p>Early preparation involves setting up appropriate accounting software, establishing digital record-keeping processes, and ensuring your <strong>Birmingham property accountant</strong> has systems in place for quarterly compliance. For Birmingham landlords managing multiple properties, MTD compliance requires particular attention to expense allocation and record keeping across different properties and tenancies. Leaving this until 2026 creates unnecessary stress and potential penalties.</p>
 
 <h2>Birmingham Property Market Considerations</h2>

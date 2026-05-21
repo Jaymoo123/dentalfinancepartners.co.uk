@@ -177,7 +177,7 @@ faqs:
 
 <h2>Recent Developments and Future Changes</h2>
 
-<p>Recent tax changes have impacted property businesses and BPR availability. From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> will apply to landlords with gross property income over £10,000. This increased record-keeping may help demonstrate trading activities for BPR purposes.</p>
+<p>Recent tax changes have impacted property businesses and BPR availability. From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> will apply to landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This increased record-keeping may help demonstrate trading activities for BPR purposes.</p>
 
 <h2>Seeking Professional Guidance</h2>
 

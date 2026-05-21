@@ -14,13 +14,13 @@ summary: "Reading's property market brings unique tax challenges for landlords. 
 schema: ""
 faqs:
   - question: "Do I need a specialist property accountant if I only own one rental property in Reading?"
-    answer: "If your rental income exceeds £10,000 annually, you'll need MTD compliance from April 2026. Even with one property, specialist advice often pays for itself through proper deduction claims, CGT planning, and avoiding penalties. Many Reading properties generate sufficient rental income to justify professional accounting services."
+    answer: "If your rental qualifying income exceeds £50,000 from 6 April 2026 (falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028), you'll need MTD compliance from April 2026. Even with one property, specialist advice often pays for itself through proper deduction claims, CGT planning, and avoiding penalties. Many Reading properties generate sufficient rental income to justify professional accounting services."
   - question: "How do the 2027 property tax rate changes affect Reading landlords specifically?"
     answer: "From April 2027, property income will be taxed at 22% basic rate, 42% higher rate, and 47% additional rate. This affects all UK landlords, including those in Reading. Higher-rate taxpayers will see their property income tax increase from 40% to 42%, making tax planning and potential incorporation analysis more important."
   - question: "Should Reading landlords consider incorporation given local property values?"
     answer: "Reading's strong property values and rental yields can make incorporation attractive for expanding portfolios. However, incorporation involves upfront costs, ongoing compliance, and potential CGT on transfers. A specialist property accountant can model whether incorporation would reduce your overall tax burden based on your specific circumstances."
   - question: "What records do Reading landlords need to keep for MTD compliance from 2026?"
-    answer: "From April 2026, you must use digital record-keeping and submit quarterly returns if gross property income exceeds £10,000. This includes rental income, allowable expenses, and capital transactions. Records must be kept in MTD-compatible software with quarterly submissions to HMRC, replacing the current annual Self Assessment system."
+    answer: "From April 2026, you must use digital record-keeping and submit quarterly returns if gross qualifying income exceeds £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This includes rental income, allowable expenses, and capital transactions. Records must be kept in MTD-compatible software with quarterly submissions to HMRC, replacing the current annual Self Assessment system."
 ---
 
 <p>Reading's thriving rental market presents both opportunities and tax complexities for landlords. With major changes coming in 2026 and beyond, finding the right <strong>property accountant in Reading</strong> has become essential for maximising returns and staying compliant.</p>
@@ -45,7 +45,7 @@ faqs:
 
 <h3>Making Tax Digital (MTD) from April 2026</h3>
 
-<p>All Reading landlords with gross property income over £10,000 must use MTD-compatible software and submit quarterly returns from 6 April 2026. This affects most landlords in Reading's rental market, where average monthly rents range from £900-£1,500. Property accountants help ensure your record-keeping meets HMRC's digital requirements. They can recommend suitable software and set up systems that work for your portfolio size, whether you own a single BTL property or multiple rentals across Reading. With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD for Income Tax</a> approaching, your accountant should help you implement appropriate systems and processes.</p>
+<p>All Reading landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must use MTD-compatible software and submit quarterly returns from 6 April 2026. This affects most landlords in Reading's rental market, where average monthly rents range from £900-£1,500. Property accountants help ensure your record-keeping meets HMRC's digital requirements. They can recommend suitable software and set up systems that work for your portfolio size, whether you own a single BTL property or multiple rentals across Reading. With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD for Income Tax</a> approaching, your accountant should help you implement appropriate systems and processes.</p>
 
 <h3>Separate Property Tax Rates from April 2027</h3>
 

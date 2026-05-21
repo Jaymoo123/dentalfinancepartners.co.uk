@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const whyWeExist = [
   {
     title: "Property income is genuinely complex",
-    body: "Section 24 restrictions, MTD quarterly reporting, incorporation decisions, portfolio-level cash flow — the picture is rarely straightforward. A generalist accountant will work with what you give them, but that's not the same as understanding how a property portfolio actually operates.",
+    body: "Section 24 restrictions, MTD quarterly reporting, incorporation decisions, portfolio-level cash flow: the picture is rarely straightforward. A generalist accountant will work with what you give them, but that's not the same as understanding how a property portfolio actually operates.",
   },
   {
     title: "Most landlords are financially underserved",
@@ -34,7 +34,7 @@ const whyWeExist = [
   },
   {
     title: "We only work with property investors",
-    body: "100% of our clients are landlords or property developers. That focus means we understand the tax specifics, the cash flow realities, and the strategic decisions that property investors face. It also means the conversation is more efficient — you don't have to explain what Section 24 is.",
+    body: "100% of our clients are landlords or property developers. That focus means we understand the tax specifics, the cash flow realities, and the strategic decisions that property investors face. It also means the conversation is more efficient: you don't have to explain what Section 24 is.",
   },
 ];
 

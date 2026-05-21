@@ -123,7 +123,7 @@ faqs:
 
 <h2>Making Tax Digital (MTD) Changes</h2>
 
-<p>From April 2026, landlords with rental income over £10,000 will need to submit quarterly updates to HMRC under Making Tax Digital for Income Tax (ITSA). This will require digital record-keeping and compatible software.</p>
+<p>From April 2026, landlords with qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) will need to submit quarterly updates to HMRC under Making Tax Digital for Income Tax (ITSA). This will require digital record-keeping and compatible software.</p>
 
 <p>Start preparing now by digitising your records and considering whether you need professional support for compliance.</p>
 

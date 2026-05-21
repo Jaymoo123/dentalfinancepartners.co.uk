@@ -43,7 +43,7 @@ faqs:
 
 <h3>Making Tax Digital Compliance</h3>
 
-<p>From April 2026, landlords with gross property income above £10,000 must comply with Making Tax Digital for Income Tax (ITSA). This requires quarterly digital submissions and changes how property accounts are maintained. Getting ahead of these requirements now means you're prepared when the rules take effect. Many Glasgow landlords are already implementing digital record-keeping systems and quarterly review processes.</p>
+<p>From April 2026, landlords with qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with Making Tax Digital for Income Tax (ITSA). This requires quarterly digital submissions and changes how property accounts are maintained. Getting ahead of these requirements now means you're prepared when the rules take effect. Many Glasgow landlords are already implementing digital record-keeping systems and quarterly review processes.</p>
 
 <h3>Company Incorporation Analysis</h3>
 

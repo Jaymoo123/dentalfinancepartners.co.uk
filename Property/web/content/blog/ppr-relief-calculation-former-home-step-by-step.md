@@ -2,7 +2,7 @@
 title: "How to Calculate PPR Relief on Your Former Home: Step-by-Step Guide"
 slug: "ppr-relief-calculation-former-home-step-by-step"
 canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/ppr-relief-calculation-former-home-step-by-step"
-date: "2026-04-10"
+date: "2026-05-21"
 author: "Property Tax Partners Editorial Team"
 category: "Capital Gains Tax"
 metaTitle: "PPR Relief Calculation Guide: Former Home CGT Relief UK"
@@ -21,6 +21,18 @@ faqs:
     answer: "PPR relief still applies to the whole property if the letting is small-scale (like a lodger) and you continue living there as your main home. However, if you convert part exclusively for rental use, that portion may lose PPR relief for the period of business use."
   - question: "Do I get PPR relief if I inherit a property?"
     answer: "PPR relief only applies to periods when you actually lived in the inherited property as your main residence after inheriting it. You can't claim relief for periods when the deceased lived there, but you do benefit from the uplift in base cost to probate value, which often eliminates most or all of the gain anyway."
+  - question: "What's the difference between the 3-year and 4-year deemed occupation rules?"
+    answer: "Two separate provisions. TCGA 1992 s.223(3)(a) allows up to 3 years of absence for ANY reason, aggregated across the ownership period. TCGA 1992 s.223(3)(c) allows up to 4 years where the absence was caused by UK employment requirements specifically (job posting, employment-required relocation). The two can both apply during the same ownership. Both require the property to have been your main residence before the absence and to become your main residence again afterwards (with limited exceptions where employment prevents return). The previous version of this page incorrectly stated the s.223(3)(a) rule as 4 years; the correct figure is 3 years."
+  - question: "Do I need to report and pay CGT within 60 days on a former-home sale?"
+    answer: "Yes, if any CGT is due. Since April 2020, UK residential property disposals must be reported and any CGT paid within 60 days of completion via HMRC's Capital Gains Tax on UK property service. This applies even where partial PPR relief reduces the gain materially. The 60-day window applies to UK residents disposing of UK residential property and to non-residents disposing of UK property. Late filing penalties start at £100 and escalate. The annual self-assessment return then reconciles the final position later in the tax year."
+  - question: "Can I make a PPR election if I own two properties simultaneously?"
+    answer: "Yes. Under TCGA 1992 s.222(5), if you have more than one residence at a time, you can elect within two years of acquiring the second residence which one is to be treated as your main residence for PPR purposes. The election can be varied later. Strategic election is valuable when you own a former home you've rented out alongside a new home: directing the election can shift PPR relief between the two over time. Get specialist advice before electing because the rules around variation and the 'flipping' practice are strictly applied by HMRC."
+  - question: "Does PPR work the same way inside a limited company?"
+    answer: "No. PPR relief is available only to individuals, not companies. A property held inside a limited company faces corporation tax on the full gain on disposal, with no PPR equivalent regardless of whether the director or a family member lived in it. This is one of the practical disadvantages of holding a former main residence inside a company structure: a personal-ownership sale with partial PPR relief can be materially more tax-efficient than a company sale of the same property. Factor PPR loss into any incorporation decision that involves transferring an existing home."
+  - question: "What happens if part of my home is used for business or letting?"
+    answer: "PPR relief is restricted for the portion of the property used exclusively for business or letting purposes. A home office used exclusively for business reduces PPR by the floor-area proportion of that room across the ownership period. A self-contained annexe let to lodgers (where you do not share occupancy) reduces PPR similarly. Where business or letting use is occasional or shares space with personal use, PPR is generally preserved (the HMRC view in the Capital Gains Manual at CG64702). The treatment is fact-specific and worth checking before disposal."
+  - question: "How does PPR interact with the 60-day reporting deadline if I'm not sure how much relief applies?"
+    answer: "If you're confident PPR fully covers the gain, no 60-day return is needed (the return is only required where CGT is due). If partial relief leaves some gain taxable, you must submit the 60-day return based on your best calculation and pay the estimated CGT. The annual self-assessment return later reconciles to the final position with any over/underpayment adjusted. Submit a return rather than miss the deadline if there's genuine uncertainty; the penalty for late filing exceeds any modest overpayment that gets refunded later."
 ---
 
 <p>Principal Private Residence Relief (PPR relief) can save you thousands in capital gains tax when you sell a property that was once your main home. However, calculating the exact relief you're entitled to isn't always straightforward, especially if you've rented out the property or used it for business purposes.</p>
@@ -84,19 +96,21 @@ Final 9 months: June 2025 to January 2026 = 9 months<br>
 
 <h2>Common Complications and Deemed Occupation</h2>
 
-<h3>Letting Relief (Historical)</h3>
-<p>Properties sold before April 2020 could claim letting relief alongside PPR relief. This relief was capped at £40,000 and only applied when you lived in the property before letting it out. Letting relief was abolished for most sales from April 2020 onwards.</p>
+<h3>Letting Relief (Substantially Restricted from April 2020)</h3>
+<p>Before 6 April 2020, properties that had been your main residence and were later let could attract Letting Relief alongside PPR. From 6 April 2020, Letting Relief is only available if the property owner shares occupancy with the tenant during the letting period (the "shared occupation" condition under TCGA 1992 s.223B as amended). In practice, this means classic BTL letting (where the landlord moves out and tenants move in) no longer attracts Letting Relief at all. The relief cap of £40,000 still applies in qualifying shared-occupation cases.</p>
 
 <h3>Business Use of Part of the Property</h3>
 <p>If you used part of your home exclusively for business (such as a home office), that portion won't qualify for PPR relief. The calculation becomes more complex as you need to apportion the gain by both time and area used.</p>
 
-<h3>Deemed Occupation Periods</h3>
-<p>Certain periods count as residence even when you weren't physically living there:</p>
+<h3>Deemed Occupation Periods (TCGA 1992 s.223)</h3>
+<p>Certain periods count as residence even when you weren't physically living there. The statutory deemed-occupation rules are:</p>
 <ul>
-<li>Up to 4 years for any reason (only if you lived there before and after)</li>
-<li>Any period working abroad</li>
-<li>Up to 4 years when unable to live there due to employment conditions</li>
+<li><strong>Up to 3 years for any reason</strong> under TCGA 1992 s.223(3)(a). The 3 years can be one continuous period or aggregated across multiple absences. Conditional on you having lived in the property as your main residence before the absence AND returning to live in it as your main residence after the absence (subject to limited exceptions where the return is prevented by employment).</li>
+<li><strong>Any period working overseas</strong> under TCGA 1992 s.223(3)(b), where all employment duties are performed outside the UK. No time limit. Same before-and-after residence condition applies.</li>
+<li><strong>Up to 4 years when employment in the UK required absence</strong> under TCGA 1992 s.223(3)(c). The reason for absence must be employment-related (job posting, work-required relocation), not personal. Same before-and-after residence condition.</li>
+<li><strong>The final 9 months of ownership</strong> are automatically exempt regardless of whether you lived there during that period. This is sometimes referred to as the "9-month tail".</li>
 </ul>
+<p>The before-and-after residence condition is critical for the 3-year and 4-year rules. If you move out and never return to live there, those periods are not deemed occupation. The final 9-month tail is the only automatic exemption that doesn't require return.</p>
 
 <h2>PPR Relief on Properties With Gardens and Multiple Homes</h2>
 

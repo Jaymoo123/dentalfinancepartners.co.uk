@@ -106,7 +106,7 @@ Final Tax Liability: £20,152 - £4,468 = £15,684</p>
 
 <h2>Compliance and Future Changes</h2>
 <h3>Section 24 and Making Tax Digital</h3>
-<p>From April 2026, landlords with gross rental income over £10,000 must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a>. This £50k portfolio will need quarterly digital submissions, making accurate Section 24 calculations even more important.</p>
+<p>From April 2026, landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a>. This £50k portfolio will need quarterly digital submissions, making accurate Section 24 calculations even more important.</p>
 <h3>Looking Ahead: April 2027 Changes</h3>
 <p>From April 2027, separate property income tax rates will apply—22% basic rate, 42% higher rate, and 47% additional rate on rental income specifically. This could further increase the tax burden for landlords like our example, making incorporation or other planning strategies even more attractive. The calculation methodology remains the same under Section 24, but the tax rates applied to rental income will be higher across all brackets.</p>
 

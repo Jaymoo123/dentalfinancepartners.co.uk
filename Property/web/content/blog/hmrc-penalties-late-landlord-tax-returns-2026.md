@@ -83,7 +83,7 @@ faqs:
 
 <h2>Making Tax Digital Impact from April 2026</h2>
 
-<p>From 6 April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becomes mandatory for landlords with gross property income over £10,000. This introduces new compliance requirements and potential penalty categories.</p>
+<p>From 6 April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becomes mandatory for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This introduces new compliance requirements and potential penalty categories.</p>
 
 <p>Under MTD, you'll need to:</p>
 <ul>

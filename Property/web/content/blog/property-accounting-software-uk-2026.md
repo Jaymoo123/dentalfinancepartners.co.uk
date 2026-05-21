@@ -23,13 +23,13 @@ faqs:
     answer: "Yes, HMRC allows spreadsheets for MTD, but they must be linked to bridging software that submits the quarterly data. Spreadsheets work for simple portfolios but lack automation, bank feeds, and error checking. Most landlords find dedicated software more efficient and less prone to mistakes."
 ---
 
-<p>With <strong>Making Tax Digital (MTD) for Income Tax becoming mandatory from 6 April 2026</strong> for landlords with gross property income over £10,000, choosing the right <strong>property accounting software UK</strong> is no longer optional, it is a compliance requirement. The wrong choice can mean extra admin, missed deductions, or HMRC penalties. The right choice saves you time, tax, and stress.</p>
+<p>With <strong>Making Tax Digital (MTD) for Income Tax becoming mandatory from 6 April 2026</strong> for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028), choosing the right <strong>property accounting software UK</strong> is no longer optional, it is a compliance requirement. The wrong choice can mean extra admin, missed deductions, or HMRC penalties. The right choice saves you time, tax, and stress.</p>
 
 <p>This guide compares the leading property accounting software options available in 2026: Hammock, Landlord Studio, Rentila, Xero, FreeAgent, and QuickBooks. We break them down by use case, portfolio size, entity type (individual vs limited company), MTD readiness, and budget, so you can decide which tool fits your specific situation.</p>
 
 <h2>Why Property Accounting Software Matters in 2026</h2>
 
-<p>The days of tracking rental income and expenses in a spreadsheet are ending for most landlords. From April 2026, MTD for Income Tax requires you to maintain digital records and submit quarterly updates to HMRC using compatible software. If your gross property income exceeds £10,000, you must use MTD-compliant software or face penalties.</p>
+<p>The days of tracking rental income and expenses in a spreadsheet are ending for most landlords. From April 2026, MTD for Income Tax requires you to maintain digital records and submit quarterly updates to HMRC using compatible software. If your gross qualifying income exceeds £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028), you must use MTD-compliant software or face penalties.</p>
 
 <p>Beyond compliance, good <strong>accounting software for landlords</strong> helps you track deductible expenses, manage tenant deposits, generate profit-and-loss reports, and prepare year-end tax returns. For landlords with limited companies, software that handles corporation tax and VAT is essential.</p>
 
@@ -227,7 +227,7 @@ faqs:
 
 <h2>MTD Readiness: What to Check</h2>
 
-<p>From April 2026, all landlords with gross property income over £10,000 must submit quarterly updates to HMRC using MTD-compatible software. Here is what to verify before choosing a platform:</p>
+<p>From April 2026, all landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must submit quarterly updates to HMRC using MTD-compatible software. Here is what to verify before choosing a platform:</p>
 
 <ul>
 <li><strong>HMRC recognition:</strong> The software must be on HMRC’s list of MTD-compatible products.</li>

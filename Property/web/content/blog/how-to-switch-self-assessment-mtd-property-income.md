@@ -10,11 +10,11 @@ metaDescription: "Learn how to transition from Self Assessment to Making Tax Dig
 altText: "UK landlord reviewing digital tax records on laptop screen, switching from paper Self Assessment to MTD software for property income reporting"
 image: ""
 h1: "How to Switch from Self Assessment to MTD for Property Income in 2026"
-summary: "From 6 April 2026, landlords with gross property income over £10,000 must use Making Tax Digital instead of traditional Self Assessment. This guide explains the transition process step-by-step."
+summary: "From 6 April 2026, landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must use Making Tax Digital instead of traditional Self Assessment. This guide explains the transition process step-by-step."
 schema: ""
 faqs:
-  - question: "Do I have to switch from Self Assessment to MTD if my property income is under £10,000?"
-    answer: "No, if your gross property income is £10,000 or less per tax year, MTD remains voluntary. You can continue using traditional Self Assessment. However, you may choose to opt into MTD voluntarily if you prefer digital record-keeping and quarterly reporting."
+  - question: "Do I have to switch from Self Assessment to MTD if my property income is below the threshold?"
+    answer: "No, if your gross qualifying income is below the MTD threshold (£50,000 from 6 April 2026; £30,000 from 6 April 2027; £20,000 from 6 April 2028), MTD remains voluntary. You can continue using traditional Self Assessment. However, you may choose to opt into MTD voluntarily if you prefer digital record-keeping and quarterly reporting."
   - question: "Can I still use my accountant after switching to MTD for property income?"
     answer: "Yes, you can continue working with your accountant under MTD. Many property accountants will manage the quarterly submissions and ongoing compliance for you. The software requirements apply to the record-keeping and submission process, but your accountant can handle this on your behalf using MTD-compatible software."
   - question: "What happens to my current Self Assessment obligations when I switch to MTD?"
@@ -23,7 +23,7 @@ faqs:
     answer: "MTD-compatible software typically costs £10-£50 per month depending on features and the number of properties. Some basic packages start from free for simple situations. Factor in potential setup costs and any professional support needed for data migration. The investment is usually offset by better record-keeping and time savings."
 ---
 
-<p>If you're a UK landlord currently filing your property income through Self Assessment, significant changes are coming. From 6 April 2026, landlords with gross property income over £10,000 must <strong>switch from Self Assessment to MTD for property income</strong>. This means moving from annual tax returns to quarterly digital reporting using compatible software.</p>
+<p>If you're a UK landlord currently filing your property income through Self Assessment, significant changes are coming. From 6 April 2026, landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must <strong>switch from Self Assessment to MTD for property income</strong>. This means moving from annual tax returns to quarterly digital reporting using compatible software.</p>
 
 <p>The transition affects most buy-to-let landlords and property investors. Understanding how to make this switch properly will help you avoid penalties and ensure compliance with the new digital tax requirements.</p>
 
@@ -42,15 +42,15 @@ faqs:
 
 <h2>Who Must Switch to MTD for Property Income?</h2>
 
-<p>The MTD requirement applies to UK landlords whose gross property income exceeds £10,000 per tax year. This threshold applies to your total rental income before deducting any expenses or allowances.</p>
+<p>The MTD requirement applies to UK landlords whose gross qualifying income exceeds £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) per tax year. This threshold applies to your total rental income before deducting any expenses or allowances.</p>
 <p><strong>Examples of landlords who must switch:</strong></p>
 <ul>
 <li>A landlord with one BTL property generating £12,000 annual rent</li>
 <li>Portfolio owners with multiple properties totaling £15,000+ gross rent</li>
-<li>Joint property owners where their combined gross income exceeds £10,000</li>
+<li>Joint property owners where their combined qualifying income exceeds the MTD threshold</li>
 <li>Landlords with both residential and commercial property income over the threshold</li>
 </ul>
-<p>If your gross property income is £10,000 or less, you can continue using traditional Self Assessment. However, you may choose to opt into MTD voluntarily if you prefer digital record-keeping.</p>
+<p>if your gross qualifying income is below the MTD threshold (£50,000 from 6 April 2026; £30,000 from 6 April 2027; £20,000 from 6 April 2028), you can continue using traditional Self Assessment. However, you may choose to opt into MTD voluntarily if you prefer digital record-keeping.</p>
 
 <h2>Key Deadlines and Timeline</h2>
 

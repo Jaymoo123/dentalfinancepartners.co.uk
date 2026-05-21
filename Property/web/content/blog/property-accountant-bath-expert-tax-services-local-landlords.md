@@ -45,7 +45,7 @@ faqs:
 <p>Common mistakes include miscalculating the restrictions or failing to optimise the basic rate tax credit.</p>
 
 <h2>Preparing for Making Tax Digital (MTD) Compliance</h2>
-<p>MTD for Income Tax becomes mandatory from 6 April 2026 for landlords with gross property income over £10,000. Given Bath's rental yields, most local landlords will fall within scope.</p>
+<p>MTD for Income Tax becomes mandatory from 6 April 2026 for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). Given Bath's rental yields, most local landlords will fall within scope.</p>
 <p>The compliance burden includes quarterly digital submissions and year-end declarations. For Bath landlords managing multiple properties — perhaps a mix of student lets near the university and traditional BTL properties in residential areas — the record-keeping requirements are substantial.</p>
 <p>A property accountant familiar with Bath's market can implement systems that capture local expense patterns. For example, properties in conservation areas often require specialist maintenance using approved materials and contractors, creating specific documentation requirements for tax relief claims.</p>
 <p>Our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD guide for landlords</a> covers the technical requirements, but local implementation requires Bath market knowledge. A common pitfall is delaying preparation, leading to compliance difficulties from April 2026.</p>

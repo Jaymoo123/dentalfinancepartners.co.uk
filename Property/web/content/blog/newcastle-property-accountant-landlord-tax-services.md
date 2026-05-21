@@ -43,7 +43,7 @@ faqs:
 
 <h3>Making Tax Digital (MTD) Compliance</h3>
 
-<p>From 6 April 2026, Newcastle landlords with gross property income over £10,000 must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a>. This means quarterly digital submissions and maintaining digital records.</p>
+<p>From 6 April 2026, Newcastle landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a>. This means quarterly digital submissions and maintaining digital records.</p>
 
 <p>Many Newcastle landlords still use spreadsheets or paper records. The transition requires compatible software, restructured record-keeping, and understanding of quarterly reporting obligations. Non-compliance carries penalties starting at £200 per missed deadline.</p>
 

@@ -122,7 +122,7 @@ faqs:
 
 <h2>Making Tax Digital Compliance for HMOs</h2>
 
-<p>From 6 April 2026, most landlords with gross property income over £10,000 must use Making Tax Digital compatible software. For HMO landlords, this means:</p>
+<p>From 6 April 2026, most landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must use Making Tax Digital compatible software. For HMO landlords, this means:</p>
 
 <ul>
 <li>Digital record-keeping for each room's income</li>

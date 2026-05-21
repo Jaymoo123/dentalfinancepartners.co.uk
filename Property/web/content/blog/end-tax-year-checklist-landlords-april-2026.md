@@ -16,7 +16,7 @@ faqs:
   - question: "What are the most important year end landlord tasks for 2026?"
     answer: "The most critical tasks include completing your financial records review, preparing for MTD from April 2026, calculating Section 24 restrictions properly, and ensuring all allowable expenses are documented. You should also consider any CGT planning if disposing of properties and verify your record-keeping systems meet MTD requirements."
   - question: "When does Making Tax Digital start for landlords?"
-    answer: "MTD for Income Tax becomes mandatory from 6 April 2026 for landlords with gross property income over £10,000. This means you'll need compatible software and must submit quarterly updates starting with the period 6 April to 5 July 2026, due by 5 August 2026."
+    answer: "MTD for Income Tax becomes mandatory from 6 April 2026 for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This means you'll need compatible software and must submit quarterly updates starting with the period 6 April to 5 July 2026, due by 5 August 2026."
   - question: "How do Section 24 restrictions affect my 2025/26 tax calculation?"
     answer: "Section 24 restrictions are fully in place for 2025/26. Mortgage interest on residential buy-to-let properties is no longer deductible from rental income. Instead, you receive a 20% tax credit based on the lower of your mortgage interest paid or your rental profits. This typically increases tax for higher and additional rate taxpayers."
   - question: "Should I consider incorporating my property portfolio before April 2026?"
@@ -75,7 +75,7 @@ faqs:
 </ul>
 
 <h2>Making Tax Digital (MTD) Preparation and Record Keeping</h2>
-<p>With MTD for Income Tax becoming mandatory from 6 April 2026 for landlords with gross property income over £10,000, your year end landlord tasks must include MTD readiness checks.</p>
+<p>With MTD for Income Tax becoming mandatory from 6 April 2026 for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028), your year end landlord tasks must include MTD readiness checks.</p>
 <p>Ensure your record-keeping systems can produce the required quarterly updates. Most landlords will need compatible software to meet HMRC's digital requirements from the new tax year. Implement robust record-keeping systems before the new tax year starts. MTD requires digital records capable of producing quarterly summaries of income and expenses.</p>
 <p>Test your chosen MTD software with your current year's data to identify any issues before the April deadline. This includes checking category mappings and ensuring all income and expense types are properly classified.</p>
 <p>Ensure all supporting documentation is stored systematically. HMRC may request evidence during enquiries, and proper organisation saves time and reduces stress. Consider cloud-based storage solutions for important documents. This provides backup protection and access from multiple locations when needed.</p>

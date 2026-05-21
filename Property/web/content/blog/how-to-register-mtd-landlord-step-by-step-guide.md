@@ -15,27 +15,27 @@ schema: ""
 faqs:
   - question: "How long does it take to register for MTD as a landlord?"
     answer: "The complete MTD registration process typically takes 2-4 weeks. This includes Government Gateway account setup (1-10 days), Self Assessment registration if required (10-15 days), and MTD registration itself (7-10 days). Software selection and setup adds another few days. Starting 6-8 weeks before the April 2026 deadline allows for any delays."
-  - question: "Can I register for MTD if my rental income is under £10,000?"
-    answer: "Yes, landlords with rental income under £10,000 can voluntarily register for MTD, but it's not mandatory until April 2026. However, once you register for MTD, you cannot opt out - you must continue with quarterly digital reporting even if your income later falls below £10,000. Consider this commitment carefully before voluntary registration."
+  - question: "Can I voluntarily register for MTD if my income is below the threshold?"
+    answer: "Yes, landlords with qualifying income below the MTD threshold can voluntarily register for MTD, but it's not mandatory until you exceed the threshold. However, once you register for MTD, you cannot opt out: you must continue with quarterly digital reporting even if your qualifying income later falls below the MTD threshold. Consider this commitment carefully before voluntary registration."
   - question: "What happens if I don't register for MTD by April 2026?"
-    answer: "Landlords with gross rental income over £10,000 who fail to register for MTD by 6 April 2026 face penalties. HMRC can issue fixed penalties for late registration and ongoing penalties for missed quarterly submissions. You'll also be unable to claim certain tax reliefs and deductions that require digital records, potentially increasing your tax bill."
+    answer: "Landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) who fail to register for MTD by 6 April 2026 face penalties. HMRC can issue fixed penalties for late registration and ongoing penalties for missed quarterly submissions. You'll also be unable to claim certain tax reliefs and deductions that require digital records, potentially increasing your tax bill."
   - question: "Do I need an accountant to register for Making Tax Digital?"
     answer: "No, you can register for MTD yourself using HMRC's online services. However, many landlords use accountants for software selection, setup, and ongoing compliance, especially those with multiple properties or complex situations. The registration process itself is straightforward, but ensuring proper ongoing compliance can be more challenging without professional support."
 ---
 
-<p>From 6 April 2026, <strong>Making Tax Digital for Income Tax becomes mandatory for UK landlords</strong> with gross property income over £10,000. If you need to register for MTD as a landlord, the process involves several steps with HMRC and requires compatible software. This guide walks you through exactly how to register MTD landlord accounts and get your property business ready for digital tax reporting.</p>
+<p>From 6 April 2026, <strong>Making Tax Digital for Income Tax becomes mandatory for UK landlords</strong> with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). If you need to register for MTD as a landlord, the process involves several steps with HMRC and requires compatible software. This guide walks you through exactly how to register MTD landlord accounts and get your property business ready for digital tax reporting.</p>
 <p>The registration process typically takes 7-10 working days, so starting early is essential. You'll need your existing tax records, HMRC login details, and to choose MTD-compatible software before you begin.</p>
 
 <h2>Who Must Register for MTD as a Landlord?</h2>
-<p>You must sign up for MTD property if you're a UK landlord (including non-residents) with gross rental income over £10,000 per tax year. This threshold applies to your total property income across all rental properties, not individual properties.</p>
+<p>You must sign up for MTD property if you're a UK landlord (including non-residents) with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) per tax year. This threshold applies to your total property income across all rental properties, not individual properties.</p>
 <p><strong>Mandatory from April 2026:</strong></p>
 <ul>
-<li>Individual landlords with gross rental income over £10,000</li>
-<li>Joint property owners where combined income exceeds £10,000</li>
+<li>Individual landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028)</li>
+<li>Joint property owners where combined qualifying income exceeds the MTD threshold</li>
 <li>Non-resident landlords above the threshold</li>
 <li>Property partnerships (but not limited companies - they have separate MTD rules)</li>
 </ul>
-<p><strong>Voluntary registration:</strong> Landlords below £10,000 can opt in voluntarily, but once registered, you cannot opt out.</p>
+<p><strong>Voluntary registration:</strong> Landlords below the MTD thresholdcan opt in voluntarily, but once registered, you cannot opt out.</p>
 <p>Property companies are not covered by MTD for Income Tax - they follow different Corporation Tax digital rules. If you're considering incorporation, <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">our complete guide to buy-to-let limited companies</a> covers the key differences.</p>
 
 <h2>Step-by-Step Registration Process</h2>
@@ -129,7 +129,7 @@ faqs:
 
 <h2>Special Registration Circumstances</h2>
 <h3>Joint Property Owners</h3>
-<p>Joint property owners face additional complexity in MTD registration. Each joint owner must register separately if their share of gross rental income exceeds £10,000.</p>
+<p>Joint property owners face additional complexity in MTD registration. Each joint owner must register separately if their share of gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028).</p>
 <p><strong>Joint ownership considerations:</strong></p>
 <ul>
 <li>Each owner registers based on their share of total income</li>

@@ -53,7 +53,7 @@ faqs:
 <p>For detailed guidance on how Section 24 affects your rental income calculations, see our <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">complete Section 24 guide</a>.</p>
 
 <h2>Making Tax Digital (MTD) Compliance</h2>
-<p>From April 2026, Brighton landlords with gross property income over £10,000 must comply with Making Tax Digital for Income Tax. This affects most serious property investors in the area, given typical rental yields.</p>
+<p>From April 2026, Brighton landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with Making Tax Digital for Income Tax. This affects most serious property investors in the area, given typical rental yields.</p>
 <p>MTD requires quarterly digital record-keeping and submissions to HMRC. A Brighton property accountant can set up appropriate software systems and ensure smooth compliance. They'll also handle the transition period, helping landlords avoid penalties during the first year of implementation.</p>
 <p>The digital requirements are particularly challenging for landlords managing multiple property types. A Brighton investor with standard BTLs, student HMOs, and former holiday lets needs sophisticated systems to track different income streams and allowable expenses correctly.</p>
 <p>Learn more about preparing for these changes in our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">MTD compliance guide</a>.</p>

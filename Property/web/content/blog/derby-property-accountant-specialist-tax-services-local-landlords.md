@@ -20,7 +20,7 @@ faqs:
   - question: "When should Derby landlords consider incorporating their property business?"
     answer: "Incorporation often makes sense for Derby landlords with rental profits over £50,000, especially those affected by Section 24 restrictions. However, local factors like property values in areas such as Allestree or Duffield can create high stamp duty costs on transfer, so each case needs individual analysis."
   - question: "What records do Derby landlords need for Making Tax Digital compliance?"
-    answer: "From April 2026, Derby landlords with gross income over £10,000 need digital records of all income and expenses, quarterly submissions to HMRC, and compatible software. This includes most rental properties given typical Derby rents of £600-£1,500 per month, so preparation is essential."
+    answer: "From April 2026, Derby landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) need digital records of all income and expenses, quarterly submissions to HMRC, and compatible software. This includes most rental properties given typical Derby rents of £600-£1,500 per month, so preparation is essential."
 ---
 
 <p>Derby's rental market offers significant opportunities for property investors, from student accommodation near the University of Derby to family homes in desirable areas like Allestree and Mickleover. However, UK property taxation has become increasingly complex, making a specialist <strong>property accountant Derby</strong> landlords can trust essential for maximising returns and staying compliant.</p>
@@ -43,7 +43,7 @@ faqs:
 <p>A general accountant might miss these opportunities, but <strong>landlord tax advice Derby</strong> specialists understand the full range of available strategies.</p>
 
 <h2>Making Tax Digital (MTD) for Income Tax</h2>
-<p>From April 2026, landlords with gross property income over £10,000 must comply with Making Tax Digital for Income Tax. This affects most Derby rental properties, given typical rents of £600-£1,500 per month across the city.</p>
+<p>From April 2026, landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with Making Tax Digital for Income Tax. This affects most Derby rental properties, given typical rents of £600-£1,500 per month across the city.</p>
 <p>The requirements include:</p>
 <ul>
 <li>Keeping digital records using compatible software</li>

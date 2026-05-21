@@ -99,7 +99,7 @@ faqs:
 <p>For larger estates, a discretionary trust holding property can provide more flexibility than a FIC structure, though with different tax implications.</p>
 
 <h2>Making Tax Digital Implications</h2>
-<p>Family investment companies must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> from April 2026 if property income exceeds £10,000. This adds to the administrative burden and costs.</p>
+<p>Family investment companies must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> from April 2026 if qualifying income exceeds £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This adds to the administrative burden and costs.</p>
 <p>Companies also face more complex MTD requirements than individual landlords, potentially requiring more sophisticated software systems.</p>
 
 <h2>Professional Advice Is Essential</h2>

@@ -102,7 +102,7 @@ faqs:
 
 <h2>Making Tax Digital (MTD) Compliance</h2>
 
-<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> apply to both strategies for landlords with gross property income exceeding £10,000.</p>
+<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> apply to both strategies for landlords with gross  income above £50,000 (the MTD threshold from 6 April 2026; drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028).</p>
 <p>Serviced accommodation typically creates more complex MTD compliance due to higher transaction volume (daily bookings vs monthly rent), multiple income sources, frequent expenses, and more pronounced seasonal variations. This often necessitates more sophisticated accounting software and may increase professional accounting costs.</p>
 
 <h2>Incorporation Considerations</h2>

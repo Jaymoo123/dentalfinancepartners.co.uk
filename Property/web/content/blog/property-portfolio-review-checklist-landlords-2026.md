@@ -56,7 +56,7 @@ faqs:
 <p>From April 2027, property income will be subject to separate tax rates of 22% basic rate, 42% higher rate, and 47% additional rate. This represents a 2% increase on current rates and will significantly impact net returns. Model the impact on your portfolio using the new rates. A higher-rate taxpayer with £50,000 rental profit will pay an additional £1,000 annually from 2027. Consider whether <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation</a> might become more attractive. Corporate tax rates remain at 19%/25%, potentially creating significant savings for higher-rate taxpayers. However, factor in extraction costs and CGT on incorporation.</p>
 
 <h3>MTD Compliance Preparation</h3>
-<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becomes mandatory</a> for landlords with gross property income over £10,000. Use your annual review to prepare:</p>
+<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becomes mandatory</a> for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). Use your annual review to prepare:</p>
 <ul>
 <li>Choose and implement MTD-compatible software</li>
 <li>Establish quarterly record-keeping processes</li>

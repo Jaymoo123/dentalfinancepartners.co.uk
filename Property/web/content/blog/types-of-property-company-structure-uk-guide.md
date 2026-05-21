@@ -104,7 +104,7 @@ faqs:
 
 <h2>Recent Legislative Changes</h2>
 <h3>Making Tax Digital Impact</h3>
-<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becomes mandatory</a> for landlords with gross property income over £10,000. Companies with property income must comply with MTD for Corporation Tax, which may influence your choice of structure and accounting systems.</p>
+<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becomes mandatory</a> for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). Companies with property income must comply with MTD for Corporation Tax, which may influence your choice of structure and accounting systems.</p>
 
 <h3>SDLT Surcharge Increases</h3>
 <p>The SDLT surcharge on additional properties increased to 5% in October 2024. This affects both individual and company purchases, though companies can sometimes mitigate this through share purchases rather than direct property acquisitions in holding company structures.</p>

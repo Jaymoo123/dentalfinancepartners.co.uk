@@ -20,7 +20,7 @@ faqs:
   - question: "What expenses can I claim against rental income?"
     answer: "You can claim property management fees, maintenance and repairs, insurance, professional fees, utilities, advertising costs, and travel expenses for property visits. You cannot deduct capital improvements like new kitchens, but these costs can reduce capital gains tax when you sell. Mortgage interest is restricted to 20% tax relief for individual landlords under Section 24."
   - question: "Do I need to comply with Making Tax Digital for property income?"
-    answer: "From 6 April 2026, landlords with annual property income above £10,000 must use MTD-compatible software for record keeping and submit quarterly updates to HMRC. This affects most property investors and requires digital records, quarterly income/expense summaries, and annual reconciliation statements."
+    answer: "From 6 April 2026, landlords with annual qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must use MTD-compatible software for record keeping and submit quarterly updates to HMRC. This affects most property investors and requires digital records, quarterly income/expense summaries, and annual reconciliation statements."
   - question: "Should I use a limited company for property investment?"
     answer: "Limited companies can deduct full mortgage interest and pay corporation tax (19-25%) instead of income tax rates up to 45%. However, you'll face additional tax when extracting profits through dividends or salary, plus increased administration costs. The benefit depends on your income level, leverage, and long-term plans - professional advice is recommended for your specific situation."
 ---
@@ -61,7 +61,7 @@ faqs:
 
 <h2>Making Tax Digital (MTD) Requirements</h2>
 
-<p>From 6 April 2026, landlords with annual property income above £10,000 must comply with Making Tax Digital for Income Tax (MTD). This affects most property investors significantly.</p>
+<p>From 6 April 2026, landlords with annual qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with Making Tax Digital for Income Tax (MTD). This affects most property investors significantly.</p>
 
 <p>MTD requirements include:</p>
 <ul>

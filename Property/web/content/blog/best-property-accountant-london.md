@@ -151,7 +151,7 @@ faqs:
 <p>This isn't just about convenience—it's about accuracy and compliance. With MTD requirements approaching, you need an accountant who's already operating digitally.</p>
 
 <h3>Making Tax Digital Compliance</h3>
-<p>From April 2026, property businesses with rental income over £10,000 must keep digital records and submit quarterly updates. The best London property accountants are already preparing clients for these changes, not waiting until the last minute.</p>
+<p>From April 2026, property businesses with qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must keep digital records and submit quarterly updates. The best London property accountants are already preparing clients for these changes, not waiting until the last minute.</p>
 
 <h2>Making Your Final Decision</h2>
 

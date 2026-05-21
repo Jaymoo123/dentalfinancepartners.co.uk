@@ -14,7 +14,7 @@ summary: "A comprehensive landlord accounting spreadsheet template helps you tra
 schema: ""
 faqs:
   - question: "Do I need accounting software or will a landlord spreadsheet template work for my rental properties?"
-    answer: "A well-designed landlord accounting spreadsheet template works perfectly for most individual landlords and small portfolios. You only need dedicated software if you have complex requirements (multiple properties, limited companies, HMOs) or when MTD becomes mandatory in April 2026 for those earning over £10,000 gross rental income. Spreadsheets are free"
+    answer: "A well-designed landlord accounting spreadsheet template works perfectly for most individual landlords and small portfolios. You only need dedicated software if you have complex requirements (multiple properties, limited companies, HMOs) or when MTD becomes mandatory in April 2026 for those earning over £50,000 (the MTD threshold from 6 April 2026, dropping to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). Spreadsheets are free"
 ---
 
 <p>A well-designed <strong>landlord accounting spreadsheet template</strong> is essential for tracking your rental property income, expenses, and tax obligations. Whether you manage one buy-to-let property or a larger portfolio, proper record-keeping helps you claim all allowable deductions and stay compliant with HMRC requirements.</p>
@@ -29,7 +29,7 @@ faqs:
 <li><strong>Tax compliance:</strong> Accurate records support your annual tax return and potential HMRC enquiries</li>
 <li><strong>Expense tracking:</strong> Ensures you claim all <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">allowable landlord deductions</a></li>
 <li><strong>Cash flow monitoring:</strong> Shows monthly income versus expenses across your property portfolio</li>
-<li><strong>MTD preparation:</strong> Digital records will be mandatory for landlords earning over £10,000 gross rental income from April 2026</li>
+<li><strong>MTD preparation:</strong> Digital records will be mandatory for landlords earning over £50,000 (the MTD threshold from 6 April 2026, dropping to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) from April 2026</li>
 <li><strong>Business decisions:</strong> Data-driven insights on property performance and profitability</li>
 </ul>
 
@@ -162,7 +162,7 @@ faqs:
 
 <h2>Preparing for Making Tax Digital Requirements</h2>
 
-<p>From April 2026, landlords with gross property income over £10,000 must use MTD-compatible software for quarterly reporting. Your spreadsheet can help prepare for this transition:</p>
+<p>From April 2026, landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must use MTD-compatible software for quarterly reporting. Your spreadsheet can help prepare for this transition:</p>
 
 <h3>Digital Record Requirements</h3>
 

@@ -130,7 +130,7 @@ faqs:
 <ul>
 <li><strong>Income tax planning:</strong> Understanding <a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">rental income tax obligations</a> for retained properties</li>
 <li><strong>Future CGT planning:</strong> Strategies for managing CGT on future disposals</li>
-<li><strong>Compliance obligations:</strong> Understanding <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> for property income over £10,000</li>
+<li><strong>Compliance obligations:</strong> Understanding <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> for qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028)</li>
 <li><strong>Investment strategy review:</strong> Reassessing property investment goals and tax efficiency</li>
 </ul>
 <p>Divorce often provides an opportunity to restructure property investments more tax-efficiently, taking advantage of both parties' allowances and different tax positions.</p>

@@ -20,7 +20,7 @@ faqs:
   - question: "Do I need a property accountant if I only have one rental property in Plymouth?"
     answer: "Even single property landlords benefit from specialist advice, particularly with Section 24 restrictions and upcoming MTD requirements. A Plymouth property accountant can ensure you're claiming all legitimate expenses, help with MTD preparation, and provide strategic advice for portfolio growth while keeping costs proportionate to your current needs."
   - question: "When should Plymouth landlords start preparing for Making Tax Digital?"
-    answer: "Plymouth landlords should start MTD preparation now, as the April 2026 deadline affects anyone with gross property income over £10,000. This involves choosing compatible software, digitising records, and establishing quarterly reporting procedures. Early preparation avoids last-minute compliance issues and potential penalties."
+    answer: "Plymouth landlords should start MTD preparation now, as the April 2026 deadline affects anyone with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This involves choosing compatible software, digitising records, and establishing quarterly reporting procedures. Early preparation avoids last-minute compliance issues and potential penalties."
 ---
 
 <p>Finding the right <strong>property accountant in Plymouth</strong> can make a significant difference to your rental property profits. With Section 24 restrictions, Making Tax Digital deadlines approaching, and the complex Plymouth property market, local landlords need specialist expertise to navigate tax efficiently.</p>
@@ -44,7 +44,7 @@ faqs:
 <p>This change particularly affects Plymouth's buy-to-let market where property prices have risen significantly, increasing mortgage borrowing requirements. Many landlords are exploring <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation strategies</a> to mitigate Section 24 impact.</p>
 
 <h2>Making Tax Digital Compliance for Plymouth Landlords</h2>
-<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becomes mandatory</a> for landlords with gross property income over £10,000. Most Plymouth landlords will need to maintain digital records and submit quarterly updates to HMRC.</p>
+<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becomes mandatory</a> for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). Most Plymouth landlords will need to maintain digital records and submit quarterly updates to HMRC.</p>
 <p><strong>MTD preparation steps for Plymouth landlords:</strong></p>
 <ul>
 <li>Choose compatible property management software</li>

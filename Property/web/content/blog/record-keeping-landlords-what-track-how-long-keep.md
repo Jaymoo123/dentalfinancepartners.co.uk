@@ -25,7 +25,7 @@ faqs:
 
 <p>Proper record keeping for landlords is not just good practice — it's a legal requirement. HMRC expects UK landlords to maintain detailed records of their rental income and property expenses, and the consequences of poor record-keeping can be severe, including penalties and difficulties during tax investigations.</p>
 
-<p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becoming mandatory from April 2026 for landlords with gross property income over £10,000, the importance of systematic record keeping has never been greater.</p>
+<p>With <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital for Income Tax</a> becoming mandatory from April 2026 for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028), the importance of systematic record keeping has never been greater.</p>
 
 <h2>HMRC Requirements and Retention Periods</h2>
 
@@ -184,7 +184,7 @@ faqs:
 
 <h2>Making Tax Digital (MTD) Compliance</h2>
 
-<p>From April 2026, landlords with gross property income over £10,000 must use MTD-compatible software. This means your record keeping system must:</p>
+<p>From April 2026, landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must use MTD-compatible software. This means your record keeping system must:</p>
 <ul>
 <li>Capture data digitally</li>
 <li>Submit quarterly updates to HMRC</li>

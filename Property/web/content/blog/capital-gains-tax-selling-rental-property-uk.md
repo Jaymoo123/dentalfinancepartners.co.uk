@@ -115,7 +115,7 @@ faqs:
 
 <h2>Making Tax Digital and CGT Reporting</h2>
 
-<p>From April 2026, <strong>Making Tax Digital for Income Tax</strong> becomes mandatory for landlords with gross property income over £10,000. This means you will need to keep digital records and submit quarterly updates to HMRC.</p>
+<p>From April 2026, <strong>Making Tax Digital for Income Tax</strong> becomes mandatory for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This means you will need to keep digital records and submit quarterly updates to HMRC.</p>
 
 <p>While MTD does not directly change how you report CGT on property sales, it does mean your rental income and expenses will be tracked digitally. This can make it easier to identify when a sale is likely to trigger a CGT liability.</p>
 

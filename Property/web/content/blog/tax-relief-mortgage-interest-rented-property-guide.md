@@ -88,7 +88,7 @@ faqs:
 <li><strong>Clear allocation</strong> between personal and rental property mortgages</li>
 </ul>
 <p>If you have mortgages on both your main residence and rental properties, ensure the interest is properly allocated. Only interest on loans specifically for rental properties qualifies for relief.</p>
-<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becomes mandatory</a> for landlords with gross rental income over £10,000. This means quarterly reporting of rental income and expenses, including mortgage interest costs. MTD-compatible software will need to handle the Section 24 calculation correctly.</p>
+<p>From April 2026, <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital becomes mandatory</a> for landlords with gross qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). This means quarterly reporting of rental income and expenses, including mortgage interest costs. MTD-compatible software will need to handle the Section 24 calculation correctly.</p>
 <p>Many landlords make errors when claiming mortgage interest relief:</p>
 <ul>
 <li><strong>Including capital repayments</strong> - only interest qualifies for relief</li>

@@ -138,7 +138,7 @@ faqs:
 <ul>
 <li>Annual Self Assessment tax return</li>
 <li>Simple record-keeping requirements</li>
-<li><a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital compliance</a> from April 2026 (income over £10,000)</li>
+<li><a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital compliance</a> from April 2026 (qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028))</li>
 <li>No separate entity maintenance</li>
 </ul>
 <h3>Limited Company</h3>

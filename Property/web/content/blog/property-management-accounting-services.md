@@ -78,7 +78,7 @@ faqs:
 <p>When selling a property, CGT is payable on the profit. The current rates for residential property are 18% for basic rate taxpayers and 24% for higher/additional rate taxpayers. Property accountants help minimise this liability through strategies like utilising annual exemptions, claiming reliefs for lettings or business use, and timing disposals across tax years.</p>
 
 <h2>Making Tax Digital (MTD) for Landlords</h2>
-<p>From 6 April 2026, landlords with property income above £10,000 must comply with Making Tax Digital for Income Tax Property. This requires quarterly digital submissions and detailed record keeping throughout the year.</p>
+<p>From 6 April 2026, landlords with qualifying income above £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with Making Tax Digital for Income Tax Property. This requires quarterly digital submissions and detailed record keeping throughout the year.</p>
 <p>Specialist <strong>property management accounting services</strong> help landlords prepare for these changes by implementing appropriate software, establishing quarterly reporting routines, and ensuring all systems meet HMRC's digital requirements. Early preparation is crucial, as the penalties for non-compliance can be significant, and transitioning to digital systems takes time to implement properly.</p>
 
 <h2>Cost and Value of Property Accounting Services</h2>

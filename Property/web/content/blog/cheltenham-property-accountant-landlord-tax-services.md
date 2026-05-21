@@ -52,7 +52,7 @@ faqs:
 <p>Cheltenham's property values mean many landlords sit on the borderline where incorporation makes sense. Properties in GL50 and GL52 postcodes have seen strong capital growth, making the timing of any incorporation critical from a capital gains perspective. A specialist property accountant will model different incorporation routes, including holdover relief claims and the impact of the new property income tax rates from April 2027.</p>
 
 <h2>Making Tax Digital (MTD) Compliance and Software</h2>
-<p>From April 2026, landlords with gross property income over £10,000 must use Making Tax Digital compatible software. For Cheltenham landlords managing multiple properties or student HMOs, this threshold is easily exceeded.</p>
+<p>From April 2026, landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must use Making Tax Digital compatible software. For Cheltenham landlords managing multiple properties or student HMOs, this threshold is easily exceeded.</p>
 <p>MTD compliance isn't just about software – it requires proper categorisation of income and expenses, digital record keeping, and quarterly updates to HMRC. Property accountants help implement systems that work with your existing processes while meeting compliance requirements.</p>
 <p>Many Cheltenham landlords use local letting agents who may not provide MTD-ready reports. Bridging this gap between agent reporting and HMRC requirements needs professional expertise.</p>
 <p>Our <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital guide</a> covers the specific requirements for property investors.</p>

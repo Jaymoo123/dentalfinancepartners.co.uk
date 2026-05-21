@@ -20,7 +20,7 @@ faqs:
   - question: "Can LLPs avoid Section 24 mortgage interest restrictions?"
     answer: "No, LLPs face full Section 24 restrictions on mortgage interest relief, the same as individual landlords. Interest is only deductible as a tax credit at 20%, regardless of members' marginal tax rates. This makes LLPs less tax-efficient than limited companies for leveraged property investment, as companies can still deduct mortgage interest in full against rental profits."
   - question: "What are the main costs of running a property investment LLP?"
-    answer: "LLP costs typically include annual Companies House confirmation statement (£34), accountancy fees for partnership tax returns and individual compliance (often £1,500-£3,000+ depending on complexity), and potential VAT registration if turnover exceeds £90,000. From April 2026, Making Tax Digital compliance will add quarterly digital reporting requirements for LLPs with property income over £10,000."
+    answer: "LLP costs typically include annual Companies House confirmation statement (£34), accountancy fees for partnership tax returns and individual compliance (often £1,500-£3,000+ depending on complexity), and potential VAT registration if turnover exceeds £90,000. From April 2026, Making Tax Digital compliance will add quarterly digital reporting requirements for LLPs with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028)."
 ---
 
 <p>Limited liability partnerships (LLPs) are an often-overlooked structure for UK property investment. While most landlords consider either personal ownership or <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">SPV companies</a>, LLP property investment offers a middle ground that combines partnership flexibility with limited liability protection.</p>
@@ -96,7 +96,7 @@ faqs:
 <li>Individual self-assessment returns for each member reporting their profit share</li>
 <li>Companies House annual confirmation statement and accounts</li>
 <li>VAT registration if annual turnover exceeds £90,000</li>
-<li><a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital compliance</a> from April 2026 for partnerships with property income over £10,000</li>
+<li><a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital compliance</a> from April 2026 for partnerships with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028)</li>
 </ul>
 <p>The administrative burden typically exceeds simple property ownership but remains less complex than full company compliance in most cases. LLP structures typically incur annual accountancy fees for partnership returns, individual tax compliance, and Companies House filings.</p>
 
@@ -112,5 +112,5 @@ faqs:
 
 <p>The property tax landscape continues evolving, with significant changes affecting structure decisions:</p>
 <p>From April 2027, separate property income tax rates (22% basic, 42% higher, 47% additional) will apply to property income, making the tax-transparent nature of LLPs potentially less attractive for higher-rate taxpayers compared to company structures.</p>
-<p>Making Tax Digital requirements from April 2026 will add compliance complexity for LLPs with property income over £10,000, requiring quarterly digital reporting and annual summaries.</p>
+<p>Making Tax Digital requirements from April 2026 will add compliance complexity for LLPs with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028), requiring quarterly digital reporting and annual summaries.</p>
 <p>These changes generally favour company structures over LLPs for property investment, though specific circumstances—such as certain joint ventures or family arrangements with flexible profit-sharing needs—might still make LLP property investment worthwhile for some investors.</p>

@@ -166,7 +166,7 @@ faqs:
 
 <p>The potential tax savings often justify professional fees, particularly for higher-rate taxpayers or those with substantial property portfolios. Our <a href="/services">specialist property tax services</a> can help you identify all eligible allowances and structure your claims for maximum tax efficiency. We regularly help landlords recover thousands in tax relief they didn't know they could claim.</p>
 
-<p>With Making Tax Digital for Income Tax Property (ITSA) starting 6 April 2026 for landlords with property income over £10,000, digital record-keeping becomes mandatory. This actually supports better capital allowances planning:</p>
+<p>With Making Tax Digital for Income Tax Property (ITSA) starting 6 April 2026 for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028), digital record-keeping becomes mandatory. This actually supports better capital allowances planning:</p>
 <ul>
 <li>Digital records make it easier to track and categorise capital expenditure</li>
 <li>Quarterly reporting may provide earlier visibility of tax positions</li>
