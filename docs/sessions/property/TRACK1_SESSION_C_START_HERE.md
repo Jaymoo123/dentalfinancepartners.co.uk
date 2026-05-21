@@ -17,37 +17,31 @@ You run inside `C:/Users/user/Documents/Accounting-wt-property-track1-c/` on bra
 5. **Your assigned briefs** at `briefs/property/track1/<slug>.md`. Each brief is a research package — inputs only, no prescribed outline.
 6. **`docs/property/track1_page_tracker.md`** — master tracker. Your assigned pages are in the "Session C pages" table.
 
-## Per-page workflow
+## Per-page workflow (canonical version in each brief; this is the summary)
 
-For each page in your assignment (one at a time):
+Each brief at `briefs/property/track1/<slug>.md` has the canonical 19-step workflow. The summary:
 
-1. **Claim the page** in `docs/property/track1_page_tracker.md` — change `⬜ todo` to `🟡 in_progress`, add a UTC timestamp at claim time. Save the file.
-2. **Read the brief** at `briefs/property/track1/<slug>.md`. Pay close attention to:
-   - **Framing differentiator** — defines what makes this page distinct from siblings in the same bucket
-   - **Closest existing pages** — what we already have on related topics (cannibalisation discipline)
-   - **Redirect overlap** — if any, the exact middleware.ts edit you apply on launch
-   - **Authority links** worth considering for the bucket
-3. **Fetch each competitor URL listed in the brief** using `httpx` + `BeautifulSoup`. Read what they actually have. Decide what you'll do better, differently, or where you'll go deeper.
-4. **Read the closest-existing pages on our site** (paths in the brief). Decide whether your new page is the applied/scenario version (link out to existing pillar) or vice versa.
-5. **Plan the page** before writing. Decide:
-   - H2/H3 outline (vary it per page — do NOT pattern-match siblings)
-   - meta title (lead with the primary query word order, <62 chars)
-   - meta description (<158 chars)
-   - 10-14 FAQs covering competitor patterns + segment qualifiers + house-position clarifications
-   - inline `<aside>` CTA placements (1-3 per page; styling is global CSS — you write `<aside><p>headline</p><p>body</p></aside>` without classes)
-   - cannibalisation handling
-6. **Verify factual claims** against authorities (HMRC manuals, legislation.gov.uk, gov.uk). House positions doc is the tie-breaker.
-7. **Write the markdown file** at `Property/web/content/blog/<slug>.md`. See brief for required frontmatter fields.
-8. **If your brief lists a redirect overlap and your new page is a more specific fit:** edit `Property/web/src/middleware.ts` to repoint the old slug at your new page. Log the decision in the brief's work-log.
-9. **Build** from the worktree root: `cd Property/web && npm run build`. Must pass clean.
-10. **Verify:**
-    - FAQ schema count matches frontmatter: `grep -c '"@type":"Question"' Property/web/.next/server/app/blog/<category>/<slug>.html` equals your `faqs:` array length
-    - Zero em-dashes: `grep -c "—" Property/web/content/blog/<slug>.md` returns 0
-    - Zero Tailwind classes: `grep -cE 'class="[a-z]' Property/web/content/blog/<slug>.md` returns 0
-11. **Fill in the per-page work-log** at the bottom of the brief. URLs you fetched, decisions you made, citations added, internal links, build status. Supports resumability if you're interrupted mid-page.
-12. **Mark done** in `docs/property/track1_page_tracker.md`: `🟡 in_progress` → `✅ done`, 1-line Notes summary.
-13. **Flag** any site-wide issues to `docs/property/track1_site_wide_flags.md` (append-only). Never pause; flag and continue.
-14. **Next page** — claim ONE more page (top of your list). Repeat.
+1. Read house positions doc (once at session start).
+2. Claim ONE page in tracker (`⬜ todo` → `🟡 in_progress` + UTC timestamp).
+3. Read the brief (framing differentiator, closest existing, redirect overlap, authority links).
+4. Fetch + read each competitor URL with `httpx` + `BeautifulSoup`.
+5. Read closest-existing pages on our site.
+6. Plan H2/H3 outline + meta + FAQs + CTA placements (vary per page — anti-templating).
+7. Verify factual claims against authorities.
+8. **Fetch hero image from Pexels** via `fetch_image_for_post(query)` (free, attribution required in `imageCredit:` frontmatter).
+9. Write the markdown file at `Property/web/content/blog/<slug>.md` (full frontmatter list in brief).
+10. Build clean: `cd Property/web && npm run build`.
+11. **Six verifications must pass:** FAQ schema count match, 0 em-dashes, 0 Tailwind classes, meta title ≤62 chars, meta description ≤158 chars, all internal `/blog/...` links resolve to existing markdown files.
+12. Apply redirect repointing in `middleware.ts` if your brief lists a redirect overlap.
+13. **Register the new page in `monitored_pages` Supabase table** (snippet in the brief). The regression detector watches new pages once registered.
+14. **Commit on your branch** (per-page commit; do NOT merge to main — orchestrator handles).
+15. Fill in the per-page work-log at the bottom of the brief.
+16. Mark `✅ done` in tracker with 1-line Notes.
+17. Append site-wide issues to `docs/property/track1_site_wide_flags.md` (append-only).
+18. **Append discoveries** to `docs/property/track1_discovery_log_session_C.md` (append-only) — adjacent topics, calculator ideas, components, existing-page issues, cross-niche links.
+19. Next page — claim ONE more.
+
+The brief has the verbatim commands and code snippets. Refer to it for any step's detail.
 
 ## Universal rules (non-negotiable)
 
@@ -110,6 +104,23 @@ For each page in your assignment (one at a time):
 - A non-default schema type (HowTo, Course) would add SERP value → `SCHEMA`.
 - Redirect repointing action you took (or chose not to take) → `REDIRECT`.
 - Anything requiring a brand or business-model decision → `POSITIONING`.
+- Build broken by something OUTSIDE your page (sibling session's mid-edit YAML, etc) → `BUILD_BLOCKER` (orchestrator unblocks).
+- Page would benefit from a calculator or interactive widget we don't have → `CALCULATOR_IDEA`.
+- Competitor uses a UI pattern (comparison-table style, decision matrix, downloadable PDF) we lack → `COMPONENT_IDEA`.
+- Topic bridges Property and another niche (Medical / Solicitors etc) → `CROSS_NICHE_LINK`.
+
+**Log to `docs/property/track1_discovery_log_session_C.md`** (append-only; for observations that don't need immediate action but feed future waves):
+- Adjacent topics that competitors cover and we don't (not in `topic_gaps_final.md`) → `ADJACENT_TOPIC`
+- Calculator / interactive widget ideas → `CALCULATOR_IDEA`
+- Competitor UI patterns worth borrowing → `COMPONENT_IDEA`
+- EXISTING (non-assigned) pages of ours with stale figures or wrong framings → `EXISTING_PAGE_STALE` (feeds Track 2 sweep)
+- Existing pages that should link to your new page (you can suggest these or the orchestrator handles) → `EXISTING_PAGE_LINK_OPPORTUNITY`
+- Cross-niche topic-bridges → `CROSS_NICHE_LINK`
+- HMRC manuals / legislation / case law our site never cites → `AUTHORITY_GAP`
+- SERP features (featured snippets, rich answers, knowledge panels) competitors win → `SERP_FEATURE`
+- Questions you couldn't answer with public sources — would need internal data → `INTERNAL_RESEARCH`
+
+**Difference flags vs discoveries:** flags = orchestrator needs to action (cross-session impact); discoveries = observations that compound into future waves (no immediate action). When in doubt, log to discoveries.
 
 **Stop and ask** (only in extreme cases):
 - Build failures on baseline before your changes (would make rewriting unsafe).

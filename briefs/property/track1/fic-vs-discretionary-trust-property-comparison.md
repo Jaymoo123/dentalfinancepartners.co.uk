@@ -135,19 +135,76 @@ You don't have to use all of these; pick the ones that fit your specific framing
 3. **Read the brief** (this file). Pay attention to: framing differentiator, closest existing pages, redirect overlap, authority links.
 4. **Fetch each competitor URL** using `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` then `BeautifulSoup(html, "lxml")`. Decide what's worth extracting (outline, FAQs, worked examples, citation density, component patterns).
 5. **Read the closest existing pages** on our site (paths in the "Closest existing pages" section). Note where they over/undershoot the topic. Decide your differentiation per the framing.
-6. **Plan the rewrite/write** before touching markdown. Decide: H2/H3 outline (vary it — don't pattern-match siblings), meta title (lead with the primary query word order, <62 chars), meta description (<158 chars), 10-14 FAQs covering competitor patterns + GSC demand + segment qualifiers + house-position clarifications, inline aside CTA placements, cannibalisation handling.
+6. **Plan the rewrite/write** before touching markdown. Decide: H2/H3 outline (vary it — don't pattern-match siblings), meta title (lead with the primary query word order, **≤62 chars**), meta description (**≤158 chars**), 10-14 FAQs covering competitor patterns + GSC demand + segment qualifiers + house-position clarifications, inline aside CTA placements, cannibalisation handling.
 7. **Verify factual claims** against HMRC manuals / legislation.gov.uk / gov.uk. House positions doc is the tie-breaker.
-8. **Write the markdown file** at `Property/web/content/blog/<slug>.md`. Frontmatter: `title`, `slug`, `canonical: https://www.propertytaxpartners.co.uk/blog/<category>/<slug>`, `date: <today>`, `author: 'Property Tax Partners Editorial Team'`, `category: <category>`, `metaTitle`, `metaDescription`, `altText`, `image: ''`, `h1`, `summary`, `schema: ''`, `faqs: [...]`, `dateModified`, `reviewedBy: ICAEW Qualified Senior Reviewer`, `reviewerCredentials: Chartered Accountant (ACA, ICAEW), Property Tax Specialist`, `reviewedAt: <today>`, `editorialNote`.
-9. **Build:** from your worktree root, `cd Property/web && npm run build`. Must pass clean.
-10. **Verify:**
-    - `grep -c '"@type":"Question"' Property/web/.next/server/app/blog/<category>/<slug>.html` equals your `faqs:` array length
-    - `grep -c "—" Property/web/content/blog/<slug>.md` is 0
-    - `grep -cE 'class="[a-z]' Property/web/content/blog/<slug>.md` is 0
-11. **If your brief lists a redirect overlap:** edit `Property/web/src/middleware.ts` to repoint the old slug at your new page (changes are in the brief; apply them precisely).
-12. **Fill in the per-page work-log** at the bottom of this brief (URLs fetched, decisions made, citations added, internal links, build status, flags).
-13. **Mark done** in `docs/property/track1_page_tracker.md` (`🟡 in_progress` to `✅ done`) with a 1-line Notes summary.
-14. **Append any site-wide flags** to `docs/property/track1_site_wide_flags.md` (append-only). Do not pause; flag and continue.
-15. **Next page** — claim ONE more page (the one above the current bottom of your assigned list), repeat.
+8. **Fetch a hero image from Pexels** (free, free-licence, attribution required):
+   ```python
+   import sys; sys.path.insert(0, '.')
+   from optimisation_engine.blog_generator.post_processing import fetch_image_for_post
+   # Use a 2-4 word visual query, NOT the whole meta title
+   image = fetch_image_for_post("uk property tax")
+   # Returns: {'url': 'https://images.pexels.com/...', 'photographer': 'Jane Doe',
+   #           'photographer_url': '...', 'pexels_url': '...', 'alt': '...'} or None
+   ```
+   Pick a query that's visually evocative and topical (eg "uk house keys", "stamp duty paperwork", "london terraced houses"). If Pexels returns None, leave `image: ''` (template falls back to auto-generated OG image at `/api/og?title=...&category=...`).
+9. **Write the markdown file** at `Property/web/content/blog/<slug>.md`. Frontmatter required fields:
+   - `title`, `slug`, `canonical: https://www.propertytaxpartners.co.uk/blog/<category>/<slug>`
+   - `date: <today>`, `author: 'Property Tax Partners Editorial Team'`
+   - `category: <category>` (use the assigned one)
+   - `metaTitle` (≤62 chars), `metaDescription` (≤158 chars)
+   - `altText` (descriptive — re-use the Pexels `alt` field if it fits, otherwise write your own)
+   - `image: '<pexels url>'` (full Pexels URL from `fetch_image_for_post`, OR `''` if Pexels returned None)
+   - When `image` is a Pexels URL, also add (REQUIRED for attribution):
+     ```yaml
+     imageCredit:
+       photographer: <Pexels photographer name>
+       photographer_url: <Pexels photographer profile URL>
+       source: Pexels
+       source_url: <pexels_url returned by API>
+     ```
+   - `h1`, `summary` (1-2 sentences)
+   - `schema: ''` (template handles JSON-LD), `faqs: [...]` (10-14 entries)
+   - `dateModified: <today>`, `reviewedBy: ICAEW Qualified Senior Reviewer`
+   - `reviewerCredentials: Chartered Accountant (ACA, ICAEW), Property Tax Specialist`
+   - `reviewedAt: <today>`, `editorialNote: <1-line>`
+10. **Build:** from your worktree root, `cd Property/web && npm run build`. Must pass clean.
+11. **Verify (all six checks must pass):**
+    - FAQ schema count: `grep -c '"@type":"Question"' Property/web/.next/server/app/blog/<category>/<slug>.html` equals your `faqs:` array length
+    - Em-dashes: `grep -c "—" Property/web/content/blog/<slug>.md` is 0
+    - Tailwind classes: `grep -cE 'class="[a-z]' Property/web/content/blog/<slug>.md` is 0
+    - Meta title length: ≤62 chars
+    - Meta description length: ≤158 chars
+    - Internal links resolve: every `/blog/category/slug` link you added points at an existing markdown file under `Property/web/content/blog/`
+12. **If your brief lists a redirect overlap:** edit `Property/web/src/middleware.ts` to repoint the old slug at your new page (changes are in the brief; apply them precisely). Log your decision in the work-log.
+13. **Register the new page for GSC monitoring**: insert a row into the `monitored_pages` Supabase table so the regression detector picks it up. Run from your worktree:
+    ```bash
+    python -c "
+    import sys; sys.path.insert(0,'.')
+    from optimisation_engine.competitor._db import _sql, _esc
+    slug = '<your-slug>'
+    cat = '<your-category>'
+    _sql(f\"INSERT INTO monitored_pages (site_key, slug, page_url, rewrite_date, monitor_until, rewrite_type, notes) VALUES ('property', {_esc(slug)}, '/blog/{cat}/{slug}', CURRENT_DATE, CURRENT_DATE + INTERVAL '90 days', 'rewrite', 'Track 1 net-new page') ON CONFLICT (site_key, slug, rewrite_date) DO NOTHING\")
+    print('registered')
+    "
+    ```
+14. **Commit on your branch.** Per-page commit (do NOT merge to main — orchestrator merges after review):
+    ```bash
+    git add Property/web/content/blog/<slug>.md briefs/property/track1/<slug>.md docs/property/track1_page_tracker.md
+    # if you applied a redirect repointing:
+    git add Property/web/src/middleware.ts
+    git commit -m "Track 1 (<bucket>): write <slug>"
+    ```
+15. **Fill in the per-page work-log** at the bottom of this brief (URLs fetched, decisions made, citations added, internal links, build status, flags raised).
+16. **Mark done** in `docs/property/track1_page_tracker.md` (`🟡 in_progress` to `✅ done`) with a 1-line Notes summary.
+17. **Append any site-wide flags** to `docs/property/track1_site_wide_flags.md` (append-only — never pause).
+18. **Log discoveries** to `docs/property/track1_discovery_log_session_<X>.md` (append-only) — adjacent topics, calculator ideas, components competitors use, authority gaps, existing pages that need updating, cross-niche linking opportunities. This is how future waves get smarter.
+19. **Next page** — claim ONE more page from the top of your remaining list. Repeat.
+
+## At the end of your shift / session
+
+- Verify all your assigned pages either show ✅ done OR have a clear in_progress claim with work-log decisions logged.
+- Push your branch to a remote IF the orchestrator has set one up (default: don't push; orchestrator handles).
+- Leave a clean commit history on your branch.
 
 
 ---
