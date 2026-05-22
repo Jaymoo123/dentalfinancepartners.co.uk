@@ -22,11 +22,18 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/renters-rights-bill-impact-landlords-consider-selling-properties/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+Validated 2026-05-22. The manager-identified primary URL (`renters-rights-bill-impact-landlords-consider-selling-properties`) is the same competitor article assigned as primary to C9 (selling portfolio brief). It is the wrong primary for C6 because it covers sale-trigger commercial sentiment, not database / ombudsman registration mechanics. Stage 2 replaces it with statutory + government-policy primaries; the original URL is retained as a background light reference.
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+- https://www.legislation.gov.uk/ukpga/2025/26/contents (RRA 2025; **Part 2 Chapter 2 (ss.64-74) Landlord Redress Schemes** = Ombudsman; **Part 2 Chapter 3 (ss.75-96) The Private Rented Sector Database**; verified live; commencement: s.74 only of the Ombudsman chapter in force 1 May 2026, full Database chapter pending future SI as of 2026-05-22)
+- https://www.gov.uk/government/news/private-rented-sector-database-and-landlord-ombudsman (gov.uk policy announcement / DLUHC press content on the database + ombudsman; session to validate URL slug as published)
+- https://www.gov.uk/redress-scheme-estate-agencies (gov.uk redress-scheme background; the comparator regime for letting agents that the landlord ombudsman complements; verified live)
+- https://www.ukpropertyaccountants.co.uk/renters-rights-bill-impact-landlords-consider-selling-properties/ (originally manager-identified; legacy "Bill" framing; useful for landlord-sentiment context only, not procedural authority)
+- https://www.legislation.gov.uk/uksi/2026/421/made (SI 2026/421 reg.3 brings s.74 RRA 2025 into force on 1 May 2026; full Chapter 2 and Chapter 3 still need a further appointed day)
+- https://www.gov.uk/government/publications/database-of-rogue-landlords-and-property-agents-under-the-housing-and-planning-act-2016 (gov.uk rogue-landlord database guidance; important to draw the distinction: the HP Act 2016 rogue-landlord database is the offence-driven repeat-offender register; the RRA 2025 PRS Database is the universal mandatory register; verified live)
+
+> Session should re-check the gov.uk private-renting topic page for any DLUHC / MHCLG database launch announcement before writing the "in force" / "scheduled" framing. As of 2026-05-22 the database chapter is **scheduled but not yet appointed**.
 
 ---
 
@@ -36,11 +43,25 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Reasoned 2026-05-22. Original brief hint referenced OLD C1; new C1 is enforcement-focused.
 
-**Manager hint:** expected neighbours: C1 (pillar), C2 (possession, some database compliance is precondition to possession), existing `non-resident-landlord-scheme-uk-complete-guide` (NRL is the other landlord registration regime, lateral).
+Neighbours:
+
+1. **`non-resident-landlord-scheme-uk-complete-guide`** (non-resident-landlord-tax). Lateral on the *other* landlord-registration regime (NRL scheme for non-resident landlords; statutory under FA 1995 / SI 1995/2902). Useful comparator framing: NRL = tax-withholding registration; PRS Database = housing-compliance registration. Cross-link explicitly to make the distinction.
+
+2. **C1 (new) `rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence`** (this wave). Sits above C6 on the enforcement axis: civil-penalty exposure for operating outside the PRS Database (up to £40,000 per house_positions §20.5 / s.15 + Sch.5 RRA 2025) is C1's territory; database registration mechanics are C6's. Bidirectional link.
+
+3. **C2 (sibling) `section-21-abolition-uk-landlord-possession-guide-2026`** (this wave). PRS Database registration becomes a precondition to lawful letting and therefore to lawful possession proceedings; courts may refuse possession where the landlord cannot evidence database compliance. Cross-link forward.
+
+4. **C5 (sibling) `decent-homes-standard-prs-landlord-compliance-checklist`** (this wave). Database records compliance status; the Decent Homes check is one of the recorded compliance fields. Cross-link bidirectionally.
+
+5. **`renters-rights-act-2026-tax-implications-landlords`** (landlord-tax-essentials; queued for rewrite under F-1). Background; tax-deductibility-of-registration-fees angle is a small overlap (this page covers in tax-essentials framing). Note for F-1 rewrite, link forward to C6 for the procedural detail.
+
+6. **`hmo-licensing-fees-tax-deductible-uk-landlords`** (property-types-and-specialist-tax). Closest existing for the deductibility analysis of registration fees + ombudsman scheme subscription, both of which are revenue-deductible per house_positions §20.11. Cross-link.
+
+**Differentiation move:** the *registration procedural* page. Cover: who must register (universal mandatory once Ch.3 Pt.2 commences), what information must be supplied (landlord ID, property addresses, gas safety, EICR, EPC, Right to Rent, deposit protection per house_positions §20.5), ombudsman scheme registration (the s.74 in-force-now part), fee deductibility, civil penalty for non-registration (up to £40,000 / banning order), and the commencement timing (database SCHEDULED but not yet appointed as of 2026-05-22; tenant ombudsman duty s.74 in force 1 May 2026; full scheme awaiting SI). Frame the in-force-vs-scheduled discipline explicitly so the page does not over-claim. No cannibalisation flag.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +72,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+Stage 2 validation (2026-05-22): grepped middleware for slug tokens (prs, database, ombudsman, registration, landlord-database). No legacy redirect entries match. No redirect repointing required.
 
 ---
 

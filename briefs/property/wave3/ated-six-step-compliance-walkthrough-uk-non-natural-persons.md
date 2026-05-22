@@ -22,11 +22,16 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://uklandlordtax.co.uk/tax-guide/annual-tax-on-enveloped-dwellings-ated/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+- https://uklandlordtax.co.uk/tax-guide/annual-tax-on-enveloped-dwellings-ated/ (manager-pre-filled primary; Stage 2 could not fetch directly due to permission restriction on the uklandlordtax host. Documented in `wave3_candidates_selected.md` as a verified competitor signal. Session should attempt direct fetch on the day; if it 404s or returns no content, fall back to the gov.uk + UKPA primaries below).
+- https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics (gov.uk primary; verified live 2026-05-22). Walks through the same six operational stages this page builds (who is in scope, valuation, return, payment, reliefs, ongoing). Authoritative.
+- https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-returns (gov.uk official returns guidance — the operational backbone for steps 3-4 of the walkthrough).
+- https://www.gov.uk/hmrc-internal-manuals/annual-tax-on-enveloped-dwellings (HMRC ATED Manual — authority for any step-specific HMRC procedural detail).
+- https://www.ukpropertyaccountants.co.uk/a-complete-guide-to-annual-tax-on-enveloped-dwellings/ (verified live 2026-05-22; on-topic — see A1 brief). Useful as a competitor structural cross-reference because their "registration / submission / payment / reliefs" sub-headings map closely to the six-step framing.
+- https://www.legislation.gov.uk/ukpga/2013/29/part/3 (FA 2013 Part 3 — statutory anchor; cite at step 1).
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml.
 
 ---
 
@@ -36,11 +41,18 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+1. `ated-complete-guide-2026-27`. Pillar — most-comprehensive existing ATED page. **Highest cannibalisation watch.** *Differentiation:* the pillar is the substantive deep-dive (statute, scope, reliefs, mechanics, penalty cascade). This page is the **process walkthrough** — a step-by-step operational sequence for a first-time filer: (1) determine scope, (2) value the property, (3) prepare the return (RDR vs ATED return), (4) submit by 30 April, (5) claim relief / pay tax, (6) ongoing monitoring + clawback discipline. HowTo schema candidate (flag SCHEMA in work-log). Cross-link densely; cite the pillar for substance and link out at every step for the deep mechanic.
+2. Sibling A1 (overview / strategic). Co-equal — A1 is the "should you care" page; A10 is the "here is how you operationally comply" page. Cross-link bilaterally.
+3. Sibling A2 (rates), A5 (amendment), A7 (valuation), A9 (appeals). Each maps to a step in the walkthrough: A2 supports step 3 (charge calculation), A7 supports step 2 (valuation), A5 supports step 6 (ongoing monitoring / amendments), A9 supports the contingent path if step 4 deadline missed. Cross-link explicitly at each step.
+4. `buy-to-let-limited-company-complete-guide-uk` (Incorporation & Company Structures). Adjacent — directors arriving here from BTL Ltd Co context. One-paragraph cross-link in step 1.
+5. `incorporating-property-portfolio-uk-2026`. Adjacent — newly-incorporated holders are the prime first-time-filer audience. Cross-link in step 1.
+6. `non-resident-landlord-scheme-uk-complete-guide`. Lateral — overseas-company-held ATED dwellings also have NRL obligations. One-line cross-link.
 
-**Manager hint:** expected neighbours: A1 (overview), A5 (amendment, for after the first filing), existing `ated-complete-guide-2026-27`, existing `buy-to-let-limited-company-complete-guide-uk`.
+**Cannibalisation judgement:** highest-risk page in the bucket alongside A2. **CANNIBAL flag candidate** if the session reproduces pillar narrative. Discipline: each step is one short paragraph + a cross-link to the relevant Wave 3 sibling or existing pillar for depth. Word count should be moderate (not maximalist) because the value proposition is the SEQUENCE, not the depth. SCHEMA flag: HowTo schema is a strong candidate for SERP differentiation — session to raise SCHEMA flag for orchestrator decision on whether to inject HowTo schema in the template.
+
+**Category note:** override to `incorporation-and-company-structures`.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +63,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+no redirect overlap (middleware.ts checked 2026-05-22).
 
 ---
 

@@ -22,11 +22,14 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/making-tax-digital-mtd-the-uks-major-tax-reform/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
-
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+- https://www.ukpropertyaccountants.co.uk/making-tax-digital-mtd-the-uks-major-tax-reform/ — VERIFIED ALIVE 2026-05-22 (published 2024-09-16, last updated 2025-03-18). Strong primary: positions MTD as the most significant change since SA's 1996/97 introduction; original 2024 mandate plan modified to phased 2026/2027; covers all three cohorts (VAT 2019, ITSA 2026-28, CT future).
+- https://www.gov.uk/government/consultations/making-tax-digital — the original 2018 consultation outcome (gov.uk). Policy-history primary source for the abandoned £10k threshold.
+- https://www.gov.uk/government/news/government-announces-phased-mandation-of-making-tax-digital-for-itsa — 19 December 2022 announcement of phased schedule (session to verify URL on fetch; if 404, fallback to gov.uk site search for the December 2022 announcement).
+- https://www.gov.uk/government/publications/spring-statement-2025-document/spring-statement-2025-html — Spring Statement 2025 (the late-payment penalty doubling context).
+- https://www.gov.uk/government/publications/making-tax-digital — the overarching MTD policy paper (multi-cycle digital tax administration framing).
+- https://www.legislation.gov.uk/ukpga/2017/10/schedule/14 — FA 2017 Sch A1/14, the original 2017 statutory basis for MTD ITSA.
 
 ---
 
@@ -36,11 +39,29 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Inventory scanned 2026-05-22 across all 346 Property posts. Critical cannibalisation analysis below.
 
-**Manager hint:** expected neighbours: existing `how-to-register-mtd-landlord-step-by-step-guide` (CANNIBAL-WATCH; see framing - this is the partial-overlap candidate at 0.38), B8 (overview, sibling), existing `mtd-quarterly-deadlines-2026-2027-landlords` (timeline lateral).
+1. **`how-to-register-mtd-landlord-step-by-step-guide`** ("How to Register for Making Tax Digital as a Landlord: Complete Step-by-Step Guide 2026") — **CANNIBAL-WATCH from Stage 1 (token similarity 0.38).** Read frontmatter 2026-05-22. Existing page is purely the **registration HOW-TO** (HMRC registration process, eligibility requirements, software setup) for landlords already mandated.
+
+   **Differentiation decision:** This new page is the **POLICY HISTORY** ("why this is happening, when it was decided, what came before"). Lead with the 2018 consultation, the abandoned £10k threshold, the 2022 review, the December 2022 phased-schedule announcement, the Spring Statement 2025 penalty doubling, and the broader MTD-cycle context (VAT 2019, ITSA 2026, CT future). No registration instructions in this page. No software setup. Reader question this page serves: "why is this happening to me", NOT "how do I register".
+
+   **Resolution: NO CANNIBAL flag.** Scopes are clean (history vs how-to). Note Stage 1 also added F-1 redirect (`mtd-10000-threshold-when-does-it-apply` → `mtd-rental-income-threshold-exemptions`); the redirect target should probably be re-pointed to this policy-history page since it covers the abandoned £10k threshold by design. **Raise REDIRECT flag**: re-point `mtd-10000-threshold-when-does-it-apply` from `mtd-rental-income-threshold-exemptions` to `mtd-itsa-major-tax-reform-context-policy-history` on launch. The policy-history page is the natural landing for users searching the abandoned threshold; the exemptions page is the wrong target.
+
+2. **`making-tax-digital-property-income-2026-complete-guide`** — broader pillar; touches policy context briefly. Differentiation: this page is depth-on-history, the existing pillar is breadth. Cross-link.
+
+3. **B8 sibling `mtd-itsa-overview-six-changes-residential-landlords`** — overview of changes (what), this page is policy history (why). Cross-link both directions.
+
+4. **`mtd-rental-income-threshold-exemptions`** — threshold pillar; mentions £10k abandoned in passing. Cross-link out for the current threshold detail.
+
+5. **`making-tax-digital-landlords-april-2026-deadline`** — date-anchored explainer. Cross-link.
+
+6. **B7 sibling `mtd-itsa-comparison-current-self-assessment-vs-mtd-cycle`** — the structural before/after. Cross-link as the operational counterpart to this page's policy-history framing.
+
+7. **`mtd-quarterly-deadlines-2026-2027-landlords`** — current timeline. Cross-link for the present-day mechanics.
+
+**Differentiation move:** policy-history article structure. Chronological spine: 2017 statutory basis (FA 2017 Sch 14) → 2018 consultation £10k design → 2019 VAT cycle launches → 2021 ITSA pushed to 2024 → 2022 review → December 2022 phased £50k/£30k schedule → 2024 pilot launches → April 2025 voluntary opt-in → Spring Statement 2025 penalty doubling → April 2026 mandate → April 2027 (£30k) → April 2028 (£20k). Read like a policy paper, not a how-to. No CANNIBAL flag, redirect re-point recommended.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +72,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate the cannibalisation question deliberately. This is the partial-overlap brief manager flagged.
+Reviewed `Property/web/src/middleware.ts` 2026-05-22. Existing redirect: `mtd-10000-threshold-when-does-it-apply` currently points to `/blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions`. **RECOMMENDED ACTION:** re-point this redirect to `/blog/making-tax-digital-mtd/mtd-itsa-major-tax-reform-context-policy-history` on launch. Reasoning: a user searching the abandoned £10k threshold is asking the policy-history question ("what happened to the £10k threshold"), which this page IS by design. Exemptions page does not cover the history. Session to execute this re-point in middleware.ts at step 12, and log REDIRECT flag.
 
 ---
 

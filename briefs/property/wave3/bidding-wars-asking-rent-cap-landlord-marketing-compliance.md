@@ -22,11 +22,19 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/new-rent-increase-rules-under-the-renters-rights-act/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+Validated 2026-05-22. The manager-identified primary is also assigned to C4 (rent-increase page); it covers both the post-tenancy rent rise AND the pre-tenancy asking-rent cap, but is a better fit for C4. Stage 2 keeps it as a secondary and leads with statutory + government sources on the bidding-wars / advance-rent ban specifically.
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+- https://www.legislation.gov.uk/ukpga/2025/26/contents (RRA 2025; the load-bearing references for this brief are **Chapter 6 of Part 1 "Rent bidding"** (in force 1 May 2026 per SI 2026/421 reg.3), **Section 8 "Prohibition of rent in advance after lease entered into"**, **Section 9 "Prohibition of rent in advance before lease entered into"**; verified live)
+- https://www.legislation.gov.uk/uksi/2026/421/made (SI 2026/421; appointed-day for ss.8, 9 and Ch.6 Pt.1 = 1 May 2026)
+- https://www.gov.uk/private-renting/your-rights-and-responsibilities (gov.uk tenant guidance, post-1-May-2026 updated content on the bidding-wars ban and advance-rent rules; verified live)
+- https://www.ukpropertyaccountants.co.uk/new-rent-increase-rules-under-the-renters-rights-act/ (originally manager-identified; secondary reference; same 403-to-bot caveat as C4)
+- https://www.ukpropertyaccountants.co.uk/renters-rights-bill-key-impact-on-tenants-landlords/ (per C10 selection rationale; legacy "Bill" framing; background only)
+- https://www.legislation.gov.uk/ukpga/2019/4/contents (Tenant Fees Act 2019; defines prohibited payments and the 5-week deposit cap; the RRA 2025 advance-rent ban sits alongside TFA 2019 prohibited payments; verified live)
+- https://www.gov.uk/government/organisations/first-tier-tribunal-property-chamber (FTT-PC route where civil penalties for breach are appealed)
+
+> Session may add the most recent NRLA / Propertymark policy commentary on the rental-bidding ban for the marketing-stage compliance angle.
 
 ---
 
@@ -36,11 +44,27 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Reasoned 2026-05-22. The Property inventory has no existing dedicated page on the bidding-wars / asking-rent cap / advance-rent ban; genuinely net-new territory.
 
-**Manager hint:** expected neighbours: C4 (post-tenancy rent rises, sibling), C1 (pillar), existing `rental-yield-vs-roi-property-investors-uk` (lateral on yield-from-rent vs yield-from-asking-rent), existing `rental-income-tax-uk-complete-guide-landlords`.
+Neighbours:
+
+1. **C4 (sibling) `renters-rights-act-rent-increase-section-13-tribunal-route`** (this wave). The complement: C10 = pre-tenancy marketing-stage asking-rent ceiling; C4 = post-tenancy mid-tenancy rent rises. Bidirectional cross-link is mandatory. No overlap if both stay in lane.
+
+2. **C1 (new) `rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence`** (this wave). The civil-penalty regime under s.15 + Sch.5 RRA 2025 covers breach of the bidding-wars and advance-rent rules. Forward link for the enforcement layer; this page should mention the penalty range and route the reader to C1 for defence detail.
+
+3. **C8 (sibling) `tenancy-agreement-template-rra-2025-compliant-clauses`** (this wave). Advance-rent prohibition feeds into what landlords can stipulate in advertising and what clauses can/cannot appear in tenancy agreements. Cross-link.
+
+4. **`what-is-good-gross-yield-buy-to-let-property-2026`** (landlord-tax-essentials-adjacent / similar). Yield-from-asking-rent vs yield-from-actual-letting-rent is a useful angle for landlords whose business plan depended on competitive-bid uplift. Light cross-link if applicable.
+
+5. **`renters-rights-act-2026-tax-implications-landlords`** (landlord-tax-essentials; queued for rewrite under F-1). Background.
+
+6. **`first-time-landlord-tax-guide-everything-you-need-to-know`** (landlord-tax-essentials). Upstream pillar; light link.
+
+7. **`landlord-expenses-allowable-uk-2026`** (section-24-and-tax-relief). Marketing / advertising costs of re-listing properties at compliance-correct asking rents are revenue-deductible; light cross-link for the tax-deductibility angle.
+
+**Differentiation move:** the *marketing-stage compliance* page. Cover: the statutory advertised-rent ceiling rule (Ch.6 Pt.1 RRA 2025), the prohibition on inviting OR accepting offers above the advertised rent (covers both landlord-direct and letting-agent channels), the s.8 + s.9 advance-rent ban (cannot demand 6 or 12 months upfront; first month only at lease start), the interaction with Tenant Fees Act 2019 (5-week deposit cap, prohibited payments), the civil-penalty exposure for breach (up to £40,000 per offence per house_positions §20.5 / §20.10 + s.15 + Sch.5 RRA 2025), the practical compliance checklist for portal listings + advertising copy, the marketing-cost tax deductibility note. **In force from 1 May 2026** (verified via SI 2026/421 reg.3). No cannibalisation flag.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +75,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+Stage 2 validation (2026-05-22): grepped middleware for slug tokens (bidding, asking-rent, advance-rent, marketing, advertising). No legacy redirect entries match. No redirect repointing required.
 
 ---
 

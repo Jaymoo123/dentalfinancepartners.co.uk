@@ -22,11 +22,15 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/understanding-ated-valuation-rules/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+- https://www.ukpropertyaccountants.co.uk/understanding-ated-valuation-rules/ (Stage 2 verified live 2026-05-22; on-topic). Covers key valuation dates, 5-yearly revaluation, 1 April 2022 -> 1 April 2027 cycle, acquisition-date valuation, substantial transactions trigger (£40k+), how to value (professional valuer / market evidence / self-valuation risks), and HMRC's response to valuations. Caveat: no statutory section citations on the competitor page — Stage 2 confirmed the underlying statute (FA 2013 ss.102-110-ish) at the session's write-time.
+- https://www.landlordstax.co.uk/ated-valuation-date (manager-pre-filled secondary; Stage 2 could not fetch directly due to permission restriction, but the URL is documented in `wave3_candidates_selected.md` as a verified competitor signal. Session should attempt direct fetch on the day; if it 404s, drop it and rely on the primaries below).
+- https://www.gov.uk/hmrc-internal-manuals/annual-tax-on-enveloped-dwellings (HMRC ATED Manual — primary citation for the 5-yearly revaluation rule, acquisition-date valuation, Pre-Return Banding Check (PRBC), and substantial-acquisition / substantial-disposal rules).
+- https://www.gov.uk/government/publications/annual-tax-on-enveloped-dwellings-technical-guidance (gov.uk technical guidance — for the practical valuation approach HMRC accepts).
+- https://www.legislation.gov.uk/ukpga/2013/29/part/3 (FA 2013 Part 3 — for the statutory anchor; sessions should locate the specific valuation sections (ss.102-110 area) at write-time).
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml.
 
 ---
 
@@ -36,11 +40,17 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+1. `ated-complete-guide-2026-27`. Pillar mentions valuation in FAQ "How is the property value for ATED determined?" with the 1 April 2022 -> 1 April 2027 cycle and PRBC for properties within 10% of a band boundary. *Differentiation:* this page is the standalone deep-dive on valuation date rules (statutory dates, acquisition-date treatment, substantial-transaction triggers, PRBC walkthrough with worked example, what to do if your valuation puts you near a band boundary, who to instruct as a valuer, evidence HMRC accepts). The pillar's three-sentence treatment becomes this page's full mechanic. Cross-link bilaterally; raise F-XX INTERNAL_LINK flag suggesting the pillar's FAQ should link forward to this page.
+2. Sibling A2 (rates table). Tight pairing — A2 covers what you pay at a given value; A7 covers what value applies. Cross-link prominently in the band-boundary section.
+3. Sibling A6 (mixed-use apportionment). Lateral — apportionment IS a valuation question. Cross-link in the apportionment-valuation subsection.
+4. `ated-rental-property-relief-mechanics`. Adjacent — relief claimers still need to set a valuation. One-line cross-link.
+5. `ated-15-percent-flat-rate-sdlt-interaction`. Adjacent — acquisition-date valuation for SDLT 15% triggering and ATED first-year banding are the same valuation. Cross-link in the acquisition section.
 
-**Manager hint:** expected neighbours: A1, A2 (rates table), A6 (mixed-use, related apportionment), existing `how-to-value-rental-property-portfolio-tax-purposes` (cross-bucket valuation lateral).
+**Cannibalisation judgement:** clear differentiation — the pillar's valuation FAQ is a teaser, this page is the deep-dive. No CANNIBAL flag.
+
+**Category note:** override to `incorporation-and-company-structures`.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +61,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+no redirect overlap (middleware.ts checked 2026-05-22).
 
 ---
 

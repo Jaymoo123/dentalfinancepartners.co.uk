@@ -22,11 +22,13 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/received-hmrcs-mtd-letter-mtd-compliance-for-landlords/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
-
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+- https://www.ukpropertyaccountants.co.uk/received-hmrcs-mtd-letter-mtd-compliance-for-landlords/ — VERIFIED ALIVE 2026-05-22 (Trustpilot 410+ reviews block confirms current page; content body confirmed sparse via WebFetch but page exists). Persona anchor: HMRC's pre-mandate outreach letter campaign. Treat as the keyword/intent capture; competitor body is thin, your page can be the deeper one.
+- https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax — HMRC eligibility tool to verify the letter's claim. Critical: many letter recipients should run the gross test themselves before accepting the letter at face value.
+- https://www.gov.uk/government/publications/making-tax-digital-for-income-tax-letter-template — gov.uk letter examples (if alive on session fetch; session to verify).
+- https://www.gov.uk/guidance/sign-up-as-an-individual-for-making-tax-digital-for-income-tax — the action the letter prompts. Operational landing point.
+- https://www.gov.uk/government/organisations/hm-revenue-customs/contact — HMRC contact details for the "I think this is wrong, who do I call" sub-question.
 
 ---
 
@@ -36,11 +38,25 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Inventory scanned 2026-05-22 across all 346 Property posts. Closest neighbours topically:
 
-**Manager hint:** expected neighbours: existing `how-to-register-mtd-landlord-step-by-step-guide`, existing `mtd-penalties-landlords-miss-deadline`, B1 (gross-vs-net, often the verification question), B9 (pilot for early opt-in alternative).
+1. **`how-to-register-mtd-landlord-step-by-step-guide`** — the registration workflow the letter prompts. Distinct angle: this page leads with the trigger event (letter arriving) and the verification decision (am I really in?), then hands off to the registration pillar for the workflow. Cross-link forward.
+
+2. **`mtd-rental-income-threshold-exemptions`** — verification reference. The letter may misclassify (HMRC works off CY-2 SA returns; exemption categories may apply). Cross-link.
+
+3. **B1 sibling `mtd-itsa-qualifying-income-test-gross-vs-net`** — the gross-test mechanic the verification uses. Cross-link as primary technical reference.
+
+4. **B9 sibling `mtd-itsa-pilot-trial-volunteer-2025-26-experience`** — the early-opt-in alternative if the letter recipient wants to get ahead of the mandate. Cross-link.
+
+5. **`making-tax-digital-landlords-april-2026-deadline`** — the deadline anchor. Cross-link.
+
+6. **`mtd-penalties-landlords-miss-deadline`** — penalty consequences of inaction post-letter. Cross-link in the "what if I ignore" section.
+
+7. **`landlord-tax-return-complete-guide-2026`** — existing SA framing; useful for the "I am not in MTD scope, I keep filing SA" branch.
+
+**Differentiation move:** trigger-event persona page. Lead with "you received an HMRC letter", then the three-route decision tree: verify-and-register, verify-and-dispute-classification, verify-and-confirm-exemption. Each route gets a worked path. Distinct from registration pillar (process) and threshold pillar (taxonomy). No CANNIBAL flag.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +67,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+Reviewed `Property/web/src/middleware.ts` 2026-05-22. No old slug overlaps. No action required.
 
 ---
 

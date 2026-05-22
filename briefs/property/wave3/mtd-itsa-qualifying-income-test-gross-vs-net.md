@@ -22,11 +22,14 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/what-is-qualifying-income-for-mtd/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+- https://www.ukpropertyaccountants.co.uk/what-is-qualifying-income-for-mtd/ — VERIFIED ALIVE 2026-05-22. Strong primary: explicit gross-test framing, CY-2 rule explained (April 2026 cohort tested on 2024/25 return), what counts / what does not (PAYE, dividends, partnership excluded), self-assessment box references (SA103F box 15-16, SA105 box 20, SA106 box 14). Has the gross-vs-net mechanic plus the SA-form-box anchors that competitors miss.
+- https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax — HMRC eligibility tool and definition page. Use as the primary authority anchor for "qualifying income" definition and gross-test wording.
+- https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax — supplier list; cite as the operational landing point if the page leads with "I'm above the threshold, what next".
+- https://www.legislation.gov.uk/ukpga/2017/10/schedule/14 — FA 2017 Sch A1/14 digital reporting obligations. Cite once for statutory basis of the qualifying-income test.
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml.
 
 ---
 
@@ -36,11 +39,25 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Inventory scanned 2026-05-22 across all 346 Property posts. Closest neighbours topically:
 
-**Manager hint:** expected neighbours: existing `mtd-rental-income-threshold-exemptions`, existing `mtd-quarterly-reporting-landlords-step-by-step-guide`, existing `how-to-register-mtd-landlord-step-by-step-guide`, B8 (overview, sibling).
+1. **`mtd-rental-income-threshold-exemptions`** ("MTD for Rental Income: Thresholds, Exemptions and What Landlords Must Do") — closest pillar. Already touches gross-vs-net in passing, but lead framing is **threshold schedule + exemption categories** (Ltd Co, partnerships, trusts, digital exclusion). Your differentiation: this page IS the gross-test mechanic deep-dive, written from the boundary case (£52k rent, £8k net) outward. Cite the exemptions page as the broader pillar; link out to it once and to B5 (Ltd Co cohort) for the limited-company carve-out. Do NOT repeat the exemption taxonomy.
+
+2. **`making-tax-digital-property-income-2026-complete-guide`** — broader pillar guide. Covers thresholds at headline level but not the gross-vs-net mechanic in mechanic-depth. Treat as pillar; link out once.
+
+3. **`making-tax-digital-landlords-april-2026-deadline`** — date-anchored explainer; minimal mechanic depth. Light cross-link only.
+
+4. **`how-to-switch-self-assessment-mtd-property-income`** — process page (the switching workflow). Distinct angle (process not threshold mechanic). Cross-link for the "I am in scope, what now" CTA.
+
+5. **`mtd-quarterly-reporting-landlords-step-by-step-guide`** — quarterly process. Cross-link for the after-the-threshold-test workflow.
+
+6. **B8 sibling `mtd-itsa-overview-six-changes-residential-landlords`** — bucket overview. Sibling reference; reverse cross-link from B8.
+
+7. **B3 sibling `mtd-itsa-jointly-owned-property-threshold-split`** — applies the gross test to joint-owner split; your page is the general mechanic, B3 is the joint-ownership applied version. Cross-link.
+
+**Differentiation move:** this page is the **operational mechanic** of the gross-income test at the boundary. Lead with the £52k-gross-£8k-net worked persona; develop the three-persona variant (gross-high-net-low landlord, mixed self-employment + rental, multi-property net-low after S24). The exemptions pillar covers WHO is excluded; this page covers HOW the test works for those WHO are not excluded. No CANNIBAL flag — clean differentiation.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +68,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+Reviewed `Property/web/src/middleware.ts` 2026-05-22. No old slug overlaps with `mtd-itsa-qualifying-income-test-gross-vs-net`. The closest legacy redirect (`mtd-10000-threshold-when-does-it-apply` → `mtd-rental-income-threshold-exemptions`) belongs to B10 (policy-history page). No action required for this brief.
 
 ---
 

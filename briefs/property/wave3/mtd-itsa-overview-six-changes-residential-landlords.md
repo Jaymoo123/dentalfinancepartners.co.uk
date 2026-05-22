@@ -22,11 +22,13 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/mtd-explained-for-residential-landlords-what-changes-and-when/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
-
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+- https://www.ukpropertyaccountants.co.uk/mtd-explained-for-residential-landlords-what-changes-and-when/ — VERIFIED ALIVE 2026-05-22 (last updated 2025-08-25). Strong primary: confirms 5 August / 5 November / 5 February / 5 May quarterly cycle, points-based penalty (1 point per missed submission, financial penalty at 4 points), Final Declaration year-end mechanic, paper / portal route closed. Use as the "what changes" anchor.
+- https://www.gov.uk/government/publications/making-tax-digital/overview-of-making-tax-digital — HMRC's overview page. Authority anchor for the six headline changes.
+- https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax — eligibility test.
+- https://www.gov.uk/government/publications/spring-statement-2025-document/spring-statement-2025-html — Spring Statement 2025 source for the doubled late-payment regime (change #6).
+- https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax — software supplier list (change #4).
 
 ---
 
@@ -36,11 +38,29 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Inventory scanned 2026-05-22 across all 346 Property posts. Critical cannibalisation analysis below.
 
-**Manager hint:** expected neighbours: existing `mtd-quarterly-reporting-landlords-step-by-step-guide` (CANNIBAL-WATCH; see framing), existing `how-to-register-mtd-landlord-step-by-step-guide`, B7 (SA vs MTD comparison), B10 (policy history), all sibling B briefs.
+1. **`mtd-quarterly-reporting-landlords-step-by-step-guide`** ("MTD Quarterly Reporting for Landlords: Step-by-Step Guide 2026") — **CANNIBAL-WATCH from Stage 1.** Read in full 2026-05-22. The existing page is structured as a **process-oriented step-by-step guide on the quarterly reporting workflow** (deadlines, software, submission process, penalties). Its scope is the QUARTERLY UPDATE workflow as one of the six changes.
+
+   **Differentiation decision:** This new page is the bucket pillar covering all six changes at headline level (digital records, quarterly updates, EoPS + final declaration, software list mandate, phased threshold, new penalty regime). The existing page is the deep how-to ONLY on quarterly updates (one of the six). Scope line: this page is **catalogue-level overview**; existing is **process-deep on quarterly submission**. The H2 outline must be the six-changes spine (not a how-to-quarterly spine). Each change H2 carries a 200-300 word summary plus a "for the full process, see [linked page]" pointer. Cross-link forward to the quarterly process page from change #2 (quarterly updates) section.
+
+   **Resolution: NO CANNIBAL flag.** Scopes are clearly separable. The six-changes overview is the bucket landing page; the existing page is the operational deep-dive on one of those six. Hold the scope line strictly: do NOT write step-by-step quarterly submission instructions in this page. If session drifts into process-detail during writing, raise CANNIBAL flag.
+
+2. **`making-tax-digital-property-income-2026-complete-guide`** — broader pillar guide that already overlaps somewhat with the six-changes framing. Differentiation: this page leads with **six numbered changes** as the structural spine (an explicit list-of-changes scaffold); the existing complete guide is narrative. Distinct outlines. Cross-link both ways.
+
+3. **`making-tax-digital-landlords-april-2026-deadline`** — date-anchored explainer. Light cross-link.
+
+4. **`mtd-rental-income-threshold-exemptions`** — threshold pillar. Cross-link from change #5 (phased threshold) section.
+
+5. **`mtd-penalties-landlords-miss-deadline`** — penalty deep-dive. Cross-link from change #6 (penalty regime) section.
+
+6. **`how-to-register-mtd-landlord-step-by-step-guide`** — registration workflow. End-of-page CTA pathway. Cross-link.
+
+7. **All sibling B briefs** — this page is the bucket pillar; all 9 other B pages cross-link inbound to this one as the "start here for the changes overview" anchor.
+
+**Differentiation move:** the six-changes structural spine is the differentiation. Do NOT write any individual change as a deep-dive (each gets a 200-300 word summary that hands off to the relevant deeper page). The page IS the catalogue. No CANNIBAL flag, but session must hold scope discipline — flag CANNIBAL if drift detected during writing.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +71,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate the partial-overlap question carefully against `mtd-quarterly-reporting-landlords-step-by-step-guide`.
+Reviewed `Property/web/src/middleware.ts` 2026-05-22. No old slug overlaps with `mtd-itsa-overview-six-changes-residential-landlords`. Scope-differentiation decision against `mtd-quarterly-reporting-landlords-step-by-step-guide` documented in the Closest existing pages section above (resolved without CANNIBAL flag).
 
 ---
 

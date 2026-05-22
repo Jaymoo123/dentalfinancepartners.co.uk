@@ -22,11 +22,13 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/what-you-need-to-know-about-hmrcs-mtd-trial/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
-
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+- https://www.ukpropertyaccountants.co.uk/what-you-need-to-know-about-hmrcs-mtd-trial/ — VERIFIED ALIVE 2026-05-22 (last updated 2024-04-26, somewhat dated but content still valid). Strong primary: pilot launched 22 April 2024; identifies 14 excluded categories (HICBC, jointly-owned property, partnerships, FHL, variable profits etc.); restrictive accounting period rules (April 1 to March 31 or April 6 to April 5 only); cannot carry back losses or switch methods during trial.
+- https://www.gov.uk/guidance/sign-up-as-an-individual-for-making-tax-digital-for-income-tax — HMRC sign-up route for voluntary participants (the pilot's natural extension).
+- https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax — eligibility for the voluntary cohort.
+- https://www.gov.uk/government/publications/making-tax-digital-for-income-tax-self-assessment-pilot — the official HMRC pilot landing (session to verify URL on fetch; if redirected, follow).
+- https://www.gov.uk/government/news/making-tax-digital-for-income-tax-pilot-expanded — HMRC news on the 2025/26 pilot expansion (session to verify).
 
 ---
 
@@ -36,11 +38,25 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Inventory scanned 2026-05-22 across all 346 Property posts. Closest neighbours topically:
 
-**Manager hint:** expected neighbours: existing `how-to-register-mtd-landlord-step-by-step-guide`, B6 (HMRC letter, the alternative path), B8 (overview), existing `best-mtd-software-landlords-2026`.
+1. **`how-to-register-mtd-landlord-step-by-step-guide`** — mandatory-registration workflow. The pilot is the **voluntary** counterpart, sharing registration steps but with eligibility carve-outs. Distinct angle: this page is the voluntary opt-in route + 14 exclusion categories + trade-offs. Cross-link forward.
+
+2. **`best-mtd-software-landlords-2026`** — software for pilot participants. Cross-link as the operational reference (pilot needs the same software).
+
+3. **B6 sibling `mtd-itsa-letter-from-hmrc-what-to-do-next`** — the involuntary route in. This page is the voluntary route in. Cross-link both ways.
+
+4. **B8 sibling `mtd-itsa-overview-six-changes-residential-landlords`** — overview pillar. Cross-link for the "what am I signing up to" reference.
+
+5. **`making-tax-digital-property-income-2026-complete-guide`** — broader pillar. Cross-link.
+
+6. **`mtd-quarterly-reporting-landlords-step-by-step-guide`** — operational reference for the pilot's quarterly cycle. Cross-link.
+
+7. **B4 sibling `mtd-itsa-exit-rule-income-drops-three-year-test`** — pilot participants who later drop below threshold. Cross-link.
+
+**Differentiation move:** voluntary cohort page. Lead with three reasons to opt in early (test software, get familiar with cycle, sit ahead of the curve before mandate), then the 14 exclusion categories from the HMRC pilot scope, then the trade-offs (cannot carry back losses, cannot switch methods, accounting period restrictions). Worked persona: a landlord on £75k gross who opts in for 2025/26 voluntary year to test their stack before April 2026 mandate. Distinct from registration pillar (mandatory) and from letter page (involuntary trigger). No CANNIBAL flag.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +67,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+Reviewed `Property/web/src/middleware.ts` 2026-05-22. No old slug overlaps. No action required.
 
 ---
 

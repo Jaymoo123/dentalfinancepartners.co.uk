@@ -22,11 +22,14 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/ated-relief-clawback-occupation-by-a-non-qualifying-occupation/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+- https://www.ukpropertyaccountants.co.uk/ated-relief-clawback-occupation-by-a-non-qualifying-occupation/ (Stage 2 verified live 2026-05-22; on-topic). Covers look-back and look-forward mechanisms, definition of "non-qualifying individual", effect on the return, and a multi-stage worked example (A Ltd / Mrs Rigby qualifying / Mr McKenzie non-qualifying triggering look-back). Strong structural anchor.
+- https://www.gov.uk/hmrc-internal-manuals/annual-tax-on-enveloped-dwellings (HMRC ATED Manual — find the specific manual pages on non-qualifying individual occupation and the apportionment rules; cite at the look-back / look-forward mechanic).
+- https://www.legislation.gov.uk/ukpga/2013/29/section/133 (FA 2013 s.133 — rental property business relief, the relief being clawed back). Plus ss.136-138 for the look-back / look-forward structure (verify exact section numbers at write-time).
+- https://www.legislation.gov.uk/ukpga/2010/4/section/1122 (s.1122 CTA 2010 — the connected-persons test that defines the population of non-qualifying individuals beyond direct connected-persons; cite where the brief discusses who is and is not in scope).
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml.
 
 ---
 
@@ -36,11 +39,18 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+1. `ated-rental-property-relief-mechanics` (Incorporation & Company Structures). **Strongest neighbour — the relief-claim deep-dive.** Existing FAQ "If a director's adult child rents the flat at the open-market rent, does the relief still apply?" already touches the connected-person trap. *Differentiation:* the existing page is the claim mechanics (s.1122 CTA 2010 connection, commercial-terms test, voids, refurbishment). This new page is the clawback mechanics (what happens AFTER you have claimed relief and then a non-qualifying individual occupies — look-back / look-forward, apportionment, the further-return obligation, the inaccuracy-penalty risk, how to amend before HMRC enquiry). Cross-link bilaterally; flag F-XX for back-link from existing relief mechanics page to this clawback page.
+2. `ated-complete-guide-2026-27`. Pillar. *Differentiation:* one-paragraph link out for the wider regime context; do not re-cover relief catalogue.
+3. `ated-late-filing-penalties-mechanics`. Adjacent — late notification of clawback gets you into the penalty cascade. *Differentiation:* cross-link in the "what happens if you do not declare the clawback" section.
+4. Sibling A4 (related-persons / market rent test). Lateral — non-qualifying individual is the broader category; related persons is the connected-persons subset. Cross-link; do not re-cover s.1122 detail.
+5. Sibling A1 (overview) and A2 (rates). Cross-link for context only.
+6. Sibling A9 (penalty appeals). Cross-link for the downstream consequence when clawback triggers a late or inaccurate amendment.
 
-**Manager hint:** expected neighbours: existing `ated-rental-property-relief-mechanics` (the claim side; this is the clawback side), A4 (related-persons mechanic, lateral), A9 (penalty appeals where clawback was not declared).
+**Cannibalisation judgement:** clear differentiation by angle (claim vs clawback). No CANNIBAL flag. Watch: do not re-cover commercial-terms test in body (link out).
+
+**Category note:** override to `incorporation-and-company-structures`.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +61,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+no redirect overlap (middleware.ts checked 2026-05-22).
 
 ---
 

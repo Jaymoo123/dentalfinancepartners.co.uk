@@ -22,11 +22,18 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/a-complete-guide-to-periodic-tenancy/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+Validated 2026-05-22. Primary URL is live (title "A Complete Guide to Periodic Tenancy", updated 26 March 2026 to reflect 1 May 2026 RRA conversion). Strong primary; extended with statutory + transitional sources.
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+- https://www.ukpropertyaccountants.co.uk/a-complete-guide-to-periodic-tenancy/ (manager-identified primary; verified live; states "All existing ASTs become assured periodic tenancies on 1 May 2026"; monthly rent-period rule; tenant 2-month notice from commencement; landlord checklist for conversion (deposit protection, Gas Safety, EPC, How to Rent guide))
+- https://www.legislation.gov.uk/ukpga/2025/26/contents (RRA 2025; Section 1 "Assured tenancies to be periodic with rent period not exceeding a month", Section 2 "Abolition of assured shorthold tenancies"; verified live)
+- https://www.legislation.gov.uk/uksi/2026/421/made (SI 2026/421 transitional and saving provisions; reg.2 is the canonical source for the AST-to-periodic conversion mechanic; includes saving provisions for fixed-term tenancies of 7+ years and company-let / business-tenancy carve-outs)
+- https://www.legislation.gov.uk/ukpga/1988/50/section/5 (Housing Act 1988 s.5 as amended; periodic-tenancy substantive provision)
+- https://www.gov.uk/private-renting-tenancy-agreements (gov.uk landlord tenancy-types guidance, post-1-May-2026 updated)
+- https://www.gov.uk/private-renting/your-tenancy (gov.uk tenant guidance, useful for tenant-notice-period triangulation)
+
+> Session may add MHCLG transitional guidance for landlords if a fresh gov.uk page emerges post-commencement.
 
 ---
 
@@ -36,11 +43,25 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Reasoned 2026-05-22 against 346-page inventory. Original brief hint referenced the OLD C1 (post-RRA pillar). The new C1 is the enforcement / civil-penalties brief; cross-reference accordingly.
 
-**Manager hint:** expected neighbours: C1 (pillar), C8 (tenancy-agreement clauses, related), existing `rental-income-tax-uk-complete-guide-landlords`, existing `landlord-insurance-tax-deductible` (lateral on mortgage and insurance implications).
+Neighbours:
+
+1. **`renters-rights-act-2026-tax-implications-landlords`** (landlord-tax-essentials). Background only; tax-implications framing, not tenancy-conversion mechanics. Queued for rewrite under F-1. Link forward as "the tax cash-flow implications of the new periodic regime". No overlap.
+
+2. **C8 (sibling) `tenancy-agreement-template-rra-2025-compliant-clauses`** (this wave). Closely related: C3 covers WHAT changes structurally on conversion (periodic + monthly rent period + monthly notice rules); C8 covers what clauses to put in the WRITTEN agreement reflecting that change. Bidirectional cross-link with explicit "C3 explains the structural change; C8 gives the contractual template". No overlap.
+
+3. **C2 (sibling) `section-21-abolition-uk-landlord-possession-guide-2026`** (this wave). Related: tenant 2-month notice from any point in a periodic tenancy is part of the possession-reform package. Cross-link as "the tenant-side of the possession regime".
+
+4. **C4 (sibling) `renters-rights-act-rent-increase-section-13-tribunal-route`** (this wave). Related on the "max one-month rent period" rule, which feeds the once-per-12-months Section 13 rent-increase rule. Cross-link forward.
+
+5. **`landlord-insurance-tax-deductible`** (section-24-and-tax-relief). Lateral only: where rent-guarantee insurance or pet-damage insurance is taken on conversion, that's revenue-deductible. Light reference.
+
+6. **`first-time-landlord-tax-guide-everything-you-need-to-know`** (landlord-tax-essentials). Downstream "next reading" link.
+
+**Differentiation move:** the *conversion mechanics* page. Step through: pre-1-May-2026 tenancy types in scope (assured + AST), the 1 May 2026 automatic conversion event (SI 2026/421 reg.2), the new monthly-max rent-period rule (s.1 RRA 2025), what landlords need to do at conversion (deposit protection re-confirmation, prescribed information, How to Rent guide, RRA Information Sheet deadline 31 May 2026 per the competitor source), what doesn't change (existing deposit amounts, rent levels in force until next Section 13), the carve-outs (7+ year fixed-term leases, company-let / business tenancies). No cannibalisation flag.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +72,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+Stage 2 validation (2026-05-22): grepped `Property/web/src/middleware.ts` for slug tokens (periodic, tenancy, ast, conversion). No legacy redirect entries match. No redirect repointing required.
 
 ---
 

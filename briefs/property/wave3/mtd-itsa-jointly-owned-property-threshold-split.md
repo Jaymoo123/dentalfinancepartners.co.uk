@@ -22,11 +22,13 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/mtd-made-simple-for-landlords-with-jointly-owned-properties/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
-
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+- https://www.ukpropertyaccountants.co.uk/mtd-made-simple-for-landlords-with-jointly-owned-properties/ — VERIFIED ALIVE 2026-05-22 (last updated 2026-01-05). Strong primary: confirms HMRC tests each joint owner's individual share, not the property total; worked £90k-property-£45k-each example; explicit "no nominated-submitter rule, each owner files quarterly".
+- https://www.gov.uk/government/publications/income-tax-declaration-of-beneficial-interests-in-joint-property-and-income-form-17 — Form 17 election (gov.uk). Critical citation for the Form 17 mechanic and the 60-day declaration deadline.
+- https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem9814 — HMRC TSEM 9814 (joint income, spouses, declaration of beneficial interest). Authoritative on the underlying rule the MTD threshold inherits.
+- https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax — HMRC eligibility tool reference.
+- https://www.gov.uk/government/publications/property-rental-toolkit — HMRC toolkit: section on joint ownership default 50/50 vs declared-share rule.
 
 ---
 
@@ -36,11 +38,23 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Inventory scanned 2026-05-22 across all 346 Property posts. Closest neighbours topically:
 
-**Manager hint:** expected neighbours: existing `mtd-rental-income-threshold-exemptions`, existing `section-24-joint-property-ownership-tax-split` (closest existing on joint-ownership mechanics, cross-bucket lateral), B1 (gross-vs-net), `how-to-switch-self-assessment-mtd-property-income`.
+1. **`section-24-joint-property-ownership-tax-split`** ("Section 24 and Joint Property Ownership: How Is Tax Split?") — closest on-site reference on joint-owner mechanics, but framed around Section 24 finance-cost split, not MTD threshold. Cross-link both directions: existing S24 page should link forward to this MTD-applied page; this page links back for the underlying split rule.
+
+2. **`form-17-married-couple-property-tax`** (if exists) — checked, no dedicated Form 17 page on-site. Confirms this MTD page should carry the Form 17 mechanic detail (60-day deadline, beneficial-interest declaration) as its own section. **AUTHORITY_GAP discovery**: site has no Form 17 dedicated page; raise discovery flag for future wave.
+
+3. **`mtd-rental-income-threshold-exemptions`** — threshold pillar. Mentions joint-owner split briefly. Cross-link out.
+
+4. **B1 sibling `mtd-itsa-qualifying-income-test-gross-vs-net`** — the gross-test mechanic this page applies in the joint-ownership variant. Cross-link.
+
+5. **`cgt-property-transfer-spouse`** — adjacent on inter-spousal transfers; only relevant if the page covers the "should we re-split ownership to game the threshold" tactical question. Light cross-link.
+
+6. **`making-tax-digital-property-income-2026-complete-guide`** — broader pillar; light cross-link.
+
+**Differentiation move:** the joint-owner threshold-split mechanic applied. Default 50/50, Form 17 election to override, beneficial-interest documentation, the "one spouse in / one spouse out" scenario, and the tactical 75/25 split decision tree (cross-link to S24 for the wider context). Distinct from existing S24 joint-ownership page (income-tax restriction angle) and from the threshold pillar (taxonomy not mechanic). No CANNIBAL flag.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +65,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+Reviewed `Property/web/src/middleware.ts` 2026-05-22. No old slug overlaps. No action required.
 
 ---
 

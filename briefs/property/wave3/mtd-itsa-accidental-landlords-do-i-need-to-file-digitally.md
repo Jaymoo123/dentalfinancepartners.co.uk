@@ -22,11 +22,12 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/accidental-landlords-mtd-do-you-also-need-to-file-digitally/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
-
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+- https://www.ukpropertyaccountants.co.uk/accidental-landlords-mtd-do-you-also-need-to-file-digitally/ — VERIFIED ALIVE 2026-05-22 (last updated 2025-10-14). Strong primary: defines the accidental-landlord persona (relocation, inheritance, relationship break-up, temporary let), confirms MTD applies on gross at £50k+, explains the HMRC portfolio-grouping rule (UK properties = one portfolio, overseas = separate, each business = separate quarterly submissions). Use as the persona anchor.
+- https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax — HMRC eligibility tool. The "no I never planned to be a landlord" persona needs the formal HMRC test.
+- https://www.gov.uk/renting-out-a-property — accidental-let pathway (the let-while-relocated case). Cite once for the regulatory framework new landlords land on.
+- https://www.gov.uk/government/publications/property-rental-toolkit — HMRC toolkit; useful for the "I didn't know I had to declare" segment of the persona.
 
 ---
 
@@ -36,11 +37,23 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Inventory scanned 2026-05-22 across all 346 Property posts. Closest neighbours topically:
 
-**Manager hint:** expected neighbours: existing `mtd-rental-income-threshold-exemptions`, existing `inheriting-uk-rental-property-executors-step-by-step` (Wave 2 sibling, persona overlap), existing `how-to-register-mtd-landlord-step-by-step-guide`, B1 (gross-vs-net mechanic).
+1. **`first-time-landlord-tax-guide-everything-you-need-to-know`** — the closest persona match on-site. Covers the new-to-landlording compliance basics but predates the MTD-mandatory framing. Treat as pillar; link out from this page once, and back-patch suggested (raise INTERNAL_LINK flag asking the existing first-time-landlord pillar to cross-link to this MTD-specific page).
+
+2. **`inheriting-uk-rental-property-executors-step-by-step`** (Wave 2 B/C output) — inheritance-as-route-into-landlording. Direct persona overlap for the inheritance sub-route of the accidental-landlord persona. Cross-link both directions; this page's inheritance-route worked example should be a 2-sentence summary that points readers to the deeper inheritance page.
+
+3. **`mtd-rental-income-threshold-exemptions`** — the threshold pillar. Persona-agnostic. Link out for the formal threshold detail; do not repeat the exemption taxonomy here.
+
+4. **B1 sibling `mtd-itsa-qualifying-income-test-gross-vs-net`** — the mechanic this page applies. Cross-link as the technical reference.
+
+5. **`making-tax-digital-property-income-2026-complete-guide`** — broader pillar; light cross-link only.
+
+6. **`how-to-register-mtd-landlord-step-by-step-guide`** — the registration workflow. End-of-page CTA pathway: "yes you are in scope, now register". Cross-link.
+
+**Differentiation move:** persona page, written from the four accidental-landlord routes (relocation-let, inheritance, relationship break-up rental, temporary let). Each route gets a worked decision tree against the £50k gross test. Distinct from the threshold pillar (which is taxonomy) and the first-time landlord guide (which is generalist). No CANNIBAL flag.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +64,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+Reviewed `Property/web/src/middleware.ts` 2026-05-22. No old slug overlaps. No action required.
 
 ---
 

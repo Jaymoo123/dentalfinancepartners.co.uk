@@ -22,11 +22,17 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/renters-rights-bill-key-impact-on-tenants-landlords/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+Validated 2026-05-22. The manager-identified primary uses legacy "Bill" framing and is also reused for C5. Stage 2 reframes the URL list around statutory text + government guidance + a topic-specific competitor angle.
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+- https://www.legislation.gov.uk/ukpga/2025/26/contents (RRA 2025; **Section 11 "Right to request permission to keep a pet"**; verified live; in force 1 May 2026 per SI 2026/421 reg.2)
+- https://www.legislation.gov.uk/uksi/2026/421/made (SI 2026/421; appointed-day for s.11 = 1 May 2026)
+- https://www.gov.uk/private-renting/your-tenancy (gov.uk tenant guidance on pets in rented homes, post-1-May-2026 updated content; verified live)
+- https://www.ukpropertyaccountants.co.uk/renters-rights-bill-key-impact-on-tenants-landlords/ (manager-identified original; legacy "Bill" framing; useful as light background only)
+- https://www.gov.uk/government/organisations/first-tier-tribunal-property-chamber (FTT-PC; the tribunal route where a tenant disputes the reasonableness of a refusal; verified live)
+
+> Session should add at least one landlord-side commentary or template post-1-May-2026 (e.g. NRLA policy paper on the pet-rights provision) plus the gov.uk Tenant Fees Act 2019 page if discussing pet damage insurance vs prohibited fees.
 
 ---
 
@@ -36,11 +42,25 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Reasoned 2026-05-22. The Property inventory has no existing dedicated page on pet rights or pet damage insurance; this is genuinely net-new territory. Closest existing pages are tax-deductibility-of-insurance pages and the tenancy-agreement angle.
 
-**Manager hint:** expected neighbours: C1 (pillar), C8 (tenancy-agreement clauses), existing `landlord-insurance-tax-deductible` (specific lateral on insurance deductibility), existing `rental-income-tax-uk-complete-guide-landlords`.
+Neighbours:
+
+1. **`landlord-insurance-tax-deductible`** (section-24-and-tax-relief). Closest existing. Pet damage insurance, where the landlord requires it as a consent condition under s.11(2)(d) RRA 2025, is a deductible expense against rental income (house_positions §20.11). C7 should reference this page for the deductibility analysis and add the pet-specific worked example.
+
+2. **`landlord-insurance-guide-types-costs-tax-deductible`** (section-24-and-tax-relief). Sibling pillar; same deductibility framing.
+
+3. **C8 (sibling) `tenancy-agreement-template-rra-2025-compliant-clauses`** (this wave). The pet-consent clause is a standard RRA-2025-compliant clause; C8 covers the template, C7 covers the legal mechanic and reasonableness test. Cross-link bidirectionally.
+
+4. **C1 (new) `rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence`** (this wave). Unreasonable refusal can route to tribunal but unlikely to attract civil-penalty exposure; light forward link only.
+
+5. **`renters-rights-act-2026-tax-implications-landlords`** (landlord-tax-essentials; queued for rewrite under F-1). Background.
+
+6. **`landlord-expenses-allowable-uk-2026`** (section-24-and-tax-relief). Where pet damage insurance + any cleaning between tenancies hits the rental P&L; light cross-link.
+
+**Differentiation move:** the *operational guide* to the s.11 right. Cover: the statutory right to request (s.11(1)), the reasonable-refusal test (s.11(2): superior landlord prohibition, building insurance constraint, layout / size unsuitability, other reasonable grounds), the pet damage insurance route under s.11(2)(d), the prescribed-form request and the landlord response time, the tribunal route at FTT-PC where reasonableness is contested, examples of what is and isn't reasonable refusal (HMO setting, leasehold superior-landlord block, listed-building specifics), the tax-deductibility position on pet damage insurance + cleaning costs, the interaction with deposit protection (no separate pet deposit; standard 5-week cap under Tenant Fees Act 2019 still applies). No cannibalisation flag.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +71,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+Stage 2 validation (2026-05-22): grepped middleware for slug tokens (pet, animal). No legacy redirect entries match. No redirect repointing required.
 
 ---
 

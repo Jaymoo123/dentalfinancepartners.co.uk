@@ -22,11 +22,16 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/ated-late-filing-penalty-failed-reasonable-excuse-or-special-circumstances-appeal/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+- https://www.ukpropertyaccountants.co.uk/ated-late-filing-penalty-failed-reasonable-excuse-or-special-circumstances-appeal/ (Stage 2 verified live 2026-05-22; on-topic). Built around the **Conchri Investments Limited v HMRC [2025] UKFTT 600 (TC)** decision — appellant lost on reasonable-excuse grounds (ignorance of law; reliance on accountants; HMRC has no notification duty) and on special-circumstances (no tax due / RDR still required). Penalties spanned 193 to 3,773 days totalling £15,700. Excellent case-law anchor.
+- https://www.ukpropertyaccountants.co.uk/ated-penalties-and-appeals/ (Stage 2 verified live 2026-05-22; on-topic — second source confirmed in candidates_selected.md merge note). Covers ATED deadlines, penalty cascade (£100 + £900 daily cap + £300/5% at 6m and 12m), 30-day appeal window, HMRC postal address (HMRC ATED Penalty Appeals, Stamp Taxes, BX9 1HD), reasonable-excuse categories (bereavement, hospitalisation, serious illness, misunderstanding obligations). NOTE: this page lacks Schedule 55 FA 2009 statutory references and lacks FTT case citations — session should compensate with deeper legal grounding.
+- https://www.legislation.gov.uk/ukpga/2009/10/schedule/55 (FA 2009 Sch 55 — the statutory penalty regime; cite at the cascade section).
+- https://www.legislation.gov.uk/ukpga/2009/10/schedule/56 (FA 2009 Sch 56 — late-payment penalty regime; cite where the brief discusses late-payment penalties alongside late-filing).
+- https://www.gov.uk/tax-and-chancery-tribunal-decisions (HMCTS Tax Tribunal decisions search — session can locate additional ATED reasonable-excuse cases for variety beyond Conchri; suggested search terms: "ATED" + "reasonable excuse", "ATED" + "Schedule 55", "ATED" + "special circumstances").
+- https://www.gov.uk/hmrc-internal-manuals/compliance-handbook (HMRC Compliance Handbook — CH71500 onwards covers reasonable excuse for Schedule 55 / 56; cite where the brief discusses HMRC's own treatment of the test).
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml.
 
 ---
 
@@ -36,11 +41,17 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+1. `ated-late-filing-penalties-mechanics` (Incorporation & Company Structures). **Tight pairing.** Existing page covers the penalty cascade, the £15,700 trap reference, and headline reasonable-excuse mechanics in FAQ form. *Differentiation:* the existing page is the penalty-cascade mechanic (what the cascade looks like and what bites when). This new page is the **appeal procedure deep-dive**: how to file the appeal, the 30-day deadline, what evidence to file, FTT case-law citations (Conchri Investments Ltd v HMRC [2025] UKFTT 600 TC as anchor; sessions to add 2-3 further ATED-relevant FTT decisions found at write-time), what arguments succeed vs fail, what to do after an HMRC review refusal (notify the FTT directly under TMA 1970 s.49D-equivalent for ATED). Cross-link bilaterally; raise F-XX INTERNAL_LINK suggesting the penalties-mechanics page's FAQ "How do I appeal an ATED penalty?" links forward to this page.
+2. `ated-complete-guide-2026-27`. Pillar mentions appeals in FAQ. *Differentiation:* one-paragraph cross-link.
+3. Sibling A5 (amendment). Adjacent — sometimes amendment avoids the need to appeal (the inaccuracy correction route). Cross-link in the "consider amendment first" section.
+4. Sibling A8 (overseas OTM). Adjacent — overseas companies who received OTM letters and faced penalties post-disclosure are a natural audience for this page. Cross-link.
+5. `sdlt-refund-scams-how-to-avoid` (Wave 1) and `sdlt-five-percent-surcharge-refund-claim-process` (Wave 1). Lateral — different tax, same FTT appeals process discipline. Cross-link in the "wider tax appeal landscape" closing section only if relevant.
 
-**Manager hint:** expected neighbours: existing `ated-late-filing-penalties-mechanics` (the penalty side; this is the appeal side), existing `hmrc-penalties-late-landlord-tax-returns-2026` (cross-tax appeals), A5 (amendment, related).
+**Cannibalisation judgement:** clear differentiation by procedural angle (cascade vs appeal). No CANNIBAL flag, but session must DISCIPLINE itself not to re-cover the penalty cascade in the body — point at the existing mechanics page and dive into appeal procedure + case law.
+
+**Category note:** override to `incorporation-and-company-structures`.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +62,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+no redirect overlap (middleware.ts checked 2026-05-22).
 
 ---
 

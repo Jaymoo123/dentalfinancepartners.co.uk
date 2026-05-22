@@ -22,11 +22,19 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/renters-rights-bill-impact-landlords-consider-selling-properties/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+Validated 2026-05-22. The manager-identified primary uses legacy "Bill" framing but is the correct competitor angle for the selling-portfolio commercial sentiment driver. Extended with statutory + HMRC sources for the tax mechanics this page needs to cover (CGT, S24 interaction, NRCGT for non-resident sellers, 12-month re-let restriction interaction).
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+- https://www.ukpropertyaccountants.co.uk/renters-rights-bill-impact-landlords-consider-selling-properties/ (manager-identified primary; "Bill" framing legacy but the sentiment angle remains; benchmark for the commercial-pressure narrative)
+- https://www.legislation.gov.uk/ukpga/2025/26/contents (RRA 2025; relevant: Sch.1 amended Ground 1A "landlord-sale" possession ground; the 12-month re-let restriction after Ground 1A possession (house_positions §20.2); s.15 + Sch.5 penalties for breach; verified live)
+- https://www.legislation.gov.uk/ukpga/1992/12/contents (TCGA 1992; CGT framework for residential property disposals; sections to cite: s.4 (rates), s.222 (PPR), s.10A (temporary non-residence), 60-day reporting under Sch.2 of FA 2019; verified live)
+- https://www.gov.uk/tax-sell-property (gov.uk CGT-on-property landing; verified live; 18%/24% rates plus 60-day reporting since house_positions §5)
+- https://www.gov.uk/government/publications/non-residents-and-capital-gains-tax (gov.uk NRCGT guidance; verified live; relevant for non-resident landlords selling UK property)
+- https://www.gov.uk/hmrc-internal-manuals/property-income-manual (HMRC PIM; deductibility of selling costs, void-period treatment during the 12-month re-let-restriction window; verified live)
+- https://www.legislation.gov.uk/ukpga/2007/3/section/272 (ITTOIA 2005 s.272 accruals-basis property income; relevant if landlord runs a void period under landlord-sale ground; verified live)
+
+> Session may add a recent NRLA or RLA portfolio-exit survey / commentary post-1-May-2026 for the sentiment angle.
 
 ---
 
@@ -36,11 +44,37 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Reasoned 2026-05-22. The Property inventory has heavy CGT-on-rental-sale coverage; this brief must explicitly own the *RRA-2025-trigger* angle to avoid cannibalising existing pages.
 
-**Manager hint:** expected neighbours: existing `property-investment-exit-strategy-planning-guide`, existing `capital-gains-tax-selling-rental-property-uk`, existing `cgt-rates-property-2026-27-current-rates-explained`, existing `claim-mortgage-interest-rental-property-uk-section-24`, C1 (pillar), C2 (possession route for vacant-sale).
+Neighbours:
+
+1. **`property-investment-exit-strategy-planning-guide`** (portfolio-management). Closest existing for the strategic-exit angle. Covers phased disposal, spouse-split, IHT-uplift, share-sale, but NOT the RRA-2025-trigger framing. C9 is the applied / scenario-specific version of this page; link out as the strategic pillar and stay on the RRA-trigger commercial pressure + tax-mechanic interactions. **Cannibalisation risk: low** if C9 stays narrow to the RRA-trigger scenarios.
+
+2. **`when-to-sell-rental-property-key-indicators-landlords`** (portfolio-management or similar). Adjacent timing-decision page; C9 references it as the broader "is now the time to sell?" piece.
+
+3. **`capital-gains-tax-selling-rental-property-uk`** (capital-gains-tax). Pillar for CGT-on-disposal mechanics. C9 must NOT re-cover the rate / 60-day reporting / s.222 mechanics; link out and stay on the RRA-2025-specific timing interactions.
+
+4. **`cgt-rates-property-2026-27-current-rates-explained`** (capital-gains-tax). The 2026/27 rates page. Cross-link only.
+
+5. **`tax-sell-rental-property-uk`** (capital-gains-tax). Adjacent. Light cross-link.
+
+6. **`cgt-payment-deadlines-property-sales-2026`** (capital-gains-tax). The 60-day reporting requirement and the property-disposal-date timing become especially load-bearing where a Ground 1A possession is followed by a sale inside the 12-month window. Cross-link.
+
+7. **`cgt-selling-buy-to-let-property-calculation-guide`** (capital-gains-tax). Calculation reference; cross-link.
+
+8. **`mortgage-interest-deductible-landlords-uk-2026`** (section-24-and-tax-relief). The S24 cap may bind earlier where rent rises are capped + interest rises; this is part of the "should I sell?" math. Cross-link.
+
+9. **`non-resident-cgt-selling-uk-property-overseas-guide`** (non-resident-landlord-tax). NRCGT applies to non-resident sellers; cross-link for the non-resident portfolio-exit case.
+
+10. **C1 (new) `rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence`** (this wave). Light forward link only (relevant if the landlord's exit decision is partly driven by enforcement exposure).
+
+11. **C2 (sibling) `section-21-abolition-uk-landlord-possession-guide-2026`** (this wave). The Ground 1A landlord-sale possession route is what enables the vacant-possession sale path; cross-link bidirectionally.
+
+12. **`renters-rights-act-2026-tax-implications-landlords`** (landlord-tax-essentials; queued for rewrite under F-1). Background.
+
+**Differentiation move:** the *RRA-2025-trigger commercial decision* page. Cover: why landlords are weighing exit (rent-cap mechanic + S24 interaction + Decent Homes spend + civil-penalty exposure + 12-month re-let restriction on Ground 1A possession), the tax-cost stack of the exit (CGT at 18%/24%, 60-day reporting, AEA timing, NRCGT for non-resident sellers, S24 final-year interaction, phased-disposal AEA stacking opportunity), the 12-month re-let restriction's CGT-completion timing pressure, the FHL anti-forestalling rules' interaction (post-April-2025 abolition), the alternative routes (incorporation, share-sale, gift-into-trust, IHT-uplift-on-death holding). Stay applied to the RRA-trigger scenario; do NOT pillar-out into the deep CGT mechanics. **No cannibalisation flag** subject to the discipline above.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +85,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+Stage 2 validation (2026-05-22): grepped middleware for slug tokens (selling, sell, exit, portfolio, considering). No legacy redirect entries map directly to this slug's token set. No redirect repointing required.
 
 ---
 

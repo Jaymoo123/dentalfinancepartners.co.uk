@@ -22,11 +22,14 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/a-complete-guide-to-annual-tax-on-enveloped-dwellings/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+- https://www.ukpropertyaccountants.co.uk/a-complete-guide-to-annual-tax-on-enveloped-dwellings/ (Stage 2 verified live 2026-05-22; on-topic). Strong outline: motive / applicability / freehold-leasehold / dwelling meaning / valuation / substantial acquisitions / filing & payment / registration / banding (six-tier 2024-2027 table) / reliefs (9 listed + Homes for Ukraine) / penalties. Use as the primary structural reference for the strategic-overview framing.
+- https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics (gov.uk primary; verified band figures match house position §18.1). Authoritative source for the 2026/27 band table.
+- https://www.gov.uk/hmrc-internal-manuals/annual-tax-on-enveloped-dwellings (HMRC ATED Manual — for chargeable-persons definition, single-dwelling test, dwelling meaning). Anchor citation for the "who is in / out" framing.
+- https://www.legislation.gov.uk/ukpga/2013/29/part/3 (FA 2013 Part 3 — the statutory anchor for ATED; ss.94-174). Cite at the chargeable-persons section.
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log.
 
 ---
 
@@ -36,11 +39,22 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Reasoned topical proximity (not token-Jaccard). Read each before writing.
 
-**Manager hint:** expected neighbours: existing `ated-complete-guide-2026-27` (must coordinate, see cannibalisation flag in wave3_candidates_selected.md), `ated-15-percent-flat-rate-sdlt-interaction`, `ated-rental-property-relief-mechanics`, `buy-to-let-limited-company-complete-guide-uk`, `corporation-tax-rates-property-companies-2026-27`. Sibling Wave 3 briefs A2/A3/A6.
+1. `ated-complete-guide-2026-27` (category: Incorporation & Company Structures). **Pillar reference for the whole regime.** Covers chargeable persons, bands, reliefs, return mechanics, valuation, penalty cascade, dis-envelope strategic question. *Differentiation:* the pillar is the deep mechanic; this overview page is the strategic entry-point that helps a Ltd-Co director or overseas-co adviser decide whether ATED concerns them at all (the chargeable-persons positioning + the £500k threshold + the strategic context with SDLT 15% Sch 4A FA 2003 and IHT Sch A1 IHTA 1984). Link OUT to the pillar repeatedly for depth; do not re-cover the relief catalogue or the band detail.
+2. `ated-15-percent-flat-rate-sdlt-interaction` (Incorporation & Company Structures). Acquisition-side companion. *Differentiation:* mention as the "acquisition charge" alongside ATED as the "annual charge"; link out.
+3. `ated-rental-property-relief-mechanics` (Incorporation & Company Structures). Most-claimed relief deep-dive. *Differentiation:* mention in the relief overview paragraph as the daughter page; do not re-cover s.133 mechanics.
+4. `buy-to-let-limited-company-complete-guide-uk` (Incorporation & Company Structures). The BTL-Ltd-Co pillar that directors arrive from. *Differentiation:* this ATED overview is the page they hit next after deciding to incorporate; link IN from BTL Ltd-Co pillar context (flag as F-XX for back-link).
+5. `corporation-tax-rates-property-companies-2026-27` (Incorporation & Company Structures). Adjacent CT context for company-held property. *Differentiation:* one-line cross-link only; no overlap on substance.
+6. `incorporating-property-portfolio-uk-2026` (Incorporation & Company Structures). Pre-incorporation decision context. *Differentiation:* link OUT for the upstream decision; this page is the downstream "now you're a Ltd Co holding £500k+ residential, here is the annual charge you now face".
+
+**Sibling Wave 3 briefs (cross-link map):** A2 rates table (anchor for the band detail), A3 clawback (downstream when relief lost), A4 related-persons (downstream relief failure mode), A6 mixed-use (boundary case), A7 valuation rules (mechanic), A10 six-step walkthrough (process companion).
+
+**Cannibalisation judgement:** existing `ated-complete-guide-2026-27` is the deeper guide; this overview is the strategic / positioning entry point. Differentiation by angle (strategic decision vs operational pillar). No CANNIBAL flag needed if discipline holds. If the session finds itself writing relief catalogue detail or band-table detail in the body, that is the cannibalisation alarm; re-frame and link out instead.
+
+**Category note:** all four existing ATED pages live under `incorporation-and-company-structures`. The manager's pre-suggested `property-types-and-specialist-tax` will fragment the bucket. Session SHOULD override to `incorporation-and-company-structures` and log the override in the work-log.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +65,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate against the 429-redirect catalogue. Old `annual-tax-enveloped-dwellings`-style slugs may exist as legacy aliases.
+no redirect overlap (middleware.ts checked 2026-05-22; no ATED / enveloped / annual-tax-related redirect entries exist).
 
 ---
 

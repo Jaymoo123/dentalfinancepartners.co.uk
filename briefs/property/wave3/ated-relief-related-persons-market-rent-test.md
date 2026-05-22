@@ -22,11 +22,14 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/ated-relief-for-related-persons-and-market-rent-a-complete-guide/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+- https://www.ukpropertyaccountants.co.uk/ated-relief-for-related-persons-and-market-rent-a-complete-guide/ (Stage 2 verified live 2026-05-22; on-topic). Covers what counts as a related/non-qualifying person, that market rent does NOT cure the connection, factors signalling non-commercial intent (no public advertising, unusual lease terms, sub-market pricing, lax enforcement), and a £2m / £30,550 worked example contrasting related vs unrelated tenant.
+- https://www.gov.uk/hmrc-internal-manuals/annual-tax-on-enveloped-dwellings (HMRC ATED Manual — find the pages on non-qualifying individual / connected person / market-rent guidance; cite at the "market rent does not cure connection" section).
+- https://www.legislation.gov.uk/ukpga/2010/4/section/1122 (s.1122 CTA 2010 — the connected-persons statutory test).
+- https://www.legislation.gov.uk/ukpga/2013/29/section/133 (FA 2013 s.133 — the rental relief; the unconnected-tenant requirement).
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml.
 
 ---
 
@@ -36,11 +39,17 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+1. `ated-rental-property-relief-mechanics` (Incorporation & Company Structures). **HIGH overlap risk.** Existing page covers s.1122 CTA 2010, commercial-terms test, and the director's-adult-child-at-market-rent FAQ already. *Differentiation:* the existing page is the relief-mechanics deep-dive across all dimensions (connection, commercial terms, voids, refurbishment). This new page is the **narrow market-rent-test scenario** for directors' family arrangements: it lives or dies on detailed worked examples of who is and is not "related", what evidence HMRC seeks for the market-rent test, and the specific family-letting scenarios (parent-to-child, child-to-parent, sibling-to-sibling, divorced-spouse, civil-partner-cohabitant, in-laws). **CANNIBAL flag candidate** — if the session finds itself re-writing the relief-mechanics page's connected-persons section, that is the alarm. Resolution: keep this page entirely scenario-driven (8-12 worked family scenarios with HMRC's likely answer); link out for the wider relief mechanic. Cross-link bilaterally.
+2. `ated-complete-guide-2026-27`. Pillar. *Differentiation:* one-paragraph cross-link only.
+3. Sibling A3 (clawback). Lateral — A4 deals with the connection test as a barrier to claim; A3 deals with the connection-by-occupation event as a clawback trigger. Same s.1122 substrate, different operational moment. Cross-link.
+4. `buy-to-let-limited-company-complete-guide-uk`. Adjacent — directors who buy through a Ltd Co for family use often arrive here without knowing about ATED. Cross-link to send them to the ATED pillar.
+5. `incorporating-property-portfolio-uk-2026` and `transferring-fhl-portfolio-to-limited-company`. Adjacent — both contexts where a family-member tenant might appear post-incorporation. One-line cross-links only.
 
-**Manager hint:** expected neighbours: existing `ated-rental-property-relief-mechanics`, A3 (clawback side), `transfer-properties-to-company-phased-guide`, `landlord-incorporation-step-by-step-guide-uk`.
+**Cannibalisation judgement:** raised as a watchpoint but resolvable through scenario-density discipline. Session should structure body as: short statutory intro -> 8-12 family scenarios with HMRC stance -> evidence checklist -> what to do if HMRC enquires. No re-coverage of the connected-persons statutory test in narrative form; bullet it and link to existing relief mechanics page.
+
+**Category note:** override to `incorporation-and-company-structures`.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +60,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+no redirect overlap (middleware.ts checked 2026-05-22).
 
 ---
 

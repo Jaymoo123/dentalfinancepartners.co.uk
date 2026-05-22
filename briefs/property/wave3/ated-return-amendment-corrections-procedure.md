@@ -22,11 +22,15 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/ated-return-amendment-guide-when-how-tax-tips/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+- https://www.ukpropertyaccountants.co.uk/ated-return-amendment-guide-when-how-tax-tips/ (Stage 2 verified live 2026-05-22; on-topic). Covers when to file an ATED return, when to amend, how to amend, when a further return is needed. Includes the 12-month-from-end-of-chargeable-period amendment window (longer of 3 months from late-filed date, where applicable), three trigger scenarios (ineligible relief claim, property disposal, information errors), and the practical mechanics (online amend vs paper Form ATED51 via paperforms.ated@hmrc.gov.uk). Strong structural anchor.
+- https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-returns (gov.uk official guidance on ATED returns — for the amendment route specifically; cite at the amendment-mechanics section).
+- https://www.gov.uk/hmrc-internal-manuals/annual-tax-on-enveloped-dwellings (HMRC ATED Manual — for the amendment / correction guidance; cite where the brief discusses HMRC's treatment of self-corrected vs HMRC-discovered errors).
+- https://www.legislation.gov.uk/ukpga/2009/10/schedule/55 (FA 2009 Sch 55 — inaccuracy penalties for failure to amend / careless or deliberate inaccuracy in the original return; cite at the "what happens if you do not amend" section).
+- https://www.legislation.gov.uk/ukpga/2013/29/section/161 (FA 2013 s.161 — adjustments to ATED returns; verify section number at write-time).
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml.
 
 ---
 
@@ -36,11 +40,18 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+1. `ated-complete-guide-2026-27`. Pillar. Existing FAQ "Can I claim the relief retrospectively if I missed it on the original return?" lightly touches the 12-month amendment window. *Differentiation:* the pillar mentions amendment in passing; this new page is the operational walkthrough — when, how, paper vs online, evidence to attach, what HMRC accepts vs queries, the late-filed-return amendment-window squeeze, what to do when the 12-month window has closed (overpayment relief route under FA 2003 Sch 10 para 34-equivalent for ATED). Cross-link to the pillar; raise F-XX INTERNAL_LINK flag suggesting the pillar's FAQ should link forward to this new page.
+2. `ated-late-filing-penalties-mechanics`. Adjacent — late amendment can avoid an inaccuracy penalty that would otherwise build up if HMRC discovers the error first. *Differentiation:* cross-link in the "penalty implications of amending vs not" section.
+3. `ated-rental-property-relief-mechanics`. Adjacent — the most common amendment scenario is realising a relief was missed. *Differentiation:* cross-link in the relief-amendment scenario.
+4. Sibling A3 (clawback). Strong adjacency — clawback events trigger a further return / amendment obligation. Cross-link in the clawback-driven-amendment section.
+5. Sibling A9 (penalty appeals). One-line cross-link for the route where HMRC has rejected an amendment.
+6. Sibling A10 (six-step compliance walkthrough). One-line cross-link.
 
-**Manager hint:** expected neighbours: existing `ated-late-filing-penalties-mechanics`, A9 (appeals where amendment is denied), A10 (process walkthrough for the first-time filer).
+**Cannibalisation judgement:** clear differentiation by procedural focus. No CANNIBAL flag.
+
+**Category note:** override to `incorporation-and-company-structures`.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +62,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+no redirect overlap (middleware.ts checked 2026-05-22).
 
 ---
 

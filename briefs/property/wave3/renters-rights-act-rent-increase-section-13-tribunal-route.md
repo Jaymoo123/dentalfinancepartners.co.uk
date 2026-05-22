@@ -22,11 +22,18 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/new-rent-increase-rules-under-the-renters-rights-act/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+Validated 2026-05-22. Primary URL is the established ukpropertyaccountants.co.uk article on the new rent-increase rules; the host applies bot-blocking (403 to non-browser fetches), so session must use httpx with a full browser User-Agent and Accept headers. Statutory sources are the reliable spine for this brief.
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+- https://www.ukpropertyaccountants.co.uk/new-rent-increase-rules-under-the-renters-rights-act/ (manager-identified primary; site requires browser-style headers; cited explicitly by topic_gaps_final.md as the C4 reference; treat as the competitor benchmark for outline + FAQ patterns once a valid fetch succeeds)
+- https://www.legislation.gov.uk/ukpga/2025/26/contents (RRA 2025; Section 6 "Statutory procedure for increases of rent" and Section 7 "Challenging amount or increase of rent"; verified live)
+- https://www.legislation.gov.uk/ukpga/1988/50/section/13 (Housing Act 1988 s.13 as amended by RRA 2025 Sch.1; the once-per-12-month + 2-month-notice mechanic; verified live)
+- https://www.gov.uk/government/organisations/first-tier-tribunal-property-chamber (FTT Property Chamber; verified live; the statutory challenge route under amended s.14 HA 1988 and RRA 2025 s.7)
+- https://www.gov.uk/private-renting/rent-increases (gov.uk tenant guidance on rent rises post-1-May-2026; verified live)
+- https://www.legislation.gov.uk/uksi/2026/421/made (SI 2026/421; commencement of ss.6 and 7 on 1 May 2026)
+
+> Session should add a recent FTT-PC rent-determination decision if available post-commencement (FTT-PC decisions published on gov.uk).
 
 ---
 
@@ -36,11 +43,25 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Reasoned 2026-05-22 against 346-page inventory. Original brief hint referenced OLD C1; the new C1 is enforcement-focused, not a pillar.
 
-**Manager hint:** expected neighbours: C1 (pillar), C10 (asking-rent / bidding-wars, pre-tenancy sibling), existing `rental-income-tax-uk-complete-guide-landlords`, existing `claim-mortgage-interest-rental-property-uk-section-24` (interaction: S24 + capped rent rises).
+Neighbours:
+
+1. **C10 (sibling) `bidding-wars-asking-rent-cap-landlord-marketing-compliance`** (this wave). The complement: C10 = pre-tenancy marketing-stage asking-rent ceiling; C4 = post-tenancy mid-tenancy rent rises. Bidirectional cross-link; the brief differentiator already calls this out. No overlap if both stay in lane.
+
+2. **C3 (sibling) `periodic-tenancy-default-ast-conversion-mechanics`** (this wave). The monthly-max rent period (s.1) feeds the once-per-12-months Section 13 cycle. Link backward to C3 for the structural change.
+
+3. **`renters-rights-act-2026-tax-implications-landlords`** (landlord-tax-essentials; queued for rewrite under F-1). Background only; tax-implications framing.
+
+4. **`mortgage-interest-deductible-landlords-uk-2026`** (section-24-and-tax-relief). Lateral on the S24 interaction: where mortgage interest rises faster than the Section 13-permitted annual rent increase, the S24 tax-credit cap may bind earlier (house_positions §20.11). Light link, no overlap.
+
+5. **`section-24-case-study-100k-rental-income-portfolio`** (section-24-and-tax-relief). Possible illustration of the S24 + capped-rent interaction; consider linking forward.
+
+6. **`landlord-tax-changes-2026-complete-guide`** (landlord-tax-essentials). Upstream pillar where new landlords land first; link backward.
+
+**Differentiation move:** the *procedural Section 13 mechanic* page. Walk through: when a rent increase is permitted (once per 12 months from start of tenancy or last increase, s.13(2) HA 1988 as amended), the prescribed-form Section 13(2) notice, the 2-month minimum notice period, the tenant's challenge route at FTT-PC under s.14 + RRA 2025 s.7, the tribunal's market-rent determination cap (cannot now set rent above the landlord's proposed amount, per house_positions §20.6 / RRA 2025 s.7), unenforceability of contractual rent-review clauses for rent rises, evidence required (comparables, local market data), the S24 cash-flow interaction worked example. No cannibalisation flag.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +72,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+Stage 2 validation (2026-05-22): grepped `Property/web/src/middleware.ts` for slug tokens (rent-increase, section-13, tribunal, rent-rise, rent-review). No legacy redirect entries match. No redirect repointing required.
 
 ---
 

@@ -75,7 +75,7 @@ Bands are indexed annually (CPI for the year ended September). 2026/27 figures a
 
 **Penalties from 6 April 2026:**
 - Points-based late submission regime: 1 point per missed quarterly update; **£200** fixed penalty at the 4-point threshold (within any 24-month rolling window).
-- Late payment: 3% from day 31, +3% from day 46, +10% per annum from day 91.
+- Late payment, MTD ITSA accelerated schedule (Spring Statement 2025): 3% from day 15, +3% from day 30, +10% per annum from day 31. The legacy 31/46/91 day-triggers at 2%/2%/4% remain for non-MTD income tax + VAT only. (See §19.7 for full mechanics and Correction logged 2026-05-22.)
 
 **Do not write:** "£10,000 threshold" (abandoned in late 2022). "MTD applies to limited companies" (wrong). "MTD applies to GP partnerships from April 2026" (deferred).
 
@@ -661,12 +661,14 @@ Calendar-quarter elections are available from 6 April 2026 (HMRC will allow file
 - Points reset after 24 months of full compliance.
 - Annual EoPS / final declaration counts as a separate annual obligation under the points cycle (threshold 2 points for annual obligations).
 
-**Late payment, Spring Statement 2025 doubling for MTD ITSA:**
-- 3% of unpaid tax from day 31 (was 2% pre-Spring-Statement-2025).
-- A further 3% from day 46 (was 2%).
-- Then 10% per annum from day 91 (was 4%).
+**Late payment, Spring Statement 2025 doubling AND accelerated trigger days, applicable to MTD ITSA from 6 April 2026:**
+- **3% of unpaid tax from day 15** (was 2% from day 31 under the legacy FA 2021 Sch 26 schedule).
+- **A further 3% from day 30** (was 2% from day 46).
+- **Then 10% per annum from day 31** (was 4% per annum from day 91).
 
-**§19.7 verification note:** the 3%/3%/10% figures are the Spring Statement 2025 announcement applicable to MTD ITSA late payments from 6 April 2026. The lower 2%/2%/4% figures continue to apply to VAT and to non-MTD income tax for taxpayers below the MTD threshold. Sessions writing penalty content for MTD ITSA must use the 3%/3%/10% figures and cite the Spring Statement 2025 origin. Verified against HMRC penalty regime guidance on 2026-05-22; the precise gov.uk dedicated MTD-ITSA-penalty page was 404 at the verification fetch (the rate change sits within Finance Act 2024 amendments to FA 2021 Sch 26).
+**Correction logged 2026-05-22:** Earlier versions of this section reproduced the day-triggers as **31 / 46 / 91** (the legacy FA 2021 Sch 26 schedule) while correctly noting the doubled 3%/3%/10% percentages. The legacy day-triggers were wrong; the Spring Statement 2025 reform also **accelerated the day-thresholds to 15 / 30 / 31**. Verified Stage 2 of Wave 3 against the gov.uk Spring Statement 2025 HTML document (`https://www.gov.uk/government/publications/spring-statement-2025-document/spring-statement-2025-html`) which states verbatim: *"The new rates will be 3% of the tax outstanding where tax is overdue by 15 days, plus 3% where tax is overdue by 30 days, plus 10% per annum where tax is overdue by 31 days or more."* The lower 2%/2%/4% figures on the legacy 31/46/91 day-triggers continue to apply to VAT and to non-MTD income tax for taxpayers below the MTD threshold; MTD ITSA filers face the accelerated 15/30/31 schedule from 6 April 2026.
+
+**Sessions writing penalty content for MTD ITSA must use the 15/30/31 trigger days with 3%/3%/10% percentages**, citing the Spring Statement 2025 HTML document or the FA 2025 amendments to FA 2021 Sch 26 once enacted. Do NOT carry over the 31/46/91 schedule; that is the legacy non-MTD regime.
 
 ### 19.8 The abandoned £10,000 threshold
 
@@ -766,7 +768,42 @@ These are the items most relevant to the firm's positioning, not the legal-servi
 - **Decent Homes Standard compliance spend**, repairs are revenue-deductible; capital improvements add to base cost for CGT.
 - **Sale-driven possession route** affects the §17.4 NRCGT timeline for non-resident landlords selling UK property.
 
-### 20.12 Do not write
+### 20.12 Commencement timeline (Wave 3 Stage 2 verification, locked 2026-05-22)
+
+Verified against legislation.gov.uk (RRA 2025 contents page, SI 2025/1354, SI 2026/421) on 2026-05-22. The Act is enacted; substantive provisions arrive in waves via Statutory Instrument.
+
+**Commencement orders made to date (England, the only jurisdiction Property Tax Partners advises on):**
+- **SI 2025/1354** (Commencement No. 1 Regulations 2025): brought sections 63, 99 and 100 plus parts of Schedule 4 into force on **27 December 2025**. These cover preparatory provisions (regulation-making powers, enforcement-authority designations, Decent Homes preliminary provisions).
+- **SI 2026/421** (Commencement No. 2 and Transitional and Saving Provisions Regulations 2026): made 16 April 2026, appointed day **1 May 2026**. This is the major substantive commencement.
+
+**Status by provision as of 2026-05-22 (today):**
+
+| Provision | Section / Part | In force? | Date | Source |
+|---|---|---|---|---|
+| Periodic tenancies as default | s.1 (Ch.1 Pt.1) | **In force** | 1 May 2026 | SI 2026/421 reg.2 |
+| Section 21 abolition (AST regime ended) | s.2 (Ch.1 Pt.1) | **In force** | 1 May 2026 | SI 2026/421 reg.2 |
+| Reformed Section 8 grounds for possession | s.3 + Sch.1 (Ch.1 Pt.1) | **In force** | 1 May 2026 | SI 2026/421 reg.2 |
+| Section 13 / statutory rent-increase procedure | s.6 (Ch.1 Pt.1) | **In force** | 1 May 2026 | SI 2026/421 reg.2 |
+| Tribunal route for rent challenge | s.7 | **In force** | 1 May 2026 | SI 2026/421 reg.2 |
+| Advance rent prohibition (post-lease) | s.8 | **In force** | 1 May 2026 | SI 2026/421 reg.2 |
+| Advance rent prohibition (pre-lease) | s.9 | **In force** | 1 May 2026 | SI 2026/421 reg.2 |
+| Pet rights (right to request) | s.11 | **In force** | 1 May 2026 | SI 2026/421 reg.2 |
+| Bidding-wars / rental-bidding prohibition (Ch.6 Pt.1) | Ch.6 Pt.1 | **In force** | 1 May 2026 | SI 2026/421 reg.3 |
+| Discrimination protections (children, benefits) (Ch.3 Pt.1) | Ch.3 Pt.1 | **In force** | 1 May 2026 | SI 2026/421 reg.3 |
+| Financial penalties and offences | s.15, s.16, Sch.5 | **In force** | 1 May 2026 | SI 2026/421 reg.2 + reg.3 |
+| Landlord Redress Scheme / PRS Ombudsman (Ch.2 Pt.2, ss.64-74) | Pt.2 Ch.2 | **Partial** (s.74 only) | 1 May 2026 | SI 2026/421 reg.3 |
+| PRS Database (Ch.3 Pt.2, ss.75-96) | Pt.2 Ch.3 | **Pending** | not yet appointed | n/a |
+| Decent Homes Standard for PRS (Pt.3, ss.100-101) | Pt.3 | **Partial** (s.100 + Sch.4 partial in force 27 Dec 2025; full standard awaits SI) | 27 Dec 2025 + pending | SI 2025/1354 + pending |
+| Wales-specific provisions (ss.43-49) | ss.43-49 | **Pending** | future SI | legislation.gov.uk Wales table |
+
+**Practical writing rule for sessions:**
+- Section 21 abolition, periodic tenancies, reformed Section 8, Section 13 rent-rise procedure, advance-rent ban, bidding-wars ban, pet rights, financial penalties: **write in present tense as in force from 1 May 2026**.
+- PRS Database + full Ombudsman scheme: **write as "scheduled by commencement order"**, expected before April 2027 per government policy statements but no SI appointed day yet as of 2026-05-22.
+- Decent Homes Standard: preliminary provisions in force from 27 Dec 2025; **the substantive standard for PRS awaits a further commencement order**. Frame current state as "transitional, with the full standard pending Statutory Instrument".
+
+**Source-of-truth re-check:** before any session writes a definite-tense claim about an RRA 2025 provision, re-verify against `https://www.legislation.gov.uk/ukpga/2025/26/contents` and the SI commencement table (SIs 2025/1354 and 2026/421 are the operative orders as of 2026-05-22; new SIs may have appointed further sections after that date).
+
+### 20.13 Do not write
 
 - "The Renters' Rights Bill is in passage" (received Royal Assent on 27 October 2025).
 - "Section 21 is still available" (abolished for assured tenancies under the Act; subject to commencement order, check specific provision).

@@ -22,11 +22,12 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/heres-how-you-can-exit-mtd-if-your-income-falls/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
-
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+- https://www.ukpropertyaccountants.co.uk/heres-how-you-can-exit-mtd-if-your-income-falls/ — VERIFIED ALIVE 2026-05-22 (published 2026-04-09). Strong primary: two exit routes (immediate cessation OR three-consecutive-year low-income test), explicit "income drop alone does not auto-exit", HMRC portal notification mechanic.
+- https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax — HMRC eligibility/opt-out reference.
+- https://www.gov.uk/guidance/sign-up-as-an-individual-for-making-tax-digital-for-income-tax — sign-up / opt-out process from HMRC.
+- https://www.legislation.gov.uk/ukpga/2017/10/schedule/14 — FA 2017 Sch 14 (digital reporting obligations) for the statutory basis of in-scope / out-of-scope mechanics.
 
 ---
 
@@ -36,11 +37,25 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Inventory scanned 2026-05-22 across all 346 Property posts. Closest neighbours topically:
 
-**Manager hint:** expected neighbours: existing `mtd-rental-income-threshold-exemptions`, existing `how-to-switch-self-assessment-mtd-property-income` (switching how-to, related), existing `property-investment-exit-strategy-planning-guide` (cross-bucket lateral on exit theming).
+1. **`mtd-rental-income-threshold-exemptions`** — threshold pillar; mentions cessation in passing. Cross-link out; do not duplicate exemption taxonomy.
+
+2. **`property-investment-exit-strategy-planning-guide`** — cross-bucket on full portfolio exit (sales, CGT, etc.). The MTD exit rule is a sub-question for landlords already in this strategic exit conversation. Cross-link for the strategic context.
+
+3. **`how-to-switch-self-assessment-mtd-property-income`** — the "switch in" workflow. The mirror of "switch out". Cross-link both ways.
+
+4. **`reduce-cgt-property-disposal-uk`** — adjacent on partial-portfolio disposal (the practical trigger for income drop). Light cross-link in the worked-example section.
+
+5. **`leaving-uk-landlord-12-month-pre-departure-checklist`** — cross-bucket: expat exit may trigger MTD opt-out where letting ceases. Cross-link.
+
+6. **B1 sibling `mtd-itsa-qualifying-income-test-gross-vs-net`** — the gross-test mechanic the exit rule mirrors. Cross-link as foundational reference.
+
+7. **B7 sibling `mtd-itsa-comparison-current-self-assessment-vs-mtd-cycle`** — exit goes back to annual SA. Cross-link.
+
+**Differentiation move:** the §19.5 three-consecutive-tax-year test, written for the practical population (FHL-former-owners post-April-2025, partial sellers, landlords with single property and a void). Three-route framework: immediate cessation, three-year low-income, voluntary opt-out below threshold. Worked timeline showing why a 2025/26 → 2026/27 income drop does NOT exit until 2028/29 onwards. No CANNIBAL flag.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +66,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+Reviewed `Property/web/src/middleware.ts` 2026-05-22. No old slug overlaps. No action required.
 
 ---
 

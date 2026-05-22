@@ -22,11 +22,14 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/ated-rates/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+- https://www.ukpropertyaccountants.co.uk/ated-rates/ (Stage 2 verified live 2026-05-22; on-topic). Confirms the 2026/27 band table matches house position §18.1 exactly. Includes a £1.8m London BTL worked example, the 30 April 2026 deadline, the 30-day acquisition-return rule, the 90-day newly-built rule, and the 1 April 2027 next-revaluation pointer.
+- https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics (gov.uk primary; Stage 2 verified 2026-05-22, band figures match house position §18.1). The canonical source — cite directly.
+- https://www.gov.uk/government/publications/annual-tax-on-enveloped-dwellings-technical-guidance (gov.uk technical guidance; for the CPI indexation mechanic and the November-each-year publication of the next-year table).
+- https://www.legislation.gov.uk/ukpga/2013/29/part/3 (FA 2013 Part 3; statutory anchor for the charge itself).
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have.
 
 ---
 
@@ -36,11 +39,17 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+1. `ated-complete-guide-2026-27` (Incorporation & Company Structures). **Strongest topical overlap** because the pillar carries the band table already (verbatim 2026/27 figures in FAQ + body). *Differentiation:* this rates page is a reference / calculator-shaped page with deeper worked examples per band, year-on-year comparison (2025/26 vs 2026/27), CPI indexation explainer, daily-apportioned acquisition examples, and a Pre-Return Banding Check (PRBC) walk-through. The pillar links one-paragraph-to-the-bands; this page IS the band-by-band reference. **Cannibalisation watch:** if H2 outline mirrors pillar's "Annual Charges" section, raise CANNIBAL. Resolution: keep this page numeric / worked-example heavy; link to pillar for all narrative on chargeable persons / reliefs / valuation.
+2. `ated-rental-property-relief-mechanics`. *Differentiation:* one-paragraph cross-link in the "what the charge becomes after relief" section. No substantive overlap.
+3. `ated-15-percent-flat-rate-sdlt-interaction`. *Differentiation:* one-line cross-link in the "acquisition timing matters" worked example (where SDLT 15% bites at acquisition and ATED bites annually thereafter).
+4. Sibling A1 (overview). Co-equal; cross-link bilaterally. A1 is "who pays and why"; A2 is "how much, with worked numbers". No overlap.
+5. Sibling A7 (valuation rules). Lateral mechanic — A7 covers WHEN the value is set, A2 covers WHAT the charge is at that value. Cross-link in the band-boundary section.
 
-**Manager hint:** expected neighbours: A1 (overview, strategic anchor), A7 (valuation rules, lateral mechanic), existing `ated-complete-guide-2026-27`. Page intentionally narrow and reference-shaped.
+**Cannibalisation judgement:** this is the riskiest cannibalisation page in the bucket because the pillar already carries the band table. Discipline: make this a reference page with materially richer per-band worked examples (3-5 examples per band, mid-year acquisitions, band-boundary edge cases, PRBC scenarios). Word count should fall out at the longer end of the range because of the worked-example density. If competitor median is shorter, defer to topic coverage.
+
+**Category note:** override to `incorporation-and-company-structures` (matches the existing four ATED pages).
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +60,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+no redirect overlap (middleware.ts checked 2026-05-22; no ATED-related redirect entries).
 
 ---
 

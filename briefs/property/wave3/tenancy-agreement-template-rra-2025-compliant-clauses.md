@@ -22,11 +22,19 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/tenancy-agreements-a-guide-for-landlords/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+Validated 2026-05-22. The primary competitor URL is host-blocked to non-browser fetches (403) but is the canonical ukpropertyaccountants page on the topic. Statutory + government-template sources form the reliable spine.
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+- https://www.ukpropertyaccountants.co.uk/tenancy-agreements-a-guide-for-landlords/ (manager-identified primary; 403 to bots; session must fetch with full browser headers; use as outline + FAQ-pattern benchmark)
+- https://www.ukpropertyaccountants.co.uk/navigating-tenancy-agreements-for-landlords-and-agents/ (additional ukpropertyaccountants reference per the C8 selection rationale; same 403 caveat)
+- https://www.legislation.gov.uk/ukpga/2025/26/contents (RRA 2025; load-bearing sections for tenancy-agreement template: s.1 (periodic + monthly max rent period), s.2 (AST abolition), s.3 (Sch.1 grounds for possession), s.6 (statutory rent-increase procedure), s.8 + s.9 (advance-rent prohibition), s.11 (pet right), Ch.6 Pt.1 (bidding-wars + asking-rent cap); verified live)
+- https://www.gov.uk/government/publications/model-agreement-for-an-assured-shorthold-tenancy (gov.uk model tenancy agreement; pre-RRA-2025 but useful baseline; session should note any superseded clauses and flag the absence of an updated MHCLG model post-1-May-2026)
+- https://www.gov.uk/government/publications/how-to-rent (gov.uk How to Rent guide, must be served with new tenancies; verified live; updated for 1 May 2026 commencement)
+- https://www.gov.uk/private-renting-tenancy-agreements (gov.uk landlord tenancy-types guidance; verified live)
+- https://www.legislation.gov.uk/ukpga/2019/4/contents (Tenant Fees Act 2019; defines prohibited payments, deposit cap; verified live; remains in force, modified by RRA 2025 advance-rent ban)
+
+> Session should add an updated MHCLG model agreement link if one is published post-1-May-2026. If absent, frame the page as the practitioner-led template gap-filler.
 
 ---
 
@@ -36,11 +44,29 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Reasoned 2026-05-22. The Property inventory has no existing tenancy-agreement-template page; this is genuinely net-new. Cross-references are primarily into the other C-bucket pages and the standard landlord-tax pillars.
 
-**Manager hint:** expected neighbours: C1 (pillar), C3 (periodic mechanic), C7 (pet clauses), C4 (rent-increase clauses), existing `rental-income-tax-uk-complete-guide-landlords`.
+Neighbours:
+
+1. **C3 (sibling) `periodic-tenancy-default-ast-conversion-mechanics`** (this wave). Tightest cross-link: C3 = the structural change; C8 = the contractual template implementing it. Bidirectional link.
+
+2. **C4 (sibling) `renters-rights-act-rent-increase-section-13-tribunal-route`** (this wave). The rent-review clauses in tenancy agreements are now unenforceable for rent rises (Section 13 procedure mandatory). C8 must call out which legacy clauses to remove; C4 covers the procedural alternative. Cross-link.
+
+3. **C7 (sibling) `pet-rights-tenancy-landlord-refusal-reasonable-grounds`** (this wave). Pet-consent clause is one of the standard new template additions. Cross-link.
+
+4. **C10 (sibling) `bidding-wars-asking-rent-cap-landlord-marketing-compliance`** (this wave). Advance-rent ban (s.8 + s.9 RRA 2025) feeds tenancy-agreement template (cannot stipulate 6 or 12 months upfront as a deposit substitute). Cross-link.
+
+5. **C1 (new) `rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence`** (this wave). Unenforceable legacy clauses don't trigger civil penalty directly; light forward link.
+
+6. **`renters-rights-act-2026-tax-implications-landlords`** (landlord-tax-essentials; queued for rewrite under F-1). Background.
+
+7. **`first-time-landlord-tax-guide-everything-you-need-to-know`** (landlord-tax-essentials). New-landlord pillar; useful upstream link.
+
+8. **`landlord-expenses-allowable-uk-2026`** (section-24-and-tax-relief). Legal fees for drafting / updating tenancy agreements are revenue-deductible; light cross-link for that practical point.
+
+**Differentiation move:** the *template + clause-by-clause* page. Walk through: clauses that MUST be updated post-1-May-2026 (fixed-term provisions, Section 21 notice clauses, rent-review clauses for rent rises, advance-rent clauses beyond first month, blanket pet refusals), new clauses that should be added (s.11 pet consent procedure, RRA Information Sheet acknowledgement, PRS database reference once Ch.3 Pt.2 commences, deposit protection prescribed information confirmation), clauses that remain valid (deposit cap under Tenant Fees Act 2019, prohibited payments, repair obligations under Landlord and Tenant Act 1985 s.11). Provide an annotated example rather than a full template (to avoid legal-advice positioning issues). No cannibalisation flag.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +77,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+Stage 2 validation (2026-05-22): grepped middleware for slug tokens (tenancy, agreement, clause, template). No legacy redirect entries match. No redirect repointing required.
 
 ---
 

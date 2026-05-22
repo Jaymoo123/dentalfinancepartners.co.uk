@@ -22,11 +22,19 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/renters-rights-bill-key-impact-on-tenants-landlords/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+Validated 2026-05-22. The original "renters-rights-bill-key-impact-on-tenants-landlords" URL uses the legacy "Bill" framing, now outdated (Act enacted 27 October 2025); session should fetch but treat its substance as background only. Stage 2 extends with the canonical Decent Homes sources (DLUHC/MHCLG guidance + statutory text) which are far better aligned to the framing.
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+- https://www.ukpropertyaccountants.co.uk/renters-rights-bill-key-impact-on-tenants-landlords/ (manager-identified primary; legacy-naming flag, "Bill" framing predates Royal Assent; treat as background context only, not authority)
+- https://www.legislation.gov.uk/ukpga/2025/26/contents (RRA 2025; **Part 3 (ss.100-101) Decent Homes Standard** and Schedule 4 Housing Act 2004 amendments; verified live; s.100 + parts of Sch.4 in force from 27 December 2025 per SI 2025/1354, full standard awaits further SI)
+- https://www.gov.uk/government/publications/a-decent-home-definition-and-guidance (gov.uk Decent Homes definition + guidance; verified live; the social-housing standard now being extended to PRS)
+- https://www.gov.uk/government/collections/housing-health-and-safety-rating-system-hhsrs-guidance (HHSRS guidance under Housing Act 2004; verified live; the statutory minimum component of Decent Homes; Category 1 hazards drive enforcement)
+- https://www.gov.uk/private-renting/your-landlords-safety-responsibilities (gov.uk landlord safety duties baseline; verified live)
+- https://www.legislation.gov.uk/uksi/2025/1354/contents/made (SI 2025/1354; commencement of s.100 + Sch.4 partial from 27 Dec 2025)
+- https://www.gov.uk/government/publications/rent-repayment-orders-under-the-housing-and-planning-act-2016 (Rent Repayment Order guidance; verified live; tenants gain RRO route where property is non-compliant per house_positions §20.4)
+
+> Session may add the most recent MHCLG / DLUHC consultation response or impact assessment on the PRS Decent Homes extension once published.
 
 ---
 
@@ -36,11 +44,27 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Reasoned 2026-05-22. Original brief hint referenced OLD C1; new C1 is enforcement-focused.
 
-**Manager hint:** expected neighbours: C1 (pillar), existing `pre-letting-expenses-landlord-claim-before-first-tenant` (lateral on improvement vs repair classification), existing `claim-mortgage-interest-rental-property-uk-section-24`, existing `rental-income-tax-uk-complete-guide-landlords`.
+Neighbours:
+
+1. **`pre-letting-expenses-landlord-claim-before-first-tenant`** (landlord-tax-essentials). Lateral on improvement-vs-repair classification: pre-letting Decent Homes compliance spend follows the capital-vs-revenue split. Cross-link forward when discussing capital additions vs revenue maintenance under the Standard.
+
+2. **`hmo-licensing-fees-tax-deductible-uk-landlords`** (property-types-and-specialist-tax). Closest existing for the *deductibility-of-compliance-cost* analysis (cash basis vs accruals, capital additions vs revenue maintenance, council penalty deductibility). Lean on its already-locked treatment when covering deductibility of Decent Homes compliance spend. Cross-link.
+
+3. **C1 (new) `rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence`** (this wave). Enforcement layer ABOVE Decent Homes compliance: where this page covers the standard + compliance, C1 covers what happens when a landlord falls short. Forward link.
+
+4. **C6 (sibling) `prs-database-landlord-ombudsman-registration-requirements`** (this wave). Sibling compliance: PRS Database records compliance status (gas safety, EICR, EPC, Decent Homes status). Cross-link for the database-compliance-flag angle.
+
+5. **`renters-rights-act-2026-tax-implications-landlords`** (landlord-tax-essentials; queued for rewrite under F-1). Background only.
+
+6. **`hmo-landlord-accounting-multi-tenant-property-tax`** (landlord-tax-essentials). HMO landlords face the parallel HHSRS regime; useful sibling.
+
+7. **`landlord-expenses-allowable-uk-2026`** (section-24-and-tax-relief). Where Decent Homes compliance spend hits the rental P&L; light reference.
+
+**Differentiation move:** the *compliance checklist* page. Step through each of the four Decent Homes limbs (statutory minimum / HHSRS Category 1 hazards, reasonable state of repair, reasonably modern facilities, reasonable thermal comfort), what each means in practice for a typical BTL or HMO, the local-authority enforcement powers under Housing Act 2004 Pt.1 as amended, the tenant Rent Repayment Order route (up to 12 months' rent), the timeline (s.100 + Sch.4 partial in force 27 Dec 2025; full standard awaits further commencement SI; sessions writing before that SI must frame the standard as "scheduled but not yet substantively in force"), the firm-positioning tax angle (deductibility of compliance spend, capital-vs-revenue split, council penalty deductibility per the HMO-licensing-fees treatment). No cannibalisation flag.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +75,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+Stage 2 validation (2026-05-22): grepped middleware for slug tokens (decent, homes, prs, compliance, hhsrs, housing-act). No legacy redirect entries match. No redirect repointing required.
 
 ---
 

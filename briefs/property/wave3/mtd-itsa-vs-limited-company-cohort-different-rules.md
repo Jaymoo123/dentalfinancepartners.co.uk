@@ -22,11 +22,13 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/how-making-tax-digital-affects-limited-companies/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
-
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+- https://www.ukpropertyaccountants.co.uk/how-making-tax-digital-affects-limited-companies/ — VERIFIED ALIVE 2026-05-22 (last updated 2025-10-15). Strong primary: confirms Ltd Cos outside MTD ITSA, MTD for VAT applies to VAT-registered companies, MTD for CT is a future cycle (no confirmed date), AND the critical detail that directors with personal side income above £50k are caught in MTD ITSA via their personal SA. Use as the cohort-comparison anchor.
+- https://www.gov.uk/guidance/check-if-you-must-follow-making-tax-digital-rules-for-vat — MTD for VAT applies to Ltd Cos; cite once for the "Ltd Cos already touch MTD for VAT" framing.
+- https://www.gov.uk/government/publications/making-tax-digital-for-corporation-tax — MTD for CT consultation outcome (gov.uk); cite as the "future cycle, no confirmed date" anchor.
+- https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax — confirms Ltd Cos are not in scope of MTD ITSA.
+- https://www.gov.uk/limited-company-formation — adjacent reference for the "should I incorporate to avoid MTD" decision-tree section.
 
 ---
 
@@ -36,11 +38,25 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Inventory scanned 2026-05-22 across all 346 Property posts. Closest neighbours topically:
 
-**Manager hint:** expected neighbours: existing `landlord-incorporation-step-by-step-guide-uk`, existing `buy-to-let-limited-company-complete-guide-uk`, existing `corporation-tax-rates-property-companies-2026-27`, B8 (overview, sibling), B1 (mechanic).
+1. **`limited-company-vs-personal-ownership-tax-comparison-2026`** — the closest cohort-comparison page. Side-by-side Ltd Co vs personal ownership tax framing. The MTD angle is one column of that comparison. Treat as the broader decision framework; this page narrows to the MTD-specific cohort wrinkle. Cross-link both directions.
+
+2. **`should-i-incorporate-buy-to-let-portfolio-2026`** — the decision page on whether to incorporate. The MTD-avoidance angle is a likely-asked sub-question. Cross-link.
+
+3. **`buy-to-let-limited-company-complete-guide-uk`** — incorporation pillar. Cross-link out for the corporation-tax / structural detail.
+
+4. **`corporation-tax-rates-property-companies-2026-27`** — the "what Ltd Cos pay instead" reference. Cross-link for the cohort comparison's CT side.
+
+5. **`landlord-incorporation-step-by-step-guide-uk`** — process page. Cross-link only if the page reaches the "I am moving to a Ltd Co partly to escape MTD" decision branch.
+
+6. **B8 sibling `mtd-itsa-overview-six-changes-residential-landlords`** — bucket overview. Cross-link.
+
+7. **B1 sibling `mtd-itsa-qualifying-income-test-gross-vs-net`** — for the gross-test mechanic when both Ltd Co rents and personal property rents are held by the same individual director (Ltd Co income does not count in personal threshold; the director's personal property does). Cross-link.
+
+**Differentiation move:** the cohort comparison applied. Two side-by-side compliance regimes (Ltd Co outside MTD ITSA but inside MTD VAT and a future MTD CT; sole-trader landlord inside MTD ITSA from April 2026). Director's personal income still triggers personal MTD ITSA. Worked decision-tree for the "should I incorporate to escape MTD" question (answer: rarely the deciding factor on its own; CGT + SDLT + S162 cost dominates). Distinct from existing incorporation pillars (decision framework includes MTD as one factor; this page IS the MTD factor explained). No CANNIBAL flag.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +67,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+Reviewed `Property/web/src/middleware.ts` 2026-05-22. No old slug overlaps. No action required.
 
 ---
 

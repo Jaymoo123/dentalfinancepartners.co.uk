@@ -22,11 +22,13 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/making-tax-digital-major-self-assessment-overhaul-ahead/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
-
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+- https://www.ukpropertyaccountants.co.uk/making-tax-digital-major-self-assessment-overhaul-ahead/ — VERIFIED ALIVE 2026-05-22 (last updated 2026-02-19). Strong primary: framed as "biggest shake-up to Self Assessment in nearly three decades", side-by-side annual-SA vs MTD-quarterly comparison, real-time tracking, mandatory software.
+- https://www.gov.uk/government/publications/making-tax-digital/overview-of-making-tax-digital — HMRC's MTD overview page. Use as the authoritative cycle reference.
+- https://www.gov.uk/self-assessment-tax-returns — current SA reference for the "what stays the same" column.
+- https://www.gov.uk/log-in-file-self-assessment-tax-return — current SA filing portal; cite as the regime being replaced.
+- https://www.legislation.gov.uk/ukpga/2017/10/schedule/14 — FA 2017 Sch 14 statutory basis for MTD ITSA.
 
 ---
 
@@ -36,11 +38,25 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Inventory scanned 2026-05-22 across all 346 Property posts. Closest neighbours topically:
 
-**Manager hint:** expected neighbours: existing `how-to-switch-self-assessment-mtd-property-income`, existing `mtd-quarterly-deadlines-2026-2027-landlords`, B8 (overview), existing `how-to-register-mtd-landlord-step-by-step-guide`.
+1. **`how-to-switch-self-assessment-mtd-property-income`** — the switching how-to. This page is the structural compare-and-contrast (cycles, deadlines, what changes, what stays); the switching page is the workflow. Distinct: this is the **side-by-side reference**, the existing page is the **process**. Cross-link forward.
+
+2. **`mtd-quarterly-deadlines-2026-2027-landlords`** — the MTD-side dates. Cross-link as the post-mandate cycle reference.
+
+3. **`landlord-tax-return-complete-guide-2026`** — the SA-side reference. Cross-link as the pre-mandate / below-threshold cycle reference.
+
+4. **`making-tax-digital-property-income-2026-complete-guide`** — broader pillar. Cross-link.
+
+5. **B8 sibling `mtd-itsa-overview-six-changes-residential-landlords`** — overview of changes. This page is the "side-by-side", B8 is the "six changes overview". Cross-link both directions; B8 covers the WHAT, this page covers the SA-VS-MTD COMPARISON.
+
+6. **`mtd-quarterly-reporting-landlords-step-by-step-guide`** — process page on the MTD side. Cross-link.
+
+7. **`how-to-complete-landlord-self-assessment-filing-step-by-step-guide`** — process page on the SA side. Cross-link.
+
+**Differentiation move:** the side-by-side comparison table is the central artefact. Two columns: traditional SA (annual cycle, 31 January deadline, paper or HMRC portal, one tax payment) vs MTD ITSA (4 quarterly + EoPS + final declaration, software-mandated, points-based penalties). Worked example: same landlord's year mapped to both cycles. Distinct from switching page (process) and from overview page (catalogue of changes). No CANNIBAL flag.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +67,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+Reviewed `Property/web/src/middleware.ts` 2026-05-22. No old slug overlaps. No action required.
 
 ---
 

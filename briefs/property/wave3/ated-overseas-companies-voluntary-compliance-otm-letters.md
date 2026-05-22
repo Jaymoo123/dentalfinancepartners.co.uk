@@ -22,11 +22,16 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/voluntary-ated-compliance-a-guide-for-overseas-companies/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+- https://www.ukpropertyaccountants.co.uk/voluntary-ated-compliance-a-guide-for-overseas-companies/ (Stage 2 verified live 2026-05-22; on-topic). Covers compliance requirements for overseas companies, HMRC nudge letters, information required for disclosure, financial consequences of non-compliance (interest + penalties), why voluntary disclosure is favoured. NOTE: this page does NOT cover the OTM letters campaign specifically — the brief merges with the OTM page below.
+- https://www.ukpropertyaccountants.co.uk/hmrcs-otm-letters-campaign-directed-at-ated-avoidance/ (Stage 2 verified live 2026-05-22; on-topic). The OTM-specific companion. Covers target population (offshore companies holding UK residential >£500k with consecutive rental losses 2017/18-2019/20 who claimed QPRBR or failed to file), 40-day response window, four letter types issued by HMRC, action options (file return / supply QPRBR evidence / file omitted returns), campaign-scope detail (small batches into 2025/26). This is the OTM mechanic anchor; combined with the voluntary-compliance page above, gives both halves of the merged brief.
+- https://www.gov.uk/hmrc-internal-manuals/annual-tax-on-enveloped-dwellings (HMRC ATED Manual — for the overseas-company applicability detail).
+- https://www.gov.uk/guidance/disclose-tax-non-compliance (gov.uk Digital Disclosure Service / DDS — practical route for overseas companies who want to disclose previously unreported ATED. Cite at the "how to make a voluntary disclosure" section).
+- https://www.gov.uk/guidance/register-an-overseas-entity (gov.uk Register of Overseas Entities — for the RoE / ATED-parallel-regime point flagged in house position §18.6).
+- https://www.legislation.gov.uk/ukpga/2022/10 (Economic Crime (Transparency and Enforcement) Act 2022 — RoE statutory basis; cite where the brief discusses the dual-regime point).
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml.
 
 ---
 
@@ -36,11 +41,18 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+1. `ated-complete-guide-2026-27`. Pillar. Existing intro paragraph mentions RoE/ATED parallel-regime point. *Differentiation:* the pillar's coverage of overseas-company applicability is one paragraph; this page is the operational guide for overseas companies that have either received an OTM letter or are considering voluntary disclosure. Cross-link.
+2. `ated-late-filing-penalties-mechanics`. Strong adjacency — overseas companies that respond to OTM by filing late returns face the penalty cascade (potentially across multiple chargeable periods). Cross-link in the "what penalties you may face" section.
+3. `non-resident-landlord-scheme-uk-complete-guide`. Adjacent — many overseas ATED-affected companies also have NRL obligations. *Differentiation:* one-paragraph cross-link in the "wider compliance picture" section.
+4. `non-resident-cgt-uk-property-rates-reporting` and `non-resident-cgt-selling-uk-property-overseas-guide`. Adjacent — overseas ATED companies face NRCGT on disposal. One-line cross-links each.
+5. `iht-non-resident-uk-property-april-2025-residence-test`. Adjacent — overseas-company-held UK residential property is also in scope of IHT under Sch A1 IHTA 1984 (look-through). Cross-link in the "what other regimes apply" section.
+6. Sibling A1 (overview) and A9 (penalty appeals). Cross-link — A9 is the route for any overseas company already facing penalty notices it wants to challenge.
 
-**Manager hint:** expected neighbours: existing `non-resident-landlord-scheme-uk-complete-guide` (NRL pillar, often the related compliance question for these clients), A1, existing register-of-overseas-entities-related pages if any.
+**Cannibalisation judgement:** the persona (overseas company facing HMRC pressure) is distinct from any existing page. No CANNIBAL flag.
+
+**Category note:** override to `incorporation-and-company-structures` (sits beside the existing ATED pages).
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +63,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+no redirect overlap (middleware.ts checked 2026-05-22).
 
 ---
 

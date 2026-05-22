@@ -22,11 +22,18 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/documents-needed-for-renters-rights-act-possession-claim/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+Validated 2026-05-22. Primary URL is alive (title "The 5 Documents Every Landlord Needs Before Starting a Renters Rights Act Possession Claim", published 20 May 2026). It frames compliance documentation rather than the abolition mechanics, so it covers the *evidence pack* angle but not the *grounds + procedure* angle this page should own.
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+- https://www.ukpropertyaccountants.co.uk/documents-needed-for-renters-rights-act-possession-claim/ (manager-identified primary; verified live; covers gas safety, EICR, EPC, deposit protection prescribed information, RRA Information Sheet (new 31 May 2026 deadline); does NOT enumerate Section 8 grounds; useful for the documentation checklist sub-section but not the full guide)
+- https://www.legislation.gov.uk/ukpga/2025/26/contents (RRA 2025 statutory text; sections 2 (AST abolition), 3 (grounds for possession), Schedule 1 (full list of new and amended Sch.2 Housing Act 1988 grounds); verified live)
+- https://www.legislation.gov.uk/ukpga/1988/50/schedule/2 (Housing Act 1988 Schedule 2 as amended; the "grounds for possession" canonical list pre and post RRA; verified live; statutory text)
+- https://www.legislation.gov.uk/uksi/2026/421/made (Commencement No. 2 + Transitional Provisions Regs 2026; appointed day 1 May 2026; transitional savings for in-progress Section 21 notices served before 1 May 2026)
+- https://www.gov.uk/evicting-tenants (gov.uk landlord eviction guidance, post-1-May-2026 updated content covering reformed grounds and notice periods; verified live)
+- https://www.gov.uk/government/organisations/first-tier-tribunal-property-chamber (FTT-PC where contested possession proceedings sit; verified live)
+
+> Session should also consider FTT-PC and county court possession decisions published after 1 May 2026 for live case-law illustrations on the new mandatory and discretionary grounds.
 
 ---
 
@@ -36,11 +43,23 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Reasoned 2026-05-22 against the 346-page Property inventory. Note: the C1 hint in the original brief referenced the OLD C1 (post-RRA pillar). C1 has been swapped to the enforcement / civil-penalties brief, so the C1 cross-reference below is to the NEW C1 framing (enforcement / defence).
 
-**Manager hint:** expected neighbours: C1 (post-RRA pillar), C9 (sale-route lateral), existing `renters-rights-act-2026-tax-implications-landlords` (background), existing `rental-income-tax-uk-complete-guide-landlords`.
+Neighbours:
+
+1. **`renters-rights-act-2026-tax-implications-landlords`** (landlord-tax-essentials; tax-implications angle of RRA as a whole). Background reference only; tax framing not procedural. Queued for rewrite under F-1. Link forward as "tax cash-flow implications of the changes covered here". No overlap.
+
+2. **C1 (new) `rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence`** (sibling in same wave). Sits one layer above on enforcement / post-breach; this page (C2) covers the legitimate-route mechanics of getting possession. Cross-link bidirectionally: C2 → C1 for "if you proceed without grounds or evidence, you face civil-penalty exposure under RRA 2025 s.15"; C1 → C2 for "the lawful possession route under reformed Section 8".
+
+3. **C9 (sibling) `landlords-considering-selling-portfolio-rra-2025-tax-implications`** (this wave; sale-driven possession ground 1A / 1B + CGT timing). Lateral cross-link: where the landlord's possession motivation IS sale, C9 covers the CGT-timing angle and the 12-month re-let-restriction interaction.
+
+4. **`hmrc-penalties-late-landlord-tax-returns-2026`** (landlord-tax-essentials). Adjacent only for the deductibility of legal fees during contested possession. Light reference.
+
+5. **`first-time-landlord-tax-guide-everything-you-need-to-know`** (landlord-tax-essentials). Useful as downstream "next reading" link for new landlords.
+
+**Differentiation move for this page:** the procedural possession-route reference. Enumerate reformed Section 8 grounds (mandatory grounds 1, 1A, 1B, 2, 6, 8; discretionary grounds 8A, 9, 10, 11, 12, 13, 14; new grounds under RRA 2025 Sch.1 including landlord-sale, landlord-occupation, anti-social-behaviour amendments), notice periods per ground, evidence requirements per ground (the documentation pack from the primary competitor), the 12-month re-let restriction after Ground 1 / 1A / 1B possession, and the transitional savings for Section 21 notices served before 1 May 2026. No cannibalisation flag.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +70,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+Stage 2 validation (2026-05-22): grepped `Property/web/src/middleware.ts` for slug tokens (section-21, possession, eviction, abolition, landlord-possession). No legacy redirect entries match. The only RRA-adjacent middleware entry is `renters-rights-act-2026-tax-implications-landlords` (irrelevant to this brief). No redirect repointing required.
 
 ---
 

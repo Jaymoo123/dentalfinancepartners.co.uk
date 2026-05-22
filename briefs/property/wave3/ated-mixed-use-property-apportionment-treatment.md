@@ -22,11 +22,14 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.ukpropertyaccountants.co.uk/understanding-ated-and-mixed-use-properties-a-detailed-guide/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+- https://www.ukpropertyaccountants.co.uk/understanding-ated-and-mixed-use-properties-a-detailed-guide/ (Stage 2 verified live 2026-05-22; on-topic). Covers what counts as mixed-use, how ATED applies to mixed-use, four apportionment methods (floor area, professional valuation, market rental value, separate valuation), and a flat-over-shop worked example (£600k flat + £200k café; ATED applies to flat only because dwelling element exceeds £500k threshold).
+- https://www.gov.uk/hmrc-internal-manuals/annual-tax-on-enveloped-dwellings (HMRC ATED Manual — find pages on dwelling meaning, single-dwelling interest, and apportionment for mixed-use). Authoritative.
+- https://www.legislation.gov.uk/ukpga/2013/29/section/112 (FA 2013 s.112 dwelling definition — verify exact section at write-time; cite at the dwelling-test section).
+- https://www.gov.uk/hmrc-internal-manuals/sdlt-manual (SDLT Manual — for the parallel SDLT mixed-use test (Hyman / Withers-style cases); useful cross-reference because the SDLT mixed-use boundary jurisprudence informs ATED single-dwelling thinking, even though the statutes are distinct).
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml.
 
 ---
 
@@ -36,11 +39,17 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+1. `sdlt-mixed-use-property-classification` (Wave 1 SDLT page). **Strongest neighbour** — covers the SDLT mixed-use jurisprudence (Hyman / Bewley / Withers-line cases) which informs apportionment thinking for ATED. *Differentiation:* this page is the ATED single-dwelling-interest apportionment mechanic (residential portion only is charged; non-residential excluded), distinct from the SDLT mixed-use classification (residential vs non-residential transaction). Cross-link bilaterally; this page will frequently reference the SDLT page for "how the residential boundary is judicially drawn".
+2. `ated-complete-guide-2026-27`. Pillar mentions "Does ATED apply to commercial property or only residential?" in FAQ. *Differentiation:* the pillar gives the headline; this page is the apportionment mechanics. Cross-link.
+3. `serviced-accommodation-vs-buy-to-let-tax-comparison-2026` and `serviced-accommodation-tax-fhl-abolition-april-2025` (Incorporation & Company Structures / Property Types). Adjacent — corporate-held serviced accommodation can be a mixed-use scenario (commercial trade aspect + residential dwelling test). *Differentiation:* one-line cross-link only; do not re-cover serviced-accom tax positions.
+4. `airbnb-tax-uk-short-term-rental-income-taxed`. Adjacent — short-term let landlords sometimes ask whether their property is mixed-use for ATED. *Differentiation:* one-line cross-link in the "common scenarios" section.
+5. Sibling A1 (overview) and A7 (valuation rules). Cross-link — A7 is particularly relevant because apportionment + the £500k threshold is a valuation question.
 
-**Manager hint:** expected neighbours: A1, A7 (valuation), existing `airbnb-tax-uk-short-term-rental-income-taxed` (serviced-accom edge), existing `cgt-commercial-property-different-residential` (CGT mixed-use sibling, lateral mechanic).
+**Cannibalisation judgement:** clear differentiation. The SDLT mixed-use page is the strongest overlap but they cover different statutes (Sch 6B FA 2003 vs FA 2013 Part 3); discipline is to keep this page rooted in ATED apportionment and link to the SDLT page for the wider classification jurisprudence. No CANNIBAL flag.
+
+**Category note:** override to `incorporation-and-company-structures`.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +60,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate.
+no redirect overlap (middleware.ts checked 2026-05-22).
 
 ---
 

@@ -22,11 +22,18 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs, to validate in Stage 2
+## Competitor URLs (Stage 2 validated)
 
-- https://www.gov.uk/government/publications/civil-penalties-under-the-housing-and-planning-act-2016 (manager-identified primary, baseline HP Act 2016 regime as extended by RRA 2025; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak; especially worth searching for ukpropertyaccountants.co.uk + landlord-defence + civil-penalty content + recent FTT-PC decisions on financial-penalty appeals).
+Validated 2026-05-22 by Stage 2 sub-agent. Statutory guidance has bifurcated since 1 May 2026: the original HP Act 2016 civil-penalty guidance now reads "for offences committed before 1 May 2026", with newer RRA-2025 offences sitting under a parallel "Civil penalties under the Renters' Rights Act 2025 guidance" page. Both branches need to be cited because landlords face pre-1-May-2026 enforcement (HP Act 2016 + Housing Act 2004 baseline) AND post-1-May-2026 enforcement (RRA 2025 s.15-16 + Sch.5 + amended Sch.4) in the transitional window.
 
-> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
+- https://www.legislation.gov.uk/ukpga/2025/26/contents (Renters' Rights Act 2025 contents page; primary statutory text; sections 15, 16, Schedule 5, and Part 4 enforcement provisions are the load-bearing references; verified live)
+- https://www.legislation.gov.uk/ukpga/2016/22/part/2 (Housing and Planning Act 2016 Part 2; civil penalties + banning orders + rogue-landlord database baseline; verified live; still operative for pre-1-May-2026 offences)
+- https://www.gov.uk/government/publications/civil-penalties-under-the-housing-and-planning-act-2016 (gov.uk statutory guidance, 20-page PDF; verified live; expressly scoped to offences committed before 1 May 2026; banning-order amendment from 6 April 2018 noted)
+- https://www.gov.uk/government/publications/database-of-rogue-landlords-and-property-agents-under-the-housing-and-planning-act-2016 (gov.uk database guidance; for repeat-offender database inclusion criteria; sessions should also cite the RRA 2025 PRS Database (pending commencement) as the distinct, separate national register)
+- https://www.gov.uk/government/organisations/first-tier-tribunal-property-chamber (FTT Property Chamber; appeals route under HP Act 2016 Sch.13 and RRA 2025 s.16; verified live)
+- https://www.legislation.gov.uk/uksi/2026/421/made (Commencement No. 2 + Transitional and Saving Provisions Regulations 2026; appointed-day 1 May 2026; key for the bifurcation timeline)
+
+> Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. Session may add ukpropertyaccountants.co.uk landlord-defence content if a specific competitor angle emerges during research.
 
 ---
 
@@ -36,11 +43,25 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Closest existing pages, Opus reasoning needed (Stage 2)
+## Closest existing pages (Stage 2 reasoned)
 
-*Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
+Reasoned 2026-05-22 by Stage 2 sub-agent against the full 346-page Property blog inventory. Token-similarity matcher NOT used (§16.11 Wave 2 lesson). The Property inventory has no existing dedicated page on civil-penalty defence, banning orders, rogue-landlord-database inclusion, or local-authority housing enforcement; this brief is genuinely net-new.
 
-**Manager hint:** expected neighbours: existing `hmrc-penalties-late-landlord-tax-returns-2026` (tax-side penalty regime, contrast), existing `penalties-not-declaring-rental-income-hmrc` (HMRC tax penalty contrast), C5 (Decent Homes), C6 (PRS database registration), and any existing HMO licensing / selective licensing pages (council enforcement parallel). Verify there is no existing page on civil penalties / banning orders / rogue landlord database (grep confirmed 2026-05-22 there is none).
+Neighbours (closest by topical adjacency, written-from-this-angle still distinct):
+
+1. **`renters-rights-act-2026-tax-implications-landlords`** (category: landlord-tax-essentials; framing: tax-implications-of-the-Act as a whole). Background reference, not topical overlap. The page treats RRA as a regime shift on tax cash flow, NOT as an enforcement framework. **Stage 2 note:** this page is queued for rewrite under F-1 (legacy-rebuild track) because of stale "2026 / in-passage / May 2026" citations. C1 should link forward to it as the post-rewrite tax companion AND should NOT duplicate any of its tax-cash-flow framing. No cannibalisation flag, complementary scopes.
+
+2. **`hmo-licensing-fees-tax-deductible-uk-landlords`** (category: property-types-and-specialist-tax; framing: tax deductibility of HMO + selective licensing fees, late-application penalty deductibility). Closest existing for the *deductibility-of-enforcement-costs* question. C1 should reference it briefly when discussing the deductibility of legal fees defending a financial-penalty notice and link out for the deeper licensing-fee deductibility treatment.
+
+3. **`hmrc-penalties-late-landlord-tax-returns-2026`** (category: landlord-tax-essentials; framing: HMRC late-filing penalty mechanics under FA 2009 Sch.55 / 56). Useful contrast page only: C1 is local-authority civil penalties under HP Act 2016 + RRA 2025; the HMRC page is the tax-administration penalty regime. Link out as "the tax-side penalty equivalent". No overlap.
+
+4. **`hmo-landlord-accounting-multi-tenant-property-tax`** (category: landlord-tax-essentials). Sibling for the HMO-licensing enforcement context (council enforcement parallel). Mention as adjacent reading; no content overlap.
+
+5. **`first-time-landlord-tax-guide-everything-you-need-to-know`** (category: landlord-tax-essentials). Background pillar where a new landlord might first encounter RRA compliance obligations. Suitable as a "next reading" downstream link; no overlap.
+
+**Differentiation move for this page:** sit one layer ABOVE the compliance pages (C5 Decent Homes compliance, C6 PRS Database registration, C8 tenancy agreement clauses). Frame as the post-breach enforcement / defence layer, anchored on local-authority financial-penalty notices, appeals to FTT Property Chamber under HP Act 2016 Sch.13 (pre-1-May-2026 offences) and RRA 2025 s.16 (post-1-May-2026 offences), banning-order regime, rogue-landlord-database listing, and the tax-deductibility / capital-vs-revenue question on associated legal fees.
+
+No cannibalisation flag raised.
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,7 +72,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-none obvious; Stage 2 to validate against the 429-redirect catalogue.
+Stage 2 validation (2026-05-22): grepped `Property/web/src/middleware.ts` against the slug tokens (renter, civil, penalty, banning, rogue, enforcement, eviction, possession, housing-act). No legacy redirect entries match this slug's token set. The only RRA-adjacent middleware entry is `"renters-rights-act-2026-tax-implications-landlords": "landlord-tax-essentials"`, which points at the existing page (not relevant to this brief's redirect handling). No redirect repointing required on launch.
 
 ---
 
