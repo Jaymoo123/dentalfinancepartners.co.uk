@@ -169,34 +169,72 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** mtd-itsa-comparison-current-self-assessment-vs-mtd-cycle (as briefed; no override)
+- **Final category:** making-tax-digital-mtd (as briefed)
+- **H1 chosen:** "MTD ITSA vs Current Self Assessment: What Actually Changes for Landlords" (signals comparison + the "what actually changes" phrasing addresses the implicit reader question that they may have heard exaggerated claims about the scope of change; balances against the "biggest shake-up in three decades" framing competitor uses)
+- **Meta title chosen:** "MTD ITSA vs Self Assessment: Side-by-Side for Landlords" (55 chars)
+- **Why these vs other options:** Word count 2,506 lands right at the start of the typical 2,500-3,500 range. Deliberate mid-depth target after three consecutive reference-floor pages (B4 2,242, B5 1,990, B6 1,964); the topic supports more length because the side-by-side comparison reads naturally with multiple worked levels (headline chart, full side-by-side table, what-stays-the-same depth, what-is-genuinely-new depth, worked-landlord-on-both-cycles example, five-misconceptions section, 12-month MTD calendar table). Each section earned its space rather than being padded. The five-misconceptions H2 is anti-cannibalisation defence against the existing how-to-switch and threshold-exemptions pages, both of which carry the misconceptions in scattered form; consolidating them on this page makes the comparison page the canonical pointer for the "no I don't pay quarterly" intent.
 
 ### Competitor URLs fetched
+- https://www.ukpropertyaccountants.co.uk/making-tax-digital-major-self-assessment-overhaul-ahead/ , attempted; same gated-content pattern. Brief stage-2 summary used directly (framed as "biggest shake-up to Self Assessment in nearly three decades", side-by-side annual-SA vs MTD-quarterly comparison, real-time tracking, mandatory software).
+- gov.uk MTD ITSA collection (https://www.gov.uk/government/collections/making-tax-digital-for-income-tax), alive 200, used as authoritative cycle reference.
+- gov.uk Self Assessment guidance pages (https://www.gov.uk/self-assessment-tax-returns), used as the SA-side anchor.
 
 ### Existing-page review (from "Closest existing pages")
+- `how-to-switch-self-assessment-mtd-property-income` , confirmed exists; cross-linked. The switching how-to (workflow); this page is the side-by-side reference. Clean differentiation; no CANNIBAL flag.
+- `mtd-quarterly-deadlines-2026-2027-landlords` , confirmed exists; cross-linked as the MTD-side dates reference.
+- `landlord-tax-return-complete-guide-2026` , confirmed exists, category is "Landlord Tax Essentials" (not MTD); cross-link uses correct category path `/blog/landlord-tax-essentials/...`.
+- `making-tax-digital-property-income-2026-complete-guide` , confirmed exists; cross-linked as the broader pillar.
+- `mtd-quarterly-reporting-landlords-step-by-step-guide` , confirmed exists; cross-linked as the MTD-side process page.
+- `how-to-complete-landlord-self-assessment-filing-step-by-step-guide` , confirmed exists, category is "Landlord Tax Essentials" (not MTD); cross-link uses correct category path.
+- Wave 3 sibling B8 pillar `mtd-itsa-overview-six-changes-residential-landlords` , confirmed shipped (053af20); cross-linked. B8 is "six changes overview", this page is "side-by-side comparison". Clean differentiation.
+- Wave 3 siblings B1 (gross-vs-net), B4 (exit), B5 (Ltd Co), B6 (HMRC letter) , all confirmed shipped this restart; cross-linked.
+
+11 internal cross-links total. Note: caught two miscategorisation errors at verification time, both fixed pre-build-2 (the `/blog/[category]/[slug]` route requires the category-URL to match the page's frontmatter category; my initial draft assumed all closest-existing MTD-adjacent pages sat under `making-tax-digital-mtd` but two are actually under `landlord-tax-essentials`). This is a category-aware verification gap in the original 6-check verification script (which only checked file existence); recommend adding category-URL verification to the standard check in future sessions.
 
 ### Citations added (external authority)
+- FA 2017 Sch 14 (named in body for the statutory basis of MTD ITSA digital reporting obligations).
+- FA 2021 Sch 24 (named for the points-based late-submission regime).
+- gov.uk Spring Statement 2025 (named for the accelerated 15/30/31 day + 3%/3%/10% MTD ITSA late-payment regime).
+- gov.uk Self Assessment guidance (referenced for the current SA cycle parameters).
+- gov.uk MTD ITSA collection (referenced for the post-mandate cycle parameters).
 
 ### Internal links added (to our existing pages)
+1. /blog/making-tax-digital-mtd/how-to-switch-self-assessment-mtd-property-income (switching how-to mirror)
+2. /blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords (deadlines anchor)
+3. /blog/landlord-tax-essentials/landlord-tax-return-complete-guide-2026 (SA-side reference; cross-category link)
+4. /blog/making-tax-digital-mtd/making-tax-digital-property-income-2026-complete-guide (pillar)
+5. /blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords (B8 bucket pillar)
+6. /blog/making-tax-digital-mtd/mtd-quarterly-reporting-landlords-step-by-step-guide (MTD-side process)
+7. /blog/landlord-tax-essentials/how-to-complete-landlord-self-assessment-filing-step-by-step-guide (SA-side process; cross-category link)
+8. /blog/making-tax-digital-mtd/mtd-itsa-letter-from-hmrc-what-to-do-next (B6 trigger event)
+9. /blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net (B1 mechanic)
+10. /blog/making-tax-digital-mtd/mtd-itsa-exit-rule-income-drops-three-year-test (B4 exit)
+11. /blog/making-tax-digital-mtd/mtd-itsa-vs-limited-company-cohort-different-rules (B5 Ltd Co)
+
+All 11 resolve to existing files AND map to correct category URLs.
 
 ### Inline CTA placements
+- Aside 1: after the worked landlord-on-both-cycles example, at the moment the reader sees that "the same £15,600 in tax is paid on the same two dates; reporting cadence multiplies, payment cadence is unchanged" and is forming the question of how to build the in-year discipline. Conversion moment.
+- Aside 2: after Misconception 5 (the £200 penalty is not on every missed deadline), at the moment a transitioning landlord realises they may already be one or two points into the cycle. Conversion moment for "let's get the next three submissions right rather than disputing the earlier ones".
+- 2 asides total. No opening aside, no aside inside a worked example.
 
 ### Build attempts
+- Build 1: clean, but verification caught 2 miscategorised internal links (used making-tax-digital-mtd category prefix for two pages that actually sit under landlord-tax-essentials).
+- Build 2: clean after link fixes. All six verifications pass.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14/14
+- Em-dashes in markdown: 0 (also 0 en-dashes)
+- Tailwind classes in markdown: 0
+- Meta title length: 55 chars (limit 62)
+- Meta description length: 154 chars (limit 158)
+- Internal links resolve: 11/11 (after build 2 fix; all links map to correct category URLs per category-aware verifier)
+- monitored_pages row inserted: yes (id 146, rewrite_type='rewrite' per the table's CHECK constraint, notes flag NETNEW Wave 3 Session B B7)
+- Body word count: 2,506 (mid-depth, at the start of the typical 2,500-3,500 range; deliberate after three reference-floor pages)
 
 ### Flags raised to wave3_site_wide_flags.md
+- F-12 raised: category-URL verification gap in the standard 6-check verifier (Session C took F-11 in parallel for the §20.7 enacted-Act drift, so this flag is F-12). Initial draft of this page contained 2 cross-category links with wrong category-URL prefix (assumed making-tax-digital-mtd for pages actually in landlord-tax-essentials). The existing verifier only checks file existence, not category-URL match. The link would have built without error and shipped as a 404 if not caught at verification.
 
 ### 2-3 sentence summary
+B7 ships the canonical side-by-side comparison between current Self Assessment and the MTD ITSA cycle. Mid-depth at 2,506 body words (deliberate after three consecutive reference-floor pages); 14 rich FAQs; full side-by-side table at headline + 10-dimension level + what-stays-the-same depth + what-is-genuinely-new depth + worked landlord-on-both-cycles example + five common misconceptions + 12-month MTD calendar + 11 internal cross-links across the full MTD bucket lattice plus two cross-category links to the SA-side Landlord Tax Essentials pages. F-11 raised on category-URL verification gap (caught and fixed pre-build-2; recommend hardening the standard verifier).
