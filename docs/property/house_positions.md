@@ -734,10 +734,14 @@ Extends and **replaces** §12 with enacted detail. §12 was written when the Bil
 
 ### 20.7 Pet rights and reasonable refusal
 
-- Tenants gain a statutory right to **request to keep a pet**.
-- Landlord refusal must be **reasonable** (definition includes superior landlord prohibition, building insurance constraint, layout / size unsuitability).
-- Landlords can require **pet damage insurance** as a condition of consent.
-- Tribunal route exists for tenants whose request is refused without reasonable grounds.
+- Tenants gain a statutory right to **request to keep a pet** (RRA 2025 s.11, inserting HA 1988 ss.16A/16B; in force 1 May 2026).
+- Landlord must **respond in writing within 28 days** of the request (s.16A(1)(c)), subject to the limited extension circumstances in s.16A(2) to (5).
+- **Reasonable refusal is narrowly defined.** Enacted s.16B(4) restricts reasonable grounds to (a) superior-landlord-agreement breach, or (b) superior-landlord refusal after reasonable steps by the immediate landlord. The Bill's broader "reasonable refusal" categories (general building-insurance constraint, layout / size unsuitability, amenity-mix arguments) were replaced by this narrow statutory test during passage.
+- **Court remedy, not tribunal.** Where consent is refused unreasonably, the tenant's remedy is **specific performance in the County Court** under s.16B(5). There is **no** FTT Property Chamber route for pet refusal challenges.
+- **Pet damage insurance cannot be a consent condition.** The original Bill carried an explicit permitted-payment exception to the Tenant Fees Act 2019 for pet damage insurance; the provision was **removed during Bill passage** and is **not in the enacted Act**. The combined effect of (a) enacted ss.16A/16B saying nothing about insurance and (b) the TFA 2019 prohibition on charges beyond the prescribed list is that a landlord **cannot** require pet insurance as a consent condition. The tenant may take out pet insurance voluntarily, but the contract cannot require it.
+- **Landlord's own insurance covering pet damage** (typical £30 to £80 annual premium uplift over standard cover) remains the proper risk-mitigation route and is fully deductible as a normal landlord insurance operating expense.
+
+**Correction logged 2026-05-23 (F-11):** earlier versions of §20.7 (drafted in good faith from the Bill text during the Wave 3 prep house-positions extension) stated that landlords could require pet damage insurance, that reasonable refusal grounds included building-insurance / layout / size considerations, and that an FTT tribunal route existed. All three points were superseded by the enacted Act. Verified against legislation.gov.uk text of RRA 2025 s.11 (inserting HA 1988 ss.16A and 16B only) by Session C during the C7 write 2026-05-22T23:15Z. This is the second §20-vs-enacted-Act drift in Wave 3 after F-6 §19.7; a full §20 verification pass against the enacted Act is recommended before Wave 4 launch.
 
 ### 20.8 Prohibition on bidding wars and asking-rent caps
 
