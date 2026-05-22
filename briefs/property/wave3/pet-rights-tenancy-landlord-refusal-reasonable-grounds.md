@@ -173,34 +173,63 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** pet-rights-tenancy-landlord-refusal-reasonable-grounds (no override)
+- **Final category:** Landlord Tax Essentials (cluster continuity with C1-C6)
+- **H1 chosen:** Pet Rights Under the Renters' Rights Act 2025: The Landlord's Decision Framework
+- **Meta title chosen:** "Pet Rights RRA 2025: Landlord Decision + Refusal Test" (53 chars)
+- **Why these vs other options:** Slug retained for primary-query alignment. Category preserves the RRA cluster cohesion in /blog/landlord-tax-essentials/. H1 chosen to lead on "Under the Renters' Rights Act 2025" to anchor the enacted-Act framing the page is built around (versus the in-passage Bill framing that the brief and house_positions §20.7 partly tracked).
 
 ### Competitor URLs fetched
+- legislation.gov.uk/ukpga/2025/26/section/11 — verbatim s.11 RRA 2025; confirmed inserts ONLY HA 1988 ss.16A + 16B (no 16C/D); 28-day deadline at s.16A(1)(c) with three extensions at 16A(2)-(5); narrow s.16B(4) reasonable-refusal test (superior-landlord grounds only); court remedy of specific performance at s.16B(5). HOUSE_POSITION_CONFLICT raised against §20.7 (F-11).
+- legislation.gov.uk/ukpga/2025/26/section/11/enacted — confirmed no 16C or 16D; ruled out pet damage insurance + tribunal route in the enacted text.
+- gov.uk/private-renting/your-tenancy — gov.uk tenant guidance (background only; not extracted because the page was being updated mid-fetch).
+- gov.uk/government/organisations/first-tier-tribunal-property-chamber — NOT fetched (s.16B(5) confirms County Court route, not FTT-PC, so the FTT reference was dropped from the page).
+- ukpropertyaccountants.co.uk/renters-rights-bill-key-impact-on-tenants-landlords — not fetched (already known from C5 to be the legacy Bill framing with no procedural detail).
 
 ### Existing-page review (from "Closest existing pages")
+- landlord-insurance-tax-deductible (S24) — read. Forward-link added in intro cross-link block; anchors the deductibility-of-landlord-insurance framing.
+- landlord-insurance-guide-types-costs-tax-deductible (S24) — read. Forward-link added in intro cross-link block as the broader insurance pillar.
+- hmo-licensing-fees-tax-deductible-uk-landlords (PTST) — read. Forward-link in §"Tax Treatment" as the deductibility-framework anchor.
+- C8 tenancy-agreement-template-rra-2025-compliant-clauses (this wave, NOT YET on branch) — did NOT forward-link from C7 because of the F-11 HOUSE_POSITION_CONFLICT; the future C8 will need to reflect that pet-damage-insurance consent clauses are unenforceable. The forward-link can be added in the end-of-session back-patch sweep when C8 lands, but only IF C8 has been written to the corrected enacted-Act position.
+- C1 rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence (committed) — light forward-link in intro cross-link block; pet refusal is unlikely to attract civil-penalty exposure but is worth pointing to.
+- C3 periodic-tenancy-default-ast-conversion-mechanics (committed) — forward-link in FAQ on "does the right apply to existing tenants" (anchors the conversion-on-1-May-2026 mechanism).
+- C2 section-21-abolition-uk-landlord-possession-guide-2026 (committed) — forward-link in intro cross-link block; possession process context.
+- renters-rights-act-2026-tax-implications-landlords (LTE; F-1 queued) — did NOT link (still stale framing).
+- landlord-expenses-allowable-uk-2026 (S24) — did NOT directly link; the landlord-insurance pages already cover the framework.
 
 ### Citations added (external authority)
+- HMRC Property Income Manual (gov.uk hmrc-internal-manuals/property-income-manual) — PIM2080/PIM2030 deductibility framework.
+1 external authority hyperlink (low end; the page is statute-anchored and uses inline RRA 2025 / HA 1988 / Tenant Fees Act 2019 citations throughout the body rather than hyperlinks).
 
 ### Internal links added (to our existing pages)
+- /blog/landlord-tax-essentials/section-21-abolition-uk-landlord-possession-guide-2026 (C2, once)
+- /blog/landlord-tax-essentials/periodic-tenancy-default-ast-conversion-mechanics (C3, once)
+- /blog/landlord-tax-essentials/rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence (C1, once)
+- /blog/section-24-and-tax-relief/landlord-insurance-tax-deductible (once)
+- /blog/section-24-and-tax-relief/landlord-insurance-guide-types-costs-tax-deductible (once)
+- /blog/property-types-and-specialist-tax/hmo-licensing-fees-tax-deductible-uk-landlords (once, tax-treatment section)
+- /contact (2× CTA hooks)
 
 ### Inline CTA placements
+- Aside 1: after the 28-day mechanic explanation, at the moment a mid-portfolio landlord realises the in-passage commentary they may have been relying on is misaligned with the enacted Act.
+- Aside 2: after the tax-treatment table, targeted at self-managing landlords needing portfolio-level cap-vs-revenue discipline before the first pet-occupied tenancy ends.
 
 ### Build attempts
+- 1st attempt: clean (15 FAQs, 1 over the 10-14 band).
+- 2nd attempt after collapsing the building-insurance + size/layout FAQs into a single combined FAQ: clean, 14 FAQs.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 == 14 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 53 (≤62) ✓
+- Meta description length: 156 (≤158) ✓
+- Internal links resolve: 6 of 6 to existing files ✓ (no forward-links to not-yet-committed siblings on this page)
+- monitored_pages row inserted: id 147 ✓
+- Body word count: 3,118 (within the 2,500-3,500 band per §16.16)
 
 ### Flags raised to wave3_site_wide_flags.md
+- F-11 raised (HOUSE_POSITION_CONFLICT): §20.7 carries three inaccuracies vs the enacted Act (pet damage insurance as consent condition, broader reasonable-refusal grounds beyond superior-landlord, tribunal route at FTT-PC). C7 written to the enacted Act with full reasoning. F-11 flags downstream impact on C8 sibling (must not include pet-damage-insurance consent clauses) and the F-1 legacy rewrite. Recommended a §20 verification pass before Wave 4 launch.
 
 ### 2-3 sentence summary
+Wrote C7 at 3,118 body words. Operational guide to pet rights under section 11 of the Renters' Rights Act 2025 as enacted (not the in-passage Bill drafting). Walks the 28-day response mechanic at HA 1988 s.16A(1)(c) with the three extensions at s.16A(2)-(5), the narrow reasonable-refusal test at s.16B(4) (limited to superior-landlord-agreement grounds only), what the enacted Act does NOT contain (no pet damage insurance provision; no broader refusal grounds; no FTT tribunal route — court specific performance only under s.16B(5)), the Tenant Fees Act 2019 prohibition on additional charges (no pet deposit, no pet rent uplift, no pet cleaning fee), the landlord's practical 6-step decision tree, the tax treatment of landlord insurance + end-of-tenancy spend (deductibility table covering 9 cost categories), and a worked 2-bedroom leasehold flat example showing £77 net pet-related cost across an 18-month tenancy. 14 FAQs, 2 asides, build clean. F-11 HOUSE_POSITION_CONFLICT raised against §20.7 because the locked house position contains three items removed from the Bill before Royal Assent.
