@@ -207,51 +207,66 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged: `uk-us-dta-property-tax-implications-landlords`
+- **Final category:** unchanged: `Non-Resident Landlord Tax`
+- **H1 chosen:** "The UK-US Tax Treaty for Property Investors: How the Saving Clause Changes the Calculation"
+- **Meta title chosen:** "UK-US Tax Treaty for Property: The Saving Clause" (48 chars)
+- **Why these vs other options:** Saving clause (Art 1(4)) is the framing differentiator; meta and H1 both lead with it. H1 longer than meta is conventional (meta is the SERP-pinch constraint).
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- gov.uk/government/publications/usa-tax-treaties — confirms 2001 convention amended by 2002 protocol, in force 31 March 2003; US from 1 May 2003 (withholding) / 1 Jan 2004 (other US taxes); UK from 1 April 2003 (CT) / 6 April 2003 (income & CGT). PDF treaty text linked here for any reader wanting article-by-article reference.
+- legislation.gov.uk/ukpga/2010/8/part/2 — TIOPA 2010 Part 2. URL returned a National Archives 437 error during fetch (intermittent), but the legislative authority is well-known: ss.18 (DT relief by credit), 130 (DT relief by deduction). Cited from training knowledge cross-checked against the OECD model context.
+- uklandlordtax.co.uk DTA general page — lateral context only; no UK-US specific content of value.
+- HMRC INTM150000 — index reference; no UK-US specific drill-in at the top of the chapter.
+- HS304 helpsheet — practical claim form; cited for the UK-side relief mechanics.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `tax-treaties-property-investors-treaty-framework-guide` (B1, this session) — the OECD framework pillar; B2 forward-links twice (in intro and "what to do next"). Differentiation: B1 framework, B2 bilateral applied + saving-clause specific.
+- `uk-property-income-expats-tax-obligations-explained` — descriptive expat pillar; not linked from B2 because the US scenario is so distinct from the generic expat one that conflating them would dilute either page. Future legacy rebuild candidate for cross-link.
+- `non-resident-landlord-scheme-uk-complete-guide` — NRL statutory pillar; B2 linked once at Profile B section (US person non-UK-resident).
+- `non-resident-cgt-uk-property-rates-reporting` — NRCGT rates page; linked once at the Article 13 / NRCGT section.
+- `non-resident-cgt-selling-uk-property-overseas-guide` — applied NRCGT disposal page; not linked directly (B2 already has its own worked example on disposal). Saved as future cross-link candidate.
+- `nrl-withholding-tax-20-percent-basic-rate-deduction` — 20% withholding page; linked from Profile B section.
+- `non-resident-landlord-self-assessment-filing-requirements` — SA filing for non-UK-resident landlords; linked from "what to do next".
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- gov.uk USA tax treaties page (linked) — anchored at the saving-clause and treaty-in-force discussion
+- HMRC HS304 helpsheet — linked at the foreign-tax-credit-UK-side section
+- UK-US Convention Article 1(4) saving clause; Article 6 immovable property; Article 13 capital gains; Article 24 relief from double taxation — quoted by article reference
+- TIOPA 2010 ss.18 / 130 (UK foreign tax credit)
+- IRC s.911 (FEIE) and s.901 (US foreign tax credit) — quoted by section reference
+- TCGA 1992 s.1A + Schs 1A/1B/4AA — UK NRCGT citation
+- IRC s.469 (passive loss rules); MACRS 27.5-year residential depreciation
+- FinCEN Form 114 (FBAR), Form 8938 (FATCA), Form 1116 (US foreign tax credit), Form 1040 + Schedule E + Schedule D + Form 8949
+- UK-US Estate Tax Convention 1978 (separate treaty pool, cited once in gift / estate FAQ)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide` — B1 framework hand-off, intro and closing
+- `/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide` — Profile B NRL pivot
+- `/blog/non-resident-landlord-tax/nrl-withholding-tax-20-percent-basic-rate-deduction` — Profile B operational detail
+- `/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting` — NRCGT pivot from Article 13
+- `/blog/non-resident-landlord-tax/non-resident-landlord-self-assessment-filing-requirements` — closing checklist hand-off
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After UK side rental income section — landed the joined-up-advice need; high-intent moment for dual-system filers
+- After Profile A worked example (Sarah, Manchester) — at the end of the high-detail worked example before the broader pitfalls section, where reader is most likely to convert
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass. `next build` clean.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (12/12)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 48 chars
+- Meta description length: 156 chars
+- Internal links resolve: yes (all five)
+- monitored_pages row inserted: yes
+- Body word count: 2,850 (non-pillar 2,500-3,500 range)
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None new this page. F-7 (site-wide em-dash) flagged at B1; same applies here (no change).
 
 ### 2-3 sentence summary
-<freeform>
+B2 UK-US bilateral page shipped at 2,850 body words / 12 FAQs. Saving clause (Art 1(4)) framing throughout; explicit three-profile taxonomy (US-citizen UK-resident / US-person non-UK-resident / UK-national US-resident) instead of treating "the UK-US position" as one thing. Worked example uses Sarah in Manchester (different city to B1's London for variation). Coverage of FBAR / FATCA / state-tax / depreciation traps as the operational pitfalls rather than the headline rate calculation. Links back to B1 framework pillar and forward to NRL / NRCGT / NRL-SA pages.
 
