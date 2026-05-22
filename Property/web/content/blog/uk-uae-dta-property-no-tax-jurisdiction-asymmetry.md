@@ -191,3 +191,7 @@ The UK-UAE position is treaty-modern, jurisdiction-asymmetric. The 2016 treaty d
 - **For framework context**, see our [UK tax treaties framework guide](/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide); for descriptive expat-landlord scope, [UK property income for expats](/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained).
 
 The 2016 treaty is a clean instrument in an asymmetric world. The asymmetry is the whole point of the Dubai move for most relocating UK landlords. Just understand which side of the asymmetry the UK property sits on: it sits on the UK side, taxed in full by HMRC, with nothing the UAE can do to relieve it.
+
+## Related reading
+
+- [Moving to Dubai with a UK Rental Property: The Tax Pathway](/blog/non-resident-landlord-tax/moving-to-dubai-uk-rental-property-tax-pathway), the applied landlord pathway that sits alongside the treaty mechanics on this page.

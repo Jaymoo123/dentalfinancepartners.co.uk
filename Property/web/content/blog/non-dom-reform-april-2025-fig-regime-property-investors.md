@@ -182,3 +182,11 @@ editorialNote: "Reviewed against HMT/HMRC 'Reforming the taxation of non-UK domi
 <p><strong>Inheritance tax planning across both cohorts.</strong> Under the residence-based IHT regime, long-term residence (10 of 20 tax years, or 10 consecutive) brings worldwide assets into UK IHT scope. A new arrival has a 10-year runway before worldwide IHT applies; an existing long-term resident is already within scope. The April 2025 IHT residence test page covers the mechanics in full; the planning question for property investors is whether to hold foreign property through structures that retain non-UK situs (no longer protected by domicile, only by genuine non-UK situs of the underlying asset).</p>
 
 <p>The April 2025 reform is more nuanced than the headline "non-doms abolished" framing suggests. For property investors specifically, FIG is the inbound-arrival shield (with material caveats on the 10-year lookback and the personal-allowance surrender), the TRF is the bridge for legacy remittance-basis users with offshore accumulations, and the 5 April 2017 rebasing is the disposal-timing instrument for foreign-situs assets with material pre-2017 appreciation. UK property runs on its own UK-tax track regardless of which of the three instruments the investor uses elsewhere.</p>
+
+<h2>Related reading</h2>
+
+<ul>
+<li><a href="/blog/non-resident-landlord-tax/iht-non-resident-uk-property-april-2025-residence-test">Non-Resident IHT on UK Property After April 2025: The Long-Term Resident Test</a>, the residence-based IHT regime that replaced domicile from the same April 2025 commencement date.</li>
+<li><a href="/blog/non-resident-landlord-tax/uk-india-dta-property-rental-income-treatment">The UK-India Tax Treaty for Property Investors</a>, the NRI worked-example reference covering the 1993 treaty, rental-income treatment, and the UK NRCGT override (cited in the worked example for the existing-remittance-basis user with Indian-situs assets).</li>
+<li><a href="/blog/non-resident-landlord-tax/returning-to-uk-after-non-residence-property-portfolio">Returning to the UK After Non-Residence: The Property Portfolio Pathway</a>, the sequential bookend covering arrival-case planning for new FIG-eligible inbound investors and former non-doms re-arriving after the 10-year non-residence test resets.</li>
+</ul>

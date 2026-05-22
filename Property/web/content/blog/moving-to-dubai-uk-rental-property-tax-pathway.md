@@ -171,3 +171,10 @@ editorialNote: "Reviewed against the UK-UAE Double Taxation Treaty (signed 12 Ap
 <p><strong>Return to the UK.</strong> Split-year arrival case analysis (typically Case 4, 6, or 8 depending on the trigger); section 10A 5-year recapture exposure on disposals during non-residence; SA109 return-year filing with the section 10A deemed accrual where relevant. The <a href="/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained">expat property income obligations</a> page hangs the pieces together.</p>
 
 <p>The Dubai pathway is operationally simple once the misconceptions are stripped: UK rental tax remains in full, section 24 stays in play, NRCGT applies on disposal, and the 5-year section 10A rule is the main timing lever. The asymmetric treaty avoids hypothetical double tax that, in this case, never existed in the first place.</p>
+
+<h2>Related reading</h2>
+
+<ul>
+<li><a href="/blog/non-resident-landlord-tax/uk-uae-dta-property-no-tax-jurisdiction-asymmetry">The UK-UAE Tax Treaty for Property Investors</a>, the treaty-mechanics companion explaining why the 2016 treaty does not shield UK property from UK tax.</li>
+<li><a href="/blog/non-resident-landlord-tax/moving-to-australia-uk-rental-property-tax-pathway">Moving to Australia with a UK Rental Property: The Tax Pathway</a>, the symmetric-DTA contrast (Australia is the opposite of Dubai in the one variable that matters most, namely whether the destination state taxes worldwide rental income).</li>
+</ul>

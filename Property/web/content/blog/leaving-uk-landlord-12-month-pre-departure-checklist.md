@@ -262,3 +262,12 @@ editorialNote: "Reviewed against HMRC RDR3 (Statutory Residence Test), HMRC CG26
 <p>Walk back from your planned departure date and write down the dates for each month-marker beat in this checklist. Hand the calendar to whoever will hold the work in your absence (spouse, agent, accountant) so that the NRL1 posting, the 60-day NRCGT trigger, and the SA109 filing all have a named owner. The most expensive mistakes in expat landlord cases are not the wrong-decision mistakes; they are the missed-deadline mistakes.</p>
 
 <p>For the strategic decisions (residence-year targeting, sell-or-hold, split-year viability) it is worth a structured planning conversation with an adviser who handles non-resident clients regularly; the form below routes you to the right person at Property Tax Partners.</p>
+
+<h2>Related reading</h2>
+
+<ul>
+<li><a href="/blog/capital-gains-tax/temporary-non-residence-5-year-cgt-recapture-property">Temporary Non-Residence: The 5-Year CGT Recapture Rule for Property Investors</a>, the sell-or-hold worked-example context that sits behind the 5-tax-year section 10A decision in this checklist.</li>
+<li><a href="/blog/non-resident-landlord-tax/returning-to-uk-after-non-residence-property-portfolio">Returning to the UK After Non-Residence: The Property Portfolio Pathway</a>, the return-side bookend covering split-year arrival cases, section 10A recapture, and NRL1 cancellation.</li>
+<li><a href="/blog/non-resident-landlord-tax/nrcgt-indirect-disposal-property-rich-companies-shares">NRCGT Indirect Disposal: Shares in UK Property-Rich Companies</a>, relevant for landlords with share-held property whose departure triggers the indirect-disposal regime as well as the direct regime.</li>
+<li><a href="/blog/non-resident-landlord-tax/uk-spain-dta-property-uk-resident-spanish-holiday-home">The UK-Spain Tax Treaty for Property Investors</a>, the post-Brexit landlord context covering IRNR, Patrimonio, and the Spanish wealth-tax interaction for Spain-bound landlords.</li>
+</ul>

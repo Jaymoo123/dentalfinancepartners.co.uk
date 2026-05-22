@@ -180,3 +180,7 @@ The UK-Italy tie-breaker is the cleanest example in the UK treaty network of a c
 - **For framework context**, see our [UK tax treaties framework guide](/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide); for descriptive expat-landlord scope, [UK property income for expats](/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained). For the operational outcome on the UK rental side once the cascade resolves to Italian residence, the [non-resident landlord scheme complete guide](/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide) and [non-resident CGT rates page](/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting).
 
 The tie-breaker is a cascade of definitions, not a contest of intuition. Apply each step in order, document the resolving step with OECD-Commentary-backed reasoning, register the position on SA109 and the Italian Modello Redditi PF, and accept that the answer may surprise you. The cascade is built to resolve correctly, not flatteringly.
+
+## Related reading
+
+- [SRT Statutory Residence Test: A Decision Tree for Landlords](/blog/non-resident-landlord-tax/srt-statutory-residence-test-landlord-decision-tree), the upstream UK-side residence test that feeds the dual-residence question this cascade resolves.

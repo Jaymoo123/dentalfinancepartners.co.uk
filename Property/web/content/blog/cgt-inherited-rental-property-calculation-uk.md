@@ -113,3 +113,9 @@ faqs:
 <li><strong>Loss harvesting:</strong> If you have capital losses from other disposals, these can offset gains on the inherited property.</li>
 </ul>
 <p>For complex estates or multiple property inheritances, getting advice from a <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> can identify opportunities you might miss.</p>
+
+<h2>Related reading</h2>
+
+<ul>
+<li><a href="/blog/capital-gains-tax/inheriting-uk-rental-property-executors-step-by-step">Inheriting a UK Rental Property: An Executor's Step-by-Step Guide</a>, the executor's-eye-view of the same property covering probate valuation, PR-CGT, and the appropriation decision before sale.</li>
+</ul>

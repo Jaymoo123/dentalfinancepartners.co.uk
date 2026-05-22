@@ -256,5 +256,11 @@ faqs:
 <li><a href="https://www.gov.uk/hmrc-internal-manuals/international-manual">HMRC International Manual</a></li>
 <li><a href="https://www.gov.uk/government/collections/tax-treaties">gov.uk: UK tax treaties</a></li>
 </ul>
+
+<h2>Related reading</h2>
+
+<ul>
+<li><a href="/blog/non-resident-landlord-tax/foreign-tax-credit-uk-property-overseas-landlords">Foreign Tax Credit for UK Landlords with Overseas Property: TIOPA 2010 Claim Mechanics</a>, the structural mirror image for UK-resident landlords with overseas property (the SA106 question from the opposite direction).</li>
+</ul>
 </content>
 </invoke>

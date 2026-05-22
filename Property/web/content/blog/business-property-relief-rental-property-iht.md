@@ -186,3 +186,11 @@ faqs:
 <p><a href="/blog/property-accountant-services/what-does-a-property-accountant-do">Specialist property accountants</a> can assess your specific situation, advise on potential BPR qualification, and recommend strategies to optimise your position for inheritance tax planning.</p>
 
 <p>For landlords with substantial property portfolios, early professional advice on BPR qualification and alternative IHT mitigation strategies can result in significant tax savings for beneficiaries. The complexity of these rules makes professional guidance essential rather than optional.</p>
+
+<h2>Related reading</h2>
+
+<ul>
+<li><a href="/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards">An IHT Decision Framework for UK Landlords: 2026 Onwards</a>, the planning-lens companion covering what works for BTL estates when BPR does not.</li>
+<li><a href="/blog/property-types-and-specialist-tax/serviced-accommodation-bpr-eligibility-pawson-test">Serviced Accommodation and BPR: Clearing the Pawson Trading Threshold</a>, the case-law deeper for serviced-accommodation operators testing BPR eligibility.</li>
+<li><a href="/blog/property-types-and-specialist-tax/agricultural-property-relief-mixed-estate-1m-cap">Agricultural Property Relief and the £1m Cap: Planning for Mixed Estates</a>, the mixed-estate companion for landlords with farmland or agricultural-business interests alongside rental property.</li>
+</ul>

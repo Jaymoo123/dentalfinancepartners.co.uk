@@ -230,4 +230,14 @@ faqs:
 
 <p>For supporting reading, see our <a href="/blog/capital-gains-tax/cgt-gifting-property-family-members-uk">CGT on gifting property guide</a>, our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">BTL limited company pillar</a> (which addresses why incorporation does NOT give automatic IHT relief), and the official <a href="https://www.gov.uk/inheritance-tax">gov.uk IHT guidance</a>.</p>
 
+<h2>Related reading</h2>
+
+<ul>
+<li><a href="/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards">An IHT Decision Framework for UK Landlords: 2026 Onwards</a>, the decision-led companion that walks the same material as planning steps.</li>
+<li><a href="/blog/capital-gains-tax/inheriting-uk-rental-property-executors-step-by-step">Inheriting a UK Rental Property: An Executor's Step-by-Step Guide</a>, the operational sibling for executors administering a let-property estate.</li>
+<li><a href="/blog/landlord-tax-essentials/iht-residence-nil-rate-band-2m-taper-property-portfolios">RNRB and the £2m Taper for Landlord Estates</a>, the full taper mechanic with three estate-tier worked examples.</li>
+<li><a href="/blog/landlord-tax-essentials/pension-iht-april-2027-landlord-estate-planning">Pension IHT from April 2027: What It Means for Landlord Estate Planning</a>, the depth on the April 2027 pension reform.</li>
+<li><a href="/blog/property-types-and-specialist-tax/agricultural-property-relief-mixed-estate-1m-cap">Agricultural Property Relief and the £1m Cap: Planning for Mixed Estates</a>, the mixed-estate APR and BPR cap analysis from April 2026.</li>
+</ul>
+
 <p>If your portfolio is approaching or above £750,000 in residential property and you do not yet have a documented IHT plan, send us a portfolio summary using the form below. Initial calls are free and we will identify the two or three highest-impact opportunities for your specific circumstances.</p>

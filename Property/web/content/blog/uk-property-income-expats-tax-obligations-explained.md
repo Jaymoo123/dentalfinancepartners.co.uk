@@ -99,3 +99,9 @@ faqs:
 <p>Frequent errors among expat landlords include assuming UK tax obligations end when leaving the country, failing to register with the NRL scheme, missing the 31 January self-assessment deadline, not claiming available expense deductions, ignoring double taxation relief opportunities, and poor record keeping due to distance from the property. Each of these mistakes can result in penalties, interest charges, or overpayment of tax.</p>
 
 <p>Several upcoming changes affect expat landlords: separate property income tax rates from April 2027, MTD requirements from April 2026, ongoing Brexit-related changes to double taxation agreements, and regular updates to HMRC compliance requirements. Staying informed about these changes is crucial for maintaining compliance and optimising your tax position.</p>
+
+<h2>Related reading</h2>
+
+<ul>
+<li><a href="/blog/non-resident-landlord-tax/leaving-uk-landlord-12-month-pre-departure-checklist">Leaving the UK: 12-Month Pre-Departure Checklist for Landlords</a>, the action-led pillar timeline for landlords planning the year before departure.</li>
+</ul>

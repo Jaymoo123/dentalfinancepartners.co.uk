@@ -74,3 +74,9 @@ faqs:
 <p>Managing <strong>non-resident landlord scheme UK</strong> compliance while living overseas presents unique challenges. Language barriers, time zones, and unfamiliarity with UK tax rules make professional support valuable. A specialist property accountant can handle NRL1 applications, manage ongoing compliance, and ensure you claim all available reliefs.</p>
 <p>Choose advisers with specific <strong>overseas landlord UK property</strong> experience. They should understand both UK tax rules and common issues affecting non-residents. Look for firms offering comprehensive services including NRL1 applications, ongoing compliance, and strategic advice on property structures. The <a href="/blog/property-accountant-services/how-to-choose-a-property-accountant">right property accountant</a> becomes invaluable for complex portfolios.</p>
 <p>Several upcoming changes will impact non-resident landlords. From April 2027, separate property income tax rates apply, potentially increasing tax on UK rental profits. Making Tax Digital becomes mandatory from April 2026 for larger property portfolios. The trend toward increased compliance and higher property taxes suggests non-resident landlords should review their strategies now. Register of Overseas Entities requirements also affect non-resident companies owning UK property, adding compliance costs and transparency obligations.</p>
+
+<h2>Related reading</h2>
+
+<ul>
+<li><a href="/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide">UK Tax Treaties for Property Investors: The Framework Guide</a>, the treaty-allocation counterpart that explains how OECD Model articles interact with the statutory NRL position.</li>
+</ul>
