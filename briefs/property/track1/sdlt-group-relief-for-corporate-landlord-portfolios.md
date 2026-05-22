@@ -212,47 +212,57 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** unchanged (`incorporation-and-company-structures`)
+- **H1 chosen:** "SDLT Group Relief for Property Companies: Conditions, Clawback and Worked SPV Restructure"
+- **Meta title chosen:** "SDLT Group Relief: 75% Test, Commercial Purpose, Clawback" (57 chars)
+- **Why these vs other options:** Conditions-checklist + clawback-timeline structure, anti-templated away from A1 (process), A2 (saving), A3 (myth), A4 (decision-framework). Title leads with the three pillars (75% / commercial / clawback) that organise the page.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/sdlt-group-relief-claims/ — thorough; covers Sch 7 mechanics, 75% test, indirect ownership formula, anti-avoidance, liquidation vs administration, SDLTM23010/40/82 references. Used as scaffold; our page adds the 4-SPV worked restructure, the failure patterns section, and a separate decision matrix.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- Five "closest" candidates from the brief; none meaningfully overlap with intra-group SDLT mechanics. The natural neighbours are the other Track 1 SDLT pages (A2, A3, plus existing `sdlt-transfer-property-company-cost`), linked accordingly.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Section 62 + Schedule 7 FA 2003 (group relief base)
+- Paragraph 1 Schedule 7 (75% subsidiary test)
+- Paragraph 2 Schedule 7 (commercial purpose / anti-avoidance)
+- Paragraph 2(3) Schedule 7 (prior arrangements to leave group)
+- Paragraph 3 Schedule 7 (3-year clawback)
+- Paragraph 4 Schedule 7 (exceptions to clawback)
+- Sections 1155–1157 CTA 2010 (indirect ownership multiplication)
+- Sections 75A–75C FA 2003 (SDLT GAAR)
+- HMRC SDLTM23010, SDLTM23015, SDLTM23040, SDLTM23080, SDLTM23082
+- HMRC SDLT Manual (general)
+- Section 116(7) FA 2003 (in interaction table; corrected framing per M-2)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/incorporation-and-company-structures/sdlt-six-dwellings-non-residential-election` (A2)
+- `/blog/incorporation-and-company-structures/sdlt-sub-sale-relief-mechanics` (A3)
+- `/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost` (existing pillar)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After the 4-condition list — conversion moment for landlords sense-checking eligibility
+- After the worked clawback timeline — for M&A buyers facing the contingent-liability question
+- (Total 2 asides, both at high-intent moments per brief CTA guidance)
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass (no warnings; route compiled; 3 em-dashes found and replaced with commas; meta title trimmed from 64 to 57; meta description trimmed from 166 to 157; failure-patterns section added to bring body word count from 2,560 to 2,858 within the M-4 floor)
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (12 = 12)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 57 (≤62)
+- Meta description length: 157 (≤158)
+- Internal links resolve: all three target markdown files confirmed present
+- monitored_pages row inserted: yes
+- Body word count: 2,858 (within M-4 calibration of 2,800–3,500)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None this page. Six-dwellings rule cited in interaction table uses corrected s.116(7) framing per M-2.
 
 ### 2-3 sentence summary
-<freeform>
+A5 covers SDLT group relief under s.62 + Sch 7 FA 2003 for landlord groups restructuring multi-company holdings. Four qualifying conditions, the 75% subsidiary test (with indirect-ownership multiplication worked through), the commercial-purpose test, the SDLT1 mechanics, the 3-year clawback with named exceptions, a 4-SPV worked restructure showing the clawback flip on a 3-year boundary, and a "common failure patterns" section. 12 FAQs. Anti-templated as a conditions-checklist + clawback-timeline structure, distinct from A1/A2/A3/A4.
 
