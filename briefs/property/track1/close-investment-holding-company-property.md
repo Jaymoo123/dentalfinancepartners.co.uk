@@ -212,47 +212,58 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** unchanged
+- **H1:** Close Investment-Holding Companies and Property: Why Most BTL Companies Are Not CIHCs
+- **Meta title:** CIHC and Property Companies: The Connected-Party Trap (53 chars)
+- **Why these vs other options:** H1 explicitly corrects the widespread misconception (which I had also in B2). Title positions the page as the definitional reference. Anti-template against the more mechanics-focused B4 (which uses CIHC as a side-note).
+- **Word count:** 2669 body words; 12 FAQs.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/a-guide-for-shareholders-in-the-uk/ — not directly on CIHC; broader shareholder-rights piece. Not helpful for this brief. Conducted independent research on s.18N, s.1122, s.439 directly from legislation.gov.uk and HMRC manuals.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `property-investment-tax-uk-complete-guide-2026` — pillar; not linked (already heavy linking elsewhere)
+- `family-investment-company-property-worth-it` — distinct topic; not linked
+- `how-to-set-up-property-investment-company-uk-guide` — distinct topic; not linked
+- `property-investment-company-structure-planning` — distinct topic; not linked
+- `when-does-property-holding-company-structure-make-sense-uk-landlords` — distinct topic; not linked
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- CTA 2010 s.18N (CIHC definition)
+- CTA 2010 s.439 (close company)
+- CTA 2010 s.454 (participator)
+- CTA 2010 s.1122 (connected persons)
+- HMRC CG53116 (substantial-extent / 20% threshold)
+- IHTA 1984 s.105 (BPR)
+- Pawson v HMRC [2013] UKUT 050 (investment vs trading for property)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/incorporation-and-company-structures/corporation-tax-marginal-relief-property-companies` — B4 (mine), rate context
+- `/blog/incorporation-and-company-structures/director-loan-account-property-company-mechanics` — B1 (mine), s.455 distinction
+- `/blog/incorporation-and-company-structures/substantial-shareholding-exemption-property-companies` — B3 (mine), trading-vs-investment dividing line
+- `/blog/incorporation-and-company-structures/property-company-group-relief-corporation-tax` — B2 (mine)
+- `/blog/incorporation-and-company-structures/extracting-money-from-property-limited-company` — B7 (mine)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After section "The qualifying-purpose carve-out" — diagnostic moment for landlords who didn't know about the carve-out
+- After section "Three worked examples on the boundary" — boundary-case landlords now know which side they're on
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (12 Question)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 53 chars
+- Meta description length: 153 chars
+- Internal `/blog/...` links resolve: 5 verified (all to my own B1/B2/B3/B4/B7 pages)
+- monitored_pages row inserted: yes
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None new from B8. (B2 CIHC overstatement flag from earlier in session still standing for orchestrator follow-up — B8 is the definitive CIHC page so the flag's resolution can now point readers from B2's text to B8 for the proper framing.)
 
 ### 2-3 sentence summary
-<freeform>
+Definitive CIHC page for property landlords: the close-company precondition (s.439 CTA 2010), the qualifying-purpose carve-out for unconnected-party land letting in s.18N, the s.1122 connected-person definition (lineal relations + spouse + siblings + business partners, but NOT cohabiting partners, aunts/uncles, employees, friends). Three worked boundary examples: arm's-length BTL (not CIHC), single-property family arrangement (CIHC), 85/15 mixed-let portfolio (not CIHC because below 20% substantial-extent threshold). Plus the IHT-for-shareholders position (BPR fails on investment-company shares per Pawson regardless of CIHC status). This page resolves the misconception I myself had in B2; orchestrator can now point B2 readers here.
 
