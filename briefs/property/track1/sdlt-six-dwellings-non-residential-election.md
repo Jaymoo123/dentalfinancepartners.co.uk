@@ -210,6 +210,8 @@ You don't have to use all of these; pick the ones that fit your specific framing
 - **Meta title chosen:** "SDLT Six-Dwellings Election: Non-Residential Rates Saving" (57 chars; v1 was 65 chars and trimmed)
 - **Why these vs other options:** Lead with the saving framing (vs A1's process framing) so the two SDLT pages have distinct value propositions. "How It Works and What It Saves" telegraphs the worked example structure.
 
+**REVISION 2026-05-22 (per M-2/M-3):** Manager verified via legislation.gov.uk that the six-dwellings rule is automatic under s.116(7) FA 2003, not an election under Sch 6B para 7. House positions doc was corrected on main. Page rewritten throughout: title/H1/meta/intro/H2s/FAQs/body all reframed to "automatic statutory treatment" / "automatic non-residential treatment". Slug preserved per M-2 for SEO continuity. New verbatim quote from s.116(7) added as a callout aside. FAQ #1 added to address the "is it an election" misnomer directly. Two "Schedule 6B" mentions retained, both explanatory (MDR was in Sch 6B, separate provision, abolished in 2024). Remaining "election" mentions: slug/canonical (preserved), FAQ #1 (explains it's not an election), and two body mentions explicitly negating ("No election is required", "No separate election box is ticked").
+
 ### Competitor URLs fetched
 - https://www.ukpropertyaccountants.co.uk/purchase-of-six-or-more-dwellings-at-non-residential-rates/ , ~1,500 words. Cites s.116(7) FA 2003 (not Sch 6B para 7) and treats the rule as automatic, not elective. Useful on linked-transactions and substantial-performance/off-plan mechanics. Triggered the HOUSE_POSITION_CONFLICT flag.
 
