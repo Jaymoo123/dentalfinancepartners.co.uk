@@ -206,47 +206,58 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** "Incorporation & Company Structures" (matching existing taxonomy)
+- **H1 chosen:** "SDLT Sub-Sale Relief: What Section 45 FA 2003 Actually Covers"
+- **Meta title chosen:** "SDLT Sub-Sale Relief: Mechanics, Limits and Incorporation Myth" (62 chars)
+- **Why these vs other options:** Lead with the misnomer-correction framing (vs A1's process, A2's saving). Title is deliberately negative-framed ("Limits", "Myth") because the page exists primarily to dispel the incorporation myth — anti-templating away from the previous two SDLT pages.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/sdlt-navigating-sub-sale-relief-and-other-transfer-of-rights/ ~1,000 words; covers assignment/sub-sale/novation and the minimum consideration rule. Used as scaffold but our page goes much deeper on the incorporation myth and anti-avoidance history.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `section-24-tax-relief-complete-guide` , no real overlap (income tax mortgage interest restriction, not SDLT). Not linked.
+- `principal-private-residence-relief-landlords` , no overlap (CGT not SDLT). Not linked.
+- Genuine closest neighbour is `sdlt-transfer-property-company-cost`, which mentions sub-sale relief briefly. Linked from this page; same direction as A2.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Section 45 Finance Act 2003 (sub-sale relief, primary statute)
+- Schedule 2A FA 2003 (pre-completion transactions framework)
+- Section 44 FA 2003 (substantial performance / effective date)
+- Section 44(9) FA 2003 (refund where contract annulled)
+- Section 45(3) FA 2003 (minimum consideration rule)
+- Section 75A FA 2003 (SDLT GAAR)
+- Paragraph 34 Schedule 10 FA 2003 (overpayment relief)
+- Paragraph 10 Schedule 15 FA 2003 (partnership incorporation, contrasted)
+- Project Blue Ltd v HMRC [2018] UKSC 30 (case law)
+- HMRC SDLT Manual SDLTM01060–01160 (sub-sale relief guidance)
+- Finance (No. 2) Act 2024 (MDR abolition + 5% surcharge from 31 Oct 2024)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/incorporation-and-company-structures/sdlt-six-dwellings-non-residential-election` (A2, sibling SDLT page)
+- `/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost` (closest existing relative)
+- `/blog/landlord-tax-essentials/sdlt-5-percent-surcharge-refund-claim-process` (A1, cross-link)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After the "incorporation myth" section — high-intent moment for landlords who came here expecting a SDLT-free incorporation route and need to be redirected to the genuine partnership-incorporation conversation
+- After the "where it genuinely helps" section — converts off-plan assignors mid-deal who need a sense check before signing
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass (after fixing one malformed FAQ entry that had `function: 0` instead of `question:`, and trimming meta description from 182 → 158 chars)
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (11 = 11)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 62 (=62)
+- Meta description length: 158 (=158)
+- Internal links resolve: all three target markdown files confirmed present
+- monitored_pages row inserted: yes
+- Body word count: ~2,718 (just under the M-4 lower bound of 2,800; the topic is genuinely a clarification piece with a narrow statutory provision, so further padding would be against the brief's "don't aim for a word count" rule and would dilute the corrective framing)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None this page. The incorporation myth is widespread but is a content issue, not a cross-session blocker.
 
 ### 2-3 sentence summary
-<freeform>
+A3 is the clarification piece the brief asked for: separates the genuine pre-completion use of s.45 sub-sale relief from the widely-mis-sold "use it to wash my portfolio into a company" framing. Worked example uses an off-plan flat assignment (Marcus / Priya) so anti-templated away from A2's bulk-acquisition table. Covers the three pre-completion transaction types, the minimum consideration rule for connected parties, the Project Blue / DV3 anti-avoidance history, the documentary trail HMRC expects, and three further misconceptions beyond the incorporation myth. 11 FAQs.
 
