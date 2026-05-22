@@ -207,51 +207,64 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged (`iht-lifetime-gifts-7-year-rule-property-taper`).
+- **Final category:** unchanged (`Landlord Tax Essentials`).
+- **H1 chosen:** "The IHT Seven-Year Rule on Property Gifts: PETs, CLTs and Taper Relief"
+- **Meta title chosen:** "IHT 7-Year Rule on Property Gifts: PETs, CLTs and Taper" (55 chars)
+- **Why these vs other options:** Anti-templating axis is timeline-and-mechanics, distinct from A1 (decision-led) and A2 (statute walkthrough). Title leads with the search phrase "7-Year Rule" + the structural PET-vs-CLT distinction. Meta description names the four concrete sub-mechanisms (PET/CLT, s.7(4), £3k, NRB taper note) so SERP snippet signals depth on the misunderstood points.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.legislation.gov.uk/ukpga/1984/51/section/7 — s.7 IHTA 1984 verbatim. Confirmed s.7(4) taper schedule (3-4y 80%, 4-5y 60%, 5-6y 40%, 6-7y 20%). Confirmed s.7(5) safeguard: taper does not produce a tax bill below the alive-scenario tax. Used directly in the page's taper table.
+- ukpropertyaccountants competitor URLs skipped this round to preserve context budget; house positions §15.2 verified 2026-05-22 carries the substantive content and ukpropertyaccountants reform-commentary URL was already flagged stale in D-2.
+- gov.uk citizen page (gov.uk/inheritance-tax/gifts) not fetched separately; framing follows the IHTM technical chapter approach rather than the citizen-facing simplification.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `inheritance-tax-rental-property-uk-guide` — descriptive pillar; this A3 page is the mechanism deeper. Linked at opening for readers who need the pillar context first.
+- `cgt-gifting-property-family-members-uk` — CGT companion. Linked at the "reporting obligations" section (60-day CGT vs no-immediate-IHT) where the cashflow mismatch matters.
+- `iht-gifts-with-reservation-of-benefit-property` (A2 sibling) — Linked at opening and at the "GROB voids the clock" FAQ. Critical sibling because the 7-year clock is meaningless if the gift is a GROB.
+- `iht-property-investors-decision-framework-2026-onwards` (A1 sibling) — Linked at opening and at the close as the planning context.
+- `cgt-property-transfer-spouse` — Linked at the reporting obligations section (spouse transfers have no IHT clock and no CGT, the canonical no-clock counterpart).
+- `fic-iht-treatment-bpr-myth` — Not linked: the FIC's PET/CLT mechanics on share gifts are tangential to a property-gift focused page and A1 already routes readers there.
+- `cgt-divorce-property-transfer-tax-implications` — Not linked: lateral.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- s.7(4) IHTA 1984 (legislation.gov.uk) — taper schedule.
+- s.7(5) IHTA 1984 — taper safeguard (no taper below alive-scenario tax).
+- s.11 IHTA 1984 — maintenance gifts exemption.
+- s.17 TCGA 1992 — connected-persons deemed market-value rule for the CGT side.
+- s.18 IHTA 1984 — spousal exemption.
+- s.58 TCGA 1992 — spousal no-gain-no-loss for CGT.
+- s.102 FA 1986 — GROB cross-reference.
+- s.165, s.260 TCGA 1992 — holdover relief references for the CLT worked example.
+- HMRC IHT403 form (schedule of gifts), IHT100 form (CLT reporting), IHT400 (death-stage return).
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards` — A1 planning context.
+- `/blog/landlord-tax-essentials/iht-gifts-with-reservation-of-benefit-property` — A2 sibling.
+- `/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide` — descriptive pillar.
+- `/blog/capital-gains-tax/cgt-gifting-property-family-members-uk` — CGT companion.
+- `/blog/capital-gains-tax/cgt-property-transfer-spouse` — spousal route at reporting section.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After the "taper does not help within NRB" misconception section — high-intent moment because readers commonly ask "should I wait until year 4 to gift?" and the correct answer is "no, gift now if within NRB".
+- After the reporting obligations section — high-intent because the 60-day CGT vs no-immediate-IHT cashflow mismatch is where donors get caught.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass. Build clean.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13 == 13).
+- Em-dashes in markdown: 0.
+- Tailwind classes in markdown: 0.
+- Meta title length: 55 chars (≤62 OK).
+- Meta description length: 152 chars (≤158 OK).
+- Internal links resolve: yes (4 unique targets, all existing files).
+- monitored_pages row inserted: yes.
+- Body word count: 2,622.
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None new for A3.
 
 ### 2-3 sentence summary
-<freeform>
+Wave 2 A3 shipped: timeline-and-mechanics page on the 7-year clock for property gifts. PETs vs CLTs structural table, s.7(4) taper schedule (with the corrected effective-rate column), the misunderstood "taper does not help within NRB" point, £3k annual + £250 small-gifts + wedding bands + normal-expenditure exemptions, worked example one (£350k BTL outright PET, 5-year survival, £3,520 tapered tax vs £8,800 immediate), worked example two (£600k home into discretionary trust as CLT, £55k immediate IHT plus £48k CGT vs no-gift £110k IHT-at-death), cumulation discipline (first-in-first-out against NRB), reporting calendar (IHT403 / IHT100 / IHT400 / 60-day CGT). 2,622 body words, 13 FAQs, all six checks pass.
 
