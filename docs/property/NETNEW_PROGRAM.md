@@ -1,0 +1,788 @@
+# Property Net-New Program — Manager Handover Doc
+
+**Owner:** Jeff (jeff@emplifex.com) + rolling Claude Opus 4.7 manager sessions.
+
+**Status as of 2026-05-22:** Wave 1 complete (31 pages on `main`, not deployed). Wave 2 in planning.
+
+**Purpose:** Single source of truth for the rolling multi-session program writing net-new Property pages and (later) rebuilding ~231 DeepSeek-era legacy pages. Any fresh manager agent reads this doc first and is competent from the next message.
+
+---
+
+## 0. Read first if you are a fresh manager session
+
+You are taking over the orchestrator role for an ongoing program. Do this before responding to the user:
+
+1. **Read this entire doc** (~15-20 min). It is the durable context. Do not skim.
+2. Read `docs/network_state_and_handover_2026-05-21.md` for one-time broader-network context (other niche sites, history pre-this-program).
+3. Run these four commands to see current state:
+   ```
+   git log --oneline -20
+   git status --short
+   ls docs/property/wave*_page_tracker.md 2>/dev/null
+   ls docs/property/track1_page_tracker.md 2>/dev/null
+   ```
+4. If an active wave is running, read its tracker + flags + Q&A files.
+5. Acknowledge the user with one short message: *"Picked up. Current state: [wave N, X of Y pages done, M flags open, K open questions]. Ready for next instruction."* — nothing longer.
+
+**Critical norms before you do anything:**
+
+- **You are the glue.** Sessions are siloed; you are the only one with the cross-session view. Treat that responsibility seriously.
+- **Self-awareness about your own context.** Output quality degrades as your context fills. When it does, **say so, write a handover update to this doc, then stop.** See §14.
+- **Never deploy anything without explicit user instruction.** User has historically held deploys pending cleanup batches; check the current state before any deploy step.
+- **Track what's needed, not everything.** See §15 on tracking discipline. Use TaskCreate sparingly. Compact summaries over verbose narration.
+- **Never edit a session's branch without authorisation.** Manager fix-up commits on a session branch require: (a) a flag from that session OR (b) a clear user authorisation. Always preserve the session's authorship trail.
+- **Verify factual claims before acting on them.** Sessions catch each other's errors; the manager catches errors that slip past sessions. If a session reports a statute, verify via WebFetch to legislation.gov.uk before applying the fix.
+
+---
+
+## 1. The goal
+
+Build out Property Tax Partners (`propertytaxpartners.co.uk`) into the comprehensive #1 UK property-accounting resource.
+
+Two pools of work:
+
+| Pool | Count | Source | Status |
+|---|---|---|---|
+| **Net-new pages** | ~285 (user-narrowed target from 429 candidates) | `docs/property/topic_gaps_final.md` | 31 done (Wave 1), ~254 remain |
+| **Legacy rebuilds** | ~231 (DeepSeek-era pages on `main`) | `Property/web/content/blog/*.md` | Not started; uses GSC + GA4 + competitor HTML enriched briefs |
+
+Total program: ~485 pages over rolling waves. Net-new first; legacy after.
+
+**Strategic constraints:**
+- Zero cannibalisation.
+- High quality (six-check verification per page; matches or beats specialist competitors).
+- No regression to existing rankings (`monitored_pages` table tracks each new/rewritten page for 90 days with a regression detector).
+- Anonymised social proof only (no real client names; no specific NHS Trust / agency / tenant dispute names).
+- Lead-gen handoff to partner firm (no pricing on-page, no client names; LeadForm auto-injected at footer).
+
+---
+
+## 2. Network context
+
+Property sits inside a six-site niche network plus one scaffolded:
+
+| Site key | Brand | Domain | Posts | Position in network |
+|---|---|---|---|---|
+| `property` | Property Tax Partners | propertytaxpartners.co.uk | 316 (31 new from Wave 1) | **This program's focus.** Strongest GSC signal, biggest content pool. |
+| `dentists` | Dental Finance Partners | dentalfinancepartners.co.uk | ~150 | Quality-lifted to Opus 4.7 May 20. Not in this program. |
+| `medical` | Medical Accountants UK | medicalaccounts.co.uk | 46 | Too new (4 of 46 pages with GSC data). Scaffolded for full rewrite (3 worktrees + 46 briefs at `briefs/medical/`) but **PARKED** by user decision. |
+| `solicitors` | Accounts For Lawyers | accountsforlawyers.co.uk | ~150 | Quality-lifted to Opus 4.7. Not in this program. |
+| `agency` | Agency Founder Finance | agencyfounderfinance.co.uk | small | Thin; not in this program. |
+| `generalist` | Holloway Davies | hollowaydavies.co.uk | 322 | Different brand; seed-only GSC. Not in this program. |
+| `contractors-ir35` | (scaffolded, not launched) | (TBC) | 0 | High-CPC niche scaffolded May 20; awaiting domain/Vercel/GA4 setup. Not in this program. |
+
+All sites are lead-gen handoffs to a partner firm. Don't conflate with the Property program scope.
+
+**Why Property and only Property right now:** GSC signal is strongest, competitive set is biggest, and the topic-gap analysis (`docs/property/topic_gaps_final.md`) is already done. Network-wide rebuilds come later.
+
+---
+
+## 3. Where we are right now (this section updates every wave)
+
+**Last updated:** 2026-05-22 end of Wave 1.
+
+**`main` is at commit `7ed6e15`.** 35 commits ahead of `d42555d` (pre-Wave-1 checkpoint).
+
+**Wave 1 outputs on `main`:**
+- 31 new blog markdown files in `Property/web/content/blog/`.
+- Full orchestration paper trail.
+- **Not deployed.** User holding deploy pending post-merge cleanups.
+
+**Wave 1 worktrees** (`Accounting-wt-property-track1-{a,b,c}/`) on branches `property-track1-{a,b,c}` — merged to main, branches can be deleted.
+
+**Medical worktrees** (`Accounting-wt-medical-{a,b,c}/`) parked, not part of this program.
+
+**Post-Wave-1 cleanups queued (do before deploying Wave 1):**
+1. INTERNAL_LINK from B's flag: existing `Property/web/content/blog/director-loan-property-company.md` → forward-link to `director-loan-account-property-company-mechanics`.
+2. INTERNAL_LINK from C6 work-log: existing `family-investment-company-property-worth-it.md` → back-link to `fic-complete-guide-property-wealth-transfer`.
+3. Six-dwellings correction (s.116(7) FA 2003, automatic) on `sdlt-buy-to-let-rates-surcharge-guide-2025.md` and `sdlt-transfer-property-company-cost.md`.
+4. ATED-related CGT staleness sweep (regime abolished 6 April 2019).
+
+**Wave 2 confirmed (not yet prepped):** IHT (A) + DTAs (B) + Leaving-the-UK/Expat (C). ~30 pages (10/10/10). User chose to wait until current manager handover completes before launch.
+
+---
+
+## 4. Brief anatomy: what every page brief must contain
+
+The brief IS the session's research package. Sessions read it, fetch the competitor URLs, read the closest existing pages, then write to the framing differentiator. **A weak brief produces a weak page.** Every brief lives at `briefs/property/<wave>/<slug>.md` and has these blocks:
+
+### 4.1 Header
+- Title: "Track N brief: `<slug>`" or "Wave N brief: `<slug>`"
+- Site, bucket, session assignment, brief type (net-new or legacy rebuild).
+- Source markdown path on launch (where the session writes the file).
+- Live URL on launch.
+
+### 4.2 Manager pre-decisions
+- **Suggested slug** (session may override, must log).
+- **Suggested category** (one of: `landlord-tax-essentials`, `incorporation-and-company-structures`, `capital-gains-tax`, `making-tax-digital-mtd`, `non-resident-landlord-tax`, `portfolio-management`, `property-accountant-services`, `property-types-and-specialist-tax`, `section-24-and-tax-relief`).
+- **Bucket** (matches `topic_gaps_final.md` classification).
+- **Framing differentiator** — THE most important field. 2-4 sentences that say what makes THIS page distinct from siblings in the same bucket. Examples from Wave 1:
+  > "Step-by-step process for reclaiming the 5% additional dwellings surcharge when the old main residence sells within the 3-year window. Practical claim mechanics + common failure modes + worked timeline; complementary to our SDLT-bands pillar which covers rates."
+- Override-allowed clause: session may override slug/category if reasoning suggests, but must log in work-log.
+
+### 4.3 Competitor URLs
+- 3-5 URLs to fetch + read. From `competitor_serps` table or topic-gap analysis.
+- Instruction: fetch with `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` then `BeautifulSoup(html, "lxml")`. Read outline + FAQs + worked examples + citation density + component patterns. If a URL is poor, do own targeted search and document.
+
+### 4.4 GSC data (for legacy rebuilds; empty for net-new)
+- Top 20 queries by impressions for this URL, with position + clicks.
+- Tells the session what queries the page is already ranking for that the rebuild should lean into.
+
+### 4.5 Closest existing pages (cannibalisation context)
+- 3-7 pages on our site closest by token similarity.
+- Each with: slug, category, title, similarity score.
+- **Discipline:** session reads each before writing. Decide if yours is the applied/scenario version (link out to pillar) or the deeper version (raise back-link flag from existing to yours).
+- Two existing pages substantially overlap → CANNIBAL flag, don't proceed until manager arbitrates.
+
+### 4.6 Redirect overlap
+- Any of the existing 429 middleware redirects whose old slug tokens overlap with this new slug.
+- Session repoints the redirect at the new page on launch (step 12 of the workflow).
+
+### 4.7 Authority links (bucket-specific)
+- 5-8 high-authority URLs the page should cite. HMRC manuals, legislation.gov.uk, gov.uk, tribunal cases.
+- Examples per bucket:
+  - SDLT: HMRC SDLT Manual (SDLTM), FA 2003, gov.uk SDLT calculator, FA (No.2) 2024.
+  - Ltd Co / CT: CTA 2010, CTA 2009, HMRC CT Manual (CTM), TCGA 1992.
+  - VAT: VATA 1994, HMRC VAT Manual (VATGPB), VAT Notices.
+  - IHT: IHTA 1984, HMRC IHT Manual (IHTM), IHTA tapered relief tables.
+  - DTAs: HMRC International Manual (INTM), OECD Model Tax Convention, specific treaty texts (UK-US, UK-France etc).
+- Session picks 4-7 from this list + adds others found during research.
+
+### 4.8 Universal rules (verbatim across all briefs)
+- Voice (no em-dashes; specific; named legislation; anonymised personas; no real names).
+- Lead-gen architecture (LeadForm auto-injected at footer; never duplicate in body).
+- CSS in markdown (semantic HTML only; no Tailwind classes; `<aside>` styled by global CSS).
+- FAQs (10-14, frontmatter `faqs:` array, auto-emitted as FAQPage JSON-LD).
+- Cannibalisation discipline.
+- Anti-templating (per-page framing differentiator, vary H2s, vary openings, vary FAQ phrasing).
+- Quality bar (six checks, body word count target).
+
+### 4.9 Workflow (verbatim — the 19 steps)
+See §7.
+
+### 4.10 Per-page work-log (filled by session during work)
+- Decisions (slug, category, H1, meta title, why these vs alternatives).
+- Competitor URLs fetched + key takeaway per URL.
+- Existing-page review (overlap, differentiation decision).
+- Citations added.
+- Internal links added.
+- Inline CTA placements.
+- Build attempts (pass/fail).
+- Verification (each of the six checks).
+- Flags raised.
+- 2-3 sentence summary.
+
+The work-log is the audit trail. If a brief's work-log is unfilled at session end, the page is suspect.
+
+---
+
+## 5. House positions: the tie-breaker doc
+
+`docs/property/house_positions.md` is the **single source of truth for figures, statutes, and framings**. Sessions read it once at start; it overrides any competitor source.
+
+### 5.1 Current locked positions (index — read the doc for detail)
+- SDLT bands and surcharges (residential, 5% from 31 October 2024; 6+ dwellings under **s.116(7) FA 2003 automatic** — corrected mid-Wave-1 from wrong Sch 6B cite).
+- ATED bands 2026/27.
+- MTD for ITSA threshold (£50k / £30k / £20k phased schedule; NOT £10k).
+- S24 (mortgage interest restriction).
+- CGT (18%/24% from April 2024; 60-day reporting).
+- FHL (abolished from April 2025; transition rules).
+- 2027 income tax surcharge (22%/42%/47% framed as "announced Autumn Budget 2024, scheduled, pending Royal Assent under Finance Act 2026").
+- LTA (replaced by LSA/LSDBA from April 2024; £1,073,100 figure obsolete).
+- IHT (currently SDLT/ATED-heavy; needs IHT-section extension for Wave 2).
+- DTAs (currently empty; needs extension for Wave 2 — UK-US, UK-France, UK-Spain, etc.).
+- Companies House reforms / ECCTA (currently empty).
+- Welsh LTT / Scottish LBTT + ADS (briefly noted; needs extension if any wave touches Scottish/Welsh).
+- Rent-a-Room relief allowance.
+
+### 5.2 House position update process
+
+A session flags `HOUSE_POSITION_CONFLICT` when a competitor source contradicts the doc and the session believes the doc is wrong.
+
+Manager process (this happened twice in Wave 1, both correctly):
+1. Read the flag carefully — session's reasoning is usually right because they're context-loaded on the topic.
+2. **Verify via WebFetch to `legislation.gov.uk`** (NEVER trust your training data on statute interpretation; verify against the live text). For HMRC manual citations, also fetch the manual page.
+3. If session is right: edit `house_positions.md` with a `Correction logged YYYY-MM-DD` stamp. Note the old framing in the correction note so the audit trail is preserved.
+4. Drop manager-broadcast notes in all three sessions' Q&A files (so any session that already cached the wrong framing refreshes).
+5. Authorise the affected session to fix-up their already-shipped pages on their branch.
+6. Add any other live pages on `main` (outside the current wave) to a post-merge cleanup list.
+
+### 5.3 Pre-wave: extend house positions for the wave's topics
+
+Before launching a wave, **manager extends house_positions.md** with locked positions for the wave's topics. Wave 2 (IHT + DTAs + Expat) needs:
+
+**IHT section:**
+- NRB £325,000 (frozen to April 2028).
+- RNRB £175,000 with taper at £2m+.
+- Spouse exemption + transferable NRB/RNRB.
+- BPR for property: Pawson, Brander, Personal Representatives of Pawson — investment property NOT eligible; furnished holiday lets historically borderline but **abolished FHL regime + April 2026 BPR/APR cap = harder**.
+- Gifts with reservation of benefit (s.102 FA 1986) — implications for gifting property while continuing to occupy.
+- PETs and 7-year taper.
+- April 2026 £1m combined BPR+APR cap.
+
+**DTAs section:**
+- OECD Model 2017 baseline.
+- Article 6 (immovable property — almost always source-state).
+- Article 13 (capital gains — UK NRCGT applies even where treaty exempts; statute overrides treaty for NRCGT).
+- Article 24 (non-discrimination).
+- Tie-breaker tests for residence (Article 4) — permanent home, centre of vital interests, habitual abode, nationality, mutual agreement.
+- Specific treaties: UK-US (saving clause), UK-France (Article 6/13), UK-Spain (real estate-rich entities), UK-Germany.
+
+**Leaving the UK / expat section:**
+- SRT (Statutory Residence Test) — automatic UK + automatic overseas + sufficient ties.
+- Split-year treatment (Cases 1-8 in TCGA).
+- Temporary non-residence rules — 5-year clock, CGT recapture on return.
+- NRCGT (non-resident CGT) — applies to UK land/property from April 2015 (residential) / April 2019 (commercial + indirect via property-rich entities).
+- 60-day NRCGT return requirement.
+- NRL scheme (non-resident landlord) — gross or net election; 20% withholding default.
+
+The manager who launches Wave 2 must complete this extension first.
+
+---
+
+## 6. Wave launch protocol (canonical 9-step checklist)
+
+Pre-flight before any session prompt is sent:
+
+1. **Extend `house_positions.md`** for the wave's topics. See §5.3.
+2. **Generate per-page briefs** via brief-builder script. Wave 1 used `scripts/property_track1_brief_builder.py`; adapt with bucket-specific authority lists for the new wave's topics.
+3. **Cannibalisation re-check** against current `main` (which now includes the previous wave's outputs). Run `scripts/property_cannibalisation_check.py` with current `main` as baseline.
+4. **Stand up worktrees** at `C:/Users/user/Documents/Accounting-wt-property-wave<N>-{a,b,c}/` on branches `property-wave<N>-{a,b,c}`. Or reuse previous wave's worktrees after deleting branches.
+5. **Copy missing files** into each worktree: `.env` and `optimisation_engine/competitor/_db.py` (both gitignored/untracked).
+6. **Create wave artefact files**:
+   - `docs/property/wave<N>_page_tracker.md`
+   - `docs/property/wave<N>_site_wide_flags.md`
+   - `docs/property/wave<N>_discovery_log_session_{A,B,C}.md`
+   - `docs/property/wave<N>_questions_session_{A,B,C}.md`
+7. **Write per-session START_HERE docs** at `docs/sessions/property/WAVE<N>_SESSION_{A,B,C}_START_HERE.md`. Each points at the wave-specific files + this NETNEW_PROGRAM doc.
+8. **Arm manager-side watcher** (Monitor tool) on the three Q&A files, polling every 20s for new `STATUS: open` lines. Persistent: true.
+9. **Hand the user three launch prompts** (one per session) to paste verbatim into fresh Opus sessions opened in the relevant worktrees.
+
+---
+
+## 7. The 19-step per-page workflow
+
+Sessions follow this verbatim. Every brief contains it.
+
+1. Read `house_positions.md` once at session start.
+2. Claim ONE page in the wave tracker (`⬜ todo` → `🟡 in_progress` + UTC timestamp).
+3. Read the brief (framing differentiator, closest existing, redirect overlap, authority links).
+4. Fetch + read each competitor URL with `httpx + BeautifulSoup`.
+5. Read closest-existing pages on our site.
+6. Plan H2/H3 outline + meta + FAQs + CTA placements (vary per page — anti-templating).
+7. Verify factual claims against authorities (HMRC manuals, legislation.gov.uk, gov.uk).
+8. Fetch hero image from Pexels via `fetch_image_for_post(query)`.
+9. Write the markdown file at `Property/web/content/blog/<slug>.md` (full frontmatter list in brief).
+10. Build clean: `cd Property/web && npm run build`.
+11. Six verifications: FAQ schema count match, 0 em-dashes, 0 Tailwind classes, meta title ≤62, meta description ≤158, internal links resolve.
+12. Apply redirect repointing in `middleware.ts` if brief lists overlap.
+13. Register the new page in `monitored_pages` Supabase table.
+14. **Commit on session's branch** (per-page commit; do NOT merge to main).
+15. Fill in per-page work-log at bottom of brief.
+16. Mark `✅ done` in tracker with 1-line Notes.
+17. Append site-wide issues to wave's flags file.
+18. Append discoveries to session's discovery log.
+19. Claim next page.
+
+**Critical order: step 14 (commit) before step 16 (mark done).** Wave 1 had multiple tracker-ahead-of-branch issues until calibrated in M-2/M-5.
+
+---
+
+## 8. Q&A channel + session-side watcher
+
+### 8.1 Architecture
+
+One question file per session: `docs/property/wave<N>_questions_session_{A,B,C}.md`. Lives in main repo (sessions edit via absolute main path). Append-only.
+
+### 8.2 Lifecycle
+
+```
+Session writes Q-N with STATUS: open
+   ↓
+Manager watcher fires (~20s latency)
+   ↓
+Manager reads question, verifies any statute claims (WebFetch), drafts answer
+   ↓
+Manager appends `### Manager answer [TIMESTAMP]` block under Q-N
+Manager flips STATUS: open → STATUS: answered
+   ↓
+Session-side watcher (if armed) fires
+   ↓
+Session re-reads file, acts on answer, marks done in flow
+```
+
+### 8.3 Manager-side watcher (Monitor tool)
+
+```bash
+declare -A seen
+while true; do
+  for f in docs/property/wave<N>_questions_session_A.md \
+           docs/property/wave<N>_questions_session_B.md \
+           docs/property/wave<N>_questions_session_C.md; do
+    if [ -f "$f" ]; then
+      while IFS= read -r line; do
+        key="$f::$line"
+        if [ -z "${seen[$key]:-}" ]; then
+          seen[$key]=1
+          echo "OPEN_QUESTION $f $line"
+        fi
+      done < <(grep -E "^## \[Q-[0-9]+\].*STATUS: open" "$f" 2>/dev/null || true)
+    fi
+  done
+  sleep 20
+done
+```
+
+Persistent: true. Stop at wave end via `TaskStop <task-id>`.
+
+### 8.4 Session-side watcher (added for Wave 2+)
+
+After appending a `STATUS: open` question, the session spawns a single Monitor task watching its own file for the `STATUS: answered` flip on its latest question:
+
+```bash
+QFILE="docs/property/wave<N>_questions_session_<X>.md"
+LATEST_Q=$(grep -oE '^## \[Q-[0-9]+\]' "$QFILE" | tail -1)
+echo "Watching for answer to $LATEST_Q..."
+while true; do
+  if grep -q "$LATEST_Q.*STATUS: answered" "$QFILE"; then
+    echo "ANSWER_LANDED $LATEST_Q"
+    break
+  fi
+  sleep 20
+done
+```
+
+Persistent: false. Timeout: 1 hour. Session keeps working on another step/page while waiting.
+
+### 8.5 When to use Q&A vs flag vs discovery vs just continue
+
+- **Q&A:** decisions you need from manager that block forward progress. Pause this page; work another step/page meanwhile.
+- **Flag (`wave<N>_site_wide_flags.md`):** things actioned already, OR cross-session issues. Never blocks.
+- **Discovery log (`wave<N>_discovery_log_session_<X>.md`):** observations for future waves. No action needed.
+- **Just continue:** anything inside your authority per START_HERE.
+
+### 8.6 Manager-to-session notes (M-1, M-2, etc.)
+
+The manager can append manager-initiated notes to a session's Q&A file (broadcasts, calibrations, blockers). Use format `## [M-N] [TIMESTAMP] [MANAGER NOTE] Title`. Sessions re-read on next poll. M-notes don't trigger the watcher (correct — manager isn't asking themselves a question).
+
+---
+
+## 9. Quality bar
+
+Every page committed MUST pass these six checks (Wave 1 calibrated baseline):
+
+| Check | Target |
+|---|---|
+| Em-dashes in body | 0 (commas, parentheses, full stops, middle dots only) |
+| Tailwind utility classes in markdown body | 0 (semantic HTML only) |
+| FAQ schema count in built HTML | == frontmatter `faqs:` array length |
+| Meta title | ≤62 chars |
+| Meta description | ≤158 chars |
+| Internal `/blog/...` links resolve | every link → existing markdown file |
+
+**FAQ count:** 10-14 per page. Lower end (10-12) for non-pillar; 13-14 for pillars and complex topics.
+
+**Body word count:**
+- Non-pillar: 2,800-3,500.
+- Pillar / comprehensive reference: 3,500-4,500.
+- Any 4,000+ non-pillar requires justification in work-log Decisions block.
+
+**Word count gotcha:** `wc -w` total ≠ body. Total includes frontmatter (FAQ JSON inflates a lot). Sessions report **body words** in tracker notes. Manager spot-checks via `wc -w` for first-pass triage, then sanity-checks body count by subtracting ~1,000-1,500 for frontmatter.
+
+**Anonymisation:** no real client names. Worked-example personas are invented (Patel-estate, Mawell-Estate, Singh, etc). No specific NHS Trust / agency / tenant dispute / firm names.
+
+---
+
+## 10. Anti-templating discipline
+
+Wave 1's hardest risk was 10 SDLT pages in Session A reading like 10 versions of the same page. The **framing differentiator** in each brief is what protects against this.
+
+**Per-page differentiator examples (Wave 1):**
+- A1 (refund process) — process + failure modes + worked timeline.
+- A2 (six-dwellings) — mechanics + savings + decision matrix vs siblings.
+- A3 (sub-sale relief) — clarification, separating real use from myth.
+- A6 (probate transfers) — taxonomy (five categories of transfer type).
+- A8 (refund scams) — consumer-protection with tribunal authority.
+- A9 (mixed-use classification) — case-law walkthrough.
+
+Each differentiator yields a different H2 outline.
+
+**Manager spot-checks after page 2-3 per session.** If a session's pages 1 and 2 share H2 structure or opening sentence, raise calibration immediately. Do not wait until page 8.
+
+**Variation discipline:**
+- Vary opening 2-3 sentences (no "Many landlords ask about..." across the wave).
+- Vary H2 structure per page.
+- Vary FAQ phrasing (no "Is X tax deductible?" across multiple pages).
+- One worked example per concept per page.
+
+---
+
+## 11. Cannibalisation discipline
+
+### 11.1 Token-level static check (pre-wave)
+
+`scripts/property_cannibalisation_check.py` compares each candidate slug + title + h1 + metaTitle tokens against every existing Property page's. Threshold 0.55 = covered (drop); 0.30 = partial (warn); <0.30 = net-new (keep).
+
+Run pre-every-wave with current `main` as baseline (the map grows as each wave adds pages).
+
+### 11.2 Body-level check (session-driven)
+
+Token-level catches title overlap but not body content overlap. Sessions catch body-level cannibalisation via the brief's **Closest existing pages** section: read each before writing, decide differentiation, raise CANNIBAL flag if two existing pages substantially overlap your topic.
+
+### 11.3 Cross-session check (mid-wave)
+
+Sessions in the same wave might write overlapping pages even when individual cannibalisation checks passed. CANNIBAL flag is for this — sessions watch each other via the shared flags file.
+
+### 11.4 Anti-bandaid
+
+If a CANNIBAL flag fires mid-wave, manager arbitrates: which session keeps which framing, which page gets retitled or skipped. Do not let two sessions write the same page.
+
+---
+
+## 12. Sub-agent guidance
+
+A sub-agent is spawned via the Agent tool. It runs once, returns a structured report, doesn't iterate.
+
+### 12.1 When to spawn a sub-agent
+
+- **Wave preparation** (brief gen + cannibalisation re-check + house positions extension + scaffold files). Multi-step but deterministic; offloads ~5,000-10,000 tokens of manager context.
+- **Statute verification** when you don't trust your training data. WebFetch + legislation.gov.uk + HMRC manual + summary.
+- **Bulk file audits** (e.g., "scan all 285 existing Property pages for occurrences of '£10,000 MTD threshold' and report a list").
+- **Research investigations** (when the user asks an open-ended question that needs multiple searches).
+
+### 12.2 When NOT to spawn a sub-agent
+
+- Decisions that need user input mid-flight (sub-agent can't pause and ask).
+- Anything writing markdown content that ships (use a session, not a sub-agent — sessions follow the 19-step workflow including build verification).
+- Trivial single-file reads or edits.
+- When the user is waiting on a fast response (sub-agents take 30s-15min).
+
+### 12.3 Sub-agent prompt discipline
+
+Write the prompt like a brief to a smart colleague who hasn't seen this conversation. Include:
+- What you're trying to accomplish and why.
+- Specific file paths.
+- What to return (format the structured output expected).
+- Cap the response length if you can ("under 200 words", "as a markdown table").
+
+**Never ask a sub-agent to "interpret" or "decide" on something where the user has authority.** Manager owns judgement calls; sub-agents execute defined tasks.
+
+### 12.4 Examples relevant to this program
+
+- **Wave 2 prep agent.** Scope: extend `house_positions.md` for IHT/DTAs/expat → adapt brief builder → generate ~30 briefs → cannibalisation re-check against `main` → scaffold wave2 tracker/flags/Q&A/START_HERE files → return launch prompts. Returns: file paths + summary of decisions taken + any open questions for manager.
+- **Statute verification agent.** Used in Wave 1 implicitly via WebFetch; could be promoted to a sub-agent for complex multi-section verifications.
+- **Bulk audit agent.** For Track 2 sweep on 234 untouched pages — sub-agent generates the actual fix list (grep + classify) so manager can review before delegating fixes to a session.
+
+---
+
+## 13. Manager instructions for sessions ABC
+
+This is what sessions need from you as their manager. Sessions read their START_HERE doc and this NETNEW_PROGRAM doc; the START_HERE doc is the session's task brief and points back here for everything cross-cutting.
+
+### 13.1 What sessions handle themselves (no manager input needed)
+
+- Slug invention if assigned slug doesn't fit (log override in work-log).
+- Em-dash removal, Tailwind class avoidance, FAQ count discipline.
+- HMRC / legislation.gov.uk / gov.uk citations.
+- Inline `<aside>` CTA placement at conversion moments.
+- Cannibalisation handling via differentiation + linking to closest-existing.
+- Factual statements matching the house positions doc.
+- Building, verification, committing, marking tracker.
+
+### 13.2 What sessions flag (no manager input until later)
+
+Append to `wave<N>_site_wide_flags.md`:
+- `HOUSE_POSITION_CONFLICT` — competitor evidence contradicts house position.
+- `CANNIBAL` — two sibling pages overlap.
+- `INTERNAL_LINK` — existing page should link to new page.
+- `SCHEMA` — non-default schema type (HowTo, Course) might help SERP.
+- `REDIRECT` — redirect action taken or not taken (log).
+- `POSITIONING` — brand / lead-gen positioning question.
+- `BUILD_BLOCKER` — build breaking from a non-own-page cause.
+- `CALCULATOR_IDEA`, `COMPONENT_IDEA`, `CROSS_NICHE_LINK`, `FACTUAL` — also valid.
+
+Flags never block. Sessions continue work after flagging.
+
+### 13.3 What sessions ask manager (Q&A channel)
+
+Use Q&A only when:
+- Cannot make progress without manager decision AND
+- Answer is not in brief, house positions, or session's judgement.
+
+Examples from Wave 1:
+- Session A Q-1: "worktree branch missing the entire Track 1 scaffold" (legitimate blocker).
+- Sessions used flags for the rest.
+
+### 13.4 What sessions log to discovery (no action needed)
+
+`wave<N>_discovery_log_session_<X>.md`:
+- `ADJACENT_TOPIC` — competitor covers something we don't, not in topic_gaps.
+- `CALCULATOR_IDEA`, `COMPONENT_IDEA`.
+- `EXISTING_PAGE_STALE` — existing page with stale figures/framing.
+- `EXISTING_PAGE_LINK_OPPORTUNITY`.
+- `AUTHORITY_GAP` — HMRC manual / legislation never cited on our site.
+- `CROSS_NICHE_LINK`.
+
+Manager reads at wave end; feeds future waves and Track 2 sweep.
+
+### 13.5 Manager approval gates
+
+Sessions DO NOT need manager approval for:
+- Routine page writes (the brief is the authorisation).
+- Committing on their own branch.
+- Marking tracker rows.
+- Adding redirects per brief.
+
+Sessions DO need manager authorisation for:
+- Fix-up commits to a previously-committed page (e.g., B2 CIHC fix-up). Manager authorises via Q&A note.
+- Deleting or substantially restructuring an existing live page.
+- Cross-branch edits (manager handles).
+- Anything touching `main` directly.
+
+### 13.6 Manager calibration interventions
+
+If quality drifts (word count, FAQ count, templating, framing), manager appends M-note to Q&A file with the calibration. Wave 1 examples:
+- M-3 / M-4: word count calibration (5,428 → 2,800-3,500 target).
+- M-5: B2 CIHC fix-up authorisation.
+
+Don't calibrate by editing the brief mid-flight. Always Q&A note so the audit trail is clear.
+
+---
+
+## 14. Manager self-awareness and handoff
+
+You are powered by a model with a finite context window. Output quality degrades as context fills with tool results, conversation, and accumulated state.
+
+### 14.1 Signs of degradation
+
+- You catch yourself summarising tool results that are still visible (forgetting you can re-read).
+- You make factual claims without verifying (assuming your training data is current).
+- Your responses get longer and more hedged.
+- You forget instructions from earlier in the conversation.
+- You miss patterns across sessions (e.g., a flag in one session relevant to another).
+- You delay decisions that need to be made now.
+- You skip verification steps you would have done earlier.
+
+### 14.2 What to do when you notice degradation
+
+1. **Tell the user.** Explicitly: "I'm starting to feel context pressure; I want to write a handover update and stop." Do not push through silently.
+2. **Update this doc** (`NETNEW_PROGRAM.md`):
+   - Section 3 (Where we are now) — current wave state, completed work, open work.
+   - Section 17 (Lessons learned) — anything from this session that should compound.
+   - Section 21 (Open decisions) — anything pending.
+3. **If a wave is mid-flight:** ensure the wave tracker, flags, and Q&A files are up to date so a fresh manager can pick up immediately.
+4. **Stop.** Don't accept new work.
+
+### 14.3 Handoff to fresh manager
+
+The user opens a fresh Claude Opus session and points it at this doc. The fresh manager:
+1. Follows §0 pickup checklist.
+2. Reads the current wave state.
+3. Acknowledges with the short status line.
+
+If a session asks a Q&A while a manager handoff is in flight, the wave's session-side watchers will keep the sessions productive (they can work on other pages while waiting). The fresh manager picks up open questions on arrival.
+
+---
+
+## 15. Manager tracking discipline
+
+Manager tracking is a balance: enough state to coordinate, not so much that it eats context.
+
+### 15.1 What manager DOES track
+
+- **Current wave state** — which session is on which page, latest commit per branch, open flags, open questions. Track via files (tracker, flags, Q&A) not via TaskCreate.
+- **Pending cleanups** — post-merge work queued in this doc §3 or in a "Post-Wave-N cleanups" subsection.
+- **Lessons learned** (this doc §17) — only the durable ones that change behaviour next time.
+- **Open decisions** (this doc §21) — explicit list of things the manager + user haven't decided.
+
+### 15.2 What manager does NOT track
+
+- Every commit, every read, every minor edit.
+- Verbose narration of what was done.
+- TaskCreate for trivial single-action work.
+
+### 15.3 When to use TaskCreate
+
+Use sparingly. Worth a TaskCreate when:
+- Multi-step work with clear sequential dependencies and >30 min duration.
+- Work that spans multiple manager turns (so the next turn can resume cleanly).
+- Work where the user benefits from seeing progress.
+
+NOT worth a TaskCreate for:
+- Single edits.
+- Single tool calls.
+- Verification checks.
+- Q&A responses.
+
+### 15.4 Periodic compaction
+
+After every wave: update this doc, archive the wave's tracker/flags/Q&A (don't delete — they're the audit trail), update §17 with new lessons.
+
+---
+
+## 16. Lessons learned (running log)
+
+Append to this section after every wave. Each lesson should describe what happened + what changed + why future managers should care.
+
+### Wave 1 (2026-05-22)
+
+**16.1 Tooling gaps**
+- `optimisation_engine/competitor/_db.py` is untracked in git. Worktrees freshly created from main are missing it. Sessions need it for the `monitored_pages` Supabase insert (step 13). Fix: manager copies into every new worktree pre-launch.
+- `.env` is gitignored (correctly) but worktrees need it. Without it, any `from optimisation_engine.*` import fails at config.py. Fix: manager copies into every new worktree pre-launch.
+
+**16.2 Procedural gaps**
+- Multiple sessions marked tracker `✅ done` before committing. Calibrated via M-2 / M-5 manager notes mid-wave. Bake into START_HERE for Wave 2+.
+- Wave 1 worktrees were created before the brief scaffold landed on main, so each session opened on a branch 2 commits behind main. Fix: every wave's pre-launch checklist now includes "fast-forward each worktree branch to current main".
+
+**16.3 Factual catches**
+- **Six-dwellings rule** (Session A flag, 2026-05-22T02:00Z). House positions doc cited Sch 6B para 7 FA 2003 (definitional, unrelated rule) and called it an "election". Correct: **s.116(7) FA 2003**, automatic statutory deeming. Fixed in house_positions + A2 + manager-broadcast to B and C. Pattern: multi-session design caught it because Session A wrote a downstream page that surfaced the inconsistency.
+- **CIHC carve-out** (Session B flag, 2026-05-22T10:20Z). B2 overstated CIHC scope by claiming BTL SPVs are CIHCs. Correct: most BTL SPVs are NOT CIHCs because the **s.18N CTA 2010 qualifying-purpose carve-out** takes unconnected-tenant land investment out of CIHC status. Manager fix-up commit on B's branch with revised worked example (marginal relief instead of flat 25%). Pattern: same as six-dwellings — downstream session caught upstream session's error.
+
+**16.4 Word-count drift**
+- Wave 1 initial pages overshot guidance (4,142 / 5,428 / 4,332 total words; target was 2,500-3,500 body). Calibration broadcast in M-3/M-4. Subsequent pages: 2,652-3,845 body words.
+- **Body words ≠ total words.** Total includes frontmatter + FAQ JSON (typically +1,000-1,500). Sessions report body words; manager spot-checks via `wc -w` total then adjusts.
+
+**16.5 Anti-templating held**
+- 10 SDLT pages in Session A could have read like 10 versions of the same page. Each brief's framing differentiator kept them distinct. Manager spot-check after page 3 confirmed no drift.
+
+**16.6 Multi-session pattern worked**
+- The append-only flags + Q&A channel + manager broadcast pattern caught two factual issues that would have shipped wrong in a single-session pass. Both went from flag → verification → fix in under an hour. This is the system's core value proposition.
+
+**16.7 Manager-side watcher worked**
+- ~20s latency from new `STATUS: open` question to manager notification. No false positives. No missed events. Worth keeping the design.
+
+**16.8 Session-side watcher missing in Wave 1**
+- When manager answered a question, sessions saw it only on manual re-read. User had to ping sessions when answers landed. Wave 2+ adds session-side watchers (see §8.4).
+
+**16.9 Sessions interpret "finished"**
+- All three sessions reported "finished" after their first context-burning batch (Wave 1 day 1: A 4/10, B 3/8, C 4/13). User relaunched fresh sessions to continue. Pattern: "finished" means "out of context"; manager verifies actual completion via tracker + branch log.
+
+**16.10 Sessions' tracker notes are gold**
+- Each session's tracker note for a completed page captured: framing differentiator, key citations, body word count, worked-example saving figures, any deviations from brief. Reading the tracker = fast triage. Don't lose this practice.
+
+---
+
+## 17. Risk register
+
+| Risk | Mitigation |
+|---|---|
+| Factual error ships in a page | House positions doc + flag-on-conflict + manager verifies via legislation.gov.uk + fix on branch before merge |
+| Two sessions cannibalise each other | Token-level pre-wave check + CANNIBAL flag + manager arbitrates |
+| Templating drift in same bucket | Per-page framing differentiator + manager spot-check after page 3 |
+| Tracker ahead of branch (lost work risk) | Step 14 (commit) before step 16 (mark done) + manager checks `git log` vs tracker |
+| Worktree missing runtime files | Pre-launch checklist copies `.env` + `_db.py` |
+| Worktree branch behind main | Pre-launch checklist fast-forwards each branch |
+| Session out of context mid-wave | Discovery log records stop point + tracker shows ⬜ todo + user relaunches |
+| Q&A answer doesn't reach session | Session-side Monitor watcher (Wave 2+) |
+| Word-count drift | M-3/M-4 calibration after page 2 of each session |
+| Live-page regression from new link target | `monitored_pages` table + weekly regression detector; 90-day window; 14-day grace |
+| Manager runs out of context mid-wave | §14 self-awareness: write handover update, stop, hand off to fresh manager |
+| Sub-agent returns garbage | Manager verifies sub-agent's output before propagating (read the briefs the sub-agent generated, spot-check the cannibalisation re-check results) |
+
+---
+
+## 18. File map
+
+```
+docs/
+├── property/
+│   ├── NETNEW_PROGRAM.md                        ← this doc (THE pickup doc)
+│   ├── house_positions.md                       ← locked factual positions
+│   ├── topic_gaps_final.md                      ← 429 net-new candidate list
+│   ├── topic_gaps_redirect_overlap.md
+│   ├── topic_gaps_other_resolved.md
+│   ├── topic_gaps_first_cut.md                  ← intermediate, reference
+│   ├── competitor_rewrite_playbook.md           ← legacy-rebuild methodology (May 21)
+│   ├── track1_page_tracker.md                   ← Wave 1 (closed, 31/31)
+│   ├── track1_site_wide_flags.md                ← Wave 1 flags
+│   ├── track1_discovery_log_session_{A,B,C}.md  ← Wave 1 discoveries
+│   ├── track1_questions_session_{A,B,C}.md      ← Wave 1 Q&A logs
+│   └── wave<N>_*.md                             ← per-wave artefacts (created at launch)
+├── sessions/property/
+│   ├── TRACK1_SESSION_{A,B,C}_START_HERE.md     ← Wave 1 briefs
+│   └── WAVE<N>_SESSION_{A,B,C}_START_HERE.md    ← Wave N briefs
+├── medical/                                     ← parked program
+└── network_state_and_handover_2026-05-21.md     ← broader network state (May 21 baseline)
+
+briefs/property/
+├── track1/                                      ← Wave 1 per-page briefs
+└── wave<N>/                                     ← Wave N per-page briefs
+
+scripts/
+├── property_topic_gap_finder.py
+├── property_topic_gap_filter.py
+├── property_other_reclassify.py
+├── property_cannibalisation_check.py            ← re-run pre every wave
+├── property_redirect_overlap_check.py
+└── property_track1_brief_builder.py             ← adapt for wave N
+
+optimisation_engine/
+├── analysis/detectors.py                        ← monitored_pages regression detector
+├── competitor/
+│   ├── brief_for_opus.py                        ← SITE_RULES
+│   ├── _db.py                                   ← UNTRACKED; copy to every new worktree
+│   └── _fetch.py
+└── ingestion/
+    ├── ingest_gsc_queries.py
+    └── ingest_gsc_pages.py
+
+Property/web/                                    ← the site
+├── content/blog/                                ← 316 markdown files
+└── src/
+    ├── middleware.ts                            ← 429 redirects + per-page additions
+    ├── components/blog/BlogPostRenderer.tsx     ← auto-injects LeadForm
+    └── app/globals.css                          ← .prose-blog aside CSS
+
+Accounting-wt-property-track1-{a,b,c}/           ← Wave 1 worktrees (merged, can delete)
+Accounting-wt-medical-{a,b,c}/                   ← Medical parked worktrees
+```
+
+### Key Supabase tables
+
+| Table | Purpose |
+|---|---|
+| `sites` | Site registry (site_key, gsc_property_url) |
+| `gsc_query_data` | Query-level GSC data per page per day |
+| `gsc_page_performance` | Page-level GSC data per day |
+| `ga4_page_data` | GA4 engagement / conversion |
+| `competitor_serps` | One row per (site_key, query, fetch_date) |
+| `competitor_pages` | One row per competitor URL per SERP |
+| `competitor_gap_reports` | Per-page gap analysis + improvement brief |
+| `monitored_pages` | Wave 1 (52 rewrites + 5 redirects) + future waves; 90-day regression window |
+| `optimisation_opportunities` | Detector outputs queued for review/apply |
+
+---
+
+## 19. Open decisions / known unknowns
+
+- **Wave 2 launch timing.** Confirmed bucket (IHT + DTAs + Expat). User wants prep done before launch; current manager (context-pressured) recommends sub-agent for prep, fresh manager for launch.
+- **Worktree reuse vs fresh.** Wave 1 worktrees still in place. Decide whether to delete branches and reuse for Wave 2, or stand up fresh `property-wave2-{a,b,c}`. Recommend fresh.
+- **Post-Wave-1 cleanups + deploy.** 4 items queued (§3). Do before or after Wave 2? Recommend before deploy; can run in parallel with Wave 2 if manager is fresh.
+- **Legacy rebuild brief generator.** Needs GA4 enrichment on top of GSC + competitor HTML. Design pending; can be a sub-agent task once Wave 2 lands.
+- **285 target vs 429 candidate list.** User narrowed from 429 to ~285. Need to confirm which 144 candidates were dropped, on what basis. Likely lowest-priority or thinnest-evidence pages; check `topic_gaps_final.md` for any priority signal columns.
+- **House positions for legacy rebuilds.** Each legacy page touches existing topics; house_positions should be complete before legacy waves start.
+
+---
+
+## 20. Wave 2 prep — what the prep agent / next manager needs to do
+
+(Detailed handoff for the entity that takes Wave 2 from here.)
+
+1. Extend `docs/property/house_positions.md` with IHT / DTAs / Expat sections (see §5.3 for the spec).
+2. Filter `docs/property/topic_gaps_final.md` to the three buckets and select top 30 (10 IHT + 10 DTAs + 10 Expat) by priority signal.
+3. Adapt `scripts/property_track1_brief_builder.py` with:
+   - IHT / DTAs / Expat-specific authority link bucket.
+   - References to the new house positions sections.
+4. Generate ~30 briefs at `briefs/property/wave2/<slug>.md`.
+5. Run `scripts/property_cannibalisation_check.py` with current `main` (post-Wave-1) as baseline. Audit any 0.30-0.55 partial-overlap candidates.
+6. Create wave2 artefact files:
+   - `docs/property/wave2_page_tracker.md`
+   - `docs/property/wave2_site_wide_flags.md`
+   - `docs/property/wave2_discovery_log_session_{A,B,C}.md`
+   - `docs/property/wave2_questions_session_{A,B,C}.md`
+7. Stand up fresh worktrees: `Accounting-wt-property-wave2-{a,b,c}/` on branches `property-wave2-{a,b,c}` from current `main`.
+8. Copy `.env` and `_db.py` into each worktree.
+9. Write `docs/sessions/property/WAVE2_SESSION_{A,B,C}_START_HERE.md`. Include the session-side watcher pattern (§8.4) baked into the workflow.
+10. Write `docs/sessions/property/WAVE2_LAUNCH_PROMPTS.md` containing the three paste-verbatim launch prompts.
+
+Once 1-10 are done, hand back to the manager for watcher-arm + session-launch.
