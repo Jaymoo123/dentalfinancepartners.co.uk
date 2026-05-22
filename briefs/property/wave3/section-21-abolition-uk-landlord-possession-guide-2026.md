@@ -172,34 +172,65 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** section-21-abolition-uk-landlord-possession-guide-2026 (no override)
+- **Final category:** landlord-tax-essentials (no override)
+- **H1 chosen:** "Section 21 Is Gone: The Landlord's Possession Guide After 1 May 2026"
+- **Meta title chosen:** "Section 21 Abolition: Landlord Possession Guide 2026" (52 chars)
+- **Why these vs other options:** Lead title with the named statutory change ("Section 21 Is Gone") + operational framing ("Possession Guide") + the bifurcation date. Avoids the legalese phrasing "Abolition of Section 21" in favour of the form a landlord searches for ("Section 21 abolition" + "possession").
 
 ### Competitor URLs fetched
+- https://www.ukpropertyaccountants.co.uk/documents-needed-for-renters-rights-act-possession-claim/ (httpx 200 + WebFetch backup) — confirmed 5-document evidence pack with 31 May 2026 RRA Information Sheet deadline. Used the structure but did not duplicate the focus.
+- https://www.legislation.gov.uk/ukpga/2025/26/contents (WebFetch) — confirmed RRA s.2 (AST abolition), s.3 + Sch.1 (grounds), Sch.5 (penalties for related breaches).
+- https://www.legislation.gov.uk/ukpga/1988/50/schedule/2 (WebFetch via earlier C1 research) — confirmed Sch.2 HA 1988 ground-list structure.
+- https://www.legislation.gov.uk/uksi/2026/421/made (WebFetch via C1 research) — confirmed appointed day 1 May 2026, Reg 2 covers tenancy-reform Ch.1 Pt.1 + Sch.1 + Sch.2, plus Section 21 saving provisions.
+- https://www.gov.uk/evicting-tenants (WebFetch) — overview confirming 12-month court-application window for s.8 notices served after 1 May 2026, 4-month standard notice period.
+- https://www.gov.uk/evicting-tenants/giving-notice-to-evict-tenants (WebFetch) — confirmed the general framework + cross-reference to the grounds-for-possession guidance.
+- https://www.gov.uk/government/publications/grounds-for-possession-guidance-for-landlords-and-letting-agents/grounds-for-possession-guidance-for-landlords-and-letting-agents (WebFetch) — comprehensive ground-by-ground table with notice periods. Cross-checked against house position §20.2.
 
 ### Existing-page review (from "Closest existing pages")
+- `renters-rights-act-2026-tax-implications-landlords` — read; tax-implications framing not procedural. Forward-linked at the tax-side closing block. F-1 legacy-rebuild candidate.
+- `rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence` (C1, written earlier this session) — sibling. C2 forward-links twice: in the intro framing and at the tax-deductibility section. C2 covers the legitimate-route mechanics; C1 covers the post-breach defence.
+- `hmrc-penalties-late-landlord-tax-returns-2026` — forward-linked at the closing block as the tax-side penalty parallel.
+- `first-time-landlord-tax-guide-everything-you-need-to-know` — forward-linked at closing as the pillar.
+- `landlord-tax-deductions-uk-2026-complete-list` — forward-linked at the deductibility section.
 
 ### Citations added (external authority)
+- Renters' Rights Act 2025 (2025 c. 26) ss.1-3 + Sch.1 (grounds for possession architecture); ss.15-17 + Sch.5 (re-letting prohibition penalty regime).
+- Housing Act 1988 Sch.2 (as amended) — grounds 1, 1A, 1B, 2, 4, 4A, 5A-5H, 6, 6A, 6B, 7, 7A, 7B, 8, 8A, 9, 10, 11, 12, 13, 14, 14A, 14ZA, 15, 17.
+- Housing Act 1988 s.16J (as inserted by RRA 2025 Sch.1) — 12-month re-letting prohibition.
+- SI 2026/421 — appointed day 1 May 2026 + Section 21 saving provisions.
+- Housing Act 2004 s.214 — deposit protection penalty multiplier (1x-3x).
+- ITTOIA 2005 s.272 — trading-profit principles applied to property businesses (deductibility framework).
+- CPR Part 55 — possession proceedings procedural rules.
+- HMRC BIM38500 — regulatory penalties not deductible.
 
 ### Internal links added (to our existing pages)
+- /blog/landlord-tax-essentials/rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence (intro + deductibility section)
+- /blog/landlord-tax-essentials/renters-rights-act-2026-tax-implications-landlords (deductibility section)
+- /blog/landlord-tax-essentials/landlord-tax-deductions-uk-2026-complete-list (deductibility section)
+- /blog/landlord-tax-essentials/first-time-landlord-tax-guide-everything-you-need-to-know (closing)
+- /blog/landlord-tax-essentials/hmrc-penalties-late-landlord-tax-returns-2026 (closing)
+- 1 forward-mention to forthcoming C9 (portfolio-disposal CGT mechanics) without a hyperlink — to be back-patched once C9 exists on branch. Captured under F-7.
 
 ### Inline CTA placements
+- Aside 1: after the Ground 1A 12-month re-letting prohibition section, at the moment a landlord contemplating disposal realises the timeline complexity.
+- Aside 2: after the contested Ground 8 worked timeline, at the conversion moment where landlords with an active arrears situation want a second opinion ahead of court.
 
 ### Build attempts
+- 1st attempt: clean. 383 static pages generated (+1 vs C1 build).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 == 14 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 52 (≤62 ✓)
+- Meta description length: 149 (≤158 ✓)
+- Internal links resolve: 6 of 6 ✓
+- monitored_pages row inserted: id 126 ✓
+- Body word count: 2,798 (within target band; on the lower side because the page uses two table-format ground lists in place of narrative ground-by-ground enumeration, which keeps the operational reference compact without sacrificing coverage)
 
 ### Flags raised to wave3_site_wide_flags.md
+- None new; F-7 (already filed by C1) extends to cover the C2 forward-mention of C9.
 
 ### 2-3 sentence summary
+Wrote C2 at 2,798 body words. Operational possession guide covering the 1 May 2026 Section 21 abolition, the reformed Section 8 architecture with full mandatory + discretionary ground tables (notice periods cross-checked against the gov.uk grounds guidance), Ground 1A and Ground 8 / 8A in deeper detail, the 5-document evidence pack, the SI 2026/421 transitional saving provisions for pre-1-May-2026 Section 21 notices, two worked timelines (contested Ground 8 and Ground 1A landlord-sale), and the tax-deductibility framework (revenue-character fees deductible against rental income, Ground 1A capital-character fees deductible against the eventual gain). 14 FAQs, 2 asides, build clean.
