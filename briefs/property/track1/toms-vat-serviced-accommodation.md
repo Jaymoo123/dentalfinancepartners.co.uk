@@ -210,50 +210,56 @@ You don't have to use all of these; pick the ones that fit your specific framing
 
 ---
 
-## Per-page work-log (fill in as you go — supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** toms-vat-serviced-accommodation (unchanged)
+- **Final category:** Property Types & Specialist Tax (unchanged)
+- **H1 chosen:** TOMS VAT for Serviced Accommodation: What Sonder Changed, and What Still Works
+- **Meta title chosen:** TOMS VAT and Serviced Accommodation: The Sonder Verdict (55 chars)
+- **Why these vs other options:** Framing differentiator centres on the Sonder decision and the question of what models still qualify. Title leads with the case name (high topical relevance for the post-March-2024 reader) and the practical question.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- ukpropertyaccountants.co.uk TOMS-and-serviced-accommodation guide — pre-Sonder framing; treats TOMS as broadly applicable. Now stale on the Upper Tribunal point.
+- ukpropertyaccountants.co.uk Sonder reversal post — useful confirmation of the Upper Tribunal grounds. Treatment is news-piece-style without business-model analysis. Our differentiator is the post-Sonder operating-model taxonomy (still-qualifies vs no-longer-qualifies).
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `serviced-accommodation-tax-fhl-abolition-april-2025` — direct-tax angle on serviced accommodation. Adjacent but on a different tax stream. No overlap.
+- `serviced-accommodation-vs-buy-to-let-tax-comparison-2026` — strategic comparator; no VAT mechanics depth. No overlap.
+- VAT calculator pages — generic, not domain-specific. No overlap.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Section 53 VATA 1994 (TOMS statutory basis).
+- HMRC VAT Notice 709/5 (TOMS operational guidance).
+- HMRC VAT Notice 709/3 (long-stay reduction for accommodation supplies).
+- Sonder Europe Ltd v HMRC, Upper Tribunal decision, March 2024.
+- Sonder Europe Ltd v HMRC, First-tier Tribunal decision, 2023 (the reversed prior decision).
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/landlord-tax-essentials/income-tax-rates-landlords-2026-27-complete-guide` — individual-tax counterpart.
+- `/blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27` — corporate-tax counterpart for Ltd Co operators.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "The Upper Tribunal Reversal (March 2024)" — peak intent moment: reader has just been told a model they may operate is now outside TOMS. Conversion moment is review and exposure assessment.
+- 1 inline aside on this page; the post-Sonder advice section is the natural conversion ramp by content shape.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — partial fail (meta description 159 chars, 1 over the 158 limit). Removed "operators" from the description.
+- Attempt 2 — pass (clean build, route confirmed, FAQ schema 13=13 in built HTML).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (13 = 13)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 55 chars (limit 62)
+- Meta description length: 149 chars (limit 158)
+- Internal links resolve: 2 link instances both at existing markdown files
+- monitored_pages row inserted: yes
+- Word count: 3038 (within M-3 calibration 2,800–3,500)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None.
 
 ### 2-3 sentence summary
-<freeform>
+Wrote the post-Sonder operating-model taxonomy for serviced-accommodation TOMS. Three still-qualifies models, three now-outside models, financial impact worked example (£1.2m gross, £160k a year VAT swing). The Upper Tribunal decision is the spine of the page; the framing differentiator is honoured by structuring around "what changed and what still works" rather than a generic TOMS overview.
 
