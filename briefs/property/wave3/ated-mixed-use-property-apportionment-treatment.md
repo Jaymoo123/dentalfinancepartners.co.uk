@@ -163,34 +163,57 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** ated-mixed-use-property-apportionment-treatment
+- **Final category:** incorporation-and-company-structures (overridden per F-2 to keep ATED cluster intact alongside A1-A5 and existing pillar)
+- **H1 chosen:** "ATED and Mixed-Use Property: Apportionment, the £500,000 Boundary, and the Just-and-Reasonable Test"
+- **Meta title chosen:** "ATED Mixed-Use Apportionment: Flat-over-Shop Treatment" (54 chars)
+- **Why these vs other options:** Lead title combines the bucket name (ATED) with the topical hook (apportionment) and the most-searched practical archetype (flat-over-shop). The H1 doubles the technical anchors that distinguish this from A1/A2/A3/A4/A5 (apportionment, the £500k boundary, the just-and-reasonable test). Slug kept as the brief manager pre-suggested it.
 
 ### Competitor URLs fetched
+- https://www.ukpropertyaccountants.co.uk/understanding-ated-and-mixed-use-properties-a-detailed-guide/ — fetched; structure is shallow (5 H2s, 1 worked example, 4 named apportionment methods, no FAQs, no statutory citations). Our page goes substantially deeper on just-and-reasonable mechanics, edge cases, SDLT cross-reference, and documentation pack.
+- https://www.gov.uk/government/publications/annual-tax-on-enveloped-dwellings-technical-guidance — gov.uk landing page is a wrapper for an ODT document; technical content not directly fetchable. Treated as a high-level authority citation rather than a source for structural extraction.
 
 ### Existing-page review (from "Closest existing pages")
+- sdlt-mixed-use-property-classification: full read. Strongest cross-link target. Page treats SDLT classification under s.116 FA 2003 with the Hyman/Goodfellow/Pensfold/Withers case law. My page differentiates by being explicitly about the FA 2013 apportionment mechanic, with a clear "ATED apportions, SDLT classifies" framing block.
+- ated-complete-guide-2026-27: full read of cohort, valuation, and apportionment areas. Pillar mentions mixed-use only in passing in the dwelling-test FAQ. My page is the daughter-mechanic page.
+- ated-rental-property-relief-mechanics, ated-overview-..., ated-rates-..., ated-return-amendment-...: cross-linked but no scope overlap.
 
 ### Citations added (external authority)
+1. Finance Act 2013 Part 3 (legislation.gov.uk)
+2. Section 112 FA 2013 dwelling definition (legislation.gov.uk)
+3. HMRC ATED Manual (gov.uk Internal Manuals)
+4. ATED return guidance (gov.uk)
+5. ATED technical guidance (gov.uk)
+6. HMRC SDLT Manual (gov.uk Internal Manuals)
+7. Schedule 24 FA 2007 (legislation.gov.uk)
 
 ### Internal links added (to our existing pages)
+- /blog/incorporation-and-company-structures/ated-overview-companies-holding-uk-residential-property-2026-27 (A1 sibling)
+- /blog/incorporation-and-company-structures/ated-complete-guide-2026-27 (pillar)
+- /blog/incorporation-and-company-structures/ated-rates-2026-27-bands-table-worked-examples (A2 sibling)
+- /blog/incorporation-and-company-structures/ated-rental-property-relief-mechanics
+- /blog/incorporation-and-company-structures/ated-return-amendment-corrections-procedure (A5 sibling) x 2
+- /blog/landlord-tax-essentials/sdlt-mixed-use-property-classification x 2
 
 ### Inline CTA placements
+- Aside 1: after the opening paragraphs, before the first H2 (flat-over-shop framing trust-building done, conversion moment hit)
+- Aside 2: after "What 'Just and Reasonable' Demands in Practice", before the boundary edge cases (1 April 2027 revaluation prompt — high-intent CTA tied to a concrete date)
 
 ### Build attempts
+- Single build pass at 2026-05-22T22:08Z, clean. No warnings on the new page.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 = 14
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 54 (max 62)
+- Meta description length: 152 (max 158) — initially 160, trimmed
+- Internal links resolve: yes (6 unique targets, all checked on file)
+- monitored_pages row inserted: yes (id 137, rewrite_type='rewrite' per Wave 2/3 convention, 90-day window)
+- Body word count: 3,270
 
 ### Flags raised to wave3_site_wide_flags.md
+- None new from A6. Existing F-2 (category override) and F-4 (back-link suggestions including pillar -> A6 if any) carry through; no new SCHEMA flag (the page is not a step-by-step process so HowTo schema is not a fit). No HOUSE_POSITION_CONFLICT (verified §18.4 mixed-use line, our page is consistent).
 
 ### 2-3 sentence summary
+A6 builds out the ATED apportionment mechanic for mixed-use buildings: the residential-portion-only rule, the four accepted apportionment methods (floor area, professional valuation, market rent, separate valuations), and the just-and-reasonable test that governs the choice between them. Three boundary edge cases (serviced accommodation, live-work units, mid-period change of use) add the texture that distinguishes the page from the SDLT mixed-use jurisprudence covered in the sibling Landlord Tax Essentials page. Holds the F-3 cannibalisation discipline by staying tight to apportionment mechanics rather than re-litigating the bucket pillar.
