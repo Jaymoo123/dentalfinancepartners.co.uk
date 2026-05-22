@@ -212,47 +212,54 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** OVERRIDDEN from `capital-gains-tax` (brief suggestion) to `landlord-tax-essentials`. Rationale: the page is fundamentally about SDLT treatment of probate transfers. The CGT death-uplift gets a small interaction section at the end, but categorising in CGT would mislead browse-by-category users. Three of the other SDLT bucket pages live in `landlord-tax-essentials` (A1, A4) or `incorporation-and-company-structures` (A2, A3, A5). Probate-property transfers most naturally sit alongside the other SDLT residential pages in landlord-tax-essentials. Override logged here per brief instruction.
+- **H1 chosen:** "SDLT and Probate Property: The Five Transfer Types and How Each Is Taxed"
+- **Meta title chosen:** "SDLT on Probate Property: Assents, Deeds of Variation, Sales" (60 chars)
+- **Why these vs other options:** Five-category taxonomy frames the page distinctly from the rest of the SDLT bucket (A1 process, A2 mechanics, A3 clarification, A4 decision-framework, A5 conditions-checklist). Lead with "assents" in the title because the assent / no-SDLT misunderstanding is the highest-volume search intent.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/a-complete-guide-to-stamp-duty-relief-for-probate-properties/ — narrow page focused on Sch 6A property-trader relief only. Did not cover the wider framing the brief asks for (assents, deeds of variation, legacy discharge, beneficiary buy-outs). Source used for Sch 6A detail; the four other categories drawn from first principles + house-position cross-check.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- None overlap materially. The closest neighbour (`inheritance-tax-rental-property-uk-guide`) is IHT-focused, not SDLT, and is linked as further reading at the foot of the page.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Section 77 FA 2003 (notifiable transactions)
+- Section 142 IHTA 1984 + Paragraph 8 Schedule 4 FA 2003 (deeds of variation)
+- Schedule 6A FA 2003 (property-trader probate relief)
+- HMRC SDLTM04030 (chargeable consideration on legacy discharge)
+- HMRC SDLTM21010+ (Schedule 6A operational conditions)
+- Section 62 TCGA 1992 (death-uplift CGT)
+- Section 1122 CTA 2010 (connected-persons test for Sch 6A)
+- HMRC SDLT Manual (general)
+- gov.uk: applying for probate
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025` (rates pillar)
+- `/blog/landlord-tax-essentials/sdlt-5-percent-surcharge-refund-claim-process` (A1, refund route for moving-in beneficiaries)
+- `/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide` (IHT companion, verified to exist)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After the "assents" section — high-intent moment for executors and beneficiaries needing to understand the transfer
+- After the "Schedule 6A relief" section — converts corporate property traders looking at probate stock
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass clean (no warnings). Initial body 2,265 words; added Patel-estate worked example + administration-period section + common drafting errors section to reach 3,230 within M-4 floor.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (11 = 11)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 60 (≤62)
+- Meta description length: 146 (≤158)
+- Internal links resolve: all three target markdown files confirmed present
+- monitored_pages row inserted: yes
+- Body word count: 3,230 (within M-4 calibration of 2,800–3,500)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None this page. Category override logged here in the work-log (not a site-wide issue).
 
 ### 2-3 sentence summary
-<freeform>
+A6 covers SDLT on probate property transfers, split into five distinct categories (assents, deeds of variation, legacy discharge, PR-to-third-party sales, beneficiary buy-outs) with the Schedule 6A property-trader relief covered in depth. Patel-estate worked example shows all five categories in one fact pattern. 11 FAQs cover mortgage assumption, will trusts, administration-period mechanics, CGT death-uplift interaction, and the additional-dwellings surcharge interactions. Anti-templated as a five-category taxonomy + worked-example structure, distinct from A1-A5.
 

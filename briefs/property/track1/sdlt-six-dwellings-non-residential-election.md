@@ -204,47 +204,61 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** "Incorporation & Company Structures" (matching the existing taxonomy with ampersand, not "and")
+- **H1 chosen:** "The SDLT Six-Dwellings Non-Residential Election: How It Works and What It Saves"
+- **Meta title chosen:** "SDLT Six-Dwellings Election: Non-Residential Rates Saving" (57 chars; v1 was 65 chars and trimmed)
+- **Why these vs other options:** Lead with the saving framing (vs A1's process framing) so the two SDLT pages have distinct value propositions. "How It Works and What It Saves" telegraphs the worked example structure.
+
+**REVISION 2026-05-22 (per M-2/M-3):** Manager verified via legislation.gov.uk that the six-dwellings rule is automatic under s.116(7) FA 2003, not an election under Sch 6B para 7. House positions doc was corrected on main. Page rewritten throughout: title/H1/meta/intro/H2s/FAQs/body all reframed to "automatic statutory treatment" / "automatic non-residential treatment". Slug preserved per M-2 for SEO continuity. New verbatim quote from s.116(7) added as a callout aside. FAQ #1 added to address the "is it an election" misnomer directly. Two "Schedule 6B" mentions retained, both explanatory (MDR was in Sch 6B, separate provision, abolished in 2024). Remaining "election" mentions: slug/canonical (preserved), FAQ #1 (explains it's not an election), and two body mentions explicitly negating ("No election is required", "No separate election box is ticked").
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/purchase-of-six-or-more-dwellings-at-non-residential-rates/ , ~1,500 words. Cites s.116(7) FA 2003 (not Sch 6B para 7) and treats the rule as automatic, not elective. Useful on linked-transactions and substantial-performance/off-plan mechanics. Triggered the HOUSE_POSITION_CONFLICT flag.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `residential-property-developer-tax-uk` , Touches surface bands; no overlap on the election mechanics. Not the closest meaningful neighbour.
+- `sdlt-buy-to-let-rates-surcharge-guide-2025` , Pillar with one FAQ + one body paragraph on the six-dwellings rule. My page is the applied/depth version; linked back to the pillar for rates context.
+- `sdlt-transfer-property-company-cost` , Has a short H3 "Six-Dwellings Election" subsection. My page goes far deeper on the single-transaction tests and the decision framework. Linked back as the natural sibling.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Finance Act 2003 (legislation.gov.uk)
+- Finance (No. 2) Act 2024 (for MDR abolition + 5% surcharge)
+- HMRC SDLT Manual (general)
+- HMRC SDLT online and paper returns guidance
+- HMRC SDLT calculator
+- Schedule 9A FA 2003 (non-resident surcharge, in FAQ)
+- Schedule 4A FA 2003 (15% non-natural person rate, in FAQ)
+- Section 44 FA 2003 (substantial performance, in body)
+- Section 108 FA 2003 (linked transactions, in body)
+- Paragraph 10 Schedule 15 FA 2003 (partnership incorporation, in decision-framework table)
+- Section 45 FA 2003 (sub-sale relief, in decision-framework table)
+- Paragraph 34 Schedule 10 FA 2003 (overpayment relief, in FAQ)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025` , rates pillar for context
+- `/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost` , natural sibling on portfolio incorporation routes
+- `/blog/landlord-tax-essentials/sdlt-5-percent-surcharge-refund-claim-process` , A1 (cross-link between SDLT bucket pages)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After the "substantial performance and off-plan" subsection , forward-purchase deals are a high-value lead source where contract drafting matters
+- After the "traps" section , buyers nervous they have engineered the threshold convert well at this point
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 , pass (no warnings; new route compiled)
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (13 = 13)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 57 (≤62)
+- Meta description length: 158 (=158)
+- Internal links resolve: all four target markdown files confirmed present
+- monitored_pages row inserted: yes
+- Commit on branch: pending at time of work-log write; will land before tracker flip to ✅ done
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- HOUSE_POSITION_CONFLICT: house positions doc and existing pillar cite Sch 6B para 7 as the authority for the six-dwellings rule; competitor (and likely correct citation) is s.116(7) FA 2003 with automatic, not elective, treatment. Page written per house position framing; orchestrator to verify and synchronise across pages if needed.
 
 ### 2-3 sentence summary
-<freeform>
+A2 covers the mechanics of the six-dwellings rule in depth: single-transaction tests, substantial-performance and off-plan considerations, a £284k worked saving on a £3m bulk acquisition, six recurring traps that defeat the election, the decision framework versus partnership incorporation and sub-sale relief, and how the election is made on the SDLT return. 13 FAQs cover the boundary cases (granny annexes, HMOs, mixed-use, spousal aggregation) and the interaction with the other residential surcharges. Anti-templating handled by leading with the saving (not the mechanics), structuring around traps + decision framework (not "complete guide"), and using a different worked-example shape (bands comparison table) than A1's timeline table.
 

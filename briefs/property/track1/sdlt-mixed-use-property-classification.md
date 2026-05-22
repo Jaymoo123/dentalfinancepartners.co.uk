@@ -213,47 +213,57 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** unchanged (`landlord-tax-essentials`)
+- **H1 chosen:** "SDLT Mixed-Use Property: The Statutory Test, the Case Law, and What Genuinely Counts"
+- **Meta title chosen:** "SDLT Mixed-Use Classification: Case Law, Tests, What Counts" (59 chars)
+- **Why these vs other options:** Substantive case-law-driven page. Different framing from A8 (which treated mixed-use as a scam angle in passing). A9 is the technical complement: same body of authority, opposite framing (when DOES it work, not just when it fails).
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/horton-hall-sdlt-case-residential-vs-non-residential-dispute/ — case-law walkthrough of Horton Hall. Used as cross-check.
+- https://www.ukpropertyaccountants.co.uk/sdlt-and-the-grounds-question-when-does-a-trout-stream-divide-residential-from-non-residential-land/ — Withers and similar water-feature cases. Used for the trout-stream section.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- All five "closest" candidates are VAT calculator pages (likely an embedding artefact, not real semantic neighbours). No overlap; not linked. A8 (refund scams) is the genuine cousin and is linked.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Section 116 FA 2003 (the statutory test)
+- Section 108 FA 2003 (linked transactions, in borderline scenarios)
+- HMRC SDLTM00390 (grounds and gardens, primary published guidance)
+- Hyman v HMRC [2019] FTT, [2022] UT (leading grounds authority)
+- Goodfellow v HMRC [2020] FTT (paddock for leisure horses)
+- Pensfold v HMRC [2020] FTT (short-term grazing licence not enough)
+- Horton Hall v HMRC (substantive grazing licence; rare taxpayer win)
+- Withers v HMRC [2022] FTT (trout-stream/water feature)
+- Schedule 24 FA 2007 (penalties for inaccuracy)
+- Paragraph 34 Schedule 10 FA 2003 (overpayment relief)
+- Basic Payment Scheme / SFI (agricultural evidence references)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/landlord-tax-essentials/sdlt-refund-scams-how-to-avoid` (A8, consumer-protection angle)
+- `/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025` (rates pillar)
+- `/blog/incorporation-and-company-structures/sdlt-six-dwellings-non-residential-election` (A2, parallel automatic non-residential route)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After the case law section — converts country-property buyers with paddocks/fields who need realistic assessment before contracts
+- After the worked example — for estate-purchase buyers with multiple non-residential elements who need evidential support
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass clean. 5 em-dashes replaced with commas. Initial body 2,539 words; added "Borderline scenarios" section (livery yard, barn conversion, split-title estate) to reach 2,890 within M-4 floor.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (11 = 11)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 59 (≤62)
+- Meta description length: 156 (≤158)
+- Internal links resolve: all three target markdown files confirmed present
+- monitored_pages row inserted: yes
+- Body word count: 2,890 (within M-4 calibration of 2,800–3,500)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None this page.
 
 ### 2-3 sentence summary
-<freeform>
+A9 is the substantive case-law-driven treatment of the SDLT mixed-use boundary. Walks through s.116 FA 2003, HMRC's SDLTM00390 multi-factor view, the leading FTT/UT authorities (Hyman, Goodfellow, Pensfold, Horton Hall, Withers), the five evidential pillars of a defensible claim, a Mawell-Estate-style worked example with £294,500 saving where the pillars all hold, three recurring misunderstandings, and three genuinely borderline scenarios (livery yard, mid-conversion barn, split-title estate). 11 FAQs. Anti-templated as a case-law walkthrough distinct from A1-A8.
 

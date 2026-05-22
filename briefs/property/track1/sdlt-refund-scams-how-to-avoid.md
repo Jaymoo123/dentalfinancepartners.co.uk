@@ -203,47 +203,59 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** unchanged (`landlord-tax-essentials`)
+- **H1 chosen:** "SDLT Refund Scams: The Cold-Call Pattern, the Real Routes, and What HMRC Actually Pays"
+- **Meta title chosen:** "SDLT Refund Scams: Red Flags, Real Routes, and What HMRC Pays" (61 chars)
+- **Why these vs other options:** Consumer-protection framing per brief differentiator. Title balances scam-warning with the constructive "real routes" framing so it doesn't read purely defensive. Anti-templated from A1-A7.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/sdlt-refund-scams-be-very-careful-who-you-trust/ — competitor page is short and high-level. Our page goes far deeper with the five named scam angles, eight red flags, four real refund routes table, the engagement-letter cancellation playbook, and the post-refund discovery exposure.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- Brief lists "no close matches". A1 (HRAD refund) and A7 (non-resident refund) are linked as the genuine refund routes referenced in this consumer-protection piece.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Section 116(7) FA 2003 (six-dwellings rule, contrasted)
+- Paragraph 3 Schedule 4ZA FA 2003 (HRAD refund)
+- Schedule 9A FA 2003 (non-resident refund)
+- Section 80 + Schedule 10 FA 2003 (amendment route)
+- Paragraph 34 Schedule 10 FA 2003 (overpayment relief)
+- Schedule 24 FA 2007 (penalties for inaccuracy)
+- DOTAS rules (avoidance scheme disclosure)
+- HMRC SDLTM00390 (grounds and gardens)
+- HMRC Spotlight 63 (property-business arrangements consumer guidance)
+- CIOT 2024 public warning on SDLT refund sector
+- Tribunal case law: Hyman, Goodfellow, Pensfold, Fiander, Brower, Mobey, Mudan, Henderson Acquisitions, P N Bewley
+- Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013
+- Consumer Protection from Unfair Trading Regulations 2008
+- Professional bodies: CIOT, ATT, ICAEW, ICAS, SRA (referenced as regulated alternatives)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/landlord-tax-essentials/sdlt-5-percent-surcharge-refund-claim-process` (A1, HRAD route)
+- `/blog/non-resident-landlord-tax/sdlt-non-resident-2-percent-surcharge` (A7, non-resident route)
+- `/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025` (rates pillar)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After the "five recurring scam angles" section — converts buyers actively being pitched by a refund firm
+- After "if you have already engaged" — high-intent moment for buyers mid-engagement who need an independent review
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass clean. 6 em-dashes replaced with commas. Meta description trimmed from 162 → 147. Initial body 2,609 words; added "if the refund has already been paid" section (HMRC discovery, voluntary disclosure, fee recovery) to reach 2,859 within M-4 floor.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (11 = 11)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 61 (≤62)
+- Meta description length: 147 (≤158)
+- Internal links resolve: all three target markdown files confirmed present
+- monitored_pages row inserted: yes
+- Body word count: 2,859 (within M-4 calibration of 2,800–3,500)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None this page.
 
 ### 2-3 sentence summary
-<freeform>
+A8 is the consumer-protection piece the brief asked for. Sets out the cold-call SDLT refund scam pattern, the five recurring technical angles (mixed-use re-categorisation, retrospective MDR, retrospective six-dwellings, uninhabitable arguments, annexe claims) with tribunal authority against each, the four genuine statutory refund routes in a table, the eight red flags, the engagement-letter cancellation playbook, professional standards / regulated alternatives, and the post-refund discovery exposure. 11 FAQs. Anti-templated from A1-A7 with named-case-law density and a consumer-rights framing.
 
