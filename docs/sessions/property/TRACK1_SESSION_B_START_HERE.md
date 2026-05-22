@@ -127,6 +127,18 @@ The brief has the verbatim commands and code snippets. Refer to it for any step'
 - Security vulnerability that should not wait for a flag entry to be read.
 - Otherwise: never pause. Flag and continue.
 
+### Asking the manager (Q&A channel)
+
+If you genuinely cannot proceed without a manager decision (and the answer is not in your brief, house positions doc, or your own judgement), use the question channel:
+
+- **File:** `docs/property/track1_questions_session_B.md` (append-only; only YOU and the manager write to it)
+- **How:** append a question block at the bottom using the template at the top of that file. Mark `STATUS: open`.
+- **Polling:** re-read the file periodically. When the manager has answered, the STATUS line on your question flips from `open` to `answered` and the response appears directly below your question.
+- **Keep working** on a different page or a different step while you wait, unless the open question genuinely blocks all forward progress.
+- Never edit a previous question or answer. Always append.
+
+This channel is for decisions you need. For things you've already actioned, use `track1_site_wide_flags.md`. For observations that don't need action, use the discovery log.
+
 ## Your Session B pages (8 assigned — Limited company / BTL operation)
 
 In assignment order. Work top to bottom. Claim ONE at a time.

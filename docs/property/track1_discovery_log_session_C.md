@@ -27,3 +27,16 @@
 ---
 
 ## [Sessions: append below this line]
+
+## [2026-05-22 09:55 UTC] [EXISTING_PAGE_LINK_OPPORTUNITY] ATED pillar (C10) needs cross-links from C11/C12/C13 once they ship
+C10 (ated-complete-guide-2026-27) was written before its daughters. The pillar currently contains three "linked from this pillar once published" sentinel sentences in place of forward links to: ated-rental-property-relief-mechanics (C11), ated-15-percent-flat-rate-sdlt-interaction (C12), and ated-late-filing-penalties-mechanics (C13). When each daughter ships, edit the pillar to wrap the sentinel sentence with the proper `<a href>` to the daughter URL. The sentinel phrasing "(linked from this pillar once published)" is the search anchor.
+
+## [2026-05-22 09:55 UTC] [CALCULATOR_IDEA] ATED band-boundary calculator
+A simple interactive that takes a property value and returns (a) the 2026/27 ATED band, (b) the annual charge, (c) whether the value is within 10% of a boundary and a Pre-Return Banding Check is worth requesting, (d) for relievable properties, the day-count apportionment shown as a slider. ATED is one of the simplest tax calcs to model (six bands, one input) and the band-boundary signalling is high-value for the corporate-landlord audience.
+
+## [2026-05-22 09:55 UTC] [AUTHORITY_GAP] Schedule 4A FA 2003 (15% flat-rate SDLT) and FA 2013 Part 3 (ATED)
+These two statutory references are the spine of any company-owned-residential-property page, but a fast scan of our existing content suggests neither is cited by URL anywhere on the site. C10 cites them inline as text; future ATED / company-purchase content should link to the legislation.gov.uk versions directly so HMRC compliance teams treat us as a legitimately authoritative voice.
+
+## [2026-05-22 09:55 UTC] [EXISTING_PAGE_STALE] ATED-related CGT (abolished 2019) — check site for stale references
+Worth a sweep: any existing Property page that mentions "ATED-related CGT" without flagging that it was abolished from 6 April 2019 is technically wrong (the regime is now non-resident company CGT under the standard rules). Track 2 sweep candidate.
+
