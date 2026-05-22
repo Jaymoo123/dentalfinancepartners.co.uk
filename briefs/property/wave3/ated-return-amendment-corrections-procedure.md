@@ -162,37 +162,52 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 
 ---
 
-## Per-page work-log (fill in as you go, supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- Slug / category as briefed; category overridden to incorporation-and-company-structures (F-2).
+- H1: "ATED Return Amendments: The Procedure, the 12-Month Window, and What to Do After It Closes"
+- Meta title: "ATED Return Amendments: Procedure, Window, and Forms" (52)
+- Procedural focus per differentiator; F-4 INTERNAL_LINK back-patch (pillar FAQ -> this page) noted for batch.
 
 ### Competitor URLs fetched
+- Stage 2 validation; ukpropertyaccountants amendment-guide + gov.uk ATED returns + ATED Manual ATED41200 + FA 2009 Sch 24/55 + FA 1998 Sch 18 confirmed.
 
-### Existing-page review (from "Closest existing pages")
+### Existing-page review
+- Pillar: amendment in one FAQ; F-4 back-patch suggestion already logged.
+- A3 clawback: bilateral cross-link (most common amendment trigger).
+- A9 appeals: cross-link for HMRC-rejected amendments.
+- A10 walkthrough: one-line cross-link.
 
-### Citations added (external authority)
+### Citations added
+- gov.uk ATED Returns Guidance
+- HMRC ATED Manual ATED41200
+- FA 2013 Part 3
+- FA 2009 Sch 24
+- FA 2009 Sch 55
+- FA 1998 Sch 18 (enquiry framework)
 
-### Internal links added (to our existing pages)
+### Internal links added
+- A1, A2, A3, A9, ated-rental-property-relief-mechanics, ated-complete-guide-2026-27, ated-late-filing-penalties-mechanics
 
 ### Inline CTA placements
+- One aside after "Supporting evidence" list — amendment package preparation moment.
 
 ### Build attempts
+- Build 1: metaDesc 159 (over 158). Trimmed "and " before "FA 2009 Sch 55 risk". Build 2 clean.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count: 14 / 14 ✓
+- Em-dashes: 0 ✓
+- Tailwind: 0 ✓
+- Meta title: 52 ≤ 62 ✓
+- Meta description: 156 ≤ 158 ✓
+- Internal links resolve: 7 unique targets ✓
+- monitored_pages: id 133 ✓
+- Body word count: 2,511
 
-### Flags raised to wave3_site_wide_flags.md
+### Flags raised
+- None new; F-4 back-patch capture already exists.
 
 ### 2-3 sentence summary
+A5 walks through the ATED amendment procedure: six trigger scenarios, the 12-month window (with the late-filed-extended mechanic), online vs paper Form ATED51 routes, the supporting evidence HMRC expects, and the two post-window routes (overpayment relief within 4 years for tax-paid-but-not-due cases; unprompted voluntary disclosure for tax-due-but-not-paid cases). Penalty calculus (scenarios A unprompted-in-window / B unprompted-out-of-window / C HMRC-discovered) carries the strategic argument for self-correcting early. Three worked examples (relief mis-claim / valuation re-test multi-period / disposal mid-year RACA) close.

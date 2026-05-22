@@ -162,37 +162,59 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 
 ---
 
-## Per-page work-log (fill in as you go, supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** ated-late-filing-penalty-appeal-reasonable-excuse
+- **Final category:** incorporation-and-company-structures (overridden per F-2)
+- **H1 chosen:** "Appealing an ATED Late-Filing Penalty: Reasonable Excuse, Special Circumstances, and the First-tier Tribunal Route"
+- **Meta title chosen:** "ATED Penalty Appeals: Reasonable Excuse and FTT Route" (53 chars)
+- **Why these vs other options:** Title leads with the high-search query "ATED penalty appeals", anchors on the two statutory grounds (reasonable excuse + special circumstances per Sch 55 paras 23 and 16), and signals the FTT route as the procedural destination. Distinguishes from the existing penalty-cascade mechanic page.
 
 ### Competitor URLs fetched
+- https://www.ukpropertyaccountants.co.uk/ated-late-filing-penalty-failed-reasonable-excuse-or-special-circumstances-appeal/ — full extract on Conchri Investments Ltd v HMRC [2025] UKFTT 600 (TC). Confirmed facts (193-3,773 days late, £15,700 total penalties, 10-year non-compliance, overseas-incorporated co, rental-relief claim), the three failed reasonable-excuse grounds, and the special-circumstances dismissal.
+- https://www.ukpropertyaccountants.co.uk/ated-penalties-and-appeals/ — full extract on procedural mechanics (30-day appeal window, BX9 1HD postal address, HMRC's four reasonable-excuse categories, postal vs FTT routes).
 
 ### Existing-page review (from "Closest existing pages")
+- ated-late-filing-penalties-mechanics: tight pairing. Existing covers the cascade; this is the appeal procedure that comes after. Discipline held: this page does NOT re-cover the cascade in body, only references it.
+- ated-complete-guide-2026-27: pillar; one-paragraph cross-link.
+- A5 sibling (amendment): adjacency where amendment is the better fix; cross-link in decision tree.
+- A8 sibling (OTM): adjacency where penalty arose from OTM-triggered filing; cross-link in decision tree.
 
 ### Citations added (external authority)
+1. Schedule 55 FA 2009 (legislation.gov.uk) — paragraph 23 reasonable excuse + paragraph 16 special circumstances + paragraph 22 late appeal
+2. Schedule 56 FA 2009 (legislation.gov.uk) — parallel late-payment regime
+3. First-tier Tax Tribunal decisions database (gov.uk)
+4. HMRC Compliance Handbook CH71500 (gov.uk)
+5. HMRC ATED Manual (gov.uk)
+6. FTT appeal guidance (gov.uk)
+- Plus: Conchri Investments Limited v HMRC [2025] UKFTT 600 (TC) cited throughout as the modern controlling authority.
 
-### Internal links added (to our existing pages)
+### Internal links added
+- ated-late-filing-penalties-mechanics (cascade pillar)
+- ated-return-amendment-corrections-procedure (A5)
+- ated-overseas-companies-voluntary-compliance-otm-letters (A8)
+- ated-complete-guide-2026-27
 
 ### Inline CTA placements
+- Aside 1: after opening framing, before "When the Right Move Is to Appeal" H2 — peak-intent moment for a recipient holding a fresh penalty notice
+- Aside 2: after the decision tree section — peak-intent moment for a multi-period stack reader
 
 ### Build attempts
+- Single build pass at 2026-05-23T00:50Z, clean.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count: 14 = 14
+- Em-dashes: 0 (initially 1 in FAQ #11, removed to comma)
+- Tailwind classes: 0
+- Meta title length: 53
+- Meta description length: 154
+- Internal links resolve: yes (4 unique, all existing siblings/pillar)
+- monitored_pages row inserted: yes
+- Body word count: 2,615
 
 ### Flags raised to wave3_site_wide_flags.md
+- None new. F-4 already anticipates the back-link patches from the penalty cascade page to A9.
 
 ### 2-3 sentence summary
+A9 is the appeals-procedure deep-dive anchored on Conchri Investments Limited v HMRC [2025] UKFTT 600 (TC) and the Schedule 55 FA 2009 statutory framework. Covers the 30-day window, the statutory reasonable-excuse test at paragraph 23 with the three express exclusions, the special-circumstances discretion at paragraph 16, the four HMRC-listed grounds with realistic FTT success rates table, the HMRC review vs FTT direct-notification routes, the evidence pack, and a 4-tier decision tree on whether to appeal or pay. Discipline held: does not re-cover the cascade itself, points to the existing mechanics page.

@@ -163,37 +163,64 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 
 ---
 
-## Per-page work-log (fill in as you go, supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** ated-overseas-companies-voluntary-compliance-otm-letters
+- **Final category:** incorporation-and-company-structures (overridden per F-2)
+- **H1 chosen:** "ATED Compliance for Overseas Companies: HMRC's OTM Letters Campaign and the Voluntary Disclosure Route"
+- **Meta title chosen:** "ATED Overseas Companies: OTM Letters and Disclosure" (51 chars)
+- **Why these vs other options:** Title leads with the high-search-volume bucket combination (ATED + overseas companies) and the distinct trigger event (OTM letters). H1 adds the disclosure-route framing that distinguishes the page from a generic compliance-overview. Persona-led title matches the recipient mental state.
 
 ### Competitor URLs fetched
+- https://www.ukpropertyaccountants.co.uk/hmrcs-otm-letters-campaign-directed-at-ated-avoidance/ — full extract. Confirmed target population, 40-day window, four letter variants, QPRBR loss-pattern hook, campaign scope into 2025/26.
+- https://www.ukpropertyaccountants.co.uk/voluntary-ated-compliance-a-guide-for-overseas-companies/ — full extract. Confirmed information-required schedule for disclosure, penalty cascade (£100/£200/£300/£300), 7.00% interest rate (Feb 2025), five voluntary-disclosure advantages.
+- gov.uk DDS and RoE pages — used as authority citations rather than structural sources.
 
 ### Existing-page review (from "Closest existing pages")
+- ated-complete-guide-2026-27: pillar (overseas-co treatment in one paragraph).
+- ated-late-filing-penalties-mechanics: strong adjacency — Schedule 55 cascade applies to OTM-prompted filings.
+- ated-rental-property-relief-mechanics: central to the QPRBR question.
+- ated-return-amendment-corrections-procedure (A5 sibling): cross-linked.
+- non-resident-landlord-scheme-uk-complete-guide: adjacent NRL compliance for overseas-corporate landlords.
 
 ### Citations added (external authority)
+1. Finance Act 2013 Part 3 (legislation.gov.uk)
+2. HMRC ATED Manual (gov.uk)
+3. ATED return guidance (gov.uk)
+4. Digital Disclosure Service (gov.uk)
+5. Register of Overseas Entities (gov.uk)
+6. Economic Crime (Transparency and Enforcement) Act 2022 (legislation.gov.uk)
+7. Schedule 55 FA 2009 (legislation.gov.uk)
+8. Schedule 24 FA 2007 (legislation.gov.uk)
 
-### Internal links added (to our existing pages)
+### Internal links added
+- A1 sibling (overview)
+- ated-complete-guide-2026-27 (pillar)
+- ated-rental-property-relief-mechanics
+- ated-late-filing-penalties-mechanics
+- ated-return-amendment-corrections-procedure (A5)
+- non-resident-landlord-scheme-uk-complete-guide
 
 ### Inline CTA placements
+- Aside 1: after opening paragraphs, before "Who HMRC's OTM Campaign Targets" H2 — recipient-state intervention (have you received a letter? are you worried?)
+- Aside 2: after the voluntary-vs-discovery penalty calculus table — peak-intent moment for a quantified £72,000 gap-aware reader
 
 ### Build attempts
+- Single build pass at 2026-05-23T00:25Z, clean.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count: 14 = 14
+- Em-dashes: 0
+- Tailwind classes: 0
+- Meta title length: 51
+- Meta description length: 151 (initially 161, trimmed)
+- Internal links resolve: yes (6 unique, all checked)
+- monitored_pages row inserted: yes
+- Body word count: 2,928
 
 ### Flags raised to wave3_site_wide_flags.md
+- None new. F-4 pillar back-link batch already anticipates "ated-complete-guide-2026-27 should forward-link to A8 at the overseas-company FAQ" pattern.
 
 ### 2-3 sentence summary
+A8 is the persona-led OTM letters / overseas-company compliance page. Differentiates from A1-A7 by being recipient-state driven (you have a letter, what next?) rather than analytical-mechanics driven. Four letter variants, 40-day window, three response routes (file / evidence / DDS disclosure), QPRBR loss-pattern explainer, RoE parallel-regime context, penalty calculus table showing the £60-£100k typical gap between voluntary and discovery on a £200k underpayment, and a five-year BVI-flat worked example showing the clean-closure outcome.

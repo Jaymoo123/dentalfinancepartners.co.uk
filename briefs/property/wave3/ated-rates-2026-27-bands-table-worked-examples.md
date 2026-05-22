@@ -163,34 +163,54 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** ated-rates-2026-27-bands-table-worked-examples
+- **Final category:** Incorporation & Company Structures (override per F-2)
+- **H1 chosen:** "ATED Rates 2026/27: The Bands, the Charges, and Worked Examples by Tier"
+- **Meta title chosen:** "ATED Rates 2026/27: Bands Table and Worked Examples" (51 chars)
+- **Why these vs other options:** Leads with the year + "Rates" to lock the rates-reference search intent. The worked-examples promise in both metaTitle and H1 differentiates from the pillar's "Complete Guide" framing. Body structure (6 bands, 3-4 examples each, day-apportionment maths, PRBC walkthrough) honours the F-3 cannibalisation discipline against the pillar.
 
 ### Competitor URLs fetched
+- Relied on Stage 2 validation; ukpropertyaccountants /ated-rates and gov.uk /annual-tax-on-enveloped-dwellings-the-basics confirmed live and house-position consistent per F-5. No fresh fetch needed.
 
 ### Existing-page review (from "Closest existing pages")
+- `ated-complete-guide-2026-27`: pillar carries band table verbatim in FAQ + body. A2 differentiates by per-band worked examples (3-4 each), day-apportionment maths, year-on-year delta table, and PRBC step-by-step. No outline overlap with pillar's "Annual Charges" section.
+- A1 sibling (just shipped): bilateral cross-link. A1 is positioning; A2 is numbers.
+- `ated-rental-property-relief-mechanics`: cross-link in band-2 worked example.
+- `ated-15-percent-flat-rate-sdlt-interaction`: cross-link in band-3 worked example for the SDLT-clawback dimension.
+- `ated-late-filing-penalties-mechanics`: cross-link in the closing "where to go for the cascade" reference.
 
 ### Citations added (external authority)
+- gov.uk ATED basics guidance
+- gov.uk ATED Technical Guidance (CPI mechanic)
+- HMRC ATED Manual
+- legislation.gov.uk FA 2013 Part 3
+- gov.uk ATED Returns Guidance
 
 ### Internal links added (to our existing pages)
+- /blog/incorporation-and-company-structures/ated-overview-companies-holding-uk-residential-property-2026-27 (A1, bilateral)
+- /blog/incorporation-and-company-structures/ated-complete-guide-2026-27 (pillar)
+- /blog/incorporation-and-company-structures/ated-rental-property-relief-mechanics
+- /blog/incorporation-and-company-structures/ated-15-percent-flat-rate-sdlt-interaction
+- /blog/incorporation-and-company-structures/ated-late-filing-penalties-mechanics
 
 ### Inline CTA placements
+- Two asides: (1) after band 1 worked examples on claim-only relief return discipline; (2) after band 6 worked examples on documentation / relief-defence file build.
 
 ### Build attempts
+- Build 1: meta description was 163 chars (over 158 limit); trimmed by removing "year-on-year delta, " phrase. Build 2 clean.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 13 / 13 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 51 (limit 62) ✓
+- Meta description length: 143 (limit 158) ✓
+- Internal links resolve: 5 unique target slugs verified present ✓
+- monitored_pages row inserted: yes (id 125, rewrite_type='rewrite', 90-day window) ✓
+- Body word count: 3,454 (longer end of the range; the per-band worked examples justify the depth, per F-3 cannibalisation discipline)
 
 ### Flags raised to wave3_site_wide_flags.md
+- None new this page.
 
 ### 2-3 sentence summary
+A2 ships the ATED rates reference page with 2026/27 bands, six-band worked examples (3-4 per band, anonymised facts across UK Ltd, overseas company, family-partnership-with-corporate-partner, and charity holding structures), the day-apportionment maths for mid-year and newly-built acquisitions, the year-on-year delta against 2025/26, and a step-by-step PRBC walkthrough for boundary cases. F-3 cannibalisation discipline against the pillar held: no narrative restatement of chargeable persons or reliefs, all cross-linked out for depth. Word count at the upper end (3,454) because worked-example density was the F-3 differentiation lever.

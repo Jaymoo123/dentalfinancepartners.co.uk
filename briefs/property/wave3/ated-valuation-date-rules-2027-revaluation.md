@@ -161,37 +161,62 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 
 ---
 
-## Per-page work-log (fill in as you go, supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** ated-valuation-date-rules-2027-revaluation
+- **Final category:** incorporation-and-company-structures (overridden per F-2)
+- **H1 chosen:** "ATED Valuation Date Rules: The Five-Yearly Cycle, the 1 April 2027 Revaluation, and the Pre-Return Banding Check"
+- **Meta title chosen:** "ATED Valuation Dates: 2027 Revaluation, PRBC, Acquisition Rule" (62 chars, at max)
+- **Why these vs other options:** Title anchors on the high-search-volume phrase "ATED valuation" and signals the three distinct technical anchors of the page (revaluation cycle / PRBC / acquisition rule). Slug as manager-pre-filled. H1 expands what readers can expect.
 
 ### Competitor URLs fetched
+- https://www.ukpropertyaccountants.co.uk/understanding-ated-valuation-rules/ — fetched. Structure: 6 H2s, 5 H3s. Notable coverage: the £40,000 substantial-acquisition / substantial-disposal triggers (which competitor article specifies precisely), the Type 1 / Type 2 HMRC letter framework, and the 5-year cycle with the 2017/2022/2027 dates. Competitor lacks: PRBC mechanic, worked examples with figures, statutory citations.
+- https://www.gov.uk/government/publications/annual-tax-on-enveloped-dwellings-technical-guidance — landing page only, ODT-document linked but not directly fetchable. Cited as authority source.
+- https://www.landlordstax.co.uk/ated-valuation-date — manager pre-fill, not directly fetched (permission restriction noted in brief).
 
 ### Existing-page review (from "Closest existing pages")
+- ated-complete-guide-2026-27: pillar FAQ "How is the property value for ATED determined?" treats valuation in 3 sentences (2022 cycle + PRBC mention). My page is the full mechanic.
+- ated-rates-2026-27-bands-table-worked-examples: companion — A2 covers what you pay; A7 covers what value applies.
+- ated-mixed-use-property-apportionment-treatment (A6 sibling): cross-linked for the apportionment-as-valuation overlap.
+- ated-15-percent-flat-rate-sdlt-interaction: same acquisition value drives both SDLT 15% triggering and ATED first-year banding. Cross-linked in the acquisition section.
+- ated-rental-property-relief-mechanics: relief claimers still need to set a valuation; one-line cross-link.
 
 ### Citations added (external authority)
+1. Finance Act 2013 Part 3 (legislation.gov.uk)
+2. HMRC ATED Manual (gov.uk Internal Manuals)
+3. ATED return guidance (gov.uk)
+4. ATED technical guidance (gov.uk)
+5. Schedule 24 FA 2007 (legislation.gov.uk)
+6. RICS (rics.org)
 
 ### Internal links added (to our existing pages)
+- /blog/incorporation-and-company-structures/ated-overview-companies-holding-uk-residential-property-2026-27
+- /blog/incorporation-and-company-structures/ated-complete-guide-2026-27
+- /blog/incorporation-and-company-structures/ated-rates-2026-27-bands-table-worked-examples
+- /blog/incorporation-and-company-structures/ated-mixed-use-property-apportionment-treatment (A6 sibling)
+- /blog/incorporation-and-company-structures/ated-15-percent-flat-rate-sdlt-interaction
+- /blog/incorporation-and-company-structures/ated-rental-property-relief-mechanics
 
 ### Inline CTA placements
+- Aside 1: after the opening framing, before "Five-Yearly Cycle" H2 (trust built via 2027 anchor, conversion moment hit on the 2027 prep service)
+- Aside 2: after the £4.9m worked example, before the HMRC challenge section (peak-intent moment for a high-value reader to ask for help)
 
 ### Build attempts
+- Single build pass at 2026-05-23T00:05Z, clean.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 = 14
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 62 (at max, ok)
+- Meta description length: 154 (max 158)
+- Internal links resolve: yes (6 unique targets)
+- monitored_pages row inserted: yes (rewrite_type=rewrite, 90-day window)
+- Body word count: 2,713
 
 ### Flags raised to wave3_site_wide_flags.md
+- No new flags. F-4 pillar back-link patches already cover the suggested "ated-complete-guide-2026-27 valuation FAQ should forward-link to A7" item; nothing new to add.
 
 ### 2-3 sentence summary
+A7 builds out the ATED valuation mechanic in full: the five-yearly cycle (2012/2017/2022/2027), the acquisition-date interim rule, the £40,000 substantial-acquisition and substantial-disposal triggers, the Pre-Return Banding Check service for near-boundary values, and the practical decision on when to instruct a chartered surveyor. Anchored on the 1 April 2027 revaluation, with a £4.9m-to-£5.3m worked example showing the £43k-a-year band-jump impact. Differentiated from A2 (rates) and A6 (apportionment) by being the standalone valuation-date deep-dive that the pillar's three-sentence FAQ does not deliver.
