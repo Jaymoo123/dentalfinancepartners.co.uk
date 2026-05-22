@@ -210,47 +210,56 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** ated-15-percent-flat-rate-sdlt-interaction (unchanged)
+- **Final category:** Incorporation & Company Structures (unchanged)
+- **H1 chosen:** ATED and the 15% Flat-Rate SDLT: How the Two Charges Lock Together
+- **Meta title chosen:** ATED and the 15% Flat-Rate SDLT: How They Interact (50 chars)
+- **Why these vs other options:** Framing differentiator is the cross-tax interaction, not either tax in isolation. Title leads with both tax names so the SERP query intent ("how do ATED and the 15% SDLT interact") is matched directly.
+- **Word count overage justification (per M-3):** 3700 words vs 3500 ceiling for daughters. The overage is driven by three deliberately distinct worked examples (£1.5m happy-case Wandsworth, same property with 18-month clawback, £600k non-resident company) — each is a different scenario the page needs to ground, and trimming any one would weaken the differentiator. The compliance-sequence checklist at the end is also operationally critical. Not 4,000+ words; comfortably under that threshold.
+- **House positions consideration (M-1):** Brought in the s.116(7) FA 2003 automatic six-dwellings rule in the FAQ on six-or-more acquisitions, framed as statutory deeming not election per the corrected house position.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- ukpropertyaccountants.co.uk ATED complete guide (already fetched in C10 research) — has thin coverage of the SDLT interaction; treats the 15% as a passing mention rather than a parallel-track tax. Our gap is the explicit sequence and clawback worked example.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `sdlt-buy-to-let-rates-surcharge-guide-2025` — covers the ordinary SDLT band structure but does not address Schedule 4A or the 15% flat rate. Adjacent but not overlapping.
+- `nrl-withholding-tax-20-percent-basic-rate-deduction` — non-resident landlord scheme, different tax stream. No overlap.
+- The Section 24 closest-existing pages are income-tax-side, no overlap.
+- No cannibalisation risk. The closest content is C10 (pillar) and C11 (rental relief daughter), both of which this page is intended to complement, and which it links back to.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- FA 2003 Schedule 4A (the 15% flat-rate regime, "higher rate transactions") — spine of the page.
+- FA 2003 section 81ZA (the further return obligation on loss of relief within three years) — cited for the clawback mechanism.
+- FA 2003 section 116(7) (the six-dwellings automatic non-residential treatment) — cited in the relevant FAQ.
+- FA 2003 Schedule 10 paragraph 34 (overpayment relief) — cited for the post-12-month recovery route.
+- FA 2003 section 53 (market-value rule on connected-party transfers) — cited in the spousal-transfer FAQ.
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/incorporation-and-company-structures/ated-complete-guide-2026-27` (×2) — pillar backlink for the wider regime.
+- `/blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27` — counterpart corporate tax obligation.
+- `/blog/landlord-tax-essentials/income-tax-rates-landlords-2026-27-complete-guide` — individual-counterfactual.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "Claiming the Relief at Acquisition" — the 14-day SDLT return window is the highest-intent moment because a missed relief code = full £225k SDLT on a £1.5m flat. Conversion moment: "I'm about to complete on a corporate acquisition".
+- After "Worked Example 2" (the clawback) — second-highest intent because the three-year window is wealth-planning-relevant. Conversion moment: "I have a corporate-held property and the family circumstances are shifting".
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — partial fail (7 em-dashes in the reliefs bullet list, all caught by grep). Replaced with comma-led syntax.
+- Attempt 2 — pass (clean build, route confirmed, FAQ schema 12=12 in built HTML).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (12 = 12)
+- Em-dashes in markdown: 0 (fixed after attempt 1)
+- Tailwind classes in markdown: 0
+- Meta title length: 50 chars (limit 62)
+- Meta description length: 149 chars (limit 158)
+- Internal links resolve: all 4 link instances point at existing markdown files
+- monitored_pages row inserted: yes
+- Word count: 3700 (200 words over M-3 ATED-daughter ceiling 3500; justified in Decisions block above; well under the 4000-word threshold that requires deeper justification)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None.
 
 ### 2-3 sentence summary
-<freeform>
+Wrote the SDLT × ATED interaction daughter of C10 with three worked examples covering the happy path, the three-year clawback, and the non-resident company scenario. The framing differentiator (sequence and clawback) is honoured by explicitly mapping the SDLT 14-day window, the ATED 30-day acquisition return, and the annual 30 April return onto a single compliance timeline. M-1 correction (s.116(7) FA 2003 automatic six-dwellings rule) brought into the relevant FAQ.
 
