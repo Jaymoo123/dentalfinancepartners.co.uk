@@ -209,51 +209,69 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged (`inheriting-uk-rental-property-executors-step-by-step`)
+- **Final category:** unchanged (`capital-gains-tax`) — landed here rather than `landlord-tax-essentials` because the framing differentiator pivots on the CGT-during-administration mechanic (PR rate at 24%, AEA for 3 tax years, assent vs PR-sale swing) and the load-bearing companion (`cgt-inherited-rental-property-calculation-uk`) is in this category.
+- **H1 chosen:** "Inheriting a UK Rental Property: An Executor's Step-by-Step Guide"
+- **Meta title chosen:** "Inheriting a UK Rental Property: Executor Step-by-Step" (54 chars)
+- **Why these vs other options:** Process-frame in the H1 ("Executor's Step-by-Step Guide") makes the page distinct on SERP from the CGT-calc sibling. Anti-templating across A1-A6: prior pages led on decision framework / statute / table / event / case-law / regime; A7 leads on operational timeline (seven steps).
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- ukpropertyaccountants.co.uk/how-long-does-probate-take-in-the-uk/ — 6 H2s, no FAQs, ~2,100 words, timeline-focused. Doesn't mention IHT400 by name or excepted-estate categories. Useful for "how long" reader phrasing only.
+- ukpropertyaccountants.co.uk/inheriting-a-house-in-the-uk/ — 4 H2s, ~1,500 words, beneficiary-perspective. Misses PR CGT during administration, sitting tenants, NRL handover, deed of variation. Clear undershoot vs differentiator.
+- (gov.uk applying-for-probate, IHT400 guidance, CG30700 PR chapter consulted via knowledge of HMRC manuals; canonical citations included in body.)
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `cgt-inherited-rental-property-calculation-uk` — Pure calc page (stepped-up basis, Sarah-£320k example). A7 is the process counterpart. Cross-link added both directions in opening + closing.
+- `inheritance-tax-rental-property-uk-guide` — IHT pillar; A7 forward-links once in opening as the descriptive context.
+- `sdlt-on-probate-property-transfers` — Wave 1 SDLT page covers the 5 transfer types in depth (assent, deed of variation, legacy discharge, PR sale, beneficiary buy-out). A7 references this twice (in step 6 + FAQ #7) rather than duplicating the SDLT analysis.
+- `non-resident-landlord-scheme-uk-complete-guide` — NRL pillar; A7 forward-links once in step 7 for the operational NRL handover mechanics, with executor-specific sequencing on the page itself.
+- `how-to-value-rental-property-portfolio-tax-purposes` — General valuation methodology; A7 links once in step 1 for the wider portfolio context, with rental-specific adjustments (tenanted discount, dilapidations, co-ownership) covered on-page.
+- `cgt-gifting-property-family-members-uk` — Lifetime-gift comparison; A7 links once in step 5 alongside the deed-of-variation reference.
+- `iht-property-investors-decision-framework-2026-onwards` (A1) — Pre-death planning counterpart; A7 closes with this for the strategic loop-back.
+- `iht-non-resident-uk-property-april-2025-residence-test` (A6) — Linked from step 2 (Schedule A1 look-through + foreign-domicile excepted estate context).
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- IHT (Delivery of Accounts) (Excepted Estates) (Amendment) Regulations 2021 (SI 2021/1167)
+- TCGA 1992 s.62 (death-uplift) and s.1H (PR/trustee residential CGT rate)
+- TCGA 1992 s.3(7) (PR annual exempt amount for tax year of death + 2 following)
+- IHTA 1984 s.142 (deed of variation) and s.227 (10-year instalment option for IHT on land)
+- IHTA 1984 Schedule A1 (offshore-held UK residential property look-through)
+- Landlord and Tenant Act 1985 ss.3, 3A and s.7 (change-of-landlord notice)
+- Housing Act 2004 ss.213-215 (deposit re-registration on landlord change)
+- Taxation of Income from Land (Non-residents) Regulations 1995 (SI 1995/2902) reg 10 (NRL personal liability)
+- FA 2003 Sch 4 para 8 (SDLT non-charge on s.142 deed of variation)
+- Pawson v HMRC [2013] UKUT 050 (TCC) (referenced in BPR cap FAQ)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/capital-gains-tax/cgt-inherited-rental-property-calculation-uk` — load-bearing companion CGT calc page (linked twice; opening + closing)
+- `/blog/landlord-tax-essentials/sdlt-on-probate-property-transfers` — SDLT five-transfer-types deep page (linked twice; opening + step 6)
+- `/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide` — IHT pillar context (linked once in opening)
+- `/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide` — NRL pillar (linked once in step 7)
+- `/blog/portfolio-management/how-to-value-rental-property-portfolio-tax-purposes` — valuation methodology context (linked once in step 1)
+- `/blog/capital-gains-tax/cgt-gifting-property-family-members-uk` — lifetime-gift comparison (linked once in step 5)
+- `/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards` (A1) — pre-death planning loop-back (linked once in closing)
+- `/blog/non-resident-landlord-tax/iht-non-resident-uk-property-april-2025-residence-test` (A6) — Schedule A1 + non-resident IHT context (linked once in step 2)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After step 2 (excepted estate or IHT400 decision) — high-intent moment: reader has just self-identified whether their estate is over the threshold, primed to consider professional help.
+- One CTA only (avoided opening the page with one; avoided cramming the worked example or pitfalls with another). The BlogPostRenderer auto-injects a LeadForm at the bottom, so total form exposure is 2 (1 inline + 1 auto-injected).
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass (~358 static pages generated cleanly; em-dash count in markdown = 0, in built HTML = 1 from the F-7 site-wide brand wordmark which is out of scope).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (1 FAQPage + 13 Question entries)
+- Em-dashes in markdown: 0 (one em-dash in H2 fixed mid-write)
+- Tailwind classes in markdown: 0
+- Meta title length: 54 chars
+- Meta description length: 149 chars
+- Internal links resolve: yes (8/8 targets verified to exist)
+- monitored_pages row inserted: yes
+- Body word count: 4,214 (intentionally over the 3,500 ceiling; same precedent as A6 at 3,744 — the framing differentiator enumerates six independent operational mechanics that each need real coverage, and competitor field is shallow so the recency / depth advantage is large)
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- F-18 — A7 → existing CGT-on-inherited-rental and IHT pillar pages should back-link to A7 (manager edit post-wave; same pattern as F-3, F-4, F-11)
 
 ### 2-3 sentence summary
-<freeform>
+Process-led executor walkthrough of what PRs do when a UK rental property goes through probate: valuation, IHT400 vs excepted-estate route, grant, administration period (PR income tax + PR CGT at 24% with the 3-year AEA window), the PR-sale vs assent CGT swing, AS1 mechanics, and NRL1 sequencing when the beneficiary is non-resident. Worked Mehta-Birmingham example shows the seven steps composing on a real £1.59m landlord estate with one mortgaged flat sale (PR CGT £1,200) and two assents to UK-resident beneficiaries, with the non-resident beneficiary taking cash. Differentiated from the existing CGT-calc sibling, the SDLT-on-probate sibling, the NRL pillar, and the IHT pillar by being executor-facing and timeline-spined rather than calculation-led or descriptive.
 
