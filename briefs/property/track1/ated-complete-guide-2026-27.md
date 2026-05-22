@@ -213,47 +213,56 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** ated-complete-guide-2026-27 (unchanged)
+- **Final category:** Incorporation & Company Structures (unchanged)
+- **H1 chosen:** ATED 2026/27: The Complete Guide to Annual Tax on Enveloped Dwellings
+- **Meta title chosen:** ATED 2026/27: Complete Guide for Property Companies (51 chars)
+- **Why these vs other options:** Pillar reference framing demands "complete guide" wording; "2026/27" pins currency and signals freshness to SERP; "for Property Companies" filters non-buyer traffic (individuals are outside ATED entirely).
+- **Sequence choice:** Wrote C10 (pillar) FIRST per Session C start-here guidance so C11-C13 daughters can link back.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/a-complete-guide-to-annual-tax-on-enveloped-dwellings/ — exhaustive but list-heavy and full of sample-letter screenshots; outline confirmed the major H2 territories (applicability, valuation, return mechanics, reliefs, penalty cascade).
+- https://www.ukpropertyaccountants.co.uk/annual-tax-on-enveloped-dwellings-pro-and-cons/ — thin "pros and cons" listicle; useful for confirming what NOT to do (no analytical depth on the dis-envelope vs hold decision).
+- HMRC ATED basics page (https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics) — pulled official 2026/27 chargeable amounts directly from the gov.uk source rather than relying on competitor figures; confirmed CPI uplift over 2025/26 figures in house positions doc.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `corporation-tax-rates-property-companies-2026-27` — adjacent (different tax, same corporate-landlord audience); linked into the "Where ATED Sits Alongside the Other Property Taxes" section. No overlap risk.
+- `capital-gains-tax-property-complete-guide-uk` — adjacent (CGT on disposal); linked from the "ATED-related CGT abolished" section. No overlap.
+- `income-tax-rates-landlords-2026-27-complete-guide` — counterfactual (individual ownership comparator); linked from the same compliance-context section.
+- `cgt-rates-property-2026-27-current-rates-explained`, `cgt-payment-deadlines-property-sales-2026` — not linked, low topical relevance to ATED pillar.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- HMRC ATED basics guidance (gov.uk) — used for 2026/27 chargeable amounts table.
+- Schedule 4A FA 2003 (15% flat-rate SDLT) — cited inline for the acquisition-side interaction.
+- Finance Act 2013 (the foundational ATED legislation) — cited inline for definitions of non-natural person, chargeable interest, single-dwelling interest.
+- Schedule 24 FA 2007 — cited inline for the inaccuracy penalty regime.
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27` — counterpart corporate-tax obligation on the same population.
+- `/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk` — covers what replaced the abolished ATED-related CGT.
+- `/blog/landlord-tax-essentials/income-tax-rates-landlords-2026-27-complete-guide` — counterfactual for the keep-enveloped vs dis-envelope decision.
+- Forward links to C11 (rental relief mechanics), C12 (15% SDLT interaction), C13 (penalty mechanics) intentionally REMOVED at write-time because daughters don't yet exist. Will add cross-links via edit when each daughter ships.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After section "ATED Chargeable Amounts for 2026/27" — band-uncertainty is the most natural conversion moment for a Pre-Return Banding Check service.
+- After the relief catalogue ("Demolition and Conversion" — last subsection of Reliefs) — apportionment complexity for mixed-use periods is the next highest-intent moment.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass (clean build, 321 static pages generated, ATED page route confirmed in output).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (13 = 13)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 51 chars (limit 62)
+- Meta description length: 148 chars (limit 158)
+- Internal links resolve: all 3 remaining links point at existing markdown files (verified by ls)
+- monitored_pages row inserted: yes
+- Word count: 4316 (above 2,500-3,500 guidance; justified by pillar role + breadth of relief catalogue + penalty cascade detail — matches Session A canary 4142 precedent for a pillar)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None this page. House positions and gov.uk source were consistent; no competitor contradictions; no redirect overlap; no cannibalisation concerns.
 
 ### 2-3 sentence summary
-<freeform>
+Wrote the ATED pillar page as Session C's first page so daughters C11-C13 will inherit a strong canonical reference. Pulled official 2026/27 chargeable amounts directly from gov.uk (slightly above the 2025/26 figures locked in house_positions.md, consistent with the doc's "use current-year gov.uk figures" instruction). Structured the page around the dis-envelope vs claim-relief vs pay-charge decision tree rather than the generic "complete guide" outline competitors use, in line with anti-templating guidance.
 
