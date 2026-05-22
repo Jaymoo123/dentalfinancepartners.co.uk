@@ -166,34 +166,55 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** ated-six-step-compliance-walkthrough-uk-non-natural-persons
+- **Final category:** Incorporation & Company Structures (override per F-2)
+- **H1 chosen:** "ATED Compliance in Six Steps: A Walkthrough for First-Time Filers (UK Non-Natural Persons)"
+- **Meta title chosen:** "ATED Compliance Walkthrough: Six Steps for First-Time Filers" (60 chars)
+- **Why these vs other options:** the page is the operational map for the bucket; the title leads with "ATED Compliance Walkthrough" because that is the query a first-time filer types, and the "Six Steps" framing previews the structure on the SERP. Category overridden to incorporation-and-company-structures per F-2 to keep the ATED cluster on a single category index (the four existing ATED pages and all nine Wave 3 siblings all sit there).
 
 ### Competitor URLs fetched
+- gov.uk "ATED: the basics" — confirmed the six-stage lifecycle skeleton, 5-yearly revaluation, registration-then-return sequence.
+- gov.uk "ATED returns" guidance — RDR vs standard ATED return distinction; online service + agent route; amendment via paper or online.
+- ukpropertyaccountants.co.uk full guide — operational structure validated; their 30-day acquisition window and 90-day new-build window confirmed; ATED1 form name for overseas companies without UTR confirmed; 60-day draft save period confirmed; Government Gateway + UTR registration requirements confirmed.
+- (uklandlordtax.co.uk attempted; restricted, fell back to gov.uk + UKPA as primaries per brief instruction.)
 
 ### Existing-page review (from "Closest existing pages")
+- Pillar `ated-complete-guide-2026-27` — read for cannibalisation discipline. Pillar is body-only HTML, substantive treatment of all four limbs; the F-3 watchpoint held by writing each of the six steps as one short paragraph + forward-link to the sibling that goes deeper. The pillar's operational sections are not reproduced.
+- Sibling A1 (overview): linked from step 1 (strategic framing).
+- Sibling A2 (rates): linked from step 3 (band charge + day-apportionment maths).
+- Sibling A3 (clawback): linked from step 6 (ongoing-year monitoring).
+- Sibling A4 (related-persons test): linked from step 5 (relief claim hardest call).
+- Sibling A5 (amendment): linked from step 6 + FAQ on missed relief.
+- Sibling A6 (mixed-use): linked from step 2 (mixed-use apportionment).
+- Sibling A7 (valuation): linked from step 2 (valuation date) + FAQ on 2027 revaluation.
+- Sibling A8 (OTM letters): linked from FAQ on overseas-company UTR.
+- Sibling A9 (penalty appeal): linked from step 4 (cascade if 30 April missed) per launch-prompt direction.
+- Existing pillar pages on rental-business relief mechanics, late-filing-penalties mechanics, SDLT 15% interaction all forward-linked from the closing "Where these sit alongside" panel.
 
 ### Citations added (external authority)
+6 in the closing Authority Sources block: gov.uk "the basics", gov.uk "returns", HMRC ATED Internal Manual, FA 2013 Part 3, FA 2009 Schedule 55, Register of Overseas Entities. In-body citations include s.94 FA 2013 (chargeable persons), s.133 FA 2013 (rental-business relief), Schedule 55 FA 2009 (penalty cascade), and the Conchri Investments Limited v HMRC [2025] UKFTT 600 (TC) reference in the FAQ on the biggest first-filer mistake.
 
 ### Internal links added (to our existing pages)
+13 distinct internal links to ATED siblings + pillars within the incorporation-and-company-structures category. Each link is one click from the relevant step; no link is repeated more than twice (intro + closing panel for the two anchors A1 and the pillar, single occurrence for all others).
 
 ### Inline CTA placements
+2 asides: one after step 6 (end of the six-step decision-framework section); one after the worked mini-walkthrough (after the numerical example). No opening aside; no aside inside the worked example.
 
 ### Build attempts
+1. `cd Property/web && npm run build` — clean. Only pre-existing unrelated warnings in calculators / Image element / unused-vars elsewhere in the codebase; nothing in the new file.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 ✓
+- Em-dashes in markdown: 0 (body + FAQs) ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 60 (≤62) ✓
+- Meta description length: 141 (≤158) ✓
+- Internal links resolve: 13/13 ✓ (also category-URL verified per F-12: all 13 targets carry frontmatter category "Incorporation & Company Structures")
+- monitored_pages row inserted: id 154 ✓
+- Body word count: 2,274 (moderate per F-3 discipline; the value of this page is the SEQUENCE not the depth, sibling pages carry the depth)
 
 ### Flags raised to wave3_site_wide_flags.md
+- F-14 (SCHEMA): HowTo schema candidate for this page; orchestrator decision post-merge per brief instruction.
 
 ### 2-3 sentence summary
+A10 closes Wave 3. The page is the operational map across the ATED bucket: chargeable-person check, valuation at the correct date, return type and preparation, submission and payment by 30 April, relief claim on the return itself, and ongoing-year monitoring. Each step is one short paragraph with a forward-link to the sibling page that goes deeper, holding the F-3 cannibalisation discipline against the pillar; the worked £700,000 London flat mini-walkthrough ties the six steps to one concrete first-year scenario.
