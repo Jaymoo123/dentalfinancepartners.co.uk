@@ -79,33 +79,48 @@ All sites are lead-gen handoffs to a partner firm. Don't conflate with the Prope
 
 ## 3. Where we are right now (this section updates every wave)
 
-**Last updated:** 2026-05-22 end of Wave 2 (post-merge).
+**Last updated:** 2026-05-22 end of Wave 3 prep Stage 1 (post-C1-swap).
 
-**`main` is at the Wave 2 merge head** (three branches `property-wave2-{a,b,c}` merged via `--no-ff` merge commits). 61 net-new pages now sit on `main` between Wave 1 (31) and Wave 2 (30).
+**`main` is at the Wave 3 prep Stage 1 head.** 61 net-new pages from Wave 1 (31) + Wave 2 (30) sit on `main`, plus Wave 3 prep scaffold landed at commit `730add8` (house position §§18-20 + 30 brief skeletons + worktrees + START_HERE docs) and a follow-up Stage 1 review commit (C1 swap + program doc update + F-1 site-wide flag).
 
-**Wave 1 outputs on `main`:** 31 blog markdown files. Post-Wave-1 cleanups landed at commit `38f0281` (six-dwellings s.116(7) correction + two INTERNAL_LINK forward-links; ATED-CGT sweep audited and confirmed clean — no stale claims found).
+**Wave 1 outputs on `main`:** unchanged (31 blog markdown files; six-dwellings s.116(7) correction + INTERNAL_LINK back-links already cleaned).
 
-**Wave 2 outputs on `main`:** 30 blog markdown files (10 IHT + 10 DTAs + 10 Leaving-the-UK/expat). Full paper trail in `briefs/property/wave2/`, `docs/property/wave2_*`, and `docs/sessions/property/WAVE2_*`.
+**Wave 2 outputs on `main`:** unchanged (30 blog markdown files; F-XX cross-link back-patches landed at `8272c33`).
+
+**Wave 3 prep state (Stage 1 complete):**
+- House positions extended:
+  - **§18 ATED:** bands 2025/26 + 2026/27 verified gov.uk; relief catalogue with s.133 / s.137-s.150 FA 2013 citations; 30 April return mechanic; 5-yearly + acquisition valuation rules (next revaluation 1 April 2027); ATED-CGT abolition framing; RoE interaction; HMRC OTM compliance campaign signal.
+  - **§19 MTD for ITSA:** mandate timeline (£50k / £30k / £20k phased); gross-vs-net qualifying income; Ltd Cos out + GP partnerships deferred; joint-property threshold split; 3-year exit rule; software requirements; quarterly cycle; points-based late submission (£200 at 4 points); Spring Statement 2025 doubled late-payment 3%/3%/10% (with §19.7 verification note — gov.uk pages 404'd at exact rates, Stage 2 should re-verify); abandoned £10k threshold history.
+  - **§20 RRA 2025:** verified Royal Assent 27 October 2025 (legislation.gov.uk, citation 2025 c. 26); Section 21 abolition + reformed Section 8 grounds; periodic-tenancy default + AST conversion; Decent Homes Standard extension to PRS; PRS Database + PRS Ombudsman; Section 13 rent-rise mechanics; pet rights; bidding-wars prohibition; transition for existing tenancies; enforcement / civil-penalty regime; firm tax-implications angle (§20.11). §20 supersedes §12 (RRA "in passage" placeholder) where they conflict; §12 retained for audit trail.
+- 30 brief skeletons at `briefs/property/wave3/` (10 ATED Session A + 10 MTD ITSA Session B + 10 RRA 2025 Session C). Each brief has a manager-reasoned framing differentiator + bucket-specific authority links + universal-rules boilerplate + 19-step workflow + work-log placeholder. Closest-existing pages + competitor URL validation are deliberately deferred to Stage 2 (per §16.11 reasoning-over-token-Jaccard discipline).
+- **C1 swap (2026-05-22 Stage 1 review):** original C1 `renters-rights-act-2025-tax-implications-comprehensive-update` reframed as a rewrite of the existing `renters-rights-act-2026-tax-implications-landlords` page (citation staleness; legacy-rebuild track item, NOT Wave 3 net-new — see F-1). C1's freed slot replaced by `rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence` (genuinely net-new; covers HP Act 2016 civil-penalty regime + banning orders + rogue-landlord database as extended by RRA 2025).
+- Fresh worktrees stood up at `Accounting-wt-property-wave3-{a,b,c}/` from main; `.env` + `optimisation_engine/competitor/_db.py` copied into each.
+- START_HERE docs at `docs/sessions/property/WAVE3_SESSION_{A,B,C}_START_HERE.md`, baking in §16.14 (tracker-flip-on-context-pressure), §16.15 (no branch tracker commits), §16.16 (framing-differentiator-led word count), §16.17 (atomic recovery) and the session-side watcher pattern (§8.4).
+
+**Wave 3 prep state (Stage 2 pending):** three parallel Opus 4.7 sub-agents (one per bucket) will:
+1. Read all 346 existing Property posts (titles + slugs + intro) and reason about the 3-7 closest-existing pages per brief — no token-similarity scripts.
+2. Validate / extend each brief's competitor URL set (manager pre-filled one URL per brief; Stage 2 verifies it's alive, reads it, and adds 2-4 more per brief).
+3. Re-verify §19.7 MTD ITSA late-payment rate (3%/3%/10%) against a definitive gov.uk source.
+4. Each agent finishes briefs atomically per §16.17 to survive rate limits.
 
 **Wave 1 + Wave 2 are NOT deployed.** User holds deploy pending review.
 
-**Wave 1 worktrees** can be deleted (`Accounting-wt-property-track1-{a,b,c}/`).
-**Wave 2 worktrees** can be deleted (`Accounting-wt-property-wave2-{a,b,c}/`).
+**Wave 1 / Wave 2 worktrees** can be deleted (`Accounting-wt-property-track1-{a,b,c}/` and `Accounting-wt-property-wave2-{a,b,c}/`).
 **Medical worktrees** parked, not part of this program.
 
-**Post-Wave-2 cleanups queued (do before deploying):**
+**Outstanding hygiene (post-Wave-2 + Stage-1-of-Wave-3):**
+- Wave 2 F-XX cross-link back-patches landed at `8272c33` — done.
+- Wave 2 brief stale citation (C10 references repealed TCGA ss.14B-14H) — defer to wave-end audit.
+- Wave 2 F-7 brand wordmark em-dash — separate scope.
+- **NEW Wave 3 F-1:** legacy-rebuild item — rewrite existing `renters-rights-act-2026-tax-implications-landlords` to reflect actual RRA 2025; site-wide grep + back-patch of stray "Renters Rights Act 2026" / "RRA 2026" / "Renters Rights Bill" references across the 346 blog posts. Run between Wave 3 close and Wave 4 launch.
+- Uncommitted wave2 audit-trail edits in working tree (`wave2_discovery_log_session_{A,B,C}.md` + `wave2_site_wide_flags.md`) — session-time absolute-path edits after the paper-trail commit. Stage them into a "Wave 2 final audit-trail" commit before Wave 4 starts, or include with the Wave 3 launch handover commit.
 
-A. **F-XX cross-link back-patches** captured in `docs/property/wave2_site_wide_flags.md`. Two categories:
-   1. **Existing-page back-links** to new Wave 2 pages: existing IHT pillar → A1/A5/A7/A8/A9/A10 (multi-link); existing BPR-rental → A1/A5/A10; existing NRL pillar → B1; existing expat-obligations → C1; existing CGT-on-inherited-rental → A7; existing NRL-self-assessment → B9.
-   2. **Cross-Wave-2 forward/back-links** between already-shipped pages: B6↔C6 (UAE/Dubai pair); B7↔C2 + B8↔C2 (tie-breaker/SRT); A8↔A6 + A10↔A6 (IHT cluster); B10↔A6; C6→C7 (Dubai/Australia contrast); C1→C4/C9/C10/B4; C8→A6/B5/C9 (regime-cluster).
-B. **Brief stale citation cleanup:** C10's brief (`briefs/property/wave2/nrcgt-indirect-disposal-property-rich-companies-shares.md`) still references repealed TCGA 1992 ss.14B-14H. The page itself is correct (uses s.1A + Sch 1A + Sch 4AA per FA 2019 rewrite, matches house position §17.4). Brief retained for audit trail with a `Manager note (post-merge)` block clarifying the correction was made at page level.
-C. **Site-wide brand wordmark em-dash** flagged in F-7 — separate concern outside the wave's scope.
+**House position refinements (cumulative log; locked dates as stamped):**
+- §15.6 LTR test is **two-route** (10 consecutive OR 10 of 20 tax years), not single-route as originally locked. Wave 2 Session A surfaced via A6 research. Locked 2026-05-22.
+- §17.6 TRF is **3-year at 12%/12%/15%** per Autumn Budget 2024 extension, not 2-year at 12% as originally locked. Wave 2 Session C surfaced via C8 research. Locked 2026-05-22.
+- **§12 (RRA Bill / in-passage) superseded by §20 (RRA 2025 enacted state).** §12 retained for audit. Wave 3 prep Stage 1 verification surfaced Royal Assent of 27 October 2025 (legislation.gov.uk verified 2026-05-22).
 
-**House position refinements (locked 2026-05-22 post-merge):**
-- §15.6 LTR test is **two-route** (10 consecutive OR 10 of 20 tax years), not single-route as originally locked. Session A surfaced via A6 research.
-- §17.6 TRF is **3-year at 12%/12%/15%** per Autumn Budget 2024 extension, not 2-year at 12% as originally locked. Session C surfaced via C8 research.
-
-**Wave 3 not yet scoped.** Original program total is ~485 pages (~285 net-new + ~231 legacy rebuilds). After Wave 1 (31) + Wave 2 (30) = 61 net-new shipped, ~224 net-new candidates remain in `topic_gaps_final.md`, then the legacy rebuild track begins.
+**Program totals (post-Wave-3-prep-Stage-1):** ~485 total target (~285 net-new + ~231 legacy rebuilds). After Wave 1 (31) + Wave 2 (30) = 61 net-new on `main`. Wave 3 prep has 30 briefs scaffolded; once Wave 3 ships, 91 net-new shipped and ~194 candidates remain in the user-narrowed pool. Legacy rebuild track begins after the net-new track lands enough to anchor the site (no firm cutover trigger set yet).
 
 ---
 
@@ -690,6 +705,20 @@ Append to this section after every wave. Each lesson should describe what happen
 **16.17 Three regen agents hit rate limit; finish-each-brief-end-to-end recovery worked**
 - During Wave 2 pre-launch, three parallel Opus regen sub-agents (one per bucket) hit a rate limit ~10 min in. Only 3 of 30 briefs were partially regenerated before the limit. Recovery: waited for reset, re-spawned with skip-lists for the 3 already-done briefs and an explicit "finish each brief end-to-end before moving on" instruction. Second run completed cleanly. **Lesson:** for any parallel sub-agent batch, instruct each agent to finish complete work units atomically rather than half-finishing many. Reduces rate-limit damage at the worst moment.
 
+### Wave 3 prep (2026-05-22)
+
+**16.18 Reasoning-first must be loud, even when §16.11 is captured**
+- First attempt at Wave 3 Stage 1 launched a sub-agent that defaulted to running `scripts/property_wave2_brief_builder.py` + `scripts/property_cannibalisation_check.py` for selection and closest-existing — exactly the token-Jaccard trap §16.11 flagged as broken on novel topical clusters. User caught it before damage and called it out. Manager stopped the sub-agent and re-launched with an explicit "Reasoning-first, NOT Python" framing block at the top of the prompt, including the literal instruction "If you catch yourself reaching for a similarity script to make a decision, stop and reason directly instead." **Lesson:** when a wave-prep prompt references prior lessons (§16.11) it is not enough; manager must *also* spell out the prohibited specific scripts AND the affirmative reasoning behaviour in the prompt header. The default-to-Python pull is strong even after the lesson is on paper.
+
+**16.19 Manager review gate between Stage 1 and Stage 2 catches top-level swaps**
+- The Wave 3 Stage 1 sub-agent correctly flagged C1 cannibalisation against an existing stale-citation page but could not resolve it (sub-agents cannot pause and ask for direction mid-flight). Manager review gate between Stage 1 and Stage 2 caught this, made the swap decision, and resolved cleanly before Stage 2 reasoning began. The swap moved the original C1 (a stale-citation rewrite candidate) onto the legacy-rebuild track as F-1, and brought in a genuinely net-new replacement (RRA 2025 enforcement / civil-penalty defence) for the C1 slot. **Lesson:** the Stage 1 / Stage 2 split is the right structural pattern for wave prep — keep it. Stage 1 emits artefacts + surfaces decisions; manager reviews + decides + writes the surgical updates; Stage 2 fans out for the heavy reasoning work. Build a 5-10 minute manager-review gate into the standard wave-prep workflow.
+
+**16.20 Factual catches at prep time can supersede whole house-position sections**
+- Stage 1 verification against legislation.gov.uk surfaced that the Renters' Rights Act 2025 (2025 c. 26) received Royal Assent on 27 October 2025 — not "in passage" as house position §12 framed it (correct when written, now stale). §20 was added as a full supersedure, §12 retained as audit. Implication: every existing Property page that references "RRA 2026" / "Renters Rights Act 2026" / "Renters Rights Bill" is now incorrect; site-wide back-patch flagged as Wave 3 F-1. **Lesson:** when a wave's house-position extension covers a topic where the existing house position used an "in passage" / "scheduled, pending Royal Assent" / "to be confirmed" placeholder, automatically commission a site-wide back-patch sweep of the existing inventory as part of the wave's hygiene queue, not as an afterthought.
+
+**16.21 Competitor set is hand-curated, not SERP-derived**
+- `scripts/property_topic_gap_finder.py` hard-codes 13 competitor domains; `property_topic_gap_filter.py` narrows to 4. SERP-derived discovery data exists (`competitor_serps` + `serp_runner.py`) but is siloed in the per-page rewrite playbook track. Net-new candidate discovery has therefore been narrower than the available data supports. User flagged 2026-05-22. **Lesson:** the candidate-discovery pipeline and the per-page-rewrite competitor pipeline should share their competitor universe. Slated as infra deliverable between Wave 3 and Wave 4: replace the hand-curated list with a frequency-weighted SERP-derived list (likely 30-50 genuine competitors), with per-URL annotation of which queries each ranks for + at what position so triage becomes data-led.
+
 ---
 
 ## 17. Risk register
@@ -785,12 +814,16 @@ Accounting-wt-medical-{a,b,c}/                   ← Medical parked worktrees
 
 ## 19. Open decisions / known unknowns
 
-- **Wave 2 launch timing.** Confirmed bucket (IHT + DTAs + Expat). User wants prep done before launch; current manager (context-pressured) recommends sub-agent for prep, fresh manager for launch.
-- **Worktree reuse vs fresh.** Wave 1 worktrees still in place. Decide whether to delete branches and reuse for Wave 2, or stand up fresh `property-wave2-{a,b,c}`. Recommend fresh.
-- **Post-Wave-1 cleanups + deploy.** 4 items queued (§3). Do before or after Wave 2? Recommend before deploy; can run in parallel with Wave 2 if manager is fresh.
-- **Legacy rebuild brief generator.** Needs GA4 enrichment on top of GSC + competitor HTML. Design pending; can be a sub-agent task once Wave 2 lands.
-- **285 target vs 429 candidate list.** User narrowed from 429 to ~285. Need to confirm which 144 candidates were dropped, on what basis. Likely lowest-priority or thinnest-evidence pages; check `topic_gaps_final.md` for any priority signal columns.
-- **House positions for legacy rebuilds.** Each legacy page touches existing topics; house_positions should be complete before legacy waves start.
+- ~~Wave 2 launch timing.~~ CLOSED. Wave 2 completed 2026-05-22 (merged + post-merge cleanups landed).
+- ~~Worktree reuse vs fresh.~~ CLOSED. Fresh worktrees used for both Wave 2 and Wave 3 — confirmed working pattern.
+- ~~Post-Wave-1 cleanups + deploy.~~ Cleanups done; deploy still held by user pending review of Waves 1 + 2 + 3.
+- **Legacy rebuild brief generator.** Needs GA4 enrichment on top of GSC + competitor HTML. Design pending; can be a sub-agent task once Wave 3 lands.
+- **285 target vs 429 candidate list.** User narrowed from 429 to ~285. Need to confirm which 144 candidates were dropped, on what basis. After Wave 3 ships, 91 net-new shipped and ~194 candidates remain in the user-narrowed pool.
+- **House positions for legacy rebuilds.** Currently locked: §§1-12 plus Wave 2 extensions §§15-17 plus Wave 3 extensions §§18-20. Before legacy waves start, surface a checklist of any topic touched by ≥10 legacy pages that does not have a locked house position.
+- **NEW: Data-driven competitor discovery.** §16.21. Current `property_topic_gap_finder.py` hard-codes 13 domains, narrowed to 4 by the filter; SERP-derived data exists but is siloed in the per-page rewrite playbook. Slated as infra deliverable between Wave 3 and Wave 4 (user-flagged 2026-05-22).
+- **NEW: §19.7 MTD ITSA late-payment rate verification.** Locked position references Spring Statement 2025 doubled late-payment regime (3%/3%/10%) but gov.uk dedicated penalty pages returned 404 at the exact rates during Stage 1 verification. Position retained with verification note; Stage 2 should re-verify before sessions execute, or accept the position with a session-level flag if a definitive gov.uk source cannot be found.
+- **NEW: RRA-2026 citation back-patch sweep + existing-page rewrite (F-1).** Site-wide grep for "Renters Rights Act 2026" / "RRA 2026" / "renters rights bill" across the 346 blog posts and back-patch with the correct 2025 c. 26 citation. Plus rewrite the existing `renters-rights-act-2026-tax-implications-landlords` page to reflect post-Royal-Assent state. Run between Wave 3 close and Wave 4 launch.
+- **NEW: Competitor sitemap re-sweep cadence.** Hand-curated competitor list aside, the existing list of 13 has not been re-sitemap-fetched since the original gap analysis. Competitors publish new content; we are missing additions. Recommend ad-hoc re-sweep between waves (manager triggers `property_topic_gap_finder.py` against the current list, dedupes against `topic_gaps_final.md`, surfaces a delta). Pair with the data-driven discovery item above.
 
 ---
 

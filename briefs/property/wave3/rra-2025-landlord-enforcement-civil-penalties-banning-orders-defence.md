@@ -1,22 +1,22 @@
-# Wave 3 brief: renters-rights-act-2025-tax-implications-comprehensive-update
+# Wave 3 brief: rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence
 
 **Site:** property
 **Bucket:** Renters Rights Act 2025 + Tenancies
 **Session:** C
 **Brief type:** Net-new page (no existing markdown file)
-**Source markdown path on launch:** `Property/web/content/blog/renters-rights-act-2025-tax-implications-comprehensive-update.md`
-**Live URL on launch:** https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/renters-rights-act-2025-tax-implications-comprehensive-update
+**Source markdown path on launch:** `Property/web/content/blog/rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence.md`
+**Live URL on launch:** https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence
 
 ---
 
 ## Manager pre-decisions
 
-- **Suggested slug:** `renters-rights-act-2025-tax-implications-comprehensive-update`
+- **Suggested slug:** `rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence`
 - **Suggested category:** `landlord-tax-essentials`
 - **Bucket:** Renters Rights Act 2025 + Tenancies
 - **Framing differentiator (READ THIS CAREFULLY, defines what makes this page distinct):**
 
-> Post-Royal-Assent canonical pillar for the Renters Rights Act 2025 (2025 c. 26, Royal Assent 27 October 2025). Replaces the in-passage framing the existing page `renters-rights-act-2026-tax-implications-landlords` used, which was correct when written but is now superseded. **CANNIBALISATION FLAG (manager-flagged):** strong overlap risk with existing page. Stage 2 must coordinate: this new page becomes the canonical post-Royal-Assent reference; the existing page should be retitled to 'Renters Rights Bill 2024 background' and back-link to this page, OR redirected to this page (Stage 2 chooses based on existing-page traffic signal). The framing differentiator is the canonical-status positioning.
+> Operational compliance and defence page for landlords facing or anticipating enforcement action under the Renters Rights Act 2025. The Act extends the civil-penalty regime introduced by the Housing and Planning Act 2016 (financial penalties up to 30,000 GBP, banning orders, rogue-landlord database entry) into the new RRA-2025 obligations: PRS database non-registration, PRS Ombudsman non-enrolment, Decent Homes Standard breaches, unlawful possession attempts during the Section 21 transition. Covers the local-authority enforcement process, representations + First-Tier Tribunal Property Chamber appeal routes, the practical compliance checklist that reduces enforcement risk, and the firm's defence angle for landlords post-notice. Distinct from C6 (PRS Database + Ombudsman REGISTRATION mechanics) by being post-breach not pre-enrolment; distinct from C5 (Decent Homes COMPLIANCE) by covering the enforcement layer above specific obligations. High-intent commercial moment: landlords facing financial-penalty notices need defence guidance, this is a lead-form-conversion page. **Manager swap-in note:** this brief replaces the earlier `renters-rights-act-2025-tax-implications-comprehensive-update` C1 slot, which was reframed as a rewrite of the existing `renters-rights-act-2026-tax-implications-landlords` page (legacy-rebuild track, not Wave 3 net-new) given the citation-staleness of the existing page.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,7 +24,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Competitor URLs, to validate in Stage 2
 
-- https://www.ukpropertyaccountants.co.uk/renters-rights-bill-key-impact-on-tenants-landlords/ (manager-identified primary; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak).
+- https://www.gov.uk/government/publications/civil-penalties-under-the-housing-and-planning-act-2016 (manager-identified primary, baseline HP Act 2016 regime as extended by RRA 2025; Stage 2 must verify the URL is alive, read it, and reason about whether it is the right reference, and add 2-4 more URLs if the candidate is weak; especially worth searching for ukpropertyaccountants.co.uk + landlord-defence + civil-penalty content + recent FTT-PC decisions on financial-penalty appeals).
 
 > Fetch each one with httpx (follow_redirects True, timeout 30, User-Agent Mozilla/5.0) then BeautifulSoup with lxml. Read what they actually have. If a URL is poor quality, do your own targeted search and document what you used in the work log. Stage 2 fills additional URLs after live verification.
 
@@ -40,7 +40,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 *Manager pre-fills only a 1-line hint of expected neighbours below. Stage 2 reads the actual existing post titles + slugs on the full Property inventory (316 pages including the 61 Wave 1 and Wave 2 outputs on main) and reasons about the 3-7 closest pages topically. The token-similarity matcher is NOT used (section 16.11 lesson from Wave 2).*
 
-**Manager hint:** expected neighbours: existing `renters-rights-act-2026-tax-implications-landlords` (CANNIBAL-RESOLVE; see framing - the dominant overlap, manager has flagged the resolution path), all sibling C briefs, existing `rental-income-tax-uk-complete-guide-landlords`.
+**Manager hint:** expected neighbours: existing `hmrc-penalties-late-landlord-tax-returns-2026` (tax-side penalty regime, contrast), existing `penalties-not-declaring-rental-income-hmrc` (HMRC tax penalty contrast), C5 (Decent Homes), C6 (PRS database registration), and any existing HMO licensing / selective licensing pages (council enforcement parallel). Verify there is no existing page on civil penalties / banning orders / rogue landlord database (grep confirmed 2026-05-22 there is none).
 
 **Cannibalisation discipline:**
 - If a closest-existing page is a pillar/comprehensive guide on the topic, write the **applied / scenario / local** version and link out to the pillar.
@@ -51,18 +51,18 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Redirect overlap (on launch)
 
-STRONG redirect-overlap signal: existing `renters-rights-act-2026-tax-implications-landlords` may need to redirect to this new slug, OR this new slug may need to slot alongside as the canonical. Stage 2 decision required.
+none obvious; Stage 2 to validate against the 429-redirect catalogue.
 
 ---
 
 ## Authority links worth considering for this bucket
 
 - [Renters Rights Act 2025 (legislation.gov.uk, 2025 c. 26)](https://www.legislation.gov.uk/ukpga/2025/26/contents)
+- [Housing and Planning Act 2016 Part 2 (civil penalties + banning orders + rogue landlord database)](https://www.legislation.gov.uk/ukpga/2016/22/part/2)
 - [Housing Act 1988 (legislation.gov.uk, ss.5 / 8 / 13 / 21 baseline)](https://www.legislation.gov.uk/ukpga/1988/50/contents)
 - [First-Tier Tribunal Property Chamber decisions (gov.uk)](https://www.gov.uk/government/organisations/first-tier-tribunal-property-chamber)
-- [Decent Homes Standard (gov.uk MHCLG / DLUHC)](https://www.gov.uk/government/publications/a-decent-home-definition-and-guidance)
-- [HMRC Property Income Manual (PIM) for deductibility framings](https://www.gov.uk/hmrc-internal-manuals/property-income-manual)
-- [gov.uk private renting / landlord pages](https://www.gov.uk/browse/housing-local-services/renting-property)
+- [gov.uk civil penalties guidance for local housing authorities](https://www.gov.uk/government/publications/civil-penalties-under-the-housing-and-planning-act-2016)
+- [gov.uk database of rogue landlords and property agents](https://www.gov.uk/government/publications/database-of-rogue-landlords-and-property-agents-under-the-housing-and-planning-act-2016)
 - [Renters Rights Act commencement orders (legislation.gov.uk SI lookup)](https://www.legislation.gov.uk/all?title=Renters%20Rights)
 
 You don't have to use all of these; pick the ones that fit your specific framing. Add others you find during research.

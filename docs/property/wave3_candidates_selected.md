@@ -101,8 +101,8 @@ Selected 2026-05-22 by Wave 3 prep manager (Opus 4.7) via reasoning, NOT by toke
 
 ### Selected
 
-1. **`renters-rights-act-2025-tax-implications-comprehensive-update`** (source: ukpropertyaccountants.co.uk/renters-rights-bill-key-impact-on-tenants-landlords + .../renters-rights-bill-to-return-to-parliament)
-   - Rationale: enacted-state pillar that supersedes existing `renters-rights-act-2026-tax-implications-landlords` (written when Bill in passage). MUST link to the existing page (treat as background) while this new page is the post-Royal-Assent canonical. Slug uses 2025 (Act citation year). CANNIBALISATION FLAG, strong overlap risk with existing page; Session C must coordinate framing carefully.
+1. **`rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence`** (source: gov.uk civil-penalties guidance under HP Act 2016 + FTT-PC penalty appeal case law)
+   - Rationale: **SWAP 2026-05-22.** Original C1 (`renters-rights-act-2025-tax-implications-comprehensive-update`) was reframed as a rewrite of the existing `renters-rights-act-2026-tax-implications-landlords` page (citation staleness) and moved to the legacy-rebuild track, freeing the C1 net-new slot. Replacement angle: the civil-penalty + banning-order + rogue-landlord-database enforcement layer (HP Act 2016 regime as extended by RRA 2025 into new PRS-database / Ombudsman / Decent-Homes obligations). Genuine net-new (grep confirmed no existing dedicated enforcement page); high commercial intent; distinct from C5 (Decent Homes compliance) and C6 (PRS Database registration) by sitting one layer above (post-breach enforcement, not pre-enrolment compliance). See wave3_site_wide_flags F-1 for the legacy-rebuild item.
 
 2. **`section-21-abolition-uk-landlord-possession-guide-2026`** (source: ukpropertyaccountants.co.uk/documents-needed-for-renters-rights-act-possession-claim + .../new-rent-increase-rules-under-the-renters-rights-act)
    - Rationale: S20.2 + reformed Section 8 grounds applied. Anchored to landlord possession workflows; nothing currently held.
@@ -141,7 +141,7 @@ Selected 2026-05-22 by Wave 3 prep manager (Opus 4.7) via reasoning, NOT by toke
 
 ## Cannibalisation flags surfaced during selection (for Stage 2 attention)
 
-- **C1 vs existing `renters-rights-act-2026-tax-implications-landlords`**, strong overlap risk. C1 is the enacted-state-2025 version; existing page must be retitled or back-linked. Manager flagging now so Stage 2 leads with this in C1 framing differentiator.
+- ~~**C1 vs existing `renters-rights-act-2026-tax-implications-landlords`**~~ RESOLVED 2026-05-22 by swap: original C1 (`renters-rights-act-2025-tax-implications-comprehensive-update`) moved out of Wave 3 net-new and onto the legacy-rebuild track as a rewrite of the existing page (which has stale 2026 citation). New C1 = `rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence`, no overlap with existing inventory. See wave3_site_wide_flags F-1.
 - **A1 vs existing `ated-complete-guide-2026-27`**, A1 is broader overview that risks duplicating existing page. Stage 2 must scope A1 deliberately wider (chargeable-persons cohort positioning, 2026-27 transition framing) so existing page becomes the deep mechanic and A1 the strategic overview.
 - **B8 vs existing `mtd-quarterly-reporting-landlords-step-by-step-guide`**, partial overlap at 0.29. Stage 2 must scope B8 as a "what changes" overview, leaving the process detail to the existing how-to.
 

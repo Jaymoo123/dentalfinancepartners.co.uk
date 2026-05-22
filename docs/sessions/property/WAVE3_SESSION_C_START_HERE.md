@@ -97,7 +97,7 @@ Persistent: false. Timeout: 1 hour. While the watcher runs, continue work on a *
 ### Anti-templating (RRA 2025 bucket)
 - 10 RRA / tenancies pages cannot read like 10 versions of the same page. Each brief's framing differentiator says what makes that page distinct. Honour it.
 - Vary opening 2-3 sentences.
-- Vary H2 structure per page. The pillar (C1), process pages (C2/C8), mechanic pages (C3/C4/C6/C7/C10), compliance pages (C5/C6), the firm commercial angle (C9), and the marketing-compliance page (C10) should NOT share an outline.
+- Vary H2 structure per page. The enforcement-defence page (C1), process pages (C2/C8), mechanic pages (C3/C4/C6/C7/C10), compliance pages (C5/C6), the firm commercial angle (C9), and the marketing-compliance page (C10) should NOT share an outline.
 - Vary FAQ phrasing. Don't repeat "Does the RRA apply to me?" or "Is Section 21 abolished?" across multiple pages, each page picks its own FAQ angle.
 - **Citation discipline:** the Act is the **Renters' Rights Act 2025 (2025 c. 26)**, Royal Assent 27 October 2025. Do NOT write "Renters' Rights Act 2026" (the program previously used "2026" as a placeholder during the in-passage period; section 12 of house_positions retains that wording for audit but section 20 is the authoritative locked detail).
 
@@ -144,7 +144,7 @@ In assignment order. Work top to bottom. Claim ONE at a time.
 
 | # | Slug |
 |---|---|
-| C1 | renters-rights-act-2025-tax-implications-comprehensive-update |
+| C1 | rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence |
 | C2 | section-21-abolition-uk-landlord-possession-guide-2026 |
 | C3 | periodic-tenancy-default-ast-conversion-mechanics |
 | C4 | renters-rights-act-rent-increase-section-13-tribunal-route |
@@ -155,7 +155,7 @@ In assignment order. Work top to bottom. Claim ONE at a time.
 | C9 | landlords-considering-selling-portfolio-rra-2025-tax-implications |
 | C10 | bidding-wars-asking-rent-cap-landlord-marketing-compliance |
 
-**Critical sequence note:** C1 (post-Royal-Assent canonical pillar) has a CANNIBAL-RESOLVE flag against existing `renters-rights-act-2026-tax-implications-landlords`. Stage 2 has populated the brief with the resolution path (either retitle existing to 'background' and back-link, OR redirect existing to C1). **C1 is the anchor for the bucket** , consider writing it first or second so C2-C10 can link back, and so the cannibalisation question is resolved before sibling pages start citing C1.
+**Critical sequence note:** C1 is the enforcement / civil-penalty defence page. Swap-in 2026-05-22 (the original C1 `renters-rights-act-2025-tax-implications-comprehensive-update` was reframed as a rewrite of the existing `renters-rights-act-2026-tax-implications-landlords` page and moved to the legacy-rebuild track, see `docs/property/wave3_site_wide_flags.md` F-1). C1 sits ABOVE C5 (Decent Homes compliance) and C6 (PRS Database registration) in the bucket logic, write C1 last so it can link back to C5/C6 as the underlying compliance obligations, OR write C1 first if you prefer to lay down the enforcement frame and then walk through specific compliance obligations in C5/C6. Either order works.
 
 **RRA 2025 bucket discipline:** all 10 pages are RRA 2025 / tenancies. They MUST be distinguishable by topic, not by template. Pillar (C1) vs possession process (C2) vs tenancy form (C3) vs rent rises (C4) vs property condition (C5) vs registration (C6) vs pets (C7) vs clause template (C8) vs portfolio-disposal angle (C9) vs marketing compliance (C10). If two pages share an H2 outline, stop and rework. Note: the Act citation is **Renters' Rights Act 2025 (2025 c. 26)** , do NOT write "Renters' Rights Act 2026".
 
