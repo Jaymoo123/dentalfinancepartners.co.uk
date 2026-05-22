@@ -207,51 +207,72 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged: `uk-india-dta-property-rental-income-treatment`
+- **Final category:** unchanged: `Non-Resident Landlord Tax`
+- **H1 chosen:** "The UK-India Tax Treaty for Property Investors: The 1993 Treaty, NRI Landlords, and the UK NRCGT Override"
+- **Meta title chosen:** "UK-India Tax Treaty for Property: NRI Landlord Guide" (52 chars)
+- **Why these vs other options:** Three differentiators in the H1: the 1993-treaty age, the NRI-investor reader (the dominant scenario), and the NRCGT statutory override (the technical wrinkle). Meta tightens to the two SERP-pinch terms ("UK-India Tax Treaty" + "NRI Landlord"); article-number specifics (Art 14 not Art 13) go in the body. Reader for this page is more often the Indian-resident NRI than the UK-resident-with-Indian-property, so the H1 leads with the NRI scenario; reverse scenario gets section B.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- House positions §16.5 used as anchor for treaty article numbers (Art 6 / Art 14 / Art 24 / Art 26 / Art 27 confirmed against 1993 UK-India DTA convention text known training-knowledge).
+- gov.uk/government/publications/india-tax-treaties referenced inline (treated as canonical pointer; no fresh fetch).
+- gov.uk INTM151010 and INTM153070 referenced by section for the NRCGT statutory-override framing (matches B1, B2, B3, B4 pattern).
+- ukpropertyaccountants.co.uk UK-India DTA explainer treated as lateral; no specific content extracted.
+- Indian Income Tax Act references (s.22-27 House Property head, s.24(a)/(b), s.90, s.115A, s.139(1), s.195, s.197, Black Money Act s.43, Rule 128 of IT Rules 1962) drawn from working knowledge of Indian tax statute.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `tax-treaties-property-investors-treaty-framework-guide` (B1, this session) — framework parent; B5 forward-links twice (intro + closing).
+- `non-resident-landlord-scheme-uk-complete-guide` — NRL pillar; linked from Scenario A.
+- `nrl-approval-receive-rent-gross-hmrc-guide` — linked from closing checklist (NRL1 mechanics).
+- `nrl-withholding-tax-20-percent-basic-rate-deduction` — linked from Scenario A (20% pre-approval line).
+- `non-resident-cgt-uk-property-rates-reporting` — linked from Article 14 / NRCGT section.
+- `non-resident-landlord-self-assessment-filing-requirements` — linked from worked-example wrap.
+- `uk-property-income-expats-tax-obligations-explained` — linked from closing as descriptive parent.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- 1993 UK-India Double Taxation Convention (Articles 4, 5, 6, 7, 14, 24, 26, 27, 28 referenced)
+- TCGA 1992 s.1A + Schedules 1A, 1B, 4AA (UK NRCGT statutory architecture)
+- FA 1995 Schedule 23 + SI 1995/2902 (NRL scheme statutory source)
+- HMRC INTM151010 (treaty / statute interaction principle)
+- HMRC HS304 helpsheet (UK personal allowance claim under Article 26 non-discrimination)
+- TIOPA 2010 ss.18 and 130 (UK foreign tax credit, reverse scenario)
+- ITTOIA 2005 Part 3 and s.272A (UK property income / s.24 finance-cost restriction)
+- Indian Income Tax Act 1961 sections 22-27 (Income from House Property head), s.24(a)/(b), s.90/s.90(4), s.115A, s.139(1), s.195, s.197
+- Indian Income Tax Rules 1962 Rule 128 + Form 67 (foreign tax credit claim mechanic)
+- Black Money (Undisclosed Foreign Income and Assets) and Imposition of Tax Act 2015 s.43 (Schedule FA penalty)
+- Estate Duty (Amendment) Act 1985 (Indian estate duty repeal); Finance Act 2015 (Indian wealth tax repeal)
+- RBI Liberalised Remittance Scheme (US$250k annual cap); Finance Act 2023 (20% TCS on certain LRS remittances)
+- Schedule A1 IHTA 1984 (UK enveloped residential property look-through, IHT context)
+- UK-India 1956 Estate Duty Convention referenced once
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide` — B1 framework parent (intro + closing)
+- `/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide` — NRL pillar (Scenario A)
+- `/blog/non-resident-landlord-tax/nrl-withholding-tax-20-percent-basic-rate-deduction` — 20% pre-approval line (Scenario A)
+- `/blog/non-resident-landlord-tax/nrl-approval-receive-rent-gross-hmrc-guide` — NRL1 application process (closing)
+- `/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting` — NRCGT rates (Article 14 section)
+- `/blog/non-resident-landlord-tax/non-resident-landlord-self-assessment-filing-requirements` — SA filing (worked-example wrap)
+- `/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained` — descriptive expat parent (closing)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After Scenario A (Indian-resident with UK BTL) — the dominant reader profile; high-intent moment after the headline workflow is laid out but before article-walk and worked-example detail.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass. `next build` clean.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13 Question entries; FAQPage count = 2 = the same one schema rendered for the page route + opengraph route, normal for this template)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 52 chars
+- Meta description length: 154 chars
+- Internal links resolve: yes (all seven)
+- monitored_pages row inserted: yes
+- Body word count: 3,280
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None new this page. (F-7 site-wide em-dash continues to apply across all pages; no incremental flag.)
 
 ### 2-3 sentence summary
-<freeform>
+B5 UK-India bilateral page shipped at 3,280 body words / 13 FAQs. Three differentiators land: the 1993-treaty age (Article 14 capital gains not Article 13; no equivalent of OECD Art 13(4) indirect-disposal extension), the UK NRCGT statutory override under TCGA 1992 s.1A and HMRC INTM151010 (statute applies where treaty is silent), and the NRI-resident workflow detail (NRL1 gross-payment approval, UK personal allowance under Article 26 non-discrimination, Indian Form 67 foreign tax credit, Schedule FA disclosure with Black Money Act penalty exposure). Worked example: Anil (Indian national), Mumbai-resident, two UK BTLs in Leicester and Birmingham, with the credit-light arithmetic that emerges when UK personal allowance + s.24 credit exhaust the UK liability and Indian tax falls largely uncredited. Reverse scenario (UK-resident with Indian rental) gets section B with s.195 TDS + Form 13 Lower Deduction Certificate.
 
