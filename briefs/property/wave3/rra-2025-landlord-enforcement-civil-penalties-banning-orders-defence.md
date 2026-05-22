@@ -174,34 +174,65 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence (no override)
+- **Final category:** landlord-tax-essentials (no override)
+- **H1 chosen:** "Civil Penalty Notices and Banning Orders: Landlord Defence Under the Renters' Rights Act 2025"
+- **Meta title chosen:** "Civil Penalty + Banning Order Defence: RRA 2025 Landlords" (57 chars)
+- **Why these vs other options:** Lead with the two operational artefacts a landlord sees in practice (civil penalty notice, banning order) and the defence frame, ahead of the regime label. RRA 2025 in title positions for the post-1-May-2026 cohort searches. "Landlords" rather than "for landlords" to save characters.
 
 ### Competitor URLs fetched
+- https://www.legislation.gov.uk/ukpga/2025/26/contents (via WebFetch due to httpx 437 block) — confirmed Part 4 enforcement architecture, ss.15-17 + Sch.5 penalty framework, ss.91-92 database offences, s.67 ombudsman membership offences, s.58 unlawful eviction, s.90 possession bar for unregistered properties.
+- https://www.legislation.gov.uk/ukpga/2016/22/part/2 (via WebFetch) — HP Act 2016 Part 2: s.14 banning order definition, s.17 min 12-month duration, s.21 criminal breach, s.23 financial penalty for breach (£40k post-2026), s.28 database, ss.29-30 mandatory + discretionary inclusion, s.32 appeal route, s.40 banning offence list.
+- https://www.gov.uk/government/publications/civil-penalties-under-the-housing-and-planning-act-2016 (httpx 200) — confirmed gov.uk has rescoped to pre-1-May-2026 offences only since 1 May 2026. Banning-order amendment from 6 April 2018 noted.
+- https://www.gov.uk/government/publications/database-of-rogue-landlords-and-property-agents-under-the-housing-and-planning-act-2016 (httpx 200) — mandatory inclusion after banning order; discretionary after conviction or 2 penalties in 12 months.
+- https://www.legislation.gov.uk/uksi/2026/421/made (via WebFetch) — confirmed 1 May 2026 appointed day, Reg 2 covers Chapter 1 Part 1 + Sch 1 + Sch 2 (tenancy reform), Reg 3 covers s.25(3), Ch.3, Ch.6, ss.58/62/74/97-109. Confirmed Student Ground 4A transitional reduction to 2 months May-Jul 2026.
 
 ### Existing-page review (from "Closest existing pages")
+- `renters-rights-act-2026-tax-implications-landlords` — existing tax-implications page, queued for legacy-rebuild rewrite under F-1. Read; this defence page does NOT duplicate the tax-cash-flow framing. Forward-linked from this page; back-link to be raised as F-XX after the legacy rewrite lands.
+- `hmo-licensing-fees-tax-deductible-uk-landlords` — read for the deductibility-of-enforcement-costs treatment; forward-linked from this page on the deductibility section.
+- `hmrc-penalties-late-landlord-tax-returns-2026` — contrast page only, not linked (HMRC tax penalty is a different regime from local-authority civil penalty); referenced implicitly in the tax-side discussion.
+- `first-time-landlord-tax-guide-everything-you-need-to-know` — background pillar; forward-linked at end.
+- `landlord-tax-deductions-uk-2026-complete-list` — forward-linked at the deductibility section for the wider repair-versus-improvement boundary.
 
 ### Citations added (external authority)
+- Renters' Rights Act 2025 (2025 c. 26) — ss.15-17, Schedule 5, ss.67, 75-96 (PRS Database), s.90 possession bar, s.91-92 database offences, Ch.6 Pt.1 marketing offences.
+- Housing and Planning Act 2016 — Part 2, ss.14, 17, 21, 23, 28, 29, 30, 32, 35, 40 (banning order + database baseline preserved).
+- SI 2026/421 (Commencement No. 2 and Transitional and Saving Provisions Regulations 2026) — appointed-day 1 May 2026.
+- SI 2025/1354 (Commencement No. 1 Regulations 2025) — 27 December 2025 preparatory.
+- gov.uk civil-penalties statutory guidance (HP Act 2016 branch, pre-1-May-2026 scoped).
+- gov.uk rogue-landlord database guidance.
+- HMRC BIM38500 (deductibility of regulatory fines).
+- ITTOIA 2005 s.272 (property business deduction framework).
+- Tribunal Procedure (First-Tier Tribunal) (Property Chamber) Rules 2013 Rule 13 (costs).
+- Housing Act 2004 (deposit protection, HMO licensing baseline — referenced).
+- Protection from Eviction Act 1977 s.1 (illegal eviction trigger for banning order offence).
 
 ### Internal links added (to our existing pages)
+- /blog/landlord-tax-essentials/renters-rights-act-2026-tax-implications-landlords (intro + closing)
+- /blog/landlord-tax-essentials/landlord-tax-deductions-uk-2026-complete-list (deductibility section)
+- /blog/landlord-tax-essentials/hmo-licensing-fees-tax-deductible-uk-landlords (closing adjacent reading)
+- /blog/landlord-tax-essentials/first-time-landlord-tax-guide-everything-you-need-to-know (closing pillar)
+- 3 forward-references to forthcoming siblings C5 (Decent Homes), C6 (PRS Database / Ombudsman), C9 (portfolio disposal) — written as in-text mentions WITHOUT hyperlinks because the target markdown files do not yet exist on this branch at commit time. Will back-patch as hyperlinks once those siblings are written later in this session (raised as F-7 below).
 
 ### Inline CTA placements
+- Aside 1: after the notice-of-intent procedural section, at the moment a landlord realises the 28-day clock is running and that documentary evidence preparation is the immediate task.
+- Aside 2: after the rogue-landlord-database vs PRS Database section, at the pre-emption moment where landlords are concerned about a pending inspection rather than an active notice.
 
 ### Build attempts
+- 1st attempt: clean. `npm install` ran first (worktree fresh), then `npm run build` generated 382 static pages including the new C1 page at `/blog/landlord-tax-essentials/rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence`. No warnings or errors related to this page.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 == 14 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 57 (≤62 ✓)
+- Meta description length: 148 (≤158 ✓)
+- Internal links resolve: 5 of 5 link to existing markdown files ✓
+- monitored_pages row inserted: id 123 ✓
+- Body word count: 3,816 (slightly above the 3,500 non-pillar ceiling. Justification: this page covers a bifurcated regime (HP Act 2016 + RRA 2025) running in parallel, with three distinct procedural artefacts (civil penalty, banning order, database listing), three worked enforcement scenarios, a tax-deductibility section spanning three expenditure categories, and a compliance checklist. Compression below 3,500 would require dropping either a regime branch or the worked scenarios, both of which are load-bearing for the defence frame. Below the 4,000 hard ceiling.)
 
 ### Flags raised to wave3_site_wide_flags.md
+- F-7 forthcoming: forward-link back-patches once C5, C6, C9 land on branch — see appended F-7.
 
 ### 2-3 sentence summary
+Wrote the C1 enforcement / civil-penalty defence page at 3,816 body words covering the 1 May 2026 RRA 2025 + HP Act 2016 bifurcation, the Schedule 5 procedural framework (notice of intent + 28-day representations + final notice + Tribunal appeal), the banning-order track, the two parallel registers (rogue-landlord database vs PRS Database), three anonymised enforcement scenarios, the tax-deductibility position on legal fees / penalties / RROs / remediation, and a 10-item compliance checklist. All six verifications passed; monitored_pages row 123 inserted; 14 FAQs (top of the band) given the breadth of operational and statutory ground covered. F-7 raised to back-patch forward-links to C5, C6, C9 once those siblings exist on branch later in this session.

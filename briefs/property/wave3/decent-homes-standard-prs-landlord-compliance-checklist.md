@@ -177,34 +177,63 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** decent-homes-standard-prs-landlord-compliance-checklist (no override)
+- **Final category:** Landlord Tax Essentials (canonical /blog/landlord-tax-essentials/...) — same cluster as C1/C2/C3/C4
+- **H1 chosen:** The Decent Homes Standard for the PRS: A Landlord Compliance Checklist (May 2026 Status)
+- **Meta title chosen:** "Decent Homes Standard PRS: Landlord Compliance Checklist" (56 chars)
+- **Why these vs other options:** Slug is descriptive of the framing differentiator (compliance-checklist, not pillar) and is the primary query token; category matches the RRA 2025 sibling cluster (C1-C4 in landlord-tax-essentials, so C5 keeps the topical cluster tight); H1 carries the May 2026 status flag because the page is explicitly written in the transitional window between SI 2025/1354 (framework) and the substantive Decent Homes Regulations (not yet made), and the framing-differentiator turns on which provisions are live now versus scheduled.
 
 ### Competitor URLs fetched
+- ukpropertyaccountants.co.uk/renters-rights-bill-key-impact-on-tenants-landlords — fetched via WebFetch (per pickup note re raw httpx 403). No Decent Homes / HHSRS / RRO content. Background only, did not extract.
+- legislation.gov.uk/uksi/2025/1354/regulation/2/made — verbatim list of provisions in force from 27 Dec 2025: s.63 (partial), s.99 (partial), s.100(1)+(5)+(6), Sch 4 paras 1 + 9(1) + 9(3) excluding (1A)(a). Anchored §"What is in Force on 22 May 2026" verbatim.
+- legislation.gov.uk/ukpga/2025/26/part/3 — s.100 (regulation-making power, qualifying residential premises, Type 1 + Type 2 split) and s.101 (MOD accommodation, not relevant to PRS). Anchored §"Statutory Framework".
+- legislation.gov.uk/ukpga/2025/26/schedule/4 — para 4 (HA 2004 s.5 mandatory duty for Type 1), para 6 (new s.6A £7,000 penalty + new Sch A1), para 7 (HA 2004 s.7 discretionary for Type 2), paras 35-37 (Sch 1/2/3 service-of-notice updates for relevant tenancies). Anchored §"Enforcement Powers Today" + section 6A FAQ.
+- gov.uk/government/publications/a-decent-home-definition-and-guidance — confirmed the 2006 social-housing version is the base the PRS extension will broadly track, four-limb structure verified.
+- gov.uk/government/collections/housing-health-and-safety-rating-system-hhsrs-guidance — confirmed 29 hazard categories + Category 1 mandatory duty under s.5. Did not extract detailed scoring formula (in linked PDFs, not on-page).
+- gov.uk/government/publications/rent-repayment-orders-under-the-housing-and-planning-act-2016 — confirmed the existing PDF guidance applies only to offences before 1 May 2026; post-1-May regime sits under RRA 2025. Anchored §"Rent Repayment Order Risk".
 
 ### Existing-page review (from "Closest existing pages")
+- pre-letting-expenses-landlord-claim-before-first-tenant (LTE) — read. Forward-link added for pre-letting Decent Homes works under ITTOIA 2005 s.57.
+- hmo-licensing-fees-tax-deductible-uk-landlords (PTST) — read. Forward-link added twice: once for the cap-vs-revenue framework analogy in the tax-treatment section, once in FAQ about HMO-licence-interaction. Page is the trusted anchor for the deductibility framework on this site.
+- C1 rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence (this wave, committed) — read. Forward-link added twice (intro cross-link block + procedural safeguards reference in the enforcement section).
+- C6 prs-database-landlord-ombudsman-registration-requirements (planned, not yet on branch) — forward-link emitted in intro cross-link block. Will resolve once C6 commits. Following C1's F-7 pattern: keep the link, raise F-flag for back-patch verification.
+- renters-rights-act-2026-tax-implications-landlords (LTE; queued for rewrite under F-1) — did NOT link to (still uses stale "2026" framing).
+- hmo-landlord-accounting-multi-tenant-property-tax (LTE) — did not directly link; HMO licensing fees page is the better deductibility anchor.
+- landlord-expenses-allowable-uk-2026 (S24) — did not directly link; ITTOIA 2005 s.272 / PIM2030 cite carries the deduction framework.
 
 ### Citations added (external authority)
+- SI 2025/1354 (legislation.gov.uk) — commencement of framework provisions on 27 Dec 2025.
+- gov.uk Rent Repayment Orders guidance (HP Act 2016 era; pre-1-May-2026 scope).
+- HMRC Property Income Manual (gov.uk hmrc-internal-manuals/property-income-manual) — cap-rev framework + PIM2030 double glazing concession.
+5 external authority links inline (within the 4-7 band per brief).
 
 ### Internal links added (to our existing pages)
+- /blog/landlord-tax-essentials/rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence (C1, twice)
+- /blog/landlord-tax-essentials/prs-database-landlord-ombudsman-registration-requirements (C6, planned — resolves on C6 commit)
+- /blog/property-types-and-specialist-tax/hmo-licensing-fees-tax-deductible-uk-landlords (twice)
+- /blog/landlord-tax-essentials/pre-letting-expenses-landlord-claim-before-first-tenant
+- /contact (3× CTA hooks)
 
 ### Inline CTA placements
+- Aside 1: after the limb 3 modern-facilities walkthrough, at the moment a landlord realises the void-period refit budget needs scoping with the cap-vs-revenue split.
+- Aside 2: after the tax-treatment section, at the portfolio-level dispose-or-retrofit decision point.
+- Aside 3: at end-of-page (after the timeline), targeted at older-stock landlords weighing retrofit vs disposal — pre-CTA hook before the auto-injected LeadForm.
 
 ### Build attempts
+- 1st attempt: clean. 386 static pages.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 == 14 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 56 (≤62) ✓
+- Meta description length: 149 (≤158) ✓
+- Internal links resolve: 5 of 6 to existing files; 1 forward-link to C6 (planned, intentional per F-7 pattern) ✓
+- monitored_pages row inserted: id 140 ✓
+- Body word count: 3,637 (slightly above the 2,500-3,500 typical band; justified by 4-limb walkthrough + enforcement-options table + 20-item compliance checklist + worked example + planning timeline, which the framing differentiator requires; not padding, per §16.16 framing-differentiator-led discipline)
 
 ### Flags raised to wave3_site_wide_flags.md
+- F-7 forward-link queue: extended to record that C5 now also carries a forward-link to C6. C6 forward-link will resolve on C6 commit; verify at session-end back-patch sweep or post-merge cross-link batch.
 
 ### 2-3 sentence summary
+Wrote C5 at 3,637 body words. Compliance-checklist page for the Decent Homes Standard PRS extension, anchored on the precise commencement position as of 22 May 2026 (framework live under SI 2025/1354 from 27 Dec 2025; substantive standard via further SI pending, anticipated before April 2027). Walks the four limbs (HHSRS Category 1 hazard freedom, reasonable state of repair, reasonably modern facilities, reasonable thermal comfort), the 20-item compliance checklist split between currently-mandatory items and anticipated items, the full HA 2004 enforcement-options table including the new RRA 2025 Sch 4 para 6 section 6A £7k penalty, the Rent Repayment Order risk for post-1-May offences, the cap-vs-revenue tax-treatment framework with a 1920s terraced worked example showing £12,008 of tax relief on £32,220 of staged refit spend, and a planning timeline through to commencement of the substantive standard. 14 FAQs, 3 asides, build clean.

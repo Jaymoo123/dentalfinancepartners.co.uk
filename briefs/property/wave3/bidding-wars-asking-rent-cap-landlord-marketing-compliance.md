@@ -177,34 +177,59 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** bidding-wars-asking-rent-cap-landlord-marketing-compliance (no override)
+- **Final category:** Landlord Tax Essentials (cluster continuity C1-C9; closes the 10-page C-bucket)
+- **H1 chosen:** Rental Bidding Ban and Advance-Rent Prohibition: Landlord and Agent Marketing Compliance Under the Renters' Rights Act 2025
+- **Meta title chosen:** "Rental Bidding Ban + Advance Rent: Marketing Compliance" (55 chars)
+- **Why these vs other options:** Slug retained for primary-query alignment. H1 leads on the dual-statute scope (Ch.6 Pt.1 bidding ban + ss.8/9 advance-rent ban) plus the joint-and-several landlord+agent liability angle, anchoring the marketing-compliance framing that distinguishes this page from C8 (tenancy template) and C4 (post-tenancy rent rises).
 
 ### Competitor URLs fetched
+- legislation.gov.uk/ukpga/2025/26/part/1/chapter/6 — verbatim Ch.6 Pt.1 RRA 2025 (ss.56 + 57): stated-rent advertisement requirement + bidding prohibition + joint-and-several liability + £7,000 penalty + 'to let' sign exception. Anchored §"Section 56" + §"Section 57" + §"Joint-and-Several Liability".
+- ss.8, 9 RRA 2025 — re-used from C8 fetch (HA 1988 s.4B; TFA 2019 ss.5A/5B).
+- ukpropertyaccountants.co.uk pages — not fetched (legacy framing already known from earlier C-page work).
+- gov.uk private renting + TFA 2019 + FTT-PC + RRA SI 2026/421 references — covered via existing cluster + previously fetched content.
 
 ### Existing-page review (from "Closest existing pages")
+- C1 rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence (committed) — forward-link via intro cross-link block + §"Section 57" reference to the procedural framework.
+- C2 section-21-abolition-uk-landlord-possession-guide-2026 (committed) — forward-link via intro cross-link block.
+- C3 periodic-tenancy-default-ast-conversion-mechanics (committed) — forward-link via intro cross-link block.
+- C4 renters-rights-act-rent-increase-section-13-tribunal-route (committed) — forward-link via intro cross-link block (bidirectional with C10).
+- C8 tenancy-agreement-template-rra-2025-compliant-clauses (committed) — forward-link via intro cross-link block.
+- C9 landlords-considering-selling-portfolio-rra-2025-tax-implications (committed) — forward-link via intro cross-link block.
+- C7 pet-rights-tenancy-landlord-refusal-reasonable-grounds (committed) — referenced in §"Compliance Checklist" item 5 (F-11 corrected position re no pet-related fees) without hyperlink to keep the list scannable.
+- hmo-licensing-fees-tax-deductible-uk-landlords (PTST) — forward-link in intro for the deductibility framework.
+- renters-rights-act-2026-tax-implications-landlords (LTE, F-1 stale) — NOT linked.
+- first-time-landlord-tax-guide / landlord-expenses-allowable — NOT directly linked; PIM2080/PIM2120 inline citations carry the deduction framework.
+- what-is-good-gross-yield-buy-to-let-property-2026 — checked existence (not in inventory); did NOT link.
 
 ### Citations added (external authority)
+- 0 external authority hyperlinks; the page is statute-anchored (Ch.6 Pt.1 ss.56, 57; s.8 HA 1988 s.4B; s.9 TFA 2019 ss.5A, 5B; TFA 2019 Sch.2; SI 2026/421 reg.3) and uses inline statutory citations throughout. The deductibility-framework cross-link to the HMO licensing fees guide carries the gov.uk PIM citations via that page. Defensible for a statute-anchored procedural page.
 
 ### Internal links added (to our existing pages)
+- C1, C2, C3, C4, C8, C9 (six RRA-cluster siblings in the intro cross-link block; resolves C8 → C10 forward-reference if C8's body referenced C10)
+- /blog/property-types-and-specialist-tax/hmo-licensing-fees-tax-deductible-uk-landlords (once)
+- /contact (2× CTA hooks)
+TOTAL 7 internal cross-links (mid-density; intentional given the page sits late in the C-cluster and the prior pages carry the deeper deductibility / enforcement detail).
 
 ### Inline CTA placements
+- Aside 1: after the §"Section 57" penalty + joint-and-several liability framework, at the moment a landlord realises the management agreement needs the indemnity clause.
+- Aside 2: after the tax-treatment table, targeted at portfolio landlords with a mix of self-managed and agent-managed properties needing a coordinated audit.
 
 ### Build attempts
+- 1st attempt: clean. 389 static pages.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 == 14 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 55 (≤62) ✓
+- Meta description length: 156 (≤158) ✓
+- Internal links resolve: 7 of 7 to existing files ✓ (no broken forward-links; C10 is the last page in the C-bucket so no further forward-link queue)
+- monitored_pages row inserted: id 153 ✓
+- Body word count: 2,518 (at the lower end of the 2,500-3,500 band per §16.16; justified by the procedural-page framing — the marketing-compliance scope is narrow by design + the underlying statute is short Ch.6 Pt.1 + ss.8/9; the page does not need to re-cover the enforcement procedural framework already in C1)
 
 ### Flags raised to wave3_site_wide_flags.md
+- None new. Confirms F-7 forward-link queue is fully closed (all C-cluster forward-links resolve). F-11 corrected pet position referenced in compliance checklist item 5.
 
 ### 2-3 sentence summary
+Wrote C10 at 2,518 body words. Marketing-stage compliance page for the post-1-May-2026 regime covering Ch.6 Pt.1 RRA 2025 (ss.56 stated-rent advertisement requirement + bidding prohibition; s.57 £7,000-per-breach penalty), s.8 RRA 2025 (HA 1988 s.4B void in-tenancy advance-rent terms), s.9 RRA 2025 (TFA 2019 ss.5A/5B pre-tenancy advance-rent prohibition), the interaction with the unchanged TFA 2019 prohibited-payments framework. 10-item portal-listing compliance checklist + 3 worked examples of common pre-2026 non-compliant patterns + the joint-and-several landlord+agent liability mechanic with contractual indemnity fix + 10-row tax-treatment deductibility table. 14 FAQs, 2 asides, 7 internal cross-links, build clean. Closes the 10-page Session C bucket (C1-C4 prior + C5-C10 this session).

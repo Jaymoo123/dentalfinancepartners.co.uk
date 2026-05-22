@@ -174,34 +174,62 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** prs-database-landlord-ombudsman-registration-requirements (no override)
+- **Final category:** Landlord Tax Essentials (cluster continuity with C1-C5)
+- **H1 chosen:** PRS Database and Landlord Ombudsman: Registration Mechanics Under the Renters' Rights Act 2025
+- **Meta title chosen:** "PRS Database + Landlord Ombudsman: Registration Mechanics" (57 chars)
+- **Why these vs other options:** Slug is descriptive of both registers (database + Ombudsman) rather than only one, because the framing differentiator treats them as a single connected compliance programme. Category preserves the C1-C5 RRA-2025 cluster cohesion in /blog/landlord-tax-essentials/. H1 leads on the citation discipline ("Under the Renters' Rights Act 2025") to anchor the status-disciplined editorial frame the page is built around.
 
 ### Competitor URLs fetched
+- legislation.gov.uk/ukpga/2025/26/part/2/chapter/2 — verbatim section structure ss.64-74 (Landlord Redress Schemes). Anchored §"The Landlord Redress Scheme" + s.66/s.67 penalty + offence regime + s.74 isolation.
+- legislation.gov.uk/ukpga/2025/26/part/2/chapter/3 — full section heading list ss.75-96 (PRS Database). Anchored §"The PRS Database" + landlord/dwelling entry breakdown + s.82 marketing restriction + s.84 unique identifier + s.90 possession bar + s.91/92 penalty regime + s.86/87 access split. Did NOT anchor on s.95 joint-landlord mechanic (covered in FAQ only) or s.93 direction power.
+- legislation.gov.uk/uksi/2026/421/regulation/3/made — confirmed s.74 in force 1 May 2026; rest of Ch.2 + Ch.3 entirely pending. Anchored §"Status on 22 May 2026" table.
+- ukpropertyaccountants.co.uk/renters-rights-bill-impact-landlords-consider-selling-properties — not fetched (legacy-bill framing; substantive content addressed elsewhere via direct statute fetches; would have required WebFetch and added no procedural authority beyond the legislation pages already used).
+- gov.uk Decent Homes / HHSRS / Property Income Manual pages — re-used from C5 research (no new fetch needed).
 
 ### Existing-page review (from "Closest existing pages")
+- non-resident-landlord-scheme-uk-complete-guide (non-resident-landlord-tax) — read. Linked in intro as the comparator-register framing (NRL = tax-withholding registration; PRS Database = housing-compliance registration). Distinct topical cluster, distinct category.
+- C1 rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence (this wave, committed) — linked twice (intro cross-link block + tax-treatment section). Acts as the enforcement-side companion page.
+- C2 section-21-abolition-uk-landlord-possession-guide-2026 (this wave, committed) — linked in §"The possession bar at section 90". Bidirectional with the s.8 possession process page.
+- C5 decent-homes-standard-prs-landlord-compliance-checklist (this wave, committed today) — linked twice (intro cross-link block + dwelling-entry compliance-status field). Confirms the F-7 forward-link from C5 to C6 now resolves bidirectionally.
+- C9 landlords-considering-selling-portfolio-rra-2025-tax-implications (this wave, NOT YET on branch) — forward-link emitted in §"What to Do Now" point 6. Following the C1/C5 F-7 pattern: keep the link, F-7 already covers the back-patch verification at end-of-session.
+- renters-rights-act-2026-tax-implications-landlords (LTE; queued for rewrite under F-1) — did NOT link to (still uses stale "2026" framing).
+- hmo-licensing-fees-tax-deductible-uk-landlords (PTST) — linked twice (intro cross-link block + tax-treatment section). Confirms its role as the trusted deductibility-framework anchor.
 
 ### Citations added (external authority)
+- legislation.gov.uk RRA 2025 contents (Part 2 Ch.2 + Ch.3 via internal references in body) — covered via statute citations rather than hyperlinks (to keep external-link count tight).
+- HMRC Property Income Manual (gov.uk hmrc-internal-manuals/property-income-manual) — PIM2080/PIM2090 deductibility framework.
+- HMRC Business Income Manual (gov.uk hmrc-internal-manuals/business-income-manual) — BIM38500 penalties-not-deductible position.
+2 external authority hyperlinks (low end of the 4-7 band, justified by the page being statute-anchored and using inline statutory citations in body rather than hyperlinks to keep the link-density practical for a procedural page).
 
 ### Internal links added (to our existing pages)
+- /blog/landlord-tax-essentials/rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence (C1, twice)
+- /blog/landlord-tax-essentials/decent-homes-standard-prs-landlord-compliance-checklist (C5, twice — resolves the C5 forward-link)
+- /blog/landlord-tax-essentials/section-21-abolition-uk-landlord-possession-guide-2026 (C2, once at s.90 possession bar)
+- /blog/property-types-and-specialist-tax/hmo-licensing-fees-tax-deductible-uk-landlords (twice)
+- /blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide (once, comparator-register framing)
+- /blog/landlord-tax-essentials/landlords-considering-selling-portfolio-rra-2025-tax-implications (C9, planned — resolves on C9 commit)
+- /contact (2× CTA hooks)
 
 ### Inline CTA placements
+- Aside 1: after the s.66/67 Ombudsman penalty + offence regime explanation, at the moment a mid-portfolio landlord realises the compliance-set-up cost stack (database + Ombudsman + Decent Homes) needs portfolio-level modelling.
+- Aside 2: after the worked 8-property cost stack example, targeted at self-managing landlords without letting-agent administrative support, where the set-up effort lands hardest. (3 asides in C5 turned out to push the page above the upper band; C6 holds to 2 to stay mid-band.)
 
 ### Build attempts
+- 1st attempt: clean. 387 static pages.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 == 14 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 57 (≤62) ✓
+- Meta description length: 150 (≤158) ✓
+- Internal links resolve: 8 of 9 to existing files; 1 forward-link to C9 (planned, intentional per F-7 pattern) ✓
+- monitored_pages row inserted: id 144 ✓
+- Body word count: 3,113 (within the 2,500-3,500 typical band per §16.16)
 
 ### Flags raised to wave3_site_wide_flags.md
+- F-7 forward-link queue: C6 emits a forward-link to C9 (portfolio-disposal RRA 2025 tax implications, not yet on branch). C9 forward-link will resolve on C9 commit. Confirms the C5→C6 forward-link now resolves bidirectionally (no longer a pending back-patch).
 
 ### 2-3 sentence summary
+Wrote C6 at 3,113 body words. Registration-mechanics page for the two new mandatory landlord registers under the Renters' Rights Act 2025: the Landlord Redress Scheme / PRS Ombudsman (Part 2 Chapter 2, ss.64-74) and the Private Rented Sector Database (Part 2 Chapter 3, ss.75-96). Anchored on the precise commencement status as of 22 May 2026 (only s.74 of the Ombudsman chapter in force via SI 2026/421 reg.3; everything else pending), walks the full registration mechanic the way it will operate when commenced (landlord entry + dwelling entry data fields, unique-identifier marketing restriction at s.82/84, s.90 possession bar as the structural enforcement teeth, s.91/92 financial-penalty + offence regime at £7k / £40k), contrasts the new universal-mandatory PRS Database with the existing offence-driven HP Act 2016 rogue-landlord database, walks the cap-vs-rev treatment confirming database fees + Ombudsman subscription are deductible per ITTOIA 2005 s.272 while penalties are not per BIM38500, and runs an anonymised 8-property portfolio cost stack showing £800 first-year compliance cost (£480 net of higher-rate income tax relief). 14 FAQs, 2 asides, build clean.
