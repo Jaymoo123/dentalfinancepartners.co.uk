@@ -205,47 +205,51 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged (`sdlt-5-percent-surcharge-refund-claim-process`)
+- **Final category:** unchanged (`landlord-tax-essentials`)
+- **H1 chosen:** "How to Claim a Refund of the 5% SDLT Additional Dwellings Surcharge"
+- **Meta title chosen:** "5% SDLT Surcharge Refund: How to Claim When Old Home Sells" (58 chars)
+- **Why these vs other options:** Process/applied framing puts "refund" and "claim" up front, which is the intent gap vs the rates pillar; H1 names both the rate (5%) and the underlying mechanism (additional dwellings surcharge) so HMRC searchers land in the right place.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/a-complete-guide-to-5-sdlt-surcharge-refund-claims/ ,  1,814 words. Outline: overview, main-residence definition, 4 statutory conditions split into new vs disposed dwelling, exceptional circumstances, claim procedure, 3 worked examples.
+- https://www.ukpropertyaccountants.co.uk/reclaim-sdlt-surcharge-if-old-home-selling-is-delayed/ ,  1,969 words. Strong on cladding/EWS1 carve-out, cites SDLTM09807, Para 3(7A) and overpayment relief 4-year window. Used for SDLTM09807 framing and excluded circumstances.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `sdlt-buy-to-let-rates-surcharge-guide-2025` , Pillar covering rates, bands, surcharge basics. Has one FAQ on the refund route but no process detail. My page is the applied/process complement; I link back to it and treat rates as out of scope.
+- `stamp-duty-buy-to-let-surcharge` , Older overview page. Linked from "further reading" only.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Schedule 4ZA Finance Act 2003 (legislation.gov.uk)
+- Finance (No. 2) Act 2024 (legislation.gov.uk) for the 5% rate
+- HMRC SDLT Manual SDLTM09807 (exceptional circumstances)
+- HMRC SDLT Manual SDLTM09800 (replacement of main residence)
+- gov.uk "Apply for a repayment of the higher rates of SDLT" service
+- HMRC SDLT calculator (tax.service.gov.uk)
+- Section 89 Finance Act 2009 (repayment interest)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025` , the rates pillar (intro paragraph + further reading)
+- `/blog/landlord-tax-essentials/stamp-duty-buy-to-let-surcharge` , overview of when the surcharge applies (further reading)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After the "four statutory conditions" section , conversion moment is right after readers self-test against the conditions
+- After the "exceptional circumstances" section , borderline-claim segment is the highest-value lead
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 , pass (after `npm install` in the worktree; worktree had no node_modules)
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (13 = 13)
+- Em-dashes in markdown: 0 (4 found in first draft, replaced with commas)
+- Tailwind classes in markdown: 0
+- Meta title length: 58 ≤ 62
+- Meta description length: 157 ≤ 158
+- Internal links resolve: both target markdown files exist
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- TOOLING: worktree was missing `.env` and `optimisation_engine/competitor/_db.py` (latter is untracked in git). Copied both from main checkout to unblock. Sessions B and C will hit the same gap.
 
 ### 2-3 sentence summary
-<freeform>
+Wrote the process-focused complement to our SDLT rates pillar: 4 statutory conditions, three-year window mechanics, gov.uk claim steps, evidence table, SDLTM09807 exceptional-circumstances framework, 6 failure modes and a 28-month worked timeline. Anti-templating handled by leading with refund mechanics (not surcharge mechanics) and structuring the body around process + failure modes rather than a "complete guide" outline. 13 FAQs cover deadlines, interest, separation, trust/company exclusions, non-resident surcharge interaction.
 
