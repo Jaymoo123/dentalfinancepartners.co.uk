@@ -168,34 +168,60 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** ated-overview-companies-holding-uk-residential-property-2026-27
+- **Final category:** Incorporation & Company Structures (overrode manager pre-suggested `property-types-and-specialist-tax` per F-2 site-wide flag; all four existing ATED pages sit in `incorporation-and-company-structures`, fragmenting the cluster across categories would weaken topical authority and the category index page)
+- **H1 chosen:** "ATED 2026/27: A Strategic Overview for Companies Holding UK Residential Property"
+- **Meta title chosen:** "ATED 2026/27 Strategic Overview for Property Companies" (54 chars)
+- **Why these vs other options:** Title leads with the year + "Strategic Overview" to distinguish from the operational pillar (`ated-complete-guide-2026-27`) which leads with "Complete Guide". Slug carries the "companies-holding-uk-residential-property" qualifier to lock the chargeable-persons positioning. Category override is the bucket-cluster discipline call.
 
 ### Competitor URLs fetched
+- Did not re-fetch live; relied on Stage 2 validation (brief confirms ukpropertyaccountants + gov.uk Basics + HMRC ATED Manual + FA 2013 Part 3 are all live and on-topic). Stage 2 reasoning + house position §18 + the four existing ATED pages on main provided all structural and factual input.
 
 ### Existing-page review (from "Closest existing pages")
+- `ated-complete-guide-2026-27`: pillar (operational mechanic, ~5k words, deep coverage of bands / valuation / reliefs / returns / penalties / dis-envelope). A1 differentiates by being strategic / positioning (chargeable-persons cohort map + three-tax interlock + 2026/27 transition + strategic posture menu). No outline overlap.
+- `ated-rental-property-relief-mechanics`: deep relief mechanic. A1 mentions s.133 relief in one paragraph; does not re-cover connected-person mechanic. Cross-link only.
+- `ated-15-percent-flat-rate-sdlt-interaction`: acquisition-side companion. A1 references three-year clawback in one sentence; cross-link for depth.
+- `ated-late-filing-penalties-mechanics`: penalty cascade. A1 references FA 2009 Sch 55 disclosure framework in one paragraph; cross-link for depth.
+- `buy-to-let-limited-company-complete-guide-uk`: BTL Ltd-Co pillar. A1 is the downstream "now you're a Ltd Co holding £500k+ residential, here is the annual charge you now face" page. Cross-link.
+- `incorporating-property-portfolio-uk-2026`: pre-incorporation context. Cross-link only.
+- `corporation-tax-rates-property-companies-2026-27`: CT companion. Cross-link only.
 
 ### Citations added (external authority)
+- gov.uk ATED basics guidance
+- HMRC ATED Manual (gov.uk Internal Manuals)
+- legislation.gov.uk FA 2013 Part 3 (ss.94-174)
+- legislation.gov.uk IHTA 1984 Sch A1
+- legislation.gov.uk FA 2003 Sch 4A
+- legislation.gov.uk FA 2009 Sch 55
+- gov.uk Register of Overseas Entities
 
 ### Internal links added (to our existing pages)
+- /blog/incorporation-and-company-structures/ated-complete-guide-2026-27 (3 inline references)
+- /blog/incorporation-and-company-structures/ated-rental-property-relief-mechanics (2 references)
+- /blog/incorporation-and-company-structures/ated-15-percent-flat-rate-sdlt-interaction (2 references)
+- /blog/incorporation-and-company-structures/ated-late-filing-penalties-mechanics (3 references)
+- /blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk (2 references)
+- /blog/incorporation-and-company-structures/incorporating-property-portfolio-uk-2026 (1 reference)
+- /blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27 (1 reference)
 
 ### Inline CTA placements
+- Two asides total. (1) After the Three-Tax Interlock section: positioning around "lining up the three-tax interlock against your holding structure before 30 April 2026". (2) After the Strategic Posture Choices section: positioning around the dis-envelope vs restructure vs claim-relief vs accept-charge decision.
 
 ### Build attempts
+- npm install (worktree clean), then `npm run build`. Build passed clean; 382 static pages generated; new page route confirmed in build output.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 Question entries in JSON-LD; 14 FAQs in frontmatter; FAQPage schema present
+- Em-dashes in markdown: 0 (one em-dash in built HTML, but in site-chrome header sr-only text, not in page body)
+- Tailwind classes in markdown: 0
+- Meta title length: 54 (limit 62)
+- Meta description length: 157 (limit 158)
+- Internal links resolve: all 7 unique target slugs verified present in `Property/web/content/blog/`
+- monitored_pages row inserted: yes (id 122, rewrite_type='rewrite', 90-day window)
+- Body word count: 4,184 (pillar-grade; section 16.16 lesson allows 3,500-4,500 for pillars; A1 is the strategic anchor for the bucket and covers cohort map + three-tax interlock + 2026/27 transition + four-option strategic menu, depth justified)
 
 ### Flags raised to wave3_site_wide_flags.md
+- F-7 candidate: INTERNAL_LINK back-patch suggestion against `buy-to-let-limited-company-complete-guide-uk` pillar to forward-link to A1 at the "company holding > £500k residential" decision point (per F-4 manager pre-fill).
 
 ### 2-3 sentence summary
+A1 anchors the ATED bucket as the strategic entry-point: chargeable-persons cohort map (UK + overseas companies, partnerships with corporate members, CIS), the three-tax interlock (SDLT 15% Sch 4A FA 2003 at acquisition / ATED Part 3 FA 2013 annually / IHT Sch A1 IHTA 1984 at death), the 2026/27 transition window (band CPI uplift, 1 April 2027 revaluation approaching, OTM letter cycle), and the four-option strategic posture menu (dis-envelope, claim relief, restructure, accept charge). Differentiated from the operational pillar by angle (strategic decision vs deep mechanic), not by topic; the discipline test (no relief-catalogue body, no band-table-only body, link out for depth) held throughout. Category overridden to `incorporation-and-company-structures` per F-2.
