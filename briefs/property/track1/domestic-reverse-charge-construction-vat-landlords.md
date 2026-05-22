@@ -212,47 +212,49 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** domestic-reverse-charge-construction-vat-landlords (unchanged)
+- **Final category:** Landlord Tax Essentials (unchanged)
+- **H1 chosen:** Domestic Reverse Charge VAT for Construction: What Landlords and Developers Need to Know
+- **Meta title chosen:** Construction Reverse Charge VAT: Landlord and Developer Guide (61 chars)
+- **Why these vs other options:** Two-audience framing (landlords AND developers) in the meta title matches the brief's framing differentiator — the page must serve both end-user landlords (DRC outside) and CIS-chain developers (DRC inside). Title leads with the practical "what you need to know" rather than a generic guide framing.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/domestic-reverse-charge/ — accessed; treatment is mostly definitional, weak on the end-user notification mechanics, no explicit landlord-vs-developer split. Our differentiator is the three-scenario structure and the cash-flow trap analysis for build-to-sell vs build-to-let.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- None of the closest-existing pages are on VAT for construction. All are Section 24 / Replacement Domestic Items / MTD adjacent. No cannibalisation risk.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- HMRC VAT Notice 735 (Domestic reverse charge on construction services) referenced.
+- Section 74 FA 2004 (scope of CIS construction services) cited.
+- VATA 1994 Schedule 8 Group 5 (zero-rating of new dwelling construction) cited.
+- Section 1122 CTA 2010 (connected-person test for intermediary supplier) cited.
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27` — linked from Scenario 3 (build-to-sell developer) because the corporation tax treatment of profits is the natural next question for that reader profile.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "The End-User Concept" section — highest-intent moment because the notification is a small action with a real cost if missed.
+- After "The Cash-Flow Trap for Developers" section — second-highest intent moment because developers' financial models often miss the working-capital impact.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — partial fail (2 em-dashes in body, both in non-list parenthetical asides). Replaced with full stops / commas.
+- Attempt 2 — pass (clean build, route confirmed, FAQ schema 13=13 in built HTML).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (13 = 13)
+- Em-dashes in markdown: 0 (fixed after attempt 1)
+- Tailwind classes in markdown: 0
+- Meta title length: 61 chars (limit 62)
+- Meta description length: 149 chars (limit 158)
+- Internal links resolve: 1 link to existing markdown file
+- monitored_pages row inserted: yes
+- Word count: 3527 (within M-3 calibration 2,800-3,500, marginal 27 words over; not worth a special justification)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None.
 
 ### 2-3 sentence summary
-<freeform>
+Wrote the DRC page as a two-audience reference: end-user landlords (notification, outside the regime in substance) and CIS-chain developers (cash-flow trap, working-capital implication). Three worked scenarios cover the principal landlord/developer profiles. Re-claimed after the manager released a prior session's stale claim; the file was drafted in this session.
+
 

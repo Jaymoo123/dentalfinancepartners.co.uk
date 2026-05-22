@@ -203,47 +203,54 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** fic-iht-treatment-bpr-myth (unchanged)
+- **Final category:** Incorporation & Company Structures (unchanged)
+- **H1 chosen:** FIC IHT Treatment and the BPR Myth: What Actually Saves Inheritance Tax in a Property FIC
+- **Meta title chosen:** FIC IHT Treatment and the BPR Myth: What Actually Applies (57 chars)
+- **Why these vs other options:** Framing differentiator is myth-busting + what does actually save IHT. Title leads with "the BPR myth" since this is the high-intent SERP query and the page's central correction.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- No specific competitor URL prescribed; built primarily from Pawson v HMRC [2013] (UT) judgment + IHTA 1984 statutory text + Autumn Budget 2024 BPR/APR cap announcement.
 
-### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+### Existing-page review
+- C6 (FIC comprehensive ref) — linked twice as the structural reference.
+- C7 (FIC vs trust) — linked once.
+- C8 (growth-share design) — linked twice (concept-spine for the growth-share IHT mechanism).
+- Existing `family-investment-company-property-worth-it` — linked once.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Pawson v HMRC [2013] Upper Tribunal — the leading BPR investment-vs-trading authority.
+- Sections 103-114 IHTA 1984 (BPR statutory framework).
+- Section 105(3) IHTA 1984 (wholly-or-mainly-trading carve-out).
+- Section 18 IHTA 1984 (spousal exemption).
+- Section 260 TCGA 1992 (holdover relief on gift to trust).
+- April 2026 £1m BPR/APR cap (Autumn Budget 2024 announcement).
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/incorporation-and-company-structures/fic-complete-guide-property-wealth-transfer` (C6, ×2)
+- `/blog/incorporation-and-company-structures/fic-growth-shares-and-freezer-shares-design` (C8, ×2)
+- `/blog/incorporation-and-company-structures/fic-vs-discretionary-trust-property-comparison` (C7)
+- `/blog/incorporation-and-company-structures/family-investment-company-property-worth-it` — existing decision-focused page
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "Pawson v HMRC" section — peak intent moment: reader has just learned BPR doesn't apply; the conversion is "show me what actually saves the IHT". Leads into the structural saving mechanisms.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass (clean build, FAQ schema 13=13).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (13 = 13)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 57 chars (limit 62)
+- Meta description length: 148 chars (limit 158)
+- Internal links resolve: all 6 link instances point at existing markdown files (5 from this session FIC cluster + 1 existing FIC page)
+- monitored_pages row inserted: yes
+- Word count: 3513 (within M-3 calibration 2,800-3,500, marginal 13 words over)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None on this page (the C6 INTERNAL_LINK flag covering bidirectional linking with the existing FIC page covers the cluster).
 
 ### 2-3 sentence summary
-<freeform>
+Final Session C page. Closes the FIC cluster by addressing the persistent BPR myth: Pawson v HMRC settled the position over a decade ago; the April 2026 £1m BPR/APR cap narrows the relief further for the small population of trading FICs that do qualify. Walks through what FICs actually save on IHT (growth-share accrual, PET gifting, spousal exemption, discounted minority valuation) with a worked £3m portfolio example showing £1.24m of genuine IHT saving from structural mechanics, not BPR.
 

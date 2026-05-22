@@ -209,50 +209,51 @@ You don't have to use all of these; pick the ones that fit your specific framing
 
 ---
 
-## Per-page work-log (fill in as you go — supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** fic-vs-discretionary-trust-property-comparison (unchanged)
+- **Final category:** Incorporation & Company Structures (unchanged)
+- **H1 chosen:** FIC vs Discretionary Trust for Property: A Tax-Side Comparison
+- **Meta title chosen:** FIC vs Discretionary Trust for Property: Tax Comparison (55 chars)
+- **Why these vs other options:** Framing differentiator is direct side-by-side. Title matches the SERP query intent exactly ("FIC vs discretionary trust").
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- ukpropertyaccountants.co.uk FIC guide referenced for FIC-side; no specific competitor URL prescribed. Built primarily from statutory sources (IHTA 1984 ss.64-65 for periodic charge; ITA 2007 trust rates; corporation tax rates).
 
-### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+### Existing-page review
+- C6 (`fic-complete-guide-property-wealth-transfer`, written earlier this session) — directly linked as the comprehensive FIC reference.
+- Existing `family-investment-company-property-worth-it` — linked as the decision-focused FIC counterpart.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- IHTA 1984 ss.64-65 (ten-yearly periodic charge for discretionary trusts).
+- ITA 2007 trust rate of 45% on non-savings, non-dividend income (£500 standard rate band).
+- Corporation tax rates for 2026/27 (19% small profits / 25% main).
+- TCGA 1992 24% trustee rate on residential property gains.
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/incorporation-and-company-structures/fic-complete-guide-property-wealth-transfer` (C6 from this session) — FIC structural reference.
+- `/blog/incorporation-and-company-structures/family-investment-company-property-worth-it` — existing FIC decision-focused page.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "Entry Charge" subsection of IHT section — peak intent moment: the £535k worked entry-charge number on a £3m transfer is the most concrete saving driver for the FIC route.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass (clean build, FAQ schema 13=13).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (13 = 13)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 55 chars (limit 62)
+- Meta description length: 150 chars (limit 158)
+- Internal links resolve: both link instances point at existing markdown files
+- monitored_pages row inserted: yes
+- Word count: 3373 (within M-3 calibration 2,800-3,500)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None.
 
 ### 2-3 sentence summary
-<freeform>
+Wrote the FIC-vs-trust side-by-side comparison with a six-axis table and a £3m portfolio worked example showing the ~£900k 20-year tax-cost difference. The IHT entry charge is the principal numerical driver; the income-tax rate gap (45% trust vs 19-25% FIC) is the principal ongoing driver. Decision matrix at the end provides the portfolio-size and life-stage break-points.
 

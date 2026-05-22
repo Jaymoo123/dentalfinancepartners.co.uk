@@ -209,50 +209,52 @@ You don't have to use all of these; pick the ones that fit your specific framing
 
 ---
 
-## Per-page work-log (fill in as you go — supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** togc-vat-property-letting-business (unchanged)
+- **Final category:** Incorporation & Company Structures (unchanged)
+- **H1 chosen:** TOGC and VAT on Property Letting Businesses: How to Make the Conditions Stick
+- **Meta title chosen:** TOGC VAT for Property Letting Businesses: Rules and Traps (57 chars)
+- **Why these vs other options:** Framing differentiator is conditions + pitfalls (not a TOGC overview). H1 leads with the practical hurdle ("how to make the conditions stick") rather than a definitional framing.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- HMRC VAT Notice 700/9 referenced as the canonical operational source. No specific competitor URL was prescribed by the brief; the framing differentiator made the statutory + HMRC-guidance route the right primary source.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- None of the closest-existing pages were directly TOGC-relevant. The brief did not list specific cannibalisation candidates for this slug. No overlap risk.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Article 5 VAT (Special Provisions) Order 1995 (the TOGC statutory provision).
+- Schedule 10 VATA 1994 (option to tax).
+- HMRC VAT Notice 700/9 (operational guidance).
+- HMRC form VAT1614A (option-to-tax notification).
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/property-types-and-specialist-tax/vat-on-new-builds-residential-property` (C3 from this session) — wider VAT framework cross-reference.
+- `/blog/landlord-tax-essentials/domestic-reverse-charge-construction-vat-landlords` (C1 from this session) — construction-services compliance cross-reference.
+- `/blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27` — corporate-tax position on letting businesses.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "Option-to-Tax Notification (Opted Properties Only)" subsection — peak intent moment: the notification timing is the single most expensive failure mode (£1m VAT + £50k SDLT on the worked example). Conversion moment: completion-timeline coordination.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — partial fail (meta description 160 chars, 2 over the 158 limit). Trimmed.
+- Attempt 2 — pass (clean build, route confirmed, FAQ schema 14=14 in built HTML).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (14 = 14, top of the 10-14 target range)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 57 chars (limit 62)
+- Meta description length: 146 chars (limit 158)
+- Internal links resolve: all 3 link instances point at existing markdown files (2 from this session + 1 existing)
+- monitored_pages row inserted: yes
+- Word count: 3255 (within M-3 calibration 2,800–3,500)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None.
 
 ### 2-3 sentence summary
-<freeform>
+Wrote the TOGC mechanics page with the £5m commercial-letting worked example showing combined £1m VAT cash-flow + £50k SDLT saving. The five conditions are walked through individually with the option-to-tax notification timing called out as the dominant failure mode. The page is intentionally cross-tax (VAT + SDLT impact together) because that is the combined-saving argument that drives client behaviour.
 

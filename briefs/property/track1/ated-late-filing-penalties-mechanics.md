@@ -204,47 +204,49 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** ated-late-filing-penalties-mechanics (unchanged)
+- **Final category:** Incorporation & Company Structures (OVERRIDDEN from brief default "landlord-tax-essentials"). Reason: keeps the ATED cluster (C10 pillar + C11 + C12 + C13 daughters) together under the same category for canonical URL coherence, sitemap clustering, and pillar-daughter linking. The brief's suggested category was Landlord Tax Essentials, which broadens the audience but separates the daughter from its sibling daughters and pillar; the trade-off favours cluster coherence. Logged here per the brief's instruction to log overrides.
+- **H1 chosen:** ATED Late-Filing Penalties: How the Cascade Builds and What to Do About It
+- **Meta title chosen:** ATED Late-Filing Penalties: Cascade and Appeals Guide (53 chars)
+- **Why these vs other options:** Framing differentiator is "the cascade and the £15,700 trap", not "ATED penalties overview". Title leads with mechanics ("cascade") and the practical outcome ("appeals").
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/15700-in-penalties-for-a-missed-ated-filing-could-your-company-be-next/ — the source case widely cited in adviser content. Their treatment is news-piece-style with limited statutory analysis; our gap is the explicit Schedule 55 / Schedule 56 / Schedule 24 architecture, the reasonable-excuse and special-circumstances framework, and the appeal process.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `hmrc-penalties-late-landlord-tax-returns-2026` — covers ITSA/CT penalty regimes for landlords generally. Does not address ATED specifically. Adjacent but not overlapping. No cannibalisation risk; this page is the ATED-specific deep-dive.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Schedule 55 FA 2009 (late-filing penalty regime) — cited inline, including paragraphs 3, 4, 5, 6, 16, 23.
+- Schedule 56 FA 2009 (late-payment penalty regime) — cited inline.
+- Schedule 24 FA 2007 (inaccuracy penalty regime) — cited inline.
+- Section 161 FA 2013 (the application of Schedules 55/56 to ATED) — cited inline.
+- Schedule 4A FA 2003 (the parallel SDLT clawback exposure) — cited for the three-year retention point.
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/incorporation-and-company-structures/ated-complete-guide-2026-27` (×2) — pillar backlink at the top and bottom of the page.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After the late-filing cascade detail (after "Twelve Months Late") — high-intent conversion moment: the cascade is concrete, the reader recognises the exposure, the £100-bite-on-nil-return point lands.
+- Only 1 inline aside on this page; the page itself is a CTA in shape (the penalty cascade IS the conversion mechanic for compliance work).
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — partial fail (one FAQ entry had a stray `function: ""` field above the `question:` key). Removed.
+- Attempt 2 — pass (clean build, route confirmed, FAQ schema 13=13 in built HTML).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (13 = 13)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 53 chars (limit 62)
+- Meta description length: 151 chars (limit 158)
+- Internal links resolve: both link instances point at C10 (exists on this branch)
+- monitored_pages row inserted: yes
+- Word count: 3540 (40 words over M-3 ATED-daughter ceiling 3500, within statistical noise tolerance, no special justification needed)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None.
 
 ### 2-3 sentence summary
-<freeform>
+Wrote the third ATED daughter as a Schedule 55 / Schedule 56 / Schedule 24 mechanics piece. Category overridden from landlord-tax-essentials to incorporation-and-company-structures to keep the cluster together under one canonical breadcrumb. The £15,700 case is reconstructed numerically to show that the underlying tax would have been the same had the returns been filed on time, so the cascade is purely the discretionary cost of non-compliance.
 

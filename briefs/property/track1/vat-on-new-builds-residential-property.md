@@ -209,50 +209,54 @@ You don't have to use all of these; pick the ones that fit your specific framing
 
 ---
 
-## Per-page work-log (fill in as you go — supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** vat-on-new-builds-residential-property (unchanged)
+- **Final category:** Property Types & Specialist Tax (unchanged)
+- **H1 chosen:** VAT on New-Build Residential Property: Zero-Rate, the 5% Conversion, and the 20% Trap
+- **Meta title chosen:** VAT on New-Build Residential Property: The Three Rate Bands (59 chars)
+- **Why these vs other options:** Framing differentiator is the three-band rate structure (zero / 5% / 20%) and the developer decision matrix. Title leads with the three rates so the SERP query intent ("what VAT rate does X attract") is matched directly.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- ukpropertyaccountants.co.uk new-builds VAT guide — list-driven, treats each rate in isolation without the developer-decision matrix. Our differentiator is the boundary analysis (Astral Construction Ltd, substantial-reconstruction tests) plus the full worked example.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `residential-property-developer-tax-uk` (score 0.33) — broader developer-tax guide. The VAT element should link here from there in a future Track 2 sweep (EXISTING_PAGE_LINK_OPPORTUNITY candidate). No direct overlap; this page is the VAT deep-dive.
+- VAT calculator pages — generic, no overlap.
+- CGT commercial-vs-residential — adjacent, no overlap.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Schedule 8 Group 5 VATA 1994 (zero-rated supplies of new dwellings) cited inline.
+- Schedule 7A Groups 6 and 7 VATA 1994 (5% conversion and empty-home rates) cited inline.
+- Schedule 8 Group 5 Note 18 (listed-building substantial-reconstruction carve-out) cited inline.
+- Schedule 10 VATA 1994 (option to tax and the VAT 1614D disapplication on residential development land) cited inline.
+- Astral Construction Ltd (2018) — the leading FTT authority on the substantial-reconstruction boundary.
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/landlord-tax-essentials/domestic-reverse-charge-construction-vat-landlords` (C1 from this session) — construction-side compliance reference.
+- `/blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27` — direct-tax counterpart for developer profits.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "Substantial Reconstructions and Repairs" — peak intent moment because the boundary is the most expensive single VAT decision in residential development (£200k swing on a £1.5m project).
+- 1 inline aside; the worked example does most of the conversion work by structure.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass (clean build, route confirmed, FAQ schema 13=13).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (13 = 13)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 59 chars (limit 62)
+- Meta description length: 149 chars (limit 158)
+- Internal links resolve: both link instances point at existing markdown files (C1 from this session + existing CT page)
+- monitored_pages row inserted: yes
+- Word count: 3023 (within M-3 calibration 2,800–3,500)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None.
 
 ### 2-3 sentence summary
-<freeform>
+Wrote the three-band VAT structure for residential new-build with explicit attention to the substantial-reconstruction boundary (Astral Construction Ltd cited). Includes a complete worked example for a £2m greenfield six-house development showing the input-VAT recovery mechanic, the VAT 1614D land position, and the build-to-rent workaround. Linked back to C1 (DRC) for construction-stage compliance and to the existing corporation-tax-rates pillar for the direct-tax counterpart.
 

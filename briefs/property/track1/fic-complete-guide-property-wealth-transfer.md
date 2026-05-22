@@ -209,50 +209,58 @@ You don't have to use all of these; pick the ones that fit your specific framing
 
 ---
 
-## Per-page work-log (fill in as you go — supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** fic-complete-guide-property-wealth-transfer (unchanged)
+- **Final category:** Incorporation & Company Structures (unchanged)
+- **H1 chosen:** Family Investment Companies for Property: The Comprehensive Reference
+- **Meta title chosen:** FIC Complete Guide: Property Wealth Transfer Reference (54 chars)
+- **Why these vs other options:** Framing differentiator positions this as the post-decision structural reference (vs the existing decision-focused page). H1 says "comprehensive reference"; meta title leads with "Complete Guide" for the user who has already moved past "should I?".
+- **Word count framing:** Per M-3 calibration, C6 is the only daughter allowed 3,500-4,500. Came in at 3,845 — comfortably mid-range. Justified by the depth required across entity choice + share architecture + funding + life-stage + death-stage + governance + enquiry profile.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- ukpropertyaccountants.co.uk FIC complete guide — referenced but their treatment is shallow on share-class detail and weak on the BPR myth, which is the most important factual correction for the audience.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `family-investment-company-property-worth-it` (existing) — DELIBERATE PARTIAL OVERLAP per brief. The existing page is decision-focused; C6 is the post-decision reference. C6 links back to the existing page twice (intro paragraph + "When the Structure Genuinely Works" closing section). INTERNAL_LINK flag raised for orchestrator to add forward link from the existing page to C6 for full bidirectional linking.
+- `cgt-property-transfer-limited-company-calculate`, `cgt-property-transfer-spouse`, `how-to-transfer-property-into-limited-company-uk` — adjacent (CGT and incorporation mechanics). Not directly on FIC architecture. No cannibalisation risk.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Ramsay v HMRC [2013] (s.162 business test).
+- Pawson v HMRC [2013] (BPR investment-vs-trading boundary).
+- Section 105 IHTA 1984 (BPR statutory basis).
+- Section 18N CTA 2010 (CIHC and small profits rate restriction).
+- Schedule 4A FA 2003 and FA 2013 Part 3 (the SDLT 15% and ATED interactions).
+- April 2026 BPR cap (£1m combined BPR/APR) noted as the current-state correction.
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/incorporation-and-company-structures/family-investment-company-property-worth-it` (×2) — companion decision-focused page; bidirectional cluster.
+- `/blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27` — corporate tax position cross-reference.
+- `/blog/incorporation-and-company-structures/ated-complete-guide-2026-27` (C10 from this session) — ATED interaction reference.
+- `/blog/incorporation-and-company-structures/ated-15-percent-flat-rate-sdlt-interaction` (C12 from this session) — SDLT-ATED interaction reference.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "Founder Loan" subsection of Funding the FIC — peak intent moment for funding-structure advice (the funding decision is permanent in practice).
+- 1 inline aside; the page itself is a CTA in shape (the reader is already past the threshold question and looking for the structural detail).
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — partial fail (meta description 160 chars, 2 over). Trimmed.
+- Attempt 2 — pass (clean build, route confirmed, FAQ schema 14=14).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (14 = 14, top of the 10-14 target range)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 54 chars (limit 62)
+- Meta description length: 151 chars (limit 158)
+- Internal links resolve: all 5 link instances point at existing markdown files (existing FIC + existing CT + 2 from this session, one page linked twice)
+- monitored_pages row inserted: yes
+- Word count: 3845 (within M-3 C6-specific calibration 3,500–4,500)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- INTERNAL_LINK flag at 2026-05-22T10:50Z requesting orchestrator to add forward link from existing FIC page to C6, completing the bidirectional cluster.
 
 ### 2-3 sentence summary
-<freeform>
+Wrote the FIC structural reference as the post-decision companion to the existing decision-focused page. Architecturally organised around entity choice → share-class design → funding → life-stage tax → death-stage tax → governance → HMRC enquiry profile. The BPR myth section is the most factually important departure from competitor treatments, and the £1m BPR cap (April 2026) is included as the current-state position.
 

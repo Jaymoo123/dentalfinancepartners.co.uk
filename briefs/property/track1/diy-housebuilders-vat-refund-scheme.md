@@ -208,47 +208,49 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** diy-housebuilders-vat-refund-scheme (unchanged)
+- **Final category:** Property Types & Specialist Tax (unchanged)
+- **H1 chosen:** DIY Housebuilders' VAT Refund Scheme: How Self-Builders Reclaim Materials VAT
+- **Meta title chosen:** DIY Housebuilders' VAT Refund: Self-Builder Reclaim Guide (57 chars)
+- **Why these vs other options:** Framing differentiator is the practical self-builder workflow (eligibility + deadline + materials + claim). Title pairs the scheme name with the audience identifier ("Self-Builder") so the SERP query intent is matched.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- Source primarily HMRC Notice 719 + gov.uk online claim service. No specific competitor URL in brief; the framing differentiator made the official-source-plus-rejection-pattern angle the right approach.
 
-### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+### Existing-page review
+- No directly competing existing pages on DIY scheme. The closest content is C3 (new-build developer VAT) which is the commercial counterpart, linked at the end. No cannibalisation risk.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Section 35 VATA 1994 (DIY scheme statutory basis).
+- Section 35(1A) VATA 1994 (non-residential conversion route).
+- HMRC VAT Notice 719 (operational guidance).
+- HMRC forms VAT431NB and VAT431C (claim mechanics).
+- December 2023 deadline extension (3 months to 6 months) noted as a current-state correction many adviser pages still get wrong.
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/property-types-and-specialist-tax/vat-on-new-builds-residential-property` (C3 from this session) — commercial developer counterpart.
+- `/blog/landlord-tax-essentials/domestic-reverse-charge-construction-vat-landlords` (C1 from this session) — construction-services compliance reference.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "The Six-Month Deadline" — peak intent moment: deadline missed = entire claim lost. Conversion moment is project-planning support.
+- 1 inline aside; the worked example does the conversion lifting by content structure.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass (clean build, route confirmed, FAQ schema 13=13).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (13 = 13)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 57 chars (limit 62)
+- Meta description length: 154 chars (limit 158)
+- Internal links resolve: both link instances point at existing markdown files (C3 + C1 from this session)
+- monitored_pages row inserted: yes
+- Word count: 2912 (within M-3 calibration 2,800–3,500)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None.
 
 ### 2-3 sentence summary
-<freeform>
+Wrote the consumer-side self-builder reference with a £450k Devon worked example showing typical eligible VAT (£25k) vs ineligible categories (professional services on new build, white goods, carpets, tools). The December 2023 deadline extension (3 to 6 months) is noted because many adviser pages still cite the old window. Cross-linked to C3 (developer counterpart) and C1 (DRC) to embed the page in the VAT cluster.
 
