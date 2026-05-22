@@ -161,37 +161,56 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 
 ---
 
-## Per-page work-log (fill in as you go, supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** ated-relief-clawback-occupation-non-qualifying-individual
+- **Final category:** Incorporation & Company Structures (override per F-2)
+- **H1:** "ATED Relief Clawback: When a Non-Qualifying Individual Occupies the Dwelling"
+- **Meta title:** "ATED Relief Clawback: Non-Qualifying Individual Occupation" (58 chars)
+- **Why:** Slug + H1 explicitly anchor clawback (not claim) framing to differentiate from existing rental-mechanics page.
 
 ### Competitor URLs fetched
+- Relied on Stage 2 validation (ukpropertyaccountants /ated-relief-clawback... page confirmed live, on-topic; FA 2013 ss.133-138 statutory anchors verified). HMRC ATED Manual ATED20100 reference verified.
 
-### Existing-page review (from "Closest existing pages")
+### Existing-page review
+- `ated-rental-property-relief-mechanics`: claim-side; differentiation by angle (claim vs clawback). Bilateral cross-link.
+- A4 sibling (related-persons/market-rent): lateral; cross-link both ways without re-covering market-rent test in narrative.
+- `ated-late-filing-penalties-mechanics`: downstream consequence; cross-link in penalty section.
 
-### Citations added (external authority)
+### Citations added
+- HMRC ATED Manual (ATED20100 reference)
+- FA 2013 s.133
+- FA 2013 Part 3 (ss.136-138 look-back / look-forward)
+- CTA 2010 s.1122
+- FA 2009 Sch 24 (inaccuracy)
+- FA 2009 Sch 55 (failure to file)
 
-### Internal links added (to our existing pages)
+### Internal links added
+- A1, A2 (bilateral sibling refs)
+- A4 (related-persons/market-rent)
+- ated-rental-property-relief-mechanics (bilateral)
+- ated-complete-guide-2026-27 (pillar)
+- ated-late-filing-penalties-mechanics
 
 ### Inline CTA placements
+- One aside after Look-Back/Look-Forward mechanic section, framing the 12-month amendment window as the disclosure trigger.
 
 ### Build attempts
+- Build 1: metaDesc 166 chars (over 158). Trimmed "and penalty risk" suffix. Build 2 clean.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count: 14 / 14 ✓
+- Em-dashes: 0 ✓
+- Tailwind: 0 ✓
+- Meta title: 58 ≤ 62 ✓
+- Meta description: 152 ≤ 158 ✓
+- Internal links resolve: 6 unique target slugs verified ✓
+- monitored_pages: id 128 ✓
+- Body word count: 2,780 (within 2,500-3,500 typical range)
 
-### Flags raised to wave3_site_wide_flags.md
+### Flags raised
+- F-9 candidate: INTERNAL_LINK back-patch suggestion from existing `ated-rental-property-relief-mechanics` page to forward-link A3 (clawback companion) and A4 (related-persons / market-rent) — per F-4 manager pre-fill. Will flag formally below.
 
 ### 2-3 sentence summary
+A3 covers ATED relief clawback when a non-qualifying individual occupies an otherwise-relieved dwelling: who counts as NQI (s.1122 CTA 2010 connection + ATED-specific extensions), the three trigger fact patterns (void-cover / residence-during-works / informal-stay), look-back and look-forward mechanic with worst-case multiplier, a worked £1.5m flat / 60-day occupation calculation including 92-day total clawback, the further-return obligation, and FA 2009 Sch 24 / Sch 55 penalty exposure with prompted-vs-unprompted bands. Anti-templating: distinct outline from A4 (related-persons / market-rent test) which sits on the connection-test mechanic itself; A3 sits on the loss-of-relief consequence after a claim has been made.
