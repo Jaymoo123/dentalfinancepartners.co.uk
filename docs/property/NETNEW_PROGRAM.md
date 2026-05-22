@@ -79,26 +79,33 @@ All sites are lead-gen handoffs to a partner firm. Don't conflate with the Prope
 
 ## 3. Where we are right now (this section updates every wave)
 
-**Last updated:** 2026-05-22 end of Wave 1.
+**Last updated:** 2026-05-22 end of Wave 2 (post-merge).
 
-**`main` is at commit `7ed6e15`.** 35 commits ahead of `d42555d` (pre-Wave-1 checkpoint).
+**`main` is at the Wave 2 merge head** (three branches `property-wave2-{a,b,c}` merged via `--no-ff` merge commits). 61 net-new pages now sit on `main` between Wave 1 (31) and Wave 2 (30).
 
-**Wave 1 outputs on `main`:**
-- 31 new blog markdown files in `Property/web/content/blog/`.
-- Full orchestration paper trail.
-- **Not deployed.** User holding deploy pending post-merge cleanups.
+**Wave 1 outputs on `main`:** 31 blog markdown files. Post-Wave-1 cleanups landed at commit `38f0281` (six-dwellings s.116(7) correction + two INTERNAL_LINK forward-links; ATED-CGT sweep audited and confirmed clean — no stale claims found).
 
-**Wave 1 worktrees** (`Accounting-wt-property-track1-{a,b,c}/`) on branches `property-track1-{a,b,c}` — merged to main, branches can be deleted.
+**Wave 2 outputs on `main`:** 30 blog markdown files (10 IHT + 10 DTAs + 10 Leaving-the-UK/expat). Full paper trail in `briefs/property/wave2/`, `docs/property/wave2_*`, and `docs/sessions/property/WAVE2_*`.
 
-**Medical worktrees** (`Accounting-wt-medical-{a,b,c}/`) parked, not part of this program.
+**Wave 1 + Wave 2 are NOT deployed.** User holds deploy pending review.
 
-**Post-Wave-1 cleanups queued (do before deploying Wave 1):**
-1. INTERNAL_LINK from B's flag: existing `Property/web/content/blog/director-loan-property-company.md` → forward-link to `director-loan-account-property-company-mechanics`.
-2. INTERNAL_LINK from C6 work-log: existing `family-investment-company-property-worth-it.md` → back-link to `fic-complete-guide-property-wealth-transfer`.
-3. Six-dwellings correction (s.116(7) FA 2003, automatic) on `sdlt-buy-to-let-rates-surcharge-guide-2025.md` and `sdlt-transfer-property-company-cost.md`.
-4. ATED-related CGT staleness sweep (regime abolished 6 April 2019).
+**Wave 1 worktrees** can be deleted (`Accounting-wt-property-track1-{a,b,c}/`).
+**Wave 2 worktrees** can be deleted (`Accounting-wt-property-wave2-{a,b,c}/`).
+**Medical worktrees** parked, not part of this program.
 
-**Wave 2 confirmed (not yet prepped):** IHT (A) + DTAs (B) + Leaving-the-UK/Expat (C). ~30 pages (10/10/10). User chose to wait until current manager handover completes before launch.
+**Post-Wave-2 cleanups queued (do before deploying):**
+
+A. **F-XX cross-link back-patches** captured in `docs/property/wave2_site_wide_flags.md`. Two categories:
+   1. **Existing-page back-links** to new Wave 2 pages: existing IHT pillar → A1/A5/A7/A8/A9/A10 (multi-link); existing BPR-rental → A1/A5/A10; existing NRL pillar → B1; existing expat-obligations → C1; existing CGT-on-inherited-rental → A7; existing NRL-self-assessment → B9.
+   2. **Cross-Wave-2 forward/back-links** between already-shipped pages: B6↔C6 (UAE/Dubai pair); B7↔C2 + B8↔C2 (tie-breaker/SRT); A8↔A6 + A10↔A6 (IHT cluster); B10↔A6; C6→C7 (Dubai/Australia contrast); C1→C4/C9/C10/B4; C8→A6/B5/C9 (regime-cluster).
+B. **Brief stale citation cleanup:** C10's brief (`briefs/property/wave2/nrcgt-indirect-disposal-property-rich-companies-shares.md`) still references repealed TCGA 1992 ss.14B-14H. The page itself is correct (uses s.1A + Sch 1A + Sch 4AA per FA 2019 rewrite, matches house position §17.4). Brief retained for audit trail with a `Manager note (post-merge)` block clarifying the correction was made at page level.
+C. **Site-wide brand wordmark em-dash** flagged in F-7 — separate concern outside the wave's scope.
+
+**House position refinements (locked 2026-05-22 post-merge):**
+- §15.6 LTR test is **two-route** (10 consecutive OR 10 of 20 tax years), not single-route as originally locked. Session A surfaced via A6 research.
+- §17.6 TRF is **3-year at 12%/12%/15%** per Autumn Budget 2024 extension, not 2-year at 12% as originally locked. Session C surfaced via C8 research.
+
+**Wave 3 not yet scoped.** Original program total is ~485 pages (~285 net-new + ~231 legacy rebuilds). After Wave 1 (31) + Wave 2 (30) = 61 net-new shipped, ~224 net-new candidates remain in `topic_gaps_final.md`, then the legacy rebuild track begins.
 
 ---
 
@@ -659,6 +666,29 @@ Append to this section after every wave. Each lesson should describe what happen
 
 **16.10 Sessions' tracker notes are gold**
 - Each session's tracker note for a completed page captured: framing differentiator, key citations, body word count, worked-example saving figures, any deviations from brief. Reading the tracker = fast triage. Don't lose this practice.
+
+### Wave 2 (2026-05-22)
+
+**16.11 Token-Jaccard cannibalisation matcher breaks on novel topical clusters**
+- The brief builder's "Closest existing pages" selector (`scripts/property_track1_brief_builder.py` / `_wave2_brief_builder.py`) scores by literal slug + title + h1 token overlap. Worked OK for Wave 1 (SDLT / Ltd Co / VAT / FIC clusters all share heavy token overlap with existing pages) but **systematically broke for Wave 2** — IHT and DTA slugs share few tokens with the existing 316 pages, so the script returned `what-is-aia-in-tax` / `vat-calculator` / `capital-allowances-on-property` as "closest matches" while missing the obvious neighbours (`inheritance-tax-rental-property-uk-guide`, `non-resident-landlord-scheme-uk-complete-guide`, etc.). Manager spawned three Opus reasoning sub-agents during pre-launch to regenerate the closest-existing + competitor URL sections of all 30 briefs. **Lesson:** before Wave 3, either rewrite the cannibalisation script to use sentence-embeddings (e.g. via DeepSeek/Anthropic), or build the reasoning regen step into the standard wave-prep workflow rather than as a post-hoc fix.
+
+**16.12 Sessions correct house positions via downstream research — formalize the loop**
+- Two Wave 2 sessions surfaced house position corrections during their work. A6 (April 2025 IHT residence test) found the LTR test has **two routes** (10 consecutive OR 10 of 20), where the locked position only named the 10-of-20 route. C8 (April 2025 non-dom reform) found the TRF runs **3 years at 12%/12%/15%** per Autumn Budget 2024 extension, where the locked position had it as 2 years at 12%. Both corrections logged via HOUSE_POSITION_CONFLICT flag and verified by manager post-merge. **Lesson:** sessions doing focused page research consistently outperform the pre-wave statute-verification pass on specific edge cases. Build the HOUSE_POSITION_CONFLICT flag-flow more explicitly into future waves — manager should expect and welcome 1-3 corrections per wave.
+
+**16.13 Cross-bucket CANNIBAL coordination held without manager intervention**
+- Three cross-bucket pairs were flagged at prep time: B6 UAE ↔ C6 Dubai (treaty mechanics vs landlord pathway), B7 Italy ↔ B8 generic (bilateral applied vs cascade explained), B10 CD ↔ C9/C10 (NRCGT framing overlap). All three pairs resolved cleanly through the briefs' explicit cross-reference notes — sessions wrote pages that knew about their sibling page, and raised back-patch F-XX flags rather than re-covering the same ground. **Lesson:** cross-bucket cannibalisation flags in the BRIEF (not just in the flags file) work as a coordination mechanism. Bake into Wave 3 prep agent's brief-generation step.
+
+**16.14 Continuation handovers cost ~5-10% throughput; tracker discipline drifts at handover boundaries**
+- Each Wave 2 session ran out of context around page 4-5 of its initial run, requiring 1-2 fresh-session relaunches. At each handover boundary, the outgoing session typically committed its current page (step 14) but did not flip the tracker (step 16) before stopping. The next continuation session has to back-patch the tracker as its first action. **Lesson:** bake "if you commit a page but feel context-pressured, flip the tracker IMMEDIATELY before stopping — this is the single most important handover hygiene item" into the continuation prompts. Also: encode the back-patch-on-startup step as an explicit FIRST ACTION in continuation prompts (already done in Wave 2 continuation prompts).
+
+**16.15 Single-shared-tracker approach worked, but each branch's tracker copy drifts**
+- Sessions edited the main repo's tracker file via absolute paths from inside their worktrees, so the live state was always in main. Worked well for cross-session visibility, but each worktree's committed-tracker copy stayed at the prep state (b9e783a). This caused merge conflicts on B branch (where Session B's session DID commit tracker edits on its branch, conflicting with main's live tracker at merge time). **Lesson:** for Wave 3, make tracker-edits-on-branch a documented anti-pattern. All session-time tracker edits go to the main repo file via absolute paths; no committed-on-branch tracker edits.
+
+**16.16 Word count discipline calibration improved from Wave 1**
+- Wave 1 needed mid-wave M-notes to calibrate from 4-5k bodies back to 2.5-3.5k. Wave 2 sessions self-calibrated: 27 of 30 pages in band 2,500-3,500, with the 3 over-shoots (A6, A7, B8, B9, B10) each documented in tracker Notes with explicit justification (regime complexity, multi-operational coverage, cascade walk-through, computational page, multi-jurisdiction). B4 came in under floor (2,312) with explicit calibration note (competitor median shorter). No drift, no manager intervention required. **Lesson:** the framing-differentiator-led word count (write to topic, not target) discipline works once sessions internalize it.
+
+**16.17 Three regen agents hit rate limit; finish-each-brief-end-to-end recovery worked**
+- During Wave 2 pre-launch, three parallel Opus regen sub-agents (one per bucket) hit a rate limit ~10 min in. Only 3 of 30 briefs were partially regenerated before the limit. Recovery: waited for reset, re-spawned with skip-lists for the 3 already-done briefs and an explicit "finish each brief end-to-end before moving on" instruction. Second run completed cleanly. **Lesson:** for any parallel sub-agent batch, instruct each agent to finish complete work units atomically rather than half-finishing many. Reduces rate-limit damage at the worst moment.
 
 ---
 
