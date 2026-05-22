@@ -212,47 +212,54 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** unchanged
+- **H1 chosen:** Substantial Shareholding Exemption for Property Companies: When SSE Applies and When It Doesn't
+- **Meta title chosen:** SSE for Property Companies: Trading vs Investment Test (54 chars)
+- **Brief cited s.192A TCGA 1992; actual statutory home is Schedule 7AC TCGA 1992.** Used Schedule 7AC throughout. Brief reference may be a typo or older statute reference. Not raising a HOUSE_POSITION_CONFLICT because house_positions.md doesn't cover SSE.
+- **Word count:** 2673 body words (just under M-3's 2,800 floor; topic supports one cleanly-worked example and 11 FAQs, more would dilute).
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/substantial-shareholding-exemption-sse/ — generic SSE explainer; covers 10%/12-month test, 2017 reforms, automatic application, capital-loss restriction, group-relief interaction. Not property-investment-specific. My page leans into the trading-vs-investment dividing line (the whole point for landlords) and the dev-subsidiary worked example.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `accountant-corporation-tax-property-companies` — service page, shallow. Not linked.
+- `corporation-tax-rates-property-companies-2026-27` — rates pillar. Linked from close.
+- `director-loan-property-company` (NOT B1; this is the existing shallow page) — distinct topic; not linked.
+- `property-company-employer-pension-contributions-directors` — distinct topic; not linked.
+- `family-investment-company-property-worth-it` — distinct structural product; not linked.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- TCGA 1992 (legislation.gov.uk)
+- Schedule 7AC TCGA 1992 (referenced throughout — paragraphs 5, 7, 19)
+- HMRC CG53116 (the 20% "substantial" trading test) — linked
+- Pawson v HMRC line of cases (cited conceptually as the trading-investment authority HMRC reads across to SSE)
+- Section 171 / 171A TCGA 1992 (referenced for intra-group interaction)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/incorporation-and-company-structures/property-company-group-relief-corporation-tax` — B2 (mine) — natural sister-topic from intro
+- `/blog/incorporation-and-company-structures/director-loan-account-property-company-mechanics` — B1 (mine) — from close
+- `/blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27` — rates pillar — from close
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After section "The substantial shareholding test" — pre-incorporation conversion moment (12-month test means structure has to be in place a year before exit)
+- After section "Worked example: HoldCo selling DevCo for £8 million" — post-numbers high-intent moment
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (11 Question)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 54 chars (≤62)
+- Meta description length: 155 chars (≤158) — initial 160-char version trimmed by abbreviating "Schedule 7AC" to "Sch 7AC"
+- Internal `/blog/...` links resolve: 3 verified
+- monitored_pages row inserted: yes
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None.
 
 ### 2-3 sentence summary
-<freeform>
+Property-focused SSE walk-through: the 10% / 12-month substantial shareholding test, the trading-vs-investment dividing line that decides whether the regime applies (BTL fails, genuine development passes), the immediately-before-and-after requirement, and a worked example saving £1.5m on the share-sale of a £8m development subsidiary. Covers the 2017 reforms (no longer requiring the parent to be trading), the loss-symmetry trap, anti-avoidance under paragraph 5 of Schedule 7AC, and five common failure modes for property groups engineering around SSE.
 
