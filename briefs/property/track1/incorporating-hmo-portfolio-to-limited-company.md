@@ -212,47 +212,57 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** unchanged
+- **H1 chosen:** Incorporating an HMO Portfolio into a Limited Company: Capital Allowances, Licensing and Mortgage Mechanics
+- **Meta title chosen:** Incorporating an HMO Portfolio: Capital Allowances + Licences (61 chars)
+- **Why these vs other options:** Lead with the three HMO-specific factors that differentiate from vanilla BTL incorporation. Anti-template against B5 (FHL post-abolition) and existing portfolio-incorporation pillar.
+- **Word count:** 2989 body words (within M-3 range). 12 FAQs.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/incorporating-an-hmo-into-a-limited-company-pros-and-cons/ — not deeply mined; competitor's piece is a high-level pros/cons list. My page leans into the operational complexity (licence transfer pitfalls, CA on common parts, lender narrowness).
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `incorporating-property-portfolio-uk-2026` — general incorporation pillar; linked from intro
+- `cgt-property-transfer-limited-company-calculate` — linked from intro
+- `buy-to-let-limited-company-complete-guide-uk` — pillar; not linked to avoid intro overload (B5 already links it)
+- `how-to-transfer-property-into-limited-company-uk` — generic transfer how-to; not linked to keep HMO framing front
+- `limited-company-vs-personal-ownership-tax-comparison-2026` — pillar; not linked
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- CAA 2001 ss.35, 268A (capital allowances dwelling-house exclusion + common-parts carve-out)
+- HMRC CA20020 / CA11520 (common parts interpretation)
+- Housing Act 2004 ss.68-70, 72 (mandatory HMO licensing + criminal offence)
+- Housing and Planning Act 2016 ss.41-50 (rent repayment orders)
+- Section 162 TCGA 1992 + Ramsay v HMRC [2013]
+- FA 2003 s.116(7) (six-dwellings rule, corrected per M-1)
+- Sections 213-215 Housing Act 2004 (tenancy deposit protection)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/incorporation-and-company-structures/incorporating-property-portfolio-uk-2026` — pillar from intro
+- `/blog/capital-gains-tax/cgt-property-transfer-limited-company-calculate` — from intro
+- `/blog/incorporation-and-company-structures/director-loan-account-property-company-mechanics` — B1 (mine) from close
+- `/blog/incorporation-and-company-structures/property-company-group-relief-corporation-tax` — B2 (mine) from close
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After section "Capital allowances on common parts" — pre-incorporation moment, CA survey is the highest-leverage diagnostic
+- After section "Licence transfers: the mechanical pitfall" — high-stakes operational moment
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (12 Question)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 61 chars (≤62)
+- Meta description length: 141 chars (≤158) — initial 164-char trimmed
+- Internal `/blog/...` links resolve: 4 verified
+- monitored_pages row inserted: yes
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None.
 
 ### 2-3 sentence summary
-<freeform>
+HMO-specific incorporation guide leaning into three differentiators from vanilla BTL: common-parts capital allowances (CAA 2001 s.35 carve-out, typically £15-25k pool per property), the narrower ltd-co HMO mortgage market (0.25-0.75 pp premium, narrower lender panel), and the licence-transfer pitfall (Housing Act 2004 s.72 criminal offence if operated unlicensed during the gap). Three-house Leeds worked example showing £13,200/year cash retained advantage and 7-8 year payback post-2027. Includes five common failure modes (CA pool unsurveyed, licence transfer late, Article 4 misunderstanding, council-tax-banding reversion, deposit-protection re-registration missed).
 
