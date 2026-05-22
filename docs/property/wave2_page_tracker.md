@@ -62,13 +62,13 @@ Tracker, flags, and house positions live in the **main repo** (`Accounting/`). A
 
 | # | Slug | Status | Claimed at (UTC) | Notes |
 |---|---|---|---|---|
-| B1 | tax-treaties-property-investors-treaty-framework-guide | ⬜ todo | | |
-| B2 | uk-us-dta-property-tax-implications-landlords | ⬜ todo | | |
-| B3 | uk-france-dta-property-rental-income-cgt | ⬜ todo | | |
-| B4 | uk-spain-dta-property-uk-resident-spanish-holiday-home | ⬜ todo | | |
-| B5 | uk-india-dta-property-rental-income-treatment | ⬜ todo | | |
-| B6 | uk-uae-dta-property-no-tax-jurisdiction-asymmetry | ⬜ todo | | |
-| B7 | uk-italy-dta-tie-breaker-property-residence-disputes | ⬜ todo | | |
+| B1 | tax-treaties-property-investors-treaty-framework-guide | ✅ done | 2026-05-22T14:01Z | Framework pillar, 3,939 body words, 13 FAQs. OECD Art 4/6/13/23/24 map + NRCGT/NRL statutory overrides + HS304/SA106/MAP. Commit ade4711. |
+| B2 | uk-us-dta-property-tax-implications-landlords | ✅ done | 2026-05-22T14:16Z | UK-US bilateral page, 2,850 body words, 12 FAQs. Saving clause (Art 1(4)) framing + 3-profile taxonomy + Sarah-Manchester worked example + FBAR/FATCA/state-tax traps. Commit ab164a6. |
+| B3 | uk-france-dta-property-rental-income-cgt | ✅ done | 2026-05-22T14:22Z | UK-France bilateral page, 3,029 body words, 12 FAQs. 2008 treaty + CSG/CRDS overlay + IFI wealth tax + 1963 IHT treaty. Pierre-Brighton-to-Lyon worked example. Commit e21e13c. |
+| B4 | uk-spain-dta-property-uk-resident-spanish-holiday-home | ✅ done | 2026-05-22T14:28Z | UK-Spain bilateral, 2,312 body words (intentionally under 2,500 floor; competitor median shorter), 12 FAQs. Two-way framing + post-Brexit IRNR jump + Patrimonio + Solidarity Tax + Modelo 720. Carlos worked example. Commit 7b8b241. |
+| B5 | uk-india-dta-property-rental-income-treatment | ✅ done | 2026-05-22T15:30Z | UK-India bilateral, 3,280 body words, 13 FAQs, six checks pass. 1993-treaty age (Art 14 capital gains, no Art 13(4) indirect-disposal) + UK NRCGT statutory override (TCGA 1992 s.1A + HMRC INTM151010) + NRI workflow (NRL1, Article 26 personal allowance, s.90 Form 67, Schedule FA / Black Money Act). Anil/Mumbai/Leicester+Birmingham worked example. Commit 441fa46. |
+| B6 | uk-uae-dta-property-no-tax-jurisdiction-asymmetry | ✅ done | 2026-05-22T15:45Z | UK-UAE bilateral, 2,812 body words, 13 FAQs, six checks pass. 2016 treaty in OECD form; UAE no-personal-tax asymmetry frames the page (credit method one-way only). Corrects "I live in a no-tax country so I don't owe UK tax" misconception. Tom/Dubai/three-property worked example shows s.24 credit narrowly absorbing higher-rate exposure. UAE Corporate Tax 2023 caveat. F-12 raised for B6↔C6 back-patch when C6 ships. Commit 2590633. |
+| B7 | uk-italy-dta-tie-breaker-property-residence-disputes | ✅ done | 2026-05-22T16:05Z | UK-Italy Article 4 tie-breaker applied. 2,869 body words, 13 FAQs, six checks pass (em-dash fix on attempt 2). Cascade-focused structure (not country-by-country); 2024 TUIR Art 2 reform under Leg Dec 209/2023 + AIRE registration practice + IVIE on UK property (0.76%). Marco/Italian-national/London-Mon-Thu/Milan-family worked example resolves at Step 2 centre-of-vital-interests. F-13 raised for B7↔B8 + B7↔C2 back-patches. Commit d6f1cb2. |
 | B8 | dta-tie-breaker-test-dual-residence-property-owners | ⬜ todo | | |
 | B9 | foreign-tax-credit-uk-property-overseas-landlords | ⬜ todo | | |
 | B10 | uk-jersey-guernsey-isle-of-man-dtas-property-investors | ⬜ todo | | |
