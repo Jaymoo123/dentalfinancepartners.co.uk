@@ -207,51 +207,67 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** dta-tie-breaker-test-dual-residence-property-owners (unchanged)
+- **Final category:** non-resident-landlord-tax (unchanged)
+- **H1 chosen:** How the Article 4 Tie-Breaker Cascade Resolves Dual Residence for UK Property Owners
+- **Meta title chosen:** DTA Article 4 Tie-Breaker: Dual-Resident Property Owners (56 chars)
+- **Why these vs other options:** H1 names the mechanism (Article 4 cascade), the outcome (resolves dual residence), and the audience (UK property owners) in declarative form. Meta title fronts "DTA Article 4" for query alignment and keeps the audience qualifier. Both avoid the generic "Tie-Breaker Test Guide" framing that would collapse into B7's title space.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- HMRC INTM154020 — authoritative UK manual on the Article 4 cascade. Anchor citation for every step.
+- HMRC INTM154040 — claim-handling mechanics; HS304/HS302 distinction; proportioning rules where UK and foreign tax years diverge.
+- HMRC HS302 helpsheet — confirms HS302 current to 2026 tax year (last updated 6 April 2026). Structural reference for SA109 dual-resident reporting.
+- OECD Model Tax Convention 2017 Commentary — relied on via paragraph references (13 for permanent home, 15 for vital interests, 17-19 for habitual abode) cited inline.
+- ukpropertyaccountants.co.uk Italy tie-breaker page — fetched but returned near-empty (JS-rendered). Discarded; relied on HMRC INTM + OECD instead.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `tax-treaties-property-investors-treaty-framework-guide` (B1) — framework pillar covering all OECD articles; B8 is the deeper Article 4 sub-pillar; linked up.
+- `uk-italy-dta-tie-breaker-property-residence-disputes` (B7) — UK-Italy applied, Step 2 resolution. B8 is the generic counterpart walking all 5 steps with Step 3 Daniel/UK-Portugal example. Cross-linked bidirectionally.
+- `srt-statutory-residence-test-landlord-decision-tree` (C2, on property-wave2-c) — upstream domestic input; link resolves post-merge.
+- `non-resident-landlord-scheme-uk-complete-guide` — operational downstream once cascade resolves to non-UK.
+- `non-resident-cgt-uk-property-rates-reporting` — NRCGT downstream on disposals.
+- `uk-property-income-expats-tax-obligations-explained` — descriptive expat pillar.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- HMRC INTM154020 (International Manual, Dual residents)
+- HMRC INTM154040 (International Manual, Individuals: residence claims under DTAs)
+- HMRC HS302 (Dual residents Self Assessment helpsheet, 2026 version)
+- OECD Model Tax Convention 2017 Commentary on Article 4 (paragraphs 13, 15, 17-19)
+- FA 2013 Sch 45 (Statutory Residence Test)
+- TCGA 1992 s.1A and Schedules 1A/1B/4AA (NRCGT)
+- FA 1995 Sch 23 + SI 1995/2902 (Non-Resident Landlord scheme)
+- TIOPA 2010 ss.18 and 130 (foreign tax credit)
+- Article 25 OECD Model (Mutual Agreement Procedure) + MLI Article 16
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/uk-italy-dta-tie-breaker-property-residence-disputes` — sibling bilateral (B7); B8 is the generic pillar
+- `/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide` — framework pillar (B1); B8 is the Article-4 sub-pillar
+- `/blog/non-resident-landlord-tax/srt-statutory-residence-test-landlord-decision-tree` — SRT page (C2); upstream domestic input; link resolves post-merge from property-wave2-c
+- `/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide` — NRL operational downstream
+- `/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting` — NRCGT downstream on disposals
+- `/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained` — descriptive expat pillar
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "Step 1: permanent home available" — high-intent moment for advisers helping with the permanent-home analysis before SA109 filing; this is where most disputes are misanalysed.
+- After "Worked example: Daniel UK-Portugal" — post-example moment with Step 3 resolution shown; high-intent for solo retirees needing help documenting their own multi-year pattern.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — PASS. Next.js 15.5.18 compiled successfully in 15.3s. 359 static pages generated. 0 errors. Only pre-existing unrelated warnings (BlogListWithSearch unused vars, BlogPostRenderer img tag).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13 Question entries in HTML, 13 in frontmatter)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 56 chars (≤62 ✓)
+- Meta description length: 146 chars (≤158 ✓)
+- Internal links resolve: 5 of 6 in this worktree (SRT C2 page on property-wave2-c branch, resolves post-merge). Flagged F-14.
+- monitored_pages row inserted: yes
+- Body word count: ~4,691 words. Higher than the 2,500-3,500 typical range but justified: B8 walks all 5 cascade steps with depth (B7 walked Step 2 in detail; B1 framework pillar shipped at 3,939). Generic Article 4 sub-pillar across all UK treaties is broader in scope than a single bilateral applied page.
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- F-14: bidirectional back-patch B8↔SRT (C2) — once property-wave2-c merges, verify B8's SRT link resolves and consider back-linking SRT to B8 as the treaty-residence downstream when SRT and a foreign domestic test both say resident.
+- F-15: bidirectional back-patch B8↔B7 — B8 forward-links to B7 (UK-Italy applied as Step-2 example); B7's editorial note already references B8 as the generic counterpart but B7 body should also contain a forward link to B8 (currently relies on the framework-pillar route). Verify and back-patch post-merge.
 
 ### 2-3 sentence summary
-<freeform>
+B8 is the generic Article 4 cascade page — the deeper sub-pillar within the DTA bucket, walking all four cascade stages plus MAP fallback with a Daniel/UK-Portugal retired-landlord worked example that resolves at Step 3 (habitual abode) on regularity grounds. Differentiator vs B7 is structural: B7 is one bilateral applied to one persona with a Step 2 resolution; B8 walks the full mechanism generically with depth on each step. The page reinforces the house-position invariant: the cascade does not change UK source taxation under Articles 6/13, does not displace NRCGT, and does not displace NRL withholding — what changes is residence-state taxation and foreign tax credit allocation.
 
