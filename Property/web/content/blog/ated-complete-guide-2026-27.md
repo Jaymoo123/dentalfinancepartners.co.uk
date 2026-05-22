@@ -124,7 +124,7 @@ editorialNote: "Pillar reference for the ATED bucket. Daughter pages on rental r
 
 <p>The Schedule 4A reliefs broadly mirror the ATED reliefs: a property bought as commercial rental stock, as developer trading stock, or as part of a property trade is taxed at the standard SDLT rates instead of 15%. If the relief is lost within three years of acquisition (for example, a director moves into the property), HMRC can claw back the SDLT difference.</p>
 
-<p>The interaction is critical at the planning stage: forming a company to buy a £1.5 million London house in 2026/27, without any qualifying relief, costs 15% SDLT (£225,000) on acquisition plus £9,450 a year ATED, before any consideration of corporation tax or extraction costs. A dedicated guide to the 15% flat-rate SDLT and ATED interaction walks through the worked numbers (linked from this pillar once published).</p>
+<p>The interaction is critical at the planning stage: forming a company to buy a £1.5 million London house in 2026/27, without any qualifying relief, costs 15% SDLT (£225,000) on acquisition plus £9,450 a year ATED, before any consideration of corporation tax or extraction costs. Our dedicated guide to the <a href="/blog/incorporation-and-company-structures/ated-15-percent-flat-rate-sdlt-interaction">15% flat-rate SDLT and ATED interaction</a> walks through the worked numbers.</p>
 
 <h2>Reliefs Available on the ATED Return</h2>
 
@@ -134,7 +134,7 @@ editorialNote: "Pillar reference for the ATED bucket. Daughter pages on rental r
 
 <p>The most commonly claimed relief. Available where the dwelling is let, or is being prepared for letting, on a commercial basis to one or more unconnected third parties. Use by anyone connected with the holder (a director, a shareholder, a spouse of either) breaks the relief for the period of use. Voids between tenancies are usually accepted as commercial use provided the property is being actively marketed.</p>
 
-<p>A dedicated guide to Property Rental Business Relief mechanics covers the connected-persons test, marketing-during-voids requirements, and the consequences of short stays (linked from this pillar once published).</p>
+<p>Our dedicated guide to <a href="/blog/incorporation-and-company-structures/ated-rental-property-relief-mechanics">Property Rental Business Relief mechanics</a> covers the connected-persons test, marketing-during-voids requirements, and the consequences of short stays.</p>
 
 <h3>Property Developer Relief</h3>
 
@@ -226,7 +226,7 @@ editorialNote: "Pillar reference for the ATED bucket. Daughter pages on rental r
   <li>A further 5% at twelve months late.</li>
 </ul>
 
-<p>Inaccuracy penalties under Schedule 24 FA 2007 apply where a return understates the charge, ranging from 0% (reasonable care, prompted disclosure) to 100% (deliberate, concealed, unprompted disclosure). A dedicated guide to the ATED late-filing penalty mechanics walks through worked examples and appeal grounds (linked from this pillar once published).</p>
+<p>Inaccuracy penalties under Schedule 24 FA 2007 apply where a return understates the charge, ranging from 0% (reasonable care, prompted disclosure) to 100% (deliberate, concealed, unprompted disclosure). Our dedicated guide to the <a href="/blog/incorporation-and-company-structures/ated-late-filing-penalties-mechanics">ATED late-filing penalty mechanics</a> walks through worked examples and appeal grounds.</p>
 
 <h2>Appeals and Reasonable Excuse</h2>
 
