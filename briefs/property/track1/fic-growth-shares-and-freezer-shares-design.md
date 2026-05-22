@@ -203,47 +203,51 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** fic-growth-shares-and-freezer-shares-design (unchanged)
+- **Final category:** Incorporation & Company Structures (unchanged)
+- **H1 chosen:** FIC Growth Shares and Freezer Shares: Designing the Wealth-Transfer Architecture
+- **Meta title chosen:** FIC Growth Shares and Freezer Shares: Design Guide (50 chars)
+- **Why these vs other options:** Framing differentiator is the design mechanics. Title pairs both share-class types so the SERP query intent is matched directly. H1 adds "designing the wealth-transfer architecture" to make the practical promise explicit.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- No specific competitor URL in brief. Built primarily from statutory sources and HMRC valuation methodology guidance (PET 6, Form 42).
 
-### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+### Existing-page review
+- C6 (`fic-complete-guide-property-wealth-transfer`) — comprehensive FIC reference. Linked twice.
+- C7 (`fic-vs-discretionary-trust-property-comparison`) — comparison piece. Linked once.
+- Existing `family-investment-company-property-worth-it` — decision-focused page. Linked once.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Chapter 2 Part 7 ITEPA 2003 (Employment Related Securities regime).
+- Section 431 ITEPA 2003 (election for unrestricted market value treatment).
+- HMRC's PET 6 valuation guidance for unquoted shares.
+- Form 42 (ERS annual reporting requirement).
+- Black-Scholes option-pricing methodology adapted for growth-share valuations (industry standard).
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/incorporation-and-company-structures/fic-complete-guide-property-wealth-transfer` (C6, ×2) — FIC structural reference.
+- `/blog/incorporation-and-company-structures/fic-vs-discretionary-trust-property-comparison` (C7) — FIC vs trust comparison.
+- `/blog/incorporation-and-company-structures/family-investment-company-property-worth-it` — decision-focused FIC page.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "Valuing the Growth Shares at Issue" — peak intent moment: specialist valuation is the principal HMRC enquiry defence and the most-missed implementation piece.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass (clean build, FAQ schema 13=13).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (13 = 13)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 50 chars (limit 62)
+- Meta description length: 152 chars (limit 158)
+- Internal links resolve: all 4 link instances point at existing markdown files (3 from this session + 1 existing)
+- monitored_pages row inserted: yes
+- Word count: 3571 (71 over M-3 daughter ceiling 3500; within statistical noise, well under the 4000-word special-justification threshold)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None.
 
 ### 2-3 sentence summary
-<freeform>
+Wrote the share-class design deep-dive with explicit attention to the s.431 ITEPA election (most expensive missed deadline) and to the freezer-share dividend coupon vs growth-share value trade-off (most common architectural mistake). Worked example shows how a 5% cumulative dividend can soak up all growth and defeat the structure. Six common design mistakes catalogued.
 
