@@ -209,51 +209,71 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** unchanged (Property Types & Specialist Tax)
+- **H1 chosen:** "Serviced Accommodation and BPR: Clearing the Pawson Trading Threshold"
+- **Meta title chosen:** "Serviced Accommodation BPR: The Pawson Trading Test" (51 chars)
+- **Why these vs other options:** Lead with the case-law spine. The Pawson line is the single most-load-bearing reference in the topic and naming it in the title disambiguates from generic "BPR for serviced accommodation" pages competitors offer.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm25278 — Authoritative HMRC summary of Pawson, including Henderson J's quoted holding and the activities-on-investment-side list; also flags Green [2015] confirming scale isn't decisive.
+- https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm25277 — HMRC view on hotels/B&Bs (Vinelott J in Griffiths v Jackson); presumptively trading.
+- https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm25279 — George (caravan sites) and Farmer (looking at business in the round).
+- https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm25280 — McCall (NI CA 2009) on other lettings, agistment as investment.
+- https://www.ukpropertyaccountants.co.uk/maximising-business-relief-to-reduce-inheritance-tax/ — fetched (200 OK) but extremely thin on Pawson; competitor framing is generic "active business" without the case-law specificity this page provides.
+- gov.uk/tax-and-chancery-tribunal-decisions/...nicolette-vivian-pawson... — confirmed canonical URL after the brief's quoted URL 404'd; flagged.
+- gov.uk/tax-and-chancery-tribunal-decisions/...maureen-vigne... — Vigne [2018] UKUT 0357 (livery case) used as the post-Pawson "what does qualify" counterweight, replacing the brief's suggested Graham/Carnwethers reference (which the brief itself flagged as needing verification and which did not surface on gov.uk search).
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `business-property-relief-rental-property-iht` — Shallow pillar from April 2026. Generic Q&A format, no specific case-law citation, no fact-pattern checklist. This page is the deeper applied version. Flagged for orchestrator backlink (raise the cross-link back from the pillar to this page).
+- `serviced-accommodation-tax-fhl-abolition-april-2025` — Income-tax-side companion. Linked outbound; intentionally not duplicating income-tax mechanics here.
+- `inheritance-tax-rental-property-uk-guide` — IHT pillar. Linked outbound for headline reliefs; this page is mechanism-deeper.
+- `iht-april-2026-bpr-apr-cap-property-impact` — Sibling Wave 2 (A4) reform-impact page. Linked outbound; this page is the upstream eligibility question, A4 is the downstream cap question.
+- `airbnb-tax-uk-short-term-rental-income-taxed` — Backlink target; explicitly addressed the "why Airbnb-style operations fail Pawson" angle the brief requested.
+- `serviced-accommodation-vs-buy-to-let-tax-comparison-2026` — Income-tax decision sibling. Linked outbound.
+- `furnished-holiday-let-tax-rules-exemptions` — Not directly linked from this page (FHL-abolition specifics are out of scope); the SA-FHL-abolition page is the more natural bridge.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- s.105 IHTA 1984 (legislation.gov.uk)
+- Pawson v HMRC [2013] UKUT 050 (TCC) — full gov.uk decision URL
+- Vigne v HMRC [2018] UKUT 0357 (TCC) — full gov.uk decision URL
+- IHTM25277 (HMRC hotels, B&Bs, residential homes)
+- IHTM25278 (HMRC holiday lettings; Pawson + Green)
+- IHTM25279 (HMRC caravan sites; George approach)
+- IHTM25280 (HMRC other lettings; McCall)
+- APR/BPR reform from 6 April 2026 (gov.uk policy publication)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/landlord-tax-essentials/business-property-relief-rental-property-iht` — pillar BPR-on-rental page (link out to pillar; this page is the deeper applied version)
+- `/blog/landlord-tax-essentials/iht-april-2026-bpr-apr-cap-property-impact` — sibling A4, downstream cap mechanics
+- `/blog/property-types-and-specialist-tax/serviced-accommodation-vs-buy-to-let-tax-comparison-2026` — income-tax side companion
+- `/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide` — IHT pillar
+- `/blog/landlord-tax-essentials/iht-lifetime-gifts-7-year-rule-property-taper` — for lifetime-gift mechanics of qualifying BPR property
+- `/blog/property-types-and-specialist-tax/airbnb-tax-uk-short-term-rental-income-taxed` — backlink target for Airbnb-fails-Pawson section
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "What Pawson actually decided" H2 — first high-intent moment after the load-bearing legal explanation; reader has now understood the threshold and is asking "where do I sit?".
+- After "Helena, a 6-unit operation in central Edinburgh" worked-example H2 — after the worked numerical example, per brief guidance.
+- After "Evidencing the trading case: the documentation file" H2 — at the end of the decision-framework section, before the closing summary; high-intent for operators ready to engage on the documentation question.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass (build clean; 0 errors; 13 FAQs serialised to FAQPage JSON-LD; all six internal-link slugs prerendered).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13/13)
+- Em-dashes in markdown: 0 (one em-dash in editorialNote on first draft, removed)
+- Tailwind classes in markdown: 0
+- Meta title length: 51 chars
+- Meta description length: 147 chars
+- Internal links resolve: yes (all 6 built HTML targets confirmed in .next/server/app/blog/...)
+- monitored_pages row inserted: yes
+- Body word count: ~3,049 words (above 2,500 floor, below 3,500 ceiling)
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- The brief's quoted Pawson URL on gov.uk (`/tax-and-chancery-tribunal-decisions/pawson-v-hmrc-2013-ukut-050-tcc`) returned 404; correct URL is the full case-name variant (`the-commissioners-for-hm-revenue-and-customs-v-the-personal-representatives-of-nicolette-vivian-pawson-deceased-2013-ukut-050-tcc`). Not a HOUSE_POSITION_CONFLICT — house position §15.4 and §9 both cite the case correctly and the brief itself warned URLs needed verification.
+- The brief's suggested Graham/Carnwethers FTT 2018 reference did not surface in gov.uk tribunals search. Substituted with Vigne [2018] UKUT 0357 (TCC), which is more recent (Upper Tribunal level), provides the same "what does qualify" counterweight, and is directly authoritative. The brief flagged the Graham URL as one that "needs verification".
+- Suggested backlink: the existing `business-property-relief-rental-property-iht` pillar (April 2026 generalist draft) is shallower than this deeper applied page warrants. Orchestrator should consider adding a backlink from the pillar to this Pawson page on next maintenance pass.
 
 ### 2-3 sentence summary
-<freeform>
+Case-law-spined Pawson page distinct from A4's cap-reform framing. Anchors on Pawson [2013] UKUT 050 + Vigne [2018] UKUT 0357 + the IHTM25277-25280 series, with a Helena/Edinburgh 6-unit worked example quantifying the £0 / £280k / £760k swing across pre-cap, post-cap-qualifying and post-cap-Airbnb-fail scenarios. Fact-pattern checklist supplies the operational decision tool the brief asked for.
 
