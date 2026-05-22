@@ -116,7 +116,7 @@ editorialNote: "Pillar reference for the ATED bucket. Daughter pages on rental r
 
 <p>For property acquired after 1 April 2022, the valuation date is the acquisition date, with subsequent valuations following the five-yearly cycle from the next revaluation point.</p>
 
-<p>Valuation is the holder's responsibility, not HMRC's. If your value is within 10% of a band boundary you can request a <strong>Pre-Return Banding Check</strong> from HMRC, which gives confirmation of the band without committing HMRC to a specific value. The check is free and is generally recommended where being one band higher or lower would change the annual charge by more than the cost of a professional valuation (which it usually will at the larger bands).</p>
+<p>Valuation is the holder's responsibility, not HMRC's. If your value is within 10% of a band boundary you can request a <strong>Pre-Return Banding Check</strong> from HMRC, which gives confirmation of the band without committing HMRC to a specific value. The check is free and is generally recommended where being one band higher or lower would change the annual charge by more than the cost of a professional valuation (which it usually will at the larger bands). For the full mechanic on the 1 April 2027 revaluation, the acquisition-date rule, and the PRBC procedure see our <a href="/blog/incorporation-and-company-structures/ated-valuation-date-rules-2027-revaluation">ATED valuation date rules and 2027 revaluation guide</a>.</p>
 
 <h2>The 15% Flat-Rate SDLT on Acquisition</h2>
 
@@ -199,7 +199,7 @@ editorialNote: "Pillar reference for the ATED bucket. Daughter pages on rental r
   <li><strong>Payment accompanies the return.</strong> ATED is paid in a single sum by 30 April (or by the return deadline for mid-year returns). There is no instalment scheme.</li>
 </ol>
 
-<p>Returns must be amended within 12 months of the original filing where errors are discovered. After that window, errors are addressed by disclosure under HMRC's corrections regime.</p>
+<p>Returns must be amended within 12 months of the original filing where errors are discovered. After that window, errors are addressed by disclosure under HMRC's corrections regime. The full amendment procedure (forms, supporting evidence, and the interaction with FA 2009 Sch 55 penalties) is covered in our dedicated <a href="/blog/incorporation-and-company-structures/ated-return-amendment-corrections-procedure">ATED return amendment and corrections procedure guide</a>.</p>
 
 <h2>The Late-Filing and Late-Payment Penalty Cascade</h2>
 
@@ -232,7 +232,7 @@ editorialNote: "Pillar reference for the ATED bucket. Daughter pages on rental r
 
 <p>A penalty can be appealed within 30 days of the notice. The principal grounds are <strong>reasonable excuse</strong> (an unforeseen event that prevented compliance and that ended as soon as the excuse ended, with the return filed without unreasonable delay) and, for daily penalties, <strong>special circumstances</strong>.</p>
 
-<p>HMRC's published view treats ignorance of the obligation as a weak ground, although first-time-filing arguments from newly-incorporated holding companies have had mixed results at the First-tier Tribunal. Genuine illness of the responsible officer, late receipt of HMRC correspondence (when sent to a stale address), and unavailability of the online service have all succeeded as reasonable excuse in specific cases. Pure forgetfulness has not.</p>
+<p>HMRC's published view treats ignorance of the obligation as a weak ground, although first-time-filing arguments from newly-incorporated holding companies have had mixed results at the First-tier Tribunal. Genuine illness of the responsible officer, late receipt of HMRC correspondence (when sent to a stale address), and unavailability of the online service have all succeeded as reasonable excuse in specific cases. Pure forgetfulness has not. For the full appeal procedure, the tribunal-grade reasonable-excuse case-law, and the special-circumstances route, see our <a href="/blog/incorporation-and-company-structures/ated-late-filing-penalty-appeal-reasonable-excuse">ATED late-filing penalty appeal guide</a>.</p>
 
 <h2>Practical Decision: Keep Enveloped, Dis-Envelope, or Claim Relief?</h2>
 

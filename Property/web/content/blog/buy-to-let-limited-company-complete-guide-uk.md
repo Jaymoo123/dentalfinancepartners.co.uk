@@ -210,7 +210,7 @@ faqs:
 </tbody>
 </table>
 
-<p>Most ordinary BTL companies are exempt under the rental business exemption (property let on a commercial basis to unconnected third parties). You still must file the annual ATED return by 30 April each year, claiming the exemption. Missing this filing triggers a £100 penalty rising further with continued delay, even where no tax is due.</p>
+<p>Most ordinary BTL companies are exempt under the rental business exemption (property let on a commercial basis to unconnected third parties). You still must file the annual ATED return by 30 April each year, claiming the exemption. Missing this filing triggers a £100 penalty rising further with continued delay, even where no tax is due. For the strategic decision a director faces once a company crosses the £500,000-per-dwelling threshold (the three-tax interlock with SDLT 15% and IHT Schedule A1, the 1 April 2027 revaluation flag, and the dis-envelope versus claim-relief versus restructure decision matrix) see our <a href="/blog/incorporation-and-company-structures/ated-overview-companies-holding-uk-residential-property-2026-27">ATED strategic overview for companies holding UK residential property</a>.</p>
 
 <h2>SPVs, group structures, and family share arrangements</h2>
 
