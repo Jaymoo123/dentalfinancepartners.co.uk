@@ -14,7 +14,7 @@ summary: "A comprehensive step-by-step guide to MTD quarterly reporting for land
 schema: ""
 faqs:
   - question: "When do MTD quarterly reporting deadlines apply to landlords?"
-    answer: "MTD quarterly reporting becomes mandatory from 6 April 2026 for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). Quarterly submissions must be made within one month of each three-month period end. For standard tax year periods, deadlines are 5 August, 5 November, 5 February, and 5 May."
+    answer: "MTD quarterly reporting becomes mandatory from 6 April 2026 for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). For standard tax year periods, the four gov.uk-published deadlines are 7 August, 7 November, 7 February, and 7 May."
   - question: "What software do I need for MTD quarterly submissions?"
     answer: "You need HMRC-approved accounting software that can connect to their systems via API. Popular options include Xero, QuickBooks, FreeAgent, and specialist property software like Arthur Online. The software must store digital records, calculate totals automatically, and submit returns electronically."
   - question: "What happens if I miss an MTD quarterly deadline?"
@@ -33,7 +33,7 @@ faqs:
 <ul>
 <li>Use MTD-compatible accounting software</li>
 <li>Keep digital records of all property income and expenses</li>
-<li>Submit quarterly updates within one month of each period end</li>
+<li>Submit quarterly updates by the statutory deadline after each period end (7 August, 7 November, 7 February, 7 May for the standard tax year)</li>
 <li>Complete an annual End of Period Statement (EOPS)</li>
 </ul>
 <p>For landlords already familiar with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a>, quarterly reporting is the operational heart of the new system.</p>
@@ -43,13 +43,13 @@ faqs:
 <h3>Standard Tax Year Quarterly Deadlines</h3>
 <p>If you follow the tax year:</p>
 <ul>
-<li><strong>Q1 (6 Apr - 5 Jul):</strong> Submit by 5 August</li>
-<li><strong>Q2 (6 Jul - 5 Oct):</strong> Submit by 5 November</li>
-<li><strong>Q3 (6 Oct - 5 Jan):</strong> Submit by 5 February</li>
-<li><strong>Q4 (6 Jan - 5 Apr):</strong> Submit by 5 May</li>
+<li><strong>Q1 (6 Apr - 5 Jul):</strong> Submit by 7 August</li>
+<li><strong>Q2 (6 Jul - 5 Oct):</strong> Submit by 7 November</li>
+<li><strong>Q3 (6 Oct - 5 Jan):</strong> Submit by 7 February</li>
+<li><strong>Q4 (6 Jan - 5 Apr):</strong> Submit by 7 May</li>
 </ul>
 <h3>Alternative Quarterly Periods</h3>
-<p>You can choose calendar quarters (Jan-Mar, Apr-Jun, Jul-Sep, Oct-Dec) or any other three-month periods. The one-month submission deadline still applies.</p>
+<p>You can choose calendar quarters (Jan-Mar, Apr-Jun, Jul-Sep, Oct-Dec) or any other three-month periods. The statutory submission deadline still applies; verify the corresponding gov.uk-published date for your chosen period basis before relying on alternative quarter dates.</p>
 <p>For example, calendar quarter deadlines would be:</p>
 <ul>
 <li>Q1 (Jan-Mar): Submit by 30 April</li>
@@ -97,7 +97,7 @@ faqs:
 </ul>
 <h3>New MTD System (From April 2026)</h3>
 <ul>
-<li>Submit quarterly updates within one month of each period end</li>
+<li>Submit quarterly updates by the statutory deadline after each period end (7 August, 7 November, 7 February, 7 May for the standard tax year)</li>
 <li>Complete End of Period Statement by 31 January</li>
 <li>Continue making payments on account as required</li>
 </ul>

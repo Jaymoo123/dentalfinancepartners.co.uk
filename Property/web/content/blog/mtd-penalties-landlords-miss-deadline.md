@@ -47,10 +47,10 @@ faqs:
 <p>The <strong>late submission penalty MTD</strong> structure differs significantly from self-assessment penalties. Missing a quarterly deadline by one day carries the same penalty as missing it by three months.</p>
 <p>Key deadline dates for landlords:</p>
 <ul>
-<li>Quarter 1 (6 April - 5 July): Update due 5 August</li>
-<li>Quarter 2 (6 July - 5 October): Update due 5 November</li>
-<li>Quarter 3 (6 October - 5 January): Update due 5 February</li>
-<li>Quarter 4 (6 January - 5 April): Update due 5 May</li>
+<li>Quarter 1 (6 April - 5 July): Update due 7 August</li>
+<li>Quarter 2 (6 July - 5 October): Update due 7 November</li>
+<li>Quarter 3 (6 October - 5 January): Update due 7 February</li>
+<li>Quarter 4 (6 January - 5 April): Update due 7 May</li>
 </ul>
 <p>The penalty amounts depend on your total income level. A landlord earning £60,000 annually from property will face the same fixed penalty as someone with £15,000 rental income, but the financial impact relative to income differs.</p>
 
@@ -67,13 +67,13 @@ faqs:
 <p>This means landlords face potential penalties on both their quarterly MTD updates and their annual self-assessment returns.</p>
 
 <h3>Payment Deadline Penalties</h3>
-<p>MTD doesn't change when property tax payments are due - these remain at 31 January and 31 July for payments on account. However, late payment penalties still apply:</p>
+<p>MTD doesn't change when property tax payments are due - these remain at 31 January and 31 July for payments on account. The MTD ITSA late-payment penalty schedule from 6 April 2026 was accelerated by the Spring Statement 2025 reforms:</p>
 <ul>
-<li>5% penalty if tax remains unpaid 30 days after due date</li>
-<li>Additional 5% penalty after 6 months</li>
-<li>Further 5% penalty after 12 months</li>
+<li>3% of the unpaid tax once the bill is 15 days overdue</li>
+<li>A further 3% once it is 30 days overdue</li>
+<li>10% per annum running from day 31 onwards (in addition to the two flat 3% charges)</li>
 </ul>
-<p>Interest also accrues daily on unpaid tax at HMRC's standard rate. For 2025/26, this rate is 7.75% annually.</p>
+<p>The legacy schedule of 2% at 15 days / 2% at 30 days / 4% per annum thereafter (FA 2021 Sch 26) continues to apply to non-MTD income tax and VAT only. Interest also accrues daily on the unpaid tax at HMRC's standard rate (Bank of England base rate plus 2.5%) from the original due date.</p>
 
 <h2>Reasonable Excuse and Appeal Options</h2>
 <p>HMRC accepts "reasonable excuse" appeals for MTD penalties, but the standards are strict. Accepted excuses typically include:</p>

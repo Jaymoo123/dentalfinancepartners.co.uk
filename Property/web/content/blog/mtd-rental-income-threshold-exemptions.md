@@ -18,7 +18,7 @@ faqs:
   - question: "Is the £50,000 threshold gross rent or rental profit?"
     answer: "Gross. You use total rental income before deducting any expenses (mortgage interest, agent fees, repairs, insurance, void council tax, etc). If you have UK self-employment income as well, you add the two gross figures together. So a landlord with £42,000 gross rents plus £12,000 self-employment turnover crosses the threshold at £54,000 combined, even though net profit after expenses might be much lower."
   - question: "I had £55,000 of rent in 2024-25 but only £35,000 in 2025-26. Am I in MTD?"
-    answer: "Yes for 2026-27 onwards, until you fall below the threshold for two consecutive tax years and HMRC removes you from the mandate. The test for the 6 April 2026 start was the 2024-25 self assessment return. Even though your 2025-26 income dropped, you would still be required to file MTD quarterly updates for 2026-27. The exit mechanism is the 'three-line account' exemption review, not automatic."
+    answer: "Yes for 2026-27 onwards, until you fall below the threshold for three consecutive tax years and HMRC removes you from the mandate. The test for the 6 April 2026 start was the 2024-25 self assessment return. Even though your 2025-26 income dropped, you would still be required to file MTD quarterly updates for 2026-27. The exit mechanism is the 'three-line account' exemption review, not automatic."
   - question: "I rent through a limited company. Does MTD for ITSA apply to me?"
     answer: "No. MTD for ITSA only applies to sole-trader landlords and unincorporated landlords filing through SA105. Limited company property income is reported through the CT600 corporation tax return, which is unaffected by MTD for ITSA. MTD for Corporation Tax is a separate (much later) regime, currently with no firm start date. Director extractions (salary and dividends) are reported on personal self assessment but are not 'property income' for MTD purposes."
   - question: "What happens if my rental income fluctuates around the threshold?"
@@ -34,13 +34,13 @@ faqs:
   - question: "How do I claim a digital exclusion exemption?"
     answer: "You apply directly to HMRC explaining why digital record-keeping and quarterly filing are not practicable for you. Common accepted grounds are documented disability, very limited broadband access in remote areas, and religious objection (genuine, not convenience-based). The exemption is not automatic and HMRC can refuse. If granted, you continue filing an annual self assessment in the old format. Apply well before the relevant 6 April start date for your income band."
   - question: "What are the MTD quarterly deadlines for property income?"
-    answer: "Four quarterly updates per tax year, due one month after each quarter-end. For the standard 6 April to 5 April tax year: Q1 (6 April to 5 July) due 5 August. Q2 (6 July to 5 October) due 5 November. Q3 (6 October to 5 January) due 5 February. Q4 (6 January to 5 April) due 5 May. A final declaration replaces the old self assessment return, due by 31 January after the tax year. Penalties for missing quarterly updates work on a points system rather than per-submission fines."
+    answer: "Four quarterly updates per tax year. For the standard 6 April to 5 April tax year, the gov.uk-published deadlines are: Q1 (6 April to 5 July) due 7 August. Q2 (6 July to 5 October) due 7 November. Q3 (6 October to 5 January) due 7 February. Q4 (6 January to 5 April) due 7 May. A final declaration replaces the old self assessment return, due by 31 January after the tax year. Penalties for missing quarterly updates work on a points system rather than per-submission fines."
   - question: "What software do I need for MTD on rental income?"
     answer: "HMRC-recognised MTD-compatible software. Common options for landlords include Hammock, Landlord Studio, FreeAgent (free for NatWest, RBS, Mettle, and Ulster Bank business banking customers), Xero with a bridging tool, QuickBooks, and Sage. Check the gov.uk software list for current recognised products. Spreadsheets are allowed only if combined with bridging software that submits to HMRC, manual record-keeping is not."
   - question: "Should I sign up voluntarily before my threshold date?"
     answer: "Possibly, but only for the right reasons. Voluntary adoption is sensible if you already use cloud bookkeeping software, want a year to learn the workflow before the mandate, or run a portfolio that will cross the threshold within a year. It is the wrong answer if you do it under the impression that early adopters get an easier ride from HMRC, they do not. Voluntary entrants are subject to identical rules and penalties."
   - question: "What penalties apply for missing MTD quarterly submissions?"
-    answer: "HMRC operates a points-based penalty regime for late quarterly updates. Each missed deadline earns one point. Once you accumulate four points (for quarterly filers), a £200 penalty applies. Further missed deadlines after that trigger £200 each. Points reset after 24 months of full compliance. Late payment penalties on the underlying tax remain separate: 2% of unpaid tax at 15 days, another 2% at 30 days, and interest on top from the original due date."
+    answer: "HMRC operates a points-based penalty regime for late quarterly updates. Each missed deadline earns one point. Once you accumulate four points (for quarterly filers), a £200 penalty applies. Further missed deadlines after that trigger £200 each. Points reset after 24 months of full compliance. Late payment penalties on the underlying tax remain separate. From 6 April 2026 the MTD ITSA late-payment schedule is 3% of the unpaid tax from day 15, a further 3% from day 30, and 10% per annum from day 31 onwards (Spring Statement 2025 accelerated schedule). Interest accrues on top from the original due date. The legacy 2%/2%/4% at 31/46/91 days continues to apply to non-MTD income tax and VAT only."
 ---
 
 <p>Making Tax Digital for Income Tax Self Assessment (MTD for ITSA) went live on 6 April 2026 for sole-trader landlords with gross property and self-employment income above £50,000. The threshold drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028. The £10,000 figure that circulated in early HMRC consultations was abandoned in late 2022 and is no longer the relevant number anywhere in the schedule.</p>
@@ -151,10 +151,10 @@ faqs:
 <tr><th>Quarter</th><th>Period covered</th><th>Submission deadline</th></tr>
 </thead>
 <tbody>
-<tr><td>Q1</td><td>6 April to 5 July</td><td>5 August</td></tr>
-<tr><td>Q2</td><td>6 July to 5 October</td><td>5 November</td></tr>
-<tr><td>Q3</td><td>6 October to 5 January</td><td>5 February</td></tr>
-<tr><td>Q4</td><td>6 January to 5 April</td><td>5 May</td></tr>
+<tr><td>Q1</td><td>6 April to 5 July</td><td>7 August</td></tr>
+<tr><td>Q2</td><td>6 July to 5 October</td><td>7 November</td></tr>
+<tr><td>Q3</td><td>6 October to 5 January</td><td>7 February</td></tr>
+<tr><td>Q4</td><td>6 January to 5 April</td><td>7 May</td></tr>
 <tr><td>Final declaration</td><td>Full tax year</td><td>31 January following the tax year</td></tr>
 </tbody>
 </table>
@@ -189,7 +189,7 @@ faqs:
 
 <p>HMRC operates a points-based penalty system for late MTD quarterly submissions. Each missed deadline earns one point. For quarterly filers, the trigger is four points, at which a £200 fixed penalty applies. Further missed deadlines after the trigger each generate another £200. Points reset after 24 months of full compliance.</p>
 
-<p>Late payment penalties on the underlying tax are separate and harsher: 2% of unpaid tax at 15 days overdue, another 2% at 30 days, then daily interest from the original due date. Interest is currently charged at a rate set by reference to Bank of England base rate plus 2.5%.</p>
+<p>Late payment penalties on the underlying tax are separate and harsher. From 6 April 2026, the MTD ITSA schedule under Spring Statement 2025 is 3% of the unpaid tax from day 15 overdue, a further 3% from day 30, and 10% per annum running from day 31 onwards. Interest accrues on top from the original due date at a rate set by reference to Bank of England base rate plus 2.5%. The legacy 2%/2%/4% schedule at 31/46/91 days continues for non-MTD income tax and VAT only.</p>
 
 <h2>What to do now</h2>
 
