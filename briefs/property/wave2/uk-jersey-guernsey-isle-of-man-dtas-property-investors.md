@@ -208,51 +208,76 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** uk-jersey-guernsey-isle-of-man-dtas-property-investors (unchanged)
+- **Final category:** non-resident-landlord-tax (unchanged)
+- **H1 chosen:** UK-Jersey, UK-Guernsey, and UK-Isle of Man DTAs: The End of the Crown Dependency Shelter for UK Property Investors
+- **Meta title chosen:** UK-Jersey, Guernsey, IoM DTAs: Property Investor Guide (54 chars)
+- **Why these vs other options:** H1 fronts the three jurisdictions and the narrative arc (end of the shelter). Meta title abbreviates to the highest-density query terms (Jersey, Guernsey, IoM, DTAs, property). Distinguishes B10 from B1-B9 (single-bilateral pages) as the consolidated multi-jurisdiction page.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- gov.uk/government/publications/jersey-tax-treaties — Verified UK-Jersey 2018 DTA signed 2 July 2018, in force 19 December 2018; 1952 arrangement + 2016 Protocol terminated.
+- gov.uk/government/publications/guernsey-tax-treaties — Verified UK-Guernsey 2018 DTA in force 7 January 2019; 1952 + 2016 Protocol terminated; 2021 exchange of letters and 2022 MOU on arbitration.
+- gov.uk/government/publications/isle-of-man-tax-treaties — Verified UK-IoM 2018 DTA in force December 2018; 1955 arrangement + 2016 Protocol terminated. House position §16.5 says "modern (2018+)" which is correct; brief's worry that §16.5 cited 2016 is itself stale.
+- HMRC INTM151010 — concept and principles of double taxation; underpinning framework.
+- legislation.gov.uk TIOPA 2010 s.9 — returned error 437; bypassed; relied on prior knowledge of the s.9(2)(c) Crown Dependency carve-out (per brief's reference).
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `non-resident-landlord-scheme-uk-complete-guide` — NRL pillar; Crown Dependency-resident landlords are in NRL; linked out.
+- `non-resident-cgt-uk-property-rates-reporting` — NRCGT rates page; Art 13(4) brings share disposal into NRCGT; linked out for the operational mechanics rather than re-explaining.
+- `nrcgt-indirect-disposal-property-rich-companies-shares` (C10, on property-wave2-c) — indirect disposal sibling brief. B10 covers Art 13(4) at conceptual / jurisdiction-specific level only; C10 will cover the indirect-disposal mechanics in depth. Avoided duplication by treating the Article 13(4) section as introductory and linking out for operational detail. C10 not linked (would not resolve in worktree).
+- `spv-property-investment-special-purpose-vehicle-guide` — SPV pillar; B10 references the choice between Crown Dependency company and UK Ltd; not linked inline (would invert framing; brief says descriptive contrast is fine).
+- `sdlt-non-resident-2-percent-surcharge` — SDLT 2% surcharge page; B10 has a dedicated section on the surcharge for Crown Dependency purchasers; linked out for full refund mechanics.
+- `tax-treaties-property-investors-treaty-framework-guide` (B1) — Wave 2 DTA framework pillar; linked up.
+- `iht-non-resident-uk-property-april-2025-residence-test` (A6, on property-wave2-a) — Wave 2 IHT non-resident page; April 2025 residence regime impact on Crown Dependency-resident former-UK-residents; linked but resolves post-merge.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- UK-Jersey 2018 DTA (gov.uk)
+- UK-Guernsey 2018 DTA (gov.uk)
+- UK-Isle of Man 2018 DTA (gov.uk)
+- HMRC INTM151010 (concept and principles of double taxation)
+- TCGA 1992 s.1A + Schedules 1A and 4AA (NRCGT framework)
+- TCGA 1992 Schedule 2 paragraph 1 (60-day return)
+- IHTA 1984 Schedule A1 (UK residential property look-through; in force 6 April 2017 per Finance (No.2) Act 2017)
+- IHTA 1984 s.6 (UK situs property)
+- TIOPA 2010 s.9 and s.9(2)(c) (unilateral relief + Crown Dependency carve-out)
+- FA 1995 Sch 23 + SI 1995/2902 (Non-Resident Landlord scheme)
+- ITTOIA 2005 (individual rental computation)
+- CTA 2009 (corporate rental computation)
+- FA 2003 Schedule 9A (2% non-resident SDLT surcharge, in force 1 April 2021)
+- FA 2003 Schedule 9A paragraph 12 (refund mechanism)
+- Finance Act 2019 (April 2019 NRCGT extension to commercial property + indirect disposal + rebasing)
+- Finance Act 2025 (April 2025 residence-based IHT regime + 10-year FLTR tail)
+- Finance Act 2021 (introduction of 2% SDLT surcharge)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide` (B1) — framework upstream
+- `/blog/non-resident-landlord-tax/dta-tie-breaker-test-dual-residence-property-owners` (B8) — Article 4 cascade upstream for dual UK-CD residence
+- `/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide` — NRL operational downstream
+- `/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting` — NRCGT operational downstream
+- `/blog/non-resident-landlord-tax/sdlt-non-resident-2-percent-surcharge` — SDLT surcharge downstream
+- `/blog/non-resident-landlord-tax/iht-non-resident-uk-property-april-2025-residence-test` (A6, on property-wave2-a) — IHT residence regime; resolves post-merge
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "Article 13(4): the indirect-disposal closure" — high-intent for shareholders considering share disposal who need to understand the post-2018 NRCGT exposure.
+- After the Andrew worked example — high-intent for Crown Dependency company shareholders running the why-did-we-set-this-up audit on existing structures.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — initial draft had 1 em-dash (line 153, replaced with comma) AND meta description at 165 chars (over 158 limit; shortened from "Isle of Man" to "IoM" and trimmed connectives). Both fixed in-place pre-build.
+- Attempt 2 — PASS. Next.js 15.5.18 compiled successfully. 361 static pages generated. 0 errors.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13 Question entries in HTML; 13 in frontmatter)
+- Em-dashes in markdown: 0 (after attempt-1 fix)
+- Tailwind classes in markdown: 0
+- Meta title length: 54 chars (≤62 ✓)
+- Meta description length: 142 chars (≤158 ✓, after attempt-1 shortening)
+- Internal links resolve: 5 of 6 in this worktree (A6 IHT non-resident link on property-wave2-a branch, resolves post-merge — covered by new F-22).
+- monitored_pages row inserted: yes
+- Body word count: ~5,146 words. Above the 2,500-3,500 typical range; this is the largest B-bucket page. Justified by the page's role: consolidated three-jurisdiction coverage + three-policy-change historical arc + worked example covering the maintain/collapse/restructure decision tree. The brief explicitly framed this as a consolidated multi-jurisdiction page with depth across treaty mechanics, Sch A1, Art 13(4), April 2025 IHT, and SDLT surcharge.
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- F-22: B10 ↔ A6 (IHT non-resident page) cross-branch link verification needed post-merge. B10 forward-links to A6 in body; A6 is on property-wave2-a branch and resolves post-merge.
 
 ### 2-3 sentence summary
-<freeform>
+B10 is the consolidated Crown Dependencies page covering all three 2018 UK-CD treaties (Jersey, Guernsey, Isle of Man) together. Anti-templating: the only multi-jurisdiction page in the DTA bucket; structured around the three-policy-change historical arc (Sch A1 from 2017 + Art 13(4) from 2018 + residence-based IHT from 2025) that ended the historic shelter, rather than around treaty articles in isolation. Andrew Jersey-resident worked example (UK national since 2018, four Manchester BTL flats in a Jersey company) runs the maintain/collapse/restructure decision tree against the FLTR tail and NRCGT exposure. Session B complete (10 of 10).
 

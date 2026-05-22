@@ -207,51 +207,78 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** foreign-tax-credit-uk-property-overseas-landlords (unchanged)
+- **Final category:** non-resident-landlord-tax (unchanged)
+- **H1 chosen:** Foreign Tax Credit for UK Landlords with Overseas Property: TIOPA 2010 Claim Mechanics
+- **Meta title chosen:** Foreign Tax Credit: UK Landlords with Overseas Property (55 chars)
+- **Why these vs other options:** H1 fronts audience (UK landlords with overseas property), relief (foreign tax credit), and statutory anchor (TIOPA 2010). Meta title strips to highest-density query terms. Distinguishes B9 structurally from B1-B8 (which all framed UK property + non-resident landlord); B9 is the inverse (UK resident + overseas property).
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- HMRC INTM161000 — contents page; mapped the structural framework (INTM161020 DTA relief, INTM161030 unilateral, INTM161100 six principles, INTM161210 credit limit).
+- HMRC INTM161100 — the six basic principles. Used as the operational core of the page.
+- HMRC INTM161210 — credit-limit calculation per TIOPA 2010 s.36, ss.40-42. Reconciled with the brief's s.18-25 reference (s.18 is entitlement; s.36/40-42 is the limit calc).
+- HMRC INTM161020 — DTA-based credit framework. Cited inline for the s.18 route.
+- HMRC INTM161030 — unilateral credit framework + US state tax example. Cited inline for the s.9 route.
+- HMRC SA106 publication page — confirmed 2026 version published 6 April 2026. Anchored the box-by-box section.
+- legislation.gov.uk (TIOPA 2010 s.9, s.18, s.25) — returned error 437 (anti-bot block). Bypassed; relied on INTM and house position §10 statutory wording.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `tax-treaties-property-investors-treaty-framework-guide` (B1) — framework pillar; B9 is the deeper FTC operational chapter; linked up.
+- `how-to-complete-landlord-self-assessment-filing-step-by-step-guide` — SA105 sibling; SA106 sits alongside; linked as the natural neighbour.
+- `non-resident-landlord-self-assessment-filing-requirements` — mirror-image (non-resident filing SA106 for UK source); not linked inline (would invert framing); flagged for orchestrator post-merge back-link via F-20.
+- `uk-france-dta-property-rental-income-cgt` (B3), `uk-spain-dta-property-uk-resident-spanish-holiday-home` (B4), `uk-italy-dta-tie-breaker-property-residence-disputes` (B7) — bilateral applied pages where the same FTC mechanics fire; all linked from B9's closing "what to do next" list.
+- `non-dom-reform-april-2025-fig-regime-property-investors` (C8) — referenced descriptively in the FIG overlay section but not hyperlinked (C8 not yet written; would not resolve in worktree).
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- HMRC INTM161000 contents (DT Relief: UK residents with foreign income or gains)
+- HMRC INTM161020 (relief under DTA)
+- HMRC INTM161030 (unilateral relief)
+- HMRC INTM161100 (six basic principles)
+- HMRC INTM161110 (source rule)
+- HMRC INTM161120 (exceptions to source rule, including Crown Dependencies)
+- HMRC INTM161150 (repayment / amendment)
+- HMRC INTM161210 (limit of tax credit relief)
+- HMRC INTM161240 (UK measure of income)
+- HMRC INTM161250 (minimum foreign tax rule)
+- HMRC INTM161300/310 (qualifying foreign taxes lists)
+- TIOPA 2010 s.9 (unilateral); s.18 (treaty); s.27 (deduction alternative); s.36 + ss.40-42 (credit limit); ss.73-76 (limited carry-forward)
+- ITTOIA 2005 ss.272-290 (Schedule A computation under UK rules)
+- ITA 2007 s.24 (finance cost restriction)
+- TMA 1970 Sch 1AB (overpayment relief)
+- FA 2013 Sch 45 (Statutory Residence Test)
+- FA 2025 (FIG regime introduction)
+- HMRC HS304 + SA106 (foreign pages)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide` (B1) — framework pillar upstream
+- `/blog/landlord-tax-essentials/how-to-complete-landlord-self-assessment-filing-step-by-step-guide` — SA105 sibling
+- `/blog/non-resident-landlord-tax/uk-france-dta-property-rental-income-cgt` (B3) — bilateral applied (France situs)
+- `/blog/non-resident-landlord-tax/uk-spain-dta-property-uk-resident-spanish-holiday-home` (B4) — bilateral applied (Spain situs)
+- `/blog/non-resident-landlord-tax/uk-italy-dta-tie-breaker-property-residence-disputes` (B7) — bilateral applied (Italy situs)
+- `/blog/non-resident-landlord-tax/dta-tie-breaker-test-dual-residence-property-owners` (B8) — Article 4 cascade upstream for residence determination
+- `/blog/non-resident-landlord-tax/srt-statutory-residence-test-landlord-decision-tree` (C2, on property-wave2-c) — SRT upstream; resolves post-merge per F-19
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "HMRC's six basic principles for FTC" — high-intent moment after the framework walk; readers ready to engage on their own credit-limit calc.
+- After the Helen worked example with mortgage counterfactual — high-intent for mortgage-financed overseas landlords because the s.24/FTC interaction is where the largest avoidable cost sits.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — PASS. Next.js 15.5.18 compiled successfully. 360 static pages generated (one more than B8 build, reflecting B9 added). 0 errors.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13 Question entries in HTML; 13 in frontmatter)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 55 chars (≤62 ✓)
+- Meta description length: 148 chars (≤158 ✓)
+- Internal links resolve: 6 of 7 in this worktree (SRT C2 link on property-wave2-c branch, resolves post-merge — already covered by F-19 raised at B8 commit).
+- monitored_pages row inserted: yes
+- Body word count: ~4,352 words. Above the 2,500-3,500 typical range; comparable to B8's 4,691. Justified by the six-principles walk + credit-limit cap calc in detail + SA106 box-by-box + FIG regime overlay + worked example with mortgage counterfactual.
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- F-19 (raised at B8 commit) already covers the SRT (C2) cross-link; no new SRT flag needed.
+- F-20: existing `non-resident-landlord-self-assessment-filing-requirements` page is the mirror-image (non-resident filing SA106 for UK-source); should back-link to B9 as the resident-with-foreign-property counterpart. Mechanical post-merge back-patch.
 
 ### 2-3 sentence summary
-<freeform>
+B9 is the FTC operational page — the first page in the DTA bucket that frames UK residents with foreign property (inverting B1-B8's non-resident-with-UK-property framing). Walks the TIOPA 2010 Part 2 framework, HMRC's six basic principles from INTM161100, the credit-limit calculation in detail, SA106 box-by-box, the FIG regime overlay from 6 April 2025, and a Helen UK-resident Lisbon-flat worked example with a mortgage counterfactual that surfaces the s.24/FTC interaction for leveraged overseas residential property. Anti-templating: this page is operational/computational; not a treaty walk (B1), not a bilateral applied (B2-B7), not a cascade (B8).
 
