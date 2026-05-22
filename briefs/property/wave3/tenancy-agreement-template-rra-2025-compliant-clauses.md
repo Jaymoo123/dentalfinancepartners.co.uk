@@ -179,34 +179,64 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** tenancy-agreement-template-rra-2025-compliant-clauses (no override)
+- **Final category:** Landlord Tax Essentials (cluster continuity with C1-C7)
+- **H1 chosen:** Tenancy Agreement Template Update for the Renters' Rights Act 2025: Clause-by-Clause Audit
+- **Meta title chosen:** "Tenancy Agreement Template: RRA 2025 Clause Audit" (49 chars)
+- **Why these vs other options:** Slug is descriptive and tracks the primary query intent (landlord searching for template guidance). H1 leads on "Clause-by-Clause Audit" to anchor the framing differentiator (clause-level, not template-replacement). Brief explicitly noted to provide annotated example clauses rather than a full template (legal-advice positioning), and the audit framing supports that.
 
 ### Competitor URLs fetched
+- ukpropertyaccountants.co.uk/tenancy-agreements-a-guide-for-landlords — fetched via WebFetch per pickup note re 403. Result: 2,100-2,400 word general AST primer with no RRA 2025 / 2026-reform content. Confirmed the post-1-May-2026 clause-by-clause angle is not covered by competitor cluster (clear differentiation).
+- legislation.gov.uk/ukpga/2025/26/section/8 — verbatim s.8 RRA 2025 + new HA 1988 s.4B (void in-tenancy advance-rent terms; permitted pre-tenancy period). Anchored §"Clauses to Remove" item 4.
+- legislation.gov.uk/ukpga/2025/26/section/9 — verbatim s.9 RRA 2025 inserting TFA 2019 ss.5A + 5B (prohibition on inviting/accepting pre-tenancy rent payments). Anchored §"Clauses to Remove" item 5.
+- legislation.gov.uk/ukpga/2025/26/section/6 — verbatim s.6(7) RRA 2025 inserting HA 1988 s.13(4A) (rent increases only via s.13 / s.14 / written post-tenancy agreement). Anchored §"Clauses to Remove" item 3.
+- ss.1, 2, 11, 16A, 16B re-used from C3 + C7 prior fetches (no re-fetch).
+- gov.uk model agreement page — not fetched but referenced; flagged that the gov.uk model is pre-2026 and not updated as of 22 May 2026.
 
 ### Existing-page review (from "Closest existing pages")
+- C3 periodic-tenancy-default-ast-conversion-mechanics (committed) — bidirectional link via intro cross-link block + FAQ on "do I need a new agreement on conversion".
+- C4 renters-rights-act-rent-increase-section-13-tribunal-route (committed) — forward-link via intro cross-link block + §"Clauses to Remove" item 3.
+- C7 pet-rights-tenancy-landlord-refusal-reasonable-grounds (committed today, just before C8) — forward-link via intro + extensive coverage in §"Clauses to Remove" item 6 (pet damage insurance) carrying the F-11 corrected position into the clause-level analysis.
+- C2 section-21-abolition-uk-landlord-possession-guide-2026 (committed) — forward-link via intro cross-link block + §"Clauses to Remove" item 2.
+- C6 prs-database-landlord-ombudsman-registration-requirements (committed today) — forward-link via intro cross-link block + §"Clauses to Add" item 6 (PRS Database identifier placeholder clause).
+- C10 bidding-wars-asking-rent-cap-landlord-marketing-compliance (not yet on branch) — referenced in §"Clauses to Remove" item 8 without a hyperlink (would have been a forward-link if I had committed C10 first; since I haven't, I cite Ch.6 Pt.1 RRA 2025 directly and skip the hyperlink to avoid a broken link). Will add the forward-link in the end-of-session back-patch sweep if I write C10.
+- first-time-landlord-tax-guide-everything-you-need-to-know (LTE) — confirmed exists but did NOT directly link; the clause-by-clause focus didn't naturally connect to a pillar reference.
+- hmo-licensing-fees-tax-deductible-uk-landlords (PTST) — forward-link in §"Tax Treatment" as the deductibility-framework anchor.
+- landlord-expenses-allowable-uk-2026 (S24) — did NOT directly link; PIM2120 inline citation carries the legal-fee deduction framework.
+- renters-rights-act-2026-tax-implications-landlords (LTE, F-1 stale) — did NOT link.
 
 ### Citations added (external authority)
+- HMRC Property Income Manual (gov.uk hmrc-internal-manuals/property-income-manual) — PIM2120 legal-and-professional-fees anchor.
+1 external authority hyperlink. The body uses inline statutory citations (RRA 2025 ss.1, 2, 6, 8, 9, 11, 49; HA 1988 ss.4B, 13(4A), 16A, 16B; LTA 1985 s.11; Tenant Fees Act 2019 ss.5A, 5B, Sch.2) throughout, which is appropriate for the statute-anchored topic.
 
 ### Internal links added (to our existing pages)
+- /blog/landlord-tax-essentials/periodic-tenancy-default-ast-conversion-mechanics (C3, once)
+- /blog/landlord-tax-essentials/renters-rights-act-rent-increase-section-13-tribunal-route (C4, once)
+- /blog/landlord-tax-essentials/pet-rights-tenancy-landlord-refusal-reasonable-grounds (C7, once)
+- /blog/landlord-tax-essentials/prs-database-landlord-ombudsman-registration-requirements (C6, once)
+- /blog/landlord-tax-essentials/section-21-abolition-uk-landlord-possession-guide-2026 (C2, once)
+- /blog/property-types-and-specialist-tax/hmo-licensing-fees-tax-deductible-uk-landlords (once, tax-treatment section)
+- /contact (2× CTA hooks)
 
 ### Inline CTA placements
+- Aside 1: after the 8-item "Clauses to Remove" walkthrough, at the moment a self-managing landlord realises the scale of the template update is portfolio-wide rather than per-property.
+- Aside 2: after the worked-example clauses, at the planning moment for the coordinated programme.
 
 ### Build attempts
+- 1st attempt: clean. 388 static pages.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 == 14 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 49 (≤62) ✓
+- Meta description length: 142 (≤158) ✓
+- Internal links resolve: 6 of 6 to existing files ✓ (no forward-links to not-yet-committed siblings; C10 referenced in body but not hyperlinked)
+- monitored_pages row inserted: id 149 ✓
+- Body word count: 3,216 (within the 2,500-3,500 band per §16.16)
 
 ### Flags raised to wave3_site_wide_flags.md
+- F-11 (existing): C8 reflects the F-11 corrected position in §"Clauses to Remove" item 6 (no pet damage insurance condition) and in FAQ "Can I include a 'pet damage insurance' condition". This is one of the four downstream impacts F-11 anticipated.
 
 ### 2-3 sentence summary
+Wrote C8 at 3,216 body words. Clause-by-clause audit of tenancy-agreement templates for the post-1-May-2026 regime. Walks 8 clause categories that must be removed (fixed-term, Section 21, contractual rent-review, in-tenancy advance-rent under HA 1988 s.4B, pre-tenancy advance-rent under TFA 2019 ss.5A/5B, pet bond + pet rent + pet damage insurance per F-11 correction, blanket no-pets, above-asking/bidding), 6 clause categories that should be added (periodic-tenancy under s.1, pet consent procedure under s.16A/16B, RRA Information Sheet acknowledgement under s.49, How to Rent guide acknowledgement, Section 13 rent-increase reference, PRS Database identifier placeholder), 11 clause categories that remain unchanged (deposit cap + protection, prohibited payments, LTA 1985 s.11 repair, gas / EICR / EPC / alarms, Right to Rent, subletting consent, quiet enjoyment, inspection access). 6-row tax-treatment deductibility table + 3 worked example clauses (rent payment, pet, end-of-tenancy). 14 FAQs, 2 asides, build clean. Carries the F-11 corrected pet position throughout.
