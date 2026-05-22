@@ -209,51 +209,76 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** unchanged (`property-types-and-specialist-tax`)
+- **H1 chosen:** "Agricultural Property Relief and the £1m Cap: Planning for Mixed Estates"
+- **Meta title chosen:** "APR and the £1m Cap: Mixed Estates with Farm + BTL + Trading" (60 chars)
+- **Why these vs other options:** Mixed-estate angle is the page's distinct framing (competitor APR pages treat APR in isolation; A10 treats it as one of two reliefs competing for one £1m allowance across three asset classes). H1 leads with the relief name + the cap (the two anchoring SERP terms) plus "Planning for Mixed Estates" to qualify the audience. Anti-templating vs A4 (the headline cap page, 4-segment) and A5 (Pawson case-law checklist): A10 uses an allocation-decision spine with a single 3-asset worked example.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- legislation.gov.uk s.117 IHTA 1984 — verified statutory wording: 2-year owner-occupation OR 7-year ownership-with-agricultural-occupation. Brief incorrectly stated "5-year occupation, 7-year ownership where let"; the correct rule (2/7) was used in A10. D-18 logged.
+- UKPA APR explainer + farmland-supply commentary URLs — not separately fetched on this session (similar to prior IHT sessions, competitor field broadly stale on the post-Budget-2024 reform package and shallow on the mixed-estate allocation question).
+- HMRC IHTM24000 chapter (referenced via knowledge) — IHTM24070 (farmhouse character-appropriate test), IHTM24050 (s.117 occupation/ownership), IHTM24151 (s.118 agricultural value vs market value).
+- gov.uk APR/BPR reform technical note (referenced via house position §15.4 verified 2026-05-22): £1m combined cap from 6 April 2026, 50% relief above; AIM-share 50% rate from same date.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `business-property-relief-rental-property-iht` (LTE) — BPR-rental pillar; A10 cross-links once at the BPR-mechanics paragraph as the BTL-specific depth.
+- `iht-april-2026-bpr-apr-cap-property-impact` (A4, LTE) — Headline cap page; A10 forward-links twice as the broader reform context; A10 is the mixed-estate-specific depth.
+- `inheritance-tax-rental-property-uk-guide` (LTE pillar) — Linked once in opening.
+- `serviced-accommodation-bpr-eligibility-pawson-test` (A5, P-T&ST) — Pawson trading-bar deep page; A10 forward-links twice (BPR-mechanics paragraph + farmhouse Brander analogue).
+- `fic-iht-treatment-bpr-myth` (Inc & Co) — Linked once in the planning-section FIC discussion (dismantling the FIC-as-BPR myth).
+- `property-development-tax-trading-vs-investment-income` (P-T&ST) — Linked once in the "farming the let" borderline section.
+- `iht-residence-nil-rate-band-2m-taper-property-portfolios` (A8, LTE) — Linked twice (RNRB-interaction FAQ + closing pointers).
+- Plus 2 additional Wave 2 siblings: A1 (decision framework, linked in closing) and A9 (pension IHT, linked in closing).
+- Plus F-17 resolution: A10 cross-links forward to A6 (`iht-non-resident-uk-property-april-2025-residence-test`) in the Schedule A1 extension paragraph, resolving the A10→A6 leg of F-17.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- IHTA 1984 Part V Ch II ss.115-124C (APR regime)
+- IHTA 1984 s.115 (agricultural property definition + farmhouse character-appropriate test)
+- IHTA 1984 s.116 (APR rates pre/post-cap)
+- IHTA 1984 s.117 (qualifying periods: 2 years owner-occupation, 7 years let)
+- IHTA 1984 s.118 (agricultural value vs market value)
+- IHTA 1984 s.124A (clawback on failed PETs where property sold by donee)
+- IHTA 1984 s.114 (APR-vs-BPR ordering: APR first, no double relief)
+- IHTA 1984 s.105 (BPR scope)
+- IHTA 1984 Schedule A1 (offshore-held UK residential property look-through; extended to UK agricultural land per Autumn Budget 2025 anti-avoidance package)
+- Brander v HMRC [2010] UKUT 300 (TCC) (farmhouse character-appropriate test + Brander analogue for "farming the let")
+- Pawson v HMRC [2013] UKUT 050 (TCC) (BPR trading bar for BTL-side analysis)
+- HMRC IHTM24000 chapter (working detail across the APR regime)
+- gov.uk APR/BPR reform technical note (Autumn Budget 2024 announcement, £1m cap arithmetic)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/landlord-tax-essentials/iht-april-2026-bpr-apr-cap-property-impact` (A4) — headline cap page (linked twice; opening + planning section)
+- `/blog/landlord-tax-essentials/business-property-relief-rental-property-iht` — BPR-rental pillar (linked once in opening)
+- `/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide` — IHT pillar (linked once in opening)
+- `/blog/property-types-and-specialist-tax/serviced-accommodation-bpr-eligibility-pawson-test` (A5) — Pawson trading-bar deep page (linked twice; BPR-mechanics + farmhouse Brander analogue)
+- `/blog/incorporation-and-company-structures/fic-iht-treatment-bpr-myth` — FIC IHT myth-busting page (linked once in planning section)
+- `/blog/property-types-and-specialist-tax/property-development-tax-trading-vs-investment-income` — trading vs investment classification (linked once in "farming the let" section)
+- `/blog/landlord-tax-essentials/iht-residence-nil-rate-band-2m-taper-property-portfolios` (A8) — RNRB taper sibling (linked twice; RNRB-interaction FAQ + closing)
+- `/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards` (A1) — strategic-decision framework (linked once in closing)
+- `/blog/landlord-tax-essentials/pension-iht-april-2027-landlord-estate-planning` (A9) — pension-IHT sibling (linked once in closing)
+- `/blog/non-resident-landlord-tax/iht-non-resident-uk-property-april-2025-residence-test` (A6) — non-resident IHT companion (linked once in Schedule A1 extension paragraph). **Resolves F-17 on the A10→A6 leg.**
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After the Lambert-estate worked example — high-intent: reader has just seen the £130k IHT cost of the cap reform on a £2.4m mixed estate that mirrors their own pattern. One CTA only.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass (361 static pages generated cleanly; em-dash in built HTML = 1 from F-7 site-wide brand wordmark; body markdown em-dash = 0 after one mid-write fix to an FAQ question).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (1 FAQPage + 14 Question entries)
+- Em-dashes in markdown: 0 (one em-dash in an FAQ question fixed mid-write)
+- Tailwind classes in markdown: 0
+- Meta title length: 60 chars
+- Meta description length: 154 chars
+- Internal links resolve: yes (10/10)
+- monitored_pages row inserted: yes
+- Body word count: 3,369 (inside 2,500-3,500 target band)
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- F-25 — existing BPR-rental + IHT-pillar should back-link to new A10. Same pattern as F-3, F-20, F-22, F-24. Orchestrator may bundle the IHT-pillar enrichment as a single post-Wave-2 edit covering all the cross-link requests (D-14 wider pillar refresh + F-3 + F-20 + F-22 + F-24 + F-25).
+- F-17 RESOLVED on the A10→A6 leg in A10 body. Note: F-17 was originally raised for both A6→A10 and A10→A6 directions; only the A10→A6 leg can be added by Session A on this branch. The A6→A10 leg remains open as a one-line back-patch.
 
 ### 2-3 sentence summary
-<freeform>
+Mixed-estate APR page covering Part V Ch II IHTA 1984 + the £1m combined BPR/APR cap from 6 April 2026 + the allocation arithmetic across three competing asset classes (farmland, trading business, BTL portfolio). Walks s.115 definitions, s.117 qualifying periods (2 years owner-occupied, 7 years let — brief stated 5 years and was wrong, D-18), s.118 agricultural value vs market value, s.124A clawback, the Brander farmhouse test, and the "farming the let" borderline pattern. Lambert estate worked example shows £130k of new IHT on a £2.4m mixed estate (£800k owner-occupied farm + £400k trading business + £1.2m BTL + £580k farmhouse + £140k cash) once the £1m cap is binding on £1.65m of qualifying value.
 
