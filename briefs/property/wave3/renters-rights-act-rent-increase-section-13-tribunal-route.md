@@ -174,34 +174,64 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** renters-rights-act-rent-increase-section-13-tribunal-route (no override)
+- **Final category:** landlord-tax-essentials (no override)
+- **H1 chosen:** "Rent Increases After 1 May 2026: Section 13, Tribunal Challenge and the No-Overshoot Rule"
+- **Meta title chosen:** "Section 13 Rent Increase + Tribunal Challenge: 2026 Guide" (57 chars)
+- **Why these vs other options:** Lead the H1 with the date anchor + the three named mechanics (Section 13, tribunal, no-overshoot rule), each of which is a high-intent search component. Meta title compresses to the two highest-volume queries (Section 13, tribunal challenge) + the year.
 
 ### Competitor URLs fetched
+- https://www.ukpropertyaccountants.co.uk/new-rent-increase-rules-under-the-renters-rights-act/ (WebFetch attempted; only title returned, body truncated). Treated as a topic-anchor signal and not as content guidance.
+- https://www.legislation.gov.uk/ukpga/1988/50/section/13 (WebFetch) — confirmed once-per-12-months + 2-month notice + contractual rent-review clauses unenforceable.
+- https://www.legislation.gov.uk/ukpga/2025/26/section/7 (WebFetch) — confirmed the no-overshoot rule and the separate 6-month initial-rent challenge available to assured tenants (excluding low-cost / social housing) within 6 months of tenancy start.
+- https://www.legislation.gov.uk/uksi/2026/421/made (relied on earlier C1/C2/C3 research) — confirmed 1 May 2026 commencement.
 
 ### Existing-page review (from "Closest existing pages")
+- C3 `periodic-tenancy-default-ast-conversion-mechanics` (this session, written earlier) — forward-link at the intro framing.
+- C2 `section-21-abolition-uk-landlord-possession-guide-2026` (this session) — forward-link at the intro framing for Ground 8 arrears as the enforcement route.
+- C1 `rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence` (this session) — forward-link at the intro framing for marketing-compliance breaches.
+- `section-24-case-study-100k-rental-income-portfolio` — forward-linked in the S24 cash-flow section.
+- `landlord-tax-changes-2026-complete-guide` — forward-linked at closing as a pillar.
+- `renters-rights-act-2026-tax-implications-landlords` — forward-linked at closing for the deeper S24 interaction discussion. F-1 legacy-rebuild candidate.
+- `first-time-landlord-tax-guide-everything-you-need-to-know` — forward-linked at closing as the operating framework pillar.
 
 ### Citations added (external authority)
+- Renters' Rights Act 2025 (2025 c. 26) s.6 (statutory procedure for rent increases), s.7 (challenging amount or increase + 6-month initial-rent challenge + no-overshoot rule).
+- Housing Act 1988 s.13 (as amended) — once-per-12-months, 2-month notice, prescribed form requirement, contractual rent-review unenforceability.
+- Housing Act 1988 s.14 (tribunal determination route).
+- SI 2026/421 (commencement 1 May 2026).
+- ITTOIA 2005 s.274A (S24 mortgage interest tax-credit framework).
+- Assured Tenancies and Agricultural Occupancies (Forms) (England) Regulations as amended (Form 4 prescribed form).
 
 ### Internal links added (to our existing pages)
+- /blog/landlord-tax-essentials/periodic-tenancy-default-ast-conversion-mechanics (intro)
+- /blog/landlord-tax-essentials/section-21-abolition-uk-landlord-possession-guide-2026 (intro)
+- /blog/landlord-tax-essentials/rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence (intro)
+- /blog/section-24-and-tax-relief/section-24-case-study-100k-rental-income-portfolio (S24 section)
+- /blog/landlord-tax-essentials/landlord-tax-changes-2026-complete-guide (closing)
+- /blog/landlord-tax-essentials/renters-rights-act-2026-tax-implications-landlords (closing)
+- /blog/landlord-tax-essentials/first-time-landlord-tax-guide-everything-you-need-to-know (closing)
+- Forward-mention only (no hyperlink) to C10 marketing-compliance page (still pending). Captured under F-7.
 
 ### Inline CTA placements
+- Aside 1: after the tribunal challenge / no-overshoot section, at the moment a landlord realises the figure-defence work belongs at notice stage not at challenge stage.
+- Aside 2: after the S24 cash-flow worked example, at the moment a portfolio landlord realises the post-refinance / post-S13-cap model needs running.
 
 ### Build attempts
+- 1st attempt: clean. 385 static pages.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 == 14 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 57 (≤62) ✓
+- Meta description length: 157 (≤158) ✓
+- Internal links resolve: 7 of 7 ✓
+- monitored_pages row inserted: id 132 ✓
+- Body word count: 2,569 (within the 2,500-3,500 target band)
 
 ### Flags raised to wave3_site_wide_flags.md
+- None new; F-7 extends to cover the C4 forward-mention of C10.
 
 ### 2-3 sentence summary
+Wrote C4 at 2,569 body words. Procedural mechanics page on the post-1-May-2026 S13 rent-increase route. Walks the prescribed-form notice content, the once-per-12-months + 2-month-notice rules, contractual rent-review unenforceability, the FTT challenge route under amended s.14, the no-overshoot protective rule in RRA 2025 s.7 that materially changed tenant incentives to challenge, the separate s.7 6-month initial-rent challenge, the comparable-market evidence framework, and a worked S24 cash-flow interaction showing how the once-per-year rent cap combined with the basic-rate-credit-only mortgage interest treatment can tighten after-tax cash flow on a refinance event. 14 FAQs, 2 asides, build clean.
