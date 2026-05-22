@@ -169,34 +169,68 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** mtd-itsa-vs-limited-company-cohort-different-rules (as briefed; no override)
+- **Final category:** making-tax-digital-mtd (as briefed; deliberate to keep this in the MTD bucket lattice rather than the incorporation cluster, since the primary readership intent is "do I escape MTD by incorporating?" rather than "should I incorporate generally?". The wider incorporation question is owned by the incorporation pillar pages, which this page cross-links.)
+- **H1 chosen:** "MTD ITSA vs Limited Company Landlords: Two Cohorts, Two Compliance Regimes" (signals the comparison + names the two regimes + uses 'cohort' as the framing word from the brief, distinguishing from a generic "MTD vs CT600" framing)
+- **Meta title chosen:** "MTD ITSA vs Limited Company: Cohort Comparison Explained" (56 chars)
+- **Why these vs other options:** Word count 1,990 sits well below the typical 2,500-3,500 range. Justification: the framing differentiator is a comparison-cohort page anchored on (a) drawing the cohort line cleanly between sole-trader landlord and Ltd Co landlord and (b) the "should I incorporate to escape MTD?" decision-tree answer. The substantive mechanic (Ltd Cos structurally outside MTD ITSA, MTD VAT exception, future MTD CT) is short, and the decision-tree answer is essentially "no, the maths don't support it except in a narrow combination" — which is a definitive answer that does not benefit from padding. The 14 FAQs are deliberately rich (averaging 80-130 words each, far above the typical 40-60), adding ~1,500 effective reader-words on top of the body. Total page surface is comfortably within the 2,500-3,500 effective range when FAQs are counted; §16.16 reference-page floor allowance applies. Padding the body to hit 3,000 would dilute the cohort-line clarity that is the page's value proposition.
 
 ### Competitor URLs fetched
+- https://www.ukpropertyaccountants.co.uk/how-making-tax-digital-affects-limited-companies/ , attempted; same pattern as B4 (the site returned only the "Related: Top 4 Things Landlords Must Do To Get On Top of the Renters Rights Act" promo block, no extractable article body). Likely JS-rendered or paywall-gated. Aligned with brief's stage-2 summary by relying on house position §3 + §19.3 directly.
+- gov.uk MTD ITSA collection (https://www.gov.uk/government/collections/making-tax-digital-for-income-tax), alive 200, confirms Ltd Cos are excluded from MTD ITSA.
+- gov.uk MTD for VAT eligibility check (https://www.gov.uk/guidance/check-if-you-must-follow-making-tax-digital-rules-for-vat), confirms MTD VAT applies to all VAT-registered businesses since April 2022.
+- gov.uk MTD for Corporation Tax publication (https://www.gov.uk/government/publications/making-tax-digital-for-corporation-tax), confirms MTD CT is a future cycle with no confirmed start date as of mid-2026.
 
 ### Existing-page review (from "Closest existing pages")
+- `limited-company-vs-personal-ownership-tax-comparison-2026` , confirmed exists; the broader cohort-decision framework. Cross-linked outbound. This page narrows to the MTD-specific cohort wrinkle and stays out of the tax-rate comparison territory (which is the existing page's value). Treated as the broader pillar; my page is the applied MTD angle. No CANNIBAL flag.
+- `should-i-incorporate-buy-to-let-portfolio-2026` , confirmed exists; the incorporation decision page. Cross-linked outbound for the wider decision-tree.
+- `buy-to-let-limited-company-complete-guide-uk` , confirmed exists; the Ltd Co pillar. Cross-linked outbound for the structural detail.
+- `corporation-tax-rates-property-companies-2026-27` , confirmed exists; cross-linked outbound for the "what Ltd Cos pay instead" reference.
+- `landlord-incorporation-step-by-step-guide-uk` , confirmed exists; not cross-linked because my page does not reach the "I am moving to a Ltd Co partly to escape MTD" full procedural branch (the brief flagged this as conditional). Left out to keep cross-link density disciplined.
+- Wave 3 sibling B8 pillar `mtd-itsa-overview-six-changes-residential-landlords` , confirmed shipped (053af20); cross-linked.
+- Wave 3 sibling B1 `mtd-itsa-qualifying-income-test-gross-vs-net` , confirmed shipped (70a303e); cross-linked for the qualifying-income mechanic (which the page references when explaining that Ltd Co income does not count in the personal threshold).
+- Wave 3 sibling B4 `mtd-itsa-exit-rule-income-drops-three-year-test` , confirmed shipped this session (9d52572); cross-linked for the "if I move most of the portfolio into a Ltd Co, the personal MTD obligation continues on the residual" link.
 
 ### Citations added (external authority)
+- FA 2017 Sch A1 (named in body and FAQs for the structural exclusion of Ltd Cos from MTD ITSA).
+- TCGA 1992 s.162 (incorporation relief, named in the decision-tree section).
+- FA 2021 Sch 24 (named for the points-based late-submission regime).
+- gov.uk Spring Statement 2025 publication (referenced for the 15/30/31 + 3%/3%/10% MTD ITSA late-payment regime, contrasted with the 5%/5%/5% CT600 surcharge schedule).
+- CTM93000 series (named loosely for the CT600 late-filing penalty regime).
+- gov.uk MTD for VAT guidance (named for the April 2022 / April 2019 timeline).
+- gov.uk MTD for Corporation Tax publication (named for the "future cycle, no confirmed date" anchor).
 
 ### Internal links added (to our existing pages)
+1. /blog/incorporation-and-company-structures/limited-company-vs-personal-ownership-tax-comparison-2026 (cohort-decision framework)
+2. /blog/incorporation-and-company-structures/should-i-incorporate-buy-to-let-portfolio-2026 (incorporation decision page)
+3. /blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk (Ltd Co pillar)
+4. /blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27 (CT side)
+5. /blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords (B8 bucket pillar)
+6. /blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net (B1 mechanic)
+7. /blog/making-tax-digital-mtd/mtd-itsa-exit-rule-income-drops-three-year-test (B4 exit mechanic, this session)
+
+All seven resolve. Heavy cross-link density toward the incorporation cluster (4 of 7) is deliberate; this is the bridging page between the MTD bucket and the incorporation cluster.
 
 ### Inline CTA placements
+- Aside 1: after the "What is materially different" H2, at the moment the reader has the 5-dimension comparison in front of them and is forming the "should I incorporate?" question. Conversion moment for "model the full trade-off rather than treating MTD as the headline".
+- Aside 2: after the "Should I incorporate to escape MTD?" decision-tree H2 with the worked CGT + SDLT + S162 maths. Conversion moment at the end of the decision-framework section, before the wider-context "Where this page sits" section.
+- 2 asides total. No opening aside, no aside inside a worked example. Disciplined per the brief.
 
 ### Build attempts
+- Build 1: clean. 0 errors, 0 warnings related to this page.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14/14
+- Em-dashes in markdown: 0 (also 0 en-dashes)
+- Tailwind classes in markdown: 0
+- Meta title length: 56 chars (limit 62)
+- Meta description length: 156 chars (limit 158)
+- Internal links resolve: 7/7
+- monitored_pages row inserted: yes (id 141, rewrite_type='rewrite' per the table's CHECK constraint, notes flag NETNEW Wave 3 Session B B5)
+- Body word count: 1,990 (intentionally below the 2,500 typical floor per §16.16 reference-page exception; comparison-cohort page where the substantive mechanic is short and the decision-tree answer is definitive. Reasoning in Decisions block above.)
 
 ### Flags raised to wave3_site_wide_flags.md
+- No new flag. The page does not introduce a new house-position conflict, cannibalisation issue, internal-link gap, or build blocker that isn't already tracked. The existing `limited-company-vs-personal-ownership-tax-comparison-2026` page does not yet have an MTD column in its comparison table, but that is a back-patch opportunity (could be raised as INTERNAL_LINK for the post-merge queue, deferred to keep mid-wave flag-noise low).
 
 ### 2-3 sentence summary
+B5 ships the cohort-comparison bridging page between the MTD bucket and the incorporation cluster: side-by-side table on 7 dimensions, 5-point "what is materially different" breakdown, director-with-personal-property trap (Ltd Co rents are invisible to the personal MTD test, but personal property is not), worked decision-tree showing that CGT + SDLT + S162 costs of incorporating dwarf the lifetime cost of MTD compliance in most cases, and the MTD-touching-Ltd-Co exceptions via MTD VAT + future MTD CT. 1,990 body words (intentional reference-page floor per §16.16) with 14 rich FAQs adding ~1,500 effective reader-words; 7 internal cross-links (4 incorporation cluster + 3 MTD bucket). No new flags; the existing cohort-comparison page could optionally be back-patched with an MTD column post-merge.
