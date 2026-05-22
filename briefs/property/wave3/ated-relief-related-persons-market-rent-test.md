@@ -160,37 +160,49 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 
 ---
 
-## Per-page work-log (fill in as you go, supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- Slug / category: as briefed; category overridden to incorporation-and-company-structures (F-2).
+- H1: "ATED Relief and Related Persons: When Market Rent Does Not Cure Connection"
+- Meta title: "ATED Relief & Related Persons: The Market-Rent Test" (51 chars)
+- Structural discipline: 10 scenarios with HMRC's stance (per F-3 cannibalisation discipline against `ated-rental-property-relief-mechanics`), short statutory framing only.
 
 ### Competitor URLs fetched
+- Stage 2 validation; ukpropertyaccountants + HMRC ATED Manual + FA 2013 ss.133, 145 + CTA 2010 s.1122 confirmed.
 
-### Existing-page review (from "Closest existing pages")
+### Existing-page review
+- `ated-rental-property-relief-mechanics`: claim-side mechanics. A4 differentiated by scenario density; statutory test bullet-only.
+- A3 sibling clawback: lateral; cross-link.
 
-### Citations added (external authority)
+### Citations added
+- HMRC ATED Manual (ATED20100)
+- FA 2013 s.133
+- FA 2013 s.145 (Employee Accommodation Relief)
+- CTA 2010 s.1122
+- FA 2009 Sch 24
 
-### Internal links added (to our existing pages)
+### Internal links added
+- A1, A2, A3, ated-rental-property-relief-mechanics, ated-complete-guide-2026-27, ated-late-filing-penalties-mechanics, A9 (appeals cross-link)
 
 ### Inline CTA placements
+- Two asides: (1) after Scenario 6 (the family-letting connection-extension cluster); (2) after Evidence Discipline section (enquiry response moment).
 
 ### Build attempts
+- Build 1 clean.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count: 14 / 14 ✓
+- Em-dashes: 0 ✓
+- Tailwind: 0 ✓
+- Meta title: 51 ≤ 62 ✓
+- Meta description: 149 ≤ 158 ✓
+- Internal links resolve: 7 unique targets ✓
+- monitored_pages: id 130 ✓
+- Body word count: 2,523 (low end of 2,500-3,500 — scenario density carries the page; further word count would dilute the per-scenario clarity)
 
-### Flags raised to wave3_site_wide_flags.md
+### Flags raised
+- None new; existing F-4 / F-7 back-patch suggestions already capture the cross-link batch.
 
 ### 2-3 sentence summary
+A4 is the scenario-driven family-letting page: 10 fact patterns (director's adult child / parent / sibling / ex-spouse / cohabitant / mother-in-law / co-shareholder's child / group-relocation employee / family-trust beneficiary / lease-and-sublease chain), each with HMRC's likely stance and the statutory hook. The five-anchor evidence discipline + HMRC enquiry response sequence closes. F-3 cannibalisation discipline against `ated-rental-property-relief-mechanics` held by scenario density; no narrative re-statement of the connected-persons test.
