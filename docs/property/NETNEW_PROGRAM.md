@@ -79,7 +79,7 @@ All sites are lead-gen handoffs to a partner firm. Don't conflate with the Prope
 
 ## 3. Where we are right now (this section updates every wave)
 
-**Last updated:** 2026-05-22 end of Wave 3 prep Stage 1 (post-C1-swap).
+**Last updated:** 2026-05-22 end of Wave 3 prep Stage 2 (launch-ready).
 
 **`main` is at the Wave 3 prep Stage 1 head.** 61 net-new pages from Wave 1 (31) + Wave 2 (30) sit on `main`, plus Wave 3 prep scaffold landed at commit `730add8` (house position §§18-20 + 30 brief skeletons + worktrees + START_HERE docs) and a follow-up Stage 1 review commit (C1 swap + program doc update + F-1 site-wide flag).
 
@@ -97,11 +97,19 @@ All sites are lead-gen handoffs to a partner firm. Don't conflate with the Prope
 - Fresh worktrees stood up at `Accounting-wt-property-wave3-{a,b,c}/` from main; `.env` + `optimisation_engine/competitor/_db.py` copied into each.
 - START_HERE docs at `docs/sessions/property/WAVE3_SESSION_{A,B,C}_START_HERE.md`, baking in §16.14 (tracker-flip-on-context-pressure), §16.15 (no branch tracker commits), §16.16 (framing-differentiator-led word count), §16.17 (atomic recovery) and the session-side watcher pattern (§8.4).
 
-**Wave 3 prep state (Stage 2 pending):** three parallel Opus 4.7 sub-agents (one per bucket) will:
-1. Read all 346 existing Property posts (titles + slugs + intro) and reason about the 3-7 closest-existing pages per brief — no token-similarity scripts.
-2. Validate / extend each brief's competitor URL set (manager pre-filled one URL per brief; Stage 2 verifies it's alive, reads it, and adds 2-4 more per brief).
-3. Re-verify §19.7 MTD ITSA late-payment rate (3%/3%/10%) against a definitive gov.uk source.
-4. Each agent finishes briefs atomically per §16.17 to survive rate limits.
+**Wave 3 prep state (Stage 2 complete, commit `652e81d`):** three parallel Opus 4.7 sub-agents (one per bucket) returned full reasoning fills for all 30 briefs.
+- ATED bucket: §18.1 band figures verified against gov.uk (no discrepancy, locked). F-2 (category override recommendation), F-3 (cannibalisation watchpoints A2 / A4 / A10), F-4 (six back-link suggestions from existing ATED pages to new Wave 3 pages for post-merge batch), F-5 (verification passed).
+- MTD ITSA bucket: §19.7 day-triggers CORRECTED 31/46/91 → **15/30/31** (Spring Statement 2025 reform accelerated both percentages AND day-thresholds; the earlier locked position stitched the new percentages onto the legacy day-triggers). §19.7 and §3 corrected with `Correction logged 2026-05-22` stamps; F-6 broadcasts to MTD sessions. B3 surfaced AUTHORITY_GAP (no Form 17 dedicated page on-site, slate for future wave). B10 surfaced REDIRECT recommendation (re-point legacy `mtd-10000-threshold-when-does-it-apply` to B10 on launch).
+- RRA 2025 bucket: new **§20.12 Commencement timeline** added to house_positions, tabulating 15 RRA provisions by in-force / scheduled status against the two operative SIs (SI 2025/1354 27 Dec 2025 and SI 2026/421 1 May 2026). Sessions writing C-bucket pages now have explicit tense-discipline guidance: present tense for 1 May 2026 provisions; "scheduled, pending further commencement order" for the still-pending Landlord Redress Scheme, PRS Database, and full Decent Homes PRS extension. Original §20.12 (Do not write) renumbered to §20.13. C6 manager-pre-filled URL was wrong (duplicated C9's); agent properly replaced. C4 + C8 hosts return 403 to bot fetches (sessions must use full browser headers OR Claude WebFetch, not raw httpx). No new CANNIBAL flags raised.
+
+**Launch-ready (Stage 2 close):**
+- 30 briefs at `briefs/property/wave3/` are fully reasoned (validated competitor URLs, reasoned closest-existing pages, redirect-overlap checks).
+- `docs/property/wave3_page_tracker.md` rows all at ⬜ todo.
+- `docs/property/wave3_site_wide_flags.md` carries F-1 through F-6 pre-launch (parks legacy-rebuild item, broadcasts §19.7 correction).
+- `docs/property/wave3_questions_session_{A,B,C}.md` empty, ready for sessions to append.
+- `docs/sessions/property/WAVE3_SESSION_{A,B,C}_START_HERE.md` complete with Wave 2 lessons baked in.
+- `docs/sessions/property/WAVE3_LAUNCH_PROMPTS.md` contains the three paste-verbatim launch prompts for the user to fire fresh Opus sessions in the three worktrees.
+- Manager-side watcher pattern (§8.3) ready to arm via the Monitor tool against the three Q&A files; arm at session-launch time.
 
 **Wave 1 + Wave 2 are NOT deployed.** User holds deploy pending review.
 
