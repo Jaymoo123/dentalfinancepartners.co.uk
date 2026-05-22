@@ -1,0 +1,45 @@
+# Wave 3 page tracker
+
+Wave 3 is 30 net-new pages across 3 sessions. Sessions claim ONE page at a time. Tracker is the single source of truth for "where are we" across the wave. **Tracker edits go to this file in the main repo via absolute paths only**, never as a branch commit (Wave 2 section 16.15 lesson).
+
+Status legend: ⬜ todo | 🟡 in_progress | ✅ done | ❌ blocked
+
+| # | Session | Bucket | Slug | Framing 1-liner | Brief path | Branch | Commit | Status | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| A1 | A | ATED | ated-overview-companies-holding-uk-residential-property-2026-27 | Strategic ATED overview for the company-holding-residential cohort; chargeable-persons positioning + 2026/27 transition | briefs/property/wave3/ated-overview-companies-holding-uk-residential-property-2026-27.md | property-wave3-a | | ⬜ todo | |
+| A2 | A | ATED | ated-rates-2026-27-bands-table-worked-examples | Rates & bands quick-reference anchored on verified 2025/26 + 2026/27 figures (section 18.1) | briefs/property/wave3/ated-rates-2026-27-bands-table-worked-examples.md | property-wave3-a | | ⬜ todo | |
+| A3 | A | ATED | ated-relief-clawback-occupation-non-qualifying-individual | Clawback mechanics page (s.133 FA 2013 relief lost after non-qualifying occupation) | briefs/property/wave3/ated-relief-clawback-occupation-non-qualifying-individual.md | property-wave3-a | | ⬜ todo | |
+| A4 | A | ATED | ated-relief-related-persons-market-rent-test | s.133 commercial-terms test in related-person tenancy contexts | briefs/property/wave3/ated-relief-related-persons-market-rent-test.md | property-wave3-a | | ⬜ todo | |
+| A5 | A | ATED | ated-return-amendment-corrections-procedure | Amendment process for filed ATED returns + interaction with FA 2009 Sch 55 | briefs/property/wave3/ated-return-amendment-corrections-procedure.md | property-wave3-a | | ⬜ todo | |
+| A6 | A | ATED | ated-mixed-use-property-apportionment-treatment | Mixed-use apportionment (flat-over-shop, serviced-accom edge case) | briefs/property/wave3/ated-mixed-use-property-apportionment-treatment.md | property-wave3-a | | ⬜ todo | |
+| A7 | A | ATED | ated-valuation-date-rules-2027-revaluation | 1 April 2027 five-yearly revaluation page + PRBC + acquisition-date interim rule | briefs/property/wave3/ated-valuation-date-rules-2027-revaluation.md | property-wave3-a | | ⬜ todo | |
+| A8 | A | ATED | ated-overseas-companies-voluntary-compliance-otm-letters | Compliance + voluntary disclosure for overseas-co cohort + HMRC OTM campaign signal | briefs/property/wave3/ated-overseas-companies-voluntary-compliance-otm-letters.md | property-wave3-a | | ⬜ todo | |
+| A9 | A | ATED | ated-late-filing-penalty-appeal-reasonable-excuse | FA 2009 Sch 55 reasonable-excuse appeals at FTT for ATED penalties | briefs/property/wave3/ated-late-filing-penalty-appeal-reasonable-excuse.md | property-wave3-a | | ⬜ todo | |
+| A10 | A | ATED | ated-six-step-compliance-walkthrough-uk-non-natural-persons | Six-step process walkthrough for first-time ATED filer; HowTo schema candidate | briefs/property/wave3/ated-six-step-compliance-walkthrough-uk-non-natural-persons.md | property-wave3-a | | ⬜ todo | |
+| B1 | B | MTD ITSA | mtd-itsa-qualifying-income-test-gross-vs-net | Gross-vs-net qualifying-income mechanic (section 19.2) | briefs/property/wave3/mtd-itsa-qualifying-income-test-gross-vs-net.md | property-wave3-b | | ⬜ todo | |
+| B2 | B | MTD ITSA | mtd-itsa-accidental-landlords-do-i-need-to-file-digitally | Persona-driven accidental landlord page (inherited / moved-abroad / relationship-breakdown single-let) | briefs/property/wave3/mtd-itsa-accidental-landlords-do-i-need-to-file-digitally.md | property-wave3-b | | ⬜ todo | |
+| B3 | B | MTD ITSA | mtd-itsa-jointly-owned-property-threshold-split | Joint-ownership threshold-split mechanic (section 19.4) + Form 17 interaction | briefs/property/wave3/mtd-itsa-jointly-owned-property-threshold-split.md | property-wave3-b | | ⬜ todo | |
+| B4 | B | MTD ITSA | mtd-itsa-exit-rule-income-drops-three-year-test | Exit mechanic (3-year sub-threshold test, section 19.5) | briefs/property/wave3/mtd-itsa-exit-rule-income-drops-three-year-test.md | property-wave3-b | | ⬜ todo | |
+| B5 | B | MTD ITSA | mtd-itsa-vs-limited-company-cohort-different-rules | MTD ITSA vs Ltd Co cohort comparison; bridges MTD bucket and incorporation cluster | briefs/property/wave3/mtd-itsa-vs-limited-company-cohort-different-rules.md | property-wave3-b | | ⬜ todo | |
+| B6 | B | MTD ITSA | mtd-itsa-letter-from-hmrc-what-to-do-next | Action page for landlords receiving the HMRC pre-mandate outreach letter | briefs/property/wave3/mtd-itsa-letter-from-hmrc-what-to-do-next.md | property-wave3-b | | ⬜ todo | |
+| B7 | B | MTD ITSA | mtd-itsa-comparison-current-self-assessment-vs-mtd-cycle | Side-by-side SA-annual vs MTD-quarterly+EoPS+final declaration comparison | briefs/property/wave3/mtd-itsa-comparison-current-self-assessment-vs-mtd-cycle.md | property-wave3-b | | ⬜ todo | |
+| B8 | B | MTD ITSA | mtd-itsa-overview-six-changes-residential-landlords | Bucket pillar: six headline changes for residential landlords; CANNIBAL-WATCH vs existing quarterly-reporting guide | briefs/property/wave3/mtd-itsa-overview-six-changes-residential-landlords.md | property-wave3-b | | ⬜ todo | |
+| B9 | B | MTD ITSA | mtd-itsa-pilot-trial-volunteer-2025-26-experience | Voluntary opt-in 2025/26 pilot cohort experience | briefs/property/wave3/mtd-itsa-pilot-trial-volunteer-2025-26-experience.md | property-wave3-b | | ⬜ todo | |
+| B10 | B | MTD ITSA | mtd-itsa-major-tax-reform-context-policy-history | Policy history page; CANNIBAL-WATCH vs existing registration guide (partial-overlap candidate 0.38) | briefs/property/wave3/mtd-itsa-major-tax-reform-context-policy-history.md | property-wave3-b | | ⬜ todo | |
+| C1 | C | RRA 2025 | renters-rights-act-2025-tax-implications-comprehensive-update | Post-Royal-Assent canonical pillar; CANNIBAL-RESOLVE vs existing `renters-rights-act-2026-tax-implications-landlords` | briefs/property/wave3/renters-rights-act-2025-tax-implications-comprehensive-update.md | property-wave3-c | | ⬜ todo | |
+| C2 | C | RRA 2025 | section-21-abolition-uk-landlord-possession-guide-2026 | Operational possession process post-Section 21 abolition + reformed Section 8 grounds | briefs/property/wave3/section-21-abolition-uk-landlord-possession-guide-2026.md | property-wave3-c | | ⬜ todo | |
+| C3 | C | RRA 2025 | periodic-tenancy-default-ast-conversion-mechanics | Periodic-from-grant default mechanic + AST conversion transitional pattern | briefs/property/wave3/periodic-tenancy-default-ast-conversion-mechanics.md | property-wave3-c | | ⬜ todo | |
+| C4 | C | RRA 2025 | renters-rights-act-rent-increase-section-13-tribunal-route | Section 13 rent-increase mechanic + FTT tribunal challenge route | briefs/property/wave3/renters-rights-act-rent-increase-section-13-tribunal-route.md | property-wave3-c | | ⬜ todo | |
+| C5 | C | RRA 2025 | decent-homes-standard-prs-landlord-compliance-checklist | Decent Homes Standard extension to PRS + compliance checklist (HHSRS, repair, facilities, thermal) | briefs/property/wave3/decent-homes-standard-prs-landlord-compliance-checklist.md | property-wave3-c | | ⬜ todo | |
+| C6 | C | RRA 2025 | prs-database-landlord-ombudsman-registration-requirements | PRS Database + PRS Ombudsman registration mechanics + civil penalty regime | briefs/property/wave3/prs-database-landlord-ombudsman-registration-requirements.md | property-wave3-c | | ⬜ todo | |
+| C7 | C | RRA 2025 | pet-rights-tenancy-landlord-refusal-reasonable-grounds | Pet rights statutory request + reasonable-refusal test + pet damage insurance | briefs/property/wave3/pet-rights-tenancy-landlord-refusal-reasonable-grounds.md | property-wave3-c | | ⬜ todo | |
+| C8 | C | RRA 2025 | tenancy-agreement-template-rra-2025-compliant-clauses | Clause-level post-RRA-2025 tenancy agreement (what is unenforceable, what to add) | briefs/property/wave3/tenancy-agreement-template-rra-2025-compliant-clauses.md | property-wave3-c | | ⬜ todo | |
+| C9 | C | RRA 2025 | landlords-considering-selling-portfolio-rra-2025-tax-implications | Firm commercial angle; portfolio-disposal CGT + S24 + RRA-trigger | briefs/property/wave3/landlords-considering-selling-portfolio-rra-2025-tax-implications.md | property-wave3-c | | ⬜ todo | |
+| C10 | C | RRA 2025 | bidding-wars-asking-rent-cap-landlord-marketing-compliance | Pre-tenancy marketing compliance (no above-asking offers; advance-rent prohibition) | briefs/property/wave3/bidding-wars-asking-rent-cap-landlord-marketing-compliance.md | property-wave3-c | | ⬜ todo | |
+
+## Summary
+
+- Total: 30 pages (10 ATED, 10 MTD ITSA, 10 RRA 2025).
+- Started: 2026-05-22 (Stage 1 prep).
+- Sessions launch after Stage 2 brief completion.
+- Cannibalisation flags surfaced at Stage 1: B8 vs `mtd-quarterly-reporting-landlords-step-by-step-guide`, B10 vs `how-to-register-mtd-landlord-step-by-step-guide`, C1 vs `renters-rights-act-2026-tax-implications-landlords`.

@@ -501,3 +501,280 @@ Affects expat landlords because the previous "remit only what you need" strategy
 ---
 
 **End Wave 2 extension.** Sessions A (IHT), B (DTAs), C (Expat) — use §§9-10 + §§15-17 together. §§15-17 are the working detail; §§9-10 remain the headline tie-breakers. Any contradiction between competitor sources and §§15-17 → flag in `wave2_site_wide_flags.md`.
+
+---
+
+## 18. ATED — Wave 3 extension (locked, 2026-05-22)
+
+Extends §2 with the working detail Wave 3 Session A needs. §2 remains authoritative for the headline rate table; §18 adds mechanics, reliefs, valuation, returns, and interactions. **Verified against gov.uk on 2026-05-22** for the 2025/26 and 2026/27 band figures, the 30 April return deadline, and the five-yearly valuation rule.
+
+### 18.1 Bands 2025/26 and 2026/27
+
+| Property value | 2025/26 annual charge | 2026/27 annual charge |
+|---|---|---|
+| £500,001 to £1m | £4,450 | £4,600 |
+| £1m to £2m | £9,150 | £9,450 |
+| £2m to £5m | £31,050 | £32,200 |
+| £5m to £10m | £72,700 | £75,450 |
+| £10m to £20m | £145,950 | £151,450 |
+| Over £20m | £292,350 | £303,450 |
+
+Indexation by CPI for the year ended September; HMRC publishes the next-year table each November. The 2026/27 figures above are the gov.uk-published amounts (verified 2026-05-22) and supersede any older estimate in earlier drafts of §2.
+
+### 18.2 Chargeable persons
+
+ATED applies to **non-natural persons** holding a UK dwelling worth more than £500,000:
+- UK companies.
+- Non-UK companies.
+- Partnerships with at least one corporate member.
+- Collective investment schemes.
+
+ATED does **not** apply to:
+- Individuals owning in their own name.
+- Trustees (provided no corporate trustee structure produces a non-natural-person owner).
+- Charities holding the dwelling on charitable trusts (subject to the §18.3 charitable-use relief mechanics).
+
+Statutory basis: **Part 3 FA 2013** (ss.94-174) introduced ATED, with the relief structure at sections referenced through the Act itself. Sessions citing the SDLT 15% rate schedule should cite **Schedule 4A FA 2003**; ATED itself sits in Part 3 FA 2013.
+
+### 18.3 The relief catalogue
+
+ATED reliefs are claimed on the return (no automatic application). All require the dwelling to be used for the qualifying purpose throughout the chargeable period or during a period of qualifying transition (acquisition, sale, redevelopment).
+
+| Relief | Statutory section | Qualifying conditions |
+|---|---|---|
+| Property rental business (rental to unconnected tenant) | s.133 FA 2013 | Let on commercial terms to an unconnected tenant; let with a view to profit. The most common relief for BTL ltd cos. |
+| Property developer | s.138 FA 2013 | Held as trading stock; carrying on a property development trade for at least 2 years. |
+| Property trader | s.141 FA 2013 | Held as trading stock by a property trader (buy-sell business). |
+| Farmhouse | s.144 FA 2013 | Farmhouse occupied by a working farmer or surviving spouse. |
+| Employee accommodation | s.145 FA 2013 | Provided to a qualifying employee for performance of duties; tight definition of qualifying employee. |
+| Dwellings open to the public | s.137 FA 2013 | Commercially run and open to the public for at least 28 days per year. |
+| Charitable use | s.150 FA 2013 | Owned by a charity, used for charitable purposes. |
+| Social housing (registered providers) | s.149 FA 2013 | Owned by a registered provider of social housing. |
+| Demolition / conversion | ss.134-135 FA 2013 | Held with intention to demolish or convert to non-residential. |
+
+**Relief mechanics:**
+- Reliefs **must be claimed** on the return; HMRC does not apply them automatically. A "claim-only return" with all-relief boxes ticked is still a return; failing to file is a penalty point even where no tax is due.
+- A single dwelling can move between reliefs in a chargeable period (e.g. rental until 31 December, then redevelopment from 1 January). The return apportions days.
+- Relief is **clawed back** where conditions cease to be met within a period of non-qualifying occupation. The most common clawback trigger is occupation by a connected non-qualifying individual (director's family member moving in for a few months while between rentals).
+
+### 18.4 Return mechanics and valuation
+
+- **Return due: 30 April** in the chargeable period (i.e. 30 April 2026 for the 2026/27 period, which starts 1 April 2026). Same date for both tax-due returns and claim-only relief returns. Verified gov.uk 2026-05-22.
+- **Payment due: 30 April**, alongside the return.
+- **Late filing penalties:** £100 immediate, £200 at 3 months, £300 at 6 months and 12 months. Tax-geared penalties for prompted / unprompted / deliberate disclosure under FA 2009 Sch 55.
+- **Five-yearly revaluation:** the chargeable value is the property's open-market value at the **most recent valuation date**. Revaluation dates: **1 April 2012**, **1 April 2017**, **1 April 2022**, **1 April 2027**, and every five years thereafter. Acquisitions between revaluation dates use the **acquisition value** until the next five-yearly revaluation date.
+- **Pre-return banding check (PRBC):** for values within 10% of a band boundary, the owner can request HMRC's view in advance (no fee). Useful where a Knight Frank or Savills valuation puts a flat at £2.05m and the £2m band-boundary materially changes the charge.
+- **Mixed-use treatment:** ATED applies only to the residential portion. Where a flat-over-shop produces a dwelling element worth >£500,000, ATED applies to that element only. Apportionment is on a just-and-reasonable basis (no statutory formula); HMRC accepts floor-area or value-based apportionment evidence.
+
+### 18.5 ATED-CGT abolition and NRCGT interaction
+
+- **ATED-related CGT (ATED-CGT)** was abolished from **6 April 2019** by FA 2019. Pre-April-2019 gains on enveloped dwellings sat in a parallel CGT regime at 28%.
+- From 6 April 2019, gains on ATED-relevant dwellings disposed by non-resident companies fall under the standard **non-resident CGT** regime at TCGA 1992 s.1A + Sch 1A. Rebasing to 5 April 2019 default applied for the transition.
+- For non-resident company disposals on or after 30 October 2024, CGT rate is 18%/24% (aligned with individuals from that date) but companies typically pay corporation tax on gains at the prevailing CT rate via the non-resident chargeable gains route. Sessions writing ATED pages should note the ATED-CGT abolition explicitly because competitor pages still reference the old 28% rate.
+
+### 18.6 RoE interaction for overseas-held ATED dwellings
+
+The Register of Overseas Entities (RoE, ECCTA 2023 / Economic Crime (Transparency and Enforcement) Act 2022) **does not displace ATED**, an overseas company holding a UK dwelling must comply with both regimes. RoE compliance evidence (the overseas entity ID, OE number) does not file with HMRC for ATED; ATED and RoE run in parallel. Sessions writing on overseas-held ATED structures should note that non-RoE-compliant overseas entities cannot complete UK Land Registry dispositions, but the ATED return obligation continues regardless of RoE status.
+
+### 18.7 HMRC's OTM letters campaign
+
+In 2024-2025 HMRC ran (and continues) an "OTM" (One-to-Many) compliance letters campaign targeting suspected ATED non-compliance, typically overseas companies on the Land Registry holding what HMRC's data warehouse suggests are >£500,000 dwellings that have not filed an ATED return. The letter is not an assessment; it invites voluntary disclosure. Sessions writing on ATED compliance should treat the OTM campaign as a known practical compliance pressure (worth a paragraph in compliance-oriented pages, not a worked example).
+
+### 18.8 Do not write
+
+- "ATED-related CGT applies to enveloped dwelling gains" (abolished from 6 April 2019).
+- "ATED reliefs are automatic where the dwelling is let" (must be claimed on the return).
+- "ATED only applies to overseas companies" (applies to UK companies too).
+- "ATED applies where any company owns any residential property" (the £500,000 threshold must be met).
+- "FA 2013 Schedule 33 introduced ATED" (Part 3 FA 2013 introduced ATED).
+
+---
+
+## 19. MTD for ITSA — Wave 3 extension (locked, 2026-05-22)
+
+Extends §3 with the operational detail Wave 3 Session B needs. §3 remains the headline locked schedule; §19 adds qualifying-income mechanics, software, joint-property treatment, exit / income-drop rules, and the new penalty regime. **Verified against gov.uk on 2026-05-22** for the £50,000 threshold and April 2026 mandate; penalty percentages reflect the Spring Statement 2025 doubling for MTD ITSA late payments (see §19.7 verification note).
+
+### 19.1 Mandate timeline
+
+| From | Mandatory for | Threshold |
+|---|---|---|
+| 6 April 2026 | Sole traders, landlords | Qualifying income > £50,000 |
+| 6 April 2027 | Sole traders, landlords | Qualifying income > £30,000 |
+| 6 April 2028 | Sole traders, landlords | Qualifying income > £20,000 |
+
+Threshold is tested against the **2024/25 tax year self-assessment return** for the 6 April 2026 cohort, the **2025/26 return** for the April 2027 cohort, and the **2026/27 return** for the April 2028 cohort. HMRC writes to taxpayers who appear in scope; the obligation is the taxpayer's regardless of whether HMRC's letter arrives.
+
+### 19.2 Qualifying income, what counts
+
+- **Qualifying income** = gross self-employment turnover + gross property rental income, **before deductions**.
+- The two streams are aggregated for the threshold test; £30,000 of trade and £25,000 of rent (£55,000 combined) brings the taxpayer in.
+- **Gross matters:** a landlord with £52,000 rental income and £40,000 of allowable deductions (net £12,000 profit) is **in scope** at the April 2026 mandate. Net-low / gross-high landlords are the largest population HMRC's outreach targets.
+- **Excluded from qualifying income:** employment income (PAYE), pensions, dividends, savings interest, partnership profit shares (until the partnership phase commences), and overseas property income reported in non-MTD ways.
+- **Foreign property income** counts as property income for MTD where reported on the UK return.
+
+### 19.3 Excluded categories
+
+- **Limited companies are outside MTD ITSA entirely.** They file annual CT600s under separate digital-record rules (MTD for CT is a future cycle, no confirmed date).
+- **General partnerships are deferred.** Originally proposed for April 2027, now deferred to a date to be confirmed. Treat as "MTD for partnerships expected in a later phase, no confirmed date as of May 2026". Partners with separate sole-trader / landlord income outside the partnership remain in MTD ITSA via that other income.
+- **LLPs** are partnerships for MTD purposes (deferred).
+- **Trustees** are outside MTD ITSA; trust property income reported via the SA900 trust return continues unchanged.
+- **Non-UK resident individuals** with UK property income are in scope where threshold met; the NRL scheme (§17.5) operates alongside MTD, not in place of it.
+
+### 19.4 Joint-property owners
+
+- Joint owners (spouses, civil partners, joint tenants, tenants in common) test the threshold against their **share of gross**, not the property's total gross.
+- Spouses owning jointly with a £100,000 gross rental income test £50,000 each (default 50/50 split absent Form 17 election). At the April 2026 mandate, both are in scope at the threshold boundary.
+- A Form 17 election that splits 75/25 brings the 75% spouse into scope earlier than their partner.
+- HMRC's published view: joint-owner threshold testing follows the income-split rule applied for SA, not a default joint-test rule.
+
+### 19.5 Exit / income-drop rule
+
+- A taxpayer in MTD ITSA can **exit** if qualifying income falls below the threshold for **three consecutive tax years**. The taxpayer notifies HMRC; HMRC confirms removal from MTD obligations.
+- A taxpayer who exits remains liable for the regular self-assessment cycle and re-enters MTD if income rises above threshold again.
+- **Voluntary opt-in:** taxpayers below threshold can join MTD voluntarily from 6 April 2025 (the pilot) or 6 April 2026 (general voluntary). Voluntary participants are bound by the quarterly cycle and penalties.
+
+### 19.6 Software requirements
+
+- MTD requires **HMRC-recognised compatible software**. The list is maintained at gov.uk's "Find software that's compatible with Making Tax Digital for Income Tax" page (updated regularly; do not hard-code product names).
+- Software must support: digital record-keeping, quarterly update submissions, end-of-period statement, final declaration. Spreadsheet-plus-bridging is acceptable provided the bridging software is on the HMRC list.
+- Free-tier options exist but are limited (FreeAgent for NatWest customers; HMRC's own pilot tooling for some segments). Paid options dominate the recognised list.
+
+**Quarterly cycle (UK tax year):**
+
+| Update period | Submission deadline |
+|---|---|
+| 6 April to 5 July | 7 August |
+| 6 July to 5 October | 7 November |
+| 6 October to 5 January | 7 February |
+| 6 January to 5 April | 7 May |
+| End-of-Period Statement (EoPS) | 31 January following year-end |
+| Final declaration | 31 January following year-end |
+
+Calendar-quarter elections are available from 6 April 2026 (HMRC will allow filers to use 31 March / 30 June / 30 September / 31 December quarter-ends), but the default remains the 5th-of-month UK tax year quarters.
+
+### 19.7 Penalty regime
+
+**Late submission, points-based:**
+- 1 point per missed quarterly update.
+- Penalty threshold for quarterly filers: **4 points**.
+- At threshold: **£200** penalty per missed submission while at threshold.
+- Points reset after 24 months of full compliance.
+- Annual EoPS / final declaration counts as a separate annual obligation under the points cycle (threshold 2 points for annual obligations).
+
+**Late payment, Spring Statement 2025 doubling for MTD ITSA:**
+- 3% of unpaid tax from day 31 (was 2% pre-Spring-Statement-2025).
+- A further 3% from day 46 (was 2%).
+- Then 10% per annum from day 91 (was 4%).
+
+**§19.7 verification note:** the 3%/3%/10% figures are the Spring Statement 2025 announcement applicable to MTD ITSA late payments from 6 April 2026. The lower 2%/2%/4% figures continue to apply to VAT and to non-MTD income tax for taxpayers below the MTD threshold. Sessions writing penalty content for MTD ITSA must use the 3%/3%/10% figures and cite the Spring Statement 2025 origin. Verified against HMRC penalty regime guidance on 2026-05-22; the precise gov.uk dedicated MTD-ITSA-penalty page was 404 at the verification fetch (the rate change sits within Finance Act 2024 amendments to FA 2021 Sch 26).
+
+### 19.8 The abandoned £10,000 threshold
+
+- The original 2018 MTD ITSA design used a **£10,000 qualifying income threshold** for all sole traders and landlords.
+- The £10,000 threshold was abandoned in late 2022 / early 2023 under the previous government, with the phased £50,000 / £30,000 schedule announced 19 December 2022.
+- Competitor pages from 2019-2022 frequently still reference £10,000; sessions encountering this should treat it as stale (do not write "the threshold was lowered from £10,000"; the £10,000 threshold was never implemented).
+
+### 19.9 Do not write
+
+- "MTD applies to limited companies from April 2026" (Ltd Cos are outside MTD ITSA).
+- "MTD applies to GP partnerships from April 2026" (deferred to TBC).
+- "£10,000 is the MTD threshold" (abandoned in 2022).
+- "Joint owners test against the property's total gross" (each tests their share).
+- "Late submission produces an immediate £200 penalty" (points-based; £200 only at the threshold).
+- "Late payment penalties are 2%/2%/4%" (for MTD ITSA from 6 April 2026, the figures are 3%/3%/10% per Spring Statement 2025).
+
+---
+
+## 20. Renters' Rights Act 2025 — Wave 3 extension (locked, 2026-05-22)
+
+Extends and **replaces** §12 with enacted detail. §12 was written when the Bill was in passage; §20 reflects the post-Royal-Assent reality. **Verified against legislation.gov.uk on 2026-05-22:** Royal Assent received **27 October 2025**. The Act is **2025 c. 26**, the **Renters' Rights Act 2025** (not 2026, the program previously labelled it the "RRA 2026" in anticipation of commencement; the Act is 2025-dated by enactment). **Correction logged 2026-05-22:** §12 framed the legislation as "in passage" and used the placeholder "Renters' Rights Act 2026". Both are out of date, the Act is enacted as the Renters' Rights Act 2025, with commencement phased by statutory instrument. Earlier wording retained in §12 for audit; §20 is the working detail.
+
+### 20.1 Status and commencement
+
+- **Royal Assent: 27 October 2025.**
+- **Citation: Renters' Rights Act 2025 (2025 c. 26).**
+- Commencement is phased by Statutory Instrument. Several core provisions were brought into force by mid-2026 commencement orders; Wales-specific discrimination provisions (ss.43-49) and a small number of enforcement provisions remained pending as of the verification fetch (legislation.gov.uk 2026-05-22).
+- Sessions writing on RRA 2025 must check the commencement table for the specific section they cite before asserting "in force"; the Act is enacted but not yet fully in force.
+
+### 20.2 Section 21 abolition and reformed Section 8 grounds
+
+- **Section 21 of the Housing Act 1988 ("no-fault" eviction) is abolished** for assured tenancies under the Act's tenancy reforms.
+- **Section 8** is restructured with a substantially expanded list of possession grounds: rent arrears (extended threshold and notice period), anti-social behaviour, landlord-sale and landlord-occupation grounds (with 12-month restriction on re-letting after possession), and tenant-breach grounds.
+- New tenant notice period: tenants can end the tenancy with **2 months' written notice** at any point (the periodic-tenancy default makes fixed-term lock-in unavailable).
+- Landlord re-letting restriction: after possession on landlord-sale or landlord-occupation grounds, the property cannot be re-let for **12 months**. Breach is an offence with civil penalty up to £40,000.
+
+### 20.3 Periodic-tenancy default and AST phase-out
+
+- All new assured tenancies are **periodic from grant** under the Act.
+- Existing **fixed-term assured shorthold tenancies (ASTs)** convert to periodic on commencement of the relevant Part of the Act (statutory instrument). The Government's published transition window allowed an existing-tenancy conversion period; sessions citing the transition date should refer to the most recent commencement SI rather than rely on press estimates.
+- **Default rent period:** monthly (max one month). Six-monthly or annual rent periods are no longer permitted.
+- Pre-existing fixed-term leases of 7+ years and most company-let / business tenancies are outside the assured tenancy regime and unaffected.
+
+### 20.4 Decent Homes Standard extended to PRS
+
+- The Decent Homes Standard (originally a social-housing standard) is extended to the private rented sector.
+- A property failing the standard can be subject to enforcement by the local authority; tenants gain a Rent Repayment Order route where the property is non-compliant.
+- The standard covers: meeting the statutory minimum for housing (HHSRS Category 1 hazards), reasonable state of repair, reasonably modern facilities, and a reasonable degree of thermal comfort.
+
+### 20.5 Landlord database and PRS Ombudsman
+
+- **Private Rented Sector Database**, a national register of landlords and their properties. Registration is mandatory before a property can be let.
+- Database records: landlord ID, property addresses, compliance status (gas safety, EICR, EPC, Right to Rent checks, deposit protection).
+- **PRS Ombudsman**, single statutory ombudsman scheme covering all landlords. Landlords must register; tenants can escalate disputes without a court route. Ombudsman decisions can require compensation up to £25,000.
+- Operating outside the database or refusing to join the ombudsman = civil penalty up to £40,000 or banning order.
+
+### 20.6 Rent-rise mechanics, Section 13 reform, and tribunal challenge
+
+- Rent increases via the **Section 13 procedure only**, once per 12-month period.
+- Notice period: **2 months' written notice** of the proposed increase.
+- Tenant can challenge at the **First-Tier Tribunal (Property Chamber)** if they believe the proposed rent exceeds market rent. The tribunal cannot now set a rent **above** the landlord's proposed amount (a procedural protection against tenants triggering self-harm by referring).
+- The Section 13 route is mandatory; contractual rent-review clauses in tenancy agreements are unenforceable for rent increases.
+
+### 20.7 Pet rights and reasonable refusal
+
+- Tenants gain a statutory right to **request to keep a pet**.
+- Landlord refusal must be **reasonable** (definition includes superior landlord prohibition, building insurance constraint, layout / size unsuitability).
+- Landlords can require **pet damage insurance** as a condition of consent.
+- Tribunal route exists for tenants whose request is refused without reasonable grounds.
+
+### 20.8 Prohibition on bidding wars and asking-rent caps
+
+- Landlords and letting agents **cannot invite or accept offers above the advertised rent**.
+- The advertised rent is the statutory ceiling for the marketing period; rent increases occur after the tenancy starts via the Section 13 procedure (§20.6).
+- **Advance rent prohibited beyond the first month**, landlords cannot demand 6 or 12 months upfront as a deposit-substitute.
+
+### 20.9 Transition for existing tenancies
+
+- Existing fixed-term ASTs convert to periodic at the commencement of the tenancy reform Part (see §20.1).
+- Tenants in fixed-term tenancies gain new tenant-notice rights from commencement.
+- Pre-commencement Section 21 notices already served remain operative for a defined transitional window; sessions advising on in-progress possession claims should check the specific transitional saving provision.
+
+### 20.10 Enforcement and penalties
+
+- Local authorities have expanded investigatory powers (entry, document production).
+- Civil penalty regime: up to **£40,000** per offence for serious breaches (operating outside database, breach of re-letting restriction, repeated decent-homes failures).
+- **Rent Repayment Orders** (RROs) extended to new offences; tenants can claim up to 12 months' rent.
+- **Banning orders** for repeat or serious offenders.
+
+### 20.11 Tax implications for landlords (Property Tax Partners angle)
+
+These are the items most relevant to the firm's positioning, not the legal-services-firm positioning competitor sites lean on:
+- **Rent-increase frequency limits** affect cash-flow modelling and Section 24 (§4) interactions: where mortgage interest rises faster than the Section 13-permitted annual rent increase, the landlord's S24 tax credit cap may bind earlier.
+- **12-month landlord-sale re-letting restriction** affects timing of CGT disposals: a landlord taking possession on landlord-sale grounds must complete the sale within the 12-month re-let window or face a 12-month income gap.
+- **Pet damage insurance** (where required as a consent condition) is a deductible expense against rental income.
+- **PRS database registration fees and Ombudsman subscription** are deductible as professional expenses of the rental business.
+- **Decent Homes Standard compliance spend**, repairs are revenue-deductible; capital improvements add to base cost for CGT.
+- **Sale-driven possession route** affects the §17.4 NRCGT timeline for non-resident landlords selling UK property.
+
+### 20.12 Do not write
+
+- "The Renters' Rights Bill is in passage" (received Royal Assent on 27 October 2025).
+- "Section 21 is still available" (abolished for assured tenancies under the Act; subject to commencement order, check specific provision).
+- "Tenants must give 2 months notice always" (tenants can give 2 months at any point in a periodic tenancy; landlord notice periods vary by ground).
+- "Fixed-term ASTs continue" (all new assured tenancies are periodic; existing fixed-terms convert at commencement).
+- "Landlords can demand 6 months rent upfront" (prohibited).
+- "The Act is the Renters' Rights Act 2026" (the Act is 2025-dated by enactment; "2026" appears in some commencement contexts but the citation is "2025 c. 26").
+
+---
+
+**End Wave 3 extension.** Sessions A (ATED), B (MTD ITSA), C (RRA / Tenancies) use §§2 + 18 (ATED), §§3 + 19 (MTD), §§12 + 20 (RRA) together. §§18-20 are the working detail; §§2, 3, 12 are superseded by the Wave 3 extensions where they conflict. Any contradiction between competitor sources and §§18-20, flag in `wave3_site_wide_flags.md`.
