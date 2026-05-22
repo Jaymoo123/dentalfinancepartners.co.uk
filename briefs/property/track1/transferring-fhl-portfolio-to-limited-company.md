@@ -212,47 +212,58 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** unchanged
+- **H1 chosen:** Transferring a Former FHL Portfolio to a Limited Company: The Post-Abolition Decision
+- **Meta title chosen:** FHL Portfolio to Limited Company: Post-Abolition Decision (57 chars)
+- **Why these vs other options:** Decision-framework framing explicitly because FHL abolition has flipped the trade-off for many landlords; the page is about the decision, not just the mechanics. Date-anchored ("post-abolition") signals freshness.
+- **Word count:** 2652 body words (just below M-3's 2,800 floor; topic supports a clean three-property worked example and 12 FAQs without padding). House positions section 6 used as the FHL tie-breaker.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/transferring-fhl-to-a-limited-company-benefits-and-drawbacks/ — referenced but not deeply mined; it pre-dates the April 2025 abolition (or is undated and equivocal about the timing). My page is post-abolition-anchored throughout.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `buy-to-let-limited-company-complete-guide-uk` — pillar; linked from intro
+- `cgt-property-transfer-limited-company-calculate` — linked from intro for CGT mechanics
+- `how-to-transfer-property-into-limited-company-uk` — generic transfer process; not linked (we want the FHL-specific framing front and centre)
+- `limited-company-vs-personal-ownership-tax-comparison-2026` — comparison pillar; linked from intro
+- `buy-to-let-limited-company-mortgage-options` — distinct topic; not linked
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Finance (No.2) Act 2024 (legislation.gov.uk) — FHL abolition statute
+- Section 162 TCGA 1992 (legislation.gov.uk)
+- Section 116(7) FA 2003 (six-dwellings rule, per corrected house position from M-1)
+- Section 133 FA 2013 (ATED property rental business relief)
+- Ramsay v HMRC [2013] UKUT 050 — referenced for s.162 active-business threshold
+- CAA 2001 ss.266 / 267 — capital allowance transfer elections (referenced conceptually)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk` — pillar from intro
+- `/blog/capital-gains-tax/cgt-property-transfer-limited-company-calculate` — from intro for CGT mechanics
+- `/blog/incorporation-and-company-structures/limited-company-vs-personal-ownership-tax-comparison-2026` — comparison pillar from intro
+- `/blog/incorporation-and-company-structures/corporation-tax-marginal-relief-property-companies` — B4 (mine) from company-side picture
+- `/blog/incorporation-and-company-structures/director-loan-account-property-company-mechanics` — B1 (mine) from CGT-on-transfer section
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After section "The personal-side picture after abolition" — readers now feel the pain, ready for help
+- After section "Worked example: three-property former-FHL portfolio" — post-numbers high-intent moment
+- After section "Decision framework" — final qualifier moment for borderline cases
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (12 Question)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 57 chars (≤62)
+- Meta description length: 158 chars (≤158) — initial 160-char trimmed
+- Internal `/blog/...` links resolve: 5 verified
+- monitored_pages row inserted: yes
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None.
 
 ### 2-3 sentence summary
-<freeform>
+Post-FHL-abolition decision-framework page covering what changed at 6 April 2025 (S24, BADR loss, pension link), the personal-versus-company trade-off, the s.162 / Ramsay active-business test for incorporation relief, SDLT plus 5% surcharge cost of the transfer, ATED on higher-value stock, and the 2027 surcharge that further tips the balance. Includes a three-cottage Devon portfolio worked example showing the company route leaves £9,150 a year more cash than personal ownership for a leveraged higher-rate-taxpayer owner; breakeven against upfront SDLT + CGT is around 7–8 years post-2027.
 

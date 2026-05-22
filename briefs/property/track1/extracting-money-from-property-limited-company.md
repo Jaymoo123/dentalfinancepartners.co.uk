@@ -212,47 +212,60 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** unchanged
+- **H1:** Extracting Money from a Property Limited Company: Salary, Dividends, Pension and DLA Repayment Compared
+- **Meta title:** Extracting Money from a Property Company: Routes Compared (57 chars)
+- **Why these vs other options:** Comparison framing, lists the four real levers up front. Anti-template against the existing comparison pillar which is personal-vs-company.
+- **Word count:** 2754 body words; 12 FAQs.
+- **Note:** Updated for post-April-2025 NIC changes (15% employer rate + £5k secondary threshold). The old £12,570 sweet spot is no longer obvious; LEL salary is the new default. This is a "live" change competitors haven't all caught up with.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/transferring-money-out-of-a-limited-company/ — generic ltd-co extraction overview. My page is property-applied and post-April-2025-NIC-aware.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `limited-company-vs-personal-ownership-tax-comparison-2026` — pillar; linked from intro
+- `cgt-property-transfer-limited-company-calculate` — distinct topic; not linked
+- `how-to-transfer-property-into-limited-company-uk` — distinct topic; not linked
+- `buy-to-let-limited-company-complete-guide-uk` — pillar; not linked to keep links focused
+- `buy-to-let-limited-company-mortgage-options` — distinct topic; not linked
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Companies Act 2006 ss.690-708 (share buyback), s.830 (distributable reserves), ss.641-651 (capital reduction)
+- CTA 2010 s.1033 (buyback capital treatment conditions)
+- Insolvency Act 1986 s.89 (MVL solvency)
+- TCGA 1992 s.122 (capital distribution on liquidation)
+- ITA 2007 ss.396B + 404A (phoenix TAAR)
+- ITTOIA 2005 Part 5 Chapter 5 (settlements legislation)
+- Arctic Systems / Jones v Garnett [2007] UKHL 35
+- BIM46035 (wholly-and-exclusively for pension contributions)
+- EIM26100 (official rate of interest)
+- NIC Act 2014 s.2 (Employment Allowance restriction)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/incorporation-and-company-structures/corporation-tax-marginal-relief-property-companies` — B4 (mine) from intro
+- `/blog/incorporation-and-company-structures/director-loan-account-property-company-mechanics` — B1 (mine) from intro
+- `/blog/incorporation-and-company-structures/limited-company-vs-personal-ownership-tax-comparison-2026` — pillar from intro
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After section "Dividends" — spouse share allocation moment
+- After section "Director's loan account repayment" — credit-DLA value reminder
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (12 Question)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 57 chars
+- Meta description length: 147 chars
+- Internal `/blog/...` links resolve: 3 verified
+- monitored_pages row inserted: yes
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None new from B7. (B2 CIHC flag from earlier still standing.)
 
 ### 2-3 sentence summary
-<freeform>
+Decision-framework page comparing the four real extraction routes from a property limited company: salary (now optimally at LEL £6,500 post-April-2025 NIC changes), dividends (£500 allowance, 8.75/33.75/39.35%), employer pension contributions (highest-leverage where annual allowance available), and DLA repayment (tax-free where credit balance exists). Worked example of £40k extraction from £150k profits comparing all-dividend vs salary+dividend vs salary+pension+dividend, showing pension route extracts £70k of wealth at less tax than all-dividend extracts £40k. Specialist routes (buyback, capital reduction, MVL) covered briefly; five recurring failure modes.
 

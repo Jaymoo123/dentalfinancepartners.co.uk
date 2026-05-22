@@ -212,47 +212,53 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** unchanged
+- **H1 chosen:** Corporation Tax Marginal Relief for Property Companies: The Associated-Company Squeeze
+- **Meta title chosen:** Marginal Relief for Property Companies: SPV Associated Test (59 chars)
+- **Why these vs other options:** Lead with the actual mechanic landlords meet (the associated-company squeeze), not the headline rate question. Differentiates from existing rates pillar.
+- **Word count:** 2788 body words (close to M-3 floor; added a five-failure-modes section to bring the page from 2372 to 2788 with genuinely additive content rather than padding).
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/corporation-tax-marginal-relief-uk-guide/ — generic marginal relief explainer covering the formula, lower/upper limits, FII augmentation. Not property-applied. My page is SPV-portfolio-applied, leans hard on the associated-company arithmetic (5-SPV worked example), and corrects the common CIHC misconception (CIHC catches connected-party lets, not arm's-length BTL).
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `corporation-tax-rates-property-companies-2026-27` — rates pillar; my page is the mechanics deep-dive companion. Linked from intro. Same EXISTING_PAGE_STALE flag as B2 applies (CIHC scope overclaimed there).
+- `accountant-corporation-tax-property-companies` — service page, shallow. Not linked from B4.
+- The others (incorporation-holdover, landlord-capital-allowances, mortgage-interest-relief) are off-topic. Not linked.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- CTA 2010 Part 3A (legislation.gov.uk) — main statutory home
+- CTA 2010 s.18E (associated companies)
+- CTA 2010 s.18L (dormant/passive holding company exemption)
+- CTA 2010 s.18N (CIHC and marginal relief disqualification)
+- CTA 2010 s.1122 (connected persons)
+- ITA 2007 s.24 (referenced for "individual only" framing)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27` — rates pillar from intro
+- `/blog/incorporation-and-company-structures/property-company-group-relief-corporation-tax` — B2 (mine) from intro and close
+- `/blog/incorporation-and-company-structures/director-loan-account-property-company-mechanics` — B1 (mine) from close
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After section "The associated-companies rule" — most landlords realise here they may have miscalculated thresholds; high-intent diagnostic moment
+- After section "Worked example: five-company portfolio" — post-numbers moment, the £9k/year saving is visible
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (12 Question)
+- Em-dashes in markdown: 0 (one em-dash in initial draft fixed: "£12,500 (25%) — a £3,000 jump" → "£12,500 (25%), a £3,000 jump")
+- Tailwind classes in markdown: 0
+- Meta title length: 59 chars (≤62)
+- Meta description length: 156 chars (≤158)
+- Internal `/blog/...` links resolve: 3 verified
+- monitored_pages row inserted: yes
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- FACTUAL — flagged B2 (committed earlier today) for likely overstating CIHC scope. B4 correctly frames CIHC as connected-party-lets only.
 
 ### 2-3 sentence summary
-<freeform>
+Mechanics-first page on corporation tax marginal relief for property companies, leading on the associated-company arithmetic that makes the £50k–£250k band collapse in real portfolio structures. Worked examples: standalone SPV at £100k profit pays £22,750 (22.75% effective); same SPV in a five-company group pays £25,000 (25% main rate). Includes the CIHC carve-out for connected-party lets (correcting a common misconception that all BTL SPVs are CIHCs), the augmented-profits FII adjustment, the dormant and passive-holding-company exemptions to the associated-company count, and five recurring failure modes from portfolio reviews.
 

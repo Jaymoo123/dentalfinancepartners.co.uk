@@ -212,47 +212,57 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged from assignment
+- **Final category:** unchanged from assignment (`incorporation-and-company-structures`)
+- **H1 chosen:** Director's Loan Account in a Property Company: Mechanics, Section 455 and the £10,000 BIK Rule
+- **Meta title chosen:** Director's Loan Account Property Company: How It Works (54 chars)
+- **Why these vs other options:** Mechanics-first H1 signals depth and statutory specificity (s.455 + £10k BIK); meta title leads with the head keyword "Director's Loan Account Property Company" and avoids generic "Complete Guide" pattern. Distinct from the existing shallow `director-loan-property-company` page by depth (3500+ body words vs ~700) and worked-example focus.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/directors-loan-accountsdla-uk-guide/ — competent overview of s.455 + BIK, but blurs the £10k threshold (treats it as a s.455 de minimis, which it is not). My page corrects that conflation explicitly in FAQ 1.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `director-loan-property-company` — shallow ~700-word existing intro. Mine is the deeper mechanics/applied version; I link to it as the higher-level intro. Should be reverse-linked back from the existing page (logged as INTERNAL_LINK flag).
+- `cgt-property-transfer-limited-company-calculate` — touches s.162 incorporation relief. I link out to it where I cover the s.162-vs-DLA trade-off. No cannibalisation, distinct angles.
+- `family-investment-company-property-worth-it` — different structural product (FIC vs vanilla Ltd). I link out at the end for share-structure-as-extraction-lever cases.
+- `how-to-choose-right-property-company-structure-uk-landlords-2026` — pillar I link from the intro.
+- `how-to-set-up-property-investment-company-uk-guide` — pillar I link from the closing section.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- CTA 2010 s.455 (legislation.gov.uk)
+- ITEPA 2003 (legislation.gov.uk)
+- Section 162 TCGA 1992 (legislation.gov.uk)
+- Taxes (Interest Rate) Regulations 1989 (legislation.gov.uk)
+- HMRC Employment Income Manual EIM26100 (gov.uk)
+- gov.uk L2P form page for s.455 refund claims
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/incorporation-and-company-structures/director-loan-property-company` — higher-level companion read for readers who want the shorter intro
+- `/blog/incorporation-and-company-structures/how-to-choose-right-property-company-structure-uk-landlords-2026` — pillar
+- `/blog/capital-gains-tax/cgt-property-transfer-limited-company-calculate` — for s.162 / incorporation context
+- `/blog/incorporation-and-company-structures/how-to-set-up-property-investment-company-uk-guide` — pillar
+- `/blog/incorporation-and-company-structures/family-investment-company-property-worth-it` — adjacent extraction-via-share-structure read
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After section "The credit DLA at incorporation and how it accumulates" — readers landing here are usually pre-incorporation; the cleanest DLA-shape decision happens BEFORE the SPA. High-intent conversion moment.
+- After section "Five DLA failure modes we see most often" — readers in distress (just discovered a year-end DLA surprise) need numbers-led modelling of the available escape routes.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — `next` not in PATH; ran `npm install` (worktree had no node_modules)
+- Attempt 2 — pass, 321 static pages generated, no errors
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (13 Question = 13 Answer = 13 in `faqs:`)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 54 chars (≤62)
+- Meta description length: 152 chars (≤158)
+- Internal `/blog/...` links resolve: all 5 verified against `content/blog/<slug>.md` files
+- monitored_pages row inserted: yes
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- INTERNAL_LINK — existing `director-loan-property-company` page should link forward to this deeper mechanics page (existing page is shallow ~700 words)
 
 ### 2-3 sentence summary
-<freeform>
+Mechanics-first page covering both sides of the DLA ledger: how a credit balance accumulates (pre-incorporation funding, declared-but-unpaid dividends), tax-free drawdown of a £200k credit DLA at £30k/year, then the s.455 corporation tax mechanics, the 9-month-and-one-day clock, the s.464C 30-day bed-and-breakfast rule, the L2P refund timing lag, and the £10k beneficial loan BIK rule under the official rate of interest. Anti-templated against the existing shallow DLA page by depth, worked example, and a five-failure-mode section drawn from common property-company errors (mixed cards, refinance proceeds routed personally, dividends without distributable reserves, guarantee/loan confusion, write-off as a tax fix).
 
