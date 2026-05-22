@@ -212,47 +212,58 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** unchanged (`non-resident-landlord-tax`)
+- **H1 chosen:** "Non-Resident SDLT 2% Surcharge: The Test, the Stack and the Refund"
+- **Meta title chosen:** "Non-Resident SDLT 2% Surcharge: Residence Test, Stack, Refund" (61 chars)
+- **Why these vs other options:** Three-part framing (test, stack, refund) telegraphs the page architecture and anti-templates against A1-A6.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/how-owning-property-abroad-leads-higher-stamp-duty-rates/ — page is about 5% HRAD triggered by overseas property, NOT the 2% non-resident surcharge. Off-topic for our brief framing. Written from house position + general SDLT knowledge instead.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `non-resident-landlord-scheme-uk-complete-guide` — companion page on income tax withholding; linked at foot.
+- The four other "closest" candidates are CGT-focused (non-resident CGT) — no overlap with SDLT 2% surcharge.
+- `sdlt-buy-to-let-rates-surcharge-guide-2025` is the rates pillar; linked.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Schedule 9A FA 2003 (the 2% surcharge schedule, primary statute)
+- Paragraph 4 Schedule 9A (individual residence test)
+- Paragraph 6 Schedule 9A (joint purchaser rule)
+- Paragraph 9 Schedule 9A (Crown employees exception)
+- Section 439 CTA 2010 (close company definition)
+- Section 14 CTA 2009 (UK incorporation rule for CT residence)
+- Schedule 45 FA 2013 (income tax SRT, by reference)
+- Section 116(7) FA 2003 (interaction with six-dwellings rule, corrected framing per M-2)
+- Finance Act 2021 (introduced the surcharge)
+- HMRC SDLT Manual SDLTM68000+ (non-resident surcharge guidance)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025` (rates pillar)
+- `/blog/landlord-tax-essentials/sdlt-5-percent-surcharge-refund-claim-process` (A1, HRAD refund route)
+- `/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide` (parallel withholding regime)
+- `/blog/incorporation-and-company-structures/sdlt-six-dwellings-non-residential-election` (A2, displaces residential characterisation)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After the close-company carve-in section — high-intent moment for overseas investors structuring through UK SPVs
+- After the Layla/Tariq worked example — converts returning expats timing their completion
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass clean. 12 em-dashes found and replaced with commas (high count because the topic had several parenthetical sub-clauses). Initial body 2,467 words; added trusts section + 5% surcharge interaction section + extended Layla/Tariq commentary to reach 2,819 within M-4 floor.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (11 = 11)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 61 (≤62)
+- Meta description length: 158 (=158)
+- Internal links resolve: all four target markdown files confirmed present
+- monitored_pages row inserted: yes
+- Body word count: 2,819 (within M-4 calibration of 2,800–3,500)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None this page.
 
 ### 2-3 sentence summary
-<freeform>
+A7 covers the 2% non-resident SDLT surcharge under Schedule 9A FA 2003. Emphasises the SDLT-specific residence test (183 days in any continuous 365-day window ending on effective date) and its disconnection from the income tax SRT. Surcharge stacking table, close-company carve-in, joint purchaser rule, Crown employees exception, Layla/Tariq returning-expat worked example, refund route, trusts section, common-errors section. 11 FAQs. Anti-templated as a test+stack+refund structure distinct from A1-A6.
 
