@@ -212,47 +212,56 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** unchanged (`incorporation-and-company-structures`)
+- **H1 chosen:** Corporation Tax Group Relief for Property Companies: Surrendering Losses Across SPVs
+- **Meta title chosen:** Group Relief for Property Companies: SPV Loss Surrender (55 chars)
+- **Why these vs other options:** SPV-portfolio framing matches the brief's differentiator; H1 names "surrendering losses" because that is the actual mechanic and the language landlords use. Meta title leads with "Group Relief for Property Companies" head keyword and signals applied (SPV) angle.
+- **Word count:** 3104 body words (within M-3 calibration window of 2,800–3,500). FAQs at 12 (M-3 window 10–12, hit the top).
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/eligible-groups-for-group-relief-under-uk-corporation-tax/ — generic group-relief explainer, not property-specific; covers 75% test, direct/indirect ownership, overseas companies, and parallels with SDLT group relief and CGT s.171 transfers. My page is the property-SPV-applied version, leans harder on year-end alignment, UK property business losses under s.99(1)(d), associated-companies arithmetic, and the s.171A election for capital losses.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `corporation-tax-rates-property-companies-2026-27` — covers rates/marginal relief but glosses over the CIHC issue (says small profits rate applies to most property companies, which is wrong for vanilla BTL CIHCs). I link to it from intro for the rates context but correct the CIHC point in FAQ #5 and in the worked example. Should be flagged for Track 2 sweep correction.
+- `accountant-corporation-tax-property-companies` — service page, shallow. Linked at the close as the service-level companion.
+- `cgt-property-transfer-limited-company-calculate` — narrow scope, not directly relevant; not linked.
+- `family-investment-company-property-worth-it` — different structural product; not linked from B2.
+- `how-to-choose-right-property-company-structure-uk-landlords-2026` — pillar; linked from intro.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- CTA 2010 Part 5 / s.99 / s.151 (legislation.gov.uk)
+- TCGA 1992 s.171 / s.171A (legislation.gov.uk)
+- HMRC CTM80100 (Group Relief manual) — referenced conceptually
+- HMRC SDLTM23000 — referenced conceptually (group relief SDLT)
+- Form CT600C / box 309 (CT600) — referenced as the claim mechanic
+- Companies House Form AA01 — referenced for year-end alignment
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27` — rates pillar from intro
+- `/blog/incorporation-and-company-structures/how-to-choose-right-property-company-structure-uk-landlords-2026` — structure pillar from intro
+- `/blog/incorporation-and-company-structures/director-loan-account-property-company-mechanics` — B1 (mine) from closing section, since DLA mechanics sit alongside group relief in a group context
+- `/blog/incorporation-and-company-structures/accountant-corporation-tax-property-companies` — service page from closing section
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After section "The 75% ownership test in plain English" — pre-incorporation conversion moment (cheapest time to set the structure up)
+- After section "Worked example: four SPVs, one refurbishment year" — post-numbers moment, readers see the £15k saving and want it modelled for their own portfolio
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass, 322 static pages, no errors
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (12 Question)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 55 chars (≤62)
+- Meta description length: 156 chars (≤158)
+- Internal `/blog/...` links resolve: 4 verified against `content/blog/<slug>.md` files
+- monitored_pages row inserted: yes
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- EXISTING_PAGE_STALE — `corporation-tax-rates-property-companies-2026-27` does not flag the CIHC point; vanilla BTL SPVs almost always pay 25% across the board. Logged in discovery log rather than flags (no immediate orchestrator action needed).
 
 ### 2-3 sentence summary
-<freeform>
+SPV-portfolio-applied page on corporation tax group relief for property landlords: the 75% direct-or-indirect ownership test, what is and is not surrenderable (UK property business losses are; capital losses are not), corresponding accounting periods with a year-end-alignment recommendation, CT600/CT600C mechanics, and a four-SPV worked example saving £15,000 of cash tax in a refurbishment year. Includes the parallel s.171A TCGA 1992 mechanism for capital losses, consortium-relief briefly, the associated-companies arithmetic for marginal relief thresholds, and five common failure modes drawn from property-group reviews.
 
