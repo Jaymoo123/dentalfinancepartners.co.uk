@@ -204,47 +204,55 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** unchanged (`landlord-tax-essentials`)
+- **H1 chosen:** "Shared Ownership SDLT: How the Two Routes Differ and What Staircasing Costs"
+- **Meta title chosen:** "Shared Ownership SDLT: Market Value Election vs Pay-in-Stages" (61 chars)
+- **Why these vs other options:** Page is fundamentally a decision-framework piece (the election is irrevocable after 12 months, so the choice is the whole point). Anti-templated away from A1 (process), A2 (saving), A3 (myth). Title leads with the binary choice.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/sdlt-on-shared-ownership/ — long, thorough competitor; covers both routes, NPV rent, FTB relief, surcharges. Used as scaffold but our page adds the 25/50/80 worked comparison table and the decision-framework matrix.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `section-24-joint-property-ownership-tax-split` — no overlap (S24 income tax, not SDLT). Not linked.
+- Linked back to A1, A2, and the rates pillar for cross-bucket context.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Paragraph 2 and Paragraph 4 of Schedule 9 FA 2003 (market value election)
+- Paragraph 4A of Schedule 9 FA 2003 (80% exemption)
+- Paragraph 3 of Schedule 5 FA 2003 (NPV rent calculation, 3.5% discount)
+- Section 108 FA 2003 (linked transactions)
+- Schedule 9A FA 2003 (non-resident surcharge)
+- Schedule 4ZA FA 2003 (additional dwellings surcharge, by extension)
+- HMRC SDLT Manual (general)
+- gov.uk SDLT return guidance
+- HMRC SDLT calculator
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025` (rates pillar)
+- `/blog/landlord-tax-essentials/sdlt-5-percent-surcharge-refund-claim-process` (A1, replacement-of-main-residence)
+- `/blog/incorporation-and-company-structures/sdlt-six-dwellings-non-residential-election` (A2, sibling SDLT route)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "two routes" overview but before the worked example — converts buyers actively making the decision
+- After the worked example — for buyers who want PV modelling on their specific assumptions
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass clean (no warnings; new route compiled)
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (11 = 11)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 61 (≤62)
+- Meta description length: 153 (≤158)
+- Internal links resolve: all three target markdown files confirmed present
+- monitored_pages row inserted: yes
+- Body word count: 2,919 (within M-4 calibration of 2,800-3,500)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None this page.
 
 ### 2-3 sentence summary
-<freeform>
+A4 is the decision-framework piece for shared-ownership buyers facing the market-value-election vs pay-in-stages choice. Two-route comparison table at the top, mechanics of each route, the 80% staircasing trigger, full 25/50/80 worked example under both routes, HRAD / non-resident surcharge interactions, and a buyer-profile decision matrix. 11 FAQs. Anti-templating handled by the irrevocable-choice framing and a side-by-side worked-example table format different from A1/A2/A3.
 
