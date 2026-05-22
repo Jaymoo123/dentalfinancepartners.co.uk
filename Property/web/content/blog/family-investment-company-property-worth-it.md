@@ -112,6 +112,9 @@ faqs:
 </ul>
 <p>The wrong structure or poor implementation can result in unexpected tax charges and reduced flexibility.</p>
 
+<h2>Further Reading</h2>
+<p>If you have decided a FIC is the right structure, the deeper structural reference is <a href="/blog/incorporation-and-company-structures/fic-complete-guide-property-wealth-transfer">FIC for Property: The Comprehensive Wealth-Transfer Reference</a>, which covers share-class design, growth shares and freezers, alphabet shares, and the long-run mechanics of moving wealth into the next generation.</p>
+
 <h2>Conclusion</h2>
 <p>Family investment companies can provide tax efficiency and estate planning benefits for high-net-worth property investors. However, they involve substantial costs, complexity, and restrictions that make them unsuitable for most landlords.</p>
 <p>Consider a FIC only if you have a large portfolio (£3+ million), substantial rental profits, clear wealth transfer objectives, and willingness to accept ongoing complexity. For most property investors, simpler incorporation structures or personal ownership remain more cost-effective.</p>

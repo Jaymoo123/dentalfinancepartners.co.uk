@@ -122,5 +122,6 @@ faqs:
 
 <h2>Related Reading</h2>
 <ul>
+<li><a href="/blog/incorporation-and-company-structures/director-loan-account-property-company-mechanics">Director Loan Account Mechanics: s.455, s.464C, BIK and L2P Refunds</a></li>
 <li><a href="/blog/incorporation-and-company-structures/property-company-dividend-tax">Property Company Dividend Tax: How Much Will I Pay?</a></li>
 </ul>

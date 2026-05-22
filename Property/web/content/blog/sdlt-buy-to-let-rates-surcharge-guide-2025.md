@@ -22,7 +22,7 @@ faqs:
   - question: "Do limited companies pay the same SDLT as individual landlords?"
     answer: "A limited company purchasing residential property pays the standard SDLT bands plus the 5% additional dwellings surcharge on every residential purchase, regardless of whether it owns other property. Unlike individuals, companies cannot escape the surcharge by claiming the new acquisition is their main residence. Companies acquiring residential property valued over £500,000 may also fall into ATED unless a relief such as the property letting business relief applies."
   - question: "What are the SDLT rates if a company buys six or more residential properties in one transaction?"
-    answer: "Where six or more residential dwellings are acquired in a single transaction, the buyer can elect to apply the non-residential SDLT rates instead (0% on the first £150,000, 2% on £150,001 to £250,000, 5% above £250,000) and no additional dwellings surcharge applies. This is set out in paragraph 7 of Schedule 6B FA 2003 and is often more efficient than Multiple Dwellings Relief, which was abolished for transactions completing on or after 1 June 2024."
+    answer: "Where six or more separate dwellings are acquired in a single transaction, they are automatically treated as non-residential property for SDLT under s.116(7) FA 2003. The non-residential rates apply (0% on the first £150,000, 2% on £150,001 to £250,000, 5% above £250,000) and no additional dwellings surcharge applies. This is a statutory deeming rather than an election, so no claim is needed; the buyer simply reports on the non-residential basis. The rule survives the abolition of Multiple Dwellings Relief (for transactions completing on or after 1 June 2024) and remains the principal portfolio-friendly route for genuine bulk acquisitions."
   - question: "Does the non-UK resident SDLT surcharge apply to limited companies?"
     answer: "Yes. A further 2% surcharge applies to non-UK resident purchasers of residential property, including companies. A company is treated as non-resident for SDLT if it is not UK-resident for corporation tax or if it is a close company controlled by non-UK resident participators. UK-incorporated companies are not automatically exempt. The 2% sits on top of both the standard rates and the 5% additional dwellings surcharge."
   - question: "Can a limited company claim first-time buyer relief?"
@@ -118,9 +118,9 @@ faqs:
 
 <p>If an individual buyer subsequently meets the 183-day test in the 12 months after completion, they can reclaim the 2% surcharge through HMRC's online service. This does not apply to companies.</p>
 
-<h2>Six or more dwellings: the non-residential election</h2>
+<h2>Six or more dwellings: automatic non-residential treatment</h2>
 
-<p>One of the few genuinely useful SDLT planning levers for portfolio investors is the rule allowing six or more residential dwellings acquired in a single transaction to be treated as non-residential. The buyer makes an election on the SDLT return and the non-residential bands then apply with no HRAD surcharge.</p>
+<p>One of the few genuinely useful SDLT planning levers for portfolio investors is the rule at <a href="https://www.legislation.gov.uk/ukpga/2003/14/section/116">s.116(7) FA 2003</a>: where six or more separate dwellings are the subject of a single transaction, the dwellings are automatically deemed not to be residential property for SDLT. The non-residential bands then apply and no HRAD surcharge is due. This is a statutory deeming, not an election; the buyer reports on the non-residential basis and no claim mechanism is required.</p>
 
 <table>
 <thead>
@@ -133,9 +133,9 @@ faqs:
 </tbody>
 </table>
 
-<p>On a £1.2 million portfolio of six flats bought from a single seller in one transaction, the residential-with-HRAD route would cost roughly £125,000 in SDLT, whereas the non-residential election caps the bill at around £49,500. The saving is substantial enough that "deal stacking" (combining smaller deals into a single SPA) is sometimes worthwhile for serious portfolio buyers, though it needs to be commercially genuine and not a contrived structure.</p>
+<p>On a £1.2 million portfolio of six flats bought from a single seller in one transaction, the residential-with-HRAD route would cost roughly £125,000 in SDLT, whereas the automatic non-residential treatment caps the bill at around £49,500. The saving is substantial enough that "deal stacking" (combining smaller deals into a single SPA) is sometimes worthwhile for serious portfolio buyers, though it needs to be commercially genuine and not a contrived structure.</p>
 
-<p>Multiple Dwellings Relief, which previously offered an alternative averaging mechanism, was abolished for transactions with an effective date on or after 1 June 2024. The six-dwellings election is now the principal portfolio-friendly route.</p>
+<p>Multiple Dwellings Relief, which previously offered an alternative averaging mechanism, was abolished for transactions with an effective date on or after 1 June 2024. The s.116(7) six-dwellings rule is now the principal portfolio-friendly route.</p>
 
 <h2>Replacement of main residence: the individual landlord lever</h2>
 
