@@ -209,51 +209,68 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged from assignment (`iht-property-investors-decision-framework-2026-onwards`).
+- **Final category:** unchanged (`Landlord Tax Essentials`).
+- **H1 chosen:** "An IHT Decision Framework for UK Landlords: 2026 Onwards"
+- **Meta title chosen:** "UK Landlord IHT Decision Framework: 2026 Onwards" (48 chars)
+- **Why these vs other options:** Decision-led phrasing leads with reader's question ("framework" not "guide" to differentiate from the descriptive pillar). "2026 Onwards" anchors the temporal frame for the reform package (April 2026 BPR/APR cap, April 2027 pension inclusion, April 2030 freeze end). Meta description (145 chars) names the three concrete reform anchors so SERP snippet signals the page's distinct angle vs the existing IHT-on-rental-property pillar.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/tips-for-avoiding-inheritance-tax-in-uk/ — numbered tactical list (10 mitigations) but content truncated after item 8; useful for "what reader-language do specialist firms use" (settles on "avoiding"/"reduce"/"save" not "mitigating"). No statute citations.
+- https://www.ukpropertyaccountants.co.uk/uk-government-contemplates-inheritance-tax-reform/ — predates the actual 2024-25 reform package (Sep 2023 article); does NOT cover BPR/APR cap or pension inclusion. Not directly useful for this page; discovery-log angle: competitors haven't refreshed for post-Budget-2024 reality.
+- https://www.ukpropertyaccountants.co.uk/why-more-families-pay-inheritance-tax-now/ — strong fiscal-drag framing with worked example showing a £900k-to-£1.5m couple now pays £200k IHT (versus £0 ten years prior). Useful confirmation of the "more landlords now in scope" thesis but light on landlord-specific angle.
+- https://www.gov.uk/government/publications/agricultural-property-relief-and-business-property-relief-reforms — gov.uk summary page only; the underlying HMRC technical note links out separately. House positions §15.4 (verified 2026-05-22) has the locked mechanics; relied on house positions over what the gov.uk summary page exposed.
+- https://www.gov.uk/government/publications/changes-to-the-tax-treatment-of-pensions-on-death — returned 404 on fetch. Discovery log: gov.uk URL needs a fresh search for the pension-IHT publication. House positions §15.5 (verified 2026-05-22) covered the mechanics; not blocking.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `inheritance-tax-rental-property-uk-guide` — THE descriptive IHT pillar. This page is positioned as its decision-led counterpart per the brief's framing differentiator. Outlines are deliberately structurally different: pillar uses descriptive labels ("The IHT mechanics: what applies to a landlord's estate"), this page uses decision-led questions ("Have you actually got an IHT problem?", "Which mitigations still work for a BTL landlord?"). FAQs are decision-oriented (sizing, age, trigger events) not descriptive (rates, mechanics). Bidirectional link in body.
+- `fic-iht-treatment-bpr-myth` — referenced as the deep page on the FIC+BPR myth; this page mentions the myth and points readers there rather than re-arguing Pawson at length.
+- `business-property-relief-rental-property-iht` — older shallow BPR page; linked in the "what doesn't work" section. INTERNAL_LINK flagged: this older page should add a forward link to the decision framework.
+- `cgt-gifting-property-family-members-uk` — comprehensive CGT side of gifting; linked at the point in this page where the CGT cost of PETs is mentioned, so reader can hop without re-explaining s.17 mechanics.
+- `family-investment-company-property-worth-it` — FIC framework decision page; linked at the FIC-share-dilution mitigation paragraph.
+- `landlord-tax-changes-2026-complete-guide` — cross-cutting "what's changing" page; linked at the closing "lateral reading" paragraph.
+- `property-investment-exit-strategy-planning-guide` — disposal-side page; linked at the closing paragraph as the lateral exit lens.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- s.102 Finance Act 1986 (Gifts with Reservation; legislation.gov.uk) — for GROB anchor.
+- IHTA 1984 (legislation.gov.uk) — for RNRB downsizing addition (ss.8FA-8FE) and Schedule A1 (look-through for offshore corporate envelopes).
+- HMRC IHTM25000 (Business Relief manual) — for the wholly-or-mainly-trading test reference.
+- Pawson v HMRC [2013] UKUT 050 — for the BPR-rental-property settled position.
+- Autumn Budget 2024 (announcement context for BPR/APR cap and pension inclusion) — referenced narratively, not as a single URL because house positions §§15.4 + 15.5 carry the verified mechanics.
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide` — descriptive pillar; opening directs readers there for mechanics first.
+- `/blog/landlord-tax-essentials/business-property-relief-rental-property-iht` — BPR-for-BTL detail; linked from the "what doesn't work" section.
+- `/blog/incorporation-and-company-structures/fic-iht-treatment-bpr-myth` — FIC + BPR myth deep dive.
+- `/blog/incorporation-and-company-structures/family-investment-company-property-worth-it` — FIC framework decision.
+- `/blog/capital-gains-tax/cgt-gifting-property-family-members-uk` — CGT side of gifting (s.17 + holdover).
+- `/blog/landlord-tax-essentials/landlord-tax-changes-2026-complete-guide` — cross-cutting 2026 changes.
+- `/blog/portfolio-management/property-investment-exit-strategy-planning-guide` — lateral exit lens.
+- Forward-link to A2 (`iht-gifts-with-reservation-of-benefit-property`) removed pre-build because the target doesn't exist yet; will be added back as part of the A2 write step.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After the Khan-estate sizing worked example — "Worried your sizing looks bigger than expected?" — high-intent moment because the reader has just seen a £760k bill they may not have expected.
+- After the decision matrix — "The matrix gets you to a starting hypothesis, not a final plan." — converts readers who have used the matrix to find their band.
+- After the closing "When to act" paragraph — converts readers who reach the end actively engaged with the framework.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass. `cd Property/web && npm run build` succeeded after running `npm install` in the worktree (node_modules absent on freshly-created worktree, expected).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13 Question entries in JSON-LD, 13 faqs in frontmatter).
+- Em-dashes in markdown: 0.
+- Tailwind classes in markdown: 0.
+- Meta title length: 48 chars (≤62 OK).
+- Meta description length: 145 chars (≤158 OK).
+- Internal links resolve: yes (8 unique internal blog links, all targets exist; forward-link to A2 was removed pre-build).
+- monitored_pages row inserted: yes (90-day window from 2026-05-22).
+- Body word count: 3,240.
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- INTERNAL_LINK: existing `business-property-relief-rental-property-iht` should add a forward link to this decision framework so BTL readers landing on the BPR page have a route to the planning lens. The BPR page is shallow on planning; this framework gives the action steps.
+- INTERNAL_LINK: existing `inheritance-tax-rental-property-uk-guide` (descriptive pillar) should add a back-link to this decision framework as the "decision-led companion" so pillar readers can hop to the planning lens after the mechanics.
+- DISCOVERY (logged in discovery log, not flag): the gov.uk pensions-on-death publication URL from the brief returned 404; needs a fresh search for the canonical URL. Not blocking because house positions §15.5 carries the verified mechanics.
 
 ### 2-3 sentence summary
-<freeform>
+Wave 2 A1 pillar shipped: decision-led IHT framework for UK landlords positioned as the counterpart to the existing descriptive pillar. Page sizes exposure on a 2027/28 basis (post-pension-inclusion), walks four surviving mitigations (lifetime gifting outside GROB, life cover in trust, FIC share dilution, downsize-and-gift), names the three that don't work for pure BTL (BPR, pension shelter post-2027, offshore corporate envelopes), provides an age x estate-band decision matrix, and closes with a worked decision (Mark and Priya, Bristol, £2.8m estate). 3,240 body words, 13 FAQs, all six verifications pass, monitored_pages registered.
 
