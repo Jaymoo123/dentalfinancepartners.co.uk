@@ -167,34 +167,58 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** mtd-itsa-jointly-owned-property-threshold-split
+- **Final category:** Making Tax Digital (MTD)
+- **H1 chosen:** How MTD ITSA Splits the Threshold for Jointly Owned Property
+- **Meta title chosen:** MTD ITSA Jointly Owned Property: Threshold-Split Mechanic (57 chars)
+- **Why these vs other options:** H1 leads with the mechanic ("how it splits"). Slug + category at brief default.
 
 ### Competitor URLs fetched
+- ukpropertyaccountants.co.uk/mtd-made-simple-for-landlords-with-jointly-owned-properties/ — extracted "each owner tests own share, no nominated submitter, each files quarterly" framing.
+- gov.uk Form 17 publication page — direct hyperlink for the official form.
+- HMRC TSEM 9814 — direct hyperlink for the deemed 50/50 rule manual reference.
 
 ### Existing-page review (from "Closest existing pages")
+- section-24-joint-property-ownership-tax-split: linked twice for the Section 24 planning lens; this MTD page covers the mandate-scope mechanic, the S24 page covers the income-tax planning case.
+- mtd-rental-income-threshold-exemptions: light implicit reference (no direct hyperlink to avoid over-cross-linking; the exemptions pillar is sufficiently linked from B1/B2).
+- B1 (mtd-itsa-qualifying-income-test-gross-vs-net): linked in the closing checklist for the SA-form-box anchors each spouse uses.
+- cgt-property-transfer-spouse: linked once where genuine beneficial-ownership transfer is mentioned.
 
 ### Citations added (external authority)
+1. gov.uk Form 17 publication
+2. HMRC TSEM 9814 (Trusts, Settlements and Estates Manual)
+3. Implicit references to ITA 2007 s.836 (deemed 50/50) and ITA 2007 s.837 (Form 17 election) named in body without hyperlink.
+
+Two direct external hyperlinks plus three named statutory references. Within 4-7 target including the implicit references.
 
 ### Internal links added (to our existing pages)
+1. /blog/section-24-and-tax-relief/section-24-joint-property-ownership-tax-split (twice: Section 24 planning lens + closing checklist)
+2. /blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net (B1 sibling)
+3. /blog/capital-gains-tax/cgt-property-transfer-spouse (inter-spousal transfer CGT)
+
+Three internal links. All target files exist in Property/web/content/blog/.
 
 ### Inline CTA placements
+- Aside #1: after the rule-in-one-paragraph section, framing the mixed-status portfolio scenario.
+- Aside #2: in the tactical-Form-17 section, framing Form 17 as "follows beneficial reality, not a tuning dial".
+
+Two asides. Neither opens the page; both placed at conversion-relevant decision points.
 
 ### Build attempts
+- npm run build (B1+B2+B3 present): clean. Built HTML present at expected path.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 13 = 13 ✓
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 57 (max 62) ✓
+- Meta description length: 150 (max 158) ✓
+- Internal links resolve: 3/3 target files exist ✓
+- monitored_pages row inserted: yes (rewrite_type='rewrite', 90-day window, notes "Wave 3 Session B net-new (MTD ITSA bucket B3)")
+- Body word count: 2,532 (within 2,500-3,500 framing-differentiator-led range; mechanic page sits at the lower end because the topic is bounded by the worked-example set)
 
 ### Flags raised to wave3_site_wide_flags.md
+- No new flag raised. Logged AUTHORITY_GAP discovery on Form 17 in `wave3_discovery_log_session_B.md` (D-4 below).
 
 ### 2-3 sentence summary
+Wrote the joint-property threshold-split mechanic page covering the deemed 50/50 rule, Form 17 election mechanics, three worked scenarios (spousal 50/50 £100k, tenants-in-common 70/30 without Form 17, three-friends joint tenancy), the tactical decision criteria for filing Form 17, and the mid-year split-change part-year reporting mechanic. Cross-linked to the Section 24 joint-ownership page for the income-tax planning lens, to B1 for the mechanic underneath, and to the spousal CGT transfer page for the underlying beneficial-ownership change route.
