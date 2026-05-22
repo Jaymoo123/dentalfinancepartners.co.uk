@@ -174,34 +174,60 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** periodic-tenancy-default-ast-conversion-mechanics (no override)
+- **Final category:** landlord-tax-essentials (no override)
+- **H1 chosen:** "From Fixed-Term to Periodic: How Existing ASTs Converted on 1 May 2026"
+- **Meta title chosen:** "AST to Periodic Conversion: 1 May 2026 Mechanics for Landlords" (62 chars, at the limit)
+- **Why these vs other options:** Lead with the form change ("AST to Periodic Conversion") which is the searcher's mental model, then the date anchor (1 May 2026) and the audience tag (Landlords). H1 mirrors the journey ("From X to Y") to differentiate from the more legalistic competitor titles.
 
 ### Competitor URLs fetched
+- https://www.ukpropertyaccountants.co.uk/a-complete-guide-to-periodic-tenancy/ (WebFetch) — confirmed contractual vs statutory periodic distinction, automatic AST conversion on 1 May 2026, deposit-protection penalty multiplier difference (1-3x contractual vs 2-6x statutory historically), 31 May 2026 Information Sheet deadline with £7,000 lower-band penalty.
+- https://www.legislation.gov.uk/ukpga/2025/26/contents (relied on earlier C1/C2 WebFetch research) — confirmed s.1 (periodic with max one-month rent period) + s.2 (AST abolition).
+- https://www.legislation.gov.uk/uksi/2026/421/made (relied on earlier C1/C2 research) — confirmed reg.2 saving provisions for fixed-term ASTs at commencement.
+- https://www.legislation.gov.uk/ukpga/1988/50/section/5 (referenced; relied on earlier research) — the old s.5 mechanic now overtaken.
 
 ### Existing-page review (from "Closest existing pages")
+- `renters-rights-act-2026-tax-implications-landlords` — read; tax-implications framing not conversion mechanics. Forward-linked at tax-side closing. F-1 legacy-rebuild candidate.
+- C1 `rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence` (written earlier session) — sibling. C3 forward-links in intro.
+- C2 `section-21-abolition-uk-landlord-possession-guide-2026` (written earlier session) — sibling. C3 forward-links in intro.
+- `landlord-tax-deductions-uk-2026-complete-list` — forward-linked on the revenue / capital fee boundary.
+- `first-time-landlord-tax-guide-everything-you-need-to-know` — forward-linked at the pillar closing.
+- Forward-mention only (no hyperlink) to C8 (tenancy-agreement-clause-template) since it doesn't exist on branch yet. Will back-patch via the F-7 batch.
 
 ### Citations added (external authority)
+- Renters' Rights Act 2025 (2025 c. 26) s.1 (periodic with max one-month rent period, inserts new s.4A HA 1988), s.2 (AST abolition), ss.8-9 (advance rent prohibition), s.11 (anti-contracting-out).
+- Housing Act 1988 paragraph 3 Schedule 1 (7+ year fixed-term carve-out), paragraph 10 Schedule 1 (resident landlord carve-out).
+- Housing Act 1988 s.1 (individual occupying as principal home — company-let carve-out implicit).
+- Landlord and Tenant Act 1954 Part II (business tenancy carve-out).
+- SI 2026/421 reg.2 (transitional saving provisions, automatic AST conversion).
+- ITTOIA 2005 s.272 (revenue-deduction framework for property businesses).
 
 ### Internal links added (to our existing pages)
+- /blog/landlord-tax-essentials/section-21-abolition-uk-landlord-possession-guide-2026 (intro)
+- /blog/landlord-tax-essentials/rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence (intro)
+- /blog/landlord-tax-essentials/renters-rights-act-2026-tax-implications-landlords (closing)
+- /blog/landlord-tax-essentials/landlord-tax-deductions-uk-2026-complete-list (closing)
+- /blog/landlord-tax-essentials/first-time-landlord-tax-guide-everything-you-need-to-know (closing)
+- Forward-mention to C8 (no hyperlink) for tenancy-agreement-clause template — back-patch deferred.
 
 ### Inline CTA placements
+- Aside 1: after the monthly-max rent-period rule section, at the moment a landlord with mixed rent-period tenancies (legacy 6-monthly or annual) realises the operational audit need.
 
 ### Build attempts
+- 1st attempt: clean. 384 static pages (+1 vs C2 build).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 == 14 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 62 (at the ≤62 limit, no slack) ✓
+- Meta description length: 157 (≤158) ✓
+- Internal links resolve: 5 of 5 ✓
+- monitored_pages row inserted: id 129 ✓
+- Body word count: 2,330 (below the 2,500-3,500 typical band; explicit calibration note: this is a single-structural-change page where the conversion mechanic itself is narrow; the competitor median for periodic-tenancy guides is around 2,000-2,500 words; the framing-differentiator-led discipline per section 16.16 says to write to topic, not target. The 14 FAQs and the carve-out walkthrough cover the substantive ground; padding to reach 2,800 would dilute the operational reference.)
 
 ### Flags raised to wave3_site_wide_flags.md
+- None new; F-7 (already filed by C1) extends to cover the C3 forward-mention of C8.
 
 ### 2-3 sentence summary
+Wrote C3 at 2,330 body words. Conversion-mechanics page covering the 1 May 2026 automatic transition of existing ASTs to periodic assured tenancies under s.1 + s.2 RRA 2025 and SI 2026/421 reg.2, the monthly-maximum rent-period rule, the landlord-side compliance checklist (with 31 May 2026 Information Sheet deadline + £7,000 lower-band penalty), the six categories of carve-out (7+ year leases, business tenancies, company lets, holiday lets, resident-landlord lets, tied accommodation), the guarantor-agreement survival question with drafting analysis, the lender + insurer angle, and a worked conversion scenario. 14 FAQs, 1 aside, build clean. Word count below the 2,500-3,500 band — explicit calibration in Decisions block per the framing-led discipline (section 16.16 Wave 2 lesson).
