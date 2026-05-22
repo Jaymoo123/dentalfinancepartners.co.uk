@@ -207,51 +207,66 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged: `tax-treaties-property-investors-treaty-framework-guide`
+- **Final category:** unchanged: `Non-Resident Landlord Tax` (URL segment `non-resident-landlord-tax`)
+- **H1 chosen:** "UK Tax Treaties for Property Investors: The Framework Guide"
+- **Meta title chosen:** "UK Tax Treaties for Property Investors: Framework Guide" (55 chars)
+- **Why these vs other options:** Pillar framing is the explicit differentiator vs the NRL statutory guide. Title leads with "UK Tax Treaties for Property Investors" (primary query stem) and tags "Framework Guide" to claim pillar status. Avoided "Complete Guide" which is the legacy DeepSeek template phrase.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- uklandlordtax.co.uk/tax-guide/double-tax-agreements-dtas/ — 1,931 words but only "Overview" + nav cruft. Useful confirmation that competitors don't go deep on the OECD article framework. No worked examples, no NRCGT override note.
+- landlordstax.co.uk/dont-pay-twice... — 943 words. Cleanly states "UK always has first taxing rights on income and gains from Land and Buildings situated in the UK". Useful baseline plain-English framing but no article-level detail.
+- gov.uk/government/collections/tax-treaties — canonical country directory. Linked as the place to find your specific bilateral text.
+- gov.uk/hmrc-internal-manuals/international-manual/intm150000 — INTM150000 index page. Useful as "if you want to go deeper read the manual". Linked.
+- gov.uk HS304 helpsheet — practical claim form for non-resident relief. Linked as the operational claim mechanism.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `non-resident-landlord-scheme-uk-complete-guide` — 76-line legacy DeepSeek page on the statutory NRL withholding scheme. Framing differentiator separates cleanly: this page is the treaty-allocation counterpart. Linked bidirectionally; no body overlap.
+- `non-resident-cgt-uk-property-rates-reporting` — 138-line legacy page on NRCGT rates and 60-day reporting. This page references it from §5 (Article 13) and links once.
+- `nrl-withholding-tax-20-percent-basic-rate-deduction` — applied 20% withholding page. Linked from §7 (Why NRL is statutory).
+- `uk-property-income-expats-tax-obligations-explained` — broad expat overview; linked from final hand-off section.
+- `non-resident-landlord-self-assessment-filing-requirements` — operational SA filing page; linked from §10.
+- `sdlt-non-resident-2-percent-surcharge` — different tax, lateral reference for the "treaty does not displace SDLT" point in FAQ 11.
+- `non-resident-cgt-selling-uk-property-overseas-guide` — applied disposal page; not directly linked (siblings have it covered); flagged as a back-link candidate.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- OECD Model Tax Convention 2017 (oecd.org)
+- gov.uk tax treaties hub
+- HMRC International Manual INTM150000
+- HMRC HS304 helpsheet
+- TIOPA 2010 (legislation.gov.uk)
+- TCGA 1992 (legislation.gov.uk, for s.1A / Sch 1A-1B-4AA reference)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting` — operational NRCGT rates from §5
+- `/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide` — NRL statutory pillar from §7 and the hand-off list
+- `/blog/non-resident-landlord-tax/nrl-withholding-tax-20-percent-basic-rate-deduction` — 20% withholding mechanics from §7
+- `/blog/non-resident-landlord-tax/non-resident-landlord-self-assessment-filing-requirements` — SA filing from §10
+- `/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained` — broad expat overview from hand-off
+- `/blog/non-resident-landlord-tax/sdlt-non-resident-2-percent-surcharge` — SDLT layer from hand-off
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After §1 (What a tax treaty actually does) — landed the central "treaty answers happen in two places" point; high-intent moment for readers realising they need framework-level help.
+- After §4 (Article 6 immovable property) — landed the situs-state allocation; this is where overseas-resident readers turn to needing UK-side help.
+- After §10 (How to claim treaty relief: HS304, SA106, MAP) — MAP time-limit framing is high urgency; ideal terminal CTA before the hand-off section.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass. `next build` clean. Required `npm install` first in worktree (missing node_modules).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13/13)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 55 chars
+- Meta description length: 146 chars
+- Internal links resolve: yes (all six)
+- monitored_pages row inserted: yes
+- Body word count: 3,939 (pillar range 3,500-4,500 per §9 NETNEW_PROGRAM)
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- INTERNAL_LINK candidate: existing `non-resident-landlord-scheme-uk-complete-guide` could add a forward-link to this new framework page in its "Related guides" area. Defer to orchestrator (not a session-side fix on legacy page).
+- SITE_TEMPLATE em-dash: built HTML has one em-dash in the header brand-wordmark area ("Accountants UK — Get your property tax sorted"). Affects every site page, not this page's content. Flagging once for the wave; not blocking.
 
 ### 2-3 sentence summary
-<freeform>
+B1 framework pillar shipped at 3,939 body words / 13 FAQs covering the OECD Model 2017 article map (Art 4 / 6 / 13 / 23 / 24 / 25), the UK statutory overrides (NRCGT under TCGA 1992 s.1A and Schedules 1A/1B/4AA, NRL withholding under FA 1995 Sch 23 and SI 1995/2902), the credit-vs-exemption methods under TIOPA 2010, and the practical HS304 / SA106 / MAP claim routes. A Marco-in-Dubai worked example illustrates the no-tax-jurisdiction asymmetry without overlapping the dedicated UK-UAE bilateral page (B6). The page positions itself as the head of the bilateral cluster (B2-B10) and links bidirectionally with the statutory NRL guide to enforce the "treaty allocates, statute charges" frame.
 

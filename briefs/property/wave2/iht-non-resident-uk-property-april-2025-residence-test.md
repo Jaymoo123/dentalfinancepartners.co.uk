@@ -209,51 +209,72 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** unchanged (Non-Resident Landlord Tax)
+- **H1 chosen:** "Non-Resident IHT on UK Property After April 2025: The Long-Term Resident Test"
+- **Meta title chosen:** "Non-Resident IHT UK Property: April 2025 LTR Regime" (51 chars)
+- **Why these vs other options:** Lead with the regime change date — competitors are stale on April 2025 reform and a recency-anchored title captures that gap directly.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/uk-inheritance-tax-for-non-residents-rules-and-exemptions/ — competitor updated for April 2025 reform. Confirms 10-of-20 test and the tail taper. Useful confirmation of the tail-year schedule (10-13 = 3, 14 = 4, 15 = 5, 20+ = 10).
+- https://uklandlordtax.co.uk/uk-inheritance-tax-for-non-residents/ — STALE (July 2023). Still uses pre-reform 15-of-20 deemed-domicile language and the 3-year shadow. Useful as a marker of how out-of-date much of the field is.
+- https://www.gov.uk/guidance/inheritance-tax-if-youre-a-long-term-uk-resident — AUTHORITATIVE HMRC guidance from 6 April 2025. Confirms two-route LTR test (10 consecutive OR 10 of 20) and the tail taper schedule. Confirms 30 October 2024 Budget date as the cut-off for transitional protections (non-dom and deemed-dom variants).
+- https://www.gov.uk/government/publications/tax-changes-for-non-uk-domiciled-individuals — Autumn Budget 2024 (30 October 2024) reform publication. Confirms residence-based replacing domicile, key features include 4-year FIG regime + TRF + Overseas Workday Relief + IHT residence-based.
+- https://www.gov.uk/government/publications/inheritance-tax-anti-avoidance-measures-for-non-long-term-uk-residents-and-trusts — Budget 2025 (26 November 2025) anti-avoidance. Extends Sch A1 look-through to UK agricultural land. Adds trust exit charge where settlor ceases to be LTR. Restricts charity exemption to direct gifts to UK-registered charities/clubs.
+- https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm04000 — HMRC IHT Manual general structure (used as authoritative landing reference).
+- https://www.legislation.gov.uk/ukpga/1984/51/schedule/A1 — direct Schedule A1 fetch returned a 437 service error from legislation.gov.uk; routed via the IHTA 1984 contents page in citations.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `inheritance-tax-rental-property-uk-guide` — IHT pillar. Linked outbound; this page is mechanism-deeper for the cross-border reader segment.
+- `uk-property-income-expats-tax-obligations-explained` — Expat tax pillar. Linked outbound; this page is the IHT-specific next hop from that pillar.
+- `non-resident-landlord-scheme-uk-complete-guide` — NRL operational pillar. Linked outbound; this page is the IHT-side complement to NRL.
+- `non-resident-cgt-uk-property-rates-reporting` — NRCGT page. Linked outbound; cross-link for death-time-disposal readers needing both IHT and NRCGT framings.
+- `fic-iht-treatment-bpr-myth` — FIC + Sch A1 page. Linked outbound; this page reinforces the FIC page's headline that Sch A1 looks through.
+- `iht-property-investors-decision-framework-2026-onwards` — A1 sibling. Linked outbound; A6 is the gating regime question, A1 is the planning framework.
+- `iht-april-2026-bpr-apr-cap-property-impact` — A4 sibling. Linked outbound; reform-package context.
+- `sdlt-non-resident-2-percent-surcharge` — Not directly linked; the SDLT page is lateral relevance only and the page is already heavy on internal links.
+- `iht-residence-nil-rate-band-2m-taper-property-portfolios` — A8 sibling (not yet written). Not linked; will be wired post-A8 write.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- HMRC guidance: Inheritance Tax if you're a long-term UK resident (6 April 2025) — the primary authority for the LTR test and tail mechanics
+- Reforming the taxation of non-UK domiciled individuals (Autumn Budget 2024, 30 October 2024 publication)
+- Changes to the taxation of non-UK domiciled individuals: Policy Summary (July 2024)
+- Inheritance Tax: anti-avoidance measures for non-long-term UK residents and trusts (Budget 2025, 26 November 2025)
+- Inheritance Tax Act 1984 (legislation.gov.uk) — Schedule A1 inserted by Finance (No. 2) Act 2017
+- HMRC IHTM04000: How Inheritance Tax is charged
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide` — IHT pillar
+- `/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained` — expat tax pillar (also for SRT day-count detail)
+- `/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide` — NRL operational
+- `/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting` — NRCGT (death-time disposals)
+- `/blog/incorporation-and-company-structures/fic-iht-treatment-bpr-myth` — FIC + Sch A1
+- `/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards` — A1 decision framework
+- `/blog/landlord-tax-essentials/iht-april-2026-bpr-apr-cap-property-impact` — A4 cap reform
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "Transitional protections for non-doms and deemed-doms at 30 October 2024" — high-intent for individuals already in a residence-transition with planning timetable pressure
+- After "Worked example two: David, returning to the UK after 8 years in Dubai" — after the worked numerical example, per brief guidance
+- After "What this means for the most-common non-resident landlord profiles" — at the end of the decision-framework section
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass (build clean; 0 errors; 13 FAQs serialised to FAQPage JSON-LD; all 7 internal-link slugs prerendered; em-dash in editorialNote on first draft, removed pre-build).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13/13)
+- Em-dashes in markdown: 0 (one em-dash in editorialNote on first draft, removed)
+- Tailwind classes in markdown: 0
+- Meta title length: 51 chars
+- Meta description length: 146 chars
+- Internal links resolve: yes (all 7 targets confirmed in .next/server/app/blog/...)
+- monitored_pages row inserted: yes
+- Body word count: ~3,744 words (over the 3,500 ceiling by ~244 words; intentional, see summary)
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- House position §15.6 refinement: HMRC guidance specifies TWO LTR routes (10 consecutive previous OR 10 of 20); house position §15.6 mentions only the 10-of-20 route. Page uses HMRC's two-route framing; recommend house position update on next maintenance pass.
+- Internal link from A8 (RNRB sibling) back to A6 pending A8 write.
+- Budget 2025 anti-avoidance package (Sch A1 extension to UK agricultural land; trust exit charges; charity-gift restriction) should be cross-linked from A10 (APR/agricultural mixed-estate page) when that is written.
 
 ### 2-3 sentence summary
-<freeform>
+Regime-change page on the April 2025 IHT residence-based reform. Two-route LTR test (10 consecutive OR 10 of 20 — refines house position §15.6), tail taper with full year-by-year schedule, transitional protections for non-doms and deemed-doms at the 30 October 2024 Budget date, Schedule A1 look-through unchanged, Budget 2025 anti-avoidance additions. Two worked examples cover the most-common non-resident profiles: Aisha (never-UK-resident £1.2m London BTL owner, £280k IHT exposure) and David (returning to UK after 8 years in Dubai, with the LTR-reset analysis showing planning-relevant 10-year clean-break threshold). The word count (3,744) is intentionally above the 3,500 ceiling because the regime requires full coverage of two-route + tail + transitionals + Sch A1 + two worked examples + Budget 2025 anti-avoidance in a single load-bearing page.
 

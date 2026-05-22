@@ -207,51 +207,67 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged (moving-to-australia-uk-rental-property-tax-pathway)
+- **Final category:** Non-Resident Landlord Tax (unchanged)
+- **H1 chosen:** Moving to Australia with a UK Rental Property: The Tax Pathway
+- **Meta title chosen:** Moving to Australia with a UK Rental: Tax Pathway (49 chars)
+- **Why these vs other options:** H1 mirrors the C6 Dubai sibling for set-coherence; meta title kept short for the SERP truncation budget while leading on the primary "moving to Australia" + "UK rental" query word order.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://uklandlordtax.co.uk/moving-to-australia-from-the-uk/ — outdated (2023, pre-non-dom-reform), thin, no FITO mechanics, no 50% CGT discount denial treatment; useful only to confirm the surface-level competitor framing.
+- https://www.gov.uk/government/publications/australia-tax-treaties — confirms 2003 Convention in force, MLI modifications effective from 1 Jan 2019 (WHT) and 6 Apr 2020 (Income Tax + CGT); used to anchor the treaty section.
+- https://www.gov.uk/guidance/paying-tax-on-rent-to-landlords-abroad — NRL operational mechanics (NRL4 letting agent reg, £100/week tenant threshold, NRLY by 5 July, NRL6 to landlord by 5 July, 30-day quarterly payment, 4-year record retention); confirmed the UK-side mechanics referenced in the page.
+- https://www.gov.uk/government/publications/non-residents-relief-under-double-taxation-agreements-hs304-self-assessment-helpsheet — HS304 helpsheet; confirms the practical claim mechanism for treaty relief, useful for setting expectations on the Australian FITO claim cycle.
+- https://www.gov.uk/tax-uk-income-live-abroad — confirms personal allowance entitlement framework for UK / EEA nationals; used to justify the personal-allowance retention claim for British expats in Australia.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `non-resident-landlord-scheme-uk-complete-guide` — NRL pillar; linked out from operational sequencing section. Not duplicated.
+- `uk-property-income-expats-tax-obligations-explained` — expats obligations pillar; linked out from the "Sequencing" wrap-up paragraph. The C7 page is the Australia-specific applied version.
+- `nrl-approval-receive-rent-gross-hmrc-guide` — NRL1 mechanic; not directly linked in body (kept tight to 6 internal links to avoid linking inflation); the operational sequence references NRL1 directly.
+- `non-resident-cgt-selling-uk-property-overseas-guide` — NRCGT operational page; the C7 page references the NRCGT mechanics inline without linking out (the 60-day clock detail is brief and tactical).
+- `leaving-uk-landlord-12-month-pre-departure-checklist` — C1 pillar; linked out from pre-departure phase paragraph.
+- `moving-to-dubai-uk-rental-property-tax-pathway` — sibling pathway page; linked out from the closing "Sequencing" paragraph to enable asymmetric vs symmetric DTA contrast.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- 2003 UK-Australia Double Tax Convention (in force 17 Dec 2003; effective UK 6 Apr 2004 IT/CGT; MLI from 6 Apr 2020 IT/CGT)
+- TCGA 1992 section 1A (NRCGT charging provision) + section 10A (temporary non-residence 5-year recapture)
+- Section 264 ITTOIA 2005 (UK property income source rule)
+- Section 24 Finance (No.2) Act 2015 (finance cost restriction)
+- Income Tax Assessment Act 1997 (Australia): Division 770 (FITO), Section 768-910 (temporary resident concession), Section 115-25 and 115-105 (50% CGT discount and apportionment for non-resident periods), Section 104-10 (CGT event A1), Section 104-160 (CGT event I1)
+- Income Tax Assessment Act 1936 (Australia) section 6(1) (residence tests)
+- Tax Laws Amendment (2012 Measures No. 4) Act 2013, Schedule 7 (50% CGT discount denial for non-resident periods from 8 May 2012)
+- FA 2013 Schedule 45 (SRT and split-year)
+- SI 1995/2902 (NRL scheme regulations)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/srt-statutory-residence-test-landlord-decision-tree` — UK residence test cascade (C2)
+- `/blog/non-resident-landlord-tax/split-year-treatment-cases-1-8-landlord-departure-arrival` — Case 1 split-year departure mechanics (C3)
+- `/blog/capital-gains-tax/temporary-non-residence-5-year-cgt-recapture-property` — s.10A 5-year rule (C4)
+- `/blog/non-resident-landlord-tax/leaving-uk-landlord-12-month-pre-departure-checklist` — C1 pillar checklist
+- `/blog/non-resident-landlord-tax/moving-to-dubai-uk-rental-property-tax-pathway` — C6 sibling pathway, for asymmetric-treaty contrast
+- `/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained` — closing pillar pointer
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "The four ATO residency tests" — high-intent moment (visa-status / temporary resident concession is a binary expensive decision)
+- After "CGT: UK NRCGT, Australian CGT, and the 50% discount denial" — high-intent moment (discount apportionment needs modelling)
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — fail (build clean but internal link to s.10A page had wrong category slug: used /blog/non-resident-landlord-tax/temporary-non-residence-5-year-cgt-recapture-property; correct is /blog/capital-gains-tax/temporary-non-residence-5-year-cgt-recapture-property)
+- Attempt 2 — pass
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (14 Question entries match 14 frontmatter FAQs)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 49 chars
+- Meta description length: 146 chars
+- Internal links resolve: yes (6 of 6)
+- monitored_pages row inserted: yes
+- Body word count: ~3,490
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- F-16: C7 ↔ C6 bidirectional sibling-link confirmed (C7 links to C6 in closing; C6 already links to C7-shaped pages via wider expats pillar but no specific C7 backlink). Suggest post-merge edit on C6 to add a "for the symmetric Australia case see [Australia pathway]" sibling pointer. Low priority.
 
 ### 2-3 sentence summary
-<freeform>
+C7 anchors on the symmetric UK-Australia DTA as the structural wedge against C6's asymmetric Dubai treaty. FITO mechanics, the temporary resident concession (s.768-910 ITAA 1997), and the 50% CGT discount denial trap under TLA (2012 Measures No. 4) Act 2013 are the three distinct mechanics that carry the page; Helen / six-year Sydney secondment worked example carries the figures through pre-departure, concession period, post-concession permanent visa transition, and post-return CGT timing.
 

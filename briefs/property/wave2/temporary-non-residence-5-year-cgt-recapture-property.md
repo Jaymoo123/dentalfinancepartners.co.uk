@@ -205,51 +205,66 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged (`temporary-non-residence-5-year-cgt-recapture-property`)
+- **Final category:** unchanged (`capital-gains-tax`)
+- **H1 chosen:** Temporary Non-Residence: The 5-Year CGT Recapture Rule for Property Investors
+- **Meta title chosen:** Temporary Non-Residence: 5-Year CGT Recapture for Property (58 chars)
+- **Why these vs other options:** H1 leads with the topical noun phrase and the 5-year rule, qualified for property investors. Meta title compresses to retain "5-Year CGT Recapture" + "Property" in the SERP window. Slug verbatim from brief.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- HMRC CG26540 — verified the "5 years or less" wording (per house positions §17.3, verified 2026-05-22).
+- HMRC CG26500 contents page — entry chain to the s.10A manual.
+- HMRC CG26580 — application detail for individuals + deemed-return-year accrual mechanics.
+- legislation.gov.uk TCGA 1992 s.10A (substituted by FA 2019) — statutory anchor.
+- uklandlordtax.co.uk leaving-the-UK page — landlord-facing summary; gap = no NRCGT-vs-s.10A delineation, no pre-rebasing portion treatment.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `non-resident-cgt-selling-uk-property-overseas-guide` — NRCGT-on-UK-property pillar; linked from the "interaction with NRCGT" section. This page is the s.10A layer that sits ON TOP of NRCGT for the pre-rebasing portion + non-UK assets, not a duplicate.
+- `non-resident-cgt-uk-property-rates-reporting` — NRCGT rates pillar; linked from the interaction section. This page references NRCGT rates indirectly via the Tariq worked example.
+- `cgt-inherited-rental-property-calculation-uk` — adjacent CGT base-cost mechanics; not directly linked (one step removed from s.10A specifically).
+- `capital-gains-tax-selling-rental-property-uk` — CGT-on-sale pillar; linked from the SA reporting section as the underlying base-cost mechanic for the disposal computation.
+- `uk-property-income-expats-tax-obligations-explained` — expat-obligations pillar; linked from the SA reporting section as the expat hub.
+- `leaving-uk-landlord-12-month-pre-departure-checklist` (C1, same branch) — linked from the planning levers section as the operational sequencing companion.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- TCGA 1992 section 10A (substituted by Finance Act 2019) — the rule itself.
+- HMRC Capital Gains Manual CG26500 to CG26770 — the s.10A manual chain.
+- HMRC CG26540 — "5 years or less" wording (verified 2026-05-22).
+- TCGA 1992 section 1A + Schedules 1A / 1B / 4AA — the NRCGT regime (FA 2019 rewrite).
+- Section 264 ITTOIA 2005 — UK source rule for rental income.
+- Section 812 Income Tax Act 2007 — income tax parallel to s.10A.
+- Sections 18 and 130 TIOPA 2010 — unilateral foreign tax credit relief.
+- HMRC RDR3 — Statutory Residence Test guidance.
+- FA 2013 Schedule 45 — SRT statutory anchor.
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting` — NRCGT rates pillar.
+- `/blog/non-resident-landlord-tax/non-resident-cgt-selling-uk-property-overseas-guide` — NRCGT operational pillar.
+- `/blog/non-resident-landlord-tax/leaving-uk-landlord-12-month-pre-departure-checklist` — pre-departure operational sequencing.
+- `/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained` — expat obligations hub.
+- `/blog/capital-gains-tax/capital-gains-tax-selling-rental-property-uk` — CGT-on-sale base-cost mechanics.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After section "UK land owned at departure, the pre-rebasing portion only" — high-intent right after the &pound;150k pre-rebasing-portion arithmetic showing how s.10A doubles the CGT bill on a long-held UK rental flat sold during non-residence.
+- After section "Tariq: pre-2015 UK property holding, returns in year 3" — high-intent after the worked example showing the &pound;31,200 of additional CGT, the converted-prospect moment for landlord-emigrants in the s.10A window.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass (clean Next.js 15 build, FAQ schema count 13 matching frontmatter, but one em-dash discovered in FAQ 8 post-build).
+- Attempt 2 — pass after replacing the em-dash with a comma; rebuild clean, FAQ count still 13.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13 == 13)
+- Em-dashes in markdown: 0 (one in FAQ 8 found post-build, replaced with comma)
+- Tailwind classes in markdown: 0
+- Meta title length: 58 chars
+- Meta description length: 151 chars
+- Internal links resolve: yes (5 internal links, all to existing files in the worktree)
+- monitored_pages row inserted: yes
+- Body word count: approximately 3,150
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- none new this page
 
 ### 2-3 sentence summary
-<freeform>
+C4 ships as the focused s.10A landlord-emigrant treatment. Pins the test as "5 years or less" of non-residence plus the 4-of-7-prior-years pre-condition (per house positions §17.3, verified HMRC CG26540), distinguishes what s.10A actually catches (non-UK situs assets owned at departure + the pre-2015/pre-2019 rebasing portion of UK land gains) from what NRCGT catches anyway (post-rebasing UK land gains), and walks three contrast scenarios (Olivia, US ETFs + post-2015 UK flat, year-4 return; Tariq, pre-2015 UK flat, year-3 return; the Lawrences, 6-year non-residence escaping both layers). Distinct from C1 (timeline), C2 (SRT cascade), and C3 (split-year cases) by being a single-statute deep-dive on the recapture rule with the NRCGT interaction clarified.
 

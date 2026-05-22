@@ -209,51 +209,67 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged (`leaving-uk-landlord-12-month-pre-departure-checklist`)
+- **Final category:** unchanged (`non-resident-landlord-tax`)
+- **H1 chosen:** Leaving the UK: 12-Month Pre-Departure Checklist for Landlords
+- **Meta title chosen:** Leaving the UK: 12-Month Landlord Pre-Departure Checklist (57 chars)
+- **Why these vs other options:** H1 leads with the primary query phrase "Leaving the UK" plus the action concept ("Pre-Departure Checklist"). Meta title compresses to under 60 to keep SERP intact while keeping "Landlord" in the title. Slug kept verbatim because it already encodes pillar intent.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://uklandlordtax.co.uk/tax-guide/are-you-leaving-the-uk-permanently/ — long descriptive prose, no real timeline structure; gap = action sequencing.
+- https://www.landlordstax.co.uk/resources/guide-for-non-resident-landlords/leaving-the-uk/ — useful "main points" framing but charset-broken on direct fetch; gap = sequencing + NRL operational detail.
+- https://www.gov.uk/tax-right-retire-abroad-return-to-uk — authoritative P85 / SA109 guidance; cited.
+- https://www.gov.uk/tax-uk-income-live-abroad — entry-point page on UK income while abroad; cited.
+- https://www.gov.uk/guidance/paying-tax-on-rent-to-landlords-abroad — NRL agent and tenant duties; cited for the agent-side mechanic referenced under step 6.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `non-resident-landlord-scheme-uk-complete-guide` — overlap on NRL pillar; not linked from C1 (deliberate: avoiding duplication with the descriptive companion page, which itself links to this one). The descriptive companion `uk-property-income-expats-tax-obligations-explained` carries the single bidirectional anchor instead.
+- `nrl-approval-receive-rent-gross-hmrc-guide` — overlap on NRL1 process; C1 handles NRL1 timing only and points to it.
+- `nrl-withholding-tax-20-percent-basic-rate-deduction` — overlap on 20% withholding mechanic; C1 mentions in passing only.
+- `non-resident-landlord-self-assessment-filing-requirements` — overlap on SA timing; C1 covers departure-year SA109 only.
+- `uk-property-income-expats-tax-obligations-explained` — descriptive sibling; linked as the "what" page to C1's "when".
+- `non-resident-cgt-uk-property-rates-reporting` — overlap on NRCGT rates; C1 cites in the sell-or-hold section.
+- `returning-to-uk-after-non-residence-property-portfolio` — Wave 2 sibling C9, not yet written; forward link dropped to keep verify-internal-links clean. Flag raised in `wave2_site_wide_flags.md`.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- FA 2013 Schedule 45 (Statutory Residence Test) — referenced for SRT and split-year statutory anchor.
+- TCGA 1992 section 10A (temporary non-residence "5 years or less" rule) — referenced for sell-or-hold decision.
+- TCGA 1992 Schedule 4ZZA (NRCGT rebasing 5 April 2015) — referenced in worked example.
+- TCGA 1992 Schedule 4AA (NRCGT indirect disposals) — referenced for 60-day clock.
+- TCGA 1992 section 58 (no-gain no-loss spouse transfer) — referenced for pre-departure planning.
+- Section 56 ITA 2007 (personal allowance entitlement) — referenced for non-resident PA position.
+- Section 48 Landlord and Tenant Act 1987 — referenced for tenant service-address requirement.
+- Economic Crime and Corporate Transparency Act 2023 — referenced for Companies House director address.
+- HMRC RDR3 (SRT guidance), HMRC CG26540 (s.10A test), gov.uk NRL guidance, gov.uk leaving-the-UK and tax-on-UK-income-living-abroad guidance pages.
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained` — the descriptive companion; explicitly framed as the "what" pillar to C1's "when" pillar.
+
+(Three sibling forward-links to C4, C10, and B4 were drafted but removed because the sibling pages are not yet written. INTERNAL_LINK flag raised so the manager can add them post-merge.)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After section "Twelve to nine months out: the strategic decisions" — high-intent moment immediately after the SRT outcome decision, before lender / agent work begins.
+- After section "Update your will" (within "Six to three months out") — high-intent moment after the cross-border IHT and wills issue, where landlords frequently look for a referral.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass (clean Next.js 15 build, FAQ schema count 13 matching frontmatter).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13 == 13)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 57 chars
+- Meta description length: 155 chars
+- Internal links resolve: yes (one link to existing page; three sibling forward-links removed and flagged)
+- monitored_pages row inserted: yes
+- Body word count: approximately 3,200 (total file 5,083 minus ~1,800 frontmatter incl. 13 FAQs)
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- INTERNAL_LINK forward-link to C4 (`temporary-non-residence-5-year-cgt-recapture-property`) — drafted then removed; wire up after C4 lands.
+- INTERNAL_LINK forward-link to C10 (`nrcgt-indirect-disposal-property-rich-companies-shares`) — drafted then removed; wire up after C10 lands.
+- INTERNAL_LINK forward-link to B4 (`uk-spain-dta-property-uk-resident-spanish-holiday-home`) — drafted then removed; wire up after B4 lands.
+- INTERNAL_LINK back-link request: existing `uk-property-income-expats-tax-obligations-explained.md` should back-link to this new page as the action-led companion (current bidirectional partner page).
 
 ### 2-3 sentence summary
-<freeform>
+C1 ships as the pillar action-led 12-month pre-departure timeline. Structured into eight time-marker beats (12-9 months, 9-6, 6-3, 3-1, fortnight, departure week, first 90 days non-resident, plus the CGT sell-or-hold decision and common mistakes). Three anonymised personas (Mark and Sarah, David, the Owen family) recur across the time-markers to illustrate how the same checklist beat plays out under different destination, term, and portfolio scenarios. Distinct from the descriptive expat-obligations companion page by structure (timeline, not topic-by-topic) and by including the sell-or-hold worked example with rebasing-vs-section-10A trade-off.
 

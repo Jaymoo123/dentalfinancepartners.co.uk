@@ -205,51 +205,66 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged (non-dom-reform-april-2025-fig-regime-property-investors)
+- **Final category:** Non-Resident Landlord Tax (unchanged; sits alongside C6/C7 pathway pages)
+- **H1 chosen:** Non-Dom Reform April 2025: The FIG Regime for Property Investors
+- **Meta title chosen:** Non-Dom Reform April 2025: FIG Regime for Investors (51 chars)
+- **Why these vs other options:** Meta title leads on "Non-Dom Reform April 2025" (primary date-anchored query) plus FIG (instrument shorthand). H1 mirrors for set-coherence and includes "Property Investors" qualifier.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.landlordstax.co.uk/reform-of-the-non-dom-regime/ — competitor specialist landlord-tax firm; reasonable on the policy framing but materially outdated on the TRF: claims "three years from 5th April 2025" without distinguishing rates (12%/12%/15%). Misses the FIG 4-year window with 10-year lookback specificity, the 5 April 2017 CGT rebasing, and the property-investor scope split (FIG covers foreign property income, never UK).
+- https://www.gov.uk/government/publications/changes-to-the-taxation-of-non-uk-domiciled-individuals — Spring Budget 2024 technical note; primary source for the original two-year TRF design (12% rate) and the FIG 4-year/10-year mechanics. Used as primary authority for the FIG eligibility wording.
+- https://www.gov.uk/government/publications/reforming-the-taxation-of-non-uk-domiciled-individuals — Autumn Budget 2024 (30 October 2024) policy paper; primary source for the TRF extension to a third year at 15% and the residence-based IHT transition.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `non-resident-landlord-scheme-uk-complete-guide` (NRL pillar) — covers landlord-side NRL mechanics; not directly competing. C8 references the UK-source distinction (UK rentals always outside FIG, NRL applies if owner becomes non-resident later) but does not duplicate NRL mechanics.
+- `uk-property-income-expats-tax-obligations-explained` (expats obligations pillar) — descriptive companion; cleanly different angle (C8 is regime-change page on the April 2025 reform, not a generic obligations explainer). Not directly linked from C8 body to avoid linking inflation; the relationship is descriptive only.
+- `inheritance-tax-rental-property-uk-guide` (Landlord Tax Essentials IHT pillar) — the IHT side overlaps tangentially via the residence-based IHT transition; descriptive reference only in C8 body, no link (the more aligned page is Session A's A6 IHT residence test page on the A branch).
+- `non-resident-cgt-uk-property-rates-reporting` (NRCGT operational) — NRCGT mechanics are alongside but distinct (NRCGT for UK property non-resident disposal, FIG/rebasing for foreign-situs assets). Distinct mechanics, no linking needed.
+- `returning-to-uk-after-non-residence-property-portfolio` — C9 on this Session C plan, not yet written. C8 originally linked to it but removed (not present on branch).
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- HMT/HMRC 'Reforming the taxation of non-UK domiciled individuals' policy paper (30 October 2024)
+- HMT 'Changes to the taxation of non-UK domiciled individuals' technical note (6 March 2024, updated 23 April 2024)
+- Spring Budget 2024 non-dom policy summary (FIG 4-year window, original 2-year TRF at 12%, 5 April 2017 CGT rebasing)
+- Autumn Budget 2024 (30 October 2024) extension of the TRF to a third year at 15%
+- Finance Act 2025 Schedule 9 (FIG regime mechanics), Schedule 10 (TRF), Schedule 11 (CGT rebasing election to 5 April 2017)
+- Section 264 ITTOIA 2005 (UK property income source rule)
+- TCGA 1992 sections 1A and 10A
+- HMRC RDR3 (SRT guidance)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/srt-statutory-residence-test-landlord-decision-tree` — for SRT mechanics in the arrival year (C2)
+- `/blog/non-resident-landlord-tax/split-year-treatment-cases-1-8-landlord-departure-arrival` — for Case 4 / 6 / 8 arrival mechanics (C3)
+
+Three internal links removed before commit because the target pages live on other branches and not visible in this worktree:
+- `/blog/inheritance-tax-planning/iht-non-resident-uk-property-april-2025-residence-test` (A6, on property-wave2-a branch) — replaced with descriptive reference
+- `/blog/non-resident-landlord-tax/uk-india-dta-property-rental-income-treatment` (B5, on property-wave2-b branch) — replaced with inline citation to the 1993 treaty articles
+- `/blog/non-resident-landlord-tax/returning-to-uk-after-non-residence-property-portfolio` (C9, not yet written) — substituted with C2/C3 links
+
+These three back-patches flagged for Wave-2 merge.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "What FIG covers for property investors (and what it does not)" — high-intent moment (FIG election cost-benefit modelling)
+- After "The Temporary Repatriation Facility: 12% / 12% / 15%" — high-intent moment (existing non-dom with offshore accumulations facing the closing window)
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass (after pre-flight em-dash sweep caught 2 em-dashes in worked-example bullet points; corrected before npm build)
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13 Question entries match 13 frontmatter FAQs)
+- Em-dashes in markdown: 0 (2 caught in pre-flight, replaced with full stops / commas)
+- Tailwind classes in markdown: 0
+- Meta title length: 51 chars
+- Meta description length: 149 chars
+- Internal links resolve: yes (2 of 2; 3 cross-branch links removed before commit)
+- monitored_pages row inserted: yes
+- Body word count: ~3,094
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- F-19: House position §17.6 lists only 2 years of TRF at 12%; Autumn Budget 2024 extended to 3 years (12%/12%/15%). Recommend §17.6 refinement to add the 15% third year.
+- F-20: Three cross-branch internal-link back-patches required at Wave-2 merge: C8 → A6 (IHT residence test), C8 → B5 (UK-India DTA), C8 → C9 (returning to UK, sequential).
 
 ### 2-3 sentence summary
-<freeform>
+C8 covers the April 2025 non-dom abolition from the property-investor angle. Structural wedge against generic non-dom reform explainers is the UK-source vs foreign-source split: FIG covers foreign rental income but never UK property rental; the TRF covers pre-April-2025 accumulated foreign income/gains at 12%/12%/15% across three years; the 5 April 2017 CGT rebasing applies only to foreign-situs assets, never UK property. Anika / Mumbai-born surgeon / NHS Manchester arrival from September 2026 worked example shows the FIG election as marginal at best for modest foreign portfolios because the personal-allowance surrender quickly outweighs the foreign-income shield.
 

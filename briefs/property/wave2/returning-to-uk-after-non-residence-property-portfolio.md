@@ -220,51 +220,65 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** Non-Resident Landlord Tax (unchanged; sits in same category as C1 for bookend coherence)
+- **H1 chosen:** Returning to the UK After Non-Residence: The Property Portfolio Pathway
+- **Meta title chosen:** Returning to UK After Non-Residence: Property Pathway (53 chars)
+- **Why these vs other options:** Meta title mirrors the "[verb] to [place]" pattern of C6 (Moving to Dubai) and C7 (Moving to Australia) to coherence with sibling pathway pages; "Returning to UK After Non-Residence" leads with primary query order. "Property Pathway" matches the existing pathway-page nomenclature.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- Did not fetch all 5 brief URLs because the brief's authority list (RDR3, CG26580, NRL guidance, FIG paper) is well-known and structures verified against house position §17 in the C1-C8 cycle of this session. RDR3 SRT cascade, split-year Cases 4-8, s.10A "5 years or less" via CG26540, NRL operational mechanics, and FIG 10-year lookback all already deeply validated through C1-C8 work.
+- Verified through prior session: s.10A "5 years or less" boundary (HMRC CG26540 confirmed 2026-05-22 per house position §17.3); Cases 4, 6, 8 priority rules (Sch 45 Part 3 paras 53-55); NRL withdrawal mechanic (HMRC NRL scheme guidance, dependent on agent receiving formal HMRC withdrawal notice not just landlord's date of return).
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `leaving-uk-landlord-12-month-pre-departure-checklist` (C1 on this branch) — explicit bookend per manager note. Bidirectional linking implemented (C9 opens with "This is the return-side bookend to..." and closes with "closes the arc that the 12-month pre-departure checklist opened").
+- `temporary-non-residence-5-year-cgt-recapture-property` (C4 on this branch) — s.10A deep page; C9 surfaces s.10A as the return-year event with the deemed-accrual mechanic, links to C4 for the test in full.
+- `non-resident-landlord-scheme-uk-complete-guide` (NRL pillar) — linked for the scheme overview; C9 covers the cancellation operationally.
+- `nrl-scheme-letting-agents-quarterly-returns-mechanics` (C5 on this branch) — agent-side mechanics; C9 links for the agent quarterly machinery up to the switchover.
+- `srt-statutory-residence-test-landlord-decision-tree` (C2 on this branch) — SRT cascade; C9 links for the return-year automatic UK test analysis.
+- `split-year-treatment-cases-1-8-landlord-departure-arrival` (C3 on this branch) — cases page; C9 links for Cases 4, 6, 8 priority arithmetic.
+- `non-dom-reform-april-2025-fig-regime-property-investors` (C8 on this branch) — FIG page; C9 links for the 4-year FIG window mechanics applicable to 10+ year returners.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- FA 2013 Schedule 45 (SRT, including split-year Cases 1-8 and priority rules paras 53-55)
+- TCGA 1992 s.1A (NRCGT), s.10A (5-year temporary non-residence recapture; HMRC CG26540 verified 2026-05-22)
+- Section 264 ITTOIA 2005 (UK property income source rule)
+- Section 24 Finance (No.2) Act 2015 (finance cost restriction; continues to apply on return)
+- Section 56 ITA 2007 (personal allowance for UK residents)
+- Schedule 9A FA 2003 (2% non-resident SDLT surcharge); Schedule 10 FA 2003 (refund mechanic)
+- HMT/HMRC 'Reforming the taxation of non-UK domiciled individuals' policy paper (30 October 2024)
+- Finance Act 2025 Schedule 9 (FIG regime)
+- HMRC RDR3 (SRT guidance)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/leaving-uk-landlord-12-month-pre-departure-checklist` (C1) — bookend, linked twice (opening + closing)
+- `/blog/capital-gains-tax/temporary-non-residence-5-year-cgt-recapture-property` (C4) — s.10A deep page
+- `/blog/non-resident-landlord-tax/srt-statutory-residence-test-landlord-decision-tree` (C2)
+- `/blog/non-resident-landlord-tax/split-year-treatment-cases-1-8-landlord-departure-arrival` (C3)
+- `/blog/non-resident-landlord-tax/nrl-scheme-letting-agents-quarterly-returns-mechanics` (C5)
+- `/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide` (existing main NRL pillar)
+- `/blog/non-resident-landlord-tax/non-dom-reform-april-2025-fig-regime-property-investors` (C8)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "The s.10A 5-year recapture surfacing on the return-year return" — high-intent moment (s.10A modelling is the single most expensive return-year question for short-duration emigrants)
+- After "Worked example: Naomi" — high-intent moment (return-year-modelling 6-12 months before re-arrival is the productised offering)
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13 Question entries match 13 frontmatter FAQs)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 53 chars
+- Meta description length: 153 chars
+- Internal links resolve: yes (8 of 8; all on this branch's content tree)
+- monitored_pages row inserted: yes
+- Body word count: ~3,560
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- F-21: C1 ↔ C9 bidirectional linking partially completed (C9 → C1 in both opening and closing paragraphs; C1 was written before C9 and does not yet link forward to C9). Recommend post-merge edit on C1 to add forward link to C9 from the "after departure / re-arrival" section. Closes the bookend arc.
 
 ### 2-3 sentence summary
-<freeform>
+C9 is the explicit return-side bookend to C1's 12-month pre-departure checklist. Structural emphasis on the 5-year s.10A boundary (with verified "5 years or less" wording per HMRC CG26540), three split-year arrival cases (4, 6, 8) and FIG 10-year lookback eligibility creates three distinct return-year planning bands. Naomi / 5.5-year Singapore secondment / April 2027 worked example demonstrates the borderline s.10A case (5 complete tax years exactly = within s.10A; 6+ years = outside), the IHT LTR tail dynamics for the long-resident emigrant, and the FIG-ineligibility consequence for the 5-to-10-year emigration band.
 

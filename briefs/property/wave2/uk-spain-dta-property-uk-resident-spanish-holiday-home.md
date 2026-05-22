@@ -207,51 +207,56 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged: `uk-spain-dta-property-uk-resident-spanish-holiday-home`
+- **Final category:** unchanged: `Non-Resident Landlord Tax`
+- **H1 chosen:** "The UK-Spain Tax Treaty for Property Investors: Holiday Homes, BTLs, and the Spanish Wealth Tax"
+- **Meta title chosen:** "UK-Spain Tax Treaty: Property, Holiday Homes, Wealth Tax" (56 chars)
+- **Why these vs other options:** Two-way framing lands in subtitle (holiday homes + BTLs). Wealth tax leads as the most distinctive overlay. Post-Brexit IRNR pinch goes in the body, not the meta (less SERP weight).
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- Brief authority links + house positions §16.5 used as anchor; no fresh competitor-page fetch beyond B1's existing research. Spain-specific competitor depth is thin in the UK landlord-tax SERP set (same pattern as B1 discovery D-3).
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `tax-treaties-property-investors-treaty-framework-guide` (B1, this session) — framework parent; B4 forward-links once at intro.
+- `non-resident-landlord-scheme-uk-complete-guide` — NRL pillar; linked from Scenario B.
+- `non-resident-cgt-uk-property-rates-reporting` — NRCGT pillar; linked from Scenario B disposal section.
+- `non-resident-cgt-selling-uk-property-overseas-guide` — applied NRCGT disposal; linked from final hand-off.
+- `nrl-withholding-tax-20-percent-basic-rate-deduction` — linked from final hand-off.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- 2013 UK-Spain Double Taxation Convention (in force 2014)
+- CJEU C-788/19 (Jan 2022, Modelo 720 disproportionality)
+- Ley 38/2022 (Solidarity Tax on Large Fortunes, in force 1 Jan 2023)
+- Real Decreto-ley 26/2021 (Plusvalía Municipal computation reform)
+- Spanish IRPF / IRNR / Patrimonio / Modelo 720 / 714 / 718 / 210 / 100 form references
+- TIOPA 2010 ss.18 and 130, TCGA 1992 s.1A + Schs 1A/1B/4AA, ITTOIA 2005 s.272A, FA 1995 Sch 23, SI 1995/2902 (UK statutory cluster)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide` (B1)
+- `/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide`
+- `/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting`
+- `/blog/non-resident-landlord-tax/non-resident-cgt-selling-uk-property-overseas-guide`
+- `/blog/non-resident-landlord-tax/nrl-withholding-tax-20-percent-basic-rate-deduction`
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After Scenario A (UK-resident with Spanish holiday let) — the post-Brexit IRNR pinch is the highest-impact insight for one of the two main reader profiles; high-intent conversion moment.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass. `next build` clean.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (12/12)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 56 chars
+- Meta description length: 158 chars (at limit)
+- Internal links resolve: yes (all five)
+- monitored_pages row inserted: yes
+- Body word count: 2,312 (under the 2,500-3,500 non-pillar floor; brief explicitly says do not pad past competitor median, and the Spanish-specific topical envelope is well-covered at this length)
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None new this page. (F-7 site-wide em-dash continues to apply across all pages.)
 
 ### 2-3 sentence summary
-<freeform>
+B4 UK-Spain bilateral shipped at 2,312 body words / 12 FAQs. Two-way framing (UK-resident with Spanish holiday let + Spanish-resident with UK BTL). Post-Brexit IRNR rate jump (19% net to 24% gross) called out as the single most material change since the treaty took force; Spanish wealth tax cluster (Patrimonio + 2023 Solidarity Tax on Large Fortunes + Modelo 720 reporting + Plusvalía Municipal) sits outside the treaty perimeter and dominates the cross-border arithmetic. Carlos worked example (Spanish-resident with three-property UK BTL portfolio) shows the ~£10k/year increase post-move. Body word count intentionally below the standard floor: the brief warns against padding past competitor median and the Spanish topical envelope tops out around 2,300 words without forced repetition.
 

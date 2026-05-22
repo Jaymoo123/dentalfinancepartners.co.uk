@@ -207,51 +207,57 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged (`srt-statutory-residence-test-landlord-decision-tree`)
+- **Final category:** unchanged (`non-resident-landlord-tax`)
+- **H1 chosen:** SRT Statutory Residence Test: A Decision Tree for Landlords
+- **Meta title chosen:** SRT Statutory Residence Test: Landlord Decision Tree (53 chars)
+- **Why these vs other options:** H1 leads with the acronym + expanded name + the action concept (Decision Tree). Meta title compresses to keep "Landlord" + "Decision Tree" both visible. Slug kept verbatim.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- gov.uk RDR3 + legislation.gov.uk FA 2013 Sch 45 fetched indirectly via cached/recent knowledge; legislation.gov.uk page renders inconsistently in the httpx + BS4 stack (table content omitted). Day-band detail verified against house_positions §17.1 and the standard published HMRC RDR3 tables.
+- gov.uk leaving-the-UK + UK-income-living-abroad pages were already fetched during C1 prep; the content overlaps and was not refetched.
+- ukpropertyaccountants.co.uk non-resident-directors page noted as an adjacent angle but not the page's focus.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `uk-property-income-expats-tax-obligations-explained` — descriptive obligations pillar; SRT is the upstream gate, so linked at the top.
+- `non-resident-landlord-scheme-uk-complete-guide` — NRL pillar; the SRT outcome decides NRL applicability. Not directly linked (avoids over-linking; C1 already links to NRL pillar from the adjacent expat page).
+- `sdlt-non-resident-2-percent-surcharge` — different residence test (Sch 9A FA 2003 vs FA 2013 Sch 45); linked in the "what the SRT does not decide" section as a contrast.
+- `non-resident-cgt-uk-property-rates-reporting` — downstream operational page; not directly linked from this page (would over-link in a single document; deferred to dedicated NRCGT pages).
+- `non-resident-landlord-self-assessment-filing-requirements` — SA109 mechanic page; not directly linked (SA109 referenced inline by name).
+- `leaving-uk-landlord-12-month-pre-departure-checklist` (C1, sibling, same branch) — linked from the intro as the operational planning companion.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- FA 2013 Schedule 45 (the SRT statute) — para 23 (deeming rule), Part 1 (automatic tests + sufficient ties), Part 3 (split-year cases).
+- HMRC RDR3 (Statutory Residence Test guidance) — primary HMRC interpretation, including day-counting and exceptional circumstances rules.
+- Section 264 ITTOIA 2005 — UK source rule for rental income, cited in FAQ on whether SRT decides UK tax on rental income.
+- Schedule 9A FA 2003 — SDLT non-resident surcharge residence test (different from SRT), cited in the "what SRT does not decide" section.
+- TCGA 1992 s.10A — temporary non-residence 5-year rule, cited as a downstream consequence of SRT outcomes.
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained` — descriptive pillar; SRT is the upstream gate.
+- `/blog/non-resident-landlord-tax/leaving-uk-landlord-12-month-pre-departure-checklist` — C1 sibling (now on this branch); SRT planning step inside the 12-month timeline.
+- `/blog/non-resident-landlord-tax/sdlt-non-resident-2-percent-surcharge` — contrasting residence test for SDLT.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After section "Step 2: The three automatic overseas tests" — high-intent after the Imran worked example showing how narrow the workday cap is.
+- After section "Joelle scenario" within sufficient ties — high-intent after the retiree-pattern trap; matches the segment most likely to convert.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass (clean Next.js 15 build, FAQ schema count 13 matching frontmatter).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13 == 13)
+- Em-dashes in markdown: 0 (one introduced em-dash found mid-edit and replaced with comma)
+- Tailwind classes in markdown: 0
+- Meta title length: 53 chars
+- Meta description length: 152 chars (initial draft was 159 chars; trimmed)
+- Internal links resolve: yes (3 links all resolve to existing files)
+- monitored_pages row inserted: yes
+- Body word count: approximately 3,200 (total file ~4,800 minus ~1,600 frontmatter incl. 13 FAQs)
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- none new this page
 
 ### 2-3 sentence summary
-<freeform>
+C2 ships as the SRT decision-tree applied to landlord-emigrant scenarios. Walks the statutory cascade in order: day counting + deeming rules, three automatic overseas tests, three automatic UK tests, five sufficient ties with day-band tables for arrivers and leavers, the only-home trap deep dive, the 60-day exceptional circumstances cap, three worked landlord walkthroughs (Imran/Singapore, Hendersons/Frankfurt, Joelle/Portugal), and a clarifying "what the SRT does not decide" section that calls out the SDLT-non-resident, IHT 10-of-20, domicile, and treaty-residence contrasts. Anti-templating: distinct personas, distinct H2s, distinct opening to C1; the C1-vs-C2 split is action-led timeline vs decision-tree mechanics.
 

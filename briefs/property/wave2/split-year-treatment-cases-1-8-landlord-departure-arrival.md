@@ -205,51 +205,67 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged (`split-year-treatment-cases-1-8-landlord-departure-arrival`)
+- **Final category:** unchanged (`non-resident-landlord-tax`)
+- **H1 chosen:** Split-Year Treatment Cases 1-8: A Landlord Guide to Departure and Arrival Years
+- **Meta title chosen:** Split-Year Treatment Cases 1-8: Landlord Guide (46 chars)
+- **Why these vs other options:** H1 leads with the primary query phrase ("Split-Year Treatment Cases 1-8") plus the audience qualifier ("Landlord") and the two directions ("Departure and Arrival") that define the page. Meta title compresses to keep the case-range numeral visible. Slug verbatim from brief.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- legislation.gov.uk FA 2013 Sch 45 Part 3 — paras 43-52 case definitions, paras 53-55 priority rules. Used as primary statutory anchor (verified house_positions §17.2 case table aligns).
+- gov.uk RDR3 — sectioned narrative on each case with worked examples; treated as the canonical HMRC interpretation. Re-fetch skipped because the case-by-case mechanics are fully captured in house_positions §17.2 + the brief's framing differentiator. RDR3's structure noted (case-by-case narrative + priority cross-references).
+- HMRC CG26100+ — split-year + CG interaction; cited indirectly via house positions for the NRCGT pivot on the split date.
+- uklandlordtax.co.uk split-year guide — competitor landlord-firm summary; gap = no priority-rules treatment + no worked numerical examples by case.
+- gov.uk SA109 / tax-right-retire-abroad — operational claim mechanic; cited for the SA109 anchor.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `uk-property-income-expats-tax-obligations-explained` — descriptive expat pillar; linked once at the "where split-year sits" section as the broader expat-obligations companion. This page is the deeper case-by-case mechanic, not a duplicate of the pillar.
+- `non-resident-landlord-scheme-uk-complete-guide` — NRL operational pillar; linked from the NRL-on-split-date section. This page only references NRL as the downstream consequence of the split date; the NRL pillar carries the operational detail.
+- `non-resident-landlord-self-assessment-filing-requirements` — SA filing mechanic; linked from the SA109 section. This page covers the residence supplement specifically; the linked pillar carries the broader SA filing context.
+- `non-resident-cgt-uk-property-rates-reporting` — NRCGT rates; linked from the CGT consequence section. This page handles the split-date as the regime pivot; the NRCGT page handles the regime mechanics themselves.
+- `landlord-tax-return-complete-guide-2026` — generalist SA pillar; not directly linked (would over-link in a single document and is one step removed from split-year specifically).
+- `leaving-uk-landlord-12-month-pre-departure-checklist` (C1, same branch) — linked from intro and conclusion as operational-task companion.
+- `srt-statutory-residence-test-landlord-decision-tree` (C2, same branch) — linked from intro as the upstream test (split-year only applies if SRT placed you whole-year UK-resident).
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Finance Act 2013 Schedule 45 Part 3, paragraphs 43-52 — case definitions for Cases 1-8.
+- Finance Act 2013 Schedule 45 Part 3, paragraphs 53-55 — priority rules where multiple cases apply.
+- HMRC RDR3 — Statutory Residence Test guidance, split-year sections.
+- HMRC CG26100+ — split-year and CGT interaction.
+- TCGA 1992 section 1A + Schedule 4AA — non-resident CGT regime + rebasing election (Finance Act 2019 rewrite of the NRCGT regime).
+- Section 264 ITTOIA 2005 — UK source rule for rental income (in scope regardless of residence).
+- Section 56 ITA 2007 — personal allowance entitlement for non-residents (UK / EEA nationality).
+- Schedule 2 Finance Act 2019 + 60-day reporting under the rewritten NRCGT regime — disposals in the overseas part.
+- gov.uk SA109 residence supplement — operational claim mechanic.
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/srt-statutory-residence-test-landlord-decision-tree` — upstream SRT (split-year only operates after the SRT places you whole-year UK-resident).
+- `/blog/non-resident-landlord-tax/leaving-uk-landlord-12-month-pre-departure-checklist` — operational pre-departure companion; linked twice (intro + conclusion).
+- `/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained` — descriptive expat pillar; the broader "what" page to this "when" mechanic.
+- `/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide` — NRL operational pillar; downstream of the split date.
+- `/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting` — NRCGT rates / reporting; downstream of the split date for CGT.
+- `/blog/non-resident-landlord-tax/non-resident-landlord-self-assessment-filing-requirements` — SA filing pillar; SA109 sits inside this.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After section "Case 1: starting full-time work overseas" (within the departure-cases block) — high-intent right after the Hannah worked example showing how a Case 1 split date drives NRL withholding, SA109 wording, and pre-departure CGT timing.
+- After section "The Mehta family: Case 8 arrival from Dubai" (within the three-scenarios block) — high-intent after the arrival-year scenario crossing UK and overseas property income; matches the segment most likely to convert (multi-jurisdiction returner with portfolio).
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass (clean Next.js 15 build, FAQ schema count 13 matching frontmatter, no warnings).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13 == 13)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 46 chars
+- Meta description length: 154 chars
+- Internal links resolve: yes (6 internal links, all to existing files in the worktree)
+- monitored_pages row inserted: yes
+- Body word count: approximately 3,950 (over the 3,500 soft cap but driven by the 8-case + 3-worked-example structure the framing differentiator requires; competitors are short but cover only 1-2 cases each, so the structural depth is the differentiator)
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- none new this page
 
 ### 2-3 sentence summary
-<freeform>
+C3 ships as the case-by-case mechanic for split-year treatment under FA 2013 Schedule 45 Part 3. Covers all 8 cases with property-specific notes, the priority rules in paras 53-55, the SA109 mechanics, the operational consequences on the split date (NRL scheme, NRCGT regime under s.1A TCGA 1992, foreign rental apportionment, personal allowance), and three end-to-end landlord scenarios spanning Case 1 (Hannah, Berlin contract), Case 8 (Mehta family, returning from Dubai), and Case 3 (Damian, retiring to Cyprus). Distinct from C1 (action-led timeline) and C2 (SRT decision tree) by being the case-by-case mechanic + priority rules layer that sits between the two; SRT is the upstream gate, the 12-month checklist is the downstream operational sequence, and this page is the statutory case framework in the middle.
 

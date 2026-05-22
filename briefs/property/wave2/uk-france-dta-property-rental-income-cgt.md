@@ -209,51 +209,67 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged: `uk-france-dta-property-rental-income-cgt`
+- **Final category:** unchanged: `Non-Resident Landlord Tax`
+- **H1 chosen:** "The UK-France Tax Treaty for Property Investors: Rental Income, CGT, and the French Social Charge Overlay"
+- **Meta title chosen:** "UK-France Tax Treaty: Property Income, CGT & CSG/CRDS" (53 chars)
+- **Why these vs other options:** Three differentiators land in meta: income / CGT / CSG-CRDS. The CSG/CRDS layer is the most distinctive UK-France wrinkle and gets lead billing in the meta and in the H1 subtitle.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- gov.uk France tax-treaties hub — referenced inline (URL listed in brief, treated as canonical pointer; no fetch needed for article-number facts that match house positions §16.5 and brief framing notes).
+- HMRC INTM151010 / INTM153070 / INTM161000 — chapter-level references; cited by section in the page body.
+- HS304 + INTM161000 — linked in the compliance section.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `tax-treaties-property-investors-treaty-framework-guide` (B1, this session) — framework parent; B3 forward-links twice (intro + final hand-off) and inherits B1's OECD-vs-bilateral language.
+- `non-resident-landlord-scheme-uk-complete-guide` — NRL pillar; B3 links in compliance section (Scenario A, French-resident with UK BTL).
+- `non-resident-cgt-uk-property-rates-reporting` — NRCGT rates; linked from Article 14 section.
+- `non-resident-cgt-selling-uk-property-overseas-guide` — applied NRCGT disposal page; linked from Article 14 section as the operational deeper page.
+- `nrl-approval-receive-rent-gross-hmrc-guide` — not directly linked (the NRL approval mechanic is covered inline; existing page would be a future-cross-link candidate but a duplicate link path here).
+- `uk-property-income-expats-tax-obligations-explained` — not directly linked (B3 doesn't need the descriptive expat pillar; B1 already absorbs that role for the framework-side reader).
+- `inheritance-tax-rental-property-uk-guide` (cross-category, Landlord Tax Essentials) — linked once at the 1963 IHT treaty section; correct cross-category link (verified frontmatter category).
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- 2008 UK-France Double Taxation Convention (in force 18 Dec 2009)
+- 1963 UK-France IHT treaty (still in force; cited at the IHT section)
+- HMRC INTM161000 (UK-resident with foreign income)
+- HS304 helpsheet
+- TIOPA 2010 ss.18 / 130 (UK foreign tax credit)
+- TCGA 1992 s.1A + Schs 1A/1B/4AA (UK NRCGT)
+- ITTOIA 2005 s.272A (s.24 finance-cost restriction)
+- FA 1995 Sch 23 + SI 1995/2902 (NRL scheme statutory source)
+- French statutory references: IFI (€1.3m threshold, 0.5%-1.5% bands), CSG/CRDS combined 17.2%, plus-value immobilière taper relief schedule (22-year income exemption, 30-year CSG exemption), forms 2042 / 2042-IFI / 2042-NR / 2044
+- CJEU de Ruyter line (referenced for the post-Brexit CSG position)
+- EU Succession Regulation 650/2012 (Brussels IV) — single reference in IHT section
+- MLI Article 7 principal purposes test (referenced re. 2008 treaty modifications)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide` — B1 framework parent (intro + final hand-off)
+- `/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting` — NRCGT rates pivot from Article 14
+- `/blog/non-resident-landlord-tax/non-resident-cgt-selling-uk-property-overseas-guide` — NRCGT applied / disposal pivot
+- `/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide` — NRL statutory pillar, compliance section
+- `/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide` — IHT general pillar, IHT-treaty section (cross-category)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After CSG/CRDS overlay section — the most distinctive wrinkle for the page; high-intent moment for cross-border landlords realising the social-charge tail
+- After final hand-off section — terminal CTA, common pattern across the bucket
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (12/12)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 53 chars
+- Meta description length: 149 chars
+- Internal links resolve: yes (all five, including cross-category IHT link)
+- monitored_pages row inserted: yes
+- Body word count: 3,029
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None new this page. (F-7 site-wide em-dash continues to apply; not re-flagged.)
 
 ### 2-3 sentence summary
-<freeform>
+B3 UK-France bilateral page shipped at 3,029 body words / 12 FAQs. Three differentiators land: the 2008 treaty income/CGT allocation, the CSG/CRDS overlay outside the treaty perimeter, and the separate 1963 UK-France IHT treaty. Worked example: Pierre (French national) moving from Brighton to Lyon, with explicit £ to € rate mediation showing how the s.24 credit + French income tax credit + CSG/CRDS line stack. IFI threshold check ties into the wealth-tax-on-UK-property point. Cross-category link to the IHT pillar in landlord-tax-essentials handles the 1963 treaty hand-off.
 

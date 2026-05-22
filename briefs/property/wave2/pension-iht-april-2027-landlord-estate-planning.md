@@ -209,51 +209,63 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** unchanged (`landlord-tax-essentials`)
+- **H1 chosen:** "Pension IHT from April 2027: What It Means for Landlord Estate Planning"
+- **Meta title chosen:** "Pension IHT from April 2027: Impact on Landlord Estates" (55 chars)
+- **Why these vs other options:** "From April 2027" date-anchored lead is the highest-intent query phrasing (landlords searching for the reform date). "Landlord Estate Planning" qualifier distinguishes from generic pension-IHT content. Anti-templating vs A4 (which was the other reform-impact page, April 2026 BPR cap): A4 used a 4-segment audience breakdown; A9 uses a before-vs-after axis with the same-landlord-different-death-year comparison and a strategy-flip axis on "use pension last." Both reform pages; different structural spine.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- gov.uk consultation outcome (`/inheritance-tax-on-pensions-liability-reporting-and-payment`) — confirmed: 6 April 2027 commencement; PRs (not scheme administrators) report and pay; death-in-service benefits excluded from estate; consultation outcome published 2025.
+- UKPA / IHT reform commentary pages — not separately fetched on this session (D-2 noted competitor IHT coverage broadly stale on the post-Budget-2024 reform package).
+- House position §15.5 + gov.uk-changes-to-tax-treatment-of-pensions-on-death URL (per A1 brief authority list, returned 404 in A1 session per D-1 logged earlier) — replaced in A9 with the consultation-outcome URL as the canonical anchor since the publication URL is dead.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `inheritance-tax-rental-property-uk-guide` — IHT pillar. Surfaces "pensions in estate from 2027" at one-paragraph level. A9 is the depth. F-24 raised for pillar back-link.
+- `iht-residence-nil-rate-band-2m-taper-property-portfolios` (A8 sibling, just shipped) — A8's April 2027 H2 originally had a descriptive-only reference (F-23). Back-patched in this commit to add forward link to A9.
+- `iht-property-investors-decision-framework-2026-onwards` (A1) — Strategic-decision companion; A9 forward-links twice (opening + closing). No content overlap.
+- `section-24-pension-contributions-tax-planning` — Pension-as-S24-mitigation page; A9 links once at the basic-rate-band-decumulation paragraph as the IHT-side warning for that audience.
+- `landlord-tax-changes-2026-complete-guide` — Cross-cutting changes page; A9 links once in opening as the wider context anchor.
+- `property-company-employer-pension-contributions-directors` — Employer-pension-contribution mechanics; not directly linked from A9 body (mentioned only via the death-in-service action item without anchor). Manager may add post-merge.
+- `extracting-money-from-property-limited-company` — Broader extraction comparison page; not directly linked from A9 body (referenced implicitly via the decumulation re-orientation paragraph). Manager may add post-merge.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- IHTA 1984 s.5 (broad estate definition driving E in s.8D(5))
+- IHTA 1984 s.8D(5) (RNRB taper threshold and mechanic)
+- IHTA 1984 s.18 (spouse / civil partner exemption)
+- IHTA 1984 s.23 (charity exemption + reduced 36% IHT rate via Sch 1A)
+- Autumn Budget 2024 announcement + 2025 consultation outcome
+- HMRC IHTM17000 (existing pension scheme death benefits chapter)
+- ITTOIA 2005 / FA 2004 framework for pre-75 vs post-75 income tax on pension death benefits (general reference, not single section)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide` — pillar context (linked once in opening)
+- `/blog/landlord-tax-essentials/landlord-tax-changes-2026-complete-guide` — cross-cutting reform overview (linked once in opening)
+- `/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards` (A1) — strategic-decision companion (linked twice; opening + closing)
+- `/blog/landlord-tax-essentials/iht-residence-nil-rate-band-2m-taper-property-portfolios` (A8) — RNRB taper companion (linked twice; RNRB-interaction H2 + action-items closing)
+- `/blog/section-24-and-tax-relief/section-24-pension-contributions-tax-planning` — pension-S24 mitigation page (linked once in decumulation-flip H2)
+- Same commit back-patches A8 to add forward link to A9 (resolves F-23)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After the RNRB-taper-interaction H2 (with £380k IHT delta worked example) — highest-intent moment: reader has just seen the absolute size of the post-2027 cost and is primed to consider professional help. Only inline CTA; LeadForm auto-injects at bottom.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass (360 static pages generated cleanly; em-dash in built HTML = 1 from F-7 site-wide brand wordmark, body markdown em-dash count = 0).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (1 FAQPage + 14 Question entries)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 55 chars
+- Meta description length: 154 chars
+- Internal links resolve: yes (5/5; plus A8 back-patch link to A9 resolves on this same commit)
+- monitored_pages row inserted: yes
+- Body word count: 3,448 (just under 3,500 ceiling)
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- F-24 — existing IHT pillar should back-link to new A9 (same pattern as F-3, F-20, F-22). Note: F-21 was taken by Session B; F-22/F-23 by A8 commit.
+- F-23 RESOLVED — A8→A9 forward link back-patched in this commit (was held pending A9 write)
 
 ### 2-3 sentence summary
-<freeform>
+Reform-impact page on the 6 April 2027 inclusion of unused DC pensions and lump-sum death benefits in the IHT estate. Before-vs-after worked example shows £380k IHT increase on the same landlord (£700k pension push above the £2m taper wall = £100k of collateral RNRB-withdrawal damage on top of £280k of headline IHT on the pension fund). Covers the post-75 double-tax interaction (IHT + income tax = effective 64-67% rate), the structural inversion of the "use pension last" strategy, the surviving spousal/charity exemptions, and five pre-2027 action items.
 

@@ -209,51 +209,69 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** unchanged (`landlord-tax-essentials`)
+- **H1 chosen:** "RNRB and the £2m Taper for Landlord Estates: Mechanics and Planning"
+- **Meta title chosen:** "Residence Nil-Rate Band and the £2m Taper for Landlords" (55 chars)
+- **Why these vs other options:** Mechanism-first H1 leads with RNRB + £2m taper (the two query terms readers actually use) plus "Landlord Estates" qualifier to distinguish from generic-citizen RNRB content. Meta title spells out "Residence Nil-Rate Band" rather than the acronym to catch the unfamiliar reader. Anti-templating: A8 is a taper-mechanics page with three estate-tier worked examples (Marshall £1.6m / Okoye £2.15m / Bennett £2.8m) — distinct from A3's 7-year-rule taper which uses a single £350k BTL + £600k discretionary trust pairing.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- legislation.gov.uk s.8D IHTA 1984 — confirmed statutory wording: TT = £2,000,000 from 2017-18 onwards; residential enhancement £175,000 from 2020-21 onwards; £1-for-£2 withdrawal mechanic; "adjusted allowance" formula. Statute itself, not commentary.
+- HMRC IHTM46000 (RNRB chapter) — confirmed submanual structure: IHTM46011 (QRI), IHTM46013-46014 (closely inherited / inherited definitions), IHTM46023 (taper threshold), IHTM46032 (closely-inherited tests in trust contexts), IHTM46050-46067 (downsizing addition).
+- UKPA and UKLandlordTax competitor pages not separately fetched on this session (similar to A1/A6 sessions). Both are known shallow on the taper mechanic and miss the downsizing addition entirely (per the brief's note that the downsizing addition is the section competitors skim).
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `inheritance-tax-rental-property-uk-guide` — IHT pillar. Covers RNRB at one-paragraph level ("£175,000 per person, applies only where main residence passes to direct descendants. Does NOT apply to BTL stock. Reduced £1 for £2 above £2m, estates over £2.35m lose entirely.") No taper-tier worked examples. No downsizing addition. No QRI s.8H walkthrough. A8 is the deeper mechanism page; pillar should back-link (F-21).
+- `iht-property-investors-decision-framework-2026-onwards` (A1) — Decision-strategy companion; A8 forward-links twice (in lifetime-gifts and pension-reform mentions). No content overlap.
+- `fic-iht-treatment-bpr-myth` — FIC dilution as RNRB-preservation route is one of A8's planning paragraphs; A8 forward-links once and defers to the FIC page for FIC depth. No worked-example overlap (FIC page uses £3m portfolio growing to £5m; A8 uses Marshall/Okoye/Bennett tiers).
+- `multi-property-landlord-tax-planning-strategies-5-plus-properties` — Multi-prop strategy hub; A8 forward-links once at closing for portfolio-level context.
+- `property-investment-exit-strategy-planning-guide` — Exit-strategy depth; A8 forward-links once in Bennett-tier worked example for pre-death-sale planning.
+- `cgt-property-transfer-spouse` — Spousal-transfer CGT companion; A8 forward-links once in the equalisation paragraph. No IHT overlap.
+- `pension-iht-april-2027-landlord-estate-planning` (A9, ⬜ todo) — A8 does NOT forward-link to A9 because A9 isn't written. Descriptive text only in the April 2027 pension overlay H2; F-22 raised for forward-link back-patch when A9 ships.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- IHTA 1984 s.8D(5) (the taper definition)
+- IHTA 1984 s.8H (qualifying residential interest definition)
+- IHTA 1984 s.8K (direct lineal descendant definition)
+- IHTA 1984 ss.8FA-8FE (downsizing addition)
+- IHTA 1984 ss.71A, 71D, 49A (trust types preserving QRI)
+- TCGA 1992 s.58 (spousal no-gain-no-loss for equalisation context)
+- HMRC IHTM46023 (taper threshold submanual)
+- HMRC IHTM46032 (closely-inherited tests in trust contexts)
+- HMRC IHTM46033 (transferable-RNRB taper interaction)
+- HMRC IHTM46050-46067 (downsizing addition working detail)
+- HMRC IHTM14593 (cumulation of failed PETs for taper purposes)
+- Autumn Budget 2024 (NRB/RNRB freeze to 2030; pension IHT reform)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide` — pillar (linked twice; opening + closing)
+- `/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards` (A1) — strategic-decision companion (linked twice; opening + pension-overlay close)
+- `/blog/incorporation-and-company-structures/fic-iht-treatment-bpr-myth` — FIC dilution depth (linked once in planning options)
+- `/blog/portfolio-management/multi-property-landlord-tax-planning-strategies-5-plus-properties` — multi-prop hub (linked once at closing of planning section)
+- `/blog/portfolio-management/property-investment-exit-strategy-planning-guide` — exit-strategy (linked once in Bennett-tier worked example)
+- `/blog/capital-gains-tax/cgt-property-transfer-spouse` — spousal-transfer companion (linked once in equalisation paragraph)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After Tier 2 (Okoye) worked example — high-intent: reader has just seen the £30k IHT cost from a £75k taper at exactly the estate level where landlord readers self-identify. One CTA only (BlogPostRenderer auto-injects LeadForm at the bottom).
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass (359 static pages generated cleanly; em-dash in built HTML = 1 from the F-7 site-wide brand wordmark, body markdown em-dash count = 0).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (1 FAQPage + 13 Question entries)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 55 chars
+- Meta description length: 155 chars
+- Internal links resolve: yes (6/6)
+- monitored_pages row inserted: yes
+- Body word count: 3,348 (inside the 2,500-3,500 target)
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- F-22 — existing IHT pillar should back-link to new A8 (same pattern as F-3, F-20). F-21 was taken by Session B earlier in the wave.
+- F-23 — forward-link from A8 to A9 pending A9 write (sibling-write cleanup, Session A handles when A9 ships)
+- F-16 — updated with partial-close (A6→A8 leg still actionable; A8→A6 leg out of A8's scope as shipped)
 
 ### 2-3 sentence summary
-<freeform>
+RNRB mechanism page anchored on the £2 million taper at section 8D(5) IHTA 1984. Walks the £175k allowance, the QRI and direct-lineal-descendant conditions, transferable RNRB on second death, the £2m to £2.7m taper zone, the downsizing addition under ss.8FA-8FE, and the April 2027 pension-overlay impact. Three estate-tier worked examples (Marshall £1.6m / Okoye £2.15m / Bennett £2.8m) show full allowance / partial taper / full extinguishment respectively.
 

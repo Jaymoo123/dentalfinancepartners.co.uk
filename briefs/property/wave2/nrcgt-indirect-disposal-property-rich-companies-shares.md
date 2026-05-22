@@ -205,51 +205,61 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** Non-Resident Landlord Tax (unchanged; consistent with NRCGT direct-disposal sibling)
+- **H1 chosen:** NRCGT Indirect Disposal: Shares in UK Property-Rich Companies
+- **Meta title chosen:** NRCGT Indirect Disposal: Property-Rich Company Shares (53 chars)
+- **Why these vs other options:** Meta title leads with "NRCGT" (primary technical-query word), then "indirect disposal" (the structural wedge), then the asset type ("property-rich company shares"). Avoids the generic "guide" framing.
+
+### Brief statute citation note
+The brief still cites "TCGA 1992 ss.14B-14H and Sch 4AA" as the statutory anchor. House position §17.4 explicitly notes that ss.14B-14H is stale (repealed by FA 2019) and the current regime lives at TCGA 1992 s.1A + Sch 1A + Sch 4AA. C10 was written to the current statute per house position; the brief's older citation was disregarded and an explanatory paragraph included in the body about the regime rewrite.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- Did not fetch all brief URLs because the topic technical content sits in HMRC CG73920+ and TCGA 1992 Sch 1A / 4AA, all well-validated through house position §17.4 and the prior Wave 2 session work. Skipped competitor fetches and worked from primary statute + HMRC manual + house position.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `non-resident-cgt-uk-property-rates-reporting` — NRCGT rates / reporting page; C10 cites the 60-day reporting requirement and references the parent NRCGT structure but does not duplicate the rates-and-reporting deep dive.
+- `non-resident-cgt-selling-uk-property-overseas-guide` — NRCGT on direct disposal; C10 is the sibling on indirect disposal; both run the same s.1A + Sch 4AA architecture but different routes to scope.
+- `cgt-inherited-rental-property-calculation-uk` — base-cost / rebasing mechanic on inherited property; tangentially relevant, not directly linked.
+- `non-resident-landlord-scheme-uk-complete-guide` — NRL pillar; linked from the closing "how indirect disposal fits into the wider NRCGT regime" section.
+- `uk-property-income-expats-tax-obligations-explained` — expats obligations pillar; referenced via the broader NRL hub link, not directly linked.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- TCGA 1992 s.1A (charging provision)
+- TCGA 1992 Sch 1A (substantive definitions including indirect disposals: 75% / 25% tests, trading exemption, related-party look-through, anti-avoidance)
+- TCGA 1992 Sch 4AA (rebasing computational options for NRCGT including 5 April 2019 default for indirect disposals)
+- Finance Act 2019 (regime rewrite, repealing ss.14B-14H FA 2015 structure)
+- HMRC Capital Gains Manual CG73920+ (operational guidance)
+- Pawson v HMRC [2013] UKUT 050 (TCC); Vigne v HMRC [2018] UKUT 0357 — trading vs investment classification
+- Finance (No. 2) Act 2023 / Autumn Budget 2024 (18%/24% rate alignment)
+- TCGA 1992 s.10A (cross-reference for temporary non-residence interaction)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide` — NRL pillar from the closing section
+- `/blog/capital-gains-tax/temporary-non-residence-5-year-cgt-recapture-property` (C4) — s.10A cross-reference
+
+Brief's "Closest existing pages" listed several NRCGT direct-disposal pages, the inherited-property CGT page and the expats-obligations pillar. Direct-disposal sibling page is on the main branch already; both NRCGT sibling pages (rates page, selling-overseas page) and the inherited-property page are not linked from C10 body to keep internal-link density low and let the page stand on its own as the indirect-disposal deep page. Brief did not anticipate Pawson IHT case-law cross-reference; instead of linking to A5 (on the A branch, not visible here), C10 cites the cases directly inline.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After "The 25% substantial indirect interest test" — high-intent moment (scope analysis ahead of an SPV exit)
+- After "Worked example: Carla" — high-intent moment (Sch 4AA rebasing election modelling is the most expensive single decision)
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass (after pre-flight checks caught: (1) meta description at 160 chars exceeding the 158 limit, corrected; (2) one FAQ link pointing to wrong target slug, replaced with inline case-law citation)
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13 Question entries match 13 frontmatter FAQs)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 53 chars
+- Meta description length: 141 chars
+- Internal links resolve: yes (2 of 2; both on this branch's content tree)
+- monitored_pages row inserted: yes
+- Body word count: ~3,214
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- F-22: Brief at `briefs/property/wave2/nrcgt-indirect-disposal-property-rich-companies-shares.md` still cites "TCGA 1992 ss.14B-14H and Sch 4AA" as the statutory anchor. The ss.14B-14H structure was repealed by FA 2019; current regime is s.1A + Sch 1A + Sch 4AA. Brief should be refreshed if reused for any Wave 3 indirect-disposal sub-pages.
 
 ### 2-3 sentence summary
-<freeform>
+C10 is the genuinely-new NRCGT indirect-disposal page (no existing site coverage of the indirect leg; direct-disposal sibling pages on main don't touch the 75%/25%/trading-exemption framework). Structural wedge versus the existing direct-disposal pages: indirect disposal catches share sales in UK property-rich companies (the 75% gross-asset test + 25% substantial-interest test with 2-year lookback) and brings them within NRCGT via TCGA 1992 s.1A + Sch 1A, with Sch 4AA rebasing to 5 April 2019 as the operational sweetener. Carla / 33% Manchester BTL SPV / 2027 exit worked example demonstrates a £144k UK NRCGT bill with Sch 4AA rebasing election saving £146k vs the historic-gain computation; Italian-resident overlay via UK-Italy DTA Art 24 credit then adds £12k of Italian top-up.
 

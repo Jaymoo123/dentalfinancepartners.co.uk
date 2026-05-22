@@ -209,51 +209,77 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged: `uk-uae-dta-property-no-tax-jurisdiction-asymmetry`
+- **Final category:** unchanged: `Non-Resident Landlord Tax`
+- **H1 chosen:** "The UK-UAE Tax Treaty for Property Investors: Why UAE Residence Does Not Shield UK Property from UK Tax"
+- **Meta title chosen:** "UK-UAE Tax Treaty: Property and the No-Tax Asymmetry" (52 chars)
+- **Why these vs other options:** The H1 leads with the corrective ("Why UAE Residence Does Not Shield...") because the dominant reader misconception is the page's whole point of distinction. Meta tightens to two SERP-pinch terms (UK-UAE Tax Treaty + No-Tax Asymmetry). Article-walk and worked-example specifics go in the body.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- House positions §16.5 used as anchor for 2016 UK-UAE treaty article numbers (Art 6 / Art 13 / Art 23 / Art 25 / Art 24 MAP).
+- gov.uk/government/publications/united-arab-emirates-tax-treaties referenced inline as canonical pointer.
+- gov.uk INTM151010 + INTM153070 referenced by section for the "treaty allocates taxing rights without denying them" framing.
+- HS304 helpsheet referenced for personal allowance claim mechanics.
+- uklandlordtax.co.uk Dubai-move explainer treated as lateral; informed misconception framing.
+- UAE statute references (Federal Decree-Law No. 47/2022 Corporate Tax; Federal Decree-Law No. 8/2017 VAT; Cabinet Decision No. 85/2022 residency) drawn from working knowledge.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `tax-treaties-property-investors-treaty-framework-guide` (B1) — framework parent; B6 forward-links twice (intro + closing).
+- `non-resident-landlord-scheme-uk-complete-guide` — NRL pillar; linked from UK side section.
+- `nrl-withholding-tax-20-percent-basic-rate-deduction` — 20% withholding mechanics; linked from UK side section.
+- `nrl-approval-receive-rent-gross-hmrc-guide` — NRL1 application; linked from compliance section.
+- `non-resident-cgt-uk-property-rates-reporting` — NRCGT rates; linked from UK side section.
+- `non-resident-cgt-selling-uk-property-overseas-guide` — applied NRCGT disposal; linked from compliance section.
+- `non-resident-landlord-self-assessment-filing-requirements` — SA filing; linked from worked-example wrap.
+- `uk-property-income-expats-tax-obligations-explained` — descriptive expat parent; linked from closing.
+- `moving-to-dubai-uk-rental-property-tax-pathway` (Wave 2 C6, currently ⬜ todo) — referenced descriptively in a dedicated section but NOT hyperlinked (would create unresolved internal link until C6 ships). F-12 raised in wave2_site_wide_flags.md for bidirectional back-patch when C6 lands.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- 2016 UK-UAE Double Taxation Convention (Articles 4, 5, 6, 7, 10, 13, 23, 24, 25 referenced)
+- TCGA 1992 s.1A + Schedules 1A, 1B, 4AA (UK NRCGT statutory architecture)
+- FA 1995 Schedule 23 + SI 1995/2902 (NRL scheme statutory source)
+- ITTOIA 2005 Part 3 + s.272A (UK property income / s.24 finance-cost restriction)
+- CTA 2009 (non-resident company regime for UK property held by UAE company)
+- TIOPA 2010 ss.18 and 130 (UK foreign tax credit, reverse scenario)
+- HMRC INTM151010 referenced (treaty / statute interaction)
+- HS304 helpsheet (personal allowance under Article 25 non-discrimination)
+- FA 2013 Sch 45 (Statutory Residence Test, including third automatic overseas test)
+- FA 2003 Schedule 9A (2% non-resident SDLT surcharge)
+- Schedule A1 IHTA 1984 (UK enveloped residential property look-through)
+- UAE Federal Decree-Law No. 47 of 2022 (Corporate Tax)
+- UAE Federal Decree-Law No. 8 of 2017 (VAT)
+- UAE Cabinet Decision No. 85/2022 (tax residency, 183/90-day tests)
+- April 2015 NRCGT rebasing election (for pre-April-2015 holdings, in disposal arithmetic)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide` — B1 framework parent (intro + closing)
+- `/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide` — NRL pillar (UK side)
+- `/blog/non-resident-landlord-tax/nrl-withholding-tax-20-percent-basic-rate-deduction` — 20% mechanics (UK side)
+- `/blog/non-resident-landlord-tax/nrl-approval-receive-rent-gross-hmrc-guide` — NRL1 process (compliance section)
+- `/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting` — NRCGT rates (UK side)
+- `/blog/non-resident-landlord-tax/non-resident-cgt-selling-uk-property-overseas-guide` — NRCGT disposal (compliance section)
+- `/blog/non-resident-landlord-tax/non-resident-landlord-self-assessment-filing-requirements` — SA filing (worked-example wrap)
+- `/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained` — descriptive parent (closing)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After UK side section (NRL + income tax + NRCGT) — the highest-intent moment for a Dubai-based UK national who has just understood that UK tax is the full cost; CTA is action-led (apply NRL1, get UK SA done, plan NRCGT).
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass. `next build` clean.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13 Question entries; FAQPage count = 2 = same one schema rendered for the page route + opengraph route, normal pattern)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 52 chars
+- Meta description length: 156 chars
+- Internal links resolve: yes (all 8 existing-page links; C6 deliberately not linked to avoid unresolved internal link)
+- monitored_pages row inserted: yes
+- Body word count: 2,812
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- F-12 [INTERNAL_LINK] B6 ↔ C6 cross-bucket cross-link to be back-patched when C6 ships. Bidirectional `/blog/non-resident-landlord-tax/<slug>` hyperlink needed in both pages; descriptive paragraph in B6 prepared for the back-patch.
 
 ### 2-3 sentence summary
-<freeform>
+B6 UK-UAE bilateral page shipped at 2,812 body words / 13 FAQs. The differentiator lands hard: the 2016 treaty is OECD-standard, but the UAE has no personal income tax, no personal CGT, no wealth tax, no estate tax, so the credit mechanism in Article 23 runs one way only and carries no economic content. The opening corrects the dominant misconception ("I live in a no-tax country so I don't owe UK tax") by unpacking the three-step conflation that produces it. Tom worked example (UK national in Dubai, three UK BTLs in London Zone 2 / Manchester / Bristol) shows the UK side at full cost with the s.24 credit narrowly absorbing the higher-rate exposure; the position is fragile to portfolio expansion. UAE Corporate Tax (2023) caveat handled in a dedicated FAQ + section for UAE-company structures without dragging the main case off-topic. F-12 raised for B6 ↔ C6 back-patch when Session C's Dubai-pathway page lands.
 

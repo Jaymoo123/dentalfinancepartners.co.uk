@@ -207,51 +207,73 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged (`moving-to-dubai-uk-rental-property-tax-pathway`)
+- **Final category:** unchanged (`non-resident-landlord-tax`)
+- **H1 chosen:** Moving to Dubai with a UK Rental Property: The Tax Pathway
+- **Meta title chosen:** Moving to Dubai with a UK Rental: The Tax Pathway (49 chars)
+- **Why these vs other options:** H1 leads with the primary query phrase ("Moving to Dubai") + the asset qualifier ("UK Rental Property") + the structural noun ("Tax Pathway"). Meta title compresses to keep "Dubai" + "UK Rental" + "Tax Pathway" visible. Slug verbatim from brief.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- uklandlordtax.co.uk Dubai page — competitor landlord-firm Dubai-specific page; gap = no asymmetric-treaty framing, light on s.24 arithmetic + s.10A 5-year window.
+- uklandlordtax.co.uk UAE page — country-vs-emirate framing reference.
+- gov.uk UK-UAE DTA hub — 2016 treaty signature + 2016 entry into force, confirmed.
+- gov.uk NRL scheme guidance — operational regime.
+- gov.uk tax-uk-income-live-abroad — confirms UK source rule for UK rent.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `non-resident-landlord-scheme-uk-complete-guide` — NRL pillar; linked from operational pathway section.
+- `nrl-approval-receive-rent-gross-hmrc-guide` — NRL1 mechanic; linked from operational pathway.
+- `uk-property-income-expats-tax-obligations-explained` — expat pillar; linked from sequencing conclusion.
+- `non-resident-cgt-selling-uk-property-overseas-guide` — NRCGT operational; not directly linked (NRCGT covered via the recapture page link which threads to it).
+- `leaving-uk-landlord-12-month-pre-departure-checklist` (C1) — linked from sequencing conclusion.
+- `sdlt-non-resident-2-percent-surcharge` — lateral neighbour; linked from misconceptions section.
+- `srt-statutory-residence-test-landlord-decision-tree` (C2) — linked from SRT pathway section.
+- `split-year-treatment-cases-1-8-landlord-departure-arrival` (C3) — linked from SRT pathway section.
+- `temporary-non-residence-5-year-cgt-recapture-property` (C4) — linked from 5-year decision tree section.
+- B6 (uk-uae-dta-property-no-tax-jurisdiction-asymmetry) is on `property-wave2-b` only; not visible to my worktree's content/ tree. Followed C1 pattern: did NOT include forward link in body; raising INTERNAL_LINK flag below to close F-12 after merge.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- UK-UAE Double Taxation Treaty (signed 12 April 2016, in force 25 December 2016).
+- Section 264 ITTOIA 2005 — UK source rule for rental income.
+- Section 24 Finance (No.2) Act 2015 — finance cost restriction.
+- TCGA 1992 section 1A — NRCGT regime (FA 2019 rewrite).
+- TCGA 1992 section 10A — temporary non-residence 5-year rule.
+- FA 2013 Schedule 45 — Statutory Residence Test.
+- Schedule 9A FA 2003 — SDLT non-resident 2% surcharge.
+- SI 1995/2902 — NRL scheme regulations.
+- UAE Federal Decree-Law No. 47 of 2022 — UAE Corporate Tax.
+- Section 56 Income Tax Act 2007 — personal allowance entitlement.
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/srt-statutory-residence-test-landlord-decision-tree` — upstream SRT.
+- `/blog/non-resident-landlord-tax/split-year-treatment-cases-1-8-landlord-departure-arrival` — split-year cases.
+- `/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide` — NRL pillar.
+- `/blog/non-resident-landlord-tax/nrl-approval-receive-rent-gross-hmrc-guide` — NRL1 mechanic.
+- `/blog/non-resident-landlord-tax/leaving-uk-landlord-12-month-pre-departure-checklist` — pre-departure operational sequencing.
+- `/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained` — expat obligations pillar.
+- `/blog/non-resident-landlord-tax/sdlt-non-resident-2-percent-surcharge` — 2% surcharge mechanic.
+- `/blog/capital-gains-tax/temporary-non-residence-5-year-cgt-recapture-property` — s.10A 5-year window.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After section "Statutory Residence Test pathway for a Dubai relocation" — high-intent right after the three pathways explanation; matches the cohort considering Dubai but uncertain about day-counting safety.
+- After section "Worked example: Tom, Dubai for 4 years with three UK BTLs" — peak high-intent after the section 24 arithmetic + s.10A 5-year exposure modelling; the converted prospect moment for the 4-year-vs-6-year Dubai cohort.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass (clean Next.js 15 build, FAQ schema count 13 matching frontmatter, no em-dashes, no warnings).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13 == 13)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 49 chars
+- Meta description length: 150 chars
+- Internal links resolve: yes (8 internal links; all to files in the worktree's content tree)
+- monitored_pages row inserted: yes
+- Body word count: approximately 2,756
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- INTERNAL_LINK back-patch for B6↔C6 closes F-12: this page should link to B6 (`/blog/non-resident-landlord-tax/uk-uae-dta-property-no-tax-jurisdiction-asymmetry`) in the asymmetric-treaty section, and B6 should back-link to this page in the Dubai-pathway sibling slot. Both directions require the post-merge orchestrator wiring once both branches are merged.
 
 ### 2-3 sentence summary
-<freeform>
+C6 ships as the Dubai-specific applied pathway for UK landlords relocating to the UAE while retaining UK rental. Differentiates from the DTA-bilateral B6 page (treaty mechanics) by being operational + scenario-focused: corrects six common misconceptions (UAE tax = UK exemption, treaty exempts, s.24 only for residents, UAE company structures shed UK tax, NRCGT doesn't apply, normal SDLT applies); walks Tom/Dubai-4-years/three-flats worked example showing s.24 leaves ~£700 of UK tax a year + s.10A potentially adding £19k of recapture on a long-held pre-2015 flat; closes with the 3-/4-/6-year decision tree on non-residence length. F-12 back-patch flagged for post-merge B6↔C6 wiring.
 

@@ -216,51 +216,59 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged (`nrl-scheme-letting-agents-quarterly-returns-mechanics`)
+- **Final category:** unchanged (`non-resident-landlord-tax`)
+- **H1 chosen:** The NRL Scheme for Letting Agents: Quarterly Returns, NRL6 Certificates, and Personal Liability
+- **Meta title chosen:** NRL Scheme for Letting Agents: Quarterly Returns Guide (54 chars)
+- **Why these vs other options:** H1 leads with the duty-holder framing (letting agents) plus the three operational nouns. Meta title compresses to keep "Letting Agents" + "Quarterly Returns" visible. Slug verbatim from brief.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- HMRC PIM4800 contents — structural map of the NRL scheme in the Property Income Manual.
+- HMRC PIM4810 — agent withholding duty + statutory anchor.
+- HMRC PIM4830 — tenant-as-duty-holder mechanics.
+- legislation.gov.uk SI 1995/2902 — Taxation of Income from Land (Non-residents) Regulations 1995 (regulation 10 personal liability + regulation 8 reasonable-belief test).
+- uklandlordtax.co.uk landlord-side framing — contrast point this agent-side page distinguishes itself from.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `nrl-approval-receive-rent-gross-hmrc-guide` — landlord-side NRL1 mechanic; linked from the apportionment section (NRL1 changes what the agent does).
+- `nrl-withholding-tax-20-percent-basic-rate-deduction` — landlord-side withholding rate; linked from the withholding rate FAQ; this page focuses on agent computation mechanics.
+- `non-resident-landlord-scheme-uk-complete-guide` — NRL pillar; linked from the conclusion as the broader scheme guide.
+- `non-resident-landlord-self-assessment-filing-requirements` — landlord-side SA filing; linked from the NRL6 section as the operational handoff to the landlord.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- SI 1995/2902 (Taxation of Income from Land (Non-residents) Regulations 1995) — regulation 8 (reasonable-belief test for deductible expenses) and regulation 10 (personal liability).
+- HMRC Property Income Manual PIM4800 to PIM4870 — agent-and-tenant duty chain.
+- HMRC's Non-Resident Landlord Centre at BX9 1AS — registration address.
+- Section 56 Income Tax Act 2007 — personal allowance entitlement (referenced in the landlord-SA section).
+- Section 24 Finance (No.2) Act 2015 — referenced indirectly via the "ambiguous deduction" example.
+- gov.uk non-resident landlord scheme guidance.
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/nrl-approval-receive-rent-gross-hmrc-guide` — landlord-side NRL1.
+- `/blog/non-resident-landlord-tax/nrl-withholding-tax-20-percent-basic-rate-deduction` — landlord-side withholding rate.
+- `/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide` — NRL pillar.
+- `/blog/non-resident-landlord-tax/non-resident-landlord-self-assessment-filing-requirements` — landlord SA filing.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After section "The quarterly cadence" — high-intent for letting agents who realise the 30-day window is tight and they need a compliance review.
+- After section "Regulation 10: personal liability of the agent" — peak high-intent moment for an agent who has just absorbed the personal-liability exposure; matches the agent reader most likely to convert.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass (clean Next.js 15 build, FAQ schema count 13 matching frontmatter, no warnings, no em-dashes).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13 == 13)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 54 chars
+- Meta description length: 156 chars
+- Internal links resolve: yes (4 internal links to existing files in the worktree)
+- monitored_pages row inserted: yes
+- Body word count: approximately 3,005
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- none new this page
 
 ### 2-3 sentence summary
-<freeform>
+C5 ships as the agent-side operational walkthrough of the NRL scheme, distinct from the three landlord-facing NRL pages on the site. Covers duty-holder identification (agent vs tenant), registration with the NRL Centre, the quarterly cadence (30-day window after each calendar quarter-end), NRL2 line items, the reasonable-belief test for deductible expenses (regulation 8), the NRL6 annual certificate by 5 July, NRL1 mid-quarter apportionment, the tenant-as-duty-holder scenario above the £100/week threshold, and the regulation-10 personal liability framework with three exposure scenarios. Marlow Lets quarterly worked example (£11,250 gross / £1,725 deductions / £1,905 withheld for Sanjay/Dubai) and Catherine tenant-side scenario.
 
