@@ -203,47 +203,59 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged
+- **Final category:** unchanged (`landlord-tax-essentials`)
+- **H1 chosen:** "SDLT on Leasehold Extensions: Premium, Rent NPV, the Surcharge Trap, and Why Extension Almost Always Beats Buying Fresh"
+- **Meta title chosen:** "SDLT on Lease Extensions: Premium, Surcharge, Worked Example" (60 chars)
+- **Why these vs other options:** Comparison framing (extension vs fresh purchase) matches the brief differentiator. Anti-templated from A1-A9 with a side-by-side cost-stack comparison structure.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/archer-uk-limited-vs-revenue-scotland-ftt-rules-no-lbtt-charge-for-lease-extension-granted-under-sdlt/ — Archer UK Ltd v Revenue Scotland (LBTT case); used in the devolved-tax section.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- Brief lists no close matches. Genuine cousins are A4 (shared ownership, parallel NPV mechanics) and A9 (mixed-use, parallel s.116 territory); both linked.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- Section 43 FA 2003 (chargeable interest)
+- Section 119 FA 2003 (effective date of lease grant)
+- Schedule 17A FA 2003 (lease provisions)
+- Paragraph 3 Schedule 5 FA 2003 (NPV rent calculation, 3.5% discount)
+- Schedule 7 FA 2003 (group relief, in FAQ)
+- Leasehold Reform, Housing and Urban Development Act 1993 (LRHUDA, statutory extension regime + Sch 13 premium formula)
+- Leasehold and Freehold Reform Act 2024 (LFRA, marriage value abolition + 990-year extension)
+- Leasehold Reform Act 1967 (houses, in FAQ)
+- Land and Buildings Transaction Tax (Scotland) Act 2013, Sch 19 (LBTT lease grants)
+- Land Transaction Tax and Anti-avoidance of Devolved Taxes (Wales) Act 2017, Sch 5 (LTT lease grants)
+- Archer UK Ltd v Revenue Scotland (FTT, LBTT lease extension transitional)
+- Schedule 55 FA 2009 (late filing penalties, in errors section)
+- HMRC SDLT Manual SDLTM12000+ (lease grants and extensions)
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025` (rates pillar + HRAD)
+- `/blog/landlord-tax-essentials/sdlt-5-percent-surcharge-refund-claim-process` (A1, HRAD refund where applicable)
+- `/blog/landlord-tax-essentials/sdlt-shared-ownership-staircasing` (A4, parallel NPV mechanics)
+- `/blog/landlord-tax-essentials/sdlt-mixed-use-property-classification` (A9, s.116 territory)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After the HRAD trap examples — converts landlords contemplating an extension on a high-value flat
+- After the 80-year marriage-value moment — converts leaseholders with sub-80-year leases who may benefit from timing the extension post-LFRA commencement
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass clean. 10 em-dashes replaced with commas. Initial body 2,393 words; added "Collective enfranchisement" section + "Common errors" section to reach 2,909 within M-4 floor.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (12 = 12)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 60 (≤62)
+- Meta description length: 158 (=158)
+- Internal links resolve: all four target markdown files confirmed present
+- monitored_pages row inserted: yes
+- Body word count: 2,909 (within M-4 calibration of 2,800–3,500)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None this page.
 
 ### 2-3 sentence summary
-<freeform>
+A10 covers SDLT on leasehold extensions: the surrender-and-regrant mechanic under s.43 + Sch 17A FA 2003, the LRHUDA 1993 statutory regime and LFRA 2024 reforms (marriage-value abolition, 990-year term, no qualifying period), the £40,000 HRAD trap for buy-to-let landlords, a Priya-Wandsworth worked comparison showing the extension path costs ~£35,000 less in cash than sell-and-rebuy, a collective enfranchisement subsection, devolved tax (Archer UK Ltd v Revenue Scotland), CGT recovery point, and four common conveyancer errors. 12 FAQs.
 
