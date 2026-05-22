@@ -257,3 +257,247 @@ If you find any of the following while writing, **append to `docs/property/track
 ---
 
 This file is **read once at the start of each session** and then referenced as a tie-breaker. If a competitor page contradicts a house position, the house position wins — the competitor is wrong (or out of date) and you should not transcribe their figure into ours.
+
+---
+
+## 15. IHT — Wave 2 extension (locked, 2026-05-22)
+
+Extends §9 with the depth Wave 2 sessions need. §9 remains authoritative for headline figures; §15 adds the working detail. **Verified against legislation.gov.uk on 2026-05-22** for s.102 FA 1986 (gifts with reservation) and the published April 2026 APR/BPR reform.
+
+### 15.1 NRB, RNRB and freezes
+
+- **NRB:** £325,000 per individual, frozen until 5 April 2030 (extended in Autumn Budget 2024 from the previous April 2028 expiry).
+- **RNRB:** £175,000 per individual, frozen until 5 April 2030.
+- **RNRB taper:** withdrawn at £1 for every £2 of net estate above £2,000,000; fully extinguished at £2,350,000 (single) or £2,700,000 (with transferable RNRB).
+- **Transferable NRB and RNRB:** unused portion transfers to surviving spouse / civil partner on first death; up to 100% of each. Claim made by personal representatives on IHT402 (NRB) / IHT436 (RNRB) within 2 years of second death (HMRC may accept late in practice).
+- **RNRB qualifying conditions:** the residence must be in the deceased's estate, must have been a residence of the deceased at some point, and must pass to a direct lineal descendant (children, step-children, adopted, foster, grandchildren). Direct lineal descendant rule is strict: nieces / nephews / siblings do NOT qualify.
+- **Downsizing addition** (IHTA 1984 ss.8FA–8FE): RNRB preserved on a smaller-replacement-residence basis where the deceased downsized after 8 July 2015.
+
+### 15.2 PETs, CLTs and the 7-year clock
+
+- **PETs (potentially exempt transfers):** outright gifts to individuals are PETs. No IHT at the time of gift; fully exempt if the donor survives 7 years.
+- **CLTs (chargeable lifetime transfers):** gifts into most trusts. 20% lifetime IHT on the excess over NRB, with a further 20% (to bring the cumulative rate to 40%) if the donor dies within 7 years.
+- **Taper relief** (s.7(4) IHTA 1984) reduces the **tax** payable (not the gift value) where the donor dies between 3 and 7 years after the PET:
+  - 3-4 years: 80% of full rate
+  - 4-5 years: 60%
+  - 5-6 years: 40%
+  - 6-7 years: 20%
+- Taper applies only where the gift exceeds the NRB; gifts within the NRB get no taper because there's no tax to taper.
+- **Annual exemption:** £3,000 per donor per tax year, with one-year carry-back of unused exemption. Small gifts exemption: £250 per recipient per year.
+
+### 15.3 Gifts with reservation of benefit (GROB) — s.102 FA 1986
+
+**Locked statutory citation: s.102 Finance Act 1986** (verified against legislation.gov.uk on 2026-05-22). The rule: where a donor gifts property on or after 18 March 1986 but **either** does not assume possession **or** retains any benefit by contract or otherwise, the gift is "subject to a reservation". Under s.102(3), property subject to a reservation immediately before death is treated as property to which the donor was beneficially entitled — i.e. **it remains in the donor's estate for IHT** notwithstanding the lifetime transfer.
+
+Classic property-tax application: parent "gifts" the family home to children but continues to live there rent-free. The gift is a GROB; the house is in the parent's estate at death; no 7-year clock starts; the PET protection is illusory.
+
+**Routes that avoid GROB on family-home gifts:**
+- Donor pays **full market rent** to the donee for any continued occupation. Rent must be commercial, reviewed periodically, and demonstrably paid. The donee declares the rental income.
+- Donor moves out completely and does not return except in normal family-visit circumstances (e.g. Christmas, family events).
+- Co-ownership gift where donor and donee share occupation AND donor bears their share of running costs (FA 1986 Sch 20 para 6 carve-out — narrow, scrutinised).
+
+**Pre-Owned Assets Tax (POAT):** s.84 + Sch 15 FA 2004. Where GROB doesn't apply but the donor still enjoys the benefit (e.g. cash gift used by donee to buy the home), an annual income tax charge based on deemed market rent. Avoidable by election to be treated as GROB (election form IHT500). Default behaviour where families have engaged in "home-loan" or "double-trust" schemes pre-2003.
+
+**Do not write:** "Gifting your home to your children removes it from your estate." (Almost always wrong without paying rent — GROB applies.) "GROB only catches gifts of land." (Wrong — applies to any property where benefit is reserved.)
+
+### 15.4 BPR / APR — the April 2026 cap
+
+**Locked position (verified gov.uk announcement 2026-05-22):** From **6 April 2026**, the previously unlimited 100% rate of Business Property Relief and Agricultural Property Relief is capped at **£1,000,000 combined** per estate. The cap applies across both reliefs jointly; estates cannot stack a £1m BPR allowance on top of a £1m APR allowance.
+
+- **Below £1m:** 100% relief, as before, for qualifying property.
+- **Above £1m:** 50% relief on the excess, producing an effective IHT rate of 20% on the qualifying value above the cap.
+- **AIM-listed shares** previously qualified at 100% BPR after 2 years' ownership; the announced reform reduces this to **50%** from 6 April 2026 regardless of the £1m allowance. AIM shares do NOT consume the £1m allowance (separate 50% tier). **Session note:** verify the exact AIM mechanics against gov.uk HMRC technical note before relying on a precise figure in any worked example — AIM rate is the most-likely-to-be-amended detail in this reform package.
+- **Trusts:** trusts holding BPR/APR-qualifying property at 6 April 2026 each get their own £1m allowance for chargeable events; anti-fragmentation provisions are expected (consult HMRC technical note before writing trust-specific worked examples).
+
+**Property-investment context (most BTL landlords):** standard BTL property is investment, not trading — **Pawson v HMRC [2013] UKUT 050 (TCC)** confirms it does not qualify for BPR. The April 2026 cap therefore rarely affects pure BTL landlords. It DOES affect:
+- Property developers (trading) holding work-in-progress at death.
+- Serviced-accommodation operations with substantial services (the *Pawson*-distinguishing fact pattern: managed kitchen, daily cleaning, breakfast, concierge).
+- Mixed estates with both an active trading business (e.g. a farm) and a BTL portfolio — the trading element competes with farmland for the £1m allowance.
+
+**Do not write:** "BTL qualifies for BPR after the April 2026 reforms" (still doesn't, per Pawson). "The £1m cap applies separately to BPR and APR" (it's combined). "AIM relief is unaffected" (rate drops to 50%).
+
+### 15.5 Pensions in IHT — 6 April 2027
+
+**Locked framing:** From **6 April 2027**, unused defined-contribution pension funds (and unused DB lump-sum death benefits) will be brought into the deceased's estate for IHT. Announced Autumn Budget 2024; statutory provisions in the draft Finance Act 2026 cycle.
+
+Implications for landlord estate planning:
+- The "use pension last" decumulation strategy that maximised IHT-free pension legacy is undermined for deaths from April 2027.
+- Pension funds will be aggregated with the rest of the estate for the £2m RNRB taper threshold; landlords holding a £900k pension + £1.6m of property may newly trigger RNRB taper.
+- Spousal exemption applies as normal; the IHT trigger is the second death.
+- Charity exemption (s.23 IHTA 1984) applies as normal to charitable pension nominations.
+
+**Do not write:** "Pensions are outside IHT" (true until 5 April 2027, false thereafter). "Pensions remain outside IHT under the spousal exemption" (spousal exemption applies, but the underlying inclusion changes).
+
+### 15.6 Non-resident IHT — domicile and the new residence test
+
+**Locked framing (April 2025+ changes):**
+- The historic **domicile** concept for IHT was replaced from **6 April 2025** by a **residence-based test** (announced Autumn Budget 2024, in force per Finance Act 2025).
+- An individual is a "**long-term resident**" (and therefore within IHT on worldwide assets) where they have been UK resident in at least 10 of the previous 20 tax years.
+- A "**formerly long-term resident**" remains within IHT on worldwide assets for up to 10 years after departure (tapered by length of residence — the longer the prior UK residence, the longer the tail).
+- **UK situs property** (including all UK residential property held directly or via overseas company / partnership) remains within UK IHT regardless of residence status. Schedule A1 IHTA 1984 (enveloped UK residential property look-through, in force from 6 April 2017) is unaffected.
+- **Excluded property trusts** settled by non-doms pre-6-April-2025 — transitional rules preserve excluded-property status for property settled before that date, but property added after triggers the new residence test.
+
+**Do not write:** "Non-doms are outside UK IHT on overseas assets" (true historically, false from 6 April 2025). "UK residential property held through an offshore company is outside IHT" (false since 6 April 2017 — Sch A1 IHTA 1984 looks through).
+
+---
+
+## 16. DTAs — Wave 2 extension (locked, 2026-05-22)
+
+Extends §10 with treaty-article-level detail Wave 2 needs. **Verified against the OECD Model 2017 Commentary** and selected published UK treaty texts on 2026-05-22.
+
+### 16.1 OECD Model 2017 — the article map
+
+UK treaties broadly follow the OECD Model with state-specific variations. Wave 2 sessions should quote the article number from the **specific bilateral treaty** they are writing about, not the OECD Model number, because numbering can differ slightly.
+
+| OECD Article | Subject | Typical UK property impact |
+|---|---|---|
+| Art 4 | Residence (tie-breakers) | Permanent home, centre of vital interests, habitual abode, nationality, mutual agreement |
+| Art 6 | Income from immovable property | Source state (UK) has primary taxing rights over UK rental income |
+| Art 7 | Business profits | Permanent establishment threshold — relevant where landlord operates through a PE |
+| Art 10 | Dividends | Withholding rates on UK company dividends paid to non-resident shareholders |
+| Art 11 | Interest | Withholding on interest paid offshore — relevant for back-to-back director loans |
+| Art 13 | Capital gains | Art 13(1) gives source state taxing rights over immovable property gains; Art 13(4) extends to property-rich entities |
+| Art 21 | Other income | Catch-all where the gain or income doesn't fit Art 6 / 13 |
+| Art 22 | Capital | Wealth taxes (UK has none; relevant for incoming Spanish / French residents) |
+| Art 23 | Methods for elimination of double taxation | Exemption method vs credit method varies by treaty |
+| Art 24 | Non-discrimination | National-treatment requirement |
+| Art 25 | Mutual Agreement Procedure | Dispute resolution between competent authorities |
+
+### 16.2 Art 6 — immovable property in UK treaties
+
+- The UK retains primary taxing rights over UK property income regardless of landlord's residence.
+- "Immovable property" definition includes rights to variable / fixed payments for working of mineral deposits and natural resources.
+- Ships, boats and aircraft are NOT immovable property under the OECD model (covered by Art 8).
+- DTAs do NOT generally provide a UK property income exemption — the treaty allocates taxing rights; UK source taxation continues per ITTOIA 2005 (individuals) or CTA 2009 (companies).
+
+### 16.3 Art 13 — capital gains: the NRCGT override
+
+- Treaty Art 13(1) typically gives the situs state (UK) primary taxing rights on immovable property gains.
+- Art 13(4) extends to gains on alienation of shares in property-rich entities (≥50% of value from immovable property).
+- **Critical statutory override:** the UK NRCGT regime now lives at TCGA 1992 s.1A and Schedules 1A / 1B / 4AA (rewritten by Finance Act 2019, which repealed the earlier ss.14B–14H structure introduced by FA 2015). The regime applies whether or not the treaty assigns UK taxing rights. Where a treaty's Art 13(4) is narrower than NRCGT (e.g. older treaties without the indirect-disposal extension), UK statute still imposes NRCGT; HMRC's view is that this is consistent with treaty obligations because the UK is exercising taxing rights that the treaty does not deny.
+- A small number of older UK treaties (e.g. **UK-Luxembourg pre-2022 protocol**) historically lacked indirect-disposal provisions; the 2009 / 2018 / 2022 protocols brought most into line. Session research: check the treaty's current consolidated text on gov.uk before writing.
+
+### 16.4 Art 4 — residence tie-breaker for individuals (cascade)
+
+Where an individual is resident under domestic law of both states:
+
+1. **Permanent home** — available to them in one state only? They are resident there.
+2. **Centre of vital interests** — if permanent home available in both, residence is the state with closer personal and economic relations (family, professions, social, political, cultural, business activities).
+3. **Habitual abode** — if neither test resolves, where they habitually live.
+4. **Nationality** — if habitual abode in both / neither, the nationality state.
+5. **Mutual agreement procedure** — if all else fails, competent authorities agree.
+
+For property-tax purposes, the tie-breaker often resolves a UK SRT-resident landlord who is also resident in (e.g.) France under French domestic rules. The tie-breaker doesn't change UK source taxation under Art 6/13 — UK property is still UK-taxable — but it changes the framework for foreign tax credit relief.
+
+### 16.5 Specific UK treaty notes
+
+- **UK-US treaty:** the **saving clause** (typically Art 1(4)) allows the US to tax its citizens worldwide regardless of treaty residence. US citizens UK-resident with UK property still file US returns; foreign tax credit relief offsets UK tax paid. The 2001 treaty (with 2002 protocol) is in force.
+- **UK-France treaty (2008, in force 2009):** Art 6 immovable property in usual form. Art 24A (capital gains) — UK retains taxing rights on UK property gains. Art 25 elimination of double taxation: France uses tax-credit method for UK property income.
+- **UK-Spain treaty (2013):** Art 13(4) property-rich entity rule applies. Spanish wealth tax (impuesto sobre el patrimonio) on UK property is creditable in Spain only; UK has no wealth tax to credit.
+- **UK-India treaty (1993):** older treaty; Art 13(1) covers immovable property gains; no Art 13(4) indirect-disposal provision (so UK NRCGT applies on UK property-rich shares regardless).
+- **UK-China treaty (2011):** Art 6 + Art 13 in OECD form.
+- **UK-UAE treaty (2016):** Art 6 + Art 13 in OECD form. UAE has no income tax / CGT, so foreign tax credit is asymmetric.
+- **Crown Dependencies (Jersey, Guernsey, Isle of Man):** modern (2018+) treaties in OECD form; Art 13(4) indirect-disposal applies.
+
+### 16.6 NRL scheme is statutory, not treaty
+
+The Non-Resident Landlord scheme (FA 1995 Sch 23; SI 1995/2902 — the Taxation of Income from Land (Non-Residents) Regulations) is a UK statutory withholding mechanism. Tenants / letting agents withhold 20% of UK rent paid to non-resident landlords and account to HMRC quarterly, unless the landlord holds an **NRL1 / NRL2 / NRL3** approval to receive rent gross. Treaty residence does not displace NRL; even a treaty-resolved non-UK resident must apply for gross-payment approval.
+
+**Do not write:** "DTAs eliminate UK tax on UK property income for non-UK residents" (false — treaty allocates taxing rights to UK as situs state). "NRL withholding is treaty-based" (false — statutory). "Foreign tax credit applies automatically" (false — claimed on relevant tax return).
+
+---
+
+## 17. Leaving the UK / expat — Wave 2 extension (locked, 2026-05-22)
+
+Extends and consolidates the expat-landlord positions Wave 2 needs. **Verified against HMRC Capital Gains Manual CG26540 on 2026-05-22** for the s.10A test; against gov.uk SRT guidance for residence tests.
+
+### 17.1 Statutory Residence Test (SRT) — FA 2013 Sch 45
+
+Mandatory test from **6 April 2013**. Cascade:
+
+1. **Automatic overseas tests** (any one met → non-UK resident):
+   - Under 16 UK days in tax year (UK resident in any of preceding 3 years).
+   - Under 46 UK days (not UK resident in any of preceding 3 years).
+   - Full-time work overseas (35-hour week test, ≤30 UK workdays, ≤90 UK days).
+2. **Automatic UK tests** (any one met without overseas test triggered → UK resident):
+   - 183+ UK days in tax year.
+   - Only home in UK for at least 91 consecutive days, with ≥30 days in that period in the tax year.
+   - Full-time UK work (75% of workdays UK; 365-day period spanning the tax year).
+3. **Sufficient ties test** (where no automatic test met): five UK ties (family, accommodation, work, 90-day, country tie). The number of ties combined with UK days determines residence — see HMRC RDR3 Annex A.
+
+"UK day" = present in UK at midnight (with deeming rule for transit and exceptional circumstances).
+
+### 17.2 Split-year treatment — Cases 1-8 (FA 2013 Sch 45 Part 3)
+
+Where SRT makes the individual UK-resident for the whole tax year but they were genuinely arriving / departing partway through, split-year treatment may apply.
+
+| Case | Direction | Trigger |
+|---|---|---|
+| 1 | Leaving | Starting full-time work overseas |
+| 2 | Leaving | Partner of someone covered by Case 1 |
+| 3 | Leaving | Ceasing to have any home in the UK |
+| 4 | Arriving | Starting to have only a UK home |
+| 5 | Arriving | Starting full-time UK work |
+| 6 | Arriving | Ceasing full-time overseas work |
+| 7 | Arriving | Partner of someone covered by Case 6 |
+| 8 | Arriving | Starting to have a UK home |
+
+Split-year is **not optional** — the cases either apply or they don't. Where multiple cases could apply, statute determines priority (Sch 45 Part 3 paras 53-55).
+
+### 17.3 Temporary non-residence — TCGA 1992 s.10A
+
+**Locked statutory citation: s.10A TCGA 1992** (verified against HMRC CG26540 on 2026-05-22). The "5-year rule":
+
+- Test: an individual is a "temporary non-resident" where their **period of non-UK residence is 5 years or less**, having previously been UK-resident in 4 or more of the 7 tax years before departure.
+- Effect: gains realised on assets owned at departure, disposed during the period of non-residence, are deemed to arise in the **year of return** and become chargeable.
+- Excluded: gains on assets acquired AND disposed during the non-residence period (no UK base cost issue).
+- The CGT regime parallel for income (ITA 2007 s.812) applies to dividend / pension lump-sum income during temporary non-residence — same 5-year test.
+
+**Planning consequence for landlord-emigrants:** selling a UK rental property as a non-resident during the 5-year window doesn't escape CGT if the individual returns within the period; the gain is recaptured in the return year. To genuinely shed CGT, the individual must be non-resident for more than 5 complete tax years.
+
+**Do not write:** "Temporary non-residence is 4 years" (wrong — 5 years or less). "Selling UK property as non-resident avoids CGT" (NRCGT applies anyway; and if the seller returns within 5 years, s.10A recaptures any gain that NRCGT didn't catch). "s.10A applies to all assets including UK land" (UK land is already in NRCGT; s.10A primarily matters for non-UK situs assets and pre-2015 base-cost UK gains).
+
+### 17.4 NRCGT — non-resident CGT on UK land
+
+**Locked statutory citation:** The current NRCGT regime lives at **TCGA 1992 s.1A and Schedules 1A / 1B / 4AA** (rewritten by Finance Act 2019, which repealed the earlier ss.14B–14H structure introduced by FA 2015 and reorganised the regime around the s.1A "non-resident CGT" charging provision). Older HMRC guidance and competitor pages may still cite ss.14B–14H — that is stale citation, the substance carried forward into s.1A + Schs 1A/1B/4AA.
+
+**Locked timeline (verified gov.uk 2026-05-22):**
+- **6 April 2015:** NRCGT extended to non-residents disposing of UK **residential** property (then under FA 2015 ss.14B–14H). Rebasing to 5 April 2015 market value default (alternative: straight-line apportionment, or full historic gain). Reporting via NRCGT return within 30 days (now 60).
+- **6 April 2019:** NRCGT extended to non-residents disposing of **non-residential** UK land AND to **indirect disposals** of shares in property-rich entities (≥75% of value from UK land + the disposing person holds ≥25%). Statutory regime rewritten into TCGA 1992 s.1A + Sch 1A / 1B / 4AA by FA 2019. Rebasing to 5 April 2019 default for non-residential.
+- **27 October 2021:** UK residents' 30-day reporting extended to **60 days**; non-residents' deadline aligned at 60.
+
+**Reporting obligation:** non-residents must file the 60-day return for **every** UK land disposal, including indirect disposals of property-rich entity shares, regardless of whether tax is due (HMRC guidance confirms: "must report disposals of UK property or land even if you have no tax to pay" — verified gov.uk 2026-05-22). UK residents file only where tax is due.
+
+**Rates:** CGT rates aligned with UK-resident rates (18% / 24% residential from 30 October 2024; 18% / 24% non-residential aligned same date). No Annual Exempt Amount for non-resident companies; £3,000 AEA for non-resident individuals where they would qualify if resident.
+
+### 17.5 NRL scheme operational mechanics
+
+- **NRL1** — landlord application to receive rent gross. Approved where landlord's UK tax affairs are up to date and they expect to remain compliant. Decision usually within 6 weeks.
+- **NRL2** — letting agent's quarterly return of rent paid to non-resident landlords + 20% tax withheld.
+- **NRL3** — tenant's equivalent where no letting agent involved AND annual rent exceeds £100/week (=£5,200/year).
+- **NRL6** — annual statement of tax deducted, given to landlord.
+- Failure to operate NRL: tenant / agent becomes liable for the unwithheld tax (no time limit for unprompted discovery).
+
+### 17.6 Domicile reform and the residence-based regime (April 2025+)
+
+The historic non-domiciled regime ended **6 April 2025**. From that date:
+
+- **Remittance basis abolished.** Replaced by a 4-year Foreign Income and Gains (FIG) regime for new UK arrivals (full exemption on foreign income / gains for the first 4 years of UK residence, provided not UK-resident in any of the preceding 10 years).
+- **IHT shifts to residence basis.** "Long-term resident" = 10 of preceding 20 tax years (see §15.6).
+- **Transitional rules** for existing non-doms: Temporary Repatriation Facility (TRF) at 12% for 2025/26 and 2026/27 to bring pre-6-April-2025 foreign income / gains onshore; CGT rebasing election to 5 April 2017 value for individuals who claimed remittance basis pre-6-April-2025.
+
+Affects expat landlords because the previous "remit only what you need" strategy for foreign-sourced income is no longer available; foreign income is taxable on the arising basis after the FIG window.
+
+**Do not write:** "Non-doms can use the remittance basis" (false from 6 April 2025). "The 15-of-20 deemed-dom test still applies to IHT" (replaced — now 10-of-20 residence test). "Foreign income is exempt forever for new arrivals" (only first 4 years under FIG regime).
+
+### 17.7 Section 21 expat-specific compliance points
+
+- Owners of UK property continuing letting after emigration must register under NRL (see §17.5).
+- Personal allowance availability for non-residents: depends on nationality / treaty; UK / EEA nationals retain personal allowance under domestic law; other nationalities depend on the specific UK treaty.
+- Self-assessment continues to be required for non-resident landlords with UK property income.
+- The 60-day NRCGT return (§17.4) is separate from the annual self-assessment and runs to a tighter clock.
+- Statutory residence test must be applied each tax year; emigration in year 1 doesn't pre-determine residence in year 2.
+
+---
+
+**End Wave 2 extension.** Sessions A (IHT), B (DTAs), C (Expat) — use §§9-10 + §§15-17 together. §§15-17 are the working detail; §§9-10 remain the headline tie-breakers. Any contradiction between competitor sources and §§15-17 → flag in `wave2_site_wide_flags.md`.
