@@ -27,13 +27,13 @@ faqs:
   - question: "How does the corresponding accounting period rule actually work for SPVs?"
     answer: "Group relief is only available for the part of a loss that arises in an accounting period overlapping with the claimant's accounting period. If the surrendering SPV has a 31 December year-end and the claimant SPV has a 31 March year-end, the overlap is the three months from 1 January to 31 March. Only the loss apportioned to that three-month overlap is surrenderable. Aligning year-ends across all SPVs is the single most useful housekeeping step a property group can take to keep group relief mechanical rather than headache-inducing."
   - question: "Does my property SPV being a close investment-holding company change anything?"
-    answer: "It changes the rate at which the relief saves tax, not the eligibility. A standalone residential BTL SPV is almost always a close investment-holding company (CIHC) under section 34 CTA 2010 because its income is investment income from let property. A CIHC pays corporation tax at 25% on all profits with no access to the small profits rate or marginal relief. Group relief still works to extinguish a profitable SPV's tax, but the saving is at 25% across the board rather than at any marginal blend. The flat-rate position actually simplifies the maths."
+    answer: "Usually no, because most BTL SPVs are NOT close investment-holding companies. The qualifying-purpose carve-out in section 18N CTA 2010 takes a company out of CIHC status where it exists wholly or mainly for the purpose of making investments in land, and the land is (or is intended to be) let to persons other than persons connected with the company. A standalone BTL SPV with arm's-length tenants therefore falls within the carve-out and accesses the full small profits rate and marginal relief framework (subject to associated-company divided thresholds). CIHC status only catches close companies where the let is to a connected person (director, director's spouse, director's children) or where the business is mainly something other than land investment. Where CIHC status does bite, the company is taxed at the main 25% rate with no marginal relief; group relief still works to extinguish the profitable SPV's tax but at the flat 25%. For our worked example below we assume arm's-length tenants throughout, so marginal relief applies."
   - question: "Can I surrender losses from a development-trading SPV against a rental-investment SPV?"
     answer: "Yes, subject to the 75% ownership test being met across the group and the corresponding accounting period rule. Group relief does not require the surrendering and claimant companies to carry on the same kind of business. A trading SPV that has a tax loss from a development project under construction can surrender that loss to a profitable rental SPV in the same group. The character of the loss in the surrendering company (trading vs property) does not change the character of the relief in the claimant; the claimant simply gets a deduction from its total profits."
   - question: "What is the time limit for making a group relief claim?"
     answer: "The claim is made on the claimant company's corporation tax return (CT600 box 309 with form CT600C completed). The standard claim window is two years from the end of the claimant's accounting period, extendable to the time the return is made if HMRC gives notice to file later. The surrendering company must give a notice of consent (signed by an officer of the surrendering company) for HMRC to accept the claim. Practically, the claim is processed in the year-end accounts cycle: the corresponding accounting period overlap is calculated, the surrender quantum agreed, and the claim and consent filed together with the CT600s."
   - question: "Do all the SPVs count as associated companies for the marginal relief thresholds?"
-    answer: "Yes, and this matters even when group relief is also in play. Two companies are associated if one controls the other, or both are controlled by the same person or group. The £50,000 small profits rate threshold and £250,000 main rate threshold are divided by the number of associated companies (plus one for the company itself). A landlord with one HoldCo and four SPVs has five associated companies, so each company's small profits rate threshold is £10,000 and the main rate kicks in at £50,000 of profits in each. For most CIHCs this is academic (CIHCs do not access the small profits rate anyway), but for trading SPVs in the same group the effect is significant."
+    answer: "Yes, and this matters even when group relief is also in play. Two companies are associated if one controls the other, or both are controlled by the same person or group. The £50,000 small profits rate threshold and £250,000 main rate threshold are divided by the number of associated companies (plus one for the company itself). A landlord with one HoldCo and four SPVs has five associated companies, so each company's small profits rate threshold is £10,000 and the main rate kicks in at £50,000 of profits in each. This bites every group SPV with arm's-length tenants (which is most of them, because the s.18N carve-out takes them out of CIHC and into the marginal relief framework). The only group SPVs to which the threshold-division question is academic are those that genuinely are CIHCs (typically connected-party lets), since those pay 25% across the board regardless."
   - question: "Does SDLT group relief follow the same 75% test as corporation tax group relief?"
     answer: "The headline 75% test is similar but the detail differs. SDLT group relief under Schedule 7 to the Finance Act 2003 requires 75% common ownership and there are anti-avoidance provisions that withdraw the relief if the buying company leaves the group within three years of the transaction. The corporation tax group relief regime has no such three-year clawback. Landlords moving a property between SPVs need to satisfy both regimes (and watch the clawback) where a transfer is involved, but loss surrender on its own only requires the corporation tax test."
   - question: "What records does HMRC expect to see for a group relief claim?"
@@ -114,25 +114,29 @@ editorialNote: "Practical guide written for landlords running multiple SPVs who 
 <li>Westbridge SPV: rental loss £(60,000), driven by a deep refurbishment and a four-month void.</li>
 </ul>
 
-<p>Without group relief, Westbridge SPV's £60,000 loss carries forward against its own future profits. The other three SPVs pay corporation tax on their profits at 25% (all four SPVs are CIHCs):</p>
+<p>All four SPVs let to arm's-length tenants and fall within the s.18N CTA 2010 carve-out, so they are NOT close investment-holding companies; they each access marginal relief subject to the associated-company-divided thresholds. With one HoldCo and four SPVs, the group has five associated companies. The 2026/27 thresholds per SPV are £50,000 ÷ 5 = £10,000 (small profits rate ceiling) and £250,000 ÷ 5 = £50,000 (main rate floor). The marginal rate on profits in the £10,000 to £50,000 band is 26.5% (the headline 25% plus the 3/200 marginal relief fraction).</p>
+
+<p>Without group relief, Westbridge SPV's £60,000 loss carries forward against its own future profits. The other three SPVs pay corporation tax with marginal relief applied per company:</p>
 
 <ul>
-<li>Northbridge: £40,000 × 25% = £10,000.</li>
-<li>Southbridge: £55,000 × 25% = £13,750.</li>
-<li>Eastbridge: £28,000 × 25% = £7,000.</li>
-<li>Total tax paid in 2026/27: £30,750.</li>
+<li>Northbridge (£40,000 profit): main rate £40,000 × 25% = £10,000, less marginal relief (£50,000 − £40,000) × 3/200 = £150. Tax £9,850.</li>
+<li>Southbridge (£55,000 profit): above the main rate threshold, no marginal relief. Tax £55,000 × 25% = £13,750.</li>
+<li>Eastbridge (£28,000 profit): main rate £28,000 × 25% = £7,000, less marginal relief (£50,000 − £28,000) × 3/200 = £330. Tax £6,670.</li>
+<li>Total tax paid in 2026/27: £30,270.</li>
 </ul>
 
-<p>With group relief, Westbridge's £60,000 loss is surrendered across the three profitable SPVs. A common pattern is to surrender against the largest profit first (£55,000 to Southbridge), leaving £5,000 of loss for one of the others. Post-relief:</p>
+<p>With group relief, Westbridge's £60,000 loss is surrendered across the three profitable SPVs. A common pattern is to surrender against the largest profit first (£55,000 to Southbridge), leaving £5,000 of loss for Northbridge. Post-relief:</p>
 
 <ul>
 <li>Southbridge: £55,000 − £55,000 surrender = £0 taxable. Tax: £0.</li>
-<li>Northbridge: £40,000 − £5,000 surrender = £35,000 taxable. Tax: £8,750.</li>
-<li>Eastbridge: £28,000 − £0 = £28,000 taxable. Tax: £7,000.</li>
-<li>Total tax paid in 2026/27: £15,750.</li>
+<li>Northbridge: £40,000 − £5,000 surrender = £35,000 taxable. Main rate £8,750, less marginal relief (£50,000 − £35,000) × 3/200 = £225. Tax £8,525.</li>
+<li>Eastbridge: unchanged at £28,000. Tax: £6,670.</li>
+<li>Total tax paid in 2026/27: £15,195.</li>
 </ul>
 
-<p>Cash tax saved in the year: £15,000. The £60,000 loss has been fully utilised at 25% (£15,000) rather than carried forward for two or three years to be utilised at the same rate. The time value alone, at a typical property finance rate of 5% to 7%, is worth £1,500 to £3,000 over the deferral period.</p>
+<p>Cash tax saved in the year: approximately £15,075. The £60,000 loss has been utilised against profits taxed at a blend of the main rate (Southbridge's profits in the £50,000+ band) and the 26.5% marginal rate (Northbridge's profits in the £10,000 to £50,000 band), rather than carried forward for two or three years. The time value alone, at a typical property finance rate of 5% to 7%, is worth £1,500 to £3,000 over the deferral period.</p>
+
+<p>Where the SPVs were CIHCs (typically connected-party lets), the maths simplifies to a flat 25% saving on the £60,000 loss (£15,000 cash saving) because no marginal relief is in play. The figures land in a similar place but the mechanic is different. Always check CIHC status before applying the maths.</p>
 
 <aside><p>Curious how the saving works on your numbers?</p><p>The mechanics scale: a portfolio with one or two refurb years per cycle and three or four steady-state SPVs typically captures £30,000 to £80,000 of group-relief savings over a five-year hold. Use the form at the bottom of this page if you want the maths run against your own SPV results.</p></aside>
 
@@ -172,7 +176,7 @@ editorialNote: "Practical guide written for landlords running multiple SPVs who 
 
 <p><strong>Missing notice of consent at submission.</strong> HMRC accepts late filing of the consent in principle, but a CT600C submitted without the supporting consent is initially refused and has to be re-submitted with the consent attached. This usually only costs time, but where the claim is near the end of its two-year window, the delay can run the claim out of time.</p>
 
-<p><strong>Associated company count missed when calculating own-company tax.</strong> Independent of group relief, all SPVs in a group are associated companies for the marginal relief threshold purposes. Where a non-CIHC SPV has been calculating its own tax on the basis of the full £50,000 / £250,000 thresholds without dividing by the number of associated companies, it has been under-paying. Group relief is a separate question from marginal relief; both need to be applied correctly.</p>
+<p><strong>Associated company count missed when calculating own-company tax.</strong> Independent of group relief, all SPVs in a group are associated companies for the marginal relief threshold purposes. Most BTL SPVs with arm's-length tenants are NOT CIHCs (the s.18N carve-out takes them out) and therefore DO use marginal relief. Where such an SPV has been calculating its own tax on the basis of the full £50,000 / £250,000 thresholds without dividing by the number of associated companies, it has been under-paying. Group relief is a separate question from marginal relief; both need to be applied correctly, and the CIHC question needs to be answered first because it sets which framework applies.</p>
 
 <p><strong>Capital losses surrendered as if they were income losses.</strong> A property SPV that has crystallised a £100,000 capital loss on a disposal is not surrendering an income-tax loss. A claim that puts the £100,000 on the CT600 as group relief surrenderable amount will be refused. The right answer is a section 171A election if there is a gain in another group company in the same period, or to leave the loss pooled in the selling company.</p>
 
