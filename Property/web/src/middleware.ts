@@ -435,8 +435,8 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "hmo-licensing-costs-tax-deductible": "/blog/property-types-and-specialist-tax/hmo-licensing-fees-tax-deductible-uk-landlords",
   "property-accounting-software-uk": "/blog/portfolio-management/property-accounting-software-uk-2026",
   "2027-property-tax-rates-cgt-capital-gains-changes": "/blog/capital-gains-tax/cgt-property-2027-rate-changes-uk-landlords",
-  // Obsolete £10,000 MTD slug (threshold was abandoned in late 2022)
-  "mtd-10000-threshold-when-does-it-apply": "/blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions",
+  // Obsolete £10,000 MTD slug (threshold was abandoned in late 2022); re-pointed 2026-05-23 from exemptions to policy-history (Wave 3 B10) per F-1 / brief recommendation
+  "mtd-10000-threshold-when-does-it-apply": "/blog/making-tax-digital-mtd/mtd-itsa-major-tax-reform-context-policy-history",
 };
 
 const LOCATION_TO_BLOG: Record<string, string> = {

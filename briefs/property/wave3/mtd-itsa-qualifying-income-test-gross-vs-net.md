@@ -170,34 +170,63 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** mtd-itsa-qualifying-income-test-gross-vs-net
+- **Final category:** Making Tax Digital (MTD)
+- **H1 chosen:** How MTD ITSA Tests Your Qualifying Income (Gross, Not Net)
+- **Meta title chosen:** MTD ITSA Qualifying Income: Gross-vs-Net Test Explained (55 chars)
+- **Why these vs other options:** Lead with the user-question framing in the H1 (gross-vs-net) because that is the boundary-case search intent. Slug kept as brief-default (slug already named the mechanic). Category routed to Making Tax Digital (MTD) to cluster with the existing MTD pillar and daughter pages.
 
 ### Competitor URLs fetched
+- ukpropertyaccountants.co.uk/what-is-qualifying-income-for-mtd/ — extracted SA-form-box anchors (SA103F box 15/16, SA103S box 9/10, SA105 box 20/22/23, SA106 box 14/16) and CY-2 mechanic. Used as primary competitor scaffold for the form-box section.
+- gov.uk Spring Statement 2025 HTML (referenced from house positions §19.7 verification) — anchor for the 15/30/31 day-trigger penalty figures.
+- legislation.gov.uk FA 2017 Sch 14 — statutory basis citation.
 
 ### Existing-page review (from "Closest existing pages")
+- mtd-rental-income-threshold-exemptions: closest pillar. Differentiated by leading with the gross-vs-net mechanic at the boundary (£52k/£8k persona) rather than threshold schedule + exemption taxonomy. Linked out to it twice as the pillar.
+- making-tax-digital-property-income-2026-complete-guide: cross-linked once at the end as the wider mandate overview.
+- how-to-switch-self-assessment-mtd-property-income: cross-linked once at the end as the process page.
+- buy-to-let-limited-company-complete-guide-uk: cross-linked once in the exclusion section (limited company income outside MTD entirely).
+- B3 sibling page on joint-property threshold split: avoided direct link since B3 not yet written; pointed back to the exemptions pillar for joint-ownership headline rule. Will back-link from B3 when B3 ships.
 
 ### Citations added (external authority)
+1. legislation.gov.uk FA 2017 Sch 14 (statutory basis)
+2. gov.uk "Check if you're eligible to use Making Tax Digital for Income Tax" (eligibility checker)
+3. gov.uk "Find software that's compatible with Making Tax Digital for Income Tax" (software list)
+4. Spring Statement 2025 HTML (penalty mechanics — referenced verbally rather than direct hyperlink to keep authority count manageable)
+
+Four direct authority hyperlinks in body. Within the 4-7 target.
 
 ### Internal links added (to our existing pages)
+1. /blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions (twice: intro framing + joint-ownership sub-section)
+2. /blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk (Ltd Co exclusion)
+3. /blog/making-tax-digital-mtd/how-to-switch-self-assessment-mtd-property-income (closing process pointer)
+4. /blog/making-tax-digital-mtd/making-tax-digital-property-income-2026-complete-guide (closing pillar pointer)
+
+All four resolve to existing content/blog/*.md files.
 
 ### Inline CTA placements
+- Aside #1: after the persona-mechanic intro, before the three-persona drill-down (HMRC outreach letter triage offer).
+- Aside #2: inside the reference-year section, framing the late-filed-return + accelerated penalty risk.
+- Aside #3: in the "what to do if in scope" section, framing the qualifying income calculation service.
+
+Three asides total (within the 1-3 guidance). No aside opens the page, none placed mid-worked-example.
 
 ### Build attempts
+- npm install (worktree first build) + npm run build: clean. Static + dynamic routes generated; new page appears under ƒ /blog/[category]/[slug] route.
+- Built HTML present at .next/server/app/blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net.html.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 12 Questions in FAQPage JSON-LD = 12 in frontmatter ✓
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0 (no class= attributes anywhere in body)
+- Meta title length: 55 (max 62) ✓
+- Meta description length: 155 (max 158) ✓
+- Internal links resolve: 4/4 target files exist in Property/web/content/blog/ ✓
+- monitored_pages row inserted: yes (rewrite_type='rewrite', 90-day window, notes "Wave 3 Session B net-new (MTD ITSA bucket B1)")
+- Body word count: 3,196 (within 2,500-3,500 framing-differentiator-led range)
 
 ### Flags raised to wave3_site_wide_flags.md
+- F-7 EXISTING_PAGE_STALE: mtd-rental-income-threshold-exemptions has incorrect exit-period figure ("two consecutive tax years" in one FAQ vs the correct three-year rule), incorrect quarterly deadlines (cites 5 Aug / 5 Nov / 5 Feb / 5 May; gov.uk + house position §19.6 give 7 Aug / 7 Nov / 7 Feb / 7 May), and incorrect late-payment penalty rates (cites 2% at 15 days + 2% at 30 days; Spring Statement 2025 corrected to 3% / 3% / 10% on 15/30/31 day-triggers for MTD ITSA filers). Needs a back-patch.
 
 ### 2-3 sentence summary
+Wrote the mechanic-deep gross-vs-net qualifying-income page anchored on three boundary personas (leveraged BTL £52k/£8k, mixed self-employment + rental £56k, multi-property £82k with Section 24 bite). Differentiated from the existing exemptions pillar by leading with the operational mechanic and the SA-form-box anchors rather than threshold schedule + exemption taxonomy. Flagged three factual errors in the existing exemptions pillar (exit period, quarterly deadlines, post-Spring-Statement penalty rates) for back-patch via wave3_site_wide_flags F-7.

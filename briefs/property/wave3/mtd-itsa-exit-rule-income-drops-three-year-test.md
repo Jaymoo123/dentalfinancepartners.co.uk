@@ -168,34 +168,69 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** mtd-itsa-exit-rule-income-drops-three-year-test (as briefed; no override)
+- **Final category:** making-tax-digital-mtd (as briefed)
+- **H1 chosen:** "MTD ITSA Exit Rule: The Three-Year Income-Drop Test (and the Two Faster Routes)" (signals the headline mechanic + flags that there are alternatives, distinguishes from a generic "how to exit MTD" framing)
+- **Meta title chosen:** "MTD ITSA Exit Rule: Three-Year Below-Threshold Test" (51 chars)
+- **Why these vs other options:** Word count 2,242 sits below the 2,500 typical floor; deliberate per §16.16. The mechanic is one rule with three exit routes and one worked timeline; padding to 3,000 would force restating §19.5 from different angles or duplicating the gross-vs-net mechanic from B1. The framing differentiator (the three-year clock + cohort-of-use) is fully covered. Title leads with the primary query word "MTD ITSA Exit Rule" rather than the slug verbatim because GSC queries for this topic typically combine "exit" + "MTD" + a timing word; "three-year" carries the distinctive mechanic.
 
 ### Competitor URLs fetched
+- https://www.ukpropertyaccountants.co.uk/heres-how-you-can-exit-mtd-if-your-income-falls/ , VERIFIED ALIVE (200) but no extractable article body, the page returned only a "Related: Top 4 Things Landlords Must Do To Get On Top of the Renters Rights Act" promo block and a "Book a Discovery Call" CTA. Either the article is paywalled / gated, JS-rendered, or the site has restructured since the brief was written. The brief's summary of the content (two routes + immediate-cessation + portal notification + "income drop alone does not auto-exit") aligned with my house-position §19.5 understanding so no additional intelligence was lost by the empty fetch.
+- https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax , 404 (URL has changed since the brief stage 2 verification on 2026-05-22 morning).
+- https://www.gov.uk/guidance/sign-up-as-an-individual-for-making-tax-digital-for-income-tax , redirects to https://www.gov.uk/guidance/sign-up-for-making-tax-digital-for-income-tax (now alive 200). Fetched + scanned for opt-out / leave / below-threshold language; the page covers sign-up mechanics but does not separately document the three-year exit rule (the exit rule lives in HMRC's "Using MTD for Income Tax" guidance and the policy papers, not in the sign-up flow). Confirmed that voluntary participants can leave through the same business tax account interface.
+- https://www.gov.uk/government/collections/making-tax-digital-for-income-tax , alive (200), the top-level collection page; provides the canonical entry point for the wider MTD ITSA guidance ecosystem.
+- https://www.gov.uk/government/publications/spring-statement-2025-document/spring-statement-2025-html , referenced (not re-fetched) per house position §19.7 verified-Stage-2 record; underpins the 15/30/31 day + 3%/3%/10% late-payment regime mentioned in the "What you still must do during the three-year wait" section.
 
 ### Existing-page review (from "Closest existing pages")
+- `mtd-rental-income-threshold-exemptions` , read in full. Confirms F-7 / F-9 from prior B sessions: this page asserts "two consecutive tax years" for the exit threshold, which contradicts house position §19.5 (three consecutive). It also reproduces the legacy 2%/2%/4% penalty figures. Both are wrong, both are already flagged in `wave3_site_wide_flags.md` for the post-merge cleanup queue. I have not raised a new flag (would duplicate F-7/F-9). My page asserts the correct three-year + 3%/3%/10% positions, which is the on-brand answer for any reader who lands on the exit-rule page directly.
+- `how-to-switch-self-assessment-mtd-property-income` , read frontmatter; this is the mirror "switch-in" page. Cross-linked bidirectionally (my outbound link in the "Where this page sits" H2).
+- `property-investment-exit-strategy-planning-guide` , confirmed exists; cross-linked as the strategic context for partial-portfolio disposal that often triggers the three-year clock.
+- `leaving-uk-landlord-12-month-pre-departure-checklist` , confirmed exists; cross-linked as the expat case where leaving the UK may trigger cessation rather than the three-year rule.
+- Wave 3 sibling B1 `mtd-itsa-qualifying-income-test-gross-vs-net` , confirmed shipped (commit 70a303e); cross-linked for the qualifying-income measurement that the exit test re-uses.
+- Wave 3 sibling B3 `mtd-itsa-jointly-owned-property-threshold-split` , confirmed shipped (commit dff42ad); cross-linked for joint-owner exit-test mechanics.
+- Wave 3 sibling B8 pillar `mtd-itsa-overview-six-changes-residential-landlords` , confirmed shipped (commit 053af20); cross-linked as the bucket pillar.
+- Wave 3 sibling B2 `mtd-itsa-accidental-landlords-do-i-need-to-file-digitally` , confirmed shipped (commit ed595db); cross-linked for the inherited / moved-abroad / relationship-breakdown cohort overlap with cessation routes.
 
 ### Citations added (external authority)
+- gov.uk Spring Statement 2025 publication (named for the 15/30/31 + 3%/3%/10% penalty regime).
+- Finance Act 2017 Schedule A1 (referenced in body for the default-in-scope-until-something-happens mechanic).
+- FA 2021 Schedule 24 (named for the points-based late-submission penalty regime).
+- gov.uk "Find compatible software" supplier list (referenced for the software-cost-through-wait point).
+- gov.uk MTD ITSA collection (the canonical collection page, not separately linked in body to avoid sprinkling generic authority links; can be added on a maintenance pass if desired).
+
+Note: the page leans on the house-position §19 as the canonical reference and assumes the reader can reach gov.uk via the navigation. Body-link discipline favoured internal cross-links (7) over external (named-but-not-hyperlinked) authorities to keep the SEO equity on-site, matching the pattern of the B2 / B3 / B8 siblings.
 
 ### Internal links added (to our existing pages)
+1. /blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net (B1 sibling, gross-vs-net mechanic)
+2. /blog/making-tax-digital-mtd/mtd-itsa-jointly-owned-property-threshold-split (B3 sibling, joint-owner exit-test mechanic)
+3. /blog/making-tax-digital-mtd/mtd-itsa-accidental-landlords-do-i-need-to-file-digitally (B2 sibling, accidental-landlord cohort overlap)
+4. /blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords (B8 pillar)
+5. /blog/making-tax-digital-mtd/how-to-switch-self-assessment-mtd-property-income (switch-in mirror)
+6. /blog/property-investment/property-investment-exit-strategy-planning-guide (strategic context)
+7. /blog/expat-landlords/leaving-uk-landlord-12-month-pre-departure-checklist (expat / cessation case)
+
+All seven resolve to existing files. No CANNIBAL flag raised; the exit rule has no dedicated existing page (the closest is the exemptions pillar with the F-7 / F-9 errors, which is being back-patched post-merge anyway).
 
 ### Inline CTA placements
+- Aside 1: after the worked three-year timeline H2, at the moment the reader sees that "selling one property does not exit you next year" and is forming the question of which exit route is right for them. Conversion moment for "talk to us before we choose".
+- Aside 2: after the "How to notify HMRC" H2, at the moment the reader sees that the notification is administrative but the strategic decision is upstream. Conversion moment for "this interacts with CGT / S24 / incorporation, we work it together".
+- 2 asides total (within 1-3 cap). No opening aside, no aside inside a worked example. Disciplined per the brief.
 
 ### Build attempts
+- Build 1: clean. 0 errors, 0 warnings related to this page. 6 verifications all pass on first build.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14/14
+- Em-dashes in markdown: 0 (also 0 en-dashes)
+- Tailwind classes in markdown: 0
+- Meta title length: 51 chars (limit 62)
+- Meta description length: 153 chars (limit 158)
+- Internal links resolve: 7/7
+- monitored_pages row inserted: yes (id 136, rewrite_type='rewrite' per the table's CHECK constraint, notes flag NETNEW Wave 3 Session B B4)
+- Body word count: 2,242 (intentionally below the 2,500 typical floor per §16.16, single-mechanic page where padding would dilute. Justified in Decisions block above.)
 
 ### Flags raised to wave3_site_wide_flags.md
+- No new flag. F-7 (existing exemptions pillar has factual errors including "two consecutive tax years" for exit) and F-9 (penalty figure 2%/2%/4% propagation) are already raised by prior Session B and cover the exit-rule contradiction on the existing pillar; this page's correct three-year + 3%/3%/10% positions are the on-brand fix that the F-7/F-9 cleanup queue will eventually align the exemptions pillar with.
 
 ### 2-3 sentence summary
+B4 ships the §19.5 exit-rule mechanic as a stand-alone page: three exit routes (cessation, three-year low-income, voluntary opt-out), a worked timeline anchored on a 2026 entrant who sells down to a £42k portfolio (earliest exit 2029/30), four cohorts of practical use (former FHL owners, partial-portfolio sellers, retirement-cycle landlords, long-void single-let landlords), and the notification + re-entry mechanics. 2,242 words at the §16.16 reference-page floor; 14 FAQs; 7 internal cross-links covering the full MTD ITSA bucket lattice plus the strategic exit + expat departure adjacent pages. No new flags raised; F-7 / F-9 already cover the contradiction with the existing exemptions pillar.

@@ -174,34 +174,72 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** mtd-itsa-major-tax-reform-context-policy-history (as briefed; no override)
+- **Final category:** making-tax-digital-mtd (as briefed)
+- **H1 chosen:** "The Policy History of Making Tax Digital for Income Tax: How We Got From 2015 to the April 2026 Mandate" (signals policy-history scope explicitly to defend against CANNIBAL-WATCH overlap with the registration how-to; "how we got from 2015 to the April 2026 mandate" is the framing differentiator)
+- **Meta title chosen:** "MTD ITSA Policy History: From 2015 to 2028 Explained" (52 chars)
+- **Why these vs other options:** Word count 2,497 — mid-depth, just at the typical 2,500 floor. Topic supports natural depth because the chronological span (2015 to 2028) has substantive substance at each phase. The page is deliberately scope-disciplined to history/context only, with NO registration instructions, NO software setup, NO operational how-to content; cross-links handle the operational pages instead. This is the CANNIBAL-WATCH defence (manager-flagged 0.38 partial-overlap score against the existing how-to-register-mtd-landlord-step-by-step-guide); scopes are kept clean. Caught 8 em-dashes in body on build-1 verification (concentrated in the December 2022 announcement narrative and the reading-list bullets) and trimmed all to commas / parentheses on build-2. Also caught meta description at 160 chars on build-1 (over 158 limit); trimmed to 155 on build-2.
 
 ### Competitor URLs fetched
+- https://www.ukpropertyaccountants.co.uk/making-tax-digital-mtd-the-uks-major-tax-reform/ , attempted; same gated-content pattern as previous B pages. Relied on brief stage 2 summary (positions MTD as the most significant change since SA's 1996/97 introduction; original 2024 mandate plan modified to phased 2026/2027; covers all three cycles VAT 2019, ITSA 2026-28, CT future).
+- gov.uk MTD ITSA collection (alive 200), authoritative reference for the current trajectory.
+- gov.uk Spring Statement 2025 HTML (referenced for the corrected late-payment regime, source documented in house position §19.7 / F-6).
 
 ### Existing-page review (from "Closest existing pages")
+- `how-to-register-mtd-landlord-step-by-step-guide` , CANNIBAL-WATCH target. Frontmatter read 2026-05-22 (prior B-bucket session). The existing page is purely the registration how-to. My page is purely the policy history. Scope discipline held throughout; no registration instructions in my body or FAQs. The CANNIBAL-WATCH 0.38 partial-overlap score reflected token-level similarity (both pages reference dates, threshold figures, mandate cohorts) rather than scope overlap. Resolution: NO CANNIBAL flag raised.
+- `making-tax-digital-property-income-2026-complete-guide` , confirmed exists; cross-linked as the broader pillar.
+- Wave 3 sibling B8 pillar `mtd-itsa-overview-six-changes-residential-landlords` , confirmed shipped (053af20); cross-linked. B8 is what-changed, this page is why-it-changed.
+- `mtd-rental-income-threshold-exemptions` , confirmed exists; cross-linked outbound for the current threshold detail.
+- `making-tax-digital-landlords-april-2026-deadline` , confirmed exists; cross-linked as the date anchor.
+- Wave 3 sibling B7 `mtd-itsa-comparison-current-self-assessment-vs-mtd-cycle` , confirmed shipped (da1ec7c); cross-linked.
+- `mtd-quarterly-deadlines-2026-2027-landlords` , confirmed exists; cross-linked.
 
 ### Citations added (external authority)
+- HMRC December 2015 "Making Tax Digital" policy paper (named, the foundational vision document).
+- Finance (No. 2) Act 2017 Schedules A1 and 14 (named, the statutory basis).
+- HMRC 2018 / 2022 consultation outcomes (named).
+- 19 December 2022 government announcement (named, the foundational policy document for the current trajectory).
+- FA 2021 Schedules 24 / 25 / 26 (named, the points-based late-submission and legacy late-payment regimes).
+- Spring Statement 2025 HTML publication on gov.uk (named, the corrected late-payment regime).
+- gov.uk MTD ITSA collection (referenced as the current operational guidance entry point).
 
 ### Internal links added (to our existing pages)
+1. /blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords (B8 what-changed counterpart)
+2. /blog/making-tax-digital-mtd/how-to-register-mtd-landlord-step-by-step-guide (CANNIBAL-WATCH target, cross-linked outward as the registration how-to)
+3. /blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net (B1 qualifying-income mechanic)
+4. /blog/making-tax-digital-mtd/mtd-itsa-comparison-current-self-assessment-vs-mtd-cycle (B7 cycle comparison)
+5. /blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline (deadline anchor)
+6. /blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions (current threshold pillar)
+7. /blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords (current timeline)
+8. /blog/making-tax-digital-mtd/making-tax-digital-property-income-2026-complete-guide (broader pillar)
+9. /blog/making-tax-digital-mtd/mtd-itsa-letter-from-hmrc-what-to-do-next (B6 trigger event)
+10. /blog/making-tax-digital-mtd/mtd-itsa-vs-limited-company-cohort-different-rules (B5 Ltd Co alternative)
+
+All 10 resolve and map to correct category URLs per F-12 verifier.
 
 ### Inline CTA placements
+- Aside 1: after the December 2022 announcement narrative, at the moment the reader has seen the £10k abandonment and the phased schedule and is forming the "competitor articles I've read still quote £10k, are they right?" question. Conversion moment in the form of a "if you encounter this number on third-party guidance, treat the page as out of date" framing, lightweight not aggressive.
+- 1 aside total for the policy-history page. The page is reference-shaped (chronological narrative + FAQs) and aside density should be lower than the action-oriented pages.
 
 ### Build attempts
+- Build 1: clean build, but verification caught 8 em-dashes in body (concentrated in the December 2022 announcement narrative + the "Reading list" bullets) AND meta description at 160 chars (over 158 limit).
+- Build 2: clean after em-dash replacements (commas / parentheses) AND meta description trim from 160 to 155 chars. All six verifications pass.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14/14
+- Em-dashes in markdown: 0 (after build-2 fix; was 8 on build-1)
+- Tailwind classes in markdown: 0
+- Meta title length: 52 chars (limit 62)
+- Meta description length: 155 chars (limit 158, after build-2 trim from 160)
+- Internal links resolve: 10/10 (all map to correct category URLs per F-12 verifier)
+- monitored_pages row inserted: yes (id 151, rewrite_type='rewrite' per the table's CHECK constraint, notes flag NETNEW Wave 3 Session B B10 + also the redirect target for mtd-10000-threshold-when-does-it-apply)
+- Body word count: 2,497 (mid-depth, just at the typical 2,500 floor; topic supports the depth as a chronological narrative with substantive substance at each phase)
+
+### Redirect applied
+- `Property/web/src/middleware.ts` updated: `mtd-10000-threshold-when-does-it-apply` re-pointed from `/blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions` to `/blog/making-tax-digital-mtd/mtd-itsa-major-tax-reform-context-policy-history`. Inline comment annotation added noting the 2026-05-23 re-point + F-1 / brief reference. Build clean post-change.
 
 ### Flags raised to wave3_site_wide_flags.md
+- F-13 raised: REDIRECT (executed). Documents the middleware.ts re-point from exemptions to policy-history for the obsolete £10k slug. Already executed on branch as part of B10 commit; no further action required at merge.
 
 ### 2-3 sentence summary
+B10 closes Session B with the policy-history page covering MTD ITSA from 2015 origins through the April 2026 mandate to the April 2028 £20,000 cohort and the future MTD CT cycle. Mid-depth at 2,497 body words; 14 rich FAQs; chronological spine across eight phases (2015 OTS origins / 2017 statutory basis / 2018 £10k design / 2019-2021 delays / 2022 redesign + Dec 2022 announcement / 2024 pilot / 2025 voluntary expansion + Spring Statement 2025 penalty changes / 2026 mandate goes live) plus future trajectory; CANNIBAL-WATCH scope discipline held cleanly (no registration how-to content); 10 internal cross-links category-URL-verified; middleware.ts redirect re-pointed from exemptions to this page on launch (F-13 logged).

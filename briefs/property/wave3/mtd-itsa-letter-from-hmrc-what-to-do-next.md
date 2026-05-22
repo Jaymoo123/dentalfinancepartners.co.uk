@@ -169,34 +169,75 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** mtd-itsa-letter-from-hmrc-what-to-do-next (as briefed; no override)
+- **Final category:** making-tax-digital-mtd (as briefed)
+- **H1 chosen:** "You Received an MTD ITSA Letter From HMRC: What It Is, What It Isn't, and What to Do Next" (signals the trigger event in second-person from the start; sets up the page's distinctive framing as a reaction page rather than a planning page)
+- **Meta title chosen:** "MTD ITSA Letter From HMRC: What It Means and Next Steps" (55 chars)
+- **Why these vs other options:** Page is a trigger-event persona/action page distinct in format from the mechanic / comparison / persona pages already shipped this bucket. Lead with "the letter arrives" sets up second-person reading immediately. Outline deliberately diverges from the prior B-bucket pages: no mechanic table opening, no cohort-comparison opening, instead a "what the letter says vs doesn't say" frame. Body 1,964w (intentional reference-floor per §16.16); the substantive value sits in the 3-check verification + 4-route decision tree + 10-day action plan + 7-mistake list, all of which are checklists rather than long prose. 14 FAQs deliberately rich and operational (most over 100 words) to cover the cohort-specific letter scenarios. Padding the body to 2,800 would dilute the action-oriented clarity. HowTo schema candidate flagged below (the 10-day action plan table has step structure).
 
 ### Competitor URLs fetched
+- https://www.ukpropertyaccountants.co.uk/received-hmrcs-mtd-letter-mtd-compliance-for-landlords/ , attempted; same gated-content pattern as B4 and B5 (no extractable article body, page exists). Relied on brief stage 2 reasoning + house position §3 / §19.1-19.3 / §19.6-19.7 directly.
+- gov.uk MTD ITSA collection (https://www.gov.uk/government/collections/making-tax-digital-for-income-tax), alive 200, canonical entry point for the gov.uk resources the letter references.
+- gov.uk sign-up flow (https://www.gov.uk/guidance/sign-up-for-making-tax-digital-for-income-tax), alive 200 after redirect from the brief's URL, this is the operational landing the letter prompts.
 
 ### Existing-page review (from "Closest existing pages")
+- `how-to-register-mtd-landlord-step-by-step-guide` , confirmed exists; cross-linked outbound as the registration pillar this page hands off to.
+- `mtd-rental-income-threshold-exemptions` , confirmed exists; cross-linked outbound as the structural-exemption reference (despite the F-7/F-9 errors on that page, the cross-link is the right pointer; the post-merge cleanup queue will fix the errors).
+- Wave 3 sibling B1 `mtd-itsa-qualifying-income-test-gross-vs-net` , confirmed shipped (70a303e); cross-linked as the figure-verification mechanic the page asks the reader to run.
+- `making-tax-digital-landlords-april-2026-deadline` , confirmed exists; cross-linked as the deadline anchor.
+- `mtd-penalties-landlords-miss-deadline` , confirmed exists; cross-linked in the cost-of-inaction section.
+- `landlord-tax-return-complete-guide-2026` , confirmed exists; not cross-linked because the "I am out of scope, I keep filing SA" branch is implicit in the routes rather than a substantive section that warrants a dedicated outbound link. Could be added on a maintenance pass.
+- Wave 3 sibling B9 `mtd-itsa-pilot-trial-volunteer-2025-26-experience` , NOT YET SHIPPED (still ⬜ todo for me to write this session); cross-link deferred.
+- Wave 3 sibling B8 pillar `mtd-itsa-overview-six-changes-residential-landlords` , confirmed shipped (053af20); cross-linked.
+- Wave 3 sibling B2 `mtd-itsa-accidental-landlords-do-i-need-to-file-digitally` , confirmed shipped (ed595db); cross-linked.
+- Wave 3 sibling B3 `mtd-itsa-jointly-owned-property-threshold-split` , confirmed shipped (dff42ad); cross-linked.
+- Wave 3 sibling B4 `mtd-itsa-exit-rule-income-drops-three-year-test` , confirmed shipped (9d52572); cross-linked.
+- Wave 3 sibling B5 `mtd-itsa-vs-limited-company-cohort-different-rules` , confirmed shipped (0c511b2); cross-linked.
+
+10 internal cross-links total. Heaviest internal link density of any B-bucket page so far, deliberate because the trigger-event page is the natural front-door to the MTD bucket and benefits from a comprehensive hand-off to every onward route.
 
 ### Citations added (external authority)
+- FA 2017 Sch A1 (named in body for the structural exclusion of Ltd Cos).
+- FA 2021 Sch 24 (named for the points-based late-submission regime).
+- Spring Statement 2025 (named for the 15/30/31 + 3%/3%/10% late-payment regime in the cost-of-inaction section).
+- gov.uk MTD ITSA collection (referenced as the letter's pointed-to resources).
+- gov.uk MTD ITSA sign-up flow (referenced as the operational landing).
+- HMRC business tax account / Agent Services Account (named operationally in the routes section).
 
 ### Internal links added (to our existing pages)
+1. /blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net (B1, figure-verification)
+2. /blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions (structural-exemption pillar)
+3. /blog/making-tax-digital-mtd/how-to-register-mtd-landlord-step-by-step-guide (registration pillar)
+4. /blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords (B8 bucket pillar)
+5. /blog/making-tax-digital-mtd/mtd-itsa-jointly-owned-property-threshold-split (B3 joint-owner case)
+6. /blog/making-tax-digital-mtd/mtd-itsa-accidental-landlords-do-i-need-to-file-digitally (B2 accidental cohort)
+7. /blog/making-tax-digital-mtd/mtd-itsa-vs-limited-company-cohort-different-rules (B5 Ltd Co route)
+8. /blog/making-tax-digital-mtd/mtd-itsa-exit-rule-income-drops-three-year-test (B4 cessation/exit route)
+9. /blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline (deadline anchor)
+10. /blog/making-tax-digital-mtd/mtd-penalties-landlords-miss-deadline (penalty consequences)
+
+All 10 resolve.
 
 ### Inline CTA placements
+- Aside 1: after the "Verify before you act, the three things to check" H2, at the moment the reader has been told that 1 in 6 letters has a fact issue and is forming the "should I get help running this check?" question. Conversion moment.
+- Aside 2: after the "The cost of inaction" H2, at the moment the reader has seen the £600+ first-year penalty scenario and is thinking about the dispute / structural-exemption routes. Conversion moment.
+- 2 asides total. No opening aside, no aside inside a worked example. Disciplined per the brief.
 
 ### Build attempts
+- Build 1: clean. 0 errors, 0 warnings related to this page.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14/14
+- Em-dashes in markdown: 0 (also 0 en-dashes)
+- Tailwind classes in markdown: 0
+- Meta title length: 55 chars (limit 62)
+- Meta description length: 151 chars (limit 158)
+- Internal links resolve: 10/10
+- monitored_pages row inserted: yes (id 143, rewrite_type='rewrite' per the table's CHECK constraint, notes flag NETNEW Wave 3 Session B B6)
+- Body word count: 1,964 (intentionally below the 2,500 typical floor per §16.16 reference-page exception; action page where substantive value is in checklists not prose. Reasoning in Decisions block.)
 
 ### Flags raised to wave3_site_wide_flags.md
+- HowTo schema flag: the "Timeline pressure" H2 contains a 5-row action-plan table with sequential day-bands (Day 0-2, 3-5, 6-10, 11-30, 30+) that maps naturally to HowTo schema. Recommend the orchestrator assess whether to add HowTo schema to the template for action-oriented pages of this kind (NOT in body). Filed as SCHEMA flag (not blocking; the page works without it).
 
 ### 2-3 sentence summary
+B6 ships the trigger-event action page for landlords who receive the HMRC pre-mandate MTD ITSA outreach letter. Distinct format from the mechanic / comparison / persona siblings: leads with "the letter arrives" in second-person, lays out 3-check verification + 4-route decision tree (verify-and-register, dispute the classification, claim exemption, post-reference-year change) + 10-day action-plan table + 7-mistake list + cost-of-inaction quantification (~£600 first-year penalty scenario). 1,964 body words (intentional reference-floor per §16.16; substance in checklists not prose) with 14 rich operational FAQs and the heaviest internal cross-link density of any B-bucket page so far (10 cross-links across the full MTD bucket lattice). HowTo schema candidate flagged for the action-plan table.

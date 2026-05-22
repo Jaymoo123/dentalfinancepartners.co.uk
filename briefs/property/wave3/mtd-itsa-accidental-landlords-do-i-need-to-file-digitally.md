@@ -166,34 +166,60 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** mtd-itsa-accidental-landlords-do-i-need-to-file-digitally
+- **Final category:** Making Tax Digital (MTD)
+- **H1 chosen:** Accidental Landlord and MTD ITSA: Do I Need to File Digitally?
+- **Meta title chosen:** Accidental Landlord MTD ITSA: Do I File Digitally? (50 chars)
+- **Why these vs other options:** Lead the H1 with the user-question phrasing because the persona-search-intent is literally "do I need to file digitally". Category matches brief default.
 
 ### Competitor URLs fetched
+- ukpropertyaccountants.co.uk/accidental-landlords-mtd-do-you-also-need-to-file-digitally/ — extracted persona taxonomy (relocation, inheritance, relationship-break-up, temporary let) + portfolio-grouping rule (UK = one portfolio, foreign = separate, each business = separate stream).
+- gov.uk eligibility checker — referenced for the formal HMRC test framing.
 
 ### Existing-page review (from "Closest existing pages")
+- first-time-landlord-tax-guide-everything-you-need-to-know: linked once at the end for landlords still inside their first 12 months and needing wider compliance picture.
+- inheriting-uk-rental-property-executors-step-by-step: linked once in the inheritance-route section for the executor / personal-representative handover sequence.
+- mtd-rental-income-threshold-exemptions: linked once in the closing-actions section as the wider mandate framework.
+- B1 sibling `mtd-itsa-qualifying-income-test-gross-vs-net`: linked once in the inheritance-route section as the mechanic reference. (B1 now committed and resolvable.)
+- how-to-register-mtd-landlord-step-by-step-guide: linked once in the closing-actions section for the registration pathway.
 
 ### Citations added (external authority)
+1. gov.uk "Find software that's compatible with Making Tax Digital for Income Tax" (software list)
+2. Implicit references to FA 1995 s.42 (NRL scheme) and Taxes Management Act 1970 (mentioned by name, not hyperlinked to keep the authority count to one direct external link, which is intentional for a persona page where the reader is unlikely to follow legislation links and the persona-specific authority pull is via the HMRC pages and our own pillars).
+
+One direct authority hyperlink. Plus the four internal links to existing pages. Within tolerance for a persona page; deeper-mechanic pages (B3, B4, B5) will have the heavier authority load.
 
 ### Internal links added (to our existing pages)
+1. /blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net (B1 sibling)
+2. /blog/landlord-tax-essentials/inheriting-uk-rental-property-executors-step-by-step
+3. /blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions
+4. /blog/making-tax-digital-mtd/how-to-register-mtd-landlord-step-by-step-guide
+5. /blog/landlord-tax-essentials/first-time-landlord-tax-guide-everything-you-need-to-know
+
+All five resolve to existing content/blog/*.md files. (Note: confirmed `inheriting-uk-rental-property-executors-step-by-step` exists under root blog/ without category prefix; rendered URL category will be inferred by Next.js from the file's category frontmatter.)
 
 ### Inline CTA placements
+- Aside #1: after the four-routes section, before the qualifying-income-test mechanic section (offer to run the calculation against projected annual rent).
+- Aside #2: in the software-choice section, framing the operational-ramp / record-keeping-habit-first principle.
+
+Two asides total. Both at high-intent moments after the reader has identified themselves in a route.
 
 ### Build attempts
+- npm run build (B2 + B1 both present): clean. New page appears under ƒ /blog/[category]/[slug].
+- Built HTML present at .next/server/app/blog/making-tax-digital-mtd/mtd-itsa-accidental-landlords-do-i-need-to-file-digitally.html.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 12 in JSON-LD = 12 in frontmatter ✓
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 50 (max 62) ✓
+- Meta description length: 148 (max 158) ✓
+- Internal links resolve: 5/5 target files exist ✓
+- monitored_pages row inserted: yes (rewrite_type='rewrite', 90-day window, notes "Wave 3 Session B net-new (MTD ITSA bucket B2)")
+- Body word count: 2,656 (within 2,500-3,500 framing-differentiator-led range; persona pages naturally sit at the lower end)
 
 ### Flags raised to wave3_site_wide_flags.md
+- None raised on this page. F-7 from B1 already covers the EXISTING_PAGE_STALE on the exemptions pillar; no separate flag needed for B2's link-out.
 
 ### 2-3 sentence summary
+Wrote the persona-driven accidental-landlord page covering the four routes (inheritance, relocation, relationship breakdown, temporary let) with route-specific decision points against the £50k / £30k / £20k thresholds. Included the HMRC portfolio-grouping rule (UK = one, foreign = separate, trades = separate) and the NRL-scheme-vs-MTD interaction for the relocation persona. Anchored cross-links back to B1 (mechanic) and forward to the wider MTD pillar + registration + first-time-landlord guides.

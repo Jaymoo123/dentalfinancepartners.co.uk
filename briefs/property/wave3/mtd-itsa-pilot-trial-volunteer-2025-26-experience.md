@@ -169,34 +169,71 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** mtd-itsa-pilot-trial-volunteer-2025-26-experience (as briefed; no override)
+- **Final category:** making-tax-digital-mtd (as briefed)
+- **H1 chosen:** "The Voluntary MTD ITSA Pilot for 2025/26: Worth Opting In, or Wait for the Mandate?" (signals the genuine decision the page answers, "or wait for the mandate" is the framing differentiator distinguishing this page from a "register for the pilot now!" promotional take)
+- **Meta title chosen:** "MTD ITSA Voluntary Pilot 2025/26: Should Landlords Opt In?" (58 chars)
+- **Why these vs other options:** Word count 2,341 — mid-depth, in the 2,500-3,500 band. Topic supports natural depth because the pilot is a real cohort decision with practical trade-offs (3 reasons for + 3 reasons against + 14-item eligibility carve-out list + 3 specific pilot-only restrictions + worked persona). 14 rich FAQs. The page deliberately positions the pilot as a narrow-use-case decision rather than a universal recommendation, which is the genuine professional advice; the framing differentiator from the brief asks for the "persona who genuinely benefits" approach. Caught meta description at 166 chars on first verification (over the 158 limit) and trimmed to 149 chars on build-2.
 
 ### Competitor URLs fetched
+- https://www.ukpropertyaccountants.co.uk/what-you-need-to-know-about-hmrcs-mtd-trial/ , attempted; same gated-content pattern. Relied on brief stage 2 summary (pilot launched 22 April 2024; 14 excluded categories including HICBC, jointly-owned property, partnerships, FHL, variable profits, etc.; restrictive accounting periods; cannot carry back losses or switch methods during trial).
+- gov.uk MTD ITSA collection (alive 200), authoritative reference.
+- gov.uk MTD sign-up flow (alive 200 after redirect), confirms the voluntary opt-in route via the business tax account.
 
 ### Existing-page review (from "Closest existing pages")
+- `how-to-register-mtd-landlord-step-by-step-guide` , confirmed exists; cross-linked. Mandatory-registration workflow. Distinct angle: this page is the voluntary opt-in route + 14 exclusion categories + trade-offs. No CANNIBAL flag.
+- `best-mtd-software-landlords-2026` , confirmed exists; cross-linked as the operational reference.
+- Wave 3 sibling B6 `mtd-itsa-letter-from-hmrc-what-to-do-next` , confirmed shipped (9bba702); cross-linked. The involuntary route in.
+- Wave 3 sibling B8 pillar `mtd-itsa-overview-six-changes-residential-landlords` , confirmed shipped (053af20); cross-linked.
+- `making-tax-digital-property-income-2026-complete-guide` , confirmed exists; cross-linked as the broader pillar.
+- `mtd-quarterly-reporting-landlords-step-by-step-guide` , confirmed exists; cross-linked as the operational quarterly-cycle reference.
+- Wave 3 sibling B4 `mtd-itsa-exit-rule-income-drops-three-year-test` , confirmed shipped (9d52572); cross-linked for the "leaving the pilot if it doesn't work" case.
+- Wave 3 sibling B7 `mtd-itsa-comparison-current-self-assessment-vs-mtd-cycle` , confirmed shipped (da1ec7c); cross-linked.
+- Wave 3 sibling B1 `mtd-itsa-qualifying-income-test-gross-vs-net` , confirmed shipped (70a303e); cross-linked.
+
+9 internal cross-links total. All resolve AND map to correct category URLs (category-aware verifier applied per F-12 lesson from B7).
 
 ### Citations added (external authority)
+- HMRC pilot guidance (named in body, referenced for the 22 April 2024 launch date and 14-item exclusion list).
+- FA 2017 Sch A1 (named for the structural basis of MTD ITSA).
+- FA 2021 Sch 24 (named for the points-based late-submission regime that applies identically to voluntary participants).
+- gov.uk Spring Statement 2025 (named for the 15/30/31 + 3%/3%/10% late-payment regime that applies from 6 April 2026 forward).
+- gov.uk software supplier list (named operationally in the opt-in flow section).
 
 ### Internal links added (to our existing pages)
+1. /blog/making-tax-digital-mtd/mtd-itsa-letter-from-hmrc-what-to-do-next (B6 involuntary route)
+2. /blog/making-tax-digital-mtd/how-to-register-mtd-landlord-step-by-step-guide (mandatory registration workflow)
+3. /blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords (B8 bucket pillar)
+4. /blog/making-tax-digital-mtd/mtd-itsa-comparison-current-self-assessment-vs-mtd-cycle (B7 cycle comparison)
+5. /blog/making-tax-digital-mtd/mtd-itsa-exit-rule-income-drops-three-year-test (B4 exit/leave-pilot pointer)
+6. /blog/making-tax-digital-mtd/best-mtd-software-landlords-2026 (software reference)
+7. /blog/making-tax-digital-mtd/making-tax-digital-property-income-2026-complete-guide (pillar)
+8. /blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net (B1 qualifying-income mechanic)
+9. /blog/making-tax-digital-mtd/mtd-quarterly-reporting-landlords-step-by-step-guide (operational quarterly-cycle reference)
+
+All 9 resolve and map to correct category URLs.
 
 ### Inline CTA placements
+- Aside 1: after the "Three reasons to opt in early" H2, at the moment the reader has the three arguments for and is forming the question of whether they personally fit the narrow persona. Conversion moment.
+- Aside 2: after the worked persona for the slightly-over-£50k landlord, at the moment the reader has the contrast between the qualifying-persona case and the £42k sub-threshold counter-case. Conversion moment for "talk through your specific portfolio shape".
+- 2 asides total. No opening aside, no aside inside a worked example.
 
 ### Build attempts
+- Build 1: clean, but verification caught meta description at 166 chars (over the 158 limit).
+- Build 2: clean after meta description trim to 149 chars. All six verifications pass.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14/14
+- Em-dashes in markdown: 0 (also 0 en-dashes)
+- Tailwind classes in markdown: 0
+- Meta title length: 58 chars (limit 62)
+- Meta description length: 149 chars (limit 158, after build-2 trim from initial 166)
+- Internal links resolve: 9/9 (all map to correct category URLs per F-12 verifier)
+- monitored_pages row inserted: yes (id 148, rewrite_type='rewrite' per the table's CHECK constraint, notes flag NETNEW Wave 3 Session B B9)
+- Body word count: 2,341 (mid-depth, in the 2,500-3,500 band on the lower side)
 
 ### Flags raised to wave3_site_wide_flags.md
+- No new flag. The meta-description-over-limit issue was caught at session-time by the standard 6-check verifier (which does correctly check this); no verifier gap surfaced beyond what F-12 already covers.
 
 ### 2-3 sentence summary
+B9 ships the voluntary pilot opt-in decision page. Mid-depth at 2,341 body words; 14 rich FAQs; lays out 3 reasons to opt in + 3 reasons not to + the 14-item pilot exclusion list (HICBC, jointly-owned property, partnerships, FHL, etc., narrower than eventual mandate scope) + 3 specific pilot restrictions (accounting period, cash-vs-accruals lock-in, no loss carry-back) + worked persona contrast (slightly-over-£50k landlord pilot makes sense, £42k sub-threshold doesn't) + opt-in/opt-out mechanics. 9 internal cross-links, all category-URL-verified per F-12 hardening. No new flags raised.

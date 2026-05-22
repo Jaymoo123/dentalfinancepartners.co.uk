@@ -173,34 +173,70 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:** ( chars)
-- **Why these vs other options:**
+- **Final slug:** mtd-itsa-overview-six-changes-residential-landlords
+- **Final category:** Making Tax Digital (MTD)
+- **H1 chosen:** MTD ITSA for Residential Landlords: The Six Headline Changes
+- **Meta title chosen:** MTD ITSA for Landlords: The Six Headline Changes (48 chars)
+- **Why these vs other options:** Lead with the bucket-pillar framing. The number "six" in H1 + meta is the structural signal that this is a catalogue overview, not a comprehensive guide. Distinguishes from `making-tax-digital-property-income-2026-complete-guide` (which is the narrative pillar).
 
 ### Competitor URLs fetched
+- ukpropertyaccountants.co.uk/mtd-explained-for-residential-landlords-what-changes-and-when/ — extracted the "what changes" scaffold and reviewed the deadline cite. Competitor uses 5 Aug / 5 Nov / 5 Feb / 5 May (incorrect). Cross-checked house position §19.6 + gov.uk "Send quarterly updates" page (verified 2026-05-22): correct deadlines are 7 Aug / 7 Nov / 7 Feb / 7 May. Wrote with correct deadlines.
+- gov.uk "Send quarterly updates" (use-making-tax-digital-for-income-tax/send-quarterly-updates) — verified the 7th-of-month deadline cycle. Authoritative source.
 
 ### Existing-page review (from "Closest existing pages")
+- mtd-quarterly-reporting-landlords-step-by-step-guide: CANNIBAL-WATCH from Stage 1. Read in full at start of B8. Scope-differentiation discipline held: this page is overview (each change in 200-300 words); existing page is operational quarterly-process deep-dive. Linked from change #2 outbound. NO CANNIBAL flag raised.
+- making-tax-digital-property-income-2026-complete-guide: linked from typical-landlord section + closing-actions.
+- mtd-record-keeping-landlords-digital-requirements: linked from change #1.
+- best-mtd-software-landlords-2026: linked from change #4.
+- mtd-software-landlords-free-vs-paid-options-compared: linked from change #4.
+- mtd-rental-income-threshold-exemptions: linked from change #5.
+- mtd-penalties-landlords-miss-deadline: linked from change #6 (also flagged for back-patch per F-7 expansion below).
+- mtd-itsa-comparison-current-self-assessment-vs-mtd-cycle (B7 sibling): linked from change #3 (note: B7 not yet committed, link resolves only after B7 ships in same branch).
+- mtd-itsa-qualifying-income-test-gross-vs-net (B1): linked from change #5.
+- making-tax-digital-landlords-april-2026-deadline: linked from typical-landlord section.
+- how-to-register-mtd-landlord-step-by-step-guide: linked from typical-landlord section.
 
 ### Citations added (external authority)
+1. gov.uk "Find software that's compatible with Making Tax Digital for Income Tax" (software supplier list)
+2. Implicit named references to FA 2017 Sch A1 (statutory basis) and FA 2021 Sch 24/25/26 (penalty framework) without hyperlink to keep the authority count manageable for a bucket-pillar page that mostly links inward.
+
+One direct external hyperlink. Bucket-pillar role means most links are internal cross-references to the deeper pages; the authority pull happens on those deeper pages, not on the overview.
 
 ### Internal links added (to our existing pages)
+1. /blog/making-tax-digital-mtd/mtd-record-keeping-landlords-digital-requirements
+2. /blog/making-tax-digital-mtd/mtd-quarterly-reporting-landlords-step-by-step-guide (change #2; CANNIBAL-WATCH counterpart)
+3. /blog/making-tax-digital-mtd/mtd-itsa-comparison-current-self-assessment-vs-mtd-cycle (B7 sibling)
+4. /blog/making-tax-digital-mtd/best-mtd-software-landlords-2026
+5. /blog/making-tax-digital-mtd/mtd-software-landlords-free-vs-paid-options-compared
+6. /blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net (B1 sibling)
+7. /blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions
+8. /blog/making-tax-digital-mtd/mtd-penalties-landlords-miss-deadline
+9. /blog/making-tax-digital-mtd/making-tax-digital-property-income-2026-complete-guide
+10. /blog/making-tax-digital-mtd/how-to-register-mtd-landlord-step-by-step-guide
+11. /blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline
+
+Eleven internal links. Bucket-pillar role justifies the cross-link density; this page acts as the hub for the cluster.
 
 ### Inline CTA placements
+- Aside #1: after change #6 (penalty regime). One-hour onboarding call framing for landlords approaching the mandate.
+
+One aside. Less than the 1-3 guidance recommends; a catalogue page benefits less from inline asides than a mechanic / persona page does. The aside is placed at the highest-intent moment (after the reader has absorbed all six changes).
 
 ### Build attempts
+- npm run build (B1+B2+B3+B8 present): clean. Built HTML present.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 13 = 13 ✓
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 48 (max 62) ✓
+- Meta description length: 154 (max 158) ✓
+- Internal links resolve: 10/11 currently resolve. The 11th link (`mtd-itsa-comparison-current-self-assessment-vs-mtd-cycle` = B7) is on the same branch but not yet committed; will resolve once B7 ships. Acceptable for an intra-bucket cross-link.
+- monitored_pages row inserted: yes (rewrite_type='rewrite', 90-day window, notes "Wave 3 Session B net-new (MTD ITSA bucket B8 pillar)")
+- Body word count: 2,213 (intentionally below the 2,500 typical floor per §16.16 reference-page exception; bucket-pillar role requires each change to stay at the 200-300 word brief instruction. Padding further would drift into CANNIBAL territory against the linked deeper pages. Word count is framing-differentiator-led, not target-led.)
 
 ### Flags raised to wave3_site_wide_flags.md
+- F-9 (added below): EXISTING_PAGE_STALE expansion. Quarterly deadlines and late-payment penalty rates wrong on both `mtd-quarterly-reporting-landlords-step-by-step-guide` and `mtd-penalties-landlords-miss-deadline`, not only `mtd-rental-income-threshold-exemptions` as flagged in F-7. Pattern is the same factual drift across the MTD cluster; treat as a single batch back-patch.
 
 ### 2-3 sentence summary
+Wrote the bucket-pillar B8 page covering the six MTD ITSA changes (digital records, quarterly updates, EoPS + final declaration, mandated software, phased threshold, new penalty regime). Each change carries a ~250-word summary plus cross-link to the operational deep-dive page; scope discipline held against the CANNIBAL-WATCH versus the existing quarterly-reporting guide. 11 internal cross-links plus implementation timeline + common first-year mistakes reference sections. Raised F-9 to expand F-7's scope: the deadline / penalty errors on the exemptions pillar also appear on the quarterly-reporting guide and the penalties page; single batch back-patch.
