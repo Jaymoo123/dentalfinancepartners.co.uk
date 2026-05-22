@@ -212,47 +212,52 @@ You don't have to use all of these; pick the ones that fit your specific framing
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** ated-rental-property-relief-mechanics (unchanged)
+- **Final category:** Incorporation & Company Structures (unchanged)
+- **H1 chosen:** ATED Property Rental Business Relief: How the Mechanics Actually Work
+- **Meta title chosen:** ATED Rental Property Relief: Mechanics for Property Companies (61 chars)
+- **Why these vs other options:** Framing differentiator is "mechanics", not "complete guide" — page title leads with it. H1 emphasises mechanics + practical applicability ("How the Mechanics Actually Work") to differentiate from the pillar's overview structure.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- The single competitor URL (ukpropertyaccountants.co.uk ATED complete guide) was already fetched in C10 research. Their treatment of the rental relief is shallow ("file a Relief Declaration Return") with no coverage of s.1122 CTA 2010 boundaries, the commercial-terms test, or void apportionment. Their gap is our differentiator.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `business-property-relief-rental-property-iht` — IHT-context BPR, completely different relief. No overlap.
+- `inheritance-tax-rental-property-uk-guide` — IHT pillar, no ATED content. No overlap.
+- `how-to-value-rental-property-portfolio-tax-purposes` — valuation methodology, adjacent but tangential. No overlap.
+- `capital-gains-tax-selling-rental-property-uk` / `cgt-inherited-rental-property-calculation-uk` — CGT context, no overlap with ATED rental relief mechanics.
+- No cannibalisation risk identified. The closest existing content on ATED is C10 (the pillar I just wrote), which this page is intentionally a daughter of.
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- FA 2013 s.133 (the rental relief statutory anchor) — cited inline.
+- CTA 2010 s.1122 (the connected-person test) — cited inline as the spine of the analysis.
+- FA 2003 Sch 4A (the parallel 15% SDLT relief) — cited inline for the acquisition-side comparison.
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/incorporation-and-company-structures/ated-complete-guide-2026-27` (×3) — pillar backlink for bands, scope, returns mechanics, and the wider relief catalogue. Per the M-3 calibration: this page does not restate the bands; it relies on the pillar.
+- `/blog/incorporation-and-company-structures/corporation-tax-rates-property-companies-2026-27` — counterpart corporate tax obligation.
+- `/blog/landlord-tax-essentials/income-tax-rates-landlords-2026-27-complete-guide` — individual-counterfactual comparator.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After the "Connected-Person Test" section — that section is the highest-intent moment because the controller's wider family-ring catches readers off-guard (sons-in-law and step-parents are connected). Conversion moment is "I have a connected person scenario, I need help".
+- After the "Worked Example" Year 3 (loss of relief mid-year) — second-highest intent moment because the 30-day amended-return deadline is the most common penalty cascade trigger. Conversion moment is "this happened to me, what now".
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
-- Attempt 2 (if needed) — <pass / fail>
+- Attempt 1 — pass (clean build, route confirmed for ated-rental-property-relief-mechanics).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
+- FAQ schema count in built HTML matches frontmatter: yes (13 = 13)
+- Em-dashes in markdown: 0
+- Tailwind classes in markdown: 0
+- Meta title length: 61 chars (limit 62)
+- Meta description length: 151 chars (limit 158)
+- Internal links resolve: all 5 link instances point at existing markdown files (C10 plus two existing pillars)
+- monitored_pages row inserted: yes
+- Word count: 3483 (within M-3 calibration 2,800–3,500 for ATED daughters)
 
 ### Flags raised to track1_site_wide_flags.md
-- <none / one-line summary of each flag>
+- None.
 
 ### 2-3 sentence summary
-<freeform>
+Wrote the mechanics-focused daughter of C10. Honours M-3 calibration by leaning on the pillar for bands and not restating them. Structures the page around the three analytical tests (statutory limbs, s.1122 connected-person ring, commercial-terms test) followed by a three-year worked example showing a clean year, a void-year, and a loss-of-relief-mid-year scenario. The mid-year scenario is the highest-intent moment because of the 30-day amended-return deadline that catches most landlords out.
 
