@@ -207,51 +207,62 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged (`iht-gifts-with-reservation-of-benefit-property`).
+- **Final category:** unchanged (`Landlord Tax Essentials`).
+- **H1 chosen:** "Gifts with Reservation of Benefit on Property: A Section 102 FA 1986 Walkthrough"
+- **Meta title chosen:** "GROB on Property Gifts: s.102 FA 1986 Explained" (47 chars)
+- **Why these vs other options:** Statute-anchored title differentiates from sibling A1 (decision framework) and from the existing IHT pillar (descriptive). Lead with "GROB" (the term readers search) and the specific section number for SERP signal of authoritative depth. Meta description leads with the three concrete sub-mechanisms (rent escape, POAT, Sch 20) so SERP snippet signals depth not just topic.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- https://www.ukpropertyaccountants.co.uk/gift-with-reservation-of-benefit/ — competitor's GROB explainer: structured around "how GWR affects lifetime gifts" + "how to avoid GWR rules". Single worked example (£500k home gifted 2020, valued £700k at 2027 death, full estate inclusion). Mentions full market rent. No co-ownership carve-out, no POAT depth. Confirms our deeper-than-competitor positioning.
+- https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm14301 — HMRC's GWR manual chapter starting point: s.102(1)(a) bona-fide-possession limb, s.102(1)(b) entire-exclusion limb, "relevant period" definition. Cross-references IHTM14311/14331/14371/14391/14421 + s.102A/B/C extension for post-9-March-1999 land gifts. POAT also referenced.
+- https://www.legislation.gov.uk/ukpga/1986/41/section/102 — Verbatim statute. s.102(1)/(2)/(3)/(4)/(5)/(6-7)/(8). Used directly in body for subsection-by-subsection walkthrough. Confirmed s.102(5) exemptions list (spousal, charitable, marriage, small gifts, political parties, housing associations, employee trusts) and s.102(4) cessation-PET mechanism.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `inheritance-tax-rental-property-uk-guide` — descriptive pillar, mentions GROB only as FAQ-level ("can I just give my children the keys and move out"). This page is the deep mechanism explainer underneath the pillar's FAQ. Linked bidirectionally; pillar should add back-link (already flagged F-3 from A1).
+- `cgt-gifting-property-family-members-uk` — comprehensive CGT side of gifting. Linked at the rent-escape and donee-base-cost paragraphs to hand readers the CGT companion without re-explaining s.17 mechanics.
+- `cgt-property-transfer-spouse` — spouse-transfer CGT side. Linked at the s.102(5) exemptions section because s.18 IHTA 1984 spousal exemption is the canonical no-GROB route; reader hops to CGT companion.
+- `fic-iht-treatment-bpr-myth` — referenced but not linked: FIC as a GROB-avoidance vehicle was flagged in the brief, but A2 stays statute-focused and lets A1 decision framework + FIC-myth page handle the FIC-as-alternative discussion. Avoiding cross-link sprawl.
+- `cgt-divorce-property-transfer-tax-implications` — not linked: divorce-specific, lateral. No natural hook in A2's mechanism-focused outline.
+- `business-property-relief-rental-property-iht` — not linked: BPR misconception belongs in the A1 decision framework's "what doesn't work" section, not in a statute walkthrough.
+- `iht-property-investors-decision-framework-2026-onwards` (A1, just shipped) — linked at opening and at the close as the planning-context counterpart. A1 back-patched in same commit to add forward-link to A2 (closing F-5 flag).
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- s.102 Finance Act 1986 (legislation.gov.uk) — verbatim statute spine.
+- Schedule 20 Finance Act 1986 (legislation.gov.uk, referenced) — para 6 co-ownership carve-out.
+- s.84 + Schedule 15 Finance Act 2004 — POAT statutory basis.
+- HMRC IHTM14301 (Inheritance Tax Manual, Reservation of Benefit chapter starting point) — HMRC's published interpretation.
+- IHTA 1984 ss.18/20/22/23/24/24A — s.102(5) exemption cross-references.
+- s.7(4) IHTA 1984 — taper relief on the cessation-PET.
+- FA 1986 (Double Charges) Regulations 1987 (SI 1987/1130) — reconciliation between GROB and cessation-PET.
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards` — A1 sibling; planning context.
+- `/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide` — descriptive pillar (for the wider BTL gifting framing).
+- `/blog/capital-gains-tax/cgt-gifting-property-family-members-uk` — CGT companion at rent-escape paragraph.
+- `/blog/capital-gains-tax/cgt-property-transfer-spouse` — spouse-transfer CGT side at s.102(5) exemption section.
+- (Back-patch to A1) re-added the forward-link from A1 → A2 in A1's GROB-discussion paragraph, closing flag F-5.
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After the Patel-estate £600k worked example — high-intent moment for readers who recognise their own situation in the trap.
+- After the four-most-enquired-patterns list — high-intent moment for readers reviewing their existing arrangements against HMRC's enquiry pattern.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — pass. `npm run build` clean. Rebuilt after the A1 back-patch micro-edit to ensure A1's HTML reflects the re-added forward link to A2.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13 Question entries, 13 faqs).
+- Em-dashes in markdown: 0.
+- Tailwind classes in markdown: 0.
+- Meta title length: 47 chars (≤62 OK).
+- Meta description length: 145 chars (≤158 OK).
+- Internal links resolve: yes (4 unique internal blog links, all targets exist).
+- monitored_pages row inserted: yes (90-day window from 2026-05-22).
+- Body word count: 2,713.
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- F-5 (raised under A1) closed by the A1 back-patch in the same A2 commit (forward-link from A1 to A2 re-added). No new flags for A2.
 
 ### 2-3 sentence summary
-<freeform>
+Wave 2 A2 shipped: subsection-by-subsection s.102 FA 1986 walkthrough applied to property gifts. Covers s.102(1)(a)/(b) tests, s.102(3) death-time deeming, s.102(4) cessation-PET, s.102(5) exemptions, Sch 20 para 6 co-ownership carve-out, POAT (s.84 + Sch 15 FA 2004) and the IHT500 election, ss.102A/B/C extensions for land gifts. Patel-estate £600k worked trap example; clean BTL gift fact pattern; four most-enquired HMRC patterns. 2,713 body words, 13 FAQs, all six verifications pass, monitored_pages registered. A1 back-patched in the same commit to re-add the forward-link removed pre-build (closes F-5).
 
