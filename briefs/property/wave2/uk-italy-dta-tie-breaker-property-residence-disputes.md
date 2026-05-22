@@ -205,51 +205,73 @@ Persistent: false. Timeout: 1 hour. Do NOT block on the watcher; pick up a diffe
 ## Per-page work-log (fill in as you go — supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:** <unchanged from assignment, OR explain override>
-- **Final category:** <unchanged from assignment, OR explain override>
-- **H1 chosen:** <text>
-- **Meta title chosen:** <text>
-- **Why these vs other options:** <1-2 lines>
+- **Final slug:** unchanged: `uk-italy-dta-tie-breaker-property-residence-disputes`
+- **Final category:** unchanged: `Non-Resident Landlord Tax`
+- **H1 chosen:** "Resolving Dual Residence Under the UK-Italy Treaty: The Article 4 Tie-Breaker for Property Owners"
+- **Meta title chosen:** "UK-Italy Dual Residence: Article 4 Tie-Breaker Guide" (52 chars)
+- **Why these vs other options:** The H1 leads with the operative verb ("Resolving") and the dispositive mechanism (Article 4 tie-breaker), not "UK-Italy DTA". Property-owner anchoring goes in the trailing slot. Meta tightens to the SERP-pinch query ("UK-Italy Dual Residence" + "Article 4 Tie-Breaker"). The "for property owners" framing is the differentiator vs general dual-residence pages that don't think about UK rental / IVIE implications.
 
 ### Competitor URLs fetched
-- <URL> — <key takeaway in 1 line>
-- <URL> — <key takeaway>
-- <URL> — <key takeaway>
+- gov.uk/government/publications/italy-tax-treaties referenced as canonical pointer for 1988 treaty.
+- HMRC INTM154020 and INTM154040 referenced by section for the Article 4 cascade framework and the dual-residence claim mechanics.
+- HS302 (Dual residents helpsheet) referenced for the UK-side operational mechanics.
+- House positions §16.4 (Art 4 tie-breaker cascade) and §16.5 (UK-Italy treaty notes) used as anchors.
+- OECD Commentary on Article 4 paragraphs 13 and 15 (permanent home + centre-of-vital-interests definitions) drawn from working knowledge.
+- Italian statute references (TUIR Article 2 post-2024 reform under Legislative Decree 209/2023, AIRE registration framework, IVIE provisions, Modello Redditi PF Quadro RW) drawn from working knowledge of Italian tax statute.
 
 ### Existing-page review (from "Closest existing pages")
-- `<our-slug>` — <how does it overlap? are you writing the applied/local version?>
-- `<our-slug>` — <as above>
+- `tax-treaties-property-investors-treaty-framework-guide` (B1) — framework parent; B7 forward-links twice (intro + closing).
+- `non-resident-landlord-scheme-uk-complete-guide` — NRL pillar; linked from worked example + closing (when cascade resolves to Italy, UK rental becomes NRL).
+- `non-resident-cgt-uk-property-rates-reporting` — NRCGT rates; linked from worked example + closing.
+- `uk-property-income-expats-tax-obligations-explained` — descriptive parent; linked from closing.
+- `dta-tie-breaker-test-dual-residence-property-owners` (B8, this session, currently ⬜ todo) — NOT linked (does not yet exist on branch; F-13 raised for back-patch when B8 ships).
+- `srt-statutory-residence-test-landlord-decision-tree` (C2, on Session C branch only, ✅ done there but not on B branch) — NOT linked (file not present on this Session B worktree; F-13 covers this too for cross-branch back-patch post-merge).
 
 ### Citations added (external authority)
-- <citation 1>
-- <citation 2>
-- <citation 3>
-- <citation 4>
+- 1988 UK-Italy Double Taxation Convention (Articles 4, 6, 13, 15, 24, 25 referenced)
+- MLI (2017 Multilateral Instrument) modifications to Article 25
+- OECD Commentary on Article 4 paragraphs 13 (permanent home definition) and 15 (centre of vital interests family-centrality)
+- HMRC FA 2013 Schedule 45 (Statutory Residence Test)
+- HMRC INTM154020 + INTM154040 (Article 4 cascade interpretation; dual-residence claim mechanics)
+- HMRC HS302 (Dual residents helpsheet)
+- Italian Testo Unico delle Imposte sui Redditi (TUIR) Article 2 (Italian residence test)
+- Italian Legislative Decree 209/2023 (2024 reform of TUIR Article 2)
+- AIRE (Anagrafe Italiani Residenti all'Estero) registration framework
+- IVIE (Imposta sul Valore degli Immobili situati all'Estero) regime
+- IMU (Imposta Municipale Unica) referenced for Italian-property side
+- TCGA 1992 s.1A + Schedules 1A/1B/4AA (UK NRCGT)
+- FA 1995 Schedule 23 (NRL scheme)
+- TIOPA 2010 ss.18 and 130 (UK foreign tax credit)
+- Schedule A1 IHTA 1984 (UK enveloped residential property look-through; IHT context)
+- Italian IRPEF rates (23%, 35%, 43%) referenced for tax computation context
+- Italian succession tax rates (4% direct line above €1m; 6% siblings; 8% others) referenced for IHT context
 
 ### Internal links added (to our existing pages)
-- `/blog/<category>/<slug>` — <why>
-- `/blog/<category>/<slug>` — <why>
+- `/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide` — B1 framework parent (intro + closing)
+- `/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide` — NRL pillar (worked example + closing)
+- `/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting` — NRCGT rates (worked example + closing)
+- `/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained` — descriptive parent (closing)
 
 ### Inline CTA placements
-- After section "<H2 name>" — <reasoning>
-- After section "<H2 name>" — <reasoning>
+- After Article 4 cascade walk — the highest-intent moment for the executive reader who has just understood the cascade resolves to Italy; CTA frames the joined-up-evidence support and IVIE / NRL operational consequences.
 
 ### Build attempts
-- Attempt 1 — <pass / fail + reason>
+- Attempt 1 — em-dash check failed (5 em-dashes detected in "Step X — " labels and worked-example parentheticals). Fixed via Edit: replaced em-dash labels with comma constructions ("Step 1, permanent home"), replaced parenthetical dashes with commas, restructured the IVIE-on-rented-flat sentence (which had a leftover drafting fragment) into a clean inherited-Lewisham-flat illustration.
+- Attempt 2 — pass. `next build` clean. All six checks pass.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter: <yes / no>
-- Em-dashes in markdown: <0 / fixed>
-- Tailwind classes in markdown: <0 / fixed>
-- Meta title length: <chars>
-- Meta description length: <chars>
-- Internal links resolve: <yes / no>
-- monitored_pages row inserted: <yes / no>
-- Body word count: <number>
+- FAQ schema count in built HTML matches frontmatter: yes (13 Question entries in built JSON-LD)
+- Em-dashes in markdown: 0 (fixed in attempt 2)
+- Tailwind classes in markdown: 0
+- Meta title length: 52 chars
+- Meta description length: 156 chars
+- Internal links resolve: yes (all four existing-page links; B8 + C2 deliberately not linked because not on this branch / not yet written; F-13 raised)
+- monitored_pages row inserted: yes
+- Body word count: 2,869
 
 ### Flags raised to wave2_site_wide_flags.md
-- <none / one-line summary of each flag>
+- F-13 [INTERNAL_LINK] B7 ↔ B8 + B7 ↔ C2 cross-link back-patches. B7 currently has no link to B8 (generic tie-breaker, not yet written on this branch) or C2 (SRT decision tree, on Session C branch only). Both pages naturally pair with B7; bidirectional links to be added when B8 ships and on Wave-2 merge to main.
 
 ### 2-3 sentence summary
-<freeform>
+B7 UK-Italy tie-breaker page shipped at 2,869 body words / 13 FAQs. The differentiator vs B8 (generic tie-breaker) lands: B7 anchors the Article 4 cascade to a specific UK-Italy bilateral with explicit treatment of TUIR Article 2 post-2024 reform under Legislative Decree 209/2023, AIRE registration practice, and IVIE wealth tax (0.76% on UK property held by Italian-resident-under-tie-breaker). Marco worked example (Italian national, London Mon-Thu, Milan family) resolves at the centre-of-vital-interests step to Italian residence; consequences for UK property (NRL, NRCGT, IVIE) walked through. Structure deliberately cascade-focused rather than country-by-country-allocations-focused to differentiate from the standard bilateral page (B2-B6) shape. F-13 raised for B7↔B8 + B7↔C2 cross-link back-patches.
 
