@@ -1,6 +1,6 @@
 # Wave 5 launch prompts
 
-**Status as of 2026-05-23:** Wave 5 prelaunch in progress. Main at `<MAIN_HEAD_AT_WORKTREE_CREATION>` (manager fills at worktree-creation time). Three worktrees on branches `property-wave5-{a,b,c}` (to be created from current main HEAD per task #10). House positions §23 (Devolved property tax) + §24 (Form 17 + joint ownership + spouse-mechanics) locked. 30 briefs at `briefs/property/wave5/` from Stage 2 (verified-live URLs + framing differentiators + cross-mechanism authority links).
+**Status as of 2026-05-23:** Wave 5 prelaunch in progress. Main at `050bd72` (manager fills at worktree-creation time). Three worktrees on branches `property-wave5-{a,b,c}` (to be created from current main HEAD per task #10). House positions §23 (Devolved property tax) + §24 (Form 17 + joint ownership + spouse-mechanics) locked. 30 briefs at `briefs/property/wave5/` from Stage 2 (verified-live URLs + framing differentiators + cross-mechanism authority links).
 
 **Manager-side Q&A watcher to be armed at launch** (polls the three `wave5_questions_session_*.md` files every 20 seconds for new `STATUS: open` lines).
 
@@ -13,7 +13,7 @@
 **Open in:** `C:/Users/user/Documents/Accounting-wt-property-wave5-a/`
 
 ```
-You are Session A for Wave 5 of the Property Net-New Program. Working in worktree `Accounting-wt-property-wave5-a` on branch `property-wave5-a` at HEAD `<MAIN_HEAD_AT_WORKTREE_CREATION>`. Bucket: VAT topical-gap deepening (10 briefs A1-A10).
+You are Session A for Wave 5 of the Property Net-New Program. Working in worktree `Accounting-wt-property-wave5-a` on branch `property-wave5-a` at HEAD `050bd72`. Bucket: VAT topical-gap deepening (10 briefs A1-A10).
 
 Read first, in this order:
 1. docs/sessions/property/WAVE5_SESSION_A_START_HERE.md (your task brief and bucket overview)
@@ -34,7 +34,7 @@ Read first, in this order:
 6. docs/property/wave5_site_wide_flags.md (cross-session flags; append when you raise one)
 7. docs/property/wave5_questions_session_A.md (your Q&A channel)
 
-Acknowledge with one short status line: "Session A picked up. Main at <HEAD>. Reading START_HERE and brief A1 now."
+Acknowledge with one short status line: "Session A picked up. Main at 050bd72. Reading START_HERE and brief A1 now."
 
 Then claim brief A1 in the tracker and follow the 19-step workflow.
 
@@ -54,7 +54,7 @@ Critical handover hygiene (§16.14): if you commit a brief but feel context-pres
 **Open in:** `C:/Users/user/Documents/Accounting-wt-property-wave5-b/`
 
 ```
-You are Session B for Wave 5 of the Property Net-New Program. Working in worktree `Accounting-wt-property-wave5-b` on branch `property-wave5-b` at HEAD `<MAIN_HEAD_AT_WORKTREE_CREATION>`. Bucket: Devolved property tax (10 briefs B1-B10; 5 Welsh + 5 Scottish).
+You are Session B for Wave 5 of the Property Net-New Program. Working in worktree `Accounting-wt-property-wave5-b` on branch `property-wave5-b` at HEAD `050bd72`. Bucket: Devolved property tax (10 briefs B1-B10; 5 Welsh + 5 Scottish).
 
 Read first, in this order:
 1. docs/sessions/property/WAVE5_SESSION_B_START_HERE.md (your task brief and bucket overview)
@@ -75,7 +75,7 @@ Read first, in this order:
 6. docs/property/wave5_site_wide_flags.md (cross-session flags)
 7. docs/property/wave5_questions_session_B.md (your Q&A channel)
 
-Acknowledge with one short status line: "Session B picked up. Main at <HEAD>. Reading START_HERE and brief B1 now."
+Acknowledge with one short status line: "Session B picked up. Main at 050bd72. Reading START_HERE and brief B1 now."
 
 Then claim brief B1 in the tracker and follow the 19-step workflow.
 
@@ -101,7 +101,7 @@ Critical handover hygiene (§16.14): if you commit a brief but feel context-pres
 **Open in:** `C:/Users/user/Documents/Accounting-wt-property-wave5-c/`
 
 ```
-You are Session C for Wave 5 of the Property Net-New Program. Working in worktree `Accounting-wt-property-wave5-c` on branch `property-wave5-c` at HEAD `<MAIN_HEAD_AT_WORKTREE_CREATION>`. Bucket: Form 17 + joint ownership + spouse-mechanics (10 briefs C1-C10).
+You are Session C for Wave 5 of the Property Net-New Program. Working in worktree `Accounting-wt-property-wave5-c` on branch `property-wave5-c` at HEAD `050bd72`. Bucket: Form 17 + joint ownership + spouse-mechanics (10 briefs C1-C10).
 
 Read first, in this order:
 1. docs/sessions/property/WAVE5_SESSION_C_START_HERE.md (your task brief and bucket overview)
@@ -130,7 +130,7 @@ Read first, in this order:
 7. docs/property/wave5_site_wide_flags.md (cross-session flags)
 8. docs/property/wave5_questions_session_C.md (your Q&A channel)
 
-Acknowledge with one short status line: "Session C picked up. Main at <HEAD>. Reading START_HERE and brief C1 now."
+Acknowledge with one short status line: "Session C picked up. Main at 050bd72. Reading START_HERE and brief C1 now."
 
 Then claim brief C1 in the tracker and follow the 19-step workflow.
 
@@ -175,4 +175,4 @@ Sequence note: C1 (Form 17 mechanic) MUST ship first. C2 + C3 (structural underp
 | Manager-side watcher armed | ⏳ Pending | at launch |
 | Final HEAD ref filled in launch prompts | ⏳ Pending | at worktree-creation time |
 
-User action when ready to launch: open three fresh Opus 4.7 sessions in the three worktree directories, paste the three prompts above into them (with `<MAIN_HEAD_AT_WORKTREE_CREATION>` placeholder filled in by manager).
+User action when ready to launch: open three fresh Opus 4.7 sessions in the three worktree directories, paste the three prompts above into them (with `050bd72` placeholder filled in by manager).
