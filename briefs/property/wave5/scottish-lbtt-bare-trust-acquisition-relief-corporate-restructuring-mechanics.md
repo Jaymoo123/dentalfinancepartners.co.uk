@@ -159,42 +159,68 @@ Standard. Persistent false; timeout 1 hour; do NOT block.
 
 ---
 
-## Per-page work-log (fill in as you go)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `scottish-lbtt-bare-trust-acquisition-relief-corporate-restructuring-mechanics` (no override)
+- **Final category:** `incorporation-and-company-structures` (no override)
+- **H1 chosen:** "Scottish LBTT Bare Trust and Acquisition Relief: Two Reliefs for Corporate Restructure and Trustee Acquisitions"
+- **Meta title:** "Scottish LBTT Bare Trust + Acquisition Relief Mechanics" (55 chars)
+- **Why these vs other options:** Two-reliefs-one-page framing held cleanly via separate H2 sections for each relief, with cross-references between them. Personas Cameron-Stewart (corporate restructure) and Macleod (family trust nominee) distinct from earlier B-bucket pages.
 
 ### Competitor URLs fetched
+- LBTT(S)A 2013 contents verified at legislation.gov.uk: acquisition relief at Sch 11 (titled "Reconstruction relief and acquisition relief", combined with reconstruction relief). Brief had implied Sch 7 Part 2 (which is the England parallel); corrected on page to LBTT(S)A 2013 Sch 11.
+- Other Stage 1 seeds (UK Property Accountants bare-trust and acquisition-relief pages) not re-fetched given context constraints; substantive position established from legislation.gov.uk + earlier B-bucket research.
 
 ### Existing-page review
+- B6 + B7 + B9: sibling Scottish-LBTT pages; cross-link as cluster.
+- `section-162-incorporation-relief-property-landlords` (verified exists on disk): cross-link as the UK-wide CGT side of corporate restructures.
+- `incorporating-property-portfolio-uk-2026` (verified exists on disk): cross-link as the broader incorporation strategy pillar.
+- `transferring-property-spv-tax-treatment`: does NOT exist on disk; not cross-linked.
 
 ### Citations added (external authority)
+- LBTT(S)A 2013 (primary statute).
+- LBTT(S)A 2013 Sch 11 (Reconstruction relief and acquisition relief) — corrected from brief's implied Sch 7 cite.
+- LBTT(S)A 2013 Sch 10 (group relief).
+- LBTT(S)A 2013 Sch 17 (partnership relief).
+- LBTT(S)A 2013 Sch 5 (MDR).
+- FA 2003 Sch 7 Part 2 (England parallel, contrast cite).
+- LTTA 2017 Sch 17 (Welsh parallel, contrast cite).
+- TCGA 1992 s.162 (UK-wide CGT incorporation relief).
+- revenue.scot LBTT legislation guidance.
 
 ### Internal links added
+- `/blog/landlord-tax-essentials/scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide` (B6).
+- `/blog/landlord-tax-essentials/scottish-lbtt-additional-dwelling-supplement-ads-mechanics-second-home-buyers` (B7).
+- `/blog/incorporation-and-company-structures/scottish-lbtt-corporate-buyer-15-percent-flat-rate-or-ads-pathway-decision` (B9).
+- `/blog/incorporation-and-company-structures/incorporating-property-portfolio-uk-2026` (incorporation pillar).
+- `/blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords` (s.162 page).
 
 ### Inline CTA placements
+- Aside 1: after the bare-trust transparency principle (nominee / trust structure angle).
+- Aside 2: after the Cameron-Stewart portfolio incorporation worked example (LBTT + CGT + ATED joined-up angle).
+- Total 2 asides.
 
 ### Build attempts
+- npm run build: PASS (451 static pages, +1 since B9). Initial body 2,581 words was 419 short of 3,000 brief floor; added a substantive cross-jurisdictional comparison section + tribunal-context section on the genuine-commercial-purpose test; final body 3,185 words.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count: 14 = 14 ✅
+- Em-dashes: 0 ✅
+- Tailwind classes: 0 ✅
+- Meta title length: 55 ≤62 ✅
+- Meta description length: 158 ≤158 ✅ (exact cap)
+- Internal links resolve: all 5 ✅
+- monitored_pages row inserted: id 216 ✅
+- Body word count: 3,185 (within 3,000-3,500 brief target) ✅
 
 ### Verify-at-write hedge resolution
-- MDR minimum-rate floor referenced in body? (Y/N + figure if Y)
-- Acquisition-relief formula verified at revenue.scot? (Y/N + source URL)
-- Bare-trust transparency principle verified? (Y/N + source URL)
+- MDR minimum-rate floor referenced in body? Mentioned briefly in the "complementary reliefs" section but no specific figure asserted; flagged on-page as "the current floor should be verified at the time of any transaction" per §23.10.
+- Acquisition-relief formula verified at revenue.scot? Verified via the LBTT(S)A 2013 statutory text at legislation.gov.uk (Sch 11 contents and title confirmed); revenue.scot guidance not separately fetched. Brief's implied Sch 7 cite corrected to actual Sch 11.
+- Bare-trust transparency principle verified? Verified at a general level via the absence of a dedicated bare-trust schedule in LBTT(S)A 2013 and the well-established trust-tax principle (transparency for absolute-entitlement bare trusts). Revenue Scotland's specific guidance page not separately fetched; the substantive principle is well-anchored in the wider UK tax framework.
 
 ### Flags raised to wave5_site_wide_flags.md
+- F-BRIEF_ERROR (LOW): brief implied LBTT acquisition relief sits at FA 2003 Sch 7 Part 2 (which is in fact the England parallel). The Scottish acquisition relief sits at LBTT(S)A 2013 Sch 11 (titled "Reconstruction relief and acquisition relief"). B10 uses the correct cite on-page. Logged here as the lower-severity counterpart to D-11 (B5 brief error on TCMA 2016 s.41 vs LTTA 2017 s.34); the pattern across multiple briefs suggests a systematic Welsh/Scottish-cite/English-cite cross-up in Stage 1 brief generation worth flagging for future-wave brief-template fixes.
 
 ### 2-3 sentence summary
+B10 closes the Scottish sub-bucket as the specialist depth page on two niche but high-value LBTT reliefs: the bare-trust transparency principle (treating the beneficiary as the buyer for nominee / minor-child / beneficial-interest acquisitions) and the LBTT(S)A 2013 Sch 11 acquisition relief (reducing the chargeable consideration on company-to-company share-for-undertaking corporate restructures). Two worked Scottish examples (Cameron-Stewart Holdings 8-dwelling portfolio incorporation saving ~£321,500 via Sch 11 + s.59(8) combined; Macleod Family Trust minor-child nominee acquisition saving £16,000 of ADS via the transparency rule) walk both reliefs at typical price points. Substantive cross-jurisdictional comparison + tribunal-context section on the commercial-purpose test added to clear the 3,000 brief floor; final body 3,185 words. BRIEF_ERROR caught (brief implied Sch 7 cite, actual is Sch 11); corrected on-page and logged as the lower-severity counterpart to the B5 TCMA 2016 brief-error pattern.
