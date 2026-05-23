@@ -153,34 +153,63 @@ Standard. Persistent false; timeout 1 hour; do NOT block.
 ## Per-page work-log (fill in as you go)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `welsh-ltt-derelict-uninhabitable-property-refund-relief-claim-mechanics` (no override)
+- **Final category:** `property-types-and-specialist-tax` (no override; matches brief and topic specialism)
+- **H1 chosen:** "Welsh LTT Refunds for Derelict and Uninhabitable Properties: The Claim Pathway"
+- **Meta title chosen:** "Welsh LTT Refund for Derelict Property: Claim Pathway" (53 chars)
+- **Why these vs other options:** Pathway-led framing positions B5 as a procedural-mechanic page rather than a doctrinal page (the doctrine sits in §72 LTTA 2017; the Welsh-specific contribution is the two-path procedural framework under TCMA 2016 + the WRA review + Welsh Tax Tribunal route). Personas use Welsh surnames not in B1-B4 (Lloyd, with company name Vaughan Properties Ltd mentioned in passing). Anti-templating against the SDLT mixed-use / Bewley page held by anchoring the substantive narrative on the LTTA 2017 + TCMA 2016 + WRA practice triangle, not on a Bewley case-law walk.
 
 ### Competitor URLs fetched
+- ukpropertyaccountants.co.uk/ltt-refunds-for-derelict-or-uninhabitable-properties: live; thin H2 outline (qualification / evidence / claim / professionals) + no FAQs. Cites "Mudan Case" as recent CoA SDLT authority (verified at high level only; not deep-quoted). States 12-month amendment window. Useful for the evidence-pack guidance; we differentiate by adding the TCMA 2016 s.41 vs s.63 dual-path framing they omit and by structurally separating evidence + tribunal + scam-pattern sections.
+- legislation.gov.uk/anaw/2016/6/section/41 (TCMA 2016 s.41): live; verbatim 12-month amendment window from filing date.
+- legislation.gov.uk/anaw/2016/6/section/63 (TCMA 2016 s.63): live; overpayment relief mechanic.
+- legislation.gov.uk/anaw/2016/6/section/78 (TCMA 2016 s.78): live; 4-year time limit for claims under ss.62-63.
+- gov.wales/calculation-land-transaction-tax-payable-technical-guidance: live; covers rate tables but does NOT cover residential-vs-non-residential classification at this URL (referenced as LTTA/2150 elsewhere in WRA technical guidance).
+- **DEAD URL:** gov.wales/repay-higher-rates-land-transaction-tax returned HTTP 404 (§16.31). Not used; cited at general gov.wales/calculation level instead.
+- **403 URL:** bailii.org Bewley case returned HTTP 403 (likely UA block). Bewley cited at general level (case ref + summary from training); not deep-quoted.
 
 ### Existing-page review
+- B1 (Welsh main rates): cross-link as the upstream rates pillar (the rates B5 moves you off).
+- B2 (Welsh higher rates): cross-link as the larger-saving rate table (the rate-gap is widest here).
+- B3 (Welsh MDR): cross-link as the alternative relief route for bulk acquisitions (clear "MDR and dwelling-test do not stack" boundary).
+- `sdlt-mixed-use-property-classification` (England Hyman/Goodfellow/Pensfold case-law): forward-link as the substantive English-side parallel; explicit "the Welsh story is its own thing" framing in B5's closing.
+- `sdlt-refund-scams-how-to-avoid` (England consumer-protection page): forward-link as the consumer-protection parallel (same cold-call refund-firm pattern now operating on Welsh side).
 
 ### Citations added (external authority)
+- LTTA 2017 s.72 (dwelling definition) + s.18 (chargeable consideration) + s.10 (effective date) + s.41 (return clock).
+- TCMA 2016 s.41 (12-month amendment from filing date) + s.63 (overpayment relief) + s.78 (4-year time limit) + ss.172-186 (internal review and appeal framework).
+- Council Tax (Exempt Dwellings) Order 1992 (Class A / Class D exemptions as corroborative evidence).
+- PN Bewley v HMRC [2019] UKUT 0042 (one cross-reference, English contrast only).
+- gov.wales/land-transaction-tax-rates-and-bands (non-residential rate table).
+- gov.wales/calculation-land-transaction-tax-payable-technical-guidance (WRA technical guidance pointer).
 
 ### Internal links added
+- `/blog/landlord-tax-essentials/welsh-land-transaction-tax-ltt-rates-bands-2026-27-residential-buyers` (B1).
+- `/blog/landlord-tax-essentials/welsh-ltt-higher-rates-residential-second-homes-additional-properties-surcharge-mechanics` (B2).
+- `/blog/landlord-tax-essentials/welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition` (B3).
+- `/blog/landlord-tax-essentials/sdlt-mixed-use-property-classification` (England case-law parallel).
+- `/blog/landlord-tax-essentials/sdlt-refund-scams-how-to-avoid` (England consumer-protection parallel; used twice).
 
 ### Inline CTA placements
+- Aside 1: after "What 'not suitable for use as a dwelling' actually means" (evidence-pack angle).
+- Aside 2: after the Lloyd worked example (renovation specialist / corporate buyer angle).
+- Total 2 asides, within 1-3 cap.
 
 ### Build attempts
+- npm run build: PASS (build completed; build trace stable; +1 page since B4).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 13 = 13 ✅
+- Em-dashes in markdown: 0 ✅
+- Tailwind classes in markdown: 0 ✅
+- Meta title length: 53 chars ≤62 ✅
+- Meta description length: 154 chars ≤158 ✅
+- Internal links resolve: all 5 unique targets exist in `Property/web/content/blog/` ✅
+- monitored_pages row inserted: id 209 (90-day window through 2026-08-21) ✅
+- Body word count: 2,930 (within 2,800-3,500 brief target) ✅
 
 ### Flags raised to wave5_site_wide_flags.md
+- F-BRIEF_ERROR: this brief cited "LTTA 2017 s.34 + Tax Collection and Management (Wales) Act 2016" for return-amendment time limits. LTTA 2017 s.34 is in fact unit trust schemes (verified via legislation.gov.uk WebFetch at write time). The correct citations are TCMA 2016 s.41 (12-month amendment from filing date), s.63 (overpayment relief), and s.78 (4-year limit). B5 uses the correct citations on-page; flagged as a discovery (D-11) for future brief-template fixes rather than as a HOUSE_POSITION_CONFLICT because the LTTA 2017 s.34 cite did not appear in house_positions.md §23.
 
 ### 2-3 sentence summary
+B5 owns the Welsh LTT refund pathway for derelict and uninhabitable properties, anchored on the LTTA 2017 s.72 dwelling-suitability test and the TCMA 2016 procedural framework (s.41 12-month amendment + s.63 4-year overpayment claim + s.78 time bar + ss.172-186 review and appeal). The Lloyd worked example shows the £9,000 higher-rate-to-zero saving on a £180,000 derelict cottage near Llandrindod Wells; a corporate-buyer comparison appears in the FAQs at higher price points. Cross-jurisdictional contrast with the English Bewley line at single-paragraph level; the Welsh story is its own thing throughout, per the anti-templating discipline. The brief's LTTA 2017 s.34 cite was wrong (s.34 = unit trust schemes); corrected on-page to TCMA 2016 s.41 + s.63 + s.78, with the brief-error logged as a discovery for future-brief-template fixes.

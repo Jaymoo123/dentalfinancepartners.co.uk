@@ -165,34 +165,58 @@ Standard. Persistent false; timeout 1 hour; do NOT block.
 ## Per-page work-log (fill in as you go)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide` (no override)
+- **Final category:** `landlord-tax-essentials` (no override; matches B1 + B2 + B3 + B4 cluster placement)
+- **H1 chosen:** "Scottish LBTT 2026/27 Residential Rates: Bands, Reliefs, and the Devolved Framework"
+- **Meta title chosen:** "Scottish LBTT 2026/27 Rates and Bands: Buyer Guide" (50 chars)
+- **Why these vs other options:** Scottish-devolution-history lead is the differentiator vs B1's "three things Welsh buyers should know first" lead. The H2 architecture diverges sharply (B1 = positive-points → rates → cross-jurisdictional; B6 = devolution → rates → FTB-no-cap → no-NR → effective-date → worked → comparison-cut-on-architecture → filing → siblings → mistakes). Scottish personas (Macleod Edinburgh, Stewart Aberdeen, Sinclair Glasgow) entirely distinct from B1-B5 Welsh personas. Cross-jurisdictional comparison cut on additional-dwelling-charge architecture (not on simple band thresholds as in B1).
 
 ### Competitor URLs fetched
+- revenue.scot/taxes/land-buildings-transaction-tax/residential-property: live; rate table verified (0%/2%/5%/10%/12% with £145k nil, in force from 1 Apr 2021).
+- gov.scot/publications/scottish-budget-2026-2027/pages/4/: live; explicit confirmation "We will continue to maintain residential rates and bands at their current level for LBTT" + "The ADS will remain at 8 per cent" + FTB relief continues at £175k.
+- ukpropertyaccountants.co.uk/lbtt-review-in-scotland: live but content-truncated in fetch; not deep-quoted; no useful outline extracted.
 
 ### Existing-page review
+- B1 (Welsh main rates): cross-link as parallel devolved-tax pillar; vary H2 architecture sharply per anti-templating mandate.
+- `sdlt-buy-to-let-rates-surcharge-guide-2025`: cross-link as England SDLT counterpart.
+- `sdlt-non-resident-2-percent-surcharge`: cross-link to clarify the England-only NR surcharge.
+- `2027-property-income-tax-rates-landlords-uk`: cross-link with explicit note that Scottish income tax rates differ from rest-of-UK under Scotland Act 2016.
 
 ### Citations added (external authority)
+- LBTT(S)A 2013 ss.10 (effective date), 24 (residential rates), 29 (30-day return clock), 59(8) (six-dwellings non-residential rule), Schs 2A (ADS), 4A (FTB relief), 5 (MDR).
+- Tax Collection and Management (Scotland) Act 2014 (procedural framework + penalties).
+- Scotland Act 1998 / Scotland Act 2012 / Scotland Act 2016 (devolution context).
+- gov.scot/publications/scottish-budget-2026-2027 (2026/27 rates frozen confirmation).
+- revenue.scot operational pages (rate table, calculator, return submission, legislation guidance).
+- FA 2003 (cross-jurisdictional contrast cites only).
+- LTTA 2017 (Welsh contrast cite).
 
 ### Internal links added
+- `/blog/landlord-tax-essentials/welsh-land-transaction-tax-ltt-rates-bands-2026-27-residential-buyers` (B1 Welsh parallel).
+- `/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025` (SDLT pillar; used 3 times).
+- `/blog/non-resident-landlord-tax/sdlt-non-resident-2-percent-surcharge` (NR surcharge clarifier).
+- `/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk` (income tax pillar).
 
 ### Inline CTA placements
+- Aside 1: after Stewart Aberdeen FTB worked example (SDLT-vs-LBTT calculator mismatch angle).
+- Aside 2: after the four-nation comparison table (cross-border / split-household / returning-expatriate angle).
+- Total 2 asides, within 1-3 cap.
 
 ### Build attempts
+- npm run build: PASS (447 static pages, +1 since B5's 446 baseline). Initial body word count of 2,761 was 39 words under the 2,800 brief floor; added one substantive paragraph on the Scottish FTB no-value-cap policy design rationale; re-counted at 2,883 body words.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 = 14 ✅
+- Em-dashes in markdown: 0 ✅
+- Tailwind classes in markdown: 0 ✅
+- Meta title length: 50 chars ≤62 ✅
+- Meta description length: 158 chars ≤158 ✅ (exact cap)
+- Internal links resolve: all 4 unique targets exist in `Property/web/content/blog/` ✅
+- monitored_pages row inserted: id 212 (90-day window through 2026-08-21) ✅
+- Body word count: 2,883 (within 2,800-3,500 brief target after one paragraph addition to clear lower bound) ✅
 
 ### Flags raised to wave5_site_wide_flags.md
+- None this page. The Scottish income tax devolution under Scotland Act 2016 is noted on-page (in the FAQ cluster and in the Where-this-page-fits closing) but not flagged separately; the income-tax pillar's UK-wide framing is correct as written (the framework is UK-wide, the rates differ for Scottish residents — the page already handles this correctly).
 
 ### 2-3 sentence summary
+B6 anchors the Scottish LBTT sub-bucket cluster with the 2026/27 rate table (0%/2%/5%/10%/12% with £145k nil, confirmed frozen by Scottish Budget 2026/27), the £175k FTB relief with no upper value cap (depth in B8), the absence of any non-resident surcharge (Scotland aligned with Wales on this), and the 30-day return clock under LBTT(S)A 2013 s.29. Three worked examples use Scottish personas (Macleod Edinburgh £400k, Stewart Aberdeen £200k FTB, Sinclair Glasgow West End £900k) and Scottish geography. Cross-jurisdictional comparison table is cut on additional-dwelling-charge architecture rather than simple band thresholds, surfacing the structural divergence between England's flat-on-stack 5% surcharge, Wales's standalone band table, and Scotland's flat-on-total 8% ADS. Anti-templating against B1 held: B1 leads with "three things Welsh buyers should know first" + universal nil band; B6 leads with Scottish devolution history (Scotland Act 1998/2012/2016) + Scottish-statute architecture + FTB-no-value-cap structural point. All figures verified at write time per §16.35 against revenue.scot + gov.scot Scottish Budget 2026/27.

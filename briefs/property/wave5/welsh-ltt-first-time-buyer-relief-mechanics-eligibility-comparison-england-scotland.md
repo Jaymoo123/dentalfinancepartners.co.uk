@@ -154,34 +154,62 @@ Standard. Persistent false; timeout 1 hour; do NOT block.
 ## Per-page work-log (fill in as you go)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland` (no override)
+- **Final category:** `landlord-tax-essentials` (no override; matches B1 + B2 + B3 sibling placement)
+- **H1 chosen:** "Welsh LTT for First-Time Buyers 2026/27: No Separate Relief and Why It Works"
+- **Meta title chosen:** "Welsh LTT for First-Time Buyers 2026/27: No FTB Relief" (54 chars)
+- **Why these vs other options:** Positive-framing lead ("No Separate Relief and Why It Works") consciously avoids the "the Welsh equivalent of England's FTB relief" templating trap per the brief's anti-templating mandate. The "Why It Works" tail flags that the absence is by design. Persona refinement per manager Q-1 answer: introduced five distinct new Welsh surnames not used in B1/B2/B3 (Morgan, Pugh, Owen, Pritchard, Powell) to reduce sense of recurrence.
 
 ### Competitor URLs fetched
+- gov.wales/land-transaction-tax-rates-and-bands: live; confirmed £225k nil band + 6%/7.5%/10%/12% bands unchanged for 2026/27. Confirms no FTB regime mention in authority guidance.
+- gov.uk/stamp-duty-land-tax/residential-property-rates: live; confirmed English FTB nil band at £300,000, 5% to £500,000, fully withdrawn above £500,000.
+- revenue.scot/taxes/land-buildings-transaction-tax/lbtt-legislation-guidance/lbtt3001-exemptions-reliefs/lbtt3010-tax-reliefs/lbtt3048-first-time-buyer-relief: live; confirmed Scottish FTB nil-rate uplift to £175,000, £600 maximum saving, no upper value ceiling, LBTT(S)A 2013 Sch 4A statutory basis.
+- ukpropertyaccountants.co.uk/essential-guide-for-first-time-homebuyers-in-scotland: live; H2 outline = conditions / rates / Scotland-vs-England comparison / conclusion + four worked examples (Simon inherited, Sophie & Edward multiple, Alex & Kate intent, John replacement). Useful structural mirror for the eventual B8 Scottish-FTB page; for B4 (Welsh-FTB-absence) the outline gave the cross-jurisdictional comparison anchor.
+- **OFF-TOPIC URL:** alexander-ene.co.uk/land-transaction-tax-wales.htm: page is a generic London accountant landing page with no Welsh LTT or FTB content. Per §16.31 replaced via reasoning by deeper reading of gov.wales structural guidance and the policy framework behind the absent FTB regime.
 
 ### Existing-page review
+- B1 (`welsh-land-transaction-tax-ltt-rates-bands-2026-27-residential-buyers`): sibling rates pillar; touches FTB position briefly in its three-structural-points opener and in one FAQ. B4 owns the FTB-absence position in depth and forward-links to B1 as the rates context. Persona Williams-Hughes from B1 (FTB Cardigan example) is NOT reused — B4 uses distinct new Welsh surnames.
+- `sdlt-buy-to-let-rates-surcharge-guide-2025`: confirmed exists on disk via ls; SDLT rates pillar with FTB mention. B4 forward-links to this page as the entry point for the English FTB regime.
+- `2027-property-income-tax-rates-landlords-uk`: confirmed exists on disk; UK-wide income tax pillar. B4 forward-links as the income-tax counterpart.
+- B8 (Scottish LBTT FTB relief): brief-listed cross-bucket sibling. Does not exist on B branch yet (B8 is later in sequence). B4 includes plain-text forward reference to "the forthcoming Scottish LBTT first-time-buyer companion page"; manager hyperlinks at merge.
 
 ### Citations added (external authority)
+- Land Transaction Tax and Anti-avoidance of Devolved Taxes (Wales) Act 2017 (LTTA 2017), legislation.gov.uk/anaw/2017/1/contents — primary anchor; absence of FTB regime visible by absence of FTB schedule.
+- LTTA 2017 Sch 5 (higher rates, joint-buyer rule, £40k minor-interest test, 36-month replacement window) — for the parent-on-title family-planning scenarios.
+- LTTA 2017 Sch 22 (cross-border apportionment, Welsh side).
+- FA 2003 Sch 6ZA (English SDLT FTB relief) — one cross-reference cite per anti-templating discipline.
+- FA 2003 s.48A (cross-border apportionment, English side).
+- LBTT(S)A 2013 Sch 4A (Scottish LBTT FTB relief) — one cross-reference cite.
+- gov.wales/land-transaction-tax-rates-and-bands (authority for the £225k nil band).
+- gov.wales/calculation-land-transaction-tax-payable-technical-guidance (Welsh Revenue Authority technical guidance).
 
 ### Internal links added
+- `/blog/landlord-tax-essentials/welsh-land-transaction-tax-ltt-rates-bands-2026-27-residential-buyers` (B1 sibling rates pillar).
+- `/blog/landlord-tax-essentials/welsh-ltt-higher-rates-residential-second-homes-additional-properties-surcharge-mechanics` (B2 sibling).
+- `/blog/landlord-tax-essentials/welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition` (B3 sibling).
+- `/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025` (SDLT rates pillar, used twice: in intro for cross-jurisdictional routing and in closing block).
+- `/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk` (income tax pillar).
 
 ### Inline CTA placements
+- Aside 1: after Rhys + Cerys Pugh Bridgend worked example (joint-buyer + parental help angle).
+- Aside 2: at the end of the page after "Where this page fits in the wider Welsh LTT cluster" (cross-border family-planning angle).
+- Total 2 asides, within 1-3 cap.
 
 ### Build attempts
+- npm run build: PASS (445 static pages including the new B4 page; +1 since B3's 444 baseline).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 12 = 12 ✅
+- Em-dashes in markdown: 0 ✅
+- Tailwind classes in markdown: 0 ✅
+- Meta title length: 54 chars ≤62 ✅
+- Meta description length: 155 chars ≤158 ✅
+- Internal links resolve: all 5 unique targets exist in `Property/web/content/blog/` ✅
+- monitored_pages row inserted: id 203 (90-day window through 2026-08-21) ✅
+- Body word count: 2,976 (within 2,500-3,000 brief target after one trim of the Returning-Expatriates H2 whose substance was preserved in FAQ #5) ✅
 
 ### Flags raised to wave5_site_wide_flags.md
+- None this page (no factual conflicts, no cannibal flags, no new INTERNAL_LINK targets beyond the existing F-21 pattern).
 
 ### 2-3 sentence summary
+B4 owns the Welsh-FTB-absence position as a deliberate policy choice rather than a gap, anchored on the £225,000 universal nil band as the structural substitute for an FTB regime. Three worked examples at Welsh price points (Sîan Morgan Newport £225k, Rhys + Cerys Pugh Bridgend £275k, Dafydd Owen Carmarthen £350k) plus a comparison table across all four UK jurisdictions plus two cross-border family-planning scenarios (Bethan Pritchard Wrexham with English parents; Cerys Powell Cardiff with Scottish mother) carry the cross-jurisdictional family angle the brief asked for. All three jurisdiction figures (£225k Welsh / £300k+£500k English / £175k+£600 Scottish) verified live at write time per §16.35. Persona refinement per manager Q-1 PASS: five distinct new Welsh surnames (Morgan, Pugh, Owen, Pritchard, Powell) introduced, none of which appeared in B1/B2/B3.

@@ -164,34 +164,62 @@ Standard. Persistent false; timeout 1 hour; do NOT block.
 ## Per-page work-log (fill in as you go)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `welsh-ltt-higher-rates-residential-second-homes-additional-properties-surcharge-mechanics` (no override)
+- **Final category:** `landlord-tax-essentials` (no override)
+- **H1 chosen:** "Welsh LTT Higher Rates: Mechanics for Second Homes and Additional Property Buyers"
+- **Meta title chosen:** "Welsh LTT Higher Rates 2026/27: Mechanics for BTL Buyers" (56 chars)
+- **Why these vs other options:** Standalone-band-structure framing in H1 + meta keeps the anti-templating positive Welsh-specific lead. Avoids "Welsh equivalent of SDLT" or "Wales's parallel to ADS" framing per §16.32 / brief discipline.
 
 ### Competitor URLs fetched
+- gov.wales/higher-rates-land-transaction-tax-overview: confirmed £40k threshold, 3-year/36-month refund window, joint-buyer aggregation.
+- gov.wales/higher-rates-purchases-residential-property-technical-guidance: full statutory paragraph map (Sch 5 paras 3 / 8 / 11 / 14 / 17 / 20 / 25 / 27-28 / 29) + LTTA/8020 / LTTA/8021 guidance references.
+- ukpropertyaccountants.co.uk/higher-rates-of-land-transaction-tax-a-complete-guide: thin (no worked examples, no FAQs); our deeper coverage differentiates.
+- ukpropertyaccountants.co.uk/ltt-higher-rates-for-spouses-minor-children-and-trust-interests: this IS the closest competitor for the §16.32 spousal-aggregation framing. Their structure used persona names; we used different Welsh personas to avoid copying.
 
 ### Existing-page review (from "Closest existing pages")
+- `sdlt-buy-to-let-rates-surcharge-guide-2025`: cross-link as the parallel England 5% surcharge page; structural contrast in body (standalone-band vs flat-surcharge). INTERNAL_LINK flag carried over from F-21 (B1 raised).
+- `sdlt-5-percent-surcharge-refund-claim-process`: cross-link as the SDLT refund parallel.
+- `sdlt-non-resident-2-percent-surcharge`: cross-link to clarify Wales has no equivalent.
+- B1 sibling (Welsh main rates): referenced extensively as boundary; B1 = main rates, B2 = higher rates.
 
 ### Citations added (external authority)
+- LTTA 2017 Sch 5 (primary): paras 3, 8, 11, 14, 17, 20, 25, 27-28, 29.
+- LTTA 2017 s.24 (rate-setting authority for the Welsh Ministers).
+- Land Transaction Tax (Tax Bands and Tax Rates) (Wales) (Amendment) Regulations 2024 (1pp uplift from 11 Dec 2024).
+- gov.wales/higher-rates-land-transaction-tax-overview.
+- gov.wales/higher-rates-purchases-residential-property-technical-guidance.
+- gov.wales/repay-higher-rates-land-transaction-tax (refund claim).
+- Welsh Revenue Authority technical guidance LTTA/8020 + LTTA/8021.
+- FA 2003 Sch 4ZA, Sch 4A, Sch 9A (cross-jurisdictional contrast cites).
+- LBTT(S)A 2013 Sch 2A (Scottish parallel cite).
 
 ### Internal links added (to our existing pages)
+- `/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025` (intro + closing).
+- `/blog/landlord-tax-essentials/sdlt-5-percent-surcharge-refund-claim-process`.
+- `/blog/non-resident-landlord-tax/sdlt-non-resident-2-percent-surcharge`.
+- Forward-link to C9 (SDLT spousal-aggregation page) written as plain text under §16.32 sequencing; manager hyperlinks at merge once C9 ships.
 
 ### Inline CTA placements
+- Aside 1: after spousal-aggregation explanation (cross-jurisdictional spouse holdings angle).
+- Aside 2: after worked example 3 (chain-timing on replacement refund angle).
+- Aside 3: in "Where this page sits" closing block (cross-jurisdictional advice + trust structures angle).
+- 3 asides total (within 1-3 cap).
 
 ### Build attempts
+- Initial draft built clean with 15 FAQs; trimmed FAQ #12 (duplicated #4 + #8). Final build: PASS (443 static pages).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 = 14 ✅
+- Em-dashes in markdown: 0 ✅
+- Tailwind classes in markdown: 0 ✅
+- Meta title length: 56 chars ≤62 ✅
+- Meta description length: 154 chars ≤158 ✅
+- Internal links resolve: all 3 unique targets exist ✅
+- monitored_pages row inserted: id 190 (90-day window) ✅
+- Body word count: 3,228 (within 2,500-3,500 target) ✅
 
 ### Flags raised to wave5_site_wide_flags.md
+- F-22 INTERNAL_LINK: B2 includes a plain-text forward-reference to Wave 5 C9 (SDLT spousal-aggregation page) per §16.32 sequencing. Manager hyperlinks at merge once C9 ships. The reference is in the "Spousal aggregation under LTTA 2017 Sch 5 para 25" section.
 
 ### 2-3 sentence summary
+B2 anchors the Welsh higher-rates mechanic as a standalone band structure (5% to 17% from 11 Dec 2024 per LTTA 2017 Sch 5), explicitly NOT a flat surcharge stacked on main rates. The page covers the £40k minor-interest threshold (LTTA/8020), the 36-month replacement-of-main-residence refund mechanism (LTTA 2017 Sch 5 paras 8 + 17), the spousal-aggregation rule (Sch 5 para 25) including the §16.32 forward-link placeholder for Session C's C9, the corporate-buyer treatment (no FA 2003 Sch 4A 15% rate parallel), trust + minor-child attribution, and three worked examples at Welsh purchase prices (£165k Anglesey holiday cottage / £325k Cardigan BTL / £900k Powys main-residence replacement). All higher-rate figures and statutory paragraphs verified live against gov.wales technical guidance at write time per §16.35.

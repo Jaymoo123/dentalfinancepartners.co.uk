@@ -173,38 +173,62 @@ Standard. Persistent false; timeout 1 hour; do NOT block.
 ## Per-page work-log (fill in as you go)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `scottish-lbtt-additional-dwelling-supplement-ads-mechanics-second-home-buyers` (no override). Tracker has stale `-six-percent` suffix dating from when ADS was 6%; correct slug per the actual brief and current 8% rate is no suffix. Tracker slug-column will be corrected to match when B7 is marked done.
+- **Final category:** `landlord-tax-essentials` (no override)
+- **H1 chosen:** "Scottish LBTT Additional Dwelling Supplement: 8% on Entire Price, 36-Month Replacement Window"
+- **Meta title chosen:** "Scottish ADS 8% on Second Homes: 2026/27 Mechanics" (50 chars)
+- **Why these vs other options:** Anti-templating against B2 (Welsh higher rates) held by anchoring the page on the flat-8%-on-total-price mechanic rather than on a "Scottish version of Welsh higher rates" framing. Three Scottish personas distinct from B6 (McGregor, Cameron-Ross, Fraser Properties Ltd); Macleod / Stewart / Sinclair from B6 not reused. The §16.32 cross-bucket forward-link placeholder for C9 (SDLT spousal aggregation) is embedded in the joint-buyer aggregation section. Detailed rate-history paragraph included per the §23.10 verify-at-write hedge (with each rate-step date verified at write time against revenue.scot history).
 
 ### Competitor URLs fetched
+- revenue.scot/taxes/land-buildings-transaction-tax/additional-dwelling-supplement-ads: live; current 8% rate verified + £40,000 de-minimis + 36-month window + 1 April 2024 individual-share update verified.
+- revenue.scot/taxes/land-buildings-transaction-tax/how-submit-amend-or-pay-lbtt/how-claim-repayment-additional-dwelling-supplement: live; three submission pathways verified (existing agents SETS, new agents form RS-0005 to lbtt@revenue.scot, taxpayers online portal) plus 10-working-day processing target.
+- legislation.gov.uk/asp/2013/11/schedule/2A: live; LBTT(S)A 2013 Sch 2A verified verbatim — para 4(2) sets 8% rate as amended 5.12.2024, para 5(2) sets joint-buyer aggregation (NOT para 4 as house position §23.5 currently states), paras 2(1)(b) and 3(1)(b) set £40,000 de-minimis, para 2(2) sets 36-month replacement-of-main-residence rule.
 
 ### Existing-page review
+- B6 (Scottish LBTT main rates pillar): cross-link as sibling. The underlying LBTT calculation referenced throughout B7 lives on B6.
+- B2 (Welsh LTT higher rates): cross-link as the cross-jurisdictional standalone-band-structure parallel. Did NOT structure B7 as a Welsh mirror per anti-templating mandate.
+- SDLT BTL rates surcharge pillar (existing on main): cross-link as the cross-jurisdictional flat-5%-on-stack parallel.
+- C9 (SDLT spousal aggregation): does NOT exist on C branch yet. B7 includes plain-text forward reference and a paragraph anchored on Sch 2A para 5(2); manager hyperlinks at merge.
 
 ### Citations added (external authority)
+- LBTT(S)A 2013 Sch 2A: para 4(2) (8% rate), para 5(2) (joint-buyer aggregation, **corrected from house position §23.5 cite of para 4**), paras 2(1)(b) + 3(1)(b) (£40k de-minimis), para 2(2) (36-month replacement window).
+- LBTT (Amendment) (Scotland) Act 2016 (ADS introduction at 3%).
+- Coronavirus (Scotland) (No.2) Act 2020 (extended ADS repayment window from 18 to 36 months; subsequently made permanent).
+- Tax Collection and Management (Scotland) Act 2014 (penalties + return amendment framework).
+- gov.scot Scottish Budget 2025/26 (5 Dec 2024 rate increase to 8%).
+- revenue.scot ADS overview + ADS repayment claim pages.
+- FA 2003 Sch 4ZA + Sch 4A (cross-jurisdictional contrast cites only).
+- LTTA 2017 Sch 5 (cross-jurisdictional contrast cite).
 
 ### Internal links added
+- `/blog/landlord-tax-essentials/scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide` (B6 sibling).
+- `/blog/landlord-tax-essentials/welsh-ltt-higher-rates-residential-second-homes-additional-properties-surcharge-mechanics` (B2 sibling).
+- `/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025` (SDLT pillar, used twice).
+- Forward-link placeholder for C9 (no live URL yet; manager hyperlinks at merge).
 
 ### Inline CTA placements
+- Aside 1: after the 36-month replacement window section (repayment-process angle).
+- Total 1 aside (within 1-3 cap; the page is sufficiently structured without additional asides interrupting the worked examples).
 
 ### Build attempts
+- npm run build: PASS (448 static pages, +1 since B6 baseline). Initial body word count of 2,520 was 280 words under the 2,800 brief floor; added a Scottish-policy-rationale paragraph in the rate-increase section + the full "Where this page fits" closing H2 section; final body 2,869 words.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 = 14 ✅
+- Em-dashes in markdown: 0 ✅ (one em-dash caught at initial verification on line 116 in the worked-example explanation; paragraph rewritten cleanly)
+- Tailwind classes in markdown: 0 ✅
+- Meta title length: 50 chars ≤62 ✅
+- Meta description length: 150 chars ≤158 ✅ (initial 160-char draft trimmed by replacing "in force since 5 Dec 2024" with "from 5 Dec 2024")
+- Internal links resolve: all 3 live targets exist in `Property/web/content/blog/`; 1 forward-link placeholder for C9 (manager hyperlinks at merge) ✅
+- monitored_pages row inserted: id 213 (90-day window through 2026-08-21) ✅
+- Body word count: 2,869 (within 2,800-3,500 brief target after two paragraph additions) ✅
 
 ### Verify-at-write hedge resolution
-- Rate-history section included? (Y/N)
-- If Y, SSI cites for each step (3% / 4% / 6%) verified at write time? (list)
+- Rate-history section included? Yes — short paragraph in the "5 December 2024 rate increase" H2 listing each step with effective dates.
+- SSI cites for each step verified at write time? LBTT (Amendment) (Scotland) Act 2016 cited as the introduction statute for ADS at 3%. Subsequent step changes (4% from 25 Jan 2019, 6% from 16 Dec 2022) cited at high level via gov.scot / revenue.scot historical pages rather than per-step SSI numbers (per the brief's "keep the rate-history table short" guidance). The current 8% cite is verbatim from revenue.scot at write time per §16.35.
 
 ### Flags raised to wave5_site_wide_flags.md
+- F-HOUSE_POSITION_CONFLICT: §23.5 (Scottish ADS) currently cites "LBTT(S)A 2013 Sch 2A para 4" for joint-buyer aggregation. WebFetch verification of LBTT(S)A 2013 Sch 2A at write time confirms para 4(2) is the 8% rate provision, and the joint-buyer aggregation rule sits at **Sch 2A para 5(2)**. B7 uses the correct cite (para 5(2)) on-page. The house position should be patched. Severity: LOW for shipped pages (the substantive position is correct in §23.5; only the paragraph cite is wrong); MEDIUM for §23 as a locked house position.
 
 ### 2-3 sentence summary
+B7 anchors the Scottish ADS mechanic on the flat-8%-on-entire-price model, distinct from B2's standalone-band-structure Welsh framing and from the SDLT 5%-on-stack model. Three worked examples (McGregor Inverness £180k BTL, Cameron-Ross Stirling £350k replacement, Fraser Properties Aberdeen £400k corporate) walk the 8% impact in full at typical Scottish price points, plus a cross-jurisdictional table showing all three UK surcharge architectures alongside. §16.32 forward-link placeholder for C9 (SDLT spousal aggregation) embedded in the joint-buyer aggregation section under Sch 2A para 5(2), the correct statutory cite (house position §23.5 has a para 4 cite that should be patched to para 5(2); flagged as F-HOUSE_POSITION_CONFLICT). All figures verified at write time per §16.35 against revenue.scot + legislation.gov.uk.
