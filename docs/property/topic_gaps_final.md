@@ -1289,3 +1289,140 @@ Total: 450 candidates · ✅ net-new 429 · ⚠️ partial 21 · ❌ covered 0
 
 - `finance-cost-relief` (landlordstax.co.uk) — https://www.landlordstax.co.uk/finance-cost-relief/
   - closest existing: `housing-development-finance` (score 0.17)
+
+---
+
+# ADDENDUM — Wave 6+ candidate additions from Track 2B sitemap mining (2026-05-23)
+
+## Provenance
+
+This addendum sourced from a parallel-to-Wave-5 sub-program ("Track 2B") that mined 55 cached competitor sitemaps in `briefs/property/_sitemap_cache_v2/` to surface topics this candidate pool didn't catch in the original v1 scan. The original `topic_gaps_final.md` body (above this addendum) drew from 5 specialist sitemaps; the v2 cache widened the corpus to 55 specialist domains across 15,275 topical URLs.
+
+**Why a separate addendum, not merged into the body above:** the body's 429 candidates are the v1 pool, scored and clustered consistently with the methodology that produced Waves 1-5. These 65 are second-pass discoveries from a different (sitemap-driven, not query-driven) angle. Wave 6+ managers should treat both pools as live, but the addendum carries its own provenance + house-position-fit status so the lineage is preserved.
+
+**Methodology:**
+- 15,275 topical URLs mined from 55 cached sitemaps
+- 14,574 unique slug-derived candidates after URL → slug extraction
+- 8,305 promising slugs after tax-keyword filter + landing-page exclusion
+- **65 NEW** candidates after semantic dedup against: (a) the 406 published blog pages on `main` as of 2026-05-23, (b) the 121 Wave 1-4 net-new shipped, (c) the 30 Wave 5 candidates in flight, (d) the 52 rewritten on 2026-05-21, (e) the existing 429 candidates in the body of this doc
+- ~150 DUPE-EXISTING + ~33 DUPE-IN-FLIGHT + ~210 DUPE-ALREADY-CANDIDATE filtered out
+
+**Full source:** `docs/property/track2b_competitor_sitemap_gaps_2026-05-23.md` — per-candidate URLs, top-3 competitor URLs, frequency scores, and one-sentence rationale.
+
+**Methodology authority:** per `docs/property/TRACK2_PROGRAM.md` §5 (Track 2B candidate format) and §7 (Cannibalisation Index protocol). Reasoning-first per `NETNEW_PROGRAM.md §16.18`. URL discipline per `§16.31` — every competitor URL was observed in a cached sitemap JSON, none hallucinated.
+
+**Critical Wave 6 planning signal:** **~28 of these 65 candidates require new house positions to be locked before drafting can start.** Wave 6 manager will need to schedule ~8-10 new house-position lock sessions covering: Building Safety Act 2022 / cladding (#63, #83), EPC C regime (#80, #81), Rent-to-Rent (#72), Trust Registration Service (#21), IPDI/QIIP trusts (#19), EV chargepoint allowances (#78, #79), SIPP/SSAS commercial property (#68), DAC7 platform reporting (#85), Section 198 elections (#70), partnership SDLT relief (#7), HMRC enquiry mechanics (#108-#111). Plan the lock sessions BEFORE Stage 2 dispatch.
+
+**Wave 6 status as of 2026-05-23:** Wave 6 launch prompts exist (`docs/sessions/property/WAVE6_LAUNCH_PROMPTS.md`); Session C is explicitly Capital allowances + SBA + FYA (CAA 2001) which consumes addendum candidates #94-#99 and others from this addendum. So this addendum is already feeding Wave 6 as designed.
+
+---
+
+## Top 10 NEW candidates by composite score (Wave 6 priority queue)
+
+Composite score = competitor frequency × house-position fit weight × topical adjacency:
+
+| Rank | # | Slug | Freq | HP status | Score |
+|---|---|---|---|---|---|
+| 1 | 80 | `epc-c-rating-requirement-landlord-spending-cap-2030-uk-cost-mechanics` | 5/55 | PENDING new HP on MEES extension | 9.5 |
+| 2 | 21 | `iht-property-trust-registration-service-trs-landlord-compliance` | 4/55 | §22 + PENDING new HP on TRS | 9.0 |
+| 3 | 83 | `cladding-remediation-cost-recovery-leaseholder-landlord-mechanics-uk` | 4/55 | §1 + §22 + PENDING new HP on BSA 2022 | 9.0 |
+| 4 | 72 | `rent-to-rent-business-model-property-tax-treatment-uk-landlord` | 3/55 | §1 + §5 + PENDING new HP on R2R | 8.5 |
+| 5 | 19 | `iht-life-interest-trust-rental-property-tax-implications-uk-landlord` | 2/55 | §9 + §22 + PENDING new HP on IPDI/QIIP | 8.5 |
+| 6 | 70 | `section-198-election-capital-allowances-commercial-property-purchase-uk` | 2/55 | §1 + §5 + PENDING new HP on s.198 | 8.0 |
+| 7 | 68 | `pension-fund-commercial-property-investment-sipp-ssas-mechanics-uk` | 2/55 | §15 + PENDING new HP on SIPP/SSAS commercial | 8.0 |
+| 8 | 7 | `sdlt-incorporation-partnership-vehicle-zero-charge-mechanics` | 2/55 | §1 + PENDING sub-section on Sch 15 partnership relief | 8.0 |
+| 9 | 85 | `letting-agent-tax-obligations-fee-deductibility-platform-reporting-dac7-uk` | 1/55 | §1 + PENDING new HP on DAC7 | 7.5 |
+| 10 | 42 | `employee-ownership-trust-eot-property-spv-disposal-mechanics-uk` | 3/55 | §21 + PENDING new HP on EOT property exit | 7.5 |
+
+## NEW candidates by topic cluster (full list of 65)
+
+### SDLT (8 NEW)
+
+1. `sdlt-linked-transactions-property-investors-aggregation-rules` — Sch 4 para 5 FA 2003 aggregation trap for portfolio buyers
+2. `sdlt-on-divorce-separation-property-transfers-relief-mechanics` — court order / formal separation evidence for relief
+3. `sdlt-uninhabitable-derelict-property-non-residential-rate-claim-bewley` — Bewley test walkthrough
+4. `sdlt-on-mixed-use-property-multiple-dwellings-residue-classification` — post-MDR-abolition mixed-use residue rule
+5. `sdlt-off-plan-property-purchase-completion-rate-locking-mechanics` — substantial-performance trigger
+6. `sdlt-non-uk-resident-2-percent-surcharge-day-counting-mechanics` — 183-day SRT-adjacent counting (conflict: verify vs Wave 1 page)
+7. `sdlt-incorporation-partnership-vehicle-zero-charge-mechanics` — Sch 15 FA 2003 partnership relief (conflict: verify vs `sdlt-incorporation-stamp-duty-twice` rewritten 2026-05-21)
+8. `sdlt-cladding-remediation-relief-section-58c-mechanics` — FA 2003 s.58C cladding relief (Wave 5 covered VAT side; SDLT side is uncovered)
+
+### CGT (7 NEW)
+
+9-15. Slugs and rationale in `track2b_competitor_sitemap_gaps_2026-05-23.md` (see source doc).
+
+### IHT (9 NEW)
+
+16-24. Includes #19 IPDI life-interest trusts, #21 Trust Registration Service compliance, #42 EOT property-SPV exit. Multiple PENDING new house positions required.
+
+### BTL Ltd Co / Incorporation (4 NEW)
+
+25-28. Includes alphabet shares applied variants and SPV operational mechanics not covered by Wave 4 A-bucket.
+
+### MTD ITSA (3 NEW)
+
+29-31. Operational mechanics gaps not covered by Wave 3 + Wave 4 MTD coverage.
+
+### VAT (3 NEW)
+
+32-34. Specialist VAT mechanics not covered by Wave 1 + Wave 5 A-bucket (10 VAT pages).
+
+### Form 17 / Joint ownership / Spouse (3 NEW)
+
+35-37. Specialist applications not covered by Wave 5 C-bucket (10 Form 17 pages).
+
+### Leasehold / freehold / commonhold (4 NEW)
+
+38-41. Includes #63 Building Safety Act 2022 cladding cost recovery + #61 share-of-freehold mechanics + #64 LRGRA 2022 + #65 absent-freeholder vesting.
+
+### Commercial property (2 NEW)
+
+42-43. #68 SIPP/SSAS commercial property + #70 s.198 election (high-value technical topics).
+
+### HMO / SA / FHL / STL (5 NEW)
+
+44-48. Includes #71 HMO council-tax reform 2025-26 + #72 rent-to-rent business model + #74 C3-to-C4 conversion + #75 tourist tax 2026 + #76 post-April-2025 CGT on FHL transitional rules.
+
+### Niche specialisms — EPC / EV / cladding / BSA / DAC7 (7 NEW)
+
+49-55. Includes #78 EV chargepoint grant + #79 EV home charging tax relief + #80 EPC C 2030 cap + #81 EPC grants + #82 gas safety + #83 cladding cost recovery + #85 DAC7 platform reporting.
+
+### Capital allowances / SBA (2 NEW)
+
+56-57. #98 capital allowances on FHL pre-vs-post-April-2025 abolition + #99 self-assessment capital allowance claim mechanics.
+
+### NRL / DTA / expat (2 NEW)
+
+58-59. #100 NRL disregarded-income (s.811 ITA 2007) + #101 corporation tax NRL company (April 2020 transition).
+
+### Penalties / enquiries / partnership (4 NEW)
+
+60-63. #108 discovery assessment time limits + #109 closure notice mechanics + #110 CoP9 + #111 tribunal appeal process.
+
+### Property finance (2 NEW)
+
+64-65. #115 Right to Buy investor angle (borderline-niche) + #116 bridging loan tax treatment.
+
+---
+
+## Conflicts surfaced for manager attention
+
+Five cross-track conflicts surfaced during Track 2B reasoning; Wave 6 manager should resolve before commissioning:
+
+1. **#7 SDLT partnership zero-charge** adjacent to rewritten `sdlt-incorporation-stamp-duty-twice`. Different angle (Sch 15 partnership relief vs paying SDLT twice) — verify no cannibalisation.
+2. **#6 SDLT NR surcharge day-counting** adjacent to Wave 1 `sdlt-non-resident-2-percent-surcharge`. NEW angle is day-counting / SRT-adjacent, NOT the rate itself — verify legacy depth.
+3. **#42 EOT Property SPV** — EOT topic has 3-freq mentions; topic_gaps_final body §"Trusts and beneficial ownership" may already commission EOT generically. Verify.
+4. **BSA 2022 / Cladding cluster (#63, #83)** — may overlap with topic_gaps_final §"CIL & Section 106" general items. Wave 6 manager verifies.
+5. **EPC cluster (#80, #81)** — `epc-energy-performance-certificates-epc` is oddly categorised under FIC in topic_gaps_final body. Re-cluster before commissioning.
+
+---
+
+## Summary counter
+
+- **NEW (this addendum):** 65 candidates
+- **PENDING new house positions:** ~28 of 65 (require ~8-10 new HP lock sessions)
+- **READY to commission immediately (HP already locked):** ~37 of 65
+- **Body of topic_gaps_final.md above this addendum:** 429 net-new + 21 partial = 450 candidates
+- **Combined pool for Wave 6+ planning:** ~515 candidates (subject to dedup against Wave 5 shipped + further drift)
+
+End of addendum. Next manager action: read top 10 above + decide Wave 6 bucket selection + schedule house-position lock sessions.
