@@ -19,7 +19,7 @@ summary: "After a section 162 incorporation transfer, most landlords leave the d
 schema: ""
 faqs:
   - question: "How does drawing DLA principal monthly differ from a dividend mechanically?"
-    answer: "A dividend is a distribution from post-corporation-tax profits, requires a declared and minuted board decision, must be paid in proportion to shareholding across all shareholders in that class, and is taxable on you at 8.75%, 33.75% or 39.35% depending on band. A DLA principal repayment is the company settling a debt it owes you personally, requires only an accounting entry and a bank transfer, does not need to be proportional (only you are repaid), and is not taxable income at all. Mechanically the journal entries land on the balance sheet, not the profit and loss account. The company can repay a credit DLA at any time the bank account has cash; it cannot declare a dividend unless distributable reserves are positive at the moment of declaration."
+    answer: "A dividend is a distribution from post-corporation-tax profits, requires a declared and minuted board decision, must be paid in proportion to shareholding across all shareholders in that class, and is taxable on you at 10.75%, 35.75% or 39.35% depending on band. A DLA principal repayment is the company settling a debt it owes you personally, requires only an accounting entry and a bank transfer, does not need to be proportional (only you are repaid), and is not taxable income at all. Mechanically the journal entries land on the balance sheet, not the profit and loss account. The company can repay a credit DLA at any time the bank account has cash; it cannot declare a dividend unless distributable reserves are positive at the moment of declaration."
   - question: "How long does a typical section 162 incorporation credit balance last if I draw the monthly rent?"
     answer: "Between four and fifteen years for most portfolios. A credit balance of £400,000 to £600,000 drawn at the rate of post-corporation-tax cash from a stabilised mid-size portfolio (£40,000 to £55,000 a year) hits zero in roughly nine to fifteen years. If the founder draws aggressively, including extracting refinance proceeds personally rather than re-lending them back, exhaustion in year five to seven is realistic. The variable that matters most is the drawdown rate, not the starting balance: half the drawdown rate doubles the runway."
   - question: "Can I deliberately accelerate DLA drawdown to use it up before pension contributions start?"
@@ -64,7 +64,7 @@ editorialNote: "Sequence-led complement to our director's loan account mechanics
 <ol>
 <li><strong>DLA principal</strong>, the tax-free repayment of money the company already owes you.</li>
 <li><strong>Official-rate interest</strong> paid by the company on the credit DLA balance, taxable income for you, deductible for the company.</li>
-<li><strong>Dividends</strong> from post-corporation-tax profits, taxable in your hands at dividend rates (8.75%, 33.75% or 39.35%).</li>
+<li><strong>Dividends</strong> from post-corporation-tax profits, taxable in your hands at dividend rates (10.75%, 35.75% or 39.35%).</li>
 <li><strong>Salary</strong> at or near the secondary-threshold floor (£5,000 in 2026/27 per the Hunt November 2022 reform; verify against gov.uk at write time), taxable as employment income with personal allowance and NI considerations.</li>
 <li><strong>Employer pension contributions</strong>, deductible for the company, no tax in your hands at the moment of contribution.</li>
 </ol>
@@ -72,7 +72,7 @@ editorialNote: "Sequence-led complement to our director's loan account mechanics
 <p>Why this order is not arbitrary:</p>
 
 <ul>
-<li>Each later strand has a higher current-year tax cost per pound extracted than the earlier one. DLA principal is the only fully tax-free route, and it is finite. Official-rate interest is a low-rate income strand that benefits from the personal savings allowance. Dividends sit at 8.75% to 39.35% on top of the corporation tax the company has already paid. Salary at the floor is broadly tax-free, but the marginal cost rises sharply once you pass the secondary NI threshold (employer NI 13.8% on top of employee NI). Pension contributions defer income tax entirely, but you cannot touch the money until age 55 (rising to 57 from April 2028).</li>
+<li>Each later strand has a higher current-year tax cost per pound extracted than the earlier one. DLA principal is the only fully tax-free route, and it is finite. Official-rate interest is a low-rate income strand that benefits from the personal savings allowance. Dividends sit at 10.75% to 39.35% on top of the corporation tax the company has already paid. Salary at the floor is broadly tax-free, but the marginal cost rises sharply once you pass the secondary NI threshold (employer NI 15% on top of employee NI). Pension contributions defer income tax entirely, but you cannot touch the money until age 55 (rising to 57 from April 2028).</li>
 <li>Reversing the order wastes the tax-free runway. A founder who drives dividends in year one while the DLA credit balance sits untouched pays dividend tax now, then has to dispose of the credit balance later when the only remaining levers are dividends, salary or pension.</li>
 <li>The sequence is not a fixed prescription. A founder who needs pension contribution capacity for personal income tax reasons should run salary alongside the DLA strand from the start. A founder whose company is growing fast may need to retain profits and not extract at all. The order frames the trade-offs, it does not dictate them.</li>
 </ul>
@@ -125,7 +125,7 @@ editorialNote: "Sequence-led complement to our director's loan account mechanics
 <p>Why dividends sit after the two DLA strands:</p>
 
 <ul>
-<li>Dividend income is taxable in your hands at 8.75%, 33.75% or 39.35% depending on band, on top of corporation tax already paid by the company. The blended effective rate is meaningfully higher than the DLA strand or the interest strand for any founder who still has DLA runway available.</li>
+<li>Dividend income is taxable in your hands at 10.75%, 35.75% or 39.35% depending on band, on top of corporation tax already paid by the company. The blended effective rate is meaningfully higher than the DLA strand or the interest strand for any founder who still has DLA runway available.</li>
 <li>The £500 dividend allowance (2026/27) is a small but real wedge. Most directors use it whether or not the DLA balance is exhausted.</li>
 <li>Dividends require declared and minuted board decisions, and must be paid in proportion to shareholding within a share class. The proportionality rule is the structural difference with the DLA strands: DLA principal repayment goes only to you, dividend declarations go to every shareholder in proportion to their class rights.</li>
 </ul>
@@ -141,7 +141,7 @@ editorialNote: "Sequence-led complement to our director's loan account mechanics
 <ul>
 <li>A small salary preserves your national insurance qualifying-year record for the new state pension. This is the single best reason for any salary at all.</li>
 <li>The salary itself is taxable on you as employment income; at the secondary-threshold floor the company pays no employer NI and you fall well within your personal allowance, so the strand is effectively tax-free to you and corporation-tax-deductible for the company.</li>
-<li>Salary above the secondary threshold attracts employer NI at 13.8%, which is expensive per pound of cash extracted compared to the DLA strands or modest dividends. The older "tax-free salary at the personal allowance" advice that worked when Employment Allowance was available no longer makes sense for sole-director SPVs because they are excluded from Employment Allowance (the sole-director exclusion). Multi-director SPVs may qualify subject to the connected-companies rules; the test is whether the company has at least one secondary contributor in addition to the director.</li>
+<li>Salary above the secondary threshold attracts employer NI at 15%, which is expensive per pound of cash extracted compared to the DLA strands or modest dividends. The older "tax-free salary at the personal allowance" advice that worked when Employment Allowance was available no longer makes sense for sole-director SPVs because they are excluded from Employment Allowance (the sole-director exclusion). Multi-director SPVs may qualify subject to the connected-companies rules; the test is whether the company has at least one secondary contributor in addition to the director.</li>
 </ul>
 
 <p>A worked salary-versus-dividend comparison for 2026/27 marginal rates sits in our <a href="/blog/incorporation-and-company-structures/salary-vs-dividends-property-spv-2026-27-marginal-rate-analysis">salary versus dividends analysis for 2026/27</a>. This strand simply notes that salary at the secondary-threshold floor is a defensible default while the DLA runway is intact.</p>
@@ -226,7 +226,7 @@ editorialNote: "Sequence-led complement to our director's loan account mechanics
 
 <h2>Going debit: the section 455 trap, briefly</h2>
 
-<p>The pure mechanics of an overdrawn DLA, the section 455 charge at 33.75%, the nine-month-and-one-day repayment clock, the bed-and-breakfast anti-avoidance rule in CTA 2010 section 464C, and the £10,000 beneficial-loan benefit-in-kind rule are covered in detail on our <a href="/blog/incorporation-and-company-structures/director-loan-account-property-company-mechanics">DLA mechanics page</a>. For the strategic sequence picture, the key points are:</p>
+<p>The pure mechanics of an overdrawn DLA, the section 455 charge at 35.75%, the nine-month-and-one-day repayment clock, the bed-and-breakfast anti-avoidance rule in CTA 2010 section 464C, and the £10,000 beneficial-loan benefit-in-kind rule are covered in detail on our <a href="/blog/incorporation-and-company-structures/director-loan-account-property-company-mechanics">DLA mechanics page</a>. For the strategic sequence picture, the key points are:</p>
 
 <ul>
 <li>Slipping into a debit balance is rare for a founder who started with a large credit balance, but it happens when drawdown outpaces post-CT cash and the founder funds the gap with company money.</li>

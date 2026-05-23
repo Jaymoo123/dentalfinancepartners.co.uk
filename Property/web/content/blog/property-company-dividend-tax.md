@@ -6,7 +6,7 @@ date: "2026-04-01"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Property Company Dividend Tax Rates & Calculator | UK 2026"
-metaDescription: "Dividend tax rates range from 8.75% (basic) to 39.35% (additional) for 2026/27. Calculate your property company dividend liability."
+metaDescription: "Dividend tax rates range from 10.75% (basic) to 39.35% (additional) for 2026/27. Calculate your property company dividend liability."
 altText: "UK property investor reviewing dividend tax calculations on laptop with property documents"
 image: ""
 h1: "Property Company Dividend Tax: How Much Will I Pay?"
@@ -14,7 +14,7 @@ summary: "Property company dividends are taxed differently from salary, with rat
 schema: ""
 faqs:
   - question: "What is the dividend tax rate for property companies in 2025/26?"
-    answer: "Dividend tax rates for 2025/26 are: 0% on the first £500 (dividend allowance), 8.75% on dividends within the basic rate band, 33.75% on higher rate dividends, and 39.35% on additional rate dividends above £125,140. These rates apply to the gross dividend amount."
+    answer: "Dividend tax rates for 2026/27 are: 0% on the first £500 (dividend allowance), 10.75% on dividends within the basic rate band, 35.75% on higher rate dividends, and 39.35% on additional rate dividends above £125,140. These rates apply to the gross dividend amount."
   - question: "Do I pay National Insurance on property company dividends?"
     answer: "No, you don't pay National Insurance on dividends. This is one of the main tax advantages of receiving income as dividends rather than salary, potentially saving up to 13.25% in National Insurance contributions for higher earners."
   - question: "How does corporation tax affect my dividend tax calculation?"
@@ -43,8 +43,8 @@ faqs:
 
 <ul>
 <li><strong>Dividend allowance:</strong> £500 (0% tax)</li>
-<li><strong>Basic rate:</strong> 8.75% on dividends within the basic rate band</li>
-<li><strong>Higher rate:</strong> 33.75% on dividends within the higher rate band</li>
+<li><strong>Basic rate:</strong> 10.75% on dividends within the basic rate band</li>
+<li><strong>Higher rate:</strong> 35.75% on dividends within the higher rate band</li>
 <li><strong>Additional rate:</strong> 39.35% on dividends above £125,140</li>
 </ul>
 
@@ -59,7 +59,7 @@ faqs:
 <ul>
 <li>Salary uses personal allowance and basic rate band up to £30,000</li>
 <li>First £500 of dividends: 0% (dividend allowance)</li>
-<li>Remaining £24,500 dividends: 8.75% = £2,144</li>
+<li>Remaining £24,500 dividends: 10.75% = £2,634</li>
 <li>Total dividend tax: £2,144</li>
 </ul>
 
@@ -74,8 +74,8 @@ faqs:
 <ul>
 <li>Personal allowance: £12,570 (0%)</li>
 <li>Dividend allowance: £500 (0%)</li>
-<li>Basic rate dividends: £24,500 at 8.75% = £2,144</li>
-<li>Higher rate dividends: £42,430 at 33.75% = £14,320</li>
+<li>Basic rate dividends: £24,500 at 10.75% = £2,634</li>
+<li>Higher rate dividends: £42,430 at 35.75% = £15,169</li>
 <li>Total dividend tax: £16,464</li>
 </ul>
 

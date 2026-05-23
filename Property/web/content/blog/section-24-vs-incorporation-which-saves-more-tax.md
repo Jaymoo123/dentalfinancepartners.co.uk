@@ -132,9 +132,9 @@ Company profit: £100,000 - £60,000 - £10,000 = £30,000<br>
 Corporation tax at 25%: £7,500<br>
 Available for distribution: £22,500<br>
 If extracted as dividend:<br>
-Dividend tax at 33.75%: £7,594<br>
-Net after-tax: £14,906</p>
-<p><strong>Incorporation advantage: £8,906 annually (£14,906 vs £6,000)</strong></p>
+Dividend tax at 35.75%: £8,044<br>
+Net after-tax: £14,456</p>
+<p><strong>Incorporation advantage: £8,456 annually (£14,456 vs £6,000)</strong></p>
 
 <h2>When Incorporation Makes Most Sense vs. When Section 24 Might Be Preferable</h2>
 

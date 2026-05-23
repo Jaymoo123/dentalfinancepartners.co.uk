@@ -1,0 +1,83 @@
+Old domains (Wave 4): 274
+New domains (today):  299
+New domains added:    182
+Domains dropped:      157
+Old URLs (Wave 4):    363
+New URLs (today):     388
+Brand new URLs:       279
+URLs in both:         96
+Movements >=3 ranks:  1
+Domains truly net-new vs all-time pre-today: 182
+{
+  "old_domain_count": 274,
+  "new_domain_count": 299,
+  "added_count": 182,
+  "truly_net_new_count": 182,
+  "movement_count": 1,
+  "new_url_only_count": 279
+}
+
+=== ADDED DOMAINS (sorted by appearance count, top 60) ===
+  * landlordstudio.com                            apps= 4 | best_pos=2 | first_seen_q='selling a rental property'
+  * 1stformations.co.uk                           apps= 2 | best_pos=1 | first_seen_q='hmrc self assessment non resident landlord'
+  * crunch.co.uk                                  apps= 2 | best_pos=3 | first_seen_q='vat on rental income hmrc'
+  * leonandcompany.co.uk                          apps= 2 | best_pos=1 | first_seen_q='rental property tax accountant'
+  * mondaq.com                                    apps= 2 | best_pos=3 | first_seen_q='incorporating a property portfolio uk'
+  * propertytribes.com                            apps= 2 | best_pos=2 | first_seen_q='section 24 calculator'
+  * protax.org.uk                                 apps= 2 | best_pos=1 | first_seen_q='hmrc cgt reporting deadlines 2026'
+  * protaxaccountant.co.uk                        apps= 2 | best_pos=2 | first_seen_q='vat on rental income hmrc'
+  * taxassist.co.uk                               apps= 2 | best_pos=3 | first_seen_q='rental property tax accountant'
+  * thomsoncooper.com                             apps= 2 | best_pos=5 | first_seen_q='property tax advice'
+  * togetheraccounting.co.uk                      apps= 2 | best_pos=1 | first_seen_q='portfolio incorporation guidance'
+  * accounting.uworld.com                         apps= 1 | best_pos=5 | first_seen_q='are licensing fees tax deductible'
+  * adeptmortgages.co.uk                          apps= 1 | best_pos=5 | first_seen_q='current uk limited company buy to let mortgage rates 20'
+  * advicenow.org.uk                              apps= 1 | best_pos=5 | first_seen_q='capital gains tax uk property calculator'
+  * afd.calpoly.edu                               apps= 1 | best_pos=1 | first_seen_q='what is property accounting'
+  * albertgoodman.co.uk                           apps= 1 | best_pos=2 | first_seen_q='mtd deadline 2026'
+  * alexander.co.uk                               apps= 1 | best_pos=1 | first_seen_q='property tax partners'
+  * amshousinggroup.com                           apps= 1 | best_pos=4 | first_seen_q='self assessment landlord'
+  * anna.money                                    apps= 1 | best_pos=3 | first_seen_q='mtd software for landlords'
+  * asktaxguru.com                                apps= 1 | best_pos=4 | first_seen_q='capital gains tax on gifts'
+  * assesr.com                                    apps= 1 | best_pos=4 | first_seen_q='property development tax planning'
+  * atkinsaccountants.co.uk                       apps= 1 | best_pos=5 | first_seen_q='accountants specialising in property swansea'
+  * auctions.propertysolvers.co.uk                apps= 1 | best_pos=4 | first_seen_q='how to build a buy to let portfolio'
+  * augustapp.com                                 apps= 1 | best_pos=5 | first_seen_q='mtd software for landlords'
+  * axtaccountants.com                            apps= 1 | best_pos=5 | first_seen_q='property development tax planning'
+  * bdo.com.au                                    apps= 1 | best_pos=2 | first_seen_q='changes to cgt annual exemption 2027'
+  * belfasttelegraph.co.uk                        apps= 1 | best_pos=3 | first_seen_q='stamp duty on property incorporation uk'
+  * benhams.com                                   apps= 1 | best_pos=1 | first_seen_q='tax-efficient property investment structure'
+  * bettermove.co.uk                              apps= 1 | best_pos=5 | first_seen_q='landlord tax rates'
+  * blog.taxadvisorypartnership.com               apps= 1 | best_pos=1 | first_seen_q='tax partners blog'
+  * blog.taxbandits.com                           apps= 1 | best_pos=2 | first_seen_q='tax partners blog'
+  * bnaconsulting.co.uk                           apps= 1 | best_pos=5 | first_seen_q='mtd deadline 2026'
+  * brmlaw.co.uk                                  apps= 1 | best_pos=3 | first_seen_q='selling a rental property'
+  * buildium.com                                  apps= 1 | best_pos=4 | first_seen_q='what is property accounting'
+  * businessfinancing.co.uk                       apps= 1 | best_pos=5 | first_seen_q='property accountant wolverhampton'
+  * calcit.co.uk                                  apps= 1 | best_pos=2 | first_seen_q='uk capital gains tax annual exempt amount 2026'
+  * calculatemystampduty.co.uk                    apps= 1 | best_pos=3 | first_seen_q='uk sdlt rates for limited company buying residential pr'
+  * careaccountancy.co.uk                         apps= 1 | best_pos=4 | first_seen_q='property accountancy leeds'
+  * casajaguar-tulum.com                          apps= 1 | best_pos=3 | first_seen_q='accountant rental property cost'
+  * ccameron.co.uk                                apps= 1 | best_pos=5 | first_seen_q='how to build a buy to let portfolio'
+  * charlesrussellspeechlys.com                   apps= 1 | best_pos=5 | first_seen_q='changes to cgt annual exemption 2027'
+  * churchillwealthmanagement.co.uk               apps= 1 | best_pos=1 | first_seen_q='landlord tax rates'
+  * cigmaaccounting.co.uk                         apps= 1 | best_pos=4 | first_seen_q='uk rental income tax allowable expenses 2026'
+  * clangordon.co.uk                              apps= 1 | best_pos=5 | first_seen_q='nrl tax'
+  * clarkwell.co.uk                               apps= 1 | best_pos=5 | first_seen_q='best property accountants in london'
+  * claytonandbrewill.com                         apps= 1 | best_pos=3 | first_seen_q='accountant for letting agents leicester'
+  * comparetheaccountant.com                      apps= 1 | best_pos=4 | first_seen_q='accountant for letting agents leicester'
+  * connells.co.uk                                apps= 1 | best_pos=2 | first_seen_q='accountant for letting agents leicester'
+  * cottonsgroup.com                              apps= 1 | best_pos=4 | first_seen_q='property accountants northampton'
+  * cowgills.co.uk                                apps= 1 | best_pos=3 | first_seen_q='what does a specialist property accountant do?'
+  * directory.leicestermercury.co.uk              apps= 1 | best_pos=1 | first_seen_q='accountant for letting agents leicester'
+  * dnsaccountantsfranchise.co.uk                 apps= 1 | best_pos=2 | first_seen_q='accountants property tax'
+  * drs-tax.com                                   apps= 1 | best_pos=5 | first_seen_q='capital gains tax on gifts'
+  * dsburge.co.uk                                 apps= 1 | best_pos=5 | first_seen_q='rent tax credit ppr meaning'
+  * duxadvisory.co.uk                             apps= 1 | best_pos=4 | first_seen_q='hmrc cgt reporting requirements 2026'
+  * elysium-law.com                               apps= 1 | best_pos=5 | first_seen_q='portfolio incorporation guidance'
+  * entrepreneurtribune.com                       apps= 1 | best_pos=2 | first_seen_q='portfolio landlord tax strategy'
+  * erconline.co.uk                               apps= 1 | best_pos=3 | first_seen_q='property accountants liverpool'
+  * erpresearch.com                               apps= 1 | best_pos=5 | first_seen_q='best field service software for uk mtd compliance 2026'
+  * esdgaccountancy.com                           apps= 1 | best_pos=5 | first_seen_q='buy to let accountant london'
+
+=== TOP MOVEMENTS (>=3 ranks, top 30 by abs delta) ===
+  property portfolio tax planning                      | pos 4->1 (-3, UP) | https://www.tlpi.co.uk/insights/essential-tax-planning-neede

@@ -106,7 +106,7 @@ faqs:
 
 <p>If you have not incorporated by property 5, the case has become acute for any higher rate landlord with significant mortgage interest. Section 162 incorporation relief is now reliably available (the business test is comfortably met at 5+ properties actively managed). The corporation tax small profits rate (19% on profits up to £50,000) is well below the personal marginal rate. The 5% SDLT surcharge cost is still painful but increasingly justified by the recurring tax saving.</p>
 
-<p>If you have incorporated, the next concern is dividend extraction strategy. Drawing all profit as dividends each year mostly negates the corporation tax saving (33.75% higher rate dividend tax on top of corporation tax). Effective strategies use a small director salary (up to the NI threshold), modest dividends to fill the basic rate band, pension contributions paid by the company (deductible against corporation tax, no personal tax in), and retained profit for portfolio growth.</p>
+<p>If you have incorporated, the next concern is dividend extraction strategy. Drawing all profit as dividends each year mostly negates the corporation tax saving (35.75% higher rate dividend tax on top of corporation tax). Effective strategies use a small director salary (up to the NI threshold), modest dividends to fill the basic rate band, pension contributions paid by the company (deductible against corporation tax, no personal tax in), and retained profit for portfolio growth.</p>
 
 <p>MTD for ITSA is live (from 6 April 2026) for any personal-name landlords above £50,000 gross combined property and self-employment income. The threshold drops to £30,000 from April 2027. Limited companies are not in scope of MTD for ITSA (CT600 continues as before).</p>
 

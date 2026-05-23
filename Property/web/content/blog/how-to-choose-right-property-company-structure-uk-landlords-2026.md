@@ -62,7 +62,7 @@ faqs:
 <ul>
 <li>Corporation tax at 19% (profits up to £250k) or 25% (above £250k)</li>
 <li>Full mortgage interest relief against rental income</li>
-<li>Dividend tax at 8.75%, 33.75%, or 39.35% when distributed</li>
+<li>Dividend tax at 10.75%, 35.75%, or 39.35% when distributed</li>
 <li>CGT at 18%/24% on company disposals (with potential reliefs)</li>
 <li>3% SDLT surcharge on purchases (increased to 5% from October 2024)</li>
 </ul>
@@ -97,7 +97,7 @@ faqs:
 <li>Taxable profit: £20,000 (after full mortgage interest relief)</li>
 <li>Corporation tax: £3,800 (19%)</li>
 <li>Available for distribution: £16,200</li>
-<li>Dividend tax on full distribution: £5,468 (33.75%)</li>
+<li>Dividend tax on full distribution: £5,792 (35.75%)</li>
 <li>Total tax: £9,268</li>
 <li>Saving: £1,732 annually</li>
 </ul>
@@ -115,7 +115,7 @@ faqs:
 <li>Taxable profit: £55,000 (after full mortgage interest relief)</li>
 <li>Corporation tax: £10,450 (19%)</li>
 <li>Available for distribution: £44,550</li>
-<li>Dividend tax on full distribution: £15,036 (33.75%)</li>
+<li>Dividend tax on full distribution: £15,927 (35.75%)</li>
 <li>Total tax: £25,486</li>
 <li>Saving: £5,514 annually</li>
 </ul>

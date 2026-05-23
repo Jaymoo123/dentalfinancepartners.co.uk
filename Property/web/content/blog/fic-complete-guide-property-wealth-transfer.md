@@ -29,7 +29,7 @@ faqs:
   - question: "Are FICs subject to corporation tax on rental income?"
     answer: "Yes. The FIC pays corporation tax on rental profits at 19% (small profits rate, up to £50,000) or 25% (main rate, above £250,000), with marginal-rate relief between the two thresholds. The corporation-tax position is the same as for any property letting company. The FIC's CIHC (close investment-holding company) status (because letting income is investment income) means the small profits rate is restricted in certain circumstances, though connected-party-let exceptions apply."
   - question: "What is the dividend extraction position?"
-    answer: "Dividends declared by the FIC are taxed in the shareholders' hands at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate), with the £500 annual dividend allowance for each shareholder. A growth-share architecture that allows the children to receive dividends at their own (often lower) marginal rates is one of the principal income-tax planning benefits. The founder typically restricts dividends to themselves to manage their own marginal rate."
+    answer: "Dividends declared by the FIC are taxed in the shareholders' hands at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate), with the £500 annual dividend allowance for each shareholder. A growth-share architecture that allows the children to receive dividends at their own (often lower) marginal rates is one of the principal income-tax planning benefits. The founder typically restricts dividends to themselves to manage their own marginal rate."
   - question: "How does the wealth transfer actually work?"
     answer: "Three mechanisms. (1) Growth allocation: economic growth in the underlying portfolio accrues to the growth-share class (typically the children's class), not to the founder's voting class. Wealth shifts down a generation as the portfolio appreciates. (2) Gifting growth shares: the founder gifts already-issued shares to children at low base value (potentially exempt as a PET, fully exempt after 7 years). (3) Reissuing growth shares: new growth shares are issued to children, diluting the founder's economic interest going forward."
   - question: "Do FICs qualify for Business Property Relief (BPR) on death?"
@@ -163,7 +163,7 @@ editorialNote: "FIC bucket. Comprehensive reference companion to the existing de
 
 <h3>Dividend Tax on Extraction</h3>
 
-<p>Dividends declared by the FIC are taxed at 8.75% / 33.75% / 39.35% in the shareholders' hands. The £500 annual dividend allowance applies per shareholder. Because the growth-share architecture allows the children's class to receive dividends, the combined family marginal rate on FIC profits can be materially lower than the founder's personal rate alone. The trade-off is that the children become tax filers if their dividend income exceeds the relevant thresholds.</p>
+<p>Dividends declared by the FIC are taxed at 10.75% / 35.75% / 39.35% in the shareholders' hands. The £500 annual dividend allowance applies per shareholder. Because the growth-share architecture allows the children's class to receive dividends, the combined family marginal rate on FIC profits can be materially lower than the founder's personal rate alone. The trade-off is that the children become tax filers if their dividend income exceeds the relevant thresholds.</p>
 
 <h3>SDLT and ATED on Property Held in the FIC</h3>
 

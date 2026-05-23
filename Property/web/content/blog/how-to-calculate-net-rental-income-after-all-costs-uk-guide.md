@@ -30,7 +30,7 @@ faqs:
   - question: "How do MTD for ITSA quarterly updates affect my net rental income calculation?"
     answer: "MTD for ITSA does not change the annual calculation. It changes when and how often you report it. Each quarterly update is a summary of income and expense categories for that three-month period. The final declaration (replacing the old annual SA100/SA105) is where Section 24, brought-forward losses, capital allowances, and other annual adjustments are applied. So you still calculate net rental profit annually, but you report the building blocks quarterly. MTD threshold went live at £50,000 gross combined income on 6 April 2026, drops to £30,000 in April 2027, and £20,000 in April 2028."
   - question: "How does the calculation differ for limited company ownership?"
-    answer: "Companies are not subject to Section 24. Mortgage interest is fully deductible against company profit. There is no add-back, no separate tax reducer. Corporation tax (19% to 25%) applies to the net profit figure. If profit is later extracted as a dividend, the shareholder pays a further 8.75%, 33.75%, or 39.35% personal tax. Net cash to the shareholder after both taxes is often similar to personal ownership after Section 24, the company route mainly helps if you retain profits inside the company for portfolio growth rather than extracting everything."
+    answer: "Companies are not subject to Section 24. Mortgage interest is fully deductible against company profit. There is no add-back, no separate tax reducer. Corporation tax (19% to 25%) applies to the net profit figure. If profit is later extracted as a dividend, the shareholder pays a further 10.75%, 35.75%, or 39.35% personal tax. Net cash to the shareholder after both taxes is often similar to personal ownership after Section 24, the company route mainly helps if you retain profits inside the company for portfolio growth rather than extracting everything."
   - question: "How do I treat insurance proceeds for damage to a rental property?"
     answer: "Proceeds for loss of rental income are taxable as rental income in the period to which they relate. Proceeds for repair work are not separately taxable, but they reduce the deductible repair cost. So if a £4,000 boiler replacement was funded entirely by an insurance payout of £4,000, the net repair cost is zero and you cannot claim £4,000 of expense (you cannot have your cake and eat it). Where the insurance covers only part of the repair, you deduct the unfunded balance."
   - question: "What records should I keep for the net income calculation?"
@@ -211,7 +211,7 @@ faqs:
 <tr><td>Taxable company profit</td><td>£21,600</td></tr>
 <tr><td>Corporation tax at 19% small profits rate</td><td>£4,104</td></tr>
 <tr><td><strong>Net cash retained in company</strong></td><td><strong>£17,496</strong></td></tr>
-<tr><td>If subsequently extracted as dividend (higher rate £17,496 × 33.75%)</td><td>£5,905</td></tr>
+<tr><td>If subsequently extracted as dividend (higher rate £17,496 × 35.75%)</td><td>£6,255</td></tr>
 <tr><td><strong>Net cash in shareholders' hands after extraction</strong></td><td><strong>£11,591</strong></td></tr>
 </tbody>
 </table>

@@ -22,7 +22,7 @@ faqs:
   - question: "How is rental profit taxed inside an SPV?"
     answer: "An SPV pays corporation tax on its taxable profits at 19% (small profits rate, augmented profits under £50,000), 25% (main rate, profits over £250,000), or a tapered rate between the two via marginal relief. Section 24 does not apply inside a company: finance costs (mortgage interest, loan interest, finance fees) are fully deductible against the trading profit. Profits taxed within the company can either be retained for reinvestment or extracted to shareholders via dividends, salary or pension contributions, each with its own tax cost."
   - question: "How are dividends from a property SPV taxed in the shareholder's hands?"
-    answer: "Dividends from a UK SPV fall under the standard dividend tax regime for the shareholder. The dividend allowance is £500 for 2026/27 (down from £1,000 in 2024/25). Above the allowance, dividend rates for 2026/27 are 8.75% (basic), 33.75% (higher) and 39.35% (additional rate). The company gets no deduction for dividends paid (unlike salary), so dividend extraction is taxed twice in headline terms (corporation tax inside the company plus dividend tax in the shareholder's hands), though the combined effective rate is often still lower than direct personal income tax on rental profit after Section 24."
+    answer: "Dividends from a UK SPV fall under the standard dividend tax regime for the shareholder. The dividend allowance is £500 for 2026/27 (down from £1,000 in 2024/25). Above the allowance, dividend rates for 2026/27 are 10.75% (basic), 35.75% (higher) and 39.35% (additional rate). The company gets no deduction for dividends paid (unlike salary), so dividend extraction is taxed twice in headline terms (corporation tax inside the company plus dividend tax in the shareholder's hands), though the combined effective rate is often still lower than direct personal income tax on rental profit after Section 24."
   - question: "Is property income inside a company subject to MTD for Income Tax?"
     answer: "No. Making Tax Digital for Income Tax Self Assessment (MTD-ITSA) applies to individual landlords (sole traders) above the £50,000 / £30,000 / £20,000 income thresholds. Limited companies file via corporation tax returns (CT600), not Self Assessment. HMRC's MTD for Corporation Tax has been deferred indefinitely with no live mandate as of May 2026. Property SPVs therefore stay outside MTD-ITSA but are inside the standard corporation tax filing regime (statutory accounts to Companies House, CT600 to HMRC, both within nine months and one day of the accounting reference date)."
   - question: "Does an SPV pay VAT on rental income?"
@@ -34,7 +34,7 @@ faqs:
   - question: "Can I transfer my existing personally-owned properties into an SPV?"
     answer: "Yes, but the transfer is a market value disposal for CGT and a market-value acquisition for SDLT, both triggering tax unless reliefs apply. Section 162 TCGA 1992 incorporation relief defers the CGT charge where the whole property business is transferred as a going concern and meets the Ramsay business test. SDLT is harder to escape; in narrow circumstances, the FA 2003 Schedule 15 partnership transfer route can reduce SDLT where the properties were held in partnership form before incorporation. Existing mortgages also need lender consent or refinancing. Most landlords incorporate new acquisitions inside the SPV rather than transferring an established personal portfolio."
   - question: "What is a director's loan account and why does it matter for an SPV?"
-    answer: "A director's loan account (DLA) is the company ledger recording money the director has lent to the company or drawn out. Equity injected by the director as a loan (rather than share capital) can be repaid back to the director tax-free, because it is the return of capital. Setting up an SPV with director loan funding alongside share capital is common practice for this reason: future profits can be used to repay the loan before any taxable dividend extraction is needed. Drawing more out of the company than the DLA balance plus available dividends creates an overdrawn DLA, which can trigger benefit-in-kind charges and a section 455 corporation tax charge at 33.75%."
+    answer: "A director's loan account (DLA) is the company ledger recording money the director has lent to the company or drawn out. Equity injected by the director as a loan (rather than share capital) can be repaid back to the director tax-free, because it is the return of capital. Setting up an SPV with director loan funding alongside share capital is common practice for this reason: future profits can be used to repay the loan before any taxable dividend extraction is needed. Drawing more out of the company than the DLA balance plus available dividends creates an overdrawn DLA, which can trigger benefit-in-kind charges and a section 455 corporation tax charge at 35.75%."
   - question: "Should I use one SPV or one per property?"
     answer: "Most portfolio landlords use one SPV holding multiple properties, balancing administrative simplicity with the limited liability of the corporate form. Single-property SPVs are used where the lender or commercial structure demands them (some development finance lenders require a separate SPV per scheme), where one property carries materially higher risk than the rest (a large HMO with licensing exposure, a complex commercial-residential mix), or where there is a clear plan to sell one specific property on a share sale rather than asset sale basis. The administrative overhead of running multiple SPVs is not trivial."
   - question: "How does an SPV interact with inheritance tax planning?"
@@ -133,14 +133,14 @@ faqs:
 
 <h3>Dividends</h3>
 
-<p>The most common route for property SPV shareholders. The dividend allowance is £500 for 2026/27. Above the allowance, dividend rates for 2026/27 are 8.75% (basic), 33.75% (higher) and 39.35% (additional rate). The company gets no deduction for dividends paid.</p>
+<p>The most common route for property SPV shareholders. The dividend allowance is £500 for 2026/27. Above the allowance, dividend rates for 2026/27 are 10.75% (basic), 35.75% (higher) and 39.35% (additional rate). The company gets no deduction for dividends paid.</p>
 
 <p>Combined effective rate for a higher-rate shareholder extracting all SPV profit as dividend:</p>
 
 <ul>
 <li>Corporation tax at 19% reduces £100 of profit to £81</li>
-<li>Dividend tax at 33.75% on £81 = £27.34</li>
-<li>Total tax: £19 + £27.34 = £46.34, or 46.34% effective rate</li>
+<li>Dividend tax at 35.75% on £81 = £28.96</li>
+<li>Total tax: £19 + £28.96 = £47.96, or 47.96% effective rate</li>
 </ul>
 
 <p>That looks worse than the headline 42% property income tax rate from April 2027, but the personal rate is applied to a much larger taxable base (because Section 24 disallows mortgage interest as a deduction). For a leveraged property, the SPV route is usually cheaper despite the headline-comparison appearance.</p>
@@ -196,8 +196,8 @@ faqs:
 <li>Taxable corporate profit: £18,000 − £2,000 − £13,500 = £2,500</li>
 <li>Corporation tax at 19%: £475</li>
 <li>Profit retained in company: £2,025</li>
-<li>If extracted as dividend by higher-rate shareholder (33.75% above £500 allowance): roughly £683 dividend tax</li>
-<li>Net cashflow to shareholder if fully extracted: £2,025 − £683 = <strong>£1,342</strong></li>
+<li>If extracted as dividend by higher-rate shareholder (35.75% above £500 allowance): roughly £724 dividend tax</li>
+<li>Net cashflow to shareholder if fully extracted: £2,025 − £724 = <strong>£1,301</strong></li>
 <li>Net retained in company (no extraction): <strong>£2,025</strong></li>
 </ul>
 
@@ -224,8 +224,8 @@ faqs:
 <p>The SPV pitch is one-sided in much of the property press, but the structure is not universally advantageous. The SPV stops making sense when:</p>
 
 <ul>
-<li><strong>Low leverage.</strong> Section 24 is the engine driving most of the SPV advantage. For a landlord with no mortgage or very modest mortgage interest, the personal route at 22 to 42% income tax often beats the SPV route at 19% corporation tax plus 33.75% dividend tax.</li>
-<li><strong>Basic-rate taxpayer with full extraction.</strong> A basic-rate taxpayer is not affected by Section 24 in the same way, and the combined corporation tax + dividend tax cost (19% + 8.75% = 26.65% effective on extracted profit) is barely below the headline 22% basic-rate property income tax. Add compliance costs and the SPV often loses.</li>
+<li><strong>Low leverage.</strong> Section 24 is the engine driving most of the SPV advantage. For a landlord with no mortgage or very modest mortgage interest, the personal route at 22 to 42% income tax often beats the SPV route at 19% corporation tax plus 35.75% dividend tax.</li>
+<li><strong>Basic-rate taxpayer with full extraction.</strong> A basic-rate taxpayer is not affected by Section 24 in the same way, and the combined corporation tax + dividend tax cost (19% + 10.75% = 28.71% effective on extracted profit) is above the headline 22% basic-rate property income tax. Add compliance costs and the SPV often loses.</li>
 <li><strong>Short hold horizon.</strong> Acquisition costs (SDLT, legal, mortgage arrangement fees) and incorporation costs need to be amortised over a hold period long enough to recover them. A landlord who plans to flip a property within two years often does better personally.</li>
 <li><strong>Existing personally-owned portfolio with built-in CGT.</strong> Transferring established personally-held property into an SPV triggers CGT at market value (unless section 162 incorporation relief defers it) and SDLT including the 5% surcharge. The crystallisation cost often outweighs years of subsequent SPV tax savings.</li>
 </ul>

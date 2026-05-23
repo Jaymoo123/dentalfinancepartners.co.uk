@@ -71,7 +71,7 @@ faqs:
 <p>For a director with £20,000 salary and £30,000 employer pension contributions, the total gross benefit is £50,000 with personal tax only on the salary portion.</p>
 
 <h3>Higher Rate Taxpayers</h3>
-<p>Directors paying higher rate tax (40%) or additional rate tax (45%) benefit significantly from <strong>employer pension contribution landlord</strong> strategies. Instead of taking dividends taxed at 33.75% (higher rate) or 39.35% (additional rate), pension contributions provide immediate corporation tax relief.</p>
+<p>Directors paying higher rate tax (40%) or additional rate tax (45%) benefit significantly from <strong>employer pension contribution landlord</strong> strategies. Instead of taking dividends taxed at 35.75% (higher rate) or 39.35% (additional rate), pension contributions provide immediate corporation tax relief.</p>
 <p>A £20,000 pension contribution saves the company £3,800-£5,000 in corporation tax while providing £20,000 of retirement benefit with no immediate personal tax charge.</p>
 
 <h2>Corporation Tax Relief and Contribution Methods</h2>
@@ -81,7 +81,7 @@ faqs:
 <p>You can make pension contributions up to 9 months and one day after your company's year-end and still claim relief in the previous accounting period. This flexibility helps with cash flow management and tax planning. For a company with a March year-end, pension contributions made by 1 January can still qualify for the previous year's corporation tax relief, subject to meeting the accounting treatment requirements.</p>
 
 <h3>Direct Employer Contributions vs Salary Sacrifice</h3>
-<p>Property companies have two main options for pension funding. Direct employer contributions, where the company makes contributions without reducing the director's salary, offer full corporation tax relief and simpler administration but no National Insurance savings. Salary sacrifice arrangements, where a director foregoes salary in exchange for pension contributions, can save the employer's National Insurance (13.8%) but require a formal agreement and may affect other benefits linked to salary levels. For property companies, direct employer contributions are often simpler since many directors already take minimal salaries to optimise their personal tax position.</p>
+<p>Property companies have two main options for pension funding. Direct employer contributions, where the company makes contributions without reducing the director's salary, offer full corporation tax relief and simpler administration but no National Insurance savings. Salary sacrifice arrangements, where a director foregoes salary in exchange for pension contributions, can save the employer's National Insurance (15%) but require a formal agreement and may affect other benefits linked to salary levels. For property companies, direct employer contributions are often simpler since many directors already take minimal salaries to optimise their personal tax position.</p>
 
 <h2>Integration with Dividend Planning</h2>
 <p>Pension contributions work particularly well alongside dividend strategies for property companies. The optimal extraction might combine:</p>

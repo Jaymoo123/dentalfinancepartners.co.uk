@@ -126,7 +126,7 @@ faqs:
 <tr><td>Finance cost relief</td><td>Basic-rate credit only (Section 24)</td><td>Fully deductible</td></tr>
 <tr><td>Annual exempt amount on gains</td><td>£3,000 per individual</td><td>None</td></tr>
 <tr><td>CGT / corporation tax on gains</td><td>18% / 24%</td><td>19% / 25% (no AEA, but indexation removed)</td></tr>
-<tr><td>Extraction of cash to landlord</td><td>Not applicable</td><td>Dividend tax 8.75% / 33.75% / 39.35% on extracted profits</td></tr>
+<tr><td>Extraction of cash to landlord</td><td>Not applicable</td><td>Dividend tax 10.75% / 35.75% / 39.35% on extracted profits</td></tr>
 </tbody>
 </table>
 

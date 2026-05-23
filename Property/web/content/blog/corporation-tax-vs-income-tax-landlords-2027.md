@@ -79,14 +79,14 @@ faqs:
 <h2>Dividend Tax: The Hidden Cost of Extraction</h2>
 <p>Corporation tax represents only the first layer of company taxation. Extracting profits as dividends triggers additional tax at the following 2027 rates:</p>
 <ul>
-<li><strong>Basic rate:</strong> 8.75%</li>
-<li><strong>Higher rate:</strong> 33.75%</li>
+<li><strong>Basic rate:</strong> 10.75%</li>
+<li><strong>Higher rate:</strong> 35.75%</li>
 <li><strong>Additional rate:</strong> 39.35%</li>
 </ul>
 <p>The combined effective rate for company profits extracted as dividends becomes:</p>
 <ul>
-<li><strong>Basic rate taxpayer:</strong> 19% corporation tax + 8.75% dividend tax = 26.1% total</li>
-<li><strong>Higher rate taxpayer:</strong> 19% corporation tax + 33.75% dividend tax = 46.4% total</li>
+<li><strong>Basic rate taxpayer:</strong> 19% corporation tax + 10.75% dividend tax = 27.7% total</li>
+<li><strong>Higher rate taxpayer:</strong> 19% corporation tax + 35.75% dividend tax = 48.0% total</li>
 </ul>
 <p>This changes the comparison significantly. For basic rate landlords, the 26.1% combined rate exceeds the 22% property income tax. However, higher-rate landlords still benefit, with 46.4% combined company tax beating 42% property income tax.</p>
 

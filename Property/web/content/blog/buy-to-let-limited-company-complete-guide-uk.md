@@ -20,7 +20,7 @@ faqs:
   - question: "Can I transfer my existing personally-owned properties into a company?"
     answer: "Yes, but the transfer is a disposal at market value for CGT and a purchase at market value for SDLT, both potentially expensive. Section 162 incorporation relief can roll the CGT into the new shares (deferring it until you sell the shares), but only if the property business meets the 'business' test, broadly meaning five or more properties actively managed with significant time commitment. SDLT applies at full residential rates including the 5% additional dwellings surcharge (raised from 3% on 31 October 2024). Partnership-route transfers using SDLT Schedule 15 can mitigate the SDLT cost where the structure qualifies. Mortgage lender consent is also required and frequently refused on existing personal-name BTL mortgages."
   - question: "What is the dividend tax cost when extracting profits from a property company?"
-    answer: "For 2025-26 the dividend allowance is £500 (reduced from £1,000 in 2024-25 and £2,000 in 2023-24). Dividend rates above the allowance are 8.75% (basic rate), 33.75% (higher rate), and 39.35% (additional rate). On £30,000 of dividends to a higher rate taxpayer with no other dividend income, the personal tax cost is roughly £9,800 on top of the corporation tax already paid by the company. This 'double tax' is the main offset against the company's headline rate advantage and the reason companies favour profit retention or pension funding over heavy dividend extraction."
+    answer: "For 2026-27 the dividend allowance is £500 (reduced from £1,000 in 2024-25 and £2,000 in 2023-24). Dividend rates above the allowance are 10.75% (basic rate), 35.75% (higher rate), and 39.35% (additional rate). On £30,000 of dividends to a higher rate taxpayer with no other dividend income, the personal tax cost is roughly £10,550 on top of the corporation tax already paid by the company. This 'double tax' is the main offset against the company's headline rate advantage and the reason companies favour profit retention or pension funding over heavy dividend extraction."
   - question: "Are mortgage rates higher for limited company buy-to-let?"
     answer: "Yes, typically 0.5% to 1.0% above equivalent personal-name BTL rates, and the lender pool is smaller (around 20 to 25 active company lenders versus 60+ personal-name lenders). Deposit requirements are usually 25% minimum, sometimes 30% or 35% on HMOs or multi-unit blocks. Most lenders also require personal guarantees from directors and a clean credit history. The rate gap has narrowed substantially since 2020 as the market matured, but it has not disappeared. Always model the post-tax cash flow on both routes before fixing the structure."
   - question: "What is Section 162 incorporation relief and how does it work?"
@@ -42,7 +42,7 @@ faqs:
   - question: "What if HMRC challenges my incorporation as not qualifying for Section 162 relief?"
     answer: "If HMRC successfully argues the activity was not a 'business' (it was passive investment rather than active management), Section 162 relief is denied and the full latent capital gain crystallises at the date of transfer. CGT is then due at 18% or 24%, with the 60-day reporting and payment deadline running from completion. For a transfer of properties with £500,000 of latent gains, the tax cost can be £90,000 to £120,000 unexpectedly. Mitigation routes are limited once incorporation is complete. The best protection is documented evidence of business activity (time records, management decisions, refurbishment involvement) before transfer, plus advance clearance with HMRC where the case is borderline."
   - question: "Can I use a property company to fund my pension?"
-    answer: "Yes. A company contribution to your personal pension is deductible against corporation tax (within the standard annual allowance of £60,000 for 2025-26, or unused carry-forward from the previous three years). This extracts company value into your pension wrapper at 19% to 25% tax cost (the corporation tax saved by deducting the contribution) rather than the 33.75% or 39.35% dividend tax on equivalent extraction. SSAS and SIPP pensions can also be used to purchase commercial property (not residential) that the company can then lease back, generating tax-deductible rent flowing into the pension."
+    answer: "Yes. A company contribution to your personal pension is deductible against corporation tax (within the standard annual allowance of £60,000 for 2025-26, or unused carry-forward from the previous three years). This extracts company value into your pension wrapper at 19% to 25% tax cost (the corporation tax saved by deducting the contribution) rather than the 35.75% or 39.35% dividend tax on equivalent extraction. SSAS and SIPP pensions can also be used to purchase commercial property (not residential) that the company can then lease back, generating tax-deductible rent flowing into the pension."
 ---
 
 <p>Operating buy-to-let through a UK limited company has gone from niche to mainstream since Section 24 finance cost restrictions fully phased in for the 2020-21 tax year. By the time you read this in 2026, the majority of new BTL purchases by professional landlords are made through a limited company, and a substantial minority of existing personal-name portfolios have already been incorporated. The economic case is real for the right landlord. It is not universal and it is not free. This guide explains when the company route saves real money, when it costs more than it saves, and how to navigate the practical steps if you decide it is right for your portfolio.</p>
@@ -54,7 +54,7 @@ faqs:
 <p>Four core differences from personal ownership:</p>
 
 <ul>
-<li><strong>Tax rate.</strong> Profits suffer corporation tax (19% to 25%) inside the company, not your personal marginal rate (up to 45%) directly. Extraction as dividends incurs a further 8.75% to 39.35% personal tax.</li>
+<li><strong>Tax rate.</strong> Profits suffer corporation tax (19% to 25%) inside the company, not your personal marginal rate (up to 45%) directly. Extraction as dividends incurs a further 10.75% to 39.35% personal tax.</li>
 <li><strong>Mortgage interest.</strong> Fully deductible against company profit. Section 24 finance cost restriction does not apply to companies.</li>
 <li><strong>Capital gains.</strong> Company gains are taxed at the corporation tax rate (no separate CGT rates for companies). The company has no annual exempt amount equivalent to the £3,000 personal CGT AEA.</li>
 <li><strong>Compliance.</strong> Annual statutory accounts at Companies House, an annual CT600 return to HMRC, a confirmation statement, and (where directors take salary) payroll. None of this is hard, but it is real cost.</li>
@@ -99,7 +99,7 @@ faqs:
 <tr><td>Section 24 tax reducer (£22,000 × 20%)</td><td>(£4,400)</td><td>n/a</td></tr>
 <tr><td><strong>Net tax in the year (before any extraction)</strong></td><td><strong>£8,400</strong></td><td><strong>£1,900</strong></td></tr>
 <tr><td>Net cash after tax (profit £10,000 minus tax)</td><td>£1,600</td><td>£8,100</td></tr>
-<tr><td>If all retained company profit later extracted as dividend (higher rate)</td><td>n/a</td><td>£8,100 × 33.75% = £2,734</td></tr>
+<tr><td>If all retained company profit later extracted as dividend (higher rate)</td><td>n/a</td><td>£8,100 × 35.75% = £2,896</td></tr>
 <tr><td><strong>Net cash after eventual dividend extraction</strong></td><td><strong>£1,600</strong></td><td><strong>£5,366</strong></td></tr>
 </tbody>
 </table>
@@ -139,8 +139,8 @@ faqs:
 <p>Dividends are paid from post-corporation-tax retained profits. The dividend allowance is £500 (reduced from £1,000 in 2024-25 and £2,000 in 2023-24). Dividend tax rates above the allowance:</p>
 
 <ul>
-<li>Basic rate: 8.75%</li>
-<li>Higher rate: 33.75%</li>
+<li>Basic rate: 10.75%</li>
+<li>Higher rate: 35.75%</li>
 <li>Additional rate: 39.35%</li>
 </ul>
 
@@ -152,7 +152,7 @@ faqs:
 
 <h3>Director's loan account</h3>
 
-<p>Money you put into the company (e.g., your initial deposit funds, top-ups to cover voids) sits as a Director's Loan Account credit. You can draw it back out tax-free until exhausted. Borrowing more than you have lent (an overdrawn DLA) triggers a Section 455 charge of 33.75% of the outstanding balance nine months and one day after year end, refundable when the loan is repaid. Loans above £10,000 also create a benefit-in-kind income tax charge unless interest at the official rate is paid by you to the company.</p>
+<p>Money you put into the company (e.g., your initial deposit funds, top-ups to cover voids) sits as a Director's Loan Account credit. You can draw it back out tax-free until exhausted. Borrowing more than you have lent (an overdrawn DLA) triggers a Section 455 charge of 35.75% of the outstanding balance nine months and one day after year end, refundable when the loan is repaid. Loans above £10,000 also create a benefit-in-kind income tax charge unless interest at the official rate is paid by you to the company.</p>
 
 <aside>
 <p>Considering incorporation but unsure if the maths works for your portfolio?</p>
@@ -224,7 +224,7 @@ faqs:
 
 <h3>Alphabet shares and family income shifting</h3>
 
-<p>Issuing separate share classes (A, B, C, D shares) to different family members with flexible dividend rights lets the company declare dividends differently across classes each year. Adult children in lower tax bands can take dividends at 8.75% basic rate instead of the principal shareholder taking them at 33.75% or 39.35%. This works only for genuinely adult shareholders (over 18) and must be documented carefully, the settlements legislation (anti-avoidance rules) and recent HMRC challenges have caught some poorly drafted schemes.</p>
+<p>Issuing separate share classes (A, B, C, D shares) to different family members with flexible dividend rights lets the company declare dividends differently across classes each year. Adult children in lower tax bands can take dividends at 10.75% basic rate instead of the principal shareholder taking them at 35.75% or 39.35%. This works only for genuinely adult shareholders (over 18) and must be documented carefully, the settlements legislation (anti-avoidance rules) and recent HMRC challenges have caught some poorly drafted schemes.</p>
 
 <h2>Inheritance tax: a common misunderstanding</h2>
 

@@ -14,7 +14,7 @@ summary: "There is no single best structure for every landlord. The right answer
 schema: ""
 faqs:
   - question: "Is a limited company always more tax-efficient for buy-to-let?"
-    answer: "No. A limited company saves tax when corporation tax at 19% to 25% on rental profit beats personal 40% to 45% income tax after Section 24. That maths usually works for higher-rate landlords with material mortgage interest and an intention to retain profits for reinvestment. It does not work for basic-rate landlords, for low-leverage portfolios, or for landlords who draw every pound of profit as dividends (which adds 8.75%, 33.75%, or 39.35% dividend tax to the corporation tax already paid)."
+    answer: "No. A limited company saves tax when corporation tax at 19% to 25% on rental profit beats personal 40% to 45% income tax after Section 24. That maths usually works for higher-rate landlords with material mortgage interest and an intention to retain profits for reinvestment. It does not work for basic-rate landlords, for low-leverage portfolios, or for landlords who draw every pound of profit as dividends (which adds 10.75%, 35.75%, or 39.35% dividend tax to the corporation tax already paid)."
   - question: "What is the SDLT cost of transferring my existing portfolio into a limited company?"
     answer: "Treated for SDLT as a market-value transfer to a connected company under FA 2003 s.53. Full residential SDLT applies with the 5% additional-dwellings surcharge that has been in force since 31 October 2024. On a £750,000 portfolio of three flats, that is typically £45,000-£55,000 of SDLT. The only mainstream route to nil-SDLT is genuine partnership incorporation under FA 2003 Sch 15 para 10. Multiple Dwellings Relief was abolished on 1 June 2024 and is no longer available."
   - question: "Can married couples split rental income between them?"
@@ -22,7 +22,7 @@ faqs:
   - question: "Are the separate property-income tax rates of 22%, 42%, and 47% confirmed?"
     answer: "They were announced in the Autumn Budget and are scheduled to take effect from 6 April 2027, with the legislation in the draft Finance Act 2026 awaiting Royal Assent. The mechanism is a 2% surcharge on property income on top of the standard 20%, 40%, and 45% rates. Plan on the basis that they will apply from 6 April 2027, while being aware that the position becomes locked only once Royal Assent is granted. The case for incorporation strengthens for higher-rate landlords under the new rates."
   - question: "What is the main downside of holding property in a limited company?"
-    answer: "Three things. First, the cost of getting in: SDLT at market value, refinancing existing residential mortgages into company BTL products at 0.5-1% higher rates, and legal and accountancy fees. Second, the cost of getting money out: profits face corporation tax (19-25%) plus dividend tax on extraction (8.75% basic, 33.75% higher, 39.35% additional), which can leave headline-rate higher-rate landlords with little net saving if every pound is drawn. Third, ongoing compliance: statutory accounts, CT600, Confirmation Statement, potential ATED relief returns for properties above £500,000."
+    answer: "Three things. First, the cost of getting in: SDLT at market value, refinancing existing residential mortgages into company BTL products at 0.5-1% higher rates, and legal and accountancy fees. Second, the cost of getting money out: profits face corporation tax (19-25%) plus dividend tax on extraction (10.75% basic, 35.75% higher, 39.35% additional), which can leave headline-rate higher-rate landlords with little net saving if every pound is drawn. Third, ongoing compliance: statutory accounts, CT600, Confirmation Statement, potential ATED relief returns for properties above £500,000."
   - question: "When does a partnership or LLP make sense for property investment?"
     answer: "A general partnership is sometimes used as a stepping stone to incorporation, specifically to access the partnership incorporation route under FA 2003 Sch 15 para 10 (zero SDLT on the eventual transfer into a limited company). Running as a genuine letting partnership for two years or more, with partnership tax returns and joint operations, can be a deliberate prelude to corporate structure. An LLP combines limited liability with tax transparency: each LLP member is taxed on their share of profit as if a sole trader. LLPs are used where multiple unrelated investors want pass-through taxation with corporate-style liability protection, but they remain subject to Section 24 in the same way as sole-trader landlords."
   - question: "What is the breakeven portfolio size for incorporation in 2026/27?"
@@ -183,7 +183,7 @@ faqs:
 <tbody>
 <tr><td>Taxable rental profit</td><td>£44,000</td><td>£24,000</td><td>£24,000</td></tr>
 <tr><td>Corporation tax</td><td>n/a</td><td>£4,560 (19%)</td><td>£4,560</td></tr>
-<tr><td>Personal income tax on profit</td><td>£8,800 (20%)</td><td>n/a</td><td>£2,580 (8.75% dividend)</td></tr>
+<tr><td>Personal income tax on profit</td><td>£8,800 (20%)</td><td>n/a</td><td>£3,170 (10.75% dividend)</td></tr>
 <tr><td>Section 24 credit</td><td>(£4,000)</td><td>n/a</td><td>n/a</td></tr>
 <tr><td>Net tax</td><td>£4,800</td><td>£4,560</td><td>£7,140</td></tr>
 </tbody>
@@ -200,7 +200,7 @@ faqs:
 <tbody>
 <tr><td>Taxable rental profit</td><td>£44,000</td><td>£24,000</td><td>£24,000</td></tr>
 <tr><td>Corporation tax</td><td>n/a</td><td>£4,560</td><td>£4,560</td></tr>
-<tr><td>Personal income tax on profit</td><td>£17,600 (40%)</td><td>n/a</td><td>£6,548 (33.75% dividend)</td></tr>
+<tr><td>Personal income tax on profit</td><td>£17,600 (40%)</td><td>n/a</td><td>£6,936 (35.75% dividend)</td></tr>
 <tr><td>Section 24 credit</td><td>(£4,000)</td><td>n/a</td><td>n/a</td></tr>
 <tr><td>Net tax</td><td>£13,600</td><td>£4,560</td><td>£11,108</td></tr>
 <tr><td>Annual saving vs sole trader</td><td>baseline</td><td>£9,040</td><td>£2,492</td></tr>

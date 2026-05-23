@@ -124,9 +124,9 @@ editorialNote: "FIC daughter. Side-by-side comparison with discretionary trusts;
   <li>FIC route: £19,000 corporation tax (assuming small profits rate of 19%, which a non-CIHC FIC achieves; CIHC FICs may face the 25% main rate).</li>
 </ul>
 
-<p>The £26,000 headline gap is the principal income-tax argument for the FIC. The complication is what happens on extraction: trust distributions to beneficiaries carry through the trust's tax credits to the beneficiary, who is taxed at their own marginal rate; FIC dividends are taxed at 8.75% to 39.35% on the recipient, without further credit for the corporation tax already paid.</p>
+<p>The £26,000 headline gap is the principal income-tax argument for the FIC. The complication is what happens on extraction: trust distributions to beneficiaries carry through the trust's tax credits to the beneficiary, who is taxed at their own marginal rate; FIC dividends are taxed at 10.75% to 39.35% on the recipient, without further credit for the corporation tax already paid.</p>
 
-<p>The combined effective rate (corporate plus dividend extraction) on the FIC route for a higher-rate-taxpayer recipient is roughly: 19% corp tax + (33.75% dividend tax on the 81% post-corp-tax amount) = 46.3% effective. The trust route's beneficiary-rate flow-through for a basic-rate beneficiary is 40%; for a higher-rate beneficiary 45% (matching the trust rate). The combined-rate comparison favours the FIC where extraction is to basic-rate or non-taxpayer recipients (children at university with no other income), and the trust where extraction is to higher-rate recipients.</p>
+<p>The combined effective rate (corporate plus dividend extraction) on the FIC route for a higher-rate-taxpayer recipient is roughly: 19% corp tax + (35.75% dividend tax on the 81% post-corp-tax amount) = 48.0% effective. The trust route's beneficiary-rate flow-through for a basic-rate beneficiary is 40%; for a higher-rate beneficiary 45% (matching the trust rate). The combined-rate comparison favours the FIC where extraction is to basic-rate or non-taxpayer recipients (children at university with no other income), and the trust where extraction is to higher-rate recipients.</p>
 
 <h2>CGT: Roughly Equal</h2>
 

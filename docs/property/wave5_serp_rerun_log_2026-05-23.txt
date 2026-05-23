@@ -1,0 +1,86 @@
+[rerun] 83 queries to fetch (cadence target: today=2026-05-23)
+  [ 1/83] OK (5 comp) accountant for letting agents leicester | top: directory.leicestermercur, connells.co.uk, claytonandbrewill.com
+  [ 2/83] OK (5 comp) accountant for property in london | top: mmba.co.uk, fhpaccounting.co.uk, goforma.com
+  [ 3/83] OK (5 comp) accountant rental property cost | top: rentalpropertyinvestingri, lowcostaccounts.co.uk, casajaguar-tulum.com
+  [ 4/83] OK (5 comp) accountants peterborough btl landlords | top: accountantsinrotherham.co, albanyaccounting.co.uk, jmcaccountancy.com
+  [ 5/83] OK (5 comp) accountants property tax | top: optimiseaccountants.co.uk, dnsaccountantsfranchise.c, goodhams.co.uk
+  [ 6/83] OK (5 comp) accountants specialising in property swansea | top: timtayloraccountants.co.u, lumin-accountancy.co.uk, bevanbuckland.co.uk
+  [ 7/83] OK (5 comp) accounting services for property owners | top: ukpropertyaccountants.co., nephosgroup.com, theaccountancy.co.uk
+  [ 8/83] OK (5 comp) are licensing fees tax deductible | top: legalclarity.org, upcounsel.com, rolecatcher.com
+  [ 9/83] OK (5 comp) best field service software for uk mtd compliance  | top: uk.insightss.co, softomatesolutions.com, landlordstudio.com
+  [10/83] OK (5 comp) best property accountants in london | top: ukpropertyaccountants.co., gmprofessionalaccountants, fastaccountant.co.uk
+  [11/83] OK (5 comp) buy to let accountant | top: gorillaaccounting.com, buytolettaxaccountants.co, thp.co.uk
+  [12/83] OK (5 comp) buy to let accountant london | top: perrysaccountants.co.uk, gorillaaccounting.com, thebuytoletaccountant.co.
+  [13/83] OK (5 comp) can a family investment company buy property | top: towerstone.co.uk, linkedin.com, zoopla.co.uk
+  [14/83] OK (5 comp) can you claim mortgage interest on rental property | top: gov.uk, dnsassociates.co.uk, hich.co.uk
+  [15/83] OK (5 comp) capital gains tax on gifts | top: gov.uk, gov.uk, irs.gov
+  [16/83] OK (5 comp) capital gains tax on property | top: grokipedia.com, gov.uk, gov.uk
+  [17/83] OK (5 comp) capital gains tax uk property calculator | top: gov.uk, aviva.co.uk, charcol.co.uk
+  [18/83] OK (5 comp) changes to cgt annual exemption 2027 | top: startupdaily.net, bdo.com.au, taxscape.deloitte.com
+  [19/83] OK (5 comp) compare mtd plans benefits | top: accountancyntax.co.uk, taptax.co.uk, mtdcompare.co.uk
+  [20/83] OK (5 comp) create btl limited company uk | top: gov.uk, ukpropertyaccountants.co., charcol.co.uk
+  [21/83] OK (5 comp) current uk limited company buy to let mortgage rat | top: comparebanks.co.uk, godirect.co.uk, money.co.uk
+  [22/83] OK (5 comp) hmo landlord tax planning | top: ibissandco.com, thehmoroadmap.co.uk, royalgreenwich.gov.uk
+  [23/83] OK (5 comp) hmrc cgt reporting deadlines 2026 | top: protax.org.uk, ross-brooke.co.uk, accountingweb.co.uk
+  [24/83] OK (5 comp) hmrc cgt reporting requirements 2026 | top: rayneressex.com, att.org.uk, att.org.uk
+  [25/83] OK (5 comp) hmrc self assessment non resident landlord | top: 1stformations.co.uk, gov.uk, uklandlordtax.co.uk
+  [26/83] OK (5 comp) how to build a buy to let portfolio | top: totallandlordinsurance.co, rw-invest.com, scottfraser.co.uk
+  [27/83] OK (5 comp) how to calculate cgt on property | top: gov.uk, hl.co.uk, charcol.co.uk
+  [28/83] OK (5 comp) how to calculate rent income | top: bing.com, bing.com, bing.com
+  [29/83] OK (5 comp) income tax on landlord insurance claims | top: landlordzone.co.uk, gosuperscript.com, gov.uk
+  [30/83] OK (5 comp) incorporating a property portfolio uk | top: shipleystax.com, accountingweb.co.uk, mondaq.com
+  [31/83] OK (5 comp) inheritance tax planning for landlords | top: hedgeslaw.co.uk, kingandtaylor.co.uk, propertysuccessclub.co.uk
+  [32/83] OK (5 comp) is there stamp duty on furnished holiday lettings | top: landlordtoday.co.uk, mayesaccountants.co.uk, stampdutycalculator.org
+  [33/83] OK (5 comp) landlord accounting spreadsheet | top: db-excel.com, db-excel.com, db-excel.com
+  [34/83] OK (5 comp) landlord portfolio incorporation uk | top: propertyreporter.co.uk, btlinsider.co.uk, landlordzone.co.uk
+  [35/83] OK (5 comp) landlord tax rates | top: churchillwealthmanagement, listentotaxman.com, landlordstudio.com
+  [36/83] OK (5 comp) mtd deadline 2026 | top: kletta.com, albertgoodman.co.uk, seamountbiz.co.uk
+  [37/83] OK (5 comp) mtd software for landlords | top: rentalbux.com, usehammock.com, anna.money
+  [38/83] OK (5 comp) nrl tax | top: en.wikipedia.org, taxscape.deloitte.com, litrg.org.uk
+  [39/83] OK (5 comp) nrl1 | top: en.wikipedia.org, limes-int.com, accountingweb.co.uk
+  [40/83] OK (5 comp) oversea landlord tax | top: gov.uk, gov.uk, litrg.org.uk
+  [41/83] OK (5 comp) overseas landlords | top: hawesandco.co.uk, reedsrains.co.uk, your-move.co.uk
+  [42/83] OK (5 comp) portfolio incorporation guidance | top: togetheraccounting.co.uk, insight-tax.co.uk, pkfsmithcooper.com
+  [43/83] OK (5 comp) portfolio landlord tax strategy | top: shawbrook.co.uk, entrepreneurtribune.com, lamborghiniclubla.com
+  [44/83] OK (5 comp) ppr strategy property | top: ellacotts.co.uk, property-tax-portal.co.uk, rjp.co.uk
+  [45/83] OK (5 comp) property accountancy leeds | top: bhp.co.uk, yourleedsaccountants.co.u, leonandcompany.co.uk
+  [46/83] OK (5 comp) property accountant career | top: jobicy.com, himalayas.app, glassdoor.co.uk
+  [47/83] OK (5 comp) property accountant wolverhampton | top: paylessaccountants.co.uk, kenbellaccounting.co.uk, yourwolverhamptonaccounta
+  [48/83] OK (5 comp) property accountants liverpool | top: yourliverpoolaccountants., ljsaccountingservices.com, erconline.co.uk
+  [49/83] OK (5 comp) property accountants northampton | top: elsbyandco.co.uk, gwaccounting.co.uk, dnsassociates.co.uk
+  [50/83] OK (5 comp) property accounting software uk | top: usehammock.com, freeagent.com, landlordvision.co.uk
+  [51/83] OK (5 comp) property development tax planning | top: nmec.org.uk, gov.uk, ukpropertyaccountants.co.
+  [52/83] OK (5 comp) property management records | top: belvoir.co.uk, leveluppropertymanagement, landlordzone.co.uk
+  [53/83] OK (5 comp) property owner accountant | top: kenbellaccounting.co.uk, jamestoddandco.co.uk, uklandlordtax.co.uk
+  [54/83] OK (5 comp) property portfolio tax planning | top: tlpi.co.uk, ukpropertyaccountants.co., propertyinvestortoday.co.
+  [55/83] OK (5 comp) property tax accountant | top: geraldedelman.com, uklandlordtax.co.uk, ukpropertyaccountants.co.
+  [56/83] OK (5 comp) property tax accountant in london | top: geraldedelman.com, hwfisher.co.uk, andrewpasser.com
+  [57/83] OK (5 comp) property tax advice | top: property-tax-advice.co.uk, nrla.org.uk, andersonstrathern.co.uk
+  [58/83] OK (5 comp) property tax partners | top: alexander.co.uk, bhp.co.uk, nrla.org.uk
+  [59/83] OK (5 comp) rent a room allowance 2026 | top: gov.uk, gov.uk, moneyhelper.org.uk
+  [60/83] OK (5 comp) rent tax credit ppr meaning | top: extra.ie, tolley.co.uk, revenue.ie
+  [61/83] OK (5 comp) rental property tax accountant | top: leonandcompany.co.uk, uklandlordtax.co.uk, taxassist.co.uk
+  [62/83] OK (5 comp) section 24 calculator | top: upad.co.uk, propertytribes.com, section24.stevedoran.co.u
+  [63/83] OK (5 comp) self assessment landlord | top: easy-accountants.co.uk, thegoodlandlord.com, gnsassociates.co.uk
+  [64/83] OK (5 comp) selling a rental property | top: muve.me.uk, landlordstudio.com, brmlaw.co.uk
+  [65/83] OK (5 comp) short term let mtd | top: gozeal.co.uk, propertyinvestmentproject, gozeal.co.uk
+  [66/83] OK (5 comp) special purpose vehicle property | top: commercialtrust.co.uk, taylor-rose.co.uk, dnsassociates.co.uk
+  [67/83] OK (5 comp) stamp duty on property incorporation uk | top: rodgerstaxation.co.uk, investopedia.com, belfasttelegraph.co.uk
+  [68/83] OK (5 comp) tax on rental property income | top: mytaxrentals.co.nz, taxrebateservices.co.uk, hello.pricelabs.co
+  [69/83] OK (5 comp) tax partners blog | top: blog.taxadvisorypartnersh, blog.taxbandits.com, greenbacktaxservices.com
+  [70/83] OK (5 comp) tax-efficient property investment structure | top: benhams.com, propertymark.co.uk, tkpg.co.uk
+  [71/83] OK (5 comp) trading property | top: lifetime.co.nz, taxinsider.co.uk, thefundedroom.com
+  [72/83] OK (5 comp) uk capital gains tax annual exempt amount 2026 | top: gov.uk, calcit.co.uk, ukcalculator.com
+  [73/83] OK (5 comp) uk cgt rates residential property 2026 | top: gov.uk, rossmartin.co.uk, att.org.uk
+  [74/83] OK (5 comp) uk income tax rates on rental profit 2026 | top: checkmytax.uk, alanboswell.com, letsafeuk.co.uk
+  [75/83] OK (5 comp) uk mortgage interest relief restricted for individ | top: uklandlordtax.co.uk, fhpaccounting.co.uk, ukpropertyaccountants.co.
+  [76/83] OK (5 comp) uk rental income tax allowable expenses 2026 | top: charcol.co.uk, kaeltripton.com, uklandlordtax.co.uk
+  [77/83] OK (5 comp) uk sdlt rates for limited company buying residenti | top: qualitycompanyformations., gov.uk, calculatemystampduty.co.u
+  [78/83] OK (5 comp) uk tax year dates 2026–27 | top: sleek.com, pro-taxman.co.uk, forthcapital.com
+  [79/83] OK (5 comp) vat on rental income hmrc | top: gov.uk, protaxaccountant.co.uk, crunch.co.uk
+  [80/83] OK (5 comp) what does a specialist property accountant do? | top: bhp.co.uk, smithbutler.co.uk, cowgills.co.uk
+  [81/83] OK (5 comp) what is property accounting | top: afd.calpoly.edu, g2.com, hellodata.ai
+  [82/83] OK (5 comp) when does this change | top: gov.uk, timeanddate.com, xero.com
+  [83/83] OK (5 comp) yield vs roi | top: nockdeighton.co.uk, investopedia.com, estateagentpower.com
+
+[rerun] DONE ok=83 empty=0 err=0 skipped=0

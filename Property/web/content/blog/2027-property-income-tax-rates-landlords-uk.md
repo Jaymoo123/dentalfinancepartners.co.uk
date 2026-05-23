@@ -183,7 +183,7 @@ faqs:
 </tbody>
 </table>
 
-<p>The headline appearance overstates the company advantage, because money inside the company has to be extracted to be useful to the shareholder. Dividend extraction at higher rates (33.75% above the £500 allowance in 2026/27) takes a meaningful slice of the company's profit. The combined effective rate on extracted profit for a higher-rate shareholder is around 46%, modestly above the 42% personal rate, but the comparison is misleading because the personal route applies the 42% to a larger taxable base (because Section 24 disallows the mortgage interest deduction).</p>
+<p>The headline appearance overstates the company advantage, because money inside the company has to be extracted to be useful to the shareholder. Dividend extraction at higher rates (35.75% above the £500 allowance in 2026/27) takes a meaningful slice of the company's profit. The combined effective rate on extracted profit for a higher-rate shareholder is around 48%, modestly above the 42% personal rate, but the comparison is misleading because the personal route applies the 42% to a larger taxable base (because Section 24 disallows the mortgage interest deduction).</p>
 
 <p>For a leveraged property the company route is usually cheaper despite the headline appearance, and the 2027 change strengthens the case. The decision is portfolio-specific. Modelling on the actual portfolio is the only reliable way to decide.</p>
 

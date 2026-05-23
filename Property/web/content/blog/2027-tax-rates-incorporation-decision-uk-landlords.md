@@ -55,10 +55,10 @@ faqs:
 <li><strong>Personal ownership:</strong> 42% on rental income = £8,400 tax</li>
 <li><strong>Corporate ownership:</strong> 19% corporation tax = £3,800</li>
 </ul>
-<p>Even after dividend extraction at 33.75% (higher rate dividend tax), the corporate structure delivers substantial savings. Additional rate taxpayers face a 47% personal rate, making the differential with the 19% or 25% corporation tax rate even more compelling.</p>
+<p>Even after dividend extraction at 35.75% (higher rate dividend tax), the corporate structure delivers substantial savings. Additional rate taxpayers face a 47% personal rate, making the differential with the 19% or 25% corporation tax rate even more compelling.</p>
 
 <h3>Other Key Factors in the Decision</h3>
-<p>The optimal extraction strategy becomes more nuanced with the new property income tax rates. For basic rate taxpayers, the dividend ordinary rate of 8.75% means total effective tax (corporation tax plus dividend tax) of approximately 26% — still higher than the 22% personal rate. However, companies offer more flexibility in timing distributions, potentially allowing income smoothing across tax years or deferring extractions until retirement when personal tax rates may be lower.</p>
+<p>The optimal extraction strategy becomes more nuanced with the new property income tax rates. For basic rate taxpayers, the dividend ordinary rate of 10.75% means total effective tax (corporation tax plus dividend tax) of approximately 28% — still higher than the 22% personal rate. However, companies offer more flexibility in timing distributions, potentially allowing income smoothing across tax years or deferring extractions until retirement when personal tax rates may be lower.</p>
 <p>Corporate ownership may trigger business rates liability instead of council tax on rental properties. For larger portfolios, this could represent a significant additional cost that needs factoring into the incorporation decision.</p>
 <p>Company shares may qualify for Business Property Relief, potentially reducing inheritance tax liability to zero. This estate planning benefit becomes more valuable for larger portfolios, particularly when combined with the income tax savings from 2027.</p>
 

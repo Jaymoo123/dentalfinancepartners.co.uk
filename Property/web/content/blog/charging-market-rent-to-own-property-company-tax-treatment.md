@@ -29,7 +29,7 @@ faqs:
   - question: "What happens if HMRC says my rent is too low or too high?"
     answer: "Under the transfer-pricing rules (where they apply), HMRC re-prices the transaction to the arm's-length figure and adjusts the corporation tax position accordingly. A rent set above market would be cut to the arm's-length figure, reducing the SPV's corporation tax deduction and leaving the director with personal income on an above-market basis (the income is real, the deduction is restricted). A rent set below market would be increased, raising the SPV's deduction (though the SPV may not have actually paid the higher rent) and creating a deemed distribution issue. Outside the transfer-pricing regime (most family BTL SPVs), HMRC challenges via the general anti-abuse rules and substance-over-form arguments: where the rent is materially below market, HMRC may argue the difference is a benefit-in-kind to the director under ITEPA 2003."
   - question: "How does the rent extraction compare to salary or dividends?"
-    answer: "Rent extraction sits between salary and dividends in tax cost for most marginal-rate combinations. For an anonymised higher-rate taxpayer (40% income tax band) the marginal cost on a £1,000 rent extraction is approximately: £400 personal income tax (40% on £1,000), partially offset by 19% to 25% corporation tax saving in the SPV (£190 to £250). Net cost: roughly £150 to £210 per £1,000 extracted. For comparison, £1,000 of dividend extracted at the higher-rate dividend band of 33.75% is taxed at £338 personally with no CT saving (dividends paid from post-CT profits), net cost £338. £1,000 of salary at the higher-rate marginal income tax + NI is approximately £490 to £530 personally, less the 19% to 25% CT saving in the company, net cost £290 to £330. Rent extraction is the cheapest of the three for higher-rate landlords on un-mortgaged property; the comparison shifts where section 24 applies to mortgaged property in personal hands."
+    answer: "Rent extraction sits between salary and dividends in tax cost for most marginal-rate combinations. For an anonymised higher-rate taxpayer (40% income tax band) the marginal cost on a £1,000 rent extraction is approximately: £400 personal income tax (40% on £1,000), partially offset by 19% to 25% corporation tax saving in the SPV (£190 to £250). Net cost: roughly £150 to £210 per £1,000 extracted. For comparison, £1,000 of dividend extracted at the higher-rate dividend band of 35.75% is taxed at £358 personally with no CT saving (dividends paid from post-CT profits), net cost £358. £1,000 of salary at the higher-rate marginal income tax + NI is approximately £490 to £530 personally, less the 19% to 25% CT saving in the company, net cost £290 to £330. Rent extraction is the cheapest of the three for higher-rate landlords on un-mortgaged property; the comparison shifts where section 24 applies to mortgaged property in personal hands."
   - question: "Should I have a formal lease with my own company, or is a board minute enough?"
     answer: "You need a formal written lease. A board minute is not enough on its own. The lease is the contractual document that establishes the legal relationship between you as landlord and the SPV as tenant; the board minute records the SPV's authorisation to enter into that lease. Both are needed. The lease should run for a stated term (typically three to five years for residential, longer for commercial), specify the rent and any review mechanism, set out the repairing covenant (typically tenant-side for a commercial unit, landlord-side for residential), and include standard termination provisions. For a residential let, the tenancy form depends on whether the SPV occupies (rare; SPVs do not occupy) or sub-lets (more common). For a commercial unit let to the SPV, a standard commercial lease drafted by a solicitor is the right tool. Get the document right at the start; remediating a missing lease post-hoc costs more than commissioning it properly."
   - question: "What is the typical lease term for a personal-to-own-SPV property?"
@@ -149,20 +149,20 @@ editorialNote: "Connected-party rent extraction as a third route alongside salar
 <h3>Route one: salary £40,000</h3>
 
 <ul>
-<li>Employer NI at 13.8% on the portion above the secondary threshold (£5,000 per Hunt November 2022 reform): roughly £4,830 paid by SPV.</li>
+<li>Employer NI at 15% on the portion above the secondary threshold (£5,000 per Hunt November 2022 reform): roughly £5,250 paid by SPV.</li>
 <li>Employee NI: roughly £2,250 on the portion above the primary threshold.</li>
 <li>Income tax at the higher-rate band: roughly £8,000.</li>
-<li>SPV corporation tax saving on the £44,830 salary + employer NI cost: roughly £8,500 to £11,200 at 19% to 25% blended rate.</li>
-<li>Net household cost per £40,000 net extracted: £40,000 - £8,000 - £2,250 = £29,750 in hand; gross cost to SPV £44,830 less CT saving £8,500 = £36,330 of pre-tax profit consumed. Effective tax rate roughly 35% of pre-tax SPV profit.</li>
+<li>SPV corporation tax saving on the £45,250 salary + employer NI cost: roughly £8,600 to £11,300 at 19% to 25% blended rate.</li>
+<li>Net household cost per £40,000 net extracted: £40,000 - £8,000 - £2,250 = £29,750 in hand; gross cost to SPV £45,250 less CT saving £8,600 = £36,650 of pre-tax profit consumed. Effective tax rate roughly 35% of pre-tax SPV profit.</li>
 </ul>
 
 <h3>Route two: dividend £40,000</h3>
 
 <ul>
 <li>No employer or employee NI on dividends.</li>
-<li>Higher-rate dividend tax at 33.75% on £40,000 less the £500 allowance: roughly £13,331.</li>
+<li>Higher-rate dividend tax at 35.75% on £40,000 less the £500 allowance: roughly £14,124.</li>
 <li>SPV pays £40,000 of dividend from post-corporation-tax profit. The SPV's profit to fund £40,000 of dividends is £40,000 ÷ (1 - CT rate) = £49,383 at 19% small-profits rate, or £53,333 at 25% main rate.</li>
-<li>Net household cost per £40,000 net extracted: £40,000 - £13,331 = £26,669 in hand; gross cost to SPV £49,383 to £53,333 of pre-tax profit consumed. Effective tax rate roughly 46% of pre-tax SPV profit at the small-profits rate.</li>
+<li>Net household cost per £40,000 net extracted: £40,000 - £14,124 = £25,876 in hand; gross cost to SPV £49,383 to £53,333 of pre-tax profit consumed. Effective tax rate roughly 48% of pre-tax SPV profit at the small-profits rate.</li>
 </ul>
 
 <h3>Route three: rent £40,000 (un-mortgaged property)</h3>
@@ -176,7 +176,7 @@ editorialNote: "Connected-party rent extraction as a third route alongside salar
 
 <h3>Comparison summary</h3>
 
-<p>For a higher-rate taxpayer with an un-mortgaged personally-held property the SPV uses, rent extraction is the cheapest of the three routes by 3 to 14 percentage points of effective tax rate. The advantage narrows where the property is mortgaged (section 24 erodes the personal-side tax efficiency), where the SPV is at the main 25% CT rate (the CT saving is bigger, which helps), or where the founder is a basic-rate taxpayer (the dividend rate at 8.75% becomes competitive with rent at 20%).</p>
+<p>For a higher-rate taxpayer with an un-mortgaged personally-held property the SPV uses, rent extraction is the cheapest of the three routes by 3 to 14 percentage points of effective tax rate. The advantage narrows where the property is mortgaged (section 24 erodes the personal-side tax efficiency), where the SPV is at the main 25% CT rate (the CT saving is bigger, which helps), or where the founder is a basic-rate taxpayer (the dividend rate at 10.75% becomes competitive with rent at 20%).</p>
 
 <p>For the underlying 2026/27 marginal-rate analysis on salary versus dividends, see our wider extraction series; this page focuses on the rent variant as a third option.</p>
 

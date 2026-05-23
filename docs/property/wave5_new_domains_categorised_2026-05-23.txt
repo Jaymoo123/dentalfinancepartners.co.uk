@@ -1,0 +1,187 @@
+NEW DOMAINS — categorised
+====================================================================================================
+154 specialist; 28 excluded by filter rules
+
+domain                                     apps  bestp  queries category   first_query
+landlordstudio.com                            4      2        4 SPECIALIST selling a rental property
+1stformations.co.uk                           2      1        2 SPECIALIST hmrc self assessment non resident landlord
+leonandcompany.co.uk                          2      1        2 SPECIALIST rental property tax accountant
+protax.org.uk                                 2      1        2 SPECIALIST hmrc cgt reporting deadlines 2026
+togetheraccounting.co.uk                      2      1        2 SPECIALIST portfolio incorporation guidance
+propertytribes.com                            2      2        1 AGG       section 24 calculator
+protaxaccountant.co.uk                        2      2        2 SPECIALIST vat on rental income hmrc
+crunch.co.uk                                  2      3        2 SPECIALIST vat on rental income hmrc
+mondaq.com                                    2      3        2 SPECIALIST incorporating a property portfolio uk
+taxassist.co.uk                               2      3        2 SPECIALIST rental property tax accountant
+thomsoncooper.com                             2      5        2 SPECIALIST property tax advice
+afd.calpoly.edu                               1      1        1 FOREIGN   what is property accounting
+alexander.co.uk                               1      1        1 SPECIALIST property tax partners
+benhams.com                                   1      1        1 SPECIALIST tax-efficient property investment structure
+blog.taxadvisorypartnership.com               1      1        1 SPECIALIST tax partners blog
+churchillwealthmanagement.co.uk               1      1        1 SPECIALIST landlord tax rates
+directory.leicestermercury.co.uk              1      1        1 SPECIALIST accountant for letting agents leicester
+hawesandco.co.uk                              1      1        1 SPECIALIST overseas landlords
+ibissandco.com                                1      1        1 SPECIALIST hmo landlord tax planning
+jobicy.com                                    1      1        1 FOREIGN   property accountant career
+kletta.com                                    1      1        1 SPECIALIST mtd deadline 2026
+mmba.co.uk                                    1      1        1 SPECIALIST accountant for property in london
+muve.me.uk                                    1      1        1 SPECIALIST selling a rental property
+mytaxrentals.co.nz                            1      1        1 FOREIGN   tax on rental property income
+optimiseaccountants.co.uk                     1      1        1 SPECIALIST accountants property tax
+qualitycompanyformations.co.uk                1      1        1 SPECIALIST uk sdlt rates for limited company buying residential pr
+rayneressex.com                               1      1        1 SPECIALIST hmrc cgt reporting requirements 2026
+rentalpropertyinvestingrivieramaya.com        1      1        1 SPECIALIST accountant rental property cost
+rodgerstaxation.co.uk                         1      1        1 SPECIALIST stamp duty on property incorporation uk
+shawbrook.co.uk                               1      1        1 SPECIALIST portfolio landlord tax strategy
+startupdaily.net                              1      1        1 NEWS      changes to cgt annual exemption 2027
+uk.insightss.co                               1      1        1 SPECIALIST best field service software for uk mtd compliance 2026
+upad.co.uk                                    1      1        1 SPECIALIST section 24 calculator
+yourliverpoolaccountants.co.uk                1      1        1 SPECIALIST property accountants liverpool
+albertgoodman.co.uk                           1      2        1 SPECIALIST mtd deadline 2026
+bdo.com.au                                    1      2        1 FOREIGN   changes to cgt annual exemption 2027
+blog.taxbandits.com                           1      2        1 FOREIGN   tax partners blog
+calcit.co.uk                                  1      2        1 SPECIALIST uk capital gains tax annual exempt amount 2026
+connells.co.uk                                1      2        1 SPECIALIST accountant for letting agents leicester
+dnsaccountantsfranchise.co.uk                 1      2        1 SPECIALIST accountants property tax
+entrepreneurtribune.com                       1      2        1 NEWS      portfolio landlord tax strategy
+gmprofessionalaccountants.co.uk               1      2        1 SPECIALIST best property accountants in london
+hedgeslaw.co.uk                               1      2        1 SPECIALIST inheritance tax planning for landlords
+himalayas.app                                 1      2        1 FOREIGN   property accountant career
+insight-tax.co.uk                             1      2        1 SPECIALIST portfolio incorporation guidance
+limes-int.com                                 1      2        1 SPECIALIST nrl1
+listentotaxman.com                            1      2        1 SPECIALIST landlord tax rates
+lumin-accountancy.co.uk                       1      2        1 SPECIALIST accountants specialising in property swansea
+propertyinvestmentproject.co.uk               1      2        1 SPECIALIST short term let mtd
+propertymark.co.uk                            1      2        1 SPECIALIST tax-efficient property investment structure
+ross-brooke.co.uk                             1      2        1 SPECIALIST hmrc cgt reporting deadlines 2026
+rw-invest.com                                 1      2        1 SPECIALIST how to build a buy to let portfolio
+softomatesolutions.com                        1      2        1 SPECIALIST best field service software for uk mtd compliance 2026
+taptax.co.uk                                  1      2        1 SPECIALIST compare mtd plans benefits
+taxrebateservices.co.uk                       1      2        1 SPECIALIST tax on rental property income
+taylor-rose.co.uk                             1      2        1 SPECIALIST special purpose vehicle property
+thehmoroadmap.co.uk                           1      2        1 SPECIALIST hmo landlord tax planning
+tolley.co.uk                                  1      2        1 SPECIALIST rent tax credit ppr meaning
+upcounsel.com                                 1      2        1 FOREIGN   are licensing fees tax deductible
+yourleedsaccountants.co.uk                    1      2        1 SPECIALIST property accountancy leeds
+anna.money                                    1      3        1 SPECIALIST mtd software for landlords
+belfasttelegraph.co.uk                        1      3        1 NEWS      stamp duty on property incorporation uk
+brmlaw.co.uk                                  1      3        1 SPECIALIST selling a rental property
+calculatemystampduty.co.uk                    1      3        1 SPECIALIST uk sdlt rates for limited company buying residential pr
+casajaguar-tulum.com                          1      3        1 FOREIGN   accountant rental property cost
+claytonandbrewill.com                         1      3        1 SPECIALIST accountant for letting agents leicester
+cowgills.co.uk                                1      3        1 SPECIALIST what does a specialist property accountant do?
+erconline.co.uk                               1      3        1 SPECIALIST property accountants liverpool
+fastaccountant.co.uk                          1      3        1 SPECIALIST best property accountants in london
+glassdoor.co.uk                               1      3        1 AGG       property accountant career
+goforma.com                                   1      3        1 SPECIALIST accountant for property in london
+goodhams.co.uk                                1      3        1 SPECIALIST accountants property tax
+greenbacktaxservices.com                      1      3        1 FOREIGN   tax partners blog
+hello.pricelabs.co                            1      3        1 SPECIALIST tax on rental property income
+hellodata.ai                                  1      3        1 PLAT      what is property accounting
+irs.gov                                       1      3        1 GOV       capital gains tax on gifts
+kingandtaylor.co.uk                           1      3        1 SPECIALIST inheritance tax planning for landlords
+lamborghiniclubla.com                         1      3        1 FOREIGN   portfolio landlord tax strategy
+money.co.uk                                   1      3        1 SPECIALIST current uk limited company buy to let mortgage rates 20
+moneyhelper.org.uk                            1      3        1 SPECIALIST rent a room allowance 2026
+nephosgroup.com                               1      3        1 SPECIALIST accounting services for property owners
+pkfsmithcooper.com                            1      3        1 SPECIALIST portfolio incorporation guidance
+propertyinvestortoday.co.uk                   1      3        1 NEWS      property portfolio tax planning
+rjp.co.uk                                     1      3        1 SPECIALIST ppr strategy property
+rolecatcher.com                               1      3        1 FOREIGN   are licensing fees tax deductible
+royalgreenwich.gov.uk                         1      3        1 GOV       hmo landlord tax planning
+scottfraser.co.uk                             1      3        1 SPECIALIST how to build a buy to let portfolio
+seamountbiz.co.uk                             1      3        1 FOREIGN   mtd deadline 2026
+section24.stevedoran.co.uk                    1      3        1 SPECIALIST section 24 calculator
+thefundedroom.com                             1      3        1 SPECIALIST trading property
+tkpg.co.uk                                    1      3        1 SPECIALIST tax-efficient property investment structure
+amshousinggroup.com                           1      4        1 SPECIALIST self assessment landlord
+asktaxguru.com                                1      4        1 FOREIGN   capital gains tax on gifts
+assesr.com                                    1      4        1 FOREIGN   property development tax planning
+auctions.propertysolvers.co.uk                1      4        1 SPECIALIST how to build a buy to let portfolio
+buildium.com                                  1      4        1 FOREIGN   what is property accounting
+careaccountancy.co.uk                         1      4        1 SPECIALIST property accountancy leeds
+cigmaaccounting.co.uk                         1      4        1 SPECIALIST uk rental income tax allowable expenses 2026
+comparetheaccountant.com                      1      4        1 SPECIALIST accountant for letting agents leicester
+cottonsgroup.com                              1      4        1 SPECIALIST property accountants northampton
+duxadvisory.co.uk                             1      4        1 SPECIALIST hmrc cgt reporting requirements 2026
+farrer.co.uk                                  1      4        1 SPECIALIST tax-efficient property investment structure
+fastercapital.com                             1      4        1 SPECIALIST yield vs roi
+foxdavidson.co.uk                             1      4        1 SPECIALIST uk sdlt rates for limited company buying residential pr
+glassdoor.com                                 1      4        1 SPECIALIST property accountant career
+goldentreeconsulting.co.uk                    1      4        1 SPECIALIST mtd deadline 2026
+handpickedaccountants.co.uk                   1      4        1 SPECIALIST accountants specialising in property swansea
+hoa.org.uk                                    1      4        1 SPECIALIST capital gains tax on property
+independent.co.uk                             1      4        1 SPECIALIST when does this change
+invoice-guru.co.uk                            1      4        1 SPECIALIST best field service software for uk mtd compliance 2026
+ired.com                                      1      4        1 SPECIALIST can a family investment company buy property
+jnp.co.uk                                     1      4        1 SPECIALIST overseas landlords
+jondaviesaccountants.co.uk                    1      4        1 SPECIALIST property accountants liverpool
+letsafeuk.co.uk                               1      4        1 SPECIALIST uk income tax rates on rental profit 2026
+mfbrokers.co.uk                               1      4        1 SPECIALIST portfolio incorporation guidance
+moneyfactscompare.co.uk                       1      4        1 SPECIALIST current uk limited company buy to let mortgage rates 20
+moneysupermarket.com                          1      4        1 SPECIALIST can you claim mortgage interest on rental property
+payprop.com                                   1      4        1 SPECIALIST income tax on landlord insurance claims
+pocketwise.co.uk                              1      4        1 SPECIALIST uk capital gains tax annual exempt amount 2026
+pprestates.com                                1      4        1 SPECIALIST ppr strategy property
+propertysuccessclub.co.uk                     1      4        1 SPECIALIST inheritance tax planning for landlords
+rapidformations.co.uk                         1      4        1 SPECIALIST special purpose vehicle property
+rentalrealestate.com                          1      4        1 SPECIALIST how to calculate rent income
+sandbaccountants.co.uk                        1      4        1 SPECIALIST best property accountants in london
+suryaandco.co.uk                              1      4        1 SPECIALIST buy to let accountant
+taxbriefsolo.com                              1      4        1 SPECIALIST are licensing fees tax deductible
+taxesforwriters.com                           1      4        1 SPECIALIST tax partners blog
+telegraph.co.uk                               1      4        1 NEWS      landlord tax rates
+theguardian.com                               1      4        1 NEWS      changes to cgt annual exemption 2027
+tiktok.com                                    1      4        1 SPECIALIST trading property
+titanwealthinternational.com                  1      4        1 SPECIALIST oversea landlord tax
+trinityfinance.co.uk                          1      4        1 SPECIALIST hmo landlord tax planning
+uk.linkedin.com                               1      4        1 SPECIALIST accountant for property in london
+yourwolverhamptonaccountants.co.uk            1      4        1 SPECIALIST property accountant wolverhampton
+accounting.uworld.com                         1      5        1 FOREIGN   are licensing fees tax deductible
+adeptmortgages.co.uk                          1      5        1 SPECIALIST current uk limited company buy to let mortgage rates 20
+advicenow.org.uk                              1      5        1 SPECIALIST capital gains tax uk property calculator
+atkinsaccountants.co.uk                       1      5        1 SPECIALIST accountants specialising in property swansea
+augustapp.com                                 1      5        1 SPECIALIST mtd software for landlords
+axtaccountants.com                            1      5        1 SPECIALIST property development tax planning
+bettermove.co.uk                              1      5        1 SPECIALIST landlord tax rates
+bnaconsulting.co.uk                           1      5        1 SPECIALIST mtd deadline 2026
+businessfinancing.co.uk                       1      5        1 SPECIALIST property accountant wolverhampton
+ccameron.co.uk                                1      5        1 SPECIALIST how to build a buy to let portfolio
+charlesrussellspeechlys.com                   1      5        1 SPECIALIST changes to cgt annual exemption 2027
+clangordon.co.uk                              1      5        1 SPECIALIST nrl tax
+clarkwell.co.uk                               1      5        1 SPECIALIST best property accountants in london
+drs-tax.com                                   1      5        1 FOREIGN   capital gains tax on gifts
+dsburge.co.uk                                 1      5        1 SPECIALIST rent tax credit ppr meaning
+elysium-law.com                               1      5        1 SPECIALIST portfolio incorporation guidance
+erpresearch.com                               1      5        1 SPECIALIST best field service software for uk mtd compliance 2026
+esdgaccountancy.com                           1      5        1 SPECIALIST buy to let accountant london
+goughquarters.co.uk                           1      5        1 SPECIALIST nrl1
+hraccountants.tax                             1      5        1 SPECIALIST accountant for property in london
+inews.co.uk                                   1      5        1 SPECIALIST stamp duty on property incorporation uk
+irishtimes.com                                1      5        1 SPECIALIST can a family investment company buy property
+kapitalre.co.uk                               1      5        1 SPECIALIST inheritance tax planning for landlords
+knowleswarwick.com                            1      5        1 SPECIALIST rental property tax accountant
+linepoetry.com                                1      5        1 SPECIALIST income tax on landlord insurance claims
+lithgow-perkins.co.uk                         1      5        1 SPECIALIST property tax partners
+ltaccounting.uk                               1      5        1 SPECIALIST self assessment landlord
+mikeharrisny.medium.com                       1      5        1 SPECIALIST trading property
+monetta.co.uk                                 1      5        1 SPECIALIST property accountants liverpool
+mymajors.com                                  1      5        1 SPECIALIST property accountant career
+nexa-accountants.co.uk                        1      5        1 SPECIALIST accountant for letting agents leicester
+oaknorth.co.uk                                1      5        1 SPECIALIST ppr strategy property
+osome.com                                     1      5        1 SPECIALIST accountants property tax
+propertywealthinsider.co.uk                   1      5        1 SPECIALIST portfolio landlord tax strategy
+raisin.com                                    1      5        1 SPECIALIST capital gains tax on property
+rentcalculator.org                            1      5        1 SPECIALIST how to calculate rent income
+residentialequitymgmt.com                     1      5        1 SPECIALIST accountant rental property cost
+rmg.co.uk                                     1      5        1 SPECIALIST when does this change
+samuelleeds.com                               1      5        1 SPECIALIST yield vs roi
+scottishlandlords.com                         1      5        1 SPECIALIST property tax accountant
+stampcalculator.co.uk                         1      5        1 SPECIALIST is there stamp duty on furnished holiday lettings
+taxconnections.com                            1      5        1 SPECIALIST tax partners blog
+theindependentlandlord.com                    1      5        1 SPECIALIST short term let mtd
+thepropertyaccountant.uk                      1      5        1 SPECIALIST accounting services for property owners
+truegazette.com                               1      5        1 SPECIALIST what is property accounting
+turbotax.intuit.ca                            1      5        1 SPECIALIST tax on rental property income
+landlordtaxhub.co.uk                          1      6        1 SPECIALIST inheritance tax planning for landlords
+threebestrated.co.uk                          1      6        1 SPECIALIST property accountant wolverhampton

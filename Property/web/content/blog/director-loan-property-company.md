@@ -14,9 +14,9 @@ summary: "Director loan accounts in property companies carry specific tax rules 
 schema: ""
 faqs:
   - question: "What happens if my director loan exceeds £10,000?"
-    answer: "If you owe your property company more than £10,000, the company must pay 33.75% tax on the loan amount. You'll also face a benefit in kind charge if the company charges below market interest rates. Both charges apply even if the loan is temporary."
+    answer: "If you owe your property company more than £10,000, the company must pay 35.75% tax on the loan amount. You'll also face a benefit in kind charge if the company charges below market interest rates. Both charges apply even if the loan is temporary."
   - question: "Can I borrow from my property company to buy personal properties?"
-    answer: "Yes, but this creates tax implications. The company pays 33.75% tax on loans over £10,000, and you'll have a benefit in kind charge. The arrangement must be properly documented and the loan should carry market rate interest to minimise tax charges."
+    answer: "Yes, but this creates tax implications. The company pays 35.75% tax on loans over £10,000, and you'll have a benefit in kind charge. The arrangement must be properly documented and the loan should carry market rate interest to minimise tax charges."
   - question: "How do I avoid accidentally borrowing from my property company?"
     answer: "Keep strict separation between personal and business finances. Don't use company cards for personal expenses, document all cash movements, and consider regular dividend declarations to keep your director loan account in credit rather than debit."
   - question: "What records do I need to keep for director loan accounts?"
@@ -46,7 +46,7 @@ faqs:
 
 <h3>When You Owe Money to the Company</h3>
 
-<p>If you borrow more than £10,000 from your property company, HMRC treats this as a taxable benefit. The company must pay 33.75% tax on the loan amount (Section 455 charge), recoverable when you repay.</p>
+<p>If you borrow more than £10,000 from your property company, HMRC treats this as a taxable benefit. The company must pay 35.75% tax on the loan amount (Section 455 charge), recoverable when you repay.</p>
 
 <p>You'll also face a benefit in kind charge. For 2025/26, this is calculated using the official rate of interest (currently 2.25%). If the company charges you less than this rate, you pay tax on the difference.</p>
 

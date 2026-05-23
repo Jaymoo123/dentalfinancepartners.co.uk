@@ -20,7 +20,7 @@ faqs:
   - question: "Can property companies claim mortgage interest relief without Section 24 restrictions?"
     answer: "Yes, property companies can deduct mortgage interest as a business expense without Section 24 restrictions. This provides a significant advantage over personal ownership, where mortgage interest relief is capped at 20% as a tax credit rather than a full deduction."
   - question: "What happens to profits retained in a property company?"
-    answer: "Retained profits in property companies face only corporation tax (19% or 25%) with no immediate personal tax charge. However, if profits are later distributed as dividends, shareholders pay dividend tax at 8.75%, 33.75%, or 39.35% depending on their income level."
+    answer: "Retained profits in property companies face only corporation tax (19% or 25%) with no immediate personal tax charge. However, if profits are later distributed as dividends, shareholders pay dividend tax at 10.75%, 35.75%, or 39.35% depending on their income level."
 ---
 
 <p>Property companies face corporation tax rates of 19% on small profits and 25% on larger profits in 2026/27. Understanding these <strong>corporation tax property companies 2026</strong> rates is crucial for landlords considering incorporation or managing existing property companies.</p>
@@ -53,7 +53,7 @@ faqs:
 <h2>Extracting Profits: Dividend Tax and Strategy</h2>
 <p>Property companies typically distribute profits as dividends, which carry additional tax implications for shareholders.</p>
 <h3>Dividend Tax Rates</h3>
-<p>For 2026/27, dividends face tax at 8.75% (basic rate), 33.75% (higher rate), or 39.35% (additional rate) after a £500 annual dividend allowance. This creates a combined tax cost when added to corporation tax. £50,000 company profit generates £40,500 after corporation tax (19%). If distributed as dividends to a higher-rate taxpayer, this creates additional tax of £13,669 (33.75% of £40,500), resulting in net income of £26,831.</p>
+<p>For 2026/27, dividends face tax at 10.75% (basic rate), 35.75% (higher rate), or 39.35% (additional rate) after a £500 annual dividend allowance. This creates a combined tax cost when added to corporation tax. £50,000 company profit generates £40,500 after corporation tax (19%). If distributed as dividends to a higher-rate taxpayer, this creates additional tax of £14,479 (35.75% of £40,500), resulting in net income of £26,021.</p>
 <h3>Retained Profits Strategy</h3>
 <p>Many property companies retain profits to avoid immediate dividend tax, using retained earnings to fund portfolio expansion or reduce borrowings. This strategy defers personal tax while building company equity. However, retained profits may face additional scrutiny under close company rules or benefit-in-kind regulations if used inappropriately.</p>
 

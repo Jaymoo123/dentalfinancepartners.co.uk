@@ -43,16 +43,16 @@ faqs:
 <p><strong>Example: Basic Rate Landlord with £30,000 annual rental profit</strong></p>
 <ul>
 <li><strong>Personal ownership (from April 2027):</strong> Property income tax: £30,000 × 22% = £6,600. After-tax income: £23,400.</li>
-<li><strong>Limited company ownership:</strong> Corporation tax: £30,000 × 19% = £5,700. Available for dividends: £24,300. Dividend tax (basic rate): £24,300 × 8.75% = £2,126. Total after-tax: £22,174.</li>
+<li><strong>Limited company ownership:</strong> Corporation tax: £30,000 × 19% = £5,700. Available for dividends: £24,300. Dividend tax (basic rate): £24,300 × 10.75% = £2,612. Total after-tax: £21,688.</li>
 </ul>
-<p>In this example, personal ownership actually provides £1,226 more after-tax income despite the higher property tax rate, due to dividend tax on company profits. However, this gap narrows significantly compared to current rules.</p>
+<p>In this example, personal ownership actually provides £1,712 more after-tax income despite the higher property tax rate, due to dividend tax on company profits. However, this gap narrows significantly compared to current rules.</p>
 <p>For higher rate taxpayers, the <strong>2027 tax rates incorporation decision</strong> becomes much clearer. The 42% property income rate versus 19% corporation tax creates substantial savings potential.</p>
 <p><strong>Example: Higher Rate Taxpayer with £50,000 rental profit</strong></p>
 <ul>
 <li><strong>Personal ownership (from April 2027):</strong> Property income tax: £50,000 × 42% = £21,000. After-tax income: £29,000.</li>
-<li><strong>Limited company ownership:</strong> Corporation tax: £50,000 × 19% = £9,500. Available for dividends: £40,500. Dividend tax (higher rate): £40,500 × 33.75% = £13,669. Total after-tax: £26,831.</li>
+<li><strong>Limited company ownership:</strong> Corporation tax: £50,000 × 19% = £9,500. Available for dividends: £40,500. Dividend tax (higher rate): £40,500 × 35.75% = £14,479. Total after-tax: £26,021.</li>
 </ul>
-<p>Even after dividend tax, the company structure saves £4,831 annually in this example. For larger portfolios, these savings multiply significantly.</p>
+<p>Even after dividend tax, the company structure saves £3,979 annually in this example. For larger portfolios, these savings multiply significantly.</p>
 
 <h2>Should You Incorporate Before 2027?</h2>
 

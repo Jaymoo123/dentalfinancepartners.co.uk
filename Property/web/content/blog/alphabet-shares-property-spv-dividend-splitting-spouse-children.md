@@ -141,17 +141,17 @@ editorialNote: "Income-tax mechanic for alphabet shares in a property SPV, ancho
 
 <p>An anonymised property SPV: Mark and Sarah, three buy-to-let properties in Manchester held in MS Property Ltd. Year-end 2026/27 distributable reserves £75,000. Mark is a higher-rate taxpayer with £80,000 of other income (consultancy work outside the SPV). Sarah is a part-time NHS nurse with £25,000 of salary income.</p>
 
-<p>Single-class structure (founder owns 100% of one ordinary class): Mark draws all £75,000 as dividends. The £500 dividend allowance covers the first slice, the next £42,270 fills his basic-rate band (which is exhausted by his other income, so this is taxed at 33.75%), and £32,230 falls into higher-rate dividend territory at 33.75%. Total dividend tax on Mark: roughly £25,160.</p>
+<p>Single-class structure (founder owns 100% of one ordinary class): Mark draws all £75,000 as dividends. The £500 dividend allowance covers the first slice, the next £42,270 fills his basic-rate band (which is exhausted by his other income, so this is taxed at 35.75%), and £32,230 falls into higher-rate dividend territory at 35.75%. Total dividend tax on Mark: roughly £26,650.</p>
 
-<p>Alphabet structure (50:50 split between Mark on A class and Sarah on B class): Mark draws £20,000 as A-class dividend. Sarah's basic-rate band (£50,270 less her £25,000 salary = £25,270 of remaining band) accommodates her £25,000 B-class dividend at 8.75%. Mark's £20,000 A-class dividend, on top of his £80,000 of other income, sits entirely in higher-rate at 33.75%.</p>
+<p>Alphabet structure (50:50 split between Mark on A class and Sarah on B class): Mark draws £20,000 as A-class dividend. Sarah's basic-rate band (£50,270 less her £25,000 salary = £25,270 of remaining band) accommodates her £25,000 B-class dividend at 10.75%. Mark's £20,000 A-class dividend, on top of his £80,000 of other income, sits entirely in higher-rate at 35.75%.</p>
 
 <ul>
-<li>Mark's tax: £20,000 × 33.75% = £6,750 (he loses the £500 allowance to his other dividend income).</li>
-<li>Sarah's tax: (£25,000 - £500 allowance) × 8.75% = £2,144.</li>
-<li>Total household dividend tax: £8,894.</li>
+<li>Mark's tax: £20,000 × 35.75% = £7,150 (he loses the £500 allowance to his other dividend income).</li>
+<li>Sarah's tax: (£25,000 - £500 allowance) × 10.75% = £2,634.</li>
+<li>Total household dividend tax: £9,784.</li>
 </ul>
 
-<p>The alphabet structure saves £25,160 - £8,894 = £16,266 of dividend tax in this single tax year compared to the single-class baseline. The saving compounds year on year while the income-band positions hold.</p>
+<p>The alphabet structure saves £26,650 - £9,784 = £16,866 of dividend tax in this single tax year compared to the single-class baseline. The saving compounds year on year while the income-band positions hold.</p>
 
 <h2>Adult children: where the spouse exception does NOT apply</h2>
 
@@ -169,13 +169,13 @@ editorialNote: "Income-tax mechanic for alphabet shares in a property SPV, ancho
 <p>Allocation: Mark £20,000 (A), Sarah £25,000 (B), Tom £30,000 (C). Total £75,000.</p>
 
 <ul>
-<li>Mark's tax: £20,000 × 33.75% = £6,750.</li>
-<li>Sarah's tax: (£25,000 - £500 allowance) × 8.75% = £2,144.</li>
-<li>Tom's tax: Tom has £14,000 of salary, so the first £-12,570 of his salary uses personal allowance, the next £1,430 is taxed at basic 20%. His £500 dividend allowance covers the first slice of his £30,000 dividend. The next £29,500 is taxed at 8.75% (he has £33,840 of basic-rate band remaining after salary). Tom's tax: £29,500 × 8.75% = £2,581.</li>
-<li>Total household dividend tax: £6,750 + £2,144 + £2,581 = £11,475.</li>
+<li>Mark's tax: £20,000 × 35.75% = £7,150.</li>
+<li>Sarah's tax: (£25,000 - £500 allowance) × 10.75% = £2,634.</li>
+<li>Tom's tax: Tom has £14,000 of salary, so the first £-12,570 of his salary uses personal allowance, the next £1,430 is taxed at basic 20%. His £500 dividend allowance covers the first slice of his £30,000 dividend. The next £29,500 is taxed at 10.75% (he has £33,840 of basic-rate band remaining after salary). Tom's tax: £29,500 × 10.75% = £3,171.</li>
+<li>Total household dividend tax: £7,150 + £2,634 + £3,171 = £12,955.</li>
 </ul>
 
-<p>Compared to the all-Mark single-class baseline of £25,160, the three-way alphabet saves £13,685. Note Tom's dividend cash must actually reach him and stay there; if Tom's £30,000 is paid into Mark and Sarah's joint account and used for household expenses, the arrangement collapses on the s.624 element-of-bounty test.</p>
+<p>Compared to the all-Mark single-class baseline of £26,650, the three-way alphabet saves £13,695. Note Tom's dividend cash must actually reach him and stay there; if Tom's £30,000 is paid into Mark and Sarah's joint account and used for household expenses, the arrangement collapses on the s.624 element-of-bounty test.</p>
 
 <h2>Minor children and the s.629 trap</h2>
 

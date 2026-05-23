@@ -6,7 +6,7 @@ date: "2026-05-23"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Salary vs Dividends Property SPV 2026/27: Marginal Rate"
-metaDescription: "Salary vs dividend for a property SPV in 2026/27: CT 19/25/26.5% taper, NI thresholds, dividend rates 8.75 to 39.35%, four worked profit bands."
+metaDescription: "Salary vs dividend for a property SPV in 2026/27: CT 19/25/26.5% taper, NI thresholds, dividend rates 10.75 to 39.35%, four worked profit bands."
 altText: "Tax forms with calculator and notebook on a marble desk, representing the marginal-rate analysis of salary versus dividend extraction for a property limited company"
 image: "https://images.pexels.com/photos/6863333/pexels-photo-6863333.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 imageCredit:
@@ -15,11 +15,11 @@ imageCredit:
   source: "Pexels"
   source_url: "https://www.pexels.com/photo/tax-documents-on-marble-table-6863333/"
 h1: "Salary vs Dividends for a Property SPV in 2026/27: Marginal-Rate Analysis by Profit Band"
-summary: "The salary-versus-dividend decision for a property SPV director runs through the 2026/27 marginal-rate stack: corporation tax at 19% small-profits rate up to £50,000 of profit, 26.5% effective rate in the £50,000 to £250,000 marginal-relief band, 25% main rate above £250,000; national insurance secondary threshold at £5,000 a year under the Hunt November 2022 reform; Employment Allowance excluded for sole-director SPVs; dividend allowance £500 with rates 8.75%, 33.75%, 39.35% across basic, higher and additional bands. This page works the comparison at four profit bands (£30,000, £50,000, £100,000, £125,000) with the single-director Employment-Allowance exclusion called out and the close investment-holding company carve-out (CTA 2010 s.18N) flagged where the SPV's tenant base differs from passive third-party tenants. The figures here verify the §21.4 framework but should be re-checked against gov.uk before any client decision. House position: no single optimum, the right mix is reader-specific."
+summary: "The salary-versus-dividend decision for a property SPV director runs through the 2026/27 marginal-rate stack: corporation tax at 19% small-profits rate up to £50,000 of profit, 26.5% effective rate in the £50,000 to £250,000 marginal-relief band, 25% main rate above £250,000; national insurance secondary threshold at £5,000 a year under the Hunt November 2022 reform; Employment Allowance excluded for sole-director SPVs; dividend allowance £500 with rates 10.75%, 35.75%, 39.35% across basic, higher and additional bands. This page works the comparison at four profit bands (£30,000, £50,000, £100,000, £125,000) with the single-director Employment-Allowance exclusion called out and the close investment-holding company carve-out (CTA 2010 s.18N) flagged where the SPV's tenant base differs from passive third-party tenants. The figures here verify the §21.4 framework but should be re-checked against gov.uk before any client decision. House position: no single optimum, the right mix is reader-specific."
 schema: ""
 faqs:
   - question: "What is the optimal salary for a single-director property SPV in 2026/27?"
-    answer: "For a single-director SPV that cannot access Employment Allowance (the standard sole-director case), the optimal salary is £5,000 a year. That is the secondary national insurance threshold under the Hunt November 2022 reform: no employer NI is payable below this level, no employee NI applies, and the salary is well within the personal allowance so no income tax bites. The salary is corporation-tax-deductible for the company. Pay below this level (for example £4,000) and you start losing the NI qualifying-year credit toward the state pension; pay above this level without Employment Allowance and the marginal cost rises sharply because employer NI at 13.8% adds to the cost of every additional pound. Multi-director SPVs that genuinely employ a second director may qualify for Employment Allowance and can support a higher salary up to £12,570; the sole-director exclusion is the limiting case for most BTL SPVs."
+    answer: "For a single-director SPV that cannot access Employment Allowance (the standard sole-director case), the optimal salary is £5,000 a year. That is the secondary national insurance threshold under the Hunt November 2022 reform: no employer NI is payable below this level, no employee NI applies, and the salary is well within the personal allowance so no income tax bites. The salary is corporation-tax-deductible for the company. Pay below this level (for example £4,000) and you start losing the NI qualifying-year credit toward the state pension; pay above this level without Employment Allowance and the marginal cost rises sharply because employer NI at 15% adds to the cost of every additional pound. Multi-director SPVs that genuinely employ a second director may qualify for Employment Allowance and can support a higher salary up to £12,570; the sole-director exclusion is the limiting case for most BTL SPVs."
   - question: "Why is Employment Allowance not available to a sole-director SPV?"
     answer: "The Employment Allowance rules in National Insurance Contributions Act 2014, as amended, explicitly exclude single-director companies where the director is the only paid employee. The policy intent is to deny the relief to one-person companies that have no genuine employment-cost burden. HMRC's National Insurance Manual at NIM06210 onwards covers the test. The exclusion does not apply to companies with at least one other paid employee in addition to the director, provided that other employee is genuinely employed and paid above the secondary threshold. For most BTL SPVs the director is the only paid employee and the exclusion applies. Spouses who hold shares but receive only dividends (not salary) are NOT employees for this test; they need to be on payroll above the secondary threshold to count."
   - question: "What corporation tax rate does my property SPV pay in 2026/27?"
@@ -27,11 +27,11 @@ faqs:
   - question: "How does the £50,000 to £250,000 marginal-relief band work in practice?"
     answer: "The marginal-relief formula is: corporation tax = profits × main rate - (upper limit - profits) × standard fraction. In 2026/27 (verify against gov.uk at write time), the standard fraction is 3/200, so for profits of £100,000 the calculation is: £100,000 × 25% - (£250,000 - £100,000) × 3/200 = £25,000 - £2,250 = £22,750. That is an effective rate of 22.75% on the £100,000. The marginal rate (the tax on the next pound of profit) is 26.5% throughout the band; the average rate is between 19% and 25% depending on where in the band you sit. Most BTL SPVs are in the £50,000 to £150,000 profit range, which is squarely in the marginal-relief band. Planning around the 26.5% marginal rate is the central CT-side decision."
   - question: "How are dividends taxed in 2026/27?"
-    answer: "Dividends paid out of post-corporation-tax profits are taxed at progressively higher rates depending on the recipient's total income. The £500 dividend allowance (2026/27) covers the first slice at 0%. After that, the basic-rate dividend rate is 8.75% (within the basic-rate income tax band, ie up to £50,270 of total income), the higher-rate dividend rate is 33.75% (in the higher-rate income tax band, £50,270 to £125,140), and the additional-rate dividend rate is 39.35% (above £125,140). There is no national insurance on dividends. The corporation tax paid by the company before the dividend is declared is NOT creditable to the dividend recipient (no tax credit like the old imputation system); the dividend tax is on the gross dividend received."
+    answer: "Dividends paid out of post-corporation-tax profits are taxed at progressively higher rates depending on the recipient's total income. The £500 dividend allowance (2026/27) covers the first slice at 0%. After that, the basic-rate dividend rate is 10.75% (within the basic-rate income tax band, ie up to £50,270 of total income), the higher-rate dividend rate is 35.75% (in the higher-rate income tax band, £50,270 to £125,140), and the additional-rate dividend rate is 39.35% (above £125,140). There is no national insurance on dividends. The corporation tax paid by the company before the dividend is declared is NOT creditable to the dividend recipient (no tax credit like the old imputation system); the dividend tax is on the gross dividend received."
   - question: "Does the dividend allowance apply to dividends from my own property company?"
     answer: "Yes. The £500 dividend allowance is a universal personal allowance against dividend income, regardless of whether the dividend comes from your own property company, a publicly listed company, or any other source. The allowance is the first £500 of dividends received in the tax year, taxed at 0%. The allowance has been progressively cut in recent years (from £5,000 in 2017/18 to £500 in 2024/25 onwards). Most directors take dividends well in excess of £500, so the allowance is a small but useful first slice. Where multiple shareholders hold the company (alphabet shares with spouse, adult children), each shareholder has their own dividend allowance applied to their own dividend income."
   - question: "What is the typical extraction mix for a single-director SPV with £100,000 of profit?"
-    answer: "A defensible default for a single-director SPV at £100,000 of profit before extraction is: salary £5,000 (NI secondary-threshold floor, no NI, no income tax), dividend up to the recipient's higher-rate threshold (typically £50,270 less the £5,000 salary = £45,270 of dividend at 8.75%, with £500 covered by the dividend allowance), and the remaining post-CT cash either taken as further dividend at 33.75% (if the founder needs cash) or left in retained earnings for the next property purchase / employer pension contribution. The total extraction at this level is approximately £50,270 gross with personal income tax cost of around £4,000 and an SPV corporation tax cost of around £23,000 on the £95,000 post-salary profit. The figures are illustrative; the optimum for any specific founder depends on their other personal income."
+    answer: "A defensible default for a single-director SPV at £100,000 of profit before extraction is: salary £5,000 (NI secondary-threshold floor, no NI, no income tax), dividend up to the recipient's higher-rate threshold (typically £50,270 less the £5,000 salary = £45,270 of dividend at 10.75%, with £500 covered by the dividend allowance), and the remaining post-CT cash either taken as further dividend at 35.75% (if the founder needs cash) or left in retained earnings for the next property purchase / employer pension contribution. The total extraction at this level is approximately £50,270 gross with personal income tax cost of around £4,000 and an SPV corporation tax cost of around £23,000 on the £95,000 post-salary profit. The figures are illustrative; the optimum for any specific founder depends on their other personal income."
   - question: "Should I take all my profit as dividend and skip the salary entirely?"
     answer: "Usually no, even at low profit levels. The £5,000 secondary-threshold salary protects your National Insurance qualifying-year record toward the new state pension. At a current state pension of around £230 a week (full new state pension level for 2026/27, verify against gov.uk), one qualifying year is worth approximately £305 a year of pension for life on reaching state pension age. The cost of the salary is zero (no NI, no income tax, deductible against CT, plus £950 CT saving at 19% on the £5,000 salary expense), so the salary is a net positive. The exception is where you already have 35 qualifying years from other employment; in that case the additional salary serves no NI purpose and you might skip it. Most founders should still run the salary even with full qualifying years, because the CT saving is real and the cost is zero."
   - question: "How do I handle the dividend allowance when I have a spouse-shareholder?"
@@ -53,7 +53,7 @@ reviewedAt: "2026-05-23"
 editorialNote: "The 2026/27 marginal-rate stack for a property SPV, worked from profits to net cash in the founder's pocket. Four profit-band worked examples (£30k, £50k, £100k, £125k) with the single-director Employment-Allowance exclusion and the CIHC carve-out flagged. Re-verify every figure against gov.uk before any client decision; the framework is locked, the rates are commodity."
 ---
 
-<p>The salary-versus-dividend question for a property SPV director is well-trodden territory in generic tax content. What changes in 2026/27 is the corporation tax structure (post-Hunt November 2022 reforms have bedded in, with the 19% small-profits rate, the 26.5% marginal-relief band, and the 25% main rate at the upper end) and the national insurance position (the £5,000 secondary threshold and the sole-director Employment Allowance exclusion). The dividend rates have been stable since 2022/23 at 8.75%, 33.75%, 39.35%, though the £500 dividend allowance has been progressively cut from £5,000 in 2017/18.</p>
+<p>The salary-versus-dividend question for a property SPV director is well-trodden territory in generic tax content. What changes in 2026/27 is the corporation tax structure (post-Hunt November 2022 reforms have bedded in, with the 19% small-profits rate, the 26.5% marginal-relief band, and the 25% main rate at the upper end), the national insurance position (the £5,000 secondary threshold and the sole-director Employment Allowance exclusion), and the dividend rate uplift from 6 April 2026 (basic 10.75%, higher 35.75%, additional 39.35%, up from 8.75% / 33.75% / 39.35% which held from 2022/23 through 2025/26). The £500 dividend allowance has been progressively cut from £5,000 in 2017/18.</p>
 
 <p>This page works the marginal-rate stack at four profit bands typical for property SPVs (£30,000, £50,000, £100,000, £125,000), tracks the cash from gross profit through corporation tax and then through the personal-side extraction layer, and identifies the right strand mix at each band. It does not re-walk the underlying director's loan account mechanic (covered in our <a href="/blog/incorporation-and-company-structures/btl-spv-directors-loan-repayment-strategy-tax-efficient-extraction">DLA repayment strategy page</a>) or the rent-to-own-company variant (covered in our <a href="/blog/incorporation-and-company-structures/charging-market-rent-to-own-property-company-tax-treatment">connected-party rent page</a>). Every figure on this page should be re-checked against the current gov.uk publications before any client decision; the framework is locked but the precise rates are commodity and may shift via Budget or Spring Statement.</p>
 
@@ -74,7 +74,7 @@ editorialNote: "The 2026/27 marginal-rate stack for a property SPV, worked from 
 <ul>
 <li>Primary threshold (employee NI) £12,570 a year (2026/27, verify against gov.uk).</li>
 <li>Secondary threshold (employer NI) £5,000 a year per the Hunt November 2022 reform.</li>
-<li>Employer NI rate 13.8% above the secondary threshold.</li>
+<li>Employer NI rate 15% above the secondary threshold.</li>
 <li>Employee NI rate 8% in the basic-rate band, 2% above the higher-rate threshold.</li>
 <li>Employment Allowance £10,500 a year for qualifying companies; sole-director SPVs are explicitly excluded.</li>
 </ul>
@@ -83,8 +83,8 @@ editorialNote: "The 2026/27 marginal-rate stack for a property SPV, worked from 
 
 <ul>
 <li>£500 dividend allowance per shareholder, taxed at 0%.</li>
-<li>8.75% basic-rate dividend rate up to £50,270 of total income.</li>
-<li>33.75% higher-rate dividend rate from £50,270 to £125,140.</li>
+<li>10.75% basic-rate dividend rate up to £50,270 of total income.</li>
+<li>35.75% higher-rate dividend rate from £50,270 to £125,140.</li>
 <li>39.35% additional-rate dividend rate above £125,140.</li>
 </ul>
 
@@ -103,8 +103,8 @@ editorialNote: "The 2026/27 marginal-rate stack for a property SPV, worked from 
 
 <ul>
 <li>Salary £5,000 (NI secondary-threshold floor), no NI, no income tax, deductible against CT.</li>
-<li>Dividend up to the recipient's higher-rate threshold (£50,270 less salary), taxed at 8.75% with £500 allowance.</li>
-<li>Further extraction above the basic-rate band considered case by case (further dividend at 33.75%, employer pension contribution, retained earnings for reinvestment).</li>
+<li>Dividend up to the recipient's higher-rate threshold (£50,270 less salary), taxed at 10.75% with £500 allowance.</li>
+<li>Further extraction above the basic-rate band considered case by case (further dividend at 35.75%, employer pension contribution, retained earnings for reinvestment).</li>
 </ul>
 
 <p>The default flexes with two variables: total personal income from other sources (which moves the basic-rate-threshold cap), and the SPV's profit level (which sets the underlying CT rate the extraction is built on top of). The worked examples below trace these interactions.</p>
@@ -127,10 +127,10 @@ editorialNote: "The 2026/27 marginal-rate stack for a property SPV, worked from 
 
 <ul>
 <li>Salary £5,000 within personal allowance, no income tax.</li>
-<li>Dividend £20,250: first £500 at 0% (dividend allowance), remaining £19,750. Founder still has £7,070 of personal allowance unused (PA £12,570 less £5,000 salary), so £7,070 of dividend is covered by PA at 0%, then the next £12,680 sits within the basic-rate band at 8.75% = £1,109.</li>
+<li>Dividend £20,250: first £500 at 0% (dividend allowance), remaining £19,750. Founder still has £7,070 of personal allowance unused (PA £12,570 less £5,000 salary), so £7,070 of dividend is covered by PA at 0%, then the next £12,680 sits within the basic-rate band at 10.75% = £1,363.</li>
 </ul>
 
-<p>Personal income tax bill: £1,109. SPV corporation tax bill: £4,750. Total tax on £30,000 of SPV profit: £5,859. Founder net cash: £30,000 - £5,859 = £24,141 (effective tax rate 19.5%).</p>
+<p>Personal income tax bill: £1,363. SPV corporation tax bill: £4,750. Total tax on £30,000 of SPV profit: £6,113. Founder net cash: £30,000 - £6,113 = £23,887 (effective tax rate 20.4%).</p>
 
 <h3>Observations</h3>
 
@@ -154,10 +154,10 @@ editorialNote: "The 2026/27 marginal-rate stack for a property SPV, worked from 
 
 <ul>
 <li>Salary £5,000 within PA, no income tax.</li>
-<li>Dividend £36,450: £500 allowance, then £7,070 of PA at 0%, then £28,880 in the basic-rate band at 8.75% = £2,527.</li>
+<li>Dividend £36,450: £500 allowance, then £7,070 of PA at 0%, then £28,880 in the basic-rate band at 10.75% = £3,105.</li>
 </ul>
 
-<p>Personal income tax: £2,527. SPV CT: £8,550. Total tax: £11,077. Founder net cash: £38,923 (effective tax rate 22.2%).</p>
+<p>Personal income tax: £3,105. SPV CT: £8,550. Total tax: £11,655. Founder net cash: £38,345 (effective tax rate 23.3%).</p>
 
 <h3>Observations</h3>
 
@@ -181,10 +181,10 @@ editorialNote: "The 2026/27 marginal-rate stack for a property SPV, worked from 
 
 <ul>
 <li>Salary £5,000 within PA.</li>
-<li>Dividend £73,575: £500 allowance, £7,070 within PA, then £37,700 within basic-rate band at 8.75% = £3,299, then £28,305 within higher-rate band at 33.75% = £9,553.</li>
+<li>Dividend £73,575: £500 allowance, £7,070 within PA, then £37,700 within basic-rate band at 10.75% = £4,053, then £28,305 within higher-rate band at 35.75% = £10,119.</li>
 </ul>
 
-<p>Personal income tax: £3,299 + £9,553 = £12,852. SPV CT: £21,425. Total tax: £34,277. Founder net cash: £65,723 (effective tax rate 34.3%).</p>
+<p>Personal income tax: £4,053 + £10,119 = £14,172. SPV CT: £21,425. Total tax: £35,597. Founder net cash: £64,403 (effective tax rate 35.6%).</p>
 
 <h3>Alternative: layer in employer pension contribution</h3>
 
@@ -196,10 +196,10 @@ editorialNote: "The 2026/27 marginal-rate stack for a property SPV, worked from 
 
 <ul>
 <li>Salary £5,000 within PA.</li>
-<li>Dividend £58,875: £500 allowance, £7,070 within PA, then £37,700 within basic-rate band at 8.75% = £3,299, then £13,605 within higher-rate band at 33.75% = £4,592.</li>
+<li>Dividend £58,875: £500 allowance, £7,070 within PA, then £37,700 within basic-rate band at 10.75% = £4,053, then £13,605 within higher-rate band at 35.75% = £4,864.</li>
 </ul>
 
-<p>Personal income tax: £3,299 + £4,592 = £7,891. SPV CT: £16,125. Total current-year tax: £24,016. Founder net cash now: £58,875 + £20,000 of pension contribution growing tax-free = £58,875 spendable now plus £20,000 of deferred pension wealth. Total household value: £78,875 vs £65,723 in the no-pension version, an improvement of £13,152 at this profit level.</p>
+<p>Personal income tax: £4,053 + £4,864 = £8,917. SPV CT: £16,125. Total current-year tax: £25,042. Founder net cash now: £58,875 + £20,000 of pension contribution growing tax-free = £58,875 spendable now plus £20,000 of deferred pension wealth. Total household value: £78,875 vs £64,403 in the no-pension version, an improvement of £14,472 at this profit level.</p>
 
 <h3>Observations</h3>
 
@@ -223,10 +223,10 @@ editorialNote: "The 2026/27 marginal-rate stack for a property SPV, worked from 
 
 <ul>
 <li>Salary £5,000 within PA.</li>
-<li>Dividend £91,950: £500 allowance, £7,070 within PA, then £37,700 within basic-rate band at 8.75% = £3,299, then £46,680 within higher-rate band at 33.75% = £15,754.</li>
+<li>Dividend £91,950: £500 allowance, £7,070 within PA, then £37,700 within basic-rate band at 10.75% = £4,053, then £46,680 within higher-rate band at 35.75% = £16,688.</li>
 </ul>
 
-<p>Personal income tax: £19,053. SPV CT: £28,050. Total tax: £47,103. Founder net cash: £77,897 (effective tax rate 37.7%).</p>
+<p>Personal income tax: £20,741. SPV CT: £28,050. Total tax: £48,791. Founder net cash: £76,209 (effective tax rate 39.0%).</p>
 
 <h3>Personal allowance taper consideration</h3>
 
@@ -234,7 +234,7 @@ editorialNote: "The 2026/27 marginal-rate stack for a property SPV, worked from 
 
 <h3>Observations</h3>
 
-<p>At £125,000 of profit and above, layering in employer pension contributions becomes a near-universal recommendation. The combined CT plus dividend tax saving per £1,000 of contribution rises with the dividend band the founder is in, peaking where the contribution moves the founder from the additional-rate dividend band (39.35%) back into the higher-rate band (33.75%). For founders approaching age 55 to 57, the pension liquidity constraint disappears, making the calculus even more favourable.</p>
+<p>At £125,000 of profit and above, layering in employer pension contributions becomes a near-universal recommendation. The combined CT plus dividend tax saving per £1,000 of contribution rises with the dividend band the founder is in, peaking where the contribution moves the founder from the additional-rate dividend band (39.35%) back into the higher-rate band (35.75%). For founders approaching age 55 to 57, the pension liquidity constraint disappears, making the calculus even more favourable.</p>
 
 <aside>
 <p>The single-director Employment Allowance exclusion is the most consequential personal-side rule for property SPVs.</p>

@@ -41,7 +41,7 @@ imageCredit:
 <p>You can deduct allowable expenses such as letting agent fees, repairs, insurance, and mortgage interest (subject to Section 24 restrictions) before calculating your taxable profit. For a detailed list of what you can claim, see our guide on <a href="/blog/section-24-and-tax-relief/landlord-tax-deductions-uk-2026-complete-list">landlord tax deductions</a>.</p>
 
 <h2>How Is Income from Stocks and Shares Taxed?</h2>
-<p>Income from stocks and shares typically comes in two forms: dividends and interest. Dividends are taxed at 8.75% (basic), 33.75% (higher), and 39.35% (additional) for the 2025/26 tax year, with a £500 dividend allowance <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. Interest from bonds or savings accounts is taxed at your marginal income tax rate, but the personal savings allowance (£1,000 for basic rate, £500 for higher rate) can reduce the tax bill.</p>
+<p>Income from stocks and shares typically comes in two forms: dividends and interest. Dividends are taxed at 10.75% (basic), 35.75% (higher), and 39.35% (additional) for the 2026/27 tax year, with a £500 dividend allowance <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. Interest from bonds or savings accounts is taxed at your marginal income tax rate, but the personal savings allowance (£1,000 for basic rate, £500 for higher rate) can reduce the tax bill.</p>
 <p>Critically, investments held within an Individual Savings Account (ISA) are completely tax-free on both income and capital gains. This is a significant advantage over property, where no equivalent tax wrapper exists for rental income.</p>
 
 <h2>Capital Gains Tax: Property vs Shares</h2>
@@ -72,7 +72,7 @@ imageCredit:
 
 <h2>Practical Example: Comparing Tax Bills</h2>
 <p>Consider a landlord with a BTL property generating £20,000 in rental income and £10,000 in mortgage interest. Under current rules (2025/26), after Section 24, their taxable profit is £20,000 (no interest deduction), and they receive a 20% tax credit on the £10,000 interest (£2,000). If they are a higher-rate taxpayer, they owe 40% on £20,000 (£8,000) minus the £2,000 credit = £6,000 tax.</p>
-<p>Now consider an investor with £20,000 in dividends from shares. With the £500 dividend allowance, taxable dividends are £19,500. At the higher rate (33.75%), the tax is approximately £6,581. However, if those shares are held in an ISA, the tax is £0. The ISA advantage is clear.</p>
+<p>Now consider an investor with £20,000 in dividends from shares. With the £500 dividend allowance, taxable dividends are £19,500. At the higher rate (35.75%), the tax is approximately £6,971. However, if those shares are held in an ISA, the tax is £0. The ISA advantage is clear.</p>
 
 <h2>Which Investment Is More Tax-Efficient?</h2>
 <p>For most individual investors, stocks and shares held within an ISA are significantly more tax-efficient than direct property investment. The ability to shelter both income and gains from tax, combined with lower CGT rates on shares, makes equities attractive. However, property offers tangible assets, potential for capital appreciation, and the ability to use mortgage borrowing to amplify returns, albeit with higher tax costs due to Section 24.</p>
@@ -81,7 +81,7 @@ imageCredit:
 <h2>Key Takeaways</h2>
 <ul>
 <li>Rental income is taxed at your marginal rate until April 2027, then at separate property income rates (22%/42%/47%).</li>
-<li>Dividend income is taxed at lower rates (8.75%/33.75%/39.35%) and benefits from a £500 allowance.</li>
+<li>Dividend income is taxed at lower rates (10.75%/35.75%/39.35%) and benefits from a £500 allowance.</li>
 <li>CGT on property is 18%/24%, while CGT on shares is 10%/20%.</li>
 <li>ISAs offer complete tax shelter for shares; no equivalent exists for rental property.</li>
 <li>Section 24 restricts mortgage interest relief for individual landlords, making property less tax-efficient than before.</li>

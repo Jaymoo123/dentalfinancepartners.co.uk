@@ -6,7 +6,7 @@ date: "2026-03-29"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Property Company Profit: Salary vs Dividends"
-metaDescription: "Salary up to £12,570 is tax-free; dividends above £1,000 face 8.75-39.35% tax. Optimal extraction strategy for property companies."
+metaDescription: "Salary up to £12,570 is tax-free; dividends above £500 face 10.75-39.35% tax. Optimal extraction strategy for property companies."
 altText: "UK property investor reviewing financial documents showing salary and dividend options for property company profit extraction"
 image: ""
 h1: "Property Company Profit Extraction: Salary vs Dividends"
@@ -18,7 +18,7 @@ faqs:
   - question: "Can my spouse receive dividends from our property company?"
     answer: "Yes, if your spouse is a genuine shareholder in the property company, they can receive dividends proportionate to their shareholding. This can be tax-efficient if they have unused personal allowance or basic rate band capacity. However, the shareholding must be genuine, and dividends must be paid in proportion to share ownership to comply with tax rules."
   - question: "How do dividend tax rates compare to salary for higher rate taxpayers?"
-    answer: "Higher rate taxpayers pay 33.75% dividend tax compared to 40% income tax on salary. However, dividends come from post-corporation tax profits, so the effective rate is higher. Additionally, dividends don't attract National Insurance. For higher rate taxpayers, the optimal mix typically involves minimal salary and dividend extraction, but professional advice is essential for accurate calculations."
+    answer: "Higher rate taxpayers pay 35.75% dividend tax compared to 40% income tax on salary. However, dividends come from post-corporation tax profits, so the effective rate is higher. Additionally, dividends don't attract National Insurance. For higher rate taxpayers, the optimal mix typically involves minimal salary and dividend extraction, but professional advice is essential for accurate calculations."
 ---
 
 <p>Once you've incorporated your property business, the next critical decision is how to extract profits from your company. The two main options are taking a salary or paying dividends, each with different tax implications that can significantly impact your net income.</p>
@@ -42,7 +42,7 @@ faqs:
 <ul>
 <li><strong>Income tax:</strong> 0% up to £12,570, 20% on £12,571-£50,270, 40% on £50,271-£125,140</li>
 <li><strong>Employee National Insurance:</strong> 8% on earnings between £12,570-£50,270, then 2%</li>
-<li><strong>Employer National Insurance:</strong> 13.8% on earnings above £9,100 (paid by your company)</li>
+<li><strong>Employer National Insurance:</strong> 15% on earnings above £5,000 (paid by your company)</li>
 </ul>
 <p>The sweet spot for many property company directors is setting salary at the National Insurance threshold (£12,570 for 2025/26). This preserves your National Insurance record for state pension purposes while minimising tax costs.</p>
 
@@ -73,7 +73,7 @@ faqs:
 
 <p>Several factors influence whether salary or dividends work better for your situation:</p>
 <h3>Other Income Sources</h3>
-<p>If you have other employment or rental income outside the company, this pushes you into higher tax brackets. Higher rate taxpayers face 33.75% dividend tax, making salary extraction less attractive.</p>
+<p>If you have other employment or rental income outside the company, this pushes you into higher tax brackets. Higher rate taxpayers face 35.75% dividend tax, making salary extraction less attractive.</p>
 <h3>Spouse's Income</h3>
 <p>If your spouse has little or no other income, paying them dividends can utilise their personal allowance and basic rate band. However, they must be a genuine shareholder receiving dividends in proportion to their shareholding.</p>
 <h3>Pension Contributions</h3>
@@ -87,7 +87,7 @@ faqs:
 <h3>Start with Optimal Salary Level</h3>
 <p>Set your salary at the National Insurance threshold (£12,570 for 2025/26) to preserve your NI record while minimising tax costs. Consider higher salary levels if you need pension contribution capacity.</p>
 <h3>Use Dividend Capacity</h3>
-<p>Extract additional funds through dividends, using your £1,000 allowance and staying within the basic rate band where possible.</p>
+<p>Extract additional funds through dividends, using your £500 allowance and staying within the basic rate band where possible.</p>
 <h3>Consider Timing</h3>
 <p>Dividend timing offers flexibility. You can declare dividends in one tax year but pay them in the next, helping manage your overall tax position across different years.</p>
 

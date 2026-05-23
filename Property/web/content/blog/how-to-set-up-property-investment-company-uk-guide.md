@@ -57,7 +57,7 @@ faqs:
 <p>You can extract profits from your property company through:</p>
 <ul>
 <li><strong>Salary:</strong> Subject to PAYE and National Insurance (employer and employee contributions)</li>
-<li><strong>Dividends:</strong> No National Insurance but subject to dividend tax (8.75% basic rate, 33.75% higher rate, 39.35% additional rate)</li>
+<li><strong>Dividends:</strong> No National Insurance but subject to dividend tax (10.75% basic rate, 35.75% higher rate, 39.35% additional rate)</li>
 <li><strong>Pension contributions:</strong> Tax-efficient way to extract funds for retirement</li>
 </ul>
 <p>From April 2027, remember that property income for individuals will be taxed at higher rates (22%/42%/47%), making company structures even more attractive for higher-rate taxpayers.</p>
