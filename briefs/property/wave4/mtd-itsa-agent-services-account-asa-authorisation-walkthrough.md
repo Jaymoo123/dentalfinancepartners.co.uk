@@ -174,34 +174,58 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `mtd-itsa-agent-services-account-asa-authorisation-walkthrough` (no override).
+- **Final category:** `Making Tax Digital (MTD)` (no override).
+- **H1 chosen:** "Authorising Your Accountant for MTD ITSA: The Agent Services Account Walkthrough".
+- **Meta title chosen:** "MTD ITSA Agent Services Account: Landlord Walkthrough" (53 chars).
+- **Why these vs other options:** H1 leads on the action ("Authorising Your Accountant") rather than the acronym; the acronym ASA is in the subtitle. Meta title prioritises "MTD ITSA Agent Services Account" (the search-stem) + "Landlord Walkthrough" (the landlord-side angle). Avoids "how to" pattern duplication with the existing `how-to-register-mtd-landlord-step-by-step-guide` page.
+- **HowTo schema candidate:** Flagged. The page has a clear 5-step procedural backbone (handshake at a glance + step-by-step from Steps 1-5). Orchestrator should assess whether to enable HowTo schema in the template (NOT in body).
 
 ### Competitor URLs fetched
+- gov.uk ASA registration page — extracted accountant-side prerequisites (UTR, AML supervision, Government Gateway credentials), accountant-side step list. Useful for the brief Step 1 section that walks what the accountant does.
+- gov.uk sign-up-your-client for MTD ITSA — extracted agent-led flow framing. Confirmed gov.uk does NOT cover authorisation-email failure modes, Government Gateway approval-screen specifics, or rejection consequences (this is exactly the gap the brief flags; B3 fills it).
+- (Three ukpropertyaccountants.co.uk URLs in brief skipped after the two gov.uk fetches. Reason: gov.uk gives the authoritative procedural backbone; the competitor URLs would add commercial-bias colour without contributing facts the brief differentiator depends on. Anti-templating concern about leaning on a single competitor's framing also weighed.)
 
 ### Existing-page review (from "Closest existing pages")
+- `mtd-itsa-letter-from-hmrc-what-to-do-next` (Wave 3 B6) — adjacent action page on a different MTD onboarding moment. Cross-linked. B3 sits one step downstream (you've verified the letter, you've decided to engage an accountant, now you need to authorise them).
+- `how-to-register-mtd-landlord-step-by-step-guide` — landlord SELF-registration page. Distinct from B3 (which covers the agent-route authorisation). Cross-linked as the alternative path for self-filing landlords; B3 explicitly differentiates by handling the agent-route.
+- `mtd-itsa-overview-six-changes-residential-landlords` (Wave 3 B8) — overview sibling. Cross-linked as the regime-shape page.
+- `mtd-itsa-jointly-owned-property-threshold-split` (Wave 3 B3, threshold) — referenced indirectly via B1 cross-link; not directly linked from B3 to avoid stacking joint-owner references.
 
 ### Citations added (external authority)
+- HMRC ASA registration page (https://www.gov.uk/guidance/get-an-hmrc-agent-services-account) — cited once in body as the authoritative ASA setup reference.
+- (House position §19.10 referenced implicitly throughout via the per-spouse authorisation rule and the no-transfer rule. Did not surface §19.10 by name in body content; the house position is the internal tie-breaker, not a cite-worthy external authority for readers.)
+- Deliberately light on external citations beyond gov.uk; the page is procedural and a heavy citation load would dilute the step-by-step flow.
 
 ### Internal links added (to our existing pages)
+- `/blog/making-tax-digital-mtd/mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse` (B1) ×2
+- `/blog/making-tax-digital-mtd/how-to-register-mtd-landlord-step-by-step-guide` ×2
+- `/blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords` (Wave 3 B8) ×1
+- `/blog/making-tax-digital-mtd/mtd-itsa-letter-from-hmrc-what-to-do-next` (Wave 3 B6) ×1
+- `/blog/making-tax-digital-mtd/mtd-itsa-choosing-software-by-landlord-scenario-decision-tree` (B2) ×1
+- `/blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords` ×1
+- 6 unique target files; all exist (4 on main + B1 + B2 on branch); URL category segments verified.
 
 ### Inline CTA placements
+- `<aside>` 1: after the Step 2 failure-mode list (email not arriving) — high-intent moment for landlord who needs hand-holding through HMRC infrastructure.
+- `<aside>` 2: after the "changing accountants: revoke + re-authorise" section — high-intent moment for accountant-switching landlords.
+- 2 asides total (under the ≤3 limit). One less than B1/B2; the procedural step-by-step flow does not have as many natural CTA moments without disrupting the walkthrough.
 
 ### Build attempts
+- Single build attempt; passed clean. B3 rendered to `.next/server/app/blog/making-tax-digital-mtd/mtd-itsa-agent-services-account-asa-authorisation-walkthrough.html`.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 12 Question entries in 1 FAQPage block = frontmatter 12 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 53 (max 62) ✓
+- Meta description length: 153 (max 158) ✓
+- Internal links resolve: 6/6 unique target files exist; URL category segments verified ✓
+- monitored_pages row inserted: yes (rewrite_type='rewrite', 90-day window, notes "Wave 4 Session B net-new (MTD ITSA bucket B3)")
+- Body word count: 2,554 (mid 2,500-3,500 range; procedural page doesn't need padding past natural step-list length)
 
 ### Flags raised to wave4_site_wide_flags.md
+- None raised. HowTo schema candidacy flagged in the work-log above; orchestrator decision, not a site-wide flag.
 
 ### 2-3 sentence summary
+Landlord-side walkthrough of the Agent Services Account authorisation flow for MTD ITSA, covering the 5-step handshake (accountant requests → email → Government Gateway → approve → both sides verify), the joint-owner separate-authorisation rule, three failure modes the gov.uk guidance glosses over (email-address mismatch, partially-completed Government Gateway profile, in-flight 14-day expiry), the accountant-change revoke-and-re-authorise pattern, and the in-flight cessation case where the agent firm dissolves. HowTo schema candidate. Anti-templating boundary held: cross-links B1 (joint-owner cycles), B2 (software framework), Wave 3 B6 (HMRC letter), and the landlord-self-registration sibling, without re-walking any of their content.
