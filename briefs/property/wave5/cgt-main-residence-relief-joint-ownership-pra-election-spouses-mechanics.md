@@ -152,7 +152,79 @@ When you append a STATUS open question, spawn a Monitor task. Keep working while
 
 ---
 
-## Per-page work-log (fill in as you go)
+## Per-page work-log
+
+### Decisions
+- **Final slug:** cgt-main-residence-relief-joint-ownership-pra-election-spouses-mechanics (as briefed)
+- **Final category:** capital-gains-tax (as briefed)
+- **H1 chosen:** "Private Residence Relief and Joint Ownership: The Spousal Election and the One-Residence Rule"
+- **Meta title chosen:** "PRR on Joint-Owned Property: Spouses' Election and Rules" (56 chars)
+- **Why these vs other options:** Lead H1 with "Private Residence Relief" (the named relief that competitor pages search for) + "Joint Ownership" + the two structural rules that distinguish the page (the s.222(5) election + s.222(6) one-residence rule). MetaTitle compresses to "PRR" to stay under 62.
+
+### Competitor URLs fetched / not fetched
+- alexander-ene.co.uk URLs: NOT fetched per F-5 URL_ROT pattern (forward note from C5).
+- ukpropertyaccountants.co.uk + uklandlordtax.co.uk: previously fetched in C1; same coverage already absorbed.
+- HMRC HS283 helpsheet: confirmed at write time as the authority source.
+
+### Existing-page review
+- cgt-property-transfer-spouse (existing on main): re-read; C7 forward-links as the s.58 inter-spouse mechanic.
+- cgt-main-residence-election-two-properties (existing on main): forward-link from the s.222(5) section as the deeper election-applied page.
+- principal-private-residence-relief-landlords (existing on main): forward-link as the PRR pillar.
+- ppr-relief-calculation-former-home-step-by-step (existing on main): forward-link from the worked example.
+- C1 (same branch): forward-link from the Form 17 / PRR section as the Form 17 mechanic page.
+- C6 (same branch): forward-link from the unmarried-co-owner section.
+- C3 (same branch): forward-link from the s.58 base-cost shift section as the declaration of trust mechanic.
+
+### Citations added
+- TCGA 1992 s.222: https://www.legislation.gov.uk/ukpga/1992/12/section/222
+- TCGA 1992 s.223: https://www.legislation.gov.uk/ukpga/1992/12/section/223
+- TCGA 1992 s.58: https://www.legislation.gov.uk/ukpga/1992/12/section/58
+- TCGA 1992 s.225B: https://www.legislation.gov.uk/ukpga/1992/12/section/225B
+- HMRC CG64485 (s.222(5) election): https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg64485
+
+### Internal links added
+- /blog/capital-gains-tax/principal-private-residence-relief-landlords
+- /blog/capital-gains-tax/cgt-main-residence-election-two-properties
+- /blog/capital-gains-tax/ppr-relief-calculation-former-home-step-by-step
+- /blog/capital-gains-tax/cgt-property-transfer-spouse
+- /blog/landlord-tax-essentials/form-17-declaration-beneficial-interest-property-mechanics-filing-revocation (C1)
+- /blog/landlord-tax-essentials/declaration-of-trust-property-beneficial-ownership-mechanics-evidence-form-17 (C3)
+- /blog/landlord-tax-essentials/unmarried-co-owners-property-tax-rental-income-split-actual-beneficial-share (C6)
+
+### Inline CTA placements
+- After the s.222(6) section / before Hartley + Singh worked example (high-intent for couples considering an s.222(5) nomination)
+- After the s.58 base-cost shift section (high-intent for disposal planning)
+- Total asides: 2 (under the 3 max; chose 2 not 3 because the page is dense with mechanics and adding a third would compete with the FAQ-conversion path)
+
+### Verification
+- em-dash count: 0
+- en-dash count: 0
+- Tailwind class= in body: 0
+- metaTitle: 56 / 62
+- metaDescription: 151 / 158
+- FAQs: 14 / 10-14
+- Body words: 2,611 / 2,500-3,500 (extended s.225B section by ~150 words to clear the 2,500 floor)
+- External authority links: 5 (within 5-8)
+- Internal links: 7 of 7 resolve
+- monitored_pages registered: id 204
+
+### Per-write verification (§16.35)
+- TCGA 1992 s.222(5) (2-year window + joint-signing for couples): verified against legislation.gov.uk at write time on 2026-05-23.
+- TCGA 1992 s.222(6) (one-residence-per-couple "so long as living together"): verified against legislation.gov.uk at write time on 2026-05-23.
+- CGT residential rates 18% / 24% for 2026/27: verified against gov.uk at write time (higher rate reduced from 28% to 24% with effect from 6 April 2024).
+- CGT annual exempt amount £3,000 for 2026/27: confirmed against gov.uk at write time.
+- Final-9-months PRR deeming under s.223(2)(a): verified.
+- Letting relief abolished from 6 April 2020 except shared occupation: verified against gov.uk at write time.
+- FA (No. 2) 2023 s.225B widening (6 April 2023 in-force date): consistent with the prior s.58 verification from C5.
+
+### Build attempts
+- Attempt 1: PASS. 448 static pages built. No build warnings.
+
+### Flags raised
+- None.
+
+### 2-3 sentence summary
+C7 is the PRR-on-joint-ownership applied page. Threads the per-owner relief computation, the s.222(5) election + 2-year window + joint signature rule, the s.222(6) one-residence-per-couple rule (and the unmarried-co-owner contrast), the Form 17 / PRR independence, the s.58 inter-spouse base-cost shift route, and the s.225B post-separation extension widened by Finance (No. 2) 2023. Hartley + Singh worked example walks the £950k joint disposal with 5-yr letting interlude including the post-2020 abolition of letting relief.
 
 ### Decisions
 - **Final slug:**
