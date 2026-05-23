@@ -156,46 +156,72 @@ When you append a STATUS open question, spawn a Monitor task watching for STATUS
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Meta description chosen:**
-- **Why these vs other options:**
+- **Final slug:** vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method (unchanged)
+- **Final category:** Landlord Tax Essentials
+- **H1 chosen:** VAT Partial Exemption for Mixed-Portfolio Landlords: Standard Method Mechanic
+- **Meta title chosen:** "Partial Exemption for Mixed-Portfolio Landlords UK 2026" (55 chars)
+- **Meta description chosen:** "Partial exemption for UK mixed-portfolio landlords: standard method attribution, £625 de-minimis test, annual adjustment, when to apply for a special method." (157 chars)
+- **Why these vs other options:** Title leads with "Partial Exemption" + "Mixed-Portfolio Landlords" (segment-specific intent rather than generic). Meta description packs the four operational depth points (attribution, £625 de-minimis, annual adjustment, special method) which are the canonical secondary queries.
 
 ### Competitor URLs fetched
-- 
+- https://www.taxaccountant.co.uk/vat-partial-exemption-and-input-tax-recovery/ — outline shape (Framework, Defining, Attribution, Residual, Annual Adjustment, Alternative Methods). Borrowed structural shape but A3 differs in being landlord-specific and pulling worked examples from mixed-residential / opted-commercial scenarios.
+- https://www.taxaccountant.co.uk/vat-the-partial-exemption-trap/ — informed the "When Partial Exemption Arises" framing (trigger-event lens).
+- https://www.ukpropertyaccountants.co.uk/vat-and-property-dispelling-myths-and-avoiding-common-mistakes/ — informed the "Common Partial-Exemption Mistakes" H2 (esp. the "exempt rent can be ignored" myth).
 
 ### Existing-page review (from "Closest existing pages")
-- 
+- A1 (just-committed, vat-option-to-tax-commercial-property-mechanics-election-revocation, property-types-and-specialist-tax): forward-linked from A3 in OTT interaction H2 and Related Reading.
+- A2 (just-committed, vat-capital-goods-scheme-property-businesses-10-year-adjustment-mechanics, property-types-and-specialist-tax): forward-linked from A3 in CGS interaction H2 and Related Reading.
+- `landlord-vat-registration-when-required` (landlord-tax-essentials): linked from Related Reading.
+- `togc-vat-property-letting-business`: linked from Related Reading.
 
 ### Citations added (external authority)
-- 
+- VAT Regulations 1995 (SI 1995/2518) full contents
+- VAT Regulations 1995 reg 99 (attribution of input tax)
+- VAT Regulations 1995 reg 101 (standard method)
+- VAT Regulations 1995 reg 102 (special method)
+- VAT Regulations 1995 reg 106 (de-minimis limit)
+- VAT Regulations 1995 reg 107 (annual adjustment)
+- HMRC VAT Notice 706 (Partial Exemption)
+- HMRC Partial Exemption Manual (PE10000+)
 
 ### Internal links added (to our existing pages)
-- 
+- `/blog/property-types-and-specialist-tax/vat-option-to-tax-commercial-property-mechanics-election-revocation` (OTT interaction H2 + Related Reading)
+- `/blog/property-types-and-specialist-tax/vat-capital-goods-scheme-property-businesses-10-year-adjustment-mechanics` (CGS interaction H2 + Related Reading)
+- `/blog/landlord-tax-essentials/landlord-vat-registration-when-required` (Related Reading)
+- `/blog/incorporation-and-company-structures/togc-vat-property-letting-business` (Related Reading)
 
 ### Inline CTA placements
-- 
+- Aside 1: after "Residual apportionment" worked example (standard-vs-special method comparison framing)
+- Aside 2: after annual-adjustment H2 (mid-year acquisition / refurbishment partial-exemption review framing)
 
 ### Build attempts
-- 
+- 1: build successful (442 static pages stable + A3 new page added under landlord-tax-essentials route). No errors or critical warnings.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted: id
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 12 = 12 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 55 chars (≤62) ✓
+- Meta description length: 157 chars (≤158) ✓
+- Internal links resolve: all 4 distinct paths resolve ✓
+- monitored_pages row inserted: yes (site_key=property, slug=vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method, monitor_until=CURRENT_DATE + 90 days, rewrite_type=rewrite, notes='Wave 5 Bucket A net-new VAT partial-exemption mechanic page')
+- Body word count: 2,843 (within 2,800-3,500 mid-upper band)
 
 ### §16.35 numeric verification log (every figure cited)
-- 
+- £625 monthly de-minimis limit on exempt input tax: verified against legislation.gov.uk uksi/1995/2518/regulation/106 (2026-05-23) and HMRC Notice 706 (last updated 16 Dec 2025 per gov.uk). Reg 106 quoted: "does not amount to more than £625 per month on average".
+- 50% de-minimis second leg: verified Notice 706 + reg 106: "half of your total input tax in the relevant period" / "does not exceed one half of all his input tax".
+- Standard-method apportionment formula (taxable value ÷ total value × 100, rounded up to next whole number, except residual > £400k/month avg): verified Notice 706 section 4 and reg 101(2)(d) (2026-05-23).
+- £400,000 monthly average residual threshold for 2-decimal-place rounding: verified Notice 706 section 4.
+- Annual adjustment timing (first VAT return after longer-period end; acceleration to last return of longer-period since 1 April 2009): verified Notice 706 (last updated 16 Dec 2025).
+- Longer-period definition (typically 12 months ending 31 March, 30 April, or 31 May depending on VAT quarter structure): verified Notice 706.
+- Special-method declaration of fairness on VAT (PE2): verified Notice 706 section 6.
+- £90,000 VAT registration threshold (referenced once in trigger-scenarios): previously verified gov.uk (A1 work-log).
+- £250,000 VAT-exclusive CGS threshold (referenced in CGS interaction H2): previously verified reg 113 (A2 work-log).
+- 6-year MTD record retention: verified Notice 700/22 (referenced via existing landlord-vat-registration page citation).
+- 20% standard rate: universal.
 
 ### Flags raised to wave5_site_wide_flags.md
-- 
+- None raised this session. (One INTERNAL_LINK observation noted in discovery log instead.)
 
 ### 2-3 sentence summary
-- 
+- A3 is the canonical partial-exemption operational mechanic page for property. Covers the standard-method attribution-then-apportionment chain (reg 101), the £625 monthly + 50% de-minimis test (reg 106) with a borderline worked example, the annual adjustment (reg 107) with a refurbishment-year worked example, and the reg 102 special-method approval route with landlord-specific trigger scenarios. Sits between A1 (OTT election upstream) and A2 (CGS downstream long-tail) in the VAT bundle; first page in the bucket placed in the `landlord-tax-essentials` URL category rather than `property-types-and-specialist-tax`.
