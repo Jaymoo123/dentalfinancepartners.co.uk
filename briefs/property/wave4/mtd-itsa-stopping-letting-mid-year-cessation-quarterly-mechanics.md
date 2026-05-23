@@ -14,9 +14,9 @@
 - **Suggested slug:** `mtd-itsa-stopping-letting-mid-year-cessation-quarterly-mechanics`
 - **Suggested category:** `making-tax-digital-mtd`
 - **Bucket:** MTD ITSA operational details
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (READ THIS CAREFULLY, defines what makes this page distinct):**
 
-> Selling the last property mid-year while in MTD ITSA: the cessation mechanic (final quarterly update, EoPS, final declaration), the difference between 'stopping letting but keeping the property' vs disposal, the post-cessation 7-year expense recovery (s.354 ITTOIA 2005), CGT-completion overlay (60-day return runs in parallel with the cessation reporting), and notification to HMRC to come out of MTD obligations.
+> The mid-year cessation operational mechanic for a landlord in MTD ITSA, per house position §19.15. Covers four scenarios competitor coverage tends to merge: (1) the **final-property-disposal** route (last property sold during a tax year — final quarterly update covers partial quarter to disposal, EoPS + final declaration cover full tax year up to cessation, HMRC notification ends MTD obligations), (2) the **stop-letting-keep-property** route (e.g. landlord moves in as PPR — MTD ends at cessation, CGT PRR considerations begin), (3) **post-cessation expense recovery** under ITTOIA 2005 s.354 (allowable for 7 years where the expense would have been deductible had the business continued — repairs to former let property, professional fees), and (4) the **parallel CGT 60-day return** obligation under TMA 1970 Sch 3ZA where a disposal triggers it (runs alongside MTD cessation reporting; two separate obligations, not one combined filing). Distinct from Wave 3 B4 (`mtd-itsa-exit-rule-income-drops-three-year-test`) which covers the income-drop sub-threshold exit; B9 is the disposal-driven cessation route.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,19 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+**Stage 1 seed URL OFF-TOPIC:** `https://www.ukpropertyaccountants.co.uk/250000-sign-up-for-mtd-but-most-landlords-still-arent-ready/` — confirmed alive but covers MTD adoption-stats / sign-up rates, NOT cessation or stopping letting. Replaced below; cessation as a specific topic is under-covered in the v2 universe, so the page leans more on authority sources (gov.uk, ITTOIA 2005) and on adjacent practitioner content.
 
-- https://www.ukpropertyaccountants.co.uk/250000-sign-up-for-mtd-but-most-landlords-still-arent-ready/
+Fetch each URL using `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` then parse with `BeautifulSoup(html, "lxml")`. Read for the cessation walkthrough, post-cessation expense treatment, and CGT-overlay phrasing.
 
-**Stage 2 to do:**
+- https://www.provestor.co.uk/help/mtd/advanced-topics/selling-properties — VERIFIED ALIVE 2026-05-23 (replaces seed). Software-vendor help page on selling properties under MTD; useful for the final-quarter mechanic and the "what the software needs you to do" operational steps.
+- https://www.ukpropertyaccountants.co.uk/heres-how-you-can-exit-mtd-if-your-income-falls/ — VERIFIED ALIVE 2026-05-23. Covers the §19.5 income-drop exit (Wave 3 B4 territory); useful contrast for B9 — read the article and write the cessation page in language that names the difference (Wave 3 B4 = three-year sub-threshold drop; this page = single-year disposal cessation).
+- https://rentalbux.com/blogs/how-to-sell-a-tenanted-property-under-the-renters-rights-act — VERIFIED ALIVE 2026-05-23. Disposal-mechanics piece with strong RRA 2025 context; useful for the FAQ phrasing on the legal-completion timing.
+- https://www.gov.uk/government/publications/spring-statement-2025-document/spring-statement-2025-html — VERIFIED ALIVE 2026-05-23. Penalty regime context (15/30/31 + 3%/3%/10%) for the cessation-late-pay FAQ.
+- https://www.ukpropertyaccountants.co.uk/cgt-late-filing-penalties/ — VERIFIED ALIVE 2026-05-23. CGT 60-day return mechanics; useful for the parallel-obligation section.
 
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Note on under-coverage:** as of 2026-05-23 the v2 competitor universe lacks a strong dedicated "mid-year cessation in MTD ITSA" page. B9 is therefore an authority-led page (lean on ITTOIA 2005 s.354, TMA 1970 Sch 3ZA, HMRC PIM, gov.uk MTD guidance) rather than a competitor-led rewrite.
 
 ---
 
@@ -68,9 +69,19 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this bucket
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite; add others found during research. B9 leans heavier than typical on authority sources due to the under-coverage in the v2 competitor universe.
+
+- [ITTOIA 2005 s.354 — post-cessation receipts and expenses (legislation.gov.uk; the 7-year recovery basis)](https://www.legislation.gov.uk/ukpga/2005/5/section/354)
+- [TMA 1970 Sch 3ZA — CGT 60-day return for UK property disposal (legislation.gov.uk)](https://www.legislation.gov.uk/ukpga/1970/9/schedule/3ZA)
+- [HMRC Property Income Manual (PIM) — cessation guidance; PIM overview](https://www.gov.uk/hmrc-internal-manuals/property-income-manual)
+- [HMRC CGT on UK property service — 60-day return mechanics (gov.uk)](https://www.gov.uk/guidance/report-and-pay-your-capital-gains-tax)
+- [HMRC Making Tax Digital for Income Tax — use the service (gov.uk; covers cessation notification)](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax)
+- [HMRC eligibility check for MTD ITSA (gov.uk)](https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax)
+- [FA 2017 Sch A1 / Sch 14 — MTD framework (legislation.gov.uk)](https://www.legislation.gov.uk/ukpga/2017/10/schedule/14)
+- [TCGA 1992 s.222–226 — Private Residence Relief (for the "stop letting, move in as PPR" scenario; legislation.gov.uk)](https://www.legislation.gov.uk/ukpga/1992/12/section/222)
+- House position §19.15 (mid-year cessation — Wave 4 extension) and §19.5 (income-drop exit, the Wave 3 B4 contrast) — internal tie-breakers.
 
 ---
 

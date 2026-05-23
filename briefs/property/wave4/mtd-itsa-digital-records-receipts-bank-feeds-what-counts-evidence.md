@@ -14,9 +14,9 @@
 - **Suggested slug:** `mtd-itsa-digital-records-receipts-bank-feeds-what-counts-evidence`
 - **Suggested category:** `making-tax-digital-mtd`
 - **Bucket:** MTD ITSA operational details
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (READ THIS CAREFULLY, defines what makes this page distinct):**
 
-> Digital-record discipline for property landlords under MTD: what HMRC considers a compliant digital record (receipt photos via app: yes; spreadsheet category column: yes; cash receipt in a shoebox: no), bank-feed integrations and the income-side categorisation question (does a tenant transfer count as gross rental income for that quarter?), seven-year retention rule, the audit-trail expectation at enquiry.
+> The evidence and audit-trail layer of MTD ITSA digital record-keeping, per house position §19.16. Operationalises four questions HMRC's high-level guidance gives only schematic answers to: (1) **what counts as a digital record** (app-captured receipt photo with date stamp: yes; bank-feed CSV/API extract: yes; spreadsheet category cell with cell-reference link: yes; shoeboxed paper receipts: no; unstamped photo without source software audit trail: no; written notes from memory: no), (2) **bank-feed mechanics** (auto-categorisation suggestions are not binding; landlord remains responsible for accuracy; how to handle a tenant transfer that overlaps quarter boundaries), (3) **seven-year retention** under TMA 1970 s.12B (electronic format only, or paper acceptable for the cash-receipt edge case if digitised promptly), and (4) the **enquiry / discovery audit-trail expectation** (HMRC's compliance posture on MTD ITSA records — what they actually ask to see). Distinct from the existing `mtd-record-keeping-landlords-digital-requirements` page which is a high-level overview; B10 is the "what counts as evidence at an HMRC enquiry" mechanic page.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,18 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+**Stage 1 seed URL DEAD:** `https://rentalbux.com/blogs/what-gets-sent-to-hmrc-understanding-your-mtd-data` — returns 200 but redirects to `https://rentalbux.com` (the blog slug no longer resolves to its article). URL is effectively dead; sourced replacements below.
 
-- https://rentalbux.com/blogs/what-gets-sent-to-hmrc-understanding-your-mtd-data
+Fetch each URL using `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` then parse with `BeautifulSoup(html, "lxml")`. Read for the digital-record definition phrasing, receipt-capture mechanics, bank-feed handling, and FAQ patterns on retention.
 
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+- https://www.ukpropertyaccountants.co.uk/what-does-digital-recordkeeping-require-in-making-tax-digital/ — VERIFIED ALIVE 2026-05-23 (primary replacement). Practitioner-firm explainer covering the digital-record definition; useful for the outline structure.
+- https://www.provestor.co.uk/help/mtd/key-concepts-rules/digital-record-keeping — VERIFIED ALIVE 2026-05-23. Software-vendor framing of the same mechanic; useful for the data-model perspective on what the software records and how that maps to HMRC's expectations.
+- https://www.provestor.co.uk/help/mtd/recording-income-expenses/record-keeping-best-practices — VERIFIED ALIVE 2026-05-23. Sibling best-practices page; useful for the seven-year retention discipline section.
+- https://www.provestor.co.uk/help/mtd/recording-income-expenses/managing-receipts — VERIFIED ALIVE 2026-05-23. Specific to receipt-capture mechanics; useful for the receipt-photo + bank-feed pairing FAQ pattern.
+- https://www.provestor.co.uk/help/mtd/recording-income-expenses/uploading-bank-statements — VERIFIED ALIVE 2026-05-23. Bank-statement upload mechanics (manual vs feed); useful for the bank-feed categorisation paragraphs.
+- https://rentalbux.com/guides/ocr-receipt-scanning-turn-paper-receipts-into-digital-mtd-records — VERIFIED ALIVE 2026-05-23. Specific receipt-OCR mechanics; useful for the "cash receipt must be digitised" handling.
 
 ---
 
@@ -68,9 +68,20 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this bucket
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite; add others found during research.
+
+- [TMA 1970 s.12B — records retention (legislation.gov.uk; the 7-year retention basis)](https://www.legislation.gov.uk/ukpga/1970/9/section/12B)
+- [HMRC notice 700/22 — digital records and digital links (gov.uk; the framework MTD ITSA adapts)](https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat)
+- [HMRC Compliance Handbook — record-keeping standards and enquiry mechanics (gov.uk)](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook)
+- [HMRC Making Tax Digital for Income Tax — use the service (gov.uk)](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax)
+- [HMRC eligibility check for MTD ITSA (gov.uk)](https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax)
+- [HMRC compatible-software list for MTD ITSA (gov.uk)](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax)
+- [FA 2017 Sch A1 / Sch 14 — MTD framework (legislation.gov.uk; statutory basis for "digital records")](https://www.legislation.gov.uk/ukpga/2017/10/schedule/14)
+- [HMRC Property Income Manual (PIM) overview](https://www.gov.uk/hmrc-internal-manuals/property-income-manual)
+- [HMRC Self Assessment toolkits — property rental toolkit (gov.uk; section on record-keeping at the SA cycle)](https://www.gov.uk/government/publications/property-rental-toolkit)
+- House position §19.16 (digital-records evidence discipline — Wave 4 extension) and §19.14 (digital-link rule, the bridging-software corollary) — internal tie-breakers.
 
 ---
 

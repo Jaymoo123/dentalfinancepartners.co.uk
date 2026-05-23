@@ -14,9 +14,9 @@
 - **Suggested slug:** `salary-vs-dividends-property-spv-2026-27-marginal-rate-analysis`
 - **Suggested category:** `incorporation-and-company-structures`
 - **Bucket:** LtdCo mechanics + FIC depth
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> Optimal salary-dividend mix inside a property SPV for 2026/27: NI-secondary-threshold £5,000 salary floor (or £12,570 PA floor where employment allowance available), the 25% main CT rate vs 19% small profits rate boundary at £50k profits, dividend rates 8.75% / 33.75% / 39.35% against PA cliff-edges, the £500 dividend allowance erosion, marginal-rate worked examples at £30k / £50k / £100k / £125k profit bands.
+> The 2026/27 marginal-rate stack for a property SPV worked from profits to net cash in the founder's pocket, with the post-Hunt small-profits / 25%-main-rate / marginal-relief £50k-£250k taper as the corporate-side anchor and the £5k NI-secondary-threshold + £12,570 PA + £500 dividend allowance + 8.75% / 33.75% / 39.35% dividend rates as the personal-side anchor. The mechanic this page owns is the **marginal-rate-by-profit-band optimisation**: worked examples at £30k / £50k / £100k / £125k profit bands per §21.4, with the single-director Employment-Allowance exclusion called out and the CIHC / s.18N carve-out flagged where the SPV's tenant base differs from passive third-party tenants. This page is the numbers; it does NOT re-walk DLA repayment sequencing (defer to A1), and it does NOT re-walk the rent-to-own-company comparison as a fourth extraction route (defer to A4). House position: no single optimum, optimum is reader-specific.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,16 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+- https://gorillaaccounting.com/blog/how-to-pay-yourself-tax-efficiently-as-a-company-director-in-the-uk/ — **STAGE 1 SEED, retained as primary.** VERIFIED ALIVE 2026-05-23. Gorilla is a specialist contractor + property accountant; strong on the generic "pay yourself" decision. Anti-templating note: figures will be prior-year; rebuild from §21.4 not from the competitor.
+- https://www.ukpropertyaccountants.co.uk/tax-efficient-pay-myself-a-salary-or-dividend/ — VERIFIED ALIVE 2026-05-23. Direct on-topic; property-investor lens. Useful for FAQ patterns + outline.
+- https://www.taxaccountant.co.uk/optimizing-director-salary-and-dividends-tax-year-2023-24/ — VERIFIED ALIVE 2026-05-23. 2023-24 tax-year specific; useful for the marginal-rate-table pattern. Anti-templating: do NOT use 2023-24 figures; rebuild to 2026-27 per §21.4.
+- https://www.taxaccountant.co.uk/profit-extraction-strategies-amid-2022-23-changes/ — VERIFIED ALIVE 2026-05-23. Historical context around the post-Hunt rate changes; useful for the "how the marginal stack changed" narrative.
+- https://www.taxaccountant.co.uk/strategies-for-efficiently-extracting-profits/ — VERIFIED ALIVE 2026-05-23. Broader extraction-strategy frame; useful for FAQ patterns on which lever to pull when.
+- https://www.shipleystax.com/2019/08/tax-efficient-profit-extraction/ — VERIFIED ALIVE 2026-05-23. Specialist tax firm; useful for the long-form decision-tree pattern. Old article, will need rate updates.
 
-- https://gorillaaccounting.com/blog/how-to-pay-yourself-tax-efficiently-as-a-company-director-in-the-uk/
-
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Fetch + read + extract instruction (session):** Fetch each URL via `httpx.get(url, timeout=30, follow_redirects=True, headers={"User-Agent": "Mozilla/5.0"})` then parse with BeautifulSoup (lxml). Extract: H2/H3 outline, comparison tables (salary vs dividend by profit band), worked examples (exact figures used by competitor + which tax year), FAQ patterns, citation density (CT rates, NI thresholds, dividend allowance, employment allowance). **CRITICAL anti-templating:** every competitor article will have a different tax year baseline; rebuild ALL figures from §21.4 + verified gov.uk at write time. Borrow outline-shape only.
 
 ---
 
@@ -68,9 +66,21 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this page (Stage 2 populated 2026-05-23)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite. Every figure MUST be verified at write time against current gov.uk per §7 of NETNEW_PROGRAM.
+
+- [gov.uk Corporation Tax rates and reliefs (verify 2026/27 small-profits + main rate + marginal relief band at write time)](https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax)
+- [gov.uk Income Tax rates and Personal Allowance](https://www.gov.uk/income-tax-rates)
+- [gov.uk Dividend tax rates 2026/27 (verify at write time)](https://www.gov.uk/tax-on-dividends)
+- [gov.uk National Insurance rates and categories (employer NI threshold + Employment Allowance)](https://www.gov.uk/national-insurance-rates-letters)
+- [gov.uk Employment Allowance (eligibility incl. sole-director exclusion)](https://www.gov.uk/claim-employment-allowance)
+- [CTA 2010 s.18N (CIHC qualifying-purpose carve-out for property SPVs)](https://www.legislation.gov.uk/ukpga/2010/4/section/18N)
+- [CTA 2010 s.18A+ (CIHC framework, denial of small profits rate)](https://www.legislation.gov.uk/ukpga/2010/4/section/18A)
+- [CTA 2010 s.453 / s.455 (close-company benefits + overdrawn DLA, cross-cite to A1)](https://www.legislation.gov.uk/ukpga/2010/4/section/455)
+- [HMRC NIM (National Insurance Manual) — single-director exclusion from Employment Allowance NIM06210+](https://www.gov.uk/hmrc-internal-manuals/national-insurance-manual/nim06210)
+- [HMRC CTM (Company Taxation Manual) sections on marginal relief CTM03570+](https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03570)
+- [HMRC PTM (Pensions Tax Manual) on employer pension contributions for the pension-extraction comparison](https://www.gov.uk/hmrc-internal-manuals/pensions-tax-manual)
 
 ---
 

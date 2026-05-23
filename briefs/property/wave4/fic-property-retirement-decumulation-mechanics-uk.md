@@ -14,9 +14,9 @@
 - **Suggested slug:** `fic-property-retirement-decumulation-mechanics-uk`
 - **Suggested category:** `incorporation-and-company-structures`
 - **Bucket:** LtdCo mechanics + FIC depth (FIC sub-thread)
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> Using a property FIC for retirement income post-65: how preference-share dividend coupons, redeemable share amortisation, and DLA repayment combine to give the founder a predictable retirement income stream while the underlying property portfolio's value growth accrues to next-generation growth shares. Marginal-rate-positioning of the income strands, interaction with state pension + private pension drawdown.
+> The FIC as a **retirement income engine during life** for a property-portfolio founder, with three coordinated mechanics: (i) preference-share dividend coupons producing a predictable £-coupon income stream (frozen value, no upside to founder), (ii) redeemable-share amortisation returning capital tax-free to the share-redemption-extent, (iii) DLA credit-balance repayment as tax-free runway from the s.162 incorporation transfer. The mechanic this page owns is the **sequencing**: how these three strands are layered with state pension and any private-pension drawdown to keep marginal rate below the 33.75% / 39.35% dividend cliffs across the founder's life. Anti-templating boundary: this page is income-now during the founder's life. It is NOT the IHT value-freeze framing (that's C7); it does NOT walk the share-gift PET at point of gift (that's A9); it does NOT cover the blended-family use case (that's A10); it does NOT walk articles-drafting (that's A6). If session-time drafting drifts into "and this also saves IHT because growth accrues to children", pull back: cross-link to C7 and stay on the income mechanic.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,17 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+- https://www.tlpi.co.uk/case-studies/hands-off-retirement-income-and-family-legacy-fic — **STAGE 1 SEED, retained as primary.** VERIFIED ALIVE 2026-05-23. TLPI is a specialist FIC firm; this case study is the canonical hands-off-retirement-income FIC scenario. Anti-templating note: TLPI commercial bias to flag; do NOT replicate TLPI's "FIC is best for everyone" positioning, stay on the mechanic.
+- https://www.tlpi.co.uk/case-studies/fic-for-income-returns-and-protected-legacy — VERIFIED ALIVE 2026-05-23. Complementary case study; income-returns angle.
+- https://www.tlpi.co.uk/insights/why-you-need-a-family-investment-company — VERIFIED ALIVE 2026-05-23. The pitch page; useful as a reference for how TLPI orders the income mechanics.
+- https://uklandlordtax.co.uk/tax-guide/property-family-investment-company-and-inheritance-tax/ — VERIFIED ALIVE 2026-05-23. Has a section on income-during-life vs IHT-on-death framing; useful for the boundary the page must police vs C7.
+- https://www.ukpropertyaccountants.co.uk/a-complete-guide-to-family-investment-companies-fics/ — VERIFIED ALIVE 2026-05-23. Comprehensive FIC explainer; useful for the outline pattern + FAQ density.
+- https://uklandlordtax.co.uk/family-investment-companies-faqs/ — VERIFIED ALIVE 2026-05-23. Direct FAQ source; useful for FAQ phrasing parity on retirement-income questions.
+- https://uklandlordtax.co.uk/disadvantages-of-family-investment-companies-fics/ — VERIFIED ALIVE 2026-05-23. Useful to balance: the page must acknowledge FIC retirement-decumulation downsides (CT-25% at corporate level, dividend tax on extraction, no BPR).
 
-- https://www.tlpi.co.uk/case-studies/hands-off-retirement-income-and-family-legacy-fic
-
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Fetch + read + extract instruction (session):** Fetch each URL via `httpx.get(url, timeout=30, follow_redirects=True, headers={"User-Agent": "Mozilla/5.0"})` then parse with BeautifulSoup (lxml). Extract: outline structure for the income-during-life sub-thread (preference-share coupon, redemption, DLA repayment), case-study structure (TLPI's anonymised personas + numbers — DO NOT reproduce, rebuild), FAQ density on retirement-specific questions ("can my children take the rental income", "what happens to the rental income at age 75", "do I still need a SIPP if I have a FIC"). Borrow outline-shape, NOT figures or sentences.
 
 ---
 
@@ -68,9 +67,21 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this page (Stage 2 populated 2026-05-23)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite. Retirement-decumulation is a Companies-Act + dividend-tax + DLA + pension page.
+
+- [CA 2006 s.684+ (redeemable shares — power to issue, terms of redemption)](https://www.legislation.gov.uk/ukpga/2006/46/section/684)
+- [CA 2006 s.687 (financing of redemption out of profits)](https://www.legislation.gov.uk/ukpga/2006/46/section/687)
+- [CA 2006 s.831 (distributions out of profits — load-bearing for preference-share coupon)](https://www.legislation.gov.uk/ukpga/2006/46/section/831)
+- [CTA 2010 s.455 (loans to participators — anchors why DLA debit balances are not a retirement-income route)](https://www.legislation.gov.uk/ukpga/2010/4/section/455)
+- [CTA 2010 s.18N (CIHC qualifying-purpose carve-out, anchors §21.5 boundary)](https://www.legislation.gov.uk/ukpga/2010/4/section/18N)
+- [gov.uk Dividend tax rates 2026/27 (verify at write time)](https://www.gov.uk/tax-on-dividends)
+- [HMRC PTM (Pensions Tax Manual) main index — for the SIPP-comparison context](https://www.gov.uk/hmrc-internal-manuals/pensions-tax-manual)
+- [HMRC EIM26101+ (beneficial loans, official rate of interest, relevant to DLA-credit-balance interest paid to founder)](https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim26101)
+- [HMRC CTM (Company Taxation Manual) on share redemption and distributable profits](https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual)
+- [HMRC SAIM5070+ (income from redemption of shares — savings and investment income)](https://www.gov.uk/hmrc-internal-manuals/savings-and-investment-manual/saim5070)
+- [HMRC IHTM (Inheritance Tax Manual) — for the *Pawson* / BPR cross-reference to C7 boundary](https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual)
 
 ---
 

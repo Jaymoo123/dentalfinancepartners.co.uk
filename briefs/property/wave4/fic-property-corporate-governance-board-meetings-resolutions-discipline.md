@@ -14,9 +14,9 @@
 - **Suggested slug:** `fic-property-corporate-governance-board-meetings-resolutions-discipline`
 - **Suggested category:** `incorporation-and-company-structures`
 - **Bucket:** LtdCo mechanics + FIC depth (FIC sub-thread)
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> Running a property FIC well: the board-meeting / written-resolution discipline that distinguishes a credible family investment company from a paper structure HMRC can re-characterise. Mandatory and tax-relevant meetings (dividend declarations, loan write-offs, share issues, property-acquisition approvals), minute-book hygiene, the substance-over-form risk where founder drift erodes the legal/tax separation between FIC and family.
+> The **governance discipline** that distinguishes a credible property FIC from a paper structure HMRC can re-characterise on enquiry. The mechanic this page owns is the operational rhythm: board-meeting cadence, written-resolution sequence for the tax-load-bearing events (dividend declarations dated and signed before transfer, share issue / allotment minutes, property-acquisition board approval, DLA loan write-off minutes, preference-share redemption decisions, year-end accounts approval), minute-book hygiene, statutory-registers maintenance, declarations-of-interest tracking. The substance-over-form risk per §21.5 is the load-bearing failure mode: when founder operates the FIC as personal property, HMRC can re-characterise distributions as personal income or attack the BPR / GROB / settlements-legislation defences. This page is the **discipline** sub-thread; it is NOT the articles-drafting layer (defer to A6), NOT the income-drawdown mechanic (defer to A8), NOT the share-gift PET mechanic (defer to A9), and NOT the blended-family use case (defer to A10).
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,18 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+**Stage 1 seed URL note:** `tlpi/hands-off-retirement-income-and-family-legacy-fic` is shared with A8 where the case-study framing fits better. A7 takes governance-discipline-specific references as primaries; the tlpi case study stays as a colour link.
 
-- https://www.tlpi.co.uk/case-studies/hands-off-retirement-income-and-family-legacy-fic
+- https://www.taxaccountant.co.uk/family-investment-companies-fics-protecting-family-wealth/ — **NEW PRIMARY.** VERIFIED ALIVE 2026-05-23. Covers FIC governance + family-wealth protection; closest competitor framing to "substance over form" angle.
+- https://www.taxaccountant.co.uk/family-investment-company-tax-planning/ — VERIFIED ALIVE 2026-05-23. Discusses FIC management requirements; useful for the operational-rhythm outline.
+- https://www.ukpropertyaccountants.co.uk/how-to-set-up-and-manage-a-family-investment-company/ — VERIFIED ALIVE 2026-05-23. The "manage" half of the title is directly on-topic for governance-discipline framing.
+- https://www.tlpi.co.uk/fic-frequently-asked-questions — VERIFIED ALIVE 2026-05-23. TLPI's FIC FAQ block; useful for FAQ-phrasing parity on "how often must we meet", "what minutes do we need".
+- https://www.tlpi.co.uk/insights/fic-family-business-succession — VERIFIED ALIVE 2026-05-23. Succession-governance overlap; useful for the "discipline supports legacy" framing without crossing into A10's blended-family ground.
+- https://www.tlpi.co.uk/case-studies/hands-off-retirement-income-and-family-legacy-fic — STAGE 1 SEED, retained as colour. VERIFIED ALIVE 2026-05-23. Primary use-case angle belongs to A8.
 
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Fetch + read + extract instruction (session):** Fetch each URL via `httpx.get(url, timeout=30, follow_redirects=True, headers={"User-Agent": "Mozilla/5.0"})` then parse with BeautifulSoup (lxml). Extract: H2/H3 outline patterns for governance sections (board meeting cadence, written-resolution rules, minute-book hygiene, statutory registers), FAQ density on operational questions, citation density (CA 2006, Model Articles, HMRC manuals on substance-over-form). Borrow outline-shape, NOT sentences. Anti-templating note: this page must NOT read like a precedent firm's compliance leaflet; the property-FIC-specific lens (when does the board approve a property purchase, how is a rent receipt minuted) is the differentiator.
 
 ---
 
@@ -68,9 +68,21 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this page (Stage 2 populated 2026-05-23)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite. Governance is a Companies-Act + general-law page with substance-over-form HMRC overlay.
+
+- [CA 2006 s.171 (directors' duty to act within powers)](https://www.legislation.gov.uk/ukpga/2006/46/section/171)
+- [CA 2006 s.172 (directors' duty to promote success of company)](https://www.legislation.gov.uk/ukpga/2006/46/section/172)
+- [CA 2006 s.248 (minutes of directors' meetings — statutory requirement)](https://www.legislation.gov.uk/ukpga/2006/46/section/248)
+- [CA 2006 s.288 (written resolutions of private companies)](https://www.legislation.gov.uk/ukpga/2006/46/section/288)
+- [CA 2006 s.355 (records of resolutions, minutes)](https://www.legislation.gov.uk/ukpga/2006/46/section/355)
+- [CA 2006 s.113-128 (register of members + statutory registers)](https://www.legislation.gov.uk/ukpga/2006/46/section/113)
+- [CA 2006 s.831 (distributions must be from profits available; dividend declaration mechanics)](https://www.legislation.gov.uk/ukpga/2006/46/section/831)
+- [HMRC CTM (Company Taxation Manual) substance-over-form references CTM07000+](https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual)
+- [HMRC GAAR guidance (general anti-abuse rule, relevant where founder operates FIC as personal vehicle)](https://www.gov.uk/government/publications/tax-avoidance-general-anti-abuse-rules)
+- [HMRC CTM15205+ (dividend declaration timing — load-bearing for the "dividend minuted before payment" discipline)](https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm15205)
+- [Companies House guidance on running a limited company (directors' general duties summary)](https://www.gov.uk/running-a-limited-company)
 
 ---
 

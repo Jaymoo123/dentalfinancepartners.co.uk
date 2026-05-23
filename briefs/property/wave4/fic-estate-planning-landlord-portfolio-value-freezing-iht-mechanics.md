@@ -14,9 +14,9 @@
 - **Suggested slug:** `fic-estate-planning-landlord-portfolio-value-freezing-iht-mechanics`
 - **Suggested category:** `landlord-tax-essentials`
 - **Bucket:** IHT estate planning for landlords (FIC cross-link)
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> FIC as an IHT estate-planning tool for a landlord portfolio: value-freezing through preference-share + growth-share design (founder keeps £-coupon preferences = frozen value; growth accrues to children's growth shares = out of estate over 7 years). Contrast with direct property gifts (GROB risk if founder retains income), trusts (entry / 10-year / exit charges), and lifetime gifts of property (no holdover for non-business). Cross-link to A8 (FIC retirement) and A9 (FIC share gifts).
+> This page owns the strategic IHT framing of the FIC as a value-freeze + growth-out-of-estate tool for the portfolio landlord at c.£2m+ who wants to control transfer of future portfolio growth to the next generation. The single mechanic the page explains: founder retains preference shares with a fixed £-coupon (frozen value, remains in estate); growth shares (entitled to all future capital growth + control rights) are gifted to next generation, starting a 7-year PET clock under IHTA 1984 s.3A. After 7 years, all future growth is outside the founder's estate; the founder's IHT footprint is capped at the frozen preference-share value. The page is comparison-led: vs direct property 7-year PET (Wave 4 C4 — bigger CGT-on-gift exposure, no minority discount, no separation of value-vs-growth), vs CLT into discretionary trust (Wave 4 C10 — entry 20% over NRB, 10-year periodic charges, but s.260 holdover for CGT). Operational mechanics live elsewhere: the articles-drafting layer is Bucket A A6, governance discipline is A7, retirement-income-coupon design is A8, share-gift PET mechanics at point of gift are A9, blended-family use case is A10. C7 cites all five as sibling pages without re-walking their ground; A8 / A9 / A10 reciprocally cross-link back to C7 for the strategic framing.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,16 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 populated, 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+**Fetch + read + extract instruction:** For each URL below, fetch with httpx (follow_redirects=True, timeout=30, User-Agent "Mozilla/5.0"), parse with BeautifulSoup (lxml). Extract H2/H3 outline, treatment of the value-freeze concept (preference + growth share design), treatment of the 7-year-PET-clock-on-share-gift, treatment of GROB risk on FIC. CRITICAL: this is the highest cross-bucket cannibalisation risk in Wave 4 (vs Bucket A FIC pages). The page must own strategic IHT framing only; the operational mechanics belong in A6-A10.
 
-- https://uklandlordtax.co.uk/family-investment-company-inheritance-tax-and-freezing-value/
+- https://uklandlordtax.co.uk/family-investment-company-inheritance-tax-and-freezing-value/ — Stage 1 seed, verified live 2026-05-23 (200). Specialist landlord-tax firm in v2 working set; the most on-point competitor for our differentiator (FIC + IHT + freezing-value framing).
+- https://www.tlpi.co.uk/services/family-investment-companies/ — Specialist FIC firm (v2 working set, 2 SERP appearances); session to verify at write time. Strong for case-study pattern, useful for the "who is this for" persona section without copying the persona.
+- https://www.ukpropertyaccountants.co.uk/family-investment-company-property/ — Property-tax-specialist domain (v2 working set); session to verify at write time. Useful for the property-specific FIC framing.
+- https://www.taxaccountant.co.uk/family-investment-company-fic-uk/ — Sibling within v2 working set; session to verify at write time. Useful for the FIC FAQ phrasing baseline.
 
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Borrowable patterns:** uklandlordtax covers freezing-value cleanly but lets the article wander into trust-comparison territory. Our discipline: keep C7 strategic IHT-framed; defer governance to A7, articles to A6, retirement income to A8, gift mechanics to A9, blended-family persona to A10. Use a single comparison-table H2 to show value-freeze vs CLT vs direct property PET on a £2m portfolio, then forward-link.
 
 ---
 
@@ -68,9 +66,19 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering (Stage 2 populated, 2026-05-23 — session selects 4-7)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+- IHTA 1984 s.3A (PETs definition — the 7-year PET clock starting on share gift): https://www.legislation.gov.uk/ukpga/1984/51/section/3A
+- IHTA 1984 s.7 (rates, taper s.7(4)): https://www.legislation.gov.uk/ukpga/1984/51/section/7
+- IHTA 1984 s.105 (BPR — investment FIC does NOT qualify, per *Pawson*): https://www.legislation.gov.uk/ukpga/1984/51/section/105
+- FA 1986 s.102 (GROB — applies if founder retains benefit through preference dividend AND uses underlying property): https://www.legislation.gov.uk/ukpga/1986/41/section/102
+- TCGA 1992 s.17 (deemed market-value disposal on gift of growth shares): https://www.legislation.gov.uk/ukpga/1992/12/section/17
+- TCGA 1992 s.165 + Sch 7 (holdover NOT available for investment-FIC share gifts): https://www.legislation.gov.uk/ukpga/1992/12/section/165
+- TCGA 1992 s.260 (holdover for CLT — for the comparison with trust route): https://www.legislation.gov.uk/ukpga/1992/12/section/260
+- *Pawson v HMRC* [2013] UKUT 050 (TCC): https://www.gov.uk/tax-and-chancery-tribunal-decisions/pawson-v-hmrc-2013-ukut-050-tcc
+- HMRC IHTM25000+ (BPR overview): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm25000
+- HMRC IHTM14000+ (gifts and exempt transfers, including PET mechanics): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm14000
+- CTA 2010 s.18N (CIHC qualifying-purpose carve-out, relevant for the FIC's CT profile, link sparingly so as not to drift into A7 territory): https://www.legislation.gov.uk/ukpga/2010/4/section/18N
 
 ---
 

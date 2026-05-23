@@ -14,9 +14,9 @@
 - **Suggested slug:** `mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse`
 - **Suggested category:** `making-tax-digital-mtd`
 - **Bucket:** MTD ITSA operational details
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (READ THIS CAREFULLY, defines what makes this page distinct):**
 
-> How the quarterly cycle actually works for jointly owned property: each owner files their own quarterly update on their share of gross income + expenses, no nominated-filer rule, the mid-year ownership-split-change reporting mechanic, and how to handle a property where one spouse is in MTD ITSA and the other is still on Self Assessment. Distinct from Wave 3 B3 (threshold-split mechanic): B1 was about who's in, this is about how the quarterly filings operate once they are in.
+> The operational mechanics of running the quarterly cycle once both joint owners are in MTD ITSA. Each owner files their own quarterly updates on their share of gross income and expenses, there is no nominated-filer election, and the two filings must reconcile to the same underlying transactions and ownership split. Covers the four operational scenarios competitor coverage tends to ignore: mid-year split change (Form 17 re-election within the year), one spouse in MTD and the other below threshold, agent authorisation duplicated per spouse via ASA, and ownership-cost categorisation (mortgage interest, repairs, council tax) split consistently across both filings. Distinct from Wave 3 B3 which handles the threshold-test mechanic (who is in); B1 handles the cycle mechanics (how it works once in).
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,15 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+Fetch each URL using `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` then parse with `BeautifulSoup(html, "lxml")`. Read outline, FAQs, worked-example density, and how each handles the "each-owner-files-separately" mechanic.
 
-- https://rentalbux.com/guides/mtd-for-joint-owners-how-separate-filings-work
-
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+- https://rentalbux.com/guides/mtd-for-joint-owners-how-separate-filings-work — VERIFIED ALIVE 2026-05-23 (Stage 1 seed). Commercial bias (rentalbux product), but useful for the "separate filings, each owner has their own software / login" outline pattern and FAQ phrasing on the no-nominated-filer rule.
+- https://www.ukpropertyaccountants.co.uk/mtd-made-simple-for-landlords-with-jointly-owned-properties/ — VERIFIED ALIVE 2026-05-23. The strongest authority piece on joint-owner mechanics; worked £90k-property / £45k-each example, explicit "no nominated-submitter rule, each owner files quarterly". Already cited by Wave 3 B3; B1 leans on the quarterly-cycle paragraphs here that Wave 3 B3 stopped short of.
+- https://fhpaccounting.co.uk/making-tax-digital-jointly-owned-property/ — VERIFIED ALIVE 2026-05-23. Practitioner-firm view on the operational mechanics of joint-owner record-keeping (who keeps which receipts, how to mirror entries across two filings); short article, useful for FAQ phrasing on the bookkeeping split.
+- https://www.provestor.co.uk/help/mtd/key-concepts-rules/jointly-owned-properties — VERIFIED ALIVE 2026-05-23. Software-vendor help-doc framing of the same mechanic; useful for the categorised-cost-split UI / data-model perspective (mortgage interest, repairs, agent fees apportioned per owner).
+- https://www.provestor.co.uk/help/mtd/recording-income-expenses/joint-ownership-splits — VERIFIED ALIVE 2026-05-23. Sibling provestor page focusing specifically on percentage-split recording mechanics; useful for the mid-year split-change reporting paragraph.
 
 ---
 
@@ -68,9 +65,20 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this bucket
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite; add others found during research.
+
+- [HMRC Making Tax Digital for Income Tax — use the service (gov.uk)](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax)
+- [HMRC eligibility check for MTD ITSA (gov.uk)](https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax)
+- [Form 17: declaration of beneficial interests in joint property and income (gov.uk)](https://www.gov.uk/government/publications/income-tax-declaration-of-beneficial-interests-in-joint-property-and-income-form-17)
+- [HMRC TSEM9814: joint income, spouses, declaration of beneficial interest](https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem9814)
+- [HMRC Property Income Manual (PIM) overview](https://www.gov.uk/hmrc-internal-manuals/property-income-manual)
+- [FA 2017 Sch A1 / Sch 14 — MTD framework (legislation.gov.uk)](https://www.legislation.gov.uk/ukpga/2017/10/schedule/14)
+- [HMRC sign up your client for MTD ITSA (agent flow, gov.uk)](https://www.gov.uk/guidance/sign-up-your-client-for-making-tax-digital-for-income-tax)
+- [HMRC ASA registration (gov.uk)](https://www.gov.uk/guidance/get-an-hmrc-agent-services-account)
+- [HMRC compatible-software list for MTD ITSA (gov.uk)](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax)
+- House position §19.4 (joint-property owners) and §19.10 (ASA per-owner authorisation) — internal tie-breakers.
 
 ---
 

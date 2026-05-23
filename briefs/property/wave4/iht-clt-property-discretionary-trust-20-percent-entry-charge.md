@@ -14,9 +14,9 @@
 - **Suggested slug:** `iht-clt-property-discretionary-trust-20-percent-entry-charge`
 - **Suggested category:** `landlord-tax-essentials`
 - **Bucket:** IHT estate planning for landlords
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> Settling a property (or property-company shares) into a discretionary trust during lifetime: the 20% IHT entry charge on value above NRB, the further 20% top-up if the settlor dies within 7 years, 10-year periodic charges (max 6%), and exit charges. CGT s.260 holdover IF the trust is non-settlor-interested. Comparison with FIC (no entry charge but no s.260) and direct PET gift (no entry charge, full 40% if death within 3 years).
+> Net-new on our site. The page owns the chargeable-lifetime-transfer mechanic applied to property: settling a BTL or BTL-SPV shares into a discretionary trust triggers 20% immediate IHT on the excess of value over the settlor's available NRB (less prior 7-year cumulative gifts), with a further 20% top-up (taper-relievable per IHTA 1984 s.7(4)) if the settlor dies within 7 years. Inside the trust, 10-year periodic charges (up to 6% under IHTA 1984 s.64) and exit charges apply. The CGT trade-off pivots on s.260 holdover (TCGA 1992 s.260): available where the trust is non-settlor-interested, so CGT on the transfer in is held over to the trustees; NOT available where the settlor or settlor's spouse can benefit (ss.169B-169G), in which case CGT is immediate at market value (s.17). The page is comparison-led: vs FIC value-freeze (Wave 4 C7) where there is no IHT entry charge but no s.260 holdover either; vs direct PET gift (Wave 4 C4) where there is no entry charge but the full 40% on death within 3 years. The settlor-interested exclusion is the most common landlord misstep and the page makes it the spine.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,16 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 populated, 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+**Fetch + read + extract instruction:** For each URL below, fetch with httpx (follow_redirects=True, timeout=30, User-Agent "Mozilla/5.0"), parse with BeautifulSoup (lxml). Extract H2/H3 outline, treatment of the 20% entry charge, treatment of 10-year periodic and exit charges, treatment of s.260 holdover + settlor-interested exclusion. Differentiator: property-specific worked example + comparison vs FIC and direct PET.
 
-- https://www.mytaxaccountant.co.uk/post/chargeable-lifetime-transfer-for-iht
+- https://www.mytaxaccountant.co.uk/post/chargeable-lifetime-transfer-for-iht — Stage 1 seed, verified live 2026-05-23 (200). Useful for the FAQ phrasing on CLT mechanics and the 7-year-death top-up.
+- https://www.taxaccountant.co.uk/discretionary-trust-property-iht/ — Sibling within v2 working set domain; session to verify at write time. Likely covers the discretionary-trust framework end-to-end.
+- https://www.ukpropertyaccountants.co.uk/property-into-trust-tax-implications/ — Property-tax-specialist domain (v2 working set); session to verify at write time. Useful for the property-into-trust framing and the SDLT-on-trust-transfer angle that's an additional cost to highlight.
+- https://www.tlpi.co.uk/services/trust-planning/ — Specialist FIC firm (v2 working set); useful for the trust-vs-FIC comparison frame.
 
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Borrowable patterns:** mytaxaccountant is general-CLT-explainer. Our differentiator: a worked example showing the full IHT + CGT + SDLT cost of settling a £400k BTL into a discretionary trust (£15k entry IHT above NRB, £14k CGT held over if non-settlor-interested, SDLT on chargeable consideration if any), then the 10-year charge worked out at year 10 on the trust's value at that point. Plus a clear "do not do this" boundary on settlor-interested trusts where the settlor or settlor's spouse is included in beneficiary class.
 
 ---
 
@@ -68,9 +66,20 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering (Stage 2 populated, 2026-05-23 — session selects 4-7)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+- IHTA 1984 s.3 (transfers of value): https://www.legislation.gov.uk/ukpga/1984/51/section/3
+- IHTA 1984 s.7 (rates including taper s.7(4)): https://www.legislation.gov.uk/ukpga/1984/51/section/7
+- IHTA 1984 s.64 (10-year periodic charge on relevant property trusts): https://www.legislation.gov.uk/ukpga/1984/51/section/64
+- IHTA 1984 s.65 (exit charge): https://www.legislation.gov.uk/ukpga/1984/51/section/65
+- IHTA 1984 ss.43-65 (relevant property regime, the full discretionary-trust framework): https://www.legislation.gov.uk/ukpga/1984/51/contents
+- TCGA 1992 s.260 (holdover for CLTs): https://www.legislation.gov.uk/ukpga/1992/12/section/260
+- TCGA 1992 ss.169B-169G (settlor-interested trust exclusion from s.260 holdover): https://www.legislation.gov.uk/ukpga/1992/12/section/169B
+- TCGA 1992 s.17 (deemed market-value disposal if no holdover): https://www.legislation.gov.uk/ukpga/1992/12/section/17
+- HMRC IHTM42000+ (relevant property trusts overview): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm42000
+- HMRC IHTM42100+ (periodic charge mechanics): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm42100
+- HMRC TSEM (Trusts, Settlements and Estates Manual): https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual
+- gov.uk Trust Registration Service: https://www.gov.uk/guidance/register-a-trust-as-a-trustee
 
 ---
 

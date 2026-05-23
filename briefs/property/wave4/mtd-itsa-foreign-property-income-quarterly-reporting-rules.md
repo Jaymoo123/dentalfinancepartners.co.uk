@@ -14,9 +14,9 @@
 - **Suggested slug:** `mtd-itsa-foreign-property-income-quarterly-reporting-rules`
 - **Suggested category:** `making-tax-digital-mtd`
 - **Bucket:** MTD ITSA operational details
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (READ THIS CAREFULLY, defines what makes this page distinct):**
 
-> Foreign property income inside MTD ITSA: §19.2 confirms foreign rental income counts as property income for MTD where reported on the UK return. This page works the operational layer: which quarterly update box receives foreign-property numbers, the FX-translation rule per HMRC IM (spot rate on transaction date vs average rate), foreign-tax-credit interaction at EoPS, software that supports the SA106 foreign-property fields.
+> The operational layer of reporting foreign property income through the MTD ITSA quarterly cycle, per house position §19.11. Covers four mechanics competitor coverage skips: (1) which quarterly update line receives foreign-property numbers (the SA106 mapping into the MTD foreign-property property-stream box), (2) the FX-translation rule per HMRC International Manual (spot rate on transaction date OR HMRC published monthly average rate, pick one and apply consistently across the year), (3) the foreign-tax-credit claim point (final declaration / EoPS, NOT quarterly update), and (4) NRL-scheme interaction (UK letting agent withholding at 20% basic rate continues to apply alongside MTD; the MTD filing duty is not displaced by NRL). Practical software gating warning: many MTD packages launched 2025/26 did not initially support the SA106 foreign-property fields, so the page steers landlords to check the HMRC compatible-software list before relying. Distinct from the existing foreign-tax-credit page (credit-mechanism only); this page owns the MTD-reporting mechanic for foreign-property income.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,15 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+Fetch each URL using `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` then parse with `BeautifulSoup(html, "lxml")`. Read for the SA106-to-MTD mapping, FX-translation phrasing, and whether the competitor names software that does NOT yet support foreign-property fields (this is the page's practical warning).
 
-- https://rentalbux.com/blogs/mtd-compatible-software-that-supports-foreign-income
-
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+- https://rentalbux.com/blogs/mtd-compatible-software-that-supports-foreign-income — VERIFIED ALIVE 2026-05-23 (Stage 1 seed). Commercial bias to flag. Useful for the practical software-support landscape (which packages handle SA106 fields) and FAQ phrasing on "does my MTD software support my Spanish villa?".
+- https://www.ukpropertyaccountants.co.uk/mtd-for-uk-resident-landlords-with-foreign-property/ — VERIFIED ALIVE 2026-05-23. Practitioner explainer covering the SA106 mapping and the "foreign rental still counts toward £50k threshold" point. Strong sibling.
+- https://rentalbux.com/blogs/uk-landlords-with-foreign-property-your-complete-mtd-survival-guide — VERIFIED ALIVE 2026-05-23. Broader sibling covering the same domain; useful for the FX-translation worked-example pattern (spot vs monthly-average).
+- https://rentalbux.com/blogs/making-tax-digital-for-overseas-landlords — VERIFIED ALIVE 2026-05-23. Inverse case: overseas landlord with UK property. Useful contrast for the NRL-interaction section (B4 covers UK-resident with foreign property; this competitor URL is the mirror).
+- https://www.ukpropertyaccountants.co.uk/how-to-declare-foreign-income-and-gains-to-hmrc/ — VERIFIED ALIVE 2026-05-23. Broader declaration mechanics (SA106, foreign-tax-credit claim) at the final-declaration stage; useful for the FTC-at-EoPS-not-quarterly section.
 
 ---
 
@@ -68,9 +65,20 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this bucket
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite; add others found during research.
+
+- [Self Assessment SA106 foreign income form + instructions (gov.uk)](https://www.gov.uk/government/publications/self-assessment-foreign-sa106)
+- [HMRC Property Income Manual (PIM5000 series covers foreign property; PIM overview)](https://www.gov.uk/hmrc-internal-manuals/property-income-manual)
+- [HMRC International Manual (INTM) — FX-translation guidance for foreign-income reporting](https://www.gov.uk/hmrc-internal-manuals/international-manual)
+- [HMRC exchange rates monthly averages (the authoritative published-rate source)](https://www.gov.uk/government/collections/exchange-rates-for-customs-and-vat)
+- [TIOPA 2010 s.18 — foreign tax credit relief (legislation.gov.uk)](https://www.legislation.gov.uk/ukpga/2010/8/section/18)
+- [HMRC compatible-software list (cite as the gating check for SA106 foreign-property field support)](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax)
+- [HMRC Making Tax Digital for Income Tax — use the service (gov.uk)](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax)
+- [HMRC eligibility check for MTD ITSA (gov.uk)](https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax)
+- [HMRC NRL scheme guidance — overseas landlord interaction (gov.uk)](https://www.gov.uk/government/collections/non-resident-landlords)
+- House position §19.11 (foreign property income inside MTD — Wave 4 extension) and §17.5 (NRL scheme) — internal tie-breakers.
 
 ---
 

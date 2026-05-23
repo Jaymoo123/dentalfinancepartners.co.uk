@@ -14,9 +14,9 @@
 - **Suggested slug:** `bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line`
 - **Suggested category:** `landlord-tax-essentials`
 - **Bucket:** IHT estate planning for landlords
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> Why pure buy-to-let property fails the BPR test: the Pawson v HMRC [2013] UKUT 050 (TCC) investment-vs-trading dichotomy, why passive rent collection is the wrong side of the line, the 'mainly investment' s.105(3) IHTA 1984 trap. Distinct from Wave 2's serviced-accommodation-BPR-Pawson page (which covered the SA cohort that occasionally qualifies); this one is the negative answer for the 90%-of-our-readers pure-BTL cohort.
+> The negative-case page for the pure buy-to-let cohort. Pawson v HMRC [2013] UKUT 050 (TCC) draws the investment / trading line at s.105(3) IHTA 1984 "mainly investment": passive rent collection plus the standard letting-agent overlay (tenant find, maintenance arranging, rent collection) lands on the investment side, and BPR is denied. Lead with "Why your BTL doesn't qualify" and stay short and sharp; defer the serviced-accommodation boundary case to Wave 2's `serviced-accommodation-bpr-eligibility-pawson-test` and the general rule to Wave 2's `business-property-relief-rental-property-iht`. The page is for the 90%-of-readers pure-BTL cohort who reach for BPR + 7-year planning and need to understand the relief is not available before they design around it.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,16 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 populated, 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+**Fetch + read + extract instruction:** For each URL below, fetch with httpx (follow_redirects=True, timeout=30, User-Agent "Mozilla/5.0"), parse with BeautifulSoup (lxml). Extract H2/H3 outline, FAQ pattern, worked examples, internal citation density. Note where competitor leads with general BPR rule vs landlord-specific framing; our differentiator is the negative-case for pure BTL.
 
-- https://www.djh.co.uk/latest-news/news-insights/iht-planning-review-protecting-your-business-assets-with-br/
+- https://www.djh.co.uk/latest-news/news-insights/iht-planning-review-protecting-your-business-assets-with-br/ — Stage 1 seed, verified live 2026-05-23 (200). Mid-market accountant BPR overview, useful for general-rule framing to contrast against.
+- https://www.ukpropertyaccountants.co.uk/the-landmark-shift-in-inheritance-tax-relief/ — Verified live 2026-05-23 (200). Covers the April 2026 £1m BPR/APR cap from a property-tax-specialist angle; useful for Pawson-context framing within the wider IHT-relief landscape.
+- https://www.ukpropertyaccountants.co.uk/business-property-relief-on-landlord-portfolio/ — Sibling page, likely live (same domain working set). Pure-BTL eligibility content matches our negative-case framing; session to verify at write time and borrow FAQ phrasing where it covers "Does my BTL qualify?".
+- https://www.tlpi.co.uk/services/inheritance-tax/ — Specialist FIC firm in v2 working set with retirement-and-legacy case studies; useful for the "what to do instead" forward-link section after the negative answer.
 
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Borrowable patterns:** competitor outlines tend to put "Does BPR apply to property?" as H2 then meander into APR. Our discipline: lead H1/H2 with negative answer, then deliver the *Pawson* mechanic, then a tight comparison block (BTL = no / SA-with-services = boundary / property dev WIP = yes for trading element), then forward-link to alternative IHT routes (FIC value-freeze, lifetime gifting, charity legacy).
 
 ---
 
@@ -68,9 +66,17 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering (Stage 2 populated, 2026-05-23 — session selects 4-7)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+- *Pawson v HMRC* [2013] UKUT 050 (TCC) decision: https://www.gov.uk/tax-and-chancery-tribunal-decisions/pawson-v-hmrc-2013-ukut-050-tcc (anchor case for the investment line; non-optional citation).
+- *Brander v HMRC* [2010] UKUT 300 (TCC) decision: https://www.gov.uk/tax-and-chancery-tribunal-decisions/brander-v-hmrc-2010-ukut-300-tcc (contextualises the trading-vs-investment continuum; useful for the SA boundary mention).
+- IHTA 1984 s.105 (BPR — "relevant business property"): https://www.legislation.gov.uk/ukpga/1984/51/section/105 (s.105(3) "mainly investment" exclusion is the statutory pin).
+- IHTA 1984 contents: https://www.legislation.gov.uk/ukpga/1984/51/contents
+- HMRC IHTM25260+ (mainly-investment determination): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm25260 (HMRC's published approach to the s.105(3) test).
+- HMRC IHTM25000 (BPR overview): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm25000
+- gov.uk APR/BPR reforms 6 April 2026: https://www.gov.uk/government/publications/agricultural-property-relief-and-business-property-relief-reforms (£1m cap context, even though pure BTL doesn't reach BPR in the first place).
+- HMRC IHT400 (estate return): https://www.gov.uk/government/publications/inheritance-tax-inheritance-tax-account-iht400 (BPR claim box; useful where readers ask about claim mechanics).
+- Autumn Budget 2024: https://www.gov.uk/government/publications/autumn-budget-2024 (BPR/APR cap announcement).
 
 ---
 

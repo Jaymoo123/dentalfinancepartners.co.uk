@@ -14,9 +14,9 @@
 - **Suggested slug:** `mtd-itsa-pension-funds-sipp-ssas-holding-rental-property-treatment`
 - **Suggested category:** `making-tax-digital-mtd`
 - **Bucket:** MTD ITSA operational details
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (READ THIS CAREFULLY, defines what makes this page distinct):**
 
-> SIPP / SSAS property income and MTD ITSA: pension funds are outside MTD ITSA (§19.3, trustees + pension funds excluded), but the property income is taxed within the pension wrapper and reported on the pension return mechanism. Walks through the common confusion (landlord with personal portfolio + SIPP-held commercial property: personal in scope, SIPP not), and the trustee-reporting routes for the SIPP-held element.
+> The exclusion mechanic for SIPP / SSAS-held rental property in MTD ITSA, per house position §19.12. Pension trustees are outside MTD ITSA entirely (§19.3 excluded categories); property held inside the pension wrapper is taxed within the scheme (typically 0% on rental income within a registered pension scheme) and reported via the pension trustee return, not the personal MTD ITSA cycle. The page works the common confusion: a landlord with a £40k personal residential portfolio plus a £30k SIPP-held commercial property tests personal portfolio only against the §19.2 threshold (the £30k SIPP rental is NOT the landlord's income for that test). Covers the parallel-streams scenario (personal portfolio in MTD plus SIPP-held property outside) and the trustee-reporting routes (small self-administered scheme via SSAS practitioner, SIPP via SIPP provider). Distinct from C6 (pension decumulation IHT 2027) which is about post-death pension treatment; B7 is about the live-time MTD-exclusion mechanic.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,15 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+Fetch each URL using `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` then parse with `BeautifulSoup(html, "lxml")`. Read for the SIPP / SSAS commercial-property-holding mechanics, MTD-exclusion phrasing, and FAQ patterns on the parallel-streams scenario.
 
-- https://rentalbux.com/blogs/pension-funds-with-rental-portfolios-are-they-caught-by-making-tax-digital
-
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+- https://rentalbux.com/blogs/pension-funds-with-rental-portfolios-are-they-caught-by-making-tax-digital — VERIFIED ALIVE 2026-05-23 (Stage 1 seed). Commercial bias. Useful for the exclusion confirmation and FAQ phrasing on whether SIPP rental counts toward the personal £50k threshold.
+- https://www.ukpropertyaccountants.co.uk/sipp-buy-commercial-property-guide/ — VERIFIED ALIVE 2026-05-23. Authoritative practitioner explainer on SIPP commercial-property ownership; useful for the wrapper-mechanics paragraphs and worked-example structure on the SIPP-property income flow.
+- https://www.ukpropertyaccountants.co.uk/commercial-property-strategy-for-business-owners-a-practical-ssas-route/ — VERIFIED ALIVE 2026-05-23. SSAS-specific equivalent; useful for the SSAS-versus-SIPP distinction and the small self-administered scheme reporting route.
+- https://www.ukpropertyaccountants.co.uk/a-complete-guide-to-the-ssas-pension-scheme-in-the-uk/ — VERIFIED ALIVE 2026-05-23. Foundational SSAS overview; useful for the trustee-reporting context.
+- https://www.ukpropertyaccountants.co.uk/investing-in-property-using-your-pension-funds/ — VERIFIED ALIVE 2026-05-23. General overview; useful for the FAQ phrasing on whether personal portfolio and pension-held property need to be combined for the threshold test (answer: no, per §19.12).
 
 ---
 
@@ -68,9 +65,19 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this bucket
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite; add others found during research.
+
+- [HMRC Pensions Tax Manual (PTM) — registered pension scheme taxation overview (gov.uk)](https://www.gov.uk/hmrc-internal-manuals/pensions-tax-manual)
+- [HMRC PTM121000 — taxation of property within a registered pension scheme (gov.uk)](https://www.gov.uk/hmrc-internal-manuals/pensions-tax-manual/ptm121000)
+- [HMRC Making Tax Digital for Income Tax — use the service (gov.uk)](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax)
+- [HMRC eligibility check for MTD ITSA (gov.uk; confirms trustees are excluded)](https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax)
+- [FA 2017 Sch A1 / Sch 14 — MTD framework (legislation.gov.uk)](https://www.legislation.gov.uk/ukpga/2017/10/schedule/14)
+- [Finance Act 2004 Part 4 — registered pension schemes regime (legislation.gov.uk; the statutory home of SIPP / SSAS tax treatment)](https://www.legislation.gov.uk/ukpga/2004/12/part/4)
+- [HMRC scheme administrator obligations (gov.uk PTM section on reporting)](https://www.gov.uk/hmrc-internal-manuals/pensions-tax-manual/ptm160000)
+- [HMRC Property Income Manual (PIM) overview](https://www.gov.uk/hmrc-internal-manuals/property-income-manual)
+- House position §19.12 (pension funds + rental property — Wave 4 extension) and §19.3 (excluded categories) — internal tie-breakers.
 
 ---
 

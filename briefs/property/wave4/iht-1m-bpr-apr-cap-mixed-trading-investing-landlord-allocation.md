@@ -14,9 +14,9 @@
 - **Suggested slug:** `iht-1m-bpr-apr-cap-mixed-trading-investing-landlord-allocation`
 - **Suggested category:** `landlord-tax-essentials`
 - **Bucket:** IHT estate planning for landlords
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> Mixed-estate landlords post-6-April-2026: how the £1m combined BPR+APR cap allocates across an estate containing both a qualifying trading element (e.g. property-developer WIP, working farm) and a non-qualifying BTL portfolio. Worked allocation examples, the order-of-application question, and the AIM-shares 50% sub-tier (which doesn't consume the £1m). Distinct from Wave 2 IHT-April-2026-cap page by being the post-cap allocation + planning depth.
+> Wave 2's `iht-april-2026-bpr-apr-cap-property-impact` covers the rule (£1m combined cap, 50% above-cap rate giving 20% effective IHT on excess, AIM 50% reduction). This page owns the allocation-mechanics depth for the mixed-estate landlord cohort: a £3.5m estate with a £1.2m working farm (APR), £400k in a property-developer SPV holding WIP (BPR), £1.6m BTL portfolio (no relief), £300k in AIM shares (separate 50% tier). The page walks the order-of-application across the three relief tiers, the combined £1m cap on BPR + APR jointly (estates cannot stack £1m BPR on top of £1m APR), the separate AIM 50% sub-tier that does NOT consume the £1m allowance, and the trusts-fragmentation point (each trust gets its own £1m allowance with anti-fragmentation rules expected). Worked allocation example shows total IHT under the post-cap regime vs the pre-cap regime so the £1m-cap impact is concrete. Distinct from Wave 2 by being allocation-mechanics-led with mixed-estate worked examples, not rule-explainer-led.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,16 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 populated, 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+**Fetch + read + extract instruction:** For each URL below, fetch with httpx (follow_redirects=True, timeout=30, User-Agent "Mozilla/5.0"), parse with BeautifulSoup (lxml). Extract H2/H3 outline, treatment of the £1m cap, treatment of the AIM-shares 50% sub-tier, treatment of trust-fragmentation rules. Our angle: allocation mechanics in mixed estates, not generic rule explainer.
 
-- https://www.ukpropertyaccountants.co.uk/the-landmark-shift-in-inheritance-tax-relief/
+- https://www.ukpropertyaccountants.co.uk/the-landmark-shift-in-inheritance-tax-relief/ — Stage 1 seed, verified live 2026-05-23 (200). Property-tax-specialist domain; useful for the rule + initial planning framing.
+- https://www.djh.co.uk/latest-news/news-insights/iht-planning-review-protecting-your-business-assets-with-br/ — Mid-market accountant (v2 working set, 2 SERP appearances); useful for the business-assets + BPR allocation angle.
+- https://www.taxaccountant.co.uk/business-property-relief-changes-2026/ — Sibling within v2 working set domain; session to verify at write time. Likely covers the rule with FAQ baseline.
+- https://www.bhp.co.uk/news-events/service-insights/financial-planning/business-property-relief-reforms — Sibling within v2 working set domain (bhp.co.uk has 3 SERP appearances); session to verify at write time. Likely covers the financial-planning angle on the cap.
 
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Borrowable patterns:** ukpropertyaccountants covers the rule cleanly. Our differentiator: a single worked-allocation table for a mixed estate (BTL + property-developer SPV + working farm + AIM portfolio), showing where each tier of relief lands and what the residual IHT looks like vs the pre-cap regime. **CRITICAL: §15.4 of house_positions.md flags AIM-shares mechanics as the most-likely-to-be-amended detail in this reform package. Session MUST verify the precise AIM rate and any anti-fragmentation rules against current gov.uk HMRC technical note at write time before relying on a precise figure in any worked example.** See §4.7 for the gov.uk reforms URL.
 
 ---
 
@@ -68,9 +66,20 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering (Stage 2 populated, 2026-05-23 — session selects 4-7)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+**Session-time verification placeholder (CRITICAL):** §15.4 flags AIM-shares mechanics as the most-likely-to-be-amended detail in the April 2026 reform package. Session must verify the precise AIM rate, the AIM allowance interaction (separate sub-tier vs cap-consuming), and any anti-fragmentation rules for trusts against the current gov.uk HMRC technical note at write time. If gov.uk has updated between locking (2026-05-23) and session write, the gov.uk text wins; flag the change in `docs/property/wave4_site_wide_flags.md`.
+
+- gov.uk APR/BPR reforms 6 April 2026 (PRIMARY): https://www.gov.uk/government/publications/agricultural-property-relief-and-business-property-relief-reforms
+- Autumn Budget 2024 (announcement of cap): https://www.gov.uk/government/publications/autumn-budget-2024
+- IHTA 1984 s.103 (BPR — relevant business property general rule): https://www.legislation.gov.uk/ukpga/1984/51/section/103
+- IHTA 1984 s.104 (rate of BPR): https://www.legislation.gov.uk/ukpga/1984/51/section/104
+- IHTA 1984 s.105 (relevant business property definition including s.105(3) mainly-investment exclusion): https://www.legislation.gov.uk/ukpga/1984/51/section/105
+- IHTA 1984 s.115-124 (APR — agricultural property relief): https://www.legislation.gov.uk/ukpga/1984/51/contents
+- HMRC IHTM25000+ (BPR): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm25000
+- HMRC IHTM24000+ (APR): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm24000
+- HMRC IHT400 + IHT413 (business / agricultural relief schedules): https://www.gov.uk/government/publications/inheritance-tax-business-and-partnership-interests-and-assets-iht413
+- *Pawson v HMRC* [2013] UKUT 050 (TCC) — for BTL-doesn't-qualify framing: https://www.gov.uk/tax-and-chancery-tribunal-decisions/pawson-v-hmrc-2013-ukut-050-tcc
 
 ---
 

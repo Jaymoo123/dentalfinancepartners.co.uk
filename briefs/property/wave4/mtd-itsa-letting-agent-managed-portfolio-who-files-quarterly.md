@@ -14,9 +14,9 @@
 - **Suggested slug:** `mtd-itsa-letting-agent-managed-portfolio-who-files-quarterly`
 - **Suggested category:** `making-tax-digital-mtd`
 - **Bucket:** MTD ITSA operational details
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (READ THIS CAREFULLY, defines what makes this page distinct):**
 
-> Who files when the landlord uses a letting agent: the agent is not the MTD filer, the landlord is. The agent's monthly statement is the data source. Walks through extracting gross-vs-net from a typical letting-agent statement, splitting agent commission and management fees correctly into the expenses side, and the joint-agent + accountant relationship (agent produces statement, accountant via ASA does the digital filing).
+> The "who files" common-misconception page for landlords with a managed portfolio. Per house position §19.13: the LANDLORD is the MTD filer, not the letting agent. The page works the operational triangle (letting agent produces monthly statement / landlord owns the MTD obligation / accountant via ASA does the digital submissions where appointed), then walks through the categorisation trap: a landlord reporting "net of agent fees" as gross income mis-applies the §19.2 gross-income threshold test and may incorrectly conclude they are below mandate. Includes a worked example extracting gross collected rent, agent commission, management fees, repairs paid by agent, and net paid to landlord from a typical letting-agent monthly statement, then mapping each line into the correct MTD quarterly-update category. Distinct from the legacy `mtd-quarterly-reporting-landlords-step-by-step-guide` (general filing cycle) and from B3 (ASA mechanics); this page focuses on the agent-managed data-flow specifically.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,15 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+Fetch each URL using `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` then parse with `BeautifulSoup(html, "lxml")`. Read for the categorise-the-agent-statement worked-example pattern, FAQ phrasing on the misconception ("can my letting agent just do this for me?"), and the gross-vs-net trap.
 
-- https://www.ukpropertyaccountants.co.uk/do-i-need-making-tax-digital-if-i-use-a-letting-agent/
-
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+- https://www.ukpropertyaccountants.co.uk/do-i-need-making-tax-digital-if-i-use-a-letting-agent/ — VERIFIED ALIVE 2026-05-23 (Stage 1 seed). The closest sibling: confirms landlord remains the filer; uses "John the landlord" persona. Useful for outline, do NOT replicate worked example.
+- https://fhpaccounting.co.uk/managing-agent-handovers/ — VERIFIED ALIVE 2026-05-23. Practitioner-firm angle on the agent-to-accountant data handover; useful for the "data quality coming out of the agent statement" angle and FAQ phrasing on the agent / accountant boundary.
+- https://rentalbux.com/partners/letting-agents — VERIFIED ALIVE 2026-05-23. Commercial vendor-page from rentalbux about letting-agent integrations; useful for the "agent statement to MTD software" data-flow patterns competitors are pitching. Strong commercial bias to flag.
+- https://rentalbux.com/guides/recording-expenses-repairs-agent-fees-insurance-more — VERIFIED ALIVE 2026-05-23. Practical recording-mechanic guide; useful for the categorisation worked example (which line goes where on the MTD update).
+- https://www.ukpropertyaccountants.co.uk/hmrc-landlord-crackdown-letting-agents-urged-to-push-voluntary-disclosure/ — VERIFIED ALIVE 2026-05-23. HMRC's compliance angle on letting agents; useful for context on why HMRC cares about gross-rent reporting from agent statements.
 
 ---
 
@@ -68,9 +65,19 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this bucket
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite; add others found during research.
+
+- [HMRC Making Tax Digital for Income Tax — use the service (gov.uk)](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax)
+- [HMRC eligibility check for MTD ITSA (gov.uk)](https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax)
+- [HMRC Property Income Manual (PIM4702 covers letting-agent expenses; PIM overview)](https://www.gov.uk/hmrc-internal-manuals/property-income-manual)
+- [HMRC PIM4702 — letting-agent fees as deductible expense (gov.uk)](https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim4702)
+- [HMRC compatible-software list for MTD ITSA (gov.uk)](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax)
+- [HMRC ASA registration (gov.uk; for the accountant-via-ASA layer)](https://www.gov.uk/guidance/get-an-hmrc-agent-services-account)
+- [Property rental toolkit (gov.uk — section on gross-income reporting where agents collect rent)](https://www.gov.uk/government/publications/property-rental-toolkit)
+- [FA 2017 Sch A1 / Sch 14 — MTD framework (legislation.gov.uk)](https://www.legislation.gov.uk/ukpga/2017/10/schedule/14)
+- House position §19.13 (letting-agent managed portfolio — Wave 4 extension) and §19.2 (gross-income threshold test) — internal tie-breakers.
 
 ---
 

@@ -14,9 +14,9 @@
 - **Suggested slug:** `fic-gifting-shares-children-property-7-year-iht-mechanics`
 - **Suggested category:** `incorporation-and-company-structures`
 - **Bucket:** LtdCo mechanics + FIC depth (FIC sub-thread)
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> Gifting growth shares in a property FIC to adult children (outright or via 18-25 / bare trust): the 7-year PET clock, associated-operations risk where the FIC is set up shortly before the gift, share-valuation discount for non-controlling interests, CGT base cost (TCGA 1992 s.165 holdover relief denial for investment-FICs vs trading FICs), and the practical drafting (vesting age, dividend rights pre-gift).
+> The **mechanics at the point of gift** when a founder transfers FIC growth shares to adult children. The mechanic this page owns is the four-question operational walkthrough: (i) **valuation** of the share-gift at MV per TCGA 1992 s.17, with minority-discount + freeze-share retained-control reducing MV below pro-rata NAV, (ii) **CGT treatment** with s.165 holdover NOT available for investment FICs per §21.5 (TCGA 1992 Sch 7 trading-share limit), so CGT crystallises at gift unless the FIC qualifies as trading (mostly it won't for BTL), (iii) **settlements-legislation risk** where the recipient is a minor (s.624 attribution) or via bare trust below 18 (still attributed), (iv) the **7-year PET clock** starting on the date of gift, not on FIC formation. This page is the **share-gift PET mechanic at the moment of transfer**; it is NOT the strategic-IHT-framing of why-to-use-a-FIC (that's C7), NOT the in-life retirement-income mechanic (that's A8), NOT the articles-drafting layer (that's A6), NOT the blended-family use case (that's A10). C4 covers 7-year-clock for direct property gifts; this page is FIC-share gifts.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,17 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+- https://www.ukpropertyaccountants.co.uk/how-to-involve-your-family-in-your-property-investment-journey-using-an-fic/ — **STAGE 1 SEED, retained as primary.** VERIFIED ALIVE 2026-05-23. Directly on-topic; family involvement via FIC shares.
+- https://www.ukpropertyaccountants.co.uk/freezer-shares-and-growth-shares-in-family-investment-companies/ — VERIFIED ALIVE 2026-05-23. Direct on the freezer / growth share design used in the gift.
+- https://uklandlordtax.co.uk/family-investment-company-inheritance-tax-and-freezing-value/ — VERIFIED ALIVE 2026-05-23. Has the IHT-side narrative; useful for the C7 boundary patrol. Anti-templating note: where the competitor walks into strategic-IHT framing, do NOT follow; cross-link to C7 instead.
+- https://uklandlordtax.co.uk/tax-guide/property-family-investment-company-and-inheritance-tax/ — VERIFIED ALIVE 2026-05-23. Complementary IHT-FIC guide; useful for understanding what competitors put in which section so the page can clearly own the mechanic-at-gift.
+- https://www.ukpropertyaccountants.co.uk/pros-and-cons-of-family-investment-companiesfics/ — VERIFIED ALIVE 2026-05-23. Useful for FAQ patterns on "should I gift shares now or wait" + the s.165 no-holdover downside flag.
+- https://www.tlpi.co.uk/case-studies/fic-for-income-returns-and-protected-legacy — VERIFIED ALIVE 2026-05-23. Has the share-gift sequence in a case-study format; useful as a worked-example reference (rebuild figures, don't copy).
+- https://www.taxaccountant.co.uk/family-investment-company-tax-planning/ — VERIFIED ALIVE 2026-05-23. Tax-planning frame; useful for FAQ depth on settlement-legislation interaction.
 
-- https://www.ukpropertyaccountants.co.uk/how-to-involve-your-family-in-your-property-investment-journey-using-an-fic/
-
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Fetch + read + extract instruction (session):** Fetch each URL via `httpx.get(url, timeout=30, follow_redirects=True, headers={"User-Agent": "Mozilla/5.0"})` then parse with BeautifulSoup (lxml). Extract: H2/H3 outline patterns for the gift-mechanic section, FAQ density on "what about my minor children", "what if I die in year 3", "how is the share valued", citation density (s.17 TCGA, s.165 + Sch 7, s.624 ITTOIA, IHTA 1984 s.7 / s.18 / s.142). Borrow outline-shape, NOT figures or sentences. Anti-templating critical: many competitors blur gift-mechanics with strategic-IHT framing; this page must stay disciplined on the operational mechanics at moment of gift.
 
 ---
 
@@ -68,9 +67,23 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this page (Stage 2 populated 2026-05-23)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite. This is a CGT + settlements + IHT-PET mechanic page.
+
+- [TCGA 1992 s.17 (disposals to connected persons deemed at market value)](https://www.legislation.gov.uk/ukpga/1992/12/section/17)
+- [TCGA 1992 s.165 (gift relief / holdover for trading-company shares)](https://www.legislation.gov.uk/ukpga/1992/12/section/165)
+- [TCGA 1992 Sch 7 (qualifying-business-asset definition: investment-FIC shares excluded)](https://www.legislation.gov.uk/ukpga/1992/12/schedule/7)
+- [TCGA 1992 s.260 (CLT holdover, alternative route via discretionary trust — cross-cite to C10)](https://www.legislation.gov.uk/ukpga/1992/12/section/260)
+- [IHTA 1984 s.3A (PETs: 7-year clock framework)](https://www.legislation.gov.uk/ukpga/1984/51/section/3A)
+- [IHTA 1984 s.7(4) (taper relief: 0% under 3yr, then 20%, 40%, 60%, 80% per year)](https://www.legislation.gov.uk/ukpga/1984/51/section/7)
+- [IHTA 1984 s.18 (spouse exemption — relevant if gift is to spouse first then to children)](https://www.legislation.gov.uk/ukpga/1984/51/section/18)
+- [ITTOIA 2005 s.624 (settlements legislation — minor-child attribution)](https://www.legislation.gov.uk/ukpga/2005/5/section/624)
+- [ITTOIA 2005 s.629 (income paid to / for benefit of unmarried minor children)](https://www.legislation.gov.uk/ukpga/2005/5/section/629)
+- [HMRC IHTM14000+ (PET mechanics, Inheritance Tax Manual)](https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm14000)
+- [HMRC IHTM25000+ (BPR — cross-cite, BPR NOT available for investment FIC shares per *Pawson*)](https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm25000)
+- [HMRC CG66880+ (gift relief: trading-company test, Capital Gains Manual)](https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg66880)
+- [*Pawson v HMRC* [2013] UKUT 050 (TCC) (investment-trading line, anchors why FIC shares aren't trading)](https://www.gov.uk/tax-and-chancery-tribunal-decisions/pawson-v-hmrc-2013-ukut-050-tcc)
 
 ---
 

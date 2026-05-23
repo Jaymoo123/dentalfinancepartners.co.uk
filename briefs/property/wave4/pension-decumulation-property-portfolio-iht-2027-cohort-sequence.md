@@ -14,9 +14,9 @@
 - **Suggested slug:** `pension-decumulation-property-portfolio-iht-2027-cohort-sequence`
 - **Suggested category:** `landlord-tax-essentials`
 - **Bucket:** IHT estate planning for landlords
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> The 6 April 2027 pension-IHT change creates a decumulation-sequence question for landlords. Pre-2027 wisdom: 'use pension last' to keep it out of estate. Post-2027 reality: pension is in the estate; the decumulation sequence becomes a marginal-rate + portfolio-mix optimisation. Worked sequences for the 65-year-old landlord with £900k pension + £1.6m BTL portfolio, RNRB taper at £2m, and the question of selling property first vs drawing pension first under post-2027 rules.
+> Wave 2's `pension-iht-april-2027-landlord-estate-planning` covers the rule-mechanic (pensions in the estate from 6 April 2027 per Autumn Budget 2024). This page is the sequence-strategy applied page for the retiring-age landlord cohort whose financial plan was built on the pre-2027 "use pension last" wisdom. The decumulation-sequence problem under post-2027 rules: pension and BTL portfolio are now both in the IHT base, so the optimisation flips from "preserve pension legacy" to "spend down the estate to below the £2m RNRB taper threshold and below the second-death IHT cliff". Worked sequences for the 65-year-old landlord with £900k pension + £1.6m BTL portfolio: sell-property-first (CGT now at 18%/24%, frees liquidity, reduces estate) vs drawdown-first (income-tax at marginal rate, leaves CGT base intact for next gen, but RNRB-taper exposure persists). Cross-link to Wave 4 C4 (gifting property route) and Wave 4 C7 (FIC value-freeze route) as alternative decumulation paths.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,16 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 populated, 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+**Fetch + read + extract instruction:** For each URL below, fetch with httpx (follow_redirects=True, timeout=30, User-Agent "Mozilla/5.0"), parse with BeautifulSoup (lxml). Extract H2/H3 outline, treatment of Autumn Budget 2024 announcement, treatment of liability-reporting-and-payment consultation, worked-example density. Differentiator: landlord-specific decumulation sequence with the property leg, not generic pension-IHT explainer.
 
-- https://bhp.co.uk/news-events/service-insights/financial-planning/changes-to-pension-inheritance-tax-what-you-need-to-know
+- https://bhp.co.uk/news-events/service-insights/financial-planning/changes-to-pension-inheritance-tax-what-you-need-to-know — Stage 1 seed, verified live 2026-05-23 (200). Financial-planning-firm angle, useful for the FAQ phrasing on the announcement and the practical "what should I do" frame.
+- https://www.ukpropertyaccountants.co.uk/pension-inheritance-tax-changes-property-investors/ — Property-tax-specialist domain (v2 working set); session to verify at write time. Useful for the property-investor-specific angle.
+- https://www.tlpi.co.uk/services/retirement-planning/ — Specialist FIC firm in v2 working set; useful for retirement-decumulation case-study framing where the FIC is one of the routes.
+- https://www.taxaccountant.co.uk/inheritance-tax-on-pensions-from-april-2027/ — Sibling within v2 working set domain; session to verify at write time. Likely covers the rule + initial planning implications.
 
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Borrowable patterns:** BHP is financial-planning-first (light on landlord-property specifics). Our differentiator: a single worked-sequence comparison showing the IHT + CGT + income-tax total cost of two decumulation orders over a 15-year retirement, plus the pension-liability-reporting mechanics (Personal Representatives, scheme administrators, joint-and-several debate from the consultation) so readers know what mechanically happens on death.
 
 ---
 
@@ -68,9 +66,18 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering (Stage 2 populated, 2026-05-23 — session selects 4-7)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+- Autumn Budget 2024 (pension-IHT inclusion from 6 April 2027): https://www.gov.uk/government/publications/autumn-budget-2024
+- gov.uk consultation "Inheritance Tax on pensions: liability, reporting and payment": https://www.gov.uk/government/consultations/inheritance-tax-on-pensions-liability-reporting-and-payment
+- Draft Finance Bill 2026 (pension-IHT clauses): https://www.gov.uk/government/collections/finance-bill-2025-26 (verify at write time, doc collection in motion)
+- IHTA 1984 s.151 (treatment of pension schemes): https://www.legislation.gov.uk/ukpga/1984/51/section/151
+- IHTA 1984 s.7 (rates, including taper s.7(4)): https://www.legislation.gov.uk/ukpga/1984/51/section/7
+- HMRC RPSM (Registered Pension Schemes Manual): https://www.gov.uk/hmrc-internal-manuals/registered-pension-schemes-manual
+- HMRC IHTM17000+ (pensions and IHT): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm17000
+- TCGA 1992 s.4 (CGT rates 18% / 24% residential 2024/25 onwards): https://www.legislation.gov.uk/ukpga/1992/12/section/4
+- gov.uk RNRB taper guidance (£2m threshold): https://www.gov.uk/guidance/inheritance-tax-residence-nil-rate-band
+- Wave 2 our page `pension-iht-april-2027-landlord-estate-planning` (internal authority cross-link, not external).
 
 ---
 

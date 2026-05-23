@@ -14,9 +14,9 @@
 - **Suggested slug:** `mtd-itsa-agent-services-account-asa-authorisation-walkthrough`
 - **Suggested category:** `making-tax-digital-mtd`
 - **Bucket:** MTD ITSA operational details
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (READ THIS CAREFULLY, defines what makes this page distinct):**
 
-> How a landlord authorises an accountant via the Agent Services Account (ASA) for MTD ITSA filing: the 64-8 vs ASA distinction, the landlord-side digital-handshake mechanic, joint-owner authorisation (each spouse must authorise separately), and the consequences when the agent loses access (mid-year accountant change, agent firm dissolution). Includes the post-April-2026 ASA mandatory-use rule for MTD ITSA filings.
+> The landlord-side authorisation walkthrough for the Agent Services Account (ASA), the mandatory route for MTD ITSA agent representation from 6 April 2026. Covers the 64-8 versus ASA distinction (the old form remains valid for non-MTD work, ASA is mandatory for MTD ITSA per house position §19.10), the step-by-step digital-handshake flow (agent generates authorisation request via ASA; landlord receives email; landlord signs in via Government Gateway; landlord approves the agent for MTD ITSA specifically), and three failure modes the gov.uk guidance glosses over: each joint owner / spouse must authorise separately (no spouse-implies-spouse rule), authorisations do NOT transfer to a new agent (revoke + re-authorise required on accountant change), and the in-flight cessation case (what happens to filings if the agent firm dissolves mid-quarter). Distinct from the existing `how-to-register-mtd-landlord-step-by-step-guide` which covers landlord self-registration, not the agent-route.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,19 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+**Stage 1 seed URL DEAD:** `https://ciot-att.lndo.site/mtd-digital-readiness-agent-services-accounts-tips-agents` — connection refused (`.lndo.site` is a Lando dev / staging domain, never a public production URL). Replaced with the gov.uk ASA authority page as primary and three sibling competitor URLs below.
 
-- https://ciot-att.lndo.site/mtd-digital-readiness-agent-services-accounts-tips-agents
+Fetch each URL using `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` then parse with `BeautifulSoup(html, "lxml")`. Read for the authorisation-flow step list, joint-owner mechanic, and re-authorisation-on-agent-change handling.
 
-**Stage 2 to do:**
+- https://www.gov.uk/guidance/get-an-hmrc-agent-services-account — VERIFIED ALIVE 2026-05-23 (canonicalises to `/apply-for-an-agent-services-account`). The authoritative ASA registration page; cite as primary authority for the agent-side mechanics. Note the landlord-facing flow lives on a separate "authorise an agent" page.
+- https://www.gov.uk/guidance/sign-up-your-client-for-making-tax-digital-for-income-tax — VERIFIED ALIVE 2026-05-23. The agent-side MTD ITSA sign-up service page; useful for the step-by-step flow the page walks through.
+- https://www.ukpropertyaccountants.co.uk/hmrcs-making-tax-digital-what-landlords-need-to-know/ — VERIFIED ALIVE 2026-05-23. Competitor overview of MTD; useful for the section discussing how landlords appoint accountants under MTD. Cross-verify against house position §19.10 — do NOT rely on this page for the authorisation step-list (mechanics drift fast).
+- https://www.ukpropertyaccountants.co.uk/received-mtd-letter-from-hmrc-landlord-what-to-do/ — VERIFIED ALIVE 2026-05-23. Includes "what to do if your accountant handles this" framing; useful for the FAQ phrasing on landlord-versus-agent responsibilities.
+- https://www.ukpropertyaccountants.co.uk/mtd-for-income-tax-key-compliance-questions-answered-for-landlords/ — VERIFIED ALIVE 2026-05-23. Q&A format covering agent involvement; useful for FAQ structure on the joint-owner-authorise-separately point.
 
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+If a session-time search surfaces a current ATT or CIOT technical-body article specifically on ASA + MTD ITSA, add it; the lndo.site URL was likely meant to be a CIOT/ATT staging draft. As of 2026-05-23 the public CIOT and ATT site URLs in the v2 universe do not have a dedicated published ASA-MTD-ITSA article.
 
 ---
 
@@ -68,9 +69,19 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this bucket
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite; add others found during research.
+
+- [HMRC ASA registration (gov.uk — the agent-side mechanics)](https://www.gov.uk/guidance/get-an-hmrc-agent-services-account)
+- [HMRC sign up your client for MTD ITSA (gov.uk — the agent-side MTD sign-up service)](https://www.gov.uk/guidance/sign-up-your-client-for-making-tax-digital-for-income-tax)
+- [HMRC Making Tax Digital for Income Tax — use the service (gov.uk)](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax)
+- [HMRC eligibility check for MTD ITSA (gov.uk)](https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax)
+- [HMRC compatible-software list for MTD ITSA (gov.uk)](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax)
+- [HMRC Agent Updates (gov.uk collection — current ASA / MTD ITSA agent guidance)](https://www.gov.uk/government/collections/agent-updates)
+- [FA 2017 Sch A1 / Sch 14 — MTD framework (legislation.gov.uk, the statutory basis for digital agent submission)](https://www.legislation.gov.uk/ukpga/2017/10/schedule/14)
+- [HMRC Property Income Manual (PIM) overview](https://www.gov.uk/hmrc-internal-manuals/property-income-manual)
+- House position §19.10 (ASA mechanics — Wave 4 extension) — internal tie-breaker for the authorisation step-list.
 
 ---
 

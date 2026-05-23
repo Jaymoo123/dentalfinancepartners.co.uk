@@ -14,9 +14,9 @@
 - **Suggested slug:** `mtd-itsa-choosing-software-by-landlord-scenario-decision-tree`
 - **Suggested category:** `making-tax-digital-mtd`
 - **Bucket:** MTD ITSA operational details
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (READ THIS CAREFULLY, defines what makes this page distinct):**
 
-> Software-per-scenario decision tree: single-property landlord (£10/mo bookkeeping suite vs free-tier vs spreadsheet+bridging), 5-10 property portfolio (full property-specific suite), HMO/multi-let with split tenancies, jointly owned (separate logins or shared subscription), foreign-property cohort, mixed self-employment + property cohort. Anti-recommendation framing (why we don't name single 'best' products); evaluation criteria checklist for the reader.
+> A scenario-led decision framework, NOT a product comparison or "best of" list. The page owns the **decision-tree mechanic**: given the landlord's facts (number of properties, joint ownership, HMO / multi-let split, foreign-property element, mixed self-employment), the framework outputs the software class fit (full property-specific SaaS / general bookkeeping suite / spreadsheet plus bridging / free-tier for one-property only) plus the evaluation-criteria checklist (foreign-income support, joint-owner split mechanic, ASA agent access, bank-feed integration, digital-link compliance per house position §19.14). Deliberately does NOT recommend specific products by name; cites the gov.uk compatible-software register as the authoritative list and explains why a tax firm shouldn't curate product picks. Distinct from the existing legacy `best-mtd-software-landlords-2026` and `landlord-accounting-software-uk-best-options-2026` pages, which are product-comparison content this page actively differentiates from.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,16 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+Fetch each URL using `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` then parse with `BeautifulSoup(html, "lxml")`. Read these as the "best-of" product-recommendation pattern this page deliberately departs from; extract evaluation criteria competitors use, then build a scenario-led framework that does not name product winners.
 
-- https://www.ukpropertyaccountants.co.uk/experts-pick-5-mtd-software-for-small-businesses-landlords/
-
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+- https://www.ukpropertyaccountants.co.uk/experts-pick-5-mtd-software-for-small-businesses-landlords/ — VERIFIED ALIVE 2026-05-23 (Stage 1 seed). Classic "top 5 list" framing. Useful for the evaluation-criteria the listicle implicitly uses (price, foreign-income support, bank feeds) which the decision-tree should make explicit. Do NOT replicate the product picks.
+- https://www.ukpropertyaccountants.co.uk/best-mtd-software-for-landlords-sole-traders-your-complete-guide-for-2025/ — VERIFIED ALIVE 2026-05-23. Longer listicle covering the same domain; useful for FAQ phrasing ("Which is best for a one-property landlord?") that this page reframes as decision-tree branches.
+- https://www.ukpropertyaccountants.co.uk/best-mtd-compatible-software-for-landlords-in-2025/ — VERIFIED ALIVE 2026-05-23. Another sibling listicle. Note how all three of these pages converge on the same 5-6 names; the framework lets the reader pick by fact pattern instead.
+- https://rentalbux.com/blogs/quickbooks-vs-freeagent-for-mtd-ai-native-or-bank-tied — VERIFIED ALIVE 2026-05-23. Single-comparison piece (commercial bias to flag); useful for the "bank-feed integration" evaluation-criterion branch.
+- https://rentalbux.com/blogs/freeagent-vs-sage-for-mtd-two-genuine-free-routes-compared — VERIFIED ALIVE 2026-05-23. Free-tier comparison; supports the "one-property single-landlord can run on free-tier" branch of the decision tree.
+- https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax — VERIFIED ALIVE 2026-05-23. Cited in body as the authoritative software register the page defers to instead of picking favourites.
 
 ---
 
@@ -68,9 +66,19 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this bucket
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite; add others found during research.
+
+- [HMRC compatible-software list for MTD ITSA (gov.uk — the authoritative register, cite directly)](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax)
+- [HMRC Making Tax Digital for Income Tax — use the service (gov.uk)](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax)
+- [HMRC eligibility check for MTD ITSA (gov.uk)](https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax)
+- [FA 2017 Sch A1 / Sch 14 — MTD framework (digital reporting obligations, legislation.gov.uk)](https://www.legislation.gov.uk/ukpga/2017/10/schedule/14)
+- [HMRC notice 700/22 (digital links, the rule the bridging-software branch defers to)](https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat)
+- [HMRC Property Income Manual (PIM) overview](https://www.gov.uk/hmrc-internal-manuals/property-income-manual)
+- [HMRC ASA registration (relevant where the framework branches on "agent files for me")](https://www.gov.uk/guidance/get-an-hmrc-agent-services-account)
+- [Spring Statement 2025 HTML (cite once to anchor the 15/30/31 + 3%/3%/10% penalty acceleration that makes software choice non-trivial)](https://www.gov.uk/government/publications/spring-statement-2025-document/spring-statement-2025-html)
+- House position §19.6 (software requirements) and §19.14 (digital-link rule) — internal tie-breakers.
 
 ---
 

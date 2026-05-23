@@ -14,9 +14,9 @@
 - **Suggested slug:** `mtd-itsa-late-submission-points-late-payment-15-30-31-worked`
 - **Suggested category:** `making-tax-digital-mtd`
 - **Bucket:** MTD ITSA operational details
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (READ THIS CAREFULLY, defines what makes this page distinct):**
 
-> Working examples of the points-based late-submission regime and the Spring Statement 2025 accelerated 15/30/31-day late-payment regime. Quarterly-points accumulation (4 points = £200 penalty, then £200 per missed update at threshold), 24-month reset rule. Late-payment worked examples at £2k / £10k / £30k unpaid tax across each trigger band, contrast with legacy non-MTD 2%/2%/4% on 31/46/91 days.
+> This page owns the **worked-example floor** for the MTD ITSA penalty regime within Wave 3+4 cluster. Wave 3 B6 (`mtd-itsa-letter-from-hmrc-what-to-do-next`) holds the action-checklist floor (process); Wave 3 B8 (`mtd-itsa-overview-six-changes-residential-landlords`) holds the overview floor (rule summary). B5 does NOT re-walk the rule and does NOT re-walk the action-list. B5 contributes: full points-accumulation walked through a 24-month timeline with re-set mechanic, multiple late-payment worked numerics across £2k / £10k / £30k unpaid tax at days 14, 15, 29, 30, 31, 90, 180, 365, and a side-by-side contrast block against the legacy FA 2021 Sch 26 non-MTD schedule (2%/2%/4% on 31/46/91 days) so a reader can see why MTD ITSA matters financially. House position §19.7 is the locked figure source: 15/30/31 + 3%/3%/10%; do NOT use 31/46/91 anywhere except in the explicit legacy-contrast paragraph that names it as legacy. Cross-link densely to B6 and B8; defer the rule-summary and action-list to them.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,17 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+Fetch each URL using `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` then parse with `BeautifulSoup(html, "lxml")`. **CRITICAL F-7/F-9 warning:** several competitor pages still print the legacy 31/46/91-day / 2%/2%/4% schedule for MTD ITSA. Cross-verify every figure against house position §19.7 (15/30/31 + 3%/3%/10%, per Spring Statement 2025). The Spring Statement 2025 HTML page is the primary citation.
 
-- https://www.ukpropertyaccountants.co.uk/mtd-for-income-tax-penalties-waived-for-the-first-year/
+- https://www.ukpropertyaccountants.co.uk/mtd-for-income-tax-penalties-waived-for-the-first-year/ — VERIFIED ALIVE 2026-05-23 (Stage 1 seed). Covers the first-year waiver framing on the points side; does NOT cite the 15/30/31 figures (silent on day-triggers). Useful for the late-submission first-year context, NOT a source for late-payment figures.
+- https://rentalbux.com/blogs/hmrcs-new-mtd-penalties-is-your-software-ready-april-2026 — VERIFIED ALIVE 2026-05-23. Penalty-focused commercial piece; cross-verify every figure quoted against §19.7 before citing.
+- https://rentalbux.com/blogs/what-are-the-mtd-penalties-for-non-compliance — VERIFIED ALIVE 2026-05-23. Penalty overview piece; useful for FAQ phrasing on the points-reset mechanic. Cross-verify every percentage and day figure.
+- https://rentalbux.com/blogs/penalties-change-for-making-tax-digital-for-income-tax-volunteers — VERIFIED ALIVE 2026-05-23. Voluntary-pilot-cohort penalty context; useful for the section explaining how the regime applies to early adopters from 2025/26.
+- https://www.gov.uk/government/publications/spring-statement-2025-document/spring-statement-2025-html — VERIFIED ALIVE 2026-05-23. **Primary authority.** Contains the verbatim 15/30/31 + 3%/3%/10% wording; cite for every late-payment figure used.
 
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Do NOT cite as sources:** the existing on-site stale pages `mtd-rental-income-threshold-exemptions`, `mtd-quarterly-reporting-landlords-step-by-step-guide`, and `mtd-penalties-landlords-miss-deadline` (F-7 / F-9 back-patches were partial; these may still contain residual 31/46/91 references in body or FAQ). Cite house position §19.7 + the Spring Statement 2025 HTML page instead.
 
 ---
 
@@ -68,9 +67,19 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this bucket
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite; add others found during research. **Spring Statement 2025 HTML is mandatory.**
+
+- [Spring Statement 2025 HTML — verbatim 15/30/31 + 3%/3%/10% wording (gov.uk, primary authority for the worked-example figures)](https://www.gov.uk/government/publications/spring-statement-2025-document/spring-statement-2025-html)
+- [FA 2021 Sch 24 / 25 / 26 — penalty regime statute (legislation.gov.uk; Sch 26 is the legacy late-payment schedule that the legacy-contrast block names)](https://www.legislation.gov.uk/ukpga/2021/26)
+- [FA 2017 Sch A1 / Sch 14 — MTD framework (legislation.gov.uk)](https://www.legislation.gov.uk/ukpga/2017/10/schedule/14)
+- [HMRC Making Tax Digital for Income Tax — use the service (gov.uk)](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax)
+- [HMRC eligibility check for MTD ITSA (gov.uk)](https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax)
+- [HMRC penalty regime guidance (gov.uk Compliance Handbook section on points-based penalties)](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook)
+- [HMRC interest rates on overdue tax (gov.uk; useful for the £2k / £10k / £30k worked example interest column)](https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments)
+- [HMRC Property Income Manual (PIM) overview](https://www.gov.uk/hmrc-internal-manuals/property-income-manual)
+- House position §19.7 (penalty regime — corrected 2026-05-22) — the locked figure source. Internal tie-breaker.
 
 ---
 

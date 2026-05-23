@@ -14,9 +14,9 @@
 - **Suggested slug:** `alphabet-shares-property-spv-dividend-splitting-spouse-children`
 - **Suggested category:** `incorporation-and-company-structures`
 - **Bucket:** LtdCo mechanics + FIC depth
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> Alphabet share-class structures in a property SPV: A / B / C shares carrying differential dividend rights to spouse and adult children. The settlements legislation (ITTOIA 2005 s.624) and the Arctic Systems carve-out, why share-class dividend splitting between spouses works for outright gifts of ordinary shares but generates settlement-anti-avoidance risk for child gifts.
+> Alphabet share-class design in a property SPV as an **income-tax tactic for the current tax year**: A / B / C ordinary shares each carrying their own dividend right, declared independently, so the controlling shareholder can flex dividend declarations to use a spouse's basic-rate band or an adult child's PA + dividend allowance. The mechanic this page owns is the §21.2 settlements-legislation boundary: outright gift of ordinary shares to a spouse falls within the s.626 spouse-exception confirmed by *Jones v Garnett (Arctic Systems)* [2007] UKHL 35, so dividends are not re-attributed to the founder; gifts to a minor child stay within s.624 (income attributed back to the settlor); gifts to an adult child generally work only where the share is a genuine ordinary share with no retained benefit and no growth-only carve-out. This page is the income-now mechanic, not the IHT planning mechanic (defer growth-share / freezer-share + 7-year-PET framing to A9 and to FIC pages C7 / A9).
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,17 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+**Stage 1 seed URL** (`tlpi.co.uk/case-studies/fic-for-income-returns-and-protected-legacy`) **is on-topic for FIC income mechanics but not directly on alphabet shares as an SPV income-tax tactic.** Stage 2 retains it as colour for the "income returns to founder" angle and adds 3 alphabet/settlements-specific siblings as primary references.
 
-- https://www.tlpi.co.uk/case-studies/fic-for-income-returns-and-protected-legacy
+- https://www.taxaccountant.co.uk/the-famous-arctic-systems-case/ — **NEW PRIMARY.** VERIFIED ALIVE 2026-05-23. Direct on-topic coverage of *Jones v Garnett (Arctic Systems)* and the settlements legislation s.624 / s.626. Critical for the legal anchor; the page must lead with the Arctic Systems carve-out mechanic.
+- https://www.ukpropertyaccountants.co.uk/freezer-shares-and-growth-shares-in-family-investment-companies/ — VERIFIED ALIVE 2026-05-23. Strong on the share-class taxonomy (freezer / growth / preference / alphabet) used in property SPVs and FICs; useful as the design-vocabulary reference. Anti-templating note: cite for taxonomy only; do NOT replicate the FIC IHT framing here, that belongs in A9 / C7.
+- https://www.tlpi.co.uk/case-studies/fic-for-income-returns-and-protected-legacy — VERIFIED ALIVE 2026-05-23. Stage 1 seed retained as colour reference for "income returns to founder via the SPV" angle; commercial bias to flag (TLPI is a specialist FIC firm).
+- https://www.taxaccountant.co.uk/family-investment-company-tax-planning/ — VERIFIED ALIVE 2026-05-23. Wider FIC tax-planning frame; useful for FAQ patterns on spouse / adult-child dividend questions.
+- https://www.ukpropertyaccountants.co.uk/a-complete-guide-to-family-investment-companies-fics/ — VERIFIED ALIVE 2026-05-23. Comprehensive FIC explainer; useful for outline pattern + FAQ density.
 
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Fetch + read + extract instruction (session):** Fetch each URL via `httpx.get(url, timeout=30, follow_redirects=True, headers={"User-Agent": "Mozilla/5.0"})` then parse with BeautifulSoup (lxml). For each, extract: H2/H3 outline, FAQ patterns (spouse share questions, minor child questions, settlement risk questions), worked numerical examples (income-tax allocations across A/B/C classes), citation density (s.624 / s.626 / Arctic Systems / HMRC TSEM), component patterns (allocation tables, decision trees on "can I give shares to my child"). Borrow outline-shape, NOT figures or sentences.
 
 ---
 
@@ -68,9 +67,20 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this page (Stage 2 populated 2026-05-23)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite.
+
+- [ITTOIA 2005 s.624 (settlements legislation, income attribution)](https://www.legislation.gov.uk/ukpga/2005/5/section/624)
+- [ITTOIA 2005 s.625 (settlor's spouse defined)](https://www.legislation.gov.uk/ukpga/2005/5/section/625)
+- [ITTOIA 2005 s.626 (spouse exception: outright-gift carve-out)](https://www.legislation.gov.uk/ukpga/2005/5/section/626)
+- [*Jones v Garnett (Arctic Systems)* [2007] UKHL 35 (BAILII)](https://www.bailii.org/uk/cases/UKHL/2007/35.html)
+- [ITTOIA 2005 s.629+ (income paid to or for the benefit of unmarried minor children, settlor-attribution)](https://www.legislation.gov.uk/ukpga/2005/5/section/629)
+- [HMRC TSEM4205+ (settlements legislation, shares-as-settlement guidance, Trusts, Settlements and Estates Manual)](https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem4205)
+- [HMRC TSEM4300+ (settlements: outright gifts between spouses, s.626 application)](https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem4305)
+- [CA 2006 s.21 (alteration of articles), s.284 (votes on resolutions), s.629 (classes of shares)](https://www.legislation.gov.uk/ukpga/2006/46/section/629)
+- [HMRC ERSM (Employment-Related Securities Manual) ERSM110000+ (share-acquisition employment-tax interaction, applies where the alphabet-share recipient is a director / employee)](https://www.gov.uk/hmrc-internal-manuals/employment-related-securities/ersm110000)
+- [HMRC CTM (Company Taxation Manual) section on dividend declaration mechanics CTM15205+](https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm15205)
 
 ---
 

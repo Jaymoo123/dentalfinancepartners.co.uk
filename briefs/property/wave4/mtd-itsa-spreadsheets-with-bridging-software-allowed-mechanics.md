@@ -14,9 +14,9 @@
 - **Suggested slug:** `mtd-itsa-spreadsheets-with-bridging-software-allowed-mechanics`
 - **Suggested category:** `making-tax-digital-mtd`
 - **Bucket:** MTD ITSA operational details
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (READ THIS CAREFULLY, defines what makes this page distinct):**
 
-> Spreadsheet plus HMRC-recognised bridging software: §19.6 confirms this is allowed. This page works the operational layer: what counts as a 'digital link' from spreadsheet to API (copy-paste does NOT, cell references / formulae / linked tables DO), spreadsheet structural requirements (categorised columns matching the SA105 categories), the bridging-vendor shortlist on the HMRC list, and the spreadsheet-discipline checklist (versioning, backup, audit trail).
+> The operational mechanics of running MTD ITSA on a spreadsheet + HMRC-recognised bridging software, per house position §19.14. §19.6 + §19.14 confirm this is allowed; this page operationalises it. Covers: the **digital-link rule** (HMRC notice 700/22 adapted for MTD ITSA — cell references, formulae, linked tables, API extracts, CSV import via script all count; copy-paste, manual re-keying, screen-reading do NOT), the spreadsheet **column-discipline** required (categorised columns mapping to SA105 categories — gross rental, agent fees, repairs, insurance, council tax, finance costs, other), and the **bridging-vendor selection** rule (defer to gov.uk compatible-software list; do NOT name specific vendors in body because the list changes). Includes a worked spreadsheet-cell example showing a compliant vs non-compliant data flow into a bridging tool. Distinct from B2 (software decision-tree by scenario) which evaluates routes at a strategic level; B8 owns the digital-link compliance mechanic specifically.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,16 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+Fetch each URL using `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` then parse with `BeautifulSoup(html, "lxml")`. Read for the digital-link definition phrasing, copy-paste prohibition examples, and any worked spreadsheet-cell diagrams worth borrowing structurally.
 
-- https://bhp.co.uk/news-events/blog/mtd-what-are-digital-links/
-
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+- https://bhp.co.uk/news-events/blog/mtd-what-are-digital-links/ — VERIFIED ALIVE 2026-05-23 (Stage 1 seed). Practitioner-firm explainer rooted in the VAT MTD digital-links rule; useful for the rule-statement structure. Verify the specific "soft landing" / transition-period mentions are not stale (the VAT MTD soft landing has long expired).
+- https://bhp.co.uk/news-events/blog/making-tax-digital-mtd-are-you-prepared-for-the-next-stage-of-mtd-digital-links/ — VERIFIED ALIVE 2026-05-23. Sibling BHP article; useful for the FAQ phrasing on the practical landlord-side compliance steps.
+- https://rentalbux.com/blogs/mtd-bridging-software — VERIFIED ALIVE 2026-05-23. Bridging-software overview from a vendor (commercial bias to flag); useful for the "what does bridging software actually do" outline.
+- https://rentalbux.com/blogs/understanding-mtd-bridging-software-benefits — VERIFIED ALIVE 2026-05-23. Sibling vendor piece; useful for the spreadsheet-to-API data-flow diagrams competitor pages tend to use.
+- https://rentalbux.com/blogs/excel-making-tax-digital-complete-guide-uk-landlords — VERIFIED ALIVE 2026-05-23. Excel-specific MTD landlord guide; useful for the column-discipline section (categorisation patterns).
+- https://fhpaccounting.co.uk/from-spreadsheets-to-xero-a-practical-migration-plan-for-small-businesses-to-streamline-accounting/ — VERIFIED ALIVE 2026-05-23. Inverse case (migrating away from spreadsheets); useful for the contrast paragraph on when spreadsheet + bridging is sensible vs when a full SaaS suite is.
 
 ---
 
@@ -68,9 +66,19 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this bucket
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite; add others found during research.
+
+- [HMRC notice 700/22 — Making Tax Digital for VAT (digital-link rule that MTD ITSA adapts; gov.uk)](https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat)
+- [HMRC compatible-software list for MTD ITSA — includes bridging vendors (gov.uk)](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax)
+- [HMRC Making Tax Digital for Income Tax — use the service (gov.uk)](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax)
+- [HMRC eligibility check for MTD ITSA (gov.uk)](https://www.gov.uk/guidance/check-if-youre-eligible-to-use-making-tax-digital-for-income-tax)
+- [FA 2017 Sch A1 / Sch 14 — MTD framework (legislation.gov.uk; statutory basis for "digital records")](https://www.legislation.gov.uk/ukpga/2017/10/schedule/14)
+- [HMRC Property Income Manual (PIM) overview — SA105 categories](https://www.gov.uk/hmrc-internal-manuals/property-income-manual)
+- [TMA 1970 s.12B — records retention (legislation.gov.uk)](https://www.legislation.gov.uk/ukpga/1970/9/section/12B)
+- [HMRC Compliance Handbook — record-keeping standards (gov.uk)](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook)
+- House position §19.14 (spreadsheet + bridging digital-link rule — Wave 4 extension) and §19.6 (software requirements) — internal tie-breakers.
 
 ---
 

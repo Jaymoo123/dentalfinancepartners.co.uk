@@ -14,9 +14,9 @@
 - **Suggested slug:** `iht-gift-with-reservation-letting-children-paying-rent-mechanics`
 - **Suggested category:** `landlord-tax-essentials`
 - **Bucket:** IHT estate planning for landlords
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> The GROB s.102 FA 1986 mechanics specific to lettings: parent gifts a let property to adult children. Where the parent retains any benefit (collecting the rent, occupying the property, guarantor on the mortgage), GROB applies. Worked examples on the rent-payment-out test, FA 1986 Sch 20 para 6 carve-out for donor-occupation-with-cost-sharing, and the POAT election (IHT500). Distinct from Wave 2 GROB-of-home page by focussing on let-property gifting.
+> Wave 2's `iht-gifts-with-reservation-of-benefit-property` covers the family-home GROB pattern (parent gifts home + keeps living there). This page owns the let-property variant: parent gifts a tenanted BTL to adult children but continues to take a share of the rental income, remains on the mortgage as guarantor, or steps in to manage maintenance. The mechanic is still s.102 FA 1986, but the "benefit reserved" test pivots on cash flow rather than occupation: any post-gift rent receipt by the donor, or any continuing donor liability under the mortgage that the children indemnify, will trip GROB and re-include the property in the donor's estate. Worked examples cover the rent-payment-out test, the FA 1986 Sch 20 para 6 carve-out (narrow, scrutinised), and the POAT IHT500 election where GROB is dodged but benefit continues. Cross-link to Wave 2 family-home GROB and to Wave 4 C4 (7-year-clock direct property gifting) for the clean-gift route.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,16 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 populated, 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+**Fetch + read + extract instruction:** For each URL below, fetch with httpx (follow_redirects=True, timeout=30, User-Agent "Mozilla/5.0"), parse with BeautifulSoup (lxml). Extract H2/H3 outline, FAQ density on the rent-payment-out test, treatment of Sch 20 para 6 carve-out, treatment of POAT election (IHT500). Differentiator: legal-led competitors lead with the home-gift trap; our angle is the let-property variant where the donor's "benefit" is rental cash flow not occupation.
 
-- https://www.boltburdon.co.uk/blogs/a-t-p-avoid-the-pitfall-i-want-to-transfer-my-house-to-my-children-to-avoid-inheritance-tax
+- https://www.boltburdon.co.uk/blogs/a-t-p-avoid-the-pitfall-i-want-to-transfer-my-house-to-my-children-to-avoid-inheritance-tax — Stage 1 seed. **Verification note: 2026-05-23 fetch returned connection-reset (CDN bot protection at TCP layer). URL is in Stage 1 selection and in v2 working set; session to verify in-browser at write time.** Legal-services firm, strong GROB content.
+- https://www.taxaccountant.co.uk/inheritance-tax-and-gifting-property/ — Sibling within v2 working set domain; session to verify at write time. Likely covers GROB rules at general level useful for the family-home contrast.
+- https://www.ukpropertyaccountants.co.uk/gifting-property-iht-rules/ — Property-tax-specialist domain; useful for the cash-flow-as-benefit angle.
+- https://www.mytaxaccountant.co.uk/post/gifts-with-reservation-of-benefit — Sibling within v2 working set domain; session to verify at write time. Likely FAQ-heavy, useful for phrasing.
 
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Borrowable patterns:** Bolt Burdon (when accessible) is structured around "the trap" pattern; we adopt the same trap-then-mechanic shape but the trap is the rent receipt, not the residence. Avoid replicating legal-services-firm tone (overly cautious "speak to a solicitor"); we are a tax-accountant voice, so worked examples should be specific (£18k/year rental on a £400k property, post-gift donor retention of 50% = full GROB inclusion of property value at death).
 
 ---
 
@@ -68,9 +66,18 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering (Stage 2 populated, 2026-05-23 — session selects 4-7)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+- FA 1986 s.102 (gifts with reservation): https://www.legislation.gov.uk/ukpga/1986/41/section/102
+- FA 1986 Sch 20 (gifts with reservation: supplementary; para 6 cost-sharing carve-out): https://www.legislation.gov.uk/ukpga/1986/41/schedule/20
+- FA 2004 Sch 15 (Pre-Owned Assets Tax / POAT): https://www.legislation.gov.uk/ukpga/2004/12/schedule/15
+- HMRC IHT500 (election that POAT property is treated as GROB): https://www.gov.uk/government/publications/inheritance-tax-election-for-inheritance-tax-to-apply-to-asset-previously-owned-iht500
+- HMRC IHTM14000+ (gifts and exempt transfers): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm14000
+- HMRC IHTM14301+ (gifts with reservation overview): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm14301
+- HMRC IHTM14333+ (gifts with reservation, exclusion of donor / rent payment): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm14333
+- IHTA 1984 s.7 (rates of charge): https://www.legislation.gov.uk/ukpga/1984/51/section/7
+- HMRC IHT400 (estate account, GROB inclusion line): https://www.gov.uk/government/publications/inheritance-tax-inheritance-tax-account-iht400
+- IHTA 1984 s.105 (BPR — for the contrast with letting-business framing): https://www.legislation.gov.uk/ukpga/1984/51/section/105
 
 ---
 

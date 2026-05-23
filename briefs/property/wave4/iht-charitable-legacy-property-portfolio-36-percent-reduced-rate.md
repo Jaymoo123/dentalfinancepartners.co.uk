@@ -14,9 +14,9 @@
 - **Suggested slug:** `iht-charitable-legacy-property-portfolio-36-percent-reduced-rate`
 - **Suggested category:** `landlord-tax-essentials`
 - **Bucket:** IHT estate planning for landlords
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> Reduced 36% IHT rate where ≥10% of net estate goes to charity (IHTA 1984 Sch 1A): how a landlord with a £2m+ portfolio engineers the qualifying-charity threshold, the components-of-the-estate test (general / survivorship / settled), specific-property charitable bequests vs residue-share bequests, and the mathematical break-point where the 36% rate plus the charity gift outperforms a 40% rate on the larger residue.
+> Net-new on our site. The page owns the Sch 1A IHTA 1984 mechanics applied to landlord estates: where 10% or more of the relevant "components of the estate" (general / survivorship / settled, per Sch 1A) pass to qualifying charity, the IHT rate on that component drops from 40% to 36%. For a portfolio landlord at £2m+, the maths often makes the gift "self-funding" because the 36% saving on the bigger residue net of the charity gift is close to (and at some break-points exceeds) the size of the charity gift itself. The page walks the components-test, the merger election (Sch 1A para 7) where a testator wants to apply the 10% threshold across combined components rather than each separately, specific-property bequests (gifting the £200k BTL to charity) vs residue-share bequests (gifting 10% of residue), and the break-point worked example. Cross-link to Wave 4 C5 (deed of variation) which can be used post-death to trigger the 36% rate where the original will did not.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,16 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 populated, 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+**Fetch + read + extract instruction:** For each URL below, fetch with httpx (follow_redirects=True, timeout=30, User-Agent "Mozilla/5.0"), parse with BeautifulSoup (lxml). Extract H2/H3 outline, treatment of the 10% threshold (per component or combined?), treatment of the merger election (Sch 1A para 7), treatment of the break-point maths. Differentiator: landlord-portfolio worked example at £2m+ rather than will-writer-generic explainer.
 
-- https://www.boltburdon.co.uk/blogs/charity-begins-at-home-how-including-a-charitable-gift-in-your-will-can-reduce-inheritance-tax
+- https://www.boltburdon.co.uk/blogs/charity-begins-at-home-how-including-a-charitable-gift-in-your-will-can-reduce-inheritance-tax — Stage 1 seed. **Verification note: 2026-05-23 fetch returned connection-reset (CDN bot protection at TCP layer). URL is in Stage 1 selection and in v2 working set; session to verify in-browser at write time.** Legal-services firm, strong charity-legacy content.
+- https://www.taxaccountant.co.uk/charitable-legacy-inheritance-tax/ — Sibling within v2 working set domain; session to verify at write time. Likely covers the Sch 1A mechanic from a tax-accountant angle.
+- https://www.mytaxaccountant.co.uk/post/iht-reduced-rate-charitable-giving — Sibling within v2 working set; session to verify at write time. Useful for the FAQ phrasing baseline.
+- https://www.ukpropertyaccountants.co.uk/inheritance-tax-planning-for-property-investors/ — Property-tax-specialist domain; useful for the portfolio-context framing.
 
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Borrowable patterns:** Bolt Burdon (when accessible) leads with the "charity begins at home" angle on rate-reduction. Our differentiator: a worked break-point example on a specific landlord estate. E.g. £2.0m estate with no charity gift = £600k IHT (40% on £1.5m above £500k spousal NRB+RNRB position); with a £200k gift to charity, the chargeable component is £1.3m at 36% = £468k; net to family from £2.0m moves from £1.4m to £1.332m. Show readers the actual cost to family of triggering the 36% rate, and the inflection above which charity gift is self-funding for the family.
 
 ---
 
@@ -68,9 +66,18 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering (Stage 2 populated, 2026-05-23 — session selects 4-7)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+- IHTA 1984 Sch 1A (reduced rate of tax where 10% or more of net estate left to charity): https://www.legislation.gov.uk/ukpga/1984/51/schedule/1A
+- IHTA 1984 s.23 (gifts to charities — full exemption on the gift): https://www.legislation.gov.uk/ukpga/1984/51/section/23
+- IHTA 1984 s.142 (deed of variation, to retro-engineer the 36% trigger): https://www.legislation.gov.uk/ukpga/1984/51/section/142
+- HMRC IHTM43000+ (charitable rate overview): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm43001
+- HMRC IHTM44000+ (10% test mechanics): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm44000
+- HMRC IHT430 (claim for charitable rate reduction): https://www.gov.uk/government/publications/inheritance-tax-reduced-rate-of-inheritance-tax-iht430
+- gov.uk reduced rate guidance: https://www.gov.uk/government/publications/inheritance-tax-reduced-rate-calculator-iht430
+- IHTA 1984 s.7 (rate of charge, baseline for 40% comparison): https://www.legislation.gov.uk/ukpga/1984/51/section/7
+- Charity Commission "find a charity" register (for qualifying-charity verification): https://www.gov.uk/find-charity-information
+- Sch 1A para 7 (merger election to combine components): https://www.legislation.gov.uk/ukpga/1984/51/schedule/1A (sub-paragraph 7)
 
 ---
 

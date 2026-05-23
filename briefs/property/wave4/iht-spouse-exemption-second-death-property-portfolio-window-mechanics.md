@@ -14,9 +14,9 @@
 - **Suggested slug:** `iht-spouse-exemption-second-death-property-portfolio-window-mechanics`
 - **Suggested category:** `landlord-tax-essentials`
 - **Bucket:** IHT estate planning for landlords
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> The spouse-exemption + second-death window for landlord estates: full s.18 IHTA 1984 spouse exemption on first death, the planning window between first and second death, transferable NRB and RNRB (IHT402 / IHT436 within 2 years of second death), and the trap where the surviving spouse retains a large portfolio until second death and triggers RNRB taper above £2m. Property-specific worked examples on the consolidation question.
+> The page owns the second-death-window planning angle for landlord couples. On first death, s.18 IHTA 1984 gives unlimited spouse exemption; the portfolio consolidates in the surviving spouse's hands tax-free, but the consolidated estate then faces full IHT at second death and is highly likely to cross the £2m RNRB taper threshold once a multi-property portfolio sits in one name. The page walks the surviving-spouse decision tree: gift down during life (PETs / 7-year clock per Wave 4 C4), equalise via deed of variation in the 2-year window (per Wave 4 C5), strip value via charity legacy (per Wave 4 C9), or accept the second-death IHT hit and plan liquidity. Distinct from Wave 2's `iht-nrb-rnrb-landlord-portfolio-allocation` (allowance mechanics) by being scenario-led on the consolidation question and the TNRB / TRNRB claim mechanics (IHT402 / IHT436 within 2 years of second death).
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,16 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 populated, 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+**Fetch + read + extract instruction:** For each URL below, fetch with httpx (follow_redirects=True, timeout=30, User-Agent "Mozilla/5.0"), parse with BeautifulSoup (lxml). Extract H2/H3 outline, FAQ density, TNRB / TRNRB claim-form coverage, worked-example treatment for RNRB taper above £2m. Our differentiator is portfolio-specific: competitor outlines tend to be will-writer-led; we want consolidation-window strategy.
 
-- https://www.mytaxaccountant.co.uk/post/does-iht-allowance-pass-to-spouse
+- https://www.mytaxaccountant.co.uk/post/does-iht-allowance-pass-to-spouse — Stage 1 seed, verified live 2026-05-23 (200). Light coverage of TNRB transfer rules; useful for FAQ phrasing on the most common reader question.
+- https://www.taxaccountant.co.uk/inheritance-tax-spouse-transfer-allowance/ — Sibling within v2 working set domain; session to verify at write time. Likely covers the IHT402 mechanics in more depth.
+- https://www.ukpropertyaccountants.co.uk/inheritance-tax-planning-for-property-investors/ — Property-tax-specialist domain (v2 working set, 13 SERP appearances); useful for the property-portfolio angle on RNRB taper.
+- https://www.hwfisher.co.uk/inheritance-tax-planning/ — Mid-market accountant in v2 working set; useful for the consolidation-window decision-tree framing.
 
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Borrowable patterns:** mytaxaccountant FAQs are will-writer-flavoured (mechanical IHT402 questions). Our discipline: cover the IHT402 / IHT436 claim mechanics tightly, then pivot to scenario worked examples for a £1.4m / £2.2m / £3m portfolio at second death.
 
 ---
 
@@ -68,9 +66,18 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering (Stage 2 populated, 2026-05-23 — session selects 4-7)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+- IHTA 1984 s.18 (spouse / civil-partner exemption): https://www.legislation.gov.uk/ukpga/1984/51/section/18
+- IHTA 1984 s.8A (TNRB transferable nil-rate band): https://www.legislation.gov.uk/ukpga/1984/51/section/8A
+- IHTA 1984 ss.8FA-8FE (RNRB downsizing addition + transferable RNRB): https://www.legislation.gov.uk/ukpga/1984/51/contents (section anchors via contents).
+- IHTA 1984 s.267ZA (election to be treated as long-term-resident, for non-UK spouse): https://www.legislation.gov.uk/ukpga/1984/51/section/267ZA
+- HMRC IHTM43000+ (transferable nil-rate band): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm43001
+- HMRC IHT402 (claim TNRB): https://www.gov.uk/government/publications/inheritance-tax-claim-to-transfer-unused-nil-rate-band-iht402
+- HMRC IHT436 (claim TRNRB): https://www.gov.uk/government/publications/inheritance-tax-claim-for-residence-nil-rate-band-iht436
+- HMRC IHT400 (estate account): https://www.gov.uk/government/publications/inheritance-tax-inheritance-tax-account-iht400
+- gov.uk RNRB taper guidance: https://www.gov.uk/guidance/inheritance-tax-residence-nil-rate-band
+- Autumn Budget 2024 (NRB / RNRB freeze to April 2030): https://www.gov.uk/government/publications/autumn-budget-2024
 
 ---
 

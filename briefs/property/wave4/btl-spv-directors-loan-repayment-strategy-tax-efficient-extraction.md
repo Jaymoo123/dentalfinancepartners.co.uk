@@ -14,9 +14,9 @@
 - **Suggested slug:** `btl-spv-directors-loan-repayment-strategy-tax-efficient-extraction`
 - **Suggested category:** `incorporation-and-company-structures`
 - **Bucket:** LtdCo mechanics + FIC depth
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> Director's-loan-account post-incorporation: how a credit balance built from the s.162 incorporation transfer is repaid tax-free, the order-of-extraction question (DLA first, dividends, salary, pension), interest on DLA credit balances at HMRC's official rate, and the loan-replenishment trap where rent receipts are drawn early and exhaust the DLA before tax-efficient timing.
+> Director's-loan-account post-incorporation as an extraction *sequence* problem: a credit balance built from s.162 incorporation transfer is the founder's tax-free repayment runway, but the order (DLA principal first, then HMRC-official-rate interest on the credit balance, then dividends, then salary, then employer pension) determines marginal-rate exposure for 5-15 years. The distinct mechanic this page owns is the **DLA exhaustion trap**: founder draws rent receipts monthly as DLA repayment, exhausts a £500k credit balance inside 4-5 years per §21.1, then is forced into higher-rate dividends earlier than the original s.162 plan assumed. This page is repayment-sequence + replenishment strategy + s.455 debit-balance avoidance; it does NOT recompute 2026/27 marginal rates (defer to A5 salary-vs-dividends), and it does NOT re-walk the basic DLA bookkeeping mechanic (defer to the existing on-site DLA mechanics page).
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,19 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+**Stage 1 seed URL is REASSIGNED.** Original Stage 1 seed (`uklandlordtax.co.uk/should-i-change-my-btl-limited-company-year-end/`) is on the A3 year-end topic and was misrouted to this brief. Stage 2 has replaced with the topic-correct uklandlordtax DLA article + added 3 strong siblings from the v2 working set.
 
-- https://uklandlordtax.co.uk/should-i-change-my-btl-limited-company-year-end/
+- https://uklandlordtax.co.uk/your-btl-limited-company-and-directors-loan-account/ — **NEW PRIMARY (replaces misrouted seed).** VERIFIED ALIVE 2026-05-23. Specialist BTL accountant writeup of DLA in a property-SPV context; covers credit-balance mechanics, repayment routes, official-rate interest; useful for the property-investor lens (most DLA content is generalist).
+- https://www.ukpropertyaccountants.co.uk/directors-loan-accountsdla-uk-guide/ — VERIFIED ALIVE 2026-05-23. Broader DLA guide; good for outline + FAQ structure, scenario coverage (overdrawn DLA, written-off DLA, beneficial-loan benefit-in-kind), s.455 mechanics.
+- https://www.ukpropertyaccountants.co.uk/directors-loan-write-offs-a-comprehensive-guide-to-hmrcs-latest-crackdown/ — VERIFIED ALIVE 2026-05-23. Specialist coverage of the HMRC write-off enquiry pattern; gives the page a stronger "what HMRC actually challenges" section.
+- https://www.taxaccountant.co.uk/directors-loans-tax-implications/ — VERIFIED ALIVE 2026-05-23. General-practice firm coverage of DLA in / out flows; useful for FAQ phrasing parity.
+- https://www.shipleystax.com/2019/08/tax-efficient-profit-extraction/ — VERIFIED ALIVE 2026-05-23. Specialist tax firm; the wider profit-extraction frame (DLA + dividends + salary + pension), useful for the *sequence* angle this page owns.
 
-**Stage 2 to do:**
+**Fetch + read + extract instruction (session):** Fetch each URL via `httpx.get(url, timeout=30, follow_redirects=True, headers={"User-Agent": "Mozilla/5.0"})` then parse with BeautifulSoup (lxml). For each, extract: H2/H3 outline, FAQ block (if any), any worked numerical example (figures, scenario, marginal rates used), citation density (legislation.gov.uk, HMRC manual links), and component patterns (tables, decision trees, callouts). Borrow outline-shape, NOT figures or sentences. Stage 1 seed-URL reassignment logged here; session does NOT need to re-investigate.
 
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Stage 2 note on missing v2 colour:** the v2 universe also surfaced boltburdon.co.uk for corporate-wrapper content but the live URL `/blogs/sweet-deal-corporate-wrappers-...` was blocked at TLS handshake during Stage 2 verification (probable Cloudflare bot-protection variance, not a real 404). Session may try with a browser User-Agent at write time; if still blocked, treat as out-of-scope and rely on the five primary URLs above plus authority links.
 
 ---
 
@@ -68,9 +69,20 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this page (Stage 2 populated 2026-05-23)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite; the list is intentionally over-supplied so the session has substitution room.
+
+- [CTA 2010 s.455 (loans to participators, 33.75% charge on overdrawn DLA)](https://www.legislation.gov.uk/ukpga/2010/4/section/455)
+- [CTA 2010 s.453 (close-company benefits to participators framework)](https://www.legislation.gov.uk/ukpga/2010/4/section/453)
+- [CTA 2010 s.18N (CIHC qualifying-purpose carve-out, anchors why most BTL SPVs aren't CIHCs per §21.5)](https://www.legislation.gov.uk/ukpga/2010/4/section/18N)
+- [HMRC CTM61500+ (loans-to-participators technical guidance, Company Taxation Manual)](https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm61500)
+- [HMRC EIM26101+ (beneficial loans, official rate of interest, employee benefits)](https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim26101)
+- [HMRC "Beneficial loan arrangements — HMRC official rates" (quarterly published rate, verify at write time)](https://www.gov.uk/government/publications/rates-and-allowances-beneficial-loan-arrangements-hmrc-official-rates)
+- [TCGA 1992 s.162 (incorporation relief, anchors the credit-balance origin)](https://www.legislation.gov.uk/ukpga/1992/12/section/162)
+- [ITTOIA 2005 s.272 (rental income basis, anchors what gets credited / drawn through the company)](https://www.legislation.gov.uk/ukpga/2005/5/section/272)
+- [HMRC PIM (Property Income Manual, overview)](https://www.gov.uk/hmrc-internal-manuals/property-income-manual)
+- [HMRC SAIM9000+ (savings and investment income, treatment of director-loan interest paid)](https://www.gov.uk/hmrc-internal-manuals/savings-and-investment-manual/saim9000)
 
 ---
 

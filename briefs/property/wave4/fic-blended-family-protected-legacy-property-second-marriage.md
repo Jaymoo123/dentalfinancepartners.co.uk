@@ -14,9 +14,9 @@
 - **Suggested slug:** `fic-blended-family-protected-legacy-property-second-marriage`
 - **Suggested category:** `incorporation-and-company-structures`
 - **Bucket:** LtdCo mechanics + FIC depth (FIC sub-thread)
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> Property FIC as a vehicle for protecting first-marriage children's inheritance through a second marriage: ring-fenced share classes settling on first-marriage children, life-interest equivalent via dividend coupons to surviving spouse, prevention of forced marital-property re-allocation on second-spouse death. Compares with the will + trust route (immediate-post-death-interest trusts, IPDI) and identifies where FIC out-performs (control during life, fewer trust-tax friction events).
+> The property FIC as a vehicle for the **blended-family / second-marriage** use case: a founder with first-marriage adult children who is now in a second marriage wants to (i) provide income to the second spouse during their life, (ii) prevent first-marriage children's inherited portfolio being re-routed on the second spouse's later death, (iii) maintain founder-control while alive. The mechanic this page owns is the bespoke share-class settlement: growth shares vested in first-marriage children (often via 18-25 trust or bare trust if minor), preference shares retaining income coupon for founder and contingently for surviving spouse, articles drafting that locks out second-marriage children from the growth class. Compare with the will-and-trust alternative: IPDI (immediate-post-death-interest) testamentary trust gives a comparable outcome but with trust-tax friction (s.49 + s.62 IHTA mechanics, 10-year periodic charges if discretionary) and only takes effect on death; FIC operates during life. This page is the **persona-specific use case**; it is NOT articles-drafting in the abstract (defer to A6), NOT the share-gift PET mechanic (defer to A9), NOT in-life retirement income (defer to A8), NOT the strategic-IHT value-freeze framing (defer to C7).
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,16 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+- https://www.tlpi.co.uk/case-studies/protecting-a-late-husbands-property-legacy-with-a-fic — **STAGE 1 SEED, retained as primary.** VERIFIED ALIVE 2026-05-23. Canonical blended-family / protected-legacy use case via FIC; TLPI commercial bias to flag but the persona is directly on point.
+- https://www.tlpi.co.uk/case-studies/ringfencing-property-investments-from-iht — VERIFIED ALIVE 2026-05-23. Complementary ring-fencing scenario; useful as the second worked persona.
+- https://www.tlpi.co.uk/case-studies/fic-for-income-returns-and-protected-legacy — VERIFIED ALIVE 2026-05-23. Income + legacy combined angle; useful for FAQ patterns on the income-to-second-spouse mechanic.
+- https://www.tlpi.co.uk/insights/fic-family-business-succession — VERIFIED ALIVE 2026-05-23. Succession framing; useful as colour for the "control during life" angle.
+- https://uklandlordtax.co.uk/family-investment-company-inheritance-tax-and-freezing-value/ — VERIFIED ALIVE 2026-05-23. Useful for the comparison vs other planning routes (will trust, IPDI). Anti-templating note: where the competitor walks into general IHT value-freeze framing, do NOT follow; cross-link to C7.
+- https://www.taxaccountant.co.uk/family-investment-companies-fics-protecting-family-wealth/ — VERIFIED ALIVE 2026-05-23. Family-wealth-protection angle; useful for FAQ patterns on disinheritance-avoidance.
 
-- https://www.tlpi.co.uk/case-studies/protecting-a-late-husbands-property-legacy-with-a-fic
-
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Fetch + read + extract instruction (session):** Fetch each URL via `httpx.get(url, timeout=30, follow_redirects=True, headers={"User-Agent": "Mozilla/5.0"})` then parse with BeautifulSoup (lxml). Extract: case-study structure (anonymised persona + sequence + outcome — DO NOT reproduce, rebuild own personas), comparison treatment vs IPDI / discretionary trust alternatives, FAQ density on second-marriage scenarios. Borrow outline-shape only. The page must lead with a clear blended-family persona (anonymised), not with a generic FIC introduction.
 
 ---
 
@@ -68,9 +66,22 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this page (Stage 2 populated 2026-05-23)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite. This is a CA 2006 articles + IHTA spouse + comparison-to-IPDI page.
+
+- [CA 2006 s.18 (articles of association: the drafting layer that locks out second-marriage children from a class)](https://www.legislation.gov.uk/ukpga/2006/46/section/18)
+- [CA 2006 s.629 (classes of shares — the legal anchor for ring-fenced share-class settlement)](https://www.legislation.gov.uk/ukpga/2006/46/section/629)
+- [IHTA 1984 s.18 (spouse exemption — anchors the second-spouse income mechanic without IHT entry charge)](https://www.legislation.gov.uk/ukpga/1984/51/section/18)
+- [IHTA 1984 s.49 (IPDI: immediate-post-death-interest trust — the will-trust alternative this page compares against)](https://www.legislation.gov.uk/ukpga/1984/51/section/49)
+- [IHTA 1984 s.49A+ (IPDI rules from FA 2006 onward)](https://www.legislation.gov.uk/ukpga/1984/51/section/49A)
+- [IHTA 1984 s.142 (deed of variation, alternative tactical route on first death — cross-cite to C5)](https://www.legislation.gov.uk/ukpga/1984/51/section/142)
+- [IHTA 1984 s.7 (rate, 7-year cumulation)](https://www.legislation.gov.uk/ukpga/1984/51/section/7)
+- [IHTA 1984 s.8A (TNRB) + s.8FA (TRNRB) — relevant in blended-family second-death window planning](https://www.legislation.gov.uk/ukpga/1984/51/section/8A)
+- [TCGA 1992 s.17 + s.165 + Sch 7 (gift mechanics + investment-FIC no-holdover)](https://www.legislation.gov.uk/ukpga/1992/12/section/165)
+- [HMRC IHTM (Inheritance Tax Manual) IPDI sections IHTM16100+](https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm16100)
+- [HMRC IHTM25000+ (BPR — NOT available for investment FIC shares per *Pawson*)](https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm25000)
+- [STEP / ICAEW technical guidance on FIC blended-family use cases (commentary only, not primary authority)](https://www.step.org/)
 
 ---
 

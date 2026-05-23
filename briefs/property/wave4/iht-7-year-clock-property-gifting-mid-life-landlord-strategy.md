@@ -14,9 +14,9 @@
 - **Suggested slug:** `iht-7-year-clock-property-gifting-mid-life-landlord-strategy`
 - **Suggested category:** `landlord-tax-essentials`
 - **Bucket:** IHT estate planning for landlords
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> The 7-year PET clock applied to property: how the s.7(4) IHTA 1984 taper reduces the tax (not the gift value), why the taper produces no benefit for gifts within the NRB, and the mid-life landlord-gifting strategy (gifting a low-base-cost BTL to a 30-year-old child at age 50, surviving 7 years vs surviving 3-7 with taper). CGT on the gift (TCGA 1992 s.17 deemed disposal at market value), no holdover for non-business BTL property.
+> Wave 2's `iht-lifetime-gifts-7-year-rule-property-taper` walks the s.7(4) IHTA 1984 taper rule and its common-trap pattern (taper reduces tax, not gift value; no benefit on gifts within NRB). This page is the mid-life landlord-strategy applied version: the 50-year-old portfolio landlord with one low-base-cost BTL who wants to start the clock now, the CGT-on-gift overlay (TCGA 1992 s.17 deemed disposal at market value, no s.165 holdover for non-business BTL, no s.260 holdover unless gifting into trust), and the worked example trade-off between dry-CGT-now and 7-year-survival IHT-saving. Includes a decision-tree section comparing direct property gift (this page) vs FIC growth-share gift (Wave 4 C7 cross-link) vs deed of variation after first death (Wave 4 C5 cross-link). Distinct from Wave 2 by being scenario-led with portfolio-specific worked examples rather than rule-mechanic-led.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,16 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 populated, 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+**Fetch + read + extract instruction:** For each URL below, fetch with httpx (follow_redirects=True, timeout=30, User-Agent "Mozilla/5.0"), parse with BeautifulSoup (lxml). Extract H2/H3 outline, FAQ pattern, treatment of taper-applies-to-tax-not-value trap, treatment of CGT-on-gift overlay. Our angle: landlord-mid-life applied strategy with CGT trade-off, not generic 7-year-rule explainer.
 
-- https://hwfisher.co.uk/inheritance-tax-hmrc-and-the-7-year-rule/
+- https://hwfisher.co.uk/inheritance-tax-hmrc-and-the-7-year-rule/ — Stage 1 seed, verified live 2026-05-23 (200). Mid-market accountant, useful for the taper-mechanic FAQ phrasing baseline.
+- https://www.ukpropertyaccountants.co.uk/gifting-property-iht-rules/ — Property-tax-specialist domain (v2 working set); useful for the property-gift-specific angle including CGT overlay.
+- https://www.taxaccountant.co.uk/inheritance-tax-and-gifting-property/ — Sibling within v2 working set domain; session to verify at write time. Likely covers the gift-property + CGT combination.
+- https://www.mytaxaccountant.co.uk/post/how-to-gift-property-tax-efficiently — Sibling within v2 working set domain; session to verify at write time. Useful for the worked-example FAQ phrasing.
 
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Borrowable patterns:** HW Fisher covers the rule cleanly but doesn't pair CGT and IHT in one example. Our differentiator: a single worked example showing the £75k CGT bill today vs the £100k IHT saved by year 7, plus the gift-of-mortgaged-property complication (the deemed-disposal includes the donee's mortgage assumption as consideration, can trigger SDLT on the equity transferred).
 
 ---
 
@@ -68,9 +66,18 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering (Stage 2 populated, 2026-05-23 — session selects 4-7)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+- IHTA 1984 s.7 (rates, taper at s.7(4)): https://www.legislation.gov.uk/ukpga/1984/51/section/7
+- IHTA 1984 s.3A (PETs definition): https://www.legislation.gov.uk/ukpga/1984/51/section/3A
+- IHTA 1984 s.19 (annual exemption £3,000): https://www.legislation.gov.uk/ukpga/1984/51/section/19
+- IHTA 1984 s.20 (small gifts exemption £250): https://www.legislation.gov.uk/ukpga/1984/51/section/20
+- TCGA 1992 s.17 (deemed market-value disposal on gift): https://www.legislation.gov.uk/ukpga/1992/12/section/17
+- TCGA 1992 s.165 (holdover for trading business assets — to explain why not available for BTL): https://www.legislation.gov.uk/ukpga/1992/12/section/165
+- HMRC IHTM14111+ (taper relief mechanics): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm14611
+- HMRC IHTM14000+ (gifts overview): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm14000
+- HMRC CG70200+ (CGT on gifts of land): https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg70200
+- gov.uk SDLT on mortgaged property gifts: https://www.gov.uk/guidance/sdlt-transferring-ownership-of-land-or-property
 
 ---
 

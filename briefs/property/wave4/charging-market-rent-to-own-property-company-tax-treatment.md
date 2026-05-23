@@ -14,9 +14,9 @@
 - **Suggested slug:** `charging-market-rent-to-own-property-company-tax-treatment`
 - **Suggested category:** `incorporation-and-company-structures`
 - **Bucket:** LtdCo mechanics + FIC depth
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> The shareholder-director letting personal property to their own property company at market rent: ITTOIA 2005 s.272 rental income for the individual, CTA 2009 s.54 deductibility for the company, the transfer-pricing risk under TIOPA 2010 Pt 4 below the SME exemption thresholds, and HMRC's connected-party scrutiny (market-rent evidence pack, lease formality, payment trail).
+> Charging rent to your own property company as an **extraction route compared head-on against salary and dividends**, with the connected-party defence pack as the load-bearing operational mechanic. Rent received is property-income for the individual under ITTOIA 2005 s.272 (s.24 finance-cost restriction applies as for any landlord), deductible for the SPV under CTA 2009 s.54. The mechanic this page owns is the §21.3 evidence-pack discipline that survives an HMRC enquiry: independent valuer letter, comparable local listings dated at lease start, formal written lease, periodic annual review minuted, payment trail through the company bank account. Transfer-pricing risk under TIOPA 2010 Pt 4 is usually parked by the SME exemption (s.166) but the page must flag the threshold (250 staff or €50m turnover) and the consequences if breached. This page is the rent-vs-salary-vs-dividend marginal comparison; it does NOT recompute generic salary-vs-dividend mix (defer to A5).
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,17 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+**Stage 1 seed URL status:** `boltburdon.co.uk/blogs/sweet-deal-corporate-wrappers-property-investors-structuring-investments-spv` could not be verified at Stage 2 (TLS handshake blocked, probable Cloudflare bot-protection variance, not a confirmed 404). Stage 2 retains it as a session-time fetch candidate (browser User-Agent should succeed) and adds 3 verified siblings as primary references.
 
-- https://www.boltburdon.co.uk/blogs/sweet-deal-corporate-wrappers-property-investors-structuring-investments-spv
+- https://www.boltburdon.co.uk/blogs/sweet-deal-corporate-wrappers-property-investors-structuring-investments-spv — **STAGE 1 SEED retained, verification deferred to session.** Bolt Burdon is a London property law firm; per v2 universe + dispatch brief, strong on corporate-wrapper + SPV structuring; useful for the lease-formality angle this page leads with. If the URL stays blocked at session-time fetch, drop and substitute with another taxaccountant.co.uk or ukpropertyaccountants.co.uk sibling.
+- https://www.taxaccountant.co.uk/family-investment-company-tax-planning/ — VERIFIED ALIVE 2026-05-23. Has a section on intra-group / connected-party transactions relevant to the SPV-rent scenario; useful for FAQ patterns on "can I let my own house to my company".
+- https://www.ukpropertyaccountants.co.uk/how-to-set-up-and-manage-a-family-investment-company/ — VERIFIED ALIVE 2026-05-23. Covers connected-party transactions inside the FIC framework, including the connected-tenancy question that overlaps the s.18N CIHC carve-out.
+- https://www.ukpropertyaccountants.co.uk/how-much-tax-will-i-pay-if-i-buy-a-property-through-a-family-investment-company/ — VERIFIED ALIVE 2026-05-23. Useful for the "company owns it" vs "I own it, let to company" decision-comparison context. Anti-templating note: this competitor leans into the FIC-purchase angle; do NOT replicate. Stay on the personal-let-to-own-company mechanic.
+- https://uklandlordtax.co.uk/your-btl-limited-company-and-directors-loan-account/ — VERIFIED ALIVE 2026-05-23. Cross-link for the rent-as-DLA-credit interaction (rent paid to founder personally is not DLA, but rent paid to a credit-balance DLA is a useful comparison the page should disambiguate).
 
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Fetch + read + extract instruction (session):** Fetch each URL via `httpx.get(url, timeout=30, follow_redirects=True, headers={"User-Agent": "Mozilla/5.0"})` then parse with BeautifulSoup (lxml). Extract: H2/H3 outline, FAQ block, worked examples (rent amount + s.24 impact on individual + corporation-tax saving for company), citation density (s.272, s.54, TIOPA Pt 4, transfer-pricing manual), component patterns (comparison tables between rent / salary / dividend extraction). Borrow outline-shape, NOT figures or sentences. If Bolt Burdon stays blocked, log in `wave4_site_wide_flags.md` and continue.
 
 ---
 
@@ -68,9 +67,20 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this page (Stage 2 populated 2026-05-23)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite.
+
+- [ITTOIA 2005 s.272 (rental income basis)](https://www.legislation.gov.uk/ukpga/2005/5/section/272)
+- [CTA 2009 s.54 (deductions: wholly and exclusively rule)](https://www.legislation.gov.uk/ukpga/2009/4/section/54)
+- [TIOPA 2010 Pt 4 (transfer pricing framework)](https://www.legislation.gov.uk/ukpga/2010/8/part/4)
+- [TIOPA 2010 s.166 (SME exemption from transfer pricing)](https://www.legislation.gov.uk/ukpga/2010/8/section/166)
+- [HMRC INTM412050+ (transfer-pricing, connected-party transactions, International Manual)](https://www.gov.uk/hmrc-internal-manuals/international-manual/intm412050)
+- [HMRC INTM412080 (the SME exemption test, head-count + balance-sheet)](https://www.gov.uk/hmrc-internal-manuals/international-manual/intm412080)
+- [HMRC PIM2068 (rent paid by a connected party — landlord's perspective)](https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2068)
+- [CTA 2010 s.18N (CIHC qualifying-purpose carve-out, applies because connected-tenancy is the boundary)](https://www.legislation.gov.uk/ukpga/2010/4/section/18N)
+- [HMRC BIM37000+ (BIM coverage of close-investment-holding-company test, Business Income Manual)](https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim37000)
+- [HMRC SDLTM (Stamp Duty Land Tax Manual) on lease consideration — relevant if the personal-to-company lease attracts SDLT](https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual)
 
 ---
 

@@ -14,9 +14,9 @@
 - **Suggested slug:** `fic-articles-of-association-property-control-mechanics`
 - **Suggested category:** `incorporation-and-company-structures`
 - **Bucket:** LtdCo mechanics + FIC depth (FIC sub-thread)
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> Articles of Association in a property FIC: bespoke voting / non-voting class design, retained-control clauses (founder casting vote, reserved-matters lists, lifetime-controllable consent regimes), pre-emption rights on share transfer, drag-along + tag-along for downstream sales, the model-articles starting point under CA 2006 s.18 and where bespoke drafting is essential for the FIC's tax + family-governance goals.
+> Articles of Association as the **drafting layer** of a property FIC. The mechanic this page owns is the clause-by-clause translation of family + tax + control goals into CA 2006 s.18 articles: bespoke share-class design (voting / non-voting / preference / growth), founder-protection mechanics (casting vote, reserved-matters list requiring founder consent for life, weighted-vote provisions on specified resolutions), pre-emption rights on transfer, drag-along + tag-along for downstream exits, dividend-control mechanics by class, preference-share redemption / amortisation provisions, deadlock-breaking arrangements. This page is the **articles drafting** sub-thread of the Bucket A FIC group; it is NOT the corporate-governance discipline (defer to A7), NOT the retirement-income drawdown mechanic (defer to A8), NOT the share-gift PET mechanic (defer to A9), and NOT the blended-family use case (defer to A10). The page demonstrates what bespoke articles actually contain, with clause-name + purpose + drafting-trap commentary, distinct from any "what is a FIC" pillar.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,19 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+**Stage 1 seed URL note:** the same tlpi `protecting-a-late-husbands-property-legacy-with-a-fic` URL was also used as A10's seed (blended-family). Stage 2 retains it here for the "control mechanics protect against unintended downstream beneficiaries" angle BUT shifts the primary references to articles-of-association-specific firms. A10 keeps the case study as its primary; A6 cites it as a colour link only.
 
-- https://www.tlpi.co.uk/case-studies/protecting-a-late-husbands-property-legacy-with-a-fic
+- https://www.tlpi.co.uk/key-pillars-to-the-family-investment-company — **NEW PRIMARY.** VERIFIED ALIVE 2026-05-23. TLPI's structural breakdown of FIC pillars; useful for the control-mechanics outline.
+- https://www.tlpi.co.uk/what-is-a-family-investment-company — VERIFIED ALIVE 2026-05-23. The FIC intro page; useful for opening-section pattern and the "what makes articles bespoke" framing.
+- https://www.tlpi.co.uk/insights/why-you-need-a-family-investment-company — VERIFIED ALIVE 2026-05-23. Use as colour for the "why articles design matters" framing.
+- https://www.taxaccountant.co.uk/family-investment-company-tax-planning/ — VERIFIED ALIVE 2026-05-23. Discusses share-class design + retained-control mechanics in articles drafting context.
+- https://www.taxaccountant.co.uk/family-investment-companies-fics-protecting-family-wealth/ — VERIFIED ALIVE 2026-05-23. Family-wealth angle on FIC articles; useful for the reserved-matters list use case.
+- https://www.ukpropertyaccountants.co.uk/freezer-shares-and-growth-shares-in-family-investment-companies/ — VERIFIED ALIVE 2026-05-23. Direct on share-class taxonomy used in articles drafting.
+- https://www.tlpi.co.uk/case-studies/protecting-a-late-husbands-property-legacy-with-a-fic — STAGE 1 SEED, retained as colour. VERIFIED ALIVE 2026-05-23. Useful as illustration but primary use-case angle belongs to A10.
 
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Fetch + read + extract instruction (session):** Fetch each URL via `httpx.get(url, timeout=30, follow_redirects=True, headers={"User-Agent": "Mozilla/5.0"})` then parse with BeautifulSoup (lxml). Extract: H2/H3 outline patterns for articles-drafting sections (reserved matters, pre-emption, drag / tag, dividend control, redemption), how competitors describe each clause's purpose, FAQ density. Borrow outline-shape, NOT clause language (the page must not read like a precedent firm's marketing copy). Cross-check every clause description against CA 2006 + house position §21.2 / §21.5.
 
 ---
 
@@ -68,9 +69,21 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this page (Stage 2 populated 2026-05-23)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite. Articles drafting is a Companies-Act-led page; legislation citations dominate over HMRC manuals.
+
+- [CA 2006 s.18 (articles of association, requirement to have)](https://www.legislation.gov.uk/ukpga/2006/46/section/18)
+- [CA 2006 s.20 (default model articles application)](https://www.legislation.gov.uk/ukpga/2006/46/section/20)
+- [CA 2006 s.21 (amendment of articles — special resolution)](https://www.legislation.gov.uk/ukpga/2006/46/section/21)
+- [CA 2006 s.22 (entrenched provisions)](https://www.legislation.gov.uk/ukpga/2006/46/section/22)
+- [CA 2006 s.284 (votes on resolutions — one vote per share unless articles vary)](https://www.legislation.gov.uk/ukpga/2006/46/section/284)
+- [CA 2006 s.561 (existing shareholders' right of pre-emption — disapplied or shaped by articles)](https://www.legislation.gov.uk/ukpga/2006/46/section/561)
+- [CA 2006 s.629 (classes of shares: defined)](https://www.legislation.gov.uk/ukpga/2006/46/section/629)
+- [Companies Act 2006 (Model Articles) Regulations 2008 SI 2008/3229 (the default starting point)](https://www.legislation.gov.uk/uksi/2008/3229/contents/made)
+- [HMRC ERSM110000+ (Employment-Related Securities Manual, applies where founder + family members receive shares connected to office)](https://www.gov.uk/hmrc-internal-manuals/employment-related-securities/ersm110000)
+- [HMRC CTM (Company Taxation Manual) on dividend declaration mechanics, intersection with articles-controlled class-rights](https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual)
+- [STEP / ICAEW technical guidance on FIC articles (commentary only, not primary authority)](https://www.step.org/)
 
 ---
 

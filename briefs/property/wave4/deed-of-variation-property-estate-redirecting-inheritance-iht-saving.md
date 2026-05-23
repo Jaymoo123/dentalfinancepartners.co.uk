@@ -14,9 +14,9 @@
 - **Suggested slug:** `deed-of-variation-property-estate-redirecting-inheritance-iht-saving`
 - **Suggested category:** `landlord-tax-essentials`
 - **Bucket:** IHT estate planning for landlords
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> Post-death deeds of variation under s.142 IHTA 1984: how beneficiaries of a landlord estate can redirect inheritance within 2 years of death and have the redirection read back to the deceased for IHT (and s.62 TCGA 1992 for CGT). Worked examples: skipping a generation to grandchildren, redirecting a BTL to a charity (s.23 charity exemption + 36% rate where ≥10% of estate), and the no-consideration rule (consideration destroys the s.142 read-back).
+> Net-new on our site. The page owns the s.142 IHTA 1984 deed-of-variation mechanic applied to landlord estates: beneficiaries (typically a surviving spouse or adult children) can redirect inheritance within 2 years of the deceased's death and have the redirection read back to the deceased for IHT, and to the deceased's CGT base under TCGA 1992 s.62(6). Worked examples cover generation-skipping (BTL passes to grandchildren, NRB / RNRB optimised on first death rather than wasted), the 36% reduced-rate charitable-legacy trigger (cross-link to Wave 4 C9 for the Sch 1A 10% test mechanics), and the no-consideration rule that destroys the read-back. Distinct in tone from will-writer competitor content: tax-accountant lens, with explicit attention to the election that must be in the deed (s.142 election for IHT, s.62(6) election for CGT, signed by the original beneficiary).
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,16 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 populated, 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+**Fetch + read + extract instruction:** For each URL below, fetch with httpx (follow_redirects=True, timeout=30, User-Agent "Mozilla/5.0"), parse with BeautifulSoup (lxml). Extract H2/H3 outline, FAQ pattern, treatment of the 2-year window, treatment of the no-consideration rule, treatment of s.142 election vs s.62(6) CGT election. Differentiator: landlord-estate angle with BTL-specific examples (generation-skipping the BTL, varying to fund the 36% charity trigger).
 
-- https://www.taxaccountant.co.uk/deeds-of-variation-can-reduce-inheritance-tax/
+- https://www.taxaccountant.co.uk/deeds-of-variation-can-reduce-inheritance-tax/ — Stage 1 seed, verified live 2026-05-23 (200). Useful general FAQ baseline; covers the mechanic but tax-accountant-tone in the v2 working set.
+- https://www.mytaxaccountant.co.uk/post/deed-of-variation-inheritance-tax — Sibling within v2 working set domain; session to verify at write time. Likely covers the same mechanic with different FAQ phrasing.
+- https://www.ukpropertyaccountants.co.uk/inheritance-tax-planning-for-property-investors/ — Property-tax-specialist domain (v2 working set); useful for the property-portfolio framing on DoV worked examples.
+- https://www.hwfisher.co.uk/deed-of-variation/ — Mid-market accountant (v2 working set); session to verify at write time. Likely covers the s.62 CGT read-back angle.
 
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Borrowable patterns:** competitor outlines usually run "what is it / how does it work / what's the deadline / consideration trap". Our differentiator: add a worked-example block on a specific BTL portfolio (e.g. £1.4m estate, surviving spouse varies to redirect the £400k BTL to two adult children, saving the second-death RNRB taper hit), plus a tight section on what the deed must contain to satisfy s.142 and s.62(6).
 
 ---
 
@@ -68,9 +66,18 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering (Stage 2 populated, 2026-05-23 — session selects 4-7)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+- IHTA 1984 s.142 (deed of variation IHT read-back): https://www.legislation.gov.uk/ukpga/1984/51/section/142
+- IHTA 1984 s.143 (precatory bequests): https://www.legislation.gov.uk/ukpga/1984/51/section/143
+- IHTA 1984 Sch 1A (36% reduced rate, ≥10% charitable bequest): https://www.legislation.gov.uk/ukpga/1984/51/schedule/1A
+- TCGA 1992 s.62 (DoV read-back for CGT, s.62(6) election): https://www.legislation.gov.uk/ukpga/1992/12/section/62
+- HMRC IHTM35000+ (DoV overview): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm35000
+- HMRC IHTM35100+ (instruments of variation requirements): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm35100
+- HMRC IHTM43000+ (charitable rate): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm43001
+- HMRC IOV2 (Instrument of Variation Checklist): https://www.gov.uk/government/publications/inheritance-tax-instrument-of-variation-checklist-iov2
+- IHTA 1984 s.18 (spouse exemption, useful contrast where variation runs INTO the spouse exemption): https://www.legislation.gov.uk/ukpga/1984/51/section/18
+- gov.uk DoV guidance (general): https://www.gov.uk/inherits-someone-dies-without-will/changing-a-will-after-a-death
 
 ---
 

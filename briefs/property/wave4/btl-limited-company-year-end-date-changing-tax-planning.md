@@ -14,9 +14,9 @@
 - **Suggested slug:** `btl-limited-company-year-end-date-changing-tax-planning`
 - **Suggested category:** `incorporation-and-company-structures`
 - **Bucket:** LtdCo mechanics + FIC depth
-- **DRAFT framing differentiator (Stage 1 — Stage 2 will deepen to 2-4 sentences):**
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
 
-> Choosing and changing a property SPV year-end: the 31-March-vs-5-April default, the rules under CA 2006 s.392 on lengthening (once every five years, 18-month maximum) vs shortening (unlimited), and the tax-planning use cases (deferring corporation tax into the post-April-2026 cap reform, aligning with personal SA tax year for MTD-ITSA cohort landlords with both personal and corporate property income).
+> The property-SPV accounting-reference-date (ARD) as a tax-planning lever, not a bookkeeping detail. CA 2006 s.392 limits direction of change asymmetrically: shortening the ARD is unlimited (file AA01 any time before the period ends), lengthening is restricted to once every five years and to a maximum 18-month accounting period. The mechanic this page owns is the **applied use cases** for a property SPV: (i) aligning the SPV ARD with the personal SA tax year (5 April or 31 March) to simplify MTD-ITSA cycle reconciliation where the same landlord runs both a personal portfolio and an SPV, (ii) deferring a profit-spike year-end past 6 April 2026 to capture the BPR / APR £1m cap planning window or to defer s.455 timing on overdrawn DLA, (iii) bringing forward a year-end to capture a current-year capital allowance pool before a known disposal. This page does NOT re-walk the basic CT mechanics (defer to A5); it leads with year-end-as-lever applied to property-SPV scenarios.
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -24,18 +24,15 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ---
 
-## Competitor URLs (Stage 2 stub — Stage 2 sub-agent fills 3-5 high-quality URLs from the v2 working set + writes the fetch-and-read instruction)
+## Competitor URLs (Stage 2 validated 2026-05-23)
 
-**Stage 1 seed URL** (the source competitor URL that surfaced this candidate in the topic-gap delta; Stage 2 verifies + may add or replace):
+- https://uklandlordtax.co.uk/should-i-change-my-btl-limited-company-year-end/ — **STAGE 1 SEED, retained as primary.** VERIFIED ALIVE 2026-05-23. Specialist BTL accountant; directly on topic. Useful for "should I change" decision framing + standard property-SPV scenarios.
+- https://www.provestor.co.uk/help/property-taxes/actions-to-take-before-your-company-year-end — VERIFIED ALIVE 2026-05-23. Provestor's pre-year-end action checklist; useful as the "tactical actions in the closing month" reference, complements the strategic year-end-choice frame this page leads with. Commercial-bias flag (Provestor pushes its own software).
+- https://www.taxaccountant.co.uk/year-end-dividend-planning-maximising-tax-efficiency/ — VERIFIED ALIVE 2026-05-23. Year-end dividend planning angle; useful for the personal-SA-alignment use case (FAQ patterns on tax-year-end-planning around the 5 April date).
+- https://www.taxaccountant.co.uk/10-year-end-tax-planning-tips-for-individuals/ — VERIFIED ALIVE 2026-05-23. Generalist year-end-planning checklist; useful for FAQ phrasing parity around what landlords should do as ARD approaches.
+- https://www.taxaccountant.co.uk/maximise-your-pension-savings-before-the-tax-year-end/ — VERIFIED ALIVE 2026-05-23. Year-end pension-contribution angle, relevant for the "pension extraction sequenced to ARD" use case overlap with §21.1 / §21.4.
 
-- https://uklandlordtax.co.uk/should-i-change-my-btl-limited-company-year-end/
-
-**Stage 2 to do:**
-
-1. Fetch the seed URL and 2-4 sibling URLs from the v2 working set (`docs/property/competitor_universe_v2.md` actionable working set, ≥2 SERP appearances).
-2. Write the "fetch + read + extract" instruction block, using the Wave 3 brief format (httpx + BeautifulSoup with timeout 30, User-Agent Mozilla/5.0).
-3. Note any URLs that failed verification or are stale.
-4. Flag where the competitor outline / FAQ density / worked-example pattern is worth borrowing.
+**Fetch + read + extract instruction (session):** Fetch each URL via `httpx.get(url, timeout=30, follow_redirects=True, headers={"User-Agent": "Mozilla/5.0"})` then parse with BeautifulSoup (lxml). Extract from each: H2/H3 outline, FAQ block, worked examples (figures, scenarios, period length used), citation density (CA 2006 s.392, Companies House AA01 form, HMRC CT operational manual), component patterns (decision trees, timeline diagrams, before / after period comparisons). Borrow outline-shape, NOT figures or sentences.
 
 ---
 
@@ -68,9 +65,20 @@ Stage 1 scan of `Property/web/src/middleware.ts` shows no old-slug redirect over
 
 ---
 
-## Authority links worth considering for this bucket (Stage 2 STUB)
+## Authority links worth considering for this page (Stage 2 populated 2026-05-23)
 
-**Stage 2 to do:** populate the bucket-specific authority-link list (HMRC manuals, legislation.gov.uk, gov.uk technical notes, relevant case law). Use the Wave 3 brief format. Aim for 6-10 links that fit the framing differentiator; the session selects 4-7 to actually cite.
+Pick 4-7 to actually cite.
+
+- [CA 2006 s.392 (alteration of accounting reference date)](https://www.legislation.gov.uk/ukpga/2006/46/section/392)
+- [CA 2006 s.391 (accounting reference periods and accounting reference date)](https://www.legislation.gov.uk/ukpga/2006/46/section/391)
+- [Companies House guidance: change your company's year end (AA01)](https://www.gov.uk/change-your-companys-year-end)
+- [Companies House form AA01 (change of accounting reference date)](https://www.gov.uk/government/publications/change-your-companys-accounting-reference-date-aa01)
+- [HMRC CTM93000+ (corporation tax accounting periods, Company Taxation Manual)](https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm93000)
+- [HMRC CTM01405 (accounting periods: change of accounting date — straddling rule)](https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm01405)
+- [Finance Act 1998 Sch 18 para 3 (corporation tax return obligation for each accounting period)](https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/3)
+- [CTA 2010 s.18N (CIHC carve-out, relevant where ARD change affects CIHC-status testing window)](https://www.legislation.gov.uk/ukpga/2010/4/section/18N)
+- [HMRC CTM (Company Taxation Manual) main index](https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual)
+- [HMRC PIM (Property Income Manual) main index (for the SPV property-income overlay)](https://www.gov.uk/hmrc-internal-manuals/property-income-manual)
 
 ---
 
