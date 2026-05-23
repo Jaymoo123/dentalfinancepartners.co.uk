@@ -79,9 +79,9 @@ All sites are lead-gen handoffs to a partner firm. Don't conflate with the Prope
 
 ## 3. Where we are right now (this section updates every wave)
 
-**Last updated:** 2026-05-23 Wave 3 closed (shipped + post-merge back-patches landed).
+**Last updated:** 2026-05-23 PM — post-Wave-3 inter-wave hygiene sub-agent batch landed (§20 verification + F-1 RRA-2026 back-patch + worktree cleanup; competitor discovery still running).
 
-**`main` is at `6edc5d8`.** 91 net-new pages from Wave 1 (31) + Wave 2 (30) + Wave 3 (30) sit on `main`. Wave 3 close + audit-trail at `727eebc`, three bucket-merge commits at `d98c53d` (A) / `cf4a7fa` (B) / `f546964` (C), post-merge factual back-patches at `2b18321`, post-merge cross-link back-patches at `6edc5d8`.
+**`main` is at `5a49767`.** 91 net-new pages from Wave 1 (31) + Wave 2 (30) + Wave 3 (30) sit on `main`. Wave 3 close + audit-trail at `727eebc`, three bucket-merge commits at `d98c53d` (A) / `cf4a7fa` (B) / `f546964` (C), post-merge factual back-patches at `2b18321`, post-merge cross-link back-patches at `6edc5d8`. Post-Wave-3 inter-wave hygiene at `38b17b5` (F-1 RRA-2026 site-wide back-patch) and `5a49767` (F-12 to F-17 §20 corrections + RRO live-page back-patches).
 
 **Wave 3 outputs on `main`:** 30 blog markdown files (10 ATED + 10 MTD ITSA + 10 RRA 2025). All clean against the §19.7 corrected day-triggers and the §20.7 corrected pet-rights position (see refinements log below). F-2 category-override applied across all 10 ATED pages (all sit under `incorporation-and-company-structures` per existing inventory convention).
 
@@ -99,15 +99,20 @@ All sites are lead-gen handoffs to a partner firm. Don't conflate with the Prope
 **Worktrees that can now be deleted:** `Accounting-wt-property-track1-{a,b,c}/`, `Accounting-wt-property-wave2-{a,b,c}/`, `Accounting-wt-property-wave3-{a,b,c}/`.
 **Medical worktrees** parked, not part of this program.
 
-**Outstanding hygiene (post-Wave-3):**
-- **F-1 (parked legacy-rebuild track):** rewrite existing `renters-rights-act-2026-tax-implications-landlords` to reflect actual RRA 2025 + site-wide grep + back-patch of stray "Renters Rights Act 2026" / "RRA 2026" / "Renters Rights Bill" references across the 346 blog posts. Run between Wave 3 close and Wave 4 launch when user authorises.
-- **§20 verification pass against enacted Act:** second §20-vs-enacted-Act drift caught in Wave 3 (F-6 §19.7 in Stage 2 prep, F-11 §20.7 mid-wave). Recommended before Wave 4 launch — verify §20.1–§20.13 against legislation.gov.uk to catch any remaining Bill-vs-enacted differences in pet-rights, advance-rent ban scope, bidding-wars scope, and the rest.
+**Post-Wave-3 inter-wave hygiene batch (2026-05-23 PM):**
+- **F-1 RRA-2026 site-wide back-patch:** CLOSED via sub-agent batch `38b17b5`. 3 files edited (lead `renters-rights-act-2026-tax-implications-landlords.md` page + 2 cross-references); 18 citations corrected. Surprisingly small scope (vs §16.20's "every page" framing) because Wave 3 sessions had already used correct citations and prior cleanups caught most pre-Wave-3 stale references. PART 2 lead-page **content rewrite** scaffolded at `docs/property/f1_rra_lead_page_rewrite_brief.md` for a future manual session (not blocking Wave 4).
+- **§20 verification pass:** CLOSED via sub-agent batch `5a49767`. Two HARD drifts caught + four precision flags. F-12 (§20.10 RRO 12 months → 2 years per RRA 2025 s.98 amending HPA 2016 ss.41/42/44), F-13 (§20.5 Ombudsman £25k cap not on the face of the Act), F-14 (§20.2 tenant 2-month notice hook is PEA 1977 s.5(1ZA), not periodic-tenancy mechanic), F-15 (§20.3 split Sch 1 para 3D vs 3E), F-16 (§20.8 split pre-lease s.9 vs post-lease s.8 advance-rent prohibitions), F-17 (§20.11 pet-insurance bullet inconsistent with F-11). F-12 also back-patched 2 existing live pages (`london-property-accountant.md`, `property-accountant-bournemouth-landlords-tax-services.md`). Verification report: `docs/property/section_20_verification_2026-05-23.md`.
+- **Worktree cleanup:** all 9 historical property worktrees and branches (track1-{a,b,c}, wave2-{a,b,c}, wave3-{a,b,c}) deleted. Disk space recovered; main worktree + parked medical worktrees remain.
+- **Wave 3 worktrees:** deleted. Branches pruned.
+- **§16.21 data-driven competitor discovery + sitemap re-sweep:** RUNNING (sub-agent dispatched in parallel with §20 + F-1 batch; will return `competitor_universe_v2.md` + `topic_gaps_delta_2026-05-23.md`). Status as of this writing: `competitor_universe_v2.md` written to disk, sitemap re-sweep still in progress.
+
+**Outstanding hygiene (still pending):**
 - **F-7 (Wave 2)** brand wordmark em-dash — separate scope.
 - **F-9 calendar-quarter alternative deadlines** on `mtd-quarterly-reporting-landlords-step-by-step-guide`: original "30 April / 31 July / 31 October / 31 January" not patched in the F-7B+F-9 batch (out of explicit flag scope); needs gov.uk verification before correction.
-- **F-10, F-12, F-14 (SCHEMA + verifier-hardening):** future-wave notes, not immediately actionable.
-- **F-13 (B10 redirect re-point):** executed in-session, landed with the B10 commit.
-- **Inter-wave queue items:** §16.21 data-driven competitor discovery infra (SERP-derived competitor list) + competitor sitemap re-sweep cadence. Both slated for between Wave 3 close and Wave 4 launch.
+- **F-10, F-14 (SCHEMA + verifier-hardening):** future-wave notes, not immediately actionable. (F-12 = original Wave 3 SCHEMA flag was reused as the F-12 §20.10 RRO correction tag here. Two F-numbers refer to different items; the §20 verification F-12/F-13/F-14/F-15/F-16/F-17 is the new canonical use.)
+- **F-13 (B10 redirect re-point):** executed in-session, landed with the B10 commit (this was the Wave 3 F-13; the F-13 stamp on §20.5 Ombudsman correction is the new canonical use).
 - **AUTHORITY_GAP from Stage 2:** no Form 17 dedicated page on-site (surfaced during B3 prep). Future-wave candidate.
+- **§20.7 / §20.11 un-yeared "Renters' Rights Act" + "from May 2026" citations** on several location/landlord pages (surfaced by F-1 sub-agent): factually correct per §20.12 commencement timeline but citation precision is loose. Optional precision-tightening pass; not blocking.
 
 **House position refinements (cumulative log; locked dates as stamped):**
 - §15.6 LTR test is **two-route** (10 consecutive OR 10 of 20 tax years), not single-route as originally locked. Wave 2 Session A surfaced via A6 research. Locked 2026-05-22.
@@ -115,10 +120,11 @@ All sites are lead-gen handoffs to a partner firm. Don't conflate with the Prope
 - §12 (RRA Bill / in-passage) **superseded by §20** (RRA 2025 enacted state). §12 retained for audit. Wave 3 prep Stage 1 verification surfaced Royal Assent of 27 October 2025 (legislation.gov.uk verified 2026-05-22).
 - §19.7 MTD ITSA late-payment day-triggers **corrected 31/46/91 → 15/30/31** at 3%/3%/10% (Spring Statement 2025 reform accelerated both percentages AND day-thresholds). Stage 2 MTD sub-agent surfaced 2026-05-22; F-6 broadcast to sessions. Locked 2026-05-22.
 - §20.7 RRA 2025 pet rights **corrected** (three substantive points, see "Wave 3 manager-side fixes" above). Session C surfaced mid-C7 via legislation.gov.uk verification; F-11 broadcast. Locked 2026-05-23.
+- §20.2 / §20.3 / §20.5 / §20.8 / §20.10 / §20.11 **corrected en bloc** via the §20 verification pass against the enacted RRA 2025 (F-12 through F-17). Two hard drifts (§20.10 RRO 12 months → 2 years; §20.5 Ombudsman £25k cap not in statute) + four precision flags (§20.2 statutory hook, §20.3 Sch 1 paras 3D/3E split, §20.8 dual advance-rent prohibition, §20.11 post-F-11 internal consistency). Locked 2026-05-23 PM. Full audit at `docs/property/section_20_verification_2026-05-23.md`.
 
 **Program totals (Wave 3 closed):** ~485 total target (~285 net-new + ~231 legacy rebuilds). After Wave 1 (31) + Wave 2 (30) + Wave 3 (30) = **91 net-new on `main`**. ~194 candidates remain in the user-narrowed pool. Legacy rebuild track begins after the net-new track lands enough to anchor the site (no firm cutover trigger set yet).
 
-**Wave 4 prep status:** not started. Bucket selection is the highest-leverage next step (user-decision-required moment); Stage 1 brief skeletons + Stage 2 reasoning sub-agents should fan out from there following the §16.19 pattern. Pre-launch checklist must include: (a) §20 verification pass against enacted Act, (b) F-1 legacy-rebuild track action, (c) §16.21 data-driven competitor discovery infra, (d) competitor sitemap re-sweep.
+**Wave 4 prep status:** inter-wave queue items (a), (b) DONE per the 2026-05-23 PM hygiene batch. Items (c) + (d) running concurrently via sub-agent and expected to land before Wave 4 launch. Once discovery sub-agent returns, bucket selection becomes the highest-leverage next step (user-decision-required moment); Stage 1 brief skeletons + Stage 2 reasoning sub-agents fan out from there following the §16.19 pattern.
 
 ---
 
@@ -733,6 +739,17 @@ Append to this section after every wave. Each lesson should describe what happen
 
 **16.26 Cross-bucket forward-link sweep at session-end is the right backstop, but mid-wave continuation handovers break it**
 - Session C raised F-7C at C1 write (C1 needed forward-links to C5/C6/C9 once they existed). The flag was logged "end-of-session back-patch sweep should verify all four targets resolve". The Session C continuation that closed C9/C10 did not execute the in-session sweep before stopping. Result: C1 → {C5, C6, C9} forward-links were unhyperlinked plain text at merge. Manager picked it up in the post-merge cross-link batch (F-4 + F-7C + F-8 commit `6edc5d8`). No content damage but added one round-trip. **Lesson:** for any session-end back-patch sweep that depends on cross-page forward-links resolving, hard-encode it as Step 20 in the per-page workflow rather than relying on session-end discipline. Or: make it a manager-side post-merge step by default, and treat session-end as best-effort.
+
+### Post-Wave-3 hygiene (2026-05-23 PM)
+
+**16.27 Pre-wave statute verification is now a load-bearing standard step**
+- Three §20-vs-enacted-Act drifts caught in succession across Wave 3 and post-Wave-3 hygiene: F-6 §19.7 (Wave 3 Stage 2 prep, MTD ITSA day-triggers), F-11 §20.7 (mid-Wave 3, pet rights), F-12 + F-13 (post-Wave-3, RRO maximum + Ombudsman cap). All three involved locked positions that tracked Bill drafting or pre-reform mechanics rather than enacted text. **Lesson:** §16.22's "structural pattern" call is firmly load-bearing. The sub-agent-driven verification pattern (~45 min, structured per-section verification report, no in-flight Q&A needed) is the right shape for this work. Build into §6 wave launch protocol as a mandatory pre-launch step for any newly-locked legislation. Use the full enacted-Act PDF (`legislation.gov.uk/ukpga/<year>/<chap>/data.pdf`) as the source of truth when per-section WebFetch returns only summary content.
+
+**16.28 Sub-agent-driven inter-wave queue closure works as a pattern**
+- Post-Wave-3 inter-wave hygiene was dispatched as three concurrent background sub-agents (competitor discovery + sitemap re-sweep / §20 verification / F-1 RRA-2026 back-patch). All three operated on non-overlapping file surfaces, returned structured reports, and the manager-side review-and-apply step took ~20 minutes per returned agent. Total wall-clock ~3-4 hours for work that would have been ~12+ hours of direct manager execution. **Lesson:** for inter-wave queue items that decompose into deterministic multi-step work with clear file outputs (verification reports, audit manifests, mechanical citation corrections), default to parallel sub-agent dispatch with structured-report return. Manager owns the review + apply step, not the discovery + drafting step.
+
+**16.29 F-1 site-wide back-patch scope can be much smaller than the lesson-of-record assumes**
+- §16.20 framed the post-F-1 site-wide back-patch as "every existing Property page that references RRA 2026 is now incorrect" (implying broad inventory contamination). Actual F-1 execution found only 3 stale-citation files across 376 markdown files. Reason: Wave 3 sessions had used correct citations throughout their own work, and prior cleanups had already caught most pre-Wave-3 stale references. **Lesson:** log lessons-of-record at worst-case scope (so they prompt sufficiently-broad sweeps), but track actual execution scope as a separate signal. A back-patch sweep that finds 3 files instead of 30 is not a wasted sweep; it's positive feedback that prior discipline + cumulative correctness held. Reserve manager judgement on whether subsequent back-patches require a full sweep or a targeted grep.
 
 ---
 
