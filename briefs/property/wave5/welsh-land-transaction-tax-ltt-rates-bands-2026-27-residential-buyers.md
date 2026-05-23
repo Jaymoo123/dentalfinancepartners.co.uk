@@ -163,34 +163,57 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `welsh-land-transaction-tax-ltt-rates-bands-2026-27-residential-buyers` (no override)
+- **Final category:** `landlord-tax-essentials` (no override; matches B6 future placement so Welsh + Scottish pillar sit side-by-side under landlord-tax-essentials)
+- **H1 chosen:** "Welsh Land Transaction Tax (LTT) 2026/27: Rates, Bands, and What Welsh Buyers Need to Know"
+- **Meta title chosen:** "Welsh LTT 2026/27 Rates and Bands: A Buyer's Guide" (50 chars)
+- **Why these vs other options:** The "Three things Welsh buyers should know" framing leads positively with the three §23.1 structural points (£225k nil band, no NR surcharge, no FTB regime) per the brief's anti-templating mandate, NOT "the Welsh equivalent of SDLT" or "the Welsh version of LBTT" framing.
 
 ### Competitor URLs fetched
+- ukpropertyaccountants.co.uk/land-transaction-tax-a-complete-guide: live; "complete guide" framing with rate tables and a £2m worked example; we differentiate via the three structural points and the four-nation comparison table.
+- gov.wales/land-transaction-tax-rates-and-bands: authority; rate table verified per §16.35 (matches §23.1 figures exactly).
+- gov.wales/land-transaction-tax: Welsh Revenue Authority overview; confirms 30-day return window and the LTTA 2017 architecture.
+- **DEAD URL:** taxaccountant.co.uk/stamp-duty-land-tax-on-property-in-wales returned 404 (§16.31). Skipped; replaced by deeper reading of gov.wales technical guidance.
+- **OFF-TOPIC URL:** alexander-ene.co.uk/land-transaction-tax-wales.htm: redirected to firm homepage with no Welsh LTT content. Skipped; not a viable outline source.
 
 ### Existing-page review (from "Closest existing pages")
+- `sdlt-buy-to-let-rates-surcharge-guide-2025`: forward-link from B1 (cross-jurisdictional contrast); raise INTERNAL_LINK flag for SDLT pillar to add reciprocal back-link.
+- `sdlt-non-resident-2-percent-surcharge`: forward-link from B1 to clarify the boundary; the non-resident surcharge is England + NI only.
+- `2027-property-income-tax-rates-landlords-uk`: forward-link from B1 (income-tax pillar is UK-wide).
+- `sdlt-mixed-use-property-classification`: briefly referenced (Wales has no s.116(7) FA 2003 equivalent); depth deferred to B3 + B5.
 
 ### Citations added (external authority)
+- Land Transaction Tax and Anti-avoidance of Devolved Taxes (Wales) Act 2017, ss.10 (effective date), 24 (residential rates), 41 (30-day return clock), Schs 7 / 16 / 19 (reliefs), Sch 22 (cross-border apportionment).
+- LTT (Tax Bands and Tax Rates) (Wales) Regulations (current bands in force from 10 October 2022).
+- FA 2003 ss.44, 48A, 76, Sch 4A (cross-jurisdictional contrast cites).
+- LBTT(S)A 2013 Sch 14 (cross-border with Scotland).
+- gov.wales rate page, technical guidance page, online return portal.
 
 ### Internal links added (to our existing pages)
+- `/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025` (used twice: in intro for jurisdiction routing, and in "Where this page fits" closing block).
+- `/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk`.
+- `/blog/non-resident-landlord-tax/sdlt-non-resident-2-percent-surcharge`.
 
 ### Inline CTA placements
+- Aside 1: after Williams-Hughes worked example (cross-border purchases / SDLT-LTT apportionment angle).
+- Aside 2: after "Filing the return and paying the Welsh Revenue Authority" section (Welsh-specialist accountant angle).
+- Total 2 asides, within 1-3 cap.
 
 ### Build attempts
+- npm install (clean), npm run build: PASS (442 static pages, including the new page).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 = 14 ✅
+- Em-dashes in markdown: 0 ✅
+- Tailwind classes in markdown: 0 ✅
+- Meta title length: 50 chars ≤62 ✅
+- Meta description length: 153 chars ≤158 ✅
+- Internal links resolve: all 3 unique targets exist in `Property/web/content/blog/` ✅
+- monitored_pages row inserted: id 188 (90-day window) ✅
+- Body word count: 2,736 (within 2,500-3,500 target) ✅
 
 ### Flags raised to wave5_site_wide_flags.md
+- INTERNAL_LINK: SDLT BTL rates surcharge pillar should add a reciprocal sibling-link to B1 (Welsh LTT) once B1-B6 are merged; cross-jurisdictional routing.
 
 ### 2-3 sentence summary
+B1 anchors the Welsh sub-bucket cluster with a positive-framing of the three Welsh-specific structural points (£225k nil band, no non-resident surcharge, no separate first-time-buyer regime), with three worked examples at Welsh purchase prices (£220k Davies / £395k Williams-Hughes / £1.6m Jones), the four-nation comparison table, and explicit cross-border apportionment under LTTA 2017 Sch 22 + FA 2003 s.48A. The rate table was verified live at gov.wales/land-transaction-tax-rates-and-bands per §16.35 and matches the §23.1 house position exactly. B1 leaves the higher-rates mechanic entirely to B2 and the MDR mechanic entirely to B3 (per brief sequencing).
