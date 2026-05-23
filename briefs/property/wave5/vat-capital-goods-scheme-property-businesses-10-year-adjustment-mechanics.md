@@ -162,46 +162,69 @@ When you append a STATUS open question, spawn a Monitor task watching for STATUS
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Meta description chosen:**
-- **Why these vs other options:**
+- **Final slug:** vat-capital-goods-scheme-property-businesses-10-year-adjustment-mechanics (unchanged)
+- **Final category:** Property Types & Specialist Tax
+- **H1 chosen:** VAT Capital Goods Scheme on Property: 10-Year Adjustment Mechanics
+- **Meta title chosen:** "VAT Capital Goods Scheme: 10-Year Property Adjustment Rule" (58 chars)
+- **Meta description chosen:** "Capital Goods Scheme on UK commercial property: £250,000 trigger, 10-interval adjustment clock, refurbishment items, disposal clawback, TOGC handover." (150 chars)
+- **Why these vs other options:** Title leads with "VAT Capital Goods Scheme" (the head term) before the 10-year + property modifier (which captures secondary intent). Meta description compresses the five canonical CGS depth points (threshold, clock, refurbishment, disposal, TOGC). Image left empty consistent with A1 precedent.
 
 ### Competitor URLs fetched
-- 
+- https://www.taxaccountant.co.uk/vat-the-capital-goods-scheme-for-property-businesses/ — outline shape (asset thresholds, refurbishment trap, annual adjustment calc, OTT interaction, disposal). Article uses "£250,000 VAT-inclusive" which is incorrect per legislation.gov.uk reg 113 (VAT-exclusive); A2 corrects this.
+- https://www.ukpropertyaccountants.co.uk/vat-and-property-dispelling-myths-and-avoiding-common-mistakes/ — myth-buster framing; informed A2's common-mistakes H2.
+- https://www.taxaccountant.co.uk/vat-on-property-purchases-when-the-seller-opted-to-tax/ — informed the TOGC-on-CGS section and the buyer-step-into-seller's-shoes mechanic.
 
 ### Existing-page review (from "Closest existing pages")
-- 
+- A1 (`vat-option-to-tax-commercial-property-mechanics-election-revocation`, just-committed sibling): upstream OTT election. A2 cross-links to A1 in the OTT-CGS interaction H2. A1 mentions CGS at the FAQ level only; A2 is the depth treatment.
+- `landlord-vat-registration-when-required` (touches CGS at periphery): forward-linked from A2 Related Reading only.
+- `togc-vat-property-letting-business` (adjacent): bi-directionally cross-linked (TOGC H2 in A2 body + Related Reading).
+- `domestic-reverse-charge-construction-vat-landlords` (distant): not cross-linked.
+- `vat-on-new-builds-residential-property` (distant): not cross-linked (residential carve-out covered via the OTT page).
 
 ### Citations added (external authority)
-- 
+- VAT Regulations 1995 (SI 1995/2518) full contents
+- VAT Regulations 1995 reg 112 (CGS application)
+- VAT Regulations 1995 reg 113 (£250k + £50k thresholds)
+- VAT Regulations 1995 reg 114 (interval definition)
+- VAT Regulations 1995 reg 115 (adjustment formula + final-interval rule)
+- VAT Regulations 1995 reg 116 (CGS records)
+- HMRC VAT Notice 706/2 (Capital Goods Scheme)
+- HMRC Partial Exemption Manual (CGS chapter PE63000+)
 
 ### Internal links added (to our existing pages)
-- 
+- `/blog/property-types-and-specialist-tax/vat-option-to-tax-commercial-property-mechanics-election-revocation` (OTT interaction H2 + Related Reading)
+- `/blog/incorporation-and-company-structures/togc-vat-property-letting-business` (TOGC H2 + Related Reading)
+- `/blog/landlord-tax-essentials/landlord-vat-registration-when-required` (Related Reading)
 
 ### Inline CTA placements
-- 
+- Aside 1: after "What counts as capital expenditure" sub-section of the £250k threshold H2 (refurbishment modelling framing)
+- Aside 2: after "Disposal During the Adjustment Period" H2 (disposal-route modelling framing)
 
 ### Build attempts
-- 
+- 1: build successful (442 static pages stable; A2 added to property-types-and-specialist-tax route). No errors or critical warnings.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted: id
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 12 = 12 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 58 chars (≤62) ✓
+- Meta description length: 150 chars (≤158) ✓
+- Internal links resolve: all 3 distinct paths resolve ✓
+- monitored_pages row inserted: yes (site_key=property, slug=vat-capital-goods-scheme-property-businesses-10-year-adjustment-mechanics, monitor_until=CURRENT_DATE + 90 days, rewrite_type=rewrite, notes='Wave 5 Bucket A net-new VAT CGS mechanic page')
+- Body word count: 2,926 (within 2,800-3,500 operational-mechanic band)
 
 ### §16.35 numeric verification log (every figure cited)
-- 
+- £250,000 VAT-exclusive CGS threshold for land/buildings/civil engineering: verified against legislation.gov.uk uksi/1995/2518/regulation/113 (2026-05-23). Reg 113 quoted: "not less than £250,000 where the item falls within paragraph (2)(a), (b) or (c)".
+- £50,000 VAT-exclusive threshold for computers / aircraft / vessels: verified reg 113 paragraph (3)(b).
+- 10-interval adjustment period for land/buildings; 5-interval for computers/ships/aircraft: verified HMRC Notice 706/2: "5 intervals for computers" and "5 intervals for ships and aircraft" vs "10 intervals for all other capital items".
+- Per-interval adjustment formula (total VAT / number of intervals × adjustment percentage): verified HMRC Notice 706/2 formula structure. Reg 115 in legislation.gov.uk confirms the calculation but uses separate formulas under reg 115(1) increase and reg 115(2) decrease.
+- Final-interval treatment on disposal (deemed wholly taxable or wholly exempt for remaining intervals): verified reg 115(3) to 115(3ZA) (legislation.gov.uk 2026-05-23). Amendments effective 1 January 2011 (SI 2010/3022) confirmed in legislation.gov.uk history.
+- Reg 115(11) TOGC step-into-shoes mechanic: verified via Notice 706/2 + reg 115 structure.
+- 16-year record-retention requirement (10-year CGS + 6-year general retention): based on general VAT retention rule; reg 116 sets CGS-specific record requirement.
+- 20% VAT standard rate (used in worked example): universal verified figure.
 
 ### Flags raised to wave5_site_wide_flags.md
-- 
+- None raised this session. Two pieces noted from competitor sources (taxaccountant.co.uk uses "£250,000 VAT-inclusive" rather than the correct VAT-exclusive figure; this is a competitor accuracy issue, not an on-site issue and not requiring a site-wide flag).
 
 ### 2-3 sentence summary
-- 
+- A2 is the canonical CGS depth page for Property. Covers the £250,000 VAT-exclusive trigger, the 10-interval clock, the per-interval adjustment formula (reg 115), refurbishment-as-new-CGS-item (with overlapping-items worked example through 2043), final-interval disposal mechanics (reg 115(3) with £145,200 clawback worked example), TOGC step-into-shoes (reg 115(11)), and partial-exemption interaction. Sits downstream of A1 (OTT election) and forward-cross-references the forthcoming A3 (partial exemption depth).
