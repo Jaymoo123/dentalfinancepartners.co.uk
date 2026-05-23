@@ -123,9 +123,9 @@ faqs:
 
 <h2>How Long Must You Keep Digital Records?</h2>
 
-<p>Under MTD rules, <strong>digital records landlords</strong> must retain all documentation for at least 5 years after the submission deadline. This is longer than the current 22 months for Self Assessment records.</p>
+<p>Under MTD rules, <strong>digital records landlords</strong> must retain all documentation for the 5-year statutory minimum under TMA 1970 s.12B, measured from the submission deadline. The practical retention floor is 7 years: this accommodates HMRC's 4-year standard discovery limit, the 6-year careless-error limit, the 20-year deliberate-error limit, plus the ITTOIA 2005 s.354 7-year post-cessation expense recovery window if you stop letting. The statutory minimum is longer than the current 22 months for non-MTD Self Assessment records.</p>
 
-<p>The 5-year period starts from 31 January following the end of the tax year. For 2026/27 records, you'd need to keep them until at least 31 January 2033.</p>
+<p>The statutory 5-year clock starts from 31 January following the end of the tax year. For 2026/27 records, the statutory minimum runs to 31 January 2033; the 7-year practical floor takes you to 31 January 2035.</p>
 
 <h3>Best Practice Record Retention</h3>
 <p>Many property accountants recommend keeping records longer than the minimum requirement:</p>

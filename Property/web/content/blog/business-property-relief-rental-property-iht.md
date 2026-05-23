@@ -193,4 +193,5 @@ faqs:
 <li><a href="/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards">An IHT Decision Framework for UK Landlords: 2026 Onwards</a>, the planning-lens companion covering what works for BTL estates when BPR does not.</li>
 <li><a href="/blog/property-types-and-specialist-tax/serviced-accommodation-bpr-eligibility-pawson-test">Serviced Accommodation and BPR: Clearing the Pawson Trading Threshold</a>, the case-law deeper for serviced-accommodation operators testing BPR eligibility.</li>
 <li><a href="/blog/property-types-and-specialist-tax/agricultural-property-relief-mixed-estate-1m-cap">Agricultural Property Relief and the £1m Cap: Planning for Mixed Estates</a>, the mixed-estate companion for landlords with farmland or agricultural-business interests alongside rental property.</li>
+<li><a href="/blog/landlord-tax-essentials/bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line">Why pure BTL fails the Pawson test for BPR</a>, the negative-case companion for the 90% pure-buy-to-let cohort who fall outside the s.105(3) investment test.</li>
 </ul>
