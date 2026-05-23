@@ -158,46 +158,73 @@ When you append a STATUS open question, spawn a Monitor task watching for STATUS
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Meta description chosen:**
-- **Why these vs other options:**
+- **Final slug:** vat-developer-pre-registration-input-tax-recovery-property-development-projects (brief default; no override)
+- **Final category:** property-types-and-specialist-tax (brief default)
+- **H1 chosen:** "Pre-Registration Input VAT for Property Developers: The Reg 111 Recovery Windows"
+- **Meta title chosen:** "Pre-Registration VAT Reclaim Property Developers: Reg 111" (57 chars)
+- **Meta description chosen:** "Reg 111 pre-registration VAT recovery for property developers: 4-year goods + 6-month services windows, still-on-hand test, worked first-return example." (152 chars; trimmed from 167-char initial draft)
+- **Why these vs other options:** Title leads with the primary query phrase (pre-registration VAT reclaim) + the cohort (property developers) + the statutory anchor (reg 111). Description packs the three key mechanics (4-year goods + 6-month services + still-on-hand test) that practitioners search for.
 
 ### Competitor URLs fetched
-- 
+- legislation.gov.uk/uksi/1995/2518/regulation/111 — primary statutory anchor; full text verified
+- gov.uk/hmrc-internal-manuals/vat-input-tax/vit32000 — HMRC's published treatment; still-on-hand test, services rules, common rejected patterns
+- towerstone.co.uk/can-i-reclaim-vat-on-property-development-costs — alive on session re-verify (Stage 2 had returned permission-denied); broad property-development VAT content but no reg 111 depth; useful for context only
+- ukpropertyaccountants.co.uk/vat-and-property-dispelling-myths-and-avoiding-common-mistakes — alive; light on pre-registration specifics
+- ukpropertyaccountants.co.uk/vat-registered-property-business-pros-and-cons-for-landlords — alive; useful for the developer-vs-landlord trade-off framing
 
 ### Existing-page review (from "Closest existing pages")
-- 
+- landlord-vat-registration-when-required: confirmed adjacent; A7 cross-links for the when-to-register entry-point
+- A1 (vat-option-to-tax): cross-link in OTT-interaction H2 and Related Reading; A7 covers pre-OTT recovery, A1 covers the election mechanic
+- A2 (vat-capital-goods-scheme): cross-link in CGS-interaction H2; A7 is the entry-point recovery, A2 is the 10-year adjustment
+- A6 (vat-property-conversion): cross-link in Related Reading; conversion projects are a common reg 111 cohort
+- vat-on-new-builds-residential-property: cross-link in Related Reading; new-build developer is the primary cohort
+- domestic-reverse-charge-construction-vat-landlords: cross-link in Related Reading; reverse-charged input tax counts for reg 111 purposes
 
 ### Citations added (external authority)
-- 
+- VATA 1994 s.24 (input tax meaning + recovery framework) — legislation.gov.uk
+- VAT Regulations 1995 reg 111 (pre-registration input tax) — legislation.gov.uk
+- HMRC VAT Notice 700 chapter 11 (input tax recoverable) — gov.uk
+- HMRC VIT32000 (Input Tax Manual, pre-registration) — gov.uk internal manual
+- HMRC VAT Notice 742A (OTT cross-reference) — gov.uk
+- HMRC VAT Notice 700/45 (Correcting errors) — gov.uk
+- HMRC VATLAND VAT Land and Property Manual — gov.uk internal manual
 
 ### Internal links added (to our existing pages)
-- 
+- /blog/property-types-and-specialist-tax/vat-option-to-tax-commercial-property-mechanics-election-revocation (A1 sibling)
+- /blog/property-types-and-specialist-tax/vat-capital-goods-scheme-property-businesses-10-year-adjustment-mechanics (A2 sibling)
+- /blog/landlord-tax-essentials/landlord-vat-registration-when-required (existing)
+- /blog/property-types-and-specialist-tax/vat-property-conversion-residential-to-commercial-or-commercial-to-residential-zero-rate-reduced-rate (A6 sibling)
+- /blog/property-types-and-specialist-tax/vat-on-new-builds-residential-property (existing)
+- /blog/property-types-and-specialist-tax/domestic-reverse-charge-construction-vat-landlords (existing)
 
 ### Inline CTA placements
-- 
+- Aside 1 after "The Two Windows" section (register at the latest supportable date)
+- Aside 2 after "Documentation Discipline" (build the schedule alongside the first return)
 
 ### Build attempts
-- 
+- 1 attempt; build clean
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted: id
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 12 = 12 ✅
+- Em-dashes in markdown: 0 ✅
+- Tailwind classes in markdown: 0 ✅
+- Meta title length: 57 (≤62) ✅
+- Meta description length: 152 (≤158) ✅ (initial 167 trimmed by restructuring opening + collapsing "Documentation, apportionment, and a worked first-return reclaim" → "still-on-hand test, worked first-return example")
+- Internal links resolve: 6/6 confirmed
+- monitored_pages row inserted: id 202
+- Body word count: 2,615 (target 2,500-3,200) ✅
 
 ### §16.35 numeric verification log (every figure cited)
-- 
+- Reg 111 4-year goods window — verified via legislation.gov.uk/uksi/1995/2518/regulation/111 at write time
+- Reg 111 6-month services window — verified via legislation.gov.uk/uksi/1995/2518/regulation/111 at write time
+- 3-year goods window for registrations on/before 1 April 2010 (historical) — verified via reg 111(2C)
+- VAT registration threshold £90,000 — verified via gov.uk/vat-registration-thresholds (sister carry from A5 work-log)
+- CGS £250,000 VAT-exclusive threshold — sister carry from A2 (reg 113 VAT Regulations 1995)
+- £10,000 net error correction limit + 1% of box 6 + £50,000 ceiling — verified via gov.uk error correction guidance at write time
+- Standard rate 20% — long-standing UK rate (no carry-risk)
 
 ### Flags raised to wave5_site_wide_flags.md
-- 
+- None. A7 sits cleanly within the published HMRC framework. No statute conflicts, no internal-link gaps not already covered by F-2 / F-5 / F-6. The deferred-registration timing recommendation in A7's opening aside is consistent with VIT32000.
 
 ### 2-3 sentence summary
-- 
+- A7 sets out VAT Regulations 1995 reg 111 pre-registration input-tax recovery for property developers: the 4-year goods window + still-on-hand test, the 6-month services window, the documentation discipline, the taxable / exempt / private-use apportionment, and the interaction with the downstream OTT election (A1) and CGS (A2). The page anchors a worked example showing how registration-timing decisions translate into £14,800 of recoverable VAT lost or saved on a typical mid-size residential developer. Common rejected-claim patterns close out the page.
