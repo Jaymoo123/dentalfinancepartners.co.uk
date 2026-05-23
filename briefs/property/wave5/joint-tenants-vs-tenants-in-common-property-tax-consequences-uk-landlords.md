@@ -164,26 +164,55 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** as briefed
+- **Final category:** landlord-tax-essentials (as briefed)
+- **H1 chosen:** "Joint Tenants vs Tenants in Common: Tax Consequences for UK Landlords"
+- **Meta title chosen:** "Joint Tenants vs Tenants in Common: Tax Consequences" (52 chars)
+- **Why these vs other options:** lead with primary query "joint tenants vs tenants in common"; landlord-specific suffix on H1 establishes audience differentiator vs generic estate-planning treatments. Structure: definition → survivorship (largest single difference) → shares → comparison table → severance → tax-side sub-sections → IHT-trap worked scenario → when JT still makes sense → 5-question decision framework. Different shape from C1 (which is mechanic-first; C2 is comparison-first).
 
 ### Competitor URLs fetched
+- alexander-ene.co.uk/joint-tenants-or-tenants-in-common.htm: useful for confirming the four-unities framing + survivorship treatment + "equal shares only" point on JT. Did not borrow phrasing.
+- alexander-ene.co.uk/co-ownership-rental-property.htm: returned generic firm-boilerplate content (not the topical page expected). Discarded; logged in discovery.
+- ukpropertyaccountants.co.uk: already fetched during C1; signal reused.
+- uklandlordtax.co.uk: already fetched during C1; signal reused.
 
 ### Existing-page review (from "Closest existing pages")
+- C1 form-17-... (just shipped, same branch): internal-linked from "Income tax and Form 17" sub-section and from the "Shares: equal vs unequal" section.
+- C8 forward-link in the IHT sub-section.
+- section-24 cousin: not back-linked from C2 (cousin walks Section 24 numbers; C2's role is structural). Could be added but the link density is appropriate.
 
 ### Citations added (external authority)
+- LPA 1925 s.36 (joint tenancy severance): https://www.legislation.gov.uk/ukpga/1925/20/section/36
+- ITA 2007 s.836 (50/50 spousal default): https://www.legislation.gov.uk/ukpga/2007/3/section/836
+- IHTA 1984 s.18 (spouse exemption): https://www.legislation.gov.uk/ukpga/1984/51/section/18
+- FA 2003 (SDLT Sch 4ZA joint-buyer rule): https://www.legislation.gov.uk/ukpga/2003/14
+- HMRC IHTM15040 (joint property IHT survivorship): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm15040
+
+(5 external authority links, within 5-8 target)
 
 ### Internal links added (to our existing pages)
+- /blog/landlord-tax-essentials/form-17-declaration-beneficial-interest-property-mechanics-filing-revocation (C1, same branch)
+- /blog/landlord-tax-essentials/iht-joint-ownership-property-spouse-exemption-transferable-allowances-jointly-tic-vs-jt (C8, forward-link same branch)
 
 ### Inline CTA placements
+- After the comparison table ("Buying together and unsure which to pick?")
+- After the severance section ("Already holding as joint tenants and thinking about severance?")
+- Total: 2 asides (within 1-3 guideline)
 
 ### Build attempts
+- Attempt 1: PASS. Page generated at .next/server/app/blog/landlord-tax-essentials/joint-tenants-vs-tenants-in-common-property-tax-consequences-uk-landlords.html.
 
 ### Verification
+- em-dash count: 0
+- Tailwind utility classes in markdown: 0
+- metaTitle length: 52 (max 62)
+- metaDescription length: 154 (max 158)
+- FAQ count: 14 (within 10-14)
+- Internal links resolve: 2 of 2 internal links are within-branch forward/sibling links (C1 already committed b8fcc81; C8 forward, same branch)
+- Body word count: 3147 (within 2,500-3,500)
 
 ### Flags raised to wave5_site_wide_flags.md
+- None new for C2.
 
 ### 2-3 sentence summary
+C2 is the foundational structural-property-law page on the JT vs TIC choice, anchored on the survivorship-vs-will mechanic, the equal-share-only constraint of JT, the LPA 1925 s.36(2) severance route, and the IHT-side trap of holding investment property as JT (the Anderson worked scenario). Forward-links to C1 (Form 17 mechanic) and C8 (IHT joint-ownership). Comparison-table-led structure differentiates from C1's mechanic-first shape; FAQ phrasing varied across the 14 entries (no repeated openers).
