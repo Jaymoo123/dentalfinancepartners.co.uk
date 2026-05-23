@@ -173,34 +173,54 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug + category:** as briefed.
+- **H1:** "Charging Market Rent to Your Own Property Company: Tax Treatment and the Connected-Party Defence Pack"
+- **Meta title:** "Charging Market Rent to Own Property Company: Tax Rules" (55 chars)
+- **Why:** H1 names "connected-party defence pack" to telegraph the differentiator vs competitor pages that skip the operational evidence layer.
 
 ### Competitor URLs fetched
+- Bolt Burdon seed: alive at session-time fetch but thin. No statutory citations. Confirmed competitive opening.
+- ukpropertyaccountants FIC management: thin on rent-to-own-SPV; covers connected-party transactions generically.
+- ukpropertyaccountants FIC purchase: covers "company owns" scenario, not "I own, let to company". Used for comparison framing.
+- taxaccountant FIC tax planning: thin connected-party section; FAQ pattern reference.
+- uklandlordtax DLA: re-fetched; not heavily mined.
 
-### Existing-page review (from "Closest existing pages")
+### Existing-page review
+- `how-to-transfer-property-into-limited-company-uk`: the alternative path (incorporation rather than personal letting). Linked.
+- `how-to-choose-right-property-company-structure-uk-landlords-2026`: upstream structure decision. Linked.
+- `cgt-property-transfer-limited-company-calculate`: CGT side of any property transfer. Not linked (different scenario).
+- `family-investment-company-property-worth-it`: not linked (FIC angle, off-topic for A4).
 
 ### Citations added (external authority)
+4 external hyperlinks: ITTOIA 2005 s.272, CTA 2009 s.54, TIOPA 2010 Part 4, TIOPA 2010 s.166. Plus HMRC INTM412050 (transfer-pricing manual) and PIM2068 (connected-party rent) hyperlinked. CIHC s.18N and SDLT manual referenced in prose.
 
-### Internal links added (to our existing pages)
+### Internal links added
+Six unique targets, all verified on disk:
+- btl-spv-directors-loan-repayment-strategy-tax-efficient-extraction (A1, this branch)
+- alphabet-shares-property-spv-dividend-splitting-spouse-children (A2, this branch)
+- property-company-profit-extraction-salary-vs-dividends
+- how-to-transfer-property-into-limited-company-uk
+- how-to-choose-right-property-company-structure-uk-landlords-2026
+- section-24-interest-only-mortgage-tax-planning (section-24-and-tax-relief category)
 
 ### Inline CTA placements
+Two `<aside>` blocks: (1) on the SME exemption parking the transfer-pricing regime, (2) on the defence pack as the most-skipped operational step.
 
 ### Build attempts
+- First build clean. No errors.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count: 14 in markdown + 14 in built HTML JSON-LD ✓
+- Em-dashes: 0 ✓
+- Tailwind classes: 0 ✓
+- Meta title length: 55 ✓
+- Meta description length: 149 ✓
+- Internal links resolve: 6 unique targets, all on disk ✓
+- monitored_pages row inserted: yes (90-day window 2026-08-21)
+- Body word count: 2,595, inside 2,500-3,500 typical range.
 
 ### Flags raised to wave4_site_wide_flags.md
+- None new.
 
 ### 2-3 sentence summary
+A4 covers the third extraction route (rent to own SPV) head-on against salary and dividends, anchored on ITTOIA 2005 s.272 (personal property income, with section 24 finance-cost restriction applying as for any landlord) and CTA 2009 s.54 (corporation tax deduction). The page owns the TIOPA 2010 Part 4 transfer-pricing risk (usually parked by the s.166 SME exemption for family-property structures) and the connected-party defence pack (formal lease, valuer letter, comparable listings, board minutes, payment trail). Worked head-on comparison shows rent is the cheapest of the three routes for higher-rate taxpayers with un-mortgaged property; the advantage narrows where section 24 erodes the personal-side efficiency.
