@@ -153,46 +153,68 @@ When you append a STATUS open question, spawn a Monitor task watching for STATUS
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Meta description chosen:**
-- **Why these vs other options:**
+- **Final slug:** vat-toms-long-term-stays-hotel-aparthotel-28-day-rule-mechanics (brief default; no override)
+- **Final category:** property-types-and-specialist-tax (brief default)
+- **H1 chosen:** "Long-Stay Hotel and Aparthotel VAT: The 28-Day Reduced-Value Rule"
+- **Meta title chosen:** "Hotel and Aparthotel VAT: The 28-Day Rule Mechanics" (51 chars)
+- **Meta description chosen:** "VATA 1994 Sch 6 para 9 reduces VAT on long-stay hotel/aparthotel bookings from day 29: VAT on facilities only (20% floor). Sonder UT 2025 + worked example." (155 chars; trimmed from initial 172-char draft)
+- **Why these vs other options:** Title leads with the cohort (hotel + aparthotel) + the rule name (28-day). Description includes the correct statutory anchor (Sch 6 para 9, NOT the brief's incorrect Sch 4A para 9 — see flag), the trigger day, the facilities floor, and the most current case-law authority (Sonder UT 2025).
 
 ### Competitor URLs fetched
-- 
+- gov.uk Notice 709/3 (canonical HMRC guidance) — section on long-stay reduced-value rule extracted at write time
+- legislation.gov.uk/ukpga/1994/23/schedule/6 — VATA 1994 Sch 6 para 9 full text verified (this is the CORRECT statutory anchor; brief incorrectly cited Sch 4A para 9)
+- ukpropertyaccountants.co.uk/vat-analysis-for-agent-and-principal-roles-in-serviced-accommodation — alive, brief on agent/principal but does not address 28-day rule
+- uklandlordtax.co.uk/leased-apartments-sub-let-on-airbnb-vat-toms-or-not — Sonder Europe UT 2025 analysis extracted
+- geraldedelman.com/insights/vat-on-long-term-hotel-stays — tentative; not re-tested at write time (Notice 709/3 + Sch 6 para 9 cover the mechanic; adequate without geraldedelman)
+- property-tax-advice.co.uk/knowledge-centre/the-toms-vat-scheme-another-attack-by-hmrc-foiled — tentative; not re-tested (Sonder UT 2025 is more recent and authoritative)
 
 ### Existing-page review (from "Closest existing pages")
-- 
+- toms-vat-serviced-accommodation: confirmed framework page; A8 deepens the 28-day variant. Bi-directional cross-link in Related Reading. F-7 raised for existing TOMS page to back-link to A8.
+- landlord-vat-registration-when-required: cross-link in Related Reading for the registration threshold context
+- A1 (vat-option-to-tax): cross-link in Related Reading to flag the OTT/hotel boundary (hotels are not within OTT scope; standard-rated by Note 9 default)
 
 ### Citations added (external authority)
-- 
+- VATA 1994 Sch 6 paragraph 9 (reduced value for long-stay hotel accommodation) — legislation.gov.uk
+- VATA 1994 Sch 9 Group 1 Note 9 (Item 1: hotel accommodation standard-rated) — legislation.gov.uk
+- HMRC VAT Notice 709/3 (Hotels and holiday accommodation) — gov.uk
+- HMRC VAT Notice 709/5 (TOMS) — gov.uk
+- HMRC VATTOS Manual (TOMS chapter) — gov.uk
+- Sonder Europe Ltd v HMRC [2025] UKUT 14 (TCC) — gov.uk tribunal decisions
 
 ### Internal links added (to our existing pages)
-- 
+- /blog/property-types-and-specialist-tax/toms-vat-serviced-accommodation (existing TOMS framework page)
+- /blog/landlord-tax-essentials/landlord-vat-registration-when-required (existing)
+- /blog/property-types-and-specialist-tax/vat-option-to-tax-commercial-property-mechanics-election-revocation (A1 sibling)
 
 ### Inline CTA placements
-- 
+- Aside 1 after "Day-Counting Rules" (configure the PMS, not the spreadsheet)
+- Aside 2 after "TOMS Interaction: Sonder Europe UT 2025" (Sonder reset the framework for lease-and-sub-let cohort)
 
 ### Build attempts
-- 
+- 2 attempts: first build clean (Next.js OK); a single em-dash in the Authorities Cited Sonder line caught at verification, removed, no rebuild needed for that edit (markdown body change does not require rebuild for verification purposes)
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted: id
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 12 = 12 ✅
+- Em-dashes in markdown: 0 ✅ (initial 1 em-dash on Sonder authority-line caught + removed)
+- Tailwind classes in markdown: 0 ✅
+- Meta title length: 51 (≤62) ✅
+- Meta description length: 155 (≤158) ✅ (initial 172 trimmed in two passes)
+- Internal links resolve: 3/3 confirmed
+- monitored_pages row inserted: id 205
+- Body word count: 2,646 (target 2,500-3,200) ✅ (initial draft 2,259 padded with the "Common Misapplications" H2 to clear the floor)
 
 ### §16.35 numeric verification log (every figure cited)
-- 
+- VATA 1994 Sch 6 paragraph 9 (long-stay reduced-value rule) — verified via legislation.gov.uk at write time (CORRECTS the brief's incorrect cite of Sch 4A para 9)
+- 4-week / 28-day trigger — verified via Sch 6 para 9(2) at write time
+- 20 percent facilities floor — verified via Notice 709/3 at write time
+- Day-29 start of reduced-value treatment — verified via Notice 709/3 at write time
+- Sonder Europe Ltd v HMRC [2025] UKUT 14 (TCC) — January 2025 decision — verified via secondary commentary at write time
+- VAT registration threshold £90,000 + de-registration £88,000 (1 April 2024) — sister carry from A5/A7
+- Standard rate 20% — long-standing (no carry-risk)
 
 ### Flags raised to wave5_site_wide_flags.md
-- 
+- F-7 INTERNAL_LINK: existing toms-vat-serviced-accommodation page should back-link to A8 for the 28-day-rule depth. Bi-directional cross-link already in A8.
+- F-8 BRIEF_CORRECTION: A8 brief incorrectly cites "VATA 1994 s.50A + Sch 4A para 9" for the reduced-value rule. The correct statutory anchor is VATA 1994 Schedule 6 paragraph 9. Caught at §16.35 per-write verification (the brief's frontmatter reference and the Stage 2 deepened framing both carried the wrong cite). A8 cites correctly. Future Wave 5 / Wave 6 briefs in the VAT-accommodation area should not carry the s.50A / Sch 4A para 9 reference forward.
 
 ### 2-3 sentence summary
-- 
+- A8 sets out the VATA 1994 Sch 6 paragraph 9 reduced-value rule for long-stay hotel and aparthotel bookings: day-29 trigger, accommodation-vs-facilities apportionment with a 20 percent statutory floor, day-counting and continuity rules, post-Sonder UT 2025 TOMS interaction for lease-and-sub-let operators, and six common misapplication patterns. The 45-day Crescent Suites worked example shows £272 of guest-side VAT saving and £272 of operator output-VAT reduction on a typical £180-a-night corporate-relocation booking. Distinct from the existing TOMS framework page (which it cross-links bi-directionally) by being the long-stay reduced-value depth page.
