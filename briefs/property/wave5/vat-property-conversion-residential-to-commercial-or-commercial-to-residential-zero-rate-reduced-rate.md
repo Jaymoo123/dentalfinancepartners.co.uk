@@ -156,46 +156,70 @@ When you append a STATUS open question, spawn a Monitor task watching for STATUS
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Meta description chosen:**
-- **Why these vs other options:**
+- **Final slug:** vat-property-conversion-residential-to-commercial-or-commercial-to-residential-zero-rate-reduced-rate (brief default; no override)
+- **Final category:** property-types-and-specialist-tax (brief default)
+- **H1 chosen:** "Property Conversion and VAT: Zero-Rate, 5%, and the Certification Mechanic"
+- **Meta title chosen:** "Property Conversion VAT UK: Zero-Rate and 5% Reliefs" (52 chars)
+- **Meta description chosen:** "Three property conversion VAT reliefs: zero-rate Sch 8 Group 5 Item 1(b), 5% Sch 7A Group 6, 5% Sch 7A Group 7 empty-home. Mechanics + worked examples." (151 chars; trimmed from 176-char initial draft)
+- **Why these vs other options:** Title leads with primary query (Property Conversion VAT) and signals both reliefs (zero + 5%). Description packs all three statutory anchors (the SEO win on Notice 708 + Sch 8 + Sch 7A clusters). H1 leads with the topic and then signals the mechanic depth without sacrificing readability.
 
 ### Competitor URLs fetched
-- 
+- gov.uk/guidance/buildings-and-construction-vat-notice-708 — Notice 708 (primary authority, last updated 26 June 2025): Item 1(b) conditions, certification, 10-year rule, 2-year empty rule
+- uklandlordtax.co.uk/vat-property-conversion-guide — alive; weak on statutory anchors but useful for the three-relief framework outline
+- ukpropertyaccountants.co.uk/vat-and-property-dispelling-myths-and-avoiding-common-mistakes — alive; useful for the misconceptions section seed
+- taxaccountant.co.uk/vat-on-construction-industry-an-overview — alive; useful for the construction-VAT context but light on conversion specifics
 
 ### Existing-page review (from "Closest existing pages")
-- 
+- vat-on-new-builds-residential-property: confirmed Sibling on Sch 8 Group 5 Item 1(a). Brief 5% conversion mention; A6 is the depth. Forward-link in Related Reading.
+- diy-housebuilders-vat-refund-scheme: confirmed adjacent; A6 covers developer-route only, cross-link to DIY page for the self-converter mechanic
+- domestic-reverse-charge-construction-vat-landlords: confirmed adjacent; cross-link for the reverse-charge interaction (5% rate is reverse-charged where parties are VAT/CIS-registered)
+- A1 (vat-option-to-tax): confirmed sibling; cross-link in Related Reading
+- A4 (vat-mixed-use-property-purchase): confirmed sibling; cross-link in Related Reading for the apportionment angle on mixed-use conversions
 
 ### Citations added (external authority)
-- 
+- VATA 1994 Sch 8 Group 5 (zero-rated construction of dwellings) — legislation.gov.uk
+- VATA 1994 Sch 7A (reduced-rate supplies) — legislation.gov.uk
+- HMRC VAT Notice 708 (Buildings and construction) — gov.uk
+- HMRC VAT Notice 719 (DIY refund scheme) — gov.uk
+- HMRC VCONST VAT Construction Manual — gov.uk
+- HMRC VATLAND VAT Land and Property Manual — gov.uk
+- HMRC VAT Domestic Reverse Charge for Construction Services — gov.uk
 
 ### Internal links added (to our existing pages)
-- 
+- /blog/property-types-and-specialist-tax/vat-on-new-builds-residential-property (existing)
+- /blog/property-types-and-specialist-tax/diy-housebuilders-vat-refund-scheme (existing)
+- /blog/property-types-and-specialist-tax/domestic-reverse-charge-construction-vat-landlords (existing)
+- /blog/property-types-and-specialist-tax/vat-option-to-tax-commercial-property-mechanics-election-revocation (A1 sibling)
+- /blog/property-types-and-specialist-tax/vat-mixed-use-property-purchase-residential-commercial-element-apportionment (A4 sibling)
 
 ### Inline CTA placements
-- 
+- Aside 1 after "Zero-Rate on First Grant" H2 (structure the sale into project plan)
+- Aside 2 after "5% Empty-Home Renovations" H2 (Empty Property Officer letter before mobilisation)
+- Aside 3 after "Worked Example B" (5% relief is cost-reduction, not recovery route)
 
 ### Build attempts
-- 
+- 1 attempt; build clean
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted: id
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 13 = 13 ✅
+- Em-dashes in markdown: 0 ✅
+- Tailwind classes in markdown: 0 ✅
+- Meta title length: 52 (≤62) ✅
+- Meta description length: 151 (≤158) ✅ (initial 176 trimmed by collapsing "5% residential conversion Sch 7A Group 6" → "5% Sch 7A Group 6" and "5% empty-home renovation Sch 7A Group 7" → "5% Sch 7A Group 7 empty-home")
+- Internal links resolve: 5/5 confirmed
+- monitored_pages row inserted: id 200
+- Body word count: 2,797 (target 2,800-3,500; at lower boundary by 3 words; not padded)
 
 ### §16.35 numeric verification log (every figure cited)
-- 
+- 10-year non-residential-history rule (Item 1(b)) — verified via VAT Notice 708 at write time
+- 2-year continuous empty-period rule (Sch 7A Group 7) — verified via VAT Notice 708 at write time
+- 21-year major-interest threshold — statutory definition, verified via Sch 8 Group 5 Note 1 (carry-safe)
+- Zero rate (0%), reduced rate (5%), standard rate (20%) — long-standing UK rates (no carry-risk)
+- CGS £250,000 VAT-exclusive threshold — verified via A2 work-log (sister carry; reg 113 VAT Regulations 1995)
+- Reverse-charge effective date 1 March 2021 — verified via gov.uk reverse-charge guidance at write time
 
 ### Flags raised to wave5_site_wide_flags.md
-- 
+- F-6 INTERNAL_LINK: existing vat-on-new-builds-residential-property page should back-link to A6 for conversion-specific depth (it currently has one paragraph on the 5% rate). A6 already forward-links via Related Reading. (Flag-number F-5 was taken by Session C's alexander-ene URL-rot note shortly before A6 wrote-up; A6 takes F-6.)
 
 ### 2-3 sentence summary
-- 
+- A6 sets out the three statutory reliefs for property conversion projects (Sch 8 Group 5 Item 1(b) zero-rate, Sch 7A Group 6 5% conversion, Sch 7A Group 7 5% empty-home), the certification mechanic and Notice 708 evidence requirements, the developer-vs-DIY route choice, and the downstream sale-or-let position that determines whether the relief produces a recovery route or just a cost reduction. Two worked examples (office-to-flats zero-rate + Victorian-terrace empty-home 5%) and a misconceptions section close out the page. Sits sibling to existing new-build and DIY pages with clear topical boundary.
