@@ -156,37 +156,57 @@ Standard. Persistent false; timeout 1 hour; do NOT block.
 
 ---
 
-## Per-page work-log (fill in as you go)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `scottish-lbtt-first-time-buyer-relief-eligibility-mechanics` (no override). Tracker has stale `-145k-threshold-` suffix; correct slug per brief and current £175k threshold is no suffix.
+- **Final category:** `landlord-tax-essentials` (no override)
+- **H1 chosen:** "Scottish LBTT First-Time Buyer Relief: £175,000 Nil-Band with No Upper Value Cap"
+- **Meta title:** "Scottish LBTT First-Time Buyer Relief: £175k Mechanics" (54 chars)
+- **Why these vs other options:** Positive Scottish mechanic lead (£175k + no-value-cap + £600 max saving) anti-templated against B4's Welsh FTB-absence framing. Personas Lennon / Macleod-Scott / Robertson distinct from earlier B-bucket pages (Macleod alone was in B6 in different scenario; Macleod-Scott in B8 is a different fictional household).
 
 ### Competitor URLs fetched
+- revenue.scot LBTT3048 FTB relief guidance: verified earlier in B4 prep (£175k uplift, £600 max saving, no value cap, LBTT(S)A 2013 Sch 4A).
+- Other Stage 1 seeds (taxaccountant.co.uk, thurmonline.co.uk) not re-fetched; substantive position established via authority sources.
 
 ### Existing-page review
+- B4 (Welsh FTB-absence): cross-link as cross-jurisdictional sibling with explicit comparative framing in FAQ #9 and the closing-block routing.
+- B6 (Scottish main rates): cross-link for the underlying band-table context.
+- B7 (Scottish ADS): cross-link for the mutually-exclusive interaction.
+- SDLT BTL surcharge pillar: cross-link for the England FTB regime contrast.
 
 ### Citations added (external authority)
+- LBTT(S)A 2013 Sch 4A (FTB relief).
+- Land and Buildings Transaction Tax (First-Time Buyer Relief) (Scotland) Order 2018 (SSI 2018/220).
+- revenue.scot/taxes/land-buildings-transaction-tax/lbtt-legislation-guidance/lbtt3001-exemptions-reliefs/lbtt3010-tax-reliefs/lbtt3048-first-time-buyer-relief.
+- FA 2003 Sch 6ZA (England FTB cross-reference).
+- LTTA 2017 (Welsh contrast).
 
 ### Internal links added
+- `/blog/landlord-tax-essentials/welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland` (B4 cross-jurisdictional sibling).
+- `/blog/landlord-tax-essentials/scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide` (B6 main rates).
+- `/blog/landlord-tax-essentials/scottish-lbtt-additional-dwelling-supplement-ads-mechanics-second-home-buyers` (B7 ADS).
+- `/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025` (England FTB regime in SDLT pillar).
 
 ### Inline CTA placements
+- Aside 1: after the no-value-cap structural point (high-value urban Scottish purchasers angle).
+- Total 1 aside, within 1-3 cap.
 
 ### Build attempts
+- npm run build: PASS (449 static pages, +1 since B7 baseline). Initial body 1,922 words was significantly under the 2,500 brief floor; added 3 substantive sections (intention-to-occupy mechanics, linked-transaction exclusion, parent-deposit-vs-parent-on-title structural choice); final body 2,655 words.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count: 12 = 12 ✅
+- Em-dashes: 0 ✅
+- Tailwind classes: 0 ✅
+- Meta title length: 54 ≤62 ✅
+- Meta description length: 157 ≤158 ✅
+- Internal links resolve: all 4 ✅
+- monitored_pages row inserted: id 214 (90-day window through 2026-08-21) ✅
+- Body word count: 2,655 (within 2,500-3,000 brief target) ✅
 
 ### Flags raised to wave5_site_wide_flags.md
+- None this page.
 
 ### 2-3 sentence summary
+B8 owns the Scottish FTB relief depth with the £175k + no-value-cap + £600-max framing under LBTT(S)A 2013 Sch 4A. Three worked examples (Lennon Dundee £160k single, Macleod-Scott Glasgow £230k joint, Robertson Edinburgh £350k joint-with-overseas-owning-partner) cover the typical price range plus the overseas-prior-ownership trap. Three substantive sections (intention-to-occupy, linked-transaction exclusion, parent-deposit-vs-parent-on-title structural choice) added to clear the 2,500 brief floor. Anti-templating against B4 held: B4 = Welsh policy-absence + £225k nil substitute; B8 = Scottish active-relief £175k + no-value-cap + £600 max.
