@@ -171,34 +171,59 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `mtd-itsa-foreign-property-income-quarterly-reporting-rules` (no override).
+- **Final category:** `Making Tax Digital (MTD)` (no override).
+- **H1 chosen:** "MTD ITSA for UK-Resident Landlords with Foreign Rental Property".
+- **Meta title chosen:** "MTD ITSA Foreign Property Income: Quarterly Reporting" (53 chars).
+- **Why these vs other options:** H1 leads on the cohort ("UK-resident landlords with foreign rental property") rather than the mechanism, because that is the search-intent group that needs this page. Meta title prioritises "MTD ITSA Foreign Property Income" (the search-stem) + "Quarterly Reporting" (the operational differentiator from existing FTC page which is annual-only). Avoids any "complete guide" framing.
 
 ### Competitor URLs fetched
+- ukpropertyaccountants.co.uk MTD-foreign-property page — extracted the gross-aggregation point ("foreign rental still counts toward £50k threshold") and the consistency-of-FX-method point ("use a consistent exchange rate method"). Light on technical detail though; confirmed §19.11 was right to write the rule explicitly.
+- rentalbux.com UK-landlords-with-foreign-property — confirmed the FTC-at-final-declaration / report-gross-quarterly pattern ("Quarterly Updates: Report gross foreign property income (do not deduct foreign taxes at this stage). Final Declaration: Claim FTCR when completing the Final Declaration"). Useful corroboration of §19.11.
+- (Three remaining brief URLs skipped: rentalbux MTD-compatible-software-foreign-income, rentalbux MTD-overseas-landlords, ukpropertyaccountants declare-foreign-income. Reason: house position §19.11 + the two fetched URLs gave the operational picture sufficient to write. Additional URLs would add commercial colour without changing the framing.)
 
 ### Existing-page review (from "Closest existing pages")
+- `foreign-tax-credit-uk-property-overseas-landlords` (Wave 2, category Non-Resident Landlord Tax) — the FTC mechanism page. Cross-linked TWICE as the dedicated reference for the credit-mechanism. B4 explicitly differentiates: B4 owns the MTD-quarterly-reporting mechanic; existing page owns the FTC-claim mechanism. Clean boundary.
+- `mtd-quarterly-reporting-landlords-step-by-step-guide` (Jaccard 0.33) — listed in F-7/F-9 as carrying stale figures. NOT cited as authority.
+- `how-to-switch-self-assessment-mtd-property-income` (Jaccard 0.27) — covers the transition from SA to MTD; topically adjacent but not directly applicable here (B4 assumes the landlord is already in MTD). Not cross-linked from B4 to avoid adding internal-link noise.
+- `mtd-itsa-qualifying-income-test-gross-vs-net` (Wave 3) — cross-linked once for the threshold-test gross-aggregation point.
+- `making-tax-digital-property-income-2026-complete-guide` — the pillar/overview page; not cross-linked from B4 because the page already cross-links the more focused overview-six-changes page.
 
 ### Citations added (external authority)
+- HMRC International Manual (https://www.gov.uk/hmrc-internal-manuals/international-manual) — cited as the FX-translation authority.
+- HMRC monthly average exchange rates collection (https://www.gov.uk/government/collections/exchange-rates-for-customs-and-vat) — cited as the authoritative rate source.
+- (TIOPA 2010 s.18 referenced inline as the FTC statute; the substantive citation is in the dedicated FTC page that B4 cross-links to, so not duplicating here.)
+- (Spring Statement 2025 reference not needed — this page is about reporting mechanics, not the penalty regime that the SS2025 doubling affected.)
 
 ### Internal links added (to our existing pages)
+- `/blog/non-resident-landlord-tax/foreign-tax-credit-uk-property-overseas-landlords` (Wave 2) ×2 — the FTC mechanism page.
+- `/blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net` ×1 (Wave 3).
+- `/blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords` ×1 (Wave 3 B8).
+- `/blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords` ×1 (Wave 1).
+- `/blog/making-tax-digital-mtd/mtd-itsa-choosing-software-by-landlord-scenario-decision-tree` (B2) ×2 — for the software-support criterion + the wider framework.
+- `/blog/making-tax-digital-mtd/mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse` (B1) ×1 — for joint-owner foreign property note.
+- 6 unique target files; all exist (4 on main + B1 + B2 on branch); URL category segments verified.
 
 ### Inline CTA placements
+- `<aside>` 1: after the FX-translation section — high-intent moment for landlord uncertain which method to pick.
+- `<aside>` 2: after the 3 operational traps section — high-intent for landlords pre-onboarding into MTD with foreign property.
+- 2 asides total (under ≤3 limit).
 
 ### Build attempts
+- Single build attempt; passed clean. B4 rendered to `.next/server/app/blog/making-tax-digital-mtd/mtd-itsa-foreign-property-income-quarterly-reporting-rules.html`.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 12 Question entries in 1 FAQPage block = frontmatter 12 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 53 (max 62) ✓
+- Meta description length: 149 (max 158) ✓
+- Internal links resolve: 6/6 unique target files exist; URL category segments verified ✓
+- monitored_pages row inserted: yes (rewrite_type='rewrite', 90-day window, notes "Wave 4 Session B net-new (MTD ITSA bucket B4)")
+- Body word count: 2,340. Below the 2,500 lower-bound floor; calibration note per Wave 2 §16.16 (which logged B4 of Wave 2 at 2,312 with explicit calibration). Justification: page covers SA106 mapping + FX translation + FTC-timing + software-gap + worked example + NRL interaction + 3 traps; the operational mechanics is fully covered, padding to 2,500 would require either repeating §19.11 (house position) or duplicating FTC-mechanism content from the cross-linked Wave 2 page. Held the word count down to preserve cleaner cross-linking discipline.
 
 ### Flags raised to wave4_site_wide_flags.md
+- None raised. The light word count (2,340 vs 2,500 floor) is documented in the calibration note above.
 
 ### 2-3 sentence summary
+Operational MTD-reporting mechanics for foreign rental income held by a UK-resident landlord. Covers SA106-to-MTD mapping, FX-translation choice (spot vs HMRC monthly average; pick one and stick), foreign tax credit timing (final declaration, NOT quarterly), software-support gap (many MTD products do not yet handle SA106 foreign fields), worked example for a Spanish villa, NRL-scheme interaction, and three operational traps. Explicitly differentiates from the existing Wave 2 FTC page (which is the credit-mechanism reference); B4 owns the MTD-cycle mechanic.

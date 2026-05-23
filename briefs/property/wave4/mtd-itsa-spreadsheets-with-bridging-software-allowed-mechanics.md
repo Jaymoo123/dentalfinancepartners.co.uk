@@ -171,34 +171,61 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `mtd-itsa-spreadsheets-with-bridging-software-allowed-mechanics` (no override)
+- **Final category:** `Making Tax Digital (MTD)` (no override)
+- **H1 chosen:** "Spreadsheets Plus Bridging Software for MTD ITSA: The Digital-Link Mechanics"
+- **Meta title chosen:** "MTD ITSA: Spreadsheets + Bridging Software, the Mechanics" (57 chars)
+- **Why these vs other options:** Lead with the structural permission (allowed!) followed by the mechanic (digital-link rule). Distinct from B2's strategic-decision framing — B8 is a compliance-mechanic page for landlords who have already chosen the spreadsheet route.
 
 ### Competitor URLs fetched
+- bhp.co.uk MTD digital-links -> acceptable / unacceptable lists used as cross-check for §19.14. Their list includes USB drives + email transfers as acceptable — I did NOT replicate (these are debatable for MTD ITSA specifically; conservative position via §19.14 omits them).
+- rentalbux.com Excel guide -> spreadsheet column-discipline patterns informed my column-structure section.
+- rentalbux.com MTD bridging -> data flow diagram informed the "what bridging software actually does" 5-step sequence.
+- Did not fetch: bhp sibling, rentalbux benefits piece, fhpaccounting spreadsheet-to-Xero migration. Three primary sources were sufficient.
 
 ### Existing-page review (from "Closest existing pages")
+- `best-mtd-software-landlords-2026` (Jaccard 0.22) — product listicle; not cross-linked from B8 (B2 already serves as the consolidating page for product-listicle siblings).
+- `mtd-itsa-accidental-landlords-do-i-need-to-file-digitally` (0.15) — adjacent persona, not cross-linked.
+- `mtd-itsa-jointly-owned-property-threshold-split` (0.15, Wave 3 B3) — threshold mechanic, deferred via cross-link to Wave 4 B1 joint-owner page.
+- `mtd-itsa-letter-from-hmrc-what-to-do-next` (0.15) — adjacent, not cross-linked.
+- `mtd-itsa-overview-six-changes-residential-landlords` (0.15) — bucket pillar; cross-linked in closing section.
+- Additional semantic neighbours cross-linked: Wave 4 B2 (scenario-led software decision tree); Wave 4 B1 (joint-owner mechanics page).
 
 ### Citations added (external authority)
+- HMRC notice 700/22 (MTD for VAT digital-link rule) — named in body as the foundational source
+- gov.uk MTD ITSA compatible-software list (referenced, not hard-linked per §19.14 vendor-neutrality)
+- gov.uk MTD ITSA "use the service" guidance (implicit context)
+- FA 2017 Sch A1 paragraph 8 (digital-records obligation) — named in body
+- TMA 1970 s.12B (7-year retention) — named in body
+- House position §19.14 + §19.6 (Wave 4 digital-link extension + software requirements) — internal tie-breakers, named in body
 
 ### Internal links added (to our existing pages)
+- `/blog/making-tax-digital-mtd/mtd-itsa-choosing-software-by-landlord-scenario-decision-tree` (Wave 4 B2) ×2 (decision-tree cross-reference + closing)
+- `/blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords` ×1 (closing section, bucket pillar)
+- `/blog/making-tax-digital-mtd/mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse` (Wave 4 B1) ×1 (joint-owner cross-link, closing section)
+- All 3 target files exist; URL category segments verified.
+- B10 (digital-records / receipts / bank-feeds) referenced as a forthcoming sibling in closing section; plain text (page not yet written).
 
 ### Inline CTA placements
+- `<aside>` 1: after the compliant-vs-non-compliant worked example for Khan (high-intent: landlord realising they may have manual-rekey points in their existing workbook).
+- `<aside>` 2: after the common-pitfalls section (high-intent: landlord recognising their own anti-pattern in the list, wants help auditing).
+- 2 asides total; reflects the technical-mechanics nature of the page.
 
 ### Build attempts
+- Attempt 1: `cd Property/web && npm run build` passed clean; HTML rendered with 13 Question entries in 1 FAQPage block.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 13 = 13 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 57 (max 62) ✓
+- Meta description length: 146 (max 158) ✓
+- Internal links resolve: 3/3 target files exist + URL category segments match ✓ (B10 reference plain text only)
+- monitored_pages row inserted: yes (id 176, rewrite_type='rewrite', 90-day window)
+- Body word count: 2,173 + 1 added aside (calibration note: focused mechanics page, competitor median short, deliberate non-padding)
 
 ### Flags raised to wave4_site_wide_flags.md
+- F-3 already raised for B7. B8 references B10 (forthcoming) as plain text; will roll into a wave-close back-patch entry. Not raising a separate flag because B10 is also Session B's responsibility, will resolve in-session at B10 ship.
 
 ### 2-3 sentence summary
+Net-new operational page on the spreadsheet-plus-bridging route through MTD ITSA. Walks the §19.14 / notice 700/22 digital-link rule (acceptable: cell references, formulae, CSV exports, API; not acceptable: copy-paste, manual re-keying, screen-reading), the spreadsheet column discipline aligned to SA105 categories, a Khan compliant-vs-non-compliant worked example, common pitfalls in legacy landlord workbooks, vendor-neutral bridging software selection criteria, the spreadsheet-versus-SaaS decision-trigger list, and a pre-mandate testing protocol. Anti-templating boundary: B2 owns the scenario-led decision-tree (strategic); B8 owns the digital-link compliance mechanic (tactical). Defers vendor naming to the gov.uk register per §19.14.
