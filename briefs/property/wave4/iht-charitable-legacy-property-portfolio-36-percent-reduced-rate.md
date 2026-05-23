@@ -167,37 +167,62 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 
 ---
 
-## Per-page work-log (fill in as you go, supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug / category / H1 / metaTitle:** all per manager pre-decisions.
+- **metaTitle:** "36% Charitable IHT Rate: Sch 1A Mechanics for Landlords" (55 chars).
+- **metaDescription:** 154 chars, within 158 limit.
 
 ### Competitor URLs fetched
+- boltburdon.co.uk / taxaccountant.co.uk / mytaxaccountant.co.uk / ukpropertyaccountants.co.uk: not re-fetched in session. Brief noted Bolt Burdon CDN protection; differentiator (Sch 1A components + merger election + break-point algebra + specific-vs-residue choice + deed-of-variation route + IHT430 mechanics) is well-defined from house position §22.3 + brief + IHT430 references.
 
 ### Existing-page review (from "Closest existing pages")
+- `incorporating-property-portfolio-uk-2026` (Jaccard 0.20): topic-adjacent (corporate restructure), no cross-link needed.
+- `iht-residence-nil-rate-band-2m-taper-property-portfolios` (Jaccard 0.15): the RNRB taper position above £2m is in scope for the worked O'Connell example; not directly cross-linked but the taper interaction is computed in the example.
+- `iht-property-investors-decision-framework-2026-onwards`: cross-linked at intro and close as planning lens.
+- `iht-1m-bpr-apr-cap-mixed-trading-investing-landlord-allocation` (Wave 4 C8, just shipped): cross-linked at close on the interaction with the April 2026 cap.
+- `deed-of-variation-property-estate-redirecting-inheritance-iht-saving` (Wave 4 C5 just shipped): cross-linked twice (intro + DoV-after-death section + close) as the post-death route to retro-engineer the 36% trigger.
 
-### Citations added (external authority)
+### Citations added
+- IHTA 1984 Sch 1A (reduced rate of tax where 10% to charity, full schedule walked).
+- IHTA 1984 Sch 1A paras 5, 6, 7 (baseline amount, NRB attribution, merger election).
+- IHTA 1984 s.23 (gifts to charities, full IHT exemption).
+- IHTA 1984 s.142 (deed of variation, cross-link C5).
+- IHTA 1984 s.7 (rate of charge, 40% baseline).
+- HMRC IHTM43000+ (charitable rate overview).
+- HMRC IHTM44000+ (10% test mechanics).
+- HMRC IHTM44021 (merger election).
+- HMRC IHT430 (claim for charitable rate reduction).
+- Charity Commission "find a charity" register (qualifying-charity verification).
 
-### Internal links added (to our existing pages)
+~10 named in-body citations.
+
+### Internal links added
+- `/blog/landlord-tax-essentials/deed-of-variation-property-estate-redirecting-inheritance-iht-saving` (Wave 4 C5) x2: intro + DoV-after-death section.
+- `/blog/landlord-tax-essentials/iht-1m-bpr-apr-cap-mixed-trading-investing-landlord-allocation` (Wave 4 C8) x1: close, on the cap interaction.
+- `/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards` x2: intro + close, planning lens.
+
+All 3 unique targets verified existing in landlord-tax-essentials. Wave 4 sibling slugs referenced in body as cross-page-consistency (the O'Connell £2.4m persona is the same one used on C5, intentional cross-page consistency).
 
 ### Inline CTA placements
+- One `<aside>` after the worked break-point example. The break-point analysis is the highest-conversion-intent moment on the page (where families recognise the 76%-gearing maths). The aside summarises the family-decision point and invites contact.
 
 ### Build attempts
+- Pass 1 (clean): build successful, pre-existing ESLint warnings only.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: ✅ 14/14.
+- Em-dashes in markdown: ✅ 0.
+- Tailwind classes in markdown: ✅ 0.
+- Meta title length: ✅ 55 chars (max 62).
+- Meta description length: ✅ 154 chars (max 158).
+- Internal links resolve: ✅ all 3 targets exist.
+- monitored_pages row inserted: ✅ id 182, monitor_until 2026-08-21.
+- Body word count: 2,757 (mid-band of 2,500-3,500).
 
 ### Flags raised to wave4_site_wide_flags.md
+- None this page.
 
 ### 2-3 sentence summary
+The Sch 1A IHTA 1984 36% reduced-rate mechanic applied to landlord estates. Components-test (general/survivorship/settled) + baseline-amount calculation + merger election under Sch 1A para 7 + break-point algebra (G ≤ baseline × 3.85% for family indifference). Worked O'Connell £2.4m estate showing the 76%-gearing-on-family-donation maths: £160k charity bequest costs family £38.4k net to redirect £160k at the Treasury's expense. DoV route under s.142 cross-linked to Wave 4 C5; April 2026 cap interaction cross-linked to C8. 2,757 body words, 14 FAQs, 1 CTA, ~10 citations.
