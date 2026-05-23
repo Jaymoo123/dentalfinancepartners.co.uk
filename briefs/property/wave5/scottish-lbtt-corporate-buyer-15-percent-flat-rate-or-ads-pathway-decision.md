@@ -154,37 +154,62 @@ Standard. Persistent false; timeout 1 hour; do NOT block.
 
 ---
 
-## Per-page work-log (fill in as you go)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `scottish-lbtt-corporate-buyer-15-percent-flat-rate-or-ads-pathway-decision` (no override)
+- **Final category:** `incorporation-and-company-structures` (no override; matches brief and complements existing incorporation pillar)
+- **H1 chosen:** "Scottish LBTT for Corporate Buyers: No 15% Flat Rate, ADS on Every Purchase, Six-Dwellings Non-Residential Route"
+- **Meta title:** "Scottish LBTT Corporate Buyers: No 15% Flat Rate" (48 chars, after initial 63-char draft trimmed)
+- **Why these vs other options:** Anti-templating against England SDLT 15% pages held by anchoring on the Scottish positive-and-negative structural points (no 15% flat, yes s.59(8), yes ATED overlay). Scottish corporate personas (Highland Properties Ltd, Caledonian Investments Ltd, Macleod Holdings Ltd) distinct from earlier B-bucket pages.
 
 ### Competitor URLs fetched
+- Most URLs already verified earlier in B6/B7 prep (revenue.scot pages); s.59(8) verified via legislation.gov.uk in B7's preparation.
+- ATED bands taken from §2 of house_positions.md (Wave 1 locked); not re-verified via WebFetch given context constraints — flagged as a potential verify-at-write spot if ATED bands shift in a future SI.
 
 ### Existing-page review
+- B6 (Scottish main rates): cross-link as the underlying band table.
+- B7 (Scottish ADS): cross-link as the 8% flat-on-total mechanic that applies to all corporate residential acquisitions.
+- B10 (Scottish bare-trust acquisition relief): forward-link as the relief route that can avoid the corporate-ADS outcome in defined scenarios.
+- `ated-15-percent-flat-rate-sdlt-interaction`: cross-link as the England-side parallel.
+- `sdlt-six-dwellings-non-residential-election`: cross-link as the England-side parallel of LBTT s.59(8).
+- `incorporating-property-portfolio-uk-2026`: cross-link as the broader incorporation strategy pillar.
 
 ### Citations added (external authority)
+- LBTT(S)A 2013 s.59(8) (six-dwellings non-residential rule).
+- LBTT(S)A 2013 Schedule 2A (ADS applies to corporate buyers).
+- FA 2003 Schedule 4A (England 15% flat rate, contrast cite).
+- FA 2003 s.116(7) (England six-dwellings parallel, contrast cite).
+- FA 2013 Part 3 (ATED, UK-wide).
+- revenue.scot non-residential property page + LBTT legislation guidance.
+- gov.uk ATED guidance.
 
 ### Internal links added
+- `/blog/landlord-tax-essentials/scottish-lbtt-rates-bands-2026-27-residential-buyers-complete-guide` (B6).
+- `/blog/landlord-tax-essentials/scottish-lbtt-additional-dwelling-supplement-ads-mechanics-second-home-buyers` (B7).
+- `/blog/incorporation-and-company-structures/ated-15-percent-flat-rate-sdlt-interaction` (existing ATED + 15% SDLT page).
+- `/blog/landlord-tax-essentials/sdlt-six-dwellings-non-residential-election` (existing England s.116(7) page).
+- `/blog/incorporation-and-company-structures/incorporating-property-portfolio-uk-2026` (existing incorporation pillar).
 
 ### Inline CTA placements
+- Aside 1: after the s.59(8) explanation (bulk-portfolio structuring angle).
+- Total 1 aside.
 
 ### Build attempts
+- npm run build: PASS (450 static pages, +1 since B8). Initial body 2,458 words was 342 short of 2,800 floor; added a substantive ATED-reliefs section (rental-business / developer / farmhouse / no-relief default with full 2026/27 rate table); plus a one-sentence reinforcement at the end of the ATED-default paragraph. Final body 2,813 words.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count: 12 = 12 ✅
+- Em-dashes: 0 ✅
+- Tailwind classes: 0 ✅
+- Meta title length: 48 ≤62 ✅ (initial 63-char draft trimmed)
+- Meta description length: 149 ≤158 ✅ (initial 161-char draft trimmed)
+- Internal links resolve: all 5 ✅
+- monitored_pages row inserted: id 215 ✅
+- Body word count: 2,813 (within 2,800-3,500 brief target) ✅
 
 ### Flags raised to wave5_site_wide_flags.md
+- None this page.
 
 ### 2-3 sentence summary
+B9 owns the Scottish corporate-buyer pathway: no LBTT equivalent of the England SDLT 15% flat rate; corporate buyers pay LBTT main rates plus 8% ADS on every Scottish residential acquisition regardless of value; the s.59(8) six-or-more-dwellings non-residential rule mirrors FA 2003 s.116(7) and is the major relief route for bulk portfolio acquisitions; ATED applies UK-wide and operates in Scotland exactly as in England. Three Scottish corporate worked examples (Highland Properties SPV £650k, Caledonian Investments 7-dwelling £2.1m s.59(8), Macleod Holdings overseas-vehicle £400k) walk the LBTT+ADS+ATED calculation at typical price points and surface the cross-jurisdictional decision between SPV-in-Scotland and SPV-in-England.
