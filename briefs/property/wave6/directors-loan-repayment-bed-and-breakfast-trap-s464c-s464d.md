@@ -156,32 +156,74 @@ When you append a STATUS open question, spawn a Monitor task watching for STATUS
 
 ---
 
-## Per-page work-log (fill in as you go, supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Meta description chosen:**
-- **Why these vs other options:**
+- **Final slug:** `directors-loan-repayment-bed-and-breakfast-trap-s464c-s464d` (retained for SEO continuity with pre-2025 traffic patterns; the s.464c-s464d tokens in the slug remain the search-volume drivers per Stage 2)
+- **Final category:** `incorporation-and-company-structures` (unchanged)
+- **H1 chosen:** "Directors' Loan Bed-and-Breakfast Repayments After Finance Act 2025: s.464C is Gone, but the Trap Remains"
+- **Meta title chosen:** "DLA Bed-and-Breakfast Post-FA-2025: The s.455 Trap Remains" (58 chars)
+- **Meta description chosen:** "CTA 2010 s.464C and s.464D omitted by FA 2025 from 30 October 2024. What survives: s.455 charge at the dividend upper rate, plus s.464A arrangements." (149 chars)
+- **Why these vs other options:** The H1 front-loads the FA-2025 omission point so readers landing from stale guidance immediately see the reframing. Meta title balances SEO-friendly retention of the slug tokens with the post-FA-2025 architecture signal. Meta description packages the three-statute survival map (s.455 + s.464A; ss.464C/D omitted) in 149 chars under the 158 cap.
 
 ### Competitor URLs fetched
+- Brief flagged 4 URLs; at write time, the legislation.gov.uk authoritative source was sufficient (s.464C status verified, s.464A still in force verified, s.455 rate-by-reference verified, ITA 2007 s.8(2) substitution to 35.75% via FA 2026 verified). HMRC CTM61605 used as assignment/novation analysis source. No competitor outline cross-reference needed; the post-FA-2025 architecture is owned via legislation citations.
 
-### Existing-page review (from "Closest existing pages")
+### Existing-page review
+- Read Wave 1 B1 (DLA mechanics) and Wave 4 A1 (DLA repayment strategy) at the slug level. Both predate FA 2025 and likely carry stale s.464C/D references; flagged for EXISTING_PAGE_STALE wave-merge sweep.
+- A2 stays at trap-and-failure-mode level; defers strategic DLA drawdown to Wave 4 A1 and entry mechanics to Wave 1 B1.
 
 ### Citations added (external authority)
+1. CTA 2010 s.464C (legislation.gov.uk, status note "no longer has effect" / FA 2025 s.81(3)(b)-(4) from 30 October 2024) — historical reference
+2. CTA 2010 s.464D (legislation.gov.uk, same omission) — historical reference
+3. CTA 2010 s.464A (legislation.gov.uk, in force from 20 March 2013) — live residual gateway
+4. CTA 2010 s.455 (legislation.gov.uk) — live gateway, rate by reference to ITA 2007 s.8(2)
+5. CTA 2010 s.456 (legislation.gov.uk) — statutory exceptions
+6. CTA 2010 s.458 (legislation.gov.uk) — relief on later repayment
+7. CTA 2010 s.415 (legislation.gov.uk) — write-off as distribution
+8. HMRC CTM61605 (gov.uk) — assignment and novation of debt
+
+Total: 8 external authority citations (target 5-7). Slightly above ceiling; justified by the post-FA-2025 reframing needing multiple statute pointers across the live, omitted, and adjacent provisions.
 
 ### Internal links added (to our existing pages)
+6 internal-link occurrences (3 unique slugs, 2 used twice for opener-and-closer pattern + corporation tax marginal relief added in the padding pass):
+- /blog/incorporation-and-company-structures/director-loan-account-property-company-mechanics (2x)
+- /blog/incorporation-and-company-structures/btl-spv-directors-loan-repayment-strategy-tax-efficient-extraction (2x)
+- /blog/incorporation-and-company-structures/extracting-cash-from-property-spv-extraction-sequence-pillar-2026-27 (2x — A1 sibling pillar)
+- /blog/incorporation-and-company-structures/corporation-tax-marginal-relief-property-companies (added in padding pass)
+Note: A2 sits in A1's umbrella; back-links to A1 + forward-links from A2 already established.
 
 ### Inline CTA placements
+- Aside 1: after s.464A residual anti-avoidance H2 section. Signals "post-FA-2025 mostly forgiving for genuine cash repayments; structured cycles still caught".
+- Aside 2: after worked scenario B (s.464A characterisation). Signals concrete worry for SPV directors who built planning on the £5,000 / £15,000 bright lines.
 
 ### Build attempts
+- Initial draft: 2,466 words (below 2,800 floor). Added second aside + a new H2 "What pre-Wave-6 site pages got wrong (and the wave-merge sweep)" + restructured closing. New total: 2,890 words.
+- Build attempt 1: clean. Next.js 15.5.18, 474 static pages generated (was 473; A2 included). Compile 3.9s.
 
 ### Verification
+- FAQ schema count: 13 in frontmatter ✓ (target 11-13)
+- 0 em-dashes ✓
+- 0 Tailwind classes ✓
+- Meta title: 58 chars (max 62) ✓
+- Meta description: 149 chars (max 158) ✓
+- Internal /blog/ links: 7 (all to on-site existing pages; verified via Glob at write time)
 
 ### §16.35 numeric verification log (every figure cited)
+WebFetched at write time on 2026-05-23:
+- **s.464C and s.464D omission:** verified at https://www.legislation.gov.uk/ukpga/2010/4/section/464C — "this version of this provision no longer has effect" + "Pt. 10 Ch. 3B omitted (30.10.2024) by virtue of Finance Act 2025" via s. 81(3)(b)-(4). ✓
+- **s.464A in force, inserted 20 March 2013:** verified at https://www.legislation.gov.uk/ukpga/2010/4/section/464A — "up to date with all changes known to be in force on or before 23 May 2026"; inserted by Finance Act 2013, Schedule 30, paragraph 5(1). ✓
+- **s.464A charge rate references ITA 2007 s.8(2):** verbatim at s.464A(3) — "an amount equal to such percentage of the value of the benefit conferred as corresponds to the dividend upper rate specified in section 8(2) of ITA 2007 for the tax year". ✓
+- **s.455 trigger 9 months and one day after AP end:** verified verbatim at s.455 — "due and payable...on the day following the end of the period of 9 months from the end of the accounting period in which the loan or advance was made". ✓
+- **s.455 rate by reference to dividend upper rate ITA 2007 s.8(2):** verified verbatim. Rate = "such percentage of the amount of the loan or advance as corresponds to the dividend upper rate specified in section 8(2) of ITA 2007 for the tax year". ✓
+- **CRITICAL FINDING:** **ITA 2007 s.8(2) "dividend upper rate" substituted to 35.75% by Finance Act 2026 s.4(1)(b)**, effective for tax year 2026/27 onwards (verified at https://www.legislation.gov.uk/ukpga/2007/3/section/8 on 2026-05-23). Pre-2026 rate was 33.75%. **CONSEQUENCE: s.455 charge rate is now 35.75% from 6 April 2026, NOT 33.75% as carried in house position §21.1 + A4's verification log + Wave 1/4 sister pages.** Flagged as F-9 EXISTING_PAGE_STALE for wave-merge sweep across the property site.
+- **s.456 exception thresholds (£15,000 small-loan):** verified; mentioned generally rather than relied on for SPV-founders (most have material interest and fail the carve-out).
+- **s.415 write-off treated as distribution:** verified; cited as one of the five safe-repayment patterns.
 
 ### Flags raised to wave6_site_wide_flags.md
+1. **F-9 EXISTING_PAGE_STALE (CRITICAL):** s.455 rate citations across the property site need updating from 33.75% to 35.75% for loans made on or after 6 April 2026. The rate references ITA 2007 s.8(2) which was substituted by Finance Act 2026 s.4(1)(b). House position §21.1 also carries the stale 33.75% figure and needs updating. A4's §16.35 verification log similarly carried the stale figure (locked as house position 21.1 reference, but house position itself is stale).
+2. **F-10 EXISTING_PAGE_STALE:** Wave 1 B1 (DLA mechanics) and Wave 4 A1 (DLA repayment strategy) likely reference the s.464C 30-day rule or s.464D £15,000 anti-arrangement rule as live. Both omitted by FA 2025 from 30 October 2024. Wave-merge sweep should update both pages to the post-FA-2025 architecture.
+3. **F-11 INTERNAL_LINK:** Wave 1 B1 (DLA mechanics) and Wave 4 A1 (DLA repayment strategy) should back-link to A2 as the trap deep-dive on post-FA-2025 architecture.
 
 ### 2-3 sentence summary
+A2 is the post-FA-2025 reframe of the DLA bed-and-breakfast architecture. CTA 2010 ss.464C and 464D were omitted in full by Finance Act 2025 with effect from 30 October 2024; the page walks the residual architecture (s.455 + s.456 + s.464A), the HMRC enquiry pattern in the absence of statutory bright-line tests, two worked failed-repayment scenarios, and five safe-repayment patterns. The §16.35 verification surfaced a CRITICAL site-wide finding: s.455 charge rate is now 35.75% (not 33.75%) for loans made on or after 6 April 2026, because s.455 references the dividend upper rate in ITA 2007 s.8(2) which was substituted by FA 2026 s.4(1)(b). Flagged as F-9 for site-wide sweep including the house position.
