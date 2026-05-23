@@ -158,46 +158,72 @@ When you append a STATUS open question, spawn a Monitor task watching for STATUS
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Meta description chosen:**
-- **Why these vs other options:**
+- **Final slug:** vat-mixed-use-property-purchase-residential-commercial-element-apportionment (unchanged)
+- **Final category:** Property Types & Specialist Tax
+- **H1 chosen:** VAT on Mixed-Use Property Purchases: Apportionment and the Dwellings Carve-Out
+- **Meta title chosen:** "VAT on Mixed-Use Property: Apportionment + OTT Trap" (51 chars)
+- **Meta description chosen:** "Buying UK flat-over-shop or hotel-with-retail mixed-use property: VAT apportionment methodology, dwellings carve-out from OTT, SDLT cross-tax cross-reference." (158 chars)
+- **Why these vs other options:** Title leads with "VAT on Mixed-Use Property" (the head query) + "Apportionment + OTT Trap" (depth signal). Meta description packs the three depth points: apportionment methodology, dwellings carve-out, SDLT cross-tax (the cross-tax point is unique to this page in the bucket).
 
 ### Competitor URLs fetched
-- 
+- https://www.towerstone.co.uk/how-does-vat-work-on-mixed-use-properties — fetched successfully at write time (no permission denied this time). 15-section structure used as outline reference; apportionment methods listed (floor area, square footage, relative value, independent valuation, "HMRC does not mandate a single method").
+- https://www.gov.uk/guidance/vat-on-land-and-property-notice-742 — used for the "fairly and reasonably" apportionment standard.
+- https://www.ukpropertyaccountants.co.uk/vat-and-property-dispelling-myths-and-avoiding-common-mistakes/ — informed the common-mistakes H2 (mythbusting on whole-building OTT covering dwellings).
+- https://www.taxaccountant.co.uk/vat-on-property-purchases-when-the-seller-opted-to-tax/ — informed the buyer-side acquisition VAT analysis.
 
 ### Existing-page review (from "Closest existing pages")
-- 
+- A1 (just-committed, OTT mechanic): forward-linked from the dwellings carve-out H2 and Related Reading.
+- A2 (just-committed, CGS): forward-linked from the downstream-consequences H2 and Related Reading.
+- A3 (just-committed, partial exemption): forward-linked from the downstream-consequences H2 and Related Reading.
+- `sdlt-mixed-use-property-classification` (existing on site, landlord-tax-essentials category): cross-linked from SDLT cross-tax H2 and Related Reading. (Initial draft mis-referenced as `sdlt-9-residential-mixed-use-classification`; corrected on verification before commit.)
+- `vat-on-new-builds-residential-property` (existing on site, property-types-and-specialist-tax category): cross-linked from Related Reading (new-build dwelling element in mixed-use builds).
+- `landlord-vat-registration-when-required` (existing on site): not cross-linked from A4 (too entry-level; A1/A2/A3 own the depth links).
 
 ### Citations added (external authority)
-- 
+- VATA 1994 Schedule 8 Group 5 (zero-rated construction of dwellings)
+- VATA 1994 Schedule 9 Group 1 (land exemption)
+- VATA 1994 Schedule 10 para 5 (dwellings carve-out)
+- HMRC VAT Notice 742 (Land and property)
+- HMRC VAT Notice 708 (Buildings and construction)
+- HMRC VAT Land and Property internal manual
+- HMRC SDLT Manual SDLTM00385 (Bewley test for SDLT mixed-use)
 
 ### Internal links added (to our existing pages)
-- 
+- `/blog/property-types-and-specialist-tax/vat-option-to-tax-commercial-property-mechanics-election-revocation` (A1 sibling)
+- `/blog/property-types-and-specialist-tax/vat-capital-goods-scheme-property-businesses-10-year-adjustment-mechanics` (A2 sibling)
+- `/blog/landlord-tax-essentials/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method` (A3 sibling)
+- `/blog/landlord-tax-essentials/sdlt-mixed-use-property-classification` (SDLT cross-tax existing)
+- `/blog/property-types-and-specialist-tax/vat-on-new-builds-residential-property` (existing new-build sibling)
 
 ### Inline CTA placements
-- 
+- Aside 1: after the four apportionment methodologies H2 (standard-vs-special methodology framing)
+- Aside 2: after Worked Example 2 (hotel-with-retail) (aparthotel VAT analysis framing)
 
 ### Build attempts
-- 
+- 1: build successful. A4 added to property-types-and-specialist-tax route. No errors.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted: id
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 11 = 11 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 51 chars (≤62) ✓
+- Meta description length: 158 chars (=158, at the limit) ✓
+- Internal links resolve: all 5 distinct paths resolve to existing markdown files ✓
+- monitored_pages row inserted: yes (site_key=property, slug=vat-mixed-use-property-purchase-residential-commercial-element-apportionment, monitor_until=CURRENT_DATE + 90 days, rewrite_type=rewrite, notes='Wave 5 Bucket A net-new VAT mixed-use apportionment page')
+- Body word count: 2,517 (within 2,500-3,200 specialist-topic band)
 
 ### §16.35 numeric verification log (every figure cited)
-- 
+- 20% VAT standard rate: universal.
+- Sch 10 para 5 dwellings carve-out: verified legislation.gov.uk paragraph/5 + HMRC Notice 742A (previously verified A1 work).
+- Sch 8 Group 5 Item 1 zero-rated first grant of dwellings: verified legislation.gov.uk ukpga/1994/23/schedule/8 (2026-05-23). 4-condition definition of "designed as a dwelling" verified.
+- Sch 9 Group 1 Item 1 land exemption: verified (previously A1 work-log).
+- £250,000 VAT-exclusive CGS threshold (cross-referenced): verified A2 work-log.
+- £90,000 VAT registration threshold (cross-referenced): verified A1 work-log.
+- 5% SDLT additional dwelling supplement (cross-referenced in worked example): not a new VAT figure but a SDLT cross-reference. Cited in passing (not as a worked SDLT figure); SDLT depth treatment is at the cross-linked SDLT mixed-use page. The 5% additional dwelling supplement is consistent with the existing SDLT figures on the site as of 2026-05.
+- Acquisition-cost apportionment percentages (62% commercial / 38% residential in the worked example): derived from the worked example, not a third-party figure.
 
 ### Flags raised to wave5_site_wide_flags.md
-- 
+- None this session. Initial draft mis-linked to a non-existent `sdlt-9-residential-mixed-use-classification` page slug; corrected to the actual `sdlt-mixed-use-property-classification` (landlord-tax-essentials category) before commit. No site-wide implications.
 
 ### 2-3 sentence summary
-- 
+- A4 is the VAT apportionment-at-acquisition page for mixed-use property purchases. Covers the four VAT building blocks (zero-rated new-build dwelling, exempt residential lettings, standard-rated commercial OTT-on, exempt commercial OTT-off), the four apportionment methodologies (floor area, market value, professional valuation, just-and-reasonable), the Sch 10 para 5 dwellings carve-out from OTT, structural-separation as the gating test for selective OTT, two worked examples (flat-over-shop + hotel-with-retail), and the SDLT cross-tax point (different apportionment from VAT under the Bewley test). Sits adjacent to A1/A2/A3 in the bucket and cross-links to the existing SDLT mixed-use classification page.

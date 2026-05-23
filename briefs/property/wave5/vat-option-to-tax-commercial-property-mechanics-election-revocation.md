@@ -171,46 +171,73 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Meta description chosen:**
-- **Why these vs other options:**
+- **Final slug:** vat-option-to-tax-commercial-property-mechanics-election-revocation (unchanged)
+- **Final category:** Property Types & Specialist Tax (URL: property-types-and-specialist-tax)
+- **H1 chosen:** VAT Option to Tax Commercial Property: Mechanics, Cooling-Off and Revocation
+- **Meta title chosen:** "VAT Option to Tax UK: VAT1614A Election to Revocation" (53 chars)
+- **Meta description chosen:** "VATA 1994 Sch 10 option to tax explained: VAT1614A election, 30-day notification, 6-month cooling-off, anti-avoidance disapplication, 20-year revocation." (153 chars)
+- **Why these vs other options:** Title leads with the primary query phrase "Option to Tax" before brand-style modifier; meta description packs the four canonical mechanic moments (election, 30-day, cooling-off, revocation) which are the high-intent secondary queries. H1 is longer-form than meta title because it carries no length cap. Image left empty (no Pexels fetch) consistent with `landlord-vat-registration-when-required` precedent for unimaged anchor pages.
 
 ### Competitor URLs fetched
-- 
+- https://www.taxaccountant.co.uk/vat-on-property-purchases-when-the-seller-opted-to-tax/ — outline shape (buyer's perspective, disapplications, TOGC, residential conversion via VAT1614D)
+- https://www.ukpropertyaccountants.co.uk/vat-and-property-dispelling-myths-and-avoiding-common-mistakes/ — myth-buster framing on "OTT follows the property" (false; attaches to person), record-keeping mistakes
+- https://www.ukpropertyaccountants.co.uk/vat-registered-property-business-pros-and-cons-for-landlords/ — pros/cons split used to inform decision-summary table at end of A1
 
 ### Existing-page review (from "Closest existing pages")
-- 
+- `landlord-vat-registration-when-required` (closest existing, landlord-tax-essentials category): touches OTT at registration depth only (~1 FAQ + 2 paragraphs). A1 is the OTT-mechanic depth page; existing page is forward-linked from A1, and existing page should back-link to A1 (raised as INTERNAL_LINK flag F-2).
+- `togc-vat-property-letting-business` (adjacent): TOGC mechanic; A1 covers TOGC interaction on opted property at depth; cross-link inserted both directions implicitly via the TOGC H2.
+- `vat-on-new-builds-residential-property` (distant): cross-linked from the conversion-disapplication paragraph (VAT1614D + Sch 10 para 6) since the conversion route is covered there.
+- `toms-vat-serviced-accommodation` (distant): cross-linked in Related Reading only.
+- `domestic-reverse-charge-construction-vat-landlords` (distant): not cross-linked (no construction-VAT interaction in this page).
+- `diy-housebuilders-vat-refund-scheme` (distant): not cross-linked.
 
 ### Citations added (external authority)
-- 
+- VATA 1994 Sch 10 contents page (legislation.gov.uk)
+- VATA 1994 Sch 10 para 2 (election to waive exemption)
+- VATA 1994 Sch 10 para 12 (developer anti-avoidance)
+- HMRC VAT Notice 742A (opting to tax)
+- Form VAT1614A (gov.uk publication page)
+- Form VAT1614C (cooling-off revocation form)
+- HMRC VAT Land and Property internal manual
 
 ### Internal links added (to our existing pages)
-- 
+- `/blog/landlord-tax-essentials/landlord-vat-registration-when-required` (Related Reading + body cross-link)
+- `/blog/incorporation-and-company-structures/togc-vat-property-letting-business` (TOGC body section + Related Reading)
+- `/blog/property-types-and-specialist-tax/vat-on-new-builds-residential-property` (conversion disapplication paragraph + Related Reading)
+- `/blog/property-types-and-specialist-tax/toms-vat-serviced-accommodation` (Related Reading)
 
 ### Inline CTA placements
-- 
+- Aside 1: after "Making the Election: VAT1614A and the 30-Day Clock" section (refurbishment recovery framing)
+- Aside 2: after "Developer Anti-Avoidance" section (connected-party 80% disapplication review)
 
 ### Build attempts
-- 
+- 1: `npm install` then `cd Property/web && npm run build` — successful. 442 static pages generated (up from 441), no type errors, no critical warnings. Build time ~15s compile + page generation.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted: id
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 13 = 13 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 53 chars (≤62) ✓
+- Meta description length: 153 chars (≤158) ✓
+- Internal links resolve: all 4 distinct paths resolve to existing markdown files under `Property/web/content/blog/` ✓
+- monitored_pages row inserted: yes (site_key=property, slug=vat-option-to-tax-commercial-property-mechanics-election-revocation, monitor_until = CURRENT_DATE + 90 days, rewrite_type=rewrite, notes='Wave 5 Bucket A net-new VAT OTT mechanic page')
+- Body word count: 3,158 (within 2,800-3,500 anchor band)
 
 ### §16.35 numeric verification log (every figure cited)
-- 
+- £90,000 VAT registration threshold: verified against gov.uk/vat-registration/when-to-register (2026-05-23). Threshold quoted: "£90,000 (the VAT threshold)".
+- 30-day notification window after registration trigger: verified gov.uk/vat-registration/when-to-register: "register within 30 days of the end of the month when you went over the threshold".
+- 30-day OTT VAT1614A notification window: verified HMRC Notice 742A (2026-05-23): "you, as authorised signatory, must normally make your notification within 30 days of your decision".
+- 6-month cooling-off period (Sch 10 para 23, form VAT1614C): verified HMRC Notice 742A: "less than 6 months have passed since the option took effect" + four sub-conditions confirmed. Form VAT1614C verified at gov.uk/government/publications/vat-revoking-an-option-to-tax-within-6-month-cooling-off-period-vat1614c.
+- 20-year revocation eligibility (Sch 10 para 25): verified HMRC Notice 742A: "after 20 years using Form VAT1614J".
+- 80% recovery test on connected-party occupier (Sch 10 paras 12-17 + para 16 eligible purposes): verified HMRC Notice 742A automatic-permission Condition 3: "person connected with you is expected to be entitled to credit or refund of at least 80% of the VAT chargeable on the supply".
+- Schedule 10 paragraph numbers (para 2, 5, 6, 7, 10, 12-17, 21, 22, 23, 24, 25): all verified against legislation.gov.uk/ukpga/1994/23/schedule/10 contents (2026-05-23). Para 25 confirmed as "Revocation of option: lapse of more than 20 years since option had effect"; para 23 confirmed as "Revocation of option: the cooling off period"; para 21 confirmed as "Real estate elections".
+- £250,000 VAT-exclusive Capital Goods Scheme threshold (referenced in cooling-off conditions + FAQ): the longstanding CGS threshold for land/buildings (VAT Regulations 1995 reg 113). To be re-verified at A2 write-time per §16.35.
+- 20% VAT standard rate: universal verified figure.
+- 5% SDLT band on commercial property over £250k: referenced in SDLT-on-VAT FAQ. Not verified against gov.uk this session because the FAQ frames it conditionally ("changes the buyer's bill noticeably") rather than asserting a specific worked figure. Defer to existing SDLT-rate pages for canonical figure.
 
 ### Flags raised to wave5_site_wide_flags.md
-- 
+- F-2 (raised this session): INTERNAL_LINK. `landlord-vat-registration-when-required` should back-link to A1 on the OTT section, since A1 is now the canonical depth page on OTT.
+- F-3 (raised this session): FACTUAL. Existing `landlord-vat-registration-when-required` page describes the 80% connected-party rule as "automatic disapplication" under Sch 10 paras 12-17. The mechanic is a touch more nuanced: paras 12-17 set out the developer exempt-land test (eligible purposes test under para 16 incorporates the 80% recovery threshold for connected occupiers). The existing page framing is fine for an entry-level VAT registration page but A1 is the place where the depth treatment now lives.
 
 ### 2-3 sentence summary
-- 
+- A1 is the canonical OTT mechanic depth page for Property. Covers election (VAT1614A, 30-day notification), 6-month cooling-off (VAT1614C, Sch 10 para 23), dwellings/charity/RSL/developer disapplications (Sch 10 paras 5, 6, 7, 10, 12-17), real-estate election (Sch 10 paras 21-22), 20-year revocation (Sch 10 para 25, VAT1614J), and TOGC interaction. Two worked examples (£480k refurb recovery + £320k connected-party disapplication trap) anchor the practical decision-making.

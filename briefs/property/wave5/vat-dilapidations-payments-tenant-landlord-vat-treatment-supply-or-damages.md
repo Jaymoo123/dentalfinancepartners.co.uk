@@ -153,46 +153,70 @@ When you append a STATUS open question, spawn a Monitor task watching for STATUS
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Meta description chosen:**
-- **Why these vs other options:**
+- **Final slug:** vat-dilapidations-payments-tenant-landlord-vat-treatment-supply-or-damages (brief default; no override)
+- **Final category:** landlord-tax-essentials (brief default; no override)
+- **H1 chosen:** "Dilapidations and VAT: Supply or Damages at Lease End?"
+- **Meta title chosen:** "Dilapidations VAT Treatment UK: Supply or Damages?" (50 chars)
+- **Meta description chosen:** "HMRC treats most lease-end dilapidations as outside VAT scope. Brief 12/2020 and Brief 2/2022 introduced a look-through-to-contract test. When VAT bites." (153 chars)
+- **Why these vs other options:** Title leads with the primary query intent (dilapidations VAT) plus the supply-vs-damages diagnostic that owns the framing differentiator. Description signals the HMRC-position stability (outside scope for genuine dilapidations) while naming the Briefs that practitioners hunt for. Avoided year-stamping the title because the position is durable, not year-specific.
 
 ### Competitor URLs fetched
-- 
+- bhp.co.uk/news-events/blog/dilapidations-demystified — alive, useful for outline only (shallow on VAT specifics, no Brief citations)
+- ukpropertyaccountants.co.uk/vat-and-property-dispelling-myths — alive but covers no dilapidations content (3 myths, none on lease-end damages)
+- geraldedelman.com/insights/vat-and-property-issues — 404 dead at session time; no replacement needed since outline already covered
 
 ### Existing-page review (from "Closest existing pages")
-- 
+- A1 (just-shipped sibling): forward-link only, A1 owns OTT mechanic; A5 forward-links to it from the OTT cross-cut H2
+- landlord-vat-registration-when-required: cross-link in Related Reading; A5 does not duplicate registration mechanic
+- togc-vat-property-letting-business: cross-link in Related Reading for the related lease-transaction VAT regime
+- No on-site coverage of dilapidations VAT confirmed; topical gap holds
 
 ### Citations added (external authority)
-- 
+- VATA 1994 s.5 (meaning of supply) — legislation.gov.uk
+- VATA 1994 Sch 9 Group 1 (exemption for land) — legislation.gov.uk
+- VATA 1994 Sch 10 (option to tax) — legislation.gov.uk
+- HMRC VATSC05910 (compensation payments) — gov.uk internal manual
+- Revenue and Customs Brief 2/2022 — gov.uk
+- Revenue and Customs Brief 12/2020 (superseded) — gov.uk
+- Landlord and Tenant Act 1927 s.18(1) — legislation.gov.uk
+- HMRC BIM43265 (deductibility of dilapidations) — gov.uk internal manual
 
 ### Internal links added (to our existing pages)
-- 
+- /blog/property-types-and-specialist-tax/vat-option-to-tax-commercial-property-mechanics-election-revocation (A1)
+- /blog/landlord-tax-essentials/landlord-vat-registration-when-required (existing)
+- /blog/property-types-and-specialist-tax/togc-vat-property-letting-business (existing)
 
 ### Inline CTA placements
-- 
+- Aside 1 after "The Lease-End Moment" H2 (avoid bundled settlements)
+- Aside 2 after "The Supply-vs-Damages Diagnostic" H2 (test before signing)
+- Aside 3 after "Worked Example" H2 (second-opinion CTA on live settlement)
 
 ### Build attempts
-- 
+- 1 attempt; build clean on first run
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted: id
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 12 = 12 ✅
+- Em-dashes in markdown: 0 ✅
+- Tailwind classes in markdown: 0 ✅
+- Meta title length: 50 (≤62) ✅
+- Meta description length: 153 (≤158) ✅ (initial 160 trimmed by removing "the scope of" → "VAT scope")
+- Internal links resolve: 3/3 confirmed (A1, landlord-vat-registration, togc) ✅
+- monitored_pages row inserted: id 198
+- Body word count: 2,830 (target 2,500-3,000) ✅
 
 ### §16.35 numeric verification log (every figure cited)
-- 
+- Brief 12/2020 publication date 2 September 2020 — verified via gov.uk/government/publications/revenue-and-customs-brief-12-2020 at write time
+- Brief 2/2022 publication date 7 February 2022 — verified via gov.uk/government/publications/revenue-and-customs-brief-2-2022 at write time
+- VAT registration threshold £90,000 (current) — verified via gov.uk/vat-registration-thresholds at write time
+- VAT de-registration threshold £88,000 — sourced from existing on-site landlord-vat-registration page (consistent with 1 April 2024 increase verified in A1/A4 work-logs)
+- Standard VAT rate 20% — long-standing UK rate (no carry-risk; widely cited across A1-A4)
+- VATA 1994 s.77 four-year assessment window — statutory (no carry-risk)
+- VATA 1994 OTT 30-day notification window — verified via Sch 10 para 2 in A1 work-log (sister carry)
+- Court of Justice cases MEO (C-295/17) and Vodafone Portugal (C-43/19) cited per VATSC05920 framework
+- Apple and Pear Development Council (C-102/86) and Tolsma (C-16/93) cited as the historical reciprocity-test anchors
 
 ### Flags raised to wave5_site_wide_flags.md
-- 
+- None. A5 is a clean topical-gap fill with HMRC published position straightforwardly supporting the outside-scope analysis. No statute conflicts, no cannibalisation, no internal-link gaps surfaced that aren't already captured in F-2 / D-2 from A1.
 
 ### 2-3 sentence summary
-- 
+- A5 anchors the lease-end dilapidations VAT analysis around the VATSC05910 carve-out from the post-2020 / post-2022 compensation-payments reset. The page walks through the supply-vs-damages diagnostic, the evidence package that protects an outside-scope treatment, the OTT cross-cut (a common misconception), and a worked £180,000 settlement example with the bundled-heads failure mode. Sits applied-page downstream of A1 (OTT mechanic) and forward-links to it for depth.
