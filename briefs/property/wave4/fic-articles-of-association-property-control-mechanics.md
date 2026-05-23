@@ -176,34 +176,73 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** fic-articles-of-association-property-control-mechanics (per brief, no override)
+- **Final category:** Incorporation & Company Structures (per brief)
+- **H1 chosen:** "Drafting FIC Articles of Association for Property: The Clause-by-Clause Control Layer"
+- **Meta title chosen:** "FIC Articles of Association: Property Control Drafting" (54 chars)
+- **Why these vs other options:** Title leads with "Drafting" verb to position page as the operational/drafting layer (anti-templating contrast with the existing FIC structural pillar that surveys mechanics at company-level). The "Clause-by-Clause" subtitle is the page's framing differentiator made explicit. Meta title prioritises "FIC Articles of Association" head term + "Property Control" qualifier + "Drafting" verb to land all three primary tokens within 62 chars.
 
 ### Competitor URLs fetched
+- tlpi.co.uk/key-pillars-to-the-family-investment-company → pillar-based structural approach (asset protection / tax / wealth preservation / control) but DOES NOT address articles of association, share-class design, reserved matters, pre-emption, dividend control, redemption, or drag-along/tag-along. Clear structural gap to fill.
+- tlpi.co.uk/what-is-a-family-investment-company → narrative arc (problem → FIC definition → tax benefits → control → property), but no clause-level detail and no CA 2006 citations.
+- taxaccountant.co.uk/family-investment-company-tax-planning/ → "different classes of shares with varying rights" mentioned but NO specific clause examples, NO CA 2006 sections cited, no reserved-matters / drag-tag / pre-emption / redemption mechanics. Minimal legislative depth.
+- All three competitors confirm the drafting-layer gap. A6 is the first clause-by-clause walkthrough on the topic.
 
 ### Existing-page review (from "Closest existing pages")
+- `fic-complete-guide-property-wealth-transfer` (pillar): comprehensive structural reference. Touches share classes at high level + governance + life-and-death tax. A6 cannibalisation handled by going DEEPER into clause-by-clause articles drafting (CA 2006 section spine, 4-class taxonomy with 5-item-per-class definition discipline, reserved-matters list, pre-emption cascade, drag/tag, dividend control wording, preference redemption mechanics, deadlock, entrenchment). A6 forward-links to pillar as the "wider structural reference".
+- `fic-growth-shares-and-freezer-shares-design`: highest cannibalisation risk. Covers growth/freezer hurdle setting + valuation + ERS s.431 trap. A6 explicitly defers HURDLE and VALUATION mechanics to this page; A6 only covers the CLASS DEFINITION wording in the articles (5-item discipline per class). Clean split.
+- `fic-vs-discretionary-trust-property-comparison`: pure comparison page, no cannibalisation with A6.
+- `fic-iht-treatment-bpr-myth`: IHT framing of FIC, no cannibalisation with A6. Cross-link only.
+- `spv-property-investment-special-purpose-vehicle-guide`: SPV mechanics, only tangentially relevant. Not linked.
 
 ### Citations added (external authority)
+1. CA 2006 s.18 (articles requirement) — legislation.gov.uk
+2. CA 2006 s.20 (default model articles) — referenced
+3. CA 2006 s.21 (amendment via special resolution) — legislation.gov.uk
+4. CA 2006 s.22 (entrenched provisions) — legislation.gov.uk (linked twice)
+5. CA 2006 s.284 (voting on a poll) — legislation.gov.uk
+6. CA 2006 s.561 (statutory pre-emption) — legislation.gov.uk
+7. CA 2006 s.629 (classes of shares) — legislation.gov.uk
+8. CA 2006 s.684 (preference share redemption) — legislation.gov.uk
+9. SI 2008/3229 (Companies (Model Articles) Regulations 2008) — legislation.gov.uk
+10. ITTOIA 2005 s.624 (settlements legislation) — legislation.gov.uk
+11. HMRC ERSM110000+ (employment-related-securities manual) — gov.uk
+12. Jones v Garnett (Arctic Systems) [2007] UKHL 35 — cited (no link, case-name reference)
+Total: 8 hyperlinked authority citations (s.18, s.21, s.22, s.284, s.561, s.629, s.684 sequence + SI 2008/3229 + ITTOIA s.624 + ERSM110000) — comfortably above the 4-7 floor.
 
 ### Internal links added (to our existing pages)
+1. `/blog/incorporation-and-company-structures/fic-growth-shares-and-freezer-shares-design` — defer to for hurdle setting + valuation methodology (2 references)
+2. `/blog/incorporation-and-company-structures/fic-vs-discretionary-trust-property-comparison` — defer to for threshold decision
+3. `/blog/incorporation-and-company-structures/fic-iht-treatment-bpr-myth` — defer to for IHT framing
+4. `/blog/incorporation-and-company-structures/alphabet-shares-property-spv-dividend-splitting-spouse-children` — cross-link for s.624 settlements boundary (2 references, one in FAQ and one in dividend-control body section)
+5. `/blog/incorporation-and-company-structures/btl-limited-company-year-end-date-changing-tax-planning` — cross-link in entrenchment section (year-end change is the example of a NOT-to-entrench provision)
+All 5 distinct targets verified existing on disk before commit.
 
 ### Inline CTA placements
+- Aside 1: after share-class architecture (high-intent moment, post-taxonomy)
+- Aside 2: after dividend control by class (post-settlements/ERS discussion, structuring scope moment)
+- Aside 3: after entrenchment section (decision-framework moment)
+Three asides total, none in opening, none inside worked examples. Conforms to brief CTA guidance.
 
 ### Build attempts
+- Single run: `cd Property/web && npm run build` — passed clean. Page appears at expected static path. No errors, no warnings related to the new file.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 ↔ 14 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 54 chars (≤62) ✓
+- Meta description length: 155 chars (≤158) ✓
+- Internal links resolve: 5 distinct targets all confirmed on disk ✓
+- monitored_pages row inserted: id 174 (rewrite_type='rewrite', monitor_until=2026-08-21) ✓
+- Body word count: 3,926 (just under 4,000 ceiling; over the 2,500-3,500 typical band as expected for the FIC sub-thread structural anchor — see note below)
+
+### Word-count calibration note (§16.16)
+A6 is the FIC sub-thread structural anchor for the bucket. Walks 10 H2 sections: model-vs-bespoke articles framing, CA 2006 foundation clauses, 4-class share architecture, reserved-matters list (8 items), pre-emption (statutory disapplication + 6-step transfer cascade), drag/tag, dividend control by class with settlements boundary, preference redemption mechanic, deadlock, entrenchment, articles-vs-SHA split. Each H2 has clause-level commentary distinct from existing FIC pillar / growth-shares / FIC-vs-trust pages on the site. Trimmed twice during write (closing "drafting horizon" H2 absorbed into final closing paragraph; articles-vs-SHA section compacted from 6 paras to 3) to land at 3,926 from initial 4,136. A7-A10 in this sub-thread expected to sit closer to mid-band because they can reference A6 for the foundation rather than re-walking it.
 
 ### Flags raised to wave4_site_wide_flags.md
+- F-2 propagated from worktree-local copy to main repo (orphan from previous Session A run; back-patch list for A1's four cross-links once A8/A9 ship).
+- No new A6-specific flags raised. The A6 cross-links to A2 (alphabet) and A3 (year-end change) were live at write-time and are hyperlinked in the body; the cross-link to A7-A10 is held until those siblings ship (manager-side wave-close back-patch).
 
 ### 2-3 sentence summary
+A6 is the FIC sub-thread structural anchor, written as a clause-by-clause walkthrough of bespoke property FIC articles of association indexed against the relevant Companies Act 2006 sections. Competitor pages in the sub-thread (TLPI, tax-accountant) all gesture at "bespoke share classes" and "founder control" without saying what either means in clause text; A6 fills the gap with explicit citation of s.18, s.20, s.21, s.22, s.284, s.561, s.629, s.684, and the SI 2008/3229 model articles default. A7-A10 (governance, retirement income, growth-share gifting, blended-family articles) will reference A6 for the constitutional foundation rather than re-walking it.
