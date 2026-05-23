@@ -171,34 +171,62 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse` (no override).
+- **Final category:** `Making Tax Digital (MTD)` → URL segment `making-tax-digital-mtd` (no override).
+- **H1 chosen:** "MTD ITSA for Joint Property Owners: Running Two Quarterly Cycles in Parallel".
+- **Meta title chosen:** "MTD ITSA Joint Owners: Quarterly Filing Mechanics" (49 chars).
+- **Why these vs other options:** H1 leads on the operational mechanic (two parallel cycles), not the threshold question (which Wave 3 B3 already owns). Meta title prioritises "joint owners" + "quarterly filing mechanics" as the query the page targets; avoids re-using B3's "threshold-split" framing.
 
 ### Competitor URLs fetched
+- ukpropertyaccountants.co.uk MTD-joint-owners page → outline structure (5 areas), £90k worked example, "no nominated submitter rule" phrasing, transaction-splitting discipline language.
+- fhpaccounting.co.uk MTD-jointly-owned page → easement claim about quarterly returns showing gross-only with full expense detail at annual return. **Not verified against gov.uk MTD ITSA use-service guidance; did NOT include in page.** Flagged as a potential research item for B10 / B8 cross-check.
+- provestor.co.uk key-concepts joint properties → data-model insight (record full amount, software applies ownership percentage automatically); per-category cost detail not disclosed.
+- provestor.co.uk recording-income-expenses joint-ownership-splits → mid-year ownership-change pattern (date-of-change forward, prior periods preserved); switch-date mechanics confirmed.
+- rentalbux.com MTD-joint-owners → outline structure (5 areas), explicit "neither can file on behalf of the other" phrasing, separate Government Gateway credentials requirement.
 
 ### Existing-page review (from "Closest existing pages")
+- `mtd-itsa-jointly-owned-property-threshold-split` (Wave 3 B3) — closest sibling. Read in full. B3 covers WHO is in MTD on which share (threshold mechanic, Form 17 election); B1 picks up at the point both are in, covers HOW the cycle runs. Cross-linked B1 to B3 twice (intro + closing); B3 already references its operational-sibling implicitly via the closing checklist. No back-patch flag raised; the boundary is clean.
+- `mtd-quarterly-reporting-landlords-step-by-step-guide` — listed in F-7/F-9 as carrying stale figures. Did NOT cite as authority; cited house position §19 instead.
+- `cgt-property-transfer-spouse` — cross-linked from the "where this page sits" section for spousal beneficial-share transfers (no-gain-no-loss rule).
+- `accounting-services-for-property-owners` and `how-to-switch-self-assessment-mtd-property-income` — Jaccard top-5 but topically distant; not cross-linked from B1 to avoid keyword-stuffing internal-link sections.
 
 ### Citations added (external authority)
+- HMRC compatible-software register (https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax)
+- House position §19.13 (letting-agent gross-vs-net trap, internal tie-breaker)
+- (Wave 3 B3 already carries the Form 17 / TSEM 9814 / s.836 / s.837 authority citations; B1 leans on B3's authority chain rather than duplicating)
 
 ### Internal links added (to our existing pages)
+- `/blog/making-tax-digital-mtd/mtd-itsa-jointly-owned-property-threshold-split` (Wave 3 B3) ×2
+- `/blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net` ×2
+- `/blog/making-tax-digital-mtd/mtd-record-keeping-landlords-digital-requirements` ×2
+- `/blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords` ×1
+- `/blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords` ×1
+- `/blog/capital-gains-tax/cgt-property-transfer-spouse` ×1
+- All 6 target files exist; URL category segments verified manually against destination frontmatter `category` field (per F-12 §16.20 hardening recommendation).
 
 ### Inline CTA placements
+- `<aside>` 1: after the bookkeeping discipline section (high-intent moment — landlord realising they need an accountant who can run both filings).
+- `<aside>` 2: after the ASA-per-spouse section (high-intent — explaining the dual-email approval flow).
+- `<aside>` 3: after the end-of-period reconciliation section (high-intent — surface the "one accountant vs two" cost/risk tradeoff).
+- 3 asides total; within the brief's ≤3 limit. None inside worked examples, none at page opening.
 
 ### Build attempts
+- Attempt 1: `cd Property/web && npm run build` failed with "'next' is not recognized". Worktree did not have node_modules.
+- Attempt 2: ran `npm install --no-audit --no-fund` at worktree root (npm workspaces); installed 468 packages cleanly.
+- Attempt 3: `cd Property/web && npm run build` passed clean; B1 page rendered to `.next/server/app/blog/making-tax-digital-mtd/mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse.html`.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 13 Question entries in 1 FAQPage block = frontmatter 13 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 49 (max 62) ✓
+- Meta description length: 145 (max 158) ✓
+- Internal links resolve: 6/6 target files exist in Property/web/content/blog/ + URL category segments match destination frontmatter `category` field ✓
+- monitored_pages row inserted: yes (rewrite_type='rewrite', 90-day window, notes "Wave 4 Session B net-new (MTD ITSA bucket B1)")
+- Body word count: 3,402 (within 2,500-3,500 framing-differentiator-led range; at upper edge to fit 12 H2s + 3 scenario walks + 4 traps without padding)
 
 ### Flags raised to wave4_site_wide_flags.md
+- None raised. fhpaccounting.co.uk "quarterly gross-only easement" claim flagged in discovery log as a research item for B10 (digital records) and B8 (spreadsheet/bridging) sessions to verify against HMRC operating notice — not raised as a site-wide flag because the page does NOT rely on it.
 
 ### 2-3 sentence summary
+Net-new operational-mechanics page for joint-owner couples in MTD ITSA, sitting downstream of Wave 3 B3's threshold-split page. Covers the two-parallel-cycle architecture (each spouse files their own quarterly updates on their share), bookkeeping discipline across the four big cost lines (mortgage interest, repairs, agent fees, council tax), ASA authorisation per spouse, three scenario walks (both in / one in one out / mid-year Form 17 re-election), end-of-period reconciliation discipline, and four operational traps. Anti-templating boundary held: did not re-walk Wave 3 B3's threshold mechanic or Form 17 election logic; deferred to B3 via explicit cross-links.
