@@ -150,7 +150,72 @@ When you append a STATUS open question, spawn a Monitor task on the file. Keep w
 
 ---
 
-## Per-page work-log (fill in as you go)
+## Per-page work-log
+
+### Decisions
+- **Final slug:** unmarried-co-owners-property-tax-rental-income-split-actual-beneficial-share (as briefed)
+- **Final category:** landlord-tax-essentials (as briefed)
+- **H1 chosen:** "Unmarried Co-Owners and UK Property Tax: The Actual Beneficial Share Rule"
+- **Meta title chosen:** "Unmarried Co-Owners: Property Tax and Income Split" (50 chars)
+- **Why these vs other options:** Lead H1 with "Unmarried Co-Owners" (primary cohort identifier) + "Property Tax" (subject) + "Actual Beneficial Share Rule" (the framing differentiator that distinguishes from the spouse 50/50 default). Avoided "Form 17" in H1/metaTitle on purpose because the page's value proposition is that Form 17 doesn't apply; leading with it would risk competitor cannibal signal against C1.
+
+### Competitor URLs fetched
+- ukpropertyaccountants.co.uk/top-tax-saving-tips-for-jointly-owned-properties/: previously fetched in C1/C5; section "What About Joint Owners Other than Married Couples (e.g. Unmarried Couples)?" confirms the actual-beneficial-share framing.
+- alexander-ene.co.uk/unmarried-couples-property.htm, /cohabitee-property-tax.htm, /co-ownership-rental-property.htm: NOT fetched again because the F-5 URL_ROT pattern established from C5 confirmed alexander-ene URLs serve generic homepage content. Forward note in discovery log already covers this.
+
+### Existing-page review
+- C1 (same branch): re-read for the contrast framing; C6 forward-links to C1 as the spouse-only mechanic.
+- C3 (same branch): re-read; the deed mechanic applies equally to unmarried co-owners; C6 forward-links to C3.
+- cgt-property-transfer-spouse (existing on main): re-read for the s.58 contrast.
+- joint-tenants-vs-tenants-in-common-property-tax-consequences-uk-landlords (C2, same branch): the JT vs TIC analysis applies to unmarried co-owners equally; C6 forward-links.
+
+### Citations added
+- ITA 2007 s.836: https://www.legislation.gov.uk/ukpga/2007/3/section/836
+- ITA 2007 s.837: https://www.legislation.gov.uk/ukpga/2007/3/section/837
+- TCGA 1992 s.17: https://www.legislation.gov.uk/ukpga/1992/12/section/17
+- TCGA 1992 s.58: https://www.legislation.gov.uk/ukpga/1992/12/section/58
+- TCGA 1992 s.286: https://www.legislation.gov.uk/ukpga/1992/12/section/286
+- Law of Property Act 1925 s.36 + s.53: https://www.legislation.gov.uk/ukpga/1925/20/section/36 + s.53
+- HMRC PIM1030: https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim1030
+
+### Internal links added
+- /blog/landlord-tax-essentials/form-17-declaration-beneficial-interest-property-mechanics-filing-revocation (C1)
+- /blog/landlord-tax-essentials/declaration-of-trust-property-beneficial-ownership-mechanics-evidence-form-17 (C3)
+- /blog/landlord-tax-essentials/joint-tenants-vs-tenants-in-common-property-tax-consequences-uk-landlords (C2)
+- /blog/capital-gains-tax/cgt-property-transfer-spouse
+- /blog/making-tax-digital-mtd/mtd-itsa-jointly-owned-property-threshold-split
+
+### Inline CTA placements
+- After Brennan / Holloway worked example (high-intent for cohabitees without a deed)
+- After "Connected persons under s.286: who is, who is not" (high-intent for inter-co-owner transfer planning)
+- Total asides: 2 (under the 3 max; the third planned CTA on HMRC enquiry-pattern was dropped because the section already converted readers via the inferred cost of dispute)
+
+### Verification
+- em-dash count: 0
+- en-dash count: 0
+- Tailwind class= in body: 0
+- metaTitle: 50 / 62
+- metaDescription: 155 / 158
+- FAQs: 14 / 10-14
+- Body words: 2,805 / 2,500-3,500
+- External authority links: 7 (within 5-8)
+- Internal links: 5 of 5 resolve
+- monitored_pages registered: id 201
+
+### Per-write verification (§16.35)
+- TCGA 1992 s.286 connected-persons definition (cohabitees NOT connected; siblings connected via s.286(8) "relative"): verified against legislation.gov.uk at write time on 2026-05-23.
+- TCGA 1992 s.58 spouse / CP no-gain-no-loss + FA (No. 2) 2023 s.41 extension: previously verified during C5 write on 2026-05-23.
+- ITA 2007 s.836 / s.837 spouse-only scope: previously verified during C1 write on 2026-05-23.
+- Law of Property Act 1925 s.36(2) joint-tenancy severance + s.53(1)(b) declaration-of-trust formalities: previously verified during C1 / C3 writes on 2026-05-23.
+
+### Build attempts
+- Attempt 1: PASS. 447 static pages built. No build warnings on this page.
+
+### Flags raised
+- None (the alexander-ene URL_ROT pattern is already captured in F-5 from C5; no new flag).
+
+### 2-3 sentence summary
+C6 is the non-spouse cohort applied page. Threads the absence of Form 17 + the absence of the 50/50 default + the actual-beneficial-ownership rule (PIM1030), the joint-tenancy bar that applies equally, and the CGT contrast (no s.58 no-gain-no-loss, with the s.286 connected-persons distinction working differently for siblings vs cohabitees vs friends). Worked examples cover Brennan / Holloway (cohabitee 90/10 split via contribution evidence), Mistry siblings (s.17 deemed market value because connected), and the friend / co-investor cohort. Forward-links to C1 (Form 17 contrast), C3 (deed mechanic), C2 (JT vs TIC), and the existing CGT property transfer spouse page.
 
 ### Decisions
 - **Final slug:**

@@ -181,26 +181,63 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** form-17-declaration-beneficial-interest-property-mechanics-filing-revocation (as briefed)
+- **Final category:** landlord-tax-essentials (as briefed)
+- **H1 chosen:** "Form 17 Declaration of Beneficial Interest: Filing, Mechanics, Revocation"
+- **Meta title chosen:** "Form 17: Beneficial Interest Declaration Filing Mechanics" (57 chars)
+- **Why these vs other options:** Lead with primary query "Form 17" then the disambiguator "Beneficial Interest Declaration" (the form's own title language). Avoids the cousin section-24 page's framing which leads with Section 24. Title emphasises mechanics (the brief's framing differentiator). H1 expanded to include all three subject areas (filing, mechanics, revocation) to land long-tail queries.
 
 ### Competitor URLs fetched
+- ukpropertyaccountants.co.uk/top-tax-saving-tips-for-jointly-owned-properties: fetched. Has a 60-day rule mis-statement ("60 days before the filing"); we set the record straight by quoting s.837 statute. Good for confirming joint-tenancy vs TIC distinction.
+- uklandlordtax.co.uk/jointly-owned-property: fetched. Standard FAQ pattern; correctly states the 60-day window.
+- farnellclarke.co.uk/blog/property-investors-letting-jointly-owned-property-form-17: 301 redirect to tc-group.com (Farnell Clarke now part of TC Group). Did not chase redirect; the other three sources gave enough coverage.
+- taxscape.deloitte.com/article/married-couples-civil-partnership-form-17.aspx: 404. Logged in discovery (URL rot since brief Stage 2 verification on 2026-05-23 morning).
 
 ### Existing-page review (from "Closest existing pages")
+- section-24-joint-property-ownership-tax-split: read in full. Cousin page for Section 24-applied numbers. Linked from "Where Form 17 sits in the wider joint-ownership picture" section. Note that the cousin page already has the corrected Form 17 framing per back-patch on 2026-05-23.
+- mtd-itsa-jointly-owned-property-threshold-split: linked from the MTD threshold paragraph in the wider picture section.
+- mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse: linked from the same paragraph for quarterly mechanics.
+- cgt-property-transfer-spouse: linked from the CGT paragraph in the wider picture section.
+- declaration-of-trust-... (C3): forward-link from joint-tenancy bar section; resolves when C3 ships on this branch.
 
 ### Citations added (external authority)
+- ITA 2007 s.836 (default 50/50): https://www.legislation.gov.uk/ukpga/2007/3/section/836
+- ITA 2007 s.837 (declaration of unequal beneficial interests + 60-day window in statute): https://www.legislation.gov.uk/ukpga/2007/3/section/837
+- TCGA 1992 s.58 (no-gain-no-loss spouse transfer): https://www.legislation.gov.uk/ukpga/1992/12/section/58
+- LPA 1925 s.36 (joint tenancy severance): https://www.legislation.gov.uk/ukpga/1925/20/section/36
+- LPA 1925 s.53 (declaration of trust formalities): https://www.legislation.gov.uk/ukpga/1925/20/section/53
+- IHTA 1984 s.18 (spouse exemption): https://www.legislation.gov.uk/ukpga/1984/51/section/18
+- FA 2003 Sch 4 (chargeable consideration including assumed debt): https://www.legislation.gov.uk/ukpga/2003/14/schedule/4
+- HMRC PIM1030 (jointly-let property income split): https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim1030
+- HMRC TSEM9851 (Form 17 evidence requirement): https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem9851
+- Form 17 GOV.UK publication: https://www.gov.uk/government/publications/income-tax-declaration-of-beneficial-interests-in-joint-property-and-income-17
 
 ### Internal links added (to our existing pages)
+- /blog/section-24-and-tax-relief/section-24-joint-property-ownership-tax-split
+- /blog/making-tax-digital-mtd/mtd-itsa-jointly-owned-property-threshold-split
+- /blog/making-tax-digital-mtd/mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse
+- /blog/capital-gains-tax/cgt-property-transfer-spouse
+- /blog/landlord-tax-essentials/declaration-of-trust-property-beneficial-ownership-mechanics-evidence-form-17 (forward-link to C3, same branch)
 
 ### Inline CTA placements
+- After "What Form 17 does, and what it does not do" (high-intent moment after the misconception is corrected; reader is ready to consider professional review)
+- After "How a Form 17 declaration ends" (after the sequencing trap is explained, before the wider-picture summary)
+- Total asides: 2 (within the 1-3 guideline; chose 2 not 3 because the page is already dense with mechanics)
 
 ### Build attempts
+- Attempt 1 after `npm install` in worktree: PASS. Page generated at .next/server/app/blog/landlord-tax-essentials/form-17-declaration-beneficial-interest-property-mechanics-filing-revocation.html (+ .meta + .rsc).
 
 ### Verification
+- em-dash count: 0
+- Tailwind utility classes in markdown: 0
+- metaTitle length: 57 (max 62)
+- metaDescription length: 158 (max 158, trimmed by 1 char from initial draft)
+- FAQ count: 14 (within 10-14)
+- Internal links resolve: 4 of 5 to existing files; 5th is forward-link to C3 (same branch, ships same session)
+- Body word count: 3445 (within 2,500-3,500 target)
 
 ### Flags raised to wave5_site_wide_flags.md
+- F-21 (HOUSE_POSITION_CORRECTION): §24.1 cites ITTOIA 2005 s.282 as the "property-income parallel for jointly owned dwellings" but legislation.gov.uk verification on 2026-05-23 confirms s.282 is "Assignments for profit of lease granted at undervalue", unrelated to spouse joint-ownership. The operating provision for jointly held property income is ITA 2007 s.836 alone. C1 cites only s.836 and s.837. Recommend manager remove the ITTOIA 2005 s.282 reference from §24.1 in next house_positions update.
 
 ### 2-3 sentence summary
+C1 is the canonical Form 17 mechanic page closing the Wave 2 AUTHORITY_GAP. Centres the four distinguishing details that competitor content commonly misses or muddles: the statutory 60-day window (in s.837, not just TSEM), the "declares not creates" rule, the joint-tenancy bar, and the absence of a voluntary revocation route. Forward-links to within-session C3 (declaration of trust) and back-links to four applied joint-ownership pages already on site.

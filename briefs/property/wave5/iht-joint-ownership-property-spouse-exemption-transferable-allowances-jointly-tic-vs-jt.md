@@ -157,7 +157,89 @@ When you append a STATUS open question, spawn a Monitor task. Keep working while
 
 ---
 
-## Per-page work-log (fill in as you go)
+## Per-page work-log
+
+### Decisions
+- **Final slug:** iht-joint-ownership-property-spouse-exemption-transferable-allowances-jointly-tic-vs-jt (as briefed)
+- **Final category:** landlord-tax-essentials (as briefed)
+- **H1 chosen:** "IHT and Jointly Owned Property: JT vs TIC, Spouse Exemption, and Transferable Allowances"
+- **Meta title chosen:** "IHT on Joint Property: JT vs TIC and Spouse Exemption" (53 chars)
+- **Why these vs other options:** H1 names the four mechanics in the page (JT vs TIC, spouse exemption, transferable allowances) so the page advertises its boundary against Wave 4 C2 (second-death window) and C2 (general JT vs TIC). MetaTitle compresses to the two structural decisions readers query.
+
+### Persona naming
+- Used "Iqbal" rather than the brief-suggested "Khan" because Khan was already used in C1 (Khan / Khan-Patel personas) and C4 (Khan-Patel persona). The brief's instruction to differentiate from Wave 4 C2's Patel + Mawell-Smith is satisfied by Iqbal; the within-Wave-5 anti-templating discipline is also satisfied (Iqbal is fresh).
+
+### Competitor URLs fetched / not fetched
+- alexander-ene.co.uk IHT URLs (4 sibling URLs in brief): NOT fetched per F-5 URL_ROT pattern established from C5. The alexander-ene URL set is now flagged for removal from the Property competitor seed list.
+- ukpropertyaccountants.co.uk/inheritance-tax-on-jointly-owned-property/: not fetched anew; previously absorbed in C1/C5 and the in-house §22 + §24 positions cover the scope.
+
+### Existing-page review
+- Wave 4 C2 (iht-spouse-exemption-second-death-property-portfolio-window-mechanics, on main): re-read at write time; C8 forward-links as the downstream second-death-window mechanic.
+- C2 (joint-tenants-vs-tenants-in-common-property-tax-consequences-uk-landlords, same branch): re-read; C8 forward-links as the general JT vs TIC tax-consequence companion.
+- iht-residence-nil-rate-band-2m-taper-property-portfolios (on main): forward-link as the RNRB taper depth.
+- iht-7-year-clock-property-gifting-mid-life-landlord-strategy (Wave 4 C4, on main): forward-link as the lifetime gifting companion.
+- iht-property-investors-decision-framework-2026-onwards (on main): forward-link as the strategic framework.
+- deed-of-variation-property-estate-redirecting-inheritance-iht-saving (Wave 4 C5, on main): forward-link from the s.142 section.
+- C6 (same branch): forward-link from the unmarried-co-owner contrast section.
+
+### Citations added
+- IHTA 1984 s.5 (joint property in estate)
+- IHTA 1984 s.8A (TNRB): https://www.legislation.gov.uk/ukpga/1984/51/section/8A
+- IHTA 1984 s.8D (RNRB £2m taper): https://www.legislation.gov.uk/ukpga/1984/51/section/8D
+- IHTA 1984 s.8G (TRNRB): https://www.legislation.gov.uk/ukpga/1984/51/section/8G
+- IHTA 1984 s.18 (spouse exemption): https://www.legislation.gov.uk/ukpga/1984/51/section/18
+- IHTA 1984 s.49 (qualifying interest in possession)
+- IHTA 1984 s.142 (DoV 2-year window): https://www.legislation.gov.uk/ukpga/1984/51/section/142
+- IHTA 1984 s.218A (DoV notification)
+- IHTA 1984 s.3A (PETs 7-year clock)
+- HMRC IHTM15040 (joint property survivorship valuation): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm15040
+- HMRC IHT402 (claim TNRB): https://www.gov.uk/government/publications/inheritance-tax-claim-to-transfer-unused-nil-rate-band-iht402
+
+### Internal links added
+- /blog/landlord-tax-essentials/iht-spouse-exemption-second-death-property-portfolio-window-mechanics (Wave 4 C2)
+- /blog/landlord-tax-essentials/iht-residence-nil-rate-band-2m-taper-property-portfolios
+- /blog/landlord-tax-essentials/iht-7-year-clock-property-gifting-mid-life-landlord-strategy
+- /blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards
+- /blog/landlord-tax-essentials/deed-of-variation-property-estate-redirecting-inheritance-iht-saving
+- /blog/landlord-tax-essentials/joint-tenants-vs-tenants-in-common-property-tax-consequences-uk-landlords (C2)
+- /blog/landlord-tax-essentials/unmarried-co-owners-property-tax-rental-income-split-actual-beneficial-share (C6)
+
+### Inline CTA placements
+- After "The £2 million RNRB taper trap" (high-intent for couples at/near £2m threshold)
+- After "Worked example: Iqbal couple's £1.4m portfolio" (high-intent following the scenario comparison)
+- Total asides: 2
+
+### Verification
+- em-dash count: 0
+- en-dash count: 0
+- Tailwind class= in body: 0
+- metaTitle: 53 / 62
+- metaDescription: 146 / 158
+- FAQs: 14 / 10-14
+- Body words: 2,563 / 2,500-3,500
+- External authority links: 6 (within 5-8)
+- Internal links: 7 of 7 resolve (all confirmed)
+- monitored_pages registered: id 206
+
+### Per-write verification (§16.35)
+- IHTA 1984 s.18 spouse exemption: previously verified in C5.
+- IHTA 1984 s.8A TNRB introduced FA 2008 with effect from 9 October 2007: confirmed at write time.
+- £325k NRB + £175k RNRB frozen to April 2030: confirmed at write time against gov.uk (per Autumn Statement 2024 extension).
+- £2m RNRB taper threshold + £1 per £2 reduction mechanic in s.8D: verified against legislation.gov.uk at write time.
+- IHTA 1984 s.142 2-year DoV window + 6-month s.218A notification: verified against legislation.gov.uk at write time.
+- IHTM15040 conventional 50% net equity valuation for joint tenants: confirmed at write time.
+
+### Worked example correction
+- Initial draft had a £1.4m net estate figure that conflated gross portfolio value (£1.4m: £600k home + £800k BTL gross) with net estate. Corrected to £1.2m net (gross less £200k BTL mortgage). All three scenarios (JT, TIC vanilla, TIC redirecting £300k to children) recomputed against the £1.2m net base; all produce £80k second-death IHT, confirming the structural-equivalence point below the £2m taper threshold.
+
+### Build attempts
+- Attempt 1: PASS. 449 static pages built. No build warnings.
+
+### Flags raised
+- None.
+
+### 2-3 sentence summary
+C8 is the upstream structural-choice page for IHT on jointly owned property. Threads the JT survivorship vs TIC devise-by-will choice, the s.18 spouse exemption applied through both, the s.8A TNRB + s.8G TRNRB mechanics, the s.8D £2m RNRB taper trap, the s.142 deed-of-variation post-death corrective (2-year window), and the unmarried co-owner contrast. The Iqbal £1.2m net portfolio worked example (with three structural scenarios) shows the JT and TIC structures are equivalent below the £2m taper threshold and diverge above it. Forward-links to Wave 4 C2 (second-death window) as the downstream depth page.
 
 ### Decisions
 - **Final slug:**
