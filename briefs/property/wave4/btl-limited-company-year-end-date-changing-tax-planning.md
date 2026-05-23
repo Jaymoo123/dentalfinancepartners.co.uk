@@ -171,34 +171,53 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug + category:** as briefed.
+- **H1:** "BTL Limited Company Year-End Date: Changing the ARD as a Tax-Planning Lever"
+- **Meta title:** "BTL Limited Company Year-End Date: Tax Planning Lever" (53 chars)
+- **Why:** H1 names "ARD" (the technical term) plus "tax-planning lever" to telegraph the strategic frame. Meta title omits "ARD" to keep the search term close to "year-end date" + "tax planning".
 
 ### Competitor URLs fetched
+- uklandlordtax.co.uk seed: thin, no CA 2006 s.392 detail. Confirmed strong competitive opening on the actual statutory mechanic.
+- provestor.co.uk: tactical actions inside an existing period, NOT the year-end CHANGE itself. Used for FAQ tone.
+- taxaccountant.co.uk year-end dividend planning: personal SA cycle phrasing for the alignment use case.
+- taxaccountant.co.uk 10-tips and pension pages: light-touch reference for FAQ patterns.
 
-### Existing-page review (from "Closest existing pages")
+### Existing-page review
+- `end-tax-year-checklist-landlords-april-2026` is the tactical inside-the-period checklist. Linked + framed as the complement page; this A3 covers the strategic lever, the checklist covers actions.
+- `buy-to-let-limited-company-complete-guide-uk` is the SPV pillar; linked.
+- `property-investment-company-structure-planning` is the planning-stage decision page; linked.
+- `how-to-transfer-property-into-limited-company-uk` is the upstream transfer mechanics; linked.
 
 ### Citations added (external authority)
+4 external hyperlinks: CA 2006 s.392, CTA 2010 s.455, CTA 2010 s.464C, FA 1998 Sch 18 para 3. Plus HMRC CTM93000 (hyperlinked). Section-name citations in prose for CA 2006 s.391, AA01 form, CTM01405, IHTA 1984 (Pawson context).
 
-### Internal links added (to our existing pages)
+### Internal links added
+Six unique targets, all verified present on disk:
+- end-tax-year-checklist-landlords-april-2026 (landlord-tax-essentials category)
+- btl-spv-directors-loan-repayment-strategy-tax-efficient-extraction (A1, this branch)
+- director-loan-account-property-company-mechanics
+- buy-to-let-limited-company-complete-guide-uk
+- property-investment-company-structure-planning
+- how-to-transfer-property-into-limited-company-uk
 
 ### Inline CTA placements
+Two `<aside>` blocks: (1) on the default-ARD-from-Companies-House issue and our incorporation-time review practice; (2) on the ARD-change + s.455-timing interaction as the most common reason to file AA01 mid-life.
 
 ### Build attempts
+- First build clean. No errors.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count: 14 in markdown frontmatter + 14 in built HTML JSON-LD ✓
+- Em-dashes: 0 ✓
+- Tailwind classes: 0 ✓
+- Meta title length: 53 (≤62) ✓
+- Meta description length: 146 (≤158) ✓
+- Internal links resolve: 6 unique targets, all on disk ✓
+- monitored_pages row inserted: yes (90-day window 2026-08-21)
+- Body word count: 2,546, inside 2,500-3,500 typical range.
 
 ### Flags raised to wave4_site_wide_flags.md
+- None new; the F-1 INTERNAL_LINK flag (Wave 4 sibling back-patches) is already raised for the wider set.
 
 ### 2-3 sentence summary
+A3 frames the property-SPV accounting reference date as a strategic tax-planning lever rather than a bookkeeping default. The CA 2006 s.392 mechanic (shortening unlimited, lengthening once every five years max 18 months) is the structural anchor, applied through three use cases: personal Self Assessment year alignment for landlords running MTD ITSA on a personal portfolio in parallel; section 455 director's loan timing where the year-end can be moved past an expected repayment date; and capital allowance pre-disposal positioning. The page distinguishes from generalist year-end-checklist content (linked as complementary) and from the existing DLA-mechanics page (linked for the s.455 underpinning).
