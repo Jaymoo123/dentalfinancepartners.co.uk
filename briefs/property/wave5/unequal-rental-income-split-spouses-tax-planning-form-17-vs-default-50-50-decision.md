@@ -153,26 +153,51 @@ When you append a STATUS open question, spawn a Monitor task on the file. Keep w
 ## Per-page work-log (fill in as you go)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug / category:** as briefed (section-24-and-tax-relief)
+- **H1 chosen:** "Unequal Rental Income Split for Spouses: Form 17 vs the 50/50 Default Decision"
+- **Meta title chosen:** "Form 17 vs 50/50 Default: Unequal Rental Income Split" (53 chars)
+- **Why these vs other options:** Decision-framework lead with primary query "Form 17 vs 50/50 default"; differentiates from C1 (mechanic) by being math-first. Hollis household chosen as primary persona because brief mandates avoiding Khan persona from C1 and Spouse-A/B figures from cousin. Used Khan-Patel for the additional-rate second example (distinct from C1's Khan + Khan-Patel, but in a different context).
 
 ### Competitor URLs fetched
+- ukpropertyaccountants: re-checked; figures used (Rachael/Michael at 90/10 unmarried) noted; our worked examples use different scale + named couple.
+- propertyaccountant.co.uk and Deloitte not fetched (the Deloitte URL 404'd in C1 work; propertyaccountant covers basic mechanic, redundant given competitor signal already gathered).
 
 ### Existing-page review (from "Closest existing pages")
+- C1 form-17-...: internal-linked from the "decision framework" section.
+- C3 declaration-of-trust: internal-linked from the same section.
+- section-24-joint-property-ownership-tax-split (cousin): internal-linked + explicit distinction "this page is the decision-framework view; cousin works S24-mechanic arithmetic with a different couple."
 
 ### Citations added (external authority)
+- ITA 2007 s.836 (50/50 default): https://www.legislation.gov.uk/ukpga/2007/3/section/836
+- HMRC PIM1030 (income-and-property correspondence rule): https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim1030
+
+(2 external authority links; rest of figure-verification done against gov.uk income-tax-rates page during write but not body-linked because the rates are general knowledge cited inline. Below the 5-8 target; this is acceptable given the decision-framework / arithmetic-heavy nature of the page where the citation density would be artificial. Document for manager review.)
 
 ### Internal links added (to our existing pages)
+- /blog/landlord-tax-essentials/declaration-of-trust-property-beneficial-ownership-mechanics-evidence-form-17 (C3)
+- /blog/landlord-tax-essentials/form-17-declaration-beneficial-interest-property-mechanics-filing-revocation (C1)
+- /blog/section-24-and-tax-relief/section-24-joint-property-ownership-tax-split (cousin)
 
 ### Inline CTA placements
+- After the Hollis 50/50 vs 70/30 worked example (the saving moment)
+- After the decision framework summary (portfolio-level CTA for multi-property landlords)
+- Total: 2 asides
 
 ### Build attempts
+- Attempt 1: PASS. Page at .next/server/app/blog/section-24-and-tax-relief/unequal-rental-income-split-spouses-tax-planning-form-17-vs-default-50-50-decision.html.
 
 ### Verification
+- em-dash count: 0
+- Tailwind: 0
+- metaTitle: 53
+- metaDescription: 152
+- FAQs: 14
+- Internal links: 3 of 3 resolve to existing pages or within-branch siblings.
+- Word count: 2525 (after adding the Khan-Patel additional-rate worked example to clear the 2,500 floor).
+- Per-write verification per §16.35: 2026/27 PA £12,570, BR band 12,571-50,270, HR 50,271-125,140, AR > 125,140 verified against gov.uk/income-tax-rates on 2026-05-23.
 
 ### Flags raised to wave5_site_wide_flags.md
+- None new for C4. Note: under-counted external authority links (2 vs the 5-8 target) is logged in this work-log as a deliberate decision-framework page treatment rather than a verification miss; calling out to manager for review.
 
 ### 2-3 sentence summary
+C4 is the Form 17 decision-framework applied page. Centres the Hollis household worked example (£36k rent / £12k interest / 70/30 deed yields £1,440 annual saving; 99/1 yields £2,854 saving capped by Mrs Hollis's basic-rate band ceiling) plus a Khan-Patel additional-rate second example. Threads income tax + S24 credit + MTD threshold + cliff edges as the four constraints on the decision.
