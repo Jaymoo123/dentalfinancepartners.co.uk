@@ -1,0 +1,201 @@
+# Wave 5 brief: vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method
+
+**Site:** property
+**Bucket:** A (VAT topical-gap deepening)
+**Session:** A
+**Brief type:** Net-new page (no existing markdown file)
+**Source markdown path on launch:** `Property/web/content/blog/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method.md`
+**Live URL on launch:** https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method
+
+---
+
+## Manager pre-decisions
+
+- **Suggested slug:** `vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method`
+- **Suggested category:** `landlord-tax-essentials`
+- **Bucket:** A (VAT topical-gap deepening)
+- **Framing differentiator (Stage 2 deepened, 2026-05-23):**
+
+> Partial exemption is the **input-tax allocation regime** that bites mixed-portfolio landlords once they have any exempt supply (residential lettings) alongside a taxable supply (OTT-on commercial, holiday accommodation, opted parking). Zero on-site coverage. This page is the canonical depth on the partial-exemption mechanic specifically applied to property: VAT Regulations 1995 reg 99-102, the standard method (input tax attribution to taxable / exempt / residual + residual apportionment by output-tax ratio), the de-minimis test (£625 average monthly exempt input tax AND ≤50% of total input tax, VAT Reg 106), the annual adjustment (VAT Reg 107), and the special-method approval route for cases where the standard method gives an unfair result. **Distinct from A1 (OTT election)** by being the consequence-not-the-cause: partial exemption only arises if you have BOTH taxable and exempt supplies, which is the typical state for portfolio landlords post-OTT. **Distinct from A2 (CGS)** by allocating residual input tax across a portfolio every VAT period, not adjusting one asset's recovery over a 10-interval window. **Distinct from A10 (decision framework)** by being the operational allocation mechanic, not the in/out-of-VAT decision.
+
+If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
+
+**Stage 1 manager note:** Portfolio landlords with any commercial OTT-on element invariably hit partial exemption. High-intent operational mechanic. Zero on-site coverage; competitor coverage exists but is generic / cross-industry.
+
+---
+
+## Competitor URLs (Stage 2 §16.31 verified 2026-05-23)
+
+- https://www.taxaccountant.co.uk/vat-partial-exemption-and-input-tax-recovery/ — VERIFIED ALIVE 2026-05-23. Comprehensive on the statutory framework, attribution to taxable / exempt / residual, residual apportionment, annual adjustments with practical examples. Primary outline reference.
+- https://www.taxaccountant.co.uk/vat-the-partial-exemption-trap/ — VERIFIED LIVE 2026-05-23 (Stage 2 noted it as not directly addressing property landlords; uses estate-agent example but the trap mechanic is universal — usable for the "trap" framing in the opening section). Replaceable if session prefers a more property-focused secondary URL.
+- https://www.ukpropertyaccountants.co.uk/vat-and-property-dispelling-myths-and-avoiding-common-mistakes/ — VERIFIED ALIVE 2026-05-23. Use for the partial-exemption myths sub-section (e.g., the common belief that small amounts of exempt income can be "ignored"; in fact the de-minimis test is the only ignore-route and it must be tested every period).
+
+**Stage 2 verification note:** all three URLs verified alive 2026-05-23.
+
+**Fetch + read + extract instruction (session):** Fetch each URL via `httpx.get(url, timeout=30, follow_redirects=True, headers={"User-Agent": "Mozilla/5.0"})` then parse with BeautifulSoup (lxml). Extract: how each competitor explains the attribution → apportionment → de-minimis → annual adjustment chain. Borrow outline-shape, NOT clause language. Cross-check every figure against VAT Regulations 1995 reg 99-107 + HMRC VAT Notice 706.
+
+---
+
+## GSC data
+
+*This is a net-new page; no GSC data exists for it yet. The primary topical query is implicit in the slug + framing differentiator (partial exemption landlord, mixed portfolio VAT, residual input tax property).*
+
+---
+
+## Closest existing pages (cannibalisation context)
+
+Stage 1 + Stage 2 reasoned identification (not Jaccard) against the 6 existing on-site VAT pages + adjacent pages:
+
+1. **A1 (forthcoming sibling)** — upstream: OTT election is the upstream trigger. A3 forward-links to A1 for the OTT mechanic.
+
+2. **A2 (forthcoming sibling)** — adjacent: CGS adjusts capital-asset recovery on top of the partial-exemption framework. A3 mentions CGS interaction briefly and forward-links to A2 for depth.
+
+3. `landlord-vat-registration-when-required` (category: `landlord-tax-essentials`) — touches the exempt/taxable distinction at registration depth but not partial-exemption mechanics. Differentiation: A3 is the post-registration allocation mechanic; the existing page is the entry-point registration test. Cross-link bi-directionally.
+
+4. `togc-vat-property-letting-business` (category: `property-types-and-specialist-tax`) — distant. TOGC is the transfer mechanism; partial-exemption follows on the buyer's side post-acquisition. Cross-link only if A3 covers TOGC-driven changes in partial-exemption position (it should briefly).
+
+5. **A10 (forthcoming sibling: `vat-on-rental-income-residential-vs-commercial-landlord-vat-status-decision-framework`)** — adjacent: A10 is the upstream decision framework; A3 is the downstream allocation operational mechanic. Cross-link.
+
+**Cannibalisation discipline:**
+- A3 is the operational depth page for mixed-portfolio partial-exemption mechanics. Sibling A1 is the OTT election; sibling A2 is the CGS adjustment; A3 should not re-walk either mechanic, only flag where they intersect.
+
+---
+
+## Redirect overlap (on launch)
+
+Stage 1 scan of `Property/web/src/middleware.ts` for the tokens `partial-exemption`, `mixed-portfolio`, `residual`, `de-minimis`, `apportionment` returned no old-slug redirects that map onto this new slug-token set. Stage 2 + session may re-scan to confirm before launch.
+
+---
+
+## Authority links worth considering for this page (Stage 2 populated 2026-05-23)
+
+Pick 5-8 to actually cite. Partial exemption is regulation-led: VAT Regulations 1995 reg 99-107 dominates, supplemented by HMRC VAT Notice 706 and the VAT Manual Partial Exemption chapter (PE10000+).
+
+- [VATA 1994 (Value Added Tax Act 1994), full contents](https://www.legislation.gov.uk/ukpga/1994/23/contents)
+- [VAT Regulations 1995 SI 1995/2518](https://www.legislation.gov.uk/uksi/1995/2518/contents)
+- [VAT Regulations 1995 reg 99 (attribution of input tax)](https://www.legislation.gov.uk/uksi/1995/2518/regulation/99)
+- [VAT Regulations 1995 reg 101 (standard method)](https://www.legislation.gov.uk/uksi/1995/2518/regulation/101)
+- [VAT Regulations 1995 reg 102 (special method)](https://www.legislation.gov.uk/uksi/1995/2518/regulation/102)
+- [VAT Regulations 1995 reg 106 (de-minimis limit)](https://www.legislation.gov.uk/uksi/1995/2518/regulation/106)
+- [VAT Regulations 1995 reg 107 (annual adjustment)](https://www.legislation.gov.uk/uksi/1995/2518/regulation/107)
+- [HMRC VAT Notice 706 (Partial Exemption)](https://www.gov.uk/government/publications/vat-notice-706-partial-exemption)
+- [HMRC VAT Manual PE10000+ (Partial Exemption Guidance)](https://www.gov.uk/hmrc-internal-manuals/partial-exemption-guidance)
+- [VATA 1994 Sch 9 Group 1 (land exemption)](https://www.legislation.gov.uk/ukpga/1994/23/schedule/9)
+
+---
+
+## Universal rules (do not skip)
+
+### §16.35 per-write numeric verification
+Verify every numeric tax figure (de-minimis £625 monthly + 50% test, registration threshold £90k, the standard-method rounding rules, any percentage cited) against current gov.uk at write time per §16.35. Do NOT carry figures from the brief without re-verification.
+
+### Voice
+- **No em-dashes.** Commas, parentheses, full stops, or middle dots instead.
+- Practical, specific. Exact regulations and notices. No vague hedges.
+- Anonymised personas only.
+
+### Lead-gen architecture (global CSS, you write the placement, not the styling)
+- `Property/web/src/components/blog/BlogPostRenderer.tsx` auto-injects the `LeadForm` at the bottom. **Never duplicate it in body content.**
+- `<aside><p>headline</p><p>body</p></aside>` styled by global CSS. No classes.
+
+### CTA placement guidance (per this page)
+- Add 1-3 inline `<aside>` CTAs: after the de-minimis test section, after a worked annual-adjustment example, after the special-method decision branch.
+- Vary opening sentence. Do NOT mirror A1 ("Most commercial property buyers ...") or A2 ("VAT recovered today is not VAT kept forever ..."). A3 should open from the perspective of "the moment a landlord adds any taxable supply to an exempt portfolio".
+
+### Schema
+- FAQs live in frontmatter `faqs:` array. Target 11-13 FAQs.
+
+### Cannibalisation
+- Read closest-existing pages before writing.
+
+### CSS in markdown
+- Semantic HTML only. No Tailwind utility classes.
+
+### House positions
+- **Read `docs/property/house_positions.md` once at the start.** Bucket A (VAT) has no dedicated house position section.
+
+### Anti-templating self-check (brief 3 of 10)
+- A3's natural H2 spine: (1) why partial exemption arises (mixed-supply trigger), (2) the standard-method attribution → apportionment chain, (3) residual input tax + the output-ratio formula, (4) the de-minimis test (both legs), (5) the annual adjustment, (6) when to apply for a special method, (7) common landlord scenarios (residential + opted commercial, residential + holiday-let, residential + opted parking), (8) interaction with CGS (forward-link to A2), (9) record-keeping and digital trail (MTD-for-VAT touch-point).
+- Vary FAQ phrasing. Avoid echoing A1's OTT-election questions or A2's interval-adjustment questions.
+
+### Quality bar
+- Word count: 2,800-3,500 body (operational mechanic; mid-to-upper band given the multi-step standard-method spine).
+- FAQs: 11-13.
+- New external authority links: 5-8.
+
+---
+
+## Workflow (per page; claim ONE page at a time)
+
+1. **Read `docs/property/house_positions.md`** once at the start of your session.
+2. **Claim the page** in `docs/property/wave5_page_tracker.md`.
+3. **Read the brief** (this file). §16.35 per-write numeric verification mandatory.
+4. **Fetch each competitor URL** with httpx + BeautifulSoup. Decide what is worth extracting.
+5. **Read the closest existing pages** on our site.
+6. **Plan the rewrite/write.** Vary the H2 spine and opening from A1 / A2.
+7. **Verify factual claims** against HMRC manuals / legislation.gov.uk / gov.uk. §16.35 per-write: every numeric figure WebFetched at write time.
+8. **Fetch a hero image from Pexels** via fetch_image_for_post.
+9. **Write the markdown file** at `Property/web/content/blog/<slug>.md`. Full frontmatter.
+10. **Build:** `cd Property/web && npm run build`.
+11. **Verify (six checks):** FAQ schema count match, 0 em-dashes, 0 Tailwind classes, meta title ≤62, meta description ≤158, internal links resolve.
+12. **Redirect overlap:** none listed; re-scan to confirm.
+13. **Register the new page in `monitored_pages`** via the Supabase _db helper.
+14. **Commit on your branch.** Commit BEFORE marking done. Do not include tracker.
+15. **Fill in work-log.**
+16. **Mark done** in `docs/property/wave5_page_tracker.md`.
+17. **Flag** any site-wide issues.
+18. **Discovery log.**
+19. **Next page.**
+
+## Session-side watcher pattern
+
+When you append a STATUS open question, spawn a Monitor task watching for STATUS answered. Keep working on another step / another page while you wait.
+
+---
+
+## Per-page work-log (fill in as you go, supports resumability if interrupted)
+
+### Decisions
+- **Final slug:**
+- **Final category:**
+- **H1 chosen:**
+- **Meta title chosen:**
+- **Meta description chosen:**
+- **Why these vs other options:**
+
+### Competitor URLs fetched
+- 
+
+### Existing-page review (from "Closest existing pages")
+- 
+
+### Citations added (external authority)
+- 
+
+### Internal links added (to our existing pages)
+- 
+
+### Inline CTA placements
+- 
+
+### Build attempts
+- 
+
+### Verification
+- FAQ schema count in built HTML matches frontmatter:
+- Em-dashes in markdown:
+- Tailwind classes in markdown:
+- Meta title length:
+- Meta description length:
+- Internal links resolve:
+- monitored_pages row inserted: id
+- Body word count:
+
+### §16.35 numeric verification log (every figure cited)
+- 
+
+### Flags raised to wave5_site_wide_flags.md
+- 
+
+### 2-3 sentence summary
+- 
