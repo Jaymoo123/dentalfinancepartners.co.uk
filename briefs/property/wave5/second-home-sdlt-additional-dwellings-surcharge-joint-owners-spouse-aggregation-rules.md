@@ -152,7 +152,82 @@ When you append a STATUS open question, spawn a Monitor task. Keep working while
 
 ---
 
-## Per-page work-log (fill in as you go)
+## Per-page work-log
+
+### Decisions
+- **Final slug:** second-home-sdlt-additional-dwellings-surcharge-joint-owners-spouse-aggregation-rules (NOTE: brief slug mentioned "3-percent" but the surcharge rate is 5% from 31 October 2024; the published slug omits the rate to avoid stale-figure rot.)
+- **Final category:** landlord-tax-essentials (as briefed)
+- **H1 chosen:** "SDLT Additional Dwellings Surcharge: Joint Buyers and the Spousal Aggregation Rule"
+- **Meta title chosen:** "SDLT Surcharge: Joint Buyers and Spousal Aggregation" (52 chars)
+- **Why these vs other options:** H1 leads with the SDLT mechanic name + the two interlocking rules. The slug differs from the original brief slug (which contained "3-percent") to avoid time-stamping the URL; the 5% rate is referenced in body and FAQ but not in slug.
+
+### Competitor URLs fetched / not fetched
+- ukpropertyaccountants.co.uk overseas-property + LTT-higher-rates pages: previously absorbed; cross-jurisdictional framing borrowed.
+- alexander-ene.co.uk SDLT-on-second-properties: NOT fetched per F-5 URL_ROT pattern.
+
+### Existing-page review
+- sdlt-5-percent-surcharge-refund-claim-process (on main): re-read; C9 forward-links from "When the surcharge can be refunded" section.
+- sdlt-buy-to-let-rates-surcharge-guide-2025 (on main): forward-link as the pillar.
+- sdlt-non-resident-2-percent-surcharge (on main): forward-link as the non-resident layer.
+- C1 (same branch): forward-link as the Form 17 income-tax contrast.
+- C3 (same branch): inline reference to declaration-of-trust mechanic and assumed-debt trap (without a hyperlink because the C3 reference is at sentence level — added inline in the Sch 4 para 8 section).
+- B2 + B7 (Wave 5 cross-bucket siblings, not yet committed at C9 write time per §16.32): forward-link placeholders in plain text in the Welsh + Scottish sections. Manager will hyperlink at bucket-merge.
+
+### Citations added
+- FA 2003 Sch 4ZA (joint-buyer + spousal aggregation): https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA
+- FA 2003 Sch 4 (chargeable consideration): https://www.legislation.gov.uk/ukpga/2003/14/schedule/4
+- LTTA 2017 Sch 5 + LBTT(S)A 2013 Sch 2A (referenced for devolved equivalents; not hyperlinked because the cross-link is to within-Wave-5 sibling depth pages B2 + B7)
+- HMRC SDLTM09800 + SDLTM07750: referenced inline in editorial note
+
+### Internal links added
+- /blog/landlord-tax-essentials/sdlt-5-percent-surcharge-refund-claim-process
+- /blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025
+- /blog/landlord-tax-essentials/sdlt-non-resident-2-percent-surcharge
+- /blog/landlord-tax-essentials/form-17-declaration-beneficial-interest-property-mechanics-filing-revocation (C1)
+- B2 + B7: forward-link placeholders in plain text (manager hyperlinks at bucket-merge per §16.32)
+
+### Inline CTA placements
+- After the rate-stack section (high-intent for buyers about to exchange)
+- After the Garcia / Rossi worked example (high-intent for couples about to marry with overseas holdings)
+- Total asides: 2
+
+### Verification
+- em-dash count: 0
+- en-dash count: 0
+- Tailwind class= in body: 0
+- metaTitle: 52 / 62
+- metaDescription: 144 / 158
+- FAQs: 14 / 10-14
+- Body words: 2,597 / 2,500-3,500 (extended Sch 4 para 8 / assumed-debt section to clear 2,500 floor)
+- External authority links: 5 (within 5-8)
+- Internal links: 4 of 4 internal hyperlinks resolve; B2 + B7 forward-link placeholders left as plain text per §16.32
+- monitored_pages registered: id 210
+- <aside> tags balanced: 2 open + 2 close
+
+### Per-write verification (§16.35)
+- SDLT 5% surcharge rate from 31 October 2024: verified at write time against gov.uk/stamp-duty-land-tax/residential-property-rates.
+- SDLT bands 2026/27 (0/2/5/10/12 % at £125k/£250k/£925k/£1.5m): verified at write time against gov.uk.
+- Non-UK-resident 2% surcharge: verified at write time.
+- Scottish ADS 8% from 5 December 2024: confirmed per house_positions §23.5 (no separate write-time fetch; brief references this).
+- FA 2003 Sch 4ZA para 2(3), para 3, para 8, para 9: structural references; not separately re-verified for this write because the framework is stable.
+- 36-month refund window: confirmed per house_positions and existing on-site refund page.
+
+### §16.32 cross-bucket sequencing handling
+- B2 and B7 not committed at C9 write time (Session B still working through bucket). C9 includes plain-text forward-link placeholders in the "Welsh LTT equivalent" and "Scottish ADS equivalent" sections; the manager will insert hyperlinks at bucket-merge once B2 + B7 land. The narrative reads cleanly without the hyperlinks; the placeholders are not pointer-syntax that would break the build.
+
+### Slug change explanation
+- Original brief slug: second-home-sdlt-3-percent-additional-dwellings-surcharge-joint-owners-spouse-aggregation-rules
+- Published slug: second-home-sdlt-additional-dwellings-surcharge-joint-owners-spouse-aggregation-rules
+- Reason: dropped the "3-percent" infix because the surcharge rate has been 5% since 31 October 2024; embedding the old rate in the URL would have created stale-figure rot. The slug remains close to the original; cannibal / cross-link discipline preserved.
+
+### Build attempts
+- Attempt 1: PASS. 451 static pages built. No build warnings on this page. Caught and fixed one unclosed <aside> tag mid-write (added closing </aside> before "When the surcharge can be refunded" H2).
+
+### Flags raised
+- None.
+
+### 2-3 sentence summary
+C9 is the SDLT joint-buyer + spousal aggregation applied page. Threads the FA 2003 Sch 4ZA para 2(3) joint-buyer trigger + Sch 4ZA para 9 spousal aggregation rule + the worldwide property test + the 2026/27 rate stack + the 36-month refund route. Williams + Carter (FTB married to landlord) and Garcia + Rossi (overseas Italian apartment triggering aggregation on marriage) worked examples cover the two canonical persona traps. Forward-link placeholders to Wave 5 B2 (Welsh LTT) and B7 (Scottish ADS) for cross-jurisdictional depth; manager hyperlinks at bucket-merge per §16.32.
 
 ### Decisions
 - **Final slug:**
