@@ -156,26 +156,55 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug / category:** as briefed
+- **H1 chosen:** "Declaration of Trust on Property: Beneficial Ownership, Drafting, and Evidence for Form 17"
+- **Meta title chosen:** "Declaration of Trust: Property Beneficial Ownership Mechanics" (61 chars)
+- **Why these vs other options:** Structure differs from C1 + C2: definition → writing requirement → content checklist → execution discipline → SDLT trap (Patel worked example) → CGT → sequence to Form 17 → drafting mistakes → storage. Document-mechanic shape, not tax-mechanic shape (which is C1's lane) and not structural-choice shape (which is C2's lane).
 
 ### Competitor URLs fetched
+- uklandlordtax.co.uk/declaration-of-trust: useful for confirming the £40k SDLT additional-dwellings floor mechanic and the worked-example pattern. Did not borrow phrasing or persona.
+- uklandlordtax.co.uk/what-is-a-declaration-of-trust: not fetched (sibling content; signal sufficient from main URL).
+- alexander-ene.co.uk/declaration-trust-rental-property + sibling alt-slug: not fetched (this competitor's pages on the broader joint-ownership topic returned generic firm-boilerplate per C2 work; pattern unlikely to differ).
 
 ### Existing-page review (from "Closest existing pages")
+- C1 form-17-...: internal-linked from the "From deed to Form 17" sequence section.
+- C2 joint-tenants-vs-...: internal-linked from the sequence section (severance prerequisite).
+- section-24 cousin: not internal-linked (different lane; deed-mechanic page already has 2 internal links).
 
 ### Citations added (external authority)
+- LPA 1925 s.53 (declaration of trust writing requirement): https://www.legislation.gov.uk/ukpga/1925/20/section/53
+- LP(MP)A 1989 s.1 (deed witnessing): https://www.legislation.gov.uk/ukpga/1989/34/section/1
+- FA 2003 Sch 4 (SDLT chargeable consideration including assumed debt para 8): https://www.legislation.gov.uk/ukpga/2003/14/schedule/4
+- TCGA 1992 s.58 (no-gain-no-loss spouse): https://www.legislation.gov.uk/ukpga/1992/12/section/58
+- TCGA 1992 s.17 (market-value disposal): https://www.legislation.gov.uk/ukpga/1992/12/section/17
+- ITA 2007 s.836 (50/50 default): https://www.legislation.gov.uk/ukpga/2007/3/section/836
+- HMRC TSEM9851: https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem9851
+
+(7 external authority links, within 5-8 target)
 
 ### Internal links added (to our existing pages)
+- /blog/landlord-tax-essentials/joint-tenants-vs-tenants-in-common-property-tax-consequences-uk-landlords (C2, same branch)
+- /blog/landlord-tax-essentials/form-17-declaration-beneficial-interest-property-mechanics-filing-revocation (C1, same branch)
 
 ### Inline CTA placements
+- After "What the deed needs to say" (drafting checklist; conversion moment)
+- After "The SDLT assumed-debt trap" worked example (highest-value pre-execution moment to talk to an adviser)
+- Total: 2 asides (within 1-3 guideline)
 
 ### Build attempts
+- Attempt 1: PASS. Page generated at .next/server/app/blog/landlord-tax-essentials/declaration-of-trust-property-beneficial-ownership-mechanics-evidence-form-17.html.
 
 ### Verification
+- em-dash count: 0
+- Tailwind utility classes in markdown: 0
+- metaTitle length: 61 (max 62)
+- metaDescription length: 154 (max 158)
+- FAQ count: 14 (within 10-14)
+- Internal links resolve: 2 of 2 within-branch
+- Body word count: 2879 (within 2,500-3,500)
 
 ### Flags raised to wave5_site_wide_flags.md
+- None new for C3.
 
 ### 2-3 sentence summary
+C3 is the document-mechanic page on the declaration of trust. Centres four points (writing requirement under LPA 1925 s.53(1)(b), four-element content checklist, execution discipline, SDLT assumed-debt trap with Patel worked example). Forward-links to C1 + C2 to complete the document-mechanic/election-mechanic/structural-choice triangle that the C-bucket sits on.
