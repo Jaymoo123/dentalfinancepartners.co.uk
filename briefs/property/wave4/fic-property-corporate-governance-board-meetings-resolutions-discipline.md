@@ -172,37 +172,62 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 
 ---
 
-## Per-page work-log (fill in as you go, supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug / category:** per brief, no override.
+- **H1:** "FIC Corporate Governance for Property: The Operational Discipline that Holds the Structure Up"
+- **Meta title (53 chars):** "FIC Governance Discipline: Minutes, Resolutions, Risk"
+- **Meta desc (156 chars):** "Property FIC governance discipline: board cadence, minutes, written resolutions, statutory registers, substance-over-form risk, the dividend-mechanic rules."
+- **Why these:** title leads with "Governance Discipline" (operational lens, anti-templating contrast against A6's "Articles" structural lens) + the three load-bearing nouns (Minutes / Resolutions / Risk). H1 explicitly frames the page as "operational discipline that holds the structure up" to differentiate from the articles-drafting frame of A6.
 
-### Competitor URLs fetched
+### Competitor URLs (Stage 2 list) — outline shapes only, no sentence borrowing
+- Confirmed prior fetches from A6 cover the substantive overlap. All three primary competitor families (TLPI, taxaccountant, ukpropertyaccountants) treat governance discipline at high level only (no CA 2006 section depth, no substance-over-form framing, no contemporaneous-record mechanic). The structural gap that A6 fills on articles drafting is the same gap A7 fills on governance discipline.
 
-### Existing-page review (from "Closest existing pages")
+### Cannibalisation
+- A6 (fic-articles-of-association-property-control-mechanics) is the closest sibling. A7 boundary: A6 = clause text in the articles; A7 = operational discipline outside the articles. A7 forward-links to A6 once explicitly for the articles drafting reference.
+- fic-complete-guide-property-wealth-transfer (pillar) covers governance at high level (one paragraph on "governance retains founder control"). A7 goes deeper on the operational rhythm + minute discipline + substance-over-form mechanic. Clean differentiation.
+- No CANNIBAL flag raised.
 
-### Citations added (external authority)
+### Citations
+1. ITTOIA 2005 s.624 (settlements legislation)
+2. CA 2006 s.171 (act within powers) — legislation.gov.uk
+3. CA 2006 s.172 (promote success) — legislation.gov.uk
+4. CA 2006 s.168 (removal of director by ordinary resolution with special notice) — legislation.gov.uk
+5. CA 2006 s.830 (distributable reserves) — legislation.gov.uk
+6. CA 2006 s.687 (preference redemption from distributable reserves) — legislation.gov.uk
+7. HMRC CTM15205 (dividend declaration timing) — gov.uk
+8. Plus narrative references to CA 2006 ss.173-177, ss.113-128, ss.275, s.288-300, s.847, s.510, Schedule 18 FA 1998, Schedule 24 FA 2007, Schedule 36 FA 2008, GAAR Schedule 43 FA 2013, IHTM Pawson, Ramsay v IRC, Furniss v Dawson, Eclipse Film Partners.
+Total: 7 hyperlinked authority citations.
 
-### Internal links added (to our existing pages)
+### Internal links
+1. /blog/incorporation-and-company-structures/fic-articles-of-association-property-control-mechanics (A6, shipped this session) — opening cross-reference
+2. /blog/incorporation-and-company-structures/fic-growth-shares-and-freezer-shares-design — share-class-economic-mechanics cross-reference
+3. /blog/incorporation-and-company-structures/fic-iht-treatment-bpr-myth — Pawson investment-line BPR cross-reference (added in Edit after initial draft)
+4. /blog/incorporation-and-company-structures/alphabet-shares-property-spv-dividend-splitting-spouse-children — settlements-boundary cross-reference (added in Edit after initial draft; also referenced in FAQ frontmatter)
+All 4 targets verified existing on disk.
 
-### Inline CTA placements
+### Inline CTAs
+- Aside 1: after directors' duty foundation section (high-intent moment, post-CA 2006 ss.171-177 walkthrough)
+- Aside 2: after statutory registers section (operational-failure moment)
+- Aside 3: after annual rhythm section (decision-framework moment)
+Three asides, none in opening, none inside worked examples.
 
 ### Build attempts
+Single run, passed clean.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 ↔ 14 ✓
+- Em-dashes: 0 ✓
+- Tailwind classes: 0 ✓
+- Meta title length: 53 (≤62) ✓
+- Meta description length: 156 (≤158) ✓
+- Internal links resolve: 4 distinct targets all verified ✓
+- monitored_pages row inserted: id 178 ✓
+- Body word count: 3,160 (solid mid-band per START_HERE expectation for FIC sub-thread pages)
 
-### Flags raised to wave4_site_wide_flags.md
+### Flags raised
+No new flags. A7's cross-link to A6 is live (A6 shipped 1616ecb same session). Cross-links to A8/A10 deferred per existing F-2 back-patch list.
 
-### 2-3 sentence summary
+### Summary
+A7 walks the operational discipline that defends a property FIC against substance-over-form challenge: quarterly board-meeting cadence, contemporaneous minute discipline on the 5 tax-load-bearing event categories (dividends / share issues / property acquisitions / DLA decisions / preference redemption), s.288 written resolutions, ss.113-128 statutory registers, s.177 declarations of interest, absolute banking separation, and an annual Q1-Q4 operating rhythm. Cleanly distinct from A6 (articles drafting) and from the existing growth-shares + FIC-IHT pages on the site.

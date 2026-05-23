@@ -175,34 +175,67 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** btl-spv-directors-loan-repayment-strategy-tax-efficient-extraction (as briefed)
+- **Final category:** Incorporation & Company Structures (as briefed)
+- **H1 chosen:** "BTL Director's Loan Repayment Strategy: Sequence, Exhaustion and Replenishment"
+- **Meta title chosen:** "BTL Director's Loan Repayment Sequence and Exhaustion Trap" (58 chars)
+- **Why these vs other options:** Meta title leads with the framing-differentiator nouns (sequence + exhaustion) that distinguish A1 from the existing DLA-mechanics page on-site. H1 adds replenishment to telegraph the third major section. Slug + category locked by manager pre-decision.
 
 ### Competitor URLs fetched
+- uklandlordtax.co.uk DLA article — useful for property-investor framing, but cites 38.75% section 455 rate which is outdated (current is 33.75%, per house position §21.1). No conflict to flag because correct rate is in house positions; just don't transcribe.
+- ukpropertyaccountants.co.uk DLA guide — standard mechanic guide, FAQ table format, cites 33.75% correctly. Useful for FAQ phrasing baseline; my FAQs intentionally cover different territory (sequence + replenishment) to avoid overlap.
+- ukpropertyaccountants.co.uk write-offs — HMRC enquiry pattern for written-off DLAs. Not heavily mined because A1's framing is credit-balance sequence, not write-off pattern, but informed a sentence in the "going debit" section.
+- taxaccountant.co.uk DLA — thin. CT61 quarterly mechanic informed the strand-two CT61 section.
+- shipleystax.com 2019 — thin and dated. Confirmed the gap on sequencing as a competitive opening: no specialist firm presents extraction as a five-strand sequence.
 
 ### Existing-page review (from "Closest existing pages")
+- `director-loan-account-property-company-mechanics` (dated 2026-05-22, very recent) is the bookkeeping companion. I deferred all section 455 / 9-month clock / £10k BIK detail to that page and linked twice to it (intro + "going debit" section).
+- `property-company-profit-extraction-salary-vs-dividends` (March 2026, older) is the higher-level salary-vs-dividend page. I deferred all marginal-rate worked examples to it and noted that the deeper marginal-rate analysis (A5 of this wave) will replace/supersede. Linked from "Related reading".
+- `director-loan-property-company` — older higher-level introduction. Linked as the wider context page.
+- `section-162-incorporation-relief-property-landlords` — the origin-story for the credit balance. Linked early in strand one to anchor where the credit DLA comes from.
+- `section-24-interest-only-mortgage-tax-planning` — the personal-side regime that drives incorporation. Linked from the FAQ on section 24 interaction.
 
 ### Citations added (external authority)
+- CTA 2010 s.464C (bed-and-breakfast block) via legislation.gov.uk link in "going debit" section.
+- CTA 2010 s.453 (close-company benefits to participators framework) via legislation.gov.uk link in time-horizon section.
+- HMRC SAIM9000 (savings-and-investment manual practice on accrued interest) named in strand-two CT61 mechanic; not hyperlinked because the URL form (`/hmrc-internal-manuals/savings-and-investment-manual/saim9000`) is referenced in prose rather than as a clickable link to keep cited links external-only.
+- Implicit references to CTA 2010 s.18N (CIHC qualifying-purpose carve-out) and Taxes (Interest Rate) Regulations 1989 in FAQs.
+- Lower citation density than typical Wave 4 (2 external hyperlinks vs the 4-7 guideline) because the strategic framing here calls for fewer formal citations than a mechanic-heavy page; the body cites legislation by name and section number throughout (CTA 2010 ss.455/464C/464D/18N/453, ITTOIA 2005, CT61, SAIM9000, Hunt November 2022 reform, etc.). All numeric figures are flagged as "verify at write time" per §21.4 of house positions to acknowledge the 2026/27 Budget uncertainty.
 
 ### Internal links added (to our existing pages)
+Eight unique targets, all verified present on disk pre-write:
+- /blog/incorporation-and-company-structures/director-loan-account-property-company-mechanics (×2 cross-links)
+- /blog/incorporation-and-company-structures/director-loan-property-company
+- /blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords
+- /blog/incorporation-and-company-structures/property-company-profit-extraction-salary-vs-dividends
+- /blog/incorporation-and-company-structures/property-company-employer-pension-contributions-directors
+- /blog/incorporation-and-company-structures/incorporation-timing-when-to-incorporate-property-portfolio
+- /blog/incorporation-and-company-structures/when-does-hmrc-accept-rental-property-incorporation-business
+- /blog/section-24-and-tax-relief/section-24-interest-only-mortgage-tax-planning
+
+Forward references to Wave 4 siblings (A2 alphabet shares, A5 marginal rate, A8/A9 FIC) deliberately NOT hyperlinked because those slugs do not exist yet on disk; flagged for post-wave back-patch (see flags).
 
 ### Inline CTA placements
+Three `<aside>` blocks at conversion moments:
+1. After strand-one drawdown rhythm explanation, on the importance of drawdown rate.
+2. After the exhaustion-trap worked timeline, on the year 6-8 discovery pattern.
+3. After replenishment levers, on annual-review discipline.
 
 ### Build attempts
+- First build attempt clean. No errors. Three pre-existing ESLint warnings on other files (_categories/_activeCategory/img element) unrelated to this page.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 `@type:Question` entries, matches frontmatter ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 58 chars (≤62 limit) ✓
+- Meta description length: 139 chars (≤158 limit) ✓
+- Internal links resolve: 8 unique targets, all verified present on disk ✓
+- monitored_pages row inserted: yes (id 157, rewrite_type='rewrite' per Wave 2/3 convention, baseline 0/0 for net-new, 90-day window to 2026-08-21)
+- Body word count: 3,633 (frontmatter excluded), upper end of 2,500-3,500 typical range, justified by five-strand framework + worked timeline + replenishment levers + three persona calibrations all needing room.
 
 ### Flags raised to wave4_site_wide_flags.md
+- F-1 INTERNAL_LINK: A1 has natural cross-links to A2 (alphabet shares), A5 (marginal rate), A8/A9 (FIC sub-thread). Flagged for post-wave back-patch when those sibling slugs land on main.
 
 ### 2-3 sentence summary
+A1 frames the post-incorporation director's loan account as an extraction-sequence problem across five strands (DLA principal → official-rate interest → dividends → salary at secondary-threshold floor → employer pension), with a worked 10-year exhaustion timeline anchoring a £500k credit balance against £49k/yr drawdown. The page distinguishes cleanly from the existing on-site DLA-mechanics page (which owns section 455 / 9-month clock / BIK rule) and from the forthcoming A5 marginal-rate page (which will own dividend / salary rate computation), instead owning the strategic sequencing decision and the replenishment levers that keep the credit balance alive across a fifteen-year horizon.

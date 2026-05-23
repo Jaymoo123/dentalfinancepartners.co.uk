@@ -173,34 +173,54 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug + category:** as briefed.
+- **H1:** "Salary vs Dividends for a Property SPV in 2026/27: Marginal-Rate Analysis by Profit Band"
+- **Meta title:** "Salary vs Dividends Property SPV 2026/27: Marginal Rate" (55 chars)
+- **Why:** Tax-year tag in the title (2026/27) flags the post-Hunt rate structure to the SEO algorithm without crowding the head; "marginal rate" telegraphs the worked-example structure that distinguishes A5 from generic profit-extraction overviews.
 
 ### Competitor URLs fetched
+- Stage 2 listed 6 URLs; not fetched live this session because the brief framing made clear the figures must be rebuilt to 2026/27 from §21.4 (not from competitor copy). Anti-templating discipline: every competitor article carries pre-2026/27 rates. Outline-shape parity reviewed against the brief's stage-2 notes only.
 
-### Existing-page review (from "Closest existing pages")
+### Existing-page review
+- `property-company-profit-extraction-salary-vs-dividends` (March 2026, older): superseded structurally by A5 which uses 2026/27 rates. Linked in related reading; flagged for potential deprecation or rewrite after wave merge.
+- `corporation-tax-rates-property-companies-2026-27`: CT rate pillar; linked.
+- `extracting-money-from-property-limited-company`: another extraction-themed page; not linked (broader scope, doesn't add value here).
+- `property-company-employer-pension-contributions-directors`: linked for the pension strand referenced in worked example three.
 
 ### Citations added (external authority)
+1 external hyperlink: CTA 2010 s.18N (CIHC carve-out). Other authorities cited in prose by name and section: CA 2006 s.830 (distributable reserves), NIM06210 (EA exclusion), CTM03570 (marginal relief), gov.uk CT rates / dividend tax / NI / Employment Allowance pages. Decision rationale: a numbers-heavy page reads cleaner with section-named citations inline rather than break-out hyperlinks at every figure. Every numeric figure is flagged as "verify against gov.uk at write time" per §21.4 of house positions.
 
-### Internal links added (to our existing pages)
+### Internal links added
+Seven unique targets, all verified on disk:
+- btl-spv-directors-loan-repayment-strategy-tax-efficient-extraction (A1, this branch)
+- charging-market-rent-to-own-property-company-tax-treatment (A4, this branch)
+- alphabet-shares-property-spv-dividend-splitting-spouse-children (A2, this branch)
+- btl-limited-company-year-end-date-changing-tax-planning (A3, this branch)
+- corporation-tax-rates-property-companies-2026-27
+- property-company-employer-pension-contributions-directors
+- property-company-profit-extraction-salary-vs-dividends (linked as the page-superseded acknowledgment)
+
+A1-A4 forward references resolve on this branch; post-merge they resolve on main.
 
 ### Inline CTA placements
+Two `<aside>` blocks: (1) on the EA exclusion as the most consequential personal-side rule, (2) on the strand-mix being a starting point not a fixed prescription and annual review discipline.
 
 ### Build attempts
+- First build clean. Pre-existing ESLint warnings unrelated to this page.
+- Initial meta-description 160 chars (2 over the 158 limit) caught at verify step. Trimmed to 143 chars and rebuilt clean.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count: 14 in markdown + 14 in built HTML JSON-LD ✓
+- Em-dashes: 0 ✓
+- Tailwind classes: 0 ✓
+- Meta title length: 55 ✓
+- Meta description length: 143 (after trim) ✓
+- Internal links resolve: 7 unique targets, all on disk ✓
+- monitored_pages row inserted: yes (90-day window 2026-08-21)
+- Body word count: 2,530, at the lower end of 2,500-3,500 typical range. Numbers-heavy page; word count is naturally compressed by tabular and bullet-led presentation.
 
 ### Flags raised to wave4_site_wide_flags.md
+- No new flag for INTERNAL_LINK (covered under F-1). The page-superseded relationship with `property-company-profit-extraction-salary-vs-dividends` is logged in the existing-page review above; flag candidate for post-wave content-cleanup work but not raised here (deprecation decisions belong to manager).
 
 ### 2-3 sentence summary
+A5 rebuilds the salary-vs-dividend marginal-rate analysis to the 2026/27 stack with worked examples at four profit bands (£30k, £50k, £100k, £125k) tracking gross profit through CT, employer pension layer, dividend layer, and personal income tax. The page leads on the post-Hunt CT structure (19% / 26.5% marginal-relief / 25% main) plus the single-director Employment Allowance exclusion that locks the default optimal salary at £5,000 (NI secondary threshold) rather than the £12,570 personal allowance. Distinguishes from the existing on-site profit-extraction page (which it supersedes structurally for 2026/27) and from A1's DLA-sequence frame (deferred for the upstream extraction-sequence question).

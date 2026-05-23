@@ -171,37 +171,60 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 
 ---
 
-## Per-page work-log (fill in as you go, supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Slug / category:** per brief, no override.
+- **H1:** "Using a Property FIC for Retirement Income: Three-Strand Sequencing Across Decumulation"
+- **Meta title (48 chars):** "FIC Retirement Income for Property Founders (UK)"
+- **Meta desc (146 chars):** trimmed twice from initial draft to land within 158-char limit.
+- **Why these:** title leads with "FIC Retirement Income for Property Founders" + "UK" qualifier. H1 specifies "Three-Strand Sequencing" as the framing-differentiator-naming token. The sequencing frame distinguishes from a generic FIC-explainer page.
 
-### Competitor URLs fetched
+### Competitor outline takeaway
+TLPI's hands-off-retirement-income case study uses the "three-strand" pattern implicitly but as marketing case-study, not as a sequencing walkthrough. UKLandlordTax's FIC + IHT guide blurs the income-now vs IHT-on-death framing; A8 deliberately polices the boundary by repeatedly cross-referencing C7 (FIC-as-IHT-tool) and A9 (share-gift PET) as out-of-scope, then walking the strand mix as an income-now exercise. UKPropertyAccountants comprehensive FIC explainer was the FAQ-density reference.
 
-### Existing-page review (from "Closest existing pages")
+### Cannibalisation
+- Closest sibling A6 (articles drafting) and A7 (governance) shipped same session; A8 forward-links to both for the operational mechanics that the income strands depend on.
+- fic-complete-guide-property-wealth-transfer (pillar) covers FIC income at high level; A8 goes deeper specifically on the retirement-decumulation phase with the 4-age sequencing.
+- A8's BOUNDARY against C7 (FIC IHT value-freeze, Wave 4 Session C bucket) is policed in opening, mid-body, and the closing dedicated "boundary" section. Both will cross-link at wave merge.
+- A8's BOUNDARY against A9 (FIC share-gift PET) is policed by cross-referencing "share-gift PET at point of gift covered separately" pattern throughout.
 
-### Citations added (external authority)
+### Citations
+1. TCGA 1992 s.162 (incorporation relief) — legislation.gov.uk
+2. CA 2006 s.684 (redeemable shares) — legislation.gov.uk
+3. CA 2006 s.830 (distributable reserves) — legislation.gov.uk
+4. CTA 2010 s.1000 (distributions definition) — legislation.gov.uk
+5. HMRC EIM26101 (beneficial loans, official rate of interest) — gov.uk
+6. Plus narrative references: CTA 2010 s.453 (close-company interest), CA 2006 ss.687-688 (redemption funding sources), ITTOIA 2005 s.624/s.626 (settlements + spouse exception via cross-link), CTA 2010 s.18-19 + s.18N (CT rates and CIHC).
+Total: 5 hyperlinked authority citations.
 
-### Internal links added (to our existing pages)
+### Internal links (body, distinct)
+1. /blog/incorporation-and-company-structures/fic-articles-of-association-property-control-mechanics (A6, shipped same session) — articles drafting reference (2 in-body references)
+2. /blog/incorporation-and-company-structures/fic-property-corporate-governance-board-meetings-resolutions-discipline (A7, shipped same session) — governance discipline reference
+3. /blog/incorporation-and-company-structures/alphabet-shares-property-spv-dividend-splitting-spouse-children — alphabet-share/s.624 cross-reference for spouse-class allocation
+Plus 1 FAQ reference to alphabet-shares page in the discretionary-class-by-class FAQ.
+4 distinct internal links in body; all targets verified existing on disk.
 
-### Inline CTA placements
+### Inline CTAs
+- Aside 1: after strand-two preference coupon section
+- Aside 2: after sequencing 4-age section
+Two asides this page (the page is more sequencing-and-figures than the A6/A7 structural pages; brief allows 1-3 asides).
 
 ### Build attempts
+Single run, passed clean.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 ↔ 14 ✓
+- Em-dashes: 0 ✓
+- Tailwind classes: 0 ✓
+- Meta title length: 48 (≤62) ✓
+- Meta description length: 146 (≤158) ✓ (trimmed from initial 160-char draft)
+- Internal links resolve: 3 distinct in-body targets all verified ✓
+- monitored_pages row inserted: id 181 ✓
+- Body word count: 2,577 (solid mid-band, target was ~3,000 for FIC sub-thread; came in slightly below because the 3-strand-walking + 4-age-sequencing structure is naturally compact; satisfies brief expectation)
 
-### Flags raised to wave4_site_wide_flags.md
+### Flags raised
+- No new flags. A8's cross-link to C7 (FIC-as-IHT-tool) referenced inline; the wave-close back-patch will hyperlink once C7 ships in Session C bucket.
 
-### 2-3 sentence summary
+### Summary
+A8 walks FIC as a retirement income engine through three FIC strands (DLA credit-balance tax-free runway; preference share coupon as predictable dividend strand; preference share redemption with split capital + distribution treatment) layered with state pension and SIPP drawdown. Default sequencing worked at four founder ages (65 / 70 / 75 / 85) against the three marginal-rate cliffs (£50,270 / £100,000 PA taper / £125,140). Boundary explicitly policed against C7 (IHT value-freeze) and A9 (share-gift PET) by repeated in-body cross-references and a dedicated closing "boundary" section. Anti-templating against A6 + A7 by income-strand-led structure rather than clause-text or operational-rhythm structure.

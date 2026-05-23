@@ -173,37 +173,64 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 
 ---
 
-## Per-page work-log (fill in as you go, supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Slug / category:** per brief, no override.
+- **H1:** "Gifting FIC Growth Shares to Children: The Mechanics at the Moment of Transfer"
+- **Meta title (50):** "FIC Share Gift to Children: 7-Year PET + CGT Rules"
+- **Meta desc (148):** "Gifting FIC growth shares to children: s.17 valuation, s.165 holdover denial for investment FICs, settlements legislation, 7-year PET clock at gift."
+- **Why these:** title centres on the 4-question framework's two most-searched terms (7-year PET + CGT) plus the destination (children) and the structural vehicle (FIC share gift). H1 explicitly says "at the moment of transfer" to anchor the operational-mechanic framing vs strategic-IHT framing (C7).
 
-### Competitor URLs fetched
+### Competitor outline takeaway
+UKPropertyAccountants' family-involvement page and ukpropertyaccountants' freezer/growth-shares page both walk gift mechanics but collapse into strategic-IHT framing rapidly. TLPI's "fic for income returns and protected legacy" case study is the closest to a 4-question framework but is marketing-led. UKLandlordTax's IHT/FIC pages blur in-life income with at-gift mechanics. A9 fills the gap with explicit 4-question framework and an 8-document at-moment-of-gift checklist; no competitor surfaces this discipline at this depth.
 
-### Existing-page review (from "Closest existing pages")
+### Cannibalisation
+- Existing fic-iht-treatment-bpr-myth covers IHT-on-death of FIC shares but does NOT walk the share-gift mechanic at the moment of gift; A9 forward-links to that page on the no-BPR-for-investment-FIC point and stays in-lane on the gift mechanic.
+- C4 (direct property gift) is the cross-bucket sibling per brief; A9 explicitly cross-references and the boundary section addresses the share-vs-property gift routes head-on (deferring to C4 for the direct-property mechanics once that ships in Session C).
+- A8 (in-life retirement income, just shipped) is the boundary on the other side; A9 forward-links to A8 in the boundary section.
 
-### Citations added (external authority)
+### Citations
+1. TCGA 1992 s.17 (deemed MV connected-person disposal) — legislation.gov.uk
+2. TCGA 1992 s.165 (gift relief restricted to trading-company shares) — legislation.gov.uk
+3. TCGA 1992 Sch 7 (qualifying business asset definition) — legislation.gov.uk
+4. TCGA 1992 s.260 (CLT holdover alternative route via discretionary trust) — legislation.gov.uk
+5. IHTA 1984 s.3A (PET framework) — legislation.gov.uk
+6. IHTA 1984 s.7(4) (taper relief schedule) — legislation.gov.uk
+7. ITTOIA 2005 s.624 (settlements legislation) — legislation.gov.uk
+8. Plus narrative references to TCGA 1992 s.286 (connected persons), s.58 (inter-spouse no gain no loss), ss.126-130 (share reorg base-cost), IHTA 1984 s.18 (spouse exemption), s.104 (BPR), s.113A (BPR on failed PET), ITTOIA 2005 s.629 (minor child attribution), ITEPA 2003 Ch 2 Pt 7 + s.431, Pawson v HMRC, HMRC IHTM14000+ + IHTM25000+ + CG66880+.
+Total: 7 hyperlinked authority citations.
 
-### Internal links added (to our existing pages)
+### Internal links (body, distinct)
+6 distinct in-body internal links:
+1. /blog/incorporation-and-company-structures/fic-articles-of-association-property-control-mechanics (A6) — articles drafting reference
+2. /blog/incorporation-and-company-structures/fic-iht-treatment-bpr-myth — BPR investment-line + no-BPR-on-failed-PET reference
+3. /blog/incorporation-and-company-structures/fic-vs-discretionary-trust-property-comparison — alternative-route comparison (s.260 holdover via trust)
+4. /blog/incorporation-and-company-structures/alphabet-shares-property-spv-dividend-splitting-spouse-children — settlements-boundary cross-reference
+5. /blog/incorporation-and-company-structures/fic-property-corporate-governance-board-meetings-resolutions-discipline (A7) — operational discipline reference
+6. /blog/incorporation-and-company-structures/fic-property-retirement-decumulation-mechanics-uk (A8) — in-life income boundary reference
+All targets verified existing on disk.
 
-### Inline CTA placements
+### Inline CTAs
+- Aside 1: after CGT question 2 section (gift-cost calculation conversion moment)
+- Aside 2: after documentation checklist section (pre-gift documentation review moment)
+Two asides for this page (per brief, 1-3 allowed; reasoning: documentation discipline is the load-bearing conversion topic).
 
 ### Build attempts
+Single run, passed clean.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 ↔ 14 ✓
+- Em-dashes: 0 ✓
+- Tailwind classes: 0 ✓
+- Meta title length: 50 (≤62) ✓
+- Meta description length: 148 (≤158) ✓
+- Internal links resolve: 6 distinct in-body targets all verified ✓
+- monitored_pages row inserted: id 183 ✓
+- Body word count: 2,538 (solid mid-band)
 
-### Flags raised to wave4_site_wide_flags.md
+### Flags raised
+- No new flags. A9's cross-link to C4 (direct property gift) and C7 (FIC strategic IHT framing) referenced inline as wave-close back-patch candidates (will hyperlink once C4/C7 ship in Session C).
 
-### 2-3 sentence summary
+### Summary
+A9 walks the FIC growth-share gift mechanic at the moment of transfer through a 4-question framework: valuation under TCGA 1992 s.17 with hurdle + minority + marketability discounts (typically 1-5% of NAV); CGT with s.165 holdover denied for investment FICs per Schedule 7 (so CGT crystallises at gift, payable by founder); settlements legislation with s.624/s.629 minor-child attribution that doesn't bar the PET but does bar income-splitting until age 18; and the 7-year PET clock under IHTA 1984 s.3A from the date of gift (not FIC formation), with s.7(4) taper relief applying to the IHT rate (not chargeable value). 8-document at-moment-of-gift checklist makes the documentary discipline explicit. Boundary against C4 (direct-property gift), C7 (strategic IHT framing), and A8 (in-life income) addressed in dedicated closing section. Anti-templating against A6 / A7 / A8 by the 4-question-at-moment-of-gift structure.
