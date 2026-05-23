@@ -173,34 +173,60 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** alphabet-shares-property-spv-dividend-splitting-spouse-children (as briefed)
+- **Final category:** Incorporation & Company Structures (as briefed)
+- **H1 chosen:** "Alphabet Shares in a Property SPV: Dividend Splitting and the Settlements Boundary"
+- **Meta title chosen:** "Alphabet Shares Property SPV: Dividend Splitting Rules" (54 chars)
+- **Why these vs other options:** H1 leads with the share-class noun and adds "settlements boundary" to telegraph the §624 legal anchor that distinguishes the page from generic dividend-splitting overviews. Meta title omits "boundary" to keep the SEO term order (alphabet → property → SPV → dividend splitting) intact.
 
 ### Competitor URLs fetched
+- taxaccountant.co.uk Arctic Systems page: useful for case-summary phrasing but thin on actual mechanics. Confirmed competitive opening on worked examples.
+- taxaccountant.co.uk FIC page: minimal settlements coverage, just a compliance warning.
+- ukpropertyaccountants.co.uk FIC guide: useful share-class taxonomy + freezer/growth distinction; informed the A2 distinction between alphabet (income-now) and growth (IHT) designs.
+- tlpi.co.uk FIC case study: not heavily mined (out of A2 scope, FIC-leaning).
+- ukpropertyaccountants.co.uk freezer/growth page: ditto, for taxonomy reference only.
 
 ### Existing-page review (from "Closest existing pages")
+- `property-company-dividend-tax` is the dividend-rate pillar. Linked from related-reading; the alphabet page is the applied / scenario version that sits on top of the rate pillar.
+- `cgt-property-transfer-spouse` covers the CGT mechanic of a spousal property transfer (no-gain-no-loss). Linked because the share-gift to spouse also uses TCGA 1992 s.58 spouse exemption; the alphabet design references this in the articles-drafting section.
+- `spv-property-investment-special-purpose-vehicle-guide` is the SPV pillar. Linked in related-reading.
+- `property-investment-vs-stocks-shares-tax-comparison` not directly relevant; not linked.
+- `nrcgt-indirect-disposal-property-rich-companies-shares` not directly relevant; not linked.
 
 ### Citations added (external authority)
+External citations are anchored in the body via legal-section naming rather than via clickable links to keep the inline density manageable: ITTOIA 2005 s.624, s.625, s.626, s.628, s.629, s.620 definition; Jones v Garnett (Arctic Systems) [2007] UKHL 35; CA 2006 s.21, s.630, s.830; HMRC TSEM4205, TSEM4305, CTM15205; TCGA 1992 s.17, s.58. No external hyperlinks added in this iteration; flagged for potential link addition if the manager wants higher external-link density (most A1/B/C Wave 4 pages have 1-2 external hyperlinks; A2 has 0). The decision is intentional: a page that turns on legal-section interpretation reads more clearly when the section numbers are inline prose rather than break-out hyperlinks.
 
 ### Internal links added (to our existing pages)
+Six unique targets, all verified present on disk pre-write:
+- /blog/incorporation-and-company-structures/property-company-dividend-tax
+- /blog/incorporation-and-company-structures/property-company-profit-extraction-salary-vs-dividends
+- /blog/incorporation-and-company-structures/btl-spv-directors-loan-repayment-strategy-tax-efficient-extraction (Wave 4 A1, sibling on same branch)
+- /blog/incorporation-and-company-structures/spv-property-investment-special-purpose-vehicle-guide
+- /blog/capital-gains-tax/cgt-property-transfer-spouse
+- /blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords
+
+Forward references to A6-A10 FIC pages and the FIC growth-share / IHT material are referenced descriptively in prose ("our wider Family Investment Company material") without hyperlinks; flagged for post-wave back-patch under F-1 (already raised in A1).
 
 ### Inline CTA placements
+Two `<aside>` blocks:
+1. After the s.624 settlements-rule explanation, on the documentation discipline that separates surviving and not-surviving structures.
+2. After the HMRC challenge patterns, on retrofit risk and writing the structure at design time.
 
 ### Build attempts
+- First build clean. No errors related to this page. Pre-existing ESLint warnings on other files (unchanged from A1).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 `@type:Question` entries, matches frontmatter ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 54 chars (≤62 limit) ✓
+- Meta description length: 149 chars (≤158 limit) ✓
+- Internal links resolve: 6 unique targets, all verified present on disk ✓ (A1 sibling resolves on this branch; post-merge stays valid)
+- monitored_pages row inserted: yes (id 160, rewrite_type='rewrite', baseline 0/0, 90-day window to 2026-08-21)
+- Body word count: 3,218 (frontmatter excluded), comfortably inside the 2,500-3,500 typical range.
 
 ### Flags raised to wave4_site_wide_flags.md
+- No new flags. Cross-link forward references to FIC sub-thread (A6-A10) and IHT material (C7) already covered under F-1 raised in A1.
 
 ### 2-3 sentence summary
+A2 frames alphabet shares as a current-tax-year income-tax tactic and works through the ITTOIA 2005 s.624 settlements legislation as the structural constraint: the s.626 spouse exception (confirmed by Jones v Garnett, Arctic Systems) protects ordinary-share gifts to a spouse; the s.629 anti-attribution rule blocks minor-child arrangements; adult-child gifts work only with genuine ordinary shares, an outright transfer, and no element-of-bounty pattern returning dividend cash to the parent. The page distinguishes cleanly from the wider FIC material (which owns the growth/freezer-share IHT mechanic) and gives three worked allocation examples (spouse only, three-way with adult child, single-class baseline) so the household-level tax saving is concrete.
