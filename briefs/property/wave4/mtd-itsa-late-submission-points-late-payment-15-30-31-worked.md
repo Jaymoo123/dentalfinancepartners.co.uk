@@ -172,34 +172,61 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `mtd-itsa-late-submission-points-late-payment-15-30-31-worked` (no override).
+- **Final category:** `Making Tax Digital (MTD)` (no override).
+- **H1 chosen:** "MTD ITSA Penalties Worked Through: Late-Submission Points + the 15/30/31 Late-Payment Schedule".
+- **Meta title chosen:** "MTD ITSA Penalties Worked: 15/30/31 Late Payment 2026" (53 chars).
+- **Why these vs other options:** H1 leads on "worked through" to anchor the worked-example floor framing per brief; calls out both penalty tracks (points + late-payment) so a reader knows they get both. Meta title prioritises "MTD ITSA Penalties Worked" + the distinctive "15/30/31" day-trigger figure (which is the search-stem differentiator from the legacy schedule). Avoids any "complete guide" or "guide to" framing.
+- **HowTo schema candidate:** Possibly flagged in brief, but on reflection the page is reference-table-led (worked examples in tables), not step-by-step process. Did NOT flag HowTo; FAQPage + Article is the natural schema set.
 
 ### Competitor URLs fetched
+- gov.uk Spring Statement 2025 HTML — extracted the EXACT verbatim wording: "The new rates will be 3% of the tax outstanding where tax is overdue by 15 days, plus 3% where tax is overdue by 30 days, plus 10% per annum where tax is overdue by 31 days or more." Cited prominently in the late-payment section as block-quoted authority. This was the primary citation per brief.
+- (Three competitor URLs - rentalbux MTD-penalties, rentalbux non-compliance, ukpropertyaccountants first-year-waiver - skipped. Reason: §19.7 already gives the locked figures, Spring Statement 2025 HTML gives the verbatim authority. Competitor URLs would add commercial-bias colour but no new facts. The F-7/F-9 warning in the brief about stale figures across competitor pages reinforced not pulling them. ukpropertyaccountants first-year-waiver fetched in spirit via existing knowledge of HMRC's MTD-VAT precedent.)
 
 ### Existing-page review (from "Closest existing pages")
+- `mtd-itsa-overview-six-changes-residential-landlords` (Wave 3 B8, OVERVIEW FLOOR) — cross-linked twice as the rule-summary reference. B5 does NOT re-walk the rules.
+- `mtd-itsa-letter-from-hmrc-what-to-do-next` (Wave 3 B6, ACTION FLOOR) — cross-linked once as the action-list reference. B5 does NOT re-walk the action list.
+- `mtd-itsa-jointly-owned-property-threshold-split` (Wave 3 B3) — not cross-linked (joint-owners are referenced via B1 instead).
+- `mtd-itsa-qualifying-income-test-gross-vs-net` (Wave 3) — cross-linked once.
+- `mtd-itsa-accidental-landlords-do-i-need-to-file-digitally` — topically distant (covers who's in, not penalty mechanics). Not cross-linked.
+- **CRITICAL F-7/F-9 discipline:** Did NOT cite `mtd-rental-income-threshold-exemptions`, `mtd-quarterly-reporting-landlords-step-by-step-guide`, or `mtd-penalties-landlords-miss-deadline`. The brief flagged these as potentially carrying stale 31/46/91 + 2%/2%/4% figures. Cited house position §19.7 + Spring Statement 2025 HTML verbatim instead. Verified my own body: 31/46/91 slash-notation appears 0 times, 2%/2%/4% slash-notation appears 0 times; legacy figures appear only in the dedicated legacy-contrast section described as "Legacy non-MTD FA 2021 Sch 26 schedule" so the reader sees the contrast without conflating it with the MTD ITSA position.
 
 ### Citations added (external authority)
+- Spring Statement 2025 HTML (verbatim block quote in body) — primary authority.
+- FA 2021 Sch 26 referenced inline as the legacy statute that the contrast section names.
+- TMA 1970 s.86 referenced inline as the interest authority.
+- (House position §19.7 is the internal tie-breaker; the Spring Statement 2025 quote is the external cite that anchors the figures.)
 
 ### Internal links added (to our existing pages)
+- `/blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords` (Wave 3 B8) ×2 - the overview/rule-summary floor sibling.
+- `/blog/making-tax-digital-mtd/mtd-itsa-letter-from-hmrc-what-to-do-next` (Wave 3 B6) ×2 - the action-list floor sibling.
+- `/blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net` (Wave 3) ×1.
+- `/blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords` (Wave 1) ×1.
+- `/blog/making-tax-digital-mtd/mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse` (B1) ×1.
+- `/blog/making-tax-digital-mtd/mtd-itsa-agent-services-account-asa-authorisation-walkthrough` (B3) ×1.
+- 6 unique target files; all exist (4 on main + B1 + B3 on branch); URL category segments verified.
 
 ### Inline CTA placements
+- `<aside>` 1: after the £10,000 worked example - high-intent moment for landlord realising the cost of delay and needing time-to-pay guidance.
+- `<aside>` 2: after the first-year-waiver context section - high-intent for landlord facing first quarter deadline.
+- 2 asides total; under ≤3 limit.
 
 ### Build attempts
+- Single build attempt; passed clean. B5 rendered to `.next/server/app/blog/making-tax-digital-mtd/mtd-itsa-late-submission-points-late-payment-15-30-31-worked.html`.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 12 Question entries ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 53 (max 62) ✓
+- Meta description length: 143 (max 158) ✓
+- Internal links resolve: 6/6 unique target files exist ✓
+- monitored_pages row inserted: yes (rewrite_type='rewrite', 90-day window, notes "Wave 4 Session B net-new (MTD ITSA bucket B5)")
+- Body word count: 2,517 (just above 2,500 floor; the worked-example tables make the page count efficient).
+- Penalty-figure discipline: 31/46/91 + 2%/2%/4% slash notations: 0 occurrences in body. Legacy figures appear only in the explicit legacy-contrast section, prose form, explicitly labelled "Legacy non-MTD FA 2021 Sch 26 schedule".
 
 ### Flags raised to wave4_site_wide_flags.md
+- None raised. The §19.7 figures held through cleanly; the Spring Statement 2025 verbatim is the cite; the contrast section names legacy figures correctly without conflation.
 
 ### 2-3 sentence summary
+Worked-example floor for the MTD ITSA penalty regime, sibling to Wave 3 B6 (HMRC letter action) and Wave 3 B8 (six-changes overview). Three full late-payment worked examples (£2k / £10k / £30k at day milestones 14, 15, 30, 90, 180, 365), points-cycle worked through a four-missed-quarter scenario to the £200 trigger, 24-month rolling reset mechanic, explicit legacy FA 2021 Sch 26 contrast section showing the new MTD ITSA schedule is roughly double the legacy figure at every milestone. Cites Spring Statement 2025 verbatim. Penalty-figure discipline held throughout: no 31/46/91 or 2%/2%/4% slash-notation in body; legacy figures appear only in the dedicated contrast section.
