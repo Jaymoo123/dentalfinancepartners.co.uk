@@ -153,26 +153,64 @@ When you append a STATUS open question, spawn a Monitor task on the file. Keep w
 ## Per-page work-log (fill in as you go)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** civil-partnerships-joint-property-ownership-tax-treatment-form-17-equality (as briefed)
+- **Final category:** landlord-tax-essentials (as briefed)
+- **H1 chosen:** "Civil Partnerships and Jointly Owned Property: Form 17, CGT, IHT, and the Equality Rule"
+- **Meta title chosen:** "Civil Partnerships and Property Tax: Form 17 and Equality" (57 chars)
+- **Why these vs other options:** Lead the H1 with "Civil Partnerships" (primary query) plus "Jointly Owned Property" (anchor), then the four-tax cluster + "Equality Rule" (the framing differentiator) so the H1 advertises the equality framing rather than the Form 17 framing (C1 owns that). Meta-description leads on "identically to married spouses" because that is the user-intent answer competitor pages are weakest on (and the brief framing differentiator). Avoided "complete guide" framing because the page is a cohort-applied view, not a depth read on any one tax.
 
 ### Competitor URLs fetched
+- alexander-ene.co.uk/civil-partnership-tax.htm: fetched, returned only generic homepage content (no civil-partnership tax content found). URL_ROT pattern.
+- alexander-ene.co.uk/civil-partner-property-tax.htm: fetched, same URL_ROT outcome (generic homepage).
+- alexander-ene.co.uk/civil-partnership-property.htm: not separately fetched after first two confirmed the URL_ROT pattern across the alexander-ene set.
+- ukpropertyaccountants.co.uk/top-tax-saving-tips-for-jointly-owned-properties/: fetched. Treats civil partners alongside spouses throughout, confirms equality framing. Has the same 60-day direction ambiguity flagged in D-3 from C1 ("maximum of 60 days before the filing").
 
 ### Existing-page review (from "Closest existing pages")
+- C1 (same branch) read in full at write time. Forward-link from the "Form 17 for civil partners" section. C1 had committed earlier in the session (b8fcc81); the cross-link is to the published URL path under landlord-tax-essentials.
+- C3 (same branch) read in full at write time. Cross-link from the "Where this sits" section.
+- cgt-property-transfer-spouse: read at write time for the inter-spouse / civil-partner CGT cross-link voice; my page does not duplicate the s.58 walk-through, just summarises and forward-links.
+- iht-spouse-exemption-second-death-property-portfolio-window-mechanics (Wave 4 C2, on main): read at write time. Cross-link from the IHT s.18 section to the second-death window depth.
 
 ### Citations added (external authority)
+- Civil Partnership Act 2004: https://www.legislation.gov.uk/ukpga/2004/33/contents (referenced inline in body)
+- ITA 2007 s.836: https://www.legislation.gov.uk/ukpga/2007/3/section/836
+- ITA 2007 s.837: https://www.legislation.gov.uk/ukpga/2007/3/section/837
+- TCGA 1992 s.58: https://www.legislation.gov.uk/ukpga/1992/12/section/58
+- IHTA 1984 s.18: https://www.legislation.gov.uk/ukpga/1984/51/section/18
+- Finance (No. 2) Act 2023 s.41 (referenced for the 6 April 2023 in-force date of the s.58(1A)-(1D) extension; verified at write time per §16.35 against legislation.gov.uk)
+- Marriage (Same Sex Couples) Act 2013 (referenced for the 29 March 2014 first-marriage date in England and Wales)
+- Civil Partnership (Opposite-sex Couples) Regulations 2019 (referenced for the 31 December 2019 opposite-sex CP commencement)
 
 ### Internal links added (to our existing pages)
+- /blog/landlord-tax-essentials/form-17-declaration-beneficial-interest-property-mechanics-filing-revocation (C1, same branch)
+- /blog/landlord-tax-essentials/declaration-of-trust-property-beneficial-ownership-mechanics-evidence-form-17 (C3, same branch)
+- /blog/capital-gains-tax/cgt-property-transfer-spouse (existing on main)
+- /blog/landlord-tax-essentials/iht-spouse-exemption-second-death-property-portfolio-window-mechanics (Wave 4 C2, on main)
+- /blog/making-tax-digital-mtd/mtd-itsa-jointly-owned-property-threshold-split (Wave 3 B3, on main)
 
 ### Inline CTA placements
+- After "Form 17 for civil partners" (after the Whitman / Reyes worked example; high-intent for civil-partner couples considering Form 17)
+- After "Dissolution mechanics: parallel to divorce" (high-intent for dissolving civil-partner couples thinking about the s.58 timing)
+- After "Overseas civil partnerships and recognition" (high-intent for overseas-CP couples planning UK property transactions)
+- Total asides: 3 (the upper end of the 1-3 guideline; justified because the page has three distinct conversion moments)
 
 ### Build attempts
+- Attempt 1: PASS. Page generated; 446 static pages built (one more than C4's build). No build warnings on this page.
 
 ### Verification
+- em-dash count in body: 0
+- en-dash count in body: 0
+- Tailwind utility classes in markdown: 0
+- metaTitle length: 57 (≤62)
+- metaDescription length: 151 (≤158)
+- FAQ count: 14 (within 10-14)
+- Body word count: 3,146 (within 2,500-3,500)
+- Internal links: 5 of 5 resolve (all confirmed against `Property/web/content/blog/*.md`)
+- External authority links: 6 (within 5-8)
+- monitored_pages registered: id 199 (90-day window from 2026-05-23)
 
 ### Flags raised to wave5_site_wide_flags.md
+- F-5 (EXISTING_PAGE_STALE / DISCOVERY): three alexander-ene.co.uk URLs in this brief's competitor set (civil-partnership-tax.htm, civil-partner-property-tax.htm, civil-partnership-property.htm) all serve generic homepage content rather than the civil-partnership tax articles described in the brief. URL_ROT pattern parallels D-1 (Farnell Clarke) + D-2 (Deloitte taxscape) from C1. Forward note: drop alexander-ene.co.uk from civil-partner competitor seed lists. (Logged in discovery log as D-5.)
 
 ### 2-3 sentence summary
+C5 is the civil-partner-cohort applied page covering the equality-of-treatment rule across the four taxes that hit jointly owned property (income tax, CGT, IHT, SDLT). Threads the persona edge cases: dissolution + the FA (No. 2) 2023 three-year s.58 window from 6 April 2023, overseas civil partnership recognition under CPA 2004 Sch 20, the 2014 same-sex marriage option (and the 2019 opposite-sex civil partnership option), and the narrow administrative differences that survive in family-law documents. Forward-links to C1 for the Form 17 mechanic depth read; does not duplicate the form walk-through.
