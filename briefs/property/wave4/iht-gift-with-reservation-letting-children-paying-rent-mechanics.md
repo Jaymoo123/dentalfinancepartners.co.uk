@@ -170,34 +170,61 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** iht-gift-with-reservation-letting-children-paying-rent-mechanics (manager-suggested; no override)
+- **Final category:** landlord-tax-essentials (manager-suggested; no override)
+- **H1 chosen:** "How Gifts of Let Property Trip the Reservation-of-Benefit Rule"
+- **Meta title chosen:** "GROB on Gifted Let Property: The Cash-Flow Test" (47 chars)
+- **Why these vs other options:** H1 leads with the action verb (trip) and the differentiator (let property, not family home); meta title leads with the practitioner term (GROB) and ends on the differentiator (cash-flow test) for SERP scannability against family-home-led competitor titles. metaDescription anchors the three triggers (rent, mortgage, manage) and names the statute.
 
 ### Competitor URLs fetched
+- Bolt Burdon (boltburdon.co.uk/blogs/a-t-p-avoid-the-pitfall-i-want-to-transfer-my-house-to-my-children-to-avoid-inheritance-tax): brief flagged CDN bot protection at TCP layer. Not re-attempted in session. Page written from brief differentiator + Wave 2 A2 + house positions §15.3 / §22 without competitor outline borrow. The "trap-then-mechanic" shape the brief recommended is replicated through the three-trigger frame (cash flow / mortgage / management).
+- taxaccountant.co.uk, ukpropertyaccountants.co.uk, mytaxaccountant.co.uk: not fetched in session (Wave 2 A2 read in full already supplies the comparator outline; the differentiator is well-defined from brief + house positions).
 
 ### Existing-page review (from "Closest existing pages")
+- Wave 2 A2 `iht-gifts-with-reservation-of-benefit-property` (Jaccard 0.12) read in full. Statute walkthrough (s.102(1)(a), s.102(1)(b), s.102(3), s.102(4), s.102(5), s.102A-C) held there; C3 defers via two explicit hyperlinks (intro and close) and does NOT re-walk the statute subsection by subsection. Family-home worked example (£600k Patel Stockport) is in A2; C3's three personas (Khan Reading £290k single flat, O'Brien Coventry £420k twin terraces with joint mortgage, Lewis Cardiff £980k five-flat portfolio) are deliberately distinct in geography, asset class, value, and trigger.
+- `business-property-relief-rental-property-iht` (Jaccard 0.07): one hyperlink in the FIC-alternative section.
+- `iht-lifetime-gifts-7-year-rule-property-taper`: one hyperlink in the clean-direct-gift section as the sibling page on PET mechanics + CGT cost.
+- `iht-property-investors-decision-framework-2026-onwards`: one hyperlink at close as the planning-lens companion.
+- `nrl-scheme-letting-agents-quarterly-returns-mechanics` (Jaccard 0.12): topic-adjacent but distinct (non-resident landlord scheme is a withholding-tax mechanic, not an IHT mechanic). No cross-link needed.
 
 ### Citations added (external authority)
+- s.102 Finance Act 1986 (statutory hook): https://www.legislation.gov.uk/ukpga/1986/41/section/102 (in line with Wave 2 A2 + house positions §15.3).
+- Sch 20 FA 1986 (paragraph 6 co-ownership carve-out): https://www.legislation.gov.uk/ukpga/1986/41/schedule/20.
+- Sch 15 FA 2004 (POAT): https://www.legislation.gov.uk/ukpga/2004/12/schedule/15.
+- IHT500 election: https://www.gov.uk/government/publications/inheritance-tax-election-for-inheritance-tax-to-apply-to-asset-previously-owned-iht500.
+- HMRC IHTM14333 onwards (exclusion of donor, rent payment): https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm14333.
+- TCGA 1992 s.17 (deemed disposal at MV): https://www.legislation.gov.uk/ukpga/1992/12/section/17.
+- IHTA 1984 s.7(4) (taper relief): https://www.legislation.gov.uk/ukpga/1984/51/section/7.
+- HMRC SDLTM04042 onwards (assumption of mortgage as SDLT consideration): named in the refinance-the-mortgage FAQ; not hyperlinked (housekeeping reference).
+
+Citations named in body text in s.X form (s.102 FA 1986, s.102(3), s.102(1)(b), s.17 TCGA 1992, s.7(4) IHTA 1984), in line with Wave 2 / Wave 3 / Wave 4 voice convention.
 
 ### Internal links added (to our existing pages)
+- `/blog/landlord-tax-essentials/iht-gifts-with-reservation-of-benefit-property` (Wave 2 A2 statute walkthrough): twice (intro paragraph + closing paragraph).
+- `/blog/landlord-tax-essentials/iht-lifetime-gifts-7-year-rule-property-taper` (7-year clock companion): once (clean-direct-gift section).
+- `/blog/landlord-tax-essentials/business-property-relief-rental-property-iht` (BPR pillar): once (FIC alternative section).
+- `/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards` (planning-lens): once (closing paragraph).
+
+All four targets verified existing in `Property/web/content/blog/` and all four under category `Landlord Tax Essentials`. Wave 4 sibling slugs C4 (7-year-clock direct gift) and C7 (FIC value-freeze) referenced in body and editorial note as forthcoming, NOT hyperlinked (wave-close back-patch will convert to hyperlinks once those pages ship).
 
 ### Inline CTA placements
+- Two `<aside>` blocks. First after worked example one (the share-of-rent trip, Khan-estate persona). Second after worked example three (the management-control trigger, Lewis-estate persona). No aside on the opener. No aside inside a worked example. Asides written with no class attributes; global `.prose-blog aside` CSS handles the emerald-on-emerald-50 styling.
 
 ### Build attempts
+- Pass 1 (clean): `cd Property/web && npm run build` ran clean. Only pre-existing ESLint warnings (`_categories` unused-var in a different file, `<img>` lint in a different file). New page route `/blog/landlord-tax-essentials/iht-gift-with-reservation-letting-children-paying-rent-mechanics` listed in the build manifest. Built HTML file present at `.next/server/app/blog/landlord-tax-essentials/iht-gift-with-reservation-letting-children-paying-rent-mechanics.html`.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: ✅ 13/13 (FAQPage block parsed from JSON-LD ld+json script; 13 Question objects).
+- Em-dashes in markdown: ✅ 0.
+- Tailwind classes in markdown: ✅ 0 (asides class-free; no utility classes anywhere in body).
+- Meta title length: ✅ 47 chars (max 62).
+- Meta description length: ✅ 153 chars (max 158).
+- Internal links resolve: ✅ all 4 targets exist + same category `landlord-tax-essentials`.
+- monitored_pages row inserted: ✅ id 166, monitor_until 2026-08-21.
+- Body word count: 3,386 (competitor-median range 2,500-3,500; deliberately deep on documentation discipline + three personas; competitive with legal-firm GROB pages without padding).
 
 ### Flags raised to wave4_site_wide_flags.md
+- None this page. (Wave 4 C7 / C4 forthcoming-sibling hyperlinks are a wave-close convert-to-hyperlink job, NOT a site-wide flag.)
 
 ### 2-3 sentence summary
+The let-property GROB variant. Cash-flow test (three triggers: continuing rent, mortgage liability, management control) is the differentiator from Wave 2 A2 (which holds the family-home variant + statute walkthrough). Three personas, narrow Sch 20 para 6 carve-out applied to let property, POAT back-stop + IHT500 election, clean-gift route (cross-link C4) + FIC growth-share alternative (cross-link C7), and a six-item documentation discipline that survives an HMRC enquiry. Build clean, six checks pass, 13 FAQs, 3,386 body words.
