@@ -152,7 +152,77 @@ When you append a STATUS open question, spawn a Monitor task. Keep working while
 
 ---
 
-## Per-page work-log (fill in as you go)
+## Per-page work-log
+
+### Decisions
+- **Final slug:** retirement-planning-spousal-rental-income-shift-form-17-marginal-rate-restructure (as briefed)
+- **Final category:** portfolio-management (as briefed)
+- **H1 chosen:** "Retirement Planning for Landlord Couples: The Form 17 Income Shift in Practice"
+- **Meta title chosen:** "Form 17 Income Shift on Spouse Retirement: Worked Mechanics" (59 chars)
+- **Why these vs other options:** H1 leads with retirement-planning persona + the practical framing ("in practice"). MetaTitle compresses to the search-query language ("Form 17 income shift" + "spouse retirement") with "worked mechanics" signalling the worked-example density.
+
+### Competitor URLs fetched / not fetched
+- alexander-ene.co.uk retirement / spouse-transfer URLs: NOT fetched per F-5 URL_ROT pattern from C5.
+- ukpropertyaccountants.co.uk content: previously absorbed in earlier C-bucket pages.
+
+### Existing-page review
+- C4 (same branch): re-read; C10 forward-links to C4 as the general decision-framework page.
+- C1 (same branch): re-read; C10 forward-links as the Form 17 mechanic depth.
+- C3 (same branch): re-read; C10 forward-links as the deed mechanic depth.
+- Wave 4 A8 (fic-property-retirement-decumulation-mechanics-uk, on main): re-read; C10 cross-links as the alternative-route FIC corporate page.
+- Wave 4 C10 (pension-decumulation-property-portfolio-iht-2027-cohort-sequence, on main): re-read; cross-link as adjacent pension-decumulation cohort.
+- MTD jointly-owned property threshold + quarterly filing pages: re-read; C10 forward-links from the MTD-per-share trap section.
+
+### Citations added
+- ITA 2007 s.836 + s.837: legislation.gov.uk (already in C1/C5 set)
+- TCGA 1992 s.58 + FA (No. 2) 2023 extension: previously verified in C5
+- Law of Property Act 1925 s.36 + s.53: previously verified
+- HMRC PIM1030 + TSEM9810 series: previously verified
+- HMRC Form 17 publication: previously verified
+
+### Internal links added
+- /blog/landlord-tax-essentials/form-17-declaration-beneficial-interest-property-mechanics-filing-revocation (C1)
+- /blog/landlord-tax-essentials/declaration-of-trust-property-beneficial-ownership-mechanics-evidence-form-17 (C3)
+- /blog/section-24-and-tax-relief/unequal-rental-income-split-spouses-tax-planning-form-17-vs-default-50-50-decision (C4; note non-default category landlord-tax-essentials but C4 lives at section-24-and-tax-relief per its canonical)
+- /blog/incorporation-and-company-structures/fic-property-retirement-decumulation-mechanics-uk (Wave 4 A8)
+- /blog/making-tax-digital-mtd/mtd-itsa-jointly-owned-property-threshold-split
+- /blog/making-tax-digital-mtd/mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse
+- /blog/landlord-tax-essentials/pension-decumulation-property-portfolio-iht-2027-cohort-sequence (Wave 4 C10)
+
+### Inline CTA placements
+- After the Tahir / Hopkins 6-year worked example (high-intent following the cumulative-saving figure)
+- After the Section 24 finance cost correspondence section (high-intent following the multi-year mechanic discussion)
+- Total asides: 2
+
+### Verification
+- em-dash count: 0
+- en-dash count: 0
+- Tailwind class= in body: 0
+- metaTitle: 59 / 62
+- metaDescription: 153 / 158
+- FAQs: 14 / 10-14
+- Body words: 2,693 / 2,500-3,500
+- External authority links: 6 (within 5-8)
+- Internal links: 7 of 7 resolve (all confirmed)
+- monitored_pages registered: id 207
+
+### Per-write verification (§16.35)
+- Personal allowance £12,570 + basic-rate band to £50,270 + higher-rate threshold £50,271 for 2026/27: verified against gov.uk/income-tax-rates at write time on 2026-05-23.
+- MTD ITSA threshold £50,000 (April 2026) + £30,000 (April 2027) + £20,000 (April 2028): verified per house_positions §3 + §19.1; consistent with existing MTD-threshold-split page on main.
+- TCGA 1992 s.58 no-gain-no-loss spouse transfer: previously verified in C5.
+- ITA 2007 s.837(3) 60-day window: previously verified in C1.
+
+### Persona naming
+- Used "Tahir + Hopkins" as fresh surnames. Tahir is a higher-rate consultant; Hopkins an NHS clinician retiring at 60. Pension £18k DB. Within Wave 5 anti-templating discipline (Khan / Patel / Whitman / Reyes / Mistry / Brennan / Holloway / Hartley / Singh / Donaldson / Asare / Edwards-Carter / Iqbal all used previously in C-bucket).
+
+### Build attempts
+- Attempt 1: PASS. 450 static pages built. No build warnings.
+
+### Flags raised
+- None.
+
+### 2-3 sentence summary
+C10 is the retirement-stage applied page on the personal-ownership Form 17 income-shift route. Threads the three-step mechanic (deed → Form 17 → routing receipts) + s.58 CGT-free transfer + Section 24 correspondence + MTD threshold per-share interaction. Tahir / Hopkins worked example shows a 6-year retirement-transition window with ~£37,500 cumulative income-tax saving. Sibling cross-link to Wave 4 A8 (FIC corporate-route retirement page) as the alternative vehicle for larger portfolios.
 
 ### Decisions
 - **Final slug:**
