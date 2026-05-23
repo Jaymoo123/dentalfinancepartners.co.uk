@@ -171,34 +171,61 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `mtd-itsa-choosing-software-by-landlord-scenario-decision-tree` (no override).
+- **Final category:** `Making Tax Digital (MTD)` (no override).
+- **H1 chosen:** "Choosing MTD ITSA Software as a Landlord: A Scenario-Led Framework".
+- **Meta title chosen:** "MTD Software for Landlords: Scenario-Led Decision Tree" (54 chars).
+- **Why these vs other options:** H1 leads on "scenario-led framework" to anchor the anti-listicle framing in the page title itself. Meta title prioritises "MTD software for landlords" (the query) + "decision tree" (the differentiator from product-listicle competitors). Avoids "best of", "top picks", "ranked", "compared".
 
 ### Competitor URLs fetched
+- ukpropertyaccountants.co.uk experts-pick-5-MTD-software → extracted 8 implicit evaluation criteria (HMRC recognition, workflow compatibility, cost structure, property-specific functionality, data security, feature breadth, accessibility, mobile). Used the criteria layer; ignored product picks.
+- ukpropertyaccountants.co.uk best-MTD-for-landlords-2025 → extracted implicit decision questions (timing eligibility, software suitability, ownership structure, compliance readiness). Reframed as decision-tree branches.
+- rentalbux.com FreeAgent-vs-Sage-free → strongest material: 5-criterion framework for "what 'free' actually means" (banking dependency, operational caps, feature scope, permanence/withdrawal risk, upgrade-path costs). Used directly in the Pricing-Traps section.
+- (rentalbux.com QuickBooks-vs-FreeAgent and the 3rd ukpropertyaccountants listicle skipped; the framework material from the first 3 fetches was sufficient and pulling more risked drifting into product-recommendation territory.)
 
 ### Existing-page review (from "Closest existing pages")
+- `best-mtd-software-landlords-2026` — product listicle. Explicitly cross-linked from intro + closing as the product-survey companion page for users who want the named picks.
+- `landlord-accounting-software-uk-best-options-2026` — broader product-listicle covering portfolio-management products. Cross-linked as the wider product landscape.
+- `mtd-software-landlords-free-vs-paid-options-compared` — free-vs-paid product comparison. Cross-linked as the free-tier sub-market page.
+- `mtd-itsa-accidental-landlords-do-i-need-to-file-digitally` (Jaccard top) — topically distant (it covers WHO must file, not WHICH product); not cross-linked.
+- `how-to-register-mtd-landlord-step-by-step-guide` — covers the registration process; not cross-linked (different sub-step of the MTD onboarding journey).
 
 ### Citations added (external authority)
+- HMRC compatible-software register (https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax) — the authoritative product universe, cited in intro + body.
+- (House position §19.14 referenced inline as the digital-link rule the bridging route defers to.)
+- Deliberately light on external citations beyond the HMRC register; the page is a framework, not an authority-walk, so loading more citations would dilute the framing.
 
 ### Internal links added (to our existing pages)
+- `/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026` ×2
+- `/blog/making-tax-digital-mtd/landlord-accounting-software-uk-best-options-2026` ×2
+- `/blog/making-tax-digital-mtd/mtd-software-landlords-free-vs-paid-options-compared` ×2
+- `/blog/making-tax-digital-mtd/mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse` (B1) ×2
+- `/blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords` (Wave 3 B8) ×1
+- `/blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords` ×1
+- `/blog/making-tax-digital-mtd/mtd-record-keeping-landlords-digital-requirements` ×1
+- All 7 targets exist; URL category segments verified against destination frontmatter `category` field (B1 confirmed on branch + 6 existing on main).
 
 ### Inline CTA placements
+- `<aside>` 1: after the spreadsheet-vs-switch decision section (Question 3) — high-intent moment for spreadsheet-route landlords needing scoping help.
+- `<aside>` 2: after the accountant-led section (Question 4) — high-intent for landlords who would rather defer to accountant judgement.
+- `<aside>` 3: after the where-to-go-from-here section — high-intent for landlords who'd rather not work the framework themselves.
+- 3 asides total; within the ≤3 limit. None inside a worked example or comparison table; none at page opening.
 
 ### Build attempts
+- Attempt 1 (with node_modules already installed from B1): `cd Property/web && npm run build` passed clean. B2 page rendered to `.next/server/app/blog/making-tax-digital-mtd/mtd-itsa-choosing-software-by-landlord-scenario-decision-tree.html`.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 12 Question entries in 1 FAQPage block = frontmatter 12 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 54 (max 62) ✓
+- Meta description length: 155 (max 158) ✓
+- Internal links resolve: 7/7 target files exist; URL category segments verified ✓
+- monitored_pages row inserted: yes (rewrite_type='rewrite', 90-day window, notes "Wave 4 Session B net-new (MTD ITSA bucket B2)")
+- Body word count: 2,626 (mid 2,500-3,500 range; framework-page intent does not require padding past natural length)
 
 ### Flags raised to wave4_site_wide_flags.md
+- None raised. The product-listicle existing pages (best-mtd-software-landlords-2026 and landlord-accounting-software-uk-best-options-2026) are framed as legitimate companions, NOT as competing content; the anti-templating boundary holds via explicit "decision framework vs product survey" framing in this page's intro.
 
 ### 2-3 sentence summary
+Scenario-led decision framework for MTD ITSA software, deliberately NOT a product listicle. Five questions (portfolio shape, who else is on the filings, workflow preference, who files, pricing-trap awareness) output the software class fit; six evaluation criteria pick the product within HMRC's compatible-software register. Cross-links to the three existing product-listicle pages as companions (preserving the user journey for landlords who want named picks) rather than competing with them.
