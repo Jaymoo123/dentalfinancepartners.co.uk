@@ -170,34 +170,63 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `mtd-itsa-letting-agent-managed-portfolio-who-files-quarterly` (no override)
+- **Final category:** `Making Tax Digital (MTD)` (no override; URL segment `making-tax-digital-mtd`)
+- **H1 chosen:** "Letting Agents, Managed Portfolios and MTD ITSA: Who Actually Files the Quarterly Updates"
+- **Meta title chosen:** "MTD ITSA + Letting Agent: Who Files Your Quarterly Updates" (58 chars)
+- **Why these vs other options:** Lead with the misconception this page exists to correct (who files); H1 + meta both name letting-agent + MTD-ITSA + filing in the first six words. Avoided pattern-matching B1's "Once both joint owners..." opening or B3's "From 6 April 2026...accountant..." opening. Title leads with the misconception, not with a software / process angle, because the page exists to answer that one question first.
 
 ### Competitor URLs fetched
+- ukpropertyaccountants.co.uk "do I need MTD if I use a letting agent" -> outline (5 H2s), £18k/£60k/Sophie+Alex personas (deliberately not used; need different figures), explicit "using a letting agent does not remove your obligation", gross-vs-net trap warning. Strongest sibling; B6 reuses the framing but goes deeper on the line-by-line statement mapping competitor stops short of.
+- fhpaccounting.co.uk "managing-agent-handovers" -> off-topic (corporate managing-agent transition, not letting-agent + landlord); useful only for FAQ phrasing on the "data quality coming out of the agent statement" angle.
+- rentalbux.com guides/recording-expenses -> HMRC-approved category list (8 lines) used as cross-check for my SA105 box-27/box-25/box-29 mapping; no useful worked numerics.
+- rentalbux.com partners/letting-agents -> commercial vendor page; confirmed landlord-is-filer position, useful only for FAQ phrasing on the referral-commission tilt some letting-agent integrations carry.
+- gov.uk PIM4702 (intended) -> WebFetch returned overseas-property fragment; PIM4702 expense detail not surfaced. Did not rely on. House position §19.13 stands as the internal authority.
 
 ### Existing-page review (from "Closest existing pages")
+- `mtd-quarterly-reporting-landlords-step-by-step-guide` (Jaccard 0.18) — F-7/F-9 stale-figures page. Did NOT cite as authority. Did cross-link nowhere on B6 to avoid amplifying stale figures.
+- `mtd-itsa-accidental-landlords-do-i-need-to-file-digitally` (0.13) — adjacent persona page; not cross-linked from B6 (different cohort, not the letting-agent landlord scope).
+- `mtd-itsa-jointly-owned-property-threshold-split` (0.13, Wave 3 B3) — joint-owner threshold mechanic; referenced indirectly via cross-link to Wave 4 B1 (which already cross-links to Wave 3 B3).
+- `mtd-itsa-letter-from-hmrc-what-to-do-next` (0.13) — adjacent topic; not cross-linked.
+- `mtd-itsa-overview-six-changes-residential-landlords` (0.13) — bucket pillar; cross-linked from closing section as the starting-point reference.
+- Additional semantic neighbours (not Jaccard top-5) cross-linked: Wave 4 B1 joint-owner quarterly filing mechanics (joint-owner letting-agent variant); Wave 4 B3 ASA walkthrough (accountant-via-ASA layer); existing `mtd-itsa-qualifying-income-test-gross-vs-net` (gross threshold test, key for B6's gross-vs-net trap section); existing `nrl-scheme-letting-agents-quarterly-returns-mechanics` (NRL withholding interaction).
 
 ### Citations added (external authority)
+- gov.uk MTD ITSA "use the service" guidance (implicit context; named in editorialNote, not body link to avoid keyword-stuffing)
+- HMRC compatible-software list (referenced in body)
+- HMRC Property Income Manual SA105 expense-categorisation framework (referenced in body)
+- House position §19.13 (Wave 4 letting-agent extension, internal tie-breaker) — named in body + editorialNote
+- House position §19.2 (gross-income threshold test) — named in body (gross-vs-net trap section)
 
 ### Internal links added (to our existing pages)
+- `/blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords` ×1 (closing section as bucket pillar)
+- `/blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net` ×1 (closing section, gross-test cross-reference)
+- `/blog/making-tax-digital-mtd/mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse` (Wave 4 B1) ×2 (joint-owner section + closing)
+- `/blog/making-tax-digital-mtd/mtd-itsa-agent-services-account-asa-authorisation-walkthrough` (Wave 4 B3) ×2 (accountant-via-ASA section + closing)
+- `/blog/non-resident-landlord-tax/nrl-scheme-letting-agents-quarterly-returns-mechanics` ×2 (NRL FAQ + closing)
+- All 5 target files exist; URL category segments verified manually against destination frontmatter `category` field (MTD pages map to `making-tax-digital-mtd`, NRL page maps to `non-resident-landlord-tax`).
 
 ### Inline CTA placements
+- `<aside>` 1: after the gross-vs-net trap explanation (high-intent moment, landlord realising the agent's net-paid line is not their MTD income figure).
+- `<aside>` 2: after the multi-agent portfolio section (high-intent, multi-agent landlords face the heaviest admin and are highest-intent for accountant engagement).
+- `<aside>` 3: after the pre-April-2026 setup checklist (high-intent, landlord at decision point on readiness review).
+- 3 asides total; within the brief's ≤3 limit. None inside worked examples, none at page opening.
 
 ### Build attempts
+- Attempt 1: `cd Property/web && npm run build` from worktree root — passed clean; page rendered to `.next/server/app/blog/making-tax-digital-mtd/mtd-itsa-letting-agent-managed-portfolio-who-files-quarterly.html` (135,701 bytes).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 12 Question entries in 1 FAQPage block = frontmatter 12 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 58 (max 62) ✓
+- Meta description length: 150 (max 158) ✓
+- Internal links resolve: 5/5 target files exist + URL category segments match destination frontmatter `category` field ✓
+- monitored_pages row inserted: yes (id 171, rewrite_type='rewrite', site_key='property', 90-day window 2026-05-23 → 2026-08-21)
+- Body word count: 2,577 (within 2,500-3,500 framing-differentiator-led range)
 
 ### Flags raised to wave4_site_wide_flags.md
+- None raised. The PIM4702 WebFetch returned overseas-property content rather than the letting-agent-fees detail expected from the URL; logged as a discovery item for future authority-link curation (PIM4702 may not be the right manual reference for letting-agent fees specifically; PIM2068 or PIM1900s range may be the better citation). Not raised as a site-wide flag because the body does not rely on PIM4702 as an authority.
 
 ### 2-3 sentence summary
+Net-new operational-mechanics page for letting-agent-managed-portfolio landlords entering MTD ITSA from 6 April 2026. Walks the operational triangle (agent collects rent / landlord owns the MTD obligation / accountant via ASA where engaged), maps a typical letting-agent monthly statement line by line into MTD quarterly update categories with a Singh-Reading worked example (different figures from competitor Emma/John/Sophie+Alex personas), works the gross-vs-net categorisation trap with explicit threshold-test impact, and covers multi-property single-agent, multi-agent, joint-owner, year-end reconciliation, NRL interaction, and agent-failure variants. Anti-templating boundary held: did not re-walk Wave 4 B1's joint-owner quarterly cycle, Wave 4 B3's ASA walkthrough, or the existing NRL letting-agents page; deferred to those siblings via explicit cross-links.
