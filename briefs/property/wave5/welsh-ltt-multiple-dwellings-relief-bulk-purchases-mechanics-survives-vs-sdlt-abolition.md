@@ -160,38 +160,70 @@ Standard. Persistent false; timeout 1 hour; do NOT block.
 ## Per-page work-log (fill in as you go)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition` (no override)
+- **Final category:** `incorporation-and-company-structures` (no override; matches portfolio-acquisition placement)
+- **H1 chosen:** "Welsh LTT Multiple Dwellings Relief: Mechanics, the 2025 Carve-Out and the 2026 Minimum-Rate Floor"
+- **Meta title chosen:** "Welsh LTT MDR: Mechanics, 2025 Carve-Out and 2026 3% Floor" (58 chars)
+- **Why these vs other options:** Lead with the live-relief-with-modifications framing (positive Welsh-specific). Avoid "Welsh equivalent of SDLT MDR" or "MDR survives in Wales" mirror-framing.
 
 ### Competitor URLs fetched
+- gov.wales/multiple-dwellings-relief-land-transaction-tax-overview: DEAD (HTTP 404 at write time per §16.31). Listed as authority in brief; replaced by deeper reading of impact assessment + written statement.
+- gov.wales/multiple-dwellings-relief-purchases-residential-property-technical-guidance: DEAD (HTTP 404). Same handling.
+- gov.wales/written-statement-amendment-land-transaction-tax-multiple-dwellings-relief: LIVE. Confirmed 1% to 3% floor change announcement 20 January 2026 + statutory basis (2026 Regulations).
+- gov.wales 2026 SI integrated impact assessment: LIVE. Confirmed change mechanic, statutory basis (LTTA 2017 Sch 13 + s.30(6)(b)), anti-forestalling rules; commencement date NOT specified in the impact assessment.
+- ukpropertyaccountants.co.uk/ltt-multiple-dwellings-relief: DEAD (HTTP 404). Brief seed URL no longer live; §16.31 catch.
+- taxaccountant.co.uk/multiple-dwellings-relief-wales: DEAD (HTTP 404). Same handling.
+- Searched legislation.gov.uk Welsh SI 2025: no LTT MDR modification SI in the listing visible from the index page. Wave 5 §23.10 drafter hedge accurate: SI commencement cites not yet on legislation.gov.uk at write time.
 
 ### Existing-page review
+- The brief-listed SDLT MDR abolition page slug (`sdlt-multiple-dwellings-relief-abolition-impact-bulk-buyers-2024-2025`) does NOT exist on site. Closest available cross-link is `sdlt-buy-to-let-rates-surcharge-guide-2025` (covers the 1 June 2024 MDR abolition in context).
+- Used `sdlt-six-dwellings-non-residential-election` for the cross-link contrast (Wales has no LTT equivalent).
+- Used `incorporating-property-portfolio-uk-2026` for portfolio-incorporation strategic context.
+- Used `multi-property-landlord-tax-planning-strategies-5-plus-properties` for portfolio strategic context.
+- B1 + B2 siblings on the B branch: referenced as rate-table sources.
 
 ### Citations added (external authority)
+- LTTA 2017 Sch 13 paragraphs 5 to 9 (MDR mechanic).
+- LTTA 2017 s.30(6)(b) (rate-setting authority for the relief modifications).
+- LTTA 2017 Schs 7 (partnership relief), 16 (group relief), 19 (charities relief), Sch 2 Part 4 (sub-sale relief).
+- Land Transaction Tax (Modification of Multiple Dwellings Relief) (Wales) Regulations 2025 (7 February 2025 carve-out).
+- Land Transaction Tax (Modification of Relief for Acquisitions Involving Multiple Dwellings) (Wales) Regulations 2026 (1% to 3% floor uplift).
+- Welsh Written Statement 20 January 2026 (announcement).
+- Welsh Government 2026 SI integrated impact assessment (worked example + anti-forestalling).
+- Finance (No.2) Act 2024 (SDLT MDR abolition contrast).
+- FA 2003 s.116(7) (six-dwellings contrast); s.48A (cross-border apportionment).
 
 ### Internal links added
+- `/blog/landlord-tax-essentials/sdlt-buy-to-let-rates-surcharge-guide-2025` (intro; SDLT-abolition contrast context).
+- `/blog/landlord-tax-essentials/sdlt-six-dwellings-non-residential-election` (intro; alternative-route contrast).
+- `/blog/incorporation-and-company-structures/incorporating-property-portfolio-uk-2026` (closing block).
+- `/blog/portfolio-management/multi-property-landlord-tax-planning-strategies-5-plus-properties` (closing block).
 
 ### Inline CTA placements
+- Aside 1: after the 2025 subsidiary-dwelling carve-out section.
+- Aside 2: after the SDLT-abolition contrast section (cross-border portfolio angle).
+- 2 asides total (within 1-3 cap).
 
 ### Build attempts
+- First build: PASS but meta description 160 (exceeded 158) + body words 2,451 (under 2,800 floor).
+- After trim meta description by 7 chars + add 491 words via "Common mistakes" section: meta description 153; body words 2,942; build PASS (444 pages).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 = 14 ✅
+- Em-dashes in markdown: 0 ✅
+- Tailwind classes in markdown: 0 ✅
+- Meta title length: 58 chars ≤62 ✅
+- Meta description length: 153 chars ≤158 ✅
+- Internal links resolve: all 4 unique targets exist ✅
+- monitored_pages row inserted: id 195 (90-day window) ✅
+- Body word count: 2,942 (within 2,800-3,500 target) ✅
 
 ### Verify-at-write hedge resolution
-- 2026 SI number found on legislation.gov.uk at write time? (Y/N + SI number if Y)
-- Citation source actually used in body for the 3% floor cite:
+- 2026 SI number found on legislation.gov.uk at write time? **NO.** The §23.10 drafter hedge was correct: the Land Transaction Tax (Modification of Relief for Acquisitions Involving Multiple Dwellings) (Wales) Regulations 2026 are not yet on legislation.gov.uk at 2026-05-23. Welsh Government written statement (20 January 2026) confirms the policy change but is "subject to Senedd approval" with no fixed commencement date.
+- Citation source actually used in body for the 3% floor cite: Welsh Written Statement 20 January 2026 + 2026 SI integrated impact assessment. The body phrases the commencement as "early 2026" and instructs readers to "verify the exact commencement date against legislation.gov.uk at the time of any transaction." The brief's "13 February 2026" date is NOT asserted on-page as a confirmed fact.
 
 ### Flags raised to wave5_site_wide_flags.md
+- F-23 FACTUAL: Welsh LTT MDR 2026 SI commencement date not yet confirmed on legislation.gov.uk; B3 cites the Welsh Written Statement (20 January 2026) and the impact assessment as primary, with an instruction to verify the exact commencement date at transaction time. Manager may wish to re-verify post-launch and refine the cite once the SI is published.
 
 ### 2-3 sentence summary
+B3 anchors the Welsh MDR survival-and-modification story: the relief stays alive under LTTA 2017 Sch 13 while SDLT MDR was abolished by Finance (No.2) Act 2024. The page walks the mean-per-dwelling formula in detail, the 7 February 2025 subsidiary-dwelling carve-out (Welsh 2025 Regulations), the 2026 1% to 3% minimum-rate floor uplift (Welsh 2026 Regulations, commencement TBC per §23.10 drafter hedge and §16.35 verification), three worked Welsh portfolio examples (Davies Holdings Newport / Williams-Hughes Carmarthen / Evans-Thomas Brecon main-with-annexe), and the structural contrast against SDLT MDR abolition + Wales's absence of the six-dwellings non-residential rule. Two competitor URLs and two gov.wales overview URLs dead at write time per §16.31; written statement + impact assessment carried the verification weight.
