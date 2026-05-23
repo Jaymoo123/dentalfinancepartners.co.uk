@@ -170,34 +170,61 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `mtd-itsa-pension-funds-sipp-ssas-holding-rental-property-treatment` (no override)
+- **Final category:** `Making Tax Digital (MTD)` (no override)
+- **H1 chosen:** "SIPP and SSAS-Held Rental Property in MTD ITSA: The Trustee Exclusion"
+- **Meta title chosen:** "SIPP / SSAS Property + MTD ITSA: The Trustee Exclusion" (54 chars)
+- **Why these vs other options:** Lead with the structural answer (trustee exclusion) rather than the question, because the answer is unequivocal. H1 + meta both name SIPP, SSAS, MTD, and the exclusion mechanic in the first six words. Distinct from C6's IHT-2027-decumulation framing.
 
 ### Competitor URLs fetched
+- rentalbux.com "pension funds with rental portfolios" -> outline (8 H2s), explicit exclusion confirmation, FAQ phrasing on the threshold-aggregation question (answer: does not aggregate). Cited as a structural confirmation, not authority; used FAQ phrasing as a starting point but rewrote.
+- ukpropertyaccountants.co.uk SIPP commercial-property guide -> page returned navigation-hub content; no usable worked example in the WebFetch excerpt. Did NOT rely on for citations.
+- ukpropertyaccountants.co.uk SSAS practical route / SSAS complete guide / investing-using-pension-funds -> SSAS-versus-SIPP structural framing used for FAQ phrasing on the SSAS-loanback / SSAS-pooling distinctions; no specific figures used.
+- gov.uk PTM121000 -> verbatim cited in body: commercial property let to sponsoring employer or member requires market rent; failure triggers unauthorised payment charge plus scheme sanction charge (40% + typically 15%). Strongest authority on this page.
 
 ### Existing-page review (from "Closest existing pages")
+- `mtd-itsa-jointly-owned-property-threshold-split` (Jaccard 0.20, Wave 3 B3) — joint-owner threshold mechanic; not directly relevant to B7's pension exclusion. Not cross-linked from B7.
+- `inheritance-tax-rental-property-uk-guide` (0.17) — IHT pillar; B7 is live-time MTD mechanic, not IHT. Not cross-linked.
+- `how-to-value-rental-property-portfolio-tax-purposes` (0.15) — portfolio valuation; tangential. Not cross-linked.
+- `inheriting-uk-rental-property-executors-step-by-step` (0.15) — post-death mechanic; B7 is live-time mechanic. Not cross-linked.
+- `moving-to-australia-uk-rental-property-tax-pathway` (0.15) — expat angle; tangential. Not cross-linked.
+- Semantic neighbours (not Jaccard top-5) cross-linked: `mtd-itsa-overview-six-changes-residential-landlords` (bucket pillar); `mtd-itsa-qualifying-income-test-gross-vs-net` (the parallel-streams threshold mechanic page); Wave 4 B1 joint-owner quarterly filing (joint-owner scenario with one spouse in pension property). C6 IHT-2027 cohort decumulation referenced as forthcoming sibling in text (no hyperlink — page does not exist yet, flagged for wave-close back-patch).
 
 ### Citations added (external authority)
+- HMRC Pensions Tax Manual PTM121000 (commercial property held by registered pension schemes — verbatim cited)
+- Finance Act 2004 Part 4 (the registered pension schemes regime)
+- FA 2004 s.186 (income tax exemption for income arising from investments in a registered pension scheme)
+- FA 2004 Sch 29A (taxable property rules for investment-regulated schemes — residential property restriction)
+- gov.uk MTD ITSA eligibility check (confirms trustees outside scope)
+- House position §19.12 (Wave 4 pension extension) + §19.3 (excluded categories) — internal tie-breakers
 
 ### Internal links added (to our existing pages)
+- `/blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords` ×1 (closing section)
+- `/blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net` ×1 (closing section)
+- `/blog/making-tax-digital-mtd/mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse` (Wave 4 B1) ×1 (closing section)
+- All 3 target files exist; URL category segments verified as `making-tax-digital-mtd` matches destination frontmatter `category` field.
+- C6 reference left as plain text rather than hyperlink (page not yet written; wave-close back-patch flag in tracker notes).
 
 ### Inline CTA placements
+- `<aside>` 1: after the residential-property restriction section (high-intent: landlord realising their personal residential portfolio cannot move into a SIPP and needs alternative planning).
+- `<aside>` 2: after the parallel-streams worked example for Patel (high-intent: landlord realising they need someone to handle the personal MTD side while the SIPP provider handles the scheme side).
+- 2 asides total; the lower density reflects the niche nature of the page and avoids over-pitching on what is a structural-clarification page.
 
 ### Build attempts
+- Attempt 1: `cd Property/web && npm run build` from worktree root — passed clean; page rendered to `.next/server/app/blog/making-tax-digital-mtd/mtd-itsa-pension-funds-sipp-ssas-holding-rental-property-treatment.html` (133,528 bytes).
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 13 Question entries in 1 FAQPage block = frontmatter 13 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 54 (max 62) ✓
+- Meta description length: 154 (max 158) ✓
+- Internal links resolve: 3/3 target files exist + URL category segments match destination frontmatter `category` field ✓ (C6 reference is plain text, not a hyperlink)
+- monitored_pages row inserted: yes (id 173, rewrite_type='rewrite', site_key='property', 90-day window 2026-05-23 → 2026-08-21)
+- Body word count: 2,218 (below 2,500-3,500 informal range; calibration note: this is a structural-clarification page with a binary answer; competitor median was short and the topic is a niche edge case. Padding the page would weaken its primary value: a clean, definite answer to a question that produces operationally important follow-on decisions. The reduced length is deliberate.)
 
 ### Flags raised to wave4_site_wide_flags.md
+- Will append INTERNAL_LINK flag F-2: B7 references C6 (pension decumulation property portfolio IHT 2027 cohort sequence) as a forthcoming sibling. Wave-close back-patch should convert the plain-text reference into a hyperlink once C6 ships.
 
 ### 2-3 sentence summary
+Net-new operational page explaining the SIPP / SSAS trustee exclusion mechanic for MTD ITSA. Walks the trustee-outside-MTD position (house position §19.3 + §19.12), the SIPP-versus-SSAS distinction, PTM121000 arm's-length / market-rent discipline for connected-tenant arrangements, the residential-property taxable-property restriction under FA 2004 Sch 29A, and the parallel-streams scenario (Patel worked example: £40k personal portfolio + £35k SIPP commercial, with the SIPP rent NOT aggregating to the personal threshold test). Anti-templating boundary: this is the live-time MTD-exclusion page; C6 (forthcoming) covers post-death IHT 2027 decumulation sequence.
