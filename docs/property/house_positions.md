@@ -1162,7 +1162,7 @@ Source: `https://revenue.scot/news-publications/news/scottish-budget-2025-2026-c
 - ADS applies to anyone buying a residential property in Scotland who already owns one or more residential properties **anywhere in the world** at the effective date.
 - ADS is charged on the **entire purchase price**, not on a marginal-band basis like the main LBTT rates above. Corollary: an £180,000 second-home purchase attracts £14,400 of ADS (8% of £180,000) PLUS standard LBTT on the slice above £145,000.
 - **£40,000 de-minimis:** ADS does not apply where the property being purchased is worth less than £40,000, mirroring the SDLT Sch 4ZA threshold.
-- **Joint buyers:** if any joint buyer meets the ADS conditions, ADS applies to the whole transaction (LBTT(S)A 2013 Sch 2A para 4, mirroring SDLT Sch 4ZA para 2(3), see §24.5). Where one buyer is a first-time buyer and the other owns an existing dwelling, FTB relief is unavailable on the transaction; both buyers must be eligible.
+- **Joint buyers:** if any joint buyer meets the ADS conditions, ADS applies to the whole transaction (LBTT(S)A 2013 Sch 2A para 5(2), mirroring SDLT Sch 4ZA para 2(3), see §24.5). (F-B7-1 correction 2026-05-23: earlier drafts of §23.5 cited Sch 2A para 4 — that paragraph is in fact the 8% rate provision; the joint-buyer aggregation rule is at para 5(2): "the conditions are satisfied if they are satisfied in relation to any one of, or more than one of, the buyers".) Where one buyer is a first-time buyer and the other owns an existing dwelling, FTB relief is unavailable on the transaction; both buyers must be eligible.
 
 **ADS repayment on sale of previous main residence, 36-month rule:**
 - Where the buyer sells their previous main residence **within 36 months** of buying the new main residence, ADS paid on the new purchase can be reclaimed.
@@ -1281,7 +1281,7 @@ Cross-references §15 (IHT spousal exemption, GROB), §19.4 (MTD threshold for j
 **Statutory base, TWO provisions, one for each tax:**
 
 - **Income tax:** ITA 2007 s.836, `https://www.legislation.gov.uk/ukpga/2007/3/section/836`. Joint income of spouses / civil partners living together is treated as arising in equal shares (50/50) unless they make a joint declaration of unequal beneficial interests on the prescribed form (Form 17) AND their actual beneficial interests are unequal.
-- **Property income specifically:** ITTOIA 2005 s.282, the property-income parallel for jointly owned dwellings, operates the same 50/50 default. PIM1030 (`https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim1030`) sets out HMRC's position: the 50/50 presumption applies "regardless of the underlying ownership of the property" unless displaced by Form 17.
+- **HMRC working position:** PIM1030 (`https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim1030`) sets out HMRC's position grounded in ITA 2007 s.836: the 50/50 presumption applies "regardless of the underlying ownership of the property" unless displaced by Form 17. (F-4 correction 2026-05-23: earlier drafts of §24.1 cited ITTOIA 2005 s.282 as the property-income parallel for the 50/50 rule; that is wrong. ITTOIA 2005 s.282 is titled "Assignments for profit of lease granted at undervalue" and has no connection to the spouse / civil partner 50/50 income rule. The operating statutory provision is ITA 2007 s.836 alone.)
 
 **Application limits, when the 50/50 rule does NOT apply (HMRC TSEM9851 / TSEM9852):**
 
@@ -1380,7 +1380,7 @@ The interactions below cause the most common drafting errors in competitor conte
 
 ### 24.6 Unmarried co-owners
 
-**No Form 17 route.** ITA 2007 s.836 and ITTOIA 2005 s.282 apply only to spouses / civil partners. Unmarried co-owners (cohabitees, friends, family non-spouses) are outside the 50/50 default and outside the Form 17 election mechanism.
+**No Form 17 route.** ITA 2007 s.836 applies only to spouses / civil partners. Unmarried co-owners (cohabitees, friends, family non-spouses) are outside the 50/50 default and outside the Form 17 election mechanism.
 
 **Default rule for unmarried co-owners (PIM1030 / TSEM9821):**
 - Income is split per the **actual beneficial ownership** of the property. No presumption of equality, no presumption of any other split.
@@ -1445,7 +1445,6 @@ HMRC's typical enquiry pattern for joint-ownership tax planning, drawn from TSEM
 
 - **Statutory base:**
   - ITA 2007 s.836 (50/50 income split): `https://www.legislation.gov.uk/ukpga/2007/3/section/836`.
-  - ITTOIA 2005 s.282 (property income 50/50 default).
   - TCGA 1992 s.58 (no-gain-no-loss spouse transfer): `https://www.legislation.gov.uk/ukpga/1992/12/section/58`.
   - TCGA 1992 s.222 (main residence; sub-s.222(5) election; sub-s.222(6) one-residence-per-couple): `https://www.legislation.gov.uk/ukpga/1992/12/section/222`.
   - TCGA 1992 s.17 (market-value disposal); s.286 (connected persons).
