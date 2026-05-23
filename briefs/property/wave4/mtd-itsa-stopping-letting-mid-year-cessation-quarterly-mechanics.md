@@ -174,34 +174,61 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `mtd-itsa-stopping-letting-mid-year-cessation-quarterly-mechanics` (no override)
+- **Final category:** `Making Tax Digital (MTD)` (no override)
+- **H1 chosen:** "Stopping Letting Mid-Year Under MTD ITSA: Cessation Mechanics and Parallel Obligations"
+- **Meta title chosen:** "Stopping Letting Mid-Year: MTD ITSA Cessation Mechanics" (55 chars)
+- **Why these vs other options:** Lead with the trigger ("stopping letting mid-year") + the regime ("MTD ITSA") + the page's primary value ("cessation mechanics"). Distinct from the income-drop exit page (Wave 3 B4); the language deliberately uses "cessation" not "exit" to mark the boundary.
 
 ### Competitor URLs fetched
+- provestor.co.uk MTD selling properties -> confirmed sale proceeds NOT on MTD update (capital event, separate from rental income). Used as the source-document framing for the "Route 1: disposal" walkthrough.
+- legislation.gov.uk ITTOIA 2005 s.354 -> confirms s.354 imports Chapter 18 of Part 2 trader-side post-cessation rules into property businesses. Cited with appropriate caveat (the 7-year window comes from the imported provisions; house position §19.15 is the consolidated framing).
+- Did not fetch: ukpropertyaccountants income-drop article (Wave 3 B4 territory, already covered), rentalbux selling-tenanted (RRA 2025 context, off-topic for cessation mechanics), Spring Statement 2025 (already established in B5), CGT late-filing (already established via TMA 1970 Sch 3ZA cite).
 
 ### Existing-page review (from "Closest existing pages")
+- `mtd-quarterly-reporting-landlords-step-by-step-guide` (0.18) — F-7/F-9 stale figures page; not cited as authority.
+- `nrl-scheme-letting-agents-quarterly-returns-mechanics` (0.18) — NRL territory; not cross-linked from B9.
+- `mtd-itsa-accidental-landlords-do-i-need-to-file-digitally` (0.13) — adjacent persona; not cross-linked.
+- `mtd-itsa-jointly-owned-property-threshold-split` (0.13) — joint-owner threshold; B9 cross-links to Wave 4 B1 instead (which already cross-links to that page).
+- `mtd-itsa-letter-from-hmrc-what-to-do-next` (0.13) — adjacent; not cross-linked.
+- Semantic neighbours cross-linked: `mtd-itsa-exit-rule-income-drops-three-year-test` (Wave 3 B4 — the income-drop exit contrast); `mtd-itsa-overview-six-changes-residential-landlords` (bucket pillar); Wave 4 B1 (joint-owner cessation pattern); Wave 4 B3 (ASA-engaged accountant cessation flow).
 
 ### Citations added (external authority)
+- ITTOIA 2005 s.354 (post-cessation receipts and expenses, importing Chapter 18 of Part 2)
+- TMA 1970 Sch 3ZA (CGT 60-day return for UK residential property)
+- TCGA 1992 ss.222 to 226 (Private Residence Relief — for the stop-letting-keep-property route)
+- TMA 1970 s.12B (7-year retention)
+- gov.uk MTD ITSA "use the service" guidance (cessation notification mechanic)
+- House position §19.15 (Wave 4 mid-year cessation extension) and §19.5 (income-drop exit contrast)
+- ITA 2007 s.125 (post-cessation expense relief mechanism, referenced implicitly via the §19.15 framing)
 
 ### Internal links added (to our existing pages)
+- `/blog/making-tax-digital-mtd/mtd-itsa-exit-rule-income-drops-three-year-test` (Wave 3 B4) ×2 (intro contrast + closing)
+- `/blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords` ×1 (closing section)
+- `/blog/making-tax-digital-mtd/mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse` (Wave 4 B1) ×2 (joint-owner cessation section + closing)
+- `/blog/making-tax-digital-mtd/mtd-itsa-agent-services-account-asa-authorisation-walkthrough` (Wave 4 B3) ×1 (closing section)
+- All 4 target files exist; URL category segments verified.
 
 ### Inline CTA placements
+- `<aside>` 1: after the post-cessation expense relief section (high-intent: landlord with late-arriving invoices realising they have 7 years of relief).
+- `<aside>` 2: after the worked Patel cessation example (high-intent: landlord realising the four-deadline sequence is heavier than expected, wants help running it).
+- 2 asides total; none inside worked examples, none at page opening.
 
 ### Build attempts
+- Attempt 1: `cd Property/web && npm run build` passed clean; HTML rendered with 13 Question entries in 1 FAQPage block.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 13 = 13 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 55 (max 62) ✓
+- Meta description length: 147 (max 158) ✓
+- Internal links resolve: 4/4 target files exist + URL category segments match destination frontmatter `category` field ✓
+- monitored_pages row inserted: yes (id 177, rewrite_type='rewrite', 90-day window)
+- Body word count: 2,359 (within 2,500-3,500 informal range, slightly below floor due to focused-mechanics framing; competitor universe under-coverage on this topic per Stage 2 brief note)
 
 ### Flags raised to wave4_site_wide_flags.md
+- None raised. Authority-led page per Stage 2 brief note about competitor under-coverage; lean on §19.15 + ITTOIA + TMA + TCGA citations rather than competitor outline. No discoveries warranting site-wide flagging.
 
 ### 2-3 sentence summary
+Net-new operational mechanics page on mid-year cessation under MTD ITSA. Walks Route 1 (final-property disposal: final partial quarterly update + EoPS + final declaration + cessation notification, plus parallel CGT 60-day return under TMA 1970 Sch 3ZA), Route 2 (stop-letting-keep-property: MTD ends, PRR begins under TCGA 1992 ss.222 to 226), post-cessation expense relief under ITTOIA 2005 s.354 / §19.15 7-year window, the four-deadline sequence worked through a Patel Bristol BTL November-completion example, joint-owner per-owner cessation discipline, and explicit anti-templating contrast against Wave 3 B4's income-drop sub-threshold exit (five-difference comparison). Authority-led page per Stage 2 brief note about competitor under-coverage.
