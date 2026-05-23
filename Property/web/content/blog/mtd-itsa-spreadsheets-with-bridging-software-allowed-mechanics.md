@@ -197,7 +197,7 @@ Landlords who run this protocol in autumn 2025 land in April 2026 with a tested 
 
 ## Where this page sits
 
-This page is the operational digital-link mechanics page for landlords on the spreadsheet-plus-bridging route. It does not re-walk the strategic software-decision question (covered in our [choosing software by scenario page](/blog/making-tax-digital-mtd/mtd-itsa-choosing-software-by-landlord-scenario-decision-tree)), the headline MTD ITSA changes (covered in our [bucket overview page](/blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords)), or the digital-records evidence discipline more broadly (covered in our forthcoming digital-records page on receipts, bank feeds, and what counts as evidence).
+This page is the operational digital-link mechanics page for landlords on the spreadsheet-plus-bridging route. It does not re-walk the strategic software-decision question (covered in our [choosing software by scenario page](/blog/making-tax-digital-mtd/mtd-itsa-choosing-software-by-landlord-scenario-decision-tree)), the headline MTD ITSA changes (covered in our [bucket overview page](/blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords)), or the digital-records evidence discipline more broadly (covered in our [digital records, receipts, and bank feeds page](/blog/making-tax-digital-mtd/mtd-itsa-digital-records-receipts-bank-feeds-what-counts-evidence)).
 
 For joint owners with the spreadsheet route, the joint-owner mechanics are covered in our [joint-owner quarterly filing page](/blog/making-tax-digital-mtd/mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse), where the per-owner share-derivation column pattern carries through to the bridging tool the same way.
 

@@ -174,34 +174,62 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `mtd-itsa-digital-records-receipts-bank-feeds-what-counts-evidence` (no override)
+- **Final category:** `Making Tax Digital (MTD)` (no override)
+- **H1 chosen:** "Digital Records, Receipts, and Bank Feeds for MTD ITSA: What Counts as Evidence"
+- **Meta title chosen:** "MTD ITSA Digital Records: What Counts as HMRC Evidence" (54 chars)
+- **Why these vs other options:** Lead with the evidence-at-enquiry framing differentiator. The existing high-level overview page uses "what records must you store"; B10 takes the harder downstream question (what does HMRC actually accept at enquiry) and structures around the four-category answer.
 
 ### Competitor URLs fetched
+- Did not fetch all 6 competitor URLs (Stage 2 sourced 6). Three primary sources used as cross-reference for outline structure: ukpropertyaccountants record-keeping, provestor key-concepts-rules, provestor record-keeping-best-practices. The other three (provestor managing-receipts, provestor uploading-bank-statements, rentalbux OCR-receipt-scanning) sit on adjacent operational topics; I drew on the structural framing without fetching given the strong house position §19.16 anchor and the over-narrow alternative of replicating vendor-help content.
 
 ### Existing-page review (from "Closest existing pages")
+- `mtd-record-keeping-landlords-digital-requirements` (Jaccard 0.20) — high-level overview. CROSS-LINKED from B10 closing section. Discovered FACTUAL discrepancy: existing page says "5 years retention" (TMA 1970 s.12B statutory minimum); house position §19.16 frames it as 7-year practical retention. Existing page also says "5 years after the submission deadline" which is the statutory line; not wrong per se, but shallower than §19.16. Flagged as EXISTING_PAGE_STALE candidate for wave-close back-patch.
+- `how-to-register-mtd-landlord-step-by-step-guide` (0.17) — registration mechanic, not cross-linked.
+- `mtd-itsa-accidental-landlords-do-i-need-to-file-digitally` (0.13) — adjacent, not cross-linked.
+- `mtd-itsa-jointly-owned-property-threshold-split` (0.13) — not cross-linked (defer to Wave 4 B1 joint-owner page).
+- `mtd-itsa-letter-from-hmrc-what-to-do-next` (0.13) — adjacent, not cross-linked.
+- Semantic neighbours cross-linked: Wave 4 B1 (joint-owner records discipline); Wave 4 B8 (digital-link mechanic for spreadsheet route); Wave 4 B9 (post-cessation expenses 7-year window, mirrors retention discipline); existing qualifying-income test; existing B5 penalty regime; existing MTD overview.
 
 ### Citations added (external authority)
+- TMA 1970 s.12B (5-year statutory retention minimum)
+- FA 2017 Sch A1 paragraph 8 (digital-records obligation)
+- HMRC notice 700/22 (digital-records framework, MTD VAT origin adapted)
+- HMRC Compliance Handbook (enquiry mechanics under TMA 1970 s.9A)
+- FA 2007 Sch 24 (inadequate-records penalties up to £3,000)
+- ITTOIA 2005 s.354 (post-cessation expenses 7-year window, mirrors retention floor)
+- House position §19.16 (Wave 4 digital-records evidence extension) and §19.14 (digital-link rule)
 
 ### Internal links added (to our existing pages)
+- `/blog/making-tax-digital-mtd/mtd-record-keeping-landlords-digital-requirements` ×2 (intro + closing)
+- `/blog/making-tax-digital-mtd/mtd-itsa-spreadsheets-with-bridging-software-allowed-mechanics` (Wave 4 B8) ×2 (intro + closing)
+- `/blog/making-tax-digital-mtd/mtd-itsa-stopping-letting-mid-year-cessation-quarterly-mechanics` (Wave 4 B9) ×1 (7-year window cross-reference)
+- `/blog/making-tax-digital-mtd/mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse` (Wave 4 B1) ×1 (joint-owner records discipline)
+- `/blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net` ×1 (closing)
+- `/blog/making-tax-digital-mtd/mtd-itsa-late-submission-points-late-payment-15-30-31-worked` ×1 (closing penalty context)
+- `/blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords` ×1 (closing pillar)
+- All 7 target files exist; URL category segments verified as `making-tax-digital-mtd` matches destination frontmatter `category` field.
 
 ### Inline CTA placements
+- `<aside>` 1: after the bank-feed auto-categorisation discipline section (high-intent: landlord realising the algorithm's suggestions need review, wants help with the pre-mandate setup).
+- `<aside>` 2: after the "What HMRC actually asks for in an enquiry" section (high-intent: landlord realising the retrospective tidying pattern they have always relied on does not survive an MTD enquiry).
+- 2 asides total; reflects mechanics-paper structure.
 
 ### Build attempts
+- Attempt 1: `cd Property/web && npm run build` passed clean; HTML rendered with 13 Question entries in 1 FAQPage block.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 13 = 13 ✓
+- Em-dashes in markdown: 0 ✓
+- Tailwind classes in markdown: 0 ✓
+- Meta title length: 54 (max 62) ✓
+- Meta description length: 146 (max 158) ✓
+- Internal links resolve: 7/7 target files exist + URL category segments match destination frontmatter `category` field ✓
+- monitored_pages row inserted: yes (id 180, rewrite_type='rewrite', 90-day window)
+- Body word count: 2,124 (focused mechanics page; below 2,500 calibration floor in line with B7/B8/B9 pattern; deliberate compactness on a structural-answer page rather than padding)
 
 ### Flags raised to wave4_site_wide_flags.md
+- Will append EXISTING_PAGE_STALE flag for the existing record-keeping page (5-year retention vs §19.16 7-year framing; not factually wrong but shallower than the consolidated house position).
 
 ### 2-3 sentence summary
+Net-new evidence-and-audit-trail page distinct from the existing high-level record-keeping overview. Walks the four-category answer to "what counts as a digital record" (accepted unambiguously, accepted with caveats, not accepted, marginal cases), receipt-capture discipline (app-capture with audit trail vs phone snap), bank-feed auto-categorisation review pattern (algorithm not binding, landlord owns categorisation), cash-receipt edge case (must be digitised promptly), seven-year retention under §19.16 plus TMA 1970 s.12B (the careless-behaviour-window margin), what HMRC actually asks for at TMA 1970 s.9A enquiry (six-document standard set), and inadequate-records penalty scope under FA 2007 Sch 24. Anti-templating boundary: existing record-keeping page is the high-level overview; B10 is the at-enquiry evidence layer. B8 reference now hyperlinked (was plain text; back-patched in same commit as B10 ships).
