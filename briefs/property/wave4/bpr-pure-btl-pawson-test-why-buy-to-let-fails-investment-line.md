@@ -169,34 +169,70 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line` (no override)
+- **Final category:** `Landlord Tax Essentials` (Wave 2 sibling pillar `business-property-relief-rental-property-iht` and decision-framework page both sit there; consistent with the pure-BTL 90%-of-readers cohort framing)
+- **H1 chosen:** "Why Your Buy-to-Let Doesn't Qualify for Business Property Relief"
+- **Meta title chosen:** "Why Pure Buy-to-Let Fails BPR: The Pawson Test" (46 chars)
+- **Why these vs other options:** H1 leads directly with the negative answer ("doesn't qualify"), addresses the reader in the second person, and names the asset class (BTL). Meta title is shorter and harder than the H1 (the user's likely SERP click-decision is "BPR pure buy-to-let pawson" and the title compresses that). Considered alternatives: "Pure BTL and BPR: Why Pawson Closes the Door" (rejected, too oblique); "BPR Pure Buy-to-Let: Why BTL Fails the Pawson Test" (rejected, repeated "buy-to-let" + "BTL"); current chosen leads with the question word "Why" which works better for the cohort.
 
 ### Competitor URLs fetched
+- `https://www.djh.co.uk/latest-news/news-insights/iht-planning-review-protecting-your-business-assets-with-br/` — fetched, 200. ~2,000 words. General BR framework, leads with the £1m cap rather than the BPR-eligibility question. Useful as a contrast for the framing differentiator (most competitor BR content jumps to the cap mechanics; ours leads with "you don't qualify in the first place"). No legislation citations.
+- `https://www.ukpropertyaccountants.co.uk/business-property-relief-on-landlord-portfolio/` — 404 at fetch time. Stage 2 brief listed it as "Sibling page, likely live"; URL appears stale. Logged to discovery log as `AUTHORITY_GAP` (competitor universe v2 contains stale URLs).
+- `https://www.ukpropertyaccountants.co.uk/the-landmark-shift-in-inheritance-tax-relief/` — fetched, 200. ~1,200 words. £1m cap focus. Explicitly notes "the article does not address pure buy-to-let landlords" because BPR excludes investment properties; that confirms our differentiator is correct (the competitor universe genuinely under-serves the pure-BTL-and-BPR question).
+- `https://www.tlpi.co.uk/services/inheritance-tax/` — 404 at fetch time. Discovered alternate URL set on tlpi.co.uk: `/inheritance-tax-what-business-owners-need-to-know`, `/insights/why-you-need-a-family-investment-company`. Forward-link to FIC pillar absorbed into the "what works instead" section instead of citing tlpi directly (commercial bias).
 
 ### Existing-page review (from "Closest existing pages")
+- `serviced-accommodation-bpr-eligibility-pawson-test` (Wave 2 A5) — read in full. The case-law deep-dive: Henderson J's full Pawson analysis, post-Pawson Green / Vigne, IHTM25277-25280, Helena 6-unit Edinburgh worked example. **C1 explicitly defers case-law depth to this page** to honour the "shorter and sharper" framing differentiator. One forward-link in the "Pawson in one paragraph" section + one in "Where the BPR line genuinely sits".
+- `business-property-relief-rental-property-iht` (Wave 2 general-rule pillar) — read in full. Shallower DeepSeek-era piece (~1,500 body words) covering generic BPR rules + a brief FHL aside. C1 forward-links to it as the general-rule pillar and is positioned as the deeper landlord-cohort-specific page on top of it. Considered raising INTERNAL_LINK flag for a back-link from the pillar to C1; pillar already has a Wave 2 reciprocal block linking to SA-Pawson and other neighbours, so add C1 to the pillar's Related Reading is a Wave-close back-patch (flagged below).
+- `iht-april-2026-bpr-apr-cap-property-impact` (Wave 2 A4) — read in full. C1's "April 2026 cap is not your problem" section forward-links here. No content overlap because A4 is for affected segments and C1 explicitly says BTL cohort is NOT affected.
+- `iht-property-investors-decision-framework-2026-onwards` — read in full. Perfect "what works instead" companion. Forward-linked from the final body section.
+- `fic-iht-treatment-bpr-myth` — read in full. Corporate-wrapper companion that uses the same Pawson logic. Forward-linked from the "limited company doesn't unlock BPR" sub-section.
 
 ### Citations added (external authority)
+- *Pawson v HMRC* [2013] UKUT 050 (TCC) (gov.uk decisions index) — anchor case.
+- Section 105 IHTA 1984 (legislation.gov.uk) — statutory carve-out at s.105(3); verbatim text quoted in body.
+- IHTM25000 (HMRC manual BPR overview) — HMRC's published view entry point.
+- gov.uk APR/BPR reforms 6 April 2026 — context for "the cap is not your problem" section.
+- Autumn Budget 2024 (gov.uk) — announcement of the reform package.
+
+(5 citations, in target 4-7 range. Did not cite IHTM25260 — URL 404'd at verification. Did not cite Brander v HMRC — deferred to SA-Pawson companion page per "shorter and sharper" framing. Did not cite IHTM25277-IHTM25280 series — also deferred to SA-Pawson page since those are the SA boundary-case manual pages.)
 
 ### Internal links added (to our existing pages)
+- `/blog/property-types-and-specialist-tax/serviced-accommodation-bpr-eligibility-pawson-test` × 2 (SA boundary case)
+- `/blog/landlord-tax-essentials/business-property-relief-rental-property-iht` × 1 (general-rule pillar)
+- `/blog/landlord-tax-essentials/iht-april-2026-bpr-apr-cap-property-impact` × 1 (cap mechanics, for those who qualify)
+- `/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards` × 1 (what works instead, planning lens)
+- `/blog/landlord-tax-essentials/iht-lifetime-gifts-7-year-rule-property-taper` × 1 (PET mechanics)
+- `/blog/landlord-tax-essentials/inheritance-tax-rental-property-uk-guide` × 1 (IHT pillar)
+- `/blog/incorporation-and-company-structures/fic-complete-guide-property-wealth-transfer` × 1 (FIC route)
+- `/blog/incorporation-and-company-structures/fic-iht-treatment-bpr-myth` × 1 (corporate-wrapper companion)
+
+All 8 unique targets verified as existing markdown files in `Property/web/content/blog/`.
 
 ### Inline CTA placements
+- 1 aside after the Pawson one-paragraph section ("Reviewing the IHT position on a BTL portfolio?") — pivots from "no BPR" to "here's what cheap planning looks like for your cohort"
+- 1 aside after "The genuine exceptions" section ("Mixed-estate planning is meaningfully different") — captures the mixed-estate reader who came in expecting pure-BTL framing but actually has a trading-mix exposure
+
+Total 2 asides (in the 1-3 range; deliberately fewer to keep the page tight per "shorter and sharper" framing).
 
 ### Build attempts
+- Attempt 1: `next` not on PATH (worktree missing node_modules). Ran `npm install` (clean install from package-lock; ~150s).
+- Attempt 2: `npm run build` — clean (exit 0). 377 blog static pages prerendered, C1 page generated at `.next/server/app/blog/landlord-tax-essentials/bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line.html`.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: ✅ 13 Questions in 1 FAQPage, matches the 13 entries in `faqs:`
+- Em-dashes in markdown: ✅ 0
+- Tailwind classes in markdown: ✅ 0 `class="` attributes
+- Meta title length: ✅ 46 chars (≤62)
+- Meta description length: ✅ 150 chars (≤158)
+- Internal links resolve: ✅ all 8 unique `/blog/...` targets verified as existing markdown files
+- monitored_pages row inserted: ✅ id 155, monitor_until 2026-08-21
+- Body word count: 2,818 (at floor of 2,800-3,500 non-pillar target; intentional per "shorter and sharper" framing differentiator)
 
 ### Flags raised to wave4_site_wide_flags.md
+- F-1 (INTERNAL_LINK): the Wave 2 BPR-rental general-rule pillar (`business-property-relief-rental-property-iht.md`) has a "Related reading" block that links to SA-Pawson + IHT decision-framework + APR mixed-estate pages; C1 should be added to that block as the new pure-BTL negative-case companion. Wave-close back-patch (not blocking C1).
 
 ### 2-3 sentence summary
+
+C1 ships the anchor negative-case page for the 90% pure-BTL cohort: section 105(3) IHTA 1984 plus *Pawson v HMRC* [2013] UKUT 050 (TCC) close the BPR door, and the page is deliberately shorter and sharper (2,818 body words) than the Wave 2 SA-Pawson case-law deep-dive it forward-links to. It debunks the three planning instincts that look like they should unlock BPR (limited company wrapper, scale, intensive landlord effort), confirms that the 6 April 2026 £1m cap is not the pure-BTL cohort's problem, and forward-links to the planning-lens IHT decision framework + lifetime gifting + FIC value-freeze + life-cover-in-trust routes that do work for investment-side landlord estates.
+

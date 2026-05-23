@@ -167,37 +167,68 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 
 ---
 
-## Per-page work-log (fill in as you go, supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** iht-7-year-clock-property-gifting-mid-life-landlord-strategy (manager-suggested; no override)
+- **Final category:** landlord-tax-essentials (manager-suggested; no override)
+- **H1 chosen:** "The Seven-Year Clock for Mid-Life Landlords: When to Start Gifting Property"
+- **Meta title chosen:** "Mid-Life Property Gifting: 7-Year Clock vs Dry CGT" (50 chars)
+- **Why these vs other options:** H1 leads with the cohort (mid-life landlords) and the question (when to start gifting), distinct from Wave 2 A3's mechanics-led H1. Meta title pairs the cohort framing with the trade-off (7-year clock vs dry CGT) for SERP discrimination against rule-mechanic-led competitor titles.
 
 ### Competitor URLs fetched
+- HW Fisher (hwfisher.co.uk/inheritance-tax-hmrc-and-the-7-year-rule): brief notes mid-market accountant with clean taper coverage; not re-fetched (Wave 2 A3 already supplies the rule-mechanic baseline for differentiation purposes). Page written from house positions §15.2 + §22 + Wave 2 A3 read + brief differentiator.
+- ukpropertyaccountants.co.uk / taxaccountant.co.uk / mytaxaccountant.co.uk: not re-fetched. Differentiator is the CGT overlay + mid-life cohort framing + decision tree against FIC + DoV; competitor outline borrow is not the binding constraint here.
 
 ### Existing-page review (from "Closest existing pages")
+- Wave 2 A3 `iht-lifetime-gifts-7-year-rule-property-taper` (Jaccard 0.18): read in full. Rule mechanics (PET / CLT, taper schedule, annual exemptions, cumulation, taper-on-tax-not-gift-value misconception) held there; C4 defers via two explicit hyperlinks (intro and close) and does NOT re-walk the taper schedule or the £3k exemption. A3's worked example uses a £350k BTL surviving 5 years (failed-PET case); C4's worked example uses a £400k BTL with a £160k latent gain, surviving 18 years (clean-survival case), and the counterfactual is the same property held to death at age 84 (death-uplift case). Figures deliberately distinct.
+- `cgt-gifting-property-family-members-uk` (Jaccard 0.17): cross-link in records-discipline section as the CGT companion (60-day return, connected-persons s.286, gift-on-divorce variants are over there).
+- `iht-gift-with-reservation-letting-children-paying-rent-mechanics` (C3, just shipped): cross-link in the mortgaged-property section as the related s.102 risk where donor remains joint borrower for affordability reasons.
+- `iht-property-investors-decision-framework-2026-onwards`: cross-link at close as planning-lens companion.
+- `business-property-relief-rental-property-iht`: cross-link in the CGT overlay section explaining why s.165 holdover is unavailable (Pawson reads through to close both BPR and s.165 business-asset holdover).
 
 ### Citations added (external authority)
+- IHTA 1984 s.7(4) (taper relief): https://www.legislation.gov.uk/ukpga/1984/51/section/7.
+- TCGA 1992 s.17 (deemed market-value disposal): https://www.legislation.gov.uk/ukpga/1992/12/section/17.
+- TCGA 1992 s.165 (business-asset holdover, NOT available for non-business BTL): https://www.legislation.gov.uk/ukpga/1992/12/section/165.
+- TCGA 1992 s.260 (CLT holdover): https://www.legislation.gov.uk/ukpga/1992/12/section/260.
+- TCGA 1992 ss.169B-G (settlor-interested trust exclusion from s.260): https://www.legislation.gov.uk/ukpga/1992/12/section/169B.
+- TCGA 1992 s.162 (incorporation relief): https://www.legislation.gov.uk/ukpga/1992/12/section/162.
+- TCGA 1992 s.286 (connected persons): https://www.legislation.gov.uk/ukpga/1992/12/section/286.
+- TCGA 1992 s.62 (death uplift), s.62(6) (DoV CGT read-back).
+- IHTA 1984 s.21 (normal expenditure out of income).
+- IHTA 1984 s.142 (deed of variation).
+- HMRC CG65700 onwards (s.162 incorporation relief practice).
+
+8 named in-body citations (light over the 4-7 floor; justified by the cross-tax depth of the page: IHT + CGT + SDLT all needed).
 
 ### Internal links added (to our existing pages)
+- `/blog/landlord-tax-essentials/iht-lifetime-gifts-7-year-rule-property-taper` (Wave 2 A3 rule mechanics): twice (intro + close).
+- `/blog/landlord-tax-essentials/business-property-relief-rental-property-iht` (BPR pillar, Pawson read-through closing s.165): once (CGT overlay section).
+- `/blog/landlord-tax-essentials/iht-gift-with-reservation-letting-children-paying-rent-mechanics` (Wave 4 C3 just shipped): once (mortgaged-property complication section).
+- `/blog/capital-gains-tax/cgt-gifting-property-family-members-uk` (CGT companion): once (records discipline section).
+- `/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards` (planning-lens): once (closing paragraph).
+
+All 5 targets verified existing + categories matched. Wave 4 sibling slugs C5 (deed of variation), C7 (FIC value-freeze), C10 (CLT into discretionary trust) referenced as forthcoming siblings, NOT hyperlinked. Wave-close back-patch will convert to hyperlinks.
 
 ### Inline CTA placements
+- Two `<aside>` blocks. First after worked example one (the Hollis-estate gift at 52 + full survival). Second after the decision-tree section. No aside on opener. No aside inside a worked example.
 
 ### Build attempts
+- Pass 1 (clean): `cd Property/web && npm run build`. Pre-existing ESLint warnings only. Built HTML present at `.next/server/app/blog/landlord-tax-essentials/iht-7-year-clock-property-gifting-mid-life-landlord-strategy.html`.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: ✅ 13/13.
+- Em-dashes in markdown: ✅ 0.
+- Tailwind classes in markdown: ✅ 0.
+- Meta title length: ✅ 50 chars (max 62).
+- Meta description length: ✅ 151 chars (max 158).
+- Internal links resolve: ✅ all 5 targets exist + categories matched.
+- monitored_pages row inserted: ✅ id 168, monitor_until 2026-08-21.
+- Body word count: 3,110 (mid-band of 2,500-3,500 competitor target).
 
 ### Flags raised to wave4_site_wide_flags.md
+- None this page. C5 / C7 / C10 forthcoming-sibling hyperlinks are a wave-close convert-to-hyperlink job.
 
 ### 2-3 sentence summary
+The mid-life landlord (45 to 58) strategy applied version of the 7-year clock. Distinct from Wave 2 A3 (rule mechanics) by being scenario-led with the CGT overlay as the binding constraint. Two worked examples on the same £400k BTL (gift at 52 with full survival vs hold to death at 84), the three holdover routes that close on a non-business BTL, the mortgaged-property SDLT complication, the decision tree against FIC growth-share gifting and DoV after first death, the life-cover-in-trust mortality hedge during the 7-year window, and a 6-item records discipline. 3,110 body words, 13 FAQs, 2 CTAs, 8 authority citations, build clean.

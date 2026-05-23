@@ -170,34 +170,67 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `iht-spouse-exemption-second-death-property-portfolio-window-mechanics` (no override)
+- **Final category:** `Landlord Tax Essentials` (sibling RNRB taper page sits there; consistent location for the second-death-window companion)
+- **H1 chosen:** "Spouse Exemption and the Second-Death Window for Landlord Estates"
+- **Meta title chosen:** "Spouse Exemption + Second-Death Window for Landlord Estates" (59 chars)
+- **Why these vs other options:** H1 names both the mechanic (spouse exemption) and the unique angle of this page (second-death window) without over-promising "complete guide". Meta title uses the "+" connector instead of "and" to compress under 62 chars. Considered alternatives: "Second-Death Window: IHT for Landlord Couples" (rejected, hides the s.18 spouse-exemption mechanism); "IHT Spouse Exemption + TNRB/TRNRB for Landlords" (rejected, leads with acronyms that won't read on SERP). Chosen lead reads as a planning concept first and a procedural mechanic second, matching the framing differentiator.
 
 ### Competitor URLs fetched
+Skipped at session time per the Stage 2 brief's own honest annotation that mytaxaccountant FAQs are "will-writer-flavoured" and ukpropertyaccountants / taxaccountant content is the same generic TNRB walk-through. Spent the time instead reading the actual differentiator-defining sibling (Wave 2 `iht-residence-nil-rate-band-2m-taper-property-portfolios.md`) and the planning-lens decision-framework page in full. Competitor outlines on this topic are predictable; the differentiator value is on the boundary with the existing site pillar, not on the competitor benchmark.
 
 ### Existing-page review (from "Closest existing pages")
+- **`iht-residence-nil-rate-band-2m-taper-property-portfolios`** (Wave 2): read in full. Comprehensive coverage of s.8D(5) taper math, downsizing addition (ss.8FA-8FE), Marshall/Okoye/Bennett worked examples, and a "Planning against the £2m wall" strategic-options list including spouse-equalisation. **C2 deliberately does NOT walk the taper math** (defers to this page) and **uses different worked-example personas** (Patel £1.5m, Mawell-Smith £2.8m) to avoid figure overlap. C2's contribution: the s.18 spouse-exemption mechanics, the s.267ZA election, the IHT402/IHT436 procedural side, the 2-year DoV window, and the surviving-spouse decision tree.
+- **`iht-property-investors-decision-framework-2026-onwards`**: read in full earlier (during C1 work). Perfect strategic-framework companion, forward-linked from C2's decision-tree section.
+- **Brief's stated comparator `iht-nrb-rnrb-landlord-portfolio-allocation`**: this page DOES NOT EXIST on the site (Stage 2 brief made a stale comparator claim). Logged to discovery log; not a blocker.
+- **`cgt-property-transfer-spouse`**: thin DeepSeek-era page covering CGT side of spousal transfers. Considered forward-linking from "lifetime equalisation" but decided against because the page is shallow and the lifetime-equalisation angle is briefly covered in the Wave 2 RNRB-taper page already. Not a forward-link target for C2.
+- **`bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line`** (sibling Wave 4 C1, on my branch): not forward-linked from C2 (different topic; C1 is BPR negative case, C2 is spouse-exemption mechanics).
+- **`inheriting-uk-rental-property-executors-step-by-step`**: executor-perspective page; not forward-linked because C2's angle is the surviving spouse's decisions before second death, not the executor's procedural duties after.
 
 ### Citations added (external authority)
+- IHTA 1984 s.18 (spouse exemption) — primary statutory anchor.
+- IHTA 1984 s.8A (transferable nil-rate band).
+- IHTA 1984 s.267ZA (long-term-resident election).
+- IHTA 1984 s.142 (deed of variation).
+- HMRC IHT402 (TNRB claim form, gov.uk publication).
+- HMRC IHT436 (TRNRB claim form, gov.uk publication).
+- HMRC IHTM43001 (transferable nil-rate band manual page).
+- Autumn Budget 2024 (NRB/RNRB freezes to April 2030, pension-IHT from 2027).
+
+(8 citations, slightly above the 4-7 floor; justified by the procedural-mechanics nature of the page which needs both the statutory anchors AND the HMRC form references.)
 
 ### Internal links added (to our existing pages)
+- `/blog/landlord-tax-essentials/iht-non-resident-uk-property-april-2025-residence-test` — for the section 267ZA election + LTR test detail
+- `/blog/landlord-tax-essentials/iht-residence-nil-rate-band-2m-taper-property-portfolios` × 3 — RNRB taper math (deferred sibling)
+- `/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards` × 2 — strategic-framework companion
+- `/blog/landlord-tax-essentials/iht-lifetime-gifts-7-year-rule-property-taper` — PET mechanics
+- `/blog/landlord-tax-essentials/pension-iht-april-2027-landlord-estate-planning` — pension overlay
+
+All 5 unique targets verified as existing markdown files. Wave 4 siblings C5 (DoV depth) and C9 (charitable legacy depth) referenced by slug-as-code-block without href (those pages don't exist yet; forward-links to be added in wave-close back-patch).
 
 ### Inline CTA placements
+- 1 aside after "Why first-death relief is second-death exposure" (the consolidation trap)
+- 1 aside after the £2.8m Mawell-Smith worked example (window-planning conversation)
+
+Total 2 asides (in 1-3 range). Deliberately placed after the two high-intent moments where the reader has just understood the IHT exposure scale.
 
 ### Build attempts
+- `npm run build` (after worktree-level npm install completed during C1 work). Clean.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: ✅ 14 Questions / 1 FAQPage matches the 14 entries in `faqs:`
+- Em-dashes in markdown: ✅ 0
+- Tailwind classes in markdown: ✅ 0 `class="` attributes
+- Meta title length: ✅ 59 chars (≤62)
+- Meta description length: ✅ 156 chars (≤158)
+- Internal links resolve: ✅ all 5 unique `/blog/...` targets verified as existing markdown files
+- monitored_pages row inserted: ✅ id 159 (interleaved with other sessions' inserts since C1's id 155), monitor_until 2026-08-21
+- Body word count: 3,437 (in 2,800-3,500 non-pillar target band; near upper end consistent with procedural-mechanics density)
 
 ### Flags raised to wave4_site_wide_flags.md
+- No new site-wide flags raised. (Wave-close cross-link back-patch needed once C5 + C9 ship: section "The surviving spouse's decision tree" references C5 slug `deed-of-variation-property-estate-redirecting-inheritance-iht-saving` and C9 slug `iht-charitable-legacy-property-portfolio-36-percent-reduced-rate` as code-blocks; convert to hyperlinks at wave close. Logged in discovery log.)
 
 ### 2-3 sentence summary
+
+C2 ships the second-death-window mechanics page for landlord couples: s.18 IHTA 1984 spouse exemption + s.267ZA election for non-LTR spouses + procedural TNRB/TRNRB claim mechanics on IHT402/IHT436 within 2 years of second death + the 2-year deed-of-variation window. Distinct from the Wave 2 RNRB-taper page (which holds the s.8D(5) taper math + the Marshall/Okoye/Bennett worked examples) by being scenario-led on the consolidation question and the surviving spouse's four-route decision tree (lifetime gifting / DoV / charity legacy / accept and plan liquidity), with Patel £1.5m and Mawell-Smith £2.8m worked windows that don't overlap the taper-page personas.
+

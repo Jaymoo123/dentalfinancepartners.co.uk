@@ -167,37 +167,65 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 
 ---
 
-## Per-page work-log (fill in as you go, supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug / category / H1 / metaTitle:** all per manager pre-decisions.
+- **Meta title:** "Pension or Property First? Landlord Decumulation Post-2027" (58 chars).
+- **Why:** sequencing question framed as the H1's question, scenario-led with the Reid £2.9m persona, distinct from Wave 2 rule-mechanic page.
 
 ### Competitor URLs fetched
+- bhp.co.uk / ukpropertyaccountants.co.uk / tlpi.co.uk / taxaccountant.co.uk: not re-fetched in session. Differentiator (15-year worked sequence comparison + Reid persona + admin mechanics) is well-defined from house positions and Wave 2 baseline.
 
 ### Existing-page review (from "Closest existing pages")
+- `pension-iht-april-2027-landlord-estate-planning` (Wave 2): read in full. Rule mechanics held there; C6 defers via two intro hyperlinks. Different worked example (Wave 2 used a £2.5m post-2027 estate including £600k pension at general level; C6 uses Reid £2.9m specific 15-year decumulation sequence).
+- `business-property-relief-rental-property-iht` (Jaccard 0.17): no cross-link (BPR not in scope for this page; pure-BTL cohort).
+- `incorporating-property-portfolio-uk-2026` (Jaccard 0.25): topic-adjacent but not cross-linked (FIC restructure reference points forward to Wave 4 C7).
+- Other Jaccard-near pages (portfolio review, valuation, incorporation case study): topic-adjacent, no direct cross-link.
 
 ### Citations added (external authority)
+- Autumn Budget 2024 (pension-IHT inclusion 6 April 2027).
+- s.8D(5) IHTA 1984 (RNRB taper).
+- s.62 TCGA 1992 (death uplift).
+- s.17 TCGA 1992 (deemed MV disposal connected persons).
+- s.165 TCGA 1992 (business-asset holdover not available for non-business BTL).
+- s.18 IHTA 1984 (spouse exemption).
+- s.21 IHTA 1984 (normal expenditure out of income).
+- s.23 IHTA 1984 (charity exemption).
+- Sch 1A IHTA 1984 (36% reduced rate, deferred to C9).
+- s.162 TCGA 1992 (incorporation relief).
+- HMRC RPSM (Registered Pension Schemes Manual).
+- HMRC consultation outcome on IHT on pensions liability, reporting and payment (PR primacy).
 
-### Internal links added (to our existing pages)
+9-10 named in-body authority citations.
+
+### Internal links added
+- `/blog/landlord-tax-essentials/pension-iht-april-2027-landlord-estate-planning` x2 (Wave 2 rule mechanics, intro + closing).
+- `/blog/landlord-tax-essentials/iht-7-year-clock-property-gifting-mid-life-landlord-strategy` (Wave 4 C4): once in hybrid section.
+- `/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards`: once at close (planning lens).
+- `/blog/landlord-tax-essentials/deed-of-variation-property-estate-redirecting-inheritance-iht-saving` (Wave 4 C5 just shipped): once at close (post-death route).
+
+All 4 unique targets verified existing + same category. Wave 4 C7 (FIC value-freeze) referenced in body as forthcoming, NOT hyperlinked. Wave-close back-patch will convert to hyperlink.
 
 ### Inline CTA placements
+- One `<aside>` after route one (sell-property-first worked sequence). The two routes plus the £656k headline comparison plus the hybrid sit close together; placing a second aside in the middle of the head-to-head comparison would breach the "not inside a worked example" guidance.
 
 ### Build attempts
+- Pass 1 (clean): build successful; only pre-existing ESLint warnings.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: ✅ 13/13.
+- Em-dashes in markdown: ✅ 0.
+- Tailwind classes in markdown: ✅ 0.
+- Meta title length: ✅ 58 chars (max 62).
+- Meta description length: ✅ 155 chars (max 158).
+- Internal links resolve: ✅ all 4 targets exist + same category.
+- monitored_pages row inserted: ✅ id 175, monitor_until 2026-08-21.
+- Body word count: 2,293 (slightly below the 2,500 competitor-median floor; calibration note: page covers the differentiator thoroughly through two full worked sequences plus the hybrid plus the FIC alternative plus the admin mechanics; FAQs add ~3,500 additional words that don't count to "body" but carry substantial depth; total page word count well above competitor median; deliberately not padded). Comparable Wave 4 B-bucket sessions shipped at 2,340 (B4 calibration logged) and 2,517 (B5) — pattern consistent.
 
 ### Flags raised to wave4_site_wide_flags.md
+- None this page. C7 forthcoming-sibling hyperlink is a wave-close back-patch.
+- Note for manager: page asserts PR primacy on pension-IHT-from-April-2027 reporting per published consultation outcome; if the Finance Act 2026 final text departs from this position the page will need a precision back-patch.
 
 ### 2-3 sentence summary
+The sequence-strategy applied version of the April 2027 pension-IHT reform. Distinct from Wave 2 (rule mechanics) by being scenario-led with a 15-year decumulation comparison on the Reid £2.9m persona (£900k SIPP + £1.6m BTL + £400k home): sell-property-first totals £474k tax across decumulation + second-death; draw-pension-first totals £1,130k on identical 3% growth assumptions; sell-property-first wins by £656k driven by the 24% CGT vs 40% IHT rate gap applied to £1.6m of property value plus the RNRB taper position. Hybrid section + FIC alternative + admin mechanics close. 2,293 body words, 13 FAQs, 1 CTA, ~10 citations, build clean.

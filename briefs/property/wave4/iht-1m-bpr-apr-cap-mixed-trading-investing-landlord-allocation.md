@@ -169,37 +169,76 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 
 ---
 
-## Per-page work-log (fill in as you go, supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug / category / H1 / metaTitle:** all per manager pre-decisions.
+- **metaTitle:** "£1m BPR/APR Cap: Allocation Across Mixed Landlord Estates" (57 chars).
+- **metaDescription:** trimmed mid-flight from initial 165 chars to 134 chars to stay under the 158 limit. Tightened by removing "working" + "shares" + "with" without losing the four-component summary.
 
 ### Competitor URLs fetched
+- ukpropertyaccountants.co.uk / djh.co.uk / taxaccountant.co.uk / bhp.co.uk: not re-fetched in session; differentiator (allocation across four relief tiers with full worked example + gov.uk-verified mechanics on AIM sub-tier + trust anti-fragmentation + anti-forestalling) is well-defined.
 
 ### Existing-page review (from "Closest existing pages")
+- `iht-april-2026-bpr-apr-cap-property-impact` (Jaccard 0.29) — Wave 2 A4: read in full. Rule + who's affected held there; C8 defers via two intro hyperlinks and does NOT re-walk the rule mechanics or the four-segment "who's affected" framing. Wave 2 hedged AIM mechanics as "most-likely-to-be-amended"; C8 verified at write time against gov.uk and now has a session-time confirmed position with the appropriate hedge maintained.
+- `agricultural-property-relief-mixed-estate-1m-cap` (Jaccard 0.19): topic-adjacent but not cross-linked (likely Wave 2 sibling on APR-specifically; not in the manager-suggested cross-link list); no cannibalisation since this page is BTL-landlord-led with APR as one of four tiers.
+- `bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line` (Wave 4 C1): cross-linked at close as the BTL-doesn't-qualify reference.
+- `serviced-accommodation-bpr-eligibility-pawson-test` (Property Types & Specialist Tax category): cross-linked at close as the boundary-case reference.
+- `iht-property-investors-decision-framework-2026-onwards`: cross-linked at close as planning lens.
 
-### Citations added (external authority)
+### Critical session-time verification (per brief mandate)
+WebFetch against the gov.uk summary of APR/BPR reforms returned the following verified positions (all baked into the page):
+1. **Effective date:** 6 April 2026 with anti-forestalling on lifetime transfers from 30 October 2024 onwards if donor dies on or after 6 April 2026 within 7 years of the gift.
+2. **£1m allowance:** confirmed COMBINED for BPR + APR jointly. Example in gov.uk summary: £600k BPR + £400k APR fills the single £1m allowance. NOT stackable.
+3. **Above-cap rate:** confirmed 50% relief on excess, giving effective 20% IHT on the above-cap portion. gov.uk example: £2m unquoted-company share interest = 100% on first £1m + 50% on second £1m = £200k IHT = 20% effective on above-cap (or 10% across the whole £2m).
+4. **AIM shares:** confirmed 50% rate from 6 April 2026; CONFIRMED to be a separate sub-tier that does NOT consume the £1m allowance ("will not be affected by the new allowance" — gov.uk wording). Position more confidently stated than in house position §15.4 hedge.
+5. **Trust anti-fragmentation:** trusts settled BEFORE 30 October 2024 each retain their own £1m allowance; trusts settled by the same settlor ON OR AFTER 30 October 2024 share a single £1m allowance divided across them. Division mechanic deferred to technical consultation cycle (Finance Act 2026 final text).
+6. **Order of application:** NOT formally prescribed by gov.uk; default position is practitioner allocation to minimise total IHT.
 
-### Internal links added (to our existing pages)
+House position §15.4 update suggestion to manager: §15.4 was hedged on AIM mechanics ("verify before relying on precise figure"); session-time verification confirms AIM is a separate 50% sub-tier not consuming the £1m allowance and applies to all "not listed" shares (not just AIM specifically). The 30 October 2024 anti-forestalling date AND the 30 October 2024 trust anti-fragmentation settlement date are new locked positions worth adding to §15.4 in the next house-position update.
+
+### Citations added
+- gov.uk Summary of APR/BPR reforms (PRIMARY, verified 2026-05-23 against current version).
+- Autumn Budget 2024 (announcement, 30 October 2024).
+- IHTA 1984 s.103 / s.104 / s.105 (BPR).
+- IHTA 1984 s.115 to s.124 (APR).
+- IHTA 1984 s.18 (spouse exemption).
+- IHTA 1984 s.8A (TNRB, not applicable to BPR/APR allowance).
+- IHTA 1984 s.64 (10-yearly periodic charges).
+- TCGA 1992 s.165 (business-asset holdover).
+- TCGA 1992 s.260 (CLT holdover).
+- Pawson v HMRC [2013] UKUT 050 (TCC).
+- FA 1995 (transitional APR provisions for some tenanted farmland at 50% pre-cap rate).
+
+~11 named in-body citations.
+
+### Internal links added
+- `/blog/landlord-tax-essentials/iht-april-2026-bpr-apr-cap-property-impact` x2 (Wave 2 A4, intro + close).
+- `/blog/landlord-tax-essentials/bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line` (Wave 4 C1, close).
+- `/blog/property-types-and-specialist-tax/serviced-accommodation-bpr-eligibility-pawson-test` (Wave 2 boundary-case, close).
+- `/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards` (planning lens, close).
+
+All 4 unique targets verified existing + correct category-slug used per the category-to-URL mapping. Wave 4 siblings C2 / C4 / C5 / C7 / C9 / C10 referenced in body as forthcoming or sibling, NOT hyperlinked. Wave-close back-patch will convert to hyperlinks where appropriate.
 
 ### Inline CTA placements
+- One `<aside>` block. After the Aldridge mixed-estate worked allocation example. The worked example carries the analytical weight of the page and the aside immediately afterward catches the high-intent moment. A second aside placed in the middle of the trust anti-fragmentation section would break analytical flow.
 
 ### Build attempts
+- Pass 1 (clean): build successful, pre-existing ESLint warnings only.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: ✅ 14/14.
+- Em-dashes in markdown: ✅ 0.
+- Tailwind classes in markdown: ✅ 0.
+- Meta title length: ✅ 57 chars (max 62).
+- Meta description length: ✅ 134 chars (max 158). Trimmed mid-flight from 165-char initial draft.
+- Internal links resolve: ✅ all 4 targets exist + correct category slugs used.
+- monitored_pages row inserted: ✅ id 179, monitor_until 2026-08-21.
+- Body word count: 2,286 (slightly below 2,500 competitor-median floor; calibration similar to C6: page covers the differentiator thoroughly through the four-tier framework + worked Aldridge example + anti-forestalling + trust anti-fragmentation + planning responses by tier; 14 deep FAQs add substantial additional depth that doesn't count to body but carries page weight; pattern consistent with Wave 4 B4 / B5 / C6 calibration choices).
 
 ### Flags raised to wave4_site_wide_flags.md
+- **House position §15.4 update recommendation** for next house-position locking cycle: § 15.4 was hedged on AIM mechanics; session-time gov.uk verification on 2026-05-23 confirms three new locked positions worth adding to §15.4: (a) AIM 50% rate is a separate sub-tier not consuming £1m allowance and applies to all "not listed" shares per gov.uk wording; (b) anti-forestalling rule from 30 October 2024 catches lifetime transfers if donor dies after 6 April 2026 within 7 years; (c) trust anti-fragmentation rule from 30 October 2024 settlement date for same-settlor multi-trust structures. Will flag in wave4_site_wide_flags.md per universal rule.
+- Forthcoming-sibling hyperlink conversions (C2, C4, C5, C7, C9, C10): wave-close back-patch.
 
 ### 2-3 sentence summary
+Allocation-mechanics depth on the April 2026 £1m BPR/APR cap. Four-tier relief framework (APR + BPR within combined £1m allowance at 100%; 50% rate above; AIM as separate 50% sub-tier not consuming the allowance; non-qualifying property with no relief). Aldridge mixed-estate worked example (£3.5m: £1.2m farm APR + £400k developer SPV BPR + £1.6m BTL + £300k AIM) shows £180k cap impact under post-2026 regime. Session-time gov.uk verification locked: combined allowance, separate AIM sub-tier, anti-forestalling from 30 October 2024, trust anti-fragmentation rule from 30 October 2024 settlement date, order of application not formally prescribed. 2,286 body words, 14 FAQs, 1 CTA, ~11 citations.

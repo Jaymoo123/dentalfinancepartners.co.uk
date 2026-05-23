@@ -168,37 +168,82 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 
 ---
 
-## Per-page work-log (fill in as you go, supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug / category / H1 / metaTitle:** all per manager pre-decisions.
+- **metaTitle:** "FIC Value-Freeze for IHT: A Strategic Frame for Landlords" (57 chars).
+- **metaDescription:** trimmed mid-flight from 164 chars to 157 chars to stay within 158 limit.
+- **Sequencing note:** C7 was deferred per launch-prompt instruction until A8/A9 shipped. A6 (1616ecb), A7 (ac66b50), A8 (acfde81), A9 (c5887e9), A10 (2514e02) all committed on property-wave4-a branch by 2026-05-23 13:40Z. C7 written after all five A-bucket FIC pages were shipped, so cross-link discipline against Session A's operational pages is now well-grounded.
 
 ### Competitor URLs fetched
+- uklandlordtax.co.uk / tlpi.co.uk / ukpropertyaccountants.co.uk / taxaccountant.co.uk: not re-fetched in session. Differentiator (strategic IHT framing only, with three-route comparison table + IHT footprint cap analysis + cross-bucket boundary discipline) is well-defined.
 
 ### Existing-page review (from "Closest existing pages")
+- `pension-iht-april-2027-landlord-estate-planning` (Jaccard 0.33): not directly cross-linked from C7 (pension-IHT is parallel to FIC value-freeze rather than competing with it; the reader can run both routes); C6 covers the pension-side sequencing already.
+- `iht-residence-nil-rate-band-2m-taper-property-portfolios` (Jaccard 0.21): taper threshold referenced in the page's "why above £2m" section; not directly cross-linked but the s.8D(5) mechanics are referenced.
+- Existing FIC pages (all in incorporation-and-company-structures category) cross-linked at intro and close: `fic-iht-treatment-bpr-myth` (intro), `fic-complete-guide-property-wealth-transfer` (close), `fic-growth-shares-and-freezer-shares-design` (close), `fic-vs-discretionary-trust-property-comparison` (close).
+
+### Critical cross-bucket boundary discipline
+Per the launch-prompt mandate: "C7 owns the strategic IHT value-freeze framing for portfolio landlords ~£2m+. It cites Bucket A pages A6 (articles drafting), A7 (governance), A8 (in-life retirement income), A9 (share-gift PET mechanics at point of gift), A10 (blended-family persona) as sibling pages providing the operational mechanics, WITHOUT re-walking their ground. C7's framing must compare FIC value-freeze vs direct property 7-year PET (C4) and CLT into discretionary trust (C10). If your draft of C7 drifts into A8 (drawdown mechanics) or A9 (gift-point mechanics) territory, STOP and pull back into the strategic IHT framing."
+
+Discipline applied: dedicated "Where the operational mechanics live" closing section enumerates A6/A7/A8/A9/A10 forward-links with one-sentence descriptions of what each owns and a clear instruction that operational readers follow the cross-link. C7 body holds the strategic framing only: value-freeze concept, 7-year PET clock on share gift, IHT footprint cap, BPR/Pawson read-through, GROB on FIC, three-route comparison, year-15 worked picture. No drift into share-class drafting details (A6 territory), no drift into operational governance (A7 territory), no drift into drawdown rate optimisation (A8 territory), no drift into share-valuation mechanics at point of gift (A9 territory), no drift into blended-family persona-specific drafting (A10 territory). The page reads as the "why and where this fits" of the FIC route; the operational sibling pages cover the "how".
 
 ### Citations added (external authority)
+- IHTA 1984 s.3A (PETs definition).
+- IHTA 1984 s.7 (rates) + s.7(4) (taper).
+- IHTA 1984 s.8D(5) (RNRB taper measurement of estate value).
+- IHTA 1984 s.105 (BPR test) + s.105(3) (mainly-investment exclusion).
+- FA 1986 s.102 (GROB) + s.102(1)(b) (entire-exclusion test).
+- TCGA 1992 s.17 (deemed MV disposal).
+- TCGA 1992 s.165 + Sch 7 (s.165 unavailable for investment FIC).
+- TCGA 1992 s.260 (CLT holdover, comparison).
+- TCGA 1992 s.162 (incorporation relief test).
+- Pawson v HMRC [2013] UKUT 050 (TCC).
+- HMRC IHTM25000+ (BPR).
+- HMRC IHTM14000+ (gifts and exempt transfers).
+- CTA 2010 s.18N (CIHC carve-out, referenced sparingly).
+- s.21 IHTA 1984 (normal expenditure out of income, life cover premium exemption).
 
-### Internal links added (to our existing pages)
+~14 named in-body citations.
+
+### Internal links added
+- `/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards` (intro, planning lens).
+- `/blog/incorporation-and-company-structures/fic-iht-treatment-bpr-myth` (intro, BPR-myth deferral).
+- `/blog/incorporation-and-company-structures/fic-articles-of-association-property-control-mechanics` (Wave 4 A6 close).
+- `/blog/incorporation-and-company-structures/fic-property-corporate-governance-board-meetings-resolutions-discipline` (Wave 4 A7 close).
+- `/blog/incorporation-and-company-structures/fic-property-retirement-decumulation-mechanics-uk` (Wave 4 A8 close).
+- `/blog/incorporation-and-company-structures/fic-gifting-shares-children-property-7-year-iht-mechanics` (Wave 4 A9 close).
+- `/blog/incorporation-and-company-structures/fic-blended-family-protected-legacy-property-second-marriage` (Wave 4 A10 close).
+- `/blog/landlord-tax-essentials/iht-7-year-clock-property-gifting-mid-life-landlord-strategy` (Wave 4 C4, comparison + close).
+- `/blog/landlord-tax-essentials/iht-clt-property-discretionary-trust-20-percent-entry-charge` (Wave 4 C10, comparison + close).
+- `/blog/landlord-tax-essentials/bpr-pure-btl-pawson-test-why-buy-to-let-fails-investment-line` (Wave 4 C1, Pawson reference).
+- `/blog/landlord-tax-essentials/iht-1m-bpr-apr-cap-mixed-trading-investing-landlord-allocation` (Wave 4 C8, cap interaction).
+- `/blog/landlord-tax-essentials/iht-gift-with-reservation-letting-children-paying-rent-mechanics` (Wave 4 C3, GROB cross-link).
+- `/blog/incorporation-and-company-structures/fic-vs-discretionary-trust-property-comparison` (existing side-by-side comparison, close).
+- `/blog/incorporation-and-company-structures/fic-complete-guide-property-wealth-transfer` (existing FIC overview, close).
+- `/blog/incorporation-and-company-structures/fic-growth-shares-and-freezer-shares-design` (existing share-design page, close).
+
+15 unique target paths. **Important note on link resolution at branch-build time:** the Wave 4 A6/A7/A8/A9/A10 pages are committed on the `property-wave4-a` branch (per tracker confirmation 2026-05-23) but do NOT exist in the `property-wave4-c` worktree's filesystem. At this branch's build time, those 5 hyperlink targets do not resolve to actual files; they will resolve at wave-close merge to main. Build still succeeds because Next.js does not validate href targets at build time (markdown anchors are emitted as HTML without target-resolution check). Pattern is consistent with how Wave 4 A8/A9 in turn cross-linked forward to C7 in their own work-logs (cross-bucket coordination accepts that wave-close is where the network closes).
 
 ### Inline CTA placements
+- Zero `<aside>` blocks. Page is comparison-led and structurally heavy on the three-route table and the year-15 worked picture (which carry the conversion weight). Adding asides in the middle of a comparison table or a year-by-year IHT picture would break analytical flow. Justified deviation from the standard 1-3 aside guidance for this page given the comparison-led structure.
 
 ### Build attempts
+- Pass 1 (clean): build successful, pre-existing ESLint warnings only.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: ✅ 13/13.
+- Em-dashes in markdown: ✅ 0.
+- Tailwind classes in markdown: ✅ 0.
+- Meta title length: ✅ 57 chars (max 62).
+- Meta description length: ✅ 157 chars (max 158). Trimmed mid-flight from 164 to 157.
+- Internal links resolve: ⚠️ PARTIAL. 10 of 15 hyperlink targets exist in this worktree (the existing FIC pages + Wave 2 + Wave 4 C-bucket pages I have shipped). 5 of 15 targets (A6, A7, A8, A9, A10) exist on property-wave4-a branch but not in this worktree's filesystem; will resolve at wave-close merge. Cross-bucket pattern matches Session A's own forward-references to C7. Build succeeds.
+- monitored_pages row inserted: ✅ id 186, monitor_until 2026-08-21.
+- Body word count: 2,544 (mid-band of 2,500-3,500).
 
 ### Flags raised to wave4_site_wide_flags.md
+- None this page. The cross-bucket A6-A10 link resolution at wave-close is implicit in the wave's cross-bucket coordination plan; not a session-side flag.
 
 ### 2-3 sentence summary
+The strategic IHT framing of the FIC value-freeze for portfolio landlords c.£2m+. Founder retains preference shares (frozen value, stays in estate); growth shares gifted to next generation starting the 7-year PET clock; after 7 years all future portfolio growth is outside the estate. Three-route comparison (FIC value-freeze vs CLT into discretionary trust vs direct property PET) on a £2m portfolio; year-15 worked picture showing £500-700k IHT saving against £150-250k CGT cost at incorporation+gift. Cross-bucket boundary policed: operational mechanics deferred to A6/A7/A8/A9/A10 via dedicated closing section, NOT re-walked. C7 closes Session C's 10 IHT pages. 2,544 body words, 13 FAQs, 0 CTAs (justified by comparison-led structure), ~14 citations.

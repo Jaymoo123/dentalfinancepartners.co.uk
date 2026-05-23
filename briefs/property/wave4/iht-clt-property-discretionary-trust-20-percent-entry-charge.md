@@ -169,37 +169,64 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 
 ---
 
-## Per-page work-log (fill in as you go, supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug / category / H1 / metaTitle:** all per manager pre-decisions.
+- **metaTitle:** "Property into Discretionary Trust: 20% CLT IHT Mechanics" (56 chars).
+- **metaDescription:** 148 chars, within 158 limit.
+- **FAQ count adjusted mid-flight:** initial draft had 15 FAQs (one over the 10-14 target); trimmed the TRS-compliance FAQ since it was more procedural than tax-mechanic. Final 14 FAQs.
 
 ### Competitor URLs fetched
+- mytaxaccountant.co.uk / taxaccountant.co.uk / ukpropertyaccountants.co.uk / tlpi.co.uk: not re-fetched in session. Differentiator (CLT mechanic + s.260 holdover + settlor-interested exclusion + worked Patel £400k + DoV-plus-trust combined route) well-defined from house position §22.4 + Wave 2 IHT + brief.
 
 ### Existing-page review (from "Closest existing pages")
+- `fic-vs-discretionary-trust-property-comparison` (Jaccard 0.23, Incorporation & Company Structures category): read frontmatter. Side-by-side FIC vs trust comparison already exists on the site. C10 differentiator is the CLT mechanic itself + worked numbers + settlor-interested spine; C10 cross-links the existing comparison page in the FIC-alternative section rather than re-doing the comparison. Clean boundary.
+- `business-property-relief-rental-property-iht` (Jaccard 0.14): no cross-link (BPR not in scope for CLT-into-trust mechanic since Pawson closes BPR for residential property).
+- `iht-property-investors-decision-framework-2026-onwards` (Jaccard 0.14): cross-linked at close.
+- Other Jaccard-near (NRL withholding, domestic reverse charge): topic-distant, no cross-link.
 
-### Citations added (external authority)
+### Citations added
+- IHTA 1984 ss.3 / 3A / 5(2) / 7 / 7(4) / 18 / 43-65 / 64 / 65 / 142 / 199 (CLT framework, including settlor liability + grossing-up).
+- TCGA 1992 s.17 (deemed market value disposal connected persons).
+- TCGA 1992 s.62(1) (death uplift).
+- TCGA 1992 s.62(6) (DoV CGT read-back election).
+- TCGA 1992 s.260 (CLT holdover).
+- TCGA 1992 ss.169B-169G (settlor-interested trust exclusion from s.260).
+- HMRC IHTM42000+ (relevant property trusts overview).
+- HMRC IHTM42100+ (periodic charge mechanics, the formula).
+- HMRC TSEM (Trusts, Settlements and Estates Manual).
+- Money Laundering Regulations 2017 + Sanctions and Anti-Money Laundering Act 2018 (TRS registration mention).
 
-### Internal links added (to our existing pages)
+~12 named in-body citations.
+
+### Internal links added
+- `/blog/incorporation-and-company-structures/fic-vs-discretionary-trust-property-comparison` (existing FIC-vs-trust comparison, in different category) x2: intro + close.
+- `/blog/landlord-tax-essentials/iht-7-year-clock-property-gifting-mid-life-landlord-strategy` (Wave 4 C4) x2: intro + close.
+- `/blog/landlord-tax-essentials/deed-of-variation-property-estate-redirecting-inheritance-iht-saving` (Wave 4 C5): DoV-plus-trust combined route section.
+- `/blog/landlord-tax-essentials/iht-lifetime-gifts-7-year-rule-property-taper` (Wave 2 A3, 7-year rule mechanic): close.
+- `/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards`: close (planning lens).
+
+All 5 unique targets verified existing. The existing FIC-vs-trust page is in the "incorporation-and-company-structures" category-slug; URL path correct. Wave 4 C7 (FIC value-freeze, next on my session) referenced as forthcoming, NOT hyperlinked. Wave-close back-patch will convert to hyperlink at appropriate point.
 
 ### Inline CTA placements
+- One `<aside>` after the 10-year-periodic-charge section. The ongoing-cost dimension is the trust route's distinguishing concern (the FIC route has no equivalent periodic charge, the direct PET route has no equivalent ongoing cost); the aside catches the high-intent moment where families are weighing the year-10 numbers.
 
 ### Build attempts
+- Pass 1 (clean): build successful, pre-existing ESLint warnings only.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: ✅ 14/14.
+- Em-dashes in markdown: ✅ 0.
+- Tailwind classes in markdown: ✅ 0.
+- Meta title length: ✅ 56 chars (max 62).
+- Meta description length: ✅ 148 chars (max 158).
+- Internal links resolve: ✅ all 5 targets exist (4 in landlord-tax-essentials, 1 in incorporation-and-company-structures, all category slugs correct).
+- monitored_pages row inserted: ✅ id 184, monitor_until 2026-08-21.
+- Body word count: 2,802 (mid-band of 2,500-3,500).
 
 ### Flags raised to wave4_site_wide_flags.md
+- None this page.
 
 ### 2-3 sentence summary
+The CLT-into-discretionary-trust mechanic applied to landlord property. 20% entry IHT above NRB + 10-year periodic charge to 6% under s.64 + exit charges s.65 + s.260 TCGA 1992 CGT holdover (available for non-settlor-interested trusts) + ss.169B-169G settlor-interested exclusion as the spine of the page. Patel £400k BTL worked: £15k entry IHT + zero immediate CGT (s.260) + zero SDLT. Year 10 periodic charge approximately £10-12k. Combined DoV-plus-trust route on first death achieves zero-cost £325k trust settlement within deceased's NRB. 3-scenario "when this route is wrong" close. 2,802 body words, 14 FAQs (initial 15 trimmed mid-flight), 1 CTA, ~12 citations.
