@@ -121,7 +121,7 @@ faqs:
 <ul>
 <li>Application and renewal fees are <strong>revenue expenses</strong> deductible against rental income in the year paid (or spread under accruals where the licence period straddles tax years).</li>
 <li>Pre-licence remedial works (fire doors, hard-wired alarms, escape signage) are <strong>capital improvements</strong>, not deductible against rental income, but added to the base cost for CGT on disposal.</li>
-<li>Penalties for unlicensed letting (unlimited fines under Housing Act 2004 s.72, rent repayment orders up to 12 months under Housing and Planning Act 2016) are <strong>not deductible</strong>.</li>
+<li>Penalties for unlicensed letting (unlimited fines under Housing Act 2004 s.72, rent repayment orders up to 2 years under Housing and Planning Act 2016, extended from 12 months by RRA 2025 s.98 in force 1 May 2026) are <strong>not deductible</strong>.</li>
 </ul>
 
 <p>The current BCP licensing map and scheme conditions are at <a href="https://www.bcpcouncil.gov.uk/Housing/Private-rented-housing/Houses-in-Multiple-Occupation-HMOs/Houses-in-Multiple-Occupation-HMOs.aspx" rel="external nofollow" target="_blank">bcpcouncil.gov.uk</a>.</p>

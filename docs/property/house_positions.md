@@ -702,15 +702,19 @@ Extends and **replaces** §12 with enacted detail. §12 was written when the Bil
 
 - **Section 21 of the Housing Act 1988 ("no-fault" eviction) is abolished** for assured tenancies under the Act's tenancy reforms.
 - **Section 8** is restructured with a substantially expanded list of possession grounds: rent arrears (extended threshold and notice period), anti-social behaviour, landlord-sale and landlord-occupation grounds (with 12-month restriction on re-letting after possession), and tenant-breach grounds.
-- New tenant notice period: tenants can end the tenancy with **2 months' written notice** at any point (the periodic-tenancy default makes fixed-term lock-in unavailable).
+- New tenant notice period: tenants can end the tenancy with **2 months' written notice** at any point. The 2-month floor is set by **RRA 2025 s.5 amending Protection from Eviction Act 1977 to insert s.5(1ZA)**, independent of the periodic-tenancy mechanic.
 - Landlord re-letting restriction: after possession on landlord-sale or landlord-occupation grounds, the property cannot be re-let for **12 months**. Breach is an offence with civil penalty up to £40,000.
+
+**Correction logged 2026-05-23 (F-14):** earlier §20.2 framed the tenant 2-month notice as a consequence of the periodic-tenancy default ("fixed-term lock-in unavailable"). The actual statutory hook is **RRA 2025 s.5** amending Protection from Eviction Act 1977 to insert **PEA 1977 s.5(1ZA)**, which sets the 2-month floor independent of the periodic-tenancy mechanic. Pinning the statutory source prevents future writers from collapsing two distinct provisions. Verified via §20 verification pass against legislation.gov.uk and enacted-Act PDF (lines 2477-2491), 2026-05-23.
 
 ### 20.3 Periodic-tenancy default and AST phase-out
 
 - All new assured tenancies are **periodic from grant** under the Act.
 - Existing **fixed-term assured shorthold tenancies (ASTs)** convert to periodic on commencement of the relevant Part of the Act (statutory instrument). The Government's published transition window allowed an existing-tenancy conversion period; sessions citing the transition date should refer to the most recent commencement SI rather than rely on press estimates.
 - **Default rent period:** monthly (max one month). Six-monthly or annual rent periods are no longer permitted.
-- Pre-existing fixed-term leases of 7+ years and most company-let / business tenancies are outside the assured tenancy regime and unaffected.
+- **Fixed-term tenancies of more than 21 years** are outside the assured tenancy regime (HA 1988 Sch 1 para 3D, inserted by RRA 2025 s.31). **Fixed-term tenancies of 7 to 21 years** granted before the Act passed (or within a two-month transitional window) are also outside (HA 1988 Sch 1 para 3E) but this is a **closed transitional cohort, not an ongoing carve-out**. Going forward, only fixed terms longer than 21 years sit outside the assured regime. Most company-let and business tenancies remain outside on the existing HA 1988 carve-outs and are unaffected by the reform.
+
+**Correction logged 2026-05-23 (F-15):** earlier §20.3 collapsed two distinct paragraphs of HA 1988 Sch 1 (paras 3D and 3E) into one phrase, "fixed-term leases of 7+ years". The enacted Act inserts both paragraphs via RRA 2025 s.31: **para 3D** carves out fixed terms of more than 21 years (prospective, ongoing); **para 3E** carves out fixed terms of 7 to 21 years only where granted before the Act passed or within a closed two-month transitional window. The "7+ years" framing risked misleading future writers into thinking new 10-year ASTs sit outside the assured regime; they do not. Going forward, only fixed terms longer than 21 years sit outside. Verified via §20 verification pass against legislation.gov.uk and enacted-Act PDF (lines 3040-3097), 2026-05-23.
 
 ### 20.4 Decent Homes Standard extended to PRS
 
@@ -722,8 +726,10 @@ Extends and **replaces** §12 with enacted detail. §12 was written when the Bil
 
 - **Private Rented Sector Database**, a national register of landlords and their properties. Registration is mandatory before a property can be let.
 - Database records: landlord ID, property addresses, compliance status (gas safety, EICR, EPC, Right to Rent checks, deposit protection).
-- **PRS Ombudsman**, single statutory ombudsman scheme covering all landlords. Landlords must register; tenants can escalate disputes without a court route. Ombudsman decisions can require compensation up to £25,000.
+- **PRS Ombudsman**, single statutory ombudsman scheme covering all landlords. Landlords must register; tenants can escalate disputes without a court route. **Ombudsman compensation cap is to be set by regulations under RRA 2025 s.65(2)(j)**; the £25,000 figure widely cited in policy commentary is a government expectation, not on the face of the enacted Act.
 - Operating outside the database or refusing to join the ombudsman = civil penalty up to £40,000 or banning order.
+
+**Correction logged 2026-05-23 (F-13):** earlier §20.5 stated "Ombudsman decisions can require compensation up to £25,000". This figure is **not on the face of the enacted Act**. RRA 2025 s.65(2)(j) only provides that regulations *may* require members to "provide redress... including paying compensation"; no monetary cap is set in the Act. The £25,000 figure is a government policy expectation widely circulated in commentary but lacks statutory basis. The Wave 3 page `prs-database-landlord-ombudsman-registration-requirements.md` already uses the safer "anticipated at £25,000 on current policy" form; the house position now matches that hedging. Verified via §20 verification pass against legislation.gov.uk 2026-05-23.
 
 ### 20.6 Rent-rise mechanics, Section 13 reform, and tribunal challenge
 
@@ -747,7 +753,12 @@ Extends and **replaces** §12 with enacted detail. §12 was written when the Bil
 
 - Landlords and letting agents **cannot invite or accept offers above the advertised rent**.
 - The advertised rent is the statutory ceiling for the marketing period; rent increases occur after the tenancy starts via the Section 13 procedure (§20.6).
-- **Advance rent prohibited beyond the first month**, landlords cannot demand 6 or 12 months upfront as a deposit-substitute.
+- **Advance rent prohibited on two layers**:
+  - **(i) Pre-tenancy:** RRA 2025 s.9 amends the Tenant Fees Act 2019 to make any pre-lease rent payment a prohibited payment (with carve-outs in the new permitted-payment para 1A).
+  - **(ii) Post-tenancy:** RRA 2025 s.8 inserts HA 1988 s.4B making terms providing for rent due in advance of the rent period of no effect, with carve-outs for "initial rent" payable during an "initial 28 day period" and rent due during a "permitted pre-tenancy period" (the gap between contract execution and the first day of the tenancy).
+- Combined effect: landlords cannot demand 6 or 12 months upfront as a deposit-substitute.
+
+**Correction logged 2026-05-23 (F-16):** earlier §20.8 framed advance-rent restrictions as a single "first month" rule. The enacted Act creates two separate regimes. **(i) Pre-tenancy:** RRA 2025 s.9 amends the Tenant Fees Act 2019 to make any pre-lease rent payment a prohibited payment (with carve-outs in the new permitted-payment para 1A). **(ii) Post-tenancy:** RRA 2025 s.8 inserts HA 1988 s.4B making terms providing for rent due in advance of the rent period of no effect, with carve-outs for "initial rent" payable during an "initial 28 day period" and rent due during a "permitted pre-tenancy period" (the gap between contract execution and the first day of the tenancy). The previous single-rule framing risked misleading writers about which prohibition applies pre- vs post-lease. Verified via §20 verification pass against legislation.gov.uk and enacted-Act PDF, 2026-05-23.
 
 ### 20.9 Transition for existing tenancies
 
@@ -759,18 +770,22 @@ Extends and **replaces** §12 with enacted detail. §12 was written when the Bil
 
 - Local authorities have expanded investigatory powers (entry, document production).
 - Civil penalty regime: up to **£40,000** per offence for serious breaches (operating outside database, breach of re-letting restriction, repeated decent-homes failures).
-- **Rent Repayment Orders** (RROs) extended to new offences; tenants can claim up to 12 months' rent.
+- **Rent Repayment Orders** (RROs) extended to new offences; tenants can claim up to **2 years' rent** (extended from 12 months by RRA 2025 s.98 amending HPA 2016 ss.41, 42 and 44, in force 1 May 2026 per SI 2026/421 reg.3).
 - **Banning orders** for repeat or serious offenders.
+
+**Correction logged 2026-05-23 (F-12):** earlier §20.10 stated "tenants can claim up to 12 months' rent" for Rent Repayment Orders. The enacted RRA 2025 s.98 substitutes "**2 years**" for "12 months" across Housing and Planning Act 2016 ss.41(2)(b), 42(5), and 44, doubling the RRO maximum claim period. In force 1 May 2026 per SI 2026/421 reg.3. Two existing live pages (`london-property-accountant.md` line 124 and `property-accountant-bournemouth-landlords-tax-services.md` lines 38-40 and 207) carried the legacy 12-month figure and have been back-patched in the same commit as this correction. Verified via §20 verification pass against legislation.gov.uk and enacted-Act PDF (lines 8678-8687 and 9179-9180), 2026-05-23.
 
 ### 20.11 Tax implications for landlords (Property Tax Partners angle)
 
 These are the items most relevant to the firm's positioning, not the legal-services-firm positioning competitor sites lean on:
 - **Rent-increase frequency limits** affect cash-flow modelling and Section 24 (§4) interactions: where mortgage interest rises faster than the Section 13-permitted annual rent increase, the landlord's S24 tax credit cap may bind earlier.
 - **12-month landlord-sale re-letting restriction** affects timing of CGT disposals: a landlord taking possession on landlord-sale grounds must complete the sale within the 12-month re-let window or face a 12-month income gap.
-- **Pet damage insurance** (where required as a consent condition) is a deductible expense against rental income.
+- **Landlord's own pet damage insurance** (the £30 to £80 annual uplift over standard cover noted in §20.7) is deductible as ordinary landlord insurance against rental income. Pet damage insurance **cannot lawfully be required as a consent condition** on the tenant; see §20.7 for the underlying rule.
 - **PRS database registration fees and Ombudsman subscription** are deductible as professional expenses of the rental business.
 - **Decent Homes Standard compliance spend**, repairs are revenue-deductible; capital improvements add to base cost for CGT.
 - **Sale-driven possession route** affects the §17.4 NRCGT timeline for non-resident landlords selling UK property.
+
+**Correction logged 2026-05-23 (F-17):** earlier §20.11 bullet 3 stated "Pet damage insurance (where required as a consent condition) is a deductible expense". Following the F-11 correction to §20.7, pet damage insurance **cannot lawfully be required as a consent condition** under the enacted Act. The §20.11 bullet was internally inconsistent with the corrected §20.7 (housekeeping omitted during F-11 back-patching, not a fresh legal drift). Rewritten to: landlord's own pet damage insurance (the £30 to £80 annual uplift in §20.7) is deductible as ordinary landlord insurance; pet damage insurance cannot be required as a consent condition on the tenant. Cross-reference to §20.7 added to prevent future drift. Verified via §20 verification pass 2026-05-23.
 
 ### 20.12 Commencement timeline (Wave 3 Stage 2 verification, locked 2026-05-22)
 
