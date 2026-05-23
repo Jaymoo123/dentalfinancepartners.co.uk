@@ -112,7 +112,7 @@ editorialNote: "Process-led companion to the CGT on inherited rental property ca
 
 <h3>Deposit re-registration</h3>
 
-<p>Where the tenant paid a deposit under an assured shorthold tenancy after 6 April 2007, the deposit must be protected in one of three statutory schemes (DPS, MyDeposits, TDS) within 30 days. On a change of landlord, the new landlord must re-register the deposit and serve fresh prescribed information within 30 days of the change (Housing Act 2004 ss.213-215). The PRs re-register on death and the beneficiary re-registers again on assent. Missing the 30-day deadline exposes the new landlord to a court order of one to three times the deposit value and disables the section 21 no-fault eviction route (where still available; the Renters' Rights Act 2026 is in passage and re-shapes the section 21 framework, but the deposit-protection penalty survives the reform).</p>
+<p>Where the tenant paid a deposit under an assured shorthold tenancy after 6 April 2007, the deposit must be protected in one of three statutory schemes (DPS, MyDeposits, TDS) within 30 days. On a change of landlord, the new landlord must re-register the deposit and serve fresh prescribed information within 30 days of the change (Housing Act 2004 ss.213-215). The PRs re-register on death and the beneficiary re-registers again on assent. Missing the 30-day deadline exposes the new landlord to a court order of one to three times the deposit value and disables the section 21 no-fault eviction route (where still available; the Renters' Rights Act 2025 (2025 c. 26, Royal Assent 27 October 2025) has now re-shaped the section 21 framework, but the deposit-protection penalty survives the reform).</p>
 
 <h3>The PRs' CGT position if a sale arises during administration</h3>
 
