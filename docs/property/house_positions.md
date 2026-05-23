@@ -1328,7 +1328,7 @@ Cross-references §15 (IHT spousal exemption, GROB), §19.4 (MTD threshold for j
 
 **CGT on the trust declaration itself:**
 - Inter-spouse transfer is at no-gain-no-loss (TCGA 1992 s.58, see §24.4) where spouses living together. No CGT charge on creating or varying the beneficial interest between cohabiting spouses.
-- Post-separation: s.58(1D) (inserted by FA 2023) extends no-gain-no-loss to disposals in accordance with a court order or formal separation agreement; otherwise the transferring spouse may have a chargeable disposal.
+- Post-separation: s.58(1D) (inserted by Finance (No. 2) Act 2023 c.30 s.41(2)(6), in force 6 April 2023) extends no-gain-no-loss to disposals in accordance with a court order or formal separation agreement; otherwise the transferring spouse may have a chargeable disposal.
 
 ### 24.4 TCGA 1992 s.58, no-gain-no-loss spouse transfer
 
@@ -1340,7 +1340,7 @@ Cross-references §15 (IHT spousal exemption, GROB), §19.4 (MTD threshold for j
 - The CGT crystallises only when the receiving spouse later disposes to a third party.
 - "Living together" is given the s.288 definition: spouses are treated as living together unless separated under a court order, by formal deed of separation, or in circumstances likely to be permanent.
 
-**Post-separation extension (FA 2023, in force 6 April 2023):**
+**Post-separation extension (Finance (No. 2) Act 2023 c.30 s.41(2)(6), in force 6 April 2023):**
 - s.58(1D) extends no-gain-no-loss to disposals made in accordance with a divorce settlement, court order, or formal separation agreement, for up to **3 tax years** after the year of separation (s.58(1A)-(1B)).
 - Pre-2023 separating spouses had only the tax year of separation; the 2023 extension to 3 years was a major reform for divorcing couples.
 
@@ -1445,7 +1445,7 @@ HMRC's typical enquiry pattern for joint-ownership tax planning, drawn from TSEM
 
 - **Statutory base:**
   - ITA 2007 s.836 (50/50 income split): `https://www.legislation.gov.uk/ukpga/2007/3/section/836`.
-  - TCGA 1992 s.58 (no-gain-no-loss spouse transfer): `https://www.legislation.gov.uk/ukpga/1992/12/section/58`.
+  - TCGA 1992 s.58 (no-gain-no-loss spouse transfer): `https://www.legislation.gov.uk/ukpga/1992/12/section/58`. Sub-sections (1A)-(1D) (3-tax-year post-separation window) inserted by **Finance (No. 2) Act 2023 c.30 s.41(2)(6)**, in force 6 April 2023. Note: the inserting Act is Finance (No. 2) Act 2023, NOT Finance Act 2023 (two separate Acts of the same calendar year — same-year-different-Act drift trap, see F-18 in `track2_site_wide_flags.md`).
   - TCGA 1992 s.222 (main residence; sub-s.222(5) election; sub-s.222(6) one-residence-per-couple): `https://www.legislation.gov.uk/ukpga/1992/12/section/222`.
   - TCGA 1992 s.17 (market-value disposal); s.286 (connected persons).
   - FA 1986 s.102 (GROB).
@@ -1473,7 +1473,7 @@ HMRC's typical enquiry pattern for joint-ownership tax planning, drawn from TSEM
 - "Form 17 takes effect from the start of the tax year" (false; from the date of the last spouse's signature).
 - "Form 17 can be filed up to 12 months after signature" (false; 60 days strict).
 - "Unmarried cohabitees can use Form 17" (false; spouses / civil partners only).
-- "Inter-spouse property transfer triggers CGT at market value" (false; s.58 no-gain-no-loss for cohabiting spouses; or for the 3-tax-year separation window under s.58(1A)-(1B) per FA 2023).
+- "Inter-spouse property transfer triggers CGT at market value" (false; s.58 no-gain-no-loss for cohabiting spouses; or for the 3-tax-year separation window under s.58(1A)-(1B) per Finance (No. 2) Act 2023 c.30 s.41).
 - "Each spouse can have their own main residence for PPR" (false; one residence per couple per s.222(6)).
 - "Declaration of trust between spouses always triggers SDLT" (false; only where the receiving spouse assumes a share of mortgage debt, see §24.3 trap).
 - "Gift of property share to adult child has no CGT consequence" (false; connected-person disposal at MV under s.17 / s.286; no holdover for non-business BTL).

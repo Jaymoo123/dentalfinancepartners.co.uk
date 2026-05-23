@@ -70,7 +70,7 @@ faqs:
 
 <h2>The 60-day clock</h2>
 
-<p>The 60-day period runs from the completion date of the disposal, not the exchange date. Where contracts have an unconditional exchange but completion is delayed, the obligation crystallises on completion. The statutory framework sits in Schedule 2 to the Finance Act 2019 (now within sections 222 to 233 of the Finance Act 2019, as amended), and the operational details are on <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax">HMRC's CGT on UK property service</a>.</p>
+<p>The 60-day period runs from the completion date of the disposal, not the exchange date. Where contracts have an unconditional exchange but completion is delayed, the obligation crystallises on completion. The statutory framework sits in Schedule 2 to the Finance Act 2019 (paragraph 3 sets the reporting and payment obligation, extended from 30 to 60 days by the Finance Act 2022), and the operational details are on <a href="https://www.gov.uk/report-and-pay-your-capital-gains-tax">HMRC's CGT on UK property service</a>.</p>
 
 <p>For a property completing on Wednesday 17 June 2026, the 60-day deadline falls on Sunday 16 August 2026. The deadline is not extended for weekends or bank holidays in the CGT on UK property service, so filing on the next working day would still be late. Filing earlier is straightforward and is generally the right approach if the calculation is settled.</p>
 
