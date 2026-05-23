@@ -208,3 +208,4 @@ Spawn Monitor task on Q&A file watching for STATUS answered flip; keep working a
 - 
 
 ### 2-3 sentence summary
+Disposal-side depth page walking CAA 2001 ss.55 (AQE vs TDR), 61 (8-event taxonomy), 65 (final period), with three worked scenarios (clean s.198 election at TWDV; no-election default generating £30.5k balancing charge; MVL distribution-in-specie as s.61 event 8 with cross-ref to A4). SBA Part 2A no-balancing-event contrast surfaced with TCGA 1992 s.37B add-back framing. Final-period and super-deduction historic-clawback summary sections forward-link to C10. metaTitle 60 chars; 11 FAQs; 3,440 body words (within 2,800-3,500 target). Built clean, MP id 223, committed d0f2931. Flag F-9 raised on Wave 1 CGT-commercial page (pre-30-Oct-2024 rates).
