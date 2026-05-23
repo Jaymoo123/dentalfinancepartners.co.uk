@@ -80,7 +80,7 @@ All sites are lead-gen handoffs to a partner firm. Don't conflate with the Prope
 
 ## 3. Where we are right now (this section updates every wave)
 
-**Last updated:** 2026-05-23 PM — Wave 6 prep Stage 1 complete (30 brief-seeds + §22 extension §22.9-§22.15 + new §25 CAA 2001 cluster §25.1-§25.10 locked on main).
+**Last updated:** 2026-05-24 AM — **Wave 6 RUN COMPLETE, CLOSE PENDING.** All 30 pages shipped overnight across 3 worktree branches; NOT YET MERGED to main. 39 flags + 0 real Q&A (4th consecutive zero-factual-Q&A wave) + 74 discovery items. User instruction: "pick this up in the morning" — full close plan staged in §19 for fresh manager pickup.
 
 **`main` is at `14c15be`.** 151 net-new pages from Wave 1 (31) + Wave 2 (30) + Wave 3 (30) + Wave 4 (30) + Wave 5 (30) sit on `main`. Wave 4 close chain `1e796df` (F-18 §15.4) / `e9b95fc` (audit-trail) / `c964ea4` (A merge) / `e461bb5` (B merge) / `1a4c211` (C merge) / `f11d801` (post-merge back-patches) / `f0bf5b7` (NETNEW_PROGRAM update). Wave 5 pre-launch chain `616c127` (F-19 + F-20 + housekeeping locks) / `2af6268` (Stage 1 + manager review + inter-wave queue closures) / `08bb069` (Stage 2 briefs + launch artefacts) / `050bd72` (Wave 4 audit-trail completion: discovery logs A/B/C) / `2e8b792` (HEAD placeholder fill) / `e3d9dee` (Wave 5 Q-1 templating spot-check answer). Wave 5 close chain `08e9d74` (pre-merge house-position corrections F-B7-1 + F-4) / `7a8206b` (audit-trail) / `8d0a21f` (A merge) / `cc99faf` (B merge) / `9c39ff1` (C merge) / `14c15be` (post-merge brief corrections + C9 §16.32 hyperlinks).
 
@@ -134,7 +134,32 @@ All sites are lead-gen handoffs to a partner firm. Don't conflate with the Prope
 
 **Program totals (Wave 5 closed):** ~485 total target (~285 net-new + ~231 legacy rebuilds). After Wave 1 (31) + Wave 2 (30) + Wave 3 (30) + Wave 4 (30) + Wave 5 (30) = **151 net-new on `main`** (W1-3 deployed; W4 + W5 held). ~134 candidates remain in the user-narrowed pool (164 minus 30 Wave 5 consumption). Wave 4 discovery delta provides small additional net-new lift beyond the narrowed pool (per §16.34 cannibal-corrected reality). Wave 6+ pool = 134 narrowed + small W4 verified handful.
 
-**Wave 6 prep status:** Stage 1 COMPLETE (2026-05-23 PM). User selected the §19-aligned trio per "everything needs to be created sooner or later, just execute" framing (deploy held; bucket selection intuition-led from outstanding-pool survey).
+**Wave 6 run summary (2026-05-23 evening to 2026-05-24 AM):**
+
+- **Launch:** 2026-05-23 ~20:47Z via three fresh Opus 4.7 sessions per worktree (`Accounting-wt-property-wave6-{a,b,c}`).
+- **Run duration:** overnight (~12-14 hours wall-clock).
+- **Output: 30/30 pages shipped** across 3 worktree branches (10 + 10 + 12 commits respectively — Session C has 2 extra work-log fill commits for C1 + C2 per the per-page work-log convention).
+- **Tracker:** 30 ✅, 0 🟦, 0 ⬜ (all marked done on main's working tree via §16.37 absolute-path discipline — **first wave where §16.15/§16.37 absolute-path discipline holds with zero violations, see §16.41**).
+- **Q&A: zero real questions** across all 3 sessions (the "1 Q-N" each grep matches is the template `Q-N` placeholder per §16.41 fix; no real Q&A). **4th consecutive zero-factual-Q&A wave** (W3, W4, W5 had 0 factual + 1 procedural at W5, W6 has 0 of either). §16.33 prep-quality-signal pattern is firmly load-bearing.
+- **Flags: 39 total** — 14 EXISTING_PAGE_STALE (3 CRITICAL drift catches on shipped content; see below), 12 INTERNAL_LINK (existing pages should back-link to W6 pages), 4 CROSS_BUCKET (forward-link hyperlinks needing back-patch at wave merge per §16.32), 2 REDIRECT (legacy slug repoints).
+- **Discovery: 74 items total** (A: 30, B: 24, C: 20) — significant Wave 7+ feeder.
+- **Branch commits to merge into main (32 total):**
+  - `property-wave6-a` (10): `bb0f825` A4 / `39c0150` A1 / `753c523` A2 / `4690351` A7 / `e6f56dd` A3 / `1e673fa` A5 / `53d9c56` A6 / `539e6fa` A8 / `089f56c` A9 / `4db7b5c` A10 (A4 first per cross-bucket dep to C2; A7 before A8-A10 per within-bucket dep; A10 LAST per B4+B7 gate)
+  - `property-wave6-b` (10): `0060cbb` B4 / `44d62d5` B7 / `6851b1a` B1 / `c3dcd30` B2 / `2c11533` B3 / `41614ae` B5 / `4c8eb19` B6 / `600bce5` B8 / `e0f7f1c` B9 / `dbaa59d` B10 (B4 + B7 first per A10 gate; pillar B1 then rest)
+  - `property-wave6-c` (12): `c7340f6` C1 / `fcc54d8` C1 work-log / `d0f2931` C2 / `55c28c9` C2 work-log / `44b830f` C3 / `72f04da` C4 / `5a85654` C5 / `979f379` C6 / `e7ce1f7` C7 / `f803b4e` C8 / `a5bc4e6` C9 / `1c64adc` C10 (C1 pillar first; C2 before A4 had shipped at A-branch tip — back-patch needed)
+
+**CRITICAL drift catches surfaced by sessions doing §16.35 per-write verification on adjacent existing content (these are the highest-priority pre-merge items for the close):**
+
+- **F-9 (CRITICAL SITE-WIDE):** **CTA 2010 s.455 charge rate is now 35.75%** (not 33.75%) for loans made on or after 6 April 2026. s.455 is a calculated rate that references "the dividend upper rate specified in section 8(2) of ITA 2007 for the tax year". ITA 2007 s.8(2) was substituted by **FA 2026 s.4(1)(b)** to read "the dividend upper rate is 35.75%" with effect for tax year 2026/27 onwards. Verified at https://www.legislation.gov.uk/ukpga/2007/3/section/8 on 2026-05-23. **10th consecutive Bill-vs-enacted-Act drift catch in the program.** Needs §21.4 lock pre-merge + site-wide back-patch of every existing page citing 33.75% s.455 rate.
+- **F-3 (CRITICAL):** NRB freeze extends to **5 April 2031** (not "April 2030" as Wave 4 C10 currently says). Spring Statement 2025 or Autumn Budget 2024 extended the freeze by one additional year. Verified at https://www.gov.uk/government/publications/rates-and-allowances-inheritance-tax-thresholds-and-interest-rates on 2026-05-23. **11th consecutive drift catch.** Needs §22 NRB-freeze-window lock pre-merge + back-patch of Wave 4 C10 + any sister IHT pages citing 2030.
+- **F-6 (CRITICAL, cluster's worst pre-Wave-6 misframing):** Existing `landlord-capital-allowances-tax-relief` tells residential landlords kitchens, boilers, central heating, carpets, bedroom furniture, electrical systems, bathroom fixtures, and garden equipment are AIA-claimable. **None of these qualify** under CAA 2001 s.35 dwelling-house restriction (since 2013 and arguably 2008). Correct relief route for like-for-like replacement of domestic items is **ITTOIA 2005 s.311A** (Domestic Items Relief), not capital allowances. Page is on canonical chain via middleware line 53. C1 is the structural replacement; legacy page needs reframing AND middleware repoint to C1.
+- **F-1:** Existing `extracting-money-from-property-limited-company` cites ITA 2007 s.396B (doesn't exist) for MVL TAAR. Correct: ITTOIA 2005 s.396B per FA 2016. Confirms Stage 2A drift catch propagated into existing content.
+- **F-10:** CTA 2010 ss.464C/464D omission propagated into pre-Wave-6 sister pages (Wave 1 B1 DLA mechanics, Wave 4 A1 DLA repayment strategy, possibly Wave 1 B7). Confirms Stage 2A drift catch.
+- **F-4:** Wave 6 B4 brief authority links mis-described TCGA s.169G as "settlor definition" — correct is **s.169E**. Session caught at write time; B4 body has dedicated H3 fixing this; other B-cluster briefs may carry same brief error.
+
+**Wave 6 close NOT YET STARTED.** Six-step close plan staged in §19; fresh manager picking up in the morning should follow the Wave 5 close pattern (pre-merge HP corrections → audit-trail commit → 3 bucket merges → post-merge back-patches → NETNEW_PROGRAM updates → worktree cleanup).
+
+**Wave 6 prep status (closed, included here for audit trail):** Stage 1 COMPLETE (2026-05-23 PM). User selected the §19-aligned trio per "everything needs to be created sooner or later, just execute" framing (deploy held; bucket selection intuition-led from outstanding-pool survey).
 
 - **Bucket A — LtdCo extraction-sequence pillar (10 picks).** A1 multi-year sequencer pillar; A2 s.464C bed-and-breakfast trap; A3 share buyback; A4 MVL exit; A5 employer pension; A6 time-pressure 12-month window; A7 multi-SPV HoldCo extraction; A8 mid-incorporation phase 2; A9 pre-sale cash strip; A10 trust-owned SPV extraction. House positions §21 + §15.4 + §22.13.
 - **Bucket B — Trusts + §24.7 adult/minor-child + settlements + GROB (10 picks).** B1 trust pillar; B2 settlements legislation ss.624/629; B3 IIP/IPDI; B4 settlor-interested IHT+CGT trifecta; B5 GROB family-home s.102B shared-occupation; B6 bare-trust/nominee/formal-trust decision; B7 settlor-interest + GROB double-trap; B8 adult-child gift decision-tree; B9 minor-child s.629 attribution; B10 intestacy operational walkthrough. House positions §22.9-§22.15 (Wave 6 extension locked) + §15 + §24.
@@ -814,6 +839,11 @@ Append to this section after every wave. Each lesson should describe what happen
 **16.39 Stage 1b also catches existing-position drift, not just brief-prompt drift**
 - Wave 6 Stage 1b independently flagged existing **§22.5 spouse-exemption framing for non-UK-domiciled spouses** as carrying pre-FA-2025 architecture (the s.18(2) limited exemption + s.267ZA election framework was written before the FA 2025 reforms shifted the operative criterion from domicile to long-term-residence). The sub-agent did NOT correct §22.5 (out-of-scope for its task) but surfaced the drift for separate manager review. **Pattern:** statute-verification sub-agents working on adjacent-cluster extensions naturally surface drift in existing-cluster positions where the existing position cross-references the same statutory anchors. The sub-agent's verbatim WebFetch discipline catches stale positions that would otherwise persist until a wave specifically touches them. **Lesson:** Stage 1b dispatch prompts should explicitly invite drift catches in adjacent existing positions ("if your work surfaces a stale citation or framing in an existing locked position, surface it as a drift catch in your report — do not correct it in-place"). The manager then triages each catch: fix immediately if it blocks the upcoming wave, defer to inter-wave queue if not blocking. Wave 6 §22.5 drift is non-blocking (Bucket B picks cite §22.12-new not §22.5) → deferred to inter-wave queue.
 
+**16.42 EXISTING_PAGE_STALE flag density tracks new-bucket statutory novelty + adjacent-content age (Wave 6 closes the pattern)**
+- Wave 6 sessions doing §16.35 per-write verification on step-5 closest-existing reads raised **14 EXISTING_PAGE_STALE flags** vs Wave 5's 4 at the same step. Density delta correlates strongly with: (a) statutory novelty of the bucket (Wave 6 LtdCo/CTA/IHT touches FA 2025 + FA 2026 reforms that no prior wave has surfaced; Wave 5 VAT/Devolved/Form-17 was on more-stable statute); (b) age of the adjacent existing content (Wave 6 closest-existing reads pulled in W1 + W4 + legacy pre-program content, all of which predates FA 2025 + FA 2026 by 6-18 months). **Pattern:** when a wave opens new statutory territory, its sessions naturally surface drift in adjacent older content. The flag-then-back-patch cycle is the system catching itself — sessions reading old content for cannibal differentiation become drift-detection sensors.
+- Three of Wave 6's catches are critical site-wide: F-9 s.455 → 35.75% (FA 2026 propagation), F-3 NRB freeze → 2031 (Spring Statement 2025 / Autumn Budget 2024 extension), F-6 `landlord-capital-allowances-tax-relief` recommends AIA on residential plant (CAA 2001 s.35 violation). **Lesson:** budget the wave-close back-patch step in proportion to the wave's statutory novelty. Wave 6 close requires ~6-10 site-wide back-patches (rate updates + slug repoints + cluster-misframing reframings). Wave 7+ planners should expect similar density when buckets touch newly-locked house positions or recently-reformed regimes.
+- **The 10th + 11th drift catches in succession** (F-9 s.455; F-3 NRB freeze 2031) extend the §16.22 / §16.27 / §16.30 / §16.35 / §16.38 / §16.40 pattern with no decay. The program now has continuous drift detection across 11 consecutive Bill-vs-enacted-Act discoveries. Future managers should expect this to continue indefinitely as long as Finance Acts and statutory reforms keep landing at Budget cycles.
+
 **16.41 Manager activity-diagnosis discipline + watcher template hygiene (Wave 6 launch incident)**
 - Wave 6 launch surfaced four related failure modes in the manager-side observability layer:
   - **(a) Q&A shell template hygiene.** The Wave 6 artefact-creation Python script populated each `wave6_questions_session_{A,B,C}.md` shell with a documentation example block containing the literal line `**STATUS:** open`. The Q&A watcher's grep pattern `^\*\*STATUS:\*\* open` matched the example on first poll, emitting three false-positive notifications at launch time (one per session, all timestamped the same second the watcher armed — a physical impossibility for real session activity). Fix applied: example placeholder changed to `<open initially; manager flips to: answered>`. **Lesson:** Q&A shell templates (and any file the watcher polls) must NOT contain literal pattern-matching text in their documentation examples. Use placeholders that will not match the watcher's grep. For Wave 7+ artefact-creation scripts, the example block should use brace-style placeholders consistent with the surrounding `{timestamp}` / `{slug}` convention: `**STATUS:** <open initially; manager flips to: answered>`.
@@ -939,6 +969,64 @@ Accounting-wt-medical-{a,b,c}/                   ← Medical parked worktrees
 - ~~**§16.37 launch-prompt Q&A path discipline hardening.**~~ APPLIED to Wave 6 LAUNCH_PROMPTS draft (no separate template file edit needed; baked into the prompt I write per-wave).
 - **Wave 5 follow-up hygiene back-patches (deferred, low priority).** ~9 existing-page cross-link inserts logged in Wave 5 site-wide flags: F-2 + F-6 + F-7 + F-10 existing VAT pages → A1 + A6 + A8 + A10 back-links (4 pages); 5 existing spouse-mechanics pages → C1 back-links (Session C D-4). Can run as a small standalone commit when convenient; not blocking anything.
 - **Wave 5 F-3 + F-5 (low priority).** F-3: existing `landlord-vat-registration-when-required` imprecise on 80% connected-party rule (cosmetic refresh). F-5: alexander-ene.co.uk URL set rotted; drop from Property competitor seed lists for future waves.
+
+### Wave 6 close (2026-05-24 AM) — staged for fresh manager pickup
+
+**Status:** Wave 6 RUN COMPLETE, CLOSE PENDING. 30 pages shipped on 3 worktree branches; NOT YET MERGED to main. Q&A watcher stopped at session end (re-arm only if relaunching). User instruction 2026-05-24 AM: "pick this up in the morning, document everything so fresh manager can resume exactly here".
+
+**Mirror Wave 5 close pattern (commit chain `08e9d74` → `7a8206b` → `8d0a21f` → `cc99faf` → `9c39ff1` → `14c15be` in NETNEW_PROGRAM §3 Wave 5 close subsection).**
+
+**STEP 1 — Pre-merge house-position corrections (CRITICAL, do FIRST):**
+- **F-9 §21 lock:** add s.455 charge rate update — references ITA 2007 s.8(2) which was substituted by FA 2026 s.4(1)(b) to "the dividend upper rate is 35.75%" effective 2026/27. s.455 effective rate is **35.75% from 6 April 2026** (was 33.75% for 2025/26). Verify at https://www.legislation.gov.uk/ukpga/2007/3/section/8 before locking. F-9 detail in `docs/property/wave6_site_wide_flags.md`.
+- **F-3 §22 lock:** NRB freeze window extends to **5 April 2031** (extended by one year beyond the 5 April 2030 Wave 4 framing). Verify at https://www.gov.uk/government/publications/rates-and-allowances-inheritance-tax-thresholds-and-interest-rates before locking. F-3 detail in same flags file.
+- **F-4 §22.12 cite note:** add note that TCGA 1992 s.169G is "arrangement definition" NOT "settlor definition"; correct settlor definition is **s.169E**. Currently held only in Wave 6 B4 body; should be in §22.12 do-not-write list to prevent future brief-seed propagation. Verify at https://www.legislation.gov.uk/ukpga/1992/12/section/169E.
+
+**STEP 2 — Audit-trail commit (uncommitted session live state):**
+Session writes landed in main's working tree per §16.37 absolute-path discipline:
+- `docs/property/wave6_page_tracker.md` (30 ✅ flips with session notes)
+- `docs/property/wave6_site_wide_flags.md` (39 flag entries)
+- `docs/property/wave6_discovery_log_session_{A,B,C}.md` (74 discovery items)
+- `docs/property/wave6_questions_session_{A,B,C}.md` (no real Qs; just template fixes already in commit `26334b0`)
+Commit as "Wave 6 close, step 2: audit trail (tracker + flags + discovery + Q&A)". Do NOT include Track 2 working-tree edits (separate manager's pipeline; let them commit).
+
+**STEP 3 — Three bucket merges:**
+```
+git merge --no-ff property-wave6-a  # 10 commits, no expected conflicts
+git merge --no-ff property-wave6-b  # 10 commits, no expected conflicts
+git merge --no-ff property-wave6-c  # 12 commits incl 2 work-log fills
+```
+Each merge message: "Merge property-wave6-X: 10 Wave 6 [bucket name] pages (X1-X10)".
+
+**STEP 4 — Post-merge back-patches:**
+- **4 CROSS_BUCKET forward-link hyperlinks** (per §16.32):
+  - F-2 A4→C2 (MVL distribution-in-specie → CAA s.61 event 8)
+  - F-12 A7↔C4↔C5 bidirectional (HoldCo AIA shared cap + intra-group transfer)
+  - F-24 A8→A9 (mid-incorporation → pre-sale companion)
+  - F-26 A10←B4+B7 (trust-owned SPV ← settlor-interested IHT context)
+- **12 INTERNAL_LINK back-patches** to existing pages: F-5 Wave 4 C10 → B4; F-6 Wave 1 B7 → A1; F-7 Wave 4 A5 → A1; F-11 DLA pages → A2; F-14 Wave 1 B7 → A3 + Wave 4 C4 → B8; F-15 A4 → A3 internal; F-18 Wave 4 A8 + Wave 2 A9 → A5; F-19 Wave 2 C1 → A6; F-20 Wave 2 A9 → A6; F-22 Wave 4 A1 → A8; F-23 Wave 1 B3 → A9.
+- **2 REDIRECT slug repoints:** F-8 `property-company-profit-extraction-salary-vs-dividends` → A1; F-16 `property-company-employer-pension-contributions-directors` → A5. Plus C-bucket adds: `hmo-capital-allowances-multi-tenant-landlords-claim` → C7, `full-expensing-capital-allowances` → C5, `landlord-capital-allowances-tax-relief` chain → C1 (per F-6 + F-7C).
+- **14 EXISTING_PAGE_STALE back-patches:** F-1 (s.396B fix on extracting-money page); F-9 (s.455 35.75% site-wide grep + fix; ~3-8 hits expected); F-3 (NRB 2031 fix on Wave 4 C10 + any sister IHT pages; grep for "April 2030"); F-6 (landlord-capital-allowances-tax-relief reframe — biggest, may be its own commit); F-10 (s.464C/D omitted; grep DLA-context pages for "30-day rule" / "£15,000 anti-arrangement"); F-13 (alphabet-shares-spouse-children → cross-link to settlements page); F-17 (sole-trader-vs-Ltd page stale on FA 2026 rates); F-21 (pension-IHT-2027 stale on LSDBA + IHT-at-death-2027 transition); F-25 (Wave 2 A7 inheriting-rental-property → B10 intestacy companion); plus 5 smaller fixes — full list in `wave6_site_wide_flags.md`.
+
+**STEP 5 — NETNEW_PROGRAM updates:**
+- §3 Wave 6 CLOSED stamp with the close commit chain + 30 pages on main + total program count (151 + 30 = **181 net-new pages**)
+- §16 new lessons if any surfaced during close (§16.43+)
+- §19 Wave 7+ open items refresh
+
+**STEP 6 — Worktree cleanup:**
+```
+git worktree remove ../Accounting-wt-property-wave6-a
+git worktree remove ../Accounting-wt-property-wave6-b
+git worktree remove ../Accounting-wt-property-wave6-c
+```
+
+**Inter-wave queue for Wave 7+ planning (read after close):**
+- **65 new candidates from Track 2B addendum** added to `topic_gaps_final.md` lines 1295+. Source detail in `docs/property/track2b_competitor_sitemap_gaps_2026-05-23.md`. ~28 of 65 require new house positions (~8-10 lock sessions: BSA 2022, MEES extension, TRS, R2R, IPDI/QIIP, EV chargepoints, SIPP/SSAS commercial, DAC7, s.198, partnership SDLT relief, HMRC enquiry mechanics). ~37 of 65 ready to commission immediately.
+- **74 Wave 6 discovery items** in `wave6_discovery_log_session_{A,B,C}.md` — Wave 7 bucket-selection feeder.
+- **W4 + W5 + W6 (now 90 pages) all held for deploy** pending user decision. Combined deploy unlocks GSC signal for data-led Wave 7 bucket rotation.
+- **§22.5 spouse-exemption pre-FA-2025 drift refresh** (deferred from Wave 6 prep §16.39).
+- **§25.8 PENDING items** (full-expensing leased-plant commencement; FA(No.2)2023 amendment chain doc; HMRC official rate).
+
+**Watcher state:** stopped at Wave 6 run-end via TaskStop (task `bf3g864qs`). Re-arm only when launching Wave 7.
 
 ### Wave 6 prep (2026-05-23 PM) — open items
 

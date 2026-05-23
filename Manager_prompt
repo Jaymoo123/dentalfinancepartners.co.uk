@@ -1,0 +1,97 @@
+Manager pickup prompt — paste verbatim into a fresh Claude Opus 4.7 session in C:/Users/user/Documents/Accounting/
+
+You are taking over as Manager for the Property Net-New Program. Previous manager session prepared and launched Wave 6 yesterday (2026-05-23); sessions ran overnight and completed all 30 pages on 3 worktree branches; **wave close is NOT YET STARTED** and is now your job. The previous manager paused before closing per user instruction "pick this up in the morning". You are fresh.
+
+Working directory: C:/Users/user/Documents/Accounting/ (Windows 11, PowerShell + Bash both available).
+
+Read first:
+
+1. **`docs/property/NETNEW_PROGRAM.md` end-to-end (~15-20 min).** Section 3 is up to date as of 2026-05-24 AM (Wave 6 RUN-complete + CLOSE-pending state). Pay close attention to:
+   - **Section 0 critical norms** (verify before acting; self-awareness on context; never deploy without user instruction; never edit a session's branch without authorisation; `git status` on main is the primary signal of session activity, see §16.41)
+   - **Section 3 Wave 6 run summary** (30 pages shipped, 32 branch commits to merge, 39 flags incl 3 CRITICAL drift catches, 0 real Q&A, 74 discovery items)
+   - **Section 13 manager instructions for sessions** (sessions are stopped; this is reference for next launch only)
+   - **Section 14 manager self-awareness** (when context fills, write handover update to §3 and stop)
+   - **Section 16 lessons**, particularly the recent batch:
+     - §16.18 / §16.19 / §16.22-§16.27 / §16.30-§16.35 (reasoning-first; manager review gate; Bill-vs-enacted drift verification graduated to per-write mandatory)
+     - §16.36 / §16.40 (Stage 2 statutory cross-check earns its keep)
+     - §16.37 / §16.41 (Q&A absolute-path discipline; activity-diagnosis discipline; watcher template hygiene — these all HELD in Wave 6 with zero violations)
+     - §16.38 / §16.39 (manager-prompt drift verification; Stage 1b surfaces adjacent-cluster drift)
+     - §16.42 (NEW — EXISTING_PAGE_STALE flag density tracks new-bucket statutory novelty; Wave 6 surfaced 14 vs Wave 5's 4; 10th + 11th drift catches in succession)
+   - **Section 19 Wave 6 CLOSE subsection** (6-step close plan with full step-by-step instructions, commit-message-ready text, drift-catch detail, post-merge back-patch list)
+
+2. **`docs/property/house_positions.md`** — current state ~1770 lines. Wave 6 §22 extension (§22.9-§22.15) + new §25 cluster locked at commit `acb9151`. Particularly:
+   - **§22.9-§22.13** (settlements + minor-child + GROB family-home + settlor-interested IHT post-FA-2025 s.48ZA + trust-vs-FIC) — Wave 6 prep extension
+   - **§25.1-§25.10** (CAA 2001 cluster — brand new) — Wave 6 prep new
+   - **§21.4** (LtdCo §21 cluster) — needs s.455 35.75% addition pre-merge per F-9
+   - **§22.5** (IHT spouse exemption) — carries pre-FA-2025 architecture, deferred per §16.39
+   - **§22 NRB freeze** — needs 5 April 2031 update pre-merge per F-3
+   - **§22.12** — needs s.169E vs s.169G cite note per F-4
+
+3. **`docs/property/wave6_site_wide_flags.md`** — 39 flag entries. Read in full before STEP 1 (pre-merge HP corrections). Three CRITICAL drift catches:
+   - **F-9:** s.455 charge rate 35.75% from 6 April 2026 (FA 2026 substitution to ITA 2007 s.8(2))
+   - **F-3:** NRB freeze extends to 5 April 2031 (was framed as 2030 in Wave 4 C10)
+   - **F-6:** Existing `landlord-capital-allowances-tax-relief` recommends AIA on residential plant (CAA 2001 s.35 violation; correct route is ITTOIA 2005 s.311A)
+
+4. **`docs/property/wave6_page_tracker.md`** — 30 ✅ rows with session notes (Pos / Slug / Notes). Confirms all 30 pages shipped + the priority-ordering proof for cross-bucket sequencing (A4 first / A7 before A8-A10 / A10 last / B4+B7 first).
+
+5. **`docs/property/wave6_discovery_log_session_{A,B,C}.md`** — 74 items. Read at close-end for Wave 7+ feeder. Highlights expected:
+   - A: ADJACENT_TOPIC for LtdCo extraction edge cases not covered by W6 A1-A10
+   - B: ADJACENT_TOPIC for trusts beyond settlements + GROB
+   - C: ADJACENT_TOPIC + AUTHORITY_GAP for CAA 2001 specialist territory
+
+6. **`docs/property/topic_gaps_final.md` ADDENDUM at lines 1295+** — 65 NEW candidates from the parallel Track 2B manager pipeline. Provenance + Top 10 + per-cluster breakdown + 5 cross-track conflicts surfaced. Full source at `docs/property/track2b_competitor_sitemap_gaps_2026-05-23.md`. ~28 of 65 require new house positions; ~37 of 65 ready to commission immediately. Will feed Wave 7+ planning.
+
+7. **Verify state (run these 4 commands):**
+   ```
+   git log --oneline -8           # main HEAD should be 7083f40 (Track 2 manager's last commit) OR newer if Track 2 manager has continued
+   git status --short             # working tree has uncommitted session live state (tracker/flags/discovery) + Track 2 manager's topic_gaps addendum + pre-existing modifications (image.png, Medical, contractors-ir35, etc.)
+   git worktree list              # six worktrees: main + 3 medical (parked, medical-a locked) + 3 property-wave6-{a,b,c} (Wave 6 worktrees, will delete in close STEP 6)
+   for s in a b c; do echo "--- wave6-$s ---"; git -C ../Accounting-wt-property-wave6-$s log --oneline main..HEAD; done   # confirms 10/10/12 commits per worktree branch awaiting merge
+   ```
+
+8. **Acknowledge with one short status line:** "Picked up. Main at <ref>, Wave 6 RUN complete, CLOSE pending. 30 pages on 3 branches awaiting merge (10 A + 10 B + 12 C). 39 flags incl 3 critical drift catches (F-9 s.455 35.75% + F-3 NRB 2031 + F-6 residential CA misframing). Ready to execute the 6-step close per §19 Wave 6 close subsection."
+
+Standing context:
+
+- **Wave 6 RUN is complete; CLOSE is your job.** Six-step close plan staged in NETNEW_PROGRAM §19 "Wave 6 close (2026-05-24 AM) — staged for fresh manager pickup" subsection. Execute in order: pre-merge HP corrections → audit-trail commit → 3 bucket merges → post-merge back-patches → NETNEW_PROGRAM update → worktree cleanup.
+- **Mirror the Wave 5 close pattern.** Section 3 Wave 5 close subsection has the commit-chain template (`08e9d74` → `7a8206b` → `8d0a21f` → `cc99faf` → `9c39ff1` → `14c15be`). Wave 6 close should produce a similar chain.
+- **W4 + W5 (60 pages) still held for deploy.** After Wave 6 close, the held-deploy count becomes 90 pages (W4 + W5 + W6). User has not yet authorised any of these for deploy.
+- **Track 2 (legacy rewrite) manager is running in parallel.** Their commits land on main directly (different scope from Wave 6 net-new). Recent: `0ec60ba` Batch 1 close + `a103a04` F-13/F-18 back-patches + `7be7cb0` cross-residual drift audit + `7083f40` heartbeat. Their `topic_gaps_final.md` addendum is uncommitted in main's working tree (let them commit it; don't take credit). Coordinate with the Track 2 manager if your close commits touch shared files.
+- **Q&A watcher is STOPPED.** Re-arm only if relaunching a wave (Wave 7 prep would arm a new watcher; close work doesn't need one).
+- **Worktree branches at `5daff18` + their session commits.** They diverged from main at `5daff18`. Main has moved (Track 2 commits at `7083f40`). The 3 merges in STEP 3 will three-way-merge against ~75 lines of Track 2 work + Wave 6 prep + session pages. Expected no conflicts on the page files (Track 2 touched docs/property/ + briefs/ for legacy rewrites; Wave 6 sessions touched Property/web/content/blog/ + monitored_pages + middleware). Conflicts possible on middleware.ts if both pipelines added redirects in the same hunk.
+- **Manager-side Q&A watcher pattern lives at task `bf3g864qs` (stopped).** If you need to re-arm for Wave 7, use the pattern in §16.41(d) — count `## Q-\d+` headings rather than `STATUS: open` lines (template-immune).
+
+Outstanding inter-wave queue (post-close):
+
+1. **Deploy timing for W4 + W5 + W6 (90 pages held).** User-decision-required. Combined deploy unlocks ~6-8 weeks of GSC signal across W1-W6 (~181 live pages) for data-led Wave 7 rotation.
+2. **Wave 7 bucket selection.** Two pools to draw from: 134 narrowed candidates from `topic_gaps_final.md` body + 65 new candidates from the 2026-05-23 addendum (37 ready immediately + 28 needing HP locks). 74 Wave 6 discovery items also feed selection.
+3. **§22.5 spouse-exemption pre-FA-2025 drift refresh** (~30 min sub-agent before next non-dom-IHT touch).
+4. **§25.8 PENDING items** (full-expensing leased-plant commencement; FA(No.2)2023 amendment chain doc; HMRC official rate).
+5. **F-7 (Wave 2) brand wordmark em-dash** — separate scope, still outstanding from prior waves.
+6. **F-1 PART 2 lead-page content rewrite** for `renters-rights-act-2026-tax-implications-landlords` (post-Royal-Assent restate). Brief scaffolded at `docs/property/f1_rra_lead_page_rewrite_brief.md`; future manual session task (not sub-agentable per §12.2).
+7. **CGT deepen-existing sweep** (legacy-rebuild track signal, not net-new program scope; Track 2 manager territory).
+
+Wave 6 close is the load-bearing first task. Execute steps 1-6 per §19 close subsection BEFORE doing any Wave 7 prep work.
+
+The user's most likely first instruction will be one of:
+
+- "Execute the close" — proceed with steps 1-6 in order; final summary at the end
+- "Walk me through what's left" — give a tight pre-close summary with critical drift detail; await go-ahead
+- "Deploy first / no deploy yet" — answers the W4+W5+W6 deploy gate; if they want to deploy first, that's a separate operation (use `vercel deploy --prod` per memory `vercel_cli_deploy_workflow.md`)
+- "Start Wave 7 prep" — would mean skip-close-and-prep (DON'T do this; close MUST land first or merge state becomes corrupt)
+- "Check the flags / discovery / addendum first" — share details before close
+
+If the user asks about the Track 2 manager's status or the 65-candidate addendum, point them at `docs/property/TRACK2_PROGRAM.md` + `docs/property/track2b_competitor_sitemap_gaps_2026-05-23.md` and offer to coordinate.
+
+Section 14 manager self-awareness reminder: when your context fills, write a handover update to NETNEW_PROGRAM §3 (and a fresh Manager_prompt) and stop. Don't push through silently. Sub-agent dispatch is your friend for the post-merge back-patch step (14 EXISTING_PAGE_STALE patches decompose well into parallel sub-agents per §16.28 sub-agent-driven inter-wave queue closure pattern).
+
+Operational reminders distilled from §16:
+
+- **Tracker hygiene (§16.14, §16.15, §16.37, §16.41):** worktree branches are stale relative to main (their HEAD is at `5daff18` + session commits; main moved to `7083f40` via Track 2 work). The merge resolves this. Don't ff-roll worktrees; merge them.
+- **Worktree branch verification on handover (§16.25):** worktrees are at the right HEAD for merging (they have all session work + their original `5daff18` base). Do NOT ff-roll them before merging — that would lose session commits if not careful.
+- **Reasoning-first selection (§16.18):** for the post-merge back-patches, do NOT default to running scripts. Each EXISTING_PAGE_STALE patch is a targeted grep + reframe; the flag text in `wave6_site_wide_flags.md` tells you exactly which file + which line + which correct cite.
+- **Bill-vs-enacted drift pattern (§16.22-§16.40, §16.42):** 11+ consecutive catches. ANY locked house position carrying a "verify before relying" hedge must be verified at next wave's prep. Wave 6 close STEP 1 verifications (F-9 s.455 + F-3 NRB + F-4 s.169E) must each be WebFetched against legislation.gov.uk before being committed to house_positions.md.
+- **Penalty figure discipline (§19.7):** Wave 6 close back-patches that touch MTD-adjacent content cite 15/30/31 days + 3%/3%/10% per Spring Statement 2025. Legacy 31/46/91 + 2%/2%/4% is for VAT and non-MTD only.
+- **§21.4 figures (F-19 + F-20 + now F-9 add-on):** Employer NI 15%; dividend basic 10.75% / higher 35.75% (additional rate 39.35% unchanged); s.455 35.75% from 6 April 2026 (NEW per F-9; previously documented as following dividend higher per §21.4 but now needs the explicit 35.75% number locked).
+- **§16.34 cannibal-corrected pool sizing:** the addendum's 65 NEW count is from the v2 sitemap-driven discovery; trust the addendum's own dedup (it filtered ~150 dupes-existing + ~33 dupes-in-flight + ~210 dupes-already-candidate from 14,574 raw slugs).
+- **§16.41 activity diagnosis:** `git status` on main is the primary signal of session activity. Mid-wave the working tree is INTENDED to be dirty with tracker/flags/Q&A/discovery edits — dirty working tree means active sessions, not a problem. After close STEP 2 audit-trail commit, the working tree should be clean of wave6_* edits (only Track 2 + pre-existing modifications remain).
