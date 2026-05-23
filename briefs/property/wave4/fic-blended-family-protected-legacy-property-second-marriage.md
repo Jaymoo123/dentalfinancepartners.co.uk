@@ -171,37 +171,64 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 
 ---
 
-## Per-page work-log (fill in as you go, supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Slug / category:** per brief, no override.
+- **H1:** "Property FIC for the Blended-Family Founder: A Persona-Led Walkthrough of the Share-Class Settlement"
+- **Meta title (49):** "FIC for Blended Families: Protect Property Legacy"
+- **Meta desc (148):** trimmed from initial 161 to fit ≤158.
+- **Why these:** persona-led title centres on the blended-family + property-legacy combination (anti-templating against A6/A7/A8/A9 abstract structural titles). H1 explicitly names "persona-led walkthrough" to signal the structure to readers + crawler.
 
-### Competitor URLs fetched
+### Competitor outline takeaway
+TLPI case studies (late husband legacy + ringfencing IHT + fic-for-income-returns-and-protected-legacy + family-business-succession) all model the blended-family use case but as marketing-led short case studies, not as a structural walkthrough with persona + comparison vs IPDI / discretionary will-trust / mutual wills. A10 fills the gap with 2 fully-developed personas + 4-route comparison (FIC / IPDI / discretionary trust / mutual wills) + 5 operational pitfalls. UKLandlordTax's IHT/freeze framing was used to identify the IPDI comparison shape.
 
-### Existing-page review (from "Closest existing pages")
+### Cannibalisation
+- fic-complete-guide-property-wealth-transfer covers FIC governance at high level but does NOT walk blended-family use case; A10 forward-links to pillar.
+- family-investment-company-property-worth-it is the threshold-decision page; A10 sits downstream as the blended-family applied scenario.
+- A6 (articles drafting), A8 (in-life income), A9 (share-gift PET) covered same session. A10 cross-references each. The contingent-vesting clause described in A10's "key drafting move" section is the SPECIFIC instance of the generic clause-text logic in A6.
+- No CANNIBAL flag raised.
 
-### Citations added (external authority)
+### Citations
+1. CA 2006 s.18 (articles requirement) — via in-body reference to A6
+2. CA 2006 s.629 (classes of shares definition) — via in-body reference to A6  
+3. IHTA 1984 s.18 (spouse exemption)
+4. IHTA 1984 s.49-49E (IPDI immediate-post-death-interest)
+5. IHTA 1984 s.142 (deed of variation)
+6. TCGA 1992 s.17 (deemed MV on connected disposal)
+7. Plus narrative references to: TCGA s.165, IHTA s.7, IHTA s.7(4) taper, IHTA s.8A TNRB, ITTOIA 2005 s.624+626, Mental Capacity Act 2005, Re Cleaver [1981] (mutual wills doctrine), Pawson v HMRC, HMRC IHTM16100+ (IPDI), IHTM25000+ (BPR).
+Total: 5 hyperlinked authority references in body (lighter than A6/A7/A8/A9 because A10 is persona-led and references citations via in-text cross-references to the sibling pages).
 
-### Internal links added (to our existing pages)
+Note: meta-citations to A6/A7/A8/A9 carry the heavy citation weight for the FIC sub-thread; A10 leans on those rather than duplicating.
 
-### Inline CTA placements
+### Internal links (body, distinct)
+4 distinct in-body internal links:
+1. /blog/incorporation-and-company-structures/fic-articles-of-association-property-control-mechanics (A6) — articles drafting reference (used twice in body)
+2. /blog/incorporation-and-company-structures/fic-gifting-shares-children-property-7-year-iht-mechanics (A9) — share-gift mechanic reference
+3. /blog/incorporation-and-company-structures/fic-property-retirement-decumulation-mechanics-uk (A8) — in-life income reference
+4. /blog/incorporation-and-company-structures/fic-property-corporate-governance-board-meetings-resolutions-discipline (A7) — governance discipline reference
+All targets verified existing on disk (all 4 are sibling pages shipped earlier in this same session).
+
+### Inline CTAs
+- Aside 1: after persona 1 section (structural review moment)
+- Aside 2: after IPDI comparison section (route-choice moment)
+Two asides this page (persona-led pages benefit from CTA placement at moments of reader engagement with their own circumstances).
 
 ### Build attempts
+Single run, passed clean.
 
 ### Verification
-- FAQ schema count in built HTML matches frontmatter:
-- Em-dashes in markdown:
-- Tailwind classes in markdown:
-- Meta title length:
-- Meta description length:
-- Internal links resolve:
-- monitored_pages row inserted:
-- Body word count:
+- FAQ schema count in built HTML matches frontmatter: 14 ↔ 14 ✓
+- Em-dashes: 0 ✓
+- Tailwind classes: 0 ✓
+- Meta title length: 49 (≤62) ✓
+- Meta description length: 148 (≤158) ✓ (trimmed from initial 161)
+- Internal links resolve: 4 distinct in-body targets all verified ✓
+- monitored_pages row inserted: id 185 ✓
+- Body word count: 3,138 (solid mid-band; persona-led structure with 2 fully-developed personas + 4-route comparison + 5 operational pitfalls produces natural word count without padding)
 
-### Flags raised to wave4_site_wide_flags.md
+### Flags raised
+- No new flags. Closing F-2-style back-patch note: A10's cross-link to C5 (deed of variation, IHT bucket) and C7 (FIC strategic IHT framing) referenced narratively; wave-close back-patch will hyperlink once C5/C7 ship.
 
-### 2-3 sentence summary
+### Summary
+A10 closes the Wave 4 Session A FIC sub-thread with the blended-family persona-led use case. Two anonymised personas (widow with three first-marriage adult children + second husband; divorced founder with two first-marriage adults + new wife with three children) walked through the bespoke share-class settlement: founder A-class voting + preference class with contingent vesting for second spouse + growth class vested in first-marriage children + optional C-class spouse income strand. Comparison vs IPDI will-trust + discretionary will-trust + mutual wills. 5 operational pitfalls (PSC threshold, s.177 declarations, incapacity continuity, second-spouse disclosure conversation, divorce trigger). Decision framework at close. Persona-led structure intentionally anti-templates against the abstract structures of A6/A7/A8/A9. This is the final A page in Wave 4 Session A.
