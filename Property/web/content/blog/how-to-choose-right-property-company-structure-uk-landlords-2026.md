@@ -172,7 +172,7 @@ faqs:
 <h2>Future-Proofing Your Property Structure Decision</h2>
 <p>With significant tax changes coming and an evolving regulatory landscape, consider how robust your chosen structure is against future changes:</p>
 <h3>Regulatory Changes</h3>
-<p>The Renters' Rights Act will eliminate Section 21 no-fault evictions from May 2026, potentially affecting profitability and exit strategies. Company structures might offer more flexibility in dealing with problematic tenants through professional management arrangements.</p>
+<p>The Renters' Rights Act 2025 eliminates Section 21 no-fault evictions on commencement 1 May 2026 (per SI 2026/421), potentially affecting profitability and exit strategies. Company structures might offer more flexibility in dealing with problematic tenants through professional management arrangements.</p>
 <h3>Tax Evolution</h3>
 <p>While we know property income tax rates are increasing from April 2027, other changes could include corporation tax rate adjustments, further restrictions on interest relief, changes to CGT rates or reliefs, and new property taxes or charges.</p>
 <h3>Market Conditions</h3>

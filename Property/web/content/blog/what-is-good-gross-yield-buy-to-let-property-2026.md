@@ -105,7 +105,7 @@ faqs:
 <h3>Regulatory Changes</h3>
 <p>The upcoming <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> from April 2026 will increase compliance costs for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028). Factor additional accountancy costs into yield calculations.</p>
 <h3>Rental Market Dynamics</h3>
-<p>Strong rental demand in many areas supports yield expectations, though the upcoming abolition of Section 21 no-fault evictions from May 2026 may impact some investors' risk assessments. Additionally, from April 2027, property income will be subject to separate tax rates (22% basic, 42% higher, 47% additional), potentially affecting net yield calculations for higher-rate taxpayers.</p>
+<p>Strong rental demand in many areas supports yield expectations, though the abolition of Section 21 no-fault evictions under the Renters' Rights Act 2025 (commencement 1 May 2026 per SI 2026/421) may impact some investors' risk assessments. Additionally, from April 2027, property income will be subject to separate tax rates (22% basic, 42% higher, 47% additional), potentially affecting net yield calculations for higher-rate taxpayers.</p>
 
 <h2>Improving Property Yields</h2>
 

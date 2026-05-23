@@ -57,7 +57,7 @@ faqs:
 
 <h3>Legal Expenses Insurance</h3>
 
-<p>Legal expenses insurance covers the costs of legal action against problem tenants, including eviction proceedings, rent recovery, and defending against tenant claims. Annual premiums range from £75-£200. This insurance is particularly valuable given the changes coming from the Renters' Rights Act, which will abolish Section 21 no-fault evictions from May 2026, potentially making eviction procedures more complex and costly.</p>
+<p>Legal expenses insurance covers the costs of legal action against problem tenants, including eviction proceedings, rent recovery, and defending against tenant claims. Annual premiums range from £75-£200. This insurance is particularly valuable given the Renters' Rights Act 2025 (commencement 1 May 2026 per SI 2026/421), which abolishes Section 21 no-fault evictions, potentially making eviction procedures more complex and costly.</p>
 
 <h2>Specialist Insurance for Different Property and Ownership Types</h2>
 
@@ -135,7 +135,7 @@ faqs:
 <h2>Future Considerations and Professional Advice</h2>
 
 <p>Several regulatory changes will impact landlord insurance needs:</p>
-<p><strong>Renters' Rights Act:</strong> The abolition of Section 21 evictions from May 2026 may increase the value of legal expenses insurance as eviction procedures become more complex.</p>
+<p><strong>Renters' Rights Act 2025:</strong> The abolition of Section 21 evictions on commencement 1 May 2026 (per SI 2026/421) may increase the value of legal expenses insurance as eviction procedures become more complex.</p>
 <p><strong>Property tax changes:</strong> From April 2027, separate property income tax rates mean insurance deductions will be worth less for higher-rate taxpayers (42% vs current 40%).</p>
 <p><strong>Making Tax Digital:</strong> From April 2026, landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must maintain <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">digital records</a>, including insurance expenses and claims.</p>
 <p>Insurance needs vary significantly based on your property portfolio, ownership structure, and risk tolerance. Consider consulting with specialists who understand both insurance and tax implications. A qualified <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">property accountant</a> can help optimise your insurance strategy alongside your overall tax planning, ensuring you maintain adequate protection while maximising available tax relief.</p>

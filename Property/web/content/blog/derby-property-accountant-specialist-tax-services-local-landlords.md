@@ -91,7 +91,7 @@ faqs:
 <h3>Upcoming Legislative and Tax Changes</h3>
 <p>From April 2027, separate property income tax rates apply: 22% basic rate, 42% higher rate, and 47% additional rate. This represents a significant increase from current general income tax rates and may make incorporation even more attractive for larger portfolios.</p>
 <p>The additional property stamp duty surcharge increased from 3% to 5% in October 2024. For Derby properties around the £250,000 average price point, this adds £2,500 to acquisition costs - a significant factor in portfolio expansion planning.</p>
-<p>Section 21 no-fault evictions will be abolished from May 2026. While this doesn't directly affect taxation, it changes risk profiles and may influence decisions about portfolio composition and property types.</p>
+<p>Section 21 no-fault evictions are abolished under the Renters' Rights Act 2025 (commencement 1 May 2026 per SI 2026/421). While this doesn't directly affect taxation, it changes risk profiles and may influence decisions about portfolio composition and property types.</p>
 
 <h2>Choosing the Right Property Accountant in Derby</h2>
 <p>Not all accountants understand property taxation. When selecting a <strong>property accountant Derby</strong> landlords should look for:</p>

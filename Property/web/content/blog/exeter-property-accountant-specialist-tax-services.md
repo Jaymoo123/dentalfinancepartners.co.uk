@@ -41,7 +41,7 @@ faqs:
 
 <p>From 6 April 2026, Exeter landlords with gross  income above £50,000 (the MTD threshold from 6 April 2026; drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028) must comply with <a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a>. This affects most landlords in the city, given typical rental yields. MTD compliance involves using MTD-compatible software to record income and expenses, submitting quarterly updates to HMRC, maintaining digital records from the start of the 2026/27 tax year, and filing an end-of-period statement alongside the annual Self Assessment. Many Exeter landlords underestimate the preparation required.</p>
 
-<p>Business rates on HMOs and commercial properties require careful monitoring, particularly as rateable values are reassessed. Many landlords overlook appeals processes that could reduce their liability. The upcoming Renters' Rights Act changes, including the abolition of Section 21 no-fault evictions from May 2026, may affect portfolio management strategies and associated costs that need factoring into financial planning.</p>
+<p>Business rates on HMOs and commercial properties require careful monitoring, particularly as rateable values are reassessed. Many landlords overlook appeals processes that could reduce their liability. The Renters' Rights Act 2025 changes, including the abolition of Section 21 no-fault evictions on commencement 1 May 2026 (per SI 2026/421), may affect portfolio management strategies and associated costs that need factoring into financial planning.</p>
 
 <h2>Student Property and HMO Considerations</h2>
 

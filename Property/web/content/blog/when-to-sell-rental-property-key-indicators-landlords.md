@@ -20,7 +20,7 @@ faqs:
   - question: "How do I know if my rental yield is too low to continue?"
     answer: "Generally, gross rental yields below 5-6% and net yields below 3-4% may indicate poor performance. However, this depends on your area, property type, and investment strategy. Compare your yield to local alternatives and consider capital appreciation potential. If yields have declined for three consecutive years despite rent increases, it may signal time to reassess."
   - question: "Is Section 21 abolition a good reason to sell rental properties?"
-    answer: "The abolition of Section 21 no-fault evictions from May 2026 has prompted some landlords to sell, particularly those concerned about tenant security and eviction procedures. However, this shouldn't be the sole reason to exit - consider your overall profitability, tenant quality, and long-term investment goals. Professional landlords with good tenant relationships may find the changes manageable."
+    answer: "The abolition of Section 21 no-fault evictions under the Renters' Rights Act 2025 (commencement 1 May 2026 per SI 2026/421) has prompted some landlords to sell, particularly those concerned about tenant security and eviction procedures. However, this shouldn't be the sole reason to exit - consider your overall profitability, tenant quality, and long-term investment goals. Professional landlords with good tenant relationships may find the changes manageable."
 ---
 
 <p>Deciding when to sell a rental property is one of the most important decisions a UK landlord will make. The timing can significantly impact your overall returns, tax liability, and future investment opportunities. Understanding the key indicators that signal optimal exit timing is crucial for maximising your property investment success.</p>
@@ -129,7 +129,7 @@ faqs:
 
 <p><strong>Recent and upcoming changes affecting exit decisions:</strong></p>
 <ul>
-<li>Section 21 no-fault evictions abolished from May 2026</li>
+<li>Section 21 no-fault evictions abolished under the Renters' Rights Act 2025 (commencement 1 May 2026 per SI 2026/421)</li>
 <li>Enhanced energy efficiency requirements</li>
 <li>Increased SDLT surcharge on additional properties (5%)</li>
 <li>Potential rent controls in some areas</li>

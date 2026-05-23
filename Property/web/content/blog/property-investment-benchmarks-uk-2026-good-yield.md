@@ -61,7 +61,7 @@ faqs:
 <h2>Market Trends Affecting 2026 Benchmarks</h2>
 <p>Higher mortgage rates continue to affect leveraged property investment returns, with many BTL mortgages now priced at 5-7% compared to sub-3% rates available in previous years. This shift requires higher rental yields to maintain positive cash flow, pushing investors toward higher-yielding markets and property types.</p>
 <p>The increased SDLT surcharge on additional properties (rising from 3% to 5% in October 2024) affects acquisition costs and total return calculations. Investors need to factor these higher entry costs into their yield expectations and holding period assumptions.</p>
-<p>Regulatory changes, including the upcoming abolition of Section 21 no-fault evictions from May 2026, may affect rental market dynamics. Some investors are adjusting their strategies to focus on high-quality properties and tenants to minimise void periods and disputes.</p>
+<p>Regulatory changes, including the abolition of Section 21 no-fault evictions under the Renters' Rights Act 2025 (commencement 1 May 2026 per SI 2026/421), may affect rental market dynamics. Some investors are adjusting their strategies to focus on high-quality properties and tenants to minimise void periods and disputes.</p>
 <p><a href="/blog/making-tax-digital-mtd/making-tax-digital-landlords-april-2026-deadline">Making Tax Digital requirements</a> from April 2026 add compliance costs for landlords with qualifying income over £50,000 (the MTD-for-ITSA threshold from 6 April 2026, falling to £30,000 from 6 April 2027 and £20,000 from 6 April 2028), though improved record-keeping may help optimise tax efficiency and identify cost savings.</p>
 
 <h2>Investment Strategy Considerations</h2>

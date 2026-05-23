@@ -48,15 +48,15 @@ faqs:
 <li><strong>Q3 (6 Oct - 5 Jan):</strong> Submit by 7 February</li>
 <li><strong>Q4 (6 Jan - 5 Apr):</strong> Submit by 7 May</li>
 </ul>
-<h3>Alternative Quarterly Periods</h3>
-<p>You can choose calendar quarters (Jan-Mar, Apr-Jun, Jul-Sep, Oct-Dec) or any other three-month periods. The statutory submission deadline still applies; verify the corresponding gov.uk-published date for your chosen period basis before relying on alternative quarter dates.</p>
-<p>For example, calendar quarter deadlines would be:</p>
+<h3>Alternative Quarterly Periods (Calendar-Quarter Election)</h3>
+<p>If your accounting period covers 1 April to 31 March, you can make a "calendar quarters election" so your quarters end on 30 June, 30 September, 31 December, and 31 March (per regulation 11, <a href="https://www.legislation.gov.uk/uksi/2026/336/made">The Income Tax (Digital Obligations) Regulations 2026</a>). You must make this election by notice to HMRC before submitting your first quarterly update for the tax year; once that first update is filed, you cannot change the period basis for that year. The submission deadlines under a calendar-quarters election are the same as the standard tax-year deadlines:</p>
 <ul>
-<li>Q1 (Jan-Mar): Submit by 30 April</li>
-<li>Q2 (Apr-Jun): Submit by 31 July</li>
-<li>Q3 (Jul-Sep): Submit by 31 October</li>
-<li>Q4 (Oct-Dec): Submit by 31 January</li>
+<li>Q1 (1 Apr - 30 Jun): Submit by 7 August</li>
+<li>Q2 (1 Jul - 30 Sep): Submit by 7 November</li>
+<li>Q3 (1 Oct - 31 Dec): Submit by 7 February</li>
+<li>Q4 (1 Jan - 31 Mar): Submit by 7 May</li>
 </ul>
+<p>Source: <a href="https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/send-quarterly-updates">gov.uk — Use Making Tax Digital for Income Tax: Send quarterly updates</a>.</p>
 <h3>Step-by-Step Submission Process</h3>
 <p><strong>Step 1: Set Up Your MTD-Compatible Software</strong><br>Choose accounting software from HMRC's approved list. Popular options for landlords include Xero, QuickBooks, FreeAgent, and specialist property software like Arthur Online or Landlord Vision. Your software must connect to HMRC's systems via API, store records digitally, calculate totals automatically, and submit returns electronically.</p>
 <p><strong>Step 2: Record All Income and Expenses</strong><br>Throughout each quarter, record every property transaction digitally. This includes:</p>

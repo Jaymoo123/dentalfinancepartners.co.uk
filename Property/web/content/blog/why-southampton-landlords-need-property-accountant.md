@@ -167,7 +167,7 @@ faqs:
 <ul>
 <li>6 April 2027: MTD threshold drops to £30,000 gross rents.</li>
 <li>6 April 2028: MTD threshold drops to £20,000 gross rents.</li>
-<li>Renters' Rights Act 2025: Section 21 no-fault evictions abolished, periodic tenancies as standard. Affects voids planning and refinancing timing.</li>
+<li>Renters' Rights Act 2025 (commencement 1 May 2026 per SI 2026/421): Section 21 no-fault evictions abolished, periodic tenancies as standard. Affects voids planning and refinancing timing.</li>
 <li>EPC minimum standards for new tenancies (proposed C rating from 2030) may require capital expenditure on older Southampton stock.</li>
 </ul>
 

@@ -71,7 +71,7 @@ faqs:
 
 <h2>Abolished Regimes and Legislative Changes</h2>
 <p>The Furnished Holiday Lettings (FHL) regime was abolished from April 2025, with no replacement announced for 2026. Properties previously qualifying as FHL are now treated as standard rental properties, losing benefits like capital allowances on furniture and equipment, Business Asset Disposal Relief on sales, and the ability to offset losses against other income. This change particularly affects operators of holiday lets and serviced accommodation.</p>
-<p>From May 2026, landlords will no longer be able to use Section 21 'no-fault' evictions under the Renters' Rights Act. This doesn't directly affect tax but has significant implications for property investment strategy and cash flow planning. Landlords will need to rely on Section 8 grounds for possession, which require specific reasons like rent arrears or breach of tenancy terms.</p>
+<p>On commencement 1 May 2026 (per SI 2026/421), Section 21 'no-fault' evictions are abolished under the Renters' Rights Act 2025. This doesn't directly affect tax but has significant implications for property investment strategy and cash flow planning. Landlords will need to rely on Section 8 grounds for possession, which require specific reasons like rent arrears or breach of tenancy terms.</p>
 
 <h2>Cash Flow and Professional Support</h2>
 <p>Higher tax rates and quarterly reporting mean more frequent tax payments. Ensure you have adequate cash flow planning and reserves.</p>

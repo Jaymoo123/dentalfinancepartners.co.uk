@@ -143,7 +143,7 @@ faqs:
 
 <ul>
 <li><strong>April 2027:</strong> Separate property income tax rates may apply (22%/42%/47%)</li>
-<li><strong>Renters' Rights Act:</strong> Section 21 abolition from May 2026 affecting portfolio strategies</li>
+<li><strong>Renters' Rights Act 2025:</strong> Section 21 abolition on commencement 1 May 2026 (per SI 2026/421) affecting portfolio strategies</li>
 <li><strong>SDLT changes:</strong> 5% surcharge on additional properties since October 2024</li>
 <li><strong>Digital compliance:</strong> Ongoing MTD requirements and potential expansion</li>
 </ul>

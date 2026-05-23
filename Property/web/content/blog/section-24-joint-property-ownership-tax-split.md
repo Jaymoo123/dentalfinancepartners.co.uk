@@ -15,8 +15,8 @@ schema: ""
 faqs:
   - question: "How is Section 24 mortgage interest relief split between joint property owners?"
     answer: "Section 24 mortgage interest relief is split according to each owner's share of the property, either based on legal ownership percentages or a Form 17 election for married couples. Each owner receives a basic rate tax credit (20%) on their share of mortgage interest, calculated separately on their individual tax return."
-  - question: "Can married couples split rental income 50/50 regardless of ownership percentages?"
-    answer: "Yes, married couples and civil partners can elect to split rental income and expenses 50/50 using Form 17, regardless of actual ownership percentages. This election applies to all jointly owned property and can provide tax savings when spouses have different tax rates."
+  - question: "How does Form 17 work for married couples and civil partners?"
+    answer: "Married couples and civil partners are deemed by ITA 2007 s.836 to split rental income from jointly held property 50/50 by default, regardless of actual beneficial ownership. Form 17 is the election OUT of that 50/50 default and INTO the actual beneficial ownership split, it cannot create an arbitrary chosen split. To use Form 17 the property must be held as tenants in common with unequal beneficial interests evidenced by a contemporaneous declaration of trust, and the form must reach HMRC within 60 days of both signatures or the election is invalid and the 50/50 default re-applies."
   - question: "What happens if joint owners have different tax rates under Section 24?"
     answer: "Each joint owner's Section 24 restriction applies at their individual tax level. While both receive basic rate relief (20%) on mortgage interest, the higher rate taxpayer loses more tax relief overall. This makes income splitting strategies particularly valuable for couples with different tax rates."
   - question: "Do Section 24 rules apply differently to business partnerships owning rental property?"
@@ -37,19 +37,21 @@ faqs:
 <p>Sometimes legal ownership doesn't reflect the true beneficial ownership. If you contributed different amounts to the purchase or mortgage payments, you might argue for a different split based on beneficial ownership. However, HMRC scrutinises beneficial ownership claims carefully. You need clear evidence of different contributions and formal documentation to support any split that differs from legal ownership.</p>
 
 <h2>Form 17 Election for Married Couples and Civil Partners</h2>
-<p>Married couples and civil partners have a unique advantage for <strong>couples rental income tax split</strong> under Section 24. You can elect to split rental income 50/50 regardless of actual ownership percentages, using Form 17.</p>
-<h3>How the 50/50 Election Works</h3>
-<p>The Form 17 election allows married couples to split all income from jointly owned property equally, even if one spouse owns 90% and the other owns 10%. This includes rental income, mortgage interest, and all other expenses. For Section 24 purposes, this means each spouse reports 50% of the mortgage interest and receives 50% of the basic rate tax credit, regardless of who actually pays the mortgage.</p>
+<p>Married couples and civil partners have a unique override mechanism for the rental income split under Section 24, but the rule works the opposite way to how it is often described. The default under <a href="https://www.legislation.gov.uk/ukpga/2007/3/section/836">ITA 2007 s.836</a> is that income from property held in joint legal ownership by spouses or civil partners is deemed to be split 50/50, regardless of the underlying beneficial ownership. Form 17 is the election OUT of that 50/50 default and INTO the actual beneficial ownership split.</p>
+<h3>How the Form 17 Election Actually Works</h3>
+<p>The Form 17 election allows married couples to abandon the 50/50 deemed split and report rental income in line with actual beneficial ownership. If one spouse beneficially owns 90% and the other owns 10%, Form 17 produces a 90/10 income split, not 50/50, and not any arbitrary chosen split. This applies to rental income, mortgage interest, and all other expenses, so each spouse reports their actual share of mortgage interest and receives basic rate tax credit on that share.</p>
+<p>Critical requirements: (a) the property must be held as tenants in common with declared unequal shares, because joint tenants cannot use Form 17 (joint tenancy is undivided ownership with no separable "share" to declare); (b) the unequal beneficial interests must be evidenced by a contemporaneous declaration of trust; (c) both spouses must sign Form 17 and it must reach HMRC within 60 days of the last signature, or the election is invalid and the 50/50 default re-applies.</p>
 <h3>Strategic Benefits and Making the Election</h3>
-<p>The 50/50 election can be particularly valuable when spouses have different tax rates. Consider this example:</p>
+<p>The Form 17 election is valuable where spouses have different marginal tax rates AND already hold unequal beneficial interests in the property. Consider this example:</p>
 <ul>
 <li>Property: £30,000 rental income, £12,000 mortgage interest</li>
-<li>Spouse A: Higher rate taxpayer (40%)</li>
-<li>Spouse B: Basic rate taxpayer (20%)</li>
-<li>Legal ownership: 100% Spouse A</li>
+<li>Spouse A: higher rate taxpayer (40% / 42% on property income from April 2027)</li>
+<li>Spouse B: basic rate taxpayer (20% / 22% on property income from April 2027)</li>
+<li>Property held jointly as tenants in common; declaration of trust establishes 25% / 75% beneficial split (Spouse A 25%, Spouse B 75%)</li>
 </ul>
-<p>Without the election, Spouse A pays higher rate tax on the full £18,000 profit (after other expenses) and gets basic rate relief on £12,000 mortgage interest. With the election, each spouse reports £15,000 rental income and £6,000 mortgage interest, potentially saving significant tax.</p>
-<p>You must make the Form 17 election jointly, and it applies to all jointly owned property, not just selected properties. The election remains in force until you revoke it. The election must be made by the 31 January following the end of the first tax year you want it to apply to. For the 2025/26 tax year, the deadline is 31 January 2027.</p>
+<p>Without Form 17 (default 50/50 under s.836): each spouse reports £15,000 rental income and £6,000 mortgage interest. Spouse A pays higher-rate tax on £15,000 with basic-rate credit on £6,000; Spouse B pays basic-rate tax on the same figures. With Form 17 (election to actual beneficial interest): Spouse A reports £7,500 (25%) and Spouse B reports £22,500 (75%). The election shifts £7,500 of higher-rate-taxed income to basic-rate-taxed Spouse B, producing a meaningful tax saving.</p>
+<p>The underlying 25/75 beneficial split must be established BEFORE Form 17 is filed, typically via a declaration of trust executed contemporaneously with (or before) the change. Form 17 declares the existing unequal split to HMRC; it does not create the split. Where the declaration of trust adds a new beneficial owner who also assumes a share of the mortgage debt, the assumed debt is chargeable consideration under FA 2003 Sch 4 para 8 and SDLT (or LTT in Wales, LBTT in Scotland) may be due even though no cash changes hands. Take advice before executing the trust deed.</p>
+<p>The election applies to all jointly owned property covered by the declared shares, not selected properties. It remains in force until a new declaration is made, the underlying beneficial interest changes, the spouses cease living together, or one spouse dies. The 60-day filing window is strict; late forms are invalid.</p>
 
 <h2>Section 24 Planning Strategies for Joint Owners</h2>
 <p>Understanding how Section 24 affects joint ownership opens up several planning opportunities, particularly as separate <a href="/blog/landlord-tax-essentials/property-investment-tax-uk-complete-guide-2026">property income tax rates</a> are introduced from April 2027.</p>
@@ -74,8 +76,8 @@ faqs:
 
 <h2>Common Mistakes with Joint Ownership and Section 24</h2>
 <p>Several errors commonly occur when joint owners deal with Section 24 restrictions:</p>
-<h3>Assuming Equal Split</h3>
-<p>Many joint owners assume rental income and expenses split 50/50, but this only applies if ownership is 50/50 or you've made a Form 17 election. Always check the actual ownership percentages.</p>
+<h3>Getting the Form 17 Mechanic Backwards</h3>
+<p>Many joint owners get the Form 17 rule backwards. For spouses and civil partners, the 50/50 split IS the default under ITA 2007 s.836 regardless of actual ownership, and Form 17 is the election OUT of that 50/50 default and INTO the actual beneficial ownership share. Form 17 cannot create a 50/50 split where the underlying beneficial ownership is unequal, nor can it create any arbitrary split that does not match the deed. The declaration of trust establishes the unequal beneficial shares; Form 17 declares those shares to HMRC. Get this wrong and HMRC will treat the election as invalid, reverting to the 50/50 default.</p>
 <h3>Inconsistent Reporting and Poor Documentation</h3>
 <p>Each joint owner must report their share consistently across all expenses and income. You can't cherry-pick which items to split differently unless you have proper elections or agreements in place. Joint owners frequently lack proper documentation to support their chosen split, particularly when claiming beneficial ownership differs from legal ownership.</p>
 <h3>Ignoring Form 17 Opportunities</h3>

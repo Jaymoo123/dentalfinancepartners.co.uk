@@ -82,7 +82,7 @@ imageCredit:
 <li>Planning for inheritance tax (IHT) on your portfolio</li>
 <li>Structuring purchases and sales to minimise CGT</li>
 <li>Reviewing your portfolio for efficiency</li>
-<li>Advising on the tax implications of the Renters' Rights Act (Section 21 abolished from May 2026)</li>
+<li>Advising on the tax implications of the Renters' Rights Act 2025 (commencement 1 May 2026 per SI 2026/421, abolishing Section 21)</li>
 </ul>
 <p>You can explore our <a href="/services">full range of services</a> to see how we support landlords at every stage.</p>
 

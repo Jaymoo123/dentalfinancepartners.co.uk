@@ -93,7 +93,7 @@ faqs:
 <h2>The Future of Property Taxation in Brighton</h2>
 <p>Brighton landlords face several upcoming changes that make professional advice increasingly valuable:</p>
 <p><strong>2027 Property Income Tax Changes:</strong> Separate rates of 22% basic and 42% higher rate will apply to property income, potentially increasing tax bills significantly for many Brighton landlords.</p>
-<p><strong>Renters' Rights Act:</strong> Section 21 abolition from May 2026 changes the risk profile of letting, affecting both insurance costs and potentially investment values.</p>
+<p><strong>Renters' Rights Act 2025:</strong> Section 21 abolition on commencement 1 May 2026 (per SI 2026/421) changes the risk profile of letting, affecting both insurance costs and potentially investment values.</p>
 <p><strong>Environmental Regulations:</strong> Increasing focus on energy efficiency could require substantial property improvements, affecting both deductible expenses and capital gains calculations.</p>
 <p>A proactive <strong>property accountant Brighton</strong> helps landlords prepare for these changes rather than simply reacting to them when they arrive.</p>
 

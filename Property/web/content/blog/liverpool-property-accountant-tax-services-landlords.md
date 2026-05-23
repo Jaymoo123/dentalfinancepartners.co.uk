@@ -211,7 +211,7 @@ faqs:
 <li><strong>6 April 2027:</strong> MTD for ITSA threshold drops from £50,000 to £30,000 gross rents. New cohort comes into quarterly filing.</li>
 <li><strong>6 April 2027:</strong> Separate property income tax rates begin: 22% basic, 42% higher, 47% additional. Confirmed in Autumn Budget 2024. This makes incorporation maths more compelling for highly-geared higher rate landlords.</li>
 <li><strong>6 April 2028:</strong> MTD threshold drops again to £20,000. Most Liverpool BTL landlords with even one property will be in scope.</li>
-<li><strong>Renters' Rights Act:</strong> Section 21 no-fault evictions abolished. Affects void exposure and tax planning around lender refinancing windows.</li>
+<li><strong>Renters' Rights Act 2025:</strong> Section 21 no-fault evictions abolished on commencement 1 May 2026 (per SI 2026/421). Affects void exposure and tax planning around lender refinancing windows.</li>
 <li><strong>Liverpool selective licensing renewal:</strong> The current scheme runs to 2027. Renewal cost will be a deductible revenue expense in the year incurred.</li>
 </ul>
 
