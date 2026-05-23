@@ -122,15 +122,28 @@ Both LLM-reasoning-led. Both read-only against Wave 5.
 
 **Batch 1 ready to dispatch:** 9 CGT pages in 3 sub-buckets of 3. **Launch prompts written** at `docs/sessions/property/TRACK2_BATCH1_LAUNCH_PROMPTS.md` — user opens 3 separate Claude Code terminals (one per sub-bucket) and pastes one prompt per terminal. This avoids flooding manager context with 3 concurrent sub-agent transcripts. Manager idles while sub-agents run; polls main's tracker / flags / Q&A files for progress. Q&A coordination files seeded (`track2_questions_batch1_sub_{a,b,c}.md`); discovery logs seeded (`track2_discovery_log_batch1_sub_{a,b,c}.md`).
 
-**Batch 1 LAUNCHED 2026-05-23 PM** by user across 3 separate terminals. Manager (this session) now idling. Awaiting:
-1. Q&A entries appearing in `track2_questions_batch1_sub_{a,b,c}.md` (user pings manager → manager polls + answers)
-2. Sub-agent chat summaries pasted back by user as each sub-bucket finishes (~90-120 min each)
-3. All 3 sub-buckets complete → manager runs end-of-batch close protocol (7 quality gates across 9 briefs, batch commit, summary report)
+**Batch 1 LAUNCHED 2026-05-23 PM** by user across 3 separate terminals. **Batch 1 CLOSED 2026-05-24 00:30Z.**
 
-**Watch points during batch:**
-- 60-day cannibal pair resolution (B1-B1 vs B1-B2 vs rewritten `cgt-payment-deadlines-property-sales-2026`)
-- April 2027 §7 rate hedge-or-assert decision (Wave 6 F-9 suggests FA 2026 enacted; sub-agents verify fresh)
-- Any new F-flags raised across `track2_site_wide_flags.md`
+**Batch 1 results:**
+- 9 briefs drafted (all 🟢): 3 REWRITE (sub-bucket A: CGT reliefs/planning) + 3 REDIRECT-PROPOSED (sub-bucket B: cluster collapse to rewritten `cgt-payment-deadlines-property-sales-2026` canonical) + 3 REWRITE (sub-bucket C: CGT scenarios — divorce / inherited / spouse)
+- 12 flags raised (F-9 to F-20). Two HIGH-severity caught hallucinations on shipped work (F-13 + F-18) — back-patched commit `a103a04`.
+- Methodology findings: 3 new gap-mode codes (INTENT-MISMATCH, INVISIBLE, TAIL-SIGNAL); cluster-collapse pattern proven; D-9 hypothesis (generic-suffix invisibility) partially supported.
+
+**Post-Batch-1 work also closed:**
+- Cross-residual drift audit (B): commit `7be7cb0`. Pattern hypothesis narrower than predicted; only 1 NEW page needs back-patch outside existing scope (`incorporate-rental-property-without-cgt.md` 28% → 24%). F-19 and F-20 confirmed NOT site-wide.
+
+**Three commits landed on main:**
+- `0ec60ba` Batch 1 close (30 files, 5,871 insertions)
+- `a103a04` F-13 + F-18 back-patches (2 files, 5/5)
+- `7be7cb0` Cross-residual drift audit (1 file, 182 insertions)
+
+**Open decisions awaiting user (next manager session can pick up):**
+1. Back-patch `incorporate-rental-property-without-cgt.md` 28% → 24%? (~2 min, 1-line fix; could be 4th commit now or fold into Batch 2)
+2. Lock TMA 1970 s.43 4-year claim deadline as a house position? (Wave-manager-level decision; would propagate to 6 affected loss/claim/disposal pages)
+3. Decide Batch 2 scope: continue CGT cluster (F-16 candidates: 3 more 60-day-CGT collapse candidates), or pivot to different cluster (Section 24, city accountants, AIA cluster, etc.)
+4. Phase 3 execution scheduling: when do the 9 Batch 1 briefs (6 REWRITE + 3 REDIRECT) get executed?
+
+**Manager pickup doc for next session:** `docs/property/TRACK2_MANAGER_PICKUP.md`.
 
 **Trial-phase complete summary (post-gold-reference):**
 
