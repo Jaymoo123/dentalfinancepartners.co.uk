@@ -7,7 +7,7 @@
 Q&A format (one block per Q):
 ```
 ## Q-N — {one-line headline}
-**STATUS:** open
+**STATUS:** <open initially; manager flips to: answered>
 **Asked:** {timestamp}
 **Page:** {slug, or "general" if cross-page}
 **Step:** {which step of 19-step workflow}
