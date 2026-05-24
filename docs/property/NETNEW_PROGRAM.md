@@ -1047,6 +1047,84 @@ git worktree remove ../Accounting-wt-property-wave6-c
 
 **Watcher state:** stopped at Wave 6 run-end via TaskStop (task `bf3g864qs`). Re-arm only when launching Wave 7.
 
+### Wave 7 prep (2026-05-24 PM) — staged for fresh manager pickup
+
+**Status:** User confirmed 2026-05-24 PM after Wave 6 close: hold W4+W5+W6 deploy further, intuition-led bucket picks, 3 buckets × 10 pages = 30 total. Closing manager (Wave 6 close session) checkpointed here per §14 self-awareness — HP-lock work is the highest-precision territory in the program (drift propagates to all pages in the wave) and a fresh manager session is the right cost/quality trade-off.
+
+**Wave 7 bucket selection (user-approved 2026-05-24 PM):**
+
+**Bucket A — Regulatory/compliance landlord territory (10):**
+- A1 RRA 2026 PART 2 lead-page rewrite (existing slug `renters-rights-act-2026-tax-implications-landlords`; brief scaffolded at `docs/property/f1_rra_lead_page_rewrite_brief.md` from earlier waves)
+- A2 RRA s.21 abolition operational mechanics
+- A3 RRA periodic-tenancy switch landlord obligations (fixed-to-periodic transition)
+- A4 RRA rent reform + tribunal mechanics
+- A5 RRA possession-ground reforms (new grounds + evidence + notice periods)
+- A6 RRA Property Redress Scheme mandatory enrolment
+- A7 Decent Homes Standard applied to PRS
+- A8 EPC C 2030 + landlord spending cap mechanics (addendum #80)
+- A9 EPC grant schemes available to landlords (addendum #81)
+- A10 BSA 2022 cladding cost recovery + leaseholder protection (addendum #83)
+
+**Bucket B — HMRC enquiry + tax compliance ops (10):**
+- B1 Discovery assessment time limits (4/6/20-year framework, TMA 1970 s.29) (addendum #108)
+- B2 Closure notice mechanics (TMA 1970 s.28A) (addendum #109)
+- B3 CoP9 contractual disclosure framework (addendum #110)
+- B4 Tribunal appeal process for landlords (FTT mechanics) (addendum #111)
+- B5 HMRC nudge letter response playbook
+- B6 Let Property Campaign formal disclosure route
+- B7 Worldwide Disclosure Facility for offshore landlord catch-up
+- B8 Sch 24 FA 2007 penalty behaviour categories (careless / deliberate / deliberate-concealed)
+- B9 Reasonable-excuse case law for landlord penalties (Sch 55 / Sch 56)
+- B10 Record retention discipline + voluntary disclosure vs failure-to-notify
+
+**Bucket C — Specialist transactional + trust depth continuation (10):**
+- C1 TRS compliance for trust-owned BTL (MLR 2017 reg 45ZA) (addendum #21)
+- C2 IPDI/QIIP rental property tax (IHTA 1984 s.49A) (addendum #19)
+- C3 EOT property-SPV exit mechanics (TCGA 1992 s.236M-Q) (addendum #42)
+- C4 s.198 election commercial fixtures depth (CAA 2001 s.198) (addendum #70)
+- C5 SDLT linked transactions Sch 4 para 5 FA 2003 (addendum #1)
+- C6 SDLT cladding relief s.58C FA 2003 (addendum #8 — Wave 5 covered VAT side only)
+- C7 SDLT divorce/separation transfer reliefs (Sch 3 para 3 FA 2003) (addendum #2)
+- C8 SDLT Bewley uninhabitable-property test (addendum #3)
+- C9 Partnership SDLT relief Sch 15 FA 2003 (addendum #7)
+- C10 SIPP/SSAS commercial property purchase mechanics (addendum #68)
+
+**House-position locks required pre-Stage-2 (~10-11 new positions):**
+
+- **NEW §26 Regulatory framework cluster** (extends §20 RRA depth). ~6-8 sub-positions covering: §26.1 RRA 2026 enacted-state architecture (extends §20.1-§20.13); §26.2 BSA 2022 (Higher-Risk Buildings + Accountable Person + leaseholder protections); §26.3 EPC C 2030 + MEES extension regime; §26.4 Decent Homes Standard application to PRS; §26.5 Property Redress Scheme mandatory enrolment; §26.6 landlord database (if commenced; verify status). Citations against legislation.gov.uk: Building Safety Act 2022 (c. 30); Energy Efficiency (Private Rented Property) (England and Wales) Regulations 2015 (SI 2015/962) + 2025/2030 amendment instruments; RRA 2025 (verified-as-enacted state already in §20).
+- **NEW §27 HMRC enquiry + compliance mechanics cluster**. ~4-5 sub-positions covering: §27.1 TMA 1970 s.29 discovery assessment time limits (ordinary 4-year, careless 6-year, deliberate 20-year); §27.2 Sch 24 FA 2007 penalty behaviour categories + mitigation framework; §27.3 closure notice mechanics (TMA 1970 s.28A) + FTT appeal route (TCEA 2007 Sch 4); §27.4 CoP9 contractual disclosure; §27.5 voluntary disclosure routes (Let Property Campaign + Worldwide Disclosure Facility) vs failure-to-notify position; §27.6 record retention statutory floor (TMA 1970 s.12B; CA 2006 s.388).
+- **§22 extension** (extends §22.9-§22.15 Wave 6 lock) for: §22.16 TRS registration triggers + registrable trust classes + 90-day registration deadline + MLR 2017 reg 45ZA penalty regime; §22.17 IPDI/QIIP rental-property depth (IHTA 1984 s.49A operational mechanics beyond Wave 6 B3 IPDI page); §22.18 EOT property-SPV exit (TCGA 1992 ss.236M-Q + CTA 2010 ss.464M-Q + the 50%+1 employee-trust controlling-interest test for property-SPV qualification).
+- **§25 extension** (extends Wave 6 §25 CAA 2001 cluster) for: §25.11 s.198 election depth (purchase-side mechanics + 2-year time limit + CAA 2001 s.198(2) form + s.187A no-late-claim consequence; complements Wave 6 C6's brief touch). Note: §25.11 LRR depth from F-17 (Wave 6) is a separate inter-wave queue item, distinct from this s.198 depth lock.
+- **§1 extension** (extends §1 SDLT) for: §1.X Sch 15 FA 2003 partnership SDLT relief (sum-of-lower-proportions calculation + the SDLTM33500 HMRC manual page that F-21 Wave 6 confirmed is the correct partnership-transfer reference, not the s.75A Ramsay manual at SDLTM09050+). Also surface SDLT linked-transactions Sch 4 para 5 + Bewley + Sch 3 para 3 divorce/separation as adjacent §1 sub-positions if not already locked at this depth.
+
+**Wave 7 prep workflow (estimated ~6 hours wall-clock for the fresh manager):**
+
+1. **HP-lock sessions (~2-3 hours).** Lock §26 + §27 + §22 extensions + §25.11 + §1.X. Each position verified against legislation.gov.uk / gov.uk / HMRC manual / case law before locking. §16.18 reasoning-first + §16.40 Stage 2 statutory cross-check pattern firmly load-bearing. Watch for: BSA 2022 commencement order status; MEES extension SI status (verify SI 2025/* on legislation.gov.uk); landlord database commencement; TRS penalty figures (current MLR 2017 reg 45ZA values); EOT 50% test post-FA-2025 reforms.
+2. **Cannibalisation re-check** against main at 181 pages. Run `scripts/property_cannibalisation_check.py` with current main as baseline. Audit 0.30-0.55 partial-overlap candidates. Likely areas of overlap to verify: Wave 1 + 2 + 3 RRA coverage vs Bucket A picks; Wave 1 + 4 + 5 SDLT coverage vs Bucket C SDLT picks; Wave 1 + 2 trust coverage vs Bucket C C1-C3 picks.
+3. **Stage 1a brief seeds (sub-agent dispatch, ~1-2 hours).** 30 seeds across the 3 buckets. Each seed: slug + category + framing differentiator + 3-5 competitor URLs + closest-existing pages + authority links (cluster-specific). §16.36 statutory-citation cross-check gate baked into the seed prompt.
+4. **Stage 1b cross-check (manager review, ~1 hour).** Manager reviews every seed against locked HPs + Wave 6 lessons. Expected catches: 5-7 brief-instruction errors (per §16.40 territory-novelty rule — Wave 7 territory is high statutory novelty for RRA + BSA + HMRC enquiry, lower for SDLT cluster).
+5. **Stage 2 full brief generation (3 parallel sub-agents per §16.43 pattern, ~40 min each).** One sub-agent per bucket. Each generates 10 full briefs at `briefs/property/wave7/<slug>.md`. §16.36 + §16.40 + §16.42 patterns applied. Expected drift catches: per Wave 6 pattern, 3-6 brief-quality drifts per bucket (statutory section attribution + HMRC manual page numbers + rate-by-reference figures).
+6. **Artefacts (~15 min).** wave7_page_tracker.md + wave7_site_wide_flags.md + 3× wave7_questions_session_{A,B,C}.md + 3× wave7_discovery_log_session_{A,B,C}.md shells. Q&A shells use the §16.41 placeholder convention (`<open initially; manager flips to: answered>`, not literal STATUS: open).
+7. **Worktrees standup (~10 min).** 3 fresh worktrees `Accounting-wt-property-wave7-{a,b,c}/` on branches `property-wave7-{a,b,c}` from current main HEAD. ff-verified per §16.25. Copy `.env` + `optimisation_engine/competitor/_db.py` into each (§16.1).
+8. **START_HERE × 3 + WAVE7_LAUNCH_PROMPTS (~30 min).** Adapted from Wave 6 template. New additions for Wave 7: (a) §16.41(d) watcher pattern — count `## Q-\d+` heading occurrences not STATUS: open lines; (b) §16.43 sub-agent dispatch awareness baked into the manager-side close section; (c) cross-bucket sequencing constraints per §16.32.
+9. **Watcher arm** using §16.41(d) `## Q-\d+` heading count pattern (template-immune; Q heading count is monotonic).
+10. **User gate** — final manager-review summary with pick list, HP-lock summary, cross-bucket sequencing constraints, watcher state. User-triggered launch.
+
+**Cross-bucket sequencing constraints (manager to confirm at pre-launch):** Bucket A is statute-isolated (RRA + BSA + EPC + Decent Homes are non-tax statutes; minimal cross-link to B + C). Bucket B is operational tax mechanics (cross-references on TMA 1970 + Sch 24 + FTT appeals); cross-links possible to Bucket C's SDLT picks at tribunal-appeal angle. Bucket C cross-links inside cluster: C1 TRS → C2 IPDI/QIIP (IHTA s.49A interaction); C9 partnership SDLT → C5 linked transactions (Sch 15 + Sch 4 para 5 interaction).
+
+**Inter-wave items still queued (carry into post-Wave-7):**
+- F-7 (Wave 2) brand wordmark em-dash — separate scope, still outstanding from Wave 4 inter-wave queue.
+- F-8 (Session C Wave 6) SiteHeader sr-only em-dash — template chrome, separate scope.
+- F-9 (Session C Wave 6) `cgt-commercial-property-different-residential` post-30-October-2024 rate alignment rewrite — post-launch hygiene; can fold into Wave 7 close back-patches if convenient.
+- F-15 (Session B Wave 6) legacy `cgt-gifting-property-family-members-uk` extension to surface five-route structural decision tree — could be Wave 8 candidate or post-Wave-7 hygiene.
+- F-17 (Session C Wave 6) §25.11 LRR HOUSE_POSITION_EXTENSION — distinct from Wave 7 §25.11 s.198 lock; could fold into Wave 7 HP-lock work if convenient (LRR is CTA 2009 Part 14, not CAA 2001; either as §25.11 LRR sub-position OR new §26 if §26 is regulatory and CTA 2009 reliefs need their own cluster).
+- §22.5 spouse-exemption pre-FA-2025 architecture refresh — deferred per §16.39 from Wave 6 prep; should land before any non-dom-IHT touch.
+- §25.8 PENDING items (full-expensing leased-plant commencement; FA(No.2)2023 amendment chain doc; HMRC official rate).
+
+**Watcher state:** stopped. Re-arm at Wave 7 launch per §16.41(d) pattern.
+
+---
+
 ### Wave 6 prep (2026-05-23 PM) — open items
 
 - **§22.5 drift catch (deferred, low priority).** Wave 6 Stage 1b surfaced §22.5 spouse-exemption framing for non-UK-domiciled spouses as carrying pre-FA-2025 architecture. Pre-FA-2025 s.18(2) limited exemption + s.267ZA election framework was written before FA 2025 reforms shifted the operative criterion from domicile to long-term-residence. **Not a Wave 6 blocker** because Bucket B picks B3/B4/B7 cite §22.12-new not §22.5. Recommended: targeted §22.5 refresh sub-agent run (~30 min) at Wave 6 close, in time for any future wave that touches non-dom IHT territory. See §16.39.
