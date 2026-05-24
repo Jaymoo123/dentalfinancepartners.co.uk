@@ -1082,9 +1082,9 @@ git worktree remove ../Accounting-wt-property-wave6-c
 **Wave 7 next steps:**
 1. ~~HP-lock sessions~~ **COMPLETE** 2026-05-24 PM (5 commits, 5 clusters, 11 sub-positions, 12 drift catches).
 2. ~~Cannibalisation re-check against main at 181 pages.~~ **COMPLETE** 2026-05-24 PM (commit `6a4e951`). Results: ✅ 25 net-new / ⚠️ 5 partial / ❌ 0 covered. **Lineup updated to 28 picks** (Bucket A 9 + B 10 + C 9) after user-confirmed audit decisions: A4 RRA rent reform replaced with HMO selective licensing compliance; A7 Decent Homes dropped; C4 s.198 fixtures depth dropped. See `docs/property/wave7_cannibalisation_check.md` for audit detail.
-3. Stage 1a brief seeds (sub-agent dispatch) — 28 picks to seed.
-4. Stage 1b manager review.
-5. Stage 2 full brief generation (3 parallel sub-agents per §16.43 pattern).
+3. ~~Stage 1a brief seeds (sub-agent dispatch)~~ **COMPLETE** 2026-05-24 PM. Single general-purpose sub-agent generated 28 seeds at `briefs/property/wave7/STAGE1A_BRIEF_SEEDS.md` (~7,000 words). Three HP gaps surfaced (A4 HMO licensing; C6 SDLT cladding; C10 SIPP/SSAS); Stage 1a surfaced **drift catch #13** — FA 2003 s.58C is "Relief for new zero-carbon homes" not cladding remediation; no SDLT cladding relief exists in UK statute.
+4. ~~Stage 1b manager review~~ **COMPLETE** 2026-05-24 PM. 3 HP gaps closed via mini-locks at commit `6cbb0ed`: §26.9 (HA 2004 Pt 2/3 HMO licensing) + §1.G (FA 2003 Sch 7 SDLT group relief) + §22.21 (FA 2004 Sch 29A SIPP/SSAS taxable property). C6 pick replaced (user choice: SDLT group relief depth at §1.G). A4 + C6 + C10 seeds updated in-place; Stage 1b review queue closed.
+5. Stage 2 full brief generation (3 parallel sub-agents per §16.43 pattern) — **READY TO DISPATCH**. 28 picks, one sub-agent per bucket (9 + 10 + 9). Each sub-agent generates 10/10/9 full briefs at `briefs/property/wave7/<slug>.md` per Wave 6 brief format.
 6. Artefacts (wave7_page_tracker + flags + Q&A shells + discovery shells).
 7. Worktrees standup (3 fresh ff-verified to main HEAD).
 8. START_HERE × 3 + WAVE7_LAUNCH_PROMPTS.
