@@ -17,7 +17,7 @@
 - **Bucket:** A (Regulatory / compliance — HA 2004 Pt 2/3 cluster)
 - **Framing differentiator (Stage 2, 2026-05-24):**
 
-> Housing Act 2004 Pt 2 (mandatory + additional HMO licensing) and Pt 3 (selective licensing) — three distinct licensing regimes that frequently confuse landlord readership. (a) **Mandatory HMO licensing under HA 2004 Pt 2 ss.55-78** — the "5+ unrelated tenants forming 2+ households" threshold per HA 2004 Pt 2 + Licensing of HMOs (Prescribed Description) (England) Order 2018 (SI 2018/221); fee-setting by LA; condition-imposition power; refusal grounds; (b) **Additional HMO licensing** — LA designation under s.56 covering smaller HMOs (e.g. 3-4 unrelated tenants) in designated areas; designation procedure and ministerial confirmation thresholds; (c) **Selective licensing under HA 2004 Pt 3 ss.79-100** — LA designation for ALL private rentals (not just HMOs) in designated areas; thresholds for designation (low housing demand + significant anti-social behaviour + poor property conditions per s.80 + s.81); ministerial-confirmation requirement; (d) **Civil penalty regime** under HA 2004 s.249A — up to £30,000 per offence (introduced by Housing and Planning Act 2016 s.126; verify no FA 2025/2026 uplift); (e) **Banning order interaction** — Housing and Planning Act 2016 s.14 + Sch 2 banning-order offences; conviction for unlicensed operation can trigger banning order; (f) **RRO route under §20.10** — RRA 2025 amends the RRO regime; 2-year RRO window per F-12 correction (NOT pre-RRA 12-month window); tenant standing to apply; (g) **Tax-side hook** — licensing fees deductible against rental income (§26.7 + general s.34 ITTOIA 2005 wholly-and-exclusively); civil penalties NOT deductible (s.54 ITEPA / Companies Act 2009 inadmissible-deduction principle); banning-order legal-defence costs deductibility nuance. NOT writing tax-deductibility of licensing fees in isolation (existing `hmo-licensing-fees-tax-deductible-uk-landlords` covers).
+> Housing Act 2004 Pt 2 (mandatory + additional HMO licensing) and Pt 3 (selective licensing) — three distinct licensing regimes that frequently confuse landlord readership. (a) **Mandatory HMO licensing under HA 2004 Pt 2 ss.55-78** — the "5+ unrelated tenants forming 2+ households" threshold per HA 2004 Pt 2 + Licensing of HMOs (Prescribed Description) (England) Order 2018 (SI 2018/221); fee-setting by LA; condition-imposition power; refusal grounds; (b) **Additional HMO licensing** — LA designation under s.56 covering smaller HMOs (e.g. 3-4 unrelated tenants) in designated areas; designation procedure and ministerial confirmation thresholds; (c) **Selective licensing under HA 2004 Pt 3 ss.79-100** — LA designation for ALL private rentals (not just HMOs) in designated areas; thresholds for designation (low housing demand + significant anti-social behaviour + poor property conditions per s.80 + s.81); ministerial-confirmation requirement; (d) **Civil penalty regime** under HA 2004 s.249A — up to **£40,000 per offence from 1 May 2026** (uplifted by SI 2026/319 reg.2 from the original £30,000 cap inserted by HPA 2016 s.126; verified at HP-lock per F-1 closure 2026-05-24; do NOT write £30,000 as current); (e) **Banning order interaction** — Housing and Planning Act 2016 s.14 + Sch 2 banning-order offences; conviction for unlicensed operation can trigger banning order; (f) **RRO route under §20.10** — RRA 2025 amends the RRO regime; 2-year RRO window per F-12 correction (NOT pre-RRA 12-month window); tenant standing to apply; (g) **Tax-side hook** — licensing fees deductible against rental income (§26.7 + general s.34 ITTOIA 2005 wholly-and-exclusively); civil penalties NOT deductible (s.54 ITEPA / Companies Act 2009 inadmissible-deduction principle); banning-order legal-defence costs deductibility nuance. NOT writing tax-deductibility of licensing fees in isolation (existing `hmo-licensing-fees-tax-deductible-uk-landlords` covers).
 
 If your reasoning suggests the slug/category should differ, you may override, but log the override and reason in the per-page work-log below.
 
@@ -29,7 +29,7 @@ If your reasoning suggests the slug/category should differ, you may override, bu
 
 ## Competitor URLs (Stage 2 populated; URL liveness verified at fetch time per §16.31)
 
-**Fetch + read + extract instruction:** Standard httpx + BeautifulSoup. Extract treatment of the three licensing regimes (most competitors blur the boundaries), civil penalty framing (£30k figure), banning-order interaction, RRO window (older content may use the pre-RRA 12-month window — replace with the 2-year window per §20.10).
+**Fetch + read + extract instruction:** Standard httpx + BeautifulSoup. Extract treatment of the three licensing regimes (most competitors blur the boundaries), civil penalty framing (**£40k figure post-1-May-2026** per SI 2026/319; competitors likely still using outdated £30k — do NOT inherit), banning-order interaction, RRO window (older content may use the pre-RRA 12-month window — replace with the 2-year window per §20.10).
 
 - https://www.ukpropertyaccountants.co.uk/hmo-licensing-mandatory-additional-selective/
 - https://www.uklandlordtax.co.uk/hmo-additional-selective-licensing-landlord-guide/
@@ -72,7 +72,8 @@ No existing slug matches A4's selective-licensing-mechanics scope. No middleware
 **Statutory (HA 2004 + HPA 2016 + RRA 2025):**
 - Housing Act 2004 Part 2 (HMO licensing, ss.55-78): https://www.legislation.gov.uk/ukpga/2004/34/part/2
 - Housing Act 2004 Part 3 (selective licensing, ss.79-100): https://www.legislation.gov.uk/ukpga/2004/34/part/3
-- Housing Act 2004 s.249A (civil penalty up to £30,000 per offence — inserted by HPA 2016 s.126): https://www.legislation.gov.uk/ukpga/2004/34/section/249A
+- Housing Act 2004 s.249A (civil penalty **up to £40,000 per offence from 1 May 2026** per SI 2026/319 reg.2 — original £30,000 cap inserted by HPA 2016 s.126): https://www.legislation.gov.uk/ukpga/2004/34/section/249A
+- The Financial Penalties (Housing Offences and Breach of Banning Orders) Regulations 2026 (SI 2026/319): https://www.legislation.gov.uk/uksi/2026/319 (commencement 1 May 2026; the regs uplifting s.249A cap to £40,000)
 - Housing and Planning Act 2016 s.14 (banning orders): https://www.legislation.gov.uk/ukpga/2016/22/section/14
 - Housing and Planning Act 2016 Sch 2 (banning-order offences): https://www.legislation.gov.uk/ukpga/2016/22/schedule/2
 - Licensing of HMOs (Prescribed Description) (England) Order 2018 (SI 2018/221 — 5+ unrelated tenants threshold operationalised): https://www.legislation.gov.uk/uksi/2018/221
@@ -92,7 +93,7 @@ No existing slug matches A4's selective-licensing-mechanics scope. No middleware
 
 ## Universal rules (do not skip)
 
-**§16.35 per-write verification (mandatory):** Verify "5+ unrelated tenants forming 2+ households" threshold against HA 2004 Pt 2 + SI 2018/221; verify civil penalty £30k under s.249A has NOT been uplifted in FA 2025/2026; verify RRA 2025 has commenced the 2-year RRO window provisions; verify selective licensing designation thresholds at s.80 + s.81.
+**§16.35 per-write verification (mandatory):** Verify "5+ unrelated tenants forming 2+ households" threshold against HA 2004 Pt 2 + SI 2018/221; civil penalty **£40,000** under s.249A from 1 May 2026 per SI 2026/319 reg.2 is **VERIFIED at HP-lock (F-1 closure 2026-05-24)** — do NOT re-state as £30k; verify RRA 2025 has commenced the 2-year RRO window provisions; verify selective licensing designation thresholds at s.80 + s.81.
 
 ### Voice
 - **No em-dashes.**
@@ -122,7 +123,7 @@ No existing slug matches A4's selective-licensing-mechanics scope. No middleware
 - §26.9 primary; verbatim mini-lock.
 - §20.10 (RRO 2-year window).
 - §26.7 (tax-side split).
-- §16.45 drift catches — civil penalty £30k since HPA 2016 (not pre-2016 figures); RRO 2-year window per RRA 2025 (not pre-RRA 12-month).
+- §16.45 drift catches — civil penalty **£40k from 1 May 2026 per SI 2026/319** (was £30k under HPA 2016 to pre-1-May-2026; F-1 closure 2026-05-24); RRO 2-year window per RRA 2025 (not pre-RRA 12-month).
 
 ### Quality bar
 - Word count: 2,800-3,500.
@@ -145,7 +146,7 @@ No existing slug matches A4's selective-licensing-mechanics scope. No middleware
 4. Fetch competitor URLs.
 5. Read closest existing pages, especially `hmo-licensing-fees-tax-deductible-uk-landlords`.
 6. Plan rewrite/write.
-7. Verify factual claims; **per §16.35: re-verify "5+ unrelated tenants forming 2+ households" threshold, civil penalty £30k under s.249A (no FA 2025/2026 uplift), RRO 2-year window commencement under RRA 2025, s.80/s.81 selective designation thresholds**.
+7. Verify factual claims; **per §16.35: re-verify "5+ unrelated tenants forming 2+ households" threshold; civil penalty under s.249A is £40,000 per offence from 1 May 2026 per SI 2026/319 reg.2 (F-1 closure 2026-05-24 — do NOT cite £30k as current); RRO 2-year window commencement under RRA 2025; s.80/s.81 selective designation thresholds**.
 8. Fetch Pexels image.
 9. Write markdown with full frontmatter.
 10. Build.

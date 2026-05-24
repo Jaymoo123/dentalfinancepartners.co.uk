@@ -17,7 +17,7 @@ Tracker columns: status | bucket-pos | slug | category | body words | FAQ count 
 | ⬜ | A1 | `renters-rights-act-2026-tax-implications-landlords` | landlord-tax-essentials | | | | EXISTING SLUG; same-slug depth rewrite. Body copy must use "Renters' Rights Act 2025" (slug grandfathered per §26.1). Ship LAST in Bucket A. |
 | ⬜ | A2 | `renters-rights-act-section-21-abolition-landlord-operational-mechanics` | landlord-tax-essentials | | | | Operational-mechanics framing distinct from existing rule-of-law page. Ship before A1; reciprocal with A5. |
 | ⬜ | A3 | `renters-rights-act-periodic-tenancy-switch-landlord-obligations` | landlord-tax-essentials | | | | Conversion-mechanics framing distinct from tenancy-template page. |
-| ⬜ | A4 | `hmo-selective-licensing-compliance-housing-act-2004-landlord-licensing-mechanics` | property-types-and-specialist-tax | | | | REPLACES Stage 1b A4 (original was RRA rent-reform, cannibal 0.35). Anchors at §26.9 mini-lock. £30k civil penalty under HA 2004 s.249A. |
+| 🟦 | A4 | `hmo-selective-licensing-compliance-housing-act-2004-landlord-licensing-mechanics` | property-types-and-specialist-tax | | | | Session A claimed 2026-05-24 14:30 UTC. Anchors at §26.9 mini-lock. £30k civil penalty under HA 2004 s.249A. |
 | ⬜ | A5 | `renters-rights-act-possession-grounds-reform-section-8-landlords` | landlord-tax-essentials | | | | Sch 1 reformed grounds walk-through. Reciprocal with A2. |
 | ⬜ | A6 | `renters-rights-act-property-redress-scheme-mandatory-enrolment-landlords` | landlord-tax-essentials | | | | RRA 2025 s.64-74 — PLURAL approved schemes per §26.5 (NOT single ombudsman); £25k cap not on face of Act. |
 | ⬜ | A8 | `epc-c-2030-minimum-energy-efficiency-landlord-spending-cap` | landlord-tax-essentials | | | | CRITICAL: write as policy aspiration per §26.3; current floor EPC E + £3,500 cap under SI 2015/962. |
@@ -43,7 +43,7 @@ Tracker columns: status | bucket-pos | slug | category | body words | FAQ count 
 
 | Status | Pos | Slug | Category | Body words | FAQs | MP ID | Notes |
 |---|---|---|---|---|---|---|---|
-| ⬜ | C1 | `trust-registration-service-trs-compliance-trust-owned-btl-mlr-2017` | incorporation-and-company-structures | | | | TRS pillar; 90-day deadline; £5,000 max DISCRETIONARY penalty (NOT graduated). Ships before C2. |
+| 🟦 | C1 | `trust-registration-service-trs-compliance-trust-owned-btl-mlr-2017` | incorporation-and-company-structures | | | | Session C claimed 2026-05-24 14:20 UTC. TRS pillar; 90-day deadline; £5,000 max DISCRETIONARY penalty (NOT graduated). Ships before C2. |
 | ⬜ | C2 | `immediate-post-death-interest-ipdi-rental-property-tax-iht-1984-s49a` | incorporation-and-company-structures | | | | IHTA 1984 s.49A four conditions; s.49(1) deeming; QIIP narrow post-22-March-2006. |
 | ⬜ | C3 | `employee-ownership-trust-eot-property-spv-exit-mechanics-tcga-1992-s236` | incorporation-and-company-structures | | | | TRADING-COMPANY GATING CONSTRAINT — most landlord SPVs do NOT qualify. EOT >50% test (NOT "at least 50%"). ITEPA s.312A £3,600/employer/tax year (NOT CTA 2010 ss.464M-Q which doesn't exist). FA 2025 s.31 + Sch 6 reforms. |
 | ⬜ | C5 | `sdlt-linked-transactions-fa-2003-section-108-landlord-portfolio-acquisition` | incorporation-and-company-structures | | | | FA 2003 s.108 (NOT Sch 4 para 5 which is exchanges). s.108(1A) Scottish/Welsh excluded. |

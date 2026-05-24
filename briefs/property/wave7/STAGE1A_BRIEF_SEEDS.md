@@ -71,12 +71,13 @@
 
 - **Final slug:** `hmo-selective-licensing-compliance-housing-act-2004-landlord-licensing-mechanics`
 - **Bucket + section ID:** Bucket A / §26.9
-- **Framing differentiator (~50 words):** Replaced the original A4 (RRA rent reform, cannibal at 0.35 vs existing `renters-rights-act-rent-increase-section-13-tribunal-route`). New A4 covers Housing Act 2004 Part 2 (mandatory + additional HMO licensing — 5+ unrelated tenants threshold; LA additional licensing designations) and Part 3 (selective licensing — LA geographic designations for all rentals). Civil penalty regime up to £30k per offence; banning order interaction; RRO route under §20.10. NOT writing tax-deductibility of licensing fees (`hmo-licensing-fees-tax-deductible-uk-landlords` already covers).
+- **Framing differentiator (~50 words):** Replaced the original A4 (RRA rent reform, cannibal at 0.35 vs existing `renters-rights-act-rent-increase-section-13-tribunal-route`). New A4 covers Housing Act 2004 Part 2 (mandatory + additional HMO licensing — 5+ unrelated tenants threshold; LA additional licensing designations) and Part 3 (selective licensing — LA geographic designations for all rentals). Civil penalty regime up to **£40k per offence from 1 May 2026 per SI 2026/319** (was £30k under HPA 2016); banning order interaction; RRO route under §20.10. NOT writing tax-deductibility of licensing fees (`hmo-licensing-fees-tax-deductible-uk-landlords` already covers).
 - **House-position anchors:** §26.9 (HA 2004 Pt 2/3 — mandatory + additional + selective licensing; civil penalty / RRO / banning order stack; tax-side fees-deductible-penalties-not split); §20.10 (RRO 2-year window via RRA 2025).
 - **Statutory anchors:**
   - https://www.legislation.gov.uk/ukpga/2004/34/part/2 (HA 2004 Part 2 — HMO licensing, ss.55-78)
   - https://www.legislation.gov.uk/ukpga/2004/34/part/3 (HA 2004 Part 3 — selective licensing, ss.79-100)
-  - https://www.legislation.gov.uk/ukpga/2004/34/section/249A (civil penalty up to £30,000 per offence)
+  - https://www.legislation.gov.uk/ukpga/2004/34/section/249A (civil penalty **up to £40,000 per offence from 1 May 2026** per SI 2026/319; original cap £30,000 inserted by HPA 2016)
+  - https://www.legislation.gov.uk/uksi/2026/319 (SI 2026/319, in force 1 May 2026 — uplifts s.249A cap)
   - https://www.legislation.gov.uk/ukpga/2016/22/section/14 (HPA 2016 banning orders; RRA 2025 amends/extends)
 - **Closest existing pages:** `hmo-licensing-fees-tax-deductible-uk-landlords` (0.20 — clean separation: tax-deductibility vs licensing-mechanics).
 - **3-5 competitor URLs:**
@@ -84,7 +85,7 @@
   - https://www.uklandlordtax.co.uk/hmo-additional-selective-licensing-landlord-guide/
   - https://www.landlordstax.co.uk/hmo-licensing-housing-act-2004/
 - **Cross-bucket sequencing constraints:** Minor — C7 SDLT divorce-transfer cross-refs HMO licensing operational point (portfolios subject to divorce settlement frequently HMO-licensed). Not blocking.
-- **Drift watchpoints at write time:** (i) confirm "5+ unrelated tenants forming 2+ households" threshold against HA 2004 Pt 2 + LACORS guidance; (ii) civil penalty maximum has been £30,000 since HPA 2016 — verify no FA 2025/2026 uplift; (iii) selective licensing designations vary by LA — frame as enabling-power not blanket coverage.
+- **Drift watchpoints at write time:** (i) confirm "5+ unrelated tenants forming 2+ households" threshold against HA 2004 Pt 2 + LACORS guidance; (ii) civil penalty maximum **VERIFIED at HP-lock as £40,000 from 1 May 2026 per SI 2026/319 reg.2** (was £30,000 under HPA 2016; F-1 closure 2026-05-24) — do NOT inherit competitor £30k figures; (iii) selective licensing designations vary by LA — frame as enabling-power not blanket coverage.
 
 ## A5 RRA possession-ground reforms — reformed s.8 grounds
 
