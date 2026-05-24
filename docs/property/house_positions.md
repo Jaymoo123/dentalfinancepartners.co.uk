@@ -866,6 +866,15 @@ Extends and **replaces** §12 with enacted detail. §12 was written when the Bil
 
 **Correction logged 2026-05-23 (F-14):** earlier §20.2 framed the tenant 2-month notice as a consequence of the periodic-tenancy default ("fixed-term lock-in unavailable"). The actual statutory hook is **RRA 2025 s.5** amending Protection from Eviction Act 1977 to insert **PEA 1977 s.5(1ZA)**, which sets the 2-month floor independent of the periodic-tenancy mechanic. Pinning the statutory source prevents future writers from collapsing two distinct provisions. Verified via §20 verification pass against legislation.gov.uk and enacted-Act PDF (lines 2477-2491), 2026-05-23.
 
+**Correction logged 2026-05-24 (F-3) — RRA 2025 verbatim-section disambiguation table.** Wave 7 Session A caught two distinct section-number drifts in briefs and adjacent commentary; both verified against https://www.legislation.gov.uk/ukpga/2025/26/ on 2026-05-24. The substantive citations sessions must use are:
+- **RRA 2025 s.2** — "Abolition of assured shorthold tenancies" (omits Ch.2 of Pt.1 HA 1988 + s.6A). This is the s.21 abolition mechanism. NOT s.4.
+- **RRA 2025 s.3** — introduces Sch 1 (reformed Section 8 possession grounds).
+- **RRA 2025 s.4** — "Possession for anti-social behaviour: relevant factors" (NOT the s.21 abolition section).
+- **RRA 2025 s.5** — amending vehicle for PEA 1977 s.5(1ZA) per F-14 above; sets the 2-month tenant-notice floor.
+- **RRA 2025 s.6** — "Statutory procedure for increases of rent" (the s.13 rent-review mechanic). NOT the re-letting restriction.
+- **RRA 2025 s.15** — inserts new **HA 1988 s.16E** (12-month re-letting restriction on landlord-sale and landlord-occupation grounds) + **HA 1988 s.16J** (criminal offence for breach) + **HA 1988 s.16K** (£40,000 civil-penalty alternative). This is the operative re-letting-restriction anchor, NOT s.6.
+The sequential numbering of these provisions makes them easy to collapse in unverified prose. Sessions writing on RRA 2025 mechanics must cite the verbatim section heading or use this disambiguation table; "RRA 2025 s.6 imposes a 12-month re-letting restriction" is a recurring drift catch and is **wrong** — that mechanic is at HA 1988 s.16E inserted by RRA 2025 s.15.
+
 ### 20.3 Periodic-tenancy default and AST phase-out
 
 - All new assured tenancies are **periodic from grant** under the Act.
@@ -2225,9 +2234,11 @@ This §22.21 mini-lock sits in the §22 cluster as it extends the IHT / estate-p
 - **Standard maximum penalties (Sch 24 para 4) and disclosure mitigation floors (paras 9-10):**
   | Behaviour | Max | Unprompted disclosure floor | Prompted disclosure floor |
   |---|---|---|---|
-  | Careless | 30% | 0% (within 12 months) | 15% |
+  | Careless | 30% | 0% | 15% |
   | Deliberate not concealed | 70% | 20% | 35% |
   | Deliberate and concealed | 100% | 30% | 50% |
+
+  **F-5 correction logged 2026-05-24:** Schedule 24 FA 2007 para 10 imposes NO "within 12 months" qualifier on the careless-unprompted 0% floor. The 12-month cliff exists in **Schedule 41 FA 2008 para 13** (failure-to-notify): unprompted disclosure of a non-deliberate failure must be made within 12 months of when liability arose to access the 0% floor; otherwise the floor is 10%. Sessions writing on inaccuracy penalties must not import the Sch 41 12-month qualifier into Sch 24 commentary. Verified against https://www.legislation.gov.uk/ukpga/2007/11/schedule/24/paragraph/10 on 2026-05-24 (Wave 7 B8 write-time verification). Earlier §27.2 carried the conflation; back-patched at this commit.
 - **Offshore uplift (Sch 24 para 4A inserted by FA 2010 + FA 2015 reforms):**
   - **Category 1** (domestic + offshore in territories with full information exchange): bands as above (max 30% / 70% / 100%).
   - **Category 2** (offshore in partial-information-exchange territories): bands multiplied 1.5x (max 45% / 105% / 150%).
