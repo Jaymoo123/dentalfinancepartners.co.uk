@@ -255,7 +255,7 @@ Visually-similar slugs in residual 233 that likely resolve as REWRITE one + REDI
 
 **Batch 1 Sub-bucket B cluster collapse summary:** all 3 candidates resolved as REDIRECT-PROPOSED to single canonical `cgt-payment-deadlines-property-sales-2026` (rewritten Session C #23 on 2026-05-21). Combined pre-redirect cluster impressions: ~380 across 4 pages at pos 10-18 split-equity; post-redirect target consolidation to 1 page. Bundle as single commit at execution time so canonical absorbs equity in one deployment. **F-13 RESOLVED 2026-05-24 00:15Z** by manager — back-patched (commit `a103a04`). Three legacy CGT-reporting siblings outside Batch 1 scope (`how-to-report-property-sale-hmrc-60-days`, `report-property-sale-hmrc-60-days-guide`) carried into Batch 2 sub-bucket A.
 
-### Batch 2 OPEN 2026-05-24 PM — CGT cluster continuation (sub-agents append as they draft)
+### Batch 2 CLOSED 2026-05-24 PM — full table below preserved for audit; Phase 3 execution complete
 
 | Slug | Sub-bucket | Drafted at | Sub-agent | Status | Notes |
 |---|---|---|---|---|---|
@@ -271,6 +271,28 @@ Visually-similar slugs in residual 233 that likely resolve as REWRITE one + REDI
 | cgt-commercial-property-different-residential | C | 2026-05-24 PM | Sub-agent C | **REWRITE** | **CRITICAL — load-bearing reframe.** Source page core framing ("commercial CGT 10/20% vs residential 18/24%") in DIRECT CONFLICT with §5 LOCKED + verified legislation.gov.uk s.1H 2026-05-24 (post-30-October-2024 unified 18%/24% rate). 5 substantive errors (core rate framing + £4k-saving worked example + BADR 10% wrong + small-profits-rate-via-CT wrong + rollover-permissive-for-all-landlords wrong). REFRAME from "different rates" to "different reliefs + different mechanics". F-29 raised (HIGH — direct §5 LOCKED contradiction, reader-misleading) + F-30 (HIGH — Budget-2024-change cluster audit) + F-31 (LOW — 3rd occurrence of wrong-tax-term-via-small-profits-rate pattern after F-9 + F-25). **HIGHEST-STAKES STALE FRAMING caught in Track 2 to date.** Densest Wave-6-cross-link integration of any Track 2 brief: 5 W6 Bucket C forward-links + 2 W6 other; reciprocal back-links expected at execution for W6 C2/C3/C6/C8. |
 
 **Batch 2 cluster framing summary (mid-batch):** Sub-bucket A (TBD; hypothesis 3 REDIRECT-PROPOSED to canonical pair); Sub-bucket B (🟢 3 REWRITE — all 3 own SERP / cluster intent post-clarification); Sub-bucket C (🟢 3 REWRITE — NRCGT clean / PRR-election differentiator-resolved / commercial-vs-residential load-bearing reframe). Total flags raised through Sub-bucket B + C close: F-21 to F-31 (11 flags across two sub-buckets; 5 HIGH, 1 MEDIUM, 5 LOW). Intra-batch CANNIBAL B2-B1 vs B2-C2 RESOLVED without Q&A — sub-agents converged on the same three-way differentiator (W5 C7 couples / B2-B1 general PRR / B2-C2 single-owner-with-2-residences-election). Cross-residual cluster audit recommendations (F-26 NRCGT cluster + F-28 Lettings Relief cluster + F-30 Budget-2024 commercial cluster + F-31 small-profits-rate corporate cluster) accumulating — Phase 2 manager attention warranted on a coordinated back-patch sweep.
+
+### Phase 3 EXECUTION CLOSED 2026-05-24 PM — all 22 operations shipped to main
+
+**Phase 3 execution summary:**
+
+- 16 REWRITE briefs executed across 3 worktrees (A: 6 CGT reliefs; B: 6 CGT scenarios + applied mechanics; C: 4 trial cohort including T4 gold-reference canonical depth-up). Merged to main via commits `50269ba` + `8d3dc93` + `9cf0743`.
+- 6 REDIRECT operations executed in Worktree REDIRECTS (5-page collapse to `cgt-payment-deadlines-property-sales-2026` + 1 standalone to `cgt-selling-buy-to-let-property-calculation-guide`). Merged to main via merge of `track2-phase3-redirects` (commits `39053e7` + `e2bd08f`).
+- F-16 cluster collapse RESOLVED — 5:1 consolidation ratio on the 60-day-CGT cluster. **All slugs in Batch 1 Sub-bucket B + Batch 2 Sub-bucket A are now 301-redirected to canonical + source markdowns deleted from main.**
+- F-37 surfaced + applied (FA 2026 c.11 s.7 ENACTED 18 March 2026; the 13th consecutive Bill-vs-enacted catch). House_positions.md §7 update deferred to Wave 8 manager (position-shape change).
+- F-38 methodology validation entry confirms the verify-at-write-time dispatch-prompt cascade caught the enactment before commit.
+- Zero Q&A round-trips across all 4 worktrees. Cleanest parallel-dispatch execution of any Track 2 work to date.
+- Final build PASS on merged main (both intermediate build after A/B/C merge + final build after REDIRECTS merge). middleware 40.6 kB; generateStaticParams 488 → 487 paths after the 6 deletions.
+- 22 monitored_pages staging entries captured in discovery logs (16 rewrite_post + 6 redirect_post); manager batch-insert pending.
+- Aggregate output: ~50,000 words new content; ~190 FAQs; ~30 worked numerical examples; ~100+ statute citations with legislation.gov.uk hyperlinks verified at write time.
+
+**Post-Phase-3 open items (Phase 2 manager + Wave 8 manager):**
+
+- Deploy timing + bundling decision (user authorisation required; vercel CLI on parent dir per memory `vercel_cli_deploy_workflow.md`)
+- monitored_pages Supabase batch-insert (22 rows)
+- F-37 follow-up: house_positions.md §7 update + ~4-8 page back-patch sweep on rewrite-cohort + residual stale-hedge framings (Wave 8 manager territory)
+- D-C5 follow-up: F-1 pricing-leak audit extension to Peterborough rewrite cohort (manager call on soft-fee comparison framing)
+- Cluster audits queued: F-26 + F-28 + F-30 + F-31 + F-35 (rewrite-cohort year-stamp)
 
 ---
 

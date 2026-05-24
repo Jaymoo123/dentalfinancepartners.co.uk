@@ -265,6 +265,51 @@ All 6 REDIRECT source markdowns remain on disk pending Phase 3 REDIRECT bundle. 
 
 ---
 
+**Phase 3 CLOSED 2026-05-24 PM** — all 22 operations executed across 4 worktrees + merged to main + final build PASS.
+
+**Phase 3 results aggregate:**
+- 16 REWRITE briefs at gold-reference depth (3 trial + 6 Batch 1 + 6 Batch 2 + 1 trial special-case canonical-rewrite T4)
+- 6 REDIRECT operations (5-page collapse to `cgt-payment-deadlines-property-sales-2026` + 1 standalone to `cgt-selling-buy-to-let-property-calculation-guide`)
+- ~50,000 words of new on-site content shipped; ~190 FAQs; ~30 worked numerical examples; ~100+ statute citations rendered as legislation.gov.uk hyperlinks; 13 verified live authority URLs across the trial cohort alone + many more across Batch 1/2
+- F-37 surfaced + applied at T3+T4 (FA 2026 c.11 s.7 ENACTED 18 March 2026 — verify-at-write-time discipline validated; F-38 methodology note)
+- F-16 cluster collapse RESOLVED (5:1 ratio + 1 standalone)
+- Zero Q&A round-trips across all 4 worktrees (highest-discipline parallel dispatch of any Track 2 batch to date)
+
+**Phase 3 commits on main (12, in chronological order):**
+- `dcf504f` F-15 lift Manchester band-stacking → calculation walkthrough sibling
+- `da7dbe8` D-12 lift TMA 1970 s.43 4-year claim → BTL CGT calculation canonical
+- `5d9259a` D-11 lift paper-PPDCGT digitally-excluded route → 60-day-CGT canonical
+- `44684f5` Resolution-log housekeeping
+- `9ad48e4` Phase 3 prep bundle (tracker dispatch + 4 worktrees + 8 Q&A/discovery shells + launch prompts)
+- `8502b08` Split LAUNCH_PROMPTS into 4 standalone START_HERE files
+- `6593851` REWRITE doc-trail (3 sub-agents tracker rows + flags F-37/F-38 + discovery logs)
+- `50269ba` Merge Worktree A (6 REWRITE briefs CGT reliefs cluster + 1 metatrim, 7 commits)
+- `8d3dc93` Merge Worktree B (6 REWRITE briefs CGT scenarios + applied mechanics, 6 commits)
+- `9cf0743` Merge Worktree C (4 REWRITE briefs trial cohort, 4 commits)
+- `a65b501` REDIRECTS doc-trail (tracker rows + discovery + F-16 closure)
+- (this commit) Merge Worktree REDIRECTS (6 redirects across 2 commits) + Phase 3 close bundle
+
+**Bill-vs-enacted-Act catch count after Phase 3:** 13 consecutive catches across the program (the 13th being F-37 FA 2026 c.11 s.7 Royal Assent confirmed at write time). The §16.27/§16.30/§16.35/§16.36/§16.38 discipline cascade caught the enactment before T3 commit, avoiding the inverse risk of committing a hedged framing that would have been STALE as of 18 March 2026. F-38 methodology-validation entry stands.
+
+**Aggregate Track 2 state after Phase 3 close:**
+- 22 briefs drafted across all phases (4 trial + 9 Batch 1 + 9 Batch 2)
+- 22 briefs EXECUTED at Phase 3 (all 22)
+- ~211 residual remaining (233 - 16 REWRITE - 6 REDIRECT = 211)
+- Total flags raised across Trial + Batch 1 + Batch 2 + Phase 3: 38 (F-1 → F-38)
+- 17 distinct §16 lessons + 13 Bill-vs-enacted catches + 5 cluster-audit patterns mature
+
+**Open decisions awaiting user (post-Phase-3):**
+1. **Deploy timing:** Phase 3 outputs are on main + build PASS but NOT deployed. Per memory note `vercel_cli_deploy_workflow.md`: GitHub auto-deploy OFF; `cd Property && vercel deploy --prod` from parent dir on explicit user authorisation only. Wave 7 commits are also on main (and Wave 8 prep) — deploy decision affects all.
+2. **Deploy bundling:** bundle the Phase 3 outputs with held W4+W5+W6 deploy pool OR ship as separate Track 2 deploy. Manager recommendation = separate Track 2 deploy so monitored_pages signals stay disaggregable.
+3. **monitored_pages Supabase batch-insert:** 22 rows staged in discovery logs (16 rewrite_post + 6 redirect_post); manager to run insert script at user signal. 90-day window from merge date for visible-baseline pages; 180-day window for INVISIBLE-baseline pages per F-11 recommendation.
+4. **F-37 follow-up:** house_positions.md §7 update + Wave 5/6/7 rewrite-cohort + residual back-patch sweep for stale Bill-form hedge framing — Wave 8 manager territory (Wave 8 prep is in flight; recommendation already noted at the manager-level by Phase 3 close).
+5. **D-C5 follow-up:** F-1 pricing-leak pattern in Peterborough rewrite cohort (2026-05-21 cohort, not just residual city pages). Manager call needed on whether soft-fee comparison language is acceptable. Affects 6+ rewritten city pages.
+6. **Cluster audits queued for Phase 2 (post-Phase-3):** F-26 NRCGT-adjacent + F-28 Lettings Relief site-wide + F-30 commercial-rate Budget-2024 cluster + F-31 small-profits-rate cluster + F-35 rewrite-cohort year-stamp cluster.
+
+**Phase 3 prep commits landed:** All listed above. Phase 3 is the largest single Track 2 execution to date; the 12-commit landing on main is paired with concurrent Wave 7 close + Wave 8 prep work also on main.
+
+---
+
 ## §4 Brief anatomy — Track 2A template
 
 Each Track 2A brief lives at `briefs/property/track2/<slug>.md`. Section outline (Stage 1 reasoning vs Stage 2 data-enriched marked):
