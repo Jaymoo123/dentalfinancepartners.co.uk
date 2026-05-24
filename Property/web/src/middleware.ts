@@ -442,6 +442,12 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "2027-property-tax-rates-cgt-capital-gains-changes": "/blog/capital-gains-tax/cgt-property-2027-rate-changes-uk-landlords",
   // Obsolete £10,000 MTD slug (threshold was abandoned in late 2022); re-pointed 2026-05-23 from exemptions to policy-history (Wave 3 B10) per F-1 / brief recommendation
   "mtd-10000-threshold-when-does-it-apply": "/blog/making-tax-digital-mtd/mtd-itsa-major-tax-reform-context-policy-history",
+  // Track 2 Phase 3 REDIRECT bundle (2026-05-24) — F-16 5-page cluster collapse to 60-day-CGT canonical
+  "60-day-cgt-reporting-property-sales-complete-guide": "/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026",
+  "60-day-cgt-reporting-property-sales-rule": "/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026",
+  "cgt-reporting-deadlines-property-2026": "/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026",
+  "how-to-report-property-sale-hmrc-60-days": "/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026",
+  "report-property-sale-hmrc-60-days-guide": "/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026",
 };
 
 const LOCATION_TO_BLOG: Record<string, string> = {
