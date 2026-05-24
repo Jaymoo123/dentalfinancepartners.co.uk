@@ -174,8 +174,8 @@ Plan against these scheduled rates while noting they require enactment to crysta
 ## 9. IHT — landlord-relevant positions
 
 **Locked figures 2026/27:**
-- **Nil-rate band (NRB):** **£325,000**, frozen until 5 April 2030 (extended in Autumn Budget 2024).
-- **Residence Nil-Rate Band (RNRB):** **£175,000**, frozen until 5 April 2030.
+- **Nil-rate band (NRB):** **£325,000**, frozen until 5 April 2031 (further extended; gov.uk IHT thresholds table shows the current row as "from 6 April 2009 to 5 April 2031" — verified 2026-05-23 per Wave 6 F-3).
+- **Residence Nil-Rate Band (RNRB):** **£175,000**, frozen until 5 April 2031.
 - **RNRB taper:** £1 reduction for every £2 of estate value above £2 million.
 - **IHT rate:** 40% (36% where 10%+ of net estate goes to charity).
 - **Pensions in IHT scope:** from **6 April 2027** (announced in Autumn Budget 2024), unused defined-contribution pension funds will be brought into the deceased's estate for IHT purposes. Plan against this; it materially affects estate planning for landlord-pension-rich clients.
@@ -266,8 +266,8 @@ Extends §9 with the depth Wave 2 sessions need. §9 remains authoritative for h
 
 ### 15.1 NRB, RNRB and freezes
 
-- **NRB:** £325,000 per individual, frozen until 5 April 2030 (extended in Autumn Budget 2024 from the previous April 2028 expiry).
-- **RNRB:** £175,000 per individual, frozen until 5 April 2030.
+- **NRB:** £325,000 per individual, frozen until 5 April 2031 (further extended from the prior 5 April 2030 date by the additional one-year extension reflected on the gov.uk IHT thresholds page; verified 2026-05-23 per Wave 6 F-3).
+- **RNRB:** £175,000 per individual, frozen until 5 April 2031.
 - **RNRB taper:** withdrawn at £1 for every £2 of net estate above £2,000,000; fully extinguished at £2,350,000 (single) or £2,700,000 (with transferable RNRB).
 - **Transferable NRB and RNRB:** unused portion transfers to surviving spouse / civil partner on first death; up to 100% of each. Claim made by personal representatives on IHT402 (NRB) / IHT436 (RNRB) within 2 years of second death (HMRC may accept late in practice).
 - **RNRB qualifying conditions:** the residence must be in the deceased's estate, must have been a residence of the deceased at some point, and must pass to a direct lineal descendant (children, step-children, adopted, foster, grandchildren). Direct lineal descendant rule is strict: nieces / nephews / siblings do NOT qualify.
@@ -906,7 +906,7 @@ Verified against legislation.gov.uk (RRA 2025 contents page, SI 2025/1354, SI 20
 - **Credit balances** created on s.162 incorporation transfer: tax-free repayment route; balance is the founder's investment in the company, tracked as a director's loan owed by company to director.
 - **Repayment order:** usually DLA first (tax-free), then dividends (subject to dividend rates), then salary (PA + NI), then pension contributions (employer side, deductible).
 - **HMRC official rate of interest** on credit balance is set quarterly by HMRC (recent rates have varied between 2% and 3.75%; verify current rate against gov.uk publication "Beneficial loan arrangements — HMRC official rates" at write time). Interest paid to director is taxable income on director, deductible by company within the CTA 2010 s.453 close-company rules.
-- **Debit balances** (overdrawn DLA): s.455 CTA 2010 charge at 33.75% on amounts unpaid 9 months after year-end; repayable on later director repayment.
+- **Debit balances** (overdrawn DLA): s.455 CTA 2010 charge at the dividend upper rate set by ITA 2007 s.8(2) for the tax year in which the loan is made — **33.75% for loans made before 6 April 2026, 35.75% for loans made on or after 6 April 2026** (FA 2026 s.4(1)(b) substituted s.8(2) to "the dividend upper rate is 35.75%" for tax year 2026/27 onwards; s.455 follows by reference, so no separate amendment to s.455 was needed). Charge falls on amounts unpaid 9 months after year-end; repayable on later director repayment. F-9 / Wave 6 lock 2026-05-24. **§16.27 / §16.42 rate-by-reference verification pattern: sessions writing s.455 must verify s.8(2) at write time, not rely on a flat-percentage house-position figure.**
 - **DLA exhaustion trap:** founder drawing monthly rent receipts as DLA repayment can exhaust a £500k incorporation-credit balance within 4-5 years and find themselves forced into higher-rate dividend or salary extraction earlier than the s.162 plan envisaged. Worked-example discipline expected.
 
 ### 21.2 Share-class structures and the settlements legislation
@@ -928,6 +928,7 @@ Verified against legislation.gov.uk (RRA 2025 contents page, SI 2025/1354, SI 20
 - **CT rates 2026/27 (confirmed gov.uk 2026-05-23):** 19% small profits rate (≤ £50k profits), 25% main rate (≥ £250k profits), marginal relief tapered band £50k-£250k effective 26.5% rate. Unchanged from 2025/26; Spring Statement 2025 confirmed no CT rate changes.
 - **NI thresholds + rates 2026/27 (confirmed gov.uk 2026-05-23):** Primary threshold (employee NI) £12,570 / yr; Secondary threshold (employer NI) £5,000 / yr (lowered from £9,100 by Reeves Autumn Budget 2024, in force 6 April 2025); **Employer NI rate 15% above ST (raised from 13.8% by Reeves Autumn Budget 2024, in force 6 April 2025; F-19 correction 2026-05-23, prior locked text said 13.8% — stale pre-6-April-2025 figure).** Employment Allowance £10,500 / yr (raised from £5,000 by Reeves Autumn Budget 2024).
 - **Dividend rates 2026/27 (confirmed gov.uk 2026-05-23):** £500 dividend allowance, then **10.75% basic, 35.75% higher, 39.35% additional. Basic and higher dividend rates raised by 2 percentage points from 6 April 2026; additional rate unchanged at 39.35%; 2025/26 and prior rates were 8.75% / 33.75% / 39.35%. F-20 correction 2026-05-23, prior locked text said 8.75% / 33.75% — stale pre-6-April-2026 figures; all Wave 4 + earlier salary-vs-dividend worked examples carrying 8.75% / 33.75% require back-patching, in flight via sub-agent (`docs/property/wave5_f19_f20_patch_manifest_2026-05-23.md`).**
+- **s.455 close-company loan charge 2026/27 (F-9 lock 2026-05-24, verified gov.uk):** **35.75% on amounts unpaid 9 months after year-end for loans made on or after 6 April 2026** (was 33.75% for loans made before that date). s.455 rate references the dividend upper rate at ITA 2007 s.8(2), which FA 2026 s.4(1)(b) substituted to 35.75% effective 2026/27 onwards. See §21.1 for full DLA mechanics and the rate-by-reference verification discipline.
 - **Employment Allowance exclusions:** single-director SPV where the director is the only paid employee = NOT eligible for Employment Allowance (the "sole-director exclusion"). Multi-director SPVs may qualify subject to the connected-companies rules; the test is whether the company has at least one secondary contributor in addition to the director.
 - **Standard "tax-efficient mix"** for a single-director property SPV in 2026/27:
   - Salary: £5,000 (NI secondary threshold floor) where Employment Allowance not available; OR £12,570 PA floor where Employment Allowance available (rare for single-director SPVs).
@@ -1594,7 +1595,7 @@ Cross-references §21.5 (FIC mechanics generic), §22.6 (FIC as IHT value-freeze
 - **FA 1986:** s.102 (general GROB); s.102A (land-interest GROB significant-right test); s.102B (undivided-share-of-land GROB with shared-occupation carve-out).
 - **FA 2004:** Sch 15 (POAT — Pre-Owned Assets Tax).
 - **IHTA 1984:** s.49 (IIP treatment, including s.49(1A) post-22-March-2006 narrowing); s.48 as amended by FA 2025 s.45 (subsections (3)-(3F) omitted); s.48ZA NEW (post-6-April-2025 long-term-resident-based excluded-property test for non-UK settled property); s.64 (10-year charge); s.5(1B) (cross-reference for IIP carve-outs).
-- **TCGA 1992:** s.260 (CLT holdover, available for non-settlor-interested trusts only via ss.169B-169G).
+- **TCGA 1992:** s.260 (CLT holdover, available for non-settlor-interested trusts only via ss.169B-169G); **s.169E (settlor definition for ss.169B-169D and s.169G)**; **s.169G (arrangement definition for ss.169B-169E plus information power)** — sessions writing on ss.169B-169G must NOT cite s.169G as the settlor definition (s.169G's pre-2009 subsections (2)-(5) were omitted by FA 2009, and the misattribution still appears in older commentary). F-4 / Wave 6 lock 2026-05-24, verified at legislation.gov.uk.
 - **FA 2025:** s.45 (omits IHTA 1984 s.48(3)-(3F) and inserts new s.48ZA; effective 6 April 2025).
 - **Case law:** *Jones v Garnett (Arctic Systems)* [2007] UKHL 35 (settlements / s.626 spouse exception).
 - **Cross-references in this house position doc:** §15.2 (GROB family home overview); §21.2 (Arctic Systems carve-out for share alphabet structures); §21.5 (FIC mechanics generic); §22.4 (CLT into discretionary trust); §22.6 (FIC as IHT value-freeze tool); §24.7 (adult-child + minor-child co-ownership settlements traps).
@@ -1612,6 +1613,7 @@ Cross-references §21.5 (FIC mechanics generic), §22.6 (FIC as IHT value-freeze
 - "s.102B applies whenever the donor occupies the home" (false; s.102B applies only to undivided-share gifts of land AND requires both donor and donee to occupy AND no donor-benefit-from-donee).
 - "IHTA 1984 s.48(3) is the route to excluded-property status for offshore trusts" (false; s.48(3)-(3F) omitted by FA 2025 s.45 from 6 April 2025; replaced by new s.48ZA long-term-resident test).
 - "Non-UK-domiciled settlor of an offshore trust gives permanent excluded-property protection" (false; post-FA 2025 the test is long-term-residence-based; domicile is not the operative criterion for new settlements or for living settlors).
+- "TCGA 1992 s.169G defines the settlor for ss.169B-169D" (false; s.169G defines 'arrangement' for ss.169B-169E plus information power; the settlor definition is at **s.169E**. The s.169G misattribution appears in older commentary because subsections (2)-(5) of s.169G were omitted by FA 2009. F-4 / Wave 6 lock 2026-05-24).
 - "Bare trusts attract 10-year periodic IHT charges" (false; bare trusts are treated as outside settlement for IHT; the beneficiary is the absolute owner from gift date).
 - "Trust is always better than FIC for IHT" (false; trust-vs-FIC is a four-axis decision per §22.13, not a one-axis ranking).
 - "s.260 holdover is available on FIC share gifts" (false; FIC share gifts do not generate CLT status; s.260 is only for CLTs into non-settlor-interested trusts).
