@@ -2348,13 +2348,17 @@ This §22.21 mini-lock sits in the §22 cluster as it extends the IHT / estate-p
 **Architectural sibling of §17.6 (headline framing).** §17.6 names the 4-year FIG window; §17.8 anchors the operative ITTOIA 2005 sections + the loss-of-allowance + claim-deadline mechanics that Wave 8 Bucket A pages will write to.
 
 - **Statutory anchor.** Foreign income and gains relief for qualifying new residents is inserted into **ITTOIA 2005 Chapter 5 (ss.845A-845J)** by **FA 2025 s.37 + Sch 8** (employment income parallel) — NOT in FA 2025 Sch 9 (which removes the historic remittance-basis + domicile-based exemptions; see §16.39 housekeeping note). Effective from tax year 2025-26.
-- **Qualifying new resident test (ITTOIA 2005 s.845B(1)):** individual must not be UK-resident for the current tax year AND must have been not UK-resident "for each of the 10 tax years before that tax year". The 10-tax-year non-residence requirement is the gateway; partial-year residence triggered by SRT split-year (§17.2) breaks the chain unless the individual was non-resident for the full tax year per SRT.
+- **Qualifying new resident test (ITTOIA 2005 s.845B(1)) — FOUR cumulative conditions (Stage 2b correction 2026-05-25 expanded from earlier 2-condition framing):**
+  - (a) individual is UK-resident for the current tax year (the FIG window only operates while UK-resident);
+  - (b) individual was NOT UK-resident "for each of the 10 tax years before that tax year" (the 10-year prior-non-residence gateway; partial-year residence triggered by SRT split-year (§17.2) breaks the chain unless the individual was non-resident for the full tax year per SRT);
+  - (c) individual is not disqualified per s.845B(2) (typically: previously claimed FIG / remittance basis for over-quota period);
+  - (d) **individual is at least 10 years old at the commencement of the tax year** (age-floor; rarely operative but binding for young-person scenarios — trust beneficiaries, young expat-returnees).
 - **Duration of relief (ITTOIA 2005 s.845B(2)):** up to **4 tax years** — the qualifying tax year + the 3 subsequent tax years. The relief is per-year claim (not automatic); failure to claim in a year forfeits that year's relief.
 - **Claim mechanism (ITTOIA 2005 s.845A):** relief is deducted at Step 2 of the income tax calculation (ITA 2007 s.23). Claimed via self-assessment return for the relevant tax year.
 - **Qualifying foreign income categories (ITTOIA 2005 s.845H):** broad scope — approximately 22-23 distinct income types including foreign property income, foreign trade profits, foreign pensions, foreign interest, foreign dividends, foreign savings income, foreign annuities. **Sessions must cross-reference the s.845H verbatim category list at write time before asserting a specific income type qualifies** — the exact count is HMRC-published and verifiable via legislation.gov.uk WebFetch; do NOT rely on the bare "22" or "23" figure without verification per §16.35.
 - **Disqualified income (ITTOIA 2005 s.845I):** excludes income derived from UK-related sources via interposition (anti-fragmentation). Cross-verify at write time.
 - **Loss of personal allowance + CGT annual exempt amount.** Claiming FIG relief in a tax year causes loss of personal allowance + dividend allowance + CGT AEA for that tax year — same architecture as the historic remittance-basis claim. Sessions writing on FIG must hedge claim mechanics (claim only where foreign income / gains exceeds the lost allowance value).
-- **Claim deadline.** Self-assessment return deadline + amendment window per TMA 1970 s.43 (4 years from end of tax year). Sessions writing on missed-claim recovery should anchor on s.43 amendment window.
+- **Claim deadline (Stage 2b correction 2026-05-25):** s.845A imposes its OWN deadline — **12 months beginning with 31 January after the end of the relevant tax year** (e.g. for 2025/26 claim, deadline is 31 January 2028). NOT the TMA 1970 s.43 generic 4-year amendment window (s.43 is for return-amendment, not for FIG claim-creation). Late claims forfeit the year's relief; sessions writing on missed-claim recovery cannot rely on s.43.
 - **Year-5+ position.** From tax year 5 onwards the individual is taxed on the arising basis as a standard UK resident. No transitional taper; the cliff is hard.
 
 ### 17.8.1 Citations for §17.8
@@ -2386,10 +2390,11 @@ This §22.21 mini-lock sits in the §22 cluster as it extends the IHT / estate-p
   - **2026-27 designations: 12%** of designated qualifying overseas capital.
   - **2027-28 designations: 15%** of designated qualifying overseas capital.
   - Window closes 5 April 2028; no extension currently legislated.
-- **Qualifying overseas capital (FA 2025 Sch 10 para 2):** amounts that
-  - arose in tax year 2024-25 or earlier as foreign income / gains,
-  - have not been remitted to the UK by the date of designation OR are remitted during 2025-26 through 2027-28,
-  - would (absent TRF) trigger income tax under ITEPA 2003 ss.22 / 26 / 41F / 554Z9 / 554Z10 OR ITTOIA 2005 s.832 OR CGT under TCGA 1992 Sch 1 on remittance.
+- **Qualifying overseas capital (FA 2025 Sch 10 para 2) — THREE distinct scenarios (Stage 2b correction 2026-05-25 — earlier framing combined scenarios A + B and omitted scenario C):**
+  - **Scenario A (para 2(2)):** amount arose in tax year 2024-25 or earlier as foreign income / gains AND has NOT been remitted to the UK by the date of designation. Pre-window unremitted accumulation.
+  - **Scenario B (para 2(5)):** amount arose in tax year 2024-25 or earlier as foreign income / gains AND IS remitted to the UK during tax years 2025-26, 2026-27, or 2027-28. In-window remittance.
+  - **Scenario C (para 2(8)):** amount that does NOT fall within (2) or (5), was held by the individual immediately before 6 April 2025, AND was situated outside the United Kingdom (the residual "pre-6-April-2025 offshore capital" scenario — captures historic clean-capital-equivalent holdings that don't have the income / gain origin of scenarios A+B).
+- **Income/CGT triggers absent TRF (per para 2 cross-references):** would (absent TRF designation) trigger income tax under ITEPA 2003 ss.22 / 26 / 41F / 554Z9 / 554Z10 OR ITTOIA 2005 s.832 OR CGT under TCGA 1992 Sch 1 on remittance.
 - **Designation election deadline (FA 2025 Sch 10 para 8(1)):** election must be made before **12 months from 31 January after the end of the tax year**. So 2025-26 designations: deadline 31 January 2028. 2026-27 designations: deadline 31 January 2029. 2027-28 designations: deadline 31 January 2030. Late designation forfeits the rate (post-window remittance falls back to normal rates per the underlying remittance-basis source).
 - **Source coverage.** Designation can be partial — election specifies the £-amount designated, not full source coverage. An individual can designate £100k of a £500k pre-2025 offshore portfolio and the remaining £400k stays subject to normal remittance taxation on later remittance.
 - **No-clean-capital benefit.** TRF designation effectively crystallises the income / gain status of the offshore amount at the designation rate. Once designated and paid, the amount becomes "clean capital" for UK tax purposes — no further UK tax on later remittance.
@@ -2419,7 +2424,7 @@ This §22.21 mini-lock sits in the §22 cluster as it extends the IHT / estate-p
 
 - **Statutory anchor.** FA 2025 s.42 + Sch 11. Effective for disposals on or after 6 April 2025.
 - **Rebasing date (verified FA 2025 Sch 11 para 1(2) on 2026-05-25): 5 April 2017** (NOT 5 April 2019 or 5 April 2025 — those dates appeared in earlier consultation but were NOT enacted).
-- **All four eligibility conditions must be met (FA 2025 Sch 11 para 1(1)) — narrow combination:**
+- **All FIVE eligibility conditions must be met (FA 2025 Sch 11 para 1(1)) — narrow combination (Stage 2b heading-count correction 2026-05-25 — body listed 5 conditions; heading mis-counted as "four"):**
   1. **Asset held on 5 April 2017** (the rebasing-date condition).
   2. **Disposal on or after 6 April 2025** (the operative window — pre-6-April-2025 disposals fall under the old regime).
   3. **Asset NOT situated in UK between 6 March 2024 and 5 April 2025** — i.e. the asset must have been a non-UK asset throughout that 13-month window. **A UK property held by a non-dom does NOT qualify** (UK situs); the rebasing benefits non-UK assets only.
@@ -2509,7 +2514,7 @@ This §22.21 mini-lock sits in the §22 cluster as it extends the IHT / estate-p
 
 ### 22.X.1 The s.6A LTR test (10 of 20)
 
-- **Statutory anchor.** IHTA 1984 s.6A, inserted by FA 2025 Sch 13 (Sch 13 para 27 inserts ss.267ZC-267ZF; the test itself is in ss.6A-6C). Effective from 6 April 2025.
+- **Statutory anchor.** IHTA 1984 s.6A, inserted by FA 2025 s.44(2)+(4) + Sch 13 (the s.44 subsections perform the s.6 amendment and the introduction of new s.6A; Sch 13 para 27 inserts ss.267ZC-267ZF; the LTR test itself is in ss.6A-6C). Effective from 6 April 2025.
 - **Baseline test.** An individual is a "long-term UK resident" for IHT purposes at any time in a tax year if they were **UK resident for at least 10 of the previous 20 tax years**. The test is applied tax-year by tax-year; LTR status can fluctuate.
 - **NOTE on the "10 consecutive years" framing.** §15.6 currently presents the test as "10 consecutive tax years OR 10 of previous 20 tax years" — HMRC consumer-guidance shorthand. The s.6A statutory test is the single 10-of-20 route; 10-consecutive is a trivial subset (10 consecutive implies 10 of 20). Sessions writing on the test may use either framing but must not present them as distinct alternative routes — they describe the same population. The "10 consecutive" framing is helpful for ongoing residents who clearly satisfy the test; the "10 of 20" framing is correct for departed-and-returned cases.
 - **"UK resident" for s.6A.** Uses the SRT definition at FA 2013 Sch 45 (see §17.1) — same residence concept as income tax / CGT. No separate IHT residence concept post-FA-2025.
@@ -2551,7 +2556,7 @@ This §22.21 mini-lock sits in the §22 cluster as it extends the IHT / estate-p
 
 ### 22.X.5 ss.267ZC-267ZF LTR election framework (post-FA-2025)
 
-- **Statutory anchor.** IHTA 1984 ss.267ZC-267ZF inserted by FA 2025 Sch 13 para 27.
+- **Statutory anchor.** IHTA 1984 ss.267ZC-267ZF inserted by FA 2025 Sch 13 paras 27 + 45(1) (Stage 2b precision cite — para 27 is the substantive insertion; para 45(1) is the commencement co-reference).
 - **s.267ZC: SPOUSAL LTR election (not generic).** Election available only where a spousal/civil-partner LTR connection exists. Condition A (s.267ZC(3)) — within 7 years before the election date, the electing person had a spouse/civil partner who was LTR. Condition B (s.267ZC(4)) — a deceased person was LTR within 7 years before death AND was the spouse/civil partner of the electing person (election made by P or by deceased's personal representatives). NO freestanding "anyone non-LTR can elect" route exists; the spousal-connection gateway is mandatory. Typical use: non-LTR spouse of an LTR transferor electing in to receive unlimited spouse-exemption transfers (per §22.5 / §22.X.6). Cost: brings worldwide assets into UK IHT for the election period. (Stage 1a §16.45 drift catch — earlier framing of "generic LTR election" was misleading; updated 2026-05-25.)
 - **s.267ZD: further provision.** Procedural mechanics for s.267ZC elections — timing, revocation rules, cessation events.
 - **s.267ZE: pre-FA-2025 domicile election subjects.** Individuals who made a s.267ZA election before 6 April 2025 (when the election was domicile-based) are treated as LTR under the new regime. Preservation route for legacy elections.
@@ -2627,11 +2632,15 @@ A disposal of UK land is caught if the disposal is made by a person within the o
 
 - **"Main purpose, or one of the main purposes" wording.** Statutory language is **disjunctive** — multiple "main purposes" can coexist; only one needs to be profit-from-disposal. This makes Conditions A / B / D substantially WIDER than a single-dominant-purpose test. HMRC's published view: investment intent alongside profit intent does NOT defeat the test where profit intent is genuine and substantial.
 - **Timing of test.** Condition A tests intent AT ACQUISITION; Condition D tests intent AT DEVELOPMENT (later). A landlord who acquires-to-let (no Condition A) but later develops-to-sell can be caught by Condition D even though Conditions A and B fail. Operative for "convert and flip" cases.
-- **Six-month associated-persons window (s.356OB(2)).** Charge applies to those acquiring / holding / developing the land, to associated persons within a six-month window of the disposal, and to parties to arrangements enabling profit realisation "by any indirect method, or by any series of transactions."
+- **Chargeable-person rule + six-month window (s.356OB(2) + s.356OB(8)) — Stage 2b cite refinement 2026-05-25:**
+  - **s.356OB(2)** is the CHARGEABLE-PERSON RULE: charge applies to (a) the person acquiring / holding / developing the land, (b) a person associated with the person in (a) at a relevant time, (c) a person who is a party to or concerned in an arrangement within subsection (3).
+  - **s.356OB(8)** is the TIME-PERIOD DEFINITION: "relevant time" means "any time in the period beginning when the activities of the project begin and ending 6 months after the disposal mentioned in subsection (1)." This is the six-month window.
+  - Same offset for s.517B(2) chargeable-person rule and s.517B(8) time-period definition on the individuals side.
+  - **Operative implication:** the "six-month associated-persons window" widely-cited in commentary is the COMBINATION of (2) defining who is caught + (8) defining when the association engages.
 
 ### 28.3 Indirect disposals via property-rich entities (s.356OD / s.517D)
 
-- **The mechanism.** Disposal of property "deriving its value from land in the United Kingdom" (typically shares in a property-rich company or partnership interest) is caught if a parallel main-purpose test is met. Captures the "slice of the action" pattern where a developer takes a profit-share via a corporate intermediary rather than direct land disposal.
+- **The mechanism (Stage 2b refresh 2026-05-25 — earlier framing as "parallel four-conditions test" was incorrect).** s.356OD / s.517D applies a DISTINCT THREE-CONDITION framework specific to indirect disposals (NOT a parallel restatement of s.356OB Conditions A-D). The three conditions per s.356OD: (1) a person realises a profit or gain from a disposal of property which (at time of disposal) derives at least 50% of its value from UK land; (2) the person is a party to or concerned in an arrangement concerning some or all of that land; (3) the main purpose (or one of the main purposes) of the arrangement is to (a) deal in or develop the project land AND (b) realise a profit or gain from a disposal of property deriving the whole or part of its value from that land. Captures the "slice of the action" pattern where a developer takes a profit-share via a corporate intermediary rather than direct land disposal.
 - **The 50% derivation test.** "Property deriving its value from land" is interpreted in line with NRCGT and other property-rich tests — typically requires ≥50% of value to derive (directly or indirectly) from UK land. Tracing rules at s.356OM / s.517N walk through multi-tier structures.
 - **Operative implication.** Cannot escape Part 8ZB / Part 9A by holding land in a SPV and selling SPV shares. Both the direct land disposal route and the share disposal route are caught.
 
@@ -2672,8 +2681,8 @@ Where the four-conditions test is engaged, the underlying question is **whether 
 ### 28.7 Residential Property Developer Tax (RPDT) — historical / repealed
 
 - **FA 2022 Part 2 ss.31-53** introduced RPDT: a 4% additional Corporation Tax charge on residential property developer profits above a £25m group allowance, in force for accounting periods beginning on or after 1 April 2022.
-- **REPEALED by FA 2024 s.81** for accounting periods beginning on or after 1 April 2024. The regime is operative for accounting periods straddling that date on a time-apportioned basis.
-- **Wave 8 Bucket B framing.** Pages discussing historical RPDT cost / planning must note the repeal date. Pages on current developer-CT exposure should NOT cite RPDT as an ongoing charge. RPDT-residue accounting-period straddles may continue until APs ending in 2025; verify at write time. **Note: re-verify RPDT repeal status against legislation.gov.uk before reliance** — sessions writing on developer-CT must check whether the FA 2024 repeal has been further amended.
+- **STATUS CORRECTED 2026-05-25 (Stage 2b — drift catch in original §28.7 lock):** RPDT is **CURRENTLY IN FORCE** per FA 2022 Part 2 ss.31-53. The previously-locked "REPEALED by FA 2024 s.81 for APs beginning on/after 1 April 2024" claim was **incorrect** — FA 2024 s.81 returns 404 on legislation.gov.uk; FA 2024 + FA(No.2) 2024 contents do NOT contain RPDT-repeal provisions; legislation.gov.uk Finance Act 2022 Part 2 page (verified 2026-05-25) shows "no known outstanding effects" and no repeal amendment. **RPDT applies for accounting periods beginning on or after 1 April 2022 per s.51 FA 2022 commencement** and remains operative. Rate: 4% surcharge on residential property developer profits above the £25m group allowance threshold.
+- **Wave 8 Bucket B framing.** B3 (development main-purpose) + B10 (partnership JV) pages must work RPDT into the developer-CT cost calculation where group profits exceed £25m. Pages on smaller-developer CT exposure should note RPDT non-applicability below the threshold. Sessions must verify current RPDT status against legislation.gov.uk at write time per §16.27 rate-by-reference discipline (if RPDT is repealed in a future Finance Act, this lock requires update).
 
 ### 28.8 Cross-references with other clusters
 
@@ -2756,8 +2765,8 @@ A company's expenditure qualifies as "qualifying land remediation expenditure" o
 
 ### 25.12.4 Polluter exclusion (s.1150)
 
-- **The architecture.** LRR is for INNOCENT remediators — companies cleaning up contamination they did NOT cause. s.1150(1) prohibits relief if the contamination or dereliction results "wholly or partly" from acts or omissions by the company OR by persons with a "relevant connection" (s.1150(2)-(3)).
-- **Relevant connection (s.1150(3)).** Includes: connected persons (CTA 2010 s.1122); the company's 51% subsidiaries / parents; persons who held a relevant interest in the land at the time of the polluting act.
+- **The architecture.** LRR is for INNOCENT remediators — companies cleaning up contamination they did NOT cause. s.1150(1) prohibits relief if the contamination or dereliction results "wholly or partly" from acts or omissions by the company OR by persons with a "relevant connection". **"Relevant connection" is defined at s.1178 (Stage 2b cite correction 2026-05-25 — earlier framing pointed to s.1150(2)-(3))** which provides a three-pathway test: (a) person connected to the company at the time of the contamination act/omission; (b) person connected at the time the company acquired a major interest in the land; (c) person connected at the time relevant land remediation was undertaken.
+- **Relevant connection (s.1178 — three-pathway test):** (a) person connected to the company at the time of the contamination act/omission; (b) person connected to the company at the time the company acquired a major interest in the land; (c) person connected to the company at the time the relevant land remediation was undertaken (whether by the company or on its behalf). "Connected" follows the CTA 2010 s.1122 definition. Encompasses the company's 51% subsidiaries / parents + persons who held a relevant interest in the land at the relevant pathway time.
 - **Acquired-contaminated cases.** Landlord-developer SPVs acquiring contaminated brownfield sites from unrelated vendors are typically eligible — they did NOT cause the contamination. Verify at acquisition diligence: vendor identity, ownership chain, polluter history.
 - **Caused-contamination cases.** A company that polluted its own land cannot claim relief on the clean-up. Group structures must be checked — a subsidiary cleaning up contamination caused by a parent / sister company under "relevant connection" is excluded.
 - **Operative implication for landlord-developers.** The polluter exclusion is the most-litigated LRR area at HMRC enquiry. Wave 8 Bucket B pages on developer LRR claims must front the polluter exclusion + relevant-connection test + acquisition-diligence framework.
@@ -2820,12 +2829,12 @@ A company's expenditure qualifies as "qualifying land remediation expenditure" o
 
 - **VATA 1994 s.1.** Charge to value added tax on the supply of goods or services in the United Kingdom. Standard / reduced / zero rates per ss.2-4.
 - **VATA 1994 s.31 + Sch 9.** Exempt supplies. Property-relevant exemptions at Sch 9 Group 1 (Land).
-- **VATA 1994 s.29A + Sch 7A.** Reduced-rate (5%) supplies. Property-relevant reduced rates at Sch 7A Group 6 (residential conversions) and Group 7 (changed number of dwellings).
+- **VATA 1994 s.29A + Sch 7A.** Reduced-rate (5%) supplies. Property-relevant reduced rates at **Sch 7A Group 6** ("Residential conversions" — includes the changed-number-of-dwellings sub-category per Group 6 Notes) and **Sch 7A Group 7** ("Renovation or alteration of qualifying residential premises" — empty-homes relief; properties unoccupied for ≥2 years). (Stage 2b correction 2026-05-25 — earlier framing of Group 7 as "changed number of dwellings" was wrong; changed-number is a Group 6 conversion category, Group 7 is the empty-homes / 2-year-vacancy relief.)
 - **VATA 1994 s.30 + Sch 8.** Zero-rate supplies. Property-relevant zero rates at Sch 8 Group 5 (construction of dwellings) and Group 6 (protected buildings — narrowed by FA 2012 to alterations only).
 - **VATA 1994 Sch 10.** Option to tax framework — the election regime that converts otherwise-exempt land supplies into taxable supplies + input-tax recovery on related costs.
 - **VATA 1994 s.49.** Transfer of business as a going concern (TOGC) framework.
 - **VATA 1994 ss.43-43D.** Group registration framework.
-- **VATA 1994 s.26B + SI 1995/2518 regs 112-116.** Capital Goods Scheme (CGS) — adjustment over 10 years on capital expenditure ≥£250,000 on land or buildings.
+- **SI 1995/2518 regs 112-116 (Part XV).** Capital Goods Scheme (CGS) — adjustment over 10 years on capital expenditure ≥£250,000 on land or buildings. (Stage 2b correction 2026-05-25 — earlier framing cited VATA 1994 s.26B as enabling but s.26B is the FLAT-RATE SCHEME, not CGS; CGS enabling powers sit elsewhere in VATA 1994 with operational detail entirely in SI 1995/2518 Part XV.)
 - **SI 1995/2518 regs 99-110.** Partial exemption framework (standard method + special method).
 
 ### 29.2 Sch 9 Group 1 (exempt land default + 14+ carve-outs to standard-rated)
@@ -2867,7 +2876,7 @@ A company's expenditure qualifies as "qualifying land remediation expenditure" o
 - **Conditions (SI 1995/1268 reg 5):** (a) the assets transferred are to be used by the transferee in carrying on the same kind of business as the transferor; (b) transferee is or immediately becomes a taxable person; (c) for property transfers — transferee opts to tax + notifies before tax point AND any beneficial-occupier-status condition is met.
 - **Option-matching rule for property TOGCs:** where the transferor has opted to tax, the transferee MUST opt to tax (and notify HMRC) BEFORE the tax point to qualify for TOGC treatment. Failure = standard-rated supply with VAT chargeable.
 
-### 29.5 Capital Goods Scheme (VATA 1994 s.26B + SI 1995/2518 regs 112-116)
+### 29.5 Capital Goods Scheme (SI 1995/2518 Part XV regs 112-116)
 
 - **Threshold:** capital expenditure on land or buildings ≥**£250,000** (excluding VAT) triggers the CGS.
 - **Adjustment period:** 10 intervals (10 years).
@@ -2878,7 +2887,7 @@ A company's expenditure qualifies as "qualifying land remediation expenditure" o
 
 - **Standard method (reg 101).** Apportions residual input tax (non-attributable to either taxable or exempt supplies) based on the value of taxable supplies as a proportion of total supplies. Default; no HMRC approval required.
 - **Special method (reg 102).** Approved alternative method tailored to the business. Requires PRIOR HMRC approval; once approved, must be used consistently.
-- **Standard-method override (reg 107A inserted by SI 2002/1142).** Where the standard method materially distorts the recoverable amount, the taxpayer must adjust to a fair-and-reasonable basis. Override is taxpayer-initiated; HMRC may direct a special method via reg 102B (HMRC-direction route).
+- **Standard-method override (reg 107A inserted by SI 2002/1074, effective 18 April 2002).** Where the standard method materially distorts the recoverable amount, the taxpayer must adjust to a fair-and-reasonable basis. Override is taxpayer-initiated; HMRC may direct a special method via reg 102B (HMRC-direction route). (Stage 2b cite correction 2026-05-25 — earlier SI 2002/1142 cite was wrong.)
 - **De minimis (reg 106).** Where exempt input tax is below £625/month average AND ≤50% of total input tax, the trader is "below de minimis" and can recover ALL input tax (including the exempt portion). Annual computation.
 
 ### 29.7 Reduced rate 5% — Sch 7A Group 6 (residential conversions)
