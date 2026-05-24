@@ -113,6 +113,16 @@ Taxable gain = £93,000 - £3,000 = £90,000.</p>
 </ul>
 <p>HMRC can query CGT calculations up to 4 years after the tax year of disposal, so retain records for at least this period.</p>
 
+<h2>Capital Losses on Disposal</h2>
+
+<p>A capital loss arises when net disposal proceeds (sale price after incidental costs) are less than the base cost. Property capital losses can be set against gains on any chargeable asset, not just other property gains, but cannot be set against income.</p>
+
+<p><strong>In-year and brought-forward offset.</strong> In-year capital losses are set against gains arising in the same tax year BEFORE the annual exempt amount is applied (so they can be wasted against gains the AEA would otherwise cover). Brought-forward losses from earlier years are used only to the extent needed to reduce the year's net gain down to the AEA threshold, preserving the £3,000 AEA where possible.</p>
+
+<p><strong>The 4-year claim deadline.</strong> Per Taxes Management Act 1970 section 43 (and HMRC guidance at gov.uk/capital-gains-tax/losses), a capital loss must be CLAIMED to HMRC within four years of the end of the tax year in which the disposal occurred. If the claim window is missed, the loss is permanently unavailable for offset. Once validly claimed, there is no time limit on use: a claimed loss is carried forward indefinitely until absorbed against future gains. The distinction is critical and frequently confused. The four-year limit applies to the act of CLAIMING the loss, not to using a loss after it has been claimed.</p>
+
+<p>The claim is made on the SA108 Capital Gains pages of the Self Assessment return for the disposal year, or by separate written notification to HMRC outside Self Assessment. The 60-day CGT on UK property return is not itself a loss claim; the loss must be claimed via SA108 or by letter.</p>
+
 <h2>Common CGT Calculation Mistakes and Planning</h2>
 
 <h3>Common Mistakes</h3>
