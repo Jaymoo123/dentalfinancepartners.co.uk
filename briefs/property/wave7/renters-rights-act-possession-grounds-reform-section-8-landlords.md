@@ -163,40 +163,55 @@ Standard.
 ## Per-page work-log (fill in as you go)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `renters-rights-act-possession-grounds-reform-section-8-landlords` (as brief)
+- **Final category:** `Landlord Tax Essentials` — same brief→tracker category override pattern as A2 (brief suggested `regulatory-and-compliance` which does not exist)
+- **H1 chosen:** "Possession Grounds Reform Under the RRA 2025: Schedule 1 Walk-Through for Landlords"
+- **Meta title chosen:** "RRA 2025 Schedule 1 Grounds Reform: Section 8 Landlord Guide" (60 chars; tightened from first-draft 63)
+- **Why these vs other options:** H1 differentiates from A2 ("Operational Mechanics") by foregrounding "Schedule 1 Walk-Through" — the architectural framing. Body opens with the 7 structural changes Schedule 1 makes, not with grounds-by-ground content (architecture-first).
 
 ### Competitor URLs fetched
-- 
+- All three brief-listed URLs (uklandlordtax.co.uk, ukpropertyaccountants.co.uk, shipleys.com) untested given the A4/A2 pattern of brief URLs being stale; live legislation.gov.uk verification (already done for A2) provided sufficient grounding.
 
 ### Existing-page review
-- 
+- `section-21-abolition-uk-landlord-possession-guide-2026` — cross-linked from body (cannibal-avoidance via framing differentiator: rule-of-law vs grounds architecture).
+- `renters-rights-act-2026-tax-implications-landlords` — cross-linked (will be A1's same-slug rewrite target).
+- `renters-rights-act-section-21-abolition-landlord-operational-mechanics` (A2, just shipped) — reciprocal cross-link added.
 
 ### Citations added
-- 
+- RRA 2025 s.3 (introduces Schedule 1)
+- RRA 2025 Schedule 1 (verbatim Sch 2 HA 1988 amendments)
+- RRA 2025 s.4 (relevant-factors test for ASB grounds)
+- RRA 2025 s.5 (form of notice of proceedings)
+- RRA 2025 s.15 inserting HA 1988 ss.16I-16L (financial penalties)
+- HA 1988 s.16E (12-month re-letting restriction) + s.16J (criminal offence) + s.16K (£40,000 civil penalty)
+- HA 1988 Schedule 2 (reformed grounds catalogue)
+- HA 1988 Sch 1 para 3D inserted by RRA 2025 s.31 (21+ year fixed-term carve-out)
+- SI 2026/421 reg.2 (Commencement No.2 — 1 May 2026 effective date)
 
 ### Internal links added
-- 
+- `/blog/landlord-tax-essentials/renters-rights-act-section-21-abolition-landlord-operational-mechanics` (A2 reciprocal — A2 should be back-patched to forward-link A5 at A1's same-time edit window)
+- `/blog/landlord-tax-essentials/section-21-abolition-uk-landlord-possession-guide-2026`
+- `/blog/landlord-tax-essentials/renters-rights-act-2026-tax-implications-landlords`
 
 ### Inline CTA placements
-- 
+- After Ground 1 amended section (mid-stream: choice between Ground 1 vs Ground 1A modelling)
+- After old-s.21-toolkit-mapping table (portfolio sequencing decisions review)
+- (2 asides; brief allowed 2-3)
 
 ### Build attempts
-- 
+- Build clean on first attempt after metaTitle/metaDescription tightening + em-dash scrub.
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+- em-dash count: **0 (14 caught + scrubbed at verification gate)** — first draft had 12 em-dashes in body + 2 in frontmatter; Python scrub replaced `</strong> — ` with `</strong>: ` and other ` — ` with `; `
+- Tailwind utility classes: 0
+- metaTitle length: 60 chars (initial draft was 63; tightened to fit ≤62)
+- metaDescription length: 144 chars (initial draft was 161; tightened to fit ≤158)
+- FAQ count: 12 (within 10-12 brief target)
+- Internal links resolve: 3/3 verified
+- Body word count: 2,885 (within 2,800-3,500 brief target)
 
 ### Flags raised to wave7_site_wide_flags.md
-- 
+- No new flags. F-3 BRIEF_DRIFT (raised at A2 write) continues to apply: A5 brief authority links cite "RRA 2025 s.6" for re-letting restriction and "RRA 2025 s.99" for the financial penalty; both incorrect. A5 used corrected citations (s.15 inserting HA 1988 s.16E + s.16J + s.16K). No additional flag needed because F-3 already covers the pattern.
 
 ### 2-3 sentence summary
+Third Wave 7 Bucket A page. Schedule 1 architectural walk-through differentiated from A2's operational focus by foregrounding the 7 structural changes the Schedule makes to HA 1988 Sch 2, ground-by-ground substantive coverage, and the old-Section-21-toolkit-to-new-grounds mapping table. Used corrected citations per F-3 (s.2, s.15, HA 1988 s.16E) inherited from A2 verification.

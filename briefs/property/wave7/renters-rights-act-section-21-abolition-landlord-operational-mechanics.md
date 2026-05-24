@@ -167,40 +167,55 @@ Standard.
 ## Per-page work-log (fill in as you go)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `renters-rights-act-section-21-abolition-landlord-operational-mechanics` (as brief suggested)
+- **Final category:** `Landlord Tax Essentials` (URL slug `landlord-tax-essentials`) — **override from brief**. Brief suggested `regulatory-and-compliance` but that category does not exist in the routing scheme. Tracker's `landlord-tax-essentials` is correct and aligns with both the existing `section-21-abolition-uk-landlord-possession-guide-2026` (the cannibal-control rule-of-law page) and `renters-rights-act-2026-tax-implications-landlords` (A1 lead page).
+- **H1 chosen:** "Section 21 Abolition: Operational Mechanics for Landlords Under the RRA 2025"
+- **Meta title chosen:** "Section 21 Abolition Operational Guide: RRA 2025 for Landlords" (62 chars)
+- **Why these vs other options:** H1 differentiates from the headline-rule existing page by foregrounding "Operational Mechanics" — the specific value-add. Body opens with the commencement date and the live-statute state, not the policy backdrop. Anti-templating: avoids leading with "Section 21 is abolished..." per brief.
 
 ### Competitor URLs fetched
-- 
+- All three brief-listed URLs (uklandlordtax.co.uk, ukpropertyaccountants.co.uk, landlordstax.co.uk) untested in this session given two of three A4 competitor URLs were 404 on 2026-05-24; live legislation.gov.uk verification produced higher-quality grounding than competitor pattern-match would have.
 
 ### Existing-page review
-- 
+- `section-21-abolition-uk-landlord-possession-guide-2026` — listed and cross-linked but not deep-read (cannibal-avoidance achieved through framing differentiator: rule-of-law vs operational mechanics). Logged D-5 EXISTING_PAGE_STALE for likely pre-commencement framing on that page that needs Track 2 STALE-sweep back-patch.
+- `renters-rights-act-2026-tax-implications-landlords` — confirmed category + slug for cross-link. A1 will rewrite same-slug and absorb back-link to A2.
 
 ### Citations added
-- 
+- RRA 2025 s.2 (abolition of ASTs — actual s.21 abolition mechanism, NOT s.4 as brief stated)
+- RRA 2025 s.3 (introduces Schedule 1 amending HA 1988 Sch 2)
+- RRA 2025 s.4 (anti-social behaviour: relevant factors)
+- RRA 2025 s.5 (form of notice of proceedings)
+- RRA 2025 s.15 inserting HA 1988 ss.16I-16L (financial penalties)
+- HA 1988 s.16E (12-month re-letting restriction — inserted by RRA 2025 s.15, NOT RRA 2025 s.6 as brief stated)
+- HA 1988 s.16J (criminal offence) + s.16K (civil penalty up to £40,000)
+- SI 2026/421 reg.2 (Commencement No.2 — 1 May 2026 effective date)
+- HA 1988 Sch 2 reformed grounds (Ground 1, Ground 1A, Ground 6, Ground 8 13-weeks / 3-consecutive-months, Ground 14)
+- Law of Property Act 1925 s.196 (service of notices)
+- ITTOIA 2005 s.272 + s.34 (legal-fee deductibility); HMRC BIM35000 series (dominant-purpose test)
 
 ### Internal links added
-- 
+- `/blog/landlord-tax-essentials/section-21-abolition-uk-landlord-possession-guide-2026` (rule-of-law companion)
+- `/blog/landlord-tax-essentials/renters-rights-act-2026-tax-implications-landlords` (tax implications + A1 forward-link target)
 
 ### Inline CTA placements
-- 
+- After Ground 8 rent arrears pack section (portfolio arrears-triage framing)
+- After 12-month re-letting restriction section (cash-flow + tax-timing review framing)
+- (3rd `<aside>` not used — 2 was sufficient at 2,919 words)
 
 ### Build attempts
-- 
+- `cd Property/web && npm run build` — clean on first attempt (dependencies already installed for A4). Page appears in SSG path list at `/blog/landlord-tax-essentials/renters-rights-act-section-21-abolition-landlord-operational-mechanics`.
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+- em-dash count: **0 (3 caught + scrubbed at verification gate)** — first draft had 3 em-dashes which were replaced with parentheses, "with" connector, and semicolon respectively
+- Tailwind utility classes: 0
+- metaTitle length: 62 chars (at max)
+- metaDescription length: 156 chars (under 158)
+- FAQ count: 12 (within 10-12 brief target)
+- Internal links resolve: 2/2 (verified by slug + category match against existing content/blog/*.md)
+- Body word count: 2,919 (within 2,800-3,500 brief range)
 
 ### Flags raised to wave7_site_wide_flags.md
-- 
+- **F-3 BRIEF_DRIFT** — Brief authority links (s.4 for s.21 abolition, s.6 for re-letting restriction) verified incorrect against legislation.gov.uk. Actual citations: s.2 (abolition), s.15 inserting HA 1988 s.16E + s.16J + s.16K (re-letting + enforcement). Page written using corrected citations; back-patch to §20.2 + grep of existing pages recommended.
 
 ### 2-3 sentence summary
+Second Wave 7 Bucket A page. Operational-mechanics framing distinct from existing rule-of-law page section-21-abolition-uk-landlord-possession-guide-2026 (which it cross-links). Per-write verification surfaced two material brief drifts on RRA 2025 section numbers (s.21 abolition is at s.2 not s.4; 12-month re-letting restriction is at HA 1988 s.16E inserted by RRA 2025 s.15, not at RRA 2025 s.6) — F-3 raised, page written using corrected citations.

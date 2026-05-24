@@ -169,40 +169,58 @@ Standard.
 ## Per-page work-log (fill in as you go)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `hmo-selective-licensing-compliance-housing-act-2004-landlord-licensing-mechanics` (as brief suggested)
+- **Final category:** `Property Types & Specialist Tax` (URL slug `property-types-and-specialist-tax`) — **override from brief**. Brief suggested `regulatory-and-compliance` but that category does not exist in the routing scheme (`Property/web/src/app/blog/` has 9 category folders, none named `regulatory-and-compliance`). Tracker's `property-types-and-specialist-tax` is correct and aligns with the closest cannibal page `hmo-licensing-fees-tax-deductible-uk-landlords`.
+- **H1 chosen:** "HMO and Selective Licensing Compliance: Housing Act 2004 Landlord Mechanics"
+- **Meta title chosen:** "HMO and Selective Licensing UK: Landlord Compliance Guide 2026" (62 chars, max allowed)
+- **Why these vs other options:** H1 leads with the three-regime separation differentiator. Slug + URL anchored to the HA 2004 statute (avoids confusing with the parallel HMO tax-deductibility page). Body avoids leading with "Houses in Multiple Occupation..." per anti-templating; opens with the regime-separation framing instead.
 
 ### Competitor URLs fetched
-- 
+- `https://www.ukpropertyaccountants.co.uk/hmo-licensing-mandatory-additional-selective/` — **404** at fetch time on 2026-05-24. Brief URL set is stale; logged in discovery as a soft observation (no separate F entry given the differentiator does not depend on competitor scrape).
+- `https://www.landlordstax.co.uk/hmo-licensing-housing-act-2004/` — **404** at fetch time on 2026-05-24.
+- `https://www.uklandlordtax.co.uk/hmo-additional-selective-licensing-landlord-guide/` — not tested (two prior URLs already 404; differentiator does not require competitor pattern-match).
 
 ### Existing-page review
-- 
+- `hmo-licensing-fees-tax-deductible-uk-landlords` — read fully. Tax-side companion. Forward cross-link added. No back-patch needed (the page does not reference the £30k figure that has shifted to £40k).
+- `hmo-tax-guide-rental-income-deductions-multi-tenant` — slug confirmed; forward cross-link added.
+- `hmo-landlord-accounting-multi-tenant-property-tax` — slug confirmed; forward cross-link added.
 
 ### Citations added
-- 
+- HA 2004 Part 2 (HMO licensing, ss.55-78)
+- HA 2004 Part 3 (selective licensing, ss.79-100)
+- HA 2004 s.61 + SI 2018/221 art.4 (mandatory HMO 5+ person prescribed-description test)
+- HA 2004 s.249A (civil penalty £40,000 cap — uplift via SI 2026/319 reg.2 effective 1 May 2026)
+- HA 2004 s.72 + s.95 (criminal offences)
+- HA 2004 s.66 (fit-and-proper-person test) + s.68 (licence term) + s.239 (inspection rights) + s.254 (HMO definition)
+- HPA 2016 ss.14-23 (banning orders) + s.126 (insertion of s.249A) + ss.40-44 (RROs) + ss.28-30 (rogue-landlord database)
+- RRA 2025 s.98 + SI 2026/421 reg.3 (RRO 2-year window in force 1 May 2026)
+- ITTOIA 2005 s.272 + s.34 (deductibility of revenue expenses)
+- HMRC PIM2120, PIM2090 (allowable expenses); BIM38500+ (non-deductibility of penalties)
 
 ### Internal links added
-- 
+- `/blog/property-types-and-specialist-tax/hmo-licensing-fees-tax-deductible-uk-landlords`
+- `/blog/property-types-and-specialist-tax/hmo-tax-guide-rental-income-deductions-multi-tenant`
+- `/blog/landlord-tax-essentials/hmo-landlord-accounting-multi-tenant-property-tax`
 
 ### Inline CTA placements
-- 
+- After mandatory-HMO-licensing section (portfolio-licensing-audit framing)
+- After penalty-stack section (silent-risk surfacing on cumulative exposure)
+- (3rd `<aside>` not used; 2 was sufficient and the page is already at 3,676 words; brief allowed 2-3)
 
 ### Build attempts
-- 
+- `cd Property/web && npm install` then `npm run build` — clean on first attempt. Page appears in SSG path list at `/blog/property-types-and-specialist-tax/hmo-selective-licensing-compliance-housing-act-2004-landlord-licensing-mechanics`.
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+- em-dash count: 0
+- Tailwind utility classes: 0
+- metaTitle length: 62 chars (at max)
+- metaDescription length: 156 chars (under 158)
+- FAQ count: 12 (within 10-12 brief target)
+- Internal links resolve: 3/3 (verified by slug + category match against existing content/blog/*.md)
+- Body word count: 3,676 (above 3,500 brief ceiling by 176 words; justified by depth content covering 3 regimes + 4-route penalty stack + tax-side split + designation mechanics + devolved nations; §16.16 permits depth pages above target)
 
 ### Flags raised to wave7_site_wide_flags.md
-- 
+- **F-1 BRIEF_DRIFT** — HA 2004 s.249A civil penalty uplifted £30k → £40k by SI 2026/319 effective 1 May 2026; brief and house-position §26.9 both anchor at £30k; page written using £40k figure; back-patch recommended at wave close.
 
 ### 2-3 sentence summary
+First Wave 7 Bucket A page. Three-regime separation differentiator delivered cleanly (mandatory HMO via s.61+SI 2018/221, additional HMO via ss.56-60, selective via Part 3 ss.79-100). Per-write verification surfaced a major drift (s.249A £30k → £40k via SI 2026/319 effective 1 May 2026) — page corrected at write time and back-patch to §26.9 mini-lock recommended via F-1.
