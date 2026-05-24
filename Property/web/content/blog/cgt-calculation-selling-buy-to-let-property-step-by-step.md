@@ -131,6 +131,51 @@ faqs:
 
 <p>Priya's effective CGT rate on this gain is about 22.4%, weighted by the band split. The mechanics matter most when the gain straddles the threshold: the slice of the gain in the basic-rate band is taxed at 18%, the remainder at 24%.</p>
 
+<h2>Worked example 2a: large gain with a small unused basic-rate band</h2>
+
+<p>Same band-stacking mechanic as example 2, but with a larger gain and a thinner unused basic-rate slice. This is the typical shape for a long-held BTL where the disposal year's income sits close to the basic-rate threshold.</p>
+
+<p>Sarah bought a Manchester BTL in 2016 for £200,000. She sold it in September 2026 for £320,000. Her total income for 2026/27 (employment plus net rental profit before this disposal) is £45,000. No other disposals, no capital losses. Costs were £5,000 of disposal costs (legal and estate agent fees on sale) plus £15,000 of capital improvements during ownership.</p>
+
+<p><strong>Step 1: net disposal proceeds</strong></p>
+
+<ul>
+<li>Sale price: £320,000</li>
+<li>Less disposal costs: (£5,000)</li>
+<li>Net proceeds: £315,000</li>
+</ul>
+
+<p><strong>Step 2: base cost</strong></p>
+
+<ul>
+<li>Purchase price: £200,000</li>
+<li>Capital improvements: £15,000</li>
+<li>Base cost: £215,000</li>
+</ul>
+
+<p><strong>Step 3: chargeable gain</strong></p>
+
+<ul>
+<li>£315,000 − £215,000 = £100,000</li>
+</ul>
+
+<p><strong>Step 4: AEA</strong></p>
+
+<ul>
+<li>£100,000 − £3,000 = £97,000 taxable gain</li>
+</ul>
+
+<p><strong>Step 5: rate application</strong></p>
+
+<ul>
+<li>Basic-rate band remaining: £50,270 − £45,000 = £5,270</li>
+<li>Portion taxed at 18%: £5,270 × 18% = £948.60</li>
+<li>Portion taxed at 24%: (£97,000 − £5,270) × 24% = £91,730 × 24% = £22,015.20</li>
+<li>Total CGT: <strong>£22,963.80</strong></li>
+</ul>
+
+<p>The unused basic-rate slice saves Sarah roughly £316 versus a flat 24% calculation on the £97,000 taxable gain (£23,280 versus £22,963.80). The arithmetic gets less impactful as the unused slice shrinks, but band-stacking is always worth running through because the rate gap between 18% and 24% is six percentage points on every pound that fits in the basic-rate band. The simplified base cost above omits acquisition costs (SDLT, purchase legal fees, survey) for clarity; a full computation would include them in line with example 1.</p>
+
 <aside>
 <p>Running this for your own disposal</p>
 <p>The five-step framework above is what we run for every client disposal. If you want a written computation for a specific sale, with the figures and reliefs sense-checked, the form at the bottom of this page routes through to a property tax specialist.</p>
