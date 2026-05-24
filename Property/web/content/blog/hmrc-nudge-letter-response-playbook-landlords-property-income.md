@@ -173,7 +173,7 @@ faqs:
 
 <h2>Worked scenario: short-let host receives an Airbnb-flagged nudge letter</h2>
 
-<p><strong>Background.</strong> A higher-rate landlord owns a flat in central Manchester used as a short-let on Airbnb. The flat generated approximately £24,000 of gross income across the 2024/25 tax year. The landlord, on the basis that "Airbnb income is below the rent-a-room threshold" (an incorrect understanding — rent-a-room applies only to the landlord's main residence and not to a separate let property), did not declare the income on self-assessment.</p>
+<p><strong>Background.</strong> A higher-rate landlord owns a flat in central Manchester used as a short-let on Airbnb. The flat generated approximately £24,000 of gross income across the 2024/25 tax year. The landlord, on the basis that "Airbnb income is below the rent-a-room threshold" (an incorrect understanding, since rent-a-room applies only to the landlord's main residence and not to a separate let property), did not declare the income on self-assessment.</p>
 
 <p><strong>Trigger.</strong> In April 2026, HMRC sends a nudge letter referencing DAC7 platform data showing 2024 platform income. Response window: 60 days.</p>
 
