@@ -2339,3 +2339,57 @@ This §22.21 mini-lock sits in the §22 cluster as it extends the IHT / estate-p
 - "LPC notification triggers immediate penalty exposure" (false; notification is a **no-penalty-consequence** step; penalty exposure crystallises on disclosure + payment within 90 days of acknowledgment).
 
 ---
+
+## 21.A Corporation tax three-figure framework (FA 2021 architecture, post-1-April-2023) — Wave 8 mini-lock (added 2026-05-25)
+
+**Why this lock exists.** Track 2 manager's F-31 (raised 2026-05-24) surfaced a residual cohort of legacy property pages conflating the three post-FA-2021 CT figures. Site-wide STALE sweep at commit `195e895` back-patched 65 pages + 0 false positives. This mini-lock anchors the framework verbatim so future generation passes cannot regress to the pre-FA-2021 "19% on all profits" mental model. Sits above §21.4 (year-specific rate verification) and §21.5 (CIHC depth) as the architectural headline.
+
+**Architecture — three figures, three regimes, one anti-fragmentation mechanic.**
+
+| Figure | Statutory role | Operative section |
+|---|---|---|
+| **19% small profits rate (SPR)** | Applies to UK-resident, non-CIHC companies with augmented profits ≤ lower limit | CTA 2010 s.18A (charge) |
+| **25% main rate** | Applies to all companies with augmented profits ≥ upper limit, AND to CIHCs at all profit levels | CTA 2010 s.3 (charge); s.18N (CIHC exclusion from SPR) |
+| **26.5% effective marginal rate** | The effective rate applied to the slice of profits between the lower and upper limits, achieved via marginal relief calculation with standard fraction 3/200 | CTA 2010 s.18B (marginal relief trigger); s.18D (formula + standard fraction, image-bound on legislation.gov.uk per §16.44; gov.uk consumer guidance confirms 3/200 for 2026/27) |
+
+**Limit thresholds (set by Parliament yearly via FA; verify gov.uk at write time per §16.27 rate-by-reference discipline):**
+- **Lower limit £50,000** for tax year 2026/27 (unchanged since 1 April 2023; FA 2021 Sch 1 initial set; confirmed FA 2022/2023/2024/2025/2026)
+- **Upper limit £250,000** for tax year 2026/27 (unchanged since 1 April 2023; same FA chain)
+- Note: the £ thresholds are NOT hard-coded in CTA 2010; they are confirmed each tax year by the operative Finance Act. Sessions writing 2027/28+ figures must re-verify against gov.uk consumer guidance at write time — same pattern as the s.455 / ITA 2007 s.8(2) rate-by-reference discipline in §21.1 / §21.4.
+
+**Associated-companies divisor (CTA 2010 s.18D + s.18E) — the most-misunderstood mechanic for multi-SPV property portfolios:**
+- Where a company has **associated companies** during an accounting period, both the lower limit (£50k) and the upper limit (£250k) are **divided by (1 + N)**, where N = number of associated companies. The divisor formula lives in s.18D's image-bound table; s.18E defines "associated company" status.
+- Example: a landlord with 5 BTL SPVs (each holding one property) → each SPV is associated with the other 4 → lower limit per SPV = £50k / 5 = £10k; upper limit per SPV = £250k / 5 = £50k. SPR band collapses to £0-£10k per SPV; marginal relief band £10k-£50k per SPV; main rate above £50k per SPV.
+- **Common drift this catches:** "Each of my SPVs gets its own £50k small profits band" — false; associated SPVs share. Multi-SPV portfolios designed for IHT or operational segregation lose most of the SPR benefit unless the SPVs are genuinely independent (e.g. different individual shareholders, no common control test met).
+- **Associated company definition shorthand (s.18E + cross-ref to CTA 2010 s.450):** companies under common control by the same person(s); "control" includes 51%+ voting / dividend / assets-on-winding-up. Dormant companies excluded. Non-resident associates count.
+
+**CIHC exclusion from SPR (CTA 2010 s.18N — restating from §21.5 for framework completeness):**
+- A close investment-holding company is **always taxed at 25% main rate** regardless of profit level. The SPR is unavailable.
+- **Qualifying-purpose carve-out (s.18N(2)(b) + s.18N(3)):** companies whose business is "making investments in land, or estates or interests in land, in cases where the land is, or is intended to be, **let commercially**" are NOT CIHCs. "Let commercially" means let to persons NOT connected with the company (s.18N(3)).
+- **Property-SPV implication:** standard BTL SPV with unconnected tenants = qualifies for SPR (subject to associated-companies divisor). BTL SPV with family-tenant occupant = potentially CIHC, loses SPR entirely. Mixed portfolios require per-SPV analysis.
+- Full CIHC depth in §21.5; this restatement is for framework completeness only.
+
+**"Augmented profits" (CTA 2010 s.18L) — the comparison figure for the threshold tests:**
+- Augmented profits = taxable total profits **+** qualifying exempt distributions received from non-group companies (s.18L(1)).
+- Distributions from 51% group companies are excluded from the augmentation (s.18L(2)).
+- The lower-limit and upper-limit tests are applied to augmented profits, NOT to taxable total profits alone. A company with modest TTP can be pushed into the marginal-relief band by significant dividends-received income.
+
+### 21.A.1 Citations for §21.A
+
+- CTA 2010: s.3 (CT charge), s.18A (SPR charge), s.18B (marginal relief trigger), s.18D (marginal relief formula + standard fraction, image-bound; verify gov.uk for 3/200), s.18E (associated companies definition), s.18L (augmented profits), s.18N (CIHC exclusion + qualifying-purpose carve-out), s.450 (control definition cross-ref).
+- FA 2021 c. 26 Sch 1 (inserting Act for the post-1-April-2023 framework; paras 1-3 inserted ss.18A-S; Sch 1 para 34 commencement = effect for financial year 2023 onwards).
+- gov.uk consumer guidance: "Corporation Tax rates and allowances" (rates table) and "Marginal Relief for Corporation Tax" calculator page — verify figures at write time.
+
+### 21.A.2 Do not write (§21.A — F-31 drift patterns)
+
+- "Companies pay 19% on the first £250,000" (false — 19% applies up to £50k; £250k is the upper marginal-relief boundary).
+- "Small profits rate of 19% for profits under £250,000" (false — £250k is the upper bound; 19% bound is £50k).
+- "Companies pay 25% on profits over £50,000" (false — main rate is 25% on profits over £250k; the £50k-£250k slice attracts marginal relief, effective 26.5%).
+- "Companies pay 19% CGT" / "Companies pay CGT on property disposals" (false — companies don't pay CGT; they pay Corporation Tax on chargeable gains at the prevailing CT rate per CTA 2009 + CTA 2010, with NRCGT carve-out for non-resident companies disposing of UK land per TCGA 1992 s.1A — see §17.4).
+- "Each of my SPVs gets its own £50,000 small profits band" (false — associated SPVs share via s.18D divisor; a 5-SPV portfolio under common control has £10k SPR band per SPV).
+- "Dormant companies count towards the associated-companies test" (false — dormant companies excluded per s.18E + standard practice; verify at write time against the operative period).
+- "Property investment FICs always get the small profits rate" (false — pure-investment FIC with predominantly investment income may be a CIHC; per §21.5 the s.18N(2)(b) carve-out turns on whether land is let commercially to unconnected persons; FIC holding family-occupied property or connected-tenant property is likely CIHC).
+- "FA 2014 abolished the small profits rate permanently" (false in current state — FA 2014 abolished the original s.19 SPR effective 1 April 2015, but FA 2021 Sch 1 reinstated a structurally different SPR + marginal-relief regime effective 1 April 2023. Sessions writing on legacy "single 19% rate" or "single 25% rate" framings must use the FA 2021 architecture, not the FA 2014 abolished position).
+- "Marginal relief uses a flat 26.5% calculation" (false — the calculation uses the formula (U − A) × (N/A) × (3/200), where U = upper limit, A = augmented profits, N = taxable total profits; 26.5% is the effective marginal rate that emerges on the slice between limits at the 3/200 standard fraction, not a separate rate applied directly. Sessions must show the worked calculation, not assert a flat figure).
+
+---
