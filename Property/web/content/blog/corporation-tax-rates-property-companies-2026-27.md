@@ -10,11 +10,11 @@ metaDescription: "Corporation tax rates for property companies 2026/27: 19% smal
 altText: "UK property company director reviewing corporation tax rates and reliefs documentation for 2026/27"
 image: ""
 h1: "Corporation Tax Rates for Property Companies 2026/27: Complete Guide"
-summary: "Property companies pay corporation tax at 19% on profits up to £250,000, then 25% above this threshold. The marginal rate creates additional complexity for portfolio landlords."
+summary: "Property companies pay corporation tax at 19% on profits up to £50,000 (small profits rate), 25% on profits above £250,000 (main rate), with marginal relief tapering between. The marginal rate creates additional complexity for portfolio landlords."
 schema: ""
 faqs:
   - question: "What is the corporation tax rate for property companies in 2026/27?"
-    answer: "Property companies pay corporation tax at 19% on profits up to £250,000 (small profits rate) and 25% on profits above £250,000 (main rate). Between £50,000 and £250,000 profits, a marginal rate of 26.5% applies to phase out the small profits rate benefit."
+    answer: "Property companies pay corporation tax at 19% on profits up to £50,000 (small profits rate) and 25% on profits above £250,000 (main rate). Between £50,000 and £250,000 profits, a marginal rate of 26.5% applies to phase out the small profits rate benefit."
   - question: "How does corporation tax compare to personal income tax for landlords?"
     answer: "Corporation tax at 19% is typically lower than personal income tax rates of 20%, 40%, or 45% for landlords. From April 2027, separate property income tax rates of 22%, 42%, and 47% will apply, making incorporation even more attractive for higher-rate taxpayers."
   - question: "Can property companies claim mortgage interest relief without Section 24 restrictions?"
@@ -29,9 +29,9 @@ faqs:
 <h2>Corporation Tax Rates 2026/27</h2>
 <p>Property companies pay corporation tax on their taxable profits using the same rates as other UK companies. The system operates with two main rates and a marginal rate mechanism.</p>
 <h3>Small Profits Rate: 19%</h3>
-<p>The <strong>19% small profits rate</strong> applies to company profits up to £250,000. For most property companies, this represents the effective rate on all their taxable income. A property company with three buy-to-let properties generating £40,000 annual profit would pay £7,600 corporation tax (19% of £40,000). This rate applies regardless of whether profits are retained in the company or distributed.</p>
+<p>The <strong>19% small profits rate</strong> applies to company profits up to £50,000. For most small property companies, this represents the effective rate on all their taxable income. A property company with three buy-to-let properties generating £40,000 annual profit would pay £7,600 corporation tax (19% of £40,000). This rate applies regardless of whether profits are retained in the company or distributed.</p>
 <h3>Main Rate: 25%</h3>
-<p>The 25% main rate applies to profits above £250,000. This affects larger property portfolios or companies with significant development activities. A property company with £300,000 profits pays 19% on the first £250,000 (£47,500) plus 25% on the remaining £50,000 (£12,500), totalling £60,000 corporation tax.</p>
+<p>The 25% main rate applies to profits above £250,000. This affects larger property portfolios or companies with significant development activities. A property company with £300,000 profits pays corporation tax via the marginal relief formula: 25% on the full £300,000 (£75,000) less marginal relief, producing an effective rate that gradually rises from 19% to 25% across the £50,000-£250,000 band before reaching the headline 25% above £250,000.</p>
 <h3>Marginal Rate Mechanism</h3>
 <p>Between £50,000 and £250,000 profits, companies face a marginal rate of 26.5%. This mechanism gradually phases out the benefit of the small profits rate. The marginal rate calculation adds 1/400 of the profit band (£200,000) to the basic corporation tax liability. This effectively creates a 26.5% rate on profits between these thresholds.</p>
 

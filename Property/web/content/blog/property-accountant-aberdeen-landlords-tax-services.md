@@ -76,7 +76,7 @@ faqs:
 <p><strong>Benefits of incorporation include:</strong></p>
 <ul>
 <li>Full mortgage interest deductibility against rental profits</li>
-<li>Corporation tax rates (19% on profits up to £250,000, 25% above)</li>
+<li>Corporation tax rates (19% small profits rate on profits up to £50,000, 25% main rate above £250,000, with marginal relief between)</li>
 <li>Greater flexibility in profit extraction timing</li>
 <li>Easier expansion financing through company borrowing</li>
 </ul>

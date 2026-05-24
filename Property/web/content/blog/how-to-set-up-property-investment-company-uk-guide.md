@@ -48,8 +48,9 @@ faqs:
 
 <p>Companies pay Corporation Tax on rental profits at:</p>
 <ul>
-<li><strong>19%</strong> on profits up to £250,000 (small profits rate)</li>
-<li><strong>25%</strong> on profits above £250,000 (main rate)</li>
+<li><strong>19%</strong> small profits rate on profits up to £50,000</li>
+<li><strong>25%</strong> main rate on profits above £250,000</li>
+<li><strong>Marginal relief</strong> tapers the effective rate between £50,000 and £250,000</li>
 </ul>
 <p>Mortgage interest remains fully deductible as a business expense, unlike the restrictions individual landlords face under Section 24.</p>
 

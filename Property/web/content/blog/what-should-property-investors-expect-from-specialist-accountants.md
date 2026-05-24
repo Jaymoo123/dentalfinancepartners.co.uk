@@ -112,7 +112,7 @@ faqs:
 <h2>Incorporation and Company Structures</h2>
 <p>Holding property through a limited company is a major strategic decision. A specialist accountant should provide detailed analysis on whether incorporation is right for you, considering:</p>
 <ul>
-<li>The tax burden comparison: personal ownership (subject to Section 24 and income tax up to 45%) vs company ownership (corporation tax at 19% for profits up to £250k, 25% main rate)</li>
+<li>The tax burden comparison: personal ownership (subject to Section 24 and income tax up to 45%) vs company ownership (corporation tax at 19% small profits rate for profits up to £50k, 25% main rate above £250k, with marginal relief between)</li>
 <li>The impact of mortgage availability and interest rates for companies</li>
 <li>Extraction of profits from the company via salary, dividends, or director's loans</li>
 <li>The potential for capital gains tax incorporation relief when transferring existing properties</li>

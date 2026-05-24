@@ -56,7 +56,7 @@ imageCredit:
 <p>Tax planning is a critical part of housing development finance. The structure of your project can significantly affect your tax liability. Developers should consider the following areas.</p>
 
 <h3>Corporation Tax vs Income Tax</h3>
-<p>Most housing developers operate through a limited company. This allows them to pay corporation tax on profits rather than income tax. For the 2025/26 tax year, corporation tax rates are 19% for profits up to £250,000 and 25% for profits above £250,000. These rates are generally lower than the higher and additional rates of income tax, making incorporation a tax-efficient structure for development projects.</p>
+<p>Most housing developers operate through a limited company. This allows them to pay corporation tax on profits rather than income tax. For the 2026/27 tax year, corporation tax rates are 19% small profits rate (profits up to £50,000) and 25% main rate (profits above £250,000), with marginal relief tapering between. These rates are generally lower than the higher and additional rates of income tax, making incorporation a tax-efficient structure for development projects.</p>
 <p>If you are considering incorporating your development business, our guide on <a href="/incorporation">incorporation for property developers</a> explains the process and tax implications in detail.</p>
 
 <h3>VAT on New Builds</h3>

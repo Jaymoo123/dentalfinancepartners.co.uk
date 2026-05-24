@@ -86,7 +86,7 @@ Net tax: £12,600 - £3,000 = £9,600</p>
 
 <h2>Strategic Planning and Incorporation</h2>
 <p>The introduction of separate property tax rates may tip the balance towards incorporation for many landlords. Limited companies remain unaffected by Section 24 and won't face the higher property tax rates.</p>
-<p>Corporation tax rates for 2027/28 are expected to remain at 19% for profits up to £250,000 and 25% above that threshold. This creates a significant rate differential compared to the new 42% higher rate on individual property income.</p>
+<p>Corporation tax rates for 2027/28 are expected to remain at 19% small profits rate (profits up to £50,000) and 25% main rate (above £250,000), with marginal relief tapering between. This creates a significant rate differential compared to the new 42% higher rate on individual property income.</p>
 <p>However, <a href="/incorporation">incorporation planning</a> must consider the capital gains tax implications of transferring properties and the ongoing compliance costs.</p>
 
 <h3>Portfolio Restructuring Options</h3>

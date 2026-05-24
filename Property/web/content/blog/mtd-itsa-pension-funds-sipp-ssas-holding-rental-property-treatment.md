@@ -50,132 +50,96 @@ reviewerCredentials: "UK-based tax advisers specialising in property income, MTD
 reviewedAt: "2026-05-23"
 editorialNote: "Operational mechanics page for landlords with mixed wrappers (personal rentals plus SIPP / SSAS-held commercial property) entering MTD ITSA from 6 April 2026. Authority sources: house position §19.12 + §19.3 + gov.uk MTD eligibility check + HMRC Pensions Tax Manual PTM121000 + Finance Act 2004 Part 4. Anti-templating boundary: this is the live-time MTD exclusion mechanic page; C6 (pension decumulation + property portfolio + IHT 2027 cohort sequence) covers the post-death pension treatment. Defers IHT/post-death angles to C6 via cross-link in closing section."
 ---
-
-A landlord with a Self-Invested Personal Pension or Small Self-Administered Scheme holding commercial property tends to arrive at Making Tax Digital with a recurring pair of questions. Does the rental income inside the pension wrapper add to my personal gross rents for the £50,000 threshold test? And if it does, who actually files the quarterly updates for the pension property: me, my SIPP provider, or my accountant?
-
-Both answers are clean. The pension-held rent does not aggregate with your personal portfolio for the threshold test. And nobody files MTD ITSA quarterly updates for the pension property, because pension trustees are outside MTD ITSA entirely under the §19.3 excluded categories.
-
-That short answer is the page in one paragraph. The remainder explains why, what the wrapper mechanic actually is, what your SIPP provider or SSAS practitioner does instead, where the arm's-length rent discipline tightens, why residential property inside a pension is the heavily restricted edge, and the parallel-streams scenario most likely to confuse on the run-up to April 2026.
-
-## The exclusion in two sentences
-
-House position §19.3 lists the categories outside MTD ITSA. Trustees of registered pension schemes are in that list, by virtue of the regime being scoped to individuals and partnerships rather than to trustees acting in a fiduciary capacity. House position §19.12 follows from §19.3: property income within the pension wrapper is taxed (or, more precisely, exempted from income tax) inside the scheme under Finance Act 2004 Part 4, reported via the scheme administrator's own statutory channel, and does not flow through the member's personal MTD ITSA cycle.
-
-The implication is symmetric. The income does not appear on the member's personal qualifying-income figure (so no aggregation for the threshold test), and the income does not generate any personal MTD ITSA filing obligation (so no quarterly updates on the pension property).
-
-## How a SIPP actually holds property
-
-A SIPP is a trust structure. The SIPP provider acts as scheme administrator and as one of the trustees; the member is the beneficial interest holder. When the SIPP buys a commercial property, the legal title is registered in the trustees' name (the provider's name, on behalf of the member's SIPP). The trustees hold the property for the benefit of the member. The member does not own the property in their own name and cannot occupy it personally without market-rent payment.
-
-Rent collected from a third-party tenant flows into the SIPP's cash account, where it is held alongside any other SIPP cash (contributions, drawdown reserves, investment income). The rent does not pass through the member's personal bank account at any point during the holding period. Capital gains on disposal also stay inside the wrapper.
-
-This wrapper-and-trustee structure is the reason §19.12 stays clean. The income is not the member's income for any HMRC reporting purpose. It is the scheme's income, and the scheme is outside MTD ITSA.
-
-## SSAS, and how it differs
-
-A Small Self-Administered Scheme is an occupational pension set up by a private trading company (typically a family business or a small partnership) for its directors. The SSAS is sponsored by the employer, has up to 11 members (typically the directors and their spouses), and operates with member-trustees alongside a professional trustee or scheme administrator.
-
-For property purposes, SSAS has three operational features SIPP does not:
-
-- It can lend back to the sponsoring employer (a loanback, capped at 50% of the SSAS net asset value under FA 2004 Sch 30 conditions).
-- It can pool the assets of multiple members within one scheme, which is useful for buying a property that exceeds any one director's individual pension pot.
-- It can hold the trading premises of the sponsoring employer, with the employer paying market rent to the SSAS.
-
-The MTD ITSA position is identical for SSAS and SIPP: the trustees are outside the regime, the rent is exempt at the wrapper, and the members file only their personal income on their personal tax return.
-
-The distinction matters operationally because SSAS often holds the directors' trading premises (rent paid by the company, deductible against the company's corporation tax bill), whereas SIPP more often holds a discrete commercial investment let to an unconnected third party.
-
-## Why the rent inside the wrapper is tax-free
-
-Section 186 of Finance Act 2004 grants exemption from income tax to income arising from investments held in a registered pension scheme. Property rental, where the scheme is investment-regulated and the property qualifies as an eligible investment (commercial property typically does; residential property typically does not, see below), is within the exemption.
-
-The exemption is not unconditional. It depends on:
-
-- The scheme remaining a registered pension scheme (status not lost through prohibited transactions).
-- The property being held as an investment, not for personal use of the member.
-- Any connected-party tenant paying market rent.
-- The scheme operating within the FA 2004 Part 4 investment-regulated rules where the asset is property.
-
-Where any of those conditions fails, the consequence is not just loss of exemption but an unauthorised payment tax charge of 40%, plus a scheme sanction charge of 15% on the administrator, plus potentially the chargeable-asset rules biting on a residential asset. Combined charges of 55% or more on the value of the affected interest are routinely cited in HMRC's enforcement actions. Tightly designed, the wrapper holds; loosely designed, the wrapper is punitive.
-
-## The arm's-length / market-rent discipline
-
-The most common pitfall in SIPP and SSAS property is the member or the sponsoring employer renting the property from the scheme at less than market rent (whether through inadvertence, optimism on what market is, or the trustees not refreshing the valuation).
-
-HMRC's Pensions Tax Manual at PTM121000 covers the position. Where the sponsoring employer or a scheme member rents the property, they must pay commercial market rent. Failure to do so triggers an unauthorised payment tax charge on the shortfall (calculated on the differential between market rent and the actual rent paid, annualised), plus the scheme sanction charge on the administrator.
-
-The discipline that holds:
-
-- Obtain an independent valuation of market rent on acquisition.
-- Refresh the valuation at standard rent-review cycles (typically every three to five years for commercial property).
-- Document the valuation in the trustee minutes.
-- Run rent reviews on the lease as you would with any commercial landlord-tenant relationship.
-- If the tenant is connected (sponsoring employer or member's business), expect HMRC to scrutinise the documentation if the scheme ever comes under review.
-
-## Residential property in pensions: the heavily restricted edge
-
-A persistent confusion is whether a SIPP or SSAS can hold residential buy-to-let property. The short answer is no, not in any practical sense.
-
-Residential property held by an investment-regulated registered pension scheme is taxable property under FA 2004 Sch 29A. The consequence is an unauthorised payment charge of 40% on the value of the residential interest acquired, plus a scheme sanction charge of typically 15%, plus an annual chargeable-asset tax. The combined cost can exceed the property's value over a holding period.
-
-The narrow exceptions (genuinely commercial property with incidental residential elements, certain student accommodation classed as commercial under HMRC guidance, hotel structures held by specific scheme types) exist but require specialist advice and documented compliance with the FA 2004 Pt 4 rules.
-
-For the vast majority of landlords asking whether they can put their personal residential portfolio inside a SIPP, the answer is no. The portfolio stays in personal name, and the personal name tests against the MTD ITSA threshold normally.
-
+<p>A landlord with a Self-Invested Personal Pension or Small Self-Administered Scheme holding commercial property tends to arrive at Making Tax Digital with a recurring pair of questions. Does the rental income inside the pension wrapper add to my personal gross rents for the £50,000 threshold test? And if it does, who actually files the quarterly updates for the pension property: me, my SIPP provider, or my accountant?</p>
+<p>Both answers are clean. The pension-held rent does not aggregate with your personal portfolio for the threshold test. And nobody files MTD ITSA quarterly updates for the pension property, because pension trustees are outside MTD ITSA entirely under the §19.3 excluded categories.</p>
+<p>That short answer is the page in one paragraph. The remainder explains why, what the wrapper mechanic actually is, what your SIPP provider or SSAS practitioner does instead, where the arm's-length rent discipline tightens, why residential property inside a pension is the heavily restricted edge, and the parallel-streams scenario most likely to confuse on the run-up to April 2026.</p>
+<h2>The exclusion in two sentences</h2>
+<p>House position §19.3 lists the categories outside MTD ITSA. Trustees of registered pension schemes are in that list, by virtue of the regime being scoped to individuals and partnerships rather than to trustees acting in a fiduciary capacity. House position §19.12 follows from §19.3: property income within the pension wrapper is taxed (or, more precisely, exempted from income tax) inside the scheme under Finance Act 2004 Part 4, reported via the scheme administrator's own statutory channel, and does not flow through the member's personal MTD ITSA cycle.</p>
+<p>The implication is symmetric. The income does not appear on the member's personal qualifying-income figure (so no aggregation for the threshold test), and the income does not generate any personal MTD ITSA filing obligation (so no quarterly updates on the pension property).</p>
+<h2>How a SIPP actually holds property</h2>
+<p>A SIPP is a trust structure. The SIPP provider acts as scheme administrator and as one of the trustees; the member is the beneficial interest holder. When the SIPP buys a commercial property, the legal title is registered in the trustees' name (the provider's name, on behalf of the member's SIPP). The trustees hold the property for the benefit of the member. The member does not own the property in their own name and cannot occupy it personally without market-rent payment.</p>
+<p>Rent collected from a third-party tenant flows into the SIPP's cash account, where it is held alongside any other SIPP cash (contributions, drawdown reserves, investment income). The rent does not pass through the member's personal bank account at any point during the holding period. Capital gains on disposal also stay inside the wrapper.</p>
+<p>This wrapper-and-trustee structure is the reason §19.12 stays clean. The income is not the member's income for any HMRC reporting purpose. It is the scheme's income, and the scheme is outside MTD ITSA.</p>
+<h2>SSAS, and how it differs</h2>
+<p>A Small Self-Administered Scheme is an occupational pension set up by a private trading company (typically a family business or a small partnership) for its directors. The SSAS is sponsored by the employer, has up to 11 members (typically the directors and their spouses), and operates with member-trustees alongside a professional trustee or scheme administrator.</p>
+<p>For property purposes, SSAS has three operational features SIPP does not:</p>
+<ul>
+<li>It can lend back to the sponsoring employer (a loanback, capped at 50% of the SSAS net asset value under FA 2004 Sch 30 conditions).</li>
+<li>It can pool the assets of multiple members within one scheme, which is useful for buying a property that exceeds any one director's individual pension pot.</li>
+<li>It can hold the trading premises of the sponsoring employer, with the employer paying market rent to the SSAS.</li>
+</ul>
+<p>The MTD ITSA position is identical for SSAS and SIPP: the trustees are outside the regime, the rent is exempt at the wrapper, and the members file only their personal income on their personal tax return.</p>
+<p>The distinction matters operationally because SSAS often holds the directors' trading premises (rent paid by the company, deductible against the company's corporation tax bill), whereas SIPP more often holds a discrete commercial investment let to an unconnected third party.</p>
+<h2>Why the rent inside the wrapper is tax-free</h2>
+<p>Section 186 of Finance Act 2004 grants exemption from income tax to income arising from investments held in a registered pension scheme. Property rental, where the scheme is investment-regulated and the property qualifies as an eligible investment (commercial property typically does; residential property typically does not, see below), is within the exemption.</p>
+<p>The exemption is not unconditional. It depends on:</p>
+<ul>
+<li>The scheme remaining a registered pension scheme (status not lost through prohibited transactions).</li>
+<li>The property being held as an investment, not for personal use of the member.</li>
+<li>Any connected-party tenant paying market rent.</li>
+<li>The scheme operating within the FA 2004 Part 4 investment-regulated rules where the asset is property.</li>
+</ul>
+<p>Where any of those conditions fails, the consequence is not just loss of exemption but an unauthorised payment tax charge of 40%, plus a scheme sanction charge of 15% on the administrator, plus potentially the chargeable-asset rules biting on a residential asset. Combined charges of 55% or more on the value of the affected interest are routinely cited in HMRC's enforcement actions. Tightly designed, the wrapper holds; loosely designed, the wrapper is punitive.</p>
+<h2>The arm's-length / market-rent discipline</h2>
+<p>The most common pitfall in SIPP and SSAS property is the member or the sponsoring employer renting the property from the scheme at less than market rent (whether through inadvertence, optimism on what market is, or the trustees not refreshing the valuation).</p>
+<p>HMRC's Pensions Tax Manual at PTM121000 covers the position. Where the sponsoring employer or a scheme member rents the property, they must pay commercial market rent. Failure to do so triggers an unauthorised payment tax charge on the shortfall (calculated on the differential between market rent and the actual rent paid, annualised), plus the scheme sanction charge on the administrator.</p>
+<p>The discipline that holds:</p>
+<ul>
+<li>Obtain an independent valuation of market rent on acquisition.</li>
+<li>Refresh the valuation at standard rent-review cycles (typically every three to five years for commercial property).</li>
+<li>Document the valuation in the trustee minutes.</li>
+<li>Run rent reviews on the lease as you would with any commercial landlord-tenant relationship.</li>
+<li>If the tenant is connected (sponsoring employer or member's business), expect HMRC to scrutinise the documentation if the scheme ever comes under review.</li>
+</ul>
+<h2>Residential property in pensions: the heavily restricted edge</h2>
+<p>A persistent confusion is whether a SIPP or SSAS can hold residential buy-to-let property. The short answer is no, not in any practical sense.</p>
+<p>Residential property held by an investment-regulated registered pension scheme is taxable property under FA 2004 Sch 29A. The consequence is an unauthorised payment charge of 40% on the value of the residential interest acquired, plus a scheme sanction charge of typically 15%, plus an annual chargeable-asset tax. The combined cost can exceed the property's value over a holding period.</p>
+<p>The narrow exceptions (genuinely commercial property with incidental residential elements, certain student accommodation classed as commercial under HMRC guidance, hotel structures held by specific scheme types) exist but require specialist advice and documented compliance with the FA 2004 Pt 4 rules.</p>
+<p>For the vast majority of landlords asking whether they can put their personal residential portfolio inside a SIPP, the answer is no. The portfolio stays in personal name, and the personal name tests against the MTD ITSA threshold normally.</p>
 <aside><p>Considering moving commercial property into a SIPP or SSAS, or already holding pension property with arm's-length-rent uncertainty?</p><p>Our property-tax team works with members, sponsoring employers, and SIPP / SSAS administrators on the FA 2004 Part 4 compliance side, the market-rent documentation, and the personal-versus-scheme reporting boundary. Reach out via the form below.</p></aside>
 
-## The parallel-streams scenario: personal portfolio plus pension property
-
-Take a worked example. Patel has:
-
-- A personal residential portfolio of three rentals in Birmingham, gross rent £40,000 per year, currently outside MTD because the £40,000 is under the April 2026 mandate threshold of £50,000.
-- A SIPP holding a single commercial unit in Solihull, let to an unconnected SME at £35,000 per year market rent.
-
-The MTD ITSA position:
-
-- Personal threshold test: £40,000 (the personal rentals only). The SIPP £35,000 does not aggregate. Patel is below the April 2026 threshold and is not mandatorily in MTD ITSA from 6 April 2026.
-- Pension threshold test: not applicable. The SIPP is outside MTD ITSA regardless of how much rent it generates.
-- Combined "income" picture: meaningless from an MTD ITSA standpoint. The two streams are governed by different regimes (personal income tax vs the registered pension scheme regime) and are not aggregated for any MTD purpose.
-
-If Patel's personal rentals grow to £55,000 in 2025/26, the April 2026 cohort threshold catches them and Patel files quarterly updates on the personal portfolio. The SIPP commercial £35,000 is still outside MTD ITSA. The two run in parallel: Patel's personal MTD ITSA cycle covers the £55,000 of personal rentals only; the SIPP provider continues to handle the scheme's own statutory reporting separately.
-
-The error the parallel-streams scenario invites is the assumption that "all my rental income" needs to be totalled for the threshold test. It does not. Only the rental income on your personal tax return matters for that test, and rental income inside a registered pension scheme is not on your personal tax return.
-
-## What you file, what the scheme administrator files
-
-For the member:
-
-- Personal self-assessment return as usual (employment, self-employment, dividends, savings interest, personal property rentals).
-- Personal MTD ITSA quarterly updates if personal qualifying income crosses the threshold (April 2026 at £50,000, April 2027 at £30,000, April 2028 at £20,000), covering personal property rentals only.
-- The scheme's rental income is not on the personal return at any point during accumulation.
-- When pension income is drawn (pension drawdown, annuity), that income appears on the personal return under the pension income section (SA101), taxed at marginal rates, not MTD ITSA.
-
-For the scheme administrator (SIPP provider or SSAS practitioner):
-
-- The Pension Schemes Online digital service for scheme-level statutory reporting.
-- The event report covering reportable events under FA 2004 Sch 33A (such as unauthorised payments, scheme failures, certain transfers).
-- The Accounting for Tax (AFT) return where the scheme has charges to declare (typically the scheme sanction charge, or the unauthorised payment surcharge where the administrator is responsible).
-- Scheme administrator declaration on registration changes.
-
-That second channel is invisible to most members in good standing. The provider runs it; the member sees an annual scheme statement and the fees deducted from the cash account. The MTD ITSA mandate does not touch any of this.
-
+<h2>The parallel-streams scenario: personal portfolio plus pension property</h2>
+<p>Take a worked example. Patel has:</p>
+<ul>
+<li>A personal residential portfolio of three rentals in Birmingham, gross rent £40,000 per year, currently outside MTD because the £40,000 is under the April 2026 mandate threshold of £50,000.</li>
+<li>A SIPP holding a single commercial unit in Solihull, let to an unconnected SME at £35,000 per year market rent.</li>
+</ul>
+<p>The MTD ITSA position:</p>
+<ul>
+<li>Personal threshold test: £40,000 (the personal rentals only). The SIPP £35,000 does not aggregate. Patel is below the April 2026 threshold and is not mandatorily in MTD ITSA from 6 April 2026.</li>
+<li>Pension threshold test: not applicable. The SIPP is outside MTD ITSA regardless of how much rent it generates.</li>
+<li>Combined "income" picture: meaningless from an MTD ITSA standpoint. The two streams are governed by different regimes (personal income tax vs the registered pension scheme regime) and are not aggregated for any MTD purpose.</li>
+</ul>
+<p>If Patel's personal rentals grow to £55,000 in 2025/26, the April 2026 cohort threshold catches them and Patel files quarterly updates on the personal portfolio. The SIPP commercial £35,000 is still outside MTD ITSA. The two run in parallel: Patel's personal MTD ITSA cycle covers the £55,000 of personal rentals only; the SIPP provider continues to handle the scheme's own statutory reporting separately.</p>
+<p>The error the parallel-streams scenario invites is the assumption that "all my rental income" needs to be totalled for the threshold test. It does not. Only the rental income on your personal tax return matters for that test, and rental income inside a registered pension scheme is not on your personal tax return.</p>
+<h2>What you file, what the scheme administrator files</h2>
+<p>For the member:</p>
+<ul>
+<li>Personal self-assessment return as usual (employment, self-employment, dividends, savings interest, personal property rentals).</li>
+<li>Personal MTD ITSA quarterly updates if personal qualifying income crosses the threshold (April 2026 at £50,000, April 2027 at £30,000, April 2028 at £20,000), covering personal property rentals only.</li>
+<li>The scheme's rental income is not on the personal return at any point during accumulation.</li>
+<li>When pension income is drawn (pension drawdown, annuity), that income appears on the personal return under the pension income section (SA101), taxed at marginal rates, not MTD ITSA.</li>
+</ul>
+<p>For the scheme administrator (SIPP provider or SSAS practitioner):</p>
+<ul>
+<li>The Pension Schemes Online digital service for scheme-level statutory reporting.</li>
+<li>The event report covering reportable events under FA 2004 Sch 33A (such as unauthorised payments, scheme failures, certain transfers).</li>
+<li>The Accounting for Tax (AFT) return where the scheme has charges to declare (typically the scheme sanction charge, or the unauthorised payment surcharge where the administrator is responsible).</li>
+<li>Scheme administrator declaration on registration changes.</li>
+</ul>
+<p>That second channel is invisible to most members in good standing. The provider runs it; the member sees an annual scheme statement and the fees deducted from the cash account. The MTD ITSA mandate does not touch any of this.</p>
 <aside><p>If your SIPP or SSAS holds residential property (or a property with mixed-use elements), the FA 2004 taxable-property rules are aggressive.</p><p>Get a structured review of whether your current arrangement holds against the investment-regulated-schemes regime before HMRC opens an enquiry. Form below.</p></aside>
 
-## What changes when you start drawing pension income
-
-The wrapper exemption applies during accumulation. Once you start drawing pension income (whether via flexi-access drawdown, an annuity, or uncrystallised funds pension lump sums), the drawdown payments are taxed in your hands at marginal income tax rates.
-
-The relevant points for landlords:
-
-- Drawdown income is not property income for MTD ITSA. It does not feed the qualifying-income figure.
-- The 25% tax-free pension commencement lump sum (capped at the Lump Sum Allowance of £268,275 from April 2024, with the lifetime allowance abolished from the same date) is tax-free at the point of drawdown.
-- If the SIPP / SSAS still holds property when you start drawing, the property typically continues inside the scheme; the scheme sells assets or uses cash to fund the drawdown payments. Sale of property triggers no CGT inside the wrapper.
-- Inheritance tax position changes from April 2027 under the Autumn Budget 2024 reform (pensions brought within the IHT estate), with the SIPP / SSAS pension wrapper losing the historical IHT-exempt status it carried. The pension decumulation versus property decumulation sequencing question for the post-2027 cohort is covered in our [pension decumulation and property portfolio IHT 2027 cohort sequence page](/blog/landlord-tax-essentials/pension-decumulation-property-portfolio-iht-2027-cohort-sequence).
-
-## Where this page sits
-
-This page is the live-time, MTD-side mechanic for SIPP and SSAS-held property. It does not cover post-death IHT treatment of pension funds with property under the April 2027 reform; see our [pension decumulation and property portfolio IHT 2027 cohort sequence](/blog/landlord-tax-essentials/pension-decumulation-property-portfolio-iht-2027-cohort-sequence) for the decumulation-sequencing question for the 2027 cohort. It does not cover the underlying SIPP / SSAS investment regime in depth (specialist pension-advisory territory). It does not re-walk the headline MTD ITSA changes for personal landlords.
-
-For the personal MTD cycle, our [MTD ITSA overview for residential landlords](/blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords) is the bucket pillar. For the gross qualifying-income test that the parallel-streams scenario interacts with, see our [MTD ITSA qualifying-income gross-vs-net page](/blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net). For joint owners with mixed wrappers (one spouse with personal portfolio, the other holding pension property), the joint-owner mechanic is covered on our [joint-owner quarterly filing mechanics page](/blog/making-tax-digital-mtd/mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse).
-
-Source authority for the positions on this page: house position §19.12 + §19.3 (Wave 4 extensions, locked 2026-05-23); gov.uk MTD ITSA eligibility check; HMRC Pensions Tax Manual PTM121000 (commercial property held by registered pension schemes); Finance Act 2004 Part 4 (the registered pension schemes regime); FA 2004 Sch 29A (taxable property rules for investment-regulated schemes).
+<h2>What changes when you start drawing pension income</h2>
+<p>The wrapper exemption applies during accumulation. Once you start drawing pension income (whether via flexi-access drawdown, an annuity, or uncrystallised funds pension lump sums), the drawdown payments are taxed in your hands at marginal income tax rates.</p>
+<p>The relevant points for landlords:</p>
+<ul>
+<li>Drawdown income is not property income for MTD ITSA. It does not feed the qualifying-income figure.</li>
+<li>The 25% tax-free pension commencement lump sum (capped at the Lump Sum Allowance of £268,275 from April 2024, with the lifetime allowance abolished from the same date) is tax-free at the point of drawdown.</li>
+<li>If the SIPP / SSAS still holds property when you start drawing, the property typically continues inside the scheme; the scheme sells assets or uses cash to fund the drawdown payments. Sale of property triggers no CGT inside the wrapper.</li>
+<li>Inheritance tax position changes from April 2027 under the Autumn Budget 2024 reform (pensions brought within the IHT estate), with the SIPP / SSAS pension wrapper losing the historical IHT-exempt status it carried. The pension decumulation versus property decumulation sequencing question for the post-2027 cohort is covered in our <a href="/blog/landlord-tax-essentials/pension-decumulation-property-portfolio-iht-2027-cohort-sequence">pension decumulation and property portfolio IHT 2027 cohort sequence page</a>.</li>
+</ul>
+<h2>Where this page sits</h2>
+<p>This page is the live-time, MTD-side mechanic for SIPP and SSAS-held property. It does not cover post-death IHT treatment of pension funds with property under the April 2027 reform; see our <a href="/blog/landlord-tax-essentials/pension-decumulation-property-portfolio-iht-2027-cohort-sequence">pension decumulation and property portfolio IHT 2027 cohort sequence</a> for the decumulation-sequencing question for the 2027 cohort. It does not cover the underlying SIPP / SSAS investment regime in depth (specialist pension-advisory territory). It does not re-walk the headline MTD ITSA changes for personal landlords.</p>
+<p>For the personal MTD cycle, our <a href="/blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords">MTD ITSA overview for residential landlords</a> is the bucket pillar. For the gross qualifying-income test that the parallel-streams scenario interacts with, see our <a href="/blog/making-tax-digital-mtd/mtd-itsa-qualifying-income-test-gross-vs-net">MTD ITSA qualifying-income gross-vs-net page</a>. For joint owners with mixed wrappers (one spouse with personal portfolio, the other holding pension property), the joint-owner mechanic is covered on our <a href="/blog/making-tax-digital-mtd/mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse">joint-owner quarterly filing mechanics page</a>.</p>
+<p>Source authority for the positions on this page: house position §19.12 + §19.3 (Wave 4 extensions, locked 2026-05-23); gov.uk MTD ITSA eligibility check; HMRC Pensions Tax Manual PTM121000 (commercial property held by registered pension schemes); Finance Act 2004 Part 4 (the registered pension schemes regime); FA 2004 Sch 29A (taxable property rules for investment-regulated schemes).</p>

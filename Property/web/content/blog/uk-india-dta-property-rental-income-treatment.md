@@ -50,150 +50,117 @@ reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist
 reviewedAt: "2026-05-22"
 editorialNote: "Bilateral UK-India treaty page for property investors. Primary framing: Indian tax resident with UK BTL (the NRI-investor reader). The 1993 treaty's older article structure (capital gains at Art 14 not Art 13; no Art 13(4) indirect-disposal equivalent) is the differentiator; UK NRCGT under TCGA 1992 s.1A applies as a statutory override regardless. Secondary section covers UK-resident with Indian rental property. Worked example: Anil, Mumbai-resident, two UK BTLs (Leicester and Birmingham)."
 ---
-
-The 1993 UK-India Double Taxation Convention is one of the older UK treaties still operating in its substantially original form. It pre-dates the OECD Model 2017 by more than two decades and contains the article structure of the early 1990s: capital gains sit at Article 14 rather than Article 13, and there is no equivalent of the modern Article 13(4) extending source-state taxing rights to indirect disposals of property-rich entities. For property investors, that age shows.
-
-The practical reader for this page is the Indian tax resident with a UK buy-to-let. Often an Indian-citizen NRI investor who built a UK portfolio while living in the UK, then returned to India and retained the rentals as long-term income. Sometimes a UK-born Indian-heritage investor who relocated to Bangalore or Mumbai for work. The workflow is the same: NRL1 gross-payment approval on the UK side, Indian Income Tax Act s.90 credit on the Indian side, careful Form 67 filing, and Schedule FA disclosure of the UK property as a foreign asset.
-
-This page walks the 1993 treaty article-by-article for landlords, explains why UK NRCGT applies as a statutory override regardless of the treaty's narrower Article 14, and works through a Mumbai-resident two-BTL example. For the OECD framework that sits underneath every UK bilateral, see our [UK tax treaties framework guide](/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide).
-
-## Scenario A: Indian tax resident with a UK BTL
-
-You moved from the UK to Mumbai in 2023 to take up a senior role with an Indian multinational. You kept your two UK BTL flats (Leicester and Birmingham) producing combined gross rent of about £32,400 a year. You became Indian tax resident from FY 2024-25 onwards.
-
-**UK side: NRL withholding plus standard UK income tax.** The UK retains primary taxing rights on UK rental income under Article 6 of the 1993 treaty. The Non-Resident Landlord scheme is statutory under [FA 1995 Schedule 23 and SI 1995/2902](https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim4810) and applies regardless of treaty residence. Until you obtain NRL1 gross-payment approval, the letting agent or tenant must withhold 20% basic-rate UK tax on rent paid. See our [non-resident landlord scheme complete guide](/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide) for the application mechanics and the [NRL withholding deduction page](/blog/non-resident-landlord-tax/nrl-withholding-tax-20-percent-basic-rate-deduction) for how the 20% line is computed before approval lands.
-
-After NRL1 approval (typical six-week HMRC turnaround), rent flows gross. UK income tax under ITTOIA 2005 Part 3 applies on the net rental profit. As an Indian national, you can claim the £12,570 UK personal allowance under Article 26 of the 1993 treaty (non-discrimination article). The s.272A finance-cost restriction applies as for any UK-resident individual landlord. The 20% s.24 credit reduces the headline UK tax on the rental profit.
-
-**Indian side: worldwide income for a Resident.** Once you cross the threshold for Indian tax residence (broadly 182 days of Indian presence in a fiscal year, or 60 days plus 365 days in the four preceding fiscal years), India taxes your worldwide income. The UK rental income falls into the "Income from House Property" head under s.22-27 of the Indian Income Tax Act 1961. A 30% standard deduction applies on net annual value (in lieu of all expenses) plus actual mortgage interest with no cap for let-out property.
-
-Foreign tax credit under s.90 of the Indian Act, read with Article 24 of the 1993 treaty, offsets the UK income tax paid against the Indian liability on the same income. The credit is operationalised through Form 67 under Rule 128 of the Income Tax Rules 1962, filed by the Indian return due date.
-
+<p>The 1993 UK-India Double Taxation Convention is one of the older UK treaties still operating in its substantially original form. It pre-dates the OECD Model 2017 by more than two decades and contains the article structure of the early 1990s: capital gains sit at Article 14 rather than Article 13, and there is no equivalent of the modern Article 13(4) extending source-state taxing rights to indirect disposals of property-rich entities. For property investors, that age shows.</p>
+<p>The practical reader for this page is the Indian tax resident with a UK buy-to-let. Often an Indian-citizen NRI investor who built a UK portfolio while living in the UK, then returned to India and retained the rentals as long-term income. Sometimes a UK-born Indian-heritage investor who relocated to Bangalore or Mumbai for work. The workflow is the same: NRL1 gross-payment approval on the UK side, Indian Income Tax Act s.90 credit on the Indian side, careful Form 67 filing, and Schedule FA disclosure of the UK property as a foreign asset.</p>
+<p>This page walks the 1993 treaty article-by-article for landlords, explains why UK NRCGT applies as a statutory override regardless of the treaty's narrower Article 14, and works through a Mumbai-resident two-BTL example. For the OECD framework that sits underneath every UK bilateral, see our <a href="/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide">UK tax treaties framework guide</a>.</p>
+<h2>Scenario A: Indian tax resident with a UK BTL</h2>
+<p>You moved from the UK to Mumbai in 2023 to take up a senior role with an Indian multinational. You kept your two UK BTL flats (Leicester and Birmingham) producing combined gross rent of about £32,400 a year. You became Indian tax resident from FY 2024-25 onwards.</p>
+<p><strong>UK side: NRL withholding plus standard UK income tax.</strong> The UK retains primary taxing rights on UK rental income under Article 6 of the 1993 treaty. The Non-Resident Landlord scheme is statutory under <a href="https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim4810">FA 1995 Schedule 23 and SI 1995/2902</a> and applies regardless of treaty residence. Until you obtain NRL1 gross-payment approval, the letting agent or tenant must withhold 20% basic-rate UK tax on rent paid. See our <a href="/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide">non-resident landlord scheme complete guide</a> for the application mechanics and the <a href="/blog/non-resident-landlord-tax/nrl-withholding-tax-20-percent-basic-rate-deduction">NRL withholding deduction page</a> for how the 20% line is computed before approval lands.</p>
+<p>After NRL1 approval (typical six-week HMRC turnaround), rent flows gross. UK income tax under ITTOIA 2005 Part 3 applies on the net rental profit. As an Indian national, you can claim the £12,570 UK personal allowance under Article 26 of the 1993 treaty (non-discrimination article). The s.272A finance-cost restriction applies as for any UK-resident individual landlord. The 20% s.24 credit reduces the headline UK tax on the rental profit.</p>
+<p><strong>Indian side: worldwide income for a Resident.</strong> Once you cross the threshold for Indian tax residence (broadly 182 days of Indian presence in a fiscal year, or 60 days plus 365 days in the four preceding fiscal years), India taxes your worldwide income. The UK rental income falls into the "Income from House Property" head under s.22-27 of the Indian Income Tax Act 1961. A 30% standard deduction applies on net annual value (in lieu of all expenses) plus actual mortgage interest with no cap for let-out property.</p>
+<p>Foreign tax credit under s.90 of the Indian Act, read with Article 24 of the 1993 treaty, offsets the UK income tax paid against the Indian liability on the same income. The credit is operationalised through Form 67 under Rule 128 of the Income Tax Rules 1962, filed by the Indian return due date.</p>
 <aside><p>The NRI investor with UK BTLs has a well-trodden bilateral workflow but a few non-obvious traps.</p><p>The Indian side requires Form 67 by the return due date, a current UK TRC, and Schedule FA disclosure of every UK property. The UK side requires NRL1 approval before rent flows gross. We coordinate UK and Indian compliance for Indian-resident landlords with UK rental portfolios; get in touch before your next Indian fiscal year close on 31 March.</p></aside>
 
-## The 1993 treaty article walk for property investors
-
-Quick reference to the article numbers in the 1993 UK-India treaty (different from the OECD Model 2017 numbering most modern UK treaties follow):
-
-- **Article 4 (fiscal domicile)** sets the tie-breaker cascade for individuals dual-resident under domestic law of both states. Permanent home, then centre of vital interests, then habitual abode, then nationality, then mutual agreement. Engages where the UK Statutory Residence Test result conflicts with the Indian 182-day or 60+365 day test.
-- **Article 6 (immovable property)** allocates primary taxing rights on rental income to the situs state. UK property income is UK-taxable; Indian property income is India-taxable.
-- **Article 7 (business profits)** and the **permanent establishment** test in Article 5. Relevant where a landlord operates a UK property portfolio through an Indian-incorporated entity at a scale that crosses the PE threshold.
-- **Article 14 (capital gains)** is the 1993 treaty equivalent of OECD Article 13. Paragraph (1) covers gains from immovable property and allocates them to the situs state. Paragraph (4) of the 1993 treaty covers gains on movable property forming part of a permanent establishment. There is no paragraph extending source-state rights to gains on shares of property-rich entities.
-- **Article 24 (elimination of double taxation)** uses the credit method on both sides. The UK gives credit for Indian tax on Indian-source income (TIOPA 2010 ss.18 and 130 implementation); India gives credit for UK tax on UK-source income (s.90 of the Indian Act).
-- **Article 26 (non-discrimination)** is the basis for an Indian-national UK landlord claiming the UK personal allowance.
-- **Article 27 (Mutual Agreement Procedure)** with a three-year notification window from the first action giving rise to taxation not in accordance with the convention.
-- **Article 28 (exchange of information)** is the basis for HMRC and CBDT sharing taxpayer data on cross-border landlords.
-
-The treaty's bone structure is OECD-style. The age shows in two places: the capital gains article number (14 not 13) and the absence of any indirect-disposal extension. Both matter for property tax.
-
-## Article 14 and the UK NRCGT statutory override
-
-The technical reason UK NRCGT applies to Indian-resident landlords disposing of UK property-rich shares, despite the 1993 treaty containing no equivalent of OECD Article 13(4), is the statutory architecture of UK NRCGT.
-
-UK Non-Resident CGT now lives at [TCGA 1992 s.1A](https://www.legislation.gov.uk/ukpga/1992/12/section/1A) and Schedules 1A, 1B and 4AA, rewritten by Finance Act 2019 (which repealed the earlier ss.14B to 14H structure introduced by Finance Act 2015). The regime applies whether or not the relevant treaty assigns UK taxing rights. Two layers:
-
-- **Direct disposals** of UK land (any UK land, residential or non-residential, post-April 2019 widening). Article 14(1) of the 1993 treaty allocates these to the UK as situs state. No tension between treaty and statute.
-- **Indirect disposals** of shares in property-rich entities (broadly, more than 75% of value derived from UK land, with the 25% investment exclusion for diversified investors). UK NRCGT under Schedule 1A applies. The 1993 treaty does not allocate these to the UK. HMRC's position, set out in [HMRC INTM151010](https://www.gov.uk/hmrc-internal-manuals/international-manual/intm151010), is that the treaty allocates taxing rights without denying them; where the treaty is silent, UK domestic law applies.
-
-For an Indian-resident investor selling shares in a UK property-rich company, the practical effect is that UK NRCGT bites. The 1993 treaty does not prevent it. The Indian side then credits the UK NRCGT paid against the Indian capital gains liability under Article 24.
-
-For pure direct disposals (you sell your Leicester BTL flat), the analysis is clean: Article 14(1) allocates to UK, UK NRCGT applies at 18% or 24%, 60-day return required, Indian credit follows. See our [non-resident CGT rates page](/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting) for the rate computation and reporting mechanics.
-
-## Scenario B: UK resident with Indian rental property
-
-You are UK tax resident and you inherited or bought a flat in Bangalore that you rent to a local tenant for ₹45,000 per month (about £430).
-
-**Indian side: source taxation under Article 6.** India retains primary taxing rights on Indian-source rental under Article 6 of the 1993 treaty. The Indian Income Tax Act s.22-27 (Income from House Property) computes the tax: 30% standard deduction on net annual value, actual mortgage interest deduction.
-
-**Section 195 TDS at source.** Section 195 of the Indian Act requires the Indian tenant to withhold tax at source on rent paid to a non-resident landlord. The headline rate is 30% (or the highest treaty-permitted rate if lower), plus the applicable surcharge and Health and Education Cess (currently 4%). For high-rent properties, the TDS rate can effectively reach 31.2% to 39%. The tenant deducts and deposits with the Indian government via TDS challan and issues Form 16A.
-
-The non-resident landlord can apply for a Lower Deduction Certificate under s.197 from the Indian Assessing Officer (Form 13) where the actual Indian tax liability is materially lower than the s.195 default. The Lower Deduction Certificate is property-specific and tenant-specific.
-
-**UK side: foreign property income.** As a UK resident, you report the Indian rental on the foreign pages of Self Assessment (SA106). The s.272A finance-cost restriction does not apply to overseas property businesses (which run as a separate property business under ITTOIA 2005 Pt 3). Foreign tax credit under TIOPA 2010 ss.18 and 130 offsets the Indian s.195 TDS plus any additional Indian return-assessed tax, restricted to the UK tax on the same income. Sterling-rupee translation at the rate prevailing on the receipt date for income; on the disposal date for any capital gains.
-
-## Worked example: a Mumbai-resident landlord with two UK BTLs
-
-Anil, an Indian national, returned to Mumbai from London in 2023 to take a senior consulting role. Indian tax resident from FY 2024-25 onwards (over 182 days of Indian presence). Owns two UK BTL flats:
-
-- Leicester flat, £215,000 current value, £140,000 interest-only mortgage at 5.4%. Gross rent £14,400 a year.
-- Birmingham flat, £265,000 current value, £170,000 interest-only mortgage at 5.6%. Gross rent £18,000 a year.
-
-Annual UK gross rent: £32,400. Annual UK mortgage interest: £17,080. Allowable UK expenses (letting agent, insurance, repairs, ground rent): £4,800.
-
-**UK side, 2026/27 tax year.**
-
-- Both properties on NRL gross-payment approval (Anil applied April 2024; HMRC approved June 2024).
-- UK rental profit (s.272A computation): £32,400 less £4,800 = £27,600. Mortgage interest added back; s.24 relief comes through as a basic-rate tax credit.
-- UK personal allowance: £12,570 (Article 26 non-discrimination claim, Indian national).
-- UK income tax: £27,600 less £12,570 = £15,030 taxable. All inside the £37,700 basic-rate band: £15,030 at 20% = £3,006.
-- Section 24 credit: 20% of £17,080 mortgage interest = £3,416, capped at 20% of rental profit before s.24 (£27,600) = £5,520; the full £3,416 is usable.
-- UK income tax after s.24 credit: £3,006 less £3,416 = nil (excess s.24 credit is not refundable).
-- UK net cash outflow: nil on the rental income (Anil pays no UK income tax on this profile).
-- 60-day NRCGT return: not applicable for ongoing rent.
-
-See our [non-resident landlord self-assessment filing guide](/blog/non-resident-landlord-tax/non-resident-landlord-self-assessment-filing-requirements) for the return-side mechanics.
-
-**Indian side, FY 2026-27 (1 April 2026 to 31 March 2027).**
-
-Sterling-rupee translation at the daily State Bank of India reference rate; assume an annual average of £1 = ₹108 for simplicity. UK gross rent ₹32,400 × 108 = ₹35,00,000.
-
-Indian Income Tax Act computation under Income from House Property:
+<h2>The 1993 treaty article walk for property investors</h2>
+<p>Quick reference to the article numbers in the 1993 UK-India treaty (different from the OECD Model 2017 numbering most modern UK treaties follow):</p>
+<ul>
+<li><strong>Article 4 (fiscal domicile)</strong> sets the tie-breaker cascade for individuals dual-resident under domestic law of both states. Permanent home, then centre of vital interests, then habitual abode, then nationality, then mutual agreement. Engages where the UK Statutory Residence Test result conflicts with the Indian 182-day or 60+365 day test.</li>
+<li><strong>Article 6 (immovable property)</strong> allocates primary taxing rights on rental income to the situs state. UK property income is UK-taxable; Indian property income is India-taxable.</li>
+<li><strong>Article 7 (business profits)</strong> and the <strong>permanent establishment</strong> test in Article 5. Relevant where a landlord operates a UK property portfolio through an Indian-incorporated entity at a scale that crosses the PE threshold.</li>
+<li><strong>Article 14 (capital gains)</strong> is the 1993 treaty equivalent of OECD Article 13. Paragraph (1) covers gains from immovable property and allocates them to the situs state. Paragraph (4) of the 1993 treaty covers gains on movable property forming part of a permanent establishment. There is no paragraph extending source-state rights to gains on shares of property-rich entities.</li>
+<li><strong>Article 24 (elimination of double taxation)</strong> uses the credit method on both sides. The UK gives credit for Indian tax on Indian-source income (TIOPA 2010 ss.18 and 130 implementation); India gives credit for UK tax on UK-source income (s.90 of the Indian Act).</li>
+<li><strong>Article 26 (non-discrimination)</strong> is the basis for an Indian-national UK landlord claiming the UK personal allowance.</li>
+<li><strong>Article 27 (Mutual Agreement Procedure)</strong> with a three-year notification window from the first action giving rise to taxation not in accordance with the convention.</li>
+<li><strong>Article 28 (exchange of information)</strong> is the basis for HMRC and CBDT sharing taxpayer data on cross-border landlords.</li>
+</ul>
+<p>The treaty's bone structure is OECD-style. The age shows in two places: the capital gains article number (14 not 13) and the absence of any indirect-disposal extension. Both matter for property tax.</p>
+<h2>Article 14 and the UK NRCGT statutory override</h2>
+<p>The technical reason UK NRCGT applies to Indian-resident landlords disposing of UK property-rich shares, despite the 1993 treaty containing no equivalent of OECD Article 13(4), is the statutory architecture of UK NRCGT.</p>
+<p>UK Non-Resident CGT now lives at <a href="https://www.legislation.gov.uk/ukpga/1992/12/section/1A">TCGA 1992 s.1A</a> and Schedules 1A, 1B and 4AA, rewritten by Finance Act 2019 (which repealed the earlier ss.14B to 14H structure introduced by Finance Act 2015). The regime applies whether or not the relevant treaty assigns UK taxing rights. Two layers:</p>
+<ul>
+<li><strong>Direct disposals</strong> of UK land (any UK land, residential or non-residential, post-April 2019 widening). Article 14(1) of the 1993 treaty allocates these to the UK as situs state. No tension between treaty and statute.</li>
+<li><strong>Indirect disposals</strong> of shares in property-rich entities (broadly, more than 75% of value derived from UK land, with the 25% investment exclusion for diversified investors). UK NRCGT under Schedule 1A applies. The 1993 treaty does not allocate these to the UK. HMRC's position, set out in <a href="https://www.gov.uk/hmrc-internal-manuals/international-manual/intm151010">HMRC INTM151010</a>, is that the treaty allocates taxing rights without denying them; where the treaty is silent, UK domestic law applies.</li>
+</ul>
+<p>For an Indian-resident investor selling shares in a UK property-rich company, the practical effect is that UK NRCGT bites. The 1993 treaty does not prevent it. The Indian side then credits the UK NRCGT paid against the Indian capital gains liability under Article 24.</p>
+<p>For pure direct disposals (you sell your Leicester BTL flat), the analysis is clean: Article 14(1) allocates to UK, UK NRCGT applies at 18% or 24%, 60-day return required, Indian credit follows. See our <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">non-resident CGT rates page</a> for the rate computation and reporting mechanics.</p>
+<h2>Scenario B: UK resident with Indian rental property</h2>
+<p>You are UK tax resident and you inherited or bought a flat in Bangalore that you rent to a local tenant for ₹45,000 per month (about £430).</p>
+<p><strong>Indian side: source taxation under Article 6.</strong> India retains primary taxing rights on Indian-source rental under Article 6 of the 1993 treaty. The Indian Income Tax Act s.22-27 (Income from House Property) computes the tax: 30% standard deduction on net annual value, actual mortgage interest deduction.</p>
+<p><strong>Section 195 TDS at source.</strong> Section 195 of the Indian Act requires the Indian tenant to withhold tax at source on rent paid to a non-resident landlord. The headline rate is 30% (or the highest treaty-permitted rate if lower), plus the applicable surcharge and Health and Education Cess (currently 4%). For high-rent properties, the TDS rate can effectively reach 31.2% to 39%. The tenant deducts and deposits with the Indian government via TDS challan and issues Form 16A.</p>
+<p>The non-resident landlord can apply for a Lower Deduction Certificate under s.197 from the Indian Assessing Officer (Form 13) where the actual Indian tax liability is materially lower than the s.195 default. The Lower Deduction Certificate is property-specific and tenant-specific.</p>
+<p><strong>UK side: foreign property income.</strong> As a UK resident, you report the Indian rental on the foreign pages of Self Assessment (SA106). The s.272A finance-cost restriction does not apply to overseas property businesses (which run as a separate property business under ITTOIA 2005 Pt 3). Foreign tax credit under TIOPA 2010 ss.18 and 130 offsets the Indian s.195 TDS plus any additional Indian return-assessed tax, restricted to the UK tax on the same income. Sterling-rupee translation at the rate prevailing on the receipt date for income; on the disposal date for any capital gains.</p>
+<h2>Worked example: a Mumbai-resident landlord with two UK BTLs</h2>
+<p>Anil, an Indian national, returned to Mumbai from London in 2023 to take a senior consulting role. Indian tax resident from FY 2024-25 onwards (over 182 days of Indian presence). Owns two UK BTL flats:</p>
+<ul>
+<li>Leicester flat, £215,000 current value, £140,000 interest-only mortgage at 5.4%. Gross rent £14,400 a year.</li>
+<li>Birmingham flat, £265,000 current value, £170,000 interest-only mortgage at 5.6%. Gross rent £18,000 a year.</li>
+</ul>
+<p>Annual UK gross rent: £32,400. Annual UK mortgage interest: £17,080. Allowable UK expenses (letting agent, insurance, repairs, ground rent): £4,800.</p>
+<p><strong>UK side, 2026/27 tax year.</strong></p>
+<ul>
+<li>Both properties on NRL gross-payment approval (Anil applied April 2024; HMRC approved June 2024).</li>
+<li>UK rental profit (s.272A computation): £32,400 less £4,800 = £27,600. Mortgage interest added back; s.24 relief comes through as a basic-rate tax credit.</li>
+<li>UK personal allowance: £12,570 (Article 26 non-discrimination claim, Indian national).</li>
+<li>UK income tax: £27,600 less £12,570 = £15,030 taxable. All inside the £37,700 basic-rate band: £15,030 at 20% = £3,006.</li>
+<li>Section 24 credit: 20% of £17,080 mortgage interest = £3,416, capped at 20% of rental profit before s.24 (£27,600) = £5,520; the full £3,416 is usable.</li>
+<li>UK income tax after s.24 credit: £3,006 less £3,416 = nil (excess s.24 credit is not refundable).</li>
+<li>UK net cash outflow: nil on the rental income (Anil pays no UK income tax on this profile).</li>
+<li>60-day NRCGT return: not applicable for ongoing rent.</li>
+</ul>
+<p>See our <a href="/blog/non-resident-landlord-tax/non-resident-landlord-self-assessment-filing-requirements">non-resident landlord self-assessment filing guide</a> for the return-side mechanics.</p>
+<p><strong>Indian side, FY 2026-27 (1 April 2026 to 31 March 2027).</strong></p>
+<p>Sterling-rupee translation at the daily State Bank of India reference rate; assume an annual average of £1 = ₹108 for simplicity. UK gross rent ₹32,400 × 108 = ₹35,00,000.</p>
+<p>Indian Income Tax Act computation under Income from House Property:
 - Gross Annual Value (rent received): ₹35,00,000.
 - Less municipal taxes paid (UK council tax, where Anil pays it; in BTL context tenant usually pays, so often nil): assume nil.
 - Net Annual Value: ₹35,00,000.
 - 30% standard deduction (s.24(a)): ₹10,50,000.
 - Mortgage interest deduction (s.24(b)): ₹17,080 × 108 = ₹18,44,640 (full deduction, no cap for let-out property).
-- Income from House Property (net): ₹35,00,000 less ₹10,50,000 less ₹18,44,640 = ₹6,05,360 (about £5,605).
-
-Anil's Indian tax position: under the new tax regime (default from FY 2023-24), this rental income aggregates with his Mumbai consulting income. At his marginal slab (30%), Indian income tax on the rental component is roughly ₹6,05,360 × 30% = ₹1,81,608 plus surcharge and 4% cess; total roughly ₹2,00,000 (about £1,850).
-
-**Foreign tax credit on Form 67.** UK income tax actually paid on the same income: nil (per the UK computation above). Form 67 reports the UK tax paid as zero; no credit available because there is no UK tax to credit. Anil pays the full ₹2,00,000 in India.
-
-**Net cost of the cross-border position:** £0 UK + ₹2,00,000 India (~£1,850) = £1,850. Anil's pre-move UK-resident position on the same two properties was roughly £1,900 a year (basic-rate UK income tax on the unsheltered portion of rental profit, with full personal allowance absorbed by other income). The cross-border position is barely more expensive on cash terms because the UK personal allowance and s.24 credit absorb the UK liability entirely; the Indian liability arises but mostly without UK credit because there's no UK tax to credit.
-
-The dynamic flips at higher gross rent. If Anil added a third UK property bringing gross rent past £45,000, the UK tax would start to crystallise and Indian credit would mediate the position. The current shape is unusually credit-light because the UK side is exhausted by allowance plus s.24 credit.
-
-## Compliance: NRL1, HS304, Form 67, Schedule FA
-
-The Indian-resident UK landlord runs annual returns on both sides.
-
-**UK side:**
+- Income from House Property (net): ₹35,00,000 less ₹10,50,000 less ₹18,44,640 = ₹6,05,360 (about £5,605).</p>
+<p>Anil's Indian tax position: under the new tax regime (default from FY 2023-24), this rental income aggregates with his Mumbai consulting income. At his marginal slab (30%), Indian income tax on the rental component is roughly ₹6,05,360 × 30% = ₹1,81,608 plus surcharge and 4% cess; total roughly ₹2,00,000 (about £1,850).</p>
+<p><strong>Foreign tax credit on Form 67.</strong> UK income tax actually paid on the same income: nil (per the UK computation above). Form 67 reports the UK tax paid as zero; no credit available because there is no UK tax to credit. Anil pays the full ₹2,00,000 in India.</p>
+<p><strong>Net cost of the cross-border position:</strong> £0 UK + ₹2,00,000 India (~£1,850) = £1,850. Anil's pre-move UK-resident position on the same two properties was roughly £1,900 a year (basic-rate UK income tax on the unsheltered portion of rental profit, with full personal allowance absorbed by other income). The cross-border position is barely more expensive on cash terms because the UK personal allowance and s.24 credit absorb the UK liability entirely; the Indian liability arises but mostly without UK credit because there's no UK tax to credit.</p>
+<p>The dynamic flips at higher gross rent. If Anil added a third UK property bringing gross rent past £45,000, the UK tax would start to crystallise and Indian credit would mediate the position. The current shape is unusually credit-light because the UK side is exhausted by allowance plus s.24 credit.</p>
+<h2>Compliance: NRL1, HS304, Form 67, Schedule FA</h2>
+<p>The Indian-resident UK landlord runs annual returns on both sides.</p>
+<p><strong>UK side:</strong>
 - NRL1 application (one-off, lapses on change of circumstances).
 - UK self-assessment by 31 January with UK property pages (SA105) and the personal allowance claim under Article 26 (HS304 helpsheet).
 - 60-day NRCGT return on disposal of UK land regardless of tax due.
-- UK Tax Residency Certificate (TRC) request: not relevant for the Indian-resident UK landlord (this person is non-UK-resident); the UK TRC is needed for a UK-resident with Indian rental claiming relief in India.
-
-**Indian side:**
+- UK Tax Residency Certificate (TRC) request: not relevant for the Indian-resident UK landlord (this person is non-UK-resident); the UK TRC is needed for a UK-resident with Indian rental claiming relief in India.</p>
+<p><strong>Indian side:</strong>
 - Indian return ITR-2 (or ITR-3 if you have business income) by 31 July (non-audit cases) or 31 October (with audit).
 - Schedule FA disclosure of the UK property and any UK bank account holding the rental: country, address, peak balance, ownership share, period of holding. Failure attracts the ₹10 lakh per-asset Black Money Act penalty plus prosecution.
 - Form 67 for foreign tax credit, filed online by the Indian return due date.
-- Tax Residency Certificate from HMRC (CISC9 / certificate-of-residence process) submitted to India under s.90(4) requirements.
-
-**Estate planning side note.** India abolished estate duty in 1985 and wealth tax in 2015. There is no Indian estate tax on UK property held by an Indian resident. The UK side applies post-April-2025 IHT rules: under the long-term-residence regime, an individual UK-resident in 10 of the previous 20 tax years is within UK IHT on worldwide assets. UK residential property is always within UK IHT regardless of owner residence (Schedule A1 IHTA 1984 look-through for enveloped UK residential).
-
-## Common traps for UK-India landlords
-
-Five traps catch UK-India landlord positions most often:
-
-1. **No TRC on file.** Without a valid UK Tax Residency Certificate, India denies treaty benefits under s.90(4). The Indian Assessing Officer may apply the full s.115A non-DTAA rate (40% on certain categories) instead of the treaty-credit position. Renew the TRC annually; HMRC's online certificate-of-residence form covers it.
-
-2. **Late or missing Form 67.** Foreign tax credit is denied if Form 67 is filed after the Indian return due date. Rule 128 was relaxed in 2022 to allow late filing in some cases, but the safe practice is to file Form 67 with the return, not afterwards.
-
-3. **Schedule FA omission.** Indian-resident landlords who treat the UK property as "obvious" and skip Schedule FA face a ₹10 lakh per-asset per-year penalty under the Black Money Act 2015. This is a flat penalty, not tax-geared, and it stacks per year of non-disclosure.
-
-4. **Indian fiscal year mismatch.** UK 6 April to 5 April vs Indian 1 April to 31 March. The five-day overlap creates a credit-timing complication. Apportion UK tax to the Indian fiscal year in which the underlying income arose, not by reference to the UK tax-year stamp.
-
-5. **Failing to file NRL1 promptly on leaving the UK.** Recently-departed UK residents often miss the NRL1 application. The 20% withholding compounds quickly: a £2,700-a-month rent under withholding loses £540 a month to HMRC until approval lands. Six-month delay equals £3,240 of unnecessary cash flow leakage, recoverable only on the following UK self-assessment.
-
-## What to do next
-
-The UK-India position is treaty-old, statute-modern. The 1993 treaty's article structure is older than the OECD Model 2017 most other UK treaties now reflect; UK NRCGT under TCGA 1992 s.1A applies as a statutory override regardless. For the typical Indian-resident landlord with UK BTL property, the workflow is well-defined but compliance-intensive on both sides.
-
-- **Confirm your scenario.** Indian tax resident with UK BTL (Scenario A) or UK resident with Indian rental (Scenario B)? The bilateral mechanics differ on every line.
-- **Get NRL1 approval before rent withholds.** If you have just become Indian-resident, file NRL1 immediately. Six-week turnaround on the UK side.
-- **Order a fresh UK TRC each Indian fiscal year.** Without a current TRC, India denies treaty credit under s.90(4).
-- **File Form 67 with the Indian return, not after.** Rule 128 is forgiving but the safe practice is contemporaneous filing.
-- **Schedule FA disclosure of every UK property and UK bank account.** Black Money Act penalty is flat, per-asset, per-year.
-- **For framework context**, see our [UK tax treaties framework guide](/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide); for NRL operational detail, the [non-resident landlord scheme complete guide](/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide) and [NRL1 approval process page](/blog/non-resident-landlord-tax/nrl-approval-receive-rent-gross-hmrc-guide); for the expat-landlord descriptive overview, [UK property income for expats](/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained).
-
-The 1993 treaty does the structural work. The hard part is running two annual compliance cycles five days apart and remembering that the UK personal allowance is a treaty claim, not a default.
+- Tax Residency Certificate from HMRC (CISC9 / certificate-of-residence process) submitted to India under s.90(4) requirements.</p>
+<p><strong>Estate planning side note.</strong> India abolished estate duty in 1985 and wealth tax in 2015. There is no Indian estate tax on UK property held by an Indian resident. The UK side applies post-April-2025 IHT rules: under the long-term-residence regime, an individual UK-resident in 10 of the previous 20 tax years is within UK IHT on worldwide assets. UK residential property is always within UK IHT regardless of owner residence (Schedule A1 IHTA 1984 look-through for enveloped UK residential).</p>
+<h2>Common traps for UK-India landlords</h2>
+<p>Five traps catch UK-India landlord positions most often:</p>
+<ol>
+<li>
+<p><strong>No TRC on file.</strong> Without a valid UK Tax Residency Certificate, India denies treaty benefits under s.90(4). The Indian Assessing Officer may apply the full s.115A non-DTAA rate (40% on certain categories) instead of the treaty-credit position. Renew the TRC annually; HMRC's online certificate-of-residence form covers it.</p>
+</li>
+<li>
+<p><strong>Late or missing Form 67.</strong> Foreign tax credit is denied if Form 67 is filed after the Indian return due date. Rule 128 was relaxed in 2022 to allow late filing in some cases, but the safe practice is to file Form 67 with the return, not afterwards.</p>
+</li>
+<li>
+<p><strong>Schedule FA omission.</strong> Indian-resident landlords who treat the UK property as "obvious" and skip Schedule FA face a ₹10 lakh per-asset per-year penalty under the Black Money Act 2015. This is a flat penalty, not tax-geared, and it stacks per year of non-disclosure.</p>
+</li>
+<li>
+<p><strong>Indian fiscal year mismatch.</strong> UK 6 April to 5 April vs Indian 1 April to 31 March. The five-day overlap creates a credit-timing complication. Apportion UK tax to the Indian fiscal year in which the underlying income arose, not by reference to the UK tax-year stamp.</p>
+</li>
+<li>
+<p><strong>Failing to file NRL1 promptly on leaving the UK.</strong> Recently-departed UK residents often miss the NRL1 application. The 20% withholding compounds quickly: a £2,700-a-month rent under withholding loses £540 a month to HMRC until approval lands. Six-month delay equals £3,240 of unnecessary cash flow leakage, recoverable only on the following UK self-assessment.</p>
+</li>
+</ol>
+<h2>What to do next</h2>
+<p>The UK-India position is treaty-old, statute-modern. The 1993 treaty's article structure is older than the OECD Model 2017 most other UK treaties now reflect; UK NRCGT under TCGA 1992 s.1A applies as a statutory override regardless. For the typical Indian-resident landlord with UK BTL property, the workflow is well-defined but compliance-intensive on both sides.</p>
+<ul>
+<li><strong>Confirm your scenario.</strong> Indian tax resident with UK BTL (Scenario A) or UK resident with Indian rental (Scenario B)? The bilateral mechanics differ on every line.</li>
+<li><strong>Get NRL1 approval before rent withholds.</strong> If you have just become Indian-resident, file NRL1 immediately. Six-week turnaround on the UK side.</li>
+<li><strong>Order a fresh UK TRC each Indian fiscal year.</strong> Without a current TRC, India denies treaty credit under s.90(4).</li>
+<li><strong>File Form 67 with the Indian return, not after.</strong> Rule 128 is forgiving but the safe practice is contemporaneous filing.</li>
+<li><strong>Schedule FA disclosure of every UK property and UK bank account.</strong> Black Money Act penalty is flat, per-asset, per-year.</li>
+<li><strong>For framework context</strong>, see our <a href="/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide">UK tax treaties framework guide</a>; for NRL operational detail, the <a href="/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide">non-resident landlord scheme complete guide</a> and <a href="/blog/non-resident-landlord-tax/nrl-approval-receive-rent-gross-hmrc-guide">NRL1 approval process page</a>; for the expat-landlord descriptive overview, <a href="/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained">UK property income for expats</a>.</li>
+</ul>
+<p>The 1993 treaty does the structural work. The hard part is running two annual compliance cycles five days apart and remembering that the UK personal allowance is a treaty claim, not a default.</p>

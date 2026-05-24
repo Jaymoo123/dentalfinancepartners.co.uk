@@ -92,7 +92,7 @@ faqs:
 <h2>Planning Strategies Before 2027</h2>
 
 <h3>Consider Incorporation</h3>
-<p>The widening gap between individual and corporate tax treatment makes <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation increasingly attractive</a>. Limited companies can still deduct mortgage interest as an expense and face corporation tax rates of 19% (profits up to £250,000) or 25% (above £250,000). For basic rate landlords facing 22% property tax from 2027, incorporation could provide immediate tax savings, especially for highly geared properties.</p>
+<p>The widening gap between individual and corporate tax treatment makes <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation increasingly attractive</a>. Limited companies can still deduct mortgage interest as an expense and face corporation tax rates of 19% (small profits rate, profits up to £50,000) or 25% (main rate, above £250,000), with marginal relief tapering between. For basic rate landlords facing 22% property tax from 2027, incorporation could provide immediate tax savings, especially for highly geared properties.</p>
 
 <h3>Accelerate Capital Expenditure</h3>
 <p>Capital expenses that qualify for immediate tax relief become more valuable when property income faces higher tax rates. Consider bringing forward property improvements, equipment purchases, or other qualifying capital expenditure before April 2027.</p>

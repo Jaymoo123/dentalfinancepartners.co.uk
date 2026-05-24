@@ -35,7 +35,7 @@ faqs:
 <p>Each SPV typically owns one property or a small group of related properties. Many investors create multiple SPVs across their portfolio, with each company ring-fencing specific assets and liabilities. For example, a landlord might establish "Property Investment Co 1 Ltd" to own a Manchester buy-to-let property, and "Property Investment Co 2 Ltd" for a Birmingham rental. Each company operates independently with separate accounts and tax returns.</p>
 
 <h3>SPV Tax Treatment</h3>
-<p>SPVs pay corporation tax on rental profits at 19% (for profits up to £250,000) or 25% (above £250,000). Unlike individual landlords, <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions don't apply</a>, meaning full mortgage interest relief remains available. Capital gains within an SPV are taxed as part of corporation tax at the same rates. There's no separate CGT treatment for companies, which can be advantageous compared to individual rates of 18% and 24%.</p>
+<p>SPVs pay corporation tax on rental profits at 19% (small profits rate, for profits up to £50,000) or 25% (main rate, above £250,000), with marginal relief tapering between. Unlike individual landlords, <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions don't apply</a>, meaning full mortgage interest relief remains available. Capital gains within an SPV are taxed as part of corporation tax at the same rates. There's no separate CGT treatment for companies, which can be advantageous compared to individual rates of 18% and 24%.</p>
 
 <h3>SPV Advantages and Disadvantages</h3>
 <p><strong>Advantages:</strong></p>

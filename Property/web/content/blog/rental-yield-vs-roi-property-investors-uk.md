@@ -75,7 +75,7 @@ faqs:
 <p>For individual landlords, <a href="/blog/section-24-and-tax-relief/rental-income-tax-uk-complete-guide-landlords">rental income tax</a> applies at marginal rates (20%, 40%, or 45%), while mortgage interest relief is capped at 20% under Section 24 restrictions. From April 2027, property income will face separate tax rates of 22% (basic), 42% (higher), and 47% (additional rate), significantly impacting net yield calculations.</p>
 
 <h3>Company Structure Benefits</h3>
-<p>Properties held through limited companies typically achieve better after-tax yields and ROI due to corporation tax rates (19% for profits up to £250k / 25% main rate) being lower than higher-rate individual tax rates. <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Incorporating your property portfolio</a> might improve both metrics, particularly for higher-rate taxpayers with significant portfolios.</p>
+<p>Properties held through limited companies typically achieve better after-tax yields and ROI due to corporation tax rates (19% small profits rate for profits up to £50k / 25% main rate above £250k, with marginal relief between) being lower than higher-rate individual tax rates. <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Incorporating your property portfolio</a> might improve both metrics, particularly for higher-rate taxpayers with significant portfolios.</p>
 
 <h2>Common Calculation Mistakes</h2>
 

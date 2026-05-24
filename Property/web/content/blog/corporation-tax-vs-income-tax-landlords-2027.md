@@ -37,7 +37,7 @@ faqs:
 <li><strong>Additional rate property tax:</strong> 47% (previously 45%)</li>
 </ul>
 
-<p>Meanwhile, corporation tax rates remain unchanged at 19% for profits up to £250,000 and 25% above this threshold. This creates a clear advantage for company ownership, particularly for higher-rate taxpayers.</p>
+<p>Meanwhile, corporation tax rates remain unchanged at 19% small profits rate (profits up to £50,000) and 25% main rate (profits above £250,000), with marginal relief tapering between. This creates a clear advantage for company ownership, particularly for higher-rate taxpayers.</p>
 
 <p>The <strong>19% vs 22% property tax</strong> comparison shows even basic rate landlords save 3 percentage points by incorporating. For a landlord with £30,000 annual rental profit, this represents £900 less tax per year through a company structure.</p>
 

@@ -54,7 +54,7 @@ faqs:
 
 <h2>Alternative Structures to Consider</h2>
 <h3>Simple Limited Company</h3>
-<p>Many landlords find a single <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company</a> provides sufficient tax benefits without the complexity of a holding structure. Corporation tax rates of 19% on profits up to £250,000 often deliver better tax outcomes than personal ownership, particularly with <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a>.</p>
+<p>Many landlords find a single <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company</a> provides sufficient tax benefits without the complexity of a holding structure. Corporation tax rates of 19% small profits rate on profits up to £50,000 (with 25% main rate above £250,000 and marginal relief between) often deliver better tax outcomes than personal ownership, particularly with <a href="/blog/section-24-and-tax-relief/section-24-tax-relief-complete-guide">Section 24 restrictions</a>.</p>
 <h3>Limited Liability Partnership (LLP) or Personal Ownership</h3>
 <p>For joint ventures or family partnerships, an LLP can provide limited liability protection with tax transparency, as profits are taxed on partners personally. Some landlords also prefer to maintain personal ownership while using other tax planning strategies like pension contributions, charitable giving, or careful timing of property disposals.</p>
 

@@ -25,7 +25,7 @@ faqs:
 
 <p>From April 2027, the UK government introduces separate tax rates specifically for property income. This represents the most significant change to landlord taxation in decades and fundamentally alters the <strong>2027 tax rates incorporation decision</strong> for property investors.</p>
 
-<p>The new system means property income will face a 22% basic rate (instead of the current 20%), while corporation tax remains at 19% for profits up to £250,000. For many landlords, this creates a clear tax advantage for holding properties in a limited company structure.</p>
+<p>The new system means property income will face a 22% basic rate (instead of the current 20%), while corporation tax remains at 19% small profits rate (profits up to £50,000) and 25% main rate (profits above £250,000), with marginal relief tapering between. For many landlords, this creates a clear tax advantage for holding properties in a limited company structure.</p>
 
 <h2>The New 2027 Property Tax Rates</h2>
 
@@ -35,7 +35,7 @@ faqs:
 <li><strong>42% higher rate</strong> on property income (replacing 40%)</li>
 <li><strong>47% additional rate</strong> on property income (replacing 45%)</li>
 </ul>
-<p>These rates apply after the personal allowance (£12,570 in 2026/27) and stack on top of your other income. Crucially, these are separate from general income tax rates, which remain at 20%, 40%, and 45% for employment, pensions, and other income sources. Meanwhile, corporation tax rates for 2027/28 are expected to remain at 19% for small profits (up to £250,000) and 25% for profits above this threshold.</p>
+<p>These rates apply after the personal allowance (£12,570 in 2026/27) and stack on top of your other income. Crucially, these are separate from general income tax rates, which remain at 20%, 40%, and 45% for employment, pensions, and other income sources. Meanwhile, corporation tax rates for 2027/28 are expected to remain at 19% small profits rate (profits up to £50,000) and 25% main rate (profits above £250,000), with marginal relief tapering between.</p>
 
 <h2>Incorporation Analysis: Comparing Tax Rates</h2>
 

@@ -72,7 +72,7 @@ faqs:
 </ul>
 <h3>Limited Company Structure:</h3>
 <ul>
-<li><strong>Corporation tax:</strong> £11,400 (19% on profits up to £250,000)</li>
+<li><strong>Corporation tax:</strong> 19% small profits rate on profits up to £50,000, 25% main rate above £250,000, with marginal relief tapering between</li>
 <li><strong>Dividend tax:</strong> Additional personal tax when profits are extracted</li>
 <li><strong>Overall efficiency:</strong> Often 10-15% more tax-efficient for growing portfolios</li>
 </ul>

@@ -89,7 +89,7 @@ faqs:
 </ul>
 
 <h3>Letting Relief</h3>
-<p>If you let out a property that qualifies for Principal Private Residence Relief, you may also claim Letting Relief of up to £40,000. This relief is only available if you shared occupation with tenants or the property was your main residence at some point.</p>
+<p>If you let out a property that qualifies for Principal Private Residence Relief, you may also claim Letting Relief of up to £40,000. Since FA 2020 amended TCGA 1992 s.223B, this relief is only available where the property was your main residence AND you shared occupation with the tenant during the let period (both conditions required). The pre-April-2020 framework, which extended the relief to any property that had ever been your main residence, no longer applies.</p>
 
 <h3>Double Taxation Relief</h3>
 <p>If you're also liable to pay capital gains tax in your country of residence on the same property disposal, you may be able to claim relief under a double taxation treaty. The UK has tax treaties with most countries that prevent double taxation. Typically, you pay the higher of the two tax amounts and claim credit for tax paid in the other jurisdiction. The mechanics of claiming relief vary by country, so you'll likely need advice from tax specialists in both jurisdictions.</p>

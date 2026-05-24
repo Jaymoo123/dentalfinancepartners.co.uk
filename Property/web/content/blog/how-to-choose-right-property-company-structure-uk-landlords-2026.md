@@ -60,7 +60,7 @@ faqs:
 <p><strong>Best for:</strong> Landlords with gross rental income above £50,000, significant mortgage debt, higher-rate taxpayers, or those planning long-term portfolio growth.</p>
 <p><strong>Tax implications:</strong></p>
 <ul>
-<li>Corporation tax at 19% (profits up to £250k) or 25% (above £250k)</li>
+<li>Corporation tax at 19% small profits rate (profits up to £50k) or 25% main rate (above £250k), with marginal relief between</li>
 <li>Full mortgage interest relief against rental income</li>
 <li>Dividend tax at 10.75%, 35.75%, or 39.35% when distributed</li>
 <li>CGT at 18%/24% on company disposals (with potential reliefs)</li>

@@ -20,7 +20,7 @@ faqs:
   - question: "Do property companies need to register for VAT?"
     answer: "Property companies must register for VAT if their taxable income exceeds £85,000 annually. However, most residential lettings are VAT exempt. Companies with commercial properties or those making property sales may need earlier registration."
   - question: "What are the corporation tax rates for property companies in 2026/27?"
-    answer: "Corporation tax rates for 2026/27 are 19% on profits up to £250,000 (small profits rate) and 25% on profits above £250,000 (main rate). Unlike individual landlords, property companies can still claim full mortgage interest relief against rental profits."
+    answer: "Corporation tax rates for 2026/27 are 19% on profits up to £50,000 (small profits rate) and 25% on profits above £250,000 (main rate), with marginal relief tapering between (effective rate around 26.5% in the £50,000-£250,000 band). Unlike individual landlords, property companies can still claim full mortgage interest relief against rental profits."
 ---
 
 <p>Property companies operating in the UK must meet specific <strong>property company accounting requirements</strong> set by HMRC. Whether you're running a single-property SPV or managing a portfolio through a limited company, understanding these obligations is essential for staying compliant and avoiding costly penalties.</p>
@@ -71,9 +71,9 @@ faqs:
 <p>The return must include a detailed breakdown of rental income by property, allowable expenses, and capital allowances claimed.</p>
 <p>For the 2026/27 tax year, corporation tax rates are:</p>
 <ul>
-<li><strong>Small profits rate:</strong> 19% on profits up to £250,000</li>
+<li><strong>Small profits rate:</strong> 19% on profits up to £50,000</li>
 <li><strong>Main rate:</strong> 25% on profits above £250,000</li>
-<li><strong>Marginal relief:</strong> Available between £250,000 and £250,000</li>
+<li><strong>Marginal relief:</strong> tapers the effective rate between £50,000 and £250,000 (around 26.5% in the marginal band)</li>
 </ul>
 <p>Unlike individual landlords affected by Section 24, property companies can still claim full mortgage interest relief against rental profits.</p>
 

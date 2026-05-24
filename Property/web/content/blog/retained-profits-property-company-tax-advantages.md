@@ -14,7 +14,7 @@ summary: "Property companies can retain and reinvest profits at corporation tax 
 schema: ""
 faqs:
   - question: "What tax rate applies to retained profits in a property company?"
-    answer: "Retained profits in property companies are subject to corporation tax at 19% on profits up to £250,000, or 25% on profits above £250,000. No additional personal tax applies until profits are extracted as dividends or salary."
+    answer: "Retained profits in property companies are subject to corporation tax at 19% on profits up to £50,000 (small profits rate), or 25% on profits above £250,000 (main rate), with marginal relief tapering between. No additional personal tax applies until profits are extracted as dividends or salary."
   - question: "Can I reinvest retained profits immediately without tax implications?"
     answer: "Yes, retained profits can be reinvested immediately into property acquisitions, improvements, or other qualifying business purposes without triggering additional tax charges. The corporation tax on the profits has already been paid."
   - question: "How do retained profits affect future mortgage applications?"
@@ -25,7 +25,7 @@ faqs:
 
 <p>One of the most significant advantages of operating through a <strong>retained profits property company</strong> structure is the ability to keep profits within the business and reinvest them at corporation tax rates. This strategy can provide substantial tax savings compared to extracting profits as dividends or salary, particularly for higher and additional rate taxpayers.</p>
 
-<p>When a property company retains profits, they're taxed at corporation tax rates of 19% (on profits up to £250,000) or 25% (on profits above £250,000). This compares favourably to personal tax rates on property income, which will be 22%, 42%, or 47% from April 2027 onwards.</p>
+<p>When a property company retains profits, they're taxed at corporation tax rates of 19% (small profits rate, on profits up to £50,000) or 25% (main rate, on profits above £250,000), with marginal relief tapering between. This compares favourably to personal tax rates on property income, which will be 22%, 42%, or 47% from April 2027 onwards.</p>
 
 <h2>Corporation Tax vs Personal Tax on Property Profits</h2>
 

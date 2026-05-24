@@ -108,7 +108,7 @@ faqs:
 <h2>Incorporation Considerations</h2>
 
 <p>Both strategies may benefit from <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation</a>, particularly given the upcoming property tax rate increases from April 2027.</p>
-<p>Limited companies offer corporation tax rates of 19% (profits up to £250k) or 25% (above £250k), full mortgage interest deductibility, enhanced capital allowances opportunities, and more flexible profit extraction strategies.</p>
+<p>Limited companies offer corporation tax rates of 19% (small profits rate, profits up to £50k) or 25% (main rate, above £250k), with marginal relief tapering between, full mortgage interest deductibility, enhanced capital allowances opportunities, and more flexible profit extraction strategies.</p>
 <p>Serviced accommodation may be more suitable for incorporation due to higher gross profits justifying corporate structure costs, greater capital allowances opportunities, enhanced credibility with commercial lenders, and easier expansion and partnership structures.</p>
 
 <h2>Practical Tax Planning Examples</h2>

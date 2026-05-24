@@ -82,7 +82,7 @@ faqs:
 
 <p>When you buy through a limited company, you always pay the higher rates regardless of whether the company owns other properties. There's no equivalent to the main residence exemption for companies.</p>
 
-<p>However, companies benefit from different tax treatment on rental profits and capital gains, which can offset the higher stamp duty over time. This makes <a href="/incorporation">incorporation</a> worth considering for larger portfolios despite the upfront costs. Companies benefit from corporation tax rates (19% for profits up to £250,000, 25% main rate) and different capital gains tax treatment, which can improve overall tax efficiency for substantial portfolios.</p>
+<p>However, companies benefit from different tax treatment on rental profits and capital gains, which can offset the higher stamp duty over time. This makes <a href="/incorporation">incorporation</a> worth considering for larger portfolios despite the upfront costs. Companies benefit from corporation tax rates (19% small profits rate for profits up to £50,000, 25% main rate above £250,000, with marginal relief between) and different capital gains tax treatment, which can improve overall tax efficiency for substantial portfolios.</p>
 
 <h2>Future Changes to Consider</h2>
 

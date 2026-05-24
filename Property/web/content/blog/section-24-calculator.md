@@ -170,7 +170,7 @@ Mortgage interest (£18,000) × 20% = £3,600 tax credit</p>
 <p>Transfer properties to a spouse in a lower tax band to reduce the overall Section 24 impact. This works best when one spouse has significantly lower income than the other.</p>
 
 <h3>Company Incorporation</h3>
-<p>Moving your property portfolio into a limited company eliminates Section 24 restrictions entirely. <a href="/incorporation">Company incorporation</a> allows full mortgage interest deduction, though it introduces corporation tax (19% for profits up to £250k, 25% main rate) and other considerations. Compare your current tax position with running properties through a limited company structure. This often makes sense for portfolios generating significant profits.</p>
+<p>Moving your property portfolio into a limited company eliminates Section 24 restrictions entirely. <a href="/incorporation">Company incorporation</a> allows full mortgage interest deduction, though it introduces corporation tax (19% small profits rate for profits up to £50k, 25% main rate above £250k, with marginal relief between) and other considerations. Compare your current tax position with running properties through a limited company structure. This often makes sense for portfolios generating significant profits.</p>
 
 <h3>Timing Capital Expenditure</h3>
 <p>Large capital expenses can be timed to reduce rental profits in high-income years, minimising the Section 24 impact when combined with other income sources.</p>

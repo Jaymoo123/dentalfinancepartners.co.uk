@@ -82,7 +82,7 @@ faqs:
 
 <h3>Incorporation and Structure Advice</h3>
 <p>Many Luton landlords consider moving properties into limited companies to mitigate Section 24. However, the decision of when and how to incorporate requires careful analysis of current and projected income, existing mortgage arrangements, and stamp duty implications. Poor timing can result in unnecessary tax charges running into tens of thousands of pounds.</p>
-<p>As portfolios grow, the optimal ownership structure often changes. Specialist accountants can model different scenarios, considering factors like current corporation tax rates (19% for profits up to £250,000 and 25% for profits above this threshold), future property-specific rates from 2027, inheritance planning, and operational flexibility.</p>
+<p>As portfolios grow, the optimal ownership structure often changes. Specialist accountants can model different scenarios, considering factors like current corporation tax rates (19% small profits rate for profits up to £50,000, 25% main rate above £250,000, with marginal relief between), future property-specific rates from 2027, inheritance planning, and operational flexibility.</p>
 
 <h3>Proactive Tax Planning and Portfolio Optimisation</h3>
 <p>Beyond compliance, proactive tax planning can save substantial amounts. This includes timing property disposals to utilise annual CGT exemptions, managing rental income across tax years, and optimising the use of available reliefs and allowances.</p>

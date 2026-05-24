@@ -78,7 +78,7 @@ faqs:
 </ul>
 
 <h2>Incorporation and Cost Considerations</h2>
-<p>Many Plymouth landlords are considering transferring properties into limited companies to avoid Section 24 restrictions. Company profits face corporation tax at 19% (profits up to £250k) or 25% (main rate), often lower than personal tax rates on property income.</p>
+<p>Many Plymouth landlords are considering transferring properties into limited companies to avoid Section 24 restrictions. Company profits face corporation tax at 19% (small profits rate, profits up to £50k) or 25% (main rate, above £250k), with marginal relief between, often lower than personal tax rates on property income.</p>
 <p>However, incorporation involves upfront costs including Stamp Duty Land Tax on property transfers, and creates ongoing compliance obligations. The decision requires careful analysis of individual circumstances and long-term investment plans.</p>
 <p>A <strong>buy-to-let accountant in Plymouth</strong> can model incorporation scenarios, handle the transfer process, and manage ongoing company compliance requirements.</p>
 <p>Professional property accounting services represent an investment in tax efficiency. While costs vary based on portfolio size and complexity, the tax savings typically far exceed professional fees. Consider a Plymouth landlord saving £2,000 annually through better tax planning and legitimate expense claims. Annual accounting fees of £800-£1,200 deliver immediate returns, with additional benefits from reduced HMRC enquiry risk and improved record-keeping. Many <strong>property accountants in Plymouth</strong> offer fixed-fee arrangements, providing cost certainty while ensuring comprehensive tax planning and compliance support.</p>

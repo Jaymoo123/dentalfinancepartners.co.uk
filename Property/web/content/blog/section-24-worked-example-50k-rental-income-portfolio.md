@@ -98,7 +98,7 @@ Final Tax Liability: £20,152 - £4,468 = £15,684</p>
 <h2>Planning Options for High-Income Landlords</h2>
 <p>Landlords facing this level of Section 24 impact often consider several strategies:</p>
 <h3>Limited Company Structure</h3>
-<p>Moving properties to a limited company avoids Section 24 entirely. <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Buy-to-let companies</a> can deduct full mortgage interest and pay corporation tax at 19% (profits up to £250k) or 25% (main rate).</p>
+<p>Moving properties to a limited company avoids Section 24 entirely. <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Buy-to-let companies</a> can deduct full mortgage interest and pay corporation tax at 19% (small profits rate, profits up to £50k) or 25% (main rate, above £250k), with marginal relief tapering between.</p>
 <h3>Pension Contributions</h3>
 <p>Maximising pension contributions can reduce taxable income and push the landlord back into basic rate tax. Annual allowance of £60,000 (2026/27) provides substantial tax relief.</p>
 <h3>Portfolio Restructuring</h3>

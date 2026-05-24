@@ -25,13 +25,13 @@ faqs:
 
 <p>When selling a buy-to-let property in the UK, calculating capital gains tax (CGT) correctly is crucial to avoid overpaying or facing penalties. <strong>CGT selling buy-to-let property</strong> involves several steps and potential deductions that can significantly impact your final tax bill.</p>
 
-<p>This guide walks through the complete process of calculating CGT on your rental property sale, with real examples and current tax rates for 2025/26.</p>
+<p>This guide walks through the complete process of calculating CGT on your rental property sale, with real examples and current tax rates for 2026/27.</p>
 
 <h2>What Is Capital Gains Tax on Buy-to-Let Property?</h2>
 
 <p>Capital gains tax is charged on the profit you make when selling a buy-to-let property. The gain is calculated as the difference between your sale price and your acquisition cost, with various deductions and reliefs potentially reducing the taxable amount.</p>
 
-<p>For the 2025/26 tax year, CGT rates on residential property are:</p>
+<p>For the 2026/27 tax year, CGT rates on residential property are:</p>
 <ul>
 <li><strong>18%</strong> if you're a basic-rate taxpayer</li>
 <li><strong>24%</strong> if you're a higher or additional-rate taxpayer</li>
@@ -66,11 +66,11 @@ faqs:
 <p>Gross capital gain = Sale proceeds - Total allowable costs (acquisition cost + enhancement expenditure).</p>
 <p><strong>CGT calculation example</strong> using figures above:<br>
 £392,000 (sale proceeds) - £259,000 (acquisition cost) - £40,000 (enhancements) = £93,000 gross gain.</p>
-<p>From this gross gain, subtract your annual CGT exemption (£3,000 for 2025/26) and any other applicable reliefs to find your taxable gain.<br>
+<p>From this gross gain, subtract your annual CGT exemption (£3,000 for 2026/27) and any other applicable reliefs to find your taxable gain.<br>
 Taxable gain = £93,000 - £3,000 = £90,000.</p>
 
 <h3>Step 4: Determine Your CGT Rate and Calculate Tax Due</h3>
-<p>Your CGT rate depends on your total income (including the capital gain) for the tax year. For 2025/26:</p>
+<p>Your CGT rate depends on your total income (including the capital gain) for the tax year. For 2026/27:</p>
 <ul>
 <li><strong>Basic-rate threshold:</strong> Up to £50,270 total income</li>
 <li><strong>Higher-rate threshold:</strong> £50,271 and above</li>

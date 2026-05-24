@@ -77,7 +77,7 @@ faqs:
 <p>Many property investors consider incorporating to benefit from corporation tax rates and greater expense flexibility.</p>
 
 <h3>Limited Company Benefits</h3>
-<p>Property companies avoid Section 24 restrictions and can deduct full mortgage interest. Corporation tax rates (19% on profits up to £250,000, 25% above) are often lower than personal income tax rates. Companies also offer greater flexibility for reinvestment and long-term planning.</p>
+<p>Property companies avoid Section 24 restrictions and can deduct full mortgage interest. Corporation tax rates (19% small profits rate on profits up to £50,000, 25% main rate above £250,000, with marginal relief between) are often lower than personal income tax rates. Companies also offer greater flexibility for reinvestment and long-term planning.</p>
 
 <h3>Company Disadvantages</h3>
 <p>Extracting profits creates additional tax charges through dividends or salary. Annual filing requirements and professional fees increase administrative costs. Consider your total tax position, including extraction costs, when evaluating incorporation benefits.</p>

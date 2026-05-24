@@ -85,7 +85,7 @@ faqs:
 
 <p>Section 24 can significantly impact HMO profitability, particularly for higher-rate taxpayers. For example: An HMO generating £30,000 rental income with £18,000 mortgage interest would previously have allowed the landlord to pay tax on £12,000 net income. Under Section 24, they pay tax on the full £30,000 rental income, then receive a 20% tax credit on the £18,000 interest (£3,600 credit).</p>
 
-<p>Many HMO landlords consider <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation</a> to avoid Section 24 restrictions, as companies can still deduct mortgage interest in full. Company ownership can also provide access to corporation tax rates (19% for profits up to £250k, 25% main rate) versus higher personal tax rates, allow profits to be retained for reinvestment, and offer more flexible succession planning. However, incorporation involves additional compliance costs and potential CGT charges on property transfers.</p>
+<p>Many HMO landlords consider <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation</a> to avoid Section 24 restrictions, as companies can still deduct mortgage interest in full. Company ownership can also provide access to corporation tax rates (19% small profits rate, profits up to £50k; 25% main rate, above £250k; marginal relief between) versus higher personal tax rates, allow profits to be retained for reinvestment, and offer more flexible succession planning. However, incorporation involves additional compliance costs and potential CGT charges on property transfers.</p>
 
 <h2>Capital Allowances and VAT Considerations</h2>
 

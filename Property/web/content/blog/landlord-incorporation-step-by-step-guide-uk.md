@@ -27,7 +27,7 @@ faqs:
 <p>The decision to incorporate affects your tax position, financing options, and long-term investment strategy. Understanding each step helps you plan effectively and avoid <a href="/blog/incorporation-and-company-structures/incorporation-cost-calculator-cgt-sdlt-implications">costly</a> mistakes.</p>
 
 <h2>Why Consider Landlord Incorporation</h2>
-<p>Property companies offer several advantages over personal ownership. Corporation tax rates of 19% on profits up to £250,000 (with the main rate at 25% for profits above this) compare favourably to higher rate income tax at 40% or 45%.</p>
+<p>Property companies offer several advantages over personal ownership. Corporation tax rates of 19% on profits up to £50,000 (small profits rate), 25% main rate on profits above £250,000, and marginal relief tapering between, compare favourably to higher rate income tax at 40% or 45%.</p>
 <p>Companies can deduct mortgage interest in full, whereas individual landlords face Section 24 restrictions limiting relief to basic rate tax. A landlord with £200,000 rental income and £80,000 mortgage interest could save thousands annually through incorporation.</p>
 <p>Additional benefits include easier succession planning, potential for tax-efficient extraction of profits, and enhanced credibility with lenders and suppliers.</p>
 

@@ -116,7 +116,7 @@ faqs:
 
 <h3>Administrative and Tax Burden</h3>
 
-<p>Running a property company involves additional compliance requirements including annual accounts, corporation tax returns, and potentially <a href="/services">quarterly management accounts</a> for larger portfolios. You'll need to file annual company accounts and corporation tax returns, consider dividend tax when extracting profits, and plan for potential future changes to corporation tax rates (currently 19% for small profits up to £250k and 25% main rate).</p>
+<p>Running a property company involves additional compliance requirements including annual accounts, corporation tax returns, and potentially <a href="/services">quarterly management accounts</a> for larger portfolios. You'll need to file annual company accounts and corporation tax returns, consider dividend tax when extracting profits, and plan for potential future changes to corporation tax rates (currently 19% for small profits up to £50k and 25% main rate above £250k, with marginal relief between).</p>
 
 <h2>When Transfer Might Not Make Sense</h2>
 

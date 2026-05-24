@@ -126,7 +126,7 @@ faqs:
 
 <h3>Consider SPV Structures</h3>
 
-<p>Property held in a <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited company</a> isn't subject to CGT — it pays corporation tax on capital gains instead. The corporation tax rate is 19% on profits up to £250,000 and 25% on profits above that. While this isn't always beneficial, it can be worth considering for larger portfolios.</p>
+<p>Property held in a <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited company</a> isn't subject to CGT — it pays corporation tax on chargeable gains instead. The corporation tax rate is 19% on profits up to £50,000 (small profits rate) and 25% on profits above £250,000 (main rate), with marginal relief tapering between. While this isn't always beneficial, it can be worth considering for larger portfolios.</p>
 
 <h3>Optimise Private Residence Relief</h3>
 

@@ -62,7 +62,7 @@ faqs:
 <p>Our guide to <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">principal private residence relief for landlords</a> covers this relief in detail.</p>
 
 <h3>Lettings Relief (Now Abolished)</h3>
-<p>Lettings relief, which previously provided up to £40,000 additional relief for former homes that were let out, was abolished for disposals after 6 April 2020. This significantly increased the <strong>tax on property sale landlord</strong> obligations for many investors.</p>
+<p>Lettings Relief was significantly restricted by FA 2020 from 6 April 2020. The pre-2020 framework gave up to £40,000 relief for former-home properties that had been let. The post-2020 rules (TCGA 1992 s.223B as substituted) require shared occupation with the tenant during the let period; in a classic let-after-move-out BTL scenario the relief is no longer available, materially increasing the <strong>tax on property sale landlord</strong> obligations for many investors.</p>
 
 <h3>Using Capital Losses</h3>
 <p>Capital losses from property sales can offset capital gains in the same tax year or be carried forward indefinitely. Losses must be used against gains of the same type (property losses against property gains) before offsetting against other capital gains.</p>
@@ -74,7 +74,7 @@ faqs:
 
 <h2>Special Ownership Structures</h2>
 <h3>Company-Owned Properties</h3>
-<p>If your rental property is owned through a limited company, different rules apply. Companies pay Corporation Tax on capital gains at 19% (profits up to £250,000) or 25% (main rate), rather than CGT.</p>
+<p>If your rental property is owned through a limited company, different rules apply. Companies pay Corporation Tax on chargeable gains at 19% small profits rate (on profits up to £50,000), 25% main rate (on profits above £250,000), with marginal relief tapering between, rather than CGT.</p>
 <p>However, extracting the proceeds from the company may trigger additional tax charges on you personally. Our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">complete guide to BTL limited companies</a> explains these implications in detail.</p>
 <h3>Non-Resident Landlords</h3>
 <p>Non-UK residents selling UK property face the same CGT rates but have different reporting requirements. They must still report within 60 days but may need to consider double taxation treaties and foreign tax credit relief.</p>

@@ -69,7 +69,7 @@ faqs:
 <h2>Strategic Tax Planning for Sunderland Landlords</h2>
 
 <h3>Incorporation Considerations</h3>
-<p>With corporation tax rates of 19% (profits up to £250k) and 25% (main rate) remaining significantly lower than the new property income tax rates, incorporation merits serious consideration for many landlords. However, incorporation isn't suitable for everyone.</p>
+<p>With corporation tax rates of 19% (small profits rate, profits up to £50k) and 25% (main rate, above £250k), with marginal relief between, remaining significantly lower than the new property income tax rates, incorporation merits serious consideration for many landlords. However, incorporation isn't suitable for everyone.</p>
 <p>Key considerations include current and projected rental income levels, personal tax position, capital extraction requirements, long-term investment plans, and stamp duty implications on property transfers. Our detailed guide to <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited companies</a> explores these considerations in depth.</p>
 
 <h3>Capital Gains Tax (CGT) Planning</h3>

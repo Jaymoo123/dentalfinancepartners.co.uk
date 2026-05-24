@@ -65,7 +65,7 @@ faqs:
 <p>A Derby landlord selling a £400,000 property with a £150,000 gain could face £36,000-£60,000 CGT depending on their tax band. Proper planning might reduce this significantly, but requires specialist knowledge of property tax reliefs.</p>
 
 <h2>Incorporating Your Property Portfolio: A Strategic Analysis</h2>
-<p>Many Derby landlords are considering incorporation to escape Section 24 restrictions and benefit from corporation tax rates (19% on profits up to £250,000, 25% above). However, incorporation isn't always beneficial and requires careful analysis.</p>
+<p>Many Derby landlords are considering incorporation to escape Section 24 restrictions and benefit from corporation tax rates (19% small profits rate on profits up to £50,000, 25% main rate above £250,000, with marginal relief between). However, incorporation isn't always beneficial and requires careful analysis.</p>
 <p>For a Derby portfolio generating £80,000 rental profit with £30,000 mortgage costs, the potential savings could be substantial. But you must consider:</p>
 <ul>
 <li><strong>Transfer costs</strong> - stamp duty on properties moving into the company (typically 3%)</li>

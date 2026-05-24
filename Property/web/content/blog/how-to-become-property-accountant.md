@@ -158,7 +158,7 @@ faqs:
 <p>The best option depends on your situation, portfolio size, and long-term plans.</p>
 <ul>
 <li><strong>Small Portfolio Landlords (1-3 properties):</strong> A short practical course combined with good software might suit your needs for basic bookkeeping.</li>
-<li><strong>Growing Portfolio Owners:</strong> Often benefit more from working with specialists than taking courses. Your time is better spent on acquisition and management. Consider whether <a href="/incorporation">company incorporation</a> (with corporation tax at 19% for profits up to £250k or 25% main rate) might be beneficial.</li>
+<li><strong>Growing Portfolio Owners:</strong> Often benefit more from working with specialists than taking courses. Your time is better spent on acquisition and management. Consider whether <a href="/incorporation">company incorporation</a> (with corporation tax at 19% small profits rate for profits up to £50k, 25% main rate above £250k, with marginal relief between) might be beneficial.</li>
 <li><strong>Property Professionals (agents, developers):</strong> Might benefit from formal qualifications to better serve their clients.</li>
 </ul>
 <p>Before committing, clarify your objectives. Consider speaking with a property tax specialist for an initial consultation. For complex situations involving multiple properties, overseas assets, or <a href="/incorporation">company structures</a>, professional advice is typically more cost-effective.</p>

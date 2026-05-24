@@ -117,7 +117,7 @@ faqs:
 <h3>Joint Ownership</h3>
 <p>When property is jointly owned, capital losses are typically split according to ownership percentages. Each owner can use their share of the loss independently against their own capital gains.</p>
 <h3>Company Ownership</h3>
-<p>Properties owned through a <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited company</a> follow different rules. Company capital losses can only be offset against company capital gains, and the corporation tax rates (19% for profits up to £250k, 25% main rate) apply rather than CGT rates.</p>
+<p>Properties owned through a <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited company</a> follow different rules. Company capital losses can only be offset against company capital gains, and the corporation tax rates (19% small profits rate up to £50k, 25% main rate above £250k, with marginal relief between) apply rather than CGT rates.</p>
 <h3>Principal Private Residence</h3>
 <p>If you lived in the property at any point, <a href="/blog/capital-gains-tax/principal-private-residence-relief-landlords">principal private residence relief</a> might apply, which could affect the loss calculation. You cannot claim both the relief and the full loss.</p>
 

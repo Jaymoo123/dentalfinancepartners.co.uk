@@ -56,7 +56,7 @@ faqs:
 
 <h3>Business Structure and Incorporation Advice</h3>
 
-<p>Should you hold properties personally or through a limited company? The answer depends on your income, portfolio size, and long-term plans. A landlord paying 40% income tax on rental profits might benefit from company ownership taxed at 19% (for profits up to £250k) or 25%, while a basic rate taxpayer often doesn't. Professional accountant accounting services provide the analysis you need.</p>
+<p>Should you hold properties personally or through a limited company? The answer depends on your income, portfolio size, and long-term plans. A landlord paying 40% income tax on rental profits might benefit from company ownership taxed at 19% (small profits, up to £50k) or 25% (main rate, above £250k) with marginal relief between, while a basic rate taxpayer often doesn't. Professional accountant accounting services provide the analysis you need.</p>
 
 <h2>When to Engage Professional Services and Assessing Value</h2>
 

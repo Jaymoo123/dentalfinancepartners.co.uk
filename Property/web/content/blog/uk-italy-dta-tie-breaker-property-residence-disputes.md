@@ -50,137 +50,106 @@ reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist
 reviewedAt: "2026-05-22"
 editorialNote: "Bilateral UK-Italy tie-breaker page (Article 4 cascade applied). Differentiator vs the generic Wave 2 tie-breaker page (B8): this page anchors the cascade to the UK-Italy bilateral with explicit treatment of the 2024 Italian residence reform under Legislative Decree 209/2023, Agenzia delle Entrate AIRE practice, and IVIE wealth tax on UK property. Worked example: Marco, Italian national, London work base + Milan family home, resolves under centre-of-vital-interests step to Italian residence."
 ---
-
-The UK-Italy tie-breaker is the Article 4 cascade in the 1988 UK-Italy Double Taxation Convention (in force from 1991, MLI-modified by the 2017 Multilateral Instrument). It fires only after both jurisdictions' domestic residence rules treat the same individual as resident in the same tax year. Most people who think they have a UK-Italy tie-breaker problem do not. They are resident under one set of rules but not the other, in which case the distributive articles apply directly and no cascade is needed.
-
-The reader for this page is the executive with a permanent UK work base and an established Italian family life. The flight schedule is Monday morning London-bound, Thursday evening Milan-bound. The spouse and minor children live in Milan year-round. There is an Italian family home (often inherited or owned long-term) and a UK flat in or near the work base. Both UK SRT and Italian TUIR Article 2 treat the individual as resident under their respective tests. The Article 4 cascade is the formal mechanism that resolves which residence the treaty recognises for the purpose of allocating taxing rights.
-
-This page walks the dual-residence trigger conditions, the 2024 Italian reform that reshaped TUIR Article 2, the OECD-Commentary-informed application of each cascade step, the Agenzia delle Entrate practice on AIRE registration, and a worked Marco example that resolves to Italian residence at the centre-of-vital-interests step. For the OECD treaty framework that sits underneath every UK bilateral, see our [UK tax treaties framework guide](/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide).
-
-## Step one: confirm you are dual-resident
-
-Before applying the cascade, confirm that both domestic residence tests are satisfied.
-
-**UK side: Statutory Residence Test.** The SRT under FA 2013 Sch 45 has three tiers: automatic overseas tests, automatic UK tests, and the sufficient-ties test. A typical UK-Italy executive with significant UK work days (more than 40 days of UK work in the year and a UK workplace) will fail the third automatic overseas test (full-time work abroad) and likely fail several other automatic tests too. They then fall to the sufficient-ties test: UK days plus UK ties (family, accommodation, work, prior UK residence, country tie if applicable) determine UK residence. An executive in London Monday-Thursday plus occasional Friday meetings is typically at 150+ UK days a year with at least three UK ties, putting them clearly in UK-resident territory.
-
-**Italian side: TUIR Article 2 post-2024 reform.** Legislative Decree 209/2023 (in force from 1 January 2024) replaced the pre-2024 trio of triggers with substantive-presence tests. From the 2024 fiscal year onwards, you are Italian-resident if, for more than 183 days of the fiscal year (counting fractions of a day):
-
-- You have your residence (registered residence in the anagrafe, OR de facto residence) in Italy; OR
-- Your domicile (defined post-2024 as the place where the principal personal and family relations are developed) is in Italy; OR
-- You are physically present in Italy.
-
-The 2024 reform de-emphasised anagrafe registration as an automatic trigger (it is now a rebuttable presumption) and brought Italian residence closer to OECD substantive tests. An executive with Italian family and Italian family home, even if frequently in the UK, typically satisfies the domicile criterion (principal family relations in Italy) and so is Italian-resident under TUIR Article 2.
-
-When both UK SRT and Italian TUIR Article 2 say "resident", the Article 4 cascade engages.
-
-## The Article 4 cascade applied to UK-Italy
-
-Article 4(2) of the 1988 UK-Italy treaty mirrors OECD Article 4(2) and sets out a strict order. Apply each step in sequence; stop at the first one that resolves.
-
-**Step 1: Permanent home.** OECD Commentary on Article 4 (paragraph 13) defines a permanent home as any form of home available to the individual on a continuous basis, suitable for permanent use. For the UK-Italy executive with a UK pied-a-terre or company flat and an Italian family home, both qualify as permanent homes. Step 1 does not resolve.
-
-**Step 2: Centre of vital interests.** OECD Commentary paragraph 15 weighs personal relations (family, social, political, cultural) and economic relations (profession, business, source of income). Where personal and economic relations diverge between two states, the Commentary cites the family-based criterion as carrying significant weight: "If a person who has a home in one State sets up a second in the other State while retaining the first, the fact that he retains the first in the environment where he has always lived, where he has worked, and where he has his family and possessions, can, together with other elements, go to demonstrate that he has retained his centre of vital interests in the first State."
-
-For the UK-Italy executive with family in Italy and work in the UK, Step 2 usually resolves to Italy. Family is the dominant factor. Economic ties to the UK are real and substantial but the centre-of-vital-interests test consistently weights personal relations heavily where the divergence is clear.
-
-**Step 3: Habitual abode.** Applies only if Steps 1 and 2 do not resolve. Examines where the individual habitually lives in terms of frequency, duration, and regularity of stays. For most UK-Italy executive cases, Step 3 is not reached because Step 2 resolves.
-
-**Step 4: Nationality.** Applies only if Step 3 cannot resolve (rare in practice). The treaty allocates residence to the nationality state. For an Italian-citizen executive, this would resolve to Italy; for a UK-citizen executive, to the UK. For dual citizens, the cascade falls to Step 5.
-
-**Step 5: Mutual Agreement Procedure.** Article 25 (as MLI-modified) of the 1988 treaty. HMRC and the Agenzia delle Entrate negotiate to agree the treaty residence. Material disputes typically take 18 to 36 months. Available for taxpayers whose facts cannot be resolved through the earlier cascade steps.
-
+<p>The UK-Italy tie-breaker is the Article 4 cascade in the 1988 UK-Italy Double Taxation Convention (in force from 1991, MLI-modified by the 2017 Multilateral Instrument). It fires only after both jurisdictions' domestic residence rules treat the same individual as resident in the same tax year. Most people who think they have a UK-Italy tie-breaker problem do not. They are resident under one set of rules but not the other, in which case the distributive articles apply directly and no cascade is needed.</p>
+<p>The reader for this page is the executive with a permanent UK work base and an established Italian family life. The flight schedule is Monday morning London-bound, Thursday evening Milan-bound. The spouse and minor children live in Milan year-round. There is an Italian family home (often inherited or owned long-term) and a UK flat in or near the work base. Both UK SRT and Italian TUIR Article 2 treat the individual as resident under their respective tests. The Article 4 cascade is the formal mechanism that resolves which residence the treaty recognises for the purpose of allocating taxing rights.</p>
+<p>This page walks the dual-residence trigger conditions, the 2024 Italian reform that reshaped TUIR Article 2, the OECD-Commentary-informed application of each cascade step, the Agenzia delle Entrate practice on AIRE registration, and a worked Marco example that resolves to Italian residence at the centre-of-vital-interests step. For the OECD treaty framework that sits underneath every UK bilateral, see our <a href="/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide">UK tax treaties framework guide</a>.</p>
+<h2>Step one: confirm you are dual-resident</h2>
+<p>Before applying the cascade, confirm that both domestic residence tests are satisfied.</p>
+<p><strong>UK side: Statutory Residence Test.</strong> The SRT under FA 2013 Sch 45 has three tiers: automatic overseas tests, automatic UK tests, and the sufficient-ties test. A typical UK-Italy executive with significant UK work days (more than 40 days of UK work in the year and a UK workplace) will fail the third automatic overseas test (full-time work abroad) and likely fail several other automatic tests too. They then fall to the sufficient-ties test: UK days plus UK ties (family, accommodation, work, prior UK residence, country tie if applicable) determine UK residence. An executive in London Monday-Thursday plus occasional Friday meetings is typically at 150+ UK days a year with at least three UK ties, putting them clearly in UK-resident territory.</p>
+<p><strong>Italian side: TUIR Article 2 post-2024 reform.</strong> Legislative Decree 209/2023 (in force from 1 January 2024) replaced the pre-2024 trio of triggers with substantive-presence tests. From the 2024 fiscal year onwards, you are Italian-resident if, for more than 183 days of the fiscal year (counting fractions of a day):</p>
+<ul>
+<li>You have your residence (registered residence in the anagrafe, OR de facto residence) in Italy; OR</li>
+<li>Your domicile (defined post-2024 as the place where the principal personal and family relations are developed) is in Italy; OR</li>
+<li>You are physically present in Italy.</li>
+</ul>
+<p>The 2024 reform de-emphasised anagrafe registration as an automatic trigger (it is now a rebuttable presumption) and brought Italian residence closer to OECD substantive tests. An executive with Italian family and Italian family home, even if frequently in the UK, typically satisfies the domicile criterion (principal family relations in Italy) and so is Italian-resident under TUIR Article 2.</p>
+<p>When both UK SRT and Italian TUIR Article 2 say "resident", the Article 4 cascade engages.</p>
+<h2>The Article 4 cascade applied to UK-Italy</h2>
+<p>Article 4(2) of the 1988 UK-Italy treaty mirrors OECD Article 4(2) and sets out a strict order. Apply each step in sequence; stop at the first one that resolves.</p>
+<p><strong>Step 1: Permanent home.</strong> OECD Commentary on Article 4 (paragraph 13) defines a permanent home as any form of home available to the individual on a continuous basis, suitable for permanent use. For the UK-Italy executive with a UK pied-a-terre or company flat and an Italian family home, both qualify as permanent homes. Step 1 does not resolve.</p>
+<p><strong>Step 2: Centre of vital interests.</strong> OECD Commentary paragraph 15 weighs personal relations (family, social, political, cultural) and economic relations (profession, business, source of income). Where personal and economic relations diverge between two states, the Commentary cites the family-based criterion as carrying significant weight: "If a person who has a home in one State sets up a second in the other State while retaining the first, the fact that he retains the first in the environment where he has always lived, where he has worked, and where he has his family and possessions, can, together with other elements, go to demonstrate that he has retained his centre of vital interests in the first State."</p>
+<p>For the UK-Italy executive with family in Italy and work in the UK, Step 2 usually resolves to Italy. Family is the dominant factor. Economic ties to the UK are real and substantial but the centre-of-vital-interests test consistently weights personal relations heavily where the divergence is clear.</p>
+<p><strong>Step 3: Habitual abode.</strong> Applies only if Steps 1 and 2 do not resolve. Examines where the individual habitually lives in terms of frequency, duration, and regularity of stays. For most UK-Italy executive cases, Step 3 is not reached because Step 2 resolves.</p>
+<p><strong>Step 4: Nationality.</strong> Applies only if Step 3 cannot resolve (rare in practice). The treaty allocates residence to the nationality state. For an Italian-citizen executive, this would resolve to Italy; for a UK-citizen executive, to the UK. For dual citizens, the cascade falls to Step 5.</p>
+<p><strong>Step 5: Mutual Agreement Procedure.</strong> Article 25 (as MLI-modified) of the 1988 treaty. HMRC and the Agenzia delle Entrate negotiate to agree the treaty residence. Material disputes typically take 18 to 36 months. Available for taxpayers whose facts cannot be resolved through the earlier cascade steps.</p>
 <aside><p>The UK-Italy tie-breaker is one of the more frequently triggered bilateral cascades for UK landlords.</p><p>The split-family executive pattern (UK work base + Italian family home) is structurally common, and the centre-of-vital-interests step frequently resolves to Italy. We help executives and their tax advisers document the cascade application, prepare evidence packs for both HMRC and the Agenzia, and run the IVIE / UK NRL position that follows from an Italian-residence resolution. Get in touch before your first dual-resident tax year ends.</p></aside>
 
-## The Agenzia delle Entrate and AIRE registration
-
-Italian citizens leaving Italy are legally required to register with AIRE (Anagrafe Italiani Residenti all'Estero) through the Italian consulate in their new country of residence. AIRE registration creates the Italian-side evidence that the individual considers themselves resident abroad.
-
-Pre-2024 Agenzia practice frequently used AIRE non-registration as supporting evidence for a continued Italian-residence finding. The argument: if you never told the Italian state you left, you cannot now claim treaty residence elsewhere. This was an aggressive position and led to extensive litigation, particularly against high-net-worth individuals (footballers, executives, entertainers) claiming Monaco or Swiss residence.
-
-Post-2024 reform under Legislative Decree 209/2023, the role of AIRE has been clarified. Non-registration is now a rebuttable presumption rather than an absolute or near-absolute trigger. Substantive evidence (UK employment contract, UK lease or property ownership, UK day-count records, UK utility and bank account records, UK doctor and dentist registration) can rebut the presumption. The cascade still applies normally.
-
-Practical recommendation for the UK-Italy executive: even where the substantive cascade resolves to Italy under Step 2, AIRE registration remains useful because it removes the rebuttable-presumption argument from the Agenzia's hand in any later dispute. The reverse is also true for those who resolve to UK under the cascade: AIRE registration is strong evidence of UK-side residence intent and shifts the Italian-side burden.
-
-## Worked example: Marco the executive
-
-Marco, Italian national, born and raised in Milan. Moved to London in 2018 as managing director of a Milan-headquartered fintech's UK subsidiary. Maintains a long-standing Milan family home (owned for 25 years, formerly with his parents); his wife (Italian national, art curator at a Milan gallery) and two children (aged 11 and 14, both at Milan schools) live in Milan year-round. Marco rents a serviced flat in Canary Wharf (12-month lease, renewed annually) for his UK work base. Travels London Monday morning, Milan Thursday evening; in Milan most weekends and all school holidays.
-
-**UK SRT (2026/27 tax year).**
+<h2>The Agenzia delle Entrate and AIRE registration</h2>
+<p>Italian citizens leaving Italy are legally required to register with AIRE (Anagrafe Italiani Residenti all'Estero) through the Italian consulate in their new country of residence. AIRE registration creates the Italian-side evidence that the individual considers themselves resident abroad.</p>
+<p>Pre-2024 Agenzia practice frequently used AIRE non-registration as supporting evidence for a continued Italian-residence finding. The argument: if you never told the Italian state you left, you cannot now claim treaty residence elsewhere. This was an aggressive position and led to extensive litigation, particularly against high-net-worth individuals (footballers, executives, entertainers) claiming Monaco or Swiss residence.</p>
+<p>Post-2024 reform under Legislative Decree 209/2023, the role of AIRE has been clarified. Non-registration is now a rebuttable presumption rather than an absolute or near-absolute trigger. Substantive evidence (UK employment contract, UK lease or property ownership, UK day-count records, UK utility and bank account records, UK doctor and dentist registration) can rebut the presumption. The cascade still applies normally.</p>
+<p>Practical recommendation for the UK-Italy executive: even where the substantive cascade resolves to Italy under Step 2, AIRE registration remains useful because it removes the rebuttable-presumption argument from the Agenzia's hand in any later dispute. The reverse is also true for those who resolve to UK under the cascade: AIRE registration is strong evidence of UK-side residence intent and shifts the Italian-side burden.</p>
+<h2>Worked example: Marco the executive</h2>
+<p>Marco, Italian national, born and raised in Milan. Moved to London in 2018 as managing director of a Milan-headquartered fintech's UK subsidiary. Maintains a long-standing Milan family home (owned for 25 years, formerly with his parents); his wife (Italian national, art curator at a Milan gallery) and two children (aged 11 and 14, both at Milan schools) live in Milan year-round. Marco rents a serviced flat in Canary Wharf (12-month lease, renewed annually) for his UK work base. Travels London Monday morning, Milan Thursday evening; in Milan most weekends and all school holidays.</p>
+<p><strong>UK SRT (2026/27 tax year).</strong>
 - UK days: approx 165 (Mon-Thu × 50 weeks minus holidays and travel days, plus occasional Fri meetings).
 - Third automatic overseas test (full-time work abroad): fails (Marco's full-time work is in the UK).
 - Automatic UK test: 183-day test fails (165 days). Sufficient-ties test applies.
-- UK ties: accommodation tie (yes, Canary Wharf flat), work tie (yes, full-time UK work), 90-day tie (yes, prior years > 90 UK days), family tie (no, family is in Italy), country tie (n/a as Italian national arriving). Three ties.
-- Sufficient-ties test for arrivers with 3 ties: UK-resident if more than 90 days. Marco is at 165 days. UK-resident.
-
-**Italian residence (TUIR Article 2 post-2024).**
+- UK ties: accommodation tie (yes, Canary Wharf flat), work tie (yes, full-time UK work), 90-day tie (yes, prior years &gt; 90 UK days), family tie (no, family is in Italy), country tie (n/a as Italian national arriving). Three ties.
+- Sufficient-ties test for arrivers with 3 ties: UK-resident if more than 90 days. Marco is at 165 days. UK-resident.</p>
+<p><strong>Italian residence (TUIR Article 2 post-2024).</strong>
 - Domicile (place of principal family relations): Milan. Family and children live there year-round, primary family home in Milan. Triggered.
-- Italian-resident under domestic law.
-
-**Both jurisdictions treat Marco as resident. The Article 4 cascade engages.**
-
-**Step 1, permanent home.** Marco has a permanent home in both the Canary Wharf serviced flat (continuously available throughout the year, fully furnished) and the Milan family home (his primary family residence). Both qualify under OECD Commentary paragraph 13. Step 1 does not resolve.
-
-**Step 2, centre of vital interests.** Personal relations: wife and minor children in Milan; long-standing family home in Milan; social network primarily Italian; extended family in Italy. Economic relations: full-time UK work, UK employment income, UK pension contributions, UK private healthcare. The personal-relations side is strongly Italian; the economic-relations side is UK. Per OECD Commentary paragraph 15, the family centrality criterion dominates where the divergence is clear. Marco's centre of vital interests is Italy. Step 2 resolves.
-
-Marco is treaty-resident in Italy under the 1988 UK-Italy treaty.
-
-**Consequences for Marco's UK property position.**
+- Italian-resident under domestic law.</p>
+<p><strong>Both jurisdictions treat Marco as resident. The Article 4 cascade engages.</strong></p>
+<p><strong>Step 1, permanent home.</strong> Marco has a permanent home in both the Canary Wharf serviced flat (continuously available throughout the year, fully furnished) and the Milan family home (his primary family residence). Both qualify under OECD Commentary paragraph 13. Step 1 does not resolve.</p>
+<p><strong>Step 2, centre of vital interests.</strong> Personal relations: wife and minor children in Milan; long-standing family home in Milan; social network primarily Italian; extended family in Italy. Economic relations: full-time UK work, UK employment income, UK pension contributions, UK private healthcare. The personal-relations side is strongly Italian; the economic-relations side is UK. Per OECD Commentary paragraph 15, the family centrality criterion dominates where the divergence is clear. Marco's centre of vital interests is Italy. Step 2 resolves.</p>
+<p>Marco is treaty-resident in Italy under the 1988 UK-Italy treaty.</p>
+<p><strong>Consequences for Marco's UK property position.</strong>
 - UK employment income: under Article 15 of the treaty, taxable in the UK as state of employment.
-- UK rental income (Marco's serviced flat is short-let for the weeks he is away, say 8 weeks a year via a short-let agency, generating £6,400 net): UK-taxable under Article 6 (situs state). The NRL scheme statutorily applies because Marco is now treaty-non-UK-resident; file NRL1 immediately. See our [non-resident landlord scheme complete guide](/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide).
-- UK CGT on any disposal: NRCGT under TCGA 1992 s.1A applies. 60-day return required. See our [non-resident CGT rates page](/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting).
+- UK rental income (Marco's serviced flat is short-let for the weeks he is away, say 8 weeks a year via a short-let agency, generating £6,400 net): UK-taxable under Article 6 (situs state). The NRL scheme statutorily applies because Marco is now treaty-non-UK-resident; file NRL1 immediately. See our <a href="/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide">non-resident landlord scheme complete guide</a>.
+- UK CGT on any disposal: NRCGT under TCGA 1992 s.1A applies. 60-day return required. See our <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">non-resident CGT rates page</a>.
 - Italian IRPEF on worldwide income: Marco declares UK employment and UK rental on his Italian Modello Redditi PF return. Credits UK income tax and UK NRL withholding under Article 24 (credit method).
-- IVIE on UK property: IVIE applies only to foreign immovable property that the Italian resident owns. Marco's serviced flat is rented, so no IVIE on the work flat. Assume Marco also inherited a flat in Lewisham (worth £320,000) from his grandmother; IVIE on the Lewisham flat is 0.76% × £320,000 = £2,432 a year, payable to the Italian tax authorities through the Modello Redditi PF.
-
-**UK Self Assessment for Marco:** Marco files SA100 + SA102 (UK employment) + SA105 (UK property if owned) + SA109 (residence pages, ticked dual-resident, indicating Italy as treaty residence). HS302 sets out the helpsheet detail.
-
-**Italian return for Marco:** Modello Redditi PF, declaring worldwide income with UK foreign tax credit, plus IVIE on any UK-owned property.
-
-**Net cost insight.** The tie-breaker resolution to Italy does not reduce Marco's UK tax on UK-source income (UK employment is still UK-taxable; UK rental is still UK-taxable under Article 6). It changes the Italian tax exposure (Marco is now taxed in Italy on worldwide income, not just Italian source) and brings IVIE into the picture for any UK property he owns. The cross-border tax cost typically rises after the tie-breaker resolution, not falls. The point of the tie-breaker is correctness, not optimisation.
-
-## Compliance: HS302, SA109, Italian Modello Redditi PF
-
-The UK side of the dual-resident claim:
-
-- **SA109 (residence pages)** of Self Assessment, ticking the dual-resident box and indicating the other state.
-- **HS302 (Dual residents)** helpsheet for the supporting analysis.
-- **HMRC INTM154020** for the technical framework.
-- **Evidence pack:** UK SRT day count, UK ties analysis, Italian TUIR Article 2 analysis, Article 4 cascade application showing which step resolves, supporting documents (employment contracts, leases, family addresses, school records, utility bills, AIRE registration if applicable).
-- **NRL1** for any UK property income (separate process; statutory under FA 1995 Sch 23).
-
-The Italian side:
-
-- **Modello Redditi PF** with the treaty claim made in the relevant Quadro.
-- **AIRE registration** through the Italian consulate (legally required for Italian citizens treaty-resident elsewhere; strongly recommended evidentially even where outcome is Italian residence under cascade).
-- **IVIE return** for any foreign immovable property owned (Quadro RW of Modello Redditi PF).
-
-## Common traps for UK-Italy tie-breaker cases
-
-Five traps catch UK-Italy tie-breaker cases most often:
-
-1. **Assuming UK SRT alone resolves residence.** It does not. The SRT determines UK domestic residence; the treaty cascade determines treaty residence. A person can be UK-resident under SRT and treaty-resident in Italy under Article 4; both positions are correct simultaneously.
-
-2. **Confusing the centre-of-vital-interests test with day counting.** Days are an input to habitual abode (Step 3), not centre of vital interests (Step 2). Vital interests is qualitative: family, social, professional, cultural. An executive with 200+ UK days and family in Italy can still have their centre of vital interests in Italy.
-
-3. **Failing AIRE registration.** Italian citizens treaty-resident outside Italy who do not register with AIRE leave themselves vulnerable to the Agenzia's residual presumption. Registration is the strongest evidential anchor.
-
-4. **Missing the 2024 TUIR reform.** Pre-2024 Italian-residence analysis relied heavily on anagrafe registration as an automatic trigger; post-1-January-2024 analysis uses substantive-presence tests. Advisers running historic UK-Italy frameworks against post-2024 facts will mis-classify.
-
-5. **Ignoring IVIE on UK property.** Italian-resident-under-tie-breaker individuals with UK property face a 0.76% annual IVIE charge that has no UK equivalent to credit. For portfolio-scale UK property holdings, this is a material annual line that the treaty does not mediate.
-
-## What to do next
-
-The UK-Italy tie-breaker is the cleanest example in the UK treaty network of a cascade that frequently resolves to a counterintuitive outcome: executives who consider themselves UK-resident under everyday usage routinely resolve to Italian residence under Article 4. The 2024 Italian reform aligns the domestic test more closely with OECD principles, reducing some of the historic over-reach, but does not eliminate the tie-breaker requirement.
-
-- **Run both domestic tests first.** UK SRT under FA 2013 Sch 45 and Italian TUIR Article 2 post-2024 reform. If only one says resident, no cascade is needed.
-- **Apply the cascade in strict order.** Permanent home, then centre of vital interests, then habitual abode, then nationality, then MAP. Stop at the first step that resolves.
-- **Document the centre-of-vital-interests analysis.** OECD Commentary paragraph 15 is the authority; family centrality is the dominant criterion where personal and economic relations diverge.
-- **Register with AIRE** if you are Italian-citizen and the cascade resolves you outside Italy. Even where the outcome is Italian residence, AIRE registration as evidential anchor is recommended.
-- **File NRL1 promptly** if the cascade resolves to Italian residence and you own UK rental property.
-- **Model IVIE on UK property** before committing to the cascade outcome. 0.76% on UK market value is a material annual line for portfolio holdings.
-- **For framework context**, see our [UK tax treaties framework guide](/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide); for descriptive expat-landlord scope, [UK property income for expats](/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained). For the operational outcome on the UK rental side once the cascade resolves to Italian residence, the [non-resident landlord scheme complete guide](/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide) and [non-resident CGT rates page](/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting).
-
-The tie-breaker is a cascade of definitions, not a contest of intuition. Apply each step in order, document the resolving step with OECD-Commentary-backed reasoning, register the position on SA109 and the Italian Modello Redditi PF, and accept that the answer may surprise you. The cascade is built to resolve correctly, not flatteringly.
-
-## Related reading
-
-- [SRT Statutory Residence Test: A Decision Tree for Landlords](/blog/non-resident-landlord-tax/srt-statutory-residence-test-landlord-decision-tree), the upstream UK-side residence test that feeds the dual-residence question this cascade resolves.
+- IVIE on UK property: IVIE applies only to foreign immovable property that the Italian resident owns. Marco's serviced flat is rented, so no IVIE on the work flat. Assume Marco also inherited a flat in Lewisham (worth £320,000) from his grandmother; IVIE on the Lewisham flat is 0.76% × £320,000 = £2,432 a year, payable to the Italian tax authorities through the Modello Redditi PF.</p>
+<p><strong>UK Self Assessment for Marco:</strong> Marco files SA100 + SA102 (UK employment) + SA105 (UK property if owned) + SA109 (residence pages, ticked dual-resident, indicating Italy as treaty residence). HS302 sets out the helpsheet detail.</p>
+<p><strong>Italian return for Marco:</strong> Modello Redditi PF, declaring worldwide income with UK foreign tax credit, plus IVIE on any UK-owned property.</p>
+<p><strong>Net cost insight.</strong> The tie-breaker resolution to Italy does not reduce Marco's UK tax on UK-source income (UK employment is still UK-taxable; UK rental is still UK-taxable under Article 6). It changes the Italian tax exposure (Marco is now taxed in Italy on worldwide income, not just Italian source) and brings IVIE into the picture for any UK property he owns. The cross-border tax cost typically rises after the tie-breaker resolution, not falls. The point of the tie-breaker is correctness, not optimisation.</p>
+<h2>Compliance: HS302, SA109, Italian Modello Redditi PF</h2>
+<p>The UK side of the dual-resident claim:</p>
+<ul>
+<li><strong>SA109 (residence pages)</strong> of Self Assessment, ticking the dual-resident box and indicating the other state.</li>
+<li><strong>HS302 (Dual residents)</strong> helpsheet for the supporting analysis.</li>
+<li><strong>HMRC INTM154020</strong> for the technical framework.</li>
+<li><strong>Evidence pack:</strong> UK SRT day count, UK ties analysis, Italian TUIR Article 2 analysis, Article 4 cascade application showing which step resolves, supporting documents (employment contracts, leases, family addresses, school records, utility bills, AIRE registration if applicable).</li>
+<li><strong>NRL1</strong> for any UK property income (separate process; statutory under FA 1995 Sch 23).</li>
+</ul>
+<p>The Italian side:</p>
+<ul>
+<li><strong>Modello Redditi PF</strong> with the treaty claim made in the relevant Quadro.</li>
+<li><strong>AIRE registration</strong> through the Italian consulate (legally required for Italian citizens treaty-resident elsewhere; strongly recommended evidentially even where outcome is Italian residence under cascade).</li>
+<li><strong>IVIE return</strong> for any foreign immovable property owned (Quadro RW of Modello Redditi PF).</li>
+</ul>
+<h2>Common traps for UK-Italy tie-breaker cases</h2>
+<p>Five traps catch UK-Italy tie-breaker cases most often:</p>
+<ol>
+<li>
+<p><strong>Assuming UK SRT alone resolves residence.</strong> It does not. The SRT determines UK domestic residence; the treaty cascade determines treaty residence. A person can be UK-resident under SRT and treaty-resident in Italy under Article 4; both positions are correct simultaneously.</p>
+</li>
+<li>
+<p><strong>Confusing the centre-of-vital-interests test with day counting.</strong> Days are an input to habitual abode (Step 3), not centre of vital interests (Step 2). Vital interests is qualitative: family, social, professional, cultural. An executive with 200+ UK days and family in Italy can still have their centre of vital interests in Italy.</p>
+</li>
+<li>
+<p><strong>Failing AIRE registration.</strong> Italian citizens treaty-resident outside Italy who do not register with AIRE leave themselves vulnerable to the Agenzia's residual presumption. Registration is the strongest evidential anchor.</p>
+</li>
+<li>
+<p><strong>Missing the 2024 TUIR reform.</strong> Pre-2024 Italian-residence analysis relied heavily on anagrafe registration as an automatic trigger; post-1-January-2024 analysis uses substantive-presence tests. Advisers running historic UK-Italy frameworks against post-2024 facts will mis-classify.</p>
+</li>
+<li>
+<p><strong>Ignoring IVIE on UK property.</strong> Italian-resident-under-tie-breaker individuals with UK property face a 0.76% annual IVIE charge that has no UK equivalent to credit. For portfolio-scale UK property holdings, this is a material annual line that the treaty does not mediate.</p>
+</li>
+</ol>
+<h2>What to do next</h2>
+<p>The UK-Italy tie-breaker is the cleanest example in the UK treaty network of a cascade that frequently resolves to a counterintuitive outcome: executives who consider themselves UK-resident under everyday usage routinely resolve to Italian residence under Article 4. The 2024 Italian reform aligns the domestic test more closely with OECD principles, reducing some of the historic over-reach, but does not eliminate the tie-breaker requirement.</p>
+<ul>
+<li><strong>Run both domestic tests first.</strong> UK SRT under FA 2013 Sch 45 and Italian TUIR Article 2 post-2024 reform. If only one says resident, no cascade is needed.</li>
+<li><strong>Apply the cascade in strict order.</strong> Permanent home, then centre of vital interests, then habitual abode, then nationality, then MAP. Stop at the first step that resolves.</li>
+<li><strong>Document the centre-of-vital-interests analysis.</strong> OECD Commentary paragraph 15 is the authority; family centrality is the dominant criterion where personal and economic relations diverge.</li>
+<li><strong>Register with AIRE</strong> if you are Italian-citizen and the cascade resolves you outside Italy. Even where the outcome is Italian residence, AIRE registration as evidential anchor is recommended.</li>
+<li><strong>File NRL1 promptly</strong> if the cascade resolves to Italian residence and you own UK rental property.</li>
+<li><strong>Model IVIE on UK property</strong> before committing to the cascade outcome. 0.76% on UK market value is a material annual line for portfolio holdings.</li>
+<li><strong>For framework context</strong>, see our <a href="/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide">UK tax treaties framework guide</a>; for descriptive expat-landlord scope, <a href="/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained">UK property income for expats</a>. For the operational outcome on the UK rental side once the cascade resolves to Italian residence, the <a href="/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide">non-resident landlord scheme complete guide</a> and <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">non-resident CGT rates page</a>.</li>
+</ul>
+<p>The tie-breaker is a cascade of definitions, not a contest of intuition. Apply each step in order, document the resolving step with OECD-Commentary-backed reasoning, register the position on SA109 and the Italian Modello Redditi PF, and accept that the answer may surprise you. The cascade is built to resolve correctly, not flatteringly.</p>
+<h2>Related reading</h2>
+<ul>
+<li><a href="/blog/non-resident-landlord-tax/srt-statutory-residence-test-landlord-decision-tree">SRT Statutory Residence Test: A Decision Tree for Landlords</a>, the upstream UK-side residence test that feeds the dual-residence question this cascade resolves.</li>
+</ul>

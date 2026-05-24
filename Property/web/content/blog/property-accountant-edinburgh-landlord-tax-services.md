@@ -82,7 +82,7 @@ faqs:
 <li>Section 24 mortgage interest restriction calculations</li>
 <li>Property development vs investment distinction</li>
 <li>HMO and student property accounting</li>
-<li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Limited company incorporation analysis</a> (corporation tax: 19% on profits up to £250k, 25% main rate)</li>
+<li><a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">Limited company incorporation analysis</a> (corporation tax: 19% small profits rate on profits up to £50k, 25% main rate above £250k, with marginal relief between)</li>
 <li>Portfolio restructuring and exit strategy planning</li>
 </ul>
 

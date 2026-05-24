@@ -45,15 +45,16 @@ faqs:
 <p>The rules around capital gains tax can significantly impact your net proceeds from a property sale. Getting the calculations wrong or missing available reliefs could cost thousands in unnecessary tax.</p>
 
 <h2>CGT Rates and Annual Exempt Amount for 2026</h2>
-<p>For the 2025/26 tax year, the capital gains tax rates on residential property disposals are:</p>
+<p>For the 2026/27 tax year, the capital gains tax rates on residential property disposals are:</p>
 <ul>
 <li><strong>18%</strong> for basic rate taxpayers</li>
 <li><strong>24%</strong> for higher and additional rate taxpayers</li>
 </ul>
 <p>These are the definitive rates for property sales completing in the 2026 tax year. They apply to the taxable gain, which is calculated after deducting your annual exempt amount and all allowable costs. Your income tax band for CGT purposes is determined by adding the taxable gain to your other taxable income (like salary or rental profits) for the year.</p>
-<p><strong>Example:</strong> A landlord with a £35,000 salary makes a £60,000 property gain. The personal allowance and basic rate band for 2025/26 mean they would pay 18% CGT on the first portion of the gain that falls within the remaining basic rate band, and 24% on the portion that pushes them into the higher rate band.</p>
+<p><strong>Example:</strong> A landlord with a £35,000 salary makes a £60,000 property gain. The personal allowance and basic rate band for 2026/27 mean they would pay 18% CGT on the first portion of the gain that falls within the remaining basic rate band, and 24% on the portion that pushes them into the higher rate band.</p>
 <p>The annual exempt amount for capital gains tax continues its significant reduction:</p>
 <ul>
+<li><strong>2026/27:</strong> £3,000</li>
 <li><strong>2025/26:</strong> £3,000</li>
 <li><strong>2024/25:</strong> £3,000</li>
 <li><strong>2023/24:</strong> £6,000</li>
@@ -96,7 +97,7 @@ faqs:
 <p>Given the complexity and potential costs involved, consider seeking specialist advice. Our <a href="/services">services</a> include CGT planning and compliance support for property investors. The interaction between various reliefs, timing considerations, and structural options means professional guidance often saves more than it costs.</p>
 
 <h2>Company vs Personal Ownership</h2>
-<p>Properties held in companies face <a href="/blog/incorporation-and-company-structures/accountant-corporation-tax-property-companies">corporation tax on gains</a>, not CGT. For 2025/26, corporation tax rates are:</p>
+<p>Properties held in companies face <a href="/blog/incorporation-and-company-structures/accountant-corporation-tax-property-companies">corporation tax on chargeable gains</a>, not CGT. For 2026/27, corporation tax rates are:</p>
 <ul>
 <li><strong>19%</strong> on profits up to £50,000</li>
 <li><strong>25%</strong> on profits over £250,000</li>

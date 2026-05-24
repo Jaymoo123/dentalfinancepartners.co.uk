@@ -43,7 +43,7 @@ faqs:
 
 <p>Personal ownership means rental profits are subject to income tax (20%, 40%, or 45% currently, rising to 22%, 42%, or 47% from April 2027). You'll also face Section 24 restrictions on mortgage interest relief, capping tax relief at the basic rate.</p>
 
-<p>Company ownership means profits are subject to corporation tax (19% on profits up to £250,000, then 25%). Companies aren't affected by Section 24, so full mortgage interest remains deductible. However, extracting profits through dividends or salary creates additional tax layers.</p>
+<p>Company ownership means profits are subject to corporation tax (19% small profits rate on profits up to £50,000, then 25% main rate above £250,000, with marginal relief tapering between). Companies aren't affected by Section 24, so full mortgage interest remains deductible. However, extracting profits through dividends or salary creates additional tax layers.</p>
 
 <p>Our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">complete guide to BTL limited companies</a> explores this decision in detail, but most first-time landlords benefit from professional advice given the complexity and long-term implications. Effective tax planning should consider incorporation timing and planning as your portfolio grows.</p>
 

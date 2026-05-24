@@ -29,7 +29,7 @@ faqs:
 
 <h2>When Does Incorporation Make Financial Sense?</h2>
 <p>Incorporation is typically worth considering if you have a growing portfolio and are a higher-rate or additional-rate taxpayer. The key driver is Section 24, which means you cannot deduct your mortgage interest costs from rental income as an expense. Instead, you receive a basic rate tax credit (20%). For higher-rate (40%) and additional-rate (45%) taxpayers, this creates a significant tax drag.</p>
-<p>By contrast, a limited company pays corporation tax at 19% (small profits rate, up to £250k profit) or 25% (main rate, above £250k). The company can deduct the full mortgage interest as a business expense. Over time, this difference can be substantial.</p>
+<p>By contrast, a limited company pays corporation tax at 19% (small profits rate, up to £50k profit) or 25% (main rate, above £250k), with marginal relief tapering between. The company can deduct the full mortgage interest as a business expense. Over time, this difference can be substantial.</p>
 <p>However, incorporation is not for everyone. If you have a small portfolio with low mortgage debt, the upfront costs may outweigh the long-term savings. You also lose access to the £3,000 annual CGT exempt amount on disposals from the company, and extracting profits from the company (via dividends or salary) incurs further tax.</p>
 <p>A good rule of thumb: if your rental profits are over £20,000 per year and you are a higher-rate taxpayer, incorporation is worth modelling. For smaller portfolios, the costs often do not stack up.</p>
 

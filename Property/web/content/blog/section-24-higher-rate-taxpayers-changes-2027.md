@@ -79,8 +79,9 @@ faqs:
 <p>The new property tax rates make <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let limited company structures</a> more attractive for higher rate taxpayers.</p>
 <p>Corporation tax rates remain unchanged:</p>
 <ul>
-<li>Small profits rate: 19% (profits up to £250,000)</li>
+<li>Small profits rate: 19% (profits up to £50,000)</li>
 <li>Main rate: 25% (profits above £250,000)</li>
+<li>Marginal relief: tapers the effective rate between £50,000 and £250,000 (around 26.5% in the marginal band)</li>
 </ul>
 <p>A higher rate landlord facing 42% property tax could potentially save 17-23 percentage points by incorporating, though this depends on extraction strategies and dividend tax implications.</p>
 <h3>Incorporation Considerations</h3>

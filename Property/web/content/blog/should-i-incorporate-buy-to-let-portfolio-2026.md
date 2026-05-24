@@ -33,7 +33,7 @@ faqs:
 
 <p>Currently, rental income is taxed alongside other income at 20%, 40%, and 45%. But from April 2027, property income specifically will face rates of 22%, 42%, and 47%. This means a higher rate taxpayer with £30,000 rental profit will pay £12,600 in tax (42%) instead of £12,000 (40%) under current rules.</p>
 
-<p>Companies, however, continue to benefit from corporation tax rates of 19% on profits up to £250,000 and 25% above this threshold. The tax differential between personal ownership and company ownership is widening significantly.</p>
+<p>Companies, however, continue to benefit from corporation tax rates of 19% small profits rate (profits up to £50,000) and 25% main rate (profits above £250,000), with marginal relief tapering between. The tax differential between personal ownership and company ownership is widening significantly.</p>
 
 <h2>Incorporation vs Personal Ownership: Complete Comparison</h2>
 

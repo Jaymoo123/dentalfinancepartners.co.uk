@@ -66,7 +66,7 @@ faqs:
 <p>Section 24 has prompted many Exeter investors to consider <a href="/incorporation">incorporation into limited companies</a>. Many investors are reviewing their structures now to determine whether incorporation before the April 2027 tax changes might be beneficial. However, this decision requires careful analysis of individual circumstances and involves complex calculations around:</p>
 <ul>
 <li>Stamp Duty Land Tax on property transfers</li>
-<li>Corporation tax (at 19% for profits up to £250k or 25% main rate) versus personal tax rates</li>
+<li>Corporation tax (at 19% small profits rate, profits up to £50k; 25% main rate, above £250k; marginal relief between) versus personal tax rates</li>
 <li>Dividend extraction strategies</li>
 <li>Capital gains tax on eventual property disposals</li>
 </ul>

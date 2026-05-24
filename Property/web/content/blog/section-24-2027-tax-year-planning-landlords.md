@@ -56,7 +56,7 @@ faqs:
 <p>A higher rate landlord spending £10,000 on property improvements saves £4,000 in tax in 2026/27 versus £4,200 from 2027/28. While only £200 difference per £10,000 spent, the savings add up across multiple properties.</p>
 <h3>Incorporation Timing</h3>
 <p>The 2027 changes make incorporation more attractive, but timing matters. Incorporating before April 2027 allows property transfers at current CGT rates and establishes the company structure before higher property income tax rates apply.</p>
-<p>Limited companies continue paying corporation tax at 19% (profits up to £250k) or 25% (main rate) on property profits. Section 24 doesn't apply to companies, making them increasingly attractive for leveraged portfolios.</p>
+<p>Limited companies continue paying corporation tax at 19% (small profits rate, profits up to £50k) or 25% (main rate, above £250k), with marginal relief tapering between, on property profits. Section 24 doesn't apply to companies, making them increasingly attractive for leveraged portfolios.</p>
 <p>However, incorporation involves costs and complexity. A <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">specialist property accountant</a> can model whether incorporation saves tax in your specific circumstances.</p>
 
 <h2>Planning Considerations by Portfolio Size</h2>

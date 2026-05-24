@@ -101,7 +101,7 @@ faqs:
 <h2>Mortgage Interest Relief and Property Companies</h2>
 
 <p>One key advantage of holding rental properties through a limited company is that <strong>Section 24 restrictions do not apply to companies</strong>. Corporate landlords can still deduct mortgage interest as a full business expense against rental income.</p>
-<p>This creates a significant tax advantage for company structures, particularly for higher-rate taxpaying landlords with substantial mortgage costs. However, <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation involves other considerations</a> including corporation tax (19% on profits up to £250k / 25% main rate), dividend tax, and stamp duty costs on property transfers.</p>
+<p>This creates a significant tax advantage for company structures, particularly for higher-rate taxpaying landlords with substantial mortgage costs. However, <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation involves other considerations</a> including corporation tax (19% small profits rate on profits up to £50k / 25% main rate above £250k, with marginal relief between), dividend tax, and stamp duty costs on property transfers.</p>
 <p>The Section 24 restriction represents a permanent change to the UK tax system for individual landlords. With property income tax rates increasing from April 2027, the gap between mortgage costs and available relief will widen further. This trend continues to make company structures more attractive for landlords with significant mortgage costs, particularly those paying higher rates of tax on their total income.</p>
 
 <h2>Strategies to Manage the Mortgage Interest Restriction</h2>

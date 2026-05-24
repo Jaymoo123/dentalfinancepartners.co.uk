@@ -18,7 +18,7 @@ faqs:
   - question: "Is it better to incorporate before or after the 2027 tax rate changes?"
     answer: "Incorporating before 2027 means paying CGT at current rates but benefiting from lower corporation tax immediately. However, you need to weigh the upfront CGT cost against future tax savings. The optimal timing depends on your portfolio's unrealised gains, current income levels, and expansion plans."
   - question: "Do the new 2027 property tax rates apply to companies?"
-    answer: "No, the new property income tax rates (22%/42%/47%) only apply to individuals. Companies continue to pay corporation tax at 19% (small profits up to £250k) or 25% (profits above £250k) on rental income, making corporate ownership potentially more tax-efficient from 2027."
+    answer: "No, the new property income tax rates (22%/42%/47%) only apply to individuals. Companies continue to pay corporation tax at 19% (small profits, up to £50,000) or 25% (main rate, above £250,000), with marginal relief between, making corporate ownership potentially more tax-efficient from 2027."
   - question: "Can I incorporate just some of my rental properties before 2027?"
     answer: "Yes, partial incorporation is possible. You can choose to incorporate only certain properties - perhaps those with lower CGT liability or higher rental yields. This allows you to benefit from corporate tax rates on some income while avoiding CGT on properties you keep in personal ownership."
 ---
@@ -36,7 +36,7 @@ faqs:
 <li><strong>47% additional rate</strong> (currently 45% general income tax rate)</li>
 </ul>
 <p>These rates apply to rental income after allowable deductions but before Section 24 restrictions on mortgage interest relief. The personal allowance (£12,570 in 2026/27) still applies to total income, including property income.</p>
-<p>Meanwhile, corporation tax rates remain at 19% for small profits (up to £250,000) and 25% for profits above £250,000. This creates a clearer tax differential than ever before.</p>
+<p>Meanwhile, corporation tax rates remain at 19% small profits rate (profits up to £50,000) and 25% main rate (profits above £250,000), with marginal relief tapering between. This creates a clearer tax differential than ever before.</p>
 
 <h2>How the 2027 Rates Change the Incorporation Decision</h2>
 <p>The <strong>22% basic rate vs corporation tax</strong> comparison now favours corporate ownership even for smaller landlords. Previously, basic rate taxpayers paid the same 20% rate personally as they would through a company (before extraction costs).</p>

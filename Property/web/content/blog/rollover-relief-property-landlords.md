@@ -45,7 +45,7 @@ faqs:
 </ul>
 
 <h3>Property Companies and Rollover Relief</h3>
-<p>Landlords operating through <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited companies</a> face the same restrictions. A property investment company letting residential properties cannot claim rollover relief any more than an individual landlord. However, companies with genuine commercial property trading activities might qualify. The key test remains whether the company is trading or investing. Corporation tax rates for 2026/27 are 19% on profits up to £250,000 and 25% above that threshold, but rollover relief operates separately from these rate considerations.</p>
+<p>Landlords operating through <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">limited companies</a> face the same restrictions. A property investment company letting residential properties cannot claim rollover relief any more than an individual landlord. However, companies with genuine commercial property trading activities might qualify. The key test remains whether the company is trading or investing. Corporation tax rates for 2026/27 are 19% small profits rate on profits up to £50,000 and 25% main rate above £250,000, with marginal relief between, but rollover relief operates separately from these rate considerations.</p>
 
 <h2>Conditions, Time Limits and How It Works</h2>
 

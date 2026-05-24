@@ -62,7 +62,7 @@ faqs:
 <p>With major tax changes approaching, your accountant should provide forward-looking advice, including preparation for Making Tax Digital from April 2026. They should help with:</p>
 <ul>
 <li><strong>Making Tax Digital preparation:</strong> Setting up compatible cloud software, establishing quarterly reporting processes, and digitising record-keeping well before the deadline.</li>
-<li><strong>Incorporation analysis:</strong> Assessing whether forming a limited company makes sense for your portfolio size and tax position, considering corporation tax rates (19% for profits up to £250k, 25% main rate).</li>
+<li><strong>Incorporation analysis:</strong> Assessing whether forming a limited company makes sense for your portfolio size and tax position, considering corporation tax rates (19% small profits rate for profits up to £50k, 25% main rate above £250k, with marginal relief between).</li>
 <li><strong>2027 tax planning:</strong> Preparing for potential separate property income tax rates (22% basic, 42% higher, 47% additional).</li>
 <li><strong>Portfolio restructuring:</strong> Optimising ownership structures before tax changes take effect.</li>
 </ul>

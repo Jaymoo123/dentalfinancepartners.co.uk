@@ -63,7 +63,7 @@ faqs:
 <p>Bath's premium property market makes <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">CGT planning</a> particularly important, requiring expertise in both tax law and local market conditions. A frequent error is missing opportunities for tax-efficient disposals or failing to consider spousal transfers.</p>
 
 <h2>Evaluating Property Company Structures and Incorporation</h2>
-<p>Many Bath landlords consider incorporation to mitigate Section 24 restrictions. Limited companies aren't subject to mortgage interest restrictions and benefit from corporation tax rates (19% up to £250,000 profits, 25% above).</p>
+<p>Many Bath landlords consider incorporation to mitigate Section 24 restrictions. Limited companies aren't subject to mortgage interest restrictions and benefit from corporation tax rates (19% small profits rate up to £50,000 profits, 25% main rate above £250,000, with marginal relief between).</p>
 <p>For Bath investors building significant portfolios, incorporation often makes sense. However, the decision depends on factors including:</p>
 <ul>
 <li>Current and projected rental profits</li>

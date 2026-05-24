@@ -64,8 +64,9 @@ faqs:
 <h2>Operating Through a Limited Company</h2>
 <p>For landlords operating through limited companies, corporation tax rates for 2026/27 remain:</p>
 <ul>
-<li><strong>Small profits rate:</strong> 19% (profits up to £250,000)</li>
+<li><strong>Small profits rate:</strong> 19% (profits up to £50,000)</li>
 <li><strong>Main rate:</strong> 25% (profits above £250,000)</li>
+<li><strong>Marginal relief:</strong> tapers the effective rate between £50,000 and £250,000</li>
 </ul>
 <p>With property income tax rates rising to 22%/42%/47% from 2027, <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation through a limited company</a> becomes increasingly attractive for higher-rate taxpayers. Professional advice can help with incorporation analysis and implementation.</p>
 

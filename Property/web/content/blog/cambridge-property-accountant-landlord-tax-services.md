@@ -54,7 +54,7 @@ faqs:
 <p>A Cambridge landlord who bought a property for £300,000 in 2015 and sells for £500,000 in 2026 faces a £48,000 CGT bill (assuming higher-rate tax). Strategic timing of disposals and use of available reliefs can reduce this liability. Our <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">complete CGT guide</a> explains the rules.</p>
 
 <h3>Incorporation Decisions</h3>
-<p>Many Cambridge landlords consider transferring properties to limited companies to avoid Section 24 restrictions and benefit from lower corporation tax rates (19% for profits up to £250k, 25% main rate). However, incorporation involves significant costs and complexity.</p>
+<p>Many Cambridge landlords consider transferring properties to limited companies to avoid Section 24 restrictions and benefit from lower corporation tax rates (19% small profits rate, profits up to £50k; 25% main rate, above £250k; marginal relief between). However, incorporation involves significant costs and complexity.</p>
 <p>A property worth £600,000 with a £200,000 gain faces £48,000 in CGT on incorporation (assuming higher-rate tax). The ongoing corporation tax savings must justify this upfront cost. Our <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">buy-to-let company guide</a> covers the key considerations.</p>
 
 <h2>Services a Cambridge Property Accountant Provides</h2>

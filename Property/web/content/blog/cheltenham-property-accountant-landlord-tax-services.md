@@ -67,7 +67,7 @@ faqs:
 <h2>Preparing for Major Tax Changes in 2027</h2>
 <p>From April 2027, property income will be taxed at separate rates: 22% basic rate, 42% higher rate, and 47% additional rate. This represents a significant increase from current general income tax rates and will particularly impact higher-earning landlords.</p>
 <p>Cheltenham landlords need to model these changes now. Those currently paying 40% tax on rental profits will see rates increase to 42%. More significantly, additional rate taxpayers face a jump from 45% to 47%.</p>
-<p>These changes make incorporation planning even more critical. Limited companies will continue paying corporation tax at 19% (profits up to £250k) / 25% (main rate) rates, creating a substantial advantage for higher-rate taxpaying landlords.</p>
+<p>These changes make incorporation planning even more critical. Limited companies will continue paying corporation tax at 19% (small profits, up to £50k) / 25% (main rate, above £250k) with marginal relief tapering between, creating a substantial advantage for higher-rate taxpaying landlords.</p>
 <p>The period between now and April 2027 offers planning opportunities. Income acceleration, capital expenditure timing, and portfolio restructuring can all optimise the tax position before the new rates apply. A property accountant will create a detailed transition plan, potentially saving thousands in tax over the coming years.</p>
 
 <h2>Choosing and Working with a Property Accountant in Cheltenham</h2>

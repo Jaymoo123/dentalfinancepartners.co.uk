@@ -50,181 +50,185 @@ reviewerCredentials: "Chartered Accountant (ACA, ICAEW), Property Tax Specialist
 reviewedAt: "2026-05-22"
 editorialNote: "Consolidated Crown Dependencies page covering all three 2018 UK-CD treaties (Jersey, Guernsey, Isle of Man). Differentiator vs other Wave 2 DTA pages: this is the ONLY consolidated-multi-jurisdiction page (B2-B7 are single-bilateral). Anti-templating: structured around the historic shelter and its end (three policy changes converging: Sch A1 from 2017, Art 13(4) from 2018, residence-based IHT from 2025) rather than around the treaty articles. Worked example: Andrew, UK-national-in-Jersey-since-2018, four Manchester BTL flats in a Jersey company, deciding between collapse, maintain, or restructure. Note on house position §16.5: the brief flagged a potential 2016 vs 2018 IoM discrepancy; verified against gov.uk and house positions §16.5 actually says 'modern (2018+)' which is correct. No house-position-conflict flag needed."
 ---
-
-The three Crown Dependencies (Jersey, Guernsey, Isle of Man) historically offered structural tax shelter for UK property investments. The combination of low or nil Crown Dependency corporate tax, no Crown Dependency CGT, no UK IHT exposure on UK residential property held through Crown Dependency companies before 2017, and the legacy 1952 / 1955 arrangements that lacked any indirect-disposal provision made Crown Dependency structures a default reach for high-net-worth UK property holdings for decades.
-
-That shelter has ended. Three policy changes converged across an eight-year window: Schedule A1 IHTA 1984 from 6 April 2017 looked through Crown Dependency (and any overseas) companies for UK residential property IHT; the 2018 UK-Jersey, UK-Guernsey, and UK-Isle of Man Double Taxation Agreements introduced Article 13(4) indirect-disposal language bringing Crown Dependency company shares into UK NRCGT; the April 2025 residence-based IHT regime (Finance Act 2025) eliminated the domicile-anchored shelter for long-term UK residents wherever they now reside.
-
-This page walks the three modern treaties together (they are structurally identical in OECD form), the operational consequences for both Crown Dependency-resident landlords and Crown Dependency-company UK property structures, the TIOPA 2010 s.9(2)(c) unilateral relief carve-out, and the Andrew Jersey-resident worked example deciding whether to collapse, maintain, or restructure a four-flat Manchester portfolio held via a Jersey company. For the framework context that underlies every UK treaty, see our [UK tax treaties framework guide](/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide). For the Article 4 cascade mechanics for dual UK-CD residents, see our [Article 4 tie-breaker page](/blog/non-resident-landlord-tax/dta-tie-breaker-test-dual-residence-property-owners). For the IHT residence-test that drives the post-2025 exposure, see our [April 2025 IHT non-resident page](/blog/non-resident-landlord-tax/iht-non-resident-uk-property-april-2025-residence-test).
-
-## The three modern treaties
-
-All three UK-Crown Dependency Double Taxation Agreements were signed in London on 2 July 2018 and entered into force in late 2018 or early 2019. Effective dates for UK taxes are essentially identical across the three.
-
-| Treaty | Signed | In force | UK Income Tax effective | UK Corporation Tax effective |
-|---|---|---|---|---|
-| UK-Jersey 2018 DTA | 2 July 2018 | 19 December 2018 | 6 April 2019 | 1 April 2019 |
-| UK-Guernsey 2018 DTA | 2 July 2018 | 7 January 2019 | 6 April 2019 | 1 April 2019 |
-| UK-Isle of Man 2018 DTA | 2018 | 19 December 2018 | 6 April 2019 | 1 April 2019 |
-
-The 2018 treaties replaced the historic arrangements:
-
-- The **1952 UK-Jersey arrangement** (in force from 24 June 1952), as amended by the 2015 exchange of letters and the 2016 Protocol, was terminated by the 2018 treaty.
-- The **1952 UK-Guernsey arrangement**, as amended by the 2015 and 2016 Protocols, was terminated by the 2018 treaty.
-- The **1955 UK-Isle of Man arrangement**, as amended by the 2016 Protocol, was terminated by the 2018 treaty.
-
-All three 2018 treaties follow OECD Model Tax Convention 2017 form: Article 4 (residence and tie-breaker), Article 6 (immovable property), Article 7 (business profits), Article 10 (dividends), Article 11 (interest), Article 13 (capital gains, including the new property-rich-entity provision at Article 13(4)), Article 23 (elimination of double taxation), Article 24 (non-discrimination), Article 25 (mutual agreement procedure). The articles are functionally identical across the three treaties; what differs jurisdiction-to-jurisdiction is the practical Crown Dependency-side tax position, which is itself broadly similar across the three.
-
-## The shelter that ended: a brief history
-
-Before 2017 / 2018, a Crown Dependency company holding UK residential property offered three structurally distinct shelters:
-
-1. **UK IHT shelter on the underlying beneficial owner.** A non-domiciled UK resident (or any non-UK individual) could hold UK residential property through a Crown Dependency company; the company shares were overseas-situs assets; the underlying UK residential property was indirectly held; UK IHT did not attach to the shareholding from the non-dom's perspective. This was the dominant historic reason for Crown Dependency company structures over UK residential property: the IHT shelter on the underlying UK situs.
-2. **UK CGT shelter on share disposal.** The legacy 1952 / 1955 arrangements had no indirect-disposal article. A Crown Dependency company's shareholder could dispose of the company shares without triggering UK CGT on the underlying UK property. The UK property remained in the company; only the shares changed hands. The shareholder's CGT exposure was governed by their residence state's rules, which for a Jersey, Guernsey, or Isle of Man resident was effectively nil.
-3. **Crown Dependency-side income and gains tax efficiency.** Jersey, Guernsey, and Isle of Man companies pay 0% corporate tax on most income, 20% only on Crown-Dependency-situs property income and (in some cases) financial services. UK rental income flowing through a Crown Dependency company landed in the company at 0% Crown Dependency tax. The historic combination with the legacy DTAs meant the UK tax on the rental was the only tax line at the company level.
-
-The first two shelters have been closed. The third remains in form but is now structurally irrelevant for UK property purposes: UK Corporation Tax under CTA 2009 applies to the UK-source rental at the same rate (25% main / 19% small profits) that a UK Ltd would pay. The Crown Dependency 0% rate is moot because the income is UK-taxable at the source.
-
-The three closure events:
-
-- **Schedule A1 IHTA 1984, in force 6 April 2017** (Finance (No.2) Act 2017). Closely-held overseas companies (including Crown Dependency companies) holding UK residential property are looked through for IHT; the underlying beneficial owner's interest in the company is UK-situs to the extent of the underlying UK residential property value. Non-dom IHT shelter on UK residential property held through Crown Dependency companies ended on this date.
-- **2018 UK-Crown Dependency DTAs, in force December 2018 / January 2019.** Article 13(4) of each treaty extended UK taxing rights to gains on shares in property-rich entities. A Crown Dependency company whose value derives more than 50% from UK immovable property is property-rich; share disposal triggers UK NRCGT under TCGA 1992 Sch 1A. The CGT shelter on share disposal ended.
-- **April 2025 residence-based IHT regime** (Finance Act 2025). The historic non-dom domicile shelter on worldwide assets was replaced with the long-term-resident test; individuals UK-resident in 10 of the prior 20 tax years are within UK IHT on worldwide assets, with a 10-year tapered tail post-departure. Crown Dependency residence by itself no longer shelters worldwide assets from UK IHT for ex-UK-resident individuals.
-
-## Article 6: UK rental from Crown Dependency-resident landlords
-
-Article 6 of each 2018 treaty allocates primary taxing rights over immovable property income to the situs state. For UK rental property held by a Crown Dependency-resident landlord, this means:
-
-- **UK retains primary taxing rights.** UK Income Tax under ITTOIA 2005 for individual landlords; UK Corporation Tax under CTA 2009 for corporate landlords.
-- **NRL scheme applies.** FA 1995 Sch 23 and SI 1995/2902 require letting agents and tenants to withhold 20% basic rate from rent unless the landlord holds NRL1 (individual), NRL2 (company), or NRL3 (trust). Treaty residence in Jersey, Guernsey, or Isle of Man does NOT displace NRL withholding. See our [non-resident landlord scheme complete guide](/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide) for operational mechanics.
-- **UK personal allowance under Article 26.** For Crown Dependency-resident individual landlords who are also UK or Crown Dependency nationals, Article 26 (non-discrimination) of the 2018 treaties preserves access to the UK personal allowance for treaty-resident individuals.
-- **Crown Dependency taxation.** The Crown Dependency may also tax the same rental under its own worldwide-income rules. For Crown Dependency-resident individuals, this is at the personal income tax rate (Jersey 20% / Guernsey 20% / Isle of Man 20% standard rate). For Crown Dependency companies, the corporate rate applies (0% standard, with 20% only on Crown Dependency-situs property income; UK rental does NOT trigger the 20% rate because the property is not Crown Dependency-situs).
-- **Article 23 elimination.** Foreign tax credit under Article 23 of the treaty offsets the UK tax against the Crown Dependency tax (or vice versa, depending on which state is taxing worldwide income). For Crown Dependency-resident individuals taxed on worldwide income, the Crown Dependency credits the UK tax against its own; for Crown Dependency companies at 0% on UK rental, there is nothing to credit because the Crown Dependency has imposed no tax to be eliminated.
-
-## Article 13(4): the indirect-disposal closure
-
-Article 13(4) of each 2018 treaty is the single most important policy change in the Crown Dependency context. The article (mirroring OECD Model Article 13(4)) allocates taxing rights to the situs state for gains on alienation of shares in property-rich entities, defined as entities deriving more than 50% of their value from immovable property situated in that state.
-
-For a Crown Dependency company holding UK property:
-
-- **Property-rich test.** A Crown Dependency company with more than 50% of value in UK immovable property is property-rich for UK purposes. A pure UK property holding company (single asset class, UK-only) is overwhelmingly property-rich. A mixed-asset company is property-rich only if the UK property tips the value calculation.
-- **NRCGT on share disposal.** Disposal of the property-rich Crown Dependency company shares by the underlying shareholder triggers UK NRCGT under TCGA 1992 s.1A and Schedule 1A. The 60-day return requirement applies under TCGA 1992 Sch 2 para 1. See our [non-resident CGT rates page](/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting).
-- **Rebasing.** April 2019 rebasing for indirect disposals of property-rich entities (introduced by Finance Act 2019 alongside the broader NRCGT extension to commercial property and indirect disposals) sets the cost base for shares acquired pre-April 2019. Gains attributable to the pre-April-2019 holding period are excluded from NRCGT on a time-apportionment or election basis.
-- **NRCGT applies whether or not the treaty assigns UK rights.** Per house positions §16.3 and HMRC INTM151010, the UK NRCGT regime applies as a statutory matter and the treaty is consistent with this. Older treaties that lacked Article 13(4) (notably the pre-2018 legacy CD arrangements) did not assign UK rights; UK statute imposed NRCGT anyway; HMRC's position was that this was consistent with the treaty because the UK was exercising rights the treaty did not deny. The 2018 treaties have now caught up: the treaty itself assigns the rights.
-
-The practical effect: a Jersey, Guernsey, or Isle of Man company holding UK property has no CGT shelter on share disposal. Selling the company shares is, in UK tax terms, equivalent to the company selling the underlying property.
-
+<p>The three Crown Dependencies (Jersey, Guernsey, Isle of Man) historically offered structural tax shelter for UK property investments. The combination of low or nil Crown Dependency corporate tax, no Crown Dependency CGT, no UK IHT exposure on UK residential property held through Crown Dependency companies before 2017, and the legacy 1952 / 1955 arrangements that lacked any indirect-disposal provision made Crown Dependency structures a default reach for high-net-worth UK property holdings for decades.</p>
+<p>That shelter has ended. Three policy changes converged across an eight-year window: Schedule A1 IHTA 1984 from 6 April 2017 looked through Crown Dependency (and any overseas) companies for UK residential property IHT; the 2018 UK-Jersey, UK-Guernsey, and UK-Isle of Man Double Taxation Agreements introduced Article 13(4) indirect-disposal language bringing Crown Dependency company shares into UK NRCGT; the April 2025 residence-based IHT regime (Finance Act 2025) eliminated the domicile-anchored shelter for long-term UK residents wherever they now reside.</p>
+<p>This page walks the three modern treaties together (they are structurally identical in OECD form), the operational consequences for both Crown Dependency-resident landlords and Crown Dependency-company UK property structures, the TIOPA 2010 s.9(2)(c) unilateral relief carve-out, and the Andrew Jersey-resident worked example deciding whether to collapse, maintain, or restructure a four-flat Manchester portfolio held via a Jersey company. For the framework context that underlies every UK treaty, see our <a href="/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide">UK tax treaties framework guide</a>. For the Article 4 cascade mechanics for dual UK-CD residents, see our <a href="/blog/non-resident-landlord-tax/dta-tie-breaker-test-dual-residence-property-owners">Article 4 tie-breaker page</a>. For the IHT residence-test that drives the post-2025 exposure, see our <a href="/blog/non-resident-landlord-tax/iht-non-resident-uk-property-april-2025-residence-test">April 2025 IHT non-resident page</a>.</p>
+<h2>The three modern treaties</h2>
+<p>All three UK-Crown Dependency Double Taxation Agreements were signed in London on 2 July 2018 and entered into force in late 2018 or early 2019. Effective dates for UK taxes are essentially identical across the three.</p>
+<table>
+<thead>
+<tr>
+<th>Treaty</th>
+<th>Signed</th>
+<th>In force</th>
+<th>UK Income Tax effective</th>
+<th>UK Corporation Tax effective</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UK-Jersey 2018 DTA</td>
+<td>2 July 2018</td>
+<td>19 December 2018</td>
+<td>6 April 2019</td>
+<td>1 April 2019</td>
+</tr>
+<tr>
+<td>UK-Guernsey 2018 DTA</td>
+<td>2 July 2018</td>
+<td>7 January 2019</td>
+<td>6 April 2019</td>
+<td>1 April 2019</td>
+</tr>
+<tr>
+<td>UK-Isle of Man 2018 DTA</td>
+<td>2018</td>
+<td>19 December 2018</td>
+<td>6 April 2019</td>
+<td>1 April 2019</td>
+</tr>
+</tbody>
+</table>
+<p>The 2018 treaties replaced the historic arrangements:</p>
+<ul>
+<li>The <strong>1952 UK-Jersey arrangement</strong> (in force from 24 June 1952), as amended by the 2015 exchange of letters and the 2016 Protocol, was terminated by the 2018 treaty.</li>
+<li>The <strong>1952 UK-Guernsey arrangement</strong>, as amended by the 2015 and 2016 Protocols, was terminated by the 2018 treaty.</li>
+<li>The <strong>1955 UK-Isle of Man arrangement</strong>, as amended by the 2016 Protocol, was terminated by the 2018 treaty.</li>
+</ul>
+<p>All three 2018 treaties follow OECD Model Tax Convention 2017 form: Article 4 (residence and tie-breaker), Article 6 (immovable property), Article 7 (business profits), Article 10 (dividends), Article 11 (interest), Article 13 (capital gains, including the new property-rich-entity provision at Article 13(4)), Article 23 (elimination of double taxation), Article 24 (non-discrimination), Article 25 (mutual agreement procedure). The articles are functionally identical across the three treaties; what differs jurisdiction-to-jurisdiction is the practical Crown Dependency-side tax position, which is itself broadly similar across the three.</p>
+<h2>The shelter that ended: a brief history</h2>
+<p>Before 2017 / 2018, a Crown Dependency company holding UK residential property offered three structurally distinct shelters:</p>
+<ol>
+<li><strong>UK IHT shelter on the underlying beneficial owner.</strong> A non-domiciled UK resident (or any non-UK individual) could hold UK residential property through a Crown Dependency company; the company shares were overseas-situs assets; the underlying UK residential property was indirectly held; UK IHT did not attach to the shareholding from the non-dom's perspective. This was the dominant historic reason for Crown Dependency company structures over UK residential property: the IHT shelter on the underlying UK situs.</li>
+<li><strong>UK CGT shelter on share disposal.</strong> The legacy 1952 / 1955 arrangements had no indirect-disposal article. A Crown Dependency company's shareholder could dispose of the company shares without triggering UK CGT on the underlying UK property. The UK property remained in the company; only the shares changed hands. The shareholder's CGT exposure was governed by their residence state's rules, which for a Jersey, Guernsey, or Isle of Man resident was effectively nil.</li>
+<li><strong>Crown Dependency-side income and gains tax efficiency.</strong> Jersey, Guernsey, and Isle of Man companies pay 0% corporate tax on most income, 20% only on Crown-Dependency-situs property income and (in some cases) financial services. UK rental income flowing through a Crown Dependency company landed in the company at 0% Crown Dependency tax. The historic combination with the legacy DTAs meant the UK tax on the rental was the only tax line at the company level.</li>
+</ol>
+<p>The first two shelters have been closed. The third remains in form but is now structurally irrelevant for UK property purposes: UK Corporation Tax under CTA 2009 applies to the UK-source rental at the same rate (25% main / 19% small profits) that a UK Ltd would pay. The Crown Dependency 0% rate is moot because the income is UK-taxable at the source.</p>
+<p>The three closure events:</p>
+<ul>
+<li><strong>Schedule A1 IHTA 1984, in force 6 April 2017</strong> (Finance (No.2) Act 2017). Closely-held overseas companies (including Crown Dependency companies) holding UK residential property are looked through for IHT; the underlying beneficial owner's interest in the company is UK-situs to the extent of the underlying UK residential property value. Non-dom IHT shelter on UK residential property held through Crown Dependency companies ended on this date.</li>
+<li><strong>2018 UK-Crown Dependency DTAs, in force December 2018 / January 2019.</strong> Article 13(4) of each treaty extended UK taxing rights to gains on shares in property-rich entities. A Crown Dependency company whose value derives more than 50% from UK immovable property is property-rich; share disposal triggers UK NRCGT under TCGA 1992 Sch 1A. The CGT shelter on share disposal ended.</li>
+<li><strong>April 2025 residence-based IHT regime</strong> (Finance Act 2025). The historic non-dom domicile shelter on worldwide assets was replaced with the long-term-resident test; individuals UK-resident in 10 of the prior 20 tax years are within UK IHT on worldwide assets, with a 10-year tapered tail post-departure. Crown Dependency residence by itself no longer shelters worldwide assets from UK IHT for ex-UK-resident individuals.</li>
+</ul>
+<h2>Article 6: UK rental from Crown Dependency-resident landlords</h2>
+<p>Article 6 of each 2018 treaty allocates primary taxing rights over immovable property income to the situs state. For UK rental property held by a Crown Dependency-resident landlord, this means:</p>
+<ul>
+<li><strong>UK retains primary taxing rights.</strong> UK Income Tax under ITTOIA 2005 for individual landlords; UK Corporation Tax under CTA 2009 for corporate landlords.</li>
+<li><strong>NRL scheme applies.</strong> FA 1995 Sch 23 and SI 1995/2902 require letting agents and tenants to withhold 20% basic rate from rent unless the landlord holds NRL1 (individual), NRL2 (company), or NRL3 (trust). Treaty residence in Jersey, Guernsey, or Isle of Man does NOT displace NRL withholding. See our <a href="/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide">non-resident landlord scheme complete guide</a> for operational mechanics.</li>
+<li><strong>UK personal allowance under Article 26.</strong> For Crown Dependency-resident individual landlords who are also UK or Crown Dependency nationals, Article 26 (non-discrimination) of the 2018 treaties preserves access to the UK personal allowance for treaty-resident individuals.</li>
+<li><strong>Crown Dependency taxation.</strong> The Crown Dependency may also tax the same rental under its own worldwide-income rules. For Crown Dependency-resident individuals, this is at the personal income tax rate (Jersey 20% / Guernsey 20% / Isle of Man 20% standard rate). For Crown Dependency companies, the corporate rate applies (0% standard, with 20% only on Crown Dependency-situs property income; UK rental does NOT trigger the 20% rate because the property is not Crown Dependency-situs).</li>
+<li><strong>Article 23 elimination.</strong> Foreign tax credit under Article 23 of the treaty offsets the UK tax against the Crown Dependency tax (or vice versa, depending on which state is taxing worldwide income). For Crown Dependency-resident individuals taxed on worldwide income, the Crown Dependency credits the UK tax against its own; for Crown Dependency companies at 0% on UK rental, there is nothing to credit because the Crown Dependency has imposed no tax to be eliminated.</li>
+</ul>
+<h2>Article 13(4): the indirect-disposal closure</h2>
+<p>Article 13(4) of each 2018 treaty is the single most important policy change in the Crown Dependency context. The article (mirroring OECD Model Article 13(4)) allocates taxing rights to the situs state for gains on alienation of shares in property-rich entities, defined as entities deriving more than 50% of their value from immovable property situated in that state.</p>
+<p>For a Crown Dependency company holding UK property:</p>
+<ul>
+<li><strong>Property-rich test.</strong> A Crown Dependency company with more than 50% of value in UK immovable property is property-rich for UK purposes. A pure UK property holding company (single asset class, UK-only) is overwhelmingly property-rich. A mixed-asset company is property-rich only if the UK property tips the value calculation.</li>
+<li><strong>NRCGT on share disposal.</strong> Disposal of the property-rich Crown Dependency company shares by the underlying shareholder triggers UK NRCGT under TCGA 1992 s.1A and Schedule 1A. The 60-day return requirement applies under TCGA 1992 Sch 2 para 1. See our <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">non-resident CGT rates page</a>.</li>
+<li><strong>Rebasing.</strong> April 2019 rebasing for indirect disposals of property-rich entities (introduced by Finance Act 2019 alongside the broader NRCGT extension to commercial property and indirect disposals) sets the cost base for shares acquired pre-April 2019. Gains attributable to the pre-April-2019 holding period are excluded from NRCGT on a time-apportionment or election basis.</li>
+<li><strong>NRCGT applies whether or not the treaty assigns UK rights.</strong> Per house positions §16.3 and HMRC INTM151010, the UK NRCGT regime applies as a statutory matter and the treaty is consistent with this. Older treaties that lacked Article 13(4) (notably the pre-2018 legacy CD arrangements) did not assign UK rights; UK statute imposed NRCGT anyway; HMRC's position was that this was consistent with the treaty because the UK was exercising rights the treaty did not deny. The 2018 treaties have now caught up: the treaty itself assigns the rights.</li>
+</ul>
+<p>The practical effect: a Jersey, Guernsey, or Isle of Man company holding UK property has no CGT shelter on share disposal. Selling the company shares is, in UK tax terms, equivalent to the company selling the underlying property.</p>
 <aside><p>The historic Crown Dependency share-disposal route is gone.</p><p>A Crown Dependency company holding UK property is, since 2018 / 2019, transparent to UK NRCGT on share disposal. We help shareholders model the latent gain in their company shares against the latent gain in the underlying UK property, decide between corporate sale, share sale, and dissolution, and time the disposal against any rebasing-date election. Get in touch before instructing on any Crown Dependency company share disposal of property-rich shares.</p></aside>
 
-## Schedule A1 IHTA 1984: the look-through
-
-Schedule A1 to IHTA 1984 was introduced by Finance (No.2) Act 2017 with effect from 6 April 2017. The provision looks through closely-held overseas companies (including Crown Dependency companies) holding UK residential property. The underlying beneficial owner's interest in the company is treated as UK-situs property for IHT purposes, to the extent of the UK residential property value within the company.
-
-The mechanic for a Crown Dependency-company UK-residential structure:
-
-- **Identify the closely-held overseas company.** A Crown Dependency company is overseas-resident from a UK situs perspective; "closely held" broadly means under common control of five or fewer participators (HMRC INTM189000 has the detail).
-- **Identify the UK residential property within the company.** Schedule A1 catches only UK residential property; UK commercial property held through a Crown Dependency company is NOT subject to Schedule A1 (though it may be in NRCGT under Article 13(4) on share disposal).
-- **Value the underlying beneficial owner's interest at the UK residential property value.** The shareholder's IHT chargeable estate includes their interest in the company, valued by reference to the UK residential property held within. Loans, mortgages, and trade debts of the company reduce the chargeable value pro rata (per IHTA 1984 Sch A1 paragraphs 5 and 6).
-- **Apply UK IHT on death or chargeable transfer.** 40% above the NRB and RNRB allowances. Crown Dependency situs of the company shares is irrelevant; Schedule A1 looks through.
-
-The practical effect: a non-UK-domiciled (pre-April-2025) or non-long-term-resident (post-April-2025) shareholder of a Crown Dependency company holding UK residential property faces UK IHT on the UK property value through the look-through. The historic non-dom IHT shelter on UK residential property held through Crown Dependency companies, which was the principal reason for these structures from the 1980s through 2017, has been closed since 6 April 2017.
-
-## The April 2025 residence-based IHT regime
-
-Finance Act 2025 replaced the historic non-dom domicile-based IHT regime with a residence-based test. The framework (in effect from 6 April 2025):
-
-- **Long-term resident (LTR) test.** An individual is a UK long-term resident if they have been UK resident in at least 10 of the previous 20 tax years.
-- **LTR exposure.** LTRs are within UK IHT on worldwide assets, including Crown Dependency-situs assets.
-- **Formerly LTR (FLTR) tail.** Individuals who were LTRs but have ceased to be UK resident remain within UK IHT on worldwide assets for up to 10 years post-departure, on a tapered schedule.
-- **Crown Dependency residence does not preclude UK IHT exposure.** An individual who was UK long-term-resident and has moved to Jersey, Guernsey, or Isle of Man remains within UK IHT on worldwide assets (including Crown Dependency assets) for the FLTR tail. The Crown Dependency does not offer post-departure shelter the way historic non-dom positions sometimes did.
-- **UK residential property is always in UK IHT.** Schedule A1 IHTA 1984 is independent of LTR status; UK residential property held directly or through Crown Dependency companies is UK-situs for IHT regardless of the beneficial owner's residence.
-
-For Crown Dependency residents who were never UK long-term-resident, the position is more favourable: the FLTR tail does not engage; only UK residential property (under Sch A1) and UK situs assets are within UK IHT. But this is a small population; most Crown Dependency residents with UK property structures have a UK residence history of some length, and the LTR / FLTR analysis is the operational core. For the full residence-test mechanics, see our [April 2025 IHT non-resident page](/blog/non-resident-landlord-tax/iht-non-resident-uk-property-april-2025-residence-test).
-
-## The 2% SDLT non-resident surcharge
-
-FA 2003 Schedule 9A (introduced by Finance Act 2021 with effect from 1 April 2021) imposes a 2% SDLT surcharge on residential property purchases by non-UK-resident purchasers. The residence test is a 183-days-in-the-12-months-before-completion test; Crown Dependency residence does not count toward UK days, and Crown Dependency residents will typically fail the 183-day test.
-
-The 2% surcharge stacks:
-
-- 0% to £125,000 base rate + 5% additional dwellings (where applicable) + 2% non-resident = 7% effective from £0.
-- The full stack at the top band: 12% standard rate + 5% additional dwellings + 2% non-resident = 19% on the slice above £1.5m for additional residential properties bought by non-UK-resident purchasers.
-
-The treaty does not mediate SDLT exposure. SDLT is a transactional tax outside the treaty's covered taxes (which are typically income, capital gains, and inheritance taxes, and Crown Dependency treaties do not cover IHT either, see below). A Crown Dependency resident buying UK residential property pays the surcharge.
-
-Refund route: per FA 2003 Sch 9A para 12, where a non-resident purchaser becomes UK-resident (more than 183 UK days in any continuous 365-day window beginning in the year before or after completion), a refund of the 2% can be claimed by amending the SDLT return within 12 months of qualifying. See our [2% non-resident SDLT surcharge page](/blog/non-resident-landlord-tax/sdlt-non-resident-2-percent-surcharge) for the full refund mechanics.
-
-## TIOPA 2010 s.9(2)(c): the unilateral relief carve-out
-
-TIOPA 2010 s.9 provides unilateral foreign tax credit where a treaty does not cover the income or tax involved. Section 9(2)(c) contains a specific carve-out for the Isle of Man and Channel Islands disapplying the standard "in the territory" source rule for Crown Dependency income.
-
-The practical context: pre-2018, the legacy 1952 / 1955 arrangements were narrow and did not cover many income categories. Unilateral relief under TIOPA s.9 was the gap-filler. The s.9(2)(c) carve-out ensured that source-rule technicalities did not prevent Crown Dependency-source income from qualifying for unilateral relief in the UK.
-
-Post-2018, the modern OECD-form treaties cover all the standard income categories (immovable property, business profits, dividends, interest, capital gains, other income). Treaty relief under Article 23 of each 2018 treaty is the primary route. The s.9(2)(c) carve-out remains operational as a backstop for the residual cases the treaty does not cover; in practice, it is rarely invoked now.
-
-## Worked example: Andrew Jersey-resident with a Jersey company structure
-
-Andrew, 58, UK-national, lived and worked in London until 2018 when he moved to Jersey on the back of a private banking role at a Jersey-based wealth manager. Now a Jersey tax resident for 8 full tax years (2018/19 onwards). Owns 100% of Argyll Property Holdings Limited, a Jersey-resident company incorporated July 2018 to hold four Manchester city-centre buy-to-let flats. Acquisition cost £180,000 each (£720,000 total, plus SDLT at the then-3% additional dwellings rate plus the 2% non-resident surcharge as it applied post-April-2021 to subsequent acquisitions; total SDLT envelope ~£87,000). Current valuation £260,000 each (£1,040,000 total). Gross rental £56,000 a year across the four flats; UK Corporation Tax under CTA 2009 at the small profits rate, no Jersey corporate tax (0% on non-Jersey-situs income). Argyll's mortgage debt £400,000 across the four properties (£100k each).
-
-**Andrew's position before the regime changes.**
-
-- IHT: UK residential property in a Jersey company; under the pre-2017 framework, Andrew's Jersey-company shareholding was overseas-situs and outside UK IHT. After 6 April 2017, Schedule A1 catches the structure: Andrew's interest in Argyll is valued at the UK property value (£1,040,000 less debt £400,000 = £640,000 net) and is treated as UK-situs for IHT.
-- CGT on share disposal: under the legacy 1952 arrangement, disposal of Argyll shares would not have triggered UK CGT (no Article 13(4)). Under the 2018 treaty, Article 13(4) applies: Argyll is property-rich (more than 50% UK property), share disposal triggers NRCGT under TCGA 1992 s.1A. April 2019 rebasing applies to shares held before that date; Andrew's Argyll shares were acquired July 2018, so the rebasing applies and Andrew's gain on a share disposal would be (current share value less April 2019 rebasing value), which is the gain accrued from April 2019 onwards.
-- April 2025 IHT residence regime: Andrew was UK long-term resident through to 2018 (more than 10 of the 20 prior tax years). He is now 8 years out of UK residence (2018/19 to 2025/26). The FLTR tail under the April 2025 regime extends UK IHT on worldwide assets for up to 10 years post-departure, on a tapered schedule. Andrew is approximately 8 years into a 10-year tail.
-
-**Andrew's current operational position.**
-
-- Argyll's UK rental: £56,000 gross, UK Corporation Tax at the small profits rate (19%) on the rental net of expenses. Approximate UK CT liability £6,800 a year. Jersey 0% on the same UK rental (UK rental is not Jersey-situs).
-- Argyll's UK property is on the company balance sheet at £1,040,000 with a latent gain of £320,000 (current value less acquisition cost).
-- Andrew's Argyll shares: net asset value approximately £640,000 (£1,040,000 property less £400,000 mortgage), latent gain at the share level approximately £640,000 less the acquisition equity investment (£320,000 = £720,000 acquisition cost less the £400,000 mortgage finance). Andrew's gain on share disposal would be approximately £640,000 - £320,000 = £320,000, less the April 2019 rebasing adjustment.
-- IHT exposure: under Sch A1, Andrew's UK-property interest of £640,000 is in his chargeable estate. Above his £325,000 NRB (assuming no spouse transferable NRB), the £315,000 excess produces an IHT liability of £126,000 at 40% on death.
-- FLTR tail on worldwide assets: Andrew has approximately 2 years left of the 10-year tail (tapered). After that, only UK-situs assets (UK property under Sch A1) remain in UK IHT.
-
-**Andrew's strategic options.**
-
-1. **Maintain the structure.** Continue operations as is. UK CT at 19% small profits rate continues; UK rental position is fine. Latent share gain accumulates; share disposal would trigger NRCGT under Article 13(4). IHT exposure under Sch A1 continues. Decision: defensible if Andrew has no plans to sell shares or restructure; the structure runs at no worse than a UK-Ltd equivalent on the income side and is no worse than a personal-holding structure on the IHT side.
-
-2. **Collapse the structure (dissolve Argyll, distribute properties personally).** Mechanics: Argyll sells (or distributes in specie) the four properties to Andrew personally; NRCGT under TCGA 1992 s.1A applies to Argyll's gain on the property disposal (£320,000 less rebasing for April 2015 commercial / April 2015 residential = approximately £200,000 of post-rebasing gain at 24% = £48,000 of NRCGT). Andrew then holds the properties personally; ongoing UK rental tax at his personal marginal rate (UK personal allowance available under Article 26 of the 2018 Jersey treaty), s.24 finance cost restriction now applies on his personal mortgage interest (was not an issue at the company level). Argyll is wound up. Outcome: simpler structure, more tax on rental going forward (s.24 effect, personal marginal rate at potentially 45% for the rental slice above the higher-rate threshold), no improvement on IHT (UK residential property is still in UK IHT via direct ownership under Sch 1A / s.6 IHTA 1984).
-
-3. **Restructure to a UK Ltd.** Mechanics: incorporate a UK Ltd; sell Argyll's property to UK Ltd at market value (NRCGT at the Argyll level on the property gain, same £48,000 as scenario 2); Andrew's Argyll shares now hold cash; distribute the cash as a dividend (subject to Jersey individual income tax at 20% and UK FTC consideration where applicable). Outcome: UK Ltd structure with no Crown Dependency overlay; no Sch A1 issue (UK Ltd is UK-situs); no Article 13(4) NRCGT exposure on UK Ltd shares (UK domestic CGT rules apply normally to the shareholder; for Andrew as Jersey-resident, UK CGT does not apply to UK company shares unless the company is UK-property-rich, in which case NRCGT does apply, so this is structurally similar). The IHT exposure on Argyll-via-Sch-A1 is replaced by direct exposure on the UK Ltd shares via Sch A1 (Sch A1 looks through to UK residential property regardless of whether the holding entity is UK or Crown Dependency-resident). Outcome: marginal improvement, mostly cosmetic.
-
-Andrew's optimal choice depends on his personal plans (return to UK? remain in Jersey?), his risk tolerance on the FLTR tail (which expires in approximately 2 years), and his plans for the underlying properties (hold long-term? sell? pass to children?). The structure analysis is the input to a decision that is fundamentally about life plans, not tax efficiency.
-
+<h2>Schedule A1 IHTA 1984: the look-through</h2>
+<p>Schedule A1 to IHTA 1984 was introduced by Finance (No.2) Act 2017 with effect from 6 April 2017. The provision looks through closely-held overseas companies (including Crown Dependency companies) holding UK residential property. The underlying beneficial owner's interest in the company is treated as UK-situs property for IHT purposes, to the extent of the UK residential property value within the company.</p>
+<p>The mechanic for a Crown Dependency-company UK-residential structure:</p>
+<ul>
+<li><strong>Identify the closely-held overseas company.</strong> A Crown Dependency company is overseas-resident from a UK situs perspective; "closely held" broadly means under common control of five or fewer participators (HMRC INTM189000 has the detail).</li>
+<li><strong>Identify the UK residential property within the company.</strong> Schedule A1 catches only UK residential property; UK commercial property held through a Crown Dependency company is NOT subject to Schedule A1 (though it may be in NRCGT under Article 13(4) on share disposal).</li>
+<li><strong>Value the underlying beneficial owner's interest at the UK residential property value.</strong> The shareholder's IHT chargeable estate includes their interest in the company, valued by reference to the UK residential property held within. Loans, mortgages, and trade debts of the company reduce the chargeable value pro rata (per IHTA 1984 Sch A1 paragraphs 5 and 6).</li>
+<li><strong>Apply UK IHT on death or chargeable transfer.</strong> 40% above the NRB and RNRB allowances. Crown Dependency situs of the company shares is irrelevant; Schedule A1 looks through.</li>
+</ul>
+<p>The practical effect: a non-UK-domiciled (pre-April-2025) or non-long-term-resident (post-April-2025) shareholder of a Crown Dependency company holding UK residential property faces UK IHT on the UK property value through the look-through. The historic non-dom IHT shelter on UK residential property held through Crown Dependency companies, which was the principal reason for these structures from the 1980s through 2017, has been closed since 6 April 2017.</p>
+<h2>The April 2025 residence-based IHT regime</h2>
+<p>Finance Act 2025 replaced the historic non-dom domicile-based IHT regime with a residence-based test. The framework (in effect from 6 April 2025):</p>
+<ul>
+<li><strong>Long-term resident (LTR) test.</strong> An individual is a UK long-term resident if they have been UK resident in at least 10 of the previous 20 tax years.</li>
+<li><strong>LTR exposure.</strong> LTRs are within UK IHT on worldwide assets, including Crown Dependency-situs assets.</li>
+<li><strong>Formerly LTR (FLTR) tail.</strong> Individuals who were LTRs but have ceased to be UK resident remain within UK IHT on worldwide assets for up to 10 years post-departure, on a tapered schedule.</li>
+<li><strong>Crown Dependency residence does not preclude UK IHT exposure.</strong> An individual who was UK long-term-resident and has moved to Jersey, Guernsey, or Isle of Man remains within UK IHT on worldwide assets (including Crown Dependency assets) for the FLTR tail. The Crown Dependency does not offer post-departure shelter the way historic non-dom positions sometimes did.</li>
+<li><strong>UK residential property is always in UK IHT.</strong> Schedule A1 IHTA 1984 is independent of LTR status; UK residential property held directly or through Crown Dependency companies is UK-situs for IHT regardless of the beneficial owner's residence.</li>
+</ul>
+<p>For Crown Dependency residents who were never UK long-term-resident, the position is more favourable: the FLTR tail does not engage; only UK residential property (under Sch A1) and UK situs assets are within UK IHT. But this is a small population; most Crown Dependency residents with UK property structures have a UK residence history of some length, and the LTR / FLTR analysis is the operational core. For the full residence-test mechanics, see our <a href="/blog/non-resident-landlord-tax/iht-non-resident-uk-property-april-2025-residence-test">April 2025 IHT non-resident page</a>.</p>
+<h2>The 2% SDLT non-resident surcharge</h2>
+<p>FA 2003 Schedule 9A (introduced by Finance Act 2021 with effect from 1 April 2021) imposes a 2% SDLT surcharge on residential property purchases by non-UK-resident purchasers. The residence test is a 183-days-in-the-12-months-before-completion test; Crown Dependency residence does not count toward UK days, and Crown Dependency residents will typically fail the 183-day test.</p>
+<p>The 2% surcharge stacks:</p>
+<ul>
+<li>0% to £125,000 base rate + 5% additional dwellings (where applicable) + 2% non-resident = 7% effective from £0.</li>
+<li>The full stack at the top band: 12% standard rate + 5% additional dwellings + 2% non-resident = 19% on the slice above £1.5m for additional residential properties bought by non-UK-resident purchasers.</li>
+</ul>
+<p>The treaty does not mediate SDLT exposure. SDLT is a transactional tax outside the treaty's covered taxes (which are typically income, capital gains, and inheritance taxes, and Crown Dependency treaties do not cover IHT either, see below). A Crown Dependency resident buying UK residential property pays the surcharge.</p>
+<p>Refund route: per FA 2003 Sch 9A para 12, where a non-resident purchaser becomes UK-resident (more than 183 UK days in any continuous 365-day window beginning in the year before or after completion), a refund of the 2% can be claimed by amending the SDLT return within 12 months of qualifying. See our <a href="/blog/non-resident-landlord-tax/sdlt-non-resident-2-percent-surcharge">2% non-resident SDLT surcharge page</a> for the full refund mechanics.</p>
+<h2>TIOPA 2010 s.9(2)(c): the unilateral relief carve-out</h2>
+<p>TIOPA 2010 s.9 provides unilateral foreign tax credit where a treaty does not cover the income or tax involved. Section 9(2)(c) contains a specific carve-out for the Isle of Man and Channel Islands disapplying the standard "in the territory" source rule for Crown Dependency income.</p>
+<p>The practical context: pre-2018, the legacy 1952 / 1955 arrangements were narrow and did not cover many income categories. Unilateral relief under TIOPA s.9 was the gap-filler. The s.9(2)(c) carve-out ensured that source-rule technicalities did not prevent Crown Dependency-source income from qualifying for unilateral relief in the UK.</p>
+<p>Post-2018, the modern OECD-form treaties cover all the standard income categories (immovable property, business profits, dividends, interest, capital gains, other income). Treaty relief under Article 23 of each 2018 treaty is the primary route. The s.9(2)(c) carve-out remains operational as a backstop for the residual cases the treaty does not cover; in practice, it is rarely invoked now.</p>
+<h2>Worked example: Andrew Jersey-resident with a Jersey company structure</h2>
+<p>Andrew, 58, UK-national, lived and worked in London until 2018 when he moved to Jersey on the back of a private banking role at a Jersey-based wealth manager. Now a Jersey tax resident for 8 full tax years (2018/19 onwards). Owns 100% of Argyll Property Holdings Limited, a Jersey-resident company incorporated July 2018 to hold four Manchester city-centre buy-to-let flats. Acquisition cost £180,000 each (£720,000 total, plus SDLT at the then-3% additional dwellings rate plus the 2% non-resident surcharge as it applied post-April-2021 to subsequent acquisitions; total SDLT envelope ~£87,000). Current valuation £260,000 each (£1,040,000 total). Gross rental £56,000 a year across the four flats; UK Corporation Tax under CTA 2009 at the small profits rate, no Jersey corporate tax (0% on non-Jersey-situs income). Argyll's mortgage debt £400,000 across the four properties (£100k each).</p>
+<p><strong>Andrew's position before the regime changes.</strong></p>
+<ul>
+<li>IHT: UK residential property in a Jersey company; under the pre-2017 framework, Andrew's Jersey-company shareholding was overseas-situs and outside UK IHT. After 6 April 2017, Schedule A1 catches the structure: Andrew's interest in Argyll is valued at the UK property value (£1,040,000 less debt £400,000 = £640,000 net) and is treated as UK-situs for IHT.</li>
+<li>CGT on share disposal: under the legacy 1952 arrangement, disposal of Argyll shares would not have triggered UK CGT (no Article 13(4)). Under the 2018 treaty, Article 13(4) applies: Argyll is property-rich (more than 50% UK property), share disposal triggers NRCGT under TCGA 1992 s.1A. April 2019 rebasing applies to shares held before that date; Andrew's Argyll shares were acquired July 2018, so the rebasing applies and Andrew's gain on a share disposal would be (current share value less April 2019 rebasing value), which is the gain accrued from April 2019 onwards.</li>
+<li>April 2025 IHT residence regime: Andrew was UK long-term resident through to 2018 (more than 10 of the 20 prior tax years). He is now 8 years out of UK residence (2018/19 to 2025/26). The FLTR tail under the April 2025 regime extends UK IHT on worldwide assets for up to 10 years post-departure, on a tapered schedule. Andrew is approximately 8 years into a 10-year tail.</li>
+</ul>
+<p><strong>Andrew's current operational position.</strong></p>
+<ul>
+<li>Argyll's UK rental: £56,000 gross, UK Corporation Tax at the small profits rate (19%) on the rental net of expenses. Approximate UK CT liability £6,800 a year. Jersey 0% on the same UK rental (UK rental is not Jersey-situs).</li>
+<li>Argyll's UK property is on the company balance sheet at £1,040,000 with a latent gain of £320,000 (current value less acquisition cost).</li>
+<li>Andrew's Argyll shares: net asset value approximately £640,000 (£1,040,000 property less £400,000 mortgage), latent gain at the share level approximately £640,000 less the acquisition equity investment (£320,000 = £720,000 acquisition cost less the £400,000 mortgage finance). Andrew's gain on share disposal would be approximately £640,000 - £320,000 = £320,000, less the April 2019 rebasing adjustment.</li>
+<li>IHT exposure: under Sch A1, Andrew's UK-property interest of £640,000 is in his chargeable estate. Above his £325,000 NRB (assuming no spouse transferable NRB), the £315,000 excess produces an IHT liability of £126,000 at 40% on death.</li>
+<li>FLTR tail on worldwide assets: Andrew has approximately 2 years left of the 10-year tail (tapered). After that, only UK-situs assets (UK property under Sch A1) remain in UK IHT.</li>
+</ul>
+<p><strong>Andrew's strategic options.</strong></p>
+<ol>
+<li>
+<p><strong>Maintain the structure.</strong> Continue operations as is. UK CT at 19% small profits rate continues; UK rental position is fine. Latent share gain accumulates; share disposal would trigger NRCGT under Article 13(4). IHT exposure under Sch A1 continues. Decision: defensible if Andrew has no plans to sell shares or restructure; the structure runs at no worse than a UK-Ltd equivalent on the income side and is no worse than a personal-holding structure on the IHT side.</p>
+</li>
+<li>
+<p><strong>Collapse the structure (dissolve Argyll, distribute properties personally).</strong> Mechanics: Argyll sells (or distributes in specie) the four properties to Andrew personally; NRCGT under TCGA 1992 s.1A applies to Argyll's gain on the property disposal (£320,000 less rebasing for April 2015 commercial / April 2015 residential = approximately £200,000 of post-rebasing gain at 24% = £48,000 of NRCGT). Andrew then holds the properties personally; ongoing UK rental tax at his personal marginal rate (UK personal allowance available under Article 26 of the 2018 Jersey treaty), s.24 finance cost restriction now applies on his personal mortgage interest (was not an issue at the company level). Argyll is wound up. Outcome: simpler structure, more tax on rental going forward (s.24 effect, personal marginal rate at potentially 45% for the rental slice above the higher-rate threshold), no improvement on IHT (UK residential property is still in UK IHT via direct ownership under Sch 1A / s.6 IHTA 1984).</p>
+</li>
+<li>
+<p><strong>Restructure to a UK Ltd.</strong> Mechanics: incorporate a UK Ltd; sell Argyll's property to UK Ltd at market value (NRCGT at the Argyll level on the property gain, same £48,000 as scenario 2); Andrew's Argyll shares now hold cash; distribute the cash as a dividend (subject to Jersey individual income tax at 20% and UK FTC consideration where applicable). Outcome: UK Ltd structure with no Crown Dependency overlay; no Sch A1 issue (UK Ltd is UK-situs); no Article 13(4) NRCGT exposure on UK Ltd shares (UK domestic CGT rules apply normally to the shareholder; for Andrew as Jersey-resident, UK CGT does not apply to UK company shares unless the company is UK-property-rich, in which case NRCGT does apply, so this is structurally similar). The IHT exposure on Argyll-via-Sch-A1 is replaced by direct exposure on the UK Ltd shares via Sch A1 (Sch A1 looks through to UK residential property regardless of whether the holding entity is UK or Crown Dependency-resident). Outcome: marginal improvement, mostly cosmetic.</p>
+</li>
+</ol>
+<p>Andrew's optimal choice depends on his personal plans (return to UK? remain in Jersey?), his risk tolerance on the FLTR tail (which expires in approximately 2 years), and his plans for the underlying properties (hold long-term? sell? pass to children?). The structure analysis is the input to a decision that is fundamentally about life plans, not tax efficiency.</p>
 <aside><p>Crown Dependency structures over UK property need a 'why did we set this up' audit in 2026.</p><p>The historic shelter reasons have closed. The remaining reasons (operational separation, asset protection, succession planning) may or may not still hold. We help shareholders model the collapse cost against the maintain cost and the restructure cost, against the underlying life plan. The decision is rarely 'pure tax'; the tax inputs feed into a broader life and estate strategy. Get in touch before any restructure decision.</p></aside>
 
-## Treaty does not cover IHT
-
-A clarification that recurs in Crown Dependency property cases: the 2018 UK-Jersey, UK-Guernsey, and UK-Isle of Man treaties are income and capital tax treaties. They do not cover inheritance tax. The UK has IHT treaties with eight jurisdictions only (US, France, Netherlands, Sweden, India, Pakistan, Switzerland, South Africa). Jersey, Guernsey, and Isle of Man are not among them.
-
-For the IHT question on Crown Dependency property held by a UK long-term-resident individual, or on UK residential property held through a Crown Dependency company, the UK applies its domestic IHT rules without treaty mediation. The Crown Dependencies have no inheritance tax of their own; there is therefore no double-tax risk requiring treaty mediation. UK IHT applies under Schedule A1 (residential property look-through), under direct UK situs rules for any UK assets owned directly, and under the April 2025 residence-based regime for worldwide assets of long-term-residents (with the 10-year FLTR tail post-departure).
-
-## Common traps for Crown Dependency property structures
-
-Six traps catch Crown Dependency property cases most often:
-
-1. **Assuming the pre-2017 IHT position still holds.** Schedule A1 IHTA 1984 has been in force since 6 April 2017; UK residential property held through any overseas company (Crown Dependency or otherwise) is looked through. Non-dom shelter on UK residential property via Crown Dependency structures ended on this date.
-
-2. **Treating share disposal as outside UK NRCGT.** Article 13(4) of the 2018 treaties brought property-rich-entity share disposals into UK taxing rights. NRCGT under TCGA 1992 s.1A and Sch 1A applies. Pre-2018 legacy assumptions are wrong.
-
-3. **Overlooking the FLTR tail for UK-resident-leavers.** The April 2025 residence-based IHT regime keeps long-term-residents within UK IHT on worldwide assets for up to 10 years post-departure. Crown Dependency residence does not reset the clock.
-
-4. **Confusing Crown Dependency 0% corporate tax with UK 0% tax on UK rental.** UK rental held by a Jersey, Guernsey, or Isle of Man company is taxable in the UK under Article 6 of the 2018 treaty and under UK domestic CT. The Crown Dependency 0% rate is irrelevant; UK Corporation Tax applies.
-
-5. **Failing to apply for NRL gross-payment approval.** Crown Dependency-resident landlords (individual or company) without NRL1 / NRL2 / NRL3 approval face 20% withholding by UK letting agents and tenants under FA 1995 Sch 23. Treaty residence does not exempt; the NRL scheme is statutory.
-
-6. **Underestimating the cost of restructure.** Collapsing or restructuring a Crown Dependency company structure typically triggers NRCGT on the underlying property gain, plus latent share gain crystallisation under Article 13(4), plus operational and legal costs. The 'collapse' decision is rarely zero-cost; modelling is essential before instructing.
-
-## What to do next
-
-The Crown Dependency property structure is no longer a default reach for UK property holdings. The three closure events (Schedule A1 from 2017, Article 13(4) from 2018, residence-based IHT from 2025) have eliminated the historic shelter reasons. New acquisitions in 2026 will almost always be structurally better in a UK Ltd or direct personal name. Existing structures need a why-did-we-set-this-up audit.
-
-- **Identify which shelter, if any, originally drove the structure.** IHT (now closed by Sch A1)? Share-disposal CGT (now closed by Article 13(4))? Operational asset protection (may still hold; non-tax reasons)?
-- **Model the collapse cost.** NRCGT on the underlying property gain + latent share gain crystallisation + operational unwind costs + restructure stamp / SDLT considerations.
-- **Model the maintain cost.** Ongoing UK CT on rental at small profits rate, IHT exposure under Sch A1, structural complexity vs simplicity.
-- **Model the restructure cost.** Where the structure has non-tax purpose (asset protection, multiple-jurisdiction operations, family ownership patterns), restructure within the Crown Dependency framework (different company structure, beneficial-ownership rearrangement) may preserve the non-tax benefits at lower tax cost than full collapse.
-- **Watch the FLTR tail.** Crown Dependency-resident former-UK-residents have a 10-year post-departure UK IHT tail on worldwide assets under the April 2025 regime. Estate planning during the tail window should anticipate the end-of-tail position.
-- **NRL compliance first.** Whatever the structural decision, ensure NRL1 / NRL2 / NRL3 approval is in place to receive UK rental gross; otherwise 20% withholding applies regardless of treaty residence.
-
-For the framework underlying every UK treaty, see our [UK tax treaties framework guide](/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide). For the cascade mechanics on dual UK-Crown Dependency residence, see our [Article 4 tie-breaker page](/blog/non-resident-landlord-tax/dta-tie-breaker-test-dual-residence-property-owners). For the IHT residence test that drives the post-2025 exposure, see our [April 2025 IHT non-resident page](/blog/non-resident-landlord-tax/iht-non-resident-uk-property-april-2025-residence-test). For the NRCGT operational consequences on share or direct disposal, see our [non-resident CGT rates page](/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting). For the NRL scheme that applies to any Crown Dependency-resident landlord's UK rental, see our [non-resident landlord scheme complete guide](/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide). For the SDLT 2% surcharge that applies to Crown Dependency purchasers, see our [2% non-resident SDLT surcharge page](/blog/non-resident-landlord-tax/sdlt-non-resident-2-percent-surcharge).
-
-The Crown Dependencies remain attractive jurisdictions for residence and personal banking. They are no longer materially attractive for holding UK property through a corporate structure. The 2018 treaties, Schedule A1, and the April 2025 IHT regime have, together, completed the policy arc that began in 2013 with the original ATED framework and 2015 with the original NRCGT extension. The historic shelter is gone; what remains is a structural choice between simplicity (direct holding or UK Ltd) and complexity (Crown Dependency company with no tax advantage). For most landlords, simplicity wins.
+<h2>Treaty does not cover IHT</h2>
+<p>A clarification that recurs in Crown Dependency property cases: the 2018 UK-Jersey, UK-Guernsey, and UK-Isle of Man treaties are income and capital tax treaties. They do not cover inheritance tax. The UK has IHT treaties with eight jurisdictions only (US, France, Netherlands, Sweden, India, Pakistan, Switzerland, South Africa). Jersey, Guernsey, and Isle of Man are not among them.</p>
+<p>For the IHT question on Crown Dependency property held by a UK long-term-resident individual, or on UK residential property held through a Crown Dependency company, the UK applies its domestic IHT rules without treaty mediation. The Crown Dependencies have no inheritance tax of their own; there is therefore no double-tax risk requiring treaty mediation. UK IHT applies under Schedule A1 (residential property look-through), under direct UK situs rules for any UK assets owned directly, and under the April 2025 residence-based regime for worldwide assets of long-term-residents (with the 10-year FLTR tail post-departure).</p>
+<h2>Common traps for Crown Dependency property structures</h2>
+<p>Six traps catch Crown Dependency property cases most often:</p>
+<ol>
+<li>
+<p><strong>Assuming the pre-2017 IHT position still holds.</strong> Schedule A1 IHTA 1984 has been in force since 6 April 2017; UK residential property held through any overseas company (Crown Dependency or otherwise) is looked through. Non-dom shelter on UK residential property via Crown Dependency structures ended on this date.</p>
+</li>
+<li>
+<p><strong>Treating share disposal as outside UK NRCGT.</strong> Article 13(4) of the 2018 treaties brought property-rich-entity share disposals into UK taxing rights. NRCGT under TCGA 1992 s.1A and Sch 1A applies. Pre-2018 legacy assumptions are wrong.</p>
+</li>
+<li>
+<p><strong>Overlooking the FLTR tail for UK-resident-leavers.</strong> The April 2025 residence-based IHT regime keeps long-term-residents within UK IHT on worldwide assets for up to 10 years post-departure. Crown Dependency residence does not reset the clock.</p>
+</li>
+<li>
+<p><strong>Confusing Crown Dependency 0% corporate tax with UK 0% tax on UK rental.</strong> UK rental held by a Jersey, Guernsey, or Isle of Man company is taxable in the UK under Article 6 of the 2018 treaty and under UK domestic CT. The Crown Dependency 0% rate is irrelevant; UK Corporation Tax applies.</p>
+</li>
+<li>
+<p><strong>Failing to apply for NRL gross-payment approval.</strong> Crown Dependency-resident landlords (individual or company) without NRL1 / NRL2 / NRL3 approval face 20% withholding by UK letting agents and tenants under FA 1995 Sch 23. Treaty residence does not exempt; the NRL scheme is statutory.</p>
+</li>
+<li>
+<p><strong>Underestimating the cost of restructure.</strong> Collapsing or restructuring a Crown Dependency company structure typically triggers NRCGT on the underlying property gain, plus latent share gain crystallisation under Article 13(4), plus operational and legal costs. The 'collapse' decision is rarely zero-cost; modelling is essential before instructing.</p>
+</li>
+</ol>
+<h2>What to do next</h2>
+<p>The Crown Dependency property structure is no longer a default reach for UK property holdings. The three closure events (Schedule A1 from 2017, Article 13(4) from 2018, residence-based IHT from 2025) have eliminated the historic shelter reasons. New acquisitions in 2026 will almost always be structurally better in a UK Ltd or direct personal name. Existing structures need a why-did-we-set-this-up audit.</p>
+<ul>
+<li><strong>Identify which shelter, if any, originally drove the structure.</strong> IHT (now closed by Sch A1)? Share-disposal CGT (now closed by Article 13(4))? Operational asset protection (may still hold; non-tax reasons)?</li>
+<li><strong>Model the collapse cost.</strong> NRCGT on the underlying property gain + latent share gain crystallisation + operational unwind costs + restructure stamp / SDLT considerations.</li>
+<li><strong>Model the maintain cost.</strong> Ongoing UK CT on rental at small profits rate, IHT exposure under Sch A1, structural complexity vs simplicity.</li>
+<li><strong>Model the restructure cost.</strong> Where the structure has non-tax purpose (asset protection, multiple-jurisdiction operations, family ownership patterns), restructure within the Crown Dependency framework (different company structure, beneficial-ownership rearrangement) may preserve the non-tax benefits at lower tax cost than full collapse.</li>
+<li><strong>Watch the FLTR tail.</strong> Crown Dependency-resident former-UK-residents have a 10-year post-departure UK IHT tail on worldwide assets under the April 2025 regime. Estate planning during the tail window should anticipate the end-of-tail position.</li>
+<li><strong>NRL compliance first.</strong> Whatever the structural decision, ensure NRL1 / NRL2 / NRL3 approval is in place to receive UK rental gross; otherwise 20% withholding applies regardless of treaty residence.</li>
+</ul>
+<p>For the framework underlying every UK treaty, see our <a href="/blog/non-resident-landlord-tax/tax-treaties-property-investors-treaty-framework-guide">UK tax treaties framework guide</a>. For the cascade mechanics on dual UK-Crown Dependency residence, see our <a href="/blog/non-resident-landlord-tax/dta-tie-breaker-test-dual-residence-property-owners">Article 4 tie-breaker page</a>. For the IHT residence test that drives the post-2025 exposure, see our <a href="/blog/non-resident-landlord-tax/iht-non-resident-uk-property-april-2025-residence-test">April 2025 IHT non-resident page</a>. For the NRCGT operational consequences on share or direct disposal, see our <a href="/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting">non-resident CGT rates page</a>. For the NRL scheme that applies to any Crown Dependency-resident landlord's UK rental, see our <a href="/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide">non-resident landlord scheme complete guide</a>. For the SDLT 2% surcharge that applies to Crown Dependency purchasers, see our <a href="/blog/non-resident-landlord-tax/sdlt-non-resident-2-percent-surcharge">2% non-resident SDLT surcharge page</a>.</p>
+<p>The Crown Dependencies remain attractive jurisdictions for residence and personal banking. They are no longer materially attractive for holding UK property through a corporate structure. The 2018 treaties, Schedule A1, and the April 2025 IHT regime have, together, completed the policy arc that began in 2013 with the original ATED framework and 2015 with the original NRCGT extension. The historic shelter is gone; what remains is a structural choice between simplicity (direct holding or UK Ltd) and complexity (Crown Dependency company with no tax advantage). For most landlords, simplicity wins.</p>

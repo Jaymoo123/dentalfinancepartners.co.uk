@@ -50,7 +50,7 @@ faqs:
 <li><strong>2026/27 rates:</strong> 20% basic rate (£12,571-£50,270), 40% higher rate (£50,271-£125,140), 45% additional rate (£125,140+)</li>
 <li><strong>From April 2027:</strong> Separate property income tax rates apply — 22% basic, 42% higher, 47% additional rate on all property income</li>
 </ul>
-<p>Many commercial landlords opt for limited company ownership to benefit from corporation tax rates of 19% (up to £250k profits) or 25% (above £250k).</p>
+<p>Many commercial landlords opt for limited company ownership to benefit from corporation tax rates of 19% (small profits, up to £50k) or 25% (main rate, above £250k) with marginal relief between.</p>
 
 <h2>Allowable Expenses and Capital Allowances</h2>
 

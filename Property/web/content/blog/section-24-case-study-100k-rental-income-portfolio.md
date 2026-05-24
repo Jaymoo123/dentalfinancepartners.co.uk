@@ -97,7 +97,7 @@ faqs:
 <ul>
 <li>Stamp duty on property transfers (typically 3-5%)</li>
 <li>Capital gains tax on deemed disposals (at 18% or 24% for residential property)</li>
-<li>Ongoing corporation tax (at 19% for profits up to £250k or 25% for the main rate) and dividend tax</li>
+<li>Ongoing corporation tax (at 19% small profits rate for profits up to £50k, 25% main rate above £250k, with marginal relief between) and dividend tax</li>
 <li>Additional administrative burden</li>
 </ul>
 <p>For Sarah's portfolio, <a href="/incorporation">incorporation</a> might save £8,000-£12,000 annually after all costs. Given the £23,154 annual tax impact, Sarah needs professional advice on incorporation timing and structure. Key factors include current property values vs purchase prices, available reliefs and elections, long-term investment strategy, and administrative capacity. Many landlords in Sarah's position find that incorporation pays for itself within 2-3 years, despite the upfront costs.</p>

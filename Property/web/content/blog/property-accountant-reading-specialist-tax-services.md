@@ -63,7 +63,7 @@ faqs:
 
 <h3>Incorporation Analysis</h3>
 
-<p>Detailed modelling to determine whether transferring properties to a limited company structure would reduce your overall tax burden is a key service. This analysis considers current and future tax rates (corporation tax at 19% for profits up to £250k and 25% main rate), mortgage arrangements, and your broader financial situation.</p>
+<p>Detailed modelling to determine whether transferring properties to a limited company structure would reduce your overall tax burden is a key service. This analysis considers current and future tax rates (corporation tax at 19% small profits rate for profits up to £50k, 25% main rate above £250k, with marginal relief between), mortgage arrangements, and your broader financial situation.</p>
 
 <h3>HMO, Multi-Let and Commercial Properties</h3>
 

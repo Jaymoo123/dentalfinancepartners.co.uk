@@ -98,7 +98,7 @@ faqs:
 <p><strong>Late tax year transfers (January-March)</strong> delay CGT payments but provide less company rental income for the first tax year.</p>
 <p>For most landlords, transfers in May-July offer a good balance - enough company rental income to justify the year's complexity while allowing time to plan CGT payments.</p>
 <p>With property income tax rates becoming 22%/42%/47% from April 2027, timing becomes crucial for higher rate taxpayers. Consider transferring highest-yielding properties first to maximise income tax savings.</p>
-<p>For example, a higher rate taxpayer earning £60,000 salary plus £20,000 rental profit faces 42% tax on property income from 2027. Transferring these properties to a company (19% corporation tax up to £250,000 profits) saves 23% on property profits.</p>
+<p>For example, a higher rate taxpayer earning £60,000 salary plus £20,000 rental profit faces 42% tax on property income from 2027. Transferring these properties to a company (19% corporation tax small profits rate up to £50,000, 25% main rate above £250,000, with marginal relief between) saves a substantial portion of the tax compared to personal ownership.</p>
 <h3>Market Conditions and Valuations</h3>
 <p>Property market conditions affect both CGT liabilities and SDLT costs. In rising markets, earlier transfers can crystallise lower gains. In falling markets, delaying transfers might reduce CGT but requires balancing against ongoing Section 24 restrictions.</p>
 <p>Remember that SDLT is based on current market value regardless of your original purchase price, so market timing affects these costs too.</p>

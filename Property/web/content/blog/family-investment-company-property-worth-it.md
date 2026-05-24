@@ -28,7 +28,7 @@ faqs:
 
 <h2>What Is a Family Investment Company for Property?</h2>
 <p>A <strong>FIC property</strong> structure involves incorporating a limited company where different family members hold different classes of shares. Parents typically retain voting control through ordinary shares, while children receive non-voting shares that can appreciate in value over time.</p>
-<p>The company owns the property portfolio and pays corporation tax on rental profits at 19% (up to £250,000 profit) or 25% (above £250,000). Distributions to shareholders are subject to dividend tax, but the structure can facilitate wealth transfer to the next generation.</p>
+<p>The company owns the property portfolio and pays corporation tax on rental profits at 19% (small profits rate, profits up to £50,000) or 25% (main rate, profits above £250,000), with marginal relief tapering between. Distributions to shareholders are subject to dividend tax, but the structure can facilitate wealth transfer to the next generation.</p>
 <p>Key features of a family investment company include:</p>
 <ul>
 <li>Different share classes for family members</li>
@@ -54,7 +54,7 @@ faqs:
 <p>Property rental profits within a FIC are taxed at corporation tax rates rather than income tax. For a higher-rate taxpayer, this can provide immediate savings:</p>
 <ul>
 <li>Income tax on rental profits: 40% (higher rate) or 45% (additional rate)</li>
-<li>Corporation tax: 19% (profits up to £250,000) or 25% (above £250,000)</li>
+<li>Corporation tax: 19% (small profits rate, profits up to £50,000) or 25% (main rate, above £250,000), with marginal relief between</li>
 <li>From April 2027: separate property income tax rates of 22%/42%/47% will apply</li>
 </ul>
 <p>However, any profits distributed as dividends face dividend tax, reducing the overall advantage significantly.</p>

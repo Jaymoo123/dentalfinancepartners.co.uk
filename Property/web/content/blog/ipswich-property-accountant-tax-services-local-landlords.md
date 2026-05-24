@@ -57,7 +57,7 @@ faqs:
 <p>Property accountants help Ipswich landlords implement digital systems that will be mandatory from April 2026. This includes cloud-based accounting software, digital receipt capture, and integration with bank feeds for automated transaction categorisation. Getting systems in place early allows landlords to identify and resolve issues before the MTD deadline, avoiding penalties and compliance problems.</p>
 
 <h2>Property Investment Companies and Incorporation</h2>
-<p>For larger property portfolios, incorporation can provide significant tax advantages. Companies pay corporation tax at 19% (up to £250,000 profit) or 25% above that threshold, compared to property income tax rates of 22%/42%/47% from April 2027. However, incorporation involves setup costs, ongoing compliance requirements, and extraction of profits through dividends or salary. A property accountant analyses whether incorporation makes financial sense based on the specific circumstances of each Ipswich landlord.</p>
+<p>For larger property portfolios, incorporation can provide significant tax advantages. Companies pay corporation tax at 19% (small profits rate, up to £50,000 profit) or 25% (main rate, above £250,000), with marginal relief between, compared to property income tax rates of 22%/42%/47% from April 2027. However, incorporation involves setup costs, ongoing compliance requirements, and extraction of profits through dividends or salary. A property accountant analyses whether incorporation makes financial sense based on the specific circumstances of each Ipswich landlord.</p>
 
 <h2>Specialist Property Types and Ownership Structures</h2>
 <h3>HMO and Multi-Unit Property Specialists</h3>

@@ -69,7 +69,7 @@ faqs:
 
 <h2>Section 24 and Company Ownership</h2>
 <p>Limited companies remain unaffected by Section 24. Companies can still deduct mortgage interest as a business expense, potentially making <a href="/incorporation">incorporation</a> attractive for heavily mortgaged portfolios.</p>
-<p>However, incorporation involves other considerations including corporation tax rates (19% for profits up to £250k, 25% main rate), dividend tax, and the complexity of extracting profits. It's not automatically beneficial for every landlord affected by section 24 tax relief.</p>
+<p>However, incorporation involves other considerations including corporation tax rates (19% small profits rate for profits up to £50k, 25% main rate above £250k, with marginal relief between), dividend tax, and the complexity of extracting profits. It's not automatically beneficial for every landlord affected by section 24 tax relief.</p>
 
 <h2>Record Keeping and Professional Advice</h2>
 <p>Accurate record keeping becomes even more important under section 24 tax relief. You need to track all mortgage interest payments by property, other finance costs eligible for basic rate relief, fully deductible expenses separately, and rental income by property.</p>

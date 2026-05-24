@@ -96,7 +96,7 @@ faqs:
 <ul>
 <li>Capital gains tax on transfer (though incorporation relief may apply). Current CGT rates for residential property are 18% (basic rate) and 24% (higher rate).</li>
 <li>Stamp duty land tax at commercial rates.</li>
-<li>Corporation tax on company profits (19% on profits up to £250k, 25% main rate).</li>
+<li>Corporation tax on company profits (19% small profits rate on profits up to £50k, 25% main rate above £250k, with marginal relief between).</li>
 <li>Personal tax when extracting funds from the company.</li>
 </ul>
 <p>Our <a href="/incorporation">incorporation service</a> can help you understand whether this strategy makes sense for your portfolio.</p>

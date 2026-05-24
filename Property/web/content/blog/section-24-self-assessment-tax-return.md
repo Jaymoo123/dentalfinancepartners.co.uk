@@ -108,7 +108,7 @@ faqs:
 <ul>
 <li><strong>Timing Capital Gains:</strong> Capital gains are taxed separately and aren't affected by Section 24. Landlords facing large Section 24 increases might consider <a href="/blog/capital-gains-tax/capital-gains-tax-property-complete-guide-uk">realising capital gains</a> in years with lower property profits. Remember, Capital Gains Tax rates for residential property are 18% (basic rate) and 24% (higher rate).</li>
 <li><strong>Spouse Income Splitting:</strong> Joint property ownership between spouses can help manage Section 24's impact by splitting rental income between different tax rates.</li>
-<li><strong>Incorporation:</strong> Many landlords consider <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation into a limited company</a> to avoid Section 24 entirely. Companies can still deduct mortgage interest fully against rental profits. Corporation tax rates are 19% on profits up to £250,000 and 25% on profits above this threshold.</li>
+<li><strong>Incorporation:</strong> Many landlords consider <a href="/blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk">incorporation into a limited company</a> to avoid Section 24 entirely. Companies can still deduct mortgage interest fully against rental profits. Corporation tax rates are 19% small profits rate on profits up to £50,000 and 25% main rate on profits above £250,000, with marginal relief tapering between.</li>
 </ul>
 
 <h2>Essential Record Keeping and Compliance</h2>
