@@ -122,7 +122,7 @@ editorialNote: "AIA depth page for CAA 2001 Bucket C, walking ss.51A-51N end-to-
 
 <p>A HoldCo plus property SPV structure typically combines AIA allocation considerations with dividend extraction mechanics, intra-group lending, and exit-route planning. The single-AIA constraint adds a dimension to the HoldCo group corporate-tax computation: AIA decisions in year one affect the pool position in subsequent years, which interacts with full expensing on top of AIA (full expensing covers excess unused main-rate spend) and with the dividend extraction flow upward into the HoldCo and out to shareholders.</p>
 
-<p>The cross-bucket sibling page on HoldCo dividend conduit mechanics covers the extraction side in depth, including the intra-group transfer of capital-allowance-claimed plant under s.45BB (the full-expensing intra-group transfer carve-out) and the Sch A1 connected-company restrictions on subsequent disposals; the AIA allocation strategy in this page should be read in conjunction with that companion piece for the full HoldCo-plus-SPV planning frame.</p>
+<p>The <a href="/blog/incorporation-and-company-structures/multi-company-group-extraction-spv-holding-co-dividend-conduit-mechanics">cross-bucket sibling page on HoldCo dividend conduit mechanics</a> covers the extraction side in depth, including the intra-group transfer of capital-allowance-claimed plant under s.45BB (the full-expensing intra-group transfer carve-out) and the Sch A1 connected-company restrictions on subsequent disposals; the AIA allocation strategy in this page should be read in conjunction with that companion piece for the full HoldCo-plus-SPV planning frame.</p>
 
 <h2>Worked HoldCo + three SPV allocation scenario</h2>
 
