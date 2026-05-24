@@ -128,6 +128,8 @@ editorialNote: "Property-focused walk-through of SSE: when the trading-company t
 
 <p>HMRC has anti-avoidance grit for this. Paragraph 5 of Schedule 7AC disapplies SSE where the disposal is part of arrangements whose main purpose (or one of the main purposes) is to capture the exemption. The test is on commercial substance: a genuine development structure with real trading activity has nothing to fear. A paper-only restructure that exists only to create an SSE-qualifying share sale will be challenged.</p>
 
+<p>For the upstream cash-strip mechanic that runs before any share sale (pre-sale dividend, pre-sale pension contribution, cash-left-in separate consideration with the ITA 2007 s.701 advance-clearance discipline), see our <a href="/blog/incorporation-and-company-structures/pre-sale-extraction-strip-cash-before-spv-share-sale-vs-buyer-discount">pre-sale extraction strip guide</a>. The SSE route and the pre-sale strip are companion routes: SSE governs the share-sale gain; the pre-sale strip governs the cash inside the SPV at the point of sale.</p>
+
 <h2>Failure modes for property groups</h2>
 
 <p>The pattern of mistakes we see most often when reviewing SSE positions on property-group exits:</p>

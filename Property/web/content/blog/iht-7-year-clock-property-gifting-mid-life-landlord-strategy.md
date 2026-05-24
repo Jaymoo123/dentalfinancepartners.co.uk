@@ -122,6 +122,8 @@ editorialNote: "Wave 4 C4 (IHT estate planning). The mid-life landlord strategy 
 
 <p>The decision often runs: phase a small number of direct gifts during the mid-life corridor (route one) on the properties with the largest latent gains and the lowest current rental yields; consider FIC restructuring for the larger remaining portfolio (route two) once the donor crosses 55 to 58; reserve deed-of-variation flexibility for the couple's estate planning (route three) so the surviving spouse retains optionality on the first-death portion.</p>
 
+<p>For the receiving-side companion to this parent-side analysis (the five-route structural decision tree as seen by the adult children, plus the FIC alternative and the hold-to-death-vs-gift-now arithmetic), see our <a href="/blog/incorporation-and-company-structures/gifting-property-to-adult-children-decision-tree-cgt-iht-occupancy-mechanics">adult-children gifting decision tree</a>.</p>
+
 <aside>
 <p>The right combination of routes depends on the portfolio's CGT base-cost profile, the donor's age and health, the family's expected receipt profile, and the donor's appetite for ongoing corporate governance.</p>
 <p>If you are in the mid-life corridor and starting to think about the clock, the modelling is worth doing properly. Get in touch via the form at the foot of the page for a specialist review of the right phasing for your portfolio.</p>

@@ -95,6 +95,8 @@ editorialNote: "Reviewed against HMRC RDR3 (Statutory Residence Test), HMRC CG26
 
 <p>For Mark and Sarah (permanent move to Spain), the sell-or-hold question is dominated by UK-Spain DTA and Spanish wealth tax considerations rather than s.10A. For David (one property, Dubai, four years out), the question is whether the four-year window crosses the s.10A 5-year threshold; the temporary non-residence rule recaptures the gain in his return year if his absence is five years or less.</p>
 
+<p>If your portfolio is held via a property SPV rather than personally, the compressed-extraction-sequence on the SPV side (DLA-first, dividend-bunching, s.10A / s.812 5-year recapture trap on dividends taken post-departure pre-return) sits in our <a href="/blog/incorporation-and-company-structures/time-pressure-extraction-divorce-illness-emigration-sequence-12-month-window">time-pressure SPV extraction guide</a>. That page applies the same 12-month window to a property SPV director's three pressure scenarios (divorce, terminal illness, emigration) with worked numbers on each.</p>
+
 <h2>Nine to six months out: lender, insurance, and the agent shortlist</h2>
 
 <h3>4. Lender consent or buy-to-let refinance</h3>
