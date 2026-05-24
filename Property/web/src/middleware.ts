@@ -448,6 +448,8 @@ const DUPLICATE_REDIRECTS: Record<string, string> = {
   "cgt-reporting-deadlines-property-2026": "/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026",
   "how-to-report-property-sale-hmrc-60-days": "/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026",
   "report-property-sale-hmrc-60-days-guide": "/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026",
+  // Track 2 Phase 3 REDIRECT bundle (2026-05-24) — B2-A3 single-page collapse to BTL CGT calculation canonical (Cannib Index §6 cross-source pair)
+  "capital-gains-tax-selling-rental-property-uk": "/blog/capital-gains-tax/cgt-selling-buy-to-let-property-calculation-guide",
 };
 
 const LOCATION_TO_BLOG: Record<string, string> = {
