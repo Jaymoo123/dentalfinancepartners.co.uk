@@ -36,6 +36,105 @@ If you (Session A/B/C) hit a factual conflict between a competitor source and a 
 
 **Welsh equivalent (LTT):** Land Transaction Tax via Welsh Revenue Authority. Bands and rates differ from SDLT. Higher rates for additional properties.
 
+### 1.A Partnership SDLT relief — FA 2003 Sch 15 — Wave 7 extension (locked, 2026-05-24)
+
+**Scope.** §1.A extends the §1 brief Sch 15 para 10 note with the full sum-of-lower-proportions (SLP) mechanics for partnership transfers — both **into** a partnership (Sch 15 paras 10-13) and **out of** a partnership to a partner or connected person (Sch 15 paras 18-20). Wave 7 Bucket C C9 (Partnership SDLT relief) cites §1.A directly.
+
+- **Statutory hooks:** FA 2003 Schedule 15 paras 10-13 (transfer into partnership), paras 14-17 (transfers of partnership interests), paras 18-20 (transfer from partnership to partner), para 17A (3-year anti-withdrawal rule), para 34 (partnership share definition by reference to income-profit entitlement). Verified at https://www.legislation.gov.uk/ukpga/2003/14/schedule/15 on 2026-05-24.
+- **HMRC manual anchor:** **SDLTM33500+** (Partnership transactions). Confirmed current (last updated 20 February 2026) at https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm33500 on 2026-05-24. F-21 / Wave 6 confirmed this is the correct partnership-transfer reference; sessions must NOT cite the s.75A general anti-avoidance manual at **SDLTM09050+** for partnership-transfer mechanics (s.75A is the Ramsay anti-avoidance code, separate territory).
+- **Transfer INTO partnership — Sch 15 para 10 + para 12 SLP calculation:**
+  - **Chargeable consideration formula:** `Chargeable consideration = MV × (1 − SLP%)` where MV is market value of the chargeable interest and SLP is the sum of the lower proportions for partners connected with the transferor(s).
+  - **Five-step SLP calculation (Sch 15 para 12):**
+    1. **Identify relevant owners** — persons entitled to a proportion of the chargeable interest pre-transaction who become partners post-transaction OR are connected with partners post-transaction (within CTA 2010 s.1122).
+    2. **Identify corresponding partners** — for each relevant owner, the partners who are that owner or are connected with that owner.
+    3. **Apportion the relevant owner's pre-transaction proportion** among their corresponding partners (free-choice apportionment within statutory limits).
+    4. **Each partner's lower proportion** = the lesser of (a) the attributable proportion under step 3 and (b) the partner's post-transaction partnership share (per para 34, profit-sharing ratio).
+    5. **Sum the lower proportions** across all partners — this is the SLP%.
+  - **Effect:** the higher the SLP (more partners connected with transferor; tighter post-transfer partnership shares), the lower the chargeable consideration. **100% SLP = zero chargeable consideration = zero SDLT.** This is the route by which a sole-proprietor letting business transferring portfolio into a connected partnership (e.g. husband-and-wife partnership, family LLP) may achieve zero-SDLT incorporation **IF** the partnership pre-exists genuinely (not a contrivance) and the partnership shares align with the SLP calculation.
+- **Transfer FROM partnership to partner — Sch 15 paras 18-20:**
+  - Mirror SLP mechanic operates in reverse. Chargeable consideration = MV × (1 − SLP%) on transfer out to a partner. SLP calculation uses the same connected-party + partnership-share aggregation.
+- **3-year anti-withdrawal rule — Sch 15 para 17A:**
+  - Within **3 years** of a Sch 15 para 10 / 14 transfer-in, any "qualifying event" (capital withdrawal from partnership, repayment of partner loan, reduced interest, return of capital in any form) is itself a chargeable transaction.
+  - Charge cannot exceed MV of the chargeable interest originally transferred, reduced by any amount already charged.
+  - This is the **anti-Ramsay safeguard** within Sch 15: prevents the SLP relief being used as a quick-flip route where the partner exits within 3 years.
+- **Partnership share definition — Sch 15 para 34:**
+  - "Partnership share" at a time = the proportion in which the partner is entitled at that time to share in the **income profits** of the partnership.
+  - **Not capital profits**, **not voting rights**, **not asset entitlement on dissolution** — income-profit entitlement is the operative metric. Sessions writing on Wave 7 C9 must distinguish; partnership agreements with mismatched income vs capital ratios produce non-obvious SLP outcomes.
+- **Connected persons — CTA 2010 s.1122:**
+  - Sch 15 imports the CTA 2010 s.1122 connected-persons definition (spouse, civil partner, lineal ascendants/descendants, siblings, spouse-of-sibling chains; controlled-company chains).
+  - **Cohabitants are not connected** under s.1122. A cohabiting unmarried couple cannot use the SLP relief at the partnership-transfer-in stage in respect of each other (this is a common drift in popular commentary).
+- **Genuine-partnership requirement (anti-Ramsay defence under s.75A FA 2003 + HMRC enquiry practice):**
+  - Sch 15 SLP is available only where there is a **real, pre-existing partnership** with substance: separate partnership tax returns under SA800; partnership accounting records; joint borrowing where mortgaged; partnership decision-making structures.
+  - **HMRC's standard enquiry attack** is that the "partnership" is a paper contrivance entered into just before incorporation to access SLP — the s.75A general anti-avoidance rule (Ramsay code, SDLTM09050+) is then invoked to ignore the partnership for SDLT purposes.
+  - **Evidential threshold (post-Project Blue):** at least 2 years of genuine partnership operation pre-transfer with HMRC-filed partnership returns is the working safe harbour; shorter periods invite enquiry.
+- **Cross-references:** §21 (LtdCo + FIC), §23 (Welsh LTT + Scottish LBTT — note these have their own partnership-relief frameworks under LTTA 2017 Sch 7 and LBT(S)A 2013 Sch 17 respectively; not identical to FA 2003 Sch 15).
+- **Practical writing rule for sessions (Wave 7 C9):** lead with the **substance-requirement** (genuine pre-existing partnership) as the threshold; then mechanics of the SLP calculation with a worked example; then the 3-year para 17A anti-withdrawal trap; then the s.75A enquiry-attack architecture. Avoid framing Sch 15 as a "loophole" — the route is statutorily authorised but tightly conditioned.
+
+### 1.B Linked transactions — FA 2003 s.108 — Wave 7 extension (locked, 2026-05-24)
+
+- **Statutory hook:** FA 2003 s.108. **Manager_prompt typo correction:** Manager_prompt §19 Wave 7 §1.X picks reference "SDLT linked-transactions Sch 4 para 5" — Sch 4 para 5 is actually the **exchanges** provision (consideration partly in land), not the linked-transactions definition. The linked-transactions hook is s.108 (rates aggregation) plus para 5 only for the partial-consideration exchange case.
+- **Definition — s.108(1):** Transactions are "linked" where they form "**part of a single scheme, arrangement or series of transactions between the same vendor and purchaser or persons connected with them**". Connected persons defined by reference to CTA 2010 s.1122.
+- **Aggregation mechanism — s.108(2):** Where linked transactions share an effective date, the purchaser(s) may file a single Land Transaction Return treating the linked transactions as one notifiable transaction. **Effect:** total chargeable consideration is aggregated to determine the SDLT rate applicable across all the linked transactions (so two £400k purchases of separate properties that ARE linked get rated as one £800k purchase, attracting higher-band rates on the combined consideration).
+- **Joint purchasers — s.108(3):** Where multiple purchasers file jointly under s.108(2), joint-purchaser rules (s.103 FA 2003) apply as if the linked transactions are a single transaction with joint purchasers.
+- **Scottish + Welsh exclusion — s.108(1A):** Transactions involving Scottish or Welsh land are **excluded** from the linked-transactions definition. Cross-border portfolio transactions therefore use the appropriate jurisdiction's linked-transactions definition (LBTT(S)A 2013 s.57; LTTA 2017 s.65). Sessions writing on cross-border landlord transactions must use the right jurisdictional anchor.
+- **The 6-dwellings rule interaction (s.116(7)) — §1 main text already covers**: where 6+ dwellings are subject to a single transaction OR linked transactions, the non-residential treatment applies. The linkage discipline is therefore **load-bearing for the 6-dwellings rule** — sessions must identify whether multiple property contracts are linked under s.108 before invoking the 6-dwellings auto-relief.
+- **HMRC manual anchor:** SDLTM30100+ (linked transactions general); SDLTM30200+ (specific scenarios).
+- **Practical writing rule for sessions (Wave 7 C5):** the test is **"single scheme, arrangement or series"** between same/connected parties — purposive, not formalistic. HMRC's enquiry pattern: separate contracts on the same day to the same buyer = linked; contracts within 6 months between connected parties = high risk of linkage; contracts more than 12 months apart, separate negotiations, unrelated economic purpose = likely not linked. Sessions writing on Wave 7 C5 must surface the **connected-persons + arrangement test** as the operative two-part check.
+
+### 1.C Bewley uninhabitable-property test — Wave 7 extension (locked, 2026-05-24)
+
+- **Statutory hook:** FA 2003 s.116(1)(a) — definition of "residential property": "a building that is used or **suitable for use as a single dwelling**, or is in the process of being constructed or adapted for such use". The "suitable for use" limb is the operative test for derelict / uninhabitable acquisitions.
+- **Leading authority:** **P N Bewley Ltd v HMRC [2019] UKFTT 65 (TC)** (TC07097). Bungalow purchased for £200k+, derelict, no functioning kitchen, no functioning bathroom, asbestos throughout, surveyor reported "structure dangerous". FTT held the property was **NOT residential property** within s.116(1)(a) at the effective date — the £150k non-residential bands applied (saving the buyer £6,000+ in SDLT). The reasoning: a property requiring complete reconstruction of major elements is not "suitable for use" as a dwelling; minor repair or refurbishment requirements do not change residential classification, but structural / asbestos / utilities-failure does.
+- **Subsequent narrowing — the post-Bewley line:**
+  - **Hyman v HMRC [2019] UKFTT 469** (and on appeal UT [2021] UKUT 68; CA [2022] EWCA Civ 185): the "suitable for use" test is **"in principle suitable"** — minor repairs do not undermine residential character.
+  - **Mudan v HMRC [2023] UKFTT 317** + **MHB Ltd v HMRC**: properties with intact structure but unmodernised condition (no functioning kitchen, no central heating, decor dated, electrical wiring 1970s) remain residential — the unmodernised state does not bring them within Bewley.
+  - **Brown v HMRC [2024] UKFTT** + subsequent FTT cases continue the narrowing trajectory.
+  - **Current operational position (2026):** Bewley applies only to properties **substantially structurally dangerous, contaminated (asbestos, mould requiring removal), or requiring complete reconstruction of major elements**. Run-of-the-mill "fixer-upper" purchases do NOT qualify.
+- **HMRC's enquiry stance.** HMRC routinely challenges Bewley-style filings; the practical burden is on the buyer to evidence the structural / contamination state at the effective date (surveyor reports contemporaneous with completion; asbestos assessments; planning records showing the property as non-habitable). Many post-2019 buyer claims of non-residential classification have failed on enquiry.
+- **Practical writing rule for sessions (Wave 7 C8):** lead with **Bewley as the narrow exception**, not the rule. Surface the post-Bewley narrowing (Hyman / Mudan / MHB / Brown). Set the operational test as: **"would a surveyor, on the effective date, certify the property as dangerous to occupy and requiring complete reconstruction of major elements?"** If yes → arguable Bewley; if it's just unmodernised → residential. Cite HMRC's enquiry-stance reality (most buyer Bewley claims fail).
+
+### 1.D Spouse/civil-partner transfers on divorce or separation — FA 2003 Sch 3 para 3 — Wave 7 extension (locked, 2026-05-24)
+
+- **Statutory hook:** FA 2003 Schedule 3 para 3 — exempt transactions on dissolution of marriage or civil partnership. Verified at https://www.legislation.gov.uk/ukpga/2003/14/schedule/3 on 2026-05-24.
+- **Exemption scope.** A land transaction is exempt from SDLT where it is effected:
+  - On granting (or in connection with) **divorce, judicial separation, or annulment** between spouses, OR equivalent dissolution / separation of civil partnership;
+  - Pursuant to an **order of the court** under Matrimonial Causes Act 1973 ss.22A (maintenance pending suit), 23A (financial provision orders), 24A (property adjustment orders), OR the equivalent civil-partnership provisions under Civil Partnership Act 2004 Schedule 5;
+  - OR pursuant to **"any agreement made in contemplation of or otherwise in connection with the dissolution"** of the marriage/CP (so consent orders + separation agreements + post-decree property settlements all qualify).
+- **Time-of-transfer flexibility.** Sch 3 para 3 does not impose a strict deadline — the exemption applies whether the transfer is contemporaneous with the divorce decree or executed later pursuant to a divorce-related order or agreement. Common practice: transfer effected after Decree Absolute pursuant to the financial order.
+- **What the exemption does NOT cover:**
+  - **Pre-divorce inter-spousal transfers** (these are exempt under different rules — Sch 3 para 1 or the FA 2003 s.43 chargeable-consideration-nil treatment where no consideration passes). Sch 3 para 3 is specifically the dissolution-related route.
+  - **Transfers to third parties pursuant to a divorce.** A husband-to-trust-for-children transfer pursuant to a divorce order is NOT exempt under para 3 (the exemption is spouse-to-spouse only); third-party transfers are chargeable.
+  - **Mortgage assumption as consideration.** Where the receiving spouse takes over an existing mortgage, HMRC has historically argued the assumed mortgage liability is chargeable consideration; the consensus is that **on a Sch 3 para 3 exempt transfer the assumption is also exempt** (the policy intent is full no-SDLT treatment of divorce-driven property reallocation), but sessions must surface the historic ambiguity.
+  - **5% additional dwellings surcharge.** The Sch 3 para 3 exemption removes SDLT; the question of whether the surcharge would apply absent the exemption is academic in the divorce context — exempt is exempt.
+- **CGT no-gain-no-loss interaction (TCGA 1992 s.58 / s.225B).** Divorce-context transfers also benefit from CGT no-gain-no-loss treatment under s.225B (CGT main-residence treatment continues for the leaving spouse) and the s.58 spouse-transfer rule (where transfer is during a tax year of separation but before Decree Absolute, s.58 still applies). Sessions writing on Wave 7 C7 must combine both: SDLT-exempt under Sch 3 para 3 + CGT no-gain-no-loss under s.58/s.225B.
+- **HMRC manual anchor:** SDLTM07650+ (divorce-related transactions); CG65000+ (CGT on divorce, with cross-reference to s.58/s.225B).
+- **Practical writing rule for sessions (Wave 7 C7):** the SDLT-side is mechanically simple (Sch 3 para 3 exempt) — most of the writing value is on (a) the CGT/SDLT combination, (b) the third-party-transfer trap, (c) the mortgage-assumption historic ambiguity, and (d) the cross-border + non-English-court interaction (Scotland uses LBTT(S)A 2013 Sch 1 para 6; Wales uses LTTA 2017 Sch 3 para 6; recognition of foreign divorce orders requires Family Law Act 1986 + recognition tests).
+
+### 1.E Citations for §1.A-§1.D (extends §1)
+
+- **FA 2003:** s.108 (linked transactions); s.116 (residential property definition); Sch 3 paras 1, 3, 4 (exempt transactions); Sch 4 para 5 (exchanges); Sch 15 paras 10-20, 34 (partnerships).
+- **CTA 2010:** s.1122 (connected persons).
+- **MCA 1973:** ss.22A, 23A, 24A (financial relief / property adjustment orders).
+- **Civil Partnership Act 2004:** Sch 5 (financial relief / property adjustment on dissolution).
+- **TCGA 1992:** s.58 (spouse no-gain-no-loss); s.225B (main-residence on divorce).
+- **Case law:** P N Bewley Ltd v HMRC [2019] UKFTT 65 (TC) TC07097; Hyman v HMRC [2019] UKFTT 469 + [2021] UKUT 68 + [2022] EWCA Civ 185; Mudan v HMRC [2023] UKFTT 317; MHB Ltd v HMRC; Brown v HMRC [2024] UKFTT.
+- **HMRC manuals:** SDLTM07650+ (divorce); SDLTM09050+ (s.75A Ramsay general anti-avoidance — NOT partnership-transfer anchor); SDLTM30100+ (linked transactions); SDLTM33500+ (partnership transactions per Sch 15).
+
+### 1.F Do not write (extends §1 main do-not-write) — Wave 7 SDLT extension
+
+- "Sch 15 SLP relief is a loophole" (false in framing; statutorily authorised relief with substance + anti-Ramsay safeguards; sessions should use neutral language).
+- "A cohabiting unmarried couple can use Sch 15 SLP" (false; cohabitants are not connected under CTA 2010 s.1122; the SLP route requires connected partners).
+- "Sch 15 para 17A anti-withdrawal applies for 7 years" (false; the period is **3 years** under para 17A).
+- "Partnership share for SLP is voting/capital share" (false; **income-profit-share** is the operative metric under para 34; capital/voting share is irrelevant to SLP calculation).
+- "SDLTM09050 is the partnership-transfer reference" (false; SDLTM09050+ is the s.75A Ramsay general anti-avoidance manual; partnership-transfer is at SDLTM33500+. F-21 / Wave 6 confirmed).
+- "Scottish and Welsh land aggregate with English land for s.108 linked transactions" (false; s.108(1A) excludes them; use jurisdictional definitions LBTT(S)A 2013 s.57 / LTTA 2017 s.65).
+- "Bewley applies to any unmodernised property" (false; Bewley is a narrow exception for **substantially structurally dangerous / contaminated / requiring complete reconstruction** properties; post-Hyman / Mudan / MHB / Brown narrowing has tightened the test substantially).
+- "Sch 3 para 3 divorce exemption covers transfers to children pursuant to a divorce order" (false; exemption is spouse-to-spouse only; transfers to third parties are chargeable).
+- "Sch 3 para 3 requires a Decree Absolute before applying" (false; exemption applies to transfers pursuant to a divorce-related order or "agreement in contemplation of dissolution" — pre-decree settlements qualify if the dissolution context is established).
+- "Linked transactions definition is at Sch 4 para 5 FA 2003" (false; Sch 4 para 5 is the exchanges provision; linked-transactions definition is at **s.108 FA 2003**).
+
+**End Wave 7 §1.A-§1.F extension.** Wave 7 Bucket C C5 (linked transactions), C7 (divorce/separation transfer), C8 (Bewley uninhabitable test), C9 (Sch 15 partnership relief) cite §1.A-§1.D directly. Any contradiction between competitor sources and §1.A-§1.D, flag in `wave7_site_wide_flags.md`.
+
 ---
 
 ## 2. ATED (Annual Tax on Enveloped Dwellings) — 2026/27
