@@ -1,84 +1,95 @@
 Manager pickup prompt — paste verbatim into a fresh Claude Opus 4.7 session in C:/Users/user/Documents/Accounting/
 
-You are taking over as Manager for the Property Net-New Program. Previous manager session closed Wave 6 (2026-05-24) end-to-end and checkpointed before starting Wave 7 prep — HP-lock work is the highest-precision territory in the program and a fresh manager is the right cost/quality trade-off per §14 self-awareness. Wave 7 bucket selection is user-approved + documented; your job is to execute Wave 7 prep from HP-lock work through to a user-gated pre-launch summary. You are fresh.
+You are taking over as Manager for the Property Net-New Program. Previous manager session closed Wave 7 (2026-05-24 end of day) end-to-end and stopped the watcher cleanly. **Wave 8 prep is your job.** You are fresh.
 
 Working directory: C:/Users/user/Documents/Accounting/ (Windows 11, PowerShell + Bash both available).
 
 Read first:
 
-1. **`docs/property/NETNEW_PROGRAM.md` end-to-end (~15-20 min).** Section 3 is up to date as of 2026-05-24 PM (Wave 6 CLOSED state). Pay close attention to:
+1. **`docs/property/NETNEW_PROGRAM.md` end-to-end (~15-20 min).** Section 3 is up to date as of 2026-05-24 end of day (Wave 7 CLOSED state). Pay close attention to:
    - **Section 0 critical norms** (verify before acting; self-awareness on context; never deploy without user instruction; never edit a session's branch without authorisation; `git status` on main is the primary signal of session activity, see §16.41).
-   - **Section 3 Wave 6 close subsection** (8-commit close chain `3808019` → `0805d07`; 181 net-new pages on main; W4 + W5 + W6 held for deploy).
+   - **Section 3 Wave 7 close subsection** (8-commit close chain `6f6e79f` → `6b6cc39`; **209 net-new pages on main** = W1 31 + W2 30 + W3 30 + W4 30 + W5 30 + W6 30 + W7 28; W4 + W5 + W6 + W7 = 118 pages held for deploy).
    - **Section 16 lessons**, particularly the recent batch:
-     - §16.18 reasoning-first selection; §16.22-§16.27 / §16.30-§16.35 / §16.38-§16.40 Bill-vs-enacted-Act drift verification graduated to per-write mandatory + Stage 2 cross-check gate
-     - §16.36 / §16.40 Stage 2 statutory cross-check earns its keep
-     - §16.41 Q&A absolute-path discipline; activity-diagnosis discipline; watcher template hygiene (§16.41(d) recommends `## Q-\d+` heading count over STATUS: open line count for Wave 7+)
-     - §16.42 EXISTING_PAGE_STALE flag density tracks new-bucket statutory novelty
-     - **§16.43 (NEW)** — sub-agent dispatch validated at production scale for site-wide STALE sweeps; recommended pattern for Stage 2 brief generation + post-merge mechanical work
-     - **§16.44 (NEW)** — WebFetch summarizer can hide HTML-table content; trust session-time captures when secondary verification path can't see the data
-   - **Section 19 Wave 7 prep subsection** (2026-05-24 PM) — full 30-pick bucket list + ~10-11 HP-lock requirements + 10-step prep workflow + cross-bucket sequencing notes + inter-wave items still queued.
+     - §16.43 sub-agent dispatch (validated again at Wave 7 close via F-2 STALE sweep — 5-file site-wide patch with 0 false positives across 27 candidate files)
+     - §16.44 WebFetch summarizer hiding HTML-table content (still relevant for any verification fetch)
+     - **§16.45** Wave 7 HP-lock surfaced 13 drift catches in single prep session — territory-novelty density extends into HP-lock prep itself; **two of the catches were errors in the previous manager's prep document** (CTA 2010 ss.464M-Q fiction; Sch 4 para 5 mis-cite) + 1 fundamental anchor crisis (FA 2003 s.58C is zero-carbon homes; C6 pick rebuilt with SDLT group relief)
+     - **§16.46 (NEW)** Five consecutive zero-Q&A waves (W3-W7) + manager-side prep maturation hypothesis — sessions now have nothing to ask because HP-locks + Stage 1b are doing the work upstream; **bottleneck has shifted from session-run-time Q&A throughput to manager-side HP-lock + Stage 1b precision**; treat zero-Q&A as a **prep-quality signal**, NOT a **session-quality signal**
+   - **Section 19 Wave 7 close subsection** — full Wave 7 run + close detail including 35 drift catches across the lifecycle (13 HP-lock + 19 Stage 2 brief + 3 write-time + 5 STALE sweep back-patches).
 
-2. **`docs/property/house_positions.md`** — current state ~1770+ lines. Wave 6 §22 extension (§22.9-§22.15) + §25 cluster locked at commit `acb9151`. Wave 6 close additions (commit `3808019`) added rate-by-reference framing to §21.1 / §21.4 + NRB 2031 to §9 + §15.1 + s.169E note to §22.14 / §22.15. For Wave 7 you will be adding: NEW §26 Regulatory framework cluster (~6-8 sub-positions), NEW §27 HMRC enquiry mechanics cluster (~4-5 sub-positions), §22 extensions §22.16-§22.18 (TRS + IPDI/QIIP depth + EOT exit), §25.11 (s.198 election depth), §1.X (Sch 15 partnership SDLT relief).
+2. **`docs/property/house_positions.md`** — current state ~2350+ lines. Wave 7 extensions locked at commits `72263ec` → `1593b58` (5 cluster locks) + `6cbb0ed` (3 mini-locks: §26.9 HMO licensing + §1.G SDLT group relief + §22.21 SIPP/SSAS taxable property). Pre-merge close corrections at `6f6e79f` (§20.2 F-3 disambiguation table + §27.2 F-5 careless-floor qualifier drop). Locked clusters available for Wave 8:
+   - **§1 SDLT** (rates + §1.A Sch 15 partnership + §1.B s.108 linked + §1.C Bewley + §1.D divorce + §1.G group relief mini-lock)
+   - **§4 + §5** Section 24 + CGT 2026/27
+   - **§9 + §15 + §22 IHT** (NRB 2031 freeze; spouse exemption; BPR/APR cap; settlements ITTOIA s.624-628; minor-child s.629; GROB; settlor-interested trusts s.48ZA new; trust-vs-FIC; **§22.16 TRS + §22.17 IPDI/QIIP + §22.18 EOT + §22.21 SIPP/SSAS** all newly locked Wave 7)
+   - **§17 expat + SRT + NRCGT + TRF** (3-year 12/12/15)
+   - **§18 ATED**, **§19 MTD ITSA** (§19.10-§19.17 operational mechanics), **§20 RRA 2025** (s.21 abolition + s.13 + periodic + pet + RRO 2-yr + commencement table — note §20.2 corrected at close for re-letting restriction citation s.15 → HA 1988 s.16E NOT s.6)
+   - **§21 LtdCo + FIC** (DLA + s.455 35.75% from FA 2026 + alphabet shares + FIC mechanics)
+   - **§23 Welsh LTT + Scottish LBTT/ADS**, **§24 Form 17 + spouse-mechanics**
+   - **§25 CAA 2001** + **§25.11 s.198 fixtures election** (Wave 7 new)
+   - **§26 Regulatory framework** (BSA 2022 + MEES + Decent Homes + Redress + PRS Database + §26.9 HMO licensing mini-lock) — Wave 7 new
+   - **§27 HMRC enquiry mechanics** (TMA s.29/s.28A/s.12B + Sch 24 + Sch 41 + CoP9 + LPC + WDF + FtC) — Wave 7 new
 
-3. **`docs/property/topic_gaps_final.md` lines 1295+** — Track 2B addendum (65 NEW candidates from sitemap-driven discovery; 28 require new HP locks); top 10 prioritised. Wave 7 picks draw heavily from this addendum (mapped per pick in §19 Wave 7 prep subsection).
+3. **`docs/property/topic_gaps_final.md` lines 1295+** — Track 2B addendum (65 candidates from sitemap-driven discovery 2026-05-23). Many fed Wave 7 picks (TRS, IPDI, EOT, partnership SDLT). Remaining unfed candidates are Wave 8 feeder. Plus 74 Wave 6 + Wave 7 discovery items in `docs/property/wave{6,7}_discovery_log_session_{A,B,C}.md`.
 
-4. **`docs/property/wave6_discovery_log_session_{A,B,C}.md`** — 74 discovery items from Wave 6. Several feed Wave 7 picks directly (TRS, EOT, IPDI/QIIP, s.198 depth). Read at HP-lock time for adjacent-position context.
-
-5. **Verify state (run these 4 commands):**
+4. **Verify state (run these commands):**
    ```
-   git log --oneline -10           # main HEAD should be 0805d07 (Wave 6 close, step 6 audit addendum) or newer if Track 2 manager has continued
-   git status --short              # working tree may have Track 2 + pre-existing modifications (image.png, Medical, contractors-ir35, package-lock, optimisation_engine/*) — those are not Wave 7 scope
-   git worktree list               # four worktrees: main + 3 medical (parked, medical-a locked). No property-wave6 worktrees (cleaned up at Wave 6 step 6).
-   git branch | grep wave          # property-wave6-{a,b,c} branches retained for audit; medical-rewrite-{a,b,c} retained too
+   git log --oneline -10               # main HEAD should be 6b6cc39 (Wave 7 close, step 5) or newer if Track 2 has continued
+   git status --short                  # working tree may have Track 2 Phase 3 + pre-existing modifications — those are NOT Wave 8 scope
+   git worktree list                   # main + 3 medical (parked) + 3 property-wave7-{a,b,c} (retained for audit) + any Track 2 Phase 3 worktrees
+   git branch | grep -E "wave|phase"   # property-wave6-{a,b,c} + property-wave7-{a,b,c} retained for audit; medical-rewrite-{a,b,c} retained; Track 2 phase branches may also exist
    ```
 
-6. **Acknowledge with one short status line:** "Picked up. Main at <ref>, Wave 6 CLOSED at 0805d07. Wave 7 prep next: 30 picks (10 A regulatory/compliance + 10 B HMRC-enquiry + 10 C transactional/trust-depth) per NETNEW §19; ~10-11 HP locks to schedule; ~6 hours wall-clock to user-gated pre-launch summary. Ready to start with HP-lock work."
+5. **Acknowledge with one short status line:** "Picked up. Main at <ref>, Wave 7 CLOSED at 6b6cc39. 209 net-new pages on main; ~75-100 candidates remain in net-new pool. Wave 8 prep next: bucket-pick selection pending user input (intuition-led vs data-led after deploy). Ready to start."
 
 Standing context:
 
-- **Wave 6 is CLOSED.** 181 net-new pages on main. Wave 7 prep is your job. The user has confirmed: hold W4+W5+W6 deploy further, intuition-led bucket picks, 3 buckets × 10 = 30 pages.
-- **Wave 7 picks are user-approved.** See NETNEW §19 Wave 7 prep subsection for the explicit 30-pick list. Do NOT re-pick or re-litigate the bucket themes unless user explicitly asks.
-- **HP-lock work is the load-bearing first task.** Lock §26 + §27 + §22.16-§22.18 + §25.11 + §1.X per the §19 subsection's "House-position locks required pre-Stage-2" section. Each position verified against legislation.gov.uk / gov.uk / HMRC manual / case law via WebFetch before locking. §16.18 reasoning-first + §16.40 statutory cross-check + §16.42 territory-novelty pattern all firmly load-bearing in this work.
-- **Critical drift watchpoints during HP-lock:**
-  - BSA 2022 commencement order status (some provisions still pending commencement as of 2026)
-  - MEES extension SI status (verify SI 2025/* on legislation.gov.uk; may be SI 2025/something or SI 2026/something)
-  - Landlord database commencement (may be pre-commencement; verify)
-  - TRS penalty figures (current MLR 2017 reg 45ZA values)
-  - EOT 50%+1 controlling-interest test post-FA-2025 reforms (verify enacted state)
-  - Sch 24 FA 2007 penalty figures (current behaviour-category percentages)
-  - RRA 2025 vs RRA 2026 nomenclature — Wave 1+5 used different naming; verify against legislation.gov.uk for the enacted Act's official short title
-- **Track 2 (legacy rewrite) manager is running in parallel.** Their commits land on main directly (different scope from Wave 7 net-new). Recent: `0805d07` Wave 6 close step 6; before that `7083f40` Track 2 manager pickup. Coordinate if your prep commits touch shared files (`docs/property/topic_gaps_final.md`, `briefs/property/*`, or middleware.ts).
-- **Q&A watcher is STOPPED.** Re-arm at Wave 7 launch using §16.41(d) `## Q-\d+` heading-count pattern (template-immune; Q heading count is monotonic so any baseline becomes a floor; no false-positive risk like the STATUS: open pattern hit at Wave 6 launch).
-- **Sub-agent dispatch is your friend.** §16.43 validates the pattern at production scale. Use for Stage 1a seeds (one sub-agent for all 30) and Stage 2 briefs (one sub-agent per bucket = 3 parallel). For HP-lock work specifically — keep manager-side because precision is paramount and the work doesn't decompose cleanly.
+- **Wave 7 is CLOSED.** 209 net-new pages on main. Wave 8 prep is your job. Deploy posture: W1-3 deployed; **W4 + W5 + W6 + W7 = 118 pages held** pending user decision. If user opts to deploy before Wave 8, 6-8 weeks of GSC signal opens up data-led bucket selection (vs the intuition-led pattern W6 + W7 used). If hold continues, intuition-led continuation is the default.
+- **~75-100 candidates remain in the net-new pool.** Original ~285 narrowed target minus 209 shipped = ~76; plus residual Track 2B addendum (sitemap discovery, partially consumed by W7); plus 74 W6 + W7 discoveries (partially consumed). At ~28-30 picks per wave, **4-5 more waves of net-new** before pool exhaustion. Beyond that, the legacy rebuild program (~231 DeepSeek-era pages) is the next track (Track 2 manager is already running on it in parallel).
+- **Track 2 manager is running in parallel.** Their commits land on main directly (separate scope: legacy-rebuild rewrites + STALE-sweeps + cross-track inputs). Recent Track 2 activity: Phase 3 prep underway (commits `8502b08`+ around 2026-05-24). Cross-track input pending Wave-manager pickup: **CT three-figure framework HP-lock recommendation** (proposed §21.X locking £250k main rate / £50k SPR / 19% / 25% / marginal-relief 26.5% framing per FA 2021 Sch 1 architecture; documented in `wave7_site_wide_flags.md` lines 32+). This is your **first inter-wave queue item to triage** — easy 1-commit HP-lock if user-aligned.
+- **Q&A watcher: STOPPED.** Re-arm at Wave 8 launch using §16.41(d) `## Q-\d+` heading-count pattern (template-immune; ran cleanly through Wave 7 with zero false fires).
+- **Sub-agent dispatch validated at production scale.** §16.43 pattern works for: Stage 1a brief seeds (1 sub-agent for all picks), Stage 2 full brief generation (3 parallel sub-agents per bucket), post-merge STALE sweeps (1 sub-agent with explicit exclusion list). Wave 7 used this pattern cleanly. For HP-lock work — keep manager-side because precision is paramount; sub-agents introduced 2 Manager_prompt errors (CTA 2010 ss.464M-Q fiction + Sch 4 para 5 mis-cite) that took 13 HP-lock + Stage 1a catches to surface in Wave 7.
+- **Critical drift watchpoints for Wave 8 prep:** the §16.45 pattern continues. Any new HP-lock territory must be verified WebFetched at lock time, not paraphrased from training data. Treat the Manager_prompt itself as a candidate for verification — past prep documents have carried statutory drift.
 
-Wave 7 prep workflow (full 10-step plan staged in NETNEW §19):
+Wave 8 prep workflow (canonical 10-step plan per §19):
 
-1. **HP-lock sessions** (~2-3 hours, manager-side, NOT sub-agentable).
-2. **Cannibalisation re-check** against main at 181 pages.
-3. **Stage 1a brief seeds** (sub-agent dispatch, ~1-2 hours).
-4. **Stage 1b cross-check** (manager review of every seed against locked HPs, ~1 hour).
-5. **Stage 2 full brief generation** (3 parallel sub-agents per §16.43 pattern, ~40 min each).
-6. **Artefacts** (tracker + flags + 3× Q&A + 3× discovery shells).
-7. **Worktrees standup** (3 fresh worktrees ff-verified to main HEAD per §16.25).
-8. **START_HERE × 3 + WAVE7_LAUNCH_PROMPTS** (adapted from Wave 6 template + §16.41(d) watcher pattern + §16.43 sub-agent dispatch awareness).
-9. **Watcher arm** with §16.41(d) heading-count pattern.
-10. **User gate** with pre-launch summary.
+1. **Bucket pick selection** (~30 min). User input required: data-led (after deploy gives GSC signal) OR intuition-led (per W6 + W7 pattern). Buckets in candidate territory (subject to user approval): VAT operational depth (partial Wave 5 coverage); leaving-UK / expat depth (partial §17 coverage); commercial property + ATED operational; property development tax (trading vs investment, transactions in UK land); SDLT 6-dwellings rule depth + Scottish LBTT depth; Wave 7 inter-wave queue items (RRA enforcement-page enhancements; CT three-figure framework lock; Wave 6 F-17 LRR §25.11 depth).
+2. **HP-lock sessions** (~2-3 hours, manager-side, NOT sub-agentable). New positions or extensions to existing clusters per bucket selection. Verify each via legislation.gov.uk / gov.uk / HMRC manuals / case law at lock time per §16.18 + §16.40 + §16.45 patterns. Treat the Manager_prompt itself as candidate for verification.
+3. **Cannibalisation re-check** against main at 209 pages (use `scripts/property_wave7_cannibalisation_check.py` as template; adapt slug list for Wave 8 picks; do NOT overwrite `topic_gaps_final.md` Track 2B addendum at lines 1295+).
+4. **Stage 1a brief seeds** (sub-agent dispatch, ~1-2 hours). Single general-purpose sub-agent; output to `briefs/property/wave8/STAGE1A_BRIEF_SEEDS.md`. §16.36 statutory cross-check baked in.
+5. **Stage 1b cross-check** (manager review of every seed against locked HPs + Wave 7 lessons; ~1 hour). Expected catches: 5-15 brief-instruction errors + HP gaps per §16.45 pattern.
+6. **Stage 2 full brief generation** (3 parallel sub-agents per §16.43 pattern, ~40-60 min wall-clock total). One sub-agent per bucket. Each generates full briefs at `briefs/property/wave8/<slug>.md`. Sub-agents return ≤300-word structured summary (no brief bodies in returns).
+7. **Artefacts** (~15 min). wave8_page_tracker.md + wave8_site_wide_flags.md + 3× Q&A shells + 3× discovery shells. Q&A shells use §16.41(a) placeholder convention (`<open initially; manager flips to: answered>`).
+8. **Worktrees standup** (~10 min). 3 fresh worktrees `Accounting-wt-property-wave8-{a,b,c}/` on branches `property-wave8-{a,b,c}` from current main HEAD. ff-verified per §16.25. Copy `.env` + `optimisation_engine/competitor/_db.py` into each per §16.1.
+9. **START_HERE × 3 + WAVE8_LAUNCH_PROMPTS** (~30 min). Adapted from Wave 7 template at `docs/sessions/property/WAVE7_*.md`. §16.41(d) watcher pattern + §16.45 drift-catch awareness baked into START_HERE files.
+10. **Watcher arm + user gate** (§16.41(d) heading-count pattern). User-triggered launch.
 
 Most likely first instruction from the user will be one of:
 
-- "Start the HP-lock work" — proceed with §26 first (largest cluster, biggest verification surface), then §27, then §22 extensions, then §25.11, then §1.X. Verify each via WebFetch before locking. Commit each major lock as its own audit-trail commit.
-- "Walk me through Wave 7 prep first" — give a tight summary of the 30 picks + HP-lock list + workflow steps; await go-ahead.
-- "Re-open the bucket picks" — if user wants to swap any picks, refer to the addendum top-10 (NETNEW §19 references the lines) and the 65-candidate cluster breakdown.
-- "Skip HP locks for buckets with stable statute" — Bucket B (HMRC enquiry) has the most stable statute (TMA 1970 + Sch 24 FA 2007); if user wants to start sessions there first and lock §26 + §22/§25 extensions later, that's a defensible reordering but increases drift risk on Bucket B brief seeds. Recommend against unless user is intentional about time pressure.
+- **"Begin Wave 8 prep"** — start with bucket-pick discussion: should we deploy W4-W7 first (118 pages → 6-8 weeks GSC signal → data-led picks) or continue intuition-led? If intuition-led, propose 3 buckets from the candidate territory list (§19 step 1 above).
+- **"Deploy W4-W7 first"** — coordinate with user on deploy plan. The 118 pages would land on production; ~1 week build/deploy cycle; GSC signal accrues over subsequent 6-8 weeks. Wave 8 prep would slot in after the deploy decision.
+- **"Pick up the CT three-figure framework HP-lock first"** — single-commit §21.X lock (£50k SPR + £250k main rate + 26.5% marginal relief) per Track 2 manager's cross-track recommendation. Easy 1-2 hour task; defensible standalone or as Wave 8 prep step 0.
+- **"Clean up Wave 7 worktrees"** — `git worktree remove ../Accounting-wt-property-wave7-{a,b,c}` (per Wave 6 close hygiene convention; retained-for-audit branches stay intact).
 
-Section 14 manager self-awareness reminder: HP-lock work is high-precision; if your context fills mid-lock, write a handover update to NETNEW §19 (and a fresh Manager_prompt) and stop. Don't push through silently. The previous manager checkpointed at this exact point for this exact reason.
+Section 14 manager self-awareness reminder: HP-lock work is high-precision; if your context fills mid-lock, write a handover update to NETNEW §19 (and refresh this Manager_prompt) and stop. The §16.45 pattern is reliable — expect drift catches at each stage; do not push through silently.
 
 Operational reminders distilled from §16:
 
-- **Tracker hygiene (§16.14, §16.15, §16.37, §16.41):** sessions write tracker / flags / Q&A / discovery via absolute paths to main per §16.15 + §16.37. Mid-wave, main's working tree is INTENDED to be dirty with these uncommitted edits. `git status` on main is the load-bearing diagnostic for "are sessions running right now". This is for Wave 7 RUN; not relevant during prep.
-- **Reasoning-first (§16.18):** HP-lock drafting is reasoning-first work. Do NOT default to running scripts or boilerplating. Each position requires reading statute / manual / case law verbatim, deciding scope, drafting the position, and noting cross-references.
-- **Statutory-section attribution drift (§16.40 / §16.42):** Wave 6 surfaced 4 consecutive brief-quality drifts on section numbers (C9 s.1149 vs s.1154; C10 FA 2021 Sch 9 Pt 2 vs ss.12/13; A8 SDLTM33500 vs SDLTM09050+; A10 s.491 abolished). Wave 7's Bucket B HMRC enquiry mechanics has high drift risk (TMA 1970 section numbers are easily confused; Sch 24 vs Sch 55 vs Sch 56 distinctions matter). Bake §16.36 statutory cross-check gate explicitly into Stage 2 dispatch.
-- **Bill-vs-enacted-Act drift pattern (§16.22-§16.42):** 12 consecutive catches across the program. ANY locked house position carrying a "verify before relying" hedge must be verified at HP-lock time. New §26 + §27 are largely in stable-statute territory but the BSA 2022 + MEES + EPC C commencement status is moving and must be verified live.
-- **Sub-agent dispatch pattern (§16.43):** sub-agents must be told explicitly NOT to commit and NOT to touch newly-merged Wave N pages. The Wave 6 close sub-agent dispatch worked cleanly; mirror the pattern for Wave 7 Stage 1a + Stage 2 dispatch.
+- **Tracker hygiene (§16.14, §16.15, §16.37, §16.41):** sessions write tracker / flags / Q&A / discovery via absolute paths to main per §16.15 + §16.37. Mid-wave, main's working tree is INTENDED to be dirty with these uncommitted edits. `git status` on main is the load-bearing diagnostic for "are sessions running right now". §16.37 absolute-path discipline held with zero violations in Wave 6 + Wave 7.
+- **Reasoning-first (§16.18):** HP-lock drafting is reasoning-first work. Each position requires reading statute / manual / case law verbatim, deciding scope, drafting the position, and noting cross-references.
+- **Statutory drift discipline (§16.36 / §16.40 / §16.42 / §16.45):** every locked statutory section / paragraph / rate / threshold must be re-verified at write time per §16.35. Wave 7's 35 lifecycle drift catches confirm this is structural not incidental.
+- **Sub-agent dispatch pattern (§16.43):** sub-agents must be told explicitly NOT to commit, NOT to touch newly-merged Wave N pages (exclusion list), and to return tight structured summaries ≤300 words (no brief bodies in returns). Wave 7 dispatch worked cleanly across Stage 1a + Stage 2 + STALE sweep.
+- **Watcher pattern (§16.41(d)):** `## Q-\d+` heading-count is template-immune; ran cleanly through Wave 7 with zero false fires. The STATUS: open grep is fragile; do not regress to it.
+- **Manager-side prep maturation (§16.46):** zero-Q&A is a prep-quality signal not a session-quality signal. Sessions caught 35 Wave 7 drift catches via §16.35 verification; over-invest in HP-lock + Stage 1b precision to maintain the pattern.
 
-Wave 7 HP-lock is the load-bearing first task. Do not start Stage 1a until the HP-locks are committed to main, because Stage 1a brief seeds reference the locked positions by section number.
+Wave 7 inter-wave queue items (for triage at Wave 8 prep start):
+
+- Track 2 manager's **CT three-figure framework HP-lock recommendation** (proposed §21.X — £50k SPR / £250k main rate / 26.5% marginal-relief per FA 2021 Sch 1 + CTA 2010 s.18A-N). 65-page site-wide back-patch already landed via Track 2; the new HP lock would prevent future regression. Wave-manager-callable per Track 2 deference rule. **Recommended: lock as step 0 of Wave 8 prep.**
+- `rra-2025-landlord-enforcement-civil-penalties-banning-orders-defence.md` — sub-agent flagged at Wave 7 STALE sweep but did not edit: page credits only RRA 2025 s.15 for the s.249A £30k → £40k uplift, not the parallel SI 2026/319 reg.2 amendment. Light parallel on `landlords-considering-selling-portfolio-rra-2025-tax-implications.md`. **Enhancement not correction; defer to Wave 8 close back-patch if convenient or to inter-wave queue.**
+- Wave 6 F-17 (Session C) §25.11 LRR (Land Remediation Relief, CTA 2009 Part 14) HOUSE_POSITION_EXTENSION — distinct from Wave 7 §25.11 s.198 lock. Could fold into Wave 8 HP-lock if any bucket touches development / cleanup territory.
+- §22.5 spouse-exemption pre-FA-2025 architecture refresh (deferred from Wave 6 prep per §16.39); should land before any non-dom-IHT touch.
+- §25.8 PENDING items: full-expensing leased-plant commencement; FA(No.2) 2023 amendment chain doc; HMRC official rate cross-reference.
+- F-7 (Wave 2) brand wordmark em-dash — separate scope, outstanding from Wave 4 inter-wave queue.
+- F-8 (Wave 6 Session C) SiteHeader sr-only em-dash — template chrome.
+- F-9 (Wave 6 Session C) `cgt-commercial-property-different-residential` post-30-October-2024 rate alignment rewrite.
+- F-15 (Wave 6 Session B) legacy `cgt-gifting-property-family-members-uk` extension.
+
+Wave 8 prep is your job. Do not start Stage 1a until HP-locks are committed to main, because Stage 1a brief seeds reference the locked positions by section number.
