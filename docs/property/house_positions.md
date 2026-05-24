@@ -1115,11 +1115,14 @@ Extends and deepens the Wave 2 IHT positions in §15 / §16 with landlord-specif
 
 ### 22.5 Spouse exemption + transferable allowances
 
-- **s.18 IHTA 1984 spouse exemption:** unlimited transfers between UK-domiciled / long-term-resident spouses are exempt from IHT.
-- **Limited spouse exemption** for transfers TO a non-UK-domiciled / non-long-term-resident spouse: £325k lifetime limit (s.18(2)). The non-UK-spouse can elect to be treated as long-term-resident under s.267ZA to access full exemption (with cost: brings worldwide assets into IHT scope).
+- **s.18(1) IHTA 1984 spouse exemption (full):** unlimited transfers between spouses are exempt from IHT where the **receiving** spouse is a long-term UK resident (s.6A test; see §15.6 + §22.X for the operative LTR mechanics). The historic "UK-domiciled" criterion was replaced by FA 2025 with effect from 6 April 2025; sessions writing post-6-April-2025 cases must use LTR not domicile.
+- **s.18(2) IHTA 1984 spouse exemption (limited):** where the transferor is LTR but the receiving spouse is NOT LTR, the cumulative lifetime spouse-exemption value is capped at the **exemption limit** defined by s.18(2A) as the NRB upper limit per Sch 1 Table — **currently £325,000** but framed by-reference (the cap automatically tracks the NRB; sessions writing s.18(2) limited exemption must cite the s.18(2A) by-reference framing per the same rate-by-reference discipline as s.455 / ITA 2007 s.8(2) at §21.1).
+- **LTR election (new generic election post-FA-2025): IHTA 1984 s.267ZC** — non-LTR receiving spouse can elect to be treated as LTR for IHT purposes. Cost: brings worldwide assets into UK IHT scope. Further procedural detail at s.267ZD. NOT to be confused with **s.267ZA**, which was NARROWED by FA 2025 Sch 13 to a transitional pre-6-April-2025 election that requires the receiving spouse to have been UK-domiciled before 6 April 2025 within 7 years of the election / death — operative only for legacy cases, not the post-FA-2025 default.
 - **Transferable NRB (TNRB):** unused NRB on first death transfers to surviving spouse (s.8A IHTA 1984). Claimed on IHT402 within 2 years of second death.
 - **Transferable RNRB (TRNRB):** unused RNRB on first death transfers. Claimed on IHT436.
 - **Second-death window planning:** between first and second death, the surviving spouse can use spouse exemption to consolidate the portfolio (no IHT on first-death transfers in), then face the full estate value on second death potentially above £2m RNRB taper threshold. Counter-strategies: gifting in survivor's lifetime, charity legacy on second death, equity-release to spend down portfolio value.
+
+**Refresh logged 2026-05-25 (F-22).** Earlier §22.5 (locked 2026-05-23 as part of Wave 4 extension) carried pre-FA-2025 architecture — used "UK-domiciled" alongside "long-term-resident" framing (correct in some cases; misleading post-6-April-2025), cited "s.267ZA" as the generic LTR election (wrong post-FA-2025 — s.267ZA narrowed to transitional, generic election is s.267ZC), and hard-coded "£325k lifetime limit" rather than the s.18(2A) by-reference framing. Refresh substitutes LTR-only framing, corrects election cite to s.267ZC, and frames limit by-reference. Deferred §16.39 Wave 6 inter-wave queue item closed by this refresh. Verified against IHTA 1984 ss.18 + 6A + 267ZA + 267ZC on legislation.gov.uk on 2026-05-25. **15th + 16th + 17th Bill-vs-enacted-Act drift catches in succession** (the three sub-corrections — LTR-not-domicile in s.18; s.267ZC-not-s.267ZA; by-reference NRB Sch 1 not hard-coded £325k); §16.27 / §16.30 / §16.35 / §16.45 pattern extends to housekeeping refresh territory.
 
 ### 22.6 FIC as estate-planning value-freeze tool
 
@@ -1132,7 +1135,7 @@ Extends and deepens the Wave 2 IHT positions in §15 / §16 with landlord-specif
 
 ### 22.7 Citations for §22
 
-- IHTA 1984: s.7 (rate), s.8A (TNRB), s.18 (spouse), s.62 (cumulative), s.105 (BPR), s.142 (DoV), Sch 1A (36% rate), s.267ZA (long-term-resident election).
+- IHTA 1984: s.6 (excluded property — references LTR test), s.6A (LTR test), s.6B (young-person LTR variation), s.7 (rate), s.8A (TNRB), s.18 (spouse — post-FA-2025 LTR-based), Sch 1 Table (NRB upper limit used by-reference at s.18(2A)), s.62 (cumulative), s.105 (BPR), s.142 (DoV), Sch 1A (36% rate), s.267ZA (transitional pre-6-April-2025 domicile-window election only — narrow), ss.267ZC-267ZF (post-FA-2025 generic LTR election framework). **NOTE: s.267 (deemed domicile) omitted by FA 2025 s.44 + Sch 13 effective 6 April 2025 — historic framework GONE; do not cite s.267 in post-FA-2025 content.**
 - TCGA 1992: s.17 (deemed disposal at MV), s.62 (DoV CGT read-back), s.165 (holdover for trading shares), s.260 (holdover for CLT), ss.169B-169G (settlor-interested trust exclusion).
 - FA 1986: s.102 (GROB).
 - *Pawson v HMRC* [2013] UKUT 050 (TCC); *Brander v HMRC* [2010] UKUT 300 (TCC).
@@ -2497,5 +2500,87 @@ This §22.21 mini-lock sits in the §22 cluster as it extends the IHT / estate-p
 - "Property investment FICs always get the small profits rate" (false — pure-investment FIC with predominantly investment income may be a CIHC; per §21.5 the s.18N(2)(b) carve-out turns on whether land is let commercially to unconnected persons; FIC holding family-occupied property or connected-tenant property is likely CIHC).
 - "FA 2014 abolished the small profits rate permanently" (false in current state — FA 2014 abolished the original s.19 SPR effective 1 April 2015, but FA 2021 Sch 1 reinstated a structurally different SPR + marginal-relief regime effective 1 April 2023. Sessions writing on legacy "single 19% rate" or "single 25% rate" framings must use the FA 2021 architecture, not the FA 2014 abolished position).
 - "Marginal relief uses a flat 26.5% calculation" (false — the calculation uses the formula (U − A) × (N/A) × (3/200), where U = upper limit, A = augmented profits, N = taxable total profits; 26.5% is the effective marginal rate that emerges on the slice between limits at the 3/200 standard fraction, not a separate rate applied directly. Sessions must show the worked calculation, not assert a flat figure).
+
+---
+
+## 22.X IHT long-term residence operational depth — IHTA 1984 ss.6A-6C + ss.267ZC-267ZF (FA 2025 architecture) — Wave 8 mini-lock (added 2026-05-25)
+
+**Architectural sibling of §15.6 (headline framing) and §22.5 (spouse-exemption refresh in same commit).** §15.6 names the LTR test as policy framework; §22.X anchors the operative IHTA 1984 sections + tail-period mechanics that Wave 8 Bucket A IHT pages will write to.
+
+### 22.X.1 The s.6A LTR test (10 of 20)
+
+- **Statutory anchor.** IHTA 1984 s.6A, inserted by FA 2025 Sch 13 (Sch 13 para 27 inserts ss.267ZC-267ZF; the test itself is in ss.6A-6C). Effective from 6 April 2025.
+- **Baseline test.** An individual is a "long-term UK resident" for IHT purposes at any time in a tax year if they were **UK resident for at least 10 of the previous 20 tax years**. The test is applied tax-year by tax-year; LTR status can fluctuate.
+- **NOTE on the "10 consecutive years" framing.** §15.6 currently presents the test as "10 consecutive tax years OR 10 of previous 20 tax years" — HMRC consumer-guidance shorthand. The s.6A statutory test is the single 10-of-20 route; 10-consecutive is a trivial subset (10 consecutive implies 10 of 20). Sessions writing on the test may use either framing but must not present them as distinct alternative routes — they describe the same population. The "10 consecutive" framing is helpful for ongoing residents who clearly satisfy the test; the "10 of 20" framing is correct for departed-and-returned cases.
+- **"UK resident" for s.6A.** Uses the SRT definition at FA 2013 Sch 45 (see §17.1) — same residence concept as income tax / CGT. No separate IHT residence concept post-FA-2025.
+
+### 22.X.2 The s.6A tail-period table (departure from UK)
+
+- **The architecture.** Once LTR status is established, departure from UK does NOT immediately end LTR status. The individual remains LTR (and within IHT on worldwide assets) for a "tail period" of consecutive non-UK-resident tax years. The required tail length depends on how many years they were UK-resident in the run-up to departure.
+- **The lookup table (verified s.6A on 2026-05-25; HMRC consumer guidance corroborates):**
+
+| Prior UK-resident tax years (within last 20) | Required consecutive non-UK tax years to lose LTR |
+|---|---|
+| 13 or fewer | 3 |
+| 14 | 4 |
+| 15 | 5 |
+| 16 | 6 |
+| 17 | 7 |
+| 18 | 8 |
+| 19 | 9 |
+| 20 (all 20) | 10 |
+
+- **Operative implication.** A landlord-emigrant who has been UK-resident for 15 of the last 20 tax years before departure remains LTR (worldwide-asset IHT exposure) for **5 consecutive non-UK tax years** after departure. Pre-FA-2025 architecture for non-doms was a flat 3-year "tail" under deemed-domicile s.267(1)(b); post-FA-2025 the tail scales 3-10 years.
+- **Planning consequence.** Departing landlords with long UK residence cannot achieve immediate worldwide-asset IHT exit. Pre-FA-2025 advice anchored on "stay non-UK for 3+ years to break deemed domicile" is now wrong for individuals with 14+ prior UK-resident years; substitute the s.6A table.
+
+### 22.X.3 s.6B young-person variation (under-20s)
+
+- **The architecture.** For individuals under age 20 at the start of the current tax year, the s.6A 10-of-20 test is scaled by reference to their actual life-years. s.6B substitutes:
+  - "20" → number of whole tax years for which the person was alive before the current tax year
+  - "10" → half that number (rounded up)
+- **Edge case.** Individuals under age 1 (or not yet born) immediately before the tax year are NOT LTR per s.6B(3). Useful for trust structures involving young beneficiaries.
+- **Operative scope.** Rarely material for landlord-context pages (estate planning is mostly adult-cohort), but Wave 8 Bucket A pages covering family-investment-company succession planning to young beneficiaries should cite s.6B for under-20 settlements.
+
+### 22.X.4 Excluded property regime under LTR (IHTA 1984 s.6)
+
+- **The architecture.** Post-FA-2025 s.6(1): "Property situated outside the United Kingdom is excluded property if the person beneficially entitled to it is an individual who is not a long-term UK resident."
+- **Direct implication.** Non-LTR individuals are within UK IHT only on UK situs property. LTR individuals are within UK IHT on worldwide property. The historic domicile-based "excluded property" framework is gone.
+- **UK property by non-LTR individuals.** Always within UK IHT regardless of LTR status. Schedule A1 IHTA 1984 enveloped-residential look-through (in force from 6 April 2017) continues to bring UK residential property held via offshore structures into UK IHT.
+- **Excluded property trusts (settlor-LTR pivot).** A trust's excluded-property status now depends on whether the **settlor** was LTR at the time of the addition to the trust (NOT on the settlor's domicile as historically). Trusts settled by non-LTR settlors are excluded property; trusts settled by LTR settlors are within IHT on worldwide assets.
+- **Transitional for pre-6-April-2025 trusts.** Trusts settled before 6 April 2025 by then-non-UK-domiciled settlors retain excluded-property status for the property settled before that date. Property added AFTER 6 April 2025 is tested under the new LTR settlor regime (so a non-dom settlor who is now LTR adding property post-6-April-2025 loses excluded-property status for that new addition). Detailed transitional provisions in FA 2025 Sch 13 paras 40-46.
+
+### 22.X.5 ss.267ZC-267ZF LTR election framework (post-FA-2025)
+
+- **Statutory anchor.** IHTA 1984 ss.267ZC-267ZF inserted by FA 2025 Sch 13 para 27.
+- **s.267ZC: generic LTR election.** Non-LTR individual can elect to be treated as LTR for IHT purposes. Typical use: non-LTR spouse of an LTR transferor electing in to receive unlimited spouse-exemption transfers (per §22.5). Cost: brings worldwide assets into UK IHT for the election period.
+- **s.267ZD: further provision.** Procedural mechanics for s.267ZC elections — timing, revocation rules, cessation events.
+- **s.267ZE: pre-FA-2025 domicile election subjects.** Individuals who made a s.267ZA election before 6 April 2025 (when the election was domicile-based) are treated as LTR under the new regime. Preservation route for legacy elections.
+- **s.267ZF: DTA tie-breaker.** Where a DTA operates by reference to "deemed domicile" (older treaties still using the pre-FA-2025 concept), s.267ZF provides the bridging rule — deemed domicile is treated as engaged where the individual is LTR. Necessary for older treaties that have not been updated to use LTR language.
+- **Critical distinction from s.267ZA.** s.267ZA was NARROWED by FA 2025 to a transitional pre-6-April-2025 domicile-window election. It is NOT the generic LTR election. Sessions writing on spouse-election advice MUST cite s.267ZC for post-6-April-2025 cases; s.267ZA only appears for pre-6-April-2025 legacy scenarios where the receiving spouse was UK-domiciled before 6 April 2025 within 7 years of the election / death.
+
+### 22.X.6 Spouse exemption interactions with LTR (cross-reference §22.5)
+
+- **Transferor LTR, receiving spouse LTR:** unlimited exemption per s.18(1).
+- **Transferor LTR, receiving spouse non-LTR:** limited exemption per s.18(2) — by-reference to Sch 1 NRB upper limit (currently £325k cumulative lifetime). Receiving spouse can elect under s.267ZC to access full exemption (cost: worldwide assets into IHT scope).
+- **Transferor non-LTR, receiving spouse LTR:** full exemption per s.18(1) (transferor LTR-status not required for full exemption; only receiving spouse's matters per s.18(2) wording).
+- **Transferor non-LTR, receiving spouse non-LTR:** s.18(1) full exemption applies, BUT — the transferor's non-LTR status means only UK situs property is in UK IHT scope at all (per s.6 excluded property), so the exemption is structurally less consequential. Worldwide non-UK assets are already outside UK IHT.
+
+### 22.X.7 Citations for §22.X
+
+- IHTA 1984: s.6 (excluded property — LTR-based test), s.6A (LTR baseline + tail-period table), s.6B (young-person variation), s.6C (transitional / interpretation), s.7 (rate), s.18 (spouse exemption post-FA-2025 LTR-based), Sch 1 Table (NRB upper limit referenced by s.18(2A)), Sch A1 (enveloped UK residential property look-through, unaffected by FA 2025), ss.267ZC-267ZF (LTR election framework), s.267ZA (transitional pre-6-April-2025 only — narrow).
+- FA 2025 c. 8: s.44 (excluded property domicile test replaced with LTR test), s.45 (corresponding change for settled property), s.46 (consequential, connected, transitional), Sch 13 (operational detail).
+- FA 2013 Sch 45 (SRT — applied for LTR by cross-reference).
+- **OMITTED by FA 2025: IHTA 1984 s.267 (deemed domicile).** Do not cite in post-6-April-2025 content; historic framework gone.
+
+### 22.X.8 Do not write (§22.X)
+
+- "Long-term resident status is lost after 3 years of non-UK residence" (false — only for individuals with 13 or fewer prior UK-resident years; scales 3-10 per s.6A table).
+- "Deemed domicile rules at s.267 IHTA 1984" (false — s.267 omitted by FA 2025 from 6 April 2025; cite s.6A LTR test instead).
+- "Non-doms can elect into LTR under s.267ZA" (false — s.267ZA narrowed to transitional pre-6-April-2025 domicile-window only; post-FA-2025 generic LTR election is s.267ZC).
+- "Excluded property status depends on settlor's domicile" (false — post-FA-2025 depends on settlor's LTR status; cite s.6 IHTA 1984 LTR framework).
+- "10 consecutive years of UK residence is a separate test from 10 of 20" (false — 10 consecutive trivially satisfies 10 of 20; they describe the same population; s.6A statute uses single 10-of-20 test).
+- "Trusts settled by non-doms pre-6-April-2025 lose excluded-property status from 6 April 2025" (false — pre-6-April-2025 settlements retain excluded-property status for property settled before that date; only post-6-April-2025 additions are tested under new LTR settlor regime per FA 2025 Sch 13 paras 40-46).
+- "LTR election is revocable mid-tax-year" (false — verify against s.267ZD procedural rules at write time; revocation generally constrained).
+- "DTAs override the LTR test for spouse exemption" (false — s.267ZF provides bridging where treaty uses deemed-domicile language but the LTR test still applies for UK IHT operative purposes).
 
 ---
