@@ -156,33 +156,63 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug / category:**
-- **H1 chosen:**
-- **Meta title chosen:** (max 62 chars)
-- **Meta description chosen:** (max 158 chars)
-- **Why these vs other options:**
+- **Final slug / category:** `trust-registration-service-trs-compliance-trust-owned-btl-mlr-2017` / `incorporation-and-company-structures` (both as suggested; no override).
+- **H1 chosen:** "Trust Registration Service Compliance for Trust-Owned Buy-to-Let: Reg 45, the 90-Day Deadline, and the £5,000 Penalty Gate". Three operational gates surfaced in the H1 to differentiate from competitor pieces that lead with "what is the TRS".
+- **Meta title chosen:** "TRS Compliance for Trust-Owned BTL: Reg 45 + £5k Penalty" (56 chars).
+- **Meta description chosen:** "MLR 2017 reg 45 registrable trust classes, 90-day deadline, reg 76 + TRSM80020 £5,000-max discretionary penalty, narrow Sch 3A exclusions for BTL trusts." (153 chars).
+- **Why these vs other options:** Citation stack (reg 45 / reg 76 / Sch 3A / TRSM80020) front-loaded in meta because competitor SERP pages paraphrase "TRS guidance" generically; explicit statutory anchors are the differentiator. Anti-myth penalty framing in title because the £100/£200/£300 misconception is the single most-searched mis-cited fact in the territory.
 
 ### Competitor URLs fetched
+- `ukpropertyaccountants.co.uk/trust-registration-service-rental-property/` — **404 Not Found** at write time. Likely depublished / URL changed.
+- `shipleys.com/insights/trust-registration-service-and-property-trusts/` — **301 redirect** to `mooreks.co.uk` (Shipleys merged into Moore Kingston Smith); original URL dead.
+- `haines-watts.com/insight/trs-registration-property-trusts/` — **ECONNREFUSED** (DNS / connection refused at write time).
+- `uklandlordtax.co.uk/trs-trust-registration-landlord/` — not fetched (3 of 4 already dead; verification path saturated).
+- Borrowable-patterns conclusion: the brief's framing differentiator stands (most competitor pieces cite "TRS guidance" generically; mine cites reg 45 / reg 76 / Sch 3A / TRSM80020 verbatim). Stage 1a brief seed authority links were the load-bearing input here.
 
 ### Existing-page review (from "Closest existing pages")
+- `directors-of-trust-owned-spv-extraction-rules-settlor-interested-trap` (Wave 6) — extraction mechanics from trust-owned SPV; NOT TRS-focused. Clear differentiation; forward-link from C1 to this page as "once registered, here is the post-registration extraction mechanic".
+- `iht-clt-property-discretionary-trust-20-percent-entry-charge` — IHT entry side (20% CLT, s.260, settlor-interested trap on CGT). Different from TRS compliance. Forward-link in scene-setting paragraph as the upstream entry-IHT cost that gets the settlor to the registration step.
+- `fic-vs-discretionary-trust-property-comparison` — structural choice that PRECEDES registration. Clear no-overlap; forward-link as "if you've chosen the trust route over FIC, here is the compliance step".
+- No CANNIBAL flags. C1 is the registration/compliance pillar; existing pages cover extraction, entry IHT, FIC-vs-trust comparison.
 
 ### Citations added (external authority)
+1. `legislation.gov.uk/uksi/2017/692/regulation/45` — MLR 2017 reg 45 verbatim (registrable classes + 90-day deadline).
+2. `legislation.gov.uk/uksi/2017/692/regulation/76` — MLR 2017 reg 76 verbatim (general penalty hook + reasonable-steps defence).
+3. `legislation.gov.uk/uksi/2017/692/schedule/3A` — MLR 2017 Sch 3A verbatim (narrow exclusions).
+4. `gov.uk/hmrc-internal-manuals/trust-registration-service-manual/trsm80020` — TRSM80020 verbatim quote (£5,000 max DISCRETIONARY, case-by-case). Last updated 13 May 2026.
+5. `gov.uk/hmrc-internal-manuals/trust-registration-service-manual/trsm23020` — TRSM23020 (registrable trusts under reg 45).
+6. `gov.uk/hmrc-internal-manuals/trust-registration-service-manual/trsm24000` — TRSM24000 (non-UK trusts UK-land route).
+7. `gov.uk/hmrc-internal-manuals/trust-registration-service-manual/trsm32010` — TRSM32010 (Sch 3A exclusions in HMRC framing).
 
 ### Internal links added (to our existing pages)
+1. `/blog/incorporation-and-company-structures/putting-rental-property-into-a-trust-decision-pillar-iht-cgt-sdlt-stack` (two references).
+2. `/blog/landlord-tax-essentials/iht-clt-property-discretionary-trust-20-percent-entry-charge`.
+3. `/blog/incorporation-and-company-structures/fic-vs-discretionary-trust-property-comparison` (two references).
+4. `/blog/incorporation-and-company-structures/directors-of-trust-owned-spv-extraction-rules-settlor-interested-trap`.
+5. `/blog/incorporation-and-company-structures/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules`.
+6. `/blog/incorporation-and-company-structures/bare-trust-vs-nominee-company-vs-formal-trust-decision-property-investors`.
+All 6 unique targets verified existing in `Property/web/content/blog/` before commit. C2 (IPDI) forward-reference is unhyperlinked prose because C2 is not yet on disk; merge-time hyperlink back-patch will be needed when C2 lands (logged via §16.32 cross-bucket forward-link discipline; F-2 flag below).
 
 ### Inline CTA placements
+1. After the reg 45 registrable-classes walkthrough (high-intent: "is my trust within scope?"). Diagnostic-call framing.
+2. After the £5,000 penalty / reg 76 / TRSM80020 section (high-intent: late-registration rescue). Late-TRS-handling track-record framing.
+Two asides (within brief's "2-3 inline `<aside>` CTAs" guideline; chose not to add a third to avoid CTA fatigue on a compliance pillar where the reader is in research mode for most of the page).
 
 ### Build attempts
+- Attempt 1: `npm run build` → failed (`'next' is not recognized`); node_modules absent in fresh worktree.
+- Attempt 2 (after `npm install --no-audit --no-fund`, 25s, 359 packages added): clean PASS. 464+ static paths generated. C1's slug appears in the static-params list under the `[category]/[slug]` path.
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes in markdown:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+- em-dash count: **0** (grep on the markdown file).
+- Tailwind utility classes in markdown: **0** (grep for `class="(text-|bg-|border-|p-|m-|flex|grid)` — no matches).
+- metaTitle length: **56** chars (limit 62).
+- metaDescription length: **153** chars (limit 158).
+- FAQ count: frontmatter `faqs:` array = **14**; built HTML JSON-LD `"@type":"Question"` count = **14**; match.
+- Internal links resolve: 6 unique `/blog/...` href targets all map to existing markdown files in `Property/web/content/blog/`.
+- Body word count: **3,230** (target 2,800-3,500 per brief; in band).
 
 ### Flags raised to wave7_site_wide_flags.md
+- F-2 CROSS_BUCKET (forward-link to C2 IPDI unhyperlinked at write time because C2 not yet on disk; merge-time hyperlink back-patch).
 
 ### 2-3 sentence summary
+TRS compliance pillar for landlord trusts holding UK rental property. Reg 45 + reg 76 + TRSM80020 + Sch 3A all cited verbatim, with the £5,000-max-discretionary penalty framing and the 90-day deadline (both at creation and on beneficial-ownership change) given the body weight that competitor pieces give to the £100/£200/£300 myth. Singh-family worked timeline anchors the operational mechanics from trust establishment (1 March 2026) through registration (22 May 2026, 8 days inside the 90-day window) to first beneficial-ownership update (12 September 2026 trigger, 11 December 2026 deadline). Ships first in Bucket C; C2 (IPDI) forward-cites C1's TRS-registration mechanics under §22.17. monitored_pages id 252.
