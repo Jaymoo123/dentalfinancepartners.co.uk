@@ -2719,3 +2719,94 @@ Where the four-conditions test is engaged, the underlying question is **whether 
 - "s.162 incorporation relief covers all property-business incorporations" (false — s.162 is for going-concern business transfers; trading-stock appropriations are CGT-deemed-disposals at MV without relief; property developers incorporating need CTA 2010 Part 22 trade-transfer route, not s.162).
 
 ---
+
+## 25.12 Land Remediation Relief (CTA 2009 Part 14 ss.1143-1175) — Wave 8 mini-lock (added 2026-05-25; closes Wave 6 F-17 inter-wave queue item)
+
+**Architectural sibling of §25 (Capital allowances Wave 6 cluster) and §25.11 (s.198 fixtures election Wave 7 mini-lock).** §25.12 is the COMPANY-ONLY relief for cleaning up contaminated or derelict land — distinct corporate-tax relief outside the capital-allowances framework. Closes F-17 from Wave 6 Session C inter-wave queue.
+
+### 25.12.1 Statutory architecture
+
+- **Statutory anchor.** CTA 2009 Part 14 (ss.1143-1175). Inserted by CTA 2009; original contaminated-land regime carried forward from pre-CTA-2009 architecture. Derelict-land parallel provisions (ss.1145A + 1146A) added by Finance Act 2009.
+- **Chapter structure:**
+  - Chapter 1: Introduction (s.1143)
+  - Chapter 2: Reliefs for expenditure (ss.1147-1150)
+  - Chapter 3: Land remediation tax credit (ss.1151-1158)
+  - Chapter 4: Special provision for BLAGAB (basic life assurance and general annuity business) (ss.1160-1168) — out of scope for property landlords
+  - Chapter 5: Tax avoidance (s.1169)
+  - Chapter 6: Supplementary (ss.1170-1175)
+- **Scope.** Companies only. Individual landlords cannot claim LRR — must hold land through corporate structure. Property SPVs and FICs holding remediation-eligible land qualify.
+
+### 25.12.2 The 100% + 50% additional deduction (s.1149)
+
+- **The headline.** LRR provides an **additional 50% deduction** on top of the standard 100% revenue / capital deduction for qualifying land remediation expenditure. Total tax-deductible amount: **150% of qualifying expenditure**. Statutory mechanics at CTA 2009 s.1149(8): additional deduction is 50% of qualifying expenditure.
+- **Common headline-vs-statute misframing.** Sessions writing on LRR should anchor the framing as **"100% normal deduction + 50% additional deduction = 150% total"** rather than the popular shorthand "150% relief". The "150% relief" framing masks the additive structure and can mislead on interactions with other reliefs.
+- **Revenue vs capital treatment (s.1147 vs s.1148).** The relief flexes for revenue-account expenditure (deduction in computing trading profit / property income) and capital-account expenditure (deduction by election under s.1148 in computing profit). Most landlord-developer remediation is capital-account; election under s.1148 required.
+
+### 25.12.3 Qualifying conditions A-F (s.1144)
+
+A company's expenditure qualifies as "qualifying land remediation expenditure" only if ALL six conditions are met:
+
+- **Condition A: Land in contaminated state OR derelict state.** Per s.1145 (contaminated — definitions of "contaminated state" via substance presence / harm-causing potential / pollution of controlled waters) OR s.1145A (derelict — long-period vacancy + buildings or structures present).
+- **Condition B: Causation.** "The expenditure would not have been incurred if the land had not been in a contaminated or derelict state." Excludes general site preparation / development expenditure that would have been incurred anyway.
+- **Condition C: Relevance.** Expenditure on either "relevant contaminated land remediation" or "relevant derelict land remediation" (defined by reference to ss.1146 / 1146A activity lists — preventing, removing, mitigating contamination effects; demolishing buildings / removing post-tensioned concrete heavyweight construction / etc. for derelict).
+- **Condition D: Activity categories.** Expenditure must be on **staffing costs**, **materials**, **contracted-out remediation**, or **qualifying connected sub-contracted remediation**. Overhead and general management costs are NOT qualifying.
+- **Condition E: Not subsidised.** Per CTA 2009 s.1144(7) — excludes expenditure where the company has received a notified state aid, grant, or other subsidy covering the cost. Critical for landlord-developers receiving local authority brownfield grants — verify subsidy treatment before claiming.
+- **Condition F: Not landfill tax.** Excludes landfill tax payments (landfill tax has its own relief regime).
+
+### 25.12.4 Polluter exclusion (s.1150)
+
+- **The architecture.** LRR is for INNOCENT remediators — companies cleaning up contamination they did NOT cause. s.1150(1) prohibits relief if the contamination or dereliction results "wholly or partly" from acts or omissions by the company OR by persons with a "relevant connection" (s.1150(2)-(3)).
+- **Relevant connection (s.1150(3)).** Includes: connected persons (CTA 2010 s.1122); the company's 51% subsidiaries / parents; persons who held a relevant interest in the land at the time of the polluting act.
+- **Acquired-contaminated cases.** Landlord-developer SPVs acquiring contaminated brownfield sites from unrelated vendors are typically eligible — they did NOT cause the contamination. Verify at acquisition diligence: vendor identity, ownership chain, polluter history.
+- **Caused-contamination cases.** A company that polluted its own land cannot claim relief on the clean-up. Group structures must be checked — a subsidiary cleaning up contamination caused by a parent / sister company under "relevant connection" is excluded.
+- **Operative implication for landlord-developers.** The polluter exclusion is the most-litigated LRR area at HMRC enquiry. Wave 8 Bucket B pages on developer LRR claims must front the polluter exclusion + relevant-connection test + acquisition-diligence framework.
+
+### 25.12.5 Loss-conversion 16% tax credit (s.1154)
+
+- **The architecture.** Where a company obtaining LRR under s.1149 has a tax loss (typical for early-stage developers / pre-revenue SPVs), it may surrender the loss in exchange for a cash payment from HMRC ("land remediation tax credit").
+- **Rate (s.1154).** The credit is **16% of qualifying loss surrendered**. Lower than the marginal CT rate, so the credit is economically worse than carrying the loss forward unless cash-flow constraints dominate.
+- **Qualifying loss (s.1153).** Defined as the unrelieved trading or property-business loss arising from claiming the s.1149 additional deduction. Capped at the surrendable loss multiplied by 150% of the LRR deduction (limits the credit to the LRR-generated portion of the loss).
+- **Election deadline.** Claim made via the corporation tax return for the relevant accounting period; amendment window per FA 1998 Sch 18 (4 years from end of accounting period).
+- **Operative implication.** Early-stage developer SPVs with no taxable profit can convert LRR losses to cash at 16p in the £. Late-stage developers with profit prefer the standard 25% CT-saving route (LRR deduction reduces taxable profit at marginal rate).
+
+### 25.12.6 Cross-references with other clusters
+
+- **§25 (CAA 2001 capital allowances) ↔ §25.12.** LRR is OUTSIDE the capital allowances regime — separate Part 14 of CTA 2009. A landlord-developer can claim LRR on remediation expenditure AND capital allowances on plant & machinery installed post-remediation; no double-relief concern because the regimes operate on different expenditure categories.
+- **§25.11 (s.198 fixtures election Wave 7) ↔ §25.12.** s.198 fixtures election (purchase-side capital allowances) and LRR (remediation) operate on the same brownfield-acquisition fact pattern but on different cost categories. Sessions writing on brownfield-acquisition tax planning must address both regimes.
+- **§28 (Transactions in UK land — Wave 8 Bucket B) ↔ §25.12.** A landlord-developer caught by Part 8ZB (trading) computes profit using LRR as a trading deduction (s.1147). A landlord-developer treated as investment (capital) uses LRR under s.1148 election. The trading-vs-investment line at §28 determines which LRR route applies.
+- **§21 (LtdCo + FIC) ↔ §25.12.** LRR is company-only; property FICs holding remediation-eligible land can claim. Individual landlords cannot claim — incentive for incorporating a remediation-vehicle SPV.
+
+### 25.12.7 Citations for §25.12
+
+- CTA 2009 Part 14 ss.1143-1175 (full Part — Land Remediation Relief framework).
+- s.1144 (qualifying expenditure conditions A-F).
+- s.1145 (contaminated state definition); s.1145A (derelict state definition).
+- s.1146 (relevant contaminated land remediation activities); s.1146A (relevant derelict land remediation activities).
+- s.1147 (revenue-account deduction); s.1148 (capital-account election).
+- s.1149 (the 50% additional deduction — the headline relief mechanic; subsection (8) holds the 50% rate).
+- s.1150 (polluter exclusion + relevant-connection rules).
+- s.1151-1158 (Chapter 3: land remediation tax credit — loss-conversion to cash).
+- s.1154 (tax credit rate: 16% of qualifying loss).
+- s.1169 (Chapter 5: tax avoidance).
+- CTA 2010 s.1122 (connected persons definition — relevant for s.1150 polluter relevant-connection test).
+- FA 2009 (inserting Act for derelict-land parallel provisions s.1145A + s.1146A).
+- HMRC Corporate Intangibles Research and Development Manual / Corporation Tax manual pages on LRR (verify currency at write time — manual coverage of LRR is light vs other reliefs).
+
+### 25.12.8 Things to flag (do NOT decide unilaterally)
+
+- **Subsidy interaction at Condition E.** Where the landlord-developer has received any local authority grant / Environment Agency funding / regional development subsidy, verify whether the subsidy reduces qualifying expenditure to nil under s.1144(7). Border cases require specialist tax advice.
+- **Polluter relevant-connection at s.1150(2)-(3).** Where the developer group has any historical connection to the polluting entity (acquired a former subsidiary, bought from a sister company, prior shareholder relationship), the polluter exclusion can engage. Flag for case-specific review.
+- **LRR repeal / amendment status.** Verify against current FA at write time — LRR has been periodically reviewed; sessions writing on current eligibility must check no recent amendments have changed the 50% rate, the 16% credit, or the qualifying-expenditure conditions.
+
+### 25.12.9 Do not write (§25.12)
+
+- "Land Remediation Relief gives 150% relief" (technically true as a popular shorthand but misframes the architecture — relief is **100% standard deduction + 50% additional deduction under s.1149**; sessions should use the additive framing to surface the interaction with other reliefs correctly).
+- "Individual landlords can claim LRR on rental property remediation" (false — LRR is company-only per CTA 2009 Part 14; individuals must incorporate a remediation SPV or claim no LRR).
+- "Polluter exclusion only catches direct pollution by the claimant" (false — s.1150(2)-(3) extends to persons with a "relevant connection" including 51% group members and prior interest-holders at the time of the polluting act).
+- "Subsidised expenditure still qualifies if the subsidy is small" (false — Condition E at s.1144(7) is absolute; any notified state aid / grant / subsidy on the qualifying expenditure disqualifies that expenditure).
+- "Loss-conversion credit gives the same value as carry-forward" (false — credit is 16% of loss vs marginal CT rate (currently up to 25% main rate); credit is economically worse unless cash-flow dominates).
+- "LRR applies to landfill tax payments" (false — Condition F at s.1144 excludes; landfill tax has its own relief regime).
+- "LRR applies to all dilapidations on derelict buildings" (false — Condition C requires expenditure on "relevant derelict land remediation" per s.1146A activity list; general refurbishment / non-derelict-state dilapidations do NOT qualify).
+- "LRR can be claimed alongside capital allowances on the same expenditure" (false — same expenditure cannot be twice-relieved; LRR + capital allowances on DIFFERENT expenditure categories is fine but architecture must be carefully designed).
+
+---
