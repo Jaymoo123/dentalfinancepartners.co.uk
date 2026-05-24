@@ -1,6 +1,8 @@
 # Track 2 Manager Pickup — paste verbatim into a fresh Claude Opus 4.7 session at C:/Users/user/Documents/Accounting/
 
-You are taking over as Track 2 Manager for the Property Legacy Rewrite Brief Program. Track 2 runs in parallel to the Wave net-new program (Waves 1-5 shipped, Wave 6 actively executing as of pickup); both share locked house positions, voice rules, and §16 lessons. Track 2 produces rewrite briefs for ~233 untouched legacy pages on `propertytaxpartners.co.uk`. You are fresh — read this doc, then `TRACK2_PROGRAM.md`, then resume.
+**Last refreshed:** 2026-05-24 PM (post-Batch-2 close).
+
+You are taking over as Track 2 Manager for the Property Legacy Rewrite Brief Program. Track 2 runs in parallel to the Wave net-new program (Waves 1-6 shipped to main, Wave 7 in prep with HP-lock pending); both share locked house positions, voice rules, and §16 lessons. Track 2 produces rewrite briefs for ~211 untouched legacy pages on `propertytaxpartners.co.uk` (22 of original 233 already briefed across Trial + Batch 1 + Batch 2). You are fresh — read this doc, then `TRACK2_PROGRAM.md`, then resume.
 
 **Working directory:** `C:/Users/user/Documents/Accounting/` (Windows 11, PowerShell + Bash both available)
 
@@ -9,14 +11,14 @@ You are taking over as Track 2 Manager for the Property Legacy Rewrite Brief Pro
 ## 0. Read first, in this order (~15 minutes total)
 
 1. **This doc** end to end.
-2. `docs/property/TRACK2_PROGRAM.md` — full manager doc. §0 read-first norms, §3 heartbeat (most recent state), §4 brief anatomy, §7 cannibalisation protocol, §9 sub-agent dispatch patterns, §10 tracker convention (POINTER into NETNEW_PROGRAM §16.14/§16.15/§15 — read those too), §13 sub-agent instructions, §14 manager self-awareness, §15 quality gates, §17 risk register, §20 glossary (includes the new INTENT-MISMATCH / INVISIBLE / TAIL-SIGNAL gap-mode codes).
-3. `docs/property/NETNEW_PROGRAM.md` — particularly §16 lessons (Track 2 inherits all of them). Pay attention to §16.18 reasoning-first, §16.31 URL liveness, §16.22+§16.27+§16.30+§16.33+§16.40+ Bill-vs-enacted-Act drift family, §16.14+§16.15+§16.37 absolute-path edits, §16.41 Q&A shell template hygiene. Track 2 has SIX new flags continuing the Bill-vs-enacted drift family (F-2, F-5, F-13, F-18 → all caught and resolved by Batch 1 close; the program now has 11+ consecutive catches across both tracks).
-4. `docs/property/house_positions.md` — §1-§25 LOCKED. §25 (CAA 2001 capital allowances) is the newest, locked 2026-05-23 for Wave 6 Bucket C.
-5. `docs/property/track2_page_tracker.md` — current state of all Track 2A rows. Trial phase (4 briefs ✅) + Batch 1 (9 briefs ✅ at 🟢 brief_drafted).
-6. `docs/property/track2_site_wide_flags.md` — full F-flag log (F-1 to F-20, plus resolution log).
-7. **One brief to inspect end-to-end as depth match-target:** `briefs/property/track2/trial/cgt-rates-property-2026-27-current-rates-explained.md`. This is the gold-reference brief; Phase 2+ sub-agent prompts should require this depth.
+2. `docs/property/TRACK2_PROGRAM.md` — full manager doc. §0 read-first norms, §3 heartbeat (most recent state — Batch 2 close is the latest entry), §4 brief anatomy, §7 cannibalisation protocol, §9 sub-agent dispatch patterns, §10 tracker convention (POINTER into NETNEW_PROGRAM §16.14/§16.15/§15 — read those too), §13 sub-agent instructions, §14 manager self-awareness, §15 quality gates, §17 risk register, §20 glossary (includes INTENT-MISMATCH / INVISIBLE / TAIL-SIGNAL gap-mode codes).
+3. `docs/property/NETNEW_PROGRAM.md` — particularly §16 lessons (Track 2 inherits all of them). §16 now extends to **§16.44** (Wave 6 close lessons §16.41 watcher-template hygiene + §16.42 EXISTING_PAGE_STALE density tracks novelty × adjacency + §16.43 sub-agent STALE-sweep dispatch validated + §16.44 WebFetch summarizer can hide HTML table content — all NEW since Track 2 Batch 1 dispatch). Track 2 now has **16 new flags continuing the Bill-vs-enacted-Act / statute-citation-drift family** (F-2, F-5, F-13, F-18, F-22, F-23 — the last is a SELF-CATCH on manager dispatch prompt at Batch 2, validating §16.38 verify-on-dispatch mandate). The program now has **13+ consecutive catches** across both tracks.
+4. `docs/property/house_positions.md` — §1-§25 LOCKED. §25 (CAA 2001 capital allowances) locked 2026-05-23 for Wave 6 Bucket C. Wave 6 close added §21.1 (s.455 = 35.75% per FA 2026) + §22.x (NRB freeze → 2031) + §22.12 (s.169E not s.169G).
+5. `docs/property/track2_page_tracker.md` — current state of all Track 2A rows. Trial phase (4 briefs ✅) + Batch 1 (9 briefs ✅) + **Batch 2 (9 briefs ✅ at 🟢 brief_drafted, closed 2026-05-24 PM)**.
+6. `docs/property/track2_site_wide_flags.md` — full F-flag log (F-1 to F-36, plus resolution log). F-13, F-18 RESOLVED in-program; F-15 DEFERRED to Phase 3.
+7. **One brief to inspect end-to-end as depth match-target:** `briefs/property/track2/trial/cgt-rates-property-2026-27-current-rates-explained.md`. This is the gold-reference brief; sub-agent prompts should require this depth. For REWRITE-template reference: Batch 1 sub-bucket A or Batch 2 sub-bucket B. For REDIRECT-PROPOSED-template reference: Batch 1 sub-bucket B or Batch 2 sub-bucket A.
 
-**Acknowledge the user with one short message:** *"Picked up. Track 2 phase: Batch 1 closed + drift audit closed, Wave 6 mid-execution. Open decisions: [number] pending. Ready for next instruction."* — nothing longer.
+**Acknowledge the user with one short message:** *"Picked up. Track 2 state: Trial + Batch 1 + Batch 2 closed (22 briefs drafted, ~211 residual). Wave 6 closed; Wave 7 HP-lock pending. Open decisions: [number] pending. Ready for next instruction."* — nothing longer.
 
 ---
 
@@ -24,11 +26,13 @@ You are taking over as Track 2 Manager for the Property Legacy Rewrite Brief Pro
 
 - **Track 2 is parallel to the Wave program.** Read-only against every Wave file. NEVER edit `NETNEW_PROGRAM.md`, `house_positions.md`, any `wave*_*` file, or `topic_gaps_final.md`.
   - **Exception:** house position citation corrections (not position changes) — like F-18 — can be made directly by Track 2 manager. Position-shape changes go via Wave manager. F-18 set the precedent: cite "FA 2023" → "Finance (No. 2) Act 2023 c.30 s.41" — citation fix, not position change.
-- **Output to `track2_*`-prefixed files only.** No collisions with Wave 5/6 file paths.
+  - **Cross-track recommendations:** when Track 2 surfaces a recommendation for Wave-manager attention (e.g., F-10 TMA 1970 s.43 lock), file as a clearly-marked POST-WAVE-N-INPUT section appended to the closed wave's flags file. Decision #2 (2026-05-24, commit `6769942`) set the precedent.
+- **Output to `track2_*`-prefixed files only.** No collisions with Wave 5/6/7 file paths.
 - **Self-awareness about your own context.** When context fills, write a §3 heartbeat update to TRACK2_PROGRAM and stop. See §14 of TRACK2_PROGRAM.
 - **Reasoning-first selection per §16.18.** No Jaccard scripts for cannib decisions; the LLM reasons semantically against the Cannibalisation Index.
-- **URL liveness mandatory per §16.31.** Every competitor URL in a brief is fetched + status-checked + date-stamped. **Statute citations also need content verification** (§16.36 + F-8 lesson: TCGA 1992 s.4 was substituted by FA 2019, URL live but content gutted).
-- **Wave heartbeat re-read at every batch start.** Open `wave6_page_tracker.md`, `wave6_site_wide_flags.md`, and `NETNEW_PROGRAM.md` §3 before dispatching any sub-agent batch. Wave 6 is actively executing as of pickup; collisions possible.
+- **URL liveness mandatory per §16.31.** Every competitor URL in a brief is fetched + status-checked + date-stamped. **Statute citations also need content verification** (§16.36 + F-8 lesson: TCGA 1992 s.4 was substituted by FA 2019, URL live but content gutted). Per §16.44, WebFetch summarizer can hide HTML table content — trust session-time captures when secondary verification path can't see the data.
+- **§16.38 manager-prompt-drift discipline mandatory.** Any statutory citation YOU write into a sub-agent dispatch prompt must be verified-on-dispatch — the sub-agent instructed to verify your cite against legislation.gov.uk and surface drift catches. Batch 2 F-23 was a SELF-CATCH on the manager prompt (wrong s.224 for s.223B); the discipline held.
+- **Wave heartbeat re-read at every batch start.** Open the latest wave's `wave*_page_tracker.md`, `wave*_site_wide_flags.md`, and `NETNEW_PROGRAM.md` §3 before dispatching any sub-agent batch. Wave 6 closed 2026-05-24; Wave 7 in prep (no execution yet, HP-lock pending fresh manager pickup) — minimal collision risk for Track 2 work until Wave 7 launches.
 
 ---
 
@@ -52,12 +56,34 @@ You are taking over as Track 2 Manager for the Property Legacy Rewrite Brief Pro
   - Cluster-collapse pattern proven (sub-bucket B: 3 pages → 1 canonical)
   - D-9 hypothesis: generic-suffix slugs (`*-uk`, `*-complete-guide`, `*-2026`) more prone to Google deduplication; partially supported (4 of 5 invisible vs 1 of 5 specific-suffix; n=10 small)
 
-### Cross-residual drift audit complete (2026-05-24)
+### Cross-residual drift audit complete (2026-05-24 AM)
 - Audited 5 drift-pattern hypotheses surfaced during Batch 1 (F-9 stale figures, F-10 missing 4-year claim deadline, F-16 60-day cluster collapse candidates, F-19 £6k 60-day threshold, F-20 non-dom-spouse framing)
 - **Pattern hypothesis NARROWER than predicted.** False-positive rate on grep-only audits was ~75%. Most hits = historical context, post-abolition explainer, or correctly-clarifying.
-- **Only 1 NEW page** needs back-patch outside existing Track 2 scope: `incorporate-rental-property-without-cgt.md` FAQ #4 "18% vs 28%" → "18% vs 24%"
-- F-19 and F-20 confirmed NOT site-wide; F-9 + F-20 confined to pages already in Batch 1 Phase 3 scope
-- F-10 (missing TMA 1970 s.43 4-year claim deadline) confirmed gap site-wide on 6 affected pages — recommend Wave-manager-level house-position lock, not scattered back-patches
+- **Only 1 NEW page** needs back-patch outside existing Track 2 scope: `incorporate-rental-property-without-cgt.md` FAQ #4 "18% vs 28%" → "18% vs 24%" — **RESOLVED 2026-05-24** commit `5316bea`.
+- F-19 and F-20 confirmed NOT site-wide; F-9 + F-20 confined to pages already in Batch 1 Phase 3 scope.
+- F-10 (missing TMA 1970 s.43 4-year claim deadline) confirmed gap site-wide on 6 affected pages — recommend Wave-manager-level house-position lock, not scattered back-patches. **RECOMMENDATION FILED 2026-05-24** to `wave6_site_wide_flags.md` POST-WAVE-6-INPUT section, commit `6769942`; awaiting Wave 7+ manager lock.
+
+### Wave 6 closed 2026-05-24 (cross-track update)
+- Wave 6 closed in 10 close commits (`3808019` → `0805d07`). 30 net-new pages live on main: 10 LtdCo extraction + 10 Trusts/settlements/GROB + 10 Capital allowances (CAA 2001).
+- New house positions locked: §21.1 (s.455 = 35.75% per FA 2026), §22.x (NRB freeze → 2031), §22.12 (s.169E not s.169G), §25 CAA 2001 cluster.
+- New §16 lessons added: §16.41 watcher-template hygiene + §16.42 EXISTING_PAGE_STALE density × novelty × adjacency pattern + §16.43 sub-agent STALE-sweep dispatch validated + §16.44 WebFetch summarizer can hide HTML table content.
+- Wave 7 IN PREP (HP-lock + Stage 1 brief generation pending fresh manager pickup). Bucket mix: RRA + EPC + BSA compliance (Bucket A) + HMRC enquiry + tax compliance ops (Bucket B) + Specialist transactional + trust depth continuation (Bucket C). **Zero CGT collision with Track 2 Batch 2.**
+
+### Batch 2 complete (2026-05-24 PM)
+- 9 briefs at `briefs/property/track2/batch2_cgt/` across 3 sub-buckets:
+  - **Sub-bucket A (3 REDIRECT-PROPOSED — F-16 60-day-CGT cluster collapse continuation):** how-to-report-property-sale-hmrc-60-days + report-property-sale-hmrc-60-days-guide → `cgt-payment-deadlines-property-sales-2026` (same canonical as Batch 1 sub-bucket B trio — completes 5-page collapse) + capital-gains-tax-selling-rental-property-uk → `cgt-selling-buy-to-let-property-calculation-guide` (DIFFERENT canonical per Cannib Index §6).
+  - **Sub-bucket B (3 REWRITE — CGT reliefs):** principal-private-residence-relief-landlords + rollover-relief-property-landlords + letting-relief-landlords-2026-changes.
+  - **Sub-bucket C (3 REWRITE — CGT applied mechanics):** non-resident-cgt-uk-property-rates-reporting + cgt-main-residence-election-two-properties + cgt-commercial-property-different-residential.
+- 16 flags raised (F-21 to F-36) + 14 discoveries (D-1 to D-14). Critical catches:
+  - **F-23 (HIGH):** SELF-CATCH on manager dispatch prompt — wrong statute cite (s.224 for s.223B Lettings Relief inserted by FA 2020). §16.38 verify-on-dispatch discipline held.
+  - **F-29 (HIGH):** LARGEST single stale-framing catch in Track 2. Commercial-vs-residential CGT page's entire core framing ("commercial 10%/20% vs residential 18%/24%") wiped out by Autumn Budget 2024 — TCGA s.1H now unified 18%/24% for ALL chargeable gains for individuals. Brief reframes from "different rates" to "different reliefs + different mechanics" (load-bearing pivot).
+  - **F-25 (HIGH):** False FIRPTA-style conveyancer-withholding claim on NRCGT page (UK has NO such regime).
+  - **F-31 + D-8 + D-10:** wrong-CT-£250k-threshold cluster wider than originally hypothesised — 4 confirmed instances across diverse page-classes (LtdCo + NRCGT-touching + commercial-vs-residential + 60-day-CGT-touching).
+  - **F-35 (NEW PATTERN):** §16.42 EXISTING_PAGE_STALE density extends TO the 2026-05-21 rewrite-pass cohort, not just untouched residual. Wider radius than predicted.
+- **New methodology wins:**
+  - Intra-batch CANNIBAL coordination via PROACTIVE Q&A post (not reactive query) worked perfectly — Sub-bucket B posted PRR scope at brief-start; Sub-bucket C accepted differentiator with zero round-trip. Cleanest intra-batch coordination of any Track 2 batch.
+  - 3 sub-agents dispatched via Agent tool background mode (user-override of saved-feedback separate-terminal pattern for this batch only — pattern not yet adopted as default; clarify with user before re-using).
+  - F-16 cluster-collapse continuation hypothesis 100% validated (5-page collapse cohort, zero false positives).
 
 ### Track 2B side-program (sitemap mining)
 - 65 NEW net-new candidates surfaced from 55 cached competitor sitemaps
@@ -70,35 +96,44 @@ You are taking over as Track 2 Manager for the Property Legacy Rewrite Brief Pro
 - `0ec60ba` Track 2 Batch 1 close (30 files, 5,871 insertions)
 - `a103a04` Track 2: F-13 + F-18 back-patches (2 files)
 - `7be7cb0` Track 2: cross-residual drift audit
-- Plus interspersed Wave 6 commits (Wave 6 actively shipping)
+- `5316bea` Track 2 Batch 1 follow-up: Decision #1 back-patch (incorporate-rental-property-without-cgt 28% → 24%)
+- `6769942` Track 2 cross-track input: Decision #2 TMA 1970 s.43 recommendation appended to wave6 flags
+- `2dea735` Track 2 Batch 2 prep (10 files: Cannib Index refresh + tracker + 6 Q&A/discovery seeds + launch prompts + §3 heartbeat)
+- `bc75897` Track 2 Batch 2 close (17 files, 2,808 insertions: 9 briefs + tracker + Cannib Index + flags + Q&A coordination + discovery logs + §3 heartbeat)
+- Plus interspersed Wave 6 close commits (`3808019` → `0805d07`, 10 commits) and Wave 7 prep checkpoint `c1a8d92`
 
 ---
 
-## 3. Open decisions awaiting user (you're picking up here)
+## 3. Open decisions awaiting user (you're picking up here — UPDATED 2026-05-24 PM post-Batch-2)
 
-### Decision 1: Back-patch `incorporate-rental-property-without-cgt.md`?
-- ~2 min, 1-line FAQ fix (28% → 24% per §5 LOCKED)
-- Options: (a) do it now as a 4th separate commit, (b) fold into Batch 2 sub-bucket if/when that touches CGT cluster, (c) leave for cluster-level batch later
-- **Manager recommendation:** (a) quick commit now while context is hot — it's the cleanest finding from the drift audit.
+### Decision A: Batch 3 scope?
+- **Option A — Section 24 cluster (~22 residual):** Largest intra-cluster cannibalisation pool per Cannib Index §6. High REDIRECT-PROPOSED yield expected.
+- **Option B — AIA / Capital allowances cluster (~12 residual):** Cross-track interlock with Wave 6 Bucket C (Capital allowances pillar shipped 2026-05-24). 3-5 residual likely REDIRECT-PROPOSED to Wave 6 pillar; remaining REWRITE as applied/local variants. Now resolvable since Wave 6 closed.
+- **Option C — City accountant cluster (~30 residual):** F-1 pricing-leak audit needed first. Bigger scope.
+- **Option D — Stay in CGT-adjacent territory (~10-12 residual):** Calculator pages + Section 24-CGT-overlap + remaining specialist CGT pages (BADR/PRR-loss/non-resident-overseas-CGT) — closes CGT cluster definitively (currently 22 of 25 residual CGT pages briefed).
+- **Manager recommendation:** wait for user signal. Each option has different sub-agent dispatch shape; user picks based on commercial priority.
 
-### Decision 2: Lock TMA 1970 s.43 (4-year capital loss claim deadline) as a house position?
-- Not currently in `house_positions.md`. Affects 6 pages (residual + 3 rewrites). Sub-bucket A's D-7 + audit B's F-10 both recommend.
-- This is a Wave-manager-level decision (Track 2 doesn't lock house positions). Flag to Wave 6 manager via `wave6_*_flags.md` or wait for Wave 7+.
-- **Manager recommendation:** flag to Wave 6 manager for §5.X extension; meanwhile sub-agents drafting CGT briefs cite TMA 1970 s.43 directly from legislation.gov.uk (the gov.uk loss-claim page also confirms).
+### Decision B: §16.43 STALE-sweep sub-agent dispatch?
+- Batch 2 surfaced 5 cluster-audit recommendations: F-21 Lettings pre-2020 framing cluster + F-28 + F-30 commercial Budget-2024 cluster + F-31 small-profits-rate-cluster + F-35 rewrite-cohort year-stamp cluster + F-36 WebFetch sample re-check.
+- Per §16.43 these decompose well: precise grep-driven mechanical back-patches that benefit from sub-agent parallelism.
+- ~15-30 min sub-agent run time. Manager context cost: low (single prompt + single report).
+- **Manager recommendation:** dispatch before Batch 3 — banks the audit value while context is hot; surface any false-positives before they propagate into Batch 3 sub-agent prep.
 
-### Decision 3: Batch 2 scope?
-- **Option A — continue CGT cluster:** F-16 candidates (3 more 60-day-CGT pages likely future REDIRECT-PROPOSED to same canonical) + remaining residual CGT pages. Same cluster as Batch 1, predictable.
-- **Option B — pivot to Section 24 cluster:** ~22 residual Section 24 pages. Largest intra-cluster cannibalisation pool (per cannib index §6). High REDIRECT-PROPOSED yield expected.
-- **Option C — pivot to AIA / Capital allowances cluster:** ~12 residual + cross-track interlock with Wave 6 Bucket C (Capital allowances pillar already shipped). Some pages may become REDIRECT to Wave 6 pages once they merge to main.
-- **Option D — pivot to city accountant cluster:** ~30 residual city pages. F-1 pricing-leak pattern likely site-wide here (per trial brief #2 Birmingham finding); could surface a big cluster-audit before commissioning rewrites.
-- **Manager recommendation:** wait for user signal. Each option has different sub-agent dispatch shape; user picks based on commercial priority. Batch 1's CGT cluster taught us cluster-collapse is real → high-overlap clusters (Section 24, AIA, city pages) likely give more REDIRECT-PROPOSED than REWRITE.
+### Decision C: Phase 3 execution scheduling?
+- Phase 3 = sub-agent takes a brief, rewrites the actual markdown page. Different from brief drafting.
+- **22 briefs ready for Phase 3 execution:**
+  - 3 trial REWRITE (excluding gold-reference which is canonical-rewrite of same slug)
+  - 6 Batch 1 REWRITE + 3 Batch 1 REDIRECT
+  - 6 Batch 2 REWRITE + 3 Batch 2 REDIRECT
+- Phase 3 execution session likely needs worktrees (concurrent edits to `Property/web/content/blog/` will conflict). Different shape from brief drafting (which used main, no worktrees).
+- F-15 worked-example salvage + D-11/D-12 canonical-depth-up lifts happen at Phase 3 before redirect deletes the sources.
+- **Manager recommendation:** bundle the 22 briefs in one Phase 3 dispatch. Needs its own scoping session — sub-agent dispatch shape is different (worktrees, middleware.ts edit coordination, monitored_pages Supabase inserts).
 
-### Decision 4: Phase 3 execution scheduling?
-- Phase 3 = sub-agent takes a brief, rewrites the actual markdown page. Different from Stage 2 (brief drafting).
-- Currently 13 briefs ready for Phase 3 execution: 3 trial REWRITE (excluding gold-reference which is for the same canonical-rewrite) + 6 Batch 1 REWRITE + 3 Batch 1 REDIRECT
-- Phase 3 execution session likely needs worktrees (concurrent edits to `Property/web/content/blog/` will conflict). Different shape from Stage 2 brief drafting (which used main, no worktrees).
-- F-15 worked-example salvage happens at Phase 3 (lift B1-B3 band-stacking example into calculation walkthrough sibling before redirect deletes the source).
-- **Manager recommendation:** propose Phase 3 only after Batch 2 close so we can bundle ~18-25 briefs into one Phase 3 dispatch. Until then, briefs sit ready.
+### Decision D: Sub-agent dispatch mode?
+- Batch 1 used separate-terminals pattern (saved feedback).
+- Batch 2 used Agent tool background mode (user-override; worked well — manager context stayed cheap on notification-only basis).
+- Open question: revert to separate-terminals (per saved feedback) OR adopt Agent background mode as new default OR keep batch-by-batch user choice?
+- **Manager recommendation:** keep batch-by-batch user choice for now. Both worked; pick whichever fits the moment. If Agent-background pattern stays clean across 2-3 more batches, consider updating the saved feedback to make it the default.
 
 ---
 
@@ -225,8 +260,10 @@ This is the highest-frequency risk pattern across both Wave and Track 2 work. **
 
 ## Final note: cross-program awareness
 
-Wave 6 is ACTIVELY EXECUTING as of this pickup. Wave 6 Bucket C (Capital allowances + SBA + FYA) overlaps topically with Track 2's residual AIA cluster (~12 pages). When Wave 6 closes, expect to revisit the AIA cluster for REDIRECT-PROPOSED candidates (3-5 likely). Until then, leave the AIA cluster untouched in Track 2.
+Wave 6 CLOSED 2026-05-24 (10 close commits `3808019` → `0805d07`). Wave 6 Bucket C (Capital allowances + SBA + FYA) overlaps topically with Track 2's residual AIA cluster (~12 pages) — cannib resolution now executable. Expected outcome: 3-5 residual REDIRECT-PROPOSED to Wave 6 Bucket C pillar; remaining REWRITE as applied/local variants (HMO-applied, FHL-grandfathered, second-hand-assets-applied, etc.). This is a natural Batch 3 candidate if user picks Option B.
 
-Wave 6 will likely also extend §16 lessons (§16.42+ probable) and may lock new house positions §26+. Track 2 inherits both automatically via pointer.
+Wave 7 IN PREP as of 2026-05-24 PM. House-position lock + Stage 1 brief generation pending fresh Wave 7 manager pickup (per NETNEW_PROGRAM §3 Wave 7 prep subsection). Bucket mix: RRA + EPC + BSA compliance (A) + HMRC enquiry + tax compliance ops (B) + Specialist transactional + trust depth continuation (C). **Zero CGT cluster collision risk for Track 2 Batch 3+.** TMA 1970 territory in Wave 7 Bucket B (B1 discovery assessments TMA 1970 s.29 + B2 closure notices TMA 1970 s.28A) sits in the same statute family as Track 2's open TMA 1970 s.43 recommendation — if Wave 7 manager extends house positions for TMA territory, our recommendation may get folded in.
+
+§16 lessons now extend through **§16.44** (Wave 6 close added §16.41 + §16.42 + §16.43 + §16.44). House positions §1-§25 LOCKED. Wave 7+ may extend to §26+ depending on bucket-mix coverage.
 
 End of pickup doc. Read `TRACK2_PROGRAM.md` next.
