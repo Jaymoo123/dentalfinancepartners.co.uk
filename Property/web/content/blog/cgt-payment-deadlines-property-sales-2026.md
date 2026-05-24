@@ -98,6 +98,19 @@ faqs:
 
 <p>Where the seller's income for the year is uncertain (because the tax year is not complete, or self-employment profits are not settled), a reasonable estimate is acceptable. Any difference between the estimate used on the 60-day return and the final position is reconciled through Self Assessment.</p>
 
+<h3>Filing without digital access</h3>
+
+<p>The online service is the default route, but not the only one. HMRC distinguishes three populations of unrepresented filers: digitally excluded (unable to use online services because of age, disability, remoteness of location, religious belief or similar), digitally challenged (able to engage but struggling to manage the process unaided) and digitally capable (expected to use the online service, with help available if needed).</p>
+
+<p>Two paper-route options exist for sellers who cannot or do not want to file online:</p>
+
+<ul>
+<li><strong>Interactive PPDCGT form.</strong> Since April 2024, HMRC has published an interactive Capital Gains Tax on UK Property return that can be completed online, printed and posted. The route is open without specifically qualifying as digitally excluded, and is the simplest fallback when an online submission is not viable.</li>
+<li><strong>Phone the Extra Support Team.</strong> Digitally-excluded sellers can phone HMRC on 0300 200 3300 (the main Taxes helpline) to either request a paper form to be issued by post or ask the Extra Support Team to complete the whole reporting process over the phone on their behalf.</li>
+</ul>
+
+<p>The 60-day deadline applies regardless of filing route. Paper-route returns must still reach HMRC, and any tax due must still be paid, within 60 days of completion. There is no separate paper-route deadline and no extension for posting time. For unrepresented sellers the Low Incomes Tax Reform Group (LITRG) publishes step-by-step walkthroughs of both routes.</p>
+
 <h2>Payment is due at the same time</h2>
 
 <p>The CGT calculated on the 60-day return is payable on or before the 60-day filing deadline. The service offers payment by bank transfer, debit card or corporate credit card. There is no equivalent of a Time to Pay arrangement built into the 60-day workflow, although in practice HMRC will consider Time to Pay requests through the normal route after the liability has crystallised.</p>
