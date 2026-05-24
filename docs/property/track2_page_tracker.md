@@ -170,6 +170,101 @@ For brief drafting (Stage 2), sub-agents work on `main` (no worktrees needed sin
 
 ---
 
+## Phase 3 — execution dispatch (2026-05-24 PM)
+
+**State:** 22 briefs drafted across Trial + Batch 1 + Batch 2 are ready for Phase 3 execution. Three pre-execution lifts shipped on main before this section (commits `dcf504f` F-15 / `da7dbe8` D-12 / `5d9259a` D-11 / `44684f5` resolution-log housekeeping). All 6 REDIRECT source markdowns remain on disk pending the REDIRECT bundle; canonical targets now carry the lifted content. Worktrees created off main HEAD `44684f5`.
+
+**Dispatch shape (user-confirmed 2026-05-24 PM):** 3 REWRITE worktrees mirroring cluster affinity + 1 REDIRECT worktree handling middleware edit + source deletions + internal-link survey. Separate-terminals dispatch (per saved-feedback default). No auto-deploy; vercel CLI on explicit user authorisation only.
+
+**Status progression delta for Phase 3 rows:** 🟢 brief_drafted → 🔵 phase3_in_progress (sub-agent claimed for execution) → ✅ executed (worktree branch + commit hash recorded). The legacy ⚠️ collision code still applies if a Wave touches a Phase 3 slug mid-flight; check Wave 7 heartbeat at sub-agent start.
+
+### Worktree map
+
+| Worktree | Branch | Subdir (absolute) | Operation | Brief count |
+|---|---|---|---|---|
+| A | `track2-phase3-a` | `C:/Users/user/Documents/Accounting-wt-property-track2-phase3-a` | REWRITE — CGT reliefs cluster | 6 |
+| B | `track2-phase3-b` | `C:/Users/user/Documents/Accounting-wt-property-track2-phase3-b` | REWRITE — CGT scenarios + applied mechanics | 6 |
+| C | `track2-phase3-c` | `C:/Users/user/Documents/Accounting-wt-property-track2-phase3-c` | REWRITE — Trial cohort (including T4 gold-reference canonical-rewrite) | 4 |
+| REDIRECTS | `track2-phase3-redirects` | `C:/Users/user/Documents/Accounting-wt-property-track2-phase3-redirects` | REDIRECT bundle (6 redirects + middleware edit + source deletions + internal-link survey + monitored_pages staging) | 6 |
+
+### Slug-level Phase 3 dispatch (22 rows)
+
+**Worktree A — CGT reliefs cluster (6 REWRITE):**
+
+| Row | Slug | Brief path | Phase 3 status |
+|---|---|---|---|
+| B1-A1 | cgt-deferral-strategies-property-investors-uk | `briefs/property/track2/batch1_cgt/sub_a/cgt-deferral-strategies-property-investors-uk.md` | 🟢 ready |
+| B1-A2 | reduce-cgt-property-disposal-uk | `briefs/property/track2/batch1_cgt/sub_a/reduce-cgt-property-disposal-uk.md` | 🟢 ready |
+| B1-A3 | cgt-property-sold-loss-claim-capital-losses | `briefs/property/track2/batch1_cgt/sub_a/cgt-property-sold-loss-claim-capital-losses.md` | 🟢 ready |
+| B2-B1 | principal-private-residence-relief-landlords | `briefs/property/track2/batch2_cgt/sub_b/principal-private-residence-relief-landlords.md` | 🟢 ready |
+| B2-B2 | rollover-relief-property-landlords | `briefs/property/track2/batch2_cgt/sub_b/rollover-relief-property-landlords.md` | 🟢 ready |
+| B2-B3 | letting-relief-landlords-2026-changes | `briefs/property/track2/batch2_cgt/sub_b/letting-relief-landlords-2026-changes.md` | 🟢 ready |
+
+**Worktree B — CGT scenarios + applied mechanics (6 REWRITE):**
+
+| Row | Slug | Brief path | Phase 3 status |
+|---|---|---|---|
+| B1-C1 | cgt-divorce-property-transfer-tax-implications | `briefs/property/track2/batch1_cgt/sub_c/cgt-divorce-property-transfer-tax-implications.md` | 🟢 ready |
+| B1-C2 | cgt-inherited-rental-property-calculation-uk | `briefs/property/track2/batch1_cgt/sub_c/cgt-inherited-rental-property-calculation-uk.md` | 🟢 ready |
+| B1-C3 | cgt-property-transfer-spouse | `briefs/property/track2/batch1_cgt/sub_c/cgt-property-transfer-spouse.md` | 🟢 ready |
+| B2-C1 | non-resident-cgt-uk-property-rates-reporting | `briefs/property/track2/batch2_cgt/sub_c/non-resident-cgt-uk-property-rates-reporting.md` | 🟢 ready |
+| B2-C2 | cgt-main-residence-election-two-properties | `briefs/property/track2/batch2_cgt/sub_c/cgt-main-residence-election-two-properties.md` | 🟢 ready |
+| B2-C3 | cgt-commercial-property-different-residential | `briefs/property/track2/batch2_cgt/sub_c/cgt-commercial-property-different-residential.md` | 🟢 ready |
+
+**Worktree C — Trial cohort (4 REWRITE):**
+
+| Row | Slug | Brief path | Phase 3 status | Notes |
+|---|---|---|---|---|
+| T1 | airbnb-tax-uk-short-term-rental-income-taxed | `briefs/property/track2/trial/airbnb-tax-uk-short-term-rental-income-taxed.md` | 🟢 ready | Structure-only brief — sub-agent fetches fresh GSC + GA4 + competitor data at write time |
+| T2 | birmingham-property-accountant | `briefs/property/track2/trial/birmingham-property-accountant.md` | 🟢 ready | Structure-only brief — F-1 pricing-leak fix required |
+| T3 | 2027-property-tax-rates-section-24-relief-uk-landlords | `briefs/property/track2/trial/2027-property-tax-rates-section-24-relief-uk-landlords.md` | 🟢 ready | Structure-only brief — F-2 Bill-vs-enacted hedging required + F-3 CANNIBAL cluster (2 siblings recommended REDIRECT-PROPOSED to this slug, not in this Phase 3 scope) |
+| T4 | cgt-rates-property-2026-27-current-rates-explained | `briefs/property/track2/trial/cgt-rates-property-2026-27-current-rates-explained.md` | 🟢 ready | **SPECIAL CASE:** brief is the gold-reference data-complete depth target; slug exists as the 2026-05-21 rewritten canonical. Phase 3 task = depth-up rewrite of the existing canonical against the brief (not a fresh rewrite from scratch). Confirm canonical baseline before edit; preserve outbound internal links that other Phase 3 worktrees may rely on. |
+
+**Worktree REDIRECTS — REDIRECT bundle (6 REDIRECT ops):**
+
+| Row | Source slug | Target canonical | Brief path | Phase 3 status |
+|---|---|---|---|---|
+| B1-B1 | 60-day-cgt-reporting-property-sales-complete-guide | cgt-payment-deadlines-property-sales-2026 | `briefs/property/track2/batch1_cgt/sub_b/60-day-cgt-reporting-property-sales-complete-guide.md` | 🟢 ready |
+| B1-B2 | 60-day-cgt-reporting-property-sales-rule | cgt-payment-deadlines-property-sales-2026 | `briefs/property/track2/batch1_cgt/sub_b/60-day-cgt-reporting-property-sales-rule.md` | 🟢 ready |
+| B1-B3 | cgt-reporting-deadlines-property-2026 | cgt-payment-deadlines-property-sales-2026 | `briefs/property/track2/batch1_cgt/sub_b/cgt-reporting-deadlines-property-2026.md` | 🟢 ready (F-15 lift complete) |
+| B2-A1 | how-to-report-property-sale-hmrc-60-days | cgt-payment-deadlines-property-sales-2026 | `briefs/property/track2/batch2_cgt/sub_a/how-to-report-property-sale-hmrc-60-days.md` | 🟢 ready (D-11 lift complete) |
+| B2-A2 | report-property-sale-hmrc-60-days-guide | cgt-payment-deadlines-property-sales-2026 | `briefs/property/track2/batch2_cgt/sub_a/report-property-sale-hmrc-60-days-guide.md` | 🟢 ready |
+| B2-A3 | capital-gains-tax-selling-rental-property-uk | cgt-selling-buy-to-let-property-calculation-guide | `briefs/property/track2/batch2_cgt/sub_a/capital-gains-tax-selling-rental-property-uk.md` | 🟢 ready (D-12 lift complete) |
+
+**REDIRECT bundle commit structure (per pickup constraint — bundle by canonical target):**
+- Commit 1: 5 redirects → `cgt-payment-deadlines-property-sales-2026` (B1-B1 + B1-B2 + B1-B3 + B2-A1 + B2-A2) — completes F-16 cluster collapse
+- Commit 2: 1 redirect → `cgt-selling-buy-to-let-property-calculation-guide` (B2-A3) — separate canonical, separate monitored_pages signal
+- Both commits land on `track2-phase3-redirects` worktree branch; manager merges at close.
+
+### Hard constraints (Phase 3 — inherits Track 2 norms)
+
+- DO NOT touch any `wave5_*`, `wave6_*`, `wave7_*`, `NETNEW_PROGRAM.md`, `house_positions.md`, `topic_gaps_final.md`, or Wave-N tracker file (read-only) — Wave 7 is currently executing on parallel worktrees (a/b/c branches); their commits land on main concurrently with Phase 3 work
+- DO NOT touch any Wave-N net-new blog page in `Property/web/content/blog/` (Wave 5 + 6 outputs); the rewrite scope is the 16 named legacy slugs + 4 trial slugs only
+- DO NOT auto-deploy; vercel CLI on explicit user authorisation only
+- DO surgical staging (never `git add .` or `-A`); stage only the files the brief targets
+- DO use absolute paths for tracker / flags / Q&A / discovery-log edits per §16.14/§16.15/§16.37 — even from a worktree subdir, tracker edits land in the main repo file
+- DO commit per-brief (1 commit per page) for clean audit trail; manager merges worktree branches at close
+- DO build-verify (`cd Property/web && npm run build`) on each worktree branch before merge
+
+### Cross-worktree coordination
+
+- **Q&A discipline:** sub-agents append to `track2_phase3_questions_{a,b,c,redirects}.md` via ABSOLUTE PATH for any cross-worktree question (e.g., REDIRECT worktree may need REWRITE worktrees' commit hashes before middleware edit lands)
+- **Discovery log:** `track2_phase3_discovery_log_{a,b,c,redirects}.md` for execution-time findings
+- **Flags:** continue in existing `track2_site_wide_flags.md` (append-only); Phase 3 starts numbering at F-37
+- **Tracker rows:** sub-agents update Phase 3 status column (🟢 ready → 🔵 phase3_in_progress → ✅ executed) in the slug-level Phase 3 dispatch tables above. Branch + Commit columns in the original Batch 1/2 tables also get filled at the same time.
+
+### Post-merge tasks (manager — at close)
+
+1. Merge all 4 worktree branches to main in order: A → B → C → REDIRECTS (REDIRECT last so middleware edit lands AFTER rewrites have been built and verified)
+2. Build verify the merged main (`cd Property/web && npm run build` — single pass at end)
+3. Batch-insert `monitored_pages` Supabase rows: 16 rows for REWRITE (tracking_type=rewrite_post), 6 rows for REDIRECT (tracking_type=redirect_post). 90-day window from merge date.
+4. Update Cannibalisation Index §7: close Batch 1 in-flight + Batch 2 in-flight tables; mark F-16 cluster fully resolved.
+5. Update TRACK2_PROGRAM.md §3 heartbeat with Phase 3 close summary + commit hashes per row.
+6. Wait for user authorisation; deploy via `cd Property && vercel deploy --prod` (per memory: GitHub auto-deploy OFF for niche sites; vercel CLI from parent dir, not from web/).
+7. Optionally bundle with held W4+W5+W6 deploy pool OR ship Track 2 deploy separately (open decision pending user signal).
+
+---
+
 ## Universe at a glance (post-Wave-6 merge)
 
 | Pool | Count | Source |

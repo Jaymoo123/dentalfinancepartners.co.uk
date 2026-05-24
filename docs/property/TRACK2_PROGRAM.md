@@ -219,6 +219,52 @@ Both LLM-reasoning-led. Both read-only against Wave 5.
 
 ---
 
+**Phase 3 PREP COMPLETE 2026-05-24 PM** — 22 briefs ready for execution across 4 worktrees; 3 pre-execution lifts shipped first.
+
+**Pre-execution lifts shipped on main (4 commits):**
+1. `dcf504f` F-15 lift Manchester band-stacking worked example INTO `cgt-calculation-selling-buy-to-let-property-step-by-step.md` as Worked Example 2a (45 insertions; F-15 moved from DEFERRED to LIFT-DONE)
+2. `da7dbe8` D-12 lift TMA 1970 s.43 4-year-claim paragraph INTO `cgt-selling-buy-to-let-property-calculation-guide.md` as new H2 "Capital Losses on Disposal" (10 insertions; partial F-10 cross-residual gap closed at the canonical level; broader cluster audit recommendation in POST-WAVE-6-INPUT still pending Wave 7+ HP lock)
+3. `5d9259a` D-11 lift paper-PPDCGT digitally-excluded route INTO `cgt-payment-deadlines-property-sales-2026.md` as new H3 "Filing without digital access" (13 insertions; F-14 depth-up backlog partially progressed; corrects-by-reframing the soon-to-be-redirected B2-A1 source's false "no paper forms" FAQ #2 claim)
+4. `44684f5` resolution-log housekeeping in `track2_site_wide_flags.md` + `track2_discovery_log_batch2_sub_a.md` for F-15/D-11/D-12 LIFT-DONE entries (18 insertions, 1 deletion)
+
+All 6 REDIRECT source markdowns remain on disk pending Phase 3 REDIRECT bundle. Audit trail = lift -> (later) redirect -> delete.
+
+**Phase 3 dispatch shape (user-confirmed 2026-05-24 PM):**
+- 3 REWRITE worktrees mirroring cluster affinity (A = CGT reliefs cluster 6 briefs; B = CGT scenarios + applied mechanics 6 briefs; C = trial cohort 4 briefs including T4 gold-reference canonical-rewrite)
+- 1 REDIRECT worktree (6 redirects + middleware edit + source deletions + internal-link survey + monitored_pages staging)
+- Separate-terminals dispatch (per saved-feedback default)
+- No auto-deploy; vercel CLI on explicit user authorisation only
+
+**Worktrees created off main HEAD `44684f5`:**
+- `track2-phase3-a` at `C:/Users/user/Documents/Accounting-wt-property-track2-phase3-a/`
+- `track2-phase3-b` at `C:/Users/user/Documents/Accounting-wt-property-track2-phase3-b/`
+- `track2-phase3-c` at `C:/Users/user/Documents/Accounting-wt-property-track2-phase3-c/`
+- `track2-phase3-redirects` at `C:/Users/user/Documents/Accounting-wt-property-track2-phase3-redirects/`
+
+**Tracker upgraded:** Phase 3 dispatch section added to `docs/property/track2_page_tracker.md` — 4 sub-tables (one per worktree) listing all 22 slugs with brief paths + Phase 3 status (🟢 ready → 🔵 phase3_in_progress → ✅ executed) + worktree map + cross-worktree coordination notes + post-merge close protocol.
+
+**Q&A + discovery shells created (8 files, all empty templates ready for sub-agent appends):**
+- `track2_phase3_questions_{a,b,c,redirects}.md` (4 files)
+- `track2_phase3_discovery_log_{a,b,c,redirects}.md` (4 files)
+- Flags continue in existing `track2_site_wide_flags.md` (append-only; Phase 3 starts at F-37)
+
+**Launch prompts written:** `docs/sessions/property/TRACK2_PHASE3_LAUNCH_PROMPTS.md` — 4 paste-verbatim self-contained prompts mirroring Batch 2 format, updated for Phase 3 execution semantics (worktrees + 19-step legacy-rewrite workflow + gold-reference depth target + per-brief commit on worktree branch + manager-orchestrated merge at close + Wave 7 parallel-execution heartbeat re-read mandate).
+
+**Universe at Phase 3 dispatch:** 466 blog .md files on main HEAD `44684f5` / 233 residual legacy (post-lifts, source markdowns still on disk pending REDIRECT bundle) / Wave 7 in parallel execution on 3 worktrees (`property-wave7-a/b/c` at varying commits; Wave 7 commits land on main concurrently; sub-agents must re-read Wave 7 heartbeat at sub-agent start).
+
+**House positions at Phase 3 dispatch:** §1-§26.9 LOCKED (Wave 7 HP-lock added §26.9 + §1.G + §22.21 + §25.11 + §1.A-§1.F SDLT depth per recent Wave 7 prep commits `6cbb0ed` + `1593b58` + `9c62002` + `1fc18d6`). §5 LOCKED CGT 2026/27 + §17.4 LOCKED NRCGT 60-day rule + §24 LOCKED s.222(5)+(6)(a) joint-signing + s.58 spouse transfer remain the primary spines for Phase 3 CGT rewrites. §7 LOCKED April 2027 surcharge — Bill-form hedge per F-2/F-5/F-22 unless legislation.gov.uk shows Royal Assent at write time.
+
+**Phase 3 ready to dispatch.** User opens 4 separate Claude Code terminals at the 4 worktree subdirs and pastes one prompt per terminal. Manager idles while sub-agents run; polls main's tracker / flags / Q&A / discovery files for progress.
+
+**Open decisions still pending user (after Phase 3 prep):**
+1. Phase 3 dispatch mode timing — when does user kick off the 4 sub-agents? (separate decision — Phase 3 prep is COMPLETE; dispatch is user-triggered)
+2. Deploy timing — manager waits for explicit `vercel deploy --prod` authorisation per memory note `vercel_cli_deploy_workflow.md`
+3. Deploy bundling — bundle the Phase 3 outputs with held W4+W5+W6 deploy pool (per NETNEW §19 last note) OR ship as separate Track 2 deploy (manager recommendation = separate Track 2 deploy so monitored_pages signals stay disaggregable)
+
+**Phase 3 prep commits landed:** `dcf504f` + `da7dbe8` + `5d9259a` + `44684f5` (lifts + housekeeping) + (this commit) Phase 3 prep bundle (tracker dispatch section + launch prompts + 8 Q&A/discovery shells + §3 heartbeat update + 4 worktrees created off main).
+
+---
+
 ## §4 Brief anatomy — Track 2A template
 
 Each Track 2A brief lives at `briefs/property/track2/<slug>.md`. Section outline (Stage 1 reasoning vs Stage 2 data-enriched marked):
