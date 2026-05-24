@@ -1117,7 +1117,7 @@ Extends and deepens the Wave 2 IHT positions in §15 / §16 with landlord-specif
 
 - **s.18(1) IHTA 1984 spouse exemption (full):** unlimited transfers between spouses are exempt from IHT where the **receiving** spouse is a long-term UK resident (s.6A test; see §15.6 + §22.X for the operative LTR mechanics). The historic "UK-domiciled" criterion was replaced by FA 2025 with effect from 6 April 2025; sessions writing post-6-April-2025 cases must use LTR not domicile.
 - **s.18(2) IHTA 1984 spouse exemption (limited):** where the transferor is LTR but the receiving spouse is NOT LTR, the cumulative lifetime spouse-exemption value is capped at the **exemption limit** defined by s.18(2A) as the NRB upper limit per Sch 1 Table — **currently £325,000** but framed by-reference (the cap automatically tracks the NRB; sessions writing s.18(2) limited exemption must cite the s.18(2A) by-reference framing per the same rate-by-reference discipline as s.455 / ITA 2007 s.8(2) at §21.1).
-- **LTR election (new generic election post-FA-2025): IHTA 1984 s.267ZC** — non-LTR receiving spouse can elect to be treated as LTR for IHT purposes. Cost: brings worldwide assets into UK IHT scope. Further procedural detail at s.267ZD. NOT to be confused with **s.267ZA**, which was NARROWED by FA 2025 Sch 13 to a transitional pre-6-April-2025 election that requires the receiving spouse to have been UK-domiciled before 6 April 2025 within 7 years of the election / death — operative only for legacy cases, not the post-FA-2025 default.
+- **LTR election (SPOUSAL — not generic): IHTA 1984 s.267ZC.** Election available only where a spousal/civil-partner LTR connection exists (Condition A or B per s.267ZC). Condition A (s.267ZC(3)) — at any time within 7 years ending with the election date, the electing person had a spouse/civil partner who was LTR. Condition B (s.267ZC(4)) — a deceased person was LTR within 7 years ending with their death AND was the spouse/civil partner of the electing person (election made by P or by the deceased's personal representatives). **No election exists for non-LTR individuals without a spousal/civil-partner LTR connection** — there is no freestanding "anyone can elect to be LTR" route. Cost of election: brings worldwide assets into UK IHT scope for the election period. Further procedural detail at s.267ZD. NOT to be confused with **s.267ZA**, which was NARROWED by FA 2025 Sch 13 — the spousal-connection date in s.267ZA conditions A/B must be "before 6 April 2025" within the 7-year window. s.267ZA has no automatic repeal date; it remains available indefinitely for qualifying legacy spousal-connection cases. (Stage 1a §16.45 drift catch — earlier framing of s.267ZC as "generic LTR election" was misleading; the spousal-connection requirement makes it spousal-only.)
 - **Transferable NRB (TNRB):** unused NRB on first death transfers to surviving spouse (s.8A IHTA 1984). Claimed on IHT402 within 2 years of second death.
 - **Transferable RNRB (TRNRB):** unused RNRB on first death transfers. Claimed on IHT436.
 - **Second-death window planning:** between first and second death, the surviving spouse can use spouse exemption to consolidate the portfolio (no IHT on first-death transfers in), then face the full estate value on second death potentially above £2m RNRB taper threshold. Counter-strategies: gifting in survivor's lifetime, charity legacy on second death, equity-release to spend down portfolio value.
@@ -1135,7 +1135,7 @@ Extends and deepens the Wave 2 IHT positions in §15 / §16 with landlord-specif
 
 ### 22.7 Citations for §22
 
-- IHTA 1984: s.6 (excluded property — references LTR test), s.6A (LTR test), s.6B (young-person LTR variation), s.7 (rate), s.8A (TNRB), s.18 (spouse — post-FA-2025 LTR-based), Sch 1 Table (NRB upper limit used by-reference at s.18(2A)), s.62 (cumulative), s.105 (BPR), s.142 (DoV), Sch 1A (36% rate), s.267ZA (transitional pre-6-April-2025 domicile-window election only — narrow), ss.267ZC-267ZF (post-FA-2025 generic LTR election framework). **NOTE: s.267 (deemed domicile) omitted by FA 2025 s.44 + Sch 13 effective 6 April 2025 — historic framework GONE; do not cite s.267 in post-FA-2025 content.**
+- IHTA 1984: s.6 (excluded property — references LTR test), s.6A (LTR test), s.6B (young-person LTR variation), s.7 (rate), s.8A (TNRB), s.18 (spouse — post-FA-2025 LTR-based), Sch 1 Table (NRB upper limit used by-reference at s.18(2A)), s.62 (cumulative), s.105 (BPR), s.142 (DoV), Sch 1A (36% rate), s.267ZA (transitional pre-6-April-2025 domicile-window SPOUSAL election — narrow gateway, no repeal date), ss.267ZC-267ZF (post-FA-2025 SPOUSAL LTR election framework — Conditions A/B require spouse/civil-partner LTR connection within 7-year window). **NOTE: s.267 (deemed domicile) omitted by FA 2025 s.44 + Sch 13 effective 6 April 2025 — historic framework GONE; do not cite s.267 in post-FA-2025 content.** **NOTE: ss.267ZA + 267ZC are BOTH spousal-only — there is no post-FA-2025 generic "anyone can elect LTR" route.**
 - TCGA 1992: s.17 (deemed disposal at MV), s.62 (DoV CGT read-back), s.165 (holdover for trading shares), s.260 (holdover for CLT), ss.169B-169G (settlor-interested trust exclusion).
 - FA 1986: s.102 (GROB).
 - *Pawson v HMRC* [2013] UKUT 050 (TCC); *Brander v HMRC* [2010] UKUT 300 (TCC).
@@ -2351,7 +2351,7 @@ This §22.21 mini-lock sits in the §22 cluster as it extends the IHT / estate-p
 - **Qualifying new resident test (ITTOIA 2005 s.845B(1)):** individual must not be UK-resident for the current tax year AND must have been not UK-resident "for each of the 10 tax years before that tax year". The 10-tax-year non-residence requirement is the gateway; partial-year residence triggered by SRT split-year (§17.2) breaks the chain unless the individual was non-resident for the full tax year per SRT.
 - **Duration of relief (ITTOIA 2005 s.845B(2)):** up to **4 tax years** — the qualifying tax year + the 3 subsequent tax years. The relief is per-year claim (not automatic); failure to claim in a year forfeits that year's relief.
 - **Claim mechanism (ITTOIA 2005 s.845A):** relief is deducted at Step 2 of the income tax calculation (ITA 2007 s.23). Claimed via self-assessment return for the relevant tax year.
-- **22 categories of qualifying foreign income (ITTOIA 2005 s.845H):** broad scope including foreign property income, foreign trade profits, foreign pensions, foreign interest, foreign dividends, foreign savings income, foreign annuities. Cross-reference s.845H category list at write time before asserting a specific income type qualifies.
+- **Qualifying foreign income categories (ITTOIA 2005 s.845H):** broad scope — approximately 22-23 distinct income types including foreign property income, foreign trade profits, foreign pensions, foreign interest, foreign dividends, foreign savings income, foreign annuities. **Sessions must cross-reference the s.845H verbatim category list at write time before asserting a specific income type qualifies** — the exact count is HMRC-published and verifiable via legislation.gov.uk WebFetch; do NOT rely on the bare "22" or "23" figure without verification per §16.35.
 - **Disqualified income (ITTOIA 2005 s.845I):** excludes income derived from UK-related sources via interposition (anti-fragmentation). Cross-verify at write time.
 - **Loss of personal allowance + CGT annual exempt amount.** Claiming FIG relief in a tax year causes loss of personal allowance + dividend allowance + CGT AEA for that tax year — same architecture as the historic remittance-basis claim. Sessions writing on FIG must hedge claim mechanics (claim only where foreign income / gains exceeds the lost allowance value).
 - **Claim deadline.** Self-assessment return deadline + amendment window per TMA 1970 s.43 (4 years from end of tax year). Sessions writing on missed-claim recovery should anchor on s.43 amendment window.
@@ -2474,7 +2474,7 @@ This §22.21 mini-lock sits in the §22 cluster as it extends the IHT / estate-p
 
 **CIHC exclusion from SPR (CTA 2010 s.18N — restating from §21.5 for framework completeness):**
 - A close investment-holding company is **always taxed at 25% main rate** regardless of profit level. The SPR is unavailable.
-- **Qualifying-purpose carve-out (s.18N(2)(b) + s.18N(3)):** companies whose business is "making investments in land, or estates or interests in land, in cases where the land is, or is intended to be, **let commercially**" are NOT CIHCs. "Let commercially" means let to persons NOT connected with the company (s.18N(3)).
+- **Qualifying-purpose carve-out (s.18N(2)(b) + s.18N(3)):** companies whose business is "making investments in land, or estates or interests in land, in cases where the land is, or is intended to be, **let commercially**" are NOT CIHCs. **The "let commercially" exclusion is EXPANSIVE per s.18N(3) statutory wording — a letting is NOT commercial if the land is let to: (a) a person connected with the candidate company; (b) the spouse or civil partner of a connected person; (c) a relative of a connected person; OR (d) the spouse or civil partner of a relative of a connected person.** So "connected" reaches well beyond direct connected-party tenants — sibling/parent/child/uncle/aunt tenants of a connected person all defeat the qualifying-purpose carve-out. (Stage 1a §16.45 drift catch — earlier framing as "let to persons NOT connected with the company" was incomplete; updated 2026-05-25 with the full statutory exclusion.)
 - **Property-SPV implication:** standard BTL SPV with unconnected tenants = qualifies for SPR (subject to associated-companies divisor). BTL SPV with family-tenant occupant = potentially CIHC, loses SPR entirely. Mixed portfolios require per-SPV analysis.
 - Full CIHC depth in §21.5; this restatement is for framework completeness only.
 
@@ -2552,11 +2552,11 @@ This §22.21 mini-lock sits in the §22 cluster as it extends the IHT / estate-p
 ### 22.X.5 ss.267ZC-267ZF LTR election framework (post-FA-2025)
 
 - **Statutory anchor.** IHTA 1984 ss.267ZC-267ZF inserted by FA 2025 Sch 13 para 27.
-- **s.267ZC: generic LTR election.** Non-LTR individual can elect to be treated as LTR for IHT purposes. Typical use: non-LTR spouse of an LTR transferor electing in to receive unlimited spouse-exemption transfers (per §22.5). Cost: brings worldwide assets into UK IHT for the election period.
+- **s.267ZC: SPOUSAL LTR election (not generic).** Election available only where a spousal/civil-partner LTR connection exists. Condition A (s.267ZC(3)) — within 7 years before the election date, the electing person had a spouse/civil partner who was LTR. Condition B (s.267ZC(4)) — a deceased person was LTR within 7 years before death AND was the spouse/civil partner of the electing person (election made by P or by deceased's personal representatives). NO freestanding "anyone non-LTR can elect" route exists; the spousal-connection gateway is mandatory. Typical use: non-LTR spouse of an LTR transferor electing in to receive unlimited spouse-exemption transfers (per §22.5 / §22.X.6). Cost: brings worldwide assets into UK IHT for the election period. (Stage 1a §16.45 drift catch — earlier framing of "generic LTR election" was misleading; updated 2026-05-25.)
 - **s.267ZD: further provision.** Procedural mechanics for s.267ZC elections — timing, revocation rules, cessation events.
 - **s.267ZE: pre-FA-2025 domicile election subjects.** Individuals who made a s.267ZA election before 6 April 2025 (when the election was domicile-based) are treated as LTR under the new regime. Preservation route for legacy elections.
 - **s.267ZF: DTA tie-breaker.** Where a DTA operates by reference to "deemed domicile" (older treaties still using the pre-FA-2025 concept), s.267ZF provides the bridging rule — deemed domicile is treated as engaged where the individual is LTR. Necessary for older treaties that have not been updated to use LTR language.
-- **Critical distinction from s.267ZA.** s.267ZA was NARROWED by FA 2025 to a transitional pre-6-April-2025 domicile-window election. It is NOT the generic LTR election. Sessions writing on spouse-election advice MUST cite s.267ZC for post-6-April-2025 cases; s.267ZA only appears for pre-6-April-2025 legacy scenarios where the receiving spouse was UK-domiciled before 6 April 2025 within 7 years of the election / death.
+- **Critical distinction from s.267ZA.** s.267ZA was NARROWED by FA 2025 — the spousal-connection date in s.267ZA conditions A/B must be "before 6 April 2025" within the 7-year window. s.267ZA has no automatic repeal date; it remains available indefinitely for qualifying legacy spousal-connection cases (where the spouse / civil partner was UK-domiciled before 6 April 2025). Sessions writing on spouse-election advice must determine WHICH section applies: s.267ZA if the spousal connection (and pre-6-April-2025 domicile) sits in the legacy window; s.267ZC if the connection sits post-6-April-2025 and the spouse / civil partner was/is LTR. Both are spousal — neither is a generic "anyone elects" route.
 
 ### 22.X.6 Spouse exemption interactions with LTR (cross-reference §22.5)
 
@@ -2576,7 +2576,8 @@ This §22.21 mini-lock sits in the §22 cluster as it extends the IHT / estate-p
 
 - "Long-term resident status is lost after 3 years of non-UK residence" (false — only for individuals with 13 or fewer prior UK-resident years; scales 3-10 per s.6A table).
 - "Deemed domicile rules at s.267 IHTA 1984" (false — s.267 omitted by FA 2025 from 6 April 2025; cite s.6A LTR test instead).
-- "Non-doms can elect into LTR under s.267ZA" (false — s.267ZA narrowed to transitional pre-6-April-2025 domicile-window only; post-FA-2025 generic LTR election is s.267ZC).
+- "Non-doms can elect into LTR under s.267ZA" (false — s.267ZA narrowed to transitional pre-6-April-2025 domicile-window only; post-FA-2025 election is s.267ZC, which is itself SPOUSAL-only — both routes require a spouse/civil-partner LTR connection).
+- "Any non-LTR individual can elect into LTR status under s.267ZC" (false — s.267ZC is SPOUSAL only; Conditions A + B both require a spouse/civil-partner LTR connection within the 7-year window).
 - "Excluded property status depends on settlor's domicile" (false — post-FA-2025 depends on settlor's LTR status; cite s.6 IHTA 1984 LTR framework).
 - "10 consecutive years of UK residence is a separate test from 10 of 20" (false — 10 consecutive trivially satisfies 10 of 20; they describe the same population; s.6A statute uses single 10-of-20 test).
 - "Trusts settled by non-doms pre-6-April-2025 lose excluded-property status from 6 April 2025" (false — pre-6-April-2025 settlements retain excluded-property status for property settled before that date; only post-6-April-2025 additions are tested under new LTR settlor regime per FA 2025 Sch 13 paras 40-46).
@@ -2808,5 +2809,122 @@ A company's expenditure qualifies as "qualifying land remediation expenditure" o
 - "LRR applies to landfill tax payments" (false — Condition F at s.1144 excludes; landfill tax has its own relief regime).
 - "LRR applies to all dilapidations on derelict buildings" (false — Condition C requires expenditure on "relevant derelict land remediation" per s.1146A activity list; general refurbishment / non-derelict-state dilapidations do NOT qualify).
 - "LRR can be claimed alongside capital allowances on the same expenditure" (false — same expenditure cannot be twice-relieved; LRR + capital allowances on DIFFERENT expenditure categories is fine but architecture must be carefully designed).
+
+---
+
+## 29. VAT for property — architectural anchor cluster — Wave 8 mini-lock (added 2026-05-25; Stage 1b HP-gap closure)
+
+**Why this lock exists.** Wave 5 Bucket A was VAT topical-gap deepening (10 picks) but did not lock a dedicated HP cluster — per the manager note at the time, "Bucket A is statute-isolated (VAT is UK-wide; no §X locked; per-write §16.35 verification". Stage 1a sub-agent dispatch for Wave 8 Bucket C (9 picks all VAT-side) surfaced that all 9 seeds anchor to a non-existent "§22 (VAT extension)" placeholder. This §29 closes that HP gap with architectural anchors (statutory section + key SI references + form numbers) so Wave 8 Bucket C Stage 2 sub-agents have a single citation source. Does NOT replace per-write §16.35 verification on figures (rates, thresholds, deadlines change by Budget) — locks the FRAMEWORK only.
+
+### 29.1 VATA 1994 architectural overview — property-relevant Parts and Schedules
+
+- **VATA 1994 s.1.** Charge to value added tax on the supply of goods or services in the United Kingdom. Standard / reduced / zero rates per ss.2-4.
+- **VATA 1994 s.31 + Sch 9.** Exempt supplies. Property-relevant exemptions at Sch 9 Group 1 (Land).
+- **VATA 1994 s.29A + Sch 7A.** Reduced-rate (5%) supplies. Property-relevant reduced rates at Sch 7A Group 6 (residential conversions) and Group 7 (changed number of dwellings).
+- **VATA 1994 s.30 + Sch 8.** Zero-rate supplies. Property-relevant zero rates at Sch 8 Group 5 (construction of dwellings) and Group 6 (protected buildings — narrowed by FA 2012 to alterations only).
+- **VATA 1994 Sch 10.** Option to tax framework — the election regime that converts otherwise-exempt land supplies into taxable supplies + input-tax recovery on related costs.
+- **VATA 1994 s.49.** Transfer of business as a going concern (TOGC) framework.
+- **VATA 1994 ss.43-43D.** Group registration framework.
+- **VATA 1994 s.26B + SI 1995/2518 regs 112-116.** Capital Goods Scheme (CGS) — adjustment over 10 years on capital expenditure ≥£250,000 on land or buildings.
+- **SI 1995/2518 regs 99-110.** Partial exemption framework (standard method + special method).
+
+### 29.2 Sch 9 Group 1 (exempt land default + 14+ carve-outs to standard-rated)
+
+- **Default position:** the grant of any interest in or right over land, or of any licence to occupy land, is an EXEMPT supply unless caught by a carve-out.
+- **Standard-rated carve-outs to the exempt default — Sch 9 Group 1 Item 1 paragraphs (a)-(n):**
+  - **(a)** holiday accommodation grants (FHL-type seasonal lettings)
+  - **(b)** parking facilities
+  - **(c)** hunting / shooting rights
+  - **(d)** sporting rights
+  - **(e)** mineral and timber extraction rights
+  - **(f)** entries in betting / gaming venues
+  - **(g)** caravan pitches (non-permanent)
+  - **(h)** seasonal tent / camping pitches
+  - **(i)** mooring / aircraft housing
+  - **(j)** boxes / seats at sporting / cultural venues
+  - **(ja)** facilities for sport / physical recreation (gym memberships)
+  - **(k)** safe-deposit
+  - **(ka)** **self-storage of goods** — inserted by **FA 2012 Sch 26 paras 5(2) + 7(1)** with effect from 1 October 2012. Self-storage facility lettings are STANDARD-RATED by default, NOT exempt land supplies.
+  - **(l)** advertising displays / installations
+  - **(m)** premium services in clubs / restaurants
+  - **(n)** related catering
+- **Operative implication for Wave 8 C8 (self-storage page):** the page must front the standard-rated carve-out at para (ka). Competitor pages still framing self-storage as "exempt land supply" are pre-FA-2012-Sch-26 stale.
+
+### 29.3 Sch 10 option to tax — election, revocation, disapplication
+
+- **Election to opt (Sch 10 para 2):** notification to HMRC on **VAT 1614A** (or its current successor form). Notification within 30 days of effective date. HMRC acknowledges; option then in force.
+- **Cooling-off revocation (Sch 10 para 23):** option can be revoked within 6 months of effective date provided no input tax has been recovered on related costs AND no taxable supplies under the option have been made. **VAT 1614C** form.
+- **20-year revocation (Sch 10 para 25):** option in force ≥20 years can be revoked. **VAT 1614J** form. Pre-revocation conditions on capital goods scheme + connected-party rules.
+- **Automatic disapplication for dwellings (Sch 10 para 5):** option does NOT apply to grants of buildings "designed or adapted, and intended, for use as a dwelling or number of dwellings, or solely for a relevant residential purpose". Automatic — no election by recipient required.
+- **Recipient-certified disapplication (Sch 10 para 6):** recipient can disapply the option by certifying intended use as dwelling / relevant residential purpose. **VAT 1614D** certificate.
+- **Developers of exempt land anti-avoidance (Sch 10 para 12):** option does NOT apply where the grant is made by a developer of exempt land in certain anti-avoidance fact patterns — caught: developer + grant to connected party + recipient intends mixed-use. Distinct from paras 5/6.
+- **Real estate election (Sch 10 para 21):** election to opt all current and future interests in land owned by a person — VAT 1614E (election) + VAT 1614F (revocation).
+- **Prior permission required (Sch 10 para 28-30):** option may require HMRC prior permission in certain anti-avoidance fact patterns — VAT 1614B form.
+
+### 29.4 TOGC (VATA 1994 s.49 + SI 1995/1268 reg 5)
+
+- **The mechanism.** Transfer of a business as a going concern is OUTSIDE the scope of VAT — no VAT charged on the transfer, no input-tax recovery issue for the transferee.
+- **Conditions (SI 1995/1268 reg 5):** (a) the assets transferred are to be used by the transferee in carrying on the same kind of business as the transferor; (b) transferee is or immediately becomes a taxable person; (c) for property transfers — transferee opts to tax + notifies before tax point AND any beneficial-occupier-status condition is met.
+- **Option-matching rule for property TOGCs:** where the transferor has opted to tax, the transferee MUST opt to tax (and notify HMRC) BEFORE the tax point to qualify for TOGC treatment. Failure = standard-rated supply with VAT chargeable.
+
+### 29.5 Capital Goods Scheme (VATA 1994 s.26B + SI 1995/2518 regs 112-116)
+
+- **Threshold:** capital expenditure on land or buildings ≥**£250,000** (excluding VAT) triggers the CGS.
+- **Adjustment period:** 10 intervals (10 years).
+- **Adjustment mechanic:** annual recalculation of recoverable input tax based on the asset's use for taxable (recoverable) vs exempt (non-recoverable) purposes. Adjustments either return additional recoverable input tax to the taxpayer OR claw back over-recovered amounts.
+- **Use changes:** a switch from taxable to exempt use (e.g. opt-to-tax revocation; tenant change from commercial to residential) triggers clawback.
+
+### 29.6 Partial exemption (SI 1995/2518 regs 99-110)
+
+- **Standard method (reg 101).** Apportions residual input tax (non-attributable to either taxable or exempt supplies) based on the value of taxable supplies as a proportion of total supplies. Default; no HMRC approval required.
+- **Special method (reg 102).** Approved alternative method tailored to the business. Requires PRIOR HMRC approval; once approved, must be used consistently.
+- **Standard-method override (reg 107A inserted by SI 2002/1142).** Where the standard method materially distorts the recoverable amount, the taxpayer must adjust to a fair-and-reasonable basis. Override is taxpayer-initiated; HMRC may direct a special method via reg 102B (HMRC-direction route).
+- **De minimis (reg 106).** Where exempt input tax is below £625/month average AND ≤50% of total input tax, the trader is "below de minimis" and can recover ALL input tax (including the exempt portion). Annual computation.
+
+### 29.7 Reduced rate 5% — Sch 7A Group 6 (residential conversions)
+
+- **Trigger.** "Qualifying services" (typically construction and renovation services) supplied in the course of "qualifying conversions" of non-residential / mixed-use property into wholly residential use.
+- **Qualifying conversions (Sch 7A Group 6 Notes):** include (a) conversion of a non-residential building into a single household dwelling; (b) conversion of one or more buildings into multiple-occupancy dwellings; (c) changed-number-of-dwellings conversions per Group 7.
+- **Developer recovery flow.** Where developer makes onward sale of the converted property as a zero-rated first-grant-of-major-interest in a dwelling (Sch 8 Group 5), the 5% input VAT on conversion services is FULLY recoverable. Where onward use is exempt (e.g. residential letting), the 5% input VAT enters the partial exemption calculation.
+
+### 29.8 VAT registration thresholds (rate-by-reference)
+
+- **Standard registration threshold:** £90,000 (up from £85,000 from 1 April 2024). Verify against gov.uk at write time per §16.27 rate-by-reference discipline (same pattern as s.455 / s.8(2)).
+- **De-registration threshold:** £88,000 (up from £83,000 from 1 April 2024). Generally £2,000 below the registration threshold.
+- **Group registration (s.43-43D):** related corporate entities under common control can register as a VAT group. Intra-group supplies disregarded; single VAT return; joint and several liability.
+
+### 29.9 Citations for §29
+
+- VATA 1994 c. 23: s.1 (charge), s.4 (scope), ss.26B + 43-43D (CGS + group registration), s.29A + Sch 7A (reduced rates), s.30 + Sch 8 (zero rates), s.31 + Sch 9 (exempt supplies), s.49 (TOGC), Sch 10 (option to tax).
+- VATA 1994 Sch 9 Gr 1 Item 1 paragraphs (a)-(n) — exempt-default carve-outs (paragraph (ka) self-storage inserted by FA 2012 Sch 26 paras 5(2) + 7(1)).
+- VATA 1994 Sch 7A Group 6 (residential conversions reduced rate) + Group 7 (changed number of dwellings).
+- VATA 1994 Sch 10 paras 2 (election), 5 (dwelling automatic disapplication), 6 (recipient certification VAT 1614D), 12 (developers of exempt land anti-avoidance), 21 (real estate election), 23 (cooling-off revocation), 25 (20-year revocation), 28-30 (prior permission).
+- SI 1995/1268 reg 5 (TOGC conditions).
+- SI 1995/2518 regs 99-110 (partial exemption — standard method 101, special method 102, override 107A, de minimis 106) + regs 112-116 (CGS).
+- FA 2012 c. 14 Sch 26 paras 5(2) + 7(1) (inserting self-storage standard-rated carve-out at Sch 9 Gr 1 para (ka)).
+- HMRC VAT manuals (VATLP — Land and Property), Notice 706 (partial exemption), Notice 700/9 (TOGC), Notice 742 + 742A (land + option to tax), Notice 708 (buildings + construction), Notice 706/2 (CGS).
+- VAT form series: 1614A (option election), 1614B (prior permission), 1614C (cooling-off revocation), 1614D (recipient dwelling certification), 1614E (real estate election), 1614F (revoke real estate election), 1614G (grant of permission), 1614H (notification), 1614J (20-year revocation).
+
+### 29.10 Things to flag (do NOT decide unilaterally)
+
+- Whether HMRC has issued new permission-requirement direction or updated form numbers since the §29.3 lock — verify form currency at write time.
+- VAT rate / threshold changes at each Budget — sessions writing thresholds (£90k / £88k / £250k CGS) must verify against gov.uk at write time per §16.27 rate-by-reference discipline.
+- Whether the CGS £250k threshold or 10-year adjustment period has been amended (unchanged since SI 1995/2518 enactment but verify).
+- Special-method approval timelines + HMRC standard-method-override direction practice — case-specific; specialist advice required for border cases.
+
+### 29.11 Do not write (§29)
+
+- "Self-storage is exempt land supply" (false — STANDARD-RATED since 1 October 2012 via Sch 9 Gr 1 para (ka) inserted by FA 2012 Sch 26).
+- "All land supplies are exempt by default" (true in general but Sch 9 Gr 1 Item 1 paragraphs (a)-(n) carve out 14 categories to standard-rated; sessions must check the carve-out list).
+- "Option to tax is permanent" (false — cooling-off revocation within 6 months per Sch 10 para 23; 20-year revocation per Sch 10 para 25).
+- "Option to tax applies to residential property" (false — automatic disapplication for dwellings per Sch 10 para 5; recipient certification per para 6).
+- "Sch 10 para 12 covers residential conversion disapplication" (false — para 12 is "developers of exempt land" anti-avoidance; residential disapplication is paras 5 + 6).
+- "TOGC applies to property transfers without conditions" (false — option-matching + notification-before-tax-point + same-kind-of-business conditions per SI 1995/1268 reg 5).
+- "CGS adjustment is 5 years" (false — 10 intervals / 10 years for land + buildings; the 5-year period is for capital goods other than land).
+- "Special method approval is automatic" (false — requires prior HMRC approval per reg 102).
+- "Standard registration threshold is £85k" (false — £90k from 1 April 2024).
+- "Reduced rate is 0%" (false — 5% per Sch 7A; 0% is zero-rating per Sch 8 — different regimes).
+- "Group registration is available to all related entities" (false — common-control test under s.43-43D; specific eligibility conditions; HMRC can refuse).
+- "VAT is recoverable on all professional fees for property acquisitions" (false — recoverability depends on the onward use of the property: taxable use = full recovery; exempt use = no recovery; mixed = partial exemption calculation).
 
 ---
