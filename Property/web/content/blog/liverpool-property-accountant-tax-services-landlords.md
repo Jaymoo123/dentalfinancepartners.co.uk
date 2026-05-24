@@ -67,7 +67,7 @@ faqs:
 
 <h3>Selective licensing</h3>
 
-<p>Liverpool City Council reintroduced citywide selective licensing on 1 April 2022 covering around 80% of private rented properties outside HMO areas. The scheme is a five-year licence with fees typically around £400 per property (variable by scheme and discount). The fee is a deductible revenue expense on the SA105 in the year incurred. Failure to license can trigger civil penalties of up to £30,000 and rent repayment orders, neither of which are tax deductible.</p>
+<p>Liverpool City Council reintroduced citywide selective licensing on 1 April 2022 covering around 80% of private rented properties outside HMO areas. The scheme is a five-year licence with fees typically around £400 per property (variable by scheme and discount). The fee is a deductible revenue expense on the SA105 in the year incurred. Failure to license can trigger civil penalties of up to £40,000 (uplifted from £30,000 by SI 2026/319 reg.2, in force 1 May 2026) and rent repayment orders, neither of which are tax deductible.</p>
 
 <h3>Regeneration zones</h3>
 

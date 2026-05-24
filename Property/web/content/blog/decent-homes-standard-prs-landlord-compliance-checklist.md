@@ -165,7 +165,7 @@ editorialNote: "Drafted in the transitional window between commencement of the D
 <tr><td><strong>Emergency Remedial Action</strong></td><td>HA 2004 s.40</td><td>Council carries out the works and recovers the cost from the landlord</td></tr>
 <tr><td><strong>Emergency Prohibition Order</strong></td><td>HA 2004 s.43</td><td>Immediate prohibition where the hazard presents an imminent risk</td></tr>
 <tr><td><strong>Demolition Order / Clearance Area</strong></td><td>HA 2004 s.46 / s.47 + HA 1985 Part 9</td><td>Rare; reserved for properties beyond economic repair</td></tr>
-<tr><td><strong>Civil Penalty (alternative to prosecution)</strong></td><td>HA 2004 s.249A (Housing and Planning Act 2016)</td><td>Up to £30,000 for breach of Improvement Notice or licensing offence; rises to £40,000 under RRA 2025 s.15 for housing offences from 1 May 2026</td></tr>
+<tr><td><strong>Civil Penalty (alternative to prosecution)</strong></td><td>HA 2004 s.249A (Housing and Planning Act 2016)</td><td>Up to £40,000 from 1 May 2026 for breach of Improvement Notice or licensing offence (uplifted from £30,000 by SI 2026/319 reg.2; RRA 2025 s.15 separately sets a £40,000 ceiling for the RRA offence list on the same date)</td></tr>
 <tr><td><strong>New: Type 1 Requirement Penalty</strong></td><td>HA 2004 s.6A (RRA 2025 Sch 4 para 6, in force 27 Dec 2025 framework)</td><td>Up to £7,000 for breach of a Type 1 requirement on qualifying residential premises; full operation awaits substantive regulations</td></tr>
 </tbody>
 </table>

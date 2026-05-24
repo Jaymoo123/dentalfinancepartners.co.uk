@@ -91,7 +91,7 @@ faqs:
 <li>Application and renewal fees: <strong>revenue expense</strong>, deductible against rental income in the year paid.</li>
 <li>Cost of meeting licence conditions on an existing functioning property (replacement smoke alarm batteries, EICR remedials that are repairs not improvements, refresher tenant ID checks): <strong>revenue</strong>, deductible.</li>
 <li>Pre-licence capital improvements (new fire doors where none existed, hard-wired alarm install where battery-only previously, escape window installations): <strong>capital</strong>, not deductible against rents but added to the property's base cost for CGT.</li>
-<li>Civil penalties for unlicensed letting under Housing Act 2004 s.249A (which can run up to £30,000 per breach for the most serious cases) and rent repayment orders under Housing and Planning Act 2016: <strong>not deductible</strong> at all.</li>
+<li>Civil penalties for unlicensed letting under Housing Act 2004 s.249A (which can run up to £40,000 per breach for the most serious cases, uplifted from £30,000 by SI 2026/319 reg.2 in force 1 May 2026) and rent repayment orders under Housing and Planning Act 2016: <strong>not deductible</strong> at all.</li>
 </ul>
 
 <aside>
