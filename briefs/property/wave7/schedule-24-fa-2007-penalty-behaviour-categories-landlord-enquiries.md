@@ -179,40 +179,49 @@ Spawn Monitor on Q&A file; keep working while waiting.
 ## Per-page work-log (fill in as you go)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `schedule-24-fa-2007-penalty-behaviour-categories-landlord-enquiries` (per brief).
+- **Final category:** `landlord-tax-essentials` (per brief; lives under `/blog/landlord-tax-essentials/<slug>`).
+- **H1 chosen:** "Schedule 24 FA 2007 Penalty Behaviour Bands: Landlord Inaccuracy Penalties Explained".
+- **Meta title chosen:** "Schedule 24 FA 2007 Penalty Bands for Landlords" (47 chars; under 60-char floor).
+- **Meta description chosen:** "Schedule 24 FA 2007 sets landlord inaccuracy penalty bands at 30%, 70%, 100%, with offshore Category 2 and 3 uplifts taking the maximum to 200%." (144 chars).
+- **Why these vs other options:** H1 keeps the load-bearing Schedule 24 + FA 2007 statutory identifier upfront (the page is an anchor reference for B5/B6/B7/B10), then adds the operational framing "Penalty Behaviour Bands" + "Landlord Inaccuracy Penalties" for SERP intent match. Meta title trades the "explained" tail for character count headroom. Anti-templating: opening sentence is "When HMRC opens an enquiry into a landlord's tax return and finds the figures wrong, the penalty is calculated under Schedule 24..." rather than the banned "Schedule 24 of the Finance Act 2007 imposes..." opener.
 
 ### Competitor URLs fetched
-- 
+- Skipped at per-write per §16.36 priority. The brief framing differentiator + §27.2 verbatim matrix lock + statute verbatim verification (Sch 24 paras 4 / 4A / 10 / 14 + Sch 21 FA 2015) is the load-bearing factual base. Competitor patterns from the brief (Shipleys worked-example structure; Haines Watts mitigation-floor narrative) used as composition hints; no fresh pattern extraction needed.
 
 ### Existing-page review
-- 
+- `hmrc-penalties-late-landlord-tax-returns-2026` — read for separation discipline. Confirmed clean separation: existing page covers Sch 55 / Sch 56 (procedural late-filing + late-payment; £100 + £10/day + 6-month/12-month milestones). B8 covers Sch 24 (substantive inaccuracy; 30/70/100% + offshore uplift). No overlap. B8 forward-links to it under the "How Sch 24 sits alongside other landlord penalty regimes" section.
+- `penalties-not-declaring-rental-income-hmrc` — read for the Sch 41 sibling regime. Existing page uses 20%/35%/70% bands as generic behaviour categories without naming Sch 41. B8 distinguishes Sch 41 (failure-to-notify, includes 12-month qualifier on 0% non-deliberate-unprompted floor) from Sch 24 (inaccuracy, no 12-month qualifier) explicitly. Forward-link added.
 
 ### Citations added
-- 
+**External authority (9):** Sch 24 full schedule + paras 3 / 4 / 4A / 10 / 14 on legislation.gov.uk; Sch 21 FA 2015 full schedule; CH82420 (quality-of-disclosure handbook); CH83110 (suspension handbook).
+**Internal links (3):** `/blog/landlord-tax-essentials/making-tax-digital-property-income-2026-complete-guide` (MTD ITSA suspension-condition tie-in); `/blog/landlord-tax-essentials/hmrc-penalties-late-landlord-tax-returns-2026` (Sch 55/56 separation); `/blog/landlord-tax-essentials/penalties-not-declaring-rental-income-hmrc` (Sch 41 separation).
 
 ### Internal links added
-- 
+- See above 3 internal links.
 
 ### Inline CTA placements
-- 
+- After "The three behaviour bands" walk (high-intent: reader knows where they sit; band classification is the largest lever).
+- After "The offshore uplift under paragraph 4A" (high-stakes Cat 2/3 readers; can run to multiples of underlying tax).
+- After "Suspension of careless penalties under paragraph 14" (suspension proposal is operational territory for PTP).
 
 ### Build attempts
-- 
+- 1 attempt (clean). Build at `cd Property/web && npm run build` (after one-off `npm install` to populate wave7-b worktree node_modules — wave7-b worktree was fresh at launch).
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+- em-dash count: 0
+- en-dash count: 0
+- Tailwind utility classes: 0 (no `class="…"` attributes in body)
+- metaTitle length: 47 chars
+- metaDescription length: 144 chars
+- FAQ count: 12
+- Body word count: 3,307
+- Internal links resolve: 3 of 3 (MTD page exists; both penalty cross-links exist)
+- External authority links: 9 (target was 6-8; over-shipped for verification breadth)
+- Inline asides: 3
 
 ### Flags raised to wave7_site_wide_flags.md
-- 
+- **F-4 BRIEF_DRIFT** — Sch 24 para 10 has NO "within 12 months" qualifier on careless-unprompted 0% floor. Brief + §27.2 conflate Sch 24 para 10 with Sch 41 para 13 (which DOES carry the 12-month qualifier on non-deliberate unprompted). Page written using corrected statute; the Sch 24 vs Sch 41 12-month distinction used as operational differentiator in the mitigation-floor section. Back-patch to §27.2 + B8 brief recommended at wave close (manager-callable). 15th Wave 7 drift catch.
 
 ### 2-3 sentence summary
+B8 is the canonical Sch 24 FA 2007 penalty-matrix reference page for the Wave 7 Bucket B cluster: 3,307 words walking the three behaviour bands (careless / deliberate-not-concealed / deliberate-and-concealed), the para 4 maxima for Cat 1 / Cat 2 / Cat 3 territories, the para 10 mitigation floors, the para 4A offshore uplift, the Sch 21 FA 2015 asset-move 50% stacking penalty, and the para 14 suspension mechanic. B5 / B6 / B7 / B10 forward-cite B8's penalty matrix. F-4 BRIEF_DRIFT raised: brief + §27.2 carry an erroneous "(within 12 months)" qualifier on the careless-unprompted-0% floor (that cliff is Sch 41, not Sch 24); page written without the qualifier, Sch 24 vs Sch 41 distinction used as an operational differentiator.
