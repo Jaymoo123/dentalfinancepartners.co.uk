@@ -2584,3 +2584,138 @@ This §22.21 mini-lock sits in the §22 cluster as it extends the IHT / estate-p
 - "DTAs override the LTR test for spouse exemption" (false — s.267ZF provides bridging where treaty uses deemed-domicile language but the LTR test still applies for UK IHT operative purposes).
 
 ---
+
+## 28. Transactions in UK land + trading-vs-investment (CTA 2010 Part 8ZB + ITA 2007 Part 9A) — NEW Wave 8 cluster (locked 2026-05-25)
+
+Wave 8 Bucket B cluster. Anchors the anti-fragmentation regime for property developers (commercial + residential) and the trading-vs-investment line for "trader-by-stealth" landlords who flip. Distinct from §21 (LtdCo + FIC operational tax); §22 (IHT estate planning); §17 (expat). Cross-references §5 (CGT on residential property — chargeable-gain alternative to trading treatment); §1 (SDLT — incorporation + connected-party tests parallel the s.356OH fragmented-activities concept); §22.1 (BPR Pawson investment line — IHT-side framing of the same trading-vs-investment test).
+
+### 28.1 Statutory architecture — symmetric corporate + individual regimes (Finance Act 2016)
+
+- **Companies:** CTA 2010 Part 8ZB ss.356OA-356OT, inserted by FA 2016 c. 24 s.77(1). Effective per FA 2016 s.81 — disposals on or after 5 July 2016.
+- **Individuals:** ITA 2007 Part 9A ss.517A-517U, inserted by FA 2016 c. 24 s.79(1) + s.82(1). Effective for disposals on or after 5 July 2016.
+- **Symmetric architecture** — both Parts mirror each other section-by-section:
+
+| Topic | Companies (CTA 2010) | Individuals (ITA 2007) |
+|---|---|---|
+| Overview | s.356OA | s.517A |
+| Disposals of UK land + four-conditions test | s.356OB | s.517B |
+| Profits treated as trading | s.356OC | s.517C |
+| Disposals of property deriving value from land | s.356OD | s.517D |
+| Profits and losses | s.356OF | s.517F |
+| Chargeable person | s.356OG | s.517G |
+| Fragmented activities (anti-fragmentation) | s.356OH | s.517H |
+| Calculation of profit / surplus | s.356OI | s.517I |
+| Apportionments | s.356OJ | s.517J |
+| Arrangements for avoiding tax | s.356OK | s.517K |
+| Profits attributable to pre-intention period | s.356OL | s.517L |
+| Private residences carve-out | (no equivalent) | s.517M |
+| Tracing value | s.356OM | s.517N |
+| Related parties | s.356OT | s.517U |
+
+- **Operative consequence.** A "transaction in UK land" caught by Part 8ZB / Part 9A is treated as a trade — profit taxed as trading profit (CT for companies; income tax for individuals) at full marginal rates rather than CGT rates. For individuals this can flip an 18% / 24% CGT charge into a 40% / 45% income tax charge plus Class 4 NIC.
+- **Non-resident scope.** Both regimes catch non-UK-resident persons — a non-resident corporate developer cannot escape UK trading-tax charge by acting through an offshore structure. Designed to close pre-FA-2016 gap where non-resident developers structured around UK CT scope.
+
+### 28.2 The four-conditions test (s.356OB / s.517B)
+
+A disposal of UK land is caught if the disposal is made by a person within the operative scope AND **any one of Conditions A-D** is met:
+
+- **Condition A — acquisition main-purpose test (verbatim s.356OB(4)):** "the main purpose, or one of the main purposes, of acquiring the land was to realise a profit or gain from disposing of the land."
+- **Condition B — derived-property acquisition main-purpose test:** "the main purpose, or one of the main purposes, of acquiring any property deriving its value from the land was to realise a profit or gain from disposing of the land." (catches indirect acquisitions — share purchases in property-rich companies, partnership interest acquisitions, etc.)
+- **Condition C — trading-stock test:** "the land is held as trading stock." (deterministic — no main-purpose evaluation needed; if held as trading stock, caught.)
+- **Condition D — development main-purpose test:** "(in a case where the land has been developed) the main purpose, or one of the main purposes, of developing the land was to realise a profit or gain from disposing of the land when developed."
+
+- **"Main purpose, or one of the main purposes" wording.** Statutory language is **disjunctive** — multiple "main purposes" can coexist; only one needs to be profit-from-disposal. This makes Conditions A / B / D substantially WIDER than a single-dominant-purpose test. HMRC's published view: investment intent alongside profit intent does NOT defeat the test where profit intent is genuine and substantial.
+- **Timing of test.** Condition A tests intent AT ACQUISITION; Condition D tests intent AT DEVELOPMENT (later). A landlord who acquires-to-let (no Condition A) but later develops-to-sell can be caught by Condition D even though Conditions A and B fail. Operative for "convert and flip" cases.
+- **Six-month associated-persons window (s.356OB(2)).** Charge applies to those acquiring / holding / developing the land, to associated persons within a six-month window of the disposal, and to parties to arrangements enabling profit realisation "by any indirect method, or by any series of transactions."
+
+### 28.3 Indirect disposals via property-rich entities (s.356OD / s.517D)
+
+- **The mechanism.** Disposal of property "deriving its value from land in the United Kingdom" (typically shares in a property-rich company or partnership interest) is caught if a parallel main-purpose test is met. Captures the "slice of the action" pattern where a developer takes a profit-share via a corporate intermediary rather than direct land disposal.
+- **The 50% derivation test.** "Property deriving its value from land" is interpreted in line with NRCGT and other property-rich tests — typically requires ≥50% of value to derive (directly or indirectly) from UK land. Tracing rules at s.356OM / s.517N walk through multi-tier structures.
+- **Operative implication.** Cannot escape Part 8ZB / Part 9A by holding land in a SPV and selling SPV shares. Both the direct land disposal route and the share disposal route are caught.
+
+### 28.4 Anti-fragmentation: s.356OH / s.517H
+
+- **The architecture.** Where activities relating to a land disposal are fragmented across multiple persons / entities, the fragmentation rules attribute the activities to the chargeable person for the purpose of applying the main-purpose tests. Defeats the planning pattern of separating "the developer", "the seller", and "the profit-recipient" into different legal persons.
+- **Operative implication for landlord-developers.** Cannot insulate a sale entity from a development entity to avoid Condition D. The fragmentation rule treats coordinated activities by associated persons as a single chargeable scheme.
+- **Cross-reference to s.356OK / s.517K (arrangements for avoiding tax).** Wider anti-avoidance umbrella over the fragmentation rules.
+
+### 28.5 Badges of trade — caselaw framework for the main-purpose tests
+
+Where the four-conditions test is engaged, the underlying question is **whether the activity is a trade**. Pre-FA-2016 caselaw remains operative for the "main purpose was to realise a profit" evaluation. Leading authorities:
+
+- **Marson v Morton [1986] 1 WLR 1343** — the "nine badges of trade" framework (the canonical multi-factor test):
+  1. Subject matter of the realisation (commodities suggesting trading; investment assets suggesting capital)
+  2. Length of period of ownership (short = trading; long = investment)
+  3. Frequency or number of similar transactions (multiple = trading)
+  4. Supplementary work done on the property (development = trading)
+  5. Circumstances of realisation (forced sale = capital; marketed sale = trading)
+  6. Motive of the taxpayer (profit-intent at acquisition = trading)
+  7. Method of financing (short-term borrowing for resale = trading)
+  8. Profit-seeking motive
+  9. Way the asset was actually used
+- **Iswera v IRC [1965] 1 WLR 663** — Privy Council; single-transaction can be trading if profit-intent at acquisition + active steps to enhance value.
+- **Salt v Chamberlain [1979] STC 750** — share-dealing investor / trader line; relevant by analogy for high-frequency property dealing.
+- **Page v Lowther [1983] STC 799** — single property flip held to be trading; intention at acquisition is decisive.
+- **Pickford v Quirke (1927) 13 TC 251** — repeated transactions establish trade even where each individual transaction might look capital.
+
+**Operative use.** Wave 8 Bucket B pages writing on "is this landlord a trader" must work through the nine badges with worked examples. No single badge is determinative; the overall picture decides. The post-FA-2016 transactions-in-UK-land regime is statutory **alongside** the badges-of-trade caselaw — Part 8ZB / Part 9A can catch a transaction that fails the badges test (statutory overrides at the four-conditions level), and the badges test can support a trading conclusion even where Part 8ZB / Part 9A applies.
+
+### 28.6 Trading-stock test (Condition C — s.356OB(6) / s.517B(6))
+
+- **Deterministic test.** Land "held as trading stock" is caught regardless of original intent. No main-purpose evaluation.
+- **What is "trading stock"?** Property carried in the trading accounts as inventory (CTA 2009 / ITTOIA 2005 trading-profit computation). Distinguished from fixed-asset investment property carried in non-current assets.
+- **Appropriation between trading stock and investment (CTA 2010 s.157; ITTOIA 2005 s.172).** Appropriation INTO trading stock is a deemed disposal at market value for CGT (TCGA 1992 s.161) with subsequent trading profit accounted for the difference between MV and disposal proceeds. Appropriation OUT of trading stock (rare) is a market-value acquisition for CGT.
+- **Operative implication.** Landlord-incorporators who transfer property into a development SPV using a trading-stock framing trigger a deemed CGT disposal at incorporation (no s.162 incorporation relief if treated as trading-stock appropriation; s.162 is for business-as-going-concern transfers, not stock appropriations). Wave 8 Bucket B pages on the incorporation route for property developers must distinguish stock-appropriation from going-concern transfer.
+
+### 28.7 Residential Property Developer Tax (RPDT) — historical / repealed
+
+- **FA 2022 Part 2 ss.31-53** introduced RPDT: a 4% additional Corporation Tax charge on residential property developer profits above a £25m group allowance, in force for accounting periods beginning on or after 1 April 2022.
+- **REPEALED by FA 2024 s.81** for accounting periods beginning on or after 1 April 2024. The regime is operative for accounting periods straddling that date on a time-apportioned basis.
+- **Wave 8 Bucket B framing.** Pages discussing historical RPDT cost / planning must note the repeal date. Pages on current developer-CT exposure should NOT cite RPDT as an ongoing charge. RPDT-residue accounting-period straddles may continue until APs ending in 2025; verify at write time. **Note: re-verify RPDT repeal status against legislation.gov.uk before reliance** — sessions writing on developer-CT must check whether the FA 2024 repeal has been further amended.
+
+### 28.8 Cross-references with other clusters
+
+- **§5 (CGT residential property) ↔ §28.** The trading-vs-investment line decides between CGT (18% / 24% from 30 October 2024) and trading profit (40% / 45% income tax + Class 4 NIC for individuals; CT for companies). Wave 8 Bucket B pages must work the comparison with worked examples.
+- **§21 (LtdCo) ↔ §28.** A property developer incorporating triggers Condition C if trading stock; cannot use s.162 incorporation relief; may use CTA 2010 Part 22 (transfers of trade) instead.
+- **§22.1 (BPR Pawson line) ↔ §28.** The IHT-side trading-vs-investment line (Pawson) and the CT/IT-side transactions-in-UK-land line use overlapping but not identical tests. A landlord can fail Pawson (investment for BPR) while also being caught by Part 8ZB / Part 9A (trading for CT/IT) — the tests are NOT interchangeable.
+- **§17.4 (NRCGT) ↔ §28.** A non-resident disposal of UK land may be caught by BOTH NRCGT (TCGA 1992 s.1A) and Part 8ZB / Part 9A; Part 8ZB / Part 9A takes priority where engaged (trading profit, not chargeable gain), with NRCGT operating as the capital-gain backstop where the transaction is not trading.
+- **§1 (SDLT) ↔ §28.** SDLT on land acquisition is a separate charge applied at acquisition; the transactions-in-UK-land regime catches the DISPOSAL side. No double-charge issue but sessions must keep the two charges architecturally separate.
+
+### 28.9 Citations for §28
+
+- CTA 2010 Part 8ZB ss.356OA-356OT (transactions in UK land — companies; inserted by FA 2016 s.77).
+- ITA 2007 Part 9A ss.517A-517U (transactions in UK land — individuals; inserted by FA 2016 s.79).
+- FA 2016 c. 24 ss.77, 79, 81, 82 (inserting Act).
+- CTA 2009 Part 3 (trading profit computation for companies); ITTOIA 2005 Part 2 (trading profit computation for individuals).
+- TCGA 1992 s.161 (appropriation to trading stock deemed disposal), s.1A (NRCGT — backstop).
+- CTA 2010 s.157 + Part 22 (intra-group transfers of trade); ITTOIA 2005 s.172 (appropriation from trading stock).
+- FA 2022 Part 2 ss.31-53 (RPDT — repealed FA 2024 s.81).
+- *Marson v Morton* [1986] 1 WLR 1343 (badges of trade).
+- *Iswera v IRC* [1965] 1 WLR 663 (single transaction can be trading).
+- *Salt v Chamberlain* [1979] STC 750 (share dealing investor / trader line by analogy).
+- *Page v Lowther* [1983] STC 799 (property flip held to be trading).
+- *Pickford v Quirke* (1927) 13 TC 251 (repeated transactions).
+- HMRC BIM60000+ (Property income / trading distinction); HMRC BIM20000+ (badges of trade); HMRC manual pages on Part 8ZB / Part 9A.
+
+### 28.10 Things to flag (do NOT decide unilaterally)
+
+- Border cases on the main-purpose test where investment intent is genuine and substantial AND profit intent is also present. Statute is disjunctive but HMRC enquiry practice in this area is litigated; case-specific facts decide. Sessions writing border-case pages should hedge with "main purpose evaluation is fact-sensitive; specialist advice required for transactions near the line".
+- Whether RPDT has been re-introduced or further amended post-FA-2024 repeal. Verify against current FA at write time.
+- Whether HMRC has issued new guidance on the s.356OH / s.517H fragmented-activities rule in response to specific schemes (verify HMRC manual currency).
+- Whether the "property deriving its value from land" 50% derivation threshold has been adjusted by subsequent legislation.
+
+### 28.11 Do not write (§28)
+
+- "Property profits are always capital gains for individuals" (false — Part 9A catches main-purpose-of-profit acquisitions or developments; can be trading profit taxed at marginal income tax rates plus Class 4 NIC).
+- "Selling a single BTL property cannot be trading" (false — *Iswera* + *Page v Lowther* + Condition D show single transactions can be trading where intent at acquisition or development was profit-from-disposal).
+- "Holding land for more than 5 years means it's investment" (false — length of ownership is one of nine badges; not determinative; trading classification can apply to long-held land if main-purpose-at-acquisition or main-purpose-of-development was profit-from-disposal).
+- "Non-resident developers escape UK tax" (false — Part 8ZB applies to non-resident corporate developers; Part 9A applies to non-resident individual developers; pre-FA-2016 planning routes around UK CT scope are closed).
+- "Slice-of-the-action arrangements via offshore SPVs avoid the charge" (false — s.356OD / s.517D catches indirect disposals via property-rich entities; tracing rules at s.356OM / s.517N walk through multi-tier structures).
+- "RPDT is current law" (false — repealed FA 2024 s.81 for accounting periods beginning on or after 1 April 2024; only historical / straddling-AP relevance).
+- "RPDT applies to all residential developers" (false — even when in force, applied only to groups with >£25m residential developer profit allowance threshold).
+- "Pawson investment treatment for BPR also means investment treatment for CT" (false — Pawson and Part 8ZB use overlapping but distinct tests; a landlord can be investment for BPR + trading for CT/IT).
+- "The main-purpose test requires sole purpose" (false — statute uses "main purpose, or one of the main purposes" — disjunctive; multiple main purposes can coexist; only one needs to be profit-from-disposal).
+- "s.162 incorporation relief covers all property-business incorporations" (false — s.162 is for going-concern business transfers; trading-stock appropriations are CGT-deemed-disposals at MV without relief; property developers incorporating need CTA 2010 Part 22 trade-transfer route, not s.162).
+
+---
