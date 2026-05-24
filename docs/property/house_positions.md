@@ -2340,6 +2340,112 @@ This §22.21 mini-lock sits in the §22 cluster as it extends the IHT / estate-p
 
 ---
 
+## 17.8 FIG regime operational depth (ITTOIA 2005 ss.845A-845J, inserted by FA 2025 s.37) — Wave 8 mini-lock (added 2026-05-25)
+
+**Architectural sibling of §17.6 (headline framing).** §17.6 names the 4-year FIG window; §17.8 anchors the operative ITTOIA 2005 sections + the loss-of-allowance + claim-deadline mechanics that Wave 8 Bucket A pages will write to.
+
+- **Statutory anchor.** Foreign income and gains relief for qualifying new residents is inserted into **ITTOIA 2005 Chapter 5 (ss.845A-845J)** by **FA 2025 s.37 + Sch 8** (employment income parallel) — NOT in FA 2025 Sch 9 (which removes the historic remittance-basis + domicile-based exemptions; see §16.39 housekeeping note). Effective from tax year 2025-26.
+- **Qualifying new resident test (ITTOIA 2005 s.845B(1)):** individual must not be UK-resident for the current tax year AND must have been not UK-resident "for each of the 10 tax years before that tax year". The 10-tax-year non-residence requirement is the gateway; partial-year residence triggered by SRT split-year (§17.2) breaks the chain unless the individual was non-resident for the full tax year per SRT.
+- **Duration of relief (ITTOIA 2005 s.845B(2)):** up to **4 tax years** — the qualifying tax year + the 3 subsequent tax years. The relief is per-year claim (not automatic); failure to claim in a year forfeits that year's relief.
+- **Claim mechanism (ITTOIA 2005 s.845A):** relief is deducted at Step 2 of the income tax calculation (ITA 2007 s.23). Claimed via self-assessment return for the relevant tax year.
+- **22 categories of qualifying foreign income (ITTOIA 2005 s.845H):** broad scope including foreign property income, foreign trade profits, foreign pensions, foreign interest, foreign dividends, foreign savings income, foreign annuities. Cross-reference s.845H category list at write time before asserting a specific income type qualifies.
+- **Disqualified income (ITTOIA 2005 s.845I):** excludes income derived from UK-related sources via interposition (anti-fragmentation). Cross-verify at write time.
+- **Loss of personal allowance + CGT annual exempt amount.** Claiming FIG relief in a tax year causes loss of personal allowance + dividend allowance + CGT AEA for that tax year — same architecture as the historic remittance-basis claim. Sessions writing on FIG must hedge claim mechanics (claim only where foreign income / gains exceeds the lost allowance value).
+- **Claim deadline.** Self-assessment return deadline + amendment window per TMA 1970 s.43 (4 years from end of tax year). Sessions writing on missed-claim recovery should anchor on s.43 amendment window.
+- **Year-5+ position.** From tax year 5 onwards the individual is taxed on the arising basis as a standard UK resident. No transitional taper; the cliff is hard.
+
+### 17.8.1 Citations for §17.8
+
+- ITTOIA 2005 Chapter 5 ss.845A (claim mechanism + Step 2 deduction), 845B (qualifying new resident test + 4-year window), 845E (loss interactions), 845H (22 categories of qualifying foreign income), 845I (disqualified income).
+- FA 2025 s.37 (inserting Act) + Sch 8 (foreign employment income parallel).
+- FA 2025 s.40 (remittance basis abolition — no new claims after tax year 2024-25).
+- ITA 2007 s.23 (Step 2 of income tax calculation), s.43 (amendment window).
+- HMRC RDRM (Residence, Domicile and Remittance Manual) — being rewritten; sessions must verify currency at write time.
+
+### 17.8.2 Do not write (§17.8)
+
+- "FIG relief is automatic for the first 4 tax years" (false — per-year claim required; failure to claim forfeits that year).
+- "FIG election preserves personal allowance and CGT AEA" (false — claim forfeits both, same architecture as historic remittance basis).
+- "FIG eligibility requires 7 years of prior non-residence" (false — the test is **10 tax years** of prior non-residence per s.845B(1)).
+- "FIG covers UK-source income" (false — only foreign source per s.845H + s.845I disqualified-income exclusion).
+- "Year 5 is a taper year" (false — hard cliff; arising basis applies from year 5).
+- "FIG is in FA 2025 Sch 9" (false — FIG is in FA 2025 s.37 + ITTOIA 2005 ss.845A-845J; Sch 9 removes the historic remittance-basis + domicile architecture but does not contain the FIG regime itself).
+
+---
+
+## 17.9 Temporary Repatriation Facility (TRF) operational mechanics (FA 2025 s.41 + Sch 10) — Wave 8 mini-lock (added 2026-05-25)
+
+**Architectural sibling of §17.6 (headline 3-year at 12%/12%/15% framing).** §17.9 anchors the operative FA 2025 Sch 10 mechanics that Wave 8 Bucket A pages will write to.
+
+- **Statutory anchor.** FA 2025 s.41 + Sch 10. Effective from tax year 2025-26.
+- **Rate ramp (verified FA 2025 Sch 10 para 1(8) on 2026-05-25):**
+  - **2025-26 designations: 12%** of designated qualifying overseas capital.
+  - **2026-27 designations: 12%** of designated qualifying overseas capital.
+  - **2027-28 designations: 15%** of designated qualifying overseas capital.
+  - Window closes 5 April 2028; no extension currently legislated.
+- **Qualifying overseas capital (FA 2025 Sch 10 para 2):** amounts that
+  - arose in tax year 2024-25 or earlier as foreign income / gains,
+  - have not been remitted to the UK by the date of designation OR are remitted during 2025-26 through 2027-28,
+  - would (absent TRF) trigger income tax under ITEPA 2003 ss.22 / 26 / 41F / 554Z9 / 554Z10 OR ITTOIA 2005 s.832 OR CGT under TCGA 1992 Sch 1 on remittance.
+- **Designation election deadline (FA 2025 Sch 10 para 8(1)):** election must be made before **12 months from 31 January after the end of the tax year**. So 2025-26 designations: deadline 31 January 2028. 2026-27 designations: deadline 31 January 2029. 2027-28 designations: deadline 31 January 2030. Late designation forfeits the rate (post-window remittance falls back to normal rates per the underlying remittance-basis source).
+- **Source coverage.** Designation can be partial — election specifies the £-amount designated, not full source coverage. An individual can designate £100k of a £500k pre-2025 offshore portfolio and the remaining £400k stays subject to normal remittance taxation on later remittance.
+- **No-clean-capital benefit.** TRF designation effectively crystallises the income / gain status of the offshore amount at the designation rate. Once designated and paid, the amount becomes "clean capital" for UK tax purposes — no further UK tax on later remittance.
+- **Interaction with FIG (§17.8).** TRF is for individuals who PREVIOUSLY claimed remittance basis. A new arrival in 2025-26 + later claiming FIG does NOT need TRF (their foreign income is FIG-exempt during the 4-year window). TRF is the cleanup mechanism for the pre-2025-26 remittance-basis cohort.
+
+### 17.9.1 Citations for §17.9
+
+- FA 2025 s.41 (inserting Act) + Sch 10 (operational detail).
+- ITEPA 2003 ss.22, 26, 41F, 554Z9, 554Z10 (employment / disguised remuneration remittance triggers).
+- ITTOIA 2005 s.832 (foreign-income remittance trigger).
+- TCGA 1992 Sch 1 (CGT on remittance trigger).
+- ITA 2007 s.809B (the historic remittance-basis claim section, no longer claimable from 2025-26 onwards per FA 2025 s.40).
+
+### 17.9.2 Do not write (§17.9)
+
+- "TRF rate is 12% across all three years" (false — 12% in 2025-26 and 2026-27, 15% in 2027-28).
+- "TRF is available to all UK residents" (false — only to those with pre-2025-26 unremitted foreign income / gains from a period when they claimed remittance basis).
+- "TRF designation extends beyond 5 April 2028" (false — window closes; no extension legislated).
+- "TRF designation deadline is the tax year end" (false — deadline is 31 January 12 months after end of relevant tax year per FA 2025 Sch 10 para 8(1)).
+- "TRF requires actual remittance to the UK to claim the rate" (false — designation alone crystallises; the amount becomes clean capital whether or not physically remitted).
+
+---
+
+## 17.10 CGT rebasing election — narrow eligibility (FA 2025 s.42 + Sch 11) — Wave 8 mini-lock (added 2026-05-25)
+
+**Architectural sibling of §17.6 (headline "rebasing to 5 April 2017 value" mention).** §17.10 anchors the FA 2025 Sch 11 eligibility narrowness — most departing UK landlords will NOT qualify, contrary to widespread popular understanding.
+
+- **Statutory anchor.** FA 2025 s.42 + Sch 11. Effective for disposals on or after 6 April 2025.
+- **Rebasing date (verified FA 2025 Sch 11 para 1(2) on 2026-05-25): 5 April 2017** (NOT 5 April 2019 or 5 April 2025 — those dates appeared in earlier consultation but were NOT enacted).
+- **All four eligibility conditions must be met (FA 2025 Sch 11 para 1(1)) — narrow combination:**
+  1. **Asset held on 5 April 2017** (the rebasing-date condition).
+  2. **Disposal on or after 6 April 2025** (the operative window — pre-6-April-2025 disposals fall under the old regime).
+  3. **Asset NOT situated in UK between 6 March 2024 and 5 April 2025** — i.e. the asset must have been a non-UK asset throughout that 13-month window. **A UK property held by a non-dom does NOT qualify** (UK situs); the rebasing benefits non-UK assets only.
+  4. **Individual not domiciled in UK before tax year 2025-26** — pre-2025-26 non-dom status required.
+  5. **Remittance-basis claim history:** individual must have made a **claim under ITA 2007 s.809B for at least one tax year within 2017-18 to 2024-25**, and for those years neither ITA 2007 s.809D (auto-RB) nor s.809E (low-foreign-income exception) applied. So they must have ACTIVELY elected remittance basis at least once in the qualifying window.
+- **Election mechanics.** Per FA 2025 Sch 11 para 3:
+  - Election is per-disposal (individual may elect for the rebasing NOT to apply for a specific disposal).
+  - TMA 1970 ss.42-43 procedural rules apply (except s.42(1A)).
+  - **Election is irrevocable** once made for a disposal.
+- **Critical: NO UK PROPERTY REBASING.** Condition (3) above excludes UK situs property from rebasing. A departing landlord cannot use FA 2025 Sch 11 rebasing to step up the base cost of UK BTL property. UK land disposals by non-residents are governed by NRCGT (§17.4) which has its OWN rebasing regime (5 April 2015 for residential, 5 April 2019 for non-residential).
+
+### 17.10.1 Citations for §17.10
+
+- FA 2025 s.42 (inserting Act) + Sch 11 paras 1-3 (operational detail).
+- TCGA 1992 Sch 1A / 1B / 4AA (NRCGT regime — separate rebasing dates 5 April 2015 / 2019 for UK land).
+- ITA 2007 ss.809B (active RB claim), 809D (automatic RB), 809E (small-foreign-income exception).
+- TMA 1970 ss.42-43 (election procedure).
+
+### 17.10.2 Do not write (§17.10)
+
+- "Rebasing to 5 April 2017 applies to all non-doms" (false — narrow combination of 5 conditions per FA 2025 Sch 11 para 1(1)).
+- "Rebasing covers UK property held by non-doms" (false — condition (3) excludes UK situs assets; UK land follows NRCGT rebasing at §17.4).
+- "Rebasing applies automatically" (false — per-disposal election; default IS rebasing for qualifying assets BUT opt-out election available per para 3).
+- "Rebasing date is 5 April 2019" (false — 5 April 2017; the 2019 date appeared in earlier consultation but was not enacted).
+- "Anyone who used remittance basis can use rebasing" (false — must have made an active s.809B claim, not just automatic s.809D treatment, in at least one tax year 2017-18 to 2024-25).
+- "Rebasing election is revocable" (false — irrevocable per Sch 11 para 3; sessions writing planning advice must caveat).
+
+---
+
 ## 21.A Corporation tax three-figure framework (FA 2021 architecture, post-1-April-2023) — Wave 8 mini-lock (added 2026-05-25)
 
 **Why this lock exists.** Track 2 manager's F-31 (raised 2026-05-24) surfaced a residual cohort of legacy property pages conflating the three post-FA-2021 CT figures. Site-wide STALE sweep at commit `195e895` back-patched 65 pages + 0 false positives. This mini-lock anchors the framework verbatim so future generation passes cannot regress to the pre-FA-2021 "19% on all profits" mental model. Sits above §21.4 (year-specific rate verification) and §21.5 (CIHC depth) as the architectural headline.
