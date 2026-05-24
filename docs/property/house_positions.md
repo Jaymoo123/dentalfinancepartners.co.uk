@@ -2104,6 +2104,93 @@ Cross-references §21.5 (FIC mechanics generic), §22.6 (FIC as IHT value-freeze
 - "The Building Safety Levy is part of BSA 2022 leaseholder protections" (false; the Levy is a developer-funded charge under the Building Safety Levy (England) Regulations 2025; it funds the wider remediation programme and is **not** what limits a leaseholder's service-charge exposure under Sch 8).
 - "Cladding remediation is capped at £10,000 for a leaseholder" (false; under Sch 8 para 8, qualifying-lease cladding remediation is **fully protected** — no service charge at all; the £10k / £15k / £50k / £100k caps in Sch 8 para 6 are for **non-cladding** remediation only).
 
+### 26.9 HMO + selective licensing — Housing Act 2004 Parts 2 + 3 — Wave 7 mini-lock (added 2026-05-24)
+
+- **Statutory hooks:** Housing Act 2004 Part 2 (HMO licensing, ss.55-78) + Part 3 (selective licensing, ss.79-100). Civil penalty regime under s.249A (up to £30,000 per offence as alternative to prosecution). Rent Repayment Orders under ss.73-74 (extended by RRA 2025 to 2-year window per §20.10). Banning orders via HPA 2016 ss.14-23. Verified at https://www.legislation.gov.uk/ukpga/2004/34/part/2 on 2026-05-24.
+- **HMO definition for licensing — s.254:** building (or self-contained flat) occupied by 3 or more persons forming 2+ households (households = single people or family units) AND sharing one or more basic amenities. Variant tests under s.254(2)-(5) include the building-type test, converted-blocks-of-flats test, and the s.55 prescribed-description test for mandatory licensing.
+- **Mandatory HMO licensing — s.61 + Licensing of Houses in Multiple Occupation (Prescribed Description) (England) Order 2018 (SI 2018/221):** any HMO occupied by **5 or more persons** forming 2+ households is subject to mandatory licensing nationwide (since 1 October 2018; the 2018 Order removed the prior 3-storey-floor restriction). Mandatory licensing applies regardless of LA designation.
+- **Additional HMO licensing — ss.56-60:** local authorities may designate areas requiring licensing for additional HMO categories (e.g. 3-4 person HMOs not within mandatory scope). Designations require consultation under s.58 + secretary-of-state confirmation under s.60.
+- **Selective licensing — Part 3 (ss.79-100):** LAs may designate **geographic areas** requiring licensing for **all private rentals** (not just HMOs) within the designation. Used for areas with high anti-social behaviour, low housing demand, or rogue-landlord prevalence. Approval thresholds under s.80; current designations cover ~70+ LA areas across England.
+- **Penalties + enforcement:**
+  - **Operating an unlicensed HMO / unlicensed rental in selective area = criminal offence** under s.72 (HMO) / s.95 (selective). Summary conviction: unlimited fine.
+  - **Civil penalty alternative:** up to **£30,000 per offence** under s.249A (HMO/selective licensing breaches; introduced by HPA 2016).
+  - **Rent Repayment Order:** tenants OR LAs can apply to FTT for RRO recovering up to **2 years' rent** (RRA 2025 extension per §20.10). Available where landlord operated unlicensed during the RRO period.
+  - **Banning order:** repeat offenders may be banned from operating any rental properties for ≥12 months under HPA 2016; landlord database (when commenced under RRA 2025 §26.6) records banned persons.
+- **Tax-side hooks (for PTP angle):**
+  - Licensing fees: **deductible as a revenue expense** of the rental business under ITTOIA 2005 s.272 — see existing `hmo-licensing-fees-tax-deductible-uk-landlords` page.
+  - Civil penalties + criminal-conviction fines: **NOT deductible** (general principle that penalties for breach of law are non-deductible per HMRC BIM38500+).
+  - Banning order: ends the rental business; CGT cessation considerations apply.
+- **Do not write:**
+  - "All HMOs require licensing" (false; mandatory licensing applies only to HMOs with 5+ persons in 2+ households OR HMOs in LA additional-licensing areas).
+  - "HMO licensing is England-only" (Scotland + Wales + NI have parallel but distinct regimes — Welsh Rent Smart Wales is the equivalent; Scottish HMO licensing under Civic Government (Scotland) Act 1982 / Housing (Scotland) Act 2006).
+  - "Selective licensing is mandatory across all of England" (false; LA-designation-based; ~70+ areas have selective licensing as of 2026).
+  - "Civil penalty for unlicensed letting is unlimited" (false; capped at £30,000 per offence under s.249A; alternative criminal route has unlimited fines on summary conviction).
+- **HMRC manual anchor:** BIM38500+ (deductibility of penalties); PIM2010+ (Property Income Manual).
+- **Practical writing rule for sessions (Wave 7 A4):** lead with the **two-tier framework** (mandatory HMO licensing via s.61 + SI 2018/221 5-person test; LA-designated additional/selective licensing); then map the penalty stack (civil £30k OR criminal unlimited + RRO 2-year window + banning order); then tax-side deductibility (fees yes; penalties no). Cross-reference §20.10 (RRO under RRA 2025) and §26.6 (PRS Database when commenced — includes ban-order records).
+
+---
+
+## 1.G SDLT group relief — FA 2003 Schedule 7 paragraphs 1-5 — Wave 7 mini-lock (added 2026-05-24)
+
+This §1.G mini-lock sits adjacent to the §1.A-§1.F Wave 7 SDLT extensions; placement after §26 for chronological audit-trail reasons. **In future restructuring, §1.G could move to logical placement immediately after §1.F.**
+
+- **Statutory hooks:** FA 2003 Schedule 7 paragraphs 1-5 (group relief); CTA 2010 ss.1155-1157 (75% subsidiary indirect-ownership calculation). Verified at https://www.legislation.gov.uk/ukpga/2003/14/schedule/7 on 2026-05-24.
+- **The relief in plain terms.** SDLT group relief allows intra-group property transfers between members of the same 75%-controlled corporate group to be **free of SDLT** on the transfer. Used heavily in landlord-LtdCo portfolio restructuring (e.g. moving properties from an operating company to a HoldCo or vice versa, consolidating multi-SPV portfolios under a single HoldCo, separating residential from commercial holdings).
+- **75% group definition — Sch 7 para 1(3):** Company A is a 75% subsidiary of Company B if Company B (directly or indirectly via CTA 2010 ss.1155-1157):
+  - **(i)** owns at least 75% of A's ordinary share capital;
+  - **(ii)** is beneficially entitled to at least 75% of A's distributable profits;
+  - **(iii)** would be entitled to at least 75% of A's assets on winding-up.
+  All three limbs must be met. "Ordinary share capital" excludes preference shares with fixed-rate dividends (CTA 2010 s.1119).
+- **Anti-avoidance — Sch 7 para 2 (arrangements):** Relief is **denied** at the point of transfer where, at the effective date, there are arrangements:
+  - For the transferee to leave the group;
+  - For the transferor or transferee to enter another group;
+  - For consideration to flow from a non-group party.
+- **3-year claw-back — Sch 7 para 3:** Relief is **withdrawn** if the transferee company **leaves the group within 3 years** of the SDLT effective date. Withdrawal triggers tax at market value rates on the original transaction, payable by the transferee. **Major operational risk** in landlord restructuring: subsequent sale of an SPV with portfolio properties triggers claw-back of SDLT relief obtained at the intra-group transfer.
+- **Pre-Wave-7 escape from claw-back:** Para 3(2) carve-outs include some statutory restructurings (insolvency, court order); the standard rule bites otherwise.
+- **Recovery from connected parties — Sch 7 para 5:** Where the SDLT remains unpaid 6 months after assessment, HMRC may recover from the **vendor company**, **parent company** of the group, OR **controlling director** of the group. Wide recovery powers; sessions writing must surface this as the silent risk in restructuring.
+- **Group relief vs incorporation relief vs Sch 15 SLP partnership relief — the three SDLT mitigation routes:**
+  - **Group relief (Sch 7):** intra-group transfers in established 75%-controlled corporate group; no consideration test; 3-year claw-back.
+  - **Incorporation relief (Sch 15 + s.162 TCGA + s.53 deferred consideration):** sole-proprietor / partnership → LtdCo transfer; tighter conditions.
+  - **Partnership SLP (Sch 15 paras 10-13 per §1.A):** transfer to genuine partnership; SLP calculation.
+- **Tax-side practical note (PTP angle):** group relief is the workhorse SDLT mechanism for landlord-LtdCo portfolio consolidation. Most common deal-mishandling: incorporating a Sch 7 transfer without locking the buyer (transferee SPV) into the group for 3 years — subsequent SPV sale triggers claw-back. **Standing recommendation:** any group-relief restructuring should embed a 3-year SPA covenant restricting transferee disposal, with break-fee for accelerated exit covering the claw-back exposure.
+- **Do not write:**
+  - "Group relief applies to any 50%+ subsidiary" (false; 75% test all three limbs).
+  - "Claw-back period is 1 year" (false; 3 years from effective date per Sch 7 para 3).
+  - "Group relief is automatic" (false; relief must be claimed in the SDLT return; non-claim within 12 months from effective date can be remedied via overpayment claim under FA 2003 Sch 11A within 4 years — but late claim risks enquiry).
+  - "Pre-FA-2003 stamp duty group relief covered same scope" (false; pre-2003 SDLT predecessor regime; sessions writing on historic transactions need different reference frame).
+- **HMRC manual anchor:** SDLTM23000+ (group relief).
+- **Practical writing rule for sessions (Wave 7 C6 new):** lead with the **3-year claw-back** as the operational risk; then 75% test mechanics; then the para 2 arrangements-defeating-relief trap; then recovery from connected parties as the silent risk. Distinguish from the existing site page `sdlt-group-relief-for-corporate-landlord-portfolios` by going DEEP on claw-back mechanics + connected-party recovery + standard SPA-covenant defensive pack — the existing page is broader/higher-level.
+
+---
+
+## 22.21 SIPP/SSAS taxable property regime — FA 2004 Schedule 29A — Wave 7 mini-lock (added 2026-05-24)
+
+This §22.21 mini-lock sits in the §22 cluster as it extends the IHT / estate-planning + pension intersection territory. **Scope-justification:** SIPP/SSAS commercial property purchase is an estate-planning + pension-funded property acquisition route; it sits naturally alongside §22.16-§22.18 (TRS + IPDI + EOT).
+
+- **Statutory hooks:** FA 2004 Schedule 29A (taxable property held by investment-regulated pension schemes); inserted by FA 2006 effective 6 April 2006; amended multiple times to 2013+. Verified at https://www.legislation.gov.uk/ukpga/2004/12/schedule/29A on 2026-05-24.
+- **The regime in plain terms.** Registered pension schemes (SIPP / SSAS) may hold property as an investment, BUT if the property is **"taxable property"** the scheme is subject to **unauthorised payment charges** under FA 2004 s.208 + 209 + Sch 29A. Taxable property charges effectively make residential property unviable for pension-fund holding; commercial property is excluded from taxable property (so SIPP/SSAS purchase of business premises remains the workhorse use case).
+- **Taxable property definition — Sch 29A para 6+:**
+  - **(a) Residential property** — buildings suitable for dwelling use (including parts of buildings); gardens, grounds, attached land; hotel accommodation; beach huts. **Includes UK + overseas residential**. The "suitable for dwelling use" test mirrors SDLT s.116(1)(a) per §1.C Bewley — narrow exception only for substantially uninhabitable / under-development properties.
+  - **(b) Tangible moveable property** — Treasury-restricted (art, classic cars, vintage wine, antiques).
+- **Commercial property — EXCLUDED from taxable property (Sch 29A para 7):** business premises (offices, warehouses, retail units, factories, mixed-use where commercial element dominates), agricultural land, and forestry are NOT taxable property. SIPP/SSAS can acquire commercial property freely.
+- **Investment-regulated pension scheme — Sch 29A paras 1-2:** the rules apply only to schemes where members (or connected persons) can "direct, influence or advise on the manner of investment". This captures SIPPs (Self-Invested Personal Pensions) and SSASs (Small Self-Administered Schemes) but NOT typical occupational-DB / DC schemes (where investment is at trustee discretion).
+- **Unauthorised payment charge — FA 2004 s.208 (member) + s.209 (scheme administrator):** where an investment-regulated pension scheme holds taxable property, the member is treated as having received an unauthorised payment equal to the property's market value (or consideration paid). Charges:
+  - **s.208 member's charge: 40% income tax** on unauthorised payment.
+  - **s.208 unauthorised payment surcharge: additional 15%** if unauthorised payments in a tax year exceed 25% of the member's pension fund.
+  - **s.209 scheme sanction charge: 15% of unauthorised payment** on scheme administrator (recoverable from member in practice).
+  - **Combined effective rate: 55-70%** on the value of any taxable property acquired.
+- **In-specie contributions of commercial property.** A common SIPP/SSAS funding route: member contributes existing commercial property to the scheme by way of in-specie contribution. CGT no-gain-no-loss treatment under TCGA 1992 s.62 + 188; income tax relief on the market-value contribution under FA 2004 s.188-189 (subject to annual + lifetime allowances). **Drift watchpoint:** lifetime allowance was abolished and replaced by lump-sum allowances under FA 2024 — sessions writing on in-specie contributions must use the FA 2024 architecture, not the pre-2024 LTA framework.
+- **Member loans + connected-party transactions:** scheme cannot lend to member or connected persons (FA 2004 s.179 — unauthorised). Scheme can let property to member's business at arm's-length rent. SSAS can lend to sponsoring employer subject to the 50% asset / 5-year repayment / 1st-charge security conditions (Sch 30 + Reg 6 SIPP rules).
+- **Cross-references:** §1 SDLT (purchase by pension scheme — standard SDLT applies on commercial property; ATED §2 only on residential, so commercial property within ATED scope rare); §4 (section 24 has no application — pension scheme is tax-exempt on rental income while held); §15 (IHT — pension funds outside member's IHT estate generally pre-April 2027; FA 2024 reforms bring pensions into IHT from 6 April 2027 per §15.5 / §22.14).
+- **Do not write:**
+  - "SIPP/SSAS can hold residential rental property without tax charge" (false; residential property triggers Sch 29A unauthorised payment charge ~55-70% effective rate; effectively prohibitive).
+  - "Commercial property in SIPP/SSAS is subject to unauthorised payment charge" (false; commercial property explicitly EXCLUDED from taxable property per Sch 29A para 7).
+  - "All pension schemes can hold taxable property" (false; Sch 29A bites only on INVESTMENT-REGULATED schemes — SIPPs + SSASs; not typical occupational schemes where trustees have discretion).
+  - "Lifetime allowance limits in-specie contributions" (false post-FA-2024; LTA abolished + replaced by lump-sum-allowance + lump-sum-and-death-benefit-allowance framework; sessions must use the new architecture).
+  - "SSAS can lend freely to sponsoring employer" (false; subject to 50% asset cap / 5-year repayment / 1st-charge security conditions; breach = unauthorised payment).
+- **HMRC manual anchor:** RPSM07000+ (Registered Pension Schemes Manual on taxable property); PTM120000+ (Pensions Tax Manual investment).
+- **Practical writing rule for sessions (Wave 7 C10):** lead with the **commercial-property-only rule** as the headline (most readers expect SIPP/SSAS-can-hold-property = property generally; the residential exclusion via 55-70% effective penalty is the structural killer). Then walk in-specie contribution mechanics + lease-to-own-business mechanics + the FA 2024 lump-sum-allowance architecture (replacing pre-2024 LTA). Cross-reference §15.5 (pensions in IHT from 6 April 2027) for the inheritance-tax-side picture.
+
 ---
 
 ## 27. HMRC enquiry + tax compliance mechanics — Wave 7 extension (locked, 2026-05-24)
