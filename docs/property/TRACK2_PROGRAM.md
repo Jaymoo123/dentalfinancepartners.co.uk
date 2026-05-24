@@ -61,7 +61,7 @@ Both LLM-reasoning-led. Both read-only against Wave 5.
 
 ## §3 Where we are right now (heartbeat — updates every batch)
 
-**Last updated:** 2026-05-24 PM — Batch 2 PREP COMPLETE (Wave 6 closed + Decisions #1+#2 resolved + Cannib Index refreshed + 9 Batch 2 briefs queued for sub-agent dispatch).
+**Last updated:** 2026-05-24 PM — **Batch 2 CLOSED** (all 9 CGT-cluster continuation briefs 🟢 brief_drafted via 3-sub-agent parallel dispatch; 16 flags F-21→F-36 + 14 discoveries D-1→D-14 raised; intra-batch CANNIBAL resolved without Q&A round-trip via proactive coordination).
 
 **Stage 0 deliverables status:**
 - ✅ `docs/property/track2_universe_2026-05-23.md` — 234 residual slugs
@@ -165,7 +165,46 @@ Both LLM-reasoning-led. Both read-only against Wave 5.
 - `6769942` Decision #2 wave6-flags append (TMA 1970 s.43 recommendation)
 - (pending) Batch 2 prep bundle (Cannib Index refresh + tracker update + Q&A/discovery seeds + launch prompts + §3 heartbeat)
 
-**Manager pickup doc for next session:** `docs/property/TRACK2_MANAGER_PICKUP.md`. (DOES NOT YET REFLECT Batch 2 prep — next manager pickup will need a refreshed pickup doc after Batch 2 close.)
+**Manager pickup doc for next session:** `docs/property/TRACK2_MANAGER_PICKUP.md`. (DOES NOT YET REFLECT Batch 2 close — next manager pickup will need a refreshed pickup doc.)
+
+---
+
+**Batch 2 CLOSED 2026-05-24 PM** — all 9 CGT-cluster continuation briefs 🟢 brief_drafted via 3-sub-agent parallel dispatch (Agent tool, background mode). User-approved dispatch-mode override of the saved-feedback separate-terminal pattern for this batch.
+
+**Batch 2 results:**
+- 9 briefs drafted (all 🟢): 3 REDIRECT-PROPOSED (sub-bucket A: F-16 60-day-CGT cluster collapse continuation — B2-A1+A2 → `cgt-payment-deadlines-property-sales-2026` canonical, completing a 5-page collapse with Batch 1 sub-bucket B; B2-A3 → `cgt-selling-buy-to-let-property-calculation-guide` DIFFERENT canonical per Cannib Index §6) + 3 REWRITE (sub-bucket B: PRR/Rollover/Lettings reliefs) + 3 REWRITE (sub-bucket C: NRCGT/election/commercial-vs-residential applied mechanics).
+- 16 flags raised (F-21 to F-36) across 3 sub-buckets. Critical catches:
+  - **F-21 (HIGH, sub-bucket B):** 3rd confirmed instance of F-9 pre-2020-Lettings-Relief framing pattern (PRR landlords page); cluster audit recommendation reinforced (4th instance found by sub-bucket C in F-28).
+  - **F-22 (HIGH, sub-bucket B):** 6th consecutive §7 Bill-vs-enacted hedge violation (April 2027 22/42/47 rate assertion on rollover-relief page); pattern persists despite 11+ catches in prior cycles.
+  - **F-23 (HIGH, sub-bucket B):** Manager dispatch prompt itself carried a wrong statute cite (s.224 instead of s.223B for Lettings Relief inserted by FA 2020); §16.38 manager-prompt-drift discipline held — sub-agent verified my cite against legislation.gov.uk and corrected at brief level. This is a SELF-CATCH on my own dispatch prompt, validating the §16.38 verify-on-dispatch mandate.
+  - **F-25 (HIGH, sub-bucket C):** False FIRPTA-style mandatory conveyancer-withholding claim on NRCGT page (UK has NO such regime); reader-misleading on tax-compliance page.
+  - **F-27 (LOW, sub-bucket C):** §24.5 + §24.9 sub-section cite drift (s.222(5)(b) joint-signing was repealed FA 1996; current is s.222(6)(a)); Wave 5 C7 FAQ #3 also carries this drift — same-batch back-patch opportunity.
+  - **F-29 (HIGH, sub-bucket C):** **LARGEST single stale-framing catch in Track 2 to date.** Commercial-vs-residential CGT page's ENTIRE CORE FRAMING ("commercial 10%/20% vs residential 18%/24%") was wiped out by Autumn Budget 2024 — TCGA s.1H is now unified 18%/24% for ALL chargeable gains for individuals. Source's £4k-saving worked example becomes £0. Brief reframes from "different rates" to "different reliefs + different mechanics" (load-bearing pivot). BADR rate also caught wrong (10% → 14% from 6 April 2025, 18% from 6 April 2026).
+  - **F-31 + D-8 + D-10 (cross-bucket):** wrong-CT-£250k-threshold cluster pattern is DEEPER than F-9 Lettings-cluster — conflates 3 post-FA-2021 changes (25% main + 19% small profits + £250k marginal relief). 4 confirmed instances across diverse page-classes (LtdCo + NRCGT-touching + commercial-vs-residential + 60-day-CGT-touching). Cluster audit scope should expand beyond LtdCo-focused pages to include tangentially-CT-touching pages.
+  - **F-35 (NEW pattern, sub-bucket A):** **§16.42 EXISTING_PAGE_STALE density extends TO the 2026-05-21 rewrite-pass output cohort, not just untouched residual.** The B2-A3 redirect target (`cgt-selling-buy-to-let-property-calculation-guide`, Session B #14 rewritten 2026-05-21) carries 2025/26 year-stamp drift identical to legacy source. Partial-touch artefact at the rewrite pass. New cluster-audit recommendation for the rewrite cohort.
+  - **F-36 (LOW, sub-bucket A):** WebFetch permission denials on 5 SERP-leader competitor URLs; verification carried-forward from Batch 1 + Trial T4 same-URL same-vintage sweeps; manager 5% sample re-check at quality-gate close recommended.
+
+**New methodology findings:**
+- **Intra-batch CANNIBAL coordination via proactive Q&A post (not reactive query) WORKED PERFECTLY.** Sub-bucket B posted PRR scope to Q&A file at brief-start; Sub-bucket C accepted differentiator without round-trip; zero Q&A round-trips. Cleanest intra-batch coordination of any Track 2 batch to date.
+- §16.42 EXISTING_PAGE_STALE density now confirmed extends TO rewrite-cohort output (F-35) and TO tangentially-touching pages (D-10) — wider radius than originally hypothesised.
+- F-16 cluster-collapse continuation hypothesis from Batch 1 sub-bucket B was 100% validated — zero false positives on the 5-page collapse cohort.
+
+**3 sub-agents dispatched via Agent tool background mode (user-override of saved-feedback separate-terminal pattern for this batch):**
+- Sub-bucket A: ~32 minutes drafting time
+- Sub-bucket B: ~25 minutes drafting time
+- Sub-bucket C: ~28 minutes drafting time
+- Wall-clock parallel dispatch: ~32 minutes (longest sub-agent)
+- Manager context cost: notification-only per agent (background mode); no transcript flooding
+
+**Aggregate Track 2 state after Batch 2 close:**
+- 22 briefs drafted across all phases (4 trial + 9 Batch 1 + 9 Batch 2)
+- ~211 residual remaining (if all 9 Batch 2 ship as 🟢)
+- Total flags raised across Trial + Batch 1 + Batch 2: 36 (F-1 → F-36)
+- Phase 3 execution pool: 22 briefs ready (4 trial REWRITE/REDIRECT pending + 6 Batch 1 REWRITE + 3 Batch 1 REDIRECT + 6 Batch 2 REWRITE + 3 Batch 2 REDIRECT)
+
+**Recommended next manager action:**
+- Phase 3 execution with worktrees: bundle ~18-22 briefs for one Phase 3 dispatch session. F-15 worked-example salvage from B1-B3 + D-11/D-12 lift opportunities from Batch 2 happen at Phase 3 before redirect deletes the sources.
+- ORThe 6 cluster-audit recommendations from Batch 2 flags (F-21 Lettings cluster + F-28 + F-30 Budget-2024 commercial cluster + F-31 small-profits-rate cluster + F-35 rewrite-cohort year-stamp cluster + F-36 carry-forward WebFetch sample re-check) can be batched as a §16.43 STALE-sweep sub-agent dispatch. Manager judgment call: which precedes Batch 3 cluster work.
 
 **Trial-phase complete summary (post-gold-reference):**
 
