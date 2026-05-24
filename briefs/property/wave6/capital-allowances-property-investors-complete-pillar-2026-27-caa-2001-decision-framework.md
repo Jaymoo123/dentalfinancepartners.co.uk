@@ -194,40 +194,89 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `capital-allowances-property-investors-complete-pillar-2026-27-caa-2001-decision-framework` (no override)
+- **Final category:** `property-types-and-specialist-tax` (no override)
+- **H1 chosen:** "Capital Allowances for UK Property Investors 2026/27: The Four-Axis Decision Framework Under CAA 2001"
+- **Meta title chosen:** "Capital Allowances for Property Investors 2026/27: CAA 2001" (60 chars)
+- **Why these vs other options:** The four-axis framework framing is the differentiator vs every other "complete guide" page in the legacy CA cluster. H1 names "Four-Axis Decision Framework Under CAA 2001" explicitly so the framing is the first thing the reader sees and so the page is structurally distinct from the closest-existing `capital-allowances-on-property` (Wave 5, 2026-05-20) and `landlord-capital-allowances-tax-relief` (legacy). MetaTitle leads with the primary query word order ("Capital Allowances for Property Investors 2026/27") and ends with the structural anchor ("CAA 2001") to capture both query types. Trimmed by 2 chars off the 62-cap to give breathing room on subsequent revisions.
 
 ### Competitor URLs fetched
-- 
+- https://www.uklandlordtax.co.uk/capital-allowances/ — fetched 200; case-study page on camping pods, not a CA pillar. Useful only as a reminder that competitor coverage of CAA 2001 framework is genuinely thin.
+- https://www.icaew.com/technical/tax/capital-allowances/full-expensing — **404** at write time (Stage 2 URL liveness verification was stale; logged in discovery D-1).
+- https://www.icaew.com/technical/tax/capital-allowances/structures-and-buildings-allowance — **404** at write time.
+- https://www.icaew.com/technical/tax/capital-allowances/annual-investment-allowance — **404** at write time.
+- https://www.evelyn.com/insights-and-events/insights/capital-allowances/ — redirected (301) to https://www.swgroup.com/insights-events/insights/capital-allowances/. The S&W article is a stud-farm-bloodstock-specialist case study, not a CA pillar; the article is also outdated on AIA / SBA rates (mentions £1m "sunset 31 Dec 2020" framing). Borrowed nothing.
+
+Net usable competitor coverage: zero out of five. C1 relied on §25.1-§25.10 of house_positions.md as the working detail (the brief's pool-thinness disclosure anticipated this).
 
 ### Existing-page review (from "Closest existing pages")
-- 
+- `landlord-capital-allowances-tax-relief` — read. The page is structurally wrong for residential lets (tells landlords kitchens and boilers are AIA-claimable; misses s.35 dwelling-house restriction entirely). Flagged at F-6 + F-7 in wave6_site_wide_flags.md. C1 is the structural replacement.
+- `capital-allowances-on-property` — read. Wave 5 era (2026-05-20). Correctly framed on s.35 dwelling-house restriction. Mid-quality. C1 can become the pillar this page links up to (recommended in D-3).
+- `capital-allowances-commercial-property-what-can-claim` — sampled. Commercial-only entry-level. C1 cross-links as the commercial-specific entry; C6 (fixtures) is the deeper sibling.
+- Six legacy AIA-named pages and `full-expensing-capital-allowances` — sampled (also flagged at D-5 + F-7). All pre-FA(No.2)2023 framing. C4 in this wave is the AIA depth replacement; C5 is the full-expensing carve-outs replacement; C1 links to both.
+- `integral-features-capital-allowances` — sampled. Single-mechanic legacy page. C1 cites s.33A and links out.
+- `capital-allowances-examples` — sampled. Examples-only legacy page. C1 absorbs via the worked decision-tree walkthrough.
 
 ### Citations added (external authority)
-- 
+- CAA 2001 s.15 (qualifying activities; post-FA-2025 omissions)
+- CAA 2001 s.35 (dwelling-house exclusion)
+- CAA 2001 s.33A (integral features special-rate)
+- CAA 2001 s.45S (full expensing for companies)
+- CAA 2001 s.51A (AIA £1m permanent)
+- CAA 2001 s.270AA (SBA 3% / 33⅓ years / 29 October 2018 gate)
+- CAA 2001 s.270CF (SBA residential exclusion, NOT s.270BG)
+- Finance Act 2025 Schedule 5 (FHL abolition)
+- HMRC Capital Allowances Manual CA21010, CA21210, CA90000
+
+Plus inline mentions of: CAA 2001 ss.21-23 + Lists A/B/C; s.51E + s.51G associated-companies test; s.38B cars-out-of-AIA; s.45D / s.45DA / s.45EA / s.45O / s.45K (FYA section identities, NOT shuffled); s.196 fixtures table; s.198 fixtures election; s.270IA allowance statement requirement; s.61 disposal events; s.83 short-life asset election; TCGA 1992 s.37B; CTA 2009 Part 14 (LRR sister regime); FA 2021 ss.9-10 (super-deduction historic); F(No.2)A 2023 ss.7-8 (AIA permanent + s.45S insertion); FA 2012 Sch 10 (fixtures pooling-and-election gates); FA 2020 (SBA uplift from 2% to 3%); ITTOIA 2005 s.311A (replacement of domestic items relief, the actual residential-let relief).
+
+§16.35 per-write verification anchors: every cited rate (AIA £1m, SBA 3%, full expensing 100% / 50%, super-deduction 130% expiry, FHL abolition dates) and every cited statutory section identity re-verified against legislation.gov.uk on 2026-05-23.
 
 ### Internal links added (to our existing pages)
-- 
+- `/blog/property-types-and-specialist-tax/capital-allowances-on-property` — verified resolves
+- `/blog/property-types-and-specialist-tax/integral-features-capital-allowances` — verified resolves
+- `/blog/property-types-and-specialist-tax/full-expensing-capital-allowances` — verified resolves
+- `/blog/property-types-and-specialist-tax/capital-allowances-commercial-property-what-can-claim` — verified resolves
+
+Plus 9 forward-link mentions of bucket siblings C2-C10 (as prose references with named slug topics, not `<a href>` because those slugs are not yet on-site; manager back-patches at wave merge per §16.32).
 
 ### Inline CTA placements
-- 
+Three asides total at conversion moments:
+1. After §1 (s.35 dwelling-house misconception correction) — strong intent for portfolio review.
+2. After §6 (decision-tree walkthrough) — reader ready to act on their specific scenario.
+3. After §8 (FHL post-abolition reality) — former-FHL operators urgent for transitional pool review.
+
+No aside in opening; no aside inside worked example; ≤3 asides total. Matches CTA placement guidance in brief.
 
 ### Build attempts
-- 
+- `npm install --workspace=Property/web --include-workspace-root` in worktree (worktree had no node_modules; one-time install added 359 packages in 15s).
+- `cd Property/web && npm run build` — Compiled successfully in 4.4s; 472 static pages generated (up from 471, my new page included); C1 confirmed in `.next/server/app/blog/property-types-and-specialist-tax/`.
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes in markdown:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+- em-dash count (in source markdown): 0
+- en-dash count (in source markdown): 0
+- em-dash count in built HTML body (offset >1000): 1, located in SiteHeader sr-only span ("Accountants UK [em-dash] Get your property tax sorted"), template chrome NOT content — flagged at F-8
+- Tailwind utility classes in markdown: 0
+- metaTitle length: 60 chars (≤62 ✓)
+- metaDescription length: 151 chars (≤158 ✓)
+- FAQ count: 14 (in 12-14 target) ✓
+- FAQ schema count in built HTML: 14 (matches frontmatter array) ✓
+- FAQPage + BreadcrumbList + Organization + BlogPosting JSON-LD all present in built HTML ✓
+- Internal links resolve: all 4 existing-page slugs verified present in `Property/web/content/blog/`
+- Body word count: ~4,918 (above 3,000-3,800 target ceiling; pillar density justified per §16.16 because (a) cluster spine for 9 sibling pages, (b) four-axis decision framework requires depth on each axis, (c) common-mistakes section operates as a reference layer that the rest of the cluster forward-links to)
 
 ### Flags raised to wave6_site_wide_flags.md
-- 
+- F-6: EXISTING_PAGE_STALE — `landlord-capital-allowances-tax-relief` tells residential landlords kitchens and boilers are AIA-claimable (s.35 misframing).
+- F-7: EXISTING_PAGE_STALE — middleware redirect chain `landlord-capital-allowances-maximizing-tax-relief` → `landlord-capital-allowances-tax-relief` needs repoint to C1 (post-launch hygiene).
+- F-8: EXISTING_PAGE_STALE — SiteHeader sr-only span contains a literal em-dash in template chrome.
+
+### Discoveries logged to wave6_discovery_log_session_C.md
+- D-1 OTHER — three ICAEW tax-technical URLs in C1 brief returned 404 at write time (Stage 2 verification stale).
+- D-2 ADJACENT_TOPIC — LRR examples-led page deserves separate future-wave bucket beyond C9 mechanics.
+- D-3 EXISTING_PAGE_LINK_OPPORTUNITY — Wave 5 `capital-allowances-on-property` should link forward to C1 as pillar.
+- D-4 AUTHORITY_GAP — TCGA 1992 s.37B (SBA cumulative add-back into CGT) is rarely cited on our site.
+- D-5 EXISTING_PAGE_STALE — six legacy AIA-named blog files all pre-date the £1m permanent regime (overlaps with F-7).
+- D-6 CALCULATOR_IDEA — AIA-vs-full-expensing-vs-50%-FYA-vs-special-rate-pool allocation calculator.
 
 ### 2-3 sentence summary
+C1 is the CAA 2001 pillar for the Bucket C cluster, organised as a four-axis decision framework (claimant × property type × expenditure type × vehicle) anchored on the locked §25 house position. The page opens with the s.35 dwelling-house misconception (the cluster's central error in legacy guidance), walks the in-force vehicles for 2026/27 including AIA £1m permanent, full expensing s.45S (companies only), the 50% special-rate FYA companion, main and special-rate pools, SBA 3% straight-line, and the targeted FYAs at s.45D / s.45EA / s.45O, and reflects the FA 2025 Schedule 5 FHL abolition (commencement 1 April / 6 April 2025). Forward-links nine bucket sibling pages C2-C10 for depth on disposal mechanics, SBA, AIA allocation, full expensing carve-outs, fixtures s.198 election, HMO common parts, FHL post-abolition pools, land remediation relief, and historic super-deduction clawback.
