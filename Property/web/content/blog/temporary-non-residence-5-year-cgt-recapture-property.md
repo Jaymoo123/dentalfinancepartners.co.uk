@@ -179,7 +179,7 @@ editorialNote: "Reviewed against TCGA 1992 section 10A (substituted by Finance A
 
 <p>The return is filed by 31 January following the year of return. The enquiry window then runs from that filing date; HMRC has 12 months from the filing date to open an enquiry into the return as filed, with the standard discovery extensions for careless or deliberate omissions. Keep contemporary evidence (disposal documentation, base-cost evidence, foreign tax computations) for at least six years from the return year.</p>
 
-<p>The companion descriptive <a href="/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained">expat property income obligations</a> page hangs s.10A off the broader expat hub; the underlying <a href="/blog/capital-gains-tax/capital-gains-tax-selling-rental-property-uk">CGT on selling a rental property</a> guide carries the base-cost and rate mechanics for the disposal computation itself.</p>
+<p>The companion descriptive <a href="/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained">expat property income obligations</a> page hangs s.10A off the broader expat hub; the underlying <a href="/blog/capital-gains-tax/cgt-selling-buy-to-let-property-calculation-guide">CGT on selling a rental property</a> guide carries the base-cost and rate mechanics for the disposal computation itself.</p>
 
 <h2>Common misconceptions to avoid</h2>
 
