@@ -1861,3 +1861,139 @@ Cross-references §21.5 (FIC mechanics generic), §22.6 (FIC as IHT value-freeze
 - "Cladding remediation is capped at £10,000 for a leaseholder" (false; under Sch 8 para 8, qualifying-lease cladding remediation is **fully protected** — no service charge at all; the £10k / £15k / £50k / £100k caps in Sch 8 para 6 are for **non-cladding** remediation only).
 
 ---
+
+## 27. HMRC enquiry + tax compliance mechanics — Wave 7 extension (locked, 2026-05-24)
+
+**Scope.** §27 covers the operational tax-compliance mechanics for landlords: discovery assessment time limits (TMA 1970 s.29), closure notices (s.28A), penalties (Sch 24 FA 2007 + Sch 41 FA 2008), criminal-investigation track (CoP9 + CDF), voluntary disclosure routes (Let Property Campaign + Worldwide Disclosure Facility), and record retention (s.12B). Wave 7 Bucket B picks B1-B10 draw on this cluster.
+
+**Verification note.** Locked 2026-05-24 against legislation.gov.uk + gov.uk HMRC manuals. Most statutory anchors are bedrock — TMA 1970 s.29 / s.28A / s.12B and Sch 24 FA 2007 / Sch 41 FA 2008 have been stable since the FA 2008-2010 reforms — but **percentage bands and territory categorisation must be re-verified at write time** per §16.42 (rate-by-reference verification). The offshore Category 2/3 uplifts and the Sch 24 mitigation floors are operationally load-bearing for Wave 7 B7 + B8.
+
+### 27.1 Discovery assessment time limits — TMA 1970 s.29 + s.34 + s.36
+
+- **Ordinary self-assessment time limit — TMA 1970 s.34:** an assessment to income tax or capital gains tax may be made **not later than 4 years after the end of the year of assessment to which it relates**. Verified at https://www.legislation.gov.uk/ukpga/1970/9/section/34 (cf Track 2 manager's 2026-05-24 commit `6769942` on s.43 4-year claim deadline; the parallel s.34/s.43 4-year framework applies to assessments and claims respectively).
+- **Discovery preconditions — TMA 1970 s.29(1):** an officer or the Board must have "discovered" one of (a) tax that ought to have been assessed but has not, (b) an assessment that is or has become insufficient, or (c) relief given that is or has become excessive. The "discovery" requirement is a **threshold condition** — without a true discovery on the facts the s.29 power does not arise. Discovery is a low bar in practice; HMRC need only have come to a "view that there is an insufficiency".
+- **Extended time limits — TMA 1970 s.36:**
+  - **Ordinary 4 years** under s.34 (no behaviour element).
+  - **Careless 6 years** under s.36(1) (s.29 assessment where loss of tax brought about carelessly).
+  - **Deliberate 20 years** under s.36(1A) (loss of tax brought about deliberately by the taxpayer or a person acting on their behalf).
+  - **Offshore matters 12 years** under s.36A (FA 2019 reform; applies where the loss of tax is attributable to offshore income / gains / assets — even without carelessness or deliberate behaviour). s.36A is **the 2019 reform** giving HMRC a 12-year window for innocent-error offshore cases; sessions writing on s.36A must NOT collapse it into the careless 6-year or deliberate 20-year limbs. Verified at https://www.legislation.gov.uk/ukpga/1970/9/section/36 (current as amended).
+- **s.29(4) + (5) — the two conditions that unlock the s.29 assessment power after the enquiry window has closed:**
+  - **First condition (s.29(4)):** the situation under s.29(1) was brought about carelessly or deliberately by the taxpayer or a person acting on their behalf.
+  - **Second condition (s.29(5)):** the officer could not have been reasonably expected, on the basis of information then available to them, to be aware of the under-assessment before the enquiry-window closing point.
+  - The "competent officer test" under s.29(5) (Veltema, Sanderson, HMRC v Tooth) is the working judicial gloss; sessions writing on s.29(5) appeals should cite at least one of these authorities and refer to HMRC v Tooth [2021] UKSC 17 as the current Supreme Court authority on the deliberate-behaviour test.
+- **HMRC manual anchor:** EM3270+ (Enquiry Manual on discovery); CH51000+ (Compliance Handbook on s.29 + s.36).
+- **Practical writing rule for sessions (Wave 7 B1, B5, B6, B7):** distinguish (a) ordinary 4-year limit (no behaviour), (b) careless 6-year (Sch 24 careless behaviour), (c) deliberate 20-year (Sch 24 deliberate / deliberate-concealed), (d) offshore innocent-error 12-year under s.36A FA 2019. Do not collapse (d) into (b) — they are independent.
+
+### 27.2 Penalties for inaccuracy — Schedule 24 FA 2007
+
+- **Title and scope:** Schedule 24 FA 2007 — "Penalties for errors". Applies to inaccuracies in returns and documents leading to under-assessment, over-claim of relief, or false statements of loss.
+- **Behaviour categories (Sch 24 para 3):**
+  - **Careless** — failure to take reasonable care.
+  - **Deliberate but not concealed** — deliberate inaccuracy without arrangements to conceal.
+  - **Deliberate and concealed** — deliberate inaccuracy with arrangements to conceal (false invoices, bank-account routing, document destruction).
+- **Standard maximum penalties (Sch 24 para 4) and disclosure mitigation floors (paras 9-10):**
+  | Behaviour | Max | Unprompted disclosure floor | Prompted disclosure floor |
+  |---|---|---|---|
+  | Careless | 30% | 0% (within 12 months) | 15% |
+  | Deliberate not concealed | 70% | 20% | 35% |
+  | Deliberate and concealed | 100% | 30% | 50% |
+- **Offshore uplift (Sch 24 para 4A inserted by FA 2010 + FA 2015 reforms):**
+  - **Category 1** (domestic + offshore in territories with full information exchange): bands as above (max 30% / 70% / 100%).
+  - **Category 2** (offshore in partial-information-exchange territories): bands multiplied 1.5x (max 45% / 105% / 150%).
+  - **Category 3** (offshore in no-information-exchange territories): bands multiplied 2x (max 60% / 140% / 200%).
+- **Asset Move penalty (Sch 21 FA 2015):** further uplift applies where assets are moved from a Category 2/3 territory to defeat HMRC. Sessions writing on offshore deliberate scenarios should distinguish (a) the offshore uplift under Sch 24 / Sch 41 from (b) the additional Sch 21 FA 2015 asset-move penalty.
+- **Suspension (Sch 24 para 14):** careless penalties may be suspended for up to 2 years subject to suspension conditions; deliberate penalties cannot be suspended. Suspension is HMRC discretion (Anderson) and refusal can be appealed to FTT.
+- **HMRC manual anchor:** CH80000+ (Compliance Handbook on penalties); CC/FS7a (taxpayer-facing factsheet).
+- **Practical writing rule for sessions (Wave 7 B8):** present the band-mitigation matrix as a table; distinguish unprompted vs prompted disclosure floors; flag the offshore uplift mechanism but note Category-2/3 territory classification is dynamic (published list in HMRC manuals; verify per-write). For Wave 7 B7 (WDF), the offshore-Category uplift is the operationally critical mechanic.
+
+### 27.3 Failure-to-notify penalties — Schedule 41 FA 2008
+
+- **Title and scope:** Schedule 41 FA 2008 — penalties for failure to notify chargeability + certain VAT and excise wrongdoing. Bites where a landlord fails to notify HMRC of liability to income tax / CGT on rental income under TMA 1970 s.7 (the 6-month-after-end-of-year notification obligation).
+- **Behaviour categories (Sch 41 para 5):** non-deliberate / deliberate (not concealed) / deliberate and concealed.
+- **Standard maxima + offshore uplift (all verified at https://www.legislation.gov.uk/ukpga/2008/9/schedule/41 on 2026-05-24):**
+  | Behaviour | Cat 1 max | Cat 2 max | Cat 3 max |
+  |---|---|---|---|
+  | Non-deliberate ("other") | 30% | 45% | 60% |
+  | Deliberate not concealed | 70% | 105% | 140% |
+  | Deliberate and concealed | 100% | 150% | 200% |
+- **Disclosure mitigation (Sch 41 para 13):** unprompted disclosure floor 0% (non-deliberate within 12 months) / 20% / 30%; prompted 10% / 35% / 50%.
+- **Failure-to-notify vs inaccuracy — both can apply on same facts.** If a landlord has never registered for self-assessment for rental income AND has filed inaccurate returns for non-rental income, both Sch 41 (failure-to-notify) and Sch 24 (inaccuracy) penalties can apply in respect of different aspects. They do not double-count on the same tax loss.
+- **Reasonable excuse defence (Sch 41 para 20):** an exclusion from penalty applies where the taxpayer had a reasonable excuse for the failure. The case law (Perrin v HMRC [2018] UKUT 156) provides the working test: a four-stage Test framing what counts as reasonable excuse. Sessions writing on Wave 7 B9 (reasonable excuse case law for landlord penalties) should cite Perrin as the controlling Upper Tribunal authority.
+- **HMRC manual anchor:** CH71000+ (Compliance Handbook on failure-to-notify); CC/FS11 (factsheet).
+- **Practical writing rule for sessions (Wave 7 B6 + B10):** the Let Property Campaign route operates within the Sch 41 framework — LPC is the **mitigation-route**, not a separate penalty regime. Disclosure via LPC unlocks the unprompted-disclosure floors (potentially down to 0% for non-deliberate within 12 months).
+
+### 27.4 Closure notices + FTT appeal route — TMA 1970 s.28A + TCEA 2007 Sch 4
+
+- **Statutory hook:** TMA 1970 s.28A. An enquiry under s.9A is completed by HMRC giving a closure notice. The closure notice must either state that no amendment is required OR make the amendments the officer considers necessary. Verified at https://www.legislation.gov.uk/ukpga/1970/9/section/28A on 2026-05-24.
+- **Partial vs final closure notices.** s.28A allows partial closure notices on specific matters (issued by HMRC where ready to close on one limb while continuing on another). Each partial closure notice is independently appealable. Final closure ends the enquiry.
+- **Tribunal direction to issue closure notice — s.28A(4):** the taxpayer may apply to the FTT for a direction requiring HMRC to issue a closure notice within a specified period. The tribunal must grant the direction unless HMRC have reasonable grounds for not issuing it (s.28A(6)). The application is the working tool for taxpayers stuck in long-running open enquiries; the threshold is "no reasonable grounds for delay".
+- **FTT appeal route — TCEA 2007 + TPRT 2009 (SI 2009/273):** appeals against amendments in closure notices, penalty assessments, and information notices go to the First-tier Tribunal (Tax Chamber) under TCEA 2007 ss.3-5 + the Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 (SI 2009/273). Standard category cases; complex cases attract costs-shifting. Upper Tribunal (Tax and Chancery) handles appeals on points of law (TCEA 2007 s.11). Onward to Court of Appeal + Supreme Court on points of law.
+- **30-day notice of appeal window — TMA 1970 s.31A:** appeals against a closure notice or amendment must be made within 30 days. Late appeals can be accepted on reasonable-excuse grounds (Martland v HMRC [2018] UKUT 178).
+- **HMRC alternative dispute resolution (ADR).** Available alongside FTT route; ADR engagement does not pause appeal time limits. Sessions writing on B4 (Tribunal appeal process) should mention ADR as an option, not a replacement for FTT.
+- **HMRC manual anchor:** EM1500+ (Enquiry Manual on closure); ARTG2000+ (Appeals, Reviews and Tribunals Guidance).
+- **Practical writing rule for sessions (Wave 7 B2, B4):** present the closure-notice-and-appeal pathway as a sequence: enquiry opens → information exchange → closure notice (partial or final) → 30-day appeal window → tribunal listing. Note that s.28A(4) is the taxpayer's lever to break HMRC stalling.
+
+### 27.5 Contractual Disclosure Facility — Code of Practice 9 (CoP9)
+
+- **What CoP9 is.** HMRC Code of Practice 9 (current version: CoP9 (2014), republished editorially since; sessions should verify current edition via gov.uk at write time) is the published code under which HMRC offers a **Contractual Disclosure Facility (CDF)** to taxpayers HMRC suspect of tax fraud. Where HMRC opens a civil-fraud investigation, CoP9 is the route to **immunity from criminal prosecution** for the matters disclosed.
+- **The CDF offer + 60-day window.** HMRC issues a CoP9 letter offering CDF. The taxpayer has **60 days to accept** by signing the CDF acceptance and providing an outline disclosure. Acceptance crystallises the immunity (for matters within the disclosure). Rejection does not preclude criminal investigation; HMRC reserves discretion.
+- **Outline Disclosure + Disclosure Report.** Acceptance triggers an Outline Disclosure (within 60 days of acceptance) summarising the tax fraud. Followed by a full **Disclosure Report** within a longer window (typically 6-12 months, by agreement) detailing the full fraud and tax loss calculation. Reports are reviewed by HMRC's Fraud Investigation Service.
+- **Scope of immunity.** Immunity is **only for matters disclosed**. False statements in CDF documents revoke immunity and expose the taxpayer to criminal investigation including for the disclosed conduct. Non-disclosed matters are not covered.
+- **CoP9 vs WDF vs LPC — distinct routes:**
+  - **CoP9 / CDF:** HMRC-initiated civil-fraud investigation; immunity offered; **for cases involving deliberate behaviour with criminal-prosecution exposure**.
+  - **WDF (Worldwide Disclosure Facility):** **Taxpayer-initiated** offshore voluntary disclosure; no criminal immunity (HMRC retains discretion); **for offshore matters typically post-FtC 2018 deadline**.
+  - **LPC (Let Property Campaign):** **Taxpayer-initiated** voluntary disclosure of UK rental income; **for residential landlords with undisclosed rental income** (campaign open-ended since 2013); operates within Sch 41 framework with unprompted-disclosure mitigation.
+- **Important. CoP9 is NOT a voluntary-disclosure route.** It is HMRC-initiated. Taxpayer-initiated disclosure of fraud (where the taxpayer wants criminal-immunity protection) is via **voluntary CDF request** — also offered under CoP9 mechanics. The distinction matters: HMRC-issued CoP9 = HMRC has chosen to offer CDF; taxpayer-requested CDF = taxpayer is asking HMRC to put them under CoP9.
+- **HMRC manual anchor:** EM6000+ (Enquiry Manual on civil investigation of fraud); FIS Operational Manual (internal but partially published).
+- **Practical writing rule for sessions (Wave 7 B3):** present CoP9 as HMRC's fraud-investigation track; distinguish HMRC-initiated CoP9 (offered after HMRC starts investigation) from taxpayer-initiated voluntary CDF request. Emphasise the immunity scope and the deliberate-conduct trigger. Do NOT frame CoP9 as a landlord-friendly disclosure route — it is a serious step taken only with specialist representation.
+
+### 27.6 Voluntary disclosure routes — LPC + WDF + general "voluntary disclosure"
+
+- **Let Property Campaign (LPC).** HMRC campaign open since 9 September 2013, no announced end date. Eligibility: **residential landlords** (UK + non-UK resident) with undisclosed rental income. Excludes: companies (LtdCo route differs), trusts (TRS route under §22.16), non-residential property (commercial LPC equivalent does not exist — use general voluntary disclosure). Three-step process: **(i) notify** intent via gov.uk landlord disclosure form (no penalty consequence at this stage); **(ii) disclose** full liability within **90 days** of HMRC's acknowledgment, calculating tax + interest + penalty; **(iii) pay** the full liability on disclosure. Penalty band achieved: typically careless 0% (unprompted within 12 months) to 15% (prompted), occasionally up to 30%; deliberate cases incur higher penalties but **LPC is not appropriate where HMRC has criminal-prosecution interest** — switch to CoP9 / CDF.
+- **Worldwide Disclosure Facility (WDF).** HMRC facility opened 5 September 2016, ongoing. Eligibility: any person with undisclosed UK tax liability connected to offshore income, gains, or assets. **90-day disclosure timeline** from notification (extendable to 180 days for complex cases). Penalty banding follows Sch 24 / Sch 41 with offshore Category 2/3 uplifts; no criminal-prosecution immunity; HMRC retains discretion to prosecute.
+- **Failure-to-Correct (FtC) regime — FA 2017 Sch 18.** Standalone offshore-correction obligation that required taxpayers with undeclared offshore tax matters to make disclosure **by 30 September 2018**. Post-deadline failures attract a minimum **200% penalty** (under Sch 18 para 4 FA 2017), reducible to **100% on full unprompted disclosure** + Sch 18 para 7 asset-based penalty + naming-and-shaming. Sessions writing on offshore landlord cases (Wave 7 B7) MUST cite the FtC regime; post-2018 disclosures via WDF do not avoid FtC penalty (the WDF route operates within the FtC framework where applicable).
+- **General voluntary disclosure.** For UK-only non-rental matters not covered by LPC: the Digital Disclosure Service (DDS) on gov.uk. Same general principles: notification + 90-day disclosure + payment; mitigation via unprompted-disclosure floors.
+- **HMRC manual anchor:** CH150000+ (Compliance Handbook on disclosure mitigation); Let Property Campaign published guidance at gov.uk/guidance/let-property-campaign.
+- **Practical writing rule for sessions (Wave 7 B6, B7, B10):** the LPC + WDF + DDS + CoP9 architecture is a decision-tree, not parallel options. Decision criteria: (a) what is the income / asset class? (rental → LPC; offshore → WDF + FtC; other UK → DDS; serious-fraud → CoP9 / CDF). (b) Has HMRC opened an enquiry? (yes-with-criminal-interest → CoP9; yes-civil → continue but flag for disclosure-route within enquiry). (c) Is offshore involved? (yes → WDF + FtC overlay).
+
+### 27.7 Record retention — TMA 1970 s.12B + adjacent obligations
+
+- **Statutory hook:** TMA 1970 s.12B. Record-keeping obligation for self-assessment + companies (CTA 2009 s.386 + CA 2006 s.388 for companies). Verified at https://www.legislation.gov.uk/ukpga/1970/9/section/12B on 2026-05-24.
+- **Retention periods:**
+  - **Business records (sole-trader rental + LtdCo rental):** **5 years after 31 January following the tax year** (so a 2026/27 record must be kept until 31 January 2033). For accounting periods of companies, **6 years from end of period**.
+  - **Non-business records (e.g. private investor with rental income? No — rental income is a business for s.12B purposes per Salisbury House Estate principle):** generally 22 months after end of tax year, but **for landlords always treat as business** (per HMRC PIM2010+).
+  - **Where an enquiry is open:** retention extends until enquiry closes (with reasonable post-closure window for appeal records).
+- **Records covered:** all amounts received and paid in the course of the rental business; supporting invoices, receipts, contracts, mortgage statements, repair invoices, tenancy agreements, deposit-protection records, MTD ITSA digital records (interaction with §19.16 — digital-records evidence discipline). Records may be preserved digitally.
+- **Penalty (s.12B(5)):** **up to £3,000 per year of failure**. In practice rarely the operative penalty (Sch 24 / Sch 41 dominate); s.12B penalty is the floor for record-keeping-only failures with no consequential tax under-assessment.
+- **CA 2006 s.388 (companies):** statutory accounting-record obligation independent of TMA 1970 — relevant where landlord operates via LtdCo. **6-year retention floor for private companies; 6-year minimum from end of accounting period.** Companies House offences attach separately for failure to keep adequate accounting records.
+- **MTD ITSA interaction (§19.16).** MTD ITSA digital-records evidence discipline runs alongside s.12B. The digital-link requirement does not extend the retention period; it constrains the form (digital, not paper-only) for landlords within MTD scope.
+- **HMRC manual anchor:** SAM50000+ (Self Assessment Manual on record-keeping); PIM2000+ (Property Income Manual).
+- **Practical writing rule for sessions (Wave 7 B10):** the 5-years-from-31-January rule (income tax) and 6-years-from-period-end rule (corporation tax) are the operational floors. Sessions must not collapse them ("6 years" alone is over-stated for personal landlords; "5 years" alone is under-stated for LtdCo landlords).
+
+### 27.8 Property Tax Partners angle (the firm-positioning hooks across §27)
+
+- **Enquiry response engagement.** The firm's positioning on enquiry response is (a) timing-discipline (30-day appeal windows are non-negotiable; engage specialist within first 7 days), (b) closure-notice strategy (s.28A(4) tribunal direction where HMRC stalls beyond 9-12 months), (c) penalty mitigation discipline (push for unprompted-disclosure floors where applicable).
+- **CoP9 / CDF representation.** Specialist territory — the firm partners with specialist tax investigations counsel rather than handling in-house; landlord-clients with deliberate-behaviour exposure are referred for CoP9 representation.
+- **Voluntary disclosure routes — LPC / WDF / FtC.** Working route for landlord-clients with historic undisclosed rental income. LPC is the default; WDF + FtC overlay for offshore matters. Engagement timing: client realisation → 7-day in-house assessment → notify within 14 days → 90-day disclosure window → payment.
+- **Record retention compliance.** The firm's standing recommendation: **keep records for 7 years** (one year above s.12B floor) as risk-buffer for late-discovered errors. Sessions writing on Wave 7 B10 should anchor on the **5-year statutory floor** but recommend the **7-year practical floor** consistent with prior pages (per §19.16 7-year recommendation).
+- **Cross-references in this house position doc:** §19 (MTD ITSA penalty regime — Sch 56 / 55 sit alongside §27.2 / §27.3 for MTD-specific defaults); §22.16 (TRS penalty regime under MLR 2017 — see §22.16 lock); §1 (SDLT enquiry windows are 9-12 months not 4 years; SDLT has its own time-limit regime under FA 2003 Sch 10 paras 28-31).
+
+### 27.9 Do not write (§27 cluster)
+
+- "HMRC has 6 years to assess all under-declared rental income" (false in general; ordinary limit is **4 years** under s.34; 6 years applies only for careless behaviour under s.36(1); 20 years for deliberate; 12 years for offshore innocent-error under s.36A FA 2019).
+- "The 12-year offshore limit applies only to careless cases" (false; s.36A bites on **innocent-error offshore matters** — it is the **no-behaviour** offshore extension; careless offshore is 6 years under s.36(1) read with no specific offshore uplift to that bracket).
+- "Sch 24 careless penalty is 30% flat" (false; standard MAX 30%, with mitigation to 0% unprompted within 12 months or 15% prompted; sessions writing penalty calculation must use the matrix not a flat figure).
+- "Offshore deliberate-concealed Sch 24 penalty is capped at 100%" (false; Category 3 offshore uplift takes the max to 200% under Sch 24 para 4A read with the offshore-categories Order).
+- "CoP9 is a landlord-friendly voluntary-disclosure route" (false; CoP9 is HMRC's civil-fraud-investigation track offering criminal-prosecution immunity; not the appropriate route for ordinary undisclosed rental income).
+- "WDF gives criminal-prosecution immunity" (false; only CoP9 / CDF gives immunity; WDF disclosures remain liable to HMRC prosecution discretion).
+- "Failure-to-Correct (FtC) deadline was extended past 30 September 2018" (false; the FtC deadline was 30 September 2018 and was not extended; post-deadline disclosure attracts the 200%/100% FtC penalty framework under FA 2017 Sch 18).
+- "Closure notices are issued at HMRC's discretion with no taxpayer remedy" (false; TMA 1970 s.28A(4) gives the taxpayer the right to apply to the FTT for a direction; tribunal must grant unless HMRC have reasonable grounds for delay per s.28A(6)).
+- "Closure-notice appeals can be made within 60 days" (false; the appeal window is **30 days** under TMA 1970 s.31A; late appeals require reasonable-excuse application under Martland framework).
+- "Reasonable excuse is determined by HMRC officer discretion" (false; reasonable excuse is a statutory defence under Sch 41 para 20 + Sch 24 para 14; appealable to FTT; Perrin v HMRC [2018] UKUT 156 is the controlling Upper Tribunal four-stage test).
+- "Records must be kept for 6 years (income tax)" (false; **5 years after 31 January following the tax year** for income tax; 6 years applies to corporation tax / CA 2006 s.388; sessions must distinguish).
+- "Records must be kept for 7 years (statutory floor)" (false; **statutory floor is 5 years (income tax) or 6 years (corporation tax / CA 2006); 7 years is the firm's practical recommendation, not the statutory minimum**).
+- "Failure to keep records carries an unlimited penalty" (false; s.12B(5) caps at £3,000 per year of failure; bigger penalty exposures arise via Sch 24 / Sch 41 on the consequential tax loss, not via s.12B itself).
+- "LPC is open to commercial-property landlords" (false; LPC is for **residential rental income** only; commercial / mixed-use disclosure uses the general voluntary-disclosure route via DDS).
+- "LPC notification triggers immediate penalty exposure" (false; notification is a **no-penalty-consequence** step; penalty exposure crystallises on disclosure + payment within 90 days of acknowledgment).
+
+---
