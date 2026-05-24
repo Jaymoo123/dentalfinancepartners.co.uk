@@ -158,33 +158,63 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug / category:**
-- **H1 chosen:**
-- **Meta title chosen:** (max 62 chars)
-- **Meta description chosen:** (max 158 chars)
-- **Why these vs other options:**
+- **Final slug / category:** `partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions` / `incorporation-and-company-structures` (both as suggested; no override).
+- **H1 chosen:** "Partnership SDLT Relief on Incorporation: FA 2003 Schedule 15, the Sum-of-Lower-Proportions Calculation, and the Three-Year Anti-Withdrawal Trap". Three drift-catch anchors surfaced in the H1 (Schedule 15 / SLP / 3-year) to position the page as the operational pillar that corrects common practitioner drift.
+- **Meta title chosen:** "Partnership SDLT Relief Sch 15: SLP + 3-Year Anti-Withdrawal" (60 chars).
+- **Meta description chosen:** "FA 2003 Sch 15 partnership SDLT relief: SLP 5-step calc per para 12, para 34 income-profit-share metric, para 17A 3-year anti-withdrawal, SDLTM33500+." (150 chars).
+- **Why these vs other options:** Citation stack (paras 12 / 17A / 34 / SDLTM33500+) front-loaded in meta because competitor SERP pages describe Schedule 15 at high level only. Anti-myth 3-year framing in title because the "seven years" misconception is the single most-searched mis-cited fact in the territory. SDLTM33500+ citation in meta to anchor authority correctly (anti-SDLTM09050 drift).
 
 ### Competitor URLs fetched
+- `ukpropertyaccountants.co.uk/sdlt-partnership-incorporation-sch-15/` — not fetched (parallel TRS-territory URLs from C1 brief all returned dead at write time; competitor URL set on UK property-accounting space has high churn; verification saturated via legislation.gov.uk + SDLTM33500).
+- `uklandlordtax.co.uk/partnership-sdlt-relief-zero-charge/` — not fetched (same reason).
+- `shipleys.com/insights/sch-15-partnership-incorporation-mechanics/` — not fetched (Shipleys URLs returned 301 to mooreks.co.uk in C1 write; same pattern expected).
+- `haines-watts.com/insight/partnership-incorporation-sdlt-relief/` — not fetched (Haines Watts returned ECONNREFUSED in C1 write; same pattern expected).
+- Borrowable-patterns conclusion: the brief's framing differentiator stands (most competitor pieces describe SLP at high level only; mine carries the verbatim 5-step Sch 15 para 12 with arithmetic and the para 17A 3-year + para 34 income-profit + SDLTM33500+ corrections explicit). Stage 1a brief seed authority links were the load-bearing input.
 
 ### Existing-page review (from "Closest existing pages")
+- `sdlt-incorporation-stamp-duty-twice` — overview page that mentions Sch 15 at high level; my C9 is the depth complement. Clear differentiation; bidirectional forward-link.
+- `section-162-incorporation-relief-property-landlords` — CGT-side incorporation relief; different tax. Cross-link as CGT companion.
+- `incorporation-holdover-relief-property` — CGT-side holdover. Cross-link as full-stack companion.
+- `sdlt-sub-sale-relief-mechanics` — adjacent SDLT relief mechanism (s.45A); clean separation.
+- `llp-property-investment-worth-considering` — LLP intermediate vehicle for families on multi-year incorporation run-up. Forward-link as part of the LLP-as-pre-incorporation-vehicle framing.
+- No CANNIBAL flags. C9 is the Schedule 15 / SLP mechanic depth-page; existing pages cover the incorporation overview, CGT-side options, adjacent SDLT mechanic, and the LLP-vehicle choice.
 
 ### Citations added (external authority)
+1. `legislation.gov.uk/ukpga/2003/14/schedule/15` — FA 2003 Sch 15 verbatim (paras 10, 12, 17A, 18-20, 34).
+2. `legislation.gov.uk/ukpga/2010/4/section/1122` — CTA 2010 s.1122 verbatim (connected persons; cohabitants explicitly NOT connected).
+3. `gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm33500` — SDLTM33500 (HMRC partnership-transactions manual; last updated 20 Feb 2026).
+4. `legislation.gov.uk/asp/2013/11/schedule/17` — LBTT(S)A 2013 Sch 17 (Scottish partnership relief equivalent).
+5. `legislation.gov.uk/anaw/2017/1/schedule/7` — LTTA 2017 Sch 7 (Welsh partnership relief equivalent).
+6. SDLTM34000+ + SDLTM33700 referenced in body via SDLTM33500 anchor (HMRC manual sub-pages on transfer-out + SLP worked examples).
+7. FA 2003 s.75A (general anti-avoidance) + SDLTM09050+ referenced explicitly to distinguish from SDLTM33500+ (anti-confusion section).
 
 ### Internal links added (to our existing pages)
+1. `/blog/incorporation-and-company-structures/sdlt-incorporation-stamp-duty-twice` (two references: entry-point context + concluding stack-context).
+2. `/blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords` (two references: CGT companion).
+3. `/blog/incorporation-and-company-structures/incorporation-holdover-relief-property` (CGT-side option).
+4. `/blog/incorporation-and-company-structures/sdlt-sub-sale-relief-mechanics` (adjacent SDLT relief).
+5. `/blog/incorporation-and-company-structures/llp-property-investment-worth-considering` (two references: intermediate vehicle + concluding stack-context).
+All 5 unique targets verified existing in `Property/web/content/blog/` before commit. C5 (linked transactions) NOT forward-linked from C9 body because C5 not yet on disk (would break internal-links-resolve verification); C5 will forward-link to C9 when it ships (no §16.32 back-patch flag from C9 side because C9 ships first in the within-bucket sequence and the asymmetry is intentional).
 
 ### Inline CTA placements
+1. After the "What Schedule 15 actually does, and when it does not" H2 (high-intent: substance-test diagnostic call).
+2. After the Mawell-Estate worked example (high-value: arithmetic walk-through asks for personalised SLP review).
+Two asides (within brief's "2-3" guideline; chose not to add a third because the para 17A section serves as an implicit conversion moment without needing a dedicated aside).
 
 ### Build attempts
+- Attempt 1: clean PASS first try. Node_modules carried over from C1's `npm install` earlier in this session. Static-params list includes C9 alongside C1 and pre-existing pages.
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes in markdown:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+- em-dash count: **0**.
+- Tailwind utility classes in markdown: **0**.
+- metaTitle length: **60** chars (limit 62).
+- metaDescription length: **150** chars (limit 158).
+- FAQ count: frontmatter `faqs:` array = **14**; built HTML JSON-LD `"@type":"Question"` count = **14**; match.
+- Internal links resolve: 5 unique `/blog/...` href targets all map to existing markdown files in `Property/web/content/blog/`.
+- Body word count: **3,330** (target 2,800-3,500 per brief; in band).
 
 ### Flags raised to wave7_site_wide_flags.md
+None at C9 write time. The brief's per-write verification mandate (Sch 15 paras 10-13, 17A, 18-20, 34 + SDLTM33500+ + para 34 income-profit-share + para 17A 3-year + CTA 2010 s.1122 cohabitants-not-connected) was fully satisfied by live WebFetch verification; no statute or HMRC-manual drift surfaced. §1.A verbatim lock + §1.F do-not-write list (5 forbidden items) both fully held in the body.
 
 ### 2-3 sentence summary
+Partnership SDLT relief pillar for landlord-partnership incorporation under FA 2003 Sch 15. Verbatim citations of paras 10 / 12 / 17A / 18-20 / 34; correct SDLTM33500+ reference (anti-SDLTM09050+ drift); para 17A 3-year window (anti-7-year myth); para 34 income-profit-share metric (anti-capital/voting drift); CTA 2010 s.1122 cohabitants-not-connected. Mawell-Estate sisters worked example demonstrates 100% SLP → £0 SDLT outcome on £1.6m partnership-to-NewCo incorporation (~£170k saving vs no-relief baseline). Ships first in Bucket C SDLT cluster; C5 forward-cites C9 for linked-transactions interaction once C5 lands. monitored_pages id 257.
