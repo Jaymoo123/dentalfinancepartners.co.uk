@@ -1081,8 +1081,8 @@ git worktree remove ../Accounting-wt-property-wave6-c
 
 **Wave 7 next steps:**
 1. ~~HP-lock sessions~~ **COMPLETE** 2026-05-24 PM (5 commits, 5 clusters, 11 sub-positions, 12 drift catches).
-2. Cannibalisation re-check against main at 181 pages.
-3. Stage 1a brief seeds (sub-agent dispatch).
+2. ~~Cannibalisation re-check against main at 181 pages.~~ **COMPLETE** 2026-05-24 PM (commit `6a4e951`). Results: ✅ 25 net-new / ⚠️ 5 partial / ❌ 0 covered. **Lineup updated to 28 picks** (Bucket A 9 + B 10 + C 9) after user-confirmed audit decisions: A4 RRA rent reform replaced with HMO selective licensing compliance; A7 Decent Homes dropped; C4 s.198 fixtures depth dropped. See `docs/property/wave7_cannibalisation_check.md` for audit detail.
+3. Stage 1a brief seeds (sub-agent dispatch) — 28 picks to seed.
 4. Stage 1b manager review.
 5. Stage 2 full brief generation (3 parallel sub-agents per §16.43 pattern).
 6. Artefacts (wave7_page_tracker + flags + Q&A shells + discovery shells).

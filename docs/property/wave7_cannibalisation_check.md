@@ -12,6 +12,24 @@ Manager audits ⚠️ partial-overlap rows; ✅ are clear for Stage 1a; ❌ woul
 
 ---
 
+## Manager audit decisions (2026-05-24 PM, user-confirmed)
+
+After review of the 5 ⚠️ partial-overlap rows:
+
+| Pick | Score | Closest existing | Decision |
+|---|---|---|---|
+| A2 RRA s.21 abolition mechanics | 0.31 | `section-21-abolition-uk-landlord-possession-guide-2026` (0.29) | **Keep with sharper framing** — operational mechanics (notice templates, transitional cases, evidential pack) vs the existing rule-of-law page |
+| A3 RRA periodic tenancy switch | 0.35 | `pet-rights-tenancy-landlord-refusal-reasonable-grounds` (false positive) | **Keep as planned** — top-match is false-positive token overlap; topic genuinely distinct |
+| A4 RRA rent reform + tribunal | 0.35 | `renters-rights-act-rent-increase-section-13-tribunal-route` (direct overlap) | **REPLACED** — new A4 = HMO additional + selective licensing compliance under HA 2004 Pt 2/3 (mini-cannibal score 0.20 ✅) |
+| A7 Decent Homes Standard PRS | 0.50 | `decent-homes-standard-prs-landlord-compliance-checklist` (HIGH overlap) | **DROPPED** — Bucket A → 9 picks |
+| C4 s.198 fixtures depth | 0.30 | `commercial-property-fixtures-claim-s198-election-purchase-mechanics` (Wave 6 C6) | **DROPPED** — Bucket C → 9 picks |
+
+**Final Wave 7 lineup: 28 picks** (Bucket A 9 + Bucket B 10 + Bucket C 9).
+
+**New A4 — HMO additional + selective licensing compliance:** HA 2004 Pt 2 (additional/mandatory HMO licensing — 5+ unrelated tenants threshold; local-authority additional licensing designations) + Pt 3 (selective licensing — geographic LA designations for all rentals); civil penalty regime up to £30k per offence; banning order interaction; RRO route. Candidate slug `hmo-selective-licensing-compliance-housing-act-2004-landlord-licensing-mechanics`. Top cannibal hit `hmo-licensing-fees-tax-deductible-uk-landlords` 0.20 — clean separation (existing is tax-deductibility focused; new is licensing-mechanics focused).
+
+---
+
 ## Bucket A — Regulatory / compliance
 
 ### A1 — RRA 2026 PART 2 lead-page rewrite (EXISTING SLUG; same-slug rewrite, not cannibal)
