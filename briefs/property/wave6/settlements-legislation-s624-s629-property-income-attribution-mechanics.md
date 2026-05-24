@@ -169,33 +169,26 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug / category:**
-- **H1 chosen:**
-- **Meta title chosen:** (max 62 chars)
-- **Meta description chosen:** (max 158 chars)
-- **Why these vs other options:**
+- Slug/cat as briefed; H1 "Settlements Legislation for Property Income: a Section-by-Section Walkthrough of ITTOIA 2005 Part 5 Chapter 5"; metaTitle 53; metaDesc 155
+- **Why:** opens with s.620 width quote per brief anti-templating; lead identity = the conflation gap (s.624 vs s.629)
 
-### Competitor URLs fetched
+### Citations + verification
+ITTOIA 2005 s.620 + s.624(1) + s.625 + s.626 + s.627 + s.628 + s.629(1)/(2)/(3)/(7) + s.631 all re-verified verbatim at write time. Case law: Crossland v Hawkins; Copeman v Coleman; Jones v Garnett [2007] UKHL 35. HMRC: TSEM4000/4200/4205/4210/4300. £100 de-minimis confirmed not uprated. s.628 confirmed = charities, no 5% rule.
 
-### Existing-page review (from "Closest existing pages")
+### Internal links (5, all resolved)
+B1 + B4 + B7 (just-shipped on branch); Wave 4 A2 alphabet-shares (existing); Wave 2 A1 IHT framework (existing).
 
-### Citations added (external authority)
+### Inline CTAs
+1 aside after the s.626 Arctic Systems section (alphabet-shares structure-review CTA).
 
-### Internal links added (to our existing pages)
-
-### Inline CTA placements
-
-### Build attempts
+### Build
+✓ 4.2s, 475/475 pages.
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes in markdown:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+em=0, tw=0, title=53, desc=155, FAQ=14, links=5/5, body=3493 (within brief 2,800-3,500 range)
 
-### Flags raised to wave6_site_wide_flags.md
+### Flags
+None. The s.624-vs-s.629 separation is correctly preserved per house position §22.9-§22.10 + Stage 1b drift catch.
 
-### 2-3 sentence summary
+### Summary
+B2 is the income-tax-side statutory walkthrough for ITTOIA 2005 Part 5 Chapter 5 (settlements). Section-by-section coverage with verbatim wording at write time, three worked property scenarios (Patel bare trust + Khan adult-child + Williams grandparent-route bypass), and the load-bearing conceptual point that s.624 and s.629 are separate mechanisms. MP ID 227, commit c3dcd30.

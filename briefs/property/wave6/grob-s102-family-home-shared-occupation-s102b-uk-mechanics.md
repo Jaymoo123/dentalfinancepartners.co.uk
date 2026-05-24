@@ -163,33 +163,26 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug / category:**
-- **H1 chosen:**
-- **Meta title chosen:** (max 62 chars)
-- **Meta description chosen:** (max 158 chars)
-- **Why these vs other options:**
+- Slug/cat as briefed; H1 "Family-Home GROB: the s.102B Shared-Occupation Carve-Out and the Three Exit Routes"; metaTitle 56; metaDesc 155
+- **Why:** Opens with the family-home gift trap framing per brief; lead identity = s.102B as the spine, with three-exit-routes framework as the differentiator.
 
-### Competitor URLs fetched
+### Citations + verification
+FA 1986 s.102 + s.102A + s.102B + Sch 20 (all verified at write time); s.102B(4) verbatim wording verified. FA 2004 s.84 + Sch 15 POAT. TCGA 1992 s.17/s.62/s.222 PPR. Buzzoni v HMRC [2013] EWCA Civ 1684. Ingram v IRC [1999] UKHL 47. HMRC IHTM14313/IHTM14333. Dates: 9 March 1999 s.102A/s.102B commencement; 28 March 1986 s.102 commencement (general; verified in §22.11).
 
-### Existing-page review (from "Closest existing pages")
+### Internal links (6, all resolved)
+B1 + B4 + B7 (just-shipped on branch); Wave 2 A2 + Wave 4 C3 (existing); Wave 2 A1 IHT framework (existing).
 
-### Citations added (external authority)
+### Inline CTAs
+2 asides: after s.102B(4) carve-out conditions explanation (high-intent: reader trying to structure); after Khan annexe worked example (high-intent: substance-vs-form on annexe arrangements).
 
-### Internal links added (to our existing pages)
-
-### Inline CTA placements
-
-### Build attempts
+### Build
+✓ 3.8s, 477/477 static pages.
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes in markdown:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+em=0, tw=0, title=56, desc=155, FAQ=14, links=6/6, body=3558 (within ~2% of brief 2,800-3,500 range)
 
-### Flags raised to wave6_site_wide_flags.md
+### Flags
+None this round. The s.102B(4) verbatim wording is correctly preserved per §22.11 + Stage 1b drift catch.
 
-### 2-3 sentence summary
+### Summary
+B5 is the family-home GROB depth page with FA 1986 s.102B as the spine. Walks the three statutory exit routes (full market rent / cease occupation / s.102B(4) shared-occupation) with verbatim s.102B(4) wording verified at write time, two worked family-home scenarios (Singh widow-and-adult-child + Khan parents-into-annexe with Buzzoni framing), the FA 2004 Sch 15 POAT backstop with the IHT500 election mechanic, and six common drafting/operational mistakes. MP ID 232, commit 41614ae.

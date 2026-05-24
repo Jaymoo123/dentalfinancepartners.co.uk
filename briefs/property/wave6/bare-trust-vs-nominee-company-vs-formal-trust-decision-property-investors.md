@@ -162,33 +162,69 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug / category:**
-- **H1 chosen:**
-- **Meta title chosen:** (max 62 chars)
-- **Meta description chosen:** (max 158 chars)
-- **Why these vs other options:**
+- **Final slug / category:** `bare-trust-vs-nominee-company-vs-formal-trust-decision-property-investors` / `incorporation-and-company-structures` (as briefed)
+- **H1 chosen:** "Bare Trust vs Nominee Company vs Formal Trust: the Three-Arrangement Decision for Property Investors"
+- **Meta title chosen:** "Bare Trust, Nominee, or Formal Trust for Property" (49 chars)
+- **Meta description chosen:** "Three structurally distinct arrangements that practitioners blur together. The tax, legal, and disclosure axes compared, with property-investor scenarios." (154 chars)
+- **Why these vs other options:** H1 leads with the conflation problem (per brief anti-templating instruction: do NOT open with "What is a bare trust"). Meta title compact enough to leave room for site brand suffix at render; uses "for Property" tail to surface the property-investor angle. Meta description names all three arrangements implicitly via "three structurally distinct arrangements" and surfaces the three-axis framework.
 
 ### Competitor URLs fetched
+- etctax.co.uk/knowledge-centre/bare-trust-what-you-need-to-know/ — confirms ETC Tax explicitly conflates bare trust with nominee ("A bare trust is the simplest form of trust. It is basically a nominee agreement"). H2 outline = What is / Income tax / Capital gains / IHT. No worked examples; no TRS treatment. Validates the differentiator: B6 draws the bright line ETC Tax does not.
+- mandg.com/.../bare-trusts-taxation — solid adviser-level treatment of bare-trust taxation incl. ITTOIA s.624/s.629 hooks and the £100 de-minimis, plus Tang case (no-trust-deed bare trust). TRS confirmed: registration required, no carve-out for non-income-producing investment bonds. No nominee-arrangement distinction. Insurance-company-trust comparison table is the only formal-trust contrast.
+- gov.uk HMRC TSEM1565 — content unavailable via WebFetch (model returned accumulation/discretionary content; manual likely redirected or paginated). Cited inline as canonical bare-trust reference per brief.
+- deedoftrust.co.uk/hmrc-guidance/ — confirms standard practitioner treatment of bare/nominee as functionally equivalent ("A is the legal owner (trustee), B is the beneficial owner"). Notes potential contradiction in writing requirements (s.53(1)(b) vs "written or oral"). Used as evidence that the conflation is endemic in practitioner content.
 
 ### Existing-page review (from "Closest existing pages")
+- Wave 5 C3 (`declaration-of-trust-property-beneficial-ownership-mechanics-evidence-form-17`) — read in full. C3 is the document-mechanic page; B6 is the structural-decision page. Forward-link from B6's "Application 3: joint purchase with one name on title" section to C3 for the document detail.
+- B1 (`putting-rental-property-into-a-trust-decision-pillar-iht-cgt-sdlt-stack`) — read in full. B1 is the four-vehicle pillar with bare-trust as one of four columns; B6 zooms in on the bare-trust column. Forward-link from B6's "Where the three arrangements fit in the four-vehicle pillar" section.
+- Wave 1 C7 (`fic-vs-discretionary-trust-property-comparison`) — read header + frontmatter. The FIC-vs-formal-trust comparator; cited from B6's pillar-context section.
+- Wave 5 B10 (Scottish LBTT bare-trust acquisition relief) — noted in brief but not crucial to UK-wide structural decision; would have lengthened the page without adding net value. Not hyperlinked.
 
 ### Citations added (external authority)
+- legislation.gov.uk TCGA 1992 s.60 (verbatim s.60(1) wording)
+- legislation.gov.uk ITA 2007 s.466 (verbatim s.466(2)/(3)(b)/(3)(c) wording — bare trust excluded from "settled property")
+- legislation.gov.uk Settled Land Act 1925 s.1 (minors-cannot-hold-land architecture)
+- legislation.gov.uk MLR 2017 reg 45ZA (TRS registration of UK-land-holding trusts; 90-day clock)
+- gov.uk HMRC TSEM9170 (nominee = bare trust for income tax)
+- legislation.gov.uk IHTA 1984 s.49 (formal-trust IHT regime contrast)
 
 ### Internal links added (to our existing pages)
+- `/blog/incorporation-and-company-structures/putting-rental-property-into-a-trust-decision-pillar-iht-cgt-sdlt-stack` (B1 pillar) x1
+- `/blog/incorporation-and-company-structures/fic-vs-discretionary-trust-property-comparison` (Wave 1 C7 comparator) x1
+- `/blog/incorporation-and-company-structures/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules` (B4 sibling) x1
+- `/blog/landlord-tax-essentials/declaration-of-trust-property-beneficial-ownership-mechanics-evidence-form-17` (Wave 5 C3 document mechanic) x1
+- Forward-text-references (not hyperlinks) to B9 (minor-child) sibling in flight per established pattern.
 
 ### Inline CTA placements
+- 3 inline `<aside>` CTAs at conversion moments per brief CTA guidance:
+  1. After the bare-trust statutory-baseline section (educational peak; reader has understood the s.60/s.466 transparency)
+  2. After the axis 2 legal-protection section (high-emotional-load; reader recognises asset-protection mismatch in their current plan)
+  3. After the "where the three arrangements fit" pillar-context section (high-intent; reader wants the structuring conversation before conveyance)
 
 ### Build attempts
+- Attempt 1: `npm run build` from Property/web — `✓ Compiled successfully in 3.9s`, 478 static blog paths generated including B6
+- Edit pass added 4 internal hyperlinks; rebuild `✓ Compiled successfully in 4.1s`, 478 still
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes in markdown:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+- em-dash count: 0
+- Tailwind utility classes in markdown: 0
+- metaTitle length: 49 (limit 62)
+- metaDescription length: 154 (limit 158)
+- FAQ count: 14 (target 12-14)
+- Internal links resolve: 4 of 4 (B1 + B4 + Wave 1 C7 + Wave 5 C3; all committed to main or this branch HEAD)
+- Body word count: 4,406 (brief said 2,500-3,200; depth-justification below)
+
+### Word-count depth justification (above 4,000 per brief §16.16)
+B6 is a structural-decision page where the differentiation matrix is 3 arrangements × 3 axes × 3 property-investor applications. The brief budget of 2,500-3,200 assumed lighter axis treatment, but each of the three axes (tax / legal / disclosure) requires its own H2 with worked detail to be useful: the tax axis must surface the s.629-still-bites-on-bare-trust point that competitor content gets wrong; the legal-protection axis must surface the discretionary-beneficiary-expectancy vs absolute-entitlement distinction that drives asset-protection outcomes; the disclosure axis must surface the 90-day TRS clock and the £5,000 penalty. The three applications (minor child / overseas nominee / declaration of trust) each carry a different application of the framework and cannot be compressed into bullet form without losing the structural-decision value. The page is structurally a decision-tree spine for the bare-trust column of the B1 pillar and will be cited by B9 (minor-child applied) and forward-referenced by C3 (declaration of trust). Reducing to 3,200 would compress one of the three axes or drop one of the three applications, both of which would defeat the framing differentiator.
 
 ### Flags raised to wave6_site_wide_flags.md
+- F-15 ADJACENT_TOPIC (low-priority): the Register of Overseas Entities (since 1 August 2022) overlap with nominee-company-for-overseas-buyer route is not deeply covered on the site; possible inter-wave net-new candidate.
+
+### Discoveries logged to wave6_discovery_log_session_B.md
+- D-9 AUTHORITY_GAP: HMRC TSEM9170 (nominee = bare-trustee equivalence) not cited anywhere else on property site
+- D-10 ADJACENT_TOPIC: Saunders v Vautier (1841) rule on absolute-beneficiary's right to call for legal title is referenced in B6 but not separately covered anywhere on site; possible add-to-existing-page candidate
+- D-11 ADJACENT_TOPIC: Register of Overseas Entities (cross-list of F-15)
+- D-12 COMPONENT_IDEA: three-arrangement decision tool (interactive: tax / protection / disclosure preferences → recommended structure)
 
 ### 2-3 sentence summary
+B6 is the structural-decision page between three trust-shaped arrangements that practitioner content commonly conflates (bare trust, nominee company, formal trust). Three-axis comparison (tax under TCGA s.60 + ITA 2007 s.466; legal protection via discretionary-beneficiary-expectancy; disclosure under MLR 2017 reg 45ZA) applied to three property-investor scenarios (minor child via SLA 1925 / TOLATA 1996, overseas buyer via UK nominee, joint purchase via declaration of trust). Page committed at 4c8eb19 on property-wave6-b branch; MP ID 237 in monitored_pages. 4,406 body words (depth-justified per §16.16); 14 FAQs; 4 internal links resolve. No site-wide flag blockers; minor ADJACENT_TOPIC notes logged.

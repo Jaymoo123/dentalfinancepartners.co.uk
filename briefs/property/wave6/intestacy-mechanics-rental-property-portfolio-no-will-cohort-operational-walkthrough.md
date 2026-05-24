@@ -167,33 +167,79 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug / category:**
-- **H1 chosen:**
-- **Meta title chosen:** (max 62 chars)
-- **Meta description chosen:** (max 158 chars)
-- **Why these vs other options:**
+- **Final slug / category:** `intestacy-mechanics-rental-property-portfolio-no-will-cohort-operational-walkthrough` / `incorporation-and-company-structures` (as briefed)
+- **H1 chosen:** "Dying Intestate with a Rental Property Portfolio: the Statutory Order, Administration Mechanics, and Post-Death Rescue Routes"
+- **Meta title chosen:** "Intestacy and a Rental Portfolio: Walkthrough" (45 chars)
+- **Meta description chosen:** "Statutory legacy £322,000, half-residue split, administrator priority under NCPR 1987 r.22, cohabitant catastrophe, post-death deed of variation rescue route." (158 chars; right on the limit)
+- **Why these vs other options:** H1 leads with the cohort framing per brief anti-templating ("large fraction of landlords die intestate"). Three operative levers in H1 sub-clauses (statutory order / administration mechanics / post-death rescue) reflect the three structural layers. Meta description critical-fact-loaded: surfaces the £322,000 figure (drift catch headline), administrator priority rule, cohabitant catastrophe, DoV rescue.
 
 ### Competitor URLs fetched
+- gov.uk landing page for inheritance-without-will — landing-page only, no figure detail surfaced; cited inline for reader use of the gov.uk intestacy calculator
+- legislation.gov.uk SI 2023/758 — verbatim verified: "The fixed net sum referred to in paragraph (B) of case (2) of the Table in section 46(1)(i) of the Administration of Estates Act 1925 is to be £322,000" effective 26 July 2023
+- Citizens Advice + Premier Solicitors + The Gazette + Legacy Trail — not separately fetched (low marginal value vs gov.uk + legislation.gov.uk); cited collectively in brief reference
 
 ### Existing-page review (from "Closest existing pages")
+- Wave 2 A7 (`inheriting-uk-rental-property-executors-step-by-step`) — general inheritance walkthrough (Capital Gains Tax category). B10 hyperlinks from "general inheritance-administration walkthrough" closing section.
+- Wave 4 C5 (`deed-of-variation-property-estate-redirecting-inheritance-iht-saving`) — DoV mechanic (Landlord Tax Essentials). B10 hyperlinks from DoV-rescue section + closing.
+- B3 sibling (`interest-in-possession-iht-treatment-iipi-iht49a-life-tenant-rental-property`) — IPDI mechanic. B10 hyperlinks from "IPDI structure" reference in worked scenario A.
+- B9 sibling (`gifting-property-to-minor-children-bare-trust-mechanics-tax-traps`) — minor-child gift mechanics (covers s.629 separately). B10 hyperlinks from the "s.629 does not apply to s.47 statutory trusts" point.
+- Wave 4 C2 (`iht-spouse-exemption-second-death-property-portfolio-window-mechanics`) — not directly hyperlinked but referenced text-only.
+- Wave 2 A8 (`iht-residence-nil-rate-band-2m-taper-property-portfolios`) — not directly hyperlinked but referenced via RNRB arithmetic in worked scenario A.
 
 ### Citations added (external authority)
+- legislation.gov.uk AEA 1925 s.46 (statutory order, as amended by ITPA 2014)
+- legislation.gov.uk AEA 1925 s.47 (statutory trusts for issue)
+- legislation.gov.uk AEA (Fixed Net Sum) Order 2023 SI 2023/758 (£322,000 verbatim verified)
+- legislation.gov.uk Inheritance (Provision for Family and Dependants) Act 1975 s.1(1)(ba) (cohabitant claim)
+- legislation.gov.uk Inheritance and Trustees' Powers Act 2014 (modernised intestacy + Trustee Act 1925 ss.31-32 amendments)
+- legislation.gov.uk IHTA 1984 s.142 (deed of variation + reads-back election)
+- legislation.gov.uk Trustee Act 1925 ss.31-32 (advancement and maintenance, as amended by ITPA 2014)
+- legislation.gov.uk NCPR 1987 r.22 (administrator priority)
+- legislation.gov.uk ITA 2007 s.467 (estate income tax during administration)
+- HMRC IHTM12000 (intestacy index, referenced inline)
 
 ### Internal links added (to our existing pages)
+- `/blog/capital-gains-tax/inheriting-uk-rental-property-executors-step-by-step` (Wave 2 A7) x1
+- `/blog/landlord-tax-essentials/deed-of-variation-property-estate-redirecting-inheritance-iht-saving` (Wave 4 C5) x2 (worked scenario A + closing)
+- `/blog/incorporation-and-company-structures/interest-in-possession-iht-treatment-iipi-iht49a-life-tenant-rental-property` (B3 sibling) x2 (DoV-to-IPDI in scenario A + closing)
+- `/blog/incorporation-and-company-structures/gifting-property-to-minor-children-bare-trust-mechanics-tax-traps` (B9 sibling) x1 (s.629 cross-reference)
 
 ### Inline CTA placements
+- 2 inline `<aside>` CTAs (brief says 2-3; placed at highest-intent moments):
+  1. After the half-residue-split worked example (Mr Roberts £1.5m estate) — peak decision-point moment; reader thinking about the DoV window
+  2. After the unmarried-cohabitant catastrophe section — high-emotional-load moment; 1975 Act six-month deadline urgency
 
 ### Build attempts
+- Attempt 1: `npm run build` — `✓ Compiled successfully in 3.5s`, 481 static blog paths generated including B10
+- Em-dash verification found 1 hit on line 198 (worked scenario A IHT-position paragraph: "framework — but"). Fixed by replacing em-dash with comma.
+- Attempt 2 (after em-dash fix): `npm run build` — `✓ Compiled successfully in 4.0s`, 481 static pages.
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes in markdown:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+- em-dash count: 0 (after fix)
+- Tailwind utility classes in markdown: 0
+- metaTitle length: 45 (limit 62)
+- metaDescription length: 158 (right on limit; deliberate — packs the key drift-catch fact + 4 operative levers into the SERP snippet)
+- FAQ count: 14 (target 12-14)
+- Internal links resolve: 4 of 4 (Wave 2 A7 + Wave 4 C5 + B3 + B9 all on this branch HEAD or main)
+- Body word count: 4,429 (brief said 3,000-3,800; depth-justification below)
+
+### Word-count depth justification (above 3,800 per brief §16.16)
+B10 walks three structural layers (statutory order detail + administration mechanics + post-death DoV rescue) and three full worked scenarios at three different family situations, plus a separate H2 each on £322,000 figure detail / half-residue split mechanic / s.47 statutory trusts / unmarried-cohabitant catastrophe / administrator priority / Grant of Letters of Administration mechanics / administration-period income tax. The brief budget of 3,000-3,800 assumed lighter scenario treatment, but each scenario requires its own IHT arithmetic plus the s.46 + s.47 application detail to be useful. The unmarried-cohabitant section in particular warrants depth: the catastrophe is so structurally severe and so frequently misunderstood that the 1975 Act discretion treatment needs the space it gets. Reducing to 3,800 would compress one of the worked scenarios or drop the 1975 Act six-month-deadline + cost-estimate detail, both of which would defeat the framing differentiator. Comparable to A7 (general inheritance walkthrough, ~4,500 words) and A8 (RNRB pillar, ~4,800 words) in the same cluster.
+
+### Drift catches honoured during write (per brief CRITICAL per §16.35)
+- £322,000 statutory legacy (not £270,000) cited throughout, with explicit "older £270,000 figure" callout to surface the drift catch for readers landing from pre-2023 sources
+- Unmarried cohabitants inherit NOTHING under intestacy; 1975 Act s.1(1)(ba) discretionary claim only (full section dedicated to this)
+- IHTA 1984 s.48(3)-(3F) NOT cited (omitted by FA 2025 s.45)
+- s.629 does NOT apply to s.47 statutory trusts because deceased is the settlor (full FAQ + body section)
 
 ### Flags raised to wave6_site_wide_flags.md
+- F-16 EXISTING_PAGE_STALE: any existing site page that mentions intestacy statutory legacy should be checked for stale £270,000 figure; full sweep at wave merge
+
+### Discoveries logged to wave6_discovery_log_session_B.md
+- D-20 AUTHORITY_GAP: HMRC IHTM12000 (intestacy index) not cited anywhere else on site
+- D-21 ADJACENT_TOPIC: 1975 Act claims for unmarried cohabitants (procedural depth) could be a separate Track 2 page
+- D-22 ADJACENT_TOPIC: NCPR 1987 r.22 administrator priority + Grant of Letters of Administration mechanics could be a separate procedural page
+- D-23 COMPONENT_IDEA: intestacy distribution calculator (inputs estate value, surviving family members; computes statutory shares under s.46 + s.47 with current £322,000 legacy)
 
 ### 2-3 sentence summary
+B10 is the intestacy operational walkthrough for landlord estates, walking the three structural layers (statutory order under AEA 1925 s.46 as amended by ITPA 2014; administration mechanics under NCPR 1987 r.22 + ITA 2007 s.467 estate income tax; post-death rescue under IHTA 1984 s.142 deed of variation). Critical §16.35 verification: £322,000 statutory legacy under AEA (Fixed Net Sum) Order 2023 effective 26 July 2023, with explicit drift catch on stale £270,000 figure. Three worked scenarios (Williams £1.5m married-with-adult-children, Davis unmarried-cohabitant catastrophe with 1975 Act route, Patel £2.4m per stirpes including grandchild minors on s.47 trusts). Page committed at dbaa59d on property-wave6-b; MP ID 244. 4,429 body words (§16.16 justifiable); 14 FAQs; 4 internal links resolve to Wave 2 A7 + Wave 4 C5 + B3 + B9 sibling commits.

@@ -168,33 +168,70 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug / category:**
-- **H1 chosen:**
-- **Meta title chosen:** (max 62 chars)
-- **Meta description chosen:** (max 158 chars)
-- **Why these vs other options:**
+- **Final slug / category:** `settlor-interested-property-trust-grob-interaction-double-trap-mechanics` / `incorporation-and-company-structures` (as briefed)
+- **H1 chosen:** "Settlor-Interested Trust + GROB: the Double-Trap when Both Hit the Same Property"
+- **Meta title chosen:** "Settlor-Interested + GROB Property Trust: Double-Trap" (53 chars)
+- **Meta description chosen:** "Settle property on a trust naming yourself a beneficiary AND keep occupying it: settlor-interest + GROB both bite. SI 1987/1130 relief is only partial." (151 chars)
+- **Why these vs other options:** H1 leads with "double-trap when both hit" framing (per brief: open with high-frequency advisor-error pattern, not "What is GROB" or "What is settlor-interest"). Meta description first-draft was 161 chars (over the 158 cap); trimmed by removing "and asymmetric" to land at 151 chars. The "SI 1987/1130 relief is only partial" hook in the meta is the page's deepest competitor-content gap.
 
 ### Competitor URLs fetched
+- HMRC IHTM42254 — fetched in detail. Confirms the critical published-practice sentence ("if a settlor transfers property to a discretionary trust of which they are a member of a class of potential beneficiaries, the settlor has reserved a benefit. This applies even if trustees might never actually distribute to the settlor"). Also confirms the SI 1987/1130 relief limitation: "applies only to charges on the settlor as an individual and do not affect tax on TYA or proportionate charges". Cited verbatim in the body and FAQs.
+- HMRC IHTM14336 — fetched but actual page returned was a partnership-and-loans example, not settlor-interest content. Possibly redirected to a different IHTM page. Not used.
+- legislation.gov.uk SI 1987/1130 — structure confirmed: Reg 4 (PET + property return); Reg 5 (GROB + death); Reg 6 (liabilities subject to abatement); Reg 7 (CLT + property return). Used Reg 5 + Reg 7 for the page.
+- legislation.gov.uk FA 1986 s.102 — verbatim text of s.102(1)(b), (2), (3), and (4). Critical s.102(4) "deemed PET on release of reservation" wording used verbatim.
 
 ### Existing-page review (from "Closest existing pages")
+- Wave 2 A2 `iht-gifts-with-reservation-of-benefit-property` — read in full. Base GROB walkthrough (s.102 + rent escape + Sch 20 para 6). B7 references but does not duplicate (cross-link only).
+- Wave 4 C3 `iht-gift-with-reservation-letting-children-paying-rent-mechanics` — referenced as the let-property GROB variant. B7's FAQ on "does double-trap apply to let property" cross-references C3 for the depth.
+- Wave 4 C10 `iht-clt-property-discretionary-trust-20-percent-entry-charge` — referenced as the clean (non-settlor-interested) counterpart.
+- Wave 6 B4 (just-written) — referenced as the three-statute attribution stack deep treatment.
 
 ### Citations added (external authority)
+- legislation.gov.uk FA 1986 s.102 (verbatim s.102(1)(b), s.102(4) wording)
+- legislation.gov.uk SI 1987/1130 (structure of Regs 5 + 7)
+- gov.uk HMRC IHTM42254 (verbatim "class membership is reservation" sentence)
+- legislation.gov.uk IHTA 1984 s.64 (10-year periodic charge)
+- legislation.gov.uk IHTA 1984 s.65 (exit charge)
+- legislation.gov.uk TCGA 1992 s.169B (CGT holdover block)
+- legislation.gov.uk TCGA 1992 s.222 + s.225 (PPR + trust-PPR election)
+- Ingram v IRC [1999] UKHL 47 (share-gift not "property gift" for s.102)
 
 ### Internal links added (to our existing pages)
+- `/blog/incorporation-and-company-structures/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules` (Wave 6 B4 sibling, just shipped on same branch) x2
+- `/blog/landlord-tax-essentials/iht-gifts-with-reservation-of-benefit-property` (Wave 2 A2 base GROB) x2
+- `/blog/landlord-tax-essentials/iht-gift-with-reservation-letting-children-paying-rent-mechanics` (Wave 4 C3 let-property GROB) x1
+- `/blog/landlord-tax-essentials/iht-clt-property-discretionary-trust-20-percent-entry-charge` (Wave 4 C10 clean CLT) x1
+- `/blog/incorporation-and-company-structures/fic-vs-discretionary-trust-property-comparison` (Wave 1 C7 FIC comparator) x1
+- `/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards` (existing IHT framework pillar) x1
+- Forward-text-references (no hyperlinks) to B5, B1, B6 siblings still to write.
 
 ### Inline CTA placements
+- 2 inline `<aside>` CTAs at conversion moments per brief CTA guidance:
+  1. After "IHTM42254 sentence that drives the whole page" H2 (peak educational moment; reader confronts the published HMRC position that closes off the standard advisor argument)
+  2. After "Mitchell £500k family-home worked example" H2 (high-emotional-load moment; reader sees £258k tax exposure on a structure they may currently have)
 
 ### Build attempts
+- Attempt 1: `npm run build` — `✓ Compiled successfully in 3.9s`, `✓ Generating static pages (473/473)` — B7 included
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes in markdown:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+- em-dash count: 0
+- Tailwind utility classes in markdown: 0
+- metaTitle length: 53 (limit 62)
+- metaDescription length: 151 (after trim from 161 first draft; limit 158)
+- FAQ count: 13 (target 12-14)
+- Internal links resolve: 6 of 6 (B4 + 5 pre-existing pages; B4 now committed on same branch, so resolves at build)
+- Body word count: 3,910 (brief target 3,000-3,800; ~3% over ceiling, acceptable for complex interaction page)
 
 ### Flags raised to wave6_site_wide_flags.md
+- (None this round; B7 confirms F-4 cross-statute cite hygiene by using s.169E correctly)
+
+### Discoveries logged to wave6_discovery_log_session_B.md
+- D-6 AUTHORITY_GAP: HMRC IHTM42254 not cited anywhere on Property site (B7 first cite)
+- D-7 AUTHORITY_GAP: SI 1987/1130 Double Charges Relief Regs not cited anywhere on Property site (B7 first cite)
+- D-8 EXISTING_PAGE_LINK_OPPORTUNITY: Wave 2 A2 + Wave 4 C3 + Wave 4 C10 should each link to B7 at wave merge
+
+### Schema candidate flagged from brief
+- Brief proposed HowTo schema for the 3-part unwinding playbook. Not implemented in this commit (FAQ schema only); manager can layer HowTo at wave merge if SERP-test shows value.
 
 ### 2-3 sentence summary
+B7 is the interaction page where a settlor-interested trust (B4 territory) and a FA 1986 s.102 gift-with-reservation (Wave 2 A2 + Wave 6 B5 territory) both bite the same property simultaneously, anchored on HMRC IHTM42254's published practice that mere membership in a discretionary beneficiary class is reservation of benefit regardless of whether the trustees ever distribute to the settlor. The page walks SI 1987/1130 Reg 5 + Reg 7 with the critical limitation (relief applies only to settlor-personal charges, not to the trust's 10-year or exit charges), the Mitchell £500,000 family-home worked example showing combined £258,780 of tax exposure across the structure's life (vs £40,000 to £100,000 counterfactual for no planning), and a three-part unwinding playbook with the load-bearing drafting point that releasing settlor-interest alone does NOT end GROB. Page committed at 44d62d5 on property-wave6-b; MP ID 222. The A10 cross-bucket gate is now UNBLOCKED (B4 + B7 both shipped on B-branch).

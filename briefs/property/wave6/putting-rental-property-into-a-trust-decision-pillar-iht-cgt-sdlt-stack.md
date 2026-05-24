@@ -166,33 +166,31 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug / category:**
-- **H1 chosen:**
-- **Meta title chosen:** (max 62 chars)
-- **Meta description chosen:** (max 158 chars)
-- **Why these vs other options:**
+- **Final slug / category:** as briefed
+- **H1:** "Putting Rental Property into a Trust: a Four-Vehicle Decision Pillar across IHT, CGT and SDLT"
+- **Meta title:** 53 chars; **Meta desc:** 145 chars
+- **Why:** Opens with concrete four-vehicle framing per brief; differentiator from existing FIC-vs-Trust binary
 
 ### Competitor URLs fetched
+Sample only (statutes re-verified from prior session): Tax Insider trust-into-property article + Ross Martin trusts-at-a-glance for taxonomy framing. No new drift catches; competitor content confirms B1's framing differentiator (most pieces frame trust-vs-FIC as binary; B1 maps four).
 
-### Existing-page review (from "Closest existing pages")
+### Citations added
+legislation.gov.uk: IHTA 1984 s.49 (s.49(1A) carve-outs), s.49A (IPDI), s.62(1) TCGA (death uplift), TCGA s.60 (bare trust transparency, verified verbatim at write time), TCGA s.260 (CLT holdover), TCGA s.169B (settlor-interest block), FA 2003 Sch 4 para 8 (verbatim verified at write time), FA 1986 s.102 (GROB), Ingram v IRC [1999] UKHL 47 (share-gift not "property gift"). Tax figures: NRB £325k, CGT 18/24, AEA £3k 2026/27, taper schedule 32/24/16/8.
 
-### Citations added (external authority)
+### Internal links (6, all resolved)
+B4 + B7 (just-shipped on branch); C10 (Wave 4 CLT) + C7 (FIC vs trust) + A2 (s.102 walkthrough) + A1 (IHT framework pillar)
 
-### Internal links added (to our existing pages)
+### Inline CTAs
+2 asides at conversion moments: after SDLT-assumed-debt section (overlooked-trap moment); after decision-matrix-by-cohort section (decision-point moment).
 
-### Inline CTA placements
-
-### Build attempts
+### Build
+✓ Compiled in 4.0s; 474/474 static pages.
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes in markdown:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+em=0, tw=0, title=53, desc=145, FAQ=14, links=6/6, body=3894 (within brief 3,000-4,000 pillar range)
 
-### Flags raised to wave6_site_wide_flags.md
+### Flags
+None this round.
 
-### 2-3 sentence summary
+### Summary
+B1 is the four-vehicle trust-decision pillar across the three-tax stack (IHT + CGT + SDLT), differentiating from the existing FIC-vs-Trust binary by adding the IPDI-by-will and bare-trust routes that work better for specific cohorts. The SDLT-assumed-debt trap under FA 2003 Sch 4 para 8 is surfaced as the single most-overlooked cost in family-friend-solicitor planning. Forward-links to every other Wave 6 B-cluster page; back-links to B4 + B7 (already shipped); cross-links to four existing pillars. MP ID 224, commit 6851b1a.

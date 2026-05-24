@@ -165,33 +165,85 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug / category:**
-- **H1 chosen:**
-- **Meta title chosen:** (max 62 chars)
-- **Meta description chosen:** (max 158 chars)
-- **Why these vs other options:**
+- **Final slug / category:** `gifting-property-to-minor-children-bare-trust-mechanics-tax-traps` / `incorporation-and-company-structures` (as briefed)
+- **H1 chosen:** "Gifting Property to a Minor Child: the s.629 Trap, the Bare-Trust Requirement, and the Grandparent Route"
+- **Meta title chosen:** "Gifting Property to a Minor Child: s.629 Trap" (45 chars)
+- **Meta description chosen:** "Minors cannot hold UK land. ITTOIA 2005 s.629 attributes rent back to the parent. Grandparent route escapes attribution. Capital growth is not attributed." (154 chars)
+- **Why these vs other options:** H1 leads with the radical-statutory-frame-difference framing per brief anti-templating instruction (do NOT open with "Can I gift property to my minor child"). Three operative levers named in H1 (s.629 trap, bare-trust requirement, grandparent route) reflect the three structural blocks the page walks. Meta description surfaces the bare-trust requirement + s.629 attribution + grandparent escape + capital-growth-not-attributed in the snippet for SERP coverage.
 
 ### Competitor URLs fetched
+- HMRC TSEM4300 — substance-over-form test surfaced via Mr J example; confirms HMRC's test for who is the genuine settlor (wealth-creator analysis). Three examples (Example 14 bare trust + Example 15 IIP + Example 16 discretionary). £100 threshold mentioned in Example 14 but not systematically explained.
+- HMRC TSEM4205 — minor children attribution (parental settlements); confirmed standard position. Not extensively fetched but cited inline.
+- techzone.aberdeenadviser.com — Abrdn's adviser-level guide. Confirms grandparent-route exception ("The rules do not apply where grandparents make a gift for a minor grandchild"); confirms 18th-birthday cliff; confirms PET vs CLT distinction. Four worked examples (mostly investment-bond / unit-trust focused, less property-specific). Useful as adviser-perspective confirmation of the s.629 framing.
+- legislation.gov.uk ITTOIA 2005 s.629 — verbatim s.629(1) verified at write time; £100 de-minimis at s.629(3); definition of "relevant child" at s.629(7).
+- legislation.gov.uk SLA 1925 s.1 — verified s.1(7) minor-cannot-hold-legal-estate.
 
 ### Existing-page review (from "Closest existing pages")
+- B8 sibling — read closely. The adult-child counterpart. B9's opening framing explicitly contrasts with the adult-child analysis. Hyperlinked from "FIC variant for substantial portfolios" section.
+- B2 sibling — read in passing. The statutory walkthrough. B9 cites the s.629 verbatim wording but does not re-walk B2's mechanics; brief explicitly requires cross-reference rather than duplication.
+- B6 sibling — read closely. The bare-trust vs nominee vs formal trust structural decision. B9 hyperlinks from "the structural-decision page" reference in Block 1.
+- B4 sibling — referenced for the s.260 holdover-for-discretionary-trust position (where bare trust is not the right structure and the family wants asset protection). Hyperlinked from the 18th-birthday-cliff aside.
+- Wave 4 C4 (`iht-7-year-clock`) — read header. Referenced text-only; reverse hyperlink to be added at wave merge (per F-14).
+- Legacy (`cgt-gifting-property-family-members-uk`) — referenced text-only; same EXISTING_PAGE_STALE concern as B8.
 
 ### Citations added (external authority)
+- legislation.gov.uk Settled Land Act 1925 s.1(7) (minor cannot hold legal estate)
+- legislation.gov.uk ITTOIA 2005 s.629 (verbatim s.629(1) for attribution)
+- legislation.gov.uk ITTOIA 2005 s.629(3) (£100 de-minimis)
+- legislation.gov.uk ITTOIA 2005 s.629(7) (definition of "relevant child")
+- gov.uk HMRC TSEM4205 (minor children attribution practice)
+- gov.uk HMRC TSEM4300 (settlement for unmarried minor child; Mr J substance-over-form example)
+- legislation.gov.uk IHTA 1984 s.43(2) (bare trust not "settled property" for IHT)
+- legislation.gov.uk IHTA 1984 s.7(4) (taper relief bands)
+- TCGA 1992 s.60 (bare-trust transparency for CGT)
+- ITA 2007 s.466 (bare-trust excluded from "settled property" for income tax)
+- IHTA 1984 s.3A (PET definition)
+- TOLATA 1996 cross-reference (preserves SLA 1925 minor-cannot-hold-land exclusion)
+- Saunders v Vautier (1841) LR 4 Beav 115 (beneficiary's right to demand legal title at majority)
 
 ### Internal links added (to our existing pages)
+- `/blog/incorporation-and-company-structures/bare-trust-vs-nominee-company-vs-formal-trust-decision-property-investors` (B6 sibling) x1
+- `/blog/incorporation-and-company-structures/gifting-property-to-adult-children-decision-tree-cgt-iht-occupancy-mechanics` (B8 sibling) x1
+- `/blog/incorporation-and-company-structures/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules` (B4 sibling) x1
 
 ### Inline CTA placements
+- 2 inline `<aside>` CTAs (brief says 2-3; placed at highest-intent moments):
+  1. After Block 2 s.629 attribution mechanic (peak decision-point: reader has learned the parent-route cost; ready to consider grandparent variant)
+  2. After 18th-birthday cliff section (governance moment: reader recognises bare trust cannot defer access)
 
 ### Build attempts
+- Attempt 1: `npm run build` — FAILED with `YAMLException: can not read an implicit mapping pair; a colon is missed at line 40, column 906`. Root cause: the FAQ answer for "Can the parent reclaim the s.629-attributed tax from the child later?" included the phrase `The "parent-as-tax-paying-vehicle" arrangement` with embedded double quotes inside the YAML double-quoted string. YAML parser treated the inner double-quote as a string close.
+- Fix: replaced inner double quotes with single quotes (`The 'parent-as-tax-paying-vehicle' arrangement`).
+- Attempt 2: `npm run build` — `✓ Compiled successfully in 4.0s`, 480 static blog paths generated including B9.
+- Edit pass added 3 internal hyperlinks (B6, B8, B4); rebuild `✓ Compiled successfully in 4.2s`, 480 still.
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes in markdown:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+- em-dash count: 0
+- Tailwind utility classes in markdown: 0
+- metaTitle length: 45 (limit 62)
+- metaDescription length: 154 (limit 158)
+- FAQ count: 14 (target 12-14)
+- Internal links resolve: 3 of 3 (B4 + B6 + B8 sibling commits all on this branch HEAD)
+- Body word count: 3,844 (brief said 2,800-3,500; minor depth justification below)
+
+### Word-count depth justification (above 3,500 per brief §16.16)
+B9 covers three statutory blocks (SLA 1925 / TOLATA 1996 + s.629 + bare-trust transparency asymmetry) plus two detailed worked scenarios (Patel parent-route + Williams grandparent-route) plus the capital-growth loophole plus the 18th-birthday cliff plus IHT mechanics plus TRS registration plus six mistakes. Reducing to 3,500 would compress one of the worked scenarios or drop the capital-growth-loophole section, both of which would defeat the framing differentiator. The 3,844 figure is materially within the spirit of the budget (only 9% over the ceiling).
+
+### Drift catches honoured during write (per brief CRITICAL)
+- s.624 and s.629 are SEPARATE statutory mechanisms; B9 walks them as separate hooks without conflating
+- Bare trust does NOT escape s.629 (called out explicitly as "the single biggest misconception in family-planning content"); §22.15 do-not-write list honoured
+- Grandparent route attributes to grandparent, NOT parent; worked example confirms
+- Capital growth NOT attributed under s.629 (the operative loophole)
+- 18th-birthday cliff is prospective only (no retrospective re-attribution)
+- IHTA 1984 s.48(3)-(3F) NOT cited (omitted by FA 2025 s.45)
 
 ### Flags raised to wave6_site_wide_flags.md
+- (None unique to B9; existing F-15 EXISTING_PAGE_STALE for legacy `cgt-gifting-property-family-members-uk` covers the legacy-page cleanup that also applies to minor-child gifts)
+
+### Discoveries logged to wave6_discovery_log_session_B.md
+- D-17 ADJACENT_TOPIC: HICBC interaction with s.629 attribution (parent's adjusted net income includes attributed rental income; pushes parent into £60k-£80k taper band)
+- D-18 EXISTING_PAGE_LINK_OPPORTUNITY: existing `section-24-child-benefit-high-income-charge-landlords` should cross-link to B9 for the s.629-attribution-into-HICBC mechanic
+- D-19 ADJACENT_TOPIC: Age of Legal Capacity (Scotland) Act 1991 differences from rest of UK on age-16-versus-age-18 (Scottish bare-trust dynamics)
 
 ### 2-3 sentence summary
+B9 is the minor-child applied page; three statutory blocks structure the analysis (SLA 1925 / TOLATA 1996 bar minor from legal title; ITTOIA 2005 s.629 attributes rent to parent-settlor; bare-trust transparency under TCGA s.60 / ITA s.466 affects CGT and IHT only, not income tax). The grandparent-route variant is the cleanest structure (income attribution to grandparent rather than parent); the capital-growth loophole (s.629 attributes income only, not gains) is the operative planning lever for parents who proceed on the parent route. Page committed at e0f7f1c on property-wave6-b; MP ID 243. 3,844 body words (§16.16 justifiable); 14 FAQs; 3 internal links resolve to B4 + B6 + B8 sibling commits.

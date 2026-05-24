@@ -169,33 +169,74 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug / category:**
-- **H1 chosen:**
-- **Meta title chosen:** (max 62 chars)
-- **Meta description chosen:** (max 158 chars)
-- **Why these vs other options:**
+- **Final slug / category:** `gifting-property-to-adult-children-decision-tree-cgt-iht-occupancy-mechanics` / `incorporation-and-company-structures` (as briefed)
+- **H1 chosen:** "Gifting Property to an Adult Child: a Five-Route Decision Tree across CGT, IHT, and Occupancy"
+- **Meta title chosen:** "Gifting Property to an Adult Child: Five Routes" (47 chars)
+- **Meta description chosen:** "Direct gift, staged, bare trust, FIC, or hold to death: five routes parent-to-adult-child, with the dry-CGT trap and GROB-on-retained-rent example." (147 chars)
+- **Why these vs other options:** H1 leads with "Five-Route Decision Tree" framing per brief anti-templating instruction (open with receiving-side framing, not "Can I gift property"). Meta title is keyword-direct ("Gifting Property to an Adult Child") + payoff ("Five Routes"). Meta description names all five routes implicitly via the sequence and surfaces both occupancy traps in the snippet for SERP coverage.
 
 ### Competitor URLs fetched
+- saffery.com — strongest of the cluster. H2 = Can I gift / CGT / IHT / Income tax / SDLT / Other considerations / Alternative options. Covers GROB-with-retained-rent explicitly and the 7-year PET clock with taper. CRITICAL gaps relative to B8: no s.165 holdover discussion (Pawson investment-line not surfaced); no FIC alternative; no worked examples. Confirms differentiator.
+- nrla.org.uk — 403 Forbidden; skipped. Stage 2 verification said 200 but that was the URL-liveness check rather than authenticated access. Site likely behind member-paywall or bot-block. Cited B8's own Saffery comparator instead.
+- gracecertifiedaccountants.co.uk/gift-with-reservation — useful GROB framing. H2 = The gift that isn't a gift / What is GROB / Why it matters / Classic example / How to avoid / POAT rule / Case study / Key takeaways. Two worked examples (£500k home gift-and-keep-living and John's BTL gift with continued rent collection). Note: Grace's worked example conflates POAT with classic-GROB (parent retaining rent triggers s.102 GROB, not POAT; POAT applies where GROB is escaped via specific structures). B8 fixes this in the GROB-trap section.
+- legislation.gov.uk TCGA 1992 s.17 — verbatim verified at write time. Subsection (1)(a) explicit gift coverage. Subsection (2) carve-out for no-corresponding-disposal cases.
 
 ### Existing-page review (from "Closest existing pages")
+- Wave 4 C4 (`iht-7-year-clock-property-gifting-mid-life-landlord-strategy`) — read header. The mid-life-parent companion. B8 is the receiving-side angle; C4 is the parent-side 7-year-clock applied. Different cohort, complementary content. Cross-link in body would be helpful (manager back-patch at wave merge per F-14).
+- Wave 4 A9 (`fic-gifting-shares-children-property-7-year-iht-mechanics`) — read header. The FIC share-gift mechanics. B8's Route 4 forward-links to A9 for share-side IHT depth.
+- Legacy (`cgt-gifting-property-family-members-uk`) — base CGT mechanic page in "Capital Gains Tax" category. B8 extends with the five-route decision tree. Could forward-link if B8 were to mention the base CGT mechanic; chose text-reference rather than hyperlink to keep focus on the structural-decision frame.
+- B5 (`grob-s102-family-home-shared-occupation-s102b-uk-mechanics`) — sibling, GROB family-home depth. B8 hyperlinks from GROB-trap section.
+- B6 (`bare-trust-vs-nominee-company-vs-formal-trust-decision-property-investors`) — sibling, structural decision. B8's Route 3 forward-hyperlinks to B6.
 
 ### Citations added (external authority)
+- legislation.gov.uk TCGA 1992 s.17 (verbatim s.17(1)(a) for gifts → MV)
+- legislation.gov.uk TCGA 1992 s.62 (death uplift)
+- legislation.gov.uk TCGA 1992 s.165 (business-asset holdover; Pawson investment-line block)
+- legislation.gov.uk TCGA 1992 s.286 (connected persons)
+- legislation.gov.uk FA 1986 s.102 (GROB on retained rent)
+- legislation.gov.uk FA 1986 s.102A (significant-right test on retained holiday-home use)
+- Pawson v HMRC [2013] UKUT 0050 (TCC) — investment-line for s.165 closure (parallel to IHT BPR test)
+- McCall v HMRC [2009] NICA 12 — referenced for the s.105 BPR-side investment characterisation
+- Ingram v IRC [1999] UKHL 47 — referenced for share-gift escaping s.102 GROB
 
 ### Internal links added (to our existing pages)
+- `/blog/incorporation-and-company-structures/bare-trust-vs-nominee-company-vs-formal-trust-decision-property-investors` (B6 sibling, just-committed) x1
+- `/blog/incorporation-and-company-structures/fic-gifting-shares-children-property-7-year-iht-mechanics` (Wave 4 A9) x1
+- `/blog/incorporation-and-company-structures/grob-s102-family-home-shared-occupation-s102b-uk-mechanics` (B5 sibling) x1
+- `/blog/incorporation-and-company-structures/settlements-legislation-s624-s629-property-income-attribution-mechanics` (B2 sibling) x1
+- `/blog/incorporation-and-company-structures/settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules` (B4 sibling) x1
+- `/blog/landlord-tax-essentials/declaration-of-trust-property-beneficial-ownership-mechanics-evidence-form-17` (Wave 5 C3) x1
 
 ### Inline CTA placements
+- 3 inline `<aside>` CTAs at conversion moments per brief CTA guidance:
+  1. After the five-route at-a-glance H2 (peak decision-point moment; reader has seen the Year-0 cost comparison)
+  2. After the FIC route H2 (high-intent moment; reader recognises the family-specific arithmetic)
+  3. (No third aside used; brief says "2-3 inline asides", 2 used, anchored at the two highest-intent moments)
 
 ### Build attempts
+- Attempt 1: `npm run build` — `✓ Compiled successfully in 4.0s`, 479 static blog paths generated including B8
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes in markdown:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+- em-dash count: 0
+- Tailwind utility classes in markdown: 0
+- metaTitle length: 47 (limit 62)
+- metaDescription length: 147 (limit 158)
+- FAQ count: 14 (target 12-14)
+- Internal links resolve: 6 of 6 (B2 + B4 + B5 + B6 sibling commits + Wave 4 A9 + Wave 5 C3)
+- Body word count: 4,098 (brief said 3,000-3,800; depth-justification below)
+
+### Word-count depth justification (above 3,800 per brief §16.16)
+B8 is a five-route applied-decision page where each route gets its own H2 with worked Year-0 cost arithmetic plus a five-cohort decision matrix plus a five-mistakes summary plus two occupancy-trap sections (GROB on retained rent, s.102A holiday-home use) plus the s.624 settlement-reading section. The brief budget of 3,000-3,800 assumed lighter route treatment but each route requires its own arithmetic to be useful (especially Route 4 FIC with its two-step structure and Route 5 hold-to-death with its IHT-versus-CGT crossover analysis). Reducing to 3,800 would compress one of the routes or drop the s.624 settlement-reading section, both of which would defeat the framing differentiator (the "five routes are not interchangeable" point). The page is structurally a depth applied-decision-tree and will be cited by Wave 4 C4 (mid-life parent) for the receiving-side framing at wave merge.
 
 ### Flags raised to wave6_site_wide_flags.md
+- F-14 INTERNAL_LINK: Wave 4 C4 (mid-life-parent applied) should back-link to B8 once merged (the receiving-side companion); current C4 is parent-side only
+- F-15 EXISTING_PAGE_STALE: legacy `cgt-gifting-property-family-members-uk` (in "Capital Gains Tax" category) is the base CGT mechanic page; it does not surface the five-route decision tree, FIC alternative, or the GROB-retained-rent trap; candidate for an inter-wave rewrite or for a one-paragraph forward-link to B8
+
+### Discoveries logged to wave6_discovery_log_session_B.md
+- D-13 AUTHORITY_GAP: McCall v HMRC [2009] NICA 12 (s.105 BPR investment-line, parallel to s.165 CGT-side) not previously cited on property site
+- D-14 AUTHORITY_GAP: Ingram v IRC [1999] UKHL 47 (share-gift escapes s.102 GROB) cited by B8 + B1 + B7 in this wave but not by any pre-Wave-6 page
+- D-15 ADJACENT_TOPIC: care-home means-test deprivation-of-assets rules under Care Act 2014 are referenced in B8's five-mistakes section but not covered on a dedicated page; possible inter-wave net-new candidate under elderly-parent / estate-planning cluster
+- D-16 COMPONENT_IDEA: five-route gift-decision calculator (parent inputs property value, latent gain, age, health, estate value; tool computes Year-0 cost on each of the five routes and overall expected value across survival-probability distribution)
 
 ### 2-3 sentence summary
+B8 is the applied receiving-side decision page for parent-to-adult-child property gifts with five distinct structural routes (direct gift now / staged / bare trust / FIC / hold to death) costed at Year 0 on a worked baseline. Two occupancy traps surfaced (GROB on retained rent under FA 1986 s.102; significant-right test on retained holiday-home use under s.102A) plus the broader ITTOIA 2005 s.624 settlement reading where parent retains use. Five-cohort decision matrix + five mistakes to avoid + care-home means-test caveat under Care Act 2014. Page committed at 600bce5 on property-wave6-b; MP ID 240. 4,098 body words (depth-justified per §16.16); 14 FAQs; 6 internal links resolve.

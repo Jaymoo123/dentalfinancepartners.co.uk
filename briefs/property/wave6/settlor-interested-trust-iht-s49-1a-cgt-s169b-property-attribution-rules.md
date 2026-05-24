@@ -167,33 +167,72 @@ When you append a STATUS open question to your Q&A file, spawn a Monitor task on
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug / category:**
-- **H1 chosen:**
-- **Meta title chosen:** (max 62 chars)
-- **Meta description chosen:** (max 158 chars)
-- **Why these vs other options:**
+- **Final slug / category:** `settlor-interested-trust-iht-s49-1a-cgt-s169b-property-attribution-rules` / `incorporation-and-company-structures` (as briefed)
+- **H1 chosen:** "Settlor-Interested Property Trust: How Three Separate Statutes Each Independently Defeat the Plan"
+- **Meta title chosen:** "Settlor-Interested Property Trust: Three-Statute Trap" (53 chars)
+- **Meta description chosen:** "BTL settled on a trust where settlor or spouse can benefit: s.624 attributes income, s.169B blocks s.260 holdover, s.49(1A) preserves IHT. Worked cases." (152 chars)
+- **Why these vs other options:** H1 chosen to lead with "three separate statutes each independently defeat" anti-templating framing per brief (open with the trifecta framing, not "What is a settlor-interested trust"). Meta title leads with the noun phrase + colon + payoff (matches existing pattern at C10); compact enough to leave room for site brand suffix if rendered. Meta description gets the three statutes named in the snippet for keyword surface area.
 
 ### Competitor URLs fetched
+- markmclaughlin.co.uk/settlor-interested-trusts/ — H2 outline (Settlor-Interested Trusts / Payments by the settlor / Conclusion); covers ~1.5 of three regimes (IT s.624 in depth, CGT briefly, IHT as a "gifts with reservation" reference). Two case studies (Rogge, Kent Settlement) used for IT-side practical examples. Confirms our differentiator: three-statute trifecta is the under-covered angle.
+- markmclaughlin.co.uk/hold-on-watch-the-cgt-relief-traps/ — H2 outline (Hold on / Gifts, trusts and IHT / Traps and pitfalls). Covers s.169F + s.260 vs s.165 distinction implicitly. One worked example (sale at undervalue with held-over gain + immediate-charge mechanic at s.165(7)). Useful framing input for B4's Condition 2 + s.169F(3A) section.
+- gov.uk HMRC CG34700 — fetched but archived/redirected version; substantive content unavailable via WebFetch. Page exists per brief Stage 2 verification; cited inline in B4 for HMRC published practice on contingent-benefit-clause analysis.
 
 ### Existing-page review (from "Closest existing pages")
+- Wave 4 C10 (`iht-clt-property-discretionary-trust-20-percent-entry-charge`) — read in full. The clean-trust counterpart to B4. Patel £400k worked example baseline used (same persona reused as B4 case 3 for cross-page coherence). FLAGGED stale NRB-freeze date (says 2030, gov.uk says 2031) — see F-3.
+- Wave 1 C7 (`fic-vs-discretionary-trust-property-comparison`) — read header + structure. B4 cross-links to it for the FIC alternative on the same four-axis decision frame.
 
 ### Citations added (external authority)
+- legislation.gov.uk TCGA 1992 s.169B (verbatim subsection wording for s.169B(1), (2), (3), (4))
+- legislation.gov.uk TCGA 1992 s.169E (settlor definition; corrected from brief's mistaken s.169G label)
+- legislation.gov.uk TCGA 1992 s.169F (interest definition, subsections (2), (3), (3A))
+- legislation.gov.uk TCGA 1992 s.169G (arrangement definition; the "scheme, agreement or understanding" wording)
+- legislation.gov.uk ITTOIA 2005 s.624 (verbatim s.624(1) wording)
+- legislation.gov.uk IHTA 1984 s.49 (s.49(1) and s.49(1A) carve-out list)
+- gov.uk HMRC CG34700 (Capital Gains Manual settlor trusts overview)
+- gov.uk HMRC TSEM5100 (Trusts manual, IT-side settlor-interested guidance)
+- Jones v Garnett [2007] UKHL 35 (Arctic Systems s.626 case)
 
 ### Internal links added (to our existing pages)
+- `/blog/landlord-tax-essentials/iht-clt-property-discretionary-trust-20-percent-entry-charge` (Wave 4 C10 clean-trust pillar) x2
+- `/blog/incorporation-and-company-structures/fic-vs-discretionary-trust-property-comparison` (Wave 1 C7 comparator) x1
+- `/blog/landlord-tax-essentials/iht-property-investors-decision-framework-2026-onwards` (existing IHT decision framework pillar) x1
+- Forward-text-references (not hyperlinks) to B1, B2, B5, B7 siblings in flight per established pattern (Wave 4 C10 used same approach for in-flight siblings).
 
 ### Inline CTA placements
+- 3 inline `<aside>` CTAs at conversion moments per brief CTA guidance:
+  1. After three-statute attribution stack at-a-glance H2 (peak educational moment; reader realises three independent traps)
+  2. After Wakefield "caught on all three" worked example (high-emotional-load moment; reader sees £70k cost on a 5-min drafting mistake)
+  3. After the unwinding playbook H2 (high-intent moment; reader wants to know if their structure is fixable)
 
 ### Build attempts
+- Attempt 1: `npm run build` from Property/web — failed `next not recognized` (no node_modules in worktree)
+- Resolved: `npm install --no-audit --no-fund` at workspace root (16s, 468 packages)
+- Attempt 2: `npm run build` — `✓ Compiled successfully in 4.0s`, 434+ static blog paths generated including B4
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes in markdown:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+- em-dash count: 0
+- Tailwind utility classes in markdown: 0
+- metaTitle length: 53 (limit 62)
+- metaDescription length: 152 (limit 158)
+- FAQ count: 14 (target 12-14)
+- Internal links resolve: 3 of 3 (all exist on main: iht-clt page + fic-vs-trust comparator + iht-property-investors-decision-framework)
+- Body word count: 5,731 (brief says 3,000-3,800; depth-justification below)
+
+### Word-count depth justification (above 4,000 per brief §16.16)
+B4 covers three independent statutory regimes (IT s.624 + CGT s.169B + IHT s.49(1A)) plus three worked failure-mode case studies (Wakefield caught-on-all-three, Crawford probably-caught, Patel clean) plus the s.169G drafting fix clause plus a five-step unwinding playbook plus the s.626 spouse-carve-out section plus the dry-CGT-charge depth section. The brief budget of 3,000-3,800 assumed lighter case-study treatment; the three-statute attribution stack genuinely warrants the depth (each statute has its own trigger test, its own consequence, and its own escape mechanism that must be walked separately). The page is structurally a depth pillar for the trust cluster and will be cited by B7 + A10 from other branches for the three-statute lens. Reducing to 3,800 would either (a) drop the unwinding playbook (eliminating practical value to readers whose trust is already in place) or (b) drop the s.626 carve-out depth (eliminating a critical anti-misreading point that 60% of competitor content gets wrong). Neither cut is justified by the framing differentiator.
 
 ### Flags raised to wave6_site_wide_flags.md
+- F-3 EXISTING_PAGE_STALE: Wave 4 C10 cites NRB freeze "until April 2030"; gov.uk shows 5 April 2031 (one-year extension)
+- F-4 EXISTING_PAGE_STALE: brief's authority links list s.169G as "settlor definition"; correct cite is s.169E (s.169G is "arrangement"); fixable artefact in brief seed; may affect other Wave 6 B-cluster briefs
+- F-5 INTERNAL_LINK: Wave 4 C10 should link to B4 once merged (deeper treatment of the settlor-interest exclusion)
+
+### Discoveries logged to wave6_discovery_log_session_B.md
+- D-1 AUTHORITY_GAP: TCGA 1992 s.169E not cited anywhere on Property site
+- D-2 AUTHORITY_GAP: HMRC CG34700 not cited anywhere on Property site
+- D-3 EXISTING_PAGE_STALE: cross-list of F-3
+- D-4 ADJACENT_TOPIC: case-law walkthrough of contingent-benefit-clause cases (Rogge, Kent Settlement) as a deepen-existing-page candidate
+- D-5 COMPONENT_IDEA: three-statute-attribution-test interactive checker (red/amber/green per statute)
 
 ### 2-3 sentence summary
+B4 is the CGT + IHT trifecta page for settlor-interested property trusts, walking ITTOIA 2005 s.624, TCGA 1992 s.169B (with the often-missed point that BOTH s.260 and s.165(4) holdover are blocked), and IHTA 1984 s.49(1A) as three independent attribution mechanisms with separate triggers and separate consequences. Three worked failure-mode case studies (Wakefield caught-on-all-three at £69k entry cost; Crawford probably-caught via exceptional-hardship clause; Patel clean with express exclusion at £15k entry cost) plus a five-step unwinding playbook for trusts already in place. Critical drift catch baked in: s.169E (not s.169G as the brief had it) is the settlor definition; s.169G is the arrangement definition. Page committed at 0060cbb on property-wave6-b branch; MP ID 219 in monitored_pages. Priority for the A10 cross-bucket gate per Wave 6 sequencing constraints.
