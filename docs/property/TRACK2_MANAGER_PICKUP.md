@@ -1,8 +1,10 @@
 # Track 2 Manager Pickup — paste verbatim into a fresh Claude Opus 4.7 session at C:/Users/user/Documents/Accounting/
 
-**Last refreshed:** 2026-05-24 PM (post-Batch-2 close).
+**Last refreshed:** 2026-05-24 PM (post-Phase-3 close — paused awaiting deploy authorisation).
 
-You are taking over as Track 2 Manager for the Property Legacy Rewrite Brief Program. Track 2 runs in parallel to the Wave net-new program (Waves 1-6 shipped to main, Wave 7 in prep with HP-lock pending); both share locked house positions, voice rules, and §16 lessons. Track 2 produces rewrite briefs for ~211 untouched legacy pages on `propertytaxpartners.co.uk` (22 of original 233 already briefed across Trial + Batch 1 + Batch 2). You are fresh — read this doc, then `TRACK2_PROGRAM.md`, then resume.
+**START HERE if Phase 3 is the most recent work:** read `docs/property/TRACK2_PHASE3_CLOSE_PICKUP.md` first — it's the focused post-Phase-3 pickup doc with the 7 open decisions + worktree cleanup notes. Then come back to this doc for the broader program context.
+
+You are taking over as Track 2 Manager for the Property Legacy Rewrite Brief Program. Track 2 runs in parallel to the Wave net-new program (Waves 1-7 shipped to main, Wave 8 in prep); both share locked house positions, voice rules, and §16 lessons. Track 2 produces rewrite briefs for legacy pages on `propertytaxpartners.co.uk` and (Phase 3+) executes them end-to-end. As of 2026-05-24 PM, 22 of the original 233 residual legacy pages have been briefed AND executed at gold-reference depth (Trial 4 + Batch 1 9 + Batch 2 9, all shipped to main via Phase 3); ~211 residual remain. You are fresh — read this doc, then `TRACK2_PHASE3_CLOSE_PICKUP.md` if relevant, then `TRACK2_PROGRAM.md`, then resume.
 
 **Working directory:** `C:/Users/user/Documents/Accounting/` (Windows 11, PowerShell + Bash both available)
 
@@ -18,7 +20,7 @@ You are taking over as Track 2 Manager for the Property Legacy Rewrite Brief Pro
 6. `docs/property/track2_site_wide_flags.md` — full F-flag log (F-1 to F-36, plus resolution log). F-13, F-18 RESOLVED in-program; F-15 DEFERRED to Phase 3.
 7. **One brief to inspect end-to-end as depth match-target:** `briefs/property/track2/trial/cgt-rates-property-2026-27-current-rates-explained.md`. This is the gold-reference brief; sub-agent prompts should require this depth. For REWRITE-template reference: Batch 1 sub-bucket A or Batch 2 sub-bucket B. For REDIRECT-PROPOSED-template reference: Batch 1 sub-bucket B or Batch 2 sub-bucket A.
 
-**Acknowledge the user with one short message:** *"Picked up. Track 2 state: Trial + Batch 1 + Batch 2 closed (22 briefs drafted, ~211 residual). Wave 6 closed; Wave 7 HP-lock pending. Open decisions: [number] pending. Ready for next instruction."* — nothing longer.
+**Acknowledge the user with one short message:** *"Picked up post-Phase-3. Track 2 state: 22 briefs DRAFTED + EXECUTED (16 REWRITE + 6 REDIRECT shipped to main HEAD `e0f7095`, build PASS, NOT deployed). ~211 residual remaining. Wave 7 closed; Wave 8 in flight. Open decisions: 7 pending (deploy timing / bundling / monitored_pages timing-on-deploy / F-37 Wave-8 follow-up / D-C5 Peterborough pricing-leak / Phase 2 cluster audits / reviewedBy standardisation). Ready for next instruction."* — nothing longer.
 
 ---
 
@@ -104,36 +106,23 @@ You are taking over as Track 2 Manager for the Property Legacy Rewrite Brief Pro
 
 ---
 
-## 3. Open decisions awaiting user (you're picking up here — UPDATED 2026-05-24 PM post-Batch-2)
+## 3. Open decisions awaiting user (UPDATED 2026-05-24 PM post-Phase-3 close)
 
-### Decision A: Batch 3 scope?
-- **Option A — Section 24 cluster (~22 residual):** Largest intra-cluster cannibalisation pool per Cannib Index §6. High REDIRECT-PROPOSED yield expected.
-- **Option B — AIA / Capital allowances cluster (~12 residual):** Cross-track interlock with Wave 6 Bucket C (Capital allowances pillar shipped 2026-05-24). 3-5 residual likely REDIRECT-PROPOSED to Wave 6 pillar; remaining REWRITE as applied/local variants. Now resolvable since Wave 6 closed.
-- **Option C — City accountant cluster (~30 residual):** F-1 pricing-leak audit needed first. Bigger scope.
-- **Option D — Stay in CGT-adjacent territory (~10-12 residual):** Calculator pages + Section 24-CGT-overlap + remaining specialist CGT pages (BADR/PRR-loss/non-resident-overseas-CGT) — closes CGT cluster definitively (currently 22 of 25 residual CGT pages briefed).
-- **Manager recommendation:** wait for user signal. Each option has different sub-agent dispatch shape; user picks based on commercial priority.
+Phase 3 is DONE — 22 briefs drafted + EXECUTED across 16 REWRITE (gold-reference depth, ~50,000 words new content) + 6 REDIRECT (5:1 cluster consolidation on the 60-day-CGT cluster + 1 standalone). Final commit `e0f7095` on main, build PASS, NOT deployed.
 
-### Decision B: §16.43 STALE-sweep sub-agent dispatch?
-- Batch 2 surfaced 5 cluster-audit recommendations: F-21 Lettings pre-2020 framing cluster + F-28 + F-30 commercial Budget-2024 cluster + F-31 small-profits-rate-cluster + F-35 rewrite-cohort year-stamp cluster + F-36 WebFetch sample re-check.
-- Per §16.43 these decompose well: precise grep-driven mechanical back-patches that benefit from sub-agent parallelism.
-- ~15-30 min sub-agent run time. Manager context cost: low (single prompt + single report).
-- **Manager recommendation:** dispatch before Batch 3 — banks the audit value while context is hot; surface any false-positives before they propagate into Batch 3 sub-agent prep.
+**The 7 open decisions live primarily in `docs/property/TRACK2_PHASE3_CLOSE_PICKUP.md` §2** — read that doc first if Phase 3 is the most recent work. Summary table here for quick reference:
 
-### Decision C: Phase 3 execution scheduling?
-- Phase 3 = sub-agent takes a brief, rewrites the actual markdown page. Different from brief drafting.
-- **22 briefs ready for Phase 3 execution:**
-  - 3 trial REWRITE (excluding gold-reference which is canonical-rewrite of same slug)
-  - 6 Batch 1 REWRITE + 3 Batch 1 REDIRECT
-  - 6 Batch 2 REWRITE + 3 Batch 2 REDIRECT
-- Phase 3 execution session likely needs worktrees (concurrent edits to `Property/web/content/blog/` will conflict). Different shape from brief drafting (which used main, no worktrees).
-- F-15 worked-example salvage + D-11/D-12 canonical-depth-up lifts happen at Phase 3 before redirect deletes the sources.
-- **Manager recommendation:** bundle the 22 briefs in one Phase 3 dispatch. Needs its own scoping session — sub-agent dispatch shape is different (worktrees, middleware.ts edit coordination, monitored_pages Supabase inserts).
+| Decision | Summary | Manager recommendation |
+|---|---|---|
+| A: Deploy timing | Phase 3 on main + build PASS, awaiting `vercel deploy --prod` signal. Bundles with concurrent Wave 7 close + Wave 8 prep commits | Wait for user signal; it's the next concrete operational action |
+| B: Deploy bundling | Bundle with held W4+W5+W6 deploy pool OR ship as separate Track 2 deploy | Separate Track 2 deploy (cleaner monitored_pages signal disaggregation) |
+| C: monitored_pages Supabase batch-insert | 22 rows staged in Phase 3 discovery logs (16 rewrite_post + 6 redirect_post); no existing insert script in codebase | Defer to DEPLOY moment so redirect_date / rewrite_date match go-live; build insert tooling at that point. SUPABASE_ACCESS_TOKEN in .env per memory `supabase_cli_access.md` |
+| D: F-37 follow-up | FA 2026 c.11 s.7 ENACTED 18 March 2026; `house_positions.md §7` Bill-form hedge is stale + 4-8 page back-patch sweep needed on rewrite cohort | Wave 8 manager territory (position-shape change). Recommendation already filed in F-37 entry |
+| E: D-C5 Peterborough pricing-leak | F-1 pattern extends to 2026-05-21 rewrite cohort, not just residual city pages. Soft-fee comparison framing ("£800-£1,500" general-market range) at 6+ rewritten city pages | User decision on whether soft comparison is acceptable; if not, queue sub-agent reframe of all 6+ city pages |
+| F: Phase 2 cluster-audit dispatch | 5 cluster audits queued from Phase 3 discovery: F-26 NRCGT + F-28 Lettings + F-30 commercial Budget-2024 + F-31 small-profits-rate + F-35 year-stamp | Can be batched as one §16.43 STALE-sweep dispatch in a future session (not urgent; context is now cold) |
+| G: reviewedBy frontmatter convention | Worktree B's 6 rewrites populated `reviewedBy` + `reviewerCredentials` + `reviewedAt` (new E-E-A-T pattern); Worktrees A + C didn't adopt | User call: back-patch the 10 missing files OR document as B-bucket-exclusive pattern |
 
-### Decision D: Sub-agent dispatch mode?
-- Batch 1 used separate-terminals pattern (saved feedback).
-- Batch 2 used Agent tool background mode (user-override; worked well — manager context stayed cheap on notification-only basis).
-- Open question: revert to separate-terminals (per saved feedback) OR adopt Agent background mode as new default OR keep batch-by-batch user choice?
-- **Manager recommendation:** keep batch-by-batch user choice for now. Both worked; pick whichever fits the moment. If Agent-background pattern stays clean across 2-3 more batches, consider updating the saved feedback to make it the default.
+**Note:** Batch 3+ scope decisions (Section 24 / AIA / city / CGT-adjacent residual clusters) carry forward from the prior pickup — NOT Phase 3 territory. Take them in a future Batch 3 brief-drafting session once user gives the next-scope signal. The previous prior-pickup recommended waiting for user choice based on commercial priority.
 
 ---
 
@@ -215,15 +204,18 @@ You are taking over as Track 2 Manager for the Property Legacy Rewrite Brief Pro
 
 ## 6. Bill-vs-enacted-Act drift family — the program's most recurrent risk
 
-This is the highest-frequency risk pattern across both Wave and Track 2 work. **12+ consecutive catches** as of Batch 1 close. Sub-pattern variations:
+This is the highest-frequency risk pattern across both Wave and Track 2 work. **13 consecutive catches** as of Phase 3 close (F-37 FA 2026 c.11 s.7 was caught at write time before T3 commit by the verify-at-write-time dispatch-prompt cascade). Sub-pattern variations:
 
 - **Original Bill-vs-enacted:** asserting a Bill-form rate as enacted (the original §16.22 pattern from Waves 1-3)
 - **Sections-don't-exist:** parenthetical claims about Act section numbers that don't exist (F-13: "sections 222 to 233 of FA 2019" — FA 2019 has ~94 sections)
 - **Same-year-different-Act:** citing "FA 2023" when actual is "Finance (No. 2) Act 2023" (F-18; new sub-pattern surfaced 2026-05-23)
 - **URL-live-content-gutted:** statute section URL resolves but operative wording removed by amendment (F-8: TCGA 1992 s.4 substituted by FA 2019)
 - **Wrong-tax-term:** asserting "Companies pay 19% CGT" when they pay 19% Corporation Tax on chargeable gains (F-9)
+- **Royal-Assent-superseded-hedge (new at F-37):** prior pages hedged a Bill-form rate as "scheduled / pending Royal Assent" but the Royal Assent has since occurred — the hedge is now STALE and the framing should be ENACTED with the FA cite. F-37 surfaced this at Phase 3 T3 execution time; back-patch sweep deferred to Wave 8 manager.
 
-**Mitigation discipline:** every statute citation in a Track 2 brief must be (a) URL-fetched from legislation.gov.uk within the brief drafting session, AND (b) content-verified (the section's operative wording is there and matches the brief's claim), AND (c) for "(inserted by FA X)" parentheticals, the inserting Act is verified via amendment history not assumed from year.
+**Mitigation discipline:** every statute citation in a Track 2 brief must be (a) URL-fetched from legislation.gov.uk within the brief drafting OR execution session, AND (b) content-verified (the section's operative wording is there and matches the brief's claim), AND (c) for "(inserted by FA X)" parentheticals, the inserting Act is verified via amendment history not assumed from year, AND (d) for any cited Finance Act, the Royal Assent date is verified against the chapter masthead at legislation.gov.uk to catch the F-37 sub-pattern.
+
+**Verify-at-write-time pattern (F-38 methodology validation):** dispatch prompts that explicitly direct sub-agents to "verify against legislation.gov.uk at write time, the Finance Act may have received Royal Assent" catch enactment transitions cleanly before commit. Recommended bake-in to all future Track 2 dispatch prompts touching post-Autumn-Budget statutes.
 
 ---
 
@@ -258,12 +250,16 @@ This is the highest-frequency risk pattern across both Wave and Track 2 work. **
 
 ---
 
-## Final note: cross-program awareness
+## Final note: cross-program awareness (post-Phase-3 close)
 
-Wave 6 CLOSED 2026-05-24 (10 close commits `3808019` → `0805d07`). Wave 6 Bucket C (Capital allowances + SBA + FYA) overlaps topically with Track 2's residual AIA cluster (~12 pages) — cannib resolution now executable. Expected outcome: 3-5 residual REDIRECT-PROPOSED to Wave 6 Bucket C pillar; remaining REWRITE as applied/local variants (HMO-applied, FHL-grandfathered, second-hand-assets-applied, etc.). This is a natural Batch 3 candidate if user picks Option B.
+**Wave 6 CLOSED 2026-05-24** (10 close commits `3808019` → `0805d07`). Wave 6 Bucket C (Capital allowances + SBA + FYA) overlaps topically with Track 2's residual AIA cluster (~12 pages) — cannib resolution now executable as a future Batch 3 candidate. Expected outcome: 3-5 residual REDIRECT-PROPOSED to Wave 6 Bucket C pillar; remaining REWRITE as applied/local variants.
 
-Wave 7 IN PREP as of 2026-05-24 PM. House-position lock + Stage 1 brief generation pending fresh Wave 7 manager pickup (per NETNEW_PROGRAM §3 Wave 7 prep subsection). Bucket mix: RRA + EPC + BSA compliance (A) + HMRC enquiry + tax compliance ops (B) + Specialist transactional + trust depth continuation (C). **Zero CGT cluster collision risk for Track 2 Batch 3+.** TMA 1970 territory in Wave 7 Bucket B (B1 discovery assessments TMA 1970 s.29 + B2 closure notices TMA 1970 s.28A) sits in the same statute family as Track 2's open TMA 1970 s.43 recommendation — if Wave 7 manager extends house positions for TMA territory, our recommendation may get folded in.
+**Wave 7 CLOSED late 2026-05-24** (multiple close commits; final close at `3de0ec3`). Bucket mix shipped: RRA + EPC + BSA compliance (A) + HMRC enquiry + tax compliance ops (B) + Specialist transactional + trust depth continuation (C). Track 2's TMA 1970 s.43 4-year-claim recommendation was filed to Wave 7+ wave6_site_wide_flags.md (commit `6769942` per Decision #2 history) — still awaits explicit house-position lock; Wave 7 may have absorbed adjacent TMA 1970 territory (s.29 discovery assessments + s.28A closure notices in Wave 7 Bucket B) without locking s.43 specifically. Wave 8 manager pickup will inherit the open recommendation.
 
-§16 lessons now extend through **§16.44** (Wave 6 close added §16.41 + §16.42 + §16.43 + §16.44). House positions §1-§25 LOCKED. Wave 7+ may extend to §26+ depending on bucket-mix coverage.
+**Wave 8 IN FLIGHT as of Phase 3 close 2026-05-24 PM.** Wave 8 prep step 2 cannibalisation re-check shipped at commit `2a01076` (30 picks → 29 final, A 10 + B 10 + C 9). HP-locks landed: §28 NEW cluster Transactions in UK land + trading-vs-investment (CTA 2010 Part 8ZB + ITA 2007 Part 9A) at commit `adc33f4`; §25.12 NEW Land Remediation Relief (CTA 2009 Part 14 ss.1143-1175) at `6c88708`; §21.A CT three-figure framework at `cc00f68`. **Wave 8 manager will need to (a) address Track 2's F-37 follow-up: house_positions.md §7 update + back-patch sweep on Wave 5/6/7 rewrite cohort + residual pages citing April 2027 rates, and (b) consider locking TMA 1970 s.43 as a §28-adjacent or §17.X position.** Track 2 Phase 3 has NOT collided with Wave 8 in-flight scope; safe to resume Batch 3 brief drafting in parallel with Wave 8 execution if user chooses that route.
 
-End of pickup doc. Read `TRACK2_PROGRAM.md` next.
+**§16 lessons now extend through §16.45** (Wave 7 HP-lock added §16.45 catch-list — 12 drift catches at HP-lock stage; most operationally critical was EPC C 2030 NOT enacted). **House positions §1-§28 LOCKED** (was §1-§25 at Batch 2 close; Wave 7 added §26.9, §22.21, §1.A-§1.F SDLT depth, §25.11 s.198 fixtures; Wave 8 prep added §28, §25.12 LRR, §21.A CT framework). Future waves may extend further.
+
+**Phase 3 catch on the program's catch count:** **13 consecutive Bill-vs-enacted catches** as of F-37. The verify-at-write-time discipline cascade caught F-37 at T3 execution before commit — the methodology works (F-38 validation entry). Recommend baking the explicit Royal-Assent-check direction into all future Track 2 dispatch prompts touching post-Autumn-Budget statutes.
+
+End of pickup doc. If Phase 3 is the most recent work, read `TRACK2_PHASE3_CLOSE_PICKUP.md` next. Otherwise read `TRACK2_PROGRAM.md` next.
