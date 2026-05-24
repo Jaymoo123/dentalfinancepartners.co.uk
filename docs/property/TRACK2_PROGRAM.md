@@ -61,7 +61,7 @@ Both LLM-reasoning-led. Both read-only against Wave 5.
 
 ## §3 Where we are right now (heartbeat — updates every batch)
 
-**Last updated:** 2026-05-23 PM — Trial phase complete (manager-side); awaiting Track 2B sub-agent return.
+**Last updated:** 2026-05-24 PM — Batch 2 PREP COMPLETE (Wave 6 closed + Decisions #1+#2 resolved + Cannib Index refreshed + 9 Batch 2 briefs queued for sub-agent dispatch).
 
 **Stage 0 deliverables status:**
 - ✅ `docs/property/track2_universe_2026-05-23.md` — 234 residual slugs
@@ -137,13 +137,35 @@ Both LLM-reasoning-led. Both read-only against Wave 5.
 - `a103a04` F-13 + F-18 back-patches (2 files, 5/5)
 - `7be7cb0` Cross-residual drift audit (1 file, 182 insertions)
 
-**Open decisions awaiting user (next manager session can pick up):**
-1. Back-patch `incorporate-rental-property-without-cgt.md` 28% → 24%? (~2 min, 1-line fix; could be 4th commit now or fold into Batch 2)
-2. Lock TMA 1970 s.43 4-year claim deadline as a house position? (Wave-manager-level decision; would propagate to 6 affected loss/claim/disposal pages)
-3. Decide Batch 2 scope: continue CGT cluster (F-16 candidates: 3 more 60-day-CGT collapse candidates), or pivot to different cluster (Section 24, city accountants, AIA cluster, etc.)
-4. Phase 3 execution scheduling: when do the 9 Batch 1 briefs (6 REWRITE + 3 REDIRECT) get executed?
+**Open decisions awaiting user (next manager session can pick up — UPDATED 2026-05-24 PM):**
+1. ~~Back-patch `incorporate-rental-property-without-cgt.md` 28% → 24%?~~ **RESOLVED 2026-05-24** commit `5316bea`.
+2. ~~Lock TMA 1970 s.43 4-year claim deadline as a house position?~~ **PARTIALLY RESOLVED 2026-05-24** — recommendation appended to wave6_site_wide_flags.md commit `6769942`; awaiting Wave 7+ manager lock (Track 2 manager cannot lock house positions per deference rule).
+3. ~~Decide Batch 2 scope~~ **RESOLVED 2026-05-24 PM** — user picked CGT cluster continuation (Option A). 9 briefs queued: 3 reporting cluster-collapse + 3 reliefs (PRR/Rollover/Lettings) + 3 applied mechanics (NRCGT/election/commercial vs residential). Launch prompts at `docs/sessions/property/TRACK2_BATCH2_LAUNCH_PROMPTS.md`.
+4. Phase 3 execution scheduling: when do the 9 Batch 1 briefs (6 REWRITE + 3 REDIRECT) + 9 Batch 2 briefs get executed? Manager recommendation: bundle ~18-22 briefs at Phase 3 dispatch after Batch 2 close.
 
-**Manager pickup doc for next session:** `docs/property/TRACK2_MANAGER_PICKUP.md`.
+---
+
+**Batch 2 PREP COMPLETE 2026-05-24 PM** — all prep tasks landed:
+1. ✅ Pre-flight reading: NETNEW §16 (esp. new lessons §16.41/16.42/16.43/16.44 from Wave 6 close), Wave 6 close commits verified (`3808019` → `0805d07`), `wave6_page_tracker.md` re-read (Wave 6 all 30 ✅ done), `wave6_site_wide_flags.md` re-read (no Batch-2-collision flags), Cannib Index re-read.
+2. ✅ Decisions #1 + #2 resolved (commits `5316bea` + `6769942`) before Batch 2 launch — clean state on entry.
+3. ✅ Cannib Index refreshed in-place at `track2_cannib_index_2026-05-23.md`: §0 new 2026-05-24 PM entry, §1 466 count, §2 grew by 30 with full Wave 6 slug list, §4 reshaped from Wave 6 in-flight to Wave 7 in-prep (zero CGT collision noted), §5 inter-wave queue marked F-9/F-3/F-1/F-10 as POST-WAVE-6-RESOLVED, §6 60-day cluster pairs updated for Batch 1 + Batch 2 disposition, §7 Batch 1 in-flight section closed + Batch 2 in-flight stub seeded.
+4. ✅ Tracker updated: header timestamp refreshed, Universe-at-a-glance refreshed with W6 row + 233 residual unchanged + Wave 7 in-prep replacing W6 in-flight, Summary updated with Batch 1 ✅ + Batch 2 ⬜ rows, **new Batch 2 section added** with pre-flight checklist + sub-agent assignment table + 3 sub-bucket sub-sections with 9 row stubs (all ⬜ todo with hypothesis status in Notes).
+5. ✅ Fresh data ingestion: `python -m optimisation_engine.ingestion.ingest_gsc_queries property --days 90` ran 2026-05-24 PM (3,829 rows — same count as Batch 1 prep, stable structure). GA4 deferred to sub-agent per-page pulls.
+6. ✅ Q&A + discovery seed files created: 6 files at `docs/property/track2_questions_batch2_sub_{a,b,c}.md` + `track2_discovery_log_batch2_sub_{a,b,c}.md` with header templates + sub-bucket-specific intra-batch coordination notes (B + C carry explicit PRR-coordination instruction).
+7. ✅ Launch prompts written at `docs/sessions/property/TRACK2_BATCH2_LAUNCH_PROMPTS.md` — 3 paste-verbatim prompts mirroring Batch 1 format, updated for Wave 6 closed state + new §16 lessons + Batch 2 specifics (Sub-bucket A cluster-collapse continuation; Sub-bucket B reliefs REWRITE; Sub-bucket C applied mechanics REWRITE with intra-batch CANNIBAL coordination call-out).
+
+**Universe at Batch 2 dispatch:** 466 blog .md files (post-Wave-6) / 233 residual legacy (unchanged) / Wave 7 in prep (HP-lock + Stage 1 pending fresh manager pickup; zero CGT collision risk).
+
+**House positions at Batch 2 dispatch:** §1-§25 LOCKED. Wave 6 close added §21.1 s.455 35.75% lock + §22.x NRB freeze 2031 + §22.12 s.169E (not s.169G). §5 LOCKED CGT 2026/27 is the primary spine for Batch 2 (most CGT briefs cite §5 + §17.4 for NRCGT). No PENDING sections affecting Batch 2.
+
+**Batch 2 ready to dispatch:** 9 CGT-cluster briefs in 3 sub-buckets of 3. Launch prompts written. User opens 3 separate Claude Code terminals and pastes one prompt per terminal. Manager idles while sub-agents run; polls main's tracker / flags / Q&A files for progress.
+
+**Three commits landed on main during Batch 2 prep:**
+- `5316bea` Decision #1 back-patch (incorporate-rental-property 28% → 24%)
+- `6769942` Decision #2 wave6-flags append (TMA 1970 s.43 recommendation)
+- (pending) Batch 2 prep bundle (Cannib Index refresh + tracker update + Q&A/discovery seeds + launch prompts + §3 heartbeat)
+
+**Manager pickup doc for next session:** `docs/property/TRACK2_MANAGER_PICKUP.md`. (DOES NOT YET REFLECT Batch 2 prep — next manager pickup will need a refreshed pickup doc after Batch 2 close.)
 
 **Trial-phase complete summary (post-gold-reference):**
 
