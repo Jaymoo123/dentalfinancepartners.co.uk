@@ -475,3 +475,30 @@ Flags never block. Sessions continue work after flagging.
 **Discoveries logged:** D-1 to D-26 across the 10 briefs covering AUTHORITY_GAP (ITA 2007 s.812 + ss.682-713 TiS framework + ITA 2007 s.701 clearance + HMRC CTM36340 + Insolvency Act 1986 Pt IV Ch III + HMRC BIM46035 + FA 2003 s.54 s.53 carve-outs); EXISTING_PAGE_STALE (multiple wrong-Act / wrong-section / stale-rate pages flagged for wave-merge sweep); EXISTING_PAGE_LINK_OPPORTUNITY (8 reciprocal-back-link patches); ADJACENT_TOPIC candidates (pre-divorce SPV valuation for matrimonial settlement; HMRC advance-clearance toolkit reference page; Pawson investment-line shared-gate reference page; portfolio-in-distress administration vs CVL vs LPA receivership); COMPONENT_IDEA suggestions (compressed-timeline failure-mode catalogue page); OTHER (workflow lessons + cross-branch link resolution patterns + recurring brief-drift pattern on manual page numbers).
 
 **Session A ready for wave-close handover.** Tracker, flags, discovery log all up-to-date on main via absolute paths per §16.15 + §16.37 discipline. No open Q&A from Session A.
+
+---
+
+## [TRACK 2 POST-WAVE-6 INPUT — TMA 1970 s.43 4-year claim deadline house-position lock recommendation]
+
+**Source:** Track 2 manager (cross-track), 2026-05-24.
+**Origin flag:** `track2_site_wide_flags.md` F-10 (raised 2026-05-23 21:00Z during Batch 1 Sub-bucket A drafting of `cgt-property-sold-loss-claim-capital-losses`); reinforced by cross-residual drift audit (commit `7be7cb0`, 2026-05-24).
+**Severity:** MEDIUM (gap site-wide on 6 affected pages, but not blocking any in-flight work).
+
+**The gap.** Multiple residual + rewritten CGT pages omit the 4-year claim time limit for capital losses on disposal: **TMA 1970 s.43** + gov.uk/capital-gains-tax/losses verbatim: "you can claim up to 4 years after the end of the tax year that you disposed of the asset". The site's pages routinely conflate (a) the **claim deadline** (4 years after end-of-tax-year of disposal, TMA 1970 s.43) with (b) the **use deadline** (no time limit once a loss is claimed and carried forward) — leaving readers with ambiguous "no time limit on losses" assertions that are technically true for use-after-claim but dangerously incomplete on the claim itself.
+
+**Affected pages identified by cross-residual drift audit (6):**
+- 3 residual CGT pages on losses / disposals (within Track 2 Batch 2 + Batch 3 future scope; sub-agents will cite TMA 1970 s.43 directly from legislation.gov.uk in the meantime, per F-10 instruction)
+- 3 rewritten 2026-05-21 CGT sibling pages (calculation walkthrough + payment-deadlines canonical + selling-buy-to-let calculation guide) — these would benefit from a one-sentence claim-deadline reminder linking the 4-year claim → no-limit-on-use pattern
+
+**Recommended action (Wave 7+ house position lock, OR standalone hygiene sub-agent dispatch per §16.43 pattern):**
+- Add a new sub-section under `house_positions.md` §5 (CGT 2026/27) — proposed `§5.X Capital loss claim mechanics (TMA 1970 s.43)` — locking the verbatim claim-deadline-vs-use-deadline distinction with the canonical four-year-after-end-of-tax-year framing.
+- Companion site-wide back-patch on the 6 pages: 1-sentence insertion citing the new §5.X lock (small, mechanical — fits §16.43 sub-agent STALE-sweep dispatch pattern; ~10 minutes manager + ~15 minutes sub-agent run time).
+
+**Why this is Wave-manager-level, not a Track 2 patch:**
+Track 2 does NOT lock house positions (per `TRACK2_PROGRAM.md §6` deference rule + `TRACK2_MANAGER_PICKUP.md §1` exception list). Citation fixes (like F-18 Finance Act vs Finance (No.2) Act 2023) are Track 2 manager-callable; new position-shape locks are Wave-manager-callable.
+
+**Verification anchors for the locking manager:**
+- legislation.gov.uk: https://www.legislation.gov.uk/ukpga/1970/9/section/43 — TMA 1970 s.43 "Time limit for making claims" (currently in force; verify content at lock time per F-8 statute-content discipline)
+- gov.uk consumer guidance: https://www.gov.uk/capital-gains-tax/losses — confirms the 4-year-after-end-of-tax-year framing in plain English
+
+**Status:** open. Awaiting Wave 7+ manager pickup OR a standalone hygiene-batch sub-agent dispatch.
