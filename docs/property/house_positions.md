@@ -1620,6 +1620,111 @@ Cross-references §21.5 (FIC mechanics generic), §22.6 (FIC as IHT value-freeze
 
 **End Wave 6 §22 extension.** Wave 6 Session B (Trusts + §24.7 adult/minor-child + settlements + GROB) uses §22.1-§22.15 together with §15 + §24 + §21. §22.12 reflects the post-FA-2025 long-term-resident architecture replacing the pre-FA-2025 domicile-at-settlement test for IHT excluded property; sessions writing on offshore-trust IHT must use the new s.48ZA framework and must not cite the omitted s.48(3)-(3F). Any contradiction between competitor sources and §§22.9-22.15, flag in `wave6_site_wide_flags.md`.
 
+### 22.16 Trust Registration Service (TRS) — Wave 7 extension (locked, 2026-05-24)
+
+- **Statutory hook:** Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 (**SI 2017/692**), regulation 45 (TRS registration) and regulation 76 (statutory penalty regime). Implemented by HMRC via the Trust Registration Service (TRS) portal on gov.uk. Verified at https://www.legislation.gov.uk/uksi/2017/692/regulation/45 on 2026-05-24.
+- **Registrable trust classes (MLR 2017 reg 45 + Schedules 3A / 3B):**
+  - **Taxable relevant trusts** — UK trusts where trustees are liable for UK income tax, capital gains tax, inheritance tax, stamp duty land tax, or stamp duty reserve tax. Includes most landlord-owned trust structures (bare trust holding rental property, IIP trust receiving rental income, discretionary trust with property assets, IPDI trust under will, etc.).
+  - **Non-taxable UK express trusts** (added by the Fifth Money Laundering Directive transposition, effective 6 October 2020) — registration extended to express trusts even where they have no UK tax liability, subject to **Schedule 3A exclusions** (statutory trusts, pension scheme trusts, charitable trusts, trusts for vulnerable beneficiaries, life-policy trusts in very limited cases, bare trusts holding policy proceeds for a child under 18, etc.).
+  - **Non-UK trusts** — register where (a) they have at least one UK-resident trustee AND enter a UK business relationship OR acquire UK land, or (b) they acquire UK land regardless of trustee residence (post-1 October 2017 acquisitions).
+- **Registration deadlines:**
+  - **New trust (taxable):** within **90 days** of the trustees first becoming liable to UK tax OR the trust being established, whichever is later.
+  - **New trust (non-taxable):** within **90 days** of the trust being established.
+  - **Existing trust (taxable, pre-6 April 2021):** original deadline 31 January following the tax year of first liability (transitional; mostly historical now).
+  - **Existing trust (non-taxable, pre-4 June 2022):** deadline was 1 September 2022 (historical).
+  - **Change of beneficial ownership / trust details:** updates must be made within 90 days of the change.
+- **Penalty regime (MLR 2017 reg 76 + HMRC operational tariff at TRSM80020):**
+  - **Statutory hook is reg 76 (general MLR penalty)**, max £5,000 per occurrence in practice.
+  - **HMRC operates a case-by-case discretion framework**, not a graduated tariff. Per TRSM80020 (verified 2026-05-24): "Where a trustee has failed to register a registrable trust a £5,000 penalty may be charged. Penalties for non-compliance will be applied on a case-by-case basis." HMRC factors include continued failure after warnings, providing inaccurate details with continued failure to amend.
+  - **No graduated £100 / £200 / £300 tariff in HMRC guidance.** Sessions writing on TRS penalties must NOT cite a graduated tariff scale; HMRC's published position is discretionary £5,000-max-per-failure.
+  - In practice HMRC's enforcement focus has been on **(a) failure to register** (most common) and **(b) failure to update on beneficial-ownership change** (rising focus 2024-2026).
+- **HMRC manual anchor:** TRSM10000+ (TRS Manual general); TRSM23000+ (registration triggers); TRSM80000+ (penalties); TRSM30000+ (information to be provided).
+- **Practical writing rule for sessions (Wave 7 C1):** the operational picture is (a) trust class → does the trust fall within reg 45? (b) tax-status overlay → taxable relevant trust OR non-taxable express trust? (c) deadline calculation → 90 days from trigger event; (d) information requirements → trustees, settlor, beneficiaries (named or class), trust assets, beneficial-owner-style declaration; (e) penalty mitigation framing → registration even late + cooperation reduces HMRC penalty exposure. The widely-cited graduated tariff is a common misconception; sessions must use the £5,000-max-discretionary framing.
+
+### 22.17 Immediate Post-Death Interest (IPDI) + Qualifying Interest in Possession (QIIP) — rental-property depth (locked, 2026-05-24)
+
+- **Statutory hook:** IHTA 1984 s.49A (IPDI definition); s.49(1) (deemed beneficial entitlement); s.5 (IHT charge on death); s.144 (post-death deed of variation reading back into IPDI). Verified at https://www.legislation.gov.uk/ukpga/1984/51/section/49A and /section/49 on 2026-05-24.
+- **IPDI definition — IHTA 1984 s.49A four conditions:**
+  1. **Settlement effected by will or under the law of intestacy.** Lifetime-created settlements cannot be IPDIs (they would be CLTs into discretionary or relevant property regime post-22 March 2006).
+  2. **Beneficiary became entitled to the IIP on the testator's or intestate's death.** The "post-death" element — interest must crystallise on death, not on a later event.
+  3. **Neither s.71A (trusts for bereaved minors) nor disabled person's interest (s.89B) applies to the property.**
+  4. **Condition 3 has been satisfied at all times since the beneficiary became entitled.**
+- **IHT treatment (s.49(1) deemed beneficial entitlement):** "A person beneficially entitled to an interest in possession in settled property shall be treated for the purposes of this Act as beneficially entitled to the property in which the interest subsists." For an IPDI holder, the underlying trust property is in their IHT estate on death — taxed at the rate appropriate to their personal circumstances (with NRB + RNRB + transferable allowances if applicable).
+- **Why the IPDI route matters for landlord-rental-property estate planning:**
+  - **Lifetime gift of property to a trust now = relevant property regime** (CLT entry charge above NRB; 10-year periodic charges at up to 6%; exit charges on distribution). For property assets above NRB this is expensive.
+  - **IPDI on death = no entry charge, no periodic charges, no exit charges WITHIN the IIP holder's lifetime.** IHT bites on the IPDI holder's death (at their then-NRB-and-rates) but the lifetime tax cost is zero.
+  - **Use case:** life-tenant spouse + remainder to children. Wife inherits IIP in family home / rental property on husband's death (IPDI); spouse exemption defers IHT on first death; on wife's later death, full s.49(1) charge but the assets are in her estate (so NRB + RNRB + transferable allowances apply).
+- **QIIP (Qualifying Interest in Possession) — IHTA 1984 s.59:** the broader category capturing IPDIs + pre-22-March-2006 IIPs + disabled persons' interests + transitional serial interests. **Post-22-March-2006, the QIIP route is narrow:** only IPDIs, disabled persons' interests, transitional serial interests, and (limited) immediate-post-death-IIPs created on a TSI converter. Sessions writing on QIIP-vs-relevant-property regime distinctions must anchor on the 22 March 2006 reform date.
+- **Deed of variation re-engineering IPDI — IHTA 1984 s.144 + s.142:**
+  - **s.142** allows beneficiaries to vary a will within 2 years of death, reading back into the deceased's estate for IHT and CGT purposes. Common landlord use case: vary will to redirect rental property to an IPDI trust for surviving spouse (creating the IPDI post-hoc).
+  - **s.144** specifically covers distributions out of a discretionary will-trust within 2 years of death; those distributions read back to the deceased's death. Allows landlord estate to be settled into discretionary trust by will, then within 2 years distributed out (with reading-back) into IPDI or absolute interests as circumstances dictate.
+- **Sub-trust mechanics — IPDI within bare-trust holding for adult-child IIP holder.** Where the IPDI beneficiary is under 25, the trustees may sub-trust to defer outright distribution while preserving the s.49(1) treatment. The sub-trust must not become a settlor-interested trust (settlor = original testator, deceased; no s.624 attribution issue post-death).
+- **Rental-property mechanics within IPDI:**
+  - **Rental income** is taxable on the **IIP holder** at their personal IT rates (transparent treatment under ITTOIA 2005 s.272 + s.13 read with IPDI s.49(1)). NOT taxed on trustees as if discretionary trust.
+  - **Section 24 mortgage interest restriction** applies at IIP holder level (since they are deemed beneficial owner for IT purposes).
+  - **CGT on disposal during life of IIP:** trustees dispose; gain is trust-level subject to trust CGT rules (TCGA 1992 s.169B et seq); but s.225 PPR availability where the IIP holder occupies the property as their main residence (trustees can claim PPR via s.225).
+  - **On IPDI holder's death:** TCGA 1992 s.72 (no CGT on death; assets re-base for trustees + remaindermen). Combined with s.49(1) IHT charge, the full base-cost uplift mirrors the absolute-ownership-on-death position.
+- **HMRC manual anchor:** IHTM16000+ (Trusts manual on IPDI and IIP); IHTM12000+ (intestacy + administration); PIM4400+ (Property Income Manual on trusts).
+- **Practical writing rule for sessions (Wave 7 C2):** present IPDI as a **defensive estate-planning route** for spouses + adult children where the family home / rental portfolio sits in a trust regime that defers IHT to the IIP holder's death. Distinguish IPDI from (a) lifetime IIP trusts (post-22-March-2006 relevant property regime), (b) bare trusts (no trust regime; absolute beneficial ownership), and (c) discretionary trusts (relevant property; 10-yearly charges).
+
+### 22.18 Employee Ownership Trust (EOT) property-SPV exit — Wave 7 extension (locked, 2026-05-24)
+
+- **Manager_prompt typo correction.** Manager_prompt Wave 7 §19 references "CTA 2010 ss.464M-Q" for EOT bonus exemption mechanics. **No such range exists in CTA 2010** — ss.464A-D are the close-company loans-to-participators anti-avoidance range (omitted CTA 2010 ss.464C/464D per FA 2025 / Wave 6 §21.1 lock). The EOT income-tax bonus exemption is actually **ITEPA 2003 s.312A** (£3,600 per employer per tax year currently). Confirmed at HP-lock 2026-05-24.
+- **Statutory hooks:**
+  - **CGT relief on disposal to EOT — TCGA 1992 ss.236H-236U** (the 236H-U range, not "ss.236M-Q" alone — s.236H is the relief entry; s.236M is the controlling-interest condition; s.236N is the all-employee-benefit condition; s.236O-Q cover anti-avoidance + disqualifying events).
+  - **Income tax bonus exemption — ITEPA 2003 ss.312A-312I** (s.312A defines the £3,600 exemption; ss.312B-I define qualifying-bonus conditions, equal-terms requirement, EOT-controlled trading-company test).
+  - **FA 2025 EOT reforms — Finance Act 2025 s.31 + Schedule 6 (Part 1 CGT, Part 2 IT).** Royal Assent 20 March 2025; commencement 6 April 2025. Verified at https://www.legislation.gov.uk/ukpga/2025/8/contents on 2026-05-24.
+- **Controlling interest test — TCGA 1992 s.236M (4-pronged):**
+  1. **Ordinary share capital:** trustees hold **more than 50%** of OSC (not "at least 50%" — the 50%+1 framing is correct).
+  2. **Voting rights:** trustees' voting rights give them control on all questions affecting the company as a whole.
+  3. **Profit entitlement:** trustees entitled to more than 50% of distributable profits.
+  4. **Winding-up assets:** trustees entitled to more than 50% of assets available for equity holders on winding-up.
+  Plus the post-condition: **no agreement or instrument provisions** allowing these conditions to lapse without trustee consent.
+- **FA 2025 reforms (commenced 6 April 2025) — the key changes:**
+  - **(i) UK-resident trustee requirement.** The EOT trust must have UK-resident trustees throughout — closes the offshore-trustee route that was historically used.
+  - **(ii) Trustee independence test.** Restricts former-owner influence over trustees post-disposal; specific tests on related-party trustee appointments.
+  - **(iii) Consideration requirement.** Tightens the "reasonable steps" obligation around price-setting; restricts purely deferred / earn-out structures that left former owners economically exposed.
+  - **(iv) Extended disqualifying-event period.** Anti-avoidance window extended; disqualifying events trigger clawback over a longer period than pre-FA-2025.
+  - **(v) Income-tax bonus exemption modifications.** Sch 6 Part 2 amends ITEPA 2003 s.312 framework; sessions writing on EOT bonus exemption must use post-6-April-2025 text.
+- **EOT property-SPV qualification (Wave 7 C3 specific):**
+  - **Trading company requirement (s.236I).** EOT relief requires the company being sold to be a trading company OR holding company of a trading group. **Property investment / letting business is not a trading activity** under HMRC's CG65700+ guidance and the standard CG/HS interpretation. **Property development** can be trading where there is sufficient development activity (Pawson-style investment-vs-trading line).
+  - **Practical EOT applicability:** mainstream property-investment SPVs (BTL portfolio in LtdCo, FIC, HoldCo with property subsidiaries) **do NOT qualify** for the s.236H CGT relief because they fail the trading-company test. Wave 7 C3 must lead with this gating constraint.
+  - **Where EOT IS applicable:** property-development companies (genuine trading), property-management companies (where management is a service business rather than passive letting), property-related professional services (estate agents, surveyors, architects, project management).
+- **Income tax bonus exemption — ITEPA 2003 s.312A (current state as of 2026-05-24):**
+  - **£3,600 per employer per tax year** (verified at https://www.legislation.gov.uk/ukpga/2003/1/section/312A on 2026-05-24).
+  - "**No liability to income tax arises in respect of the qualifying bonus payments if, or to the extent that, the total chargeable amount in respect of those payments does not exceed £3,600**" (verbatim from s.312A(1)).
+  - NICs still apply on the bonus (no equivalent NIC exemption).
+  - Conditions (s.312B-I): qualifying-bonus payment from EOT-controlled trading company; paid to all employees on similar terms; bonus must not be paid in lieu of regular salary.
+  - **FA 2026 c. 11 pending uplift to £4,800** noted in legislation.gov.uk amendment panel — sessions writing after FA 2026 Royal Assent must verify operative figure.
+- **HMRC manual anchor:** CG67830P (EOT relief); CG67871+ (EOT controlling interest test); EIM03050+ (income tax bonus exemption); CG65700+ (trading-vs-investment line).
+- **Practical writing rule for sessions (Wave 7 C3):** lead with the **trading-company test as the gating constraint** for property-SPV EOT applicability. Most landlord/portfolio SPVs do not qualify. Then walk through the s.236M-Q mechanics for the cases that do qualify (development companies, mixed property-trading-and-investment groups, property professional-services companies). Cite the FA 2025 reforms as the current operational state — the pre-FA-2025 offshore-trustee + lenient-consideration position is no longer available.
+
+### 22.19 Citations for §22.16-§22.18 (extends §22.7 + §22.14)
+
+- **SI 2017/692** (Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017): reg 45 + Sch 3A + reg 76.
+- **IHTA 1984:** s.49A (IPDI); s.49(1) (IIP deemed beneficial entitlement); s.5 (charge on death); s.59 (QIIP); s.71A (trusts for bereaved minors); s.71D (18-25 trusts); s.89B (disabled person's interest); s.142 (deed of variation); s.144 (discretionary will-trust distribution reading back); s.151 (RPRT charge — separate); s.211 (PRs' liability).
+- **TCGA 1992:** ss.236H-236U (EOT relief range); s.169B+ (trust CGT); s.225 (PPR for trusts); s.72 (CGT on death — no charge + re-base).
+- **ITEPA 2003:** ss.312A-312I (EOT bonus exemption).
+- **Finance Act 2025 (c. 8):** s.31 + Sch 6 (EOT reforms, commenced 6 April 2025).
+- **HMRC manuals:** TRSM10000+ (TRS general); TRSM80000+ (TRS penalties); IHTM16000+ (IIP trusts); IHTM12000+ (intestacy); CG67830P (EOT); EIM03050+ (EOT bonus).
+
+### 22.20 Do not write (extends §22.8 + §22.15)
+
+- "TRS penalties are graduated £100 / £200 / £300" (false; HMRC operates case-by-case discretion with £5,000 maximum per TRSM80020).
+- "Bare trusts are exempt from TRS" (false in general; the bare-trust-holding-policy-proceeds-for-a-minor exclusion is narrow Schedule 3A carve-out; most bare trusts holding rental property must register).
+- "Trustees have 30 days to register on TRS" (false; the deadline is **90 days** from the trigger event under reg 45).
+- "IPDIs can be created during the settlor's lifetime" (false; IHTA 1984 s.49A condition 1 requires settlement by will or intestacy — lifetime settlement cannot be IPDI; lifetime IIP trusts created post-22-March-2006 fall into the relevant property regime).
+- "IPDI rental income is taxed on the trustees as a discretionary trust" (false; IPDI is transparent under s.49(1) deeming; rental income taxed on IIP holder at personal rates).
+- "All IIPs are QIIPs" (false post-22-March-2006; only IPDIs + disabled persons' interests + transitional serial interests are QIIPs from that date — wider IIP definitions fall into relevant property regime).
+- "EOT relief is available on disposal of property investment companies" (false in general; s.236H requires trading company / trading group; property letting is not a trade per CG65700+; property development may be trade but must be substantive).
+- "EOT trustees can be offshore-resident" (false post-6 April 2025; FA 2025 s.31 + Sch 6 introduced UK-resident-trustee requirement).
+- "ITEPA s.312A bonus exemption is £4,800" (false as of 2026-05-24; current operative figure is **£3,600 per employer per tax year**; FA 2026 c. 11 includes a pending uplift to £4,800 not yet in force).
+- "Bonus paid under ITEPA s.312A is NIC-exempt as well as income-tax-exempt" (false; the exemption is income-tax only; Class 1 NIC applies on the bonus payment in full).
+- "The EOT controlling-interest test is at least 50%" (false; the test is **more than 50%** — 50%+1 / strictly over 50%; equal-50/50 splits fail).
+- "CTA 2010 ss.464M-Q govern the EOT bonus exemption" (false; no such range exists in CTA 2010; the EOT bonus exemption is ITEPA 2003 ss.312A-312I; CTA 2010 ss.464A-D are the close-company loan-to-participator anti-avoidance range).
+
+**End Wave 7 §22.16-§22.18 extension.** Wave 7 Session C picks C1 (TRS), C2 (IPDI/QIIP), C3 (EOT) cite §22.16-§22.18 directly. §22.16 supersedes any prior assumption of a graduated TRS penalty tariff (HMRC operates discretionary £5,000-max-per-failure per TRSM80020). §22.17 distinguishes the IPDI route from lifetime-IIP relevant-property regime (post-22-March-2006 cut-off is the critical date). §22.18 leads with the trading-company gating constraint on EOT relief for property-SPVs (most landlord SPVs do NOT qualify) plus FA 2025 s.31 + Sch 6 reforms (commenced 6 April 2025 — UK-resident trustee, independence, consideration tightening). Any contradiction between competitor sources and §§22.16-22.18, flag in `wave7_site_wide_flags.md`.
+
 ---
 
 ## 25. Capital allowances for property businesses (CAA 2001) — Wave 6 extension (locked, 2026-05-23)
