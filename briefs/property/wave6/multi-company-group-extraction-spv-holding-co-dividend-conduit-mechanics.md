@@ -159,32 +159,79 @@ When you append a STATUS open question, spawn a Monitor task watching for STATUS
 
 ---
 
-## Per-page work-log (fill in as you go, supports resumability if interrupted)
+## Per-page work-log
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Meta description chosen:**
-- **Why these vs other options:**
+- **Final slug:** `multi-company-group-extraction-spv-holding-co-dividend-conduit-mechanics` (unchanged)
+- **Final category:** `incorporation-and-company-structures` (unchanged)
+- **H1 chosen:** "Extracting Cash from a Property HoldCo Group: The Three Multi-Company Mechanics That Change the Maths"
+- **Meta title chosen:** "Property HoldCo Extraction: Three Multi-Company Mechanics" (57 chars)
+- **Meta description chosen:** "Property HoldCo + SPV groups: dividend conduit (CTA 2009 s.931A), associated-companies squeeze (s.18E band-slicing), and alphabet shares at HoldCo level." (153 chars)
+- **Why these vs other options:** H1 front-loads the three-mechanics structure to position the page as the multi-company depth above the single-SPV pillar A1. Meta description packages the three statutes into 153 chars, making the page's distinguishing axis (multi-company, not single-SPV) immediately visible in SERP snippets.
 
 ### Competitor URLs fetched
+- Stage 2 flagged the property-specific HoldCo niche as thin; no usable competitor blog content at the depth required. Session relied on legislation (CTA 2009 s.931A + Part 9A, CTA 2010 ss.18A/18E/18N, CAA 2001 ss.51E/51K/45S) and HMRC INTM164000 + CTM02060 references. Adequate.
 
-### Existing-page review (from "Closest existing pages")
+### Existing-page review
+- Wave 1 B2 (group relief): intra-group CT mechanic, defer; A7 stays at personal-extraction angle. Forward-link added.
+- Wave 1 B4 (marginal relief): A7 deepens for HoldCo associated-companies squeeze; B4 is the single-SPV view. Forward-link added.
+- Wave 4 A2 (alphabet shares): single-SPV mechanic. A7 deepens at HoldCo level. Forward-link added.
+- Wave 6 A1 (sibling pillar): A7 sits inside A1's umbrella. Back-link added to A1; A1 forward-links A7.
 
 ### Citations added (external authority)
+1. CTA 2009 s.931A "Charge to tax on distributions received" — dividend exemption gateway (verbatim verified at write time)
+2. CTA 2010 s.18E "Associated companies" — verbatim test verified at write time
+3. CTA 2010 s.18N "Close investment-holding companies" + (2)(c) qualifying-shares carve-out (verbatim verified)
+4. CA 2006 s.1162 "Parent and subsidiary undertakings" — group definition
+5. CAA 2001 s.51E "Single AIA for related companies" — shared cap mechanism
+6. CAA 2001 s.45S — full expensing for companies
+7. ITTOIA 2005 s.624 — settlements legislation for HoldCo alphabet shares
+8. HMRC INTM164000 — dividend exemption manual
+
+Total: 8 external authority citations (target 6-8). At ceiling.
 
 ### Internal links added (to our existing pages)
+10 link instances, 7 unique slugs:
+- /blog/incorporation-and-company-structures/extracting-cash-from-property-spv-extraction-sequence-pillar-2026-27 (A1 sibling pillar; 2x)
+- /blog/incorporation-and-company-structures/corporation-tax-marginal-relief-property-companies (Wave 1 B4)
+- /blog/incorporation-and-company-structures/property-company-group-relief-corporation-tax (Wave 1 B2)
+- /blog/incorporation-and-company-structures/alphabet-shares-property-spv-dividend-splitting-spouse-children (Wave 4 A2)
+- /blog/incorporation-and-company-structures/mvl-members-voluntary-liquidation-property-company-cgt-vs-income-treatment (Wave 6 A4 sibling, already shipped)
+- /blog/property-types-and-specialist-tax/aia-1m-cap-property-investors-allocation-strategy-and-association-rules-cta-2010 (Wave 6 C4 — shipped on C-branch, will resolve at merge)
+- /blog/property-types-and-specialist-tax/full-expensing-50-percent-fya-commercial-property-spvs-mechanics-fa-2023 (Wave 6 C5 — in progress on C-branch)
 
 ### Inline CTA placements
+- Aside 1: after Mechanic 1 (dividend conduit). Signals dividend conduit is the headline benefit but the associated-companies squeeze offsets it; numbers will vary.
+- Aside 2: after the CIHC risk section. Signals CIHC is a check-once-then-monitor exercise; most BTL HoldCo groups escape via s.18N(2)(c).
 
 ### Build attempts
+- Build attempt 1: clean. Next.js 15.5.18, 475 static pages generated (was 474; A7 included). Compile 4.1s.
 
 ### Verification
+- FAQ schema count: 14 in frontmatter ✓ (target 12-14)
+- 0 em-dashes ✓
+- 0 Tailwind classes ✓
+- Meta title: 57 chars (max 62) ✓
+- Meta description: 153 chars (max 158) ✓
+- Internal /blog/ links: 10 instances, 7 unique slugs. 5 resolve to live on-site pages; 2 are cross-bucket forward-refs (C4 on C-branch shipped, C5 in progress) that will resolve at wave merge per §16.32.
 
 ### §16.35 numeric verification log (every figure cited)
+WebFetched at write time on 2026-05-23:
+- **CTA 2009 s.931A** verbatim verified: "The charge to corporation tax on income applies to any dividend or other distribution of a company, but only if the distribution is not exempt." Part 9A Chapter 2 (small-companies exemption) and Chapter 3 (non-small) confirmed. ✓
+- **CTA 2010 s.18E** verbatim verified: "a company is another company's associated company in an accounting period if it is an associated company for any part of the accounting period". ✓
+- **CTA 2010 s.18N(2)(c)** verbatim verified: "the purpose of holding shares in and securities of, or making loans to, one or more companies each of which" is a qualifying company; qualifying companies in (6) defined as those existing wholly or mainly for trading or commercial land-letting purposes. ✓
+- **CT rates 2026/27 19% / 25% / 26.5% effective marginal-relief band**: house position §21.4. Applied in the worked example.
+- **Small-profits-rate £50k lower limit + £250k upper limit**: house position §21.4 / s.18D.
+- **Dividend rates 10.75% / 35.75% / 39.35%**: verified at write time of A1 (gov.uk/tax-on-dividends).
+- **£500 dividend allowance**: standard.
+- **£12,570 personal allowance, £50,270 higher-rate threshold, £125,140 additional-rate threshold**: standard 2026/27 framework.
+- **AIA £1m permanent**: CAA 2001 s.51A as amended F(No.2)A 2023 s.8. House position §25.8.
+- **Full expensing**: CAA 2001 s.45S, permanent under F(No.2)A 2023. House position §25.8.
+- **s.35 dwelling-house plant-and-machinery restriction**: standard. Cited in AIA section.
+- **CIHC main rate 25%**: §21.5.
 
 ### Flags raised to wave6_site_wide_flags.md
+1. **F-12 CROSS_BUCKET_BACKLINK:** A7 references Wave 6 C4 (AIA shared cap) and C5 (full expensing) via forward-link prose; C4 also forward-links A7 per its work-log. Bidirectional back-patch needed at wave merge per §16.32. A7 ↔ C4 is now mutual (both pages on separate branches, both shipped or in flight, both reference each other). A7 → C5 awaits C5 completion; manager applies back-patch at wave merge.
 
 ### 2-3 sentence summary
+A7 is the HoldCo personal-extraction pillar covering the three load-bearing multi-company mechanics: dividend conduit (CTA 2009 s.931A and Part 9A exemption), associated-companies squeeze (CTA 2010 s.18E band-slicing of the small-profits-rate band by the count of associated companies), and HoldCo-level alphabet shares for cross-SPV income shifting under the settlements legislation. The 10-SPV worked extraction shows the squeeze cost (£47,700 of CT at marginal-relief band rates vs ~£24,500 if the same profit sat in a single SPV) and the comparable maths against a 10-SPV standalone cohort (already squeezed by common ownership). Bidirectional A7 ↔ C4 ↔ C5 cross-bucket references; CIHC risk at HoldCo level surfaced via s.18N(2)(c) qualifying-shares route.

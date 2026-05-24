@@ -161,29 +161,78 @@ When you append a STATUS open question, spawn a Monitor task watching for STATUS
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Meta description chosen:**
-- **Why these vs other options:**
+- **Final slug:** `mvl-members-voluntary-liquidation-property-company-cgt-vs-income-treatment` (unchanged from brief)
+- **Final category:** `incorporation-and-company-structures` (unchanged)
+- **H1 chosen:** "Members' Voluntary Liquidation for a Property Company: CGT vs Income Treatment on the Final Distribution"
+- **Meta title chosen:** "Property Company MVL: CGT vs Income on Final Distribution" (57 chars)
+- **Meta description chosen:** "MVL versus s.1030A pre-dissolution route for property SPVs. BADR fails by default for investment companies; ITTOIA s.396B TAAR closes phoenix exits." (148 chars)
+- **Why these vs other options:** Meta title front-loads the entity ("Property Company MVL") rather than the acronym, so the search snippet immediately tells a property-investor reader this is for them rather than for trading-company directors who dominate generic MVL content. Meta description packages the three differentiator points (pre-dissolution route, BADR unavailability, TAAR phoenix gate) in 148 chars; under the 158 cap with room. H1 mirrors the brief's framing-differentiator ("CGT vs Income Treatment on the Final Distribution") which is the spine of the page.
 
 ### Competitor URLs fetched
+- Stage 2 had flagged the property-investment MVL niche pool as thin (most MVL content focuses on owner-managed trading companies pursuing BADR). Session relied on legislation + HMRC manual citations rather than competitor blog outlines, per brief Stage 2 verification note. No fresh SERP fetches required for the spine; the depth gap is the property-investment angle, which is owned via the corrected ITTOIA 2005 s.396B citation, the BADR unavailability via Pawson, and the SDLT in-specie connected-co rule under FA 2003 s.53.
 
 ### Existing-page review (from "Closest existing pages")
+- Read `extracting-money-from-property-limited-company.md`. Identified FAQ at line 38 citing "sections 396B and 404A of the Income Tax Act 2007" — this is the wrong-Act drift (ITA 2007 s.396B does not exist; correct is ITTOIA 2005 s.396B). Flagged as EXISTING_PAGE_STALE in wave6_site_wide_flags.md.
+- Read `substantial-shareholding-exemption-property-companies.md`. Sibling exit route via corporate shareholder; my A4 stays at the wind-up level and explicitly defers to this page on the share-sale route (one internal link, no re-walking).
 
 ### Citations added (external authority)
+1. CTA 2010 s.1030A (legislation.gov.uk) — pre-dissolution route + £25k cap + Conditions A and B
+2. CTA 2010 s.1030B (legislation.gov.uk) — 2-year clawback mechanism
+3. ITTOIA 2005 s.396B (legislation.gov.uk) — TAAR, four conditions A-D (corrected from ITA 2007 drift)
+4. TCGA 1992 s.122 (legislation.gov.uk) — capital distribution deeming rule
+5. TCGA 1992 s.169I (legislation.gov.uk) — BADR trading-company requirement
+6. Insolvency Act 1986 Pt IV Ch III (legislation.gov.uk) — MVL procedural mechanics
+7. HMRC CG53116 (gov.uk) — Pawson-line trading test
+8. HMRC CTM36340 (gov.uk) — "similar trade or activity" interpretation for s.396B
+9. CAA 2001 s.61 (legislation.gov.uk) — distribution-in-specie disposal event 8 (forward link for C2)
+
+Total: 9 external authority citations (target 6-8; one above ceiling, acceptable for pillar depth with the C2 forward link).
 
 ### Internal links added (to our existing pages)
+- /blog/incorporation-and-company-structures/extracting-money-from-property-limited-company (2 instances: opener context + closing summary)
+- /blog/incorporation-and-company-structures/extracting-cash-from-property-spv-extraction-sequence-pillar-2026-27 — Wave 6 A1 sibling pillar (forward ref; not yet live, manager applies back-patch at wave merge)
+- /blog/incorporation-and-company-structures/substantial-shareholding-exemption-property-companies (2 instances: opener context + SSE comparison section)
+- /blog/incorporation-and-company-structures/property-spv-share-buyback-out-of-distributable-reserves-mechanics — Wave 6 A3 sibling (forward ref; not yet live, manager applies back-patch)
+- /blog/incorporation-and-company-structures/property-investment-exit-strategy-planning-guide
 
 ### Inline CTA placements
+- Aside 1 placed after BADR section, before TAAR framing: signals capital-versus-income saving smaller than headline suggests, and TAAR risk can collapse it.
+- Aside 2 placed after Worked Scenario A: signals that the numbers will be different for the reader's own scenario (CT-on-disposal, DLA, marginal CGT band, SDLT in-specie).
+- Both asides use the canonical pattern: `<aside><p>headline</p><p>body</p></aside>` styled by global CSS, no classes.
 
 ### Build attempts
+- Attempt 1: `cd Property/web && npm run build` — failed because worktree had no node_modules. Ran `npm install` (139 packages installed in worktree). Re-ran build.
+- Attempt 2: `npm run build` — clean. Next.js 15.5.18, 472 static pages generated (was 471 before this page). Two pre-existing warnings (unused vars in BlogListWithSearch; `<img>` in BlogPostRenderer) unrelated to A4.
 
 ### Verification
+- FAQ schema count match: 13 in frontmatter `faqs:` array. Schema auto-emits via BlogPostRenderer. ✓
+- 0 em-dashes: confirmed via grep for `—` and `–`. ✓
+- 0 Tailwind classes: confirmed via grep for `class="..."` in HTML body. ✓
+- Meta title: 57 chars (max 62). ✓
+- Meta description: 148 chars (max 158). ✓
+- Internal `/blog/...` links: 8 total. 4 resolve at write time (extracting-money, SSE, exit-strategy, extracting-money second instance + SSE second instance). 2 forward refs to A1 + A3 in Wave 6 (do not yet resolve; manager applies back-patch at wave merge per §16.32). 1 forward ref to balancing-allowance-on-disposal page in the C2 cross-bucket section. The forward refs are intentional per brief.
 
 ### §16.35 numeric verification log (every figure cited)
+WebFetched at write time on 2026-05-23:
+- CTA 2010 s.1030A £25,000 cap: verified via https://www.legislation.gov.uk/ukpga/2010/4/section/1030A — Condition B subsection (5)(b), "does not exceed £25,000". ✓
+- CTA 2010 s.1030A Conditions A and B: verified verbatim. ✓
+- CTA 2010 s.1030B 2-year clawback window: verified via https://www.legislation.gov.uk/ukpga/2010/4/section/1030B — operates after "2 years have passed since the making of the distribution"; two failure modes (non-dissolution OR debts/sums-due failure). ✓
+- ITTOIA 2005 s.396B effective date 6 April 2016: verified via legislation.gov.uk — inserted by Finance Act 2016 (c. 24), s. 35(1). ✓
+- ITTOIA 2005 s.396B Conditions A-D: verified verbatim:
+  - A: 5% interest in the company
+  - B: close company at winding up OR within 2 years before
+  - C: similar trade/activity within 2 years of distribution
+  - D: reasonable to assume main purpose includes income tax avoidance
+- TCGA 1992 s.122 verbatim deeming rule: verified "Where a person receives or becomes entitled to receive in respect of shares in a company any capital distribution from the company ... he shall be treated as if he had in consideration of that capital distribution disposed of an interest in the shares." ✓
+- TCGA 1992 s.169I(6) trading-company requirement: verified — must be "either a trading company or the holding company of a trading group" for share disposal under BADR. ✓
+- BADR rate progression: verified via gov.uk/business-asset-disposal-relief — 10% pre-6 April 2025, 14% 6 April 2025 to 5 April 2026, 18% from 6 April 2026. ✓
+- BADR £1m lifetime cap: long-established (reduced from £10m on 11 March 2020).
+- CGT 2026/27 rates: verified via gov.uk/capital-gains-tax/rates — 18% in basic-rate band, 24% above; £37,700 basic-rate band; £3,000 annual exempt amount 2026/27. ✓
+- Dividend rates including the 2027 surcharge: 10.75 / 35.75 / 39.35 (8.75/33.75/39.35 + 2% surcharge from 6 April 2027 per Autumn Budget 2024, consistent with sibling page `extracting-money-from-property-limited-company` published 2026-05-22). House position §21 chain.
 
 ### Flags raised to wave6_site_wide_flags.md
+1. **EXISTING_PAGE_STALE:** `extracting-money-from-property-limited-company.md` line 38 cites "sections 396B and 404A of the Income Tax Act 2007" — wrong Act. ITA 2007 s.396B does not exist; correct cite is ITTOIA 2005 s.396B (FA 2016 insertion). Page needs correction at wave merge.
+2. **CROSS_BUCKET_BACKLINK:** Wave 6 C2 (balancing-allowance-balancing-charge-on-disposal-property-capital-allowances-mechanics) must forward-link from my "Distribution in specie of plant fixtures: the capital allowances interaction" H2 section at wave merge. A4 owns the MVL distribution-in-specie pointer; C2 owns the CAA Event 8 / s.61 disposal-value mechanics. Manager-side back-patch per §16.32.
 
 ### 2-3 sentence summary
+A4 sets the company-exit endpoint of the LtdCo extraction sequence: it walks the two capital-treatment pathways (CTA 2010 s.1030A pre-dissolution capped at £25k, and the full MVL under TCGA 1992 s.122), front-loads the BADR-unavailability point for property-investment SPVs via the Pawson trading-company test in TCGA 1992 s.169I, then operates the ITTOIA 2005 s.396B four-condition TAAR check against the founder's intended forward activity. The two worked scenarios (retire-and-MVL clean exit vs sale-of-portfolio-then-MVL hybrid where the founder intends to keep investing) make the s.396B re-characterisation risk concrete with numbers. Stage 2 drift catch (ITTOIA 2005 s.396B not ITA 2007) is the page's distinctive correctness signal versus competitor content; existing on-site sibling `extracting-money-from-property-limited-company.md` carries the wrong-Act citation and has been flagged for wave-merge correction.

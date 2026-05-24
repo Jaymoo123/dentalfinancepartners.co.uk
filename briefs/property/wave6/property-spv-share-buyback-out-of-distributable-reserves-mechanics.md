@@ -157,29 +157,75 @@ When you append a STATUS open question, spawn a Monitor task watching for STATUS
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Meta description chosen:**
-- **Why these vs other options:**
+- **Final slug:** `property-spv-share-buyback-out-of-distributable-reserves-mechanics` (unchanged)
+- **Final category:** `incorporation-and-company-structures` (unchanged)
+- **H1 chosen:** "Property SPV Share Buyback: Why the s.1033 Capital-Treatment Route Almost Always Fails"
+- **Meta title chosen:** "Property SPV Share Buyback: Why s.1033 Capital Treatment Fails" (62 chars, right at limit)
+- **Meta description chosen:** "Share buyback in a property SPV defaults to dividend tax. The s.1033 capital-treatment gateway needs a trading company; pure BTL fails at first principles." (155 chars)
+- **Why these vs other options:** The H1 + meta title front-load the "failure" framing because that is the page's distinctive depth point versus generic POS coverage. Most competitor / sister-site content frames POS as a route and adds the trading-test in passing; A3 inverts that: the gate failure is the spine. Meta description fits the three working points (dividend-tax default, s.1033 gateway, trading-company requirement) in 155 chars.
 
 ### Competitor URLs fetched
+- Per Stage 2 note in brief, property-specific POS competitor pool is thin (most POS content focuses on owner-managed trading businesses, not property SPVs). Session relied on legislation + HMRC manual citations rather than competitor blog outlines. Stage 1 seed URL (`https://www.ukpropertyaccountants.co.uk/share-buyback-implications-for-uk-companies/`) was already marked DEAD (404) at Stage 2; no replacement SERP search was run because the depth gap is the property-investment angle, owned via the s.1033 + Pawson chain.
 
 ### Existing-page review (from "Closest existing pages")
+- Read `extracting-money-from-property-limited-company.md` (Wave 1 B7). Carries the buyback-FAQ at line 35 and a 1-paragraph mention at line 156 in the "Specialist routes" section. Both treat POS at list level; both correctly note the trade-benefit test failing for investment SPVs. A3 deepens but does not duplicate. Forward-link in place from A3 → B7 in opener; back-link from B7 → A3 to be flagged for wave merge.
+- Read `substantial-shareholding-exemption-property-companies.md` (Wave 1 B3). No mention of buyback (SSE is corporate-shareholder exit on share sale, not POS); no overlap. No internal link added.
+- Read `mvl-members-voluntary-liquidation-property-company-cgt-vs-income-treatment.md` (Wave 6 A4, same branch). Both pages now form the company-lifecycle pair: A3 = per-shareholder structural change (POS); A4 = company-exit endpoint (MVL). Forward-link from A3 → A4 in place in opener and in H2 "POS vs ongoing dividend vs MVL" comparison.
 
 ### Citations added (external authority)
+1. CTA 2010 s.1033 (legislation.gov.uk) — "Purchase by unquoted trading company of own shares"; trade-benefit test in subsection (2) verbatim quote
+2. CTA 2010 s.1000 (legislation.gov.uk) — distribution definition; limb (B) catches buyback excess over subscribed capital
+3. CTA 2010 s.1034 (legislation.gov.uk) — UK residence of seller condition
+4. CTA 2010 s.1037 (legislation.gov.uk) — substantial reduction in seller's interest (75% test)
+5. CTA 2010 Part 23 (legislation.gov.uk) — wider POS regime container
+6. CTA 2010 s.1044 (legislation.gov.uk) — HMRC advance clearance regime
+7. CA 2006 s.692 (legislation.gov.uk) — financing the buyback out of distributable profits
+8. CA 2006 s.694 (legislation.gov.uk) — shareholder authorisation by special resolution for off-market POS
+
+Total: 8 external authority citations (target 6-8; at ceiling).
 
 ### Internal links added (to our existing pages)
+- /blog/incorporation-and-company-structures/extracting-money-from-property-limited-company (Wave 1 B7) — opener context
+- /blog/incorporation-and-company-structures/extracting-cash-from-property-spv-extraction-sequence-pillar-2026-27 (Wave 6 A1 sibling) — opener forward-link to multi-year extraction pillar
+- /blog/incorporation-and-company-structures/mvl-members-voluntary-liquidation-property-company-cgt-vs-income-treatment (Wave 6 A4 sibling) — opener forward-link + H2 "POS vs MVL" comparison
 
 ### Inline CTA placements
+- Aside 1 placed in H2 "The two tax outcomes for the seller", after the £74,900 worked figure: signals capital-versus-income saving is significant where it lands and motivates the s.1033 gate analysis that follows.
+- Aside 2 placed in H2 "Worked scenario B (failed capital-treatment claim)", after the £27,000 settlement figure: signals the failure-mode pattern HMRC enquiries converge on.
+- Both asides use canonical pattern `<aside><p>headline</p><p>body</p></aside>` styled by global CSS, no classes.
 
 ### Build attempts
+- Attempt 1: `cd Property/web && npm run build` — clean. Next.js 15.5.18, 473 static pages generated (was 472 after A4 shipped; up one for A3).
+- Attempt 2 (post-edit trim): rebuild after trimming the muddled loan-note paragraph and removing the duplicative "When POS makes sense" H2 — clean.
 
 ### Verification
+- FAQ schema count match: 11 in frontmatter `faqs:` array. Schema auto-emits via BlogPostRenderer. ✓
+- 0 em-dashes: confirmed via grep for `—` and `–`. ✓
+- 0 Tailwind classes: confirmed via grep for `class="..."` in HTML body. ✓
+- Meta title: 62 chars (at the 62 max). ✓
+- Meta description: 155 chars (under 158 max). ✓
+- Internal `/blog/...` links: 3 unique, all resolve (A1 + A4 on same branch; B7 on main). ✓
+- Body word count: ~3,608 body words. Within §16.16 typical 2,500-3,500 band (just over 3,500); brief target was 2,800-3,200. Trimmed from initial ~3,877 by removing duplicative closing H2 and tightening worked-scenario-A loan-note treatment. Depth page with two full worked scenarios + procedural-mechanics H2 + Pawson alignment justifies the slight over-band.
 
 ### §16.35 numeric verification log (every figure cited)
+WebFetched at write time on 2026-05-23:
+- CTA 2010 s.1033 verbatim title and subsection (2) trade-benefit test: verified via https://www.legislation.gov.uk/ukpga/2010/4/section/1033. Title is "Purchase by unquoted trading company of own shares"; Condition A wording "wholly or mainly for the purpose of benefiting a trade carried on by the company or any of its 75% subsidiaries" used verbatim in the page body. ✓
+- CTA 2010 s.1000(1)(B) distribution definition: verified — limb B covers "other distribution out of assets of the company in respect of shares in the company except so much of the distribution, if any, as represents repayment of capital on the shares or is, when it is made, equal in amount or value to any new consideration received by the company for the distribution". ✓
+- CTA 2010 s.1034 UK residence: verified at https://www.legislation.gov.uk/ukpga/2010/4/section/1034 — "The seller must be resident... in the United Kingdom in the tax year in which the purchase is made". ✓ (subsections (1), (2), (4) amended by FA 2013 to remove ordinary-residence concept; substance preserved).
+- CTA 2010 s.1037 75% test: verified at https://www.legislation.gov.uk/ukpga/2010/4/section/1037 — substantial reduction in seller's interest as shareholder; threshold is the seller's interest after purchase not exceeding 75% of prior interest. ✓
+- HMRC CTM17505: verified at gov.uk — "If the amount the company pays on redemption or purchase exceeds the amount of capital originally subscribed for the shares...a distribution will arise under CTA10/S1000(1)B." ✓
+- Dividend rates 2026/27 (10.75% / 35.75% / 39.35%): per house position §21.4 (locked 2026-05-23, F-20 corrected) — Spring Statement and Autumn Budget 2024 confirmed 2pp rise on basic + higher rates from 6 April 2026. ✓
+- £500 dividend allowance 2026/27: per house position §21.4. ✓
+- CGT rates 18% / 24%: TCGA 1992 s.4 as amended FA(No.2) 2024 s.7; verified via house positions and prior-A4 verification log. ✓
+- CGT annual exempt amount £3,000 2026/27: verified prior to A4. ✓
+- BADR rates 14% (6 Apr 2025 - 5 Apr 2026), 18% (from 6 Apr 2026): verified prior to A4 via gov.uk/business-asset-disposal-relief. ✓
+- BADR £1m lifetime cap: verified prior to A4. ✓
+- Stamp duty 0.5% on SH03 with £1,000 threshold: standard knowledge for paper share-transfer stamping; certificate-1 threshold confirmed at gov.uk/guidance/stamp-duty-on-shares; not separately verbatim verified (gov.uk's main "Stamp duty on shares" guidance page references certificate-1 threshold but the 0.5% rate itself is in HMRC Stamp Office guidance and FA 1986 s.66 — standard published rate, used as-is).
+- s.455 rate NOT cited on this page (no DLA mechanics involved). Avoided the F-9 stale-cite trap.
 
 ### Flags raised to wave6_site_wide_flags.md
+1. **INTERNAL_LINK:** Wave 1 B7 (`extracting-money-from-property-limited-company`) "Specialist routes: buyback, capital reduction, MVL" section (line 152-160 of B7) should forward-link to A3 as the depth page. Currently B7's POS paragraph stops at "Investment companies (most BTL SPVs) are not trading and cannot meet this condition. Property development trading companies can sometimes meet it." A wave-merge edit should add: "For the depth treatment of the s.1033 trade-benefit gate, the dividend-treatment default, the CA 2006 procedural mechanics, and worked scenarios, see our <a href='/blog/incorporation-and-company-structures/property-spv-share-buyback-out-of-distributable-reserves-mechanics'>property SPV share buyback guide</a>."
+2. **INTERNAL_LINK:** Wave 6 A4 (MVL, same branch) "Comparison vs SSE-route and POS-route" subsection should pick up an explicit `<a href>` to A3. A4 currently has a prose forward-reference but no link. Mechanical wave-merge patch.
 
 ### 2-3 sentence summary
+A3 inverts the standard POS treatment by leading with the failure mode: the s.1033 capital-treatment gateway requires the company to be an unquoted trading company, and a pure BTL property SPV is not a trading company on the Pawson line. The CA 2006 Part 18 procedural mechanics (distributable reserves, s.694 special resolution, contract document, SH03 stamping, 0.5% stamp duty) apply regardless of which tax outcome lands; the working assumption for a property SPV is dividend treatment under CTA 2010 s.1000(1)(B). Two worked scenarios anchor the analysis: a clean phased dividend-treatment POS for a retiring co-shareholder, and a failed capital-treatment claim where HMRC re-characterises and adds interest plus 15% inaccuracy penalty.

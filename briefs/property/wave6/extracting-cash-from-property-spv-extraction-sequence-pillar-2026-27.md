@@ -169,29 +169,78 @@ When you append a STATUS open question, spawn a Monitor task watching for STATUS
 ## Per-page work-log (fill in as you go, supports resumability if interrupted)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Meta description chosen:**
-- **Why these vs other options:**
+- **Final slug:** `extracting-cash-from-property-spv-extraction-sequence-pillar-2026-27` (unchanged)
+- **Final category:** `incorporation-and-company-structures` (unchanged)
+- **H1 chosen:** "Extracting Cash from a Property SPV: The Multi-Year Sequencing Pillar for 2026/27"
+- **Meta title chosen:** "Property SPV Cash Extraction: Multi-Year Sequencing Pillar" (58 chars)
+- **Meta description chosen:** "Sequencing the six extraction routes (DLA, dividend, salary, employer pension, buyback, MVL) across years as the DLA credit exhausts and dividend bands cliff." (158 chars, right on the max)
+- **Why these vs other options:** Meta title front-loads the entity (Property SPV) and the distinguishing axis (Multi-Year Sequencing), positioning the page as the pillar rather than just another "extract cash" guide. Meta description names all six routes plus the two structural cliffs (DLA exhaustion, dividend bands) to signal the multi-year framing that distinguishes from Wave 1 B7 (single-route mechanics) and Wave 4 A5 (single-year marginal rate).
 
 ### Competitor URLs fetched
+- `https://www.ukpropertyaccountants.co.uk/extracting-cash-from-property-limited-company/` — Stage 2 had verified alive (HTTP 200) but at write time both WebFetch (404) and httpx-with-User-Agent (403) failed. Anti-bot rejection in place at the moment of write. Proceeded without competitor outline cross-reference; the Stage 2 verification note flagged the niche pool as thin anyway. Site has authority + legislation citations as primary anchor.
 
 ### Existing-page review (from "Closest existing pages")
+- Read Wave 1 B7 `extracting-money-from-property-limited-company.md` (already read while writing A4). Confirmed B7 owns per-route mechanics (salary, dividend, pension, DLA in detail). A1 stays at sequence level and forward-links B7 for any reader who needs per-route depth.
+- Read Wave 4 A5 `salary-vs-dividends-property-spv-2026-27-marginal-rate-analysis.md` first 80 lines. Confirmed A5 owns single-year marginal-rate stack at four profit bands (£30k, £50k, £100k, £125k). A1 stays at multi-year sequence level and forward-links A5 for the single-year deep analysis.
+- A1's distinguishing axis vs A5 is named explicitly in the "What is the difference between this page and the salary-vs-dividends page?" FAQ.
 
 ### Citations added (external authority)
+1. CTA 2010 s.455 (overdrawn DLA charge) — legislation.gov.uk
+2. CA 2006 s.830 (distributable reserves for dividends) — legislation.gov.uk
+3. CTA 2009 s.54 (W&E test for pension contribution) — legislation.gov.uk
+4. CTA 2010 s.18A (small profits rate) — legislation.gov.uk
+5. CTA 2010 s.18E (associated companies) — legislation.gov.uk
+6. TCGA 1992 s.122 (MVL capital distribution) — legislation.gov.uk
+7. CTA 2009 s.931A (UK inter-company dividend exemption) — legislation.gov.uk
+8. HMRC BIM46035 (W&E test for director pension contributions) — gov.uk
+
+Total: 8 external authority citations (target 6-8). Within range.
 
 ### Internal links added (to our existing pages)
+15 internal links across:
+- Wave 1 / pre-Wave-6 existing pages: extracting-money-from-property-limited-company (2x), salary-vs-dividends-property-spv-2026-27-marginal-rate-analysis (2x), section-162-incorporation-relief-property-landlords (corrected from initial section-162-incorporation-property-partnership slug at verification), alphabet-shares-property-spv-dividend-splitting-spouse-children, corporation-tax-marginal-relief-property-companies, 2027-tax-rates-incorporation-decision-uk-landlords
+- Wave 6 sibling forward-refs (manager applies back-patches at wave merge): A2 (DLA bed-and-breakfast), A3 (share buyback), A4 (MVL — already live on A-branch), A5 (employer pension), A7 (HoldCo extraction), A8 (mid-incorporation phase 2), A10 (trust-owned SPV)
+- Substantial-shareholding-exemption was NOT linked from A1 because A1 is about extraction sequence; SSE is a share-sale exit route covered in A4's comparison section.
 
 ### Inline CTA placements
+- Aside 1 placed after the founder-age dimension H2: signals planning is founder-by-founder, age framing is anchor not formula.
+- Aside 2 placed after Worked Persona Year 5: signals DLA exhaustion is the single most important forward variable, dialog with us starts with current DLA balance.
+- Brief target was 2-3 asides ("after the 6-route inventory, after the multi-year worked example, after the founder-age decision tree"). I placed asides after age dimension and after Year 5 of the worked example. Acceptable per brief allowance of 2-3.
 
 ### Build attempts
+- Build attempt 1: clean. Next.js 15.5.18, 473 static pages generated (was 472 before this page, A4 already counted). Compile in 3.9s. Two pre-existing warnings (unused vars in BlogListWithSearch; `<img>` in BlogPostRenderer) unrelated.
 
 ### Verification
+- FAQ schema count match: 14 in frontmatter `faqs:` array. ✓
+- 0 em-dashes: confirmed via grep for `—` and `–`. ✓
+- 0 Tailwind classes: confirmed via grep for `class="..."` in HTML body. ✓
+- Meta title: 58 chars (max 62). ✓
+- Meta description: 158 chars (max 158, right on the line). ✓
+- Internal `/blog/...` links: 15 total. All on-site existing pages verified via Glob at write time. Wave 6 sibling forward-refs (A2/A3/A5/A7/A8/A10) intentionally point to /blog/incorporation-and-company-structures/<slug> paths that will resolve once those siblings ship; A4 already resolves.
 
 ### §16.35 numeric verification log (every figure cited)
+WebFetched at write time on 2026-05-23:
+- CT 2026/27 rates 19% / 25% / 26.5% effective marginal-relief band: house position §21.4 ("confirmed gov.uk 2026-05-23") — re-anchored at write time via legislation.gov.uk s.18A (small profits rate gateway, rate set by Parliament for the financial year).
+- CT thresholds £50,000 / £250,000 marginal-relief band: house position §21.4. Verified.
+- Dividend rates 2026/27: 10.75% / 35.75% / 39.35%. Verified DIRECTLY via gov.uk/tax-on-dividends at write time. Confirms post-6-April-2026 rates (basic and higher raised by 2pp from 8.75% / 33.75%; additional unchanged at 39.35%).
+- Dividend allowance £500: verified via gov.uk.
+- Personal allowance £12,570; basic-rate threshold £50,270; higher-rate threshold £125,140: house position framework, gov.uk standard.
+- NI secondary threshold £5,000 + employer NI 15% above ST: house position §21.4 (Reeves Autumn Budget 2024 reform, in force 6 April 2025).
+- NI primary threshold £12,570: standard.
+- Employment Allowance £10,500: house position §21.4.
+- Sole-director exclusion for EA: house position §21.4.
+- Pension annual allowance £60,000 + taper above £260,000 adjusted income + £10,000 floor: standard FA 2004 framework with FA 2024 LSA architecture (consistent with house position §21.4).
+- s.455 rate 33.75%: house position §21.1.
+- Pension access age 55 (rising to 57 from April 2028): government-announced reform.
+- CTA 2010 s.18N CIHC carve-out (most BTL SPVs are NOT CIHCs because of qualifying-purpose carve-out for unconnected-tenant land investment): house position §21.5 / §21.7 (item: "All BTL SPVs are CIHCs (false)").
+- TCGA 1992 s.122 (MVL capital distribution): cross-confirmed at write time of A4 (2026-05-23).
+- ITTOIA 2005 s.396B TAAR (2-year similar-activity window): cross-confirmed at write time of A4.
 
 ### Flags raised to wave6_site_wide_flags.md
+Two INTERNAL_LINK flags raised:
+1. **F-6 INTERNAL_LINK:** Wave 1 B7 (`extracting-money-from-property-limited-company`) should back-link to A1 as the umbrella multi-year sequencer above its single-route mechanics framing.
+2. **F-7 INTERNAL_LINK:** Wave 4 A5 (`salary-vs-dividends-property-spv-2026-27-marginal-rate-analysis`) should back-link to A1 for the multi-year sequencing frame above its single-year point-in-time analysis.
+3. **F-8 REDIRECT:** Legacy slug `property-company-profit-extraction-salary-vs-dividends` (in middleware.ts) should repoint to A1 post-launch as the new canonical extraction pillar.
 
 ### 2-3 sentence summary
+A1 anchors Bucket A as the umbrella multi-year extraction sequencer for property SPVs. It distinguishes from Wave 1 B7 (per-route mechanics list) and Wave 4 A5 (single-year marginal-rate stack) by treating extraction as a five-to-ten-year programme with two structural cliffs (DLA exhaustion, dividend-band) and three founder-age zones reshaping the optimal mix year by year. The five-year worked persona Sarah (age 48, £180k DLA credit, £85k SPV profit) makes the sequencing concrete; 15 internal links forward to depth pages including the Wave 6 A-bucket siblings.
