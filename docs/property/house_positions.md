@@ -2867,8 +2867,10 @@ A company's expenditure qualifies as "qualifying land remediation expenditure" o
 - **Automatic disapplication for dwellings (Sch 10 para 5):** option does NOT apply to grants of buildings "designed or adapted, and intended, for use as a dwelling or number of dwellings, or solely for a relevant residential purpose". Automatic — no election by recipient required.
 - **Recipient-certified disapplication (Sch 10 para 6):** recipient can disapply the option by certifying intended use as dwelling / relevant residential purpose. **VAT 1614D** certificate.
 - **Developers of exempt land anti-avoidance (Sch 10 para 12):** option does NOT apply where the grant is made by a developer of exempt land in certain anti-avoidance fact patterns — caught: developer + grant to connected party + recipient intends mixed-use. Distinct from paras 5/6.
-- **Real estate election (Sch 10 para 21):** election to opt all current and future interests in land owned by a person — VAT 1614E (election) + VAT 1614F (revocation).
-- **Prior permission required (Sch 10 para 28-30):** option may require HMRC prior permission in certain anti-avoidance fact patterns — VAT 1614B form.
+- **Real estate election (Sch 10 para 21):** election to opt all current and future interests in land owned by a person — **VAT 1614E** (election). REE revocation is NOT a numbered form — revocation is by Commissioner direction only under para 21(5) for non-compliance. **VAT 1614F** is the separate "Exclude a new building from an option to tax" form for paragraph 21(3)-(5) new-building carve-outs from an existing REE (not for revoking the REE itself).
+- **Prior permission required (Sch 10 paras 28-30):** option may require HMRC prior permission in certain anti-avoidance fact patterns — application is on **VAT 1614H** ("Apply for permission to opt to tax land or buildings"). HMRC's decision returns as a letter, not a numbered form. (Correction 2026-05-25 Stage 2b F-5 catch — earlier "VAT 1614B" framing was incorrect; VAT 1614B is the "Stop being a relevant associate to an option to tax" form, used for relevant-associate cessation, NOT prior permission.)
+- **Housing-association disapplication (Sch 10 para 10):** opt-to-tax does NOT apply on the grant of land sold to a relevant housing association where the recipient certifies on **VAT 1614G** ("Disapply the option to tax land sold to housing associations"). Distinct from §29.3 paras 5/6 dwelling disapplications.
+- **Relevant-associate cessation (Sch 10 para 22):** a relevant associate connected to an opter can cease that status on **VAT 1614B** ("Stop being a relevant associate to an option to tax").
 
 ### 29.4 TOGC (VATA 1994 s.49 + SI 1995/1268 reg 5)
 
@@ -2912,7 +2914,18 @@ A company's expenditure qualifies as "qualifying land remediation expenditure" o
 - SI 1995/2518 regs 99-110 (partial exemption — standard method 101, special method 102, override 107A, de minimis 106) + regs 112-116 (CGS).
 - FA 2012 c. 14 Sch 26 paras 5(2) + 7(1) (inserting self-storage standard-rated carve-out at Sch 9 Gr 1 para (ka)).
 - HMRC VAT manuals (VATLP — Land and Property), Notice 706 (partial exemption), Notice 700/9 (TOGC), Notice 742 + 742A (land + option to tax), Notice 708 (buildings + construction), Notice 706/2 (CGS).
-- VAT form series: 1614A (option election), 1614B (prior permission), 1614C (cooling-off revocation), 1614D (recipient dwelling certification), 1614E (real estate election), 1614F (revoke real estate election), 1614G (grant of permission), 1614H (notification), 1614J (20-year revocation).
+- VAT 1614 form series (verified against gov.uk publication pages 2026-05-25; F-5 Wave 8 catch — earlier mapping mis-attributed B/F/G/H):
+  | Form | Verified verbatim title | Operative use |
+  |---|---|---|
+  | VAT1614A | "Tell HMRC about an option to tax land and buildings" | Standard option notification (Sch 10 para 2), 30-day window |
+  | VAT1614B | "Stop being a relevant associate to an option to tax" | Relevant-associate cessation (Sch 10 para 22) — NOT prior permission |
+  | VAT1614C | "Revoke an option to tax within 6-month cooling off period" | Sch 10 para 23 cooling-off revocation |
+  | VAT1614D | "Certificate to disapply the option to tax buildings" | Sch 10 para 6 recipient-certified residential conversion |
+  | VAT1614E | "Opting to tax land and buildings: notification of a real estate election" | Sch 10 para 21 REE notification |
+  | VAT1614F | "Exclude a new building from an option to tax" | Sch 10 para 21(3)-(5) new-building exclusion from an existing REE — NOT revoke REE |
+  | VAT1614G | "Disapply the option to tax land sold to housing associations" | Sch 10 para 10 housing-association disapply |
+  | VAT1614H | "Apply for permission to opt to tax land or buildings" | Sch 10 paras 28-30 prior permission — NOT 1614B |
+  | VAT1614J | "Revoke an option to tax after 20 years" | Sch 10 para 25 20-year revocation |
 
 ### 29.10 Things to flag (do NOT decide unilaterally)
 
