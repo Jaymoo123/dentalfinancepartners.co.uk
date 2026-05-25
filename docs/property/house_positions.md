@@ -2313,10 +2313,10 @@ This §1.I mini-lock closes F-2 from Wave 9 Stage 1b. The §1 main do-not-write 
   - £925,001 — £1,500,000: **15%** (was 13%)
   - £1,500,001+: **17%** (was 15%)
   - **Verify at write time (§16.27 rate-by-reference):** these rates are the current state per the 2026-05-25 verification; sessions writing must re-verify against gov.uk SDLT calculator page.
-- **3-year replacement-window architecture (the refund route for surcharge paid pending old-home sale):** governed by Sch 4ZA **para 3(6)-(7B)**.
+- **3-year replacement-window architecture (the refund route for surcharge paid pending old-home sale):** governed by Sch 4ZA **para 3(6)-(7B)** (CORRECTED 2026-05-25 per F-5 Wave 9 RUN catch — earlier framing conflated the extension TEST with the extension POWER).
   - **Para 3(7)(b):** defines a "permitted period" for disposing of the prior residence to qualify for surcharge refund.
-  - **Para 3(7A):** the permitted period is **(a) three years beginning with the day after the effective date** of the higher-rate transaction; OR **(b)** a longer period if HMRC grants an exceptional-circumstances extension per para 3(7B).
-  - **Para 3(7B):** HMRC may extend the period beyond 3 years where the prior residence could not be sold within the standard window due to exceptional circumstances (typically COVID-era delays, conveyancing-chain failure, market freeze). Extension is discretionary; needs application.
+  - **Para 3(7A):** the permitted period is **(a) three years beginning with the day after the effective date** of the higher-rate transaction; OR **(b) such longer period as HMRC may agree where exceptional circumstances prevented disposal within the 3-year window** (this is the TEST — the condition that defines when an extended period qualifies; HMRC's POWER to agree the longer period is at para 3(7B)).
+  - **Para 3(7B):** the operative GRANT of HMRC's discretionary power to agree a longer period under para 3(7A)(b). Distinct from the test: 3(7A)(b) defines WHAT qualifies; 3(7B) confers HMRC's power to AGREE that something qualifies. Application is taxpayer-initiated; HMRC decision is discretionary; exceptional circumstances typically COVID-era delays, conveyancing-chain failure, market freeze (routine market delay does not qualify).
 - **Refund claim mechanics:**
   - **Time limit for refund:** within 12 months of the sale of the prior residence OR within 12 months of the SDLT return filing date, whichever is later (FA 2003 Sch 11A — overpayment relief regime as adapted for Sch 4ZA refunds).
   - **Form:** SDLT amendment via HMRC's online SDLT return amendment service or by letter to Stamp Office.
@@ -2325,7 +2325,8 @@ This §1.I mini-lock closes F-2 from Wave 9 Stage 1b. The §1 main do-not-write 
 - **Do not write:**
   - "Surcharge is 3%" (false; raised to 5% by FA 2025 s.51 effective 31 October 2024 for transactions with effective date on/after that day; verify against gov.uk for any subsequent changes).
   - "The 3-year window is at Sch 4ZA para 3(7)(a)" (false; "permitted period" is at para 3(7)(b); the 3-year length is at para 3(7A)(a)).
-  - "HMRC extensions to the 3-year window are routine" (false; para 3(7B) is discretionary, requires exceptional circumstances; routine market delay does not qualify).
+  - "The extension TEST is at para 3(7B)" (false — para 3(7B) is the POWER to grant; the TEST that defines when an extended period qualifies is at para 3(7A)(b)). F-5 Wave 9 RUN catch.
+  - "HMRC extensions to the 3-year window are routine" (false; para 3(7A)(b) requires exceptional circumstances; para 3(7B) power is discretionary; routine market delay does not qualify).
   - "Refund must be claimed within 12 months of the SDLT effective date" (false; the 12-month clock runs from the LATER of sale of prior residence OR SDLT return filing date).
 - **HMRC manual anchor:** SDLTM09730+ (higher rates for additional dwellings); SDLTM09750+ (replacement of main residence + refund).
 - **Practical writing rule for A2:** lead with the 5% current rate + statutory authority (correcting any "still 3%" confusion); then the 3-year window mechanic + statutory anchor (para 3(7A)(a)); then the refund claim mechanics + time limits; then the exceptional-circumstances extension route. Cross-link the existing page for the basic process; A2 is the architecture + edge-case page.
