@@ -315,6 +315,95 @@ Plan against these scheduled rates while noting they require enactment to crysta
 
 ---
 
+## 11.A ECCTA 2023 + ECTEA 2022 statutory-section depth — Wave 9 mini-lock (added 2026-05-25)
+
+This §11.A mini-lock closes F-10 from Wave 9 Stage 1b. Extends the §11 timeline with verbatim statutory anchors so Wave 9 Bucket B (B1 ID verification + B2 RoE + B3 confirmation statement) writes against locked references, not seed-flagged candidates.
+
+**Important Stage 1b corrections to F-10 flag content (sub-agent surfaced flag with several structural errors — corrected here):**
+1. ECCTA 2023 Part 1 is NOT organised by "Chapter 1 / 2 / 4" — it is **23 sections grouped under crossheadings** (no Chapter structure). Sub-agent's "Chapter" framing is wrong.
+2. ECCTA 2023 Schedule 12 is "**Criminal liability of bodies: economic crimes**" (a Part 5 matter — failure to prevent fraud) — it does NOT amend ECTEA 2022 / Register of Overseas Entities. RoE amendments live elsewhere in ECCTA (Part 3 + various schedules; Stage 2 sub-agent verifies precise location).
+3. RoE statute is **ECTEA 2022 c. 10** (Economic Crime (Transparency and Enforcement) Act 2022), NOT ECCTA 2023. The 2023 Act amends the 2022 Act in places but RoE primary anchor is ECTEA 2022.
+
+### Statutory anchor map (verified at https://www.legislation.gov.uk/ukpga/2023/56/contents on 2026-05-25)
+
+**ECCTA 2023 Part 1 (Companies) — section-grouped crossheadings:**
+- **s.1** — Registrar's objectives (CA 2006 amendment inserting new s.1081A statement of objectives).
+- **ss.2-7** — Company formation: identity verification at incorporation; disqualification checks.
+- **ss.8-22** — Company names: restrictions, change powers, enforcement.
+- **ss.23-27** — Business names.
+- **ss.28-30** — Registered offices + **registered email addresses** (the new requirement — CA 2006 inserted-s.88A and following). REGISTERED EMAIL IS A CH-TO-COMPANY CORRESPONDENCE CHANNEL ONLY — NOT PUBLISHED ON PUBLIC REGISTER.
+- **ss.31-39** — Disqualification regime updates.
+- **ss.40-45** — Directors (includes ID verification mechanics for new + existing directors).
+- **ss.46-50** — Register of members (private register reforms).
+- **ss.51-52** — **Abolition of local registers** for directors, secretaries, and PSCs (consolidates at the Companies House central register).
+- **ss.59-63** — **Confirmation statements + lawful purposes notification** (the new "lawful purposes" statement added to the annual confirmation statement obligation).
+- **s.64** — Director identity verification operative provisions.
+- **s.65** — PSC identity verification operative provisions.
+- **s.66** — **Authorised Corporate Service Providers (ACSPs)** authorisation regime (CA 2006 inserted-section for ACSP registration and supervision by AML supervisor).
+- **ss.67-69** — Identity verification: continuing obligations + offences.
+
+**ECTEA 2022 (Register of Overseas Entities) — anchors per Part 1:**
+- **ECTEA 2022 s.4** — Application for registration of overseas entity.
+- **ECTEA 2022 s.7** — Updating duty (annual update obligation — due within **14 days of the registration anniversary** per the £2,500 + £500/day penalty regime carried in §11 main).
+- **ECTEA 2022 s.8** — Removal from register on application.
+- **ECTEA 2022 s.34** — Restrictions on registrable beneficial owners (disposition-block where non-compliant — operationalised via LRA 2002 Sch 4A for England + Wales; Scottish + Northern Irish equivalents in separate regulations).
+- **ECTEA 2022 s.36** — Offences for false statements / failure to register / failure to update.
+
+**Commencement chain (CRITICAL — phased rollout; verify at write time per §16.27 rate-by-reference + phased-commencement-by-reference discipline):**
+- **8 April 2025:** ID verification opens VOLUNTARILY for directors + PSCs (per Commencement Regulations published end-2024).
+- **Autumn 2025 (precise date subject to further Commencement Regulations):** ID verification becomes MANDATORY for new directors at incorporation + new PSCs notified to CH.
+- **2026 (date subject to further regs):** ID verification mandatory for ALL EXISTING directors + PSCs (transitional period for catch-up verification).
+- **4 March 2024:** Companies (Registration etc) Regulations 2024 — confirmation statement changes effective (registered email + lawful purposes statement).
+- **1 March 2024 (per ECCTA 2023 Sch 2 commencement):** ECTEA 2022 amendments via ECCTA Part 3 in force.
+- **1 August 2022:** RoE in force per ECTEA 2022.
+
+**Sessions writing Bucket B MUST WebFetch the canonical commencement-tracking page at write time:** `https://www.gov.uk/government/news/changes-to-uk-company-law` (Companies House campaign page) — this is the authoritative current-state source. DO NOT rely on this mini-lock's commencement state as cached; verify at every write.
+
+### Authorised Corporate Service Provider (ACSP) framework — what landlords' accountants do
+
+- ACSPs are firms supervised for AML purposes (under MLR 2017) that register with Companies House to perform identity verification on behalf of clients.
+- For landlord LtdCos, the typical ACSP is the company's accountant or company-secretarial agent.
+- Directors / PSCs of landlord LtdCos may verify identity (a) directly with Companies House via the GOV.UK ID-check service OR (b) through their ACSP. ACSP route is preferred where the accountant already holds AML-verified ID documents.
+- One natural-person verification covers all directorships + PSC interests — verification is per-person, not per-company.
+
+### Operational implications for landlord LtdCos
+
+- **Director ID verification:** every individual director must be verified. Existing landlord LtdCos with 2-4 director roles across multiple SPVs verify each director ONCE.
+- **PSC ID verification:** every PSC (typically 25%+ shareholder / controller) must be verified. For BTL portfolio structures with multiple SPVs, the same individual is usually PSC of all — one verification covers all.
+- **Registered email:** every UK company must designate a registered email address for CH correspondence (NOT published publicly). Companies must keep this up to date — failure is an offence.
+- **Lawful purposes statement:** the confirmation statement now requires a positive statement that the company's intended future activities are lawful. Typically tick-box on the online filing; substantive obligation if challenged.
+- **PSC public-register integration:** local PSC registers abolished (ss.51-52); PSC info now lives only at Companies House central register.
+
+### Do-not-write list (extends §11 main + Wave 9 Bucket B specific)
+
+- "ECCTA 2023 Part 1 is organised by Chapters" (false; section-grouped crossheadings only — no Chapter structure).
+- "Schedule 12 of ECCTA 2023 amends ECTEA 2022" (false; Sch 12 is "Criminal liability of bodies: economic crimes" addressing failure-to-prevent-fraud — Part 5 territory).
+- "Register of Overseas Entities is in ECCTA 2023" (false; RoE primary anchor is ECTEA 2022 c. 10; ECCTA 2023 amends it in places but is not the primary statute).
+- "ID verification is voluntary" (false if mandatory by write date — verify against gov.uk Companies House campaign page).
+- "Registered email is published on the public register" (false — CH-to-company correspondence only; NOT publicly visible).
+- "Appropriate address rule allows PO boxes" (false post-4-March-2024 — registered office must be an "appropriate address" with capacity to acknowledge service of documents; PO boxes do not qualify).
+- "RoE annual update is due on calendar-year anniversary" (false — update period is anchored to registration date, due within 14 days of that anniversary).
+- "Each SPV needs separate ID verification" (false — one natural-person verification covers all directorships + PSC interests for that person).
+- "Lawful purposes statement is a one-off declaration" (false — re-stated annually on each confirmation statement).
+- "ACSP is mandatory for landlord LtdCos" (false — ID verification can be direct with CH; ACSP is one option, typically used where the accountant already holds AML-verified ID).
+- "s.267 deemed domicile applies to overseas entities" (false — wrong regime; that's IHTA 1984 / FA 2025 territory per §22.X, not RoE).
+
+### HMRC + Companies House manual anchors
+
+- **gov.uk Companies House campaign page:** https://www.gov.uk/government/news/changes-to-uk-company-law (the canonical commencement-state tracker — Bucket B sessions MUST WebFetch at write time).
+- **Companies House guidance:** GP1 (incorporation) + GP2 (life of a company) + ID-verification specific guidance pages on gov.uk.
+- **legislation.gov.uk anchors:** https://www.legislation.gov.uk/ukpga/2023/56/contents (ECCTA 2023); https://www.legislation.gov.uk/ukpga/2022/10/contents (ECTEA 2022).
+
+### Practical writing rules for Bucket B sessions
+
+- **B1 (ID verification):** lead with commencement state (voluntary-now → mandatory-X-date; verify date at write time); then who must verify (directors + PSCs); then how (direct with CH or via ACSP); then operational implications for multi-SPV BTL structures (one-person-one-verification).
+- **B2 (RoE):** lead with the ECTEA 2022 anchor (not ECCTA 2023); annual update mechanics + 14-day window + penalty regime; the disposition-block consequence via LRA 2002 Sch 4A; correction of "applies only to new acquisitions" misframing.
+- **B3 (confirmation statement):** lead with 4 March 2024 commencement; new elements (lawful purposes statement + registered email); operational filing mechanics; the offence-of-false-statement risk.
+
+**End §11.A.** Wave 9 Bucket B B1 + B2 + B3 use this lock + cross-verify against the gov.uk Companies House page at write time. Stage 2 sub-agent for Bucket B uses this lock as the authoritative starting point — any contradictions surface as Stage 2b drift catches.
+
+---
+
 ## 12. Renters' Rights Act 2026
 
 **Locked position (as of May 2026):** the Renters' Rights Bill was reintroduced under the Labour government and is **in passage**. Key tenets being legislated:
