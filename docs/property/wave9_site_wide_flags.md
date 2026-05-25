@@ -26,7 +26,7 @@ Flags never block. Sessions continue work after flagging.
 ## F-6 — HOUSE_POSITION_EXTENSION / BRIEF_DRIFT — HP §1.J cites Hyman UT as "[2019] UKUT 0411 (TCC)"; correct citation is [2021] UKUT 68 (TCC)
 
 **Raised:** 2026-05-25, RUN-phase, Session A (Wave 9 A3 §16.35 per-write verification catch).
-**Status:** OPEN — non-blocking; A3 written to the verbatim correct citation; recommend HP §1.J re-anchor.
+**Status:** CLOSED 2026-05-25 by manager via HP §1.J correction (commit d7a0454) — UT citation re-anchored to "[2021] UKUT 68 (TCC)" with full FTT/UT/CA trilogy noted.
 
 **Issue:** HP §1.J SDLT mixed-use rate-line mini-lock (locked 2026-05-25) cites the Upper Tribunal Hyman decision as:
 
@@ -54,7 +54,7 @@ Pattern is the §16.45 territory-novelty drift extending into HP-lock-level case
 ## F-5 — BRIEF_DRIFT — HP §1.I + Stage 2 A2 brief locate the para 3(7A)(b) extension test at "para 3(7B)"
 
 **Raised:** 2026-05-25, RUN-phase, Session A (Wave 9 A2 §16.35 per-write verification catch).
-**Status:** OPEN — non-blocking; A2 written to the verbatim statute; recommend HP §1.I tightening.
+**Status:** CLOSED 2026-05-25 by manager via HP §1.I tightening (commit 9782829) — para 3(7A)(b) extension TEST vs para 3(7B) extension POWER distinction made explicit; do-not-write list updated.
 
 **Issue:** Per-write WebFetch of `https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA/paragraph/3` on 2026-05-25 returned verbatim text confirming:
 - Para 3(7A)(a) defines the standard permitted period: "the period of three years beginning with the day after the effective date of the transaction concerned".
@@ -72,7 +72,7 @@ HP §1.I (locked 2026-05-25) and the Stage 2 A2 brief both locate the extension 
 ## F-4 — EXISTING_PAGE_STALE — existing `sdlt-5-percent-surcharge-refund-claim-process` misattributes the 3%-to-5% rate change to F(No.2)A 2024
 
 **Raised:** 2026-05-25, RUN-phase, Session A (Wave 9 A1 write-time discovery; affects A2's claim-form companion).
-**Status:** OPEN — recommend Wave 9 close back-patch.
+**Status:** DEFERRED to Wave 9 post-merge back-patch (same pattern as Wave 8 F-4(B) LRR back-patch). Existing page `sdlt-5-percent-surcharge-refund-claim-process.md` will be edited post-merge to flip FA(No.2) 2024 → FA 2025 s.51 attribution.
 
 **Issue:** The existing live page `Property/web/content/blog/sdlt-5-percent-surcharge-refund-claim-process.md` body contains (around line 62) the framing: "Since 31 October 2024 the surcharge rate has been 5% (raised from 3% in the Autumn Budget 2024 under Finance (No. 2) Act 2024)". Per HP §1.I Stage 1b correction (locked 2026-05-25), the 3%-to-5% rate change was enacted by **FA 2025 s.51(1)-(2)**, NOT F(No.2)A 2024. The Autumn 2024 Budget on 30 October 2024 was enacted in the following parliamentary session as Finance Act 2025 (c. 8); F(No.2)A 2024 carried the Spring 2024 Budget content (MDR abolition + non-resident-landlord items, not the surcharge rate). The page also links to `https://www.legislation.gov.uk/ukpga/2024/12/contents` (F(No.2)A 2024 TOC) as if it were the rate-change authority.
 
@@ -242,7 +242,7 @@ Stage 2 B has used these in the extended B1 brief. Recommend §11.A swap the dea
 ## F-14 — BRIEF_DRIFT — ECCTA 2023 Identity-verification crossheading section attributions wrong in Stage 2 brief + HP §11.A statutory map (B1 directly; B3 inherits indirectly)
 
 **Raised:** 2026-05-25 (write-time), Session B (Bucket B, pick B1 directly affected; B3 anchored on safer ECCTA-Part-1 inserting provisions so does not propagate the same drift).
-**Status:** OPEN. Recommend manager close via HP §11.A re-anchor against verbatim legislation.gov.uk section headings.
+**Status:** CLOSED 2026-05-25 by manager via HP §11.A Identity-verification crossheading re-anchor (commit 6bc44d4) — s.64/65/67/68/69 attributions corrected to verbatim legislation.gov.uk section headings. s.66 was already correct. Director-side ID verification framing pointed to CA 2006 Part 11A + ECCTA Part 1 ss.2-7+40-45 area, with Stage 2 sub-agent verification mandate.
 
 **Issue:** HP §11.A (commit `9285495`, lines 340-343) carries the following statutory anchor map for the ECCTA Identity verification crossheading:
 - "s.64 — Director identity verification operative provisions"
