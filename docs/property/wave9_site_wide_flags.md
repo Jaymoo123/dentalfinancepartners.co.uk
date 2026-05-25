@@ -26,7 +26,7 @@ Flags never block. Sessions continue work after flagging.
 ## F-1 — HOUSE_POSITION_EXTENSION — HP §1.G needed for SDLT MDR abolition (A1)
 
 **Raised:** 2026-05-25, Stage 1a seed, Session A (Bucket A, pick A1).
-**Status:** open — manager to consider for Stage 1b HP-lock pass.
+**Status:** CLOSED 2026-05-25 by manager via HP mini-lock commits (see HP file edit history).
 
 **Issue:** HP §1 main text covers MDR abolition in a single line ("Multiple Dwellings Relief (MDR) abolished for transactions with an effective date on or after 1 June 2024 (Finance (No.2) Act 2024). Anti-forestalling rules prevent late claims via sub-sale or option arrangements."). There is no dedicated sub-section covering:
 - Exact F(No.2)A 2024 section reference for the abolition.
@@ -43,7 +43,7 @@ Flags never block. Sessions continue work after flagging.
 ## F-2 — HOUSE_POSITION_EXTENSION — HP §1.H needed for SDLT 5% surcharge refund + 3-year replacement-window architecture (A2)
 
 **Raised:** 2026-05-25, Stage 1a seed, Session A (Bucket A, pick A2).
-**Status:** open — manager to consider for Stage 1b HP-lock pass.
+**Status:** CLOSED 2026-05-25 by manager via HP mini-lock commits (see HP file edit history).
 
 **Issue:** HP §1 main text covers the 5% rate change effective 31 October 2024 (Autumn Budget 2024 / F(No.2)A 2024) but has NO sub-section on:
 - FA 2003 Sch 4ZA refund mechanics (paras 8, 9).
@@ -61,7 +61,7 @@ Flags never block. Sessions continue work after flagging.
 ## F-3 — HOUSE_POSITION_EXTENSION — HP §1.I needed for SDLT mixed-use rate line + Hyman/Suterwalla/Hortons Hall case-law trilogy (A3)
 
 **Raised:** 2026-05-25, Stage 1a seed, Session A (Bucket A, pick A3).
-**Status:** open — manager to consider for Stage 1b HP-lock pass.
+**Status:** CLOSED 2026-05-25 by manager via HP mini-lock commits (see HP file edit history).
 
 **Issue:** HP §1.C (Wave 7 lock) covers Bewley uninhabitable-property test under FA 2003 s.116(1)(a) "suitable for use" limb — separate doctrine. HP has NO sub-section on the s.116(1)(b) "grounds and gardens" limb decided by the Hyman / Suterwalla / Hortons Hall trilogy:
 - Hyman v HMRC [2019] UKFTT 469 + [2021] UKUT 68 + [2022] EWCA Civ 185 — paddock / meadow / barn = residential because they form part of the dwelling's grounds. Court of Appeal binding authority.
