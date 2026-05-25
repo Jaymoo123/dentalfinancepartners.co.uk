@@ -287,8 +287,8 @@ This block extends the Stage 1 seed using HP §11.A statutory map (commit `92854
 ### Worked operational scenario (Stage 2 addition — write the page around this anchored example)
 
 **Anonymised persona — Halifax Property Holdings Ltd, a 4-year-old landlord LtdCo holding a 6-property mixed BTL + HMO portfolio in Calderdale.** Halifax Property Holdings Ltd was incorporated 1 February 2022, so it pre-dates the 4 March 2024 changes. The directors and PSCs are:
-- **Tom** (sole director, 70% shareholder — sole PSC under the 25%+ threshold).
-- **Tom's wife Aisha** (30% shareholder — also a PSC).
+- **Mark** (sole director, 70% shareholder — sole PSC under the 25%+ threshold).
+- **Mark's wife Aisha** (30% shareholder — also a PSC).
 - Registered office is currently the accountant's office (which IS an "appropriate address" because the accountant is open during business hours and capable of acknowledging service of documents — PO box virtual offices would not qualify).
 
 **Confirmation statement annual cadence:**
@@ -304,7 +304,7 @@ This block extends the Stage 1 seed using HP §11.A statutory map (commit `92854
 
 **2026 filing (mid-transition — the operative state today):**
 - Confirmation date 1 February 2026; filing due 15 February 2026.
-- Tom and Aisha BOTH need to provide their personal codes — Tom as the director AND as a PSC; Aisha as a PSC. They both verified identity in December 2025 (via GOV.UK One Login) so they each hold a personal code.
+- Mark and Aisha BOTH need to provide their personal codes — Mark as the director AND as a PSC; Aisha as a PSC. They both verified identity in December 2025 (via GOV.UK One Login) so they each hold a personal code.
 - Lawful purposes statement repeated annually — a positive statement, not a one-off.
 - Registered email confirmed unchanged.
 - Registered office still the accountant's office; the "appropriate address" rule remains satisfied because the address can acknowledge service. (If the company had been using a PO box from a mail-forwarding service that didn't actually receive and acknowledge documents, the rule would force a change.)
@@ -316,8 +316,8 @@ This block extends the Stage 1 seed using HP §11.A statutory map (commit `92854
 4. **PSC tightening + personal-code gate** at confirmation-statement filing — from 18 November 2025 for new appointments + during the 12-month transition window for existing directors + PSCs.
 
 **Where Halifax Property Holdings Ltd's filing intersects with B1 (ID verification) and B2 (RoE):**
-- **B1 cross-link:** Tom and Aisha's identity verification is a prerequisite to the 2026 confirmation statement being filed validly. The "verify before filing" rule is operational — without personal codes, the confirmation statement cannot be filed.
-- **B2 cross-link:** N/A in this scenario because Halifax Property Holdings Ltd is UK-incorporated (no RoE obligation). If Tom and Aisha had instead used a Jersey holding company to hold their UK BTL property, the Jersey company would have both an RoE annual update obligation (B2) AND a UK PSC-disclosure obligation for any UK SPVs underneath (B3 territory).
+- **B1 cross-link:** Mark and Aisha's identity verification is a prerequisite to the 2026 confirmation statement being filed validly. The "verify before filing" rule is operational — without personal codes, the confirmation statement cannot be filed.
+- **B2 cross-link:** N/A in this scenario because Halifax Property Holdings Ltd is UK-incorporated (no RoE obligation). If Mark and Aisha had instead used a Jersey holding company to hold their UK BTL property, the Jersey company would have both an RoE annual update obligation (B2) AND a UK PSC-disclosure obligation for any UK SPVs underneath (B3 territory).
 
 ### Cross-bucket boundary (anti-templating)
 
