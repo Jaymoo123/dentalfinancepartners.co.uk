@@ -337,10 +337,14 @@ This §11.A mini-lock closes F-10 from Wave 9 Stage 1b. Extends the §11 timelin
 - **ss.46-50** — Register of members (private register reforms).
 - **ss.51-52** — **Abolition of local registers** for directors, secretaries, and PSCs (consolidates at the Companies House central register).
 - **ss.59-63** — **Confirmation statements + lawful purposes notification** (the new "lawful purposes" statement added to the annual confirmation statement obligation).
-- **s.64** — Director identity verification operative provisions.
-- **s.65** — PSC identity verification operative provisions.
-- **s.66** — **Authorised Corporate Service Providers (ACSPs)** authorisation regime (CA 2006 inserted-section for ACSP registration and supervision by AML supervisor).
-- **ss.67-69** — Identity verification: continuing obligations + offences.
+- **ECCTA Identity-verification crossheading — section attributions (CORRECTED 2026-05-25 per F-14 Wave 9 RUN catch — earlier attributions for s.64/65/67/68/69 were wrong; verbatim section headings WebFetched from legislation.gov.uk):**
+  - **s.64** — "**Identity verification of persons with significant control**" — PSC-side ID verification provision (not director-side as earlier framed). Inserts CA 2006 PSC verification requirements.
+  - **s.65** — "**Procedure etc for verifying identity**" — generic procedure provision applying to BOTH director + PSC verification (not PSC-specific). The how-to of the verification process.
+  - **s.66** — "Authorisation of corporate service providers" — **Authorised Corporate Service Providers (ACSPs)** authorisation regime (CA 2006 inserted-section for ACSP registration and supervision by AML supervisor). ✓ matches earlier framing.
+  - **s.67** — "**Exemption from identity verification: national security grounds**" — exemption provision (not continuing-obligations as earlier framed). Narrow national-security carve-out.
+  - **s.68** — "**Allocation of unique identifiers**" — unique-identifier mechanic per verified individual (not offences as earlier framed). Each verified individual gets a UID used across Companies House interactions.
+  - **s.69** — "**Identity verification: material unavailable for public inspection**" — publication restriction provision (not offences). Defines what verified-identity data is withheld from public register inspection.
+  - **Director-side ID verification operative provisions** live in CA 2006 amendments inserted by ECCTA earlier in Part 1 (ss.2-7 + ss.40-45 area) plus the new CA 2006 Part 11A — Stage 2 sub-agent verifies precise section numbers at write time per §16.35.
 
 **ECTEA 2022 (Register of Overseas Entities) — anchors per Part 1 (CORRECTED 2026-05-25 per F-13 Stage 2 catch — earlier attributions for s.8 / s.34 / s.36 were wrong; verbatim section headings WebFetched from legislation.gov.uk):**
 - **ECTEA 2022 s.4** — "Application for registration" (overseas entity applies to be entered on the register).
