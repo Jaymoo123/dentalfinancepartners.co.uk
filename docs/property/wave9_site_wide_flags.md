@@ -81,7 +81,7 @@ Flags never block. Sessions continue work after flagging.
 ## F-10 — HOUSE_POSITION_EXTENSION — HP §11.A needed for ECCTA / RoE statutory-section depth (B1 + B2 + B3 all affected)
 
 **Raised:** 2026-05-25, Stage 1a seed, Session B (Bucket B, all 3 picks B1 + B2 + B3).
-**Status:** open — manager to consider for Stage 1b HP-lock pass (per §16.19 manager-review gate between Stage 1 and Stage 2).
+**Status:** CLOSED 2026-05-25 by manager via HP §11.A mini-lock (commit 9285495). Stage 1b corrections: sub-agent flag mis-attributed ECCTA "Chapter 1/2/4" structure (actually 23 sections in crossheadings) + claimed Sch 12 amends ECTEA (actually Sch 12 is criminal-liability-of-bodies) — both fixed in lock.
 
 **Issue:** §11 of `house_positions.md` (Companies House reforms / ECCTA / Register of Overseas Entities) is a high-level locked timeline of ~7 bullet lines. It locks the headline framings (ID verification voluntary 8 April 2025 → mandatory autumn 2025 / 2026; ACSP registration concept; RoE in force 1 August 2022; annual update within 14 days of anniversary; £2,500 + £500/day penalty). That depth was sufficient when no wave wrote into the territory. Wave 9 Bucket B writes 3 pages directly into the territory; Stage 2 + session writing would benefit from a §11.A Wave 9 mini-lock that anchors verbatim statutory section ranges + the operative ECCTA Part 1 Chapter 1 / Chapter 2 / Chapter 4 architecture + ECTEA 2022 Part 1 + ECCTA Sch 12 amendments.
 
