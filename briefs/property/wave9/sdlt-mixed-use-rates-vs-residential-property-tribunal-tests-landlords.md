@@ -262,42 +262,65 @@ Standard per NETNEW_PROGRAM §8.4. After raising any Q at `C:/Users/user/Documen
 ## Per-page work-log (session fills during work)
 
 ### Decisions
-- Final slug:
-- Final category:
-- H1 chosen:
-- Meta title chosen (<=62 chars):
-- Meta description (<=158 chars):
-- Why these vs other options:
+- Final slug: sdlt-mixed-use-rates-vs-residential-property-tribunal-tests-landlords (as brief)
+- Final category: Property Types and Specialist Tax
+- H1 chosen: "SDLT Mixed-Use vs Residential: How the Hyman, Suterwalla, and Hortons Hall Tribunal Line Applies to Property-Investor Acquisitions"
+- Meta title chosen (<=62 chars): "SDLT Mixed-Use Case-Law: Hyman, Suterwalla, Hortons Hall" (56 chars)
+- Meta description (<=158 chars): "FA 2003 s.116(1)(b) grounds-and-gardens test for SDLT mixed-use claims: Hyman binding authority, Suterwalla effective-date refinement, HMRC enquiry." (148 chars)
+- Why these vs other options: H1 leads with the case-law trilogy as the differentiator vs the existing higher-level classification companion; metaTitle uses the three case names for SERP density on practitioner search queries.
 
 ### Competitor URLs fetched + key takeaway per URL
--
+- Did not separately fetch competitor URLs at session time; BAILII WebFetch returned 403 on both Hyman CA [2022] EWCA Civ 185 and Suterwalla [2024] UKUT 188 (TCC) attempts (likely WAF / rate-limit blocking automated fetchers). Per-write verification (§16.35) anchored instead on: (a) the verbatim FA 2003 s.116(1)(a)/(b)/(7) text from the A1 prior WebFetch session (legislation.gov.uk); (b) standard practitioner-database citations for Hyman ([2019] UKFTT 469 (TC) → [2021] UKUT 68 (TCC) → [2022] EWCA Civ 185) and Suterwalla ([2024] UKUT 188 (TCC)); (c) HP §1.J substantive lock (with the F-6 BRIEF_DRIFT flag for HP §1.J's "[2019] UKUT 0411" Hyman UT citation which is almost certainly wrong — the UT Hyman is [2021] UKUT 68 (TCC)).
 
 ### Existing-page review (overlap, differentiation decision)
--
+- `sdlt-mixed-use-property-classification` — the existing higher-level mixed-use classification page. A3 is the CASE-LAW APPLIED to property investors. Cross-linked in opening + closing as "the higher-level classification page; A3 is the case-law-applied companion".
+- `sdlt-bewley-uninhabitable-property-test-non-residential-rates-landlords` — adjacent doctrine page (s.116(1)(a) Bewley limb). Cross-linked explicitly in the "Bewley non-conflation" H2; A3 makes clear the two doctrines must not be conflated.
+- `sdlt-six-dwellings-non-residential-election` — s.116(7) deeming companion. Cross-linked in the operational decision framework for the alternative statutory route.
 
 ### Citations added
--
+- FA 2003 s.116(1)(a) verbatim (Bewley limb; cross-reference, not the operative test for A3)
+- FA 2003 s.116(1)(b) verbatim "land that is or forms part of the garden or grounds of a building" (operative test)
+- FA 2003 s.116(7) verbatim (alternative statutory route; cross-reference)
+- FA 2003 s.55(1)(b) (mixed-use rate-application; transaction "consists of or includes" non-residential property)
+- FA 2003 s.55 Table A residential + Table B non-residential rates
+- FA 2003 s.119 effective date (load-bearing for Suterwalla "use at effective date" test)
+- FA 2003 Sch 4ZA para 18 (mixed-use additional-dwellings surcharge exemption)
+- FA 2007 Sch 24 (penalty exposure on failed mixed-use claims)
+- Hyman & Goodfellow v HMRC [2019] UKFTT 469 (TC) (first instance)
+- Hyman v HMRC [2021] UKUT 68 (TCC) (Upper Tribunal — corrected from HP §1.J's "[2019] UKUT 0411" misattribution)
+- Hyman v HMRC [2022] EWCA Civ 185 (Court of Appeal binding authority)
+- Suterwalla v HMRC [2024] UKUT 188 (TCC) (use-at-effective-date refinement)
+- Horton Hall Estates Ltd v HMRC (FTT line; cautionary corollary — specific citation referenced as "FTT line" without single controlling citation per HP §1.J caveat)
+- Bewley v HMRC [2019] UKFTT 65 (TC) (adjacent doctrine cross-reference)
+- HMRC SDLTM00370+ + SDLTM00385+ manual coverage
 
 ### Internal links added
--
+- /blog/landlord-tax-essentials/sdlt-mixed-use-property-classification (higher-level classification companion)
+- /blog/incorporation-and-company-structures/sdlt-bewley-uninhabitable-property-test-non-residential-rates-landlords (Bewley adjacent doctrine)
+- /blog/incorporation-and-company-structures/sdlt-six-dwellings-non-residential-election (s.116(7) alternative route)
 
 ### Inline CTA placements
--
+- After "Hyman v HMRC" H2 (planning-intent buyer considering mixed-use on a country-house acquisition)
+- After "operational decision framework" H2 (compound-case rural buyer)
+- After "HMRC enquiry-pattern reality" H2 (buyer currently in enquiry)
 
 ### Build attempts (pass/fail)
--
+- First build: PASS but 1 em-dash detected in body. Fixed (replaced with comma) on second pass; second build PASS. A3 rendered to .next/server/app/blog/property-types-and-specialist-tax/sdlt-mixed-use-rates-vs-residential-property-tribunal-tests-landlords.html.
 
 ### Verification (six checks)
-- em-dash count:
-- Tailwind utility classes:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+- em-dash count: 0 (after fix; initial first-build pass had 1)
+- Tailwind utility classes: 0
+- metaTitle length: 56
+- metaDescription length: 148
+- FAQ count: 12
+- Internal links resolve: all 3 cross-link targets verified on disk
+- Body word count: 3,216
+
+### monitored_pages registration
+- ID 291 inserted via optimisation_engine.competitor._db._sql; site_key=property; rewrite_type=rewrite; monitor_until=2026-08-23 (90 days).
 
 ### Flags raised to wave9_site_wide_flags.md
--
+- F-6 BRIEF_DRIFT / HOUSE_POSITION_EXTENSION — HP §1.J cites Hyman UT as "[2019] UKUT 0411 (TCC)"; correct UT citation is [2021] UKUT 68 (TCC). HP §1.J § also describes the UT as upholding the "grounds broader than garden" ratio, which is correct, but the [2019] UKUT 0411 reference is anachronistic (the FTT Hyman was [2019] UKFTT 469 (TC); the UT decision came in 2021). The Stage 2 A3 brief itself has the correct triad ([2019] UKFTT 469 (TC) → [2021] UKUT 68 (TCC) → [2022] EWCA Civ 185), so the drift is upstream at HP-lock level not in the brief. A3 written to the verbatim correct citations.
 
 ### 2-3 sentence summary
--
+- A3 walks the FA 2003 s.116(1)(b) grounds-and-gardens case-law trilogy applied to property-investor acquisitions: Hyman binding Court of Appeal authority at [2022] EWCA Civ 185, Suterwalla [2024] UKUT 188 (TCC) effective-date refinement, and the Hortons Hall FTT cautionary line. Page distinguishes the s.116(1)(a) Bewley doctrine explicitly (separate adjacent doctrine; cross-linked but not conflated) and works through a six-fact-pattern operational decision framework with three worked examples (Suterwalla-shaped win, Hyman-shaped loss, ground-floor commercial). Schedule 4ZA paragraph 18 mixed-use surcharge exemption surfaced as the compound economic stake. 3,216 body words; 12 FAQs; build clean; monitored_pages ID 291.
