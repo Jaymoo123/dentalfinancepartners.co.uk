@@ -184,3 +184,14 @@ Standard.
 - 
 
 ### 2-3 sentence summary
+
+C5 shipped as partial-exemption special-method depth, reframed from Stage 1a's original standard-method angle (standard method is the Wave 5 page). Three-lever architecture walked: reg 102 special-method approval (prior HMRC approval + written method + fair-and-reasonable declaration); reg 107A standard-method override (verified inserted by SI 2002/1074 effective 18 April 2002, NOT the SI 2002/1142 originally locked at HP §29.6 stage 1, confirms the Stage 2b correction); reg 102B HMRC direction. PESM typology table (sectorised / floor-area / headcount / transaction-count) + de minimis transition / CGS interaction sections + Lansdowne Estates floor-area-based PESM worked example showing 12-percentage-point recovery uplift on £400k residual base. 2,882 body words, 12 FAQs, 4 internal links, 0 em-dashes, 0 Tailwind, build clean.
+
+### Decisions
+- **Final slug:** unchanged.
+- **Final category:** `Property Types & Specialist Tax` per F-4.
+- **H1:** "VAT Partial Exemption Special Method: The Regulation 102 Approval, the Regulation 107A Standard-Method Override, and the PESM Decision Architecture for Mixed-Portfolio Landlords"
+- **Meta title:** 60 chars; meta description 142 chars.
+- **Anti-templating:** the three-regulation architecture (102 / 107A / 102B) plus the PESM typology table is the per-page differentiator. Worked example varies persona (Lansdowne Estates, mixed three-commercial-plus-seven-residential portfolio).
+### Verifications
+- em-dash 0; Tailwind 0; metaTitle 60; metaDescription 142; FAQ 12; body 2,882; internal links 4/4 resolve; build clean.

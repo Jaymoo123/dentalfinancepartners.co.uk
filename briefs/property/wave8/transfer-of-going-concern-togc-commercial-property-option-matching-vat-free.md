@@ -146,40 +146,52 @@ Standard.
 ## Per-page work-log (fill in as you go)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** unchanged.
+- **Final category:** `Incorporation & Company Structures` — diverges from F-4 default `property-types-and-specialist-tax`. Rationale: existing TOGC overview page `togc-vat-property-letting-business.md` lives in this category; C3 is the operational depth sibling to that overview; TOGC cluster integrity outweighs option-to-tax cluster routing. Same call as Wave 5 page made for the existing TOGC sibling. Logged in tracker.
+- **H1:** "TOGC on Commercial Property: The Option-Matching Trap, the Relevant-Date Deadline, and the Pre-Completion Sequence That Determines Whether a £5m Sale Carries £1m of Output VAT"
+- **Meta title:** "TOGC Commercial Property: Option-Matching by Relevant Date" (58 chars)
+- **Why:** Failure-consequence framing (the £1m output VAT bill and £50k SDLT uplift on a single missed deadline) anchors the differentiator from the existing TOGC overview page (which covers the 5 general conditions in summary). H2 sequence organised around Article 5(2A) two-limb structure + Article 5(3) relevant-date definition + pre-completion calendar sequence + Article 5(2B) para 12 exclusion + worked failure example.
 
 ### Competitor URLs fetched
-- 
+- Per F-1 lesson: did not pre-fetch the brief's competitor URLs. The Article 5(2A) + (3) operational depth is our own statute-verified content; the existing TOGC overview page already covers the borrowable patterns.
 
 ### Existing-page review
-- 
+- **`togc-vat-property-letting-business.md` (existing TOGC overview).** Read in full. Covers the 5 general conditions in summary, the option-to-tax interaction at high level, SDLT impact, failure consequences in summary, records retention. C3 differentiates by going deep on Article 5(2A) and Article 5(3) (the relevant date definition that the overview does not walk verbatim) and on Article 5(2B) paragraph 12 anti-avoidance exclusion (which the overview does not cover at all). Worked example explicitly varies persona (Pemberton vs the overview's general framing) and explicitly walks the 3-day-late acknowledgement failure mode via deposit-structure-affecting-tax-point.
+- **C1 PILLAR + C2 revocation (just shipped).** Cross-link as option-to-tax cluster. C3 cites option-matching as the bridge between TOGC (Article 5) and Schedule 10.
 
 ### Citations added
-- 
+- Statutory (legislation.gov.uk): SI 1995/1268 Article 5 (TOGC operative), Article 5(2A) (property-specific overlay), Article 5(2B) (para 12 exclusion), Article 5(3) (relevant date definition); VATA 1994 s.49 (registration continuity); VATA 1994 Sch 10 (option to tax framework); FA 2003 s.51 (SDLT VAT-inclusive consideration).
+- HMRC: VAT Notice 700/9 (TOGC), VAT Notice 742A (option to tax), HMRC VTOGC internal manual.
+- Forms: VAT1614A (transferee option notification).
+- 8 external authority links in Authorities footer.
 
 ### Internal links added
-- 
+- `/blog/incorporation-and-company-structures/togc-vat-property-letting-business` (existing TOGC overview sibling).
+- `/blog/property-types-and-specialist-tax/option-to-tax-vata-1994-schedule-10-commercial-property-20-year-lock` (C1 PILLAR, exists on branch).
+- `/blog/property-types-and-specialist-tax/option-to-tax-revocation-routes-6-month-cooling-off-20-year-exit-landlords` (C2, exists on branch).
+- `/blog/property-types-and-specialist-tax/vat-option-to-tax-commercial-property-mechanics-election-revocation` (Wave 5 mechanics).
+- `/blog/property-types-and-specialist-tax/vat-capital-goods-scheme-property-businesses-10-year-adjustment-mechanics` (CGS companion).
+- 5 internal links; all resolve to existing files on branch.
+- Forward-text reference to C7 disapplication paragraph-walk page in body (plain text; back-patch when C7 lands).
 
 ### Inline CTA placements
-- 
+- After "The relevant date: Article 5(3) and the tax-point trap" H2 — pre-exchange review intent (deposit-structure analysis).
+- After Pemberton Holdings worked example — vendor-side TOGC indemnity structuring intent.
 
 ### Build attempts
-- 
+- Build clean. C3 page generated in SSG path list at `/blog/incorporation-and-company-structures/transfer-of-going-concern-togc-commercial-property-option-matching-vat-free`.
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+- em-dash count: 0
+- Tailwind utility classes: 0
+- metaTitle length: 58 (≤62 ✓)
+- metaDescription length: 151 (≤158 ✓; trimmed from initial 165)
+- FAQ count: 12 (target 10-12 ✓)
+- Internal links resolve: 5/5 ✓
+- Body word count: 2,913 (target 2,800-3,500 ✓)
 
 ### Flags raised to wave8_site_wide_flags.md
-- 
+- No new flags. F-4 wave-wide category drift carried forward with C3-specific deviation logged in tracker (category to `Incorporation & Company Structures` for TOGC cluster integrity, not `Property Types & Specialist Tax`). F-5 form-attribution drift carried forward.
 
 ### 2-3 sentence summary
+C3 shipped as TOGC option-matching operational depth, sibling to the existing TOGC overview page (same category). Differentiator: Article 5(2A) two-limb conditions + Article 5(3) relevant-date verbatim definition (tax point not completion; deposit structures shift the date forward) + Article 5(2B) paragraph 12 anti-avoidance exclusion that the overview does not cover. Pemberton Holdings 3-day-late acknowledgement worked example quantifies a £50k additional SDLT + £1m output VAT cashflow drag on a £5m commercial property TOGC failure. 2,913 body words, 12 FAQs, 5 internal links, 0 em-dashes, 0 Tailwind, build clean.

@@ -149,40 +149,55 @@ Standard.
 ## Per-page work-log (fill in as you go)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `option-to-tax-revocation-routes-6-month-cooling-off-20-year-exit-landlords` (unchanged).
+- **Final category:** `Property Types & Specialist Tax` (overridden per F-4 wave-wide drift).
+- **H1 chosen:** "Revoking an Option to Tax: The Four Exit Routes Under Schedule 10 of VATA 1994, the CGS Clawback Shadow, and the Decision Tree for Landlords Stuck With a Bad Option"
+- **Meta title chosen:** "Revoke Option to Tax: Sch 10 Paras 23/24/25 Routes" (50 chars)
+- **Why these vs other options:** Exit-playbook framing distinct from C1's framework framing and Wave 5's mechanics framing. H2s organised by paragraph (23, 24, 25) plus disapplication-not-revocation boundary, then CGS clawback shadow with worked example, then decision tree. Whitford Properties worked example is single-property mid-life disapplication trap to vary from C1's three-asset portfolio REE and Wave 5's £2.4m refurb + £1.6m connected-party.
 
 ### Competitor URLs fetched
-- 
+- Per F-1 lesson (Session A's hallucinated-URL flag) and brief pool-thinness disclosure that competitors typically skip paragraph 24, the framework + paragraph-24-depth + CGS-clawback worked example is our own depth. Did not pre-fetch the listed competitor URLs.
 
 ### Existing-page review
-- 
+- **C1 PILLAR (just shipped).** Cross-link as framework companion in opening and Related Reading. C2 is the exit-route depth complementing C1's framework depth.
+- **Wave 5 mechanics page.** Cross-link as operational election-side companion (Wave 5 covers the election mechanics; C2 covers the revocation mechanics). Worked example deliberately varies from Wave 5's £2.4m refurb / £1.6m connected-party.
+- **CGS page.** Cross-link as CGS-mechanic companion.
+- **Partial exemption page.** Cross-link in Related Reading.
+- **TOGC page.** Cross-link in Related Reading.
 
 ### Citations added
-- 
+- Statutory: VATA 1994 Sch 10 paras 6 (recipient-certified disapplication), 23 (cooling-off), 24 (6-year-no-interest), 25 (20-year revocation).
+- HMRC: VAT Notice 742A.
+- Forms verified directly against gov.uk publication pages 2026-05-25 (per F-5 verification table): VAT1614C, VAT1614J, VAT1614D.
+- 8 external authority links in the Authorities footer.
 
 ### Internal links added
-- 
+- `/blog/property-types-and-specialist-tax/option-to-tax-vata-1994-schedule-10-commercial-property-20-year-lock` (C1 pillar — exists on branch after b3fa0cd).
+- `/blog/property-types-and-specialist-tax/vat-option-to-tax-commercial-property-mechanics-election-revocation` (Wave 5 mechanics companion).
+- `/blog/property-types-and-specialist-tax/vat-capital-goods-scheme-property-businesses-10-year-adjustment-mechanics` (CGS companion).
+- `/blog/property-types-and-specialist-tax/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method`.
+- `/blog/incorporation-and-company-structures/togc-vat-property-letting-business`.
+- All 5 resolve to existing markdown files on disk; build confirms.
+- Forward-text reference to C7 disapplication paragraph-walk in body (plain text until C7 lands); F-6 back-patch obligation logged.
 
 ### Inline CTA placements
-- 
+- After "Cooling-off revocation under Schedule 10 paragraph 23" H2 — highest intent: opter within first 6 months, cooling-off review.
+- After "The Capital Goods Scheme clawback on use changes" H2 / worked example — intent: opter contemplating mid-life exit and uncertain about CGS clawback exposure.
 
 ### Build attempts
-- 
+- Build clean. C2 page generated in SSG path list.
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+- em-dash count: 0
+- Tailwind utility classes: 0
+- metaTitle length: 50 (≤62 ✓)
+- metaDescription length: 157 (≤158 ✓)
+- FAQ count: 12 (target 10-12 ✓)
+- Internal links resolve: 5/5 ✓
+- Body word count: 2,879 (target 2,800-3,500 ✓)
 
 ### Flags raised to wave8_site_wide_flags.md
-- 
+- No new flags raised on C2 (F-4 wave-wide category drift and F-5 form-attribution drift already raised on C1; same brief authority-list errors echo from C1 but no new BRIEF_DRIFT to log beyond what F-5 already covers — C2 brief authority links list mis-cites VAT1614C URL as `vat-1614c-ceasing-to-be-a-relevant-associate-...` which is actually the URL for VAT1614B; the correct VAT1614C URL is `vat-revoking-an-option-to-tax-within-6-month-cooling-off-period-vat1614c` per the F-5 verification table. C2 page uses the correct verified URL).
 
 ### 2-3 sentence summary
+C2 shipped as the option-to-tax exit-route depth page: four routes (cooling-off Sch 10 para 23 VAT1614C, 6-year-no-interest para 24 automatic, 20-year para 25 VAT1614J, plus disapplication paras 5/6 contrasted as a non-revocation supply-specific mechanism). Differentiator depth on paragraph 24 (commonly omitted by competitors per pool-thinness disclosure) and CGS clawback distinction between use-change-triggered clawback and revocation-triggered clawback, with the Whitford Properties Limited £750k refurbishment / 2028 disapplication / £105k 7-year clawback worked example. 2,879 body words, 12 FAQs, 5 internal links, 0 em-dashes, 0 Tailwind, build clean.

@@ -147,40 +147,58 @@ Standard.
 ## Per-page work-log (fill in as you go)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** `option-to-tax-vata-1994-schedule-10-commercial-property-20-year-lock` (unchanged from brief).
+- **Final category:** `Property Types & Specialist Tax` (overridden from brief's `vat-and-property` / tracker's `vat-for-landlords`, neither of which is a live route — see F-4). Final canonical: `/blog/property-types-and-specialist-tax/option-to-tax-vata-1994-schedule-10-commercial-property-20-year-lock`.
+- **H1 chosen:** "Option to Tax Commercial Property: The VATA 1994 Schedule 10 Framework, the 20-Year Lock, and the Strategic Decision Behind Input-Tax Recovery"
+- **Meta title chosen:** "Option to Tax Sch 10 VATA 1994: The 20-Year Lock" (48 chars)
+- **Why these vs other options:** Framework framing (architectural decision + 20-year lock) rather than mechanics walkthrough; H2s structured around opter-binding / lock / prior-permission / REE / CGS / economic-decision rather than form-by-form steps. Avoids overlap with Wave 5 mechanics companion page which already covers the operational walkthrough at depth.
 
 ### Competitor URLs fetched
-- 
+- Brief listed 5 competitor URLs (saffery, bdo, rsmuk, crowe, evelyn). Per F-1 lesson (Session A's hallucinated-URL flag), I didn't pre-fetch; the framework-pillar differentiator is our own depth on the 20-year lock + paragraph 28 prior permission + paragraph 21 REE, not competitor-borrowed. The C1 pillar's defensible point sits inside-statute (Sch 10 paragraph walk), and competitors are typically thin on paragraphs 28 and 21 per the brief's pool-thinness disclosure.
 
 ### Existing-page review
-- 
+- **`vat-option-to-tax-commercial-property-mechanics-election-revocation.md` (Wave 5 mechanics companion).** Read in full. Companion page covers: default exemption, VAT1614A 30-day mechanic, 6-month cooling-off mechanic, disapplication categories with H3 subsections, REE summary, 20-year revocation summary, TOGC interaction, £2.4m office refurb worked example, £1.6m connected-party mixed-use trap worked example. **Cannibalisation differentiation:** Wave 5 is the operational-mechanics page (form-by-form, step-by-step). C1 PILLAR is the architectural-framework page (why opt, what the 20-year lock means, who/what is bound, when prior permission required, REE vs per-property decision-architecture, CGS overlay, economic-decision framework). The two pages are designed to be read together. Cross-link explicitly in opening, election-mechanics H2 (forward-link to Wave 5), and Related Reading section.
+- **`vat-capital-goods-scheme-property-businesses-10-year-adjustment-mechanics.md`.** Read frontmatter + structure only. Used as the CGS-companion cross-link from C1's "Capital Goods Scheme shadow" H2.
+- **`vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method.md`.** Forward-link in Related Reading; will deepen via C5 (special method) when that lands.
+- **`togc-vat-property-letting-business.md`.** Canonical lives at `/blog/incorporation-and-company-structures/togc-vat-property-letting-business`. Forward-link in Related Reading; will be deepened via C3 (TOGC option-matching) when that lands.
 
 ### Citations added
-- 
+- Statutory (legislation.gov.uk): VATA 1994 Sch 10 (root); Sch 10 paras 2 (election effect), 21 (real estate elections), 25 (20-year revocation), 28 (prior permission for pre-option exempt grants).
+- HMRC: VAT Notice 742A.
+- Forms: VAT1614A (notification), VAT1614H (prior permission). VAT1614C / VAT1614D / VAT1614E / VAT1614J cited in body as part of cluster context with cross-link discipline (depth on companion pages).
+- All form attributions verified directly against gov.uk publication pages on 2026-05-25; see F-5 for the verification table.
 
 ### Internal links added
-- 
+- `/blog/property-types-and-specialist-tax/vat-option-to-tax-commercial-property-mechanics-election-revocation` (Wave 5 mechanics companion) — twice in body + Related Reading.
+- `/blog/property-types-and-specialist-tax/vat-capital-goods-scheme-property-businesses-10-year-adjustment-mechanics` — body (CGS section) + Related Reading.
+- `/blog/property-types-and-specialist-tax/vat-partial-exemption-landlords-mixed-residential-commercial-portfolios-standard-method` — Related Reading.
+- `/blog/incorporation-and-company-structures/togc-vat-property-letting-business` — Related Reading.
+- `/blog/property-types-and-specialist-tax/vat-mixed-use-property-purchase-residential-commercial-element-apportionment` — Related Reading.
+- `/blog/property-types-and-specialist-tax/vat-on-new-builds-residential-property` — Related Reading.
+- All 6 internal links resolve to existing markdown files on disk; build clean confirms.
+- **Forward-references (not hyperlinks) to Wave 8 siblings:** the FAQ on "where do I find operational mechanics / revocation routes / paragraph-walk" references C2 (revocation), C3 (TOGC), C7 (disapplication paragraph walk), C10 (recovery) in prose. These are plain-text references that will be converted to hyperlinks as each sibling lands on the branch. Tracking obligation logged in F-6 (next flag at session-end sweep).
 
 ### Inline CTA placements
-- 
+- After "The 20-year lock at Schedule 10 paragraph 25" H2 — high-intent: landlord considering whether to opt and worried about lock-in.
+- After "Prior permission under Schedule 10 paragraphs 28 to 30" H2 — intent: opter discovers pre-option exempt grant history they didn't know was material.
+- After "The economic decision: input recovery against tenant cost and SDLT" H2 — decision-point intent: opter at threshold of notification decision.
 
 ### Build attempts
-- 
+- Build 1 (post-write): build clean. C1 page generated in SSG path list at `/blog/property-types-and-specialist-tax/option-to-tax-vata-1994-schedule-10-commercial-property-20-year-lock`.
+- npm install required at workspace root level prior to first build (worktree's node_modules was empty after fresh worktree creation).
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+- em-dash count: 0
+- Tailwind utility classes: 0
+- metaTitle length: 48 (≤62 ✓)
+- metaDescription length: 150 (≤158 ✓)
+- FAQ count: 12 (pillar range 10-14 ✓)
+- Internal links resolve: 6/6 ✓ (verified via Glob spot-check; build clean confirms)
+- Body word count: 4,497 (pillar band 3,500-4,500 ✓; just inside ceiling after two trim passes)
 
 ### Flags raised to wave8_site_wide_flags.md
-- 
+- **F-4 WAVE_WIDE_CATEGORY_DRIFT.** `vat-for-landlords` (tracker) / `vat-and-property` (brief) are not live routes; overridden to `Property Types & Specialist Tax` matching Wave 5 mechanics companion. Affects all 9 Bucket C picks; manager confirmation requested.
+- **F-5 HOUSE_POSITION_EXTENSION + BRIEF_DRIFT.** §29.3 + §29.9 + C1 brief authority list mis-attribute VAT1614B as prior-permission form; actual prior-permission form is VAT1614H. Also §29.9 mis-attributes 1614F (actual: exclude new building from REE) and 1614G (actual: housing-association disapply) and 1614H (actual: prior permission, not notification). All 9 form attributions verified directly against gov.uk on 2026-05-25 with verbatim form titles; corrected mapping ready for §29.3 + §29.9 in-place patch.
 
 ### 2-3 sentence summary
+C1 PILLAR shipped as the framework page for the Wave 8 Bucket C option-to-tax cluster: architectural decision logic (why opt, who is bound, what the 20-year lock at Sch 10 para 25 commits to), depth on prior permission at paragraphs 28-30 with the correct VAT1614H form (catching the §29 HP-lock drift on form attributions), the real estate election at paragraph 21 with the irrevocability nuance, and the economic decision framework netting input recovery against tenant-VAT cost and SDLT-on-VAT-inclusive consideration over the 20-year horizon. Differentiation against the Wave 5 mechanics companion is held through opener variation, framework-vs-mechanics framing, and a fresh Galloway Estate Limited £15m three-asset 2026/27 portfolio worked example (per-property opt vs REE strategic choice) replacing the Wave 5 £2.4m office refurb + £1.6m connected-party trap. 4,497 body words, 12 FAQs, 6 internal links, 0 em-dashes, 0 Tailwind classes, build clean.
