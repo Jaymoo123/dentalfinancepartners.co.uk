@@ -2678,7 +2678,7 @@ Where the four-conditions test is engaged, the underlying question is **whether 
 - **Appropriation between trading stock and investment (CTA 2010 s.157; ITTOIA 2005 s.172).** Appropriation INTO trading stock is a deemed disposal at market value for CGT (TCGA 1992 s.161) with subsequent trading profit accounted for the difference between MV and disposal proceeds. Appropriation OUT of trading stock (rare) is a market-value acquisition for CGT.
 - **Operative implication.** Landlord-incorporators who transfer property into a development SPV using a trading-stock framing trigger a deemed CGT disposal at incorporation (no s.162 incorporation relief if treated as trading-stock appropriation; s.162 is for business-as-going-concern transfers, not stock appropriations). Wave 8 Bucket B pages on the incorporation route for property developers must distinguish stock-appropriation from going-concern transfer.
 
-### 28.7 Residential Property Developer Tax (RPDT) — historical / repealed
+### 28.7 Residential Property Developer Tax (RPDT) — IN FORCE per FA 2022
 
 - **FA 2022 Part 2 ss.31-53** introduced RPDT: a 4% additional Corporation Tax charge on residential property developer profits above a £25m group allowance, in force for accounting periods beginning on or after 1 April 2022.
 - **STATUS CORRECTED 2026-05-25 (Stage 2b — drift catch in original §28.7 lock):** RPDT is **CURRENTLY IN FORCE** per FA 2022 Part 2 ss.31-53. The previously-locked "REPEALED by FA 2024 s.81 for APs beginning on/after 1 April 2024" claim was **incorrect** — FA 2024 s.81 returns 404 on legislation.gov.uk; FA 2024 + FA(No.2) 2024 contents do NOT contain RPDT-repeal provisions; legislation.gov.uk Finance Act 2022 Part 2 page (verified 2026-05-25) shows "no known outstanding effects" and no repeal amendment. **RPDT applies for accounting periods beginning on or after 1 April 2022 per s.51 FA 2022 commencement** and remains operative. Rate: 4% surcharge on residential property developer profits above the £25m group allowance threshold.
@@ -2700,7 +2700,7 @@ Where the four-conditions test is engaged, the underlying question is **whether 
 - CTA 2009 Part 3 (trading profit computation for companies); ITTOIA 2005 Part 2 (trading profit computation for individuals).
 - TCGA 1992 s.161 (appropriation to trading stock deemed disposal), s.1A (NRCGT — backstop).
 - CTA 2010 s.157 + Part 22 (intra-group transfers of trade); ITTOIA 2005 s.172 (appropriation from trading stock).
-- FA 2022 Part 2 ss.31-53 (RPDT — repealed FA 2024 s.81).
+- FA 2022 Part 2 ss.31-53 (RPDT — **IN FORCE** per FA 2022 s.51 commencement; APs beginning on or after 1 April 2022; no outstanding effects per legislation.gov.uk verified 2026-05-25; the previously-locked "repealed FA 2024 s.81" framing was incorrect — FA 2024 s.81 returns 404 and no RPDT-repeal provision exists in FA 2024 or FA(No.2) 2024).
 - *Marson v Morton* [1986] 1 WLR 1343 (badges of trade).
 - *Iswera v IRC* [1965] 1 WLR 663 (single transaction can be trading).
 - *Salt v Chamberlain* [1979] STC 750 (share dealing investor / trader line by analogy).
@@ -2711,7 +2711,7 @@ Where the four-conditions test is engaged, the underlying question is **whether 
 ### 28.10 Things to flag (do NOT decide unilaterally)
 
 - Border cases on the main-purpose test where investment intent is genuine and substantial AND profit intent is also present. Statute is disjunctive but HMRC enquiry practice in this area is litigated; case-specific facts decide. Sessions writing border-case pages should hedge with "main purpose evaluation is fact-sensitive; specialist advice required for transactions near the line".
-- Whether RPDT has been re-introduced or further amended post-FA-2024 repeal. Verify against current FA at write time.
+- Whether RPDT has been further amended in any subsequent Finance Act (currently IN FORCE per FA 2022 ss.31-53; verify against current legislation.gov.uk Part 2 page at write time per §16.27 rate-by-reference discipline).
 - Whether HMRC has issued new guidance on the s.356OH / s.517H fragmented-activities rule in response to specific schemes (verify HMRC manual currency).
 - Whether the "property deriving its value from land" 50% derivation threshold has been adjusted by subsequent legislation.
 
@@ -2722,8 +2722,8 @@ Where the four-conditions test is engaged, the underlying question is **whether 
 - "Holding land for more than 5 years means it's investment" (false — length of ownership is one of nine badges; not determinative; trading classification can apply to long-held land if main-purpose-at-acquisition or main-purpose-of-development was profit-from-disposal).
 - "Non-resident developers escape UK tax" (false — Part 8ZB applies to non-resident corporate developers; Part 9A applies to non-resident individual developers; pre-FA-2016 planning routes around UK CT scope are closed).
 - "Slice-of-the-action arrangements via offshore SPVs avoid the charge" (false — s.356OD / s.517D catches indirect disposals via property-rich entities; tracing rules at s.356OM / s.517N walk through multi-tier structures).
-- "RPDT is current law" (false — repealed FA 2024 s.81 for accounting periods beginning on or after 1 April 2024; only historical / straddling-AP relevance).
-- "RPDT applies to all residential developers" (false — even when in force, applied only to groups with >£25m residential developer profit allowance threshold).
+- "RPDT is repealed" (false — RPDT is currently IN FORCE per FA 2022 ss.31-53; verified live on legislation.gov.uk 2026-05-25; the previously-circulated "repealed FA 2024 s.81" claim cannot be substantiated against the Finance Act 2024 contents).
+- "RPDT applies to all residential developers" (false — applies only to groups with >£25m residential developer profit allowance threshold per FA 2022 s.33).
 - "Pawson investment treatment for BPR also means investment treatment for CT" (false — Pawson and Part 8ZB use overlapping but distinct tests; a landlord can be investment for BPR + trading for CT/IT).
 - "The main-purpose test requires sole purpose" (false — statute uses "main purpose, or one of the main purposes" — disjunctive; multiple main purposes can coexist; only one needs to be profit-from-disposal).
 - "s.162 incorporation relief covers all property-business incorporations" (false — s.162 is for going-concern business transfers; trading-stock appropriations are CGT-deemed-disposals at MV without relief; property developers incorporating need CTA 2010 Part 22 trade-transfer route, not s.162).
