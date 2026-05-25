@@ -66,6 +66,8 @@ Thumbs.db
 # Claude Code harness state (session, schedule, plans live in ~/.claude not here)
 .claude/*
 !.claude/settings.json
+!.claude/commands/
+.claude/commands/.local/
 
 # Per-site IndexNow queues (transient, drained on each --from-queue run)
 .indexnow_queue*
