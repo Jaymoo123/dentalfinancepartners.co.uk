@@ -200,3 +200,176 @@ See `docs/property/NETNEW_PROGRAM.md` §4.9 / §7 for the verbatim 19-step workf
 - 
 
 ### 2-3 sentence summary
+
+
+---
+
+## STAGE 2 EXTENSION (Sub-Agent B, 2026-05-25)
+
+This block extends the Stage 1 seed using HP §11.A statutory map (commit `9285495`) plus verbatim WebFetch verification of the Companies House campaign + guidance estate. **Stage 2 corrections to the Stage 1 seed are flagged inline below — read this block before the seed when there is a conflict.**
+
+### Stage 2 verification log (2026-05-25)
+
+| URL | Status | Used as |
+|-----|--------|---------|
+| `https://www.legislation.gov.uk/ukpga/2023/56/contents` | 200 | Authority — ECCTA Part 1 crossheading structure |
+| `https://changestoukcompanylaw.campaign.gov.uk/confirmation-statement-changes/` | 200 | Authority — 4 March 2024 + 5 March 2024 commencement dates for registered email + lawful purposes |
+| `https://changestoukcompanylaw.campaign.gov.uk/changes-to-company-registers/` | 200 | Authority — abolition of local registers (18 Nov 2025 officers/PSCs; 26 Jan 2026 members) |
+| `https://www.gov.uk/guidance/confirmation-statement-guidance` | 200 | Authority — current fees (£50 online / £110 paper), filing window, content requirements, £5,000 max penalty |
+| `https://www.gov.uk/government/publications/companies-house-fees` | 200 | Authority — current Companies House fee schedule (PDF — session WebFetches at write time to verify exact CS fee at that point) |
+| `https://companieshouse.blog.gov.uk/` (4 blog posts already verified for B1) | 200 | Authority — operational announcements; the 4 ID-verification-themed posts include PSC-side content relevant to B3 |
+| `https://www.legislation.gov.uk/ukpga/2006/46/section/853A` | 200 (empty response) | **Indeterminate — model returned no content; session at write time must WebFetch the verbatim s.853A heading + amendments directly** |
+| `https://www.legislation.gov.uk/ukpga/2006/46/section/86` | 200 (empty response) | **Indeterminate — same; session verifies "appropriate address" amendment wording at write time** |
+| `https://www.legislation.gov.uk/ukpga/2006/46/section/88A` | 200 (empty response) | **Indeterminate — Stage 2 unable to confirm whether s.88A is the correct CA-2006-inserted-section number for registered email; session enumerates at write time** |
+| AccountingWEB / CH blog 2024-02-27 post / specialist competitors (4 tested) | 403 / 404 | **None survived — competitor section uses the no-hits marker per Bug #3 guardrail** |
+
+### Stage 2 corrections to Stage 1 seed (per HP §11.A + WebFetch verification)
+
+1. **"ECCTA Part 1 Chapter 2" framing — WRONG.** ECCTA 2023 Part 1 has NO Chapter structure. The relevant crossheadings for B3 are: **Registered offices: s.28**, **Registered email addresses: ss.29-30**, **Registration of directors, secretaries and PSCs: ss.51-52** (abolition of local registers), **Accounts and reports: ss.53-58**, **Confirmation statements: ss.59-63** (s.60 = lawful purposes per the ECCTA contents-page synthesis). The page at write time should NOT reference "Chapter 1/2/4" anywhere — use crossheading-anchored references per §11.A discipline. (Source: HP §11.A + ECCTA contents page fetched at 2026-05-25 for B1.)
+
+2. **Confirmation statement fee — CORRECTED from seed candidate.** Stage 1 seed candidate cited "£34 online / £62 paper" pending Stage 2 verification. Verified live at `https://www.gov.uk/guidance/confirmation-statement-guidance` (2026-05-25): **£50 online / £110 paper**. The May 2024 fee-increase cycle (when most Companies House fees rose substantially as part of the ECCTA-funded enforcement build-out) brought the figures up. Session at write time re-verifies because the operative fee schedule is the PDF at `https://www.gov.uk/government/publications/companies-house-fees` and could shift.
+
+3. **CA 2006 inserted-section number for the registered email — STILL UNVERIFIED.** Stage 1 seed flagged "s.88A" as candidate pending Stage 2 verification. Stage 2 confirms the ECCTA INSERTING provisions (ECCTA ss.29-30) but the CA 2006 INSERTED-section number could not be verified — the legislation.gov.uk individual section pages returned empty content for the WebFetch model. **Session at write time must WebFetch `https://www.legislation.gov.uk/ukpga/2006/46/contents` (CA 2006 contents page) and enumerate the actual inserted-section number for registered email**. Until then, the brief should describe the obligation as "introduced by ECCTA 2023 ss.29-30 (which insert new provisions into CA 2006 — exact CA 2006 section number to be cited verbatim at write time)".
+
+4. **"Appropriate address" rule for registered offices — Stage 2 unable to verify operational specifics.** The `changes-to-company-registers/` campaign sub-page did NOT cover the appropriate address rule. The confirmation-statement-guidance page does not detail it either. The seed reasonably flagged this as commencing 4 March 2024. Session at write time must verify whether (a) the rule is in force from 4 March 2024 for all companies (existing AND new), or (b) there is a transitional grace period for existing PO-box / virtual-office arrangements. The ECCTA inserting provision sits at ECCTA Part 1 crossheading "Registered offices: s.28" — session WebFetches that section + the inserted CA 2006 s.86 amendment for verbatim wording.
+
+5. **Lawful purposes statement — VERIFIED LIVE.** Statement dates from **5 March 2024** onward (NOT 4 March 2024 — there is a 1-day asymmetry between the registered-email commencement at incorporation from 4 March 2024 and the lawful-purposes-statement commencement on confirmation statements with statement date from 5 March 2024). Statutory paraphrase per the campaign page: "intended future activities of the company will be lawful". Verbatim statutory wording sits in the relevant ECCTA-inserted-CA-2006 section (likely in the Confirmation statements crossheading at ECCTA ss.59-63; session quotes verbatim from legislation.gov.uk at write time).
+
+6. **PSC ID verification at confirmation statement — VERIFIED LIVE AS OPERATIVE GATE.** Stage 1 seed flagged this as "from autumn 2025 / 2026 (phased)". Verified live: the confirmation statement now requires "a Companies House personal code for each director who has completed identity verification" (per the gov.uk confirmation-statement-guidance page). The gate is OPERATIVE today (2026-05-25) for new directors and all PSCs in scope of the 18 November 2025 mandatory commencement. For existing directors / PSCs still in the 12-month transition window (ending ~November 2026), the personal code is required if the confirmation statement falls during or after the transition deadline.
+
+7. **Abolition of local registers — VERIFIED LIVE.** ECCTA ss.51-52 brought into force 18 November 2025 for directors / directors' residential addresses / secretaries / PSCs; 26 January 2026 for members. Companies still must register the information with Companies House and keep it up to date — what has changed is the LOCAL-register obligation is gone (CH central register only). Relevant to B3 because the confirmation statement now plays the role the local register previously did for PSC-information accuracy.
+
+8. **Maximum financial penalty for missed CS:** £5,000 (per gov.uk confirmation-statement-guidance page) + striking-off risk under CA 2006 s.1000.
+
+### Verified statutory anchor map (use these at write time)
+
+**ECCTA 2023 Part 1 crossheadings relevant to B3:**
+- **Registered offices: s.28** — ECCTA inserting provision for the "appropriate address" amendment to CA 2006 s.86 (session verifies inserted-CA-section-number + verbatim "appropriate address" wording at write time).
+- **Registered email addresses: ss.29-30** — ECCTA inserting provisions for the new CA 2006 registered-email section (session verifies inserted-CA-section-number at write time; "s.88A" was the seed candidate, NOT yet verified).
+- **Registration of directors, secretaries and PSCs: ss.51-52** — abolition of local registers (in force 18 November 2025 for officers/PSCs; 26 January 2026 for members).
+- **Confirmation statements: ss.59-63** — amendments to CA 2006 s.853A + insertion of lawful-purposes-statement provision (s.60 is the lawful-purposes-statement provision per ECCTA contents synthesis; session verifies verbatim ECCTA section + the operative inserted-CA-section-number).
+- **Identity verification: ss.64-69** — the personal-code regime that bundles INTO the confirmation statement (cross-link to B1).
+
+**Commencement (verified):**
+- **4 March 2024**: registered email required at incorporation for new companies (campaign page).
+- **5 March 2024**: lawful purposes statement required on confirmation statements with statement date on/after this date (campaign page).
+- **18 November 2025**: ID verification mandatory for new directors + PSCs + abolition of local registers for officers / PSCs (campaign page + ID-verification campaign sub-page).
+- **26 January 2026**: abolition of local registers for members (campaign page).
+
+**Fees (verified 2026-05-25):**
+- £50 online confirmation statement.
+- £110 paper Form CS01.
+- Max £5,000 financial penalty for missed CS + CA 2006 s.1000 striking-off risk.
+
+**ECCTA Sch 12 — DO NOT cite.** Same do-not-write applies as for B2: Schedule 12 is "Criminal liability of bodies: economic crimes" (Part 5) — NOT relevant to B3 confirmation statement scope.
+
+### Verified live authority URLs (5-7 picked from this set at write time)
+
+**Companies House campaign + guidance:**
+- `https://changestoukcompanylaw.campaign.gov.uk/` (master campaign page)
+- `https://changestoukcompanylaw.campaign.gov.uk/confirmation-statement-changes/` (primary B3 anchor)
+- `https://changestoukcompanylaw.campaign.gov.uk/changes-to-company-registers/` (abolition of local registers; companion sub-page)
+- `https://www.gov.uk/guidance/confirmation-statement-guidance` (operative fee + filing-window + content-requirements page)
+- `https://www.gov.uk/government/publications/companies-house-fees` (operative fee schedule — session WebFetches the PDF at write time)
+
+**Statute (session WebFetches at write time for verbatim section quotes):**
+- `https://www.legislation.gov.uk/ukpga/2023/56/contents` (ECCTA crossheading structure)
+- `https://www.legislation.gov.uk/ukpga/2006/46/contents` (CA 2006 contents — enumerate inserted-section numbers for registered email + lawful purposes here)
+- `https://www.legislation.gov.uk/ukpga/2006/46/section/86` ("appropriate address" amendment to registered office)
+- `https://www.legislation.gov.uk/ukpga/2006/46/section/853A` (confirmation statement provision)
+
+### Competitor URLs
+
+<!-- competitor section: session-side WebSearch at write time, no Stage 2 hits -->
+
+(Four candidates tested at Stage 2 — AccountingWEB / Companies House blog Feb 2024 post / specialist firms — all returned 403 or 404. Per Bug #3 guardrail, NO URL is being passed through as "verified competitor". Session at write time runs a fresh search on `"confirmation statement" "lawful purposes" OR "registered email" OR "appropriate address" landlord OR property OR SPV` and triages 3-5 live, on-topic, guide-not-funnel results. Inform Direct / 1st Formations / Companies Made Simple often publish operational updates around CA 2006 changes that are useful for the routes-and-mechanics framing.)
+
+### Worked operational scenario (Stage 2 addition — write the page around this anchored example)
+
+**Anonymised persona — Halifax Property Holdings Ltd, a 4-year-old landlord LtdCo holding a 6-property mixed BTL + HMO portfolio in Calderdale.** Halifax Property Holdings Ltd was incorporated 1 February 2022, so it pre-dates the 4 March 2024 changes. The directors and PSCs are:
+- **Tom** (sole director, 70% shareholder — sole PSC under the 25%+ threshold).
+- **Tom's wife Aisha** (30% shareholder — also a PSC).
+- Registered office is currently the accountant's office (which IS an "appropriate address" because the accountant is open during business hours and capable of acknowledging service of documents — PO box virtual offices would not qualify).
+
+**Confirmation statement annual cadence:**
+- Confirmation date: 1 February (the incorporation anniversary).
+- Filing deadline: 14 days after the review period ends → 15 February each year.
+- Annual fee: £50 online (the operative figure at 2026-05-25; reverify at write time as the fee schedule moves).
+
+**2025 filing (pre-ID-verification commencement):**
+- Filed 12 February 2025 by the accountant.
+- Included the new lawful-purposes statement (mandatory since confirmation statements with statement date on/after 5 March 2024) — tick-box equivalent declaration on the online filing.
+- Registered email address was already on file from a one-off update made shortly after the 4 March 2024 commencement.
+- No personal codes required because ID verification was still voluntary at this point.
+
+**2026 filing (mid-transition — the operative state today):**
+- Confirmation date 1 February 2026; filing due 15 February 2026.
+- Tom and Aisha BOTH need to provide their personal codes — Tom as the director AND as a PSC; Aisha as a PSC. They both verified identity in December 2025 (via GOV.UK One Login) so they each hold a personal code.
+- Lawful purposes statement repeated annually — a positive statement, not a one-off.
+- Registered email confirmed unchanged.
+- Registered office still the accountant's office; the "appropriate address" rule remains satisfied because the address can acknowledge service. (If the company had been using a PO box from a mail-forwarding service that didn't actually receive and acknowledge documents, the rule would force a change.)
+
+**What changed for Halifax Property Holdings Ltd because of the 4 March 2024 amendments — the four-changes-at-a-glance frame:**
+1. **Registered email** required from a 4 March 2024 update (a one-off declaration; CH uses it for correspondence only — not on the public register).
+2. **Lawful purposes statement** declared on every confirmation statement from 12 February 2025 onward (statement date 1 February — but the rule applies to statement dates on or after 5 March 2024, so the first filing AFTER 5 March 2024 is the one that picks up the obligation).
+3. **Appropriate address** rule applies to the registered office. Halifax Property is unaffected because the accountant's office already satisfied the rule. Companies using PO-box mail-forwarders had to move (with a transition allowed — verify the exact transition mechanics at write time).
+4. **PSC tightening + personal-code gate** at confirmation-statement filing — from 18 November 2025 for new appointments + during the 12-month transition window for existing directors + PSCs.
+
+**Where Halifax Property Holdings Ltd's filing intersects with B1 (ID verification) and B2 (RoE):**
+- **B1 cross-link:** Tom and Aisha's identity verification is a prerequisite to the 2026 confirmation statement being filed validly. The "verify before filing" rule is operational — without personal codes, the confirmation statement cannot be filed.
+- **B2 cross-link:** N/A in this scenario because Halifax Property Holdings Ltd is UK-incorporated (no RoE obligation). If Tom and Aisha had instead used a Jersey holding company to hold their UK BTL property, the Jersey company would have both an RoE annual update obligation (B2) AND a UK PSC-disclosure obligation for any UK SPVs underneath (B3 territory).
+
+### Cross-bucket boundary (anti-templating)
+
+B3 covers the FOUR-CHANGES-ON-4-MARCH-2024 confirmation-statement regime + the appropriate-address rule + the registered-email-is-private clarification + the PSC ID-gate at confirmation-statement filing. It does NOT cover:
+- The ID verification mechanics themselves (B1 territory — how to verify; multi-SPV per-person framing).
+- The Register of Overseas Entities annual update (B2 territory — overseas-entity-only regime, separate Act).
+- A "what is a confirmation statement" 101 explainer (well-covered by competitor inventory + gov.uk).
+
+The B3 page anchors on the OPERATIONAL changes to the annual confirmation-statement process post-4-March-2024, written for landlord-LtdCo and FIC directors who file annually and need to understand what new fields / declarations / personal-codes apply.
+
+### Draft FAQ entries (Stage 2 expansion, 12 entries — session refines at write time)
+
+**Q1. What changed on 4 March 2024 for confirmation statements?**
+A. Four amendments came into force in two clusters: (1) from 4 March 2024 all NEW companies must give a registered email address at incorporation; (2) from 5 March 2024 onwards all confirmation statements must include a lawful purposes statement; (3) the registered office must be an "appropriate address" (capable of acknowledging service of documents — PO-box-only addresses do not qualify); (4) PSC disclosure was tightened. The personal-code gate at filing came in later (18 November 2025) as part of the ID verification commencement.
+
+**Q2. How does this affect my landlord LtdCo specifically?**
+A. Every UK landlord LtdCo files an annual confirmation statement, so all four changes apply. The most common pain points for landlord-SPV structures are: (i) provision of a registered email address if not already done; (ii) annual lawful-purposes declaration (tick-box equivalent on the online filing); (iii) "appropriate address" compliance if the registered office is a PO box or pure mail-forwarder; (iv) personal-code provision per director / PSC at each SPV's annual filing now that ID verification is operative.
+
+**Q3. What is an "appropriate address"?**
+A. An address where a document delivered to it would be expected to come to the attention of someone acting on behalf of the company, AND from which an acknowledgement of receipt can be sent if the document is delivered there. A staffed business address (accountant's office, company-secretarial agent's office) qualifies. A pure PO box or unattended mail-forwarding address does NOT qualify. (Session at write time WebFetches the inserted CA 2006 s.86 verbatim wording for the operative definition.)
+
+**Q4. Is my virtual office still compliant?**
+A. Depends on the service. A virtual office that ACTUALLY receives, signs for, and forwards documents qualifies. A virtual office that just rents you a postal address without staffed receipt does not. Reputable company-formation virtual-office services repositioned post-4-March-2024 to ensure their offering met the appropriate-address test; cheaper PO-box-only services typically do not.
+
+**Q5. Who sees my registered email address?**
+A. Only Companies House. It is used for CH-to-company correspondence and is NOT published on the public register. The campaign page is explicit: "it will not be available to the public". Common misconception is that the email goes on the public register and triggers spam — incorrect.
+
+**Q6. What is the lawful purposes statement?**
+A. A positive declaration on every confirmation statement that "the intended future activities of the company are lawful". For most landlord SPVs this is a tick-box equivalent in the online filing. Substantively, the declaration is an offence-bearing statement (false statements can trigger criminal liability under CA 2006 offence provisions), so it is not entirely a formality — directors should be comfortable that the company's intended activities are within the law.
+
+**Q7. Do I need to file a personal code on the confirmation statement?**
+A. Yes, for every director and every PSC who is in scope of the mandatory ID verification regime as at the filing date. New directors and PSCs appointed since 18 November 2025 are firmly in scope. Existing directors and PSCs in place before 18 November 2025 are in the 12-month transition window (ending ~November 2026) and their personal code is required at the next confirmation statement filed within or after the deadline.
+
+**Q8. What is the current confirmation statement fee?**
+A. £50 online or £110 paper (Form CS01) per the operative gov.uk guidance at 2026-05-25. The fee was substantially increased as part of the May 2024 Companies House fee-restructure (which funded the ECCTA enforcement build-out). Verify at write time against `https://www.gov.uk/government/publications/companies-house-fees`.
+
+**Q9. What is the filing window?**
+A. 14 days after the review period ends. The review period runs for 12 months from incorporation (for the first filing) or 12 months from the prior confirmation statement date (for subsequent filings). You can file early, which shortens the current review period and re-anchors the next one.
+
+**Q10. What happens if I miss the deadline?**
+A. Companies House can issue a financial penalty (max £5,000 per gov.uk) and may initiate striking off under CA 2006 s.1000 for persistent failure. The escalation usually runs: reminder → final reminder → financial-penalty notice → striking-off proposal. Striking off is reversible (administrative restoration) for 6 years, but the company is dissolved in the interim and its assets pass to bona vacantia, so a striking-off event for a property-holding LtdCo creates serious operational risk for property titles.
+
+**Q11. How does this interact with ID verification (B1) and the abolition of local registers (ss.51-52)?**
+A. The confirmation statement is the operational moment where ID verification gate, PSC information accuracy, and the (now-only-at-Companies-House) PSC register all converge annually. Since 18 November 2025, companies no longer have to keep local registers of directors / PSCs — the Companies House central register is authoritative. The annual confirmation statement is the routine update mechanism that keeps the central register accurate.
+
+**Q12. Does the lawful purposes statement need to be repeated each year?**
+A. Yes. It is a positive annual declaration on every confirmation statement (not a one-off declaration at incorporation). The drafting on online filings is typically a tick-box, but the underlying obligation re-asserts each year. False-statement offences attach if the declaration is made knowingly inaccurately.
+
+### Operative-as-at-write-time discipline (CRITICAL for B3)
+
+The page MUST state the verification timestamp for the current confirmation-statement fee (because it moves with the operative fee schedule) AND the operative-as-at date for the ID-verification commencement (because we are mid-transition; the existing-directors phase completes ~November 2026). Without explicit timestamping, the page risks looking stale within the year.
+
+### Stage 2 sign-off (Sub-Agent B)
+
+Stage 2 corrections applied; ECCTA Part 1 Chapter framing replaced with crossheading-anchored references; confirmation-statement fee verified live (£50 / £110 — significantly higher than seed candidate £34 / £62); registered-email CA-2006-inserted-section number remains unverified (session enumerates at write time); appropriate-address rule operational specifics partially verified (commencement confirmed, transition treatment for existing arrangements requires write-time verification); lawful-purposes statement commencement verified as 5 March 2024 (1-day offset from registered-email commencement); abolition-of-local-registers commencement verified (18 November 2025 + 26 January 2026); maximum financial penalty £5,000 verified; zero competitor URLs survived liveness check (Bug #3 marker written); worked scenario (Halifax Property Holdings Ltd, 6-property BTL + HMO) + 12 FAQ entries drafted. No new site-wide flags raised from B3 (F-11 + F-12 + F-13 from B1 + B2 already cover the §11.A drift surface — B3 corrections are absorbed inline against those flags' direction).
