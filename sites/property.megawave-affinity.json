@@ -1,0 +1,99 @@
+{
+  "_meta": {
+    "site": "property",
+    "purpose": "Cluster -> mega-wave grouping for slice-megawave.ps1. Authored 2026-05-25 from Wave 9 close-state. Preserves thematic coherence per the plan's invariant that mega-waves stay topic-coherent so cross-page sibling drift catching (§16.36-style) keeps working.",
+    "totalRemainingPicks_approx": 182,
+    "megawaveSize": 60,
+    "expectedRounds": 3
+  },
+
+  "megawaves": {
+    "M1": {
+      "label": "SDLT / MDR / surcharge family",
+      "hp_touchpoints": ["§1", "§1.A", "§1.B", "§1.C", "§1.D", "§1.E", "§1.F", "§1.G", "§1.H", "§1.I", "§1.J", "§15"],
+      "clusters": [
+        "SDLT — surcharges and reliefs",
+        "SDLT — Scottish / Welsh equivalents",
+        "CIL & Section 106 (planning levies)",
+        "FHL — abolition and transitional rules",
+        "Property valuation / RICS / chargeable consideration",
+        "Second homes & council tax premium",
+        "Lease extensions and statutory tenancy",
+        "Lease extensions, variation & surrender"
+      ],
+      "bucketAssignment": {
+        "A": ["SDLT — surcharges and reliefs", "Second homes & council tax premium"],
+        "B": ["SDLT — Scottish / Welsh equivalents", "FHL — abolition and transitional rules"],
+        "C": ["CIL & Section 106 (planning levies)", "Property valuation / RICS / chargeable consideration", "Lease extensions and statutory tenancy", "Lease extensions, variation & surrender"]
+      }
+    },
+
+    "M2": {
+      "label": "Entity / incorporation / trusts family",
+      "hp_touchpoints": ["§3", "§4", "§11", "§11.A", "§21", "§21.A", "§22", "§22.5", "§22.X"],
+      "clusters": [
+        "Limited company / BTL company operation",
+        "Family Investment Companies & FICs",
+        "Companies House reforms / ECCTA / RoE",
+        "Property partnership / LLP",
+        "IHT and estate planning",
+        "Trusts and beneficial ownership",
+        "Joint ownership & Form 17 tax planning",
+        "Pension-funded property (SIPP / SSAS)",
+        "Payroll for property companies",
+        "Bookkeeping & accounting practices",
+        "Incorporation mechanics",
+        "Inheritance — GROB, reservation of benefit"
+      ],
+      "bucketAssignment": {
+        "A": ["Limited company / BTL company operation", "Incorporation mechanics", "Property partnership / LLP"],
+        "B": ["Family Investment Companies & FICs", "Pension-funded property (SIPP / SSAS)", "Companies House reforms / ECCTA / RoE"],
+        "C": ["IHT and estate planning", "Trusts and beneficial ownership", "Joint ownership & Form 17 tax planning", "Inheritance — GROB, reservation of benefit", "Payroll for property companies", "Bookkeeping & accounting practices"]
+      }
+    },
+
+    "M3": {
+      "label": "Compliance / operations / specialist family",
+      "hp_touchpoints": ["§17", "§24", "§26", "§27", "§28"],
+      "clusters": [
+        "MTD for ITSA",
+        "Penalties & enquiries",
+        "Penalties, enquiries & HMRC nudge letters",
+        "Let Property Campaign & HMRC voluntary disclosure",
+        "Non-resident landlords / NRL",
+        "Double Taxation Agreements (DTAs)",
+        "Leaving the UK / expat landlord tax",
+        "Overseas / international property",
+        "ATED (Annual Tax on Enveloped Dwellings)",
+        "Anti-avoidance and case law",
+        "CGT — disposal & specific scenarios",
+        "Property development tax (trading vs investment)",
+        "Land Remediation Relief (LRR)",
+        "CIS / construction industry scheme",
+        "Structures & Buildings Allowance (SBA)",
+        "Wear-and-tear, replacement of domestic items",
+        "Self-assessment mechanics",
+        "Capital vs revenue, repair vs improvement",
+        "Pre-letting expenses & cash-vs-accruals",
+        "Property finance — refinance, BLs, LIBOR/SONIA",
+        "Service charges and ground rent",
+        "Block management & service-charge accounting",
+        "Planning permission & change-of-use for landlords",
+        "Property accountant for cities / regions",
+        "Tenancies and Renters' Rights Act",
+        "Serviced accommodation, short-term lets & OTA platforms",
+        "HMOs (multi-occupancy, licensing)",
+        "Shared ownership",
+        "Build to Rent (BTR) — institutional residential",
+        "HR/employment for property businesses",
+        "Property data / forecast / market reports",
+        "Section 24 / mortgage interest restriction"
+      ],
+      "bucketAssignment": {
+        "A": ["MTD for ITSA", "Penalties & enquiries", "Penalties, enquiries & HMRC nudge letters", "Let Property Campaign & HMRC voluntary disclosure", "Self-assessment mechanics"],
+        "B": ["Non-resident landlords / NRL", "Double Taxation Agreements (DTAs)", "Leaving the UK / expat landlord tax", "Overseas / international property", "ATED (Annual Tax on Enveloped Dwellings)"],
+        "C": ["CGT — disposal & specific scenarios", "Property development tax (trading vs investment)", "Land Remediation Relief (LRR)", "CIS / construction industry scheme", "Structures & Buildings Allowance (SBA)", "Tenancies and Renters' Rights Act", "Anti-avoidance and case law", "Wear-and-tear, replacement of domestic items", "Capital vs revenue, repair vs improvement", "Pre-letting expenses & cash-vs-accruals", "Property finance — refinance, BLs, LIBOR/SONIA", "Service charges and ground rent", "Block management & service-charge accounting", "Planning permission & change-of-use for landlords", "Property accountant for cities / regions", "Serviced accommodation, short-term lets & OTA platforms", "HMOs (multi-occupancy, licensing)", "Shared ownership", "Build to Rent (BTR) — institutional residential", "HR/employment for property businesses", "Property data / forecast / market reports", "Section 24 / mortgage interest restriction"]
+      }
+    }
+  }
+}
