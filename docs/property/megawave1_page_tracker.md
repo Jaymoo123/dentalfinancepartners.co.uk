@@ -17,7 +17,7 @@
 | ✅ | A3 | `a-complete-guide-on-multiple-dwellings-relief-eligibility-and-benefits` | SDLT — surcharges and reliefs | M1-A-B1 | | | Stage 1 seed 75a2acf |
 | ✅ | A4 | `a-complete-guide-to-5-sdlt-surcharge-refund-claims` | SDLT — surcharges and reliefs | M1-A-B1 | | | Stage 1 seed e82eb4c |
 | ✅ | A5 | `a-complete-guide-to-stamp-duty-refund` | SDLT — surcharges and reliefs | M1-A-B1 | | | Stage 1 seed 6fcbdb5 |
-| ⬜ | A6 | `a-complete-guide-to-stamp-duty-relief-for-probate-properties` | SDLT — surcharges and reliefs | M1-A-B1 | | | |
+| ✅ | A6 | `a-complete-guide-to-stamp-duty-relief-for-probate-properties` | SDLT — surcharges and reliefs | M1-A-B1 | | | Stage 1 seed c66581b |
 | ⬜ | A7 | `applicable-sdlt-rates-for-first-time-buyers` | SDLT — surcharges and reliefs | M1-A-B2 | | | |
 | ⬜ | A8 | `archer-uk-limited-vs-revenue-scotland-ftt-rules-no-lbtt-charge-for-lease-extension-granted-under-sdlt` | SDLT — surcharges and reliefs | M1-A-B2 | | | |
 | ⬜ | A9 | `averdieck-case-analysis-navigating-sdlt-and-public-rights-of-way` | SDLT — surcharges and reliefs | M1-A-B2 | | | |
