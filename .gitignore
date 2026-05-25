@@ -37,6 +37,7 @@ secrets/
 !tsconfig.json
 !niche.config.json
 !components.json
+!sites/*.json
 !vercel.json
 
 # Logs

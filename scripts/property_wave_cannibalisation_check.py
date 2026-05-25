@@ -101,24 +101,51 @@ def classify(top_score: float) -> str:
     return "✅ net-new"
 
 
+def _load_site_config(site: str) -> dict:
+    """Load sites/<site>.json — mirrors scripts/_lib/site-config.ps1 logic."""
+    cfg_path = ROOT / "sites" / f"{site}.json"
+    if not cfg_path.exists():
+        # Backward-compat fallback: pre-Round-1 hardcoded paths for Property
+        if site == "property":
+            return {
+                "paths": {
+                    "briefsDir": "briefs/property",
+                    "blogContentDir": "Property/web/content/blog",
+                    "docsDir": "docs/property",
+                },
+                "naming": {
+                    "briefSubdir": "wave{wave}",
+                    "cannibCheckFile": "wave{wave}_cannibalisation_check.md",
+                },
+            }
+        raise FileNotFoundError(f"Site config missing: {cfg_path}")
+    import json
+    return json.loads(cfg_path.read_text(encoding="utf-8"))
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--wave", type=int, required=True, help="Wave number (e.g. 9)")
+    ap.add_argument("--site", type=str, default="property", help="Site key (default: property)")
     ap.add_argument("--picks-yaml", type=str, default=None,
-                    help="Path to picks.yaml (default: briefs/property/wave{N}/picks.yaml)")
-    ap.add_argument("--blog-dir", type=str, default="Property/web/content/blog",
-                    help="Existing-pages directory (default: Property/web/content/blog)")
+                    help="Path to picks.yaml (default: briefs/<site>/wave{N}/picks.yaml)")
+    ap.add_argument("--blog-dir", type=str, default=None,
+                    help="Existing-pages directory (default: from site config blogContentDir)")
     ap.add_argument("--output", type=str, default=None,
-                    help="Output report path (default: docs/property/wave{N}_cannibalisation_check.md)")
+                    help="Output report path (default: docs/<site>/wave{N}_cannibalisation_check.md)")
     args = ap.parse_args()
 
+    cfg = _load_site_config(args.site)
     wave = args.wave
+    brief_subdir = cfg["naming"]["briefSubdir"].replace("{wave}", str(wave))
+    cannib_file = cfg["naming"]["cannibCheckFile"].replace("{wave}", str(wave))
+
     picks_path = Path(args.picks_yaml) if args.picks_yaml else (
-        ROOT / f"briefs/property/wave{wave}/picks.yaml"
+        ROOT / cfg["paths"]["briefsDir"] / brief_subdir / "picks.yaml"
     )
-    blog_dir = ROOT / args.blog_dir
+    blog_dir = ROOT / (args.blog_dir if args.blog_dir else cfg["paths"]["blogContentDir"])
     output_path = Path(args.output) if args.output else (
-        ROOT / f"docs/property/wave{wave}_cannibalisation_check.md"
+        ROOT / cfg["paths"]["docsDir"] / cannib_file
     )
 
     if not picks_path.exists():

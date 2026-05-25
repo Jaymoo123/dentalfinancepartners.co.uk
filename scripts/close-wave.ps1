@@ -40,6 +40,7 @@ param(
     [ValidateSet('validate','audit','merge','build')]
     [string]$Step,
 
+    [string]$Site = 'property',
     [switch]$DryRun
 )
 
@@ -47,15 +48,18 @@ $ErrorActionPreference = 'Stop'
 
 # Shared tracker reader (Bug #1 fix - PS 5.1 emoji-regex was unreliable)
 . "$PSScriptRoot\_lib\tracker-utils.ps1"
+# Site config (Round 1 of rolling architecture)
+. "$PSScriptRoot\_lib\site-config.ps1"
 
-$accountingRoot = 'C:\Users\user\Documents\Accounting'
-$wtBase         = 'C:\Users\user\Documents'
-$buckets        = @('a','b','c')
-$bucketsUpper   = @('A','B','C')
+$cfg = Get-SiteConfig $Site
+$accountingRoot = $cfg.paths.repoRoot -replace '/', '\'
+$wtBase         = $cfg.paths.worktreeBase -replace '/', '\'
+$buckets        = $cfg.wave.buckets
+$bucketsUpper   = $cfg.wave.bucketsUpper
 $utf8NoBom      = [System.Text.UTF8Encoding]::new($false)
 
-$trackerFile    = "$accountingRoot\docs\property\wave${Wave}_page_tracker.md"
-$flagsFile      = "$accountingRoot\docs\property\wave${Wave}_site_wide_flags.md"
+$trackerFile    = Get-WaveArtefactPath -Config $cfg -Wave $Wave -Kind tracker
+$flagsFile      = Get-WaveArtefactPath -Config $cfg -Wave $Wave -Kind flags
 
 function Write-Step($msg) { Write-Host "==> $msg" -ForegroundColor Cyan }
 function Write-OK   ($msg) { Write-Host "    OK:   $msg" -ForegroundColor Green }
@@ -95,7 +99,7 @@ if ($Step -eq 'validate') {
     Write-Step "Open Q-N check"
     $openCount = 0
     foreach ($u in $bucketsUpper) {
-        $qFile = "$accountingRoot\docs\property\wave${Wave}_questions_session_${u}.md"
+        $qFile = Get-WaveArtefactPath -Config $cfg -Wave $Wave -Kind qa -BucketUpper $u
         if (-not (Test-Path $qFile)) { continue }
         $q = [System.IO.File]::ReadAllText($qFile, $utf8NoBom)
         $matches = [regex]::Matches($q, '(?im)STATUS:\s*open')
@@ -112,7 +116,7 @@ if ($Step -eq 'validate') {
 
     Write-Step "Worktree branch HEAD check (must be ahead of main)"
     foreach ($bucket in $buckets) {
-        $branch = "property-wave${Wave}-${bucket}"
+        $branch = Resolve-BranchName -Config $cfg -Wave $Wave -Bucket $bucket
         $ahead  = (git -C $accountingRoot rev-list --count "main..$branch" 2>$null).Trim()
         $behind = (git -C $accountingRoot rev-list --count "$branch..main" 2>$null).Trim()
         if ([int]$ahead -eq 0) {
@@ -142,16 +146,15 @@ if ($Step -eq 'validate') {
 # =====================================================================
 if ($Step -eq 'audit') {
     Write-Step "Staging audit-trail files on main"
+    # Build audit path list from config naming templates
     $auditPaths = @(
-        "docs/property/wave${Wave}_page_tracker.md",
-        "docs/property/wave${Wave}_site_wide_flags.md",
-        "docs/property/wave${Wave}_questions_session_A.md",
-        "docs/property/wave${Wave}_questions_session_B.md",
-        "docs/property/wave${Wave}_questions_session_C.md",
-        "docs/property/wave${Wave}_discovery_log_session_A.md",
-        "docs/property/wave${Wave}_discovery_log_session_B.md",
-        "docs/property/wave${Wave}_discovery_log_session_C.md"
+        "$($cfg.paths.docsDir)/$(Resolve-Naming $cfg.naming.trackerFile -Wave $Wave)",
+        "$($cfg.paths.docsDir)/$(Resolve-Naming $cfg.naming.flagsFile -Wave $Wave)"
     )
+    foreach ($u in $bucketsUpper) {
+        $auditPaths += "$($cfg.paths.docsDir)/$(Resolve-Naming $cfg.naming.qaFile -Wave $Wave -BucketUpper $u)"
+        $auditPaths += "$($cfg.paths.docsDir)/$(Resolve-Naming $cfg.naming.discoveryFile -Wave $Wave -BucketUpper $u)"
+    }
 
     # Check we're on main
     $branch = (git -C $accountingRoot rev-parse --abbrev-ref HEAD).Trim()
@@ -214,7 +217,7 @@ if ($Step -eq 'merge') {
 
     foreach ($bucket in $buckets) {
         $bucketUpper = $bucket.ToUpper()
-        $bucketBranch = "property-wave${Wave}-${bucket}"
+        $bucketBranch = Resolve-BranchName -Config $cfg -Wave $Wave -Bucket $bucket
 
         Write-Step "Merging $bucketBranch"
         if ($DryRun) {
@@ -249,8 +252,8 @@ if ($Step -eq 'merge') {
 # Step: build
 # =====================================================================
 if ($Step -eq 'build') {
-    Write-Step "npm run build in Property/web/"
-    $buildDir = "$accountingRoot\Property\web"
+    $buildDir = Resolve-SitePath -Config $cfg -RelativePath $cfg.paths.buildDir
+    Write-Step "npm run build in $($cfg.paths.buildDir)/"
     if (-not (Test-Path $buildDir)) {
         Write-Fail "Build dir missing: $buildDir"
     }
@@ -278,10 +281,9 @@ if ($Step -eq 'build') {
     Write-Host ""
     Write-Host "=== Wave $Wave build: PASS ===" -ForegroundColor Green
     Write-Host ""
-    Write-Host "Phase 2b complete. Manual next steps (Phase 2c will automate):"
+    Write-Host "Phase 2b complete. Next steps (Phase 2c automated via deploy-and-index.ps1):"
     Write-Host "  1. Review post-merge back-patch flags (cross-bucket hyperlinks, site-wide STALE sweeps)"
-    Write-Host "  2. Deploy:  cd Property/web; vercel deploy --prod"
-    Write-Host "  3. IndexNow:  python -m optimisation_engine.indexing.submit_indexnow --site property --from-queue"
-    Write-Host "  4. Update NETNEW_PROGRAM §3 heartbeat with wave totals"
+    Write-Host "  2. Deploy + IndexNow:  ./scripts/deploy-and-index.ps1 -Site $Site"
+    Write-Host "  3. Update NETNEW_PROGRAM heartbeat with wave totals"
     exit 0
 }

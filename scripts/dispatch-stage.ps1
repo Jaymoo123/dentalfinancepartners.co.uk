@@ -57,6 +57,7 @@ param(
     [ValidateSet(1,2)]
     [int]$Stage,
 
+    [string]$Site = 'property',
     [switch]$DryRun,
     [switch]$Force
 )
@@ -65,12 +66,15 @@ $ErrorActionPreference = 'Stop'
 
 # Shared tracker reader (Bug #1 helper)
 . "$PSScriptRoot\_lib\tracker-utils.ps1"
+# Site config (Round 1 of rolling architecture)
+. "$PSScriptRoot\_lib\site-config.ps1"
 
-$accountingRoot = 'C:\Users\user\Documents\Accounting'
-$wtBase         = 'C:\Users\user\Documents'
-$buckets        = @('a','b','c')
-$promptDir      = "$accountingRoot\docs\sessions\property\wave${Wave}_stage${Stage}_prompts"
-$briefsDir      = "$accountingRoot\briefs\property\wave${Wave}"
+$cfg = Get-SiteConfig $Site
+$accountingRoot = $cfg.paths.repoRoot -replace '/', '\'
+$wtBase         = $cfg.paths.worktreeBase -replace '/', '\'
+$buckets        = $cfg.wave.buckets
+$promptDir      = (Resolve-SitePath -Config $cfg -RelativePath ($cfg.paths.sessionsDir + "/wave${Wave}_stage${Stage}_prompts"))
+$briefsDir      = (Resolve-SitePath -Config $cfg -RelativePath ($cfg.paths.briefsDir + '/' + (Resolve-Naming $cfg.naming.briefSubdir -Wave $Wave)))
 
 function Write-Step($msg) { Write-Host "==> $msg" -ForegroundColor Cyan }
 function Write-OK   ($msg) { Write-Host "    OK:   $msg" -ForegroundColor Green }
@@ -96,10 +100,10 @@ if (-not (Test-Path $promptDir)) {
     Write-Fail "Stage $Stage prompt dir missing: $promptDir`n          Run: ./scripts/scaffold-launch-prompts.ps1 -Wave $Wave -Stage $Stage"
 }
 foreach ($bucket in $buckets) {
-    $wtDir      = "$wtBase\Accounting-wt-property-wave${Wave}-${bucket}"
+    $wtDir      = Resolve-WorktreePath -Config $cfg -Wave $Wave -Bucket $bucket
     $promptFile = "$promptDir\$bucket.txt"
 
-    if (-not (Test-Path $wtDir))      { Write-Fail "Worktree missing: $wtDir`n          Create via: git worktree add $wtDir -b property-wave${Wave}-${bucket}" }
+    if (-not (Test-Path $wtDir))      { Write-Fail "Worktree missing: $wtDir`n          Create via: git worktree add $wtDir -b $(Resolve-BranchName -Config $cfg -Wave $Wave -Bucket $bucket)" }
     if (-not (Test-Path $promptFile)) { Write-Fail "Prompt missing: $promptFile" }
 
     $size = (Get-Item $promptFile).Length
@@ -141,7 +145,7 @@ if ($Stage -eq 1) {
 Write-Step "4/4 Spawning 3 Windows Terminal tabs"
 foreach ($bucket in $buckets) {
     $bucketUpper = $bucket.ToUpper()
-    $wtDir       = "$wtBase\Accounting-wt-property-wave${Wave}-${bucket}"
+    $wtDir       = Resolve-WorktreePath -Config $cfg -Wave $Wave -Bucket $bucket
     $promptFile  = "$promptDir\$bucket.txt"
     $sessionName = "Wave${Wave}-Stage${Stage}-${bucketUpper}"
 

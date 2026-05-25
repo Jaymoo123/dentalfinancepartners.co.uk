@@ -45,20 +45,25 @@ param(
 
     [int]$PriorWave = 0,
 
+    [string]$Site = 'property',
     [switch]$Force,
     [switch]$DryRun
 )
 
 $ErrorActionPreference = 'Stop'
 
+# Site config (Round 1 of rolling architecture)
+. "$PSScriptRoot\_lib\site-config.ps1"
+
 if ($PriorWave -eq 0) { $PriorWave = $Wave - 1 }
 
-$accountingRoot = 'C:\Users\user\Documents\Accounting'
-$buckets        = @('A','B','C')
+$cfg = Get-SiteConfig $Site
+$accountingRoot = $cfg.paths.repoRoot -replace '/', '\'
+$buckets        = $cfg.wave.bucketsUpper
 $utf8NoBom      = [System.Text.UTF8Encoding]::new($false)
 
-$docsProperty   = "$accountingRoot\docs\property"
-$briefsWaveDir  = "$accountingRoot\briefs\property\wave${Wave}"
+$docsProperty   = Resolve-SitePath -Config $cfg -RelativePath $cfg.paths.docsDir
+$briefsWaveDir  = Resolve-SitePath -Config $cfg -RelativePath ($cfg.paths.briefsDir + '/' + (Resolve-Naming $cfg.naming.briefSubdir -Wave $Wave))
 
 function Write-Step($msg) { Write-Host "==> $msg" -ForegroundColor Cyan }
 function Write-OK   ($msg) { Write-Host "    OK:   $msg" -ForegroundColor Green }

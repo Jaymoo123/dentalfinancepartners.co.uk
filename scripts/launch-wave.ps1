@@ -36,6 +36,7 @@ param(
     [Parameter(Mandatory=$true)]
     [int]$Wave,
 
+    [string]$Site = 'property',
     [switch]$DryRun,
     [switch]$Force
 )
@@ -44,12 +45,15 @@ $ErrorActionPreference = 'Stop'
 
 # Shared tracker reader (Bug #1 fix - PS 5.1 emoji-regex was unreliable)
 . "$PSScriptRoot\_lib\tracker-utils.ps1"
+# Site config (Round 1 of rolling architecture - cross-site templating)
+. "$PSScriptRoot\_lib\site-config.ps1"
 
-$accountingRoot = 'C:\Users\user\Documents\Accounting'
-$wtBase         = 'C:\Users\user\Documents'
-$buckets        = @('a','b','c')
-$promptDir      = "$accountingRoot\docs\sessions\property\wave${Wave}_prompts"
-$trackerFile    = "$accountingRoot\docs\property\wave${Wave}_page_tracker.md"
+$cfg = Get-SiteConfig $Site
+$accountingRoot = $cfg.paths.repoRoot -replace '/', '\'
+$wtBase         = $cfg.paths.worktreeBase -replace '/', '\'
+$buckets        = $cfg.wave.buckets
+$promptDir      = Get-WaveArtefactPath -Config $cfg -Wave $Wave -Kind promptExtractDir
+$trackerFile    = Get-WaveArtefactPath -Config $cfg -Wave $Wave -Kind tracker
 
 function Write-Step($msg) { Write-Host "==> $msg" -ForegroundColor Cyan }
 function Write-OK   ($msg) { Write-Host "    OK:   $msg" -ForegroundColor Green }
@@ -77,7 +81,7 @@ if (-not (Test-Path $promptDir)) {
     Write-Fail "Prompt dir missing: $promptDir`n          Run: ./scripts/prepare-wave.ps1 -Wave $Wave"
 }
 foreach ($bucket in $buckets) {
-    $wtDir      = "$wtBase\Accounting-wt-property-wave${Wave}-${bucket}"
+    $wtDir      = Resolve-WorktreePath -Config $cfg -Wave $Wave -Bucket $bucket
     $promptFile = "$promptDir\$bucket.txt"
 
     if (-not (Test-Path $wtDir))      { Write-Fail "Worktree missing: $wtDir" }
@@ -109,7 +113,7 @@ if ($relaunchSignal -gt 0) {
 Write-Step "4/4 Spawning 3 Windows Terminal tabs"
 foreach ($bucket in $buckets) {
     $bucketUpper = $bucket.ToUpper()
-    $wtDir       = "$wtBase\Accounting-wt-property-wave${Wave}-${bucket}"
+    $wtDir       = Resolve-WorktreePath -Config $cfg -Wave $Wave -Bucket $bucket
     $promptFile  = "$promptDir\$bucket.txt"
     $sessionName = "Wave${Wave}-${bucketUpper}"
 

@@ -39,7 +39,6 @@
 [CmdletBinding()]
 param(
     [Parameter(Mandatory=$true)]
-    [ValidateSet('property')]
     [string]$Site,
 
     [switch]$DryRun,
@@ -49,16 +48,17 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-$accountingRoot = 'C:\Users\user\Documents\Accounting'
+# Site config (Round 1 of rolling architecture - replaces the per-site hashtable)
+. "$PSScriptRoot\_lib\site-config.ps1"
 
-# Site-specific Vercel project config locations
-$siteVercelMap = @{
-    property = @{
-        VercelProjectJson = "$accountingRoot\Property\.vercel\project.json"
-        ProductionDomain  = 'www.propertytaxpartners.co.uk'
-    }
+$cfg = Get-SiteConfig $Site
+$accountingRoot = $cfg.paths.repoRoot -replace '/', '\'
+
+# Backward-compat shim: siteConfig hashtable used by rest of script
+$siteConfig = @{
+    VercelProjectJson = Resolve-SitePath -Config $cfg -RelativePath $cfg.vercel.projectJson
+    ProductionDomain  = $cfg.vercel.productionDomain
 }
-$siteConfig = $siteVercelMap[$Site]
 
 $rootVercelJson   = "$accountingRoot\.vercel\project.json"
 $backupVercelJson = "$accountingRoot\.vercel\project.json.backup-before-$Site-deploy"

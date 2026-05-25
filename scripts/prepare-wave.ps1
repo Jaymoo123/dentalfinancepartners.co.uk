@@ -29,18 +29,23 @@ param(
     [Parameter(Mandatory=$true)]
     [int]$Wave,
 
+    [string]$Site = 'property',
     [switch]$DryRun
 )
 
 $ErrorActionPreference = 'Stop'
 
-$accountingRoot    = 'C:\Users\user\Documents\Accounting'
-$wtBase            = 'C:\Users\user\Documents'
-$buckets           = @('a','b','c')
-$launchPromptsFile = "$accountingRoot\docs\sessions\property\WAVE${Wave}_LAUNCH_PROMPTS.md"
-$promptOutDir      = "$accountingRoot\docs\sessions\property\wave${Wave}_prompts"
-$trackerFile       = "$accountingRoot\docs\property\wave${Wave}_page_tracker.md"
-$blogRoutesDir     = "$accountingRoot\Property\web\src\app\blog"
+# Site config (Round 1 of rolling architecture)
+. "$PSScriptRoot\_lib\site-config.ps1"
+
+$cfg = Get-SiteConfig $Site
+$accountingRoot    = $cfg.paths.repoRoot -replace '/', '\'
+$wtBase            = $cfg.paths.worktreeBase -replace '/', '\'
+$buckets           = $cfg.wave.buckets
+$launchPromptsFile = Get-WaveArtefactPath -Config $cfg -Wave $Wave -Kind launchPrompts
+$promptOutDir      = Get-WaveArtefactPath -Config $cfg -Wave $Wave -Kind promptExtractDir
+$trackerFile       = Get-WaveArtefactPath -Config $cfg -Wave $Wave -Kind tracker
+$blogRoutesDir     = Resolve-SitePath -Config $cfg -RelativePath $cfg.paths.blogRoutesDir
 
 function Write-Step($msg) { Write-Host "==> $msg" -ForegroundColor Cyan }
 function Write-OK   ($msg) { Write-Host "    OK:   $msg" -ForegroundColor Green }
@@ -114,8 +119,8 @@ $mainHead = (git -C $accountingRoot rev-parse main).Trim()
 Write-OK "main HEAD: $mainHead"
 
 foreach ($bucket in $buckets) {
-    $wtDir  = "$wtBase\Accounting-wt-property-wave${Wave}-${bucket}"
-    $branch = "property-wave${Wave}-${bucket}"
+    $wtDir  = Resolve-WorktreePath -Config $cfg -Wave $Wave -Bucket $bucket
+    $branch = Resolve-BranchName -Config $cfg -Wave $Wave -Bucket $bucket
 
     if (-not (Test-Path $wtDir)) {
         Write-Fail "Worktree missing: $wtDir"
@@ -133,8 +138,8 @@ foreach ($bucket in $buckets) {
 # 3. Fast-forward merge
 Write-Step "4/6 Fast-forward merging main into worktree branches"
 foreach ($bucket in $buckets) {
-    $wtDir  = "$wtBase\Accounting-wt-property-wave${Wave}-${bucket}"
-    $branch = "property-wave${Wave}-${bucket}"
+    $wtDir  = Resolve-WorktreePath -Config $cfg -Wave $Wave -Bucket $bucket
+    $branch = Resolve-BranchName -Config $cfg -Wave $Wave -Bucket $bucket
 
     if ($DryRun) {
         Write-Warn "Would: git -C `"$wtDir`" merge --ff-only main"
@@ -213,7 +218,7 @@ if ($missing.Count -eq 0) {
 }
 
 # Brief count
-$briefDir = "$accountingRoot\briefs\property\wave${Wave}"
+$briefDir = (Resolve-SitePath -Config $cfg -RelativePath ($cfg.paths.briefsDir + '/' + (Resolve-Naming $cfg.naming.briefSubdir -Wave $Wave)))
 if (Test-Path $briefDir) {
     $briefCount = (Get-ChildItem $briefDir -Filter '*.md' -File | Measure-Object).Count
     Write-OK "Briefs in $briefDir : $briefCount"
@@ -227,7 +232,7 @@ Write-Host ""
 Write-Host "Next steps:"
 Write-Host "  1. (Manual for now) Open 3 Windows Terminal tabs, one per worktree:"
 foreach ($bucket in $buckets) {
-    Write-Host "       $wtBase\Accounting-wt-property-wave${Wave}-${bucket}"
+    Write-Host "       $(Resolve-WorktreePath -Config $cfg -Wave $Wave -Bucket $bucket)"
 }
 Write-Host "  2. In each, run: claude (Get-Content ../Accounting/docs/sessions/property/wave${Wave}_prompts/<bucket>.txt -Raw)"
 Write-Host ""

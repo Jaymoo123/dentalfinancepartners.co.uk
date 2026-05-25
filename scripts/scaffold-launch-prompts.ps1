@@ -50,20 +50,27 @@ param(
 
     [int]$PriorWave = 0,
 
+    [string]$Site = 'property',
     [switch]$Force,
     [switch]$DryRun
 )
 
 $ErrorActionPreference = 'Stop'
 
+# Site config (Round 1 of rolling architecture)
+. "$PSScriptRoot\_lib\site-config.ps1"
+
 if ($PriorWave -eq 0) { $PriorWave = $Wave - 1 }
 
-$accountingRoot = 'C:\Users\user\Documents\Accounting'
-$buckets        = @('A','B','C')
+$cfg = Get-SiteConfig $Site
+$accountingRoot = $cfg.paths.repoRoot -replace '/', '\'
+$buckets        = $cfg.wave.bucketsUpper
 $utf8NoBom      = [System.Text.UTF8Encoding]::new($false)
-$sessionsDir    = "$accountingRoot\docs\sessions\property"
+$sessionsDir    = Resolve-SitePath -Config $cfg -RelativePath $cfg.paths.sessionsDir
 
-# Per-bucket F-number range (Bug #2 fix)
+# Per-bucket F-number range (Bug #2 fix). Default for wave-mode (small
+# 9-30 pick scopes). Rolling-mode mega-waves use wider ranges from
+# config.wave.fRangePerBucket.
 $fRanges = @{
     A = 'F-1 to F-9'
     B = 'F-10 to F-19'
@@ -76,13 +83,13 @@ function Write-Warn ($msg) { Write-Host "    WARN: $msg" -ForegroundColor Yellow
 function Write-Fail ($msg) { Write-Host "    FAIL: $msg" -ForegroundColor Red; exit 1 }
 
 function Convert-WaveTokens {
-    param([string]$Text, [int]$From, [int]$To)
+    param([string]$Text, [int]$From, [int]$To, [string]$SiteName = 'property')
     $Text = $Text -replace "Wave $From\b",   "Wave $To"
     $Text = $Text -replace "WAVE${From}\b",  "WAVE${To}"
     $Text = $Text -replace "wave${From}_",   "wave${To}_"
     $Text = $Text -replace "wave/?${From}/", "wave${To}/"
-    $Text = $Text -replace "property-wave${From}-", "property-wave${To}-"
-    $Text = $Text -replace "Accounting-wt-property-wave${From}-", "Accounting-wt-property-wave${To}-"
+    $Text = $Text -replace "$SiteName-wave${From}-", "$SiteName-wave${To}-"
+    $Text = $Text -replace "Accounting-wt-$SiteName-wave${From}-", "Accounting-wt-$SiteName-wave${To}-"
     return $Text
 }
 

@@ -30,16 +30,22 @@ param(
     [Parameter(Mandatory=$true)]
     [int]$Wave,
 
+    [string]$Site = 'property',
     [string]$PicksYaml,
     [switch]$DryRun
 )
 
 $ErrorActionPreference = 'Stop'
 
-$accountingRoot = 'C:\Users\user\Documents\Accounting'
-$pyScript       = "$accountingRoot\scripts\property_wave_cannibalisation_check.py"
-$defaultPicks   = "$accountingRoot\briefs\property\wave${Wave}\picks.yaml"
-$outputPath     = "$accountingRoot\docs\property\wave${Wave}_cannibalisation_check.md"
+# Site config (Round 1 of rolling architecture)
+. "$PSScriptRoot\_lib\site-config.ps1"
+
+$cfg = Get-SiteConfig $Site
+$accountingRoot = $cfg.paths.repoRoot -replace '/', '\'
+# Python module name is site-templated; currently only Property has the cannib script
+$pyScript       = "$accountingRoot\scripts\${Site}_wave_cannibalisation_check.py"
+$defaultPicks   = (Resolve-SitePath -Config $cfg -RelativePath ($cfg.paths.briefsDir + '/' + (Resolve-Naming $cfg.naming.briefSubdir -Wave $Wave) + '/picks.yaml'))
+$outputPath     = Get-WaveArtefactPath -Config $cfg -Wave $Wave -Kind cannibCheck
 
 function Write-Step($msg) { Write-Host "==> $msg" -ForegroundColor Cyan }
 function Write-OK   ($msg) { Write-Host "    OK:   $msg" -ForegroundColor Green }
@@ -73,7 +79,7 @@ if ($DryRun) {
 
 Push-Location $accountingRoot
 try {
-    & python $pyScript --wave $Wave --picks-yaml $picksFile
+    & python $pyScript --wave $Wave --picks-yaml $picksFile --site $Site
     $checkExit = $LASTEXITCODE
 } finally {
     Pop-Location
