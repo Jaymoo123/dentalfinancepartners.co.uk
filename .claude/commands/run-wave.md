@@ -156,6 +156,16 @@ Acknowledge to user: "Wave $1 closed. {N} pages live. {M} URLs in IndexNow queue
 
 ---
 
+## Sub-agent autonomy clause (MANDATORY in every sub-agent prompt — Bug #7 fix)
+
+Wave 9 surfaced a recurring failure mode: sub-agents acknowledge the seed prompt then PAUSE waiting for "continue" instruction. Wave 9 Bucket B + C sat idle for 3+ hours after launch because the prompt only said "acknowledge with one status line" — sub-agents interpreted that as "ack + wait for next instruction." Bucket A happened to chain through naturally; B + C did not.
+
+**Every sub-agent dispatch prompt (Stage 1, Stage 2, RUN) MUST include this clause near the top:**
+
+> **Work autonomously — do NOT pause for further instructions between work units (briefs / pages / commits).** After completing one unit (e.g. committing one page + flipping tracker row to ✅), IMMEDIATELY claim the next unit and continue. Do NOT ask "should I proceed?" or "ready for the next one?" — proceed. The acknowledgment line is the ONLY user-facing pause; everything else runs to completion or to a real blocker. Stop ONLY when: (a) all units in your bucket are committed; (b) you hit a real blocker requiring manager Q-N (use bracketed `## [Q-N]` format per Bug #6); (c) you encounter a build failure you cannot resolve.
+
+This clause is non-negotiable. Without it sub-agents chain ~30% of the time and pause ~70% per recent observation.
+
 ## Pause discipline (non-negotiable)
 
 The pauses above exist because Wave 8 caught 7 real quality flags. Skipping them would have shipped stale RPDT framing, wrong VAT 1614 form attributions, and a wrong-section attribution for s.48ZA. Each pause is conductor + user judgment that scripts cannot replicate.

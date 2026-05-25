@@ -102,6 +102,22 @@ function Add-FRangeNote {
     return $Text + $injection
 }
 
+function Add-AutonomyClause {
+    param([string]$Text)
+    # Idempotency: if autonomy clause already present, leave it
+    if ($Text -match 'Work autonomously') { return $Text }
+    # Inject IMMEDIATELY after the acknowledgment-line instruction so it's clear
+    # that ack is the ONLY pause-point
+    $injection = "`n`n**Work autonomously (Bug #7 fix from Wave 9 - sub-agents B + C sat idle for 3h waiting for 'continue'):** the acknowledgment line above is the ONLY user-facing pause-point. After acknowledging, immediately claim the first page/brief and run the full workflow through to commit. After committing one work unit (page or brief + tracker flip to in-progress/done), IMMEDIATELY claim the next unit and continue. Do NOT pause between units. Do NOT ask 'should I proceed?' or 'ready for the next one?' - proceed. Stop ONLY when: (a) ALL units in your bucket are committed and tracker shows all done; (b) you hit a real blocker requiring a manager Q-N (use bracketed ## [Q-N] format per Bug #6); (c) you encounter a build failure you cannot resolve.`n"
+    # Find a stable anchor - the acknowledgment-line instruction
+    if ($Text -match '(?ms)(Acknowledge with one short status line[^\n]+\n)') {
+        $anchor = $Matches[1]
+        return $Text.Replace($anchor, $anchor + $injection)
+    }
+    # Fallback: append near end
+    return $Text + $injection
+}
+
 function Write-Artefact($path, $content) {
     if ((Test-Path $path) -and -not $Force) {
         Write-Fail "Already exists (use -Force to overwrite): $path"
@@ -128,14 +144,15 @@ if (-not (Test-Path $priorLaunchFile)) {
 $priorLaunch = [System.IO.File]::ReadAllText($priorLaunchFile, $utf8NoBom)
 $launchOut = Convert-WaveTokens -Text $priorLaunch -From $PriorWave -To $Wave
 
-# Inject F-range note into each bucket's fenced code block
+# Inject F-range note AND autonomy clause into each bucket's fenced code block
 # Strategy: split into segments by "## Session X" markers, process each, rejoin
 $segments = [regex]::Split($launchOut, '(?ms)(?=^## Session [A-C])')
 for ($i = 0; $i -lt $segments.Count; $i++) {
     if ($segments[$i] -match '^## Session ([A-C])') {
         $bucket = $Matches[1]
-        # Within this segment, inject F-range note inside the fenced code block
+        # Within this segment, inject F-range note + autonomy clause
         $segments[$i] = Add-FRangeNote -Text $segments[$i] -Bucket $bucket
+        $segments[$i] = Add-AutonomyClause -Text $segments[$i]
     }
 }
 $launchOut = $segments -join ''
@@ -161,6 +178,7 @@ for ($i = 0; $i -lt $buckets.Count; $i++) {
     $priorSH = [System.IO.File]::ReadAllText($priorSHFile, $utf8NoBom)
     $shOut = Convert-WaveTokens -Text $priorSH -From $PriorWave -To $Wave
     $shOut = Add-FRangeNote -Text $shOut -Bucket $X
+    $shOut = Add-AutonomyClause -Text $shOut
     Write-Artefact "$sessionsDir\WAVE${Wave}_SESSION_${X}_START_HERE.md" $shOut
 }
 
