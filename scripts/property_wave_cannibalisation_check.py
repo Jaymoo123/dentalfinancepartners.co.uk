@@ -218,20 +218,22 @@ def main() -> int:
     output_path.write_text("\n".join(lines), encoding="utf-8")
     print(f"Wrote {output_path}")
 
+    # Stdout summary uses ASCII-only markers (Windows cp1252 console cannot
+    # encode emoji; report file is UTF-8 and renders correctly elsewhere)
     print(
-        f"\nCounts: ✅ net-new {counts['✅ net-new']} · "
-        f"⚠️ partial {counts['⚠️ partial overlap']} · "
-        f"❌ covered {counts['❌ already covered']}"
+        f"\nCounts: [net-new {counts['✅ net-new']}] "
+        f"[partial {counts['⚠️ partial overlap']}] "
+        f"[covered {counts['❌ already covered']}]"
     )
 
     print("\nPartial-overlap rows for manager audit:")
     for _, _, pick_id, _, label, cls, top_score, top in rows:
         if cls == "⚠️ partial overlap":
-            print(f"  {pick_id} {top_score:.2f}: {label}  ↔  {top[0][1]['slug']}")
+            print(f"  {pick_id} {top_score:.2f}: {label[:60]}  -->  {top[0][1]['slug']}")
     print("\nAlready-covered rows (pick replacement needed):")
     for _, _, pick_id, _, label, cls, top_score, top in rows:
         if cls == "❌ already covered":
-            print(f"  {pick_id} {top_score:.2f}: {label}  ↔  {top[0][1]['slug']}")
+            print(f"  {pick_id} {top_score:.2f}: {label[:60]}  -->  {top[0][1]['slug']}")
 
     # Non-zero exit if any "already covered" so PS wrapper can fail-fast
     return 1 if counts["❌ already covered"] > 0 else 0

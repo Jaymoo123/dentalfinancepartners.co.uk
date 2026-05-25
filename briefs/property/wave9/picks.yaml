@@ -1,0 +1,45 @@
+wave: 9
+# Wave 9 TEST scope - 9 picks across 3 buckets to validate end-to-end pipeline
+# mechanics without committing 30 pages of test content. Selected for: (a) recent
+# statutory anchors that exercise drift detection; (b) zero overlap with Wave 8;
+# (c) commercial-intent property-accountant search territory.
+
+buckets:
+  A:
+    label: "Bucket A - SDLT: MDR abolition + surcharge mechanics"
+    picks:
+      - id: A1
+        slug: "multiple-dwellings-relief-abolition-fa-2024-transitional-rules-landlords"
+        label: "MDR abolition under FA 2024 (effective 1 June 2024) + transitional rules for contracts pre-dating abolition"
+      - id: A2
+        slug: "sdlt-additional-property-surcharge-refund-routes-3-year-replacement-claim"
+        label: "5% surcharge (Autumn 2024 increase from 3%) refund routes when sale of old home delayed; 3-year replacement-claim window mechanics"
+      - id: A3
+        slug: "sdlt-mixed-use-rates-vs-residential-property-tribunal-tests-landlords"
+        label: "Residential-vs-mixed-use SDLT rate line; Hyman, Suterwalla, Hortons Hall case-law applied to property investors"
+
+  B:
+    label: "Bucket B - Companies House / ECCTA reforms"
+    picks:
+      - id: B1
+        slug: "eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos"
+        label: "ECCTA 2023 ID verification rollout (phased 2025-2026); what landlord LtdCo directors + PSCs must do"
+      - id: B2
+        slug: "register-of-overseas-entities-roe-annual-update-statement-non-resident-landlords"
+        label: "RoE annual update obligation for non-resident landlord corporate entities; sanctions for non-compliance"
+      - id: B3
+        slug: "companies-house-confirmation-statement-changes-2024-onwards-psc-disclosure"
+        label: "Confirmation statement changes from March 2024 (ECCTA-driven); new PSC disclosure + registered email requirements"
+
+  C:
+    label: "Bucket C - HMRC penalties + enquiries depth"
+    picks:
+      - id: C1
+        slug: "let-property-campaign-disclosure-mechanics-undeclared-rental-income-2026"
+        label: "Let Property Campaign mechanics; voluntary disclosure penalty mitigation vs prompted disclosure; quality-of-disclosure framework"
+      - id: C2
+        slug: "schedule-24-fa-2007-careless-deliberate-penalty-mitigation-landlords"
+        label: "Sched 24 FA 2007 penalty bands (careless/deliberate/concealed); mitigation routes; telling/helping/giving reductions"
+      - id: C3
+        slug: "hmrc-discovery-assessment-tma-1970-section-29-time-limits-landlords"
+        label: "TMA 1970 s.29 discovery assessments; 4/6/20-year time limits; staleness doctrine; brought-forward losses pre-FA 2008 amendment"
