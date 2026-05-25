@@ -26,7 +26,7 @@ Flags never block. Sessions continue work after flagging.
 ## F-11 — HOUSE_POSITION_EXTENSION — §11.A commencement-state line needs hardening (ID verification went firm 18 November 2025)
 
 **Raised:** 2026-05-25, Stage 2, Session B (Bucket B, picks B1 + B3 affected).
-**Status:** open.
+**Status:** CLOSED 2026-05-25 by manager via HP §11.A commencement-state hardening (commit 0c524e7) — 18 November 2025 mandatory date locked + 12-month transition window through ~November 2026.
 
 **Issue:** HP §11.A (commit `9285495`) commencement chain reads:
 - "**Autumn 2025 (precise date subject to further Commencement Regulations):** ID verification becomes MANDATORY for new directors at incorporation + new PSCs notified to CH."
@@ -46,7 +46,7 @@ WebFetch of `https://changestoukcompanylaw.campaign.gov.uk/identity-verification
 ## F-13 — HOUSE_POSITION_EXTENSION — §11.A ECTEA 2022 section attributions wrong for s.8 / s.34 / s.36
 
 **Raised:** 2026-05-25, Stage 2, Session B (Bucket B, pick B2 directly affected; B3 only loosely affected).
-**Status:** open.
+**Status:** CLOSED 2026-05-25 by manager via HP §11.A re-anchoring (commit 0c524e7) — s.8 / s.34 / s.36 ECTEA attributions corrected to verbatim legislation.gov.uk headings + LRA 2002 Sch 4A added as actual HMLR disposition-block anchor.
 
 **Issue:** HP §11.A "ECTEA 2022 (Register of Overseas Entities) — anchors per Part 1" block (commit `9285495`) maps ECTEA sections to roles. WebFetch verification of legislation.gov.uk section pages at 2026-05-25 shows three of the five section attributions are inconsistent with the verbatim statutory headings:
 
@@ -74,7 +74,7 @@ Stage 2 B2 brief has applied the corrected attributions inline + flagged the par
 ## F-12 — AUTHORITY_GAP — §11.A canonical commencement-tracker URL has gone 404
 
 **Raised:** 2026-05-25, Stage 2, Session B (Bucket B, all 3 picks affected).
-**Status:** open.
+**Status:** CLOSED 2026-05-25 by manager via HP §11.A URL fix (commit 0c524e7) — dead URL replaced with changestoukcompanylaw.campaign.gov.uk + companieshouse.blog.gov.uk added as secondary.
 
 **Issue:** HP §11.A line 360 + line 393 nominates `https://www.gov.uk/government/news/changes-to-uk-company-law` as the "canonical commencement-state tracker" that Bucket B sessions MUST WebFetch at write time. WebFetch at 2026-05-25 returns **HTTP 404**. The URL is dead.
 
