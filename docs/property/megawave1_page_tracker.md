@@ -12,7 +12,7 @@
 
 | Status | Pos | Slug | Cluster | Batch | Body words | FAQs | Notes |
 |---|---|---|---|---|---|---|---|
-| ⬜ | A1 | `abolishment-of-multiple-dwelling-relief` | SDLT — surcharges and reliefs | M1-A-B1 | | | |
+| ✅ | A1 | `abolishment-of-multiple-dwelling-relief` | SDLT — surcharges and reliefs | M1-A-B1 | | | Stage 1 seed f7ad0d6 |
 | ⬜ | A2 | `abolition-of-multiple-dwellings-relief-mdr-raises-concerns` | SDLT — surcharges and reliefs | M1-A-B1 | | | |
 | ⬜ | A3 | `a-complete-guide-on-multiple-dwellings-relief-eligibility-and-benefits` | SDLT — surcharges and reliefs | M1-A-B1 | | | |
 | ⬜ | A4 | `a-complete-guide-to-5-sdlt-surcharge-refund-claims` | SDLT — surcharges and reliefs | M1-A-B1 | | | |
