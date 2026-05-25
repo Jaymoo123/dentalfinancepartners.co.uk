@@ -23,6 +23,70 @@ Flags never block. Sessions continue work after flagging.
 
 ---
 
+## F-6 — HOUSE_POSITION_EXTENSION / BRIEF_DRIFT — HP §1.J cites Hyman UT as "[2019] UKUT 0411 (TCC)"; correct citation is [2021] UKUT 68 (TCC)
+
+**Raised:** 2026-05-25, RUN-phase, Session A (Wave 9 A3 §16.35 per-write verification catch).
+**Status:** OPEN — non-blocking; A3 written to the verbatim correct citation; recommend HP §1.J re-anchor.
+
+**Issue:** HP §1.J SDLT mixed-use rate-line mini-lock (locked 2026-05-25) cites the Upper Tribunal Hyman decision as:
+
+> Hyman & Goodfellow v HMRC [2019] UKUT 0411 (TCC): upper-tier ruling on "garden or grounds" interpretation. Established that "grounds" is broader than "garden" and includes land used for purposes ancillary to the dwelling.
+
+The standard citation triad for the Hyman case is:
+- **Hyman & Goodfellow v HMRC [2019] UKFTT 469 (TC)** — First-tier Tribunal (Tax Chamber); first instance.
+- **Hyman v HMRC [2021] UKUT 68 (TCC)** — Upper Tribunal (Tax and Chancery Chamber); the "grounds broader than garden" ratio sits here.
+- **Hyman v HMRC [2022] EWCA Civ 185** — Court of Appeal; binding affirmation.
+
+HP §1.J's "[2019] UKUT 0411" is anachronistic — there is no [2019] UKUT 0411 Hyman decision; the FTT decision was [2019] UKFTT 469 (TC), and the Upper Tribunal decision came in 2021. The substantive description ("upper-tier ruling on 'grounds broader than garden' interpretation") is accurate; the citation reference is wrong.
+
+The Stage 2 A3 brief itself uses the correct triad ([2019] UKFTT 469 → [2021] UKUT 68 → [2022] EWCA Civ 185), so the drift is at HP-lock level only. A3 written to the correct citations throughout.
+
+**Surfaced during:** A3 §16.35 per-write verification at write time. BAILII WebFetch returned HTTP 403 (likely WAF / rate-limit blocking) so direct verbatim case-text verification was not possible at session time; the citation correction is based on standard practitioner-database citation form and the Stage 2 brief's own (correct) citation triad.
+
+**Recommended:** in-place edit of HP §1.J to:
+- Replace "Hyman & Goodfellow v HMRC [2019] UKUT 0411 (TCC)" with "Hyman & Goodfellow v HMRC [2019] UKFTT 469 (TC) (FTT) → Hyman v HMRC [2021] UKUT 68 (TCC) (UT) → Hyman v HMRC [2022] EWCA Civ 185 (CA, binding)".
+- Confirm the "grounds broader than garden" ratio attribution to the UT [2021] UKUT 68 decision and the binding-authority status from the CA [2022] EWCA Civ 185.
+
+Pattern is the §16.45 territory-novelty drift extending into HP-lock-level case-law citations (after the §16.45 lesson on Wave 7 HP-lock citation density). Non-blocking; substance preserved.
+
+---
+
+## F-5 — BRIEF_DRIFT — HP §1.I + Stage 2 A2 brief locate the para 3(7A)(b) extension test at "para 3(7B)"
+
+**Raised:** 2026-05-25, RUN-phase, Session A (Wave 9 A2 §16.35 per-write verification catch).
+**Status:** OPEN — non-blocking; A2 written to the verbatim statute; recommend HP §1.I tightening.
+
+**Issue:** Per-write WebFetch of `https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA/paragraph/3` on 2026-05-25 returned verbatim text confirming:
+- Para 3(7A)(a) defines the standard permitted period: "the period of three years beginning with the day after the effective date of the transaction concerned".
+- Para 3(7A)(b) is the HMRC exceptional-circumstances EXTENSION POWER: "if HMRC are satisfied that the purchaser or the purchaser's spouse or civil partner would have disposed of the major interest in the sold dwelling within that three year period but was prevented from doing so by exceptional circumstances that could not reasonably have been foreseen, such longer period as HMRC may allow in response to an application made in accordance with sub-paragraph (7B)".
+- Para 3(7B) is the APPLICATION PROCEDURE for an extension under para 3(7A)(b).
+
+HP §1.I (locked 2026-05-25) and the Stage 2 A2 brief both locate the extension test at "para 3(7B)" rather than at para 3(7A)(b). The substantive position is the same (3-year window with HMRC discretion for exceptional circumstances), but the paragraph reference is one sub-paragraph off. A2 written to the verbatim statute (3(7A)(b) as the extension power; 3(7B) as the application procedure).
+
+**Surfaced during:** A2 §16.35 per-write verification. Pattern is the §16.36 statutory-citation cross-check at write time catching upstream HP-lock reference drift.
+
+**Recommended:** in-place edit of HP §1.I to re-anchor the extension power to para 3(7A)(b) with para 3(7B) as the application procedure. Minor reference correction; substance unchanged. Non-blocking for the rest of Wave 9.
+
+---
+
+## F-4 — EXISTING_PAGE_STALE — existing `sdlt-5-percent-surcharge-refund-claim-process` misattributes the 3%-to-5% rate change to F(No.2)A 2024
+
+**Raised:** 2026-05-25, RUN-phase, Session A (Wave 9 A1 write-time discovery; affects A2's claim-form companion).
+**Status:** OPEN — recommend Wave 9 close back-patch.
+
+**Issue:** The existing live page `Property/web/content/blog/sdlt-5-percent-surcharge-refund-claim-process.md` body contains (around line 62) the framing: "Since 31 October 2024 the surcharge rate has been 5% (raised from 3% in the Autumn Budget 2024 under Finance (No. 2) Act 2024)". Per HP §1.I Stage 1b correction (locked 2026-05-25), the 3%-to-5% rate change was enacted by **FA 2025 s.51(1)-(2)**, NOT F(No.2)A 2024. The Autumn 2024 Budget on 30 October 2024 was enacted in the following parliamentary session as Finance Act 2025 (c. 8); F(No.2)A 2024 carried the Spring 2024 Budget content (MDR abolition + non-resident-landlord items, not the surcharge rate). The page also links to `https://www.legislation.gov.uk/ukpga/2024/12/contents` (F(No.2)A 2024 TOC) as if it were the rate-change authority.
+
+**Surfaced during:** A1 RUN-phase write. A1's framing of the post-abolition rate landscape required reference to the current additional-dwellings surcharge architecture; cross-checking the companion claim-process page surfaced the misattribution. A2 will independently re-anchor to FA 2025 s.51 per HP §1.I but the existing claim-process companion will then read self-contradicting against A2 until back-patched.
+
+**Recommended:** in-place edit of `sdlt-5-percent-surcharge-refund-claim-process.md` to:
+- Replace "Finance (No. 2) Act 2024" with "Finance Act 2025" in the rate-attribution sentence.
+- Replace the F(No.2)A 2024 TOC link with `https://www.legislation.gov.uk/ukpga/2025/8/section/51` (FA 2025 s.51).
+- Audit FAQ wording for any further "F(No.2)A 2024 rate" references and re-attribute.
+
+Pattern is the §16.42 + §16.45 EXISTING_PAGE_STALE territory-novelty drift (HP §1.I lock corrected the in-program attribution but the pre-existing live page wrote on the older framing).
+
+---
+
 ## F-11 — HOUSE_POSITION_EXTENSION — §11.A commencement-state line needs hardening (ID verification went firm 18 November 2025)
 
 **Raised:** 2026-05-25, Stage 2, Session B (Bucket B, picks B1 + B3 affected).
@@ -175,3 +239,75 @@ Stage 2 B has used these in the extended B1 brief. Recommend §11.A swap the dea
 
 ---
 
+## F-14 — BRIEF_DRIFT — ECCTA 2023 Identity-verification crossheading section attributions wrong in Stage 2 brief + HP §11.A statutory map (B1 directly; B3 inherits indirectly)
+
+**Raised:** 2026-05-25 (write-time), Session B (Bucket B, pick B1 directly affected; B3 anchored on safer ECCTA-Part-1 inserting provisions so does not propagate the same drift).
+**Status:** OPEN. Recommend manager close via HP §11.A re-anchor against verbatim legislation.gov.uk section headings.
+
+**Issue:** HP §11.A (commit `9285495`, lines 340-343) carries the following statutory anchor map for the ECCTA Identity verification crossheading:
+- "s.64 — Director identity verification operative provisions"
+- "s.65 — PSC identity verification operative provisions"
+- "s.66 — Authorised Corporate Service Providers (ACSPs) authorisation regime"
+- "ss.67-69 — Identity verification: continuing obligations + offences"
+
+The Stage 2 brief for B1 inherits this map and applies the same attributions.
+
+WebFetch of `https://www.legislation.gov.uk/ukpga/2023/56/contents` at 2026-05-25 returns verbatim section headings that do NOT match:
+
+| Section | §11.A attribution | legislation.gov.uk verbatim heading | Verdict |
+|---------|-------------------|-------------------------------------|---------|
+| s.64 | Director identity verification | **"Identity verification of persons with significant control"** | ✗ MISMATCH — s.64 is the PSC-side provision, not director |
+| s.65 | PSC identity verification | **"Procedure etc for verifying identity"** | ✗ MISMATCH — s.65 is the generic procedure provision, not PSC-specific |
+| s.66 | ACSP authorisation | "Authorisation of corporate service providers" | ✓ matches (substantively) |
+| s.67 | (with 68-69) Continuing obligations + offences | **"Exemption from identity verification: national security grounds"** | ✗ MISMATCH — s.67 is national-security exemption |
+| s.68 | (with 67, 69) Continuing obligations + offences | **"Allocation of unique identifiers"** | ✗ MISMATCH — s.68 is unique-identifier mechanic |
+| s.69 | (with 67, 68) Continuing obligations + offences | **"Identity verification: material unavailable for public inspection"** | ✗ MISMATCH — s.69 is publication restriction |
+
+**Where the director-side ID verification operative provisions actually live:** the Directors crossheading at ECCTA Part 1 ss.40-45, which inserts new director-appointment / ID-verification provisions into the Companies Act 2006. The inserted CA 2006 section numbers would need separate WebFetch verification to enumerate verbatim (the legislation.gov.uk individual-section pages for inserted CA 2006 provisions tend to return rich content on the CA 2006 side, which Stage 2 did not fetch in this pass).
+
+**Where the offence provisions actually live:** the Confirmation statements crossheading at s.63 "Confirmation statements: offences" carries the offence-of-non-compliance machinery linked to the confirmation statement flow. The Identity verification crossheading does NOT carry a dedicated offences section in the verbatim heading list; the offences emerge through the inserted CA 2006 provisions and through the Confirmation statements crossheading.
+
+**Sources (WebFetched 2026-05-25, HTTP 200):**
+- `https://www.legislation.gov.uk/ukpga/2023/56/contents`
+- `https://changestoukcompanylaw.campaign.gov.uk/identity-verification/`
+
+**Page-side mitigation applied at write time:** B1 page body uses verbatim ECCTA crossheading + section heading attribution per legislation.gov.uk, anchors director-side mechanics on the Directors crossheading ss.40-45 rather than on the misattributed s.64-65 split, and notes that the inserted-CA-2006 section numbers should be quoted from legislation.gov.uk at the point of any formal advice. This contains the drift at the page level; the HP §11.A anchor map itself remains in need of re-lock.
+
+**Recommended:** §11.A's "ECCTA 2023 Part 1 (Companies) — section-grouped crossheadings" block at lines 329-343 re-anchored against the verbatim section headings (per the table above). Future-wave sub-agents working on adjacent ECCTA territory then inherit a clean map.
+
+**Pattern:** this is the SECOND consecutive §11.A statutory anchor mis-attribution caught at write time (F-13 caught ECTEA 2022 s.8 / s.34 / s.36 mis-attributions for B2; F-14 catches ECCTA 2023 ss.64-69 mis-attributions for B1). Pre-Wave-10 manager review should re-verify §11.A end-to-end against legislation.gov.uk to close out the cluster before the next wave touches the territory. Extends the §16.36 + §16.45 pattern (statutory anchor maps drift between waves; per-write WebFetch verification is the operational discipline that catches the drift).
+
+---
+
+
+## F-20 — BRIEF_DRIFT — Stage 2 C1 brief scenario 3 mis-states Sch 41 prompted floor (10% case A vs 20% case B for non-deliberate outside 12 months)
+
+**Raised:** 2026-05-25 (write-time), Session C (Bucket C, pick C1 directly affected; C2 + C3 not affected).
+**Status:** OPEN — non-blocking; C1 page written to verbatim 20% case B prompted floor; recommend Stage 2 C1 brief annotation at wave-close.
+
+**Issue:** Stage 2 C1 brief scenario 3 (`let-property-campaign-disclosure-mechanics-undeclared-rental-income-2026.md` worked scenarios block) states:
+
+> "Sch 41 prompted floor for non-deliberate (assuming careless behaviour): 10% on never-notified years."
+
+For a landlord with never-notified years from 2018/19 to 2023/24 facing HMRC nudge letter in March 2026, the time-bar status of every never-notified year is **outside** the case A 12-month-from-tax-first-unpaid window. The correct Schedule 41 paragraph 13 prompted floor for these years is therefore the **case B figure: 20 per cent**, not 10 per cent.
+
+Per verbatim WebFetch of `https://www.legislation.gov.uk/ukpga/2008/9/schedule/41/paragraph/13` at 2026-05-25, the Schedule 41 paragraph 13 table for the 30 per cent standard percentage (non-deliberate) is:
+
+| Standard % | Prompted Min | Unprompted Min |
+|---|---|---|
+| 30% | Case A: 10% / Case B: 20% | Case A: 0% / Case B: 10% |
+
+- **Case A:** HMRC become aware of the failure less than 12 months after the time when the tax first becomes unpaid.
+- **Case B:** otherwise.
+
+The 10% prompted floor applies only inside the 12-month window (case A); outside it, the prompted floor is 20% (case B). The brief's scenario 3 fact pattern (2018/19-2023/24 never-notified, nudge letter 2026) is unambiguously case B for all years.
+
+**Surfaced during:** C1 §16.35 per-write verification (WebFetch Sch 41 para 13 verbatim).
+
+**Recommended:** annotate Stage 2 C1 brief at wave-close with the case B correction. Sessions writing offshore-extension Sch 41 worked-scenarios should always run the case A/B time-bar test on every year being disclosed before stating a single prompted floor figure.
+
+**Page-side mitigation applied at write time:** C1 page scenario 3 written to verbatim 20% case B prompted floor figures throughout. Total Sch 41 limb penalty corrected from the brief's "around £10k" working estimate to £12k (20% x £60k tax loss across six never-notified years). Sch 24 limb (£3k at 15% prompted careless x £20k filed-but-wrong tax loss) is unchanged. The brief's "around £14k total" is corrected on the page to £15k total. The unprompted-vs-prompted comparison is also corrected: unprompted Sch 41 case B floor (10%) x £60k = £6k; unprompted Sch 24 careless (0%) x £20k = £0; total unprompted = £6k. Prompted total minus unprompted total = £15k - £6k = £9k differential (not the brief's implied "Sch 24 careless-unprompted 0% saves the £4k Sch 24 limb entirely" framing, which understates the Sch 41 case B prompted-vs-unprompted gap).
+
+**Pattern:** this is a recurring class of Stage 2 brief drift on Sch 41 case A/B — the brief author has mentally cached the 0%/10%/30% (Case A) figures and not re-verified case B (10%/20%/50%) at the relevant fact pattern. F-20 + the F-5 Wave 7 catch on the same Schedule together motivate a Wave 10+ HP §27.3 re-lock to encode the case A/B table verbatim at HP level, so future-wave sub-agents have the four-cell table in their dispatch context.
+
+---
