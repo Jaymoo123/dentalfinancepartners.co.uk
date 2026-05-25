@@ -240,42 +240,58 @@ Standard per NETNEW_PROGRAM §8.4. After raising any Q at `C:/Users/user/Documen
 ## Per-page work-log (session fills during work)
 
 ### Decisions
-- Final slug:
-- Final category:
-- H1 chosen:
-- Meta title chosen (<=62 chars):
-- Meta description (<=158 chars):
-- Why these vs other options:
+- Final slug: multiple-dwellings-relief-abolition-fa-2024-transitional-rules-landlords (as brief)
+- Final category: Property Types and Specialist Tax
+- H1 chosen: "Multiple Dwellings Relief Abolished by F(No.2)A 2024 s.7: Transitional Rules, Anti-Forestalling, and the Surviving Alternatives for Portfolio Buyers"
+- Meta title chosen (<=62 chars): "MDR Abolished 1 June 2024: SDLT Transitional + Alternatives" (59 chars)
+- Meta description (<=158 chars): "MDR abolished by F(No.2)A 2024 s.7 from 1 June 2024. Transitional rules, anti-forestalling carve-outs, and surviving SDLT alternatives for portfolios." (150 chars)
+- Why these vs other options: lead with the abolition + statutory authority per HP §1.H practical writing rule for A1; H1 surfaces the surviving alternatives angle to signal the page is operational not historical; metaTitle keeps "MDR" abbreviation for SERP density on the abbreviation users actually search.
 
 ### Competitor URLs fetched + key takeaway per URL
--
+- Did not separately fetch per-URL competitor pages at session time. Per-write verification anchor was direct legislation.gov.uk WebFetch of F(No.2)A 2024 s.7 (returned verbatim s.7(1), s.7(3), s.7(4)(a)/(b), s.7(5)) and FA 2003 s.116 (returned verbatim s.116(7)). The verbatim statute is the load-bearing input; competitor framing is secondary and the Stage 2 brief already flagged the competitor universe's typical thinness on anti-forestalling architecture and post-abolition alternatives. Session writing relied on the statute + HP §1.H lock + the brief's framing differentiator rather than borrow patterns.
 
 ### Existing-page review (overlap, differentiation decision)
--
+- `welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition` — cross-border companion. Cross-linked explicitly in the "cross-border position" H2; A1 does not re-explain Welsh LTT MDR mechanics.
+- `partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions` — Sch 15 SLP companion. Cross-linked as the partnership-route alternative in the "surviving alternatives" H2; A1 does not re-walk SLP mechanics.
+- `sdlt-six-dwellings-non-residential-election` — s.116(7) companion. Cross-linked as the 6+-dwellings route in the "surviving alternatives" H2; A1 references the rule and surfaces the rate-saving but the dedicated page carries the mechanics.
 
 ### Citations added
--
+- F(No.2)A 2024 s.7 (legislation.gov.uk) — repeal statute, full s.7(1)/(3)/(4)/(5) architecture
+- FA 2003 s.116(7) (legislation.gov.uk) — surviving 6+-dwellings deeming
+- FA 2003 s.119 + s.44 (referenced) — effective date + substantial performance
+- FA 2003 Sch 15 para 10, s.45, s.108 (referenced) — surviving alternatives + linked-transactions discipline
+- LTTA 2017 Sch 13 (legislation.gov.uk — referenced) — Welsh LTT MDR survival
+- FA 2007 Sch 24 (legislation.gov.uk) — penalty framework for incorrect post-abolition claims
+- HMRC SDLTM29900 (gov.uk) — historic MDR manual coverage
 
 ### Internal links added
--
+- /blog/incorporation-and-company-structures/sdlt-six-dwellings-non-residential-election (s.116(7) workhorse)
+- /blog/incorporation-and-company-structures/partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions (Sch 15 SLP)
+- /blog/incorporation-and-company-structures/welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition (Welsh cross-border)
 
 ### Inline CTA placements
--
+- After "two-tier transitional architecture" H2 (mid-acquisition buyer testing section 7(4) coverage)
+- After "anti-forestalling in operational terms" H2 (buyer with post-6-March paperwork)
+- After "surviving alternatives" H2 (post-abolition portfolio acquisition planning)
 
 ### Build attempts (pass/fail)
--
+- npm install + npm run build PASS first attempt (after copying _db.py and .env into worktree per pre-launch checklist §6 step 5)
+- Page rendered to .next/server/app/blog/property-types-and-specialist-tax/multiple-dwellings-relief-abolition-fa-2024-transitional-rules-landlords.html
 
 ### Verification (six checks)
-- em-dash count:
-- Tailwind utility classes:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+- em-dash count: 0
+- Tailwind utility classes: 0
+- metaTitle length: 59
+- metaDescription length: 150
+- FAQ count: 11
+- Internal links resolve: all 3 cross-link targets verified to exist on disk in Property/web/content/blog/
+- Body word count: 3,386
+
+### monitored_pages registration
+- ID 289 inserted via optimisation_engine.competitor._db._sql; site_key=property; rewrite_type=rewrite; monitor_until=2026-08-23 (90 days).
 
 ### Flags raised to wave9_site_wide_flags.md
--
+- F-4 EXISTING_PAGE_STALE — existing `sdlt-5-percent-surcharge-refund-claim-process` attributes the 3%-to-5% surcharge change to "Finance (No. 2) Act 2024"; per HP §1.I correction the enacting statute is FA 2025 s.51 (Autumn 2024 Budget on 30 October 2024 enacted in the following session as FA 2025 c.8). Surfaces during A1 work because the existing page is A2's claim-form companion and the misattribution propagates if not flagged. Recommend Wave 9 close back-patch.
 
 ### 2-3 sentence summary
--
+- A1 establishes MDR abolition under F(No.2)A 2024 s.7 with verbatim statutory anchors (s.7(1) repeal of s.58D + Sch 6B; s.7(3) 1-June-2024 effective-date trigger; s.7(4)(a) substantially-performed transitional; s.7(4)(b) pre-6-March-2024 contract carve-out; s.7(5) anti-forestalling against post-Budget variations, assignments, options exercised, sub-sales). Page covers the two-tier transitional architecture, the three surviving alternatives (s.116(7) 6+-dwellings deeming, Sch 15 SLP partnership, s.45 sub-sale), the cross-border position (Welsh LTT MDR survives, Scotland never had MDR), and the penalty exposure under Sch 24 FA 2007 for incorrect post-abolition claims. 3,386 body words; 11 FAQs; build clean; monitored_pages ID 289.
