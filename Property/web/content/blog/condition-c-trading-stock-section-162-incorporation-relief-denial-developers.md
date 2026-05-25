@@ -6,7 +6,7 @@ date: "2026-05-25"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Condition C Trading Stock: s.162 Denied for Developers"
-metaDescription: "CTA 2010 s.356OB(6) / ITA 2007 s.517B(6) deems trading-stock land within the regime. TCGA 1992 s.162 incorporation relief is denied; Part 22 is the alternative."
+metaDescription: "CTA 2010 s.356OB(6) / ITA 2007 s.517B(6) catches trading-stock land. TCGA 1992 s.162 incorporation relief is denied; Part 22 is the alternative route."
 altText: "UK property developer reviewing trading-stock accounts and incorporation paperwork at a desk"
 image: ""
 h1: "Condition C: Trading Stock and the Section 162 Incorporation Relief Denial for Developers"
@@ -127,6 +127,14 @@ faqs:
 </ul>
 
 <p>For landlords who have never operated as developers, Condition C rarely engages because the property classification is investment throughout ownership. For developers, Condition C is the structural anchor for almost every project. For mixed-business operators (developer-landlords with both investment portfolio and trading-stock pipeline), the boundary between investment and trading-stock classification needs to be policed at the level of each property.</p>
+
+<h2>Practical evidence: where to find the trading-stock classification</h2>
+
+<p>For sessions running the Condition C check on a developer-side incorporation or HMRC enquiry, the documentary record sits in a small number of predictable places. The statutory accounts filed at Companies House are the prime source for corporate developers: the balance-sheet line items (inventory, work-in-progress, finished goods) and the accounting policies note (FRS 102 section 13 on inventories, or IAS 2 if IFRS-reporting) together fix the classification at the year-end. The management accounts at any intermediate date refine the picture between year-ends.</p>
+
+<p>For individual sole-trader developers, the self-assessment trading-profit computation under ITTOIA 2005 Part 2 is the equivalent record. The cost of sales calculation, the opening and closing stock figures, and the property-by-property cost tracking all evidence the trading-stock classification. Where a developer operates without formal financial statements (common at the smaller end), the HMRC enquiry will rely on bank records, contract files, and the trader's own records of acquisition and disposal. Reconstructing trading-stock classification from primary records is harder than reading it off audited accounts.</p>
+
+<p>The boundary cases sit where a property moves between trading and investment classifications during ownership. A developer who builds a unit to sell, fails to find a buyer, then lets it on a long lease is making an accounting decision (and a tax decision under ITTOIA 2005 section 172) about whether the property remains trading stock or becomes investment. The decision is documented in the accounts at the appropriation point; for HMRC purposes the section 172 deemed-sale crystallises the trading profit at the appropriation date.</p>
 
 <h2>Cross-references to the rest of the cluster</h2>
 
