@@ -155,45 +155,56 @@ See `docs/property/NETNEW_PROGRAM.md` §4.9 / §7 for the verbatim 19-step workf
 ## Per-page work-log (Stage 2 + session fill)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos (as seed)
+- **Final category:** incorporation-and-company-structures (as seed)
+- **H1 chosen:** ECCTA 2023 Companies House Identity Verification: Operational Walkthrough for Landlord LtdCos
+- **Meta title chosen:** ECCTA Companies House ID Verification: Landlord LtdCo Guide (59 chars)
+- **Why these vs other options:** Anchored on the operational landlord-LtdCo audience hook so the page is distinct from generic ECCTA explainers. Meta title leads with the regulation name (ECCTA) for searchers researching the new requirement.
 
 ### Competitor URLs fetched
-- 
+- None survived Stage 2 liveness (Bug #3 guardrail in brief). Session relied on legislation.gov.uk + Companies House campaign page + CH blog as authority anchors. No competitor 3-to-5 floor satisfied — page differentiates against authority sources directly, no body-content overlap risk.
 
 ### Existing-page review
-- 
+- 0.09 jaccard top score (`property-company-employer-pension-contributions-directors`) — no overlap. Forward-linked to incorporation pillar; cross-linked to companion B2 + B3.
 
 ### Citations added
-- 
+- ECCTA 2023 c. 56 contents + verbatim section headings (ss.64-69 + ss.40-45 + ss.28-30) via legislation.gov.uk WebFetch 2026-05-25.
+- Companies House campaign page sub-pages (identity-verification, ACSPs, confirmation-statement-changes).
+- gov.uk verify-your-identity-for-companies-house + become-an-authorised-corporate-service-provider guidance pages.
+- Companies House blog post URLs (4 verified live in Stage 2).
+- CA 2006 s.1000 (striking-off) + s.86 (registered office) inserted-section context.
 
 ### Internal links added
-- 
+- /blog/incorporation-and-company-structures/companies-house-confirmation-statement-changes-2024-onwards-psc-disclosure (companion B3)
+- /blog/non-resident-landlord-tax/register-of-overseas-entities-roe-annual-update-statement-non-resident-landlords (companion B2)
+- /blog/incorporation-and-company-structures/landlord-incorporation-step-by-step-guide-uk (pillar)
+- /blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk (BTL pillar)
+- /blog/incorporation-and-company-structures/alphabet-shares-property-spv-dividend-splitting-spouse-children (PSC context)
+- /blog/incorporation-and-company-structures/property-company-profit-extraction-salary-vs-dividends (director-shareholder context)
+- /blog/incorporation-and-company-structures/fic-estate-planning-landlord-portfolio-value-freezing-iht-mechanics (FIC context)
 
 ### Inline CTA placements
-- 
+- 3 × `<aside>` callouts (route-choice framing; new-appointment trap; verification-timestamp discipline). LeadForm auto-injected at footer per universal rules.
 
 ### Build attempts
-- 
+- Single batched build for B1+B2+B3 after all three files written: `cd Property/web && npm run build` — PASS (554 static pages generated; B1 emitted at /blog/incorporation-and-company-structures/eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos.html).
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
-- Operative commencement state verified at: [timestamp + URL]
-- Operative civil penalty figure verified at: [timestamp + URL]
+- em-dash count: 0
+- Tailwind utility classes: 0
+- metaTitle length: 59 (≤62 ✓)
+- metaDescription length: 153 (≤158 ✓)
+- FAQ count: 12 (frontmatter) = 12 (built HTML JSON-LD) ✓
+- Internal links resolve: all 7 internal links verified to existing files in Property/web/content/blog/ (companion B2+B3 written same session).
+- Body word count: 3,135 (within 2,800-3,500 non-pillar target ✓)
+- Operative commencement state verified at: 2026-05-25 via https://changestoukcompanylaw.campaign.gov.uk/identity-verification/ (HTTP 200; 18 November 2025 mandatory commencement for new directors + PSCs confirmed; 12-month transition window for existing roles confirmed; filers/corporate-officer phase NET no earlier than November 2026 confirmed).
+- Operative civil penalty figure verified at: 2026-05-25 via gov.uk confirmation-statement-guidance page — £5,000 max financial penalty for missed CS (proxy for verification-related penalty escalation; statutory offence wording sits in ECCTA ss.67-69 territory — session quoted operative state at write time per brief discipline).
 
 ### Flags raised to wave9_site_wide_flags.md
-- 
+- F-14 BRIEF_DRIFT — Stage 2 brief's "s.64 director ID; s.65 PSC ID; s.66 ACSP; ss.67-69 continuing obligations + offences" attribution does not match verbatim section headings on legislation.gov.uk. Actual: s.64 = "Identity verification of persons with significant control" (PSC, NOT director); s.65 = "Procedure etc for verifying identity"; s.66 = "Authorisation of corporate service providers"; s.67 = "Exemption from identity verification: national security grounds"; s.68 = "Allocation of unique identifiers"; s.69 = "Identity verification: material unavailable for public inspection". Director-side ID verification mechanics insert via the "Directors" crossheading at ss.40-45 (which insert provisions into CA 2006). Page body uses verbatim attribution. HP §11.A also carries the same brief drift in its statutory anchor map (lines 340-343) — recommend §11.A re-anchor before next ECCTA wave touches the territory.
 
 ### 2-3 sentence summary
+B1 written to multi-SPV landlord-LtdCo operational walkthrough framing. Anchored on verbatim ECCTA 2023 ss.64-69 + ss.40-45 + ss.28-30 crossheadings per legislation.gov.uk fetch, with the Companies House campaign page 18 November 2025 mandatory commencement and 12-month transition window as the operative state. F-14 raised because the Stage 2 brief and HP §11.A both mis-attribute the ECCTA section headings; body uses the verbatim headings directly. Build PASS; 3,135 body words; 12 FAQs matched in built HTML JSON-LD; zero em-dashes; zero Tailwind classes; all 7 internal links resolve.
 
 
 ---
