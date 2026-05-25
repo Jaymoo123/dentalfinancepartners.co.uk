@@ -1,0 +1,51 @@
+You are Stage 2 Sub-Agent B for Wave 9 (TEST scope, 9 picks total). Worktree `Accounting-wt-property-wave9-b` on branch `property-wave9-b`. Your bucket: Companies House / ECCTA 2023 reforms (3 briefs B1-B3).
+
+**Your task:** extend the 3 Stage 1 seed briefs at `briefs/property/wave9/<slug>.md` (on main via absolute path) into full Stage 2 briefs. Stage 1 seeds are comprehensive; Stage 2 adds: verified competitor URL list, full FAQ entries, gov.uk Companies House campaign-page authority links, worked operational scenarios, and any final commencement-state correction.
+
+**Stage 1b status:** Wave 9 F-10 CLOSED via HP §11.A mini-lock (commit 9285495). Your bucket received a substantial new HP sub-section:
+- **HP §11.A** — ECCTA 2023 + ECTEA 2022 statutory-section depth (anchors all 3 of your briefs). **IMPORTANT corrections in §11.A vs your Stage 1 seed flags:**
+  - ECCTA 2023 Part 1 has NO Chapter structure — it is 23 sections under crossheadings (your seed may have referenced "Chapter 1/2/4" — correct to crossheaded section ranges per §11.A map).
+  - ECCTA 2023 Schedule 12 is "Criminal liability of bodies: economic crimes" — NOT amending ECTEA 2022 (your seed for B2 may have stated this; correct to ECTEA 2022 c.10 as the RoE primary anchor).
+  - Register of Overseas Entities primary anchor is ECTEA 2022 NOT ECCTA 2023.
+
+**Q&A discipline:** raise Q's at `C:/Users/user/Documents/Accounting/docs/property/wave9_questions_session_B.md` via ABSOLUTE PATH.
+
+**F-numbering range:** F-10..F-19 for your bucket (F-10 already used + closed; next available F-11).
+
+Read first:
+1. `C:/Users/user/Documents/Accounting/docs/property/NETNEW_PROGRAM.md` §4 brief anatomy + §16.36 + §16.31
+2. `C:/Users/user/Documents/Accounting/docs/property/house_positions.md` §11 main + §11.A (Wave 9 mini-lock) — your authoritative anchor; correct any Stage 1 seed claims that conflict
+3. Your 3 Stage 1 seed briefs in `briefs/property/wave9/`:
+   - `eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos.md` (B1)
+   - `register-of-overseas-entities-roe-annual-update-statement-non-resident-landlords.md` (B2)
+   - `companies-house-confirmation-statement-changes-2024-onwards-psc-disclosure.md` (B3)
+
+Acknowledge with: "Stage 2 B picked up. HP §11.A mini-lock read. Correcting Stage 1 seed Chapter-structure references then extending B1 first."
+
+**CRITICAL: URL liveness guardrail (Bug #3 fix).** Every competitor URL you propose for the brief must be WebFetched first. HTTP 200 + on-topic + guide-not-funnel. URLs that fail → DELETED. If fewer than 2 live URLs survive for a pick, write `<!-- competitor section: session-side WebSearch at write time, no Stage 2 hits -->` and move on. Do NOT invent plausible firm URLs.
+
+**CRITICAL: commencement-state verification (§16.27 + §11.A discipline).** Bucket B is uniquely exposed to commencement-state drift because ECCTA rollout is phased through 2026. For every commencement claim you write into a brief, you MUST WebFetch BOTH:
+1. The relevant legislation.gov.uk section page (for the underlying provision).
+2. `https://www.gov.uk/government/news/changes-to-uk-company-law` (the gov.uk Companies House campaign page — canonical commencement-state tracker).
+
+If the legislation says "may be appointed by regulations" but the campaign page shows the regulations are in force, use the in-force state. If a date you've cited ("autumn 2025 mandatory") has been revised in the campaign page, correct it.
+
+**Stage 2 extensions per brief:**
+
+1. **Correct Stage 1 seed errors first** — your B1/B2/B3 seeds may reference "Chapter 1/2/4" of ECCTA Part 1 (wrong — use crossheaded section ranges per §11.A map) or attribute RoE to ECCTA (wrong — ECTEA 2022 is the primary anchor). Fix before extending.
+
+2. **Competitor URLs** — 3-5 verified live per brief. For B-bucket the relevant competitors include Companies House gov.uk guidance pages (count as authority not competitor), ICAEW / ACCA / ICAS guidance, the Big-4 firms' ECCTA explainers, and accountancy-trade publications (AccountingWEB, Economia).
+
+3. **Authority links** — Companies House gov.uk guidance pages + legislation.gov.uk ECCTA 2023 / ECTEA 2022 section URLs. WebFetch each.
+
+4. **Worked operational scenarios** — for B1: a 3-director-2-PSC landlord LtdCo's ID verification timeline + ACSP route walkthrough. For B2: a non-resident landlord SPV's annual update obligation + missed-update penalty calculation. For B3: a confirmation statement filing with new lawful purposes statement + registered email.
+
+5. **FAQ expansion** — 8-12 FAQ entries with full draft answers per brief. Include "How does this affect landlord LtdCos specifically?" as a recurring frame.
+
+6. **Anti-templating cross-check** — Bucket B's 3 picks are tightly thematic (all ECCTA-driven); after extending, read as a set and ensure each page has distinct depth (B1 = ID verification mechanics; B2 = RoE update; B3 = confirmation statement updates). Replace any cross-page repeated framings.
+
+**Per-write statute verification + commencement check:** every section number + every commencement date verified at write time. Wave 9 Bucket B is the highest-drift-risk bucket because of phased rollout — over-verify rather than under-verify.
+
+**Commit discipline:** commit each extended brief as a separate commit on `property-wave9-b` with message format: `Wave 9 Stage 2 B<N>: <slug> full brief (Stage 1 seed extended + corrected)`. Three commits expected. The "+corrected" in the message signals you corrected Stage 1 seed structural errors per §11.A guidance.
+
+When all 3 briefs extended + committed: report completion.

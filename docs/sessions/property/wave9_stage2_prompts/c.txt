@@ -1,0 +1,46 @@
+You are Stage 2 Sub-Agent C for Wave 9 (TEST scope, 9 picks total). Worktree `Accounting-wt-property-wave9-c` on branch `property-wave9-c`. Your bucket: HMRC penalties + enquiries depth (3 briefs C1-C3).
+
+**Your task:** extend the 3 Stage 1 seed briefs at `briefs/property/wave9/<slug>.md` (on main via absolute path) into full Stage 2 briefs. Stage 1 seeds are comprehensive; Stage 2 adds: verified competitor URL list, full FAQ entries, HMRC manual authority links (CH series compliance handbook + EM series enquiry manual), worked penalty/discovery calculations.
+
+**Stage 1b status:** Bucket C raised NO flags at Stage 1 (HP §20/§26/§27 already cover penalty/enquiry territory adequately for your picks). No new HP mini-lock for your bucket. You work from the existing HP cluster.
+
+**Q&A discipline:** raise Q's at `C:/Users/user/Documents/Accounting/docs/property/wave9_questions_session_C.md` via ABSOLUTE PATH.
+
+**F-numbering range:** F-20..F-29 for your bucket (none used yet; next available F-20).
+
+Read first:
+1. `C:/Users/user/Documents/Accounting/docs/property/NETNEW_PROGRAM.md` §4 brief anatomy + §16.36 + §16.31
+2. `C:/Users/user/Documents/Accounting/docs/property/house_positions.md` §20 (penalty cluster Wave 7) + §26 (HMRC enquiries Wave 7 — incl §26.9 £30k→£40k threshold per FA 2024) + §27 (Sched 24 — §27.2 careless-floor 12-month-qualifier from Wave 7)
+3. Your 3 Stage 1 seed briefs in `briefs/property/wave9/`:
+   - `let-property-campaign-disclosure-mechanics-undeclared-rental-income-2026.md` (C1)
+   - `schedule-24-fa-2007-careless-deliberate-penalty-mitigation-landlords.md` (C2)
+   - `hmrc-discovery-assessment-tma-1970-section-29-time-limits-landlords.md` (C3)
+
+Acknowledge with: "Stage 2 C picked up. HP §20/§26/§27 read. Extending C2 first (Sched 24 mechanics — foundational for C1)."
+
+**CRITICAL: URL liveness guardrail (Bug #3 fix).** Every competitor URL you propose must be WebFetched first. HTTP 200 + on-topic + guide-not-funnel. URLs that fail → DELETED. If fewer than 2 live URLs survive, write `<!-- competitor section: session-side WebSearch at write time, no Stage 2 hits -->` and move on.
+
+**Differentiation framing critical — C1 + C2 are partial-overlap rows:**
+- **C1 (0.32 vs `let-property-campaign-formal-disclosure-route-landlords-undisclosed-rental`):** existing page covers the FORMAL disclosure route. C1 covers the full mechanics + quality-of-disclosure framework + prompted-vs-unprompted penalty math. Stage 2 must add explicit "How this page differs from <existing>" FAQ + canonical cross-link to existing page.
+- **C2 (0.30 vs `schedule-24-fa-2007-penalty-behaviour-categories-landlord-enquiries`):** existing page covers BEHAVIOUR CATEGORISATION (careless / deliberate / concealed criteria). C2 covers MITIGATION ROUTES — the telling/helping/giving reductions, worked penalty math examples, and how to navigate the HMRC enquiry to maximise mitigation. Stage 2 must add explicit "How this page differs" FAQ + canonical cross-link.
+
+**Stage 2 extensions per brief:**
+
+1. **Competitor URLs** — 3-5 verified live per brief. Property-tax / HMRC-enquiry specialist firms; LITRG; ICAEW Tax Faculty.
+
+2. **Authority links** — HMRC manual pages. For C1 + C2: CH series (Compliance Handbook) sections on penalties + LPC + behaviour. For C3: EM series (Enquiry Manual) sections on discovery assessments + time limits. WebFetch each; HMRC manual pages occasionally 404 after restructures.
+
+3. **Worked-example data:**
+   - **C1:** worked LPC penalty calculation showing the unprompted-vs-prompted differential on a £30k undeclared rental income disclosure; include the quality-of-disclosure reduction percentages from the current HMRC LPC factsheet.
+   - **C2:** worked Sched 24 penalty calculation showing careless (0-30% range) vs deliberate (20-70%) vs deliberate-and-concealed (30-100%); include T/H/G reductions worked through.
+   - **C3:** a worked discovery-assessment timeline showing 4-year (ordinary), 6-year (careless), 20-year (deliberate) limits applied to specific tax-year scenarios; include the staleness-doctrine angle (Tooth + Hicks).
+
+4. **FAQ expansion** — 8-12 FAQ entries per brief with full draft answers. C1 + C2 must include the differentiation FAQ explicitly.
+
+5. **Anti-templating cross-check** — Bucket C's 3 picks have natural overlap (all penalty/enquiry territory). After extending, ensure C1/C2/C3 each have distinct angles: C1 = disclosure pathway choice; C2 = penalty mitigation arithmetic; C3 = HMRC's information-gathering window.
+
+**Per-write rate verification (§16.27):** penalty percentages + LPC reduction bands + Sched 24 mitigation ranges + discovery time limits — every figure WebFetch-verified at write time. Wave 7 §26.9 £30k→£40k threshold change is the recent example of why this matters; HMRC penalty figures occasionally adjust without statutory amendment (campaign-driven HMRC discretion).
+
+**Commit discipline:** commit each extended brief as a separate commit on `property-wave9-c` with message format: `Wave 9 Stage 2 C<N>: <slug> full brief (Stage 1 seed extended)`. Three commits expected.
+
+When all 3 briefs extended + committed: report completion.

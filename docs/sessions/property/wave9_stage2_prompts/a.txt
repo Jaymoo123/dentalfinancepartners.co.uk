@@ -1,0 +1,51 @@
+You are Stage 2 Sub-Agent A for Wave 9 of the Property Net-New Program (TEST scope, 9 picks total). Working in worktree `Accounting-wt-property-wave9-a` on branch `property-wave9-a`. Your bucket: SDLT — MDR abolition + 5% surcharge + mixed-use line (3 briefs A1-A3).
+
+**Your task:** extend the 3 Stage 1 seed briefs at `briefs/property/wave9/<slug>.md` (on main via absolute path) into full Stage 2 briefs ready for RUN-phase page writing. Stage 1 seeds are already comprehensive (13-19 KB each); Stage 2 adds: verified competitor URL list, full FAQ entries, HMRC manual / gov.uk authority links, worked examples, and any final differentiation framing.
+
+**Stage 1b status:** all 4 Wave 9 Stage 1 flags CLOSED via HP mini-locks (commits 6d4a42c + 9285495 + aa17a7a + 9a85950). Your bucket received 3 new HP sub-sections:
+- **HP §1.H** — SDLT MDR abolition + transitional + anti-forestalling (anchors your A1 brief)
+- **HP §1.I** — SDLT 5% surcharge + 3-year replacement window (anchors your A2 brief; note Stage 1b correction: surcharge rate increase is FA 2025 s.51 NOT FA 2024)
+- **HP §1.J** — SDLT mixed-use rate line + Hyman/Suterwalla/Hortons Hall case-law trilogy (anchors your A3 brief)
+
+**Q&A discipline (§16.15 + §16.37 critical):** raise Q's at `C:/Users/user/Documents/Accounting/docs/property/wave9_questions_session_A.md` via ABSOLUTE PATH.
+
+**F-numbering range:** F-1..F-9 for your bucket (F-1, F-2, F-3 already used + closed at Stage 1b; next available F-4).
+
+Read first:
+1. `C:/Users/user/Documents/Accounting/docs/property/NETNEW_PROGRAM.md` §4 brief anatomy + §16.36 brief-citation gate + §16.31 URL liveness
+2. `C:/Users/user/Documents/Accounting/docs/property/house_positions.md` §1.H + §1.I + §1.J (the Stage 1b mini-locks just added for your picks)
+3. Your 3 Stage 1 seed briefs in `briefs/property/wave9/`:
+   - `multiple-dwellings-relief-abolition-fa-2024-transitional-rules-landlords.md` (A1)
+   - `sdlt-additional-property-surcharge-refund-routes-3-year-replacement-claim.md` (A2)
+   - `sdlt-mixed-use-rates-vs-residential-property-tribunal-tests-landlords.md` (A3)
+
+Acknowledge with one short status line: "Stage 2 A picked up. HP §1.H/I/J mini-locks read. Extending A1 first."
+
+**CRITICAL: URL liveness guardrail (Bug #3 fix from Wave 8 F-1).** For EVERY competitor URL you propose listing in a brief's "Competitor URLs" section, you MUST WebFetch it first and confirm:
+1. HTTP 200 status (not 404/403/500).
+2. Content is on-topic (matches the brief's subject — not just any page on the firm's site).
+3. URL is a guide/article, not a calculator/redirect/marketing-funnel page.
+
+URLs that fail any of (1)-(3) are DELETED from the brief, not listed. If fewer than 2 live URLs survive for a pick, write `<!-- competitor section: session-side WebSearch at write time, no Stage 2 hits -->` and move on. Do not invent plausible-looking firm URLs — Wave 8 F-1 caught Session A hallucinating 5 dead competitor URLs and that pattern must not recur.
+
+**Stage 2 extensions per brief (edit each seed in-place):**
+
+1. **Competitor URLs section** — 3-5 verified live URLs per brief. WebFetch each first. Include 1-line takeaway per URL ("what this competitor covers that we should also cover or counter").
+
+2. **Authority links section** — HMRC manual pages (full URLs to gov.uk SDLTM pages + relevant legislation.gov.uk sections). For A1: SDLTM29900+. For A2: SDLTM09730+ + SDLTM09750+. For A3: SDLTM00370+ + SDLTM00385+. WebFetch + verify each link is live.
+
+3. **Worked-example data** — provide structured numerical examples the RUN-phase sub-agent will use. For A1: a worked transitional-cohort scenario + an anti-forestalling-defeat scenario. For A2: refund calculation worked example with current 5% rate + exceptional-circumstances extension example. For A3: a mixed-use vs residential rate comparison on a £1.5m transaction.
+
+4. **FAQ expansion** — Stage 1 seeds have key questions architecture; Stage 2 makes 8-12 FAQ entries with full draft answers (RUN sub-agent will polish prose but should not need to research the answers).
+
+5. **Anti-templating cross-check** — after extending all 3 briefs, read them as a set and flag any sentences that read identical across the 3 (templating drift). Replace with distinct framings.
+
+6. **Differentiation framing for A2** — A2 has 0.36 cannib partial-overlap with existing `sdlt-5-percent-surcharge-refund-claim-process`. Stage 2 must add an explicit "How this page differs from <existing>" FAQ + the existing-page cross-link as canonical companion.
+
+**Per-write statute verification (§16.35 critical):** every numerical rate, every statutory section number, every commencement date you write into the brief must be WebFetch-verified against legislation.gov.uk at write time. Recent Wave 9 catches (F-2 FA 2025 vs FA 2024 attribution) show this matters.
+
+**Commit discipline:** commit each extended brief as a separate commit on your worktree branch `property-wave9-a` with message format: `Wave 9 Stage 2 A<N>: <slug> full brief (Stage 1 seed extended)`. Three commits expected.
+
+**Cold-start expectation:** Stage 1 seeds are already in briefs/property/wave9/ on main + accessible to your worktree (the wave9-a worktree should ff-merge before you start — if briefs aren't visible at the relative path `briefs/property/wave9/`, run `git -C <worktree> merge --ff-only main` from inside the worktree to catch up).
+
+When all 3 briefs extended + committed: report completion. Manager will then review Stage 2b drift, spot-check 1-2 briefs, then scaffold launch prompts + dispatch RUN.
