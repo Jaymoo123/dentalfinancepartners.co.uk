@@ -252,42 +252,60 @@ Standard per NETNEW_PROGRAM §8.4. After raising any Q at `C:/Users/user/Documen
 ## Per-page work-log (session fills during work)
 
 ### Decisions
-- Final slug:
-- Final category:
-- H1 chosen:
-- Meta title chosen (<=62 chars):
-- Meta description (<=158 chars):
-- Why these vs other options:
+- Final slug: sdlt-additional-property-surcharge-refund-routes-3-year-replacement-claim (as brief)
+- Final category: Property Types and Specialist Tax
+- H1 chosen: "The Five Refund Routes for the 5% SDLT Additional-Dwellings Surcharge: 3-Year Window Mechanics, Edge Cases, and the Para 3(7A)(b) Exceptional-Circumstances Extension"
+- Meta title chosen (<=62 chars): "SDLT Surcharge Refund: 3-Year Window, Routes, Edge Cases" (56 chars)
+- Meta description (<=158 chars): "Refund routes under FA 2003 Sch 4ZA para 3 for the 5% SDLT additional-dwellings surcharge: 3-year clock, chain-break, divorce, probate, repossession." (149 chars)
+- Why these vs other options: H1 explicitly enumerates five routes to signal the orthogonal scope vs the claim-form companion; meta title leads with "Refund Routes" + "3-Year Window" + "Edge Cases" for SERP differentiation against the existing process page.
 
 ### Competitor URLs fetched + key takeaway per URL
--
+- Did not separately fetch per-URL competitor pages at session time. Per-write verification (§16.35) anchored to direct legislation.gov.uk WebFetch of FA 2003 Sch 4ZA para 3 (returned verbatim para 3(7A)(a) 3-year period + para 3(7A)(b) extension power + para 3(7B) application procedure) and FA 2025 s.51 (returned verbatim subsection (1) rate-change text). The verbatim statute + HP §1.I lock + the existing claim-process companion's text were the load-bearing inputs.
 
 ### Existing-page review (overlap, differentiation decision)
--
+- `sdlt-5-percent-surcharge-refund-claim-process` — the claim-form-process companion. Cross-linked in the opening section + the FAQ as "the practical claim-form companion"; A2 explicitly states "this page handles the routes architecture; that page handles the claim form". Differentiation discipline strict; no overlap on form-mechanics or gov.uk service walkthrough.
+- `second-home-sdlt-additional-dwellings-surcharge-joint-owners-spouse-aggregation-rules` — purchase-side spousal-aggregation companion. Cross-linked in the Sch 4ZA para 9 spousal-aggregation section; A2 covers DISPOSAL-side aggregation explicitly.
+- `scottish-lbtt-additional-dwelling-supplement-ads-mechanics-second-home-buyers` — Scottish ADS cross-border companion. Cross-linked in the cross-border section.
 
 ### Citations added
--
+- FA 2003 Sch 4ZA para 3(7A)(a) verbatim 3-year period
+- FA 2003 Sch 4ZA para 3(7A)(b) verbatim HMRC extension power
+- FA 2003 Sch 4ZA para 3(7B) application procedure
+- FA 2003 Sch 4ZA para 8 refund mechanics + para 9 spousal aggregation
+- FA 2003 s.119 effective date
+- FA 2003 Sch 11A overpayment relief route
+- FA 2025 s.51 enacting statute for 3%-to-5% rate change (CORRECTED from F(No.2)A 2024 per HP §1.I)
+- FA 2003 Sch 3 para 3 inter-spouse divorce exemption (cross-reference; distinct doctrine)
+- HMRC SDLTM09807 exceptional-circumstances framework
+- FA 2009 s.89 repayment interest
 
 ### Internal links added
--
+- /blog/landlord-tax-essentials/sdlt-5-percent-surcharge-refund-claim-process (claim-form companion)
+- /blog/landlord-tax-essentials/second-home-sdlt-additional-dwellings-surcharge-joint-owners-spouse-aggregation-rules (purchase-side companion)
+- /blog/landlord-tax-essentials/scottish-lbtt-additional-dwelling-supplement-ads-mechanics-second-home-buyers (Scottish cross-border)
 
 ### Inline CTA placements
--
+- After "3-year refund window" H2 (planning-intent for buyer mid-acquisition)
+- After "five refund-route scenarios" H2 (compound-edge-case buyer)
+- After "what HMRC will press on enquiry" H2 (buyer currently in enquiry / refusal)
 
 ### Build attempts (pass/fail)
--
+- npm run build PASS first attempt; A2 rendered to .next/server/app/blog/property-types-and-specialist-tax/sdlt-additional-property-surcharge-refund-routes-3-year-replacement-claim.html
 
 ### Verification (six checks)
-- em-dash count:
-- Tailwind utility classes:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
+- em-dash count: 0
+- Tailwind utility classes: 0
+- metaTitle length: 56
+- metaDescription length: 149
+- FAQ count: 12
+- Internal links resolve: all 3 cross-link targets verified on disk
+- Body word count: 3,282
+
+### monitored_pages registration
+- ID 290 inserted via optimisation_engine.competitor._db._sql; site_key=property; rewrite_type=rewrite; monitor_until=2026-08-23 (90 days).
 
 ### Flags raised to wave9_site_wide_flags.md
--
+- F-5 BRIEF_DRIFT — Stage 2 brief framing said the HMRC exceptional-circumstances extension is at "para 3(7B)". Per per-write WebFetch of legislation.gov.uk on 2026-05-25, the extension POWER is verbatim at para 3(7A)(b); para 3(7B) is the APPLICATION PROCEDURE. HP §1.I lock similarly puts the extension at "para 3(7B)" which collapsed the (7A)(b) test + (7B) application into a single reference. A2 written to the verbatim statute (3(7A)(b) test, 3(7B) procedure); recommend HP §1.I tightening + brief work-log capture. Non-blocking; substance is preserved either way.
 
 ### 2-3 sentence summary
--
+- A2 establishes the five refund-route scenarios (standard, chain-break, divorce, probate, repossession) under FA 2003 Sch 4ZA para 3, with verbatim para 3(7A)(a) 3-year window and para 3(7A)(b) exceptional-circumstances extension power. Page is deliberately orthogonal to the claim-form-process companion (cross-linked explicitly); cross-links the purchase-side spousal-aggregation companion for the para 9 disposal-side application. Statutory attribution corrected to FA 2025 s.51 throughout (NOT F(No.2)A 2024) per HP §1.I Stage 1b correction. 3,282 body words; 12 FAQs; build clean; monitored_pages ID 290.
