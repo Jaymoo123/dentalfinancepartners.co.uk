@@ -33,7 +33,14 @@ For everything else, use flags (`wave9_site_wide_flags.md`) or discovery log (`w
 
 ## Q-1 — 30%/40%/30% telling/helping/giving allocation cannot be verified in CH82460 or CH82420
 
-**STATUS:** open
+**STATUS:** answered 2026-05-25 by manager.
+
+**A-1 (manager):** Confirm option (b) — drop the numeric 30/40/30 split and frame qualitatively. Sub-agent's WebFetch verification is correct: the split appears in some practitioner writing (likely carried from older HMRC operational summaries circa 2015-2018) but is NOT in current CH82460 / CH82420 or Sch 24 para 9 verbatim. The statutory anchor is the unprompted/prompted floor + ceiling; within-floor allocation is HMRC officer discretion guided by quality of disclosure. Stage 2 C2 brief should frame as: "Within the 0-30% (unprompted) or 15-30% (prompted) reduction window, HMRC weights the three limbs (telling / helping / giving) in determining where in the window to land. Helping (full quantification of underpayment) typically carries the largest practical weight because it most directly enables HMRC to close efficiently; pure telling is near-worthless if vague; giving access is usually a tick-box compliance issue rather than a discretion swing factor." Honest mechanic without false-precision quantification. HP §27.2 also carries the unsourced 30/40/30 claim — logged for Wave 10 HP-hygiene pass as INTER_WAVE_QUEUE_F-21 (avoiding Wave 9 scope creep into Wave 7 HP cluster).
+
+---
+
+**Original question below for audit trail:**
+
 **Asked:** 2026-05-25 (Stage 2 Sub-Agent C, mid-verification)
 **Page:** general (all 3 C-bucket briefs reference this allocation)
 **Step:** Stage 2 brief draft / per §16.36 statutory-citation cross-check gate
@@ -44,7 +51,18 @@ For everything else, use flags (`wave9_site_wide_flags.md`) or discovery log (`w
 
 ## Q-2 — All 5 competitor URLs in Stage 1a seed briefs are dead or unreachable
 
-**STATUS:** open
+**STATUS:** answered 2026-05-25 by manager.
+
+**A-2 (manager):** Confirm sub-agent's working assumption: (a) keep the 2 verified live landing pages where the topic matches (LPC for C1); (b) flag the other 3 as DEAD with the brief's competitor section instructing RUN session to do a fresh competitor SERP scan at write time per §16.31 + workflow step 4; (c) where fewer than 2 live URLs survive, write the standard `<!-- competitor section: session-side WebSearch at write time, no Stage 2 hits -->` marker per the Stage 2 prompt's Bug #3 URL-liveness guardrail. Sub-agent correctly followed the protocol.
+
+**Bug #5 logged (inter-wave queue):** Wave 8 F-1 caught 5 dead URLs in Bucket A; Wave 9 Bucket C now shows 100% dead rate (5/5). Pattern is Stage 1a sub-agents constructing/guessing competitor URLs rather than scraping from live SERPs. Future fix: harden Stage 1 dispatch prompt to require either (a) sub-agent omits competitor URLs entirely + leaves placeholder for Stage 2 to source live, OR (b) sub-agent WebFetches each before listing in Stage 1. Mixed pattern (speculative + verified-later) produces this exact failure mode.
+
+**Bug #6 logged (inter-wave queue):** §8.3 Q&A watcher regex `^## \[Q-[0-9]+\].*STATUS: open` requires bracketed Q-N format but sub-agent C posted as `## Q-1 —` (no brackets). Both Q-Ns missed by the watcher until manual file check. Fix: either widen watcher regex to accept both formats OR harden Q&A template + Stage 1/2 prompts to lock the bracketed format. Latter is more robust.
+
+---
+
+**Original question below for audit trail:**
+
 **Asked:** 2026-05-25 (Stage 2 Sub-Agent C, mid-verification)
 **Page:** general (all 3 C-bucket briefs use the same 5-URL competitor list)
 **Step:** §16.31 Stage 2 URL verification step
