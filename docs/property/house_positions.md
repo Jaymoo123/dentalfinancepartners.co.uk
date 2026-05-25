@@ -2175,7 +2175,93 @@ This §1.G mini-lock sits adjacent to the §1.A-§1.F Wave 7 SDLT extensions; pl
 
 ---
 
-## 22.21 SIPP/SSAS taxable property regime — FA 2004 Schedule 29A — Wave 7 mini-lock (added 2026-05-24)
+## 1.H SDLT Multiple Dwellings Relief — ABOLISHED — F(No.2)A 2024 s.7 — Wave 9 mini-lock (added 2026-05-25)
+
+This §1.H mini-lock closes F-1 from Wave 9 Stage 1b. Placement after §1.G for chronological-audit consistency.
+
+- **Statutory hooks:** Finance (No. 2) Act 2024 (c. 12) **s.7** ("Abolition of multiple dwellings relief for SDLT") repeals FA 2003 Schedule 6B in full. Verified at https://www.legislation.gov.uk/ukpga/2024/12/contents on 2026-05-25 (TOC fetch confirms s.7 exists with that title; full-text verification of effective date + transitional commencement language: see Wave 9 Stage 2 sub-agent A1 per §16.36).
+- **Effective date.** MDR is unavailable for **land transactions with an effective date on or after 1 June 2024**. The "effective date" for SDLT = completion OR substantial performance, whichever is earlier (FA 2003 s.119).
+- **Transitional cohort (Stage 2 sub-agent A1 verifies precise statutory language).** Contracts entered into and substantially performed BEFORE 1 June 2024 remain eligible for MDR even if completion occurs after 1 June 2024 (subject to anti-forestalling). Two operational tests:
+  - Contract date pre-1-June-2024 AND substantial performance pre-1-June-2024 = transitional eligibility likely.
+  - Contract date pre-1-June-2024 but substantial performance / completion post-1-June-2024 = anti-forestalling carve-outs apply; relief may be denied.
+- **Anti-forestalling architecture (Stage 2 verifies exact statutory section).** F(No.2)A 2024 includes anti-forestalling provisions to block retrofit MDR claims via:
+  - Sub-sale arrangements structured around the abolition date;
+  - Options or assignments of pre-1-June-2024 contracts where the underlying transaction completes post-abolition;
+  - Variations of pre-1-June-2024 contracts after Budget Day that change the consideration or dwelling count.
+- **Surviving alternatives for portfolio buyers post-abolition (CRITICAL for sessions):**
+  - **FA 2003 s.116(7) six-or-more-dwellings rule:** purchase of 6+ dwellings in a single transaction is **automatically classified non-residential** for SDLT rate purposes (no claim required; statutory deeming). This is a STATUTORY DEEMING, not a relief; it survives MDR abolition and is the workhorse route for bulk portfolio acquisitions now. Wave 1 audit logged 2026-05-22 corrected an earlier mis-attribution of this rule to Sch 6B para 7.
+  - **FA 2003 Sch 15 para 10 partnership SLP route:** transfer of property to a genuine pre-existing partnership uses Sum of the Lower Proportions (SLP) calculation per §1.A (Wave 7 lock). Available only where the partnership predates the transaction with substance; anti-Ramsay safeguards apply.
+  - **FA 2003 s.45 sub-sale relief:** narrow surviving route for genuine pre-completion onward-sale arrangements. NOT a substitute for MDR planning; sub-sale must reflect commercial reality.
+- **Pages adjacent to this lock:** Wave 9 A1 (`multiple-dwellings-relief-abolition-fa-2024-transitional-rules-landlords`) is the primary anchor page. Existing site coverage includes `welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition` (Welsh LTT survival angle — MDR-equivalent remains live under LTTA 2017 for Welsh transactions; do not conflate).
+- **Do not write:**
+  - "MDR is still available for second properties" (false; abolished for effective date on or after 1 June 2024).
+  - "MDR was abolished by the Autumn 2024 Budget" (false attribution; abolition was in the Spring 2024 Budget, enacted by F(No.2)A 2024 s.7 with 1 June 2024 commencement).
+  - "Six-or-more-dwellings rule is at Sch 6B para 7" (false; the rule lives at FA 2003 s.116(7); Sch 6B was the MDR provision and is repealed).
+  - "Transitional rules apply automatically to any pre-1-June-2024 contract" (false; substantial performance pre-1-June-2024 is required; anti-forestalling can defeat retrofit attempts).
+  - "Anti-forestalling looks at Budget Day only" (false; multiple operative dates matter; Stage 2 sub-agent A1 verifies the exact commencement architecture).
+- **HMRC manual anchor:** SDLTM29900+ (multiple dwellings relief — note the manual page may still describe the relief as live for historical/transitional purposes; cross-reference SDLTM00500 for current rates post-abolition).
+- **Practical writing rule for A1:** lead with the abolition date + statutory authority; then transitional cohort identification mechanics; then anti-forestalling architecture; then the three surviving alternatives (s.116(7) / Sch 15 SLP / s.45) as the post-abolition operational toolkit. Distinguish from Welsh LTT angle explicitly.
+
+---
+
+## 1.I SDLT 5% additional-dwellings surcharge — refund routes + 3-year replacement window — FA 2003 Sch 4ZA — Wave 9 mini-lock (added 2026-05-25)
+
+This §1.I mini-lock closes F-2 from Wave 9 Stage 1b. The §1 main do-not-write already references the 3% rate historically; this lock corrects to current 5% rate + adds refund-route architecture.
+
+- **Statutory hooks:** FA 2003 Schedule 4ZA (Higher rates for additional dwellings); rate increase from 3% to 5% via **FA 2025 s.51(1)-(2)** (note: NOT FA 2024 — the Autumn 2024 Budget on 30 October 2024 was enacted by FA 2025 c.8 in the following session). Verified at https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA on 2026-05-25. **Earlier Wave 9 F-2 framing of "Autumn 2024 / FA 2024" was a Stage 1b drift catch — corrected here.**
+- **Current Table A rates (per Sch 4ZA para 1(2) as amended by FA 2025 s.51):**
+  - £0 — £125,000: **5%** (was 3%)
+  - £125,001 — £250,000: **7%** (was 5%)
+  - £250,001 — £925,000: **10%** (was 8%)
+  - £925,001 — £1,500,000: **15%** (was 13%)
+  - £1,500,001+: **17%** (was 15%)
+  - **Verify at write time (§16.27 rate-by-reference):** these rates are the current state per the 2026-05-25 verification; sessions writing must re-verify against gov.uk SDLT calculator page.
+- **3-year replacement-window architecture (the refund route for surcharge paid pending old-home sale):** governed by Sch 4ZA **para 3(6)-(7B)**.
+  - **Para 3(7)(b):** defines a "permitted period" for disposing of the prior residence to qualify for surcharge refund.
+  - **Para 3(7A):** the permitted period is **(a) three years beginning with the day after the effective date** of the higher-rate transaction; OR **(b)** a longer period if HMRC grants an exceptional-circumstances extension per para 3(7B).
+  - **Para 3(7B):** HMRC may extend the period beyond 3 years where the prior residence could not be sold within the standard window due to exceptional circumstances (typically COVID-era delays, conveyancing-chain failure, market freeze). Extension is discretionary; needs application.
+- **Refund claim mechanics:**
+  - **Time limit for refund:** within 12 months of the sale of the prior residence OR within 12 months of the SDLT return filing date, whichever is later (FA 2003 Sch 11A — overpayment relief regime as adapted for Sch 4ZA refunds).
+  - **Form:** SDLT amendment via HMRC's online SDLT return amendment service or by letter to Stamp Office.
+  - **Documentation required:** sale completion statement for old home; SDLT5 certificate for higher-rate transaction; chain of evidence for "main residence" status of the sold property.
+- **Pages adjacent to this lock:** Wave 9 A2 (`sdlt-additional-property-surcharge-refund-routes-3-year-replacement-claim`) is the primary anchor page. **Partial-overlap risk (cannib 0.36) vs existing `sdlt-5-percent-surcharge-refund-claim-process`** — differentiation: existing page is the how-to-claim process; A2 is the refund ROUTES + 3-year-window + extension mechanics + sale-delay scenario walkthroughs.
+- **Do not write:**
+  - "Surcharge is 3%" (false; raised to 5% by FA 2025 s.51 effective 31 October 2024 for transactions with effective date on/after that day; verify against gov.uk for any subsequent changes).
+  - "The 3-year window is at Sch 4ZA para 3(7)(a)" (false; "permitted period" is at para 3(7)(b); the 3-year length is at para 3(7A)(a)).
+  - "HMRC extensions to the 3-year window are routine" (false; para 3(7B) is discretionary, requires exceptional circumstances; routine market delay does not qualify).
+  - "Refund must be claimed within 12 months of the SDLT effective date" (false; the 12-month clock runs from the LATER of sale of prior residence OR SDLT return filing date).
+- **HMRC manual anchor:** SDLTM09730+ (higher rates for additional dwellings); SDLTM09750+ (replacement of main residence + refund).
+- **Practical writing rule for A2:** lead with the 5% current rate + statutory authority (correcting any "still 3%" confusion); then the 3-year window mechanic + statutory anchor (para 3(7A)(a)); then the refund claim mechanics + time limits; then the exceptional-circumstances extension route. Cross-link the existing page for the basic process; A2 is the architecture + edge-case page.
+
+---
+
+## 1.J SDLT residential-vs-mixed-use rate line — case-law trilogy + FA 2003 s.116 — Wave 9 mini-lock (added 2026-05-25)
+
+This §1.J mini-lock closes F-3 from Wave 9 Stage 1b. Sits in the §1 SDLT cluster.
+
+- **Statutory hooks:** FA 2003 **s.116** ("Meaning of 'residential property'"). The residential/non-residential rate distinction is the most-tested SDLT classification line in tribunal litigation (residential rates can be 12-17% on higher-band transactions; non-residential top rate is 5%). Verified at https://www.legislation.gov.uk/ukpga/2003/14/section/116 on 2026-05-25 (TOC level; full s.116 text verification at Stage 2 write time per §16.36).
+- **The s.116 framework in plain terms:** "Residential property" = (a) buildings used or suitable for use as a dwelling, in the process of being constructed or adapted for such use; (b) land that is or forms part of the garden or grounds of such a building; (c) interests in or over land that subsists for the benefit of such a building. **Mixed-use** = transactions involving BOTH residential and non-residential land/property; charged at non-residential rates on the entire consideration.
+- **Case-law trilogy — the operative tribunal authority for property investors:**
+  - **Hyman & Goodfellow v HMRC [2019] UKUT 0411 (TCC):** upper-tier ruling on "garden or grounds" interpretation. Established that "grounds" is broader than "garden" and includes land used for purposes ancillary to the dwelling. Tightened against taxpayer attempts to fragment large rural holdings into residential-house + non-residential-grounds.
+  - **Suterwalla v HMRC [2024] UKUT 188 (TCC):** more recent UT ruling. Held that the "use" test for "garden or grounds" looks at use at the **effective date** of the transaction, not historic/intended use. A field grazed by a neighbour's horses (with grazing rights) at completion is NOT garden or grounds of the dwelling for that reason — but the test is fact-specific.
+  - **Hortons Hall (Horton Hall Estates Ltd v HMRC):** FTT cases (multiple decisions) on the residential/non-residential line for substantial estates. **Stage 2 sub-agent A3 verifies the precise citation + ratio at write time** — there are several Horton/Horton's Hall decisions and the brief should cite the controlling one.
+- **The Bewley exception (already in §1.C — Wave 7 lock):** narrow exception for properties that are NOT suitable for use as a dwelling at the effective date due to substantial structural defect / contamination / requiring complete reconstruction. Bewley v HMRC [2019] UKFTT 65 (TC). **Post-Hyman + Mudan + MHB + Brown the Bewley test has narrowed substantially** — sessions writing must not over-state Bewley availability.
+- **Operational decision framework for landlords (sessions writing A3 use this):**
+  - Single-dwelling residential property: residential rates (no MDR available post-1-June-2024 per §1.H).
+  - Bulk purchase 6+ dwellings: automatic non-residential per s.116(7) (per §1.H surviving alternative).
+  - Dwelling + working farm / business premises in same transaction: mixed-use → non-residential rates.
+  - Dwelling + paddock with grazing rights to neighbour (Suterwalla pattern): fact-specific; may be mixed-use.
+  - Dwelling + amenity garden / grounds: residential rates per Hyman (no fragmentation).
+  - Uninhabitable property (Bewley): narrow exception only.
+- **Pages adjacent to this lock:** Wave 9 A3 (`sdlt-mixed-use-rates-vs-residential-property-tribunal-tests-landlords`) is the primary anchor page. Existing site coverage includes `sdlt-bewley-uninhabitable-property-test-non-residential-rates-landlords` (Bewley specifically — Wave 7) and `sdlt-mixed-use-property-classification` (existing higher-level page — A3 should cross-link as companion).
+- **Do not write:**
+  - "Mixed-use saves landlords money" (false framing; mixed-use rates are NOT a relief — they're a classification consequence; aggressive mixed-use claims are litigated heavily and HMRC actively enquires).
+  - "Hyman applies only to very large properties" (false; the ratio applies to any residential property with adjoining land; size is a fact factor, not a threshold).
+  - "Suterwalla settled the mixed-use test" (false framing; Suterwalla refined the "use at effective date" test for one fact pattern; the line remains fact-specific).
+  - "Bewley is available for any unmodernised property" (false; carried forward from §1.F Wave 7 lock — Bewley is a narrow exception for substantially structurally dangerous / contaminated / requiring complete reconstruction properties).
+  - "Six-or-more rule overrides s.116 mixed-use" (false; s.116(7) and mixed-use are different routes; sessions must distinguish — bulk-dwelling deeming vs mixed-use classification).
+- **HMRC manual anchor:** SDLTM00370+ (residential property definition); SDLTM00385+ (gardens and grounds).
+- **Practical writing rule for A3:** lead with the rate-difference economic stakes (5% non-residential top vs 17% residential top); then s.116 framework; then case-law trilogy with operational implications; then decision framework with worked examples. Distinguish from existing companion pages explicitly.
 
 This §22.21 mini-lock sits in the §22 cluster as it extends the IHT / estate-planning + pension intersection territory. **Scope-justification:** SIPP/SSAS commercial property purchase is an estate-planning + pension-funded property acquisition route; it sits naturally alongside §22.16-§22.18 (TRS + IPDI + EOT).
 
