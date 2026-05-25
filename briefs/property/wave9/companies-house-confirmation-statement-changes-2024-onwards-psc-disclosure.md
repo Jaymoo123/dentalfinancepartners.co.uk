@@ -160,46 +160,58 @@ See `docs/property/NETNEW_PROGRAM.md` §4.9 / §7 for the verbatim 19-step workf
 ## Per-page work-log (Stage 2 + session fill)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** companies-house-confirmation-statement-changes-2024-onwards-psc-disclosure (as seed)
+- **Final category:** incorporation-and-company-structures (as seed)
+- **H1 chosen:** Companies House Confirmation Statement Changes from 4 March 2024 Onwards
+- **Meta title chosen:** Confirmation Statement Changes 2024: Landlord LtdCo Guide (57 chars)
+- **Why these vs other options:** Anchored on the 4-March-2024-onwards changes (the operationally distinct unit), not a generic "what is a confirmation statement" framing. Audience is the existing-LtdCo landlord-director who already files annually, not the new incorporator.
 
 ### Competitor URLs fetched
-- 
+- None survived Stage 2 liveness (Bug #3 guardrail). Authority anchors used directly.
 
 ### Existing-page review
-- 
+- All cannib scores low (≤0.09); no body overlap.
+- `accountant-corporation-tax-property-companies` — natural service-page back-link target.
+- `landlord-tax-changes-2026-complete-guide` — flagged in brief as needing back-link to B3 (post-merge INTERNAL_LINK back-patch territory, not session-blocker).
 
 ### Citations added
-- 
+- ECCTA 2023 Part 1 crossheadings ss.28 (registered offices), ss.29-30 (registered email), ss.59-63 (confirmation statements + lawful purposes), ss.51-52 (abolition of local registers), ss.64-69 (identity verification cross-ref to B1).
+- Companies House campaign page sub-pages (confirmation-statement-changes; identity-verification; changes-to-company-registers).
+- gov.uk confirmation-statement-guidance (£50 online / £110 paper / £5,000 max penalty operative figures).
+- Companies Act 2006 s.86 (registered office) + s.1000 (striking-off).
 
 ### Internal links added
-- 
+- /blog/incorporation-and-company-structures/eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos (companion B1)
+- /blog/non-resident-landlord-tax/register-of-overseas-entities-roe-annual-update-statement-non-resident-landlords (companion B2)
+- /blog/incorporation-and-company-structures/landlord-incorporation-step-by-step-guide-uk
+- /blog/incorporation-and-company-structures/buy-to-let-limited-company-complete-guide-uk
+- /blog/incorporation-and-company-structures/alphabet-shares-property-spv-dividend-splitting-spouse-children
+- /blog/incorporation-and-company-structures/fic-estate-planning-landlord-portfolio-value-freezing-iht-mechanics
+- /blog/incorporation-and-company-structures/accountant-corporation-tax-property-companies
 
 ### Inline CTA placements
-- 
+- 2 × `<aside>` callouts (May 2024 fee increase framing; residential home address appropriate-address test). LeadForm auto-injected at footer.
 
 ### Build attempts
-- 
+- Single batched build for B1+B2+B3 — PASS. B3 emitted at /blog/incorporation-and-company-structures/companies-house-confirmation-statement-changes-2024-onwards-psc-disclosure.html.
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
-- Inserted-section numbers (registered email + lawful purpose) verified at: [timestamp + URL]
-- Operative confirmation-statement fee verified at: [timestamp + URL]
-- PSC ID-verification commencement state verified at: [timestamp + URL]
+- em-dash count: 0
+- Tailwind utility classes: 0
+- metaTitle length: 57 (≤62 ✓)
+- metaDescription length: 152 (≤158 ✓)
+- FAQ count: 13 (frontmatter) = 13 (built HTML JSON-LD) ✓ (upper-end of FAQ range justified by 4 distinct operational changes + fees + penalty interaction)
+- Internal links resolve: all 7 internal links verified to existing files.
+- Body word count: 2,917 (within 2,800-3,500 non-pillar target ✓)
+- Inserted-section numbers (registered email + lawful purpose) verified at: 2026-05-25 — ECCTA Part 1 verbatim crossheadings + section numbers per legislation.gov.uk ECCTA contents page; Stage 2 brief candidate "s.88A" registered-email inserted-CA-section NOT verified to verbatim level (campaign page does not enumerate inserted-CA-section numbers; legislation.gov.uk individual section fetches earlier in Stage 2 returned empty content). Page body cites the ECCTA inserting provisions (ss.28 + ss.29-30 + ss.59-63 verbatim) rather than the inserted-CA-2006-section numbers, which is a safer attribution.
+- Operative confirmation-statement fee verified at: 2026-05-25 via gov.uk confirmation-statement-guidance page — £50 online / £110 paper.
+- PSC ID-verification commencement state verified at: 2026-05-25 via Companies House campaign page identity-verification sub-page — 18 November 2025 mandatory for newly appointed directors + PSCs; 12-month transition for existing roles; later phase for filers + corporate officers no earlier than November 2026.
 
 ### Flags raised to wave9_site_wide_flags.md
-- 
+- No new B3-specific flags. F-14 from B1 covers the ECCTA brief-drift territory shared with §11.A. INTERNAL_LINK back-patch from `landlord-tax-changes-2026-complete-guide` to B3 is a wave-close housekeeping item rather than a session flag (raised in brief Stage 2 already; absorbed into post-merge back-patch queue).
 
 ### 2-3 sentence summary
+B3 written to four-changes-at-a-glance framing, anchored on the Companies House campaign page commencement-state verification and the gov.uk fee + penalty figures. Personal-code gate at filing drawn explicitly as the link back to B1 identity-verification regime; abolition of local registers drawn as the parallel ECCTA reform that makes the confirmation statement central. Build PASS; 2,917 body words; 13 FAQs (upper-end of range, justified by multi-change scope) matched in built HTML JSON-LD; zero em-dashes; all internal links resolve.
 
 
 ---
