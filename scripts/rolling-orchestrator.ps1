@@ -207,8 +207,16 @@ while ($true) {
     }
 
     # Spawn sub-agent
+    # Writes a per-batch launcher .ps1 (reliable across PS quoting quirks),
+    # spawned via powershell -NoExit -Command "& 'launcher.ps1'". Launcher
+    # loads prompt + invokes claude with it as the positional first message.
     Write-Step "  Spawning wt tab"
-    $innerCmd = "claude --name '$sessionName' (Get-Content '$promptFile' -Raw)"
+    $launcherPath = Join-Path $signalDir "launch_${batchId}.ps1"
+    if (-not $DryRun) {
+        $launcherBody = "`$prompt = Get-Content -Raw '$promptFile'`r`nclaude `$prompt`r`n"
+        [System.IO.File]::WriteAllText($launcherPath, $launcherBody, $utf8)
+    }
+    $innerCmd = "& '$launcherPath'"
     if ($DryRun) {
         Write-Warn "Would spawn: wt new-tab -d `"$wtDir`" --title `"$sessionName`""
         Write-Host "            inner: $innerCmd" -ForegroundColor DarkGray

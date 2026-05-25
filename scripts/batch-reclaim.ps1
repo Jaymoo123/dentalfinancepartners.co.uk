@@ -65,7 +65,7 @@ while ($null -eq $stream) {
         $stream = [System.IO.File]::Open($QueueFile, [System.IO.FileMode]::Open, [System.IO.FileAccess]::ReadWrite, [System.IO.FileShare]::None)
     } catch [System.IO.IOException] {
         $attempt++
-        if ($attempt -ge $MaxRetries) { throw "Lock acquire failed after $MaxRetries: $_" }
+        if ($attempt -ge $MaxRetries) { throw "Lock acquire failed after ${MaxRetries}: $_" }
         $jitter = Get-Random -Minimum (-50) -Maximum 50
         Start-Sleep -Milliseconds ($RetryDelayMs + $jitter)
     }
