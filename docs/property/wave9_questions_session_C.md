@@ -57,7 +57,7 @@ For everything else, use flags (`wave9_site_wide_flags.md`) or discovery log (`w
 
 **Bug #5 logged (inter-wave queue):** Wave 8 F-1 caught 5 dead URLs in Bucket A; Wave 9 Bucket C now shows 100% dead rate (5/5). Pattern is Stage 1a sub-agents constructing/guessing competitor URLs rather than scraping from live SERPs. Future fix: harden Stage 1 dispatch prompt to require either (a) sub-agent omits competitor URLs entirely + leaves placeholder for Stage 2 to source live, OR (b) sub-agent WebFetches each before listing in Stage 1. Mixed pattern (speculative + verified-later) produces this exact failure mode.
 
-**Bug #6 logged (inter-wave queue):** §8.3 Q&A watcher regex `^## \[Q-[0-9]+\].*STATUS: open` requires bracketed Q-N format but sub-agent C posted as `## Q-1 —` (no brackets). Both Q-Ns missed by the watcher until manual file check. Fix: either widen watcher regex to accept both formats OR harden Q&A template + Stage 1/2 prompts to lock the bracketed format. Latter is more robust.
+**Bug #6 logged (inter-wave queue):** §8.3 Q&A watcher regex (matching bracketed Q-N headings with `STATUS:` literal followed by `open` literal) requires bracketed Q-N format but sub-agent C posted as `## Q-1 —` (no brackets). Both Q-Ns missed by the watcher until manual file check. Fix: either widen watcher regex to accept both formats OR harden Q&A template + Stage 1/2 prompts to lock the bracketed format. Latter is more robust. (Note: the literal pattern intentionally not transcribed here to avoid false-positives in close-wave validate's own grep.)
 
 ---
 
