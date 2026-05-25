@@ -222,14 +222,21 @@ if ($Step -eq 'merge') {
             continue
         }
 
-        $output = & git -C $accountingRoot merge --no-ff -m "Merge wave $Wave bucket $bucketUpper ($bucketBranch)" $bucketBranch 2>&1
-        if ($LASTEXITCODE -ne 0) {
-            Write-Host "    OUTPUT:" -ForegroundColor Red
-            $output | ForEach-Object { Write-Host "      $_" -ForegroundColor Red }
-            Write-Fail "Merge of $bucketBranch had conflicts or failed. Resolve manually, then continue with remaining buckets."
+        # PS 5.1 wraps native stderr into ErrorRecord under Stop preference; do NOT
+        # redirect git stderr (2>&1). Git output goes straight to console; we
+        # check LASTEXITCODE after.
+        & git -C $accountingRoot merge --no-ff -m "Merge wave $Wave bucket $bucketUpper ($bucketBranch)" $bucketBranch
+        $mergeExit = $LASTEXITCODE
+        if ($mergeExit -ne 0) {
+            Write-Fail "Merge of $bucketBranch had conflicts or failed (exit $mergeExit). Resolve manually, then continue with remaining buckets."
         }
         $sha = (git -C $accountingRoot rev-parse --short HEAD).Trim()
-        Write-OK "$bucketBranch merged as $sha"
+        $aheadOfMain = (git -C $accountingRoot rev-list --count "main..$bucketBranch").Trim()
+        if ([int]$aheadOfMain -eq 0 -and $sha -ne (git -C $accountingRoot rev-parse --short "$bucketBranch").Trim()) {
+            Write-OK "$bucketBranch merged as $sha"
+        } else {
+            Write-OK "$bucketBranch processed (HEAD now $sha)"
+        }
     }
 
     Write-Host ""
@@ -256,14 +263,16 @@ if ($Step -eq 'build') {
     Push-Location $buildDir
     try {
         Write-OK "Running 'npm run build' (this can take a few minutes)..."
-        & npm run build
+        # Windows: invoke npm.cmd explicitly. Calling bare `npm` via & on PS 5.1
+        # mangles argv ('npm' splits to 'n' + 'pm') depending on PATH resolution.
+        & npm.cmd run build
         $buildExit = $LASTEXITCODE
     } finally {
         Pop-Location
     }
 
     if ($buildExit -ne 0) {
-        Write-Fail "npm run build returned exit code $buildExit"
+        Write-Fail "npm.cmd run build returned exit code $buildExit"
     }
 
     Write-Host ""
