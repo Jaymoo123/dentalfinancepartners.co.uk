@@ -1,0 +1,68 @@
+wave: 1
+# MegaWave 1 - SDLT / MDR / surcharge family
+# Sliced by slice-megawave.ps1 on 2026-05-25
+# Total: 53 picks (A:20 B:18 C:15)
+
+buckets:
+  A:
+    label: "Bucket A - SDLT — surcharges and reliefs + Second homes & council tax premium"
+    picks:
+      - { id: A1, slug: "abolishment-of-multiple-dwelling-relief", label: "[SDLT — surcharges and reliefs] abolishment-of-multiple-dwelling-relief" }
+      - { id: A2, slug: "abolition-of-multiple-dwellings-relief-mdr-raises-concerns", label: "[SDLT — surcharges and reliefs] abolition-of-multiple-dwellings-relief-mdr-raises-concerns" }
+      - { id: A3, slug: "a-complete-guide-on-multiple-dwellings-relief-eligibility-and-benefits", label: "[SDLT — surcharges and reliefs] a-complete-guide-on-multiple-dwellings-relief-eligibility-and-benefits" }
+      - { id: A4, slug: "a-complete-guide-to-5-sdlt-surcharge-refund-claims", label: "[SDLT — surcharges and reliefs] a-complete-guide-to-5-sdlt-surcharge-refund-claims" }
+      - { id: A5, slug: "a-complete-guide-to-stamp-duty-refund", label: "[SDLT — surcharges and reliefs] a-complete-guide-to-stamp-duty-refund" }
+      - { id: A6, slug: "a-complete-guide-to-stamp-duty-relief-for-probate-properties", label: "[SDLT — surcharges and reliefs] a-complete-guide-to-stamp-duty-relief-for-probate-properties" }
+      - { id: A7, slug: "applicable-sdlt-rates-for-first-time-buyers", label: "[SDLT — surcharges and reliefs] applicable-sdlt-rates-for-first-time-buyers" }
+      - { id: A8, slug: "archer-uk-limited-vs-revenue-scotland-ftt-rules-no-lbtt-charge-for-lease-extension-granted-under-sdlt", label: "[SDLT — surcharges and reliefs] archer-uk-limited-vs-revenue-scotland-ftt-rules-no-lbtt-charge-for-lease-extension-granted-under-sdlt" }
+      - { id: A9, slug: "averdieck-case-analysis-navigating-sdlt-and-public-rights-of-way", label: "[SDLT — surcharges and reliefs] averdieck-case-analysis-navigating-sdlt-and-public-rights-of-way" }
+      - { id: A10, slug: "first-time-buyer-relief-benefits-and-eligibility-requirements", label: "[SDLT — surcharges and reliefs] first-time-buyer-relief-benefits-and-eligibility-requirements" }
+      - { id: A11, slug: "first-time-buyer-relief-calculator", label: "[SDLT — surcharges and reliefs] first-time-buyer-relief-calculator" }
+      - { id: A12, slug: "first-time-buyer-relief-overcome-down-payment", label: "[SDLT — surcharges and reliefs] first-time-buyer-relief-overcome-down-payment" }
+      - { id: A13, slug: "first-time-buyer-relief-understanding-tax-credits-and-deductions", label: "[SDLT — surcharges and reliefs] first-time-buyer-relief-understanding-tax-credits-and-deductions" }
+      - { id: A14, slug: "ftt-confirms-residential-sdlt-rates-for-leasehold-with-garden-easement", label: "[SDLT — surcharges and reliefs] ftt-confirms-residential-sdlt-rates-for-leasehold-with-garden-easement" }
+      - { id: A15, slug: "ftt-refuses-late-sdlt-appeal-where-appellants-chose-not-to-seek-professional-advice", label: "[SDLT — surcharges and reliefs] ftt-refuses-late-sdlt-appeal-where-appellants-chose-not-to-seek-professional-advice" }
+      - { id: A16, slug: "horton-hall-sdlt-case-residential-vs-non-residential-dispute", label: "[SDLT — surcharges and reliefs] horton-hall-sdlt-case-residential-vs-non-residential-dispute" }
+      - { id: A17, slug: "how-owning-property-abroad-leads-higher-stamp-duty-rates", label: "[SDLT — surcharges and reliefs] how-owning-property-abroad-leads-higher-stamp-duty-rates" }
+      - { id: A18, slug: "labour-plans-stamp-duty-hike-for-overseas-buyers", label: "[SDLT — surcharges and reliefs] labour-plans-stamp-duty-hike-for-overseas-buyers" }
+      - { id: A19, slug: "land-and-buildings-transaction-tax-multiple-dwellings-relief", label: "[SDLT — surcharges and reliefs] land-and-buildings-transaction-tax-multiple-dwellings-relief" }
+      - { id: A20, slug: "multiple-dwellings-relief", label: "[SDLT — surcharges and reliefs] multiple-dwellings-relief" }
+  B:
+    label: "Bucket B - SDLT — Scottish / Welsh equivalents + FHL — abolition and transitional rules"
+    picks:
+      - { id: B1, slug: "essential-guide-for-first-time-homebuyers-in-scotland", label: "[SDLT — Scottish / Welsh equivalents] essential-guide-for-first-time-homebuyers-in-scotland" }
+      - { id: B2, slug: "higher-rates-of-land-transaction-tax-a-complete-guide", label: "[SDLT — Scottish / Welsh equivalents] higher-rates-of-land-transaction-tax-a-complete-guide" }
+      - { id: B3, slug: "land-transaction-tax-a-complete-guide", label: "[SDLT — Scottish / Welsh equivalents] land-transaction-tax-a-complete-guide" }
+      - { id: B4, slug: "bare-trusts-and-lbtt-relief-availability", label: "[SDLT — Scottish / Welsh equivalents] bare-trusts-and-lbtt-relief-availability" }
+      - { id: B5, slug: "lbtt-acquisition-relief-when-corporate-takeovers-reduce-tax", label: "[SDLT — Scottish / Welsh equivalents] lbtt-acquisition-relief-when-corporate-takeovers-reduce-tax" }
+      - { id: B6, slug: "lbtt-review-in-scotland", label: "[SDLT — Scottish / Welsh equivalents] lbtt-review-in-scotland" }
+      - { id: B7, slug: "limits-on-ads-repayment-ftt-clarifies-disposal-in-replacement-of-main-residence", label: "[SDLT — Scottish / Welsh equivalents] limits-on-ads-repayment-ftt-clarifies-disposal-in-replacement-of-main-residence" }
+      - { id: B8, slug: "ltt-higher-rates-for-spouses-minor-children-and-trust-interests", label: "[SDLT — Scottish / Welsh equivalents] ltt-higher-rates-for-spouses-minor-children-and-trust-interests" }
+      - { id: B9, slug: "ltt-refunds-for-derelict-or-uninhabitable-properties", label: "[SDLT — Scottish / Welsh equivalents] ltt-refunds-for-derelict-or-uninhabitable-properties" }
+      - { id: B10, slug: "understanding-alternative-finance-arrangements-under-lbtt", label: "[SDLT — Scottish / Welsh equivalents] understanding-alternative-finance-arrangements-under-lbtt" }
+      - { id: B11, slug: "ltt-calculator", label: "[SDLT — Scottish / Welsh equivalents] ltt-calculator" }
+      - { id: B12, slug: "ltd-property-spreadsheet", label: "[SDLT — Scottish / Welsh equivalents] ltd-property-spreadsheet" }
+      - { id: B13, slug: "abolition-of-furnished-holiday-lettings-fhl-what-individual-owners-needs-to-know", label: "[FHL — abolition and transitional rules] abolition-of-furnished-holiday-lettings-fhl-what-individual-owners-needs-to-know" }
+      - { id: B14, slug: "impact-of-fhl-tax-abolition-on-pension-contributions-key-insights-strategies", label: "[FHL — abolition and transitional rules] impact-of-fhl-tax-abolition-on-pension-contributions-key-insights-strategies" }
+      - { id: B15, slug: "understanding-the-taxation-of-fhls-in-a-company", label: "[FHL — abolition and transitional rules] understanding-the-taxation-of-fhls-in-a-company" }
+      - { id: B16, slug: "vat-on-furnished-holiday-lettings-fhl", label: "[FHL — abolition and transitional rules] vat-on-furnished-holiday-lettings-fhl" }
+      - { id: B17, slug: "big-tax-changes-ahead-for-furnished-holiday-lettings", label: "[FHL — abolition and transitional rules] big-tax-changes-ahead-for-furnished-holiday-lettings" }
+      - { id: B18, slug: "end-of-the-furnished-holiday-letting-regime", label: "[FHL — abolition and transitional rules] end-of-the-furnished-holiday-letting-regime" }
+  C:
+    label: "Bucket C - CIL & Section 106 (planning levies) + Property valuation / RICS / chargeable consideration + Lease extensions and statutory tenancy + Lease extensions, variation & surrender"
+    picks:
+      - { id: C1, slug: "a-complete-guide-on-community-infrastructure-levy-cil", label: "[CIL & Section 106 (planning levies)] a-complete-guide-on-community-infrastructure-levy-cil" }
+      - { id: C2, slug: "council-tax-for-new-builds", label: "[CIL & Section 106 (planning levies)] council-tax-for-new-builds" }
+      - { id: C3, slug: "government-to-end-council-tax-on-hmo-rooms", label: "[CIL & Section 106 (planning levies)] government-to-end-council-tax-on-hmo-rooms" }
+      - { id: C4, slug: "is-increasing-council-tax-damaging-the-housing-market", label: "[CIL & Section 106 (planning levies)] is-increasing-council-tax-damaging-the-housing-market" }
+      - { id: C5, slug: "making-a-disclosure-using-the-worldwide-disclosure-facility", label: "[CIL & Section 106 (planning levies)] making-a-disclosure-using-the-worldwide-disclosure-facility" }
+      - { id: C6, slug: "reduce-your-council-tax-bill-in-the-uk", label: "[CIL & Section 106 (planning levies)] reduce-your-council-tax-bill-in-the-uk" }
+      - { id: C7, slug: "remittance-basis-tax-insights-for-non-domiciled-individuals", label: "[CIL & Section 106 (planning levies)] remittance-basis-tax-insights-for-non-domiciled-individuals" }
+      - { id: C8, slug: "single-person-council-tax-discount", label: "[CIL & Section 106 (planning levies)] single-person-council-tax-discount" }
+      - { id: C9, slug: "single-person-council-tax-discounts-a-complete-guide", label: "[CIL & Section 106 (planning levies)] single-person-council-tax-discounts-a-complete-guide" }
+      - { id: C10, slug: "residency-and-domicile", label: "[CIL & Section 106 (planning levies)] residency-and-domicile" }
+      - { id: C11, slug: "free-rental-valuation", label: "[Property valuation / RICS / chargeable consideration] free-rental-valuation" }
+      - { id: C12, slug: "selling-house-below-market-value", label: "[Property valuation / RICS / chargeable consideration] selling-house-below-market-value" }
+      - { id: C13, slug: "lease-extension-vs-freehold-purchase", label: "[Lease extensions and statutory tenancy] lease-extension-vs-freehold-purchase" }
+      - { id: C14, slug: "lease-extensions-in-the-uk-surrender-and-regrant", label: "[Lease extensions and statutory tenancy] lease-extensions-in-the-uk-surrender-and-regrant" }
+      - { id: C15, slug: "lease-variation-and-lease-surrender", label: "[Lease extensions, variation & surrender] lease-variation-and-lease-surrender" }

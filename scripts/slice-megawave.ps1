@@ -275,6 +275,127 @@ if ($DryRun) {
     }
 }
 
+# 6. Scaffold mega-wave artefacts (tracker, flags, Q&A, discovery) - mega-wave-naming convention
+Write-Step "6/6 Scaffolding mega-wave artefacts (tracker / flags / Q&A / discovery)"
+$docsDir = Resolve-SitePath -Config $cfg -RelativePath $cfg.paths.docsDir
+$mwTracker = Join-Path $docsDir "megawave${MegaWave}_page_tracker.md"
+$mwFlags   = Join-Path $docsDir "megawave${MegaWave}_site_wide_flags.md"
+
+if ($DryRun) {
+    Write-Warn "Would write: $mwTracker (with $totalAssigned rows across 3 buckets)"
+    Write-Warn "Would write: $mwFlags + Q&A shells + discovery shells per bucket"
+} else {
+    # Tracker (build all status symbols from codepoints; PS 5.1 mangles
+    # multi-byte literals in script source unless saved with UTF-8 BOM)
+    $todoSym       = [string][char]0x2B1C
+    $inProgressSym = [System.Char]::ConvertFromUtf32(0x1F7E6)
+    $doneSymSlice  = [string][char]0x2705
+    $blockedSym    = [string][char]0x26A0
+    $backpatchSym  = [System.Char]::ConvertFromUtf32(0x1F501)
+    $sectionSym    = [string][char]0x00A7
+    $trackerLines = @()
+    $trackerLines += "# MegaWave $MegaWave page tracker"
+    $trackerLines += ""
+    $trackerLines += "**Created:** $((Get-Date).ToString('yyyy-MM-dd')). **Status:** Pre-launch ($totalAssigned picks $todoSym todo). MegaWave $MegaWave = $($mwAffinity.label). Sliced by slice-megawave.ps1. HP-lock touchpoints: $($mwAffinity.hp_touchpoints -join ', ')."
+    $trackerLines += ""
+    $trackerLines += "**Status legend:** $todoSym todo / $inProgressSym in progress / $doneSymSlice done / $blockedSym blocked / $backpatchSym needs back-patch."
+    $trackerLines += ""
+    $trackerLines += "**Discipline reminder (${sectionSym}16.14, ${sectionSym}16.15, ${sectionSym}16.37):** session-time tracker edits go to THIS file in main via absolute path ``$mwTracker``. Per-bucket F-range $($cfg.wave.fRangePerBucket.a) / $($cfg.wave.fRangePerBucket.b) / $($cfg.wave.fRangePerBucket.c) (Bug #2 fix). Use bracketed ## [Q-N] format for Q&A (Bug #6)."
+    $trackerLines += ""
+    $trackerLines += "---"
+    foreach ($bucket in @('A','B','C')) {
+        $bLower = $bucket.ToLower()
+        if ($bucketPicks.$bucket.Count -eq 0) { continue }
+        $clustersInBucket = ($bucketsFromAffinity.$bucket -join ' + ')
+        $trackerLines += ""
+        $trackerLines += "## Session $bucket - $clustersInBucket ($($bucketPicks.$bucket.Count) picks)"
+        $trackerLines += ""
+        $trackerLines += "| Status | Pos | Slug | Cluster | Batch | Body words | FAQs | Notes |"
+        $trackerLines += "|---|---|---|---|---|---|---|---|"
+        $idx = 1
+        $batchNum = 1
+        $pickInBatch = 0
+        foreach ($pick in $bucketPicks.$bucket) {
+            $pickInBatch++
+            if ($pickInBatch -gt $BatchSize) { $batchNum++; $pickInBatch = 1 }
+            $batchId = "M${MegaWave}-${bucket}-B${batchNum}"
+            $trackerLines += "| $todoSym | $bucket$idx | ``$($pick.slug)`` | $($pick.cluster) | $batchId | | | |"
+            $idx++
+        }
+    }
+    [System.IO.File]::WriteAllText($mwTracker, ($trackerLines -join "`n") + "`n", $utf8)
+    Write-OK "Wrote $mwTracker"
+
+    # Flags
+    $flagsBody = @"
+# MegaWave $MegaWave site-wide flags
+
+**Created:** $((Get-Date).ToString('yyyy-MM-dd')). **Status:** Pre-launch (no flags yet).
+
+Flag types per NETNEW_PROGRAM ${sectionSym}13.2: EXISTING_PAGE_STALE / BRIEF_DRIFT / INTERNAL_LINK / CROSS_BUCKET / REDIRECT / HOUSE_POSITION_EXTENSION / AUTHORITY_GAP.
+
+Per-bucket F-number ranges (Bug #2 fix):
+- Bucket A: $($cfg.wave.fRangePerBucket.a)
+- Bucket B: $($cfg.wave.fRangePerBucket.b)
+- Bucket C: $($cfg.wave.fRangePerBucket.c)
+
+Flags never block. Sessions continue work after flagging.
+
+---
+
+(Sessions append flags below this line. Manager closes via in-place edit + commit at wave-close step.)
+
+---
+
+"@
+    [System.IO.File]::WriteAllText($mwFlags, $flagsBody, $utf8)
+    Write-OK "Wrote $mwFlags"
+
+    # Q&A + discovery shells per bucket
+    foreach ($bucket in @('A','B','C')) {
+        $qaPath = Join-Path $docsDir "megawave${MegaWave}_questions_session_$bucket.md"
+        $dPath  = Join-Path $docsDir "megawave${MegaWave}_discovery_log_session_$bucket.md"
+        $qaBody = @"
+# MegaWave $MegaWave Q&A - Session $bucket
+
+Use bracketed ## [Q-N] format so the ${sectionSym}8.3 watcher catches new posts (Bug #6 fix).
+
+Q&A format:
+
+    ## [Q-N] - one-line headline
+    **STATUS:** <open initially; manager flips to: answered>
+    **Asked:** <timestamp>
+    **Page:** <slug>
+    **Step:** <which step>
+    **Question:** <what you need decided>
+    **Context:** <what you tried>
+
+---
+
+(Sessions append Q&A below. Manager appends A-N answers in-place.)
+
+"@
+        $dBody = @"
+# MegaWave $MegaWave discovery log - Session $bucket
+
+Discovery format:
+
+    ## D-N <TYPE> - one-line
+    **Surfaced at:** <timestamp + page>
+    **Detail:** <what>
+    **Recommendation:** <future-wave bucket / back-patch / calculator / component>
+
+Types: ADJACENT_TOPIC / CALCULATOR_IDEA / COMPONENT_IDEA / FUTURE_WAVE_PICK / SITE_WIDE_PATTERN.
+
+---
+
+"@
+        [System.IO.File]::WriteAllText($qaPath, $qaBody, $utf8)
+        [System.IO.File]::WriteAllText($dPath, $dBody, $utf8)
+    }
+    Write-OK "Wrote 3 Q&A shells + 3 discovery shells"
+}
+
 Write-Host ""
 Write-Host "=== MegaWave $MegaWave slice complete ===" -ForegroundColor Green
 Write-Host ""
