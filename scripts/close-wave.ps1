@@ -45,6 +45,9 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
+# Shared tracker reader (Bug #1 fix - PS 5.1 emoji-regex was unreliable)
+. "$PSScriptRoot\_lib\tracker-utils.ps1"
+
 $accountingRoot = 'C:\Users\user\Documents\Accounting'
 $wtBase         = 'C:\Users\user\Documents'
 $buckets        = @('a','b','c')
@@ -74,27 +77,20 @@ if ($Step -eq 'validate') {
     if (-not (Test-Path $trackerFile)) {
         Write-Fail "Tracker missing: $trackerFile"
     }
-    $tracker = [System.IO.File]::ReadAllText($trackerFile, $utf8NoBom)
+    # Structural row-by-status counts via shared helper (Bug #1 fix)
+    $c = Get-TrackerCounts -TrackerPath $trackerFile
 
-    # Status legend line includes one occurrence of each symbol; subtract 1.
-    $incomplete = @{
-        '⬜' = ([regex]::Matches($tracker, '⬜')).Count - 1   # todo
-        '🟦' = ([regex]::Matches($tracker, '🟦')).Count - 1   # in_progress
-        '⚠'  = ([regex]::Matches($tracker, '⚠')).Count - 1    # blocked
-        '🔁' = ([regex]::Matches($tracker, '🔁')).Count - 1   # needs back-patch
-    }
-    $done = [Math]::Max(0, ([regex]::Matches($tracker, '✅')).Count - 1)
+    if ($c.todo            -gt 0) { Write-Warn "$($c.todo) row(s) status todo" }
+    if ($c.in_progress     -gt 0) { Write-Warn "$($c.in_progress) row(s) status in_progress" }
+    if ($c.blocked         -gt 0) { Write-Warn "$($c.blocked) row(s) status blocked" }
+    if ($c.needs_backpatch -gt 0) { Write-Warn "$($c.needs_backpatch) row(s) status needs back-patch" }
+    if ($c.unknown         -gt 0) { Write-Warn "$($c.unknown) row(s) unrecognised status symbol" }
 
-    $totalIncomplete = 0
-    foreach ($k in $incomplete.Keys) {
-        $n = [Math]::Max(0, $incomplete[$k])
-        if ($n -gt 0) { Write-Warn "$n row(s) status '$k'" }
-        $totalIncomplete += $n
-    }
+    $totalIncomplete = $c.todo + $c.in_progress + $c.blocked + $c.needs_backpatch + $c.unknown
     if ($totalIncomplete -gt 0) {
         Write-Fail "Tracker has $totalIncomplete incomplete row(s); wave not done"
     }
-    Write-OK "Tracker: $done done rows, 0 incomplete"
+    Write-OK "Tracker: $($c.done) done / $($c.total_rows) total rows"
 
     Write-Step "Open Q-N check"
     $openCount = 0

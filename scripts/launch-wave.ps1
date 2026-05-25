@@ -42,6 +42,9 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
+# Shared tracker reader (Bug #1 fix - PS 5.1 emoji-regex was unreliable)
+. "$PSScriptRoot\_lib\tracker-utils.ps1"
+
 $accountingRoot = 'C:\Users\user\Documents\Accounting'
 $wtBase         = 'C:\Users\user\Documents'
 $buckets        = @('a','b','c')
@@ -84,21 +87,22 @@ foreach ($bucket in $buckets) {
     Write-OK "bucket $bucket | worktree present | prompt $size bytes"
 }
 
-# 3. Cold-start protection: tracker shows no in_progress rows
+# 3. Cold-start protection: tracker shows no in_progress / done rows (Bug #1 fix)
 Write-Step "3/4 Cold-start check (tracker)"
 if (-not (Test-Path $trackerFile)) {
     Write-Fail "Tracker missing: $trackerFile"
 }
-$trackerContent = [System.IO.File]::ReadAllText($trackerFile, [System.Text.UTF8Encoding]::new($false))
-# 🟦 is "in progress" per the wave tracker status legend
-$inProgressCount = ([regex]::Matches($trackerContent, '🟦')).Count
-if ($inProgressCount -gt 0 -and -not $Force) {
-    Write-Fail "Tracker shows $inProgressCount in_progress row(s) - wave may already be running.`n          Re-run with -Force if this is intentional (e.g., relaunching after stall)."
+$c = Get-TrackerCounts -TrackerPath $trackerFile
+$inProgressCount = $c.in_progress
+$doneCount       = $c.done
+$relaunchSignal  = $inProgressCount + $doneCount
+if ($relaunchSignal -gt 0 -and -not $Force) {
+    Write-Fail "Tracker shows $inProgressCount in_progress + $doneCount done row(s) - wave may already be running or complete.`n          Re-run with -Force if this is intentional (e.g., relaunching after stall)."
 }
-if ($inProgressCount -gt 0) {
-    Write-Warn "Tracker shows $inProgressCount in_progress row(s); proceeding due to -Force"
+if ($relaunchSignal -gt 0) {
+    Write-Warn "Tracker shows $inProgressCount in_progress + $doneCount done; proceeding due to -Force"
 } else {
-    Write-OK "Tracker clean (0 in_progress rows)"
+    Write-OK "Tracker clean ($($c.total_rows) todo rows, 0 in_progress, 0 done)"
 }
 
 # 4. Spawn 3 tabs
