@@ -1,0 +1,47 @@
+You are Session B for Wave 8 of the Property Net-New Program. Working in worktree `Accounting-wt-property-wave8-b` on branch `property-wave8-b` at HEAD `b48406e`. Bucket: Transactions in UK land + trading-vs-investment + developer tax (10 briefs B1-B10).
+
+**Q&A discipline (§16.15 + §16.37 critical):** when raising a Q to manager, append to `C:/Users/user/Documents/Accounting/docs/property/wave8_questions_session_B.md` via ABSOLUTE PATH from your worktree. NEVER append to the worktree's relative-path copy. Same discipline for tracker, flags, discovery logs.
+
+Read first, in this order:
+1. docs/sessions/property/WAVE8_SESSION_B_START_HERE.md (your task brief + bucket overview + 13 critical drift watchpoints)
+2. docs/property/NETNEW_PROGRAM.md (§0 + §4 + §7 + §8 + §13 + §16 lessons especially §16.14/§16.15/§16.16/§16.27/§16.30/§16.32/§16.35/§16.36/§16.37/§16.40/§16.42/§16.45/§16.46)
+3. docs/property/house_positions.md — for Session B: §28 (NEW Wave 8 cluster Transactions in UK land + Stage 2b refresh) + §21 (Wave 4 LtdCo) + §21.A (Wave 8 CT three-figure framework + Stage 1b expansive s.18N(3)) + §25 (Wave 6 CAA 2001) + §25.11 (Wave 7 s.198 fixtures) + §25.12 (Wave 8 LRR mini-lock + Stage 2b s.1178 + s.1175 range corrections) + §22.1 (Pawson BPR investment line) + §5 (CGT) + §1 + §1.A (Wave 7 SDLT partnership)
+4. Your 10 briefs at briefs/property/wave8/:
+   - B1 (PILLAR): transactions-in-uk-land-cta-2010-part-8zb-ita-2007-part-9a-four-conditions-test
+   - B2: condition-a-acquisition-main-purpose-test-trader-by-stealth-landlord-trap
+   - B3: condition-d-development-main-purpose-convert-and-flip-trap-landlord-developers
+   - B4: condition-c-trading-stock-section-162-incorporation-relief-denial-developers
+   - B5: indirect-disposals-property-rich-entities-section-356od-section-517d-slice-action
+   - B6: anti-fragmentation-rule-section-356oh-section-517h-multi-entity-developer-scheme-defeat
+   - B7: badges-of-trade-marson-morton-property-flipping-investment-distinction-landlords
+   - B8: non-resident-developer-uk-tax-scope-fa-2016-offshore-developer-planning-closure
+   - B9: land-remediation-relief-cta-2009-part-14-100-50-percent-deduction-polluter-exclusion
+   - B10: property-partnership-trading-investment-jv-developer-structures-sch-15-sdlt-interaction
+5. docs/property/wave8_page_tracker.md (your B1-B10 rows; ABSOLUTE PATH)
+6. docs/property/wave8_site_wide_flags.md (ABSOLUTE PATH)
+7. docs/property/wave8_questions_session_B.md (ABSOLUTE PATH)
+8. docs/property/wave8_discovery_log_session_B.md (ABSOLUTE PATH)
+
+Acknowledge with one short status line: "Session B picked up. Main at b48406e. Reading START_HERE and pillar brief B1 now."
+
+Then claim B1 PILLAR first (B2-B6 reference B1's four-conditions architecture). After B1: B2/B3/B4 deep-dive Conditions A/D/C; B5/B6 anti-avoidance; B7 badges of trade; B8 non-resident scope; B9 LRR (cross-link Wave 7 §25.11 + Wave 6 §25 + §25.12); B10 partnership JV LAST (cross-link Wave 7 §1.A + B1 + B6 + RPDT for >£25m groups).
+
+Critical §16.35 + §16.45 per-write verification (13 watchpoints from Wave 8 prep — read all in START_HERE):
+- CTA 2010 Part 8ZB ss.356OA-356OT + ITA 2007 Part 9A ss.517A-517U (FA 2016 ss.77/79 commencement 5 July 2016)
+- Conditions A-D disjunctive "main purpose, or one of the main purposes" per s.356OB(4)-(7)
+- s.356OB(2) chargeable-person rule + s.356OB(8) six-month time-period definition (distinct)
+- s.356OD is THREE-condition framework (NOT parallel four-conditions)
+- CTA 2009 Part 14 ends at s.1175 (NOT s.1179)
+- LRR rate = 100% + 50% additional per s.1149(8) (use additive framing)
+- LRR relevant-connection at s.1178 (NOT s.1150(3); three-pathway test)
+- LRR is company-only (individuals must incorporate)
+- RPDT IS IN FORCE per FA 2022 Part 2 (NOT repealed at FA 2024 s.81 as earlier framing wrongly stated; verified 2026-05-25)
+- s.18N(3) expansive exclusion: connected + spouses + relatives + spouses of relatives
+- s.162 incorporation relief blocked for trading stock (Condition C); use CTA 2010 Part 22 route
+- Marson v Morton nine badges (do NOT condense)
+
+Within-bucket sequencing (§16.32): B1 PILLAR first; B2/B3/B4 deep-dive Conditions; B5/B6 anti-avoidance; B7 badges; B8 non-resident; B9 LRR cross-link Wave 7 §25.11 + Wave 6 §25 + §25.12; B10 partnership JV LAST.
+
+Critical anti-templating discipline: 10 pages cannot read like 10 variants. Stop after page 3 and self-check.
+
+Critical handover hygiene (§16.14): if context-pressured, FLIP THE TRACKER FIRST before stopping. ABSOLUTE PATH to main.

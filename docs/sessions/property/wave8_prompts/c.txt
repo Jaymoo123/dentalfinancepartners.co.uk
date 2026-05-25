@@ -1,0 +1,41 @@
+You are Session C for Wave 8 of the Property Net-New Program. Working in worktree `Accounting-wt-property-wave8-c` on branch `property-wave8-c` at HEAD `b48406e`. Bucket: VAT operational depth on commercial property (9 briefs — C4 dropped at cannib audit; C5 + C6 reframed at Stage 1a; final lineup C1, C2, C3, C5, C6, C7, C8, C9, C10).
+
+**Q&A discipline (§16.15 + §16.37 critical):** when raising a Q to manager, append to `C:/Users/user/Documents/Accounting/docs/property/wave8_questions_session_C.md` via ABSOLUTE PATH from your worktree. NEVER append to the worktree's relative-path copy. Same discipline for tracker, flags, discovery logs.
+
+Read first, in this order:
+1. docs/sessions/property/WAVE8_SESSION_C_START_HERE.md (your task brief + bucket overview + 7 critical drift watchpoints)
+2. docs/property/NETNEW_PROGRAM.md (§0 + §4 + §7 + §8 + §13 + §16 lessons especially §16.14/§16.15/§16.16/§16.27/§16.32/§16.35/§16.36/§16.37/§16.45/§16.46)
+3. docs/property/house_positions.md — for Session C: §29 (NEW Wave 8 VAT architectural cluster — single primary anchor for all 9 picks; sub-sections §29.1-§29.11 with Stage 2b corrections on s.26B drop + Sch 7A Group 7 reframe + reg 107A SI 2002/1074 cite)
+4. Your 9 briefs at briefs/property/wave8/:
+   - C1 (PILLAR): option-to-tax-vata-1994-schedule-10-commercial-property-20-year-lock
+   - C2: option-to-tax-revocation-routes-6-month-cooling-off-20-year-exit-landlords
+   - C3: transfer-of-going-concern-togc-commercial-property-option-matching-vat-free
+   - C5: vat-partial-exemption-special-method-approval-landlords-standard-method-override-mechanics (REFRAMED — SPECIAL method, not standard which is Wave 5)
+   - C6: vat-commercial-to-residential-conversion-5-percent-reduced-rate-developer-recovery-mechanics (REFRAMED — narrow com-to-res 5% focus)
+   - C7: disapplication-option-to-tax-schedule-10-paragraph-12-residential-conversion (covers paras 5+6+12 distinguished)
+   - C8: vat-storage-facility-lettings-schedule-9-group-1-supply-categorisation-landlords (self-storage STANDARD-RATED carve-out)
+   - C9: vat-registration-threshold-90k-landlords-april-2024-group-registration
+   - C10: landlord-vat-recovery-professional-fees-capital-costs-commercial-property
+5. docs/property/wave8_page_tracker.md (your C-bucket rows; ABSOLUTE PATH)
+6. docs/property/wave8_site_wide_flags.md (ABSOLUTE PATH)
+7. docs/property/wave8_questions_session_C.md (ABSOLUTE PATH)
+8. docs/property/wave8_discovery_log_session_C.md (ABSOLUTE PATH)
+
+Acknowledge with one short status line: "Session C picked up. Main at b48406e. Reading START_HERE and pillar brief C1 now."
+
+Then claim C1 PILLAR first (C2 + C7 reference C1's option-to-tax architecture). After C1: C2 (revocation); C3 (TOGC + option-matching); C5 (special method); C7 (disapplication paras 5+6+12); C6 + C8 + C9 + C10 independent.
+
+Critical §16.35 + §16.45 per-write verification (7 watchpoints from Wave 8 prep — read all in START_HERE):
+- VATA 1994 s.26B is Flat-Rate Scheme (NOT CGS); CGS is in SI 1995/2518 Part XV regs 112-116
+- Sch 7A Group 7 is empty-homes 2-year-vacancy renovation (NOT changed-number-of-dwellings)
+- Reg 107A inserted by SI 2002/1074 (NOT SI 2002/1142)
+- Self-storage STANDARD-RATED per Sch 9 Gr 1 para (ka) (FA 2012 Sch 26) from 1 October 2012
+- Sch 10 para 12 = "Developers of exempt land" anti-avoidance (dwelling disapplication is paras 5 + 6)
+- CGS = £250k threshold + 10-year adjustment (NOT 5-year)
+- VAT registration threshold £90k from 1 April 2024 (rate-by-reference; verify at write time)
+
+Within-bucket sequencing (§16.32): C1 PILLAR first; C2 + C7 build on C1; C3 cross-references C1 option-matching; C5 + C10 recovery-mechanics cluster; C6 + C8 + C9 independent.
+
+Critical anti-templating discipline: 9 pages cannot read like 9 variants. Stop after page 3 and self-check.
+
+Critical handover hygiene (§16.14): if context-pressured, FLIP THE TRACKER FIRST before stopping. ABSOLUTE PATH to main.

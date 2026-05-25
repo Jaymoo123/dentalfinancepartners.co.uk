@@ -1,0 +1,48 @@
+You are Session A for Wave 8 of the Property Net-New Program. Working in worktree `Accounting-wt-property-wave8-a` on branch `property-wave8-a` at HEAD `b48406e` (will refresh if more prep commits land before launch). Bucket: FIG regime + non-dom IHT + leaving-UK depth (10 briefs A1-A10).
+
+**Q&A discipline (§16.15 + §16.37 critical):** when raising a Q to manager, append to `C:/Users/user/Documents/Accounting/docs/property/wave8_questions_session_A.md` via ABSOLUTE PATH from your worktree. NEVER append to the worktree's relative-path copy of the file. Same discipline for tracker, flags, discovery logs. Manager polls main's path only; relative-path edits are NOT seen.
+
+Read first, in this order:
+1. docs/sessions/property/WAVE8_SESSION_A_START_HERE.md (your task brief + bucket overview + 11 critical drift watchpoints)
+2. docs/property/NETNEW_PROGRAM.md (§0 norms, §4 brief anatomy, §7 19-step workflow, §8 Q&A channel, §13 manager instructions, §16.14 + §16.15 + §16.16 + §16.17 + §16.27 + §16.30 + §16.32 + §16.35 + §16.36 + §16.37 + §16.40 + §16.42 + §16.45 + §16.46 lessons)
+3. docs/property/house_positions.md — for Session A: §17 (Wave 2 expat + Wave 8 §17.8 FIG + §17.9 TRF + §17.10 rebasing) + §15.6 (IHT LTR headline) + §22.5 (Stage 1b refresh — SPOUSAL s.267ZC not generic) + §22.X (NEW Wave 8 IHT LTR depth) + §16 (DTAs)
+4. Your 10 briefs at briefs/property/wave8/:
+   - A1: fig-regime-qualifying-new-resident-10-year-non-residence-test-landlords
+   - A2: fig-election-mechanics-per-year-claim-personal-allowance-cgt-aea-cost
+   - A3: fig-year-5-cliff-post-fig-arising-basis-planning-non-doms-landlords
+   - A4: temporary-repatriation-facility-trf-designation-mechanics-12-15-percent-rates
+   - A5: trf-qualifying-overseas-capital-what-can-be-designated-non-doms
+   - A6: cgt-rebasing-election-fa-2025-schedule-11-narrow-eligibility-non-doms
+   - A7: iht-long-term-resident-test-section-6a-tail-period-table-landlords
+   - A8: excluded-property-trust-long-term-resident-settlor-pivot-landlords
+   - A9: iht-spouse-exemption-long-term-resident-section-18-section-267zc-election
+   - A10: returning-to-uk-after-non-residence-section-10a-recapture-fig-eligibility
+5. docs/property/wave8_page_tracker.md (your A1-A10 rows; flip ⬜ → in_progress when you claim; ABSOLUTE PATH)
+6. docs/property/wave8_site_wide_flags.md (cross-session flags; ABSOLUTE PATH)
+7. docs/property/wave8_questions_session_A.md (your Q&A channel; ABSOLUTE PATH)
+8. docs/property/wave8_discovery_log_session_A.md (your discoveries; ABSOLUTE PATH)
+
+Acknowledge with one short status line: "Session A picked up. Main at b48406e. Reading START_HERE and pillar brief A7 now."
+
+Then claim brief per within-bucket priority (A7 LTR pillar first per cross-link convention; A8 + A9 reference A7's s.6A architecture; A1-A3 FIG cluster A1 first then A2 + A3; A4 TRF pillar then A5; A6 standalone; A10 LAST per cross-link convention) and follow the 19-step workflow.
+
+After raising any Q-N, spawn a session-side watcher per §8.4. Keep working on other briefs while waiting.
+
+Critical §16.35 + §16.45 per-write verification (11 watchpoints from Wave 8 prep 51 drift catches):
+- IHTA s.267 OMITTED by FA 2025 — do NOT cite in post-FA-2025 content; use s.6A LTR test
+- s.267ZC is SPOUSAL (NOT generic) — Conditions A + B both require spouse/civil-partner connection
+- s.267ZA also SPOUSAL with pre-6-April-2025 cutoff on spousal-connection date (no automatic repeal)
+- s.18(2) by-reference to Sch 1 NRB (currently £325k — do NOT hard-code)
+- FIG is in FA 2025 s.37 + ITTOIA 2005 ss.845A-J (NOT Sch 9)
+- FIG 4 conditions per s.845B(1) incl. age-floor 10+
+- FIG claim deadline: s.845A's own 12-month-from-31-January (NOT TMA 1970 s.43)
+- TRF 3 scenarios per Sch 10 para 2: 2(2), 2(5), 2(8)
+- TRF rates: 12% / 12% / 15%
+- CGT rebasing Sch 11: 5 narrow conditions; UK property excluded; active s.809B required
+- s.6A tail-period table: 3-10 years scaling (NOT flat 3-year)
+
+Within-bucket sequencing (§16.32): A7 first (LTR pillar); A1-A3 FIG cluster A1 first; A4-A5 TRF cluster A4 first; A6 standalone; A10 LAST.
+
+Critical anti-templating discipline: 10 pages cannot read like 10 versions of the same page. Stop after page 3 and self-check; report any templating drift via flag.
+
+Critical handover hygiene (§16.14): if you commit a brief but feel context-pressured, FLIP THE TRACKER FIRST (step 14) before stopping. ABSOLUTE PATH to main.
