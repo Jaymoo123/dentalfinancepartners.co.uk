@@ -154,45 +154,59 @@ See `docs/property/NETNEW_PROGRAM.md` §4.9 / §7 for the verbatim 19-step workf
 ## Per-page work-log (Stage 2 + session fill)
 
 ### Decisions
-- **Final slug:**
-- **Final category:**
-- **H1 chosen:**
-- **Meta title chosen:**
-- **Why these vs other options:**
+- **Final slug:** register-of-overseas-entities-roe-annual-update-statement-non-resident-landlords (as seed)
+- **Final category:** non-resident-landlord-tax (Stage 2 brief override from incorporation-and-company-structures — the audience is non-resident landlord corporate entities, so the NRL category gives better topical clustering with the related NRL Scheme + NRCGT + NR-Self-Assessment companion pages)
+- **H1 chosen:** Register of Overseas Entities Annual Update: The Non-Resident Landlord Operational Guide
+- **Meta title chosen:** Register of Overseas Entities Annual Update Statement Guide (59 chars)
+- **Why these vs other options:** Differentiated against the (well-trodden) initial-registration content by anchoring on the annual update obligation + the HMLR disposition block consequence + the multi-axis compliance frame for an offshore landlord-corporate. Non-resident-landlord-tax category routes the page next to its natural siblings.
 
 ### Competitor URLs fetched
-- 
+- None survived Stage 2 liveness check (Bug #3 guardrail). Session relied on legislation.gov.uk verbatim section-7/section-8 fetches + Companies House campaign + gov.uk RoE guidance + ECCTA contents.
 
 ### Existing-page review
-- 
+- Top cannib 0.22 `non-resident-landlord-scheme-uk-complete-guide` — cross-linked as income-side companion. No body content overlap; B2 is entity-disclosure-side, NRL scheme is income-withholding side.
+- 0.15 `non-resident-cgt-selling-uk-property-overseas-guide` — cross-linked as disposal-side companion where HMLR Sch 4A block bites at completion.
+- 0.15 `non-resident-landlord-self-assessment-filing-requirements` — cross-linked as filing-side companion.
 
 ### Citations added
-- 
+- ECTEA 2022 c. 10 contents + verbatim s.7 "Updating duty" subsection (1) + (9) wording per legislation.gov.uk WebFetch 2026-05-25.
+- ECTEA 2022 s.8 "Failure to comply with updating duty" verbatim offence wording (entity + officers in default; daily default fine ≥ greater of £2,500 / ½ level 4 for E&W; level 5 / ½ level 5 for Scotland + NI) per legislation.gov.uk WebFetch 2026-05-25.
+- LRA 2002 Sch 4A (HMLR disposition block) per legislation.gov.uk.
+- SI 2022/725 The Register of Overseas Entities (Verification and Provision of Information) Regulations 2022.
+- Companies House gov.uk/guidance/register-an-overseas-entity (covers registration and annual update).
+- Companies House campaign page (live commencement state).
 
 ### Internal links added
-- 
+- /blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide
+- /blog/non-resident-landlord-tax/non-resident-cgt-selling-uk-property-overseas-guide
+- /blog/non-resident-landlord-tax/non-resident-landlord-self-assessment-filing-requirements
+- /blog/incorporation-and-company-structures/eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos (companion B1)
+- /blog/incorporation-and-company-structures/companies-house-confirmation-statement-changes-2024-onwards-psc-disclosure (companion B3)
+- /blog/property-types-and-specialist-tax/ated-overview-companies-holding-uk-residential-property-2026-27
+- /blog/property-types-and-specialist-tax/ated-overseas-companies-voluntary-compliance-otm-letters
 
 ### Inline CTA placements
-- 
+- 3 × `<aside>` callouts (two-doors statutory architecture; section 8 criminal exposure on officers; verification-stale trap). LeadForm auto-injected at footer.
 
 ### Build attempts
-- 
+- Single batched build for B1+B2+B3 — PASS. B2 emitted at /blog/non-resident-landlord-tax/register-of-overseas-entities-roe-annual-update-statement-non-resident-landlords.html.
 
 ### Verification
-- em-dash count:
-- Tailwind utility classes:
-- metaTitle length:
-- metaDescription length:
-- FAQ count:
-- Internal links resolve:
-- Body word count:
-- Operative penalty quantum verified at: [timestamp + URL]
-- ECCTA Sch 12 amendments scope verified at: [timestamp + URL]
+- em-dash count: 0
+- Tailwind utility classes: 0
+- metaTitle length: 59 (≤62 ✓)
+- metaDescription length: 155 (≤158 ✓)
+- FAQ count: 12 (frontmatter) = 12 (built HTML JSON-LD) ✓
+- Internal links resolve: all 7 internal links verified to existing files.
+- Body word count: 3,055 (within 2,800-3,500 non-pillar target ✓)
+- Operative penalty quantum verified at: 2026-05-25 — section 8 criminal verbatim quoted via legislation.gov.uk; civil-side Penalties SI quantum framed as "verify operative SI at point of filing because regulations are amendable" per §16.27 rate-by-reference (Stage 2 had also flagged this discipline).
+- ECCTA Sch 12 amendments scope verified at: 2026-05-25 — confirmed verbatim Schedule 12 is "Criminal liability of bodies: economic crimes" (Part 5 failure-to-prevent-fraud), DOES NOT amend ECTEA 2022. Page body explicitly carries the do-not-write line to immunise future drift.
 
 ### Flags raised to wave9_site_wide_flags.md
-- 
+- See F-14 from B1 — same Stage 2 brief drift on ECCTA section attributions caught upstream; no additional B2 flag needed because B2 anchored on ECTEA (different Act) and the Stage 2 brief for B2 carries the correct verbatim ECTEA s.7 + s.8 attributions per the F-13 close (HP §11.A re-anchor commit 0c524e7). B2 page body uses verbatim ECTEA section headings.
 
 ### 2-3 sentence summary
+B2 written to annual-update-side framing (deliberately NOT initial registration), anchored on ECTEA 2022 s.7 + s.8 verbatim per legislation.gov.uk plus LRA 2002 Sch 4A HMLR disposition block as the operational teeth. Multi-axis compliance frame (RoE + ATED + NRL + CT + NRCGT) drawn explicitly with RoE positioned as the unique-to-disposition obligation. Build PASS; 3,055 body words; 12 FAQs matched in built HTML JSON-LD; zero em-dashes; all internal links resolve.
 
 
 ---
