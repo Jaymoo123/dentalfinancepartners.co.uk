@@ -342,22 +342,29 @@ This §11.A mini-lock closes F-10 from Wave 9 Stage 1b. Extends the §11 timelin
 - **s.66** — **Authorised Corporate Service Providers (ACSPs)** authorisation regime (CA 2006 inserted-section for ACSP registration and supervision by AML supervisor).
 - **ss.67-69** — Identity verification: continuing obligations + offences.
 
-**ECTEA 2022 (Register of Overseas Entities) — anchors per Part 1:**
-- **ECTEA 2022 s.4** — Application for registration of overseas entity.
-- **ECTEA 2022 s.7** — Updating duty (annual update obligation — due within **14 days of the registration anniversary** per the £2,500 + £500/day penalty regime carried in §11 main).
-- **ECTEA 2022 s.8** — Removal from register on application.
-- **ECTEA 2022 s.34** — Restrictions on registrable beneficial owners (disposition-block where non-compliant — operationalised via LRA 2002 Sch 4A for England + Wales; Scottish + Northern Irish equivalents in separate regulations).
-- **ECTEA 2022 s.36** — Offences for false statements / failure to register / failure to update.
+**ECTEA 2022 (Register of Overseas Entities) — anchors per Part 1 (CORRECTED 2026-05-25 per F-13 Stage 2 catch — earlier attributions for s.8 / s.34 / s.36 were wrong; verbatim section headings WebFetched from legislation.gov.uk):**
+- **ECTEA 2022 s.4** — "Application for registration" (overseas entity applies to be entered on the register).
+- **ECTEA 2022 s.7** — "Updating duty" — entity must file an updating statement within **14 days after the end of each "update period"** (NOT 14 days from "registration anniversary" — the operative clock is the update period, defined separately in s.7). Civil penalty quantum (£2,500 + £500/day) is in a SEPARATE Penalties Regulations SI, NOT in ECTEA itself. The s.8 + s.36 fines machinery is criminal-side, distinct from the civil-SI quantum.
+- **ECTEA 2022 s.8** — "**Failure to comply with updating duty**" — criminal offence (entity + every officer in default; on conviction a fine + daily default fine ≥ greater of £2,500 or half of level 4 on the standard scale for E&W). **NOT "removal from register on application" — that's at s.9 ("Removal from register").**
+- **ECTEA 2022 s.34** — "**Power to require overseas entity to register if it owns certain land**" — Secretary of State's compulsory-registration-notice power for unregistered overseas entities that own UK property. **NOT the HMLR disposition-block — that lives at LRA 2002 Sch 4A (inserted by ECTEA but the LRA Schedule is the operative anchor for the disposition restriction, not ECTEA s.34).**
+- **ECTEA 2022 s.36** — "**Meaning of 'daily default fine'**" — DEFINITIONAL section that applies CA 2006 s.1125 daily-default-fine concept to ECTEA Part 1. **NOT a stand-alone offences provision.** The failure-to-update criminal offence is at s.8; the false-statements offences are at ss.15A / 15B / 32A (introduced via post-enactment amendments per the contents page).
+- **LRA 2002 Sch 4A** — HMLR disposition-block for non-compliant overseas entities (the actual anchor for the HMLR consequence). Inserted by ECTEA 2022 Sch 3.
 
-**Commencement chain (CRITICAL — phased rollout; verify at write time per §16.27 rate-by-reference + phased-commencement-by-reference discipline):**
+**Commencement chain (CRITICAL — phased rollout; verify at write time per §16.27 rate-by-reference + phased-commencement-by-reference discipline) (HARDENED 2026-05-25 per F-11 Stage 2 catch):**
 - **8 April 2025:** ID verification opens VOLUNTARILY for directors + PSCs (per Commencement Regulations published end-2024).
-- **Autumn 2025 (precise date subject to further Commencement Regulations):** ID verification becomes MANDATORY for new directors at incorporation + new PSCs notified to CH.
-- **2026 (date subject to further regs):** ID verification mandatory for ALL EXISTING directors + PSCs (transitional period for catch-up verification).
+- **18 November 2025:** ID verification became a LEGAL REQUIREMENT for newly appointed directors and PSCs (per Commencement Regulations — sessions WebFetch SI number at write time). (Earlier "Autumn 2025 (subject to regs)" framing was caveat-rich for a date that has actually become operative; hardened per F-11.)
+- **18 November 2025 → ~November 2026 (12-month transition window):** EXISTING directors and PSCs must verify by their next confirmation statement filed within / after the transition window. The deadline is per-company, anchored to the confirmation statement cycle.
+- **No earlier than November 2026:** separate later phase for "people who file at Companies House" + corporate-officer scenarios (presenter-side verification + corporate-director regime; Commencement Regulations TBD).
 - **4 March 2024:** Companies (Registration etc) Regulations 2024 — confirmation statement changes effective (registered email + lawful purposes statement).
 - **1 March 2024 (per ECCTA 2023 Sch 2 commencement):** ECTEA 2022 amendments via ECCTA Part 3 in force.
 - **1 August 2022:** RoE in force per ECTEA 2022.
 
-**Sessions writing Bucket B MUST WebFetch the canonical commencement-tracking page at write time:** `https://www.gov.uk/government/news/changes-to-uk-company-law` (Companies House campaign page) — this is the authoritative current-state source. DO NOT rely on this mini-lock's commencement state as cached; verify at every write.
+**Sessions writing Bucket B MUST WebFetch the canonical commencement-tracking page at write time (CORRECTED 2026-05-25 per F-12 Stage 2 catch — earlier nominated URL `https://www.gov.uk/government/news/changes-to-uk-company-law` now returns HTTP 404):**
+- **Primary tracker:** `https://changestoukcompanylaw.campaign.gov.uk/` (Companies House campaign-page domain).
+- **Sub-pages per topic:** `/identity-verification/`, `/authorised-corporate-service-providers/`, `/confirmation-statement-changes/`, `/changes-to-company-registers/`.
+- **Secondary tracker (operational announcements):** `https://companieshouse.blog.gov.uk/` (Companies House blog publishes commencement-phase posts).
+
+DO NOT rely on this mini-lock's commencement state as cached; verify at every write against the campaign page + blog.
 
 ### Authorised Corporate Service Provider (ACSP) framework — what landlords' accountants do
 
@@ -390,9 +397,10 @@ This §11.A mini-lock closes F-10 from Wave 9 Stage 1b. Extends the §11 timelin
 
 ### HMRC + Companies House manual anchors
 
-- **gov.uk Companies House campaign page:** https://www.gov.uk/government/news/changes-to-uk-company-law (the canonical commencement-state tracker — Bucket B sessions MUST WebFetch at write time).
+- **Primary commencement-state tracker (CORRECTED per F-12):** `https://changestoukcompanylaw.campaign.gov.uk/` — Companies House campaign-page domain (with topic sub-pages); Bucket B sessions MUST WebFetch at write time. The earlier nominated URL `https://www.gov.uk/government/news/changes-to-uk-company-law` returns HTTP 404 — do not use.
+- **Secondary tracker:** `https://companieshouse.blog.gov.uk/` (Companies House blog — operational announcements + phase-rollout posts).
 - **Companies House guidance:** GP1 (incorporation) + GP2 (life of a company) + ID-verification specific guidance pages on gov.uk.
-- **legislation.gov.uk anchors:** https://www.legislation.gov.uk/ukpga/2023/56/contents (ECCTA 2023); https://www.legislation.gov.uk/ukpga/2022/10/contents (ECTEA 2022).
+- **legislation.gov.uk anchors:** https://www.legislation.gov.uk/ukpga/2023/56/contents (ECCTA 2023); https://www.legislation.gov.uk/ukpga/2022/10/contents (ECTEA 2022); https://www.legislation.gov.uk/ukpga/2002/9/schedule/4A (LRA 2002 Sch 4A — HMLR disposition-block anchor).
 
 ### Practical writing rules for Bucket B sessions
 
