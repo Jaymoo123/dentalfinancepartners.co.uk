@@ -75,13 +75,22 @@
   - **Spawn-command bug:** Original inner cmd `claude --name '$sessionName' (Get-Content ...)` had both a bogus `--name` flag AND backtick-escaped `$p` that didn't survive Windows command-line serialization. Sub-agent received literal `$p` as first message; claude replied "The $p doesn't match anything I recognize". **Fix:** orchestrator now writes a per-batch launcher `.ps1` at `briefs/property/megawave1/_signals/launch_<batchId>.ps1` containing `$prompt = Get-Content -Raw '...'; claude $prompt`, spawned via `powershell -NoExit -Command "& 'launcher.ps1'"`.
   - **batch-reclaim parse bug:** `"Lock acquire failed after $MaxRetries: $_"` — PS 5.1 interpreted `$MaxRetries:` as drive-qualified variable. **Fix:** `${MaxRetries}:`.
 
-### Round 5 — Tier-3 micro-run (IN-FLIGHT as of 2026-05-26 ~00:25)
+### Round 5 — Tier-3 micro-run (BATCH 1 CLOSED CLEAN as of 2026-05-26 00:27:50)
 - `git worktree add C:/Users/user/Documents/Accounting-wt-property-megawave1-a -b property-megawave1-a` (created cleanly off main).
 - `./scripts/rolling-orchestrator.ps1 -Wave 1 -Phase stage1 -Lane a -MaxBatches 1 -BatchTimeoutMin 120` dispatched (after launcher fix). Spawned wt tab `MW1-stage1-A-B1`. First dispatch (pre-launcher-fix) was reclaimed via `batch-reclaim.ps1 -BatchId M1-A-B1`.
 - 6 picks claimed by agent `c439efd2-f152-4f99-b474-4dd180d2ea6d`. Sub-agent at permission prompts; user click-through model for this Tier-3 validation batch.
 - **As of last heartbeat (00:25):** 4 of 6 briefs committed to MAIN at commits `f7ad0d6` / `3b128c5` / `75a2acf` / `e82eb4c`. Tracker shows 4 ✅. Quality spot-check on first brief (`abolishment-of-multiple-dwelling-relief.md`) confirms verified statute citations (F(No.2)A 2024 s.7 with legislation.gov.uk URL verified 2026-05-26), anti-cannibalisation framing citing Wave 9 deep page + Welsh cross-border page, HP refs to §1.H Wave 9 lock + §1.A Wave 7 lock. Production-quality.
 - **NOTE: My Round 4 followup commit `9b06934` is interleaved between sub-agent commits 2 and 3.** This is harmless — sub-agent's commits are individually atomic; my commit touched orchestrator scripts only. If close-tooling later wants a contiguous range, filter by commit message prefix `MegaWave 1 Stage 1 A:`.
 - Monitor task running on conductor side; heartbeat every 90s shows brief count (against MAIN path) / commit count / tracker ✅+🟦 / flags / Q-N. **Monitor v1+v2 had wrong grep paths; v3 (`task b8i0vnqeb`) checks main correctly.**
+
+**Batch 1 close summary (00:27:50, all acceptance criteria met):**
+- **6 briefs on main** at SHAs `f7ad0d6` / `3b128c5` / `75a2acf` / `e82eb4c` / `6fcbdb5` / `c66581b` (+ tracker-flip `3818c2c` for A6). Wall-clock ~12 min from launcher-fix dispatch to marker write = ~2 min per pick.
+- **Tracker:** 6 ✅, 0 🟦, 0 ⬜, 0 ⚠.
+- **Flags:** zero raised. **Q-N:** zero raised. Both indicate the prep + template was clean.
+- **Quality spot-check (pick 6 `a-complete-guide-to-stamp-duty-relief-for-probate-properties`):** Cites FA 2003 Sch 3 para 3A + Sch 4 para 4 + Sch 6A + Sch 4ZA para 16, each with legislation.gov.uk verification URLs marked for Stage 2 verify. Names the complementary existing site page (`sdlt-on-probate-property-transfers`) and explicitly distinguishes lane (reliefs-led vs transfer-type-led). Surfaces a NEW HP-lock candidate `§1.O "Probate SDLT reliefs and Sch 4ZA carve-out"` for Stage 1b conductor decision. 6 relief architectures itemised. Target length 2,600-3,200 words. Production-grade — comparable to Wave 9 hand-authored briefs.
+- **Marker JSON written cleanly** at `briefs/property/megawave1/_signals/batch_M1-A-B1_done.json`. Orchestrator detected → exited per `-MaxBatches 1` cap.
+
+**Round 5 next steps (waiting on user decision):** see Section 3 decisions #1 + #2 + #3. Recommend: flip orchestrator launcher template to `claude --dangerously-skip-permissions $prompt` (worktree isolation + read-only main-tracker discipline provides safety bound), then dispatch batch 2 (next 6 Bucket A picks). If batch 2 also clean, expand to lanes B + C in parallel.
 
 ---
 
