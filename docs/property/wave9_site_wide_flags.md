@@ -43,6 +43,34 @@ WebFetch of `https://changestoukcompanylaw.campaign.gov.uk/identity-verification
 
 ---
 
+## F-13 — HOUSE_POSITION_EXTENSION — §11.A ECTEA 2022 section attributions wrong for s.8 / s.34 / s.36
+
+**Raised:** 2026-05-25, Stage 2, Session B (Bucket B, pick B2 directly affected; B3 only loosely affected).
+**Status:** open.
+
+**Issue:** HP §11.A "ECTEA 2022 (Register of Overseas Entities) — anchors per Part 1" block (commit `9285495`) maps ECTEA sections to roles. WebFetch verification of legislation.gov.uk section pages at 2026-05-25 shows three of the five section attributions are inconsistent with the verbatim statutory headings:
+
+| Section | §11.A says | legislation.gov.uk verbatim heading | Verdict |
+|---------|------------|-------------------------------------|---------|
+| s.4 | Application for registration of overseas entity | "Application for registration" | ✓ matches |
+| s.7 | Updating duty (annual update — 14 days of registration anniversary, £2,500 + £500/day) | "Updating duty" (14 days AFTER each "update period") | ✓ heading matches; mechanic-detail off (period-end + 14 days, NOT anniversary + 14 days; civil-£2,500 + £500/day quantum is separate Penalties SI, not the s.8 criminal-fine quantum) |
+| s.8 | Removal from register on application | **"Failure to comply with updating duty"** | ✗ MISMATCH — s.8 is the failure-to-update criminal offence (entity + officers in default; daily default fine ≥ greater of £2,500 / ½ level 4 in E&W); removal from register is s.9 |
+| s.34 | Restrictions on registrable beneficial owners (disposition-block — operationalised via LRA 2002 Sch 4A) | **"Power to require overseas entity to register if it owns certain land"** | ✗ MISMATCH — s.34 is the Secretary of State's compulsory-registration-notice power; the HMLR disposition-block is anchored ONLY in LRA 2002 Sch 4A (which is inserted by ECTEA, but the LRA Schedule is the operative anchor, not ECTEA s.34) |
+| s.36 | Offences for false statements / failure to register / failure to update | **"Meaning of 'daily default fine'"** | ✗ MISMATCH — s.36 is a definitional section that applies CA 2006 s.1125 daily-default-fine concept to ECTEA Part 1; the failure-to-update offence is at s.8; the false-statements offences are at amended ss.15A / 15B / 32A (introduced via post-enactment amendments per the contents page) |
+
+**Sources (all WebFetched 2026-05-25, HTTP 200):**
+- `https://www.legislation.gov.uk/ukpga/2022/10/contents`
+- `https://www.legislation.gov.uk/ukpga/2022/10/section/7`
+- `https://www.legislation.gov.uk/ukpga/2022/10/section/8`
+- `https://www.legislation.gov.uk/ukpga/2022/10/section/34`
+- `https://www.legislation.gov.uk/ukpga/2022/10/section/36`
+
+**Recommended:** §11.A's ECTEA block re-anchored to the verbatim section headings + the three corrected attributions + clarification that the civil £2,500 + £500/day quantum lives in operative Penalties SI (separate from the s.8 + s.36 criminal-fine machinery) + LRA 2002 Sch 4A as the actual HMLR disposition-block anchor (not ECTEA s.34). Pattern is the same as Wave 6's §21.1 s.464C/D verification gate — the §11.A statutory map needs the same re-anchoring after legislation.gov.uk verbatim verification.
+
+Stage 2 B2 brief has applied the corrected attributions inline + flagged the parallel penalty regimes (civil-SI + criminal-s.8 + definitional-s.36) so the session can write to the correct anchors without waiting for §11.A re-lock.
+
+---
+
 ## F-12 — AUTHORITY_GAP — §11.A canonical commencement-tracker URL has gone 404
 
 **Raised:** 2026-05-25, Stage 2, Session B (Bucket B, all 3 picks affected).
