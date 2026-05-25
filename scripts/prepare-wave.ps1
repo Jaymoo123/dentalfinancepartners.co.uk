@@ -39,6 +39,8 @@ $wtBase            = 'C:\Users\user\Documents'
 $buckets           = @('a','b','c')
 $launchPromptsFile = "$accountingRoot\docs\sessions\property\WAVE${Wave}_LAUNCH_PROMPTS.md"
 $promptOutDir      = "$accountingRoot\docs\sessions\property\wave${Wave}_prompts"
+$trackerFile       = "$accountingRoot\docs\property\wave${Wave}_page_tracker.md"
+$blogRoutesDir     = "$accountingRoot\Property\web\src\app\blog"
 
 function Write-Step($msg) { Write-Host "==> $msg" -ForegroundColor Cyan }
 function Write-OK   ($msg) { Write-Host "    OK:   $msg" -ForegroundColor Green }
@@ -53,14 +55,61 @@ Write-Step "Preparing Wave $Wave"
 Write-Host ""
 
 # 1. Launch prompts file
-Write-Step "1/5 Launch prompts file"
+Write-Step "1/6 Launch prompts file"
 if (-not (Test-Path $launchPromptsFile)) {
     Write-Fail "Not found: $launchPromptsFile"
 }
 Write-OK "Found $launchPromptsFile"
 
+# 1b. Category validation against live blog routes (Bug #4 fix - prevents
+#     F-4(C) Wave 8 trap where Bucket C used non-existent 'vat-for-landlords'
+#     category and 9 pages would have 404'd at the category route layer)
+Write-Step "2/6 Category validation against live blog routes"
+if (-not (Test-Path $trackerFile)) {
+    Write-Warn "Tracker not yet built ($trackerFile missing) - skipping category check"
+} elseif (-not (Test-Path $blogRoutesDir)) {
+    Write-Warn "Blog routes dir missing ($blogRoutesDir) - skipping category check"
+} else {
+    # Live categories = direct subdirs under blog/ excluding dynamic [...] and files
+    $liveCategories = Get-ChildItem $blogRoutesDir -Directory |
+        Where-Object { $_.Name -notmatch '^\[' } |
+        Select-Object -ExpandProperty Name
+    Write-OK "Live blog routes: $($liveCategories.Count) ($($liveCategories -join ', '))"
+
+    # Parse tracker for Category column (5th cell in `| status | pos | slug | category | ...`)
+    $utf8 = [System.Text.UTF8Encoding]::new($false)
+    $trackerLines = [System.IO.File]::ReadAllText($trackerFile, $utf8) -split "`r?`n"
+    $trackerCategories = @{}
+    foreach ($line in $trackerLines) {
+        # Skip header rows + separator rows
+        if ($line -notmatch '^\|\s*[^\|\s]+\s*\|') { continue }
+        if ($line -match '^\|\s*Status\s*\|' -or $line -match '^\|\s*-+\s*\|') { continue }
+        $cells = ($line -split '\|') | ForEach-Object { $_.Trim() }
+        # After split: cells[0]=empty, [1]=status, [2]=pos, [3]=slug, [4]=category
+        if ($cells.Count -ge 5) {
+            $cat = $cells[4]
+            if ($cat -and $cat -notmatch '^-+$' -and $cat.Length -gt 0) {
+                if (-not $trackerCategories.ContainsKey($cat)) { $trackerCategories[$cat] = 0 }
+                $trackerCategories[$cat]++
+            }
+        }
+    }
+
+    $unknownCategories = @($trackerCategories.Keys | Where-Object { $liveCategories -notcontains $_ })
+    if ($unknownCategories.Count -eq 0) {
+        Write-OK "All tracker categories ($($trackerCategories.Keys.Count) distinct) map to live routes"
+    } else {
+        Write-Warn "$($unknownCategories.Count) tracker categor(y/ies) NOT a live blog route:"
+        foreach ($cat in $unknownCategories) {
+            $rowCount = $trackerCategories[$cat]
+            Write-Host "          - '$cat' (used in $rowCount row(s))" -ForegroundColor Yellow
+        }
+        Write-Warn "Sub-agents must override category in page frontmatter, OR create the route in Property/web/src/app/blog/<cat>/page.tsx, OR conductor revises the tracker pre-launch. Not blocking PREP."
+    }
+}
+
 # 2. Worktree existence + ff-mergeability
-Write-Step "2/5 Validating worktrees"
+Write-Step "3/6 Validating worktrees"
 $mainHead = (git -C $accountingRoot rev-parse main).Trim()
 Write-OK "main HEAD: $mainHead"
 
@@ -82,7 +131,7 @@ foreach ($bucket in $buckets) {
 }
 
 # 3. Fast-forward merge
-Write-Step "3/5 Fast-forward merging main into worktree branches"
+Write-Step "4/6 Fast-forward merging main into worktree branches"
 foreach ($bucket in $buckets) {
     $wtDir  = "$wtBase\Accounting-wt-property-wave${Wave}-${bucket}"
     $branch = "property-wave${Wave}-${bucket}"
@@ -101,7 +150,7 @@ foreach ($bucket in $buckets) {
 }
 
 # 4. Extract prompts from WAVE{N}_LAUNCH_PROMPTS.md
-Write-Step "4/5 Extracting launch prompts"
+Write-Step "5/6 Extracting launch prompts"
 if (-not (Test-Path $promptOutDir)) {
     if ($DryRun) {
         Write-Warn "Would create directory: $promptOutDir"
@@ -134,7 +183,7 @@ foreach ($m in $promptMatches) {
 }
 
 # 5. Verify artefacts
-Write-Step "5/5 Verifying artefacts"
+Write-Step "6/6 Verifying artefacts"
 $artefacts = @(
     "docs\property\wave${Wave}_page_tracker.md",
     "docs\property\wave${Wave}_site_wide_flags.md",
