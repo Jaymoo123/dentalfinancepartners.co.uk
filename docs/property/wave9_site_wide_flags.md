@@ -23,6 +23,42 @@ Flags never block. Sessions continue work after flagging.
 
 ---
 
+## F-11 — HOUSE_POSITION_EXTENSION — §11.A commencement-state line needs hardening (ID verification went firm 18 November 2025)
+
+**Raised:** 2026-05-25, Stage 2, Session B (Bucket B, picks B1 + B3 affected).
+**Status:** open.
+
+**Issue:** HP §11.A (commit `9285495`) commencement chain reads:
+- "**Autumn 2025 (precise date subject to further Commencement Regulations):** ID verification becomes MANDATORY for new directors at incorporation + new PSCs notified to CH."
+- "**2026 (date subject to further regs):** ID verification mandatory for ALL EXISTING directors + PSCs (transitional period for catch-up verification)."
+
+WebFetch of `https://changestoukcompanylaw.campaign.gov.uk/identity-verification/` at 2026-05-25 confirms these dates are now FIRM and harder than §11.A captures:
+- **18 November 2025** — identity verification became a legal requirement for newly appointed directors and PSCs.
+- **18 November 2025 → ~November 2026 (12-month transition window)** — existing directors and PSCs must verify by their next confirmation statement filed within / after the window.
+- **No earlier than November 2026** — separate later phase for "people who file at Companies House" and corporate-officer scenarios.
+
+§11.A's "subject to further regs" framing is now caveat-rich for a date that has actually become operative. Recommend §11.A update to lock the 18 November 2025 commencement + 12-month transition window verbatim. Sessions writing B1 / B3 use the campaign page as the operative source (Stage 2 B has cited it), but the HP-side lock should match so future-wave sub-agents do not re-discover the same hardening.
+
+**Recommended:** §11.A commencement chain replaces "Autumn 2025 (subject to regs)" with "18 November 2025 (per Commencement Regulations — session WebFetches SI number at write time)" and replaces "2026 (subject to regs)" with "12-month transition ending ~November 2026 for existing directors + PSCs (deadline at next confirmation statement filed within / after the window)".
+
+---
+
+## F-12 — AUTHORITY_GAP — §11.A canonical commencement-tracker URL has gone 404
+
+**Raised:** 2026-05-25, Stage 2, Session B (Bucket B, all 3 picks affected).
+**Status:** open.
+
+**Issue:** HP §11.A line 360 + line 393 nominates `https://www.gov.uk/government/news/changes-to-uk-company-law` as the "canonical commencement-state tracker" that Bucket B sessions MUST WebFetch at write time. WebFetch at 2026-05-25 returns **HTTP 404**. The URL is dead.
+
+The live replacements are:
+- **Primary tracker:** `https://changestoukcompanylaw.campaign.gov.uk/` (the Companies House campaign-page domain, with sub-pages for each topic).
+- **Sub-pages:** `/identity-verification/`, `/authorised-corporate-service-providers/`, `/confirmation-statement-changes/`, `/changes-to-company-registers/`.
+- **Operational announcements:** `https://companieshouse.blog.gov.uk/` (the Companies House blog, which publishes commencement-phase posts).
+
+Stage 2 B has used these in the extended B1 brief. Recommend §11.A swap the dead URL for the live campaign-page URL + add the blog as a secondary tracker.
+
+---
+
 ## F-1 — HOUSE_POSITION_EXTENSION — HP §1.G needed for SDLT MDR abolition (A1)
 
 **Raised:** 2026-05-25, Stage 1a seed, Session A (Bucket A, pick A1).
