@@ -1,0 +1,79 @@
+You are Stage 1 Sub-Agent A for Wave 9 of the Property Net-New Program (TEST scope — 9 picks total across 3 buckets). Working in worktree `Accounting-wt-property-wave9-a` on branch `property-wave9-a` at HEAD `648789a`. Your bucket: SDLT — MDR abolition + 5% surcharge mechanics + mixed-use rates line (3 brief seeds A1-A3).
+
+Your task: emit 3 Stage 1 brief skeleton files at `briefs/property/wave9/<slug>.md` (absolute path on main, see §16.15 discipline). Each seed brief defines the page's statutory anchors, framing differentiator, key questions, and competitor-research target list — leaving the full content (competitor URLs, full FAQ list, worked examples, authority links) for Stage 2 to fill in.
+
+**Q&A discipline (§16.15 + §16.37 critical):** when raising a Q to manager, append to `C:/Users/user/Documents/Accounting/docs/property/wave9_questions_session_A.md` via ABSOLUTE PATH from your worktree. NEVER append to the worktree's relative-path copy. Same discipline for tracker, flags, discovery logs. Manager polls main's path only.
+
+**F-numbering range (Bug #2 fix from Wave 8 dupe F-4):** when raising flags, use F-numbers **F-1 to F-9** ONLY for your bucket. Do not use F-numbers outside this range even if next free number sequentially appears available.
+
+Read first, in this order:
+1. `C:/Users/user/Documents/Accounting/docs/property/NETNEW_PROGRAM.md` — §0 norms, §4 brief anatomy, §13.2 flag types, §16.18 reasoning-first cannib, §16.27 rate-by-reference, §16.35 per-write statute verify, §16.36 Stage 2 brief gate, §16.45 HP-lock drift catches
+2. `C:/Users/user/Documents/Accounting/docs/property/house_positions.md` §1 (SDLT cluster — covers basic rates + surcharge architecture) and §1.A (Wave 7 SDLT partnership) — these are the existing SDLT HP anchors; for Wave 9 you will likely need NEW HP additions for MDR-abolition specifically and 5% surcharge specifically; flag those needs at Stage 1
+3. `C:/Users/user/Documents/Accounting/briefs/property/wave9/picks.yaml` — your 3 picks in Bucket A
+4. `C:/Users/user/Documents/Accounting/docs/property/wave9_cannibalisation_check.md` — note A2 has 0.36 partial-overlap with `sdlt-5-percent-surcharge-refund-claim-process` — your A2 seed must explicitly differentiate (existing = how-to-claim-process; new = refund ROUTES + 3-year-replacement-window mechanics + sale-delay scenarios)
+
+Acknowledge with one short status line: "Stage 1 A picked up. Main at 648789a. Reading SDLT HP anchors + writing A1 seed first."
+
+**Your 3 picks (per picks.yaml):**
+
+- A1: `multiple-dwellings-relief-abolition-fa-2024-transitional-rules-landlords` — MDR abolished 1 June 2024 under FA 2024; transitional rules for contracts pre-dating abolition
+- A2: `sdlt-additional-property-surcharge-refund-routes-3-year-replacement-claim` — 5% surcharge refund routes (Autumn 2024 increase from 3%) + 3-year-replacement-claim window mechanics
+- A3: `sdlt-mixed-use-rates-vs-residential-property-tribunal-tests-landlords` — Residential-vs-mixed-use SDLT rate line; Hyman, Suterwalla, Hortons Hall, Bewley case-law
+
+**Stage 1 brief seed structure (target ~800-1200 words per seed, well below Stage 2's ~3000+ word full briefs):**
+
+```markdown
+---
+slug: <slug>
+category: <category — must match a live route in Property/web/src/app/blog/>
+intent: <2-3 sentence search intent statement>
+---
+
+# <Working title (Stage 2 may refine)>
+
+## Statutory anchor
+- Primary: <Act + section, e.g. FA 2024 Sch X paras Y-Z>
+- Supporting: <other sections / regulations>
+- House position reference: <§X.Y of house_positions.md, or NEW LOCK NEEDED>
+
+## Framing differentiator (anti-templating, anti-cannibalisation)
+<1-2 paragraphs: what makes this page distinct from existing pages on adjacent topics. Cite the closest-existing page from cannib report and explain the angle this page takes that the existing page does not.>
+
+## Key questions this page must answer (Stage 2 will expand to full FAQ list)
+1. ...
+2. ...
+3. ...
+(6-10 questions, each tied to the statutory anchor)
+
+## Manager pre-decisions placeholder
+- Category routing: <confirm or override>
+- Worked-example numbers: <flag any rate-by-reference verification needed>
+- Cross-link targets (within Wave 9 or to existing pages): <list>
+
+## Stage 2 research target list (for Stage 2 sub-agent to expand)
+- Competitor pages to fetch (live URLs only — Stage 2 verifies before listing): <2-4 candidate URLs>
+- HMRC manuals to cite: <SDLT manual section references>
+- Case-law to ground (where applicable): <citations>
+
+## Universal rules + workflow stubs (Stage 2 fills)
+[Stage 2 populates from NETNEW_PROGRAM §4 brief anatomy]
+
+## Work log (Stage 2 + RUN session populate)
+[Stage 2 + RUN session record their work here]
+```
+
+**Per-write statute verification (§16.35 — critical):** every statutory citation you place in a seed (in "Statutory anchor" or "Key questions" sections) must be WebFetch-verified against legislation.gov.uk at write time. If a section number is uncertain, flag it for Stage 1b drift review rather than guessing. Wave 8 F-3 (RPDT stale repeal text) and F-6 (s.48ZA mis-attribution to Sch 13) were caught at this discipline — same expected here.
+
+**Within-bucket sequencing:** A1 (MDR abolition — clean net-new) first; A3 (mixed-use line — clean net-new, case-law-heavy) second; A2 (partial overlap; needs careful differentiation framing) last so you can borrow from A1's surcharge-architecture anchoring.
+
+**Acknowledgment line:** confirm reading list complete + picking up A1 first.
+
+**Commit discipline:** commit each seed brief as a separate commit on your worktree branch `property-wave9-a` with message format: `Wave 9 Stage 1 A<N>: <slug> seed (Stage 2 to expand)`. Do NOT commit any tracker edits to your worktree branch — tracker edits go to main via absolute path per §16.15.
+
+**Output check after each seed:**
+- Seed file at `C:/Users/user/Documents/Accounting/briefs/property/wave9/<slug>.md`
+- Tracker flipped from ⬜ → 🟦 (in-progress, optional for Stage 1 seeds) or kept ⬜ (Stage 2 will flip)
+- Any HP-anchor gaps flagged at `wave9_site_wide_flags.md` (absolute path) as `HOUSE_POSITION_EXTENSION` type
+- Discovery insights logged at `wave9_discovery_log_session_A.md` (absolute path)
+
+When all 3 seeds committed: report completion. Manager will then review Stage 1b drift catches before dispatching Stage 2.

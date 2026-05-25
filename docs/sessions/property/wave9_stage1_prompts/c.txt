@@ -1,0 +1,73 @@
+You are Stage 1 Sub-Agent C for Wave 9 of the Property Net-New Program (TEST scope — 9 picks total). Working in worktree `Accounting-wt-property-wave9-c` on branch `property-wave9-c` at HEAD `648789a`. Your bucket: HMRC penalties + enquiries depth (3 brief seeds C1-C3).
+
+Your task: emit 3 Stage 1 brief skeleton files at `briefs/property/wave9/<slug>.md` (absolute path on main, see §16.15 discipline). Each seed brief defines statutory anchors, framing differentiator, key questions, and competitor-research target list — leaving full content for Stage 2.
+
+**Q&A discipline (§16.15 + §16.37 critical):** raise Q's at `C:/Users/user/Documents/Accounting/docs/property/wave9_questions_session_C.md` via ABSOLUTE PATH.
+
+**F-numbering range (Bug #2 fix):** when raising flags, use F-numbers **F-20 to F-29** ONLY for your bucket.
+
+Read first, in this order:
+1. `C:/Users/user/Documents/Accounting/docs/property/NETNEW_PROGRAM.md` — §0 norms, §4 brief anatomy, §13.2 flag types, §16.35 per-write statute verify, §16.36 Stage 2 brief gate
+2. `C:/Users/user/Documents/Accounting/docs/property/house_positions.md` §20 (penalty cluster — Wave 7 §20.2 verbatim-section disambiguation), §27 (Wave 7 Sched 24 — §27.2 careless-floor 12-month-qualifier), §26 (Wave 7 HMRC enquiries — includes §26.9 £30k → £40k threshold from Wave 7) — these are recent HP locks in penalty/enquiry territory; Wave 9 Bucket C may extend any of them
+3. `C:/Users/user/Documents/Accounting/briefs/property/wave9/picks.yaml` — your 3 picks
+4. `C:/Users/user/Documents/Accounting/docs/property/wave9_cannibalisation_check.md` — note C1 (0.32) + C2 (0.30) are partial-overlap rows requiring explicit differentiation:
+   - C1 vs existing `let-property-campaign-formal-disclosure-route-landlords-undisclosed-rental`: existing = formal-disclosure route only; your C1 = full mechanics + quality-of-disclosure framework + prompted-vs-unprompted penalty math
+   - C2 vs existing `schedule-24-fa-2007-penalty-behaviour-categories-landlord-enquiries`: existing = behaviour categorisation; your C2 = mitigation routes + telling/helping/giving reductions + worked examples
+
+Acknowledge with one short status line: "Stage 1 C picked up. Main at 648789a. Reading penalty HP cluster + writing C2 seed first (foundation for C1)."
+
+**Your 3 picks (per picks.yaml):**
+
+- C1: `let-property-campaign-disclosure-mechanics-undeclared-rental-income-2026` — LPC mechanics; voluntary disclosure penalty mitigation; quality-of-disclosure framework; prompted vs unprompted distinctions
+- C2: `schedule-24-fa-2007-careless-deliberate-penalty-mitigation-landlords` — Sched 24 penalty bands (careless/deliberate/concealed); mitigation routes; telling/helping/giving reductions; worked penalty math
+- C3: `hmrc-discovery-assessment-tma-1970-section-29-time-limits-landlords` — TMA 1970 s.29 discovery assessments; 4/6/20-year time limits per ordinary/careless/deliberate; brought-forward losses; staleness doctrine
+
+**Stage 1 brief seed structure (target ~800-1200 words per seed):**
+
+```markdown
+---
+slug: <slug>
+category: landlord-tax-essentials
+intent: <2-3 sentence search intent statement>
+---
+
+# <Working title>
+
+## Statutory anchor
+- Primary: <Act + section, e.g. FA 2007 Sch 24 paras X-Y; TMA 1970 s.29 + s.36>
+- Supporting: <case-law citations + HMRC manuals>
+- House position reference: <§20.2 or §27.2 or §26.9 of house_positions.md, or NEW LOCK NEEDED>
+
+## Framing differentiator
+<For C1 + C2: 2-3 paragraphs grounding the differentiation from the partial-overlap existing pages. Explicit naming of the existing page + the unique angle this new page provides. For C3: standard 1-2 paragraphs.>
+
+## Key questions this page must answer
+1. ...
+2. ...
+3. ...
+(6-10 questions, each tied to statutory anchor; for C1 + C2 include "How does this page differ from <existing-page>?" question explicitly)
+
+## Manager pre-decisions placeholder
+- Category routing: landlord-tax-essentials (confirmed live route)
+- Worked-example numbers: <e.g. penalty calculations must use current rates verified at write time>
+- Cross-link targets: <within Wave 9 — C1/C2/C3 cross-reference each other; to existing penalty/enquiry pages>
+
+## Stage 2 research target list
+- Competitor pages to fetch (live URLs only): <2-4 candidates>
+- HMRC manuals: <CH series for compliance handbook; EM series for enquiry manual>
+- Case-law: <reasonable excuse / careless / deliberate cases — Sched 24 has rich tribunal case-law>
+
+## Universal rules + workflow stubs (Stage 2 fills)
+[Stage 2 populates]
+
+## Work log
+[Stage 2 + RUN session record here]
+```
+
+**Per-write verification (§16.35 critical):** penalty rates + percentages + time-limit cut-off dates change. Every figure you cite (Sched 24 penalty bands percentages; LPC quality-of-disclosure reductions; TMA discovery time limits) must be WebFetch-verified against legislation.gov.uk + the relevant HMRC manual at write time. The Wave 7 §26.9 £30k → £40k threshold change is a recent example of why this matters.
+
+**Within-bucket sequencing:** C2 first (Sched 24 mechanics are foundational for C1's LPC penalty math); then C1 (LPC builds on Sched 24); then C3 (discovery assessment — often the gateway HMRC uses to open a case that ends in Sched 24 penalties).
+
+**Commit discipline:** commit each seed brief as a separate commit on `property-wave9-c` with message format: `Wave 9 Stage 1 C<N>: <slug> seed (Stage 2 to expand)`. Tracker edits go to main via absolute path.
+
+When all 3 seeds committed: report completion.

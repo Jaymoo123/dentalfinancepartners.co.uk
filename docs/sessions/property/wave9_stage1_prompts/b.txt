@@ -1,0 +1,76 @@
+You are Stage 1 Sub-Agent B for Wave 9 of the Property Net-New Program (TEST scope — 9 picks total). Working in worktree `Accounting-wt-property-wave9-b` on branch `property-wave9-b` at HEAD `648789a`. Your bucket: Companies House / ECCTA 2023 reforms (3 brief seeds B1-B3).
+
+Your task: emit 3 Stage 1 brief skeleton files at `briefs/property/wave9/<slug>.md` (absolute path on main, see §16.15 discipline). Each seed brief defines the page's statutory anchors, framing differentiator, key questions, and competitor-research target list — leaving full content for Stage 2.
+
+**Q&A discipline (§16.15 + §16.37 critical):** raise Q's at `C:/Users/user/Documents/Accounting/docs/property/wave9_questions_session_B.md` via ABSOLUTE PATH. Same discipline for tracker, flags, discovery.
+
+**F-numbering range (Bug #2 fix):** when raising flags, use F-numbers **F-10 to F-19** ONLY for your bucket.
+
+Read first, in this order:
+1. `C:/Users/user/Documents/Accounting/docs/property/NETNEW_PROGRAM.md` — §0 norms, §4 brief anatomy, §13.2 flag types, §16.18 reasoning-first cannib, §16.27 rate-by-reference, §16.35 per-write statute verify, §16.36 Stage 2 brief gate
+2. `C:/Users/user/Documents/Accounting/docs/property/house_positions.md` §21 (LtdCo cluster — covers s.455 + corporation tax for property LtdCos) + §21.A (Wave 8 CT three-figure framework) — these are existing LtdCo HP anchors; Wave 9 Bucket B sits adjacent (ECCTA touches all LtdCo PSCs / directors); flag any new HP additions needed for ECCTA/RoE/Companies-House specifically
+3. `C:/Users/user/Documents/Accounting/briefs/property/wave9/picks.yaml` — your 3 picks in Bucket B
+4. `C:/Users/user/Documents/Accounting/docs/property/wave9_cannibalisation_check.md` — Bucket B picks are all clean ✅ net-new (top scores 0.09, 0.22, 0.09); no differentiation framing needed
+5. **CRITICAL: ECCTA 2023 is RECENT statute with PHASED rollout.** The Economic Crime and Corporate Transparency Act 2023 received Royal Assent 26 October 2023. The rollout schedule has been published in tranches; ID verification (Part 1 Chapter 1) entered phased commencement 2024-2026. Your write-time verification must check gov.uk Companies House announcements for current commencement state — DO NOT cite future-tense if a commencement has already happened, and DO NOT cite past-tense if a commencement is still pending. Use the legislation.gov.uk ECCTA 2023 page plus the gov.uk Companies House "Changes to UK company law" page for cross-verification.
+
+Acknowledge with one short status line: "Stage 1 B picked up. Main at 648789a. Reading ECCTA architecture + writing B1 seed first."
+
+**Your 3 picks (per picks.yaml):**
+
+- B1: `eccta-2023-id-verification-mandatory-companies-house-2025-2026-landlord-ltdcos` — ECCTA 2023 Part 1 Chapter 1 ID verification regime; what landlord LtdCo directors + PSCs must do during the phased rollout
+- B2: `register-of-overseas-entities-roe-annual-update-statement-non-resident-landlords` — RoE annual update obligation (RoE 2022 + ECCTA 2023 amendments); sanctions for non-compliance
+- B3: `companies-house-confirmation-statement-changes-2024-onwards-psc-disclosure` — Confirmation statement changes effective 4 March 2024 (per Companies (Registration etc) Regulations 2024); new PSC disclosure + registered email address requirements
+
+**Stage 1 brief seed structure (target ~800-1200 words per seed):**
+
+```markdown
+---
+slug: <slug>
+category: incorporation-and-company-structures
+intent: <2-3 sentence search intent statement>
+---
+
+# <Working title>
+
+## Statutory anchor
+- Primary: <Act + section, e.g. ECCTA 2023 ss.X-Y; Companies Act 2006 s.Z (as amended by ECCTA 2023)>
+- Commencement: <date the relevant provision came into force, with SI reference if applicable>
+- Supporting: <other regulations e.g. Companies (Registration etc) Regulations 2024>
+- House position reference: <§X of house_positions.md, or NEW LOCK NEEDED>
+
+## Commencement-state critical note
+<Mandatory for Bucket B seeds: 1-2 sentences confirming the current commencement state per gov.uk Companies House announcement page (fetched at write time). State the date checked. ECCTA rollout is phased so this matters acutely.>
+
+## Framing differentiator (anti-templating)
+<1-2 paragraphs: what makes this page distinct. Bucket B picks have no close-existing-page overlap so differentiation here is about the angle (operational mechanics for landlord LtdCos specifically, not generic Companies House compliance).>
+
+## Key questions this page must answer
+1. ...
+2. ...
+3. ...
+(6-10 questions, each tied to the statutory anchor or commencement state)
+
+## Manager pre-decisions placeholder
+- Category routing: incorporation-and-company-structures (confirmed live route)
+- Commencement-date verification: <flag any uncertainty here>
+- Cross-link targets: <within Wave 9 or to existing pages>
+
+## Stage 2 research target list
+- Competitor pages to fetch (live URLs only): <2-4 candidates>
+- HMRC / Companies House manuals: <links>
+- Case-law (where applicable): <citations — ECCTA-era case-law is sparse; rely on guidance>
+
+## Universal rules + workflow stubs (Stage 2 fills)
+[Stage 2 populates]
+
+## Work log
+[Stage 2 + RUN session record here]
+```
+
+**Per-write verification (§16.35 critical for Bucket B):** every commencement date you cite must be cross-verified at write time against (a) legislation.gov.uk for the underlying provision and (b) the gov.uk Companies House "Changes to UK company law" page for the rollout state. If a commencement date is uncertain ("expected 2025") flag it explicitly rather than asserting.
+
+**Within-bucket sequencing:** B1 (ID verification — most current news, anchors the ECCTA framework) first; B3 (confirmation statement — references B1's ECCTA framework) second; B2 (RoE — has its own RoE 2022 anchor + ECCTA 2023 amendments) third.
+
+**Commit discipline:** commit each seed brief as a separate commit on `property-wave9-b` with message format: `Wave 9 Stage 1 B<N>: <slug> seed (Stage 2 to expand)`. Tracker edits go to main via absolute path per §16.15.
+
+When all 3 seeds committed: report completion.
