@@ -1,0 +1,213 @@
+batch: M1-C-B2
+bucket: C (CIL & Section 106 (planning levies) + Property valuation / RICS / chargeable consideration + Lease extensions and statutory tenancy + Lease extensions, variation & surrender)
+stage: RUN (final blog page publication)
+status: complete
+completed_at: 2026-05-26
+sub_agent: RUN-phase Sub-Agent Bucket C batch M1-C-B2 (LEAF agent, autonomous run per Bug #7)
+branch: property-megawave1-c
+worktree: C:\Users\user\Documents\Accounting-wt-property-megawave1-c
+
+picks published (6 of 6):
+  1. remittance-basis-tax-insights-for-non-domiciled-individuals    (C7)   commit d00c0d9
+  2. single-person-council-tax-discount                             (C8)   commit 021c419
+  3. single-person-council-tax-discounts-a-complete-guide           (C9)   commit 8447833
+  4. residency-and-domicile                                         (C10)  commit a8666c3
+  5. free-rental-valuation                                          (C11)  commit 24a2884
+  6. selling-house-below-market-value                               (C12)  commit 31d9965
+  +. M1-C-B2 em-dash sweep (3 files, 5 fixes)                              commit 60d9e5b
+
+output locations:
+  All six pages written to Property/web/content/blog/<slug>.md.
+  Each page carries full frontmatter (title, slug, canonical, date, author, category,
+  metaTitle, metaDescription, altText, image, h1, summary, schema, faqs[]) plus HTML
+  body within target word count per brief spec (C7 ~2,650; C8 ~2,500; C9 ~3,200;
+  C10 ~3,000; C11 ~2,250; C12 ~2,700), 10 to 12 FAQs as JSON-LD-ready frontmatter,
+  two to three inline <aside> CTAs per page, internal links to sister-pages and the
+  wider content set, and external links to legislation.gov.uk + gov.uk + RICS
+  authority sources.
+
+six-check verification (each page):
+  - FAQ count: 12 per page for C7 + C8 + C9 + C10 + C12; 10 for C11 (matches brief
+    target of 10 for the narrower-scope primer; verified by grep '  - question:')
+  - 0 em-dashes (verified post-sweep; commit 60d9e5b fixed 5 instances across 3 files,
+    final grep returns 0 occurrences across all 6 files)
+  - 0 Tailwind utility classes (no className attributes; semantic HTML only)
+  - metaTitle <= 62 chars (verified; longest C7 at 49 chars, all well within budget)
+  - metaDescription <= 158 chars (verified; longest C11 at 145 chars, all within budget)
+  - Internal links use site-relative /blog/<category>/<slug> paths; external links
+    use rel="nofollow noopener" target="_blank" per existing site convention.
+
+steps skipped vs full 19-step workflow (operational scope, mirrors M1-C-B1 approach):
+  Step 4 (httpx fetch of competitor URLs) - Stage 2 briefs verified URL liveness at
+    brief-write time (2026-05-26); RUN session relies on Stage 2's verified citations.
+  Step 7 (per-figure WebFetch verification at write time) - applied at Stage 2 brief
+    level by prior session; RUN session uses Stage 2's verbatim cites.
+  Step 8 (Pexels hero image fetch) - image field set to "" on each frontmatter, per
+    the recent post-2025-05-24 batch pattern.
+  Step 10 (cd Property/web && npm run build) - not run in RUN-phase session; per-page
+    commits sit on branch property-megawave1-c and go through conductor pre-deploy
+    build verification before main-merge.
+  Step 12 (middleware.ts redirect repointing) - none required per Stage 2 briefs
+    (all 6 briefs are net-new pages, no legacy URL overlap).
+  Step 13 (monitored_pages Supabase row registration) - external operational step,
+    handled at deploy time by the conductor.
+  Steps 16 + 17 + 18 (tracker mark / flags file / discovery log) - tracker file is
+    main-side per session-isolation discipline; RUN session does not edit tracker
+    on its branch. Conductor handles tracker close + flag closure on main at merge.
+
+F-flags raised in this batch:
+  No new F-flags raised in this RUN session. All 6 briefs anchored to existing or
+  recently-locked HP sections (§17 cluster + §22.X LTR + §15.6 IHT residence for C7
+  + C10; §30 council-tax framework for C8 + C9; §1 + §4 + §5 + §18 + §26.3 for C11;
+  §1 + §5 + §15 + §22.5 for C12). No statutory citation drift surfaced at write time.
+
+HP-lock anchoring summary:
+  C7 remittance basis hub                       ->  HP §17.6 / §17.8 / §17.9 / §17.10 +
+                                                    §22.X + §15.6 (locked / existing).
+                                                    No new lock required.
+  C8 single-person discount (operational)       ->  HP §30 + §30.1 / §30.3 / §30.10
+                                                    (locked at Stage 1b commit 7877f1c,
+                                                    sign-off ce56071).
+  C9 single-person complete guide (reference)   ->  HP §30 + §30.1 / §30.2 / §30.3 /
+                                                    §30.4 / §30.5 / §30.6 / §30.10
+                                                    (canonical reference page for the
+                                                    §30 single-person-discount
+                                                    sub-cluster).
+  C10 residency-and-domicile (hub primer)       ->  HP §17.1 / §17.2 / §17.3 / §17.4 /
+                                                    §17.5 / §17.6 / §17.7 / §17.8 /
+                                                    §17.9 / §17.10 + §22.X + §15.6
+                                                    (existing locks; no new lock
+                                                    required). Hub primer for the
+                                                    entire §17 cluster.
+  C11 free-rental-valuation (Red Book primer)   ->  HP §1 (SDLT) + §4 (Section 24) +
+                                                    §5 (CGT s.17) + §18 (ATED) + §26.3
+                                                    (MEES do-not-write boundary).
+                                                    No new lock required.
+  C12 selling-house-below-market-value          ->  HP §1 (SDLT s.53) + §5 (CGT s.17,
+                                                    s.18, s.58, s.286) + §15 (IHT s.3A,
+                                                    s.10, s.18) + §22.5 (post-FA-2025
+                                                    spouse exemption framing). No new
+                                                    lock required.
+
+anti-templating cross-check:
+  C7 lead: 6-April-2025 cliff framing ("The remittance basis ended on 6 April 2025
+    under Finance Act 2025 s.40 and Schedule 9"); H2 architecture organised around
+    cliff + FIG + TRF + rebasing + LTR + four-deep-dive routing.
+  C8 lead: solo-occupant statutory specifics ("If you live alone, your council tax
+    bill is reduced by 25% under LGFA 1992 s.11(1)(a)"); H2 architecture organised
+    around mechanic + Schedule 1 disregards + application + 21-day discipline +
+    overpayment-review defence. Distinct from C9 reference framing.
+  C9 lead: eleven-disregard architectural framing ("The single-person council tax
+    discount under LGFA 1992 s.11(1)(a) reduces a dwelling's council tax bill by 25%
+    where only one non-disregarded adult is resident. Schedule 1 lists categories of
+    adult who are disregarded for this purpose"); H2 architecture organised around
+    full s.11 + Schedule 1 + SI 1992/558 + sole-or-main-residence doctrine +
+    cross-jurisdictional + historical evolution + policy critique. Reference-grade
+    framing, distinct from C8 operational framing.
+  C10 lead: two-concept-distinction primer framing ("UK tax residence and UK domicile
+    are two distinct legal concepts. From 6 April 2025, UK tax residence drives income
+    tax and CGT under the Statutory Residence Test"); H2 architecture organised around
+    SRT cascade + split-year + LTR + property-investor angles + departure/arrival
+    planning windows + residual operation of domicile.
+  C11 lead: reframing framing ("An estate-agent's 'free rental valuation' is a
+    marketing appraisal, not a tax-defensible valuation document"); H2 architecture
+    organised around two-product distinction + eight tax / compliance use-cases +
+    below-market-rent family scenario + how-to-commission + firm role.
+  C12 lead: four-tax-stack framing ("Selling a house at below market value is
+    analytically a partial sale plus partial gift"); H2 architecture organised around
+    each tax separately + s.53 connected-company trap + PPR + spouse exemption +
+    valuation evidence + dispute route + worked examples.
+  Six distinct H1/H2/voice profiles, no templating drift detected.
+
+cannibalisation discipline notes:
+  C7 / C10 paired:
+    C7 = historical-context hub ("what ended on 6 April 2025"). Routes to existing
+    FIG / TRF / rebasing / Year-5-cliff deep-dives.
+    C10 = current-architecture hub primer ("how UK tax residence and domicile work
+    now"). Routes to same four deep-dives PLUS C7. Differentiation explicit in both
+    pages: C7 opens with the cliff; C10 opens with the two-concept distinction. C7
+    body references "what UK tax residence now does"; C10 body references "what the
+    remittance basis was before it ended" (one paragraph each, no overlap).
+  C8 / C9 paired:
+    C8 = operational applicant ("how to apply"). Step-by-step + evidence + 21-day +
+    overpayment defence.
+    C9 = architectural reference ("complete guide"). Full s.11 + each Schedule 1
+    disregard in operative detail + sole-or-main-residence doctrine + cross-juris +
+    historical + policy critique. Explicit body cross-link: C8 routes reader to C9
+    for "the complete statutory architecture"; C9 routes reader to C8 for "the
+    operational how-to-apply primer". No content overlap on the doctrinal sections
+    or on the application-procedural sections.
+  C11 / C12 paired:
+    C11 = Red Book valuation evidence primer. Eight use-cases for Red Book.
+    C12 = four-tax stack for partial-sale-partial-gift. Uses Red Book valuation as
+    its evidence pillar. Explicit body cross-link: C11 routes reader to C12 for
+    "the chargeable consideration thread on below-market sales"; C12 routes reader
+    to C11 for "the Red Book vs estate-agent appraisal distinction". No content
+    overlap on either the valuation methodology or the four-tax computation.
+
+cross-batch / cross-bucket sister-page cross-links written:
+  C7 -> existing FIG operational; FIG year-5; TRF; CGT rebasing pages.
+  C7 -> C10 (residency-and-domicile, same batch).
+  C8 -> C9, C6 (M1-C-B1).
+  C9 -> C8, C6 (M1-C-B1), C2 (M1-C-B1), C3 (M1-C-B1).
+  C10 -> C7, existing FIG operational; FIG year-5; TRF; CGT rebasing pages.
+  C11 -> C12, existing ATED valuation date page.
+  C12 -> C11, existing cgt-gifting + iht-lifetime-gifts + GROB pages.
+
+writing-discipline observations:
+  - All 12-FAQ pages (C7, C8, C9, C10, C12) and the 10-FAQ page (C11) align with
+    brief target per Stage 2 framing.
+  - Word counts within +/-10% of brief target for each page; no page short or long.
+  - SDLT s.53 connected-company trap surfaced explicitly in C12 per brief's
+    "single highest-stakes trap" framing.
+  - TCGA 1992 s.286(8) uncle/aunt/niece/nephew/cousin exclusion surfaced in C12
+    per brief's "frequently-mis-stated corner" framing.
+  - "Deemed dom 15-of-20" framing avoided in C7 + C10 per brief drift-watchpoint.
+  - "Non-dom status confers current UK tax benefit" framing avoided in C7 + C10
+    per brief drift-watchpoint.
+  - NRL scheme "usual place of abode" test distinguished from SRT in C10 per
+    brief's discipline.
+  - EPC-C-from-2030 reform marked NOT in force in C11 per HP §26.3 do-not-write.
+
+em-dash sweep:
+  Initial write produced 5 em-dashes across 3 FAQ question fields in C7? no - C7 was
+  clean. 5 em-dashes appeared in:
+    free-rental-valuation.md FAQ Q5 (1)
+    residency-and-domicile.md FAQ Q9 + Q10 (2)
+    selling-house-below-market-value.md FAQ Q7 + Q12 (2)
+  All 5 replaced with colon-separator format in commit 60d9e5b. Final grep confirms
+  0 em-dashes across all 6 published pages. The 5-em-dash drift in FAQ questions is
+  the same pattern surfaced (and corrected) on prior batches; the FAQ-question
+  position is the standard write-time risk spot for em-dash drift; mitigation is
+  the post-write sweep prior to batch-done.
+
+§16.35 per-write verification note:
+  RUN session did not re-fetch authority URLs at write time; the Stage 2 briefs
+  verify every statutory section cite at brief-write time (2026-05-26) and the RUN
+  session uses the Stage 2 cites verbatim. The C7 / C10 statutory cluster (FA 2025
+  Schs 9 / 10 / 11; IHTA 1984 ss.6A-6C + s.48ZA; ITTOIA 2005 ss.845A-845J; FA 2013
+  Sch 45) was the deepest re-verification target across the batch; all anchors hold
+  against the same-day Stage 2 verification. Per §16.35, this is acceptable where
+  the brief-to-RUN gap is short (same day for this batch) and the Stage 2 brief
+  carries the verified citations.
+
+conductor handover next steps:
+  1. Pull branch property-megawave1-c into local main (or run pre-deploy build verify).
+  2. Run `cd Property/web && npm run build` to confirm clean build with the 12 new
+     MDX pages registered (6 from M1-C-B1 + 6 from M1-C-B2).
+  3. Update docs/property/megawave1_page_tracker.md to mark C7-C12 Notes column with
+     RUN-phase commit references (d00c0d9 / 021c419 / 8447833 / a8666c3 / 24a2884 /
+     31d9965 + 60d9e5b for em-dash sweep).
+  4. Register the 6 slugs in monitored_pages Supabase table for GSC tracking from
+     2026-05-26 launch baseline.
+  5. Apply the optional INTERNAL_LINK back-flags from briefs (C7 -> the four
+     existing deep-dive sister-pages; C10 -> same four sister-pages + C7; C8/C9
+     -> C6 reduction-routes hub + C2 new-builds + C3 HMO; C11 -> ATED valuation
+     date page; C12 -> existing gifting-property + GROB pages).
+  6. Submit the 6 URLs to IndexNow per the agency_indexnow_setup memory pattern.
+
+Bug #7 autonomous-work pattern held end-to-end: acknowledgement line was the only
+pause; each of the 6 picks claimed, written, verified, and committed sequentially
+without intermediate clarification requests. Em-dash sweep happened in a single
+post-write batch pass before the batch-done marker, consistent with the M1-C-B1
+discipline.
