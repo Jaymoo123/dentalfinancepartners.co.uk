@@ -44,8 +44,113 @@ The slug phrasing "a-complete-guide-on-multiple-dwellings-relief-eligibility-and
 - Case-law to ground: Fiander and Brower v HMRC [2021] UKFTT 190 (TC08020) — annexe-as-separate-dwelling test for MDR; subsequent Upper Tribunal decision; Mudan / MHB / Brown line (broader SDLT classification stance for context); Project Blue [2018] UKSC 30 (anti-avoidance backdrop).
 - Stage 2 manager pre-check: confirm A20 framing to avoid this page being functionally duplicative; coordinate H2 structures across A1 / A2 / A3 / A20 within this M1-A bucket.
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes); LeadForm + aside-CTA architecture; FAQs frontmatter + FAQPage JSON-LD; cannibalisation cross-link discipline (this page has heavy cross-link load — at least 4 internal links to MDR-family pages); quality bar (word count 2,800-3,400 — this is the historical-architecture page so it carries the para-by-para Sch 6B walk-through; FAQs 12-15; external authority links 8-10 — historical statute snapshot plus case-law; build clean; six verifications); anti-templating discipline (lead with explicit historical badge; NOT with "Multiple Dwellings Relief is a relief that..."; structure around the para-by-para statutory walk-through plus enquiry-defence architecture, NOT around forward-looking planning).]
+## Closest existing pages (cannibalisation context)
+
+Read each before writing. A3 must badge as historical from line 1 and stay in the pre-abolition statutory-architecture lane; do NOT re-walk post-abolition mechanics.
+
+1. `Property/web/content/blog/multiple-dwellings-relief-abolition-fa-2024-transitional-rules-landlords.md` — Wave 9 operational architecture, post-abolition. A3 forward-links here for "what replaces MDR" question.
+2. `Property/web/content/blog/welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition.md` — Welsh LTT MDR survives (similar pre-abolition SDLT architecture). A3 forward-links for cross-border survival mechanics.
+3. Sister-picks in this MegaWave: A1 `abolishment-of-multiple-dwelling-relief` (plain-language on-ramp — light forward-link); A2 `abolition-of-multiple-dwellings-relief-mdr-raises-concerns` (policy-debate — light forward-link); future A20 `multiple-dwellings-relief` (canonical-spelling sister-slot — Stage 2 manager pre-check noted potential duplication risk; coordinate H2s to differentiate — A3 = historical-architecture deep-dive; A20 likely = transitional-cohort-only operational).
+
+Differentiation logic: A3 = pre-abolition statutory architecture deep-dive (Sch 6B para-by-para walk-through + enquiry defence). Wave 9 = post-abolition operational. A1 = plain-language. A2 = policy debate. A3 is the **only** lane covering the historical Sch 6B architecture; structural overlap risk: HIGHEST against A20 (manage by sequencing — write A3 first, then A20 from A3's complement).
+
+## Redirect overlap
+
+Checked against `Property/web/src/middleware.ts` (511 lines) on 2026-05-26: NO existing 301/302 redirect targets share slug-token overlap with `a-complete-guide-on-multiple-dwellings-relief-eligibility-and-benefits`. No repointing required on launch (step 12 no-op). RUN session re-verifies at write.
+
+## Authority links (SDLT bucket — historical Sch 6B snapshot + case-law — pick at least 8 at write time)
+
+**Primary statute (historical pre-abolition snapshot at legislation.gov.uk):**
+- FA 2003 Sch 6B as in force 31 May 2024 (the operative pre-abolition text): https://www.legislation.gov.uk/ukpga/2003/14/schedule/6B/2024-05-31
+- FA 2011 Sch 22 (original MDR introduction): https://www.legislation.gov.uk/ukpga/2011/11/schedule/22
+- F(No.2)A 2024 s.7 (abolition, for the boundary cite): https://www.legislation.gov.uk/ukpga/2024/12/section/7
+- FA 2003 s.119 (effective date): https://www.legislation.gov.uk/ukpga/2003/14/section/119
+- FA 2003 s.44 (substantial performance — load-bearing for transitional cohort): https://www.legislation.gov.uk/ukpga/2003/14/section/44
+- FA 2003 s.108 (linked transactions — load-bearing for MDR aggregation): https://www.legislation.gov.uk/ukpga/2003/14/section/108
+- FA 2007 Sch 24 (penalty regime for incorrect claims): https://www.legislation.gov.uk/ukpga/2007/11/schedule/24
+
+**HMRC SDLT Manual (verify at write — historical sections may have been updated to reflect abolition):**
+- SDLTM29900+ (MDR — pre-abolition architecture, transitional context post-abolition): https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm29900
+- SDLTM29905 (definition of "dwelling" for MDR): https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm29905
+- SDLTM07550 (linked transactions): https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm07550
+
+**Case-law (annexe-as-dwelling jurisprudence — load-bearing for this brief):**
+- Fiander and Brower v HMRC [2021] UKFTT 190 (TC08020) — annexe-as-separate-dwelling test; key dwelling-definition authority: https://www.bailii.org/uk/cases/UKFTT/TC/2021/TC08020.html (BAILII; verify at write)
+- Fiander and Brower v HMRC [2023] UKUT 22 (TCC) — Upper Tribunal appeal (verify reference and BAILII URL at write)
+- Hyman v HMRC [2022] EWCA Civ 185 (mixed-use post-Bewley narrowing — illustrates HMRC enquiry stance more broadly): https://www.bailii.org/ew/cases/EWCA/Civ/2022/185.html
+- Brewer v HMRC and Doe v HMRC — additional dwelling-definition FTT decisions (search BAILII at write for current citations)
+- P N Bewley Ltd v HMRC [2019] UKFTT 65: https://www.bailii.org/uk/cases/UKFTT/TC/2019/TC06951.html (verify)
+- Project Blue Ltd v HMRC [2018] UKSC 30 (anti-avoidance backdrop): https://www.bailii.org/uk/cases/UKSC/2018/30.html
+
+**Gov.uk procedural:**
+- SDLT calculator (historical rate-table reference where reader is computing pre-abolition transitional claim): https://www.tax.service.gov.uk/calculate-stamp-duty-land-tax/
+
+## Competitor URLs (Stage 2 candidates — RUN verifies liveness at write time)
+
+Pre-abolition MDR explainers are NOW STALE. Read for historical-architecture reference but FLAG any candidate that fails to badge as historical — drift-catch source NOT borrow-pattern source.
+
+1. Saffery historical MDR guide: https://www.saffery.com/insights/articles/multiple-dwellings-relief/ (verify; if URL has been retired, search SDLTM29905 / dwelling-definition replacements)
+2. BDO pre-abolition MDR explainer: https://www.bdo.co.uk/en-gb/insights/tax/property-tax/multiple-dwellings-relief
+3. RSM UK historical MDR brief: https://www.rsmuk.com/insights/real-estate-and-construction/multiple-dwellings-relief
+4. Forbes Dawson historical MDR notes: https://forbesdawson.co.uk/insights — search MDR
+5. PKF Smith Cooper / similar mid-market firm historical guides: search at write
+6. STEP / Society of Trust and Estate Practitioners (for transitional-claim defence and PR-route MDR scenarios): https://www.step.org/
+
+RUN session: any candidate citing "the relief is currently available" without a historical badge should be discarded; current commentary should reflect abolition. Use such candidates only as drift-catch evidence in the work-log.
+
+## Universal rules (verbatim per NETNEW_PROGRAM §4.8)
+
+- **Voice.** No em-dashes anywhere in user-facing copy (body, FAQs, meta title, meta description). Use commas, parentheses, full stops, middle dots, or sentence rewrites. Specific over generic. Named legislation over hand-waving. Anonymised personas (Patel-estate / Mawell-Estate / Singh) for the worked examples. No named claimants from the case-law where the case is illustrative; cite Fiander / Brewer / Doe by case-name as those are public judgments.
+- **Lead-gen architecture.** LeadForm auto-injected at footer. Inline CTAs use `<aside>` styled by global CSS. Place at conversion moments (after the transitional-cohort decision tree; after the enquiry-defence section).
+- **CSS in markdown.** Semantic HTML only. No Tailwind classes in body.
+- **FAQs.** 12-15 for this page (longer scope: para-by-para architecture + enquiry defence).
+- **Cannibalisation discipline.** Heavy cross-link load — at least 4 internal links to MDR-family pages (Wave 9, A1, A2, Welsh-LTT survival). Forward-link from A3's enquiry-defence section to A4 surcharge-refund routes for adjacent procedural mechanics. **A20 sister-slot risk: if A20 ships before A3 reaches the historical-architecture sections, coordinate via tracker note + Q&A.**
+- **House-position anchors.** Cite §1, §1.A, §1.H verbatim. **Critical:** A3 must NOT contradict §1's stated abolition position by treating MDR as live. Frame strictly as "for the transitional-cohort or enquiry-defence audience".
+- **Anti-templating.** Open with the historical badge ("Multiple Dwellings Relief was abolished by Finance (No.2) Act 2024 s.7 for transactions with an effective date on or after 1 June 2024. This guide covers the pre-abolition architecture for transitional claims and HMRC enquiry defence; for post-abolition planning see the linked Wave 9 architecture page."). H2 structure: para-by-para Sch 6B walk-through (para 2 / para 3 / paras 4-5 / para 5A / paras 6-7), then enquiry-defence architecture (annexe-not-dwelling challenges; dwelling-count inflation; mixed-use re-characterisation), then transitional-cohort decision tree.
+- **Quality bar.** (i) 0 em-dashes. (ii) 0 Tailwind. (iii) FAQ schema == frontmatter `faqs:` length. (iv) Meta title ≤ 62. (v) Meta description ≤ 158. (vi) Internal links resolve. Body word count target 2,800-3,400 (deeper-than-usual scope).
+- **Per-write figure verification (§16.35).** WebFetch gov.uk at write time for any numeric figure; verify pre-abolition Sch 6B snapshot URL still resolves to the 31 May 2024 timestamp.
+
+## The 19-step workflow (verbatim per NETNEW_PROGRAM §7)
+
+1. Read `docs/property/house_positions.md` once at session start; locate §1, §1.A, §1.H (MDR abolition framing).
+2. Claim this page in `docs/property/megawave1_page_tracker.md`: flip ⬜ todo → 🟡 in_progress with UTC timestamp via ABSOLUTE PATH.
+3. Re-read this brief: framing differentiator (historical-architecture lane), closest-existing pages, redirect overlap (none), authority links, key questions.
+4. Fetch each shortlisted competitor URL via `httpx + BeautifulSoup`. Discard 404s and post-abolition-misframing pages.
+5. Read closest-existing pages (Wave 9 + Welsh-LTT survival) end-to-end. A3 stays in pre-abolition historical-architecture lane; forward-link others.
+6. Plan H2 outline: historical badge → para-by-para Sch 6B → enquiry-defence architecture → transitional-cohort decision tree → cross-links to post-abolition alternatives. Meta title (≤62) + meta description (≤158) + FAQs (12-15) + inline CTAs.
+7. Verify each factual claim against legislation.gov.uk (especially the 31 May 2024 Sch 6B snapshot) + HMRC SDLT Manual + case-law via BAILII.
+8. Fetch hero image from Pexels.
+9. Write the markdown file at `Property/web/content/blog/a-complete-guide-on-multiple-dwellings-relief-eligibility-and-benefits.md` with full frontmatter.
+10. Build clean: `cd Property/web && npm run build`.
+11. Six verifications per Universal rules.
+12. Redirect repointing in `Property/web/src/middleware.ts` — NO redirect overlap (no-op). Re-verify at write.
+13. Register in Supabase `monitored_pages` (bucket="megawave1-A").
+14. **Commit on session branch (`property-megawave1-a`).** Per-page commit. Message: `Megawave 1 Bucket A: ship a-complete-guide-on-multiple-dwellings-relief-eligibility-and-benefits (A3, historical-architecture tier)`.
+15. Fill per-page work-log below.
+16. Mark `✅ done` in tracker via ABSOLUTE PATH.
+17. Append site-wide issues to `docs/property/megawave1_site_wide_flags.md` (F-1..F-49).
+18. Append discoveries to session discovery log.
+19. Claim next page from this batch OR write batch-done marker if final.
+
+**Critical order: step 14 (commit) before step 16 (mark done).**
 
 ## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+
+**Stage 2 (this pass, 2026-05-26):**
+- Statutory citations verified per Stage 1 seed timestamps; §16.36 brief-citation gate satisfied. The pre-abolition Sch 6B historical snapshot URL (`/ukpga/2003/14/schedule/6B/2024-05-31`) is the load-bearing citation for this brief — RUN session must verify it still resolves at write time.
+- Redirect overlap: searched `Property/web/src/middleware.ts` on 2026-05-26 — no overlap for this slug.
+- Closest-existing pages confirmed present in `Property/web/content/blog/`.
+- §1.L (MDR historical eligibility architecture) flagged in Stage 1 seed as a possible new HP-lock candidate. Stage 2 verdict: NOT needed — existing §1.H Wave 9 lock + the historical Sch 6B snapshot are sufficient anchors. If RUN session surfaces a substantial historical-architecture claim needing locked support beyond the snapshot, raise via Q&A.
+- A20 coordination risk surfaced in Stage 1 seed — if A20 enters this batch or a parallel batch before A3 ships, RUN session reads A20 brief first and coordinates H2s.
+
+**RUN session (populate at write time):**
+- Decisions (slug confirmed / overridden + rationale; category; H1; meta title; meta description; why these vs alternatives):
+- Competitor URLs fetched + key takeaway per URL (FLAG any candidate failing to badge as historical):
+- Closest-existing review (overlap pattern; differentiation decision; A20 sequencing check; back-link flag):
+- Citations added (count + breakdown legislation.gov.uk historical snapshot / HMRC SDLTM / BAILII case-law):
+- Internal `/blog/...` links added:
+- Inline `<aside>` CTA placements:
+- Build attempts (pass/fail per attempt; resolution if any failed):
+- Six verifications (each: pass/fail + value):
+- Flags raised (F-numbers + summary; or "none"):
+- 2-3 sentence summary:
