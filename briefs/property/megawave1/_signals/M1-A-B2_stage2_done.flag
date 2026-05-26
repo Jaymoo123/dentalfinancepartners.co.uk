@@ -1,0 +1,54 @@
+batch: M1-A-B2
+bucket: A (SDLT — surcharges and reliefs + Second homes & council tax premium)
+stage: 2 (full brief extension)
+status: complete
+completed_at: 2026-05-26
+sub_agent: Stage 2 Sub-Agent Bucket A (LEAF agent, autonomous run per Bug #7)
+
+picks extended (6 of 6):
+  1. applicable-sdlt-rates-for-first-time-buyers                                          (A7)   commit e706c47
+  2. archer-uk-limited-vs-revenue-scotland-ftt-rules-no-lbtt-charge-for-lease-extension   (A8)   commit 8eaeb3a
+  3. averdieck-case-analysis-navigating-sdlt-and-public-rights-of-way                     (A9)   commit 4977041
+  4. first-time-buyer-relief-benefits-and-eligibility-requirements                        (A10)  commit a50dcf9
+  5. first-time-buyer-relief-calculator                                                   (A11)  commit ae2d9cc
+  6. first-time-buyer-relief-overcome-down-payment                                        (A12)  commit 99e7f31
+
+F-flags raised to conductor:
+  F-9  BRIEF_DRIFT  A8 Archer UK Ltd v Revenue Scotland precise FTT citation unconfirmed (Scottish FTSTC)
+
+cross-batch recommendation to conductor:
+  F-9 sits in the same case-citation-verification cluster as F-2 (A14) + F-4 (A15) + F-6 (A16).
+  A single citation-verification sub-agent dispatch could resolve all four ahead of RUN-phase
+  page writing. F-9 is the Scottish Tax Chamber decision; F-2/F-4/F-6 are GOV.UK / BAILII FTT
+  Tax Chamber decisions. Two retrieval surfaces but the dispatch shape is the same.
+
+HP-lock anchoring summary:
+  A7 + A10 + A11 + A12 (4 FTB-relief picks)   → §1.K MW1 mini-lock (locked 2026-05-26 upstream)
+  A8 (Archer Scottish lease-extension)        → §31 lease-extension cluster lock (added 2026-05-26 at Stage 1b HP-lock pass; closed F-101; supersedes Stage 1 seed's §1.L candidate). §31.4 SDLT-treatment section + §31.8 anchored-pages list explicitly name A8.
+  A9 (Averdieck PROW/mixed-use)               → §1.J Wave 9 mixed-use case-law trilogy lock as-is. F-3 (raised by M1-A-B3) already proposes extending §1.J operational framework with a PROW sub-bullet OR opening §1.M; A9 inherits that pending conductor decision.
+
+Q&A: none raised. Bug #7 autonomous-work pattern held — no pause between picks after the initial acknowledgement line.
+
+§16.36 brief-statutory-citation cross-check gate: PASSED. All FTB-relief picks (A7/A10/A11/A12)
+have all 7-9 Sch 6ZA / FA 2003 / F(No.2)A 2024 / FA 2018 citations verified against §1.K (which
+itself was locked 2026-05-26 with full statutory verification). A8 anchors on §31's verified
+LBTT(S)A 2013 + FA 2003 Sch 17A para 9 + FA 2003 s.45 citation set. A9 anchors on §1.J's
+verified s.116 + s.55 Table B + case-law-trilogy citation set (Hyman F-6 correction trail
+preserved in §1.J). The only outstanding case-citation gap is A8 Archer (raised as F-9) — and
+the parallel A9 Averdieck citation gap, which the seed flagged as a Stage 2 retrieval task that
+will fall to RUN-time fetching given the leaf-agent time budget.
+
+§16.31 URL liveness: deferred to RUN-time per-page step 4 (URL fetch). Competitor URL classes
+codified per brief (Saffery / BDO / RSM / Crowe / ICAEW / MSE / Which? for FTB-relief picks;
+Scottish-tax-law firms + GOV.UK FTT + BAILII for the case-analysis picks; gov.uk LISA / Help
+to Buy ISA for A12's deposit-side section). Live verification at write time.
+
+§16.35 per-write verification mandate carried forward into each brief's RUN-session workflow:
+A7/A10/A11/A12 must verify post-1-April-2025 standard residential bands + Sch 6ZA paras 1, 4,
+6, 6A-6D, 6(3) at write time. A11 (calculator) has an extra mandate to cross-check every
+worked-example arithmetic against the gov.uk SDLT calculator output. A12 has an extra mandate
+to re-verify LISA + Help to Buy ISA parameters against gov.uk (Stage 1 DRIFT_WATCHPOINT
+preserved). A8 has the Archer-citation lock as its critical first task. A9 has the Averdieck-
+citation lock as its critical first task.
+
+ready for: RUN dispatch when conductor closes F-flags + signs off Stage 2 batch.
