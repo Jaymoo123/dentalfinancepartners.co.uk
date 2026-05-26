@@ -30,15 +30,15 @@
 | ✅ | A16 | `horton-hall-sdlt-case-residential-vs-non-residential-dispute` | SDLT — surcharges and reliefs | M1-A-B3 | | | Stage 1 seed (M1-A-B3) |
 | ✅ | A17 | `how-owning-property-abroad-leads-higher-stamp-duty-rates` | SDLT — surcharges and reliefs | M1-A-B3 | | | Stage 1 seed (M1-A-B3) |
 | ✅ | A18 | `labour-plans-stamp-duty-hike-for-overseas-buyers` | SDLT — surcharges and reliefs | M1-A-B3 | | | Stage 1 seed (M1-A-B3) |
-| ⬜ | A19 | `land-and-buildings-transaction-tax-multiple-dwellings-relief` | SDLT — surcharges and reliefs | M1-A-B4 | | | |
+| ✅ | A19 | `land-and-buildings-transaction-tax-multiple-dwellings-relief` | SDLT — surcharges and reliefs | M1-A-B4 | | | Stage 1 seed (M1-A-B4); F-1 BRIEF_DRIFT raised against A1 (Scotland-LBTT-MDR mis-statement) |
 | ⬜ | A20 | `multiple-dwellings-relief` | SDLT — surcharges and reliefs | M1-A-B4 | | | |
 
 ## Session B - SDLT — Scottish / Welsh equivalents + FHL — abolition and transitional rules (18 picks)
 
 | Status | Pos | Slug | Cluster | Batch | Body words | FAQs | Notes |
 |---|---|---|---|---|---|---|---|
-| ⬜ | B1 | `essential-guide-for-first-time-homebuyers-in-scotland` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | |
-| ⬜ | B2 | `higher-rates-of-land-transaction-tax-a-complete-guide` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | |
+| ✅ | B1 | `essential-guide-for-first-time-homebuyers-in-scotland` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | Stage 1 seed bbde200 |
+| ✅ | B2 | `higher-rates-of-land-transaction-tax-a-complete-guide` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | Stage 1 seed 82ef3ff |
 | ⬜ | B3 | `land-transaction-tax-a-complete-guide` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | |
 | ⬜ | B4 | `bare-trusts-and-lbtt-relief-availability` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | |
 | ⬜ | B5 | `lbtt-acquisition-relief-when-corporate-takeovers-reduce-tax` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | |
@@ -60,7 +60,7 @@
 
 | Status | Pos | Slug | Cluster | Batch | Body words | FAQs | Notes |
 |---|---|---|---|---|---|---|---|
-| ⬜ | C1 | `a-complete-guide-on-community-infrastructure-levy-cil` | CIL & Section 106 (planning levies) | M1-C-B1 | | | |
+| ✅ | C1 | `a-complete-guide-on-community-infrastructure-levy-cil` | CIL & Section 106 (planning levies) | M1-C-B1 | | | Stage 1 seed 83d0866 |
 | ⬜ | C2 | `council-tax-for-new-builds` | CIL & Section 106 (planning levies) | M1-C-B1 | | | |
 | ⬜ | C3 | `government-to-end-council-tax-on-hmo-rooms` | CIL & Section 106 (planning levies) | M1-C-B1 | | | |
 | ⬜ | C4 | `is-increasing-council-tax-damaging-the-housing-market` | CIL & Section 106 (planning levies) | M1-C-B1 | | | |
