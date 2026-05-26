@@ -47,8 +47,204 @@ This master-hub framing is the cluster-organising play: every dedicated Welsh-LT
 - HMRC manuals to cite: none - LTT is Welsh Revenue Authority jurisdiction. Use gov.wales LTT manuals and Welsh Revenue Authority guidance directly. SDLTM must not be cited for Welsh content.
 - Case-law to ground: limited at LTT level (Welsh Tax Tribunal caseload is still building post-2018 commencement). Stage 2 search the Welsh Tax Tribunal for any reported decisions on the effective-date test, the £40k threshold, or the replacement-of-main-residence exception.
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 - voice (no em-dashes; commas, parentheses, full stops, middle dots only); lead-gen architecture (LeadForm auto-injected; aside-styled CTAs only); schema (FAQs in frontmatter; FAQPage JSON-LD auto-emitted; target 10-12 for this master-hub page given the breadth); cannibalisation cross-link discipline (link OUT to every Welsh-LTT deep page); house-position anchors (§23.1 + §23.2 + §23.3 + §23.8 + §23.9 + §23.10 + §23.11); quality bar (word count 3,000-3,400 for this master-hub tier; FAQs 10-12; external authority links 8-10; build clean; six verifications); anti-templating discipline (lead with the four-nation positioning rather than "Land Transaction Tax is a Welsh tax that...").]
+## Stage 2 verification note (§16.36 statutory cross-check)
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+**Drift catch closed at Stage 2 (2026-05-26):** Stage 1 seed flagged LTTA 2017 s.41 as the return / 30-day-window section. WebFetch verification against legislation.gov.uk on 2026-05-26 confirms the correct cite is **LTTA 2017 s.44 "Duty to make a return"** (Part 6 Returns and Payments). s.41 is in Part 5 (Application to Certain Persons and Bodies). RUN session must cite s.44 throughout this page and NOT s.41. Companion flag raised as F-52 against the HP §23.10 citation block (back-patch needed; non-blocking).
+
+---
+
+## Competitor URLs (Stage 2 populated 2026-05-26; URL liveness verified at fetch time per §16.31)
+
+**Fetch + read + extract instruction:** Standard `httpx.get(url, follow_redirects=True, timeout=30, headers={"User-Agent": "Mozilla/5.0"})` + `BeautifulSoup(html, "lxml")`. Extract treatment of: (a) the four-nation positioning (LTT vs SDLT vs LBTT vs NI-uses-SDLT); (b) the £225,000 nil-rate band (materially higher than SDLT's £125k and LBTT's £145k); (c) the MDR-retained-but-modified position (post-7-Feb-2025 carve-out + post-13-Feb-2026 3% floor); (d) the no-non-resident-surcharge + no-FTB-relief positions in Wales; (e) the 30-day return discipline under s.44. RUN session flags any competitor copy that asserts a Welsh non-resident surcharge or a Welsh FTB regime (both drift catches per §23.11).
+
+- https://www.gov.wales/land-transaction-tax-rates-and-bands (gov.wales rates and bands, authoritative)
+- https://www.gov.wales/calculation-land-transaction-tax-payable-technical-guidance (calculation technical guidance)
+- https://www.gov.wales/higher-rates-land-transaction-tax-overview (higher rates overview)
+- https://www.hughjames.com/insight/land-transaction-tax-wales-guide/ (Hugh James comprehensive guide)
+- https://www.geldards.com/our-thinking/welsh-ltt-complete-guide/ (Geldards complete-guide explainer)
+- https://www.charlesrussellspeechlys.com/en/insights/welsh-land-transaction-tax-overview/ (Charles Russell Speechlys Welsh-LTT overview for adviser tone)
+
+**Borrowable patterns:** four-nation comparison-table layout; section-by-section LTT cluster signposting; reliefs catalogue. Do NOT borrow competitor assertions of an upper FTB cap (no FTB regime in Wales), a non-resident surcharge (none in Wales), or a UK-wide MDR abolition (MDR survives in Wales with modifications).
+
+---
+
+## GSC data
+
+*Net-new page; primary topical queries expected: "land transaction tax Wales", "Welsh LTT guide", "what is LTT", "LTT vs SDLT", "Welsh stamp duty", "Welsh Revenue Authority LTT", "LTT rates 2026", "Welsh property tax".*
+
+---
+
+## Closest existing pages (cannibalisation context)
+
+- `welsh-land-transaction-tax-ltt-rates-bands-2026-27-residential-buyers` (cannibal score ~0.45, the residential-rate-table-focused page; **cross-link as the rates deep-dive**; B3 sits above as the master hub; differentiation = comprehensive hub vs rate-table-focused)
+- `welsh-ltt-higher-rates-residential-second-homes-additional-properties-surcharge-mechanics` (~0.30, higher-rates-and-surcharge-mechanics page; **cross-link as the higher-rates deep-dive**)
+- `welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition` (~0.22, MDR-survives angle; **cross-link as the MDR deep-dive**)
+- `welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland` (~0.18, cross-jurisdictional FTB comparison; **cross-link from the no-Welsh-FTB-regime FAQ**)
+- `welsh-ltt-derelict-uninhabitable-property-refund-relief-claim-mechanics` (~0.15, derelict-property refund mechanics; **cross-link from the reliefs section**)
+- Sibling M1-B briefs: `higher-rates-of-land-transaction-tax-a-complete-guide` (B2), `ltt-calculator` (B11), `ltt-higher-rates-for-spouses-minor-children-and-trust-interests` (B8), `ltt-refunds-for-derelict-or-uninhabitable-properties` (B9), `understanding-alternative-finance-arrangements-under-lbtt` (B10 — note LBTT not LTT, but cluster-adjacent).
+
+**Cannibalisation discipline:**
+- B3 is the **canonical master hub** — every Welsh-LTT cluster page should link UP to B3, and B3 should link DOWN to each.
+- Do NOT re-walk the deep mechanics of higher rates, MDR, or refunds inside B3 — refer outward to the dedicated pages.
+- Use the section-end "where to read more" cross-link pattern at each H2 closing.
+
+---
+
+## Redirect overlap (on launch)
+
+No existing slug matches B3's master-hub scope. No middleware edit required on initial launch.
+
+---
+
+## Authority links worth considering (Stage 2 populated 2026-05-26; session selects 8-10)
+
+**Statutory (LTTA 2017):**
+- LTTA 2017 contents (verified verbatim 2026-05-26): https://www.legislation.gov.uk/anaw/2017/1/contents
+- LTTA 2017 s.2 (charge to LTT): https://www.legislation.gov.uk/anaw/2017/1/section/2
+- LTTA 2017 s.10 (effective date): https://www.legislation.gov.uk/anaw/2017/1/section/10
+- LTTA 2017 s.24 (residential rate-setting power): https://www.legislation.gov.uk/anaw/2017/1/section/24
+- LTTA 2017 s.25 (non-residential rate-setting power): https://www.legislation.gov.uk/anaw/2017/1/section/25
+- LTTA 2017 s.44 (duty to make a return, 30-day window, **corrected at Stage 2 from seed's s.41**): https://www.legislation.gov.uk/anaw/2017/1/section/44
+- LTTA 2017 s.66 (GAAR): https://www.legislation.gov.uk/anaw/2017/1/section/66
+- LTTA 2017 Sch 5 (higher residential rates): https://www.legislation.gov.uk/anaw/2017/1/schedule/5
+- LTTA 2017 Sch 7 (partnership relief, mirrors FA 2003 Sch 15): https://www.legislation.gov.uk/anaw/2017/1/schedule/7
+- LTTA 2017 Sch 16 (group relief, mirrors FA 2003 Sch 7): https://www.legislation.gov.uk/anaw/2017/1/schedule/16
+- LTTA 2017 Sch 19 (charities relief): https://www.legislation.gov.uk/anaw/2017/1/schedule/19
+- LTTA 2017 Sch 22 (cross-border apportionment): https://www.legislation.gov.uk/anaw/2017/1/schedule/22
+- Tax Collection and Management (Wales) Act 2016 (overpayment relief + admin): https://www.legislation.gov.uk/anaw/2016/6/contents
+
+**Regulations:**
+- Land Transaction Tax (Tax Bands and Tax Rates) (Wales) (Amendment) Regulations 2024 (1 ppt higher-rate uplift, 11 Dec 2024).
+- Land Transaction Tax (Modification of Multiple Dwellings Relief) (Wales) Regulations 2025 (subsidiary-dwelling carve-out, 7 Feb 2025).
+- Land Transaction Tax (Modification of Relief for Acquisitions Involving Multiple Dwellings) (Wales) Regulations 2026 (3% minimum-rate floor, 13 Feb 2026).
+
+**gov.wales guidance (authoritative for LTT, NOT HMRC SDLTM):**
+- LTT rates and bands: https://www.gov.wales/land-transaction-tax-rates-and-bands
+- Calculation technical guidance: https://www.gov.wales/calculation-land-transaction-tax-payable-technical-guidance
+- Higher rates overview: https://www.gov.wales/higher-rates-land-transaction-tax-overview
+- Higher rates technical guidance: https://www.gov.wales/higher-rates-purchases-residential-property-technical-guidance
+
+**Cross-references in house_positions.md:** §23.1 main residential bands; §23.2 higher residential rates table + £40k threshold + 3-year window; §23.3 Welsh MDR retained-but-modified + non-residential bands + no s.116(7) equivalent; §23.8 cross-jurisdictional comparison table; §23.9 PTP angles (cross-border portfolios, replacement timing, ADS differential, non-resident planning); §23.10 citation block (**§23.10 s.41 cite to be back-patched to s.44 via F-52**); §23.11 do-not-write list (no non-resident surcharge in Wales; no FTB regime in Wales; UK-wide MDR abolition false).
+
+---
+
+## Universal rules (do not skip)
+
+**§16.35 per-write verification (mandatory):** Re-verify at write time against legislation.gov.uk + gov.wales: (a) the five main residential bands (0% / 6% / 7.5% / 10% / 12%) and their thresholds (£225k / £400k / £750k / £1.5m); (b) the six higher-rate bands (5% / 8.5% / 10% / 12.5% / 15% / 17%) and the 11 December 2024 commencement; (c) the four non-residential bands (0% / 1% / 5% / 6%) and thresholds; (d) the 30-day return window under **s.44** (not s.41 as in the seed); (e) the absence of a Welsh non-resident surcharge AND a Welsh FTB regime; (f) the Welsh MDR retained-but-modified status (7 Feb 2025 + 13 Feb 2026 amendments); (g) the LTTA 2017 commencement date 1 April 2018.
+
+### Voice
+- **No em-dashes.** Commas, parentheses, full stops, middle dots only.
+- Master-hub tone, comprehensive overview written for both buyers AND advisers (the page should serve as the entry-point for either audience).
+- Worked examples using £225k / £275k / £400k / £550k / £750k / £1.2m Welsh-property price points spread across the bands.
+- Anonymised personas only (no real client names).
+- Named statute every time a rate or rule is asserted (LTTA 2017 with section/schedule).
+- Use "Wales" / "Welsh" precisely; do NOT slip into "the UK" framing when describing LTT.
+
+### Lead-gen architecture
+- LeadForm auto-injected at footer; never duplicate in body.
+- `<aside>` styled by global CSS; no Tailwind utility classes inline. Semantic HTML only.
+
+### CTA placement guidance (per this page)
+- 2 to 3 inline `<aside>` CTAs:
+  - After the main residential rates section (high-intent: owner-occupier modelling)
+  - After the higher rates + MDR section (high-intent: BTL / portfolio buyer)
+  - Optionally after the cross-border-apportionment section (high-intent: cross-border buyer with Welsh + English land)
+- Vary opening; lead with the four-nation positioning ("Land Transaction Tax is Wales's property-transfer tax, one of four UK property-transfer-tax regimes...") NOT with "Land Transaction Tax is a Welsh tax that...".
+
+### Schema
+- FAQs in frontmatter; FAQPage JSON-LD auto-emitted. Target 12 to 14 for this master-hub tier (cluster breadth). Include explicit FAQs on the no-FTB-in-Wales position, the no-non-resident-surcharge position, and the MDR-survives-in-Wales position.
+
+### Cannibalisation
+- B3 is the canonical hub — cross-link DOWN to every Welsh-LTT deep page:
+  - `welsh-land-transaction-tax-ltt-rates-bands-2026-27-residential-buyers`
+  - `welsh-ltt-higher-rates-residential-second-homes-additional-properties-surcharge-mechanics`
+  - `welsh-ltt-multiple-dwellings-relief-bulk-purchases-mechanics-survives-vs-sdlt-abolition`
+  - `welsh-ltt-first-time-buyer-relief-mechanics-eligibility-comparison-england-scotland`
+  - `welsh-ltt-derelict-uninhabitable-property-refund-relief-claim-mechanics`
+- Cross-link sibling M1-B briefs: B2 higher-rates-complete-guide; B8 LTT-higher-rates-trust-interests; B9 LTT-refunds-derelict; B11 LTT calculator.
+- Cross-link cross-jurisdictional master pages: SDLT master hub + the future B6 LBTT review for the four-nation comparison reader.
+
+### House positions
+- §23.1 + §23.2 + §23.3 + §23.8 + §23.9 + §23.10 + §23.11 all primary anchors for the master-hub scope.
+
+### Quality bar
+- Body word count: 3,000 to 3,400 (master-hub tier; pillar-class breadth).
+- FAQs: 12 to 14.
+- External authority links: 8 to 10.
+- Build clean: `cd Property/web && npm run build`.
+- All six verifications.
+
+### Anti-templating
+- Differentiator is the **master-hub four-nation positioning** with downward cross-links to every dedicated deep page. Write to it.
+- Lead with the four-nation context (LTT, SDLT, LBTT, NI-uses-SDLT) — NOT with "Land Transaction Tax is the Welsh tax that...".
+- Vary H2s from any sibling page; hub-led structure ("The four-nation property-transfer-tax landscape", "Main residential rates 2026/27", "Higher rates", "Multiple Dwellings Relief in Wales", "Non-residential rates", "Reliefs", "Returns and filing", "Cross-border transactions", "GAAR", "Comparing LTT, SDLT, and LBTT").
+- Vary FAQ phrasing across pages.
+
+---
+
+## Workflow (per page; claim ONE page at a time, verbatim 19 steps)
+
+1. Read `house_positions.md` once. §23.1 + §23.2 + §23.3 + §23.8 + §23.9 + §23.10 + §23.11 all primary.
+2. Claim in tracker (⬜ to 🟦 + UTC timestamp).
+3. Read this brief end-to-end. **Note the Stage 2 §16.36 drift catch: cite s.44 not s.41.**
+4. Fetch competitor URLs via httpx + BeautifulSoup. Note any drift against §23.X positions.
+5. Read closest existing pages (full Welsh-LTT cluster + sibling M1-B briefs). Confirm hub-vs-deep-dive split.
+6. Plan H2 outline + meta + FAQs + CTA placements. Hub-led structure.
+7. Verify factual claims; **per §16.35: re-verify the 13 figures listed above; verify s.44 30-day return position; verify all four schedule cites (Sch 5, 7, 16, 19, 22) via legislation.gov.uk**.
+8. Fetch hero image. Query suggestion: "cardiff bay" or "welsh property" or "south wales houses".
+9. Write markdown at `Property/web/content/blog/land-transaction-tax-a-complete-guide.md` with full frontmatter.
+10. Build: `cd Property/web && npm run build`.
+11. Run the six verifications.
+12. No middleware edit required on initial launch.
+13. Register in `monitored_pages`.
+14. **Commit on `property-megawave1-b` branch.** Commit message: `MegaWave 1 RUN B: land-transaction-tax-a-complete-guide page (M1-B-B1)`.
+15. Fill in the work-log below.
+16. Mark ✅ done in tracker.
+17. Append site-wide flags to `megawave1_site_wide_flags.md` (F-50 to F-99).
+18. Append discoveries to `megawave1_discovery_log_session_B.md`.
+19. Claim next page.
+
+---
+
+## Per-page work-log (fill in as you go)
+
+### Decisions
+- **Final slug:**
+- **Final category:**
+- **H1 chosen:**
+- **Meta title chosen:**
+- **Meta description chosen:**
+- **Why these vs other options:**
+
+### Competitor URLs fetched
+- 
+
+### Existing-page review
+- 
+
+### Citations added
+- 
+
+### Internal links added
+- 
+
+### Inline CTA placements
+- 
+
+### Build attempts
+- 
+
+### Verification
+- em-dash count:
+- Tailwind utility classes:
+- metaTitle length:
+- metaDescription length:
+- FAQ count:
+- Internal links resolve:
+- Body word count:
+
+### Flags raised to megawave1_site_wide_flags.md
+- 
+
+### 2-3 sentence summary
+-
