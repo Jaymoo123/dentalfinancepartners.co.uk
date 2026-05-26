@@ -1442,7 +1442,7 @@ The 4-nation comparison must be precise. Sessions writing on Welsh or Scottish p
 - SDLT effective date: substantially-performed-or-completed test under FA 2003 s.44 (often equates to completion).
 - LTT effective date: LTTA 2017 s.10, same substantial-performance test.
 - LBTT effective date: LBTT(S)A 2013 s.10, same substantial-performance test.
-- Returns due: SDLT 14 days from effective date (FA 2003 s.76); LTT 30 days (LTTA 2017 s.41); LBTT 30 days (LBTT(S)A 2013 s.29). The SDLT 14-day clock is shorter than both devolved equivalents.
+- Returns due: SDLT 14 days from effective date (FA 2003 s.76); LTT 30 days (LTTA 2017 s.44 — Duty to make a return, Part 6); LBTT 30 days (LBTT(S)A 2013 s.29). The SDLT 14-day clock is shorter than both devolved equivalents. (F-52 close 2026-05-26: prior cite of LTTA 2017 s.41 was incorrect — s.41 sits in Part 5; the operative returns provision is s.44 in Part 6.)
 
 ### 23.9 Tax implications for landlords (Property Tax Partners angle)
 
