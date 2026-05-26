@@ -31,7 +31,7 @@
 | ✅ | A17 | `how-owning-property-abroad-leads-higher-stamp-duty-rates` | SDLT — surcharges and reliefs | M1-A-B3 | | | Stage 1 seed (M1-A-B3) |
 | ✅ | A18 | `labour-plans-stamp-duty-hike-for-overseas-buyers` | SDLT — surcharges and reliefs | M1-A-B3 | | | Stage 1 seed (M1-A-B3) |
 | ✅ | A19 | `land-and-buildings-transaction-tax-multiple-dwellings-relief` | SDLT — surcharges and reliefs | M1-A-B4 | | | Stage 1 seed (M1-A-B4); F-1 BRIEF_DRIFT raised against A1 (Scotland-LBTT-MDR mis-statement) |
-| ⬜ | A20 | `multiple-dwellings-relief` | SDLT — surcharges and reliefs | M1-A-B4 | | | |
+| ✅ | A20 | `multiple-dwellings-relief` | SDLT — surcharges and reliefs | M1-A-B4 | | | Stage 1 seed (M1-A-B4); canonical three-jurisdiction hub; reinforces F-1 HP-extension need |
 
 ## Session B - SDLT — Scottish / Welsh equivalents + FHL — abolition and transitional rules (18 picks)
 
@@ -39,7 +39,7 @@
 |---|---|---|---|---|---|---|---|
 | ✅ | B1 | `essential-guide-for-first-time-homebuyers-in-scotland` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | Stage 1 seed bbde200 |
 | ✅ | B2 | `higher-rates-of-land-transaction-tax-a-complete-guide` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | Stage 1 seed 82ef3ff |
-| ⬜ | B3 | `land-transaction-tax-a-complete-guide` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | |
+| ✅ | B3 | `land-transaction-tax-a-complete-guide` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | Stage 1 seed 7368f19 |
 | ⬜ | B4 | `bare-trusts-and-lbtt-relief-availability` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | |
 | ⬜ | B5 | `lbtt-acquisition-relief-when-corporate-takeovers-reduce-tax` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | |
 | ⬜ | B6 | `lbtt-review-in-scotland` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | |
