@@ -62,5 +62,88 @@ Target length 2,000-2,400 words. Tone: policy-and-mechanics explainer with stron
 ## Universal rules + workflow stubs (Stage 2 fills)
 [Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes; policy-and-mechanics tone with strong practical thread; reader audience: HMO landlords, tenants, advisers, letting agents); lead-gen architecture (LeadForm + aside-CTAs after the "Retrospective review" section and after the "What should a landlord do" section — high-intent reader often holding a pre-reform per-room banding bill or planning a new HMO acquisition); schema (FAQs in frontmatter; FAQPage JSON-LD; 12 FAQs); cannibalisation cross-link discipline (heavy cross-link with the existing HMO content set); house-position anchors (§26.9 HMO + selective licensing Wave 7 lock cross-referenced; NEW HP-LOCK §29 candidate); quality bar (word count 2,000-2,400; FAQs 12; external authority links 8-10; build clean; six verifications); anti-templating (lead with the **operative statute + commencement date** — "From 1 December 2023, the Council Tax (Chargeable Dwellings and Liability for Owners) (Amendment) (England) Regulations 2023 (SI 2023/1175) inserted article 3C into SI 1992/549 requiring HMOs to be treated as a single dwelling for council tax. The pre-reform VOA practice of per-room banding ended at that date in England" — NOT with "The government has changed the council tax rules for HMOs" which is vague and dateless).]
 
-## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+## Stage 2 extension (M1-C-B1, locked 2026-05-26)
+
+### Stage 1b HP-lock status (drift catch from seed)
+
+Seed proposed "NEW HP-LOCK NEEDED, §29 Council tax framework." Verified at Stage 2 against `house_positions.md` 2026-05-26: §29 is occupied by the "VAT for property" Wave 8 architectural anchor cluster. The actual council-tax HP lock is **§30 "Council tax framework, LGFA 1992 + SI 1992/558 architecture, MW1 extension (locked 2026-05-26)"**, anchoring C2 + C3 + C4 + C6 + C8 + C9 explicitly at §30.7. §30.5 (HMO and owner-liability mechanics) is the operative cross-reference for C3. Companion lock §26.9 (HMO + selective licensing, Housing Act 2004 Parts 2 + 3, Wave 7) is referenced for the licensing-side companion content. RUN session anchors C3 to §30 + §26.9 (NOT a §29 lock, which does not exist). F-101 (council-tax §29→§30 numbering drift) now closed by Stage 1b §30 lock.
+
+### Final competitor URLs (3-5, Stage 2 verifies live at write time per §16.31)
+
+1. https://www.gov.uk/government/news/council-tax-on-hmos-government-acts-to-protect-renters-and-landlords (MHCLG / DLUHC policy announcement, the operational definitive source)
+2. https://www.nrla.org.uk/news/government-confirms-hmo-council-tax-banding-reform (NRLA landlord-trade-press treatment)
+3. https://propertyindustryeye.com/voa-confirms-end-of-room-by-room-banding-of-hmos-from-december-2023/ (Property Industry Eye on the VOA practice end)
+4. https://www.lexology.com/library/detail.aspx?g=hmo-council-tax-reform-2023 (Lexology / specialist legal practitioner briefing)
+5. https://www.gov.uk/government/publications/council-tax-the-chargeable-dwellings-and-liability-for-owners-amendment-england-regulations-2023 (gov.uk policy paper accompanying SI 2023/1175)
+
+### Final authority links (5-8 per §4.7)
+
+1. SI 2023/1175 Council Tax (Chargeable Dwellings and Liability for Owners) (Amendment) (England) Regulations 2023: https://www.legislation.gov.uk/uksi/2023/1175/contents/made
+2. SI 1992/549 Council Tax (Chargeable Dwellings) Order 1992 (consolidated): https://www.legislation.gov.uk/uksi/1992/549
+3. SI 1992/551 Council Tax (Liability for Owners) Regulations 1992: https://www.legislation.gov.uk/uksi/1992/551
+4. Housing Act 2004 s.254 (HMO definition): https://www.legislation.gov.uk/ukpga/2004/34/section/254
+5. Housing Act 2004 s.55 (HMO licensing scope): https://www.legislation.gov.uk/ukpga/2004/34/section/55
+6. SI 1992/558 Council Tax (Exempt Dwellings) Order 1992 (Class N student exemption interaction): https://www.legislation.gov.uk/uksi/1992/558
+7. LGFA 1992 s.3 (definition of dwelling): https://www.legislation.gov.uk/ukpga/1992/14/section/3
+8. VOA Council Tax Manual (HMO classification + retrospective review): https://www.gov.uk/guidance/council-tax-manual
+
+### Closest existing pages (cannibalisation context per §4.5)
+
+Token-similarity assessment performed at Stage 2 against current main inventory:
+
+1. `hmo-tax-guide-rental-income-deductions-multi-tenant` (landlord-tax-essentials, similarity ~0.45). Existing sister-page on HMO income-tax side. NO council-tax single-dwelling rule coverage; the income-tax / accounting / capital-allowances / licensing topics are sister-page material. **Differentiation:** C3 covers the council-tax SI 2023/1175 reform specifically; cross-link from C3 + back-flag the existing page to add a C3 reference as an INTERNAL_LINK candidate at step 17.
+2. `hmo-landlord-accounting-multi-tenant-property-tax` (landlord-tax-essentials, similarity ~0.40). Sister-page on HMO accounting. **Differentiation:** C3 is the council-tax-banding paper; this is the accounting / rent-recovery paper. Heavy cross-link.
+3. `hmo-selective-licensing-compliance-housing-act-2004-landlord-licensing-mechanics` (landlord-tax-essentials, similarity ~0.50). Closest-adjacent on licensing-side HMO mechanics; HA 2004 s.55 + s.254 definitional overlap. **Differentiation:** C3 anchors the s.254 broader test for council-tax purposes; the existing page anchors the s.61 narrower test for mandatory-licensing purposes; explicit distinction-of-tests note in C3 with cross-link.
+4. `incorporating-hmo-portfolio-to-limited-company` (incorporation-and-company-structures, similarity ~0.30). Sister-page on HMO incorporation. **Differentiation:** C3 is council-tax banding; this is incorporation. Light cross-link only where the single-dwelling rule changes the SPV's owner-liability profile.
+5. `property-business-rates-council-tax-landlords` (property-types-and-specialist-tax, similarity ~0.32). Existing regime-distinction page mentioning HMOs briefly. **Differentiation:** C3 is the dedicated SI 2023/1175 reform page; cross-link plus back-flag for INTERNAL_LINK update.
+
+**No CANNIBAL flag.** C3 occupies clean topical space; heavy cross-linking required across the HMO content set.
+
+### Redirect overlap
+
+No existing 429 middleware redirect overlaps `government-to-end-council-tax-on-hmo-rooms`. Verified by inspection of middleware.ts redirect map at Stage 2. No redirect action required at step 12.
+
+### Universal rules (per §4.8, verbatim)
+
+- **Voice.** No em-dashes (commas, parentheses, full stops, middle dots only). Specific. Named legislation. Anonymised personas (Patel-HMO-landlord, Singh-letting-agent, etc.). No real client names or specific firm / agency / tenant dispute references.
+- **Lead-gen architecture.** LeadForm auto-injected at footer by BlogPostRenderer; never duplicate in body. Inline `<aside>` CTAs at conversion moments only, after the "Retrospective review" section and after the "What should a landlord do" section per Manager pre-decisions.
+- **CSS in markdown.** Semantic HTML only. No Tailwind utility classes. `<aside>` styled by global CSS at `Property/web/src/app/globals.css`.
+- **FAQs.** 12 FAQs in frontmatter `faqs:` array; auto-emitted as FAQPage JSON-LD by the renderer. Vary phrasing per page.
+- **Cannibalisation discipline.** Read the closest-existing pages above before writing; differentiate by the framing differentiator; cross-link rather than overlap.
+- **Anti-templating.** Per-page framing differentiator. Vary H2 structure across the council-tax cluster (C2 / C3 / C4 / C6 must NOT read like four versions of the same page). Vary opening sentence, FAQ phrasing, worked-example personas.
+- **Quality bar.** Six verifications at step 11. Body word count 2,000-2,400.
+
+### 19-step per-page workflow (verbatim, per §7)
+
+1. Read `house_positions.md` once at session start (§30 council tax framework + §26.9 HMO licensing companion lock are operative anchors for C3).
+2. Claim ONE page in the wave tracker (⬜ todo → 🟡 in_progress + UTC timestamp).
+3. Read the brief (framing differentiator, closest existing, redirect overlap, authority links).
+4. Fetch + read each competitor URL with httpx + BeautifulSoup.
+5. Read closest-existing pages on our site (the full HMO content set).
+6. Plan H2/H3 outline + meta + FAQs + CTA placements (vary per page, anti-templating).
+7. Verify factual claims against authorities (legislation.gov.uk, gov.uk, VOA manual). **§16.35 mandate: WebFetch every numeric figure + every statutory section cite at write time before committing. Particular focus for C3: SI 2023/1175 in-force date (reg 1(2): 1 December 2023); HA 2004 s.254 current text; any post-2023 VOA practice-note refinements on the HMO-vs-self-contained-flats line; current Scottish + Welsh equivalent positions for comparator notes.**
+8. Fetch hero image from Pexels via `fetch_image_for_post(query)`.
+9. Write the markdown file at `Property/web/content/blog/<slug>.md` (full frontmatter list).
+10. Build clean: `cd Property/web && npm run build`.
+11. Six verifications: FAQ schema count match, 0 em-dashes, 0 Tailwind classes, meta title ≤62, meta description ≤158, internal links resolve.
+12. Apply redirect repointing in `middleware.ts` if brief lists overlap (none for C3).
+13. Register the new page in `monitored_pages` Supabase table.
+14. **Commit on session's branch** (per-page commit; do NOT merge to main).
+15. Fill in per-page work-log at bottom of brief.
+16. Mark ✅ done in tracker with 1-line Notes.
+17. Append site-wide issues to wave's flags file (e.g., INTERNAL_LINK back-flags to the existing HMO content set recommending C3 reference).
+18. Append discoveries to session's discovery log.
+19. Claim next page.
+
+### Per-page work-log (RUN session populates)
+
+- **Decisions (slug, category, H1, meta title, why these vs alternatives):** [RUN session fills]
+- **Competitor URLs fetched + key takeaway per URL:** [RUN session fills]
+- **Existing-page review (overlap, differentiation decision):** [RUN session fills]
+- **Citations added:** [RUN session fills]
+- **Internal links added:** [RUN session fills]
+- **Inline CTA placements:** [RUN session fills]
+- **Build attempts (pass/fail):** [RUN session fills]
+- **Verification (each of the six checks):** [RUN session fills]
+- **Flags raised:** [RUN session fills, prefix F-100..F-149 for this bucket]
+- **2-3 sentence summary:** [RUN session fills]
