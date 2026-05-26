@@ -23,7 +23,7 @@
 | ✅ | A9 | `averdieck-case-analysis-navigating-sdlt-and-public-rights-of-way` | SDLT — surcharges and reliefs | M1-A-B2 | | | Stage 1 seed (M1-A-B2) |
 | ✅ | A10 | `first-time-buyer-relief-benefits-and-eligibility-requirements` | SDLT — surcharges and reliefs | M1-A-B2 | | | Stage 1 seed (M1-A-B2) |
 | ✅ | A11 | `first-time-buyer-relief-calculator` | SDLT — surcharges and reliefs | M1-A-B2 | | | Stage 1 seed (M1-A-B2) |
-| ⬜ | A12 | `first-time-buyer-relief-overcome-down-payment` | SDLT — surcharges and reliefs | M1-A-B2 | | | |
+| ✅ | A12 | `first-time-buyer-relief-overcome-down-payment` | SDLT — surcharges and reliefs | M1-A-B2 | | | Stage 1 seed (M1-A-B2) |
 | ⬜ | A13 | `first-time-buyer-relief-understanding-tax-credits-and-deductions` | SDLT — surcharges and reliefs | M1-A-B3 | | | |
 | ⬜ | A14 | `ftt-confirms-residential-sdlt-rates-for-leasehold-with-garden-easement` | SDLT — surcharges and reliefs | M1-A-B3 | | | |
 | ⬜ | A15 | `ftt-refuses-late-sdlt-appeal-where-appellants-chose-not-to-seek-professional-advice` | SDLT — surcharges and reliefs | M1-A-B3 | | | |
