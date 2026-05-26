@@ -40,38 +40,38 @@
 | ✅ | B1 | `essential-guide-for-first-time-homebuyers-in-scotland` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | Stage 1 seed bbde200 |
 | ✅ | B2 | `higher-rates-of-land-transaction-tax-a-complete-guide` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | Stage 1 seed 82ef3ff |
 | ✅ | B3 | `land-transaction-tax-a-complete-guide` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | Stage 1 seed 7368f19 |
-| ⬜ | B4 | `bare-trusts-and-lbtt-relief-availability` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | |
-| ⬜ | B5 | `lbtt-acquisition-relief-when-corporate-takeovers-reduce-tax` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | |
-| ⬜ | B6 | `lbtt-review-in-scotland` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | |
-| ⬜ | B7 | `limits-on-ads-repayment-ftt-clarifies-disposal-in-replacement-of-main-residence` | SDLT — Scottish / Welsh equivalents | M1-B-B2 | | | |
-| ⬜ | B8 | `ltt-higher-rates-for-spouses-minor-children-and-trust-interests` | SDLT — Scottish / Welsh equivalents | M1-B-B2 | | | |
-| ⬜ | B9 | `ltt-refunds-for-derelict-or-uninhabitable-properties` | SDLT — Scottish / Welsh equivalents | M1-B-B2 | | | |
-| ⬜ | B10 | `understanding-alternative-finance-arrangements-under-lbtt` | SDLT — Scottish / Welsh equivalents | M1-B-B2 | | | |
-| ⬜ | B11 | `ltt-calculator` | SDLT — Scottish / Welsh equivalents | M1-B-B2 | | | |
-| ⬜ | B12 | `ltd-property-spreadsheet` | SDLT — Scottish / Welsh equivalents | M1-B-B2 | | | |
-| ⬜ | B13 | `abolition-of-furnished-holiday-lettings-fhl-what-individual-owners-needs-to-know` | FHL — abolition and transitional rules | M1-B-B3 | | | |
-| ⬜ | B14 | `impact-of-fhl-tax-abolition-on-pension-contributions-key-insights-strategies` | FHL — abolition and transitional rules | M1-B-B3 | | | |
-| ⬜ | B15 | `understanding-the-taxation-of-fhls-in-a-company` | FHL — abolition and transitional rules | M1-B-B3 | | | |
-| ⬜ | B16 | `vat-on-furnished-holiday-lettings-fhl` | FHL — abolition and transitional rules | M1-B-B3 | | | |
-| ⬜ | B17 | `big-tax-changes-ahead-for-furnished-holiday-lettings` | FHL — abolition and transitional rules | M1-B-B3 | | | |
-| ⬜ | B18 | `end-of-the-furnished-holiday-letting-regime` | FHL — abolition and transitional rules | M1-B-B3 | | | |
+| ✅ | B4 | `bare-trusts-and-lbtt-relief-availability` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | Stage 1 seed ca43a17 |
+| ✅ | B5 | `lbtt-acquisition-relief-when-corporate-takeovers-reduce-tax` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | Stage 1 seed 674e6cf |
+| ✅ | B6 | `lbtt-review-in-scotland` | SDLT — Scottish / Welsh equivalents | M1-B-B1 | | | Stage 1 seed ca9cdcc |
+| ✅ | B7 | `limits-on-ads-repayment-ftt-clarifies-disposal-in-replacement-of-main-residence` | SDLT — Scottish / Welsh equivalents | M1-B-B2 | | | Stage 1 seed e603f4e |
+| ✅ | B8 | `ltt-higher-rates-for-spouses-minor-children-and-trust-interests` | SDLT — Scottish / Welsh equivalents | M1-B-B2 | | | Stage 1 seed 1c5df1b |
+| ✅ | B9 | `ltt-refunds-for-derelict-or-uninhabitable-properties` | SDLT — Scottish / Welsh equivalents | M1-B-B2 | | | Stage 1 seed 98e8d5e; soft cannib pair flag F-50 |
+| ✅ | B10 | `understanding-alternative-finance-arrangements-under-lbtt` | SDLT — Scottish / Welsh equivalents | M1-B-B2 | | | Stage 1 seed 92c77d0; surfaces §23.X alt-finance mini-lock candidate |
+| ✅ | B11 | `ltt-calculator` | SDLT — Scottish / Welsh equivalents | M1-B-B2 | | | Stage 1 seed f5a2fee |
+| ✅ | B12 | `ltd-property-spreadsheet` | SDLT — Scottish / Welsh equivalents | M1-B-B2 | | | Stage 1 seed 4497efb; lane-mis-clustered (true topic = Incorporation), flag F-51 |
+| ✅ | B13 | `abolition-of-furnished-holiday-lettings-fhl-what-individual-owners-needs-to-know` | FHL — abolition and transitional rules | M1-B-B3 | | | Stage 1 seed 861a1c3 |
+| ✅ | B14 | `impact-of-fhl-tax-abolition-on-pension-contributions-key-insights-strategies` | FHL — abolition and transitional rules | M1-B-B3 | | | Stage 1 seed d48bc64 |
+| ✅ | B15 | `understanding-the-taxation-of-fhls-in-a-company` | FHL — abolition and transitional rules | M1-B-B3 | | | Stage 1 seed 18e5e09 |
+| ✅ | B16 | `vat-on-furnished-holiday-lettings-fhl` | FHL — abolition and transitional rules | M1-B-B3 | | | Stage 1 seed ce4c26c |
+| ✅ | B17 | `big-tax-changes-ahead-for-furnished-holiday-lettings` | FHL — abolition and transitional rules | M1-B-B3 | | | Stage 1 seed 964510b |
+| ✅ | B18 | `end-of-the-furnished-holiday-letting-regime` | FHL — abolition and transitional rules | M1-B-B3 | | | Stage 1 seed 8cd9181 |
 
 ## Session C - CIL & Section 106 (planning levies) + Property valuation / RICS / chargeable consideration + Lease extensions and statutory tenancy + Lease extensions, variation & surrender (15 picks)
 
 | Status | Pos | Slug | Cluster | Batch | Body words | FAQs | Notes |
 |---|---|---|---|---|---|---|---|
 | ✅ | C1 | `a-complete-guide-on-community-infrastructure-levy-cil` | CIL & Section 106 (planning levies) | M1-C-B1 | | | Stage 1 seed 83d0866 |
-| ⬜ | C2 | `council-tax-for-new-builds` | CIL & Section 106 (planning levies) | M1-C-B1 | | | |
-| ⬜ | C3 | `government-to-end-council-tax-on-hmo-rooms` | CIL & Section 106 (planning levies) | M1-C-B1 | | | |
-| ⬜ | C4 | `is-increasing-council-tax-damaging-the-housing-market` | CIL & Section 106 (planning levies) | M1-C-B1 | | | |
-| ⬜ | C5 | `making-a-disclosure-using-the-worldwide-disclosure-facility` | CIL & Section 106 (planning levies) | M1-C-B1 | | | |
-| ⬜ | C6 | `reduce-your-council-tax-bill-in-the-uk` | CIL & Section 106 (planning levies) | M1-C-B1 | | | |
-| ⬜ | C7 | `remittance-basis-tax-insights-for-non-domiciled-individuals` | CIL & Section 106 (planning levies) | M1-C-B2 | | | |
-| ⬜ | C8 | `single-person-council-tax-discount` | CIL & Section 106 (planning levies) | M1-C-B2 | | | |
-| ⬜ | C9 | `single-person-council-tax-discounts-a-complete-guide` | CIL & Section 106 (planning levies) | M1-C-B2 | | | |
-| ⬜ | C10 | `residency-and-domicile` | CIL & Section 106 (planning levies) | M1-C-B2 | | | |
-| ⬜ | C11 | `free-rental-valuation` | Property valuation / RICS / chargeable consideration | M1-C-B2 | | | |
-| ⬜ | C12 | `selling-house-below-market-value` | Property valuation / RICS / chargeable consideration | M1-C-B2 | | | |
-| ⬜ | C13 | `lease-extension-vs-freehold-purchase` | Lease extensions and statutory tenancy | M1-C-B3 | | | |
+| ✅ | C2 | `council-tax-for-new-builds` | CIL & Section 106 (planning levies) | M1-C-B1 | | | Stage 1 seed 7ce0aad |
+| ✅ | C3 | `government-to-end-council-tax-on-hmo-rooms` | CIL & Section 106 (planning levies) | M1-C-B1 | | | Stage 1 seed 5a8d5bb |
+| ✅ | C4 | `is-increasing-council-tax-damaging-the-housing-market` | CIL & Section 106 (planning levies) | M1-C-B1 | | | Stage 1 seed 4526736 |
+| ✅ | C5 | `making-a-disclosure-using-the-worldwide-disclosure-facility` | CIL & Section 106 (planning levies) | M1-C-B1 | | | Stage 1 seed b749433 |
+| ✅ | C6 | `reduce-your-council-tax-bill-in-the-uk` | CIL & Section 106 (planning levies) | M1-C-B1 | | | Stage 1 seed 1eb3af0 |
+| ✅ | C7 | `remittance-basis-tax-insights-for-non-domiciled-individuals` | CIL & Section 106 (planning levies) | M1-C-B2 | | | Stage 1 seed 2858d4d |
+| ✅ | C8 | `single-person-council-tax-discount` | CIL & Section 106 (planning levies) | M1-C-B2 | | | Stage 1 seed 6d70b7a; F-100 raised (HP §30 council-tax framework lock proposed) |
+| ✅ | C9 | `single-person-council-tax-discounts-a-complete-guide` | CIL & Section 106 (planning levies) | M1-C-B2 | | | Stage 1 seed 5facb1d; inherits F-100 §30 proposal |
+| ✅ | C10 | `residency-and-domicile` | CIL & Section 106 (planning levies) | M1-C-B2 | | | Stage 1 seed 0215542; hub primer for §17 cluster |
+| ✅ | C11 | `free-rental-valuation` | Property valuation / RICS / chargeable consideration | M1-C-B2 | | | Stage 1 seed 1b119ee; reframes lead-magnet query for tax/compliance context |
+| ✅ | C12 | `selling-house-below-market-value` | Property valuation / RICS / chargeable consideration | M1-C-B2 | | | Stage 1 seed bc8c8be; hybrid partial-sale-partial-gift framing |
+| ✅ | C13 | `lease-extension-vs-freehold-purchase` | Lease extensions and statutory tenancy | M1-C-B3 | | | Stage 1 seed (M1-C-B3); F-101 raised (HP §1.K + §1.L lease-extension / enfranchisement / variation locks proposed) |
 | ⬜ | C14 | `lease-extensions-in-the-uk-surrender-and-regrant` | Lease extensions and statutory tenancy | M1-C-B3 | | | |
 | ⬜ | C15 | `lease-variation-and-lease-surrender` | Lease extensions, variation & surrender | M1-C-B3 | | | |

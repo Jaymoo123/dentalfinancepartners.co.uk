@@ -96,3 +96,21 @@ Both section numbers are **already occupied** in `docs/property/house_positions.
 **No-block discipline:** C7 (committed 2026-05-26 as 2858d4d) avoided the drift by anchoring exclusively to the existing §17 cluster (HP §17.6 + §17.8 + §17.9 + §17.10 + §22.X + §15.6). C8 (committed 2026-05-26 as 6d70b7a) explicitly proposes §30 in the brief. C9 + the remaining council-tax briefs inherit the §30 proposal. Conductor decision at Stage 1b: confirm or override §30 / §31 numbering, then C1 + C6 + C8 + C9 briefs' "House position reference" lines are back-patched to the agreed number at Stage 2.
 
 ---
+
+## [F-101] HOUSE_POSITION_EXTENSION — Lease-extension / enfranchisement statutory architecture HP-lock needed (§1.K proposed)
+
+**Raised by:** MW1 Bucket C batch M1-C-B3 (Stage 1 sub-agent), 2026-05-26.
+**Type:** HOUSE_POSITION_EXTENSION.
+**Affected briefs:** C13 (`lease-extension-vs-freehold-purchase`), C14 (`lease-extensions-in-the-uk-surrender-and-regrant`), C15 (`lease-variation-and-lease-surrender`); cross-bucket adjacency with the existing M1-A-B2 `archer-uk-limited-vs-revenue-scotland-ftt-rules-no-lbtt-charge-for-lease-extension-granted-under-sdlt` seed and the existing site page `sdlt-leasehold-extension-vs-fresh-purchase` (currently anchored to §1 general).
+
+**Gap:** the house-positions file currently has no dedicated lease-extension / enfranchisement / lease-variation HP-lock. The existing §1.A through §1.J Wave-7-to-Wave-9 mini-locks cover SDLT-specific clusters (partnership SLP, MDR abolition, HRAD surcharge, residential-vs-mixed-use line) but none anchor the underlying LRA 1967 + LRHUDA 1993 + LFRA 2024 statutory architecture that governs the lease-extension / freehold-acquisition decision and the surrender-and-regrant doctrine. Three Bucket C briefs in this batch (C13 / C14 / C15) plus one Bucket A seed (M1-A-B2 Archer) plus one existing site page all need a shared anchor.
+
+**Resolution proposed at Stage 1b:**
+
+- New **§1.K "Lease extension and freehold acquisition statutory architecture — LRA 1967 (houses: enfranchisement under ss.1-9, extension under ss.14-15) + LRHUDA 1993 Part 1 Chapter I (collective enfranchisement of flats — ss.1, 13, 32 + Sch 6 valuation) + Part 1 Chapter II (individual flat lease extension — ss.39, 42, 56 + Sch 13 valuation) + LFRA 2024 Part 2 reform overlay (2-year qualifying-period abolition + 990-year extension term + marriage-value abolition + deferment-rate regulation power)"** — covering the statutory routes, eligibility tests, valuation formulae, and the LFRA 2024 reform package commencement schedule.
+- New **§1.L "Lease variation surrender-and-regrant doctrine — FA 2003 Sch 17A para 9 + overlap relief Sch 17A para 9(2A) + corresponding LBTT(S)A 2013 Sch 19 paras 13-14 + LTTA 2017 Sch 6 paras 19-22"** — anchoring the SDLT / LBTT / LTT treatment of lease variations across the three jurisdictions. (Note: the §1.L number was previously proposed by the M1-A-B2 Archer brief seed for a different but overlapping topic ("SDLT-to-LBTT transitional boundary"); Stage 1b conductor decides whether (a) the transitional-boundary lock is folded into the broader §1.L variation-doctrine lock proposed here, or (b) one of the two locks is renumbered.)
+- The collective-enfranchisement SDLT special calculation under FA 2003 s.74 (divide total consideration by number of qualifying flats; apply standard rates to per-flat fraction; multiply back up) is sub-lemma of §1.K and does not need a separate lock; it sits inside §1.K alongside the LRHUDA 1993 Chapter I framework.
+
+**No-block discipline:** C13 (committed 2026-05-26 — this seed) anchors to §1 main + §1.I + §1.J + proposed §1.K. C14 and C15 (this batch) and the existing M1-A-B2 Archer seed and the existing `sdlt-leasehold-extension-vs-fresh-purchase` page all back-patch to the agreed numbering at Stage 1b conductor decision. Stage 2 brief expansion verifies the LFRA 2024 commencement-order position before writing rate-by-reference content.
+
+---
