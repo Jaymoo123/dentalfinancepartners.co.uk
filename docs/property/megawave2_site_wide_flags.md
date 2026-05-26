@@ -87,3 +87,24 @@ The MW2 A8 seed (this batch) covers CT group-relief eligibility (the prior quest
 **How to apply.** Stage 2 writers on A8 (this seed) + future associated-company / group-structure pages thread to §21.8 once locked. If not locked by Stage 1b, each writer self-sources CTA 2010 Part 5 + Sch 18 + FA 2003 Sch 7 + CTA 2009 Part 9A + CTA 2010 s.18D-J + CTA 2010 Part 14 independently — high drift risk across 4-6+ pages, especially around the CT/SDLT 75%-test distinction and the consortium-relief trading-only gate.
 
 ---
+
+## F-4 — HOUSE_POSITION_EXTENSION — Salaried member rules + post-BlueCrest HMRC PM276000+ guidance (LLP sub-regime)
+
+**Raised by:** M2-A-B2 sub-agent (Stage 1, 2026-05-26) via the A11 `hmrcs-new-guidelines-for-llps-raise-concerns` seed.
+**Bucket:** A (Property partnership / LLP — LLP policy-update sub-regime).
+**Touched picks:** A11 `hmrcs-new-guidelines-for-llps-raise-concerns` (this seed); A10 `hybrid-limited-liability-partnership` (this batch — salaried-member rules apply to individual members of hybrid-LLPs but not corporate members); future MW2 Bucket A LLP picks (`llp-accounts`, `llp-and-taxation-benefits`); also relevant cross-pick to existing `llp-property-investment-worth-considering` (general LLP intro page that pre-dates BlueCrest — possible backpatch candidate).
+
+**Issue.** The salaried-member rules (ITA 2007 s.863A-G) are not currently locked in `house_positions.md`. Post-BlueCrest narrowed Condition B reading + HMRC's 2025 PM276000+ guidance update raise the practical risk profile for property LLPs. Multiple Bucket A picks touch LLP territory and would benefit from a unified policy lock. Suggest the proposed §11.C partnership architecture mini-lock (under F-2) extend to include this sub-section, rather than create a separate top-level §11.D — the salaried-member regime is sub-architecture of the broader LLP framework.
+
+**Proposed lock contents (Stage 1b conductor decision).** A §11.C.X "Salaried member rules + post-BlueCrest HMRC guidance" sub-section of the §11.C partnership architecture mini-lock (per F-2):
+- §11.C.X.1 ITA 2007 s.863A-G regime architecture — three conjunctive Conditions (A: 80% disguised salary; B: lack of significant influence; C: capital < 25% of disguised salary).
+- §11.C.X.2 BlueCrest Supreme Court [2024] UKSC 33 decision summary — Condition B "significant influence over the affairs of the partnership" does NOT require whole-LLP influence; influence over a significant part can be enough (against the FTT/UT reading; narrows safe harbour).
+- §11.C.X.3 HMRC PM276000+ updated 2025 guidance — operative current text (Stage 2 verifies at write time). Narrower view of significant influence; matrix-silo'd member roles may not count.
+- §11.C.X.4 Operative practical safe harbour: Condition C capital-contribution route (≥25% capital takes member OUT of regime). Easier to demonstrate than Condition B significant influence.
+- §11.C.X.5 s.863G anti-avoidance overlay catches contrived Condition C arrangements (round-trip loans; sham contributions; capital at no real economic risk).
+- §11.C.X.6 Operative consequence of reclassification: PAYE + secondary Class 1 NIC at LLP level (15% from 6 April 2026 per FA 2026 — verify rate) + Apprenticeship Levy (0.5% above £15k allowance) + late-payment-penalty regime + interest, all backdated.
+- §11.C.X.7 Do not write: "Condition C requires 25% capital" (inverted — <25% IN, ≥25% OUT); "BlueCrest narrowed Condition B for everyone" (only narrowed the influence-over-the-whole-vs-part dimension); "salaried-member rules don't apply to property LLPs" (false — apply to all LLP business types regardless of trading/investment status); "BlueCrest was bad for taxpayers" (mixed — narrowed Condition B on one point; affirmed safe-harbour structure overall).
+
+**How to apply.** Stage 2 writers on A11 (this seed) + A10 hybrid-LLP + future LLP picks thread to §11.C.X once locked. The current-events nature of the topic means periodic refresh likely required (per existing optimisation_engine cadence).
+
+---
