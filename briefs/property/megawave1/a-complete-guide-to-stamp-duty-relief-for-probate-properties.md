@@ -51,8 +51,132 @@ Distinguish from the existing site page by **relief / exemption / carve-out arch
 - Case-law: any recent FTT decisions on Sch 4ZA para 16 inherited-interest carve-out application; PR-buyback Sch 6A enquiry-line cases; beneficiary buy-out chargeable-consideration disputes.
 - Cross-statute interaction: IHTA 1984 s.142 (deed of variation), IHTA 1984 s.49 (life interest trusts), CGT TCGA 1992 s.62(4) (inherited assets base-cost uplift).
 
-## Universal rules + workflow stubs (Stage 2 fills)
-[Stage 2 populates from NETNEW_PROGRAM §4 — voice (no em-dashes); LeadForm + aside-CTA architecture; FAQs frontmatter + FAQPage JSON-LD; cannibalisation cross-link discipline (heavy cross-link load with existing probate page — at least 4 internal links); quality bar (word count 2,600-3,200 to do justice to six relief / exemption / carve-out architectures plus the beneficiary buy-out mechanics; FAQs 12-15; external authority links 8-10; build clean; six verifications); anti-templating discipline (lead with the six-architecture taxonomy NOT with "When a property passes through probate..."; vary H2s from the existing site page which is transfer-type-led — A6 H2s are relief/exemption-led; the Sch 4ZA para 16 inherited-interest carve-out gets its own deep-dive H2 with worked-example decision tree).]
+## Closest existing pages (cannibalisation context)
+
+Read each before writing. A6 = relief/exemption/carve-out lane. The existing probate page covers transfer-type taxonomy; A6 must NOT re-walk transfer types — instead surface the relief / exemption architecture and the Sch 4ZA para 16 inherited-interest carve-out as its load-bearing differentiators.
+
+1. `Property/web/content/blog/sdlt-on-probate-property-transfers.md` — **the heaviest cross-link target in this brief**. Existing transfer-type taxonomy page (assents, deeds of variation, transfers in discharge of legacies, sales by PRs, beneficiary buy-outs). A6 forward-links to this from each relief H2 for transfer-type mechanics; existing page should back-link to A6 from its relief-section for the deep-dive architecture (raise BACK_LINK flag if the existing page does not link to A6 at launch).
+2. `Property/web/content/blog/sdlt-additional-property-surcharge-refund-routes-3-year-replacement-claim.md` — A6 forward-links from the Sch 4ZA para 16 H2 for the refund-route adjacency (where surcharge has been incorrectly paid on inherited-interest acquisition).
+3. Sister-picks in this MegaWave: A4 `a-complete-guide-to-5-sdlt-surcharge-refund-claims` (surcharge refund umbrella — A6 forward-links if a probate-acquisition surcharge has been paid in error); A5 `a-complete-guide-to-stamp-duty-refund` (whole-landscape umbrella — A5 forward-links back to A6 from its probate-edge-case mentions).
+4. Future cross-links: Wave 9 MDR abolition page (for the 6+-dwellings inheritance-of-portfolio edge case); Wave 7 Sch 15 SLP partnership page (for inherited-into-partnership scenarios — light cross-link only).
+
+Differentiation logic: A6 = SIX relief/exemption/carve-out architectures (Sch 3 para 3A; Sch 4 para 4 DoV; Sch 6A property-trader; Sch 4ZA para 16 inherited-interest; beneficiary buy-out chargeable-consideration analysis; Sch 4A non-natural-person interaction). Existing probate page = FIVE transfer types. **Boundary held by the framing axis**: A6 organises around the RELIEF, existing page organises around the TRANSFER. Sch 4ZA para 16 inherited-interest gets a dedicated worked-example decision tree in A6 (the existing page touches it but does not deep-dive).
+
+## Redirect overlap
+
+Checked against `Property/web/src/middleware.ts` (511 lines) on 2026-05-26: NO existing 301/302 redirect targets share slug-token overlap with `a-complete-guide-to-stamp-duty-relief-for-probate-properties`. No repointing required (step 12 no-op). RUN session re-verifies at write.
+
+## Authority links (SDLT + IHT + CGT cross-statute — pick at least 8 at write time)
+
+**Primary statute — SDLT (legislation.gov.uk):**
+- FA 2003 Sch 3 (no chargeable consideration deeming; verify para 3A architecture at write — Stage 1 seed drift watchpoint): https://www.legislation.gov.uk/ukpga/2003/14/schedule/3
+- FA 2003 Sch 4 para 4 (deed-of-variation exemption): https://www.legislation.gov.uk/ukpga/2003/14/schedule/4
+- FA 2003 Sch 6A (property-trader / PR-buyback relief; verify para 3 / para 4 / etc allocation at write): https://www.legislation.gov.uk/ukpga/2003/14/schedule/6A
+- FA 2003 Sch 4ZA para 16 (inherited-interest carve-out — load-bearing; verify the ≤50% share / ≤£40k value / 3-year temporal-window triple-condition verbatim at write): https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA
+- FA 2003 s.43 (chargeable consideration — beneficiary buy-out): https://www.legislation.gov.uk/ukpga/2003/14/section/43
+- FA 2003 s.49 (chargeable transactions): https://www.legislation.gov.uk/ukpga/2003/14/section/49
+- FA 2003 Sch 16 (trustees and PRs): https://www.legislation.gov.uk/ukpga/2003/14/schedule/16
+- FA 2003 Sch 4A (non-natural-person 15% flat rate — edge-case interaction): https://www.legislation.gov.uk/ukpga/2003/14/schedule/4A
+
+**Primary statute — IHT cross-statute read-across:**
+- IHTA 1984 s.142 (deed of variation — load-bearing read-across): https://www.legislation.gov.uk/ukpga/1984/51/section/142
+- IHTA 1984 s.49 (life interest trusts — for the vesting-on-life-tenant-death question 7): https://www.legislation.gov.uk/ukpga/1984/51/section/49
+
+**Primary statute — CGT cross-statute (light reference):**
+- TCGA 1992 s.62(4) (inherited assets base-cost uplift — light reference): https://www.legislation.gov.uk/ukpga/1992/12/section/62
+
+**HMRC SDLT Manual:**
+- SDLTM00220 (no chargeable consideration): https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm00220
+- SDLTM03700+ (Sch 6A property-trader / PR-buyback): https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm03700
+- SDLTM09766 (Sch 4ZA para 16 inherited-interest carve-out): https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm09766
+- SDLTM00385+ (Sch 4 deeds of variation): https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm00385
+
+**Gov.uk procedural:**
+- gov.uk inheriting-property landing: https://www.gov.uk/inherits-someones-estate
+- SDLT calculator: https://www.tax.service.gov.uk/calculate-stamp-duty-land-tax/
+
+**Case-law (BAILII — verify specifically for any recent FTT on Sch 4ZA para 16 application at write):**
+- Search BAILII for "[2024] / [2025] UKFTT" + "Schedule 4ZA" + "paragraph 16" + "inherited"
+- Hyman v HMRC [2022] EWCA Civ 185 (context for HMRC enquiry posture on SDLT classification): https://www.bailii.org/ew/cases/EWCA/Civ/2022/185.html
+
+**Professional bodies (for the executor / private-client audience):**
+- STEP (Society of Trust and Estate Practitioners) briefings: https://www.step.org/
+- Law Society private client notes: https://www.lawsociety.org.uk/topics/private-client
+
+## Competitor URLs (Stage 2 candidates — RUN verifies liveness at write time)
+
+The probate-SDLT advisory universe concentrates in private-client / STEP-member firms more than the generalist Big Four tax firms.
+
+1. Saffery probate-SDLT explainer: https://www.saffery.com/insights/articles/sdlt-and-probate/
+2. BDO private-client SDLT briefing: https://www.bdo.co.uk/en-gb/insights/tax/private-client
+3. STEP probate-and-SDLT briefings: https://www.step.org/
+4. Law Society private-client SDLT notes: https://www.lawsociety.org.uk/topics/private-client
+5. ICAEW Tax Faculty private-client SDLT briefings: https://www.icaew.com/insights/tax-news
+6. Buzzacott / Smith & Williamson / Mercer & Hole probate-SDLT (mid-market firms with strong private-client practices — search at write): various sites
+7. RSM UK probate-SDLT notes: https://www.rsmuk.com/insights/
+
+If 2+ candidates 404, RUN session uses `site:saffery.com OR site:step.org "stamp duty" probate executor` and documents substitutes.
+
+## Universal rules (verbatim per NETNEW_PROGRAM §4.8)
+
+- **Voice.** No em-dashes in user-facing copy. Specific over generic. Named legislation throughout (FA 2003 schedules and paragraphs verbatim; IHTA 1984 sections). Anonymised personas (Patel-estate / Mawell-Estate / Singh-family) for the worked examples. **The Sch 4ZA para 16 carve-out is the most operationally important relief in the brief — give it the cleanest worked-example decision tree.**
+- **Lead-gen architecture.** LeadForm auto-injected at footer. Inline `<aside>` CTAs at conversion moments: after the Sch 4ZA para 16 worked-example decision tree, after the beneficiary buy-out section, at the cross-link H2 at the end.
+- **CSS in markdown.** Semantic HTML only. No Tailwind classes.
+- **FAQs.** 12-15 for this page.
+- **Cannibalisation discipline.** Heavy cross-link load: at least 4 internal links (existing probate page is the heaviest cross-link target; A4 + A5 for refund context; future Wave 9 + Wave 7 cross-links once shipped). Raise BACK_LINK flag if existing probate page does not link to A6 from its relief-section at launch.
+- **House-position anchors.** Cite §1 (5% surcharge from 31 October 2024), §1.D (Sch 3 spouse/civil-partner exempt transfers — analogous architecture for Sch 3 para 3A understanding) verbatim. If a competitor source contradicts the Sch 4ZA para 16 triple-condition (≤50% share / ≤£40k value / 3-year temporal window), raise HOUSE_POSITION_CONFLICT flag — this is a load-bearing technical position.
+- **Anti-templating.** Open with the six-architecture taxonomy ("Six SDLT reliefs, exemptions, and carve-outs apply when property passes through an estate. The right one depends on the facts of the transfer..."). Do NOT open with "When a property passes through probate...". H2 structure: ONE H2 per architecture (six H2s) + beneficiary buy-out worked example H2 + cross-statute interaction H2 + cross-links H2. The Sch 4ZA para 16 H2 carries the **worked-example decision tree** with three failure cases (100% inheritance / >£40k share / >3-year temporal gap) and one success case. Explicitly different from the existing probate page's transfer-type-led H2s (Assents / Deeds of variation / Transfers in discharge / Sales by PRs / Beneficiary buy-outs).
+- **Quality bar.** (i) 0 em-dashes. (ii) 0 Tailwind. (iii) FAQ schema == frontmatter `faqs:` length. (iv) Meta title ≤ 62. (v) Meta description ≤ 158. (vi) Internal links resolve. Body word count target 2,600-3,200.
+- **Per-write figure verification (§16.35).** Verify Sch 3 para 3A / Sch 4 para 4 / Sch 6A allocation / Sch 4ZA para 16 triple-condition figures (≤50% share, ≤£40k value, 3-year window) verbatim against legislation.gov.uk at write. **Drift watchpoint:** Stage 1 seed flagged that historical practice cites both Sch 3 para 3A and FA 2003 s.49 for the "no chargeable consideration" architecture — A6 must align with the existing probate page's chosen anchor to avoid intra-site contradiction (read the existing page first and match).
+
+## The 19-step workflow (verbatim per NETNEW_PROGRAM §7)
+
+1. Read `docs/property/house_positions.md` once at session start; locate §1, §1.D.
+2. Claim this page in `docs/property/megawave1_page_tracker.md` via ABSOLUTE PATH.
+3. Re-read this brief: framing differentiator, closest-existing, redirect overlap (none), authority links (note the cross-statute SDLT + IHT + CGT spread), six architectures + 9 key questions.
+4. Fetch competitor URLs via `httpx + BeautifulSoup`. Discard 404s; substitute via `site:` searches.
+5. Read the existing `sdlt-on-probate-property-transfers.md` page end-to-end FIRST (the heaviest cross-link target). Then read A4 + A5 once drafted. Decide differentiation: A6 stays in relief/exemption lane; existing page owns transfer-type lane. Raise BACK_LINK flag for existing → A6 link.
+6. Plan H2 outline: six-architecture taxonomy → Sch 3 para 3A H2 → Sch 4 para 4 DoV H2 → Sch 6A PR-buyback H2 → Sch 4ZA para 16 H2 with worked-example decision tree → beneficiary buy-out chargeable-consideration H2 → Sch 4A non-natural-person interaction H2 → cross-statute IHTA/CGT interaction H2 → cross-links H2. Meta + FAQs (12-15) + CTAs.
+7. Verify each factual claim against legislation.gov.uk (especially Sch 4ZA para 16 triple-condition + Sch 6A para allocation + Sch 3 para 3A architecture) + HMRC SDLTM + STEP/Law Society guidance + BAILII case-law.
+8. Fetch hero image from Pexels.
+9. Write the markdown file at `Property/web/content/blog/a-complete-guide-to-stamp-duty-relief-for-probate-properties.md`.
+10. Build clean: `cd Property/web && npm run build`.
+11. Six verifications.
+12. Redirect repointing — NO overlap (no-op). Re-verify.
+13. Register in Supabase `monitored_pages` (bucket="megawave1-A").
+14. **Commit on session branch.** Message: `Megawave 1 Bucket A: ship a-complete-guide-to-stamp-duty-relief-for-probate-properties (A6, relief-architecture tier)`.
+15. Fill work-log below.
+16. Mark `✅ done` in tracker via ABSOLUTE PATH.
+17. Append site-wide issues to flags (F-1..F-49). **Raise BACK_LINK flag for existing probate page → A6.**
+18. Append discoveries.
+19. Claim next page from batch (if any) OR write batch-done marker (this pick is final for batch M1-A-B1).
+
+**Critical order: step 14 (commit) before step 16 (mark done).**
 
 ## Work log (Stage 2 + RUN session populate)
-[Stage 2 + RUN session record their work here.]
+
+**Stage 2 (this pass, 2026-05-26):**
+- Statutory citations verified per Stage 1 seed timestamps; §16.36 brief-citation gate satisfied at brief level. **Drift watchpoints documented for write-time re-verification:**
+  - Sch 3 para 3A architecture vs FA 2003 s.49 — Stage 1 seed flagged intra-site contradiction risk; RUN session reads existing probate page first and matches.
+  - Sch 6A para allocation (PR-buyback is one of several Sch 6A scenarios; verify para 3 / para 4 / etc).
+  - Sch 4ZA para 16 triple-condition verbatim (≤50% share / ≤£40k value / 3-year temporal window).
+- Redirect overlap: searched `Property/web/src/middleware.ts` on 2026-05-26 — no overlap.
+- Closest-existing pages confirmed present; existing `sdlt-on-probate-property-transfers.md` is the heaviest cross-link target.
+- §1.O (Probate SDLT reliefs + Sch 4ZA carve-out) flagged in Stage 1 seed as new HP-lock candidate. Stage 2 verdict: NOT needed pre-launch — existing §1, §1.D are sufficient anchors and the Sch 4ZA para 16 mechanics are page-level work product. If RUN session surfaces a substantial framing question requiring locked support, raise via Q&A.
+- Cross-statute (IHT + CGT) cross-references managed via authority-links section; A6 stays in SDLT lane structurally but acknowledges read-across to IHTA 1984 s.142 (DoV) + s.49 (life interest) + TCGA 1992 s.62(4) (CGT base-cost uplift) at appropriate junctures.
+- BACK_LINK flag pre-noted: existing `sdlt-on-probate-property-transfers.md` should link to A6 at launch; if not, RUN session raises F-flag and patches.
+
+**RUN session (populate at write time):**
+- Decisions (slug confirmed / overridden + rationale; category; H1; meta title; meta description; why these vs alternatives):
+- Sch 3 para 3A vs FA 2003 s.49 — matched against existing probate page's anchor choice:
+- Sch 6A para allocation — confirmed PR-buyback paragraph reference:
+- Sch 4ZA para 16 — triple-condition confirmed verbatim (share / value / temporal window):
+- Competitor URLs fetched + key takeaway per URL:
+- Closest-existing review (overlap pattern; differentiation decision held; BACK_LINK flag raised + patched):
+- Citations added (count + breakdown legislation.gov.uk SDLT / IHT / CGT / HMRC SDLTM / BAILII / professional-body):
+- Internal `/blog/...` links added (heavy cross-link load):
+- Inline `<aside>` CTA placements:
+- Build attempts (pass/fail per attempt; resolution if any failed):
+- Six verifications (each: pass/fail + value):
+- Flags raised (F-numbers + summary; expect at least BACK_LINK flag):
+- 2-3 sentence summary:
