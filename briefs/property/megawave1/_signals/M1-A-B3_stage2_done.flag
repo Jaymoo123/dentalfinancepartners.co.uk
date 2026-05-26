@@ -1,0 +1,42 @@
+batch: M1-A-B3
+bucket: A (SDLT — surcharges and reliefs + Second homes & council tax premium)
+stage: 2 (full brief extension)
+status: complete
+completed_at: 2026-05-26
+sub_agent: Stage 2 Sub-Agent Bucket A (LEAF agent, autonomous run per Bug #7)
+
+picks extended (6 of 6):
+  1. first-time-buyer-relief-understanding-tax-credits-and-deductions  (A13)  commit b0bc773
+  2. ftt-confirms-residential-sdlt-rates-for-leasehold-with-garden-easement  (A14)  commit 06b9f05
+  3. ftt-refuses-late-sdlt-appeal-where-appellants-chose-not-to-seek-professional-advice  (A15)  commit ec1ca8e
+  4. horton-hall-sdlt-case-residential-vs-non-residential-dispute  (A16)  commit c6f9665
+  5. how-owning-property-abroad-leads-higher-stamp-duty-rates  (A17)  commit a38434a
+  6. labour-plans-stamp-duty-hike-for-overseas-buyers  (A18)  commit e6d42a9
+
+F-flags raised to conductor:
+  F-2  BRIEF_DRIFT       A14 primary FTT case citation unconfirmed (garden-easement leasehold)
+  F-3  HOUSE_POSITION    §1.M garden-easement / PROW sub-line lock candidate (or extend §1.J)
+  F-4  BRIEF_DRIFT       A15 primary FTT case citation unconfirmed (late SDLT appeal, no professional advice)
+  F-5  HOUSE_POSITION    §1.N SDLT appeal-procedure HP-lock candidate
+  F-6  BRIEF_DRIFT       A16 Hortons Hall primary case citation + canonical spelling unconfirmed
+  F-7  HOUSE_POSITION    §1.O worldwide-property + non-resident-buyer SDLT HP-lock candidate
+  F-8  BRIEF_DRIFT       A18 live-policy rate verification mandatory at write time
+
+cross-batch recommendation to conductor:
+  F-2 + F-4 + F-6 share a single need (FTT case citation verification). A dedicated case-citation
+  verification sub-agent could resolve all three in one dispatch ahead of RUN. Option 1 in each
+  flag's resolution list.
+
+Q&A: none raised. Bug #7 autonomous-work pattern held — no pause between picks.
+
+§16.36 brief-statutory-citation cross-check gate: PASSED. All seed statutory anchors verified
+against §1.I (Sch 4ZA 5% surcharge, Wave 9 lock), §1.J (s.116 mixed-use trilogy, Wave 9 lock),
+§1.K (FTB relief, MW1 lock), Sch 9A non-resident surcharge, Sch 6ZA FTB worldwide reach,
+Sch 10 SDLT appeal procedure, Martland UKUT. No statutory drift catches at brief level in
+this batch. Case citation gaps (F-2 / F-4 / F-6) are not statutory drift — they are
+case-citation gaps the seeds correctly flagged for RUN-time / Stage 2 verification.
+
+§16.31 URL liveness: deferred to RUN-time per-page step 4 (URL fetch). Competitor URL targets
+codified per brief; live verification at write time.
+
+ready for: RUN dispatch when conductor closes F-flags + signs off Stage 2 batch.
