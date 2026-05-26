@@ -75,9 +75,9 @@ The two pages are an **intentional pair** on the site: pre-purchase classificati
 
 ---
 
-## [F-52] BRIEF_DRIFT — B10 seed cites FA 2003 s.73BA as LBTT financial-institution definition source (corrected to ITA 2007 s.564B)
+## [F-53] BRIEF_DRIFT — B10 seed cites FA 2003 s.73BA as LBTT financial-institution definition source (corrected to ITA 2007 s.564B)
 
-**Raised by:** MW1 Bucket B batch M1-B-B2 (Stage 2 sub-agent), 2026-05-26.
+**Raised by:** MW1 Bucket B batch M1-B-B2 (Stage 2 sub-agent), 2026-05-26. (F-number bumped from F-52 to F-53 to resolve collision with M1-B-B1's F-52 LTTA s.41/s.44 catch committed concurrently.)
 **Type:** BRIEF_DRIFT (§16.36 statutory cross-check catch).
 **Affected brief:** `briefs/property/megawave1/understanding-alternative-finance-arrangements-under-lbtt.md` (B10 seed).
 
@@ -367,3 +367,20 @@ Both verified at https://www.legislation.gov.uk/anaw/2017/1/schedule/13 and http
 **No-block discipline:** A19 + A20 Stage 2 briefs include the current Welsh Sch 13 architecture explicitly (Feb 2025 + Feb 2026 amendments surfaced in §16.36 gate + FAQ #7 of A19 and FAQ #7 + #10 of A20). The MW1 RUN dispatch is not blocked by this flag. It is a Wave-9-back-patch action item for MW1 close.
 
 ---
+
+
+---
+
+## Stage 2b case-citation closures (2026-05-26)
+
+The four BRIEF_DRIFT flags raised at Stage 2 for unconfirmed case citations (F-2 / F-4 / F-6 / F-9) are CLOSED via a dispatched Stage 2b case-verification Agent (run completed 2026-05-26). All four citations verified against official tribunal databases (caselaw.nationalarchives.gov.uk for FTT; secondary tax-press for Scottish FTSTC which 403'd at Agent runtime). Verified citations appended to each affected brief on the lane A worktree.
+
+**F-2 closed:** A14 page cites **Bonsu v HMRC [2024] UKFTT 158 (TC)** (Tribunal Judge Richard Chapman KC, 26 February 2024). The s.116(1)(c) easement-benefit point is at paras [TBV — RUN-session verifies]. Earlier sister-line authority: Sexton & Anor v HMRC [2023] UKFTT 73 (TC).
+
+**F-4 closed:** A15 page cites **R & E Goonesena v HMRC [2024] UKFTT 619 (TC)** (Tribunal Judge Abigail McGregor, 25 June 2024). The "conscious decision not to seek professional advice" Martland-framework application is at paras 22 + 47. Martland v HMRC [2018] UKUT 178 (TCC) remains the controlling framework.
+
+**F-6 closed:** A16 page cites **Mark White & Carol Kane v HMRC [2023] UKFTT 866 (TC)** (Tribunal Judge Anne Fairpo sitting with Member Shaneem Akhtar, 29 September 2023). Property is **Horton Hall** (singular, Staffordshire) — earlier working-doc "Hortons Hall" was an error; the slug `horton-hall-sdlt-case-residential-vs-non-residential-dispute` is correct. Case name = White & Kane; "Horton Hall" is the disputed property. Controlling appellate authority: Hyman v HMRC [2022] EWCA Civ 185; controlling Upper Tribunal: How Development 1 [2023] UKUT 84 (TCC) + Suterwalla [2024] UKUT 188 (TCC). White & Kane is FTT application.
+
+**F-9 closed:** A8 page cites **Archer (UK) Limited v Revenue Scotland [2025] FTSTC 10** (10 July 2025). Statutory framework MUST cite LBTT (Transitional Provisions) (Scotland) Order 2014 **Article 13** (the key transitional provision) + LBTT(S)A 2013 Sch 19 + FA 2003 Sch 17A para 9. Counsel: Philip Simpson KC. **Judge name pending primary-source verification** (taxtribunals.scot 403'd at Agent runtime; verify via browser before RUN-phase write).
+
+All four verified citations are appended to each affected brief on the lane A worktree branch (`property-megawave1-a`). The closure blocks include the verification URL, key holding paragraphs, and line/cluster notes. The Stage 2 verification gap that prompted F-2 / F-4 / F-6 / F-9 is now closed; RUN-phase sub-agent re-verifies at write-time per §16.35.
